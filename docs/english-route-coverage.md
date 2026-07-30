@@ -8,31 +8,31 @@ Every visible public German route needs an English counterpart below `/en/` with
 
 ## Summary
 
-- Public visible source routes: 14980
+- Public visible source routes: 15084
 - English routes already present: 8
-- English routes missing: 14972
+- English routes missing: 15076
 
 ## Categories
 
 | Category | Total | Available | Missing |
 | --- | ---: | ---: | ---: |
-| bibliothek | 7851 | 1 | 7850 |
-| begriffe | 2035 | 0 | 2035 |
+| bibliothek | 7899 | 1 | 7898 |
+| begriffe | 2058 | 0 | 2058 |
 | referenz | 1662 | 0 | 1662 |
-| quellenarchiv | 992 | 0 | 992 |
+| quellenarchiv | 1024 | 0 | 1024 |
 | woek-id-register | 624 | 0 | 624 |
 | wirkungsradar | 594 | 0 | 594 |
 | wirkungsfelder | 265 | 0 | 265 |
 | portale | 179 | 0 | 179 |
 | methodenraum | 157 | 0 | 157 |
-| blog | 151 | 0 | 151 |
+| blog | 153 | 0 | 153 |
 | werkzeuge | 97 | 1 | 96 |
 | werkstatt | 66 | 0 | 66 |
 | verstehen | 51 | 0 | 51 |
 | api | 39 | 0 | 39 |
 | dokumente | 26 | 0 | 26 |
 | erleben | 25 | 0 | 25 |
-| top-level | 22 | 1 | 21 |
+| top-level | 21 | 1 | 20 |
 | wirkungssteuerung | 20 | 0 | 20 |
 | fuer | 18 | 0 | 18 |
 | ordnung | 14 | 0 | 14 |

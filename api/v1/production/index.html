@@ -7,13 +7,13 @@
 </head>
 <body>
 <pre>{
-  &quot;generatedAt&quot;: &quot;2026-07-15T10:58:18.688Z&quot;,
+  &quot;generatedAt&quot;: &quot;2026-07-30T18:24:51.059Z&quot;,
   &quot;version&quot;: &quot;v1&quot;,
   &quot;summary&quot;: {
-    &quot;totalBuildSteps&quot;: 81,
+    &quot;totalBuildSteps&quot;: 85,
     &quot;dataProducts&quot;: 9,
     &quot;workflowGates&quot;: 5,
-    &quot;scripts&quot;: 98
+    &quot;scripts&quot;: 102
   },
   &quot;operatingModel&quot;: {
     &quot;architecture&quot;: &quot;modularer Kern, statisch-first Website, dünne Frontends&quot;,
@@ -209,7 +209,7 @@
     }
   ],
   &quot;build&quot;: {
-    &quot;totalSteps&quot;: 81,
+    &quot;totalSteps&quot;: 85,
     &quot;phases&quot;: [
       &quot;academy-certificates&quot;,
       &quot;build-step&quot;,
@@ -245,386 +245,406 @@
       },
       {
         &quot;order&quot;: 5,
-        &quot;command&quot;: &quot;node scripts/glossary/build-term-links.mjs&quot;,
+        &quot;command&quot;: &quot;node scripts/export/export-glossary.mjs&quot;,
         &quot;phase&quot;: &quot;knowledge-glossary&quot;
       },
       {
         &quot;order&quot;: 6,
-        &quot;command&quot;: &quot;node scripts/glossary/build-glossary-candidates.mjs&quot;,
+        &quot;command&quot;: &quot;node scripts/glossary/build-term-links.mjs&quot;,
         &quot;phase&quot;: &quot;knowledge-glossary&quot;
       },
       {
         &quot;order&quot;: 7,
-        &quot;command&quot;: &quot;node scripts/glossary/build-glossary-reference-index.mjs&quot;,
+        &quot;command&quot;: &quot;node scripts/glossary/build-glossary-candidates.mjs&quot;,
         &quot;phase&quot;: &quot;knowledge-glossary&quot;
       },
       {
         &quot;order&quot;: 8,
-        &quot;command&quot;: &quot;node scripts/glossary/build-glossary-pages.mjs&quot;,
+        &quot;command&quot;: &quot;node scripts/glossary/build-glossary-reference-index.mjs&quot;,
         &quot;phase&quot;: &quot;knowledge-glossary&quot;
       },
       {
         &quot;order&quot;: 9,
-        &quot;command&quot;: &quot;node scripts/glossary/build-glossary-lookup.mjs&quot;,
+        &quot;command&quot;: &quot;node scripts/glossary/build-glossary-pages.mjs&quot;,
         &quot;phase&quot;: &quot;knowledge-glossary&quot;
       },
       {
         &quot;order&quot;: 10,
-        &quot;command&quot;: &quot;node scripts/quellenarchiv/build-quellenarchiv-pages.mjs&quot;,
-        &quot;phase&quot;: &quot;build-step&quot;
+        &quot;command&quot;: &quot;node scripts/glossary/check-legacy-detail-definitions.mjs&quot;,
+        &quot;phase&quot;: &quot;knowledge-glossary&quot;
       },
       {
         &quot;order&quot;: 11,
-        &quot;command&quot;: &quot;node scripts/publications/build-grundlagenpublikationen-pages.mjs&quot;,
-        &quot;phase&quot;: &quot;build-step&quot;
+        &quot;command&quot;: &quot;node scripts/glossary/check-wirkungsgrad-differentiation.mjs&quot;,
+        &quot;phase&quot;: &quot;knowledge-glossary&quot;
       },
       {
         &quot;order&quot;: 12,
-        &quot;command&quot;: &quot;node scripts/glossary/build-glossary-relations.mjs&quot;,
+        &quot;command&quot;: &quot;node scripts/glossary/check-detail-page-composition.mjs&quot;,
         &quot;phase&quot;: &quot;knowledge-glossary&quot;
       },
       {
         &quot;order&quot;: 13,
+        &quot;command&quot;: &quot;node scripts/glossary/check-impact-controlling-rechenlogiken.mjs&quot;,
+        &quot;phase&quot;: &quot;knowledge-glossary&quot;
+      },
+      {
+        &quot;order&quot;: 14,
+        &quot;command&quot;: &quot;node scripts/glossary/build-glossary-lookup.mjs&quot;,
+        &quot;phase&quot;: &quot;knowledge-glossary&quot;
+      },
+      {
+        &quot;order&quot;: 15,
+        &quot;command&quot;: &quot;node scripts/quellenarchiv/build-quellenarchiv-pages.mjs&quot;,
+        &quot;phase&quot;: &quot;build-step&quot;
+      },
+      {
+        &quot;order&quot;: 16,
+        &quot;command&quot;: &quot;node scripts/publications/build-grundlagenpublikationen-pages.mjs&quot;,
+        &quot;phase&quot;: &quot;build-step&quot;
+      },
+      {
+        &quot;order&quot;: 17,
+        &quot;command&quot;: &quot;node scripts/glossary/build-glossary-relations.mjs&quot;,
+        &quot;phase&quot;: &quot;knowledge-glossary&quot;
+      },
+      {
+        &quot;order&quot;: 18,
         &quot;command&quot;: &quot;node scripts/portal/build-portal-architecture.mjs&quot;,
         &quot;phase&quot;: &quot;portal-generation&quot;
       },
       {
-        &quot;order&quot;: 14,
+        &quot;order&quot;: 19,
         &quot;command&quot;: &quot;node scripts/portal/build-product-taxation.mjs&quot;,
         &quot;phase&quot;: &quot;portal-generation&quot;
       },
       {
-        &quot;order&quot;: 15,
+        &quot;order&quot;: 20,
         &quot;command&quot;: &quot;node scripts/portal/build-impact-controlling.mjs&quot;,
         &quot;phase&quot;: &quot;portal-generation&quot;
       },
       {
-        &quot;order&quot;: 16,
+        &quot;order&quot;: 21,
         &quot;command&quot;: &quot;node scripts/portal/build-state-law-democracy.mjs&quot;,
         &quot;phase&quot;: &quot;portal-generation&quot;
       },
       {
-        &quot;order&quot;: 17,
+        &quot;order&quot;: 22,
         &quot;command&quot;: &quot;node scripts/portal/build-business-enterprise.mjs&quot;,
         &quot;phase&quot;: &quot;portal-generation&quot;
       },
       {
-        &quot;order&quot;: 18,
+        &quot;order&quot;: 23,
         &quot;command&quot;: &quot;node scripts/portal/build-housing-city.mjs&quot;,
         &quot;phase&quot;: &quot;portal-generation&quot;
       },
       {
-        &quot;order&quot;: 19,
+        &quot;order&quot;: 24,
         &quot;command&quot;: &quot;node scripts/portal/build-work-income-automation.mjs&quot;,
         &quot;phase&quot;: &quot;portal-generation&quot;
       },
       {
-        &quot;order&quot;: 20,
+        &quot;order&quot;: 25,
         &quot;command&quot;: &quot;node scripts/portal/build-pension-social-security.mjs&quot;,
         &quot;phase&quot;: &quot;portal-generation&quot;
       },
       {
-        &quot;order&quot;: 21,
+        &quot;order&quot;: 26,
         &quot;command&quot;: &quot;node scripts/portal/build-education-effect-school.mjs&quot;,
         &quot;phase&quot;: &quot;portal-generation&quot;
       },
       {
-        &quot;order&quot;: 22,
+        &quot;order&quot;: 27,
         &quot;command&quot;: &quot;node scripts/portal/build-media-public-sphere.mjs&quot;,
         &quot;phase&quot;: &quot;portal-generation&quot;
       },
       {
-        &quot;order&quot;: 23,
+        &quot;order&quot;: 28,
         &quot;command&quot;: &quot;node scripts/portal/build-health-care.mjs&quot;,
         &quot;phase&quot;: &quot;portal-generation&quot;
       },
       {
-        &quot;order&quot;: 24,
+        &quot;order&quot;: 29,
         &quot;command&quot;: &quot;node scripts/portal/build-science-innovation-digitalization.mjs&quot;,
         &quot;phase&quot;: &quot;portal-generation&quot;
       },
       {
-        &quot;order&quot;: 25,
+        &quot;order&quot;: 30,
         &quot;command&quot;: &quot;node scripts/portal/build-finance-capital.mjs&quot;,
         &quot;phase&quot;: &quot;portal-generation&quot;
       },
       {
-        &quot;order&quot;: 26,
+        &quot;order&quot;: 31,
         &quot;command&quot;: &quot;node scripts/portal/build-detail-concept-corrections.mjs&quot;,
         &quot;phase&quot;: &quot;portal-generation&quot;
       },
       {
-        &quot;order&quot;: 27,
+        &quot;order&quot;: 32,
         &quot;command&quot;: &quot;node scripts/portal/build-sdg-reference.mjs&quot;,
         &quot;phase&quot;: &quot;portal-generation&quot;
       },
       {
-        &quot;order&quot;: 28,
+        &quot;order&quot;: 33,
         &quot;command&quot;: &quot;python3 scripts/portal/build-rang24-release.py&quot;,
         &quot;phase&quot;: &quot;portal-generation&quot;
       },
       {
-        &quot;order&quot;: 29,
+        &quot;order&quot;: 34,
         &quot;command&quot;: &quot;node scripts/quality/build-detaildossier-sanierung-status.mjs&quot;,
         &quot;phase&quot;: &quot;quality-gate&quot;
       },
       {
-        &quot;order&quot;: 30,
+        &quot;order&quot;: 35,
         &quot;command&quot;: &quot;node scripts/quality/build-go2-detailconcept-production-status.mjs&quot;,
         &quot;phase&quot;: &quot;quality-gate&quot;
       },
       {
-        &quot;order&quot;: 31,
+        &quot;order&quot;: 36,
         &quot;command&quot;: &quot;node scripts/wirkungsradar/build-narrative-library.mjs&quot;,
         &quot;phase&quot;: &quot;public-impact-room&quot;
       },
       {
-        &quot;order&quot;: 32,
+        &quot;order&quot;: 37,
         &quot;command&quot;: &quot;node scripts/wirkungsradar/apply-master-debattenkarten.mjs&quot;,
         &quot;phase&quot;: &quot;public-impact-room&quot;
       },
       {
-        &quot;order&quot;: 33,
+        &quot;order&quot;: 38,
         &quot;command&quot;: &quot;node scripts/podcast/build-podcast-pages.mjs&quot;,
         &quot;phase&quot;: &quot;media-feeds&quot;
       },
       {
-        &quot;order&quot;: 34,
+        &quot;order&quot;: 39,
         &quot;command&quot;: &quot;python3 tools/sync_layout.py&quot;,
         &quot;phase&quot;: &quot;build-step&quot;
       },
       {
-        &quot;order&quot;: 35,
+        &quot;order&quot;: 40,
         &quot;command&quot;: &quot;node scripts/review/build-delta-review.mjs&quot;,
         &quot;phase&quot;: &quot;build-step&quot;
       },
       {
-        &quot;order&quot;: 36,
+        &quot;order&quot;: 41,
         &quot;command&quot;: &quot;node scripts/reference/enhance-reference-ux.mjs&quot;,
         &quot;phase&quot;: &quot;build-step&quot;
       },
       {
-        &quot;order&quot;: 37,
+        &quot;order&quot;: 42,
         &quot;command&quot;: &quot;node scripts/portal/apply-political-implementation-standard.mjs&quot;,
         &quot;phase&quot;: &quot;portal-generation&quot;
       },
       {
-        &quot;order&quot;: 38,
+        &quot;order&quot;: 43,
         &quot;command&quot;: &quot;node scripts/portal/apply-publication-access-hubs.mjs&quot;,
         &quot;phase&quot;: &quot;portal-generation&quot;
       },
       {
-        &quot;order&quot;: 39,
+        &quot;order&quot;: 44,
         &quot;command&quot;: &quot;node scripts/portal/apply-impact-field-stage7.mjs&quot;,
         &quot;phase&quot;: &quot;portal-generation&quot;
       },
       {
-        &quot;order&quot;: 40,
+        &quot;order&quot;: 45,
         &quot;command&quot;: &quot;node scripts/portal/apply-demo-governance-stage8.mjs&quot;,
         &quot;phase&quot;: &quot;portal-generation&quot;
       },
       {
-        &quot;order&quot;: 41,
+        &quot;order&quot;: 46,
         &quot;command&quot;: &quot;node scripts/library/build-library-versioning-stage9.mjs&quot;,
         &quot;phase&quot;: &quot;build-step&quot;
       },
       {
-        &quot;order&quot;: 42,
+        &quot;order&quot;: 47,
         &quot;command&quot;: &quot;node scripts/tools/sanitize-public-tool-language.mjs&quot;,
         &quot;phase&quot;: &quot;build-step&quot;
       },
       {
-        &quot;order&quot;: 43,
+        &quot;order&quot;: 48,
         &quot;command&quot;: &quot;node scripts/quality/fix-public-self-ctas.mjs&quot;,
         &quot;phase&quot;: &quot;quality-gate&quot;
       },
       {
-        &quot;order&quot;: 44,
+        &quot;order&quot;: 49,
         &quot;command&quot;: &quot;node scripts/publications/apply-publication-abstracts.mjs&quot;,
         &quot;phase&quot;: &quot;build-step&quot;
       },
       {
-        &quot;order&quot;: 45,
+        &quot;order&quot;: 50,
         &quot;command&quot;: &quot;node scripts/audit-documents-for-publication.mjs&quot;,
         &quot;phase&quot;: &quot;quality-gate&quot;
       },
       {
-        &quot;order&quot;: 46,
+        &quot;order&quot;: 51,
         &quot;command&quot;: &quot;node scripts/library/build-full-knowledge-library.mjs&quot;,
         &quot;phase&quot;: &quot;build-step&quot;
       },
       {
-        &quot;order&quot;: 47,
+        &quot;order&quot;: 52,
         &quot;command&quot;: &quot;python3 scripts/tools/build-woek-id-register-public-explorer.py&quot;,
         &quot;phase&quot;: &quot;build-step&quot;
       },
       {
-        &quot;order&quot;: 48,
+        &quot;order&quot;: 53,
         &quot;command&quot;: &quot;node scripts/quality/build-detaildossier-sanierung-status.mjs&quot;,
         &quot;phase&quot;: &quot;quality-gate&quot;
       },
       {
-        &quot;order&quot;: 49,
+        &quot;order&quot;: 54,
         &quot;command&quot;: &quot;node scripts/quality/build-go2-detailconcept-production-status.mjs&quot;,
         &quot;phase&quot;: &quot;quality-gate&quot;
       },
       {
-        &quot;order&quot;: 50,
+        &quot;order&quot;: 55,
         &quot;command&quot;: &quot;node scripts/tools/build-tool-examples-dashboard.mjs&quot;,
         &quot;phase&quot;: &quot;build-step&quot;
       },
       {
-        &quot;order&quot;: 51,
+        &quot;order&quot;: 56,
         &quot;command&quot;: &quot;node scripts/blog/build-blog-index.mjs&quot;,
         &quot;phase&quot;: &quot;build-step&quot;
       },
       {
-        &quot;order&quot;: 52,
+        &quot;order&quot;: 57,
         &quot;command&quot;: &quot;node scripts/quality/check-journal-index.mjs&quot;,
         &quot;phase&quot;: &quot;quality-gate&quot;
       },
       {
-        &quot;order&quot;: 53,
+        &quot;order&quot;: 58,
         &quot;command&quot;: &quot;node scripts/podcast/build-podcast-pages.mjs&quot;,
         &quot;phase&quot;: &quot;media-feeds&quot;
       },
       {
-        &quot;order&quot;: 54,
+        &quot;order&quot;: 59,
         &quot;command&quot;: &quot;node scripts/assets/check-release-assets.mjs&quot;,
         &quot;phase&quot;: &quot;quality-gate&quot;
       },
       {
-        &quot;order&quot;: 55,
+        &quot;order&quot;: 60,
         &quot;command&quot;: &quot;node scripts/feeds/build-rss-feeds.mjs&quot;,
         &quot;phase&quot;: &quot;media-feeds&quot;
       },
       {
-        &quot;order&quot;: 56,
+        &quot;order&quot;: 61,
         &quot;command&quot;: &quot;node scripts/feeds/build-feeds-page.mjs&quot;,
         &quot;phase&quot;: &quot;media-feeds&quot;
       },
       {
-        &quot;order&quot;: 57,
+        &quot;order&quot;: 62,
         &quot;command&quot;: &quot;node scripts/quality/produce-public-pdf-downloads.mjs&quot;,
         &quot;phase&quot;: &quot;quality-gate&quot;
       },
       {
-        &quot;order&quot;: 58,
+        &quot;order&quot;: 63,
         &quot;command&quot;: &quot;node scripts/quality/sanitize-public-download-links.mjs&quot;,
         &quot;phase&quot;: &quot;quality-gate&quot;
       },
       {
-        &quot;order&quot;: 59,
+        &quot;order&quot;: 64,
         &quot;command&quot;: &quot;node scripts/site/build-so-wirkt-wirkungsoekonomie.mjs&quot;,
         &quot;phase&quot;: &quot;site-pages&quot;
       },
       {
-        &quot;order&quot;: 60,
+        &quot;order&quot;: 65,
         &quot;command&quot;: &quot;node scripts/site/build-institut-teaser.mjs&quot;,
         &quot;phase&quot;: &quot;site-pages&quot;
       },
       {
-        &quot;order&quot;: 61,
-        &quot;command&quot;: &quot;node scripts/site/build-faktencheck-bot-guides.mjs&quot;,
-        &quot;phase&quot;: &quot;quality-gate&quot;
-      },
-      {
-        &quot;order&quot;: 62,
+        &quot;order&quot;: 66,
         &quot;command&quot;: &quot;node scripts/academy/build-certificates.mjs&quot;,
         &quot;phase&quot;: &quot;academy-certificates&quot;
       },
       {
-        &quot;order&quot;: 63,
+        &quot;order&quot;: 67,
         &quot;command&quot;: &quot;node scripts/import/build-relationships.mjs&quot;,
         &quot;phase&quot;: &quot;content-import&quot;
       },
       {
-        &quot;order&quot;: 64,
+        &quot;order&quot;: 68,
         &quot;command&quot;: &quot;node scripts/import/build-content-manifest.mjs&quot;,
         &quot;phase&quot;: &quot;content-import&quot;
       },
       {
-        &quot;order&quot;: 65,
+        &quot;order&quot;: 69,
         &quot;command&quot;: &quot;node scripts/i18n/build-english-document-manifest.mjs&quot;,
         &quot;phase&quot;: &quot;build-step&quot;
       },
       {
-        &quot;order&quot;: 66,
+        &quot;order&quot;: 70,
         &quot;command&quot;: &quot;node scripts/i18n/build-english-library.mjs&quot;,
         &quot;phase&quot;: &quot;build-step&quot;
       },
       {
-        &quot;order&quot;: 67,
+        &quot;order&quot;: 71,
         &quot;command&quot;: &quot;node scripts/i18n/build-english-tools.mjs&quot;,
         &quot;phase&quot;: &quot;build-step&quot;
       },
       {
-        &quot;order&quot;: 68,
+        &quot;order&quot;: 72,
         &quot;command&quot;: &quot;node scripts/i18n/build-english-function-pages.mjs&quot;,
         &quot;phase&quot;: &quot;build-step&quot;
       },
       {
-        &quot;order&quot;: 69,
+        &quot;order&quot;: 73,
         &quot;command&quot;: &quot;node scripts/i18n/build-english-search.mjs&quot;,
         &quot;phase&quot;: &quot;knowledge-search&quot;
       },
       {
-        &quot;order&quot;: 70,
+        &quot;order&quot;: 74,
         &quot;command&quot;: &quot;node scripts/i18n/build-english-asset-text-inventory.mjs&quot;,
         &quot;phase&quot;: &quot;build-step&quot;
       },
       {
-        &quot;order&quot;: 71,
+        &quot;order&quot;: 75,
         &quot;command&quot;: &quot;node scripts/i18n/build-english-route-coverage.mjs&quot;,
         &quot;phase&quot;: &quot;build-step&quot;
       },
       {
-        &quot;order&quot;: 72,
+        &quot;order&quot;: 76,
         &quot;command&quot;: &quot;node scripts/search/build-woek-search-index.mjs&quot;,
         &quot;phase&quot;: &quot;knowledge-search&quot;
       },
       {
-        &quot;order&quot;: 73,
+        &quot;order&quot;: 77,
         &quot;command&quot;: &quot;node scripts/site/build-site-taxonomy.mjs&quot;,
         &quot;phase&quot;: &quot;site-pages&quot;
       },
       {
-        &quot;order&quot;: 74,
+        &quot;order&quot;: 78,
         &quot;command&quot;: &quot;node scripts/api/build-core-api-manifest.mjs&quot;,
         &quot;phase&quot;: &quot;build-step&quot;
       },
       {
-        &quot;order&quot;: 75,
+        &quot;order&quot;: 79,
         &quot;command&quot;: &quot;node scripts/quality/apply-publication-qa-normalization.mjs&quot;,
         &quot;phase&quot;: &quot;quality-gate&quot;
       },
       {
-        &quot;order&quot;: 76,
+        &quot;order&quot;: 80,
         &quot;command&quot;: &quot;node scripts/site/normalize-site-header.mjs&quot;,
         &quot;phase&quot;: &quot;site-pages&quot;
       },
       {
-        &quot;order&quot;: 77,
+        &quot;order&quot;: 81,
         &quot;command&quot;: &quot;node scripts/site/normalize-site-footer.mjs&quot;,
         &quot;phase&quot;: &quot;site-pages&quot;
       },
       {
-        &quot;order&quot;: 78,
+        &quot;order&quot;: 82,
         &quot;command&quot;: &quot;node scripts/quality/archive-macos-duplicate-routes.mjs&quot;,
         &quot;phase&quot;: &quot;quality-gate&quot;
       },
       {
-        &quot;order&quot;: 79,
+        &quot;order&quot;: 83,
         &quot;command&quot;: &quot;node scripts/search/build-woek-search-index.mjs&quot;,
         &quot;phase&quot;: &quot;knowledge-search&quot;
       },
       {
-        &quot;order&quot;: 80,
+        &quot;order&quot;: 84,
         &quot;command&quot;: &quot;node scripts/check-public-language.js&quot;,
         &quot;phase&quot;: &quot;quality-gate&quot;
       },
       {
-        &quot;order&quot;: 81,
+        &quot;order&quot;: 85,
         &quot;command&quot;: &quot;node scripts/quality/check-no-em-dash.mjs --fix&quot;,
         &quot;phase&quot;: &quot;quality-gate&quot;
       }
@@ -632,9 +652,27 @@
   },
   &quot;scripts&quot;: [
     {
+      &quot;name&quot;: &quot;prebuild&quot;,
+      &quot;command&quot;: &quot;node scripts/terminology/apply-resilienzmodell-v1.3-20260730.mjs &amp;&amp; python3 scripts/publications/build-nachhaltigkeit-systemresilienz-klimamodell-v1.0.py &amp;&amp; python3 scripts/publications/build-nachhaltigkeit-systemarchitektur-v1.2.py &amp;&amp; python3 scripts/publications/build-begriffsleitfaden-v1.3.py &amp;&amp; node scripts/blog/apply-resilienzmodell-v1.3-journal.mjs &amp;&amp; node scripts/site/apply-resilienzmodell-v1.3-site-copy.mjs &amp;&amp; node scripts/studienskripte/build-bibliothek-page.mjs &amp;&amp; python3 scripts/import/export-wirkungsfinanzpolitik-terms.py&quot;,
+      &quot;stepCount&quot;: 8,
+      &quot;phases&quot;: [
+        &quot;build-step&quot;,
+        &quot;content-import&quot;,
+        &quot;site-pages&quot;
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;postbuild&quot;,
+      &quot;command&quot;: &quot;node scripts/blog/build-journal-pdfs.mjs&quot;,
+      &quot;stepCount&quot;: 1,
+      &quot;phases&quot;: [
+        &quot;build-step&quot;
+      ]
+    },
+    {
       &quot;name&quot;: &quot;build&quot;,
-      &quot;command&quot;: &quot;node scripts/methods/build-woems-exports.mjs &amp;&amp; node scripts/methods/build-methodenraum-pages.mjs &amp;&amp; node scripts/academy/build-curriculum-exports.mjs &amp;&amp; node scripts/glossary/build-glossary-registry.mjs &amp;&amp; node scripts/glossary/build-term-links.mjs &amp;&amp; node scripts/glossary/build-glossary-candidates.mjs &amp;&amp; node scripts/glossary/build-glossary-reference-index.mjs &amp;&amp; node scripts/glossary/build-glossary-pages.mjs &amp;&amp; node scripts/glossary/build-glossary-lookup.mjs &amp;&amp; node scripts/quellenarchiv/build-quellenarchiv-pages.mjs &amp;&amp; node scripts/publications/build-grundlagenpublikationen-pages.mjs &amp;&amp; node scripts/glossary/build-glossary-relations.mjs &amp;&amp; node scripts/portal/build-portal-architecture.mjs &amp;&amp; node scripts/portal/build-product-taxation.mjs &amp;&amp; node scripts/portal/build-impact-controlling.mjs &amp;&amp; node scripts/portal/build-state-law-democracy.mjs &amp;&amp; node scripts/portal/build-business-enterprise.mjs &amp;&amp; node scripts/portal/build-housing-city.mjs &amp;&amp; node scripts/portal/build-work-income-automation.mjs &amp;&amp; node scripts/portal/build-pension-social-security.mjs &amp;&amp; node scripts/portal/build-education-effect-school.mjs &amp;&amp; node scripts/portal/build-media-public-sphere.mjs &amp;&amp; node scripts/portal/build-health-care.mjs &amp;&amp; node scripts/portal/build-science-innovation-digitalization.mjs &amp;&amp; node scripts/portal/build-finance-capital.mjs &amp;&amp; node scripts/portal/build-detail-concept-corrections.mjs &amp;&amp; node scripts/portal/build-sdg-reference.mjs &amp;&amp; python3 scripts/portal/build-rang24-release.py &amp;&amp; node scripts/quality/build-detaildossier-sanierung-status.mjs &amp;&amp; node scripts/quality/build-go2-detailconcept-production-status.mjs &amp;&amp; node scripts/wirkungsradar/build-narrative-library.mjs &amp;&amp; node scripts/wirkungsradar/apply-master-debattenkarten.mjs &amp;&amp; node scripts/podcast/build-podcast-pages.mjs &amp;&amp; python3 tools/sync_layout.py &amp;&amp; node scripts/review/build-delta-review.mjs &amp;&amp; node scripts/reference/enhance-reference-ux.mjs &amp;&amp; node scripts/portal/apply-political-implementation-standard.mjs &amp;&amp; node scripts/portal/apply-publication-access-hubs.mjs &amp;&amp; node scripts/portal/apply-impact-field-stage7.mjs &amp;&amp; node scripts/portal/apply-demo-governance-stage8.mjs &amp;&amp; node scripts/library/build-library-versioning-stage9.mjs &amp;&amp; node scripts/tools/sanitize-public-tool-language.mjs &amp;&amp; node scripts/quality/fix-public-self-ctas.mjs &amp;&amp; node scripts/publications/apply-publication-abstracts.mjs &amp;&amp; node scripts/audit-documents-for-publication.mjs &amp;&amp; node scripts/library/build-full-knowledge-library.mjs &amp;&amp; python3 scripts/tools/build-woek-id-register-public-explorer.py &amp;&amp; node scripts/quality/build-detaildossier-sanierung-status.mjs &amp;&amp; node scripts/quality/build-go2-detailconcept-production-status.mjs &amp;&amp; node scripts/tools/build-tool-examples-dashboard.mjs &amp;&amp; node scripts/blog/build-blog-index.mjs &amp;&amp; node scripts/quality/check-journal-index.mjs &amp;&amp; node scripts/podcast/build-podcast-pages.mjs &amp;&amp; node scripts/assets/check-release-assets.mjs &amp;&amp; node scripts/feeds/build-rss-feeds.mjs &amp;&amp; node scripts/feeds/build-feeds-page.mjs &amp;&amp; node scripts/quality/produce-public-pdf-downloads.mjs &amp;&amp; node scripts/quality/sanitize-public-download-links.mjs &amp;&amp; node scripts/site/build-so-wirkt-wirkungsoekonomie.mjs &amp;&amp; node scripts/site/build-institut-teaser.mjs &amp;&amp; node scripts/site/build-faktencheck-bot-guides.mjs &amp;&amp; node scripts/academy/build-certificates.mjs &amp;&amp; node scripts/import/build-relationships.mjs &amp;&amp; node scripts/import/build-content-manifest.mjs &amp;&amp; node scripts/i18n/build-english-document-manifest.mjs &amp;&amp; node scripts/i18n/build-english-library.mjs &amp;&amp; node scripts/i18n/build-english-tools.mjs &amp;&amp; node scripts/i18n/build-english-function-pages.mjs &amp;&amp; node scripts/i18n/build-english-search.mjs &amp;&amp; node scripts/i18n/build-english-asset-text-inventory.mjs &amp;&amp; node scripts/i18n/build-english-route-coverage.mjs &amp;&amp; node scripts/search/build-woek-search-index.mjs &amp;&amp; node scripts/site/build-site-taxonomy.mjs &amp;&amp; node scripts/api/build-core-api-manifest.mjs &amp;&amp; node scripts/quality/apply-publication-qa-normalization.mjs &amp;&amp; node scripts/site/normalize-site-header.mjs &amp;&amp; node scripts/site/normalize-site-footer.mjs &amp;&amp; node scripts/quality/archive-macos-duplicate-routes.mjs &amp;&amp; node scripts/search/build-woek-search-index.mjs &amp;&amp; node scripts/check-public-language.js &amp;&amp; node scripts/quality/check-no-em-dash.mjs --fix&quot;,
-      &quot;stepCount&quot;: 81,
+      &quot;command&quot;: &quot;node scripts/methods/build-woems-exports.mjs &amp;&amp; node scripts/methods/build-methodenraum-pages.mjs &amp;&amp; node scripts/academy/build-curriculum-exports.mjs &amp;&amp; node scripts/glossary/build-glossary-registry.mjs &amp;&amp; node scripts/export/export-glossary.mjs &amp;&amp; node scripts/glossary/build-term-links.mjs &amp;&amp; node scripts/glossary/build-glossary-candidates.mjs &amp;&amp; node scripts/glossary/build-glossary-reference-index.mjs &amp;&amp; node scripts/glossary/build-glossary-pages.mjs &amp;&amp; node scripts/glossary/check-legacy-detail-definitions.mjs &amp;&amp; node scripts/glossary/check-wirkungsgrad-differentiation.mjs &amp;&amp; node scripts/glossary/check-detail-page-composition.mjs &amp;&amp; node scripts/glossary/check-impact-controlling-rechenlogiken.mjs &amp;&amp; node scripts/glossary/build-glossary-lookup.mjs &amp;&amp; node scripts/quellenarchiv/build-quellenarchiv-pages.mjs &amp;&amp; node scripts/publications/build-grundlagenpublikationen-pages.mjs &amp;&amp; node scripts/glossary/build-glossary-relations.mjs &amp;&amp; node scripts/portal/build-portal-architecture.mjs &amp;&amp; node scripts/portal/build-product-taxation.mjs &amp;&amp; node scripts/portal/build-impact-controlling.mjs &amp;&amp; node scripts/portal/build-state-law-democracy.mjs &amp;&amp; node scripts/portal/build-business-enterprise.mjs &amp;&amp; node scripts/portal/build-housing-city.mjs &amp;&amp; node scripts/portal/build-work-income-automation.mjs &amp;&amp; node scripts/portal/build-pension-social-security.mjs &amp;&amp; node scripts/portal/build-education-effect-school.mjs &amp;&amp; node scripts/portal/build-media-public-sphere.mjs &amp;&amp; node scripts/portal/build-health-care.mjs &amp;&amp; node scripts/portal/build-science-innovation-digitalization.mjs &amp;&amp; node scripts/portal/build-finance-capital.mjs &amp;&amp; node scripts/portal/build-detail-concept-corrections.mjs &amp;&amp; node scripts/portal/build-sdg-reference.mjs &amp;&amp; python3 scripts/portal/build-rang24-release.py &amp;&amp; node scripts/quality/build-detaildossier-sanierung-status.mjs &amp;&amp; node scripts/quality/build-go2-detailconcept-production-status.mjs &amp;&amp; node scripts/wirkungsradar/build-narrative-library.mjs &amp;&amp; node scripts/wirkungsradar/apply-master-debattenkarten.mjs &amp;&amp; node scripts/podcast/build-podcast-pages.mjs &amp;&amp; python3 tools/sync_layout.py &amp;&amp; node scripts/review/build-delta-review.mjs &amp;&amp; node scripts/reference/enhance-reference-ux.mjs &amp;&amp; node scripts/portal/apply-political-implementation-standard.mjs &amp;&amp; node scripts/portal/apply-publication-access-hubs.mjs &amp;&amp; node scripts/portal/apply-impact-field-stage7.mjs &amp;&amp; node scripts/portal/apply-demo-governance-stage8.mjs &amp;&amp; node scripts/library/build-library-versioning-stage9.mjs &amp;&amp; node scripts/tools/sanitize-public-tool-language.mjs &amp;&amp; node scripts/quality/fix-public-self-ctas.mjs &amp;&amp; node scripts/publications/apply-publication-abstracts.mjs &amp;&amp; node scripts/audit-documents-for-publication.mjs &amp;&amp; node scripts/library/build-full-knowledge-library.mjs &amp;&amp; python3 scripts/tools/build-woek-id-register-public-explorer.py &amp;&amp; node scripts/quality/build-detaildossier-sanierung-status.mjs &amp;&amp; node scripts/quality/build-go2-detailconcept-production-status.mjs &amp;&amp; node scripts/tools/build-tool-examples-dashboard.mjs &amp;&amp; node scripts/blog/build-blog-index.mjs &amp;&amp; node scripts/quality/check-journal-index.mjs &amp;&amp; node scripts/podcast/build-podcast-pages.mjs &amp;&amp; node scripts/assets/check-release-assets.mjs &amp;&amp; node scripts/feeds/build-rss-feeds.mjs &amp;&amp; node scripts/feeds/build-feeds-page.mjs &amp;&amp; node scripts/quality/produce-public-pdf-downloads.mjs &amp;&amp; node scripts/quality/sanitize-public-download-links.mjs &amp;&amp; node scripts/site/build-so-wirkt-wirkungsoekonomie.mjs &amp;&amp; node scripts/site/build-institut-teaser.mjs &amp;&amp; node scripts/academy/build-certificates.mjs &amp;&amp; node scripts/import/build-relationships.mjs &amp;&amp; node scripts/import/build-content-manifest.mjs &amp;&amp; node scripts/i18n/build-english-document-manifest.mjs &amp;&amp; node scripts/i18n/build-english-library.mjs &amp;&amp; node scripts/i18n/build-english-tools.mjs &amp;&amp; node scripts/i18n/build-english-function-pages.mjs &amp;&amp; node scripts/i18n/build-english-search.mjs &amp;&amp; node scripts/i18n/build-english-asset-text-inventory.mjs &amp;&amp; node scripts/i18n/build-english-route-coverage.mjs &amp;&amp; node scripts/search/build-woek-search-index.mjs &amp;&amp; node scripts/site/build-site-taxonomy.mjs &amp;&amp; node scripts/api/build-core-api-manifest.mjs &amp;&amp; node scripts/quality/apply-publication-qa-normalization.mjs &amp;&amp; node scripts/site/normalize-site-header.mjs &amp;&amp; node scripts/site/normalize-site-footer.mjs &amp;&amp; node scripts/quality/archive-macos-duplicate-routes.mjs &amp;&amp; node scripts/search/build-woek-search-index.mjs &amp;&amp; node scripts/check-public-language.js &amp;&amp; node scripts/quality/check-no-em-dash.mjs --fix&quot;,
+      &quot;stepCount&quot;: 85,
       &quot;phases&quot;: [
         &quot;academy-certificates&quot;,
         &quot;build-step&quot;,
@@ -1432,19 +1470,35 @@
         &quot;build-step&quot;,
         &quot;quality-gate&quot;
       ]
+    },
+    {
+      &quot;name&quot;: &quot;build:journal-pdfs&quot;,
+      &quot;command&quot;: &quot;node scripts/blog/build-journal-pdfs.mjs&quot;,
+      &quot;stepCount&quot;: 1,
+      &quot;phases&quot;: [
+        &quot;build-step&quot;
+      ]
+    },
+    {
+      &quot;name&quot;: &quot;check:journal-pdfs&quot;,
+      &quot;command&quot;: &quot;node scripts/blog/check-journal-pdfs.mjs&quot;,
+      &quot;stepCount&quot;: 1,
+      &quot;phases&quot;: [
+        &quot;quality-gate&quot;
+      ]
     }
   ],
   &quot;dataProducts&quot;: [
     {
       &quot;id&quot;: &quot;glossary&quot;,
       &quot;path&quot;: &quot;assets/data/glossary-lookup.json&quot;,
-      &quot;count&quot;: 1851,
+      &quot;count&quot;: 2071,
       &quot;owner&quot;: &quot;Wissenskern&quot;
     },
     {
       &quot;id&quot;: &quot;search-index&quot;,
       &quot;path&quot;: &quot;assets/search/search-index.json&quot;,
-      &quot;count&quot;: 27899,
+      &quot;count&quot;: 30214,
       &quot;owner&quot;: &quot;Wissenskern&quot;
     },
     {

@@ -20,10 +20,12 @@ ONLINE = ROOT / os.environ.get("WOEK_PUBLICATION_ONLINE", "content/documents/onl
 PDF = ROOT / os.environ.get("WOEK_PUBLICATION_PDF", "public/downloads/originals/Nachhaltigkeit-Systemarchitektur-v1.1.pdf")
 TITLE = os.environ.get("WOEK_PUBLICATION_TITLE", "Nachhaltigkeit ist keine Strategie. Sie ist eine Systemarchitektur.")
 EDITION = os.environ.get("WOEK_PUBLICATION_EDITION", "Version 1.1 · Stand 30. Juli 2026 · Working Paper")
+SHOW_TITLE = os.environ.get("WOEK_PUBLICATION_SHOW_TITLE", "").strip().lower() in {"1", "true", "yes"}
 
 
 def inline(value: str) -> str:
     escaped = html.escape(value)
+    escaped = escaped.replace("`", "")
     escaped = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", escaped)
     escaped = re.sub(r"\*(.+?)\*", r"<i>\1</i>", escaped)
     return escaped
@@ -125,7 +127,8 @@ def build_html(items) -> str:
 
 def build_pdf(items) -> None:
     body = build_html(items)
-    document = f'''<!doctype html><html><head><meta charset="utf-8"><title>{html.escape(TITLE)}</title><style>@page {{ size: A4; margin: 18mm; }} body {{ color:#20242a; font-family:Arial,sans-serif; font-size:10pt; line-height:1.45; }} h2 {{ color:#081126; font-family:Georgia,serif; font-size:21pt; line-height:1.15; margin:17pt 0 8pt; }} h3 {{ color:#1f6b4f; font-size:14pt; margin:15pt 0 6pt; }} h4 {{ color:#081126; font-size:11pt; margin:11pt 0 4pt; }} p {{ margin:0 0 7pt; }} blockquote {{ background:#f3f6ef; border-left:3px solid #b6903d; color:#1f6b4f; font-weight:bold; margin:9pt 8mm; padding:7pt; }} ul {{ margin:0 0 6pt 14pt; }} table {{ width:100%; border-collapse:collapse; font-size:8.2pt; margin:8pt 0; }} th {{ background:#081126; color:#fff; text-align:left; }} th, td {{ border:0.5pt solid #b8c0c8; padding:4pt; vertical-align:top; }} tr:nth-child(even) {{ background:#f3f6ef; }}</style></head><body><p><strong>{html.escape(EDITION)}</strong></p>{body}</body></html>'''
+    title_block = f"<h1>{html.escape(TITLE)}</h1>" if SHOW_TITLE else ""
+    document = f'''<!doctype html><html><head><meta charset="utf-8"><title>{html.escape(TITLE)}</title><style>@page {{ size: A4; margin: 18mm; }} body {{ color:#20242a; font-family:Arial,sans-serif; font-size:10pt; line-height:1.45; }} h1 {{ color:#081126; font-family:Georgia,serif; font-size:29pt; line-height:1.08; margin:0 0 7pt; }} h2 {{ color:#081126; font-family:Georgia,serif; font-size:21pt; line-height:1.15; margin:17pt 0 8pt; }} h3 {{ color:#1f6b4f; font-size:14pt; margin:15pt 0 6pt; }} h4 {{ color:#081126; font-size:11pt; margin:11pt 0 4pt; }} p {{ margin:0 0 7pt; }} blockquote {{ background:#f3f6ef; border-left:3px solid #b6903d; color:#1f6b4f; font-weight:bold; margin:9pt 8mm; padding:7pt; }} ul {{ margin:0 0 6pt 14pt; }} table {{ width:100%; border-collapse:collapse; font-size:8.2pt; margin:8pt 0; }} th {{ background:#081126; color:#fff; text-align:left; }} th, td {{ border:0.5pt solid #b8c0c8; padding:4pt; vertical-align:top; }} tr:nth-child(even) {{ background:#f3f6ef; }}</style></head><body>{title_block}<p><strong>{html.escape(EDITION)}</strong></p>{body}</body></html>'''
     soffice = Path("/Applications/LibreOffice.app/Contents/MacOS/soffice")
     if not soffice.exists():
         raise RuntimeError("LibreOffice ist für den PDF-Export nicht verfügbar.")

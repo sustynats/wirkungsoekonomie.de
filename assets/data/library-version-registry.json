@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T10:32:57.520Z",
+  "generatedAt": "2026-07-30T18:16:13.121Z",
   "purpose": "Stage 9: kuratiertes Quellen- und Versionssystem der Wirkungsökonomie-Bibliothek.",
   "schema": {
     "type": [
@@ -205,35 +205,58 @@
     }
   ],
   "counts": {
-    "total": 3031,
+    "total": 3180,
     "byStatus": {
+      "archiviert": 1,
       "führend": 9,
-      "aktuell": 2499,
+      "aktuell": 2630,
       "Arbeitsfassung": 278,
-      "ältere Fassung": 245
+      "ältere Fassung": 262
     },
     "byType": {
-      "Grundlagenwerk": 65,
-      "Glossar": 43,
+      "Glossar": 47,
+      "Grundlagenwerk": 67,
       "Methodik": 110,
-      "Arbeitspapier": 2508,
-      "Beispiel": 15,
+      "Arbeitspapier": 2648,
+      "Gesetzesentwurf": 39,
+      "Beispiel": 16,
       "Dossier": 232,
-      "Gesetzesentwurf": 37,
       "Leitbild": 7,
       "Buch": 8,
       "Whitepaper": 6
     },
     "bySource": {
-      "curated-publication": 2,
+      "download-or-document": 885,
+      "curated-publication": 3,
       "leading-reference": 8,
-      "download-or-document": 737,
       "online-version": 2284
     },
-    "downloadFiles": 741,
+    "downloadFiles": 891,
     "onlineVersions": 2284
   },
   "documents": [
+    {
+      "id": "download-or-document-public-downloads-originals-woek-begriffsleitfaden-fuehrend-v1-0-pdf",
+      "title": "WÖk-Begriffsleitfaden führend v1.0",
+      "shortDescription": "Zitierfähige historische PDF-Fassung; für den aktuellen Begriffsstand gilt Version 1.2.",
+      "type": "Glossar",
+      "status": "archiviert",
+      "dateOrStand": "v1.0",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.pdf",
+        "sourcePath": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
     {
       "id": "woemm-2-0",
       "title": "Das Wirkungsökonomische Managementmodell",
@@ -477,8 +500,8 @@
     },
     {
       "id": "leading-reference-bibliothek-woek-begriffsleitfaden-fuehrend-index-html",
-      "title": "WÖk-Begriffsleitfaden führend v1.0",
-      "shortDescription": "Maßgebliche Sprachreferenz für Wirkung, Wirkungspotenzial, positive Netto-Wirkung, SDG+, Rückkopplung und konsistente WÖk-Sprache.",
+      "title": "WÖk-Begriffsleitfaden führend v1.3",
+      "shortDescription": "Maßgebliche Sprachreferenz für Nachhaltigkeit als langfristig gesicherte Wirkungsresilienz und acht Analysebausteine von Resilienz und Systementwicklung.",
       "type": "Glossar",
       "status": "führend",
       "dateOrStand": "",
@@ -498,12 +521,12 @@
       "isLeadingReference": true
     },
     {
-      "id": "download-or-document-public-downloads-originals-woek-begriffsleitfaden-fuehrend-v1-0-pdf",
-      "title": "WÖk-Begriffsleitfaden führend v1.0",
-      "shortDescription": "PDF-Fassung der maßgeblichen Sprachreferenz für Wirkung, Wirkungspotenzial, positive Netto-Wirkung, SDG+, Rückkopplung und konsistente WÖk-Sprache.",
+      "id": "download-or-document-public-downloads-originals-woek-begriffsleitfaden-fuehrend-v1-3-pdf",
+      "title": "WÖk-Begriffsleitfaden führend v1.3",
+      "shortDescription": "PDF-Fassung der maßgeblichen Sprachreferenz für langfristig gesicherte Wirkungsresilienz und acht Analysebausteine von Resilienz und Systementwicklung.",
       "type": "Glossar",
       "status": "führend",
-      "dateOrStand": "v1.0",
+      "dateOrStand": "v1.3",
       "topics": [
         "Grundlagen & Orientierung"
       ],
@@ -513,11 +536,1989 @@
         "PDF"
       ],
       "urls": {
-        "primary": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.pdf",
-        "sourcePath": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.pdf"
+        "primary": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.3.pdf",
+        "sourcePath": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.3.pdf"
       },
       "source": "download-or-document",
       "isLeadingReference": true
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2025-08-09-wirkung-statt-kapital-zeit-fur-eine-",
+      "title": "2025 08 09 wirkung statt kapital zeit fur eine neue logik",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Kapital & Finanzierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2025-08-09",
+      "topics": [
+        "Kapital & Finanzierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2025-08-09-wirkung-statt-kapital-zeit-fur-eine-neue-logik.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2025-08-09-wirkung-statt-kapital-zeit-fur-eine-neue-logik.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2025-09-19-die-wirtschaft-ist-keine-marklin-eis",
+      "title": "2025 09 19 die wirtschaft ist keine marklin eisenbahn",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Wirtschaft & Unternehmen.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2025-09-19",
+      "topics": [
+        "Wirtschaft & Unternehmen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2025-09-19-die-wirtschaft-ist-keine-marklin-eisenbahn.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2025-09-19-die-wirtschaft-ist-keine-marklin-eisenbahn.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2025-10-06-die-wirkungsokonomie-warum-wir-wirts",
+      "title": "2025 10 06 die wirkungsokonomie warum wir wirtschaft politik und gesellschaft neu denken mussen",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Wirtschaft & Unternehmen, Staat & Demokratie.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2025-10-06",
+      "topics": [
+        "Wirtschaft & Unternehmen",
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital",
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2025-10-06-die-wirkungsokonomie-warum-wir-wirtschaft-politik-und-gesellschaft-neu-denken-mussen.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2025-10-06-die-wirkungsokonomie-warum-wir-wirtschaft-politik-und-gesellschaft-neu-denken-mussen.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2025-10-07-wenn-maschinen-arbeiten-warum-die-wi",
+      "title": "2025 10 07 wenn maschinen arbeiten warum die wirkungsokonomie keine angst vor KI hat",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Daten & Infrastruktur.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2025-10-07",
+      "topics": [
+        "Daten & Infrastruktur"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Alltag & Grundbedürfnisse"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2025-10-07-wenn-maschinen-arbeiten-warum-die-wirkungsokonomie-keine-angst-vor-ki-hat.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2025-10-07-wenn-maschinen-arbeiten-warum-die-wirkungsokonomie-keine-angst-vor-ki-hat.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2025-10-08-solar-verschenken-ware-billiger-als-",
+      "title": "2025 10 08 solar verschenken ware billiger als weitermachen wie bisher",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2025-10-08",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2025-10-08-solar-verschenken-ware-billiger-als-weitermachen-wie-bisher.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2025-10-08-solar-verschenken-ware-billiger-als-weitermachen-wie-bisher.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2025-10-10-neues-grundsicherungs-kapitel-nur-ei",
+      "title": "2025 10 10 neues grundsicherungs kapitel nur ein namenswechsel eine wok analyse zum cdu spd plan zur abscha",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2025-10-10",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2025-10-10-neues-grundsicherungs-kapitel-nur-ein-namenswechsel-eine-wok-analyse-zum-cdu-spd-plan-zur-abscha.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2025-10-10-neues-grundsicherungs-kapitel-nur-ein-namenswechsel-eine-wok-analyse-zum-cdu-spd-plan-zur-abscha.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2025-10-10-technologieoffenheit-freiheit-oder-f",
+      "title": "2025 10 10 technologieoffenheit freiheit oder fossilfalle",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2025-10-10",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2025-10-10-technologieoffenheit-freiheit-oder-fossilfalle.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2025-10-10-technologieoffenheit-freiheit-oder-fossilfalle.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2025-10-10-warum-die-freie-marktwirtschaft-sich",
+      "title": "2025 10 10 warum die freie marktwirtschaft sich selbst zerstort und wie sie zu retten ist",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Wirtschaft & Unternehmen.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2025-10-10",
+      "topics": [
+        "Wirtschaft & Unternehmen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2025-10-10-warum-die-freie-marktwirtschaft-sich-selbst-zerstort-und-wie-sie-zu-retten-ist.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2025-10-10-warum-die-freie-marktwirtschaft-sich-selbst-zerstort-und-wie-sie-zu-retten-ist.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2025-10-10-was-china-mit-solar-macht-und-warum-",
+      "title": "2025 10 10 was china mit solar macht und warum wir davon profitieren",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2025-10-10",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2025-10-10-was-china-mit-solar-macht-und-warum-wir-davon-profitieren.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2025-10-10-was-china-mit-solar-macht-und-warum-wir-davon-profitieren.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2025-10-11-warum-das-richtige-endlich-gunstiger",
+      "title": "2025 10 11 warum das richtige endlich gunstiger wird",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2025-10-11",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2025-10-11-warum-das-richtige-endlich-gunstiger-wird.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2025-10-11-warum-das-richtige-endlich-gunstiger-wird.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2025-10-12-wenn-mieten-wirkung-zeigen-wohnungsm",
+      "title": "2025 10 12 wenn mieten wirkung zeigen wohnungsmarkt fair und stabil",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Alltag & Grundbedürfnisse.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2025-10-12",
+      "topics": [
+        "Alltag & Grundbedürfnisse"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Alltag & Grundbedürfnisse"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2025-10-12-wenn-mieten-wirkung-zeigen-wohnungsmarkt-fair-und-stabil.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2025-10-12-wenn-mieten-wirkung-zeigen-wohnungsmarkt-fair-und-stabil.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2025-10-13-produktbesteuerung-durch-wirkung-wen",
+      "title": "2025 10 13 produktbesteuerung durch wirkung wenn preise beginnen die wahrheit zu sagen",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Produkte, Konsum & Beschaffung, Staat & Demokratie.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2025-10-13",
+      "topics": [
+        "Produkte, Konsum & Beschaffung",
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [
+        "Wirkungssteuerung"
+      ],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital",
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2025-10-13-produktbesteuerung-durch-wirkung-wenn-preise-beginnen-die-wahrheit-zu-sagen.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2025-10-13-produktbesteuerung-durch-wirkung-wenn-preise-beginnen-die-wahrheit-zu-sagen.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2025-10-13-wie-die-wirkungsokonomie-das-rentenp",
+      "title": "2025 10 13 wie die wirkungsokonomie das rentenproblem wirklich losen kann",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Kapital & Finanzierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2025-10-13",
+      "topics": [
+        "Kapital & Finanzierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2025-10-13-wie-die-wirkungsokonomie-das-rentenproblem-wirklich-losen-kann.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2025-10-13-wie-die-wirkungsokonomie-das-rentenproblem-wirklich-losen-kann.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2025-10-13-wirkung-statt-leistung-das-neue-eink",
+      "title": "2025 10 13 wirkung statt leistung das neue einkommensteuergesetz der zukunft",
+      "shortDescription": "Gesetzesentwurf im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Staat & Demokratie.",
+      "type": "Gesetzesentwurf",
+      "status": "aktuell",
+      "dateOrStand": "2025-10-13",
+      "topics": [
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [
+        "Wirkungssteuerung"
+      ],
+      "relatedImpactFields": [
+        "Alltag & Grundbedürfnisse",
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2025-10-13-wirkung-statt-leistung-das-neue-einkommensteuergesetz-der-zukunft.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2025-10-13-wirkung-statt-leistung-das-neue-einkommensteuergesetz-der-zukunft.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2025-10-13-wirkung-statt-zertifikate-wie-die-wi",
+      "title": "2025 10 13 wirkung statt zertifikate wie die wirkungsokonomie den label dschungel beendet",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2025-10-13",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2025-10-13-wirkung-statt-zertifikate-wie-die-wirkungsokonomie-den-label-dschungel-beendet.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2025-10-13-wirkung-statt-zertifikate-wie-die-wirkungsokonomie-den-label-dschungel-beendet.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2025-10-14-medien-wirkung-warum-die-zukunft-der",
+      "title": "2025 10 14 medien wirkung warum die zukunft der demokratie von sauberen informationsflussen abhangt",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Staat & Demokratie, Öffentlichkeit & Wissen.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2025-10-14",
+      "topics": [
+        "Staat & Demokratie",
+        "Öffentlichkeit & Wissen"
+      ],
+      "relatedMethods": [
+        "Faktencheck & Folgencheck"
+      ],
+      "relatedImpactFields": [
+        "Staat & Demokratie",
+        "Öffentlichkeit & Wissen"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2025-10-14-medien-wirkung-warum-die-zukunft-der-demokratie-von-sauberen-informationsflussen-abhangt.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2025-10-14-medien-wirkung-warum-die-zukunft-der-demokratie-von-sauberen-informationsflussen-abhangt.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2025-10-16-vom-steuersystem-zum-steuerungssyste",
+      "title": "2025 10 16 vom steuersystem zum steuerungssystem wie die wirkungsgewerbesteuer kommunen zukunftsfahig macht",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Staat & Demokratie.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2025-10-16",
+      "topics": [
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [
+        "Wirkungssteuerung"
+      ],
+      "relatedImpactFields": [
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2025-10-16-vom-steuersystem-zum-steuerungssystem-wie-die-wirkungsgewerbesteuer-kommunen-zukunftsfahig-macht.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2025-10-16-vom-steuersystem-zum-steuerungssystem-wie-die-wirkungsgewerbesteuer-kommunen-zukunftsfahig-macht.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2025-10-24-von-werten-zu-wirkung-pdf",
+      "title": "2025 10 24 von werten zu wirkung",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2025-10-24",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2025-10-24-von-werten-zu-wirkung.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2025-10-24-von-werten-zu-wirkung.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2025-11-02-wenn-maschinen-arbeiten-warum-wir-da",
+      "title": "2025 11 02 wenn maschinen arbeiten warum wir das system neu denken mussen",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2025-11-02",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Alltag & Grundbedürfnisse"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2025-11-02-wenn-maschinen-arbeiten-warum-wir-das-system-neu-denken-mussen.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2025-11-02-wenn-maschinen-arbeiten-warum-wir-das-system-neu-denken-mussen.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2025-11-07-warum-deutschland-wohlstand-verschen",
+      "title": "2025 11 07 warum deutschland wohlstand verschenkt und das grote wachstumspotenzial seiner geschichte ubersi",
+      "shortDescription": "Grundlagenwerk im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Grundlagenwerk",
+      "status": "aktuell",
+      "dateOrStand": "2025-11-07",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2025-11-07-warum-deutschland-wohlstand-verschenkt-und-das-grote-wachstumspotenzial-seiner-geschichte-ubersi.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2025-11-07-warum-deutschland-wohlstand-verschenkt-und-das-grote-wachstumspotenzial-seiner-geschichte-ubersi.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2025-11-28-die-wirkungsokonomie-warum-wir-ein-n",
+      "title": "2025 11 28 die wirkungsokonomie warum wir ein neues gesellschaftsmodell brauchen",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2025-11-28",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2025-11-28-die-wirkungsokonomie-warum-wir-ein-neues-gesellschaftsmodell-brauchen.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2025-11-28-die-wirkungsokonomie-warum-wir-ein-neues-gesellschaftsmodell-brauchen.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2025-12-11-wenn-politik-scheitert-ubernimmt-der",
+      "title": "2025 12 11 wenn politik scheitert ubernimmt der finanzmarkt und das ist unsere chance",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Kapital & Finanzierung, Staat & Demokratie.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2025-12-11",
+      "topics": [
+        "Kapital & Finanzierung",
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital",
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2025-12-11-wenn-politik-scheitert-ubernimmt-der-finanzmarkt-und-das-ist-unsere-chance.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2025-12-11-wenn-politik-scheitert-ubernimmt-der-finanzmarkt-und-das-ist-unsere-chance.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2025-12-12-die-wirkungsokonomie-ein-lernendes-k",
+      "title": "2025 12 12 die wirkungsokonomie ein lernendes kreislaufsystem zur steuerung von wirtschaft und gesellschaft",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Wirtschaft & Unternehmen, Staat & Demokratie.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2025-12-12",
+      "topics": [
+        "Wirtschaft & Unternehmen",
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [
+        "Wirkungssteuerung"
+      ],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital",
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2025-12-12-die-wirkungsokonomie-ein-lernendes-kreislaufsystem-zur-steuerung-von-wirtschaft-und-gesellschaft.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2025-12-12-die-wirkungsokonomie-ein-lernendes-kreislaufsystem-zur-steuerung-von-wirtschaft-und-gesellschaft.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2025-12-13-warum-demokratie-sich-selbst-destabi",
+      "title": "2025 12 13 warum demokratie sich selbst destabilisiert",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Staat & Demokratie.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2025-12-13",
+      "topics": [
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2025-12-13-warum-demokratie-sich-selbst-destabilisiert.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2025-12-13-warum-demokratie-sich-selbst-destabilisiert.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2025-12-15-medien-plattformen-und-wirkung-pdf",
+      "title": "2025 12 15 medien plattformen und wirkung",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Öffentlichkeit & Wissen.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2025-12-15",
+      "topics": [
+        "Öffentlichkeit & Wissen"
+      ],
+      "relatedMethods": [
+        "Faktencheck & Folgencheck"
+      ],
+      "relatedImpactFields": [
+        "Öffentlichkeit & Wissen"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2025-12-15-medien-plattformen-und-wirkung.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2025-12-15-medien-plattformen-und-wirkung.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2025-12-15-was-ist-leistung-im-21-jahrhundert-p",
+      "title": "2025 12 15 was ist leistung im 21 jahrhundert",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2025-12-15",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2025-12-15-was-ist-leistung-im-21-jahrhundert.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2025-12-15-was-ist-leistung-im-21-jahrhundert.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2025-12-16-wirkungsokonomie-wie-wir-wirtschaft-",
+      "title": "2025 12 16 wirkungsokonomie wie wir wirtschaft nach wirkung auf mensch planet und demokratie steuern konnen",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Wirtschaft & Unternehmen, Staat & Demokratie.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2025-12-16",
+      "topics": [
+        "Wirtschaft & Unternehmen",
+        "Staat & Demokratie",
+        "Planet & Resilienz"
+      ],
+      "relatedMethods": [
+        "Wirkungssteuerung"
+      ],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital",
+        "Staat & Demokratie",
+        "Planet & Resilienz"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2025-12-16-wirkungsokonomie-wie-wir-wirtschaft-nach-wirkung-auf-mensch-planet-und-demokratie-steuern-konnen.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2025-12-16-wirkungsokonomie-wie-wir-wirtschaft-nach-wirkung-auf-mensch-planet-und-demokratie-steuern-konnen.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2025-12-18-die-grenzen-der-zukunftsforschung-un",
+      "title": "2025 12 18 die grenzen der zukunftsforschung und ihr blinder fleck",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2025-12-18",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2025-12-18-die-grenzen-der-zukunftsforschung-und-ihr-blinder-fleck.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2025-12-18-die-grenzen-der-zukunftsforschung-und-ihr-blinder-fleck.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2025-12-22-von-der-pigou-steuer-zur-wirkungsoko",
+      "title": "2025 12 22 von der pigou steuer zur wirkungsokonomie",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Staat & Demokratie.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2025-12-22",
+      "topics": [
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [
+        "Wirkungssteuerung"
+      ],
+      "relatedImpactFields": [
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2025-12-22-von-der-pigou-steuer-zur-wirkungsokonomie.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2025-12-22-von-der-pigou-steuer-zur-wirkungsokonomie.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2025-12-30-wie-die-wirkungsokonomie-funktionier",
+      "title": "2025 12 30 wie die wirkungsokonomie funktioniert",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2025-12-30",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2025-12-30-wie-die-wirkungsokonomie-funktioniert.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2025-12-30-wie-die-wirkungsokonomie-funktioniert.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-01-04-gedankenspiel-wenn-sich-demokratien-",
+      "title": "2026 01 04 gedankenspiel wenn sich demokratien selbst zerstoren",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Staat & Demokratie.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-01-04",
+      "topics": [
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-01-04-gedankenspiel-wenn-sich-demokratien-selbst-zerstoren.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-01-04-gedankenspiel-wenn-sich-demokratien-selbst-zerstoren.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-01-05-reverse-merit-order-wie-wirkungsokon",
+      "title": "2026 01 05 reverse merit order wie wirkungsokonomie markte und politische entscheidungen steuert",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Staat & Demokratie.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-01-05",
+      "topics": [
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [
+        "Wirkungssteuerung"
+      ],
+      "relatedImpactFields": [
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-01-05-reverse-merit-order-wie-wirkungsokonomie-markte-und-politische-entscheidungen-steuert.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-01-05-reverse-merit-order-wie-wirkungsokonomie-markte-und-politische-entscheidungen-steuert.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-01-09-soziale-resilienz-gegen-verhetzung-e",
+      "title": "2026 01 09 soziale resilienz gegen verhetzung ein wirkungsokonomisches gesamtkonzept fur demokratie gesells",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Staat & Demokratie, Planet & Resilienz.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-01-09",
+      "topics": [
+        "Staat & Demokratie",
+        "Planet & Resilienz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Staat & Demokratie",
+        "Planet & Resilienz"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-01-09-soziale-resilienz-gegen-verhetzung-ein-wirkungsokonomisches-gesamtkonzept-fur-demokratie-gesells.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-01-09-soziale-resilienz-gegen-verhetzung-ein-wirkungsokonomisches-gesamtkonzept-fur-demokratie-gesells.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-01-14-warum-leistung-ohne-wirkung-eine-ill",
+      "title": "2026 01 14 warum leistung ohne wirkung eine illusion ist und was thermodynamik mit marktwirtschaft zu tun h",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Wirtschaft & Unternehmen.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-01-14",
+      "topics": [
+        "Wirtschaft & Unternehmen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-01-14-warum-leistung-ohne-wirkung-eine-illusion-ist-und-was-thermodynamik-mit-marktwirtschaft-zu-tun-h.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-01-14-warum-leistung-ohne-wirkung-eine-illusion-ist-und-was-thermodynamik-mit-marktwirtschaft-zu-tun-h.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-01-17-das-grote-steuersparprogramm-der-ges",
+      "title": "2026 01 17 das grote steuersparprogramm der geschichte",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Staat & Demokratie.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-01-17",
+      "topics": [
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [
+        "Wirkungssteuerung"
+      ],
+      "relatedImpactFields": [
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-01-17-das-grote-steuersparprogramm-der-geschichte.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-01-17-das-grote-steuersparprogramm-der-geschichte.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-01-17-meinungsfreiheit-braucht-mehr-als-gu",
+      "title": "2026 01 17 meinungsfreiheit braucht mehr als gute absichten",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-01-17",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-01-17-meinungsfreiheit-braucht-mehr-als-gute-absichten.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-01-17-meinungsfreiheit-braucht-mehr-als-gute-absichten.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-01-22-wirkung-schlagt-wahrheit-wie-offentl",
+      "title": "2026 01 22 wirkung schlagt wahrheit wie offentliche kommunikation demokratie formt",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Staat & Demokratie, Öffentlichkeit & Wissen.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-01-22",
+      "topics": [
+        "Staat & Demokratie",
+        "Öffentlichkeit & Wissen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Staat & Demokratie",
+        "Öffentlichkeit & Wissen"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-01-22-wirkung-schlagt-wahrheit-wie-offentliche-kommunikation-demokratie-formt.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-01-22-wirkung-schlagt-wahrheit-wie-offentliche-kommunikation-demokratie-formt.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-01-28-wirkung-statt-weltbild-eine-wirkungs",
+      "title": "2026 01 28 wirkung statt weltbild eine wirkungsokonomische analyse des afd regierungsprogramms",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-01-28",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-01-28-wirkung-statt-weltbild-eine-wirkungsokonomische-analyse-des-afd-regierungsprogramms.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-01-28-wirkung-statt-weltbild-eine-wirkungsokonomische-analyse-des-afd-regierungsprogramms.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-01-29-was-ist-wirkungsokonomie-pdf",
+      "title": "2026 01 29 was ist wirkungsokonomie",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-01-29",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-01-29-was-ist-wirkungsokonomie.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-01-29-was-ist-wirkungsokonomie.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-02-03-warum-unser-wirtschaftsmodell-an-sei",
+      "title": "2026 02 03 warum unser wirtschaftsmodell an seine logischen grenzen stot und was daraus folgt",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Wirtschaft & Unternehmen.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-02-03",
+      "topics": [
+        "Wirtschaft & Unternehmen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-02-03-warum-unser-wirtschaftsmodell-an-seine-logischen-grenzen-stot-und-was-daraus-folgt.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-02-03-warum-unser-wirtschaftsmodell-an-seine-logischen-grenzen-stot-und-was-daraus-folgt.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-02-03-wenn-fakten-nicht-mehr-reichen-warum",
+      "title": "2026 02 03 wenn fakten nicht mehr reichen warum demokratische kommunikation heute ein wirkungsproblem ist",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Öffentlichkeit & Wissen.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-02-03",
+      "topics": [
+        "Öffentlichkeit & Wissen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Öffentlichkeit & Wissen"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-02-03-wenn-fakten-nicht-mehr-reichen-warum-demokratische-kommunikation-heute-ein-wirkungsproblem-ist.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-02-03-wenn-fakten-nicht-mehr-reichen-warum-demokratische-kommunikation-heute-ein-wirkungsproblem-ist.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-02-06-wenn-kommunikation-realitat-formt-wi",
+      "title": "2026 02 06 wenn kommunikation realitat formt wirkung als neue demokratische leitkategorie",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Öffentlichkeit & Wissen.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-02-06",
+      "topics": [
+        "Öffentlichkeit & Wissen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Öffentlichkeit & Wissen"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-02-06-wenn-kommunikation-realitat-formt-wirkung-als-neue-demokratische-leitkategorie.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-02-06-wenn-kommunikation-realitat-formt-wirkung-als-neue-demokratische-leitkategorie.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-02-07-macht-ohne-mehrheit-die-afd-strategi",
+      "title": "2026 02 07 macht ohne mehrheit die afd strategie wirkungsokonomisch erklart",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-02-07",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-02-07-macht-ohne-mehrheit-die-afd-strategie-wirkungsokonomisch-erklart.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-02-07-macht-ohne-mehrheit-die-afd-strategie-wirkungsokonomisch-erklart.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-02-08-millionen-seiten-und-trotzdem-keine-",
+      "title": "2026 02 08 millionen seiten und trotzdem keine verantwortung",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-02-08",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-02-08-millionen-seiten-und-trotzdem-keine-verantwortung.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-02-08-millionen-seiten-und-trotzdem-keine-verantwortung.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-02-09-von-der-wertschopfungskette-zum-wirk",
+      "title": "2026 02 09 von der wertschopfungskette zum wirkungskreislauf",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-02-09",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-02-09-von-der-wertschopfungskette-zum-wirkungskreislauf.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-02-09-von-der-wertschopfungskette-zum-wirkungskreislauf.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-02-10-impact-controlling-im-unternehmen-vo",
+      "title": "2026 02 10 impact controlling im unternehmen vom reporting zur wirkungsokonomischen steuerung",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Wirtschaft & Unternehmen, Staat & Demokratie.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-02-10",
+      "topics": [
+        "Wirtschaft & Unternehmen",
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [
+        "Wirkungssteuerung"
+      ],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital",
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-02-10-impact-controlling-im-unternehmen-vom-reporting-zur-wirkungsokonomischen-steuerung.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-02-10-impact-controlling-im-unternehmen-vom-reporting-zur-wirkungsokonomischen-steuerung.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-02-10-warum-die-vollbremsung-von-wind-und-",
+      "title": "2026 02 10 warum die vollbremsung von wind und solar kein energieproblem lost eine wirkungsokonomische eino",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Alltag & Grundbedürfnisse.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-02-10",
+      "topics": [
+        "Alltag & Grundbedürfnisse"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Planet & Resilienz"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-02-10-warum-die-vollbremsung-von-wind-und-solar-kein-energieproblem-lost-eine-wirkungsokonomische-eino.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-02-10-warum-die-vollbremsung-von-wind-und-solar-kein-energieproblem-lost-eine-wirkungsokonomische-eino.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-02-10-wie-setzt-man-die-wirkungsokonomie-u",
+      "title": "2026 02 10 wie setzt man die wirkungsokonomie um ohne das system zu uberfordern",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-02-10",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-02-10-wie-setzt-man-die-wirkungsokonomie-um-ohne-das-system-zu-uberfordern.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-02-10-wie-setzt-man-die-wirkungsokonomie-um-ohne-das-system-zu-uberfordern.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-02-10-wirkungsorientierte-unternehmensfuhr",
+      "title": "2026 02 10 wirkungsorientierte unternehmensfuhrung",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Wirtschaft & Unternehmen.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-02-10",
+      "topics": [
+        "Wirtschaft & Unternehmen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-02-10-wirkungsorientierte-unternehmensfuhrung.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-02-10-wirkungsorientierte-unternehmensfuhrung.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-02-12-wahl-o-mat-zur-landtagswahl-baden-wu",
+      "title": "2026 02 12 wahl o mat zur landtagswahl baden wurttemberg wirkungsokonomisch gelesen welche politik sichert",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Staat & Demokratie.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-02-12",
+      "topics": [
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-02-12-wahl-o-mat-zur-landtagswahl-baden-wurttemberg-wirkungsokonomisch-gelesen-welche-politik-sichert.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-02-12-wahl-o-mat-zur-landtagswahl-baden-wurttemberg-wirkungsokonomisch-gelesen-welche-politik-sichert.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-02-12-wirkungsokonomie-wir-messen-wirkung-",
+      "title": "2026 02 12 wirkungsokonomie wir messen wirkung langst warum steuern wir noch nicht danach",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Staat & Demokratie.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-02-12",
+      "topics": [
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [
+        "Wirkungssteuerung"
+      ],
+      "relatedImpactFields": [
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-02-12-wirkungsokonomie-wir-messen-wirkung-langst-warum-steuern-wir-noch-nicht-danach.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-02-12-wirkungsokonomie-wir-messen-wirkung-langst-warum-steuern-wir-noch-nicht-danach.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-02-15-der-co2-preis-konnte-zu-einem-der-wi",
+      "title": "2026 02 15 der co2 preis konnte zu einem der wirksamsten kostenentlastungsinstrumente fur burger innen werd",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-02-15",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "Wirkungssteuerung"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-02-15-der-co2-preis-konnte-zu-einem-der-wirksamsten-kostenentlastungsinstrumente-fur-burger-innen-werd.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-02-15-der-co2-preis-konnte-zu-einem-der-wirksamsten-kostenentlastungsinstrumente-fur-burger-innen-werd.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-02-16-der-co2-rucksack-sagt-systemisch-nic",
+      "title": "2026 02 16 der co2 rucksack sagt systemisch nichts warum wir elektroauto und verbrenner falsch vergleichen",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-02-16",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-02-16-der-co2-rucksack-sagt-systemisch-nichts-warum-wir-elektroauto-und-verbrenner-falsch-vergleichen.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-02-16-zeit-der-monster-munchen-macht-und-d",
+      "title": "2026 02 16 zeit der monster munchen macht und das groe missverstandnis von sicherheit",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-02-16",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-02-16-zeit-der-monster-munchen-macht-und-das-groe-missverstandnis-von-sicherheit.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-02-16-zeit-der-monster-munchen-macht-und-das-groe-missverstandnis-von-sicherheit.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-02-17-was-wir-2021-furchteten-und-was-wir-",
+      "title": "2026 02 17 was wir 2021 furchteten und was wir 2026 diskutieren eine gefahrliche verschiebung des sicherhei",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-02-17",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-02-17-was-wir-2021-furchteten-und-was-wir-2026-diskutieren-eine-gefahrliche-verschiebung-des-sicherhei.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-02-17-was-wir-2021-furchteten-und-was-wir-2026-diskutieren-eine-gefahrliche-verschiebung-des-sicherhei.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-02-18-demokratie-schutzen-menschen-zuruckg",
+      "title": "2026 02 18 demokratie schutzen menschen zuruckgewinnen der lange weg aus der radikalisierung",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Staat & Demokratie.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-02-18",
+      "topics": [
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-02-18-demokratie-schutzen-menschen-zuruckgewinnen-der-lange-weg-aus-der-radikalisierung.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-02-18-demokratie-schutzen-menschen-zuruckgewinnen-der-lange-weg-aus-der-radikalisierung.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-02-20-die-unterschatzte-macht-der-tonalita",
+      "title": "2026 02 20 die unterschatzte macht der tonalitat in der kommunikation",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Öffentlichkeit & Wissen.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-02-20",
+      "topics": [
+        "Öffentlichkeit & Wissen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Öffentlichkeit & Wissen"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-02-20-die-unterschatzte-macht-der-tonalitat-in-der-kommunikation.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-02-20-die-unterschatzte-macht-der-tonalitat-in-der-kommunikation.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-02-20-multipolare-systemdynamik-2025-siche",
+      "title": "2026 02 20 multipolare systemdynamik 2025 sicherheit transformation und die stille destabilisierung europas",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-02-20",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "T-SROI"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-02-20-multipolare-systemdynamik-2025-sicherheit-transformation-und-die-stille-destabilisierung-europas.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-02-20-multipolare-systemdynamik-2025-sicherheit-transformation-und-die-stille-destabilisierung-europas.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-02-21-social-media-fur-kinder-jugendschutz",
+      "title": "2026 02 21 social media fur kinder jugendschutz oder ersatz fur fehlende regulierung",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Daten & Infrastruktur.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-02-21",
+      "topics": [
+        "Daten & Infrastruktur"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-02-21-social-media-fur-kinder-jugendschutz-oder-ersatz-fur-fehlende-regulierung.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-02-21-social-media-fur-kinder-jugendschutz-oder-ersatz-fur-fehlende-regulierung.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-02-22-warum-fakten-nicht-reichen-und-was-s",
+      "title": "2026 02 22 warum fakten nicht reichen und was stattdessen gesellschaftliche stabilitat erzeugt",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-02-22",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-02-22-warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-02-26-energie-ist-infrastruktur-warum-erne",
+      "title": "2026 02 26 energie ist infrastruktur warum erneuerbare energie staatliche verantwortung ist",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Staat & Demokratie, Alltag & Grundbedürfnisse.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-02-26",
+      "topics": [
+        "Staat & Demokratie",
+        "Alltag & Grundbedürfnisse"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Staat & Demokratie",
+        "Planet & Resilienz"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-02-26-energie-ist-infrastruktur-warum-erneuerbare-energie-staatliche-verantwortung-ist.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-02-26-energie-ist-infrastruktur-warum-erneuerbare-energie-staatliche-verantwortung-ist.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-03-02-wirkungsokonomische-einordnung-geopo",
+      "title": "2026 03 02 wirkungsokonomische einordnung geopolitischer konflikte am beispiel des iran konflikts",
+      "shortDescription": "Beispiel im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Beispiel",
+      "status": "aktuell",
+      "dateOrStand": "2026-03-02",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-03-02-wirkungsokonomische-einordnung-geopolitischer-konflikte-am-beispiel-des-iran-konflikts.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-03-02-wirkungsokonomische-einordnung-geopolitischer-konflikte-am-beispiel-des-iran-konflikts.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-03-03-die-grungasstrategie-im-warmemarkt-e",
+      "title": "2026 03 03 die grungasstrategie im warmemarkt eine systemanalyse jenseits der co2 bilanz",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-03-03",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-03-03-die-grungasstrategie-im-warmemarkt-eine-systemanalyse-jenseits-der-co2-bilanz.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-03-03-die-grungasstrategie-im-warmemarkt-eine-systemanalyse-jenseits-der-co2-bilanz.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-03-04-multikrisen-zeigen-eine-neue-okonomi",
+      "title": "2026 03 04 multikrisen zeigen eine neue okonomische realitat risiken sind keine ideologie sie werden eingep",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-03-04",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-03-04-multikrisen-zeigen-eine-neue-okonomische-realitat-risiken-sind-keine-ideologie-sie-werden-eingep.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-03-04-multikrisen-zeigen-eine-neue-okonomische-realitat-risiken-sind-keine-ideologie-sie-werden-eingep.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-03-05-wenn-emporung-zum-verstarker-wird-un",
+      "title": "2026 03 05 wenn emporung zum verstarker wird und wie politische narrative wirken",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-03-05",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-03-05-wenn-emporung-zum-verstarker-wird-und-wie-politische-narrative-wirken.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-03-05-wenn-emporung-zum-verstarker-wird-und-wie-politische-narrative-wirken.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-03-06-csrd-warum-eine-berichtspflicht-zum-",
+      "title": "2026 03 06 csrd warum eine berichtspflicht zum strategischen wendepunkt werden kann",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-03-06",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-03-06-csrd-warum-eine-berichtspflicht-zum-strategischen-wendepunkt-werden-kann.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-03-06-csrd-warum-eine-berichtspflicht-zum-strategischen-wendepunkt-werden-kann.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-03-07-thermodynamik-des-diskurses-informat",
+      "title": "2026 03 07 thermodynamik des diskurses informationsentropie exergie wissensrekombination und bozo dynamik",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-03-07",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Öffentlichkeit & Wissen"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-03-07-thermodynamik-des-diskurses-informationsentropie-exergie-wissensrekombination-und-bozo-dynamik.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-03-07-thermodynamik-des-diskurses-informationsentropie-exergie-wissensrekombination-und-bozo-dynamik.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-03-10-wirtschaft-in-einer-welt-systemische",
+      "title": "2026 03 10 wirtschaft in einer welt systemischer risiken warum wirkung zur neuen steuerungsgroe wird",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Wirtschaft & Unternehmen, Staat & Demokratie.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-03-10",
+      "topics": [
+        "Wirtschaft & Unternehmen",
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [
+        "Wirkungssteuerung"
+      ],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital",
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-03-10-wirtschaft-in-einer-welt-systemischer-risiken-warum-wirkung-zur-neuen-steuerungsgroe-wird.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-03-10-wirtschaft-in-einer-welt-systemischer-risiken-warum-wirkung-zur-neuen-steuerungsgroe-wird.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-03-19-25-der-bevolkerung-gegen-unsere-wirt",
+      "title": "2026 03 19 25 der bevolkerung gegen unsere wirtschaft unser system steht von innen unter spannung und von a",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Wirtschaft & Unternehmen.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-03-19",
+      "topics": [
+        "Wirtschaft & Unternehmen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-03-19-25-der-bevolkerung-gegen-unsere-wirtschaft-unser-system-steht-von-innen-unter-spannung-und-von-a.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-03-19-25-der-bevolkerung-gegen-unsere-wirtschaft-unser-system-steht-von-innen-unter-spannung-und-von-a.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-03-20-integritat-als-blinder-fleck-der-tra",
+      "title": "2026 03 20 integritat als blinder fleck der transformation",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-03-20",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "T-SROI"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-03-20-integritat-als-blinder-fleck-der-transformation.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-03-20-integritat-als-blinder-fleck-der-transformation.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-03-21-das-integritats-paradoxon-warum-fakt",
+      "title": "2026 03 21 das integritats paradoxon warum fakten uns nicht mehr retten",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-03-21",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-03-21-das-integritats-paradoxon-warum-fakten-uns-nicht-mehr-retten.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-03-21-das-integritats-paradoxon-warum-fakten-uns-nicht-mehr-retten.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-03-21-das-integritats-paradoxon-warum-wir-",
+      "title": "2026 03 21 das integritats paradoxon warum wir gerade das zerstoren was wir bewahren wollen",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-03-21",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-03-21-das-integritats-paradoxon-warum-wir-gerade-das-zerstoren-was-wir-bewahren-wollen.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-03-21-das-integritats-paradoxon-warum-wir-gerade-das-zerstoren-was-wir-bewahren-wollen.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-03-21-reporting-burnout-oder-resilienz-cha",
+      "title": "2026 03 21 reporting burnout oder resilienz chance warum daten allein keine krise losen",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Daten & Infrastruktur, Planet & Resilienz.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-03-21",
+      "topics": [
+        "Daten & Infrastruktur",
+        "Planet & Resilienz"
+      ],
+      "relatedMethods": [
+        "Datenqualität & Assurance"
+      ],
+      "relatedImpactFields": [
+        "Planet & Resilienz"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-03-21-reporting-burnout-oder-resilienz-chance-warum-daten-allein-keine-krise-losen.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-03-21-reporting-burnout-oder-resilienz-chance-warum-daten-allein-keine-krise-losen.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-03-23-warum-das-neue-gebaudeenergiegesetz-",
+      "title": "2026 03 23 warum das neue gebaudeenergiegesetz teuer werden kann und warum das nichts mit ideologie zu tun",
+      "shortDescription": "Gesetzesentwurf im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Alltag & Grundbedürfnisse.",
+      "type": "Gesetzesentwurf",
+      "status": "aktuell",
+      "dateOrStand": "2026-03-23",
+      "topics": [
+        "Alltag & Grundbedürfnisse"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Planet & Resilienz"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-03-23-warum-das-neue-gebaudeenergiegesetz-teuer-werden-kann-und-warum-das-nichts-mit-ideologie-zu-tun.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-03-23-warum-das-neue-gebaudeenergiegesetz-teuer-werden-kann-und-warum-das-nichts-mit-ideologie-zu-tun.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-03-23-warum-wir-den-klimawandel-systematis",
+      "title": "2026 03 23 warum wir den klimawandel systematisch falsch diskutieren",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Planet & Resilienz.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-03-23",
+      "topics": [
+        "Planet & Resilienz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Planet & Resilienz"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-03-23-warum-wir-den-klimawandel-systematisch-falsch-diskutieren.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-03-23-warum-wir-den-klimawandel-systematisch-falsch-diskutieren.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-03-24-warum-politik-immer-zu-spat-handelt-",
+      "title": "2026 03 24 warum politik immer zu spat handelt und wir genau das immer wieder belohnen",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Staat & Demokratie.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-03-24",
+      "topics": [
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-03-24-warum-politik-immer-zu-spat-handelt-und-wir-genau-das-immer-wieder-belohnen.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-03-24-warum-politik-immer-zu-spat-handelt-und-wir-genau-das-immer-wieder-belohnen.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-03-25-warum-wir-schneller-grun-werden-als-",
+      "title": "2026 03 25 warum wir schneller grun werden als es sich afd und cdu je vorstellen konnten",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-03-25",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-03-25-warum-wir-schneller-grun-werden-als-es-sich-afd-und-cdu-je-vorstellen-konnten.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-03-25-warum-wir-schneller-grun-werden-als-es-sich-afd-und-cdu-je-vorstellen-konnten.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-04-02-ai-first-ist-eine-sackgasse-nicht-we",
+      "title": "2026 04 02 ai first ist eine sackgasse nicht weil KI schlecht ist sondern weil wir sie falsch denken",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Daten & Infrastruktur.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-04-02",
+      "topics": [
+        "Daten & Infrastruktur"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-04-02-ai-first-ist-eine-sackgasse-nicht-weil-ki-schlecht-ist-sondern-weil-wir-sie-falsch-denken.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-04-02-ai-first-ist-eine-sackgasse-nicht-weil-ki-schlecht-ist-sondern-weil-wir-sie-falsch-denken.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-04-14-warum-spates-handeln-immer-teurer-wi",
+      "title": "2026 04 14 warum spates handeln immer teurer wird und was politik und wirtschaft falsch verstehen",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Wirtschaft & Unternehmen, Staat & Demokratie.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-04-14",
+      "topics": [
+        "Wirtschaft & Unternehmen",
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital",
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-04-14-warum-spates-handeln-immer-teurer-wird-und-was-politik-und-wirtschaft-falsch-verstehen.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-04-14-warum-spates-handeln-immer-teurer-wird-und-was-politik-und-wirtschaft-falsch-verstehen.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-04-15-wenn-politik-unternehmen-nach-argume",
+      "title": "2026 04 15 wenn politik unternehmen nach argumenten fragt und was das uber unser system sagt",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Wirtschaft & Unternehmen, Staat & Demokratie.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-04-15",
+      "topics": [
+        "Wirtschaft & Unternehmen",
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital",
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-04-15-wenn-politik-unternehmen-nach-argumenten-fragt-und-was-das-uber-unser-system-sagt.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-04-15-wenn-politik-unternehmen-nach-argumenten-fragt-und-was-das-uber-unser-system-sagt.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-04-19-die-afd-im-wirkungscheck-warum-diese",
+      "title": "2026 04 19 die afd im wirkungscheck warum dieses programm nicht nur an seinen versprechen scheitert sondern",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-04-19",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-04-19-die-afd-im-wirkungscheck-warum-dieses-programm-nicht-nur-an-seinen-versprechen-scheitert-sondern.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-04-19-die-afd-im-wirkungscheck-warum-dieses-programm-nicht-nur-an-seinen-versprechen-scheitert-sondern.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-04-22-warum-selbst-die-common-good-economy",
+      "title": "2026 04 22 warum selbst die common good economy noch nicht weit genug geht",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "2026-04-22",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-04-22-warum-selbst-die-common-good-economy-noch-nicht-weit-genug-geht.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-04-22-warum-selbst-die-common-good-economy-noch-nicht-weit-genug-geht.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-afd-ideologie-kann-deinen-job-kosten-index-pdf",
+      "title": "Afd ideologie kann deinen job kosten",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/afd-ideologie-kann-deinen-job-kosten/index.pdf",
+        "sourcePath": "assets/pdf/journal/afd-ideologie-kann-deinen-job-kosten/index.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
     },
     {
       "id": "online-version-verstehen-sdgs-sdgplus-agenda-2030-index-html",
@@ -1435,6 +3436,28 @@
       "isLeadingReference": false
     },
     {
+      "id": "download-or-document-assets-pdf-journal-boden-ist-kein-broetchen-wohnungsmarkt-wirkungsoekonomie",
+      "title": "Boden ist kein broetchen wohnungsmarkt wirkungsoekonomie",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/boden-ist-kein-broetchen-wohnungsmarkt-wirkungsoekonomie.pdf",
+        "sourcePath": "assets/pdf/journal/boden-ist-kein-broetchen-wohnungsmarkt-wirkungsoekonomie.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
       "id": "online-version-wirkungsfelder-wohnen-stadt-detailkonzepte-boden-leerstand-spekulation-index-html",
       "title": "Boden leerstand spekulation",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Alltag & Grundbedürfnisse.",
@@ -1723,6 +3746,30 @@
       "isLeadingReference": false
     },
     {
+      "id": "download-or-document-assets-pdf-journal-co2-preis-warum-wir-ihn-ohnehin-zahlen-pdf",
+      "title": "Co2 preis warum wir ihn ohnehin zahlen",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "Wirkungssteuerung"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/co2-preis-warum-wir-ihn-ohnehin-zahlen.pdf",
+        "sourcePath": "assets/pdf/journal/co2-preis-warum-wir-ihn-ohnehin-zahlen.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
       "id": "online-version-portale-wirkungsakademie-fachbibliothek-community-kritikwerkstatt-index-html",
       "title": "Community kritikwerkstatt",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
@@ -1875,6 +3922,50 @@
       "isLeadingReference": false
     },
     {
+      "id": "download-or-document-assets-pdf-journal-das-managementmodell-der-zukunft-index-pdf",
+      "title": "Das managementmodell der zukunft",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/das-managementmodell-der-zukunft/index.pdf",
+        "sourcePath": "assets/pdf/journal/das-managementmodell-der-zukunft/index.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-das-schachbrett-der-oeffentlichkeit-pdf",
+      "title": "Das schachbrett der oeffentlichkeit",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/das-schachbrett-der-oeffentlichkeit.pdf",
+        "sourcePath": "assets/pdf/journal/das-schachbrett-der-oeffentlichkeit.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
       "id": "online-version-portale-kritik-missverstaendnisse-schutzarchitektur-datenmacht-datenschutz-index-",
       "title": "Datenmacht datenschutz",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Daten & Infrastruktur.",
@@ -2005,6 +4096,52 @@
         "sourcePath": "wirkungsfelder/staat-recht-demokratie/demokratie-rechtsstaat-sdgplus-wirkungsraum/index.html"
       },
       "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-der-verbrenner-stirbt-durch-risikomanagement-des-finanzs",
+      "title": "Der verbrenner stirbt durch risikomanagement des finanzsystems",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Kapital & Finanzierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Kapital & Finanzierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/der-verbrenner-stirbt-durch-risikomanagement-des-finanzsystems.pdf",
+        "sourcePath": "assets/pdf/journal/der-verbrenner-stirbt-durch-risikomanagement-des-finanzsystems.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-der-versoehner-und-die-wellen-index-pdf",
+      "title": "Der versoehner und die wellen",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/der-versoehner-und-die-wellen/index.pdf",
+        "sourcePath": "assets/pdf/journal/der-versoehner-und-die-wellen/index.pdf"
+      },
+      "source": "download-or-document",
       "isLeadingReference": false
     },
     {
@@ -4273,6 +6410,52 @@
         "sourcePath": "wirkungsfelder/wohnen-stadt/detailkonzepte/index.html"
       },
       "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-die-fraunhoferschen-linien-des-preises-pdf",
+      "title": "Die fraunhoferschen linien des preises",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "Wirkungssteuerung"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/die-fraunhoferschen-linien-des-preises.pdf",
+        "sourcePath": "assets/pdf/journal/die-fraunhoferschen-linien-des-preises.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-die-stille-neubewertung-pdf",
+      "title": "Die stille neubewertung",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/die-stille-neubewertung.pdf",
+        "sourcePath": "assets/pdf/journal/die-stille-neubewertung.pdf"
+      },
+      "source": "download-or-document",
       "isLeadingReference": false
     },
     {
@@ -20460,6 +22643,30 @@
         "sourcePath": "portale/kritik-missverstaendnisse-schutzarchitektur/freiheit-markt-planwirtschaft/index.html"
       },
       "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-geg-wirkungscheck-ioi-t-sroi-pdf",
+      "title": "Geg wirkungscheck ioi t sroi",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "T-SROI"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/geg-wirkungscheck-ioi-t-sroi.pdf",
+        "sourcePath": "assets/pdf/journal/geg-wirkungscheck-ioi-t-sroi.pdf"
+      },
+      "source": "download-or-document",
       "isLeadingReference": false
     },
     {
@@ -43528,6 +45735,50 @@
       "isLeadingReference": false
     },
     {
+      "id": "download-or-document-assets-pdf-journal-ki-souveraenitaet-statt-abhaengigkeit-fable-moment-pdf",
+      "title": "KI souveraenitaet statt abhaengigkeit fable moment",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Daten & Infrastruktur.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Daten & Infrastruktur"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/ki-souveraenitaet-statt-abhaengigkeit-fable-moment.pdf",
+        "sourcePath": "assets/pdf/journal/ki-souveraenitaet-statt-abhaengigkeit-fable-moment.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-ki-texte-kennzeichnen-wirkung-verantwortung-pdf",
+      "title": "KI texte kennzeichnen wirkung verantwortung",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Daten & Infrastruktur.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Daten & Infrastruktur"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/ki-texte-kennzeichnen-wirkung-verantwortung.pdf",
+        "sourcePath": "assets/pdf/journal/ki-texte-kennzeichnen-wirkung-verantwortung.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
       "id": "online-version-werkstatt-arbeitsbibliothek-wirkungsfelder-klima-energie-ressourcen-index-html",
       "title": "Klima energie ressourcen",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Alltag & Grundbedürfnisse, Planet & Resilienz.",
@@ -43650,6 +45901,55 @@
         "sourcePath": "wirkungsfelder/wirtschaft-unternehmen/dossiers/kmu_tauglichkeit_pilotierung/index.html"
       },
       "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-kognitive-dissonanz-als-wirkungsbremse-index-pdf",
+      "title": "Kognitive dissonanz als wirkungsbremse",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/kognitive-dissonanz-als-wirkungsbremse/index.pdf",
+        "sourcePath": "assets/pdf/journal/kognitive-dissonanz-als-wirkungsbremse/index.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-kollaps-der-zivilisation-systemresilienz-demokratie-sdgp",
+      "title": "Kollaps der zivilisation systemresilienz demokratie SDG+",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: SDGs, Agenda 2030 & SDG+, Staat & Demokratie.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "SDGs, Agenda 2030 & SDG+",
+        "Staat & Demokratie",
+        "Planet & Resilienz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Staat & Demokratie",
+        "Planet & Resilienz"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/kollaps-der-zivilisation-systemresilienz-demokratie-sdgplus.pdf",
+        "sourcePath": "assets/pdf/journal/kollaps-der-zivilisation-systemresilienz-demokratie-sdgplus.pdf"
+      },
+      "source": "download-or-document",
       "isLeadingReference": false
     },
     {
@@ -44469,6 +46769,28 @@
         "sourcePath": "wirkungsfelder/bildung/lehrkraefte-schulentwicklung-netzwerke/index.html"
       },
       "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-leistung-ohne-wirkung-pdf",
+      "title": "Leistung ohne wirkung",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/leistung-ohne-wirkung.pdf",
+        "sourcePath": "assets/pdf/journal/leistung-ohne-wirkung.pdf"
+      },
+      "source": "download-or-document",
       "isLeadingReference": false
     },
     {
@@ -45394,6 +47716,66 @@
       "isLeadingReference": false
     },
     {
+      "id": "nachhaltigkeit-als-systemresilienz-definition-und-klimamodell",
+      "title": "Nachhaltigkeit als Systemresilienz",
+      "subtitle": "Resilienzdefinition, Kugelmodell, Klima-Beispiel und mathematische Herleitung",
+      "shortDescription": "Fachveröffentlichung zur langfristig gesicherten Wirkungsresilienz mit Kugel-Becken-Modell, Klimaformeln und MPD-Herleitung.",
+      "abstract": "Die Veröffentlichung verbindet die allgemeine Resilienzdefinition mit Stabilitätslandschaft, Rückstellung, Dämpfung, Anpassung, Transformation und der Nichtkompensationslogik des gekoppelten Systems Mensch-Planet-Demokratie.",
+      "keyPoints": [
+        "Begriffshierarchie von Resilienz über System- und Wirkungsresilienz bis Nachhaltigkeit.",
+        "Acht Analysebausteine: vier Aspekte der Stabilitätslandschaft, zwei dynamische Antworten und zwei Entwicklungskapazitäten.",
+        "Kugel-Becken-Modell mit Rückstellkraft, Dämpfung und schädlichen Attraktoren.",
+        "Vereinfachte Klima- und MPD-Herleitung mit Nichtkompensation und langfristiger Sicherung."
+      ],
+      "contentOutline": [
+        "Allgemeine Resilienzdefinition und Begriffshierarchie",
+        "Kugel-Becken-Modell und Stabilitätslandschaft",
+        "Acht Analysebausteine von Resilienz und Systementwicklung",
+        "Klima-Beispiel mit Energiebilanz und thermischer Trägheit",
+        "MPD-Zustandsraum, Nichtkompensation und Nachhaltigkeitsdefinition"
+      ],
+      "type": "Grundlagenwerk",
+      "status": "aktuell",
+      "version": "1.0",
+      "dateOrStand": "30. Juli 2026",
+      "publicationDate": "2026-07-30",
+      "author": "Natalie Weber",
+      "publisher": "Wirkungsökonomie",
+      "language": "de",
+      "formats": [
+        "Online",
+        "PDF"
+      ],
+      "urls": {
+        "primary": "bibliothek/nachhaltigkeit-als-systemresilienz-definition-und-klimamodell/",
+        "sourcePath": "public/downloads/originals/Nachhaltigkeit_als_Systemresilienz_Definition_und_Klimamodell_v1.0.pdf"
+      },
+      "topics": [
+        "Nachhaltigkeit",
+        "Resilienz",
+        "Systemresilienz",
+        "Wirkungsresilienz",
+        "Klima",
+        "Stabilitätslandschaft"
+      ],
+      "relatedMethods": [
+        "Systemresilienz",
+        "Wirkungsarchitektur",
+        "Nichtkompensation",
+        "SDGs & SDG+"
+      ],
+      "relatedImpactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "impactClassification": "Die Veröffentlichung erklärt Resilienz als beschreibende Systemfähigkeit und Wirkungsresilienz als normativ an Mensch, Planet und Demokratie gebundene Präzisierung. Nachhaltigkeit wird als langfristig gesicherte Wirkungsresilienz innerhalb nicht beliebig kompensierbarer Grenzen eingeordnet.",
+      "citation": "Weber, Natalie (2026): Nachhaltigkeit als Systemresilienz. Resilienzdefinition, Kugelmodell, Klima-Beispiel und mathematische Herleitung. Version 1.0, 30. Juli 2026.",
+      "isLeadingReference": false,
+      "reviewStatus": "Fachveröffentlichung mit dokumentiertem wissenschaftlichem Anschluss",
+      "source": "curated-publication"
+    },
+    {
       "id": "leading-reference-bibliothek-nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen-ind",
       "title": "Nachhaltigkeitsstrategie für mittelständische Beratungsunternehmen",
       "shortDescription": "Online lesbare Ausarbeitung zur Umsetzung von Agenda 2030, SDGs und ESG-Anforderungen in mittelständischen Beratungsunternehmen.",
@@ -45529,6 +47911,96 @@
       "urls": {
         "primary": "public/downloads/originals/NATS_WOeK_allgemein.pdf",
         "sourcePath": "public/downloads/originals/NATS_WOeK_allgemein.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-nicht-billiger-werden-besser-werden-index-pdf",
+      "title": "Nicht billiger werden besser werden",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/nicht-billiger-werden-besser-werden/index.pdf",
+        "sourcePath": "assets/pdf/journal/nicht-billiger-werden-besser-werden/index.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-nicht-die-vorschrift-macht-es-teuer-kostenwahrheit-eu-re",
+      "title": "Nicht die vorschrift macht es teuer kostenwahrheit eu regeln",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/nicht-die-vorschrift-macht-es-teuer-kostenwahrheit-eu-regeln.pdf",
+        "sourcePath": "assets/pdf/journal/nicht-die-vorschrift-macht-es-teuer-kostenwahrheit-eu-regeln.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-nicht-schulden-belasten-die-zukunft-schulden-ohne-wirkun",
+      "title": "Nicht schulden belasten die zukunft schulden ohne wirkung",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/nicht-schulden-belasten-die-zukunft-schulden-ohne-wirkung.pdf",
+        "sourcePath": "assets/pdf/journal/nicht-schulden-belasten-die-zukunft-schulden-ohne-wirkung.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-oeffentlicher-wirkungsraum-debatten-resonanz-resilienz-p",
+      "title": "Oeffentlicher wirkungsraum debatten resonanz resilienz",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Planet & Resilienz.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Planet & Resilienz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Planet & Resilienz"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/oeffentlicher-wirkungsraum-debatten-resonanz-resilienz.pdf",
+        "sourcePath": "assets/pdf/journal/oeffentlicher-wirkungsraum-debatten-resonanz-resilienz.pdf"
       },
       "source": "download-or-document",
       "isLeadingReference": false
@@ -45676,6 +48148,28 @@
         "sourcePath": "wirkungsfelder/wirtschaft-unternehmen/dossiers/organisation_kultur_verantwortung/index.html"
       },
       "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-partei-der-verwundbarkeit-afd-programm-index-pdf",
+      "title": "Partei der verwundbarkeit afd programm",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/partei-der-verwundbarkeit-afd-programm/index.pdf",
+        "sourcePath": "assets/pdf/journal/partei-der-verwundbarkeit-afd-programm/index.pdf"
+      },
+      "source": "download-or-document",
       "isLeadingReference": false
     },
     {
@@ -48875,6 +51369,28 @@
       "isLeadingReference": false
     },
     {
+      "id": "download-or-document-assets-pdf-journal-schadenoekonomie-pdf",
+      "title": "Schadenoekonomie",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/schadenoekonomie.pdf",
+        "sourcePath": "assets/pdf/journal/schadenoekonomie.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
       "id": "online-version-portale-zukunftsbilder-wirkungswohlstand-schlussbild-index-html",
       "title": "Schlussbild",
       "shortDescription": "Grundlagenwerk im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
@@ -48894,6 +51410,32 @@
         "sourcePath": "portale/zukunftsbilder-wirkungswohlstand/schlussbild/index.html"
       },
       "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-schoepferisch-zerstoert-konservative-politik-systemresil",
+      "title": "Schoepferisch zerstoert konservative politik systemresilienz",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Staat & Demokratie, Planet & Resilienz.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Staat & Demokratie",
+        "Planet & Resilienz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Staat & Demokratie",
+        "Planet & Resilienz"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/schoepferisch-zerstoert-konservative-politik-systemresilienz/index.pdf",
+        "sourcePath": "assets/pdf/journal/schoepferisch-zerstoert-konservative-politik-systemresilienz/index.pdf"
+      },
+      "source": "download-or-document",
       "isLeadingReference": false
     },
     {
@@ -50464,6 +53006,28 @@
       "isLeadingReference": false
     },
     {
+      "id": "download-or-document-assets-pdf-journal-social-media-verbot-kinder-falscher-ansatz-pdf",
+      "title": "Social media verbot kinder falscher ansatz",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Daten & Infrastruktur.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Daten & Infrastruktur"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/social-media-verbot-kinder-falscher-ansatz.pdf",
+        "sourcePath": "assets/pdf/journal/social-media-verbot-kinder-falscher-ansatz.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
       "id": "online-version-wirkungsfelder-arbeit-einkommen-sozialabgaben-entkoppeln-index-html",
       "title": "Sozialabgaben entkoppeln",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
@@ -50512,6 +53076,30 @@
       "isLeadingReference": false
     },
     {
+      "id": "download-or-document-assets-pdf-journal-soziale-resilienz-gegen-verhetzung-pdf",
+      "title": "Soziale resilienz gegen verhetzung",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Planet & Resilienz.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Planet & Resilienz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Planet & Resilienz"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/soziale-resilienz-gegen-verhetzung.pdf",
+        "sourcePath": "assets/pdf/journal/soziale-resilienz-gegen-verhetzung.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
       "id": "online-version-werkstatt-arbeitsbibliothek-soziales-index-html",
       "title": "Soziales",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
@@ -50533,6 +53121,32 @@
         "sourcePath": "werkstatt/arbeitsbibliothek/soziales/index.html"
       },
       "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-sprache-als-politischer-wirkstoff-rechte-narrative-pdf",
+      "title": "Sprache als politischer wirkstoff rechte narrative",
+      "shortDescription": "Glossar im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Staat & Demokratie.",
+      "type": "Glossar",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [
+        "Begriffliche Orientierung"
+      ],
+      "relatedImpactFields": [
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/sprache-als-politischer-wirkstoff-rechte-narrative.pdf",
+        "sourcePath": "assets/pdf/journal/sprache-als-politischer-wirkstoff-rechte-narrative.pdf"
+      },
+      "source": "download-or-document",
       "isLeadingReference": false
     },
     {
@@ -50850,6 +53464,78 @@
       "isLeadingReference": false
     },
     {
+      "id": "download-or-document-assets-pdf-journal-stranded-assets-gebaeudebestand-pdf",
+      "title": "Stranded assets gebaeudebestand",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/stranded-assets-gebaeudebestand.pdf",
+        "sourcePath": "assets/pdf/journal/stranded-assets-gebaeudebestand.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-stranded-germany-afd-politik-refinanzierungsresilienz-pd",
+      "title": "Stranded germany afd politik refinanzierungsresilienz",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Kapital & Finanzierung, Staat & Demokratie.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Kapital & Finanzierung",
+        "Staat & Demokratie",
+        "Planet & Resilienz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital",
+        "Staat & Demokratie",
+        "Planet & Resilienz"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/stranded-germany-afd-politik-refinanzierungsresilienz.pdf",
+        "sourcePath": "assets/pdf/journal/stranded-germany-afd-politik-refinanzierungsresilienz.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-strom-vom-nachbarn-energy-sharing-wirkungsoekonomie-pdf",
+      "title": "Strom vom nachbarn energy sharing wirkungsoekonomie",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/strom-vom-nachbarn-energy-sharing-wirkungsoekonomie.pdf",
+        "sourcePath": "assets/pdf/journal/strom-vom-nachbarn-energy-sharing-wirkungsoekonomie.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
       "id": "online-version-dokumente-systemmodell-der-wirkungsoekonomie-index-html",
       "title": "Systemmodell der wirkungsoekonomie",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
@@ -51038,6 +53724,28 @@
         "sourcePath": "portale/kritik-missverstaendnisse-schutzarchitektur/technokratie-social-credit/index.html"
       },
       "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-technologieoffenheit-wirkungsoffenheit-geg-verbrenner-pd",
+      "title": "Technologieoffenheit wirkungsoffenheit geg verbrenner",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/technologieoffenheit-wirkungsoffenheit-geg-verbrenner.pdf",
+        "sourcePath": "assets/pdf/journal/technologieoffenheit-wirkungsoffenheit-geg-verbrenner.pdf"
+      },
+      "source": "download-or-document",
       "isLeadingReference": false
     },
     {
@@ -52861,6 +55569,54 @@
       "isLeadingReference": false
     },
     {
+      "id": "download-or-document-assets-pdf-journal-vom-gemeinwohl-kompass-zur-wirkungsoekonomie-pdf",
+      "title": "Vom gemeinwohl kompass zur wirkungsoekonomie",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [
+        "Begriffliche Orientierung"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/vom-gemeinwohl-kompass-zur-wirkungsoekonomie.pdf",
+        "sourcePath": "assets/pdf/journal/vom-gemeinwohl-kompass-zur-wirkungsoekonomie.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-von-der-wissensgesellschaft-zur-wirkungsgesellschaft-pdf",
+      "title": "Von der wissensgesellschaft zur wirkungsgesellschaft",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Öffentlichkeit & Wissen"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/von-der-wissensgesellschaft-zur-wirkungsgesellschaft.pdf",
+        "sourcePath": "assets/pdf/journal/von-der-wissensgesellschaft-zur-wirkungsgesellschaft.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
       "id": "download-or-document-public-downloads-originals-von-der-wissensgesellschaft-zur-wirkungsgesellsc",
       "title": "Von der Wissensgesellschaft zur Wirkungsgesellschaft",
       "shortDescription": "Erweiterte Dossierfassung v2.0 zum Übergang von der Wissensgesellschaft zur Wirkungsgesellschaft: Wissen, Labels, Zertifikate, Scores, Faktenchecks und Berichte werden erst wirksam, wenn sie in Bewertung, Rückkopplung und positive Netto-Wirkung übersetzt werden.",
@@ -52906,6 +55662,150 @@
         "sourcePath": "dokumente/von-der-wissensgesellschaft-zur-wirkungsgesellschaft/index.html"
       },
       "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-warum-billig-oft-teuer-ist-pdf",
+      "title": "Warum billig oft teuer ist",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/warum-billig-oft-teuer-ist.pdf",
+        "sourcePath": "assets/pdf/journal/warum-billig-oft-teuer-ist.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-warum-ich-das-wirkungsinstitut-gegruendet-habe-pdf",
+      "title": "Warum ich das wirkungsinstitut gegruendet habe",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/warum-ich-das-wirkungsinstitut-gegruendet-habe.pdf",
+        "sourcePath": "assets/pdf/journal/warum-ich-das-wirkungsinstitut-gegruendet-habe.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-warum-unser-wirtschaftsmodell-an-seine-logischen-grenzen",
+      "title": "Warum unser wirtschaftsmodell an seine logischen grenzen stoesst",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Wirtschaft & Unternehmen.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Wirtschaft & Unternehmen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/warum-unser-wirtschaftsmodell-an-seine-logischen-grenzen-stoesst.pdf",
+        "sourcePath": "assets/pdf/journal/warum-unser-wirtschaftsmodell-an-seine-logischen-grenzen-stoesst.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-was-der-staat-wirklich-produziert-steuern-wirkungsoekono",
+      "title": "Was der staat wirklich produziert steuern wirkungsoekonomie",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Staat & Demokratie.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [
+        "Wirkungssteuerung"
+      ],
+      "relatedImpactFields": [
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/was-der-staat-wirklich-produziert-steuern-wirkungsoekonomie.pdf",
+        "sourcePath": "assets/pdf/journal/was-der-staat-wirklich-produziert-steuern-wirkungsoekonomie.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-wellen-tiefen-modell-oeffentliche-kommunikation-pdf",
+      "title": "Wellen tiefen modell oeffentliche kommunikation",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Öffentlichkeit & Wissen.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Öffentlichkeit & Wissen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Öffentlichkeit & Wissen"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/wellen-tiefen-modell-oeffentliche-kommunikation.pdf",
+        "sourcePath": "assets/pdf/journal/wellen-tiefen-modell-oeffentliche-kommunikation.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-wenn-alle-von-wirkung-sprechen-foerderpolitik-wirkungsma",
+      "title": "Wenn alle von wirkung sprechen foerderpolitik wirkungsmanagement",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Staat & Demokratie.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [
+        "Wirkungshaushalt & Beschaffung"
+      ],
+      "relatedImpactFields": [
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/wenn-alle-von-wirkung-sprechen-foerderpolitik-wirkungsmanagement.pdf",
+        "sourcePath": "assets/pdf/journal/wenn-alle-von-wirkung-sprechen-foerderpolitik-wirkungsmanagement.pdf"
+      },
+      "source": "download-or-document",
       "isLeadingReference": false
     },
     {
@@ -53169,6 +56069,52 @@
       "isLeadingReference": false
     },
     {
+      "id": "download-or-document-assets-pdf-journal-wir-messen-das-falsche-pdf",
+      "title": "Wir messen das falsche",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/wir-messen-das-falsche.pdf",
+        "sourcePath": "assets/pdf/journal/wir-messen-das-falsche.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-wirkstoff-narrative-rechte-frames-wirkungspotenzial-pdf",
+      "title": "Wirkstoff narrative rechte frames wirkungspotenzial",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Staat & Demokratie.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/wirkstoff-narrative-rechte-frames-wirkungspotenzial.pdf",
+        "sourcePath": "assets/pdf/journal/wirkstoff-narrative-rechte-frames-wirkungspotenzial.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
       "id": "online-version-werkstatt-dossiers-staat-recht-demokratie-detailkonzepte-wirkung-als-rechtsprinzi",
       "title": "Wirkung als rechtsprinzip",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Staat & Demokratie.",
@@ -53264,6 +56210,50 @@
         "sourcePath": "wirkungsfelder/staat-recht-demokratie/wirkung-als-rechtsprinzip-wstg/index.html"
       },
       "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-wirkung-schlaegt-wahrheit-pdf",
+      "title": "Wirkung schlaegt wahrheit",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/wirkung-schlaegt-wahrheit.pdf",
+        "sourcePath": "assets/pdf/journal/wirkung-schlaegt-wahrheit.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-wirkung-statt-weltbild-afd-regierungsprogramm-pdf",
+      "title": "Wirkung statt weltbild afd regierungsprogramm",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/wirkung-statt-weltbild-afd-regierungsprogramm.pdf",
+        "sourcePath": "assets/pdf/journal/wirkung-statt-weltbild-afd-regierungsprogramm.pdf"
+      },
+      "source": "download-or-document",
       "isLeadingReference": false
     },
     {
@@ -54350,6 +57340,50 @@
       "isLeadingReference": false
     },
     {
+      "id": "download-or-document-assets-pdf-journal-wirkungsoekonomie-kein-parteiprogramm-pdf",
+      "title": "Wirkungsoekonomie kein parteiprogramm",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/wirkungsoekonomie-kein-parteiprogramm.pdf",
+        "sourcePath": "assets/pdf/journal/wirkungsoekonomie-kein-parteiprogramm.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-wirkungsoekonomie-lernendes-kreislaufsystem-pdf",
+      "title": "Wirkungsoekonomie lernendes kreislaufsystem",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/wirkungsoekonomie-lernendes-kreislaufsystem.pdf",
+        "sourcePath": "assets/pdf/journal/wirkungsoekonomie-lernendes-kreislaufsystem.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
       "id": "download-or-document-public-downloads-originals-wirkungsokonomie-in-der-lieferkette-pdf",
       "title": "Wirkungsökonomie in der Lieferkette",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Produkte, Konsum & Beschaffung.",
@@ -54543,6 +57577,28 @@
         "sourcePath": "wirkungsfelder/bildung/wirkungspaedagogik/index.html"
       },
       "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-wirkungspotenzial-warum-fakten-allein-nicht-wirken-pdf",
+      "title": "Wirkungspotenzial warum fakten allein nicht wirken",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/wirkungspotenzial-warum-fakten-allein-nicht-wirken.pdf",
+        "sourcePath": "assets/pdf/journal/wirkungspotenzial-warum-fakten-allein-nicht-wirken.pdf"
+      },
+      "source": "download-or-document",
       "isLeadingReference": false
     },
     {
@@ -54852,6 +57908,28 @@
         "sourcePath": "wirkungsfelder/bildung/wirkungsschule/index.html"
       },
       "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-wirkungsschule-wirkungspaedagogik-wirkungskompetenz-pdf",
+      "title": "Wirkungsschule wirkungspaedagogik wirkungskompetenz",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Wissenschaft, Bildung & Lernen.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Wissenschaft, Bildung & Lernen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/wirkungsschule-wirkungspaedagogik-wirkungskompetenz.pdf",
+        "sourcePath": "assets/pdf/journal/wirkungsschule-wirkungspaedagogik-wirkungskompetenz.pdf"
+      },
+      "source": "download-or-document",
       "isLeadingReference": false
     },
     {
@@ -55244,6 +58322,30 @@
         "sourcePath": "werkstatt/gesetze/wirkungsumsatzsteuergesetz/index.html"
       },
       "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-wirkungswissenschaften-wirkungsforschung-wirkungsoekonom",
+      "title": "Wirkungswissenschaften wirkungsforschung wirkungsoekonomie",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Wissenschaft, Bildung & Lernen.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Wissenschaft, Bildung & Lernen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Öffentlichkeit & Wissen"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/wirkungswissenschaften-wirkungsforschung-wirkungsoekonomie.pdf",
+        "sourcePath": "assets/pdf/journal/wirkungswissenschaften-wirkungsforschung-wirkungsoekonomie.pdf"
+      },
+      "source": "download-or-document",
       "isLeadingReference": false
     },
     {
@@ -55753,6 +58855,50 @@
         "sourcePath": "verstehen/woek-auf-einer-seite/index.html"
       },
       "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-public-downloads-originals-woek-begriffsleitfaden-fuehrend-v1-1-pdf",
+      "title": "WÖk Begriffsleitfaden fuehrend",
+      "shortDescription": "Glossar im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Glossar",
+      "status": "aktuell",
+      "dateOrStand": "v1.1",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.1.pdf",
+        "sourcePath": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.1.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-public-downloads-originals-woek-begriffsleitfaden-fuehrend-v1-2-pdf",
+      "title": "WÖk Begriffsleitfaden fuehrend",
+      "shortDescription": "Glossar im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Glossar",
+      "status": "aktuell",
+      "dateOrStand": "v1.2",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.2.pdf",
+        "sourcePath": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.2.pdf"
+      },
+      "source": "download-or-document",
       "isLeadingReference": false
     },
     {
@@ -64103,6 +67249,266 @@
       "isLeadingReference": false
     },
     {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2025-11-18-der-historische-fehler-vor-120-jahre",
+      "title": "2025 11 18 der historische fehler vor 120 jahren standen wir vor einer weggabelung",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "2025-11-18",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2025-11-18-der-historische-fehler-vor-120-jahren-standen-wir-vor-einer-weggabelung.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2025-11-18-der-historische-fehler-vor-120-jahren-standen-wir-vor-einer-weggabelung.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2025-12-16-warum-wir-glauben-nachhaltigkeit-sei",
+      "title": "2025 12 16 warum wir glauben nachhaltigkeit sei teuer",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "2025-12-16",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2025-12-16-warum-wir-glauben-nachhaltigkeit-sei-teuer.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2025-12-16-warum-wir-glauben-nachhaltigkeit-sei-teuer.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-01-05-sdg-warum-nachhaltigkeit-ohne-wirkun",
+      "title": "2026 01 05 sdg warum nachhaltigkeit ohne wirkungsdemokratie scheitert",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: SDGs, Agenda 2030 & SDG+, Staat & Demokratie.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "2026-01-05",
+      "topics": [
+        "SDGs, Agenda 2030 & SDG+",
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-01-05-sdg-warum-nachhaltigkeit-ohne-wirkungsdemokratie-scheitert.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-01-05-sdg-warum-nachhaltigkeit-ohne-wirkungsdemokratie-scheitert.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-01-13-schadenokonomie-wie-aufhetzung-und-s",
+      "title": "2026 01 13 schadenokonomie wie aufhetzung und spaltung profitabel wirtschaft und gesellschaft zerstoren",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Wirtschaft & Unternehmen.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "2026-01-13",
+      "topics": [
+        "Wirtschaft & Unternehmen"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-01-13-schadenokonomie-wie-aufhetzung-und-spaltung-profitabel-wirtschaft-und-gesellschaft-zerstoren.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-01-13-schadenokonomie-wie-aufhetzung-und-spaltung-profitabel-wirtschaft-und-gesellschaft-zerstoren.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-02-05-vom-nachhaltigkeitsbewusstsein-zur-w",
+      "title": "2026 02 05 vom nachhaltigkeitsbewusstsein zur wirkungsokonomie",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "2026-02-05",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-02-05-vom-nachhaltigkeitsbewusstsein-zur-wirkungsokonomie.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-02-05-vom-nachhaltigkeitsbewusstsein-zur-wirkungsokonomie.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-02-11-warum-der-ruckhalt-fur-klimaschutz-s",
+      "title": "2026 02 11 warum der ruckhalt fur klimaschutz sinkt und was das uber unsere demokratie verrat",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Staat & Demokratie, Planet & Resilienz.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "2026-02-11",
+      "topics": [
+        "Staat & Demokratie",
+        "Planet & Resilienz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Staat & Demokratie",
+        "Planet & Resilienz"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-02-11-warum-der-ruckhalt-fur-klimaschutz-sinkt-und-was-das-uber-unsere-demokratie-verrat.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-02-11-warum-der-ruckhalt-fur-klimaschutz-sinkt-und-was-das-uber-unsere-demokratie-verrat.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-02-19-nachhaltigkeit-ist-keine-strategie-s",
+      "title": "2026 02 19 nachhaltigkeit ist keine strategie sie ist eine systemarchitektur",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "2026-02-19",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-02-19-nachhaltigkeit-ist-keine-strategie-sie-ist-eine-systemarchitektur.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-02-19-nachhaltigkeit-ist-keine-strategie-sie-ist-eine-systemarchitektur.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-03-11-vom-wissen-zur-wirkung-warum-im-ki-z",
+      "title": "2026 03 11 vom wissen zur wirkung warum im KI zeitalter nicht wissen sondern wirkungskompetenz zur entschei",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Wissenschaft, Bildung & Lernen, Daten & Infrastruktur.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "2026-03-11",
+      "topics": [
+        "Wissenschaft, Bildung & Lernen",
+        "Daten & Infrastruktur"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Öffentlichkeit & Wissen"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-03-11-vom-wissen-zur-wirkung-warum-im-ki-zeitalter-nicht-wissen-sondern-wirkungskompetenz-zur-entschei.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-03-11-vom-wissen-zur-wirkung-warum-im-ki-zeitalter-nicht-wissen-sondern-wirkungskompetenz-zur-entschei.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-03-13-die-architektur-der-europaischen-nac",
+      "title": "2026 03 13 die architektur der europaischen nachhaltigkeitsregulierung",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "2026-03-13",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-03-13-die-architektur-der-europaischen-nachhaltigkeitsregulierung.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-03-13-die-architektur-der-europaischen-nachhaltigkeitsregulierung.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-03-17-das-grote-missverstandnis-bei-nachha",
+      "title": "2026 03 17 das grote missverstandnis bei nachhaltigkeit",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "2026-03-17",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-03-17-das-grote-missverstandnis-bei-nachhaltigkeit.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-03-17-das-grote-missverstandnis-bei-nachhaltigkeit.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-linkedin-2026-03-25-das-ende-der-symbolpolitik-warum-der",
+      "title": "2026 03 25 das ende der symbolpolitik warum der finanzmarkt die nachhaltigkeits transformation erzwingt wah",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Kapital & Finanzierung, Staat & Demokratie.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "2026-03-25",
+      "topics": [
+        "Kapital & Finanzierung",
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [
+        "T-SROI"
+      ],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital",
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/linkedin/2026-03-25-das-ende-der-symbolpolitik-warum-der-finanzmarkt-die-nachhaltigkeits-transformation-erzwingt-wah.pdf",
+        "sourcePath": "assets/pdf/journal/linkedin/2026-03-25-das-ende-der-symbolpolitik-warum-der-finanzmarkt-die-nachhaltigkeits-transformation-erzwingt-wah.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
       "id": "online-version-portale-migration-vielfalt-arbeitsmarkt-fachkraefte-demografie-index-html",
       "title": "Arbeitsmarkt fachkraefte demografie",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Grundlagen & Orientierung.",
@@ -66472,6 +69878,50 @@
       "isLeadingReference": false
     },
     {
+      "id": "download-or-document-public-downloads-originals-nachhaltigkeit-systemarchitektur-v1-1-pdf",
+      "title": "Nachhaltigkeit Systemarchitektur",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "v1.1",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "public/downloads/originals/Nachhaltigkeit-Systemarchitektur-v1.1.pdf",
+        "sourcePath": "public/downloads/originals/Nachhaltigkeit-Systemarchitektur-v1.1.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-public-downloads-originals-nachhaltigkeit-systemarchitektur-v1-2-pdf",
+      "title": "Nachhaltigkeit Systemarchitektur",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "v1.2",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "public/downloads/originals/Nachhaltigkeit-Systemarchitektur-v1.2.pdf",
+        "sourcePath": "public/downloads/originals/Nachhaltigkeit-Systemarchitektur-v1.2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
       "id": "download-or-document-public-downloads-originals-nachhaltigkeit-systemarchitektur-pdf",
       "title": "Nachhaltigkeit Systemarchitektur",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Grundlagen & Orientierung.",
@@ -67730,6 +71180,76 @@
       "isLeadingReference": false
     },
     {
+      "id": "download-or-document-assets-pdf-journal-social-taxonomy-soziale-wirkung-nachhaltige-maerkte-pdf",
+      "title": "Social taxonomy soziale wirkung nachhaltige maerkte",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/social-taxonomy-soziale-wirkung-nachhaltige-maerkte.pdf",
+        "sourcePath": "assets/pdf/journal/social-taxonomy-soziale-wirkung-nachhaltige-maerkte.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-spaltung-ueberwinden-demokratie-wirkungsraeume-pdf",
+      "title": "Spaltung ueberwinden demokratie wirkungsraeume",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Staat & Demokratie.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/spaltung-ueberwinden-demokratie-wirkungsraeume.pdf",
+        "sourcePath": "assets/pdf/journal/spaltung-ueberwinden-demokratie-wirkungsraeume.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-systemresilienz-statt-nachhaltigkeit-index-pdf",
+      "title": "Systemresilienz statt nachhaltigkeit",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Planet & Resilienz.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Planet & Resilienz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Planet & Resilienz"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/systemresilienz-statt-nachhaltigkeit/index.pdf",
+        "sourcePath": "assets/pdf/journal/systemresilienz-statt-nachhaltigkeit/index.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false
+    },
+    {
       "id": "download-or-document-assets-downloads-rang-17-digitalisierung-ki-14-toolkarten-2-pdf",
       "title": "Toolkarten",
       "shortDescription": "Methodik im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Daten & Infrastruktur.",
@@ -68025,6 +71545,28 @@
         "sourcePath": "portale/migration-vielfalt/vielfalt-als-resilienzfaktor/index.html"
       },
       "source": "online-version",
+      "isLeadingReference": false
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-was-ist-nachhaltigkeit-wirklich-pdf",
+      "title": "Was ist nachhaltigkeit wirklich",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/was-ist-nachhaltigkeit-wirklich.pdf",
+        "sourcePath": "assets/pdf/journal/was-ist-nachhaltigkeit-wirklich.pdf"
+      },
+      "source": "download-or-document",
       "isLeadingReference": false
     },
     {

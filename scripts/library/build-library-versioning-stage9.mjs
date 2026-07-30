@@ -174,7 +174,7 @@ const LEADING_REFERENCE_PATHS = new Set([
   "glossar.html",
   "verstehen/sdgs-sdgplus/index.html",
   "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-  "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.2.pdf"
+  "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.3.pdf"
 ]);
 
 const LEADING_REFERENCE_PATTERNS = [
@@ -214,16 +214,16 @@ const LEADING_OVERRIDES = new Map([
     shortDescription: "Öffentliche Begriffskarte für zentrale WÖk-Begriffe und Abkürzungen."
   }],
   ["bibliothek/woek-begriffsleitfaden-fuehrend/index.html", {
-    title: "WÖk-Begriffsleitfaden führend v1.2",
+    title: "WÖk-Begriffsleitfaden führend v1.3",
     type: "Glossar",
     status: "führend",
-    shortDescription: "Maßgebliche Sprachreferenz für Nachhaltigkeit als langfristige Wirkungsresilienz, die Acht-Punkte-Systematik der Stabilitätslandschaft und konsistente WÖk-Sprache."
+    shortDescription: "Maßgebliche Sprachreferenz für Nachhaltigkeit als langfristig gesicherte Wirkungsresilienz und acht Analysebausteine von Resilienz und Systementwicklung."
   }],
-  ["public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.2.pdf", {
-    title: "WÖk-Begriffsleitfaden führend v1.2",
+  ["public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.3.pdf", {
+    title: "WÖk-Begriffsleitfaden führend v1.3",
     type: "Glossar",
     status: "führend",
-    shortDescription: "PDF-Fassung der maßgeblichen Sprachreferenz für Nachhaltigkeit als langfristige Wirkungsresilienz und die Acht-Punkte-Systematik der Stabilitätslandschaft."
+    shortDescription: "PDF-Fassung der maßgeblichen Sprachreferenz für langfristig gesicherte Wirkungsresilienz und acht Analysebausteine von Resilienz und Systementwicklung."
   }],
   ["public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.pdf", {
     title: "WÖk-Begriffsleitfaden führend v1.0",

@@ -1,6 +1,6 @@
 # Glossar der Wirkungsökonomie
 
-Stand: 2026-07-30T16:50:50.111Z
+Stand: 2026-07-30T18:22:33.274Z
 
 ## 5. P = Planet
 
@@ -260,9 +260,9 @@ Zukunftsannahmen, Wissenslücken und Unsicherheitsarten sichtbar machen, bevor S
 
 ## Anpassungsfähigkeit / Adaptability
 
-Anpassungsfähigkeit ist die Fähigkeit von Akteuren und Systemen, Regeln, Verhalten, Infrastruktur und Rückkopplungen zu verändern, um Verwundbarkeit innerhalb eines bestehenden Systemzusammenhangs zu reduzieren.
+Anpassungsfähigkeit ist die Fähigkeit von Akteuren und Systemen, Regeln, Verhalten, Infrastruktur und Rückkopplungen zu verändern, um Verwundbarkeit innerhalb eines noch tragfähigen Zustandsraums zu reduzieren.
 
-Adaptability ist bei Walker et al. (2004) eine verwandte eigenständige Fähigkeit, nicht eine der vier Stabilitätslandschafts-Dimensionen.
+Adaptability ist bei Walker et al. (2004) eine verwandte eigenständige Fähigkeit, nicht eine der vier Stabilitätslandschafts-Dimensionen. Anpassung ersetzt weder Ursachenminderung noch Transformation aus einem schädlichen Attraktor.
 
 ## Anpassungskapazität
 
@@ -440,7 +440,7 @@ Atlas Network ist ein international vernetztes Netzwerk marktwirtschaftlich-libe
 
 Ein Attraktor ist ein Zustand oder Zustandsbereich, zu dem ein dynamisches System unter seinen Bedingungen tendiert.
 
-Ein Attraktor kann erwünscht oder schädlich sein. Rückstellfähigkeit wirkt innerhalb eines Zustandsraums; Transformationsfähigkeit schafft oder erreicht bei Bedarf einen anderen Attraktionsraum.
+Attraktoren können erwünscht oder schädlich sein. Rückstellfähigkeit stabilisiert innerhalb eines Zustandsraums; Transformationsfähigkeit schafft oder erreicht bei Bedarf einen anderen tragfähigen Attraktor.
 
 ## Attributionsforschung
 
@@ -1404,7 +1404,7 @@ D&O bezeichnet eine Haftpflichtversicherung für Leitungs- und Aufsichtsorgane g
 
 Dämpfungsfähigkeit ist die Fähigkeit eines Systems, Schwingungen, Überschwingen, Kaskaden und Sekundärschäden durch Puffer, Reserven, Redundanzen oder institutionelle Mechanismen zu begrenzen.
 
-Dämpfung ist nicht Rückstellung: Sie begrenzt die Bewegung, während Rückstellung die Richtung zurück zum tragfähigen Attraktor gibt. Sie ist eine dynamische Präzisierung, keine Walker-Dimension.
+Dämpfung begrenzt die Bewegung, Rückstellung gibt die Richtung. Ozeane sind im Klima-Beispiel Wärmespeicher mit hoher thermischer Trägheit: Sie puffern und verzögern Temperaturreaktionen, sind aber nicht wörtlich mechanische Reibung.
 
 ## Dao / Tao
 
@@ -4700,7 +4700,7 @@ Kinderarbeit und Zwangsarbeit bezeichnen ausbeuterische Arbeit, die Rechte, Entw
 
 Ein Kipppunkt ist eine kritische Schwelle, ab der ein System qualitativ in einen anderen Zustand oder Attraktionsraum übergeht.
 
-Latitude beschreibt den Zustandsbereich bis zu einer Schwelle; Precariousness betrachtet zusätzlich die Nähe und Trajektorie relativ zu ihr.
+Kipppunkte entstehen in mehrdimensionalen, gekoppelten Landschaften. Latitude beschreibt den Spielraum bis zur Schwelle, Precariousness die aktuelle Nähe und Trajektorie; kein einzelner Indikator ersetzt die Systemdiagnose.
 
 ## Kipppunkt / Systemschwelle
 
@@ -5272,7 +5272,7 @@ Lastmanagement steuert Stromverbrauch zeitlich oder mengenmäßig.
 
 Latitude ist die Breite des Attraktionsraums bis zu einer kritischen Schwelle: der tolerierbare Zustandsbereich vor einem Regimewechsel.
 
-Latitude ist nicht die Höhe des Randes. Die Barriere ergibt sich aus der Landschaftstopologie und gehört vor allem zur Resistance.
+Latitude ist nicht die Höhe des Randes. Sie beschreibt den Spielraum im Zustandsraum; Barrieren und Veränderungswiderstand gehören stärker zur Resistance.
 
 ## Law & Order
 
@@ -6103,9 +6103,9 @@ Der Begriff sollte verständlich, aber präzise verwendet werden. Gemeint ist in
 
 ## Nachhaltigkeit
 
-Nachhaltigkeit ist die langfristige Wirkungsresilienz des gekoppelten Systems Mensch–Planet–Demokratie.
+Nachhaltigkeit ist die langfristig gesicherte Wirkungsresilienz des gekoppelten Systems Mensch-Planet-Demokratie.
 
-Nachhaltigkeit bezeichnet die langfristige Fähigkeit des gekoppelten Systems Mensch–Planet–Demokratie, innerhalb tragfähiger Grenzen zu bleiben oder in sie zurückzukehren, Lebens-, Regenerations- und demokratische Korrekturfunktionen zu erhalten oder wiederherzustellen, Abstand zu kritischen Schwellen zu bewahren, Störungen durch Rückstell- und Dämpfungsmechanismen zu bewältigen, zu lernen, sich anzupassen und schädliche Attraktoren nötigenfalls durch Transformation zu verlassen – ohne Schäden räumlich, sozial, ökologisch oder zeitlich zu externalisieren.
+Nachhaltigkeit bezeichnet die dauerhaft gesicherte Fähigkeit des gekoppelten Systems Mensch-Planet-Demokratie, innerhalb tragfähiger und nicht beliebig kompensierbarer Grenzen funktions-, regenerations-, lern- und transformationsfähig zu bleiben. Das System kann Störungen aufnehmen, lebensnotwendige und demokratische Grundfunktionen durch stabilisierende, korrektive und regenerative Rückkopplungen erhalten oder wiederherstellen, ausreichend Abstand zu kritischen Schwellen bewahren, Einflüsse anderer Ebenen verarbeiten und schädliche Attraktoren verlassen - ohne Belastungen räumlich, sozial, ökologisch oder zeitlich zu externalisieren.
 
 ## Nachhaltigkeitslabel
 
@@ -6115,9 +6115,9 @@ Die WÖk fragt, welche Wirkung hinter einem Label geprüft wird, welche Daten fe
 
 ## Nachhaltigkeitsmanagement
 
-Nachhaltigkeitsmanagement ist in der Wirkungsökonomie das Management der langfristigen Wirkungsresilienz von Mensch, Planet und Demokratie.
+Nachhaltigkeitsmanagement ist das Management von Beiträgen zur langfristig gesicherten Wirkungsresilienz von Mensch, Planet und Demokratie.
 
-Es verbindet Wirkungsmessung, Risikofrüherkennung, Grenzachtung, Rückkopplung, Puffer, Regeneration, Anpassung und Transformation. Reporting ist ein Nachweis- und Lerninstrument, nicht die Nachhaltigkeit selbst.
+Es verbindet Wirkungs-, Risiko- und Rückkopplungssteuerung mit Grenzachtung, Regeneration, Lernen und Nicht-Externalisierung. Reporting, ESG-Berichte und Audits können Nachweise und Lerninstrumente sein, nicht Nachhaltigkeit selbst.
 
 ## Nachtwächterstaat
 
@@ -6965,7 +6965,7 @@ In der Wirkungsökonomie wird der Begriff verwendet, um Wirkungen als tatsächli
 
 Panarchy bezeichnet den Einfluss von Dynamiken anderer räumlicher, zeitlicher oder institutioneller Ebenen auf den betrachteten Systemzustand und seine Stabilitätslandschaft.
 
-Panarchy meint keine beliebigen äußeren Faktoren, sondern die Wirkung über- und untergeordneter Systeme auf Mulde, Barriere, Schwelle und Trajektorie.
+Panarchy meint nicht beliebige äußere Faktoren, sondern skalenübergreifende Veränderungen von Mulden, Barrieren, Schwellen und Trajektorien. Lokale Teilsystemresilienz kann durch globale Dynamiken geschwächt oder gestärkt werden.
 
 ## Pareto-Effizienz
 
@@ -7401,7 +7401,7 @@ In der Wirkungsökonomie wird der Begriff verwendet, um Wirkungen als tatsächli
 
 Precariousness beschreibt die aktuelle Nähe und Trajektorie eines Systems relativ zu einer kritischen Schwelle.
 
-Sie ist nicht nur ein statischer Abstand: Auch Richtung und Geschwindigkeit der gegenwärtigen Entwicklung zählen.
+Precariousness ist nicht nur ein statischer Abstand. Richtung und Geschwindigkeit der Entwicklung zählen, weil ein noch funktionierendes System trotzdem nur geringe Sicherheitsreserven haben kann.
 
 ## Preis-, Anreiz- und Rückkopplungs-Canvas
 
@@ -8283,27 +8283,27 @@ Residuallast ist die Stromnachfrage nach Abzug variabler erneuerbarer Einspeisun
 
 ## Resilienz
 
-Resilienz bezeichnet die Fähigkeit eines klar abgegrenzten Systems, Störungen aufzunehmen und sich während Veränderung so zu reorganisieren, dass wesentliche Funktionen, Strukturen, Identität und Rückkopplungen innerhalb eines Attraktionsraums erhalten bleiben oder wiederhergestellt werden.
+Resilienz ist die Fähigkeit eines Systems, Störungen aufzunehmen, auf sie zu reagieren oder sich neu zu organisieren, dabei wesentliche Funktionen, Identität und Struktur zu erhalten oder wiederherzustellen und zugleich die Fähigkeit zu Anpassung, Lernen und Transformation zu bewahren.
 
-Resilienz ist zunächst wertneutral. Auch unerwünschte Systemzustände können resilient sein; deshalb braucht jede Aussage Systemgrenze, Störung, Betroffene, Funktionen und Folgen für andere Systeme.
+Resilienz ist zunächst beschreibend: Auch ein unerwünschter Systemzustand kann resilient sein. Jede Resilienzaussage muss deshalb Systemgrenze, Störung, Betroffene, Funktionen und Folgen für andere Systeme benennen.
 
 ## Resilienzarchitektur
 
-Resilienzarchitektur ist die Gesamtheit der Grenzen, Puffer, Redundanzen, Rückstell-, Dämpfungs-, Regenerations-, Lern- und Transformationsmechanismen sowie der Daten, Regeln, Institutionen und Rückkopplungen, durch die ein System seine tragenden Funktionen unter Belastung erhalten oder wiederherstellen kann.
+Resilienzarchitektur ist die gestaltbare Gesamtheit von Grenzen, Daten, Regeln, Institutionen, Puffern, Redundanzen und Rückkopplungen, die Systemresilienz ermöglichen.
 
-Sie beschreibt die gestaltbaren Voraussetzungen der Systemresilienz, nicht deren Verhalten selbst.
+Resilienzarchitektur beschreibt die Bauweise; Systemresilienz beschreibt das dynamische Verhalten dieser Bauweise unter Belastung. Zu ihr gehören stabilisierende, korrektive und regenerative Rückkopplungen ebenso wie Lern- und Transformationsmöglichkeiten.
 
 ## Resilienzmanagement
 
-Resilienzmanagement ist die bewusste Gestaltung und laufende Prüfung der Resilienzarchitektur.
+Resilienzmanagement ist die bewusste Gestaltung und laufende Prüfung einer Resilienzarchitektur für ein klar bestimmtes System.
 
-Es beobachtet Latitude, Resistance, Precariousness und Panarchy, stärkt erwünschte Rückstell- und Dämpfungsmechanismen, baut Puffer und Regeneration auf, verringert schädliche Lock-ins und entwickelt Anpassungs- und Transformationsfähigkeit.
+Es klärt Systemgrenze, Störung, Betroffene und Funktionen, diagnostiziert Stabilitätslandschaft, Rückstellung und Dämpfung, baut Puffer und Regeneration auf und entwickelt Anpassungs- und Transformationsfähigkeit. Ein stabiler Teilsystemvorteil genügt nicht, wenn er Schäden externalisiert.
 
 ## Resistance
 
-Resistance ist die Schwierigkeit, den Systemzustand vom Attraktor weg oder über eine Schwelle zu bewegen; sie wird durch Topologie, Tiefe, Steilheit und Barriere der Stabilitätslandschaft geprägt.
+Resistance ist die Schwierigkeit, einen Systemzustand vom Attraktor weg oder über eine Schwelle zu bewegen; sie wird durch Tiefe, Steilheit und Barrieren der Stabilitätslandschaft geprägt.
 
-Resistance ist nicht Rückstellfähigkeit. Sie beschreibt die Veränderungsbarriere, während Rückstellfähigkeit die Bewegung nach Wegfall der äußeren Störung beschreibt.
+Resistance ist nicht Rückstellfähigkeit. Hohe Resistance kann erwünschte Funktionen schützen oder schädliche Lock-ins gegen notwendige Veränderung stabilisieren.
 
 ## Resonanz
 
@@ -8465,7 +8465,7 @@ Unter hoher Unsicherheit Maßnahmen wählen, die robust, schrittweise, reversibe
 
 Robustheit bezeichnet die Fähigkeit eines Systems oder Bauteils, eine gegebene Form oder Leistung trotz Belastung aufrechtzuerhalten.
 
-Robustheit kann ein Teil von Resilienz sein, umfasst aber nicht notwendigerweise Rückstellung, Dämpfung, Lernen, Anpassung oder Transformation.
+Robustheit kann ein Teil von Resilienz sein, umfasst aber nicht notwendig Reorganisation, Rückstellung, Dämpfung, Lernen, Anpassung oder Transformation. Hohe Robustheit kann auch einen schädlichen Lock-in sichern.
 
 ## Rohstoffkritikalität
 
@@ -8525,9 +8525,9 @@ Eine Rückbauverpflichtung verpflichtet Betreiber, Anlagen nach Nutzungsende zur
 
 ## Rückkopplung
 
-Rückkopplung liegt vor, wenn Ergebnisse, Schäden, Nebenwirkungen oder Verbesserungen wieder auf das System zurückwirken und spätere Entscheidungen verändern.
+Rückkopplung liegt vor, wenn Ergebnisse, Schäden, Nebenwirkungen oder Verbesserungen wieder auf ein System zurückwirken und spätere Entscheidungen oder Zustände verändern.
 
-Stabilisierende, korrektive und regenerative Rückkopplungen können Rückstellfähigkeit erzeugen. Negative Rückkopplung ist ein systemtheoretisch stabilisierender Begriff und nicht mit negativer Wirkung zu verwechseln.
+Stabilisierende, korrektive und regenerative Rückkopplungen können Rückstellfähigkeit erzeugen. Negative Rückkopplung kann in der Systemtheorie stabilisieren und ist nicht mit negativer Wirkung zu verwechseln.
 
 ## Rückkopplungsfähigkeit
 
@@ -8559,7 +8559,7 @@ Der Rückschaufehler verzerrt Lernen aus Krisen. Wenn im Nachhinein alles „kla
 
 Rückstellfähigkeit ist die Fähigkeit eines Systems, nach Wegfall einer Störung durch stabilisierende, korrektive oder regenerative Rückkopplungen in einen tragfähigen Funktionsbereich zurückzukehren.
 
-Im Kugel-Becken-Modell beschreibt sie Richtung und Stärke der Rückbewegung zum Attraktor. Sie ist eine dynamische Präzisierung der WÖk-Erklärung, kein weiterer Walker-Punkt.
+Sie beschreibt Richtung und Stärke der Rückbewegung zum Attraktor. Rückstellfähigkeit ist nicht Resistance und keine weitere Walker-Dimension; sie macht die dynamische Antwort eines Systems sichtbar.
 
 ## Rückverstromung
 
@@ -9352,13 +9352,13 @@ Zum verfassungsrechtlich wichtigen Orientierungsrahmen zählen insbesondere tats
 
 Stabilität beschreibt die Eigenschaft eines Zustands oder Systems, unter bestimmten Bedingungen nicht stark zu schwanken oder nach einer Abweichung in einen Funktionsbereich zurückzufinden.
 
-Stabilität ist nicht automatisch Nachhaltigkeit. Ein starrer, fossiler oder autoritärer Zustand kann stabil sein und zugleich Mensch, Planet oder Demokratie schädigen.
+Stabilität ist nicht automatisch Resilienz und nicht automatisch Nachhaltigkeit. Ein starrer, fossiler oder autoritärer Zustand kann stabilisiert sein und zugleich Mensch, Planet oder Demokratie schädigen.
 
 ## Stabilitätslandschaft
 
-Eine Stabilitätslandschaft veranschaulicht Zustandsräume, Attraktoren, kritische Schwellen und die Dynamik eines Systems als Kugel in einer Landschaft aus Mulden und Barrieren.
+Eine Stabilitätslandschaft veranschaulicht Zustandsräume, Attraktoren, Schwellen und Trajektorien als Kugel in einer Landschaft aus Mulden und Barrieren.
 
-Latitude, Resistance, Precariousness und Panarchy beschreiben unterschiedliche Aspekte dieser Landschaft. Rückstell- und Dämpfungsfähigkeit erläutern ihre Dynamik; Adaptability und Transformability sind verwandte, aber eigenständige Fähigkeiten.
+Latitude, Resistance, Precariousness und Panarchy sind vier analytische Aspekte dieser Landschaft. Rückstell- und Dämpfungsfähigkeit erklären die dynamische Antwort; Anpassungs- und Transformationsfähigkeit bleiben verwandte, eigenständige Fähigkeiten.
 
 ## Stadtwerke
 
@@ -9778,9 +9778,9 @@ Systemqualität umfasst die materiellen, institutionellen und kulturellen Voraus
 
 ## Systemresilienz
 
-Systemresilienz bezeichnet die Fähigkeit eines gekoppelten Systems, Belastungen innerhalb seines tragfähigen Zustandsraums aufzunehmen, zentrale Funktionen zu erhalten oder wiederherzustellen, kritische Schwellen nicht zu überschreiten, Rückstell- und Dämpfungsmechanismen wirksam zu halten und Einflüsse anderer Systemebenen zu verarbeiten.
+Systemresilienz bezeichnet die Fähigkeit eines klar abgegrenzten Systems, Störungen zu verarbeiten, wesentliche Funktionen unter Belastung zu erhalten, wiederherzustellen oder angepasst fortzuführen und seine Anpassungs-, Lern- und Transformationsfähigkeit zu bewahren.
 
-Systemarchitektur beschreibt Regeln, Daten, Institutionen, Rückkopplungen und Strukturen. Systemresilienz beschreibt ihr dynamisches Verhalten unter Belastung; ob es erwünscht ist, hängt vom normativen Referenzrahmen ab.
+Systemresilienz beschreibt dynamisches Verhalten unter Belastung. Ohne Systemgrenze, Störung, Betroffene und Funktionen bleibt der Begriff unvollständig. Systemarchitektur beschreibt dagegen die Bauweise aus Regeln, Daten, Institutionen, Grenzen, Puffern und Rückkopplungen.
 
 ## Systemtheorie
 
@@ -10149,9 +10149,9 @@ In der Wirkungsökonomie wird der Begriff verwendet, um Wirkungen als tatsächli
 
 ## Transformationsfähigkeit / Transformability
 
-Transformationsfähigkeit ist die Fähigkeit, einen grundsätzlich neuen, tragfähigen Systemzustand beziehungsweise Attraktionsraum zu schaffen, wenn der bisherige Zustand unerwünscht oder unhaltbar ist.
+Transformationsfähigkeit ist die Fähigkeit, einen grundsätzlich neuen, tragfähigen Systemzustand oder Attraktionsraum zu schaffen, wenn der bisherige Zustand unerwünscht oder unhaltbar ist.
 
-Transformability ist bei Walker et al. (2004) eine verwandte eigenständige Fähigkeit, nicht eine der vier Stabilitätslandschafts-Dimensionen. Nachhaltigkeit braucht sie, um schädliche Attraktoren verlassen zu können.
+Transformability ist bei Walker et al. (2004) eine verwandte eigenständige Fähigkeit, nicht eine der vier Stabilitätslandschafts-Dimensionen. Nachhaltigkeit braucht sie, um fossile, repressive oder externalisierende Attraktoren zu verlassen.
 
 ## Transformationspfad
 
@@ -12221,9 +12221,9 @@ Die Wirkungsrente ist ein Modell für Alterssicherung in der Wirkungsökonomie. 
 
 ## Wirkungsresilienz
 
-Wirkungsresilienz bezeichnet in der Wirkungsökonomie die lernfähige und normativ an Mensch, Planet und Demokratie gebundene Systemresilienz.
+Wirkungsresilienz bezeichnet in der Wirkungsökonomie die lernfähige und normativ an Mensch, Planet und Demokratie gebundene Resilienz des gekoppelten Systems.
 
-Wirkungsresilienz verbindet die Resilienz eines MPD-tragfähigen Zustandsraums mit Anpassungs- und Transformationsfähigkeit. Sie schützt oder regeneriert zentrale Funktionen, begrenzt negative Wirkungen und Kaskaden, lernt aus Rückkopplungen und verlässt schädliche Attraktoren ohne Externalisierung.
+Wirkungsresilienz erkennt negative Wirkungen und Störungen früh, schützt oder stellt Funktionen wieder her, baut Puffer und Regeneration auf, lernt aus Rückkopplungen, passt sich an und transformiert untragbare Strukturen - ohne Schäden räumlich, sozial oder zeitlich zu externalisieren.
 
 ## Wirkungsresilienz-Pfade
 

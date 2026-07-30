@@ -1,12 +1,12 @@
 {
   "schemaVersion": "2026-07-english-asset-text-inventory",
-  "generatedAt": "2026-07-15",
+  "generatedAt": "2026-07-30",
   "scope": "Static inventory for visible German text in website image assets. SVG text can usually be translated directly; raster images need manual/OCR review and English variants where embedded text exists.",
   "summary": {
-    "totalImages": 289,
-    "svgEditableText": 4,
-    "rasterReviewNeeded": 113,
-    "noVisibleGermanTextDetected": 172
+    "totalImages": 299,
+    "svgEditableText": 5,
+    "rasterReviewNeeded": 121,
+    "noVisibleGermanTextDetected": 173
   },
   "assets": [
     {
@@ -550,9 +550,8 @@
       "file": "assets/img/blog/2026-07-07-wirkungswissenschaften-wirkungsforschung-wirkungsoekonomie.webp",
       "kind": "raster",
       "status": "raster-review-needed",
-      "usageCount": 2,
+      "usageCount": 1,
       "usedBy": [
-        "bibliothek/index.html",
         "blog/wirkungswissenschaften-wirkungsforschung-wirkungsoekonomie.html"
       ],
       "detectedSvgText": [],
@@ -564,16 +563,141 @@
     {
       "file": "assets/img/blog/2026-07-10-das-managementmodell-der-zukunft.webp",
       "kind": "raster",
+      "status": "no-visible-german-text-detected",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [],
+      "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/blog/2026-07-23-fraunhofersche-linien-des-preises.jpg",
+      "kind": "raster",
       "status": "raster-review-needed",
-      "usageCount": 3,
+      "usageCount": 2,
+      "usedBy": [
+        "bibliothek/index.html",
+        "blog/die-fraunhoferschen-linien-des-preises.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Infografik: Vollständige Produktwirklichkeit wird durch Kostenrechnung, Bilanzierung, Haftung, Steuerrecht und Marktlogik gefiltert; im Marktpreis von fünf Euro fehlen dunkle Wirkungslinien für Klima, Gesundheit, Biodiversität, Arbeit, Demokratie und Zukunft.",
+        "Infografik: Eine vollständige Produktwirklichkeit wird durch Kostenrechnung, Bilanzierung, Haftung, Steuerrecht und Marktlogik gefiltert. Im sichtbaren Marktpreis von fünf Euro fehlen dunkle Linien für Klima, Gesundheit, Biodiversität, Arbeit, Demokratie und Zukunft."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-07-25-das-schachbrett-der-oeffentlichkeit.jpg",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 4,
       "usedBy": [
         "bibliothek/index.html",
         "blog.html",
+        "blog/das-schachbrett-der-oeffentlichkeit.html",
         "index.html"
       ],
       "detectedSvgText": [],
       "germanAltOrTitle": [
-        "Das Managementmodell der Zukunft mit Wirkungskompass und den Wirkungsräumen Mensch, Planet, Demokratie, Unternehmen, Staat, Finanzsystem, Öffentlichkeit und Technologie."
+        "Das Schachbrett der Öffentlichkeit: Wahrnehmung, Kommunikation und Rückkopplung."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-07-25-demokratische-gegenarchitektur.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog/das-schachbrett-der-oeffentlichkeit.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Sechs miteinander verbundene Hebel für positive demokratische Netto-Wirkung."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-07-25-gleicher-grauwert.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog/das-schachbrett-der-oeffentlichkeit.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Zwei gleiche graue Flächen erscheinen vor heller und dunkler Umgebung unterschiedlich."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-07-25-kommunikationsmodell-wirkungsoekonomie.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog/das-schachbrett-der-oeffentlichkeit.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Kommunikationsmodell der Wirkungsökonomie mit Erfahrung, Deutung, Form, Empfängerstruktur, Wirkung und Rückkopplung."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-07-25-rechtsruck-wirkungskette.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog/das-schachbrett-der-oeffentlichkeit.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Sieben gekoppelte Ebenen des Rechtsrucks von der materiellen und sozialen Lage bis zur Systemwirkung."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-07-25-schachbrett-illusion.jpg",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog/das-schachbrett-der-oeffentlichkeit.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Schachbrett mit grünem Zylinder und Schatten: Die Felder A und B haben denselben Grauwert, erscheinen aber unterschiedlich hell."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-07-25-the-dress-wahrnehmungsvarianten.jpg",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog/das-schachbrett-der-oeffentlichkeit.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Drei Wahrnehmungsvarianten desselben Kleids: Weiß-Gold und Blau-Schwarz."
+      ],
+      "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
+    },
+    {
+      "file": "assets/img/blog/2026-07-25-wirkungsmodell-stufen.png",
+      "kind": "raster",
+      "status": "raster-review-needed",
+      "usageCount": 1,
+      "usedBy": [
+        "blog/das-schachbrett-der-oeffentlichkeit.html"
+      ],
+      "detectedSvgText": [],
+      "germanAltOrTitle": [
+        "Wirkungsökonomisches Stufenmodell vom Auslöser zur Rückkopplung."
       ],
       "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
     },
@@ -943,7 +1067,7 @@
       "file": "assets/img/brand/signet.svg",
       "kind": "svg",
       "status": "svg-editable-text",
-      "usageCount": 157,
+      "usageCount": 159,
       "usedBy": [
         "akademie.html",
         "akademie.html",
@@ -977,6 +1101,35 @@
       "detectedSvgText": [],
       "germanAltOrTitle": [],
       "recommendation": "No action detected by this static inventory."
+    },
+    {
+      "file": "assets/img/diagrams/stabilitaetslandschaft-wirkungsresilienz.svg",
+      "kind": "svg",
+      "status": "svg-editable-text",
+      "usageCount": 0,
+      "usedBy": [],
+      "detectedSvgText": [
+        "Stabilitätslandschaft der Wirkungsresilienz",
+        "Stabilitätslandschaft mit einem schädlichen Lock-in und einem MPD-tragfähigen Attraktionsraum. Rückstellkräfte führen innerhalb einer Mulde zum stabilen Zustand zurück; eine kritische Schwelle trennt beide Zustandsräume. Panarchy, Anpassung und Transformation können die Landschaft verändern.",
+        "Stabilitätslandschaft: Wirkungsresilienz statt bloßer Stabilität",
+        "Eine erklärende Systemanalogie: Rückstellung und Dämpfung wirken innerhalb eines Zustandsraums; Anpassung und Transformation verändern ihn.",
+        "Systempotenzial / Stabilitätsbarriere",
+        "veränderte Landschaft durch Regeln, Preise,",
+        "Infrastruktur und Wirkungslenkung",
+        "schädlicher Lock-in",
+        "fossil / autoritär",
+        "MPD-tragfähiger Attraktor",
+        "Rückstellkräfte",
+        "Dämpfung: Puffer, Reserven, Redundanz",
+        "Transformation: schädlichen Attraktor verlassen",
+        "und einen MPD-tragfähigen Wirkungsraum aufbauen",
+        "Panarchy: andere Ebenen verändern",
+        "Kugel, Mulde, Barriere und Schwelle",
+        "Regeln und Rückkopplungen ändern",
+        "Tiefe Mulde ≠ wünschenswert"
+      ],
+      "germanAltOrTitle": [],
+      "recommendation": "Translate SVG text nodes and metadata for English routes, or create an -en.svg variant if the German version must remain unchanged."
     },
     {
       "file": "assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png",
