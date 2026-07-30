@@ -24,7 +24,10 @@ function extractMain(html = "") {
 }
 
 function sourceHash(entry = {}) {
-  const source = path.join(root, String(entry.url || "").replace(/^https?:\/\/wirkungsoekonomie\.de/i, "").replace(/^\//, ""));
+  const normalized = String(entry.url || "")
+    .replace(/^https?:\/\/wirkungsoekonomie\.de/i, "")
+    .replace(/^\//, "");
+  const source = path.join(root, normalized, normalized.endsWith("/") ? "index.html" : "");
   if (!fs.existsSync(source)) return "";
   const sourceHtml = fs.readFileSync(source, "utf8");
   return createHash("sha256").update(JSON.stringify({
