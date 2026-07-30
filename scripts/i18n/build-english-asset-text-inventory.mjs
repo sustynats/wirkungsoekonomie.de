@@ -43,7 +43,10 @@ function extractSvgText(file) {
 
 function htmlAssetRefs() {
   const refs = new Map();
-  const htmlFiles = gitFiles(["*.html"]);
+  // Library and reference generators can replace legacy generated routes in
+  // the same build. `git ls-files` still reports the removed predecessor, so
+  // only inspect files that remain present on disk.
+  const htmlFiles = gitFiles(["*.html"]).filter((file) => fs.existsSync(path.join(ROOT, file)));
   const imageRefPattern = /<(?:img|source)\b[^>]*(?:src|srcset)=["']([^"']+)["'][^>]*>/gi;
   for (const file of htmlFiles) {
     if (file.startsWith("_site/")) continue;
