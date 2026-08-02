@@ -11,6 +11,31 @@ const OUT = path.join(ROOT, "bibliothek/index.html");
 const DETAIL_DIR = path.join(ROOT, "bibliothek/eintraege");
 const DETAIL_REGISTRY_PATH = path.join(ROOT, "assets/data/library-source-details.json");
 const NON_PUBLIC_FILE_EXTENSIONS = new Set([".docx", ".md", ".zip"]);
+const T_SROI_STANDARD_ONLINE = "werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/";
+
+// Diese Dateien bleiben als zitierfähige historische Quellen verfügbar.  Die
+// Bibliothek darf sie aber nicht wie eine aktuelle Rechenregel präsentieren.
+// Die Zuordnung ist absichtlich pfadgenau: Sie betrifft keine bloße Erwähnung
+// des Begriffs T-SROI in anderen Veröffentlichungen.
+const EXPLICIT_ONLINE_URLS = new Map([
+  ["assets/downloads/23_woek_impact_controlling_t_sroi_transformationsmessung_methodenpapier_v1_1.pdf", T_SROI_STANDARD_ONLINE],
+  ["assets/downloads/woek_gesundheit_pflege_einzeldossier_set_v0_3.pdf", "wirkungsfelder/gesundheit-pflege/dossiers/"]
+]);
+const SUCCESSOR_URLS = new Map([
+  ["assets/downloads/23_woek_impact_controlling_t_sroi_transformationsmessung_methodenpapier_v1_0.pdf", T_SROI_STANDARD_ONLINE],
+  ["assets/downloads/23_woek_impact_controlling_t_sroi_transformationsmessung_methodenpapier_v1_0 2.pdf", T_SROI_STANDARD_ONLINE],
+  ["assets/downloads/impact-controlling-einfach-erklaert.pdf", T_SROI_STANDARD_ONLINE],
+  ["assets/downloads/wirkungscontrolling_detailkonzept_dossier_v1_0.pdf", T_SROI_STANDARD_ONLINE],
+  ["public/downloads/originals/Whitepaper-T-SROI.pdf", T_SROI_STANDARD_ONLINE],
+  ["assets/pdf/working-paper-wohnungsmarkt.pdf", T_SROI_STANDARD_ONLINE],
+  ["public/downloads/originals/WP_Wohnungsmarkt.pdf", T_SROI_STANDARD_ONLINE],
+  ["assets/downloads/woek_gesundheit_pflege_einzeldossier_set_v0_2.pdf", "wirkungsfelder/gesundheit-pflege/dossiers/"],
+  ["assets/downloads/woek_gesundheit_pflege_einzeldossier_set_v0_2 2.pdf", "wirkungsfelder/gesundheit-pflege/dossiers/"]
+]);
+const SUCCESSOR_LABELS = new Map([
+  ["assets/downloads/woek_gesundheit_pflege_einzeldossier_set_v0_2.pdf", "Aktuelle Korrekturfassung v0.3 lesen"],
+  ["assets/downloads/woek_gesundheit_pflege_einzeldossier_set_v0_2 2.pdf", "Aktuelle Korrekturfassung v0.3 lesen"]
+]);
 
 function esc(value = "") {
   return String(value)
@@ -100,6 +125,19 @@ function normalizedPairKey(value = "") {
     .trim());
 }
 
+function statusKey(value = "") {
+  return String(value).trim().toLocaleLowerCase("de-DE");
+}
+
+function isHistoricalDocument(doc = {}) {
+  return ["ersetzt", "archiviert", "ältere fassung"].includes(statusKey(doc.status));
+}
+
+function historicalSuccessor(doc = {}, prefix = "../") {
+  if (!doc.successorUrl) return "";
+  return `<a class="btn btn-primary" href="${esc(siteHref(doc.successorUrl, prefix))}">${esc(doc.successorLabel || "Aktuelle Einordnung öffnen")}</a>`;
+}
+
 function actionLinks(doc, onlineByKey, prefix = "../") {
   const primary = doc.urls?.primary || "";
   const sourcePath = doc.urls?.sourcePath || primary;
@@ -113,16 +151,28 @@ function actionLinks(doc, onlineByKey, prefix = "../") {
   const readerHref = doc.detailSlug
     && fs.existsSync(path.join(ROOT, "bibliothek/eintraege", doc.detailSlug, "lesen", "index.html"))
     ? siteHref(`bibliothek/eintraege/${doc.detailSlug}/lesen/`, prefix) : "";
+  const explicitOnline = EXPLICIT_ONLINE_URLS.get(sourcePath);
+  const successor = SUCCESSOR_URLS.get(sourcePath);
+  const successorLabel = SUCCESSOR_LABELS.get(sourcePath) || "Aktuellen T-SROI-Rechenstandard lesen";
+  const sourceRecord = (explicitOnline || successor) ? "quellenarchiv/wok-q-1024/" : "";
+  const historical = isHistoricalDocument(doc);
   const links = [];
-  if (onlineVariant) links.push(`<a class="btn btn-secondary" href="${esc(siteHref(onlineVariant.primary, prefix))}">Onlinefassung lesen</a>`);
-  if (pdfVariant) links.push(`<a class="btn btn-primary" href="${esc(siteHref(pdfVariant.primary, prefix))}">PDF öffnen</a>`);
-  if (links.length) return `<div class="document-action-row">${links.join("")}</div>`;
+  if (historical && doc.successorUrl) links.push(historicalSuccessor(doc, prefix));
+  if (explicitOnline) links.push(`<a class="btn btn-secondary" href="${esc(siteHref(explicitOnline, prefix))}">Onlinefassung lesen</a>`);
+  if (successor && successor !== explicitOnline) links.push(`<a class="btn btn-primary" href="${esc(siteHref(successor, prefix))}">${esc(successorLabel)}</a>`);
+  if (sourceRecord) links.push(`<a class="btn btn-ghost" href="${esc(siteHref(sourceRecord, prefix))}">Quelle WÖK-Q-1024</a>`);
+  if (onlineVariant) links.push(`<a class="btn btn-secondary" href="${esc(siteHref(onlineVariant.primary, prefix))}">${historical ? "Historische Onlinefassung öffnen" : "Onlinefassung lesen"}</a>`);
+  if (pdfVariant) links.push(`<a class="btn ${historical ? "btn-secondary" : "btn-primary"}" href="${esc(siteHref(pdfVariant.primary, prefix))}">${historical ? "Historische PDF öffnen" : "PDF öffnen"}</a>`);
+  if (links.length) {
+    if (isPdf && !pdfVariant) links.push(`<a class="btn btn-secondary" href="${esc(siteHref(primary, prefix))}">${historical ? "Historische PDF öffnen" : "PDF öffnen"}</a>`);
+    return `<div class="document-action-row">${links.join("")}</div>`;
+  }
   const onlineMatch = !isOnline ? onlineByKey.get(normalizedPairKey(doc.title)) : "";
   if (isOnline) {
-    links.push(`<a class="btn btn-secondary" href="${esc(siteHref(primary, prefix))}">Online lesen</a>`);
+    links.push(`<a class="btn btn-secondary" href="${esc(siteHref(primary, prefix))}">${historical ? "Historische Onlinefassung öffnen" : "Online lesen"}</a>`);
   } else if (isPdf) {
-    if (readerHref) links.push(`<a class="btn btn-primary" href="${esc(readerHref)}">Onlinefassung lesen</a>`);
-    links.push(`<a class="btn ${readerHref ? "btn-secondary" : "btn-primary"}" href="${esc(siteHref(primary, prefix))}">PDF öffnen</a>`);
+    if (readerHref) links.push(`<a class="btn ${historical ? "btn-secondary" : "btn-primary"}" href="${esc(readerHref)}">${historical ? "Historische Onlinefassung öffnen" : "Onlinefassung lesen"}</a>`);
+    links.push(`<a class="btn ${readerHref || historical ? "btn-secondary" : "btn-primary"}" href="${esc(siteHref(primary, prefix))}">${historical ? "Historische PDF öffnen" : "PDF öffnen"}</a>`);
     if (!readerHref && onlineMatch) links.push(`<a class="btn btn-secondary" href="${esc(siteHref(onlineMatch, prefix))}">Online lesen</a>`);
   } else if (/\.(xlsx|csv|json)$/i.test(primary)) {
     links.push(`<a class="btn btn-secondary" href="${esc(siteHref(primary, prefix))}">Daten öffnen</a>`);
@@ -360,6 +410,9 @@ function detailPage(doc, all, onlineByKey) {
   const methods = doc.relatedMethods || [];
   const impactFields = doc.relatedImpactFields || [];
   const related = relatedDocuments(doc, all);
+  const historical = isHistoricalDocument(doc);
+  const successorHref = doc.successorUrl ? siteHref(doc.successorUrl, "../../../") : "";
+  const historicalNotice = doc.historicalNotice || "Diese Fassung bleibt für nachvollziehbare Fundstellen erhalten, ist aber nicht der aktuelle fachliche Stand.";
   const facts = [
     ["Dokumentart", type],
     ["Status", doc.status],
@@ -369,7 +422,7 @@ function detailPage(doc, all, onlineByKey) {
     ["Umfang", extent(doc)],
     ["Formate", [...new Set(doc.formats || [])].join(", ")],
     ["Herkunft", sourceLabel(doc.source)],
-    ["Prüfstatus", doc.reviewStatus],
+    ["Einordnung", doc.publicationStatus],
     ["Bibliotheks-ID", doc.id]
   ].filter(([, value]) => value);
   const factsHtml = facts.map(([key, value]) => `<div class="source-fact"><dt>${esc(key)}</dt><dd>${esc(value)}</dd></div>`).join("\n");
@@ -387,6 +440,7 @@ function detailPage(doc, all, onlineByKey) {
     <meta name="description" content="${esc(doc.shortDescription || typeIntro(type))}">
     <meta name="search_section" content="Bibliothek">
     <meta name="search_type" content="${esc(type)}">
+    ${historical ? '<meta name="robots" content="noindex,follow">' : ""}
     <link rel="stylesheet" href="../../../assets/css/style.css?v=20260612-mobile-table-fix">
   </head>
   <body>
@@ -406,6 +460,7 @@ function detailPage(doc, all, onlineByKey) {
           <div class="term-meta-row"><span>${esc(sourceLabel(doc.source))}</span>${doc.author ? `<span>${esc(doc.author)}</span>` : ""}${doc.dateOrStand ? `<span>${esc(doc.dateOrStand)}</span>` : ""}</div>
           ${actionLinks(doc, onlineByKey, "../../../")}
         </header>
+        ${historical ? `<section class="term-section-card callout warning"><p class="section-eyebrow">Fachliche Korrektur</p><h2>Historische, ersetzte Fassung</h2><p>${esc(historicalNotice)}</p>${successorHref ? `<p><a class="btn btn-primary" href="${esc(successorHref)}">${esc(doc.successorLabel || "Aktuelle Einordnung öffnen")}</a></p>` : ""}</section>` : ""}
         <section class="term-summary-card"><h2>Auf einen Blick</h2><p>${esc(doc.abstract || doc.shortDescription || typeIntro(type))}</p>${keyPoints ? `<ul class="clean-list">${keyPoints}</ul>` : ""}</section>
         <div class="term-section-grid">
           <section class="term-section-card"><p class="section-eyebrow">Einordnung</p><h2>Wirkungsökonomische Einordnung</h2><p>${esc(classification)}</p></section>
@@ -439,7 +494,10 @@ function canonicalOnlinePrimary(doc, primary) {
 function mergeDocumentVariants(rawDocuments) {
   const byKey = new Map();
   for (const doc of rawDocuments) {
-    const key = normalizedPairKey(doc.title);
+    // Gleichlautende historische und aktuelle Fassungen dürfen nicht in einem
+    // Eintrag verschmelzen: Sonst kann eine aktuelle Onlinefassung den Status,
+    // die Korrektur und das noindex-Signal einer ersetzten PDF verdecken.
+    const key = `${normalizedPairKey(doc.title)}::${isHistoricalDocument(doc) ? "historical" : "current"}`;
     if (!key) continue;
     if (!byKey.has(key)) byKey.set(key, []);
     byKey.get(key).push(doc);
@@ -516,6 +574,9 @@ fs.writeFileSync(DETAIL_REGISTRY_PATH, `${JSON.stringify({
     title: doc.title,
     type: displayType(doc),
     status: doc.status,
+    historicalNotice: doc.historicalNotice || "",
+    successorUrl: doc.successorUrl || "",
+    successorLabel: doc.successorLabel || "",
     source: doc.source,
     detailUrl: `/bibliothek/eintraege/${doc.detailSlug}/`,
     primaryUrl: doc.urls?.primary || ""

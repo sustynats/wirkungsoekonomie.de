@@ -1,6 +1,6 @@
 # Delta-Review-Report
 
-Stand: 2026-07-30
+Stand: 2026-08-02
 
 Dokumentiert angewandte und vorgeschlagene Änderungen der Live-Reference-Schicht.
 
@@ -44,7 +44,7 @@ Dokumentiert angewandte und vorgeschlagene Änderungen der Live-Reference-Schich
 - Abschnitt: `woek-main-2026-k012-lr-2026-2`
 - Quelle: WOeK_Begriffsleitfaden_fuehrend_v1.0.md
 - Aktion: Delta-Review-Ergänzung für Cluster Begriffssystem.
-- Live-Referenztext/Hinweis: Die lebende Referenz unterscheidet stärker zwischen Wirkungslenkung und Wirkungsrückkopplung. Wirkungslenkung richtet Anreize und Entscheidungen aus; Wirkungsrückkopplung führt bewertete Wirkung in Preise, Steuern, Kapitalzugang, Beschaffung, Förderung oder Entscheidungen zurück.
+- Live-Referenztext/Hinweis: Wirkungslenkung und Wirkungsrückkopplung sind verschiedene Dinge. Wirkungslenkung legt Richtung, Ziele, Schutzgrenzen, Prioritäten und Instrumentregeln fest. Wirkungsrückkopplung führt beobachtete Zustandsveränderungen, Evidenz und Unsicherheit in spätere Entscheidungen zurück. Erst die Rückkopplung zeigt, ob die Lenkung beibehalten, verändert oder beendet werden muss.
 
 ### /referenz/kapitel-013-wirkungstraeger-wirkungsempfaenger-wirkungsraeume/ - addendum
 
@@ -80,7 +80,7 @@ Dokumentiert angewandte und vorgeschlagene Änderungen der Live-Reference-Schich
 - Abschnitt: `woek-main-2026-k022-lr-2026-2`
 - Quelle: WOeK_Begriffsleitfaden_fuehrend_v1.0.md
 - Aktion: Delta-Review-Ergänzung für Cluster Begriffssystem.
-- Live-Referenztext/Hinweis: Wirkungslenkung beschreibt die bewusste Ausrichtung von Anreizen und Entscheidungen. Wirkungsrückkopplung ist der Mechanismus, durch den bewertete Wirkung in wirtschaftliche, politische oder institutionelle Folgen übersetzt wird.
+- Live-Referenztext/Hinweis: Wirkungslenkung beschreibt die bewusste Ausrichtung von Anreizen und Entscheidungen: Ziele, Schutzgrenzen, Prioritäten und Instrumente. Wirkungsrückkopplung ist der Lernmechanismus: Beobachtungen über tatsächliche Zustandsveränderungen, Datenqualität und Unsicherheit fließen in die nächste Entscheidung ein. Eine Preis-, Steuer- oder Förderregel kann ein Instrument der Lenkung sein; sie ist nicht mit der Rückkopplung selbst gleichzusetzen.
 
 ### /referenz/kapitel-023-wirkungsrisiko-und-wirkungsresilienz/ - addendum
 
@@ -107,7 +107,7 @@ Dokumentiert angewandte und vorgeschlagene Änderungen der Live-Reference-Schich
 - Abschnitt: `woek-main-2026-k031-lr-2026-2`
 - Quelle: WOeK_Master_Items_final_v1.2.xlsx
 - Aktion: Delta-Review-Ergänzung für Cluster Mess- und Bewertungslogik.
-- Live-Referenztext/Hinweis: Das WÖk-ID-Register wird in der Live-Referenz aus der strukturierten XLSX-Quelle geführt. Die WÖk-ID ist der technische und fachliche Anker für Indikatoren, SDG/SDG+-Zuordnung, Datenqualität, Scorecards und digitale Produktpässe.
+- Live-Referenztext/Hinweis: Die WÖk-ID ist ein technischer und fachlicher Anker für Indikatoren, SDG/SDG+-Zuordnung, Datenqualität, Scorecards und digitale Produktpässe. Sie kennzeichnet Gegenstände, Prozesse oder Indikatoren – keine Menschen und keine persönliche Wertigkeit. Eine ID ersetzt weder eine Wirkungsgrenze noch eine begründete Bewertung.
 
 ### /referenz/kapitel-032-benchmarks-skalen-und-scorecards/ - addendum
 
@@ -132,9 +132,9 @@ Dokumentiert angewandte und vorgeschlagene Änderungen der Live-Reference-Schich
 - Status: applied-as-live-reference-update
 - Schweregrad: medium
 - Abschnitt: `woek-main-2026-k034-lr-2026-2`
-- Quelle: Whitepaper T-SROI
+- Quelle: T-SROI-Rechenstandard v1.1 (WÖK-Q-1024)
 - Aktion: Delta-Review-Ergänzung für Cluster Mess- und Bewertungslogik.
-- Live-Referenztext/Hinweis: T-SROI und NWI werden in der Live-Referenz getrennt: NWI beschreibt operative Netto-Wirkung unter Wirkungsgrenzen; T-SROI beschreibt Transformationswirkung, also Veränderungen von Systemlogiken, Standards, Anreizen und Handlungspfaden.
+- Live-Referenztext/Hinweis: NWI und T-SROI beantworten unterschiedliche Fragen. Der NWI beschreibt ein nichtmonetäres Wirkungsprofil: gewichtete positive minus gewichtete negative Wirkungen, nur bei erfüllten Schutzgrenzen. Der T-SROI ist ein Geldverhältnis: Der Barwert kausal zurechenbarer direkter und transformativer Nutzen minus Schäden wird durch den Barwert der Kosten geteilt. Transformationswirkung ist dabei eine getrennt belegte Nutzenreihe, kein frei wählbarer Multiplikator. Attribution, Deadweight, Verdrängung, Diskontsatz, Systemgrenze und Unsicherheit müssen offen gelegt werden.
 
 ### /referenz/kapitel-037-das-wirkungssteuergesetz-wstg/ - addendum
 
@@ -215,7 +215,7 @@ Dokumentiert angewandte und vorgeschlagene Änderungen der Live-Reference-Schich
 - Abschnitt: `woek-main-2026-k057-lr-2026-2`
 - Quelle: WP_Einkommen / Wenn Maschinen arbeiten
 - Aktion: Delta-Review-Ergänzung für Cluster Automatisierung, Arbeit, Einkommen, Rente.
-- Live-Referenztext/Hinweis: Wirkungseinkommen wird nicht als altes BGE geführt, sondern als wirkungsgebundene Rückkopplung gesellschaftlicher Wertschöpfung. WEstG und Wirkungseinkommensteuer sind von Wirkungseinkommen und Wirkungsdividende sprachlich zu trennen.
+- Live-Referenztext/Hinweis: Wirkungseinkommen ist ein modellhafter Ansatz für die Rückkopplung gesellschaftlicher Wertschöpfung, keine Personenbewertung und kein individualisiertes Belohnungssystem. WEstG und Wirkungseinkommensteuer sind von Wirkungseinkommen und Wirkungsdividende sprachlich zu trennen. Konkrete Ausgestaltung, Rechtsgrundlage, Verteilungswirkung und Missbrauchsschutz wären jeweils eigenständig zu prüfen.
 
 ### /referenz/kapitel-058-wirkungsrente/ - addendum
 
@@ -224,7 +224,7 @@ Dokumentiert angewandte und vorgeschlagene Änderungen der Live-Reference-Schich
 - Abschnitt: `woek-main-2026-k058-lr-2026-2`
 - Quelle: WP_Rente / WP_Einkommen
 - Aktion: Delta-Review-Ergänzung für Cluster Automatisierung, Arbeit, Einkommen, Rente.
-- Live-Referenztext/Hinweis: Wirkungsrente bewertet Lebensleistung nicht nur als Erwerbsbiografie, sondern als Beitrag zu tragenden Lebens-, Sozial- und Demokratiefunktionen. Sie bleibt vom Wirkungseinkommen und von Steuerinstrumenten zu unterscheiden.
+- Live-Referenztext/Hinweis: Wirkungsrente ist ein modellhafter Finanzierungs- und Verteilungsansatz, keine moralische Rangliste von Lebensläufen und keine Bewertung einzelner Personen. Sie wäre vom Wirkungseinkommen und von Steuerinstrumenten zu unterscheiden; Ansprüche, Bedarfe, Gleichbehandlung, Datenschutz und demokratische Regeln dürften nicht durch einen individuellen Wirkungswert ersetzt werden.
 
 ### /referenz/kapitel-080-digitalisierung-als-infrastruktur-der-wirkungsoekonomie/ - addendum
 
@@ -269,7 +269,7 @@ Dokumentiert angewandte und vorgeschlagene Änderungen der Live-Reference-Schich
 - Abschnitt: `woek-main-2026-k106-lr-2026-2`
 - Quelle: Führender Begriffsleitfaden / Wirkungsrat_Konzept
 - Aktion: Delta-Review-Ergänzung für Cluster Governance und Fehlbarkeit.
-- Live-Referenztext/Hinweis: Die Wirkungsökonomie beansprucht kein Wahrheitsmonopol. Ihre Fehlbarkeit wird als Governance-Anforderung geführt: offene Daten, Kritikfähigkeit, Einspruch, Korrektur, demokratische Kontrolle und Versionsgeschichte sind Teil der Architektur.
+- Live-Referenztext/Hinweis: Die Wirkungsökonomie beansprucht kein Wahrheitsmonopol. Ihre Fehlbarkeit ist eine Governance-Anforderung: nachvollziehbare Daten, Kritikfähigkeit, Einspruch, Korrektur, demokratische Kontrolle und dokumentierte Änderungen gehören zur Architektur.
 
 ### /referenz/ - structural-update
 

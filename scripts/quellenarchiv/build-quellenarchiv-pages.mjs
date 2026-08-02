@@ -13,8 +13,13 @@ import path from "node:path";
 
 const API_URL = process.env.QUELLENARCHIV_API_URL || "https://institut.wirkungsoekonomie.de/api/quellen";
 const SNAPSHOT_PATH = "content/quellenarchiv/sources.json";
+const GLOSSARY_SOURCE_PATH = "content/quellenarchiv/glossary-source-records.json";
+const EVIDENCE_SOURCE_PATH = "content/quellenarchiv/evidence-source-records.json";
+const LEGAL_SOURCE_PATH = "content/quellenarchiv/legal-source-records.json";
+const EVIDENCE_REGISTRY_PATH = "content/sources/evidence-source-registry.json";
 const OUT_DIR = "quellenarchiv";
 const CSS_VERSION = "20260612-mobile-table-fix";
+const SITE_URL = "https://wirkungsoekonomie.de";
 
 const navigation = JSON.parse(fs.readFileSync("assets/data/navigation.json", "utf8"));
 const headerTemplate = fs.readFileSync("templates/header.html", "utf8");
@@ -23,6 +28,60 @@ const footerTemplate = fs.readFileSync("templates/footer.html", "utf8");
 // ---------------------------------------------------------------------------
 // Datenquelle laden (Snapshot; optional API-Refresh)
 // ---------------------------------------------------------------------------
+function mergeSupplementalSourceRecords(data) {
+  const supplementalPaths = [GLOSSARY_SOURCE_PATH, EVIDENCE_SOURCE_PATH, LEGAL_SOURCE_PATH]
+    .filter((file) => fs.existsSync(file));
+  if (!supplementalPaths.length) return data;
+  const byCode = new Map();
+  const clusterLabels = new Map((data.clusters || []).map((cluster) => [cluster.key, cluster.label]));
+  for (const file of supplementalPaths) {
+    const extra = JSON.parse(fs.readFileSync(file, "utf8"));
+    for (const cluster of extra.clusters || []) clusterLabels.set(cluster.key, cluster.label);
+    for (const source of extra.sources || []) {
+      if (source?.code && byCode.has(source.code)) {
+        throw new Error(`Doppelte ergänzende Quellen-ID: ${source.code} (${file})`);
+      }
+      if (source?.code) byCode.set(source.code, source);
+    }
+  }
+  for (const source of data.sources || []) {
+    if (source?.code) byCode.set(source.code, source);
+  }
+  const sources = [...byCode.values()].sort((a, b) => String(a.code).localeCompare(String(b.code), "de"));
+  const clusters = [...clusterLabels.entries()]
+    .map(([key, label]) => ({ key, label, count: sources.filter((source) => source.cluster === key).length }))
+    .filter((cluster) => cluster.count > 0);
+  return { ...data, sources, clusters };
+}
+
+function attachEvidenceRegistryMetadata(data) {
+  if (!fs.existsSync(EVIDENCE_REGISTRY_PATH)) return data;
+  const registry = JSON.parse(fs.readFileSync(EVIDENCE_REGISTRY_PATH, "utf8"));
+  const registrySources = (registry.sources || []).filter((source) => source?.public_display !== false);
+  const registryByArchiveCode = new Map();
+  for (const source of registrySources) {
+    const archiveCode = String(source.archive_code || "").trim();
+    if (!archiveCode) continue;
+    if (registryByArchiveCode.has(archiveCode)) {
+      throw new Error(`Evidenzregister verweist mehrfach auf dieselbe Quellen-ID: ${archiveCode}`);
+    }
+    registryByArchiveCode.set(archiveCode, source);
+  }
+  return {
+    ...data,
+    sources: (data.sources || []).map((source) => {
+      const registrySource = registryByArchiveCode.get(source.code);
+      if (!registrySource) return source;
+      return {
+        ...source,
+        evidenceRegistryId: registrySource.id,
+        evidenceQuality: registrySource.source_quality || "",
+        evidenceLocatorType: registrySource.catalog_url ? "katalog" : "original"
+      };
+    })
+  };
+}
+
 async function loadData() {
   if (process.env.QUELLENARCHIV_FETCH === "1") {
     try {
@@ -33,12 +92,12 @@ async function loadData() {
       fs.mkdirSync(path.dirname(SNAPSHOT_PATH), { recursive: true });
       fs.writeFileSync(SNAPSHOT_PATH, `${JSON.stringify(json, null, 2)}\n`);
       console.log(`[quellenarchiv] Snapshot aus API aktualisiert: ${json.sources.length} Quellen`);
-      return json;
+      return attachEvidenceRegistryMetadata(mergeSupplementalSourceRecords(json));
     } catch (err) {
       console.warn(`[quellenarchiv] API-Refresh fehlgeschlagen (${err.message}); nutze Snapshot.`);
     }
   }
-  return JSON.parse(fs.readFileSync(SNAPSHOT_PATH, "utf8"));
+  return attachEvidenceRegistryMetadata(mergeSupplementalSourceRecords(JSON.parse(fs.readFileSync(SNAPSHOT_PATH, "utf8"))));
 }
 
 // ---------------------------------------------------------------------------
@@ -114,6 +173,7 @@ function renderFooter(base) {
 function pageShell(title, body, depth = "", options = {}) {
   const metaTitle = options.metaTitle || `${title} - Wirkungsökonomie`;
   const metaDescription = options.metaDescription || `${title} im Quellenarchiv der Wirkungsökonomie.`;
+  const canonicalUrl = options.canonicalUrl || `${SITE_URL}/quellenarchiv/`;
   return `<!DOCTYPE html>
 <html lang="de">
   <head>
@@ -121,6 +181,13 @@ function pageShell(title, body, depth = "", options = {}) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>${esc(metaTitle)}</title>
     <meta name="description" content="${esc(metaDescription)}">
+    <link rel="canonical" href="${esc(canonicalUrl)}">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:site_name" content="Wirkungsökonomie">
+    <meta property="og:title" content="${esc(metaTitle)}">
+    <meta property="og:description" content="${esc(metaDescription)}">
+    <meta property="og:url" content="${esc(canonicalUrl)}">
     <link rel="stylesheet" href="${depth}assets/css/style.css?v=${CSS_VERSION}">
   </head>
   <body>
@@ -141,6 +208,7 @@ ${renderFooter(depth)}
 const REVIEW_STATUS_LABELS = {
   ungeprueft: "ungeprüft",
   geprueft: "geprüft",
+  referenziert: "bibliografisch dokumentiert",
   fuehrend: "führend",
   historisch: "historisch",
   "zu-aktualisieren": "zu aktualisieren"
@@ -149,6 +217,7 @@ const DATA_QUALITY_LABELS = {
   amtlich: "amtlich",
   "peer-reviewed": "peer-reviewed",
   "graue-literatur": "graue Literatur",
+  "bibliografischer-nachweis": "bibliografischer Nachweis",
   standard: "Standard / Norm",
   hoch: "hoch",
   mittel: "mittel",
@@ -202,6 +271,39 @@ function externalLink(source) {
   return url;
 }
 
+function locatorType(source) {
+  if (source.locatorType) return source.locatorType;
+  const url = externalLink(source);
+  if (/^https:\/\/search\.worldcat\.org\/search\?/i.test(url)) return "katalog";
+  if (/^https:\/\/api\.openalex\.org\/works\?search=/i.test(url)) return "literatursuche";
+  return "direkt";
+}
+
+function locatorNote(source) {
+  if (source.locatorNote) return source.locatorNote;
+  if (locatorType(source) === "katalog") {
+    return "Der Link führt zu einer bibliografischen Katalogsuche mit Titel und gegebenenfalls Autor:in. Er ist ein Auffindehinweis, kein Volltext, und ersetzt keine eigene Evidenzprüfung.";
+  }
+  if (locatorType(source) === "literatursuche") {
+    return "Der Link führt zu einer Literatursuche zum bezeichneten Themenfeld. Er ist ein Auffindehinweis und ersetzt weder eine systematische Recherche noch eine eigene Evidenzprüfung.";
+  }
+  if (locatorType(source) === "nachfolge") {
+    return "Der Link führt zu einem Nachfolgeangebot. Er ersetzt nicht automatisch die historische Quelle, ihre Daten, ihre Methodik oder ihre Zeitreihe; diese müssen jeweils gesondert geprüft werden.";
+  }
+  if (locatorType(source) === "recherchehinweis") {
+    return "Der Link führt ausschließlich zu einer offiziellen Rechercheoberfläche. Er ist kein verifizierter Einzelbeleg und darf nicht als solcher zitiert werden.";
+  }
+  return "";
+}
+
+function externalLinkLabel(source) {
+  if (locatorType(source) === "katalog") return "Bibliografische Fundstelle öffnen ↗";
+  if (locatorType(source) === "literatursuche") return "Literatursuche öffnen ↗";
+  if (locatorType(source) === "nachfolge") return "Nachfolgeangebot öffnen ↗";
+  if (locatorType(source) === "recherchehinweis") return "Offizielle Recherche öffnen ↗";
+  return "Quelle öffnen ↗";
+}
+
 function detailBody(source, clusterLabels) {
   const s = slug(source.code);
   const clusterLabel = source.clusterLabel || clusterLabels[source.cluster] || source.cluster || "";
@@ -218,7 +320,7 @@ function detailBody(source, clusterLabels) {
   ].filter(Boolean).join("\n            ");
 
   const actions = [
-    ext ? `<a class="btn btn-primary" href="${esc(ext)}" target="_blank" rel="noopener noreferrer">Quelle öffnen ↗</a>` : "",
+    ext ? `<a class="btn btn-primary" href="${esc(ext)}" target="_blank" rel="noopener noreferrer">${externalLinkLabel(source)}</a>` : "",
     `<a class="btn btn-secondary" href="../">Alle Quellen</a>`,
     `<a class="btn btn-secondary" href="../../suche.html?q=${encodeURIComponent(source.title || source.code)}">Website durchsuchen</a>`
   ].filter(Boolean).join("\n            ");
@@ -236,6 +338,8 @@ function detailBody(source, clusterLabels) {
     ["Autor / Institution", source.author ? esc(source.author) : ""],
     ["Domain", source.domain ? esc(source.domain) : ""],
     ["DOI", source.doi ? `<a class="text-link" href="https://doi.org/${esc(source.doi)}" target="_blank" rel="noopener noreferrer">${esc(source.doi)}</a>` : ""],
+    ["Evidenzregister-ID", source.evidenceRegistryId ? esc(source.evidenceRegistryId) : ""],
+    ["Quellenqualität im Evidenzregister", source.evidenceQuality ? `Stufe ${esc(source.evidenceQuality)}` : ""],
     ["Quellen-ID", esc(source.code)]
   ].filter(([, v]) => v);
 
@@ -302,8 +406,9 @@ function detailBody(source, clusterLabels) {
           <dl class="source-fact-grid">
 ${factRows}
           </dl>
+          ${locatorNote(source) ? `<p class="source-provenance">${esc(locatorNote(source))}</p>` : ""}
           ${ext ? `<p><a class="text-link" href="${esc(ext)}" target="_blank" rel="noopener noreferrer">${esc(ext)} ↗</a></p>` : ""}
-          <p class="muted source-readonly-note">Read-only-Spiegel aus dem Wirkungsinstitut. Hinzufügen, Bearbeiten und Diskutieren von Quellen erfolgt <a class="text-link" href="https://institut.wirkungsoekonomie.de/quellen/">im Institut</a>.</p>
+          <p class="muted source-readonly-note">Diese Detailseite ordnet die Quelle ein. Maßgeblich bleibt die verlinkte Originalquelle oder bibliografische Fundstelle.</p>
         </section>
       </article>`;
 }
@@ -360,7 +465,7 @@ function indexBody(sources, clusters) {
   return `      <section class="hero compact-hero">
         <p class="hero-kicker">Bibliothek</p>
         <h1>Quellenarchiv der Wirkungsökonomie</h1>
-        <p class="lead">${total} kuratierte Quellen - von amtlichen Datenreihen über Normen bis zu Forschungsarbeiten, jede mit einer wirkungsökonomischen Einordnung. Gespiegelt aus dem <a class="text-link" href="https://institut.wirkungsoekonomie.de/quellen/">Wirkungsinstitut</a>; hier read-only.</p>
+        <p class="lead">${total} Quellen - von amtlichen Datenreihen über Normen bis zu Forschungsarbeiten. Jede Detailseite zeigt Einordnung, Herkunft, Prüfstatus und den Weg zur Originalquelle oder bibliografischen Fundstelle.</p>
       </section>
 
       <section class="content-band quellenarchiv-filter-panel" aria-label="Quellen filtern">
@@ -498,7 +603,8 @@ async function main() {
     const metaDescription = (source.summary || `${source.title} im Quellenarchiv der Wirkungsökonomie.`).slice(0, 200);
     const html = pageShell(source.title, body, "../../", {
       metaTitle: `${source.title} - Quellenarchiv - Wirkungsökonomie`,
-      metaDescription
+      metaDescription,
+      canonicalUrl: `${SITE_URL}/quellenarchiv/${slug(source.code)}/`
     });
     fs.writeFileSync(path.join(dir, "index.html"), html);
     written++;
@@ -508,7 +614,8 @@ async function main() {
   const idxBody = indexBody(sources, clusters);
   const idxHtml = pageShell("Quellenarchiv", idxBody, "../", {
     metaTitle: "Quellenarchiv der Wirkungsökonomie",
-    metaDescription: `${sources.length} kuratierte, wirkungsökonomisch eingeordnete Quellen - Datenreihen, Normen, Studien und Berichte. Read-only-Spiegel des Wirkungsinstituts.`
+    metaDescription: `${sources.length} wirkungsökonomisch eingeordnete Quellen - Datenreihen, Normen, Studien und Berichte mit Detailseiten, Herkunft und Fundstellen.`,
+    canonicalUrl: `${SITE_URL}/quellenarchiv/`
   });
   fs.writeFileSync(path.join(OUT_DIR, "index.html"), idxHtml);
 

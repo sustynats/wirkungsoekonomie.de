@@ -70,14 +70,6 @@ const endpointDefinitions = [
     audience: ["internal", "partners"],
     description: "Wirkungsradar-Karten, Resonanzkarten und bestehende Embed-/Distribution-Endpunkte.",
   },
-  {
-    id: "production",
-    url: "/api/v1/production/",
-    method: "GET",
-    lifecycle: "stable",
-    audience: ["internal"],
-    description: "Produktionsprozess-, Build-, Gate- und Workflow-Manifest.",
-  },
 ];
 
 const corePrinciples = [
@@ -180,7 +172,7 @@ const contaminationControls = [
     id: "single-source",
     risk: "Daten werden in mehreren Oberflächen auseinanderentwickelt.",
     control: "Jedes Datenprodukt hat einen canonicalOwner und einen canonicalPlace.",
-    gate: "production-workflow-manifest.dataProducts",
+    gate: "öffentliches Datenprodukt mit klarer Herkunft",
   },
   {
     id: "no-frontend-logic-duplication",
@@ -192,13 +184,13 @@ const contaminationControls = [
     id: "artifact-drift",
     risk: "Generierte HTML-, JSON- oder _site-Artefakte driften von Quellen weg.",
     control: "Build-Skripte erzeugen Manifeste reproduzierbar; deployt wird das Artefakt aus CI.",
-    gate: "npm run build:artifact + npm run check:size",
+    gate: "reproduzierbarer Veröffentlichungsprozess",
   },
   {
     id: "parallel-agent-overwrite",
-    risk: "Claude/Codex/Hintergrundprozesse schreiben gleichzeitig in dieselben Bereiche.",
+    risk: "Parallel laufende Arbeitsprozesse können gleichzeitig in dieselben Bereiche schreiben.",
     control: "Arbeitsbereiche werden über Owner, Datenklasse und eng gefasste Build-Schritte getrennt.",
-    gate: "git status before edits; no unrelated reverts; generated manifests expose changed surfaces",
+    gate: "getrennte Verantwortungsbereiche und nachvollziehbare Änderungen",
   },
   {
     id: "public-private-mixing",
@@ -247,6 +239,10 @@ function writeEndpoint(directory, data) {
     path.join(root, htmlPath),
     `<!doctype html>\n<html lang="de">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1">\n<title>WÖk API · ${htmlEscape(data.title ?? data.registryId ?? "Daten")}</title>\n</head>\n<body>\n<pre>${htmlEscape(JSON.stringify(data, null, 2))}</pre>\n</body>\n</html>\n`,
   );
+}
+
+function removeGeneratedPath(relativePath) {
+  fs.rmSync(path.join(root, relativePath), { recursive: true, force: true });
 }
 
 function absoluteUrl(route) {
@@ -360,12 +356,6 @@ const capabilities = {
       label: "Wirkungsreferenz",
       sources: ["assets/data/sdg-reference.json", "assets/data/wirkungsradar-resonance-cards.json"],
       capabilities: ["SDG/SDG+-Einordnung", "Wirkungsradar", "Debatten- und Resonanzlogik"],
-    },
-    {
-      id: "production",
-      label: "Produktion und Workflows",
-      sources: ["package.json", "scripts/", ".github/workflows/deploy.yml"],
-      capabilities: ["Build-Phasen", "Qualitätsgates", "Deployment-Artefakt", "Workflow-Inventar"],
     },
   ],
   boundaries: {
@@ -609,18 +599,6 @@ const workflowManifest = {
   routeGroups,
 };
 
-const productionEndpoint = {
-  generatedAt,
-  version: "v1",
-  summary: {
-    totalBuildSteps: workflowManifest.build.totalSteps,
-    dataProducts: workflowManifest.dataProducts.length,
-    workflowGates: workflowManifest.workflowGates.length,
-    scripts: workflowManifest.scripts.length,
-  },
-  ...workflowManifest,
-};
-
 writeEndpoint("api", {
   generatedAt,
   message: "Use /api/v1/ for the versioned WÖk Core Static API.",
@@ -634,10 +612,17 @@ writeEndpoint("api/v1/canvases", canvasesEndpoint);
 writeEndpoint("api/v1/search", searchEndpoint);
 writeEndpoint("api/v1/sdg-plus", sdgPlusEndpoint);
 writeEndpoint("api/v1/wirkungsradar", wirkungsradarEndpoint);
-writeEndpoint("api/v1/production", productionEndpoint);
 
 writeJson("assets/data/woek-core-api-manifest.json", apiIndex);
-writeJson("assets/data/production-workflow-manifest.json", workflowManifest);
+// Produktions- und Workflow-Informationen bleiben Teil der internen CI, sind
+// aber kein öffentliches API-Produkt. Alt-Artefakte werden auch bei einem
+// inkrementellen Build entfernt.
+for (const obsoletePath of [
+  "api/v1/production",
+  "api/v1/production.json",
+  "assets/data/production-workflow-manifest.json",
+]) {
+  removeGeneratedPath(obsoletePath);
+}
 
 console.log(`Wrote WÖk Core API manifest with ${endpointDefinitions.length} endpoints.`);
-console.log(`Wrote production workflow manifest with ${buildSteps.length} canonical build steps.`);

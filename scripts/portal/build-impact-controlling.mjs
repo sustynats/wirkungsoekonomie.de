@@ -55,11 +55,11 @@ const tools = [
   {
     title: "T-SROI",
     type: "Bewertungsmethode",
-    status: "Dossier vorhanden",
-    href: "werkzeuge/impact-controlling/t-sroi/",
-    dossier: "werkzeuge/impact-controlling/dossiers/t-sroi/",
-    short: "Transformational Social Return on Investment bewertet finanzielle, soziale, ökologische und systemische Transformationswirkung.",
-    why: "T-SROI übersetzt Investitionen, Prävention und Transformation in eine nachvollziehbare Wirkungsrendite.",
+    status: "Rechenstandard v1.1",
+    href: "werkzeuge/t-sroi/",
+    dossier: "werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/",
+    short: "T-SROI ergänzt eine direkte IOI-Geldrechnung nur um einen separat belegten, monetarisierten Transformationsnutzen.",
+    why: "Er macht direkte und transformative Nutzenströme, Schäden, Zurechnung und Unsicherheit getrennt nachvollziehbar.",
   },
   {
     title: "Impact-of-Investment (IOI)",
@@ -67,8 +67,8 @@ const tools = [
     status: "Dossier vorhanden",
     href: "werkzeuge/impact-controlling/impact-of-investment/",
     dossier: "werkzeuge/impact-controlling/dossiers/impact-of-investment/",
-    short: "IOI setzt positive Netto-Wirkung ins Verhältnis zum eingesetzten Kapital, Budget oder Investitionsvolumen.",
-    why: "IOI zeigt, ob ein Euro nur finanzielle Aktivität auslöst oder belegbare positive Netto-Wirkung erzeugt.",
+    short: "IOI setzt direkt monetarisierten, kausal begrenzten Nettonutzen in Euro ins Verhältnis zu Investition und inkrementellen Kosten.",
+    why: "Er zeigt den dokumentierten direkten Nettonutzen je Ressourceneuro, ohne Profilpunkte in Geld umzuwandeln.",
   },
   {
     title: "Netto-Wirkungs-Index",
@@ -151,7 +151,7 @@ const go10MethodPapers = [
     title: "WÖk-IDs und Indikatorenarchitektur",
     subtitle: "Wie Wirkungsdaten eindeutig, prüfbar, vergleichbar und rückkoppelbar werden",
     source: "docs/impact-controlling/go10-methodenpapiere/online_volltext_21_woek_impact_controlling_woek_ids_indikatorenarchitektur_methodenpapier_v1_0.md",
-    docx: "assets/downloads/21_woek_impact_controlling_woek_ids_indikatorenarchitektur_methodenpapier_v1_0.docx",
+    docx: null,
     pdf: "assets/downloads/21_woek_impact_controlling_woek_ids_indikatorenarchitektur_methodenpapier_v1_0.pdf",
     relatedTools: ["WÖk-IDs", "Scorecards", "Datenqualität & Assurance"],
     relatedPages: ["werkzeuge/woek-ids/", "werkzeuge/impact-controlling/", "werkzeuge/scorecards/"],
@@ -162,7 +162,7 @@ const go10MethodPapers = [
     title: "Scorecards, Benchmarks und Netto-Wirkungs-Index",
     subtitle: "Wie Wirkungsdaten zu prüfbaren Entscheidungen werden - ohne Kompensation, Scheingenauigkeit oder Personenbewertung",
     source: "docs/impact-controlling/go10-methodenpapiere/online_volltext_22_woek_impact_controlling_scorecards_benchmarks_nwi_methodenpapier_v1_0.md",
-    docx: "assets/downloads/22_woek_impact_controlling_scorecards_benchmarks_nwi_methodenpapier_v1_0.docx",
+    docx: null,
     pdf: "assets/downloads/22_woek_impact_controlling_scorecards_benchmarks_nwi_methodenpapier_v1_0.pdf",
     relatedTools: ["Scorecards", "Netto-Wirkungs-Index", "Reverse Merit Order", "Benchmarks & Archetypen"],
     relatedPages: ["werkzeuge/scorecards/", "werkzeuge/netto-wirkungs-index/", "werkzeuge/reverse-merit-order/"],
@@ -170,22 +170,25 @@ const go10MethodPapers = [
   {
     number: 23,
     slug: "t-sroi-transformationsmessung",
-    title: "T-SROI und Impact Controlling",
-    subtitle: "Transformational Social Return on Investment als Steuerungsinstrument für systemische Wirkung",
-    source: "docs/impact-controlling/go10-methodenpapiere/online_volltext_23_woek_impact_controlling_t_sroi_transformationsmessung_methodenpapier_v1_0.md",
-    docx: "assets/downloads/23_woek_impact_controlling_t_sroi_transformationsmessung_methodenpapier_v1_0.docx",
-    pdf: "assets/downloads/23_woek_impact_controlling_t_sroi_transformationsmessung_methodenpapier_v1_0.pdf",
+    title: "T-SROI-Rechenstandard",
+    subtitle: "Kausale, diskontierte Netto-Nutzenrechnung für Transformationsinvestitionen",
+    source: "docs/impact-controlling/go10-methodenpapiere/t-sroi-rechenstandard-v1_1.md",
+    docx: null,
+    pdf: "assets/downloads/23_woek_impact_controlling_t_sroi_transformationsmessung_methodenpapier_v1_1.pdf",
+    pdfLabel: "PDF v1.1",
+    currentMathStandard: true,
     relatedTools: ["T-SROI", "Netto-Wirkungs-Index", "WÖk-IDs", "Scorecards"],
-    relatedPages: ["werkzeuge/t-sroi/", "werkzeuge/impact-controlling/t-sroi/", "werkzeuge/impact-controlling/"],
+    relatedPages: ["werkzeuge/t-sroi/", "werkzeuge/impact-controlling/"],
   },
 ];
 
+const currentTsroiRechenstandard = go10MethodPapers.find((paper) => paper.currentMathStandard);
+
 const wirkungscontrollingDetailDossier = {
-  slug: "wirkungscontrolling",
-  title: "Wirkungscontrolling / Impact Controlling",
-  text: "Umfassende zitierfähige Onlinefassung mit Rechenlogik, Scorecards, NWI, IOI, T-SROI, Datenqualität, Assurance und Umsetzungspfaden.",
-  href: "werkzeuge/impact-controlling/dossiers/wirkungscontrolling/",
-  pdf: "assets/downloads/wirkungscontrolling_detailkonzept_dossier_v1_0.pdf",
+  slug: "t-sroi-rechenstandard-v1-1",
+  title: "T-SROI-Rechenstandard v1.1",
+  text: "Aktuelle Rechenlogik für kausal zugerechnete, diskontierte Netto-Nutzen: getrennte direkte und transformative Nutzenströme, konservativ angesetzte Schäden und ein Schutz-Gate.",
+  href: "werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/",
 };
 
 const doubleMaterialityWorkpaper = {
@@ -200,7 +203,7 @@ const go10ToolCards = [
   ["Scorecard-Generator", "Methodik", "werkzeuge/scorecards/", "Aus WÖk-IDs, Benchmarks und Datenqualität eine prüfbare Bewertungsoberfläche ableiten."],
   ["NWI-Rechner", "Methodik", "werkzeuge/netto-wirkungs-index/", "Positive, negative und neutrale Wirkung ohne freie Kompensation zusammenführen."],
   ["IOI-Rechner", "Methodik", "werkzeuge/impact-controlling/impact-of-investment/", "Positive Netto-Wirkung je investiertem Euro, Budget oder Kapitaleinsatz sichtbar machen."],
-  ["T-SROI-Rechner", "Methodik", "werkzeuge/t-sroi/", "Investitionen, Transformationswirkung, Resilienzfaktor und Datenqualität modellhaft zusammenführen."],
+  ["T-SROI-Rechner", "Methodik", "werkzeuge/t-sroi/", "Direkten und separat belegten transformativen Nettonutzen, Schäden und Ressourcen in Euro getrennt abgrenzen und diskontieren; Datenqualität bleibt ein Prüfmerkmal."],
   ["Reverse-Merit-Order-Demo", "Methodik", "werkzeuge/reverse-merit-order/", "Rote Linien und schwächste kritische Wirkungsfelder sichtbar machen."],
   ["Datenqualitäts-/Assurance-Check", "Methodik", "werkzeuge/datenqualitaet-assurance/", "Prüfstatus, Datenherkunft, Schätzungen und Revisionsbedarf transparent markieren."],
 ];
@@ -220,9 +223,8 @@ const dossierPages = [
 ];
 
 const toolPages = [
-  ["werkzeuge/impact-controlling/impact-of-investment/index.html", "Impact-of-Investment (IOI)", "Positive Netto-Wirkung je investiertem Euro.", "IOI setzt geprüfte positive Netto-Wirkung ins Verhältnis zu Investition, Budget oder Kapitaleinsatz und ergänzt ROI, NWI und T-SROI.", "werkzeuge/impact-controlling/dossiers/impact-of-investment/"],
-  ["werkzeuge/impact-controlling/t-sroi/index.html", "T-SROI", "Transformational Social Return on Investment.", "T-SROI bewertet finanzielle, soziale, ökologische und systemische Transformationswirkung im Verhältnis zum Ressourceneinsatz.", "werkzeuge/impact-controlling/dossiers/t-sroi/"],
-  ["werkzeuge/t-sroi/index.html", "T-SROI", "Transformational Social Return on Investment.", "T-SROI bewertet finanzielle, soziale, ökologische und systemische Transformationswirkung im Verhältnis zum Ressourceneinsatz.", "werkzeuge/impact-controlling/dossiers/t-sroi/"],
+  ["werkzeuge/impact-controlling/impact-of-investment/index.html", "Impact-of-Investment (IOI)", "Direkt monetarisierter Nettonutzen je Ressourceneuro.", "IOI setzt direkt monetarisierten, kausal begrenzten Nettonutzen in Euro ins Verhältnis zu Investition und inkrementellen Kosten. Er ist keine Umrechnung von NWI-Punkten.", "werkzeuge/impact-controlling/dossiers/impact-of-investment/"],
+  ["werkzeuge/t-sroi/index.html", "T-SROI", "Transformational Social Return on Investment.", "T-SROI ergänzt eine direkte IOI-Geldrechnung nur um einen separat belegten, monetarisierten Transformationsnutzen innerhalb derselben Systemgrenze und Preisbasis.", "werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/"],
   ["werkzeuge/netto-wirkungs-index/index.html", "Netto-Wirkungs-Index", "Kennzahl für positive, negative und neutrale Wirkung.", "Der Netto-Wirkungs-Index ordnet Wirkung im Referenzrahmen der SDGs, Agenda 2030 und SDG+ ein.", "werkzeuge/impact-controlling/dossiers/nwi/"],
   ["werkzeuge/woek-ids/index.html", "WÖk-IDs", "Indikatorenarchitektur der Wirkungsökonomie.", "WÖk-IDs verbinden Referenzrahmen, Datenquellen, Einheiten, Schwellen, Versionen und Prüfstatus.", "werkzeuge/impact-controlling/dossiers/woek-ids/"],
   ["werkzeuge/scorecards/index.html", "Scorecards", "Bewertungsraster für Wirkung.", "Scorecards machen Zustandsveränderungen, Nebenwirkungen, Datenqualität und Zielkonflikte entscheidungsfähig.", "werkzeuge/impact-controlling/dossiers/scorecards/"],
@@ -281,10 +283,10 @@ function sectionTitle(id, text) {
   return `<h2 id="${id}">${escapeHtml(text)} ${citeAnchor(id)}</h2>`;
 }
 
-function page({ rel, title, description, searchSection, searchType = "Werkzeug", body, extraScript = "" }) {
+function page({ rel, title, description, searchSection, searchType = "Werkzeug", body, extraScript = "", extraScripts = [], canonicalUrl = "", robots = "", redirectTarget = "" }) {
   const route = routeFor(rel);
   const base = baseFor(rel);
-  const canonical = `${SITE}${route}`;
+  const canonical = canonicalUrl || `${SITE}${route}`;
   const out = path.join(ROOT, rel);
   fs.mkdirSync(path.dirname(out), { recursive: true });
   fs.writeFileSync(out, `<!doctype html>
@@ -298,6 +300,8 @@ function page({ rel, title, description, searchSection, searchType = "Werkzeug",
     <meta name="search_description" content="${escapeHtml(description)}">
     <meta name="search_section" content="${escapeHtml(searchSection)}">
     <meta name="search_type" content="${escapeHtml(searchType)}">
+    ${robots ? `<meta name="robots" content="${escapeHtml(robots)}">` : ""}
+    ${redirectTarget ? `<meta http-equiv="refresh" content="0; url=${escapeHtml(redirectTarget)}">` : ""}
     <link rel="canonical" href="${canonical}">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="de_DE">
@@ -330,7 +334,7 @@ function page({ rel, title, description, searchSection, searchType = "Werkzeug",
 ${body(base, route)}
     </main>
     <script src="${base}assets/js/main.js?v=20260612-mobile-table-fix"></script>
-    ${extraScript ? `<script src="${base}${extraScript}"></script>` : ""}
+    ${[extraScript, ...extraScripts].filter(Boolean).map((script) => `<script src="${base}${script}"></script>`).join("\n    ")}
   </body>
 </html>
 `, "utf8");
@@ -375,6 +379,7 @@ function dataTable(headers, rows) {
 
 function inlineMarkdown(value) {
   return escapeHtml(value)
+    .replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, '<a class="text-link" href="$2" target="_blank" rel="noopener noreferrer">$1 <span class="sr-only">(externe Quelle)</span></a>')
     .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
     .replace(/`([^`]+)`/g, "<code>$1</code>");
 }
@@ -384,6 +389,7 @@ function markdownBlocks(source, prefix) {
   const blocks = [];
   let paragraph = [];
   let list = [];
+  let table = [];
   const headings = [];
 
   const flushParagraph = () => {
@@ -396,14 +402,49 @@ function markdownBlocks(source, prefix) {
     blocks.push(`<ul>${list.map((item) => `<li>${inlineMarkdown(item)}</li>`).join("")}</ul>`);
     list = [];
   };
+  const flushTable = () => {
+    if (!table.length) return;
+    const rows = table.map((line) => line.trim().replace(/^\||\|$/g, "").split("|").map((cell) => cell.trim()));
+    const separator = rows[1] || [];
+    const hasHeader = rows.length > 1 && separator.length === rows[0].length && separator.every((cell) => /^:?-{3,}:?$/.test(cell));
+    if (!hasHeader) {
+      blocks.push(`<p>${table.map((line) => inlineMarkdown(line)).join(" ")}</p>`);
+      table = [];
+      return;
+    }
+    const header = rows[0];
+    const body = rows.slice(2);
+    blocks.push(`<div class="table-wrap"><table class="data-table"><thead><tr>${header.map((cell) => `<th>${inlineMarkdown(cell)}</th>`).join("")}</tr></thead><tbody>${body.map((row) => `<tr>${header.map((_, index) => `<td>${inlineMarkdown(row[index] || "")}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`);
+    table = [];
+  };
+  const flushBlocks = () => {
+    flushParagraph();
+    flushList();
+    flushTable();
+  };
 
+  // Die öffnende YAML-Zeile wird vor der Schleife entfernt. Sonst würde sie
+  // fälschlich zugleich als schließende Zeile gelesen und die Metadaten als
+  // Fließtext in der öffentlichen Onlinefassung erscheinen.
+  let inFrontmatter = lines[0]?.trim() === "---";
+  if (inFrontmatter) lines.shift();
   for (const rawLine of lines) {
     const line = rawLine.trimEnd();
-    if (!line.trim()) {
-      flushParagraph();
-      flushList();
+    if (inFrontmatter) {
+      if (line.trim() === "---") inFrontmatter = false;
       continue;
     }
+    if (!line.trim()) {
+      flushBlocks();
+      continue;
+    }
+    if (line.trimStart().startsWith("|")) {
+      flushParagraph();
+      flushList();
+      table.push(line);
+      continue;
+    }
+    flushTable();
     const heading = /^(#{1,4})\s+(.+)$/.exec(line);
     if (heading) {
       flushParagraph();
@@ -416,6 +457,20 @@ function markdownBlocks(source, prefix) {
       blocks.push(`<h${outputLevel} id="${id}">${inlineMarkdown(text)} ${citeAnchor(id)}</h${outputLevel}>`);
       continue;
     }
+    const quote = /^>\s*(.+)$/.exec(line);
+    if (quote) {
+      flushParagraph();
+      flushList();
+      blocks.push(`<aside class="citation-note" role="note"><p>${inlineMarkdown(quote[1])}</p></aside>`);
+      continue;
+    }
+    const displayFormula = /^\$\$\s*(.+?)\s*\$\$$/.exec(line);
+    if (displayFormula) {
+      flushParagraph();
+      flushList();
+      blocks.push(`<div class="formula-box"><p><code>${inlineMarkdown(displayFormula[1])}</code></p></div>`);
+      continue;
+    }
     const bullet = /^[-*]\s+(.+)$/.exec(line);
     if (bullet) {
       flushParagraph();
@@ -424,8 +479,7 @@ function markdownBlocks(source, prefix) {
     }
     paragraph.push(line.trim());
   }
-  flushParagraph();
-  flushList();
+  flushBlocks();
   return { html: blocks.join("\n"), headings };
 }
 
@@ -466,7 +520,7 @@ function toolGrid(base, selected = tools) {
         <p class="card-text"><strong>Warum hier relevant?</strong> ${escapeHtml(tool.why)}</p>
         <div class="portal-card-actions">
           <a class="text-link" href="${href(base, tool.href)}">Methodik lesen</a>
-          <a class="text-link" href="${href(base, tool.dossier)}">Dossier lesen</a>
+          <a class="text-link" href="${href(base, tool.dossier)}">${tool.dossier.includes("methodenpapiere/") ? "Rechenstandard lesen" : "Dossier lesen"}</a>
         </div>
       </article>`).join("")}
     </div>
@@ -575,8 +629,8 @@ function methodPaperCardGrid(base) {
       <p class="card-text">${escapeHtml(paper.subtitle)}</p>
       <div class="portal-card-actions">
         <a class="text-link" href="${href(base, `werkzeuge/impact-controlling/methodenpapiere/${paper.slug}/`)}">Methodenpapier lesen</a>
-        <a class="text-link" href="${href(base, paper.docx)}">DOCX</a>
-        <a class="text-link" href="${href(base, paper.pdf)}">PDF</a>
+        ${paper.docx && fileExists(paper.docx) ? `<a class="text-link" href="${href(base, paper.docx)}">DOCX</a>` : ""}
+        ${paper.pdf && fileExists(paper.pdf) ? `<a class="text-link" href="${href(base, paper.pdf)}">${escapeHtml(paper.pdfLabel || "PDF")}</a>` : ""}
       </div>
     </article>`).join("")}
   </div>`;
@@ -605,11 +659,37 @@ function impactCrossLinks(base) {
 
 function methodPaperDownloadItems(paper) {
   return [
-    { label: `${paper.title} DOCX`, href: paper.docx, required: true },
-    { label: `${paper.title} PDF`, href: paper.pdf, required: true },
+    ...(paper.docx && fileExists(paper.docx) ? [{ label: `${paper.title} DOCX`, href: paper.docx, required: true }] : []),
+    ...(paper.pdf && fileExists(paper.pdf) ? [{ label: `${paper.title} ${paper.pdfLabel || "PDF"}`, href: paper.pdf, required: true }] : []),
     { label: "Impact Controlling öffnen", href: "werkzeuge/impact-controlling/" },
     { label: "Impact-Controlling-Demo öffnen", href: "erleben/impact-controlling-rechner/" },
   ];
+}
+
+function methodPaperDownloadActions(base, paper) {
+  const actions = [];
+  if (paper.docx && fileExists(paper.docx)) actions.push(`<a class="btn btn-primary" href="${href(base, paper.docx)}">DOCX herunterladen</a>`);
+  if (paper.pdf && fileExists(paper.pdf)) actions.push(`<a class="btn btn-secondary" href="${href(base, paper.pdf)}">${escapeHtml(paper.pdfLabel || "PDF")} herunterladen</a>`);
+  return actions.join("");
+}
+
+function tsroiRechenstandardLink(base, className = "text-link", label = "T-SROI-Rechenstandard PDF v1.1") {
+  if (!currentTsroiRechenstandard?.pdf || !fileExists(currentTsroiRechenstandard.pdf)) return "";
+  return `<a class="${className}" href="${href(base, currentTsroiRechenstandard.pdf)}">${escapeHtml(label)}</a>`;
+}
+
+function tsroiRechenstandardSourceLink(base, className = "text-link") {
+  return `<a class="${className}" href="${href(base, "quellenarchiv/wok-q-1024/")}">Quellenarchiv WÖK-Q-1024</a>`;
+}
+
+function currentTsroiRechenstandardBlock(base, paper) {
+  if (!paper.currentMathStandard) return "";
+  return `<section class="section narrow"><aside class="citation-note" role="note">
+    <p class="card-kicker">Aktueller Rechenstandard</p>
+    <h2>Die Geldrechnung bleibt kausal und diskontiert</h2>
+    <p>Für aktuelle T-SROI-Rechnungen gelten getrennt belegte direkte und transformative Nutzenströme, Schäden innerhalb der Bilanzgrenze und ein Schutz-Gate. Freie Transformations-, Resilienz- oder Datenqualitätsmultiplikatoren gehören nicht in den Quotienten.</p>
+    <p>${tsroiRechenstandardLink(base, "text-link")} · ${tsroiRechenstandardSourceLink(base)}</p>
+  </aside></section>`;
 }
 
 function methodPapersForTool(title) {
@@ -638,7 +718,7 @@ function overviewPage() {
       title: "Impact Controlling",
       subtitle: "Wirkung sichtbar, bewertbar und entscheidungsrelevant machen.",
       text: "Impact Controlling ist der methodische Dachbereich der Wirkungsökonomie. Es verbindet WÖk-IDs, Scorecards, NWI, IOI, T-SROI, Datenqualität, Benchmarks und Wirkungsdatenräume.",
-      action: `<a class="btn btn-primary" href="${href(base, wirkungscontrollingDetailDossier.href)}">Neues Detailkonzept-Dossier lesen</a><a class="btn btn-secondary" href="${href(base, wirkungscontrollingDetailDossier.pdf)}">PDF herunterladen</a><a class="btn btn-secondary" href="${href(base, "werkzeuge/impact-controlling/dossier/")}">Gesamtdossier lesen</a>`,
+      action: `<a class="btn btn-primary" href="${href(base, wirkungscontrollingDetailDossier.href)}">T-SROI-Rechenstandard lesen</a>${tsroiRechenstandardLink(base, "btn btn-secondary", "T-SROI-Rechenstandard PDF v1.1")}<a class="btn btn-secondary" href="${href(base, "werkzeuge/impact-controlling/dossier/")}">Gesamtdossier lesen</a>`,
     })}
     <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
     <section class="section narrow">${statusMeta("Methodenportal / Online-Volltext")}</section>
@@ -663,10 +743,10 @@ function overviewPage() {
       </div>
       <div class="card-grid three">
         <article class="card">
-          <p class="card-kicker">Neu · Detailkonzept-Dossier v1.0</p>
+          <p class="card-kicker">Aktuelle Rechenfassung · v1.1</p>
           <h3 class="card-title">${escapeHtml(wirkungscontrollingDetailDossier.title)}</h3>
-          <p class="card-text">Planung, Messung, Bewertung, Steuerung und Rückkopplung von Wirkung für Mensch, Planet und Demokratie.</p>
-          <div class="portal-card-actions"><a class="text-link" href="${href(base, wirkungscontrollingDetailDossier.href)}">Online lesen</a><a class="text-link" href="${href(base, wirkungscontrollingDetailDossier.pdf)}">PDF</a></div>
+          <p class="card-text">Kausale, diskontierte Netto-Nutzenrechnung mit klarer Trennung von Profilwerten, Geldströmen und Schutz-Gate.</p>
+          <div class="portal-card-actions"><a class="text-link" href="${href(base, wirkungscontrollingDetailDossier.href)}">Rechenstandard lesen</a>${tsroiRechenstandardLink(base)}</div>
         </article>
         <article class="card">
           <p class="card-kicker">Arbeitspapier · CSRD-Brücke</p>
@@ -686,10 +766,10 @@ function overviewPage() {
       </div>
       <div class="card-grid three">
         <article class="card">
-          <p class="card-kicker">Neu · Detailkonzept-Dossier v1.0</p>
+          <p class="card-kicker">Aktuelle Rechenfassung · v1.1</p>
           <h3 class="card-title">${escapeHtml(wirkungscontrollingDetailDossier.title)}</h3>
           <p class="card-text">${escapeHtml(wirkungscontrollingDetailDossier.text)}</p>
-          <div class="portal-card-actions"><a class="text-link" href="${href(base, wirkungscontrollingDetailDossier.href)}">Dossier lesen</a><a class="text-link" href="${href(base, wirkungscontrollingDetailDossier.pdf)}">PDF</a></div>
+          <div class="portal-card-actions"><a class="text-link" href="${href(base, wirkungscontrollingDetailDossier.href)}">Rechenstandard lesen</a>${tsroiRechenstandardLink(base)}</div>
         </article>
         <article class="card">
           <p class="card-kicker">Arbeitspapier · Doppelte Wesentlichkeit</p>
@@ -759,10 +839,10 @@ function dossierOverview() {
         <p>Die Einzeldossiers vertiefen die Methodik. Jede Seite ist online lesbar, druckbar und mit Buchankern verbunden.</p>
         <div class="card-grid three">
           <article class="card">
-            <p class="card-kicker">Neu · Detailkonzept-Dossier v1.0</p>
+            <p class="card-kicker">Aktuelle Rechenfassung · v1.1</p>
             <h3 class="card-title">${escapeHtml(wirkungscontrollingDetailDossier.title)}</h3>
             <p class="card-text">${escapeHtml(wirkungscontrollingDetailDossier.text)}</p>
-            <div class="portal-card-actions"><a class="text-link" href="${href(base, wirkungscontrollingDetailDossier.href)}">Dossier lesen</a><a class="text-link" href="${href(base, wirkungscontrollingDetailDossier.pdf)}">PDF</a></div>
+            <div class="portal-card-actions"><a class="text-link" href="${href(base, wirkungscontrollingDetailDossier.href)}">Rechenstandard lesen</a>${tsroiRechenstandardLink(base)}</div>
           </article>${cardGrid(base, dossierPages.map(([slug, title, text]) => ({ title, text, href: `werkzeuge/impact-controlling/dossiers/${slug}/`, label: "Einzeldossier lesen" }))).replace(/^<div class="card-grid three">|<\/div>$/g, "")}
         </div>
         ${sectionTitle("methodik-demo", "Methodik und Demo-Grenzen")}
@@ -839,9 +919,10 @@ function methodPaperPages() {
         title: paper.title,
         subtitle: paper.subtitle,
         text: "Dieses Dokument ist ein ausführliches Methodenpapier für den Werkzeugbereich Impact Controlling. Es ist keine fachliche Ausarbeitung eines einzelnen Wirkungsfelds.",
-        action: `<a class="btn btn-primary" href="${href(base, paper.docx)}">DOCX herunterladen</a><a class="btn btn-secondary" href="${href(base, paper.pdf)}">PDF herunterladen</a>`,
+        action: methodPaperDownloadActions(base, paper),
       })}
       <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
+      ${currentTsroiRechenstandardBlock(base, paper)}
       <section class="section narrow">${tocFromHeadings(rendered.headings)}</section>
       <section class="section article-section" aria-labelledby="volltext">
         <article class="article-body fulltext-reader">
@@ -899,10 +980,10 @@ function singleDossiersIndexPage() {
       </div>
       <div class="card-grid three">
     <article class="card">
-      <p class="card-kicker">Neu · Detailkonzept-Dossier v1.0</p>
+      <p class="card-kicker">Aktuelle Rechenfassung · v1.1</p>
       <h3 class="card-title">${escapeHtml(wirkungscontrollingDetailDossier.title)}</h3>
       <p class="card-text">${escapeHtml(wirkungscontrollingDetailDossier.text)}</p>
-      <div class="portal-card-actions"><a class="text-link" href="${href(base, wirkungscontrollingDetailDossier.href)}">Dossier lesen</a><a class="text-link" href="${href(base, wirkungscontrollingDetailDossier.pdf)}">PDF</a></div>
+      <div class="portal-card-actions"><a class="text-link" href="${href(base, wirkungscontrollingDetailDossier.href)}">Rechenstandard lesen</a>${tsroiRechenstandardLink(base)}</div>
     </article>
     <article class="card">
       <p class="card-kicker">Arbeitspapier · CSRD-Brücke</p>
@@ -982,21 +1063,68 @@ function singleDossierPages() {
   }
 }
 
+function tsroiInteractiveExample() {
+  return `<section class="section product-calculator-section" id="interaktives-beispiel" aria-labelledby="tsroi-example-title">
+    <div class="product-calculator" data-tool-example-tsroi>
+      <div class="section-header">
+        <p class="hero-kicker">Rechenbeispiel</p>
+        ${sectionTitle("tsroi-example-title", "T-SROI Schritt für Schritt prüfen")}
+        <p>Das Beispiel rechnet nur gleichpreisige Euro-Ströme. Als Demo-Annahme gilt r = r_K; in einer Prüfung können Nutzen- und Ressourcendiskontsätze getrennt begründet werden. Es verwendet konstante Jahresströme und konstante Kausalfaktoren; eine reale Prüfung braucht gegebenenfalls Jahresreihen und Sensitivitäten. Der konservative Szenarioabschlag reduziert nur den beanspruchten Nutzen, nicht Schäden. Das Profil für Mensch, Planet und Demokratie und die Datenqualität bleiben als Schutzprüfung sichtbar. Ein freier Multiplikator kommt nicht vor.</p>
+      </div>
+      <div class="calculator-grid">
+        <form class="card calculator-form">
+          <label>Investition heute in EUR <input name="investment" type="number" min="0" step="1000" value="1000000"></label>
+          <label>Direkter Nutzen pro Jahr in EUR <input name="annualDirectBenefit" type="number" min="0" step="1000" value="500000"></label>
+          <label>Zusätzlich belegter transformativer Nutzen pro Jahr in EUR <input name="annualTransformativeBenefit" type="number" min="0" step="1000" value="200000"></label>
+          <label>Schäden pro Jahr in EUR <input name="annualHarm" type="number" min="0" step="1000" value="100000"></label>
+          <label>Zusätzliche Betriebskosten pro Jahr in EUR <input name="annualOperatingCost" type="number" min="0" step="1000" value="0"></label>
+          <label>Betrachtungszeitraum in Jahren <input name="years" type="number" min="1" max="30" step="1" value="2"></label>
+          <label>Diskontsatz in Prozent (Demo: r = r_K) <input name="discountRate" type="number" min="0" max="100" step="0.1" value="5"></label>
+          <label>Attribution in Prozent <input name="attribution" type="number" min="0" max="100" step="1" value="100"></label>
+          <label>Counterfactual / Deadweight in Prozent <input name="deadweight" type="number" min="0" max="100" step="1" value="0"></label>
+          <label>Verdrängung in Prozent <input name="displacement" type="number" min="0" max="100" step="1" value="0"></label>
+          <label>Pauschaler konservativer Szenarioabschlag in Prozent <input name="uncertainty" type="number" min="0" max="100" step="1" value="10"></label>
+          <label>Datenqualität (0 bis 1) <input name="dataQuality" type="number" min="0" max="1" step="0.05" value="0.8"></label>
+          <div class="score-inputs" aria-label="Schutzprofil">
+            <label>Mensch <input name="mensch" type="number" min="-3" max="3" step="1" value="2"></label>
+            <label>Planet <input name="planet" type="number" min="-3" max="3" step="1" value="1"></label>
+            <label>Demokratie <input name="demokratie" type="number" min="-3" max="3" step="1" value="1"></label>
+          </div>
+          <fieldset class="score-inputs" aria-label="Nachweise für das Schutz-Gate">
+            <legend>Nachweise für das Schutz-Gate</legend>
+            <label class="checkbox-row"><input name="systemBoundaryDefined" type="checkbox"> Systemgrenze, Zeitpunkt und Preisbasis sind für diese Modellrechnung dokumentiert.</label>
+            <label class="checkbox-row"><input name="attributionDefined" type="checkbox"> Kausalpfad, Attribution, Counterfactual und Verdrängung sind für diese Modellrechnung dokumentiert.</label>
+            <p class="muted">Die Häkchen kennzeichnen nur die Angaben dieser Rechenvorschau. Sie sind keine unabhängige Prüfung.</p>
+          </fieldset>
+          <label class="checkbox-row"><input name="redLineActive" type="checkbox"> Rote Linie aktiv</label>
+        </form>
+        <aside class="card calculator-result" aria-live="polite"><div data-tsroi-output></div></aside>
+      </div>
+    </div>
+  </section>`;
+}
+
 function toolExplanationPages() {
   for (const [rel, title, subtitle, description, dossier] of toolPages) {
     const relatedPapers = methodPapersForTool(title);
+    const isPublicTSROIPage = rel === "werkzeuge/t-sroi/index.html";
+    const resourceLabel = dossier.includes("methodenpapiere/") ? "Rechenstandard lesen" : "Dossier lesen";
     page({
       rel,
       title: `${title} | Wirkungsökonomie`,
       description,
       searchSection: "Werkzeuge",
       searchType: "Werkzeug",
+      extraScripts: isPublicTSROIPage ? [
+        "assets/js/impact-calculations.js?v=20260802-fail-closed-v2",
+        "assets/js/tool-examples-dashboard.js?v=20260802-fail-closed-v2",
+      ] : [],
       body: (base, route) => `${hero(base, {
         kicker: "Methodenregister",
         title,
         subtitle,
         text: description,
-        action: `<a class="btn btn-primary" href="${href(base, dossier)}">Dossier lesen</a>`,
+        action: `<a class="btn btn-primary" href="${href(base, dossier)}">${resourceLabel}</a>`,
       })}
       <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
       <section class="section narrow">${statusMeta("Methodenseite / Webfassung")}</section>
@@ -1007,6 +1135,7 @@ function toolExplanationPages() {
           <article class="card" id="grenze"><p class="card-kicker">Grenze</p><h2 class="card-title">Nicht als Schönrechnung ${citeAnchor("grenze")}</h2><p class="card-text">Das Werkzeug darf negative Wirkung, Datenlücken oder rote Linien nicht verdecken.</p></article>
         </div>
       </section>
+      ${isPublicTSROIPage ? tsroiInteractiveExample() : ""}
       ${relatedPapers.length ? `<section class="section" aria-labelledby="methodenpapier">
         <div class="section-header">
           <p class="hero-kicker">Methodenpapier</p>
@@ -1019,8 +1148,8 @@ function toolExplanationPages() {
           <p class="card-text">${escapeHtml(paper.subtitle)}</p>
           <div class="portal-card-actions">
             <a class="text-link" href="${href(base, `werkzeuge/impact-controlling/methodenpapiere/${paper.slug}/`)}">Methodenpapier lesen</a>
-            <a class="text-link" href="${href(base, paper.docx)}">DOCX</a>
-            <a class="text-link" href="${href(base, paper.pdf)}">PDF</a>
+            ${paper.docx && fileExists(paper.docx) ? `<a class="text-link" href="${href(base, paper.docx)}">DOCX</a>` : ""}
+            ${paper.pdf && fileExists(paper.pdf) ? `<a class="text-link" href="${href(base, paper.pdf)}">${escapeHtml(paper.pdfLabel || "PDF")}</a>` : ""}
           </div>
         </article>`).join("")}</div>
       </section>` : ""}
@@ -1031,12 +1160,27 @@ function toolExplanationPages() {
     ${sdgBlock()}
       ${bookBlock(base)}
       ${downloadBlock(base, [
-        { label: "Einzeldossier lesen", href: dossier },
+        { label: resourceLabel, href: dossier },
         { label: "Gesamtdossier öffnen", href: "werkzeuge/impact-controlling/dossier/" },
         ...relatedPapers.flatMap(methodPaperDownloadItems),
       ])}`,
     });
   }
+}
+
+function tsroiLegacyAliasPage() {
+  const destination = `${SITE}/werkzeuge/t-sroi/`;
+  page({
+    rel: "werkzeuge/impact-controlling/t-sroi/index.html",
+    title: "T-SROI – weiter zur führenden Toolseite | Wirkungsökonomie",
+    description: "Diese frühere Werkzeugadresse führt zur aktuellen T-SROI-Toolseite mit Rechenbeispiel und Rechenstandard.",
+    searchSection: "Werkzeuge",
+    searchType: "Weiterleitung",
+    canonicalUrl: destination,
+    robots: "noindex,follow",
+    redirectTarget: destination,
+    body: (base) => `<section class="section narrow"><article class="article-body"><h1>T-SROI</h1><p>Diese frühere Adresse wurde auf die führende T-SROI-Toolseite zusammengeführt.</p><p><a class="btn btn-primary" href="${href(base, "werkzeuge/t-sroi/")}">Zur T-SROI-Toolseite</a></p></article></section>`,
+  });
 }
 
 function calculatorPage() {
@@ -1048,7 +1192,10 @@ function calculatorPage() {
     description,
     searchSection: "Erleben",
     searchType: "Demo",
-    extraScript: "assets/js/impact-controlling-rechner.js?v=20260612-ioi-result-fix",
+    extraScripts: [
+      "assets/js/impact-calculations.js?v=20260802-fail-closed-v2",
+      "assets/js/impact-controlling-rechner.js?v=20260802-fail-closed-v2",
+    ],
     body: (base, route) => `${hero(base, {
       kicker: "Demo",
       title: "Impact-Controlling-Rechner",
@@ -1063,7 +1210,7 @@ function calculatorPage() {
         <div class="section-header">
           <p class="hero-kicker">Rechner</p>
           ${sectionTitle("impact-calculator-title", "Impact Controlling simulieren")}
-          <p>Scores sind von -3 bis +3 modelliert. Der FinalScore folgt der schwächsten Kernwirkung; der NWI zeigt eine einfache Netto-Differenz. IOI zeigt die positive Netto-Wirkung je investiertem Euro; T-SROI bleibt eine Demonstrationsquote.</p>
+          <p>Erst wird geprüft, ob die Schutzbedingungen erfüllt sind. Dann werden kausal zugerechnete Nutzen und Schäden in derselben Euro-Preisbasis abgezinst. Die drei Profilfelder und die Datenqualität bleiben getrennt: Reichweite, Datenqualität oder ein guter Wert in einem anderen Feld heben keinen Schaden auf. Der NWI ist ein eigener Profilwert mit eigenem Schutz-Gate; er braucht keinen Euro-Nenner. Der konservative Szenarioabschlag reduziert ausschließlich beanspruchte Nutzen, nicht Schäden. Die Demo setzt zur Vereinfachung r = r_K sowie konstante Jahresströme und Kausalfaktoren; in einer Prüfung können Nutzen- und Ressourcendiskontsätze getrennt begründet und Jahresreihen verwendet werden.</p>
         </div>
         <div class="calculator-grid">
           <form class="card calculator-form">
@@ -1074,20 +1221,54 @@ function calculatorPage() {
                 <option value="lieferkette">Lieferkettenprogramm</option>
               </select>
             </label>
-            <label>Investition in EUR
-              <input name="investment" type="number" min="0" step="1000" value="100000">
+            <label>Investition heute in EUR
+              <input name="investment" type="number" min="0" step="1000" value="1000000">
             </label>
-            <label>Jährlicher Wirkungswert in EUR
-              <input name="annualValue" type="number" min="0" step="1000" value="160000">
+            <label>Direkter jährlicher Nutzen in EUR
+              <input name="annualDirectBenefit" type="number" min="0" step="1000" value="500000">
+            </label>
+            <label>Zusätzlich belegter transformativer Nutzen pro Jahr in EUR
+              <input name="annualTransformativeBenefit" type="number" min="0" step="1000" value="200000">
+            </label>
+            <label>Jährliche Schäden in EUR
+              <input name="annualHarm" type="number" min="0" step="1000" value="100000">
+            </label>
+            <label>Zusätzliche Betriebskosten pro Jahr in EUR
+              <input name="annualOperatingCost" type="number" min="0" step="1000" value="0">
             </label>
             <label>Wirkungsdauer in Jahren
-              <input name="years" type="number" min="1" max="20" step="1" value="3">
+              <input name="years" type="number" min="1" max="20" step="1" value="2">
+            </label>
+            <label>Diskontsatz in Prozent (Demo: r = r_K)
+              <input name="discountRate" type="number" min="0" max="100" step="0.1" value="5">
+            </label>
+            <label>Attribution in Prozent
+              <input name="attribution" type="number" min="0" max="100" step="1" value="100">
+            </label>
+            <label>Counterfactual / Deadweight in Prozent
+              <input name="deadweight" type="number" min="0" max="100" step="1" value="0">
+            </label>
+            <label>Verdrängung in Prozent
+              <input name="displacement" type="number" min="0" max="100" step="1" value="0">
+            </label>
+            <label>Pauschaler konservativer Szenarioabschlag in Prozent
+              <input name="uncertainty" type="number" min="0" max="100" step="1" value="10">
+            </label>
+            <label>Datenqualität (0 bis 1)
+              <input name="dataQuality" type="number" min="0" max="1" step="0.05" value="0.8">
             </label>
             <div class="score-inputs" aria-label="Scorecard-Scores">
-              ${["mensch", "planet", "demokratie", "daten"].map((field) => `<label>${field[0].toUpperCase()}${field.slice(1)}
+              ${["mensch", "planet", "demokratie"].map((field) => `<label>${field[0].toUpperCase()}${field.slice(1)}
                 <input name="${field}" type="number" min="-3" max="3" step="1" value="0">
               </label>`).join("")}
             </div>
+            <fieldset class="score-inputs" aria-label="Nachweise für das Schutz-Gate">
+              <legend>Nachweise für das Schutz-Gate</legend>
+              <label class="checkbox-row"><input name="systemBoundaryDefined" type="checkbox"> Systemgrenze, Zeitpunkt und Preisbasis sind für diese Modellrechnung dokumentiert.</label>
+              <label class="checkbox-row"><input name="attributionDefined" type="checkbox"> Kausalpfad, Attribution, Counterfactual und Verdrängung sind für diese Modellrechnung dokumentiert.</label>
+              <p class="muted">Die Häkchen kennzeichnen nur die Angaben dieser Rechenvorschau. Sie sind keine unabhängige Prüfung.</p>
+            </fieldset>
+            <label class="checkbox-row"><input name="redLine" type="checkbox"> Rote Linie aktiv</label>
           </form>
           <aside class="card calculator-result" aria-live="polite">
             <p class="card-kicker">Ergebnis</p>
@@ -1101,25 +1282,31 @@ function calculatorPage() {
               <article class="calculator-metric" role="listitem">
                 <span>NWI Demo</span>
                 <strong data-impact-result="nwi">0,00</strong>
-                <small>Netto-Differenz der Scores</small>
+                <small>gleichgewichteter Profilwert, kein Geldwert</small>
+              </article>
+              <article class="calculator-metric" role="listitem">
+                <span>Schutz-Gate</span>
+                <strong data-impact-result="gate">blockiert</strong>
+                <small>RMO, Daten, Grenze, Zurechnung</small>
               </article>
               <article class="calculator-metric" role="listitem">
                 <span>IOI Demo</span>
-                <strong data-impact-result="ioi">0,00</strong>
-                <small>positive Netto-Wirkung je Euro</small>
+                <strong data-impact-result="ioi">blockiert</strong>
+                <small>direkter Netto-Nutzen je Ressourceneuro</small>
               </article>
               <article class="calculator-metric" role="listitem">
                 <span>T-SROI Demo</span>
-                <strong data-impact-result="tsroi">0,00 : 1</strong>
-                <small>Wirkungswert zu Investition</small>
+                <strong data-impact-result="tsroi">blockiert</strong>
+                <small>diskontierter Netto-Nutzen je Ressourceneuro</small>
               </article>
               <article class="calculator-metric calculator-metric--wide" role="listitem">
-                <span>Wirkungswert gesamt</span>
+                <span>Diskontierter Netto-Nutzen</span>
                 <strong data-impact-result="totalValue">0 EUR</strong>
-                <small data-impact-result="positiveNetValue">positive Netto-Wirkung: 0 EUR</small>
+                <small data-impact-result="positiveNetValue">konservative Szenario-Untergrenze: 0 EUR</small>
               </article>
             </div>
             <p data-impact-result="explanation">Modellhafte Demonstration.</p>
+            <ol class="impact-calc-steps" data-impact-result="steps"></ol>
             <p class="scanner-notice"><strong>Hinweis:</strong> Modellhafte Demonstration. Keine Prüfung, keine Investitionsberatung, keine amtliche Einstufung.</p>
           </aside>
         </div>
@@ -1217,7 +1404,6 @@ function updateSitemap() {
     wirkungscontrollingDetailDossier.href,
     ...dossierPages.map(([slug]) => `werkzeuge/impact-controlling/dossiers/${slug}/`),
     "werkzeuge/impact-controlling/impact-of-investment/",
-    "werkzeuge/impact-controlling/t-sroi/",
     "werkzeuge/t-sroi/",
     "werkzeuge/netto-wirkungs-index/",
     "werkzeuge/woek-ids/",
@@ -1249,6 +1435,7 @@ methodPaperPages();
 singleDossiersIndexPage();
 singleDossierPages();
 toolExplanationPages();
+tsroiLegacyAliasPage();
 calculatorPage();
   workshopPages();
   updateSitemap();

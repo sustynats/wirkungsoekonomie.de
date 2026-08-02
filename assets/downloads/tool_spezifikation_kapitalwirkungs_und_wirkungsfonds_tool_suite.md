@@ -48,13 +48,15 @@ Die Tool-Suite macht Kapitalwirkung modellhaft sichtbar. Sie ist keine Anlageber
 ## Modellhafte Ergebnisgrößen
 
 - Kapitalwirkungsprofil
-- NWI
-- Transformationsmultiplikator
-- T-SROI-light
-- Resilienzscore
+- NWI nur bei offenem Schutz-Gate
+- Prüfstatus des Transformationspfads (kein Rechenmultiplikator)
+- T-SROI nach Rechenstandard v1.1 – nur bei belegten Euro-Nutzen- und Schadenströmen sowie offenem Schutz-Gate
+- Resilienz- und Wirkpfad-Evidenz
 - Stranded-Asset-Risiko
 - Datenqualitätsstufe
-- mögliche Rückkopplung: Bonus, Malus, Fondsfähigkeit, Kreditkondition, Versicherbarkeitsverbesserung, Steuerbezug
+- mögliche institutionelle Rückkopplung: Bonus, Malus, Fondsfähigkeit, Kreditkondition, Versicherbarkeitsverbesserung oder Steuerbezug – jeweils nur nach zuständiger, rechtsgebundener Entscheidung
+
+Ein Profilwert, ein NWI und ein T-SROI beantworten unterschiedliche Fragen. Der Profilwert fasst dimensionsgleiche Scores zusammen. Der NWI darf nur bei erfüllten roten Linien, klarer Systemgrenze, Zurechnung und ausreichender Evidenz ausgewiesen werden. T-SROI setzt zusätzlich voraus, dass direkter und transformativer Nutzen, Schäden sowie Ressourcen in Euro derselben Preisbasis vorliegen. Reichweite, Resilienz, Diffusion und Datenqualität sind wichtige Wirkpfad- oder Evidenzangaben; sie erhöhen keinen Geldwert von selbst.
 
 ## Schutzlinien
 

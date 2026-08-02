@@ -48,7 +48,7 @@ const methodTerms = methods.methods.map((method) => {
     action: "Neu anlegen oder fachlich synchronisieren | Priorität A",
     section: `WÖMS 2.0 · Kernmethoden · Kategorie ${method.kategorie}`,
     Kurzdefinition: method.zweck,
-    "WÖk-Verwendung": `${method.id} gehört zur Kategorie „${method.kategorieName}“. Verbindlicher Output: ${method.outputs.join(" ")}`,
+    "WÖk-Verwendung": `${method.id} gehört zur Kategorie „${method.kategorieName}“. Erwartetes Arbeitsergebnis: ${method.outputs.join(" ")}`,
     Abgrenzung: method.schutzregeln.slice(0, 2).join(" ") || "Die Methode ist eine versionierte Entscheidungsgrundlage und kein automatischer Wirkungsnachweis.",
     Querverweise: [...new Set([...related, "Wirkungsökonomisches Methodensystem", "Wirkungsökonomisches Managementmodell"])],
     Quellenhinweise: `Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 2.0, Methode ${method.id}, DOCX-Seite ${method.docxSeite}.`
@@ -125,9 +125,9 @@ const coreTerms = [
   {
     title: "WÖMS-Methodenkarte",
     section: "WÖMS 2.0 · Methodensystem",
-    Kurzdefinition: "Eine WÖMS-Methodenkarte dokumentiert Zweck, Einsatzrahmen, Inputs, Schritte, Output, Schnittstellen, Canvas-Spezifikation, Qualitäts- und Schutzregeln einer Methode.",
-    "WÖk-Verwendung": "Sie ist der standardisierte, versionierbare Datensatz für Anwendung, Ausbildung, Prüfung und Assurance.",
-    Abgrenzung: "Keine bloße Moderationskarte und kein Ersatz fachlicher Evidenz.",
+    Kurzdefinition: "Eine WÖMS-Methodenkarte beschreibt Zweck, Einsatzrahmen, benötigte Informationen, Arbeitsschritte, erwartete Arbeitsergebnisse, Schnittstellen, Formularfelder sowie Qualitäts- und Schutzregeln einer Methode.",
+    "WÖk-Verwendung": "Sie schafft eine einheitliche Grundlage für Anwendung, Ausbildung, fachliche Prüfung und Qualitätssicherung.",
+    Abgrenzung: "Keine bloße Moderationshilfe und kein Ersatz für fachliche Evidenz.",
     Querverweise: "Wirkungsökonomisches Methodensystem, WÖMS-Methodenregister, Canvas-Mindeststandard"
   },
   {
@@ -181,9 +181,9 @@ const coreTerms = [
   {
     title: "Wirkungsrealisierungsarchitektur",
     section: "WÖMM 2.0 · Wirkungsrealisierung",
-    Kurzdefinition: "Die Wirkungsrealisierungsarchitektur verbindet Wirkungsziele mit Capabilities, Wertströmen, Prozessen, Operating Model, Daten, Technologie, Delivery, Change und Adoption.",
-    "WÖk-Verwendung": "Sie schließt die Managementkette zwischen strategischer Wirkungsabsicht und tatsächlich eingetretener, dauerhaft verfügbarer Zustandsveränderung.",
-    Abgrenzung: "Weder Projektplan noch Organigramm; Outputs und installierte Systeme gelten ohne Nutzung, Adoption, Benefit und Wirkungsrückkopplung nicht als realisierte Wirkung.",
+    Kurzdefinition: "Die Wirkungsrealisierungsarchitektur verbindet Wirkungsziele mit Fähigkeiten, Wertströmen, Prozessen, Betriebsmodell, Daten, Technologie, Umsetzung sowie Einführung und tatsächlicher Nutzung.",
+    "WÖk-Verwendung": "Sie verbindet die strategische Wirkungsabsicht mit den Voraussetzungen dafür, dass eine Zustandsveränderung tatsächlich eintritt und dauerhaft verfügbar bleibt.",
+    Abgrenzung: "Sie ist weder Projektplan noch Organigramm. Erbrachte Leistungen und eingeführte Systeme sind noch keine realisierte Wirkung, solange sie nicht tatsächlich genutzt werden, Nutzen schaffen und in eine Wirkungsrückkopplung einfließen.",
     Querverweise: "Wirkungsökonomisches Managementmodell, Wirkungs-Capability, Wirkungswertstrom, Impact & Benefits Realization, Wirkungsrückkopplung"
   },
   {

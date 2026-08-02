@@ -120,7 +120,7 @@ const demos = [
     title: "Automatisierungs- und Wirkungseinkommensrechner",
     shows: "Wie Automatisierung, Maschinenleistung, Fondslogik, Übergangsschutz und Wirkungseinkommen modellhaft zusammengedacht werden.",
     methods: [{ label: "Automatisierungsdividende", href: "werkzeuge/automatisierungsdividende/" }, { label: "Wirkungsfonds", href: "werkzeuge/wirkungsfonds/" }, { label: "Wirkungseinkommensteuer", href: "werkzeuge/wirkungseinkommensteuer/" }],
-    docs: [{ label: "Arbeit & Einkommen", href: "wirkungsfelder/arbeit-einkommen/" }, { label: "Wenn Maschinen arbeiten", href: "dokumente/wenn-maschinen-arbeiten/" }],
+    docs: [{ label: "Arbeit & Einkommen", href: "wirkungsfelder/arbeit-einkommen/" }, { label: "Arbeit, Automatisierung und Maschinenleistung", href: "referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/" }],
     next: [{ label: "Arbeit & Einkommen", href: "wirkungsfelder/arbeit-einkommen/" }, { label: "Wirkungsfonds", href: "werkzeuge/wirkungsfonds/" }],
   },
   {

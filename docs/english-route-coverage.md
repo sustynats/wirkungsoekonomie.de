@@ -8,30 +8,30 @@ Every visible public German route needs an English counterpart below `/en/` with
 
 ## Summary
 
-- Public visible source routes: 15084
+- Public visible source routes: 14749
 - English routes already present: 8
-- English routes missing: 15076
+- English routes missing: 14741
 
 ## Categories
 
 | Category | Total | Available | Missing |
 | --- | ---: | ---: | ---: |
-| bibliothek | 7899 | 1 | 7898 |
-| begriffe | 2058 | 0 | 2058 |
+| bibliothek | 7581 | 1 | 7580 |
+| begriffe | 2073 | 0 | 2073 |
 | referenz | 1662 | 0 | 1662 |
 | quellenarchiv | 1024 | 0 | 1024 |
 | woek-id-register | 624 | 0 | 624 |
 | wirkungsradar | 594 | 0 | 594 |
-| wirkungsfelder | 265 | 0 | 265 |
+| wirkungsfelder | 240 | 0 | 240 |
 | portale | 179 | 0 | 179 |
 | methodenraum | 157 | 0 | 157 |
 | blog | 153 | 0 | 153 |
-| werkzeuge | 97 | 1 | 96 |
+| werkzeuge | 95 | 1 | 94 |
 | werkstatt | 66 | 0 | 66 |
 | verstehen | 51 | 0 | 51 |
-| api | 39 | 0 | 39 |
-| dokumente | 26 | 0 | 26 |
+| api | 38 | 0 | 38 |
 | erleben | 25 | 0 | 25 |
+| dokumente | 22 | 0 | 22 |
 | top-level | 21 | 1 | 20 |
 | wirkungssteuerung | 20 | 0 | 20 |
 | fuer | 18 | 0 | 18 |
@@ -92,7 +92,6 @@ Every visible public German route needs an English counterpart below `/en/` with
 | `/api/v1/glossary/` | `/en/api/v1/glossary/` | api | WÖk API · Daten |
 | `/api/v1/` | `/en/api/v1/` | api | WÖk API · Daten |
 | `/api/v1/methods/` | `/en/api/v1/methods/` | api | WÖk API · woems-methoden-registry |
-| `/api/v1/production/` | `/en/api/v1/production/` | api | WÖk API · Daten |
 | `/api/v1/sdg-plus/` | `/en/api/v1/sdg-plus/` | api | WÖk API · Daten |
 | `/api/v1/search/` | `/en/api/v1/search/` | api | WÖk API · Daten |
 | `/api/v1/wirkungsradar/` | `/en/api/v1/wirkungsradar/` | api | WÖk API · Daten |
@@ -156,3 +155,4 @@ Every visible public German route needs an English counterpart below `/en/` with
 | `/begriffe/alltagsrassismus/` | `/en/begriffe/alltagsrassismus/` | begriffe | Alltagsrassismus \| Glossar der Wirkungsökonomie |
 | `/begriffe/amartya-sen/` | `/en/begriffe/amartya-sen/` | begriffe | Amartya Sen \| Glossar der Wirkungsökonomie |
 | `/begriffe/amathia/` | `/en/begriffe/amathia/` | begriffe | Amathia \| Glossar der Wirkungsökonomie |
+| `/begriffe/ambiguitaetsintoleranz/` | `/en/begriffe/ambiguitaetsintoleranz/` | begriffe | Ambiguitätsintoleranz \| Glossar der Wirkungsökonomie |

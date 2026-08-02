@@ -550,7 +550,7 @@ function detailPage(rank, topic, detailHtml, detailToc) {
       <section class="section narrow">${readingNotice("Detailkonzept")}</section>
       <section class="section narrow">${metaCard("Korrekturfassung / vollständiges Detailkonzept")}</section>
       <section class="section narrow">${tocBlock(fullToc)}</section>
-      <section class="section article-section"><article class="article-body fulltext-reader">${detailSupplement(rank, title, summary)}${heading(2, "kompendiumsauszug", "Auszug aus der umfangreichen Korrekturfassung")}${detailHtml}</article></section>
+      <section class="section article-section"><article class="article-body fulltext-reader">${detailSupplement(rank, title, summary)}${heading(2, "kompendiumsauszug", "Fachliche Vertiefung")}${detailHtml}</article></section>
       ${politicalBlock()}
       ${toolsBlock(base)}
       ${referenceBlock(base, rank)}
@@ -609,6 +609,9 @@ function indexPage(rank) {
 }
 
 function workshopPage(rank) {
+  const isProductArchive = rank.id === "products";
+  const overviewTarget = isProductArchive ? rank.portal : `${rank.base}/detailkonzepte/`;
+  const overviewLabel = isProductArchive ? "Aktuelle Vertiefungen" : "Detailkonzepte";
   page({
     rel: `${rank.workshop}index.html`,
     title: `${rank.label} in der Arbeitsbibliothek | Wirkungsökonomie`,
@@ -619,8 +622,13 @@ function workshopPage(rank) {
       <section class="section narrow"><aside class="citation-note" role="note"><p class="card-kicker">Werkstatt</p><h2>Öffentlich lesbare Arbeitsbibliothek</h2><p>Diese Seite bündelt die Webfassungen und Exportdateien des Bereichs.</p></aside></section>
       <section class="section"><div class="card-grid three">
         <article class="card"><p class="card-kicker">Übersicht</p><h3>${escapeHtml(rank.label)}</h3><p>Einstieg und Kontextzugang.</p><a class="text-link" href="${href(base, rank.portal)}">Zur Übersicht</a></article>
-        <article class="card"><p class="card-kicker">Detailkonzepte</p><h3>Langfassungen</h3><p>Alle Unterbereiche als öffentliche Webfassung.</p><a class="text-link" href="${href(base, `${rank.base}/detailkonzepte/`)}">Detailkonzepte öffnen</a></article>
-        ${rank.topics.map(([slug, title, summary]) => `<article class="card"><p class="card-kicker">Unterbereich</p><h3>${escapeHtml(title)}</h3><p>${escapeHtml(summary)}</p><a class="text-link" href="${href(base, `${rank.base}/detailkonzepte/${slug}/`)}">Detailkonzept lesen</a></article>`).join("")}
+        <article class="card"><p class="card-kicker">${overviewLabel}</p><h3>Langfassungen</h3><p>Alle Unterbereiche als öffentliche Webfassung.</p><a class="text-link" href="${href(base, overviewTarget)}">${overviewLabel} öffnen</a></article>
+        ${rank.topics.map(([slug, title, summary]) => {
+          const target = isProductArchive ? productCurrentRoutes[slug] || rank.portal : `${rank.base}/detailkonzepte/${slug}/`;
+          const text = isProductArchive ? "Aktuelle v1.1-Fassung mit Prüfpfad, Datenqualität und klarer Trennung von Befund und Rechtsfolge." : summary;
+          const label = isProductArchive ? "Aktuelle Fassung öffnen" : "Detailkonzept lesen";
+          return `<article class="card"><p class="card-kicker">Unterbereich</p><h3>${escapeHtml(title)}</h3><p>${escapeHtml(text)}</p><a class="text-link" href="${href(base, target)}">${label}</a></article>`;
+        }).join("")}
       </div></section>
       ${downloadBlock(base, rank)}`,
   });
@@ -638,6 +646,76 @@ function buildRank(rank) {
     });
     detailPage(rank, topic, rendered.html, rendered.toc);
     dossierPage(rank, topic);
+  }
+}
+
+const productCurrentRoutes = {
+  "produktwirkung-produktlebenszyklus": "wirkungsfelder/produkte-konsum/produkte-als-wirkungstraeger/",
+  "produktbesteuerung-durch-wirkung": "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/",
+  "wirkungsumsatzsteuer": "wirkungsfelder/produkte-konsum/wirkungsumsatzsteuer-produktwirkungssteuer/",
+  "produktscorecards": "wirkungsfelder/produkte-konsum/produktscorecards-reverse-merit-order-digitale-produktpaesse/",
+  "woek-ids-im-produktbereich": "werkzeuge/woek-ids/",
+  "reverse-merit-order": "werkzeuge/reverse-merit-order/",
+  "apfelbeispiel": "wirkungsfelder/produkte-konsum/apfelbeispiel-produktwirkungsrechnung/",
+  "lieferketten": "wirkungsfelder/produkte-konsum/lieferketten-importlogik-wirkungsvorsteuer/",
+  "basf-polyamid": "wirkungsfelder/produkte-konsum/konzernbeispiel-csrd-produktscorecard/",
+  "verbraucherinformation": "wirkungsfelder/produkte-konsum/verbraucherinformation/",
+  "unternehmen-produktentwicklung": "wirkungsfelder/produkte-konsum/unternehmen/",
+  "politische-rahmenbedingungen": "wirkungsfelder/produkte-konsum/politische-rahmenbedingungen/",
+};
+
+function productLegacyPage({ rel, title, target, index = false }) {
+  const base = baseFor(rel);
+  const canonical = `${SITE}/${target}`;
+  const targetHref = href(base, target);
+  write(rel, `<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>${escapeHtml(title)}: historische Adresse | Wirkungsökonomie</title>
+    <meta name="description" content="Historische Adresse. Der aktuelle Methodenstand ist in der verlinkten v1.1-Fassung dokumentiert.">
+    <meta name="robots" content="noindex,follow">
+    <link rel="canonical" href="${canonical}">
+    <link rel="icon" href="${base}assets/img/brand/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="${base}assets/css/style.css?v=20260802-produktarchiv-v11">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="${base}index.html" aria-label="Wirkungsökonomie Startseite"><span class="brand-mark"><img src="${base}assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span><span class="brand-name">Wirkungsökonomie</span></a>
+      <nav class="site-nav" aria-label="Hauptnavigation"><a href="${base}wirkungsfelder/produkte-konsum/">Produkte &amp; Konsum</a></nav>
+    </header>
+    <main>
+      <section class="hero portal-hero"><div class="hero-content">
+        <nav class="breadcrumb"><a href="${base}index.html">Start</a> / <a href="${base}wirkungsfelder/produkte-konsum/">Produkte &amp; Konsum</a> / Historische Adresse</nav>
+        <p class="hero-kicker">Archivhinweis</p>
+        <h1>${escapeHtml(index ? "Frühere Detailkonzept-Übersicht" : title)}</h1>
+        <p class="hero-subtitle">Diese Adresse gehört zu einer früheren Seitenstruktur und ist nicht der aktuelle Methodenstand.</p>
+        <p>Damit niemand mit einem alten Fahrplan losfährt: Die aktuelle v1.1-Fassung trennt Befund, Prüfstatus, politische Tarifentscheidung und Preisrechnung sauber.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="${targetHref}">Aktuelle Fassung v1.1 öffnen</a></div>
+      </div></section>
+      <section class="section narrow"><aside class="citation-note" role="note"><p class="card-kicker">Was heute gilt</p><h2>Der Prüfpfad in vier Schritten</h2><ol><li>Eine Scorecard beschreibt das Wirkungsprofil, die Datenqualität und offene Grenzen.</li><li>Reverse Merit Order macht kritische Befunde sichtbar; gute Teilwerte heben schwere Schäden nicht auf.</li><li>Ein möglicher Tarif <code>t</code> braucht eine eigenständige demokratische und rechtliche Regel. Er wird nicht aus einem Score berechnet.</li><li>Erst danach ist die Preisrechnung klein und überprüfbar: <code>P_brutto = P_netto × (1 + t)</code>.</li></ol><p>Wirkung ist eine tatsächliche Zustandsveränderung. Wirkungspotenzial und Wirkungsrisiko bleiben davon getrennt.</p></aside></section>
+      <section class="section narrow"><div class="card"><h2>Warum diese Seite bleibt</h2><p>Alte Links sollen nicht ins Leere führen. Diese Archivseite leitet deshalb zur fachlich führenden Fassung weiter, ist aber mit <code>noindex, follow</code> aus der Suche herausgenommen.</p><p><a class="text-link" href="${targetHref}">Zur aktuellen Fassung v1.1</a></p></div></section>
+    </main>
+    <script src="${base}assets/js/main.js?v=20260802-produktarchiv-v11"></script>
+  </body>
+</html>
+`);
+}
+
+function archiveProductLegacyRoutes() {
+  const products = ranks.find((rank) => rank.id === "products");
+  if (!products) return;
+  productLegacyPage({
+    rel: `${products.base}/detailkonzepte/index.html`,
+    title: "Detailkonzepte Produkte & Konsum",
+    target: products.portal,
+    index: true,
+  });
+  for (const [slug, title] of products.topics) {
+    const target = productCurrentRoutes[slug] || products.portal;
+    productLegacyPage({ rel: `${products.base}/detailkonzepte/${slug}/index.html`, title, target });
+    productLegacyPage({ rel: `${products.dossierBase}/${slug}/index.html`, title: `Früheres Dossier: ${title}`, target });
   }
 }
 
@@ -706,13 +784,20 @@ function updateSitemap() {
   if (!fs.existsSync(sitemap)) return;
   let xml = fs.readFileSync(sitemap, "utf8");
   const urls = [];
+  const retiredProductUrls = ["wirkungsfelder/produkte-konsum/detailkonzepte/"];
   for (const rank of ranks) {
+    if (rank.id === "products") {
+      for (const [slug] of rank.topics) {
+        retiredProductUrls.push(`${rank.base}/detailkonzepte/${slug}/`, dossierHref(rank, slug));
+      }
+      continue;
+    }
     urls.push(`${rank.base}/detailkonzepte/`, rank.workshop);
     for (const [slug] of rank.topics) {
       urls.push(`${rank.base}/detailkonzepte/${slug}/`, dossierHref(rank, slug));
     }
   }
-  for (const rel of urls) {
+  for (const rel of [...urls, ...retiredProductUrls]) {
     const loc = `${SITE}/${rel}`;
     xml = xml.replace(new RegExp(`\\s*<url>\\s*<loc>${loc.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}</loc>\\s*<lastmod>[^<]+</lastmod>\\s*</url>`, "g"), "");
   }
@@ -721,6 +806,7 @@ function updateSitemap() {
 }
 
 for (const rank of ranks) buildRank(rank);
+archiveProductLegacyRoutes();
 sanitizePublicHtml();
 updatePackageScripts();
 updateSitemap();

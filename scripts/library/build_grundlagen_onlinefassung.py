@@ -62,6 +62,11 @@ def esc(s):
     return html.escape(s, quote=True)
 
 
+def chapter_slug(chapter):
+    """Liefert die stabile Kapitelroute, auch bevor ein Kapitel geschrieben ist."""
+    return chapter.get("slug") or f'{chapter["idx"]:02d}-{slugify(chapter["title"])[:60]}'
+
+
 HEADER = '''    <header class="site-header" data-search-exclude>
       <a class="brand" href="{r}index.html" aria-label="Wirkungsökonomie Startseite">
         <span class="brand-mark"><img src="{r}assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span>
@@ -206,9 +211,9 @@ def build_doc(key):
         nav = ['<nav class="chapter-bottom-nav" aria-label="Kapitelnavigation">']
         nav.append(f'<a class="btn btn-secondary" href="../">Inhaltsübersicht</a>')
         if prev_ch:
-            nav.append(f'<a class="btn btn-secondary" href="../{prev_ch["slug"] if "slug" in prev_ch else str(prev_ch["idx"]).zfill(2)}-{slugify(prev_ch["title"])[:60]}/">← {esc(prev_ch["title"][:40])}</a>')
+            nav.append(f'<a class="btn btn-secondary" href="../{chapter_slug(prev_ch)}/">← {esc(prev_ch["title"][:40])}</a>')
         if next_ch:
-            nav.append(f'<a class="btn btn-primary" href="../{str(next_ch["idx"]).zfill(2)}-{slugify(next_ch["title"])[:60]}/">{esc(next_ch["title"][:40])} →</a>')
+            nav.append(f'<a class="btn btn-primary" href="../{chapter_slug(next_ch)}/">{esc(next_ch["title"][:40])} →</a>')
         nav.append("</nav>")
 
         body = f'''      <article class="article-shell reference-reader chapter-reader">

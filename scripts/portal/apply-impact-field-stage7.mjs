@@ -81,7 +81,7 @@ const fields = [
     status: "Live",
     tools: [["T-SROI", "werkzeuge/t-sroi/"], ["Wirkungsfonds", "werkzeuge/wirkungsfonds/"], ["Impact Controlling", "werkzeuge/impact-controlling/"]],
     demos: [["Automatisierungs- und Wirkungseinkommensrechner", "erleben/automatisierungs-wirkungseinkommensrechner/"], ["Wirkungsscanner", "anwendungen/scanner.html"]],
-    docs: [["Arbeitsbibliothek Arbeit", "werkstatt/arbeitsbibliothek/wirkungsfelder/arbeit-einkommen/"], ["Wenn Maschinen arbeiten", "dokumente/wenn-maschinen-arbeiten/"]],
+    docs: [["Arbeitsbibliothek Arbeit", "werkstatt/arbeitsbibliothek/wirkungsfelder/arbeit-einkommen/"], ["Arbeit, Automatisierung und Maschinenleistung", "referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/"]],
     problem: "Einkommen, soziale Sicherung und Anerkennung hängen stark an Erwerbsarbeit, während Care, Bildung, Gemeinwesen und Automatisierungsgewinne unzureichend rückgekoppelt werden.",
     visible: "Sichtbar werden Wirkleistung, Automatisierungsdividenden, Care-Beiträge, Übergangsrisiken und soziale Stabilität.",
     pilot: "Wirkungseinkommen, Weiterbildungsfonds, Automatisierungsdividenden und regionale Übergangsarbeitsmärkte.",

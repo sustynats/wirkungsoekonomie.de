@@ -677,47 +677,53 @@ Damit lassen sich drei Entscheidungsfragen sauber trennen: Ist die Wirkung netto
 
 ### 34.1 Abgrenzung zu ROI, SROI, NWI, IOI und T-SROI
 
-Der klassische ROI, Return on Investment, beantwortet eine enge Frage: Welcher finanzielle Rückfluss entsteht im Verhältnis zur eingesetzten Investition? Diese Frage ist wichtig. Ohne finanzielle Tragfähigkeit können viele Projekte nicht dauerhaft bestehen. Der ROI zeigt, ob Kapital betriebswirtschaftlich sinnvoll eingesetzt wurde. Er sagt aber nicht, ob die damit erzeugte Wirkung Mensch, Planet oder Demokratie stärkt oder schwächt.
+Diese fünf Kürzel beantworten fünf verschiedene Fragen. Sie sind keine Treppe, auf der aus einem Punkt automatisch ein Euro oder aus einem Euro automatisch Transformation wird.
 
-Ein Projekt kann einen hohen ROI haben und zugleich negative Wirkung erzeugen. Es kann Ressourcen verbrauchen, Menschen belasten, Lieferkettenrisiken erhöhen, demokratische Räume schwächen oder Folgekosten in die Zukunft verschieben. Der ROI sieht diese Wirkungen nur, wenn sie finanziell zurückkehren. Solange sie ausgelagert bleiben, erscheinen sie in der Kennzahl nicht.
+| Werkzeug | Frage | Einheit | Wofür es nicht taugt |
+| --- | --- | --- | --- |
+| ROI | Rechnet sich das Kapital finanziell? | EUR/EUR | Wirkungen auf Mensch, Planet und Demokratie vollständig zu beschreiben. |
+| SROI | Welcher soziale oder ökologische Nutzen wird in Geld geschätzt? | EUR/EUR | Systemgrenze, Schäden oder Doppelzählungen zu ersetzen. |
+| NWI | Wie ist das dokumentierte Wirkungsprofil einzuordnen? | dimensionsloses Profil | Punkte in Euro umzuwandeln oder Menschen zu bewerten. |
+| IOI | Wie viel direkter, kausal begrenzter Nettonutzen in Euro entsteht je Ressourceneuro? | EUR/EUR | Reichweite oder Datenqualität als Geldfaktor aufzuschlagen. |
+| T-SROI | Wie verändert sich die Geldrechnung, wenn ein zusätzlicher Transformationsnutzen in Euro eigenständig belegt ist? | EUR/EUR | Hoffnung, Diffusion oder Resilienz ohne eigenen Nachweis zu vergolden. |
 
-Der klassische SROI, Social Return on Investment, erweitert die Perspektive. Er versucht, gesellschaftliche, soziale oder ökologische Wirkungen monetär auszudrücken und ins Verhältnis zu einer Investition zu setzen. Damit wird eine wichtige Korrektur vorgenommen: Nutzen außerhalb der reinen Finanzrechnung wird sichtbar. SROI-Ansätze haben geholfen, soziale Programme, Prävention, Integration, Bildung oder Gesundheitswirkungen nicht nur als Kosten, sondern als gesellschaftlichen Wert zu verstehen.
+Der NWI ist ein nichtmonetäres Wirkungsprofil. Er macht positive, negative und offene Befunde auf einer vorher erklärten Skala sichtbar. Ein Schutz-Gate prüft dabei rote Linien, kritische Felder, Datenqualität, Systemgrenze und Zurechnung. Ist es geschlossen, lautet die Aussage nicht „null“, sondern „blockiert / nicht bewertbar“.
 
-Doch auch der klassische SROI bleibt begrenzt. Er ist häufig projektzentriert. Er kann positive Wirkungen addieren, ohne negative Wirkungen ausreichend zu berücksichtigen. Er kann kurzfristige Effekte stärker zeigen als langfristige Strukturveränderungen. Er kann Nutzen monetarisieren, ohne die Frage zu beantworten, ob eine Wirkung Pfade, Märkte, Institutionen, Lieferketten, Verhalten oder Resilienz verändert.
+IOI und T-SROI sind dagegen Geldrechnungen. Sie verwenden ausschließlich Nutzen, Schäden, Investitionen und inkrementelle Kosten in Euro derselben Preis-, Zeit- und Systembasis. Sie teilen Schutzanforderungen mit dem NWI, übernehmen aber keinen NWI-Punkt in Zähler oder Nenner. Ein gutes Profil macht einen Eurobetrag nicht größer; es entscheidet mit darüber, ob eine positive Aussage verantwortbar ist.
 
-Der NWI schließt diese Lücke auf der Ebene der Netto-Wirkung. Er führt positive und negative Wirkungen, Mindestbedingungen, Datenqualität, Unsicherheit, Zeitwirkung, Systemkontext und Nichtkompensation zu einer operativen Netto-Wirkungskennzahl zusammen. Er zeigt, ob ein Bewertungsgegenstand im definierten Wirkungsraum tragfähig wirkt oder nicht.
-
-Der T-SROI setzt erst danach an. Er fragt nicht: Wie ist die Netto-Wirkung? Er fragt: Verändert diese Netto-Wirkung die Struktur künftiger Entscheidungen? Ein hoher NWI ist keine automatische Transformation. Ein niedriger oder negativer NWI kann aber eine positive T-SROI-Bewertung blockieren, weil Transformation nicht auf schweren, verdeckten Schäden aufbauen darf.
-
-Der IOI liegt zwischen NWI und T-SROI. Er fragt nicht nach finanzieller Rendite und nicht nach Transformation, sondern nach Wirkungseffizienz des eingesetzten Kapitals: Welche geprüfte positive Netto-Wirkung entsteht im Verhältnis zur Investitionssumme? Ein positiver IOI setzt voraus, dass die vorgelagerte Scorecard- und NWI-Prüfung tragfähig ist und keine rote Linie verletzt wird.
-
-Damit entsteht eine klare Fünferlogik: ROI misst finanzielle Rendite. SROI monetarisiert sozialen oder ökologischen Zusatznutzen. NWI bewertet operative Netto-Wirkung. IOI misst positive Netto-Wirkung im Verhältnis zur Investition. T-SROI bewertet systemische Transformationsleistung.
-
-Tabelle 34-1: ROI, SROI, NWI, IOI und T-SROI im Vergleich
+Der T-SROI ist kein Multiplikator für „große Transformation“. Er ergänzt den IOI nur um einen zusätzlichen Nutzenstrom, der zum Beispiel aus einer nachweislich übernommenen Praxis oder einem dauerhaft geänderten Standard entstehen kann. Ohne eigenen Wirkpfad, Empfängerkreis, Vergleichsfall, Zeitraum, Preisbasis und Zurechnung bleibt das eine Transformationshypothese oder ein Wirkungsrisiko - kein Rechenaufschlag.
 
 ### 34.2 Die Arbeitslogik von NWI, IOI und T-SROI
 
-T-SROI macht Transformationswirkung investitionsfähig. Er soll nicht nur anzeigen, ob eine Maßnahme unmittelbar nützt, sondern ob sie Systeme in Richtung Mensch, Planet und Demokratie verändert. Deshalb darf seine Formel die Netto-Wirkung nicht erneut als eigentlichen Gegenstand vereinnahmen. Die Netto-Wirkung ist die Prüfbasis. Die Transformationswirkung ist der Gegenstand des T-SROI.
+Man kann sich drei Schubladen vorstellen. In die erste kommt das Wirkungsprofil. In die zweite kommen direkte, belegte Geldströme. In die dritte kommt nur zusätzlicher Transformationsnutzen, der ebenfalls als eigener Geldstrom belegt ist. Man darf die Schubladen nebeneinander benutzen, aber ihren Inhalt nicht vermischen.
 
-Formelkasten 34-1: Grundlogik des Impact-Controllings
+Formelkasten 34-1: Aktueller Rechenstandard
 
-NWI = operative Netto-Wirkung
+Der NWI bleibt ein Profilwert bei offenem NWI-Schutz-Gate. Der IOI rechnet den direkten Nutzen:
 
-IOI = positive Netto-Wirkung / Investitionssumme
+$$
+IOI = \frac{\sum_{t=1}^{T}\frac{B_{direkt,t}\,a_t(1-d_t)(1-v_t)-S_t}{(1+r)^t}}{\sum_{t=0}^{T}\frac{I_t+K_t}{(1+r_K)^t}}
+$$
 
-T-SROI = Transformationswirkung × systemische Hebelwirkung × Zeitwirkung × Resilienzfaktor × Datenqualität
+Der T-SROI ergänzt ausschließlich den getrennt belegten Transformationsnutzen:
 
-Der NWI wirkt dabei als Eingangsschwelle. Eine positive T-SROI-Bewertung setzt voraus, dass die Netto-Wirkung mindestens tragfähig ist und keine roten Linien verletzt werden. Der T-SROI darf negative Netto-Wirkung nicht durch große Transformationsversprechen überdecken. Transformation ohne tragfähige Netto-Wirkung wäre keine Wirkungsökonomie, sondern Wirkungssimulation.
+$$
+T\text{-}SROI = \frac{\sum_{t=1}^{T}\frac{(B_{direkt,t}+B_{transformativ,t})\,a_t(1-d_t)(1-v_t)-S_t}{(1+r)^t}}{\sum_{t=0}^{T}\frac{I_t+K_t}{(1+r_K)^t}}
+$$
 
-Formelkasten 34-2: Arbeitsformel als Bewertungslogik
+Dabei ist \(T\) eine ganze Zahl von Jahren mit \(T \geq 1\). Die Anfangsinvestition \(I_0\) liegt bei \(t=0\) und wird deshalb nicht abgezinst. \(B\) steht für Nutzen, \(S\) für Schaden, \(I\) für Investition und \(K\) für inkrementelle Kosten. \(a\) (Attribution), \(d\) (Counterfactual/Deadweight) und \(v\) (Verdrängung) begrenzen ausschließlich den beanspruchten Nutzen. Ein dokumentierter Schaden wird nicht still mitverkleinert; dafür bräuchte es eine eigene Gegenfaktik.
 
-T-SROI = (T_struktur × H_sys × F_zeit × F_resilienz × Q_daten) / I
+Für die vorsichtige Veröffentlichungsschwelle gilt zusätzlich:
 
-Diese Arbeitsformel ist keine abschließende mathematische Norm. Sie zeigt die Logik. T_struktur bezeichnet die bewertete Transformationswirkung. H_sys bezeichnet die systemische Hebelwirkung, also Skalierung, Diffusion, Standardsetzung, Marktverschiebung, Infrastrukturwirkung oder Pfadveränderung. F_zeit berücksichtigt, ob die Wirkung kurzfristig, mittelfristig oder langfristig trägt. F_resilienz berücksichtigt, ob die Maßnahme Verwundbarkeit reduziert und Anpassungsfähigkeit stärkt. Q_daten macht sichtbar, wie belastbar die Datengrundlage ist. I bezeichnet die eingesetzte Investition oder den relevanten Mitteleinsatz.
+$$
+PV_N^L = \sum_{t=1}^{T}\frac{(B_{direkt,t}+B_{transformativ,t})\,a_t(1-d_t)(1-v_t)(1-u_t)-S_t}{(1+r)^t}
+$$
 
-Entscheidend ist: W_pos, W_neg und Systemkosten gehören primär in die NWI-Berechnung. Sie sind nicht verschwunden. Sie werden nur methodisch an den richtigen Ort gestellt. Der IOI nutzt ausschließlich geprüfte positive Netto-Wirkung als Zähler. Der T-SROI übernimmt die Netto-Wirkung nicht als eigene Hauptleistung, sondern setzt voraus, dass sie bereits über Scorecard, Reverse Merit Order, NWI und bei Investitionsentscheidungen über den IOI nachvollziehbar geprüft wurde.
+\(u_t\) ist ein offengelegter konservativer Szenarioabschlag auf den beanspruchten Nutzen. Er reduziert nie den Schaden \(S_t\). Eine positive IOI- oder T-SROI-Aussage ist nur zulässig, wenn die Schutzprüfung offen ist, die Ressourcenbasis positiv ist und \(PV_N^L > 0\) bleibt. Fehlen wesentliche Angaben, ist das Ergebnis blockiert oder nicht bewertbar - nicht künstlich 0 und nicht positiv.
 
-Diese Trennung verhindert zwei Fehler. Erstens verhindert sie, dass jedes netto positive Projekt automatisch als transformativ erscheint. Zweitens verhindert sie, dass ein großes Transformationsnarrativ schwache oder negative Netto-Wirkung überdeckt.
+Ein kleines Rechenbeispiel: Im ersten Jahr entstehen 100 EUR direkter und 25 EUR separat belegter Transformationsnutzen. Attribution ist 1, Deadweight und Verdrängung sind 0, der Schaden beträgt 60 EUR, der Diskontsatz 5 Prozent und die Investition 50 EUR. Dann beträgt der T-SROI-Zähler \((100+25-60)/1{,}05 = 61{,}90\) EUR und der T-SROI \(61{,}90/50=1{,}24\) EUR/EUR. Bei einem Unsicherheitsabschlag von 20 Prozent lautet die Untergrenze \(((100+25)\cdot0{,}8-60)/1{,}05 = 38{,}10\) EUR. Der Schaden bleibt 60 EUR; genau das macht die Rechnung vorsichtig und nachvollziehbar.
+
+Reichweite, Datenqualität, Resilienz, Diffusion und ein überzeugendes Narrativ können wichtige Hinweise sein. Sie sind aber keine frei wählbaren Multiplikatoren. Sie verbessern den Wirkpfad, die Evidenz oder die Entscheidung - einen Eurobetrag nur dann, wenn daraus ein eigener belegter Nutzenstrom in derselben Preisbasis entsteht.
 
 ### 34.3 Transformation statt bloßer Projekt-Nutzen
 

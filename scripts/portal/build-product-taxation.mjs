@@ -88,8 +88,8 @@ const contextualTools = [
     href: "werkzeuge/wirkungsumsatzsteuer/",
     lawHref: "werkstatt/leitlinien/wustg/",
     bookHref: "referenz/kapitel-038-das-wustg-und-die-produktwirkungssteuer/",
-    short: "Koppelt Produkt- und Leistungsbesteuerung im Pilotmodell an geprüfte Wirkung.",
-    why: "Im Produktportal ist sie die Rückkopplung zwischen Scorecard, Steuerklasse, Preis und Konsumentscheidung.",
+    short: "Beschreibt, wie geprüfte Produktwirkung eine demokratisch bestimmte Steuerlogik informieren kann.",
+    why: "Im Produktportal trennt sie Scorecard und Prüfstatus von der rechtlichen Tarifentscheidung und der anschließenden Preisarithmetik.",
   },
   {
     title: "Produktscorecards",
@@ -146,8 +146,8 @@ const contextualTools = [
     href: "erleben/produktwirkungsrechner/",
     demoHref: "erleben/produktwirkungsrechner/",
     bookHref: "referenz/kapitel-050-produktscorecards/",
-    short: "Modellhafte Simulation von Scores, FinalScore, Steuerklasse und Bruttopreis.",
-    why: "Der Rechner macht die Logik der Wirkungsumsatzsteuer erfahrbar, ohne eine amtliche Einstufung zu behaupten.",
+    short: "Modellhafte Simulation von Scores, Engpasssignal, Prüfstatus und einer eingegebenen Preis-Testannahme.",
+    why: "Der Rechner macht den Prüfpfad anschaulich, ohne eine amtliche Einstufung, einen Satz oder einen Preis abzuleiten.",
   },
 ];
 
@@ -159,15 +159,15 @@ const go8ToolRegistry = {
     href: "erleben/produktwirkungsrechner/",
     demoHref: "erleben/produktwirkungsrechner/",
     bookHref: "referenz/kapitel-050-produktscorecards/",
-    short: "Modellhafte Simulation von Produktbeispiel, Scores, FinalScore, Steuerklasse und Bruttopreis.",
-    why: "Macht die Logik der Wirkungsumsatzsteuer erfahrbar, ohne eine amtliche Einstufung zu behaupten.",
+    short: "Modellhafte Simulation von Produktbeispiel, Scores, Engpasssignal, Prüfstatus und Preis-Testannahme.",
+    why: "Macht den Prüfpfad der Wirkungsumsatzsteuer erfahrbar, ohne eine amtliche Einstufung, einen Satz oder einen Preis abzuleiten.",
   },
   "Wirkungssteuer-Simulator": {
     title: "Wirkungssteuer-Simulator",
     type: "Toolidee",
     status: "Demo in Vorbereitung",
     href: "",
-    short: "Soll unterschiedliche Steuerklassen, Übergangspfade, soziale Abfederung und politische Varianten vergleichbar machen.",
+    short: "Soll unterschiedliche rechtliche Tarif-, Übergangs- und Rückverteilungsvarianten vergleichbar machen.",
     why: "Die WUSt-Logik braucht nachvollziehbare Szenarien, bevor konkrete Satzhöhen politisch entschieden werden.",
   },
   "Apfel-Rechner": {
@@ -175,7 +175,7 @@ const go8ToolRegistry = {
     type: "Beispielrechner",
     status: "Demo in Vorbereitung",
     href: "wirkungsfelder/produkte-konsum/apfelbeispiel/",
-    short: "Überträgt das Apfelbeispiel in eine nachvollziehbare Scorecard- und Steuerklassenlogik.",
+    short: "Überträgt das Apfelbeispiel in eine nachvollziehbare Scorecard- und Prüfpfadlogik.",
     why: "Das Beispiel zeigt, dass Produktwirkung kontextabhängig ist und nicht aus Herkunft oder Label allein folgt.",
   },
   "T-Shirt-Lieferkettenrechner": {
@@ -279,7 +279,7 @@ const go8ProductDetails = [
     description: "Echtes Detailkonzept zu Produkten als Wirkungsträgern: Lebenszyklus, Lieferkette, Nutzung, Ende, WÖk-IDs, Produktverantwortung und Verbraucherinformation.",
     hero: "Dieses Detailkonzept vertieft, warum Produkte in der Wirkungsökonomie nicht nur Waren sind, sondern verdichtete Wirkungsräume aus Rohstoffen, Herstellung, Nutzung, Reparatur, Entsorgung und Information.",
     docx: "assets/downloads/15_woek_produkte_konsum_produkte-als-wirkungstraeger-lebenszyklus_detailkonzept_v1_0.docx",
-    pdf: "assets/downloads/15_woek_produkte_konsum_produkte-als-wirkungstraeger-lebenszyklus_detailkonzept_v1_0.pdf",
+    pdf: "assets/downloads/15_woek_produkte_konsum_produkte-als-wirkungstraeger-lebenszyklus_detailkonzept_v1_1.pdf",
     detailText: "Lebenszyklus, Produktverantwortung, Verbraucherinformation und Produktdaten als Grundlage ehrlicher Preise.",
     tools: ["Produktwirkungsrechner", "WÖk-ID-Browser", "Produktscorecard-Generator", "DPP-Demo"],
   },
@@ -290,11 +290,11 @@ const go8ProductDetails = [
     title: "Wirkungsumsatzsteuer / Produktwirkungssteuer | Produkte & Konsum",
     h1: "Wirkungsumsatzsteuer / Produktwirkungssteuer",
     subtitle: "Preise, Steuern und Produktwirkung als Rückkopplungsarchitektur.",
-    description: "Echtes Detailkonzept zur Wirkungsumsatzsteuer: FinalScore, Steuerklasse, Reverse Merit Order, Vorsteuerlogik, Kaufkraftschutz, KMU-Übergänge und Wirkungsrat.",
+    description: "Detailkonzept zur Wirkungsumsatzsteuer: Prüfpfad, FinalScore als Engpasssignal, Reverse Merit Order, Vorsteuerlogik, Kaufkraftschutz, KMU-Übergänge und Wirkungsrat.",
     hero: "Diese Vertiefung erklärt die Produktwirkungssteuer als demokratisch kontrollierte Preisrückkopplung: Sie verbietet nicht, sondern macht sichtbar, was der alte Preis verschweigt.",
     docx: "assets/downloads/16_woek_produkte_konsum_wirkungsumsatzsteuer-produktwirkungssteuer_detailkonzept_v1_0.docx",
-    pdf: "assets/downloads/16_woek_produkte_konsum_wirkungsumsatzsteuer-produktwirkungssteuer_detailkonzept_v1_0.pdf",
-    detailText: "FinalScore, Steuerklassen, Vorsteuerlogik, Nichtkompensation, Kaufkraftschutz und rechtliche Einbettung.",
+    pdf: "assets/downloads/16_woek_produkte_konsum_wirkungsumsatzsteuer-produktwirkungssteuer_detailkonzept_v1_1.pdf",
+    detailText: "Prüfpfad, FinalScore als Engpasssignal, Vorsteuerlogik, Nichtkompensation, Kaufkraftschutz und rechtliche Einbettung.",
     tools: ["Wirkungssteuer-Simulator", "Produktwirkungsrechner", "Apfel-Rechner", "T-Shirt-Lieferkettenrechner"],
   },
   {
@@ -307,7 +307,7 @@ const go8ProductDetails = [
     description: "Echtes Detailkonzept zu Produktscorecards, Reverse Merit Order, WÖk-IDs, Datenqualität, digitalen Produktpässen, Assurance und Verbraucherinformation.",
     hero: "Diese Vertiefung beschreibt die operative Brücke zwischen Produktdaten und Wirkungssteuerung: Scorecards, WÖk-IDs, Engpasslogik und digitale Produktpässe.",
     docx: "assets/downloads/17_woek_produkte_konsum_produktscorecards-reverse-merit-order-digitale-produktpaesse_detailkonzept_v1_0.docx",
-    pdf: "assets/downloads/17_woek_produkte_konsum_produktscorecards-reverse-merit-order-digitale-produktpaesse_detailkonzept_v1_0.pdf",
+    pdf: "assets/downloads/17_woek_produkte_konsum_produktscorecards-reverse-merit-order-digitale-produktpaesse_detailkonzept_v1_1.pdf",
     detailText: "Scorecard-Aufbau, Datenqualität, Benchmarks, Reverse Merit Order, DPP und Assurance als Produktgedächtnis.",
     tools: ["Produktscorecard-Generator", "DPP-Demo", "WÖk-ID-Browser", "Produktwirkungsrechner"],
   },
@@ -320,12 +320,12 @@ const go9ProductDetails = [
     source: "docs/produkte-konsum/go9-detailkonzepte/online_volltext_18_18_apfelbeispiel_produktwirkungsrechnung_detailkonzept_v1_0.md",
     title: "Das Apfelbeispiel und die Produktwirkungsrechnung im Alltag | Produkte & Konsum",
     h1: "Das Apfelbeispiel und die Produktwirkungsrechnung im Alltag",
-    subtitle: "Automatisierte Einstufung, Scorecard, Steuerklasse und Preisschild am kleinsten verständlichen Produktfall.",
-    description: "Echtes Detailkonzept zum Apfelbeispiel: Produktidentifikation, Scorecard, Steuerklasse, Preisschild, Verbraucherinformation und Produktwirkungsrechnung im Alltag.",
+    subtitle: "Scorecard, Prüfpfad, Preis-Testannahme und Preisschild am kleinsten verständlichen Produktfall.",
+    description: "Detailkonzept zum Apfelbeispiel: Produktidentifikation, Scorecard, Prüfstatus, Preis-Testannahme, Verbraucherinformation und Produktwirkungsrechnung im Alltag.",
     hero: "Diese Vertiefung macht die Wirkungsumsatzsteuer am einfachsten Produktfall greifbar: Ein Apfel wird nicht zum Symbol, sondern zum vollständigen Testfall für ehrliche Preise.",
     docx: "assets/downloads/18_woek_produkte_konsum_apfelbeispiel_produktwirkungsrechnung_detailkonzept_v1_0.docx",
-    pdf: "assets/downloads/18_woek_produkte_konsum_apfelbeispiel_produktwirkungsrechnung_detailkonzept_v1_0.pdf",
-    detailText: "Apfelbeispiel, Produktwirkungsrechnung, Scorecard, Steuerklasse, Preisschild und Alltagstransparenz.",
+    pdf: "assets/downloads/18_woek_produkte_konsum_apfelbeispiel_produktwirkungsrechnung_detailkonzept_v1_1.pdf",
+    detailText: "Apfelbeispiel, Produktwirkungsrechnung, Scorecard, Prüfstatus, Preis-Testannahme und Alltagstransparenz.",
     tools: ["Apfel-Rechner", "Produktwirkungsrechner", "Produktscorecard-Generator", "DPP-Demo"],
   },
   {
@@ -338,7 +338,7 @@ const go9ProductDetails = [
     description: "Echtes Detailkonzept zu Lieferketten, Importlogik und Wirkungsvorsteuer: Vorleistungen, Bonuslogik, Importe, DPP, Lieferanten-Scorecards und rote Linien.",
     hero: "Diese Vertiefung zeigt, warum Produktwirkung nicht an der Landesgrenze und nicht beim letzten Hersteller beginnt: Lieferkettenwirkung muss in Vorsteuer- und Bonuslogiken sichtbar bleiben.",
     docx: "assets/downloads/19_woek_produkte_konsum_lieferketten_importlogik_wirkungsvorsteuer_detailkonzept_v1_0.docx",
-    pdf: "assets/downloads/19_woek_produkte_konsum_lieferketten_importlogik_wirkungsvorsteuer_detailkonzept_v1_0.pdf",
+    pdf: "assets/downloads/19_woek_produkte_konsum_lieferketten_importlogik_wirkungsvorsteuer_detailkonzept_v1_1.pdf",
     detailText: "Lieferketten, Importlogik, Wirkungsvorsteuer, Bonusfähigkeit, Supplier Scorecards und globale Anschlussfähigkeit.",
     tools: ["Lieferketten-Scorecard", "Vorsteuer- und Bonuslogik-Simulator", "T-Shirt-Lieferkettenrechner", "WÖk-ID-Browser"],
   },
@@ -352,7 +352,7 @@ const go9ProductDetails = [
     description: "Echtes Detailkonzept zum Konzern- und Produktgruppenbeispiel: CSRD/ESRS, Produktgruppen, BASF/Polyamid-Modell, WÖk-IDs, DPP und Produktscorecards.",
     hero: "Diese Vertiefung übersetzt die Berichtsebene in die Produktgruppenebene: Wirkung darf nicht im Konzernmittelwert verschwinden.",
     docx: "assets/downloads/20_woek_produkte_konsum_konzernbeispiel_csrd_produktscorecard_detailkonzept_v1_0.docx",
-    pdf: "assets/downloads/20_woek_produkte_konsum_konzernbeispiel_csrd_produktscorecard_detailkonzept_v1_0.pdf",
+    pdf: "assets/downloads/20_woek_produkte_konsum_konzernbeispiel_csrd_produktscorecard_detailkonzept_v1_1.pdf",
     detailText: "CSRD-zu-Produktscorecard, Produktgruppen, WÖk-IDs, DPP, Assurance und Konzernsteuerung.",
     tools: ["CSRD-zu-Produktscorecard-Demo", "Produktpass-Mapping", "WÖk-ID-Browser", "Produktscorecard-Generator"],
   },
@@ -362,11 +362,11 @@ const productSingleDossiers = [
   {
     slug: "wirkungsumsatzsteuer",
     title: "Einzeldossier Wirkungsumsatzsteuer",
-    subtitle: "Steuerklassen, FinalScore, Tarifmatrix und Produktwirkungssteuer im Produktportal.",
-    focus: "Die Wirkungsumsatzsteuer koppelt Produktpreise im Pilotmodell an geprüfte Produktwirkung. Sie bewertet nicht Konsument:innen, sondern Produkte, Leistungen und Lieferketten entlang von Mensch, Planet, Demokratie und Datenqualität.",
+    subtitle: "Prüfpfad, FinalScore als Engpasssignal, Preisarithmetik und Produktwirkungssteuer im Produktportal.",
+    focus: "Die Wirkungsumsatzsteuer beschreibt einen Prüfpfad für Produktwirkung. Sie bewertet nicht Konsument:innen, sondern Produkte, Leistungen und Lieferketten entlang von Mensch, Planet, Demokratie und Datenqualität; ein verbindlicher Tarif verlangt ein Gesetz und ein rechtsstaatliches Verfahren.",
     sections: [
       ["Ausgangspunkt", "Klassische Umsatzsteuer behandelt Produkte weitgehend gleich, obwohl ihre Wirkungen sehr unterschiedlich sein können."],
-      ["Modelllogik", "WÖk-IDs, Produktscorecards, FinalScore und Reverse Merit Order führen zu einer modellhaften Steuerklasse."],
+      ["Modelllogik", "WÖk-IDs, Produktscorecards, FinalScore und Reverse Merit Order dokumentieren ein Wirkungsprofil und begrenzen positive Aussagen; sie erzeugen keinen Tarif."],
       ["Grenze", "Ohne Gesetzgebung, Rechtsschutz, Datenqualität und Wirkungsrat bleibt die WUStG-Logik ein Pilot- und Konzeptmodell."],
     ],
     related: ["Wirkungsumsatzsteuer", "Produktscorecards", "WÖk-IDs", "Reverse Merit Order", "Wirkungsrat"],
@@ -375,7 +375,7 @@ const productSingleDossiers = [
   {
     slug: "produktscorecards",
     title: "Einzeldossier Produktscorecards",
-    subtitle: "Wie Produktdaten in Scores, FinalScore und Steuerklassen übersetzt werden.",
+    subtitle: "Wie Produktdaten in Scores, Engpasssignal und Prüfstatus übersetzt werden.",
     focus: "Produktscorecards sind das Bewertungsraster der Produktwirkung. Sie machen sichtbar, welche Zustände ein Produkt verändert und welche Datenqualität hinter der Bewertung steht.",
     sections: [
       ["Score-Felder", "Kernfelder wie Mensch, Planet, Demokratie und Datenqualität werden von -3 bis +3 bewertet."],
@@ -453,7 +453,7 @@ const productSingleDossiers = [
   {
     slug: "verbraucherinformation",
     title: "Einzeldossier Verbraucherinformation",
-    subtitle: "Wirkungspunkte, Produktlabel, Steuerklassen und Regaltransparenz.",
+    subtitle: "Wirkungspunkte, Produktlabel, Prüfstatus und Regaltransparenz.",
     focus: "Verbraucherinformation macht Produktwirkung sichtbar, ohne Menschen zu bewerten oder Konsumverhalten zu überwachen.",
     sections: [
       ["Produktlabel", "Informationen müssen verständlich, knapp und prüfbar sein."],
@@ -509,8 +509,8 @@ const lawRefs = {
   },
   wustg5: {
     label: "§ 5 WUStG",
-    href: "werkstatt/leitlinien/wustg/#teil-8-finalscore",
-    text: "WUStG-Paragrafenseite in Ausarbeitung; die Leitlinien beschreiben FinalScore und Modell-Steuerklassen.",
+    href: "werkstatt/leitlinien/wustg/#8-4-pruefprofile-und-tarifvarianten-keine-ableitungsregel",
+    text: "WUStG-Paragrafenseite in Ausarbeitung; die Leitlinien beschreiben FinalScore sowie die Trennung von Prüfprofil und rechtlicher Tarifentscheidung.",
   },
   wustg6: {
     label: "§ 6 WUStG",
@@ -1036,8 +1036,7 @@ function go8DetailConceptPages() {
       sdgText:
         "Diese Vertiefung ordnet Produktwirkung an SDGs, Agenda 2030 und SDG+ ein. Wirkung ist neutral und relational; Zielgröße ist positive Netto-Wirkung für Mensch, Planet und Demokratie.",
       downloads: [
-        { label: "DOCX herunterladen", href: detail.docx, required: true },
-        { label: "PDF öffnen", href: detail.pdf, required: true },
+        { label: "Aktuelle PDF-Fassung v1.1", href: detail.pdf, required: true },
         { label: "Produktportal öffnen", href: "wirkungsfelder/produkte-konsum/" },
       ],
     });
@@ -1061,8 +1060,7 @@ function go9DetailConceptPages() {
       sdgText:
         "Diese Vertiefung ordnet Produktwirkung, Lieferkettenwirkung und Produktdaten an SDGs, Agenda 2030 und SDG+ ein. Wirkung ist neutral und relational; Zielgröße ist positive Netto-Wirkung für Mensch, Planet und Demokratie.",
       downloads: [
-        { label: "DOCX herunterladen", href: detail.docx, required: true },
-        { label: "PDF öffnen", href: detail.pdf, required: true },
+        { label: "Aktuelle PDF-Fassung v1.1", href: detail.pdf, required: true },
         { label: "Produktportal öffnen", href: "wirkungsfelder/produkte-konsum/" },
       ],
     });
@@ -1182,7 +1180,7 @@ function productPortal() {
         { title: "Produktscorecards", text: "Scorecards bündeln Indikatoren, Datenqualität und Engpasslogik. Warum relevant? Sie machen Bewertungen nachvollziehbar und prüfbar.", href: "wirkungsfelder/produkte-konsum/produktscorecards-reverse-merit-order-digitale-produktpaesse/", label: "Konzept lesen" },
         { title: "Reverse Merit Order", text: "Schwere negative Wirkung kann positive Teilwerte begrenzen. Warum relevant? Schäden werden nicht durch gute Einzelwerte überdeckt.", href: "werkzeuge/reverse-merit-order/", label: "Methodik lesen" },
         { title: "Digitale Produktpässe", text: "Produktdaten werden als Nachweis- und Lerninfrastruktur verstanden. Warum relevant? Ohne Datenqualität bleibt Wirkung Behauptung.", href: "werkzeuge/digitale-produktpaesse-wirkungsdatenraeume/", label: "Methodik lesen" },
-        { title: "Verbraucherinformation", text: "Wirkungspunkte, Steuerklassen und Hinweise sollen verständlich werden, ohne Menschen zu bewerten. Warum relevant? Kaufentscheidungen brauchen klare Information.", href: "wirkungsfelder/produkte-konsum/verbraucherinformation/", label: "Vertiefung lesen" },
+        { title: "Verbraucherinformation", text: "Wirkungspunkte, Prüfstatus und Hinweise sollen verständlich werden, ohne Menschen zu bewerten. Warum relevant? Kaufentscheidungen brauchen klare Information.", href: "wirkungsfelder/produkte-konsum/verbraucherinformation/", label: "Vertiefung lesen" },
       ], "three")}
     </section>
     ${toolCards(base)}
@@ -1193,7 +1191,7 @@ function productPortal() {
         <p>Vorhandene Demos werden kontextbezogen verlinkt. Sie sind modellhafte Demonstrationen, keine amtliche Einstufung.</p>
       </div>
       ${cardGrid(base, [
-        { title: "Produktwirkungsrechner", text: "Bio-Apfel, Chile-Apfel, T-Shirt oder Polyamid auswählen, Scores prüfen und Steuerklasse simulieren.", href: "erleben/produktwirkungsrechner/", label: "Rechner öffnen" },
+        { title: "Produktwirkungsrechner", text: "Bio-Apfel, Chile-Apfel, T-Shirt oder Polyamid auswählen, Scores und Prüfstatus prüfen sowie eine Preis-Testannahme nachvollziehen.", href: "erleben/produktwirkungsrechner/", label: "Rechner öffnen" },
         { title: "Produktwirkung prüfen", text: "Interaktive Annäherung an Produktwirkung, Scorecard und Wirkungssteuerlogik.", href: "erleben.html#simulator", label: "Tool testen" },
         { title: "Scorecard-Demo", text: "Bewertungslogik mit Scores, Datenfeldern und visueller Auswertung.", href: "scorecard-dashboard.html", label: "Beispiel ansehen" },
         { title: "Wirkungsscanner", text: "Scanner für erste Wirkungsfragen im Alltag und in Organisationen.", href: "anwendungen/scanner.html", label: "Scanner öffnen" },
@@ -1207,7 +1205,7 @@ function productPortal() {
       ${cardGrid(base, [
         { title: "Für Konsument:innen", text: "Produktwirkung wird sichtbar, ohne Menschen selbst zu bewerten oder Kaufverhalten zu überwachen." },
         { title: "Für Hersteller", text: "Produktentwicklung, Materialwahl und Lieferketten werden auf positive Netto-Wirkung rückgekoppelt." },
-        { title: "Für Handel", text: "Regaltransparenz, Steuerklasse und Produktdaten können Kaufentscheidungen verständlicher machen." },
+        { title: "Für Handel", text: "Regaltransparenz, Prüfstatus und Produktdaten können Kaufentscheidungen verständlicher machen." },
         { title: "Für Lieferanten", text: "Datenqualität, faire Übergänge und Verbesserungswege ersetzen pauschale Ausschlüsse." },
         { title: "Für Prüfer:innen", text: "Assurance, WÖk-IDs und DPPs schaffen prüfbare Bewertungswege." },
         { title: "Für Politik und Verwaltung", text: "Pilotierung, Rechtsschutz, Datenschutz und Wirkungsrat sichern die Einführung ab." },
@@ -1220,7 +1218,7 @@ function productPortal() {
       </div>
       <div class="related-question-grid">
         <article class="related-question-card"><span>Preisfrage</span><strong>Wird dann alles teurer?</strong><a class="text-link" href="${href(base, "fragen/#teurer")}">Antwort lesen</a></article>
-        <article class="related-question-card"><span>Governance</span><strong>Wer entscheidet die Steuerklasse?</strong><a class="text-link" href="${href(base, "fragen/#steuerklasse")}">Antwort lesen</a></article>
+        <article class="related-question-card"><span>Governance</span><strong>Wer entscheidet über einen Tarif?</strong><a class="text-link" href="${href(base, "fragen/#tarifentscheidung")}">Antwort lesen</a></article>
         <article class="related-question-card"><span>Daten</span><strong>Was passiert bei fehlenden Daten?</strong><a class="text-link" href="${href(base, "fragen/#fehlende-daten")}">Antwort lesen</a></article>
       </div>
     </aside>
@@ -1544,14 +1542,14 @@ function dossierPage() {
   page({
     rel: "wirkungsfelder/produkte-konsum/dossier/index.html",
     title: "Dossier Produkte & Konsum | Wirkungsumsatzsteuer",
-    description: "Online-Dossier zur Wirkungsumsatzsteuer mit Rechenmodell V0.1, Tarifmatrix, Apfelrechnung, T-Shirt, Lieferkettenlogik, BASF Polyamid und Datenquellen.",
+    description: "Online-Dossier zur Wirkungsumsatzsteuer mit Prüfpfad, Preisarithmetik, Beispielen, Lieferkettenlogik, BASF Polyamid und Datenquellen.",
     searchSection: "Wirkungsfelder",
     searchType: "Dossier",
     body: (base, route) => `${introHero({
       base,
       kicker: "Dossier",
       h1: "Dossier Produkte & Konsum",
-      subtitle: "Rechenmodell V0.1, Tarifmatrix, Beispiele und Quellen zur Wirkungsumsatzsteuer.",
+      subtitle: "Prüfpfad, Preisarithmetik, Beispiele und Quellen zur Wirkungsumsatzsteuer.",
       text: "Dieses Dossier macht die Tabellen und Modellannahmen online lesbar. Es ist eine Fassung, keine amtliche Steuerberechnung und keine Steuerberatung.",
       actions: `<a class="btn btn-primary" href="${href(base, "erleben/produktwirkungsrechner/")}">Produktwirkungsrechner öffnen</a>`,
     })}
@@ -1561,8 +1559,8 @@ function dossierPage() {
       <nav class="toc-card" aria-label="Inhaltsverzeichnis">
         <h2>Inhaltsverzeichnis</h2>
         <ol>
-          <li><a href="#rechenmodell">Rechenmodell V0.1</a></li>
-          <li><a href="#tarifmatrix">Tarifmatrix</a></li>
+          <li><a href="#rechenmodell">Prüfpfad und Preisarithmetik</a></li>
+          <li><a href="#pruefpfad-preisarithmetik">Entscheidungsmatrix</a></li>
           <li><a href="#apfelrechnung">Apfelrechnung</a></li>
           <li><a href="#t-shirt-rechnung">T-Shirt-Rechnung</a></li>
           <li><a href="#lieferketten-vorsteuer">Lieferketten-/Vorsteuerbeispiel</a></li>
@@ -1576,34 +1574,36 @@ function dossierPage() {
     </section>
     <section class="section article-section">
       <article class="article-body fulltext-reader">
-        ${sectionTitle("rechenmodell", "Rechenmodell V0.1")}
-        <p>Das Modell setzt einen Nettopreis, mehrere Kernfeld-Scores und einen FinalScore in Beziehung. Der FinalScore entspricht in dieser Demo dem niedrigsten Kernfeldscore, damit schwere negative Wirkung nicht durch positive Einzelwerte verdeckt wird.</p>
-        ${dataTable(["Schritt", "Berechnung", "Hinweis"], [
-          ["1", "Nettopreis erfassen", "Preis ohne modellhafte Wirkungsumsatzsteuer."],
-          ["2", "Kernfelder von -3 bis +3 bewerten", "Mensch, Planet, Demokratie und Datenqualität als Mindestlogik."],
-          ["3", "FinalScore = Minimum der Kernfelder", "Reverse-Merit-Order-Demo, kein amtliches Verfahren."],
-          ["4", "Steuersatz aus Tarifmatrix ableiten", "Pilotmatrix V0.1."],
-          ["5", "Bruttopreis berechnen", "Nettopreis + modellhafte Steuer."],
+        ${sectionTitle("rechenmodell", "Prüfpfad und Preisarithmetik (Modell)")}
+        <p>Eine Produktscorecard ist kein Steuerbescheid. Sie dokumentiert Wirkpfade, Daten, Grenzen und kritische Befunde. Der FinalScore beziehungsweise die Reverse Merit Order zeigt das schwächste kritische Feld. Er ist ein Prüf- und Begrenzungssignal, keine automatische Tarifentscheidung und keine Umrechnung von Punkten in Euro.</p>
+        ${dataTable(["Schritt", "Zulässige Modellfunktion", "Nicht zulässig"], [
+          ["1", "Steuergegenstand und Nettopreis dokumentieren", "Preis, Produktgruppe, Zeitraum und gesetzliche Bemessungsgrundlage offenlegen.", "Aus einem Produktnamen oder Marketingbegriff einen Steuertatbestand ableiten."],
+          ["2", "Wirkpfad, Kernfelder und Datenstand prüfen", "Mensch, Planet, Demokratie, Systemgrenze, Quelle, Version und Unsicherheit getrennt dokumentieren.", "Datenqualität als positiven Punkteaufschlag oder fehlende Daten als Entlastung behandeln."],
+          ["3", "Reverse Merit Order anwenden", "Kritische oder rote Befunde sichtbar machen und eine positive Bewertung begrenzen.", "Ein Minimum oder FinalScore als automatische Rechtsfolge ausgeben."],
+          ["4", "Prüfstatus ausgeben", "Profil dokumentiert, ambivalent, kritisch oder nicht bewertbar; mit Korrektur- und Einspruchsweg.", "Aus der Scorecard unmittelbar einen Satz, Bonus oder Malus rechnen."],
+          ["5", "Tarif politisch und rechtlich festlegen", "Ein späterer Satz t braucht Gesetz, Bemessungsgrundlage, Gleichbehandlung, Kaufkraft- und Übergangsregeln sowie Rechtsschutz.", "Eine private oder technische Demo als geltendes Steuerrecht darstellen."],
+          ["6", "Preisarithmetik zeigen", "Erst bei einem formal bestimmten Beispielsatz gilt P_brutto = P_netto × (1 + t).", "Den Beispielsatz als Ergebnis des FinalScore ausgeben."],
         ])}
-        ${sectionTitle("tarifmatrix", "Tarifmatrix")}
-        ${dataTable(["FinalScore", "Modell-Steuersatz"], [
-          ["+3", "0 %"],
-          ["+2", "5 %"],
-          ["+1", "10 %"],
-          ["0", "15 %"],
-          ["-1", "20 %"],
-          ["-2", "25 %"],
-          ["-3", "25-30 %"],
+        ${sectionTitle("pruefpfad-preisarithmetik", "Entscheidungsmatrix statt automatischem Tarif")}
+        <p>Die folgende Matrix trennt fachliche Bewertung und mögliche Rechtsfolge. Sie ersetzt keine Gesetzgebung. Ein veröffentlichter Satz kann später nur aus einer demokratisch beschlossenen, überprüfbaren und rechtsstaatlich anwendbaren Regel stammen.</p>
+        ${dataTable(["Befund", "Ausgabe der Scorecard", "Nächster Schritt", "Keine automatische Folge"], [
+          ["Datenlücke oder unklare Systemgrenze", "nicht bewertbar", "Daten nacherheben, Quelle und Grenze dokumentieren", "weder Entlastung noch Zuschlag"],
+          ["Rote Linie oder schwer negativer Kernbefund", "kritisch / Schutzprüfung geschlossen", "Schaden bearbeiten, Rechtsschutz und ggf. behördliche Prüfung", "keine Kompensation durch gute Teilwerte"],
+          ["Ambivalentes Profil", "Zielkonflikt sichtbar", "unabhängige Prüfung, Sensitivität und Verteilung prüfen", "kein aus dem Score abgeleiteter Satz"],
+          ["Dokumentiertes Profil ohne kritische Sperre", "prüfbar, aber keine Rechtsfolge", "nur eine gesetzlich festgelegte Tarifregel könnte anschließen", "kein Bonus allein wegen eines hohen Scores"],
         ])}
-        ${sectionTitle("apfelrechnung", "Apfelrechnung")}
-        ${dataTable(["Beispiel", "Nettopreis", "Kernfelder", "FinalScore", "Modell-Steuersatz", "Bruttopreis"], [
-          ["Regionaler Bio-Apfel", "1,00 EUR", "+2 / +1 / +2 / +1", "+1", "10 %", "1,10 EUR"],
-          ["Importierter Chile-Apfel", "1,00 EUR", "0 / -1 / 0 / +1", "-1", "20 %", "1,20 EUR"],
+        <p>Für die reine Preisarithmetik ist die Formel klein: Bei einem rechtlich vorgegebenen oder ausdrücklich als Testannahme markierten Satz t wird aus P_netto der Rechenpreis P_brutto = P_netto × (1 + t). Der Satz kommt von außen in die Rechnung; die Scorecard liefert ihn nicht.</p>
+        ${sectionTitle("apfelrechnung", "Apfelrechnung: Preisarithmetik, nicht Steuertarif")}
+        <p>Die Beispiele zeigen ausschließlich die Multiplikation mit zwei transparenten Testannahmen. Die unterschiedlichen Sätze sind nicht aus den Scores abgeleitet und sagen nichts über ein reales Produkt oder geltendes Recht aus.</p>
+        ${dataTable(["Beispiel", "Nettopreis", "Profilbefund", "Testannahme t", "Rechenweg", "Preis bei Testannahme"], [
+          ["Regionaler Bio-Apfel", "1,00 EUR", "Profil dokumentieren; keine automatische Entlastung", "10 %", "1,00 × 1,10", "1,10 EUR"],
+          ["Importierter Chile-Apfel", "1,00 EUR", "Wasser-, Transport- und Datenfragen prüfen; keine automatische Belastung", "20 %", "1,00 × 1,20", "1,20 EUR"],
         ])}
-        ${sectionTitle("t-shirt-rechnung", "T-Shirt-Rechnung")}
-        ${dataTable(["Beispiel", "Nettopreis", "Kritisches Feld", "FinalScore", "Modell-Steuersatz", "Bruttopreis"], [
-          ["Robustes Fair-Textil", "30,00 EUR", "Kreislauf +1, Arbeit +1", "+1", "10 %", "33,00 EUR"],
-          ["Fast-Fashion-Modell", "12,00 EUR", "Arbeit/Wasser -2", "-2", "25 %", "15,00 EUR"],
+        ${sectionTitle("t-shirt-rechnung", "T-Shirt-Rechnung: Preisarithmetik, nicht Steuertarif")}
+        <p>Auch hier sind die Sätze nur offen markierte Rechenannahmen. Arbeit, Wasser, Chemie und Kreislauf werden im Profil geprüft; ein kritischer Befund löst in diesem Dossier keinen automatischen Preisaufschlag aus.</p>
+        ${dataTable(["Beispiel", "Nettopreis", "Profilbefund", "Testannahme t", "Rechenweg", "Preis bei Testannahme"], [
+          ["Robustes Fair-Textil", "30,00 EUR", "Arbeits- und Kreislaufdaten prüfen", "10 %", "30,00 × 1,10", "33,00 EUR"],
+          ["Fast-Fashion-Modell", "12,00 EUR", "kritische Arbeits- und Wasserfragen prüfen", "25 %", "12,00 × 1,25", "15,00 EUR"],
         ])}
         ${sectionTitle("lieferketten-vorsteuer", "Lieferketten-/Vorsteuerbeispiel")}
         <p>Vorsteuer- und Bonuslogiken bleiben in dieser Fassung Pilotlogik. Positive Vorleistungen können entlastend wirken; schwere negative Wirkungen bleiben in der Kette sichtbar und können Nichtanrechnung, Prüfpflichten oder Abschläge auslösen.</p>
@@ -1628,14 +1628,14 @@ function dossierPage() {
         ${sectionTitle("datenquellen", "Datenquellen")}
         <p>Für eine belastbare Anwendung kommen offizielle und prüfbare Quellen in Betracht: SDGs, UN-Indikatoren, CSRD, ESRS, GRI, NACE, EPDs, digitale Produktpässe, Lieferantendaten und unabhängige Prüfung.</p>
         ${sectionTitle("tool-spezifikation", "Tool-Spezifikation")}
-        <p>Der Produktwirkungsrechner bildet die Logik minimal ab: Produktbeispiel wählen, Nettopreis setzen, Kernfeld-Scores prüfen, FinalScore als Minimum bilden, Modell-Steuersatz ableiten, Bruttopreis und Erklärung anzeigen.</p>
+        <p>Der Produktwirkungsrechner bildet den Prüfpfad minimal ab: Produktbeispiel wählen, Nettopreis und Kernfelder dokumentieren, Engpasssignal und Prüfstatus ausgeben und eine ausdrücklich eingegebene Preis-Testannahme rechnen. Er leitet keinen Steuersatz aus einem Score ab.</p>
         ${sectionTitle("einzeldossiers", "Einzeldossiers")}
         <p>Die Einzeldossiers vertiefen die Bausteine des Produktportals. Sie sind online lesbar und zitierfähig; Downloads bleiben ergänzende Export- und Archivfassungen.</p>
         ${cardGrid(base, productSingleDossiers.map((item) => ({
           title: item.title,
           text: item.subtitle,
-          href: `wirkungsfelder/produkte-konsum/dossiers/${item.slug}/`,
-          label: "Einzeldossier lesen",
+          href: item.canonical,
+          label: "Aktuelle Vertiefung öffnen",
         })))}
       </article>
     </section>
@@ -1732,8 +1732,8 @@ function workshopAliasPages() {
       base,
       kicker: "Werkstatt · Dossier",
       h1: "Dossier Produkte & Konsum",
-      subtitle: "Rechenmodell, Tarifmatrix, Beispiele und Quellen.",
-      text: "Die Werkstatt führt das Dossier als Arbeits- und Exportebene. Der Hauptzugang ist die online lesbare Dossierseite im Produktportal.",
+      subtitle: "Prüfpfad, Preis-Testannahmen, Beispiele und Quellen.",
+      text: "Die Werkstatt führt das Dossier als Arbeits- und Exportebene. Der Hauptzugang ist die online lesbare Dossierseite im Produktportal; die Preisbeispiele sind keine Satzableitung aus Scores.",
       actions: `<a class="btn btn-primary" href="${href(base, "wirkungsfelder/produkte-konsum/dossier/")}">Dossier online lesen</a>`,
     })}
     <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
@@ -1746,16 +1746,16 @@ function calculatorPage() {
   page({
     rel: "erleben/produktwirkungsrechner/index.html",
     title: "Produktwirkungsrechner | Wirkungsumsatzsteuer erleben",
-    description: "Modellhafte Demo: Produktbeispiel wählen, Nettopreis und Scores setzen, FinalScore, Wirkungssteuersatz und Bruttopreis berechnen.",
+    description: "Modellhafte Demo: Produktprofil prüfen und Preisarithmetik mit einer ausdrücklich eingegebenen Testannahme nachvollziehen.",
     searchSection: "Erleben",
     searchType: "Demo",
     body: (base, route) => `<section class="hero portal-hero">
       <div class="hero-content">
         <nav class="breadcrumb"><a href="${base}index.html">Start</a> / <a href="${base}erleben.html">Erleben</a></nav>
-        <p class="hero-kicker">Demo · Modell V0.1</p>
+        <p class="hero-kicker">Demo · Prüfpfad und Preisarithmetik</p>
         <h1>Produktwirkungsrechner</h1>
-        <p class="hero-subtitle">Scores, FinalScore, Steuerklasse und Bruttopreis modellhaft ausprobieren.</p>
-        <p>Die Demo zeigt, wie die Wirkungsumsatzsteuer als Rückkopplung gedacht werden kann. Sie ist keine amtliche Einstufung und keine Steuerberatung.</p>
+        <p class="hero-subtitle">Produktprofil prüfen und Preisarithmetik mit einer Testannahme nachvollziehen.</p>
+        <p>Die Demo trennt Scorecard, Prüfstatus und Preisrechnung. Sie leitet aus keinem Score einen Steuersatz ab, ist keine amtliche Einstufung und keine Steuerberatung.</p>
         ${printActions(`<a class="btn btn-primary" href="${href(base, "wirkungsfelder/produkte-konsum/")}">Produktportal öffnen</a>`)}
       </div>
     </section>
@@ -1766,7 +1766,7 @@ function calculatorPage() {
         <div class="section-header">
           <p class="hero-kicker">Rechner</p>
           ${sectionTitle("calculator-title", "Produktwirkung simulieren")}
-          <p>FinalScore = niedrigster Score der Kernfelder. Für FinalScore -3 wird in der Demo mit 30 % gerechnet; der Modellkorridor lautet 25-30 %.</p>
+          <p>Das Engpasssignal orientiert sich am niedrigsten Kernfeldscore und macht kritische Befunde sichtbar. Es löst keinen Satz aus. Die Preisrechnung verwendet ausschließlich die unten ausdrücklich eingegebene Testannahme t: P_brutto = P_netto × (1 + t).</p>
         </div>
         <div class="calculator-grid">
           <form class="card calculator-form">
@@ -1781,6 +1781,9 @@ function calculatorPage() {
             <label>Nettopreis in EUR
               <input name="netPrice" type="number" min="0" step="0.01" value="1.00">
             </label>
+            <label>Testannahme t in Prozent (nur Preisarithmetik, kein abgeleiteter Tarif)
+              <input name="modelRate" type="number" min="0" max="100" step="0.1" value="10">
+            </label>
             <div class="score-inputs" aria-label="Kernfeld-Scores">
               ${["mensch", "planet", "demokratie", "daten"].map((field) => `<label>${field[0].toUpperCase()}${field.slice(1)}
                 <input name="${field}" type="number" min="-3" max="3" step="1" value="0">
@@ -1791,13 +1794,14 @@ function calculatorPage() {
             <p class="card-kicker">Ergebnis</p>
             <h2 id="calc-product-name">Bio-Apfel regional</h2>
             <dl>
-              <div><dt>FinalScore</dt><dd data-result="finalScore">+1</dd></div>
-              <div><dt>Modell-Steuersatz</dt><dd data-result="taxRate">10 %</dd></div>
+              <div><dt>Engpasssignal / FinalScore</dt><dd data-result="finalScore">+1</dd></div>
+              <div><dt>Prüfstatus</dt><dd data-result="status">Profil dokumentiert</dd></div>
+              <div><dt>Testannahme t</dt><dd data-result="modelRate">10 % (keine Tarifempfehlung)</dd></div>
               <div><dt>Nettopreis</dt><dd data-result="netPrice">1,00 EUR</dd></div>
-              <div><dt>Bruttopreis</dt><dd data-result="grossPrice">1,10 EUR</dd></div>
+              <div><dt>Preis bei Testannahme</dt><dd data-result="grossPrice">1,10 EUR</dd></div>
             </dl>
-            <p data-result="explanation">Der FinalScore wird durch das schwächste Kernfeld begrenzt.</p>
-            <p class="scanner-notice"><strong>Hinweis:</strong> Modellhafte Demonstration. Keine amtliche Einstufung. Keine Steuerberatung.</p>
+            <p data-result="explanation">Der FinalScore begrenzt die positive Bewertung, leitet aber keinen Tarif ab.</p>
+            <p class="scanner-notice"><strong>Hinweis:</strong> Modellhafte Demonstration. Kein Score führt automatisch zu einem Satz, Bonus, Malus oder Preis. Keine amtliche Einstufung. Keine Steuerberatung.</p>
           </aside>
         </div>
       </div>
@@ -1807,7 +1811,7 @@ function calculatorPage() {
     ${sdgBlock(base, "Der Rechner zeigt modellhaft, wie Produktwirkung entlang von Mensch, Planet, Demokratie und Datenqualität bewertet werden könnte.")}
     ${bookBlock(base)}
     ${downloadBlock(base, [{ label: "Dossier online lesen", href: "wirkungsfelder/produkte-konsum/dossier/" }, { label: "Toolkontext öffnen", href: "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/" }])}
-    <script src="${base}assets/js/produktwirkungsrechner.js?v=20260524-produktrechner"></script>`,
+    <script src="${base}assets/js/produktwirkungsrechner.js?v=20260802-pruefpfad-v2"></script>`,
   });
 }
 
@@ -1836,13 +1840,13 @@ function productArbeitsbibliothekPage() {
       </div>
       ${cardGrid(base, [
         { kicker: "Detailkonzept", title: "Produkte als Wirkungsträger", text: "Go-8-Vertiefung zu Produktwirkung über Lebenszyklus, Lieferkette, Nutzung und Ende.", href: "wirkungsfelder/produkte-konsum/produkte-als-wirkungstraeger/", label: "Online lesen" },
-        { kicker: "Detailkonzept", title: "Wirkungsumsatzsteuer / Produktwirkungssteuer", text: "Go-8-Vertiefung zu FinalScore, Steuerklassen, Vorsteuerlogik, Kaufkraftschutz und Wirkungsrat.", href: "wirkungsfelder/produkte-konsum/wirkungsumsatzsteuer-produktwirkungssteuer/", label: "Online lesen" },
+        { kicker: "Detailkonzept", title: "Wirkungsumsatzsteuer / Produktwirkungssteuer", text: "Go-8-Vertiefung zu Prüfpfad, FinalScore als Engpasssignal, Vorsteuerlogik, Kaufkraftschutz und Wirkungsrat.", href: "wirkungsfelder/produkte-konsum/wirkungsumsatzsteuer-produktwirkungssteuer/", label: "Online lesen" },
         { kicker: "Detailkonzept", title: "Produktscorecards, Reverse Merit Order und digitale Produktpässe", text: "Go-8-Vertiefung zu Scorecards, WÖk-IDs, DPP, Datenqualität und Engpasslogik.", href: "wirkungsfelder/produkte-konsum/produktscorecards-reverse-merit-order-digitale-produktpaesse/", label: "Online lesen" },
-        { kicker: "Detailkonzept", title: "Das Apfelbeispiel und die Produktwirkungsrechnung im Alltag", text: "Go-9-Vertiefung zu Scorecard, Steuerklasse, Preisschild und Produktwirkungsrechnung am Alltagsbeispiel.", href: "wirkungsfelder/produkte-konsum/apfelbeispiel-produktwirkungsrechnung/", label: "Online lesen" },
+        { kicker: "Detailkonzept", title: "Das Apfelbeispiel und die Produktwirkungsrechnung im Alltag", text: "Go-9-Vertiefung zu Scorecard, Prüfpfad, Preis-Testannahme und Produktwirkungsrechnung am Alltagsbeispiel.", href: "wirkungsfelder/produkte-konsum/apfelbeispiel-produktwirkungsrechnung/", label: "Online lesen" },
         { kicker: "Detailkonzept", title: "Lieferketten, Importlogik und Wirkungsvorsteuer", text: "Go-9-Vertiefung zu Vorleistungen, Importen, Bonuslogik, Supplier Scorecards und DPP.", href: "wirkungsfelder/produkte-konsum/lieferketten-importlogik-wirkungsvorsteuer/", label: "Online lesen" },
         { kicker: "Detailkonzept", title: "Konzern- und Produktgruppenbeispiel: Von CSRD zur Produktscorecard", text: "Go-9-Vertiefung zu CSRD/ESRS, Produktgruppen, WÖk-IDs und Produktpass-Mapping.", href: "wirkungsfelder/produkte-konsum/konzernbeispiel-csrd-produktscorecard/", label: "Online lesen" },
-        { kicker: "Konzeptpapier", title: "Produktbesteuerung durch Wirkung", text: "Kanonische Online-Fassung des Konzeptpapiers zu NACE, WÖk-IDs, Scorecards, Reverse Merit Order, Steuerklassen und Vorsteuerlogik.", href: "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/", label: "Online lesen" },
-        { kicker: "Dossier", title: "Dossier Produkte & Konsum", text: "Rechenmodell V0.1, Tarifmatrix, Apfelrechnung, T-Shirt-Rechnung, Lieferkettenlogik und Quellen online lesbar.", href: "wirkungsfelder/produkte-konsum/dossier/", label: "Online lesen" },
+        { kicker: "Konzeptpapier", title: "Produktbesteuerung durch Wirkung", text: "Kanonische Online-Fassung des Konzeptpapiers zu NACE, WÖk-IDs, Scorecards, Reverse Merit Order, rechtlicher Tarifentscheidung und Vorsteuerlogik.", href: "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/", label: "Online lesen" },
+        { kicker: "Dossier", title: "Dossier Produkte & Konsum", text: "Prüfpfad, Preis-Testannahmen, Apfelrechnung, T-Shirt-Rechnung, Lieferkettenlogik und Quellen online lesbar.", href: "wirkungsfelder/produkte-konsum/dossier/", label: "Online lesen" },
         { kicker: "Werkstatt", title: "Whitepaper-Eintrag", text: "Werkstatt-Verweis auf das Produktpapier mit Online-Volltext und ergänzenden Downloadhinweisen.", href: "werkstatt/whitepaper/produktbesteuerung-durch-wirkung/", label: "Werkstatt öffnen" },
         { kicker: "Werkstatt", title: "Dossier-Eintrag", text: "Werkstatt-Verweis auf das Dossier Produkte & Konsum.", href: "werkstatt/dossiers/produkte-konsum/", label: "Werkstatt öffnen" },
         { kicker: "Beispiel", title: "Regionaler Apfel vs. Chile-Apfel", text: "Produktscorecard und Wirkungssteuerlogik am Apfelbeispiel.", href: "wirkungsfelder/produkte-konsum/apfelbeispiel/", label: "Online lesen" },
@@ -1851,7 +1855,7 @@ function productArbeitsbibliothekPage() {
         { kicker: "Konzernbeispiel", title: "Von der CSRD zur Produktscorecard", text: "BASF-/Polyamid-Beispiel für Produktgruppen und Berichtsdaten.", href: "wirkungsfelder/produkte-konsum/basf-polyamid/", label: "Online lesen" },
         { kicker: "Leitlinie", title: "Technische Leitlinien WUStG", text: "Online-Fassung der technischen Leitlinien als Werkstattquelle.", href: "werkstatt/leitlinien/wustg/", label: "Leitlinie lesen" },
         { kicker: "Gesetz", title: "Wirkungssteuergesetz WStG", text: "LawReader mit Paragrafen, Kurzfassungen, Kommentar und Begründung.", href: "werkstatt/gesetze/wirkungssteuergesetz/", label: "Gesetz lesen" },
-        { kicker: "Demo", title: "Produktwirkungsrechner", text: "Modellhafte Simulation von Scores, FinalScore, Steuerklasse und Bruttopreis.", href: "erleben/produktwirkungsrechner/", label: "Demo öffnen" },
+        { kicker: "Demo", title: "Produktwirkungsrechner", text: "Modellhafte Simulation von Scores, Engpasssignal, Prüfstatus und einer eingegebenen Preis-Testannahme.", href: "erleben/produktwirkungsrechner/", label: "Demo öffnen" },
         { kicker: "Archiv", title: "Working Paper PDF", text: "Bestehende PDF-Fassung bleibt als Archiv- und Exportfassung erreichbar.", href: "assets/pdf/working-paper-produktbesteuerung-durch-wirkung.pdf", label: "PDF öffnen" },
       ])}
     </section>
@@ -1916,12 +1920,12 @@ function build() {
     rel: "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/index.html",
     source: sources.productTax,
     title: "Produktbesteuerung durch Wirkung | Wirkungsumsatzsteuer",
-    description: "Vollständige Online-Fassung zur Produktbesteuerung durch Wirkung: NACE, WÖk-IDs, Scorecards, Reverse Merit Order, Steuerklassen und Vorsteuerlogik.",
+    description: "Vollständige Online-Fassung zur Produktbesteuerung durch Wirkung: NACE, WÖk-IDs, Scorecards, Reverse Merit Order, Prüfpfad, rechtliche Tarifentscheidung und Vorsteuerlogik.",
     kicker: "Online-Volltext",
     h1: "Produktbesteuerung durch Wirkung",
     subtitle: "Wie Produkte nach ihrer Wirkung auf Mensch, Planet und Demokratie besteuert werden können.",
     hero: "Diese Seite bildet das Produktpapier vollständig online ab. Der Hauptzugang ist der Webtext; Downloads bleiben Archiv und Export.",
-    contextIntro: (base) => `Die Bewertung erfolgt über ${toolRef(base, "Produktscorecards", "werkzeuge/produktscorecards/", "Bewertungsraster, das Produktdaten in Scores von -3 bis +3 übersetzt.")}, deren FinalScore nach der ${toolRef(base, "Reverse Merit Order", "werkzeuge/reverse-merit-order/", "Das schwächste kritische Wirkungsfeld begrenzt die Einstufung.")} gebildet wird. Die technische Ausgestaltung verweist auf ${lawRef(base, "wustg5")} und ${lawRef(base, "wustg7")}.`,
+    contextIntro: (base) => `Die Bewertung erfolgt über ${toolRef(base, "Produktscorecards", "werkzeuge/produktscorecards/", "Bewertungsraster, das Produktdaten in Scores von -3 bis +3 übersetzt.")}; der FinalScore wird nach der ${toolRef(base, "Reverse Merit Order", "werkzeuge/reverse-merit-order/", "Das schwächste kritische Wirkungsfeld begrenzt positive Aussagen.")} als Engpasssignal dokumentiert. Er leitet keinen Satz ab. Die technische und rechtliche Ausgestaltung verweist auf ${lawRef(base, "wustg5")} und ${lawRef(base, "wustg7")}.`,
     sdgText: "Produktbesteuerung durch Wirkung verknüpft Konsum, Produktion, Arbeit, Gesundheit, Klima, Biodiversität, Datenqualität und institutionelle Prüfung. Zielgröße ist positive Netto-Wirkung für Mensch, Planet und Demokratie.",
     downloads: [{ label: "Zum Wirkungsfeld", href: "wirkungsfelder/produkte-konsum/" }, { label: "Zur Bibliothek", href: "downloads.html" }],
   });
@@ -1932,12 +1936,12 @@ function build() {
     description: "Wie ein regionaler Bio-Apfel und ein importierter Apfel anhand von SDGs, CSRD/ESRS-Daten, Scorecards und Wirkungssteuer unterschiedlich eingestuft werden.",
     kicker: "Beispiel",
     h1: "Regionaler Apfel vs. Chile-Apfel",
-    subtitle: "Wie eine Wirkungssteuer Produkte automatisch und nachvollziehbar einstuft.",
+    subtitle: "Wie ein Wirkungsprofil nachvollziehbar geprüft und von einer Preis-Testannahme getrennt wird.",
     hero: "Das Apfelbeispiel zeigt didaktisch, dass regional, bio oder importiert nicht automatisch positiv oder negativ ist. Kontext, Datenqualität und rote Linien entscheiden.",
-    contextIntro: (base) => `Das Beispiel nutzt NACE 01.24, WÖk-IDs, Scorecard, FinalScore, ${toolRef(base, "Reverse Merit Order", "werkzeuge/reverse-merit-order/", "Das schwächste Wirkungsfeld entscheidet.")} und modellhafte Wirkungsumsatzsteuer. Es ist keine amtliche Einstufung.`,
+    contextIntro: (base) => `Das Beispiel nutzt NACE 01.24, WÖk-IDs, Scorecard, FinalScore als Engpasssignal, ${toolRef(base, "Reverse Merit Order", "werkzeuge/reverse-merit-order/", "Das schwächste kritische Wirkungsfeld begrenzt positive Aussagen.")} und eine modellhafte Wirkungsumsatzsteuer. Es ist keine amtliche Einstufung und leitet keinen Satz ab.`,
     sdgText: "Das Apfelbeispiel berührt Ernährung, Wasser, Biodiversität, Arbeit, Gesundheit, Transport, Verpackung und Konsumtransparenz.",
     downloads: [
-      { label: "Dossier online lesen", href: "wirkungsfelder/produkte-konsum/dossiers/apfelbeispiel/" },
+      { label: "Aktuelle Detailfassung v1.1", href: "wirkungsfelder/produkte-konsum/apfelbeispiel-produktwirkungsrechnung/" },
       { label: "Konzept-Onlinefassung öffnen", href: "dokumente/beispiel-apfel-wirkungssteuer-bonusregel/" },
       { label: "Scorecard-Demo öffnen", href: "scorecard-dashboard.html" },
     ],
@@ -1974,11 +1978,11 @@ function build() {
   compactContextPage({
     rel: "wirkungsfelder/produkte-konsum/verbraucherinformation/index.html",
     title: "Verbraucherinformation",
-    subtitle: "Wirkungspunkte, Steuerklassen, Produktlabel und Regaltransparenz ohne Personenbewertung.",
-    description: "Verbraucherinformation macht Produktwirkung sichtbar, bewertet aber keine Menschen. Sie zeigt Produktklasse, Datenqualität und Wirkungsfelder datensparsam am Produkt, im Regal oder auf dem Kassenbon.",
+    subtitle: "Wirkungspunkte, Prüfstatus, Produktlabel und Regaltransparenz ohne Personenbewertung.",
+    description: "Verbraucherinformation macht Produktwirkung sichtbar, bewertet aber keine Menschen. Sie zeigt Wirkungsprofil, Datenqualität und Wirkungsfelder datensparsam am Produkt, im Regal oder auf dem Kassenbon.",
     sections: [
       { kicker: "Prinzip", title: "Produkt statt Person", text: "Die Wirkungsökonomie bewertet Produkte, Dienstleistungen und Lieferketten, nicht individuelles Kaufverhalten." },
-      { kicker: "Transparenz", title: "Wirkungspunkte und Steuerklasse", text: "Wirkungspunkte können erklären, warum ein Produkt entlastet, neutral behandelt oder belastet wird." },
+      { kicker: "Transparenz", title: "Wirkungspunkte und Prüfstatus", text: "Wirkungspunkte können erklären, welche Wirkungsfelder dokumentiert sind, wo Unsicherheit besteht und welche kritischen Befunde geprüft werden müssen." },
       { kicker: "Schutz", title: "Keine Konsumüberwachung", text: "Freiwillige Bonusmodelle dürfen nur datensparsam, transparent und ohne Personenbewertung gedacht werden." },
     ],
   });
@@ -2008,17 +2012,17 @@ function build() {
     rel: "werkzeuge/wirkungsumsatzsteuer/index.html",
     h1: "Wirkungsumsatzsteuer",
     subtitle: "Produktwirkungssteuer der Wirkungsökonomie.",
-    description: "Die Wirkungsumsatzsteuer koppelt Steuersätze im Pilotmodell an die messbare Wirkung von Produkten und Dienstleistungen auf Mensch, Planet und Demokratie.",
+    description: "Die Wirkungsumsatzsteuer beschreibt, wie messbare Produktwirkung eine demokratisch bestimmte, rechtsstaatlich geprüfte Steuerlogik informieren kann; sie leitet keinen Steuersatz aus einem Score ab.",
     sections: [
-      { kicker: "Abgrenzung", title: "Nicht pauschal nach Umsatz", text: (base) => `Die Steuerlogik betrachtet Produktwirkung über ${toolRef(base, "Produktscorecards", "werkzeuge/produktscorecards/", "Bewertungsraster für Produktwirkung.")}, WÖk-IDs, FinalScore und Reverse Merit Order.` },
-      { kicker: "Rechtsstatus", title: "Pilot- und Modelllogik", text: (base) => `Eine verbindliche Anwendung setzt Gesetzgebung, Rechtsschutz und Dateninfrastruktur voraus. Siehe ${lawRef(base, "wustg5")} und ${lawRef(base, "wustg7")}.` },
+      { kicker: "Abgrenzung", title: "Nicht pauschal nach Umsatz", text: (base) => `Die Steuerlogik betrachtet Produktwirkung über ${toolRef(base, "Produktscorecards", "werkzeuge/produktscorecards/", "Bewertungsraster für Produktwirkung.")}, WÖk-IDs, FinalScore als Engpasssignal und Reverse Merit Order. Das Prüfprofil ist nicht der Tarif.` },
+      { kicker: "Rechtsstatus", title: "Pilot- und Modelllogik", text: (base) => `Eine verbindliche Anwendung setzt Gesetzgebung, Rechtsschutz, Dateninfrastruktur und eine transparent beschlossene Tarifregel voraus. Erst dann gilt die einfache Preisarithmetik P_brutto = P_netto × (1 + t); t wird nicht aus einem Score berechnet. Siehe ${lawRef(base, "wustg5")} und ${lawRef(base, "wustg7")}.` },
       { kicker: "Ziel", title: "Positive Netto-Wirkung", text: () => "Die Zielgröße ist positive Netto-Wirkung für Mensch, Planet und Demokratie, nicht Wirkung schlechthin." },
     ],
     appliedIn: [
       { title: "Produkte & Konsum", text: "Hauptportal für Produktwirkung, Preise und Konsumentscheidungen.", href: "wirkungsfelder/produkte-konsum/" },
       { title: "Produktbesteuerung durch Wirkung", text: "Volltext des Produktpapiers.", href: "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/" },
-      { title: "Wirkungsumsatzsteuer / Produktwirkungssteuer", text: "Detailkonzept zu FinalScore, Steuerklassen, Vorsteuerlogik, Kaufkraftschutz und Wirkungsrat.", href: "wirkungsfelder/produkte-konsum/wirkungsumsatzsteuer-produktwirkungssteuer/" },
-      { title: "Apfelbeispiel und Produktwirkungsrechnung", text: "Alltagsnaher Testfall für Scorecard, Steuerklasse und Verbraucherinformation.", href: "wirkungsfelder/produkte-konsum/apfelbeispiel-produktwirkungsrechnung/" },
+      { title: "Wirkungsumsatzsteuer / Produktwirkungssteuer", text: "Detailkonzept zu Prüfpfad, FinalScore als Engpasssignal, Vorsteuerlogik, Kaufkraftschutz und Wirkungsrat.", href: "wirkungsfelder/produkte-konsum/wirkungsumsatzsteuer-produktwirkungssteuer/" },
+      { title: "Apfelbeispiel und Produktwirkungsrechnung", text: "Alltagsnaher Testfall für Scorecard, Prüfstatus, Preis-Testannahme und Verbraucherinformation.", href: "wirkungsfelder/produkte-konsum/apfelbeispiel-produktwirkungsrechnung/" },
       { title: "Lieferketten und Wirkungsvorsteuer", text: "Vorsteuer-, Bonus-, Import- und Lieferantenlogik als Detailkonzept.", href: "wirkungsfelder/produkte-konsum/lieferketten-importlogik-wirkungsvorsteuer/" },
       { title: "CSRD zur Produktscorecard", text: "Konzern- und Produktgruppenbeispiel für produktbezogene Wirkungsdaten.", href: "wirkungsfelder/produkte-konsum/konzernbeispiel-csrd-produktscorecard/" },
       { title: "Lieferketten", text: "Vorsteuer-, Bonus- und Lieferantenlogik.", href: "wirkungsfelder/produkte-konsum/lieferketten/" },

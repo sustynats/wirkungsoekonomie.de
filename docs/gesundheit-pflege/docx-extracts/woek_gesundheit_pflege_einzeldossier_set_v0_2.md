@@ -20,15 +20,15 @@ Wirkungsökonomie
 
 Version
 
-v0.2
+v0.3 Korrekturfassung
 
 Stand
 
-24. Mai 2026
+2. August 2026
 
 Status
 
-Arbeitsfassung / Diskussionsfassung
+Korrekturfassung / öffentliche Lesefassung
 
 Leitsatz
 
@@ -36,7 +36,7 @@ Gesundheit wird nicht erst dann finanziert, wenn sie verloren ist. Gesundheit wi
 
 Inhaltslogik
 
-Dieses Dokument ist eine öffentliche Arbeitsfassung. Jeder Unterbereich ist so aufgebaut, dass er als eigenständige Online-Volltextseite, Download und Dossierbaustein genutzt werden kann.
+Diese öffentliche Lesefassung korrigiert die frühere Mischrechnung von Geldwerten und nichtmonetären Zustandsveränderungen. Die historische PDF-Fassung v0.2 bleibt als Quellenfassung erreichbar; für T-SROI gilt zusätzlich der aktuelle Rechenstandard v1.1 im Quellenarchiv WÖK-Q-1024. Jeder Unterbereich ist so aufgebaut, dass er als eigenständige Online-Volltextseite, Download und Dossierbaustein genutzt werden kann.
 
 Dossier-Methodik
 
@@ -138,7 +138,13 @@ Beispielhaft wird ein Pilot mit 50.000 Einwohner:innen betrachtet. Ausgangsdaten
 
 12. Rechenlogik für das Dossier
 
-Wirkungsnutzen = vermiedene Behandlungskosten + vermiedene Pflegeeskalation + reduzierte Arbeitsausfälle + Angehörigenentlastung + Resilienzgewinn + Teilhabewirkung - Programmkosten - Nebenwirkungen. Alle Annahmen werden als Quelle, Schätzung oder Modellwert gekennzeichnet.
+Zwei Bilanzen statt einer Mischrechnung: Euro gehören zu Euro. Lebensqualität, Autonomie, Teilhabe und Resilienz behalten ihre eigenen Einheiten. Beides zählt, wird aber nicht zu einer Zahl vermischt.
+
+Monetäre Bilanz (EUR, Preisbasis und Zeitraum offenlegen): B_EUR = Summe_t [(vermiedene Behandlungskosten_t + vermiedene Pflegekosten_t + monetarisierte Arbeitsausfälle_t + sonstige dokumentiert monetarisierte Nutzen_t - Programmkosten_t - monetarisierte Nebenwirkungs- und Verlagerungskosten_t) / (1 + r)^t]. Jeder Term ist Euro desselben Preisjahrs; r ist der dokumentierte Diskontsatz. Fehlt eine belastbare Monetarisierung, darf der Term nicht in B_EUR stehen.
+
+Nichtmonetäres Wirkungsprofil: Für Gesundheitszustand, Autonomie, Teilhabe, Resilienz, Gerechtigkeit und mögliche Schäden wird je Indikator die Veränderung gegenüber dem Vergleichsfall ausgewiesen: Δx_k = x_k,mit Maßnahme - x_k,ohne Maßnahme. Jede Angabe braucht Einheit, Zeitraum, Quelle, Vergleichsfall, Attribution und Unsicherheit. Diese Veränderungen werden nicht in Euro umgerechnet und nicht zu einem Durchschnitt verrechnet.
+
+Entscheidungsregel: Eine positive monetäre Bilanz ist kein Freifahrtschein. Eine positive Netto-Wirkung wird nur ausgewiesen, wenn Wirkungsgrenze, Vergleichsfall und Datenqualität offenliegen, keine rote Linie verletzt wird und das Wirkungsprofil keine schwere Verschlechterung verdeckt. Alle Angaben bleiben Quelle, Schätzung oder Modellwert.
 
 Prävention, Gesundheitskassen und Wirkungshaushalt
 
@@ -236,7 +242,13 @@ Beispielhaft wird ein Pilot mit 50.000 Einwohner:innen betrachtet. Ausgangsdaten
 
 12. Rechenlogik für das Dossier
 
-Wirkungsnutzen = vermiedene Behandlungskosten + vermiedene Pflegeeskalation + reduzierte Arbeitsausfälle + Angehörigenentlastung + Resilienzgewinn + Teilhabewirkung - Programmkosten - Nebenwirkungen. Alle Annahmen werden als Quelle, Schätzung oder Modellwert gekennzeichnet.
+Zwei Bilanzen statt einer Mischrechnung: Euro gehören zu Euro. Lebensqualität, Autonomie, Teilhabe und Resilienz behalten ihre eigenen Einheiten. Beides zählt, wird aber nicht zu einer Zahl vermischt.
+
+Monetäre Bilanz (EUR, Preisbasis und Zeitraum offenlegen): B_EUR = Summe_t [(vermiedene Behandlungskosten_t + vermiedene Pflegekosten_t + monetarisierte Arbeitsausfälle_t + sonstige dokumentiert monetarisierte Nutzen_t - Programmkosten_t - monetarisierte Nebenwirkungs- und Verlagerungskosten_t) / (1 + r)^t]. Jeder Term ist Euro desselben Preisjahrs; r ist der dokumentierte Diskontsatz. Fehlt eine belastbare Monetarisierung, darf der Term nicht in B_EUR stehen.
+
+Nichtmonetäres Wirkungsprofil: Für Gesundheitszustand, Autonomie, Teilhabe, Resilienz, Gerechtigkeit und mögliche Schäden wird je Indikator die Veränderung gegenüber dem Vergleichsfall ausgewiesen: Δx_k = x_k,mit Maßnahme - x_k,ohne Maßnahme. Jede Angabe braucht Einheit, Zeitraum, Quelle, Vergleichsfall, Attribution und Unsicherheit. Diese Veränderungen werden nicht in Euro umgerechnet und nicht zu einem Durchschnitt verrechnet.
+
+Entscheidungsregel: Eine positive monetäre Bilanz ist kein Freifahrtschein. Eine positive Netto-Wirkung wird nur ausgewiesen, wenn Wirkungsgrenze, Vergleichsfall und Datenqualität offenliegen, keine rote Linie verletzt wird und das Wirkungsprofil keine schwere Verschlechterung verdeckt. Alle Angaben bleiben Quelle, Schätzung oder Modellwert.
 
 Versorgungsräume, Kliniken und Gesundheitsnetzwerke
 
@@ -334,7 +346,13 @@ Beispielhaft wird ein Pilot mit 50.000 Einwohner:innen betrachtet. Ausgangsdaten
 
 12. Rechenlogik für das Dossier
 
-Wirkungsnutzen = vermiedene Behandlungskosten + vermiedene Pflegeeskalation + reduzierte Arbeitsausfälle + Angehörigenentlastung + Resilienzgewinn + Teilhabewirkung - Programmkosten - Nebenwirkungen. Alle Annahmen werden als Quelle, Schätzung oder Modellwert gekennzeichnet.
+Zwei Bilanzen statt einer Mischrechnung: Euro gehören zu Euro. Lebensqualität, Autonomie, Teilhabe und Resilienz behalten ihre eigenen Einheiten. Beides zählt, wird aber nicht zu einer Zahl vermischt.
+
+Monetäre Bilanz (EUR, Preisbasis und Zeitraum offenlegen): B_EUR = Summe_t [(vermiedene Behandlungskosten_t + vermiedene Pflegekosten_t + monetarisierte Arbeitsausfälle_t + sonstige dokumentiert monetarisierte Nutzen_t - Programmkosten_t - monetarisierte Nebenwirkungs- und Verlagerungskosten_t) / (1 + r)^t]. Jeder Term ist Euro desselben Preisjahrs; r ist der dokumentierte Diskontsatz. Fehlt eine belastbare Monetarisierung, darf der Term nicht in B_EUR stehen.
+
+Nichtmonetäres Wirkungsprofil: Für Gesundheitszustand, Autonomie, Teilhabe, Resilienz, Gerechtigkeit und mögliche Schäden wird je Indikator die Veränderung gegenüber dem Vergleichsfall ausgewiesen: Δx_k = x_k,mit Maßnahme - x_k,ohne Maßnahme. Jede Angabe braucht Einheit, Zeitraum, Quelle, Vergleichsfall, Attribution und Unsicherheit. Diese Veränderungen werden nicht in Euro umgerechnet und nicht zu einem Durchschnitt verrechnet.
+
+Entscheidungsregel: Eine positive monetäre Bilanz ist kein Freifahrtschein. Eine positive Netto-Wirkung wird nur ausgewiesen, wenn Wirkungsgrenze, Vergleichsfall und Datenqualität offenliegen, keine rote Linie verletzt wird und das Wirkungsprofil keine schwere Verschlechterung verdeckt. Alle Angaben bleiben Quelle, Schätzung oder Modellwert.
 
 Pflege als Wirkleistung und Pflegeökosystem
 
@@ -432,7 +450,13 @@ Beispielhaft wird ein Pilot mit 50.000 Einwohner:innen betrachtet. Ausgangsdaten
 
 12. Rechenlogik für das Dossier
 
-Wirkungsnutzen = vermiedene Behandlungskosten + vermiedene Pflegeeskalation + reduzierte Arbeitsausfälle + Angehörigenentlastung + Resilienzgewinn + Teilhabewirkung - Programmkosten - Nebenwirkungen. Alle Annahmen werden als Quelle, Schätzung oder Modellwert gekennzeichnet.
+Zwei Bilanzen statt einer Mischrechnung: Euro gehören zu Euro. Lebensqualität, Autonomie, Teilhabe und Resilienz behalten ihre eigenen Einheiten. Beides zählt, wird aber nicht zu einer Zahl vermischt.
+
+Monetäre Bilanz (EUR, Preisbasis und Zeitraum offenlegen): B_EUR = Summe_t [(vermiedene Behandlungskosten_t + vermiedene Pflegekosten_t + monetarisierte Arbeitsausfälle_t + sonstige dokumentiert monetarisierte Nutzen_t - Programmkosten_t - monetarisierte Nebenwirkungs- und Verlagerungskosten_t) / (1 + r)^t]. Jeder Term ist Euro desselben Preisjahrs; r ist der dokumentierte Diskontsatz. Fehlt eine belastbare Monetarisierung, darf der Term nicht in B_EUR stehen.
+
+Nichtmonetäres Wirkungsprofil: Für Gesundheitszustand, Autonomie, Teilhabe, Resilienz, Gerechtigkeit und mögliche Schäden wird je Indikator die Veränderung gegenüber dem Vergleichsfall ausgewiesen: Δx_k = x_k,mit Maßnahme - x_k,ohne Maßnahme. Jede Angabe braucht Einheit, Zeitraum, Quelle, Vergleichsfall, Attribution und Unsicherheit. Diese Veränderungen werden nicht in Euro umgerechnet und nicht zu einem Durchschnitt verrechnet.
+
+Entscheidungsregel: Eine positive monetäre Bilanz ist kein Freifahrtschein. Eine positive Netto-Wirkung wird nur ausgewiesen, wenn Wirkungsgrenze, Vergleichsfall und Datenqualität offenliegen, keine rote Linie verletzt wird und das Wirkungsprofil keine schwere Verschlechterung verdeckt. Alle Angaben bleiben Quelle, Schätzung oder Modellwert.
 
 Psychische Gesundheit und soziale Stabilität
 
@@ -530,7 +554,13 @@ Beispielhaft wird ein Pilot mit 50.000 Einwohner:innen betrachtet. Ausgangsdaten
 
 12. Rechenlogik für das Dossier
 
-Wirkungsnutzen = vermiedene Behandlungskosten + vermiedene Pflegeeskalation + reduzierte Arbeitsausfälle + Angehörigenentlastung + Resilienzgewinn + Teilhabewirkung - Programmkosten - Nebenwirkungen. Alle Annahmen werden als Quelle, Schätzung oder Modellwert gekennzeichnet.
+Zwei Bilanzen statt einer Mischrechnung: Euro gehören zu Euro. Lebensqualität, Autonomie, Teilhabe und Resilienz behalten ihre eigenen Einheiten. Beides zählt, wird aber nicht zu einer Zahl vermischt.
+
+Monetäre Bilanz (EUR, Preisbasis und Zeitraum offenlegen): B_EUR = Summe_t [(vermiedene Behandlungskosten_t + vermiedene Pflegekosten_t + monetarisierte Arbeitsausfälle_t + sonstige dokumentiert monetarisierte Nutzen_t - Programmkosten_t - monetarisierte Nebenwirkungs- und Verlagerungskosten_t) / (1 + r)^t]. Jeder Term ist Euro desselben Preisjahrs; r ist der dokumentierte Diskontsatz. Fehlt eine belastbare Monetarisierung, darf der Term nicht in B_EUR stehen.
+
+Nichtmonetäres Wirkungsprofil: Für Gesundheitszustand, Autonomie, Teilhabe, Resilienz, Gerechtigkeit und mögliche Schäden wird je Indikator die Veränderung gegenüber dem Vergleichsfall ausgewiesen: Δx_k = x_k,mit Maßnahme - x_k,ohne Maßnahme. Jede Angabe braucht Einheit, Zeitraum, Quelle, Vergleichsfall, Attribution und Unsicherheit. Diese Veränderungen werden nicht in Euro umgerechnet und nicht zu einem Durchschnitt verrechnet.
+
+Entscheidungsregel: Eine positive monetäre Bilanz ist kein Freifahrtschein. Eine positive Netto-Wirkung wird nur ausgewiesen, wenn Wirkungsgrenze, Vergleichsfall und Datenqualität offenliegen, keine rote Linie verletzt wird und das Wirkungsprofil keine schwere Verschlechterung verdeckt. Alle Angaben bleiben Quelle, Schätzung oder Modellwert.
 
 Gesundheitsgerechtigkeit, Inklusion und Migration
 
@@ -628,7 +658,13 @@ Beispielhaft wird ein Pilot mit 50.000 Einwohner:innen betrachtet. Ausgangsdaten
 
 12. Rechenlogik für das Dossier
 
-Wirkungsnutzen = vermiedene Behandlungskosten + vermiedene Pflegeeskalation + reduzierte Arbeitsausfälle + Angehörigenentlastung + Resilienzgewinn + Teilhabewirkung - Programmkosten - Nebenwirkungen. Alle Annahmen werden als Quelle, Schätzung oder Modellwert gekennzeichnet.
+Zwei Bilanzen statt einer Mischrechnung: Euro gehören zu Euro. Lebensqualität, Autonomie, Teilhabe und Resilienz behalten ihre eigenen Einheiten. Beides zählt, wird aber nicht zu einer Zahl vermischt.
+
+Monetäre Bilanz (EUR, Preisbasis und Zeitraum offenlegen): B_EUR = Summe_t [(vermiedene Behandlungskosten_t + vermiedene Pflegekosten_t + monetarisierte Arbeitsausfälle_t + sonstige dokumentiert monetarisierte Nutzen_t - Programmkosten_t - monetarisierte Nebenwirkungs- und Verlagerungskosten_t) / (1 + r)^t]. Jeder Term ist Euro desselben Preisjahrs; r ist der dokumentierte Diskontsatz. Fehlt eine belastbare Monetarisierung, darf der Term nicht in B_EUR stehen.
+
+Nichtmonetäres Wirkungsprofil: Für Gesundheitszustand, Autonomie, Teilhabe, Resilienz, Gerechtigkeit und mögliche Schäden wird je Indikator die Veränderung gegenüber dem Vergleichsfall ausgewiesen: Δx_k = x_k,mit Maßnahme - x_k,ohne Maßnahme. Jede Angabe braucht Einheit, Zeitraum, Quelle, Vergleichsfall, Attribution und Unsicherheit. Diese Veränderungen werden nicht in Euro umgerechnet und nicht zu einem Durchschnitt verrechnet.
+
+Entscheidungsregel: Eine positive monetäre Bilanz ist kein Freifahrtschein. Eine positive Netto-Wirkung wird nur ausgewiesen, wenn Wirkungsgrenze, Vergleichsfall und Datenqualität offenliegen, keine rote Linie verletzt wird und das Wirkungsprofil keine schwere Verschlechterung verdeckt. Alle Angaben bleiben Quelle, Schätzung oder Modellwert.
 
 One Health, Klima, Umwelt und Ernährung
 
@@ -726,7 +762,13 @@ Beispielhaft wird ein Pilot mit 50.000 Einwohner:innen betrachtet. Ausgangsdaten
 
 12. Rechenlogik für das Dossier
 
-Wirkungsnutzen = vermiedene Behandlungskosten + vermiedene Pflegeeskalation + reduzierte Arbeitsausfälle + Angehörigenentlastung + Resilienzgewinn + Teilhabewirkung - Programmkosten - Nebenwirkungen. Alle Annahmen werden als Quelle, Schätzung oder Modellwert gekennzeichnet.
+Zwei Bilanzen statt einer Mischrechnung: Euro gehören zu Euro. Lebensqualität, Autonomie, Teilhabe und Resilienz behalten ihre eigenen Einheiten. Beides zählt, wird aber nicht zu einer Zahl vermischt.
+
+Monetäre Bilanz (EUR, Preisbasis und Zeitraum offenlegen): B_EUR = Summe_t [(vermiedene Behandlungskosten_t + vermiedene Pflegekosten_t + monetarisierte Arbeitsausfälle_t + sonstige dokumentiert monetarisierte Nutzen_t - Programmkosten_t - monetarisierte Nebenwirkungs- und Verlagerungskosten_t) / (1 + r)^t]. Jeder Term ist Euro desselben Preisjahrs; r ist der dokumentierte Diskontsatz. Fehlt eine belastbare Monetarisierung, darf der Term nicht in B_EUR stehen.
+
+Nichtmonetäres Wirkungsprofil: Für Gesundheitszustand, Autonomie, Teilhabe, Resilienz, Gerechtigkeit und mögliche Schäden wird je Indikator die Veränderung gegenüber dem Vergleichsfall ausgewiesen: Δx_k = x_k,mit Maßnahme - x_k,ohne Maßnahme. Jede Angabe braucht Einheit, Zeitraum, Quelle, Vergleichsfall, Attribution und Unsicherheit. Diese Veränderungen werden nicht in Euro umgerechnet und nicht zu einem Durchschnitt verrechnet.
+
+Entscheidungsregel: Eine positive monetäre Bilanz ist kein Freifahrtschein. Eine positive Netto-Wirkung wird nur ausgewiesen, wenn Wirkungsgrenze, Vergleichsfall und Datenqualität offenliegen, keine rote Linie verletzt wird und das Wirkungsprofil keine schwere Verschlechterung verdeckt. Alle Angaben bleiben Quelle, Schätzung oder Modellwert.
 
 Arbeitswelt, Unternehmen und Gesundheitswirkung
 
@@ -824,7 +866,13 @@ Beispielhaft wird ein Pilot mit 50.000 Einwohner:innen betrachtet. Ausgangsdaten
 
 12. Rechenlogik für das Dossier
 
-Wirkungsnutzen = vermiedene Behandlungskosten + vermiedene Pflegeeskalation + reduzierte Arbeitsausfälle + Angehörigenentlastung + Resilienzgewinn + Teilhabewirkung - Programmkosten - Nebenwirkungen. Alle Annahmen werden als Quelle, Schätzung oder Modellwert gekennzeichnet.
+Zwei Bilanzen statt einer Mischrechnung: Euro gehören zu Euro. Lebensqualität, Autonomie, Teilhabe und Resilienz behalten ihre eigenen Einheiten. Beides zählt, wird aber nicht zu einer Zahl vermischt.
+
+Monetäre Bilanz (EUR, Preisbasis und Zeitraum offenlegen): B_EUR = Summe_t [(vermiedene Behandlungskosten_t + vermiedene Pflegekosten_t + monetarisierte Arbeitsausfälle_t + sonstige dokumentiert monetarisierte Nutzen_t - Programmkosten_t - monetarisierte Nebenwirkungs- und Verlagerungskosten_t) / (1 + r)^t]. Jeder Term ist Euro desselben Preisjahrs; r ist der dokumentierte Diskontsatz. Fehlt eine belastbare Monetarisierung, darf der Term nicht in B_EUR stehen.
+
+Nichtmonetäres Wirkungsprofil: Für Gesundheitszustand, Autonomie, Teilhabe, Resilienz, Gerechtigkeit und mögliche Schäden wird je Indikator die Veränderung gegenüber dem Vergleichsfall ausgewiesen: Δx_k = x_k,mit Maßnahme - x_k,ohne Maßnahme. Jede Angabe braucht Einheit, Zeitraum, Quelle, Vergleichsfall, Attribution und Unsicherheit. Diese Veränderungen werden nicht in Euro umgerechnet und nicht zu einem Durchschnitt verrechnet.
+
+Entscheidungsregel: Eine positive monetäre Bilanz ist kein Freifahrtschein. Eine positive Netto-Wirkung wird nur ausgewiesen, wenn Wirkungsgrenze, Vergleichsfall und Datenqualität offenliegen, keine rote Linie verletzt wird und das Wirkungsprofil keine schwere Verschlechterung verdeckt. Alle Angaben bleiben Quelle, Schätzung oder Modellwert.
 
 Gesundheitsdaten, KI und Bürgerkontrolle
 
@@ -922,7 +970,13 @@ Beispielhaft wird ein Pilot mit 50.000 Einwohner:innen betrachtet. Ausgangsdaten
 
 12. Rechenlogik für das Dossier
 
-Wirkungsnutzen = vermiedene Behandlungskosten + vermiedene Pflegeeskalation + reduzierte Arbeitsausfälle + Angehörigenentlastung + Resilienzgewinn + Teilhabewirkung - Programmkosten - Nebenwirkungen. Alle Annahmen werden als Quelle, Schätzung oder Modellwert gekennzeichnet.
+Zwei Bilanzen statt einer Mischrechnung: Euro gehören zu Euro. Lebensqualität, Autonomie, Teilhabe und Resilienz behalten ihre eigenen Einheiten. Beides zählt, wird aber nicht zu einer Zahl vermischt.
+
+Monetäre Bilanz (EUR, Preisbasis und Zeitraum offenlegen): B_EUR = Summe_t [(vermiedene Behandlungskosten_t + vermiedene Pflegekosten_t + monetarisierte Arbeitsausfälle_t + sonstige dokumentiert monetarisierte Nutzen_t - Programmkosten_t - monetarisierte Nebenwirkungs- und Verlagerungskosten_t) / (1 + r)^t]. Jeder Term ist Euro desselben Preisjahrs; r ist der dokumentierte Diskontsatz. Fehlt eine belastbare Monetarisierung, darf der Term nicht in B_EUR stehen.
+
+Nichtmonetäres Wirkungsprofil: Für Gesundheitszustand, Autonomie, Teilhabe, Resilienz, Gerechtigkeit und mögliche Schäden wird je Indikator die Veränderung gegenüber dem Vergleichsfall ausgewiesen: Δx_k = x_k,mit Maßnahme - x_k,ohne Maßnahme. Jede Angabe braucht Einheit, Zeitraum, Quelle, Vergleichsfall, Attribution und Unsicherheit. Diese Veränderungen werden nicht in Euro umgerechnet und nicht zu einem Durchschnitt verrechnet.
+
+Entscheidungsregel: Eine positive monetäre Bilanz ist kein Freifahrtschein. Eine positive Netto-Wirkung wird nur ausgewiesen, wenn Wirkungsgrenze, Vergleichsfall und Datenqualität offenliegen, keine rote Linie verletzt wird und das Wirkungsprofil keine schwere Verschlechterung verdeckt. Alle Angaben bleiben Quelle, Schätzung oder Modellwert.
 
 Finanzierung, Wirkungsfonds und Gesundheitskassen
 
@@ -1020,7 +1074,13 @@ Beispielhaft wird ein Pilot mit 50.000 Einwohner:innen betrachtet. Ausgangsdaten
 
 12. Rechenlogik für das Dossier
 
-Wirkungsnutzen = vermiedene Behandlungskosten + vermiedene Pflegeeskalation + reduzierte Arbeitsausfälle + Angehörigenentlastung + Resilienzgewinn + Teilhabewirkung - Programmkosten - Nebenwirkungen. Alle Annahmen werden als Quelle, Schätzung oder Modellwert gekennzeichnet.
+Zwei Bilanzen statt einer Mischrechnung: Euro gehören zu Euro. Lebensqualität, Autonomie, Teilhabe und Resilienz behalten ihre eigenen Einheiten. Beides zählt, wird aber nicht zu einer Zahl vermischt.
+
+Monetäre Bilanz (EUR, Preisbasis und Zeitraum offenlegen): B_EUR = Summe_t [(vermiedene Behandlungskosten_t + vermiedene Pflegekosten_t + monetarisierte Arbeitsausfälle_t + sonstige dokumentiert monetarisierte Nutzen_t - Programmkosten_t - monetarisierte Nebenwirkungs- und Verlagerungskosten_t) / (1 + r)^t]. Jeder Term ist Euro desselben Preisjahrs; r ist der dokumentierte Diskontsatz. Fehlt eine belastbare Monetarisierung, darf der Term nicht in B_EUR stehen.
+
+Nichtmonetäres Wirkungsprofil: Für Gesundheitszustand, Autonomie, Teilhabe, Resilienz, Gerechtigkeit und mögliche Schäden wird je Indikator die Veränderung gegenüber dem Vergleichsfall ausgewiesen: Δx_k = x_k,mit Maßnahme - x_k,ohne Maßnahme. Jede Angabe braucht Einheit, Zeitraum, Quelle, Vergleichsfall, Attribution und Unsicherheit. Diese Veränderungen werden nicht in Euro umgerechnet und nicht zu einem Durchschnitt verrechnet.
+
+Entscheidungsregel: Eine positive monetäre Bilanz ist kein Freifahrtschein. Eine positive Netto-Wirkung wird nur ausgewiesen, wenn Wirkungsgrenze, Vergleichsfall und Datenqualität offenliegen, keine rote Linie verletzt wird und das Wirkungsprofil keine schwere Verschlechterung verdeckt. Alle Angaben bleiben Quelle, Schätzung oder Modellwert.
 
 Versorgung, Kliniken und Gesundheitsnetzwerke
 
@@ -1118,7 +1178,13 @@ Beispielhaft wird ein Pilot mit 50.000 Einwohner:innen betrachtet. Ausgangsdaten
 
 12. Rechenlogik für das Dossier
 
-Wirkungsnutzen = vermiedene Behandlungskosten + vermiedene Pflegeeskalation + reduzierte Arbeitsausfälle + Angehörigenentlastung + Resilienzgewinn + Teilhabewirkung - Programmkosten - Nebenwirkungen. Alle Annahmen werden als Quelle, Schätzung oder Modellwert gekennzeichnet.
+Zwei Bilanzen statt einer Mischrechnung: Euro gehören zu Euro. Lebensqualität, Autonomie, Teilhabe und Resilienz behalten ihre eigenen Einheiten. Beides zählt, wird aber nicht zu einer Zahl vermischt.
+
+Monetäre Bilanz (EUR, Preisbasis und Zeitraum offenlegen): B_EUR = Summe_t [(vermiedene Behandlungskosten_t + vermiedene Pflegekosten_t + monetarisierte Arbeitsausfälle_t + sonstige dokumentiert monetarisierte Nutzen_t - Programmkosten_t - monetarisierte Nebenwirkungs- und Verlagerungskosten_t) / (1 + r)^t]. Jeder Term ist Euro desselben Preisjahrs; r ist der dokumentierte Diskontsatz. Fehlt eine belastbare Monetarisierung, darf der Term nicht in B_EUR stehen.
+
+Nichtmonetäres Wirkungsprofil: Für Gesundheitszustand, Autonomie, Teilhabe, Resilienz, Gerechtigkeit und mögliche Schäden wird je Indikator die Veränderung gegenüber dem Vergleichsfall ausgewiesen: Δx_k = x_k,mit Maßnahme - x_k,ohne Maßnahme. Jede Angabe braucht Einheit, Zeitraum, Quelle, Vergleichsfall, Attribution und Unsicherheit. Diese Veränderungen werden nicht in Euro umgerechnet und nicht zu einem Durchschnitt verrechnet.
+
+Entscheidungsregel: Eine positive monetäre Bilanz ist kein Freifahrtschein. Eine positive Netto-Wirkung wird nur ausgewiesen, wenn Wirkungsgrenze, Vergleichsfall und Datenqualität offenliegen, keine rote Linie verletzt wird und das Wirkungsprofil keine schwere Verschlechterung verdeckt. Alle Angaben bleiben Quelle, Schätzung oder Modellwert.
 
 Governance, Wirkungsrat und politische Anschlussfähigkeit
 
@@ -1216,7 +1282,13 @@ Beispielhaft wird ein Pilot mit 50.000 Einwohner:innen betrachtet. Ausgangsdaten
 
 12. Rechenlogik für das Dossier
 
-Wirkungsnutzen = vermiedene Behandlungskosten + vermiedene Pflegeeskalation + reduzierte Arbeitsausfälle + Angehörigenentlastung + Resilienzgewinn + Teilhabewirkung - Programmkosten - Nebenwirkungen. Alle Annahmen werden als Quelle, Schätzung oder Modellwert gekennzeichnet.
+Zwei Bilanzen statt einer Mischrechnung: Euro gehören zu Euro. Lebensqualität, Autonomie, Teilhabe und Resilienz behalten ihre eigenen Einheiten. Beides zählt, wird aber nicht zu einer Zahl vermischt.
+
+Monetäre Bilanz (EUR, Preisbasis und Zeitraum offenlegen): B_EUR = Summe_t [(vermiedene Behandlungskosten_t + vermiedene Pflegekosten_t + monetarisierte Arbeitsausfälle_t + sonstige dokumentiert monetarisierte Nutzen_t - Programmkosten_t - monetarisierte Nebenwirkungs- und Verlagerungskosten_t) / (1 + r)^t]. Jeder Term ist Euro desselben Preisjahrs; r ist der dokumentierte Diskontsatz. Fehlt eine belastbare Monetarisierung, darf der Term nicht in B_EUR stehen.
+
+Nichtmonetäres Wirkungsprofil: Für Gesundheitszustand, Autonomie, Teilhabe, Resilienz, Gerechtigkeit und mögliche Schäden wird je Indikator die Veränderung gegenüber dem Vergleichsfall ausgewiesen: Δx_k = x_k,mit Maßnahme - x_k,ohne Maßnahme. Jede Angabe braucht Einheit, Zeitraum, Quelle, Vergleichsfall, Attribution und Unsicherheit. Diese Veränderungen werden nicht in Euro umgerechnet und nicht zu einem Durchschnitt verrechnet.
+
+Entscheidungsregel: Eine positive monetäre Bilanz ist kein Freifahrtschein. Eine positive Netto-Wirkung wird nur ausgewiesen, wenn Wirkungsgrenze, Vergleichsfall und Datenqualität offenliegen, keine rote Linie verletzt wird und das Wirkungsprofil keine schwere Verschlechterung verdeckt. Alle Angaben bleiben Quelle, Schätzung oder Modellwert.
 
 Quellen und Anschlussdokumente
 
@@ -1224,7 +1296,7 @@ Natalie Weber: Die neue Ordnung des Wohlstands, Arbeitsfassung 2026, Kapitel 68 
 
 Natalie Weber: Systemmodell der Wirkungsökonomie, Spalte 7 Gesundheit, Pflege & Leben.
 
-Natalie Weber: Führender Begriffsleitfaden der Wirkungsökonomie v1.0.
+Natalie Weber: Führender Begriffsleitfaden der Wirkungsökonomie v1.3.
 
 WHO Constitution und WHO Social Determinants of Health, 2025.
 

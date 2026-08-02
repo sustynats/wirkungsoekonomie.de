@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-30T18:24:51.059Z",
+  "generatedAt": "2026-08-02T19:49:46.648Z",
   "version": "v1",
   "principles": [
     "Ein modularer WÖk-Kern stellt Daten und Funktionen bereit; Frontends bleiben dünne Oberflächen.",
@@ -162,7 +162,7 @@
       "id": "single-source",
       "risk": "Daten werden in mehreren Oberflächen auseinanderentwickelt.",
       "control": "Jedes Datenprodukt hat einen canonicalOwner und einen canonicalPlace.",
-      "gate": "production-workflow-manifest.dataProducts"
+      "gate": "öffentliches Datenprodukt mit klarer Herkunft"
     },
     {
       "id": "no-frontend-logic-duplication",
@@ -174,13 +174,13 @@
       "id": "artifact-drift",
       "risk": "Generierte HTML-, JSON- oder _site-Artefakte driften von Quellen weg.",
       "control": "Build-Skripte erzeugen Manifeste reproduzierbar; deployt wird das Artefakt aus CI.",
-      "gate": "npm run build:artifact + npm run check:size"
+      "gate": "reproduzierbarer Veröffentlichungsprozess"
     },
     {
       "id": "parallel-agent-overwrite",
-      "risk": "Claude/Codex/Hintergrundprozesse schreiben gleichzeitig in dieselben Bereiche.",
+      "risk": "Parallel laufende Arbeitsprozesse können gleichzeitig in dieselben Bereiche schreiben.",
       "control": "Arbeitsbereiche werden über Owner, Datenklasse und eng gefasste Build-Schritte getrennt.",
-      "gate": "git status before edits; no unrelated reverts; generated manifests expose changed surfaces"
+      "gate": "getrennte Verantwortungsbereiche und nachvollziehbare Änderungen"
     },
     {
       "id": "public-private-mixing",
@@ -226,21 +226,6 @@
         "SDG/SDG+-Einordnung",
         "Wirkungsradar",
         "Debatten- und Resonanzlogik"
-      ]
-    },
-    {
-      "id": "production",
-      "label": "Produktion und Workflows",
-      "sources": [
-        "package.json",
-        "scripts/",
-        ".github/workflows/deploy.yml"
-      ],
-      "capabilities": [
-        "Build-Phasen",
-        "Qualitätsgates",
-        "Deployment-Artefakt",
-        "Workflow-Inventar"
       ]
     }
   ],

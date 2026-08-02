@@ -103,7 +103,7 @@ function renderPublication(publication) {
             <dt>Stand</dt><dd>${esc(publication.dateOrStand || publication.publicationDate || "")}</dd>
             <dt>Umfang</dt><dd>${publication.pages ? `${esc(publication.pages)} Seiten` : "n/a"} · ${esc((publication.formats || []).join(", ") || "Online")}</dd>
             <dt>Sprache</dt><dd>${esc(publication.language || "de")}</dd>
-            <dt>Reviewstatus</dt><dd>${esc(publication.reviewStatus || "")}</dd>
+            <dt>Einordnung</dt><dd>${esc(publication.publicationStatus || "")}</dd>
           </dl>
           ${chips(publication.topics)}
           <div class="document-action-row">${actionLinks}</div>

@@ -2,7 +2,7 @@
   "id": "woek-core-static-api",
   "name": "WÖk Core Static API",
   "version": "v1",
-  "generatedAt": "2026-07-30T18:24:51.059Z",
+  "generatedAt": "2026-08-02T19:49:46.648Z",
   "baseUrl": "https://wirkungsoekonomie.de/api/v1/",
   "status": "read-only-static",
   "contract": {
@@ -106,17 +106,6 @@
       ],
       "description": "Wirkungsradar-Karten, Resonanzkarten und bestehende Embed-/Distribution-Endpunkte.",
       "absoluteUrl": "https://wirkungsoekonomie.de/api/v1/wirkungsradar/"
-    },
-    {
-      "id": "production",
-      "url": "/api/v1/production/",
-      "method": "GET",
-      "lifecycle": "stable",
-      "audience": [
-        "internal"
-      ],
-      "description": "Produktionsprozess-, Build-, Gate- und Workflow-Manifest.",
-      "absoluteUrl": "https://wirkungsoekonomie.de/api/v1/production/"
     }
   ]
 }

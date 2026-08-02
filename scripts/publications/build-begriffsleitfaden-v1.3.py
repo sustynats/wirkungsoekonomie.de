@@ -16,6 +16,16 @@ DELTA_13 = ROOT / "source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.3-
 def main() -> None:
     source = BASE.read_text(encoding="utf-8")
     source = source.replace("**Version:** 1.1", "**Version:** 1.3", 1)
+    source = source.replace(
+        "Diese Kurzformel ist die Grundlage für Website, Glossar, Akademie, Blog, Social Media und CodeX-Anweisungen.",
+        "Diese Kurzformel ist die Grundlage für öffentliche Texte, das Glossar, die Akademie, den Blog und Social-Media-Beiträge.",
+        1,
+    )
+    source = source.replace(
+        "## 14. Führende Mini-Definitionen für Hover, Glossar und CodeX",
+        "## 14. Führende Mini-Definitionen für Glossar, Suche und kurze Erklärtexte",
+        1,
+    )
     changes = (
         "**Changelog 1.2:** Präzisierung der Resilienzsystematik: Trennung von Stabilitätslandschaft, "
         "Rückstellfähigkeit und Dämpfungsfähigkeit; korrekte Einordnung von Latitude, Resistance, "

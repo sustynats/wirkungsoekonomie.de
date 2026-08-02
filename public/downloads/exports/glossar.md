@@ -1,6 +1,6 @@
 # Glossar der Wirkungsökonomie
 
-Stand: 2026-07-30T18:22:33.274Z
+Stand: 2026-08-02T19:45:36.683Z
 
 ## 5. P = Planet
 
@@ -24,11 +24,15 @@ Die Abfallhierarchie ordnet Maßnahmen nach Priorität: Vermeidung, Wiederverwen
 
 Die Abfallhierarchie ordnet Maßnahmen nach Priorität: Vermeidung, Wiederverwendung, Recycling, Verwertung und Beseitigung.
 
+Die WÖk erweitert sie um Wirkung auf Mensch, Planet und Demokratie sowie Produktdesign vor der Abfallphase.
+
 ## Abregelung
 
 Abregelung reduziert Stromerzeugung, etwa aus erneuerbaren Anlagen, wegen Netzengpässen oder Systemanforderungen.
 
 Abregelung reduziert Stromerzeugung, etwa aus erneuerbaren Anlagen, wegen Netzengpässen oder Systemanforderungen.
+
+Zeigt fehlende Netz-, Speicher- oder Flexibilitätsintegration.
 
 ## AC-Laden
 
@@ -36,11 +40,19 @@ AC-Laden ist Laden mit Wechselstrom; die Umwandlung in Gleichstrom erfolgt im Fa
 
 AC-Laden ist Laden mit Wechselstrom; die Umwandlung in Gleichstrom erfolgt im Fahrzeug über den On-Board-Charger.
 
+Geeignet für längere Standzeiten zuhause, im Quartier, am Arbeitsplatz oder im Depot; meist geringere Infrastrukturleistung als DC-Laden.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Ad-hoc-Laden
 
 Ad-hoc-Laden ermöglicht spontanes Laden ohne bestehenden Vertrag mit einem Elektromobilitätsdienstleister.
 
 Ad-hoc-Laden ermöglicht spontanes Laden ohne bestehenden Vertrag mit einem Elektromobilitätsdienstleister.
+
+Wichtig für Teilhabe, Transparenz, Tourismus, Wettbewerb und Verbraucherschutz.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Adam Smith
 
@@ -62,17 +74,23 @@ Nutzung und neues Verhalten als Ergebnis von Fähigkeit, Gelegenheit, Motivation
 
 Nutzung und neues Verhalten als Ergebnis von Fähigkeit, Gelegenheit, Motivation, Anreizen und Systembedingungen gestalten.
 
+M08 gehört zur Kategorie „Change, Adoption, Workforce, Skills und Wissen“. Verbindlicher Output: Adoptionsplan mit Zielverhalten, Barrieren, Interventionen, ethischen Grenzen, Messung und Verstetigung.
+
 ## Adverse Selection
 
 Adverse Selection beschreibt Fehlselektion durch Informationsasymmetrie, wenn schlechte Qualität gute Qualität verdrängen kann.
 
 Adverse Selection beschreibt Fehlselektion durch Informationsasymmetrie, wenn schlechte Qualität gute Qualität verdrängen kann.
 
+Wirkungslabel und Produktpässe sollen verhindern, dass schädliche Produkte durch niedrigere Preise bessere Produkte verdrängen.
+
 ## Advocacy-Organisation
 
 Eine Advocacy-Organisation setzt sich gezielt für politische, soziale, ökologische oder rechtliche Anliegen ein.
 
 Eine Advocacy-Organisation setzt sich gezielt für politische, soziale, ökologische oder rechtliche Anliegen ein.
+
+Advocacy ist legitim, wenn Interessen, Daten, Ziele und Finanzierung transparent sind.
 
 ## AfD-Ideologie
 
@@ -85,6 +103,8 @@ Der Begriff darf nicht als pauschales Etikett für Wähler:innen oder Mitglieder
 Affekt beschreibt eine unmittelbare emotionale Reaktion oder Grundtönung, die Wahrnehmung und Bewertung beeinflusst.
 
 Affekt beschreibt eine unmittelbare emotionale Reaktion oder Grundtönung, die Wahrnehmung und Bewertung beeinflusst.
+
+Affekt kann Salienz erhöhen und Entscheidungsräume verengen oder öffnen.
 
 ## Affektheuristik
 
@@ -104,17 +124,23 @@ Agenda-Setting beschreibt die Wirkung, durch Themenwahl und Wiederholung zu beei
 
 Agenda-Setting beschreibt die Wirkung, durch Themenwahl und Wiederholung zu beeinflussen, welche Fragen als wichtig gelten.
 
+Was auf die Agenda kommt, wird politisch bearbeitbar; was unsichtbar bleibt, bleibt wirkungslos oder wird verdrängt.
+
 ## Agentische Delegations- und Orchestrierungsarchitektur
 
 Ziele, Aufgaben, Werkzeuge und Entscheidungsrechte zwischen Menschen und autonomen oder teilautonomen Agenten sicher verteilen.
 
 Ziele, Aufgaben, Werkzeuge und Entscheidungsrechte zwischen Menschen und autonomen oder teilautonomen Agenten sicher verteilen.
 
+O07 gehört zur Kategorie „Daten, Technologie, KI und agentische Systeme“. Verbindlicher Output: Agent Architecture mit Rollen, Delegationsgrenzen, Toolrechten, Kontext, Kontrollpunkten, Logs, Eskalation und Haftung.
+
 ## AI Act
 
 Der AI Act ist der EU-Rechtsrahmen für künstliche Intelligenz. Er folgt einem risikobasierten Ansatz und zielt auf vertrauenswürdige, menschenzentrierte KI sowie Schutz von Gesundheit, Sicherheit, Grundrechten, Demokratie, Rechtsstaat und Umwelt.
 
 Der AI Act ist der EU-Rechtsrahmen für künstliche Intelligenz. Er folgt einem risikobasierten Ansatz und zielt auf vertrauenswürdige, menschenzentrierte KI sowie Schutz von Gesundheit, Sicherheit, Grundrechten, Demokratie, Rechtsstaat und Umwelt.
+
+Für die WÖk ist der AI Act wichtig, weil KI Wirkungen verstärkt: auf Arbeit, Öffentlichkeit, Verwaltung, Gesundheit, Kapital, Diskriminierung, Macht und Datenqualität. KI darf nicht die Hoheit über Wirkungslogik übernehmen.
 
 ## Akkumulation
 
@@ -127,6 +153,10 @@ Akkumulation kann Investitionsfähigkeit erzeugen, aber auch Machtkonzentration 
 Ein Akkumulator ist eine wiederaufladbare Batterie.
 
 Ein Akkumulator ist eine wiederaufladbare Batterie.
+
+Der Begriff ist wichtig, um wiederaufladbare Speicher von Primärbatterien abzugrenzen und Nutzungsdauer, Ladezyklen und Rückführung zu bewerten.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Alan Watts / Daoismus
 
@@ -158,17 +188,23 @@ Allgemeines Gleichgewicht beschreibt ein theoretisches Modell, in dem alle Märk
 
 Allgemeines Gleichgewicht beschreibt ein theoretisches Modell, in dem alle Märkte gleichzeitig im Gleichgewicht sind.
 
+Nützlich als Modell, aber begrenzt in rückgekoppelten, planetar begrenzten und politisch-medial beeinflussten Systemen.
+
 ## Allmendeproblem
 
 Das Allmendeproblem beschreibt Übernutzung gemeinsamer Ressourcen, wenn individuelle Nutzungsvorteile und kollektive Schäden auseinanderfallen.
 
 Das Allmendeproblem beschreibt Übernutzung gemeinsamer Ressourcen, wenn individuelle Nutzungsvorteile und kollektive Schäden auseinanderfallen.
 
+Wichtig für Klima, Biodiversität, Wasser, öffentliche Räume, digitale Aufmerksamkeit und Demokratie.
+
 ## Allokation
 
 Allokation beschreibt die Verteilung knapper Ressourcen auf unterschiedliche Verwendungen.
 
 Allokation beschreibt die Verteilung knapper Ressourcen auf unterschiedliche Verwendungen.
+
+WÖk fragt nicht nur, ob Ressourcen effizient verteilt werden, sondern ob diese Verteilung positive Netto-Wirkung erzeugt.
 
 ## Alltag 2035
 
@@ -194,11 +230,19 @@ Alltagsrassismus beschreibt rassistische Abwertung, Ausschlüsse oder Normalisie
 
 Alltagsrassismus beschreibt rassistische Abwertung, Ausschlüsse oder Normalisierungen im alltäglichen Umgang, in Sprache, Medien oder Routinen.
 
+Er beschädigt Sicherheit, Zugehörigkeit, Vertrauen und Teilhabe.
+
 ## Amartya Sen / Martha Nussbaum – Fähigkeitenansatz
 
 Der Fähigkeitenansatz fragt danach, welche realen Möglichkeiten Menschen haben, ein gutes, würdiges und selbstbestimmtes Leben zu führen.
 
 Der Fähigkeitenansatz fragt danach, welche realen Möglichkeiten Menschen haben, ein gutes, würdiges und selbstbestimmtes Leben zu führen.
+
+Für die WÖk ist er anschlussfähig, weil positive Wirkung nicht nur Einkommen oder Output meint, sondern reale Befähigung: Gesundheit, Bildung, Teilhabe, Sicherheit, Würde und Selbstwirksamkeit.
+
+Die WÖk ergänzt: Befähigungen müssen über Wirkung messbar, steuerbar und systemisch abgesichert werden.
+
+Als Bezugslinie verwenden, nicht als Autoritätsbeweis oder biografischen Lexikoneintrag.
 
 ## Amathia
 
@@ -228,11 +272,15 @@ Anaerobe Vergärung ist biologischer Abbau organischer Materialien ohne Sauersto
 
 Anaerobe Vergärung ist biologischer Abbau organischer Materialien ohne Sauerstoff, bei dem Biogas entstehen kann.
 
+Sie kann Energie- und Nährstoffkreisläufe verbinden, braucht aber Kontrolle von Methanverlusten und Substratwirkung.
+
 ## Anarchokapitalismus
 
 Anarchokapitalismus lehnt staatliche Herrschaft ab und will Ordnung über Privateigentum, Märkte, Verträge und private Sicherheits- oder Rechtsdienste organisieren.
 
 Anarchokapitalismus lehnt staatliche Herrschaft ab und will Ordnung über Privateigentum, Märkte, Verträge und private Sicherheits- oder Rechtsdienste organisieren.
+
+Als Extremmodell relevant, aber nicht auszubauen: Private Vertragslogik kann Gemeingüter, Umwelt, Machtkonzentration und demokratische Legitimität nicht ausreichend sichern.
 
 ## Angstappell
 
@@ -252,11 +300,17 @@ Ein Anlagenpass dokumentiert technische, materialbezogene und rückbaurelevante 
 
 Ein Anlagenpass dokumentiert technische, materialbezogene und rückbaurelevante Informationen einer Anlage.
 
+Analog zum Materialpass oder Digitalen Produktpass für große Energieanlagen; wichtig für Rückbau, Wartung, Versicherung und Kreislaufwirkung.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Annahmen- und Unsicherheitslandkarte
 
 Zukunftsannahmen, Wissenslücken und Unsicherheitsarten sichtbar machen, bevor Strategie oder Investition festgelegt werden.
 
 Zukunftsannahmen, Wissenslücken und Unsicherheitsarten sichtbar machen, bevor Strategie oder Investition festgelegt werden.
+
+I01 gehört zur Kategorie „Strategische Vorausschau und Entscheidungsintelligenz“. Verbindlicher Output: Versioniertes Annahmenregister mit Unsicherheitsklasse, Bedeutung, Evidenz, Verantwortlichen und Aktualisierungstriggern.
 
 ## Anpassungsfähigkeit / Adaptability
 
@@ -282,11 +336,19 @@ Anschlusskosten umfassen Kosten für Herstellung oder Verstärkung eines Netzans
 
 Anschlusskosten umfassen Kosten für Herstellung oder Verstärkung eines Netzanschlusses.
 
+Sie beeinflussen Standortentscheidungen, Geschäftsmodelle, Zugang und soziale Verteilung.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Anschlussleistung
 
 Anschlussleistung ist die maximale Leistung, die ein Netzanschluss bereitstellen oder aufnehmen kann.
 
 Anschlussleistung ist die maximale Leistung, die ein Netzanschluss bereitstellen oder aufnehmen kann.
+
+Sie begrenzt Ladeparks, Speicher, Gewerbe und PV und prägt Kosten, Baukostenzuschüsse und Netzausbau.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Anti-SLAPP-Richtlinie
 
@@ -294,11 +356,15 @@ Die Anti-SLAPP-Richtlinie schützt Personen, die sich öffentlich beteiligen, vo
 
 Die Anti-SLAPP-Richtlinie schützt Personen, die sich öffentlich beteiligen, vor offensichtlich unbegründeten oder missbräuchlichen Gerichtsverfahren mit grenzüberschreitendem Bezug.
 
+Für die WÖk ist sie ein Schutzinstrument für demokratische Rückkopplung. Öffentlichkeit kann nur wirken, wenn Kritik, Journalismus, Wissenschaft und Zivilgesellschaft nicht durch missbräuchliche Klagen eingeschüchtert werden.
+
 ## Antidiskriminierung
 
 Antidiskriminierung bezeichnet Regeln, Institutionen, Praktiken und Kulturen, die Benachteiligung verhindern, gleiche Teilhabe ermöglichen und Schutz vor Herabwürdigung, Ausschluss und Gewalt sichern.
 
 Antidiskriminierung bezeichnet Regeln, Institutionen, Praktiken und Kulturen, die Benachteiligung verhindern, gleiche Teilhabe ermöglichen und Schutz vor Herabwürdigung, Ausschluss und Gewalt sichern.
+
+In der WÖk ist Antidiskriminierung kein identitätspolitischer Zusatz, sondern demokratische Infrastruktur. Sie erhöht Wirkungsmöglichkeiten, Vertrauen, Sicherheit, Talentnutzung, Gesundheit und Teilgabe. Sie verhindert, dass Menschen aus Wirkungsräumen ausgeschlossen werden.
 
 ## Antikollisionssystem
 
@@ -314,11 +380,17 @@ Antisemitismus bezeichnet judenfeindliche Wahrnehmungen, Stereotype, Feindbilder
 
 Antisemitismus bezeichnet judenfeindliche Wahrnehmungen, Stereotype, Feindbilder, Verschwörungserzählungen oder Handlungen, die sich gegen Jüdinnen und Juden, jüdische Einrichtungen oder als jüdisch markierte Symbole richten. Er kann religiös, rassistisch, politisch, verschwörungsideologisch oder israelbezogen auftreten.
 
+Aus WÖk-Sicht ist Antisemitismus ein besonders gefährliches Wirkungsrisiko für Demokratie, Wahrheit, Erinnerung, Rechtsstaatlichkeit und soziale Sicherheit. Er verwandelt komplexe Krisen in personalisierte Schuldzuweisungen, erzeugt Feindbilder, beschädigt jüdisches Leben und destabilisiert öffentliche Wirklichkeitsbezüge.
+
+Ein demokratisches und menschenrechtliches Wirkungsrisiko, weil Menschenwürde, Sicherheit, Wahrheit und gesellschaftlicher Zusammenhalt beschädigt werden.
+
 ## Antiziganismus
 
 Antiziganismus bezeichnet Feindschaft, Abwertung oder Diskriminierung gegenüber Sinti:zze und Rom:nja oder so markierten Gruppen.
 
 Antiziganismus bezeichnet Feindschaft, Abwertung oder Diskriminierung gegenüber Sinti:zze und Rom:nja oder so markierten Gruppen.
+
+Wirkungsrisiko für Würde, Gleichbehandlung, Sicherheit, Teilhabe und Vertrauen in Institutionen.
 
 ## Anwendungskontext
 
@@ -334,6 +406,8 @@ Arbeiten ist bei Arendt die Tätigkeit, die das Leben erhält und biologische Be
 
 Arbeiten ist bei Arendt die Tätigkeit, die das Leben erhält und biologische Bedürfnisse deckt.
 
+Mit Care, Reproduktion, Pflege und sozialer Stabilisierung verbinden, aber Arendts Grenzen gegenüber feministischer Ökonomie beachten.
+
 ## Arbeitsanreiz
 
 Arbeitsanreiz bezeichnet die Wirkung von Regeln, Einkommen, Transfers, Steuern oder Anerkennung auf die Bereitschaft und Möglichkeit, Erwerbsarbeit oder andere gesellschaftlich wirksame Tätigkeiten aufzunehmen. Die WÖk erweitert den Begriff: Nicht jede Arbeit ist automatisch Wirkung, und nicht jede Wirkung ist Erwerbsarbeit.
@@ -347,6 +421,10 @@ In der Wirkungsökonomie wird der Begriff verwendet, um Wirkungen als tatsächli
 Der Arbeitspreis ist ein Preisbestandteil pro verbrauchter Energiemenge.
 
 Der Arbeitspreis ist ein Preisbestandteil pro verbrauchter Energiemenge.
+
+Er erklärt nur Energiemenge, nicht Lastspitzen, Netzanschlussleistung oder Systemkosten.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Arbitrageur / Arbitrageunternehmer
 
@@ -376,11 +454,15 @@ Dauerhafte Leitplanken für dezentrale Architekturentscheidungen festlegen und A
 
 Dauerhafte Leitplanken für dezentrale Architekturentscheidungen festlegen und Ausnahmen nachvollziehbar dokumentieren.
 
+J08 gehört zur Kategorie „Business Architecture, Capabilities und Zielarchitektur“. Verbindlicher Output: Katalog von Wirkungs-, Daten-, Technologie-, Sicherheits- und Interoperabilitätsprinzipien plus Architecture Decision Records.
+
 ## Art. 2 EUV – Werte der Europäischen Union
 
 Art. 2 EUV benennt die Werte der Union: Menschenwürde, Freiheit, Demokratie, Gleichheit, Rechtsstaatlichkeit und Menschenrechte sowie Pluralismus, Nichtdiskriminierung, Toleranz, Gerechtigkeit, Solidarität und Gleichheit.
 
 Art. 2 EUV benennt die Werte der Union: Menschenwürde, Freiheit, Demokratie, Gleichheit, Rechtsstaatlichkeit und Menschenrechte sowie Pluralismus, Nichtdiskriminierung, Toleranz, Gerechtigkeit, Solidarität und Gleichheit.
+
+Der Artikel ist ein Kernanker für SDG+ und für die demokratische Dimension der Wirkungsökonomie. Wirkung für Demokratie ist nicht Zusatz, sondern Voraussetzung für legitime, korrigierbare und rechtsstaatliche Wirkungslenkung.
 
 ## Art. 3 EUV – nachhaltige Entwicklung Europas
 
@@ -388,11 +470,15 @@ Art. 3 EUV verbindet Binnenmarkt, nachhaltige Entwicklung, soziale Marktwirtscha
 
 Art. 3 EUV verbindet Binnenmarkt, nachhaltige Entwicklung, soziale Marktwirtschaft, sozialen Fortschritt, hohen Umweltschutz, wissenschaftlich-technischen Fortschritt, Gleichstellung und Solidarität zwischen Generationen.
 
+Für die Wirkungsökonomie ist Art. 3 EUV der europäische Zielkorridor: Markt, Innovation und soziale Ordnung stehen nicht isoliert, sondern unter dem Maßstab nachhaltiger Entwicklung und Generationenverantwortung.
+
 ## Art. 11 AEUV – Umweltintegrationsprinzip
 
 Art. 11 AEUV verlangt, dass Umweltschutzanforderungen in die Festlegung und Durchführung der Unionspolitiken und -maßnahmen einbezogen werden, insbesondere zur Förderung nachhaltiger Entwicklung.
 
 Art. 11 AEUV verlangt, dass Umweltschutzanforderungen in die Festlegung und Durchführung der Unionspolitiken und -maßnahmen einbezogen werden, insbesondere zur Förderung nachhaltiger Entwicklung.
+
+Dieser Artikel passt besonders gut zur WÖk, weil er den Übergang von Add-on-Nachhaltigkeit zu integrierter Steuerungslogik ausdrückt: Umwelt wird nicht nachträglich kompensiert, sondern in jede Politik eingerechnet.
 
 ## Art. 20a GG
 
@@ -400,11 +486,15 @@ Art. 20a GG verpflichtet den Staat, natürliche Lebensgrundlagen und Tiere auch 
 
 Art. 20a GG verpflichtet den Staat, natürliche Lebensgrundlagen und Tiere auch in Verantwortung für künftige Generationen zu schützen.
 
+Zentrale Anschlusslinie der WÖk, aber kein Freibrief für beliebige Steuerung. Wirkung muss im Rahmen von Grundrechten, Demokratie, Rechtsstaatlichkeit, Verhältnismäßigkeit und parlamentarischer Verantwortung entwickelt werden.
+
 ## Art. 37 EU-Grundrechtecharta – Umweltschutz
 
 Art. 37 der EU-Grundrechtecharta verlangt ein hohes Umweltschutzniveau und die Verbesserung der Umweltqualität in den Politiken der Union nach dem Grundsatz nachhaltiger Entwicklung.
 
 Art. 37 der EU-Grundrechtecharta verlangt ein hohes Umweltschutzniveau und die Verbesserung der Umweltqualität in den Politiken der Union nach dem Grundsatz nachhaltiger Entwicklung.
+
+Für die WÖk ist Art. 37 ein Grundrechtecharta-Anker für Planet als Schutzdimension. Er stärkt die Idee, dass Umweltschutz nicht bloß Fachpolitik ist, sondern Teil der europäischen Grundordnung.
 
 ## Art. 191 AEUV – Vorsorge-, Präventions- und Verursacherprinzip
 
@@ -412,11 +502,15 @@ Art. 191 AEUV beschreibt die Ziele und Grundsätze der EU-Umweltpolitik: Erhalt 
 
 Art. 191 AEUV beschreibt die Ziele und Grundsätze der EU-Umweltpolitik: Erhalt und Verbesserung der Umweltqualität, Schutz der Gesundheit, rationelle Ressourcennutzung, Bekämpfung des Klimawandels sowie Vorsorge-, Präventions-, Ursprungs- und Verursacherprinzip.
 
+Für die WÖk ist Art. 191 AEUV besonders anschlussfähig, weil er die Logik „Wer Schaden verursacht, trägt Kosten“ mit Vorsorge und systemischer Prävention verbindet.
+
 ## Artikel 20a Grundgesetz / Art. 20a GG
 
 Artikel 20a des Grundgesetzes verpflichtet den Staat, die natürlichen Lebensgrundlagen und die Tiere auch in Verantwortung für künftige Generationen zu schützen - im Rahmen der verfassungsmäßigen Ordnung.
 
 Artikel 20a des Grundgesetzes verpflichtet den Staat, die natürlichen Lebensgrundlagen und die Tiere auch in Verantwortung für künftige Generationen zu schützen - im Rahmen der verfassungsmäßigen Ordnung.
+
+Für die Wirkungsökonomie ist Art. 20a der zentrale verfassungsrechtliche Anschlussbegriff für Planet, ökologische Lebensgrundlagen, Generationenverantwortung und die rechtliche Rückbindung von Wirkungssteuerung. Er zeigt, dass der Staat nicht nur gegenwärtige Interessen verwalten darf, sondern langfristige Lebensbedingungen schützen muss.
 
 ## Assurance
 
@@ -430,17 +524,27 @@ Astroturfing beschreibt künstlich erzeugte Graswurzelbewegungen, die wie sponta
 
 Astroturfing beschreibt künstlich erzeugte Graswurzelbewegungen, die wie spontane Bürger:innenbewegungen aussehen, tatsächlich aber organisiert oder finanziert gesteuert werden.
 
+Astroturfing verzerrt Resonanzräume und kann demokratische Rückkopplung simulieren.
+
 ## Atlas Network
 
 Atlas Network ist ein international vernetztes Netzwerk marktwirtschaftlich-libertärer und pro-freedom orientierter Organisationen und Thinktanks.
 
 Atlas Network ist ein international vernetztes Netzwerk marktwirtschaftlich-libertärer und pro-freedom orientierter Organisationen und Thinktanks.
 
+Als Beispiel für transnationale Thinktank-Vernetzung relevant. WÖk-Prüffragen: Welche Programme werden gefördert, welche Finanzierung liegt offen, welche Narrative werden verbreitet und welche Wirkung entsteht auf Demokratie, Klima, Marktregeln, Eigentum, Steuern und öffentliche Infrastruktur?
+
 ## Attraktor
 
 Ein Attraktor ist ein Zustand oder Zustandsbereich, zu dem ein dynamisches System unter seinen Bedingungen tendiert.
 
 Attraktoren können erwünscht oder schädlich sein. Rückstellfähigkeit stabilisiert innerhalb eines Zustandsraums; Transformationsfähigkeit schafft oder erreicht bei Bedarf einen anderen tragfähigen Attraktor.
+
+## Attributionsfehler
+
+Ein Attributionsfehler ist ein systematischer Fehler beim Zuschreiben von Ursachen, Motiven oder Verantwortung.
+
+Der Begriff ist kein Freispruch für jedes Verhalten und keine psychologische Diagnose. Er ist eine Warnung für Erklärungen: Wer nur auf einzelne Personen zeigt, übersieht leicht Strukturen; wer nur auf Strukturen zeigt, übersieht unter Umständen tatsächliche Handlungsspielräume. Gute Analyse prüft beides mit passenden Belegen.
 
 ## Attributionsforschung
 
@@ -462,11 +566,15 @@ Aufmerksamkeit beschreibt die Auswahl dessen, was aus vielen Reizen bewusst oder
 
 Aufmerksamkeit beschreibt die Auswahl dessen, was aus vielen Reizen bewusst oder handlungsrelevant wird.
 
+Aufmerksamkeit ist ein knappes Wirkungsmedium. Medien, Produkte, Preise und Plattformen wirken oft zuerst über Aufmerksamkeitslenkung.
+
 ## Aufmerksamkeitsökonomie
 
 Aufmerksamkeitsökonomie beschreibt Märkte und Plattformlogiken, in denen Aufmerksamkeit zur knappen Ressource und zum Geschäftsmodell wird.
 
 Aufmerksamkeitsökonomie beschreibt Märkte und Plattformlogiken, in denen Aufmerksamkeit zur knappen Ressource und zum Geschäftsmodell wird.
+
+Relevant für Medien, Plattformen, politische Sprache, Werbung und demokratische Stabilität.
 
 ## Aufschubnarrativ
 
@@ -510,17 +618,23 @@ Austerität beschreibt eine Politik strenger Haushaltskonsolidierung durch Ausga
 
 Austerität beschreibt eine Politik strenger Haushaltskonsolidierung durch Ausgabenkürzungen oder Sparmaßnahmen.
 
+Nur sinnvoll, wenn nicht notwendige Wirkungsinfrastruktur zerstört wird. Sparen kann Verlustleistung erhöhen, wenn spätere Schäden wachsen.
+
 ## Autokratie
 
 Eine Autokratie ist eine Herrschaftsform, in der politische Macht bei einer Person oder Gruppe konzentriert ist und demokratische Kontrolle stark eingeschränkt ist.
 
 Eine Autokratie ist eine Herrschaftsform, in der politische Macht bei einer Person oder Gruppe konzentriert ist und demokratische Kontrolle stark eingeschränkt ist.
 
+Autokratien sind Wirkungsrisiken für Demokratie, Menschenrechte, Rechtsstaatlichkeit, Transparenz, freie Medien und gesellschaftliche Rückkopplung.
+
 ## Autokratisierung
 
 Autokratisierung beschreibt die Entwicklung eines politischen Systems in Richtung stärkerer Machtkonzentration, weniger Rechtsstaatlichkeit, weniger Freiheit und weniger demokratischer Kontrolle.
 
 Autokratisierung beschreibt die Entwicklung eines politischen Systems in Richtung stärkerer Machtkonzentration, weniger Rechtsstaatlichkeit, weniger Freiheit und weniger demokratischer Kontrolle.
+
+WÖk prüft, welche Rückkopplungen, Rechte, Medien und Machtbegrenzungen konkret verloren gehen.
 
 ## Automatisierung
 
@@ -558,11 +672,15 @@ Autoritäres Wirkungspotenzial beschreibt die Möglichkeit, dass Sprache, Progra
 
 Autoritäres Wirkungspotenzial beschreibt die Möglichkeit, dass Sprache, Programme, Institutionen oder Bewegungen demokratische Korrektur, Rechtsstaatlichkeit, Minderheitenschutz und Pluralismus schrittweise schwächen.
 
+WÖk-Präzisierungsbegriff für Früherkennung demokratischer Risiken ohne vorschnelle Etikettierung.
+
 ## Autoritarismus
 
 Autoritarismus beschreibt Herrschaftsformen oder politische Muster, in denen Macht konzentriert ist, Widerspruch begrenzt wird und demokratische Kontrolle geschwächt ist.
 
 Autoritarismus beschreibt Herrschaftsformen oder politische Muster, in denen Macht konzentriert ist, Widerspruch begrenzt wird und demokratische Kontrolle geschwächt ist.
+
+Autoritarismus ist ein Wirkungsrisiko, weil Korrektur, Pluralismus, Rechtsstaatlichkeit, Medienfreiheit und Vertrauen unter Druck geraten.
 
 ## Autoritätsbias
 
@@ -576,6 +694,10 @@ Das Backend einer Ladeinfrastruktur verwaltet Ladepunkte, Nutzerzugang, Abrechnu
 
 Das Backend einer Ladeinfrastruktur verwaltet Ladepunkte, Nutzerzugang, Abrechnung, Monitoring und Schnittstellen.
 
+Backends sind Daten- und Machtinfrastruktur; sie brauchen Datenschutz, Interoperabilität, Ausfallsicherheit und faire Schnittstellen.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Backfire-Effekt
 
 Korrekturen können unter bestimmten Bedingungen Abwehr oder Gegenreaktionen verstärken.
@@ -588,17 +710,23 @@ Backup-Kapazität steht bereit, wenn andere Erzeugung oder Flexibilität nicht a
 
 Backup-Kapazität steht bereit, wenn andere Erzeugung oder Flexibilität nicht ausreicht.
 
+Wirkung hängt von Emissionen, Kosten, Einsatzhäufigkeit und Alternativen ab.
+
 ## Banalität des Bösen
 
 Banalität des Bösen beschreibt Arendts These, dass schweres Unrecht auch durch Gedankenlosigkeit, Gehorsam, Verwaltung und fehlende Urteilskraft entstehen kann.
 
 Banalität des Bösen beschreibt Arendts These, dass schweres Unrecht auch durch Gedankenlosigkeit, Gehorsam, Verwaltung und fehlende Urteilskraft entstehen kann.
 
+Relevant für Verwaltung, Bürokratie, Verantwortung, Mitläufertum, Wirkungsblindheit und autoritäre Systeme.
+
 ## Bandlücke
 
 Die Bandlücke beschreibt den energetischen Abstand zwischen Valenzband und Leitungsband in einem Material.
 
 Die Bandlücke beschreibt den energetischen Abstand zwischen Valenzband und Leitungsband in einem Material.
+
+Wichtig für Photovoltaik, LEDs, Halbleiter und Energieumwandlung.
 
 ## Bandwagon-Effekt
 
@@ -611,6 +739,8 @@ Der Bandwagon-Effekt verstärkt wahrgenommene Trends. Im öffentlichen Raum kann
 Gefahren, Ursachen, präventive und reaktive Barrieren sowie Konsequenzen systematisch verbinden.
 
 Gefahren, Ursachen, präventive und reaktive Barrieren sowie Konsequenzen systematisch verbinden.
+
+P07 gehört zur Kategorie „Qualität, operative Resilienz, Kontrollen und integrierte Assurance“. Verbindlicher Output: Bow-Tie mit Top Event, Ursachen, Folgen, Barrieren, Ownern, Wirksamkeit, Degradation und KII.
 
 ## Baseline-Verschiebung
 
@@ -630,11 +760,19 @@ Eine Batterie ist ein elektrochemischer Speicher, der elektrische Energie chemis
 
 Eine Batterie ist ein elektrochemischer Speicher, der elektrische Energie chemisch speichert und bei Bedarf wieder abgibt.
 
+Batterien sind zentrale Infrastruktur der Energiewende, aber nur vollständig bewertbar über Rohstoffe, Herstellung, Nutzung, Sicherheit, Lebensdauer, Second Life, Recycling und Systemintegration.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Batteriealterung
 
 Batteriealterung beschreibt den Verlust von Kapazität, Leistung oder Sicherheit über Zeit und Nutzung.
 
 Batteriealterung beschreibt den Verlust von Kapazität, Leistung oder Sicherheit über Zeit und Nutzung.
+
+Alterung entscheidet über Garantie, Second Life, Restwert, Sicherheit und Ressourcenbedarf.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Batterielebenszyklus
 
@@ -642,11 +780,19 @@ Der Batterielebenszyklus umfasst Rohstoffgewinnung, Herstellung, Nutzung, Alteru
 
 Der Batterielebenszyklus umfasst Rohstoffgewinnung, Herstellung, Nutzung, Alterung, Second Life, Recycling und Entsorgung.
 
+Er verbindet Produktwirkung, Lieferkette, Klimawirkung, Sicherheit, Kreislaufwirtschaft und Rückführung.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Batteriemanagementsystem / BMS
 
 Ein Batteriemanagementsystem überwacht und steuert Batterieparameter wie Spannung, Temperatur, Ladezustand und Sicherheit.
 
 Ein Batteriemanagementsystem überwacht und steuert Batterieparameter wie Spannung, Temperatur, Ladezustand und Sicherheit.
+
+BMS-Daten sind relevant für Lebensdauer, Sicherheit, Second Life, Batteriepass, Restwert und Kreislaufwirkung.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Batteriemodul
 
@@ -654,11 +800,19 @@ Ein Batteriemodul besteht aus mehreren zusammengeschalteten Batteriezellen.
 
 Ein Batteriemodul besteht aus mehreren zusammengeschalteten Batteriezellen.
 
+Module beeinflussen Reparierbarkeit, Austauschbarkeit, Second-Life-Potenzial und Demontage.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Batteriepack
 
 Ein Batteriepack ist die vollständige Batterieeinheit aus Zellen, Modulen, Gehäuse, Kühlung, Elektronik und Batteriemanagementsystem.
 
 Ein Batteriepack ist die vollständige Batterieeinheit aus Zellen, Modulen, Gehäuse, Kühlung, Elektronik und Batteriemanagementsystem.
+
+Das Pack entscheidet über Sicherheit, thermische Führung, Datenqualität, Reparatur, Rückbau und Kreislaufwirkung.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Batteriepass
 
@@ -666,11 +820,19 @@ Ein Batteriepass ist ein digitaler Datensatz zu Herkunft, Zusammensetzung, CO2-F
 
 Ein Batteriepass ist ein digitaler Datensatz zu Herkunft, Zusammensetzung, CO2-Fußabdruck, Leistung, Nutzung, Sicherheit und Kreislauf einer Batterie.
 
+Zentrale Dateninfrastruktur für Wirkungsdaten, Second Life, Recycling, Lieferkettenverantwortung, EU-Batterieverordnung und WÖk-Scorecards.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Batterierecycling
 
 Batterierecycling beschreibt die Rückgewinnung von Materialien aus Altbatterien oder Produktionsausschuss.
 
 Batterierecycling beschreibt die Rückgewinnung von Materialien aus Altbatterien oder Produktionsausschuss.
+
+Zentral für Rohstoffsicherheit, Kreislaufwirtschaft, Umweltwirkung und strategische Autonomie; ersetzt aber nicht Rohstoffvermeidung, Lebensdauerverlängerung und gutes Design.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Batterierohstoffe
 
@@ -678,11 +840,17 @@ Batterierohstoffe sind Materialien für Batterien, etwa Lithium, Nickel, Kobalt,
 
 Batterierohstoffe sind Materialien für Batterien, etwa Lithium, Nickel, Kobalt, Mangan, Eisen, Phosphat, Graphit, Natrium oder Aluminium.
 
+Sie sind zentral für Lieferkettenwirkung, Rohstoffabhängigkeit, Arbeitsbedingungen, Biodiversität, Wasser und Recycling.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Batteriespeicher
 
 Batteriespeicher speichern elektrische Energie elektrochemisch.
 
 Batteriespeicher speichern elektrische Energie elektrochemisch.
+
+Relevant für Kurzzeitspeicher, Netzdienlichkeit, Eigenverbrauch und erneuerbare Integration; Rohstoffe und Recycling zählen mit.
 
 ## Batteriezelle
 
@@ -690,11 +858,19 @@ Die Batteriezelle ist die kleinste elektrochemische Einheit einer Batterie.
 
 Die Batteriezelle ist die kleinste elektrochemische Einheit einer Batterie.
 
+Zellchemie, Qualität und Herkunft prägen Sicherheit, Lebensdauer, Rohstoffwirkung und Recyclingfähigkeit.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Baukostenzuschuss
 
 Ein Baukostenzuschuss ist ein Beitrag zu Kosten, die durch Netzanschluss oder Netzausbau entstehen.
 
 Ein Baukostenzuschuss ist ein Beitrag zu Kosten, die durch Netzanschluss oder Netzausbau entstehen.
+
+Relevant für Wirtschaftlichkeit von Ladeparks, Speichern, PV, Industrie und Verteilungswirkung.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Bedeutung als Gebrauch
 
@@ -714,6 +890,8 @@ Bedrohungsverarbeitung beschreibt, wie Menschen mögliche Gefahren wahrnehmen, e
 
 Bedrohungsverarbeitung beschreibt, wie Menschen mögliche Gefahren wahrnehmen, emotional bewerten und handlungsrelevant machen.
 
+Kann Schutzverhalten fördern, aber auch Reaktanz, Polarisierung oder Feindbilder verstärken.
+
 ## Befähigung / Capabilities
 
 Befähigung fragt, welche realen Möglichkeiten Menschen haben, ein würdiges und selbstbestimmtes Leben zu führen.
@@ -726,11 +904,15 @@ Menschen rechtzeitig mit Wissen, Skills, Übungsräumen, Werkzeugen und Unterst�
 
 Menschen rechtzeitig mit Wissen, Skills, Übungsräumen, Werkzeugen und Unterstützung für die neue Wirkungslogik ausstatten.
 
+M07 gehört zur Kategorie „Change, Adoption, Workforce, Skills und Wissen“. Verbindlicher Output: Enablement-Plan mit Zielkompetenzen, Lernformaten, Praxisaufgaben, Support, Nachweis und Transfermessung.
+
 ## Begrenzte Rationalität
 
 Begrenzte Rationalität beschreibt, dass Menschen unter begrenzter Information, Zeit, Aufmerksamkeit und Verarbeitungskapazität entscheiden.
 
 Begrenzte Rationalität beschreibt, dass Menschen unter begrenzter Information, Zeit, Aufmerksamkeit und Verarbeitungskapazität entscheiden.
+
+Zentral für Produktwirkung, Medienwirkung, Politik und Wirkungskommunikation.
 
 ## Behörde
 
@@ -738,11 +920,15 @@ Eine Behörde ist eine staatliche Stelle, die Verwaltungsaufgaben erfüllt und E
 
 Eine Behörde ist eine staatliche Stelle, die Verwaltungsaufgaben erfüllt und Entscheidungen nach Recht und Gesetz umsetzt.
 
+Behörden sind Kontaktstellen zwischen Staat und Bürger:innen; ihre Wirkung zeigt sich in Zugang, Fairness, Tempo, Verständlichkeit und Rechtsschutz.
+
 ## Beitragsanalyse
 
 Plausibel und evidenzbasiert beurteilen, welchen Beitrag eine Intervention zu beobachteten Wirkungen geleistet hat, ohne unangemessene Alleinursächlichkeit zu behaupten.
 
 Plausibel und evidenzbasiert beurteilen, welchen Beitrag eine Intervention zu beobachteten Wirkungen geleistet hat, ohne unangemessene Alleinursächlichkeit zu behaupten.
+
+C05 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Verbindlicher Output: Beitragsnarrativ mit Alternativerklärungen, Evidenzkette, verbleibender Unsicherheit und Lernschlussfolgerung.
 
 ## Beitragsbasis
 
@@ -762,6 +948,8 @@ Belohnungslernen beschreibt, wie Verhalten durch positive Rückmeldung, Erfolgse
 
 Belohnungslernen beschreibt, wie Verhalten durch positive Rückmeldung, Erfolgserleben oder soziale Anerkennung wahrscheinlicher wird.
 
+Relevant für Konsum, Plattformlogik, Likes, Status, Bonusprogramme, Gamification und Produktverhalten.
+
 ## Benchmark
 
 Ein Benchmark ist ein fachlicher Vergleichs- oder Schwellenwert, mit dem ein Messwert im jeweiligen Kontext eingeordnet und in einen Wirkungsscore übersetzt werden kann.
@@ -780,11 +968,17 @@ Verantwortung, Betrieb, Budget, Daten und Lernpflicht nach Projekt- oder Program
 
 Verantwortung, Betrieb, Budget, Daten und Lernpflicht nach Projekt- oder Programmende sichern.
 
+N07 gehört zur Kategorie „Portfolio, Programme, Delivery und Impact & Benefits Realization“. Verbindlicher Output: Handover- und Ownership-Plan mit Abnahmekriterien, Betriebsfähigkeit, Benefit Owner, Impact Owner und Reviewkalender.
+
 ## Beobachterabhängigkeit
 
 Beobachterabhängigkeit bedeutet, dass Beobachtungen von Unterscheidungen, Sprache, Datenquellen, Interessen, Messinstrumenten und Kontexten geprägt sind.
 
 Beobachterabhängigkeit bedeutet, dass Beobachtungen von Unterscheidungen, Sprache, Datenquellen, Interessen, Messinstrumenten und Kontexten geprägt sind.
+
+Die Wirkungsökonomie muss deshalb offenlegen, aus welcher Perspektive Wirkung bewertet wird, welche Daten fehlen und welche Systemgrenzen gesetzt werden.
+
+Wichtig für Faktencheck, Folgencheck, Scorecards und Wirkungsbewertung: Zustandsveränderungen bleiben real, ihre Erfassung braucht transparente Kriterien.
 
 ## Beobachtung zweiter Ordnung
 
@@ -816,6 +1010,8 @@ Akkumulationen, Zuflüsse, Abflüsse und Verzögerungen erfassen, wenn Mengen- u
 
 Akkumulationen, Zuflüsse, Abflüsse und Verzögerungen erfassen, wenn Mengen- und Zeitdynamik entscheidend sind.
 
+B05 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Verbindlicher Output: Qualitatives oder quantitatives Stock-and-Flow-Modell mit definierten Einheiten und Hypothesen.
+
 ## Bestandsimmobilie
 
 Eine Bestandsimmobilie ist ein bereits errichtetes Gebäude; ihre Wirkung hängt vor allem von Nutzung, Energiebedarf, Sanierung, Lage und Lebensdauer ab.
@@ -834,11 +1030,21 @@ Beteiligung so gestalten, dass Betroffene, Wissensträger:innen, Entscheider:inn
 
 Beteiligung so gestalten, dass Betroffene, Wissensträger:innen, Entscheider:innen und fehlende Stimmen angemessen in Analyse und Entscheidung eingehen.
 
+A08 gehört zur Kategorie „Orientierung, Mandat und Schutzrahmen“. Verbindlicher Output: Beteiligungsplan mit Zweck, Stufe, Auswahl, Barrierenabbau, Entscheidungseinfluss, Rückmeldung und Schutz.
+
 ## Betriebsemissionen
 
 Emissionen, die während des Betriebs einer Anlage entstehen.
 
 Emissionen, die während des Betriebs einer Anlage entstehen.
+
+Im Kernenergie-Dossier nur mit klarer Bilanzgrenze, Datenstand und Alternativenvergleich verwenden.
+
+## Betroffenenperspektive
+
+Die Betroffenenperspektive bringt Wissen, Erfahrungen und Urteile der Menschen ein, die von einer Entscheidung oder Maßnahme wesentlich betroffen sind.
+
+Es gibt nie nur eine einzige Betroffenenstimme. Beteiligung muss Unterschiede, Machtasymmetrien, Barrieren und mögliche Interessenkonflikte sichtbar machen. Erfahrungswissen ersetzt Daten, Fachwissen oder Rechtsprüfung nicht; umgekehrt können diese Dinge keine Entscheidung über Köpfe der Betroffenen hinweg rechtfertigen. Gute Verfahren dokumentieren, wie Rückmeldungen berücksichtigt oder begründet anders gewichtet wurden.
 
 ## Bewegungs-NGO
 
@@ -846,11 +1052,17 @@ Eine Bewegungs-NGO verbindet Organisationsstruktur mit Mobilisierung, Kampagnen 
 
 Eine Bewegungs-NGO verbindet Organisationsstruktur mit Mobilisierung, Kampagnen und öffentlichem Druck.
 
+Kann Beteiligung und Sichtbarkeit stärken, braucht aber Transparenz über Ziele, Finanzierung und Repräsentationsanspruch.
+
 ## Bidirektionales Laden
 
 Bidirektionales Laden ermöglicht, dass ein Fahrzeug nicht nur Strom aufnimmt, sondern auch zurückspeisen oder lokal bereitstellen kann.
 
 Bidirektionales Laden ermöglicht, dass ein Fahrzeug nicht nur Strom aufnimmt, sondern auch zurückspeisen oder lokal bereitstellen kann.
+
+Potenzial für Flexibilität und Resilienz, aber abhängig von Standards, Batteriealterung, Garantie, Tarifen und Nutzerakzeptanz.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Bilanzgrenze
 
@@ -869,6 +1081,8 @@ Er macht transparent, welche räumlichen, zeitlichen und sachlichen Grenzen eine
 Biochemische Rohstoffgewinnung extrahiert verwertbare chemische Bestandteile aus biologischen Materialien.
 
 Biochemische Rohstoffgewinnung extrahiert verwertbare chemische Bestandteile aus biologischen Materialien.
+
+Relevant für Kaskadennutzung und bio-basierte Kreisläufe.
 
 ## Biodiversität
 
@@ -894,11 +1108,15 @@ Bioenergie nutzt biologische Materialien zur Energieerzeugung.
 
 Bioenergie nutzt biologische Materialien zur Energieerzeugung.
 
+Wirkung hängt stark von Flächen, Biodiversität, Nahrungskonkurrenz, Reststoffen und Emissionen ab.
+
 ## Biogas
 
 Biogas ist ein energiereiches Gas aus der Vergärung organischer Materialien.
 
 Biogas ist ein energiereiches Gas aus der Vergärung organischer Materialien.
+
+Kann Teil biologischer Kreisläufe sein, muss aber Flächennutzung, Biodiversität, Methanverluste und Nährstoffkreisläufe berücksichtigen.
 
 ## Biologischer Kreislauf
 
@@ -930,17 +1148,27 @@ Black Mass ist ein Zwischenprodukt des Batterierecyclings mit aktiven Materialie
 
 Black Mass ist ein Zwischenprodukt des Batterierecyclings mit aktiven Materialien wie Lithium, Nickel, Kobalt, Mangan oder Graphit.
 
+Black Mass macht Rohstoffrückgewinnung sichtbar, sagt aber allein noch nichts über Recyclingeffizienz, Herkunft, Umweltlast oder Wiedereinsatz aus.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Blauer Wasserstoff
 
 Blauer Wasserstoff wird aus fossilen Quellen hergestellt, wobei CO2 abgeschieden und gespeichert werden soll.
 
 Blauer Wasserstoff wird aus fossilen Quellen hergestellt, wobei CO2 abgeschieden und gespeichert werden soll.
 
+Wirkung hängt von Methanemissionen, Abscheiderate, Speicherpermanenz und Alternativen ab.
+
 ## Blei-Säure-Batterie
 
 Blei-Säure-Batterien sind wiederaufladbare Batterien mit Blei und Schwefelsäure.
 
 Blei-Säure-Batterien sind wiederaufladbare Batterien mit Blei und Schwefelsäure.
+
+Historisch und industriell relevant, aber wirkungssensibel wegen Blei, Gesundheit, Recycling und Sicherheitsanforderungen.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Blindleistung
 
@@ -1010,11 +1238,15 @@ Die Bundesregierung besteht aus Bundeskanzler:in und Bundesminister:innen.
 
 Die Bundesregierung besteht aus Bundeskanzler:in und Bundesminister:innen.
 
+Sie trägt politische Verantwortung auf Bundesebene, bleibt aber an Verfassung, Parlament, Rechtsschutz und Verwaltung gebunden.
+
 ## Bürgerbeteiligung
 
 Bürgerbeteiligung beschreibt Verfahren, in denen Bürger:innen an Planung, Beratung oder Entscheidung beteiligt werden.
 
 Bürgerbeteiligung beschreibt Verfahren, in denen Bürger:innen an Planung, Beratung oder Entscheidung beteiligt werden.
+
+Sie stärkt Demokratie nur, wenn Einfluss, Rückmeldung, Zugang und Transparenz real sind.
 
 ## Bürgerenergie
 
@@ -1034,11 +1266,15 @@ Eine Bürgerinitiative ist ein Zusammenschluss von Bürger:innen, der ein konkre
 
 Eine Bürgerinitiative ist ein Zusammenschluss von Bürger:innen, der ein konkretes Anliegen gegenüber Öffentlichkeit, Verwaltung oder Politik vertritt.
 
+Kann lokale Rückkopplung stärken, muss aber nach Betroffenenbezug, Transparenz, Faktenlage und Wirkung auf andere Gruppen geprüft werden.
+
 ## Bürgerrat
 
 Ein Bürgerrat ist ein Beteiligungsformat, in dem zufällig ausgewählte Bürger:innen gesellschaftliche Fragen beraten und Empfehlungen entwickeln.
 
 Ein Bürgerrat ist ein Beteiligungsformat, in dem zufällig ausgewählte Bürger:innen gesellschaftliche Fragen beraten und Empfehlungen entwickeln.
+
+Bürgerräte können demokratische Rückkopplung stärken, ersetzen aber nicht Parlament, Rechtsschutz oder freie Wahlen.
 
 ## Business Ecosystem
 
@@ -1046,11 +1282,15 @@ Ein Business Ecosystem ist ein Netzwerk aus Unternehmen, Kund:innen, Lieferanten
 
 Ein Business Ecosystem ist ein Netzwerk aus Unternehmen, Kund:innen, Lieferanten, Plattformen, Kapitalgebern, Regulierung, Infrastruktur und Komplementärangeboten, das gemeinsam Wertschöpfung ermöglicht.
 
+Aus WÖk-Sicht ist ein Business Ecosystem ein Wirkungsraum. Es kann Innovation, Resilienz und Kooperation erzeugen, aber auch Lock-ins, Monopole, Abhängigkeiten, Datenmacht, Prekarität und Externalisierung.
+
 ## Business Impact Analysis für kritische Wirkungsservices
 
 Kritische Produkte, Services, gesellschaftliche Funktionen und maximal tolerierbare Ausfälle bestimmen.
 
 Kritische Produkte, Services, gesellschaftliche Funktionen und maximal tolerierbare Ausfälle bestimmen.
+
+P04 gehört zur Kategorie „Qualität, operative Resilienz, Kontrollen und integrierte Assurance“. Verbindlicher Output: BIA mit kritischen Services, Empfängern, Auswirkungen über Zeit, Toleranzen, Abhängigkeiten und Prioritäten.
 
 ## Business Model
 
@@ -1064,17 +1304,27 @@ Das Business Model Canvas beschreibt zentrale Bausteine eines Geschäftsmodells,
 
 Das Business Model Canvas beschreibt zentrale Bausteine eines Geschäftsmodells, etwa Kundensegmente, Nutzenversprechen, Kanäle, Kundenbeziehungen, Einnahmen, Schlüsselressourcen, Aktivitäten, Partner und Kostenstruktur.
 
+Die WÖk ergänzt das Canvas um Wirkungsbausteine: Wirkungsempfänger, SDG/SDG+ Bezug, negative Externalitäten, Datenquellen, Lieferkettenwirkung, Wirkungsrisiko, Nichtkompensation, T-SROI, Transformationspfad und Wirkungskapital.
+
+Die WÖk ergänzt ein Wirkungsmodell: Welche Wirkung entsteht entlang von Ressourcen, Partnern, Wertangebot, Kund:innen, Kosten, Erlösen und Lieferketten?
+
 ## Business Value
 
 Business Value bezeichnet den Wert, den eine Aktivität, Investition, Funktion oder Innovation für ein Unternehmen erzeugt: Umsatz, Kostenersparnis, Risikoabsenkung, Kundenbindung, Datenqualität, Resilienz oder strategische Position.
 
 Business Value bezeichnet den Wert, den eine Aktivität, Investition, Funktion oder Innovation für ein Unternehmen erzeugt: Umsatz, Kostenersparnis, Risikoabsenkung, Kundenbindung, Datenqualität, Resilienz oder strategische Position.
 
+In der WÖk darf Business Value nicht bei finanziellen Vorteilen enden. Echter Business Value umfasst Zukunftsfähigkeit: geringere Wirkungsrisiken, bessere Daten, resiliente Lieferketten, Vertrauen, regulatorische Anschlussfähigkeit, positive Netto-Wirkung und Kapitalzugang.
+
+Business Value ist nicht identisch mit Wirkungswert. Er muss mit Impact Value und positiver Netto-Wirkung abgeglichen werden.
+
 ## Business-Architecture-Systemkarte
 
 Strategie, Stakeholder, Capabilities, Wertströme, Information, Organisation, Produkte und Regeln in einer konsistenten Sicht verbinden.
 
 Strategie, Stakeholder, Capabilities, Wertströme, Information, Organisation, Produkte und Regeln in einer konsistenten Sicht verbinden.
+
+J06 gehört zur Kategorie „Business Architecture, Capabilities und Zielarchitektur“. Verbindlicher Output: Integrierte Business-Architecture-Map mit definierten Beziehungen und Architektursichten.
 
 ## Bystander-Effekt
 
@@ -1088,11 +1338,21 @@ Die C-Rate beschreibt, wie schnell eine Batterie im Verhältnis zu ihrer Kapazit
 
 Die C-Rate beschreibt, wie schnell eine Batterie im Verhältnis zu ihrer Kapazität geladen oder entladen wird.
 
+C-Rate beeinflusst Ladezeit, Wärme, Alterung, Sicherheit und Auslegung von Ladeinfrastruktur.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Cancel Culture
 
 Cancel Culture bezeichnet soziale Sanktionierung, Boykott oder öffentlichen Unterstützungsentzug und wird politisch oft als Bedrohungsframe gegen Kritik oder Verantwortungsforderung genutzt.
 
 Der Begriff beschreibt reale Phänomene: öffentliche Empörung, Boykott, Plattformdynamiken, Reputationsverlust und soziale Sanktionen. Als Denkabbruchformel wirkt Cancel Culture, wenn jede Kritik, jede Konsequenz oder jede Forderung nach Verantwortung als Zensur oder Angriff auf Freiheit gerahmt wird. Dann wird nicht mehr geprüft, ob eine Kritik berechtigt, unverhältnismäßig oder tatsächlich freiheitsgefährdend ist.
+
+## Cancel-Dynamiken
+
+Cancel-Dynamiken sind Prozesse, in denen öffentliche Kritik, Boykottaufrufe, Distanzierung und Ausschluss einander verstärken können.
+
+Nicht jede Kritik, jedes Boykottverhalten und jede Rechenschaftsforderung ist eine Cancel-Dynamik. Für eine faire Analyse sind Ausgangshandlung, Belege, Machtasymmetrie, Verfahren, Verhältnismäßigkeit, Gegenrede, Schutz Beteiligter und tatsächliche Folgen getrennt zu prüfen. Der Begriff darf nicht genutzt werden, um berechtigte Kritik zum Schweigen zu bringen – und auch nicht, um unverhältnismäßige Ausschlüsse zu verharmlosen.
 
 ## Canvas-Mindeststandard
 
@@ -1100,11 +1360,15 @@ Der Canvas-Mindeststandard verlangt ID, Version, Datum, Fall, verantwortliche Mo
 
 Der Canvas-Mindeststandard verlangt ID, Version, Datum, Fall, verantwortliche Moderation sowie Felder für Evidenzstatus, Unsicherheit, negative Wirkung, Wirkungsgrenzen und offene Fragen.
 
+Er hält Informationsarchitektur, Barrierearmut, Versionierung und Nichtkompensation über Web-, Druck-, Miro- und Präsentationsvarianten stabil.
+
 ## Capability-Abhängigkeitsnetz
 
 Abhängigkeiten, gemeinsame Enabler, Konzentrationsrisiken und Kaskaden zwischen Fähigkeiten sichtbar machen.
 
 Abhängigkeiten, gemeinsame Enabler, Konzentrationsrisiken und Kaskaden zwischen Fähigkeiten sichtbar machen.
+
+J04 gehört zur Kategorie „Business Architecture, Capabilities und Zielarchitektur“. Verbindlicher Output: Netzwerkdiagramm mit kritischen Knoten, Single Points of Failure, Enablern und Entkopplungsoptionen.
 
 ## Capability-Gap- und Investitionspriorisierung
 
@@ -1112,17 +1376,23 @@ Fähigkeitslücken nach Wirkungsbeitrag, Dringlichkeit, Risiko, Aufwand und Lern
 
 Fähigkeitslücken nach Wirkungsbeitrag, Dringlichkeit, Risiko, Aufwand und Lernwert priorisieren.
 
+J05 gehört zur Kategorie „Business Architecture, Capabilities und Zielarchitektur“. Verbindlicher Output: Priorisiertes Capability-Investment-Portfolio mit Entscheidung, Budget, Sequenz und Benefit-/Impact-Owner.
+
 ## Capability-Reifegrad und Heatmap
 
 Ist- und Zielreife der wirkungskritischen Fähigkeiten evidenzbasiert bewerten.
 
 Ist- und Zielreife der wirkungskritischen Fähigkeiten evidenzbasiert bewerten.
 
+J03 gehört zur Kategorie „Business Architecture, Capabilities und Zielarchitektur“. Verbindlicher Output: Capability Heatmap mit Reifegrad, Evidenz, Zielzustand, Risiko und Verbesserungsauftrag.
+
 ## Capability-to-Impact-Matrix
 
 Fähigkeiten direkt mit Wirkungspfaden, Empfängern, KII und Risiken verbinden.
 
 Fähigkeiten direkt mit Wirkungspfaden, Empfängern, KII und Risiken verbinden.
+
+J02 gehört zur Kategorie „Business Architecture, Capabilities und Zielarchitektur“. Verbindlicher Output: Matrix mit Capability-Beitrag, Wirkungspfad, Empfänger, KII, Risiko, Reife und Verantwortlichkeit.
 
 ## CAPEX
 
@@ -1142,6 +1412,8 @@ Der Capture Price beschreibt den durchschnittlichen Erlös einer Erzeugungstechn
 
 Der Capture Price beschreibt den durchschnittlichen Erlös einer Erzeugungstechnologie abhängig von den Zeiten ihrer Einspeisung.
 
+Relevant für Solar- und Windstrom, Kannibalisierungseffekt, Speicher und Flexibilität.
+
 ## Carbon Budget
 
 Ein Carbon Budget beschreibt die verbleibende Menge an Treibhausgasemissionen, die mit einem Temperaturziel vereinbar ist.
@@ -1159,6 +1431,10 @@ Die WÖk bewertet Credits nur mit Blick auf Zusätzlichkeit, Dauerhaftigkeit, Ve
 CFK ist ein Faserverbundwerkstoff aus Carbonfasern und Kunststoffmatrix.
 
 CFK ist ein Faserverbundwerkstoff aus Carbonfasern und Kunststoffmatrix.
+
+Leicht und leistungsfähig, aber energie- und recyclingrelevant.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Care Economy / Feministische Ökonomie
 
@@ -1178,6 +1454,8 @@ CBAM ist der EU-Mechanismus für einen CO2-Grenzausgleich auf bestimmte importie
 
 CBAM ist der EU-Mechanismus für einen CO2-Grenzausgleich auf bestimmte importierte Waren, um Carbon Leakage zu vermeiden und Dekarbonisierung auch außerhalb der EU anzureizen.
 
+Für die WÖk ist CBAM ein Beispiel dafür, wie externe Wirkungen an der Grenze sichtbar und kostenrelevant werden können. Er ist anschlussfähig an die Idee eines wirkungsbasierten Grenzschutzes.
+
 ## CBAM / Carbon Border Adjustment Mechanism
 
 CBAM ist der CO2-Grenzausgleichsmechanismus der EU für bestimmte emissionsintensive Importgüter.
@@ -1196,11 +1474,19 @@ CCS ist ein Ladesteckersystem für AC- und DC-Laden, in Europa insbesondere als 
 
 CCS ist ein Ladesteckersystem für AC- und DC-Laden, in Europa insbesondere als Combo 2 für DC-Schnellladen verbreitet.
 
+Standards beeinflussen Interoperabilität, Wettbewerb, Nutzerzugang und Infrastrukturkosten.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## CHAdeMO
 
 CHAdeMO ist ein DC-Ladestandard, der in Europa vor allem historisch relevant ist.
 
 CHAdeMO ist ein DC-Ladestandard, der in Europa vor allem historisch relevant ist.
+
+Als Backlog-/Altstandard wichtig für Kompatibilität, Bestand und Übergangskosten.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Change Story und Kommunikationsarchitektur
 
@@ -1208,11 +1494,15 @@ Eine wahrhaftige, zielgruppengerechte und dialogfähige Veränderungserzählung 
 
 Eine wahrhaftige, zielgruppengerechte und dialogfähige Veränderungserzählung mit konkreten Entscheidungs- und Feedbackformaten verbinden.
 
+M06 gehört zur Kategorie „Change, Adoption, Workforce, Skills und Wissen“. Verbindlicher Output: Change Story, Botschaftsarchitektur, Zielgruppenplan, Kanäle, Dialogformate, Quellen und Korrekturregeln.
+
 ## Change-Impact- und Betroffenheitsanalyse
 
 Auswirkungen der Veränderung auf Rollen, Aufgaben, Identität, Macht, Systeme, Standorte und externe Gruppen differenziert erfassen.
 
 Auswirkungen der Veränderung auf Rollen, Aufgaben, Identität, Macht, Systeme, Standorte und externe Gruppen differenziert erfassen.
+
+M02 gehört zur Kategorie „Change, Adoption, Workforce, Skills und Wissen“. Verbindlicher Output: Betroffenheitsmatrix mit Ausmaß, Art, Zeitpunkt, Bereitschaft, Schutzbedarf und verantwortlicher Maßnahme.
 
 ## Change-Netzwerk und Multiplikatorenmodell
 
@@ -1220,11 +1510,15 @@ Dezentrale Übersetzung, Rückmeldung und Befähigung über formale Hierarchien 
 
 Dezentrale Übersetzung, Rückmeldung und Befähigung über formale Hierarchien hinaus organisieren.
 
+M05 gehört zur Kategorie „Change, Adoption, Workforce, Skills und Wissen“. Verbindlicher Output: Change-Netzwerk mit Rollen, Auswahlkriterien, Reichweite, Feedbackkanälen, Schutz und Lernrhythmus.
+
 ## Checks and Balances
 
 Checks and Balances sind gegenseitige Kontroll- und Begrenzungsmechanismen zwischen staatlichen Institutionen.
 
 Checks and Balances sind gegenseitige Kontroll- und Begrenzungsmechanismen zwischen staatlichen Institutionen.
+
+Sie verhindern Machtkonzentration und sichern demokratische Korrekturfähigkeit.
 
 ## Cherry Picking
 
@@ -1237,6 +1531,8 @@ Cherry Picking erzeugt Scheinbelege. Für Wirkungsökonomie ist es relevant, wei
 Die Chicago School steht für marktorientierte ökonomische Ansätze, Monetarismus, Deregulierung und starke Betonung von Preisen und Anreizen.
 
 Die Chicago School steht für marktorientierte ökonomische Ansätze, Monetarismus, Deregulierung und starke Betonung von Preisen und Anreizen.
+
+Anschlussfähig bei Anreizen, problematisch bei Wirkungsblindheit und Externalitäten.
 
 ## Circular Economy / Regenerative Economy
 
@@ -1256,11 +1552,15 @@ Ein Zirkularitätsindikator misst Aspekte wie Materialrückführung, Rezyklatant
 
 Ein Zirkularitätsindikator misst Aspekte wie Materialrückführung, Rezyklatanteil, Lebensdauer, Wiederverwendung oder Recycling.
 
+Er braucht Kontext, weil Kreislaufwerte allein Wirkung nicht vollständig zeigen.
+
 ## Civic Literacy
 
 Civic Literacy beschreibt politisches, institutionelles und gesellschaftliches Grundwissen, das demokratische Teilhabe ermöglicht.
 
 Civic Literacy beschreibt politisches, institutionelles und gesellschaftliches Grundwissen, das demokratische Teilhabe ermöglicht.
+
+Ohne Civic Literacy bleiben Rechte, Beteiligung und Kontrolle für viele Menschen schwer nutzbar.
 
 ## Clean Industrial Deal
 
@@ -1280,6 +1580,8 @@ Ein CO2-Preis belastet Treibhausgasemissionen monetär.
 
 Ein CO2-Preis belastet Treibhausgasemissionen monetär.
 
+Er koppelt Klimawirkung teilweise in Preise zurück, ersetzt aber keine vollständige Wirkungsbewertung.
+
 ## CO2e / CO2-Äquivalent
 
 CO2e macht verschiedene Treibhausgase über ihr Erwärmungspotenzial vergleichbar.
@@ -1291,6 +1593,8 @@ CO2-Äquivalente übersetzen Klimawirkungen verschiedener Gase in eine gemeinsam
 Das Coase-Theorem beschreibt die Idee, dass externe Effekte bei klaren Eigentumsrechten und geringen Transaktionskosten durch Verhandlungen gelöst werden können.
 
 Das Coase-Theorem beschreibt die Idee, dass externe Effekte bei klaren Eigentumsrechten und geringen Transaktionskosten durch Verhandlungen gelöst werden können.
+
+In realen komplexen Systemen sind Transaktionskosten, Machtasymmetrien, Zukunftsbetroffene und planetare Grenzen zentrale Hindernisse.
 
 ## Cognitive Ease
 
@@ -1322,17 +1626,23 @@ Contracts for Difference gleichen Differenzen zwischen Referenzpreis und Marktpr
 
 Contracts for Difference gleichen Differenzen zwischen Referenzpreis und Marktpreis aus.
 
+Sie können Investitionssicherheit schaffen, müssen aber fair ausgestaltet werden.
+
 ## Cooling-off-Regel
 
 Cooling-off-Regeln legen Sperrfristen für Wechsel zwischen öffentlichem Amt und bestimmten privaten Interessenpositionen fest.
 
 Cooling-off-Regeln legen Sperrfristen für Wechsel zwischen öffentlichem Amt und bestimmten privaten Interessenpositionen fest.
 
+Sie schützen Vertrauen, reduzieren Interessenkonflikte und begrenzen den Drehtür-Effekt.
+
 ## Corporate Capture
 
 Corporate Capture beschreibt die Vereinnahmung politischer, regulatorischer oder öffentlicher Prozesse durch Unternehmensinteressen.
 
 Corporate Capture beschreibt die Vereinnahmung politischer, regulatorischer oder öffentlicher Prozesse durch Unternehmensinteressen.
+
+Wirkungsrisiko, wenn private Macht öffentliche Regeln, Evidenz oder Zugänge systematisch prägt.
 
 ## Cradle to Cradle
 
@@ -1376,17 +1686,25 @@ Die CSDDD verpflichtet große Unternehmen, tatsächliche und potenzielle negativ
 
 Die CSDDD verpflichtet große Unternehmen, tatsächliche und potenzielle negative Menschenrechts- und Umweltwirkungen in eigenen Tätigkeiten, Tochterunternehmen und Geschäftspartnerketten zu adressieren.
 
+Für die WÖk ist sie ein Lieferketten- und Verantwortungskern: Negative Wirkungen werden nicht nur berichtet, sondern müssen in Governance, Risikomanagement und Sorgfaltspflichten bearbeitet werden.
+
 ## CSO
 
 Eine CSO ist eine zivilgesellschaftliche Organisation, also ein organisierter Teil der Zivilgesellschaft.
 
 Eine CSO ist eine zivilgesellschaftliche Organisation, also ein organisierter Teil der Zivilgesellschaft.
 
+CSOs können Beteiligung, Betroffenenbezug, Expertise und Kritik in demokratische Prozesse einspeisen; ihre Wirkung hängt von Transparenz, Repräsentation und Rechenschaft ab.
+
 ## CSRD
 
 Die Corporate Sustainability Reporting Directive erweitert die Nachhaltigkeitsberichterstattung von Unternehmen und verknüpft Berichterstattung mit europäischen Anforderungen an Nachhaltigkeitsinformationen.
 
 Die Corporate Sustainability Reporting Directive erweitert die Nachhaltigkeitsberichterstattung von Unternehmen und verknüpft Berichterstattung mit europäischen Anforderungen an Nachhaltigkeitsinformationen.
+
+Für die WÖk liefert die CSRD einen zentralen Datenanschluss: Berichts- und Nachhaltigkeitsdaten können von reiner Dokumentation zu Wirkungsdaten für Scorecards, WÖk-IDs, Produktpässe, Kapitalzugang und Steuerlogik werden.
+
+CSRD als Berichtsdatenrahmen beschreiben.
 
 ## Cyberresilienz
 
@@ -1418,11 +1736,15 @@ Daoismus bezeichnet eine chinesische Denk- und Lebenslehre, die Prozesshaftigkei
 
 Daoismus bezeichnet eine chinesische Denk- und Lebenslehre, die Prozesshaftigkeit, Nicht-Erzwingen, Eingebundensein und Handeln im Einklang mit dem Dao betont.
 
+Die WÖk übernimmt daraus keine religiöse oder spirituelle Lehre. Anschlussfähig ist die Einsicht, dass Mensch, Wirtschaft und Staat nicht außerhalb der Welt stehen, die sie steuern wollen.
+
 ## Dark Money
 
 Dark Money bezeichnet politische Finanzierung oder Einflussnahme, deren Geldquellen für Öffentlichkeit oder Betroffene nicht transparent sind.
 
 Dark Money bezeichnet politische Finanzierung oder Einflussnahme, deren Geldquellen für Öffentlichkeit oder Betroffene nicht transparent sind.
+
+Dark Money ist ein demokratisches Wirkungsrisiko, weil es Einfluss ohne Rechenschaft ermöglicht.
 
 ## Daseinsvorsorge
 
@@ -1430,11 +1752,15 @@ Daseinsvorsorge bezeichnet die öffentliche Sicherung grundlegender Lebensfunkti
 
 Daseinsvorsorge bezeichnet die öffentliche Sicherung grundlegender Lebensfunktionen: Wohnen, Wasser, Energie, Mobilität, Gesundheit, Pflege, Bildung, Sicherheit, digitale Infrastruktur und kulturelle Teilhabe.
 
+In der WÖk ist Daseinsvorsorge Wirkungsinfrastruktur. Sie schafft Handlungsmöglichkeiten, Resilienz und Vertrauen. Sie darf nicht nur als Kostenblock betrachtet werden, sondern als Voraussetzung positiver Netto-Wirkung.
+
 ## Data Lineage und Evidenzherkunftskarte
 
 Herkunft, Transformation, Aggregation, Unsicherheit und Nutzung von Wirkungsdaten nachvollziehbar machen.
 
 Herkunft, Transformation, Aggregation, Unsicherheit und Nutzung von Wirkungsdaten nachvollziehbar machen.
+
+O02 gehört zur Kategorie „Daten, Technologie, KI und agentische Systeme“. Verbindlicher Output: Lineage Map von Quelle bis Entscheidung mit Transformationen, Kontrollen, Qualitätsklasse und Verantwortlichen.
 
 ## Daten- und Frühwarnkooperation
 
@@ -1458,6 +1784,8 @@ Wiederverwendbare, betreibbare Datenprodukte mit klaren Nutzern, Verträgen, Qua
 
 Wiederverwendbare, betreibbare Datenprodukte mit klaren Nutzern, Verträgen, Qualität, Wirkung und Lifecycle gestalten.
 
+O03 gehört zur Kategorie „Daten, Technologie, KI und agentische Systeme“. Verbindlicher Output: Canvas mit Nutzerentscheidungen, Datenversprechen, Quellen, Schnittstellen, Qualität, Owner, Kosten, Risiken und KII.
+
 ## Datenqualität
 
 Datenqualität beschreibt, wie verlässlich, aktuell, vollständig, prüfbar und geeignet Wirkungsdaten für Bewertung, Scorecard und Rückkopplung sind.
@@ -1469,6 +1797,14 @@ Datenqualität bezeichnet die Verlässlichkeit und Eignung von Daten, die zur Me
 Daten und Evidenz nach Herkunft, Vollständigkeit, Aktualität, Vergleichbarkeit, Prüfbarkeit, Verzerrung und Unsicherheit bewerten.
 
 Daten und Evidenz nach Herkunft, Vollständigkeit, Aktualität, Vergleichbarkeit, Prüfbarkeit, Verzerrung und Unsicherheit bewerten.
+
+D06 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Verbindlicher Output: Qualitätsprofil je Indikator samt Freigabestufe, konservativer Behandlung und Verbesserungsplan.
+
+## Datenschutz
+
+Datenschutz schützt Menschen bei der Verarbeitung personenbezogener Daten durch Regeln, Rechte und technische sowie organisatorische Maßnahmen.
+
+Datenschutz ist mehr als technische Geheimhaltung. Er schützt Selbstbestimmung, Privatsphäre und andere Grundrechte vor unnötiger oder missbräuchlicher Datenverarbeitung. Er schließt sinnvolle Datennutzung nicht aus, verlangt aber, dass Zweck, Umfang, Risiko, Zugriff und Löschung nachvollziehbar und verhältnismäßig geregelt sind.
 
 ## Datenstandard / Standardisierung von Risikomanagement
 
@@ -1482,6 +1818,10 @@ DC-Laden ist Laden mit Gleichstrom; die Umwandlung erfolgt in der Ladeeinrichtun
 
 DC-Laden ist Laden mit Gleichstrom; die Umwandlung erfolgt in der Ladeeinrichtung, sodass die Batterie direkt mit Gleichstrom geladen wird.
 
+DC-Laden ermöglicht höhere Ladeleistungen, erfordert aber stärkere Infrastruktur, Leistungselektronik und Netzanschlussprüfung.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## DEAL
 
 DEAL bezeichnet im Nachhaltigkeits- und Transformationskontext politische oder wirtschaftliche Maßnahmenpakete, die gemeinsame Ziele, Regeln und Investitionen bündeln.
@@ -1490,9 +1830,9 @@ DEAL bezeichnet im Nachhaltigkeits- und Transformationskontext politische oder w
 
 ## Debiasing
 
-Strategien, um kognitive Verzerrungen und emotionale Fehlreaktionen zu entschärfen.
+Debiasing bezeichnet Maßnahmen, die die Wahrscheinlichkeit verringern sollen, dass Verzerrungen oder Fehlinformationen ein Urteil bestimmen. Es ist keine Technik, Menschen zu überzeugen oder zu bewerten.
 
-Strategien, um kognitive Verzerrungen und emotionale Fehlreaktionen zu entschärfen.
+Debiasing bezeichnet Verfahren, die Urteile weniger anfällig für systematische Verzerrungen oder fortwirkende Fehlinformationen machen sollen. Dazu können nachvollziehbare Quellenprüfung, das Ersetzen einer falschen Erklärung durch eine besser belegte Erklärung, metakognitive Fragen oder ein Hinweis auf typische Manipulationsmuster gehören. Ob eine Maßnahme wirkt, hängt von Gegenstand, Zielgruppe, Situation und Umsetzung ab. Ein plausibler Mechanismus ist noch kein Nachweis einer tatsächlichen Zustandsveränderung. Wer Debiasing als Wirkung behauptet, muss daher vorab festlegen, welches Urteil oder Verhalten sich in welchem Kontext verändern soll, womit es verglichen wird, welche Daten die Veränderung zeigen und welche unerwünschten Nebenwirkungen möglich sind.
 
 ## Deep State
 
@@ -1511,6 +1851,10 @@ Déformation professionnelle beschreibt eine professionelle Betriebsblindheit: F
 Degradation beschreibt die schrittweise Verschlechterung einer Batterie durch Alterung, Nutzung, Temperatur oder Ladeverhalten.
 
 Degradation beschreibt die schrittweise Verschlechterung einer Batterie durch Alterung, Nutzung, Temperatur oder Ladeverhalten.
+
+Degradation ist ein Wirkungsfaktor, weil sie Ersatzbedarf, Kosten, Rohstoffnachfrage und Second-Life-Fähigkeit beeinflusst.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Degrowth / Postwachstum
 
@@ -1536,11 +1880,15 @@ Dekohärenz beschreibt, wie durch Wechselwirkung eines Quantensystems mit seiner
 
 Dekohärenz beschreibt, wie durch Wechselwirkung eines Quantensystems mit seiner Umgebung Interferenzphänomene unterdrückt werden und klassisch erscheinende Zustände stabiler werden.
 
+Für die WÖk ist Dekohärenz interessant als vorsichtige Analogie für Umgebungsabhängigkeit: Zustände sind nicht isoliert, sondern werden durch ihre Einbettung geprägt. In sozialen Systemen heißt das nicht Dekohärenz, sondern Kontextwirkung, Resonanzraum, institutionelle Einbettung und Rückkopplung.
+
 ## Deliberation
 
 Deliberation beschreibt den öffentlichen, begründeten Austausch von Argumenten vor Entscheidungen.
 
 Deliberation beschreibt den öffentlichen, begründeten Austausch von Argumenten vor Entscheidungen.
+
+Deliberation ist ein Wirkmechanismus demokratischer Qualität. Sie senkt Dissonanz, erhöht Verständnis und verbessert Korrektur.
 
 ## Deliberative Demokratie
 
@@ -1548,11 +1896,17 @@ Deliberation meint demokratische Willensbildung durch Begründung, Kritik, Zuhö
 
 Deliberation meint demokratische Willensbildung durch Begründung, Kritik, Zuhören, Streit und öffentliche Prüfbarkeit.
 
+Die WÖk braucht Deliberation, weil Wirkungsbewertung nicht technokratisch verordnet werden darf.
+
+Sie stärkt Demokratiequalität, wenn Öffentlichkeit, Wissen, Respekt und Minderheitenschutz gesichert sind.
+
 ## Demand Response
 
 Demand Response verschiebt oder reduziert Stromverbrauch als Reaktion auf Markt- oder Netzsignale.
 
 Demand Response verschiebt oder reduziert Stromverbrauch als Reaktion auf Markt- oder Netzsignale.
+
+Wirkungshebel für Netzdienlichkeit, Kostenreduktion, Versorgungssicherheit und Integration erneuerbarer Energien.
 
 ## Demokratie
 
@@ -1572,11 +1926,15 @@ Demokratiefeindlichkeit beschreibt Haltungen, Programme oder Handlungen, die dem
 
 Demokratiefeindlichkeit beschreibt Haltungen, Programme oder Handlungen, die demokratische Grundprinzipien ablehnen oder zerstören wollen.
 
+Wirkungsökonomisch entscheidend ist, welche Rechte, Institutionen und Korrekturwege angegriffen werden.
+
 ## Demokratiekompetenz
 
 Demokratiekompetenz beschreibt die Fähigkeit, demokratische Verfahren, Rechte, Konflikte, Medien, Institutionen und eigene Verantwortung zu verstehen und zu nutzen.
 
 Demokratiekompetenz beschreibt die Fähigkeit, demokratische Verfahren, Rechte, Konflikte, Medien, Institutionen und eigene Verantwortung zu verstehen und zu nutzen.
+
+Demokratiekompetenz ist ein WÖk-Präzisierungsbegriff für die praktische Fähigkeit zur demokratischen Rückkopplung.
 
 ## Demokratieprinzip
 
@@ -1584,11 +1942,15 @@ Das Demokratieprinzip verlangt, dass staatliche Herrschaft demokratisch legitimi
 
 Das Demokratieprinzip verlangt, dass staatliche Herrschaft demokratisch legitimiert, kontrolliert und rückgebunden ist.
 
+Zentral gegen technokratische Wirkungssteuerung: Wirkung braucht demokratische Verfahren, Öffentlichkeit und Rechtsschutz.
+
 ## Demokratiequalität
 
 Demokratiequalität beschreibt, wie gut eine Demokratie ihre zentralen Funktionen erfüllt: freie Wahlen, Rechtsstaat, Grundrechte, Pluralismus, Öffentlichkeit, Rechenschaft, Teilhabe und Machtbegrenzung.
 
 Demokratiequalität beschreibt, wie gut eine Demokratie ihre zentralen Funktionen erfüllt: freie Wahlen, Rechtsstaat, Grundrechte, Pluralismus, Öffentlichkeit, Rechenschaft, Teilhabe und Machtbegrenzung.
+
+Demokratiequalität ist ein SDG+-Feld. Sie ist wirkungsbezogen zu prüfen: Können Menschen tatsächlich teilhaben? Werden Fehler korrigiert? Bleiben Institutionen vertrauenswürdig? Können Medien kontrollieren? Bleiben Minderheiten geschützt?
 
 ## Demokratieskepsis
 
@@ -1596,11 +1958,15 @@ Demokratieskepsis beschreibt Zweifel an Funktionsfähigkeit oder Legitimität de
 
 Demokratieskepsis beschreibt Zweifel an Funktionsfähigkeit oder Legitimität demokratischer Verfahren.
 
+Nicht jede Kritik ist demokratiefeindlich. Entscheidend ist, ob Kritik Korrektur ermöglichen will oder demokratische Ordnung pauschal zerstört.
+
 ## Demokratische Erosion
 
 Demokratische Erosion beschreibt die schrittweise Schwächung demokratischer Institutionen, Rechte, Medien, Wahlen oder Korrekturmechanismen.
 
 Demokratische Erosion beschreibt die schrittweise Schwächung demokratischer Institutionen, Rechte, Medien, Wahlen oder Korrekturmechanismen.
+
+Demokratische Erosion ist besonders riskant, weil sie oft legal, schrittweise und normalisiert abläuft.
 
 ## Demokratische Gegenwirkung
 
@@ -1614,11 +1980,15 @@ Demokratische Korrekturfähigkeit beschreibt die Fähigkeit eines politischen Sy
 
 Demokratische Korrekturfähigkeit beschreibt die Fähigkeit eines politischen Systems, Fehler zu erkennen, öffentlich zu diskutieren und institutionell zu korrigieren.
 
+Wirkungsmessung bleibt fehlbar. Deshalb braucht es Korrektur, Einspruch, Revision, Öffentlichkeit und Rechtsschutz.
+
 ## Demokratische Öffentlichkeit
 
 Demokratische Öffentlichkeit ist ein Raum, in dem Bürger:innen auf Basis von Informationen, Streit, Medien, Wissenschaft und Erfahrung politische Urteile bilden können.
 
 Demokratische Öffentlichkeit ist ein Raum, in dem Bürger:innen auf Basis von Informationen, Streit, Medien, Wissenschaft und Erfahrung politische Urteile bilden können.
+
+Sie ist die kommunikative Infrastruktur demokratischer Rückkopplung.
 
 ## Demokratische Resilienz
 
@@ -1626,17 +1996,23 @@ Demokratische Resilienz beschreibt die Fähigkeit einer Demokratie, Krisen, Konf
 
 Demokratische Resilienz beschreibt die Fähigkeit einer Demokratie, Krisen, Konflikte, Desinformation, Machtmissbrauch und Polarisierung zu verarbeiten, ohne ihre Grundprinzipien zu verlieren.
 
+Demokratische Resilienz ist ein zentraler SDG+-Zustand.
+
 ## Demokratische Resilienz gegen Extremismus
 
 Demokratische Resilienz gegen Extremismus bezeichnet die Fähigkeit einer Gesellschaft, autoritäre, menschenfeindliche, verschwörungsideologische und gewaltfördernde Dynamiken früh zu erkennen, zu begrenzen und lernfähig zu bearbeiten.
 
 Demokratische Resilienz gegen Extremismus bezeichnet die Fähigkeit einer Gesellschaft, autoritäre, menschenfeindliche, verschwörungsideologische und gewaltfördernde Dynamiken früh zu erkennen, zu begrenzen und lernfähig zu bearbeiten.
 
+Die WÖk liest Extremismus nicht nur als Sicherheitsproblem, sondern als Wirkungsproblem: Extremistische Dynamiken verändern Sprache, Vertrauen, Institutionen, Zugehörigkeit, Sicherheitsgefühl und Handlungsoptionen. Resilienz entsteht durch Bildung, Kultur, Rechtsstaat, Medienqualität, soziale Sicherheit und klare rote Linien.
+
 ## Demokratische Rückkopplung
 
 Demokratische Rückkopplung beschreibt, dass Entscheidungen, Wirkungen und Fehler über Öffentlichkeit, Wahlen, Parlamente, Gerichte, Medien, Wissenschaft und Bürger:innen wieder in das System zurückgespielt werden.
 
 Demokratische Rückkopplung beschreibt, dass Entscheidungen, Wirkungen und Fehler über Öffentlichkeit, Wahlen, Parlamente, Gerichte, Medien, Wissenschaft und Bürger:innen wieder in das System zurückgespielt werden.
+
+Demokratische Rückkopplung ist der Schutzmechanismus gegen technokratische oder autoritäre Wirkungssteuerung.
 
 ## Demokratische Staatsschuld
 
@@ -1650,6 +2026,8 @@ Demokratische Wirkungsarchitektur beschreibt das Zusammenspiel von Institutionen
 
 Demokratische Wirkungsarchitektur beschreibt das Zusammenspiel von Institutionen, Öffentlichkeit, Daten, Rechten, Medien, Beteiligung, Rechtsschutz und Rückkopplung, durch das Wirkung demokratisch geprüft und gesteuert werden kann.
 
+Wirkungsmessung darf nicht nur technisch richtig sein. Sie muss öffentlich prüfbar, rechtlich kontrollierbar, politisch verantwortbar und gesellschaftlich korrigierbar bleiben.
+
 ## Demokratischer Sozialismus
 
 Demokratischer Sozialismus versucht sozialistische Ziele mit demokratischen Verfahren und Rechtsstaatlichkeit zu verbinden.
@@ -1662,11 +2040,17 @@ Ein demokratisches Mandat ist die durch Wahl oder rechtmäßiges Verfahren verli
 
 Ein demokratisches Mandat ist die durch Wahl oder rechtmäßiges Verfahren verliehene Befugnis, politische Verantwortung auf Zeit auszuüben.
 
+Ein Mandat legitimiert Macht nur im Rahmen von Recht, Rechenschaft, Kontrolle und zeitlicher Begrenzung.
+
 ## Depotladen
 
 Depotladen beschreibt das Laden von Fahrzeugflotten an Betriebshöfen oder Depots, etwa für Busse, Lkw, Lieferflotten oder kommunale Fahrzeuge.
 
 Depotladen beschreibt das Laden von Fahrzeugflotten an Betriebshöfen oder Depots, etwa für Busse, Lkw, Lieferflotten oder kommunale Fahrzeuge.
+
+Wichtig für planbare Elektrifizierung, Lastmanagement, Mittelspannung, Betriebskosten und öffentliche Daseinsvorsorge.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Derailing / Themenverschiebung
 
@@ -1680,17 +2064,25 @@ Deregulierung beschreibt den Abbau staatlicher Regeln oder Eingriffe.
 
 Deregulierung beschreibt den Abbau staatlicher Regeln oder Eingriffe.
 
+Kann Bürokratie senken, aber auch Wirkungsblindheit, Externalisierung, Marktmacht oder Sicherheitsrisiken erhöhen.
+
 ## Design for Disassembly
 
 Design for Disassembly gestaltet Produkte so, dass Zerlegung, Reparatur, Rücknahme und Wiederverwendung erleichtert werden.
 
 Design for Disassembly gestaltet Produkte so, dass Zerlegung, Reparatur, Rücknahme und Wiederverwendung erleichtert werden.
 
+Es ist ein Designhebel für Reparatur, Komponentenrückgewinnung und Kreislauffähigkeit.
+
 ## Design Thinking
 
 Design Thinking ist ein iterativer, nutzerzentrierter Innovationsansatz, der Probleme durch Empathie, Definition, Ideenentwicklung, Prototyping und Testen bearbeitet.
 
 Design Thinking ist ein iterativer, nutzerzentrierter Innovationsansatz, der Probleme durch Empathie, Definition, Ideenentwicklung, Prototyping und Testen bearbeitet.
+
+Die WÖk erweitert Design Thinking von Human-centered zu Mensch-Planet-Demokratie-centered. Gute Gestaltung fragt nicht nur, ob Nutzer:innen etwas wollen, sondern welche Wirkungen im System entstehen und welche Handlungsmöglichkeiten eröffnet oder geschlossen werden.
+
+Anschlussfähig, aber nicht ausreichend. Die WÖk ergänzt Desirability, Feasibility und Viability um positive Netto-Wirkung.
 
 ## Desinformation
 
@@ -1746,6 +2138,10 @@ Der Digitale Produktpass ist ein Dateninstrument, das produktbezogene Informatio
 
 Der Digitale Produktpass ist ein Dateninstrument, das produktbezogene Informationen über Nachhaltigkeit, Material, Reparierbarkeit, Kreislauffähigkeit und weitere Anforderungen digital zugänglich machen soll.
 
+Für die WÖk ist der DPP das Produktgedächtnis. Er hält Wirkungsdaten am Produkt fest und ermöglicht Verbindung von Produkt, Lieferkette, Scorecard, Steuerklasse und Verbraucherinformation.
+
+Als Dateninfrastruktur verwenden: Der Digitale Produktpass speichert Produktdaten, die Produktscorecard bewertet sie, Wirkungsrückkopplung führt sie in Entscheidungen zurück.
+
 ## Digitalisierung
 
 Digitalisierung beschreibt die Übersetzung von Prozessen, Informationen und Infrastrukturen in digitale Daten- und Steuerungslogiken.
@@ -1764,11 +2160,15 @@ Diktatur beschreibt eine Herrschaftsform, in der politische Macht nicht demokrat
 
 Diktatur beschreibt eine Herrschaftsform, in der politische Macht nicht demokratisch kontrolliert wird und Opposition, Rechte oder Gewaltenteilung stark eingeschränkt sind.
 
+Diktaturen blockieren demokratische Korrektur und konzentrieren Macht über Menschen, Institutionen, Medien und Verwaltung.
+
 ## Direkte Demokratie
 
 Direkte Demokratie beschreibt Verfahren, bei denen Bürger:innen unmittelbar über Sachfragen entscheiden.
 
 Direkte Demokratie beschreibt Verfahren, bei denen Bürger:innen unmittelbar über Sachfragen entscheiden.
+
+Kann Teilhabe stärken, braucht aber Information, Minderheitenschutz, Verfahrensschutz und Schutz vor manipulativer Kampagnenmacht.
 
 ## Direkte Elektrifizierung
 
@@ -1782,6 +2182,10 @@ Direktrecycling versucht Batteriematerialien möglichst strukturerhaltend zurüc
 
 Direktrecycling versucht Batteriematerialien möglichst strukturerhaltend zurückzugewinnen, statt sie vollständig in Grundstoffe zu zerlegen.
 
+Potenzial für höheren Werterhalt, aber abhängig von Zellchemie, Sortierung, Datenqualität und industrieller Skalierung.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Direktstrom
 
 Direktstrom ist die allgemein verständliche Bezeichnung für Energieflussstrom.
@@ -1794,11 +2198,15 @@ Kontinuierliche Problemexploration, Lösungsentdeckung, sichere Lieferung, Betri
 
 Kontinuierliche Problemexploration, Lösungsentdeckung, sichere Lieferung, Betrieb und Wirkungslernen verbinden.
 
+L03 gehört zur Kategorie „Product Operating Model, Teams, Plattformen und Ökosysteme“. Verbindlicher Output: Integrierter Loop mit Hypothesen, Experimente, Release, Betriebsdaten, Wirkungsmessung und Kursentscheidung.
+
 ## Diskriminierungsverbot
 
 Das Diskriminierungsverbot untersagt ungerechtfertigte Benachteiligung aufgrund geschützter Merkmale oder Zuschreibungen.
 
 Das Diskriminierungsverbot untersagt ungerechtfertigte Benachteiligung aufgrund geschützter Merkmale oder Zuschreibungen.
+
+Zentrale Wirkungsgrenze für Mensch, Demokratie, Arbeit, Wohnen, Bildung, Gesundheit und KI.
 
 ## Diskursfähigkeit
 
@@ -1806,11 +2214,19 @@ Diskursfähigkeit beschreibt die Fähigkeit einer Gesellschaft, Konflikte sprach
 
 Diskursfähigkeit beschreibt die Fähigkeit einer Gesellschaft, Konflikte sprachlich, sachlich und respektvoll auszutragen.
 
+Diskursfähigkeit ist ein SDG+-Zustand und Voraussetzung demokratischer Resilienz.
+
 ## Diskurskultur
 
 Diskurskultur beschreibt die Qualität öffentlicher Auseinandersetzung: wie eine Gesellschaft streitet, prüft, korrigiert, zuhört und trotz Konflikt demokratisch handlungsfähig bleibt.
 
 Diskurskultur bezeichnet die Qualität, Regeln und Praktiken öffentlicher Auseinandersetzung. Sie beschreibt, wie Menschen, Medien, Plattformen, Parteien, Institutionen, Wissenschaft, Unternehmen und Zivilgesellschaft miteinander streiten, argumentieren, widersprechen, zuhören, korrigieren und Entscheidungen vorbereiten.
+
+## Diskursqualität
+
+Diskursqualität beschreibt, wie gut ein öffentlicher Austausch informierte, pluralistische, sichere und korrigierbare Auseinandersetzung ermöglicht.
+
+Diskursqualität ist keine Geschmacksnote für Meinungen. Konflikt, scharfe Kritik und Minderheitenpositionen können zu einer guten Debatte gehören. Schlechte Bedingungen entstehen etwa dort, wo Einschüchterung, Desinformation, verdeckte Einflussnahme, Barrieren oder fehlende Korrekturwege die faire Teilnahme oder Prüfung erschweren. Qualität muss auf Raum- und Verfahrensebene analysiert werden, nicht als Score für einzelne Menschen.
 
 ## Diskursraum
 
@@ -1818,11 +2234,15 @@ Diskursräume sind Räume, in denen Themen, Begriffe, Argumente, Frames, Konflik
 
 Diskursräume sind Räume, in denen Themen, Begriffe, Argumente, Frames, Konflikte und Deutungen zirkulieren.
 
+Die WÖk nutzt den Begriff, um politische Sprache, Medienlogiken, Plattformen und demokratische Streitfähigkeit wirkungsorientiert zu analysieren.
+
 ## Dissonanzrationalisierung
 
 Dissonanzrationalisierung bezeichnet die rechtfertigende Umdeutung eines Widerspruchs zwischen Selbstbild und sichtbarer Wirkung.
 
 Dissonanzrationalisierung bezeichnet die rechtfertigende Umdeutung eines Widerspruchs zwischen Selbstbild und sichtbarer Wirkung.
+
+Dissonanzrationalisierung ist der präzise Unterbegriff zur Wirkungsabwehr. Ein Wirkungsfakt trifft auf Selbstbild, Status, Zugehörigkeit oder Geschäftsmodell; die entstehende Spannung wird nicht durch Verhaltensänderung gelöst, sondern durch Verharmlosung, Vergleichsabwehr, Verantwortungsverschiebung, Fortschrittsflucht, moralische Lizenzierung, Komplexitätsflucht, Identitätsabwehr oder Methodenflucht.
 
 ## Dissonanzreduktion
 
@@ -1835,6 +2255,8 @@ Dissonanzreduktion kann konstruktiv oder destruktiv erfolgen. Konstruktiv ist si
 DNSH bedeutet, dass eine Aktivität nicht zu einer erheblichen Beeinträchtigung anderer Umweltziele führen darf, auch wenn sie zu einem Ziel positiv beiträgt.
 
 DNSH bedeutet, dass eine Aktivität nicht zu einer erheblichen Beeinträchtigung anderer Umweltziele führen darf, auch wenn sie zu einem Ziel positiv beiträgt.
+
+DNSH ist für die WÖk wichtig, weil es die Logik der Nichtkompensation vorbereitet: Ein positiver Beitrag darf schwere Schäden in anderen Feldern nicht verdecken.
 
 ## Dog Whistle
 
@@ -1860,6 +2282,8 @@ Donor Dependency beschreibt die Abhängigkeit einer Organisation von wenigen Gel
 
 Donor Dependency beschreibt die Abhängigkeit einer Organisation von wenigen Geldgebern.
 
+Kann Wirkungsrisiko werden, wenn Finanzierung Prioritäten, Sprache, Projekte oder öffentliche Positionen verzerrt.
+
 ## Donut-Ökonomie / Doughnut Economics Action Lab
 
 Die Donut-Ökonomie verbindet soziale Mindeststandards mit ökologischen Belastungsgrenzen und fragt, wie gutes Leben innerhalb dieses Handlungsraums möglich ist.
@@ -1871,6 +2295,10 @@ Die Donut-Ökonomie verbindet soziale Mindeststandards mit ökologischen Belastu
 Doppelte Wesentlichkeit verbindet zwei Perspektiven: Auswirkungen des Unternehmens auf Menschen und Umwelt sowie finanzielle Auswirkungen von Nachhaltigkeitsthemen auf das Unternehmen.
 
 Doppelte Wesentlichkeit verbindet zwei Perspektiven: Auswirkungen des Unternehmens auf Menschen und Umwelt sowie finanzielle Auswirkungen von Nachhaltigkeitsthemen auf das Unternehmen.
+
+Für die WÖk ist doppelte Wesentlichkeit eine Brücke zwischen Impact-Perspektive und Risiko-/Finanzperspektive. Sie zeigt, dass Wirkung und Finanzstabilität nicht getrennt gelesen werden können.
+
+Als Brücke zwischen Berichtswesen und Wirkungsperspektive nutzen.
 
 ## DORA
 
@@ -1900,11 +2328,15 @@ Downcycling ist Recycling mit abnehmender Materialqualität oder geringeren Eins
 
 Downcycling ist Recycling mit abnehmender Materialqualität oder geringeren Einsatzmöglichkeiten.
 
+Es kann besser sein als Entsorgung, ist aber weniger wirkungsvoll als hochwertige Rückführung oder Werterhalt.
+
 ## Drehtür-Effekt
 
 Der Drehtür-Effekt beschreibt Wechsel zwischen Politik, Verwaltung, Aufsicht und regulierten Unternehmen oder Lobbyorganisationen.
 
 Der Drehtür-Effekt beschreibt Wechsel zwischen Politik, Verwaltung, Aufsicht und regulierten Unternehmen oder Lobbyorganisationen.
+
+Kann Expertise ermöglichen, aber auch Regulatory Capture, Interessenkonflikte und Vertrauensverlust erzeugen.
 
 ## DSA
 
@@ -1920,6 +2352,8 @@ Der Digital Services Act regelt digitale Vermittlungsdienste und Plattformen. Er
 
 Der Digital Services Act regelt digitale Vermittlungsdienste und Plattformen. Er enthält besondere Pflichten für sehr große Online-Plattformen und Suchmaschinen, insbesondere zum Umgang mit systemischen Risiken.
 
+Für die WÖk ist der DSA ein zentraler Rechtsanker für digitale Öffentlichkeit als Wirkungsraum. Desinformation, Manipulation, Grundrechtsrisiken, algorithmische Verstärkung und demokratische Stabilität werden nicht mehr nur kommunikativ, sondern regulatorisch relevant.
+
 ## DSGVO
 
 DSGVO steht für Datenschutz-Grundverordnung. Sie schützt personenbezogene Daten und Grundrechte im Umgang mit Daten. In der WÖk ist sie eine wichtige Schutzlinie gegen Überwachung, Personenbewertung und missbräuchliche Wirkungsdatenverwendung.
@@ -1934,6 +2368,8 @@ Dunkelflaute bezeichnet Phasen mit geringer Solar- und Windstromerzeugung.
 
 Dunkelflaute bezeichnet Phasen mit geringer Solar- und Windstromerzeugung.
 
+Relevant für Versorgungssicherheit, Speicher, Backup, Netze, Demand Response und Systemkosten.
+
 ## Dunning-Kruger-Effekt
 
 Geringe Kompetenz kann mit überschätzter eigener Urteilsfähigkeit einhergehen.
@@ -1946,11 +2382,17 @@ Dynamische Stromtarife verändern Preise zeitlich nach Markt- oder Netzsignalen.
 
 Dynamische Stromtarife verändern Preise zeitlich nach Markt- oder Netzsignalen.
 
+Sie können Flexibilität aktivieren, aber auch soziale Risiken ohne Schutzmechanismen erzeugen.
+
 ## Dynamisches Lastmanagement
 
 Dynamisches Lastmanagement verteilt verfügbare Leistung flexibel auf mehrere Ladepunkte oder Verbraucher.
 
 Dynamisches Lastmanagement verteilt verfügbare Leistung flexibel auf mehrere Ladepunkte oder Verbraucher.
+
+Es kann Netzanschlusskosten senken, Lastspitzen vermeiden und Ladezugang fairer organisieren.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## E-Fuel
 
@@ -1996,11 +2438,17 @@ Das EEG ist das deutsche Erneuerbare-Energien-Gesetz.
 
 Das EEG ist das deutsche Erneuerbare-Energien-Gesetz.
 
+Es hat Investitionen in erneuerbare Energien stark geprägt und bleibt für Marktintegration und Förderung relevant.
+
 ## Effektivität
 
 Effektivität bezeichnet das Maß, in dem ein Ziel tatsächlich erreicht wird. In der WÖk genügt aber nicht irgendein Ziel; entscheidend ist, ob die angestrebte Veränderung im Referenzrahmen Mensch, Planet und Demokratie sinnvoll ist.
 
 Effektivität bezeichnet das Maß, in dem ein Ziel tatsächlich erreicht wird. In der WÖk genügt aber nicht irgendein Ziel; entscheidend ist, ob die angestrebte Veränderung im Referenzrahmen Mensch, Planet und Demokratie sinnvoll ist.
+
+Ein Unternehmen kann effektiv destruktive Ziele erreichen. Darum muss Effektivität in der WÖk immer normativ rückgebunden werden: effektiv wofür und mit welcher Netto-Wirkung?
+
+In der Wirkungsökonomie ist eine Maßnahme effektiv, wenn sie tatsächliche positive Zustandsveränderungen für Mensch, Planet und Demokratie ermöglicht.
 
 ## Effektivität vs. Effizienz
 
@@ -2014,6 +2462,10 @@ Effizienz bedeutet, mit weniger Input gleichen oder größeren Output zu erzeuge
 
 Effizienz bedeutet, mit weniger Input gleichen oder größeren Output zu erzeugen. Sie ist wichtig, aber ohne Wirkungsbewertung blind.
 
+In der WÖk kann Effizienz positive Wirkung erhöhen, aber auch negative Wirkung beschleunigen, wenn sie destruktive Prozesse günstiger macht.
+
+Effizienz ist nicht automatisch positive Wirkung. Effizienz mit falscher Zielgröße kann Externalisierung, Machtkonzentration oder Schäden beschleunigen.
+
 ## EFRAG
 
 EFRAG entwickelt und unterstützt europäische Rechnungslegungs- und Nachhaltigkeitsberichtsstandards.
@@ -2025,6 +2477,12 @@ Für die WÖk ist EFRAG eine zentrale Quelle für ESRS, VSME, XBRL-Taxonomien un
 eFuels sind synthetische Kraftstoffe, die mit Strom, Wasserstoff und Kohlenstoffverbindungen hergestellt werden.
 
 eFuels sind synthetische Kraftstoffe, die mit Strom, Wasserstoff und Kohlenstoffverbindungen hergestellt werden. Sie können bestehende Verbrennungspfade nutzen, benötigen aber mehrere Umwandlungsstufen.
+
+## Ehrenamt
+
+Ehrenamt ist freiwillige, nicht verpflichtende und grundsätzlich unbezahlte Arbeit oder Tätigkeit für andere, Organisationen oder das Gemeinwesen.
+
+Ehrenamt ist nicht gleich unbezahlte Sorgearbeit im eigenen Haushalt und nicht gleich verpflichtender Dienst. Seine Bedeutung darf nicht dazu führen, dass soziale Sicherung oder öffentliche Infrastruktur auf kostenlose Arbeit abgewälzt werden. Für Wirkungsanalyse sind Stunden, Zahl der Engagierten und erzielte Zustandsveränderungen verschiedene Größen.
 
 ## Ehrliche Preise
 
@@ -2038,6 +2496,10 @@ Eichrechtliche Anforderungen stellen sicher, dass geladene Energiemengen korrekt
 
 Eichrechtliche Anforderungen stellen sicher, dass geladene Energiemengen korrekt gemessen, abgerechnet und nachvollziehbar dargestellt werden.
 
+Wichtig für Vertrauen, Verbraucherschutz, faire Abrechnung und demokratische Kontrollierbarkeit von Ladepreisen.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Eigengruppen-Homogenitätsverzerrung
 
 Die eigene Gruppe wird homogener wahrgenommen, als sie tatsächlich ist.
@@ -2050,11 +2512,15 @@ Eigentum mit Wirkungspflicht bedeutet, dass Eigentum Rechte gewährt, aber Wirku
 
 Eigentum mit Wirkungspflicht bedeutet, dass Eigentum Rechte gewährt, aber Wirkungen nicht an Eigentumsgrenzen enden. Wer Vermögenswerte, Boden, Daten, Plattformen, Infrastruktur oder Kapital kontrolliert, formt Wirkungsräume.
 
+Der Begriff hilft, Eigentum nicht abzuschaffen, sondern in eine Verantwortung gegenüber Mensch, Planet und Demokratie einzubetten. Eigentum bleibt geschützt, aber seine externalisierten Folgen werden sichtbar und rückgekoppelt.
+
 ## Eigentum verpflichtet
 
 Eigentum verpflichtet ist die verfassungsrechtliche Anschlusslinie, dass Eigentum geschützt ist und seine Nutzung zugleich dem Wohl der Allgemeinheit dienen soll.
 
 Eigentum verpflichtet ist die verfassungsrechtliche Anschlusslinie, dass Eigentum geschützt ist und seine Nutzung zugleich dem Wohl der Allgemeinheit dienen soll.
+
+Art. 14 GG ist zentral: Die WÖk operationalisiert Eigentumsverantwortung über Wirkung.
 
 ## Eigentumsangst
 
@@ -2068,11 +2534,15 @@ Eigentumsrechte regeln, wer über Ressourcen, Güter oder Kapital verfügen darf
 
 Eigentumsrechte regeln, wer über Ressourcen, Güter oder Kapital verfügen darf.
 
+Eigentum bleibt geschützt, aber es trägt Wirkungsverantwortung. Eigentum darf nicht als Freibrief zur Externalisierung von Schäden verstanden werden.
+
 ## Eigentumsverantwortung
 
 Eigentumsverantwortung beschreibt Verantwortung für Wirkungen, die aus Nutzung, Kontrolle oder Kapitalisierung von Eigentum entstehen.
 
 Eigentumsverantwortung beschreibt Verantwortung für Wirkungen, die aus Nutzung, Kontrolle oder Kapitalisierung von Eigentum entstehen.
+
+Die WÖk verbindet Eigentumsschutz mit Wirkungspflicht: Wer Kontrolle hat, trägt Verantwortung für Folgewirkungen.
 
 ## Eigenversorgung
 
@@ -2080,11 +2550,17 @@ Eigenversorgung beschreibt die Nutzung selbst erzeugter Energie durch dieselbe P
 
 Eigenversorgung beschreibt die Nutzung selbst erzeugter Energie durch dieselbe Person, Organisation oder Anlage.
 
+Sie kann Kosten senken und Resilienz stärken, muss aber netzdienlich, sozial fair und systemisch eingebettet sein.
+
+Energie als Wirkungsinfrastruktur behandeln: Erzeugung, Netze, Speicher, Preise, Resilienz, Teilhabe und Folgewirkungen zusammen bewerten.
+
 ## Einparteienstaat
 
 Ein Einparteienstaat lässt faktisch oder rechtlich nur eine führende Partei zur Herrschaft zu.
 
 Ein Einparteienstaat lässt faktisch oder rechtlich nur eine führende Partei zur Herrschaft zu.
+
+Blockiert politische Konkurrenz, Opposition und demokratische Korrektur.
 
 ## Einspeisemanagement
 
@@ -2092,11 +2568,15 @@ Einspeisemanagement steuert oder begrenzt Einspeisung von Anlagen ins Stromnetz.
 
 Einspeisemanagement steuert oder begrenzt Einspeisung von Anlagen ins Stromnetz.
 
+Relevant bei Netzengpässen, erneuerbarer Einspeisung und Entschädigungslogik.
+
 ## Einspeisevergütung
 
 Einspeisevergütung vergütet eingespeisten Strom zu festgelegten Sätzen.
 
 Einspeisevergütung vergütet eingespeisten Strom zu festgelegten Sätzen.
+
+Investitionssignal mit Kosten-, Verteilungs- und Marktwirkung.
 
 ## EIOPA
 
@@ -2110,6 +2590,8 @@ Eine elektorale Autokratie hat formal Wahlen, diese sind aber in der Realität n
 
 Eine elektorale Autokratie hat formal Wahlen, diese sind aber in der Realität nicht frei und fair.
 
+Wirkungsrisiko, weil demokratische Legitimation simuliert wird, während Medien, Opposition, Wahlrecht oder Institutionen verzerrt werden.
+
 ## Elektrolyse
 
 Elektrolyse spaltet mit elektrischem Strom Wasser oder andere Verbindungen; bei Wasserstoff ist ihre Wirkung stark von Stromquelle, Effizienz und Einsatzfeld abhängig.
@@ -2122,17 +2604,29 @@ Elektromobilität nutzt elektrische Antriebe für Verkehr.
 
 Elektromobilität nutzt elektrische Antriebe für Verkehr.
 
+Wirkung hängt von Strom, Batterie, Rohstoffen, Fahrzeuggröße, Nutzung, Infrastruktur und Verkehrsvermeidung ab.
+
 ## Elektromobilitätsdienstleister / EMP
 
 Ein Elektromobilitätsdienstleister bietet Zugang, Verträge oder Abrechnung für Ladeinfrastruktur an.
 
 Ein Elektromobilitätsdienstleister bietet Zugang, Verträge oder Abrechnung für Ladeinfrastruktur an.
 
+EMPs beeinflussen Preistransparenz, Roaming, Nutzerbindung und Plattformmacht.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Elinor Ostrom / Commons
 
 Ostrom zeigte, dass gemeinschaftlich genutzte Ressourcen unter geeigneten Regeln, Vertrauen, Monitoring und lokaler Anpassung erfolgreich selbst verwaltet werden können.
 
 Ostrom zeigte, dass gemeinschaftlich genutzte Ressourcen unter geeigneten Regeln, Vertrauen, Monitoring und lokaler Anpassung erfolgreich selbst verwaltet werden können.
+
+Für die WÖk ist Ostrom wichtig, weil Wirkung nicht nur durch Markt oder Staat entsteht, sondern durch polyzentrische Governance, Kooperation, lokale Verantwortung und lernende Regeln.
+
+Die WÖk knüpft daran an, wenn Wirkung über Daten, Regeln, Rückkopplung und plural kontrollierte Institutionen gesteuert wird.
+
+Als Bezugslinie verwenden, nicht als Autoritätsbeweis oder biografischen Lexikoneintrag.
 
 ## Emergenz
 
@@ -2146,6 +2640,8 @@ Emergenz des Klassischen bezeichnet die Frage, wie aus quantenmechanischen Besch
 
 Emergenz des Klassischen bezeichnet die Frage, wie aus quantenmechanischen Beschreibungen die stabil erscheinende klassische Alltagswelt hervorgeht.
 
+Für die WÖk ist der Begriff anschlussfähig, weil auch soziale Makrozustände aus vielen Einzelhandlungen, Regeln, Erwartungen und Rückkopplungen entstehen. Aber die Mechanismen sind andere: Institutionen, Sprache, Macht, Preise, Infrastruktur und Kultur - nicht Quantendekohärenz.
+
 ## Emissionsfaktor
 
 Ein Emissionsfaktor beschreibt, wie viele Emissionen pro Einheit Aktivität, Energie, Material oder Produkt entstehen.
@@ -2157,6 +2653,8 @@ Emissionsfaktoren übersetzen Aktivitätsdaten in Emissionswerte.
 Emissionshandel begrenzt und handelbar macht Emissionsrechte.
 
 Emissionshandel begrenzt und handelbar macht Emissionsrechte.
+
+Wirkt nur so gut wie Cap, Abdeckung, Kontrolle und soziale Ausgleichsarchitektur.
 
 ## Emotionale Arbeit
 
@@ -2188,17 +2686,23 @@ Prozesslandschaft, Kernprozesse, Steuerungs- und Unterstützungsprozesse mit Wir
 
 Prozesslandschaft, Kernprozesse, Steuerungs- und Unterstützungsprozesse mit Wirkungspfaden verbinden.
 
+K03 gehört zur Kategorie „Wirkungswertströme, Prozesse, Services und Flow“. Verbindlicher Output: Prozessarchitektur mit Ebenen, Verantwortungen, Schnittstellen, KII und Modellierungsregeln.
+
 ## Endenergie
 
 Endenergie ist die Energie, die Verbraucher:innen nach Umwandlung und Transport beziehen.
 
 Endenergie ist die Energie, die Verbraucher:innen nach Umwandlung und Transport beziehen.
 
+Beispiele sind Strom, Fernwärme, Benzin, Heizöl, Erdgas oder Wasserstoff.
+
 ## Endlager
 
 Langfristige sichere Lagerstätte für radioaktive Abfälle, insbesondere hochradioaktive wärmeentwickelnde Abfälle.
 
 Langfristige sichere Lagerstätte für radioaktive Abfälle, insbesondere hochradioaktive wärmeentwickelnde Abfälle.
+
+Im Kernenergie-Dossier nur mit klarer Bilanzgrenze, Datenstand und Alternativenvergleich verwenden.
 
 ## Endogenes Geld
 
@@ -2224,6 +2728,8 @@ Energie ist die Fähigkeit, Arbeit zu verrichten, Wärme zu erzeugen oder Zustä
 
 Energie ist die Fähigkeit, Arbeit zu verrichten, Wärme zu erzeugen oder Zustände zu verändern.
 
+Energie ist ein Grundträger gesellschaftlicher Wirkung: Wohlstand, Gesundheit, Produktion, Mobilität, Wohnen, Klimawirkung und Abhängigkeiten hängen daran.
+
 ## Energiearmut
 
 Energiearmut beschreibt fehlenden oder unerschwinglichen Zugang zu ausreichender, sicherer und bezahlbarer Energie.
@@ -2236,17 +2742,27 @@ Energieautonomie beschreibt die Fähigkeit eines Haushalts, Unternehmens, einer 
 
 Energieautonomie beschreibt die Fähigkeit eines Haushalts, Unternehmens, einer Kommune oder Volkswirtschaft, Energie unabhängiger und kontrollierbarer bereitzustellen.
 
+Sie kann Resilienz und Demokratie stärken, ist aber nicht automatisch positiv: Kosten, Verteilungswirkung, Netzdienlichkeit und Systemintegration müssen mitbewertet werden.
+
+Energie als Wirkungsinfrastruktur behandeln: Erzeugung, Netze, Speicher, Preise, Resilienz, Teilhabe und Folgewirkungen zusammen bewerten.
+
 ## Energiedichte
 
 Energiedichte beschreibt, wie viel Energie pro Masse oder Volumen gespeichert werden kann.
 
 Energiedichte beschreibt, wie viel Energie pro Masse oder Volumen gespeichert werden kann.
 
+Sie prägt Fahrzeugreichweite, Materialbedarf, Gewicht, Flächenbedarf und Einsatzfelder.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Energieeffizienz
 
 Energieeffizienz beschreibt, wie viel Nutzen mit einem bestimmten Energieeinsatz erzeugt wird.
 
 Energieeffizienz beschreibt, wie viel Nutzen mit einem bestimmten Energieeinsatz erzeugt wird.
+
+Wichtig, aber nicht hinreichend: Rebound-Effekte und Systemwirkung müssen geprüft werden.
 
 ## Energiefluss
 
@@ -2278,17 +2794,29 @@ Energieinfrastruktur umfasst Anlagen, Netze, Speicher, Messsysteme, Leitungen, P
 
 Energieinfrastruktur umfasst Anlagen, Netze, Speicher, Messsysteme, Leitungen, Plattformen und Regeln, die Energie bereitstellen und nutzbar machen.
 
+Sie ist Wirkungsarchitektur, weil sie entscheidet, wer Zugang zu Wärme, Strom, Mobilität, Kommunikation und Produktion hat.
+
+Energie als Wirkungsinfrastruktur behandeln: Erzeugung, Netze, Speicher, Preise, Resilienz, Teilhabe und Folgewirkungen zusammen bewerten.
+
 ## Energiemanagementsystem / EMS
 
 Ein Energiemanagementsystem steuert Erzeugung, Verbrauch, Speicher und Ladeprozesse.
 
 Ein Energiemanagementsystem steuert Erzeugung, Verbrauch, Speicher und Ladeprozesse.
 
+EMS ist ein Wirkungshebel für Eigenverbrauch, Netzdienlichkeit, Kosten, CO2-Steuerung und Datenqualität.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Energiesicherheit
 
 Energiesicherheit beschreibt die Fähigkeit eines Energiesystems, Energieversorgung gegen technische, ökonomische, geopolitische oder klimatische Störungen abzusichern.
 
 Energiesicherheit beschreibt die Fähigkeit eines Energiesystems, Energieversorgung gegen technische, ökonomische, geopolitische oder klimatische Störungen abzusichern.
+
+Wirkungsökonomisch verbindet sie Versorgungssicherheit, Resilienz, Importabhängigkeiten, kritische Infrastruktur, Speicher, Netze und demokratische Stabilität.
+
+Energie als Wirkungsinfrastruktur behandeln: Erzeugung, Netze, Speicher, Preise, Resilienz, Teilhabe und Folgewirkungen zusammen bewerten.
 
 ## Energieträger
 
@@ -2308,6 +2836,8 @@ Energieumwandlung beschreibt die Umwandlung einer Energieform in eine andere.
 
 Energieumwandlung beschreibt die Umwandlung einer Energieform in eine andere.
 
+Zentral für Wirkungsgrad, Verlustleistung und Systemwirkung.
+
 ## Energiewende
 
 Energiewende bezeichnet den Umbau des Energiesystems hin zu klimaverträglichen, resilienten und effizienteren Energiepfaden.
@@ -2320,11 +2850,19 @@ Energiewirtschaft umfasst Erzeugung, Umwandlung, Speicherung, Transport, Verteil
 
 Energiewirtschaft umfasst Erzeugung, Umwandlung, Speicherung, Transport, Verteilung, Handel, Nutzung und Regulierung von Energie.
 
+Die Energiewirtschaft ist ein zentraler Wirkungsraum, weil Energie nahezu alle anderen Wirkungen ermöglicht oder begrenzt: Klima, Gesundheit, Preise, Versorgungssicherheit, Industrie, Digitalisierung, Mobilität, Wohnen, Pflege, Demokratie und geopolitische Abhängigkeiten.
+
+Energie als Wirkungsinfrastruktur behandeln: Erzeugung, Netze, Speicher, Preise, Resilienz, Teilhabe und Folgewirkungen zusammen bewerten.
+
 ## Energiewirtschaftsgesetz / EnWG
 
 Das Energiewirtschaftsgesetz regelt zentrale Grundlagen der leitungsgebundenen Energieversorgung in Deutschland.
 
 Das Energiewirtschaftsgesetz regelt zentrale Grundlagen der leitungsgebundenen Energieversorgung in Deutschland.
+
+Wirkungsökonomisch wichtig, weil es Markt, Netze, Versorgungssicherheit, Verbraucherrechte und Regulierung rahmt.
+
+Energie als Wirkungsinfrastruktur behandeln: Erzeugung, Netze, Speicher, Preise, Resilienz, Teilhabe und Folgewirkungen zusammen bewerten.
 
 ## Energy Sharing
 
@@ -2338,17 +2876,23 @@ Ein Energy-only-Markt vergütet primär tatsächlich erzeugte und verkaufte Stro
 
 Ein Energy-only-Markt vergütet primär tatsächlich erzeugte und verkaufte Strommenge.
 
+Relevant für Erneuerbare, Speicher, Flexibilität, Versorgungssicherheit und Missing-Money-Problem.
+
 ## Engpass- und Reverse-Merit-Analyse
 
 Das schwächste relevante Wirkungsfeld, eine harte Mindestbedingung oder den systemischen Engpass bestimmen, der den Gesamterfolg begrenzt.
 
 Das schwächste relevante Wirkungsfeld, eine harte Mindestbedingung oder den systemischen Engpass bestimmen, der den Gesamterfolg begrenzt.
 
+B11 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Verbindlicher Output: Engpassprofil mit Mindestbedingungen, FinalScore-Logik und Redesignpriorität.
+
 ## Engpass-, Verschwendungs- und Externalitätenanalyse
 
 Flow-Verluste, Blindleistung und ausgelagerte Kosten gemeinsam analysieren.
 
 Flow-Verluste, Blindleistung und ausgelagerte Kosten gemeinsam analysieren.
+
+K07 gehört zur Kategorie „Wirkungswertströme, Prozesse, Services und Flow“. Verbindlicher Output: Priorisierte Liste von Engpässen, Verschwendung, Externalitäten, Ursachen und Verbesserungsoptionen.
 
 ## Engpasslogik
 
@@ -2380,6 +2924,8 @@ Entmenschlichung beschreibt Sprache oder Praxis, die Menschen ihre Würde, Indiv
 
 Entmenschlichung beschreibt Sprache oder Praxis, die Menschen ihre Würde, Individualität oder Schutzwürdigkeit abspricht.
 
+Schweres Wirkungsrisiko, weil Gewalt, Ausschluss und Rechtsbrüche leichter legitimierbar werden.
+
 ## Entropie
 
 Entropie beschreibt in der Physik ein Maß für Verteilung, Unordnung oder nicht mehr nutzbare Energie.
@@ -2392,17 +2938,23 @@ Entscheidungsmodus, Beteiligung, Evidenz- und Assurancetiefe an Komplexität, Re
 
 Entscheidungsmodus, Beteiligung, Evidenz- und Assurancetiefe an Komplexität, Reversibilität und Wirkungsschwere anpassen.
 
+I07 gehört zur Kategorie „Strategische Vorausschau und Entscheidungsintelligenz“. Verbindlicher Output: Klassifizierte Entscheidung mit vorgeschriebenem Verfahren, Gate, Beteiligung, Prüftiefe und Reviewfrequenz.
+
 ## Entscheidungskontext- und Komplexitätscheck
 
 Bestimmen, ob eine Situation überwiegend klar, kompliziert, komplex, chaotisch oder widersprüchlich ist und welche Vorgehenslogik dazu passt.
 
 Bestimmen, ob eine Situation überwiegend klar, kompliziert, komplex, chaotisch oder widersprüchlich ist und welche Vorgehenslogik dazu passt.
 
+A07 gehört zur Kategorie „Orientierung, Mandat und Schutzrahmen“. Verbindlicher Output: Kontextklassifikation mit passender Kombination aus Analyse, Expertise, Experiment, Schutz und Krisenintervention.
+
 ## Entscheidungslog, Pre-Mortem und Evidenzupdate
 
 Entscheidungsqualität verbessern und Hindsight Bias durch nachvollziehbare Vorannahmen und spätere Evidenzupdates begrenzen.
 
 Entscheidungsqualität verbessern und Hindsight Bias durch nachvollziehbare Vorannahmen und spätere Evidenzupdates begrenzen.
+
+I08 gehört zur Kategorie „Strategische Vorausschau und Entscheidungsintelligenz“. Verbindlicher Output: Versioniertes Entscheidungslog mit Pre-Mortem, Alternativen, Unsicherheit, erwarteten Signalen und späterem Outcome-Review.
 
 ## Entwicklungskredit
 
@@ -2434,6 +2986,8 @@ Eine epistemische Gemeinschaft ist ein Netzwerk von Expert:innen mit gemeinsamem
 
 Eine epistemische Gemeinschaft ist ein Netzwerk von Expert:innen mit gemeinsamem Wissen, Methoden und Problemverständnis, das politische Entscheidungen beeinflussen kann.
 
+Relevant für Wissenschaft, Klimapolitik, Gesundheit, Sicherheit und Wirkungsmessung. Expertise braucht Transparenz, Pluralität und Korrekturfähigkeit.
+
 ## Erfindung
 
 Eine Erfindung ist eine neue Lösung oder Möglichkeit. Sie ist noch keine Innovation, solange sie nicht angewendet, durchgesetzt und wirksam verbreitet ist.
@@ -2447,6 +3001,12 @@ Wirkungsökonomisch wird eine Erfindung zunächst als Wirkungspotenzial gelesen.
 Erinnerungskultur umfasst gesellschaftliche Praktiken, Institutionen und Räume, in denen historische Verantwortung, Gewaltgeschichte, Ausgrenzung, Demokratiegründung und Widerstand sichtbar gehalten werden.
 
 Erinnerungskultur umfasst gesellschaftliche Praktiken, Institutionen und Räume, in denen historische Verantwortung, Gewaltgeschichte, Ausgrenzung, Demokratiegründung und Widerstand sichtbar gehalten werden.
+
+Für die WÖk ist Erinnerung demokratische Prävention. Sie schützt gegen Geschichtsrevisionismus, autoritäre Mythen, nationale Selbstverklärung, Opferkonkurrenz und die Wiederkehr entmenschlichender Muster. Sie stabilisiert Wahrheit, Menschenwürde und demokratische Identität.
+
+Der Begriff ist zentral, weil Demokratien ohne Erinnerung verletzlich werden. Wenn Gewaltgeschichte verdrängt, relativiert, instrumentalisiert oder gefälscht wird, verlieren Gesellschaften Korrektur- und Lernfähigkeit. Erinnerung ist Stabilitätsinfrastruktur und demokratische Vorsorge.
+
+Die WÖk versteht Erinnerung als Rückkopplung über Zeit. Vergangenheit ist nicht vorbei, wenn ihre Muster weiterwirken. Erinnerungskultur verbindet faktische, ethische, demokratische, kulturelle und zukunftsbezogene Ebenen. Sie ist kein staatliches Erinnerungsmonopol, sondern braucht Pluralität, Forschung, Kunst, Zivilgesellschaft und Widerspruch.
 
 ## Erlernte Hilflosigkeit
 
@@ -2489,6 +3049,8 @@ Radikaler Konstruktivismus erklärt, dass Wissen anhand von Erfahrung, Modellen 
 Erweiterte Herstellerverantwortung verpflichtet Hersteller zu Verantwortung über den Verkauf hinaus.
 
 Erweiterte Herstellerverantwortung verpflichtet Hersteller zu Verantwortung über den Verkauf hinaus.
+
+Wichtig für Rücknahme, Entsorgung, Recycling und Rückkopplung von Produktfolgen an Herstellerentscheidungen.
 
 ## Erwerbsarbeitslogik
 
@@ -2556,6 +3118,10 @@ Die European Sustainability Reporting Standards konkretisieren, welche Nachhalti
 
 Die European Sustainability Reporting Standards konkretisieren, welche Nachhaltigkeitsinformationen Unternehmen unter der CSRD offenlegen sollen.
 
+Für die WÖk sind ESRS der Datenrohstoff für Wirkungsindikatoren. Sie ermöglichen Anschlussfähigkeit an bestehende Unternehmensdaten, vermeiden Doppelmeldung und schaffen Grundlage für maschinenlesbare Wirkungsauswertung.
+
+ESRS als Daten- und Reportingstandard einordnen.
+
 ## ESRS-Themenstandards
 
 ESRS-Themenstandards strukturieren Nachhaltigkeitsangaben zu Umwelt, Soziales und Governance.
@@ -2598,11 +3164,17 @@ Sammelbegriff für die primärrechtlichen EU-Grundlagen, die nachhaltige Entwick
 
 Sammelbegriff für die primärrechtlichen EU-Grundlagen, die nachhaltige Entwicklung, Umweltintegration, Demokratie, Rechtsstaatlichkeit und Grundrechte als europäische Ordnungsprinzipien verankern.
 
+Für die Wirkungsökonomie ist dieser Rahmen der europäische Anschluss an Art. 20a GG: Wirkung wird nicht nur national, sondern europäisch als Frage von Lebensgrundlagen, sozialen Bedingungen, Grundrechten und demokratischer Stabilität lesbar.
+
 ## EU-Taxonomie
 
 Die EU-Taxonomie ist ein Klassifikationssystem für ökologisch nachhaltige Wirtschaftstätigkeiten. Eine Aktivität gilt als nachhaltig, wenn sie wesentlich zu einem Umweltziel beiträgt, kein Umweltziel erheblich beeinträchtigt, Mindestschutz einhält und technische Bewertungskriterien erfüllt.
 
 Die EU-Taxonomie ist ein Klassifikationssystem für ökologisch nachhaltige Wirtschaftstätigkeiten. Eine Aktivität gilt als nachhaltig, wenn sie wesentlich zu einem Umweltziel beiträgt, kein Umweltziel erheblich beeinträchtigt, Mindestschutz einhält und technische Bewertungskriterien erfüllt.
+
+Für die WÖk ist die Taxonomie ein wichtiger Vorläufer: wesentlicher Beitrag, DNSH und Mindestschutz entsprechen der Logik, positive Wirkung nicht durch schwere negative Wirkung zu erkaufen.
+
+EU-Taxonomie als Anschlussstandard für Sustainable Finance.
 
 ## EU-Taxonomie bei Immobilien
 
@@ -2628,6 +3200,8 @@ Das Europäische Klimagesetz ist der EU-Rechtsrahmen für Klimaneutralität. Es 
 
 Das Europäische Klimagesetz ist der EU-Rechtsrahmen für Klimaneutralität. Es verankert Klimaneutralität bis 2050, das 2030-Ziel von mindestens 55 Prozent Netto-Emissionsminderung gegenüber 1990 und seit der Änderung 2026 ein bindendes 2040-Ziel von 90 Prozent Netto-Minderung.
 
+Für die WÖk ist es der zentrale Rechtsanker für Klima als planetare Wirkungsgrenze. Es zeigt, dass Klimawirkung nicht mehr nur politisches Ziel, sondern verbindlicher europäischer Steuerungsrahmen ist.
+
 ## European Green Deal / Europäischer Green Deal
 
 Der European Green Deal ist der politische Transformationsrahmen der EU für eine moderne, ressourceneffiziente, wettbewerbsfähige und klimaneutrale Wirtschaft.
@@ -2639,6 +3213,8 @@ Der European Green Deal bündelt die politische Transformationsagenda der EU. F�
 Der European Media Freedom Act schafft einen gemeinsamen Rahmen für Mediendienste im Binnenmarkt und schützt Medienpluralität, redaktionelle Unabhängigkeit und Transparenz.
 
 Der European Media Freedom Act schafft einen gemeinsamen Rahmen für Mediendienste im Binnenmarkt und schützt Medienpluralität, redaktionelle Unabhängigkeit und Transparenz.
+
+Für die WÖk ist er ein EU-Rechtsanker für Medienqualität als SDG+-Feld. Eine funktionierende Öffentlichkeit braucht pluralistische, unabhängige und nachvollziehbare Medienstrukturen.
 
 ## Evaluation und Reversibilität
 
@@ -2656,17 +3232,23 @@ Eine verhältnismäßige Evaluation entwerfen, die Relevanz, Kohärenz, Wirksamk
 
 Eine verhältnismäßige Evaluation entwerfen, die Relevanz, Kohärenz, Wirksamkeit, Effizienz, Wirkung, Nachhaltigkeit und WÖMS-spezifische Systemfragen beantwortet.
 
+D12 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Verbindlicher Output: Evaluationsdesign mit Fragen, Kriterien, Methodenmix, Vergleichslogik, Beteiligung, Zeitplan und Nutzung.
+
 ## Evidenz- und Annahmenregister
 
 Wissen, Schätzungen, normative Setzungen, Hypothesen und Unsicherheiten getrennt dokumentieren und über den Prozess fortschreiben.
 
 Wissen, Schätzungen, normative Setzungen, Hypothesen und Unsicherheiten getrennt dokumentieren und über den Prozess fortschreiben.
 
+A06 gehört zur Kategorie „Orientierung, Mandat und Schutzrahmen“. Verbindlicher Output: Versioniertes Register mit Aussage, Typ, Evidenzstufe E0–E5, Quelle, Unsicherheit, Verantwortlichen und Prüfdatum.
+
 ## Evolutionstheorie / evolutorische Ökonomik
 
 Evolutionstheorie in der Wirtschaft beschreibt Entwicklung als Prozess von Variation, Selektion, Anpassung, Lernen, Pfadabhängigkeit und Veränderung von Routinen. Schumpeter und Röpke sind wichtige Bezugslinien.
 
 Evolutionstheorie in der Wirtschaft beschreibt Entwicklung als Prozess von Variation, Selektion, Anpassung, Lernen, Pfadabhängigkeit und Veränderung von Routinen. Schumpeter und Röpke sind wichtige Bezugslinien.
+
+Die WÖk nutzt evolutorisches Denken, um Transformation als Lernprozess zu verstehen. Unternehmen, Märkte und Institutionen verändern sich nicht durch einen einzigen Plan, sondern durch Experimente, Rückkopplung, Scheitern, Kompetenzaufbau und neue Kombinationen.
 
 ## Evolutorischer Unternehmer
 
@@ -2688,6 +3270,8 @@ Expert:innenlobbyismus nutzt Fachwissen, Studien oder Gutachten zur politischen 
 
 Expert:innenlobbyismus nutzt Fachwissen, Studien oder Gutachten zur politischen Einflussnahme.
 
+Kann wertvoll oder verzerrend sein. Entscheidend sind Datenqualität, Interessentransparenz und methodische Offenlegung.
+
 ## Exposition
 
 Exposition beschreibt, ob und in welchem Ausmaß Menschen, Systeme oder Werte einem Risiko ausgesetzt sind.
@@ -2706,17 +3290,23 @@ Externalitäten sind Kosten oder Nutzen, die bei Dritten entstehen und nicht im 
 
 Externalitäten sind Kosten oder Nutzen, die bei Dritten entstehen und nicht im Marktpreis enthalten sind.
 
+Zentraler WÖk-Begriff: Wirkungsökonomie macht Externalitäten sichtbar und koppelt sie in Preise, Steuern, Kapital, Haftung und Beschaffung zurück.
+
 ## Externalitäten / externe Kosten
 
 Externalitäten sind Wirkungen wirtschaftlichen Handelns, die nicht im Preis oder in der privaten Kostenrechnung enthalten sind. Dazu gehören Klima-, Gesundheits-, Biodiversitäts-, Sozial- und Demokratieschäden ebenso wie positive öffentliche Wirkungen.
 
 Externalitäten sind Wirkungen wirtschaftlichen Handelns, die nicht im Preis oder in der privaten Kostenrechnung enthalten sind. Dazu gehören Klima-, Gesundheits-, Biodiversitäts-, Sozial- und Demokratieschäden ebenso wie positive öffentliche Wirkungen.
 
+In der WÖk sind Externalitäten nicht Randphänomene, sondern Kern des falschen Kompasses. Wenn Schäden ausgelagert werden, erscheinen destruktive Produkte billig. Wirkungssteuer, DPP, Scorecards und Reverse Merit Order machen externe Kosten rückkopplungsfähig.
+
 ## Externalitäten- und Kostenverlagerungskarte
 
 Unsichtbare ökologische, soziale, gesundheitliche, demokratische und zeitliche Kosten sowie Nutzen entlang von Akteuren und Lebenszyklus sichtbar machen.
 
 Unsichtbare ökologische, soziale, gesundheitliche, demokratische und zeitliche Kosten sowie Nutzen entlang von Akteuren und Lebenszyklus sichtbar machen.
+
+B07 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Verbindlicher Output: Karte der internen und externalisierten Wirkungen mit Trägern, Empfängern, Zeit und möglicher Rückführung.
 
 ## Extraktiver Kapitalismus
 
@@ -2730,11 +3320,15 @@ Extrem beschreibt eine Position am Rand eines Spektrums oder eine besonders star
 
 Extrem beschreibt eine Position am Rand eines Spektrums oder eine besonders starke Ausprägung.
 
+Nicht jede extreme Position ist automatisch extremistisch; WÖk prüft Wirkung auf Grundrechte, Gewaltfreiheit, Demokratie und Korrekturfähigkeit.
+
 ## Extremismus
 
 Extremismus beschreibt politische Positionen oder Handlungen, die Grundrechte, Demokratie, Rechtsstaatlichkeit, Menschenwürde oder Gewaltfreiheit systematisch infrage stellen.
 
 Extremismus beschreibt politische Positionen oder Handlungen, die Grundrechte, Demokratie, Rechtsstaatlichkeit, Menschenwürde oder Gewaltfreiheit systematisch infrage stellen.
+
+Nicht bloß Randposition, sondern Wirkungsrisiko, wenn demokratische Korrektur und Schutzgrenzen angegriffen werden.
 
 ## Fach Zukunft
 
@@ -2778,6 +3372,8 @@ False Balance entsteht, wenn Positionen trotz sehr unterschiedlicher Evidenzlage
 
 False Balance entsteht, wenn Positionen trotz sehr unterschiedlicher Evidenzlage als gleichwertig dargestellt werden.
 
+Relevant für Medien, Klimadebatte, Gesundheit und politisches Framing.
+
 ## False Consensus Effect
 
 Menschen überschätzen, wie stark andere ihre eigenen Ansichten, Werte oder Verhaltensweisen teilen.
@@ -2808,11 +3404,17 @@ Faschistoid bedeutet: faschistische Züge zeigend, ohne dass zwingend voll ausge
 
 Faschistoid bedeutet: faschistische Züge zeigend, ohne dass zwingend voll ausgeprägter Faschismus vorliegt.
 
+Nützlich, wenn nicht ein ganzes System als faschistisch bezeichnet werden soll, aber einzelne Muster erkennbar sind: Führerlogik, Entmenschlichung, Feindbild, Gewaltfantasie, Anti-Pluralismus, Reinheitsnarrativ oder demokratische Delegitimierung.
+
 ## Faserverbundwerkstoff
 
 Ein Faserverbundwerkstoff kombiniert Fasern mit einer Matrix, um hohe Festigkeit bei geringem Gewicht zu erreichen.
 
 Ein Faserverbundwerkstoff kombiniert Fasern mit einer Matrix, um hohe Festigkeit bei geringem Gewicht zu erreichen.
+
+Relevant für Rotorblätter, Leichtbau und Recyclingherausforderungen.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Fehlbarkeit der Wirkungsökonomie
 
@@ -2843,6 +3445,8 @@ Ein Feindbild reduziert komplexe Ursachen auf eine abgewertete Gegengruppe und k
 Feindbildlogik ordnet politische oder soziale Konflikte über stark vereinfachte Gegnerbilder.
 
 Feindbildlogik ordnet politische oder soziale Konflikte über stark vereinfachte Gegnerbilder.
+
+Sie kann Aufmerksamkeit mobilisieren, aber Vertrauen, Differenzierung, Minderheitenschutz und demokratische Lösungssuche beschädigen.
 
 ## Feminisierung von Armut
 
@@ -2880,11 +3484,19 @@ Fernwirktechnik ermöglicht die Überwachung, Steuerung oder Abschaltung von Anl
 
 Fernwirktechnik ermöglicht die Überwachung, Steuerung oder Abschaltung von Anlagen aus der Ferne.
 
+Wichtig für Netzbetrieb, Einspeisemanagement, Ladeparks, Speicher und Krisenresilienz.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Feststoffbatterie
 
 Feststoffbatterien nutzen einen festen Elektrolyten statt eines flüssigen oder gelartigen Elektrolyten.
 
 Feststoffbatterien nutzen einen festen Elektrolyten statt eines flüssigen oder gelartigen Elektrolyten.
+
+Zukunftstechnologie mit potenzieller Wirkung auf Sicherheit, Energiedichte und Lebensdauer; nicht als heutige Standardlösung darstellen.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Filterblase
 
@@ -2924,9 +3536,9 @@ Die „Firehose of Falsehood“ beschreibt ein Propagandamuster, das nicht auf k
 
 ## Fiskalischer Wirkungsgrad
 
-Der fiskalische Wirkungsgrad beschreibt, wie viel bewertete positive Netto-Wirkung pro eingesetztem öffentlichen Euro entsteht.
+Der fiskalische Wirkungsgrad beschreibt den monetär bewerteten, kausal zugerechneten direkten Nettonutzen je diskontiertem öffentlichen Euro.
 
-Der fiskalische Wirkungsgrad ist die auf öffentliche Mittel bezogene Variante des wirkungsökonomischen Wirkungsgrads. Sein Nenner ist ein klar abgegrenzter öffentlicher Mitteleinsatz, etwa eine Ausgabe, Förderung, Subvention oder öffentliche Investition. Damit eine Rechnung tragfähig ist, müssen Zweck, Bilanzgrenze, Zeitraum, Zurechnung, Nebenwirkungen, Datenqualität und Nichtkompensation sichtbar sein.
+Der fiskalische Wirkungsgrad ist die auf öffentliche Mittel bezogene monetäre Verhältniskennzahl. Sein Zähler ist der Barwert eines kausal zugerechneten direkten Nettonutzens in Euro, sein Nenner ein klar abgegrenzter öffentlicher Mitteleinsatz in Euro derselben Preisbasis. Nicht-monetäre Wirkungsprofile sind wichtig, werden aber nicht unbemerkt zum Euro-Zähler gemacht. Damit eine Rechnung tragfähig ist, müssen Zweck, Bilanzgrenze, Zeitraum, Zurechnung, Nebenwirkungen, Datenqualität und Nichtkompensation sichtbar sein.
 
 ## Fit for 55
 
@@ -2946,11 +3558,17 @@ Flexibilität beschreibt die Fähigkeit, Erzeugung, Verbrauch, Speicher und Netz
 
 Flexibilität beschreibt die Fähigkeit, Erzeugung, Verbrauch, Speicher und Netzbetrieb an schwankende Bedingungen anzupassen.
 
+Zentrale Systemwirkung in erneuerbaren Stromsystemen.
+
 ## Flexibilitätsmarkt
 
 Ein Flexibilitätsmarkt organisiert die Bereitstellung oder Vergütung flexibler Erzeugung, Speicherung oder Verbrauchsverschiebung.
 
 Ein Flexibilitätsmarkt organisiert die Bereitstellung oder Vergütung flexibler Erzeugung, Speicherung oder Verbrauchsverschiebung.
+
+Er kann Netze entlasten und Systemkosten senken, braucht aber faire Teilnahme, klare Daten und Schutz vor Marktmacht.
+
+Energie als Wirkungsinfrastruktur behandeln: Erzeugung, Netze, Speicher, Preise, Resilienz, Teilhabe und Folgewirkungen zusammen bewerten.
 
 ## Flood-the-Zone
 
@@ -2974,7 +3592,7 @@ Folgekostenvermeidung bewertet, welche späteren Schäden, Reparaturen oder Risi
 
 Ein Folgencheck prüft vorsorgend, was eine Aussage, Entscheidung oder Maßnahme auslösen kann.
 
-Der Folgencheck ist eine vorsorgende Ex-ante-Prüfung möglicher Wirkungen. Er untersucht Wirkstoffe, Wirkungspotenziale, Wirkungspfade, Wirkungsräume, Nebenwirkungen, Datenqualität, Unsicherheit und Schutzgrenzen, bevor Schäden oder Systemfolgen vollständig eingetreten sind.
+Der Folgencheck ist eine vorsorgende Ex-ante-Prüfung möglicher Wirkungen. Er untersucht Auslöser mit Wirkungspotenzial, Wirkungspfade, Wirkungsräume, Nebenwirkungen, Datenqualität, Unsicherheit und Schutzgrenzen, bevor Schäden oder Systemfolgen vollständig eingetreten sind.
 
 ## Folgenfreiheit
 
@@ -3024,6 +3642,8 @@ Ein fossiles Kraftwerk erzeugt Strom durch Verbrennung fossiler Energieträger w
 
 Ein fossiles Kraftwerk erzeugt Strom durch Verbrennung fossiler Energieträger wie Kohle, Erdgas oder Öl.
 
+Es erzeugt direkte Treibhausgasemissionen und häufig Luftschadstoffe; ohne Klimafolgeschäden, Gesundheitskosten und geopolitische Risiken sind Kosten unvollständig.
+
 ## Frame
 
 Ein Frame ist ein Deutungsrahmen, durch den ein Thema wahrgenommen, eingeordnet und bewertet wird.
@@ -3038,9 +3658,9 @@ Framing ist das Setzen, Wiederholen oder Verstärken eines Deutungsrahmens. Es s
 
 ## Framekontrolle
 
-Bewusstes Verhindern, dass der problematische Deutungsrahmen einer Aussage unkritisch übernommen wird.
+Framekontrolle bedeutet, die Deutungsannahme einer Aussage zu erkennen, nicht unbemerkt zu übernehmen und die Sachfrage unter einem passenden, offenen Rahmen zu klären.
 
-Bewusstes Verhindern, dass der problematische Deutungsrahmen einer Aussage unkritisch übernommen wird.
+Framekontrolle ist ein Arbeitsbegriff für den bewussten Umgang mit Deutungsrahmen in Sprache und Diskussionen. Sie macht sichtbar, welche Voraussetzung, Auswahl oder Wertung eine Formulierung mitliefert, und trennt diese von der überprüfbaren Sachfrage. Ihr Ziel ist nicht eine rahmenfreie Sprache – die gibt es kaum –, sondern ein transparenter Rahmen, in dem Begriffe, Belege, Alternativen und Folgen prüfbar bleiben. Sie kann etwa eine falsche Voraussetzung ausdrücklich zurückweisen, eine Frage präzisieren oder ein Reframing begründen. Ob diese Schritte Verständnis, Urteil oder Handeln verändern, ist eine gesonderte empirische Frage.
 
 ## Framing / Sprache / Tonalität
 
@@ -3053,6 +3673,8 @@ Framing / Sprache / Tonalität bezeichnet in der Wirkungsökonomie die Art, wie 
 Die Frankfurter Schule steht für kritische Gesellschaftstheorie, Kritik instrumenteller Vernunft, Herrschaftsanalyse, Kulturindustrie, Ideologiekritik und die Frage, wie Freiheit unter modernen Macht- und Medienbedingungen beschädigt wird.
 
 Die Frankfurter Schule steht für kritische Gesellschaftstheorie, Kritik instrumenteller Vernunft, Herrschaftsanalyse, Kulturindustrie, Ideologiekritik und die Frage, wie Freiheit unter modernen Macht- und Medienbedingungen beschädigt wird.
+
+Für die WÖk ist sie anschlussfähig, weil Wirkung nicht nur in Produkten und Steuern entsteht, sondern auch in Kultur, Medien, Sprache, Konsum, Macht und Normalisierung. Sie hilft, Scheinrationalität, Herrschaft durch Systeme und Entmündigung durch Kommunikationsräume zu erkennen.
 
 ## Fraunhofersche Linien
 
@@ -3072,11 +3694,19 @@ Malik steht für Management in komplexen Systemen, klare Aufgaben, Feedback, Kom
 
 Malik steht für Management in komplexen Systemen, klare Aufgaben, Feedback, Kommunikation und lebensfähige Organisationen.
 
+Die WÖk bindet diese Managementlogik an Mensch, Planet und Demokratie zurück: Lebensfähigkeit ist nicht nur finanzielle Stabilität.
+
+Die WÖk ergänzt: Resultate müssen als Wirkung gelesen werden, nicht nur als Zielerreichung oder Performance.
+
+Als Bezugslinie verwenden, nicht als Autoritätsbeweis oder biografischen Lexikoneintrag.
+
 ## Freie und faire Wahlen
 
 Freie und faire Wahlen sind Wahlen, bei denen Bürger:innen ohne Zwang, Manipulation oder systematische Benachteiligung zwischen echten Alternativen entscheiden können.
 
 Freie und faire Wahlen sind Wahlen, bei denen Bürger:innen ohne Zwang, Manipulation oder systematische Benachteiligung zwischen echten Alternativen entscheiden können.
+
+Wahlen allein reichen nicht. Entscheidend sind Freiheit, Fairness, Medienzugang, Wahlrecht, Transparenz, Auszählung, Opposition und Akzeptanz des Ergebnisses.
 
 ## Freiheit / Markt / Planwirtschaftsvorwurf
 
@@ -3104,11 +3734,15 @@ Fremdenfeindlichkeit bezeichnet ablehnende, ausgrenzende oder feindselige Haltun
 
 Fremdenfeindlichkeit bezeichnet ablehnende, ausgrenzende oder feindselige Haltungen gegenüber Personen oder Gruppen, die als „fremd“ markiert werden. Diese Fremdheit ist keine objektive Eigenschaft, sondern eine soziale Zuschreibung.
 
+Die WÖk nutzt den Begriff vorsichtig, weil er Wirkung sichtbar machen kann: Ausschluss aus Wohnraum, Arbeit, Bildung, öffentlichem Raum, politischer Teilhabe oder Sicherheit. Entscheidend ist nicht, ob jemand „wirklich fremd“ ist, sondern wer durch welche Zuschreibung belastet wird.
+
 ## Frequenzhaltung
 
 Frequenzhaltung sichert die stabile Frequenz im Stromnetz.
 
 Frequenzhaltung sichert die stabile Frequenz im Stromnetz.
+
+Zentral für Systemstabilität.
 
 ## Frequenzillusion
 
@@ -3122,6 +3756,8 @@ Friedlicher Machtwechsel bedeutet, dass politische Macht nach Wahlen ohne Gewalt
 
 Friedlicher Machtwechsel bedeutet, dass politische Macht nach Wahlen ohne Gewalt, Putsch oder institutionelle Sabotage übergeben werden kann.
 
+Friedlicher Machtwechsel ist ein Kernindikator demokratischer Stabilität.
+
 ## Friedrich Hayek
 
 Friedrich Hayek ist relevant, weil Märkte dezentrales Wissen verarbeiten.
@@ -3134,11 +3770,15 @@ Führerkult beschreibt die überhöhte Verehrung einer politischen Führungspers
 
 Führerkult beschreibt die überhöhte Verehrung einer politischen Führungsperson.
 
+Wirkungsrisiko, weil Institutionen, Kritik, Recht und Pluralität hinter persönlicher Loyalität zurücktreten.
+
 ## Führerprinzip
 
 Das Führerprinzip beschreibt die Unterordnung von Institutionen, Gruppen oder Individuen unter eine autoritäre Führungsperson.
 
 Das Führerprinzip beschreibt die Unterordnung von Institutionen, Gruppen oder Individuen unter eine autoritäre Führungsperson.
+
+Schweres Wirkungsrisiko, weil Korrektur, Gewaltenteilung, Pluralismus und Rechtsstaatlichkeit verdrängt werden.
 
 ## Functional Finance
 
@@ -3176,6 +3816,8 @@ Ein Gaskraftwerk erzeugt Strom durch Verbrennung von Erdgas.
 
 Ein Gaskraftwerk erzeugt Strom durch Verbrennung von Erdgas.
 
+Kann flexibel sein, verursacht aber CO2- und Methan-Vorkettenwirkungen sowie Importabhängigkeiten.
+
 ## Gebäude- und Immobilienstandards
 
 Gebäude- und Immobilienstandards legen Anforderungen an Planung, Bau, Betrieb, Energie, Sicherheit, Barrierefreiheit oder Nachhaltigkeit fest.
@@ -3212,11 +3854,15 @@ Gedächtniskonsolidierung beschreibt Prozesse, durch die Informationen stabiler 
 
 Gedächtniskonsolidierung beschreibt Prozesse, durch die Informationen stabiler im Gedächtnis verankert werden.
 
+Nur sparsam verwenden, wenn Wiederholung, Narrative, Lernen oder Bildung fachlich relevant sind.
+
 ## Gedankenlosigkeit
 
 Gedankenlosigkeit beschreibt bei Arendt fehlendes prüfendes Denken und fehlende Verantwortungsübernahme im Handeln.
 
 Gedankenlosigkeit beschreibt bei Arendt fehlendes prüfendes Denken und fehlende Verantwortungsübernahme im Handeln.
+
+Wirkungsrisiko, wenn Verwaltung, Organisationen oder Individuen Regeln ausführen, ohne Folgen für Menschen und Demokratie mitzudenken.
 
 ## Gegenframe
 
@@ -3251,6 +3897,8 @@ In der WÖk bedeutet gemeinsame Zukunftssicherung:
 Gemeinwohl bezeichnet die Bedingungen, unter denen Menschen würdig, frei, sicher und teilhabefähig leben können, ohne Lebensgrundlagen oder Demokratie zu zerstören.
 
 Gemeinwohl bezeichnet die Bedingungen, unter denen Menschen würdig, frei, sicher und teilhabefähig leben können, ohne Lebensgrundlagen oder Demokratie zu zerstören.
+
+Die WÖk konkretisiert Gemeinwohl über Wirkung: nicht Absicht, Wertebekenntnis oder Symbolik zählen, sondern nachweisbare Zustandsveränderungen in Richtung SDGs, Agenda 2030 und SDG+.
 
 ## Gemeinwohlökonomie / Gemeinwohl-Bilanz
 
@@ -3324,11 +3972,15 @@ Geothermie nutzt Wärme aus dem Erdinneren.
 
 Geothermie nutzt Wärme aus dem Erdinneren.
 
+Relevant für Wärme und Strom, mit Standort-, Bohr-, Risiko- und Infrastrukturfragen.
+
 ## Geplante Obsoleszenz
 
 Geplante Obsoleszenz verkürzt Nutzungsdauer durch Produktgestaltung oder Marktpraktiken.
 
 Geplante Obsoleszenz verkürzt Nutzungsdauer durch Produktgestaltung oder Marktpraktiken.
+
+Sie ist negative Produktwirkung, weil sie Ressourcenverbrauch, Abfall und Ersatzproduktion erhöht.
 
 ## Geschäftsmodellprüfung
 
@@ -3342,11 +3994,15 @@ Eine geschlossene Autokratie ist eine Herrschaftsform, in der ein Einzelner oder
 
 Eine geschlossene Autokratie ist eine Herrschaftsform, in der ein Einzelner oder eine Gruppe unkontrolliert Macht ausübt und keine freien, fairen Wahlen bestehen.
 
+Die demokratische Rückkopplung ist weitgehend blockiert; Kritik, Opposition, Medien und Rechtsschutz sind stark eingeschränkt.
+
 ## Gesellschaft
 
 Gesellschaft ist der Raum der Menschen, Beziehungen, Gruppen, Organisationen, Konflikte, Normen und Lebensformen.
 
 Gesellschaft ist der Raum der Menschen, Beziehungen, Gruppen, Organisationen, Konflikte, Normen und Lebensformen.
+
+Gesellschaft ist nicht der Staat. Sie ist der Resonanzraum, in dem politische Sprache, Märkte, Medien, Institutionen und Wirkungsdaten aufgenommen werden.
 
 ## Gesellschaftliche Stabilität
 
@@ -3360,17 +4016,21 @@ Ein Gesetz ist eine allgemein verbindliche Regel, die in einem verfassungsmäßi
 
 Ein Gesetz ist eine allgemein verbindliche Regel, die in einem verfassungsmäßigen Verfahren beschlossen wird.
 
+Gesetze sind Wirkungsträger: Sie verändern Rechte, Pflichten, Preise, Verfahren, Schutz und Handlungsmöglichkeiten.
+
 ## Gesicherte Leistung
 
 Gesicherte Leistung beschreibt Leistung, die mit hoher Verlässlichkeit verfügbar ist.
 
 Gesicherte Leistung beschreibt Leistung, die mit hoher Verlässlichkeit verfügbar ist.
 
+Zentral für Versorgungssicherheit, Kapazitätsmärkte, Speicher und Backup.
+
 ## Gesichtswahrende Korrektur
 
-Korrektur einer Aussage, ohne die Person zu demütigen oder ihre Identität anzugreifen.
+Gesichtswahrende Korrektur berichtigt eine Aussage, ohne die Würde der Person abzuwerten. Sie trennt Person, Behauptung, Beleg und mögliche Folgen.
 
-Korrektur einer Aussage, ohne die Person zu demütigen oder ihre Identität anzugreifen.
+Gesichtswahrende Korrektur ist eine Gesprächspraxis, die eine strittige oder falsche Behauptung klar berichtigt und zugleich vermeidet, die Person zu beschämen oder ihre Identität anzugreifen. Sie anerkennt gegebenenfalls eine nachvollziehbare Sorge, erklärt die sachliche Korrektur mit Belegen und hält die Frage nach Folgen offen. Das ist kein Verzicht auf Widerspruch und keine Zusage, dass die Korrektur angenommen wird. Die Bezeichnung ist im WÖk-Glossar ein beschreibender Praxisbegriff, keine klinische Diagnose und kein Beweis für eine bestimmte psychologische Reaktion. Ob sie Reaktanz senkt oder Lernen fördert, ist kontextabhängig zu prüfen.
 
 ## Gestehungskosten
 
@@ -3408,6 +4068,12 @@ Eine Gesundheitskasse ist in der WÖk eine Kassenlogik, die Gesundheit, Prävent
 
 Gesundheitskasse bezeichnet in der Wirkungsökonomie kein fertiges Rechtsmodell, sondern eine Finanzierungslogik: Mittel sollen nicht nur bei eingetretener Krankheit fließen, sondern auch dann, wenn Gesundheit erhalten, Pflegebedarf vermieden, Autonomie verlängert oder Versorgungsgerechtigkeit verbessert wird.
 
+## Gesundheitskompetenz
+
+Gesundheitskompetenz ist die Fähigkeit und Möglichkeit, Gesundheitsinformationen und -leistungen zu finden, zu verstehen, zu beurteilen und zu nutzen.
+
+Gesundheitskompetenz ist keine Intelligenz- oder Gehorsamsnote. Wenn Informationen unverständlich, widersprüchlich, teuer oder nicht barrierefrei zugänglich sind, liegt das Problem nicht allein bei einzelnen Menschen. Gesundheitsdienste, Behörden, Medien und Unternehmen tragen Mitverantwortung dafür, dass Informationen nachvollziehbar, zugänglich und handhabbar sind.
+
 ## Gesundheitssystem
 
 Gesundheitssystem bezeichnet in der WÖk eine Ordnung, die Gesundheit, Prävention, Pflege, Resilienz und Zugang aktiv erzeugt und schützt.
@@ -3426,17 +4092,25 @@ Gewaltenteilung trennt staatliche Macht in Gesetzgebung, Regierung/Verwaltung un
 
 Gewaltenteilung trennt staatliche Macht in Gesetzgebung, Regierung/Verwaltung und Rechtsprechung.
 
+Sie verhindert Machtkonzentration und schützt demokratische Korrektur.
+
 ## Gewaltenteilungsabbau
 
 Gewaltenteilungsabbau schwächt die Trennung und Kontrolle staatlicher Macht.
 
 Gewaltenteilungsabbau schwächt die Trennung und Kontrolle staatlicher Macht.
 
+Er erhöht Machtkonzentration und senkt demokratische Korrekturfähigkeit.
+
 ## Gewerbespeicher
 
 Ein Gewerbespeicher ist ein stationärer Speicher für Betriebe, Ladeinfrastruktur oder Quartiere.
 
 Ein Gewerbespeicher ist ein stationärer Speicher für Betriebe, Ladeinfrastruktur oder Quartiere.
+
+Relevant für Lastspitzen, Leistungspreise, Eigenverbrauch, Notstrom, Netzdienlichkeit und Wirtschaftlichkeit.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Gewinn als Test
 
@@ -3449,6 +4123,8 @@ Der Gedanke schließt an Drucker an: Gewinn kann als Test wirtschaftlicher Tragf
 Gewöhnung beschreibt, dass wiederholte Reize mit der Zeit weniger stark wahrgenommen werden.
 
 Gewöhnung beschreibt, dass wiederholte Reize mit der Zeit weniger stark wahrgenommen werden.
+
+Relevant für Normalisierung, mediale Erregung, Klimarisiken, Gewaltbilder, politische Eskalation und Produktgewohnheiten.
 
 ## GHG Protocol
 
@@ -3480,11 +4156,17 @@ GFK ist ein Faserverbundwerkstoff aus Glasfasern und Kunststoffmatrix.
 
 GFK ist ein Faserverbundwerkstoff aus Glasfasern und Kunststoffmatrix.
 
+Wichtig für Rotorblätter und Bauteile, aber schwierig hochwertig zu recyceln.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Gleichbehandlung
 
 Gleichbehandlung verlangt, vergleichbare Fälle ohne sachwidrige Ungleichbehandlung zu behandeln.
 
 Gleichbehandlung verlangt, vergleichbare Fälle ohne sachwidrige Ungleichbehandlung zu behandeln.
+
+Wichtig für Rechtsstaat, Verwaltung, Arbeit, Produkte und Zugang zu Infrastruktur.
 
 ## Gleichberechtigung
 
@@ -3497,6 +4179,8 @@ Sie ist eine rechtliche und normative Grundlage demokratischer Gesellschaften.
 Gleichheit beschreibt rechtliche, politische oder soziale Gleichstellung in relevanten Hinsichten.
 
 Gleichheit beschreibt rechtliche, politische oder soziale Gleichstellung in relevanten Hinsichten.
+
+Wirkungsökonomisch ist Gleichheit nicht Gleichmacherei, sondern Schutz vor systematischer Benachteiligung und ungleichen Wirkungschancen.
 
 ## Gleichstellung
 
@@ -3521,6 +4205,10 @@ Gleichwertigkeit ist keine Gleichmacherei, sondern die normative Anerkennung gle
 Gleichzeitigkeit beschreibt, wie viele Ladepunkte oder Verbraucher gleichzeitig ihre maximale Leistung abrufen.
 
 Gleichzeitigkeit beschreibt, wie viele Ladepunkte oder Verbraucher gleichzeitig ihre maximale Leistung abrufen.
+
+Zentral für Netzanschlussdimensionierung, Lastmanagement und Kosten.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Global Warming Potential / GWP
 
@@ -3598,17 +4286,23 @@ Eine GONGO ist eine formal nichtstaatliche Organisation, die faktisch von staatl
 
 Eine GONGO ist eine formal nichtstaatliche Organisation, die faktisch von staatlichen Interessen organisiert, kontrolliert oder geprägt ist.
 
+Problematisch, wenn sie Unabhängigkeit simuliert und demokratische oder internationale Foren verzerrt.
+
 ## Grassroots-Bewegung
 
 Eine Grassroots-Bewegung ist eine von unten getragene Bewegung, die aus Bürger:innen, lokalen Gruppen oder Betroffenen heraus entsteht.
 
 Eine Grassroots-Bewegung ist eine von unten getragene Bewegung, die aus Bürger:innen, lokalen Gruppen oder Betroffenen heraus entsteht.
 
+Kann demokratische Wirkung stärken, wenn sie transparent, plural und betroffenenorientiert ist.
+
 ## Grauer Wasserstoff
 
 Grauer Wasserstoff wird aus fossilen Energieträgern ohne wirksame CO2-Abscheidung hergestellt.
 
 Grauer Wasserstoff wird aus fossilen Energieträgern ohne wirksame CO2-Abscheidung hergestellt.
+
+Er ist klimapolitisch problematisch und kein Transformationsziel.
 
 ## Green Claims Directive
 
@@ -3640,17 +4334,23 @@ Grenzkosten sind die Kosten für die Erzeugung einer zusätzlichen Einheit Strom
 
 Grenzkosten sind die Kosten für die Erzeugung einer zusätzlichen Einheit Strom.
 
+Sie prägen kurzfristige Strompreisbildung, aber nicht vollständige Wirkungskosten.
+
 ## Grenzkraftwerk
 
 Das Grenzkraftwerk deckt die Nachfrage zuletzt und setzt häufig den Marktpreis.
 
 Das Grenzkraftwerk deckt die Nachfrage zuletzt und setzt häufig den Marktpreis.
 
+Seine Wirkung hängt von Brennstoff, Flexibilität und Emissionen ab.
+
 ## Grenznutzen
 
 Grenznutzen beschreibt den zusätzlichen Nutzen einer weiteren Einheit eines Gutes.
 
 Grenznutzen beschreibt den zusätzlichen Nutzen einer weiteren Einheit eines Gutes.
+
+Hilfreich für Entscheidungsmodelle, aber keine Aussage über externe Wirkung oder Verteilung.
 
 ## GRI
 
@@ -3670,17 +4370,23 @@ Das Grundgesetz ist die Verfassung der Bundesrepublik Deutschland und legt Grund
 
 Das Grundgesetz ist die Verfassung der Bundesrepublik Deutschland und legt Grundrechte, Staatsstrukturprinzipien, demokratische Ordnung und Grenzen staatlicher Macht fest.
 
+Nicht nur Rechtsrahmen, sondern Schutzrahmen der Wirkungsarchitektur. Wirkung darf nie über Grundrechte, Demokratie, Rechtsstaatlichkeit, Verhältnismäßigkeit und Rechtsschutz gestellt werden.
+
 ## Grundlast
 
 Grundlast beschreibt den dauerhaft vorhandenen Mindeststrombedarf.
 
 Grundlast beschreibt den dauerhaft vorhandenen Mindeststrombedarf.
 
+Historisch wichtig, in erneuerbaren Systemen aber kritisch: Zukunftssysteme brauchen Flexibilität, Residuallastdeckung und Systemdienstleistungen.
+
 ## Grundrechte
 
 Grundrechte sind grundlegende Rechte, die Menschen gegenüber Staat und öffentlicher Macht schützen.
 
 Grundrechte sind grundlegende Rechte, die Menschen gegenüber Staat und öffentlicher Macht schützen.
+
+Grundrechte sind Wirkungsgrenzen. Keine Wirkungsrechnung darf ihre Verletzung einfach verrechnen.
 
 ## Grüner Kapitalismus
 
@@ -3694,17 +4400,23 @@ Grüner Wasserstoff wird mit erneuerbarem Strom per Elektrolyse hergestellt.
 
 Grüner Wasserstoff wird mit erneuerbarem Strom per Elektrolyse hergestellt.
 
+Sinnvoll vor allem dort, wo direkte Elektrifizierung schwer ist.
+
 ## Grünstrom
 
 Grünstrom bezeichnet Strom aus erneuerbaren Quellen oder entsprechende Beschaffungsprodukte.
 
 Grünstrom bezeichnet Strom aus erneuerbaren Quellen oder entsprechende Beschaffungsprodukte.
 
+Wirkung hängt von Zusätzlichkeit, Marktmodell, Herkunftsnachweisen und Systemintegration ab.
+
 ## Gruppenbezogene Menschenfeindlichkeit
 
 Gruppenbezogene Menschenfeindlichkeit beschreibt abwertende Einstellungen, Praktiken oder Strukturen gegenüber Menschen, weil sie einer Gruppe zugerechnet werden. Dazu gehören unter anderem Rassismus, Antisemitismus, Sexismus, Queerfeindlichkeit, Ableismus, Klassismus und antimuslimischer Rassismus.
 
 Gruppenbezogene Menschenfeindlichkeit beschreibt abwertende Einstellungen, Praktiken oder Strukturen gegenüber Menschen, weil sie einer Gruppe zugerechnet werden. Dazu gehören unter anderem Rassismus, Antisemitismus, Sexismus, Queerfeindlichkeit, Ableismus, Klassismus und antimuslimischer Rassismus.
+
+Der Begriff hilft der WÖk, unterschiedliche Ausgrenzungsformen systemisch zusammenzulesen, ohne sie gleichzusetzen. Gemeinsam ist ihnen die negative Wirkung auf Menschenwürde, Teilhabe, Sicherheit, Vertrauen und demokratische Resonanzräume.
 
 ## Gruppendenken
 
@@ -3736,6 +4448,8 @@ Halbleiter sind Materialien, deren elektrische Leitfähigkeit zwischen Leitern u
 
 Halbleiter sind Materialien, deren elektrische Leitfähigkeit zwischen Leitern und Isolatoren liegt und gezielt gesteuert werden kann.
 
+Grundlage von Photovoltaik, Leistungselektronik, Digitalisierung und Sensorik; Lieferketten, Rohstoffe und geopolitische Abhängigkeiten zählen mit.
+
 ## Halo-Effekt
 
 Ein positives Merkmal überstrahlt die Bewertung anderer Merkmale.
@@ -3753,6 +4467,8 @@ Haltung meint Werte, Perspektiven und Bereitschaften, aus denen Entscheidungen e
 Handeln ist bei Arendt das politische Tätigwerden unter Menschen, verbunden mit Sprache, Öffentlichkeit und Freiheit.
 
 Handeln ist bei Arendt das politische Tätigwerden unter Menschen, verbunden mit Sprache, Öffentlichkeit und Freiheit.
+
+Handeln ist zentral für Demokratie als Wirkungsraum.
 
 ## Handlung
 
@@ -3778,11 +4494,15 @@ Ein Handlungsfenster ist der Zeitraum, in dem wirksame, verhältnismäßige und 
 
 Ein Handlungsfenster ist der Zeitraum, in dem wirksame, verhältnismäßige und kostengünstige Optionen noch verfügbar sind. Es kann sich durch Kipppunkte, Lock-ins, Kostenanstieg, Vertrauensverlust oder Infrastrukturträgheit schließen.
 
+Die WÖk nutzt den Begriff, um die Zeitdimension von Wirkung zu erklären. Frühe Maßnahmen erweitern das Handlungsfenster; spätes Handeln macht Lösungen enger, teurer und politisch konfliktträchtiger. Bei Klima, Pflege, Bildung, Wohnen, Cyberresilienz und Demokratie ist das zentral.
+
 ## Handlungsmöglichkeiten
 
 Handlungsmöglichkeiten sind die real verfügbaren Optionen, mit denen Akteure auf einen Zustand, ein Risiko oder eine Krise reagieren können. Sie hängen von Zeit, Ressourcen, Wissen, Infrastruktur, Vertrauen, Recht, Kapital und sozialer Akzeptanz ab.
 
 Handlungsmöglichkeiten sind die real verfügbaren Optionen, mit denen Akteure auf einen Zustand, ein Risiko oder eine Krise reagieren können. Sie hängen von Zeit, Ressourcen, Wissen, Infrastruktur, Vertrauen, Recht, Kapital und sozialer Akzeptanz ab.
+
+In der WÖk ist entscheidend: Späteres Handeln schränkt Handlungsmöglichkeiten ein. Wer früh handelt, kann gestalten, wählen, sozial abfedern und lernen. Wer spät handelt, muss reparieren, kompensieren, rationieren oder härtere Eingriffe vornehmen. Damit ist Prävention Freiheits- und Demokratiepolitik.
 
 ## Handlungspfad
 
@@ -3802,17 +4522,29 @@ Arendt versteht Politik als Raum des Handelns, Sprechens und Erscheinens in Plur
 
 Arendt versteht Politik als Raum des Handelns, Sprechens und Erscheinens in Pluralität.
 
+Für die WÖk stärkt Arendt den Begriff Öffentlichkeit als demokratischen Wirkungsraum: Menschen wirken politisch nicht nur durch Abstimmung, sondern durch Sprache, Handeln, Urteil und gemeinsames Erscheinen.
+
+Arendt hilft zu verstehen, warum Demokratie nicht nur Institutionenordnung ist. Demokratie braucht öffentliche Räume, Pluralität, Sprache, Handeln, Urteilskraft und die Fähigkeit, gemeinsam etwas Neues zu beginnen.
+
 ## Hans Jonas / Prinzip Verantwortung
 
 Das Prinzip Verantwortung bezeichnet die ethische Pflicht, Handlungen auch an ihren langfristigen Folgen für künftige Generationen, Natur und Lebensbedingungen zu messen.
 
 Das Prinzip Verantwortung bezeichnet die ethische Pflicht, Handlungen auch an ihren langfristigen Folgen für künftige Generationen, Natur und Lebensbedingungen zu messen.
 
+Für die WÖk ist Jonas ein starker Bezugspunkt für Wirkungszeit, Vorsorge, Generationenverantwortung und die Pflicht, technologische Macht an Folgenabschätzung zu binden.
+
 ## Hans Ulrich
 
 Ulrich und die St. Galler Schule helfen, Unternehmen als offene, soziale, produktive Systeme zu lesen.
 
 Ulrich und die St. Galler Schule helfen, Unternehmen als offene, soziale, produktive Systeme zu lesen.
+
+Die WÖk nutzt diese Linie, um Unternehmenswirkung über Bilanzgrenzen hinaus zu denken.
+
+Die WÖk erweitert diese Sicht um messbare Wirkung auf Mensch, Planet und Demokratie.
+
+Als Bezugslinie verwenden, nicht als Autoritätsbeweis oder biografischen Lexikoneintrag.
 
 ## Hard-to-abate-Sektoren
 
@@ -3892,6 +4624,10 @@ Ein Heimspeicher ist ein Batteriespeicher in Wohngebäuden oder kleinen Prosumer
 
 Ein Heimspeicher ist ein Batteriespeicher in Wohngebäuden oder kleinen Prosumer-Anlagen.
 
+Er kann Eigenverbrauch und Resilienz stärken, wirft aber Fragen nach Kostenverteilung, Rohstoffen, Brandschutz und Netzdienlichkeit auf.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Heinz von Foerster
 
 Heinz von Foerster ist relevant, weil Gesellschaft nicht als triviale Maschine verstanden werden kann.
@@ -3916,6 +4652,8 @@ Die Heritage Foundation ist ein einflussreicher konservativer US-Thinktank.
 
 Die Heritage Foundation ist ein einflussreicher konservativer US-Thinktank.
 
+Als Beispielbegriff relevant, wenn konkrete Thinktank-Wirkung, Project 2025, Policy-Vorbereitung oder transnationale Einflussarchitektur behandelt werden. Nicht pauschal bewerten; Wirkung anhand konkreter Programme, Finanzierung, Personalstrategien, Transparenz und demokratischer Anschlussfähigkeit analysieren.
+
 ## Herkunftsframe
 
 Ein Herkunftsframe erklärt ein Problem primär über Herkunft, Migration, Religion oder Gruppenzugehörigkeit statt über konkrete Handlungen, Ursachen und Strukturen.
@@ -3927,6 +4665,8 @@ Ein Herkunftsframe entsteht, wenn aus einzelnen Erfahrungen, Einstellungen oder 
 Herkunftsnachweise dokumentieren die Herkunft von Strom aus erneuerbaren Quellen.
 
 Herkunftsnachweise dokumentieren die Herkunft von Strom aus erneuerbaren Quellen.
+
+Sie sind nicht identisch mit physischer Lieferung und brauchen Wirkungsprüfung.
 
 ## Herkunftsnachweis / HKN
 
@@ -3945,6 +4685,8 @@ Herkunftstransparenz verbindet Lieferketten, Produktdaten und Nachweise. Sie zei
 Herstellen schafft dauerhafte Dinge, Werkzeuge, Gebäude und eine gestaltete Welt.
 
 Herstellen schafft dauerhafte Dinge, Werkzeuge, Gebäude und eine gestaltete Welt.
+
+Relevant für Produktwirkung, Infrastruktur, gebaute Welt und Verantwortung für Dauerhaftigkeit.
 
 ## HFCs / Hydrofluorocarbons
 
@@ -3976,11 +4718,19 @@ Hochspannung ist eine höhere Spannungsebene für regionalen oder überregionale
 
 Hochspannung ist eine höhere Spannungsebene für regionalen oder überregionalen Stromtransport.
 
+Relevant für große Industrie, Erzeugung, Netzausbau und Umspannwerke.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Höchstspannung
 
 Höchstspannung ist die höchste Spannungsebene im Stromnetz für weiträumigen Transport.
 
 Höchstspannung ist die höchste Spannungsebene im Stromnetz für weiträumigen Transport.
+
+Sie prägt überregionale Versorgungssicherheit, Offshore-Anbindung und große Ausgleichsräume.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Hochwasserrisiko
 
@@ -4001,6 +4751,8 @@ Wirkungsökonomisch ist der Begriff wichtig, weil er zeigt, was klassische Optim
 Frühe Veränderungen, neue Risiken, Technologien, soziale Dynamiken und regulatorische Verschiebungen systematisch beobachten.
 
 Frühe Veränderungen, neue Risiken, Technologien, soziale Dynamiken und regulatorische Verschiebungen systematisch beobachten.
+
+I02 gehört zur Kategorie „Strategische Vorausschau und Entscheidungsintelligenz“. Verbindlicher Output: Priorisiertes Signalradar mit Quelle, Reife, möglicher Wirkung, Zeithorizont und Beobachtungsauftrag.
 
 ## Host-Wirkungsscore
 
@@ -4032,6 +4784,10 @@ Ein HPC-Charger ist ein DC-Schnelllader mit hoher Ladeleistung, der kurze Ladeze
 
 Ein HPC-Charger ist ein DC-Schnelllader mit hoher Ladeleistung, der kurze Ladezeiten ermöglichen soll.
 
+HPC ist ein Netzanschluss-, Mittelspannungs-, Trafo-, Lastmanagement- und Geschäftsmodellthema; Wirkung entsteht über Ladezugang, Netzbelastung, Speicher, Flächen, Netzentgelte und Nutzergruppen.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Human Rights Due Diligence / HRDD
 
 Human Rights Due Diligence bezeichnet die menschenrechtliche Sorgfalt, mit der Unternehmen Risiken identifizieren, vermeiden, mindern und darüber Rechenschaft geben.
@@ -4062,11 +4818,19 @@ Hungerbekämpfung zielt darauf, Hunger und Mangelernährung zu beenden und Ernä
 
 Hunger ist nicht nur ein Mangel an Kalorien. Er hängt mit Armut, Konflikten, Landwirtschaft, Klima, Preisen, Lieferketten, Wasser, Gesundheit und politischer Stabilität zusammen.
 
+## Hybride Einflussnahme und Kriegsführung
+
+Hybride Einflussnahme und Kriegsführung bezeichnet die koordinierte Nutzung verschiedener Mittel, um Sicherheit, Entscheidungsfähigkeit oder Vertrauen zu beeinflussen oder zu destabilisieren.
+
+Hybride Einflussnahme und Kriegsführung bezeichnet die koordinierte Nutzung verschiedener Mittel – etwa Desinformation, Cyberangriffe, wirtschaftlichen Druck, verdeckte Einflussnahme und gegebenenfalls militärische Mittel –, um Sicherheit, Entscheidungsfähigkeit oder Vertrauen zu beeinflussen oder zu destabilisieren. Der Begriff ist kein Synonym für Kritik, Protest, einen Irrtum, harte politische Auseinandersetzung oder internationale Zusammenarbeit. In der Fach- und Politikpraxis gibt es keine für alle Kontexte einheitliche abschließende Definition; deshalb müssen Akteure, Mittel, Belege, Rechtsrahmen und konkrete Schadensannahmen getrennt beschrieben werden.
+
 ## Hybridregime
 
 Ein Hybridregime verbindet demokratische und autoritäre Elemente, etwa Wahlen mit ungleichen Medien-, Rechts- oder Oppositionsbedingungen.
 
 Ein Hybridregime verbindet demokratische und autoritäre Elemente, etwa Wahlen mit ungleichen Medien-, Rechts- oder Oppositionsbedingungen.
+
+Gefährlich, weil demokratische Formen erhalten bleiben können, während demokratische Wirkung schrittweise erodiert.
 
 ## Hydrologischer Kreislauf
 
@@ -4079,6 +4843,10 @@ Der Wasserkreislauf verbindet Niederschlag, Verdunstung, Versickerung, Abfluss, 
 Hydrometallurgie nutzt wässrige chemische Verfahren zur Rückgewinnung von Metallen.
 
 Hydrometallurgie nutzt wässrige chemische Verfahren zur Rückgewinnung von Metallen.
+
+Kann höhere Ausbeuten ermöglichen, muss aber Chemikalien, Abwasser, Energie und Prozesssicherheit berücksichtigen.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Identitätsschutz
 
@@ -4110,6 +4878,8 @@ Illiberale Demokratie bezeichnet Systeme, die Wahlen haben, aber Rechtsstaat, Me
 
 Illiberale Demokratie bezeichnet Systeme, die Wahlen haben, aber Rechtsstaat, Medienfreiheit, Minderheitenschutz oder Gewaltenteilung schwächen.
 
+Illiberale Demokratie ist ein demokratisches Wirkungsrisiko, weil sie demokratische Form mit autoritärer Wirkung verbinden kann.
+
 ## ILO
 
 Die ILO ist die Internationale Arbeitsorganisation der Vereinten Nationen.
@@ -4139,6 +4909,8 @@ Immobilien sind Grundstücke und Gebäude; ihre Wirkung umfasst unter anderem Wo
 Impact & Benefits Realization verfolgt die Kette von Deliverables über Nutzung, Verhalten und Capabilities zu Benefits, Netto-Wirkung und Verstetigung.
 
 Impact & Benefits Realization verfolgt die Kette von Deliverables über Nutzung, Verhalten und Capabilities zu Benefits, Netto-Wirkung und Verstetigung.
+
+Sie verankert Benefit- und Impact-Owner, Zeitbezug, Handover, KII und Review im Portfolio- und Deliverysystem.
 
 ## Impact Fit
 
@@ -4176,6 +4948,8 @@ Die Kette von Deliverables über Nutzung und Benefits bis zur positiven Netto-Wi
 
 Die Kette von Deliverables über Nutzung und Benefits bis zur positiven Netto-Wirkung explizit und prüfbar machen.
 
+N06 gehört zur Kategorie „Portfolio, Programme, Delivery und Impact & Benefits Realization“. Verbindlicher Output: Benefit-/Impact-Map mit Annahmen, Ownern, Messpunkten, Zeitverzug, Nebenwirkungen und Nachhaltigkeitsplan.
+
 ## Impact-Controlling
 
 Impact-Controlling plant, misst, bewertet und korrigiert Wirkung mit KII, Scorecards, Datenqualität, NWI und T-SROI.
@@ -4196,9 +4970,9 @@ Impact-Marketing ist nicht Werbung über gute Absichten, sondern die verantwortl
 
 ## Impact-of-Investment / IOI
 
-Impact-of-Investment (IOI) misst die bewertete positive Netto-Wirkung pro investiertem Kapital. Er ist die investitionsbezogene Variante eines wirkungsökonomischen Wirkungsgrads.
+Impact-of-Investment (IOI) misst den monetär bewerteten, kausal zugerechneten direkten Nettonutzen je diskontiertem Euro an investiertem Kapital. Er ist eine investitionsbezogene Kennzahl und kein Ersatz für die Schutzprüfung.
 
-Impact-of-Investment (IOI) ist eine investitionsbezogene Kennzahl der Wirkungsökonomie. Formelhaft setzt er die bewertete positive Netto-Wirkung ins Verhältnis zur Investitionssumme. Sein Nenner ist investiertes Kapital, unabhängig davon, ob es aus privater oder öffentlicher Quelle stammt. Damit unterscheidet sich IOI vom allgemeineren wirkungsökonomischen Wirkungsgrad, dessen Einsatz auch Zeit, Energie, Material oder institutionelle Kapazität sein kann, und vom fiskalischen Wirkungsgrad, der ausdrücklich einen öffentlichen Euro betrachtet.
+Impact-of-Investment (IOI) ist eine investitionsbezogene Euro-zu-Euro-Kennzahl der Wirkungsökonomie. Er setzt den Barwert eines kausal zugerechneten direkten Nettonutzens in Euro ins Verhältnis zum Barwert des investierten Kapitals und der inkrementellen Kosten in Euro derselben Preisbasis. Ein NWI-Punktwert, ein Index oder eine qualitative Wirkungsbilanz kann die vorgelagerte Schutzprüfung und Einordnung tragen, darf aber nicht ohne gesonderte Monetarisierung durch Euro geteilt und als dimensionsloser IOI ausgegeben werden. Damit unterscheidet sich IOI vom allgemeineren wirkungsökonomischen Wirkungsgrad, dessen Einheit jeweils ausdrücklich zu benennen ist, und vom fiskalischen Wirkungsgrad, der ausschließlich öffentliche Mittel betrachtet.
 
 ## Impact-Washing
 
@@ -4218,6 +4992,8 @@ Industrielle Dekonstruktion zerlegt Produkte, Gebäude oder Anlagen systematisch
 
 Industrielle Dekonstruktion zerlegt Produkte, Gebäude oder Anlagen systematisch, um Komponenten und Materialien wiederzuverwenden.
 
+Wichtig für Bau, Produktion, Materialpass und Urban Mining.
+
 ## Industriestrom
 
 Industriestrom ist elektrische Energie für industrielle Prozesse; entscheidend sind Preis, Verfügbarkeit, Netzbezug, Emissionen und Effizienz der Verwendung.
@@ -4229,6 +5005,8 @@ Industriestrom ist elektrische Energie für industrielle Prozesse; entscheidend 
 Inertia beschreibt Trägheit im Stromsystem, klassisch durch rotierende Massen synchroner Maschinen.
 
 Inertia beschreibt Trägheit im Stromsystem, klassisch durch rotierende Massen synchroner Maschinen.
+
+Relevant beim Übergang von thermischen Kraftwerken zu inverterbasierten Erzeugern.
 
 ## Inflationsgrenze
 
@@ -4242,17 +5020,29 @@ Informationsasymmetrie liegt vor, wenn eine Seite einer Transaktion mehr oder be
 
 Informationsasymmetrie liegt vor, wenn eine Seite einer Transaktion mehr oder bessere Informationen hat als die andere.
 
+Zentral für Produktpässe, Scorecards, Wirkungslabel, Finanzmärkte, Medien und Gesundheit.
+
 ## Informationsintegrität
 
 Informationsintegrität beschreibt die Verlässlichkeit, Nachvollziehbarkeit und Manipulationsresistenz öffentlicher Information.
 
 Informationsintegrität beschreibt die Verlässlichkeit, Nachvollziehbarkeit und Manipulationsresistenz öffentlicher Information.
 
+Informationsintegrität schützt Demokratie vor Desinformation, Propaganda, Deepfakes und Vertrauenszerstörung.
+
+## Informationssouveränität
+
+Informationssouveränität ist der geschützte Spielraum, Informationen kritisch zu nutzen und über die Preisgabe eigener Daten mitzuentscheiden.
+
+Informationssouveränität ist weder der Besitz einer einzigen Wahrheit noch das Recht, andere Informationen zu unterdrücken. Sie verbindet die Fähigkeit zur informierten Entscheidung mit Rahmenbedingungen, die diese Entscheidung überhaupt ermöglichen: zugängliche Informationen, nachvollziehbare Quellen, Datenschutz, Beschwerdewege und eine vielfältige Öffentlichkeit. Die informationelle Selbstbestimmung ist ihr rechtlicher Kern für personenbezogene Daten; Informationssouveränität ist weiter und umfasst auch Orientierung in Informationsräumen.
+
 ## Informationsüberlastung
 
 Informationsüberlastung entsteht, wenn Menschen mehr Informationen erhalten, als sie sinnvoll verarbeiten können.
 
 Informationsüberlastung entsteht, wenn Menschen mehr Informationen erhalten, als sie sinnvoll verarbeiten können.
+
+Mehr Daten erzeugen nicht automatisch mehr Wirkung; ohne Orientierung, Filter, Vertrauen und Handlungsmöglichkeit kann Überlastung Wirkung blockieren.
 
 ## Informelles Wissen
 
@@ -4281,6 +5071,8 @@ Infrastrukturelle Staatsschuld entsteht durch marode Brücken, Netze, Schulen, K
 Jede Initiative mit klarem Problem, Output, Outcome, Wirkung, Grenzen, Ownern und Lernpflicht starten.
 
 Jede Initiative mit klarem Problem, Output, Outcome, Wirkung, Grenzen, Ownern und Lernpflicht starten.
+
+N03 gehört zur Kategorie „Portfolio, Programme, Delivery und Impact & Benefits Realization“. Verbindlicher Output: Wirkungsvertrag mit Mandat, Scope, Deliverables, Outcomes, Benefits, KII, Capabilities, Schutz und Gates.
 
 ## Innere Loops
 
@@ -4322,11 +5114,15 @@ Institutioneller Rassismus beschreibt rassistische Benachteiligung durch Verfahr
 
 Institutioneller Rassismus beschreibt rassistische Benachteiligung durch Verfahren, Routinen oder Entscheidungen von Institutionen.
 
+Wirkungsökonomisch relevant für Verwaltung, Polizei, Bildung, Gesundheit, Arbeit, Wohnen und Datenqualität.
+
 ## Institutionendelegitimierung
 
 Institutionendelegitimierung beschreibt die pauschale Abwertung demokratischer Institutionen als grundsätzlich feindlich, korrupt oder illegitim.
 
 Institutionendelegitimierung beschreibt die pauschale Abwertung demokratischer Institutionen als grundsätzlich feindlich, korrupt oder illegitim.
+
+Sie beschädigt Korrekturwege, Vertrauen und gemeinsame Wirklichkeit.
 
 ## Institutionenkritik
 
@@ -4334,11 +5130,15 @@ Institutionenkritik richtet sich gegen konkrete Institutionen, ihre Fehler, Verf
 
 Institutionenkritik richtet sich gegen konkrete Institutionen, ihre Fehler, Verfahren oder Machtstrukturen.
 
+Legitim und notwendig, wenn sie konkret, prüfbar und korrigierbar bleibt.
+
 ## Institutionenökonomik
 
 Institutionenökonomik fragt, wie formelle und informelle Regeln, Eigentumsrechte, Transaktionskosten, Vertrauen, Verträge und Organisationen wirtschaftliches Verhalten prägen.
 
 Institutionenökonomik fragt, wie formelle und informelle Regeln, Eigentumsrechte, Transaktionskosten, Vertrauen, Verträge und Organisationen wirtschaftliches Verhalten prägen.
+
+Die WÖk ist institutionell anschlussfähig, weil Wirkung nicht nur aus individuellen Entscheidungen entsteht, sondern aus Regeln, Daten, Standards, Anreizen, Machtverteilung und Rückkopplungen. Wirkungsarchitektur ist eine institutionelle Ordnung.
 
 ## Integration als Infrastruktur
 
@@ -4352,11 +5152,15 @@ Integrierte Assurance koordiniert operative Kontrollen, Second Line, interne Rev
 
 Integrierte Assurance koordiniert operative Kontrollen, Second Line, interne Revision und externe Prüfung entlang gemeinsamer Wirkungsrisiken und Nachweise.
 
+Sie macht Kontrollabdeckung, Unabhängigkeit, Lücken, Prüfpfade und Verbesserungsmaßnahmen über das Managementsystem hinweg sichtbar.
+
 ## Integrierte Assurance Map und Three Lines
 
 Management, spezialisierte Challenge, interne Revision und externe Assurance auf wesentliche Wirkungsrisiken ausrichten.
 
 Management, spezialisierte Challenge, interne Revision und externe Assurance auf wesentliche Wirkungsrisiken ausrichten.
+
+P09 gehört zur Kategorie „Qualität, operative Resilienz, Kontrollen und integrierte Assurance“. Verbindlicher Output: Assurance Map mit Risiken, Controls, Assurance-Anbietern, Tiefe, Frequenz, Lücken und Reliance.
 
 ## Interdependenz / wechselseitige Abhängigkeit
 
@@ -4364,11 +5168,23 @@ Interdependenz bedeutet, dass Elemente eines Systems sich gegenseitig beeinfluss
 
 Interdependenz bedeutet, dass Elemente eines Systems sich gegenseitig beeinflussen und nicht isoliert verstanden werden können.
 
+Für die WÖk ist Interdependenz zentral: Mensch, Planet und Demokratie sind gekoppelte Wirkungsräume; negative Wirkungen in einem Bereich können Stabilität in anderen Bereichen untergraben.
+
+Als normalen menschlichen oder systemischen Verarbeitungsmechanismus beschreiben, nicht als Abwertung von Personen.
+
 ## Interdependenz- und Abhängigkeitsmatrix
 
 Wechselwirkungen zwischen Wirkungsfeldern, Akteuren, Ressourcen oder Systemzuständen strukturiert vergleichen.
 
 Wechselwirkungen zwischen Wirkungsfeldern, Akteuren, Ressourcen oder Systemzuständen strukturiert vergleichen.
+
+B06 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Verbindlicher Output: Quadratische Matrix mit Richtung, Stärke, Art, Zeit und Evidenz der Abhängigkeiten.
+
+## Interdisziplinarität
+
+Interdisziplinarität ist die Zusammenarbeit verschiedener Fachgebiete an einer gemeinsamen Frage, bei der Wissen und Methoden wirklich zusammengeführt werden.
+
+Interdisziplinarität ersetzt keine Fachkompetenz. Gute Zusammenarbeit legt offen, welche Frage welches Fach beantwortet, wo Begriffe oder Messgrößen nicht zusammenpassen und wie Konflikte zwischen Erkenntnissen bearbeitet werden. Sie ist besonders wichtig bei Problemen, deren Ursachen und Folgen zugleich soziale, ökologische, technische, rechtliche und wirtschaftliche Seiten haben.
 
 ## Interessenkonflikt
 
@@ -4376,11 +5192,15 @@ Ein Interessenkonflikt liegt vor, wenn private, institutionelle oder finanzielle
 
 Ein Interessenkonflikt liegt vor, wenn private, institutionelle oder finanzielle Interessen eine öffentliche, fachliche oder treuhänderische Entscheidung beeinflussen können.
 
+Interessenkonflikte sind nicht automatisch Fehlverhalten, müssen aber offengelegt, begrenzt und kontrolliert werden.
+
 ## Interessenvertretung
 
 Interessenvertretung bedeutet, Anliegen, Perspektiven oder Betroffenheiten gegenüber Politik, Öffentlichkeit oder Institutionen sichtbar zu machen.
 
 Interessenvertretung bedeutet, Anliegen, Perspektiven oder Betroffenheiten gegenüber Politik, Öffentlichkeit oder Institutionen sichtbar zu machen.
+
+Legitim, wenn sichtbar, nachvollziehbar und plural rückgekoppelt.
 
 ## Intermittent Reinforcement
 
@@ -4416,11 +5236,15 @@ Intertemporale Freiheit beschreibt die Freiheit künftiger Generationen, die dur
 
 Intertemporale Freiheit beschreibt die Freiheit künftiger Generationen, die durch heutige Entscheidungen nicht unverhältnismäßig eingeschränkt werden darf.
 
+Zentral für Klima, Schulden, Infrastruktur, Ressourcen und Wirkungsrisiken.
+
 ## Intertemporale Freiheitssicherung
 
 Intertemporale Freiheitssicherung beschreibt den Gedanken, dass heutige Politik künftige Freiheit nicht dadurch entwerten darf, dass sie notwendige Lasten, Risiken oder Einschränkungen einseitig in die Zukunft verschiebt.
 
 Intertemporale Freiheitssicherung beschreibt den Gedanken, dass heutige Politik künftige Freiheit nicht dadurch entwerten darf, dass sie notwendige Lasten, Risiken oder Einschränkungen einseitig in die Zukunft verschiebt.
+
+Der Begriff ist für die WÖk wichtig, weil Wirkung nie nur Gegenwartswirkung ist. Unterlassene Klimapolitik, zerstörte Böden, Infrastrukturverfall, Desinformation oder Schulden durch Reparaturpolitik können künftige Handlungsspielräume massiv verengen.
 
 ## Invention
 
@@ -4492,6 +5316,8 @@ Pragmatismus versteht Wahrheit, Lernen und Demokratie stark über Folgen, Erfahr
 
 Pragmatismus versteht Wahrheit, Lernen und Demokratie stark über Folgen, Erfahrung, Experiment und Korrektur.
 
+Für die WÖk ist Dewey anschlussfähig, weil Wirkungssteuerung lernend, experimentell, öffentlich prüfbar und korrigierbar sein muss.
+
 ## John Maynard Keynes
 
 John Maynard Keynes ist relevant für makroökonomische Stabilisierung unter Unsicherheit.
@@ -4516,11 +5342,15 @@ Der Kannibalisierungseffekt beschreibt sinkende Markterlöse, wenn viele Anlagen
 
 Der Kannibalisierungseffekt beschreibt sinkende Markterlöse, wenn viele Anlagen gleichzeitig einspeisen und Preise drücken.
 
+Relevant für PV, Wind, Speicher und Strommarktdesign.
+
 ## Kapazitäts-, Ressourcen- und kritischer-Pfad-Plan
 
 Portfolioambition mit realer Kapazität, knappen Skills, Abhängigkeiten und Betriebsbelastung abgleichen.
 
 Portfolioambition mit realer Kapazität, knappen Skills, Abhängigkeiten und Betriebsbelastung abgleichen.
+
+N05 gehört zur Kategorie „Portfolio, Programme, Delivery und Impact & Benefits Realization“. Verbindlicher Output: Ressourcen- und Kapazitätsplan mit Engpässen, kritischem Pfad, Reserven und Repriorisierungsentscheidungen.
 
 ## Kapazitätsmarkt
 
@@ -4528,11 +5358,17 @@ Ein Kapazitätsmarkt vergütet die Bereitstellung gesicherter Leistung unabhäng
 
 Ein Kapazitätsmarkt vergütet die Bereitstellung gesicherter Leistung unabhängig von tatsächlicher Stromerzeugung.
 
+Kann Versorgungssicherheit unterstützen, birgt aber Fehlanreize, fossilen Lock-in oder Überkapazität.
+
 ## Kapazitätsreserve
 
 Eine Kapazitätsreserve hält gesicherte Leistung außerhalb des regulären Strommarkts für besondere Knappheitssituationen vor.
 
 Eine Kapazitätsreserve hält gesicherte Leistung außerhalb des regulären Strommarkts für besondere Knappheitssituationen vor.
+
+Sie kann Versorgungssicherheit stärken, muss aber Kosten, Emissionen, Einsatzlogik und Lock-in-Risiken offenlegen.
+
+Energie als Wirkungsinfrastruktur behandeln: Erzeugung, Netze, Speicher, Preise, Resilienz, Teilhabe und Folgewirkungen zusammen bewerten.
 
 ## Kapital
 
@@ -4606,6 +5442,8 @@ Kaskadennutzung nutzt Material oder Produkte mehrstufig über verschiedene Anwen
 
 Kaskadennutzung nutzt Material oder Produkte mehrstufig über verschiedene Anwendungen hinweg.
 
+Wichtig im biologischen Kreislauf, etwa bei Biomasse, Holz oder Fasern.
+
 ## Kausalität und Zurechnung
 
 Kausalität und Zurechnung unterscheiden zwischen tatsächlichen Ursachen, Beiträgen und der fairen Verantwortungszuordnung für beobachtete Folgen.
@@ -4618,11 +5456,15 @@ Verstärkende und ausgleichende Rückkopplungen, Verzögerungen und nichtlineare
 
 Verstärkende und ausgleichende Rückkopplungen, Verzögerungen und nichtlineare Dynamiken sichtbar machen.
 
+B04 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Verbindlicher Output: Causal Loop Diagram mit Variablen, Wirkungsrichtung, Polarität, Schleifen und Zeitverzögerungen.
+
 ## Kernenergie
 
 Kernenergie nutzt Energie aus Kernspaltung zur Erzeugung von Wärme und daraus Strom.
 
 Kernenergie nutzt Energie aus Kernspaltung zur Erzeugung von Wärme und daraus Strom.
+
+Geringe direkte CO2-Emissionen im Betrieb, aber besondere Fragen zu Bauzeit, Kapitalbindung, Sicherheit, Endlagerung, Rückbau, Versicherung, Kühlwasser, Akzeptanz und Opportunitätskosten.
 
 ## Kernkraft-Neubau
 
@@ -4630,11 +5472,15 @@ Planung, Genehmigung, Finanzierung und Errichtung neuer Kernkraftwerke.
 
 Planung, Genehmigung, Finanzierung und Errichtung neuer Kernkraftwerke.
 
+Im Kernenergie-Dossier nur mit klarer Bilanzgrenze, Datenstand und Alternativenvergleich verwenden.
+
 ## Key Impact Controls und Kontrollbibliothek
 
 Wesentliche Kontrollen für Wirkungsgrenzen, Daten, KI, Prozesse und Governance standardisieren und betreiben.
 
 Wesentliche Kontrollen für Wirkungsgrenzen, Daten, KI, Prozesse und Governance standardisieren und betreiben.
+
+P08 gehört zur Kategorie „Qualität, operative Resilienz, Kontrollen und integrierte Assurance“. Verbindlicher Output: Control Library mit Risiko/Wirkung, Ziel, Design, Owner, Frequenz, Evidenz, Test und Wirksamkeitsstatus.
 
 ## Key Impact Indicator / KII
 
@@ -4648,6 +5494,8 @@ Keynesianismus betont die Rolle staatlicher Nachfrage-, Investitions- und Stabil
 
 Keynesianismus betont die Rolle staatlicher Nachfrage-, Investitions- und Stabilisierungspolitik, besonders in Krisen. Märkte gelten nicht automatisch als stabil oder vollbeschäftigend.
 
+Die WÖk übernimmt die Einsicht, dass der Staat makroökonomisch stabilisieren muss. Sie ergänzt: Stabilisierung darf nicht nur Nachfrage und Beschäftigung sichern, sondern muss Wirkungsrichtung, Resilienz, Prävention und planetare Grenzen einbeziehen.
+
 ## KI und Arbeit
 
 KI und Arbeit bezeichnet die Veränderung von Tätigkeiten, Qualifikationen, Machtverhältnissen und Einkommenslogiken durch künstliche Intelligenz.
@@ -4659,6 +5507,8 @@ KI und Arbeit beschreibt die Wirkungen künstlicher Intelligenz auf Tätigkeiten
 Fehler, Missbrauch, Kontrollverlust und schädliche Wirkung schnell begrenzen und Systeme geordnet stilllegen.
 
 Fehler, Missbrauch, Kontrollverlust und schädliche Wirkung schnell begrenzen und Systeme geordnet stilllegen.
+
+O08 gehört zur Kategorie „Daten, Technologie, KI und agentische Systeme“. Verbindlicher Output: Incident- und Exit-Playbook mit Erkennung, Triage, Eindämmung, Abschaltung, Kommunikation, Redress, Recovery und Lernen.
 
 ## KI-Governance
 
@@ -4672,11 +5522,15 @@ Modellentwicklung, Freigabe, Betrieb, Änderung und menschliche Verantwortung du
 
 Modellentwicklung, Freigabe, Betrieb, Änderung und menschliche Verantwortung durchgängig steuern.
 
+O06 gehört zur Kategorie „Daten, Technologie, KI und agentische Systeme“. Verbindlicher Output: Lifecycle Governance mit Rollen, Tests, Validierung, Schwellen, Overrides, Monitoring, Changes und Decommissioning.
+
 ## KI-System-Wirkungsfolgenabschätzung
 
 Voraussichtliche Auswirkungen eines KI-Systems auf Menschen, Gruppen, Organisation, Planet und Demokratie über den Lebenszyklus prüfen.
 
 Voraussichtliche Auswirkungen eines KI-Systems auf Menschen, Gruppen, Organisation, Planet und Demokratie über den Lebenszyklus prüfen.
+
+O05 gehört zur Kategorie „Daten, Technologie, KI und agentische Systeme“. Verbindlicher Output: AI Impact Assessment mit Kontext, Betroffenen, Nutzen, Risiken, Daten, Bias, Rechte, Kontrollen, Monitoring und Entscheidung.
 
 ## KII
 
@@ -4689,6 +5543,8 @@ KII ist die gebräuchliche Abkürzung für Key Impact Indicator. Ein KII macht e
 Wenige führende Wirkungskennzahlen auswählen, die Managemententscheidungen direkt steuern und nicht nur berichten.
 
 Wenige führende Wirkungskennzahlen auswählen, die Managemententscheidungen direkt steuern und nicht nur berichten.
+
+D04 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Verbindlicher Output: KII-Set mit Zielwerten, Schwellen, Verantwortlichen, Gate-Verknüpfung und Eskalationsregeln.
 
 ## Kinderarbeit / Zwangsarbeit
 
@@ -4714,17 +5570,23 @@ Kipppunkte können in Klima, Biodiversität, Finanzmärkten, Gesundheitssystemen
 
 Ökologische Kipppunkte sind Schwellen in Klima- oder Ökosystemen, bei deren Überschreiten selbstverstärkende Prozesse eintreten können, die das System in einen neuen Zustand bringen.
 
+Für die WÖk sind ökologische Kipppunkte zentrale Wirkungsgrenzen. Je näher ein System an Kipppunkte kommt, desto weniger reicht lineare Optimierung. Wirkungspolitik muss Vorsorge, Emissionsminderung, Biodiversitätsschutz, Wasserresilienz und Anpassung frühzeitig steuern.
+
 ## Klassischer Liberalismus
 
 Klassischer Liberalismus betont individuelle Freiheit, Eigentum, Vertragsfreiheit, freie Märkte und begrenzten Staat.
 
 Klassischer Liberalismus betont individuelle Freiheit, Eigentum, Vertragsfreiheit, freie Märkte und begrenzten Staat.
 
+Anschlussfähig bei Freiheit und Rechtsstaat, unvollständig bei Klima, Externalitäten, Datenmacht, Plattformmacht und demokratischer Resonanz.
+
 ## Kleptokratie
 
 Kleptokratie beschreibt Herrschaft, in der politische Macht systematisch zur privaten Bereicherung genutzt wird.
 
 Kleptokratie beschreibt Herrschaft, in der politische Macht systematisch zur privaten Bereicherung genutzt wird.
+
+Schädigt Vertrauen, öffentliche Infrastruktur, Rechtsstaatlichkeit und Verteilungsgerechtigkeit.
 
 ## Klima- und Emissionsstandards
 
@@ -4744,11 +5606,17 @@ Der Klimabeschluss des Bundesverfassungsgerichts vom 24. März 2021 ist ein wich
 
 Der Klimabeschluss des Bundesverfassungsgerichts vom 24. März 2021 ist ein wichtiger verfassungsrechtlicher Bezugspunkt für Klimaschutz, Art. 20a GG, Grundrechte und die Verteilung von Freiheitslasten über die Zeit.
 
+Für die Wirkungsökonomie zeigt der Klimabeschluss, dass ökologische Untätigkeit rechtlich relevante Zukunftslasten erzeugen kann. Wirkung, Unterlassen und Zeitdimension werden dadurch für Rechtsstaat und Gesetzgebung besonders anschlussfähig.
+
 ## Klimafolgeschäden
 
 Klimafolgeschäden sind Schäden, Kosten und Verluste, die durch Klimawandel entstehen: Hitzetote, Ernteausfälle, Flutschäden, Waldschäden, Gesundheitskosten, Infrastrukturschäden, Versicherungsrisiken, Produktivitätsverluste und soziale Destabilisierung.
 
 Klimafolgeschäden sind Schäden, Kosten und Verluste, die durch Klimawandel entstehen: Hitzetote, Ernteausfälle, Flutschäden, Waldschäden, Gesundheitskosten, Infrastrukturschäden, Versicherungsrisiken, Produktivitätsverluste und soziale Destabilisierung.
+
+In der WÖk sind Klimafolgeschäden keine Zukunftsabstraktion, sondern bereits eingetretene und erwartbare negative Wirkung. Sie zeigen, dass spätes Handeln teurer wird: Je länger Emissionen, Flächenversiegelung, Wasserstress und Anpassungsdefizite fortbestehen, desto mehr Optionen gehen verloren. Frühzeitige Minderung und Anpassung sparen nicht nur Geld, sondern erhalten Handlungsmöglichkeiten.
+
+Klimafolgeschäden sind reale Folgewirkungen externalisierter Emissionen und zentrale Beispiele für Wirkung, die in heutigen Preisen nicht ausreichend sichtbar ist.
 
 ## Klimagerechtigkeit
 
@@ -4767,6 +5635,10 @@ Die WÖk prüft, ob Klimaneutralitätsangaben echte Reduktion, hochwertige Daten
 Klimarisiko bezeichnet physische, transitionale, soziale, finanzielle und politische Risiken, die aus Klimawandel oder Klimaschutz entstehen. Dazu gehören Extremwetter, Wasserstress, Lieferkettenstörungen, Regulierung, Stranded Assets und Versicherbarkeit.
 
 Klimarisiko bezeichnet physische, transitionale, soziale, finanzielle und politische Risiken, die aus Klimawandel oder Klimaschutz entstehen. Dazu gehören Extremwetter, Wasserstress, Lieferkettenstörungen, Regulierung, Stranded Assets und Versicherbarkeit.
+
+Die WÖk verbindet Klimarisiko mit Wirkungsrisiko. Es betrifft Unternehmen, Kommunen, Kapitalmärkte, Gesundheit, Migration, Sicherheit und Demokratie. Klimarisiko muss in Kapital, Preise, Steuern, Beschaffung und Infrastrukturplanung rückgekoppelt werden.
+
+Klimarisiko verbindet ökologische Wirkung, Kapitalrisiko, Versicherung, Infrastruktur, Lieferketten und soziale Verwundbarkeit.
 
 ## Klimaschutz / Mitigation
 
@@ -4792,11 +5664,15 @@ Knappheit beschreibt, dass Ressourcen, Zeit, Aufmerksamkeit oder Güter begrenzt
 
 Knappheit beschreibt, dass Ressourcen, Zeit, Aufmerksamkeit oder Güter begrenzt sind.
 
+Die WÖk erweitert Knappheit: knapp sind auch planetare Grenzen, Vertrauen, Aufmerksamkeit, Gesundheit, Pflegezeit, Biodiversität und demokratische Stabilität.
+
 ## Kognitive Belastung
 
 Kognitive Belastung beschreibt den geistigen Aufwand, um Informationen zu verarbeiten, Entscheidungen zu treffen oder Komplexität zu bewältigen.
 
 Kognitive Belastung beschreibt den geistigen Aufwand, um Informationen zu verarbeiten, Entscheidungen zu treffen oder Komplexität zu bewältigen.
+
+Hohe Belastung kann Reaktanz, Vereinfachung, Scheinentlastung oder Entscheidungsvermeidung begünstigen.
 
 ## Kognitive Dissonanz
 
@@ -4810,6 +5686,8 @@ Kognitive Dissonanz beschreibt die psychische Spannung, die entsteht, wenn Mensc
 
 Überforderung, Koordinationslast und diffuse Verantwortungen als Risiko für Qualität und Wirkung sichtbar machen.
 
+L05 gehört zur Kategorie „Product Operating Model, Teams, Plattformen und Ökosysteme“. Verbindlicher Output: Heatmap kognitiver Last mit Aufgabenarten, Abhängigkeiten, Teaminteraktionen und Entlastungsoptionen.
+
 ## Kohärenz
 
 Kohärenz beschreibt das Erleben, dass Wahrnehmungen, Erwartungen, Erfahrungen und Handlungsoptionen sinnvoll zusammenpassen.
@@ -4822,11 +5700,17 @@ Ein Kohlekraftwerk erzeugt Strom durch Verbrennung von Kohle.
 
 Ein Kohlekraftwerk erzeugt Strom durch Verbrennung von Kohle.
 
+Hohe CO2- und Luftschadstoffwirkung, relevante Gesundheits-, Klima- und Strukturfolgen.
+
 ## Kommunale Energie
 
 Kommunale Energie beschreibt Energieversorgung, Erzeugung, Netze, Wärmeplanung, Speicher und Beteiligung auf kommunaler Ebene.
 
 Kommunale Energie beschreibt Energieversorgung, Erzeugung, Netze, Wärmeplanung, Speicher und Beteiligung auf kommunaler Ebene.
+
+Kommunen sind zentrale Wirkungsorte, weil Energie dort in Wohnen, Mobilität, Daseinsvorsorge, Stadtwerken, Quartieren und sozialer Gerechtigkeit konkret wird.
+
+Energie als Wirkungsinfrastruktur behandeln: Erzeugung, Netze, Speicher, Preise, Resilienz, Teilhabe und Folgewirkungen zusammen bewerten.
 
 ## Kommunale Integrationskapazität
 
@@ -4854,9 +5738,9 @@ Kommunikation überträgt nicht nur Informationen. Sprache, Bilder, Frames, Tona
 
 ## Kommunikative Souveränität
 
-Fähigkeit, in einer Debatte ruhig zu bleiben, den Frame zu erkennen, den Mechanismus sichtbar zu machen und zur Wirkungsfrage zurückzuführen.
+Kommunikative Souveränität ist die Fähigkeit, in einer strittigen Situation Person, Behauptung, Beleg, Unsicherheit und Folgen getrennt und ruhig besprechbar zu halten.
 
-Fähigkeit, in einer Debatte ruhig zu bleiben, den Frame zu erkennen, den Mechanismus sichtbar zu machen und zur Wirkungsfrage zurückzuführen.
+Kommunikative Souveränität bezeichnet eine Gesprächskompetenz: Sie erkennt Deutungsrahmen, vermeidet falsche Alternativen, benennt Belege und Unsicherheit und führt zur prüfbaren Sach- und Wirkungsfrage zurück. Sie setzt keine Dominanz voraus und ist kein Mittel, andere Menschen zu steuern. Dazu gehört, eine Person nicht mit ihrer Behauptung gleichzusetzen, nachfragbar zu bleiben und gegebenenfalls eine offene Frage zu formulieren statt einen Scheinabschluss zu liefern. Ob sie Vertrauen, Verständnis oder Entscheidungen verändert, muss für den jeweiligen Kontext gesondert geprüft werden.
 
 ## Kommunismus
 
@@ -4870,11 +5754,15 @@ Kommunistischer Staat ist ein ungenauer Begriff. Historisch gemeint sind meist S
 
 Kommunistischer Staat ist ein ungenauer Begriff. Historisch gemeint sind meist Staaten mit kommunistischer oder marxistisch-leninistischer Regierung und starker Staats- oder Parteizentralisierung.
 
+Eigentumsform oder Parteibezeichnung ersetzen keine Wirkungsprüfung. Besser ist: kommunistisch regierter Staat, marxistisch-leninistischer Einparteienstaat oder Staatssozialismus.
+
 ## Komplementarität
 
 Komplementarität beschreibt, dass bestimmte Eigenschaften eines Quantensystems nicht gleichzeitig in derselben klassischen Weise vollständig bestimmbar oder darstellbar sind.
 
 Komplementarität beschreibt, dass bestimmte Eigenschaften eines Quantensystems nicht gleichzeitig in derselben klassischen Weise vollständig bestimmbar oder darstellbar sind.
+
+Für die WÖk ist Komplementarität hilfreich, um Zielkonflikte und Perspektivgrenzen zu erklären: Manche Wirkungsdimensionen lassen sich nicht in einer einzigen Kennzahl vollständig ausdrücken. Klima, soziale Gerechtigkeit, Demokratie, Gesundheit und Freiheit müssen gemeinsam, aber nicht naiv additiv gelesen werden.
 
 ## Komplexitätsmanagement
 
@@ -4888,11 +5776,15 @@ Komponentenrückgewinnung baut Bauteile gezielt aus, prüft sie und nutzt sie er
 
 Komponentenrückgewinnung baut Bauteile gezielt aus, prüft sie und nutzt sie erneut.
 
+Sie erhält Funktion statt nur Material.
+
 ## Kompostierung
 
 Kompostierung ist der biologische Abbau organischer Materialien zu Kompost.
 
 Kompostierung ist der biologische Abbau organischer Materialien zu Kompost.
+
+Nur positiv, wenn Materialien schadstofffrei und für biologische Rückführung geeignet sind.
 
 ## Kondratieff-Zyklus
 
@@ -4912,6 +5804,8 @@ Konservativ bezeichnet eine politische Orientierung, die Bewahrung, Kontinuität
 
 Konservativ bezeichnet eine politische Orientierung, die Bewahrung, Kontinuität, Sicherheit, gewachsene Ordnung und vorsichtige Veränderung betont.
 
+Nicht automatisch rückständig. Konservativ kann wirkungspositiv sein, wenn es tragende Bedingungen schützt: Demokratie, Rechtsstaat, Natur, soziale Stabilität, Vertrauen und Institutionen. Problematisch wird es, wenn notwendige Korrektur blockiert und Schäden konserviert werden.
+
 ## Konservative Annahme
 
 Eine konservative Annahme ist eine vorsichtige Schätzung, die bei fehlenden oder unsicheren Daten keinen ungerechtfertigten Vorteil erzeugt.
@@ -4930,6 +5824,8 @@ Konstruktivismus bezeichnet erkenntnistheoretische Ansätze, nach denen Wirklich
 
 Konstruktivismus bezeichnet erkenntnistheoretische Ansätze, nach denen Wirklichkeit nicht einfach objektiv abgebildet, sondern durch Beobachtung, Sprache, Erfahrung, Unterscheidungen und soziale Kontexte mitkonstruiert wird.
 
+Für die Wirkungsökonomie ist wichtig: Wirkung ist reale Zustandsveränderung, aber ihre Beobachtung, Zurechnung und Bewertung sind perspektivisch, datenabhängig und fehlbar.
+
 ## Konsumbilanz
 
 Eine Konsumbilanz ordnet die Folgen des Konsums nach Produkten, Ressourcen, Emissionen, Arbeitsbedingungen und weiteren Wirkungsfeldern ein.
@@ -4941,6 +5837,8 @@ Eine Konsumbilanz ordnet die Folgen des Konsums nach Produkten, Ressourcen, Emis
 Konsumentensouveränität beschreibt die Vorstellung, dass Konsument:innen durch Nachfrage bestimmen, was produziert wird.
 
 Konsumentensouveränität beschreibt die Vorstellung, dass Konsument:innen durch Nachfrage bestimmen, was produziert wird.
+
+Nur realistisch, wenn Informationen, Preise, Alternativen, Kaufkraft und Wirkungsdaten vorhanden sind. Sie ist verzerrt, wenn schlechte Wirkung billiger ist.
 
 ## Kontakthypothese
 
@@ -4960,11 +5858,15 @@ PDCA und systemisches Lernen auf Wirkung, Prozess, Capability und Governance anw
 
 PDCA und systemisches Lernen auf Wirkung, Prozess, Capability und Governance anwenden.
 
+P02 gehört zur Kategorie „Qualität, operative Resilienz, Kontrollen und integrierte Assurance“. Verbindlicher Output: Verbesserungszyklus mit Problem, Baseline, Hypothese, Experiment, KII, Ergebnis, Standardisierung oder Rücknahme.
+
 ## Kontinuitäts-, Recovery- und Wirkungsresilienzplan
 
 Kritische Wirkung unter Störung erhalten beziehungsweise sicher und priorisiert wiederherstellen.
 
 Kritische Wirkung unter Störung erhalten beziehungsweise sicher und priorisiert wiederherstellen.
+
+P05 gehört zur Kategorie „Qualität, operative Resilienz, Kontrollen und integrierte Assurance“. Verbindlicher Output: Continuity Plan mit Szenarien, Strategien, Mindestservices, RTO/RPO, Rollen, Fallback, Kommunikation und Tests.
 
 ## Kontraindikation
 
@@ -4983,6 +5885,8 @@ Kontrollbedürfnis ist das Bedürfnis nach Vorhersagbarkeit und Steuerbarkeit un
 Die Konzessionsabgabe ist ein Entgelt für die Nutzung öffentlicher Wege durch Energieversorgungsnetze.
 
 Die Konzessionsabgabe ist ein Entgelt für die Nutzung öffentlicher Wege durch Energieversorgungsnetze.
+
+Ein Strompreisbestandteil mit kommunaler Finanzierungswirkung.
 
 ## Kooperationslogik
 
@@ -5022,6 +5926,10 @@ Kraft-Wärme-Kopplung erzeugt Strom und nutzbare Wärme gemeinsam.
 
 Kraft-Wärme-Kopplung erzeugt Strom und nutzbare Wärme gemeinsam.
 
+KWK kann Brennstoff effizienter nutzen, bleibt aber je nach Brennstoff, Wärmebedarf, Laufzeit, Flexibilität und Transformationspfad wirkungsabhängig.
+
+Energie als Wirkungsinfrastruktur behandeln: Erzeugung, Netze, Speicher, Preise, Resilienz, Teilhabe und Folgewirkungen zusammen bewerten.
+
 ## Kraftwerks-Nettoleistung
 
 Die Kraftwerks-Nettoleistung ist die Leistung, die ein Kraftwerk nach Abzug seines Eigenverbrauchs tatsächlich ins Netz einspeisen kann.
@@ -5046,11 +5954,15 @@ Kreislaufblindheit ist das Missverständnis, dass ein geschlossener Materialkrei
 
 Kreislaufblindheit ist das Missverständnis, dass ein geschlossener Materialkreislauf automatisch positive Wirkung erzeugt.
 
+Ein Kreislauf kann auch schädliche Stoffe, Machtkonzentration oder Ausbeutung stabilisieren.
+
 ## Kreislauffähigkeit
 
 Kreislauffähigkeit beschreibt, ob ein Produkt, Material oder System sinnvoll in biologische oder technische Kreisläufe zurückgeführt werden kann.
 
 Kreislauffähigkeit beschreibt, ob ein Produkt, Material oder System sinnvoll in biologische oder technische Kreisläufe zurückgeführt werden kann.
+
+Sie ist notwendig, aber keine Garantie positiver Netto-Wirkung.
 
 ## Kreislaufgrad
 
@@ -5058,11 +5970,15 @@ Der Kreislaufgrad beschreibt, wie stark ein Produkt, Unternehmen oder System tat
 
 Der Kreislaufgrad beschreibt, wie stark ein Produkt, Unternehmen oder System tatsächlich zirkulär organisiert ist.
 
+Er muss mit Datenqualität, Materialgesundheit, Reparierbarkeit, Rücknahme und Nutzungsdauer verbunden werden.
+
 ## Kreislaufinnovation
 
 Kreislaufinnovation bezeichnet neue Lösungen, die Materialien, Produkte, Bauteile, Energieflüsse, Daten oder Geschäftsmodelle so gestalten, dass Abfall, Primärrohstoffverbrauch und Verlustleistung sinken.
 
 Kreislaufinnovation bezeichnet neue Lösungen, die Materialien, Produkte, Bauteile, Energieflüsse, Daten oder Geschäftsmodelle so gestalten, dass Abfall, Primärrohstoffverbrauch und Verlustleistung sinken.
+
+WÖk-seitig verbindet der Begriff Schumpeter mit planetaren Grenzen: Wachstum entsteht nicht durch mehr Input, sondern durch bessere Rekombination vorhandener Ressourcen. Kreislaufinnovation ist positiv, wenn sie ökologische Wirkung mit sozialer und demokratischer Wirkung verbindet.
 
 ## Kreislaufwirkung
 
@@ -5070,11 +5986,17 @@ Kreislaufwirkung beschreibt die tatsächliche Wirkung zirkulärer Produkt-, Mate
 
 Kreislaufwirkung beschreibt die tatsächliche Wirkung zirkulärer Produkt-, Material- oder Geschäftsmodellgestaltung auf Mensch, Planet und Demokratie.
 
+Sie verbindet Kreislaufdaten mit Netto-Wirkung, Reverse Merit Order und Scorecards.
+
 ## Kreislaufwirtschaft
 
 Kreislaufwirtschaft umfasst Design gegen Abfall, Reparierbarkeit, Wiederverwendung, Rücknahme, Recycling, Remanufacturing und längere Nutzungsdauer.
 
 Kreislaufwirtschaft umfasst Design gegen Abfall, Reparierbarkeit, Wiederverwendung, Rücknahme, Recycling, Remanufacturing und längere Nutzungsdauer.
+
+Die WÖk erweitert Kreislaufwirtschaft: Ein geschlossener Materialkreislauf reicht nicht, wenn Energie, Arbeitsbedingungen, Datenmacht oder Demokratie negativ wirken.
+
+Kreislaufwirtschaft ist notwendig, aber nicht hinreichend. Positive Netto-Wirkung entsteht erst, wenn Kreislauffähigkeit mit Mensch, Planet und Demokratie verbunden wird.
 
 ## Krisensimulation, Red Teaming und Tabletop Exercise
 
@@ -5082,17 +6004,27 @@ Entscheidungen, Kommunikation, Barrieren und Recovery unter realistischen Störu
 
 Entscheidungen, Kommunikation, Barrieren und Recovery unter realistischen Störungen testen.
 
+P06 gehört zur Kategorie „Qualität, operative Resilienz, Kontrollen und integrierte Assurance“. Verbindlicher Output: Übungsdesign und After-Action-Report mit Beobachtungen, Lücken, Maßnahmen und Re-Test.
+
 ## Kritische Energieinfrastruktur
 
 Kritische Energieinfrastruktur umfasst Energieanlagen und -systeme, deren Ausfall erhebliche Folgen für Gesellschaft, Wirtschaft, Gesundheit oder Staat hätte.
 
 Kritische Energieinfrastruktur umfasst Energieanlagen und -systeme, deren Ausfall erhebliche Folgen für Gesellschaft, Wirtschaft, Gesundheit oder Staat hätte.
 
+Relevant für Resilienz, Cybersecurity, Krisenfähigkeit, Demokratie, Versorgungssicherheit und geopolitische Risiken.
+
+Energie als Wirkungsinfrastruktur behandeln: Erzeugung, Netze, Speicher, Preise, Resilienz, Teilhabe und Folgewirkungen zusammen bewerten.
+
 ## Kritische Rohstoffe
 
 Kritische Rohstoffe sind Rohstoffe mit hoher wirtschaftlicher Bedeutung und erhöhtem Versorgungsrisiko.
 
 Kritische Rohstoffe sind Rohstoffe mit hoher wirtschaftlicher Bedeutung und erhöhtem Versorgungsrisiko.
+
+Relevant für Batterien, Windkraft, Solar, Halbleiter, Energieinfrastruktur und geopolitische Wirkung.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Kultur als Resonanzsystem
 
@@ -5106,6 +6038,8 @@ Untersuchen, welche formellen und informellen Signale tatsächliches Verhalten f
 
 Untersuchen, welche formellen und informellen Signale tatsächliches Verhalten fördern und ob sie mit dem Wirkungsauftrag übereinstimmen.
 
+G04 gehört zur Kategorie „Organisation, Führung und Kultur“. Verbindlicher Output: Kultur- und Anreizprofil mit Verstärkern, Widersprüchen, Ritualen und Veränderungshebeln.
+
 ## Kulturelle Anschlussfähigkeit
 
 Kulturelle Anschlussfähigkeit bedeutet, dass die Wirkungsökonomie gemeinsame Wirkungsmaßstäbe für Mensch, Planet und Demokratie so übersetzt, dass sie in unterschiedlichen kulturellen, religiösen, rechtlichen und politischen Kontexten verständlich und verhandelbar werden, ohne Dominanz oder Relativismus.
@@ -5117,6 +6051,10 @@ Kulturelle Anschlussfähigkeit ist die Gegenform zu einer Belehrungsordnung. Wel
 Eine Kundenanlage ist die elektrische Anlage hinter dem Netzanschlusspunkt im Verantwortungsbereich der Anschlussnehmer:innen.
 
 Eine Kundenanlage ist die elektrische Anlage hinter dem Netzanschlusspunkt im Verantwortungsbereich der Anschlussnehmer:innen.
+
+Relevant für Eigentum, Betrieb, Sicherheit, Messung, Ladeinfrastruktur und Verantwortungsgrenzen.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Kundennutzen
 
@@ -5136,11 +6074,17 @@ Kurzzeitspeicher gleichen kurzfristige Schwankungen aus.
 
 Kurzzeitspeicher gleichen kurzfristige Schwankungen aus.
 
+Wichtig für PV, Frequenzhaltung, Lastspitzen und Netzdienlichkeit.
+
 ## Kybernetik
 
 Kybernetik untersucht, wie Systeme Informationen aufnehmen, verarbeiten, zurückmelden und ihr Verhalten dadurch stabilisieren oder verändern.
 
 Kybernetik untersucht, wie Systeme Informationen aufnehmen, verarbeiten, zurückmelden und ihr Verhalten dadurch stabilisieren oder verändern.
+
+Die Wirkungsökonomie nutzt kybernetisches Denken, um Wirkung nicht im Bericht stehen zu lassen, sondern in Preise, Steuern, Kapitalzugang, Beschaffung, Führung und politische Entscheidungen zurückzuführen.
+
+Die Wirkungsökonomie nutzt kybernetische Grundideen, indem Wirkung nicht nur gemessen, sondern in Preise, Steuern, Kapital, Beschaffung, Förderung und Entscheidungen zurückgekoppelt wird.
 
 ## Kybernetik zweiter Ordnung
 
@@ -5178,6 +6122,10 @@ Eine Ladeeinrichtung steuert den Ladeprozess und überträgt elektrische Energie
 
 Eine Ladeeinrichtung steuert den Ladeprozess und überträgt elektrische Energie zwischen Stromnetz und Fahrzeug.
 
+Technik, Normen, Messung, Backend und Wartung prägen Nutzervertrauen und Systemwirkung.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Ladefenster
 
 Ein Ladefenster ist der zeitliche Zeitraum, in dem ein Elektrofahrzeug oder Speicher sinnvoll und technisch verfügbar geladen werden kann.
@@ -5190,11 +6138,19 @@ Ein Ladehub ist ein größerer Ladeinfrastrukturstandort, häufig an Verkehrskno
 
 Ein Ladehub ist ein größerer Ladeinfrastrukturstandort, häufig an Verkehrsknoten, Logistikstandorten oder Autobahnen.
 
+Relevant für Flotten, Fernverkehr, Netzanschluss, Aufenthaltsqualität und Standortgerechtigkeit.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Ladeinfrastruktur
 
 Ladeinfrastruktur umfasst alle technischen, baulichen, netzseitigen, digitalen und organisatorischen Komponenten zum Laden von Elektrofahrzeugen.
 
 Ladeinfrastruktur umfasst alle technischen, baulichen, netzseitigen, digitalen und organisatorischen Komponenten zum Laden von Elektrofahrzeugen.
+
+Sie ist Wirkungsarchitektur für Mobilität, Stromsystem, Netze, Flächen, Preise, Teilhabe und Versorgungssicherheit.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Ladeleistung
 
@@ -5202,11 +6158,19 @@ Ladeleistung beschreibt die elektrische Leistung, mit der ein Fahrzeug oder Spei
 
 Ladeleistung beschreibt die elektrische Leistung, mit der ein Fahrzeug oder Speicher geladen wird.
 
+Sie beeinflusst Ladezeit, Netzanschluss, Batteriealterung, Kosten, Gleichzeitigkeit und Nutzererlebnis.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Ladepark
 
 Ein Ladepark ist ein Standort mit mehreren Ladepunkten, häufig mit eigener Netzanschlussleistung, Lastmanagement, Trafo, Abrechnung und ggf. Pufferspeicher.
 
 Ein Ladepark ist ein Standort mit mehreren Ladepunkten, häufig mit eigener Netzanschlussleistung, Lastmanagement, Trafo, Abrechnung und ggf. Pufferspeicher.
+
+Ladeparks verbinden Mobilität, Netzanschluss, Mittelspannung, Geschäftsmodell, Flächenwirkung und Preiszugang.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Ladepark-Mittelspannungsanschluss
 
@@ -5214,11 +6178,19 @@ Ein Ladepark-Mittelspannungsanschluss ist ein Netzanschlusskonzept für größer
 
 Ein Ladepark-Mittelspannungsanschluss ist ein Netzanschlusskonzept für größere Ladeinfrastrukturstandorte mit hoher Summenleistung.
 
+HPC wird nicht nur über Ladepunkte entschieden, sondern über Anschlussleistung, Trafo, Messung, Schutztechnik, Lastmanagement und Netzdienlichkeit.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Ladepunkt
 
 Ein Ladepunkt ist eine Einrichtung, an der jeweils ein Elektrofahrzeug geladen werden kann.
 
 Ein Ladepunkt ist eine Einrichtung, an der jeweils ein Elektrofahrzeug geladen werden kann.
+
+Die Zahl der Ladepunkte sagt wenig ohne Leistung, Verfügbarkeit, Standort, Preis, Zugang und Netzintegration.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Ladepunktbetreiber / CPO
 
@@ -5226,11 +6198,19 @@ Ein Ladepunktbetreiber betreibt Ladepunkte technisch und organisatorisch.
 
 Ein Ladepunktbetreiber betreibt Ladepunkte technisch und organisatorisch.
 
+CPOs prägen Standortwahl, Preisgestaltung, Verfügbarkeit, Datenqualität und Marktmacht.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Ladesäule
 
 Eine Ladesäule ist eine öffentlich oder privat zugängliche Ladeeinrichtung für Elektrofahrzeuge.
 
 Eine Ladesäule ist eine öffentlich oder privat zugängliche Ladeeinrichtung für Elektrofahrzeuge.
+
+Wirkung hängt von Standort, Ladeleistung, Zugänglichkeit, Abrechnung, Strombezug und Auslastung ab.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Laffer-Kurve
 
@@ -5238,11 +6218,15 @@ Die Laffer-Kurve beschreibt die Idee, dass Steuersätze und Steueraufkommen nich
 
 Die Laffer-Kurve beschreibt die Idee, dass Steuersätze und Steueraufkommen nicht linear zusammenhängen und zu hohe Steuersätze das Aufkommen senken können.
 
+Als wirtschaftspolitisches Argument relevant. WÖk fragt zusätzlich: Welche Wirkung erzeugt die Steuerstruktur, nicht nur welches Aufkommen?
+
 ## Langfristige Produkt- und Wirkungsverantwortungskarte
 
 Ownership über Produktlebenszyklus, Betrieb, Daten, Wirkung und Rückbau eindeutig zuordnen.
 
 Ownership über Produktlebenszyklus, Betrieb, Daten, Wirkung und Rückbau eindeutig zuordnen.
+
+L02 gehört zur Kategorie „Product Operating Model, Teams, Plattformen und Ökosysteme“. Verbindlicher Output: Responsibility Map mit Product Owner, Impact Owner, Operations, Data, Risk, Legal, Community und Exit-Verantwortung.
 
 ## Langzeitspeicher
 
@@ -5250,11 +6234,15 @@ Langzeitspeicher überbrücken längere Zeiträume mit Energiebedarf.
 
 Langzeitspeicher überbrücken längere Zeiträume mit Energiebedarf.
 
+Relevant für Dunkelflauten, saisonale Schwankungen und Versorgungssicherheit.
+
 ## Laozi / Laotse
 
 Laozi gilt traditionell als zentrale Figur des Daoismus. Für die WÖk ist nicht die historische Person entscheidend, sondern die Anschlussfähigkeit des Prozessdenkens.
 
 Laozi gilt traditionell als zentrale Figur des Daoismus. Für die WÖk ist nicht die historische Person entscheidend, sondern die Anschlussfähigkeit des Prozessdenkens.
+
+Die WÖk nutzt Laozi/Laotse nicht als spirituelle Autorität, sondern als Suchknoten für Daoismus und Wu Wei.
 
 ## Lastgang
 
@@ -5262,11 +6250,15 @@ Der Lastgang beschreibt den zeitlichen Verlauf des Stromverbrauchs.
 
 Der Lastgang beschreibt den zeitlichen Verlauf des Stromverbrauchs.
 
+Grundlage für Tarife, Netzauslegung, Flexibilität und Demand Response.
+
 ## Lastmanagement
 
 Lastmanagement steuert Stromverbrauch zeitlich oder mengenmäßig.
 
 Lastmanagement steuert Stromverbrauch zeitlich oder mengenmäßig.
+
+Es kann Netze entlasten, Kosten senken und erneuerbare Integration verbessern.
 
 ## Latitude
 
@@ -5304,6 +6296,8 @@ Emissionen über Rohstoffgewinnung, Bau, Betrieb, Wartung, Rückbau und Entsorgu
 
 Emissionen über Rohstoffgewinnung, Bau, Betrieb, Wartung, Rückbau und Entsorgung.
 
+Im Kernenergie-Dossier nur mit klarer Bilanzgrenze, Datenstand und Alternativenvergleich verwenden.
+
 ## Lebenszyklusanalyse / LCA
 
 Lebenszyklusanalyse bewertet potenzielle Umweltwirkungen eines Produktsystems über seinen Lebensweg.
@@ -5328,11 +6322,15 @@ Legalität bedeutet, dass etwas rechtlich erlaubt oder gesetzeskonform ist.
 
 Legalität bedeutet, dass etwas rechtlich erlaubt oder gesetzeskonform ist.
 
+Legalität ist nicht automatisch positive Wirkung. Eine legale Entscheidung kann negative Folgewirkungen haben. Umgekehrt darf Wirkung nicht außerhalb des Rechts durchgesetzt werden.
+
 ## Legislative Footprint
 
 Ein Legislative Footprint dokumentiert, welche externen Akteure an der Entstehung eines Gesetzes oder einer Regel mitgewirkt haben.
 
 Ein Legislative Footprint dokumentiert, welche externen Akteure an der Entstehung eines Gesetzes oder einer Regel mitgewirkt haben.
+
+Sehr wichtig für Wirkungstransparenz und demokratische Rückkopplung, weil Gesetzgebung als Einflussprozess sichtbar wird.
 
 ## Legitimer Lobbyismus
 
@@ -5340,11 +6338,15 @@ Legitimer Lobbyismus bringt Expertise, Betroffenheit oder Praxiswissen transpare
 
 Legitimer Lobbyismus bringt Expertise, Betroffenheit oder Praxiswissen transparent in demokratische Entscheidungen ein.
 
+Er stärkt demokratische Wirkung, wenn Finanzierung, Auftrag, Daten und Interessen offenliegen und andere Perspektiven Zugang erhalten.
+
 ## Legitimität
 
 Legitimität beschreibt die anerkannte Rechtfertigung politischer Macht oder Entscheidung.
 
 Legitimität beschreibt die anerkannte Rechtfertigung politischer Macht oder Entscheidung.
+
+Legitimität entsteht nicht nur formal durch Verfahren, sondern auch durch Wirkung, Transparenz, Fairness, Rechenschaft und Korrekturfähigkeit.
 
 ## Leistung
 
@@ -5358,6 +6360,10 @@ Leistungsdichte beschreibt, wie viel Leistung pro Masse oder Volumen abgegeben o
 
 Leistungsdichte beschreibt, wie viel Leistung pro Masse oder Volumen abgegeben oder aufgenommen werden kann.
 
+Relevant für Schnellladen, Netzstabilisierung, Rekuperation und Leistungsspitzen.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Leistungsfaktor
 
 Der Leistungsfaktor beschreibt in elektrischen Anlagen das Verhältnis von Wirkleistung zu Scheinleistung.
@@ -5370,11 +6376,17 @@ Der Leistungspreis ist ein Preisbestandteil, der sich an der maximalen oder vorg
 
 Der Leistungspreis ist ein Preisbestandteil, der sich an der maximalen oder vorgehaltenen Leistung orientiert.
 
+Er macht Lastspitzen wirtschaftlich sichtbar und beeinflusst Speicher, Ladeparks und Lastmanagement.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Lern- und Rückkopplungsarchitektur
 
 Single-, Double- und Triple-Loop-Lernen so institutionalisieren, dass nicht nur Maßnahmen, sondern Annahmen, Regeln und Ziele korrigiert werden.
 
 Single-, Double- und Triple-Loop-Lernen so institutionalisieren, dass nicht nur Maßnahmen, sondern Annahmen, Regeln und Ziele korrigiert werden.
+
+G08 gehört zur Kategorie „Organisation, Führung und Kultur“. Verbindlicher Output: Lernarchitektur mit Rhythmen, Daten, Reflexionsfragen, Entscheidungsrechten, Wissensspeicher und Methodenpflege.
 
 ## Lernebenen
 
@@ -5390,6 +6402,12 @@ Eine lernende Organisation erkennt Abweichungen, Risiken und Wirkungen früh gen
 
 Für die WÖk ist eine Organisation nicht lernend, weil sie Trainings anbietet, sondern weil sie Wirkung liest und ihr Verhalten ändert. Lernfähigkeit verbindet Datenqualität, psychologische Sicherheit, Feedback, Verantwortung und Korrekturregeln.
 
+## Lernende Systeme
+
+Lernende Systeme nutzen Daten oder Rückmeldung, um ein Modell oder ihr Verhalten für eine Aufgabe anzupassen.
+
+Ein fest programmiertes Regelwerk ist nicht allein deshalb ein lernendes System, weil es automatisch arbeitet. Auch nicht jedes KI-System lernt nach seiner Einführung weiter. Für die fachliche Beurteilung sind Zweck, Trainings- und Einsatzdaten, Fehlerraten, Repräsentativität, Änderungslogik, menschliche Überprüfung und Folgen für Grundrechte wichtiger als das Etikett ‚intelligent‘.
+
 ## Lernender Unternehmer
 
 Der lernende Unternehmer entwickelt Kompetenz, Wahrnehmung, Risiko- und Wirkungsfähigkeit weiter.
@@ -5401,6 +6419,10 @@ Der Begriff schließt an Jochen Röpke an und beschreibt Unternehmertum als Lern
 LFP-Batterien sind Lithium-Ionen-Batterien mit Lithium-Eisenphosphat als Kathodenmaterial.
 
 LFP-Batterien sind Lithium-Ionen-Batterien mit Lithium-Eisenphosphat als Kathodenmaterial.
+
+Relevant wegen Rohstoffprofil, Lebensdauer, Sicherheit, Kostenstruktur und Recycling; auch LFP braucht Rohstoff-, Energie- und Kreislaufbewertung.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Liability Risk
 
@@ -5414,17 +6436,25 @@ Liberale Demokratie verbindet Mehrheitsentscheidungen mit Grundrechten, Rechtsst
 
 Liberale Demokratie verbindet Mehrheitsentscheidungen mit Grundrechten, Rechtsstaatlichkeit, Gewaltenteilung, Minderheitenschutz und Freiheit.
 
+Für die WÖk ist liberale Demokratie die zentrale Schutzform gegen Mehrheitswillkür und technokratische Wirkungsherrschaft.
+
 ## Liberalismus
 
 Liberalismus stellt Freiheit, individuelle Rechte, Rechtsstaatlichkeit, Machtbegrenzung, Eigentum, Meinungsfreiheit und persönliche Selbstbestimmung ins Zentrum. Er hat unterschiedliche wirtschaftliche, politische und soziale Varianten.
 
 Liberalismus stellt Freiheit, individuelle Rechte, Rechtsstaatlichkeit, Machtbegrenzung, Eigentum, Meinungsfreiheit und persönliche Selbstbestimmung ins Zentrum. Er hat unterschiedliche wirtschaftliche, politische und soziale Varianten.
 
+Die WÖk knüpft an Freiheit an, aber versteht Freiheit nicht als Wirkungsblindheit. Freiheit braucht reale Handlungsfähigkeit, faire Informationen, intakte Lebensgrundlagen, Rechtsstaat, soziale Sicherheit und demokratische Öffentlichkeit.
+
+Die WÖk ist mit liberalen Grundwerten vereinbar, wenn Freiheit nicht als Wirkungsblindheit verstanden wird. Freiheit braucht reale Handlungsfähigkeit, transparente Informationen, faire Verfahren und die Begrenzung von Schäden, die andere tragen müssen.
+
 ## Libertarismus
 
 Libertarismus betont individuelle Freiheit, Eigentumsrechte, freiwillige Verträge und minimale staatliche Eingriffe besonders stark.
 
 Libertarismus betont individuelle Freiheit, Eigentumsrechte, freiwillige Verträge und minimale staatliche Eingriffe besonders stark.
+
+Relevant, weil er zentrale Einwände gegen Wirkungssteuerung formuliert. Die WÖk antwortet: Nicht jede Lenkung ist Zwang; wenn Preise Schäden verschweigen, sind auch Marktentscheidungen verzerrt.
 
 ## Lieferantenbewertung
 
@@ -5437,6 +6467,8 @@ Lieferantenbewertung bezeichnet in der Wirkungsökonomie die systematische Bewer
 Lieferketten als Wirkungs- und Risikonetz statt als reine Kostenkette gestalten.
 
 Lieferketten als Wirkungs- und Risikonetz statt als reine Kostenkette gestalten.
+
+F11 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: Lieferkettenkarte mit Stufen, WÖk-IDs, Wirkungen, Datenqualität, Macht, Risiken, Alternativen und Entwicklungsplan.
 
 ## Lieferkettenbelasteter Kredit
 
@@ -5480,11 +6512,15 @@ Linker Faschismus ist ein umstrittener und meist polemischer Begriff. Bei streng
 
 Linker Faschismus ist ein umstrittener und meist polemischer Begriff. Bei strenger Definition von Faschismus als rechtsextrem, ultranationalistisch und anti-liberal ist der Ausdruck irreführend.
 
+Autoritäre, totalitäre oder gewaltförmige Muster bei linken Systemen müssen klar kritisiert werden, aber präziser über autoritären Sozialismus, Stalinismus, Staatssozialismus, Parteidiktatur, Totalitarismus oder Zentralverwaltungsstaat.
+
 ## Links
 
 Links bezeichnet politisch grob Orientierungen, die Gleichheit, soziale Gerechtigkeit, Umverteilung, Arbeit, Teilhabe oder Emanzipation betonen können.
 
 Links bezeichnet politisch grob Orientierungen, die Gleichheit, soziale Gerechtigkeit, Umverteilung, Arbeit, Teilhabe oder Emanzipation betonen können.
+
+Nur kontextsensibel verwenden. WÖk fragt nach konkreter Wirkung, nicht nach Lageretikett.
 
 ## Linksextremismus
 
@@ -5492,17 +6528,27 @@ Linksextremismus bezeichnet politische Strömungen, die demokratische Rechtsstaa
 
 Linksextremismus bezeichnet politische Strömungen, die demokratische Rechtsstaatlichkeit, Gewaltfreiheit oder Grundrechte aus linksaußen Positionen infrage stellen können.
 
+Wirkungsökonomisch nach konkreten Angriffen auf Grundrechte, Rechtsstaat, Pluralismus, Eigentumsordnung und demokratische Verfahren prüfen.
+
 ## Lithium-Ionen-Batterie
 
 Lithium-Ionen-Batterien sind wiederaufladbare Batterien, bei denen Lithium-Ionen zwischen den Elektroden wandern.
 
 Lithium-Ionen-Batterien sind wiederaufladbare Batterien, bei denen Lithium-Ionen zwischen den Elektroden wandern.
 
+Sie sind zentral für heutige Elektromobilität und viele Speicheranwendungen; Wirkung hängt von Chemie, Rohstoffen, Herstellung, Nutzung, Recycling und Sicherheitsarchitektur ab.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Lithium-Titanat-Batterie / LTO
 
 Lithium-Titanat-Batterien nutzen Lithium-Titanat als Anodenmaterial.
 
 Lithium-Titanat-Batterien nutzen Lithium-Titanat als Anodenmaterial.
+
+LTO kann hohe Zyklenfestigkeit und Schnellladefähigkeit bieten, muss aber nach Energiedichte, Kosten, Rohstoffen und Einsatzfeld bewertet werden.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Living Wage / existenzsichernder Lohn
 
@@ -5522,11 +6568,15 @@ Lobbyismus bezeichnet organisierte Einflussnahme auf politische Entscheidungen, 
 
 Lobbyismus bezeichnet organisierte Einflussnahme auf politische Entscheidungen, Gesetzgebung, Verwaltung oder öffentliche Meinung.
 
+Lobbyismus ist nicht automatisch schlecht. Demokratie braucht Expertise und Interessenvertretung. Problematisch wird er bei Intransparenz, Machtasymmetrie, verzerrten Daten, verdeckter Gesetzesmitwirkung oder blockierter Rückkopplung.
+
 ## Lobbyregister
 
 Ein Lobbyregister erfasst Interessenvertretung gegenüber Politik und Verwaltung.
 
 Ein Lobbyregister erfasst Interessenvertretung gegenüber Politik und Verwaltung.
+
+Es macht Einfluss prüfbarer, ersetzt aber nicht Legislative Footprints, Interessenkonfliktregeln und Zugangsgerechtigkeit.
 
 ## Lock-in / Pfadabhängigkeit
 
@@ -5558,17 +6608,13 @@ Lokale Energie als Wirkungsinfrastruktur beschreibt erneuerbare, dezentrale und 
 
 Lokale Energie als Wirkungsinfrastruktur beschreibt erneuerbare, dezentrale und gemeinschaftlich organisierte Energieversorgung als Teil gesellschaftlicher Grundversorgung. Energie wird nicht nur als Ware betrachtet, sondern als Bedingung für Teilhabe, Gesundheit, Bildung, Pflege, digitale Infrastruktur, Klimaschutz und demokratische Resilienz.
 
-## Öffentlichkeit als Wirkungsraum
-
-Lokale Energie als Wirkungsinfrastruktur beschreibt erneuerbare, dezentrale und gemeinschaftlich organisierte Energieversorgung als Teil gesellschaftlicher Grundversorgung. Energie wird nicht nur als Ware betrachtet, sondern als Bedingung für Teilhabe, Gesundheit, Bildung, Pflege, digitale Infrastruktur, Klimaschutz und demokratische Resilienz.
-
-Lokale Energie als Wirkungsinfrastruktur beschreibt erneuerbare, dezentrale und gemeinschaftlich organisierte Energieversorgung als Teil gesellschaftlicher Grundversorgung. Energie wird nicht nur als Ware betrachtet, sondern als Bedingung für Teilhabe, Gesundheit, Bildung, Pflege, digitale Infrastruktur, Klimaschutz und demokratische Resilienz.
-
 ## Ludwig Erhard
 
 Ludwig Erhard steht politisch für die Durchsetzung und Popularisierung der Sozialen Marktwirtschaft in der Bundesrepublik. Sein Leitbild verband Marktwirtschaft, Wettbewerb, Wohlstand und sozialen Ausgleich.
 
 Ludwig Erhard steht politisch für die Durchsetzung und Popularisierung der Sozialen Marktwirtschaft in der Bundesrepublik. Sein Leitbild verband Marktwirtschaft, Wettbewerb, Wohlstand und sozialen Ausgleich.
+
+Die WÖk schließt an die historische Leistung der Sozialen Marktwirtschaft an, geht aber darüber hinaus. Was im 20. Jahrhundert sozialer Ausgleich war, muss im 21. Jahrhundert um planetare Grenzen, digitale Öffentlichkeit, globale Lieferketten, Wirkungspreise und Demokratiequalität erweitert werden.
 
 ## Ludwig Wittgenstein
 
@@ -5582,11 +6628,15 @@ Arendt unterscheidet Macht als gemeinsames Handeln von Gewalt als Zwangsmittel.
 
 Arendt unterscheidet Macht als gemeinsames Handeln von Gewalt als Zwangsmittel.
 
+Diese Unterscheidung ist zentral für Demokratie: Macht entsteht durch gemeinsames Handeln; Gewalt zerstört demokratische Rückkopplung.
+
 ## Macht-, Abhängigkeits- und Entscheidungsraumanalyse
 
 Sichtbare und unsichtbare Macht, Ressourcenabhängigkeiten, Vetos, Agenda-Setting und Ausschlüsse in Wirkungssystemen analysieren.
 
 Sichtbare und unsichtbare Macht, Ressourcenabhängigkeiten, Vetos, Agenda-Setting und Ausschlüsse in Wirkungssystemen analysieren.
+
+G05 gehört zur Kategorie „Organisation, Führung und Kultur“. Verbindlicher Output: Machtlandkarte mit Quellen, Abhängigkeiten, Schutzrisiken, Gegenmacht und Governanceoptionen.
 
 ## Macht-, Widerstands- und Konfliktkarte
 
@@ -5594,11 +6644,15 @@ Widerstand nicht als Defizit einzelner Personen, sondern als Information über I
 
 Widerstand nicht als Defizit einzelner Personen, sondern als Information über Interessen, Verluste, Identität und Systemwidersprüche nutzen.
 
+M04 gehört zur Kategorie „Change, Adoption, Workforce, Skills und Wissen“. Verbindlicher Output: Konfliktkarte mit Themen, Akteuren, Macht, legitimen Anliegen, Risiken, Dialog- und Entscheidungsformaten.
+
 ## Machtbegrenzung
 
 Machtbegrenzung beschreibt institutionelle, rechtliche und gesellschaftliche Mechanismen, die verhindern, dass Macht unkontrolliert wird.
 
 Machtbegrenzung beschreibt institutionelle, rechtliche und gesellschaftliche Mechanismen, die verhindern, dass Macht unkontrolliert wird.
+
+Machtbegrenzung ist demokratische Wirkungsarchitektur.
 
 ## Machtdezentralisierung
 
@@ -5630,6 +6684,8 @@ Majoritarismus beschreibt eine Verkürzung von Demokratie auf bloße Mehrheitsma
 
 Majoritarismus beschreibt eine Verkürzung von Demokratie auf bloße Mehrheitsmacht.
 
+Majoritarismus ist ein demokratisches Wirkungsrisiko. Wenn Mehrheit ohne Minderheitenschutz, Rechtsstaat und Gewaltenteilung gedacht wird, kann Demokratie in autoritäre Herrschaft kippen.
+
 ## Management
 
 Management ist die Gestaltung, Steuerung und Rückkopplung von Organisationen und Prozessen.
@@ -5654,11 +6710,15 @@ Marktgleichgewicht beschreibt einen Zustand, in dem Angebot und Nachfrage bei ei
 
 Marktgleichgewicht beschreibt einen Zustand, in dem Angebot und Nachfrage bei einem bestimmten Preis zusammenfinden.
 
+Ein Markt kann im Gleichgewicht sein und trotzdem negative Wirkung erzeugen, wenn Preise Schäden nicht enthalten.
+
 ## Marktmacht
 
 Marktmacht beschreibt die Fähigkeit, Preise, Zugang, Standards, Bedingungen oder Alternativen wesentlich zu beeinflussen.
 
 Marktmacht beschreibt die Fähigkeit, Preise, Zugang, Standards, Bedingungen oder Alternativen wesentlich zu beeinflussen.
+
+Ein Wirkungsrisiko, wenn sie Wettbewerb, Teilhabe, Innovation, Medienqualität oder demokratische Kontrolle schwächt.
 
 ## Marktprämie
 
@@ -5666,11 +6726,17 @@ Die Marktprämie ergänzt Markterlöse erneuerbarer Anlagen.
 
 Die Marktprämie ergänzt Markterlöse erneuerbarer Anlagen.
 
+Sie verbindet Förderung mit Marktintegration.
+
 ## Marktversagen
 
 Marktversagen liegt vor, wenn Märkte keine effizienten oder gesellschaftlich tragfähigen Ergebnisse erzeugen, etwa durch externe Kosten, Informationsasymmetrien, Marktmacht, öffentliche Güter oder Koordinationsprobleme.
 
 Marktversagen liegt vor, wenn Märkte keine effizienten oder gesellschaftlich tragfähigen Ergebnisse erzeugen, etwa durch externe Kosten, Informationsasymmetrien, Marktmacht, öffentliche Güter oder Koordinationsprobleme.
+
+Die WÖk liest Marktversagen als Wirkungsblindheit: Der Markt verarbeitet Preise, aber nicht automatisch reale Folgen für Klima, Gesundheit, Arbeit, Demokratie oder künftige Generationen. Wirkungspreise, WÖk-IDs und Scorecards sollen diese Blindheit reduzieren.
+
+Aus WÖk-Sicht ist Marktversagen oft Wirkungsblindheit: Preise, Rechte oder Anreize bilden reale Folgen nicht ab.
 
 ## Marktwert
 
@@ -5732,11 +6798,15 @@ Materialgesundheit beschreibt, ob Materialien für Menschen, Umwelt und Kreislä
 
 Materialgesundheit beschreibt, ob Materialien für Menschen, Umwelt und Kreisläufe sicher und schadstoffarm sind.
 
+Materialgesundheit ist eine Wirkungsgrenze. Toxische Stoffe dürfen nicht durch Recycling im Kreislauf gehalten werden.
+
 ## Materialpass
 
 Ein Materialpass dokumentiert Materialien, Zusammensetzung, Eigenschaften, Schadstoffe, Rückführbarkeit und potenzielle Wiederverwendung.
 
 Ein Materialpass dokumentiert Materialien, Zusammensetzung, Eigenschaften, Schadstoffe, Rückführbarkeit und potenzielle Wiederverwendung.
+
+Er unterstützt Urban Mining, Materialgesundheit und hochwertige Rückführung.
 
 ## Medienfreiheit
 
@@ -5744,11 +6814,15 @@ Medienfreiheit schützt die Freiheit von Medien, unabhängig zu recherchieren, z
 
 Medienfreiheit schützt die Freiheit von Medien, unabhängig zu recherchieren, zu veröffentlichen und Macht zu kontrollieren.
 
+Medienfreiheit ist Teil demokratischer Wirkungsarchitektur, weil sie Macht sichtbar und kritisierbar macht.
+
 ## Mediengleichschaltung
 
 Mediengleichschaltung beschreibt die politische oder staatliche Unterordnung von Medien unter eine einheitliche Linie.
 
 Mediengleichschaltung beschreibt die politische oder staatliche Unterordnung von Medien unter eine einheitliche Linie.
+
+Schweres Wirkungsrisiko, weil öffentliche Wahrheit, Kritik, Pluralität und Kontrolle zerstört werden.
 
 ## Medienqualität
 
@@ -5756,11 +6830,23 @@ Medienqualität beschreibt, wie gut Medien informieren, einordnen, korrigieren, 
 
 Medienqualität beschreibt, wie gut Medien informieren, einordnen, korrigieren, plural berichten und Macht kontrollieren.
 
+Medienqualität ist Teil von SDG+ und demokratischer Wirkungsarchitektur.
+
+## Medienvertrauen
+
+Medienvertrauen ist die kontextabhängige Erwartung, dass ein Medium Informationen zuverlässig, fair und nachvollziehbar vermittelt.
+
+Vertrauen ist keine Qualitätsgarantie: Menschen können einer unzuverlässigen Quelle vertrauen oder einer zuverlässigen Quelle misstrauen. Umgekehrt ist Misstrauen nicht automatisch irrational. Deshalb sind Vertrauen, nachweisbare Medienqualität, Reichweite und Wirkung getrennte Größen. Befragungen zu Vertrauen brauchen Angabe von Zielgruppe, Frageformulierung, Zeitraum und Kontext.
+
 ## Megawatt Charging System / MCS
 
 MCS ist ein Hochleistungsladestandard für schwere Nutzfahrzeuge mit sehr hoher Ladeleistung.
 
 MCS ist ein Hochleistungsladestandard für schwere Nutzfahrzeuge mit sehr hoher Ladeleistung.
+
+Relevant für Lkw, Logistik, Depotladen, Mittelspannung, Netzanschlussleistung und Strommarktdesign.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Megawattladen
 
@@ -5774,11 +6860,15 @@ Mehrere plausible, intern konsistente Zukunftsräume entwickeln, ohne Prognose a
 
 Mehrere plausible, intern konsistente Zukunftsräume entwickeln, ohne Prognose als Gewissheit auszugeben.
 
+I04 gehört zur Kategorie „Strategische Vorausschau und Entscheidungsintelligenz“. Verbindlicher Output: Drei bis fünf Szenarien mit Treiberlogik, Zustandsbild, Wirkungsfolgen, Frühindikatoren und Managementimplikationen.
+
 ## Mehrheitsprinzip
 
 Das Mehrheitsprinzip bedeutet, dass politische Entscheidungen nach Mehrheit getroffen werden können.
 
 Das Mehrheitsprinzip bedeutet, dass politische Entscheidungen nach Mehrheit getroffen werden können.
+
+Das Mehrheitsprinzip ist wichtig, aber nicht ausreichend. Mehrheiten dürfen Grundrechte, Menschenwürde, Rechtsstaatlichkeit und Minderheitenschutz nicht außer Kraft setzen.
 
 ## Mehrwert
 
@@ -5791,6 +6881,8 @@ Der Begriff ist eine marxsche Wertkategorie und keine vollständige Werttheorie 
 Meinungsfreiheit schützt freie Äußerung und demokratischen Streit.
 
 Meinungsfreiheit schützt freie Äußerung und demokratischen Streit.
+
+Die WÖk bewertet nicht Meinungen als solche, sondern Wirkungspotenziale, Wirkungsrisiken und Zustandsveränderungen durch Sprache, Reichweite, Normalisierung und Machtkontexte.
 
 ## Mensch, Planet und Demokratie
 
@@ -5810,6 +6902,8 @@ Menschenwürde bezeichnet den unantastbaren Wert jedes Menschen und die Pflicht 
 
 Menschenwürde bezeichnet den unantastbaren Wert jedes Menschen und die Pflicht staatlicher Gewalt, ihn zu achten und zu schützen.
 
+Menschenwürde ist eine Wirkungsgrenze. Keine positive Gesamtrechnung darf Würdeverletzungen kompensieren.
+
 ## Mental Load
 
 Mental Load beschreibt die mentale Verantwortung für Planung, Organisation, Erinnerung und Koordination von Sorge-, Haushalts- oder Familienaufgaben.
@@ -5822,17 +6916,25 @@ Ein mentales Modell ist eine innere Vorstellung davon, wie ein Ausschnitt der We
 
 Ein mentales Modell ist eine innere Vorstellung davon, wie ein Ausschnitt der Welt funktioniert.
 
+Mentale Modelle beeinflussen, ob Wirkungsdaten, Fakten, Produkte, Risiken oder politische Botschaften verstanden und akzeptiert werden.
+
 ## Merit Order
 
-Merit Order beschreibt die Einsatzreihenfolge von Stromerzeugungsanlagen nach Grenzkosten.
+Die Merit Order bezeichnet im ökonomischen Grundmodell die Reihenfolge, in der verfügbare Stromerzeugungs- und Flexibilitätsangebote zur Deckung der Nachfrage herangezogen werden: zuerst die Angebote mit den niedrigsten kurzfristigen Grenzkosten, danach die teureren. In der realen Day-Ahead-Auktion sind jedoch die abgegebenen Verkaufs- und Kaufgebote samt ihren Bedingungen maßgeblich. Erst die Markträumung und das Grenzpreisverfahren machen daraus einen Börsenpreis für eine Gebotszone und ein Marktzeitintervall.
 
-Merit Order beschreibt die Einsatzreihenfolge von Stromerzeugungsanlagen nach Grenzkosten.
+Die Merit Order bezeichnet im ökonomischen Grundmodell die Reihenfolge, in der verfügbare Stromerzeugungs- und Flexibilitätsangebote zur Deckung der Nachfrage herangezogen werden: zuerst die Angebote mit den niedrigsten kurzfristigen Grenzkosten, danach die teureren. In der realen Day-Ahead-Auktion sind jedoch die abgegebenen Verkaufs- und Kaufgebote samt ihren Bedingungen maßgeblich. Erst die Markträumung und das Grenzpreisverfahren machen daraus einen Börsenpreis für eine Gebotszone und ein Marktzeitintervall.
+
+Die Merit Order beantwortet zunächst eine kurzfristige Koordinationsfrage: Welche angebotene Strommenge wird als Nächstes noch gebraucht? Sie trägt dazu bei, günstigere Angebote vor teureren zu nutzen. Sie beantwortet aber nicht, welche Technologie über ihren gesamten Lebenszyklus die geringsten gesellschaftlichen Kosten oder die beste Netto-Wirkung hat.
+
+Am einfachsten lässt sich der Ablauf in fünf Schritten verstehen.
 
 ## Messbarkeit ohne Reduktionismus
 
 Messbarkeit ohne Reduktionismus bedeutet, dass Wirkungen so präzise wie möglich gemessen werden, ohne komplexe Wirklichkeit auf einzelne Kennzahlen zu verkürzen.
 
 Messbarkeit ohne Reduktionismus bedeutet, dass Wirkungen so präzise wie möglich gemessen werden, ohne komplexe Wirklichkeit auf einzelne Kennzahlen zu verkürzen.
+
+Dieser Begriff schützt die WÖk vor zwei Fehlern: Messverweigerung und Messhybris. Die WÖk braucht Daten, Scorecards und Benchmarks; sie braucht zugleich Kontext, Unsicherheit, qualitative Ergänzung, demokratische Bewertung und Nichtkompensation.
 
 ## Messgrenzen und Unsicherheit
 
@@ -5861,11 +6963,15 @@ Das Messproblem bezeichnet die Frage, wie in der Quantenmechanik aus einer mathe
 
 Das Messproblem bezeichnet die Frage, wie in der Quantenmechanik aus einer mathematischen Beschreibung möglicher Messergebnisse ein bestimmtes beobachtbares Ergebnis wird.
 
+Für die WÖk ist das Messproblem keine direkte Vorlage. Es ist aber ein nützlicher Hinweis auf den Unterschied zwischen Modell, Beobachtung, Ergebnis und Interpretation. Wirkungsmessung muss deshalb sorgfältig trennen: Daten, Modell, Bewertung, Rückkopplung und politische Entscheidung.
+
 ## Messstellenbetrieb
 
 Messstellenbetrieb umfasst Einbau, Betrieb und Ablesung von Messeinrichtungen.
 
 Messstellenbetrieb umfasst Einbau, Betrieb und Ablesung von Messeinrichtungen.
+
+Relevant für Smart Meter, Datenqualität, Tarife und Demand Response.
 
 ## Messung in der Quantenmechanik
 
@@ -5873,17 +6979,27 @@ Messung bezeichnet in der Quantenmechanik den Vorgang, durch den aus einem quant
 
 Messung bezeichnet in der Quantenmechanik den Vorgang, durch den aus einem quantenmechanisch beschriebenen Zustand ein beobachtbares Messergebnis hervorgeht.
 
+Die WÖk nutzt den Messbegriff anders: Wirkungsmessung prüft, welche Zustandsveränderungen durch Handlungen, Produkte, Regeln, Kommunikation oder Kapitalflüsse entstehen. Der Anschluss liegt nicht im technischen Messakt, sondern in der Einsicht, dass Messbedingungen und Interpretationsrahmen offengelegt werden müssen.
+
 ## Messwandler
 
 Messwandler wandeln hohe Ströme oder Spannungen in messbare, sichere Größen für Zähler, Schutz- und Messsysteme um.
 
 Messwandler wandeln hohe Ströme oder Spannungen in messbare, sichere Größen für Zähler, Schutz- und Messsysteme um.
 
+Messwandler sichern Datenqualität bei höheren Leistungen und sind relevant für Abrechnung, Schutztechnik und Netztransparenz.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Messwandlerschrank
 
 Ein Messwandlerschrank enthält Messwandler und zugehörige Messkomponenten für Anlagen mit höherer Leistung oder Mittelspannungsanschluss.
 
 Ein Messwandlerschrank enthält Messwandler und zugehörige Messkomponenten für Anlagen mit höherer Leistung oder Mittelspannungsanschluss.
+
+Technischer Planungsbegriff für Ladeparks, Speicher, PV-Anlagen und Gewerbeanschlüsse; relevant für Messkonzept, Abrechnung und Projektkosten.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Meta-kognitive Intervention
 
@@ -5903,11 +7019,17 @@ Mieterstrom beschreibt Strom, der nahe an Mietgebäuden erzeugt und direkt an Be
 
 Mieterstrom beschreibt Strom, der nahe an Mietgebäuden erzeugt und direkt an Bewohner:innen geliefert wird.
 
+Er kann Teilhabe an der Energiewende verbessern, braucht aber faire Verträge, Messkonzepte, Abrechnung, Gebäudeeigentum und Schutz vor Ausschluss.
+
+Energie als Wirkungsinfrastruktur behandeln: Erzeugung, Netze, Speicher, Preise, Resilienz, Teilhabe und Folgewirkungen zusammen bewerten.
+
 ## Militärdiktatur
 
 Eine Militärdiktatur ist eine Herrschaftsform, in der Militär oder Sicherheitsapparate die politische Macht ausüben.
 
 Eine Militärdiktatur ist eine Herrschaftsform, in der Militär oder Sicherheitsapparate die politische Macht ausüben.
+
+Wirkungsrisiko für Grundrechte, Zivilgesellschaft, Rechtsschutz und Gewaltenteilung.
 
 ## Minarchismus
 
@@ -5915,11 +7037,15 @@ Minarchismus fordert einen Minimalstaat, der vor allem Eigentum, Verträge, inne
 
 Minarchismus fordert einen Minimalstaat, der vor allem Eigentum, Verträge, innere und äußere Sicherheit schützt.
 
+Unzureichend, wenn Klima, Plattformmacht, Monopole, Gesundheitsfolgen, Datenmacht oder Externalitäten nicht durch Minimalstaatlichkeit verarbeitet werden können.
+
 ## Minderheitenschutz
 
 Minderheitenschutz sichert Rechte und Schutz von Gruppen, die nicht zur politischen oder gesellschaftlichen Mehrheit gehören.
 
 Minderheitenschutz sichert Rechte und Schutz von Gruppen, die nicht zur politischen oder gesellschaftlichen Mehrheit gehören.
+
+Minderheitenschutz ist eine Wirkungsgrenze. Eine Maßnahme kann nicht demokratisch positiv sein, wenn sie Minderheiten entmenschlicht, entrechtet oder systematisch ausgrenzt.
 
 ## Mindestschutz / Minimum Safeguards
 
@@ -5933,6 +7059,8 @@ Minutenreserve stellt Leistung innerhalb weniger Minuten bereit.
 
 Minutenreserve stellt Leistung innerhalb weniger Minuten bereit.
 
+Ein Reserveinstrument im Stromsystem.
+
 ## Misalignment Year
 
 Ein Misalignment Year bezeichnet ein Jahr, in dem ein Unternehmen, Portfolio oder Plan nicht mit einem definierten Klima- oder Transformationspfad übereinstimmt.
@@ -5945,17 +7073,27 @@ Mitte bezeichnet politisch häufig den Raum zwischen ideologischen Polen, kann a
 
 Mitte bezeichnet politisch häufig den Raum zwischen ideologischen Polen, kann aber je nach Zeit und Diskurs unterschiedlich gerahmt sein.
 
+Nicht automatisch wirkungsfähig. Auch Mitte kann wirkungsschwach sein, wenn sie notwendige Transformation vermeidet.
+
 ## Mittelspannung
 
 Mittelspannung ist eine regionale Verteilnetzebene zwischen Niederspannung und Hochspannung.
 
 Mittelspannung ist eine regionale Verteilnetzebene zwischen Niederspannung und Hochspannung.
 
+Mittelspannung ist ein Infrastrukturhebel: Viele Energiewendeprojekte scheitern nicht an Technologie, sondern an Anschlussleistung, Trafokapazität, Genehmigung, Netzausbau oder Messkonzept.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Mittelspannungsschaltanlage
 
 Eine Mittelspannungsschaltanlage schaltet, schützt und verteilt elektrische Energie auf Mittelspannungsebene.
 
 Eine Mittelspannungsschaltanlage schaltet, schützt und verteilt elektrische Energie auf Mittelspannungsebene.
+
+Relevant für Ladeparks, Speicher, Industrie und technische Anschlussregeln.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## MMT
 
@@ -5975,11 +7113,15 @@ Eine Modellannahme ist eine vereinfachende Voraussetzung, auf der ein Modell auf
 
 Eine Modellannahme ist eine vereinfachende Voraussetzung, auf der ein Modell aufbaut.
 
+Modellannahmen müssen sichtbar sein, weil sie entscheiden, welche Wirkungen gesehen und welche ausgeblendet werden.
+
 ## Modellblindheit
 
 Modellblindheit entsteht, wenn ein Modell durch seine Annahmen relevante Wirkungen systematisch unsichtbar macht.
 
 Modellblindheit entsteht, wenn ein Modell durch seine Annahmen relevante Wirkungen systematisch unsichtbar macht.
+
+Zentral für Kritik an Neoklassik, ESG, BIP, Trickle-down, Sozialismus, Genossenschaftsmythos und reinem Marktdenken.
 
 ## Modellgrenze / Interpretationsgrenze
 
@@ -5987,11 +7129,19 @@ Modellgrenze bezeichnet den Bereich, in dem ein Modell zuverlässig arbeitet, un
 
 Modellgrenze bezeichnet den Bereich, in dem ein Modell zuverlässig arbeitet, unsicher wird oder nicht mehr aussagefähig ist. Interpretationsgrenze bezeichnet die Grenze zwischen Daten, Modell und Deutung.
 
+Dieser Begriff ist für die WÖk zentral. Wirkungsmessung darf nicht als totale Wirklichkeitsabbildung auftreten. Sie muss sagen, was gemessen wurde, welche Daten fehlen, welche Annahmen gelten, welche Unsicherheiten bestehen und welche normativen Entscheidungen in der Bewertung stecken.
+
 ## Moderation und Community-Dynamik
 
 Moderation und Community-Dynamik beschreibt, wie Regeln, Eingriffe, Antwortmuster, Plattformdesign und Gruppenverhalten digitale oder analoge Resonanzräume stabilisieren oder destabilisieren.
 
 Moderation und Community-Dynamik bezeichnet das Zusammenspiel von Regeln, Eingriffen, Rollen, Gruppenverhalten, Plattformdesign und kommunikativer Kultur in digitalen oder analogen Gemeinschaften: Kommentarspalten, Foren, Livestream-Chats, Social-Media-Communities, Podcast-Communities, Bürgerräte, Kultur-Communities, Lernplattformen und lokale Beteiligungsräume.
+
+## Moderationsstandards
+
+Moderationsstandards sind veröffentlichte Regeln und Verfahren für den fairen Umgang mit Beiträgen, Meldungen und Beschwerden in Kommunikationsräumen.
+
+Moderationsstandards sind kein Freibrief für willkürliche Entfernung und keine politische Gesinnungsprüfung. Sie müssen mit Meinungsfreiheit, Gleichbehandlung, Schutz vor rechtswidrigen oder schädlichen Inhalten, Transparenz und wirksamer Anfechtung zusammenpassen. Bei automatisierter Unterstützung muss klar sein, was das System kann, was es nicht kann und wer eine Entscheidung überprüft.
 
 ## Moderner Patriotismus
 
@@ -5999,11 +7149,15 @@ Moderner Patriotismus ist eine offene, demokratische Form von Zugehörigkeit: Me
 
 Moderner Patriotismus ist eine offene, demokratische Form von Zugehörigkeit: Menschen bekennen sich zu Verfassung, Rechtsstaat, Freiheit, Solidarität, öffentlicher Verantwortung und der gemeinsamen Aufgabe, die Lebensbedingungen des Gemeinwesens zu schützen.
 
+Aus WÖk-Sicht ist Patriotismus kein Wert an sich. Entscheidend ist seine Wirkung: Stärkt er Vertrauen, Teilhabe, Verantwortung, Demokratie, Gemeinwohl und internationale Kooperationsfähigkeit – oder erzeugt er Ausschluss, Feindbilder, Überhöhung und Polarisierung?
+
 ## Modularität
 
 Modularität beschreibt einen Aufbau aus austauschbaren, kombinierbaren oder reparierbaren Modulen.
 
 Modularität beschreibt einen Aufbau aus austauschbaren, kombinierbaren oder reparierbaren Modulen.
+
+Sie stärkt Reparatur, Upgradefähigkeit, Remanufacturing und Produktlebensdauer.
 
 ## Molekül-Hierarchie
 
@@ -6017,6 +7171,8 @@ Momentanreserve beschreibt sehr kurzfristige Stabilisierung durch rotierende Mas
 
 Momentanreserve beschreibt sehr kurzfristige Stabilisierung durch rotierende Massen oder technische Ersatzlösungen.
 
+Relevant beim Übergang zu inverterbasierten Erzeugern.
+
 ## Monetäre Souveränität
 
 Monetäre Souveränität bezeichnet die Fähigkeit eines Staates, in eigener Währung zu finanzieren und geldpolitische Institutionen zu steuern.
@@ -6029,17 +7185,23 @@ Monetarismus betont die Rolle der Geldmenge und Geldpolitik für Inflation und w
 
 Monetarismus betont die Rolle der Geldmenge und Geldpolitik für Inflation und wirtschaftliche Stabilität.
 
+Priorität 2, weil für WÖk nur relevant, wenn Geldpolitik als Wirkungsrahmen von Preisen, Investitionen und Verteilung behandelt wird.
+
 ## Monopol
 
 Ein Monopol liegt vor, wenn ein Anbieter einen Markt wesentlich allein kontrolliert.
 
 Ein Monopol liegt vor, wenn ein Anbieter einen Markt wesentlich allein kontrolliert.
 
+Monopole können Preise, Zugang, Innovation und demokratische Handlungsspielräume beeinflussen und brauchen Wirkungs- und Machtprüfung.
+
 ## Moral Hazard
 
 Moral Hazard beschreibt riskanteres Verhalten, wenn Folgen oder Kosten auf andere übertragen werden.
 
 Moral Hazard beschreibt riskanteres Verhalten, wenn Folgen oder Kosten auf andere übertragen werden.
+
+Zentral für Banken, Versicherungen, Klima, Lieferketten, Plattformen und Externalisierung.
 
 ## Moral Licensing
 
@@ -6089,6 +7251,8 @@ Muslimfeindlichkeit beschreibt Abwertung, Ausgrenzung oder Feindbilder gegenübe
 
 Muslimfeindlichkeit beschreibt Abwertung, Ausgrenzung oder Feindbilder gegenüber Muslim:innen oder als muslimisch markierten Menschen.
 
+Wirkungsrisiko für Teilhabe, Sicherheit, Religionsfreiheit, Vertrauen und demokratische Gleichwertigkeit.
+
 ## NACE
 
 NACE ist die europäische Klassifikation wirtschaftlicher Tätigkeiten.
@@ -6125,6 +7289,8 @@ Der Nachtwächterstaat ist ein Minimalstaat, der sich auf Schutz von Eigentum, S
 
 Der Nachtwächterstaat ist ein Minimalstaat, der sich auf Schutz von Eigentum, Sicherheit und Rechtsordnung beschränkt.
 
+Als Grenzmodell hilfreich, um zu klären, welche Wirkungsprobleme reine Schutzfunktionen nicht lösen.
+
 ## Nahbereichsbias
 
 Nahbereichsbias beschreibt die Tendenz, nahe, sichtbare oder persönlich erlebbare Wirkungen stärker zu gewichten als entfernte, abstrakte oder zukünftige Folgen. Er kann dazu führen, dass Zukunftskosten unterschätzt werden.
@@ -6145,17 +7311,25 @@ Natalität bezeichnet bei Arendt die Fähigkeit, etwas Neues zu beginnen.
 
 Natalität bezeichnet bei Arendt die Fähigkeit, etwas Neues zu beginnen.
 
+Wichtig für Transformation, Innovation, demokratisches Handeln und Wirkungsökonomie als neuer Anfang.
+
 ## Nationalismus
 
 Nationalismus überhöht die eigene Nation und grenzt andere Gruppen, Staaten oder Menschen ab. Er kann demokratische, soziale und internationale Kooperationsräume beschädigen.
 
 Nationalismus überhöht die eigene Nation und grenzt andere Gruppen, Staaten oder Menschen ab. Er kann demokratische, soziale und internationale Kooperationsräume beschädigen.
 
+Die WÖk bewertet Nationalismus nicht primär moralisch, sondern nach Wirkung: erzeugt er Feindbilder, Misstrauen, Ausgrenzung, Polarisierung oder Gewaltbereitschaft?
+
 ## Natrium-Ionen-Batterie
 
 Natrium-Ionen-Batterien sind wiederaufladbare Batterien, bei denen Natrium-Ionen als Ladungsträger genutzt werden.
 
 Natrium-Ionen-Batterien sind wiederaufladbare Batterien, bei denen Natrium-Ionen als Ladungsträger genutzt werden.
+
+Sie sind eine mögliche Ergänzung zu Lithium-Ionen-Batterien, vor allem wegen Rohstoffverfügbarkeit und stationärer Anwendungen; Wirkung hängt von Energiedichte, Lebensdauer, Kosten, Materialeinsatz, Sicherheit und Skalierung ab.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Natur-, Landwirtschafts- und Biodiversitätsstandards
 
@@ -6187,11 +7361,17 @@ Ein natürliches Monopol liegt vor, wenn eine Infrastruktur aus Kostengründen e
 
 Ein natürliches Monopol liegt vor, wenn eine Infrastruktur aus Kostengründen effizienter von einem Anbieter betrieben wird, etwa Strom- oder Wassernetze.
 
+Relevant für Netzentgelte, Regulierung, Energieinfrastruktur und Daseinsvorsorge.
+
 ## NCA-Batterie
 
 NCA-Batterien sind Lithium-Ionen-Batterien mit Nickel, Cobalt und Aluminium in der Kathode.
 
 NCA-Batterien sind Lithium-Ionen-Batterien mit Nickel, Cobalt und Aluminium in der Kathode.
+
+NCA ist energiedicht, aber rohstoff- und sicherheitsrelevant und daher wirkungsökonomisch entlang der Lieferkette zu prüfen.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Nebenwirkung
 
@@ -6205,17 +7385,23 @@ Unerwünschte, indirekte, kompensierende oder zurückschlagende Wirkungen system
 
 Unerwünschte, indirekte, kompensierende oder zurückschlagende Wirkungen systematisch vor und während der Umsetzung prüfen.
 
+C07 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Verbindlicher Output: Nebenwirkungsregister mit Wirkpfad, Betroffenen, Schwere, Frühwarnsignal, Gegenmaßnahme und Restunsicherheit.
+
 ## Negative Externalität
 
 Eine negative Externalität ist ein Schaden oder Risiko für Dritte, das nicht im Preis enthalten ist.
 
 Eine negative Externalität ist ein Schaden oder Risiko für Dritte, das nicht im Preis enthalten ist.
 
+Sie erklärt Klima-, Gesundheits-, Sozial- oder Demokratieschäden, die Verursacher nicht vollständig tragen.
+
 ## Negative Freiheit
 
 Negative Freiheit beschreibt Freiheit von äußerem Zwang oder Eingriffen.
 
 Negative Freiheit beschreibt Freiheit von äußerem Zwang oder Eingriffen.
+
+Wichtig, aber nicht ausreichend: Eine Person kann formal frei sein und durch Armut, Informationsasymmetrie, Umweltbelastung oder Machtkonzentration real unfrei werden.
 
 ## negative Wirkung
 
@@ -6229,11 +7415,17 @@ Negativitätsbias beschreibt die Tendenz, negative Informationen stärker zu bea
 
 Negativitätsbias beschreibt die Tendenz, negative Informationen stärker zu beachten und zu gewichten als positive.
 
+Relevant für Medienlogik, Alarm-Frames, politische Polarisierung und gesellschaftliche Stabilität.
+
 ## Neoklassik
 
 Neoklassik bezeichnet ökonomische Ansätze, die Märkte häufig über rational handelnde Akteure, Knappheit, Nutzenmaximierung, Grenzgrößen, Gleichgewicht und Preisbildung modellieren.
 
 Neoklassik bezeichnet ökonomische Ansätze, die Märkte häufig über rational handelnde Akteure, Knappheit, Nutzenmaximierung, Grenzgrößen, Gleichgewicht und Preisbildung modellieren.
+
+Für die WÖk ist die Neoklassik wichtig, weil sie erklärt, warum Preise und Anreize wirken. Ihre Grenze liegt dort, wo reale Wirkung, Macht, Institutionen, ökologische Grenzen, Datenasymmetrien, Care, Demokratie und Nichtlinearität ausgeblendet werden.
+
+Wichtig für Preise, Knappheit, Anreize und Marktkoordination. Ihre Grenze liegt in Vereinfachungen wie vollständiger Information, rationaler Entscheidung, Gleichgewichtsbildern und isolierten Akteuren. WÖk ergänzt reale Zustandsveränderungen, Rückkopplungen, Macht, Zeit, Externalitäten und Wirkungsräume.
 
 ## Neoklassische Förderlogik
 
@@ -6246,6 +7438,10 @@ Neoklassische Förderlogik beurteilt Förderung vor allem über Preise, Anreize 
 Neoliberalismus wird unterschiedlich verwendet. Im heutigen politischen Sprachgebrauch bezeichnet er meist eine Ordnung, die Markt, Wettbewerb, Privatisierung, Deregulierung und Kapitalrendite stark priorisiert.
 
 Neoliberalismus wird unterschiedlich verwendet. Im heutigen politischen Sprachgebrauch bezeichnet er meist eine Ordnung, die Markt, Wettbewerb, Privatisierung, Deregulierung und Kapitalrendite stark priorisiert.
+
+Die WÖk nutzt den Begriff vorsichtig, um die Gefahr einer Marktlogik ohne Wirkungswahrheit zu beschreiben. Wenn Preise Schäden nicht abbilden, werden Freiheit und Effizienz zu Scheinsignalen: Destruktives kann billig erscheinen, weil andere zahlen.
+
+Problematisch, wenn Marktvertrauen ohne Wirkungswahrheit entsteht. Nicht mit Liberalismus oder Neoklassik gleichsetzen.
 
 ## Net Zero
 
@@ -6277,11 +7473,17 @@ Netzanschluss verbindet Anlagen oder Verbraucher mit dem Stromnetz.
 
 Netzanschluss verbindet Anlagen oder Verbraucher mit dem Stromnetz.
 
+Zugang, Kosten und Dauer wirken auf Energiewende, Standortentscheidungen und Teilhabe.
+
 ## Netzanschlussbegehren
 
 Ein Netzanschlussbegehren ist die Anfrage an den Netzbetreiber, eine Anlage an das Netz anzuschließen.
 
 Ein Netzanschlussbegehren ist die Anfrage an den Netzbetreiber, eine Anlage an das Netz anzuschließen.
+
+Die Bearbeitung beeinflusst Investitionsgeschwindigkeit, Standortwahl, Transparenz und Energiewendeumsetzung.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Netzanschlussleistung
 
@@ -6289,11 +7491,19 @@ Netzanschlussleistung beschreibt die am Netzanschluss vereinbarte oder verfügba
 
 Netzanschlussleistung beschreibt die am Netzanschluss vereinbarte oder verfügbare elektrische Leistung.
 
+Sie begrenzt Ladeparks, Speicher, Industrie, PV und Wind und bestimmt Netzentgelte, Baukostenzuschüsse und Lastmanagementbedarf.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Netzanschlusspunkt
 
 Der Netzanschlusspunkt ist der Punkt, an dem eine Anlage mit dem Stromnetz verbunden wird.
 
 Der Netzanschlusspunkt ist der Punkt, an dem eine Anlage mit dem Stromnetz verbunden wird.
+
+Er bestimmt technische Anforderungen, Kosten, Kapazität und oft die Realisierbarkeit von Lade-, Speicher- und Erzeugungsprojekten.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Netzausbau
 
@@ -6301,11 +7511,15 @@ Netzausbau erweitert oder verstärkt Stromnetze.
 
 Netzausbau erweitert oder verstärkt Stromnetze.
 
+Er ist Infrastrukturwirkung mit Kosten-, Akzeptanz-, Flächen- und Versorgungssicherheitsfragen.
+
 ## Netzdienlichkeit
 
 Netzdienlichkeit beschreibt Verhalten, Anlagen oder Steuerung, die das Stromnetz entlasten oder stabilisieren.
 
 Netzdienlichkeit beschreibt Verhalten, Anlagen oder Steuerung, die das Stromnetz entlasten oder stabilisieren.
+
+Ein wichtiger Wirkungshebel für Flexibilität, Tarife, Speicher und Demand Response.
 
 ## Netzebene
 
@@ -6313,11 +7527,17 @@ Netzebenen unterscheiden Spannungsebenen im Stromnetz, etwa Niederspannung, Mitt
 
 Netzebenen unterscheiden Spannungsebenen im Stromnetz, etwa Niederspannung, Mittelspannung, Hochspannung und Höchstspannung.
 
+Sie erklären, warum Energiewendeprojekte unterschiedliche Anschluss-, Mess-, Kosten- und Steuerungsanforderungen haben.
+
+Energie als Wirkungsinfrastruktur behandeln: Erzeugung, Netze, Speicher, Preise, Resilienz, Teilhabe und Folgewirkungen zusammen bewerten.
+
 ## Netzengpass
 
 Ein Netzengpass entsteht, wenn Stromleitungen oder Betriebsmittel nicht genug Transportkapazität haben.
 
 Ein Netzengpass entsteht, wenn Stromleitungen oder Betriebsmittel nicht genug Transportkapazität haben.
+
+Er verursacht Redispatch, Abregelung und Systemkosten.
 
 ## Netzentgelt
 
@@ -6325,11 +7545,15 @@ Netzentgelte sind Entgelte für die Nutzung von Strom- oder Gasnetzen und Bestan
 
 Netzentgelte sind Entgelte für die Nutzung von Strom- oder Gasnetzen und Bestandteil des Endkundenpreises.
 
+Zentrales Feld für Verteilungswirkung, Energiewende-Kosten, Netzfinanzierung, Prosumer-Logik und Standortgerechtigkeit.
+
 ## Netzentgeltsystematik
 
 Netzentgeltsystematik beschreibt, wie Netzkosten verteilt und abgerechnet werden.
 
 Netzentgeltsystematik beschreibt, wie Netzkosten verteilt und abgerechnet werden.
+
+Sie beeinflusst soziale Verteilung, Investitionsanreize, Netzdienlichkeit und Prosumer-Rollen.
 
 ## Netzreserve
 
@@ -6337,11 +7561,19 @@ Die Netzreserve hält Anlagen bereit, um Netzstabilität und Versorgungssicherhe
 
 Die Netzreserve hält Anlagen bereit, um Netzstabilität und Versorgungssicherheit in besonderen Situationen zu unterstützen.
 
+Sie ist ein Instrument gegen Netzengpässe und Versorgungslücken, verursacht aber Kosten und muss mit Netzausbau, Flexibilität und Speicher verglichen werden.
+
+Energie als Wirkungsinfrastruktur behandeln: Erzeugung, Netze, Speicher, Preise, Resilienz, Teilhabe und Folgewirkungen zusammen bewerten.
+
 ## Netzspeicher
 
 Ein Netzspeicher wird zur Stabilisierung, Entlastung oder Flexibilisierung des Stromsystems eingesetzt.
 
 Ein Netzspeicher wird zur Stabilisierung, Entlastung oder Flexibilisierung des Stromsystems eingesetzt.
+
+Er kann Systemkosten senken, muss aber nach Standort, Marktrolle, Regulierung und Verteilungswirkung bewertet werden.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Netzverlust
 
@@ -6349,17 +7581,25 @@ Netzverlust beschreibt Energieverluste beim Transport und der Verteilung von Str
 
 Netzverlust beschreibt Energieverluste beim Transport und der Verteilung von Strom.
 
+Teil der Systemwirkung von Netzstruktur, Spannungsebene und Entfernung.
+
 ## Netzverträglichkeitsprüfung
 
 Die Netzverträglichkeitsprüfung untersucht, ob eine geplante Anlage an einem bestimmten Netzpunkt angeschlossen werden kann, ohne Netzstabilität oder Betriebsmittel zu überlasten.
 
 Die Netzverträglichkeitsprüfung untersucht, ob eine geplante Anlage an einem bestimmten Netzpunkt angeschlossen werden kann, ohne Netzstabilität oder Betriebsmittel zu überlasten.
 
+Sie ist ein methodischer Engpass zwischen Projektidee und realer Infrastrukturwirkung.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Netzwerkeffekt
 
 Ein Netzwerkeffekt liegt vor, wenn der Nutzen eines Angebots mit der Zahl seiner Nutzer:innen steigt.
 
 Ein Netzwerkeffekt liegt vor, wenn der Nutzen eines Angebots mit der Zahl seiner Nutzer:innen steigt.
+
+Besonders wichtig für Plattformkapitalismus, digitale Öffentlichkeit, Ladeinfrastruktur, Datenräume und Marktmacht.
 
 ## Neue Ordnung des Wohlstands
 
@@ -6381,6 +7621,8 @@ Neuigkeitsbias beschreibt die Tendenz, neue oder unerwartete Informationen stär
 
 Neuigkeitsbias beschreibt die Tendenz, neue oder unerwartete Informationen stärker zu beachten.
 
+Relevant für Medien, Innovation, Produktkommunikation und Plattformlogik.
+
 ## Neukombination
 
 Neukombination meint, dass wirtschaftliche Entwicklung durch neue Kombinationen bestehender Produktionsfaktoren, Wissensbestände, Technologien, Kompetenzen und Organisationsformen entsteht.
@@ -6395,11 +7637,15 @@ Neuroplastizität beschreibt die Fähigkeit des Nervensystems, sich durch Erfahr
 
 Neuroplastizität beschreibt die Fähigkeit des Nervensystems, sich durch Erfahrung, Lernen und Übung zu verändern.
 
+Relevant für Wirkungskompetenz, Lernen, Bildung und Resilienz, aber nicht neuro-deterministisch verwenden.
+
 ## Neuropsychologische Wirkmechanismen
 
 Neuropsychologische Wirkmechanismen beschreiben, wie Wahrnehmung, Aufmerksamkeit, Emotion, Gedächtnis und Entscheidung Wirkungspotenziale entfalten oder blockieren.
 
 Neuropsychologische Wirkmechanismen beschreiben, wie Wahrnehmung, Aufmerksamkeit, Emotion, Gedächtnis und Entscheidung Wirkungspotenziale entfalten oder blockieren.
+
+Sie sind keine Wirkung im WÖk-Sinn, sondern Wirkmechanismen, Resonanzverstärker oder Aufnahmebedingungen.
 
 ## neutrale Wirkung
 
@@ -6419,17 +7665,23 @@ Eine NGO ist eine nichtstaatliche, meist gemeinnützige Organisation, die gesell
 
 Eine NGO ist eine nichtstaatliche, meist gemeinnützige Organisation, die gesellschaftliche, humanitäre, ökologische, politische oder soziale Anliegen verfolgt.
 
+NGOs sind wichtige Wirkungsträger, weil sie Betroffene sichtbar machen, Expertise bündeln, Missstände benennen, Hilfe leisten und demokratische Rückkopplung stärken können. Problematisch wird es, wenn Finanzierung, Repräsentationsanspruch, Daten oder Interessen unklar bleiben.
+
 ## NGO-Capture
 
 NGO-Capture beschreibt die Vereinnahmung einer NGO durch Geldgeber, Staaten, Unternehmen, Parteien oder institutionelle Eigeninteressen.
 
 NGO-Capture beschreibt die Vereinnahmung einer NGO durch Geldgeber, Staaten, Unternehmen, Parteien oder institutionelle Eigeninteressen.
 
+Ein Wirkungsrisiko, wenn Organisationen ihren Betroffenenbezug oder ihre Unabhängigkeit verlieren.
+
 ## NGO-Wirkungsprüfung
 
 NGO-Wirkungsprüfung bewertet nicht nur Absicht oder Gemeinnützigkeit einer NGO, sondern tatsächliche Wirkung, Transparenz, Rechenschaft und Betroffenenorientierung.
 
 NGO-Wirkungsprüfung bewertet nicht nur Absicht oder Gemeinnützigkeit einer NGO, sondern tatsächliche Wirkung, Transparenz, Rechenschaft und Betroffenenorientierung.
+
+WÖk-Präzisierungsbegriff: Auch gemeinnützige Akteure brauchen Wirkungsdaten, Governance und Korrekturwege.
 
 ## Nicht-Dualität
 
@@ -6463,6 +7715,8 @@ Nichtlokalität und Nichtseparabilität bezeichnen in der Quantenphysik Eigensch
 
 Nichtlokalität und Nichtseparabilität bezeichnen in der Quantenphysik Eigenschaften verschränkter Systeme, deren Korrelationen sich nicht vollständig durch klassische lokale Einzelzustände erklären lassen.
 
+Für die WÖk ist der passende soziale Anschluss nicht Nichtlokalität, sondern Nichtisolierbarkeit. Wirtschaft, Klima, Medien, Gesundheit, Lieferketten und Demokratie lassen sich nicht sinnvoll getrennt bewerten, weil ihre Wirkungen gekoppelt sind.
+
 ## Nichttriviale Maschine
 
 Eine nichttriviale Maschine reagiert abhängig von innerem Zustand, Geschichte und früheren Ausgaben.
@@ -6474,6 +7728,8 @@ Bei nichttrivialen Maschinen hängt der Output nicht nur vom Input ab. Frühere 
 Nichttriviale Systeme liefern bei gleichem Input nicht zwangsläufig denselben Output. Ihr Verhalten hängt von Struktur, Geschichte, Erwartungen, Rückkopplungen und Lernprozessen ab.
 
 Nichttriviale Systeme liefern bei gleichem Input nicht zwangsläufig denselben Output. Ihr Verhalten hängt von Struktur, Geschichte, Erwartungen, Rückkopplungen und Lernprozessen ab.
+
+Gesellschaft, Wirtschaft, Natur, Medien, Organisationen und Demokratie sind für die WÖk nichttriviale Systeme. Darum reichen lineare Stellschrauben nicht aus.
 
 ## Nichttriviales System
 
@@ -6493,11 +7749,19 @@ Niederspannung ist die niedrigste Spannungsebene im Stromnetz und versorgt typis
 
 Niederspannung ist die niedrigste Spannungsebene im Stromnetz und versorgt typischerweise Haushalte, kleinere Betriebe und kleinere Ladeeinrichtungen.
 
+Relevant für Wallboxen, kleine PV-Anlagen, Heimspeicher, Verteilnetze und lokale Engpässe.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Niederspannungshauptverteilung / NSHV
 
 Die Niederspannungshauptverteilung verteilt elektrische Energie innerhalb einer Kundenanlage auf Niederspannungsebene.
 
 Die Niederspannungshauptverteilung verteilt elektrische Energie innerhalb einer Kundenanlage auf Niederspannungsebene.
+
+Wichtig für Ladeinfrastruktur, Gebäudetechnik, Schutz, Messung und Erweiterbarkeit.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Niklas Luhmann
 
@@ -6523,6 +7787,10 @@ NMC-Batterien sind Lithium-Ionen-Batterien mit Nickel, Mangan und Kobalt in der 
 
 NMC-Batterien sind Lithium-Ionen-Batterien mit Nickel, Mangan und Kobalt in der Kathode.
 
+Relevant für Energiedichte und Elektromobilität, aber besonders wirkungssensibel wegen Nickel- und Kobalt-Lieferketten.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## No-Regret-Anwendung
 
 Eine No-Regret-Anwendung ist eine Maßnahme, die unter vielen plausiblen Zukunftsszenarien nützt oder Risiken mindert und nur geringe Nachteile hat.
@@ -6535,6 +7803,8 @@ No-regret-Maßnahmen sind Schritte, die auch dann Nutzen erzeugen, wenn zukünft
 
 No-regret-Maßnahmen sind Schritte, die auch dann Nutzen erzeugen, wenn zukünftige Entwicklungen unsicher sind. Beispiele sind Energieeffizienz, Hitzeschutz, Wasserrückhalt, Bildungsqualität, Gesundheitsprävention und Cyberbasisschutz.
 
+Die WÖk nutzt No-regret-Maßnahmen als Einstiegslogik: Sie erhöhen Resilienz, senken Verlustleistung und erweitern Handlungsmöglichkeiten, ohne auf perfekte Prognosen zu warten.
+
 ## Nocebo-Effekt
 
 Negative Erwartungen können tatsächliche negative Erfahrungen, Symptome oder Bewertungen verstärken.
@@ -6546,6 +7816,8 @@ Der Nocebo-Effekt zeigt, dass Erwartung nicht nur Wahrnehmung, sondern auch Erle
 Das Non-Aggression Principle hält Gewalt, Zwang oder Eingriffe in Eigentum und Person grundsätzlich für unzulässig, außer zur Verteidigung.
 
 Das Non-Aggression Principle hält Gewalt, Zwang oder Eingriffe in Eigentum und Person grundsätzlich für unzulässig, außer zur Verteidigung.
+
+Die WÖk-Frage lautet: Was gilt als Eingriff, wenn Schäden über Klima, Luft, Wasser, Plattformmacht oder Desinformation auf andere verlagert werden?
 
 ## Normalisierung
 
@@ -6564,6 +7836,10 @@ Normalisierung verändert Resonanzräume. Was häufig genug vorkommt, wirkt weni
 Normalladen beschreibt Laden mit niedrigerer Ladeleistung über längere Standzeiten.
 
 Normalladen beschreibt Laden mit niedrigerer Ladeleistung über längere Standzeiten.
+
+Kann netz- und batterieschonend sein, wenn Standzeiten, Tarife und Lastmanagement passen.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Normative Konformität
 
@@ -6607,6 +7883,8 @@ Zero Waste zielt darauf, Abfall durch Design, Vermeidung, Wiederverwendung und R
 
 Zero Waste zielt darauf, Abfall durch Design, Vermeidung, Wiederverwendung und Rückführung möglichst vollständig zu vermeiden.
 
+Wirkung hängt davon ab, ob Vermeidung real ist und keine Schäden verlagert werden.
+
 ## Nullsummenfehler
 
 Der Nullsummenfehler ist die irrige Annahme, dass der Gewinn einer Person oder Gruppe zwangsläufig den gleich großen Verlust einer anderen bedeuten müsse.
@@ -6619,11 +7897,15 @@ Nutzenergie ist die Energie, die nach Umwandlungsverlusten für den gewünschten
 
 Nutzenergie ist die Energie, die nach Umwandlungsverlusten für den gewünschten Zweck verfügbar ist.
 
+Beispiele sind Raumwärme, Licht, Bewegung und mechanische Arbeit.
+
 ## Nutzenmaximierung
 
 Nutzenmaximierung beschreibt die Annahme, dass Akteure Entscheidungen treffen, um ihren subjektiven Nutzen zu maximieren.
 
 Nutzenmaximierung beschreibt die Annahme, dass Akteure Entscheidungen treffen, um ihren subjektiven Nutzen zu maximieren.
+
+Nutzen ist nicht identisch mit Wirkung. Hoher individueller Nutzen kann negative Wirkung auf andere erzeugen.
 
 ## Nutzer-, Stakeholder- und Betroffenenreise
 
@@ -6631,11 +7913,15 @@ Erfahrungen und Zustandsveränderungen unterschiedlicher Rollen über Zeit vergl
 
 Erfahrungen und Zustandsveränderungen unterschiedlicher Rollen über Zeit vergleichen.
 
+K05 gehört zur Kategorie „Wirkungswertströme, Prozesse, Services und Flow“. Verbindlicher Output: Mehrperspektivische Journey mit Touchpoints, Emotionen, Barrieren, Macht, Daten, Wirkung und Schutzbedarf.
+
 ## Nutzungsdauerverlängerung
 
 Nutzungsdauerverlängerung hält Produkte länger nutzbar.
 
 Nutzungsdauerverlängerung hält Produkte länger nutzbar.
+
+Wichtige Maßnahmen sind Wartung, Reparatur, Softwareupdates, Ersatzteile und modulare Konstruktion.
 
 ## Oberschwingungen
 
@@ -6643,11 +7929,19 @@ Oberschwingungen sind Frequenzanteile in elektrischen Netzen, die von der Grundf
 
 Oberschwingungen sind Frequenzanteile in elektrischen Netzen, die von der Grundfrequenz abweichen und Netzqualität beeinflussen können.
 
+Relevant für Ladeinfrastruktur, Wechselrichter, Netzqualität und technische Anschlussregeln.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## OCPP
 
 OCPP ist ein Kommunikationsprotokoll zwischen Ladepunkten und Backend-Systemen.
 
 OCPP ist ein Kommunikationsprotokoll zwischen Ladepunkten und Backend-Systemen.
+
+Interoperabilität kann Anbieterbindung reduzieren und Betrieb, Monitoring und Abrechnung erleichtern.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## OECD
 
@@ -6685,6 +7979,8 @@ OEF kann Organisationsdaten liefern, die in Geschäftsmodellwirkung, Scorecards 
 
 Öffentliche Güter sind Güter, von deren Nutzung niemand leicht ausgeschlossen werden kann und deren Nutzung andere kaum verringert.
 
+Saubere Luft, Wissen, Sicherheit oder demokratische Öffentlichkeit brauchen besondere Governance, weil Märkte sie oft unterbereitstellen.
+
 ## Öffentliche Netto-Wirkung
 
 Öffentliche Netto-Wirkung ist die bilanzierte Wirkung staatlichen Handelns auf Mensch, Planet und Demokratie nach Einbezug positiver Wirkungen, negativer Wirkungen, Folgekosten und Schutzgrenzen.
@@ -6715,17 +8011,29 @@ Der öffentliche Raum ist bei Arendt der Raum, in dem Menschen durch Sprechen un
 
 Der öffentliche Raum ist bei Arendt der Raum, in dem Menschen durch Sprechen und Handeln voreinander erscheinen und gemeinsam politische Wirklichkeit schaffen.
 
+Relevant für Medien, Demokratie, Resonanzräume und politische Wirksamkeit.
+
 ## Öffentlicher T-SROI
 
 Öffentlicher T-SROI bewertet, ob staatliche Investitionen, Förderprogramme, Haushalte oder öffentliche Schulden im Verhältnis zum öffentlichen Mitteleinsatz transformative Systemwirkung erzeugen.
 
-Öffentlicher T-SROI ist die auf öffentliche Mittel bezogene Anwendung des Transformational Social Return on Investment. Er setzt den diskontierten bewerteten Transformationsnutzen ins Verhältnis zu einem klar abgegrenzten öffentlichen Mitteleinsatz. Er fragt damit nicht nur nach Nutzen, sondern auch danach, ob öffentliche Mittel belastbare Hebel für Resilienz, Prävention, Infrastruktur, Diffusion oder Pfadveränderung schaffen.
+Öffentlicher T-SROI ist die auf öffentliche Mittel bezogene Anwendung des Transformational Social Return on Investment. Er setzt den diskontierten, kausal zugerechneten Netto-Nutzen in Euro ins Verhältnis zu einem klar abgegrenzten diskontierten öffentlichen Mitteleinsatz. Er fragt damit nicht nur nach Nutzen, sondern auch danach, ob öffentliche Mittel belastbare und belegte Beiträge zu Prävention, Infrastruktur oder Pfadveränderung schaffen.
 
 ## Öffentlichkeit
 
 Öffentlichkeit ist der gesellschaftliche Raum, in dem Informationen, Deutungen, Kritik, Konflikte und gemeinsame Wirklichkeitsbezüge entstehen.
 
 Öffentlichkeit ist der gesellschaftliche Raum, in dem Informationen, Deutungen, Kritik, Konflikte und gemeinsame Wirklichkeitsbezüge entstehen.
+
+Die WÖk versteht Öffentlichkeit nicht als bloßen Marktplatz von Meinungen, sondern als demokratische Infrastruktur.
+
+Öffentlichkeit ist ein demokratischer Wirkungsraum. Ohne Öffentlichkeit keine Kontrolle von Macht.
+
+## Öffentlichkeit als Wirkungsraum
+
+Öffentlichkeit als Wirkungsraum ist der pluralistische, grundrechtsgebundene Raum, in dem Informationen, Deutungen und Aushandlungen Handlungsmöglichkeiten, Vertrauen und institutionelle Entscheidungen beeinflussen können.
+
+Öffentlichkeit als Wirkungsraum bezeichnet die zugänglichen Kommunikations-, Informations- und Aushandlungsräume, in denen Wahrnehmungen, Deutungen, Vertrauen und Handlungsoptionen entstehen und auf Institutionen, Märkte und Politik zurückwirken können. Medieninhalte, Plattformregeln oder Kampagnen haben darin zunächst Wirkungspotenzial; eingetretene Wirkung muss mit einem Wirkungspfad, betroffenen Gruppen, Zeitraum, Daten und Gegenhypothesen belegt werden. Der Begriff legitimiert weder Manipulation noch eine Bewertung von Personen oder Gesinnungen.
 
 ## Offsetting / Kompensation
 
@@ -6739,11 +8047,15 @@ Die Offshore-Netzumlage finanziert bestimmte Kosten der Offshore-Netzanbindung.
 
 Die Offshore-Netzumlage finanziert bestimmte Kosten der Offshore-Netzanbindung.
 
+Teil der Strompreisbestandteile mit Energiewende- und Verteilungswirkung.
+
 ## Offshore-Windenergie
 
 Offshore-Windenergie erzeugt Strom aus Windkraftanlagen auf See.
 
 Offshore-Windenergie erzeugt Strom aus Windkraftanlagen auf See.
+
+Hohe Volllaststunden, aber besondere Netz-, Meeres-, Bau- und Systemkostenfragen.
 
 ## Ökofeminismus
 
@@ -6791,6 +8103,8 @@ Mehrere Organisationen, Plattformen und öffentliche Akteure auf gemeinsame Wirk
 
 Mehrere Organisationen, Plattformen und öffentliche Akteure auf gemeinsame Wirkung, faire Lastenteilung und robuste Regeln ausrichten.
 
+L08 gehört zur Kategorie „Product Operating Model, Teams, Plattformen und Ökosysteme“. Verbindlicher Output: Orchestrierungsmodell mit Rollen, gemeinsamen Outcomes, Daten, Finanzierung, Entscheidungsrechten, Konflikt- und Exit-Regeln.
+
 ## Ökosystemleistungen / Ökosystemfunktionen
 
 Ökosystemleistungen und Ökosystemfunktionen bezeichnen Beiträge von Ökosystemen zu menschlichem Leben, Gesundheit, Stabilität und Wirtschaft, etwa Bestäubung, Wasserreinigung, Bodenfruchtbarkeit, Klimaregulation oder Erholung.
@@ -6805,11 +8119,15 @@ Oligarchie beschreibt Herrschaft oder starken Einfluss weniger mächtiger Akteur
 
 Oligarchie beschreibt Herrschaft oder starken Einfluss weniger mächtiger Akteure.
 
+Wirkungsrisiko, wenn Zugang, Medien, Kapital, Gesetzgebung oder öffentliche Güter durch kleine Gruppen kontrolliert werden.
+
 ## Oligopol
 
 Ein Oligopol liegt vor, wenn wenige Anbieter einen Markt dominieren.
 
 Ein Oligopol liegt vor, wenn wenige Anbieter einen Markt dominieren.
+
+Relevant für Preise, Zugang, Lieferketten, Medien, Energie und Plattformen.
 
 ## Ölkraftwerk
 
@@ -6825,6 +8143,10 @@ Der On-Board-Charger ist das Ladegerät im Fahrzeug, das beim AC-Laden Wechselst
 
 Der On-Board-Charger ist das Ladegerät im Fahrzeug, das beim AC-Laden Wechselstrom in Gleichstrom umwandelt.
 
+Er begrenzt AC-Ladeleistung und beeinflusst Alltagstauglichkeit, Kosten und Ladeinfrastrukturbedarf.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## One Health
 
 One Health betrachtet die Gesundheit von Menschen, Tieren und Umwelt als miteinander verbunden.
@@ -6836,6 +8158,8 @@ One Health verbindet Humanmedizin, Tiergesundheit, Ökosysteme, Ernährung, Wass
 Onshore-Windenergie erzeugt Strom aus Windkraftanlagen an Land.
 
 Onshore-Windenergie erzeugt Strom aus Windkraftanlagen an Land.
+
+Wichtig für regionale Wertschöpfung, Akzeptanz, Flächenplanung und Netzintegration.
 
 ## Open Science
 
@@ -6867,11 +8191,15 @@ Opportunitätskosten sind der Wert der besten Alternative, auf die durch eine En
 
 Opportunitätskosten sind der Wert der besten Alternative, auf die durch eine Entscheidung verzichtet wird.
 
+Die WÖk erweitert Opportunitätskosten um verpasste positive Wirkung und künftige Folgekosten.
+
 ## Opposition
 
 Opposition bezeichnet politische Kräfte, die nicht regieren und Regierungshandeln kritisieren, kontrollieren oder Alternativen anbieten.
 
 Opposition bezeichnet politische Kräfte, die nicht regieren und Regierungshandeln kritisieren, kontrollieren oder Alternativen anbieten.
+
+Opposition ist kein Störfaktor, sondern ein demokratischer Korrekturmechanismus.
 
 ## Oppositionsunterdrückung
 
@@ -6879,11 +8207,17 @@ Oppositionsunterdrückung beschreibt die Einschränkung, Kriminalisierung oder A
 
 Oppositionsunterdrückung beschreibt die Einschränkung, Kriminalisierung oder Ausschaltung politischer Gegenkräfte.
 
+Schwächt Pluralismus, Machtkontrolle und demokratische Wechselmöglichkeit.
+
 ## Ordoliberalismus
 
 Ordoliberalismus betont, dass Märkte eine rechtliche, institutionelle und politische Ordnung brauchen. Wettbewerb, Privateigentum und Vertragsfreiheit sind nicht naturwüchsig, sondern müssen gegen Machtkonzentration und Verzerrung geschützt werden.
 
 Ordoliberalismus betont, dass Märkte eine rechtliche, institutionelle und politische Ordnung brauchen. Wettbewerb, Privateigentum und Vertragsfreiheit sind nicht naturwüchsig, sondern müssen gegen Machtkonzentration und Verzerrung geschützt werden.
+
+Die WÖk ist ordnungspolitisch anschlussfähig: Sie setzt nicht auf zentrale Detailsteuerung, sondern auf Rahmenbedingungen, in denen dezentrale Akteure bessere Wirkung erzeugen können. Neu ist, dass Ordnung nicht nur Wettbewerb schützt, sondern auch Wirkung sichtbar und rückgekoppelt macht.
+
+Anschlussfähig bei Ordnung und Wettbewerb. WÖk-Korrektur: Wettbewerbsordnung braucht Wirkungswahrheit für Mensch, Planet und Demokratie.
 
 ## Organisation Environmental Footprint / OEF
 
@@ -6896,6 +8230,8 @@ OEF ergänzt produktbezogene Ansätze um organisationsbezogene Umweltwirkung.
 Die Organisation als Wirkungssystem aus Zweck, Rollen, Prozessen, Netzwerken, Ressourcen, Daten, Anreizen, Governance und Lernen gestalten.
 
 Die Organisation als Wirkungssystem aus Zweck, Rollen, Prozessen, Netzwerken, Ressourcen, Daten, Anreizen, Governance und Lernen gestalten.
+
+G01 gehört zur Kategorie „Organisation, Führung und Kultur“. Verbindlicher Output: Organisationsblueprint mit Wirkungskern, Betriebsmodell und Entwicklungsprioritäten.
 
 ## Orientierung
 
@@ -6919,15 +8255,19 @@ Outcome bezeichnet die bei Zielgruppen oder Systemen eingetretene Veränderung u
 
 ## Outcome- und Empfängerlandkarte
 
-Verhaltens-, Beziehungs-, Praxis- und Zustandsveränderungen bei konkreten Wirkungsempfängern statt nur organisationsinterne Outputs planen.
+Die Outcome- und Empfängerlandkarte plant Verhaltens-, Beziehungs-, Praxis- und Zustandsveränderungen bei konkreten Wirkungsempfängern, statt allein organisationsinterne Leistungen zu zählen.
 
-Verhaltens-, Beziehungs-, Praxis- und Zustandsveränderungen bei konkreten Wirkungsempfängern statt nur organisationsinterne Outputs planen.
+Die Outcome- und Empfängerlandkarte plant Verhaltens-, Beziehungs-, Praxis- und Zustandsveränderungen bei konkreten Wirkungsempfängern, statt allein organisationsinterne Leistungen zu zählen.
+
+C04 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Erwartetes Arbeitsergebnis: eine empfängerbezogene Outcome-Landkarte mit Fortschrittsmarkern, Einflussbereich und Beobachtungsplan.
 
 ## Outcome-Stream-Map
 
 Mehrere Produkte, Services und Prozesse auf einen gemeinsamen Empfänger-Outcome ausrichten.
 
 Mehrere Produkte, Services und Prozesse auf einen gemeinsamen Empfänger-Outcome ausrichten.
+
+K02 gehört zur Kategorie „Wirkungswertströme, Prozesse, Services und Flow“. Verbindlicher Output: Outcome Stream mit Teiloutcomes, Beiträgen, Capabilities, Produkten, KII und Abhängigkeiten.
 
 ## Outgroup-Homogenität
 
@@ -6973,11 +8313,15 @@ Pareto-Effizienz beschreibt einen Zustand, in dem niemand besser gestellt werden
 
 Pareto-Effizienz beschreibt einen Zustand, in dem niemand besser gestellt werden kann, ohne jemand anderen schlechter zu stellen.
 
+Kein ausreichender Gerechtigkeits- oder Wirkungsmaßstab. Sie kann bestehende Ungleichheit und externe Schäden stabilisieren.
+
 ## Parlament
 
 Ein Parlament ist die gewählte Volksvertretung, die Gesetze beschließt, Regierung kontrolliert und öffentliche Debatten führt.
 
 Ein Parlament ist die gewählte Volksvertretung, die Gesetze beschließt, Regierung kontrolliert und öffentliche Debatten führt.
+
+Parlamente sind zentrale Rückkopplungsorte der Demokratie.
 
 ## Parlamentarische Demokratie
 
@@ -6985,11 +8329,15 @@ In einer parlamentarischen Demokratie ist das Parlament zentraler Ort demokratis
 
 In einer parlamentarischen Demokratie ist das Parlament zentraler Ort demokratischer Gesetzgebung und Kontrolle der Regierung.
 
+Relevant für Machtbegrenzung, Rechenschaft und Regierungskontrolle.
+
 ## Parteistaat
 
 Ein Parteistaat ist eine Ordnung, in der eine Partei staatliche Institutionen, Verwaltung, Medien oder Recht stark dominiert.
 
 Ein Parteistaat ist eine Ordnung, in der eine Partei staatliche Institutionen, Verwaltung, Medien oder Recht stark dominiert.
+
+Wirkungsrisiko, wenn Staat, Partei und Gesellschaft nicht mehr unterscheidbar bleiben und Korrektur blockiert wird.
 
 ## Partizipation
 
@@ -6997,11 +8345,15 @@ Partizipation bedeutet Beteiligung an politischen, sozialen oder institutionelle
 
 Partizipation bedeutet Beteiligung an politischen, sozialen oder institutionellen Entscheidungen.
 
+Partizipation ist nicht automatisch gute Wirkung. Sie braucht Zugang, Fairness, Information, Rückkopplung und echte Einflussmöglichkeiten.
+
 ## Partizipative Demokratie
 
 Partizipative Demokratie erweitert demokratische Beteiligung über Wahlen hinaus.
 
 Partizipative Demokratie erweitert demokratische Beteiligung über Wahlen hinaus.
+
+Sie kann Rückkopplung verbessern, wenn Beteiligung nicht nur symbolisch bleibt.
 
 ## Patriarchale Dividende
 
@@ -7063,17 +8415,31 @@ Perowskit-Solarzellen nutzen Materialien mit Perowskit-Struktur zur Umwandlung v
 
 Perowskit-Solarzellen nutzen Materialien mit Perowskit-Struktur zur Umwandlung von Licht in elektrische Energie.
 
+Wichtiges PV-Innovationsfeld; WÖk-Bewertung umfasst Wirkungsgrad, Stabilität, Toxizität, Rohstoffe, Lebensdauer, Recycling und Skalierbarkeit.
+
 ## Persona
 
 Eine Persona ist ein verdichtetes, fiktives Nutzungs- oder Zielgruppenprofil, das Bedürfnisse, Motive, Barrieren und Kontexte anschaulich macht.
 
 Eine Persona ist ein verdichtetes, fiktives Nutzungs- oder Zielgruppenprofil, das Bedürfnisse, Motive, Barrieren und Kontexte anschaulich macht.
 
+In der WÖk kann die Persona helfen, Wirkungsempfänger greifbar zu machen. Sie sollte aber nicht nur Kund:innen darstellen, sondern auch indirekt Betroffene: Beschäftigte, Lieferkettenarbeiter:innen, Nachbarschaften, Kinder, künftige Generationen oder Ökosysteme.
+
+Personas verbessern Anschlussfähigkeit, dürfen Wirkungsempfänger aber nicht auf Kund:innen reduzieren. Auch Nicht-Kund:innen, zukünftige Generationen, Ökosysteme und Institutionen zählen.
+
 ## Personalisierte Macht
 
 Personalisierte Macht beschreibt politische Ordnung, in der Entscheidungen stark von einer Person und ihrem Umfeld abhängen.
 
 Personalisierte Macht beschreibt politische Ordnung, in der Entscheidungen stark von einer Person und ihrem Umfeld abhängen.
+
+Wirkungsrisiko, wenn Verfahren, Institutionen und Rechenschaft durch Loyalität und Nähe ersetzt werden.
+
+## Personenbewertung
+
+Personenbewertung ordnet einzelne Menschen nach Verhalten, Merkmalen, Ansichten oder vermuteter Konformität ein. Sie ist kein Instrument der Wirkungsökonomie.
+
+Personenbewertung ist die Bewertung, Rangordnung oder Zuordnung einzelner Menschen anhand von Verhalten, persönlichen Merkmalen, Ansichten, Beziehungen oder vermuteter Loyalität. Sie wird besonders problematisch, wenn daraus automatisierte Nachteile, Zugangshürden, Überwachung oder soziale Sanktionen folgen. Die Wirkungsökonomie verwendet keine Personen-, Gesinnungs- oder Verhaltensscores. Ihr Gegenstand sind überprüfbare Wirkungen und Risiken von Produkten, Tätigkeiten, Organisationen, Programmen, Regeln, Haushalten und Kapitalflüssen. Grundrechte, Datenschutz, Verhältnismäßigkeit, Rechtsschutz und demokratische Kontrolle begrenzen jede daten- oder regelgestützte Entscheidung.
 
 ## Pessimismus-Bias
 
@@ -7087,11 +8453,21 @@ Drucker steht für Management als Aufgabe, Wirksamkeit, Kundennutzen und die Unt
 
 Drucker steht für Management als Aufgabe, Wirksamkeit, Kundennutzen und die Unterscheidung zwischen Effektivität und Effizienz.
 
+Die WÖk übernimmt nicht Kundennutzen als letzten Maßstab. Sie ergänzt: Kundennutzen kann auch negative Wirkung erzeugen, wenn Preise Schäden nicht abbilden.
+
+Die WÖk ergänzt: Der Gewinntest ist nur belastbar, wenn Preise Wirkung abbilden.
+
+Als Bezugslinie verwenden, nicht als Autoritätsbeweis oder biografischen Lexikoneintrag.
+
 ## Pfadabhängigkeit / Lock-in
 
 Pfadabhängigkeit bedeutet, dass frühere Entscheidungen spätere Möglichkeiten prägen und begrenzen. Lock-in liegt vor, wenn Infrastrukturen, Verträge, Kompetenzen, Gewohnheiten oder Kapital einen Wechsel erschweren.
 
 Pfadabhängigkeit bedeutet, dass frühere Entscheidungen spätere Möglichkeiten prägen und begrenzen. Lock-in liegt vor, wenn Infrastrukturen, Verträge, Kompetenzen, Gewohnheiten oder Kapital einen Wechsel erschweren.
+
+Die WÖk nutzt den Begriff für fossile Infrastruktur, Autostädte, Lieferketten, Gebäude, Plattformen, Datenformate, Geschäftsmodelle und politische Routinen. Wirkung entsteht nicht nur durch Einzelentscheidung, sondern durch Pfade, die spätere Handlungsmöglichkeiten öffnen oder schließen.
+
+Als normalen menschlichen oder systemischen Verarbeitungsmechanismus beschreiben, nicht als Abwertung von Personen.
 
 ## Pflege als Wirkleistung
 
@@ -7105,11 +8481,15 @@ Der photoelektrische Effekt beschreibt die Freisetzung oder Anregung von Elektro
 
 Der photoelektrische Effekt beschreibt die Freisetzung oder Anregung von Elektronen durch Licht.
 
+Grundlagenbegriff für Photovoltaik und direkte Umwandlung von Licht in elektrische Energie.
+
 ## Photovoltaik
 
 Photovoltaik wandelt Licht direkt in elektrische Energie um.
 
 Photovoltaik wandelt Licht direkt in elektrische Energie um.
+
+Zentraler Wirkungshebel der Energiewende; braucht Flächen, Materialien, Netzintegration, Speicher, Wechselrichter, Recycling und Lieferkettenverantwortung.
 
 ## Physical Climate Risk
 
@@ -7181,11 +8561,15 @@ Direkte und indirekte Netzwerkeffekte, Moderation, Daten-, Ranking- und Machtlog
 
 Direkte und indirekte Netzwerkeffekte, Moderation, Daten-, Ranking- und Machtlogiken sowie gesellschaftliche Wirkungen einer Plattform gestalten.
 
+F12 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: Plattformmodell mit Akteursseiten, Wert-/Datenflüssen, Wirkmechanismen, Externalitäten, Governance und Schutz.
+
 ## Plattform-als-Wirkungsinfrastruktur-Canvas
 
 Interne oder externe Plattformen nach ihrem Beitrag zu Flow, Qualität, Zugänglichkeit, Macht und gesellschaftlicher Wirkung gestalten.
 
 Interne oder externe Plattformen nach ihrem Beitrag zu Flow, Qualität, Zugänglichkeit, Macht und gesellschaftlicher Wirkung gestalten.
+
+L06 gehört zur Kategorie „Product Operating Model, Teams, Plattformen und Ökosysteme“. Verbindlicher Output: Plattformcanvas mit Nutzerteams, Services, Self-Service, Daten, Governance, Lock-in, KII und Schutzregeln.
 
 ## Plattformarbeit
 
@@ -7205,11 +8589,21 @@ Plattformlogik und Algorithmen beschreiben, wie digitale Plattformen durch Ranki
 
 Plattformlogik und Algorithmen bezeichnet in der Wirkungsökonomie die Art und Weise, wie digitale Plattformen öffentliche Kommunikation strukturieren. Plattformen sind keine neutralen Kanäle: Sie setzen Regeln, sammeln Daten, gestalten Interfaces, optimieren Reichweite, wählen Rankingkriterien, steuern Werbung, ermöglichen Community-Dynamiken, moderieren Inhalte und entscheiden, welche Inhalte wem, wann und wie oft angezeigt werden.
 
+## Plattformregulierung
+
+Plattformregulierung sind rechtsstaatliche Regeln und Aufsicht für Plattformen, etwa zu Transparenz, Daten, Werbung, Empfehlungssystemen und Beschwerden.
+
+Ihre Aufgabe ist nicht, eine erwünschte Meinung durchzusetzen. Eine rechtsstaatliche Plattformregulierung verbindet Grundrechte, Meinungsfreiheit, Datenschutz, Schutz vor rechtswidrigen oder nachweislich schädlichen Praktiken sowie nachvollziehbare Verfahren. Pflichten müssen begründet, verhältnismäßig, überprüfbar und anfechtbar sein.
+
 ## Plug & Charge
 
 Plug & Charge ermöglicht Authentifizierung und Abrechnung beim Laden ohne separate Karte oder App.
 
 Plug & Charge ermöglicht Authentifizierung und Abrechnung beim Laden ohne separate Karte oder App.
+
+Komfortgewinn mit Daten-, Sicherheits-, Interoperabilitäts- und Marktmachtfragen.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Pluralismus
 
@@ -7217,11 +8611,15 @@ Pluralismus beschreibt die Anerkennung unterschiedlicher Meinungen, Interessen, 
 
 Pluralismus beschreibt die Anerkennung unterschiedlicher Meinungen, Interessen, Lebensformen, Gruppen und Perspektiven innerhalb einer Gesellschaft.
 
+Pluralismus ist ein demokratischer Wirkungszustand. Er ermöglicht Streit ohne Feindschaft.
+
 ## Pluralismusfeindlichkeit
 
 Pluralismusfeindlichkeit beschreibt Ablehnung politischer, sozialer oder kultureller Vielfalt und legitimer Gegenpositionen.
 
 Pluralismusfeindlichkeit beschreibt Ablehnung politischer, sozialer oder kultureller Vielfalt und legitimer Gegenpositionen.
+
+Demokratisches Wirkungsrisiko, weil Streit, Minderheitenschutz und Korrekturfähigkeit geschwächt werden.
 
 ## Pluralistische Ignoranz
 
@@ -7235,11 +8633,15 @@ Pluralität bedeutet, dass Menschen gleichwertig, aber verschieden sind und aus 
 
 Pluralität bedeutet, dass Menschen gleichwertig, aber verschieden sind und aus unterschiedlichen Perspektiven handeln und urteilen.
 
+Pluralität ist eine Bedingung demokratischer Wirkung.
+
 ## Plutokratie
 
 Plutokratie beschreibt eine Ordnung, in der Reichtum politischen Einfluss stark bestimmt.
 
 Plutokratie beschreibt eine Ordnung, in der Reichtum politischen Einfluss stark bestimmt.
+
+Wirkungsrisiko für Gleichwertigkeit, Demokratie, Rechenschaft und öffentliche Infrastruktur.
 
 ## Polarisierung
 
@@ -7253,11 +8655,15 @@ Policy Entrepreneurship beschreibt Akteure, die politische Ideen, Reformen oder 
 
 Policy Entrepreneurship beschreibt Akteure, die politische Ideen, Reformen oder Lösungen aktiv entwickeln, platzieren und durchsetzen wollen.
 
+Kann positiv wirken, wenn reale Probleme adressiert, Daten offengelegt und Beteiligung ermöglicht werden. Problematisch wird es bei verdeckten Interessen oder fehlender demokratischer Rückkopplung.
+
 ## Policy-Laundering
 
 Policy-Laundering beschreibt, wenn partikulare Interessen, Konzerninteressen oder Ideologien über scheinbar neutrale Studien, Thinktanks oder Expertengremien als allgemeine Sachlogik erscheinen.
 
 Policy-Laundering beschreibt, wenn partikulare Interessen, Konzerninteressen oder Ideologien über scheinbar neutrale Studien, Thinktanks oder Expertengremien als allgemeine Sachlogik erscheinen.
+
+Policy-Laundering ist ein demokratisches Wirkungsrisiko, weil es Eigeninteressen in den Mantel neutraler Expertise verschiebt.
 
 ## Policy-Netzwerk
 
@@ -7265,11 +8671,15 @@ Ein Policy-Netzwerk ist ein Zusammenspiel von Organisationen, Personen, Daten, I
 
 Ein Policy-Netzwerk ist ein Zusammenspiel von Organisationen, Personen, Daten, Interessen und Kommunikationskanälen, die politische Themen, Vorschläge oder Entscheidungen beeinflussen.
 
+Policy-Netzwerke können Expertise bündeln oder politische Macht unsichtbar koordinieren. Wirkung entsteht über Zugang, Wiederholung, Reichweite, Personal, Finanzierung und Anschlussfähigkeit.
+
 ## Politische Bildung
 
 Politische Bildung stärkt die Fähigkeit, politische Prozesse, Rechte, Konflikte und Verantwortung zu verstehen und mitzugestalten.
 
 Politische Bildung stärkt die Fähigkeit, politische Prozesse, Rechte, Konflikte und Verantwortung zu verstehen und mitzugestalten.
+
+Politische Bildung ist Wirkungskompetenz für Demokratie.
 
 ## Politische Übergangspfade
 
@@ -7287,11 +8697,15 @@ Politischer Liberalismus betont Grundrechte, Rechtsstaat, Gewaltenteilung, Plura
 
 Politischer Liberalismus betont Grundrechte, Rechtsstaat, Gewaltenteilung, Pluralismus und Schutz individueller Freiheit vor willkürlicher Macht.
 
+Wichtig für Demokratie, Rechtsschutz, Datenschutz, Meinungsfreiheit und Schutz vor technokratischer Wirkungssteuerung.
+
 ## Politischer Vorraum
 
 Der politische Vorraum umfasst Akteure und Prozesse, die Politik vorbereiten, beeinflussen oder rahmen, bevor formelle Entscheidungen fallen.
 
 Der politische Vorraum umfasst Akteure und Prozesse, die Politik vorbereiten, beeinflussen oder rahmen, bevor formelle Entscheidungen fallen.
+
+Dort entstehen Narrative, Programme, Begriffe, Gesetzesvorschläge und Vertrauensverschiebungen. Deshalb ist der politische Vorraum ein wichtiger Wirkungsraum.
 
 ## Politisches System
 
@@ -7299,11 +8713,15 @@ Das politische System umfasst Institutionen, Verfahren, Akteure und Regeln, durc
 
 Das politische System umfasst Institutionen, Verfahren, Akteure und Regeln, durch die politische Entscheidungen entstehen und kontrolliert werden.
 
+Wirkungsraum für Macht, Beteiligung, Gesetzgebung, Verwaltung, Öffentlichkeit und Korrektur.
+
 ## Populismus
 
 Populismus stellt häufig ein homogenes Volk einer angeblich korrupten Elite gegenüber und vereinfacht komplexe Konflikte in Freund-Feind-Muster.
 
 Populismus stellt häufig ein homogenes Volk einer angeblich korrupten Elite gegenüber und vereinfacht komplexe Konflikte in Freund-Feind-Muster.
+
+Kann reale Repräsentationslücken sichtbar machen, wird aber zum Wirkungsrisiko, wenn Pluralismus, Fakten, Institutionen oder Minderheitenschutz delegitimiert werden.
 
 ## Portfolio-Wirkung
 
@@ -7317,11 +8735,15 @@ Eine positive Externalität ist ein Nutzen für Dritte, der nicht oder nicht vol
 
 Eine positive Externalität ist ein Nutzen für Dritte, der nicht oder nicht vollständig vergütet wird.
 
+Relevant für Bildung, Care, Prävention, Wissen, Vertrauen und ökologische Regeneration.
+
 ## Positive Freiheit
 
 Positive Freiheit beschreibt die Fähigkeit, das eigene Leben aktiv zu gestalten und reale Handlungsmöglichkeiten zu nutzen.
 
 Positive Freiheit beschreibt die Fähigkeit, das eigene Leben aktiv zu gestalten und reale Handlungsmöglichkeiten zu nutzen.
+
+Zentral, weil Freiheit ohne Zugang, Gesundheit, Bildung, Sicherheit, Information und Teilhabe leer bleiben kann.
 
 ## positive Netto-Wirkung
 
@@ -7341,11 +8763,17 @@ Ein PPA ist ein langfristiger Stromliefervertrag zwischen Erzeuger und Abnehmer.
 
 Ein PPA ist ein langfristiger Stromliefervertrag zwischen Erzeuger und Abnehmer.
 
+Relevant für Finanzierung, Risikoallokation, Grünstrom und Investitionssicherheit.
+
 ## Power Quality / Spannungsqualität
 
 Spannungsqualität beschreibt die Einhaltung technischer Qualitätsmerkmale der elektrischen Spannung.
 
 Spannungsqualität beschreibt die Einhaltung technischer Qualitätsmerkmale der elektrischen Spannung.
+
+Relevant für Ladeparks, Industrie, Wechselrichter, Betriebssicherheit und Netzverträglichkeit.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Power-to-X
 
@@ -7353,17 +8781,23 @@ Power-to-X wandelt Strom in andere Energieträger oder Produkte wie Wasserstoff,
 
 Power-to-X wandelt Strom in andere Energieträger oder Produkte wie Wasserstoff, Wärme, synthetische Kraftstoffe oder Chemikalien um.
 
+Relevant für Sektorkopplung, Speicher und Industrie, aber mit Umwandlungsverlusten.
+
 ## Prädiktive Verarbeitung
 
 Prädiktive Verarbeitung beschreibt die Idee, dass Wahrnehmung stark durch Erwartungen und Vorhersagen geprägt wird.
 
 Prädiktive Verarbeitung beschreibt die Idee, dass Wahrnehmung stark durch Erwartungen und Vorhersagen geprägt wird.
 
+Relevant für Wirklichkeitskonstruktion, kognitive Dissonanz, Framing und Faktenreaktanz.
+
 ## Präferenzen
 
 Präferenzen beschreiben Vorlieben oder Rangordnungen von Optionen.
 
 Präferenzen beschreiben Vorlieben oder Rangordnungen von Optionen.
+
+Präferenzen sind nicht naturgegeben. Sie werden durch Kultur, Werbung, Preise, Status, Salienz, Gewohnheit, Plattformlogik und soziale Normen geprägt.
 
 ## Prävention
 
@@ -7382,6 +8816,8 @@ Prävention als Wirkleistung bewertet vorbeugende Maßnahmen nach vermiedenen Sc
 Präventionsdividende bezeichnet den gesellschaftlichen Nutzen, der entsteht, wenn Schäden gar nicht erst eintreten: vermiedene Krankheiten, Katastrophen, Schulabbrüche, Pflegebrüche, Cyberangriffe, Desinformation oder Klimaschäden.
 
 Präventionsdividende bezeichnet den gesellschaftlichen Nutzen, der entsteht, wenn Schäden gar nicht erst eintreten: vermiedene Krankheiten, Katastrophen, Schulabbrüche, Pflegebrüche, Cyberangriffe, Desinformation oder Klimaschäden.
+
+Der Begriff hilft, unsichtbare Wirkleistung sichtbar zu machen. In alten Systemen sieht man Reparaturkosten, aber nicht vermiedene Schäden. Die WÖk bewertet Prävention als positive Netto-Wirkung und muss sie in Haushalten, Versicherungen, Kapital und T-SROI abbilden.
 
 ## Präventionsökonomie
 
@@ -7409,11 +8845,15 @@ Preise, Gebühren, Boni, Steuern, Vergütung, Defaults und nicht monetäre Signa
 
 Preise, Gebühren, Boni, Steuern, Vergütung, Defaults und nicht monetäre Signale so gestalten, dass sie Wirkung sichtbar machen und keine schädlichen Nebenanreize erzeugen.
 
+F13 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: Anreizarchitektur mit Zielverhalten, Wirkmechanismus, Verteilung, Gegenanreiz, Schutz und Monitoring.
+
 ## Pressefreiheit
 
 Pressefreiheit schützt journalistische Arbeit vor staatlicher oder privater Unterdrückung.
 
 Pressefreiheit schützt journalistische Arbeit vor staatlicher oder privater Unterdrückung.
+
+Pressefreiheit ist ein Frühindikator demokratischer Qualität und ein Schutz gegen Propaganda und Machtmissbrauch.
 
 ## Primärenergie
 
@@ -7421,11 +8861,15 @@ Primärenergie ist Energie in natürlicher oder ursprünglicher Form vor Umwandl
 
 Primärenergie ist Energie in natürlicher oder ursprünglicher Form vor Umwandlung.
 
+Beispiele sind Kohle, Erdgas, Rohöl, Uran, Sonnenstrahlung, Wind, Wasserkraft und Biomasse.
+
 ## Primärregelung
 
 Primärregelung stabilisiert die Netzfrequenz sehr kurzfristig.
 
 Primärregelung stabilisiert die Netzfrequenz sehr kurzfristig.
+
+Ein Detailbegriff der Systemdienstleistungen.
 
 ## Priming
 
@@ -7439,6 +8883,8 @@ Das Principal-Agent-Problem beschreibt Zielkonflikte und Informationsasymmetrien
 
 Das Principal-Agent-Problem beschreibt Zielkonflikte und Informationsasymmetrien zwischen Auftraggeber:innen und Beauftragten.
 
+Relevant für Management, Politik, Kapitalmärkte, Lieferketten, Prüfungen und Wirkungsrat.
+
 ## Privathaushaltsmythos
 
 Privathaushaltsmythos bezeichnet die falsche Gleichsetzung des Staates mit einem privaten Haushalt, obwohl Staaten über Steuer-, Rechts- und institutionelle Gestaltungsmacht verfügen.
@@ -7450,6 +8896,8 @@ Privathaushaltsmythos bezeichnet die falsche Gleichsetzung des Staates mit einem
 Privatisierung beschreibt die Übertragung öffentlicher Aufgaben, Güter oder Unternehmen in private Eigentums- oder Betriebsformen.
 
 Privatisierung beschreibt die Übertragung öffentlicher Aufgaben, Güter oder Unternehmen in private Eigentums- oder Betriebsformen.
+
+Nicht automatisch gut oder schlecht. Entscheidend ist die Wirkung auf Zugang, Preis, Qualität, Resilienz, Demokratie und Langfristigkeit.
 
 ## Privatkredit-Frame
 
@@ -7469,17 +8917,23 @@ Ursachen, Kernproblem und Folgewirkungen in einer ersten gerichteten Struktur or
 
 Ursachen, Kernproblem und Folgewirkungen in einer ersten gerichteten Struktur ordnen und später in ein dynamisches Modell überführen.
 
+B03 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Verbindlicher Output: Problembaum mit Wurzelursachen, vermittelnden Ursachen, Kernzustand und Wirkungsfolgen.
+
 ## Problem–Wirkungs–System–Markt-Fit
 
 Prüfen, ob Problemrelevanz, Wirkungsmechanismus, Systemverträglichkeit, Markt-/Finanzierungslogik und organisatorische Fähigkeit gleichzeitig ausreichend passen.
 
 Prüfen, ob Problemrelevanz, Wirkungsmechanismus, Systemverträglichkeit, Markt-/Finanzierungslogik und organisatorische Fähigkeit gleichzeitig ausreichend passen.
 
+F09 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: Fit-Profil mit fünf Dimensionen, Engpass, Evidenz und nächstem Lernschritt.
+
 ## Process-Mining- und Realitätsreview
 
 Tatsächliche Prozessabläufe aus Ereignisdaten mit Sollmodell, Wirkung und Kontrollen vergleichen.
 
 Tatsächliche Prozessabläufe aus Ereignisdaten mit Sollmodell, Wirkung und Kontrollen vergleichen.
+
+K08 gehört zur Kategorie „Wirkungswertströme, Prozesse, Services und Flow“. Verbindlicher Output: Reality Map mit Varianten, Durchlaufzeiten, Abweichungen, Wirkungsrisiken und priorisierten Untersuchungen.
 
 ## Product Carbon Footprint / PCF
 
@@ -7499,6 +8953,8 @@ Product-as-a-Service verkauft Nutzung oder Funktion statt Eigentum am Produkt.
 
 Product-as-a-Service verkauft Nutzung oder Funktion statt Eigentum am Produkt.
 
+Kann Kreislaufwirkung stärken, wenn Anbieter Anreize für Langlebigkeit, Wartung und Rücknahme haben; kann aber Plattformmacht erzeugen.
+
 ## Product-Market Fit
 
 Product-Market Fit beschreibt, dass ein Produkt eine tragfähige Nachfrage in einem Markt trifft.
@@ -7517,6 +8973,8 @@ Produkt-Markt-Wirkungs-Fit bezeichnet den Zustand, in dem ein Angebot nicht nur 
 
 Produkt-Markt-Wirkungs-Fit bezeichnet den Zustand, in dem ein Angebot nicht nur Kundennachfrage trifft, sondern zugleich eine positive Netto-Wirkung im relevanten Wirkungsraum erzeugt.
 
+Der Begriff kann Start-up- und Innovationssprache an die WÖk anschließen. Er verhindert, dass Produkt-Markt-Fit allein als Nachfragebeweis gelesen wird. Nachfrage kann auch destruktive Wirkung skalieren.
+
 ## Produktdaten
 
 Produktdaten sind strukturierte Informationen über Herkunft, Materialien, Nutzung, Emissionen, Reparierbarkeit, Risiken und Wirkungen eines Produkts.
@@ -7528,6 +8986,8 @@ Produktdaten bezeichnen die strukturierte, möglichst überprüfbare Datengrundl
 Finanzierung von zeitlich begrenzten Projekten zu dauerhaften Produkten, Outcomes und Lernoptionen verschieben.
 
 Finanzierung von zeitlich begrenzten Projekten zu dauerhaften Produkten, Outcomes und Lernoptionen verschieben.
+
+L07 gehört zur Kategorie „Product Operating Model, Teams, Plattformen und Ökosysteme“. Verbindlicher Output: Portfolio mit Produkt-/Outcome-Budgets, Capabilities, KII, Lernmeilensteinen und Stop-/Reallokationsregeln.
 
 ## Produktivitätsgewinne
 
@@ -7547,6 +9007,8 @@ Wirkungen von Rohstoffen über Herstellung, Distribution, Nutzung, Wartung und E
 
 Wirkungen von Rohstoffen über Herstellung, Distribution, Nutzung, Wartung und Ende des Lebenszyklus gemeinsam gestalten.
 
+F10 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: Lebenszyklusprofil mit Hotspots, Empfängern, Daten, Kreisläufen, Grenzen und Designentscheidungen.
+
 ## Produktscorecard
 
 Die Produktscorecard ist das Bewertungsinstrument der Wirkungsökonomie, das Produktdaten in überprüfbare Wirkungsscores für zentrale Wirkungsfelder übersetzt.
@@ -7565,6 +9027,8 @@ Zusammengehörige Initiativen, Capabilities, Übergänge und Benefits in einer k
 
 Zusammengehörige Initiativen, Capabilities, Übergänge und Benefits in einer koordinierten Transformationsarchitektur verbinden.
 
+N02 gehört zur Kategorie „Portfolio, Programme, Delivery und Impact & Benefits Realization“. Verbindlicher Output: Program Blueprint mit Outcomes, Workstreams, Abhängigkeiten, Meilensteinen, Benefits, Governance und Risiken.
+
 ## Programmatik-Praxis-Lücke
 
 Die Programmatik-Praxis-Lücke beschreibt die Differenz zwischen programmatischen Zielen, Versprechen oder Leitbildern und der tatsächlich umgesetzten Wirkung. Sie zeigt, ob politische oder organisationale Sprache in reale Zustandsveränderung übergeht.
@@ -7579,11 +9043,15 @@ Progressiv bezeichnet eine politische Orientierung, die gesellschaftliche Verän
 
 Progressiv bezeichnet eine politische Orientierung, die gesellschaftliche Veränderung, Reform, Gleichstellung, Modernisierung oder Erweiterung von Rechten betont.
 
+Nicht automatisch wirkungspositiv. Eine progressive Maßnahme ist wirkungsfähig, wenn sie reale Zustände verbessert, Risiken senkt, Nebenwirkungen beachtet und demokratisch korrigierbar bleibt.
+
 ## Project 2025
 
 Project 2025 ist ein von der Heritage Foundation initiiertes US-amerikanisches Projekt zur Vorbereitung politischer Programme, Personalstrukturen und Trainings für eine konservative Administration.
 
 Project 2025 ist ein von der Heritage Foundation initiiertes US-amerikanisches Projekt zur Vorbereitung politischer Programme, Personalstrukturen und Trainings für eine konservative Administration.
+
+Relevant, weil es zeigt, dass Politik nicht erst durch gewählte Regierung wirkt, sondern bereits durch Policy-Papiere, Personalpools, Trainings, institutionelle Vorbereitung und Umsetzungsarchitektur.
 
 ## Projektions-Bias
 
@@ -7597,11 +9065,15 @@ Propaganda ist strategische Kommunikation, die Wahrnehmung, Emotion und Verhalte
 
 Propaganda ist strategische Kommunikation, die Wahrnehmung, Emotion und Verhalten einseitig beeinflussen soll.
 
+Wirkungsrisiko, wenn Wahrheit, Pluralität, Urteilskraft und freie Meinungsbildung verdrängt werden.
+
 ## Prosumer
 
 Prosumer verbrauchen und erzeugen Energie.
 
 Prosumer verbrauchen und erzeugen Energie.
+
+Relevant für PV, Eigenverbrauch, Netzentgelte, Dezentralisierung, Teilhabe und Verteilungswirkung.
 
 ## Prozess- und Systemintegration
 
@@ -7609,11 +9081,15 @@ Wirkungsentscheidungen, Daten, Rollen und Kontrollen in bestehende Kernprozesse 
 
 Wirkungsentscheidungen, Daten, Rollen und Kontrollen in bestehende Kernprozesse und IT-Systeme einbauen, ohne Parallelbürokratie zu schaffen.
 
+H03 gehört zur Kategorie „Umsetzung, Monitoring, Lernen und Assurance“. Verbindlicher Output: Integrationsplan je Prozess mit Entscheidungspunkt, Daten, Rolle, System, Kontrolle und Vereinfachung.
+
 ## Prozess-KII und Wirkungskontrollpunkte
 
 Prozessleistung mit tatsächlicher Wirkung, Risiken und Schutzkontrollen verbinden.
 
 Prozessleistung mit tatsächlicher Wirkung, Risiken und Schutzkontrollen verbinden.
+
+K06 gehört zur Kategorie „Wirkungswertströme, Prozesse, Services und Flow“. Verbindlicher Output: KII- und Kontrollplan je Prozessstufe mit Definition, Datenquelle, Schwelle, Owner und Eskalation.
 
 ## Prozessdenken
 
@@ -7633,17 +9109,19 @@ Räume und Regeln schaffen, in denen Risiken, Grenzverletzungen, Fehler und abwe
 
 Räume und Regeln schaffen, in denen Risiken, Grenzverletzungen, Fehler und abweichende Perspektiven früh geäußert werden können.
 
+G06 gehört zur Kategorie „Organisation, Führung und Kultur“. Verbindlicher Output: Widerspruchsvereinbarung mit Kanälen, Reaktionsstandard, Schutz, Eskalation und Lernroutine.
+
 ## Psychologischer Wirkungscheck
 
-Analyse, welche kognitiven Effekte, emotionalen Trigger und Gesprächsmuster eine Aussage aktiviert.
+Der psychologische Wirkungscheck prüft als Hypothese, welche Aufmerksamkeit, Deutung, Gefühle oder Reaktionen eine Aussage oder Maßnahme in einem bestimmten Kontext auslösen könnte.
 
-Analyse, welche kognitiven Effekte, emotionalen Trigger und Gesprächsmuster eine Aussage aktiviert.
+Der psychologische Wirkungscheck ist ein strukturierter Prüfschritt für Kommunikationsmaßnahmen, Aussagen oder Gestaltungselemente. Er beschreibt Zielgruppe, Situation, mögliche Mechanismen wie Framing oder Reaktanz, erwartete Reaktionen, Gegenwirkungen und die Daten, mit denen eine tatsächliche Veränderung geprüft werden könnte. Er ist keine klinische Diagnose, keine Absichtsunterstellung und kein Beweis, dass eine Wirkung bereits eingetreten ist. Der Check übersetzt psychologische Plausibilität in eine offene Wirkungsannahme: Erst eine definierte Referenz, geeignete Beobachtung, Datenqualität und eine Gegenhypothese erlauben eine belastbarere Aussage über tatsächliche Veränderung.
 
 ## Psychologisches Stöckchen
 
-Aussage oder Frage, die weniger klären soll, sondern eine emotionale oder defensive Reaktion auslösen will.
+Ein psychologisches Stöckchen ist im WÖk-Glossar eine umgangssprachliche Bezeichnung für eine Formulierung, die eine Diskussion von der Sachfrage auf eine schnelle emotionale oder defensive Reaktion lenken kann.
 
-Aussage oder Frage, die weniger klären soll, sondern eine emotionale oder defensive Reaktion auslösen will.
+„Psychologisches Stöckchen“ ist ein WÖk-Arbeitsbegriff für eine Aussage oder Frage, die eine Diskussion möglicherweise in eine reaktive Schleife zieht: etwa durch einen starken Trigger, eine falsche Voraussetzung, Beweislastumkehr oder Themenverschiebung. Der Begriff beschreibt ein beobachtbares Diskursmuster, keine Diagnose und keinen sicheren Nachweis einer Absicht. Aus einem einzelnen Satz lässt sich nicht zuverlässig ableiten, ob jemand täuschen, provozieren oder lediglich ungenau formulieren wollte. Die angemessene Reaktion ist daher nicht ein Gegenangriff, sondern das Muster zu markieren, die Sache zu präzisieren, die Belegfrage zurückzugeben und eine offene Wirkungsfrage zu stellen.
 
 ## PtL-Kraftstoff
 
@@ -7656,6 +9134,8 @@ PtL-Kraftstoff ist ein synthetischer Kraftstoff aus Strom, Wasserstoff und Kohle
 Public Affairs bezeichnet professionelle Kommunikation und Interessenvertretung gegenüber Politik, Verwaltung, Öffentlichkeit und Stakeholdern.
 
 Public Affairs bezeichnet professionelle Kommunikation und Interessenvertretung gegenüber Politik, Verwaltung, Öffentlichkeit und Stakeholdern.
+
+Legitim als Schnittstelle, aber wirkungssensibel bei Zugang, Transparenz, Framing, Studien und Gesetzesnähe.
 
 ## Public Purpose
 
@@ -7675,11 +9155,17 @@ Ein Pufferspeicher im Ladepark speichert Energie lokal, um Lastspitzen zu senken
 
 Ein Pufferspeicher im Ladepark speichert Energie lokal, um Lastspitzen zu senken, Ladeleistung bereitzustellen oder Netzanschlussleistung zu begrenzen.
 
+Wichtig für HPC-Standorte, Netzentgelte, Baukostenzuschüsse, Mittelspannungsanschluss und Demand Response.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Pumpspeicher
 
 Pumpspeicher speichern Energie durch Hochpumpen von Wasser und spätere Stromerzeugung.
 
 Pumpspeicher speichern Energie durch Hochpumpen von Wasser und spätere Stromerzeugung.
+
+Bewährte Speichertechnologie mit Standort- und Naturräumen.
 
 ## Purpose-Washing
 
@@ -7692,6 +9178,10 @@ Purpose-Washing bezeichnet die irreführende oder substanzarme Darstellung eines
 Pyrometallurgie nutzt hohe Temperaturen zur Rückgewinnung von Metallen.
 
 Pyrometallurgie nutzt hohe Temperaturen zur Rückgewinnung von Metallen.
+
+Relevant für Batterierecycling, aber wirkungssensibel wegen Energieeinsatz, Emissionen und Materialausbeute.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Qualifikationsverlust
 
@@ -7711,11 +9201,15 @@ Eine QUANGO ist eine formal nichtstaatliche oder halbunabhängige Organisation m
 
 Eine QUANGO ist eine formal nichtstaatliche oder halbunabhängige Organisation mit enger staatlicher Finanzierung, Einbindung oder Steuerung.
 
+Nicht automatisch problematisch, aber transparenzpflichtig. Entscheidend ist, ob staatliche Nähe offen erkennbar und demokratisch kontrolliert ist.
+
 ## Quantenbatterie
 
 Eine Quantenbatterie ist ein Forschungs-Konzept zur Energiespeicherung, das quantenphysikalische Effekte nutzen soll.
 
 Eine Quantenbatterie ist ein Forschungs-Konzept zur Energiespeicherung, das quantenphysikalische Effekte nutzen soll.
+
+Derzeit primär Forschungsfeld und keine heutige Lösung für Netzspeicher, Elektromobilität oder Haushaltsbatterien.
 
 ## Quantencomputer
 
@@ -7723,11 +9217,15 @@ Quantencomputer sind Rechner, die quantenmechanische Eigenschaften wie Superposi
 
 Quantencomputer sind Rechner, die quantenmechanische Eigenschaften wie Superposition und Verschränkung nutzen, um bestimmte Problemklassen anders zu bearbeiten als klassische Computer.
 
+Für die WÖk ist wichtig: Quantencomputer haben Wirkungspotenziale in Wissenschaft, Materialentwicklung, Chemie, Kryptografie und Optimierung, aber auch Wirkungsrisiken für Cybersicherheit, Machtkonzentration und technologische Abhängigkeit. Ihre Bewertung muss nüchtern bleiben: Potenzial ist noch keine eingetretene Wirkung.
+
 ## Quantenfeldtheorie
 
 Quantenfeldtheorie ist ein theoretischer Rahmen, der Quantenmechanik, Felder und spezielle Relativität verbindet und in der modernen Teilchenphysik zentral ist.
 
 Quantenfeldtheorie ist ein theoretischer Rahmen, der Quantenmechanik, Felder und spezielle Relativität verbindet und in der modernen Teilchenphysik zentral ist.
+
+Für die WÖk hat Quantenfeldtheorie vor allem eine begriffliche Warnfunktion: Wirklichkeit ist nicht immer am besten als Summe isolierter Dinge zu beschreiben. Felder, Wechselwirkungen und Zustände können grundlegender sein als einzelne Objekte. Sozial übertragen heißt das nicht Quantenfeld, sondern Wirkungsraum, Systemzustand und Interdependenz.
 
 ## Quanteninformation
 
@@ -7735,11 +9233,15 @@ Quanteninformation beschäftigt sich mit der Verarbeitung, Übertragung und Spei
 
 Quanteninformation beschäftigt sich mit der Verarbeitung, Übertragung und Speicherung von Information unter Nutzung quantenmechanischer Eigenschaften wie Superposition und Verschränkung.
 
+Für die WÖk ist Quanteninformation vor allem bei Innovation, Sicherheitsarchitektur, Kryptografie, Dateninfrastruktur und Technologiefolgenabschätzung relevant. Sie ist ein Feld mit Wirkungspotenzialen und Wirkungsrisiken: Forschung, Materialsimulation, Sensorik, Kommunikation, aber auch Cyber- und Sicherheitsrisiken.
+
 ## Quantenmaterialien
 
 Quantenmaterialien haben besondere Eigenschaften, die wesentlich durch quantenphysikalische Effekte bestimmt werden.
 
 Quantenmaterialien haben besondere Eigenschaften, die wesentlich durch quantenphysikalische Effekte bestimmt werden.
+
+Relevant für Photovoltaik, Batterien, Sensorik, Leistungselektronik, Supraleitung und neue Speichertechnologien.
 
 ## Quantenmechanik
 
@@ -7747,11 +9249,15 @@ Quantenmechanik ist die mathematische Theorie, mit der physikalische Zustände, 
 
 Quantenmechanik ist die mathematische Theorie, mit der physikalische Zustände, Messungen und Wahrscheinlichkeiten auf der Ebene sehr kleiner Systeme beschrieben werden.
 
+Die WÖk nutzt Quantenmechanik nicht als Sozialtheorie, sondern als Gegenbild zur naiven Idee, alle Wirklichkeit lasse sich wie eine triviale Maschine behandeln. Sie sensibilisiert für Zustände, Messprozesse, Wahrscheinlichkeiten, Modellgrenzen und die Frage, was eine Messung sichtbar macht - und was nicht.
+
 ## Quantenmetapher
 
 Eine Quantenmetapher nutzt Begriffe aus der Quantenphysik bildhaft, ohne eine physikalische Gleichsetzung zu behaupten.
 
 Eine Quantenmetapher nutzt Begriffe aus der Quantenphysik bildhaft, ohne eine physikalische Gleichsetzung zu behaupten.
+
+Die WÖk darf Quantenmetaphern nur sparsam verwenden. Zulässig sind präzise Analogien für Messgrenzen, Modellabhängigkeit, Möglichkeitsräume oder Nicht-Reduktionismus. Unzulässig sind Behauptungen, soziale Wirklichkeit funktioniere quantenmechanisch.
 
 ## Quantenmystik / Quantenmissbrauch
 
@@ -7759,11 +9265,17 @@ Quantenmystik bezeichnet die unsachliche Verwendung quantenphysikalischer Begrif
 
 Quantenmystik bezeichnet die unsachliche Verwendung quantenphysikalischer Begriffe zur scheinwissenschaftlichen Begründung spiritueller, politischer, therapeutischer oder gesellschaftlicher Behauptungen.
 
+Für die WÖk ist dieser Abgrenzungsbegriff wichtig, weil die Wirkungsökonomie wissenschaftlich anschlussfähig, aber nicht pseudo-naturwissenschaftlich auftreten darf. Quantenbegriffe dürfen nur dort verwendet werden, wo sie sachlich korrekt, begrenzt und transparent eingesetzt werden.
+
 ## Quantenphysik
 
 Quantenphysik bezeichnet den Teil der Physik, der das Verhalten von Materie, Energie, Licht und Information auf atomaren und subatomaren Skalen beschreibt.
 
 Quantenphysik bezeichnet den Teil der Physik, der das Verhalten von Materie, Energie, Licht und Information auf atomaren und subatomaren Skalen beschreibt.
+
+Für die WÖk ist Quantenphysik kein Begründungsfundament, sondern ein erkenntnistheoretischer Anschluss. Sie zeigt, dass Wirklichkeit nicht immer mit den intuitiven Bildern klassischer Alltagsmechanik verstanden werden kann. Das stärkt die WÖk-Kritik an linearen Stellschrauben, Scheinsicherheit und mechanistischer Steuerung.
+
+Sie ist keine Energiequelle, sondern Grundlage für Halbleiter, Photovoltaik, Sensorik, neue Materialien, Batterieforschung, Quantencomputer und Quantensimulation.
 
 ## Quantenpunkt
 
@@ -7771,11 +9283,15 @@ Ein Quantenpunkt ist ein nanoskaliges Halbleitermaterial, dessen optische und el
 
 Ein Quantenpunkt ist ein nanoskaliges Halbleitermaterial, dessen optische und elektronische Eigenschaften durch Quanteneffekte und Größe bestimmt werden.
 
+Relevant für Displays, Sensorik, Photovoltaik und neue Solarzellendesigns; Materialgesundheit und Recycling sind zu bewerten.
+
 ## Quantensimulation
 
 Quantensimulation nutzt Quantensysteme oder Quantencomputer zur Modellierung komplexer Materialien, Moleküle oder physikalischer Prozesse.
 
 Quantensimulation nutzt Quantensysteme oder Quantencomputer zur Modellierung komplexer Materialien, Moleküle oder physikalischer Prozesse.
+
+Relevant für Batteriematerialien, Katalyse, Solarzellen, Chemie, Medikamente und Materialentwicklung.
 
 ## Quantensolarzelle
 
@@ -7783,11 +9299,15 @@ Quantensolarzellen nutzen quantenphysikalische Effekte oder nanoskalige Material
 
 Quantensolarzellen nutzen quantenphysikalische Effekte oder nanoskalige Materialien wie Quantenpunkte, um Lichtabsorption und Energieumwandlung zu verbessern.
 
+Forschungs- und Innovationsfeld, keine heutige Standardtechnologie. Wirkung hängt von Wirkungsgrad, Stabilität, Materialgesundheit, Skalierbarkeit, Rohstoffen, Recycling und Lebenszyklus ab.
+
 ## Quantentechnologie
 
 Quantentechnologie nutzt quantenphysikalische Effekte für Sensorik, Kommunikation, Rechnen, Simulation, Materialien oder Energie.
 
 Quantentechnologie nutzt quantenphysikalische Effekte für Sensorik, Kommunikation, Rechnen, Simulation, Materialien oder Energie.
+
+Sie kann Wirkungspotenziale erzeugen, muss aber Energieverbrauch, Datenmacht, Sicherheitsrisiken, Infrastruktur und demokratische Kontrolle berücksichtigen.
 
 ## Quantisierung / Quantum
 
@@ -7795,11 +9315,17 @@ Quantisierung bedeutet, dass bestimmte physikalische Größen nicht beliebig kon
 
 Quantisierung bedeutet, dass bestimmte physikalische Größen nicht beliebig kontinuierlich, sondern in diskreten Einheiten oder Zuständen auftreten können.
 
+Für die WÖk ist daran vor allem die Abgrenzung wichtig: Wirkung wird nicht „in Quanten“ gemessen. WÖk-Scores, Wirkungsklassen und WÖk-IDs sind soziale, ökologische und ökonomische Bewertungsinstrumente, keine physikalischen Quanten.
+
 ## Quartiersenergie
 
 Quartiersenergie betrachtet Erzeugung, Speicher, Wärme, Strom, Mobilität und Verbrauch in einem räumlichen Quartier.
 
 Quartiersenergie betrachtet Erzeugung, Speicher, Wärme, Strom, Mobilität und Verbrauch in einem räumlichen Quartier.
+
+Relevant für Wärmewende, Mieterstrom, Ladeinfrastruktur, soziale Verteilung, Sanierung und kommunale Wirkungsplanung.
+
+Energie als Wirkungsinfrastruktur behandeln: Erzeugung, Netze, Speicher, Preise, Resilienz, Teilhabe und Folgewirkungen zusammen bewerten.
 
 ## Quartierswirkung
 
@@ -7812,6 +9338,8 @@ Im Quartier treffen Wohnkosten, Hitze, Grünflächen, Pflege, Schulen, Mobilitä
 Ein Qubit ist die grundlegende Informationseinheit eines Quantencomputers. Anders als ein klassisches Bit kann es in quantenmechanischen Zuständen beschrieben werden, die Superposition und Verschränkung ermöglichen.
 
 Ein Qubit ist die grundlegende Informationseinheit eines Quantencomputers. Anders als ein klassisches Bit kann es in quantenmechanischen Zuständen beschrieben werden, die Superposition und Verschränkung ermöglichen.
+
+Für die WÖk ist das Qubit kein Kernbegriff. Es gehört in die Technologie- und Innovationssprache, wenn Quantencomputer als künftige Wirkungsinfrastruktur oder Wirkungsrisiko betrachtet werden.
 
 ## queere Migrant:innen
 
@@ -7849,6 +9377,8 @@ Radikal bedeutet an die Wurzel gehend und ist nicht identisch mit extremistisch.
 
 Radikal bedeutet an die Wurzel gehend und ist nicht identisch mit extremistisch.
 
+Radikale Analyse kann notwendig sein, wenn Probleme systemisch sind. Radikal wird wirkungsgefährdend, wenn demokratische Grenzen, Menschenwürde oder Rechtsstaatlichkeit verlassen werden.
+
 ## Rage Bait
 
 Inhalte werden so gestaltet, dass sie Wut, Spott oder aggressive Reaktion auslösen.
@@ -7861,11 +9391,17 @@ Rassismus konstruiert Menschengruppen als vermeintlich natürliche, ethnische, k
 
 Rassismus konstruiert Menschengruppen als vermeintlich natürliche, ethnische, kulturelle oder körperliche Einheiten und ordnet ihnen pauschale Eigenschaften, Wertigkeiten oder Gefährlichkeit zu. Er erzeugt Hierarchien, Ausschluss und ungleiche Teilhabe.
 
+In der Wirkungsökonomie wird Rassismus nach seinen Wirkungen gelesen: auf Sicherheit, Gesundheit, Bildung, Arbeit, Wohnen, Rechtsschutz, Vertrauen, Demokratie und Selbstwirksamkeit. Rassismus ist nicht nur individuelles Vorurteil, sondern kann strukturell in Institutionen, Daten, Algorithmen, Medienbildern, Märkten und Routinen wirken.
+
+Rassismus ist negative Wirkung auf Mensch und Demokratie. Er beschädigt Gleichwertigkeit, Würde, Sicherheit, Teilhabe, Vertrauen, Rechtsstaatlichkeit und gesellschaftlichen Zusammenhalt.
+
 ## Rationalität
 
 Rationalität beschreibt begründetes, zielgerichtetes Entscheiden unter Annahmen und Informationen.
 
 Rationalität beschreibt begründetes, zielgerichtetes Entscheiden unter Annahmen und Informationen.
+
+Rational ist wirkungsökonomisch nicht, was kurzfristig Kapital maximiert, sondern was unter realen Wirkungen, Risiken und Rückkopplungen zukunftsfähig ist.
 
 ## Raubtierkapitalismus
 
@@ -7891,11 +9427,15 @@ Reaktionär bezeichnet eine politische Orientierung, die frühere Ordnungen wied
 
 Reaktionär bezeichnet eine politische Orientierung, die frühere Ordnungen wiederherstellen will und gegen emanzipatorische oder pluralistische Veränderungen gerichtet sein kann.
 
+Wirkungsrisiko, wenn vergangene Ordnung idealisiert und reale Schäden, Ausschlüsse oder Machtverhältnisse unsichtbar gemacht werden.
+
 ## Reale Freiheit
 
 Reale Freiheit beschreibt tatsächliche Handlungsfähigkeit unter realen Bedingungen, nicht nur formale Wahlmöglichkeit.
 
 Reale Freiheit beschreibt tatsächliche Handlungsfähigkeit unter realen Bedingungen, nicht nur formale Wahlmöglichkeit.
+
+Anschluss an Sen: In der WÖk entsteht reale Freiheit, wenn Mensch, Planet und Demokratie stabile Bedingungen schaffen.
 
 ## Realressourcengrenze
 
@@ -7925,11 +9465,15 @@ Rechenschaft bedeutet, dass Machtträger:innen erklären, begründen und verantw
 
 Rechenschaft bedeutet, dass Machtträger:innen erklären, begründen und verantworten müssen, was sie tun.
 
+Rechenschaft ist eine Voraussetzung demokratischer Wirkungssteuerung.
+
 ## Recht auf Reparatur
 
 Das Recht auf Reparatur beschreibt Ansprüche auf Reparierbarkeit, Reparaturinformationen, Ersatzteile und Werkzeuge.
 
 Das Recht auf Reparatur beschreibt Ansprüche auf Reparierbarkeit, Reparaturinformationen, Ersatzteile und Werkzeuge.
+
+Es ist zentral für Demokratie und Marktstruktur, weil Herstellerkontrolle über Reparatur Macht konzentrieren kann.
 
 ## Rechte künftiger Generationen
 
@@ -7943,11 +9487,17 @@ Rechts bezeichnet politisch grob Orientierungen, die Ordnung, Nation, Tradition,
 
 Rechts bezeichnet politisch grob Orientierungen, die Ordnung, Nation, Tradition, Eigentum, Sicherheit, Hierarchie oder kulturelle Kontinuität betonen können.
 
+Nur kontextsensibel verwenden. WÖk unterscheidet konservative Bewahrung tragender Bedingungen von autoritären oder menschenfeindlichen Wirkungsrisiken.
+
 ## Rechtsextremismus
 
 Rechtsextremismus bezeichnet Ideologien, Bewegungen und Praktiken, die die Gleichwertigkeit aller Menschen, die freiheitlich-demokratische Grundordnung und die plurale Gesellschaft ablehnen oder aushöhlen. Typisch sind völkische, nationalistische, rassistische, antisemitische, autoritäre und demokratiefeindliche Muster.
 
 Rechtsextremismus bezeichnet Ideologien, Bewegungen und Praktiken, die die Gleichwertigkeit aller Menschen, die freiheitlich-demokratische Grundordnung und die plurale Gesellschaft ablehnen oder aushöhlen. Typisch sind völkische, nationalistische, rassistische, antisemitische, autoritäre und demokratiefeindliche Muster.
+
+Aus WÖk-Sicht ist Rechtsextremismus nicht nur eine Meinung am Rand des Spektrums, sondern ein negativer Wirkungsraum: Er schwächt Menschenwürde, Rechtsstaatlichkeit, Diskursfähigkeit, Minderheitenschutz, institutionelles Vertrauen und gesellschaftliche Resilienz. Er erzeugt Wirkungspotenziale für Angst, Ausschluss, Gewalt, Delegitimierung und autoritäre Normalisierung.
+
+Wirkungsökonomisch nach Angriffen auf Menschenwürde, Minderheitenschutz, Gewaltfreiheit, Wahrheit und demokratische Institutionen prüfen.
 
 ## Rechtsprechung als Korrekturinstanz
 
@@ -7961,11 +9511,15 @@ Rechtsschutz beschreibt die Möglichkeit, staatliche Entscheidungen rechtlich ü
 
 Rechtsschutz beschreibt die Möglichkeit, staatliche Entscheidungen rechtlich überprüfen zu lassen.
 
+Rechtsschutz ist eine zentrale Grenze jeder Wirkungssteuerung und schützt Bürger:innen vor willkürlicher Macht.
+
 ## Rechtsschutz gegen Wirkungsentscheidungen
 
 Rechtsschutz gegen Wirkungsentscheidungen bedeutet, dass Betroffene Entscheidungen über Wirkungswerte, Scorecards, Steuerklassen, Registereinträge oder Förderausschlüsse überprüfen lassen können.
 
 Rechtsschutz gegen Wirkungsentscheidungen bedeutet, dass Betroffene Entscheidungen über Wirkungswerte, Scorecards, Steuerklassen, Registereinträge oder Förderausschlüsse überprüfen lassen können.
+
+Die Wirkungsökonomie braucht Rechtsschutz, weil Wirkungsdaten reale Folgen haben. Wenn ein Score Steuern, Marktchancen oder Förderzugang verändert, muss es transparente Begründungen, Einspruchsmöglichkeiten, Korrekturverfahren und gerichtliche Kontrolle geben.
 
 ## Rechtsstaatlichkeit
 
@@ -7973,11 +9527,15 @@ Rechtsstaatlichkeit bedeutet, dass staatliche Macht an Recht, Verfahren, Kontrol
 
 Rechtsstaatlichkeit bedeutet, dass staatliche Macht an Recht, Verfahren, Kontrolle und Grundrechte gebunden ist.
 
+Rechtsstaatlichkeit ist eine Wirkungsgrenze. Wirkung darf nicht gegen Recht durchgesetzt werden.
+
 ## Rechtsstaatsabbau
 
 Rechtsstaatsabbau beschreibt die Schwächung unabhängiger Gerichte, Rechtsschutz, Gesetzesbindung oder Verhältnismäßigkeit.
 
 Rechtsstaatsabbau beschreibt die Schwächung unabhängiger Gerichte, Rechtsschutz, Gesetzesbindung oder Verhältnismäßigkeit.
+
+Zentrales Element demokratischer Erosion, weil Korrektur und Schutz vor Machtmissbrauch verloren gehen.
 
 ## Rechtsstaatsprinzip
 
@@ -7985,11 +9543,15 @@ Das Rechtsstaatsprinzip bindet staatliche Macht an Recht, Verfahren, Grundrechte
 
 Das Rechtsstaatsprinzip bindet staatliche Macht an Recht, Verfahren, Grundrechte, Kontrolle und gerichtlichen Schutz.
 
+Schutzrahmen der WÖk: Wirkungssteuerung muss berechenbar, überprüfbar und anfechtbar bleiben.
+
 ## Recycling
 
 Recycling bereitet Materialien zu neuen Rohstoffen oder Produkten auf.
 
 Recycling bereitet Materialien zu neuen Rohstoffen oder Produkten auf.
+
+Recycling ist wichtig, aber kein Synonym für Kreislaufwirtschaft. Es steht nach Vermeidung, Wartung, Wiederverwendung, Reparatur, Refurbishment und Remanufacturing.
 
 ## Recyclingeffizienz
 
@@ -7997,11 +9559,17 @@ Recyclingeffizienz beschreibt, welcher Anteil eines Materials oder Wertstoffs im
 
 Recyclingeffizienz beschreibt, welcher Anteil eines Materials oder Wertstoffs im Recyclingprozess tatsächlich zurückgewonnen wird.
 
+Wichtig für WÖk-Scorecards, weil Sammelquote allein keine tatsächliche Rückgewinnung belegt.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Recyclingquote
 
 Die Recyclingquote beschreibt den Anteil von Materialien oder Produkten, der recycelt wird.
 
 Die Recyclingquote beschreibt den Anteil von Materialien oder Produkten, der recycelt wird.
+
+Sie allein reicht nicht: Qualität, Materialgesundheit, Downcycling, tatsächliche Rückführung und Vermeidung müssen mitbewertet werden.
 
 ## Red Herring
 
@@ -8015,11 +9583,17 @@ Redispatch bezeichnet Eingriffe in Erzeugungsleistung oder Einspeisung, um Netze
 
 Redispatch bezeichnet Eingriffe in Erzeugungsleistung oder Einspeisung, um Netzengpässe zu vermeiden oder zu beheben.
 
+Symptom unzureichender Netz-, Standort-, Flexibilitäts- oder Marktabstimmung; notwendig, aber kosten- und wirkungsrelevant.
+
 ## Redispatch 2.0
 
 Redispatch 2.0 erweitert das Netzengpassmanagement auf weitere Erzeugungs- und Speicheranlagen im Verteilnetz.
 
 Redispatch 2.0 erweitert das Netzengpassmanagement auf weitere Erzeugungs- und Speicheranlagen im Verteilnetz.
+
+Relevant für dezentrale Energiewende, Datenqualität, Abregelung, Entschädigung, Netzbetrieb und Systemkosten.
+
+Energie als Wirkungsinfrastruktur behandeln: Erzeugung, Netze, Speicher, Preise, Resilienz, Teilhabe und Folgewirkungen zusammen bewerten.
 
 ## Redox-Flow-Batterie
 
@@ -8027,11 +9601,17 @@ Redox-Flow-Batterien speichern Energie in flüssigen Elektrolyten, die durch ein
 
 Redox-Flow-Batterien speichern Energie in flüssigen Elektrolyten, die durch eine elektrochemische Zelle gepumpt werden.
 
+Besonders relevant für stationäre Speicher; Bewertung über Materialeinsatz, Skalierung, Standort, Lebensdauer und Kreislauffähigkeit.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Referenzrahmen- und Standardmapping
 
 Relevante SDGs, SDG+, ESRS, GRI, ISO-, Branchen-, Rechts- und Wissenschaftsreferenzen einem Wirkungsobjekt zuordnen.
 
 Relevante SDGs, SDG+, ESRS, GRI, ISO-, Branchen-, Rechts- und Wissenschaftsreferenzen einem Wirkungsobjekt zuordnen.
+
+D01 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Verbindlicher Output: Referenzmatrix mit Ziel, Standard, Indikator, Datenquelle, Verbindlichkeit und Lücke.
 
 ## Refinanzierung
 
@@ -8055,6 +9635,8 @@ Eine Reform ist eine gezielte Veränderung von Regeln, Institutionen oder Prakti
 
 Eine Reform ist eine gezielte Veränderung von Regeln, Institutionen oder Praktiken innerhalb eines bestehenden Systems.
 
+Wirkungsökonomisch zählt nicht der Reformbegriff, sondern ob Zustände tatsächlich verbessert, Nebenwirkungen begrenzt und Korrekturwege erhalten werden.
+
 ## Reframing
 
 Reframing ist die bewusste Veränderung des Deutungs- und Bewertungsrahmens.
@@ -8066,6 +9648,8 @@ In der Wirkungsökonomie bedeutet Reframing vor allem, den Bewertungsmaßstab zu
 Refurbishment arbeitet gebrauchte Produkte so auf, dass sie wieder funktionsfähig und marktfähig werden.
 
 Refurbishment arbeitet gebrauchte Produkte so auf, dass sie wieder funktionsfähig und marktfähig werden.
+
+Es liegt zwischen Reparatur und industrieller Wiederaufarbeitung.
 
 ## Regelbasierte Ordnung
 
@@ -8079,11 +9663,17 @@ Regelenergie gleicht kurzfristige Abweichungen zwischen Stromerzeugung und Verbr
 
 Regelenergie gleicht kurzfristige Abweichungen zwischen Stromerzeugung und Verbrauch aus.
 
+Wichtig für Versorgungssicherheit und Flexibilität.
+
 ## Regelenergiemarkt
 
 Der Regelenergiemarkt organisiert Beschaffung und Vergütung von Regelenergie zur Stabilisierung des Stromsystems.
 
 Der Regelenergiemarkt organisiert Beschaffung und Vergütung von Regelenergie zur Stabilisierung des Stromsystems.
+
+Relevant für Versorgungssicherheit, Speicher, Demand Response, Marktzugang und Systemdienstleistungen.
+
+Energie als Wirkungsinfrastruktur behandeln: Erzeugung, Netze, Speicher, Preise, Resilienz, Teilhabe und Folgewirkungen zusammen bewerten.
 
 ## Regeneration / regenerative Wirkung
 
@@ -8103,11 +9693,15 @@ Regenerative Landwirtschaft verbessert Böden, Biodiversität, Wasserhaushalt un
 
 Regenerative Landwirtschaft verbessert Böden, Biodiversität, Wasserhaushalt und Ökosystemfunktionen aktiv.
 
+Regeneration ist mehr als Schadensminimierung und stärkt Zustände, auf denen Wirkung beruht.
+
 ## Regeneratives Wachstum
 
 Regeneratives Wachstum unterscheidet sich von Mengenwachstum: Es entsteht durch bessere Wirkung, Lernfähigkeit, Kreisläufe, Reparaturfähigkeit, Gesundheit, Vertrauen und ökologische Regeneration.
 
 Regeneratives Wachstum unterscheidet sich von Mengenwachstum: Es entsteht durch bessere Wirkung, Lernfähigkeit, Kreisläufe, Reparaturfähigkeit, Gesundheit, Vertrauen und ökologische Regeneration.
+
+Die WÖk kann so zeigen, dass Wachstum nicht per se zerstörerisch ist, sondern nach seiner Wirkung unterschieden werden muss.
 
 ## Regierung
 
@@ -8115,11 +9709,15 @@ Die Regierung ist die politische Führung auf Zeit. Sie leitet die politischen u
 
 Die Regierung ist die politische Führung auf Zeit. Sie leitet die politischen und staatlichen Geschäfte und kann nach Wahlen wechseln.
 
+Die Regierung ist ein Wirkungsträger, aber nicht der ganze Staat.
+
 ## Regierungsform
 
 Regierungsform beschreibt, wie politische Führung organisiert und kontrolliert wird, etwa parlamentarisch, präsidentiell, demokratisch oder autokratisch.
 
 Regierungsform beschreibt, wie politische Führung organisiert und kontrolliert wird, etwa parlamentarisch, präsidentiell, demokratisch oder autokratisch.
+
+Relevant für Machtkonzentration, Verantwortlichkeit, Korrektur und demokratische Stabilität.
 
 ## Regierungskritik
 
@@ -8127,11 +9725,15 @@ Regierungskritik richtet sich gegen konkrete politische Führung, Entscheidungen
 
 Regierungskritik richtet sich gegen konkrete politische Führung, Entscheidungen, Programme oder Maßnahmen.
 
+Eine Regierung zu kritisieren ist demokratisch notwendig. Problematisch wird es, wenn nicht konkrete Entscheidungen kritisiert werden, sondern Staat, Verfassung, Gerichte oder demokratische Institutionen pauschal als Feind markiert werden.
+
 ## Regime
 
 Regime bezeichnet die konkrete Ordnung politischer Herrschaft und ihrer Regeln, Institutionen und Machtverteilung.
 
 Regime bezeichnet die konkrete Ordnung politischer Herrschaft und ihrer Regeln, Institutionen und Machtverteilung.
+
+Neutraler Analysebegriff, nicht automatisch abwertend; Wirkung hängt von Rechtsstaatlichkeit, Freiheit, Kontrolle und Rückkopplung ab.
 
 ## Regulatory Capture
 
@@ -8139,11 +9741,21 @@ Regulatory Capture beschreibt, wenn Regulierung oder Aufsicht von den Interessen
 
 Regulatory Capture beschreibt, wenn Regulierung oder Aufsicht von den Interessen der regulierten Akteure beeinflusst oder vereinnahmt wird.
 
+Zentrales Risiko für Wirkungsrat, WÖk-IDs, Benchmarks, Energie, Finanzmärkte und Lieferketten.
+
 ## Regulierungsversagen
 
 Regulierungsversagen entsteht, wenn Regeln ihre Ziele verfehlen, falsche Anreize setzen oder neue Schäden erzeugen.
 
 Regulierungsversagen entsteht, wenn Regeln ihre Ziele verfehlen, falsche Anreize setzen oder neue Schäden erzeugen.
+
+Relevant, weil Wirkungssteuerung selbst korrigierbar, transparent und lernfähig bleiben muss.
+
+## Reichweite
+
+Reichweite ist die Zahl oder der Anteil eindeutig definierter Kontakte mit einem Angebot in einem festgelegten Zeitraum.
+
+Reichweite ist eine Verteilungs- oder Outputkennzahl. Sie ist nicht gleich Aufmerksamkeit, Verstehen, Vertrauen, Verhalten oder tatsächliche Zustandsveränderung. Ein Kontakt kann mehrfach stattfinden, flüchtig sein oder über ein Gerät statt über eine Person gemessen werden. Deshalb ist Reichweite für Planung wichtig, aber kein Ersatz für Wirkungsnachweis.
 
 ## Rekombination / neue Kombination
 
@@ -8171,6 +9783,8 @@ Remanufacturing arbeitet Produkte oder Komponenten industriell auf einen neuwert
 
 Remanufacturing arbeitet Produkte oder Komponenten industriell auf einen neuwertigen oder gleichwertigen Leistungszustand auf.
 
+Es kann hohe Wirkung entfalten, wenn Material, Energie und Herstellungsaufwand gespart und Qualität gesichert werden.
+
 ## Renaturierung
 
 Renaturierung stellt geschädigte natürliche Lebensräume und ökologische Funktionen wieder her.
@@ -8183,6 +9797,8 @@ Rent Seeking beschreibt den Versuch, Vorteile durch politische Einflussnahme, Mo
 
 Rent Seeking beschreibt den Versuch, Vorteile durch politische Einflussnahme, Monopole oder Sonderregeln zu erzielen, statt durch produktive oder wirkungsvolle Leistung.
 
+Relevant für Lobbyismus, Subventionen, Marktverzerrung, Kapitalmacht und Wirkungsblindheit.
+
 ## Rentenfinanzierung
 
 Rentenfinanzierung beschreibt, wie Alterssicherung getragen wird. In der WÖk wird geprüft, wie Automatisierung die lohnbezogene Beitragsbasis verändert.
@@ -8194,6 +9810,8 @@ Rentenfinanzierung bezeichnet die Finanzierung von Alterssicherung durch Beiträ
 Reparatur stellt die Nutzungsfähigkeit eines beschädigten oder defekten Produkts wieder her.
 
 Reparatur stellt die Nutzungsfähigkeit eines beschädigten oder defekten Produkts wieder her.
+
+Reparatur reduziert Abfall, Rohstoffverbrauch und Ersatzproduktion und stärkt lokale Wertschöpfung sowie Selbstwirksamkeit.
 
 ## Reparaturschulden
 
@@ -8215,11 +9833,19 @@ Reparierbarkeit beschreibt, wie leicht ein Produkt repariert werden kann.
 
 Reparierbarkeit beschreibt, wie leicht ein Produkt repariert werden kann.
 
+Sie ist ein WÖk-Indikator und ein wichtiges Produktwirkungsfeld.
+
 ## Reparierbarkeit / Recht auf Reparatur
 
 Reparierbarkeit beschreibt, ob Produkte einfach, bezahlbar und dauerhaft instand gehalten werden können.
 
 Reparierbarkeit und das Recht auf Reparatur stärken längere Nutzung, weniger Abfall, geringeren Ressourcenverbrauch und mehr Konsument:innenrechte.
+
+## Reporting
+
+Reporting dokumentiert Informationen, Annahmen und Messwerte. Es ist weder Wirkung noch Wirkungsrückkopplung.
+
+Reporting bezeichnet die strukturierte Offenlegung oder Dokumentation von Daten, Methoden, Annahmen, Ergebnissen und Unsicherheiten. Ein Bericht kann eine wichtige Grundlage für Wirkungsbewertung und Lernen sein. Er beweist aber weder eine eingetretene Zustandsveränderung noch löst er selbst eine Entscheidung aus. Wirkungsrückkopplung entsteht erst, wenn ein nachvollziehbarer Befund gegen einen Referenzrahmen geprüft wird und eine zuständige Stelle daraus eine begründete, überprüfbare Folgeentscheidung ableitet.
 
 ## Repowering
 
@@ -8227,11 +9853,17 @@ Repowering ersetzt ältere Energieanlagen durch leistungsfähigere neue Anlagen 
 
 Repowering ersetzt ältere Energieanlagen durch leistungsfähigere neue Anlagen am gleichen oder ähnlichen Standort.
 
+Kann Flächen- und Netzwirkung verbessern, erzeugt aber Rückbau-, Recycling- und Akzeptanzfragen.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Repräsentation
 
 Repräsentation bedeutet, dass gewählte oder beauftragte Personen für andere sprechen, entscheiden oder handeln.
 
 Repräsentation bedeutet, dass gewählte oder beauftragte Personen für andere sprechen, entscheiden oder handeln.
+
+Repräsentation braucht Mandat, Rechenschaft und Rückkopplung.
 
 ## Repräsentationsanspruch
 
@@ -8239,11 +9871,15 @@ Repräsentationsanspruch beschreibt den Anspruch, für eine Gruppe, Betroffene o
 
 Repräsentationsanspruch beschreibt den Anspruch, für eine Gruppe, Betroffene oder ein Gemeinwohlinteresse zu sprechen.
 
+Muss durch Beteiligung, Transparenz und Betroffenenbezug rückgekoppelt sein.
+
 ## Repräsentative Demokratie
 
 Repräsentative Demokratie bedeutet, dass Bürger:innen Vertreter:innen wählen, die für eine begrenzte Zeit politische Entscheidungen treffen.
 
 Repräsentative Demokratie bedeutet, dass Bürger:innen Vertreter:innen wählen, die für eine begrenzte Zeit politische Entscheidungen treffen.
+
+Sie verbindet Mandat, Rechenschaft, Parlament und Korrektur durch Wahlen.
 
 ## Reproduktive Arbeit
 
@@ -8269,6 +9905,10 @@ Ein Reservekraftwerk steht bereit, um Strom in Engpass-, Krisen- oder Knappheits
 
 Ein Reservekraftwerk steht bereit, um Strom in Engpass-, Krisen- oder Knappheitssituationen zu erzeugen.
 
+Wirkung hängt von Einsatzhäufigkeit, Brennstoff, Emissionen, Kosten, Standort, Versorgungssicherheit und Alternativen wie Speicher oder Demand Response ab.
+
+Energie als Wirkungsinfrastruktur behandeln: Erzeugung, Netze, Speicher, Preise, Resilienz, Teilhabe und Folgewirkungen zusammen bewerten.
+
 ## Residual Emissions
 
 Residual Emissions sind verbleibende Emissionen, die nach weitgehender Emissionsminderung noch nicht vermieden werden können.
@@ -8280,6 +9920,8 @@ Residual Emissions beschreiben Restemissionen nach Reduktionsmaßnahmen. Sie sin
 Residuallast ist die Stromnachfrage nach Abzug variabler erneuerbarer Einspeisung.
 
 Residuallast ist die Stromnachfrage nach Abzug variabler erneuerbarer Einspeisung.
+
+Wichtig für Speicher, Backup, Flexibilität und Strommarktdesign.
 
 ## Resilienz
 
@@ -8347,11 +9989,15 @@ Responsivität beschreibt, wie gut Institutionen auf Bedürfnisse, Probleme und 
 
 Responsivität beschreibt, wie gut Institutionen auf Bedürfnisse, Probleme und Rückmeldungen der Bevölkerung reagieren.
 
+Responsivität ist ein demokratischer Wirkungsindikator.
+
 ## Ressourcenallokation
 
 Ressourcenallokation beschreibt die Verteilung von Ressourcen auf Nutzungen, Akteure oder Ziele.
 
 Ressourcenallokation beschreibt die Verteilung von Ressourcen auf Nutzungen, Akteure oder Ziele.
+
+Die WÖk erweitert Allokation um Wirkung: Ressourcen sollen dort wirken, wo sie Mensch, Planet und Demokratie stärken.
 
 ## Reststrom
 
@@ -8371,6 +10017,8 @@ Reverse Logistics führt Produkte, Komponenten oder Materialien vom Nutzungspunk
 
 Reverse Logistics führt Produkte, Komponenten oder Materialien vom Nutzungspunkt zurück in Wiederverwendung, Reparatur, Aufarbeitung oder Recycling.
 
+Sie ist die Logistikseite der Kreislaufwirtschaft.
+
 ## Reverse Merit Order
 
 Die Reverse Merit Order ist das Bewertungsprinzip der Wirkungsökonomie, nach dem das schwächste relevante Wirkungsfeld die Gesamtbewertung begrenzt und schwere negative Wirkungen nicht durch positive Wirkungen überdeckt werden dürfen.
@@ -8383,11 +10031,17 @@ Der Rezyklatanteil beschreibt den Anteil recycelter Materialien in einem Produkt
 
 Der Rezyklatanteil beschreibt den Anteil recycelter Materialien in einem Produkt oder Materialstrom.
 
+Er ist ein Indikator, aber kein vollständiger Wirkungsnachweis.
+
 ## Rezyklatquote Batterie
 
 Die Rezyklatquote beschreibt den Anteil zurückgewonnener Materialien, der wieder in neuen Batterien eingesetzt wird.
 
 Die Rezyklatquote beschreibt den Anteil zurückgewonnener Materialien, der wieder in neuen Batterien eingesetzt wird.
+
+Sie verbindet Kreislaufversprechen mit realer Materialrückführung und Datenqualität.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Rigged / Rigged Election
 
@@ -8425,6 +10079,10 @@ RLM-Messung erfasst Lastgänge und Leistungswerte größerer Verbraucher oder Er
 
 RLM-Messung erfasst Lastgänge und Leistungswerte größerer Verbraucher oder Erzeuger zeitaufgelöst.
 
+Sie ist Grundlage für Leistungspreise, Lastmanagement, Energiedaten und Wirkungssteuerung größerer Anlagen.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## RMO
 
 RMO bezeichnet die Reverse Merit Order, eine Priorisierungslogik, bei der knappe Mittel zuerst dort eingesetzt werden, wo negative Wirkung am stärksten begrenzt und positive Netto-Wirkung am höchsten ist.
@@ -8436,6 +10094,10 @@ RMO bezeichnet die Reverse Merit Order, eine Priorisierungslogik, bei der knappe
 Roaming ermöglicht Nutzer:innen, Ladepunkte verschiedener Betreiber über gemeinsame Zugangs- und Abrechnungssysteme zu nutzen.
 
 Roaming ermöglicht Nutzer:innen, Ladepunkte verschiedener Betreiber über gemeinsame Zugangs- und Abrechnungssysteme zu nutzen.
+
+Roaming beeinflusst Wettbewerb, Zugang, Preistransparenz und Marktmacht.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Roboterökonomie
 
@@ -8460,6 +10122,8 @@ Robotik umfasst Technologien, Systeme und Anwendungen, bei denen Roboter physisc
 Unter hoher Unsicherheit Maßnahmen wählen, die robust, schrittweise, reversibel und lernfähig sind.
 
 Unter hoher Unsicherheit Maßnahmen wählen, die robust, schrittweise, reversibel und lernfähig sind.
+
+I06 gehört zur Kategorie „Strategische Vorausschau und Entscheidungsintelligenz“. Verbindlicher Output: Adaptiver Pfad mit Sofortmaßnahmen, Realoptionen, Entscheidungspunkten, Triggern und Stop-/Skalierungsregeln.
 
 ## Robustheit
 
@@ -8491,6 +10155,10 @@ Rotorblatt-Recycling beschreibt Verfahren zur Verwertung oder Rückgewinnung von
 
 Rotorblatt-Recycling beschreibt Verfahren zur Verwertung oder Rückgewinnung von Materialien aus Windturbinenblättern.
 
+Besonders relevant, weil Rotorblätter aus Faserverbundwerkstoffen bestehen, deren hochwertige Rückführung schwieriger ist als bei Stahl oder Beton.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Routineunternehmer
 
 Der Routineunternehmer oder Manager-Verwalter stabilisiert bestehende Abläufe, optimiert Ressourcen und handelt im Rahmen bekannter Märkte, Regeln und Ziele.
@@ -8505,6 +10173,10 @@ Rückbau von Windenergieanlagen beschreibt Demontage, Entsorgung, Wiederverwendu
 
 Rückbau von Windenergieanlagen beschreibt Demontage, Entsorgung, Wiederverwendung oder Recycling von Anlagenbestandteilen nach Nutzungsende.
 
+Rückbau ist Teil der tatsächlichen Lebenszykluswirkung und muss finanziell, technisch und regulatorisch abgesichert sein.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Rückbaupflicht
 
 Eine Rückbaupflicht verpflichtet dazu, Anlagen, Gebäude oder Eingriffe nach Ende ihrer Nutzung zu entfernen oder Flächen und Funktionen wiederherzustellen.
@@ -8517,11 +10189,19 @@ Ein Rückbaustandard beschreibt Anforderungen an Demontage, Sortierung, Dokument
 
 Ein Rückbaustandard beschreibt Anforderungen an Demontage, Sortierung, Dokumentation, Wiederverwendung und Verwertung von Anlagen.
 
+Wichtig für Qualität, Arbeitsschutz, Materialerhalt, Nachvollziehbarkeit und WÖk-Scorecards.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Rückbauverpflichtung
 
 Eine Rückbauverpflichtung verpflichtet Betreiber, Anlagen nach Nutzungsende zurückzubauen.
 
 Eine Rückbauverpflichtung verpflichtet Betreiber, Anlagen nach Nutzungsende zurückzubauen.
+
+Sie verhindert, dass Rückbaukosten und Materialrisiken auf Grundstücke, Kommunen oder zukünftige Generationen externalisiert werden.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Rückkopplung
 
@@ -8543,11 +10223,15 @@ Rücknahmefähigkeit beschreibt, ob Produkte nach Nutzung zurückgenommen und in
 
 Rücknahmefähigkeit beschreibt, ob Produkte nach Nutzung zurückgenommen und in Kreisläufe überführt werden können.
 
+Sie verbindet Produktdesign, Logistik, Herstellerverantwortung und Datenqualität.
+
 ## Rücknahmesystem
 
 Ein Rücknahmesystem organisiert die Rückführung von Produkten, Verpackungen oder Materialien nach Nutzung.
 
 Ein Rücknahmesystem organisiert die Rückführung von Produkten, Verpackungen oder Materialien nach Nutzung.
+
+Es ist Infrastruktur für Kreislaufwirkung und erweiterte Herstellerverantwortung.
 
 ## Rückschaufehler
 
@@ -8609,6 +10293,8 @@ Scheindemokratie beschreibt eine Ordnung, die demokratische Formen zeigt, aber r
 
 Scheindemokratie beschreibt eine Ordnung, die demokratische Formen zeigt, aber reale demokratische Kontrolle stark einschränkt.
 
+Wirkungsrisiko, weil Legitimität simuliert wird, während Opposition, Medien oder Rechtsschutz geschwächt sind.
+
 ## Scheinentlastung
 
 Scheinentlastung entsteht, wenn ein Narrativ Dissonanz kurzfristig senkt, ohne die zugrunde liegende Komplexität zu integrieren.
@@ -8651,6 +10337,10 @@ Schnellladen beschreibt Ladevorgänge mit hoher Ladeleistung und kürzeren Ladez
 
 Schnellladen beschreibt Ladevorgänge mit hoher Ladeleistung und kürzeren Ladezeiten.
 
+Nützlich für Fernverkehr und Flotten, aber wirkungssensibel bei Netzanschluss, Batteriealterung, Kosten und Standort.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Schnellladepark
 
 Ein Schnellladepark bündelt mehrere Schnellladepunkte mit Netzanschluss, Steuerung und Aufenthaltsinfrastruktur für Elektrofahrzeuge.
@@ -8662,6 +10352,8 @@ Ein Schnellladepark bündelt mehrere Schnellladepunkte mit Netzanschluss, Steuer
 Schöpferische Rekonstruktion ist die WÖk-Schärfung von Schumpeters schöpferischer Zerstörung. Sie meint die bewusste Umgestaltung vorhandener Strukturen, Materialien, Infrastrukturen und Kompetenzen in zukunftsfähige Wirkungsformen.
 
 Schöpferische Rekonstruktion ist die WÖk-Schärfung von Schumpeters schöpferischer Zerstörung. Sie meint die bewusste Umgestaltung vorhandener Strukturen, Materialien, Infrastrukturen und Kompetenzen in zukunftsfähige Wirkungsformen.
+
+Der Begriff passt besonders zu Kreislaufwirtschaft, Gebäudebestand, Industrieumbau, Energie, Pflege, Bildung und digitaler Infrastruktur. Ziel ist nicht blinde Verdrängung, sondern bessere Rekombination bei geringerer Verlustleistung.
 
 ## Schöpferische Zerstörung
 
@@ -8685,6 +10377,8 @@ Die Schuldenbremse begrenzt staatliche Neuverschuldung nach fiskalischen Regeln.
 
 Die Schuldenbremse begrenzt staatliche Neuverschuldung nach fiskalischen Regeln.
 
+Wirkungsökonomisch nicht nur fiskalisch bewerten, sondern nach Wirkung auf Zukunftsinvestitionen, Resilienz, Infrastruktur, Generationengerechtigkeit und Reparaturkosten.
+
 ## Schuldenmythos
 
 Schuldenmythos bezeichnet die verkürzte Vorstellung, Staatsschulden seien automatisch wie private Schulden und deshalb per se zukunftsschädlich.
@@ -8696,6 +10390,8 @@ Schuldenmythos bezeichnet die verkürzte Vorstellung, Staatsschulden seien autom
 Schumpeter beschreibt wirtschaftliche Entwicklung als Prozess neuer Kombinationen und die Unternehmerfunktion als Innovationsfunktion.
 
 Schumpeter beschreibt wirtschaftliche Entwicklung als Prozess neuer Kombinationen und die Unternehmerfunktion als Innovationsfunktion.
+
+Die WÖk übernimmt diese Dynamik, aber bewertet Innovation am Maßstab positiver Netto-Wirkung.
 
 ## Schumpetersche Innovation / Neue Kombination
 
@@ -8711,6 +10407,8 @@ Der Schutz natürlicher Lebensgrundlagen umfasst Klima, Wasser, Boden, Luft, Bio
 
 Der Schutz natürlicher Lebensgrundlagen umfasst Klima, Wasser, Boden, Luft, Biodiversität, Ökosysteme, Ressourcen und die Bedingungen, die menschliches, tierisches und ökologisches Leben tragen.
 
+Die Wirkungsökonomie operationalisiert diesen Schutz als messbare und rückkoppelbare Wirkung. Natürliche Lebensgrundlagen werden nicht nur symbolisch geschützt, sondern in Preise, Steuern, Beschaffung, Kapitalzugang, Haushalte, Infrastruktur und Governance zurückgeführt.
+
 ## Schutzarchitektur
 
 Schutzarchitektur bezeichnet das Zusammenspiel aus Rechten, Institutionen, Prävention, Bildung, Polizei, Beratung, Daten und Verfahren, das Menschen wirksam schützt.
@@ -8723,11 +10421,17 @@ Schutzpflicht beschreibt staatliche Pflichten, Grundrechte und zentrale Rechtsg�
 
 Schutzpflicht beschreibt staatliche Pflichten, Grundrechte und zentrale Rechtsgüter aktiv zu schützen.
 
+Relevant für Klima, Gesundheit, Sicherheit, Minderheitenschutz und demokratische Infrastruktur.
+
 ## Schutztechnik
 
 Schutztechnik erkennt Fehlerzustände und trennt elektrische Anlagen sicher vom Netz.
 
 Schutztechnik erkennt Fehlerzustände und trennt elektrische Anlagen sicher vom Netz.
+
+Zentral für Sicherheit, Versorgungsschutz, Ladeparks, Speicher und Mittelspannungsanschlüsse.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Schwarze Null
 
@@ -8740,6 +10444,8 @@ Die Schwarze Null ist das politische Ziel eines ausgeglichenen öffentlichen Hau
 Schwarzstartfähigkeit beschreibt die Fähigkeit, Stromerzeugung ohne externes Netz wieder anzufahren.
 
 Schwarzstartfähigkeit beschreibt die Fähigkeit, Stromerzeugung ohne externes Netz wieder anzufahren.
+
+Relevant für Krisenresilienz und Wiederaufbau des Stromsystems.
 
 ## Schweigespirale
 
@@ -8845,11 +10551,17 @@ Eine Second-Life-Batterie wird nach ihrer ersten Nutzung, etwa im Fahrzeug, in e
 
 Eine Second-Life-Batterie wird nach ihrer ersten Nutzung, etwa im Fahrzeug, in einer zweiten Anwendung weiterverwendet.
 
+Second Life kann Kreislaufwirkung erhöhen, wenn Sicherheit, Restkapazität, Datenqualität, Wirtschaftlichkeit und Rückführung gesichert sind.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Sektorkopplung
 
 Sektorkopplung verbindet Strom, Wärme, Verkehr, Industrie und Gebäude, um erneuerbare Energie systemisch zu nutzen.
 
 Sektorkopplung verbindet Strom, Wärme, Verkehr, Industrie und Gebäude, um erneuerbare Energie systemisch zu nutzen.
+
+Sie ist ein Systemhebel für Dekarbonisierung, Effizienz und Flexibilität.
 
 ## Sekundärregelung
 
@@ -8857,11 +10569,15 @@ Sekundärregelung stellt nach kurzfristigen Abweichungen die Bilanz eines Regelg
 
 Sekundärregelung stellt nach kurzfristigen Abweichungen die Bilanz eines Regelgebiets wieder her.
 
+Ein Detailbegriff der Regelenergie.
+
 ## Sekundärrohstoff
 
 Sekundärrohstoffe werden durch Wiederverwendung, Aufbereitung oder Recycling aus bereits genutzten Materialien gewonnen.
 
 Sekundärrohstoffe werden durch Wiederverwendung, Aufbereitung oder Recycling aus bereits genutzten Materialien gewonnen.
+
+Ihre Wirkung hängt von Qualität, Schadstoffen, Energieaufwand und Verdrängung von Primärrohstoffen ab.
 
 ## Selbstorganisation
 
@@ -8881,6 +10597,8 @@ Selbstverantwortung beschreibt die Verantwortung des Individuums für eigene Ent
 
 Selbstverantwortung beschreibt die Verantwortung des Individuums für eigene Entscheidungen und deren Folgen.
 
+Wichtig, aber nur fair, wenn Menschen reale Handlungsoptionen, Informationen und Alternativen haben.
+
 ## Selbstwirksamkeit
 
 Selbstwirksamkeit beschreibt das Erleben, durch eigenes Handeln etwas bewirken zu können.
@@ -8893,11 +10611,15 @@ Selektive Evidenz beschreibt die Nutzung einzelner Daten oder Studien, während 
 
 Selektive Evidenz beschreibt die Nutzung einzelner Daten oder Studien, während widersprechende Evidenz ausgeblendet wird.
 
+Ein Wirkmechanismus von Framing, Policy-Laundering und Desinformation.
+
 ## Self-Ownership
 
 Self-Ownership beschreibt die Vorstellung, dass Menschen Eigentümer:innen ihrer selbst sind.
 
 Self-Ownership beschreibt die Vorstellung, dass Menschen Eigentümer:innen ihrer selbst sind.
+
+Relevant für Autonomie und Selbstbestimmung, aber nicht ausreichend für soziale, ökologische und demokratische Folgewirkungen.
 
 ## Self-Serving Bias
 
@@ -8917,17 +10639,23 @@ Sensibilisierung beschreibt, dass wiederholte oder starke Reize die Reaktionsber
 
 Sensibilisierung beschreibt, dass wiederholte oder starke Reize die Reaktionsbereitschaft erhöhen.
 
+Relevant für Angstkommunikation, Alarm-Frames, Diskurseskalation und Vertrauensverlust.
+
 ## Service Blueprint mit Wirkungsempfängern
 
 Sichtbare Serviceerfahrung, Backstage-Abläufe, Unterstützungsprozesse und indirekte Wirkungen gemeinsam gestalten.
 
 Sichtbare Serviceerfahrung, Backstage-Abläufe, Unterstützungsprozesse und indirekte Wirkungen gemeinsam gestalten.
 
+K04 gehört zur Kategorie „Wirkungswertströme, Prozesse, Services und Flow“. Verbindlicher Output: Service Blueprint mit Nutzerhandlung, Betroffenenperspektive, Frontstage, Backstage, Support, Daten, Risiken und KII.
+
 ## Service-NGO
 
 Eine Service-NGO erbringt konkrete Leistungen, etwa humanitäre Hilfe, Bildung, Gesundheit, Beratung oder Versorgung.
 
 Eine Service-NGO erbringt konkrete Leistungen, etwa humanitäre Hilfe, Bildung, Gesundheit, Beratung oder Versorgung.
+
+Wirkung zeigt sich an realer Leistung, Zugang, Qualität, lokaler Einbettung und Betroffenenorientierung.
 
 ## Sexarbeit
 
@@ -8947,11 +10675,15 @@ Shaolin bezeichnet historisch eine chinesische buddhistische Kloster- und Kampfk
 
 Shaolin bezeichnet historisch eine chinesische buddhistische Kloster- und Kampfkunsttradition, die häufig mit Chan/Zen, Disziplin, Körperpraxis und Übung verbunden wird.
 
+Für die WÖk ist Shaolin höchstens als Beispiel verkörperter Praxis relevant: Wirkungskompetenz ist nicht nur Denken, sondern Übung, Haltung, Aufmerksamkeit und Selbstregulation.
+
 ## Shareholder Value
 
 Shareholder Value bezeichnet die Ausrichtung eines Unternehmens auf Wertsteigerung für Eigentümer:innen oder Aktionär:innen, meist gemessen über Gewinne, Kurswert, Dividenden und Kapitalrendite.
 
 Shareholder Value bezeichnet die Ausrichtung eines Unternehmens auf Wertsteigerung für Eigentümer:innen oder Aktionär:innen, meist gemessen über Gewinne, Kurswert, Dividenden und Kapitalrendite.
+
+Die WÖk kritisiert nicht Eigentum oder Rendite an sich, sondern die Verwechslung von Kapitalrendite mit gesellschaftlichem Erfolg. Gewinn kann Feedback tragfähiger Wirkung sein, aber in wirkungsblinden Märkten auch Ergebnis erfolgreicher Externalisierung.
 
 ## Sicherheits-T-SROI
 
@@ -8989,6 +10721,8 @@ Zukünftige Fähigkeiten, Rollen, Kapazitäten, Mensch-KI-Arbeitsteilung und fai
 
 Zukünftige Fähigkeiten, Rollen, Kapazitäten, Mensch-KI-Arbeitsteilung und faire Übergänge systematisch planen.
 
+M09 gehört zur Kategorie „Change, Adoption, Workforce, Skills und Wissen“. Verbindlicher Output: Workforce Architecture mit Rollenfamilien, Skills, Kapazität, Sourcing, Übergängen, Risiken und Entwicklungswegen.
+
 ## Slippery Slope / Dammbruchargument
 
 Eine Maßnahme wird abgelehnt, weil angeblich zwangsläufig extreme Folgen folgen.
@@ -9001,11 +10735,17 @@ Kleinerer modularer Kernreaktor, der standardisiert und seriennah gebaut werden 
 
 Kleinerer modularer Kernreaktor, der standardisiert und seriennah gebaut werden soll.
 
+Im Kernenergie-Dossier nur mit klarer Bilanzgrenze, Datenstand und Alternativenvergleich verwenden.
+
 ## Smart Charging
 
 Smart Charging steuert Ladevorgänge zeitlich oder leistungsmäßig, um Kosten, Netzbelastung oder Emissionen zu reduzieren.
 
 Smart Charging steuert Ladevorgänge zeitlich oder leistungsmäßig, um Kosten, Netzbelastung oder Emissionen zu reduzieren.
+
+Kann Flexibilität schaffen, braucht aber transparente Tarife, Datenschutz, Nutzerkontrolle und faire Verteilung.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Smart Grid
 
@@ -9013,11 +10753,15 @@ Smart Grid bezeichnet ein digital gesteuertes Stromnetz.
 
 Smart Grid bezeichnet ein digital gesteuertes Stromnetz.
 
+Es kann Erzeugung, Speicher und Verbrauch besser koordinieren, braucht aber Datenschutz und Resilienz.
+
 ## Smart Meter
 
 Smart Meter sind digitale Messsysteme für Energieverbrauch und Einspeisung.
 
 Smart Meter sind digitale Messsysteme für Energieverbrauch und Einspeisung.
+
+Sie ermöglichen Tarife und Flexibilität, brauchen Datenschutz, Sicherheit und faire Kostenverteilung.
 
 ## Smart Meter Gateway
 
@@ -9025,11 +10769,15 @@ Ein Smart Meter Gateway ist die sichere Kommunikationseinheit eines intelligente
 
 Ein Smart Meter Gateway ist die sichere Kommunikationseinheit eines intelligenten Messsystems.
 
+Relevant für Datenschutz, IT-Sicherheit, dynamische Tarife, Demand Response, Flexibilität und demokratische Kontrolle digitaler Energieinfrastruktur.
+
+Energie als Wirkungsinfrastruktur behandeln: Erzeugung, Netze, Speicher, Preise, Resilienz, Teilhabe und Folgewirkungen zusammen bewerten.
+
 ## Social Credit
 
-Social Credit bezeichnet die umfassende Bewertung von Menschen nach Verhalten, Konformität oder Loyalität.
+Social Credit bezeichnet Systeme, die Menschen anhand von Verhalten, Merkmalen, Konformität oder Loyalität umfassend bewerten oder einordnen. Sie sind kein Instrument der Wirkungsökonomie.
 
-Die Wirkungsökonomie bewertet keine Personen, keine Gesinnungen und keine Lebensstile. Bewertet werden Produkte, Tätigkeiten, Organisationen, Kapitalflüsse, öffentliche Mittel, Datenlagen und nachweisbare Wirkungszusammenhänge.
+Social Credit bezeichnet Systeme, die Menschen anhand von Verhalten, Merkmalen, Konformität, Beziehungen oder Loyalität umfassend bewerten oder einordnen und daraus Vorteile, Nachteile oder Zugangschancen ableiten können. Die Wirkungsökonomie zieht hier eine Schutzlinie: Gegenstand der Prüfung sind Wirkungen von Produkten, Regeln, Organisationen, Programmen und Kapitalflüssen – nie der Wert, die Gesinnung oder der Lebensstil einzelner Menschen. Datenschutz, Zweckbindung, Datenminimierung, Verhältnismäßigkeit, Einspruch und Rechtsschutz begrenzen auch jede zulässige datenbezogene Entscheidung.
 
 ## Social Economy / Solidarity Economy
 
@@ -9049,11 +10797,15 @@ Solarthermie nutzt Sonnenenergie zur Wärmeerzeugung.
 
 Solarthermie nutzt Sonnenenergie zur Wärmeerzeugung.
 
+Relevant für Wärme, Gebäude, Industrieprozesse und saisonale Speicher.
+
 ## Solidarität
 
 Solidarität bezeichnet die Bereitschaft und institutionelle Fähigkeit, Risiken, Lasten, Chancen und Schutz nicht ausschließlich individuell zu behandeln, sondern gemeinschaftlich zu tragen.
 
 Solidarität bezeichnet die Bereitschaft und institutionelle Fähigkeit, Risiken, Lasten, Chancen und Schutz nicht ausschließlich individuell zu behandeln, sondern gemeinschaftlich zu tragen.
+
+In der WÖk ist Solidarität keine bloße Haltung, sondern Wirkungsarchitektur: Sozialversicherung, Pflege, Klima-Anpassung, Antidiskriminierung, Bildung und Krisenvorsorge machen individuelle Freiheit erst tragfähig.
 
 ## Sorgearbeit
 
@@ -9113,6 +10865,10 @@ Die Soziale Marktwirtschaft verbindet marktwirtschaftlichen Wettbewerb mit sozia
 
 Die Soziale Marktwirtschaft verbindet marktwirtschaftlichen Wettbewerb mit sozialem Ausgleich, Rechtsordnung, Sozialstaat und politischer Stabilität. Sie war ein historischer Fortschritt gegenüber reiner Markt- oder Planlogik.
 
+Die WÖk versteht sich als Weiterentwicklung der Sozialen Marktwirtschaft: Wettbewerb bleibt, aber nicht um Externalisierung; soziale Sicherung bleibt, aber nicht ohne Wirkungsmessung; Markt bleibt, aber Preise müssen mehr Wahrheit über Mensch, Planet und Demokratie tragen.
+
+Historisch ein Fortschritt, aber ökologisch, global und demokratiebezogen wirkungsunvollständig.
+
 ## Soziale Reproduktion
 
 Soziale Reproduktion beschreibt die gesellschaftlichen Prozesse, durch die Menschen, Beziehungen, Fähigkeiten, Versorgung und soziale Ordnung fortlaufend erhalten werden.
@@ -9143,11 +10899,15 @@ Sozialisation beschreibt den Prozess, durch den Menschen Normen, Werte, Rollen, 
 
 Sozialisation beschreibt den Prozess, durch den Menschen Normen, Werte, Rollen, Sprache und Verhaltensmuster einer Gesellschaft erlernen.
 
+Relevant für politische Sprache, Medienwirkung, Konsum, Vertrauen, Identität und Normalisierung.
+
 ## Sozialisierung / Vergesellschaftung
 
 Sozialisierung oder Vergesellschaftung bezeichnet verfassungsrechtlich die Überführung bestimmter Güter, Ressourcen oder Produktionsmittel in Gemeineigentum oder Gemeinwirtschaft.
 
 Sozialisierung oder Vergesellschaftung bezeichnet verfassungsrechtlich die Überführung bestimmter Güter, Ressourcen oder Produktionsmittel in Gemeineigentum oder Gemeinwirtschaft.
+
+Nicht identisch mit Sozialisation als Lernprozess. Aus WÖk-Sicht ersetzt Eigentumsform keine Wirkungsprüfung; auch vergesellschaftete Güter brauchen Steuerung nach Mensch, Planet und Demokratie.
 
 ## Sozialismus
 
@@ -9161,6 +10921,10 @@ Sozialliberalismus verbindet individuelle Freiheit mit sozialer Absicherung, Cha
 
 Sozialliberalismus verbindet individuelle Freiheit mit sozialer Absicherung, Chancengerechtigkeit, Bürgerrechten, Bildung, Rechtsstaatlichkeit und gesellschaftlicher Teilhabe.
 
+Für die WÖk ist Sozialliberalismus anschlussfähig, weil reale Freiheit mehr als formale Nicht-Einmischung ist. Menschen brauchen Bildung, Gesundheit, Wohnen, digitale Souveränität, Diskriminierungsschutz und stabile Institutionen, um Handlungsmöglichkeiten tatsächlich nutzen zu können.
+
+Eine wichtige Brücke zur WÖk, weil Freiheit nicht nur formal, sondern real möglich sein muss.
+
 ## Sozialstaats-Sündenbock
 
 Der Sozialstaats-Sündenbock rahmt soziale Sicherung pauschal als Ursache gesellschaftlicher Probleme und kann strukturelle Ursachen von Armut, Arbeit und Ungleichheit verdecken.
@@ -9172,6 +10936,8 @@ Der Sozialstaats-Sündenbock rahmt soziale Sicherung pauschal als Ursache gesell
 Das Sozialstaatsprinzip verpflichtet den Staat, soziale Sicherheit, Teilhabe und Ausgleich als Staatsziel zu berücksichtigen.
 
 Das Sozialstaatsprinzip verpflichtet den Staat, soziale Sicherheit, Teilhabe und Ausgleich als Staatsziel zu berücksichtigen.
+
+Wichtige Anschlusslinie für Mensch, Daseinsvorsorge, Wirkungshaushalt und reale Freiheit.
 
 ## Sozialtourismus-Frame
 
@@ -9185,11 +10951,15 @@ Spannungshaltung sichert zulässige Spannungsniveaus im Netz.
 
 Spannungshaltung sichert zulässige Spannungsniveaus im Netz.
 
+Relevant für Netzbetrieb, Blindleistung und dezentrale Einspeisung.
+
 ## Speicher
 
 Speicher nehmen Energie auf und geben sie später wieder ab.
 
 Speicher nehmen Energie auf und geben sie später wieder ab.
+
+Sie erzeugen keine Primärenergie, können aber Systemkosten, Abregelung und Versorgungssicherheitsrisiken senken.
 
 ## Spekulationslogik
 
@@ -9209,11 +10979,15 @@ Spitzenlast beschreibt besonders hohe Stromnachfrage in bestimmten Zeiten.
 
 Spitzenlast beschreibt besonders hohe Stromnachfrage in bestimmten Zeiten.
 
+Relevant für Netze, Kapazität, Tarife und Demand Response.
+
 ## Sponsor- und Führungskoalitionsarchitektur
 
 Aktive, glaubwürdige und widerspruchsfähige Führung über Hierarchie- und Organisationsgrenzen gestalten.
 
 Aktive, glaubwürdige und widerspruchsfähige Führung über Hierarchie- und Organisationsgrenzen gestalten.
+
+M03 gehört zur Kategorie „Change, Adoption, Workforce, Skills und Wissen“. Verbindlicher Output: Sponsor Map mit Rollen, Entscheidungen, Ressourcen, Verhaltenszusagen, Konflikten und Eskalationswegen.
 
 ## Sprachlicher Trigger
 
@@ -9245,17 +11019,23 @@ Die St. Galler Managementlehre betrachtet Unternehmen als komplexe, offene, sozi
 
 Die St. Galler Managementlehre betrachtet Unternehmen als komplexe, offene, soziale und kommunikative Systeme. Management wird nicht auf Planung und Kontrolle reduziert, sondern als Gestaltung von Wertschöpfung, Kommunikation, Kultur, Strategie und Verantwortung verstanden.
 
+Die WÖk nutzt St. Gallen als Brücke zur Unternehmensführung: Unternehmen sind Wirkungssysteme. Ihre Bilanzgrenzen reichen nicht aus, weil Lieferketten, Produkte, Mitarbeitende, Kapital, Umwelt, Kultur und Demokratie Teil ihrer Wirkung sind.
+
 ## St. Galler Managementmodell
 
 Die St. Galler Tradition beschreibt Unternehmen nicht nur als Produktionsapparate, sondern als komplexe soziale Systeme in Austausch mit Märkten, Gesellschaft, Technik, Natur und Institutionen.
 
 Die St. Galler Tradition beschreibt Unternehmen nicht nur als Produktionsapparate, sondern als komplexe soziale Systeme in Austausch mit Märkten, Gesellschaft, Technik, Natur und Institutionen.
 
+Die WÖk bindet diese Sicht an Wirkung: Unternehmen können ihre Wirkung nicht an der Bilanzgrenze beenden.
+
 ## Staat
 
 Der Staat ist die dauerhafte politische und rechtliche Ordnung eines Landes. Er umfasst Staatsgebiet, Staatsvolk, Staatsgewalt, Verfassung, Gesetze, Institutionen, Gerichte, Verwaltung und Behörden.
 
 Der Staat ist die dauerhafte politische und rechtliche Ordnung eines Landes. Er umfasst Staatsgebiet, Staatsvolk, Staatsgewalt, Verfassung, Gesetze, Institutionen, Gerichte, Verwaltung und Behörden.
+
+Der Staat ist der institutionelle Rahmen, der Rechte, Verfahren, Schutzpflichten, demokratische Ordnung und Wirkungsarchitektur ermöglicht. Er ist nicht identisch mit der aktuellen Regierung.
 
 ## Staat 2035
 
@@ -9282,6 +11062,8 @@ Staatsdelegitimierung beschreibt die pauschale Abwertung oder Feindmarkierung de
 
 Staatsdelegitimierung beschreibt die pauschale Abwertung oder Feindmarkierung des Staates als demokratische und rechtsstaatliche Ordnung.
 
+Staatsdelegitimierung ist ein Wirkungsrisiko, wenn sie Vertrauen in Gerichte, Verwaltung, Verfassung, Wahlen und demokratische Verfahren zerstört.
+
 ## Staatsfinanzielle Wirkungsblindheit
 
 Staatsfinanzielle Wirkungsblindheit beschreibt Haushalts- und Finanzpolitik, die Geldbewegungen misst, aber reale Zustandsveränderungen, Folgekosten und Nebenwirkungen ausblendet.
@@ -9294,17 +11076,23 @@ Staatsform beschreibt die grundlegende rechtlich-politische Ordnung eines Staate
 
 Staatsform beschreibt die grundlegende rechtlich-politische Ordnung eines Staates, etwa Republik oder Monarchie.
 
+Nicht mit Regierungsform verwechseln; Wirkung entsteht aus Institutionen, Verfahren und Machtbegrenzung.
+
 ## Staatsgebiet
 
 Staatsgebiet bezeichnet den räumlichen Bereich, in dem ein Staat Hoheitsgewalt ausübt.
 
 Staatsgebiet bezeichnet den räumlichen Bereich, in dem ein Staat Hoheitsgewalt ausübt.
 
+Grundelement des Staates und relevant für Zuständigkeit, Infrastruktur, Schutz und Verwaltung.
+
 ## Staatsgewalt
 
 Staatsgewalt bezeichnet die hoheitliche Macht des Staates, Recht zu setzen, durchzusetzen und Rechtsschutz zu gewährleisten.
 
 Staatsgewalt bezeichnet die hoheitliche Macht des Staates, Recht zu setzen, durchzusetzen und Rechtsschutz zu gewährleisten.
+
+Wirkungsökonomisch braucht Staatsgewalt Bindung an Grundrechte, Gewaltenteilung, Verhältnismäßigkeit und demokratische Kontrolle.
 
 ## Staatskapitalismus
 
@@ -9318,6 +11106,8 @@ Staatspropaganda ist vom Staat gesteuerte oder dominierte Propaganda.
 
 Staatspropaganda ist vom Staat gesteuerte oder dominierte Propaganda.
 
+Schädigt demokratische Öffentlichkeit, wenn sie Kritik ersetzt, Realität verzerrt und Macht absichert.
+
 ## Staatssozialismus
 
 Staatssozialismus beschreibt Systeme, in denen der Staat zentrale Kontrolle über Produktion, Eigentum und Verteilung übernimmt.
@@ -9330,17 +11120,23 @@ Staatsversagen liegt vor, wenn staatliches Handeln durch Informationsmangel, Feh
 
 Staatsversagen liegt vor, wenn staatliches Handeln durch Informationsmangel, Fehlanreize, Bürokratie, Machtinteressen oder schlechte Umsetzung negative Ergebnisse erzeugt.
 
+Die WÖk nimmt Staatsversagen ernst. Deshalb braucht sie Wirkungsrat, Transparenz, Evaluation, Versionierung, Rechtsschutz und demokratische Kontrolle.
+
 ## Staatsvolk
 
 Staatsvolk bezeichnet die Menschen, die rechtlich einem Staat angehören.
 
 Staatsvolk bezeichnet die Menschen, die rechtlich einem Staat angehören.
 
+Relevant für demokratische Legitimation, Rechte, Pflichten und Teilhabe.
+
 ## Staatsziel Umweltschutz
 
 Staatsziel Umweltschutz bezeichnet die verfassungsrechtliche Verpflichtung des Staates, Umwelt, natürliche Lebensgrundlagen und Tiere zu schützen.
 
 Staatsziel Umweltschutz bezeichnet die verfassungsrechtliche Verpflichtung des Staates, Umwelt, natürliche Lebensgrundlagen und Tiere zu schützen.
+
+In der Wirkungsökonomie wird dieses Staatsziel als rechtlicher Ausgangspunkt verstanden, um ökologische Wirkung nicht als freiwilliges Nachhaltigkeits-Add-on, sondern als staatliche Ordnungsaufgabe zu behandeln.
 
 ## Staatsziele und Verfassungsaufträge
 
@@ -9366,17 +11162,29 @@ Stadtwerke sind kommunal geprägte Versorgungsunternehmen, die häufig Strom, W�
 
 Stadtwerke sind kommunal geprägte Versorgungsunternehmen, die häufig Strom, Wärme, Wasser, Verkehr oder digitale Infrastruktur betreiben.
 
+Sie können Energie als Daseinsvorsorge und Wirkungsinfrastruktur organisieren, brauchen aber ebenfalls Wirkungsprüfung, Transparenz und Investitionsfähigkeit.
+
+Energie als Wirkungsinfrastruktur behandeln: Erzeugung, Netze, Speicher, Preise, Resilienz, Teilhabe und Folgewirkungen zusammen bewerten.
+
 ## Stafford Beer
 
 Beer entwickelte mit dem Viable System Model eine kybernetische Organisationssicht auf Lebensfähigkeit, Rekursion und Selbstbeobachtung.
 
 Beer entwickelte mit dem Viable System Model eine kybernetische Organisationssicht auf Lebensfähigkeit, Rekursion und Selbstbeobachtung.
 
+Die WÖk nutzt Beer, um dezentrale Wirkungskompetenz und Rückmeldung in Organisationen zu begründen.
+
+Beers Systemlogik ist Anschlussmodell für Wirkungsarchitektur, Verwaltung, Unternehmen, Wirkungsrat und lernende Institutionen.
+
+Als Bezugslinie verwenden, nicht als Autoritätsbeweis oder biografischen Lexikoneintrag.
+
 ## Stakeholder-Ansatz
 
 Der Stakeholder-Ansatz erweitert Unternehmensverantwortung über Eigentümerinteressen hinaus auf Beschäftigte, Kund:innen, Lieferanten, Gemeinden, Umwelt, Staat und andere Betroffene.
 
 Der Stakeholder-Ansatz erweitert Unternehmensverantwortung über Eigentümerinteressen hinaus auf Beschäftigte, Kund:innen, Lieferanten, Gemeinden, Umwelt, Staat und andere Betroffene.
+
+Die WÖk geht einen Schritt weiter: Stakeholder werden zu Wirkungsempfängern und Wirkungsräumen. Entscheidend ist nicht nur, wer betroffen ist, sondern welche reale Wirkung entsteht und wie diese in Entscheidungen zurückwirkt.
 
 ## Stakeholder-Kapitalismus
 
@@ -9390,11 +11198,17 @@ Ein Standardlastprofil ist ein typisierter Verbrauchsverlauf für kleinere Verbr
 
 Ein Standardlastprofil ist ein typisierter Verbrauchsverlauf für kleinere Verbraucher ohne registrierende Leistungsmessung.
 
+SLP vereinfacht Abrechnung, kann aber reale Flexibilität und Lastspitzen unsichtbar machen.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Standardmodell der Teilchenphysik
 
 Das Standardmodell beschreibt elementare Teilchen und drei fundamentale Wechselwirkungen der Teilchenphysik in einem gut geprüften theoretischen Rahmen; Gravitation ist darin nicht vollständig integriert.
 
 Das Standardmodell beschreibt elementare Teilchen und drei fundamentale Wechselwirkungen der Teilchenphysik in einem gut geprüften theoretischen Rahmen; Gravitation ist darin nicht vollständig integriert.
+
+Für die WÖk ist das Standardmodell kein operativer Begriff. Es kann als Beispiel dienen, wie leistungsfähige Modelle innerhalb ihres Geltungsbereichs sehr stark sein können und dennoch Grenzen haben. Das ist anschlussfähig an WÖk-Modelloffenheit: Auch gute Scorecards brauchen Geltungsbereich, Datenqualität und Weiterentwicklung.
 
 ## Standortscorecard
 
@@ -9414,11 +11228,17 @@ State Capture beschreibt die systematische Vereinnahmung staatlicher Institution
 
 State Capture beschreibt die systematische Vereinnahmung staatlicher Institutionen durch private, politische oder kriminelle Interessen.
 
+Schweres demokratisches Wirkungsrisiko, weil Rechtsstaatlichkeit, Rechenschaft und Gemeinwohlorientierung beschädigt werden.
+
 ## State of Charge / SOC
 
 State of Charge beschreibt den aktuellen Ladezustand einer Batterie.
 
 State of Charge beschreibt den aktuellen Ladezustand einer Batterie.
+
+SOC ist relevant für Betrieb, Ladeplanung, Sicherheit, Smart Charging und Nutzervertrauen.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## State of Health / SOH
 
@@ -9426,11 +11246,19 @@ State of Health beschreibt den Gesundheitszustand und die verbleibende Leistungs
 
 State of Health beschreibt den Gesundheitszustand und die verbleibende Leistungsfähigkeit einer Batterie.
 
+SOH ist zentral für Second Life, Restwert, Sicherheitsbewertung, Batteriepass und Kreislaufwirtschaft.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Stationärer Batteriespeicher
 
 Ein stationärer Batteriespeicher speichert Strom an einem festen Standort, etwa in Haushalten, Ladeparks, Industrie, Quartieren oder Netzsystemen.
 
 Ein stationärer Batteriespeicher speichert Strom an einem festen Standort, etwa in Haushalten, Ladeparks, Industrie, Quartieren oder Netzsystemen.
+
+Relevant für Eigenverbrauch, Netzdienlichkeit, Flexibilität, Lastspitzenreduktion, Strommarktdesign und Systemkosten.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Status Threat
 
@@ -9456,6 +11284,8 @@ Steuerkritik beschreibt Einwände gegen staatliche Abgaben, insbesondere wegen F
 
 Steuerkritik beschreibt Einwände gegen staatliche Abgaben, insbesondere wegen Freiheits-, Eigentums- oder Effizienzargumenten.
 
+Die WÖk unterscheidet fiskalische Abschöpfung von Wirkungsrückkopplung. Wirkungssteuern sollen Folgekosten sichtbar machen und Anreize korrigieren.
+
 ## Steuerungsdaten
 
 Steuerungsdaten sind Daten, die Entscheidungen, Anreize, Budgets, Preise, Beschaffung oder Kapitalflüsse beeinflussen.
@@ -9473,6 +11303,8 @@ Verantwortungseigentum trennt Stimm- und Vermögensrechte so, dass Unternehmen l
 Eine Stiftung ist eine Organisation, die Vermögen dauerhaft einem bestimmten Zweck widmet.
 
 Eine Stiftung ist eine Organisation, die Vermögen dauerhaft einem bestimmten Zweck widmet.
+
+Stiftungen können Gemeinwohl, Forschung und Demokratie stärken, aber auch politischen Einfluss mit geringer demokratischer Rechenschaft ermöglichen.
 
 ## Stranded Assets
 
@@ -9502,11 +11334,17 @@ Strategien, Geschäftsmodelle oder politische Maßnahmen unter mehreren Zukunfts
 
 Strategien, Geschäftsmodelle oder politische Maßnahmen unter mehreren Zukunfts- und Störungslagen prüfen.
 
+I05 gehört zur Kategorie „Strategische Vorausschau und Entscheidungsintelligenz“. Verbindlicher Output: Stresstestbericht mit Versagensmodi, Wirkungseinbrüchen, Grenzverletzungen, Robustheitslücken und Redesign-Aufträgen.
+
 ## Strategische Reserve
 
 Eine strategische Reserve hält Kraftwerks- oder Speicherleistung für außergewöhnliche Versorgungssituationen vor.
 
 Eine strategische Reserve hält Kraftwerks- oder Speicherleistung für außergewöhnliche Versorgungssituationen vor.
+
+Wirkung hängt von Governance, Kosten, Einsatzregeln, Transparenz und Alternativen ab.
+
+Energie als Wirkungsinfrastruktur behandeln: Erzeugung, Netze, Speicher, Preise, Resilienz, Teilhabe und Folgewirkungen zusammen bewerten.
 
 ## Strategisches Management
 
@@ -9530,11 +11368,15 @@ Streitfähigkeit bedeutet, Konflikte auszutragen, ohne Gegner:innen zu Feinden z
 
 Streitfähigkeit bedeutet, Konflikte auszutragen, ohne Gegner:innen zu Feinden zu machen.
 
+Demokratie braucht Streit, aber keinen Feindvernichtungsmodus.
+
 ## Stressreaktion
 
 Stressreaktion beschreibt körperliche und psychische Aktivierung bei wahrgenommener Belastung, Bedrohung oder Kontrollverlust.
 
 Stressreaktion beschreibt körperliche und psychische Aktivierung bei wahrgenommener Belastung, Bedrohung oder Kontrollverlust.
+
+Dauerstress reduziert Dialogfähigkeit, Reflexion und Vertrauen; gesellschaftliche Dauererregung ist ein demokratisches Wirkungsrisiko.
 
 ## Strohmann
 
@@ -9548,17 +11390,23 @@ Stromgestehungskosten beschreiben durchschnittliche Erzeugungskosten über die L
 
 Stromgestehungskosten beschreiben durchschnittliche Erzeugungskosten über die Lebensdauer einer Anlage pro Kilowattstunde.
 
+LCOE ist nützlich, aber nicht vollständig: Systemkosten, Netze, Speicher, Umweltkosten, Gesundheit, Klimafolgen und Zeitpfad zählen mit.
+
 ## Strommarkt
 
 Der Strommarkt organisiert Erzeugung, Handel, Transport, Verteilung und Verbrauch von Strom.
 
 Der Strommarkt organisiert Erzeugung, Handel, Transport, Verteilung und Verbrauch von Strom.
 
+Strom ist netzgebunden, muss in Echtzeit bilanziert werden und braucht Versorgungssicherheit, Flexibilität und Systemdienstleistungen.
+
 ## Strommarktdesign
 
 Strommarktdesign beschreibt Regeln für Erzeugung, Handel, Vergütung, Transport und Absicherung von Strom.
 
 Strommarktdesign beschreibt Regeln für Erzeugung, Handel, Vergütung, Transport und Absicherung von Strom.
+
+Strommarktdesign ist Wirkungsarchitektur: Es beeinflusst Investitionen, Preise, Flexibilität, Versorgungssicherheit, Netzausbau und Verteilung.
 
 ## Strommix
 
@@ -9572,11 +11420,17 @@ Das Stromnetz verbindet Erzeugung, Speicher und Verbrauch elektrischer Energie.
 
 Das Stromnetz verbindet Erzeugung, Speicher und Verbrauch elektrischer Energie.
 
+Zentral für Versorgungssicherheit, Netzintegration, Kostenverteilung und Teilhabe.
+
 ## StromNEV
 
 Die Stromnetzentgeltverordnung regelt Grundsätze zur Ermittlung von Netzentgelten im Strombereich.
 
 Die Stromnetzentgeltverordnung regelt Grundsätze zur Ermittlung von Netzentgelten im Strombereich.
+
+Sie ist relevant für Kostenverteilung, Netzentgeltsystematik, Standortsignale, Industrie, Haushalte und Energiewende-Anreize.
+
+Energie als Wirkungsinfrastruktur behandeln: Erzeugung, Netze, Speicher, Preise, Resilienz, Teilhabe und Folgewirkungen zusammen bewerten.
 
 ## Strompreisbestandteile
 
@@ -9584,11 +11438,15 @@ Strompreisbestandteile umfassen Beschaffung, Vertrieb, Netzentgelte, Steuern, Ab
 
 Strompreisbestandteile umfassen Beschaffung, Vertrieb, Netzentgelte, Steuern, Abgaben und Umlagen.
 
+Wichtig für soziale Verteilung, Akzeptanz und Wirkungssteuerung.
+
 ## Stromsteuer
 
 Die Stromsteuer ist eine Verbrauchsteuer auf Strom.
 
 Die Stromsteuer ist eine Verbrauchsteuer auf Strom.
+
+Wirkung hängt von Ausnahmen, Entlastungen und Lenkungslogik ab.
 
 ## Strukturdeterminiertheit
 
@@ -9608,6 +11466,8 @@ Struktureller Rassismus beschreibt rassistische Wirkungsmuster, die durch Regeln
 
 Struktureller Rassismus beschreibt rassistische Wirkungsmuster, die durch Regeln, Routinen, Daten, Institutionen, Märkte oder Sprache entstehen können.
 
+Wichtig, weil Wirkungen auch ohne einzelne absichtsvoll diskriminierende Handlung entstehen können.
+
 ## Strukturelles Driften
 
 Strukturelles Driften beschreibt die schrittweise Veränderung eines Systems durch wiederholte Kopplungen, Rückkopplungen und Anpassungen.
@@ -9620,11 +11480,15 @@ Studienfinanzierung beschreibt, wer Forschung, Gutachten oder Policy-Papiere bez
 
 Studienfinanzierung beschreibt, wer Forschung, Gutachten oder Policy-Papiere bezahlt.
 
+Wichtig, weil Finanzierung Fragestellung, Interpretation oder Veröffentlichung beeinflussen kann.
+
 ## Subsidiarität
 
 Subsidiarität bedeutet, dass Aufgaben möglichst nah an den betroffenen Menschen und Wirkungsräumen gelöst werden sollen, solange die niedrigere Ebene dazu fähig ist.
 
 Subsidiarität bedeutet, dass Aufgaben möglichst nah an den betroffenen Menschen und Wirkungsräumen gelöst werden sollen, solange die niedrigere Ebene dazu fähig ist.
+
+Die WÖk nutzt Subsidiarität zur demokratischen Begrenzung von Steuerung. Wirkung braucht lokale Daten, Betroffenenwissen und Kontext. Gleichzeitig müssen globale Schäden wie Klima, Lieferketten oder Plattformmacht übergreifend geregelt werden.
 
 ## Suffizienz
 
@@ -9638,17 +11502,25 @@ Der Sündenbockmechanismus verschiebt komplexe Probleme auf eine Gruppe, Person 
 
 Der Sündenbockmechanismus verschiebt komplexe Probleme auf eine Gruppe, Person oder Minderheit, die als Ursache markiert wird.
 
+Wirkungsrisiko für Wahrheit, Minderheitenschutz, Gewaltfreiheit und gesellschaftlichen Zusammenhalt.
+
 ## Superkondensator
 
 Ein Superkondensator speichert Energie elektrostatisch und kann sehr schnell laden und entladen.
 
 Ein Superkondensator speichert Energie elektrostatisch und kann sehr schnell laden und entladen.
 
+Kein klassischer Batteriespeicher; relevant für Leistungsspitzen, Rekuperation und Spezialanwendungen.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Superposition
 
 Superposition bezeichnet in der Quantenmechanik einen Zustand, in dem ein System nicht durch genau einen klassischen Zustand beschrieben wird, sondern durch eine Überlagerung möglicher Zustände.
 
 Superposition bezeichnet in der Quantenmechanik einen Zustand, in dem ein System nicht durch genau einen klassischen Zustand beschrieben wird, sondern durch eine Überlagerung möglicher Zustände.
+
+Für die WÖk kann Superposition höchstens als vorsichtige Analogie für Möglichkeitsräume vor der Entscheidung dienen. Ein politisches Programm, ein Narrativ oder eine Technologie enthält Wirkungspotenziale, die sich erst unter bestimmten Bedingungen realisieren. Das ist aber keine Quanten-Superposition im physikalischen Sinn.
 
 ## Supply-Chain-Resilienz
 
@@ -9662,11 +11534,15 @@ Supply-side Economics betont Wachstum durch bessere Angebotsbedingungen, niedrig
 
 Supply-side Economics betont Wachstum durch bessere Angebotsbedingungen, niedrigere Steuern, Deregulierung und Investitionsanreize.
 
+Relevant, weil häufig positive Folgewirkungen behauptet werden, ohne sie ausreichend zu messen.
+
 ## Supraleitung
 
 Supraleitung beschreibt einen Zustand ohne elektrischen Widerstand und mit besonderen magnetischen Effekten.
 
 Supraleitung beschreibt einen Zustand ohne elektrischen Widerstand und mit besonderen magnetischen Effekten.
+
+Potenzial für Stromübertragung, Magnetspulen, Sensorik oder Speichertechnologien; Wirkung hängt von Temperaturanforderungen, Materialien und Infrastruktur ab.
 
 ## Sustainability Benchmarking / ESG-Rating-Methodik
 
@@ -9710,6 +11586,8 @@ Systemdienstleistungen stabilisieren das Stromsystem, etwa Frequenzhaltung, Span
 
 Systemdienstleistungen stabilisieren das Stromsystem, etwa Frequenzhaltung, Spannungshaltung, Schwarzstartfähigkeit oder Reserve.
 
+Sie werden in erneuerbaren Systemen neu organisiert.
+
 ## Systemgrenze
 
 Eine Systemgrenze legt fest, was in einer Analyse berücksichtigt wird und was außerhalb bleibt.
@@ -9722,6 +11600,8 @@ Zeitliche, räumliche, organisatorische, lebenszyklische und kausale Grenzen so 
 
 Zeitliche, räumliche, organisatorische, lebenszyklische und kausale Grenzen so festlegen, dass wesentliche Wirkungen weder versteckt noch unbeherrschbar weit gefasst werden.
 
+A03 gehört zur Kategorie „Orientierung, Mandat und Schutzrahmen“. Verbindlicher Output: Eine begründete Systemgrenzendefinition einschließlich einbezogener und ausgeschlossener Bereiche sowie Review-Zeitpunkt.
+
 ## Systemhebel
 
 Systemhebel sind Eingriffspunkte, an denen kleine Änderungen große Systemwirkungen auslösen können.
@@ -9733,6 +11613,8 @@ Die WÖk nutzt Systemhebel, um Wirkungslenkung nicht auf Einzelmaßnahmen zu ver
 Interventionspunkte nach Tiefe, Reichweite, Umsetzbarkeit, Risiken und Lernpotenzial identifizieren und nicht mit bloß zentralen Variablen verwechseln.
 
 Interventionspunkte nach Tiefe, Reichweite, Umsetzbarkeit, Risiken und Lernpotenzial identifizieren und nicht mit bloß zentralen Variablen verwechseln.
+
+B10 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Verbindlicher Output: Priorisierte Hebelliste von Parametern über Informationsflüsse und Regeln bis zu Zielen und Paradigmen.
 
 ## Systemische Kohärenz
 
@@ -9758,11 +11640,15 @@ Systemkosten umfassen Kosten für Integration, Netze, Speicher, Flexibilität, R
 
 Systemkosten umfassen Kosten für Integration, Netze, Speicher, Flexibilität, Reserve, Redispatch und Versorgungssicherheit.
 
+Eine Technologie kann niedrige Gestehungskosten haben und dennoch Systemkosten verursachen.
+
 ## Systemlandkarte
 
 Die Systemlandkarte erfasst Wirkungsempfänger, Wirkungsräume, Wirkpfade, Wirkungsordnungen, Zeit, Risiken und Interdependenzen eines Wirkungssystems.
 
 Die Systemlandkarte erfasst Wirkungsempfänger, Wirkungsräume, Wirkpfade, Wirkungsordnungen, Zeit, Risiken und Interdependenzen eines Wirkungssystems.
+
+Sie macht sichtbar, wer oder was betroffen ist und wie Ressourcen-, Daten-, Geld-, Macht- und Wirkungsbeziehungen zusammenhängen.
 
 ## Systemorientiertes Management
 
@@ -9788,23 +11674,31 @@ Systemtheorie betrachtet Wirklichkeit nicht als Summe isolierter Teile, sondern 
 
 Systemtheorie betrachtet Wirklichkeit nicht als Summe isolierter Teile, sondern als Gefüge von Relationen, Rückkopplungen, Grenzen, Umwelten, Rollen, Kommunikationen und Selbstorganisation.
 
+Die WÖk nutzt Systemtheorie als Anschlusslinie, weil Wirkung nie isoliert entsteht. Produkte, Unternehmen, Medien, Kapital, Politik, Gesundheit, Ökosysteme und Demokratie sind gekoppelte Wirkungsräume. Wirkungsmessung muss daher Nebenwirkungen, Zeitverzögerungen, Rückkopplungen und Systemgrenzen berücksichtigen.
+
 ## Systemverzerrender Lobbyismus
 
 Systemverzerrender Lobbyismus beeinflusst politische Entscheidungen durch Intransparenz, Machtasymmetrie, selektive Daten, verdeckte Finanzierung oder ungleiche Zugänge.
 
 Systemverzerrender Lobbyismus beeinflusst politische Entscheidungen durch Intransparenz, Machtasymmetrie, selektive Daten, verdeckte Finanzierung oder ungleiche Zugänge.
 
+Wirkungsrisiko für Demokratie, Vertrauen, Rechtsstaatlichkeit und faire Marktregeln.
+
 ## T-SROI – Transformational Social Return on Investment
 
-T-SROI bewertet auf Grundlage geprüfter Netto-Wirkung, ob eine Investition systemische Hebelwirkung, Diffusion, Resilienz und Pfadveränderung im Verhältnis zum Kapitaleinsatz erzeugt.
+T-SROI ist ein modellhaftes Euro-zu-Euro-Verhältnis: diskontierter, kausal zugerechneter direkter und transformativ belegter Nettonutzen je diskontiertem Ressourceneuro.
 
-T-SROI steht für Transformational Social Return on Investment. Die Kennzahl setzt den diskontierten bewerteten Transformationsnutzen ins Verhältnis zur Investitionssumme. Anders als eine reine Projekt- oder Outputkennzahl fragt sie, ob eine Investition über die unmittelbare Wirkung hinaus Standards, Infrastrukturen, Verhalten, Resilienz oder Entwicklungspfade verändert. In einem dokumentierten Fünfjahresbeispiel entsprechen 1.766.888 Euro diskontierter Gesamtnutzen bei 1.000.000 Euro Investition einem T-SROI von 1,77 : 1.
+T-SROI steht für Transformational Social Return on Investment. Die Kennzahl setzt diskontierte, kausal zugerechnete Netto-Nutzenströme in Euro ins Verhältnis zu diskontierten Investitions- und Zusatzkosten in Euro. Transformative Wirkung ist dabei kein Multiplikator, sondern ein separat nachzuweisender Nutzenstrom, etwa aus einer dauerhaft veränderten Infrastruktur oder Regel. Beispiel bei offenem Gate: Investition heute 1.000.000 Euro, Nettonutzen Jahr 1 600.000 Euro und Jahr 2 800.000 Euro, Diskontsatz 5 Prozent. Dann beträgt der Barwert 600.000 / 1,05 + 800.000 / 1,05² = 1.297.052,15 Euro; T-SROI = 1.297.052,15 / 1.000.000 = 1,30 : 1.
 
 ## TAB Mittelspannung
 
 Technische Anschlussbedingungen Mittelspannung konkretisieren Anforderungen des Netzbetreibers für den Anschluss an das Mittelspannungsnetz.
 
 Technische Anschlussbedingungen Mittelspannung konkretisieren Anforderungen des Netzbetreibers für den Anschluss an das Mittelspannungsnetz.
+
+TABs beeinflussen Standort, Planung, Kosten und Ausführung von Ladeparks und Energieanlagen.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Tacit Knowledge
 
@@ -9821,6 +11715,8 @@ Tacit Knowledge ist kein mystisches Wissen. Es ist verdichtete Erfahrung, die of
 Tandem-Solarzellen kombinieren mehrere Solarzellenschichten, um verschiedene Lichtbereiche effizienter zu nutzen.
 
 Tandem-Solarzellen kombinieren mehrere Solarzellenschichten, um verschiedene Lichtbereiche effizienter zu nutzen.
+
+Relevant für höhere Wirkungsgrade und Flächeneffizienz; zu bewerten sind Materialeinsatz, Lebensdauer, Kosten, Recycling und Produktionswirkung.
 
 ## Tank-to-Wheel
 
@@ -9839,6 +11735,10 @@ Tankstellenlogik überträgt die Erwartung flächendeckender, sofortiger und sta
 Die TAR Mittelspannung beschreibt technische Anforderungen für Anschluss und Betrieb von Kundenanlagen am Mittelspannungsnetz.
 
 Die TAR Mittelspannung beschreibt technische Anforderungen für Anschluss und Betrieb von Kundenanlagen am Mittelspannungsnetz.
+
+Relevant für Ladeparks, Speicher, Industrie, PV und Wind; sie macht Systemstabilität projektverbindlich.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Target Gain
 
@@ -9900,6 +11800,10 @@ Technische Anschlussregeln beschreiben technische Anforderungen für Anschluss u
 
 Technische Anschlussregeln beschreiben technische Anforderungen für Anschluss und Betrieb von Anlagen am Stromnetz.
 
+Sie übersetzen Systemstabilität in konkrete Projektanforderungen und wirken auf Kosten, Planung und Geschwindigkeit.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Technische Bewertungskriterien
 
 Technische Bewertungskriterien legen fest, wann eine Tätigkeit im Taxonomie-Kontext die Anforderungen erfüllt.
@@ -9941,6 +11845,8 @@ Kritische Technologie-, Anbieter-, Cloud-, Schnittstellen- und Kompetenzabhängi
 
 Kritische Technologie-, Anbieter-, Cloud-, Schnittstellen- und Kompetenzabhängigkeiten analysieren.
 
+O04 gehört zur Kategorie „Daten, Technologie, KI und agentische Systeme“. Verbindlicher Output: Dependency Map mit Kritikalität, Substituierbarkeit, Datenportabilität, Exitkosten, Resilienz und Maßnahmen.
+
 ## Technologieoffenheit
 
 Technologieoffenheit bedeutet, unterschiedliche technische Wege zuzulassen, solange sie denselben Wirkungsmaßstab erfüllen.
@@ -9958,6 +11864,8 @@ Der Technologiereifegrad beschreibt, wie weit eine Technologie von der Grundlage
 Sharing beschreibt die gemeinsame Nutzung eines Produkts durch mehrere Nutzer:innen.
 
 Sharing beschreibt die gemeinsame Nutzung eines Produkts durch mehrere Nutzer:innen.
+
+Sharing kann Wirkung verbessern, wenn es Nutzungskapazität erhöht und neue Produktion vermeidet; es kann aber Plattformmacht oder Rebound-Effekte erzeugen.
 
 ## Teilgabe
 
@@ -9989,11 +11897,17 @@ Theokratie beschreibt eine Herrschaftsform, in der religiöse Autorität und sta
 
 Theokratie beschreibt eine Herrschaftsform, in der religiöse Autorität und staatliche Macht eng verbunden oder religiös legitimiert sind.
 
+Wirkung hängt davon ab, ob Grundrechte, Pluralismus, Gleichwertigkeit und Rechtsschutz gesichert oder eingeschränkt werden.
+
 ## Thermal Runaway
 
 Thermal Runaway beschreibt eine sich selbst verstärkende Überhitzung einer Batterie, die zu Brand oder Explosion führen kann.
 
 Thermal Runaway beschreibt eine sich selbst verstärkende Überhitzung einer Batterie, die zu Brand oder Explosion führen kann.
+
+Thermal Runaway ist ein Sicherheits- und Wirkungsrisiko für Ladeparks, Speicher, Transport, Versicherung, Genehmigung und Rettungskonzepte.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Thermischer Strompfad
 
@@ -10006,6 +11920,8 @@ Ein thermischer Strompfad nutzt Elektrizität zur Erzeugung von Wärme; seine Si
 Ein thermisches Kraftwerk erzeugt elektrische Energie über Wärme, die meist eine Turbine oder Wärmekraftmaschine antreibt.
 
 Ein thermisches Kraftwerk erzeugt elektrische Energie über Wärme, die meist eine Turbine oder Wärmekraftmaschine antreibt.
+
+Wirkung hängt von Brennstoff, Emissionen, Wirkungsgrad, Abwärme, Wasserverbrauch, Sicherheitsrisiken und Flexibilität ab.
 
 ## THG
 
@@ -10030,6 +11946,8 @@ Thinktanks erzeugen Wissen, Deutungen, Studien, Narrative, Policy-Papiere, Netzw
 Ein Thinktank-Netzwerk verbindet mehrere Thinktanks, Stiftungen, Forschungseinrichtungen, politische Akteure oder Geldgeber.
 
 Ein Thinktank-Netzwerk verbindet mehrere Thinktanks, Stiftungen, Forschungseinrichtungen, politische Akteure oder Geldgeber.
+
+Kann Wissen verbreiten und Kompetenzen aufbauen, aber auch Ideologien, Personalstrategien oder Policy-Programme transnational koordinieren.
 
 ## Thomas Piketty
 
@@ -10061,6 +11979,8 @@ Ein Tipping Point ist ein Schwellenpunkt, ab dem eine Entwicklung nicht mehr lin
 
 Ein Tipping Point ist ein Schwellenpunkt, ab dem eine Entwicklung nicht mehr linear weiterläuft, sondern sich durch Rückkopplungen beschleunigt, stabilisiert oder qualitativ verändert.
 
+Die WÖk nutzt den Begriff für Märkte, Politik, Medien, Vertrauen, Technologie, Klima und soziale Systeme. Ein Tipping Point kann positiv sein, etwa bei schneller Diffusion guter Lösungen, oder negativ, etwa bei Vertrauensverlust, Polarisierung oder ökologischen Kaskaden.
+
 ## TNFD
 
 TNFD ist ein Rahmen für Offenlegung und Management naturbezogener Risiken, Abhängigkeiten und Wirkungen.
@@ -10079,11 +11999,15 @@ Totalitarismus beschreibt Herrschaftsformen, die alle Lebensbereiche kontrollier
 
 Totalitarismus beschreibt Herrschaftsformen, die alle Lebensbereiche kontrollieren wollen und keine freie politische Opposition zulassen.
 
+Schweres Wirkungsrisiko, weil Öffentlichkeit, Privatheit, Pluralität, Rechtsschutz, Wahrheit und eigenständige Gesellschaft zerstört werden können.
+
 ## Totalitarismus nach Arendt
 
 Totalitarismus nach Arendt beschreibt Herrschaftsformen, die Menschen isolieren, Wahrheit zerstören, Terror und Ideologie verbinden und politische Pluralität abschaffen.
 
 Totalitarismus nach Arendt beschreibt Herrschaftsformen, die Menschen isolieren, Wahrheit zerstören, Terror und Ideologie verbinden und politische Pluralität abschaffen.
+
+Anschlussbegriff für Wirkungsrisiken, die Öffentlichkeit, Urteilskraft, Gesellschaft und Rechtsstaatlichkeit zerstören.
 
 ## Totalverweigerer-Frame
 
@@ -10099,11 +12023,17 @@ Eine Trafostation enthält einen Transformator und weitere Betriebsmittel zur Um
 
 Eine Trafostation enthält einen Transformator und weitere Betriebsmittel zur Umwandlung von Spannung, häufig von Mittelspannung auf Niederspannung.
 
+Trafostationen sind praktische Engpass- und Kostenpunkte für Ladeparks, Gewerbe, Quartiere und dezentrale Energiewende.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Transaktionskosten
 
 Transaktionskosten sind Kosten der Anbahnung, Durchführung, Kontrolle und Durchsetzung von Austauschbeziehungen.
 
 Transaktionskosten sind Kosten der Anbahnung, Durchführung, Kontrolle und Durchsetzung von Austauschbeziehungen.
+
+Gute Wirkungsdaten und Standards können Transaktionskosten senken, ohne Wirkungsprüfung abzubauen.
 
 ## Transferentzugsrate
 
@@ -10127,11 +12057,15 @@ Eine zeitlich begrenzte Integrationsfunktion für Portfolio, Architektur, Change
 
 Eine zeitlich begrenzte Integrationsfunktion für Portfolio, Architektur, Change, Benefits, Risiken und Entscheidungsvorbereitung gestalten.
 
+N08 gehört zur Kategorie „Portfolio, Programme, Delivery und Impact & Benefits Realization“. Verbindlicher Output: Design des Transformation Office mit Auftrag, Rollen, Services, Daten, Entscheidungsforen, Sunset-Kriterien und Reviewformat.
+
 ## Transformationsbacklog und Portfolio-Kanban
 
 Transformation als transparenten, begrenzten Fluss von Optionen, Entscheidungen, Umsetzung und Benefits steuern.
 
 Transformation als transparenten, begrenzten Fluss von Optionen, Entscheidungen, Umsetzung und Benefits steuern.
+
+N04 gehört zur Kategorie „Portfolio, Programme, Delivery und Impact & Benefits Realization“. Verbindlicher Output: Portfolio-Kanban mit WIP-Limits, Entscheidungszuständen, Evidenz, Risiken, Gates und Benefit-Tracking.
 
 ## Transformationsbonus
 
@@ -10165,6 +12099,8 @@ Transformationsinitiativen nach Systemhebel, Netto-Wirkung, Reife, Lernwert, Abh
 
 Transformationsinitiativen nach Systemhebel, Netto-Wirkung, Reife, Lernwert, Abhängigkeit und zeitlicher Sequenz ordnen.
 
+E05 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlicher Output: Ausbalanciertes Portfolio aus Soforthebeln, Enablern, Experimenten, strukturellen Umbauten und Exits.
+
 ## Transformationsschulden
 
 Transformationsschulden sind öffentliche Schulden, die strukturelle Veränderungen ermöglichen und dadurch künftige Handlungspfade, Standards, Märkte, Infrastrukturen oder Systemlogiken verändern.
@@ -10181,9 +12117,9 @@ Transformationswellen entstehen nicht durch einen einzelnen Auslöser, sondern d
 
 ## Transformationswirkung
 
-Transformationswirkung liegt vor, wenn Wirkung nicht nur einzelne Zustände verbessert, sondern Systemlogiken, Standards, Anreize, Märkte, Institutionen oder Handlungspfade dauerhaft verändert.
+Transformationswirkung ist eine eingetretene Zustandsveränderung, die die Bedingungen künftiger Entscheidungen – etwa Regeln, Standards, Anreize, Infrastrukturen oder Pfade – verändert.
 
-Transformationswirkung bezeichnet eine Wirkung, die über eine einzelne Zustandsveränderung hinausgeht und die Struktur eines Systems verändert. Sie liegt vor, wenn sich Bedingungen verändern, unter denen künftige Entscheidungen, Märkte, Preise, Institutionen, Technologien, Standards, Verhaltensweisen oder Kapitalflüsse entstehen.
+Transformationswirkung bezeichnet eine tatsächliche Zustandsveränderung, die über einen Einzelfall hinaus die Struktur eines Systems verändert: etwa Regeln, Standards, Anreize, Infrastrukturen, Marktbedingungen oder institutionelle Routinen. Ob eine solche Veränderung eingetreten ist, muss mit Wirkpfad, Systemgrenze, Zeitraum, Vergleichsmaßstab, Daten und Gegenhypothesen begründet werden. Eine erwartete strukturelle Veränderung ist zunächst Transformationspotenzial oder eine Szenarioannahme. Sie darf nicht als eingetretene Wirkung ausgegeben werden.
 
 ## Transformationswirkungs-Logik
 
@@ -10191,11 +12127,17 @@ Erfassen, ob und wie eine Intervention Entscheidungsregeln, Standards, Infrastru
 
 Erfassen, ob und wie eine Intervention Entscheidungsregeln, Standards, Infrastrukturen, Märkte, Machtverhältnisse oder Handlungspfade verändert.
 
+C10 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Verbindlicher Output: Transformationsmodell mit Hebel, Diffusion, Standardsetzung, Pfadveränderung, Resilienzgewinn und Risiken.
+
 ## Transformator / Trafo
 
 Ein Transformator wandelt elektrische Spannung zwischen unterschiedlichen Spannungsebenen um.
 
 Ein Transformator wandelt elektrische Spannung zwischen unterschiedlichen Spannungsebenen um.
+
+Transformatoren sind Infrastrukturbausteine für Netzanschluss, Verluste, Flächen, Materialbedarf und Versorgungssicherheit.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Transition Finance
 
@@ -10221,17 +12163,23 @@ Umwandlung bestimmter radioaktiver Nuklide in andere Nuklide, um Eigenschaften r
 
 Umwandlung bestimmter radioaktiver Nuklide in andere Nuklide, um Eigenschaften radioaktiver Abfälle zu verändern.
 
+Im Kernenergie-Dossier nur mit klarer Bilanzgrenze, Datenstand und Alternativenvergleich verwenden.
+
 ## Transparenz
 
 Transparenz bedeutet, dass relevante Informationen, Interessen, Daten, Entscheidungen und Verantwortlichkeiten sichtbar und überprüfbar sind.
 
 Transparenz bedeutet, dass relevante Informationen, Interessen, Daten, Entscheidungen und Verantwortlichkeiten sichtbar und überprüfbar sind.
 
+Transparenz ist nicht Selbstzweck. Sie ermöglicht Kontrolle, Vertrauen und Korrektur.
+
 ## Transparenzregister
 
 Ein Transparenzregister macht sichtbar, welche Organisationen politische Entscheidungen beeinflussen wollen, welche Interessen sie vertreten und welche Mittel sie einsetzen.
 
 Ein Transparenzregister macht sichtbar, welche Organisationen politische Entscheidungen beeinflussen wollen, welche Interessen sie vertreten und welche Mittel sie einsetzen.
+
+Zentrale Infrastruktur für demokratische Rückkopplung, aber nur wirksam mit guter Datenqualität, Kontrolle und Sanktionen.
 
 ## Treibhausgasemissionen
 
@@ -10245,11 +12193,15 @@ Kontinuierliche Entwicklungen von Brüchen, Kipppunkten und seltenen Ereignissen
 
 Kontinuierliche Entwicklungen von Brüchen, Kipppunkten und seltenen Ereignissen unterscheiden.
 
+I03 gehört zur Kategorie „Strategische Vorausschau und Entscheidungsintelligenz“. Verbindlicher Output: Zukunftstreiber-Portfolio mit Dynamik, Unsicherheit, Wechselwirkung und potenzieller Wirkung erster bis dritter Ordnung.
+
 ## Trickle-down-Ökonomie
 
 Trickle-down-Ökonomie bezeichnet die Annahme, dass Entlastungen für Vermögende, Unternehmen oder Kapital langfristig allen zugutekommen sollen.
 
 Trickle-down-Ökonomie bezeichnet die Annahme, dass Entlastungen für Vermögende, Unternehmen oder Kapital langfristig allen zugutekommen sollen.
+
+Ein Beispiel für ein Wirkungsversprechen ohne ausreichende Wirkungsprüfung. Trickle-down behauptet Wirkung; die WÖk misst Wirkung.
 
 ## Tritium
 
@@ -10264,6 +12216,8 @@ In der Wirkungsökonomie wird der Begriff verwendet, um Wirkungen als tatsächli
 Das Trittbrettfahrerproblem entsteht, wenn Akteure von einem Gut profitieren, ohne zu dessen Bereitstellung beizutragen.
 
 Das Trittbrettfahrerproblem entsteht, wenn Akteure von einem Gut profitieren, ohne zu dessen Bereitstellung beizutragen.
+
+Relevant für Klima, Infrastruktur, Medienqualität, Gemeingüter und kollektive Wirkung.
 
 ## Triviale Maschine
 
@@ -10290,6 +12244,10 @@ Tu-quoque kann relevante Glaubwürdigkeitsfragen berühren, ersetzt aber keine W
 Der Typ-2-Stecker ist ein in Europa verbreiteter Standard für AC-Laden.
 
 Der Typ-2-Stecker ist ein in Europa verbreiteter Standard für AC-Laden.
+
+Interoperable Steckersysteme reduzieren Zugangshürden und Fehlinvestitionen.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Übergabestation
 
@@ -10337,6 +12295,8 @@ Umsetzung so planen, dass Beschäftigte, Betroffene, Versorgung, Kaufkraft und k
 
 Umsetzung so planen, dass Beschäftigte, Betroffene, Versorgung, Kaufkraft und kritische Funktionen während des Übergangs geschützt werden.
 
+H04 gehört zur Kategorie „Umsetzung, Monitoring, Lernen und Assurance“. Verbindlicher Output: Übergangsplan mit Betroffenenfolgen, Qualifizierung, Kompensation, Versorgungsschutz, Kommunikation und Eskalation.
+
 ## Umsetzungspfad
 
 Der Umsetzungspfad beschreibt die schrittweise, lernfähige und demokratisch kontrollierte Einführung der Wirkungsökonomie von Pilotierung über Dateninfrastruktur, Recht, Steuern, Beschaffung, Kapital und Alltag bis zur Skalierung.
@@ -10353,11 +12313,19 @@ Eine Umspannstation transformiert Strom zwischen Spannungsebenen, häufig zwisch
 
 Eine Umspannstation transformiert Strom zwischen Spannungsebenen, häufig zwischen Mittelspannung und Niederspannung.
 
+Relevant für Quartiere, Gewerbe, Ladeparks, PV, Speicher und lokale Netzkapazität.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Umspannwerk
 
 Ein Umspannwerk verbindet verschiedene Spannungsebenen und transformiert elektrische Energie zwischen ihnen.
 
 Ein Umspannwerk verbindet verschiedene Spannungsebenen und transformiert elektrische Energie zwischen ihnen.
+
+Umspannwerke sind Knoten der Energieinfrastruktur und entscheidend für Anschlussfähigkeit, Versorgungssicherheit und Netzausbau.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Umwandlungskette
 
@@ -10391,6 +12359,8 @@ WÖMS-Anwendung, Bewertungsmodelle, Daten, Entscheidungen und behauptete Wirkung
 
 WÖMS-Anwendung, Bewertungsmodelle, Daten, Entscheidungen und behauptete Wirkung unabhängig challengen.
 
+P10 gehört zur Kategorie „Qualität, operative Resilienz, Kontrollen und integrierte Assurance“. Verbindlicher Output: Prüfbericht mit Scope, Kriterien, Evidenz, Feststellungen, Unsicherheiten, Managementantwort und Follow-up.
+
 ## Unbezahlte Arbeit
 
 Unbezahlte Arbeit sind Tätigkeiten, die gesellschaftlich notwendig sind, aber nicht oder nicht direkt monetär entlohnt werden.
@@ -10410,6 +12380,8 @@ In der Wirkungsökonomie wird der Begriff verwendet, um Wirkungen als tatsächli
 Die Unschärferelation bezeichnet in der Quantenmechanik eine fundamentale Begrenzung, bestimmte Messgrößen zugleich beliebig genau zu bestimmen.
 
 Die Unschärferelation bezeichnet in der Quantenmechanik eine fundamentale Begrenzung, bestimmte Messgrößen zugleich beliebig genau zu bestimmen.
+
+Für die WÖk ist daran die methodische Warnung wichtig: Messung erzeugt keine totale Wirklichkeitskontrolle. Auch sehr gute Wirkungsdaten bleiben an Messrahmen, Zeiträume, Unsicherheiten und Modellannahmen gebunden. Deshalb braucht die WÖk Datenqualität, Unsicherheitsangaben, Versionierung und demokratische Prüfung.
 
 ## Unsichtbare Arbeit
 
@@ -10486,6 +12458,8 @@ Unternehmerische Kompetenz bezeichnet die Fähigkeit, Möglichkeiten zu erkennen
 
 Unternehmerische Kompetenz bezeichnet die Fähigkeit, Möglichkeiten zu erkennen, Ressourcen zu kombinieren, Risiken zu tragen, Organisation zu bauen, Entscheidungen zu treffen und aus Rückkopplung zu lernen.
 
+In der WÖk wird unternehmerische Kompetenz zur Wirkungskompetenz erweitert. Es reicht nicht, Chancen zu monetarisieren; entscheidend ist, ob Chancen zu positiver Netto-Wirkung führen und ob Nebenwirkungen früh erkannt werden.
+
 ## Unternehmerisches Lernen
 
 Unternehmerisches Lernen beschreibt die Entwicklung von Wahrnehmung, Kompetenz, Risiko-, Innovations- und Transformationsfähigkeit.
@@ -10508,11 +12482,15 @@ Upcycling wertet Materialien oder Produkte durch neue Nutzung mit höherem Wert 
 
 Upcycling wertet Materialien oder Produkte durch neue Nutzung mit höherem Wert oder höherer Funktion auf.
 
+Wirkung hängt von tatsächlicher Lebensdauer, Nutzbarkeit und Materialgesundheit ab.
+
 ## Urban Mining
 
 Urban Mining gewinnt Rohstoffe aus Gebäuden, Infrastrukturen, Produkten oder Abfallbeständen zurück.
 
 Urban Mining gewinnt Rohstoffe aus Gebäuden, Infrastrukturen, Produkten oder Abfallbeständen zurück.
+
+Es liest gebaute Umwelt als Materiallager und braucht Materialpässe sowie Dekonstruktion.
 
 ## Urban Mining Batterien
 
@@ -10520,11 +12498,17 @@ Urban Mining bei Batterien beschreibt die Rückgewinnung wertvoller Materialien 
 
 Urban Mining bei Batterien beschreibt die Rückgewinnung wertvoller Materialien aus gebrauchten Batterien und Produktionsabfällen.
 
+Es macht Altbatterien und Produktionsausschuss als Rohstoffquelle sichtbar, braucht aber Sammel-, Sortier-, Sicherheits- und Recyclinginfrastruktur.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Ursachen-, Incident- und Lernanalyse
 
 Nach Fehlern, Beinaheereignissen oder Wirkungsabweichungen systemisch lernen, ohne vorschnelle Personalisierung.
 
 Nach Fehlern, Beinaheereignissen oder Wirkungsabweichungen systemisch lernen, ohne vorschnelle Personalisierung.
+
+P03 gehört zur Kategorie „Qualität, operative Resilienz, Kontrollen und integrierte Assurance“. Verbindlicher Output: Lernbericht mit Ereignislinie, Systembedingungen, Barrieren, Ursachen, Wirkungsfolgen und Maßnahmen.
 
 ## Urteilskraft
 
@@ -10532,17 +12516,27 @@ Urteilskraft beschreibt die Fähigkeit, Situationen zu beurteilen, Perspektiven 
 
 Urteilskraft beschreibt die Fähigkeit, Situationen zu beurteilen, Perspektiven mitzudenken und verantwortlich zu entscheiden.
 
+Für die WÖk zentral, weil Daten und Regeln ohne Urteilskraft technokratisch oder blind werden können.
+
 ## Value Proposition
 
 Eine Value Proposition beschreibt das Nutzenversprechen eines Produkts, einer Dienstleistung oder Organisation gegenüber einer Zielgruppe: welches Problem gelöst, welcher Nutzen geschaffen und welche Belastung reduziert wird.
 
 Eine Value Proposition beschreibt das Nutzenversprechen eines Produkts, einer Dienstleistung oder Organisation gegenüber einer Zielgruppe: welches Problem gelöst, welcher Nutzen geschaffen und welche Belastung reduziert wird.
 
+Die WÖk erweitert die Value Proposition zur Wirkungsproposition. Ein Angebot ist nicht schon gut, weil Kund:innen es nützlich finden. Es muss auch prüfen, welche Wirkung auf Arbeit, Klima, Ressourcen, Gesundheit, Demokratie und künftige Generationen entsteht.
+
+Ein Wertversprechen muss auch Wirkung auf Nicht-Kund:innen, Lieferketten, Umwelt und Demokratie berücksichtigen.
+
 ## Value Proposition Canvas
 
 Das Value Proposition Canvas ist ein strategisches Werkzeug, das Kundensegmente mit Nutzenversprechen verbindet. Es unterscheidet typischerweise Jobs, Pains und Gains auf Kundenseite sowie Produkte, Pain Relievers und Gain Creators auf Angebotsseite.
 
 Das Value Proposition Canvas ist ein strategisches Werkzeug, das Kundensegmente mit Nutzenversprechen verbindet. Es unterscheidet typischerweise Jobs, Pains und Gains auf Kundenseite sowie Produkte, Pain Relievers und Gain Creators auf Angebotsseite.
+
+In der WÖk soll das Canvas um eine Wirkungsprüfung erweitert werden: Welche Wirkungsempfänger sind betroffen? Welche externen Kosten entstehen? Welche SDGs/SDG+ werden gestärkt oder geschwächt? Welche roten Linien dürfen nicht kompensiert werden?
+
+WÖk-Erweiterung: Pain Relievers und Gain Creators müssen um Wirkungsrisiken, externe Kosten und Wirkungsempfänger erweitert werden.
 
 ## Varietät
 
@@ -10556,11 +12550,17 @@ Vehicle-to-Grid nutzt Batterien von Elektrofahrzeugen zur Rückspeisung oder Net
 
 Vehicle-to-Grid nutzt Batterien von Elektrofahrzeugen zur Rückspeisung oder Netzstützung.
 
+Potenzial für Flexibilität, aber abhängig von Batteriealterung, Tarifen, Standards und Nutzerakzeptanz.
+
 ## Vehicle-to-Home
 
 Vehicle-to-Home nutzt die Fahrzeugbatterie zur Versorgung eines Gebäudes.
 
 Vehicle-to-Home nutzt die Fahrzeugbatterie zur Versorgung eines Gebäudes.
+
+Relevant für Eigenverbrauch, Resilienz, Notstrom und Kostensteuerung, aber abhängig von Technik, Recht und Batteriealterung.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Vehicle-to-Load
 
@@ -10568,11 +12568,17 @@ Vehicle-to-Load stellt Strom aus der Fahrzeugbatterie direkt für Geräte oder m
 
 Vehicle-to-Load stellt Strom aus der Fahrzeugbatterie direkt für Geräte oder mobile Anwendungen bereit.
 
+Nützlich für Baustellen, Krisenfälle und mobile Versorgung, aber kein Ersatz für systemische Netzspeicher.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Verantwortung für kommende Generationen
 
 Verantwortung für kommende Generationen bedeutet, heutige Entscheidungen so zu treffen, dass sie die Freiheits-, Lebens- und Entwicklungschancen zukünftiger Menschen nicht unverhältnismäßig verengen.
 
 Verantwortung für kommende Generationen bedeutet, heutige Entscheidungen so zu treffen, dass sie die Freiheits-, Lebens- und Entwicklungschancen zukünftiger Menschen nicht unverhältnismäßig verengen.
+
+Wirkung hat eine Zeitdimension. Was heute externalisiert, verschleppt oder unterlassen wird, kann künftige Freiheit, Gesundheit, Infrastruktur, Demokratie und ökologische Stabilität belasten. Die Wirkungsökonomie macht diese Zeitwirkungen sichtbar und rückkoppelbar.
 
 ## Verantwortungsdiffusion
 
@@ -10610,11 +12616,15 @@ Eine Verfassung legt die grundlegende Ordnung eines Staates, Grundrechte, Instit
 
 Eine Verfassung legt die grundlegende Ordnung eines Staates, Grundrechte, Institutionen und Machtbegrenzungen fest.
 
+Verfassung ist Wirkungsgrenze und Schutzarchitektur zugleich.
+
 ## Verfassungsgerichtsbarkeit
 
 Verfassungsgerichtsbarkeit prüft, ob staatliches Handeln mit der Verfassung vereinbar ist.
 
 Verfassungsgerichtsbarkeit prüft, ob staatliches Handeln mit der Verfassung vereinbar ist.
+
+Sie schützt Grundrechte, Gewaltenteilung und demokratische Korrektur gegen Mehrheits- oder Regierungsmacht.
 
 ## Verfassungsmäßige Wirkungsarchitektur
 
@@ -10622,17 +12632,23 @@ Eine verfassungsmäßige Wirkungsarchitektur ordnet Wirkungsmessung, Wirkungspr�
 
 Eine verfassungsmäßige Wirkungsarchitektur ordnet Wirkungsmessung, Wirkungsprüfung und Wirkungssteuerung innerhalb von Grundrechten, Demokratie, Rechtsstaatlichkeit, Verhältnismäßigkeit und Rechtsschutz.
 
+WÖk-Präzisierungsbegriff gegen Planwirtschafts- und Technokratie-Missverständnisse.
+
 ## Verfassungsorgan
 
 Ein Verfassungsorgan ist eine durch die Verfassung vorgesehene zentrale Institution des Staates.
 
 Ein Verfassungsorgan ist eine durch die Verfassung vorgesehene zentrale Institution des Staates.
 
+Relevant für Zuständigkeit, Kontrolle, demokratische Legitimation und Machtbegrenzung.
+
 ## Verfassungspatriotismus
 
 Verfassungspatriotismus beschreibt eine Form politischer Identifikation, die sich nicht auf Abstammung oder Ethnie stützt, sondern auf Verfassung, Rechte, demokratische Verfahren und gemeinsame Institutionen.
 
 Verfassungspatriotismus beschreibt eine Form politischer Identifikation, die sich nicht auf Abstammung oder Ethnie stützt, sondern auf Verfassung, Rechte, demokratische Verfahren und gemeinsame Institutionen.
+
+Die WÖk nutzt den Begriff als wichtige Abgrenzung zu nationalistischen Identitätslogiken und als Brücke zu moderner demokratischer Zugehörigkeit.
 
 ## Verfügbarkeitsheuristik
 
@@ -10652,11 +12668,15 @@ Verhältnismäßigkeit verlangt, dass staatliche Maßnahmen geeignet, erforderli
 
 Verhältnismäßigkeit verlangt, dass staatliche Maßnahmen geeignet, erforderlich und angemessen sind.
 
+Zentral, damit Wirkungssteuerung nicht in Technokratie oder Freiheitsbeschädigung kippt.
+
 ## Verhältnismäßigkeit in der Wirkungsökonomie
 
 Verhältnismäßigkeit ist der rechtsstaatliche Maßstab, der sicherstellt, dass Wirkungslenkung geeignet, erforderlich und angemessen bleibt.
 
 Verhältnismäßigkeit ist der rechtsstaatliche Maßstab, der sicherstellt, dass Wirkungslenkung geeignet, erforderlich und angemessen bleibt.
+
+Jede wirkungsbasierte Steuer, Bewertung, Förderung, Sanktion oder Regel muss verhältnismäßig sein. Je stärker ein Eingriff in Freiheit, Eigentum, Berufsausübung oder Teilhabe wirkt, desto höher sind Begründungspflicht, Datenqualität, Rechtsschutz und demokratische Kontrolle.
 
 ## Verhältnismäßigkeit nach Wirkung
 
@@ -10696,6 +12716,14 @@ Verschränkung bezeichnet in der Quantenphysik eine Korrelation zwischen Quanten
 
 Verschränkung bezeichnet in der Quantenphysik eine Korrelation zwischen Quantensystemen, bei der der gemeinsame Zustand nicht vollständig aus den Einzelzuständen beschrieben werden kann.
 
+Für die WÖk ist Verschränkung kein Beweis, dass „alles mit allem verbunden“ ist. Sie ist allenfalls eine starke Erinnerung daran, dass Beziehungen und gemeinsame Zustände manchmal wichtiger sind als isolierte Einheiten. Für soziale Systeme bleibt die passende Sprache Interdependenz, Kopplung, Rückkopplung und Wirkungsnetz.
+
+## Verschwörungserzählung
+
+Eine Verschwörungserzählung erklärt Ereignisse vor allem durch angeblich geheime, absichtlich schädliche Steuerung mächtiger Akteure.
+
+Reale Absprachen, Korruption oder Machtmissbrauch können und müssen untersucht werden. Der Begriff ist deshalb nicht für jede unbelegte Vermutung passend. Entscheidend sind überprüfbare Behauptungen, belastbare Quellen, alternative Erklärungen und die Bereitschaft, die eigene Deutung bei Gegenbelegen zu ändern. Der Begriff beschreibt ein Erzählmuster, keine Eigenschaft von Menschen.
+
 ## Versicherbarkeit
 
 Versicherbarkeit beschreibt in der WÖk, ob ein Risiko unter Berücksichtigung von Wirkung, Prävention, Resilienz, Datenqualität und Systemfolgen verantwortbar versichert werden kann.
@@ -10729,11 +12757,17 @@ Versorgungssicherheit beschreibt die verlässliche Verfügbarkeit von Energie in
 
 Versorgungssicherheit beschreibt die verlässliche Verfügbarkeit von Energie in ausreichender Menge, Qualität und Zeit.
 
+Sie ist eine Wirkungsbedingung für Gesundheit, Pflege, Industrie, Verwaltung, Kommunikation, Bildung, Wasser, Wärme, Mobilität und demokratische Handlungsfähigkeit.
+
+Energie als Wirkungsinfrastruktur behandeln: Erzeugung, Netze, Speicher, Preise, Resilienz, Teilhabe und Folgewirkungen zusammen bewerten.
+
 ## Verstärkungslernen
 
 Verstärkungslernen beschreibt Verhaltensänderung durch wiederholte Rückmeldungen, Belohnungen oder Sanktionen.
 
 Verstärkungslernen beschreibt Verhaltensänderung durch wiederholte Rückmeldungen, Belohnungen oder Sanktionen.
+
+Wirkungsrückkopplung kann gesellschaftliches Verstärkungslernen sein: positive Wirkung wird belohnt, negative Wirkung belastet.
 
 ## Verteidigungsfähigkeit
 
@@ -10747,11 +12781,15 @@ Das Verteilnetz bringt Strom regional zu Haushalten, Betrieben und dezentralen A
 
 Das Verteilnetz bringt Strom regional zu Haushalten, Betrieben und dezentralen Anlagen.
 
+Zentral für PV, Wärmepumpen, Elektromobilität, Speicher, Prosumer und Netzentgelte.
+
 ## Vertragsfreiheit
 
 Vertragsfreiheit beschreibt die Freiheit, Verträge freiwillig zu schließen oder nicht zu schließen.
 
 Vertragsfreiheit beschreibt die Freiheit, Verträge freiwillig zu schließen oder nicht zu schließen.
+
+Sie kann durch Machtasymmetrien, Informationsasymmetrien oder existenzielle Abhängigkeiten eingeschränkt sein.
 
 ## Vertrauen
 
@@ -10771,11 +12809,15 @@ Der Vertrautheitseffekt beschreibt, dass wiederholter Kontakt mit einem Reiz des
 
 Der Vertrautheitseffekt beschreibt, dass wiederholter Kontakt mit einem Reiz dessen positive Bewertung erhöhen kann.
 
+Relevant für Marken, Narrative, politische Begriffe, Normalisierung und Plattformkommunikation.
+
 ## Verwaltung
 
 Die Verwaltung setzt Gesetze, Programme und politische Entscheidungen praktisch um.
 
 Die Verwaltung setzt Gesetze, Programme und politische Entscheidungen praktisch um.
+
+Verwaltung ist nicht bloße Bürokratie. Sie ist ein zentraler Ort, an dem Wirkung tatsächlich entsteht oder blockiert wird.
 
 ## Viabilität
 
@@ -10789,11 +12831,17 @@ Das VSM von Stafford Beer ist ein kybernetisches Organisationsmodell, das operat
 
 Das VSM von Stafford Beer ist ein kybernetisches Organisationsmodell, das operative Einheiten, Koordination, Steuerung, Umweltbeobachtung und Grundsatzorientierung miteinander verbindet.
 
+Die WÖk nutzt das Modell als Bezugslinie für dezentrale Verantwortlichkeit und Rückkopplung in Unternehmen als Wirkungssystemen.
+
+Anschlussmodell für Wirkungsarchitektur, Organisationen, Verwaltung, Wirkungsrat und lernende Institutionen.
+
 ## Vita activa
 
 Vita activa bezeichnet bei Hannah Arendt die Tätigkeitsformen Arbeiten, Herstellen und Handeln.
 
 Vita activa bezeichnet bei Hannah Arendt die Tätigkeitsformen Arbeiten, Herstellen und Handeln.
+
+Relevant, weil Arbeit, Produktion und politisches Handeln unterschiedliche Wirkungsräume sind.
 
 ## VLOP
 
@@ -10807,11 +12855,15 @@ Volkssouveränität bedeutet, dass alle Staatsgewalt vom Volk ausgeht.
 
 Volkssouveränität bedeutet, dass alle Staatsgewalt vom Volk ausgeht.
 
+Volkssouveränität ist Grundlage demokratischer Legitimation, aber an Verfassung, Grundrechte, Verfahren und Rechtsstaat gebunden.
+
 ## Vollständige Information
 
 Vollständige Information beschreibt die Annahme, dass alle relevanten Informationen für Entscheidungen verfügbar sind.
 
 Vollständige Information beschreibt die Annahme, dass alle relevanten Informationen für Entscheidungen verfügbar sind.
+
+In der Realität häufig falsch. Wirkungsdaten, Produktpässe, Scorecards und Transparenz versuchen diese Lücke zu verringern.
 
 ## Vorgriffswohlstand
 
@@ -10824,6 +12876,8 @@ Vorgriffswohlstand entsteht, wenn gegenwärtiger Konsum oder Vermögenszuwachs a
 Das Vorsorgeprinzip besagt, dass bei plausiblen schweren oder irreversiblen Schäden nicht gewartet werden darf, bis vollständige Sicherheit vorliegt. Unsicherheit rechtfertigt Schutzmaßnahmen, wenn die potenziellen Schäden hoch sind.
 
 Das Vorsorgeprinzip besagt, dass bei plausiblen schweren oder irreversiblen Schäden nicht gewartet werden darf, bis vollständige Sicherheit vorliegt. Unsicherheit rechtfertigt Schutzmaßnahmen, wenn die potenziellen Schäden hoch sind.
+
+Für die WÖk ist Vorsorge ein Wirkprinzip: Nicht eingetretene Schäden sind Wirkleistung. Das gilt für Klima, Gesundheit, Pandemien, Cyber, Desinformation, Pflege, Biodiversität, Wasser und kritische Infrastruktur.
 
 ## VSME
 
@@ -10849,11 +12903,15 @@ Wahlintegrität beschreibt die Glaubwürdigkeit, Fairness, Transparenz und recht
 
 Wahlintegrität beschreibt die Glaubwürdigkeit, Fairness, Transparenz und rechtliche Ordnung von Wahlen.
 
+Wahlbetrugsnarrative ohne Evidenz sind ein demokratisches Wirkungsrisiko, weil sie Vertrauen in die Korrekturarchitektur der Demokratie beschädigen.
+
 ## Wahlmanipulation
 
 Wahlmanipulation beschreibt Eingriffe, die freie, faire oder gleiche Wahlen verzerren.
 
 Wahlmanipulation beschreibt Eingriffe, die freie, faire oder gleiche Wahlen verzerren.
+
+Blockiert demokratische Rückkopplung und kann elektorale Autokratie stabilisieren.
 
 ## Wahrhaftigkeit
 
@@ -10879,11 +12937,15 @@ Wahrnehmung beschreibt die Aufnahme und Verarbeitung von Reizen, Informationen u
 
 Wahrnehmung beschreibt die Aufnahme und Verarbeitung von Reizen, Informationen und Situationen.
 
+Sie ist nicht neutral, sondern wird durch Salienz, Erfahrung, Erwartung, Emotion, Kontext, Sprache und Zugehörigkeit geprägt.
+
 ## Wahrscheinlichkeit / probabilistische Beschreibung
 
 Eine probabilistische Beschreibung arbeitet mit Wahrscheinlichkeiten statt mit sicheren Einzelvorhersagen.
 
 Eine probabilistische Beschreibung arbeitet mit Wahrscheinlichkeiten statt mit sicheren Einzelvorhersagen.
+
+Die WÖk braucht probabilistisches Denken, weil Wirkungen in komplexen Systemen selten sicher, linear und sofort eintreten. Gerade bei Politik, Bildung, Gesundheit, Medien und Klima geht es oft um Wirkpfade, Eintrittswahrscheinlichkeiten, Verzögerungen und Risiken.
 
 ## Wallbox
 
@@ -10891,17 +12953,27 @@ Eine Wallbox ist eine Ladeeinrichtung für Elektrofahrzeuge, meist an Wohngebäu
 
 Eine Wallbox ist eine Ladeeinrichtung für Elektrofahrzeuge, meist an Wohngebäuden oder Betrieben.
 
+Sie kann Alltagstauglichkeit stärken, braucht aber sichere Installation, Lastmanagement und faire Zugangsmöglichkeiten.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Walter Eucken
 
 Walter Eucken war ein zentraler Vertreter der Freiburger Schule und des Ordoliberalismus. Er fragte nach einer Ordnung, in der Wettbewerb, Freiheit, Rechtsstaatlichkeit und Begrenzung wirtschaftlicher Macht gesichert werden.
 
 Walter Eucken war ein zentraler Vertreter der Freiburger Schule und des Ordoliberalismus. Er fragte nach einer Ordnung, in der Wettbewerb, Freiheit, Rechtsstaatlichkeit und Begrenzung wirtschaftlicher Macht gesichert werden.
 
+Für die WÖk ist Eucken anschlussfähig, weil Wirkung eine Ordnung braucht. Märkte erzeugen nicht automatisch Gemeinwohl, wenn Machtkonzentration, Externalitäten, Informationsasymmetrien und ökologische Schäden unsichtbar bleiben. Die WÖk erweitert ordnungspolitisches Denken um Wirkungsdaten, planetare Grenzen und Demokratie als Wirkungsraum.
+
 ## Wandlermessung
 
 Wandlermessung ist eine Messung über Strom- oder Spannungswandler, typischerweise bei höheren Leistungen.
 
 Wandlermessung ist eine Messung über Strom- oder Spannungswandler, typischerweise bei höheren Leistungen.
+
+Wichtig für korrekte Abrechnung, Lastgänge, Leistungspreise und Netztransparenz.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## WAOK
 
@@ -10931,11 +13003,17 @@ Eine Wärmepumpe nutzt Umweltwärme und Strom, um Gebäude oder Prozesse zu heiz
 
 Eine Wärmepumpe nutzt Umweltwärme und Strom, um Gebäude oder Prozesse zu heizen.
 
+Wirkung hängt von Strommix, Gebäudeeffizienz, Kosten, Netzen und sozialer Ausgestaltung ab.
+
 ## Wärmespeicher
 
 Ein Wärmespeicher nimmt Wärme auf und stellt sie zeitversetzt wieder bereit.
 
 Ein Wärmespeicher nimmt Wärme auf und stellt sie zeitversetzt wieder bereit.
+
+Wärmespeicher sind wichtige Flexibilitätsbausteine für Wärmepumpen, Solarthermie, Quartiere, Industrie und Sektorkopplung.
+
+Energie als Wirkungsinfrastruktur behandeln: Erzeugung, Netze, Speicher, Preise, Resilienz, Teilhabe und Folgewirkungen zusammen bewerten.
 
 ## Wärmewende
 
@@ -10957,17 +13035,23 @@ Wartung erhält die Funktionsfähigkeit eines Produkts und verlängert seine Nut
 
 Wartung erhält die Funktionsfähigkeit eines Produkts und verlängert seine Nutzungsdauer.
 
+Wartung ist ein innerer Loop mit hoher Wirkung, weil sie Ersatzproduktion vermeiden kann.
+
 ## Wasserkraft
 
 Wasserkraft nutzt Bewegungs- oder Lageenergie von Wasser zur Stromerzeugung.
 
 Wasserkraft nutzt Bewegungs- oder Lageenergie von Wasser zur Stromerzeugung.
 
+Erneuerbar, aber mit Eingriffen in Gewässerökologie, Sedimente und Lebensräume verbunden.
+
 ## Wasserstoff
 
 Wasserstoff ist ein Energieträger für Speicherung, Transport, Industrie, Verkehr oder Stromsysteme.
 
 Wasserstoff ist ein Energieträger für Speicherung, Transport, Industrie, Verkehr oder Stromsysteme.
+
+Kein Primärenergieersatz für alles; Wirkung hängt von Herkunft, Wirkungsgrad, Einsatzfeld, Infrastruktur und Alternativen ab.
 
 ## Wasserstoff-Hierarchie
 
@@ -10991,6 +13075,8 @@ Wasserstoffspeicher speichern Energie chemisch in Form von Wasserstoff.
 
 Wasserstoffspeicher speichern Energie chemisch in Form von Wasserstoff.
 
+Relevant für Langzeitspeicherung und Industrie, aber mit Umwandlungsverlusten und Infrastrukturbedarf.
+
 ## Wasserstress
 
 Wasserstress beschreibt ein Missverhältnis zwischen Wasserbedarf und verfügbarer Wasserressource in einem Gebiet.
@@ -11003,11 +13089,15 @@ Eine Watchdog-Organisation beobachtet Macht, Institutionen, Unternehmen oder Pol
 
 Eine Watchdog-Organisation beobachtet Macht, Institutionen, Unternehmen oder Politik und macht Missstände öffentlich.
 
+Watchdogs können demokratische Rückkopplung stärken, brauchen aber selbst Transparenz, methodische Sorgfalt und Korrekturfähigkeit.
+
 ## Watzlawick, Paul
 
 Watzlawick steht für die Einsicht, dass Kommunikation nicht nur Inhalte überträgt, sondern Beziehungen, Deutungen und Wirklichkeitsannahmen mitformt.
 
 Watzlawick steht für die Einsicht, dass Kommunikation nicht nur Inhalte überträgt, sondern Beziehungen, Deutungen und Wirklichkeitsannahmen mitformt.
+
+Die WÖk nutzt Watzlawick nicht als Autorität, sondern als Anschluss für Resonanzräume, Wirklichkeitskonstruktion, Framing und Kommunikationsverantwortung.
 
 ## Wechselwirkung
 
@@ -11015,17 +13105,29 @@ Wechselwirkung bezeichnet allgemein, dass Systeme, Akteure oder Zustände nicht 
 
 Wechselwirkung bezeichnet allgemein, dass Systeme, Akteure oder Zustände nicht isoliert bleiben, sondern aufeinander einwirken und sich gegenseitig verändern.
 
+Wechselwirkung ist einer der stärksten Brückenbegriffe zwischen Physik und WÖk. Die WÖk verwendet ihn nicht, um Gesellschaft zu mechanisieren, sondern um Isolation zu vermeiden: Produkte, Preise, Gesetze, Narrative, Kapitalflüsse und Technologien erzeugen Rückwirkungen in Wirkungsräumen.
+
 ## Wehrhafte Demokratie
 
 Wehrhafte Demokratie bezeichnet Mechanismen, mit denen eine Demokratie sich gegen Kräfte schützt, die ihre freiheitliche Ordnung abschaffen wollen.
 
 Wehrhafte Demokratie bezeichnet Mechanismen, mit denen eine Demokratie sich gegen Kräfte schützt, die ihre freiheitliche Ordnung abschaffen wollen.
 
+Wehrhafte Demokratie ist eine Schutzarchitektur gegen demokratische Selbstzerstörung.
+
+## Weiterbildung
+
+Weiterbildung umfasst formale, non-formale und informelle Lernprozesse nach der Erstausbildung, mit denen Fähigkeiten weiterentwickelt werden.
+
+Ein besuchter Kurs ist zunächst ein Output, keine nachgewiesene Kompetenz- oder Teilhabewirkung. Weiterbildung darf außerdem nicht als Maß für persönlichen Wert dienen: Zugang hängt von Zeit, Geld, Sprache, Sorgearbeit, Barrierefreiheit und Arbeitgeberunterstützung ab. Faire Weiterbildungsarchitektur senkt diese Barrieren und macht Lernwege freiwillig sowie nachvollziehbar.
+
 ## Weiterverteilung / Redistribute
 
 Weiterverteilung gibt funktionsfähige Produkte an neue Nutzer:innen weiter.
 
 Weiterverteilung gibt funktionsfähige Produkte an neue Nutzer:innen weiter.
+
+Sie kann Zugang verbessern und Neuproduktion vermeiden.
 
 ## Well-to-Tank
 
@@ -11051,6 +13153,8 @@ Welle-Teilchen-Dualismus beschreibt, dass Quantenobjekte je nach Experiment Eige
 
 Welle-Teilchen-Dualismus beschreibt, dass Quantenobjekte je nach Experiment Eigenschaften zeigen können, die klassisch als Wellen- oder Teilcheneigenschaften beschrieben werden.
 
+Für die WÖk ist daran nicht die Physik selbst zentral, sondern die methodische Einsicht: Der gewählte Beobachtungsrahmen beeinflusst, welche Aspekte einer Wirklichkeit sichtbar werden. Das ist anschlussfähig an Wirkungsanalyse, weil auch dort Datenrahmen, Systemgrenzen und Indikatoren entscheiden, welche Zustandsveränderungen sichtbar werden.
+
 ## Weltfähig
 
 Weltfähig beschreibt die Fähigkeit von Regeln, Produkten, Organisationen oder Lebensweisen, unter globalen ökologischen, sozialen und demokratischen Bedingungen tragfähig zu sein.
@@ -11062,6 +13166,8 @@ Weltfähig beschreibt die Fähigkeit von Regeln, Produkten, Organisationen oder 
 Weltlosigkeit beschreibt den Verlust eines gemeinsamen öffentlichen Bezugsraums, in dem Menschen Wirklichkeit teilen und beurteilen können.
 
 Weltlosigkeit beschreibt den Verlust eines gemeinsamen öffentlichen Bezugsraums, in dem Menschen Wirklichkeit teilen und beurteilen können.
+
+Relevant für Desinformation, Einsamkeit, Radikalisierung, Medienräume und demokratische Erosion.
 
 ## Wert
 
@@ -11077,9 +13183,9 @@ Werte geben Richtung, aber sie ersetzen keine Prüfung tatsächlicher Zustandsve
 
 ## Wertebrücke
 
-Verbindung über einen gemeinsamen Wert, bevor ein Denkfehler oder eine falsche Schlussfolgerung erklärt wird.
+Eine Wertebrücke macht einen gemeinsamen, legitimen Wert sichtbar und verbindet ihn mit einer prüfbaren Sach- und Wirkungsfrage. Sie ersetzt weder Belege noch die Klärung echter Zielkonflikte.
 
-Verbindung über einen gemeinsamen Wert, bevor ein Denkfehler oder eine falsche Schlussfolgerung erklärt wird.
+Wertebrücke ist ein WÖk-Praxisbegriff für einen Gesprächsschritt: Ein gemeinsamer oder zumindest anerkennenswerter Wert – etwa Freiheit, Sicherheit, Würde oder Verlässlichkeit – wird ausdrücklich benannt. Anschließend wird die strittige Behauptung mit Belegen, Alternativen und Folgen geprüft. Die Technik kann einen Gesprächszugang eröffnen, beweist aber nicht, dass Menschen ihre Einschätzung ändern oder ein Zielkonflikt verschwindet. Eine tragfähige Wertebrücke darf keine falsche Behauptung bestätigen, keine Schutzgrenze relativieren und keinen Konsens vortäuschen. Sie macht nur den gemeinsamen Prüfpunkt sichtbar.
 
 ## Wertekonflikt
 
@@ -11116,6 +13222,8 @@ Die WÖk liest den wesentlichen Beitrag als Teilinformation und prüft, ob zugle
 Wettbewerb als Suchverfahren beschreibt Märkte als dezentrale Entdeckungsprozesse: Akteure testen Lösungen, Informationen werden sichtbar, bessere Angebote können sich durchsetzen.
 
 Wettbewerb als Suchverfahren beschreibt Märkte als dezentrale Entdeckungsprozesse: Akteure testen Lösungen, Informationen werden sichtbar, bessere Angebote können sich durchsetzen.
+
+Die WÖk erhält diesen Suchprozess, verändert aber die Suchrichtung. Wettbewerb soll nicht um die beste Externalisierung, sondern um positive Netto-Wirkung stattfinden. Dafür müssen Preise, Daten, Kapital und Beschaffung Wirkung abbilden.
 
 ## Whataboutism
 
@@ -11157,11 +13265,15 @@ Ein Wiedergeburtsnarrativ erzählt, dass eine Nation, ein Volk oder eine Gemeins
 
 Ein Wiedergeburtsnarrativ erzählt, dass eine Nation, ein Volk oder eine Gemeinschaft angeblich aus Verfall, Demütigung oder Verrat wieder auferstehen müsse.
 
+Relevant für Faschismusforschung und autoritäre politische Sprache, weil es Krise, Feindbild und Erlösungsversprechen koppeln kann.
+
 ## Wiederverwendung
 
 Wiederverwendung bedeutet, ein Produkt oder eine Komponente erneut für denselben Zweck zu nutzen.
 
 Wiederverwendung bedeutet, ein Produkt oder eine Komponente erneut für denselben Zweck zu nutzen.
+
+Sie erhält Funktion und eingebetteten Wert ohne wesentliche Veränderung.
 
 ## Windenergie
 
@@ -11169,17 +13281,27 @@ Windenergie wandelt Bewegungsenergie des Windes in Strom um.
 
 Windenergie wandelt Bewegungsenergie des Windes in Strom um.
 
+Zentral für erneuerbare Stromsysteme; Wirkung umfasst Flächen, Natur, Akzeptanz, Netze und Systemintegration.
+
 ## Windenergieanlage Lebenszyklus
 
 Der Lebenszyklus einer Windenergieanlage umfasst Rohstoffe, Herstellung, Transport, Bau, Betrieb, Wartung, Repowering, Rückbau und Recycling.
 
 Der Lebenszyklus einer Windenergieanlage umfasst Rohstoffe, Herstellung, Transport, Bau, Betrieb, Wartung, Repowering, Rückbau und Recycling.
 
+Er macht sichtbar, dass klimafreundlicher Betrieb mit Material-, Flächen-, Akzeptanz- und Rückbaufragen verbunden bleibt.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Windrad-Recycling
 
 Windrad-Recycling beschreibt die Rückgewinnung oder Verwertung von Materialien aus Windenergieanlagen nach Rückbau oder Repowering.
 
 Windrad-Recycling beschreibt die Rückgewinnung oder Verwertung von Materialien aus Windenergieanlagen nach Rückbau oder Repowering.
+
+Windenergie ist klimawirksam, aber nicht kreislauffrei; Türme, Fundamente, Metalle, Elektronik und Rotorblätter müssen über Lebenszyklus, Rückbau, Recycling und Materialgesundheit bewertet werden.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
 ## Wirkleistung
 
@@ -11192,6 +13314,8 @@ Wirkleistung bezeichnet im WÖk-Sinn nicht bloß Aufwand, Beschäftigung oder Ou
 Wirklichkeitsbindung beschreibt die Rückbindung von Entscheidungen an überprüfbare Zustände, Folgen und Daten.
 
 Wirklichkeitsbindung beschreibt die Rückbindung von Entscheidungen an überprüfbare Zustände, Folgen und Daten.
+
+Zentral für Freiheit, Markt und Demokratie: Entscheidungen sind freier, wenn sie auf ehrlichen Preisen, klaren Daten und transparenter Wirkung beruhen.
 
 ## Wirklichkeitsfähigkeit
 
@@ -11219,6 +13343,8 @@ Erklären, durch welchen sozialen, technischen, ökonomischen, psychologischen, 
 
 Erklären, durch welchen sozialen, technischen, ökonomischen, psychologischen, institutionellen oder ökologischen Mechanismus eine Handlung Zustände verändern soll.
 
+C02 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Verbindlicher Output: Mechanismushypothese mit Auslöser, Empfänger, Vermittlung, Kontext, Gegenmechanismus und Beobachtungsmerkmalen.
+
 ## Wirksame Arbeit
 
 Wirksame Arbeit ist Tätigkeit, die nachvollziehbar zu einer gewünschten Zustandsveränderung beiträgt; sie ist nicht mit bloßer Beschäftigung oder Arbeitszeit gleichzusetzen.
@@ -11236,6 +13362,10 @@ Der Begriff schließt an Managementlehre an und fragt, ob Organisationen ihre Zw
 Wirksamkeit beschreibt, ob eine Maßnahme, Organisation oder Entscheidung tatsächlich die beabsichtigte relevante Wirkung entfaltet.
 
 Wirksamkeit beschreibt, ob eine Maßnahme, Organisation oder Entscheidung tatsächlich die beabsichtigte relevante Wirkung entfaltet.
+
+In der WÖk ist Wirksamkeit nicht bloß Managementerfolg. Sie ist an die tatsächliche Zustandsveränderung und deren Bewertung für Mensch, Planet und Demokratie gebunden.
+
+Eine Maßnahme kann wirksam sein und trotzdem normativ schädlich wirken. Daher braucht sie den Referenzrahmen Mensch, Planet und Demokratie.
 
 ## Wirkschulden
 
@@ -11262,6 +13392,8 @@ Wirkung bezeichnet in der Wirkungsökonomie die tatsächliche Veränderung eines
 Wirkung als Rechtsprinzip bedeutet, dass Recht nicht nur formale Vorgaben setzt, sondern auch die realen Folgen von Gesetzen, Verwaltung, Rechtsprechung, Steuern und staatlichem Unterlassen berücksichtigen muss.
 
 Wirkung als Rechtsprinzip bedeutet, dass Recht nicht nur formale Vorgaben setzt, sondern auch die realen Folgen von Gesetzen, Verwaltung, Rechtsprechung, Steuern und staatlichem Unterlassen berücksichtigen muss.
+
+Die Wirkungsökonomie erweitert den Blick des Rechts auf Zustandsveränderungen. Recht soll nicht nur ordnen, sondern Rückkopplungen so gestalten, dass Mensch, Planet und Demokratie geschützt und gestärkt werden.
 
 ## Wirkung dritter Ordnung
 
@@ -11321,17 +13453,23 @@ Eine Wirkungs-Capability ist die dauerhaft verfügbare Fähigkeit einer Organisa
 
 Eine Wirkungs-Capability ist die dauerhaft verfügbare Fähigkeit einer Organisation, einen begründeten Beitrag zu einer angestrebten Zustandsveränderung zu leisten.
 
+Sie verbindet Wirkungsziel und Strategie mit Menschen, Prozessen, Daten, Technologie, Governance, Partnern und Investitionen.
+
 ## Wirkungs-Capability-Map
 
 Stabile Fähigkeiten identifizieren, die ein System unabhängig von Organigramm, Projekten oder Technologien dauerhaft beherrschen muss.
 
 Stabile Fähigkeiten identifizieren, die ein System unabhängig von Organigramm, Projekten oder Technologien dauerhaft beherrschen muss.
 
+J01 gehört zur Kategorie „Business Architecture, Capabilities und Zielarchitektur“. Verbindlicher Output: Hierarchische Capability Map mit Definition, Wirkungsbeitrag, Owner und Systemgrenze.
+
 ## Wirkungs-Excellence-Selbstbewertung
 
 Führung, Strategie, Realisierung, Ergebnisse und Lernen ganzheitlich gegen das WÖMM/WÖMS bewerten.
 
 Führung, Strategie, Realisierung, Ergebnisse und Lernen ganzheitlich gegen das WÖMM/WÖMS bewerten.
+
+P01 gehört zur Kategorie „Qualität, operative Resilienz, Kontrollen und integrierte Assurance“. Verbindlicher Output: Selbstbewertung mit Stärken, Evidenz, Reife, Ergebnisqualität, Lücken und priorisierter Verbesserungsroadmap.
 
 ## Wirkungs-Konversion von Altkapital
 
@@ -11349,11 +13487,15 @@ Die kleinste real nutzbare Lösung bestimmen, die eine relevante positive Zustan
 
 Die kleinste real nutzbare Lösung bestimmen, die eine relevante positive Zustandsveränderung verantwortbar testen kann.
 
+F08 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: MVP-Scope mit Mindestwirkung, Mindesttragfähigkeit, Schutzgrenzen, Zielgruppe, Daten und Lernplan.
+
 ## Wirkungs-Product-Operating-Model
 
 Das Wirkungs-Product-Operating-Model organisiert dauerhafte Produktverantwortung für Outcome, Betrieb, Nebenwirkungen, Lernen und Wirkungsempfänger.
 
 Das Wirkungs-Product-Operating-Model organisiert dauerhafte Produktverantwortung für Outcome, Betrieb, Nebenwirkungen, Lernen und Wirkungsempfänger.
+
+Es verbindet empowered Teams, Discovery und Delivery mit Wirkungsgrenzen, Produktlebenszyklus, Plattformen, Enablern und KII.
 
 ## Wirkungs-Product-Operating-Model-Canvas
 
@@ -11361,17 +13503,23 @@ Dauerhafte Produktverantwortung für Problem, Outcome, Nebenwirkung, Betrieb und
 
 Dauerhafte Produktverantwortung für Problem, Outcome, Nebenwirkung, Betrieb und Lernen gestalten.
 
+L01 gehört zur Kategorie „Product Operating Model, Teams, Plattformen und Ökosysteme“. Verbindlicher Output: Product Operating Model mit Produktgrenzen, Outcome, Team, Finanzierung, Discovery/Delivery, Plattformen, Governance und KII.
+
 ## Wirkungs-Systemstresstest
 
 Prüfen, wie ein Modell unter Schocks, Trendbrüchen, Datenfehlern, Gegenstrategien und kumulativen Belastungen wirkt.
 
 Prüfen, wie ein Modell unter Schocks, Trendbrüchen, Datenfehlern, Gegenstrategien und kumulativen Belastungen wirkt.
 
+B12 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Verbindlicher Output: Stresstestbericht mit kritischen Szenarien, Schwellen, Ausfallmodi, Frühwarnsignalen und Schutzmaßnahmen.
+
 ## Wirkungsabwehr
 
 Wirkungsabwehr beschreibt die psychologische, kommunikative oder institutionelle Abwehr gegen Informationen, Daten oder Erfahrungen, die negative Wirkung sichtbar machen.
 
 Wirkungsabwehr beschreibt die psychologische, kommunikative oder institutionelle Abwehr gegen Informationen, Daten oder Erfahrungen, die negative Wirkung sichtbar machen.
+
+In der Wirkungsökonomie bezeichnet Wirkungsabwehr die Blockade zwischen Wirkungswahrheit und Wirkungsrückkopplung. Sie entsteht, wenn Wirkungsdaten Selbstbild, Interessen, Gewohnheiten, Gruppenzugehörigkeit oder Geschäftsmodelle berühren und deshalb relativiert, umgedeutet, verdrängt oder auf andere Akteure verschoben werden. Der Begriff beschreibt keinen Charakterfehler, sondern einen Wirkmechanismus, der Lernfähigkeit und positive Netto-Wirkung blockieren kann.
 
 ## Wirkungsanalyse von Sprache
 
@@ -11396,6 +13544,8 @@ Wirkungsassurance ist die unabhängige Absicherung von Wirkungsinformationen. Si
 Daten, Bewertungslogik, Grenzprüfung, Governance, Aussagen und Methodenprozess unabhängig und risikoorientiert prüfen.
 
 Daten, Bewertungslogik, Grenzprüfung, Governance, Aussagen und Methodenprozess unabhängig und risikoorientiert prüfen.
+
+H08 gehört zur Kategorie „Umsetzung, Monitoring, Lernen und Assurance“. Verbindlicher Output: Assurance-Bericht mit Prüfgegenstand, Kriterien, Umfang, Feststellungen, Konfidenz, Auflagen und Follow-up.
 
 ## Wirkungsaudit
 
@@ -11441,6 +13591,8 @@ Wirkleistung, Scheinleistung, Blindleistung und Verlustleistung eines Projekts, 
 
 Wirkleistung, Scheinleistung, Blindleistung und Verlustleistung eines Projekts, Portfolios oder Systems sichtbar machen.
 
+D11 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Verbindlicher Output: Wirkungsbilanz mit realen Zustandsverbesserungen, bloßen Aktivitäten, systemerhaltendem Aufwand und verursachten Verlusten.
+
 ## Wirkungsbiografie
 
 Die Wirkungsbiografie beschreibt den Lebensverlauf nicht nur als Erwerbsbiografie, sondern als Summe gesellschaftlicher Wirkleistungen: Arbeit, Care, Bildung, Pflege, Ehrenamt, Prävention, Transformation und Gemeinwesen.
@@ -11471,6 +13623,8 @@ Budgets und Kapazitäten nach erwarteter Netto-Wirkung, Pflicht, Prävention, Re
 
 Budgets und Kapazitäten nach erwarteter Netto-Wirkung, Pflicht, Prävention, Resilienz, Evidenz und Transformationsbeitrag verteilen.
 
+E06 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlicher Output: Wirkungsbudget mit Basisversorgung, Schutzpflichten, Portfolioentscheidungen, Reserven und Reviewregeln.
+
 ## Wirkungscontrolling
 
 Wirkungscontrolling ist das Controlling-System, das Wirkung über KII, Scorecards, NWI, T-SROI, Datenqualität und Rückkopplung in Unternehmensentscheidungen übersetzt.
@@ -11482,6 +13636,8 @@ Wirkungscontrolling bezeichnet die systematische Erfassung, Bewertung, Analyse u
 KII, Grenzen, Risiken, Datenqualität, Portfolio und Lernfragen in einer entscheidungsfähigen, nicht überladenen Sicht zusammenführen.
 
 KII, Grenzen, Risiken, Datenqualität, Portfolio und Lernfragen in einer entscheidungsfähigen, nicht überladenen Sicht zusammenführen.
+
+H05 gehört zur Kategorie „Umsetzung, Monitoring, Lernen und Assurance“. Verbindlicher Output: Rollenbezogenes Dashboard mit Trend, Ziel, Grenze, Verteilung, Evidenz, Kommentar und Entscheidung.
 
 ## Wirkungsdaten
 
@@ -11495,11 +13651,15 @@ Daten als gemeinsame Wirkungs- und Entscheidungsinfrastruktur mit eindeutiger Ve
 
 Daten als gemeinsame Wirkungs- und Entscheidungsinfrastruktur mit eindeutiger Verantwortung, Rechten und Qualitätsregeln organisieren.
 
+O01 gehört zur Kategorie „Daten, Technologie, KI und agentische Systeme“. Verbindlicher Output: Data Governance Map mit Domains, Ownern, Stewards, Nutzungsrechten, Qualitätszielen, Zugriff, KII und Eskalation.
+
 ## Wirkungsdaten-Inventur und Datenflusskarte
 
 Vorhandene und benötigte Wirkungsdaten, ihre Herkunft, Verarbeitung, Rechte, Schnittstellen und Nutzung über den gesamten Datenfluss erfassen.
 
 Vorhandene und benötigte Wirkungsdaten, ihre Herkunft, Verarbeitung, Rechte, Schnittstellen und Nutzung über den gesamten Datenfluss erfassen.
+
+D05 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Verbindlicher Output: Datenkatalog und Flusskarte mit Datenlücken, Eigentum, Qualität, Zugriff, Automatisierung und Schutz.
 
 ## Wirkungsdatenraum
 
@@ -11525,11 +13685,19 @@ Design Thinking und Double Diamond um Systemdiagnose, Wirkungsgrenzen, Netto-Wir
 
 Design Thinking und Double Diamond um Systemdiagnose, Wirkungsgrenzen, Netto-Wirkung, Umsetzung und Lernrückkopplung erweitern.
 
+F04 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: Durchgängiger Innovationsprozess von Problemraum über Wirkungsraum und Lösungsraum zur verantwortbaren Erprobung.
+
 ## Wirkungsdisziplin
 
 Wirkungsdisziplin verlangt, öffentliche Finanzierung an Wirkungsziel, Netto-Prüfung, Datenqualität, Ressourcenlage und Korrekturmechanismus zu binden.
 
 Wirkungsdisziplin verlangt, öffentliche Finanzierung an Wirkungsziel, Netto-Prüfung, Datenqualität, Ressourcenlage und Korrekturmechanismus zu binden.
+
+## Wirkungsdividende
+
+Eine Wirkungsdividende ist im WÖk-Modell ein öffentlich verantworteter Verteilungsanteil aus tatsächlich verfügbaren, kollektiv erwirtschafteten Mitteln eines Wirkungsfonds.
+
+Die Wirkungsdividende ist kein Anteilsschein, keine private Rendite und keine Auszahlung für einen individuellen Verhaltens- oder Haltungsscore. Sie darf weder eine gesicherte Würdeebene absenken noch Menschen nach Daten, Ehrenamt, Gesundheit, Konsum oder politischer Einstellung sortieren. Prognostizierte Wirkung, Punkte oder Reichweite reichen nicht für eine Auszahlung: Mittel, Rechtsgrundlage, Risiko, Rücklagen und Verteilung müssen offen geprüft sein. Der Begriff bezeichnet eine Modelloption, keine geltende Rechtsleistung.
 
 ## Wirkungsebene 1
 
@@ -11555,6 +13723,8 @@ Wirkungseffizienz verbindet Effizienz mit Wirkungsbewertung: Nicht der Output pr
 
 Wirkungseffizienz verbindet Effizienz mit Wirkungsbewertung: Nicht der Output pro Input zählt allein, sondern die positive Netto-Wirkung im Verhältnis zu Ressourcen, Zeit, Kapital, Energie oder Aufmerksamkeit.
 
+Sie macht sichtbar, ob eine Lösung mit begrenzten Ressourcen möglichst viel tragfähige Wirkung erzeugt.
+
 ## Wirkungseinkommen
 
 Das Wirkungseinkommen verbindet Grunddividende, Markteinkommen und Wirkungsbonus. Es ist das Einkommensmodell einer automatisierten Gesellschaft, in der Einkommen nicht mehr allein an Erwerbsarbeit gebunden werden kann.
@@ -11579,11 +13749,15 @@ Alle direkt und indirekt betroffenen Menschen, Gruppen, Lebewesen, Ökosysteme, 
 
 Alle direkt und indirekt betroffenen Menschen, Gruppen, Lebewesen, Ökosysteme, Institutionen und künftigen Generationen identifizieren und ihre Perspektiven unterscheiden.
 
+A04 gehört zur Kategorie „Orientierung, Mandat und Schutzrahmen“. Verbindlicher Output: Eine priorisierte Betroffenenkarte mit Betroffenheit, Einfluss, Verletzlichkeit, Stimme und Beteiligungsbedarf.
+
 ## Wirkungsentscheidungsmemo
 
 Komplexe Wirkungsentscheidungen knapp, vergleichbar und revisionsfähig dokumentieren.
 
 Komplexe Wirkungsentscheidungen knapp, vergleichbar und revisionsfähig dokumentieren.
+
+E10 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlicher Output: Standardmemo mit Problem, Optionen, Evidenz, Wirkung, Grenzen, Risiken, Entscheidung, Auflagen und Lernplan.
 
 ## Wirkungsethik
 
@@ -11596,6 +13770,8 @@ Wirkungsethik fragt nach realen Zustandsveränderungen, aber nicht als reine Nut
 Eine Wirkungshypothese unter kontrollierten oder realweltlichen Bedingungen so testen, dass Lernen, Schutz und Entscheidung möglich werden.
 
 Eine Wirkungshypothese unter kontrollierten oder realweltlichen Bedingungen so testen, dass Lernen, Schutz und Entscheidung möglich werden.
+
+F07 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: Experimentprotokoll mit Hypothese, Vergleich, Messung, Ethik, Nebenwirkungen, Ergebnis und Entscheidungsregel.
 
 ## Wirkungsfeld
 
@@ -11623,6 +13799,8 @@ Wirkungsfolgenabschätzung bezeichnet die systematische Prüfung der voraussicht
 
 Wirkungsfolgenabschätzung bezeichnet die systematische Prüfung der voraussichtlichen positiven, negativen, direkten, indirekten und langfristigen Wirkungen einer Maßnahme.
 
+In der Wirkungsökonomie wird jede relevante politische, rechtliche, steuerliche, infrastrukturelle oder administrative Entscheidung danach geprüft, welche Wirkung sie für Mensch, Planet und Demokratie erzeugt - einschließlich Nebenwirkungen, Rebound-Effekten, Verteilungsfolgen und Risiken.
+
 ## Wirkungsfonds
 
 Ein Wirkungsfonds bündelt Rückflüsse, um Prävention, Bildung, Transformation oder soziale Sicherung wirkungsorientiert zu finanzieren.
@@ -11641,17 +13819,23 @@ Wirkungsfreiheit beschreibt Freiheit, die ihre eigenen Folgen mitdenkt und nicht
 
 Wirkungsfreiheit beschreibt Freiheit, die ihre eigenen Folgen mitdenkt und nicht auf Kosten unsichtbarer Schäden anderer beruht.
 
+Freiheit endet nicht erst bei direkten Verboten, sondern dort, wo Entscheidungen systematisch Schäden externalisieren, die andere tragen müssen.
+
 ## Wirkungsfrühwarn- und Eskalationssystem
 
 Schwache Signale, Trends, Grenznähe, Beschwerden, Datenanomalien und Systemrisiken früh erkennen und verbindlich eskalieren.
 
 Schwache Signale, Trends, Grenznähe, Beschwerden, Datenanomalien und Systemrisiken früh erkennen und verbindlich eskalieren.
 
+H06 gehört zur Kategorie „Umsetzung, Monitoring, Lernen und Assurance“. Verbindlicher Output: Frühwarnregister mit Signal, Schwelle, Quelle, Owner, Eskalationsweg, Sofortschutz und Lernschleife.
+
 ## Wirkungsführungsrad
 
 Führung als Gestaltung von Orientierung, Bedingungen, Entscheidungen, Rückkopplung, Schutz, Lernen und Selbstwirksamkeit operationalisieren.
 
 Führung als Gestaltung von Orientierung, Bedingungen, Entscheidungen, Rückkopplung, Schutz, Lernen und Selbstwirksamkeit operationalisieren.
+
+G02 gehört zur Kategorie „Organisation, Führung und Kultur“. Verbindlicher Output: Führungsprofil und Teamvereinbarung mit sieben Führungsfunktionen und beobachtbaren Praktiken.
 
 ## Wirkungsgesellschaft
 
@@ -11675,6 +13859,8 @@ Entscheidungsrechte, Verantwortlichkeit, unabhängige Prüfung, Beteiligung, Dat
 
 Entscheidungsrechte, Verantwortlichkeit, unabhängige Prüfung, Beteiligung, Datenhoheit, Widerspruch und Lernpflichten institutionell verankern.
 
+E08 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlicher Output: Governance-Blueprint mit Organen, Rollen, Rechten, Informationsflüssen, Eskalation und Review.
+
 ## Wirkungsgrad
 
 Wirkungsgrad bezeichnet zunächst ein Verhältnis zwischen einem klar definierten Ergebnis und einem klar definierten Einsatz. Erst der Kontext bestimmt, was im Zähler und im Nenner steht.
@@ -11692,6 +13878,8 @@ Eine Wirkungsgrenze operationalisiert das Nichtkompensationsprinzip. Sie markier
 Nicht kompensierbare Grenzen, Rechte, Mindeststandards und rote Linien vor Optimierung und Abwägung prüfen.
 
 Nicht kompensierbare Grenzen, Rechte, Mindeststandards und rote Linien vor Optimierung und Abwägung prüfen.
+
+A05 gehört zur Kategorie „Orientierung, Mandat und Schutzrahmen“. Verbindlicher Output: Ein Gate-Protokoll mit zulässig, redesignpflichtig oder unzulässig sowie dokumentierten Schutzmaßnahmen.
 
 ## Wirkungsgutschrift
 
@@ -11723,6 +13911,8 @@ Alle entscheidungsrelevanten Wirkungsannahmen als testbare Hypothesen mit Falsif
 
 Alle entscheidungsrelevanten Wirkungsannahmen als testbare Hypothesen mit Falsifikations- und Lernkriterien führen.
 
+C06 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Verbindlicher Output: Priorisiertes Hypothesenportfolio mit Risiko, Evidenz, Test, Ergebnis und Entscheidungsfolge.
+
 ## Wirkungsindikator
 
 Ein Wirkungsindikator ist eine messbare Größe, die einen bestimmten Wirkungsaspekt beschreibt und damit Grundlage für WÖk-ID, Scorecard, Benchmark und Wirkungsbewertung wird.
@@ -11734,6 +13924,10 @@ Ein Wirkungsindikator ist eine definierte Mess-, Beobachtungs- oder Bewertungsgr
 Wirkungsinnovation verbindet neue Problemlösungsfähigkeit mit messbarer Verbesserung von Zuständen für Mensch, Planet und Demokratie.
 
 Wirkungsinnovation verbindet neue Problemlösungsfähigkeit mit messbarer Verbesserung von Zuständen für Mensch, Planet und Demokratie.
+
+Nicht jede Innovation ist Fortschritt. Eine Innovation kann auch Ausbeutung, Überwachung, Rebound-Effekte oder ökologische Schäden verstärken.
+
+Wirkungsinnovation ist kein Etikett für jede nachhaltige Neuheit, sondern eine geprüfte Transformationsleistung.
 
 ## Wirkungsinstitut
 
@@ -11779,6 +13973,8 @@ CAPEX, Akquisitionen, Finanzierungen und größere Programme vor Freigabe auf Gr
 
 CAPEX, Akquisitionen, Finanzierungen und größere Programme vor Freigabe auf Grenzen, Netto-Wirkung, Tragfähigkeit, Resilienz und Transformation prüfen.
 
+E07 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlicher Output: Investitionsmemo mit Gate-Entscheidung, Auflagen, Szenarien, KII, Exit- und Lernbedingungen.
+
 ## Wirkungskette
 
 Eine Wirkungskette beschreibt den Zusammenhang von Auslöser, Input, Aktivität, Output, Outcome, Impact, Nebenwirkungen und Rückkopplung. Sie macht sichtbar, wie aus Handlung tatsächliche Zustandsveränderung entstehen soll.
@@ -11805,11 +14001,15 @@ Der Wirkungskompass richtet Entscheidungen an Mensch, Planet und Demokratie sowi
 
 Der Wirkungskompass richtet Entscheidungen an Mensch, Planet und Demokratie sowie SDGs, Agenda 2030, SDG+, Wirkungsgrenzen und positiver Netto-Wirkung aus.
 
+Er legt Richtung und Schutzrahmen fest, bevor Optionen auf Preis, Geschwindigkeit, Marge oder Skalierung optimiert werden.
+
 ## Wirkungskompass-Ausrichtung
 
 Den normativen Referenzrahmen Mensch, Planet und Demokratie sowie SDGs, Agenda 2030 und SDG+ für den konkreten Fall operationalisieren.
 
 Den normativen Referenzrahmen Mensch, Planet und Demokratie sowie SDGs, Agenda 2030 und SDG+ für den konkreten Fall operationalisieren.
+
+A02 gehört zur Kategorie „Orientierung, Mandat und Schutzrahmen“. Verbindlicher Output: Eine priorisierte Kompasskarte mit relevanten Zielen, Schutzgütern, Spannungen und Begründungen.
 
 ## Wirkungskompetenz
 
@@ -11822,6 +14022,8 @@ Wirkungskompetenz bezeichnet die Fähigkeit, Wirkung in komplexen Systemen zu er
 Benötigte Fähigkeiten für Wirkungsverständnis, Systemdenken, Daten, Moderation, Bewertung, Governance und Transformation bestimmen und entwickeln.
 
 Benötigte Fähigkeiten für Wirkungsverständnis, Systemdenken, Daten, Moderation, Bewertung, Governance und Transformation bestimmen und entwickeln.
+
+G07 gehört zur Kategorie „Organisation, Führung und Kultur“. Verbindlicher Output: Rollenbezogene Kompetenzmatrix mit Niveaus, Evidenz, Lernpfaden und Kapazitätsplan.
 
 ## Wirkungskonversionskredit
 
@@ -11837,9 +14039,9 @@ Ein Wirkungskredit oder W-Kredit ist ein Oberbegriff für Kredite, deren Konditi
 
 ## Wirkungslenkung
 
-Wirkungslenkung bedeutet, Wirkungsbewertung in Anreize, Preise, Steuern, Kapital, Beschaffung, Förderung und Entscheidungen zurückzukoppeln.
+Wirkungslenkung ist die legitimierte Entscheidung über Ziele, Schutzgrenzen, Prioritäten und Instrumente, mit denen eine positive Netto-Wirkung angestrebt wird.
 
-Wirkungslenkung beschreibt die aktive Rückkopplung bewerteter Wirkungen in wirtschaftliche, staatliche und organisatorische Entscheidungssysteme. Sie macht Wirkung entscheidungsrelevant, ohne Wirkung mit Zwang, Planwirtschaft oder Personenbewertung zu verwechseln.
+Wirkungslenkung bezeichnet die absichtsvolle Ausrichtung von Entscheidungen: Eine zuständige, demokratisch oder organisatorisch legitimierte Stelle legt Zielzustände, Schutzgrenzen, Prioritäten und Instrumentregeln fest. Dazu können etwa Beschaffungsregeln, Förderbedingungen, Informationspflichten oder – nur mit Rechtsgrundlage – Preis- und Steuerregeln gehören. Wirkungslenkung bewertet keine Menschen und ersetzt weder Rechtsschutz noch dezentrale Entscheidungen. Ob eine Regel die beabsichtigte Zustandsveränderung tatsächlich erreicht, zeigt erst die Wirkungsrückkopplung.
 
 ## Wirkungslücke
 
@@ -11868,6 +14070,8 @@ In der Wirkungsökonomie wird der Begriff verwendet, um Wirkungen als tatsächli
 Ein Geschäfts-, Finanzierungs- oder Leistungsmodell als dynamisches Wirkungssystem mit Zuständen, Empfängern, Mechanismen, Wertschöpfung, Tragfähigkeit, Grenzen und Lernen gestalten.
 
 Ein Geschäfts-, Finanzierungs- oder Leistungsmodell als dynamisches Wirkungssystem mit Zuständen, Empfängern, Mechanismen, Wertschöpfung, Tragfähigkeit, Grenzen und Lernen gestalten.
+
+F03 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: Vollständiges Wirkungsmodell mit zwölf Feldern und Anschluss an Scorecards, Portfolios und Gates.
 
 ## Wirkungsmonitoring
 
@@ -11929,6 +14133,8 @@ Die wirkungsökonomische Erfolgslogik verbindet positive Netto-Wirkung, wirtscha
 
 Die wirkungsökonomische Erfolgslogik verbindet positive Netto-Wirkung, wirtschaftliche Tragfähigkeit, Resilienz und Lernfähigkeit als gemeinsam notwendige Bedingungen.
 
+Die Bedingungen werden nicht beliebig gegeneinander aufgerechnet; eine fehlende Grundbedingung begrenzt den dauerhaften Managementerfolg.
+
 ## Wirkungsökonomische Kaufkraftlogik
 
 Wirkungsökonomische Kaufkraftlogik beschreibt, wie Wirkungspreise, Steuerentlastungen, Boni und soziale Schutzmechanismen so gestaltet werden, dass nachhaltige Entscheidungen möglich werden, ohne Menschen mit wenig Einkommen zu überfordern.
@@ -11943,11 +14149,15 @@ Die wirkungsökonomische Managementarchitektur ordnet zwölf Managementfelder vo
 
 Die wirkungsökonomische Managementarchitektur ordnet zwölf Managementfelder von Zweck und Strategie bis Governance, Lernen und Transformation.
 
+Sie verbindet Managemententscheidungen mit positiver Netto-Wirkung, Tragfähigkeit, Resilienz und Lernfähigkeit.
+
 ## Wirkungsökonomische Theory of Change
 
 Eine Theory of Change um negative Wirkungen, Nichtkompensation, Systemhebel, Rückkopplung, Transformationswirkung und Entscheidungstore erweitern.
 
 Eine Theory of Change um negative Wirkungen, Nichtkompensation, Systemhebel, Rückkopplung, Transformationswirkung und Entscheidungstore erweitern.
+
+C03 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Verbindlicher Output: Gesamtmodell von Ausgangslage, Voraussetzungen, Interventionen, Wirkungspfaden, Risiken, Grenzen, Lernfragen und Governance.
 
 ## Wirkungsökonomischer Change Case
 
@@ -11955,11 +14165,13 @@ Die Veränderung aus Wirkung, Risiko, Strategie und realen Betroffenheiten legit
 
 Die Veränderung aus Wirkung, Risiko, Strategie und realen Betroffenheiten legitimieren statt nur aus Effizienz oder Managementwillen.
 
+M01 gehört zur Kategorie „Change, Adoption, Workforce, Skills und Wissen“. Verbindlicher Output: Change Case mit Ausgangszustand, Zielwirkung, Nicht-Verändern-Risiko, Betroffenen, Übergangslasten, Benefits und Mandat.
+
 ## Wirkungsökonomischer Wirkungsgrad
 
-Der wirkungsökonomische Wirkungsgrad setzt eine bewertete positive Netto-Wirkung ins Verhältnis zu einem klar benannten Einsatz, etwa Geld, Zeit, Energie, Material oder institutioneller Kapazität.
+Der wirkungsökonomische Wirkungsgrad beschreibt die Intensität einer dokumentierten positiven Netto-Wirkung je klar benanntem Einsatz. Seine Einheit muss immer sichtbar bleiben, sofern Zähler und Nenner nicht dieselbe Einheit haben.
 
-Der wirkungsökonomische Wirkungsgrad ist eine Verhältniskennzahl der Wirkungsökonomie. Formelhaft: bewertete positive Netto-Wirkung geteilt durch klar benannten Einsatz. Er ist nicht auf Geld beschränkt und hat keine einheitliche Universalformel. Eine Rechnung ist nur dann nachvollziehbar und vergleichbar, wenn Zielzustand, Referenz, Bilanzgrenze, Zeithorizont, Zurechnung, Nebenwirkungen, Datenqualität und der Umgang mit nicht kompensierbaren Schäden offengelegt sind.
+Der wirkungsökonomische Wirkungsgrad ist ein Oberbegriff für klar definierte Wirkungsintensitäten. Formelhaft wird eine dokumentierte Netto-Wirkungsgröße ΔZ mit ihrer Einheit U durch einen klar benannten Ressourceneinsatz R geteilt. Das kann etwa Tonnen CO₂ je Megawattstunde, NWI-Punkte je Arbeitsstunde oder Euro-Nettonutzen je Euro Kapital sein. Nur im letzten Fall ist die Kennzahl dimensionslos. Eine Rechnung ist nur dann nachvollziehbar und vergleichbar, wenn Zielzustand, Referenz, Einheit, Bilanzgrenze, Zeithorizont, Zurechnung, Nebenwirkungen, Datenqualität und der Umgang mit nicht kompensierbaren Schäden offengelegt sind.
 
 ## Wirkungsökonomisches Managementmodell
 
@@ -11967,11 +14179,15 @@ Das Wirkungsökonomische Managementmodell (WÖMM) ist die integrierte Management
 
 Das Wirkungsökonomische Managementmodell (WÖMM) ist die integrierte Management- und Steuerungsarchitektur für Organisationen als lernende Wirkungssysteme.
 
+Das WÖMM verbindet Wirkungskompass, Systemlandkarte, Managementarchitektur, Wirkungsrealisierungsarchitektur, Wirkungsrad und Betriebssystem und ist die vorgelagerte Grundlage für das WÖMS.
+
 ## Wirkungsökonomisches Methodensystem
 
 Das Wirkungsökonomische Methodensystem (WÖMS) ist die methodische Säule der Wirkungsökonomie mit 152 Kernmethoden, 56 spezialisierten Canvas und 20 Workshop-Journeys.
 
 Das Wirkungsökonomische Methodensystem (WÖMS) ist die methodische Säule der Wirkungsökonomie mit 152 Kernmethoden, 56 spezialisierten Canvas und 20 Workshop-Journeys.
+
+Das WÖMS operationalisiert das vorgelagerte WÖMM für Diagnose, Modellierung, Bewertung, Gestaltung, Entscheidung, Umsetzung und Lernen.
 
 ## Wirkungsoptionen- und Ideenportfolio
 
@@ -11979,11 +14195,15 @@ Vielfältige Interventionsoptionen auf unterschiedlichen Systemhebeln erzeugen, 
 
 Vielfältige Interventionsoptionen auf unterschiedlichen Systemhebeln erzeugen, kombinieren und vor vorschneller Lieblingslösung schützen.
 
+F05 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: Breites Optionenportfolio mit Mechanismus, Hebeltiefe, Wirkung, Grenzen, Aufwand und Lernwert.
+
 ## Wirkungsordnungen-Landkarte
 
 Unmittelbare, indirekte und strukturverändernde Wirkungen erster, zweiter und dritter Ordnung unterscheiden.
 
 Unmittelbare, indirekte und strukturverändernde Wirkungen erster, zweiter und dritter Ordnung unterscheiden.
+
+B08 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Verbindlicher Output: Zeitlich und kausal geordnete Landkarte mit direkten Zustandsänderungen, Folgewirkungen und Veränderungen von Regeln oder Handlungspfaden.
 
 ## Wirkungsorientierte Forschung und Innovation
 
@@ -12021,6 +14241,8 @@ Teams entlang von Wirkungswertströmen, Plattformen, Enabling-Bedarf und Spezial
 
 Teams entlang von Wirkungswertströmen, Plattformen, Enabling-Bedarf und Spezialkomplexität gestalten.
 
+L04 gehört zur Kategorie „Product Operating Model, Teams, Plattformen und Ökosysteme“. Verbindlicher Output: Teamtopologie mit Teamtypen, Verantwortungsgrenzen, Outcomes, KII und geplanten Interaktionsmodi.
+
 ## Wirkungsorientierte Unternehmensführung
 
 Wirkungsorientierte Unternehmensführung richtet Strategie, Governance, Entscheidungen, Ressourcen und Kultur eines Unternehmens auf positive Netto-Wirkung für Mensch, Planet und Demokratie aus.
@@ -12039,6 +14261,8 @@ Strategie und Wirkung in End-to-End-Prozesse, Entscheidungsrechte, Daten, Techno
 
 Strategie und Wirkung in End-to-End-Prozesse, Entscheidungsrechte, Daten, Technologie, Fähigkeiten und Steuerungsrhythmen übersetzen.
 
+G03 gehört zur Kategorie „Organisation, Führung und Kultur“. Verbindlicher Output: Operating-Model-Blueprint mit Kernprozessen, Governance, Datenpunkten, KII und Schnittstellen.
+
 ## Wirkungspädagogik
 
 Wirkungspädagogik versteht Lernen als gestaltete Zustandsveränderung von Verstehen, Können, Haltung, Beziehung und Handlungsfähigkeit.
@@ -12055,9 +14279,11 @@ In der Wirkungsökonomie wird der Begriff verwendet, um Wirkungen als tatsächli
 
 ## Wirkungspfad
 
-Die Kette von Auslösern über Aktivitäten, Outputs, Outcomes und Wirkungen bis zu Rückkopplungen nachvollziehbar darstellen.
+Ein Wirkungspfad ordnet Auslöser, Aktivitäten und erbrachte Leistungen den erwarteten Veränderungen bei Wirkungsempfängern, möglichen Zustandsveränderungen und Rückkopplungen in einer prüfbaren Reihenfolge zu.
 
-Die Kette von Auslösern über Aktivitäten, Outputs, Outcomes und Wirkungen bis zu Rückkopplungen nachvollziehbar darstellen.
+Ein Wirkungspfad ordnet Auslöser, Aktivitäten und erbrachte Leistungen den erwarteten Veränderungen bei Wirkungsempfängern, möglichen Zustandsveränderungen und Rückkopplungen in einer prüfbaren Reihenfolge zu.
+
+C01 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Erwartetes Arbeitsergebnis: ein prüfbarer Wirkungspfad mit Wirkungsempfängern, Annahmen, Kontextbedingungen, möglichen Nebenwirkungen und Evidenz.
 
 ## Wirkungspflicht des Eigentums
 
@@ -12071,17 +14297,23 @@ Eine begrenzte, reversible und lernorientierte Umsetzung gestalten, die reale Wi
 
 Eine begrenzte, reversible und lernorientierte Umsetzung gestalten, die reale Wirkung prüft und Betroffene schützt.
 
+H02 gehört zur Kategorie „Umsetzung, Monitoring, Lernen und Assurance“. Verbindlicher Output: Pilot-Charta mit Scope, Hypothesen, Population, KII, Risiken, Schutz, Governance, Stop und Skalierungskriterien.
+
 ## Wirkungspionier
 
 Ein Wirkungspionier ist ein Akteur, der neue Lösungen nicht primär nach Profit, Reichweite oder Status entwickelt, sondern nach positiver Netto-Wirkung für Mensch, Planet und Demokratie.
 
 Ein Wirkungspionier ist ein Akteur, der neue Lösungen nicht primär nach Profit, Reichweite oder Status entwickelt, sondern nach positiver Netto-Wirkung für Mensch, Planet und Demokratie.
 
+Der Begriff eignet sich für Website, Akademie und Beispiele, weniger für strenge Methodik. Er beschreibt Unternehmer:innen, Kommunen, Teams, Forschende oder zivilgesellschaftliche Akteure, die neue Wirkungsräume eröffnen.
+
 ## Wirkungsportfolio
 
 Produkte, Projekte, Programme oder Geschäftsfelder nach Netto-Wirkung, Tragfähigkeit, Resilienz, Evidenz und strategischer Bedeutung steuern.
 
 Produkte, Projekte, Programme oder Geschäftsfelder nach Netto-Wirkung, Tragfähigkeit, Resilienz, Evidenz und strategischer Bedeutung steuern.
+
+E04 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlicher Output: Portfolio mit Investitions-, Transformations-, Halte-, Redesign- und Exit-Entscheidungen.
 
 ## Wirkungspotenzial
 
@@ -12111,11 +14343,15 @@ Ein Problem als unerwünschte Zustandsveränderung mit Betroffenen, Ursachen, au
 
 Ein Problem als unerwünschte Zustandsveränderung mit Betroffenen, Ursachen, aufrechterhaltenden Bedingungen und Folgewirkungen formulieren.
 
+B02 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Verbindlicher Output: Präzise Problemdefinition statt lösungsnaher oder moralischer Problembehauptung.
+
 ## Wirkungsproblem–Lösungs-Fit
 
 Prüfen, ob eine relevante Zustandsveränderung verstanden ist und eine Lösung einen plausiblen Mechanismus adressiert, bevor Geschäftsmodell oder Skalierung optimiert werden.
 
 Prüfen, ob eine relevante Zustandsveränderung verstanden ist und eine Lösung einen plausiblen Mechanismus adressiert, bevor Geschäftsmodell oder Skalierung optimiert werden.
+
+F01 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: Fit-Statement mit Problembeleg, Empfängern, Mechanismus, Grenzen, Alternativen und kritischsten Hypothesen.
 
 ## Wirkungsprofil
 
@@ -12130,6 +14366,8 @@ In der Wirkungsökonomie wird der Begriff verwendet, um Wirkungen als tatsächli
 Eine minimale Darstellung oder Intervention bauen, die neben Nutzung auch Mechanismus, Betroffenenwirkung und Risiken lernbar macht.
 
 Eine minimale Darstellung oder Intervention bauen, die neben Nutzung auch Mechanismus, Betroffenenwirkung und Risiken lernbar macht.
+
+F06 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: Prototypplan mit Lernfragen, betroffenen Gruppen, Schutzmaßnahmen, Beobachtungen und Abbruchregeln.
 
 ## Wirkungsprüfung
 
@@ -12179,9 +14417,11 @@ Wohnen, Bildung, Gesundheit, Medien, Mobilität, Kultur oder Finanzsysteme könn
 
 ## Wirkungsrealisierungsarchitektur
 
-Die Wirkungsrealisierungsarchitektur verbindet Wirkungsziele mit Capabilities, Wertströmen, Prozessen, Operating Model, Daten, Technologie, Delivery, Change und Adoption.
+Die Wirkungsrealisierungsarchitektur verbindet Wirkungsziele mit Fähigkeiten, Wertströmen, Prozessen, Betriebsmodell, Daten, Technologie, Umsetzung sowie Einführung und tatsächlicher Nutzung.
 
-Die Wirkungsrealisierungsarchitektur verbindet Wirkungsziele mit Capabilities, Wertströmen, Prozessen, Operating Model, Daten, Technologie, Delivery, Change und Adoption.
+Die Wirkungsrealisierungsarchitektur verbindet Wirkungsziele mit Fähigkeiten, Wertströmen, Prozessen, Betriebsmodell, Daten, Technologie, Umsetzung sowie Einführung und tatsächlicher Nutzung.
+
+Sie verbindet die strategische Wirkungsabsicht mit den Voraussetzungen dafür, dass eine Zustandsveränderung tatsächlich eintritt und dauerhaft verfügbar bleibt.
 
 ## Wirkungsrecht
 
@@ -12201,17 +14441,19 @@ Relevante tatsächliche und potenzielle Wirkungen unabhängig von finanzieller M
 
 Relevante tatsächliche und potenzielle Wirkungen unabhängig von finanzieller Materialität identifizieren und anschließend mit Risiken, Chancen und Abhängigkeiten verbinden.
 
+D02 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Verbindlicher Output: Priorisierte IRO- und Wirkungslandkarte mit Schwere, Reichweite, Unabänderlichkeit, Wahrscheinlichkeit, Betroffenen und finanzieller Rückwirkung.
+
 ## Wirkungsrendite
 
-Wirkungsrendite beschreibt den Ertrag eines Kapitaleinsatzes in Form geprüfter positiver Netto-Wirkung oder Transformationswirkung, getrennt von, aber verbunden mit finanzieller Rendite.
+Wirkungsrendite beschreibt den monetär bewerteten, kausal zugerechneten direkten Nettonutzen eines Kapitaleinsatzes je Kapitaleuro, getrennt von finanzieller Rendite.
 
-Wirkungsrendite beschreibt den Wirkungs-Ertrag eines Kapitaleinsatzes. Als kapitalbezogene Messvariante kann sie bewertete positive Netto-Wirkung durch eingesetztes Kapital teilen. Der konkrete Zähler muss jedoch offengelegt werden: NWI, IOI, T-SROI, vermiedene Schäden oder eine andere nachvollziehbare Wirkungsmetrik beantworten unterschiedliche Fragen und dürfen nicht unbemerkt gleichgesetzt werden.
+Wirkungsrendite beschreibt den monetären Wirkungs-Ertrag eines Kapitaleinsatzes. Als kapitalbezogene Messvariante setzt sie den Barwert eines kausal zugerechneten direkten Nettonutzens in Euro durch den Barwert des eingesetzten Kapitals in Euro derselben Preisbasis. NWI, IOI, T-SROI, vermiedene Schäden und andere Wirkungsmetriken beantworten unterschiedliche Fragen und dürfen nicht unbemerkt gleichgesetzt werden. Nicht-monetäre Wirkungen bleiben als Profil oder klar benannte Intensität sichtbar.
 
 ## Wirkungsrendite öffentlicher Ausgaben
 
-Wirkungsrendite öffentlicher Ausgaben beschreibt die bewertete positive Netto-Wirkung eines klar abgegrenzten öffentlichen Mitteleinsatzes.
+Wirkungsrendite öffentlicher Ausgaben beschreibt den monetär bewerteten, kausal zugerechneten direkten Nettonutzen eines klar abgegrenzten öffentlichen Mitteleinsatzes je öffentlichem Euro.
 
-Wirkungsrendite öffentlicher Ausgaben setzt bewertete positive Netto-Wirkung ins Verhältnis zu klar abgegrenzten öffentlichen Ausgaben. Sie macht sichtbar, welchen gesellschaftlichen, ökologischen und demokratischen Gegenwert ein öffentlicher Euro innerhalb einer transparenten Bilanzgrenze erzeugt. Je nach Ziel kann sie als Wirkungspunktwert oder monetarisiert ausgedrückt werden; die Einheit und der Bewertungsrahmen müssen offenliegen.
+Wirkungsrendite öffentlicher Ausgaben setzt den Barwert eines kausal zugerechneten direkten Nettonutzens in Euro ins Verhältnis zu klar abgegrenzten öffentlichen Ausgaben in Euro derselben Preisbasis. Sie macht sichtbar, welcher monetarisierte direkte Gegenwert einem öffentlichen Euro innerhalb einer transparenten Bilanzgrenze gegenübersteht. Nicht-monetäre gesellschaftliche, ökologische und demokratische Wirkungen werden als Wirkungsprofil oder klar benannte Intensität separat berichtet; die Einheit und der Bewertungsrahmen müssen offenliegen.
 
 ## Wirkungsrente
 
@@ -12231,11 +14473,15 @@ Fähigkeiten und Pfade entwerfen, mit denen wesentliche positive Wirkung unter S
 
 Fähigkeiten und Pfade entwerfen, mit denen wesentliche positive Wirkung unter Störungen erhalten, angepasst oder regeneriert wird.
 
+C09 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Verbindlicher Output: Resilienzarchitektur aus kritischen Funktionen, Redundanz, Diversität, Puffer, Anpassung, Wiederherstellung und Lernen.
+
 ## Wirkungsreview und lernende Retrospektive
 
 Regelmäßig prüfen, was tatsächlich wirkte, was nicht, welche Nebenwirkungen entstanden und welche Annahmen, Regeln oder Ziele geändert werden müssen.
 
 Regelmäßig prüfen, was tatsächlich wirkte, was nicht, welche Nebenwirkungen entstanden und welche Annahmen, Regeln oder Ziele geändert werden müssen.
+
+H07 gehört zur Kategorie „Umsetzung, Monitoring, Lernen und Assurance“. Verbindlicher Output: Reviewprotokoll mit Evidenz, Abweichung, Beitrag, Nebenwirkung, Lernstufe und verbindlichen Änderungen.
 
 ## Wirkungsrisiko
 
@@ -12248,6 +14494,8 @@ Wirkungsrisiko bezeichnet in der Wirkungsökonomie die Möglichkeit negativer Zu
 Potenzielle negative Zustandsveränderungen nach Schwere, Reichweite, Unabänderlichkeit, Wahrscheinlichkeit, Zeit und Datenqualität bewerten.
 
 Potenzielle negative Zustandsveränderungen nach Schwere, Reichweite, Unabänderlichkeit, Wahrscheinlichkeit, Zeit und Datenqualität bewerten.
+
+D10 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Verbindlicher Output: Risikoregister mit Prävention, Owner, Frühwarnsignal, Restwirkung und Eskalationsstufe.
 
 ## Wirkungsrisikomanagement
 
@@ -12267,11 +14515,13 @@ Verantwortung für Wirkung, Daten, Entscheidungen, Beteiligung, Prüfung und Ler
 
 Verantwortung für Wirkung, Daten, Entscheidungen, Beteiligung, Prüfung und Lernen über Prozesse und Ebenen eindeutig zuweisen.
 
+E09 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlicher Output: RACI+-Matrix mit Responsible, Accountable, Consulted, Informed sowie Challenge, Affected und Stop-Recht.
+
 ## Wirkungsrückkopplung
 
-Wirkungsrückkopplung führt gemessene oder geprüfte Wirkung in Preise, Budgets, Regeln, Kapital, Produktgestaltung oder Einkommen zurück.
+Wirkungsrückkopplung ist der Lernmechanismus, der beobachtete Zustandsveränderungen, Evidenz und Unsicherheit in spätere Entscheidungen zurückführt.
 
-Wirkungsrückkopplung bezeichnet Mechanismen, durch die Wirkung, Wirkungsrisiken oder positive Netto-Wirkung in Entscheidungen zurückgeführt werden. Daten, Bewertungen und Schwellenwerte bleiben nicht dokumentarisch, sondern beeinflussen Preise, Steuern, Fonds, Kapitalallokation, Beschaffung, Produktdesign, Sortimentssteuerung, Regulierung oder Einkommen.
+Wirkungsrückkopplung ist ein Lernmechanismus: Nach einer Maßnahme werden beobachtete Zustandsveränderungen, Wirkungsrisiken, Datenqualität und Unsicherheit gegen eine zuvor definierte Referenz geprüft. Die Ergebnisse fließen in spätere Entscheidungen zurück – etwa durch Anpassung, Aussetzung oder Beendigung einer Regel. Sie ist keine automatische Übertragung eines Scores in Preis, Steuer oder Förderung; solche Instrumentregeln gehören zur Wirkungslenkung. Rückkopplung braucht nachvollziehbare Daten, Verhältnismäßigkeit, Einspruch, Datenschutz und die Möglichkeit, Fehlannahmen zu korrigieren.
 
 ## Wirkungsschule
 
@@ -12284,6 +14534,8 @@ In der Wirkungsökonomie bezeichnet die Wirkungsschule die institutionelle Form 
 Messwerte anhand transparenter Benchmarks in Wirkungsscores übersetzen und unter Nichtkompensation zu einem entscheidungsfähigen Profil zusammenführen.
 
 Messwerte anhand transparenter Benchmarks in Wirkungsscores übersetzen und unter Nichtkompensation zu einem entscheidungsfähigen Profil zusammenführen.
+
+D07 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Verbindlicher Output: Scorecard je Wirkungsobjekt mit Einzelwerten, Benchmarks, Datenqualität, Mindestbedingungen und FinalScore.
 
 ## Wirkungssimulation
 
@@ -12315,6 +14567,8 @@ Entscheiden, ob Wirkung durch Organisationswachstum, Replikation, Partnerschaft,
 
 Entscheiden, ob Wirkung durch Organisationswachstum, Replikation, Partnerschaft, Open Source, Standardsetzung, Politikänderung oder bewussten Exit verbreitet wird.
 
+F14 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: Skalierungsstrategie mit Pfad, Voraussetzungen, Qualitätsgrenzen, Macht- und Lock-in-Schutz sowie Exit-Regeln.
+
 ## Wirkungsspielraum
 
 Wirkungsspielraum bezeichnet den realen finanziellen, institutionellen und ressourcenseitigen Raum, in dem öffentliche Finanzierung positive Wirkung erzeugen kann.
@@ -12326,6 +14580,8 @@ Wirkungsspielraum bezeichnet den realen finanziellen, institutionellen und resso
 Der Wirkungsstaat ist ein Staat, der nicht nur Geld, Zuständigkeiten und Verfahren verwaltet, sondern reale Folgen seines Handelns und Unterlassens beobachtet, bewertet und in Entscheidungen zurückführt.
 
 Der Wirkungsstaat ist ein Staat, der nicht nur Geld, Zuständigkeiten und Verfahren verwaltet, sondern reale Folgen seines Handelns und Unterlassens beobachtet, bewertet und in Entscheidungen zurückführt.
+
+Der Wirkungsstaat ist kein stärkerer Staat im autoritären Sinn, sondern ein genauerer Staat. Er plant nicht das Leben, sondern schafft Rückkopplungen: negative Wirkung wird sichtbar, positive Wirkung wird erleichtert, Prävention wird günstiger als Reparatur.
 
 ## Wirkungssteuer
 
@@ -12351,17 +14607,23 @@ Wirkungsziel, Systemhebel, Fähigkeiten, Portfolios, Ressourcen, Risiken, Govern
 
 Wirkungsziel, Systemhebel, Fähigkeiten, Portfolios, Ressourcen, Risiken, Governance und Lernen in einer gemeinsamen Strategie verbinden.
 
+E02 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlicher Output: Integrierte Wirkungsstrategie mit klaren Entscheidungen, Prioritäten und Rückkopplung.
+
 ## Wirkungssystem-Landkarte
 
 Die Wirkungssystem-Landkarte visualisiert Wirkungsempfänger, Wirkungsräume, Ressourcen-, Daten-, Geld- und Informationsflüsse sowie Macht, Abhängigkeiten und Wirkungsordnungen.
 
 Die Wirkungssystem-Landkarte visualisiert Wirkungsempfänger, Wirkungsräume, Ressourcen-, Daten-, Geld- und Informationsflüsse sowie Macht, Abhängigkeiten und Wirkungsordnungen.
 
+Sie übersetzt die Systemlandkarte des WÖMM in eine bearbeitbare methodische Arbeitsfläche.
+
 ## Wirkungsszenarien und Zukunftsbilder
 
 Mehrere plausible Zukunftskontexte entwickeln, um Strategien, Wirkungsmodelle und Annahmen auf Robustheit und blinde Flecken zu prüfen.
 
 Mehrere plausible Zukunftskontexte entwickeln, um Strategien, Wirkungsmodelle und Annahmen auf Robustheit und blinde Flecken zu prüfen.
+
+C08 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Verbindlicher Output: Drei bis fünf plausible Szenarien mit Treibern, Wirkungszuständen, Kipppunkten, Signalen und strategischen Implikationen.
 
 ## Wirkungsträger
 
@@ -12381,17 +14643,23 @@ Prüfen, ob Mandat, Fähigkeiten, Daten, Ressourcen, Governance, Kultur und Schu
 
 Prüfen, ob Mandat, Fähigkeiten, Daten, Ressourcen, Governance, Kultur und Schutz für eine Transformation ausreichen.
 
+H01 gehört zur Kategorie „Umsetzung, Monitoring, Lernen und Assurance“. Verbindlicher Output: Readiness-Profil mit kritischen Voraussetzungen, No-Go-Lücken und Aufbauplan.
+
 ## Wirkungstransformations-Portfolio
 
 Alle Initiativen nach strategischem Wirkungsbeitrag, Capability-Aufbau, Risiko, Abhängigkeit, Aufwand und Lernwert steuern.
 
 Alle Initiativen nach strategischem Wirkungsbeitrag, Capability-Aufbau, Risiko, Abhängigkeit, Aufwand und Lernwert steuern.
 
+N01 gehört zur Kategorie „Portfolio, Programme, Delivery und Impact & Benefits Realization“. Verbindlicher Output: Portfolio mit Initiativen, Wirkungspfaden, Capabilities, Benefits, Risiken, Ressourcen, Gates und Stop-/Reallokationsregeln.
+
 ## Wirkungstransformations-Roadmap
 
 Strategie in eine zeitlich, kausal und organisatorisch sinnvolle Abfolge aus Schutz, Enablern, Piloten, Skalierung, Umbau und Exit übersetzen.
 
 Strategie in eine zeitlich, kausal und organisatorisch sinnvolle Abfolge aus Schutz, Enablern, Piloten, Skalierung, Umbau und Exit übersetzen.
+
+E11 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlicher Output: Mehrhorizont-Roadmap mit Meilensteinen, Abhängigkeiten, Wirkungsgates, KII und Übergangsschutz.
 
 ## Wirkungstransparenzbericht
 
@@ -12423,6 +14691,8 @@ Nutzerwert, Wirkung für weitere Empfänger und Systemwirkung zu einem verantwor
 
 Nutzerwert, Wirkung für weitere Empfänger und Systemwirkung zu einem verantwortbaren Leistungsversprechen verbinden.
 
+F02 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: Wirkungsversprechen mit Nutzeraufgaben, Bedürfnissen, Zustandsgewinn, externen Wirkungen, Grenzen und Nachweis.
+
 ## Wirkungswahrheit
 
 Wirkungswahrheit beschreibt, ob Preise, Berichte, politische Aussagen, Geschäftsmodelle oder Kapitalflüsse ihre tatsächlichen Wirkungen nachvollziehbar sichtbar machen oder verdecken.
@@ -12453,11 +14723,15 @@ Ein Wirkungswertstrom beschreibt die Ende-zu-Ende-Abfolge, durch die Fähigkeite
 
 Ein Wirkungswertstrom beschreibt die Ende-zu-Ende-Abfolge, durch die Fähigkeiten, Leistungen, Übergaben und Entscheidungen Zustände bei Wirkungsempfängern verändern.
 
+Er macht neben Fluss und Leistung auch Wartezeiten, Externalitäten, Wirkungsgrenzen, KII und Rückkopplungspunkte sichtbar.
+
 ## Wirkungswertstrom-Karte
 
 Den End-to-End-Fluss vom Bedarf beziehungsweise Problem bis zur tatsächlichen Zustandsveränderung darstellen.
 
 Den End-to-End-Fluss vom Bedarf beziehungsweise Problem bis zur tatsächlichen Zustandsveränderung darstellen.
+
+K01 gehört zur Kategorie „Wirkungswertströme, Prozesse, Services und Flow“. Verbindlicher Output: Wirkungswertstrom mit Stufen, Empfängerzuständen, Übergaben, Daten, Wartezeiten, Risiken und KII.
 
 ## Wirkungswissenschaften
 
@@ -12471,11 +14745,15 @@ Ein attraktives, konkretes und überprüfbares Bild des angestrebten Systemzusta
 
 Ein attraktives, konkretes und überprüfbares Bild des angestrebten Systemzustands entwickeln, ohne es mit Maßnahmen zu verwechseln.
 
+E01 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlicher Output: Zielbild 3–10 Jahre mit Zuständen, Empfängern, Grenzen, Indikatoren und Nicht-Zielen.
+
 ## Wirkungsziele und Impact-OKR
 
 Strategische Wirkungsziele in überprüfbare, lernorientierte Zielzyklen übersetzen, ohne Aktivitätskennzahlen mit Wirkung zu verwechseln.
 
 Strategische Wirkungsziele in überprüfbare, lernorientierte Zielzyklen übersetzen, ohne Aktivitätskennzahlen mit Wirkung zu verwechseln.
+
+E03 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlicher Output: Zielhierarchie aus Outcome-/Impact-Objectives, Key Impact Results, Grenzen und Lernhypothesen.
 
 ## Wirkungszurechnung
 
@@ -12489,17 +14767,23 @@ Den gegenwärtigen Zustand eines Wirkungsraums anhand beobachtbarer Bedingungen,
 
 Den gegenwärtigen Zustand eines Wirkungsraums anhand beobachtbarer Bedingungen, Erfahrungen, Daten und institutioneller Regeln beschreiben.
 
+B01 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Verbindlicher Output: Gemeinsames, evidenzmarkiertes Ausgangsbild mit Stärken, Schäden, Spannungen und Datenlücken.
+
 ## Wirtschaftliche Tragfähigkeit
 
 Wirtschaftliche Tragfähigkeit bezeichnet die dauerhafte organisatorische und finanzielle Fähigkeit, positive Wirkung zu tragen.
 
 Wirtschaftliche Tragfähigkeit bezeichnet die dauerhafte organisatorische und finanzielle Fähigkeit, positive Wirkung zu tragen.
 
+Sie ist eine notwendige Erfolgsbedingung neben positiver Netto-Wirkung, Resilienz und Lernfähigkeit, aber nicht der letzte Wirkungsmaßstab.
+
 ## Wirtschaftsliberalismus
 
 Wirtschaftsliberalismus betont wirtschaftliche Freiheit, Privateigentum, Vertragsfreiheit, Wettbewerb und begrenzte staatliche Eingriffe.
 
 Wirtschaftsliberalismus betont wirtschaftliche Freiheit, Privateigentum, Vertragsfreiheit, Wettbewerb und begrenzte staatliche Eingriffe.
+
+Anschlussfähig, solange wirtschaftliche Freiheit nicht bedeutet, Folgekosten auf andere abzuwälzen.
 
 ## Wissenschaft als Wirkungsinfrastruktur
 
@@ -12513,11 +14797,19 @@ Wissenschaftliche Politikberatung übersetzt wissenschaftliche Erkenntnisse, Uns
 
 Sie unterstützt Gesetzgebung, Verwaltung, Haushaltsplanung, Krisensteuerung, Regulierung, Wirkungsprüfung und öffentliche Kommunikation durch Daten, Methoden, Modelle, Evidenzgrade, Szenarien, Folgenabschätzungen, Unsicherheiten und Alternativen. Wissenschaft berät, prüft und korrigiert; demokratische Politik entscheidet.
 
+## Wissenschaftsfeindlichkeit
+
+Wissenschaftsfeindlichkeit ist die pauschale Abwertung, Behinderung oder Verzerrung wissenschaftlicher Verfahren, Freiheit oder Korrektur.
+
+Berechtigte Kritik an einer Studie, an Interessenkonflikten, Daten, Methoden oder Schlussfolgerungen ist keine Wissenschaftsfeindlichkeit. Im Gegenteil: Wissenschaft lebt davon, dass Behauptungen offen geprüft, widerlegt und verbessert werden können. Wissenschaftsfeindlich wird es dort, wo nicht die nachvollziehbare Begründung, sondern die pauschale Abwertung von Forschung oder Forschenden an ihre Stelle tritt.
+
 ## Wissensfluss-, kritisches-Wissen- und Communities-Canvas
 
 Wissen als Wirkungsinfrastruktur erfassen, teilen, schützen und erneuern.
 
 Wissen als Wirkungsinfrastruktur erfassen, teilen, schützen und erneuern.
+
+M10 gehört zur Kategorie „Change, Adoption, Workforce, Skills und Wissen“. Verbindlicher Output: Knowledge Map mit kritischem Wissen, Quellen, Communities, Flüssen, Risiken, Schutz, Nachfolge und Lernschleifen.
 
 ## Wissensgesellschaft
 
@@ -12559,11 +14851,15 @@ Wohlfahrtsökonomie untersucht, wie wirtschaftliche Zustände und Allokationen g
 
 Wohlfahrtsökonomie untersucht, wie wirtschaftliche Zustände und Allokationen gesellschaftliche Wohlfahrt beeinflussen.
 
+Wichtige Anschlusslinie. Die WÖk erweitert Wohlfahrt um Mensch, Planet, Demokratie, Wirkung erster bis dritter Ordnung und Nichtkompensation.
+
 ## Wohlfahrtsökonomik
 
 Wohlfahrtsökonomik untersucht, wie Ressourcenverteilung, externe Effekte, Marktversagen und politische Eingriffe gesellschaftliche Wohlfahrt beeinflussen.
 
 Wohlfahrtsökonomik untersucht, wie Ressourcenverteilung, externe Effekte, Marktversagen und politische Eingriffe gesellschaftliche Wohlfahrt beeinflussen.
+
+Die WÖk übernimmt den Problemzugang der externen Kosten, ersetzt abstrakte Nutzenannahmen aber durch beobachtbare Zustandsveränderungen. Wohlfahrt wird nicht nur als Präferenzbefriedigung, sondern als Wirkung auf Mensch, Planet und Demokratie gelesen.
 
 ## Wohlfahrtsstaat
 
@@ -12621,11 +14917,15 @@ Aus Wirkungsmodell und Referenzrahmen ein hierarchisches Set aus Zustands-, Proz
 
 Aus Wirkungsmodell und Referenzrahmen ein hierarchisches Set aus Zustands-, Prozess-, Früh-, Risiko- und Transformationsindikatoren entwickeln.
 
+D03 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Verbindlicher Output: Indikatorenbaum mit Definition, Einheit, Referenzwert, Quelle, Frequenz, Empfänger, Verantwortlichen und WÖk-ID.
+
 ## WÖMM-Betriebssystem
 
 Das WÖMM-Betriebssystem verankert Rollen, Daten, Entscheidungstore, Gremien, Assurance, Managementrhythmen, Kompetenzen und Beteiligung im Organisationsalltag.
 
 Das WÖMM-Betriebssystem verankert Rollen, Daten, Entscheidungstore, Gremien, Assurance, Managementrhythmen, Kompetenzen und Beteiligung im Organisationsalltag.
+
+Es macht aus der Managementarchitektur eine institutionell wirksame, prüfbare und lernende Praxis.
 
 ## WÖMM-Managementfunktion
 
@@ -12633,17 +14933,23 @@ Eine WÖMM-Managementfunktion bezeichnet eine notwendige Fähigkeit des Manageme
 
 Eine WÖMM-Managementfunktion bezeichnet eine notwendige Fähigkeit des Managementsystems von Ausrichtung und Strategie bis Betrieb, Kontrolle, Lernen und Erneuerung.
 
+Das WÖMM 2.0 unterscheidet 17 Managementfunktionen und ordnet ihnen Ergebnisse, Entscheidungstore, Rollen und Methoden zu.
+
 ## WÖMS-Auftragsklärung
 
 Klären, welche Entscheidung, Zustandsveränderung und Verantwortung der Methodenprozess tatsächlich unterstützen soll.
 
 Klären, welche Entscheidung, Zustandsveränderung und Verantwortung der Methodenprozess tatsächlich unterstützen soll.
 
+A01 gehört zur Kategorie „Orientierung, Mandat und Schutzrahmen“. Verbindlicher Output: Ein schriftliches Wirkungsmandat mit Entscheidungsfrage, Auftraggeber:in, Entscheidungsspielraum, Betroffenen, Zeithorizont und Abbruchkriterien.
+
 ## WÖMS-Methodenkarte
 
-Eine WÖMS-Methodenkarte dokumentiert Zweck, Einsatzrahmen, Inputs, Schritte, Output, Schnittstellen, Canvas-Spezifikation, Qualitäts- und Schutzregeln einer Methode.
+Eine WÖMS-Methodenkarte beschreibt Zweck, Einsatzrahmen, benötigte Informationen, Arbeitsschritte, erwartete Arbeitsergebnisse, Schnittstellen, Formularfelder sowie Qualitäts- und Schutzregeln einer Methode.
 
-Eine WÖMS-Methodenkarte dokumentiert Zweck, Einsatzrahmen, Inputs, Schritte, Output, Schnittstellen, Canvas-Spezifikation, Qualitäts- und Schutzregeln einer Methode.
+Eine WÖMS-Methodenkarte beschreibt Zweck, Einsatzrahmen, benötigte Informationen, Arbeitsschritte, erwartete Arbeitsergebnisse, Schnittstellen, Formularfelder sowie Qualitäts- und Schutzregeln einer Methode.
+
+Sie schafft eine einheitliche Grundlage für Anwendung, Ausbildung, fachliche Prüfung und Qualitätssicherung.
 
 ## WÖMS-Methodenkreislauf
 
@@ -12651,11 +14957,15 @@ Der WÖMS-Methodenkreislauf strukturiert Wahrnehmen, Abgrenzen, Verstehen, Model
 
 Der WÖMS-Methodenkreislauf strukturiert Wahrnehmen, Abgrenzen, Verstehen, Modellieren, Bewerten, Gestalten, Entscheiden, Umsetzen, Beobachten und Lernen.
 
+Er führt eine Wirkungsfrage von Mandat und Systemgrenze bis zur beobachteten Wirkung und methodischen Korrektur.
+
 ## WÖMS-Methodenregister
 
 Das WÖMS-Methodenregister führt stabile Methoden-IDs, Version, Herkunft, Evidenzstatus, Änderungsanträge, Konsultation, Freigabe und Release Notes.
 
 Das WÖMS-Methodenregister führt stabile Methoden-IDs, Version, Herkunft, Evidenzstatus, Änderungsanträge, Konsultation, Freigabe und Release Notes.
+
+Es ist die Governance- und Versionierungsgrundlage für 152 Kernmethoden, 56 spezialisierte Canvas und ihre Schnittstellen.
 
 ## WÖMS-Moderation
 
@@ -12663,11 +14973,15 @@ WÖMS-Moderation sichert Mandat, Begriffe, Betroffenenperspektiven, Grenzen, Evi
 
 WÖMS-Moderation sichert Mandat, Begriffe, Betroffenenperspektiven, Grenzen, Evidenztrennung, Widerspruch, Entscheidungsfähigkeit und Dokumentation.
 
+Sie trägt prozedurale und wirkungsbezogene Verantwortung; Fachentscheidungen bleiben bei legitimierten Rollen.
+
 ## WÖMS-Realisierungs- und Betriebsmethoden
 
 Die 68 WÖMS-Realisierungs- und Betriebsmethoden der Kategorien I bis P operationalisieren Foresight, Capabilities, Prozesse, Produktbetrieb, Change, Delivery, Daten, KI, Resilienz, Kontrollen und Assurance.
 
 Die 68 WÖMS-Realisierungs- und Betriebsmethoden der Kategorien I bis P operationalisieren Foresight, Capabilities, Prozesse, Produktbetrieb, Change, Delivery, Daten, KI, Resilienz, Kontrollen und Assurance.
+
+Sie ergänzen die 84 Grundmethoden und führen Wirkung von Diagnose und Gestaltung bis in Realisierung, Betrieb und unabhängige Prüfung.
 
 ## WÖMS-Reifegrad- und Fähigkeitsassessment
 
@@ -12675,11 +14989,15 @@ Bewerten, wie weit Wirkung von Berichterstattung zu integrierter, rückgekoppelt
 
 Bewerten, wie weit Wirkung von Berichterstattung zu integrierter, rückgekoppelter und transformativer Steuerung entwickelt ist.
 
+E12 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlicher Output: Reifegradprofil 0–5 je Dimension mit Evidenz, Lücken, Zielniveau und Entwicklungsplan.
+
 ## WÖMS-Workshop-Journey
 
 Eine WÖMS-Workshop-Journey verbindet ausgewählte Kernmethoden zu einem vollständigen Arbeitsprozess mit Vorbereitung, Vertiefung, Entscheidung und Review.
 
 Eine WÖMS-Workshop-Journey verbindet ausgewählte Kernmethoden zu einem vollständigen Arbeitsprozess mit Vorbereitung, Vertiefung, Entscheidung und Review.
+
+20 Standard-Journeys decken die Grundanwendung sowie Foresight, Capabilities, Operating Model, Change, Delivery, Daten, KI, Resilienz und Assurance ab.
 
 ## WR
 
@@ -12701,11 +15019,17 @@ Wu Wei wird häufig als Nicht-Erzwingen oder Handeln im Einklang mit der Situati
 
 Wu Wei wird häufig als Nicht-Erzwingen oder Handeln im Einklang mit der Situation verstanden. Es meint nicht Nichtstun, sondern eine Form von Handeln, das die Eigenlogik von Prozessen achtet.
 
+Die WÖk kann Wu Wei als Denkbild für Wirkungslenkung nutzen: Nicht jedes System lässt sich direkt kontrollieren; gute Architektur setzt Bedingungen, in denen bessere Selbstorganisation möglich wird.
+
+Relevant als Gegenbild zu technokratischer Steuerungsillusion. Die WÖk setzt auf Rückkopplung, Resonanz und Selbstorganisation.
+
 ## Wu wei – wirksames Nicht-Erzwingen
 
 Wu wei wird häufig als Nicht-Erzwingen oder nicht-verkrampftes Handeln übersetzt. Es bezeichnet nicht bloße Passivität, sondern ein Handeln, das mit dem System arbeitet statt gegen seine Eigenlogik.
 
 Wu wei wird häufig als Nicht-Erzwingen oder nicht-verkrampftes Handeln übersetzt. Es bezeichnet nicht bloße Passivität, sondern ein Handeln, das mit dem System arbeitet statt gegen seine Eigenlogik.
+
+Für die WÖk kann Wu wei als Denkbild für systemische Steuerung dienen: Wirkung entsteht nicht durch maximale Kontrolle, sondern durch passende Leitplanken, Rückkopplung, Timing und Ermöglichung.
 
 ## WUStG
 
@@ -12725,6 +15049,8 @@ Xenophobie bezeichnet Fremdenfeindlichkeit oder Abwertung von Menschen, die als 
 
 Xenophobie bezeichnet Fremdenfeindlichkeit oder Abwertung von Menschen, die als fremd markiert werden.
 
+Sie kann soziale Spaltung, Angstkommunikation und Ausschluss verstärken.
+
 ## Youth / Jugendbeteiligung
 
 Jugendbeteiligung sichert, dass junge Menschen in Entscheidungen mit langfristiger Wirkung einbezogen werden.
@@ -12736,6 +15062,8 @@ Junge Menschen tragen viele Zukunftswirkungen heutiger Politik, etwa bei Klima, 
 Wirkungszeit, Regenerationszeit, Entscheidungszeit, Nutzungszeit und Generationenfolgen explizit machen.
 
 Wirkungszeit, Regenerationszeit, Entscheidungszeit, Nutzungszeit und Generationenfolgen explizit machen.
+
+B09 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Verbindlicher Output: Mehrhorizont-Zeitkarte mit Verzögerungen, Kipppunkten, Irreversibilitäten und Verantwortung für Abwesende.
 
 ## Zeitfensterblindheit
 
@@ -12757,11 +15085,17 @@ Zementverwertung nutzt zerkleinerte Rotorblattmaterialien als Ersatzbrennstoff o
 
 Zementverwertung nutzt zerkleinerte Rotorblattmaterialien als Ersatzbrennstoff oder Rohstoffersatz in der Zementindustrie.
 
+Nicht automatisch hochwertiges Recycling; WÖk-Bewertung über Materialerhalt, Emissionen, Substitution, Kreislaufgrad und Alternativen.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
+
 ## Zen / Achtsamkeit
 
 Zen ist eine buddhistische Praxis- und Denktradition, die unmittelbare Erfahrung, Aufmerksamkeit, Übung, Nicht-Anhaftung und Gegenwärtigkeit betont. Achtsamkeit bezeichnet wache, nicht-automatische Aufmerksamkeit für das eigene Handeln und seine Folgen.
 
 Zen ist eine buddhistische Praxis- und Denktradition, die unmittelbare Erfahrung, Aufmerksamkeit, Übung, Nicht-Anhaftung und Gegenwärtigkeit betont. Achtsamkeit bezeichnet wache, nicht-automatische Aufmerksamkeit für das eigene Handeln und seine Folgen.
+
+Für die WÖk ist Zen nicht als Religion relevant, sondern als Bezugslinie für Achtsamkeit, Wirkungskompetenz und die Fähigkeit, automatische Reaktionsmuster, Statuslogiken und destruktive Routinen zu unterbrechen.
 
 ## Zentralverwaltungswirtschaft
 
@@ -12790,6 +15124,8 @@ In der Wirkungsökonomie wird der Begriff verwendet, um Wirkungen als tatsächli
 Ein wirkungsfähiges Zielbild und realistische Zwischenzustände für Organisation, Prozesse, Daten, Technologie und Governance gestalten.
 
 Ein wirkungsfähiges Zielbild und realistische Zwischenzustände für Organisation, Prozesse, Daten, Technologie und Governance gestalten.
+
+J07 gehört zur Kategorie „Business Architecture, Capabilities und Zielarchitektur“. Verbindlicher Output: Zielarchitektur mit Übergangsarchitekturen, Architekturbausteinen, Risiken, Abhängigkeiten und Roadmap.
 
 ## Zielkonflikt
 
@@ -12845,6 +15181,8 @@ Ein zirkuläres Geschäftsmodell schafft Wert, indem Produkte, Materialien oder 
 
 Ein zirkuläres Geschäftsmodell schafft Wert, indem Produkte, Materialien oder Funktionen möglichst lange im Kreislauf bleiben.
 
+Beispiele sind Product-as-a-Service, Rücknahmesysteme, Leasing, Sharing, Refurbishment, Remanufacturing und Wiederverkauf.
+
 ## Zirkularität
 
 Zirkularität beschreibt, wie gut Materialien, Produkte und Werte im Kreislauf gehalten werden.
@@ -12857,11 +15195,15 @@ Zivilgesellschaft umfasst freiwillige, nichtstaatliche Formen gesellschaftlicher
 
 Zivilgesellschaft umfasst freiwillige, nichtstaatliche Formen gesellschaftlicher Organisation und Beteiligung, etwa Vereine, Initiativen, NGOs, Bewegungen, Stiftungen und Bürgergruppen.
 
+Zivilgesellschaft ist ein Rückkopplungsraum der Demokratie. Sie macht Wirkungen sichtbar, die Staat oder Markt übersehen.
+
 ## Zivilgesellschaftsrepression
 
 Zivilgesellschaftsrepression beschreibt Druck, Verbote oder Einschüchterung gegenüber NGOs, Initiativen, Medien oder Bewegungen.
 
 Zivilgesellschaftsrepression beschreibt Druck, Verbote oder Einschüchterung gegenüber NGOs, Initiativen, Medien oder Bewegungen.
+
+Schwächt demokratische Rückkopplung und Betroffenenbezug.
 
 ## Zugangsgerechtigkeit
 
@@ -12874,6 +15216,8 @@ Ein Angebot wirkt nur, wenn Menschen es nutzen können: finanziell, räumlich, d
 Zugehörigkeit bedeutet, dass Menschen sich sicher, anerkannt, beteiligt und verantwortlich eingebunden fühlen.
 
 Zugehörigkeit bedeutet, dass Menschen sich sicher, anerkannt, beteiligt und verantwortlich eingebunden fühlen.
+
+In der WÖk ist Zugehörigkeit eine demokratische Wirkungsbedingung: Wer dazugehört, kann Teilgabe leisten; wer ausgeschlossen wird, verliert Vertrauen und Handlungsmacht.
 
 ## Zukunftsbild
 
@@ -12926,3 +15270,7 @@ Ein Zuschuss ist eine meist nicht rückzahlbare finanzielle Unterstützung für 
 Zyklenfestigkeit beschreibt, wie viele Lade- und Entladezyklen eine Batterie übersteht, bevor ihre Leistungsfähigkeit deutlich sinkt.
 
 Zyklenfestigkeit beschreibt, wie viele Lade- und Entladezyklen eine Batterie übersteht, bevor ihre Leistungsfähigkeit deutlich sinkt.
+
+Hohe Zyklenfestigkeit kann Lebensdauer, Kreislaufwirkung und Wirtschaftlichkeit verbessern.
+
+Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.

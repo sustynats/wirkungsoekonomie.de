@@ -5,7 +5,10 @@ const root = process.cwd();
 const downloadRoots = ["assets/downloads", "downloads", "public/downloads"]
   .map((dir) => path.join(root, dir))
   .filter((dir) => fs.existsSync(dir));
-const out = path.join(root, "public/data/public-pdf-downloads.json");
+const outputs = [
+  path.join(root, "public/data/public-pdf-downloads.json"),
+  path.join(root, "assets/data/public-pdf-downloads.json")
+];
 const privatePdfPattern = /(^|\/)assets\/downloads\/zertifikate\//i;
 
 function walk(dir) {
@@ -28,6 +31,9 @@ function walk(dir) {
 }
 
 const pdfs = downloadRoots.flatMap(walk).sort((a, b) => a.path.localeCompare(b.path, "de"));
-fs.mkdirSync(path.dirname(out), { recursive: true });
-fs.writeFileSync(out, `${JSON.stringify({ generatedAt: new Date().toISOString(), count: pdfs.length, pdfs }, null, 2)}\n`);
+const payload = `${JSON.stringify({ generatedAt: new Date().toISOString(), count: pdfs.length, pdfs }, null, 2)}\n`;
+for (const output of outputs) {
+  fs.mkdirSync(path.dirname(output), { recursive: true });
+  fs.writeFileSync(output, payload);
+}
 console.log(`Public PDF downloads inventoried: ${pdfs.length}.`);

@@ -29,7 +29,7 @@ Transformational Social Return on Investment als Steuerungsinstrument für syste
 
 6. Netto-Wirkung und Negativwirkungen
 
-7. Transformationsmultiplikator
+7. Separat belegter transformativer Nutzen
 
 8. Daten, Scorecards und Monetarisierung
 
@@ -81,13 +81,15 @@ Diese Trennung verhindert, dass Aktivität mit Wirkung verwechselt wird. Ein Pro
 
 ## Berechnungslogik
 
-Die Arbeitslogik des T-SROI beginnt mit dem Wirkungspfad. Danach werden relevante WÖk-IDs und Scorecards bestimmt. Positive Wirkungen werden erfasst, negative Wirkungen abgezogen, rote Linien geprüft und Datenqualität bewertet. Erst auf dieser Grundlage wird ein monetärer oder teilmonetärer Wirkungswert gebildet. Anschließend wird der Transformationsmultiplikator angewandt.
+Die Arbeitslogik des T-SROI beginnt mit dem Wirkungspfad. Danach werden relevante WÖk-IDs, Counterfactual, Systemgrenze und Scorecard bestimmt. Direkte Nutzen, separat belegte transformative Nutzen, Schäden und inkrementelle Kosten werden in derselben Preisbasis erfasst. Attribution, Counterfactual/Deadweight und Verdrängung reduzieren den beanspruchten Nutzen, bevor er abgezinst wird. Datenqualität und Unsicherheit sind Prüfmerkmale; sie sind keine Wirkungsfelder und keine Multiplikatoren.
 
-Eine vereinfachte Arbeitsformel lautet:
+Die monetäre Rechenformel lautet:
 
-T-SROI = (geprüfte Netto-Wirkung × Transformationsmultiplikator × Resilienzfaktor × Datenqualitätsvertrauen) / Ressourceneinsatz.
+T-SROI = Σₜ[((Bdirekt,t + Btransformativ,t) · aₜ · (1 − dₜ) · (1 − vₜ) − Sₜ) / (1 + r)ᵗ] ÷ Σₜ[(Iₜ + Kₜ) / (1 + rₖ)ᵗ].
 
-Diese Formel ist kein starres Gesetz. Sie beschreibt die Logik. Je nach Anwendungsfeld können die Faktoren anders operationalisiert werden. Entscheidend ist: Ohne geprüfte Netto-Wirkung kein sinnvoller T-SROI. Transformation darf nicht behauptet werden, wenn negative Wirkungen oder rote Linien ungelöst bleiben.
+Bdirekt und Btransformativ sind jährliche Nutzenströme in Euro derselben Preisbasis; S sind konservativ angesetzte jährliche Schäden innerhalb derselben Systemgrenze. a ist Attribution, d Counterfactual/Deadweight, v Verdrängung des beanspruchten Nutzens, I Investition und K inkrementelle Kosten. r und rₖ sind die offengelegten Diskontsätze. Der Nutzen wird vor der Abzinsung kausal reduziert; Schäden werden im Grundmodell nicht pauschal mit demselben Faktor verkleinert. Eine niedrigere Schaden-Zurechnung verlangt eine eigene belegte Gegenfaktik. Die Formel ist nur dann als positive Kennzahl ausweisbar, wenn das Schutz-Gate offen ist: keine rote Linie, kein negatives Kernprofil, ausreichende Datenqualität, dokumentierte Systemgrenze und Zurechnung sowie eine positive konservative Untergrenze des Nettonutzens.
+
+Beispiel: 1.000.000 Euro Investition heute, 600.000 Euro Nettonutzen im ersten und 800.000 Euro im zweiten Jahr, Diskontsatz 5 Prozent. Der Barwert beträgt 600.000 / 1,05 + 800.000 / 1,05² = 1.297.052,15 Euro. Bei offenem Gate ergibt sich T-SROI = 1.297.052,15 / 1.000.000 = 1,30 : 1. Ist das Gate geschlossen, lautet das Ergebnis nicht „0,00“, sondern „blockiert / nicht bewertbar“.
 
 ## Netto-Wirkung und Negativwirkungen
 
@@ -95,11 +97,11 @@ Der T-SROI beginnt nicht mit der Addition positiver Effekte. Er beginnt mit der 
 
 Negativwirkungen werden nicht als Randnotiz behandelt. Sie sind Teil der Berechnung. Schwere negative Wirkungen begrenzen oder verhindern einen positiven T-SROI. Damit schützt der T-SROI vor Wirkungs-Simulation und Impact-Washing.
 
-## Transformationsmultiplikator
+## Separat belegter transformativer Nutzen
 
-Der Transformationsmultiplikator ist das Kernmerkmal des T-SROI. Er beschreibt, ob eine Maßnahme über ihre direkte Wirkung hinaus Systempfade verändert. Ein Projekt mit mäßiger direkter Wirkung kann hohen Transformationswert haben, wenn es einen neuen Standard setzt. Umgekehrt kann ein Projekt mit hoher direkter Wirkung begrenzte Transformation haben, wenn es isoliert bleibt und keine strukturelle Veränderung erzeugt.
+Das Kennzeichen des T-SROI ist nicht ein frei geschätzter Multiplikator. Transformative Wirkung wird als eigener, nachvollziehbarer Nutzenstrom angesetzt, wenn die Maßnahme über die direkte Wirkung hinaus belegbar Regeln, Infrastruktur, Standards oder Handlungsmöglichkeiten verändert. Ein Projekt kann deshalb direkten Nutzen ohne transformativ belegten Zusatznutzen haben; umgekehrt darf ein vermuteter Spillover ohne Wirkpfad, Daten und Zurechnung nicht als Euro-Wert eingesetzt werden.
 
-Der Multiplikator sollte nicht frei geschätzt werden. Er braucht Kriterien: Skalierbarkeit, Diffusion, Kostenlernkurve, Infrastrukturwirkung, Datenwirkung, Standardswirkung, Kapitalumlenkung, Resilienzwirkung, institutionelle Anschlussfähigkeit und Reversibilität.
+Für jeden transformativen Nutzenstrom braucht es einen Wirkpfad, eine Gegenhypothese, Zeitraum, Einheit, Empfängergruppe, Systemgrenze, Zurechnungsanteil und Unsicherheit. Skalierbarkeit, Diffusion, Lernkurven, Infrastruktur-, Daten- und Standardswirkung sind Gründe für eine Prüfung, aber noch kein Geldwert. Nicht monetarisierbare Transformation bleibt als Profil, Risiko oder narrativer Befund getrennt sichtbar.
 
 ## Daten, Scorecards und Monetarisierung
 
@@ -119,13 +121,13 @@ Wichtig ist die Integration in bestehende Entscheidungsprozesse. T-SROI darf kei
 
 Für den Staat ist T-SROI ein Mittel gegen Blindleistung. Öffentliche Mittel sollen nicht nur ausgegeben, sondern wirksam eingesetzt werden. Ein Wirkungshaushalt kann T-SROI nutzen, um Prävention gegenüber Reparatur sichtbar zu machen. Wirkungsfonds können T-SROI verwenden, um Projekte zu priorisieren, ohne politisches Ermessen abzuschaffen.
 
-Der T-SROI ersetzt nicht demokratische Entscheidung. Er zeigt, welche Wirkungspfade, Kosten, Risiken und Transformationshebel vorliegen. Politik entscheidet weiterhin über Ziele, Prioritäten und Legitimation. Der T-SROI verhindert aber, dass Entscheidungen im Nebel von Symbolpolitik oder kurzfristiger Haushaltslogik getroffen werden.
+Der T-SROI ersetzt nicht demokratische Entscheidung. Er zeigt, welche Wirkungspfade, Kosten, Risiken und belegten transformativen Nutzenströme vorliegen. Politik entscheidet weiterhin über Ziele, Prioritäten und Legitimation. Der T-SROI verhindert aber, dass Entscheidungen im Nebel von Symbolpolitik oder kurzfristiger Haushaltslogik getroffen werden.
 
 ## Grenzen, Unsicherheit und Assurance
 
-T-SROI ist anspruchsvoll und anfällig für Überdehnung. Wer alles monetarisieren will, erzeugt Scheingenauigkeit. Wer Transformationsmultiplikatoren frei setzt, erzeugt Impact-Washing. Wer Unsicherheit verschweigt, verliert Vertrauen.
+T-SROI ist anspruchsvoll und anfällig für Überdehnung. Wer alles monetarisieren will, erzeugt Scheingenauigkeit. Wer transformativem Nutzen ohne Wirkpfad und Counterfactual einen Euro-Wert gibt, erzeugt Impact-Washing. Wer Unsicherheit verschweigt, verliert Vertrauen.
 
-Deshalb braucht T-SROI eine Qualitätssystematik: Annahmen offenlegen, Datenqualität bewerten, Gegenwirkungen prüfen, rote Linien beachten, externe Assurance ermöglichen und Revisionszyklen einbauen. T-SROI ist lernend, nicht dogmatisch.
+Deshalb braucht T-SROI eine Qualitätssystematik: Annahmen, Preisbasis und Diskontsätze offenlegen, Datenqualität bewerten, Gegenwirkungen, Attribution, Counterfactual und Verdrängung prüfen, rote Linien beachten, externe Assurance ermöglichen und Revisionszyklen einbauen. T-SROI ist lernend, nicht dogmatisch.
 
 ## Politische Anschlussfähigkeit und Umsetzungsoptionen
 
@@ -150,6 +152,10 @@ Führender Begriffsleitfaden der Wirkungsökonomie: Verbindliche Begrifflichkeit
 Technische Leitlinien WUStG: Methodische Grundlage für WÖk-IDs, Archetypen, Benchmarks, Scorecards, Datenquellen und Assurance. Technische_Leitlinien_WUStG_Vollversion_Extended_v2.pdf
 
 Whitepaper T-SROI: Grundlage für Transformational Social Return on Investment und Impact Controlling. Whitepaper-T-SROI.pdf
+
+OECD: Measure, Manage and Maximise Your Impact. Einordnung von Attribution, Counterfactual und Wirkungsmanagement. https://www.oecd.org/en/publications/measure-manage-and-maximise-your-impact_2238c1f1-en/full-report/component-8.html
+
+Social Value International: Principle 5 – Do not overclaim. Schutzregel gegen Überzuschreibung von Wirkung. https://www.socialvalueint.org/principle-5-do-not-overclaim
 
 Europäische Kommission - CSRD: Nachhaltigkeitsberichterstattung und ESRS-Anschluss. https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en
 

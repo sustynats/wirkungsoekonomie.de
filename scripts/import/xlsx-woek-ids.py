@@ -125,18 +125,18 @@ page = f"""<!DOCTYPE html>
             {meta_row("Status", "führendes-referenzregister")}
             {meta_row("Source-Version", "2026.0")}
             {meta_row("Import-Version", "2026.1-import")}
-            {meta_row("Live-Reference-Version", "2026.2-live-reference")}
+            {meta_row("Onlinefassung-Stand", "2026.2")}
             {meta_row("Web-Version", "2026.2-live-reference")}
-            {meta_row("Reviewstatus", "delta-reviewed")}
+            {meta_row("Prüfstatus", "delta-reviewed")}
             {meta_row("Terminologiebasis", "WOeK_Begriffsleitfaden_fuehrend_v1.0.md")}
             {meta_row("Originaldatei", "WOeK_Master_Items_final_v1.2.xlsx")}
             {meta_row("Source-Hash", source_hash)}
             {meta_row("Registerzeilen", str(len(items)))}
           </dl>
         </section>
-        <section class="callout live-reference-notice">
-          <h2>Live-Reference-Hinweis 2026.2</h2>
-          <p>Diese Registerseite ersetzt den früheren PDF-Fließtextimport durch die strukturierte XLSX-Quelle. Die Originaldatei bleibt zitierfähig; die Webfassung dient als maschinenlesbare Online-Referenz für Suche, Manifest und WÖk-ID-Verknüpfungen.</p>
+        <section class="callout onlinefassung-hinweis">
+          <h2>Hinweis zur Onlinefassung</h2>
+          <p>Diese Registerseite ersetzt den früheren PDF-Fließtextimport durch die strukturierte XLSX-Quelle. Die Ausgangsfassung bleibt zitierfähig; die Webfassung dient als maschinenlesbare Onlinefassung für Suche, Manifest und WÖk-ID-Verknüpfungen.</p>
         </section>
         <section>
           <h2 id="woek-master-items-final-v1-2-register" data-document-id="woek-master-items-final-v1-2" data-section-id="woek-master-items-final-v1-2-register" data-version="2026.2-live-reference" data-content-hash="{hashlib.sha256(str(len(items)).encode("utf-8")).hexdigest()[:16]}">WÖk-ID-Register</h2>

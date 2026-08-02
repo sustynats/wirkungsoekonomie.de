@@ -2,12 +2,12 @@ import fs from "node:fs";
 
 const glossary = JSON.parse(fs.readFileSync("public/data/glossary.terms.json", "utf8"));
 const formulaTerms = [
-  ["nwi", "NWI = Summe gewichteter positiver Wirkungen − Summe gewichteter negativer Wirkungen"],
-  ["t-sroi", "T-SROI = diskontierter bewerteter Transformationsnutzen / Investitionssumme"],
-  ["oeffentlicher-t-sroi", "Öffentlicher T-SROI = diskontierter bewerteter Transformationsnutzen / klar abgegrenzter öffentlicher Mitteleinsatz"],
-  ["wirkungseffizienz", "Wirkungseffizienz = bewertete positive Netto-Wirkung / klar benannter Ressourceneinsatz"],
-  ["wirkungsrendite", "Netto-Wirkungsrendite = bewertete positive Netto-Wirkung / eingesetztes Kapital"],
-  ["wirkungsrendite-oeffentlicher-ausgaben", "Wirkungsrendite öffentlicher Ausgaben = bewertete positive Netto-Wirkung / klar abgegrenzte öffentliche Ausgaben"],
+  ["nwi", "NWI = Summe gewichteter positiver Wirkungen − Summe gewichteter negativer Wirkungen; positive Ausweisung nur bei G = 1"],
+  ["t-sroi", "T-SROI = Σ(t=1…T)[((Bdirekt,t + Btransformativ,t) · aₜ · (1 − dₜ) · (1 − vₜ) − Sₜ) / (1 + r)ᵗ] ÷ Σ(t=0…T)[(Iₜ + Kₜ) / (1 + rₖ)ᵗ]; PV_N^L = Σ(t=1…T)[((Bdirekt,t + Btransformativ,t) · aₜ · (1 − dₜ) · (1 − vₜ) · (1 − uₜ) − Sₜ) / (1 + r)ᵗ]"],
+  ["oeffentlicher-t-sroi", "Öffentlicher T-SROI = diskontierter, kausal zugerechneter Netto-Nutzen / diskontierter klar abgegrenzter öffentlicher Mitteleinsatz"],
+  ["wirkungseffizienz", "Wirkungsintensität_U = dokumentierte Netto-Wirkungsgröße ΔZ_U / klar benannter Ressourceneinsatz R"],
+  ["wirkungsrendite", "Netto-Wirkungsrendite = Barwert des kausal zugerechneten direkten Nettonutzens in EUR / Barwert des eingesetzten Kapitals in EUR"],
+  ["wirkungsrendite-oeffentlicher-ausgaben", "Wirkungsrendite öffentlicher Ausgaben = Barwert des kausal zugerechneten direkten Nettonutzens in EUR / Barwert klar abgegrenzter öffentlicher Ausgaben in EUR"],
   ["gestehungskosten", "Gestehungskosten je Einheit = abgezinste Gesamtkosten / abgezinste erzeugte oder bereitgestellte Einheiten"],
 ];
 const calculationTerms = ["impact-controlling", "key-impact-indicator", "kii", "scorecard", "finalscore"];
@@ -20,6 +20,21 @@ for (const [slug, expression] of formulaTerms) {
   if (!fs.existsSync(page) || !fs.readFileSync(page, "utf8").includes(expression)) {
     errors.push(`${slug}: Formel fehlt auf der Detailseite`);
   }
+}
+
+const ioi = glossary.terms.find((entry) => entry.slug === "impact-of-investment");
+if (!ioi?.formula?.expression?.includes("Bdirekt,t · aₜ · (1 − dₜ) · (1 − vₜ) − Sₜ")
+  || !ioi.formula.expression.includes("Σ(t=1…T)")
+  || !ioi.formula.expression.includes("Σ(t=0…T)")) {
+  errors.push("impact-of-investment: kausale Faktoren oder explizite Zeitgrenzen fehlen in der IOI-Formel");
+}
+
+const tsroi = glossary.terms.find((entry) => entry.slug === "t-sroi");
+if (!tsroi?.formula?.expression?.includes("PV_N^L")
+  || !tsroi.formula.expression.includes("(1 − uₜ) − Sₜ")
+  || !tsroi.formula.variables?.some((entry) => String(entry).includes("T ist eine ganze Zahl"))
+  || !tsroi.formula.variables?.some((entry) => String(entry).includes("nicht mit dem Nutzenfaktor oder mit u reduziert"))) {
+  errors.push("t-sroi: konservative Untergrenze, ganzzahliger Zeitraum oder unveränderte Schäden sind nicht vollständig dokumentiert");
 }
 
 for (const slug of calculationTerms) {

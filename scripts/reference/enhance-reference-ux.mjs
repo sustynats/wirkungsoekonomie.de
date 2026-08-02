@@ -1,7 +1,9 @@
 import fs from "node:fs";
 import path from "node:path";
+import { applyCurrentMethodologyCorrections } from "../review/live-reference-core.mjs";
 
 const ROOT = process.cwd();
+const SITE_URL = "https://wirkungsoekonomie.de";
 const LIVE_VERSION = "2026.2-live-reference";
 const IMPORT_VERSION = "2026.1-import";
 const SOURCE_VERSION = "2026.0";
@@ -79,6 +81,15 @@ const partSlugCorrections = {
   17: "teil-17-kritik-missverstaendnisse-und-ideologische-projektionen",
 };
 
+// Die DOCX-Importquelle enthielt für zwei Teile keine belastbare Teilüberschrift.
+// Die Kapitelnummern sind dagegen stabil. Die Navigation wird deshalb aus der
+// kanonischen Buchstruktur abgeleitet, statt aus einer eventuell schon zuvor
+// erzeugten, leeren Teilseite zurückzulesen.
+const canonicalPartChapterRanges = new Map([
+  [15, [91, 96]],
+  [17, [101, 106]],
+]);
+
 const chapterTitleCorrections = {
   17: "Wirkungsökonomie im Vergleich",
   96: "Wirkungsökonomie als weltfähige Ordnung",
@@ -105,7 +116,7 @@ const chapterTermOverrides = {
 };
 
 const relatedDocsByCluster = {
-  methodik: ["WOeK_Master_Items_final_v1.2", "Whitepaper-T-SROI", "Technische Leitlinien WUStG"],
+  methodik: ["WOeK_Master_Items_final_v1.2", "T-SROI-Rechenstandard v1.1", "Technische Leitlinien WUStG"],
   "recht-staat": ["WStG_Oktober2025", "Wirkungsrat_Konzept", "Technische Leitlinien WUStG"],
   produkte: ["Beispiel_Apfel_Wirkungssteuer_Bonusregel", "WP_Produkte", "Wirkungsökonomie in der Lieferkette"],
   "arbeit-einkommen-rente": ["WP_Einkommen", "WP_Rente", "Wenn Maschinen arbeiten"],
@@ -263,6 +274,17 @@ function baseFor(file) {
   return "../".repeat(relativeParent.split(path.sep).length);
 }
 
+// Reference pages are generated into directory routes.  Deriving the canonical
+// from the output filename keeps the public route, its trailing slash and the
+// generated file in one place instead of relying on hand-written head markup.
+function canonicalFor(file) {
+  const route = `/${String(file).split(path.sep).join("/")}`;
+  if (!route.endsWith("/index.html")) {
+    throw new Error(`Referenzseite braucht eine index.html-Route: ${file}`);
+  }
+  return `${SITE_URL}${route.slice(0, -"index.html".length)}`;
+}
+
 function navMatch(item) {
   return (item.match || []).join("|");
 }
@@ -313,7 +335,7 @@ function scriptsFor(base) {
     <script src="${base}assets/js/reference-reader.js?v=${referenceReaderAssetVersion}"></script>`;
 }
 
-function page(file, { title, description, section = "Hauptwerk", type = "Live-Referenz", body, bodyClass = "" }) {
+function page(file, { title, description, section = "Hauptwerk", type = "Onlinefassung", body, bodyClass = "" }) {
   const base = baseFor(file);
   return `<!DOCTYPE html>
 <html lang="de">
@@ -326,6 +348,7 @@ function page(file, { title, description, section = "Hauptwerk", type = "Live-Re
     <meta name="search_description" content="${esc(description)}">
     <meta name="search_section" content="${esc(section)}">
     <meta name="search_type" content="${esc(type)}">
+    <link rel="canonical" href="${canonicalFor(file)}">
     <link rel="stylesheet" href="${base}assets/css/style.css?v=20260612-mobile-table-fix">
   </head>
   <body class="${bodyClass}">
@@ -357,6 +380,12 @@ function extractSections(html) {
 }
 
 function collectParts() {
+  const chapterSlugByNumber = new Map(
+    fs.readdirSync("referenz", { withFileTypes: true })
+      .filter((entry) => entry.isDirectory() && entry.name.startsWith("kapitel-"))
+      .map((entry) => [Number(entry.name.match(/^kapitel-(\d+)/)?.[1] || 0), entry.name])
+      .filter(([number]) => number > 0),
+  );
   const dirs = fs.readdirSync("referenz", { withFileTypes: true })
     .filter((entry) => entry.isDirectory() && entry.name.startsWith("teil-"))
     .map((entry) => entry.name)
@@ -380,7 +409,11 @@ function collectParts() {
     const rawTitle = cleanTitle(html.match(/<h1[^>]*>(.*?)<\/h1>/is)?.[1] || `Teil ${roman(number)}`);
     const title = partTitleCorrections[number] || rawTitle;
     const slug = partSlugCorrections[number] || dir;
-    const chapterSlugs = [...html.matchAll(/href=["']\.\.\/(kapitel-[^/"']+)\/["']/g)].map((m) => m[1]);
+    const importedChapterSlugs = [...html.matchAll(/href=["']\.\.\/(kapitel-[^/"']+)\/["']/g)].map((m) => m[1]);
+    const range = canonicalPartChapterRanges.get(number);
+    const chapterSlugs = range
+      ? Array.from({ length: range[1] - range[0] + 1 }, (_, offset) => chapterSlugByNumber.get(range[0] + offset)).filter(Boolean)
+      : importedChapterSlugs;
     parts.push({ number, roman: roman(number), title, slug, legacySlug: dir, route: `/referenz/${slug}/`, chapterSlugs });
   }
   return parts.sort((a, b) => a.number - b.number);
@@ -401,7 +434,7 @@ function collectChapters(parts) {
       const title = cleanChapterTitle(number, h1);
       const cluster = clusterFor(number);
       const part = partByChapterSlug.get(entry.name) || null;
-      const reviewStatus = stripTags(html.match(/<dt>Reviewstatus<\/dt><dd>(.*?)<\/dd>/i)?.[1] || "partially-delta-reviewed");
+      const reviewStatus = stripTags(html.match(/<dt>(?:Prüfstatus|Reviewstatus)<\/dt><dd>(.*?)<\/dd>/i)?.[1] || "partially-delta-reviewed");
       const terms = (chapterTermOverrides[number] || (termByCluster[cluster.key] || ["Wirkung", "Mensch, Planet und Demokratie"]))
         .map((termIdOrLabel) => glossaryById.get(termIdOrLabel)?.canonicalLabel || termIdOrLabel);
       return {
@@ -422,13 +455,11 @@ function collectChapters(parts) {
     .sort((a, b) => a.number - b.number);
 }
 
-function statusBadges(reviewStatus = "partially-delta-reviewed") {
-  return `<div class="version-ribbon" aria-label="Versionen">
-      <span>Originalfassung ${SOURCE_VERSION}</span>
-      <span>Import-Version ${IMPORT_VERSION}</span>
-      <span>Online-Referenz ${LIVE_VERSION}</span>
-      <strong>${esc(reviewStatusLabel(reviewStatus))}</strong>
-    </div>`;
+function statusBadges() {
+  // Arbeits- und Prüfschritte gehören in die interne Dokumentation, nicht in
+  // die Lesefassung. Erkenntnisgrenzen stehen dort, wo sie fachlich relevant
+  // sind, als Modell- oder Annahmenhinweis.
+  return "";
 }
 
 function reviewStatusLabel(status = "") {
@@ -442,40 +473,48 @@ function reviewStatusLabel(status = "") {
   return status || "erste Online-Prüfung";
 }
 
+function removeNestedElementByClass(html, className) {
+  const escaped = String(className).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const startPattern = new RegExp(`<([a-z][\\w-]*)\\b[^>]*\\bclass=(["'])[^"']*\\b${escaped}\\b[^"']*\\2[^>]*>`, "ig");
+  let match;
+  while ((match = startPattern.exec(html))) {
+    const tag = match[1];
+    const tokenPattern = new RegExp(`<\\/?${tag}\\b[^>]*>`, "ig");
+    tokenPattern.lastIndex = match.index + match[0].length;
+    let depth = 1;
+    let token;
+    let end = -1;
+    while ((token = tokenPattern.exec(html))) {
+      if (token[0].startsWith("</")) depth -= 1;
+      else if (!/\/\s*>$/.test(token[0])) depth += 1;
+      if (depth === 0) {
+        end = tokenPattern.lastIndex;
+        break;
+      }
+    }
+    if (end < 0) break;
+    html = `${html.slice(0, match.index)}${html.slice(end)}`;
+    startPattern.lastIndex = 0;
+  }
+  return html;
+}
+
 function versionStatusBox(html) {
-  return html.replace(/<section class="meta-box">\s*<h2>Version und Reviewstatus<\/h2>\s*<dl>([\s\S]*?)<\/dl>([\s\S]*?)<\/section>/g, (match, dl, trailingContent) => {
-    const value = (label, fallback = "") => stripTags(dl.match(new RegExp(`<dt>${label}<\\/dt><dd>(.*?)<\\/dd>`, "i"))?.[1] || fallback).trim();
-    const reviewStatus = value("Reviewstatus", "partially-delta-reviewed");
-    const sourceVersion = value("Source-Version", SOURCE_VERSION);
-    const importVersion = value("Import-Version", IMPORT_VERSION);
-    const liveVersion = value("Live-Reference-Version", value("Web-Version", LIVE_VERSION));
-    const terminologyBase = value("Terminologiebasis", "WOeK_Begriffsleitfaden_fuehrend_v1.0.md");
-    const terminologyDate = value("Terminologiebasis-Stand", "2026-05-21");
-    const documentId = value("Dokument-ID", "woek-main-2026");
-    const sourceHash = value("Source-Hash", "");
-    const statusText = reviewStatusLabel(reviewStatus);
-    const note = trailingContent.trim();
-    return `<section class="meta-box version-summary">
-      <h2>Stand dieser Onlinefassung</h2>
-      <p>Diese Seite ist Teil der lebenden Online-Referenz. Der Text basiert auf der zitierfähigen Originalfassung und wurde für die Webfassung strukturiert, verlinkt und gegen den aktuellen Begriffsstand eingeordnet.</p>
-      <div class="version-summary-grid" aria-label="Versionsinformationen">
-        <div><span>Original</span><strong>${esc(sourceVersion)}</strong><small>bleibt zitierfähig</small></div>
-        <div><span>Onlinefassung</span><strong>${esc(liveVersion)}</strong><small>lesbar, verlinkt, versioniert</small></div>
-        <div><span>Prüfstand</span><strong>${esc(statusText)}</strong><small>weitere Delta-Reviews laufen</small></div>
-      </div>
-      ${note ? `<div class="version-summary-note">${note}</div>` : ""}
-      <details class="technical-meta">
-        <summary>Technische Versionsdaten anzeigen</summary>
-        <dl>
-          <dt>Dokument-ID</dt><dd>${esc(documentId)}</dd>
-          <dt>Import-Version</dt><dd>${esc(importVersion)}</dd>
-          <dt>Terminologiebasis</dt><dd>${esc(terminologyBase)}</dd>
-          <dt>Terminologiebasis-Stand</dt><dd>${esc(terminologyDate)}</dd>
-          ${sourceHash ? `<dt>Source-Hash</dt><dd>${esc(sourceHash)}</dd>` : ""}
-        </dl>
-      </details>
+  const citationSummary = `<section class="meta-box citation-summary">
+      <h2>Lesen und zitieren</h2>
+      <p>Diese Onlinefassung macht das Grundlagenwerk kapitelweise lesbar. Für eine genaue Fundstelle genügen Titel, Kapitel, Abschnitt und die stabile Seitenadresse.</p>
+      <p>Begriffe führen zur jeweils erklärten Glossarseite; Quellen sind im Quellenregister und an den jeweiligen Fundstellen verlinkt.</p>
     </section>`;
-  });
+  let cleaned = removeNestedElementByClass(html, "version-summary");
+  cleaned = removeNestedElementByClass(cleaned, "fulltext-status-summary");
+  cleaned = removeNestedElementByClass(cleaned, "live-reference-notice");
+  cleaned = removeNestedElementByClass(cleaned, "technical-meta");
+  return cleaned
+    .replace(/<section\b[^>]*class="[^"]*\b(?:version-summary|fulltext-status-summary|live-reference-notice)[^"]*"[^>]*>[\s\S]*?<\/section>/gi, citationSummary)
+    .replace(/<section class="meta-box">\s*<h2>(?:Version und Reviewstatus|Stand dieser Onlinefassung|Versionsinformationen)<\/h2>[\s\S]*?<\/section>/gi, citationSummary)
+    .replace(/<details\b[^>]*class="[^"]*\btechnical-meta\b[^"]*"[^>]*>[\s\S]*?<\/details>/gi, "")
+    .replace(/\sdata-(?:document-id|section-id|paragraph-id|version|content-hash)=(?:"[^"]*"|'[^']*')/gi, "")
+    .replace(/(<section class="meta-box citation-summary">[\s\S]*?<\/section>)\s*<\/section>/gi, "$1");
 }
 
 function pillList(items, className = "reference-pill-list") {
@@ -507,8 +546,6 @@ function chapterCard(chapter, relativePrefix = "") {
       </a>
       <div class="chapter-card-meta">
         <span>${esc(chapter.cluster.label)}</span>
-        <span>${chapter.priority ? "UX-priorisiert" : "strukturiert"}</span>
-        <span>${esc(reviewStatusLabel(chapter.reviewStatus))}</span>
       </div>
       ${termPillList(chapter.terms.slice(0, 4), relativePrefix ? "../../" : "../")}
     </article>`;
@@ -530,22 +567,19 @@ function chapterFilters() {
 
 function portalHtml(chapters, parts) {
   const totalMinutes = chapters.reduce((sum, chapter) => sum + chapter.minutes, 0);
-  const latestChanges = changelog.changes.slice(0, 5);
   return `<main class="reference-portal" data-pagefind-body>
     <section class="reference-hero" data-no-glossary>
       <div class="reference-hero-copy">
         <p class="hero-kicker">Wirkungsökonomie Online</p>
         <h1>Die neue Ordnung des Wohlstands</h1>
-        <p class="hero-subtitle">Lebende Online-Referenz der Wirkungsökonomie.</p>
-        <p>Diese Onlinefassung enthält den vollständigen Inhalt des Grundlagenwerks und wird als lebende Referenz versioniert fortgeführt: mit Originalfassung, Importstand, Delta-Review, Glossar, Quellen, Arbeitspapieren und Exportpfaden.</p>
-        ${statusBadges("partially-delta-reviewed")}
+        <p class="hero-subtitle">Das Grundlagenwerk der Wirkungsökonomie, kapitelweise lesbar.</p>
+        <p>Die Onlinefassung verbindet den vollständigen Text mit direkter Kapitel-Navigation, dem Glossar, Quellen und weiterführenden Arbeitspapieren. Sie erklärt das Modell als Modell: Wirkung ist eine tatsächliche Zustandsveränderung; Zielgröße ist positive Netto-Wirkung für Mensch, Planet und Demokratie.</p>
         <div class="hero-actions reference-actions">
           <a class="btn btn-primary" href="lesen/">Werk lesen</a>
           <a class="btn btn-secondary" href="kapitel/">Kapitel erkunden</a>
           <a class="btn btn-secondary" href="../begriffe/">Begriffe nachschlagen</a>
           <a class="btn btn-secondary" href="../dokumente/">Arbeitspapiere öffnen</a>
           <a class="btn btn-secondary" href="quellen/">Quellen prüfen</a>
-          <a class="btn btn-secondary" href="export/">Stand exportieren</a>
         </div>
       </div>
       <aside class="reference-hero-panel" aria-label="Referenzstatus">
@@ -566,7 +600,7 @@ function portalHtml(chapters, parts) {
         ${[
           ["In 10 Minuten verstehen", "Ein kurzer geführter Einstieg in These, Modell und Navigationslogik.", "lesen/#kurzpfad"],
           ["Vollständiges Werk lesen", "Die lange Volltextansicht bleibt als vollständige Source-Lesefassung erhalten.", "volltext/"],
-          ["Nach Kapiteln navigieren", "Alle Kapitel 1 bis 108 mit Filtern, Status und zentralen Begriffen.", "kapitel/"],
+          ["Nach Kapiteln navigieren", "Alle Kapitel 1 bis 108 mit Filtern, Lesedauer und zentralen Begriffen.", "kapitel/"],
           ["Begriffe & Glossar", "Die führende Begriffsschicht mit Hovers, Synonymen und Crosslinks.", "../begriffe/"],
           ["Instrumente & Gesetze", "WStG, WUStG, WÖk-ID, Scorecards, Wirkungsrat, T-SROI und DPP.", "../dokumente/"],
           ["Beispiele & Arbeitspapiere", "Apfel, Lieferkette, Produkte, Rente, Einkommen und Systemmodell.", "../dokumente/"],
@@ -589,7 +623,7 @@ function portalHtml(chapters, parts) {
       <div class="section-header">
         <p class="hero-kicker">Navigator</p>
         <h2>Kapitel 1 bis 108</h2>
-        <p>Direkte Kapitelrouten ersetzen Scroll-Zwang. Priorisierte Kapitel tragen Live-Reference-Addenda, Kontextpanel und Abschnitts-IDs.</p>
+        <p>Direkte Kapitelrouten ersetzen Scroll-Zwang. Abschnittsanker, Quellenchips und Begriffslinks machen Fundstellen nachvollziehbar.</p>
       </div>
       ${chapterFilters()}
       <div class="chapter-card-grid" data-chapter-grid>
@@ -599,11 +633,9 @@ function portalHtml(chapters, parts) {
 
     <section class="reference-section reference-split">
       <div>
-        <p class="hero-kicker">Live-Reference</p>
-        <h2>Aktuelle Aktualisierungen</h2>
-        <div class="update-list">
-          ${latestChanges.map((change) => `<article><span>${esc(change.changeId)}</span><h3>${esc(change.type)}</h3><p>${esc(change.reason)}</p><a href="versionen/">Versionen ansehen</a></article>`).join("")}
-        </div>
+        <p class="hero-kicker">Leselogik</p>
+        <h2>Was das Werk behauptet – und was nicht</h2>
+        <p>Es entwickelt ein Steuerungsmodell, keine Personenbewertung: weder Social Credit noch moralische Rangliste, Sprachpolizei oder Planwirtschaft. Reichweite, Absicht und Reporting sind nicht selbst Wirkung. Für Entscheidungen gelten Wirkungsgrenzen, Nichtkompensation, Reverse Merit Order und Rückkopplung.</p>
       </div>
       <aside class="reference-emphasis">
         <p class="hero-kicker">Wichtige neue Begriffe</p>
@@ -621,8 +653,7 @@ function chapterIndexHtml(chapters) {
         <nav class="breadcrumb"><a href="../">Referenz</a> / Kapitel</nav>
         <p class="hero-kicker">Kapitel-Navigator</p>
         <h1>Kapitel 1 bis 108</h1>
-        <p class="hero-subtitle">Alle Kapitel als direkt verlinkbare Referenzkarten mit Themenfilter, Status und Lesedauer.</p>
-        ${statusBadges("partially-delta-reviewed")}
+        <p class="hero-subtitle">Alle Kapitel als direkt verlinkbare Referenzkarten mit Themenfilter und Lesedauer.</p>
       </div>
     </section>
     ${terminologyNotice()}
@@ -786,7 +817,7 @@ function quellenarchivHref(source, base = "../../") {
 function sourceArchiveLinks(source, base = "../../") {
   const matches = source.archiveMatches || [];
   if (!matches.length) {
-    return `<p class="notice source-archive-status">Noch kein eindeutiger Quellenarchiv-Eintrag erkannt. Diese Referenzkarte bleibt bis zur Archiv-Ergänzung der zitierfähige Zwischenanker.</p>`;
+    return `<p class="notice source-archive-status">Diese Quellenangabe ist als interne oder historische Referenz im Quellenregister des Hauptwerks dokumentiert. Sie ersetzt keinen eigenständigen externen Beleg.</p>`;
   }
   return `<div class="source-archive-links">
             <p class="section-eyebrow">Quellenarchiv</p>
@@ -812,9 +843,9 @@ function sourcesHtmlFromEntries(sources) {
         <nav class="breadcrumb"><a href="../">Referenz</a> / Quellen</nav>
         <p class="hero-kicker">Quellenregister</p>
         <h1>Quellen und Backlinks</h1>
-        <p class="hero-subtitle">Interne und externe Quellen werden als Karten sichtbar gemacht. Roh-URLs bleiben im Original erhalten; im Reader erscheinen Quellen-IDs als Chips.</p>
+        <p class="hero-subtitle">Interne und externe Quellen sind als Detailkarten mit Fundstellen und Quellenarchiv-Verweisen erschlossen.</p>
         <p class="notice">Quellenkategorien ordnen Lesbarkeit, nicht Beweiskraft: Kernquelle, Anschlussquelle, WÖk-interne Quelle, Daten-/Standardquelle und historische Quelle bleiben unterscheidbar. Interne Quellen dokumentieren Projektentwicklung und ersetzen keine externen Belege.</p>
-        <p class="notice">Interne Quellen dokumentieren die Entwicklung der Wirkungsökonomie. Externe Quellen belegen Anschlussfähigkeit, Standards, Daten oder regulatorische Rahmen. Einige Quellen und Rechtsfragen bleiben für spätere Prüfungen markiert. Die finale Quellenfassung liegt als Dokumentation unter <code>docs/release/WOeK_v1.1_Quellenregister_final.md</code>.</p>
+        <p class="notice">Interne Quellen dokumentieren die Entwicklung der Wirkungsökonomie. Externe Quellen belegen Anschlussfähigkeit, Standards, Daten oder regulatorische Rahmen. Die Art des Belegs ist auf jeder Detailseite ausgewiesen.</p>
       </div>
     </section>
     <section class="reference-section">
@@ -839,7 +870,7 @@ function sourceDetailHtml(source) {
         <nav class="breadcrumb"><a href="../../">Referenz</a> / <a href="../">Quellen</a> / ${esc(source.id)}</nav>
         <p class="hero-kicker">${esc(source.category)} · ${esc(source.type)}</p>
         <h1>${esc(source.id)}</h1>
-        <p class="hero-subtitle">Quellenkarte der Online-Referenz mit Backlink in das Hauptwerk und Verknüpfung zum öffentlichen Quellenarchiv, sofern ein eindeutiger Archivtreffer vorliegt.</p>
+        <p class="hero-subtitle">Quellenkarte der Onlinefassung mit Backlink in das Hauptwerk und Verknüpfung zum öffentlichen Quellenarchiv, sofern ein eindeutiger Archivtreffer vorliegt.</p>
       </div>
     </section>
     <section class="reference-section">
@@ -862,7 +893,7 @@ function glossaryHtml() {
         <nav class="breadcrumb"><a href="../">Referenz</a> / Glossar</nav>
         <p class="hero-kicker">Begriffsschicht</p>
         <h1>Glossar und Hoverdefinitionen</h1>
-        <p class="hero-subtitle">Das Glossar ist die führende Begriffsschicht der Online-Referenz. Die bestehenden Begriffseiten, Hovers, Synonyme und Crosslinks bleiben zentral unter /begriffe/ gepflegt und werden hier als Referenzmodus eingebunden.</p>
+        <p class="hero-subtitle">Das Glossar ist die führende Begriffsschicht der Onlinefassung. Die bestehenden Begriffseiten, Hovers, Synonyme und Crosslinks bleiben zentral unter /begriffe/ gepflegt und werden hier als Referenzmodus eingebunden.</p>
         <p class="notice">Die Begriffe folgen dem Führenden Begriffsleitfaden der Wirkungsökonomie, Version 1.0, Stand 21. Mai 2026. Ältere Projektdateien können frühere Begriffsverwendungen enthalten.</p>
         <div class="hero-actions reference-actions">
           <a class="btn btn-primary" href="../../begriffe/">Alphabetisches Glossar öffnen</a>
@@ -889,8 +920,8 @@ function versionsHtml() {
       <div>
         <nav class="breadcrumb"><a href="../">Referenz</a> / Versionen</nav>
         <p class="hero-kicker">Versionierung</p>
-        <h1>Originalfassung, Import und Live-Referenz</h1>
-        <p class="hero-subtitle">Die Originalfassung bleibt zitierfähig. Die Online-Referenz macht Aktualisierungen, Logikschärfungen und Korrekturen sichtbar.</p>
+        <h1>Originalfassung, Import und Onlinefassung</h1>
+        <p class="hero-subtitle">Die Originalfassung bleibt zitierfähig. Die fortgeschriebene Onlinefassung macht Aktualisierungen, Logikschärfungen und Korrekturen sichtbar.</p>
         ${statusBadges("partially-delta-reviewed")}
       </div>
     </section>
@@ -898,12 +929,12 @@ function versionsHtml() {
       <div class="timeline-grid">
         <article><span>${SOURCE_VERSION}</span><h2>Source-Original</h2><p>Bestätigte DOCX-/PDF-Fassung des Hauptwerks. Unverändert zitierfähig.</p></article>
         <article><span>${IMPORT_VERSION}</span><h2>Technischer Import</h2><p>Volltext, Kapitelrouten, Dokumentenbibliothek, Suchindex, Bilder und Manifest.</p></article>
-        <article><span>${LIVE_VERSION}</span><h2>Lebende Online-Referenz</h2><p>Delta-Review, Glossar- und Logikschärfung, Changelog und sichtbare Addenda.</p></article>
+        <article><span>2026.2</span><h2>Fortgeschriebene Onlinefassung</h2><p>Fachliche Aktualisierungen, Glossar- und Logikschärfung sowie nachvollziehbare Versionsgeschichte.</p></article>
         <article><span>1.1 RC</span><h2>Begriffliche Präzisierung und Referenzordnung</h2><p>Release Candidate auf Grundlage des Führenden Begriffsleitfadens v1.0. Wirkung wird neutral verstanden, Zielgröße ist positive Netto-Wirkung, NWI und T-SROI werden getrennt, ältere Dokumente werden historisch eingeordnet.</p><a class="text-link" href="../version-1-1/">Release-Seite öffnen</a></article>
       </div>
     </section>
     <section class="reference-section">
-      <div class="section-header"><h2>Changelog</h2><p>Die wichtigsten Änderungen der Live-Reference-Schicht.</p></div>
+      <div class="section-header"><h2>Versionsgeschichte</h2><p>Die wichtigsten Änderungen der fortgeschriebenen Onlinefassung.</p></div>
       <div class="update-list">
         ${(changelog.changes || []).map((change) => `<article id="${esc(change.changeId)}"><span>${esc(change.changeId)}</span><h3>${esc(change.type)}</h3><p>${esc(change.reason)}</p><small>${esc(change.sourceForChange || "")}</small></article>`).join("")}
       </div>
@@ -953,7 +984,7 @@ function releaseV11Html() {
     <section class="reference-section reference-split">
       <div>
         <h2>Führende Dokumente</h2>
-        ${pillList(["Führender Begriffsleitfaden v1.0", "Die neue Ordnung des Wohlstands / Online-Referenz", "WÖk Master Items v1.2", "WStG 2.0", "WUStG v2.1", "T-SROI v2.0", "Schutzrahmen Social Credit"])}
+        ${pillList(["Führender Begriffsleitfaden v1.0", "Die neue Ordnung des Wohlstands / Onlinefassung", "WÖk Master Items v1.2", "WStG 2.0", "WUStG v2.1", "T-SROI v2.0", "Schutzrahmen Social Credit"])}
       </div>
       <aside class="reference-emphasis">
         <h2>Was Version 1.1 nicht ist</h2>
@@ -1161,7 +1192,7 @@ function chapterToolbar(chapter) {
 function terminologyNotice() {
   return `<!-- reference-ux:start --><aside class="reference-term-notice" data-no-glossary>
       <strong>Terminologiebasis</strong>
-      <p>Diese Online-Referenz folgt dem Führenden Begriffsleitfaden der Wirkungsökonomie, Version 1.0, Stand 21. Mai 2026. Wo Zielgrößen gemeint sind, spricht die aktuelle Fassung von positiver Netto-Wirkung für Mensch, Planet und Demokratie.</p>
+      <p>Diese Onlinefassung folgt dem Führenden Begriffsleitfaden der Wirkungsökonomie, Version 1.0, Stand 21. Mai 2026. Wo Zielgrößen gemeint sind, spricht die aktuelle Fassung von positiver Netto-Wirkung für Mensch, Planet und Demokratie. „Wirkstoff“ ist dabei ausschließlich eine didaktische Analogie für einen Auslöser mit Wirkungspotenzial: Er ist nicht selbst Wirkung und kein Nachweis eingetretener Wirkung.</p>
     </aside><!-- reference-ux:end -->`;
 }
 
@@ -1194,7 +1225,7 @@ function contextAdditions(chapter) {
   const docs = relatedDocsByCluster[chapter.cluster.key] || ["Hauptwerk", "Glossar", "Dokumentenbibliothek"];
   return `<!-- reference-ux:start --><section class="context-module">
       <h3>Lesemodi</h3>
-      <p>Lesen für ruhigen Text, Referenz für Glossar und Kontext, Quellen für Belege, Updates für Live-Reference-Addenda.</p>
+      <p>Lesen für ruhigen Text, Referenz für Glossar und Kontext, Quellen für Belege.</p>
     </section>
     <section class="context-module">
       <h3>Zentrale Begriffe</h3>
@@ -1208,22 +1239,18 @@ function contextAdditions(chapter) {
       <h3>Arbeitspapiere</h3>
       ${pillList(docs)}
     </section>
-    <section class="context-module">
-      <h3>Version</h3>
-      <a href="../versionen/">Changelog und Reviewstatus</a>
-    </section><!-- reference-ux:end -->`;
+    <!-- reference-ux:end -->`;
 }
 
 function enhanceChapter(chapter, chapters) {
   let html = stripUxMarkers(read(chapter.file));
+  html = applyCurrentMethodologyCorrections(html, chapter.number, { currentReference: true });
   html = applyChapterMetadataCorrections(html, chapter);
   html = sourceChips(html, chapter.file);
   html = html.replace(
     /<main class="([^"]*reference-work[^"]*)"([^>]*)>/,
     (match, classes, rest) => `<main class="${uniqueClasses(classes, "chapter-reader reference-reader")}" data-reference-reader${cleanMainRest(rest, "data-reference-reader")}>${modeBar(chapter)}`
   );
-  html = html.replace(/<nav class="breadcrumb">([\s\S]*?)<\/nav>/, (match) => `${match}
-            <!-- reference-ux:start -->${statusBadges(chapter.reviewStatus)}<!-- reference-ux:end -->`);
   html = html.replace(/(<h1\b[\s\S]*?<\/h1>)/, `$1
             ${chapterToolbar(chapter)}`);
   html = html.replace(/class="meta-box related-panel"/g, 'class="reference-context-rail related-panel"');
@@ -1279,6 +1306,8 @@ function enhanceFullText() {
   const file = "referenz/volltext/index.html";
   if (!fs.existsSync(file)) return;
   let html = stripUxMarkers(read(file));
+  html = applyCurrentMethodologyCorrections(html, null, { currentReference: true });
+  for (const chapterNumber of [32, 33, 34, 35]) html = applyCurrentMethodologyCorrections(html, chapterNumber, { currentReference: true });
   html = sourceChips(html, file);
   const chapterAnchors = [...html.matchAll(/<h[23]\b[^>]*\bid="(woek-main-2026-k(\d{3}))"[^>]*>([\s\S]*?)<\/h[23]>/g)]
     .map((match) => ({
@@ -1340,10 +1369,11 @@ function enhanceFullText() {
       $1`);
   }
   html = html.replace(/<details class="technical-meta">[\s\S]*?<\/details>/g, "");
-  html = html.replace(
-    /<div class="version-summary-note"><p>Absätze: ([^<]+)<\/p><\/div>/,
-    `<p class="version-summary-note"><a class="text-link" href="../versionen/">Versionen ansehen</a></p>`
-  );
+  html = html.replace(/<section class="meta-box version-summary fulltext-status-summary">[\s\S]*?<\/section>/g, `<section class="meta-box citation-summary">
+      <h2>Lesen und zitieren</h2>
+      <p>Die Volltextansicht dient dem zusammenhängenden Lesen. Für präzise Fundstellen stehen Kapitelrouten, Abschnittsanker und das Quellenregister bereit.</p>
+    </section>`);
+  html = html.replace(/<p class="version-summary-note">[\s\S]*?<\/p>/g, "");
   html = ensureScripts(versionStatusBox(html), file);
   write(file, html);
 }
@@ -1476,8 +1506,8 @@ function main() {
 
   write("referenz/index.html", page("referenz/index.html", {
     title: "Die neue Ordnung des Wohlstands",
-    description: "Lebende Online-Referenz der Wirkungsökonomie mit Portal, Kapitel-Navigator, Glossar, Quellen und Export.",
-    type: "Live-Referenz",
+    description: "Fortgeschriebene Onlinefassung der Wirkungsökonomie mit Portal, Kapitel-Navigator, Glossar, Quellen und Export.",
+    type: "Onlinefassung",
     body: portalHtml(chapters, parts),
     bodyClass: "reference-ux-page",
   }));
@@ -1498,14 +1528,14 @@ function main() {
 
   write("referenz/lesen/index.html", page("referenz/lesen/index.html", {
     title: "Das Werk lesen",
-    description: "Geführter Buchmodus der Online-Referenz.",
+    description: "Geführter Buchmodus der Onlinefassung.",
     body: guidedReadingHtml(chapters),
     bodyClass: "reference-ux-page",
   }));
 
   write("referenz/quellen/index.html", page("referenz/quellen/index.html", {
     title: "Quellenregister",
-    description: "Quellenkarten und Backlinks der Online-Referenz.",
+    description: "Quellenkarten und Backlinks der Onlinefassung.",
     section: "Quellen",
     type: "Quellenregister",
     body: sourcesHtmlFromEntries(referenceSources),
@@ -1515,7 +1545,7 @@ function main() {
   for (const source of referenceSources) {
     write(`referenz/quellen/${slugify(source.id)}/index.html`, page(`referenz/quellen/${slugify(source.id)}/index.html`, {
       title: `Quelle ${source.id}`,
-      description: `Quellenkarte ${source.id} der Online-Referenz.`,
+      description: `Quellenkarte ${source.id} der Onlinefassung.`,
       section: "Quellen",
       type: "Quellenkarte",
       body: sourceDetailHtml(source),
@@ -1524,7 +1554,7 @@ function main() {
   }
 
   write("referenz/glossar/index.html", page("referenz/glossar/index.html", {
-    title: "Glossar der Online-Referenz",
+    title: "Glossar der Onlinefassung",
     description: "Einbindung der zentralen Begriffsschicht, Hoverdefinitionen und Crosslinks.",
     section: "Glossar",
     type: "Begriffsschicht",
@@ -1532,7 +1562,7 @@ function main() {
     bodyClass: "reference-ux-page",
   }));
 
-  write("referenz/versionen/index.html", internalReferenceRedirectHtml("Versionen der Online-Referenz"));
+  write("referenz/versionen/index.html", internalReferenceRedirectHtml("Versionen der Onlinefassung"));
   write("referenz/version-1-1/index.html", internalReferenceRedirectHtml("Version 1.1 - Begriffliche Präzisierung und Referenzordnung"));
   write("referenz/version-1-1/index 2.html", internalReferenceRedirectHtml("Version 1.1 - Begriffliche Präzisierung und Referenzordnung"));
   write("referenz/export/index.html", internalReferenceRedirectHtml("Export und Zitierfähigkeit"));

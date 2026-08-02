@@ -131,6 +131,9 @@ function visibleText(html) {
   return decodeEntities(
     body
       .replace(/<iframe\b[\s\S]*?<\/iframe>/gi, " ")
+      // Embed snippets are deliberately shown as escaped code. Decoding them
+      // before the audit would mistake valid examples for broken markup.
+      .replace(/<pre\b[\s\S]*?<\/pre>/gi, " ")
       .replace(/<script\b[\s\S]*?<\/script>/gi, " ")
       .replace(/<style\b[\s\S]*?<\/style>/gi, " ")
       .replace(/<!--[\s\S]*?-->/g, " ")

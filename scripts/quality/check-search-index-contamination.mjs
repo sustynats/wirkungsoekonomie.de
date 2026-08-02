@@ -35,6 +35,14 @@ const blockedPublicFragments = [
   "dein browser kann diese audiodatei nicht direkt abspielen",
 ];
 
+const blockedPublicPatterns = [
+  /\b(?:codex|claude)\b/i,
+  /\bci\/cd\b/i,
+  /\b(?:source[- ]hash|source[- ]version|import[- ]version|live[- ]reference|reviewstatus)\b/i,
+  /\b(?:originaldatei(?:en)?|markdown-master|word-rohfassung|vorlesung-template)\b/i,
+  /\b(?:redaktionell(?:er|en|es|em)?|intern(?:er|en|es|em)?)\s+hinweis(?:e|en)?\b/i,
+];
+
 const blockedUrlFragments = [
   "/.claude/",
   "/worktrees/",
@@ -82,6 +90,12 @@ for (const entry of entries) {
   for (const fragment of blockedPublicFragments) {
     if (body.includes(fragment)) {
       failures.push(`${url} contains public-language fragment "${fragment}"`);
+    }
+  }
+
+  for (const pattern of blockedPublicPatterns) {
+    if (pattern.test(`${title}\n${section}\n${body}`)) {
+      failures.push(`${url} contains editorial/technical marker ${pattern}`);
     }
   }
 }

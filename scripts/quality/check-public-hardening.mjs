@@ -8,7 +8,7 @@ const allowedExcel = new Set([
   "assets/downloads/go2-produktionsreihenfolge/woek_go2_produktionsreihenfolge_detailkonzepte_v1_0.xlsx",
 ]);
 
-const scanExtensions = new Set([".html", ".htm", ".xml", ".txt", ".md", ".svg", ".json", ".js"]);
+const scanExtensions = new Set([".css", ".html", ".htm", ".xml", ".txt", ".md", ".svg", ".json", ".js"]);
 const linkExtensions = new Set([".html", ".htm", ".xml", ".txt", ".md", ".svg", ".json", ".js"]);
 const hardPatterns = [
   [/\.md(?:\b|\?|#|$)/i, "public Markdown link"],
@@ -16,6 +16,9 @@ const hardPatterns = [
   [/Möchtest du, dass ich/i, "prompt residue"],
   [/\b(?:ChatGPT|System Prompt|User Prompt|Promptrest|KI-Anweisung)\b/i, "AI/prompt artifact"],
   [/\b(?:TODO|TBD|FIXME|lorem ipsum)\b/i, "placeholder marker"],
+  [/\b(?:Reviewstatus|Review-Status)\b/, "editorial review-status label"],
+  [/\blive-reference-(?:notice|addendum|patch)\b/i, "internal live-reference CSS class"],
+  [/Claude\/Codex\/Hintergrundprozesse/i, "tool-specific workflow wording"],
   [/\b(?:Source-Hash|Source-Version|Import-Version|Live-Reference-Version|partially-delta-reviewed)\b/i, "technical import metadata"],
   [/technischer Volltextimport|Abschnitts- und Absatz-IDs sind vorbereitet/i, "technical import text"],
   [/\[Button:|>\s*Button:/i, "button label leaked into content"],
@@ -62,6 +65,12 @@ for (const file of walk(root)) {
     const content = fs.readFileSync(file, "utf8");
     for (const [pattern, label] of hardPatterns) {
       if (pattern.test(content)) failures.push(`${relative}: ${label}`);
+    }
+    if (ext === ".css") {
+      const comments = content.match(/\/\*[\s\S]*?\*\//g) || [];
+      if (comments.some((comment) => /\b(?:Codex|Claude)\b/i.test(comment))) {
+        failures.push(`${relative}: tool name in CSS comment`);
+      }
     }
   }
   if (linkExtensions.has(ext)) {

@@ -1,10 +1,11 @@
 {
   "metadata": {
     "title": "Zitierfähiges Evidenz- und Quellenregister",
-    "version": "2026-07-18-evidence-v1",
-    "status": "draft",
+    "version": "2026-08-02-evidence-v2",
+    "status": "published",
     "schema": "woek_evidence_source.v1",
-    "last_updated": "2026-07-18"
+    "last_updated": "2026-08-02",
+    "archive_link_contract": "Jede veröffentlichte Quelle verweist mit archive_code und archive_url auf einen Quellensteckbrief. Abweichende Titel oder gleichwertige Locatorformen werden ausdrücklich dokumentiert."
   },
   "source_quality_labels": {
     "A": "offizielle Primärquelle / amtliche Daten / internationales Regelwerk",
@@ -51,7 +52,11 @@
         "allowed": true,
         "use_type": "citation / summary / mapping",
         "citation_required": true
-      }
+      },
+      "archive_code": "WÖK-Q-0758",
+      "archive_url": "/quellenarchiv/wok-q-0758/",
+      "archive_locator_relation": "doi_resolver",
+      "archive_locator_note": "Die Detailseite nutzt den DOI-Resolver derselben Springer-Veröffentlichung."
     },
     {
       "id": "maturana-varela-tree-knowledge",
@@ -67,6 +72,7 @@
       "source_quality": "B",
       "primary_or_secondary": "primary",
       "official_url": "",
+      "catalog_url": "https://search.worldcat.org/search?q=The%20Tree%20of%20Knowledge%3A%20The%20Biological%20Roots%20of%20Human%20Understanding%20Humberto%20R.%20Maturana%3B%20Francisco%20J.%20Varela%201987%209780877736424",
       "doi": "",
       "isbn": "9780877736424",
       "celex": "",
@@ -90,7 +96,9 @@
         "allowed": true,
         "use_type": "citation / summary / mapping",
         "citation_required": true
-      }
+      },
+      "archive_code": "WÖK-E-0001",
+      "archive_url": "/quellenarchiv/wok-e-0001/"
     },
     {
       "id": "foerster-observing-systems",
@@ -106,6 +114,7 @@
       "source_quality": "B",
       "primary_or_secondary": "primary",
       "official_url": "",
+      "catalog_url": "https://search.worldcat.org/search?q=Observing%20Systems%20Heinz%20von%20Foerster%201981",
       "doi": "",
       "isbn": "",
       "celex": "",
@@ -129,7 +138,9 @@
         "allowed": true,
         "use_type": "citation / summary / mapping",
         "citation_required": true
-      }
+      },
+      "archive_code": "WÖK-Q-0761",
+      "archive_url": "/quellenarchiv/wok-q-0761/"
     },
     {
       "id": "foerster-understanding-understanding",
@@ -145,6 +156,7 @@
       "source_quality": "B",
       "primary_or_secondary": "primary",
       "official_url": "",
+      "catalog_url": "https://search.worldcat.org/search?q=Understanding%20Understanding%3A%20Essays%20on%20Cybernetics%20and%20Cognition%20Heinz%20von%20Foerster%202003%209780387953922",
       "doi": "",
       "isbn": "9780387953922",
       "celex": "",
@@ -168,7 +180,9 @@
         "allowed": true,
         "use_type": "citation / summary / mapping",
         "citation_required": true
-      }
+      },
+      "archive_code": "WÖK-Q-0762",
+      "archive_url": "/quellenarchiv/wok-q-0762/"
     },
     {
       "id": "beer-brain-of-firm",
@@ -184,6 +198,7 @@
       "source_quality": "B",
       "primary_or_secondary": "primary",
       "official_url": "",
+      "catalog_url": "https://search.worldcat.org/search?q=Brain%20of%20the%20Firm%20Stafford%20Beer%201972",
       "doi": "",
       "isbn": "",
       "celex": "",
@@ -207,7 +222,9 @@
         "allowed": true,
         "use_type": "citation / summary / mapping",
         "citation_required": true
-      }
+      },
+      "archive_code": "WÖK-Q-0791",
+      "archive_url": "/quellenarchiv/wok-q-0791/"
     },
     {
       "id": "beer-designing-freedom",
@@ -223,6 +240,7 @@
       "source_quality": "B",
       "primary_or_secondary": "primary",
       "official_url": "",
+      "catalog_url": "https://search.worldcat.org/search?q=Designing%20Freedom%20Stafford%20Beer%201974",
       "doi": "",
       "isbn": "",
       "celex": "",
@@ -246,7 +264,9 @@
         "allowed": true,
         "use_type": "citation / summary / mapping",
         "citation_required": true
-      }
+      },
+      "archive_code": "WÖK-E-0002",
+      "archive_url": "/quellenarchiv/wok-e-0002/"
     },
     {
       "id": "bateson-steps-ecology-mind",
@@ -262,6 +282,7 @@
       "source_quality": "B",
       "primary_or_secondary": "primary",
       "official_url": "",
+      "catalog_url": "https://search.worldcat.org/search?q=Steps%20to%20an%20Ecology%20of%20Mind%20Gregory%20Bateson%201972%209780226039053",
       "doi": "",
       "isbn": "9780226039053",
       "celex": "",
@@ -285,7 +306,9 @@
         "allowed": true,
         "use_type": "citation / summary / mapping",
         "citation_required": true
-      }
+      },
+      "archive_code": "WÖK-Q-0766",
+      "archive_url": "/quellenarchiv/wok-q-0766/"
     },
     {
       "id": "bateson-mind-nature",
@@ -301,6 +324,7 @@
       "source_quality": "B",
       "primary_or_secondary": "primary",
       "official_url": "",
+      "catalog_url": "https://search.worldcat.org/search?q=Mind%20and%20Nature%3A%20A%20Necessary%20Unity%20Gregory%20Bateson%201979",
       "doi": "",
       "isbn": "",
       "celex": "",
@@ -324,7 +348,9 @@
         "allowed": true,
         "use_type": "citation / summary / mapping",
         "citation_required": true
-      }
+      },
+      "archive_code": "WÖK-Q-0767",
+      "archive_url": "/quellenarchiv/wok-q-0767/"
     },
     {
       "id": "vester-kunst-vernetzt-denken",
@@ -340,6 +366,7 @@
       "source_quality": "B",
       "primary_or_secondary": "primary",
       "official_url": "",
+      "catalog_url": "https://search.worldcat.org/search?q=Die%20Kunst%20vernetzt%20zu%20denken%20Frederic%20Vester%201999",
       "doi": "",
       "isbn": "",
       "celex": "",
@@ -363,7 +390,10 @@
         "allowed": true,
         "use_type": "citation / summary / mapping",
         "citation_required": true
-      }
+      },
+      "archive_code": "WÖK-Q-0774",
+      "archive_url": "/quellenarchiv/wok-q-0774/",
+      "archive_title_relation": "Die Detailseite führt die zitierte Ausgabe mit Untertitel; die bibliografische Fundstelle verweist auf dasselbe Werk."
     },
     {
       "id": "meadows-limits-growth",
@@ -379,6 +409,7 @@
       "source_quality": "B",
       "primary_or_secondary": "primary",
       "official_url": "",
+      "catalog_url": "https://search.worldcat.org/search?q=The%20Limits%20to%20Growth%20Donella%20H.%20Meadows%3B%20Dennis%20L.%20Meadows%3B%20J%C3%B8rgen%20Randers%3B%20William%20W.%20Behrens%20III%201972",
       "doi": "",
       "isbn": "",
       "celex": "",
@@ -399,7 +430,11 @@
         "allowed": true,
         "use_type": "citation / summary / mapping",
         "citation_required": true
-      }
+      },
+      "archive_code": "WÖK-Q-0779",
+      "archive_url": "/quellenarchiv/wok-q-0779/",
+      "archive_locator_relation": "catalog_to_official_publisher_page",
+      "archive_locator_note": "Die Detailseite verlinkt auf die Herausgeberseite der Originalveröffentlichung statt auf den bibliografischen Katalognachweis."
     },
     {
       "id": "meadows-leverage-points",
@@ -438,7 +473,9 @@
         "allowed": true,
         "use_type": "citation / summary / mapping",
         "citation_required": true
-      }
+      },
+      "archive_code": "WÖK-Q-0772",
+      "archive_url": "/quellenarchiv/wok-q-0772/"
     },
     {
       "id": "meadows-thinking-systems",
@@ -454,6 +491,7 @@
       "source_quality": "B",
       "primary_or_secondary": "primary",
       "official_url": "",
+      "catalog_url": "https://search.worldcat.org/search?q=Thinking%20in%20Systems%3A%20A%20Primer%20Donella%20H.%20Meadows%202008%209781603580557",
       "doi": "",
       "isbn": "9781603580557",
       "celex": "",
@@ -477,7 +515,11 @@
         "allowed": true,
         "use_type": "citation / summary / mapping",
         "citation_required": true
-      }
+      },
+      "archive_code": "WÖK-Q-0773",
+      "archive_url": "/quellenarchiv/wok-q-0773/",
+      "archive_locator_relation": "catalog_to_official_resource_page",
+      "archive_locator_note": "Die Detailseite verlinkt auf die offizielle Ressourcen-Seite zur bezeichneten Veröffentlichung statt auf den bibliografischen Katalognachweis."
     },
     {
       "id": "drucker-practice-management",
@@ -493,6 +535,7 @@
       "source_quality": "B",
       "primary_or_secondary": "primary",
       "official_url": "",
+      "catalog_url": "https://search.worldcat.org/search?q=The%20Practice%20of%20Management%20Peter%20F.%20Drucker%201954",
       "doi": "",
       "isbn": "",
       "celex": "",
@@ -516,7 +559,9 @@
         "allowed": true,
         "use_type": "citation / summary / mapping",
         "citation_required": true
-      }
+      },
+      "archive_code": "WÖK-Q-0794",
+      "archive_url": "/quellenarchiv/wok-q-0794/"
     },
     {
       "id": "schumpeter-theorie",
@@ -532,6 +577,7 @@
       "source_quality": "B",
       "primary_or_secondary": "primary",
       "official_url": "",
+      "catalog_url": "https://search.worldcat.org/search?q=Theorie%20der%20wirtschaftlichen%20Entwicklung%20Joseph%20A.%20Schumpeter%201911",
       "doi": "",
       "isbn": "",
       "celex": "",
@@ -555,7 +601,9 @@
         "allowed": true,
         "use_type": "citation / summary / mapping",
         "citation_required": true
-      }
+      },
+      "archive_code": "WÖK-Q-0801",
+      "archive_url": "/quellenarchiv/wok-q-0801/"
     },
     {
       "id": "schumpeter-capitalism-socialism-democracy",
@@ -571,6 +619,7 @@
       "source_quality": "B",
       "primary_or_secondary": "primary",
       "official_url": "",
+      "catalog_url": "https://search.worldcat.org/search?q=Capitalism%2C%20Socialism%20and%20Democracy%20Joseph%20A.%20Schumpeter%201942",
       "doi": "",
       "isbn": "",
       "celex": "",
@@ -594,7 +643,9 @@
         "allowed": true,
         "use_type": "citation / summary / mapping",
         "citation_required": true
-      }
+      },
+      "archive_code": "WÖK-Q-0802",
+      "archive_url": "/quellenarchiv/wok-q-0802/"
     },
     {
       "id": "kondratieff-major-economic-cycles",
@@ -610,6 +661,7 @@
       "source_quality": "D",
       "primary_or_secondary": "primary",
       "official_url": "",
+      "catalog_url": "https://search.worldcat.org/search?q=The%20Major%20Economic%20Cycles%20Nikolai%20D.%20Kondratieff%201925",
       "doi": "",
       "isbn": "",
       "celex": "",
@@ -633,7 +685,9 @@
         "allowed": true,
         "use_type": "citation / summary / mapping",
         "citation_required": true
-      }
+      },
+      "archive_code": "WÖK-E-0003",
+      "archive_url": "/quellenarchiv/wok-e-0003/"
     },
     {
       "id": "kondratieff-long-waves-economic-life",
@@ -648,8 +702,8 @@
       "source_type": "article",
       "source_quality": "D",
       "primary_or_secondary": "primary",
-      "official_url": "https://www.jstor.org/stable/1884756",
-      "doi": "10.2307/1884756",
+      "official_url": "https://www.jstor.org/stable/1928486",
+      "doi": "10.2307/1928486",
       "isbn": "",
       "celex": "",
       "document_id": "",
@@ -672,7 +726,9 @@
         "allowed": true,
         "use_type": "citation / summary / mapping",
         "citation_required": true
-      }
+      },
+      "archive_code": "WÖK-Q-0804",
+      "archive_url": "/quellenarchiv/wok-q-0804/"
     },
     {
       "id": "smith-wealth-nations",
@@ -688,6 +744,7 @@
       "source_quality": "B",
       "primary_or_secondary": "primary",
       "official_url": "",
+      "catalog_url": "https://search.worldcat.org/search?q=An%20Inquiry%20into%20the%20Nature%20and%20Causes%20of%20the%20Wealth%20of%20Nations%20Adam%20Smith%201776",
       "doi": "",
       "isbn": "",
       "celex": "",
@@ -711,7 +768,9 @@
         "allowed": true,
         "use_type": "citation / summary / mapping",
         "citation_required": true
-      }
+      },
+      "archive_code": "WÖK-Q-0816",
+      "archive_url": "/quellenarchiv/wok-q-0816/"
     },
     {
       "id": "smith-moral-sentiments",
@@ -727,6 +786,7 @@
       "source_quality": "B",
       "primary_or_secondary": "primary",
       "official_url": "",
+      "catalog_url": "https://search.worldcat.org/search?q=The%20Theory%20of%20Moral%20Sentiments%20Adam%20Smith%201759",
       "doi": "",
       "isbn": "",
       "celex": "",
@@ -750,7 +810,9 @@
         "allowed": true,
         "use_type": "citation / summary / mapping",
         "citation_required": true
-      }
+      },
+      "archive_code": "WÖK-Q-0817",
+      "archive_url": "/quellenarchiv/wok-q-0817/"
     },
     {
       "id": "ostrom-governing-commons",
@@ -766,6 +828,7 @@
       "source_quality": "B",
       "primary_or_secondary": "primary",
       "official_url": "",
+      "catalog_url": "https://search.worldcat.org/search?q=Governing%20the%20Commons%3A%20The%20Evolution%20of%20Institutions%20for%20Collective%20Action%20Elinor%20Ostrom%201990%209780521405997",
       "doi": "",
       "isbn": "9780521405997",
       "celex": "",
@@ -789,7 +852,9 @@
         "allowed": true,
         "use_type": "citation / summary / mapping",
         "citation_required": true
-      }
+      },
+      "archive_code": "WÖK-E-0004",
+      "archive_url": "/quellenarchiv/wok-e-0004/"
     },
     {
       "id": "sen-development-freedom",
@@ -805,6 +870,7 @@
       "source_quality": "B",
       "primary_or_secondary": "primary",
       "official_url": "",
+      "catalog_url": "https://search.worldcat.org/search?q=Development%20as%20Freedom%20Amartya%20Sen%201999%209780198297581",
       "doi": "",
       "isbn": "9780198297581",
       "celex": "",
@@ -828,7 +894,9 @@
         "allowed": true,
         "use_type": "citation / summary / mapping",
         "citation_required": true
-      }
+      },
+      "archive_code": "WÖK-Q-0829",
+      "archive_url": "/quellenarchiv/wok-q-0829/"
     },
     {
       "id": "nussbaum-creating-capabilities",
@@ -844,6 +912,7 @@
       "source_quality": "B",
       "primary_or_secondary": "primary",
       "official_url": "",
+      "catalog_url": "https://search.worldcat.org/search?q=Creating%20Capabilities%3A%20The%20Human%20Development%20Approach%20Martha%20C.%20Nussbaum%202011%209780674050549",
       "doi": "",
       "isbn": "9780674050549",
       "celex": "",
@@ -867,7 +936,10 @@
         "allowed": true,
         "use_type": "citation / summary / mapping",
         "citation_required": true
-      }
+      },
+      "archive_code": "WÖK-Q-0830",
+      "archive_url": "/quellenarchiv/wok-q-0830/",
+      "archive_title_relation": "Die Detailseite nutzt den Kurztitel derselben Veröffentlichung."
     },
     {
       "id": "daly-steady-state",
@@ -883,6 +955,7 @@
       "source_quality": "B",
       "primary_or_secondary": "primary",
       "official_url": "",
+      "catalog_url": "https://search.worldcat.org/search?q=Steady-State%20Economics%20Herman%20E.%20Daly%201977",
       "doi": "",
       "isbn": "",
       "celex": "",
@@ -906,7 +979,9 @@
         "allowed": true,
         "use_type": "citation / summary / mapping",
         "citation_required": true
-      }
+      },
+      "archive_code": "WÖK-E-0005",
+      "archive_url": "/quellenarchiv/wok-e-0005/"
     },
     {
       "id": "georgescu-entropy",
@@ -922,6 +997,7 @@
       "source_quality": "B",
       "primary_or_secondary": "primary",
       "official_url": "",
+      "catalog_url": "https://search.worldcat.org/search?q=The%20Entropy%20Law%20and%20the%20Economic%20Process%20Nicholas%20Georgescu-Roegen%201971%209780674257801",
       "doi": "",
       "isbn": "9780674257801",
       "celex": "",
@@ -945,7 +1021,9 @@
         "allowed": true,
         "use_type": "citation / summary / mapping",
         "citation_required": true
-      }
+      },
+      "archive_code": "WÖK-E-0006",
+      "archive_url": "/quellenarchiv/wok-e-0006/"
     },
     {
       "id": "eu-csrd-2022-2464",
@@ -981,7 +1059,10 @@
         "allowed": true,
         "use_type": "citation / summary / mapping",
         "citation_required": true
-      }
+      },
+      "archive_code": "WÖK-Q-0924",
+      "archive_url": "/quellenarchiv/wok-q-0924/",
+      "archive_title_relation": "Titelvariante derselben Richtlinie (EU) 2022/2464."
     },
     {
       "id": "eu-esrs-2023-2772",
@@ -1017,7 +1098,10 @@
         "allowed": true,
         "use_type": "citation / summary / mapping",
         "citation_required": true
-      }
+      },
+      "archive_code": "WÖK-Q-0925",
+      "archive_url": "/quellenarchiv/wok-q-0925/",
+      "archive_title_relation": "Titelvariante derselben Delegierten Verordnung (EU) 2023/2772."
     },
     {
       "id": "eu-taxonomy-2020-852",
@@ -1053,7 +1137,10 @@
         "allowed": true,
         "use_type": "citation / summary / mapping",
         "citation_required": true
-      }
+      },
+      "archive_code": "WÖK-Q-0926",
+      "archive_url": "/quellenarchiv/wok-q-0926/",
+      "archive_title_relation": "Titelvariante derselben Verordnung (EU) 2020/852."
     },
     {
       "id": "eu-dsa-2022-2065",
@@ -1089,7 +1176,10 @@
         "allowed": true,
         "use_type": "citation / summary / mapping",
         "citation_required": true
-      }
+      },
+      "archive_code": "WÖK-Q-0139",
+      "archive_url": "/quellenarchiv/wok-q-0139/",
+      "archive_title_relation": "Titelvariante derselben Verordnung (EU) 2022/2065."
     },
     {
       "id": "un-agenda-2030",
@@ -1125,7 +1215,10 @@
         "allowed": true,
         "use_type": "citation / summary / mapping",
         "citation_required": true
-      }
+      },
+      "archive_code": "WÖK-Q-0025",
+      "archive_url": "/quellenarchiv/wok-q-0025/",
+      "archive_title_relation": "Deutsche Titelvariante derselben UN-Resolution A/RES/70/1."
     },
     {
       "id": "unsd-global-indicator-framework",
@@ -1161,7 +1254,10 @@
         "allowed": true,
         "use_type": "citation / summary / mapping",
         "citation_required": true
-      }
+      },
+      "archive_code": "WÖK-Q-0021",
+      "archive_url": "/quellenarchiv/wok-q-0021/",
+      "archive_title_relation": "Deutsche Titelvariante desselben amtlichen Indikatorenrahmens."
     },
     {
       "id": "ipcc-ar6-synthesis",
@@ -1197,7 +1293,10 @@
         "allowed": true,
         "use_type": "citation / summary / mapping",
         "citation_required": true
-      }
+      },
+      "archive_code": "WÖK-Q-0891",
+      "archive_url": "/quellenarchiv/wok-q-0891/",
+      "archive_title_relation": "Umgestellte Titelvariante desselben AR6-Syntheseberichts."
     },
     {
       "id": "ipbes-global-assessment-2019",
@@ -1233,7 +1332,9 @@
         "allowed": true,
         "use_type": "citation / summary / mapping",
         "citation_required": true
-      }
+      },
+      "archive_code": "WÖK-Q-0896",
+      "archive_url": "/quellenarchiv/wok-q-0896/"
     },
     {
       "id": "stockholm-planetary-boundaries-2023",
@@ -1272,7 +1373,9 @@
         "allowed": true,
         "use_type": "citation / summary / mapping",
         "citation_required": true
-      }
+      },
+      "archive_code": "WÖK-Q-0899",
+      "archive_url": "/quellenarchiv/wok-q-0899/"
     },
     {
       "id": "gri-universal-standards-2021",
@@ -1308,7 +1411,10 @@
         "allowed": true,
         "use_type": "citation / summary / mapping",
         "citation_required": true
-      }
+      },
+      "archive_code": "WÖK-Q-0939",
+      "archive_url": "/quellenarchiv/wok-q-0939/",
+      "archive_title_relation": "Kurztitel derselben GRI Universal Standards (2021)."
     },
     {
       "id": "ifrs-s1-s2-2023",
@@ -1344,7 +1450,9 @@
         "allowed": true,
         "use_type": "citation / summary / mapping",
         "citation_required": true
-      }
+      },
+      "archive_code": "WÖK-Q-0947",
+      "archive_url": "/quellenarchiv/wok-q-0947/"
     },
     {
       "id": "ghg-protocol-corporate",
@@ -1380,7 +1488,10 @@
         "allowed": true,
         "use_type": "citation / summary / mapping",
         "citation_required": true
-      }
+      },
+      "archive_code": "WÖK-Q-0940",
+      "archive_url": "/quellenarchiv/wok-q-0940/",
+      "archive_title_relation": "Kurztitel derselben Corporate Accounting and Reporting Standard."
     },
     {
       "id": "tnfd-recommendations-2023",
@@ -1416,7 +1527,11 @@
         "allowed": true,
         "use_type": "citation / summary / mapping",
         "citation_required": true
-      }
+      },
+      "archive_code": "WÖK-Q-0948",
+      "archive_url": "/quellenarchiv/wok-q-0948/",
+      "archive_locator_relation": "alternative_official_landing_page",
+      "archive_locator_note": "Die Detailseite verlinkt auf die offizielle Empfehlungsseite derselben TNFD-Veröffentlichung."
     },
     {
       "id": "raworth-doughnut-economics",
@@ -1455,7 +1570,9 @@
         "allowed": true,
         "use_type": "citation / summary / mapping",
         "citation_required": true
-      }
+      },
+      "archive_code": "WÖK-E-0007",
+      "archive_url": "/quellenarchiv/wok-e-0007/"
     },
     {
       "id": "jackson-prosperity-without-growth",
@@ -1471,6 +1588,7 @@
       "source_quality": "B",
       "primary_or_secondary": "primary",
       "official_url": "",
+      "catalog_url": "https://search.worldcat.org/search?q=Prosperity%20without%20Growth%3A%20Economics%20for%20a%20Finite%20Planet%20Tim%20Jackson%202009%209781844078943",
       "doi": "",
       "isbn": "9781844078943",
       "celex": "",
@@ -1494,7 +1612,9 @@
         "allowed": true,
         "use_type": "citation / summary / mapping",
         "citation_required": true
-      }
+      },
+      "archive_code": "WÖK-E-0008",
+      "archive_url": "/quellenarchiv/wok-e-0008/"
     },
     {
       "id": "stiglitz-sen-fitoussi-report",
@@ -1530,7 +1650,10 @@
         "allowed": true,
         "use_type": "citation / summary / mapping",
         "citation_required": true
-      }
+      },
+      "archive_code": "WÖK-Q-0474",
+      "archive_url": "/quellenarchiv/wok-q-0474/",
+      "archive_title_relation": "Kurztitel desselben Kommissionsberichts."
     },
     {
       "id": "grundgesetz-gg",
@@ -1564,14 +1687,27 @@
         "keine individuelle Rechtsberatung"
       ],
       "limitations": "Die konkrete verfassungsrechtliche Bewertung hängt von Norm, Sachverhalt, Zuständigkeit und Abwägung ab. WÖk-Einordnung und Rechtsprüfung bleiben getrennt.",
-      "related_woek_terms": ["SDG+", "Staatsziele und Verfassungsaufträge", "Art. 20a GG", "Tierschutz und Tierwohl", "Nichtkompensationsprinzip"],
-      "related_woek_pages": ["/verstehen/sdgs-sdgplus/#deutsche-verfassungsebene", "/begriffe/staatsziele-und-verfassungsauftraege/", "/quellenarchiv/wok-q-0157/"],
+      "related_woek_terms": [
+        "SDG+",
+        "Staatsziele und Verfassungsaufträge",
+        "Art. 20a GG",
+        "Tierschutz und Tierwohl",
+        "Nichtkompensationsprinzip"
+      ],
+      "related_woek_pages": [
+        "/verstehen/sdgs-sdgplus/#deutsche-verfassungsebene",
+        "/begriffe/staatsziele-und-verfassungsauftraege/",
+        "/quellenarchiv/wok-q-0157/"
+      ],
       "public_display": true,
       "llm_use": {
         "allowed": true,
         "use_type": "citation / careful summary / national reference mapping",
         "citation_required": true
-      }
+      },
+      "archive_code": "WÖK-Q-0157",
+      "archive_url": "/quellenarchiv/wok-q-0157/",
+      "archive_title_relation": "Kurztitel derselben Verfassung."
     },
     {
       "id": "bundestag-waldhoff-staatszielbestimmungen-2023",
@@ -1604,14 +1740,25 @@
         "keine Gleichsetzung von Staatszielen, Grundrechten und Staatsstrukturprinzipien"
       ],
       "limitations": "Sachverständigenstellungnahme zu einer konkreten Anhörung; sie ersetzt weder den Gesetzestext noch Rechtsprechung oder Einzelfallprüfung.",
-      "related_woek_terms": ["Staatsziele und Verfassungsaufträge", "Sozialstaatsprinzip", "Tierschutz und Tierwohl", "SDG+"],
-      "related_woek_pages": ["/verstehen/sdgs-sdgplus/#deutsche-verfassungsebene", "/quellenarchiv/wok-q-0992/"],
+      "related_woek_terms": [
+        "Staatsziele und Verfassungsaufträge",
+        "Sozialstaatsprinzip",
+        "Tierschutz und Tierwohl",
+        "SDG+"
+      ],
+      "related_woek_pages": [
+        "/verstehen/sdgs-sdgplus/#deutsche-verfassungsebene",
+        "/quellenarchiv/wok-q-0992/"
+      ],
       "public_display": true,
       "llm_use": {
         "allowed": true,
         "use_type": "citation / careful legal-context summary",
         "citation_required": true
-      }
+      },
+      "archive_code": "WÖK-Q-0992",
+      "archive_url": "/quellenarchiv/wok-q-0992/",
+      "archive_title_relation": "Die Detailseite benennt Thema und Autor; die verlinkte Bundestags-PDF ist identisch."
     },
     {
       "id": "euv-art-3",
@@ -1635,13 +1782,31 @@
       "license_notes": "Amtliche Primärquelle. Öffentliche WÖk-Fassungen verlinken auf die Detailseite im Quellenarchiv.",
       "last_checked": "2026-07-18",
       "woek_relevance": "Europäischer Werte- und Zielanker im WÖk-Mehrebenen-Normen- und Zielrahmen; kein zusätzlicher Score.",
-      "supports_claims": ["Art. 3 EUV enthält Ziele wie Frieden, Wohlergehen, nachhaltige Entwicklung, sozialen Fortschritt, Umweltschutz und Achtung der Menschenrechte."],
-      "does_not_support": ["keine automatische Rechtsfolge aus einem WÖk-Score", "keine Gleichsetzung mit dem Vertrag von Lissabon als zusätzlichem Zielkatalog"],
+      "supports_claims": [
+        "Art. 3 EUV enthält Ziele wie Frieden, Wohlergehen, nachhaltige Entwicklung, sozialen Fortschritt, Umweltschutz und Achtung der Menschenrechte."
+      ],
+      "does_not_support": [
+        "keine automatische Rechtsfolge aus einem WÖk-Score",
+        "keine Gleichsetzung mit dem Vertrag von Lissabon als zusätzlichem Zielkatalog"
+      ],
       "limitations": "Die konkrete Anwendbarkeit und Rechtsfolge sind eigenständig zu prüfen.",
-      "related_woek_terms": ["Europäisches Primärrecht und Grundrechte", "WÖk-Mehrebenen-Normen- und Zielrahmen"],
-      "related_woek_pages": ["/begriffe/europaeisches-primaerrecht-und-grundrechte/", "/quellenarchiv/wok-q-0993/"],
+      "related_woek_terms": [
+        "Europäisches Primärrecht und Grundrechte",
+        "WÖk-Mehrebenen-Normen- und Zielrahmen"
+      ],
+      "related_woek_pages": [
+        "/begriffe/europaeisches-primaerrecht-und-grundrechte/",
+        "/quellenarchiv/wok-q-0993/"
+      ],
       "public_display": true,
-      "llm_use": {"allowed": true, "use_type": "citation / careful legal-context summary", "citation_required": true}
+      "llm_use": {
+        "allowed": true,
+        "use_type": "citation / careful legal-context summary",
+        "citation_required": true
+      },
+      "archive_code": "WÖK-Q-0993",
+      "archive_url": "/quellenarchiv/wok-q-0993/",
+      "archive_title_relation": "Titelvariante derselben konsolidierten Fassung, Artikel 3."
     },
     {
       "id": "aeuv-art-11",
@@ -1665,13 +1830,31 @@
       "license_notes": "Amtliche Primärquelle. Öffentliche WÖk-Fassungen verlinken auf die Detailseite im Quellenarchiv.",
       "last_checked": "2026-07-18",
       "woek_relevance": "Europarechtlicher Umweltanker; prägt Prüfintensität und Mindeststandards, aber keinen zweiten Score.",
-      "supports_claims": ["Art. 11 AEUV verlangt die Einbeziehung der Umweltschutzanforderungen in Unionspolitiken und -maßnahmen."],
-      "does_not_support": ["keine automatische Rechtsfolge aus einem WÖk-Score"],
+      "supports_claims": [
+        "Art. 11 AEUV verlangt die Einbeziehung der Umweltschutzanforderungen in Unionspolitiken und -maßnahmen."
+      ],
+      "does_not_support": [
+        "keine automatische Rechtsfolge aus einem WÖk-Score"
+      ],
       "limitations": "Die konkrete Anwendbarkeit richtet sich nach Sachbereich und Fachrecht.",
-      "related_woek_terms": ["Europäisches Primärrecht und Grundrechte", "WÖk-Mehrebenen-Normen- und Zielrahmen", "Nichtkompensationsprinzip"],
-      "related_woek_pages": ["/begriffe/europaeisches-primaerrecht-und-grundrechte/", "/quellenarchiv/wok-q-0994/"],
+      "related_woek_terms": [
+        "Europäisches Primärrecht und Grundrechte",
+        "WÖk-Mehrebenen-Normen- und Zielrahmen",
+        "Nichtkompensationsprinzip"
+      ],
+      "related_woek_pages": [
+        "/begriffe/europaeisches-primaerrecht-und-grundrechte/",
+        "/quellenarchiv/wok-q-0994/"
+      ],
       "public_display": true,
-      "llm_use": {"allowed": true, "use_type": "citation / careful legal-context summary", "citation_required": true}
+      "llm_use": {
+        "allowed": true,
+        "use_type": "citation / careful legal-context summary",
+        "citation_required": true
+      },
+      "archive_code": "WÖK-Q-0994",
+      "archive_url": "/quellenarchiv/wok-q-0994/",
+      "archive_title_relation": "Titelvariante derselben konsolidierten Fassung, Artikel 11."
     },
     {
       "id": "aeuv-art-13-tierwohl",
@@ -1695,13 +1878,32 @@
       "license_notes": "Amtliche Primärquelle. Öffentliche WÖk-Fassungen verlinken auf die Detailseite im Quellenarchiv.",
       "last_checked": "2026-07-18",
       "woek_relevance": "Eigenständiger Tierwohlanker neben Biodiversität und Art. 20a GG; keine doppelte Messung oder Bewertung.",
-      "supports_claims": ["Art. 13 AEUV verlangt in den dort genannten Politikbereichen, den Erfordernissen des Wohlergehens der Tiere als fühlende Wesen Rechnung zu tragen."],
-      "does_not_support": ["keine Gleichsetzung von Tierwohl und Biodiversität", "keine automatische Rechtsfolge außerhalb des sachlichen Anwendungsbereichs"],
+      "supports_claims": [
+        "Art. 13 AEUV verlangt in den dort genannten Politikbereichen, den Erfordernissen des Wohlergehens der Tiere als fühlende Wesen Rechnung zu tragen."
+      ],
+      "does_not_support": [
+        "keine Gleichsetzung von Tierwohl und Biodiversität",
+        "keine automatische Rechtsfolge außerhalb des sachlichen Anwendungsbereichs"
+      ],
       "limitations": "Die konkrete Anwendung ist fach- und unionsrechtlich einzuordnen.",
-      "related_woek_terms": ["Tierschutz und Tierwohl", "Art. 20a GG", "WÖk-Mehrebenen-Normen- und Zielrahmen"],
-      "related_woek_pages": ["/begriffe/tierschutz-und-tierwohl/", "/quellenarchiv/wok-q-0995/"],
+      "related_woek_terms": [
+        "Tierschutz und Tierwohl",
+        "Art. 20a GG",
+        "WÖk-Mehrebenen-Normen- und Zielrahmen"
+      ],
+      "related_woek_pages": [
+        "/begriffe/tierschutz-und-tierwohl/",
+        "/quellenarchiv/wok-q-0995/"
+      ],
       "public_display": true,
-      "llm_use": {"allowed": true, "use_type": "citation / careful legal-context summary", "citation_required": true}
+      "llm_use": {
+        "allowed": true,
+        "use_type": "citation / careful legal-context summary",
+        "citation_required": true
+      },
+      "archive_code": "WÖK-Q-0995",
+      "archive_url": "/quellenarchiv/wok-q-0995/",
+      "archive_title_relation": "Titelvariante derselben konsolidierten Fassung, Artikel 13."
     }
   ]
 }

@@ -7,6 +7,7 @@ const ignoredDirs = new Set([".git", "_site", "node_modules", "templates", "woek
 const ignoredRoutePatterns = [
   /^\/(?:_debug|admin)\//,
   /^\/404\.html$/,
+  /^\/api\/v1\/production(?:\/|\.json|$)/,
 ];
 const htmlFiles = [];
 
@@ -34,6 +35,12 @@ function decode(value) {
 function meta(html, name) {
   const pattern = new RegExp(`<meta\\s+[^>]*name=["']${name}["'][^>]*content=["']([^"']*)["'][^>]*>`, "i");
   return decode(html.match(pattern)?.[1] || "");
+}
+
+function isIndexablePublicPage(html) {
+  const noindex = /<meta\b(?=[^>]*\bname=["']robots["'])(?=[^>]*\bcontent=["'][^"']*\bnoindex\b[^"']*["'])[^>]*>/iu;
+  const redirect = /<meta\b(?=[^>]*\bhttp-equiv=["']refresh["'])[^>]*>/iu;
+  return !noindex.test(html) && !redirect.test(html);
 }
 
 function titleOf(html) {
@@ -91,10 +98,13 @@ const entries = htmlFiles
       rubrik: rubrikFor(route, searchSection),
       sammlung: sammlungFor(route, searchSection),
       typ: classifyType(route, searchType),
+      indexable: isIndexablePublicPage(html),
     };
   })
   .filter((entry) => !ignoredRoutePatterns.some((pattern) => pattern.test(entry.url)))
   .filter((entry) => !entry.url.includes(" 2."))
+  .filter((entry) => entry.indexable)
+  .map(({ indexable, ...entry }) => entry)
   .sort((a, b) => a.url.localeCompare(b.url, "de"));
 
 fs.mkdirSync(path.dirname(outFile), { recursive: true });

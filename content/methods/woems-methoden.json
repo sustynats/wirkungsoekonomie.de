@@ -1054,15 +1054,15 @@
       "kategorieName": "Wirkungsmodellierung und Zukunftslogik",
       "name": "Wirkungspfad",
       "docxSeite": 63,
-      "zweck": "Die Kette von Auslösern über Aktivitäten, Outputs, Outcomes und Wirkungen bis zu Rückkopplungen nachvollziehbar darstellen.",
+      "zweck": "Auslöser, Aktivitäten und erbrachte Leistungen den erwarteten Veränderungen bei Wirkungsempfängern, möglichen Zustandsveränderungen und Rückkopplungen nachvollziehbar zuordnen.",
       "inputs": [
         "Auftrag",
         "vorhandene Daten und relevantes Kontextwissen"
       ],
       "schritte": [
         "Ausgangszustand und Zielzustand definieren.",
-        "Auslöser, Aktivitäten und Outputs ordnen.",
-        "Outcomes bei konkreten Empfängern formulieren.",
+        "Auslöser, Aktivitäten und erbrachte Leistungen ordnen.",
+        "Erwartete Veränderungen bei konkreten Empfängern formulieren.",
         "Wirkung und Wirkungsordnungen ergänzen.",
         "Annahmen, Kontext und Beitrag markieren.",
         "Nebenwirkungen, Risiken und Messpunkte einbauen."
@@ -1074,14 +1074,14 @@
         "Empfänger, Systemgrenzen und Referenzrahmen sind eindeutig.",
         "Empirische Befunde, Annahmen und normative Bewertungen bleiben unterscheidbar.",
         "Ergebnis führt zu einer klaren nächsten Entscheidung oder Lernfrage.",
-        "Aktivität, Output, Outcome und Wirkung sind getrennt.",
+        "Auslöser, Aktivität, erbrachte Leistung, Veränderung bei Wirkungsempfängern und eingetretene Wirkung bleiben getrennt.",
         "Empfänger stehen an jeder relevanten Stufe.",
         "Annahmen sind testbar formuliert."
       ],
       "schutzregeln": [
         "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
         "Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
-        "Output nicht als Wirkung bezeichnen.",
+        "Eine erbrachte Leistung nicht als eingetretene Wirkung bezeichnen.",
         "Ein Pfeil ist kein Kausalitätsbeweis."
       ],
       "schnittstellen": {
@@ -1207,7 +1207,7 @@
       "kategorieName": "Wirkungsmodellierung und Zukunftslogik",
       "name": "Outcome- und Empfängerlandkarte",
       "docxSeite": 69,
-      "zweck": "Verhaltens-, Beziehungs-, Praxis- und Zustandsveränderungen bei konkreten Wirkungsempfängern statt nur organisationsinterne Outputs planen.",
+      "zweck": "Verhaltens-, Beziehungs-, Praxis- und Zustandsveränderungen bei konkreten Wirkungsempfängern planen, statt allein organisationsinterne Leistungen zu zählen.",
       "inputs": [
         "Auftrag",
         "vorhandene Daten und relevantes Kontextwissen"
@@ -1217,7 +1217,7 @@
         "Gewünschte Veränderungen pro Gruppe formulieren.",
         "Direkten Einfluss, Beitrag und außerhalb liegende Faktoren trennen.",
         "Frühe, mittlere und tiefe Fortschrittsmarker definieren.",
-        "Negative oder exkludierende Outcomes ergänzen.",
+        "Negative oder ausschließende Veränderungen ergänzen.",
         "Beobachtung und Beteiligung vereinbaren."
       ],
       "outputs": [
@@ -1227,7 +1227,7 @@
         "Empfänger, Systemgrenzen und Referenzrahmen sind eindeutig.",
         "Empirische Befunde, Annahmen und normative Bewertungen bleiben unterscheidbar.",
         "Ergebnis führt zu einer klaren nächsten Entscheidung oder Lernfrage.",
-        "Outcomes sind beobachtbar und empfängerbezogen.",
+        "Veränderungen bei Wirkungsempfängern sind beobachtbar und ihnen zugeordnet.",
         "Beitrag wird nicht als vollständige Kontrolle dargestellt.",
         "Negative Verteilungswirkungen werden erfasst."
       ],
@@ -1913,7 +1913,7 @@
       "kategorieName": "Messung, Bewertung und Evidenz",
       "name": "Netto-Wirkungs-Index (NWI)",
       "docxSeite": 98,
-      "zweck": "Positive und negative operative Wirkungen unter Berücksichtigung von Mindestbedingungen, Verteilung, Zeit, Datenqualität und Nichtkompensation zu einer steuerungsfähigen Kennzahl verdichten.",
+      "zweck": "Ein dimensionsgleiches Wirkungsprofil aus vorab definierten Feldscores bilden und nur bei erfüllten Schutzgrenzen als NWI ausweisen.",
       "inputs": [
         "Auftrag",
         "vorhandene Daten und relevantes Kontextwissen"
@@ -1921,27 +1921,28 @@
       "schritte": [
         "Bewertungsobjekt und Zeitraum festlegen.",
         "Relevante positive und negative Wirkungen aus Scorecards übernehmen.",
-        "Verteilung, Dauer, Reichweite und Datenqualität berücksichtigen.",
-        "Nichtkompensierbare Felder separat prüfen.",
-        "NWI und Unsicherheitsband berechnen oder regelbasiert bestimmen.",
+        "Feldscores auf einer dokumentierten Skala und Gewichte mit Summe 1 festlegen.",
+        "Nichtkompensierbare Felder, rote Linien, Systemgrenze, Zurechnung und Evidenz separat prüfen.",
+        "Profilwert P = Σ wᵢsᵢ berechnen und das Schutz-Gate G dokumentieren.",
         "Interpretation und Entscheidungsgrenzen dokumentieren."
       ],
       "outputs": [
-        "NWI mit Wirkungsprofil, Spannbreite, Grenzprüfung und Entscheidungsinterpretation."
+        "Wirkungsprofil, Profilwert, Evidenz- und Unsicherheitsangaben sowie bei offenem Gate der NWI."
       ],
       "qualitaetsregeln": [
         "Empfänger, Systemgrenzen und Referenzrahmen sind eindeutig.",
         "Empirische Befunde, Annahmen und normative Bewertungen bleiben unterscheidbar.",
         "Ergebnis führt zu einer klaren nächsten Entscheidung oder Lernfrage.",
-        "NWI ist keine reine Summe.",
-        "Grenzen und Verteilung bleiben sichtbar.",
-        "Unsicherheitsband ist obligatorisch."
+        "NWI ist keine reine Summe und vermischt keine Einheiten.",
+        "Grenzen, Verteilung und kritische Felder bleiben sichtbar.",
+        "Datenlücken werden als Evidenzlücke, nicht als Wert null behandelt."
       ],
       "schutzregeln": [
         "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
         "Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
         "Monetarisierung nicht erzwingen.",
-        "Ein Index darf das Wirkungsprofil nicht ersetzen."
+        "Ein Index darf das Wirkungsprofil nicht ersetzen.",
+        "Bei roter Linie, negativem kritischem Feld, fehlender Systemgrenze oder unzureichender Evidenz bleibt das Gate geschlossen; ein positiver NWI wird dann nicht ausgegeben."
       ],
       "schnittstellen": {
         "bautAuf": [
@@ -1963,35 +1964,35 @@
       "kategorieName": "Messung, Bewertung und Evidenz",
       "name": "T-SROI – Transformational Social Return on Investment",
       "docxSeite": 100,
-      "zweck": "Auf Grundlage geprüfter Netto-Wirkung beurteilen, ob eine Investition systemische Hebelwirkung, Diffusion, Resilienz und Pfadveränderung erzeugt.",
+      "zweck": "Den Barwert kausal zurechenbarer direkter und separat belegter transformativer Nettonutzen in Euro dem Barwert der eingesetzten Ressourcen in Euro gegenüberstellen.",
       "inputs": [
         "Auftrag",
         "vorhandene Daten und relevantes Kontextwissen"
       ],
       "schritte": [
-        "NWI und Mindestgrenzen als Eintrittsvoraussetzung prüfen.",
-        "Investitionsbasis und Wirkungswerte definieren.",
-        "Systemische Hebel, Diffusion und Standardsetzung bewerten.",
-        "Resilienz- und Zeitwirkung ergänzen.",
-        "Risiko-, Unsicherheits- und Sensitivitätsanalyse durchführen.",
+        "Schutz-Gate, Systemgrenze, Zurechnung und Evidenz als Eintrittsvoraussetzung prüfen.",
+        "Investition I, inkrementelle Kosten K, direkte Nutzen Bdirekt und Schäden S in Euro derselben Preisbasis erfassen.",
+        "Transformative Nutzenströme nur bei eigenständigem Wirkpfad-, Zurechnungs- und Preisnachweis als Btransformativ erfassen.",
+        "Attribution, Deadweight, Verdrängung, Diskontsätze sowie Unsicherheit und Sensitivitäten dokumentieren.",
         "Entscheidung und Lernbedingungen formulieren."
       ],
       "outputs": [
-        "T-SROI-Auswertung mit Basiswirkung, Investition, Transformationsmultiplikatoren, Risiken, Grenzen und Sensitivität."
+        "T-SROI-Auswertung mit Nutzen- und Schadenströmen, Ressourcen, Preisbasis, Schutz-Gate, Sensitivitäten und nachvollziehbarer Beispielrechnung."
       ],
       "qualitaetsregeln": [
         "Empfänger, Systemgrenzen und Referenzrahmen sind eindeutig.",
         "Empirische Befunde, Annahmen und normative Bewertungen bleiben unterscheidbar.",
         "Ergebnis führt zu einer klaren nächsten Entscheidung oder Lernfrage.",
-        "Positive operative Netto-Wirkung ist Voraussetzung.",
-        "Multiplikatoren sind begründet und sensitivitätsgeprüft.",
-        "Transformationsrisiken bleiben sichtbar."
+        "Eine positive Aussage ist nur bei offenem Schutz-Gate und nicht negativer konservativer Untergrenze zulässig.",
+        "Nutzen- und Schadenströme bleiben nach Ursache, Einheit, Preisbasis und Zurechnung getrennt nachvollziehbar.",
+        "Reichweite, Resilienz, Diffusion und Datenqualität sind Wirkpfad- oder Evidenzangaben, keine freien Rechenmultiplikatoren."
       ],
       "schutzregeln": [
         "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln.",
         "Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
-        "Große Visionen nicht durch hohe Multiplikatoren belohnen.",
-        "SROI-Monetarisierung nicht unkritisch übernehmen."
+        "Große Visionen nicht durch freie Rechenfaktoren belohnen.",
+        "SROI-Monetarisierung nicht unkritisch übernehmen.",
+        "Schäden nicht pauschal mit den Zurechnungsfaktoren des Nutzens verringern; eine Schadenreduktion braucht eine eigene Gegenfaktik."
       ],
       "schnittstellen": {
         "bautAuf": [

@@ -8,9 +8,9 @@
 
 **Referenz:** Wirkungsökonomie
 
-**Version:** v1.0
+**Version:** v1.1
 
-**Stand:** 24. Mai 2026
+**Stand:** 2. August 2026
 
 
 > Wirkung darf nicht im Konzernmittelwert verschwinden.
@@ -79,7 +79,7 @@ Große Unternehmen berichten zunehmend umfassend über Nachhaltigkeit. Diese Ber
 
 In einem Verbundsystem können Nebenprodukte einer Anlage Vorprodukte einer anderen sein. Durchschnittswerte verdecken dann Engpässe. Ein Konzern kann insgesamt Fortschritte zeigen, während einzelne Produktgruppen weiterhin hohe Wasser-, Chemie- oder Klimarisiken verursachen.
 
-Die WÖk braucht daher eine Produktgruppenlogik. Nicht der Konzernname entscheidet über die Steuerklasse, sondern das Wirkungsprofil des Produkts oder der Produktgruppe.
+Die WÖk braucht daher eine Produktgruppenlogik. Nicht der Konzernname entscheidet über eine mögliche steuerliche Behandlung; maßgeblich ist das dokumentierte Wirkungsprofil des Produkts oder der Produktgruppe. Auch dieses Profil ist kein Tarifautomat.
 
 | Aggregierte Berichtswelt | Produktwirkungswelt |
 
@@ -115,7 +115,7 @@ Der digitale Produktpass macht diese Zuordnung für Markt, Steuer, Beschaffung u
 
 - WÖk-ID-Familien aktivieren und Scorecard berechnen.
 
-- Reverse Merit Order anwenden und Steuerklasse ableiten.
+- Reverse Merit Order anwenden, Engpasssignal und Prüfstatus dokumentieren.
 
 
 ## BASF Polyamid als Modellfall
@@ -185,7 +185,7 @@ Jeder Indikator wird mit Benchmarks verglichen. Benchmarks können aus EU-Taxono
 
 | FinalScore | Reverse Merit Order | verhindert Kompensation |
 
-| Steuerklasse | Satz / Vorsteuerstatus | rückkoppelt Wirkung in Preis |
+| Prüfstatus | dokumentierter Befund und Datenqualität | informiert Beschaffung, Risiko- und gegebenenfalls Rechtsprüfung |
 
 
 ## Datenqualität und Allokation in Verbundsystemen
@@ -221,7 +221,7 @@ Das ist wichtig für faire Transformation. Die WÖk darf keine pauschale Branche
 
 | Unternehmen | Wie wirkt das Gesamtportfolio? | Kapitalzugang, Risiko, Governance |
 
-| Produktgruppe | Wie wirkt diese Produktfamilie? | Steuerklasse, Beschaffung, Marktposition |
+| Produktgruppe | Wie wirkt diese Produktfamilie? | Prüfstatus, Beschaffung, Marktposition |
 
 | Anlage / Prozess | Wo entsteht der Engpass? | Investitionspriorität |
 
@@ -255,7 +255,7 @@ Der politische Gestaltungsspielraum liegt in Schwellenwerten, Übergangsfristen,
 ## Website- und Tool-Integration
 
 
-Die Website sollte das Konzernbeispiel als visuelles Mapping darstellen: Konzernbericht -> Standort -> Anlage -> Produktgruppe -> Scorecard -> Produktpass -> Steuerklasse. Dadurch wird sichtbar, warum Berichtsdaten allein noch keine Steuerung sind.
+Die Website sollte das Konzernbeispiel als visuelles Mapping darstellen: Konzernbericht -> Standort -> Anlage -> Produktgruppe -> Scorecard -> Produktpass -> Prüfstatus. Dadurch wird sichtbar, warum Berichtsdaten allein noch keine Steuerung sind und warum ein Satz nicht aus einem Score abgeleitet werden darf.
 
 Als Tool eignet sich ein CSRD-zu-Produktscorecard-Demonstrator. Er zeigt beispielhaft, welche Datenfelder aus ESRS in welche WÖk-ID-Familien fließen und wo Allokationsentscheidungen nötig sind.
 
@@ -329,7 +329,7 @@ Diese Unterscheidung schützt vor Pauschalurteilen und vor Greenwashing zugleich
 
 Die Übersetzung von CSRD zur Produktscorecard verändert Unternehmenssteuerung. Produktgruppen mit schlechten Wirkungsprofilen werden nicht nur reputativ riskant, sondern steuerlich, finanzierungsseitig und absatzseitig relevant. Investitionen in Wasser, Energie, Chemie, Arbeitsschutz und Kreislauf werden zu betriebswirtschaftlichen Verbesserungshebeln.
 
-Für das Controlling bedeutet das: CapEx und Opex werden nicht nur nach Amortisation, sondern nach Wirkung auf Steuerklasse, Lieferantenfähigkeit, Kapitalzugang, Versicherbarkeit und Marktposition bewertet. Produktportfolios werden nicht nur nach Deckungsbeitrag, sondern nach Wirkungsrisiko und Transformationspotenzial betrachtet.
+Für das Controlling bedeutet das: CapEx und Opex werden nicht nur nach Amortisation, sondern nach Wirkung auf Prüfstatus, Lieferantenfähigkeit, Kapitalzugang, Versicherbarkeit und Marktposition bewertet. Produktportfolios werden nicht nur nach Deckungsbeitrag, sondern nach Wirkungsrisiko und Transformationspotenzial betrachtet.
 
 Damit verbindet sich das Konzernbeispiel direkt mit den Unternehmensdetailkonzepten zu Wirkungscontrolling, Risikomanagement und Finanzierung nach Wirkung.
 
@@ -387,7 +387,7 @@ Ein Konzern kann Millionen einzelner Artikelnummern führen. Eine Scorecard auf 
 | Ebene | Geeignet für WÖk-Start? | Begründung |
 | --- | --- | --- |
 | Konzern gesamt | Nein, nur Rahmen | Zu grob, verdeckt Produktunterschiede. |
-| Segment/Geschäftsbereich | Teilweise | Gut für Priorisierung, noch zu grob für Steuerklasse. |
+| Segment/Geschäftsbereich | Teilweise | Gut für Priorisierung, noch zu grob für einen belastbaren Prüfstatus. |
 | Standort/Anlage | Ja, für Prozesswirkung | Nützlich für Energie, Wasser, Emissionen, Sicherheit. |
 | Produktgruppe | Ja, Hauptniveau | Ausreichend präzise und praktikabel. |
 | SKU/Charge | Spätere Ausbaustufe | Sinnvoll bei Datenreife und DPP-Integration. |

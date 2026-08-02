@@ -24,7 +24,7 @@ WÖk-IDs kennzeichnen Wirkungsindikatoren eindeutig. NACE hilft, Branchen fair z
 
 ## 5. Scorecards und FinalScore
 
-Scorecards übersetzen Daten in Einzelscores von -3 bis +3. Der FinalScore ist die praktische steuerungsrelevante Verdichtung für Produkte, Dienstleistungen oder Aktivitäten.
+Scorecards übersetzen Daten in Einzelscores von -3 bis +3. Der FinalScore ist die praktische steuerungsrelevante Verdichtung für Produkte, Dienstleistungen oder Aktivitäten. Er zeigt einen Engpass und die Grenzen einer positiven Aussage; er ist weder ein Steuerbescheid noch eine Formel, die einen Steuersatz erzeugt.
 
 ## 6. Reverse Merit Order
 
@@ -36,7 +36,7 @@ Der NWI bewertet operative Netto-Wirkung. Der T-SROI bewertet Transformationswir
 
 ## 8. Steuerliche Rückkopplung als Pilotmodell
 
-Steuerklassen und Steuersätze sind in dieser Fassung Modellvarianten für Pilotierung und Simulation. Eine verbindliche Anwendung setzt Gesetzgebung, europarechtliche Prüfung, Rechtsschutz, Dateninfrastruktur und Übergangsfristen voraus.
+Frühere Steuerklassen und Steuersätze sind in dieser Fassung ausschließlich historische Modellvarianten für Pilotierung und Simulation. Eine verbindliche Anwendung setzt Gesetzgebung, europarechtliche Prüfung, Rechtsschutz, Dateninfrastruktur und Übergangsfristen voraus. Der Prüfpfad liefert dafür nachvollziehbare Evidenz, aber keine automatische Tarifentscheidung. Erst wenn ein Satz `t` rechtlich und transparent bestimmt ist, gilt für eine Preisrechnung `P_brutto = P_netto × (1 + t)`; aus dem FinalScore wird kein `t` berechnet.
 
 ## 9. Vorsteuer- und Lieferkettenlogik vorsichtig formuliert
 

@@ -34,6 +34,19 @@ ALREADY = {"woemm-2-0", "woems-2-0"}
 # Welle 1: hochwertige eigenständige Werke zuerst
 WAVE1_TYPES = {"Grundlagenwerk", "Whitepaper", "Gesetzesentwurf", "Leitbild"}
 
+# Dauerhafte öffentliche Kapitelbezeichnungen. Die PDF-Überschriften bleiben
+# unverändert zitierbar; die Lesefassung erhält eine neutrale, verständliche URL
+# und Überschrift. Historische URLs werden anschließend vom SEO-Normalisierer
+# als noindex-Weiterleitungen gepflegt.
+PUBLIC_CHAPTER_OVERRIDES = {
+    "download-or-document-assets-downloads-woek-standard-politische-anschlussfaehigkeit-v0-1-pdf": {
+        "7. Mindestanforderungen in Codex": {
+            "title": "7. Mindestanforderungen für öffentliche Inhalte",
+            "slug": "07-7-mindestanforderungen-fuer-oeffentliche-inhalte",
+        },
+    },
+}
+
 
 def esc(s):
     return html.escape(s or "", quote=True)
@@ -45,6 +58,11 @@ def slugify(t):
     t = t.encode("ascii", "ignore").decode()
     t = re.sub(r"[^a-zA-Z0-9]+", "-", t).strip("-").lower()
     return re.sub(r"-+", "-", t) or "abschnitt"
+
+
+def public_chapter_override(detail_slug, source_title):
+    """Return an optional public title/slug override for one PDF chapter."""
+    return PUBLIC_CHAPTER_OVERRIDES.get(detail_slug, {}).get(source_title)
 
 
 HEADER = '''    <header class="site-header" data-search-exclude>
@@ -290,11 +308,19 @@ def build_one(pdf_path, detail_slug, title, short):
             chapters.append({"idx": len(chapters), "title": t, "page": 0, "subs": [], "text": seg})
     for i, ch in enumerate(chapters):
         ch["end"] = chapters[i + 1]["page"] if i + 1 < len(chapters) else npages
-        ch["slug"] = f'{ch["idx"]:02d}-{slugify(ch["title"])[:60]}'
+        source_title = ch["title"]
+        override = public_chapter_override(detail_slug, source_title)
+        ch["source_title"] = source_title
+        if override:
+            ch["title"] = override["title"]
+            ch["slug"] = override["slug"]
+        else:
+            ch["slug"] = f'{ch["idx"]:02d}-{slugify(source_title)[:60]}'
 
     r = "../../../../"
     for ch in chapters:
         rc = r + "../"
+        source_title = ch.get("source_title", ch["title"])
         raw = ch.get("text") or "\n".join(pdf[p].get_text() for p in range(ch["page"], max(ch["end"], ch["page"] + 1)))
         blocks = []
         if ch["subs"]:
@@ -304,9 +330,9 @@ def build_one(pdf_path, detail_slug, title, short):
                 positions.append((m.start() if m else None, sub))
             first = next((p for p, _ in positions if p is not None), None)
             intro = raw[:first] if first else (raw if first is None else "")
-            ti = intro.rfind(ch["title"])
+            ti = intro.rfind(source_title)
             if ti != -1:
-                intro = intro[ti + len(ch["title"]):]
+                intro = intro[ti + len(source_title):]
             if intro.strip():
                 blocks.append((None, intro))
             valid = [(p, s) for p, s in positions if p is not None]
@@ -317,9 +343,9 @@ def build_one(pdf_path, detail_slug, title, short):
                 blocks.append((sub["title"], seg))
         else:
             intro = raw
-            ti = intro.find(ch["title"])
+            ti = intro.find(source_title)
             if ti != -1:
-                intro = intro[ti + len(ch["title"]):]
+                intro = intro[ti + len(source_title):]
             blocks.append((None, intro))
 
         parts = []
@@ -401,9 +427,14 @@ def short_label(title):
 def load_data():
     import json
     reg = json.load(open(REG))["documents"]
-    det = {e["id"]: e.get("detailSlug") for e in json.load(open(DET)).get("entries", [])}
-    tbl = {e["title"]: e.get("detailSlug") for e in json.load(open(DET)).get("entries", [])}
-    return reg, det, tbl
+    details = json.load(open(DET)).get("entries", [])
+    # IDs are intentionally not necessarily unique across versioned source
+    # files. Prefer the concrete source path before falling back to an ID or
+    # title, otherwise a reader for v1.0 can overwrite the one for v1.1.
+    by_primary = {e.get("primaryUrl"): e.get("detailSlug") for e in details if e.get("primaryUrl")}
+    by_id = {e["id"]: e.get("detailSlug") for e in details if e.get("id")}
+    by_title = {e["title"]: e.get("detailSlug") for e in details if e.get("title")}
+    return reg, by_primary, by_id, by_title
 
 
 def select(mode, reg):
@@ -417,19 +448,19 @@ def select(mode, reg):
                 and "rang-" not in ((x.get("urls") or {}).get("primary") or "")]
     if mode == "all-standalone":
         return [x for x in docs if "rang-" not in ((x.get("urls") or {}).get("primary") or "")]
-    ids = set(mode.split(","))
-    return [x for x in docs if x.get("id") in ids]
+    targets = set(mode.split(","))
+    return [x for x in docs if x.get("id") in targets or ((x.get("urls") or {}).get("primary") in targets)]
 
 
 if __name__ == "__main__":
     mode = sys.argv[1] if len(sys.argv) > 1 else "wave1"
-    reg, det, tbl = load_data()
+    reg, by_primary, by_id, by_title = load_data()
     sel = select(mode, reg)
     print(f"Auswahl '{mode}': {len(sel)} Dokumente")
     made_ch = made_single = failed = 0
     for x in sel:
         did = x.get("id")
-        slug = det.get(did) or tbl.get(x.get("title"))
+        slug = by_primary.get((x.get("urls") or {}).get("primary")) or by_id.get(did) or by_title.get(x.get("title"))
         pdf = (x.get("urls") or {}).get("primary")
         if not slug or not pdf or not os.path.isfile(os.path.join(ROOT, pdf)):
             print(f"  ÜBERSPRUNGEN {did}: slug={slug} pdf={pdf}")

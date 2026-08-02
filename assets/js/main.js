@@ -5989,10 +5989,19 @@ const WirkungsraumLayer = (() => {
       output.focus();
       output.select();
     }
+    const subject = encodeURIComponent("Mein Wirkungsraum Wiederherstellungslink");
+    const body = encodeURIComponent(`Hier ist mein privater Wiederherstellungslink für Mein Wirkungsraum:\n\n${link}\n\nWer den Link hat, kann die enthaltenen gespeicherten Inhalte laden.`);
+    const emailHref = `mailto:?subject=${subject}&body=${body}`;
     if (email instanceof HTMLAnchorElement) {
-      const subject = encodeURIComponent("Mein Wirkungsraum Wiederherstellungslink");
-      const body = encodeURIComponent(`Hier ist mein privater Wiederherstellungslink für Mein Wirkungsraum:\n\n${link}\n\nWer den Link hat, kann die enthaltenen gespeicherten Inhalte laden.`);
-      email.href = `mailto:?subject=${subject}&body=${body}`;
+      email.href = emailHref;
+      email.removeAttribute("aria-disabled");
+    } else if (email instanceof HTMLButtonElement) {
+      const emailLink = document.createElement("a");
+      emailLink.className = email.className;
+      emailLink.href = emailHref;
+      emailLink.dataset.recoveryEmail = "";
+      emailLink.textContent = email.textContent;
+      email.replaceWith(emailLink);
     }
     if (qrPanel instanceof HTMLElement) qrPanel.hidden = true;
     if (qrHost instanceof HTMLElement) qrHost.innerHTML = "";

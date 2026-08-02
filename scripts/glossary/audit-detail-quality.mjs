@@ -35,9 +35,41 @@ function sectionBetween(html, startPattern) {
   return next > 0 ? rest.slice(0, next) : rest;
 }
 
+// Nicht jede kuratierte Detailseite verwendet die Standard-ID
+// "related-terms-title". Fachcluster und die Finanzseiten haben eigene,
+// sprechende Überschriften. Maßgeblich ist deshalb nicht die ID, sondern ein
+// tatsächlich veröffentlichter Chip auf eine andere Glossar-Detailseite.
+function publishedGlossaryTermLinks(html) {
+  const links = [];
+  for (const match of String(html || "").matchAll(/<a\b([^>]*)>/gi)) {
+    const attributes = match[1] || "";
+    const classMatch = attributes.match(/\bclass=["']([^"']*)["']/i);
+    const hrefMatch = attributes.match(/\bhref=["']([^"']*)["']/i);
+    if (!classMatch || !hrefMatch) continue;
+    if (!/(?:^|\s)term-chip(?:\s|$)/.test(classMatch[1])) continue;
+    if (!/(?:^|\/)begriffe\/[^/?#]+\/?(?:[?#].*)?$/i.test(hrefMatch[1])) continue;
+    links.push(hrefMatch[1]);
+  }
+  return unique(links);
+}
+
 function articleHtml(html) {
-  const match = String(html || "").match(/<article\b[^>]*class=["'][^"']*\bglossary-detail\b[^"']*["'][^>]*>([\s\S]*?)<\/article>/i);
-  return match ? match[1] : html;
+  const source = String(html || "");
+  const start = source.match(/<article\b[^>]*class=["'][^"']*\bglossary-detail\b[^"']*["'][^>]*>/i);
+  if (!start || start.index === undefined) return source;
+  // Detail pages can contain semantic <article> cards. A non-greedy regular
+  // expression would stop at the first nested card and silently omit the
+  // actual source block from this audit. Count article tags instead.
+  const contentStart = start.index + start[0].length;
+  const tags = /<\/?article\b[^>]*>/gi;
+  tags.lastIndex = contentStart;
+  let depth = 1;
+  for (let match = tags.exec(source); match; match = tags.exec(source)) {
+    if (/^<\/article\b/i.test(match[0])) depth -= 1;
+    else depth += 1;
+    if (depth === 0) return source.slice(contentStart, match.index);
+  }
+  return source.slice(contentStart);
 }
 
 function unique(values) {
@@ -50,15 +82,62 @@ function asList(value) {
   return [value];
 }
 
+function normalizedDefinition(value) {
+  return stripTags(value)
+    .replace(/[.,;:!?]+$/g, "")
+    .toLocaleLowerCase("de");
+}
+
+function definitionWordCount(value) {
+  return stripTags(value).split(/\s+/).filter(Boolean).length;
+}
+
+function hasLinkedSource(term) {
+  return ["officialSources", "curatedSources", "sourceLinks"]
+    .flatMap((key) => asList(term?.[key]))
+    .some((source) => {
+      if (typeof source === "object") return Boolean(source.url || source.href || source.pageUrl);
+      return String(source || "").includes("|") || /^https?:\/\//i.test(String(source || ""));
+    });
+}
+
+function sourceReferenceUrls(term) {
+  return ["officialSources", "curatedSources", "sourceLinks"]
+    .flatMap((key) => asList(term?.[key]))
+    .map((source) => {
+      if (typeof source === "object") return String(source.url || source.href || source.pageUrl || "").trim();
+      const raw = String(source || "");
+      return raw.includes("|") ? raw.slice(raw.lastIndexOf("|") + 1).trim() : raw;
+    })
+    .filter(Boolean);
+}
+
+function hasOnlyWoeKPrimarySources(term) {
+  const urls = sourceReferenceUrls(term);
+  return urls.length > 0 && urls.every((url) => /\/quellenarchiv\/wok-g-/i.test(url));
+}
+
+// A repeated short/long definition is a useful editorial signal, but it is
+// not by itself evidence of a superficial definition. Some technical terms
+// are accurately defined in one compact sentence. A term is only queued for
+// editorial expansion when it is both compact beyond a minimum explanatory
+// scope and has no linked source to constrain its use.
+function conciseDefinitionIsAdequate(term, shortDefinition, longDefinition) {
+  return normalizedDefinition(shortDefinition) === normalizedDefinition(longDefinition)
+    && definitionWordCount(shortDefinition) >= 8
+    && hasLinkedSource(term);
+}
+
 function linkStats(html) {
   const hrefs = unique(Array.from(String(html || "").matchAll(/<a\b[^>]*\bhref=["']([^"']+)["']/gi)).map((match) => match[1]));
   const external = hrefs.filter((href) => /^https?:\/\//i.test(href));
   const internal = hrefs.filter((href) => !/^https?:\/\//i.test(href) && !href.startsWith("mailto:") && !href.startsWith("#"));
+  const sourceArchive = hrefs.filter((href) => href.includes("/quellenarchiv/"));
   const book = hrefs.filter((href) => href.includes("referenz/kapitel-") || href.includes("/referenz/kapitel-"));
   const documents = hrefs.filter((href) => href.includes("dokumente/") || href.includes("downloads/") || href.includes("bibliothek/"));
   const methods = hrefs.filter((href) => href.includes("werkzeuge/"));
   const demos = hrefs.filter((href) => href.includes("erleben/") || href.includes("anwendungen/"));
-  return { hrefs, external, internal, book, documents, methods, demos };
+  return { hrefs, external, internal, sourceArchive, book, documents, methods, demos };
 }
 
 function relationCount(term) {
@@ -82,39 +161,58 @@ function pageRecord(slug) {
   const term = registryBySlug.get(slug);
   const links = linkStats(article);
   const relatedTermsSection = sectionBetween(article, /related-terms-title/i);
-  const hasNonEmptyRelatedTerms = /class=["'][^"']*term-chip/i.test(relatedTermsSection) && !relatedTermsSection.includes("Keine Einträge");
+  const standardRelatedTermLinks = publishedGlossaryTermLinks(relatedTermsSection);
+  const publishedRelatedTermLinks = publishedGlossaryTermLinks(article);
+  // Standardseiten werden über die Standard-Section erkannt. Bei bewusst
+  // abweichenden Templates zählen die im Artikel sichtbar veröffentlichten
+  // Glossar-Chips genauso; Navigationschips zu Werkzeugen oder Dokumenten
+  // reichen dagegen nicht.
+  const hasNonEmptyRelatedTerms = standardRelatedTermLinks.length > 0 || publishedRelatedTermLinks.length > 0;
   const title = matchText(html, /<h1[^>]*>([\s\S]*?)<\/h1>/i) || term?.canonicalLabel || slug;
   const genericPhrase = "Der Eintrag dient als begriffliche Einordnung innerhalb der Wirkungsökonomie.";
+  const leadDefinition = matchText(article, /<p\b[^>]*class=["'][^"']*\blead\b[^"']*["'][^>]*>([\s\S]*?)<\/p>/i);
   const longDefinition = String(term?.longDefinition || term?.definition || "").trim();
   const shortDefinition = String(term?.shortDefinition || "").trim();
   const sourceBacked = Boolean(term);
   const legacyOnly = !sourceBacked;
+  const repeatedDefinition = sourceBacked && shortDefinition && longDefinition
+    && normalizedDefinition(shortDefinition) === normalizedDefinition(longDefinition);
+  const conciseDefinition = repeatedDefinition && conciseDefinitionIsAdequate(term, shortDefinition, longDefinition);
   return {
     slug,
     title,
     sourceBacked,
     legacyOnly,
-    hasDefinitionSection: article.includes("Was bedeutet der Begriff?"),
-    hasDefinitionText: /Was bedeutet der Begriff\?[\s\S]{0,1200}<p>[^<]{30,}/.test(article),
-    hasWoekMeaningSection: article.includes("Warum ist das wichtig?"),
-    hasSpecificWoekMeaning: article.includes("Warum ist das wichtig?") && !article.includes(genericPhrase),
+    hasDefinitionSection: Boolean(leadDefinition) || article.includes("Was bedeutet der Begriff?") || article.includes("Was der Begriff zusätzlich aussagt"),
+    hasDefinitionText: definitionWordCount(leadDefinition) >= 6 || /Was bedeutet der Begriff\?[\s\S]{0,1200}<p>[^<]{30,}/.test(article),
+    hasWoekMeaningSection: article.includes("Warum ist das wichtig?") || article.includes("Einordnung in der Wirkungsökonomie"),
+    hasSpecificWoekMeaning: (article.includes("Warum ist das wichtig?") || article.includes("Einordnung in der Wirkungsökonomie")) && !article.includes(genericPhrase),
     hasWoekInterpretationBlock: article.includes("Wirkungsökonomische Einordnung") || Boolean(term?.woekRelation || term?.woek_einordnung),
-    hasUsageSection: article.includes("So wird der Begriff genutzt"),
-    hasBoundarySection: article.includes("Nicht verwechseln mit"),
+    hasUsageSection: article.includes("So wird der Begriff genutzt") || /<h2>Verwendung<\/h2>/.test(article),
+    hasBoundarySection: article.includes("Nicht verwechseln mit") || /<h2>Abgrenzung<\/h2>/.test(article),
     hasExamplesOrLearning: article.includes("Beispiel") || asList(term?.examples).length > 0,
-    hasRelatedTermsSection: article.includes("Verwandte Begriffe"),
+    hasRelatedTermsSection: article.includes("Verwandte Begriffe") || publishedRelatedTermLinks.length > 0,
     hasNonEmptyRelatedTerms,
-    hasRelatedContentBlock: article.includes("Verwandte Inhalte"),
-    hasVersionSourceBlock: article.includes("Version und Quellen") || article.includes("Version und Quelle"),
+    publishedRelatedTermLinkCount: publishedRelatedTermLinks.length,
+    hasRelatedContentBlock: article.includes("Verwandte Inhalte") || article.includes("Quellen und Vertiefungen"),
+    hasVersionSourceBlock: article.includes("Version und Quellen") || article.includes("Version und Quelle") || article.includes("Quellen und Einordnung"),
     hasExternalLinks: links.external.length > 0,
     externalLinkCount: links.external.length,
     internalLinkCount: links.internal.length,
+    hasSourceArchiveLink: links.sourceArchive.length > 0,
+    sourceArchiveLinkCount: links.sourceArchive.length,
     bookChapterCount: links.book.length,
     documentLinkCount: links.documents.length,
     methodLinkCount: links.methods.length,
     demoLinkCount: links.demos.length,
     registryRelationCount: relationCount(term),
-    shallowDefinition: sourceBacked && shortDefinition && longDefinition && shortDefinition === longDefinition,
+    definitionDetailStatus: term?.definitionDetailStatus || (repeatedDefinition ? "konzis" : "vertieft"),
+    definitionDetailBasis: term?.definitionDetailBasis || "",
+    definitionWordCount: definitionWordCount(shortDefinition),
+    repeatedDefinition,
+    conciseDefinition,
+    conciseDefinitionWithModelOnlySource: conciseDefinition && hasOnlyWoeKPrimarySources(term),
+    definitionNeedsEditorialExpansion: repeatedDefinition && !conciseDefinition,
     genericWoekText: article.includes(genericPhrase),
   };
 }
@@ -152,15 +250,23 @@ const summary = {
   hasBoundarySection: countWhere((record) => record.hasBoundarySection),
   hasExamplesOrLearning: countWhere((record) => record.hasExamplesOrLearning),
   hasNonEmptyRelatedTerms: countWhere((record) => record.hasNonEmptyRelatedTerms),
+  sourceBackedWithPublishedGlossaryCrossReference: countWhere((record) => record.sourceBacked && record.hasNonEmptyRelatedTerms),
+  sourceBackedWithoutPublishedGlossaryCrossReference: countWhere((record) => record.sourceBacked && !record.hasNonEmptyRelatedTerms),
   hasRelatedContentBlock: countWhere((record) => record.hasRelatedContentBlock),
   hasVersionSourceBlock: countWhere((record) => record.hasVersionSourceBlock),
   hasExternalLinks: countWhere((record) => record.hasExternalLinks),
+  hasSourceArchiveLink: countWhere((record) => record.hasSourceArchiveLink),
+  sourceBackedWithoutSourceArchiveLink: countWhere((record) => record.sourceBacked && !record.hasSourceArchiveLink),
   hasBookChapterLinks: countWhere((record) => record.bookChapterCount > 0),
   hasDocumentLinks: countWhere((record) => record.documentLinkCount > 0),
   hasMethodLinks: countWhere((record) => record.methodLinkCount > 0),
   hasDemoLinks: countWhere((record) => record.demoLinkCount > 0),
   genericWoekText: countWhere((record) => record.genericWoekText),
-  shallowDefinition: countWhere((record) => record.shallowDefinition),
+  longDefinitionsExpanded: countWhere((record) => record.sourceBacked && record.definitionDetailStatus === "vertieft"),
+  conciseDefinitions: countWhere((record) => record.conciseDefinition),
+  conciseDefinitionsWithModelOnlySource: countWhere((record) => record.conciseDefinitionWithModelOnlySource),
+  repeatedDefinitions: countWhere((record) => record.repeatedDefinition),
+  definitionNeedsEditorialExpansion: countWhere((record) => record.definitionNeedsEditorialExpansion),
 };
 
 const qualityRows = [
@@ -176,13 +282,20 @@ const qualityRows = [
   ["Abgrenzung vorhanden", summary.hasBoundarySection],
   ["Beispiel/Lernblock vorhanden", summary.hasExamplesOrLearning],
   ["Verwandte Begriffe nicht leer", summary.hasNonEmptyRelatedTerms],
+  ["Source-backed mit veröffentlichtem Glossar-Querverweis", summary.sourceBackedWithPublishedGlossaryCrossReference],
+  ["Source-backed ohne veröffentlichten Glossar-Querverweis", summary.sourceBackedWithoutPublishedGlossaryCrossReference],
   ["Zusätzlicher Block Verwandte Inhalte", summary.hasRelatedContentBlock],
   ["Version-/Quellenblock vorhanden", summary.hasVersionSourceBlock],
-  ["Mindestens ein externer Link", summary.hasExternalLinks],
+  ["Quellenarchiv-Link vorhanden", summary.hasSourceArchiveLink],
+  ["Direkter externer Link im Glossarartikel", summary.hasExternalLinks],
   ["Mindestens ein Buchkapitel-Link", summary.hasBookChapterLinks],
   ["Mindestens ein Dokument-/Bibliothekslink", summary.hasDocumentLinks],
   ["Mindestens ein Methoden-/Werkzeuglink", summary.hasMethodLinks],
   ["Mindestens ein Demo-/Anwendungslink", summary.hasDemoLinks],
+  ["Langdefinition fachlich erweitert", summary.longDefinitionsExpanded],
+  ["Konzise, quellenverlinkte Definitionen", summary.conciseDefinitions],
+  ["Davon nur mit WÖk-Primärquelle", summary.conciseDefinitionsWithModelOnlySource],
+  ["Potenzielle Langdefinitionslücken", summary.definitionNeedsEditorialExpansion],
 ].map(([label, value]) => `| ${label} | ${value} |`).join("\n");
 
 const doc = `# Glossar-Detailseiten: Qualitätsaudit
@@ -190,6 +303,14 @@ const doc = `# Glossar-Detailseiten: Qualitätsaudit
 Stand: ${today}
 
 Dieses Audit prüft die ${records.length} vorhandenen Begriffsdetailseiten nicht auf Schönheit, sondern auf Wissens- und Quellenabdeckung. Es löscht nichts und ersetzt keine Detailseiten durch Hub-Einträge.
+
+## Wann eine Langdefinition wirklich fehlt
+
+Die Gleichheit von Kurz- und Langdefinition ist nur ein Dublettenhinweis, keine fachliche Diagnose. Eine technische oder rechtliche Definition kann in einem präzisen Satz vollständig sein. Das Register erweitert Langdefinitionen deshalb zentral nur mit bereits gepflegter, begriffsspezifischer WÖk-Einordnung oder Anwendungsregel. Es ergänzt keine behauptete Wirkung, keine Quelle und keine Grenze automatisch.
+
+Eine wiederholte Kurzdefinition gilt hier als **konzis** (nicht als oberflächlich), wenn sie mindestens acht Wörter enthält und ein Quellenverweis verknüpft ist. Als potenzielle Lücke wird sie nur gezählt, wenn diese minimale Prüfbarkeit fehlt. Die Regel ist ein Qualitätsfilter, keine inhaltliche Begutachtung der jeweiligen Fachquelle.
+
+Ein Quellenverweis auf eine WÖk-Primärquelle belegt ausschließlich die modellinterne Verwendung. Er ersetzt keine unabhängige Evidenz für empirische, rechtliche oder naturwissenschaftliche Aussagen. Solche Quellen werden nicht automatisch ergänzt, weil eine unpassende Fachquelle schlechter wäre als eine sichtbar offene Rechercheaufgabe.
 
 ## Pflichtbausteine pro Begriff
 
@@ -218,12 +339,15 @@ ${qualityRows}
 
 - ${summary.genericWoekText} Seiten enthalten noch den generischen Satz „Der Eintrag dient als begriffliche Einordnung innerhalb der Wirkungsökonomie.“ Diese Seiten brauchen eine echte wirkungsökonomische Relevanzbeschreibung.
 - ${records.length - summary.hasWoekInterpretationBlock} Seiten haben noch keine explizite wirkungsökonomische Auslegung oder Einordnung.
-- ${records.length - summary.hasRelatedContentBlock} Seiten zeigen noch keinen strukturierten Block „Verwandte Inhalte“ mit Methoden, Demos, Dokumenten, Wirkungsfeldern, Akademie oder Datenregistern.
-- ${records.length - summary.hasExternalLinks} Seiten haben noch keinen externen Quellenlink.
-- ${records.length - summary.hasBookChapterLinks} Seiten haben noch keinen direkten Link in ein konkretes Buchkapitel.
-- ${records.length - summary.hasDocumentLinks} Seiten haben noch keinen Dokument- oder Bibliothekslink.
-- ${summary.shallowDefinition} source-backed Registerbegriffe haben noch kurze Definition = Langdefinition und brauchen fachliche Vertiefung.
+- ${summary.sourceBackedWithoutSourceArchiveLink} source-backed Registerbegriffe haben noch keinen Link zu einer Detailseite des Quellenarchivs. Das ist ein Publikationsfehler, weil Originalquellen und Qualitätshinweise dort nachvollziehbar bleiben müssen.
+- ${records.length - summary.hasRelatedContentBlock} Seiten haben noch keinen zusätzlichen, fachlich passenden Block mit Vertiefungen. Ein solcher Block ist nur dort erforderlich, wo eine konkrete Methode, ein Dokument oder ein Wirkungsfeld tatsächlich passt.
+- ${records.length - summary.hasBookChapterLinks} Seiten verlinken noch nicht auf ein konkretes Buchkapitel; das ist eine Abdeckungszahl, keine Pflicht für jeden Begriff.
+- ${records.length - summary.hasDocumentLinks} Seiten verlinken noch nicht auf ein Dokument oder die Bibliothek; auch das ist nur für fachlich passende Vertiefungen erforderlich.
+- ${summary.repeatedDefinitions} source-backed Registerbegriffe wiederholen aus Gründen der Kürze noch die Kurzdefinition; ${summary.conciseDefinitions} davon sind quellenverlinkt und als konzise Definitionen klassifiziert.
+- ${summary.conciseDefinitionsWithModelOnlySource} der konzisen Definitionen stützen sich ausschließlich auf WÖk-Primärquellen. Das dokumentiert die Modellverwendung, nicht unabhängig überprüfte Fach- oder Rechtsaussagen.
+- ${summary.definitionNeedsEditorialExpansion} source-backed Registerbegriffe haben nach dieser Regel noch eine potenzielle Langdefinitionslücke und müssen redaktionell mit einer passenden Quelle oder einer bereits belegten Abgrenzung vertieft werden.
 - ${summary.legacyOnly} Bestandsseiten sind erhalten und im Hub sichtbar, liegen aber noch nicht vollständig im strukturierten Glossar-Register.
+- ${summary.sourceBackedWithoutPublishedGlossaryCrossReference} source-backed Registerbegriffe haben noch keinen sichtbaren Link zu einer anderen Glossar-Detailseite. Für Registerbegriffe ist das ein Publikationsfehler, kein Anlass für erfundene Beziehungen.
 
 ## Beispiele für Nachholbedarf
 
@@ -239,11 +363,11 @@ ${missingList((record) => !record.hasSpecificWoekMeaning)}
 | --- | --- | --- |
 ${missingList((record) => !record.hasWoekInterpretationBlock)}
 
-### Keine externen Quellenlinks
+### Kein Quellenarchiv-Link
 
 | Slug | Begriff | Quelle |
 | --- | --- | --- |
-${missingList((record) => !record.hasExternalLinks)}
+${missingList((record) => record.sourceBacked && !record.hasSourceArchiveLink)}
 
 ### Keine Buchkapitel-Links
 
@@ -256,6 +380,12 @@ ${missingList((record) => record.bookChapterCount === 0)}
 | Slug | Begriff | Quelle |
 | --- | --- | --- |
 ${missingList((record) => record.documentLinkCount === 0)}
+
+### Potenzielle Langdefinitionslücken
+
+| Slug | Begriff | Quelle |
+| --- | --- | --- |
+${missingList((record) => record.definitionNeedsEditorialExpansion)}
 
 ## Nicht automatisch ergänzen
 

@@ -340,6 +340,7 @@ function renderFooter(base) {
 function pageShell(title, body, depth = "", options = {}) {
   const metaTitle = options.metaTitle || `${title} - Wirkungsökonomie`;
   const metaDescription = options.metaDescription || `${title} im Glossar der Wirkungsökonomie.`;
+  const canonical = options.canonicalUrl || `https://wirkungsoekonomie.de${options.canonicalPath || "/begriffe/"}`;
   return `<!DOCTYPE html>
 <html lang="de">
   <head>
@@ -347,6 +348,13 @@ function pageShell(title, body, depth = "", options = {}) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>${esc(metaTitle)}</title>
     <meta name="description" content="${esc(metaDescription)}">
+    <link rel="canonical" href="${esc(canonical)}">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:site_name" content="Wirkungsökonomie">
+    <meta property="og:title" content="${esc(metaTitle)}">
+    <meta property="og:description" content="${esc(metaDescription)}">
+    <meta property="og:url" content="${esc(canonical)}">
     <link rel="stylesheet" href="${depth}assets/css/style.css?v=20260612-mobile-table-fix">
   </head>
   <body>
@@ -407,6 +415,7 @@ const nav = Array.from(groups.keys()).sort(collator.compare);
 const categories = categoryOrder.filter((category) => indexedTerms.some((term) => term.category === category));
 const termsBySlug = new Map(indexedTerms.map((term) => [term.slug, term]));
 const termsByLookup = new Map();
+const relationLookupCandidates = new Map();
 for (const term of indexedTerms) {
   const labels = unique([
     term.slug,
@@ -424,6 +433,28 @@ for (const term of indexedTerms) {
     const key = normalizedLabel(alias);
     if (key && !termsByLookup.has(key)) termsByLookup.set(key, term);
   }
+}
+for (const term of indexedTerms) {
+  const labels = unique([
+    term.slug,
+    term.termId,
+    term.canonicalLabel,
+    term.label,
+    ...(Array.isArray(term.aliases) ? term.aliases : []),
+    ...(Array.isArray(term.synonyms) ? term.synonyms : []),
+  ]);
+  for (const label of labels) {
+    const key = normalizedLabel(label);
+    if (!key) continue;
+    const candidates = relationLookupCandidates.get(key) || [];
+    candidates.push(term);
+    relationLookupCandidates.set(key, candidates);
+  }
+}
+const unambiguousRelationTerms = new Map();
+for (const [key, candidates] of relationLookupCandidates) {
+  const distinct = [...new Map(candidates.map((term) => [term.termId || term.slug, term])).values()];
+  if (distinct.length === 1) unambiguousRelationTerms.set(key, distinct[0]);
 }
 const contentByUrl = new Map();
 const contentBySlug = new Map();
@@ -592,9 +623,9 @@ const relatedContentTargets = new Map([
   ["finanzsystem-kapital", ["Finanzsystem & Kapital", "../../wirkungsfelder/finanzsystem-kapital/"]],
   ["woek-id-register", ["WÖk-ID Register", "../../woek-id-register/"]],
   ["wirkungsrueckkopplung", ["Wirkungsrückkopplung", "../../begriffe/wirkungsrueckkopplung/"]],
-  ["wenn-maschinen-arbeiten", ["Wenn Maschinen arbeiten", "../../dokumente/wenn-maschinen-arbeiten/"]],
+  ["wenn-maschinen-arbeiten", ["Historische Quellenfassung: Wenn Maschinen arbeiten", "../../bibliothek/wenn-maschinen-arbeiten/"]],
   ["wp-einkommen", ["Working Paper Einkommen", "../../dokumente/wp-einkommen/"]],
-  ["wp-rente", ["Working Paper Rente", "../../bibliothek/wp-rente/"]],
+  ["wp-rente", ["Historische Quellenfassung: Working Paper Rente", "../../bibliothek/wp-rente/"]],
   ["fuehrender-begriffsleitfaden", ["Führender Begriffsleitfaden der Wirkungsökonomie", "../../bibliothek/woek-begriffsleitfaden-fuehrend/"]],
   ["fuehrender-begriffsleitfaden-der-wirkungsoekonomie", ["Führender Begriffsleitfaden der Wirkungsökonomie", "../../bibliothek/woek-begriffsleitfaden-fuehrend/"]],
   ["t-sroi-whitepaper", ["T-SROI-Whitepaper", "../../dokumente/whitepaper-t-sroi/"]],
@@ -617,8 +648,8 @@ const relatedContentTargets = new Map([
 ]);
 
 function termLink(slug) {
-  const term = termsBySlug.get(slug);
-  if (!term) return `<span class="term-chip muted">${esc(slug)}</span>`;
+  const term = termsBySlug.get(slug) || termsByLookup.get(normalizedLabel(slug));
+  if (!term) return "";
   return `<a class="term-chip" href="../../begriffe/${esc(term.slug)}/">${esc(term.canonicalLabel)}</a>`;
 }
 
@@ -777,13 +808,21 @@ function optionalTermSection({ eyebrow, title, html }) {
           </section>`;
 }
 
-function relatedTermsChips(term) {
-  const chips = (term.relatedTerms || []).map(termLink).filter(Boolean).join("");
+function relatedTermsChips(term, options = {}) {
+  const excluded = new Set((options.excludeSlugs || []).map((slug) => String(slug || "").trim()).filter(Boolean));
+  const chips = (term.relatedTerms || [])
+    .filter((slug) => !excluded.has(String(slug || "").trim()))
+    .map(termLink)
+    .filter(Boolean)
+    .join("");
   if (!chips) return "";
-  return `<section class="term-link-section" aria-labelledby="related-terms-title">
+  const title = options.title || "Verwandte Begriffe";
+  const eyebrow = options.eyebrow || "Verknüpfungen";
+  const id = options.id || "related-terms-title";
+  return `<section class="term-link-section" aria-labelledby="${esc(id)}">
           <div>
-            <p class="section-eyebrow">Verknüpfungen</p>
-            <h2 id="related-terms-title">Verwandte Begriffe</h2>
+            <p class="section-eyebrow">${esc(eyebrow)}</p>
+            <h2 id="${esc(id)}">${esc(title)}</h2>
           </div>
           <div class="term-chip-row">
             ${chips}
@@ -812,27 +851,55 @@ function parseSource(value) {
   };
 }
 
-function sourceList(term) {
+// Herkunftsangaben wie „interne Quelle“ gehören zur Provenienz, nicht zum
+// sichtbaren Titel. Sie dürfen eine valide Quellenarchiv-Verknüpfung nicht
+// ausblenden. Redaktionelle Arbeitsmarker bleiben dagegen unsichtbar.
+function publicSourceType(value) {
+  const type = publicText(value).trim();
+  if (!type || /^(?:interne|externe)\s+quelle$/i.test(type)) return "";
+  return containsForbiddenPublicText(type) ? "" : type;
+}
+
+function archiveSourcePath(value) {
+  const match = String(value || "").match(/(?:^|\/)quellenarchiv\/([a-z0-9-]+)\/?$/i);
+  return match ? `/quellenarchiv/${match[1].toLowerCase()}/` : "";
+}
+
+function sourceList(term, options = {}) {
+  const excluded = new Set(asList(options.excludeUrls).map(archiveSourcePath).filter(Boolean));
   const curatedSources = asList(term.curatedSources || term.curated_sources);
   const rows = [
-    ...((curatedSources.length ? curatedSources : (term.sourceLinks || term.source_links || [])).map(parseSource)),
-    ...((curatedSources.length ? [] : (term.officialSources || [])).map(parseSource)),
+    ...curatedSources.map(parseSource),
+    ...asList(term.sourceLinks || term.source_links).map(parseSource),
+    ...asList(term.officialSources).map(parseSource),
   ].map((item) => ({
     ...item,
     label: publicText(item.label),
-    type: publicText(item.type),
+    type: publicSourceType(item.type),
   })).filter((item, index, all) => {
     if (!hasRealText(item.label)) return false;
-    if (containsForbiddenPublicText(item.label) || containsForbiddenPublicText(item.type)) return false;
-    if (!item.url && !/ISBN|Verlag|Buch|Kapitel/i.test(item.type || item.label)) return false;
+    if (containsForbiddenPublicText(item.label)) return false;
+    if (!/^\/quellenarchiv\/[a-z0-9-]+\/?$/i.test(item.url)) return false;
     if (/\.(md|docx?|rtf|txt)(\?|#|$)/i.test(item.url || item.label)) return false;
+    if (excluded.has(archiveSourcePath(item.url))) return false;
     return all.findIndex((candidate) => `${candidate.label}|${candidate.url}` === `${item.label}|${item.url}`) === index;
-  });
+  }).filter((item, index, entries) => entries.findIndex((candidate) => `${candidate.label}|${candidate.url}` === `${item.label}|${item.url}`) === index);
   if (!rows.length) return "";
-  return `<ul class="clean-list">${rows.slice(0, 8).map((item) => {
+  return `<ul class="clean-list">${rows.map((item) => {
     const label = item.type && !containsForbiddenPublicText(item.type) ? `${item.label} (${item.type})` : item.label;
     return item.url ? `<li><a class="text-link" href="${esc(item.url)}">${esc(label)}</a></li>` : `<li>${esc(label)}</li>`;
   }).join("")}</ul>`;
+}
+
+function additionalSourceList(term, knownArchiveSources = []) {
+  const sources = sourceList(term, { excludeUrls: knownArchiveSources.map((source) => source.url) });
+  return sources ? `<h3>Weitere dokumentierte Quellen</h3>${sources}` : "";
+}
+
+function sourceProvenanceNote(term) {
+  const provenance = publicText(term.sourceProvenance || "");
+  if (!hasRealText(provenance) || containsForbiddenPublicText(provenance)) return "";
+  return `<p class="source-provenance"><strong>Quellenstatus:</strong> ${esc(provenance)}</p>`;
 }
 
 const centralTermDetails = new Map([
@@ -842,7 +909,8 @@ const centralTermDetails = new Map([
   ["wirkung", ["Sie macht sichtbar, ob sich Zustände tatsächlich verändern, statt nur Aktivität, Geld oder Reichweite zu zählen.", "Nicht jede Wirkung ist positiv. Der Begriff ist neutral und braucht Bewertung.", "Ein billiges Produkt kann verkauft werden und trotzdem Wasser, Gesundheit oder Arbeitsrechte belasten.", ["Wirkung ist kein Gütesiegel.", "Wirkung ersetzt keine demokratische Entscheidung."], [["Kompass", "../../kompass.html"], ["WÖk-Scanner", "../../anwendungen/scanner.html"]], [["Wirkungsfelder", "../../wirkungsfelder/"]]]],
   ["wirkungspotenzial", ["Es hilft, frühe Hinweise zu Wirkungspfaden zu erkennen, ohne eine endgültige Bewertung vorzutäuschen.", "Potenzial ist keine Faktenprüfung, keine Zertifizierung und kein fertiger Score.", "Ein Medienbeitrag kann Polarisierungspotenzial haben, ohne dass jede Reaktion vorhergesagt wird.", ["Potenzial ist nicht Ergebnis.", "Ein Prüfhinweis ist kein Urteil."], [["WÖk-Scanner", "../../anwendungen/scanner.html"]], [["Medien & Öffentlichkeit", "../../wirkungsfelder/medien-oeffentlichkeit/"]]]],
   ["positive-netto-wirkung", ["Sie verhindert, dass einzelne gute Effekte schwere Schäden überdecken.", "Positive Netto-Wirkung ist keine Schönrechnung und kein einfacher Durchschnitt.", "Ein klimafreundliches Produkt kann wegen schwerer Arbeitsrechtsprobleme trotzdem kritisch bleiben.", ["Netto heißt nicht, dass alles verrechnet werden darf.", "Wirkungsgrenzen bleiben wirksam."], [["Reverse Merit Order", "../../werkzeuge/reverse-merit-order/"], ["Scorecards", "../../werkzeuge/scorecards/"]], [["Produkte & Konsum", "../../wirkungsfelder/produkte-konsum/"]]]],
-  ["wirkungsrueckkopplung", ["Sie macht Wirkung entscheidungsrelevant, indem sie in Preise, Budgets, Kapital oder Regeln zurückgeführt wird.", "Sie ist keine zentrale Planwirtschaft und keine automatische Entscheidung.", "Eine Produktsteuer kann steigen oder sinken, wenn geprüfte Produktwirkung schlechter oder besser wird.", ["Rückkopplung ist nicht nur Strafe.", "Rechtsschutz und demokratische Kontrolle bleiben nötig."], [["Wirkungsumsatzsteuer", "../../werkzeuge/wirkungsumsatzsteuer/"], ["Automatisierungsrechner", "../../erleben/automatisierungs-wirkungseinkommensrechner/"]], [["Arbeit & Einkommen", "../../wirkungsfelder/arbeit-einkommen/"]]]],
+  ["wirkungslenkung", ["Sie trennt die Entscheidung über Ziele, Schutzgrenzen und Instrumente von der späteren Prüfung, ob diese Entscheidung wirkt.", "Wirkungslenkung ist weder Reporting noch eine Bewertung von Menschen. Sie ist auch nicht die Rückmeldung aus einer bereits beobachteten Veränderung.", "Eine Kommune legt für ein Beschaffungsvorhaben eine Schutzgrenze, eine zuständige Stelle, einen Einspruchsweg und nachvollziehbare Kriterien fest.", ["Ein Instrument darf schwere Schäden nicht durch gute Teilwerte verrechnen.", "Ziele und Regeln brauchen demokratische Legitimation und Rechtsschutz."], [["Reverse Merit Order", "../../werkzeuge/reverse-merit-order/"], ["Impact Controlling", "../../werkzeuge/impact-controlling/"]], [["Staat, Recht & Demokratie", "../../wirkungsfelder/staat-recht-demokratie/"]]]],
+  ["wirkungsrueckkopplung", ["Sie macht sichtbar, ob eine zuvor festgelegte Lenkung unter realen Bedingungen verändert, ausgesetzt oder beendet werden muss.", "Sie ist keine automatische Übertragung eines Scores in Preis, Steuer oder Förderung. Solche Regeln gehören zur Wirkungslenkung.", "Nach einem kommunalen Pilotprojekt werden Baseline, beobachtete Veränderung, Datenlücken und Nebenwirkungen geprüft, bevor die Regel angepasst wird.", ["Rückkopplung ist ein Lernprozess, keine automatische Strafe.", "Rechtsschutz, Datenschutz und demokratische Kontrolle bleiben nötig."], [["Impact Controlling", "../../werkzeuge/impact-controlling/"], ["Wirkungshaushalt", "../../werkzeuge/wirkungshaushalt/"]], [["Staat, Recht & Demokratie", "../../wirkungsfelder/staat-recht-demokratie/"]]]],
   ["wirkungsblindheit", ["Sie erklärt, warum schädliche Folgen wirtschaftlich erfolgreich erscheinen können.", "Wirkungsblindheit ist kein Absichtsvorwurf gegen einzelne Personen.", "Ein Algorithmus optimiert Klicks und übersieht Vertrauen, Diskursqualität oder Polarisierung.", ["Blindheit heißt nicht, dass keine Wirkung existiert.", "Sie heißt: Die Wirkung fehlt im Steuerungssystem."], [["WÖk-Scanner", "../../anwendungen/scanner.html"]], [["Digitalisierung & KI", "../../portale/digitalisierung-ki-wirkungsdatenraeume/"]]]],
   ["reverse-merit-order", ["Sie schützt vor dem Schönrechnen schwerer Schäden durch gute Werte an anderer Stelle.", "Sie ist kein einfacher Durchschnitt und keine Strafliste.", "Gute Klimawerte heben schwere Kinderrechtsverletzungen in einer Lieferkette nicht auf.", ["Nicht jede Schwäche blockiert alles.", "Entscheidend sind definierte Wirkungsgrenzen."], [["Reverse Merit Order", "../../werkzeuge/reverse-merit-order/"], ["Produktwirkung testen", "../../erleben.html#simulator"]], [["Produkte & Konsum", "../../wirkungsfelder/produkte-konsum/"]]]],
   ["social-taxonomy", ["Sie macht soziale Wirkung in Märkten entscheidungsfähig: Arbeit, Grundversorgung, Teilhabe, Gemeinschaften und Demokratie werden nicht nur berichtet, sondern prüfbar eingeordnet.", "Social Taxonomy ist Stand 27. Mai 2026 kein verbindliches eigenständiges EU-Rechtsinstrument und keine Personenbewertung.", "Ein Wohnprojekt wird nach Energie, Bezahlbarkeit, Verdrängungsrisiko, Gesundheit, Beteiligung und lokaler Wirkung betrachtet.", ["Nicht mit EU-Umwelt-Taxonomie verwechseln.", "Keine Social-Credit-Logik.", "Positive soziale Beiträge ersetzen keine roten Linien."], [["Scorecards", "../../werkzeuge/scorecards/"], ["Reverse Merit Order", "../../werkzeuge/reverse-merit-order/"]], [["Finanzsystem & Kapital", "../../wirkungsfelder/finanzsystem-kapital/"], ["Wirtschaft & Unternehmen", "../../wirkungsfelder/wirtschaft-unternehmen/finanzmarktanforderungen/"]]]],
@@ -1099,10 +1167,13 @@ function relationChip(value) {
   const target = relatedContentTargets.get(key) || relatedContentTargets.get(normalized);
   if (target) return `<a class="term-chip" href="${esc(target[1])}">${esc(target[0])}</a>`;
   if (raw.href) return `<a class="term-chip" href="${esc(raw.href)}">${esc(raw.label)}</a>`;
-  const term = termsBySlug.get(key) || termsBySlug.get(normalized);
+  const term = termsBySlug.get(key)
+    || termsBySlug.get(normalized)
+    || unambiguousRelationTerms.get(normalizedLabel(key));
   if (term) return `<a class="term-chip" href="../../begriffe/${esc(term.slug)}/">${esc(term.canonicalLabel)}</a>`;
-  const label = isSlugLike(raw.label || key) ? humanizeSlug(raw.label || key) : raw.label || key;
-  return label ? `<span class="term-chip muted">${esc(label)}</span>` : "";
+  // A relation without a verified target is omitted rather than rendered as a
+  // dead-looking chip. Its source data is caught by the registry curation gate.
+  return "";
 }
 
 function relationGroup(title, values) {
@@ -1234,11 +1305,14 @@ function sourceReferenceBlock(term) {
   const source = publicText(term.sourceDocument || term.source_document || "");
   const sourceSection = publicText(term.sourceSection || term.source_section || "");
   if (containsForbiddenPublicText(sourceUrl) || containsForbiddenPublicText(source) || containsForbiddenPublicText(sourceSection)) return "";
-  if (!sourceUrl && (!source || /\.(md|docx?|rtf|txt)(\?|#|$)/i.test(source))) return "";
-  const reference = resolveContentReference(sourceUrl || source, {
+  // Interne Arbeitsdateien sind keine veröffentlichungsfähigen Quellen. Die
+  // verbindlichen Nachweise werden ausschließlich über die Quellenliste und
+  // deren Detailseiten im Quellenarchiv ausgegeben.
+  if (!/^\/quellenarchiv\/[a-z0-9-]+\/?$/i.test(sourceUrl)) return "";
+  const reference = resolveContentReference(sourceUrl, {
     fallbackTitle: source,
     scopeLabel: sourceSection,
-    allowTextFallback: !sourceUrl,
+    allowTextFallback: false,
     relevanceReason: "source",
   });
   if (!reference) return "";
@@ -1290,7 +1364,9 @@ function deepGlossarySectionsBlock(term) {
       const body = normalizedPublicText(section.body);
       const duplicateLead = body && body === lead;
       const duplicateSummarySection = /kurzdefinition|hover/.test(title) && duplicateLead;
-      return !containsForbiddenPublicText(section.title) && !duplicateSummarySection && !duplicateLead && (paragraphs(section.body) || section.items.length);
+      return !containsForbiddenPublicText(section.title)
+        && !/^(redaktionelle\s+metadaten|redaktionsnotiz|arbeitsnotiz)$/i.test(title)
+        && !duplicateSummarySection && !duplicateLead && (paragraphs(section.body) || section.items.length);
     });
   if (!publicSections.length) return "";
   return `
@@ -1409,7 +1485,7 @@ function termTypeLabel(term) {
 
 function termRelatedLabels(term, limit = 8) {
   return (term.relatedTerms || [])
-    .map((slug) => termsBySlug.get(slug)?.canonicalLabel || slug)
+    .map((slug) => (termsBySlug.get(slug) || termsByLookup.get(normalizedLabel(slug)))?.canonicalLabel || "")
     .filter(Boolean)
     .slice(0, limit);
 }
@@ -1486,6 +1562,11 @@ function termDefinitionHtml(term) {
     return `<p>Der Begriff bezeichnet die drei übergeordneten Wirkungsdimensionen der Wirkungsökonomie. Mensch steht für soziale Gerechtigkeit, Gesundheit, Bildung, Teilhabe, Würde und Sicherheit. Planet steht für Klima, Ressourcen, Wasser, Boden, Biodiversität, Energie und Regeneration. Demokratie steht für Rechtsstaatlichkeit, Medienqualität, Diskursfähigkeit, institutionelles Vertrauen, gesellschaftlichen Zusammenhalt und digitale Selbstbestimmung.</p>
             <p>Damit sind Mensch, Planet und Demokratie keine zusätzlichen UN-Ziele. Sie sind die kommunikative Ordnung, mit der die Wirkungsökonomie die SDGs, die Agenda 2030 und SDG+ verständlich zusammenführt.</p>`;
   }
+  // Registry-derived long definitions reuse the already structured WÖk
+  // relation and/or usage note below. Rendering the same source field here
+  // would show a paragraph twice. The lead remains the definition; the
+  // following cards expose the additional scope exactly once.
+  if (term.definitionDetailBasis === "vorhandene-einordnung-oder-anwendung") return "";
   const definition = String(term.longDefinition || term.long_definition || term.definition || "").trim();
   const lead = publicText(termLead(term));
   const prefix = definition.slice(0, lead.length);
@@ -2136,7 +2217,7 @@ function sozialeInfrastrukturDetailBody(term) {
           </div>
         </section>${relatedContentBlock(term)}
         <section class="meta-box">
-          <h2>Version und Quellen</h2>
+          <h2>Quellen und Einordnung</h2>
           <p>Kategorie: ${esc(term.category || "Begriff")} · Version: ${esc(term.version)}</p>
           ${sourceReferenceBlock(term)}
           ${sourceList(term)}
@@ -2144,8 +2225,27 @@ function sozialeInfrastrukturDetailBody(term) {
       </article>`;
 }
 
+function archiveSourceList(sources) {
+  return `<ul class="clean-list">${sources.map((source) => `<li><a class="text-link" href="${esc(source.url)}">${esc(source.title)}</a> <span aria-label="Quellenarchiv-Code">(${esc(source.code)})</span>${source.proves ? `: ${esc(source.proves)}` : ""}</li>`).join("")}</ul>`;
+}
+
+const stateArchiveSources = [
+  {
+    code: "WÖK-Q-0157",
+    title: "Grundgesetz (GG)",
+    url: "../../quellenarchiv/wok-q-0157/",
+    proves: "Rechtsgrundlage für Demokratie, Rechtsstaat, Grundrechte, Gesetzgebung und staatliche Ordnung in Deutschland.",
+  },
+  {
+    code: "WÖK-Q-0428",
+    title: "Bundeszentrale für politische Bildung: Politisches System",
+    url: "../../quellenarchiv/wok-q-0428/",
+    proves: "allgemeinverständliche Einordnung politischer Institutionen, Verfahren und Demokratie.",
+  },
+];
+
 function staatDetailBody(term) {
-  const stateSources = [
+  const stateFurtherReading = [
     {
       title: "Staat als Wirkungsarchitektur und Resilienzstaat",
       url: "../../wirkungsfelder/staat-recht-demokratie/staat-als-wirkungsarchitektur-resilienzstaat/",
@@ -2158,18 +2258,6 @@ function staatDetailBody(term) {
       type: "Wirkungsfeld",
       proves: "Ordnet Staat, Recht, Demokratie, Wirkungsrat und Wirkungssteuerung im WÖk-System ein.",
     },
-    {
-      title: "Grundgesetz für die Bundesrepublik Deutschland",
-      url: "https://www.gesetze-im-internet.de/gg/",
-      type: "Primärquelle",
-      proves: "Rechtsgrundlage für Demokratie, Rechtsstaat, Grundrechte, Gesetzgebung und staatliche Ordnung in Deutschland.",
-    },
-    {
-      title: "Bundeszentrale für politische Bildung: Politisches System",
-      url: "https://www.bpb.de/themen/politisches-system/",
-      type: "Externe Einordnung",
-      proves: "Allgemeinverständliche staatskundliche Einordnung politischer Institutionen, Verfahren und Demokratie.",
-    },
   ];
   return `      <article class="article-shell glossary-detail">
         <nav class="breadcrumb"><a href="../">Begriffe</a> / Staat</nav>
@@ -2177,7 +2265,7 @@ function staatDetailBody(term) {
           <p class="hero-kicker">Anschlussbegriff</p>
           <h1>Staat</h1>
           <p class="lead">Der Staat ist die dauerhafte politische und rechtliche Ordnung eines Landes. Er umfasst Staatsgebiet, Staatsvolk, Staatsgewalt, Verfassung, Gesetze, Institutionen, Gerichte, Verwaltung und Behörden. Die Regierung kann wechseln; der Staat bleibt bestehen.</p>
-          <div class="term-meta-row" aria-label="Begriffsinformation"><span>Anschlussbegriff</span>${term.version ? `<span>Stand / Version ${esc(term.version)}</span>` : ""}</div>
+          <div class="term-meta-row" aria-label="Begriffsinformation"><span>Anschlussbegriff</span></div>
           <div class="term-action-row">${detailLinks(term)}</div>
         </header>
         <section class="term-summary-card" aria-labelledby="staat-summary-title">
@@ -2221,9 +2309,13 @@ function staatDetailBody(term) {
         ${relatedTermsChips(term)}${relatedContentBlock(term)}
         <section class="meta-box">
           <h2>Quellen und Vertiefungen</h2>
+          <h3>Quellenarchiv</h3>
+          ${archiveSourceList(stateArchiveSources)}
+          ${additionalSourceList(term, stateArchiveSources)}
+          <h3>Weiterlesen in der Wirkungsökonomie</h3>
           <div class="related-document-list content-reference-list">
-            ${stateSources.map((source) => `<article class="content-reference-card">
-              <span class="content-reference-card__badge">Quelle</span>
+            ${stateFurtherReading.map((source) => `<article class="content-reference-card">
+              <span class="content-reference-card__badge">Vertiefung</span>
               <h4 class="content-reference-card__heading"><a class="content-reference-card__title" href="${esc(source.url)}">${esc(source.title)}</a></h4>
               <div class="content-reference-card__meta">${esc(source.type)}</div>
               <p class="content-reference-card__description"><strong>Belegt hier:</strong> ${esc(source.proves)}</p>
@@ -2253,6 +2345,60 @@ function financeCard(eyebrow, title, html) {
           ${html}
         </section>`;
 }
+
+const impactOfInvestmentArchiveSources = [
+  {
+    code: "WÖK-Q-0329",
+    title: "OECD DAC Criteria: Impact",
+    url: "../../quellenarchiv/wok-q-0329/",
+    proves: "ordnet die Prüfung tatsächlicher und erwarteter Veränderungen methodisch ein.",
+  },
+  {
+    code: "WÖK-Q-0446",
+    title: "Social Value International / SROI",
+    url: "../../quellenarchiv/wok-q-0446/",
+    proves: "bietet einen Vergleichspunkt für die nachvollziehbare Bewertung sozialer und ökologischer Wirkungen.",
+  },
+  {
+    code: "WÖK-Q-0162",
+    title: "OECD – Recommendation on Budgetary Governance",
+    url: "../../quellenarchiv/wok-q-0162/",
+    proves: "beschreibt Anforderungen an transparente, überprüfbare öffentliche Haushaltssteuerung.",
+  },
+  {
+    code: "WÖK-Q-0443",
+    title: "PEFA Framework",
+    url: "../../quellenarchiv/wok-q-0443/",
+    proves: "liefert einen Rahmen für Rechenschaft, Steuerung und Kontrolle öffentlicher Finanzen.",
+  },
+];
+
+const publicFinanceArchiveSources = [
+  {
+    code: "WÖK-Q-0152",
+    title: "Bundeshaushaltsordnung (BHO)",
+    url: "../../quellenarchiv/wok-q-0152/",
+    proves: "setzt in Deutschland zentrale Regeln für Haushaltsführung und Wirtschaftlichkeit öffentlicher Mittel.",
+  },
+  {
+    code: "WÖK-Q-0162",
+    title: "OECD – Recommendation on Budgetary Governance",
+    url: "../../quellenarchiv/wok-q-0162/",
+    proves: "ordnet transparente Ziele, Evaluation und Rechenschaft in der Haushaltssteuerung ein.",
+  },
+  {
+    code: "WÖK-Q-0443",
+    title: "PEFA Framework",
+    url: "../../quellenarchiv/wok-q-0443/",
+    proves: "bietet Kriterien für glaubwürdige öffentliche Finanzverwaltung und Kontrolle.",
+  },
+  {
+    code: "WÖK-Q-0329",
+    title: "OECD DAC Criteria: Impact",
+    url: "../../quellenarchiv/wok-q-0329/",
+    proves: "liefert einen methodischen Bezug für die Prüfung von Wirkungen und Nebenwirkungen.",
+  },
+];
 
 function financeQuestionList() {
   return listItems([
@@ -2307,7 +2453,7 @@ const financeRelatedTerms = [
 ];
 
 function impactOfInvestmentDetailBody(term) {
-  const formula = publicText(term.formula?.expression || "IOI = positive Netto-Wirkung / Investitionssumme");
+  const formula = publicText(term.formula?.expression || "IOI = Barwert des direkten Nettonutzens in EUR / Barwert des Kapitaleinsatzes in EUR");
   const formulaMarkup = formulaExpressionHtml(term.formula || {}, formula);
   return `      <article class="article-shell glossary-detail">
         <nav class="breadcrumb"><a href="../">Begriffe</a> / Impact-of-Investment / IOI</nav>
@@ -2319,7 +2465,7 @@ function impactOfInvestmentDetailBody(term) {
         </header>
         ${financeCard("Auf einen Blick", "Was IOI zeigt", listItems([
           "IOI steht für Impact-of-Investment.",
-          "IOI fragt, welche positive Netto-Wirkung pro investiertem Kapital entsteht.",
+          "IOI ist eine Euro-zu-Euro-Kennzahl für direkten Nettonutzen je investiertem Kapital.",
           `Formelhaft: ${formula}.`,
           "IOI ist investitionsbezogen; der Kapitaleinsatz kann öffentlich oder privat sein.",
           "IOI ist kein Autopilot: Nichtkompensation, Grundrechte, Realressourcen, Datenqualität und demokratische Rückkopplung bleiben nötig."
@@ -2329,21 +2475,21 @@ function impactOfInvestmentDetailBody(term) {
           <p class="section-eyebrow">Rechnung</p>
           <h2>Grundformel</h2>
           <div class="term-section-grid">
-            <section class="term-section-card"><h3>Vereinfachte Formel</h3>${formulaMarkup}<p>Die positive Netto-Wirkung kann monetarisiert, als Punktwert, Index oder qualitative Wirkungsbilanz dargestellt werden.</p></section>
-            <section class="term-section-card"><h3>Wichtige Grenzen</h3><p>Die Formel ist nur sinnvoll, wenn Bilanzgrenzen, Zeithorizont, Zielgruppen, Nebenwirkungen, Wirkungsrisiken, Datenqualität und Nichtkompensation transparent sind.</p></section>
-            <section class="term-section-card"><h3>Öffentliche Finanzen</h3><p>In der Wirkungsfinanzpolitik hilft IOI, Ausgaben, Subventionen, Investitionen und Schulden nach ihrer Wirkungseffizienz zu vergleichen.</p></section>
+            <section class="term-section-card"><h3>Vereinfachte Formel</h3>${formulaMarkup}<p>Ein Bruch ergibt nur dann eine vergleichbare Verhältniszahl, wenn Zähler und Nenner dieselbe Einheit haben. Für IOI sind das Euro derselben Preisbasis. Ein Punktwert oder Index kann als klar benannte Wirkungsintensität, zum Beispiel „NWI-Punkte je Euro“, berichtet werden; er ist dann kein dimensionsloser IOI. Eine rein qualitative Bilanz bildet keine Rechenbasis für einen Quotienten.</p></section>
+            <section class="term-section-card"><h3>Wichtige Grenzen</h3><p>Direkter Nutzen, Schäden und Kosten müssen innerhalb derselben Bilanzgrenze, desselben Zeithorizonts und derselben Preisbasis erfasst sein. Zurechnung, Counterfactual, Verdrängung, Unsicherheit, Datenqualität und Nichtkompensation sind offenzulegen. Ein geschlossenes Schutz-Gate blockiert eine positive IOI-Ausweisung.</p></section>
+            <section class="term-section-card"><h3>Öffentliche Finanzen</h3><p>Für öffentliche Investitionen ist IOI nur bei vergleichbarer Zweck-, Zeit- und Preisbasis aussagekräftig. Er hilft, Wirkungsannahmen zu prüfen; er entscheidet weder über Grundrechte noch über demokratische Prioritäten.</p></section>
           </div>
         </section>
         <section class="term-summary-card">
           <p class="section-eyebrow">Abgrenzung</p>
           <h2>Nicht verwechseln mit</h2>
           <div class="term-section-grid">
-            <section class="term-section-card"><h3>ROI</h3><p>ROI misst finanzielle Rendite. IOI misst positive Netto-Wirkung pro Euro. Ein Projekt kann hohen ROI und niedrigen IOI haben - oder umgekehrt.</p></section>
-            <section class="term-section-card"><h3>SROI</h3><p>SROI monetarisiert soziale und ökologische Nutzen. IOI ist breiter als Kennzahl der Wirkungseffizienz und kann auch mit nicht-monetären Wirkungswerten arbeiten.</p></section>
-            <section class="term-section-card"><h3>T-SROI</h3><p>T-SROI fragt zusätzlich nach Transformationswirkung: Verändert die Investition Standards, Märkte, Infrastrukturen, Anreize oder Pfade?</p></section>
-            <section class="term-section-card"><h3>NWI</h3><p>Der Netto-Wirkungs-Index bündelt positive und negative Wirkungen. IOI setzt diese Wirkung ins Verhältnis zum eingesetzten Kapital.</p></section>
-            <section class="term-section-card"><h3>Wirkungsökonomischer Wirkungsgrad</h3><p>Der wirkungsökonomische Wirkungsgrad kann jeden klar benannten Einsatz ins Verhältnis zur positiven Netto-Wirkung setzen. IOI ist dessen investitionsbezogene Variante: Sein Nenner ist das investierte Kapital.</p></section>
-            <section class="term-section-card"><h3>Fiskalischer Wirkungsgrad</h3><p>Der fiskalische Wirkungsgrad bezieht sich auf einen öffentlichen Euro. IOI kann sich mit ihm bei einer öffentlichen Investition überschneiden, ist aber nicht auf öffentliche Mittel beschränkt.</p></section>
+            <section class="term-section-card"><h3>ROI</h3><p>ROI misst finanzielle Rendite. IOI misst einen monetär bewerteten direkten Nettonutzen je Kapitaleuro. Ein Projekt kann hohen ROI und niedrigen IOI haben - oder umgekehrt.</p></section>
+            <section class="term-section-card"><h3>SROI</h3><p>SROI monetarisiert soziale und ökologische Nutzen. Auch dort gilt: Nur Eurogrößen derselben Preisbasis dürfen in eine Euro-Ratio eingehen. Nicht-monetäre Wirkungsprofile bleiben daneben sichtbar.</p></section>
+            <section class="term-section-card"><h3>T-SROI</h3><p>T-SROI schließt zusätzlich separat belegte transformative Nutzenströme ein, etwa aus dauerhaft veränderter Infrastruktur oder Regeln. Sie sind kein freier Multiplikator.</p></section>
+            <section class="term-section-card"><h3>NWI</h3><p>Der Netto-Wirkungs-Index bündelt positive und negative Wirkungen auf einer dokumentierten Skala und bildet die Schutzprüfung ab. Ohne eigenständige Monetarisierung wird er nicht zum IOI-Zähler.</p></section>
+            <section class="term-section-card"><h3>Wirkungsökonomischer Wirkungsgrad</h3><p>Ein Wirkungsgrad kann andere Ressourcen als Kapital ins Verhältnis zu einer Wirkung setzen. Seine Einheit muss dann ausgesprochen werden, etwa Punkte je Stunde oder Emissionsminderung je Kilowattstunde. IOI ist die monetäre Kapitalvariante.</p></section>
+            <section class="term-section-card"><h3>Fiskalischer Wirkungsgrad</h3><p>Der fiskalische Wirkungsgrad bezieht sich auf einen öffentlichen Euro. Er muss seine Einheit ebenso offenlegen; IOI kann sich bei einer öffentlichen Investition überschneiden, ist aber nicht auf öffentliche Mittel beschränkt.</p></section>
             <section class="term-section-card"><h3>Impact Investing</h3><p>Impact Investing ist eine Markt- und Investitionspraxis. IOI ist eine Bewertungsfrage: Welche reale Wirkung entsteht durch den Kapitaleinsatz?</p></section>
             <section class="term-section-card"><h3>ESG</h3><p>ESG beschreibt Umwelt-, Sozial- und Governance-Faktoren. IOI fragt konkreter nach tatsächlicher Zustandsveränderung.</p></section>
           </div>
@@ -2376,10 +2522,19 @@ function impactOfInvestmentDetailBody(term) {
             <a class="term-chip" href="../../begriffe/oeffentliche-finanzen-schulden-wirkung/">Glossar-Cluster</a>
           </div>
         </section>
+        ${relatedTermsChips(term, {
+          excludeSlugs: ["wirkungsfinanzpolitik", "wirkungshaushalt", "wirkungspruefung-oeffentlicher-mittel", "positive-netto-wirkung", "nwi", "t-sroi", "wirkschulden", "blindschulden", "verlustschulden", "public-purpose"],
+          title: "Weitere verknüpfte Begriffe",
+          id: "ioi-related-additional",
+        })}
         <section class="meta-box">
-          <h2>Version und Quellen</h2>
-          <p>Kategorie: Messbegriff · Version: ${esc(term.version || "2026-06-12")} · Stand: 12. Juni 2026</p>
-          <p>Vertiefung: <a class="text-link" href="../../dokumente/wirkungsfinanzpolitik/">Arbeitspapier Wirkungsfinanzpolitik</a>, <a class="text-link" href="../../begriffe/wirkungsfinanzpolitik/">Wirkungsfinanzpolitik</a> und <a class="text-link" href="../../begriffe/oeffentliche-finanzen-schulden-wirkung/">Glossar-Cluster öffentliche Finanzen, Schulden und Wirkung</a>.</p>
+          <h2>Quellen und Einordnung</h2>
+          <p>Kategorie: Messbegriff</p>
+          <p><strong>Modellstatus:</strong> IOI ist hier eine wirkungsökonomische Bewertungslogik, keine amtlich normierte Kennzahl. Eine IOI-Aussage ist nur nachvollziehbar, wenn Bilanzgrenze, Zeitraum, Zielgruppe, Datenqualität, Nebenwirkungen und Nichtkompensation offengelegt sind.</p>
+          <h3>Quellenarchiv</h3>
+          ${archiveSourceList(impactOfInvestmentArchiveSources)}
+          ${additionalSourceList(term, impactOfInvestmentArchiveSources)}
+          <p>Weiterlesen: <a class="text-link" href="../../dokumente/wirkungsfinanzpolitik/">Arbeitspapier Wirkungsfinanzpolitik</a>, <a class="text-link" href="../../begriffe/wirkungsfinanzpolitik/">Wirkungsfinanzpolitik</a> und <a class="text-link" href="../../begriffe/oeffentliche-finanzen-schulden-wirkung/">Glossar-Cluster öffentliche Finanzen, Schulden und Wirkung</a>.</p>
         </section>
       </article>`;
 }
@@ -2396,7 +2551,7 @@ const debtClassContent = {
     definition: `<p><strong>Wirkschulden sind öffentliche Schulden, die nachweislich oder plausibel positive Netto-Wirkung erzeugen, künftige Risiken senken, Resilienz erhöhen oder spätere Folgekosten vermeiden.</strong></p><p>Sie entstehen, wenn der Staat Kredite aufnimmt, um reale Zustandsverbesserungen zu ermöglichen: bessere Bildung, stabilere Infrastruktur, geringere Klimarisiken, stärkere öffentliche Gesundheit, höhere Sicherheit oder demokratische Resilienz.</p><p><strong>Wirkschulden finanzieren nicht bloß Ausgaben. Sie finanzieren Zukunftsfähigkeit.</strong></p>`,
     einordnung: `<p>In der Wirkungsökonomie werden Staatsschulden nicht pauschal bewertet. Entscheidend ist nicht allein, ob der Staat Schulden macht, sondern was diese Schulden bewirken.</p><p>Wirkschulden unterscheiden sich von Blindschulden, Verlustschulden und Reparaturschulden dadurch, dass sie nicht nur Geld bewegen, sondern Zustände verbessern. Sie können generationengerecht sein, wenn sie künftige Schäden vermeiden oder Handlungsspielräume erweitern.</p>`,
     verwendung: ["Welcher Zustand verbessert wird.", "Welche positive Netto-Wirkung entsteht.", "Welche Risiken gesenkt werden.", "Welche Folgekosten vermieden werden.", "Welche Wirkung für Mensch, Planet und Demokratie entsteht.", "Welche Daten, Indikatoren oder Wirkpfade die Bewertung stützen."],
-    beispiele: ["Sanierung gefährdeter Brücken.", "Investitionen in Schulen, Kitas und Bildungsinfrastruktur.", "Ausbau erneuerbarer Energien und Stromnetze.", "Klimaanpassung: Hitzeschutz, Wasserspeicherung, Entsiegelung, Hochwasserschutz.", "Pflege- und Gesundheitsinfrastruktur.", "Cybersicherheit und Schutz kritischer Infrastruktur.", "Demokratische Resilienz, Medienkompetenz, Rechtsstaatsstärkung.", "Unterstützung der Ukraine, sofern sie europäische Sicherheit, Abschreckung und demokratische Stabilität stärkt.", "Öffentliche Digitalisierung, wenn sie Zugang, Transparenz und Verwaltungskapazität verbessert."],
+    beispiele: ["Instandsetzung gefährdeter Brücken.", "Investitionen in Schulen, Kitas und Bildungsinfrastruktur.", "Ausbau erneuerbarer Energien und Stromnetze.", "Klimaanpassung: Hitzeschutz, Wasserspeicherung, Entsiegelung, Hochwasserschutz.", "Pflege- und Gesundheitsinfrastruktur.", "Cybersicherheit und Schutz kritischer Infrastruktur.", "Demokratische Resilienz, Medienkompetenz, Rechtsstaatsstärkung.", "Unterstützung der Ukraine, sofern sie europäische Sicherheit, Abschreckung und demokratische Stabilität stärkt.", "Öffentliche Digitalisierung, wenn sie Zugang, Transparenz und Verwaltungskapazität verbessert."],
     abgrenzung: [
       ["Blindschulden", "Blindschulden bewegen Geld, ohne ausreichend nachweisbare positive Zustandsveränderung zu erzeugen. Wirkschulden verbessern Zustände oder senken Risiken plausibel und überprüfbar."],
       ["Verlustschulden", "Verlustschulden erzeugen negative Netto-Wirkung oder stabilisieren destruktive Strukturen. Wirkschulden stärken Zukunftsfähigkeit."],
@@ -2456,7 +2611,7 @@ const debtClassContent = {
     definition: `<p><strong>Reparaturschulden sind öffentliche Schulden, die notwendig werden, um Schäden zu beheben, die durch frühere Unterlassung, Fehlsteuerung oder negative Wirkung entstanden sind.</strong></p><p>Sie können nötig sein, um Brücken, Schulen, Gesundheitssysteme, soziale Infrastruktur, Ökosysteme, Sicherheitsfähigkeit oder demokratisches Vertrauen wiederherzustellen.</p><p><strong>Reparaturschulden sind oft der Preis früherer Wirkungslücken.</strong></p>`,
     einordnung: `<p>Die Wirkungsökonomie bewertet Reparatur nicht als falsch. Wenn Schaden entstanden ist, kann Reparatur hohe positive Wirkung haben. Problematisch wird es, wenn Reparaturschulden regelmäßig entstehen, weil Prävention, Instandhaltung und Transformation verschleppt wurden.</p><p>Wirkungsfinanzpolitik macht sichtbar, dass Nicht-Handeln keine kostenlose Option ist. Unterlassung kann spätere Reparaturschulden erzeugen.</p>`,
     verwendung: ["Wenn Schäden bereits eingetreten sind.", "Wenn frühere Unterlassung, Fehlsteuerung oder negative Wirkung sichtbar wird.", "Wenn spätere Schadensbehebung teurer ist als frühere Prävention gewesen wäre.", "Wenn Reparatur zwar notwendig ist, aber keine strukturelle Lösung ersetzt.", "Wenn aus Reparaturdaten künftige Präventionsentscheidungen folgen sollen."],
-    beispiele: ["Kreditfinanzierte Sanierung maroder Brücken nach jahrelanger Unterlassung.", "Wiederaufbau nach Hochwasserschäden, die durch fehlende Klimaanpassung verschärft wurden.", "Nachfinanzierung von Schulen, Krankenhäusern oder Pflege, weil Instandhaltung verschleppt wurde.", "Reparatur digitaler Verwaltungssysteme nach Sicherheits- und Modernisierungsrückstand.", "Maßnahmen gegen Vertrauensverlust, Polarisierung oder institutionelle Erosion."],
+    beispiele: ["Kreditfinanzierte Instandsetzung maroder Brücken nach jahrelanger Unterlassung.", "Wiederaufbau nach Hochwasserschäden, die durch fehlende Klimaanpassung verschärft wurden.", "Nachfinanzierung von Schulen, Krankenhäusern oder Pflege, weil Instandhaltung verschleppt wurde.", "Reparatur digitaler Verwaltungssysteme nach Sicherheits- und Modernisierungsrückstand.", "Maßnahmen gegen Vertrauensverlust, Polarisierung oder institutionelle Erosion."],
     abgrenzung: [
       ["Wirkschulden", "Wirkschulden können präventiv oder transformativ Zukunft entlasten. Reparaturschulden beheben Schäden, nachdem sie entstanden sind."],
       ["Blindschulden", "Blindschulden wirken unklar. Reparaturschulden haben oft klare Reparaturwirkung, zeigen aber vorherige Wirkungslücken."],
@@ -2503,6 +2658,11 @@ function debtClassDetailBody(term) {
           <div><p class="section-eyebrow">Verknüpfungen</p><h2 id="finance-related-${esc(term.slug)}">Verwandte Begriffe und interne Links</h2></div>
           ${financeChipRow(financeRelatedTerms)}
         </section>
+        ${relatedTermsChips(term, {
+          excludeSlugs: financeRelatedTerms.map(([slug]) => slug),
+          title: "Weitere verknüpfte Begriffe",
+          id: `finance-related-additional-${esc(term.slug)}`,
+        })}
         <section class="term-summary-card">
           <p class="section-eyebrow">FAQ</p>
           <h2>Häufige Fragen</h2>
@@ -2513,9 +2673,13 @@ function debtClassDetailBody(term) {
           </div>
         </section>
         <section class="meta-box">
-          <h2>Version und Quellen</h2>
-          <p>Kategorie: Wirkungsfinanzpolitik · Version: ${esc(term.version || "3.0")} · Stand: 12. Juni 2026</p>
-          <p>Vertiefung: <a class="text-link" href="../../dokumente/wirkungsfinanzpolitik/">Arbeitspapier Wirkungsfinanzpolitik</a>, <a class="text-link" href="../../blog/nicht-schulden-belasten-die-zukunft-schulden-ohne-wirkung.html">Journal-Beitrag</a> und <a class="text-link" href="../../begriffe/oeffentliche-finanzen-schulden-wirkung/">Glossar-Cluster</a>.</p>
+          <h2>Quellen und Einordnung</h2>
+          <p>Kategorie: Wirkungsfinanzpolitik</p>
+          <p><strong>Modellstatus:</strong> Die Schuldenklassen sind Kategorien des WÖk-Modells, keine amtliche Schuldenstatistik. Die Quellen stützen Maßstäbe für Haushaltsführung, Wirkungsprüfung und Rechenschaft; sie begründen keine automatische Freigabe oder Ablehnung einer Finanzierung.</p>
+          <h3>Quellenarchiv</h3>
+          ${archiveSourceList(publicFinanceArchiveSources)}
+          ${additionalSourceList(term, publicFinanceArchiveSources)}
+          <p>Weiterlesen: <a class="text-link" href="../../dokumente/wirkungsfinanzpolitik/">Arbeitspapier Wirkungsfinanzpolitik</a>, <a class="text-link" href="../../blog/nicht-schulden-belasten-die-zukunft-schulden-ohne-wirkung.html">Journal-Beitrag</a> und <a class="text-link" href="../../begriffe/oeffentliche-finanzen-schulden-wirkung/">Glossar-Cluster</a>.</p>
         </section>
       </article>`;
 }
@@ -2572,7 +2736,7 @@ function wirkungsfinanzpolitikDetailBody(term) {
           <div class="term-section-grid">
             <section class="term-section-card"><h3>Wirkungshaushalt</h3><p>Ein Wirkungshaushalt strukturiert Einnahmen, Ausgaben, Kredite, Investitionen und Förderungen nach erwarteter und überprüfter Wirkung.</p></section>
             <section class="term-section-card"><h3>Wirkungsprüfung öffentlicher Mittel</h3><p>Sie fragt vor, während und nach einer Ausgabe, welche Zustandsveränderung entsteht, welche Nebenwirkungen auftreten und ob Korrektur nötig ist.</p></section>
-            <section class="term-section-card"><h3>IOI</h3><p>Impact-of-Investment misst, wie viel positive Netto-Wirkung pro investiertem Euro entsteht. IOI ergänzt ROI und T-SROI, ersetzt aber keine demokratische Abwägung.</p></section>
+            <section class="term-section-card"><h3>IOI</h3><p>Impact-of-Investment misst einen monetär bewerteten direkten Nettonutzen je investiertem Euro. NWI und Schutz-Gate bleiben davon getrennt und sichtbar.</p></section>
             <section class="term-section-card"><h3>T-SROI</h3><p>T-SROI macht Transformationsnutzen, vermiedene Folgekosten und Resilienz als Wirkungsrechnung sichtbar.</p></section>
             <section class="term-section-card"><h3>NWI</h3><p>Der Netto-Wirkungs-Index bündelt positive und negative Wirkungen, ohne nicht kompensierbare Schäden unsichtbar zu machen.</p></section>
             <section class="term-section-card"><h3>Nichtkompensation</h3><p>Schwere negative Wirkungen dürfen nicht automatisch durch positive Wirkungen in anderen Bereichen verrechnet werden.</p></section>
@@ -2631,6 +2795,11 @@ function wirkungsfinanzpolitikDetailBody(term) {
             <a class="term-chip" href="../../begriffe/oeffentliche-finanzen-schulden-wirkung/">Glossar-Cluster</a>
           </div>
         </section>
+        ${relatedTermsChips(term, {
+          excludeSlugs: ["wirkungshaushalt", "wirkungspruefung-oeffentlicher-mittel", "impact-of-investment", "t-sroi", "nwi", "wirkschulden", "blindschulden", "verlustschulden", "reparaturschulden", "praeventionsschulden", "transformationsschulden", "zukunftsschulden", "nicht-finanzielle-staatsschulden", "unterlassungskosten", "wirkungsdisziplin", "public-purpose", "mmt", "functional-finance", "realressourcengrenze", "inflationsgrenze"],
+          title: "Weitere verknüpfte Begriffe",
+          id: "wfp-related-additional",
+        })}
         <section class="term-summary-card">
           <p class="section-eyebrow">FAQ</p>
           <h2>Häufige Fragen</h2>
@@ -2642,9 +2811,13 @@ function wirkungsfinanzpolitikDetailBody(term) {
           </div>
         </section>
         <section class="meta-box">
-          <h2>Version und Quellen</h2>
-          <p>Kategorie: Öffentliche Finanzen, Schulden und Wirkung · Version: ${esc(term.version || "3.0")} · Stand: 12. Juni 2026</p>
-          <p>Vertiefung: <a class="text-link" href="../../dokumente/wirkungsfinanzpolitik/">Arbeitspapier Wirkungsfinanzpolitik</a>, <a class="text-link" href="../../blog/nicht-schulden-belasten-die-zukunft-schulden-ohne-wirkung.html">Journal-Beitrag</a>, <a class="text-link" href="../../wirkungsfelder/wirkungsfinanzpolitik/">Wirkungsfeld</a> und <a class="text-link" href="../../begriffe/oeffentliche-finanzen-schulden-wirkung/">Glossar-Cluster</a>.</p>
+          <h2>Quellen und Einordnung</h2>
+          <p>Kategorie: Öffentliche Finanzen, Schulden und Wirkung</p>
+          <p><strong>Modellstatus:</strong> Wirkungsfinanzpolitik ist ein WÖk-Modell zur Beurteilung öffentlicher Finanzentscheidungen. Die Quellen liefern Maßstäbe für Haushaltssteuerung, Prüfung und Rechenschaft; die politische Entscheidung bleibt demokratisch legitimierten Institutionen vorbehalten.</p>
+          <h3>Quellenarchiv</h3>
+          ${archiveSourceList(publicFinanceArchiveSources)}
+          ${additionalSourceList(term, publicFinanceArchiveSources)}
+          <p>Weiterlesen: <a class="text-link" href="../../dokumente/wirkungsfinanzpolitik/">Arbeitspapier Wirkungsfinanzpolitik</a>, <a class="text-link" href="../../blog/nicht-schulden-belasten-die-zukunft-schulden-ohne-wirkung.html">Journal-Beitrag</a>, <a class="text-link" href="../../wirkungsfelder/wirkungsfinanzpolitik/">Wirkungsfeld</a> und <a class="text-link" href="../../begriffe/oeffentliche-finanzen-schulden-wirkung/">Glossar-Cluster</a>.</p>
         </section>
       </article>`;
 }
@@ -2653,7 +2826,7 @@ const financeClusterTerms = [
   ["wirkungsfinanzpolitik", "Wirkungsfinanzpolitik", "Wirkungsfinanzpolitik steuert öffentliche Einnahmen, Ausgaben, Schulden, Investitionen, Subventionen und Steuern nach positiver Netto-Wirkung."],
   ["wirkungshaushalt", "Wirkungshaushalt", "Ein Wirkungshaushalt strukturiert öffentliche Mittel nach erwarteter und überprüfter Wirkung."],
   ["wirkungspruefung-oeffentlicher-mittel", "Wirkungsprüfung öffentlicher Mittel", "Sie prüft vor, während und nach einer Ausgabe, welche Zustandsveränderung entsteht und ob Korrektur nötig ist."],
-  ["impact-of-investment", "IOI / Impact of Investment", "IOI misst, wie viel positive Netto-Wirkung pro investiertem Euro entsteht."],
+  ["impact-of-investment", "IOI / Impact of Investment", "IOI misst einen monetär bewerteten direkten Nettonutzen je investiertem Euro; NWI und Schutz-Gate bleiben getrennt."],
   ["oeffentlicher-t-sroi", "Öffentlicher T-SROI", "Öffentlicher T-SROI macht Transformationsnutzen, vermiedene Folgekosten, Resilienz und Teilhabe sichtbar."],
   ["wirkschulden", "Wirkschulden", "Wirkschulden erzeugen positive Netto-Wirkung, senken Risiken, erhöhen Resilienz oder vermeiden Folgekosten."],
   ["praeventionsschulden", "Präventionsschulden", "Präventionsschulden werden aufgenommen, um absehbare Schäden, Krisen oder Folgekosten zu vermeiden."],
@@ -2702,10 +2875,18 @@ function financeClusterDetailBody(term) {
             <a class="term-chip" href="../../werkzeuge/t-sroi/">T-SROI</a>
           </div>
         </section>
+        ${relatedTermsChips(term, {
+          excludeSlugs: ["wirkungsfinanzpolitik", "impact-of-investment", "t-sroi"],
+          title: "Weitere verknüpfte Begriffe",
+          id: "cluster-related-additional",
+        })}
         <section class="meta-box">
-          <h2>Version und Schutzlinie</h2>
-          <p>Kategorie: Öffentliche Finanzen, Staat und Demokratie · Version: 3.0 IOI-Erweiterung · Stand: 12. Juni 2026</p>
-          <p>Die Begriffe sind konzeptionelle Arbeitsbegriffe der Wirkungsökonomie. Sie ersetzen keine Rechts-, Steuer-, Finanz-, Anlage- oder Politikberatung.</p>
+          <h2>Quellen und Einordnung</h2>
+          <p>Kategorie: Öffentliche Finanzen, Staat und Demokratie</p>
+          <p><strong>Modellstatus:</strong> Dieses Cluster ordnet Begriffe des WÖk-Modells. Es ersetzt keine Rechts-, Steuer-, Finanz-, Anlage- oder Politikberatung. Die Zuordnung einer konkreten Maßnahme verlangt offen gelegte Annahmen, Daten, Schutzgrenzen und eine demokratisch verantwortete Entscheidung.</p>
+          <h3>Quellenarchiv</h3>
+          ${archiveSourceList(publicFinanceArchiveSources)}
+          ${additionalSourceList(term, publicFinanceArchiveSources)}
         </section>
       </article>`;
 }
@@ -2768,10 +2949,9 @@ function structuredSourceReferenceCard(source) {
 function structuredGlossaryDetailBody(term) {
   const detail = term.structuredDetail;
   if (!detail || typeof detail !== "object") return "";
-  const metaItems = [
-    publicTermType(term),
-    term.version && !containsForbiddenPublicText(term.version) ? `Stand / Version ${publicText(term.version)}` : "",
-  ].filter((item) => hasRealText(item) && !containsForbiddenPublicText(item)).map((item) => `<span>${esc(item)}</span>`).join("");
+  const metaItems = [publicTermType(term)]
+    .filter((item) => hasRealText(item) && !containsForbiddenPublicText(item))
+    .map((item) => `<span>${esc(item)}</span>`).join("");
   const summary = structuredList(detail.summary);
   const contextCard = structuredCard(detail.context, structuredParagraphs(detail.context?.paragraphs));
   const usageIntro = publicText(detail.usage?.intro || "");
@@ -2787,7 +2967,7 @@ function structuredGlossaryDetailBody(term) {
   const verificationEyebrow = publicText(verification.eyebrow || "");
   const verificationParagraphs = structuredParagraphs(verification.paragraphs);
   const sourceCard = structuredSourceReferenceCard(detail.sourceCard);
-  const sources = sourceList(term);
+  const sources = [sourceProvenanceNote(term), sourceList(term)].filter(Boolean).join("");
   const category = publicText(term.category || "Begriff");
 
   return `      <article class="article-shell glossary-detail">
@@ -2812,8 +2992,8 @@ function structuredGlossaryDetailBody(term) {
         </section>
         ${relatedTermsChips(term)}
         <section class="meta-box">
-          <h2>Version und Quellen</h2>
-          <p>Kategorie: ${esc(category)}${term.version && !containsForbiddenPublicText(term.version) ? ` · Version: ${esc(publicText(term.version))}` : ""}</p>
+          <h2>Quellen und Einordnung</h2>
+          <p>Kategorie: ${esc(category)}</p>
           ${sourceCard ? `<div class="source-reference-block">
             ${sourceCard}
           </div>` : ""}${sources}
@@ -2824,17 +3004,16 @@ function structuredGlossaryDetailBody(term) {
 for (const term of indexedTerms) {
   const dir = path.join(outDir, term.slug);
   fs.mkdirSync(dir, { recursive: true });
-  const metaItems = [
-    publicTermType(term),
-    term.version && !containsForbiddenPublicText(term.version) ? `Stand / Version ${publicText(term.version)}` : "",
-  ].filter((item) => hasRealText(item) && !containsForbiddenPublicText(item)).map((item) => `<span>${esc(item)}</span>`).join("");
+  const metaItems = [publicTermType(term)]
+    .filter((item) => hasRealText(item) && !containsForbiddenPublicText(item))
+    .map((item) => `<span>${esc(item)}</span>`).join("");
   const sectionCards = [
     optionalTermSection({ eyebrow: "Definition", title: "Was der Begriff zusätzlich aussagt", html: termDefinitionHtml(term) }),
     optionalTermSection({ eyebrow: "Wirkungsökonomie", title: "Einordnung in der Wirkungsökonomie", html: termWhyHtml(term) }),
     optionalTermSection({ eyebrow: "Verwendung", title: "Verwendung", html: termUsageHtml(term) }),
     optionalTermSection({ eyebrow: "Abgrenzung", title: "Abgrenzung", html: listItems(term.doNotConfuseWith) || fallbackAbgrenzungHtml(term) }),
   ].filter(Boolean).join("");
-  const sourceHtml = [sourceReferenceBlock(term), sourceList(term)].filter(Boolean).join("");
+  const sourceHtml = [sourceProvenanceNote(term), sourceReferenceBlock(term), sourceList(term)].filter(Boolean).join("");
   const body = term.structuredDetail
     ? structuredGlossaryDetailBody(term)
     : term.slug === "sexarbeit"
@@ -2877,8 +3056,8 @@ ${keyMessageBlock(term)}
 ${relatedTermsChips(term)}${relatedContentBlock(term)}
 ${chapterBlock(term)}
         ${sourceHtml ? `<section class="meta-box">
-          <h2>Version und Quellen</h2>
-          <p>Kategorie: ${esc(containsForbiddenPublicText(term.category) ? "Begriff" : publicText(term.category || "Begriff"))}${term.version && !containsForbiddenPublicText(term.version) ? ` · Version: ${esc(publicText(term.version))}` : ""}</p>
+          <h2>Quellen und Einordnung</h2>
+          <p>Kategorie: ${esc(containsForbiddenPublicText(term.category) ? "Begriff" : publicText(term.category || "Begriff"))}</p>
           ${sourceHtml}
         </section>` : ""}
       </article>`;
@@ -2903,6 +3082,7 @@ ${chapterBlock(term)}
   }
   if (term.metaTitle) pageOptions.metaTitle = term.metaTitle;
   if (term.metaDescription) pageOptions.metaDescription = term.metaDescription;
+  pageOptions.canonicalPath = `/begriffe/${term.slug}/`;
   fs.writeFileSync(path.join(dir, "index.html"), pageShell(term.canonicalLabel, body, "../../", pageOptions));
 }
 

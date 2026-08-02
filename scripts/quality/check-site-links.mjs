@@ -1,8 +1,11 @@
 import fs from "node:fs";
 import path from "node:path";
 
-const root = process.cwd();
-const reportFile = path.join(root, "reports", "site-link-integrity.md");
+const workspaceRoot = process.cwd();
+const artifactMode = process.argv.includes("--artifact");
+const strict = process.argv.includes("--strict");
+const root = artifactMode ? path.join(workspaceRoot, "_site") : workspaceRoot;
+const reportFile = path.join(workspaceRoot, "reports", artifactMode ? "site-link-integrity-artifact.md" : "site-link-integrity.md");
 const ignoredDirs = new Set([".git", "_site", "node_modules", "templates", "woek-institut-app"]);
 const ignoredRoutePatterns = [
   /^\/(?:_debug|admin)\//,
@@ -49,6 +52,10 @@ function normalizeHref(href, sourceFile) {
 
 function titleOf(html) {
   return (html.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1] || "").replace(/\s+/g, " ").trim();
+}
+
+if (!fs.existsSync(root)) {
+  throw new Error(artifactMode ? "Öffentliches Artefakt fehlt: erst npm run build:artifact ausführen." : `Website-Wurzel fehlt: ${root}`);
 }
 
 walk(root);
@@ -114,4 +121,5 @@ const lines = [
 
 fs.mkdirSync(path.dirname(reportFile), { recursive: true });
 fs.writeFileSync(reportFile, `${lines.join("\n")}\n`);
-console.log(`site link integrity: ${broken.length} broken, ${orphans.length} orphans, ${duplicates.length} duplicate titles`);
+console.log(`${artifactMode ? "public artifact" : "site"} link integrity: ${broken.length} broken, ${orphans.length} orphans, ${duplicates.length} duplicate titles`);
+if (strict && broken.length) process.exit(1);
