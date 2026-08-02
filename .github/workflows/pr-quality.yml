@@ -32,6 +32,12 @@ jobs:
       - name: Install Python build dependencies
         run: python -m pip install --upgrade pip openpyxl pymupdf pypdf reportlab
 
+      - name: Install PDF export dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes --no-install-recommends libreoffice-writer fonts-dejavu-core
+          soffice --version
+
       - name: Build complete site before artifact checks
         run: npm run build
 
