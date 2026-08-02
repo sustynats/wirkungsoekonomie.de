@@ -38,9 +38,6 @@ jobs:
           sudo apt-get install --yes --no-install-recommends libreoffice-writer fonts-dejavu-core
           soffice --version
 
-      - name: Build complete site before artifact checks
-        run: npm run build
-
       - name: Build search index
         run: npm run build:search
 
@@ -52,6 +49,9 @@ jobs:
 
       - name: Ensure generated taxonomy is committed
         run: git diff --exit-code -- content/taxonomy/site-map.json
+
+      - name: Build complete site before artifact checks
+        run: npm run build
 
       - name: Build public deploy artifact
         run: npm run build:artifact
