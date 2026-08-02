@@ -30,7 +30,13 @@ jobs:
           python-version: "3.12"
 
       - name: Install Python build dependencies
-        run: python -m pip install --upgrade pip openpyxl
+        run: python -m pip install --upgrade pip openpyxl pymupdf pypdf reportlab
+
+      - name: Install PDF export dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes --no-install-recommends libreoffice-writer fonts-dejavu-core
+          soffice --version
 
       - name: Build search index
         run: npm run build:search
@@ -43,6 +49,9 @@ jobs:
 
       - name: Ensure generated taxonomy is committed
         run: git diff --exit-code -- content/taxonomy/site-map.json
+
+      - name: Build complete site before artifact checks
+        run: npm run build
 
       - name: Build public deploy artifact
         run: npm run build:artifact

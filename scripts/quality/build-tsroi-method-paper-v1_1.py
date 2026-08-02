@@ -17,8 +17,6 @@ from reportlab.lib.enums import TA_CENTER, TA_LEFT
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 from reportlab.lib.units import mm
-from reportlab.pdfbase import pdfmetrics
-from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.platypus import (
     BaseDocTemplate,
     Frame,
@@ -30,6 +28,8 @@ from reportlab.platypus import (
     Table,
     TableStyle,
 )
+
+from pdf_font_support import register_woek_fonts
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -43,23 +43,6 @@ BLUE_PALE = colors.HexColor("#EDF3F8")
 GOLD = colors.HexColor("#C58B20")
 GRID = colors.HexColor("#B8C4CE")
 MUTED = colors.HexColor("#526675")
-
-
-def font_path(name: str) -> Path:
-    candidates = [
-        Path("/System/Library/Fonts/Supplemental") / name,
-        Path("/Library/Fonts") / name,
-    ]
-    for candidate in candidates:
-        if candidate.exists():
-            return candidate
-    raise FileNotFoundError(f"Required PDF font not found: {name}")
-
-
-def register_fonts() -> None:
-    pdfmetrics.registerFont(TTFont("WoeKText", str(font_path("Arial Unicode.ttf"))))
-    pdfmetrics.registerFont(TTFont("WoeKBold", str(font_path("Arial Bold.ttf"))))
-    pdfmetrics.registerFont(TTFont("WoeKMono", str(font_path("Andale Mono.ttf"))))
 
 
 def read_manuscript() -> tuple[dict[str, str], list[str]]:
@@ -375,7 +358,7 @@ def footer(canvas, doc) -> None:  # type: ignore[no-untyped-def]
 
 
 def build() -> None:
-    register_fonts()
+    register_woek_fonts()
     metadata, lines = read_manuscript()
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
 
