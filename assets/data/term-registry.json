@@ -184325,23 +184325,68 @@
       "synonyms": [
         "Merit Order"
       ],
-      "shortDefinition": "Merit Order beschreibt die Einsatzreihenfolge von Stromerzeugungsanlagen nach Grenzkosten.",
-      "short_definition": "Merit Order beschreibt die Einsatzreihenfolge von Stromerzeugungsanlagen nach Grenzkosten.",
-      "definition": "Merit Order beschreibt die Einsatzreihenfolge von Stromerzeugungsanlagen nach Grenzkosten.",
-      "longDefinition": "Merit Order beschreibt die Einsatzreihenfolge von Stromerzeugungsanlagen nach Grenzkosten.",
-      "long_definition": "Merit Order beschreibt die Einsatzreihenfolge von Stromerzeugungsanlagen nach Grenzkosten.",
-      "woekRelation": "Erklärt kurzfristige Strompreisbildung, aber nicht vollständige Systemkosten, Klimafolgen, Netzkosten oder Versorgungssicherheit.",
-      "woek_einordnung": "Erklärt kurzfristige Strompreisbildung, aber nicht vollständige Systemkosten, Klimafolgen, Netzkosten oder Versorgungssicherheit.",
+      "lead": "Die Merit Order bezeichnet im ökonomischen Grundmodell die Reihenfolge, in der verfügbare Stromerzeugungs- und Flexibilitätsangebote zur Deckung der Nachfrage herangezogen werden: zuerst die Angebote mit den niedrigsten kurzfristigen Grenzkosten, danach die teureren. In der realen Day-Ahead-Auktion sind jedoch die abgegebenen Verkaufs- und Kaufgebote samt ihren Bedingungen maßgeblich. Erst die Markträumung und das Grenzpreisverfahren machen daraus einen Börsenpreis für eine Gebotszone und ein Marktzeitintervall.",
+      "shortDefinition": "Die Merit Order bezeichnet im ökonomischen Grundmodell die Reihenfolge, in der verfügbare Stromerzeugungs- und Flexibilitätsangebote zur Deckung der Nachfrage herangezogen werden: zuerst die Angebote mit den niedrigsten kurzfristigen Grenzkosten, danach die teureren. In der realen Day-Ahead-Auktion sind jedoch die abgegebenen Verkaufs- und Kaufgebote samt ihren Bedingungen maßgeblich. Erst die Markträumung und das Grenzpreisverfahren machen daraus einen Börsenpreis für eine Gebotszone und ein Marktzeitintervall.",
+      "short_definition": "Die Merit Order bezeichnet im ökonomischen Grundmodell die Reihenfolge, in der verfügbare Stromerzeugungs- und Flexibilitätsangebote zur Deckung der Nachfrage herangezogen werden: zuerst die Angebote mit den niedrigsten kurzfristigen Grenzkosten, danach die teureren. In der realen Day-Ahead-Auktion sind jedoch die abgegebenen Verkaufs- und Kaufgebote samt ihren Bedingungen maßgeblich. Erst die Markträumung und das Grenzpreisverfahren machen daraus einen Börsenpreis für eine Gebotszone und ein Marktzeitintervall.",
+      "definition": "Die Merit Order bezeichnet im ökonomischen Grundmodell die Reihenfolge, in der verfügbare Stromerzeugungs- und Flexibilitätsangebote zur Deckung der Nachfrage herangezogen werden: zuerst die Angebote mit den niedrigsten kurzfristigen Grenzkosten, danach die teureren. In der realen Day-Ahead-Auktion sind jedoch die abgegebenen Verkaufs- und Kaufgebote samt ihren Bedingungen maßgeblich. Erst die Markträumung und das Grenzpreisverfahren machen daraus einen Börsenpreis für eine Gebotszone und ein Marktzeitintervall.",
+      "longDefinition": "Die Merit Order bezeichnet im ökonomischen Grundmodell die Reihenfolge, in der verfügbare Stromerzeugungs- und Flexibilitätsangebote zur Deckung der Nachfrage herangezogen werden: zuerst die Angebote mit den niedrigsten kurzfristigen Grenzkosten, danach die teureren. In der realen Day-Ahead-Auktion sind jedoch die abgegebenen Verkaufs- und Kaufgebote samt ihren Bedingungen maßgeblich. Erst die Markträumung und das Grenzpreisverfahren machen daraus einen Börsenpreis für eine Gebotszone und ein Marktzeitintervall.",
+      "long_definition": "Die Merit Order bezeichnet im ökonomischen Grundmodell die Reihenfolge, in der verfügbare Stromerzeugungs- und Flexibilitätsangebote zur Deckung der Nachfrage herangezogen werden: zuerst die Angebote mit den niedrigsten kurzfristigen Grenzkosten, danach die teureren. In der realen Day-Ahead-Auktion sind jedoch die abgegebenen Verkaufs- und Kaufgebote samt ihren Bedingungen maßgeblich. Erst die Markträumung und das Grenzpreisverfahren machen daraus einen Börsenpreis für eine Gebotszone und ein Marktzeitintervall.",
+      "woekRelation": "Die Merit Order beantwortet zunächst eine kurzfristige Koordinationsfrage: Welche angebotene Strommenge wird als Nächstes noch gebraucht? Sie trägt dazu bei, günstigere Angebote vor teureren zu nutzen. Sie beantwortet aber nicht, welche Technologie über ihren gesamten Lebenszyklus die geringsten gesellschaftlichen Kosten oder die beste Netto-Wirkung hat.",
+      "woek_einordnung": "Die Merit Order beantwortet zunächst eine kurzfristige Koordinationsfrage: Welche angebotene Strommenge wird als Nächstes noch gebraucht? Sie trägt dazu bei, günstigere Angebote vor teureren zu nutzen. Sie beantwortet aber nicht, welche Technologie über ihren gesamten Lebenszyklus die geringsten gesellschaftlichen Kosten oder die beste Netto-Wirkung hat.",
       "examples": [],
       "relatedTerms": [
         "grenzkosten",
         "grenzkraftwerk",
-        "strommarkt"
+        "strommarkt",
+        "strommarktdesign",
+        "systemkosten",
+        "regelenergie",
+        "externalitaet",
+        "reverse-merit-order"
       ],
       "related_terms": [
         "grenzkosten",
         "grenzkraftwerk",
-        "strommarkt"
+        "strommarkt",
+        "strommarktdesign",
+        "systemkosten",
+        "regelenergie",
+        "externalitaet",
+        "reverse-merit-order"
+      ],
+      "curatedSources": [
+        {
+          "title": "EPEX SPOT: Basics of the Power Market",
+          "url": "https://www.epexspot.com/en/basicspowermarket"
+        },
+        {
+          "title": "NEMO Committee: Single Day-Ahead Coupling",
+          "url": "https://www.nemo-committee.eu/sdac"
+        },
+        {
+          "title": "Europäische Union: Verordnung (EU) 2024/1747",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1747/oj/deu"
+        },
+        {
+          "title": "Europäische Union: Verordnung (EU) 2019/943 – konsolidierte Fassung",
+          "url": "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:02019R0943-20240716"
+        },
+        {
+          "title": "Bundesnetzagentur/SMARD: So funktioniert der Strommarkt",
+          "url": "https://www.smard.de/page/home/wiki-article/518/384/so-funktioniert-der-strommarkt"
+        },
+        {
+          "title": "Bundesnetzagentur: Was kostet der Strom – und warum?",
+          "url": "https://www.bundesnetzagentur.de/DE/Allgemeines/DieBundesnetzagentur/Insight/Texte/Energiewende/Strompreis.html"
+        },
+        {
+          "title": "Regelleistung.net: Was ist Regelenergie?",
+          "url": "https://www.regelleistung.net/de-de/Grundlagen/Was-ist-Regelenergie"
+        },
+        {
+          "title": "ENTSO-E: Mission Statement",
+          "url": "https://www.entsoe.eu/about/inside-entsoe/mission-statement/"
+        }
       ],
       "officialSources": [
         "Fraunhofer ISE: Levelized Cost of Electricity|https://www.ise.fraunhofer.de/en/publications/studies/cost-of-electricity.html",
@@ -184568,28 +184613,107 @@
       "woek_klaerung": "",
       "blindSpot": "",
       "blind_spot": "",
-      "version": "1.0",
-      "lastReviewed": "2026-05-29",
-      "last_reviewed": "2026-05-29",
-      "lastUpdated": "2026-05-29",
-      "updatedAt": "2026-05-29",
+      "version": "2.0",
+      "lastReviewed": "2026-08-02",
+      "last_reviewed": "2026-08-02",
+      "lastUpdated": "2026-08-02",
+      "updatedAt": "2026-08-02",
       "firstApprovedIn": "2026-05-29",
       "reviewStatus": "approved",
-      "source": "Energie, Strommarkt und Systemkosten",
-      "sourceDocument": "Glossar-Architektur Wirkmechanismen",
-      "sourceSection": "Energie, Strommarkt und Systemkosten",
-      "hoverDefinition": "Merit Order beschreibt die Einsatzreihenfolge von Stromerzeugungsanlagen nach Grenzkosten.",
+      "source": "Primärquellen zu Merit Order und Strompreisbildung",
+      "sourceDocument": "",
+      "sourceSection": "Institutionelle und rechtliche Quellen · Energie, Strommarkt und Systemkosten",
+      "hoverDefinition": "Die Merit Order ordnet Stromangebote in einer Reihenfolge; Markträumung und Grenzpreisverfahren bestimmen daraus den Day-Ahead-Preis.",
       "statusNote": "",
-      "usageNote": "Wirkung, Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus und eingetretene Wirkung sauber unterscheiden.",
+      "usageNote": "Am einfachsten lässt sich der Ablauf in fünf Schritten verstehen.",
       "classicGlossary": true,
       "showInCategoryGlossary": false,
       "pageUrl": "/begriffe/merit-order/",
       "metaTitle": "Merit Order | Glossar der Wirkungsökonomie",
-      "metaDescription": "Merit Order beschreibt die Einsatzreihenfolge von Stromerzeugungsanlagen nach Grenzkosten. Wirkungsökonomisch eingeordnet als Anschlussbegriff.",
+      "metaDescription": "Die Merit Order ordnet Stromangebote nach ihren Angebotspreisen. Zusammen mit Markträumung und Grenzpreisverfahren prägt sie den Day-Ahead-Preis.",
       "doNotConfuseWith": [],
       "relatedDocuments": [],
       "preferredUsage": "",
       "deprecatedUsage": [],
+      "structuredDetail": {
+        "summary": [
+          "Merit Order ist zunächst nur die Reihenfolge: Im ökonomischen Grundmodell wird nach kurzfristigen Grenzkosten sortiert. Im realen Stromhandel ist der abgegebene Angebotspreis zusammen mit den jeweiligen Gebotsbedingungen maßgeblich.",
+          "Markträumung ist der nächste Schritt: Der Day-Ahead-Algorithmus bestimmt, welche Kauf- und Verkaufsgebote angenommen werden und welche Strommengen zwischen den Gebotszonen ausgetauscht werden können.",
+          "Preisbildung ist ein eigener Schritt: Beim Grenzpreisverfahren – auch Einheitspreis- oder Pay-as-cleared-Verfahren genannt – gilt für die bezuschlagten Kauf- und Verkaufsgebote derselben Gebotszone und desselben Marktzeitintervalls der Markträumungspreis. Vereinfacht wird er durch das teuerste noch benötigte und angenommene Verkaufsangebot bestimmt.",
+          "Hohe Strompreise haben Ursachen und einen Übertragungsmechanismus: Hohe Brennstoff- und CO₂-Kosten, hohe Nachfrage, knappe günstige Erzeugung, Kraftwerksausfälle oder begrenzte Übertragungskapazitäten können teure Angebote erforderlich machen. Diese Kosten und Knappheiten sind die zugrunde liegenden Preistreiber. Merit Order, Markträumung und Grenzpreisverfahren übertragen sie in den einheitlichen Day-Ahead-Preis.",
+          "Der Day-Ahead-Preis ist nicht der gesamte Strompreis: Er ist ein wichtiger Referenzwert des Großhandels, aber weder der vollständige Endkundenpreis noch die Summe aller System- und Wirkungskosten. Auch die Netzfrequenz wird nicht durch die Day-Ahead-Merit-Order stabilisiert."
+        ],
+        "context": {
+          "eyebrow": "Wirkungsökonomie",
+          "title": "Einordnung in der Wirkungsökonomie",
+          "paragraphs": [
+            "Die Merit Order beantwortet zunächst eine kurzfristige Koordinationsfrage: Welche angebotene Strommenge wird als Nächstes noch gebraucht? Sie trägt dazu bei, günstigere Angebote vor teureren zu nutzen. Sie beantwortet aber nicht, welche Technologie über ihren gesamten Lebenszyklus die geringsten gesellschaftlichen Kosten oder die beste Netto-Wirkung hat.",
+            "Kommen zusätzliche Angebote mit niedrigen Grenzkosten in den Markt, können sie teurere Angebote verdrängen und den Markträumungspreis senken. Werden wegen hoher Nachfrage oder eines knappen günstigen Angebots teurere Angebote benötigt, kann der Preis steigen. Dieser Zusammenhang wird als Merit-Order-Effekt bezeichnet.",
+            "Wirkungsökonomisch müssen deshalb Großhandelspreis, Systemkosten und Wirkungskosten getrennt betrachtet werden. Netze, Speicher, Flexibilität, Regelreserve, Redispatch, Versorgungssicherheit, Importabhängigkeiten, Ressourcenverbrauch sowie Klima-, Gesundheits- und Verteilungswirkungen sind im Day-Ahead-Preis nicht automatisch vollständig enthalten. Auch wenn CO₂-Zertifikatskosten in fossile Stromangebote eingehen, bedeutet das nicht, dass sämtliche externen Schäden vollständig eingepreist sind.",
+            "Das Grenzpreisverfahren führt außerdem dazu, dass auch Anbieter mit niedrigeren kurzfristigen Grenzkosten den Markträumungspreis erhalten. Die Differenz zwischen diesem Preis und ihren kurzfristigen Grenzkosten wird als inframarginaler Erlös oder Deckungsbeitrag bezeichnet. Sie ist nicht automatisch Reingewinn, weil davon unter anderem Investitionen, Finanzierung, Wartung, Fixkosten und Risiken getragen werden müssen."
+          ]
+        },
+        "usage": {
+          "eyebrow": "Verwendung",
+          "title": "Verwendung",
+          "intro": "Am einfachsten lässt sich der Ablauf in fünf Schritten verstehen:",
+          "steps": [
+            {
+              "title": "Gebote abgeben:",
+              "body": "Verkäufer geben an, welche Strommenge sie mindestens zu welchem Preis verkaufen möchten. Käufer geben an, welche Menge sie höchstens zu welchem Preis kaufen möchten."
+            },
+            {
+              "title": "Sortieren:",
+              "body": "Die Verkaufsangebote werden in der vereinfachten Darstellung vom niedrigsten zum höchsten Angebotspreis geordnet. Diese Reihenfolge ist die Merit Order."
+            },
+            {
+              "title": "Markträumen:",
+              "body": "Der gekoppelte europäische Marktalgorithmus bringt Kauf- und Verkaufsgebote zusammen. Gleichzeitig berücksichtigt er die verfügbaren Übertragungskapazitäten zwischen den Gebotszonen und berechnet die geplanten Austauschmengen."
+            },
+            {
+              "title": "Preis bilden:",
+              "body": "Beim Grenzpreisverfahren gilt für die bezuschlagten Mengen derselben Gebotszone und desselben Marktzeitintervalls ein gemeinsamer Markträumungspreis. Der Satz „Das letzte Kraftwerk setzt den Preis“ ist dafür eine nützliche Kurzform. Präziser ist: Das preisbestimmende Grenzangebot beziehungsweise der Schnittpunkt von Angebot und Nachfrage bestimmt den Markträumungspreis."
+            },
+            {
+              "title": "Physisch ausgleichen:",
+              "body": "Das Day-Ahead-Ergebnis schafft Handelspositionen und Fahrpläne für den nächsten Tag. Neue Prognosen können anschließend im Intraday-Handel berücksichtigt werden. Verbleibende Abweichungen in Echtzeit gleichen die Übertragungsnetzbetreiber mithilfe von Regelreserve und weiteren Systemdienstleistungen aus."
+            }
+          ],
+          "paragraphs": [
+            "Ein vereinfachtes Beispiel: Für ein Marktzeitintervall werden 100 Einheiten Strom nachgefragt. Die günstigeren Angebote liefern zusammen 90 Einheiten. Für die letzten 10 Einheiten wird noch ein teureres Angebot benötigt. Dieses Angebot kann nun den gemeinsamen Markträumungspreis markieren. Kommen stattdessen 10 zusätzliche günstige Einheiten hinzu, fällt das teure Angebot aus der Markträumung heraus und der Preis kann sinken."
+          ]
+        },
+        "distinction": {
+          "eyebrow": "Abgrenzung",
+          "title": "Abgrenzung",
+          "items": [
+            "Merit Order und Grenzpreisverfahren sind nicht dasselbe. Die Merit Order ordnet die Angebote. Das Grenzpreisverfahren bestimmt, welchen Preis die bezuschlagten Mengen erhalten.",
+            "Angebotspreis und tatsächliche Grenzkosten sind nicht zwingend identisch. Angebotspreise können neben Brennstoff- und CO₂-Kosten auch Anfahrkosten, Mindestlaufzeiten, Opportunitätskosten, Speicherwerte, Risiken, Förderbedingungen und Markterwartungen abbilden. Deshalb ist auch das Bild vom einen eindeutig bestimmbaren „letzten Kraftwerk“ eine Vereinfachung.",
+            "Markträumung bedeutet nicht, dass jede denkbare Nachfrage zu jedem Preis bedient wird. Sie bedeutet, dass die angenommenen Kauf- und Verkaufspositionen einschließlich der geplanten Austauschmengen rechnerisch zusammenpassen. Preisabhängige Nachfragegebote können unbezuschlagt bleiben.",
+            "Die Day-Ahead-Auktion ist nicht die Frequenzregelung. Sie schafft geplante Handelsmengen und Fahrpläne und trägt damit mittelbar zur Planung des Systems bei. Die Netzfrequenz von 50 Hertz wird jedoch in Echtzeit durch Systemführung und Regelreserve stabilisiert.",
+            "ENTSO-E ist keine Strombörse und kein eigener Strommarkt. ENTSO-E ist der Zusammenschluss der europäischen Übertragungsnetzbetreiber. Der gekoppelte europäische Day-Ahead-Markt wird von den benannten Strommarktbetreibern beziehungsweise Strombörsen gemeinsam mit den Übertragungsnetzbetreibern organisiert.",
+            "Individuelle Preise sind möglich. Im bilateralen OTC-Handel vereinbaren zwei Parteien Preis und Menge unmittelbar. Auch im kontinuierlichen Intraday-Handel entstehen transaktionsbezogene Preise. Eine individuelle Preisbildung ist daher keineswegs grundsätzlich unmöglich.",
+            "Pay as bid wäre nicht automatisch billiger. Wenn jeder Anbieter seinen eigenen Gebotspreis erhielte, würden Marktteilnehmer ihre Gebote voraussichtlich am erwarteten Marktpreis ausrichten. Ein Vergleich verschiedener Preisverfahren muss deshalb auch das veränderte Bietverhalten berücksichtigen.",
+            "Ein Handelsanteil wie „nur zehn Prozent“ ist ohne Bezugsgröße nicht aussagekräftig. Gemeint sein könnten der Stromverbrauch, physische Liefermengen, Börsenumsätze, außerbörslicher Handel oder sämtliche mehrfach gehandelten Terminprodukte. Außerdem kann ein Marktpreis auch bei einem begrenzten direkten Handelsanteil ein wichtiger Referenzwert für andere Verträge und Märkte sein.",
+            "Der Day-Ahead-Preis ist nicht der Endkundenpreis. Zum Haushalts- oder Unternehmenspreis gehören zusätzlich unter anderem längerfristige Beschaffung und Absicherung, Netzentgelte, Steuern, Abgaben, Umlagen, Messstellenbetrieb, Vertriebskosten und Margen. Veränderungen des Day-Ahead-Preises können deshalb zeitverzögert und unterschiedlich stark bei Endkund:innen ankommen."
+          ]
+        },
+        "verification": {
+          "eyebrow": "Mess- und Steuerungsbezug",
+          "title": "Wie daraus eine prüfbare Wirkungsfrage wird",
+          "paragraphs": [
+            "Eine Aussage über die Merit Order wird erst prüfbar, wenn der betrachtete Markt eindeutig benannt ist: Geht es um Day Ahead, Intraday, Terminmarkt oder OTC-Handel? Welche Gebotszone und welches Marktzeitintervall werden betrachtet? Welcher Markträumungspreis entstand? Welches Angebot war preisbestimmend oder lag am Rand der Markträumung? Und welche Faktoren beeinflussten dieses Angebot – etwa Brennstoff- und CO₂-Preise, Nachfrage, Wetter, Kraftwerksverfügbarkeit, Speicherwerte oder verfügbare Übertragungskapazitäten?",
+            "Wirkungsökonomisch folgt danach die zweite Ebene: Welche Wirkung hatte das Preissignal auf Erzeugung, Verbrauch, Flexibilität, Speicher, Investitionen, Emissionen, Versorgungssicherheit und Verteilung? Welche System- und Wirkungskosten lagen außerhalb des Börsenpreises? Und was wäre bei einem anderen Marktdesign tatsächlich geschehen, wenn auch das veränderte Verhalten der Marktteilnehmer berücksichtigt wird? So werden Kostenursache, Preisbildungsmechanismus, Marktsignal und gesellschaftliche Gesamtwirkung sauber voneinander getrennt."
+          ]
+        },
+        "sourceCard": {
+          "badge": "Quelle",
+          "title": "Primärquellen zu Merit Order und Strompreisbildung",
+          "meta": "Institutionelle und rechtliche Quellen · Energie, Strommarkt und Systemkosten",
+          "description": "Die Definition stützt sich auf die Marktregeln des europäischen Day-Ahead-Handels, geltendes EU-Recht, Informationen der Bundesnetzagentur sowie die Systembeschreibung der europäischen Übertragungsnetzbetreiber.",
+          "reason": "Die Quellen belegen insbesondere die Trennung von Merit Order, Markträumung, Grenzpreisbildung, Referenzpreis und Frequenzhaltung."
+        }
+      },
       "glossaryOrderKey": "Merit Order"
     },
     {

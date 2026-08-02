@@ -813,9 +813,10 @@ function parseSource(value) {
 }
 
 function sourceList(term) {
+  const curatedSources = asList(term.curatedSources || term.curated_sources);
   const rows = [
-    ...((term.sourceLinks || term.source_links || []).map(parseSource)),
-    ...((term.officialSources || []).map(parseSource)),
+    ...((curatedSources.length ? curatedSources : (term.sourceLinks || term.source_links || [])).map(parseSource)),
+    ...((curatedSources.length ? [] : (term.officialSources || [])).map(parseSource)),
   ].map((item) => ({
     ...item,
     label: publicText(item.label),
@@ -2709,6 +2710,117 @@ function financeClusterDetailBody(term) {
       </article>`;
 }
 
+function structuredParagraphs(values) {
+  return asList(values)
+    .map(publicText)
+    .filter((value) => hasRealText(value) && !containsForbiddenPublicText(value))
+    .map((value) => `<p>${esc(value)}</p>`)
+    .join("\n              ");
+}
+
+function structuredList(values) {
+  const items = asList(values)
+    .map(publicText)
+    .filter((value) => hasRealText(value) && !containsForbiddenPublicText(value));
+  if (!items.length) return "";
+  return `<ul>\n${items.map((value) => `                <li>${esc(value)}</li>`).join("\n")}\n              </ul>`;
+}
+
+function structuredSteps(values) {
+  const items = asList(values)
+    .map((value) => ({
+      title: publicText(value?.title || ""),
+      body: publicText(value?.body || ""),
+    }))
+    .filter((value) => hasRealText(value.title) && hasRealText(value.body))
+    .filter((value) => !containsForbiddenPublicText(value.title) && !containsForbiddenPublicText(value.body));
+  if (!items.length) return "";
+  return `<ol>\n${items.map((value) => `                <li><strong>${esc(value.title)}</strong> ${esc(value.body)}</li>`).join("\n")}\n              </ol>`;
+}
+
+function structuredCard(section, content) {
+  const title = publicText(section?.title || "");
+  const eyebrow = publicText(section?.eyebrow || "");
+  if (!hasRealText(title) || !hasRealText(textFromHtml(content))) return "";
+  return `<section class="term-section-card">
+            ${eyebrow ? `<p class="section-eyebrow">${esc(eyebrow)}</p>` : ""}
+            <h2>${esc(title)}</h2>
+            ${content}
+          </section>`;
+}
+
+function structuredSourceReferenceCard(source) {
+  const badge = publicText(source?.badge || "");
+  const title = publicText(source?.title || "");
+  const meta = publicText(source?.meta || "");
+  const description = publicText(source?.description || "");
+  const reason = publicText(source?.reason || "");
+  if (!hasRealText(title) || !hasRealText(description)) return "";
+  return `<article class="content-reference-card">
+              ${badge ? `<span class="content-reference-card__badge">${esc(badge)}</span>` : ""}
+              <h4 class="content-reference-card__heading"><span class="content-reference-card__title">${esc(title)}</span></h4>
+              ${meta ? `<div class="content-reference-card__meta">${esc(meta)}</div>` : ""}
+              <p class="content-reference-card__description">${esc(description)}</p>
+              ${reason ? `<p class="content-reference-card__reason">${esc(reason)}</p>` : ""}
+            </article>`;
+}
+
+function structuredGlossaryDetailBody(term) {
+  const detail = term.structuredDetail;
+  if (!detail || typeof detail !== "object") return "";
+  const metaItems = [
+    publicTermType(term),
+    term.version && !containsForbiddenPublicText(term.version) ? `Stand / Version ${publicText(term.version)}` : "",
+  ].filter((item) => hasRealText(item) && !containsForbiddenPublicText(item)).map((item) => `<span>${esc(item)}</span>`).join("");
+  const summary = structuredList(detail.summary);
+  const contextCard = structuredCard(detail.context, structuredParagraphs(detail.context?.paragraphs));
+  const usageIntro = publicText(detail.usage?.intro || "");
+  const usageContent = [
+    usageIntro ? `<p>${esc(usageIntro)}</p>` : "",
+    structuredSteps(detail.usage?.steps),
+    structuredParagraphs(detail.usage?.paragraphs),
+  ].filter(Boolean).join("\n              ");
+  const usageCard = structuredCard(detail.usage, usageContent);
+  const distinctionCard = structuredCard(detail.distinction, structuredList(detail.distinction?.items));
+  const verification = detail.verification || {};
+  const verificationTitle = publicText(verification.title || "");
+  const verificationEyebrow = publicText(verification.eyebrow || "");
+  const verificationParagraphs = structuredParagraphs(verification.paragraphs);
+  const sourceCard = structuredSourceReferenceCard(detail.sourceCard);
+  const sources = sourceList(term);
+  const category = publicText(term.category || "Begriff");
+
+  return `      <article class="article-shell glossary-detail">
+        <nav class="breadcrumb"><a href="../">Begriffe</a> / ${esc(term.canonicalLabel)}</nav>
+        <header class="term-detail-hero">
+          <p class="hero-kicker">${esc(publicTermType(term))}</p>
+          <h1>${esc(term.canonicalLabel)}</h1>
+          ${term.subtitle ? `<p class="hero-subtitle">${esc(publicText(term.subtitle))}</p>` : ""}
+          <p class="lead">${esc(termLead(term))}</p>
+          ${metaItems ? `<div class="term-meta-row" aria-label="Begriffsinformation">${metaItems}</div>` : ""}
+          <div class="term-action-row">${detailLinks(term)}</div>
+        </header>
+        <section class="term-summary-card" aria-labelledby="term-summary-title">
+          <h2 id="term-summary-title">Auf einen Blick</h2>
+          ${summary}
+        </section>
+        <div class="term-section-grid">${[contextCard, usageCard, distinctionCard].filter(Boolean).join("")}</div>
+        <section class="term-summary-card">
+          ${verificationEyebrow ? `<p class="section-eyebrow">${esc(verificationEyebrow)}</p>` : ""}
+          <h2>${esc(verificationTitle)}</h2>
+          ${verificationParagraphs}
+        </section>
+        ${relatedTermsChips(term)}
+        <section class="meta-box">
+          <h2>Version und Quellen</h2>
+          <p>Kategorie: ${esc(category)}${term.version && !containsForbiddenPublicText(term.version) ? ` · Version: ${esc(publicText(term.version))}` : ""}</p>
+          ${sourceCard ? `<div class="source-reference-block">
+            ${sourceCard}
+          </div>` : ""}${sources}
+        </section>
+      </article>`;
+}
+
 for (const term of indexedTerms) {
   const dir = path.join(outDir, term.slug);
   fs.mkdirSync(dir, { recursive: true });
@@ -2723,7 +2835,9 @@ for (const term of indexedTerms) {
     optionalTermSection({ eyebrow: "Abgrenzung", title: "Abgrenzung", html: listItems(term.doNotConfuseWith) || fallbackAbgrenzungHtml(term) }),
   ].filter(Boolean).join("");
   const sourceHtml = [sourceReferenceBlock(term), sourceList(term)].filter(Boolean).join("");
-  const body = term.slug === "sexarbeit"
+  const body = term.structuredDetail
+    ? structuredGlossaryDetailBody(term)
+    : term.slug === "sexarbeit"
     ? sexarbeitDetailBody(term)
     : term.slug === "soziale-infrastruktur"
     ? sozialeInfrastrukturDetailBody(term)
