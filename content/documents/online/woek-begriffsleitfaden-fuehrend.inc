@@ -11,7 +11,7 @@
 <h2 id="2-die-wichtigste-kurzformel">2. Die wichtigste Kurzformel</h2>
 <p>Für alle künftigen Inhalte gilt:</p>
 <blockquote><p><b>Wirkung ist die tatsächliche Veränderung von Zuständen. Sie kann positiv, negativ oder neutral sein. Sie wirkt immer auf jemanden oder etwas. Die Wirkungsökonomie bewertet Wirkung am Referenzrahmen der SDGs, der Agenda 2030 und SDG+ und richtet Wirtschaft, Politik, Kapital, Medien und Entscheidungen auf positive Netto-Wirkung für Mensch, Planet und Demokratie aus.</b></p></blockquote>
-<p>Diese Kurzformel ist die Grundlage für Website, Glossar, Akademie, Blog, Social Media und CodeX-Anweisungen.</p>
+<p>Diese Kurzformel ist die Grundlage für öffentliche Texte, das Glossar, die Akademie, den Blog und Social-Media-Beiträge.</p>
 <h2 id="3-der-bewertungsrahmen-sdgs-agenda-2030-und-sdg">3. Der Bewertungsrahmen: SDGs, Agenda 2030 und SDG+</h2>
 <p>Die Wirkungsökonomie entscheidet nicht aus privater Moral heraus, was positiv oder negativ ist. Sie nutzt einen öffentlich nachvollziehbaren Referenzrahmen:</p>
 <ul><li><b>SDGs / Agenda 2030:</b> global verhandelter Zielrahmen der Weltgemeinschaft.</li></ul>
@@ -342,7 +342,7 @@
 <h2 id="13-pruefcheckliste-fuer-neue-inhalte">13. Prüfcheckliste für neue Inhalte</h2>
 <p>Vor Veröffentlichung neuer Inhalte prüfen:</p>
 <p>1. Wird „Wirkung“ neutral und relational verwendet? 2. Wird klar, ob Wirkung, Wirkungspotenzial oder Wirkungsrisiko gemeint ist? 3. Wird positive Wirkung am Referenzrahmen SDGs / Agenda 2030 / SDG+ erklärt? 4. Wird „positive Netto-Wirkung“ verwendet, wenn eine Zielgröße gemeint ist? 5. Wird „Wirkstoff“ nur als Analogie verwendet? 6. Wird bei Sprache / Medien / Narrativen zwischen Wirkpfad und Wirkungsnachweis unterschieden? 7. Wird bei Produkten / Steuern / Daten die Datenqualität oder Modellhaftigkeit benannt? 8. Wird Nicht-Kompensation / Wirkungsgrenze beachtet? 9. Werden schwere negative Wirkungen nicht durch positive Einzelwerte schöngerechnet? 10. Sind Glossar- und Hover-Definitionen konsistent? 11. Wird SDG+ transparent als WÖk-Erweiterung benannt? 12. Sind Begriffe wie Wirkungsblindheit, Wirkungswahrheit und Wirkungsrückkopplung korrekt verwendet? 13. Ist bei Resilienz die Systemgrenze, Störung, Betroffenheit und zu erhaltende Funktion benannt? 14. Werden Rückstellung, Wiederherstellung, Regeneration, Lernen und Transformation sichtbar – und werden negative Rückkopplungen nicht mit negativer Wirkung verwechselt? 15. Wird Regimeresilienz von Nachhaltigkeit abgegrenzt?</p>
-<h2 id="14-fuehrende-mini-definitionen-fuer-hover-glossar-und-codex">14. Führende Mini-Definitionen für Hover, Glossar und CodeX</h2>
+<h2 id="14-fuehrende-mini-definitionen-fuer-glossar-suche-und-kurze-erklaertexte">14. Führende Mini-Definitionen für Glossar, Suche und kurze Erklärtexte</h2>
 <p>Diese Kurzdefinitionen sind für Hover, Suche, Karten und kurze Website-Texte zu verwenden:</p>
 <ul><li><b>Wirkung:</b> tatsächliche Zustandsveränderung; positiv, negativ oder neutral.</li></ul>
 <ul><li><b>Positive Wirkung:</b> Veränderung, die auf SDGs, Agenda 2030 und SDG+ einzahlt.</li></ul>

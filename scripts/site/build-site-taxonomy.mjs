@@ -36,6 +36,12 @@ function meta(html, name) {
   return decode(html.match(pattern)?.[1] || "");
 }
 
+function isIndexablePublicPage(html) {
+  const noindex = /<meta\b(?=[^>]*\bname=["']robots["'])(?=[^>]*\bcontent=["'][^"']*\bnoindex\b[^"']*["'])[^>]*>/iu;
+  const redirect = /<meta\b(?=[^>]*\bhttp-equiv=["']refresh["'])[^>]*>/iu;
+  return !noindex.test(html) && !redirect.test(html);
+}
+
 function titleOf(html) {
   return meta(html, "search_title") || decode(html.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1] || "").replace(/\s*\|\s*Wirkungsökonomie\s*$/i, "").trim();
 }
@@ -91,10 +97,13 @@ const entries = htmlFiles
       rubrik: rubrikFor(route, searchSection),
       sammlung: sammlungFor(route, searchSection),
       typ: classifyType(route, searchType),
+      indexable: isIndexablePublicPage(html),
     };
   })
   .filter((entry) => !ignoredRoutePatterns.some((pattern) => pattern.test(entry.url)))
   .filter((entry) => !entry.url.includes(" 2."))
+  .filter((entry) => entry.indexable)
+  .map(({ indexable, ...entry }) => entry)
   .sort((a, b) => a.url.localeCompare(b.url, "de"));
 
 fs.mkdirSync(path.dirname(outFile), { recursive: true });

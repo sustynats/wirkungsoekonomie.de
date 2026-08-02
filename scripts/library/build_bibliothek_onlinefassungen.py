@@ -34,6 +34,19 @@ ALREADY = {"woemm-2-0", "woems-2-0"}
 # Welle 1: hochwertige eigenständige Werke zuerst
 WAVE1_TYPES = {"Grundlagenwerk", "Whitepaper", "Gesetzesentwurf", "Leitbild"}
 
+# Dauerhafte öffentliche Kapitelbezeichnungen. Die PDF-Überschriften bleiben
+# unverändert zitierbar; die Lesefassung erhält eine neutrale, verständliche URL
+# und Überschrift. Historische URLs werden anschließend vom SEO-Normalisierer
+# als noindex-Weiterleitungen gepflegt.
+PUBLIC_CHAPTER_OVERRIDES = {
+    "download-or-document-assets-downloads-woek-standard-politische-anschlussfaehigkeit-v0-1-pdf": {
+        "7. Mindestanforderungen in Codex": {
+            "title": "7. Mindestanforderungen für öffentliche Inhalte",
+            "slug": "07-7-mindestanforderungen-fuer-oeffentliche-inhalte",
+        },
+    },
+}
+
 
 def esc(s):
     return html.escape(s or "", quote=True)
@@ -45,6 +58,11 @@ def slugify(t):
     t = t.encode("ascii", "ignore").decode()
     t = re.sub(r"[^a-zA-Z0-9]+", "-", t).strip("-").lower()
     return re.sub(r"-+", "-", t) or "abschnitt"
+
+
+def public_chapter_override(detail_slug, source_title):
+    """Return an optional public title/slug override for one PDF chapter."""
+    return PUBLIC_CHAPTER_OVERRIDES.get(detail_slug, {}).get(source_title)
 
 
 HEADER = '''    <header class="site-header" data-search-exclude>
@@ -290,11 +308,19 @@ def build_one(pdf_path, detail_slug, title, short):
             chapters.append({"idx": len(chapters), "title": t, "page": 0, "subs": [], "text": seg})
     for i, ch in enumerate(chapters):
         ch["end"] = chapters[i + 1]["page"] if i + 1 < len(chapters) else npages
-        ch["slug"] = f'{ch["idx"]:02d}-{slugify(ch["title"])[:60]}'
+        source_title = ch["title"]
+        override = public_chapter_override(detail_slug, source_title)
+        ch["source_title"] = source_title
+        if override:
+            ch["title"] = override["title"]
+            ch["slug"] = override["slug"]
+        else:
+            ch["slug"] = f'{ch["idx"]:02d}-{slugify(source_title)[:60]}'
 
     r = "../../../../"
     for ch in chapters:
         rc = r + "../"
+        source_title = ch.get("source_title", ch["title"])
         raw = ch.get("text") or "\n".join(pdf[p].get_text() for p in range(ch["page"], max(ch["end"], ch["page"] + 1)))
         blocks = []
         if ch["subs"]:
@@ -304,9 +330,9 @@ def build_one(pdf_path, detail_slug, title, short):
                 positions.append((m.start() if m else None, sub))
             first = next((p for p, _ in positions if p is not None), None)
             intro = raw[:first] if first else (raw if first is None else "")
-            ti = intro.rfind(ch["title"])
+            ti = intro.rfind(source_title)
             if ti != -1:
-                intro = intro[ti + len(ch["title"]):]
+                intro = intro[ti + len(source_title):]
             if intro.strip():
                 blocks.append((None, intro))
             valid = [(p, s) for p, s in positions if p is not None]
@@ -317,9 +343,9 @@ def build_one(pdf_path, detail_slug, title, short):
                 blocks.append((sub["title"], seg))
         else:
             intro = raw
-            ti = intro.find(ch["title"])
+            ti = intro.find(source_title)
             if ti != -1:
-                intro = intro[ti + len(ch["title"]):]
+                intro = intro[ti + len(source_title):]
             blocks.append((None, intro))
 
         parts = []
