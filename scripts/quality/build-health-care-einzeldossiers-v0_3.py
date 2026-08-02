@@ -8,11 +8,14 @@ v0.3 PDF, so a correction never masquerades as the original publication.
 
 from __future__ import annotations
 
+import argparse
 import html
 import json
+import os
 import re
 from pathlib import Path
 
+from pypdf import PdfReader
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
@@ -220,5 +223,24 @@ def build() -> None:
     document().build(story)
 
 
+def check() -> None:
+    """Validate the released correction without replacing its PDF artifact."""
+
+    if not OUTPUT.exists() or OUTPUT.stat().st_size < 10_000:
+        raise SystemExit(f"Missing or implausibly small health-care PDF: {OUTPUT}")
+    text = "\n".join(page.extract_text() or "" for page in PdfReader(str(OUTPUT)).pages)
+    required = ("Korrekturfassung v0.3", "positive Geldbilanz", "Schutz-Gate")
+    missing = [term for term in required if term not in text]
+    if missing:
+        raise SystemExit(f"Health-care PDF is missing required correction terms: {missing}")
+    print(f"Health-care PDF check passed: {OUTPUT.relative_to(ROOT)}")
+
+
 if __name__ == "__main__":
-    build()
+    parser = argparse.ArgumentParser(description="Build or validate the public health-care PDF.")
+    parser.add_argument("--check", action="store_true", help="Validate the released PDF without writing it.")
+    args = parser.parse_args()
+    if args.check or os.environ.get("WOEK_PDF_BUILD_MODE") == "verify":
+        check()
+    else:
+        build()

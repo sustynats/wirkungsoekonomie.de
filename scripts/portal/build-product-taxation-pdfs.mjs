@@ -23,6 +23,7 @@ const sofficeCandidates = [
 const SOFFICE = sofficeCandidates.find((candidate) => candidate === "soffice" || fs.existsSync(candidate));
 const VERSION = "v1.1";
 const DATE = "2. August 2026";
+const verifyOnly = process.argv.includes("--check") || process.env.WOEK_PDF_BUILD_MODE === "verify";
 
 const documents = [
   {
@@ -187,27 +188,43 @@ function documentHtml({ title, body }) {
 </html>`;
 }
 
-const sofficeCheck = spawnSync(SOFFICE, ["--version"], { encoding: "utf8" });
-if (sofficeCheck.status !== 0) {
-  throw new Error(`LibreOffice ist nicht verfügbar. Geprüfte Aufrufe: ${sofficeCandidates.join(", ")}`);
+function checkPublishedPdf(document) {
+  const outputPath = path.join(ROOT, document.output);
+  if (!fs.existsSync(outputPath) || fs.statSync(outputPath).size < 10_000) {
+    throw new Error(`Freigegebene PDF fehlt oder ist zu klein: ${document.output}`);
+  }
+  const header = fs.readFileSync(outputPath).subarray(0, 5).toString("ascii");
+  if (header !== "%PDF-") {
+    throw new Error(`Freigegebene Datei ist keine PDF: ${document.output}`);
+  }
 }
 
-const temp = fs.mkdtempSync(path.join(os.tmpdir(), "woek-product-pdf-v11-"));
-for (const document of documents) {
-  const sourcePath = path.join(ROOT, document.source);
-  const outputPath = path.join(ROOT, document.output);
-  const htmlName = path.basename(outputPath, ".pdf") + ".html";
-  const htmlPath = path.join(temp, htmlName);
-  fs.writeFileSync(htmlPath, documentHtml({ title: document.title, body: markdownToHtml(fs.readFileSync(sourcePath, "utf8")) }), "utf8");
-  const exportResult = spawnSync(SOFFICE, ["--headless", "--convert-to", "pdf", "--outdir", temp, htmlPath], { encoding: "utf8" });
-  if (exportResult.status !== 0) {
-    throw new Error(`PDF-Export fehlgeschlagen für ${document.title}: ${exportResult.stderr || exportResult.stdout}`);
+if (verifyOnly) {
+  for (const document of documents) checkPublishedPdf(document);
+  console.log(`Produkt-PDF-Prüfung bestanden: ${documents.length} freigegebene Fassungen.`);
+} else {
+  const sofficeCheck = spawnSync(SOFFICE, ["--version"], { encoding: "utf8" });
+  if (sofficeCheck.status !== 0) {
+    throw new Error(`LibreOffice ist nicht verfügbar. Geprüfte Aufrufe: ${sofficeCandidates.join(", ")}`);
   }
-  const generatedPdf = path.join(temp, path.basename(outputPath));
-  if (!fs.existsSync(generatedPdf) || fs.statSync(generatedPdf).size < 10_000) {
-    throw new Error(`PDF-Export erzeugte keine brauchbare Datei für ${document.title}.`);
+
+  const temp = fs.mkdtempSync(path.join(os.tmpdir(), "woek-product-pdf-v11-"));
+  for (const document of documents) {
+    const sourcePath = path.join(ROOT, document.source);
+    const outputPath = path.join(ROOT, document.output);
+    const htmlName = path.basename(outputPath, ".pdf") + ".html";
+    const htmlPath = path.join(temp, htmlName);
+    fs.writeFileSync(htmlPath, documentHtml({ title: document.title, body: markdownToHtml(fs.readFileSync(sourcePath, "utf8")) }), "utf8");
+    const exportResult = spawnSync(SOFFICE, ["--headless", "--convert-to", "pdf", "--outdir", temp, htmlPath], { encoding: "utf8" });
+    if (exportResult.status !== 0) {
+      throw new Error(`PDF-Export fehlgeschlagen für ${document.title}: ${exportResult.stderr || exportResult.stdout}`);
+    }
+    const generatedPdf = path.join(temp, path.basename(outputPath));
+    if (!fs.existsSync(generatedPdf) || fs.statSync(generatedPdf).size < 10_000) {
+      throw new Error(`PDF-Export erzeugte keine brauchbare Datei für ${document.title}.`);
+    }
+    fs.mkdirSync(path.dirname(outputPath), { recursive: true });
+    fs.copyFileSync(generatedPdf, outputPath);
+    console.log(`${document.output} (${fs.statSync(outputPath).size} Bytes)`);
   }
-  fs.mkdirSync(path.dirname(outputPath), { recursive: true });
-  fs.copyFileSync(generatedPdf, outputPath);
-  console.log(`${document.output} (${fs.statSync(outputPath).size} Bytes)`);
 }

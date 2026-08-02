@@ -8,9 +8,13 @@ multiplier approach.
 
 from __future__ import annotations
 
+import argparse
 import html
+import os
 import re
 from pathlib import Path
+
+from pypdf import PdfReader
 
 from reportlab.lib import colors
 from reportlab.lib.enums import TA_CENTER, TA_LEFT
@@ -414,5 +418,29 @@ def build() -> None:
     print(f"Wrote {OUTPUT.relative_to(ROOT)}")
 
 
+def check() -> None:
+    """Verify the released PDF without replacing the publication artifact.
+
+    The public download is versioned and checksum-verified separately.  A site
+    build must therefore use that released file as its source of truth instead
+    of silently producing a platform-dependent replacement.
+    """
+
+    if not OUTPUT.exists() or OUTPUT.stat().st_size < 10_000:
+        raise SystemExit(f"Missing or implausibly small T-SROI PDF: {OUTPUT}")
+    text = "\n".join(page.extract_text() or "" for page in PdfReader(str(OUTPUT)).pages)
+    required = ("T-SROI-Rechenstandard v1.1", "Schutz-Gate", "Aufschlagsfaktor")
+    missing = [term for term in required if term not in text]
+    if missing:
+        raise SystemExit(f"T-SROI PDF is missing required current-standard terms: {missing}")
+    print(f"T-SROI PDF check passed: {OUTPUT.relative_to(ROOT)}")
+
+
 if __name__ == "__main__":
-    build()
+    parser = argparse.ArgumentParser(description="Build or validate the public T-SROI PDF.")
+    parser.add_argument("--check", action="store_true", help="Validate the released PDF without writing it.")
+    args = parser.parse_args()
+    if args.check or os.environ.get("WOEK_PDF_BUILD_MODE") == "verify":
+        check()
+    else:
+        build()
