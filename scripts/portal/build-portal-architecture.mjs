@@ -11,6 +11,7 @@ const JS_VERSION = "20260523-nachhaltigkeit";
 const SCHOOL_DOC = "public/downloads/originals/wirkungsoekonomisches_schulkonzept_arbeitsfassung_v0_1.docx";
 const SCHOOL_ONLINE = "werkstatt/arbeitsbibliothek/wirkungsfelder/bildung/wirkungsschule/";
 const SCHOOL_MD = "docs/bildung/Wirkungsschule_Fassung_v0_1.md";
+const methodOverviewOnly = process.argv.includes("--method-overviews-only");
 
 function routeFor(rel) {
   return rel.endsWith("/index.html") ? `/${rel.slice(0, -"/index.html".length)}/` : `/${rel}`;
@@ -69,12 +70,23 @@ function placeholderHeader(base) {
     </header>`;
 }
 
+function preservedLayout(out) {
+  if (!methodOverviewOnly || !fs.existsSync(out)) return null;
+  const existing = fs.readFileSync(out, "utf8");
+  const header = existing.match(/<header\b[\s\S]*?<\/header>/i)?.[0] || "";
+  const footer = existing.match(/<footer\b[\s\S]*?<\/footer>/i)?.[0] || "";
+  return { header, footer };
+}
+
 function page({ rel, title, description, searchSection, searchType = "Portal", body }) {
   const route = routeFor(rel);
   const base = baseFor(rel);
   const canonical = `${SITE}${route}`;
   const out = path.join(ROOT, rel);
   fs.mkdirSync(path.dirname(out), { recursive: true });
+  const layout = preservedLayout(out);
+  const header = layout?.header || placeholderHeader(base);
+  const footer = layout?.footer ? "\n    " + layout.footer : "";
   const html = `<!doctype html>
 <html lang="de">
   <head>
@@ -102,11 +114,12 @@ function page({ rel, title, description, searchSection, searchType = "Portal", b
     <link rel="stylesheet" href="${base}assets/css/style.css?v=20260612-mobile-table-fix">
   </head>
   <body>
-    ${placeholderHeader(base)}
+    ${header}
     <main>
       <p class="print-meta">Wirkungsökonomie · ${title.replace(/\s+\|.*$/, "")} · ${canonical} · Druckdatum: 24.05.2026</p>
 ${body(base, route)}
     </main>
+${footer}
     <script src="${base}assets/js/main.js?v=20260612-mobile-table-fix"></script>
   </body>
 </html>
@@ -371,7 +384,7 @@ const fields = [
     sdgs: ["SDG 1 Keine Armut", "SDG 5 Geschlechtergleichstellung", "SDG 8 Menschenwürdige Arbeit", "SDG 10 Weniger Ungleichheiten"],
     concepts: ["Wirkleistung", "Automatisierung", "Care und Sorgearbeit", "Wirkungseinkommen"],
     actors: ["Bürger:innen", "Arbeitgeber", "Sozialversicherung", "Gewerkschaften", "Politik"],
-    docs: [{ label: "Wenn Maschinen arbeiten", href: "assets/pdf/wenn-maschinen-arbeiten.pdf" }, { label: "Whitepaper Wirkungseinkommen", href: "assets/pdf/whitepaper-wirkungseinkommen.pdf" }],
+    docs: [{ label: "Aktuelle Einordnung Arbeit & Einkommen", href: "wirkungsfelder/arbeit-einkommen/" }, { label: "Whitepaper Wirkungseinkommen", href: "assets/pdf/whitepaper-wirkungseinkommen.pdf" }],
     anchors: [{ label: "Arbeit, Automatisierung und Maschinenleistung", href: "referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/" }, { label: "Wirkungseinkommen", href: "referenz/kapitel-057-wirkungseinkommen/" }, bookMain],
   },
   {
@@ -411,7 +424,7 @@ const fields = [
     docs: [
       { label: "Konzeptpapier Produktbesteuerung durch Wirkung", href: "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/" },
       { label: "Dossier Produkte & Konsum", href: "wirkungsfelder/produkte-konsum/dossier/" },
-      { label: "Working Paper Produktbesteuerung", href: "assets/pdf/working-paper-produktbesteuerung-durch-wirkung.pdf" },
+      { label: "Produktprüfung: Prüffragen und Grenzen", href: "wirkungsfelder/produkte-konsum/dossier/" },
       { label: "Apfelbeispiel", href: "wirkungsfelder/produkte-konsum/apfelbeispiel/" },
     ],
     anchors: [{ label: "Produkte als Wirkungsträger", href: "referenz/kapitel-048-produkte-als-wirkungstraeger/" }, { label: "Ehrliche Preise", href: "referenz/kapitel-049-ehrliche-preise/" }, { label: "Produktscorecards", href: "referenz/kapitel-050-produktscorecards/" }, { label: "Apfelbeispiel", href: "referenz/kapitel-051-das-apfelbeispiel/" }],
@@ -912,15 +925,15 @@ const legacyMethodMapTools = [
   ["Open-Science- und Replikationscheck", "Offenheit, Replizierbarkeit, Datenzugang und wissenschaftliche Integrität prüfen.", "B", "Demo", "werkzeuge/open-science-und-replikationscheck/", ["Forschungs-Wirkungscheck", "Wissensrat-/Integritätsregister", "Datenqualität & Assurance"]],
   ["WÖk-IDs", "Referenzrahmen, Datenquellen, Einheiten, Schwellen, Versionen und Prüfstatus verbinden.", "C", "Methodik", "werkzeuge/woek-ids/", ["Scorecards", "Datenqualität & Assurance", "Wirkungsdatenräume"]],
   ["Datenqualität & Assurance", "Datenqualität, Prüfstatus und Assurance sichern, damit Wirkungsdaten belastbar bleiben.", "C", "Methodik", "werkzeuge/datenqualitaet-assurance/", ["WÖk-IDs", "Wirkungsaudit", "Digitale Produktpässe"], "Datenqualität sichtbar machen."],
-  ["Digitale Produktpässe", "Produkt-, Lieferketten- und Prüfdaten als Nachweis- und Lerninfrastruktur vorbereiten.", "C", "In Vorbereitung", "werkzeuge/digitale-produktpaesse/", ["Produktscorecards", "Wirkungsdatenräume", "Datenqualität & Assurance"], "Vorbereitete Methodenseite, keine amtliche Produktklassifikation."],
-  ["Wirkungsdatenräume", "Interoperable Datenräume für Wirkungsdaten, Zugriffsrechte, Versionierung und Prüfbarkeit vorbereiten.", "C", "In Vorbereitung", "werkzeuge/wirkungsdatenraeume/", ["WÖk-IDs", "Digitale Produktpässe", "Datenraum-Reifegradcheck"], "Vorbereitete Methodenseite, keine Datenfreigabeentscheidung."],
+  ["Digitale Produktpässe", "Produkt-, Lieferketten- und Prüfdaten als Nachweis- und Lerninfrastruktur einordnen.", "C", "Methodik", "werkzeuge/digitale-produktpaesse/", ["Produktscorecards", "Wirkungsdatenräume", "Datenqualität & Assurance"], "Diese Methodik ordnet Produkt-, Lieferketten- und Prüfdaten. Sie trifft keine amtliche Produktklassifikation."],
+  ["Wirkungsdatenräume", "Interoperable Datenräume für Wirkungsdaten, Zugriffsrechte, Versionierung und Prüfbarkeit einordnen.", "C", "Methodik", "werkzeuge/wirkungsdatenraeume/", ["WÖk-IDs", "Digitale Produktpässe", "Datenraum-Reifegradcheck"], "Diese Methodik ordnet Rollen, Zugriffsrechte, Versionierung und Prüfbarkeit. Sie trifft keine Datenfreigabeentscheidung."],
   ["Digitale Produktpässe und Wirkungsdatenräume", "Bestehende gemeinsame Methodenseite für Produkt-, Lieferketten-, Prüf- und Wirkungsinformationen.", "C", "Methodik", "werkzeuge/digitale-produktpaesse-wirkungsdatenraeume/", ["Digitale Produktpässe", "Wirkungsdatenräume", "Produktscorecards"]],
   ["Datenraum-Reifegradcheck", "Reifegrad von Datenräumen für Wirkung, Interoperabilität, Governance und Anschlussfähigkeit prüfen.", "C", "Demo", "werkzeuge/datenraum-reifegradcheck/", ["Wirkungsdatenräume", "WÖk-IDs", "Datenqualität & Assurance"]],
   ["Digital-Souveränitätscheck", "Digitale Souveränität, Abhängigkeiten, Datenrechte und öffentliche Handlungsfähigkeit prüfen.", "C", "Demo", "werkzeuge/digital-souveraenitaetscheck/", ["Cyberresilienz-Check", "Kritische-Infrastruktur-Monitor", "Wirkungsdatenräume"]],
   ["Cyberresilienz-Check", "Wiederherstellungsfähigkeit, Datenintegrität, Backups, Incident Response und analoge Rückfallebenen bewerten.", "C", "Methodik", "werkzeuge/cyberresilienz-check/", ["Digital-Souveränitätscheck", "Kritische-Infrastruktur-Monitor", "Hybrid-Risk-Radar"]],
   ["Kritische-Infrastruktur-Monitor", "Energie, Wasser, Gesundheit, Verwaltung, Daten, Verkehr und Kommunikation nach Ausfallwirkung prüfen.", "C", "Methodik", "werkzeuge/kritische-infrastruktur-monitor/", ["Infrastruktur-Stabilitätsindex", "Cyberresilienz-Check", "Resilienz-Radar Kommune"]],
   ["Infrastruktur-Stabilitätsindex", "Stabilität, Redundanz, Rückfallebenen, Wartungszustand und Abhängigkeiten kritischer Infrastruktur verdichten.", "C", "Methodik", "werkzeuge/infrastruktur-stabilitaetsindex/", ["Kritische-Infrastruktur-Monitor", "Resilienz-Radar Kommune", "Wirkungshaushalt"]],
-  ["Wirkungsregister", "Öffentlich prüfbares Register für Methodenstände, Indikatoren, Versionen, Audits und Korrekturen vorbereiten.", "C", "In Vorbereitung", "werkzeuge/wirkungsregister/", ["Wirkungsrat", "Wirkungsaudit", "WÖk-IDs"], "Vorbereitete Registerlogik, keine amtliche Entscheidung."],
+  ["Wirkungsregister", "Öffentlich prüfbares Register für Methodenstände, Indikatoren, Versionen, Audits und Korrekturen.", "C", "Methodik", "werkzeuge/wirkungsregister/", ["Wirkungsrat", "Wirkungsaudit", "WÖk-IDs"], "Diese Methodik ordnet Transparenz, Versionierung und Korrekturwege. Sie trifft keine amtliche Entscheidung."],
   ["Wissensrat-/Integritätsregister", "Wissenschaftliche Integrität, Replikation, Quellenlage und Registerlogik strukturieren.", "C", "Demo", "werkzeuge/wissensrat-integritaetsregister/", ["Open-Science-Check", "Wirkungsregister", "Forschungs-Wirkungscheck"]],
   ["Wirkungsumsatzsteuer", "Produkt- und Leistungswirkung modellhaft an Steuer- und Preislogik rückkoppeln.", "D", "Methodik", "werkzeuge/wirkungsumsatzsteuer/", ["Produktscorecards", "Reverse Merit Order", "Wirkungssteuergesetz"], "Keine Steuerberatung."],
   ["Wirkungssteuergesetz WStG", "Wirkung als steuerliche Bemessungs- und Steuerungslogik rahmen.", "D", "Methodik", "werkzeuge/wirkungssteuergesetz/", ["Wirkungsumsatzsteuer", "Wirkungseinkommensteuer", "Wirkungshaushalt"], "Keine Rechts- oder Steuerberatung."],
@@ -928,8 +941,8 @@ const legacyMethodMapTools = [
   ["Wirkungshaushalt", "Öffentliche Mittel nach Prävention, Resilienz, Zielgruppenwirkung und positiver Netto-Wirkung betrachten.", "D", "Methodik", "werkzeuge/wirkungshaushalt/", ["Öffentliche Beschaffung", "Wirkungsregister", "Wirkungsrat"], "Keine Förderentscheidung."],
   ["Gesundheitswirkungscheck", "Programme, Räume oder Maßnahmen nach Gesundheitsgewinn, Prävention, Teilhabe, Resilienz, Datenqualität und Nebenwirkungen prüfen.", "D", "Methodik", "wirkungsfelder/gesundheit-pflege/tools/gesundheitswirkungscheck/", ["Präventionswirkungslogik", "Pflegewirkungscheck", "T-SROI"], "Keine medizinische Beratung und keine Personenbewertung."],
   ["Präventionswirkungslogik", "Vermiedene Schäden, Lebensqualitätsnutzen, Resilienzbeitrag, Umsetzungskosten und Unsicherheit modellhaft sichtbar machen.", "D", "Methodik", "wirkungsfelder/gesundheit-pflege/tools/praeventionswirkungsrechner/", ["Gesundheitswirkungscheck", "Wirkungshaushalt", "T-SROI"], "Modellhaft, keine Diagnose und keine Beratung."],
-  ["Öffentliche Beschaffung", "Beschaffung nach Wirkung, Datenqualität, Rechtsschutz und demokratischer Kontrolle vorbereiten.", "D", "In Vorbereitung", "werkzeuge/oeffentliche-beschaffung/", ["Wirkungshaushalt", "Wirkungsregister", "Datenqualität & Assurance"], "Vorbereitet, keine Vergabe- oder Förderentscheidung."],
-  ["Wirkungsaudit", "Prüfpfade, Datenqualität, rote Linien, Korrekturwege und Assurance als Auditlogik vorbereiten.", "D", "In Vorbereitung", "werkzeuge/wirkungsaudit/", ["Datenqualität & Assurance", "Wirkungsregister", "Wirkungsrat"], "Vorbereitet, keine Zertifizierung."],
+  ["Öffentliche Beschaffung", "Beschaffung nach Wirkung, Datenqualität, Rechtsschutz und demokratischer Kontrolle einordnen.", "D", "Methodik", "werkzeuge/oeffentliche-beschaffung/", ["Wirkungshaushalt", "Wirkungsregister", "Datenqualität & Assurance"], "Diese Methodik strukturiert Wirkungsfragen in der Beschaffung. Sie trifft keine Vergabe- oder Förderentscheidung."],
+  ["Wirkungsaudit", "Prüfpfade, Datenqualität, rote Linien, Korrekturwege und Assurance als Auditlogik.", "D", "Methodik", "werkzeuge/wirkungsaudit/", ["Datenqualität & Assurance", "Wirkungsregister", "Wirkungsrat"], "Diese Methodik strukturiert Prüfpfade, Datenqualität und Korrekturwege. Sie erteilt keine Zertifizierung."],
   ["Maschinenwertschöpfungsbeitrag", "Automatisierte Wertschöpfung in soziale Sicherung und Wirkungsfonds rückkoppeln.", "D", "Methodik", "werkzeuge/maschinenwertschoepfungsbeitrag/", ["Automatisierungsdividende", "Wirkungseinkommensteuer", "Wirkungsfonds"]],
   ["Automatisierungsdividende", "Produktivitätsgewinne in Grundsicherheit, Weiterbildung, Wirkungsfonds und Transformationsschutz verteilen.", "D", "Methodik", "werkzeuge/automatisierungsdividende/", ["Maschinenwertschöpfungsbeitrag", "Wirkungsfonds", "Wirkungsrenten-Rechner"]],
   ["Automatisierungsdividenden-Rechner", "Modellhafte Rechnerseite für Automatisierungsdividende, Finanzsystem und Kapital.", "D", "Demo", "werkzeuge/automatisierungsdividenden-rechner/", ["Automatisierungsdividende", "Wirkungsfonds", "Maschinenwertschöpfungsbeitrag"], "Modellhaft, keine Anlage- oder Förderberatung."],
@@ -1093,7 +1106,7 @@ const cardsToRestoreOrPrepare = [
   },
   {
     title: "WÖk-ID-Register",
-    text: "Das öffentliche Forschungsregister macht WÖk-IDs, Quellen, Berechnungslogiken, Datenqualität und Reviewstatus nachvollziehbar.",
+    text: "Das öffentliche Forschungsregister macht WÖk-IDs, Quellen, Berechnungslogiken, Datenqualität und Prüfstatus nachvollziehbar.",
     cluster: "B",
     status: "Public Research",
     target: "werkzeuge/woek-id-register/",
@@ -1262,8 +1275,8 @@ const cardsToRestoreOrPrepare = [
     notice: "Keine Anlageentscheidung.",
   },
   {
-    title: "Review-/Versionierungslogik",
-    text: "Review- und Versionierungslogik hält Methodenstände, Quellen, Benchmarks, Korrekturen und Reviewstatus nachvollziehbar.",
+    title: "Prüf- und Versionierungslogik",
+    text: "Prüf- und Versionierungslogik hält Methodenstände, Quellen, Benchmarks, Korrekturen und Prüfstatus nachvollziehbar.",
     cluster: "G",
     status: "In Vorbereitung",
     target: null,
@@ -1396,7 +1409,30 @@ const noticeOverrideByTitle = new Map([
   ["Impact Controlling", "Managementinstrument, kein Ersatz für menschliche Verantwortung und demokratische Legitimation."],
 ]);
 
+const methodOverviewTitles = new Set([
+  "Digitale Produktpässe",
+  "Wirkungsdatenräume",
+  "Wirkungsregister",
+  "Öffentliche Beschaffung",
+  "Wirkungsaudit",
+]);
+
 const demoLikeTitle = (title, status) => status === "Demo" || /(Demo|Rechner|Check|Scanner|Dashboard|Radar|Generator|Monitor|Simulator|Rating)/.test(title);
+
+// "In Vorbereitung" describes the production process, not the public
+// subject matter. Public pages instead state what visitors can actually use:
+// a documented method overview with explicit limits.
+function publicMethodStatus(status) {
+  return status === "In Vorbereitung" ? "Methodik" : (status || "Methodik");
+}
+
+function publicToolNotice(notice) {
+  const cleaned = String(notice || "")
+    .replace(/^Vorbereitete?\s+(?:Methodenseite|Registerlogik),?\s*/i, "")
+    .replace(/^Vorbereitet,?\s*/i, "")
+    .trim();
+  return cleaned || "Die Seite erklärt die Methode; sie trifft keine amtliche oder automatische Entscheidung.";
+}
 
 const methodBucketByCluster = new Map([
   ["A", "Bewertungslogik"],
@@ -1410,9 +1446,9 @@ const methodBucketByCluster = new Map([
 ]);
 
 function normalizeMethodTool(raw) {
-  const [legacyTitle, legacyText, legacyCluster, legacyStatus, target, related = [], notice = "Bereitet Entscheidungen vor, ersetzt sie aber nicht."] = raw;
+  const [legacyTitle, legacyText, legacyCluster, legacyStatus, target, related = [], notice = "Strukturiert Entscheidungen, ersetzt sie aber nicht."] = raw;
   const title = titleOverrideByTitle.get(legacyTitle) || legacyTitle;
-  const status = legacyStatus || "Methodik";
+  const status = publicMethodStatus(legacyStatus);
   const isDemo = demoLikeTitle(legacyTitle, status);
   const cluster = clusterOverrideByTitle.get(legacyTitle) || (isDemo ? "H" : legacyCluster);
   const types = typeOverrideByTitle.get(title) || typeOverrideByTitle.get(legacyTitle) || (isDemo ? (legacyTitle.includes("Rechner") ? ["Demo", "Rechner"] : legacyTitle.includes("Check") ? ["Demo", "Check"] : ["Demo"]) : ["Methode"]);
@@ -1426,7 +1462,7 @@ function normalizeMethodTool(raw) {
     notice: noticeOverrideByTitle.get(legacyTitle) || notice,
     types,
     isDemo,
-    isPrepared: status === "In Vorbereitung" || !target,
+    isPrepared: methodOverviewTitles.has(legacyTitle) || !target,
     method: methodBucketByCluster.get(cluster) || "Methode",
     oldCluster: legacyCluster,
   };
@@ -1444,20 +1480,20 @@ function uniqueMethodTools(tools) {
 
 const methodMapTools = uniqueMethodTools([
   ...cardsToRestoreOrPrepare.map((tool) => ({
-    status: "Methodik",
+    ...tool,
+    status: publicMethodStatus(tool.status),
     related: [],
-    notice: "Bereitet Entscheidungen vor, ersetzt sie aber nicht.",
+    notice: "Strukturiert Entscheidungen, ersetzt sie aber nicht.",
     types: ["Methode"],
     isDemo: false,
     isPrepared: tool.status === "In Vorbereitung" || !tool.target,
     method: methodBucketByCluster.get(tool.cluster) || "Methode",
     oldCluster: "neu/ergänzt",
-    ...tool,
   })),
   ...legacyMethodMapTools.map(normalizeMethodTool),
 ]);
 
-const preparedToolPages = methodMapTools.filter((tool) => tool.status === "In Vorbereitung" && tool.target);
+const preparedToolPages = methodMapTools.filter((tool) => tool.isPrepared && tool.target);
 
 function relatedToolLinks(base, related = []) {
   const aliases = new Map([
@@ -1491,11 +1527,11 @@ function plainSearchText(value) {
 }
 
 function methodToolCard(base, tool) {
-  const { title, text, cluster, status, target, related = [], notice = "Bereitet Entscheidungen vor, ersetzt sie aber nicht.", types = [], isDemo = false, isPrepared = false, method = "" } = tool;
+  const { title, text, cluster, status, target, related = [], notice = "Strukturiert Entscheidungen, ersetzt sie aber nicht.", types = [], isDemo = false, isPrepared = false, method = "" } = tool;
   const clusterInfo = methodClusters.find((item) => item.key === cluster);
   const action = target
     ? `<a class="text-link" href="${href(base, target)}">Detailseite öffnen</a>`
-    : `<span class="method-card-pending">Detailseite in Vorbereitung</span>`;
+    : `<span class="method-card-pending">Einordnung in dieser Übersicht</span>`;
   const searchText = [title, plainSearchText(text), clusterInfo?.title, status, types.join(" "), related.join(" ")].filter(Boolean).join(" ");
   return `<article class="card method-tool-card" data-method-card data-cluster="${escapeHtml(cluster)}" data-status="${escapeHtml(status)}" data-type="${escapeHtml(types.join(" "))}" data-method="${escapeHtml(method)}" data-demo="${isDemo ? "ja" : "nein"}" data-prepared="${isPrepared ? "ja" : "nein"}" data-search="${escapeHtml(searchText)}">
     <div class="method-tool-card-head">
@@ -1761,7 +1797,7 @@ function toolOverview() {
           <div class="section-header">
             <p class="hero-kicker">Filter</p>
             <h2 id="method-map-title">Acht Cluster statt gemischter Werkzeugliste</h2>
-            <p>Jedes Werkzeug bleibt über seine Detailseite erreichbar. Neue zentrale, aber noch nicht ausgearbeitete Werkzeuge sind als ${StatusBadge("In Vorbereitung")} markiert.</p>
+            <p>Jedes Werkzeug bleibt über seine Detailseite erreichbar. Methodenübersichten erklären Nutzerfrage, Grenzen und Anschlussstellen, bevor eine spezielle Anwendung nötig ist.</p>
           </div>
           <form class="tool-filter-panel" data-tool-filter aria-label="Methoden und Werkzeuge filtern">
             <label>Suche <input type="search" data-tool-filter-search placeholder="Begriff, Methode oder Demo suchen"></label>
@@ -1770,7 +1806,7 @@ function toolOverview() {
             <label>Status <select data-tool-filter-status><option value="">Alle Status</option>${Array.from(new Set(methodMapTools.map((tool) => tool.status))).sort().map((status) => `<option value="${escapeHtml(status)}">${escapeHtml(status)}</option>`).join("")}</select></label>
             <label>Methode <select data-tool-filter-method><option value="">Alle Methodenlogiken</option>${Array.from(new Set(methodMapTools.map((tool) => tool.method).filter(Boolean))).sort().map((method) => `<option value="${escapeHtml(method)}">${escapeHtml(method)}</option>`).join("")}</select></label>
             <label class="tool-filter-check"><input type="checkbox" data-tool-filter-demo> Nur Demos/Rechner/Checks</label>
-            <label class="tool-filter-check"><input type="checkbox" data-tool-filter-prepared> Nur in Vorbereitung/Rekonstruktion</label>
+            <label class="tool-filter-check"><input type="checkbox" data-tool-filter-prepared> Nur Methodenübersichten</label>
           </form>
           <nav class="method-cluster-nav" aria-label="Methodencluster">
             ${methodClusters.map((cluster) => `<a href="#cluster-${cluster.key.toLowerCase()}"><strong>${cluster.key}</strong><span>${escapeHtml(cluster.title)}</span></a>`).join("")}
@@ -1848,7 +1884,7 @@ function toolPage(tool) {
           ${cardGrid(base, [
             { title: "Eingaben", text: "Daten, Quellen, Annahmen, Systemgrenzen, Wirkungsfeld, Zeitbezug und Prüfstatus. Demo-Werte müssen von realen Nachweisen getrennt bleiben." },
             { title: "Ergebnisse", text: "Ein Wirkungsprofil, Score, Pfad, Risikomatrix oder Prüfhinweis. Das Ergebnis ist eine Entscheidungshilfe, keine automatische Entscheidung." },
-            { title: "Datenqualität", text: "Messwert, Schätzung, Modellwert, Quelle, Aktualität und Reviewstatus müssen unterscheidbar sein. Fehlende Daten sind ein Ergebnis, kein Schönheitsfehler." },
+            { title: "Datenqualität", text: "Messwert, Schätzung, Modellwert, Quelle, Aktualität und Prüfstatus müssen unterscheidbar sein. Fehlende Daten sind ein Ergebnis, kein Schönheitsfehler." },
           ])}
         </div>
       </section>
@@ -1927,38 +1963,39 @@ function toolPage(tool) {
 }
 
 function preparedToolPage(tool) {
-  const { title, text, cluster, status, target, related = [], notice = "Vorbereitete Methodenseite." } = tool;
+  const { title, text, cluster, status, target, related = [], notice = "Die Seite erklärt die Methode; sie trifft keine amtliche oder automatische Entscheidung." } = tool;
   const rel = `${target.replace(/^\/+/, "").replace(/\/?$/, "/")}index.html`;
   const clusterInfo = methodClusters.find((item) => item.key === cluster);
+  const publicNotice = publicToolNotice(notice);
   return page({
     rel,
-    title: `${title} | In Vorbereitung`,
+    title: `${title} | Methodenüberblick`,
     description: text,
     searchSection: "Werkzeuge",
-    searchType: "Werkzeug in Vorbereitung",
+    searchType: "Methodenüberblick",
     body: (base) => `<section class="hero">
         <div class="hero-grid">
           <div>
             <nav class="breadcrumb" aria-label="Breadcrumb"><a href="${href(base, "werkzeuge/")}">Werkzeuge</a><span aria-hidden="true">/</span><span>${escapeHtml(title)}</span></nav>
-            <p class="hero-kicker">Werkzeug · ${StatusBadge(status)}</p>
+            <p class="hero-kicker">Werkzeug · Methodenüberblick</p>
             <h1 class="hero-title">${escapeHtml(title)}</h1>
             <p class="hero-subtitle">${escapeHtml(text)}</p>
-            <p class="hero-text">Diese Orientierungsseite beschreibt den aktuellen Arbeitsstand des Werkzeugs. Sie zeigt, welche Nutzerfrage, welche Eingaben und welche Wirkungslogik geprüft werden sollen; sie ersetzt keine fachliche, rechtliche, steuerliche, finanzielle oder amtliche Prüfung.</p>
+            <p class="hero-text">Diese Seite erklärt die Wirkungslogik des Werkzeugs: Nutzerfrage, Eingaben, Grenzen und Schutzlinien. Sie ersetzt keine fachliche, rechtliche, steuerliche, finanzielle oder amtliche Prüfung.</p>
             ${printActions(base)}
           </div>
           <aside class="card">
             <p class="card-kicker">Cluster ${escapeHtml(cluster)}</p>
             <h2 class="card-title">${escapeHtml(clusterInfo?.title || "Methoden")}</h2>
-            <p class="card-text">${escapeHtml(clusterInfo?.text || "Dieses Werkzeug wird als Methodenbaustein vorbereitet.")}</p>
+            <p class="card-text">${escapeHtml(clusterInfo?.text || "Dieses Werkzeug ist als Methodenbaustein eingeordnet.")}</p>
           </aside>
         </div>
       </section>
       <section class="section" aria-labelledby="schutzlinien">
         <div class="card">
           <p class="hero-kicker">Schutzlinien</p>
-          <h2 id="schutzlinien">Noch kein fertiges Werkzeug</h2>
-          <p class="card-text">${escapeHtml(notice)}</p>
-          <p class="card-text">Die spätere Ausarbeitung muss Datenqualität sichtbar machen, rote Linien respektieren, keine Personen bewerten und keine automatische Entscheidung treffen.</p>
+          <h2 id="schutzlinien">Grenzen und Einsatzrahmen</h2>
+          <p class="card-text">${escapeHtml(publicNotice)}</p>
+          <p class="card-text">Eine Anwendung muss Datenqualität sichtbar machen, rote Linien respektieren, keine Personen bewerten und keine automatische Entscheidung treffen.</p>
         </div>
       </section>
       <section class="section" aria-labelledby="related-tools">
@@ -2044,9 +2081,9 @@ function workshopPages() {
     ["gesetze", "Gesetze und Rechtsentwürfe", [["Wirkungssteuergesetz WStG", "Rahmenentwurf zur Wirkungssteuerlogik.", "dokumente/wstg-oktober-2025/"], ["Technische Leitlinien WUStG", "Leitlinien zur Produktwirkungssteuer.", "dokumente/technische-leitlinien-wustg-v2/"], ["Wirkungsrat", "Governance und institutionelle Sicherung.", "dokumente/wirkungsrat-konzept/"]]],
     ["methodik", "Methodik", [["WÖk Master Items", "Indikatorenarchitektur und Master Items.", "dokumente/woek-master-items-final-v1-2/"], ["Datenbasis", "Methodik, Standards und Regularien.", "methodik/datenbasis.html"], ["Scorecard-Demo", "Operative Bewertung sichtbar machen.", "scorecard-dashboard.html"]]],
     ["whitepaper", "Whitepaper", [["T-SROI", "Transformationswirkung und Impact Controlling.", "dokumente/whitepaper-t-sroi/"], ["Folgencheck statt Faktencheck", "Arbeitspapier zur Wirkung politischer Sprache, Frames, Narrativen und demokratischen Resonanzrisiken.", "bibliothek/folgencheck-wirkungspolitische-sprache/"], ["Produktbesteuerung durch Wirkung", "Kanonische Online-Fassung des Produktpapiers.", "werkstatt/whitepaper/produktbesteuerung-durch-wirkung/"], ["Wirkung statt Kapital", "Grundlagen und Paradigmenwechsel.", "assets/pdf/whitepaper-wirkung-statt-kapital.pdf"], ["Wirkungseinkommen", "Einkommen und Wirkung.", "assets/pdf/whitepaper-wirkungseinkommen.pdf"]]],
-    ["konzepte-dossiers", "Konzepte & Dossiers", [["Produktbesteuerung durch Wirkung", "Online lesbares Konzeptpapier im Portal Produkte & Konsum.", "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/"], ["Dossier Produkte & Konsum", "Rechenmodell, Tarifmatrix, Beispiele und Quellen zur Wirkungsumsatzsteuer.", "wirkungsfelder/produkte-konsum/dossier/"], ["Apfelbeispiel-Dossier", "Einzeldossier mit Bewertungsweg, Annahmen, Datenquellen und Grenzen.", "wirkungsfelder/produkte-konsum/dossiers/apfelbeispiel/"], ["Die Wirkungsschule", "Öffentliche Kurzfassung und Konzeptpapier zur Wirkungsschule.", "wirkungsfelder/bildung/wirkungsschule/"], ["Dossier Wohnen", "Öffentliches Dossier zum Wirkungsfeld Wohnen.", "blog/dossiers/wohnen.html"], ["Dossier Medien & Demokratie", "Öffentliches Dossier zu Medien, Demokratie und Wirkung.", "blog/dossiers/medien-demokratie.html"], ["Grundlagen-Dossier", "Projekt- und Grundlagenmaterialien.", "blog/dossiers/grundlagen.html"]]],
-    ["praxis", "Praxisbeispiele", [["Apfelbeispiel", "Produktscorecard und Bonusregel.", "wirkungsfelder/produkte-konsum/apfelbeispiel/"], ["Lieferkette", "Wirkungsökonomie in der Lieferkette.", "wirkungsfelder/produkte-konsum/lieferketten/"], ["Beispiel Konzern", "Konzern- und Produktscorecard.", "wirkungsfelder/produkte-konsum/basf-polyamid/"], ["T-Shirt / Textilbeispiel", "Modellseite für Textilien als Wirkungsträger.", "wirkungsfelder/produkte-konsum/t-shirt/"]]],
-    ["soziales", "Soziales", [["Wenn Maschinen arbeiten", "Automatisierung und Wirkungseinkommen.", "dokumente/wenn-maschinen-arbeiten/"], ["Wirkungsrente", "Generationenvertrag und soziale Sicherung.", "referenz/kapitel-058-wirkungsrente/"], ["Wirkungseinkommen", "Grunddividende und Zielmodell.", "referenz/kapitel-057-wirkungseinkommen/"]]],
+    ["konzepte-dossiers", "Konzepte & Dossiers", [["Produktbesteuerung durch Wirkung", "Online lesbares Konzeptpapier im Portal Produkte & Konsum.", "wirkungsfelder/produkte-konsum/produktbesteuerung-durch-wirkung/"], ["Dossier Produkte & Konsum", "Prüfpfad, Preis-Testannahmen, Beispiele und Quellen zur Wirkungsumsatzsteuer.", "wirkungsfelder/produkte-konsum/dossier/"], ["Apfelbeispiel", "Aktuelle Detailfassung mit Bewertungsweg, Annahmen, Datenquellen und Grenzen.", "wirkungsfelder/produkte-konsum/apfelbeispiel-produktwirkungsrechnung/"], ["Die Wirkungsschule", "Öffentliche Kurzfassung und Konzeptpapier zur Wirkungsschule.", "wirkungsfelder/bildung/wirkungsschule/"], ["Dossier Wohnen", "Öffentliches Dossier zum Wirkungsfeld Wohnen.", "blog/dossiers/wohnen.html"], ["Dossier Medien & Demokratie", "Öffentliches Dossier zu Medien, Demokratie und Wirkung.", "blog/dossiers/medien-demokratie.html"], ["Grundlagen-Dossier", "Projekt- und Grundlagenmaterialien.", "blog/dossiers/grundlagen.html"]]],
+    ["praxis", "Praxisbeispiele", [["Apfelbeispiel", "Prüfpfad und Preis-Testannahme am Produktbeispiel.", "wirkungsfelder/produkte-konsum/apfelbeispiel/"], ["Lieferkette", "Wirkungsökonomie in der Lieferkette.", "wirkungsfelder/produkte-konsum/lieferketten/"], ["Beispiel Konzern", "Konzern- und Produktscorecard als Modell.", "wirkungsfelder/produkte-konsum/basf-polyamid/"], ["T-Shirt / Textilbeispiel", "Modellseite für Textilien als Wirkungsträger.", "wirkungsfelder/produkte-konsum/t-shirt/"]]],
+    ["soziales", "Soziales", [["Arbeit & Einkommen", "Aktuelle Einordnung zu Automatisierung, Arbeit und sozialer Sicherung.", "wirkungsfelder/arbeit-einkommen/"], ["Wirkungsrente", "Generationenvertrag und soziale Sicherung.", "referenz/kapitel-058-wirkungsrente/"], ["Wirkungseinkommen", "Grunddividende und Zielmodell.", "referenz/kapitel-057-wirkungseinkommen/"]]],
     ["recht", "Recht", [["Wirkungssteuergesetz WStG", "Rahmenentwurf zur Wirkungssteuerlogik.", "werkstatt/gesetze/wirkungssteuergesetz/"], ["WStG und Produktwirkungssteuer", "Rechts- und Steuerlogik im Grundlagenwerk.", "referenz/kapitel-038-das-wustg-und-die-produktwirkungssteuer/"], ["Wirkungsrat", "Governance und institutionelle Sicherung.", "dokumente/wirkungsrat-konzept/"]]],
     ["architektur", "Architektur", [["Systemmodell", "Systemmodell der Wirkungsökonomie.", "dokumente/systemmodell-der-wirkungsoekonomie/"], ["Klima, Energie und Ressourcen", "Wirkungsfeld für ökologische Systemarchitektur.", "wirkungsfelder/klima-energie-ressourcen/"], ["Prozessarchitektur", "Von Daten zu Steuerlogik.", "workflow.html"]]],
     ["historische-dokumente", "Historische Dokumente", [["Manifest", "Historischer und normativer Ausgangspunkt.", "dokumente/woek-manifest/"], ["Minifest", "Kurzfassung und Orientierung.", "dokumente/minifest-wirkungsoekonomie/"], ["Archivhinweis", "Historische Dokumente einordnen.", "docs/grundlagen/Historische_Dokumente_Hinweis_v1.1.md"]]],
@@ -2212,6 +2249,7 @@ function writeToolLandscapeMetadata() {
     const isLabor =
       /rente|einkommen|estg|wstg|wustg|steuer|fonds|kapital|automatisierung|maschinen|risk|risiko/i.test(tool.title) &&
       !/Debatten|Kompass/i.test(tool.title);
+    const isMethodOverview = Boolean(tool.isPrepared && tool.target);
     return {
       title: tool.title,
       canonical_url: target ? `${SITE}${target}` : null,
@@ -2224,14 +2262,14 @@ function writeToolLandscapeMetadata() {
           ? "key_feature"
           : tool.isDemo
             ? "demo"
-            : tool.isPrepared
-              ? "prepared"
+            : isMethodOverview
+              ? "method_overview"
               : isLabor
                 ? "labor_or_model"
                 : "method_or_reference",
       method_bucket: tool.method || null,
       demo: Boolean(tool.isDemo),
-      prepared: Boolean(tool.isPrepared),
+      method_overview: isMethodOverview,
       protection_line:
         "Modellhafte Orientierung; keine amtliche Bewertung, keine Personenbewertung und keine automatische Entscheidung.",
       related: tool.related || [],
@@ -2249,7 +2287,7 @@ function writeToolLandscapeMetadata() {
       tools: canonicalTools.length,
       key_features: canonicalTools.filter((tool) => tool.public_position === "key_feature").length,
       demos: canonicalTools.filter((tool) => tool.public_position === "demo").length,
-      prepared: canonicalTools.filter((tool) => tool.public_position === "prepared").length,
+      method_overviews: canonicalTools.filter((tool) => tool.public_position === "method_overview").length,
       labor_or_model: canonicalTools.filter((tool) => tool.public_position === "labor_or_model").length,
     },
     tools: canonicalTools,
@@ -2260,6 +2298,13 @@ function writeToolLandscapeMetadata() {
 
 function run() {
   const written = [];
+  if (methodOverviewOnly) {
+    for (const tool of preparedToolPages) written.push(preparedToolPage(tool));
+    const metadata = writeToolLandscapeMetadata();
+    console.log("Method overview pages generated.");
+    console.log(`Tool landscape metadata generated: ${metadata}`);
+    return;
+  }
   written.push(fieldOverview());
   for (const field of fields) written.push(fieldPage(field));
   written.push(schoolPage());

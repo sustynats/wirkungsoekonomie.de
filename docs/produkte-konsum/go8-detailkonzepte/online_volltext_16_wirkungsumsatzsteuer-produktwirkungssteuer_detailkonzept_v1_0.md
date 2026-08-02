@@ -4,8 +4,8 @@
 
 **Autorin:** Natalie Weber  
 **Referenz:** Wirkungsökonomie  
-**Version:** v1.0  
-**Stand:** 24. Mai 2026
+**Version:** v1.1  
+**Stand:** 2. August 2026
 
 > Die Wirkungsumsatzsteuer verbietet nicht. Sie macht sichtbar, was der alte Preis verschweigt.
 
@@ -20,7 +20,7 @@
 1. Executive Summary
 2. Ausgangsdiagnose: Warum die heutige Umsatzsteuer wirkungsblind ist
 3. Vom Mehrwert zum Wirkungswert
-4. Steuerklassen und FinalScore
+4. Prüfpfad, Tarifentscheidung und FinalScore
 5. Reverse Merit Order und Nichtkompensation
 6. Vorsteuerlogik und Lieferkettenwirkung
 7. Importe, Grenzausgleich und internationale Anschlussfähigkeit
@@ -38,7 +38,7 @@
 
 Dieses Detailkonzept beschreibt die Wirkungsumsatzsteuer als zentrale Preisrückkopplung der Wirkungsökonomie. Die heutige Umsatzsteuer behandelt Produkte weitgehend nach Kategorien und Steuersätzen, aber nicht nach ihrer Wirkung. Ein Produkt kann gesund, regional, fair und kreislauffähig sein oder klimaschädlich, wasserintensiv, gesundheitsriskant und ausbeuterisch hergestellt werden - steuerlich bleibt der Unterschied oft unsichtbar.
 
-Die Wirkungsumsatzsteuer verändert diesen Kernmechanismus. Sie koppelt die Steuerklasse eines Produkts an den messbaren FinalScore seiner Wirkung. Positive Wirkung wird entlastet, negative Wirkung belastet. Dadurch wird die Steuer nicht mehr nur Einnahmeinstrument, sondern Rückkopplungsinstrument: Preise tragen mehr Wirklichkeitsinformation.
+Die Wirkungsumsatzsteuer beschreibt einen Prüfpfad für die Rückkopplung von Produktwirkung. Scorecards und FinalScore dokumentieren Evidenz, Datenqualität und kritische Grenzen; sie erzeugen weder automatisch eine Steuerklasse noch einen Satz. Eine mögliche Entlastung oder Belastung braucht eine demokratisch beschlossene, rechtsstaatlich kontrollierte Regel mit Einspruchs- und Korrekturweg. Dadurch kann Steuerpolitik zum Rückkopplungsinstrument werden: Preise tragen mehr Wirklichkeitsinformation, ohne dass ein Algorithmus Recht setzt.
 
 Die WUSt ist kein Verbotssystem und keine Planwirtschaft. Markt, Wettbewerb, Wahlfreiheit und Innovation bleiben erhalten. Aber die Marktpreise werden wahrheitsfähiger, weil externalisierte Kosten nicht länger vollständig unsichtbar bleiben.
 
@@ -54,31 +54,31 @@ Die Folge ist kein individuelles Fehlverhalten, sondern Marktverzerrung. Wer Kos
 
 Die klassische Umsatzsteuer besteuert den Mehrwert. Die Wirkungsumsatzsteuer fragt zusätzlich nach dem Wirkungswert. Der Mehrwert beschreibt monetäre Wertschöpfung. Der Wirkungswert beschreibt, ob diese Wertschöpfung Zustände positiv, neutral oder negativ verändert.
 
-Damit entsteht eine doppelte Lesart eines Produkts: Es bleibt wirtschaftlich handelbar, aber seine Wirkung wird zum Steuerfaktor. Die Steuerklasse wird nicht willkürlich festgelegt, sondern aus Scorecards, WÖk-IDs, Benchmarks und Produktdaten abgeleitet.
+Damit entsteht eine doppelte Lesart eines Produkts: Es bleibt wirtschaftlich handelbar, aber sein Wirkungsprofil wird für Entscheidungen sichtbar. Scorecards, WÖk-IDs, Benchmarks und Produktdaten begründen einen überprüfbaren Prüfstatus; sie ersetzen weder Gesetzgebung noch eine individuelle Rechtsprüfung.
 
 | Alte Logik | Wirkungsökonomische Logik |
 | --- | --- |
-| Kategorie bestimmt Steuersatz | Wirkung bestimmt Steuerklasse |
+| Kategorie bestimmt Steuersatz | Wirkungsprofil informiert einen gesetzlich bestimmten Tarifrahmen |
 | Preis zeigt Zahlungsbereitschaft | Preis trägt Wirkungsinformation |
 | Vorsteuer als Durchlaufposten | Vorsteuer als Lieferkettenanreiz |
 | Nachhaltigkeit als Bericht | Nachhaltigkeit als Steuerdatenbasis |
 | Subventionen reparieren Fehlanreize | Steuerlogik verändert den Grundanreiz |
 
-## Steuerklassen und FinalScore
+## Prüfpfad, Tarifentscheidung und FinalScore
 
-Die Wirkungsumsatzsteuer nutzt eine Wirkungsskala von -3 bis +3. Der FinalScore entsteht aus den relevanten Scorecard-Feldern. Je positiver die Wirkung, desto niedriger die Steuerklasse. Je schädlicher die Wirkung, desto höher die Steuerklasse.
+Die Wirkungsumsatzsteuer nutzt eine Wirkungsskala von -3 bis +3. Der FinalScore entsteht aus den relevanten Scorecard-Feldern. Er macht insbesondere sichtbar, ob ein kritisches Feld eine positive Aussage begrenzt. Ein positiver oder negativer Score ist kein Befehl an die Preisrechnung.
 
-Die konkrete Ausgestaltung bleibt politisch zu entscheiden und revisionsfähig. Für die konzeptionelle Ausarbeitung gilt die bereits entwickelte Skala von transformativ bis hoch schädlich. Entscheidend ist nicht die einzelne Zahl, sondern die Logik: Wirkung beeinflusst den Preis.
+Die konkrete Ausgestaltung bleibt politisch zu entscheiden, gesetzlich zu bestimmen und revisionsfähig. Die folgende Matrix trennt daher Befund und Folgeschritt. Sie ist keine Zuordnung `FinalScore → Steuersatz`.
 
-| FinalScore | Wirkungsklasse | Beispielhafte WUSt-Logik | Bedeutung |
-| --- | --- | --- | --- |
-| +3 | transformativ | 0 % | ersetzt schädliche Alternativen und stärkt MPD deutlich |
-| +2 | sehr gut | 0 % | positive Netto-Wirkung mit hoher Datenqualität |
-| +1 | gut | 5 % | positive Wirkung, förderfähige Vorleistung |
-| 0 | neutral | 10 % | keine relevante positive oder negative Wirkung nachweisbar |
-| -1 | schwach | 15 % | mindestens ein relevantes Feld unter Zielniveau |
-| -2 | schädlich | 20 % | deutliche negative Wirkung / Engpass |
-| -3 | hoch schädlich | 25 % | rote Linie oder starke negative Wirkung |
+| Prüfprofil | Aussage | Nächster Schritt |
+| --- | --- | --- |
+| +3 bis +2 | positive Netto-Wirkung mit hoher Datenqualität und ohne rote Linie | mögliche Entlastungsoption rechtlich und sozial prüfen |
+| +1 | positive Hinweise mit Grenzen | Datenqualität, Systemgrenzen und Verteilungswirkung prüfen |
+| 0 | kein belastbarer Ausschlag | Behandlung nach geltendem Recht |
+| -1 bis -2 | negativer Befund oder erhebliche Unsicherheit | Abhilfe-, Risiko- oder Datenprüfung |
+| -3 / rote Linie | schwerer kritischer Befund | Sonderprüfung, Rechtsschutz und gegebenenfalls gesetzlich vorgesehene Folge |
+
+Erst wenn ein Satz `t` unabhängig vom Score rechtswirksam bestimmt wurde, ist die Preisrechnung einfach: `P_brutto = P_netto × (1 + t)`. Beispiel: Bei einem Nettopreis von 1,00 EUR und einer offen ausgewiesenen Testannahme `t = 10 %` ergibt sich `1,00 × 1,10 = 1,10 EUR`. Die 10 % entstehen nicht aus dem FinalScore.
 
 ## Reverse Merit Order und Nichtkompensation
 
@@ -94,16 +94,16 @@ Die Nichtkompensation bedeutet nicht, dass alle Abwägungen verboten sind. Sie b
 
 Die Vorsteuerlogik ist der entscheidende Hebel in der Lieferkette. Im heutigen System kann Umsatzsteuer in der Kette weitgehend durchgereicht werden. Wirkungen schlechter Vorleistungen bleiben ökonomisch oft unsichtbar. In der Wirkungsökonomie wird die Vorsteuerfähigkeit an positive oder mindestens tragfähige Wirkung gekoppelt.
 
-Lieferanten mit positiven Scores werden attraktiver, weil ihre Vorleistungen steuerlich besser wirken. Lieferanten mit negativen Scores werden zum realen Kostenrisiko. Dadurch entsteht ein Wettbewerb um bessere Wirkung nicht erst am Endprodukt, sondern bereits bei Rohstoffen, Vorprodukten und Dienstleistungen.
+Lieferanten mit gut belegten Wirkungsprofilen können für Beschaffung und eine spätere, gesetzlich geregelte Vorsteuerprüfung attraktiver werden. Negative Befunde oder Datenlücken werden zum Kosten- und Risikoaspekt, aber der Score löst keine automatische steuerliche Folge aus. Dadurch kann ein Wettbewerb um bessere Wirkung bereits bei Rohstoffen, Vorprodukten und Dienstleistungen entstehen.
 
 Diese Logik ist besonders wichtig für globale Lieferketten. Sie verhindert, dass Wirkung durch Auslagerung verschwindet. Wer schlechte Vorprodukte importiert oder verarbeitet, trägt die Wirkungskosten in der Kette.
 
 | Vorleistung | Wirkungsscore | Steuerliche Wirkung | Anreiz |
 | --- | --- | --- | --- |
-| positive Vorleistung | +1 bis +3 | vorsteuerfähig / Bonus möglich | Lieferant wird attraktiver |
-| neutrale Vorleistung | 0 | Übergangs- oder Standardbehandlung | Verbesserungsanreiz |
-| negative Vorleistung | -1 bis -3 | nicht oder vermindert vorsteuerfähig | Kosten bleiben in der Kette hängen |
-| fehlende Daten | unbekannt | konservative Einstufung / Nachweispflicht | keine Vorteile durch Nichtwissen |
+| gut belegtes Profil | positive Hinweise ohne rote Linie | rechtlich geregelte Vorsteueroption prüfen | Lieferant wird prüfbar attraktiver |
+| neutrales Profil | kein belastbarer Ausschlag | Standardbehandlung nach geltendem Recht | Verbesserungsanreiz |
+| kritischer Befund | negative Wirkung oder rote Linie | Abhilfe-, Risiko- oder Rechtsprüfung | Kostenrisiko bleibt sichtbar |
+| fehlende Daten | unbekannt | Nachweispflicht und verhältnismäßige Prüfung | keine Vorteile durch Nichtwissen |
 
 ## Importe, Grenzausgleich und internationale Anschlussfähigkeit
 
@@ -144,7 +144,7 @@ Missbrauchsschutz bedeutet: Datenqualität ausweisen, Unsicherheit markieren, St
 | --- | --- |
 | Aufgabe der Politik | Preise, Steuern, Produktdaten und Verbraucherinformation so rahmen, dass reale Wirkung sichtbar und rückkoppelbar wird. |
 | Politische Rahmenbedingungen | Wirkungsregister, WÖk-IDs, DPP-Anschluss, Auditstandards, KMU-Erleichterungen, Übergangsfristen und Rechtsschutz. |
-| Ausgestaltungsspielraum | Parteien können Tempo, Steuerklassen, Pilotsektoren, Sozialausgleich, Förderung, Sanktionen und Grenzfälle unterschiedlich gewichten. |
+| Ausgestaltungsspielraum | Parteien können Tempo, Tarifrahmen, Pilotsektoren, Sozialausgleich, Förderung, Sanktionen und Grenzfälle unterschiedlich gewichten. |
 | Zielkonflikte | Kaufkraftschutz, Wettbewerbsfähigkeit, Datenlast, Innovation, Datenschutz, EU-Recht und internationale Lieferketten müssen austariert werden. |
 | Rollenverteilung | EU, Bund, Länder, Kommunen, Unternehmen, Handel, Prüfer:innen, Wissenschaft, Verbraucher:innen und Wirkungsrat tragen unterschiedliche Aufgaben. |
 | Übergang und Schutz | Kleine Unternehmen, Grundbedarf, vulnerable Haushalte und Transformationsbranchen brauchen Übergang, Beratung und soziale Abfederung. |
@@ -155,9 +155,9 @@ Missbrauchsschutz bedeutet: Datenqualität ausweisen, Unsicherheit markieren, St
 
 Dieses Detailkonzept gehört unter die Portalvertiefung „Wirkungsumsatzsteuer / Produktwirkungssteuer“. Der bestehende Portaltext bleibt als verständlicher Einstieg bestehen. Das Detailkonzept wird als Online-Volltext und Download ergänzt.
 
-- Wirkungssteuer-Simulator: zeigt Steuerklasse nach Scorefeldern.
+- Wirkungssteuer-Simulator: zeigt Daten, Scorefelder, Engpasssignal und getrennte Tarif-Testannahmen.
 - Vorsteuerketten-Rechner: zeigt, wie Lieferantenscores in der Kette wirken.
-- Apfel-Rechner: veranschaulicht NACE, SDG-Zuordnung, Daten und Steuerklasse.
+- Apfel-Rechner: veranschaulicht NACE, SDG-Zuordnung, Daten, Prüfstatus und Preis-Testannahme.
 - T-Shirt-Lieferkettenrechner: demonstriert Import, Vorsteuer und Score-Engpässe.
 - Kaufkraftschutz-Modul: zeigt soziale Abfederungsvarianten.
 
@@ -172,7 +172,7 @@ Die Wirkungsumsatzsteuer ist der praktische Kern der Produkt- und Konsumlogik de
 | Quelle / Anschlussstelle | Bedeutung | Referenz |
 | --- | --- | --- |
 | WP Produkte | Grundlage für Produktbesteuerung, ehrliche Preise, Wirkungssteuer und Marktlogik. | Interne Arbeitsbibliothek / Wirkungsökonomie |
-| Beispiel Apfel | NACE-Zuordnung, CSRD/ESRS/GRI-Daten, Reverse Merit Order und Steuerklassen am Produktbeispiel. | Interne Arbeitsbibliothek / Wirkungsökonomie |
+| Beispiel Apfel | NACE-Zuordnung, CSRD/ESRS/GRI-Daten, Reverse Merit Order, Prüfstatus und Preis-Testannahme am Produktbeispiel. | Interne Arbeitsbibliothek / Wirkungsökonomie |
 | Technische Leitlinien WUStG | WÖk-IDs, Scorecards, Archetypen, Benchmarks, Datenqualität und Assurance. | Interne Arbeitsbibliothek / Wirkungsökonomie |
 | Wirkungsökonomie in der Lieferkette | Vorsteuerlogik, Lieferkettenscores, Reverse Merit Order und globale Anschlussfähigkeit. | Interne Arbeitsbibliothek / Wirkungsökonomie |
 | Die neue Ordnung des Wohlstands | Buchanker: Produkte, Märkte, Preise, Produktscorecards, Apfelbeispiel, DPP und WUStG. | Natalie Weber, 2026 |

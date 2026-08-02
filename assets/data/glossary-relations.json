@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-30T18:22:33.041Z",
-  "count": 2071,
+  "generatedAt": "2026-08-02T19:45:36.345Z",
+  "count": 2092,
   "relations": {
     "fuenftes-p-planet": {
       "related": [
@@ -142,7 +142,7 @@
     },
     "afd-ideologie": {
       "related": [
-        "oeffentliche-wirkung",
+        "oeffentlichkeit-als-wirkungsraum",
         "folgenfreiheit",
         "meinungsfreiheit",
         "wirkungsverantwortung",
@@ -208,7 +208,7 @@
         "politischer-vorraum",
         "salienz",
         "priming",
-        "wirkungsraum-oeffentlichkeit"
+        "oeffentlichkeit-als-wirkungsraum"
       ],
       "doNotConfuse": [
         "nicht-verwechseln-mit-zensur-agenda-setting-kann-durch-journalistische-auswahl-plattformlogik-politik-oder-kampagnen-entstehen"
@@ -457,7 +457,7 @@
         "wirkungsrisiko",
         "diskurskultur",
         "desinformation",
-        "faktenresistenz",
+        "faktenreaktanz",
         "kognitive-dissonanz",
         "dunning-kruger-effekt",
         "bestaetigungsfehler",
@@ -490,7 +490,7 @@
     },
     "ambiguitaetsintoleranz": {
       "related": [
-        "false-urgency",
+        "false-urgency-kuenstliche-dringlichkeit",
         "moralische-panik",
         "wirkungskompetenz",
         "sdg-plus"
@@ -581,7 +581,7 @@
         "nachhaltigkeitsmanagement",
         "stabilitaet",
         "robustheit",
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "kipppunkt-systemschwelle",
         "attraktor",
         "stabilitaetslandschaft",
@@ -1020,7 +1020,7 @@
         "nachhaltigkeitsmanagement",
         "stabilitaet",
         "robustheit",
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "kipppunkt-systemschwelle",
         "stabilitaetslandschaft",
         "latitude",
@@ -1038,6 +1038,22 @@
       "doNotConfuse": [
         "nachhaltigkeit-als-blossen-zielzustand",
         "eine-additive-acht-punkte-formel"
+      ]
+    },
+    "attributionsfehler": {
+      "related": [
+        "wirkung",
+        "wirkungsbewertung",
+        "wirkungsdaten",
+        "wirkungsrisiko",
+        "wissenschaftsfeindlichkeit",
+        "diskursqualitaet"
+      ],
+      "doNotConfuse": [
+        "rechtliche-verantwortungspruefung",
+        "entschuldigung-fuer-verhalten",
+        "psychologische-diagnose",
+        "kausalitaetsnachweis"
       ]
     },
     "attributionsforschung": {
@@ -1738,7 +1754,9 @@
       ]
     },
     "benchmarks": {
-      "related": [],
+      "related": [
+        "benchmark"
+      ],
       "doNotConfuse": []
     },
     "benefit-impact-owner-und-uebergabe-in-den-regelbetrieb": {
@@ -1899,7 +1917,10 @@
       ]
     },
     "bestandsimmobilie": {
-      "related": [],
+      "related": [
+        "immobilien",
+        "energetische-sanierung"
+      ],
       "doNotConfuse": []
     },
     "bestaetigungsfehler": {
@@ -1940,6 +1961,23 @@
       ],
       "doNotConfuse": []
     },
+    "betroffenenperspektive": {
+      "related": [
+        "partizipation",
+        "teilhabe",
+        "grundrechte",
+        "gesundheit",
+        "wirkungsempfaenger",
+        "wirkungsbewertung"
+      ],
+      "doNotConfuse": [
+        "eine-einheitliche-gruppenmeinung",
+        "anekdote-als-alleiniger-nachweis",
+        "symbolische-anhoerung",
+        "automatisches-vetorecht",
+        "personenbewertung"
+      ]
+    },
     "bewegungs-ngo": {
       "related": [
         "ngo",
@@ -1957,7 +1995,10 @@
       "doNotConfuse": []
     },
     "bilanzgrenze": {
-      "related": [],
+      "related": [
+        "systemgrenze",
+        "lebenszyklusanalyse"
+      ],
       "doNotConfuse": []
     },
     "bilanzraum": {
@@ -1976,7 +2017,10 @@
       "doNotConfuse": []
     },
     "biodiversitaet": {
-      "related": [],
+      "related": [
+        "planet",
+        "biodiversitaetsrisiko"
+      ],
       "doNotConfuse": []
     },
     "biodiversitaetsrisiko": {
@@ -1992,7 +2036,7 @@
         "humusaufbau",
         "hydrologischer-kreislauf",
         "nature-positive",
-        "oekosystemleistungen",
+        "oekosystemleistungen-oekosystemfunktionen",
         "one-health",
         "planetare-grenzen"
       ],
@@ -2059,7 +2103,10 @@
       "doNotConfuse": []
     },
     "bip": {
-      "related": [],
+      "related": [
+        "wellbeing-economy",
+        "w-bip"
+      ],
       "doNotConfuse": []
     },
     "black-mass": {
@@ -2163,7 +2210,9 @@
       ]
     },
     "bne": {
-      "related": [],
+      "related": [
+        "bip"
+      ],
       "doNotConfuse": []
     },
     "both-sidesism": {
@@ -2199,11 +2248,17 @@
       "doNotConfuse": []
     },
     "brutblanket": {
-      "related": [],
+      "related": [
+        "tiere",
+        "biodiversitaet"
+      ],
       "doNotConfuse": []
     },
     "bruttokreditaufnahme": {
-      "related": [],
+      "related": [
+        "nettokreditaufnahme",
+        "refinanzierung"
+      ],
       "doNotConfuse": []
     },
     "bullshit-asymmetrie-brandolinis-gesetz": {
@@ -2400,6 +2455,24 @@
         "kritik-ist-nicht-automatisch-cancel-culture-umgekehrt-sind-soziale-sanktionen-nicht-automatisch-gerecht-die-woek-betrachtet-wirkungen-machtasymmetrien-verfahren-und-korrekturmoeglichkeiten"
       ]
     },
+    "cancel-dynamiken": {
+      "related": [
+        "diskursqualitaet",
+        "moderationsstandards",
+        "plattformregulierung",
+        "grundrechte",
+        "medienfreiheit",
+        "soziale-sanktionierung",
+        "betroffenenperspektive"
+      ],
+      "doNotConfuse": [
+        "berechtigter-protest",
+        "meinungsfreiheit",
+        "rechtliche-sanktion-nach-verfahren",
+        "jede-oeffentliche-kritik",
+        "personenbewertung"
+      ]
+    },
     "canvas-mindeststandard": {
       "related": [
         "woems-methodenkarte",
@@ -2490,7 +2563,10 @@
       ]
     },
     "capex-plan": {
-      "related": [],
+      "related": [
+        "capex",
+        "investitionsschuld"
+      ],
       "doNotConfuse": []
     },
     "capture-price": {
@@ -2529,7 +2605,10 @@
       "doNotConfuse": []
     },
     "care-feministische-oekonomie": {
-      "related": [],
+      "related": [
+        "sorgearbeit",
+        "gender-care-gap"
+      ],
       "doNotConfuse": []
     },
     "care-oekonomie": {
@@ -2686,7 +2765,7 @@
     "cherry-picking": {
       "related": [
         "bestaetigungsfehler",
-        "quote-mining",
+        "quote-mining-dekontextualisierung",
         "impact-washing",
         "netto-wirkung"
       ],
@@ -2703,7 +2782,10 @@
       "doNotConfuse": []
     },
     "circular-regenerative-economy": {
-      "related": [],
+      "related": [
+        "kreislaufwirtschaft",
+        "zirkularitaet"
+      ],
       "doNotConfuse": []
     },
     "circular-economy-butterfly-model": {
@@ -3021,7 +3103,10 @@
       ]
     },
     "crrem": {
-      "related": [],
+      "related": [
+        "immobilien",
+        "misalignment-year"
+      ],
       "doNotConfuse": []
     },
     "csddd": {
@@ -3089,11 +3174,17 @@
       ]
     },
     "cyberresilienz": {
-      "related": [],
+      "related": [
+        "dora",
+        "risiko-und-resilienzregister"
+      ],
       "doNotConfuse": []
     },
     "d-und-o": {
-      "related": [],
+      "related": [
+        "impact-governance-frameworks",
+        "risikomanagement"
+      ],
       "doNotConfuse": []
     },
     "daempfungsfaehigkeit": {
@@ -3107,7 +3198,7 @@
         "nachhaltigkeitsmanagement",
         "stabilitaet",
         "robustheit",
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "kipppunkt-systemschwelle",
         "attraktor",
         "stabilitaetslandschaft",
@@ -3143,7 +3234,7 @@
         "dao",
         "nichttriviales-system",
         "selbstorganisation",
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "wirkungslenkung",
         "zen"
       ],
@@ -3378,8 +3469,28 @@
         "ergebnis-nicht-als-endgueltige-wahrheit-sondern-als-versionierte-entscheidungsgrundlage-behandeln-betroffene-negative-wirkungen-und-machtasymmetrien-duerfen-nicht-durch-workshopkonsens-verschwinden"
       ]
     },
+    "datenschutz": {
+      "related": [
+        "informationssouveraenitaet",
+        "resonanzraum",
+        "wirkungsdaten",
+        "grundrechte",
+        "lernende-systeme",
+        "plattformregulierung"
+      ],
+      "doNotConfuse": [
+        "geheimhaltung-jeder-information",
+        "it-sicherheit-allein",
+        "datenverbot",
+        "einwilligung-ohne-verstaendliche-information",
+        "social-credit"
+      ]
+    },
     "datenstandard": {
-      "related": [],
+      "related": [
+        "datenqualitaet",
+        "managementsysteme"
+      ],
       "doNotConfuse": []
     },
     "dc-laden": {
@@ -3393,12 +3504,25 @@
       "doNotConfuse": []
     },
     "deal": {
-      "related": [],
+      "related": [
+        "clean-industrial-deal",
+        "eu"
+      ],
       "doNotConfuse": []
     },
     "debiasing": {
-      "related": [],
-      "doNotConfuse": []
+      "related": [
+        "kognitive-dissonanz",
+        "bestaetigungsfehler",
+        "meta-kognitive-intervention",
+        "faktencheck",
+        "reaktanz"
+      ],
+      "doNotConfuse": [
+        "faktencheck-er-prueft-den-wahrheitsgehalt-einer-konkreten-behauptung-debiasing-beschreibt-moegliche-bedingungen-unter-denen-eine-korrektur-verarbeitet-wird",
+        "manipulation-debiasing-macht-quellen-gruende-und-unsicherheit-pruefbar-manipulation-verdeckt-sie-oder-steuert-verdeckt-auf-ein-ergebnis-zu",
+        "wirkung-eine-verbesserung-der-informationslage-ist-noch-keine-nachgewiesene-veraenderung-von-urteil-oder-verhalten"
+      ]
     },
     "deep-state": {
       "related": [
@@ -3416,7 +3540,7 @@
       "related": [
         "wirkungsblindheit",
         "interdisziplinaritaet",
-        "systemkompetenz",
+        "wirkungskompetenz",
         "wirkungsaudit"
       ],
       "doNotConfuse": [
@@ -3432,7 +3556,10 @@
       "doNotConfuse": []
     },
     "degrowth-postwachstum": {
-      "related": [],
+      "related": [
+        "wellbeing-economy",
+        "bip"
+      ],
       "doNotConfuse": []
     },
     "dehumanisierung": {
@@ -3447,7 +3574,10 @@
       ]
     },
     "deindustrialisierungsnarrativ": {
-      "related": [],
+      "related": [
+        "narrativ",
+        "green-deal-industrial-plan"
+      ],
       "doNotConfuse": []
     },
     "dekohaerenz": {
@@ -3456,7 +3586,7 @@
         "wirkungsnetz",
         "nichttriviales-system",
         "messproblem",
-        "wirkungsrueckkopplung"
+        "rueckkopplung"
       ],
       "doNotConfuse": [
         "dekohaerenz-loest-nach-massgeblicher-philosophischer-darstellung-nicht-allein-das-messproblem-deshalb-nicht-als-erklaerung-von-allem-verwenden-keine-uebertragung-auf-bewusstsein-gesellschaft-oder-politik-als-physikalischer-mechanismus"
@@ -3684,7 +3814,7 @@
     "demokratische-rueckkopplung": {
       "related": [
         "demokratie",
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "resonanzraum",
         "oeffentlichkeit",
         "wirkungsrat",
@@ -3695,7 +3825,10 @@
       "doNotConfuse": []
     },
     "demokratische-staatsschuld": {
-      "related": [],
+      "related": [
+        "demokratische-erosion",
+        "nicht-finanzielle-staatsschulden"
+      ],
       "doNotConfuse": []
     },
     "demokratische-wirkungsarchitektur": {
@@ -3919,7 +4052,10 @@
       "doNotConfuse": []
     },
     "digital-ki-plattform-standards": {
-      "related": [],
+      "related": [
+        "ki-governance",
+        "plattformregulierung"
+      ],
       "doNotConfuse": []
     },
     "digitale-selbstbestimmung": {
@@ -4196,6 +4332,24 @@
         "moralische-reinheit-diskurskultur-bewertet-nicht-menschen-als-moralisch-gut-oder-schlecht"
       ]
     },
+    "diskursqualitaet": {
+      "related": [
+        "medienqualitaet",
+        "medienfreiheit",
+        "faktencheck",
+        "moderationsstandards",
+        "betroffenenperspektive",
+        "plattformregulierung",
+        "polarisierung"
+      ],
+      "doNotConfuse": [
+        "einigkeit",
+        "hoeflichkeit-allein",
+        "reichweite",
+        "beliebtheit",
+        "bewertung-politischer-meinungen"
+      ]
+    },
     "diskursraum": {
       "related": [
         "oeffentlichkeit",
@@ -4281,7 +4435,7 @@
       "related": [
         "hebelpunkt",
         "systemgrenze",
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "wirkungslenkung",
         "wirkungsarchitektur"
       ],
@@ -4298,7 +4452,10 @@
       "doNotConfuse": []
     },
     "donut-oekonomie": {
-      "related": [],
+      "related": [
+        "planetare-grenzen",
+        "mensch-planet-demokratie"
+      ],
       "doNotConfuse": []
     },
     "doppelte-wesentlichkeit": {
@@ -4326,7 +4483,10 @@
       ]
     },
     "dora": {
-      "related": [],
+      "related": [
+        "cyberresilienz",
+        "risikomanagement"
+      ],
       "doNotConfuse": []
     },
     "dosis": {
@@ -4638,6 +4798,24 @@
       ],
       "doNotConfuse": []
     },
+    "ehrenamt": {
+      "related": [
+        "gemeinwohl",
+        "teilhabe",
+        "wirkung",
+        "wirkungspotenzial",
+        "weiterbildung",
+        "wirkungseinkommen",
+        "wirkungsrente"
+      ],
+      "doNotConfuse": [
+        "unbezahlte-sorgearbeit-im-eigenen-haushalt",
+        "pflichtdienst",
+        "moralische-ueberlegenheit",
+        "wirkungsnachweis",
+        "individueller-wirkungslohn"
+      ]
+    },
     "ehrliche-preise": {
       "related": [
         "wirkungssteuer",
@@ -4742,7 +4920,10 @@
       "doNotConfuse": []
     },
     "eigentumsangst": {
-      "related": [],
+      "related": [
+        "eigentumsrechte",
+        "status-threat"
+      ],
       "doNotConfuse": []
     },
     "eigentumsrechte": {
@@ -4807,7 +4988,10 @@
       "doNotConfuse": []
     },
     "eiopa": {
-      "related": [],
+      "related": [
+        "versicherbarkeit",
+        "esma"
+      ],
       "doNotConfuse": []
     },
     "elektorale-autokratie": {
@@ -4820,7 +5004,10 @@
       "doNotConfuse": []
     },
     "elektrolyse": {
-      "related": [],
+      "related": [
+        "wasserstoff",
+        "energieeffizienz"
+      ],
       "doNotConfuse": []
     },
     "elektromobilitaet": {
@@ -4856,7 +5043,7 @@
         "selbstorganisation",
         "wirkungsnetz",
         "nichttriviales-system",
-        "wirkungsrueckkopplung"
+        "rueckkopplung"
       ],
       "doNotConfuse": [
         "wirkung",
@@ -4973,7 +5160,10 @@
       "doNotConfuse": []
     },
     "endogenes-geld": {
-      "related": [],
+      "related": [
+        "mmt",
+        "monetaere-souveraenitaet"
+      ],
       "doNotConfuse": []
     },
     "enemy-of-the-people": {
@@ -4989,7 +5179,10 @@
       ]
     },
     "energetische-sanierung": {
-      "related": [],
+      "related": [
+        "bestandsimmobilie",
+        "sanierungsfahrplan"
+      ],
       "doNotConfuse": []
     },
     "energie": {
@@ -5350,7 +5543,10 @@
       "doNotConfuse": []
     },
     "entmenschlichender-kampfbegriff": {
-      "related": [],
+      "related": [
+        "resonanzraum",
+        "menschenwuerde"
+      ],
       "doNotConfuse": []
     },
     "entmenschlichung": {
@@ -5415,7 +5611,10 @@
       ]
     },
     "entwicklungskredit": {
-      "related": [],
+      "related": [
+        "kapitalzugang",
+        "wirkungsinvestition-des-staates"
+      ],
       "doNotConfuse": []
     },
     "environmental-product-declaration": {
@@ -5427,7 +5626,10 @@
       "doNotConfuse": []
     },
     "epbd": {
-      "related": [],
+      "related": [
+        "gebaeudeenergieperformance",
+        "energetische-sanierung"
+      ],
       "doNotConfuse": []
     },
     "epd": {
@@ -5549,7 +5751,10 @@
       "doNotConfuse": []
     },
     "erm": {
-      "related": [],
+      "related": [
+        "risikomanagement",
+        "enterprise-risk-management-nach-wirkung"
+      ],
       "doNotConfuse": []
     },
     "ermoeglichende-taetigkeit": {
@@ -5630,7 +5835,10 @@
       ]
     },
     "erwuenschte-wirkung": {
-      "related": [],
+      "related": [
+        "positive-wirkung",
+        "positive-netto-wirkung"
+      ],
       "doNotConfuse": []
     },
     "esap": {
@@ -5678,15 +5886,24 @@
       ]
     },
     "esg-beratung": {
-      "related": [],
+      "related": [
+        "esg",
+        "nachhaltigkeitsmanagement"
+      ],
       "doNotConfuse": []
     },
     "esg-rating": {
-      "related": [],
+      "related": [
+        "sustainability-benchmarking",
+        "wirkungsbewertung"
+      ],
       "doNotConfuse": []
     },
     "esma": {
-      "related": [],
+      "related": [
+        "eu",
+        "esg-rating"
+      ],
       "doNotConfuse": []
     },
     "espr": {
@@ -5736,11 +5953,17 @@
       "doNotConfuse": []
     },
     "ets": {
-      "related": [],
+      "related": [
+        "emissionshandel",
+        "treibhausgasemissionen"
+      ],
       "doNotConfuse": []
     },
     "eu": {
-      "related": [],
+      "related": [
+        "eu-nachhaltigkeitsverfassungsrahmen",
+        "eu-taxonomie"
+      ],
       "doNotConfuse": []
     },
     "eu-climate-law": {
@@ -5817,7 +6040,10 @@
       ]
     },
     "eu-taxonomie-immobilien": {
-      "related": [],
+      "related": [
+        "eu-taxonomie",
+        "immobilien"
+      ],
       "doNotConfuse": []
     },
     "eudr": {
@@ -6161,7 +6387,10 @@
       "doNotConfuse": []
     },
     "fach-zukunft": {
-      "related": [],
+      "related": [
+        "zukunftsfaehigkeit",
+        "wirkungskompetenz"
+      ],
       "doNotConfuse": []
     },
     "fake-news": {
@@ -6585,7 +6814,7 @@
       "related": [
         "flood-the-zone",
         "gish-galopp",
-        "bullshit-asymmetrie",
+        "bullshit-asymmetrie-brandolinis-gesetz",
         "wirkungsresilienz"
       ],
       "doNotConfuse": [
@@ -6624,7 +6853,10 @@
       ]
     },
     "fledermausabschaltung": {
-      "related": [],
+      "related": [
+        "windenergie",
+        "biodiversitaet"
+      ],
       "doNotConfuse": []
     },
     "flexibilitaet-energiesystem": {
@@ -6649,7 +6881,7 @@
       "related": [
         "firehose-of-falsehood",
         "gish-galopp",
-        "derailing",
+        "derailing-themenverschiebung",
         "agenda-setting"
       ],
       "doNotConfuse": [
@@ -6657,11 +6889,17 @@
       ]
     },
     "folgekosten": {
-      "related": [],
+      "related": [
+        "kosten-des-nicht-handelns",
+        "externalitaeten-und-kostenverlagerungskarte"
+      ],
       "doNotConfuse": []
     },
     "folgekostenvermeidung": {
-      "related": [],
+      "related": [
+        "folgekosten",
+        "praevention-als-wirkleistung"
+      ],
       "doNotConfuse": []
     },
     "folgencheck": {
@@ -6701,7 +6939,7 @@
     "folgenfreiheit": {
       "related": [
         "meinungsfreiheit",
-        "oeffentliche-wirkung",
+        "oeffentlichkeit-als-wirkungsraum",
         "wirkungsfreiheit",
         "wirkungsverantwortung",
         "wirkungsrat",
@@ -6719,7 +6957,7 @@
       "related": [
         "wirkung",
         "wirkpfad",
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "interdependenz",
         "wirkungsrisiko",
         "klimafolgeschaeden",
@@ -6739,15 +6977,24 @@
       "doNotConfuse": []
     },
     "foerdercontrolling": {
-      "related": [],
+      "related": [
+        "foerderlogik",
+        "wirkungscontrolling"
+      ],
       "doNotConfuse": []
     },
     "foerderlogik": {
-      "related": [],
+      "related": [
+        "foerdercontrolling",
+        "neoklassische-foerderlogik"
+      ],
       "doNotConfuse": []
     },
     "fossile-alternative": {
-      "related": [],
+      "related": [
+        "fossile-systemkosten",
+        "lock-in-effekt"
+      ],
       "doNotConfuse": []
     },
     "fossile-systemkosten": {
@@ -6827,8 +7074,17 @@
       ]
     },
     "framekontrolle": {
-      "related": [],
-      "doNotConfuse": []
+      "related": [
+        "framing-sprache-tonalitaet",
+        "reframing",
+        "metakommunikation",
+        "reaktanz"
+      ],
+      "doNotConfuse": [
+        "framing-framing-beschreibt-die-einbettung-einer-information-framekontrolle-prueft-diese-einbettung",
+        "reframing-reframing-formuliert-einen-anderen-rahmen-framekontrolle-entscheidet-nicht-automatisch-welcher-davon-sachlich-traegt",
+        "dominanz-framekontrolle-soll-eine-frage-klaerbar-machen-nicht-gespraechspartner-innen-beherrschen"
+      ]
     },
     "framing-sprache-tonalitaet": {
       "related": [
@@ -6959,7 +7215,7 @@
     "frederic-vester": {
       "related": [
         "interdependenz",
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "folgewirkung",
         "hebelpunkt"
       ],
@@ -7100,7 +7356,10 @@
       "doNotConfuse": []
     },
     "functional-finance": {
-      "related": [],
+      "related": [
+        "mmt",
+        "funktionale-wirkungsfinanzpolitik"
+      ],
       "doNotConfuse": []
     },
     "fundamentaler-attributionsfehler": {
@@ -7115,15 +7374,24 @@
       ]
     },
     "funktionale-wirkungsfinanzpolitik": {
-      "related": [],
+      "related": [
+        "functional-finance",
+        "wirkungskredit"
+      ],
       "doNotConfuse": []
     },
     "fusion": {
-      "related": [],
+      "related": [
+        "technologiereifegrad",
+        "energie"
+      ],
       "doNotConfuse": []
     },
     "garantie": {
-      "related": [],
+      "related": [
+        "risikomanagement",
+        "kapitalzugang"
+      ],
       "doNotConfuse": []
     },
     "gaskraftwerk": {
@@ -7134,7 +7402,10 @@
       "doNotConfuse": []
     },
     "gebaeudestandards": {
-      "related": [],
+      "related": [
+        "epbd",
+        "gebaeudeenergiegesetz"
+      ],
       "doNotConfuse": []
     },
     "gebaeudeenergiegesetz": {
@@ -7155,7 +7426,10 @@
       ]
     },
     "gebaeudeenergieperformance": {
-      "related": [],
+      "related": [
+        "energetische-sanierung",
+        "gebaeudeenergiegesetz"
+      ],
       "doNotConfuse": []
     },
     "gebrauchsgueter": {
@@ -7313,7 +7587,10 @@
       ]
     },
     "gemeinwohloekonomie": {
-      "related": [],
+      "related": [
+        "mensch-planet-demokratie",
+        "wirkungsbewertung"
+      ],
       "doNotConfuse": []
     },
     "gender-budgeting": {
@@ -7561,8 +7838,17 @@
       "doNotConfuse": []
     },
     "gesichtswahrende-korrektur": {
-      "related": [],
-      "doNotConfuse": []
+      "related": [
+        "wertebruecke",
+        "kommunikative-souveraenitaet",
+        "reaktanz",
+        "kognitive-dissonanz"
+      ],
+      "doNotConfuse": [
+        "hoeflichkeit-um-jeden-preis-eine-falsche-behauptung-darf-klar-korrigiert-werden",
+        "zustimmung-eine-anerkannte-sorge-macht-die-schlussfolgerung-nicht-richtig",
+        "psychologische-diagnose-aus-einer-reaktion-laesst-sich-keine-diagnose-einer-person-ableiten"
+      ]
     },
     "gestehungskosten": {
       "related": [
@@ -7645,6 +7931,22 @@
         "gesetzliche-krankenkasse",
         "private-krankenversicherung",
         "sanktionssystem-fuer-krankheit"
+      ]
+    },
+    "gesundheitskompetenz": {
+      "related": [
+        "gesundheit",
+        "praevention",
+        "gesundheitswirkung",
+        "one-health",
+        "informationssouveraenitaet",
+        "weiterbildung"
+      ],
+      "doNotConfuse": [
+        "medizinische-diagnose",
+        "gehorsam-gegenueber-empfehlungen",
+        "intelligenztest",
+        "individuelle-schuld-fuer-gesundheitslagen"
       ]
     },
     "gesundheitssystem": {
@@ -7742,7 +8044,7 @@
     },
     "gish-galopp": {
       "related": [
-        "bullshit-asymmetrie",
+        "bullshit-asymmetrie-brandolinis-gesetz",
         "flood-the-zone",
         "firehose-of-falsehood",
         "faktencheck"
@@ -7925,7 +8227,10 @@
       ]
     },
     "globale-oeffentliche-gueter": {
-      "related": [],
+      "related": [
+        "internationale-zusammenarbeit",
+        "globale-wirkungsordnung"
+      ],
       "doNotConfuse": []
     },
     "globale-ordnung-2050": {
@@ -8039,7 +8344,10 @@
       ]
     },
     "globale-wirkungsordnung": {
-      "related": [],
+      "related": [
+        "internationale-zusammenarbeit",
+        "mensch-planet-demokratie"
+      ],
       "doNotConfuse": []
     },
     "glossar-backlink-audit": {
@@ -8303,7 +8611,10 @@
       ]
     },
     "gsbp": {
-      "related": [],
+      "related": [
+        "biodiversitaet",
+        "globale-wirkungsordnung"
+      ],
       "doNotConfuse": []
     },
     "habitatfragmentierung": {
@@ -8502,7 +8813,10 @@
       "doNotConfuse": []
     },
     "haushaltsblindleistung": {
-      "related": [],
+      "related": [
+        "staatsfinanzielle-wirkungsblindheit",
+        "wirkungsdefizit"
+      ],
       "doNotConfuse": []
     },
     "haushaltsneutralitaet": {
@@ -8515,15 +8829,24 @@
       "doNotConfuse": []
     },
     "haushaltsverlustleistung": {
-      "related": [],
+      "related": [
+        "negative-wirkung",
+        "oeffentliche-netto-wirkung"
+      ],
       "doNotConfuse": []
     },
     "haushaltswashing": {
-      "related": [],
+      "related": [
+        "wirkungswashing",
+        "haushaltswirkleistung"
+      ],
       "doNotConfuse": []
     },
     "haushaltswirkleistung": {
-      "related": [],
+      "related": [
+        "positive-netto-wirkung",
+        "oeffentliche-netto-wirkung"
+      ],
       "doNotConfuse": []
     },
     "hazardous-substances": {
@@ -8567,6 +8890,7 @@
         "wirkungssteuer",
         "wirkungslenkung",
         "transformationswirkung",
+        "rueckkopplung",
         "systemgrenze",
         "frederic-vester",
         "donella-meadows"
@@ -8616,11 +8940,17 @@
       "doNotConfuse": []
     },
     "heizhammer": {
-      "related": [],
+      "related": [
+        "kommunale-waermeplanung",
+        "framing-sprache-tonalitaet"
+      ],
       "doNotConfuse": []
     },
     "heizkostenrisiko": {
-      "related": [],
+      "related": [
+        "energetische-sanierung",
+        "energiearmut"
+      ],
       "doNotConfuse": []
     },
     "heritage-foundation": {
@@ -8799,7 +9129,7 @@
         "wirkungsorientiertes-hosting"
       ],
       "doNotConfuse": [
-        "personenscore",
+        "personenbewertung",
         "social-credit",
         "amtliches-medienrating"
       ]
@@ -8975,6 +9305,22 @@
       ],
       "doNotConfuse": []
     },
+    "hybride-kriegsfuehrung": {
+      "related": [
+        "desinformation",
+        "resonanzraum",
+        "cyberresilienz",
+        "medienvertrauen",
+        "plattformregulierung",
+        "globale-makro-wirkungsrisiken",
+        "wirkungsrisiko"
+      ],
+      "doNotConfuse": [
+        "desinformation-kann-ein-mittel-sein-ist-aber-nicht-jede-hybride-einflussnahme",
+        "kritik-oder-protest-sind-in-einer-demokratie-keine-hybride-kriegsfuehrung",
+        "resonanzraum-beschreibt-bedingungen-oeffentlicher-reaktion-nicht-den-sicherheitsbegriff-selbst"
+      ]
+    },
     "hybridregime": {
       "related": [
         "elektorale-autokratie",
@@ -9020,7 +9366,10 @@
       ]
     },
     "identitaetsschutz-kognition": {
-      "related": [],
+      "related": [
+        "kognitive-dissonanz",
+        "status-threat"
+      ],
       "doNotConfuse": []
     },
     "idgs": {
@@ -9037,7 +9386,10 @@
       ]
     },
     "iea": {
-      "related": [],
+      "related": [
+        "energie",
+        "energiesicherheit"
+      ],
       "doNotConfuse": []
     },
     "illiberale-demokratie": {
@@ -9081,7 +9433,10 @@
       "doNotConfuse": []
     },
     "immobilien": {
-      "related": [],
+      "related": [
+        "bestandsimmobilie",
+        "gebaeudestandards"
+      ],
       "doNotConfuse": []
     },
     "impact-benefits-realization": {
@@ -9110,7 +9465,10 @@
       "doNotConfuse": []
     },
     "impact-investing": {
-      "related": [],
+      "related": [
+        "impact-of-investment",
+        "t-sroi"
+      ],
       "doNotConfuse": []
     },
     "impact-materiality": {
@@ -9260,7 +9618,7 @@
         "xenophobie",
         "outgroup-homogenitaet",
         "resonanzraum",
-        "kontakt-hypothese"
+        "kontakthypothese"
       ],
       "doNotConfuse": [
         "nicht-verwechseln-mit-legitimer-identitaet-oder-zusammenhalt-problematisch-wird-es-wenn-zugehoerigkeit-wirkungspruefung-ersetzt"
@@ -9274,7 +9632,10 @@
       "doNotConfuse": []
     },
     "industriestrom": {
-      "related": [],
+      "related": [
+        "energieinfrastruktur",
+        "energieeffizienz"
+      ],
       "doNotConfuse": []
     },
     "inertia": {
@@ -9285,7 +9646,10 @@
       "doNotConfuse": []
     },
     "inflationsgrenze": {
-      "related": [],
+      "related": [
+        "realressourcengrenze",
+        "mmt"
+      ],
       "doNotConfuse": []
     },
     "informationsasymmetrie": {
@@ -9312,6 +9676,23 @@
         "paltering"
       ],
       "doNotConfuse": []
+    },
+    "informationssouveraenitaet": {
+      "related": [
+        "resonanzraum",
+        "datenschutz",
+        "medienqualitaet",
+        "wirkungsdaten",
+        "grundrechte",
+        "reichweite"
+      ],
+      "doNotConfuse": [
+        "datenschutz-allein",
+        "informationsbesitz",
+        "meinungshoheit",
+        "zensur",
+        "personenbewertung"
+      ]
     },
     "informationsueberlastung": {
       "related": [
@@ -9349,11 +9730,17 @@
       ]
     },
     "infraschall": {
-      "related": [],
+      "related": [
+        "windenergie",
+        "messgrenzen-und-unsicherheit"
+      ],
       "doNotConfuse": []
     },
     "infrastrukturelle-staatsschuld": {
-      "related": [],
+      "related": [
+        "investitionsschuld",
+        "nicht-finanzielle-staatsschulden"
+      ],
       "doNotConfuse": []
     },
     "initiativenauftrag-und-wirkungsvertrag": {
@@ -9493,7 +9880,10 @@
       ]
     },
     "integration-als-infrastruktur": {
-      "related": [],
+      "related": [
+        "kommunale-integrationskapazitaet",
+        "soziale-infrastruktur"
+      ],
       "doNotConfuse": []
     },
     "integrierte-assurance": {
@@ -9536,7 +9926,7 @@
         "frederic-vester",
         "mensch-planet-demokratie",
         "nichtlinearitaet",
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "wirkungsbewertung",
         "wirkungsraum",
         "systemtheorie"
@@ -9557,6 +9947,21 @@
       ],
       "doNotConfuse": [
         "ergebnis-nicht-als-endgueltige-wahrheit-sondern-als-versionierte-entscheidungsgrundlage-behandeln-betroffene-negative-wirkungen-und-machtasymmetrien-duerfen-nicht-durch-workshopkonsens-verschwinden"
+      ]
+    },
+    "interdisziplinaritaet": {
+      "related": [
+        "mensch-planet-demokratie",
+        "wirkungsarchitektur",
+        "wirkungsbewertung",
+        "wirkung",
+        "wissenschaftsfeindlichkeit"
+      ],
+      "doNotConfuse": [
+        "beliebigkeit",
+        "blosse-arbeitsteilung",
+        "fachfremde-selbstueberschaetzung",
+        "mehrheitsentscheidung-ohne-begruendung"
       ]
     },
     "interessenkonflikt": {
@@ -9581,7 +9986,7 @@
       "related": [
         "rage-bait",
         "empoerungsbewirtschaftung",
-        "plattformlogik",
+        "plattformlogik-und-algorithmen",
         "soziale-ansteckung"
       ],
       "doNotConfuse": [
@@ -9656,7 +10061,10 @@
       ]
     },
     "internationale-zusammenarbeit": {
-      "related": [],
+      "related": [
+        "globale-oeffentliche-gueter",
+        "globale-wirkungsordnung"
+      ],
       "doNotConfuse": []
     },
     "intersektionalitaet": {
@@ -9753,7 +10161,10 @@
       ]
     },
     "iso": {
-      "related": [],
+      "related": [
+        "managementsysteme",
+        "datenstandard"
+      ],
       "doNotConfuse": []
     },
     "iso-14040-14044": {
@@ -10060,7 +10471,10 @@
       ]
     },
     "kapitalzugang": {
-      "related": [],
+      "related": [
+        "entwicklungskredit",
+        "wirkungsfonds"
+      ],
       "doNotConfuse": []
     },
     "karl-marx": {
@@ -10091,7 +10505,10 @@
       "doNotConfuse": []
     },
     "kausalitaet-und-zurechnung": {
-      "related": [],
+      "related": [
+        "wirkungszurechnung",
+        "wirkpfad"
+      ],
       "doNotConfuse": []
     },
     "kausalschleifen-und-rueckkopplungsdiagramm": {
@@ -10229,8 +10646,7 @@
         "ki-verbot",
         "reine-compliance-checkliste",
         "modellperformance",
-        "automatische-entscheidung-ohne-rechtsschutz",
-        "personenscore"
+        "automatische-entscheidung-ohne-rechtsschutz"
       ]
     },
     "ki-lebenszyklus-modellrisiko-und-human-oversight-canvas": {
@@ -10354,7 +10770,10 @@
       ]
     },
     "kinderarbeit-zwangsarbeit": {
-      "related": [],
+      "related": [
+        "menschenrechte-in-der-lieferkette",
+        "ilo-kernarbeitsnormen"
+      ],
       "doNotConfuse": []
     },
     "kipppunkt": {
@@ -10372,7 +10791,7 @@
         "nachhaltigkeitsmanagement",
         "stabilitaet",
         "robustheit",
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "attraktor",
         "stabilitaetslandschaft",
         "latitude",
@@ -10433,7 +10852,10 @@
       "doNotConfuse": []
     },
     "klimastandards": {
-      "related": [],
+      "related": [
+        "thg-emissions-scopes",
+        "treibhausgasemissionen"
+      ],
       "doNotConfuse": []
     },
     "klimaanpassung": {
@@ -10650,11 +11072,17 @@
       "doNotConfuse": []
     },
     "kommunale-integrationskapazitaet": {
-      "related": [],
+      "related": [
+        "integration-als-infrastruktur",
+        "soziale-infrastruktur"
+      ],
       "doNotConfuse": []
     },
     "kommunale-waermeplanung": {
-      "related": [],
+      "related": [
+        "waermewende",
+        "kommunale-energie"
+      ],
       "doNotConfuse": []
     },
     "kommunaler-wirkungsindex": {
@@ -10692,8 +11120,18 @@
       ]
     },
     "kommunikative-souveraenitaet": {
-      "related": [],
-      "doNotConfuse": []
+      "related": [
+        "framekontrolle",
+        "psychologischer-wirkungscheck",
+        "metakommunikation",
+        "reaktanz",
+        "wirkungskommunikation"
+      ],
+      "doNotConfuse": [
+        "dominanz-oder-schlagfertigkeit-lautstaerke-und-schnelle-antworten-sind-keine-souveraenitaet",
+        "manipulation-die-gruende-und-grenzen-der-eigenen-antwort-bleiben-offen-pruefbar",
+        "wirkungsnachweis-gute-gespraechsfuehrung-kann-wirkungspotenzial-haben-beweist-aber-keine-verhaltens-oder-systemwirkung"
+      ]
     },
     "kommunismus": {
       "related": [
@@ -10729,7 +11167,7 @@
     "komplexitaetsmanagement": {
       "related": [
         "varietaet",
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "wirkungsarchitektur",
         "nichttriviales-system",
         "fredmund-malik"
@@ -10765,14 +11203,14 @@
     "konsequenzfaehigkeit": {
       "related": [
         "demokratische-rueckkopplung",
-        "oeffentliche-wirkung",
+        "oeffentlichkeit-als-wirkungsraum",
         "folgenfreiheit",
         "wirkungsverantwortung",
         "wirkungsrat"
       ],
       "doNotConfuse": [
         "sanktionslust",
-        "cancel-culture",
+        "cancel-dynamiken",
         "gesinnungspruefung"
       ]
     },
@@ -10823,7 +11261,10 @@
       ]
     },
     "konsumbilanz": {
-      "related": [],
+      "related": [
+        "produktwirkung",
+        "territorialbilanz"
+      ],
       "doNotConfuse": []
     },
     "konsumentensouveraenitaet": {
@@ -10847,8 +11288,8 @@
     },
     "kontaktschuld": {
       "related": [
-        "derailing",
-        "ingroup-bias",
+        "derailing-themenverschiebung",
+        "ingroup-outgroup-dynamik",
         "diskurskultur"
       ],
       "doNotConfuse": [
@@ -10886,11 +11327,17 @@
       ]
     },
     "kontraindikation": {
-      "related": [],
+      "related": [
+        "wirkungsrisiko",
+        "rote-linien"
+      ],
       "doNotConfuse": []
     },
     "kontrollbeduerfnis": {
-      "related": [],
+      "related": [
+        "ambiguitaetsintoleranz",
+        "risikomanagement"
+      ],
       "doNotConfuse": []
     },
     "konzessionsabgabe": {
@@ -10947,7 +11394,10 @@
       ]
     },
     "kpi": {
-      "related": [],
+      "related": [
+        "kii",
+        "wirkungscontrolling"
+      ],
       "doNotConfuse": []
     },
     "kraft-waerme-kopplung": {
@@ -10959,7 +11409,10 @@
       "doNotConfuse": []
     },
     "kraftwerks-nettoleistung": {
-      "related": [],
+      "related": [
+        "gesicherte-leistung",
+        "energieinfrastruktur"
+      ],
       "doNotConfuse": []
     },
     "krankheitssystem": {
@@ -11280,8 +11733,9 @@
     },
     "kybernetik": {
       "related": [
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "kybernetik-zweiter-ordnung",
+        "wirkungsrueckkopplung",
         "wirkungsarchitektur",
         "triviale-maschine",
         "varietaet",
@@ -11302,19 +11756,31 @@
       "doNotConfuse": []
     },
     "label-siegel": {
-      "related": [],
+      "related": [
+        "nachhaltigkeitslabel",
+        "labelwashing"
+      ],
       "doNotConfuse": []
     },
     "labelwashing": {
-      "related": [],
+      "related": [
+        "label-siegel",
+        "greenwashing"
+      ],
       "doNotConfuse": []
     },
     "laecherlichkeitsframe": {
-      "related": [],
+      "related": [
+        "framing-sprache-tonalitaet",
+        "diskurskultur"
+      ],
       "doNotConfuse": []
     },
     "ladeangst": {
-      "related": [],
+      "related": [
+        "ladeinfrastruktur",
+        "ladefenster"
+      ],
       "doNotConfuse": []
     },
     "ladeeinrichtung": {
@@ -11326,7 +11792,10 @@
       "doNotConfuse": []
     },
     "ladefenster": {
-      "related": [],
+      "related": [
+        "dynamischer-stromtarif",
+        "ladeangst"
+      ],
       "doNotConfuse": []
     },
     "ladehub": {
@@ -11479,7 +11948,7 @@
         "nachhaltigkeitsmanagement",
         "stabilitaet",
         "robustheit",
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "kipppunkt-systemschwelle",
         "attraktor",
         "stabilitaetslandschaft",
@@ -11700,7 +12169,7 @@
     "lernende-organisation": {
       "related": [
         "psychologische-sicherheit",
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "wirksamkeit",
         "st-galler-managementmodell",
         "viable-system-model",
@@ -11711,6 +12180,22 @@
         "employer-branding",
         "fehlerkultur-ohne-entscheidungskorrektur",
         "kontrolle-ohne-lernen"
+      ]
+    },
+    "lernende-systeme": {
+      "related": [
+        "kuenstliche-intelligenz",
+        "wirkungsdaten",
+        "datenqualitaet",
+        "datenschutz",
+        "resonanzraum",
+        "attributionsfehler"
+      ],
+      "doNotConfuse": [
+        "jede-automatisierung",
+        "kuenstliche-intelligenz-im-allgemeinen",
+        "autonome-entscheidung-ohne-aufsicht",
+        "personenrating"
       ]
     },
     "lernender-unternehmer": {
@@ -11903,7 +12388,10 @@
       "doNotConfuse": []
     },
     "lieferkettenrisiko": {
-      "related": [],
+      "related": [
+        "lieferkettenwirkung",
+        "menschenrechte-in-der-lieferkette"
+      ],
       "doNotConfuse": []
     },
     "lieferkettenwirkung": {
@@ -12034,7 +12522,10 @@
       "doNotConfuse": []
     },
     "living-wage": {
-      "related": [],
+      "related": [
+        "sozialstandards",
+        "lohnabstand"
+      ],
       "doNotConfuse": []
     },
     "lksg": {
@@ -12085,11 +12576,17 @@
       "doNotConfuse": []
     },
     "lock-in-effekt": {
-      "related": [],
+      "related": [
+        "pfadabhaengigkeit",
+        "verbrenner-lock-in"
+      ],
       "doNotConfuse": []
     },
     "lohnabstand": {
-      "related": [],
+      "related": [
+        "arbeitsanreiz",
+        "sozialabgaben"
+      ],
       "doNotConfuse": []
     },
     "lohnstueckkosten": {
@@ -12121,10 +12618,6 @@
         "reine-tariflogik",
         "automatisch-positive-wirkung"
       ]
-    },
-    "oeffentlichkeit-als-wirkungsraum": {
-      "related": [],
-      "doNotConfuse": []
     },
     "ludwig-erhard": {
       "related": [
@@ -12269,7 +12762,10 @@
       "doNotConfuse": []
     },
     "managementsysteme": {
-      "related": [],
+      "related": [
+        "iso",
+        "risikomanagement"
+      ],
       "doNotConfuse": []
     },
     "manufactured-consensus": {
@@ -12531,6 +13027,23 @@
       ],
       "doNotConfuse": []
     },
+    "medienvertrauen": {
+      "related": [
+        "medienqualitaet",
+        "medienfreiheit",
+        "reichweite",
+        "diskursqualitaet",
+        "faktencheck",
+        "wirkung"
+      ],
+      "doNotConfuse": [
+        "medienqualitaet",
+        "wahrheit",
+        "reichweite",
+        "markenbekanntheit",
+        "wirkung"
+      ]
+    },
     "megawatt-charging-system": {
       "related": [
         "depotladen",
@@ -12540,7 +13053,10 @@
       "doNotConfuse": []
     },
     "megawattladen": {
-      "related": [],
+      "related": [
+        "schnellladen",
+        "ladeinfrastruktur"
+      ],
       "doNotConfuse": []
     },
     "mehrfachszenario-konstruktion": {
@@ -12603,7 +13119,10 @@
       ]
     },
     "menschenrechte-in-der-lieferkette": {
-      "related": [],
+      "related": [
+        "kinderarbeit-zwangsarbeit",
+        "lieferkettenrisiko"
+      ],
       "doNotConfuse": []
     },
     "menschenwuerde": {
@@ -12645,7 +13164,12 @@
       "related": [
         "grenzkosten",
         "grenzkraftwerk",
-        "strommarkt"
+        "strommarkt",
+        "strommarktdesign",
+        "systemkosten",
+        "regelenergie",
+        "externalitaet",
+        "reverse-merit-order"
       ],
       "doNotConfuse": []
     },
@@ -12841,7 +13365,10 @@
       "doNotConfuse": []
     },
     "misalignment-year": {
-      "related": [],
+      "related": [
+        "crrem",
+        "klimaneutralitaet"
+      ],
       "doNotConfuse": []
     },
     "mitte": {
@@ -12878,7 +13405,10 @@
       "doNotConfuse": []
     },
     "mmt": {
-      "related": [],
+      "related": [
+        "endogenes-geld",
+        "functional-finance"
+      ],
       "doNotConfuse": []
     },
     "mobilitaetsarmut": {
@@ -12996,6 +13526,22 @@
         "personenbewertung-bewertet-werden-regeln-dynamiken-und-wirkungsrisiken"
       ]
     },
+    "moderationsstandards": {
+      "related": [
+        "plattformregulierung",
+        "datenschutz",
+        "resonanzraum",
+        "grundrechte",
+        "diskursqualitaet",
+        "reichweite"
+      ],
+      "doNotConfuse": [
+        "zensur",
+        "gesinnungspruefung",
+        "automatisierte-sperrentscheidung-ohne-ueberpruefung",
+        "hausregel-ohne-verfahren"
+      ]
+    },
     "moderner-patriotismus": {
       "related": [
         "verfassungspatriotismus",
@@ -13024,7 +13570,10 @@
       "doNotConfuse": []
     },
     "molekuel-hierarchie": {
-      "related": [],
+      "related": [
+        "wasserstoff-hierarchie",
+        "energieeffizienz"
+      ],
       "doNotConfuse": []
     },
     "momentanreserve": {
@@ -13035,7 +13584,10 @@
       "doNotConfuse": []
     },
     "monetaere-souveraenitaet": {
-      "related": [],
+      "related": [
+        "endogenes-geld",
+        "mmt"
+      ],
       "doNotConfuse": []
     },
     "monetarismus": {
@@ -13086,7 +13638,7 @@
         "angstappell",
         "suendenbockmechanismus",
         "verfuegbarkeitsheuristik",
-        "false-urgency"
+        "false-urgency-kuenstliche-dringlichkeit"
       ],
       "doNotConfuse": [
         "nicht-verwechseln-mit-legitimer-sorge-reale-risiken-brauchen-daten-verhaeltnismaessigkeit-und-schutz-vor-suendenbocklogik"
@@ -13138,7 +13690,10 @@
       ]
     },
     "msci-esg-ratings": {
-      "related": [],
+      "related": [
+        "esg-rating",
+        "sustainability-benchmarking"
+      ],
       "doNotConfuse": []
     },
     "muslimfeindlichkeit": {
@@ -13200,6 +13755,7 @@
         "nachhaltigkeitsmanagement",
         "stabilitaet",
         "robustheit",
+        "rueckkopplung",
         "kipppunkt-systemschwelle",
         "attraktor",
         "stabilitaetslandschaft",
@@ -13252,7 +13808,7 @@
         "resilienzmanagement",
         "stabilitaet",
         "robustheit",
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "kipppunkt-systemschwelle",
         "attraktor",
         "stabilitaetslandschaft",
@@ -13349,7 +13905,10 @@
       "doNotConfuse": []
     },
     "natur-labels": {
-      "related": [],
+      "related": [
+        "biodiversitaet",
+        "regenerative-landwirtschaft"
+      ],
       "doNotConfuse": []
     },
     "naturbasierte-loesungen": {
@@ -13375,7 +13934,7 @@
         "habitatfragmentierung",
         "habitatverlust",
         "ipbes",
-        "oekosystemleistungen"
+        "oekosystemleistungen-oekosystemfunktionen"
       ],
       "doNotConfuse": []
     },
@@ -13398,7 +13957,10 @@
       "doNotConfuse": []
     },
     "nebenwirkung": {
-      "related": [],
+      "related": [
+        "folgewirkung",
+        "wirkungsrisiko"
+      ],
       "doNotConfuse": []
     },
     "nebenwirkungs-wechselwirkungs-und-rebound-analyse": {
@@ -13484,7 +14046,10 @@
       ]
     },
     "neoklassische-foerderlogik": {
-      "related": [],
+      "related": [
+        "foerderlogik",
+        "wirkungskredit"
+      ],
       "doNotConfuse": []
     },
     "neoliberalismus": {
@@ -13599,7 +14164,10 @@
       ]
     },
     "nettokreditaufnahme": {
-      "related": [],
+      "related": [
+        "bruttokreditaufnahme",
+        "refinanzierung"
+      ],
       "doNotConfuse": []
     },
     "netzanschluss": {
@@ -13944,7 +14512,7 @@
     "nichtlinearitaet": {
       "related": [
         "nichttriviales-system",
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "interdependenz",
         "pfadabhaengigkeit",
         "systemhebel"
@@ -13973,7 +14541,7 @@
         "triviale-maschine",
         "nichttriviales-system",
         "strukturdeterminiertheit",
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "heinz-von-foerster",
         "planwirtschaft"
       ],
@@ -13982,7 +14550,7 @@
     "nichttriviale-systeme": {
       "related": [
         "kybernetik",
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "wirkungsarchitektur",
         "systemhebel",
         "beobachterabhaengigkeit"
@@ -13996,7 +14564,7 @@
         "nichttriviale-maschine",
         "triviale-maschine",
         "strukturdeterminiertheit",
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "autopoiesis",
         "emergenz",
         "interdependenz",
@@ -14020,7 +14588,10 @@
       ]
     },
     "nie-eingezahlt-narrativ": {
-      "related": [],
+      "related": [
+        "sozialstaats-suendenbock",
+        "wirkungseinkommen"
+      ],
       "doNotConfuse": []
     },
     "niederspannung": {
@@ -14044,7 +14615,7 @@
         "selbstreferenz",
         "beobachtung-zweiter-ordnung",
         "anschlussfaehigkeit",
-        "wirkungsrueckkopplung"
+        "rueckkopplung"
       ],
       "doNotConfuse": []
     },
@@ -14076,7 +14647,10 @@
       "doNotConfuse": []
     },
     "no-regret-anwendung": {
-      "related": [],
+      "related": [
+        "wirkungsrisikomanagement",
+        "vorsorgeprinzip"
+      ],
       "doNotConfuse": []
     },
     "no-regret-massnahme": {
@@ -14165,8 +14739,6 @@
         "sdg-plus",
         "sdgs",
         "agenda-2030",
-        "voelkerrecht-und-menschenrechte",
-        "europaeisches-primaerrecht-und-grundrechte",
         "staatsziele-und-verfassungsauftraege",
         "grundgesetz",
         "rechtsstaatlichkeit",
@@ -14180,7 +14752,10 @@
       ]
     },
     "normativer-massstab": {
-      "related": [],
+      "related": [
+        "sdg-sdgplus-referenzrahmen",
+        "wirkungsbewertung"
+      ],
       "doNotConfuse": []
     },
     "normativer-wert": {
@@ -14221,7 +14796,10 @@
       "doNotConfuse": []
     },
     "nullsummenfehler": {
-      "related": [],
+      "related": [
+        "interdependenz",
+        "wohlstand-als-systemzustand"
+      ],
       "doNotConfuse": []
     },
     "nutzenergie": {
@@ -14281,7 +14859,10 @@
       "doNotConfuse": []
     },
     "oecd": {
-      "related": [],
+      "related": [
+        "oecd-leitsaetze",
+        "wellbeing-economy"
+      ],
       "doNotConfuse": []
     },
     "oecd-leitsaetze": {
@@ -14363,7 +14944,10 @@
       ]
     },
     "oeffentliche-finanzen-schulden-wirkung": {
-      "related": [],
+      "related": [
+        "wirkungskredit",
+        "oeffentliche-netto-wirkung"
+      ],
       "doNotConfuse": []
     },
     "oeffentliche-gueter": {
@@ -14378,7 +14962,10 @@
       "doNotConfuse": []
     },
     "oeffentliche-netto-wirkung": {
-      "related": [],
+      "related": [
+        "netto-wirkung",
+        "mensch-planet-demokratie"
+      ],
       "doNotConfuse": []
     },
     "oeffentliche-statistik": {
@@ -14538,6 +15125,21 @@
       ],
       "doNotConfuse": [
         "oeffentliche-meinung-reichweite-medienmarkt-lautstaerke"
+      ]
+    },
+    "oeffentlichkeit-als-wirkungsraum": {
+      "related": [
+        "resonanzraum",
+        "wirkungspotenzial",
+        "wirkpfad",
+        "wirkmechanismus",
+        "diskurskultur",
+        "demokratie"
+      ],
+      "doNotConfuse": [
+        "resonanzraum-beschreibt-einen-engeren-raum-der-aufnahme-und-reaktion-oeffentlichkeit-umfasst-auch-regeln-zugaenge-und-institutionelle-rueckkopplungen",
+        "reichweite-misst-sichtkontakte-nicht-zustandsveraenderungen",
+        "wirkungspotenzial-ist-eine-begruendete-moeglichkeit-noch-kein-nachweis-eingetretener-wirkung"
       ]
     },
     "offsetting-kompensation": {
@@ -14963,7 +15565,10 @@
       ]
     },
     "outcome": {
-      "related": [],
+      "related": [
+        "output",
+        "wirkung"
+      ],
       "doNotConfuse": []
     },
     "outcome-und-empfaengerlandkarte": {
@@ -15006,7 +15611,10 @@
       ]
     },
     "output": {
-      "related": [],
+      "related": [
+        "outcome",
+        "wirkung"
+      ],
       "doNotConfuse": []
     },
     "overton-fenster": {
@@ -15062,7 +15670,7 @@
         "nachhaltigkeitsmanagement",
         "stabilitaet",
         "robustheit",
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "kipppunkt-systemschwelle",
         "attraktor",
         "stabilitaetslandschaft",
@@ -15273,6 +15881,24 @@
         "state-capture"
       ],
       "doNotConfuse": []
+    },
+    "personenbewertung": {
+      "related": [
+        "social-credit",
+        "wirkungspunkte",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "datenschutz",
+        "grundrechte",
+        "wirkungsrat"
+      ],
+      "doNotConfuse": [
+        "wirkungsbewertung-prueft-folgen-von-strukturen-und-entscheidungen-nicht-menschen",
+        "produkt-oder-organisationsbewertung-bezieht-sich-auf-einen-klaren-gegenstand-und-einen-wirkungsraum-nicht-auf-den-moralischen-wert-von-personen",
+        "social-credit-umfassende-form-einer-personen-und-verhaltensbewertung-mit-moeglichen-sozialen-folgen",
+        "statistik-darf-keine-individuelle-rangordnung-oder-automatisierte-benachteiligung-verdecken"
+      ]
     },
     "pessimismus-bias": {
       "related": [
@@ -15493,7 +16119,10 @@
       ]
     },
     "planet": {
-      "related": [],
+      "related": [
+        "biodiversitaet",
+        "planetare-grenzen"
+      ],
       "doNotConfuse": []
     },
     "planetare-grenzen": {
@@ -15519,7 +16148,7 @@
         "zentralverwaltungswirtschaft",
         "privatwirtschaftliche-planwirtschaft",
         "nichttriviale-maschine",
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "sozialismus",
         "staatssozialismus",
         "kommunismus"
@@ -15527,7 +16156,10 @@
       "doNotConfuse": []
     },
     "platform-on-sustainable-finance": {
-      "related": [],
+      "related": [
+        "eu-taxonomie",
+        "taxonomy-navigator"
+      ],
       "doNotConfuse": []
     },
     "plattform-und-netzwerkeffekt-canvas": {
@@ -15657,6 +16289,22 @@
         "moderation-moderation-ist-teil-der-plattformsteuerung-nicht-das-ganze",
         "reichweite-reichweite-ist-sichtbarkeit-nicht-wahrheit-oder-wirkung",
         "neutralitaet-jedes-ranking-erzeugt-eine-ordnung"
+      ]
+    },
+    "plattformregulierung": {
+      "related": [
+        "moderationsstandards",
+        "datenschutz",
+        "resonanzraum",
+        "grundrechte",
+        "plattformlogik-und-algorithmen",
+        "diskursqualitaet"
+      ],
+      "doNotConfuse": [
+        "zensur",
+        "staatliche-meinungssteuerung",
+        "freiwilliger-verhaltenskodex-ohne-rechtsbehelf",
+        "personenrating"
       ]
     },
     "plug-and-charge": {
@@ -16116,7 +16764,10 @@
       "doNotConfuse": []
     },
     "praevention-als-wirkleistung": {
-      "related": [],
+      "related": [
+        "praevention",
+        "folgekostenvermeidung"
+      ],
       "doNotConfuse": []
     },
     "praeventionsdividende": {
@@ -16177,7 +16828,7 @@
         "nachhaltigkeitsmanagement",
         "stabilitaet",
         "robustheit",
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "kipppunkt-systemschwelle",
         "attraktor",
         "stabilitaetslandschaft",
@@ -16255,7 +16906,10 @@
       "doNotConfuse": []
     },
     "privathaushaltsmythos": {
-      "related": [],
+      "related": [
+        "mmt",
+        "privatkredit-frame"
+      ],
       "doNotConfuse": []
     },
     "privatisierung": {
@@ -16268,7 +16922,10 @@
       "doNotConfuse": []
     },
     "privatkredit-frame": {
-      "related": [],
+      "related": [
+        "privathaushaltsmythos",
+        "monetaere-souveraenitaet"
+      ],
       "doNotConfuse": []
     },
     "privatwirtschaftliche-planwirtschaft": {
@@ -16372,7 +17029,10 @@
       "doNotConfuse": []
     },
     "produkt-labels": {
-      "related": [],
+      "related": [
+        "label-siegel",
+        "produktwirkung"
+      ],
       "doNotConfuse": []
     },
     "produkt-markt-wirkungs-fit": {
@@ -16618,8 +17278,8 @@
     },
     "projektions-bias": {
       "related": [
-        "false-consensus",
-        "ingroup-bias",
+        "false-consensus-effect",
+        "ingroup-outgroup-dynamik",
         "partizipation",
         "wirkungsempfaenger"
       ],
@@ -16684,7 +17344,7 @@
       "related": [
         "wirkung",
         "strukturelles-driften",
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "wirkungsarchitektur",
         "dao",
         "wu-wei",
@@ -16699,7 +17359,7 @@
         "wirkungsrisiko",
         "wirkungsaudit",
         "datenqualitaet",
-        "wirkungsrueckkopplung"
+        "rueckkopplung"
       ],
       "doNotConfuse": [
         "konfliktfreiheit",
@@ -16725,15 +17385,38 @@
       ]
     },
     "psychologischer-wirkungscheck": {
-      "related": [],
-      "doNotConfuse": []
+      "related": [
+        "debiasing",
+        "resonanzprofil",
+        "framing-sprache-tonalitaet",
+        "reaktanz",
+        "sprachlicher-trigger"
+      ],
+      "doNotConfuse": [
+        "psychologische-diagnose-der-check-untersucht-eine-kommunikationssituation-nicht-den-gesundheitszustand-oder-charakter-einer-person",
+        "wirkungsnachweis-er-erzeugt-pruefbare-hypothesen-aber-keine-gemessene-wirkung",
+        "reichweitenanalyse-sichtbarkeit-kann-eine-voraussetzung-sein-ersetzt-aber-weder-verstaendnis-noch-zustandsveraenderung"
+      ]
     },
     "psychologisches-stoeckchen": {
-      "related": [],
-      "doNotConfuse": []
+      "related": [
+        "sprachlicher-trigger",
+        "psychologischer-wirkungscheck",
+        "framing-sprache-tonalitaet",
+        "derailing-themenverschiebung",
+        "reaktanz"
+      ],
+      "doNotConfuse": [
+        "kritik-widerspruch-mit-belegen-und-einer-klaren-sachfrage-ist-kein-psychologisches-stoeckchen",
+        "absichtsbeweis-ein-auffaelliges-muster-belegt-noch-keine-taeuschungs-oder-manipulationsabsicht",
+        "personenlabel-der-begriff-beschreibt-eine-formulierung-oder-gespraechsdynamik-niemals-den-wert-oder-charakter-eines-menschen"
+      ]
     },
     "ptl-kraftstoff": {
-      "related": [],
+      "related": [
+        "elektrolyse",
+        "wasserstoff"
+      ],
       "doNotConfuse": []
     },
     "public-affairs": {
@@ -16745,11 +17428,17 @@
       "doNotConfuse": []
     },
     "public-purpose": {
-      "related": [],
+      "related": [
+        "public-purpose-finance",
+        "oeffentliche-netto-wirkung"
+      ],
       "doNotConfuse": []
     },
     "public-purpose-finance": {
-      "related": [],
+      "related": [
+        "public-purpose",
+        "wirkungskredit"
+      ],
       "doNotConfuse": []
     },
     "pufferspeicher-ladepark": {
@@ -16842,7 +17531,10 @@
       "doNotConfuse": []
     },
     "qualifikationsverlust": {
-      "related": [],
+      "related": [
+        "weiterbildung",
+        "uebergangstaetigkeit"
+      ],
       "doNotConfuse": []
     },
     "qualitaetssicherung": {
@@ -17151,7 +17843,10 @@
       "doNotConfuse": []
     },
     "reach": {
-      "related": [],
+      "related": [
+        "hazardous-substances",
+        "materialgesundheit"
+      ],
       "doNotConfuse": []
     },
     "reaktanz": {
@@ -17194,7 +17889,10 @@
       "doNotConfuse": []
     },
     "realressourcengrenze": {
-      "related": [],
+      "related": [
+        "inflationsgrenze",
+        "wirkungsspielraum"
+      ],
       "doNotConfuse": []
     },
     "reasonable-assurance": {
@@ -17479,7 +18177,7 @@
     },
     "red-herring": {
       "related": [
-        "derailing",
+        "derailing-themenverschiebung",
         "whataboutism",
         "strohmann",
         "wirkungsbewertung"
@@ -17532,7 +18230,10 @@
       ]
     },
     "refinanzierung": {
-      "related": [],
+      "related": [
+        "bruttokreditaufnahme",
+        "nettokreditaufnahme"
+      ],
       "doNotConfuse": []
     },
     "refinanzierungsresilienz": {
@@ -17619,7 +18320,10 @@
       "doNotConfuse": []
     },
     "regelbasierte-ordnung": {
-      "related": [],
+      "related": [
+        "rechtsstaatlichkeit",
+        "globale-wirkungsordnung"
+      ],
       "doNotConfuse": []
     },
     "regelenergie": {
@@ -17750,6 +18454,23 @@
       ],
       "doNotConfuse": []
     },
+    "reichweite": {
+      "related": [
+        "wirkung",
+        "wirkungspotenzial",
+        "medienqualitaet",
+        "medienvertrauen",
+        "wirkungsdaten",
+        "wirkungsbewertung"
+      ],
+      "doNotConfuse": [
+        "wirkung",
+        "aufmerksamkeit",
+        "engagement",
+        "vertrauen",
+        "wirkungsnachweis"
+      ]
+    },
     "rekombination": {
       "related": [
         "unternehmerfunktion",
@@ -17769,7 +18490,7 @@
       "related": [
         "viable-system-model",
         "wirkungsarchitektur",
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "stafford-beer"
       ],
       "doNotConfuse": []
@@ -17857,7 +18578,10 @@
       ]
     },
     "reparaturwohlstand": {
-      "related": [],
+      "related": [
+        "reparierbarkeit-recht-auf-reparatur",
+        "circular-regenerative-economy"
+      ],
       "doNotConfuse": []
     },
     "reparierbarkeit": {
@@ -17878,6 +18602,24 @@
         "positive-netto-wirkung"
       ],
       "doNotConfuse": []
+    },
+    "reporting": {
+      "related": [
+        "berichtsdaten",
+        "wirkungsdaten",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "datenqualitaet",
+        "wirkung",
+        "wirkungspotenzial"
+      ],
+      "doNotConfuse": [
+        "wirkung-tatsaechliche-zustandsveraenderung-nicht-ihre-beschreibung",
+        "wirkungsbewertung-begruendete-einordnung-von-daten-und-befunden",
+        "wirkungsrueckkopplung-lern-und-korrekturprozess-zwischen-geprueftem-befund-und-spaeterer-entscheidung",
+        "wirkungslenkung-legitimierte-festlegung-von-zielen-schutzgrenzen-prioritaeten-und-instrumenten"
+      ]
     },
     "repowering": {
       "related": [
@@ -17969,11 +18711,12 @@
         "wirkungsresilienz",
         "gesellschaftliche-stabilitaet",
         "systemische-kohaerenz",
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "vertrauen",
         "sechster-kondratieff",
         "nachhaltigkeit",
         "systemresilienz",
+        "wirkungsrueckkopplung",
         "positive-netto-wirkung",
         "sdgs",
         "sdg-plus",
@@ -18016,7 +18759,7 @@
         "nachhaltigkeitsmanagement",
         "stabilitaet",
         "robustheit",
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "kipppunkt-systemschwelle",
         "attraktor",
         "stabilitaetslandschaft",
@@ -18050,7 +18793,7 @@
         "nachhaltigkeitsmanagement",
         "stabilitaet",
         "robustheit",
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "kipppunkt-systemschwelle",
         "attraktor",
         "stabilitaetslandschaft",
@@ -18084,7 +18827,7 @@
         "nachhaltigkeitsmanagement",
         "stabilitaet",
         "robustheit",
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "kipppunkt-systemschwelle",
         "attraktor",
         "stabilitaetslandschaft",
@@ -18128,7 +18871,10 @@
       ]
     },
     "resonanzprofil": {
-      "related": [],
+      "related": [
+        "resonanzraum",
+        "psychologischer-wirkungscheck"
+      ],
       "doNotConfuse": []
     },
     "resonanzraum": {
@@ -18374,7 +19120,10 @@
       ]
     },
     "risikomanagement": {
-      "related": [],
+      "related": [
+        "erm",
+        "wirkungsrisikomanagement"
+      ],
       "doNotConfuse": []
     },
     "risikoregister": {
@@ -18401,7 +19150,9 @@
       "doNotConfuse": []
     },
     "rmo": {
-      "related": [],
+      "related": [
+        "reverse-merit-order"
+      ],
       "doNotConfuse": []
     },
     "roaming-ladeinfrastruktur": {
@@ -18477,7 +19228,7 @@
         "resilienzmanagement",
         "nachhaltigkeitsmanagement",
         "stabilitaet",
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "kipppunkt-systemschwelle",
         "attraktor",
         "stabilitaetslandschaft",
@@ -18508,11 +19259,17 @@
       "doNotConfuse": []
     },
     "roi": {
-      "related": [],
+      "related": [
+        "impact-of-investment",
+        "t-sroi"
+      ],
       "doNotConfuse": []
     },
     "rote-linien": {
-      "related": [],
+      "related": [
+        "reverse-merit-order",
+        "wirkungsgrenze"
+      ],
       "doNotConfuse": []
     },
     "rotorblatt-recycling": {
@@ -18556,7 +19313,10 @@
       "doNotConfuse": []
     },
     "rueckbaupflicht": {
-      "related": [],
+      "related": [
+        "rueckbaustandard",
+        "zirkularitaet"
+      ],
       "doNotConfuse": []
     },
     "rueckbaustandard": {
@@ -18632,6 +19392,7 @@
     },
     "rueckkopplungsfaehigkeit": {
       "related": [
+        "rueckkopplung",
         "wirkungsrueckkopplung",
         "wirkungsforschung",
         "wirkungsmonitoring",
@@ -18698,7 +19459,7 @@
         "nachhaltigkeitsmanagement",
         "stabilitaet",
         "robustheit",
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "kipppunkt-systemschwelle",
         "attraktor",
         "stabilitaetslandschaft",
@@ -18743,7 +19504,10 @@
       ]
     },
     "sachleistung": {
-      "related": [],
+      "related": [
+        "daseinsvorsorge",
+        "soziale-infrastruktur"
+      ],
       "doNotConfuse": []
     },
     "salienz": {
@@ -18791,7 +19555,10 @@
       ]
     },
     "sanierungsfahrplan": {
-      "related": [],
+      "related": [
+        "energetische-sanierung",
+        "bestandsimmobilie"
+      ],
       "doNotConfuse": []
     },
     "sbti": {
@@ -18927,7 +19694,10 @@
       "doNotConfuse": []
     },
     "scheinwohlstand": {
-      "related": [],
+      "related": [
+        "vorgriffswohlstand",
+        "externalitaeten-und-kostenverlagerungskarte"
+      ],
       "doNotConfuse": []
     },
     "schnellladen": {
@@ -18938,7 +19708,10 @@
       "doNotConfuse": []
     },
     "schnellladepark": {
-      "related": [],
+      "related": [
+        "ladepark",
+        "ladeinfrastruktur"
+      ],
       "doNotConfuse": []
     },
     "schoepferische-rekonstruktion": {
@@ -18996,7 +19769,10 @@
       "doNotConfuse": []
     },
     "schuldenmythos": {
-      "related": [],
+      "related": [
+        "privathaushaltsmythos",
+        "mmt"
+      ],
       "doNotConfuse": []
     },
     "schumpeter-joseph-a": {
@@ -19068,7 +19844,10 @@
       "doNotConfuse": []
     },
     "schwarze-null": {
-      "related": [],
+      "related": [
+        "schuldenbremse",
+        "nettokreditaufnahme"
+      ],
       "doNotConfuse": []
     },
     "schwarzstartfaehigkeit": {
@@ -19393,8 +20172,7 @@
       "related": [
         "moving-the-goalposts",
         "gish-galopp",
-        "derailing",
-        "moderation"
+        "derailing-themenverschiebung"
       ],
       "doNotConfuse": [
         "nicht-verwechseln-mit-echter-nachfrage-echte-nachfrage-nimmt-antworten-auf-und-praezisiert-sealioning-bewegt-die-schwelle-staendig-weiter"
@@ -19437,7 +20215,7 @@
     },
     "selbstorganisation": {
       "related": [
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "wirkungsarchitektur",
         "nichttriviales-system",
         "emergenz",
@@ -19621,15 +20399,24 @@
       ]
     },
     "sicherheits-t-sroi": {
-      "related": [],
+      "related": [
+        "t-sroi",
+        "sicherheitsresilienz"
+      ],
       "doNotConfuse": []
     },
     "sicherheitspolitische-staatsschuld": {
-      "related": [],
+      "related": [
+        "nicht-finanzielle-staatsschulden",
+        "sicherheitsresilienz"
+      ],
       "doNotConfuse": []
     },
     "sicherheitsresilienz": {
-      "related": [],
+      "related": [
+        "verteidigungsfaehigkeit",
+        "cyberresilienz"
+      ],
       "doNotConfuse": []
     },
     "sichtbare-rechnung": {
@@ -19671,7 +20458,7 @@
     "slippery-slope-dammbruchargument": {
       "related": [
         "angstappell",
-        "false-urgency",
+        "false-urgency-kuenstliche-dringlichkeit",
         "framing-sprache-tonalitaet",
         "wirkungsrisiko"
       ],
@@ -19724,19 +20511,26 @@
     },
     "social-credit": {
       "related": [
+        "personenbewertung",
         "wirkungspunkte",
-        "wirkungswahrheit",
-        "wr",
-        "social-taxonomy"
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "datenschutz",
+        "grundrechte",
+        "wirkungsrat"
       ],
       "doNotConfuse": [
-        "wirkungsbewertung",
-        "wirkungspunkte",
-        "verbraucherinformation"
+        "wirkungsbewertung-prueft-folgen-von-strukturen-und-entscheidungen-nicht-menschen",
+        "produkt-oder-organisationsbewertung-klarer-gegenstand-bilanzgrenze-und-pruefpfad-keine-individuelle-rangordnung",
+        "verbraucherinformation-darf-nicht-zu-einem-konsum-oder-verhaltensprofil-ausgebaut-werden"
       ]
     },
     "social-solidarity-economy": {
-      "related": [],
+      "related": [
+        "solidaritaet",
+        "genossenschaft"
+      ],
       "doNotConfuse": []
     },
     "social-taxonomy": {
@@ -19837,7 +20631,10 @@
       ]
     },
     "sozialstandards": {
-      "related": [],
+      "related": [
+        "ilo-kernarbeitsnormen",
+        "living-wage"
+      ],
       "doNotConfuse": []
     },
     "sozialabgaben": {
@@ -19888,7 +20685,7 @@
         "echokammer",
         "filterblase",
         "resonanzraum",
-        "kontakt-hypothese"
+        "kontakthypothese"
       ],
       "doNotConfuse": [
         "nicht-verwechseln-mit-pluralismus-pluralismus-braucht-verbindende-regeln-fragmentierung-zerstoert-gemeinsame-rueckkopplung"
@@ -19962,7 +20759,10 @@
       ]
     },
     "soziale-staatsschuld": {
-      "related": [],
+      "related": [
+        "nicht-finanzielle-staatsschulden",
+        "soziale-infrastruktur"
+      ],
       "doNotConfuse": []
     },
     "sozialfinanzierung": {
@@ -20027,7 +20827,10 @@
       ]
     },
     "sozialstaats-suendenbock": {
-      "related": [],
+      "related": [
+        "sozialstaatsprinzip",
+        "narrativ"
+      ],
       "doNotConfuse": []
     },
     "sozialstaatsprinzip": {
@@ -20039,7 +20842,10 @@
       "doNotConfuse": []
     },
     "sozialtourismus-frame": {
-      "related": [],
+      "related": [
+        "sozialstaats-suendenbock",
+        "framing-sprache-tonalitaet"
+      ],
       "doNotConfuse": []
     },
     "spannungshaltung": {
@@ -20140,7 +20946,10 @@
       "doNotConfuse": []
     },
     "sroi": {
-      "related": [],
+      "related": [
+        "t-sroi",
+        "impact-of-investment"
+      ],
       "doNotConfuse": []
     },
     "st-galler-management-modell": {
@@ -20256,7 +21065,10 @@
       "doNotConfuse": []
     },
     "staatsfinanzielle-wirkungsblindheit": {
-      "related": [],
+      "related": [
+        "oeffentliche-finanzen-schulden-wirkung",
+        "oeffentliche-netto-wirkung"
+      ],
       "doNotConfuse": []
     },
     "staatsform": {
@@ -20370,7 +21182,7 @@
         "resilienzmanagement",
         "nachhaltigkeitsmanagement",
         "robustheit",
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "kipppunkt-systemschwelle",
         "attraktor",
         "stabilitaetslandschaft",
@@ -20402,7 +21214,7 @@
         "nachhaltigkeitsmanagement",
         "stabilitaet",
         "robustheit",
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "kipppunkt-systemschwelle",
         "attraktor",
         "latitude",
@@ -20484,11 +21296,17 @@
       ]
     },
     "standortscorecard": {
-      "related": [],
+      "related": [
+        "scorecard",
+        "standortwirkung"
+      ],
       "doNotConfuse": []
     },
     "standortwirkung": {
-      "related": [],
+      "related": [
+        "standortscorecard",
+        "wirkungsfeld"
+      ],
       "doNotConfuse": []
     },
     "state-capture": {
@@ -20532,7 +21350,10 @@
       "doNotConfuse": []
     },
     "status-threat": {
-      "related": [],
+      "related": [
+        "identitaetsschutz-kognition",
+        "status-quo-bias"
+      ],
       "doNotConfuse": []
     },
     "status-quo-bias": {
@@ -20551,7 +21372,10 @@
       ]
     },
     "steuergeld-frame": {
-      "related": [],
+      "related": [
+        "privathaushaltsmythos",
+        "oeffentliche-finanzen-schulden-wirkung"
+      ],
       "doNotConfuse": []
     },
     "steuerkritik": {
@@ -20578,7 +21402,10 @@
       "doNotConfuse": []
     },
     "steward-ownership": {
-      "related": [],
+      "related": [
+        "eigentum-verpflichtet",
+        "eigentumsverantwortung"
+      ],
       "doNotConfuse": []
     },
     "stiftung": {
@@ -20873,7 +21700,7 @@
         "strukturelle-kopplung",
         "normalisierung",
         "prozessdenken",
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "baseline-verschiebung",
         "maturana-varela",
         "pfadabhaengigkeit",
@@ -21029,7 +21856,10 @@
       "doNotConfuse": []
     },
     "sustainability-benchmarking": {
-      "related": [],
+      "related": [
+        "benchmark",
+        "esg-rating"
+      ],
       "doNotConfuse": []
     },
     "sustainable-finance": {
@@ -21081,11 +21911,17 @@
       ]
     },
     "sustainalytics": {
-      "related": [],
+      "related": [
+        "esg-rating",
+        "sustainability-benchmarking"
+      ],
       "doNotConfuse": []
     },
     "symbolausgabe": {
-      "related": [],
+      "related": [
+        "haushaltsblindleistung",
+        "haushaltswashing"
+      ],
       "doNotConfuse": []
     },
     "sympathie-verzerrung": {
@@ -21145,7 +21981,7 @@
         "hebelpunkt",
         "wirkungslenkung",
         "transformationswirkung",
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "wirkungsarchitektur"
       ],
       "doNotConfuse": [
@@ -21177,7 +22013,7 @@
         "vertrauen",
         "wirkungsintegration",
         "wirkungsarchitektur",
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "wirkungskompetenz",
         "konstruktives-narrativ",
         "gesellschaftliche-stabilitaet",
@@ -21196,7 +22032,7 @@
         "wirkungsrisiko",
         "wirkungsresilienz",
         "inside-out-outside-in",
-        "wirkungsrueckkopplung"
+        "rueckkopplung"
       ],
       "doNotConfuse": [
         "klassischem-nachhaltigkeitsmarketing",
@@ -21267,10 +22103,11 @@
         "wirkungsresilienz",
         "sdgs",
         "sdg-plus",
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "positive-netto-wirkung",
         "resonanzraum",
         "nachhaltigkeit",
+        "wirkungsrueckkopplung",
         "supply-chain-resilienz",
         "globale-resilienz",
         "resilienzarchitektur",
@@ -21306,7 +22143,8 @@
         "systemischer-wert",
         "normativer-wert",
         "wirkungsraum",
-        "wirkungsarchitektur"
+        "wirkungsarchitektur",
+        "rueckkopplung"
       ],
       "doNotConfuse": [
         "systemtheorie-erklaert-nicht-automatisch-was-normativ-gut-ist-dafuer-braucht-die-woek-den-referenzrahmen-sdgs-agenda-2030-und-sdg-systembeschreibung-und-wirkungsbewertung-muessen-getrennt-und-dann-verbunden-werden"
@@ -21402,7 +22240,10 @@
       "doNotConfuse": []
     },
     "tankstellenlogik": {
-      "related": [],
+      "related": [
+        "ladeangst",
+        "ladeinfrastruktur"
+      ],
       "doNotConfuse": []
     },
     "tar-mittelspannung": {
@@ -21414,7 +22255,10 @@
       "doNotConfuse": []
     },
     "target-gain": {
-      "related": [],
+      "related": [
+        "wirkungsziele-und-impact-okr",
+        "benchmark"
+      ],
       "doNotConfuse": []
     },
     "tauschwert": {
@@ -21457,7 +22301,10 @@
       "doNotConfuse": []
     },
     "taxonomy-compass": {
-      "related": [],
+      "related": [
+        "eu-taxonomie",
+        "technische-bewertungskriterien"
+      ],
       "doNotConfuse": []
     },
     "taxonomy-navigator": {
@@ -21611,7 +22458,10 @@
       ]
     },
     "technologiereifegrad": {
-      "related": [],
+      "related": [
+        "technologieoffenheit",
+        "no-regret-anwendung"
+      ],
       "doNotConfuse": []
     },
     "sharing": {
@@ -21653,7 +22503,10 @@
       ]
     },
     "territorialbilanz": {
-      "related": [],
+      "related": [
+        "konsumbilanz",
+        "bilanzgrenze"
+      ],
       "doNotConfuse": []
     },
     "drain-the-swamp": {
@@ -21684,7 +22537,10 @@
       "doNotConfuse": []
     },
     "thermischer-strompfad": {
-      "related": [],
+      "related": [
+        "waermepumpe",
+        "energieeffizienz"
+      ],
       "doNotConfuse": []
     },
     "thermisches-kraftwerk": {
@@ -21697,7 +22553,10 @@
       "doNotConfuse": []
     },
     "thg": {
-      "related": [],
+      "related": [
+        "treibhausgasemissionen",
+        "klimastandards"
+      ],
       "doNotConfuse": []
     },
     "thg-emissions-scopes": {
@@ -21777,7 +22636,10 @@
       ]
     },
     "tiere": {
-      "related": [],
+      "related": [
+        "tierschutz-und-tierwohl",
+        "biodiversitaet"
+      ],
       "doNotConfuse": []
     },
     "tierschutz-und-tierwohl": {
@@ -21802,7 +22664,8 @@
         "nichtlinearitaet",
         "transformationswirkung",
         "wirkungspotenzial",
-        "pfadabhaengigkeit"
+        "pfadabhaengigkeit",
+        "rueckkopplung"
       ],
       "doNotConfuse": [
         "nicht-jede-trendwende-ist-ein-tipping-point-der-begriff-sollte-nur-verwendet-werden-wenn-schwellen-rueckkopplungen-oder-selbstverstaerkende-dynamiken-plausibel-beschrieben-werden"
@@ -21822,7 +22685,7 @@
     },
     "tone-policing": {
       "related": [
-        "derailing",
+        "derailing-themenverschiebung",
         "soziale-sanktionierung",
         "diskurskultur",
         "betroffenenperspektive"
@@ -22021,7 +22884,7 @@
         "nachhaltigkeitsmanagement",
         "stabilitaet",
         "robustheit",
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "kipppunkt-systemschwelle",
         "attraktor",
         "stabilitaetslandschaft",
@@ -22171,59 +23034,25 @@
     },
     "transformationswirkung": {
       "related": [
-        "wirkungsinnovation",
-        "transformationswelle",
-        "strukturdeterminiertheit",
-        "diffusion",
-        "hebelpunkt",
-        "pfadabhaengigkeit",
-        "t-sroi",
-        "verlustaversion",
         "wirkung",
         "wirkungspotenzial",
         "wirkungsrisiko",
-        "wirkmechanismus",
-        "wirkungstraeger",
-        "wirkungsempfaenger",
-        "wirkungsraum",
-        "wirkungsbewertung",
         "netto-wirkung",
         "positive-netto-wirkung",
-        "wirkungslenkung",
+        "wirkungsbewertung",
         "wirkungsrueckkopplung",
-        "wirkungsarchitektur",
-        "wirkungswahrheit",
-        "wirkungsblindheit",
-        "wirkungsgrenze",
-        "mensch-planet-demokratie",
-        "sdgs",
-        "agenda-2030",
-        "sdg-plus",
-        "woek-id",
-        "produktscorecard",
-        "reverse-merit-order",
-        "nwi",
-        "wirkungshaushalt",
-        "wirkungssteuer",
-        "wr",
-        "produktwirkung",
-        "digitaler-produktpass",
-        "produktdaten",
-        "responsible-marketing",
-        "greenwashing",
-        "fuenftes-p-planet",
-        "impact-strategie"
+        "wirkungslenkung",
+        "t-sroi",
+        "wirkpfad",
+        "systemgrenze",
+        "datenqualitaet",
+        "reverse-merit-order"
       ],
       "doNotConfuse": [
-        "netto-wirkung",
-        "wirkungspotenzial",
-        "wirkung",
-        "positive-netto-wirkung",
-        "skalierung",
-        "innovation",
-        "reform",
-        "disruption",
-        "t-sroi-als-instrument"
+        "wirkungspotenzial-begruendete-moeglichkeit-einer-kuenftigen-veraenderung-noch-keine-wirkung",
+        "innovation-oder-skalierung-koennen-transformationspotenzial-schaffen-belegen-aber-keine-transformationswirkung",
+        "netto-wirkung-bewertetes-gesamtergebnis-innerhalb-einer-bilanzgrenze-sie-ist-nicht-automatisch-transformativ",
+        "t-sroi-rechenstandard-fuer-getrennte-belegte-nutzen-und-ressourcenstroeme-keine-beweisautomatik-fuer-systemveraenderung"
       ]
     },
     "transformationswirkungs-logik": {
@@ -22415,7 +23244,7 @@
         "nichttriviale-maschine",
         "nichttriviales-system",
         "kybernetik",
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "heinz-von-foerster"
       ],
       "doNotConfuse": []
@@ -22460,19 +23289,31 @@
       "doNotConfuse": []
     },
     "uebergabestation": {
-      "related": [],
+      "related": [
+        "verteilnetz",
+        "energieinfrastruktur"
+      ],
       "doNotConfuse": []
     },
     "uebergangstaetigkeit": {
-      "related": [],
+      "related": [
+        "qualifikationsverlust",
+        "weiterbildung"
+      ],
       "doNotConfuse": []
     },
     "uebertragungsnetz": {
-      "related": [],
+      "related": [
+        "stromnetz",
+        "verteilnetz"
+      ],
       "doNotConfuse": []
     },
     "ueberwachungskapitalismus": {
-      "related": [],
+      "related": [
+        "resonanzraum",
+        "datenschutz"
+      ],
       "doNotConfuse": []
     },
     "ukraine-facility": {
@@ -22902,7 +23743,10 @@
       ]
     },
     "impact-governance-frameworks": {
-      "related": [],
+      "related": [
+        "wirkungsgovernance",
+        "managementsysteme"
+      ],
       "doNotConfuse": []
     },
     "unternehmerfunktion": {
@@ -23411,10 +24255,28 @@
         "wirkungsnetz",
         "systemtheorie",
         "lieferkettenwirkung",
-        "wirkungsrueckkopplung"
+        "rueckkopplung"
       ],
       "doNotConfuse": [
         "nicht-als-begruendung-fuer-esoterik-fernwirkung-bewusstseinsmacht-oder-politische-ganzheitsbehauptungen-verwenden-verschraenkung-erlaubt-keine-einfache-alltagsmetapher-und-keine-nutzbare-ueberlicht-kommunikation"
+      ]
+    },
+    "verschwoerungserzaehlung": {
+      "related": [
+        "desinformation",
+        "faktencheck",
+        "wissenschaftsfeindlichkeit",
+        "polarisierung",
+        "echokammer",
+        "diskursqualitaet",
+        "wirkungsrisiko"
+      ],
+      "doNotConfuse": [
+        "investigativrecherche",
+        "belegter-machtmissbrauch",
+        "politische-kritik",
+        "wissenschaftlicher-dissens",
+        "faktencheck"
       ]
     },
     "versicherbarkeit": {
@@ -23553,7 +24415,10 @@
       "doNotConfuse": []
     },
     "verteidigungsfaehigkeit": {
-      "related": [],
+      "related": [
+        "sicherheitsresilienz",
+        "sicherheitspolitische-staatsschuld"
+      ],
       "doNotConfuse": []
     },
     "verteilnetz": {
@@ -23684,7 +24549,7 @@
         "kybernetik",
         "lernende-organisation",
         "wirkungscontrolling",
-        "wirkungsrueckkopplung"
+        "rueckkopplung"
       ],
       "doNotConfuse": [
         "zentralplanung-organigramm-hierarchie-blosse-prozesssteuerung"
@@ -23700,7 +24565,10 @@
       "doNotConfuse": []
     },
     "vlop": {
-      "related": [],
+      "related": [
+        "dsa",
+        "plattformregulierung"
+      ],
       "doNotConfuse": []
     },
     "volkssouveraenitaet": {
@@ -23723,7 +24591,10 @@
       "doNotConfuse": []
     },
     "vorgriffswohlstand": {
-      "related": [],
+      "related": [
+        "scheinwohlstand",
+        "zukunftsschulden"
+      ],
       "doNotConfuse": []
     },
     "vorsorgeprinzip": {
@@ -23763,7 +24634,10 @@
       "doNotConfuse": []
     },
     "w-bip": {
-      "related": [],
+      "related": [
+        "bip",
+        "wellbeing-economy"
+      ],
       "doNotConfuse": []
     },
     "wahlintegritaet": {
@@ -23885,7 +24759,6 @@
     },
     "waok": {
       "related": [
-        "wirkungsaufsicht",
         "wr",
         "portfolio-wirkung",
         "kapitalwirkung",
@@ -24088,7 +24961,7 @@
     },
     "wechselwirkung": {
       "related": [
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "wirkungsnetz",
         "interdependenz",
         "systemtheorie",
@@ -24105,6 +24978,23 @@
         "resonanzraum"
       ],
       "doNotConfuse": []
+    },
+    "weiterbildung": {
+      "related": [
+        "wirkungskompetenz",
+        "teilhabe",
+        "gesundheitskompetenz",
+        "informationssouveraenitaet",
+        "wirkungspotenzial",
+        "wirkung"
+      ],
+      "doNotConfuse": [
+        "kursbesuch",
+        "zertifikat",
+        "berufliche-verwertbarkeit-allein",
+        "persoenlichkeitswert",
+        "zwang-zur-selbstoptimierung"
+      ]
     },
     "weiterverteilung": {
       "related": [
@@ -24130,7 +25020,10 @@
       "doNotConfuse": []
     },
     "wellbeing-economy": {
-      "related": [],
+      "related": [
+        "bip",
+        "w-bip"
+      ],
       "doNotConfuse": []
     },
     "welle-teilchen-dualismus": {
@@ -24145,7 +25038,10 @@
       ]
     },
     "weltfaehig": {
-      "related": [],
+      "related": [
+        "zukunftsfaehigkeit",
+        "positive-netto-wirkung"
+      ],
       "doNotConfuse": []
     },
     "weltlosigkeit": {
@@ -24180,8 +25076,18 @@
       "doNotConfuse": []
     },
     "wertebruecke": {
-      "related": [],
-      "doNotConfuse": []
+      "related": [
+        "gesichtswahrende-korrektur",
+        "kommunikative-souveraenitaet",
+        "reaktanz",
+        "identitaetsschutz",
+        "positive-netto-wirkung"
+      ],
+      "doNotConfuse": [
+        "zustimmung-zur-behauptung-einen-wert-anzuerkennen-heisst-nicht-eine-daraus-gezogene-schlussfolgerung-zu-akzeptieren",
+        "manipulation-die-wertebruecke-legt-wert-belegfrage-und-zielkonflikt-offen-statt-sie-zu-verdecken",
+        "konfliktaufloesung-sie-kann-einen-zugang-eroeffnen-loest-aber-nicht-automatisch-reale-interessen-oder-schutzkonflikte"
+      ]
     },
     "wertekonflikt": {
       "related": [
@@ -24246,7 +25152,7 @@
       "related": [
         "red-herring",
         "tu-quoque",
-        "derailing",
+        "derailing-themenverschiebung",
         "wirkungsbewertung"
       ],
       "doNotConfuse": [
@@ -24456,7 +25362,10 @@
       ]
     },
     "wirksame-arbeit": {
-      "related": [],
+      "related": [
+        "wirkung",
+        "wirksamkeit"
+      ],
       "doNotConfuse": []
     },
     "wirksames-management": {
@@ -24664,7 +25573,7 @@
       "related": [
         "wirkung-erster-ordnung",
         "wirkung-dritter-ordnung",
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "wirkung",
         "positive-netto-wirkung",
         "mensch-planet-demokratie",
@@ -25050,6 +25959,7 @@
         "sdgs",
         "agenda-2030",
         "sdg-plus",
+        "rueckkopplung",
         "kybernetik",
         "viable-system-model",
         "scorecard",
@@ -25456,6 +26366,7 @@
         "wirklichkeitskonstruktion",
         "salienz",
         "bestaetigungsfehler",
+        "rueckkopplung",
         "faktenargumentation",
         "folgewirkung",
         "resonanzraum",
@@ -25787,7 +26698,10 @@
       ]
     },
     "wirkungsdefizit": {
-      "related": [],
+      "related": [
+        "wirkungskredit",
+        "oeffentliche-netto-wirkung"
+      ],
       "doNotConfuse": []
     },
     "wirkungsdesign-doppelschleife": {
@@ -25826,19 +26740,52 @@
       ]
     },
     "wirkungsdisziplin": {
-      "related": [],
+      "related": [
+        "wirkungskredit",
+        "datenqualitaet"
+      ],
       "doNotConfuse": []
     },
+    "wirkungsdividende": {
+      "related": [
+        "wirkungseinkommen",
+        "grunddividende",
+        "automatisierungsdividende",
+        "wirkungsrente",
+        "ehrenamt",
+        "wirkung",
+        "positive-netto-wirkung",
+        "wirkungsrueckkopplung",
+        "reverse-merit-order"
+      ],
+      "doNotConfuse": [
+        "aktien-oder-unternehmensdividende",
+        "bedingungsloses-grundeinkommen",
+        "individueller-leistungsbonus",
+        "wirkungspunkte",
+        "social-credit",
+        "geltende-sozialleistung"
+      ]
+    },
     "wirkungsebene-1": {
-      "related": [],
+      "related": [
+        "wirkungsebene-2",
+        "wirkung"
+      ],
       "doNotConfuse": []
     },
     "wirkungsebene-2": {
-      "related": [],
+      "related": [
+        "wirkungsebene-1",
+        "wirkungsebene-3"
+      ],
       "doNotConfuse": []
     },
     "wirkungsebene-3": {
-      "related": [],
+      "related": [
+        "wirkungsebene-2",
+        "transformationswirkung"
+      ],
       "doNotConfuse": []
     },
     "wirkungseffizienz": {
@@ -25967,11 +26914,17 @@
       ]
     },
     "wirkungsfeld": {
-      "related": [],
+      "related": [
+        "mensch-planet-demokratie",
+        "wirkungsindikator"
+      ],
       "doNotConfuse": []
     },
     "wirkungsfinanzierung": {
-      "related": [],
+      "related": [
+        "oeffentliche-netto-wirkung",
+        "realressourcengrenze"
+      ],
       "doNotConfuse": []
     },
     "wirkungsfinanzpolitik": {
@@ -26443,11 +27396,17 @@
       ]
     },
     "wirkungshaushalt-ausland": {
-      "related": [],
+      "related": [
+        "wirkungshaushalt",
+        "internationale-zusammenarbeit"
+      ],
       "doNotConfuse": []
     },
     "wirkungshebel": {
-      "related": [],
+      "related": [
+        "hebelpunkt",
+        "wirkpfad"
+      ],
       "doNotConfuse": []
     },
     "wirkungshypothesen-register": {
@@ -26650,7 +27609,10 @@
       ]
     },
     "wirkungsinvestition-des-staates": {
-      "related": [],
+      "related": [
+        "wirkungskredit",
+        "positive-netto-wirkung"
+      ],
       "doNotConfuse": []
     },
     "wirkungskapazitaet-des-staates": {
@@ -26746,7 +27708,10 @@
       ]
     },
     "wirkungsklasse": {
-      "related": [],
+      "related": [
+        "scorecard",
+        "finalscore"
+      ],
       "doNotConfuse": []
     },
     "wirkungskommunikation": {
@@ -26961,52 +27926,23 @@
     },
     "wirkungslenkung": {
       "related": [
+        "wirkungsarchitektur",
         "wirkungsbewertung",
         "wirkungsrueckkopplung",
-        "wirkungsarchitektur",
-        "positive-netto-wirkung",
-        "wirkungssteuer",
-        "wirkungshaushalt",
-        "wr",
-        "reverse-merit-order",
-        "wirkungswahrheit",
-        "wirkungsblindheit",
-        "datenqualitaet",
-        "mensch-planet-demokratie",
-        "wirkung",
-        "wirkungspotenzial",
-        "wirkungsrisiko",
-        "netto-wirkung",
-        "transformationswirkung",
+        "reporting",
         "wirkungsgrenze",
-        "wirkpfad",
-        "wirkungsnetz",
+        "reverse-merit-order",
+        "positive-netto-wirkung",
+        "wirkungsrisiko",
         "wirkungsdaten",
-        "woek-id",
-        "produktscorecard",
-        "digitaler-produktpass",
-        "wirkungsaudit",
-        "wirkungsassurance",
-        "greenwashing",
-        "impact-washing",
-        "sdg-washing",
-        "sdgs",
-        "agenda-2030",
-        "sdg-plus",
-        "hebelpunkt",
-        "donella-meadows",
-        "pfadabhaengigkeit",
-        "wirkungseinkommen",
-        "impact-strategie"
+        "wr",
+        "wirkungshaushalt"
       ],
       "doNotConfuse": [
-        "planwirtschaft-wirkungslenkung-ersetzt-keine-dezentrale-entscheidung-sondern-verbessert-signale",
-        "nudging-kann-ein-kanal-sein-ist-aber-nicht-der-kern",
-        "moralappell-lenkung-veraendert-rahmenbedingungen-nicht-nur-sprache",
-        "personenbewertung-oder-social-credit-ausgeschlossen",
-        "wirkungsbewertung-liefert-grundlage-ist-aber-noch-keine-rueckkopplung",
-        "wirkungsrueckkopplung",
-        "planwirtschaft"
+        "wirkungsrueckkopplung-sie-bringt-beobachtungen-evidenz-und-unsicherheit-in-spaetere-entscheidungen-zurueck",
+        "wirkungsbewertung-sie-liefert-eine-begruendete-einschaetzung-entscheidet-aber-noch-nicht-ueber-ein-instrument",
+        "reporting-es-dokumentiert-informationen-ohne-entscheidungsregel-lenkt-es-nicht",
+        "personenbewertung-oder-social-credit-ausgeschlossen"
       ]
     },
     "wirkungsluecke": {
@@ -27162,7 +28098,6 @@
         "wirkungsarchitektur",
         "wirkungsrueckkopplung",
         "positive-netto-wirkung",
-        "nichtkompensationsprinzip",
         "reverse-merit-order",
         "woek-id",
         "qualitaetssicherung",
@@ -27631,7 +28566,7 @@
       ],
       "doNotConfuse": [
         "zensur",
-        "personenscore",
+        "personenbewertung",
         "social-credit",
         "moderationsstil"
       ]
@@ -27705,7 +28640,7 @@
         "zeit-verzoegerungs-und-generationenkarte",
         "wirkstoff",
         "folgewirkung",
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "handlung",
         "handlungspfad",
         "hebelpunkt",
@@ -28227,7 +29162,7 @@
         "wirkungsrueckkopplung"
       ],
       "doNotConfuse": [
-        "weder-projektplan-noch-organigramm-outputs-und-installierte-systeme-gelten-ohne-nutzung-adoption-benefit-und-wirkungsrueckkopplung-nicht-als-realisierte-wirkung"
+        "sie-ist-weder-projektplan-noch-organigramm-erbrachte-leistungen-und-eingefuehrte-systeme-sind-noch-keine-realisierte-wirkung-solange-sie-nicht-tatsaechlich-genutzt-werden-nutzen-schaffen-und-in-eine-wirkungsrueckkopplung-einfliessen"
       ]
     },
     "wirkungsrecht": {
@@ -28552,6 +29487,7 @@
         "nachhaltigkeitsmanagement",
         "stabilitaet",
         "robustheit",
+        "rueckkopplung",
         "attraktor",
         "stabilitaetslandschaft",
         "latitude",
@@ -28748,7 +29684,10 @@
       ]
     },
     "wirkungsrisikomanagement": {
-      "related": [],
+      "related": [
+        "wirkungsrisiko",
+        "risikomanagement"
+      ],
       "doNotConfuse": []
     },
     "wirkungsrisikoposition": {
@@ -28783,34 +29722,24 @@
     },
     "wirkungsrueckkopplung": {
       "related": [
-        "kybernetik",
         "wirkungsarchitektur",
         "wirkungslenkung",
-        "fuenftes-p-planet",
-        "erweiterte-herstellerverantwortung",
-        "esg",
-        "gewinn-als-test",
-        "hebelpunkt",
-        "hebelwirkung",
-        "nachhaltigkeit",
-        "steuerungsdaten",
-        "sustainable-finance",
-        "verstaerkungslernen",
-        "wirkungsfonds",
-        "wirkungshaushalt",
-        "wirkungssteuer",
-        "zentralverwaltungswirtschaft",
-        "impact-management",
-        "wirkungscontrolling",
-        "doppelte-wesentlichkeit"
+        "wirkungsbewertung",
+        "reporting",
+        "wirkungsdaten",
+        "datenqualitaet",
+        "wirkungsrisiko",
+        "wirkungsgrenze",
+        "positive-netto-wirkung",
+        "wirkpfad",
+        "wirkung",
+        "reverse-merit-order"
       ],
       "doNotConfuse": [
-        "reporting",
-        "wirkungslenkung",
-        "wirkung-beschreibt-tatsaechliche-zustandsveraenderung",
-        "wirkungslenkung-beschreibt-die-absichtsvolle-ausrichtung-von-entscheidungen",
-        "wirkungsarchitektur-beschreibt-das-system-aus-regeln-daten-institutionen-und-anreizen",
-        "wirkungsrueckkopplung-ist-der-konkrete-rueckfluss-von-wirkung-in-steuerungsgroessen"
+        "wirkungslenkung-sie-setzt-ziele-schutzgrenzen-und-instrumentregeln",
+        "wirkungsbewertung-sie-ordnet-evidenz-ein-erst-die-rueckkopplung-verbindet-sie-mit-einer-folgerung-fuer-die-naechste-entscheidung",
+        "reporting-es-kann-daten-bereitstellen-ist-aber-ohne-lern-und-entscheidungsprozess-keine-rueckkopplung",
+        "automatische-sanktion-oder-social-credit-ausgeschlossen"
       ]
     },
     "wirkungsschule": {
@@ -28912,7 +29841,10 @@
       ]
     },
     "wirkungsspielraum": {
-      "related": [],
+      "related": [
+        "realressourcengrenze",
+        "wirkungskapazitaet-des-staates"
+      ],
       "doNotConfuse": []
     },
     "wirkungsstaat": {
@@ -29074,7 +30006,10 @@
       ]
     },
     "wirkungssteuerkonto": {
-      "related": [],
+      "related": [
+        "wirkungssteuer",
+        "wkg"
+      ],
       "doNotConfuse": []
     },
     "wirkungsstrategie-canvas": {
@@ -29378,7 +30313,10 @@
       ]
     },
     "wirkungswashing": {
-      "related": [],
+      "related": [
+        "greenwashing",
+        "wirkungsbewertung"
+      ],
       "doNotConfuse": []
     },
     "wirkungswert": {
@@ -29683,6 +30621,23 @@
         "prognose-als-sicherheit"
       ]
     },
+    "wissenschaftsfeindlichkeit": {
+      "related": [
+        "faktencheck",
+        "desinformation",
+        "verschwoerungserzaehlung",
+        "medienfreiheit",
+        "diskursqualitaet",
+        "wirkungsrisiko"
+      ],
+      "doNotConfuse": [
+        "methodenkritik",
+        "replikation",
+        "wissenschaftlicher-dissens",
+        "kritik-an-interessenkonflikten",
+        "wissenschaftskommunikation"
+      ]
+    },
     "wissensfluss-kritisches-wissen-und-communities-canvas": {
       "related": [
         "woems-auftragsklaerung",
@@ -29826,7 +30781,10 @@
       ]
     },
     "wkg": {
-      "related": [],
+      "related": [
+        "wirkungssteuerkonto",
+        "wirkungsdaten"
+      ],
       "doNotConfuse": []
     },
     "wohlfahrtsoekonomie": {
@@ -30063,7 +31021,7 @@
         "woems-methodenregister"
       ],
       "doNotConfuse": [
-        "keine-blosse-moderationskarte-und-kein-ersatz-fachlicher-evidenz"
+        "keine-blosse-moderationshilfe-und-kein-ersatz-fuer-fachliche-evidenz"
       ]
     },
     "woems-methodenkreislauf": {
@@ -30162,7 +31120,7 @@
         "dao",
         "prozessdenken",
         "selbstorganisation",
-        "wirkungsrueckkopplung",
+        "rueckkopplung",
         "alan-watts-daoismus",
         "daoismus",
         "wirkungslenkung",
@@ -30528,7 +31486,10 @@
       ]
     },
     "zukunftsdisziplin": {
-      "related": [],
+      "related": [
+        "zukunftsschulden",
+        "wirkungskredit"
+      ],
       "doNotConfuse": []
     },
     "zukunftsfaehigkeit": {
@@ -30596,7 +31557,10 @@
       ]
     },
     "zuschuss": {
-      "related": [],
+      "related": [
+        "foerderlogik",
+        "foerdercontrolling"
+      ],
       "doNotConfuse": []
     },
     "zyklenfestigkeit": {

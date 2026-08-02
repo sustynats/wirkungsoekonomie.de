@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-30T18:22:35.376Z",
+  "generatedAt": "2026-08-02T19:48:04.020Z",
   "relationships": {
     "fuenftes-p-planet": {
       "terms": [
@@ -133,9 +133,8 @@
     },
     "adoe": {
       "terms": [
-        "digitale-oeffentlichkeit",
-        "wirkungsrat",
         "oeffentlichkeit-als-wirkungsraum",
+        "wirkungsrat",
         "desinformation",
         "wr",
         "demokratie",
@@ -290,7 +289,7 @@
         "politischer-vorraum",
         "salienz",
         "priming",
-        "wirkungsraum-oeffentlichkeit"
+        "oeffentlichkeit-als-wirkungsraum"
       ],
       "documents": [],
       "methods": [],
@@ -620,7 +619,7 @@
         "wirkungsrisiko",
         "diskursfaehigkeit",
         "desinformation",
-        "faktenresistenz",
+        "faktenreaktanz",
         "kognitive-dissonanz",
         "dunning-kruger-effekt",
         "bestaetigungsfehler",
@@ -651,7 +650,7 @@
     },
     "ambiguitaetsintoleranz": {
       "terms": [
-        "false-urgency",
+        "false-urgency-kuenstliche-dringlichkeit",
         "moralische-panik",
         "wirkungskompetenz",
         "sdg-plus"
@@ -1372,6 +1371,23 @@
         "bibliothek/woek-begriffsleitfaden-fuehrend/",
         "nachhaltigkeit-als-systemresilienz-definition-und-klimamodell"
       ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "attributionsfehler": {
+      "terms": [
+        "wirkung",
+        "wirkungsbewertung",
+        "wirkungsdaten",
+        "wirkungsrisiko",
+        "wissenschaftsfeindlichkeit",
+        "diskursqualitaet"
+      ],
+      "documents": [],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -2469,7 +2485,9 @@
       "dataRegisters": []
     },
     "benchmarks": {
-      "terms": [],
+      "terms": [
+        "benchmark"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -2673,7 +2691,10 @@
       "dataRegisters": []
     },
     "bestandsimmobilie": {
-      "terms": [],
+      "terms": [
+        "immobilien",
+        "energetische-sanierung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -2735,6 +2756,23 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "betroffenenperspektive": {
+      "terms": [
+        "partizipation",
+        "teilhabe",
+        "grundrechte",
+        "gesundheit",
+        "wirkungsempfaenger",
+        "wirkungsbewertung"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "bewegungs-ngo": {
       "terms": [
         "ngo",
@@ -2764,7 +2802,10 @@
       "dataRegisters": []
     },
     "bilanzgrenze": {
-      "terms": [],
+      "terms": [
+        "systemgrenze",
+        "lebenszyklusanalyse"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -2801,7 +2842,10 @@
       "dataRegisters": []
     },
     "biodiversitaet": {
-      "terms": [],
+      "terms": [
+        "planet",
+        "biodiversitaetsrisiko"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -2823,7 +2867,7 @@
         "humusaufbau",
         "hydrologischer-kreislauf",
         "nature-positive",
-        "oekosystemleistungen",
+        "oekosystemleistungen-oekosystemfunktionen",
         "one-health",
         "planetare-grenzen"
       ],
@@ -2933,7 +2977,10 @@
       "dataRegisters": []
     },
     "bip": {
-      "terms": [],
+      "terms": [
+        "wellbeing-economy",
+        "w-bip"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -3075,7 +3122,9 @@
       "dataRegisters": []
     },
     "bne": {
-      "terms": [],
+      "terms": [
+        "bip"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -3139,7 +3188,10 @@
       "dataRegisters": []
     },
     "brutblanket": {
-      "terms": [],
+      "terms": [
+        "tiere",
+        "biodiversitaet"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -3149,7 +3201,10 @@
       "dataRegisters": []
     },
     "bruttokreditaufnahme": {
-      "terms": [],
+      "terms": [
+        "nettokreditaufnahme",
+        "refinanzierung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -3437,6 +3492,24 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "cancel-dynamiken": {
+      "terms": [
+        "diskursqualitaet",
+        "moderationsstandards",
+        "plattformregulierung",
+        "grundrechte",
+        "medienfreiheit",
+        "soziale-sanktionierung",
+        "betroffenenperspektive"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "canvas-mindeststandard": {
       "terms": [
         "woems-methodenkarte",
@@ -3548,7 +3621,10 @@
       "dataRegisters": []
     },
     "capex-plan": {
-      "terms": [],
+      "terms": [
+        "capex",
+        "investitionsschuld"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -3617,7 +3693,10 @@
       "dataRegisters": []
     },
     "care-economy": {
-      "terms": [],
+      "terms": [
+        "sorgearbeit",
+        "gender-care-gap"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -3842,7 +3921,7 @@
     "cherry-picking": {
       "terms": [
         "bestaetigungsfehler",
-        "quote-mining",
+        "quote-mining-dekontextualisierung",
         "impact-washing",
         "netto-wirkung"
       ],
@@ -3869,7 +3948,10 @@
       "dataRegisters": []
     },
     "circular-economy": {
-      "terms": [],
+      "terms": [
+        "kreislaufwirtschaft",
+        "kreislauffaehigkeit"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -4286,7 +4368,14 @@
         "cradle-to-cradle"
       ],
       "documents": [
-        "[object Object]",
+        {
+          "label": "Wirkungsökonomie Glossar",
+          "href": "../../glossar.html"
+        },
+        {
+          "label": "Referenz / Online-Buch",
+          "href": "../../referenz/"
+        },
         "die-neue-ordnung-des-wohlstands",
         "systemmodell-der-wirkungsoekonomie",
         "leitbild-mensch-planet-demokratie"
@@ -4299,7 +4388,10 @@
       "dataRegisters": []
     },
     "crrem": {
-      "terms": [],
+      "terms": [
+        "immobilien",
+        "misalignment-year"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -4395,7 +4487,10 @@
       "dataRegisters": []
     },
     "cyberresilienz": {
-      "terms": [],
+      "terms": [
+        "dora",
+        "risiko-und-resilienzregister"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -4405,7 +4500,10 @@
       "dataRegisters": []
     },
     "d-und-o": {
-      "terms": [],
+      "terms": [
+        "unternehmens-impact-und-governance-frameworks",
+        "risikomanagement"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -4787,8 +4885,28 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "datenschutz": {
+      "terms": [
+        "informationssouveraenitaet",
+        "digitale-selbstbestimmung",
+        "wirkungsdaten",
+        "grundrechte",
+        "lernende-systeme",
+        "plattformregulierung"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "datenstandard": {
-      "terms": [],
+      "terms": [
+        "datenqualitaet",
+        "managementsystemstandards"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -4814,7 +4932,10 @@
       "dataRegisters": []
     },
     "deal": {
-      "terms": [],
+      "terms": [
+        "clean-industrial-deal",
+        "eu"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -4824,7 +4945,13 @@
       "dataRegisters": []
     },
     "debiasing": {
-      "terms": [],
+      "terms": [
+        "kognitive-dissonanz",
+        "bestaetigungsfehler",
+        "meta-kognitive-intervention",
+        "faktencheck",
+        "reaktanz"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -4853,7 +4980,7 @@
       "terms": [
         "wirkungsblindheit",
         "interdisziplinaritaet",
-        "systemkompetenz",
+        "wirkungskompetenz",
         "wirkungsaudit"
       ],
       "documents": [],
@@ -4879,7 +5006,10 @@
       "dataRegisters": []
     },
     "degrowth": {
-      "terms": [],
+      "terms": [
+        "wellbeing-economy",
+        "bip"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -4904,7 +5034,10 @@
       "dataRegisters": []
     },
     "deindustrialisierungsnarrativ": {
-      "terms": [],
+      "terms": [
+        "narrativ",
+        "green-deal-industrial-plan"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -5261,7 +5394,10 @@
       "dataRegisters": []
     },
     "demokratische-staatsschuld": {
-      "terms": [],
+      "terms": [
+        "demokratische-erosion",
+        "nicht-finanzielle-staatsschulden"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -5468,7 +5604,14 @@
         "paltering"
       ],
       "documents": [
-        "[object Object]",
+        {
+          "label": "Wirkungsökonomie Glossar",
+          "href": "../../glossar.html"
+        },
+        {
+          "label": "Referenz / Online-Buch",
+          "href": "../../referenz/"
+        },
         "die-neue-ordnung-des-wohlstands",
         "systemmodell-der-wirkungsoekonomie",
         "leitbild-mensch-planet-demokratie"
@@ -5572,7 +5715,10 @@
       "dataRegisters": []
     },
     "digital-ki-und-plattformstandards": {
-      "terms": [],
+      "terms": [
+        "ki-governance",
+        "plattformregulierung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -5656,7 +5802,18 @@
         "greenwashing"
       ],
       "documents": [
-        "[object Object]"
+        {
+          "label": "Die neue Ordnung des Wohlstands",
+          "href": "../../referenz/"
+        },
+        {
+          "label": "Technische Leitlinien WUStG",
+          "href": "../../dokumente/technische-leitlinien-wustg-v2/"
+        },
+        {
+          "label": "Wirkungsfeld Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        }
       ],
       "methods": [],
       "tools": [
@@ -5948,11 +6105,36 @@
         "cradle-to-cradle"
       ],
       "documents": [
-        "[object Object]",
+        {
+          "label": "Wirkungsökonomie Glossar",
+          "href": "../../glossar.html"
+        },
+        {
+          "label": "Referenz / Online-Buch",
+          "href": "../../referenz/"
+        },
         "die-neue-ordnung-des-wohlstands",
         "systemmodell-der-wirkungsoekonomie",
         "leitbild-mensch-planet-demokratie"
       ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "diskursqualitaet": {
+      "terms": [
+        "medienqualitaet",
+        "medienfreiheit",
+        "faktencheck",
+        "moderationsstandards",
+        "betroffenenperspektive",
+        "plattformregulierung",
+        "polarisierung"
+      ],
+      "documents": [],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -5966,8 +6148,7 @@
         "resonanzraum",
         "wirkpfad",
         "wirkungspotenzial",
-        "deliberative-demokratie",
-        "wirkungspfad"
+        "deliberative-demokratie"
       ],
       "documents": [],
       "methods": [],
@@ -5986,7 +6167,7 @@
         "wirkungswahrheit",
         "wirkungsrueckkopplung",
         "resonanzraum",
-        "wirkungspfad",
+        "wirkpfad",
         "wirkungsrisiko",
         "reverse-merit-order"
       ],
@@ -6102,7 +6283,10 @@
       "dataRegisters": []
     },
     "donut-oekonomie": {
-      "terms": [],
+      "terms": [
+        "planetare-grenzen",
+        "mensch-planet-demokratie"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -6143,7 +6327,10 @@
       "dataRegisters": []
     },
     "dora": {
-      "terms": [],
+      "terms": [
+        "cyberresilienz",
+        "risikomanagement"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -6225,9 +6412,8 @@
     "dsa": {
       "terms": [
         "plattformregulierung",
-        "digitale-oeffentlichkeit",
-        "dsa-digital-services-act",
         "oeffentlichkeit-als-wirkungsraum",
+        "dsa-digital-services-act",
         "adoe",
         "wirkung",
         "positive-netto-wirkung",
@@ -6265,7 +6451,7 @@
     "dsgvo": {
       "terms": [
         "datenschutz",
-        "digitale-oeffentlichkeit",
+        "oeffentlichkeit-als-wirkungsraum",
         "digitale-selbstbestimmung",
         "wirkung",
         "positive-netto-wirkung",
@@ -6552,6 +6738,24 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "ehrenamt": {
+      "terms": [
+        "gemeinwohl",
+        "teilhabe",
+        "wirkung",
+        "wirkungspotenzial",
+        "weiterbildung",
+        "wirkungsdividende",
+        "wirkungsrente"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "ehrliche-preise": {
       "terms": [
         "wirkungssteuer",
@@ -6688,7 +6892,10 @@
       "dataRegisters": []
     },
     "eigentumsangst": {
-      "terms": [],
+      "terms": [
+        "eigentumsrechte",
+        "status-threat"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -6795,7 +7002,10 @@
       "dataRegisters": []
     },
     "eiopa": {
-      "terms": [],
+      "terms": [
+        "versicherbarkeit",
+        "esma"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -6820,7 +7030,10 @@
       "dataRegisters": []
     },
     "elektrolyse": {
-      "terms": [],
+      "terms": [
+        "wasserstoff",
+        "energieeffizienz"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -6861,7 +7074,6 @@
         "selbstorganisation",
         "vertrauen",
         "commons",
-        "elinor-ostrom",
         "wirkungsrat",
         "wirkungsgovernance",
         "teilgabe"
@@ -7055,7 +7267,10 @@
       "dataRegisters": []
     },
     "endogenes-geld": {
-      "terms": [],
+      "terms": [
+        "mmt",
+        "monetaere-souveraenitaet"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -7081,7 +7296,10 @@
       "dataRegisters": []
     },
     "energetische-sanierung": {
-      "terms": [],
+      "terms": [
+        "bestandsimmobilie",
+        "sanierungsfahrplan"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -7574,7 +7792,10 @@
       "dataRegisters": []
     },
     "entmenschlichender-kampfbegriff": {
-      "terms": [],
+      "terms": [
+        "dehumanisierung",
+        "menschenwuerde"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -7669,7 +7890,10 @@
       "dataRegisters": []
     },
     "entwicklungskredit": {
-      "terms": [],
+      "terms": [
+        "kapitalzugang",
+        "wirkungsinvestition-des-staates"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -7693,7 +7917,10 @@
       "dataRegisters": []
     },
     "epbd": {
-      "terms": [],
+      "terms": [
+        "gebaeudeenergieperformance",
+        "energetische-sanierung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -7828,7 +8055,14 @@
         "demokratie"
       ],
       "documents": [
-        "[object Object]",
+        {
+          "label": "Wirkungsökonomie Glossar",
+          "href": "../../glossar.html"
+        },
+        {
+          "label": "Referenz / Online-Buch",
+          "href": "../../referenz/"
+        },
         "die-neue-ordnung-des-wohlstands",
         "systemmodell-der-wirkungsoekonomie",
         "leitbild-mensch-planet-demokratie"
@@ -7857,7 +8091,10 @@
       "dataRegisters": []
     },
     "erm": {
-      "terms": [],
+      "terms": [
+        "risikomanagement",
+        "enterprise-risk-management-nach-wirkung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -8014,7 +8251,10 @@
       "dataRegisters": []
     },
     "erwuenschte-wirkung": {
-      "terms": [],
+      "terms": [
+        "positive-wirkung",
+        "positive-netto-wirkung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -8076,7 +8316,10 @@
       "dataRegisters": []
     },
     "esg-beratung": {
-      "terms": [],
+      "terms": [
+        "esg",
+        "nachhaltigkeitsmanagement"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -8086,7 +8329,10 @@
       "dataRegisters": []
     },
     "esg-rating": {
-      "terms": [],
+      "terms": [
+        "sustainability-benchmarking",
+        "wirkungsbewertung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -8096,7 +8342,10 @@
       "dataRegisters": []
     },
     "esma": {
-      "terms": [],
+      "terms": [
+        "eu",
+        "esg-rating"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -8170,7 +8419,10 @@
       "dataRegisters": []
     },
     "ets": {
-      "terms": [],
+      "terms": [
+        "emissionshandel",
+        "treibhausgasemissionen"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -8180,7 +8432,10 @@
       "dataRegisters": []
     },
     "eu": {
-      "terms": [],
+      "terms": [
+        "eu-nachhaltigkeitsverfassungsrahmen",
+        "eu-taxonomie"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -8258,7 +8513,7 @@
         "nachhaltigkeit",
         "taxonomiefaehigkeit",
         "taxonomiekonformitaet",
-        "dnsh",
+        "dnsh-do-no-significant-harm",
         "technische-bewertungskriterien",
         "nace",
         "mindestschutz-minimum-safeguards",
@@ -8284,7 +8539,10 @@
       "dataRegisters": []
     },
     "eu-taxonomie-bei-immobilien": {
-      "terms": [],
+      "terms": [
+        "eu-taxonomie",
+        "immobilien"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -8744,7 +9002,10 @@
       "dataRegisters": []
     },
     "fach-zukunft": {
-      "terms": [],
+      "terms": [
+        "zukunftsfaehigkeit",
+        "wirkungskompetenz"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -9329,7 +9590,7 @@
       "terms": [
         "flood-the-zone",
         "gish-galopp",
-        "bullshit-asymmetrie",
+        "bullshit-asymmetrie-brandolinis-gesetz",
         "wirkungsresilienz"
       ],
       "documents": [],
@@ -9376,7 +9637,10 @@
       "dataRegisters": []
     },
     "fledermausabschaltung": {
-      "terms": [],
+      "terms": [
+        "windenergie",
+        "biodiversitaet"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -9419,7 +9683,7 @@
       "terms": [
         "firehose-of-falsehood",
         "gish-galopp",
-        "derailing",
+        "derailing-themenverschiebung",
         "agenda-setting"
       ],
       "documents": [],
@@ -9431,7 +9695,10 @@
       "dataRegisters": []
     },
     "folgekosten": {
-      "terms": [],
+      "terms": [
+        "kosten-des-nicht-handelns",
+        "externalitaeten"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -9441,7 +9708,10 @@
       "dataRegisters": []
     },
     "folgekostenvermeidung": {
-      "terms": [],
+      "terms": [
+        "folgekosten",
+        "praevention-als-wirkleistung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -9454,7 +9724,7 @@
       "terms": [
         "faktencheck",
         "fakten",
-        "wirkungspfad",
+        "wirkpfad",
         "wirkungspotenzial",
         "wirkungsrisiko",
         "metakommunikation",
@@ -9511,7 +9781,7 @@
     "folgewirkung": {
       "terms": [
         "wirkung",
-        "wirkungspfad",
+        "wirkpfad",
         "rueckkopplung",
         "interdependenz",
         "wirkungsrisiko",
@@ -9544,7 +9814,10 @@
       "dataRegisters": []
     },
     "foerdercontrolling": {
-      "terms": [],
+      "terms": [
+        "foerderlogik",
+        "wirkungscontrolling"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -9554,7 +9827,10 @@
       "dataRegisters": []
     },
     "foerderlogik": {
-      "terms": [],
+      "terms": [
+        "foerdercontrolling",
+        "neoklassische-foerderlogik"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -9564,7 +9840,10 @@
       "dataRegisters": []
     },
     "fossile-alternative": {
-      "terms": [],
+      "terms": [
+        "fossile-systemkosten",
+        "lock-in-effekt"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -9615,7 +9894,7 @@
         "framing",
         "reframing",
         "wirkungspotenzial",
-        "wirkungspfad",
+        "wirkpfad",
         "wirkungsrisiko"
       ],
       "documents": [
@@ -9652,11 +9931,10 @@
         "populismus",
         "paltering",
         "frame",
-        "tonalitaet",
-        "wirkungspfad",
+        "framing-sprache-tonalitaet",
+        "wirkpfad",
         "wirkungsrisiko",
-        "gegenframe",
-        "wirkpfad"
+        "gegenframe"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -9669,7 +9947,12 @@
       "dataRegisters": []
     },
     "framekontrolle": {
-      "terms": [],
+      "terms": [
+        "framing",
+        "reframing",
+        "metakommunikation",
+        "reaktanz"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -9748,7 +10031,14 @@
         "cradle-to-cradle"
       ],
       "documents": [
-        "[object Object]",
+        {
+          "label": "Wirkungsökonomie Glossar",
+          "href": "../../glossar.html"
+        },
+        {
+          "label": "Referenz / Online-Buch",
+          "href": "../../referenz/"
+        },
         "die-neue-ordnung-des-wohlstands",
         "systemmodell-der-wirkungsoekonomie",
         "leitbild-mensch-planet-demokratie"
@@ -10018,7 +10308,10 @@
       "dataRegisters": []
     },
     "functional-finance": {
-      "terms": [],
+      "terms": [
+        "mmt",
+        "funktionale-wirkungsfinanzpolitik"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -10043,7 +10336,10 @@
       "dataRegisters": []
     },
     "funktionale-wirkungsfinanzpolitik": {
-      "terms": [],
+      "terms": [
+        "functional-finance",
+        "wirkungsfinanzierung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -10053,7 +10349,10 @@
       "dataRegisters": []
     },
     "fusion": {
-      "terms": [],
+      "terms": [
+        "technologiereifegrad",
+        "energie"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -10063,7 +10362,10 @@
       "dataRegisters": []
     },
     "garantie": {
-      "terms": [],
+      "terms": [
+        "risikomanagement",
+        "kapitalzugang"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -10086,7 +10388,10 @@
       "dataRegisters": []
     },
     "gebaeude-und-immobilienstandards": {
-      "terms": [],
+      "terms": [
+        "epbd",
+        "gebaeudeenergiegesetz"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -10115,7 +10420,10 @@
       "dataRegisters": []
     },
     "gebaeudeenergieperformance": {
-      "terms": [],
+      "terms": [
+        "energetische-sanierung",
+        "gebaeudeenergiegesetz"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -10351,7 +10659,10 @@
       "dataRegisters": []
     },
     "gemeinwohloekonomie": {
-      "terms": [],
+      "terms": [
+        "mensch-planet-demokratie",
+        "wirkungsbewertung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -10714,7 +11025,12 @@
       "dataRegisters": []
     },
     "gesichtswahrende_korrektur": {
-      "terms": [],
+      "terms": [
+        "wertebruecke",
+        "kommunikative_souveraenitaet",
+        "reaktanz",
+        "kognitive-dissonanz"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -10852,6 +11168,23 @@
       "dataRegisters": [
         "woek-id-register"
       ]
+    },
+    "gesundheitskompetenz": {
+      "terms": [
+        "gesundheit",
+        "praevention",
+        "gesundheitswirkung",
+        "one-health",
+        "informationssouveraenitaet",
+        "weiterbildung"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
     },
     "gesundheitssystem": {
       "terms": [
@@ -11022,7 +11355,7 @@
     },
     "gish-galopp": {
       "terms": [
-        "bullshit-asymmetrie",
+        "bullshit-asymmetrie-brandolinis-gesetz",
         "flood-the-zone",
         "firehose-of-falsehood",
         "faktencheck"
@@ -11303,7 +11636,10 @@
       ]
     },
     "globale-oeffentliche-gueter": {
-      "terms": [],
+      "terms": [
+        "internationale-zusammenarbeit",
+        "globale-wirkungsordnung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -11455,7 +11791,10 @@
       ]
     },
     "globale-wirkungsordnung": {
-      "terms": [],
+      "terms": [
+        "internationale-zusammenarbeit",
+        "mensch-planet-demokratie"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -11617,7 +11956,18 @@
         "mensch-planet-demokratie"
       ],
       "documents": [
-        "[object Object]"
+        {
+          "label": "Wirkungsökonomie Glossar",
+          "href": "../../glossar.html"
+        },
+        {
+          "label": "Wirkungsfeld Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        },
+        {
+          "label": "Referenz / Online-Buch",
+          "href": "../../referenz/"
+        }
       ],
       "methods": [],
       "tools": [
@@ -11883,7 +12233,10 @@
       "dataRegisters": []
     },
     "gsbp": {
-      "terms": [],
+      "terms": [
+        "biodiversitaet",
+        "globale-wirkungsordnung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -11988,7 +12341,7 @@
       "terms": [
         "wirkung",
         "wirkungspotenzial",
-        "wirkungspfad",
+        "wirkpfad",
         "wirkungsbewertung",
         "handlungspfad"
       ],
@@ -12066,7 +12419,7 @@
     },
     "handlungspfad": {
       "terms": [
-        "wirkungspfad",
+        "wirkpfad",
         "handlung",
         "folgencheck",
         "wirkungsraum"
@@ -12172,7 +12525,10 @@
       "dataRegisters": []
     },
     "haushaltsblindleistung": {
-      "terms": [],
+      "terms": [
+        "staatsfinanzielle-wirkungsblindheit",
+        "wirkungsdefizit"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -12197,7 +12553,10 @@
       "dataRegisters": []
     },
     "haushaltsverlustleistung": {
-      "terms": [],
+      "terms": [
+        "negative-wirkung",
+        "oeffentliche-netto-wirkung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -12207,7 +12566,10 @@
       "dataRegisters": []
     },
     "haushaltswashing": {
-      "terms": [],
+      "terms": [
+        "wirkungswashing",
+        "haushaltswirkleistung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -12217,7 +12579,10 @@
       "dataRegisters": []
     },
     "haushaltswirkleistung": {
-      "terms": [],
+      "terms": [
+        "positive-netto-wirkung",
+        "oeffentliche-netto-wirkung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -12281,7 +12646,7 @@
       "terms": [
         "hebelwirkung",
         "wirkungsrueckkopplung",
-        "wirkungspfad",
+        "wirkpfad",
         "wirkungssteuer",
         "wirkungslenkung",
         "transformationswirkung",
@@ -12302,7 +12667,7 @@
       "terms": [
         "hebelpunkt",
         "wirkungsrueckkopplung",
-        "wirkungspfad",
+        "wirkpfad",
         "positive-netto-wirkung"
       ],
       "documents": [],
@@ -12360,7 +12725,10 @@
       "dataRegisters": []
     },
     "heizhammer": {
-      "terms": [],
+      "terms": [
+        "kommunale-waermeplanung",
+        "framing"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -12370,7 +12738,10 @@
       "dataRegisters": []
     },
     "heizkostenrisiko": {
-      "terms": [],
+      "terms": [
+        "energetische-sanierung",
+        "energiearmut"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -12717,7 +13088,14 @@
         "cradle-to-cradle"
       ],
       "documents": [
-        "[object Object]",
+        {
+          "label": "Wirkungsökonomie Glossar",
+          "href": "../../glossar.html"
+        },
+        {
+          "label": "Referenz / Online-Buch",
+          "href": "../../referenz/"
+        },
         "die-neue-ordnung-des-wohlstands",
         "systemmodell-der-wirkungsoekonomie",
         "leitbild-mensch-planet-demokratie"
@@ -12868,6 +13246,25 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "hybride-kriegsfuehrung": {
+      "terms": [
+        "desinformation",
+        "resonanzraum",
+        "demokratische-resilienz",
+        "cyberresilienz",
+        "medienvertrauen",
+        "plattformregulierung",
+        "globale-makro-wirkungsrisiken",
+        "wirkungsrisiko"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "hybridregime": {
       "terms": [
         "elektorale-autokratie",
@@ -12935,7 +13332,10 @@
       "dataRegisters": []
     },
     "identitaetsschutz-kognition": {
-      "terms": [],
+      "terms": [
+        "kognitive-dissonanz",
+        "status-threat"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -12962,7 +13362,10 @@
       "dataRegisters": []
     },
     "iea": {
-      "terms": [],
+      "terms": [
+        "energie",
+        "energiesicherheit"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -13036,7 +13439,10 @@
       "dataRegisters": []
     },
     "immobilien": {
-      "terms": [],
+      "terms": [
+        "bestandsimmobilie",
+        "gebaeude-und-immobilienstandards"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -13081,7 +13487,10 @@
       "dataRegisters": []
     },
     "impact-investing": {
-      "terms": [],
+      "terms": [
+        "impact-of-investment",
+        "t-sroi"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -13297,7 +13706,7 @@
       "terms": [
         "greenwashing",
         "sdg-washing",
-        "wirkungspfad",
+        "wirkpfad",
         "datenqualitaet",
         "folgencheck",
         "green-claims-directive",
@@ -13322,10 +13731,9 @@
         "destruktives-narrativ",
         "vertrauensverschiebung",
         "xenophobie",
-        "ingroup-outgroup-dynamik",
         "outgroup-homogenitaet",
         "resonanzraum",
-        "kontakt-hypothese"
+        "kontakthypothese"
       ],
       "documents": [],
       "methods": [],
@@ -13349,7 +13757,10 @@
       "dataRegisters": []
     },
     "industriestrom": {
-      "terms": [],
+      "terms": [
+        "energieinfrastruktur",
+        "energieeffizienz"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -13372,7 +13783,10 @@
       "dataRegisters": []
     },
     "inflationsgrenze": {
-      "terms": [],
+      "terms": [
+        "realressourcengrenze",
+        "mmt"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -13410,6 +13824,23 @@
         "demokratische-oeffentlichkeit",
         "demokratische-resilienz",
         "paltering"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "informationssouveraenitaet": {
+      "terms": [
+        "digitale-selbstbestimmung",
+        "datenschutz",
+        "medienqualitaet",
+        "wirkungsdaten",
+        "grundrechte",
+        "reichweite"
       ],
       "documents": [],
       "methods": [],
@@ -13459,7 +13890,10 @@
       "dataRegisters": []
     },
     "infraschall": {
-      "terms": [],
+      "terms": [
+        "windenergie",
+        "messgrenzen-und-unsicherheit"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -13469,7 +13903,10 @@
       "dataRegisters": []
     },
     "infrastrukturelle-staatsschuld": {
-      "terms": [],
+      "terms": [
+        "investitionsschuld",
+        "nicht-finanzielle-staatsschulden"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -13671,7 +14108,10 @@
       "dataRegisters": []
     },
     "integration-als-infrastruktur": {
-      "terms": [],
+      "terms": [
+        "kommunale-integrationskapazitaet",
+        "soziale-infrastruktur"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -13762,6 +14202,22 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "interdisziplinaritaet": {
+      "terms": [
+        "mensch-planet-demokratie",
+        "wirkungsarchitektur",
+        "wirkungsbewertung",
+        "wirkung",
+        "wissenschaftsfeindlichkeit"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "interessenkonflikt": {
       "terms": [
         "drehtuer-effekt",
@@ -13796,7 +14252,7 @@
       "terms": [
         "rage-bait",
         "empoerungsbewirtschaftung",
-        "plattformlogik",
+        "plattformlogik-und-algorithmen",
         "soziale-ansteckung"
       ],
       "documents": [],
@@ -13904,7 +14360,10 @@
       ]
     },
     "internationale-zusammenarbeit": {
-      "terms": [],
+      "terms": [
+        "globale-oeffentliche-gueter",
+        "globale-wirkungsordnung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -14049,7 +14508,10 @@
       "dataRegisters": []
     },
     "iso": {
-      "terms": [],
+      "terms": [
+        "managementsystemstandards",
+        "datenstandard"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -14467,7 +14929,10 @@
       "dataRegisters": []
     },
     "kapitalzugang": {
-      "terms": [],
+      "terms": [
+        "entwicklungskredit",
+        "wirkungsfonds"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -14522,7 +14987,10 @@
       "dataRegisters": []
     },
     "kausalitaet-und-zurechnung": {
-      "terms": [],
+      "terms": [
+        "wirkungszurechnung",
+        "wirkpfad"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -14875,7 +15343,10 @@
       "dataRegisters": []
     },
     "kinderarbeit": {
-      "terms": [],
+      "terms": [
+        "menschenrechte-in-der-lieferkette",
+        "ilo-kernarbeitsnormen"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -14931,7 +15402,7 @@
     "kipppunkt-systemschwelle": {
       "terms": [
         "wirkungsrisiko",
-        "wirkungspfad",
+        "wirkpfad",
         "wirkungsresilienz"
       ],
       "documents": [],
@@ -14988,7 +15459,10 @@
       "dataRegisters": []
     },
     "klima-und-emissionsstandards": {
-      "terms": [],
+      "terms": [
+        "thg-emissions-scopes",
+        "treibhausgasemissionen"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -15288,7 +15762,10 @@
       "dataRegisters": []
     },
     "kommunale-integrationskapazitaet": {
-      "terms": [],
+      "terms": [
+        "integration-als-infrastruktur",
+        "soziale-infrastruktur"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -15298,7 +15775,10 @@
       "dataRegisters": []
     },
     "kommunale-waermeplanung": {
-      "terms": [],
+      "terms": [
+        "waermewende",
+        "kommunale-energie"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -15337,8 +15817,7 @@
         "wirkpfad",
         "wirkungspotenzial",
         "oeffentlichkeit",
-        "diskurskultur",
-        "wirkungspfad"
+        "diskurskultur"
       ],
       "documents": [],
       "methods": [],
@@ -15349,7 +15828,13 @@
       "dataRegisters": []
     },
     "kommunikative_souveraenitaet": {
-      "terms": [],
+      "terms": [
+        "framekontrolle",
+        "psychologischer_wirkungscheck",
+        "metakommunikation",
+        "reaktanz",
+        "wirkungskommunikation"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -15551,7 +16036,10 @@
       "dataRegisters": []
     },
     "konsumbilanz": {
-      "terms": [],
+      "terms": [
+        "produktwirkung",
+        "territorialbilanz"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -15591,9 +16079,8 @@
     },
     "kontaktschuld": {
       "terms": [
-        "kontaktschuld",
-        "derailing",
-        "ingroup-bias",
+        "derailing-themenverschiebung",
+        "ingroup-outgroup-dynamik",
         "diskursfaehigkeit"
       ],
       "documents": [],
@@ -15643,7 +16130,10 @@
       "dataRegisters": []
     },
     "kontraindikation": {
-      "terms": [],
+      "terms": [
+        "wirkungsrisiko",
+        "rote-linien"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -15653,7 +16143,10 @@
       "dataRegisters": []
     },
     "kontrollbeduerfnis": {
-      "terms": [],
+      "terms": [
+        "ambiguitaetsintoleranz",
+        "risikomanagement"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -15742,7 +16235,10 @@
       "dataRegisters": []
     },
     "kpi": {
-      "terms": [],
+      "terms": [
+        "key-impact-indicator",
+        "impact-controlling"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -15766,7 +16262,10 @@
       "dataRegisters": []
     },
     "kraftwerks-nettoleistung": {
-      "terms": [],
+      "terms": [
+        "gesicherte-leistung",
+        "energieinfrastruktur"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -16049,7 +16548,14 @@
         "cradle-to-cradle"
       ],
       "documents": [
-        "[object Object]",
+        {
+          "label": "Wirkungsökonomie Glossar",
+          "href": "../../glossar.html"
+        },
+        {
+          "label": "Referenz / Online-Buch",
+          "href": "../../referenz/"
+        },
         "die-neue-ordnung-des-wohlstands",
         "systemmodell-der-wirkungsoekonomie",
         "leitbild-mensch-planet-demokratie"
@@ -16242,7 +16748,10 @@
       "dataRegisters": []
     },
     "label": {
-      "terms": [],
+      "terms": [
+        "nachhaltigkeitslabel",
+        "labelwashing"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -16252,7 +16761,10 @@
       "dataRegisters": []
     },
     "labelwashing": {
-      "terms": [],
+      "terms": [
+        "label",
+        "greenwashing"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -16262,7 +16774,10 @@
       "dataRegisters": []
     },
     "laecherlichkeitsframe": {
-      "terms": [],
+      "terms": [
+        "framing",
+        "diskurskultur"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -16272,7 +16787,10 @@
       "dataRegisters": []
     },
     "ladeangst": {
-      "terms": [],
+      "terms": [
+        "ladeinfrastruktur",
+        "ladefenster"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -16296,7 +16814,10 @@
       "dataRegisters": []
     },
     "ladefenster": {
-      "terms": [],
+      "terms": [
+        "dynamischer-stromtarif",
+        "ladeangst"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -16897,6 +17418,23 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "lernende-systeme": {
+      "terms": [
+        "kuenstliche-intelligenz",
+        "wirkungsdaten",
+        "datenqualitaet",
+        "datenschutz",
+        "digitale-selbstbestimmung",
+        "attributionsfehler"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "lernender-unternehmer": {
       "terms": [
         "unternehmerisches-lernen",
@@ -17142,7 +17680,10 @@
       "dataRegisters": []
     },
     "lieferkettenrisiko": {
-      "terms": [],
+      "terms": [
+        "lieferkettenwirkung",
+        "menschenrechte-in-der-lieferkette"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -17326,7 +17867,10 @@
       "dataRegisters": []
     },
     "living-wage": {
-      "terms": [],
+      "terms": [
+        "sozial-arbeits-und-menschenrechtsstandards",
+        "lohnabstand"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -17407,7 +17951,10 @@
       "dataRegisters": []
     },
     "lock-in-effekt": {
-      "terms": [],
+      "terms": [
+        "pfadabhaengigkeit",
+        "verbrenner-lock-in"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -17417,7 +17964,10 @@
       "dataRegisters": []
     },
     "lohnabstand": {
-      "terms": [],
+      "terms": [
+        "arbeitsanreiz",
+        "sozialabgaben"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -17458,16 +18008,6 @@
       "documents": [
         "die-neue-ordnung-des-wohlstands"
       ],
-      "methods": [],
-      "tools": [],
-      "demos": [],
-      "impactFields": [],
-      "academyModules": [],
-      "dataRegisters": []
-    },
-    "oeffentlichkeit-als-wirkungsraum": {
-      "terms": [],
-      "documents": [],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -17682,7 +18222,10 @@
       "dataRegisters": []
     },
     "managementsystemstandards": {
-      "terms": [],
+      "terms": [
+        "iso",
+        "risikomanagement"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -18088,6 +18631,23 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "medienvertrauen": {
+      "terms": [
+        "medienqualitaet",
+        "medienfreiheit",
+        "reichweite",
+        "diskursqualitaet",
+        "faktencheck",
+        "wirkung"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "megawatt-charging-system": {
       "terms": [
         "depotladen",
@@ -18103,7 +18663,10 @@
       "dataRegisters": []
     },
     "megawattladen": {
-      "terms": [],
+      "terms": [
+        "schnellladen",
+        "ladeinfrastruktur"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -18196,7 +18759,10 @@
       "dataRegisters": []
     },
     "menschenrechte-in-der-lieferkette": {
-      "terms": [],
+      "terms": [
+        "kinderarbeit",
+        "lieferkettenrisiko"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -18262,7 +18828,12 @@
       "terms": [
         "grenzkosten",
         "grenzkraftwerk",
-        "strommarkt"
+        "strommarkt",
+        "strommarktdesign",
+        "systemkosten",
+        "regelenergie",
+        "externalitaet",
+        "reverse-merit-order"
       ],
       "documents": [],
       "methods": [],
@@ -18543,7 +19114,10 @@
       "dataRegisters": []
     },
     "misalignment-year": {
-      "terms": [],
+      "terms": [
+        "crrem",
+        "klimaneutralitaet"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -18604,7 +19178,10 @@
       "dataRegisters": []
     },
     "mmt": {
-      "terms": [],
+      "terms": [
+        "endogenes-geld",
+        "functional-finance"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -18746,11 +19323,35 @@
         "cradle-to-cradle"
       ],
       "documents": [
-        "[object Object]",
+        {
+          "label": "Wirkungsökonomie Glossar",
+          "href": "../../glossar.html"
+        },
+        {
+          "label": "Referenz / Online-Buch",
+          "href": "../../referenz/"
+        },
         "die-neue-ordnung-des-wohlstands",
         "systemmodell-der-wirkungsoekonomie",
         "leitbild-mensch-planet-demokratie"
       ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "moderationsstandards": {
+      "terms": [
+        "plattformregulierung",
+        "datenschutz",
+        "digitale-selbstbestimmung",
+        "grundrechte",
+        "diskursqualitaet",
+        "reichweite"
+      ],
+      "documents": [],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -18796,7 +19397,10 @@
       "dataRegisters": []
     },
     "molekuel-hierarchie": {
-      "terms": [],
+      "terms": [
+        "wasserstoff-hierarchie",
+        "energieeffizienz"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -18819,7 +19423,10 @@
       "dataRegisters": []
     },
     "monetaere-souveraenitaet": {
-      "terms": [],
+      "terms": [
+        "endogenes-geld",
+        "mmt"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -18905,7 +19512,7 @@
         "angstappell",
         "suendenbockmechanismus",
         "verfuegbarkeitsheuristik",
-        "false-urgency"
+        "false-urgency-kuenstliche-dringlichkeit"
       ],
       "documents": [],
       "methods": [],
@@ -18972,7 +19579,10 @@
       "dataRegisters": []
     },
     "msci-esg-ratings": {
-      "terms": [],
+      "terms": [
+        "esg-rating",
+        "sustainability-benchmarking"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -19042,7 +19652,6 @@
         "eu-taxonomie",
         "stranded-assets",
         "sechster-kondratieff",
-        "nachhaltigkeit",
         "resilienz",
         "systemresilienz",
         "sdgs",
@@ -19249,7 +19858,10 @@
       "dataRegisters": []
     },
     "natur-landwirtschafts-und-biodiversitaetsstandards": {
-      "terms": [],
+      "terms": [
+        "biodiversitaet",
+        "regenerative-landwirtschaft"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -19293,7 +19905,7 @@
         "habitatfragmentierung",
         "habitatverlust",
         "ipbes",
-        "oekosystemleistungen"
+        "oekosystemleistungen-oekosystemfunktionen"
       ],
       "documents": [],
       "methods": [],
@@ -19334,7 +19946,10 @@
       "dataRegisters": []
     },
     "nebenwirkung": {
-      "terms": [],
+      "terms": [
+        "folgewirkung",
+        "wirkungsrisiko"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -19453,7 +20068,10 @@
       "dataRegisters": []
     },
     "neoklassische-foerderlogik": {
-      "terms": [],
+      "terms": [
+        "foerderlogik",
+        "wirkungsfinanzierung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -19550,7 +20168,18 @@
         "datenqualitaet"
       ],
       "documents": [
-        "[object Object]"
+        {
+          "label": "Die neue Ordnung des Wohlstands",
+          "href": "../../referenz/"
+        },
+        {
+          "label": "Grundlagenpapier Wirkungsökonomie",
+          "href": "../../dokumente/grundlagenpapier-wirkungsoekonomie-woek/"
+        },
+        {
+          "label": "Leitbild Mensch, Planet und Demokratie",
+          "href": "../../dokumente/leitbild-mensch-planet-demokratie/"
+        }
       ],
       "methods": [],
       "tools": [
@@ -19610,7 +20239,10 @@
       "dataRegisters": []
     },
     "nettokreditaufnahme": {
-      "terms": [],
+      "terms": [
+        "bruttokreditaufnahme",
+        "refinanzierung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -20093,7 +20725,7 @@
         "zielkonflikt",
         "biodiversity-net-gain-no-net-loss",
         "carbon-credits",
-        "dnsh",
+        "dnsh-do-no-significant-harm",
         "forced-labour-regulation",
         "offsetting-kompensation",
         "social-taxonomy",
@@ -20203,7 +20835,10 @@
       "dataRegisters": []
     },
     "nie-eingezahlt-narrativ": {
-      "terms": [],
+      "terms": [
+        "sozialstaats-suendenbock",
+        "erwerbsarbeitslogik"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -20299,7 +20934,10 @@
       "dataRegisters": []
     },
     "no-regret-anwendung": {
-      "terms": [],
+      "terms": [
+        "wirkungsrisikomanagement",
+        "vorsorgeprinzip"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -20426,8 +21064,6 @@
         "sdg-plus",
         "sdgs",
         "agenda-2030",
-        "voelkerrecht-und-menschenrechte",
-        "europaeisches-primaerrecht-und-grundrechte",
         "staatsziele-und-verfassungsauftraege",
         "grundgesetz",
         "rechtsstaatlichkeit",
@@ -20443,7 +21079,10 @@
       "dataRegisters": []
     },
     "normativer-massstab": {
-      "terms": [],
+      "terms": [
+        "sdg-sdgplus-referenzrahmen",
+        "wirkungsbewertung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -20512,7 +21151,10 @@
       "dataRegisters": []
     },
     "nullsummenfehler": {
-      "terms": [],
+      "terms": [
+        "interdependenz",
+        "wohlstand-als-systemzustand"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -20612,7 +21254,10 @@
       "dataRegisters": []
     },
     "oecd": {
-      "terms": [],
+      "terms": [
+        "oecd-leitsaetze",
+        "wellbeing-economy"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -20722,7 +21367,10 @@
       "dataRegisters": []
     },
     "oeffentliche-finanzen-schulden-und-wirkung": {
-      "terms": [],
+      "terms": [
+        "wirkungsfinanzierung",
+        "oeffentliche-netto-wirkung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -20749,7 +21397,10 @@
       "dataRegisters": []
     },
     "oeffentliche-netto-wirkung": {
-      "terms": [],
+      "terms": [
+        "netto-wirkung",
+        "mensch-planet-demokratie"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -20935,6 +21586,29 @@
         "oeffentliche-wahrheit"
       ],
       "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "oeffentlichkeit-als-wirkungsraum": {
+      "terms": [
+        "resonanzraum",
+        "wirkungspotenzial",
+        "wirkpfad",
+        "wirkmechanismus",
+        "diskursfaehigkeit",
+        "informationsintegritaet",
+        "demokratie"
+      ],
+      "documents": [
+        {
+          "label": "Öffentlicher Wirkungsraum",
+          "href": "../../oeffentlicher-wirkungsraum/"
+        }
+      ],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -21410,7 +22084,6 @@
         "walter-eucken",
         "wirkungsrecht",
         "rechtsstaatlichkeit",
-        "ordoliberalismus",
         "wettbewerb-als-suchverfahren",
         "wirkungsstaat"
       ],
@@ -21507,7 +22180,10 @@
       "dataRegisters": []
     },
     "outcome": {
-      "terms": [],
+      "terms": [
+        "output",
+        "wirkung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -21568,7 +22244,10 @@
       "dataRegisters": []
     },
     "output": {
-      "terms": [],
+      "terms": [
+        "outcome",
+        "wirkung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -21961,6 +22640,26 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "personenbewertung": {
+      "terms": [
+        "social-credit",
+        "wirkungspunkte",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "datenschutz",
+        "grundrechte",
+        "verhaeltnismaessigkeit",
+        "rechtsschutz"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "pessimismus-bias": {
       "terms": [
         "negativitaetsbias",
@@ -22295,7 +22994,10 @@
       "dataRegisters": []
     },
     "planet": {
-      "terms": [],
+      "terms": [
+        "biodiversitaet",
+        "planetare-grenzen"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -22354,7 +23056,10 @@
       "dataRegisters": []
     },
     "platform-on-sustainable-finance": {
-      "terms": [],
+      "terms": [
+        "eu-taxonomie",
+        "taxonomy-compass"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -22523,11 +23228,35 @@
         "cradle-to-cradle"
       ],
       "documents": [
-        "[object Object]",
+        {
+          "label": "Wirkungsökonomie Glossar",
+          "href": "../../glossar.html"
+        },
+        {
+          "label": "Referenz / Online-Buch",
+          "href": "../../referenz/"
+        },
         "die-neue-ordnung-des-wohlstands",
         "systemmodell-der-wirkungsoekonomie",
         "leitbild-mensch-planet-demokratie"
       ],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "plattformregulierung": {
+      "terms": [
+        "moderationsstandards",
+        "datenschutz",
+        "digitale-selbstbestimmung",
+        "grundrechte",
+        "plattformlogik-und-algorithmen",
+        "diskursqualitaet"
+      ],
+      "documents": [],
       "methods": [],
       "tools": [],
       "demos": [],
@@ -23062,7 +23791,18 @@
         "verstehen/sdgs-sdgplus/risiko-resilienzregister/",
         "blog/das-managementmodell-der-zukunft/",
         "sdg-sdgplus-referenzrahmen",
-        "[object Object]",
+        {
+          "label": "Die neue Ordnung des Wohlstands",
+          "href": "../../referenz/"
+        },
+        {
+          "label": "Grundlagenpapier Wirkungsökonomie",
+          "href": "../../dokumente/grundlagenpapier-wirkungsoekonomie-woek/"
+        },
+        {
+          "label": "Leitbild Mensch, Planet und Demokratie",
+          "href": "../../dokumente/leitbild-mensch-planet-demokratie/"
+        },
         "impact-strategie-controlling-marketing-management-einkauf-chemieindustrie"
       ],
       "methods": [],
@@ -23204,7 +23944,10 @@
       "dataRegisters": []
     },
     "praevention-als-wirkleistung": {
-      "terms": [],
+      "terms": [
+        "praevention",
+        "folgekostenvermeidung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -23410,7 +24153,10 @@
       "dataRegisters": []
     },
     "privathaushaltsmythos": {
-      "terms": [],
+      "terms": [
+        "mmt",
+        "privatkredit-frame"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -23435,7 +24181,10 @@
       "dataRegisters": []
     },
     "privatkredit-frame": {
-      "terms": [],
+      "terms": [
+        "privathaushaltsmythos",
+        "monetaere-souveraenitaet"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -23587,7 +24336,10 @@
       "dataRegisters": []
     },
     "produkt-umwelt-und-kreislauflabels": {
-      "terms": [],
+      "terms": [
+        "label",
+        "produktwirkung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -23648,7 +24400,18 @@
         "mensch-planet-demokratie"
       ],
       "documents": [
-        "[object Object]"
+        {
+          "label": "Wirkungsökonomie Glossar",
+          "href": "../../glossar.html"
+        },
+        {
+          "label": "Wirkungsfeld Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        },
+        {
+          "label": "Referenz / Online-Buch",
+          "href": "../../referenz/"
+        }
       ],
       "methods": [],
       "tools": [
@@ -23806,7 +24569,18 @@
         "datenqualitaet"
       ],
       "documents": [
-        "[object Object]"
+        {
+          "label": "Die neue Ordnung des Wohlstands",
+          "href": "../../referenz/"
+        },
+        {
+          "label": "Technische Leitlinien WUStG",
+          "href": "../../dokumente/technische-leitlinien-wustg-v2/"
+        },
+        {
+          "label": "Wirkungsfeld Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        }
       ],
       "methods": [],
       "tools": [
@@ -23869,7 +24643,18 @@
         "kreislaufwirtschaft"
       ],
       "documents": [
-        "[object Object]"
+        {
+          "label": "Die neue Ordnung des Wohlstands",
+          "href": "../../referenz/"
+        },
+        {
+          "label": "Technische Leitlinien WUStG",
+          "href": "../../dokumente/technische-leitlinien-wustg-v2/"
+        },
+        {
+          "label": "Wirkungsfeld Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        }
       ],
       "methods": [],
       "tools": [
@@ -23971,8 +24756,8 @@
     },
     "projektions-bias": {
       "terms": [
-        "false-consensus",
-        "ingroup-bias",
+        "false-consensus-effect",
+        "ingroup-outgroup-dynamik",
         "partizipation",
         "wirkungsempfaenger"
       ],
@@ -24113,7 +24898,13 @@
       "dataRegisters": []
     },
     "psychologischer_wirkungscheck": {
-      "terms": [],
+      "terms": [
+        "debiasing",
+        "resonanzprofil",
+        "framing",
+        "reaktanz",
+        "sprachlicher-trigger"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -24123,7 +24914,13 @@
       "dataRegisters": []
     },
     "psychologisches_stoeckchen": {
-      "terms": [],
+      "terms": [
+        "sprachlicher-trigger",
+        "psychologischer_wirkungscheck",
+        "framing",
+        "derailing-themenverschiebung",
+        "reaktanz"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -24133,7 +24930,10 @@
       "dataRegisters": []
     },
     "ptl-kraftstoff": {
-      "terms": [],
+      "terms": [
+        "elektrolyse",
+        "wasserstoff"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -24157,7 +24957,10 @@
       "dataRegisters": []
     },
     "public-purpose": {
-      "terms": [],
+      "terms": [
+        "public-purpose-finance",
+        "oeffentliche-netto-wirkung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -24167,7 +24970,10 @@
       "dataRegisters": []
     },
     "public-purpose-finance": {
-      "terms": [],
+      "terms": [
+        "public-purpose",
+        "wirkungsfinanzierung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -24290,7 +25096,10 @@
       "dataRegisters": []
     },
     "qualifikationsverlust": {
-      "terms": [],
+      "terms": [
+        "weiterbildung",
+        "uebergangstaetigkeit"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -24753,7 +25562,10 @@
       "dataRegisters": []
     },
     "reach": {
-      "terms": [],
+      "terms": [
+        "hazardous-substances",
+        "materialgesundheit"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -24818,7 +25630,10 @@
       "dataRegisters": []
     },
     "realressourcengrenze": {
-      "terms": [],
+      "terms": [
+        "inflationsgrenze",
+        "wirkungsspielraum"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -25192,7 +26007,7 @@
     },
     "red-herring": {
       "terms": [
-        "derailing",
+        "derailing-themenverschiebung",
         "whataboutism",
         "strohmann",
         "wirkungsbewertung"
@@ -25271,7 +26086,10 @@
       "dataRegisters": []
     },
     "refinanzierung": {
-      "terms": [],
+      "terms": [
+        "bruttokreditaufnahme",
+        "nettokreditaufnahme"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -25346,12 +26164,11 @@
         "wirkungswahrheit",
         "wirkungsrueckkopplung",
         "positive-netto-wirkung",
-        "wirkungspfad",
+        "wirkpfad",
         "resonanzraum",
         "wirkungspotenzial",
         "wirkungsrisiko",
-        "agenda-setting",
-        "wirkpfad"
+        "agenda-setting"
       ],
       "documents": [
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
@@ -25378,7 +26195,10 @@
       "dataRegisters": []
     },
     "regelbasierte-ordnung": {
-      "terms": [],
+      "terms": [
+        "rechtsstaatlichkeit",
+        "globale-wirkungsordnung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -25470,7 +26290,6 @@
         "neukombination",
         "kreislaufwirtschaft",
         "positive-netto-wirkung",
-        "regeneratives-wachstum",
         "planetare-grenzen"
       ],
       "documents": [],
@@ -25577,6 +26396,23 @@
         "regulatory-capture",
         "wirkungssteuer",
         "deregulierung"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "reichweite": {
+      "terms": [
+        "wirkung",
+        "wirkungspotenzial",
+        "medienqualitaet",
+        "medienvertrauen",
+        "wirkungsdaten",
+        "wirkungsbewertung"
       ],
       "documents": [],
       "methods": [],
@@ -25759,7 +26595,10 @@
       "dataRegisters": []
     },
     "reparaturwohlstand": {
-      "terms": [],
+      "terms": [
+        "reparierbarkeit-recht-auf-reparatur",
+        "circular-economy"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -25790,6 +26629,25 @@
         "digitaler-produktpass",
         "produktdaten",
         "positive-netto-wirkung"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "reporting": {
+      "terms": [
+        "berichtsdaten",
+        "wirkungsdaten",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "datenqualitaet",
+        "wirkung",
+        "wirkungspotenzial"
       ],
       "documents": [],
       "methods": [],
@@ -25953,7 +26811,6 @@
         "vertrauen",
         "sechster-kondratieff",
         "nachhaltigkeit",
-        "resilienz",
         "systemresilienz",
         "wirkungsrueckkopplung",
         "positive-netto-wirkung",
@@ -26132,7 +26989,7 @@
       "terms": [
         "resonanzraum",
         "wirkungsraum",
-        "wirkungspfad",
+        "wirkpfad",
         "wirkungsarchitektur",
         "wirkungsorientiertes-hosting"
       ],
@@ -26147,7 +27004,10 @@
       "dataRegisters": []
     },
     "resonanzprofil": {
-      "terms": [],
+      "terms": [
+        "resonanzraum",
+        "psychologischer_wirkungscheck"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -26326,7 +27186,7 @@
         "planetare-grenzen",
         "zielkonflikt",
         "biodiversity-net-gain-no-net-loss",
-        "dnsh",
+        "dnsh-do-no-significant-harm",
         "finalscore",
         "greenwashing",
         "haushaltsneutralitaet",
@@ -26373,7 +27233,18 @@
       "documents": [
         "technische-leitlinien-wustg",
         "beispiel-apfel-wirkungssteuer",
-        "[object Object]",
+        {
+          "label": "Die neue Ordnung des Wohlstands",
+          "href": "../../referenz/"
+        },
+        {
+          "label": "Technische Leitlinien WUStG",
+          "href": "../../dokumente/technische-leitlinien-wustg-v2/"
+        },
+        {
+          "label": "Wirkungsfeld Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        },
         "impact-strategie-controlling-marketing-management-einkauf-chemieindustrie"
       ],
       "methods": [],
@@ -26477,7 +27348,7 @@
         "wirkungsresilienz",
         "risikomanagement",
         "wirkungsdaten",
-        "wirkungspfad"
+        "wirkpfad"
       ],
       "documents": [
         "verstehen/sdgs-sdgplus/risiko-resilienzregister/",
@@ -26494,7 +27365,10 @@
       "dataRegisters": []
     },
     "risikomanagement": {
-      "terms": [],
+      "terms": [
+        "erm",
+        "wirkungsrisikomanagement"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -26540,7 +27414,10 @@
       "dataRegisters": []
     },
     "rmo": {
-      "terms": [],
+      "terms": [
+        "reverse-merit-order",
+        "nichtkompensationsprinzip"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -26743,7 +27620,10 @@
       "dataRegisters": []
     },
     "roi": {
-      "terms": [],
+      "terms": [
+        "impact-of-investment",
+        "t-sroi"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -26753,7 +27633,10 @@
       "dataRegisters": []
     },
     "rote-linien": {
-      "terms": [],
+      "terms": [
+        "nichtkompensationsprinzip",
+        "wirkungsgrenze"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -26818,7 +27701,10 @@
       "dataRegisters": []
     },
     "rueckbaupflicht": {
-      "terms": [],
+      "terms": [
+        "rueckbaustandard",
+        "kreislauffaehigkeit"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -26877,7 +27763,7 @@
         "wirkungsarchitektur",
         "wirkungsblindheit",
         "wirkungslenkung",
-        "wirkungspfad",
+        "wirkpfad",
         "wu-wei",
         "demokratische-rueckkopplung",
         "wirkungshaushalt",
@@ -27067,7 +27953,10 @@
       "dataRegisters": []
     },
     "sachleistung": {
-      "terms": [],
+      "terms": [
+        "daseinsvorsorge",
+        "soziale-infrastruktur"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -27128,7 +28017,10 @@
       "dataRegisters": []
     },
     "sanierungsfahrplan": {
-      "terms": [],
+      "terms": [
+        "energetische-sanierung",
+        "bestandsimmobilie"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -27311,7 +28203,10 @@
       "dataRegisters": []
     },
     "scheinwohlstand": {
-      "terms": [],
+      "terms": [
+        "vorgriffswohlstand",
+        "externalitaeten"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -27334,7 +28229,10 @@
       "dataRegisters": []
     },
     "schnellladepark": {
-      "terms": [],
+      "terms": [
+        "ladepark",
+        "ladeinfrastruktur"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -27419,7 +28317,10 @@
       "dataRegisters": []
     },
     "schuldenmythos": {
-      "terms": [],
+      "terms": [
+        "privathaushaltsmythos",
+        "mmt"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -27490,7 +28391,7 @@
         "grundrechte",
         "rechtsstaatlichkeit",
         "demokratische-resilienz",
-        "wirkungspfad"
+        "wirkpfad"
       ],
       "documents": [],
       "methods": [],
@@ -27528,7 +28429,10 @@
       "dataRegisters": []
     },
     "schwarze-null": {
-      "terms": [],
+      "terms": [
+        "schuldenbremse",
+        "nettokreditaufnahme"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -27939,8 +28843,7 @@
       "terms": [
         "moving-the-goalposts",
         "gish-galopp",
-        "derailing",
-        "moderation"
+        "derailing-themenverschiebung"
       ],
       "documents": [],
       "methods": [],
@@ -28286,7 +29189,10 @@
       "dataRegisters": []
     },
     "sicherheits-t-sroi": {
-      "terms": [],
+      "terms": [
+        "t-sroi",
+        "sicherheitsresilienz"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -28296,7 +29202,10 @@
       "dataRegisters": []
     },
     "sicherheitspolitische-staatsschuld": {
-      "terms": [],
+      "terms": [
+        "nicht-finanzielle-staatsschulden",
+        "sicherheitsresilienz"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -28306,7 +29215,10 @@
       "dataRegisters": []
     },
     "sicherheitsresilienz": {
-      "terms": [],
+      "terms": [
+        "verteidigungsfaehigkeit",
+        "cyberresilienz"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -28369,7 +29281,7 @@
     "slippery-slope-dammbruchargument": {
       "terms": [
         "angstappell",
-        "false-urgency",
+        "false-urgency-kuenstliche-dringlichkeit",
         "framing",
         "wirkungsrisiko"
       ],
@@ -28458,10 +29370,15 @@
     },
     "social-credit": {
       "terms": [
+        "personenbewertung",
         "wirkungspunkte",
-        "wirkungswahrheit",
-        "wirkungsrat",
-        "social-taxonomy"
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "datenschutz",
+        "grundrechte",
+        "rechtsschutz",
+        "verhaeltnismaessigkeit"
       ],
       "documents": [
         "schutzrahmen-personenbewertung"
@@ -28474,7 +29391,10 @@
       "dataRegisters": []
     },
     "social-economy": {
-      "terms": [],
+      "terms": [
+        "solidaritaet",
+        "genossenschaft"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -28599,7 +29519,10 @@
       "dataRegisters": []
     },
     "sozial-arbeits-und-menschenrechtsstandards": {
-      "terms": [],
+      "terms": [
+        "ilo-kernarbeitsnormen",
+        "living-wage"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -28682,7 +29605,7 @@
         "echokammer",
         "filterblase",
         "resonanzraum",
-        "kontakt-hypothese"
+        "kontakthypothese"
       ],
       "documents": [],
       "methods": [],
@@ -28820,7 +29743,10 @@
       "dataRegisters": []
     },
     "soziale-staatsschuld": {
-      "terms": [],
+      "terms": [
+        "nicht-finanzielle-staatsschulden",
+        "soziale-infrastruktur"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -28932,7 +29858,10 @@
       "dataRegisters": []
     },
     "sozialstaats-suendenbock": {
-      "terms": [],
+      "terms": [
+        "sozialstaatsprinzip",
+        "narrativ"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -28956,7 +29885,10 @@
       "dataRegisters": []
     },
     "sozialtourismus-frame": {
-      "terms": [],
+      "terms": [
+        "sozialstaats-suendenbock",
+        "framing"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -29001,7 +29933,7 @@
     },
     "spekulationslogik": {
       "terms": [
-        "wirkungspflicht-des-eigentums",
+        "wirkungspflicht-eigentum",
         "stranded-assets"
       ],
       "documents": [
@@ -29105,7 +30037,10 @@
       "dataRegisters": []
     },
     "sroi": {
-      "terms": [],
+      "terms": [
+        "t-sroi",
+        "impact-of-investment"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -29252,7 +30187,10 @@
       "dataRegisters": []
     },
     "staatsfinanzielle-wirkungsblindheit": {
-      "terms": [],
+      "terms": [
+        "oeffentliche-finanzen-schulden-und-wirkung",
+        "oeffentliche-netto-wirkung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -29587,7 +30525,10 @@
       "dataRegisters": []
     },
     "standortscorecard": {
-      "terms": [],
+      "terms": [
+        "scorecard",
+        "standortwirkung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -29597,7 +30538,10 @@
       "dataRegisters": []
     },
     "standortwirkung": {
-      "terms": [],
+      "terms": [
+        "standortscorecard",
+        "wirkungsfeld"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -29671,7 +30615,10 @@
       "dataRegisters": []
     },
     "status-threat": {
-      "terms": [],
+      "terms": [
+        "identitaetsschutz-kognition",
+        "status-quo-bias"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -29700,7 +30647,10 @@
       "dataRegisters": []
     },
     "steuergeld-frame": {
-      "terms": [],
+      "terms": [
+        "privathaushaltsmythos",
+        "oeffentliche-finanzen-schulden-und-wirkung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -29747,7 +30697,10 @@
       "dataRegisters": []
     },
     "steward-ownership": {
-      "terms": [],
+      "terms": [
+        "eigentum-verpflichtet",
+        "eigentumsverantwortung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -29889,7 +30842,7 @@
       "terms": [
         "normatives-management",
         "operatives-management",
-        "wirkungspfad",
+        "wirkpfad",
         "st-galler-management-modell"
       ],
       "documents": [],
@@ -30108,7 +31061,7 @@
         "nichttriviales-system",
         "resonanzraum",
         "anschlussfaehigkeit",
-        "wirkungspfad",
+        "wirkpfad",
         "transformationswirkung",
         "nichttriviale-maschine",
         "selbstreferenz",
@@ -30255,7 +31208,7 @@
     "superposition": {
       "terms": [
         "wirkungspotenzial",
-        "wirkungspfad",
+        "wirkpfad",
         "wirkungsrisiko",
         "handlungsmoeglichkeiten"
       ],
@@ -30367,7 +31320,10 @@
       "dataRegisters": []
     },
     "sustainability-benchmarking": {
-      "terms": [],
+      "terms": [
+        "benchmark",
+        "esg-rating"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -30440,7 +31396,10 @@
       "dataRegisters": []
     },
     "sustainalytics": {
-      "terms": [],
+      "terms": [
+        "esg-rating",
+        "sustainability-benchmarking"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -30450,7 +31409,10 @@
       "dataRegisters": []
     },
     "symbolausgabe": {
-      "terms": [],
+      "terms": [
+        "haushaltsblindleistung",
+        "haushaltswashing"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -30461,7 +31423,6 @@
     },
     "sympathie-verzerrung": {
       "terms": [
-        "sympathie-verzerrung",
         "halo-effekt",
         "autoritaetsbias",
         "wirkungsaudit"
@@ -30596,8 +31557,7 @@
         "systemresilienz",
         "wirkungsrisiko",
         "wirkungsresilienz",
-        "outside-in",
-        "inside-out",
+        "inside-out-outside-in",
         "rueckkopplung"
       ],
       "documents": [
@@ -30711,7 +31671,6 @@
         "positive-netto-wirkung",
         "demokratische-resilienz",
         "nachhaltigkeit",
-        "systemresilienz",
         "wirkungsrueckkopplung",
         "supply-chain-resilienz",
         "globale-resilienz",
@@ -30888,7 +31847,10 @@
       "dataRegisters": []
     },
     "tankstellenlogik": {
-      "terms": [],
+      "terms": [
+        "ladeangst",
+        "ladeinfrastruktur"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -30912,7 +31874,10 @@
       "dataRegisters": []
     },
     "target-gain": {
-      "terms": [],
+      "terms": [
+        "wirkungsziele-und-impact-okr",
+        "benchmark"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -30969,7 +31934,7 @@
     "taxonomiekonformitaet": {
       "terms": [
         "eu-taxonomie",
-        "dnsh",
+        "dnsh-do-no-significant-harm",
         "mindestschutz-minimum-safeguards",
         "technische-bewertungskriterien",
         "taxonomy-kpis",
@@ -30985,7 +31950,10 @@
       "dataRegisters": []
     },
     "taxonomy-compass": {
-      "terms": [],
+      "terms": [
+        "eu-taxonomie",
+        "technische-bewertungskriterien"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -31061,7 +32029,7 @@
         "eu-taxonomie",
         "taxonomy-navigator",
         "taxonomiekonformitaet",
-        "dnsh",
+        "dnsh-do-no-significant-harm",
         "wesentlicher-beitrag"
       ],
       "documents": [],
@@ -31188,7 +32156,10 @@
       "dataRegisters": []
     },
     "technologiereifegrad": {
-      "terms": [],
+      "terms": [
+        "technologieoffenheit",
+        "no-regret-anwendung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -31244,7 +32215,10 @@
       "dataRegisters": []
     },
     "territorialbilanz": {
-      "terms": [],
+      "terms": [
+        "konsumbilanz",
+        "bilanzgrenze"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -31297,7 +32271,10 @@
       "dataRegisters": []
     },
     "thermischer-strompfad": {
-      "terms": [],
+      "terms": [
+        "waermepumpe",
+        "energieeffizienz"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -31322,7 +32299,10 @@
       "dataRegisters": []
     },
     "thg": {
-      "terms": [],
+      "terms": [
+        "treibhausgasemissionen",
+        "klima-und-emissionsstandards"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -31432,7 +32412,10 @@
       "dataRegisters": []
     },
     "tiere": {
-      "terms": [],
+      "terms": [
+        "tierschutz-und-tierwohl",
+        "biodiversitaet"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -31497,7 +32480,7 @@
     },
     "tone-policing": {
       "terms": [
-        "derailing",
+        "derailing-themenverschiebung",
         "soziale-sanktionierung",
         "diskursfaehigkeit",
         "betroffenenperspektive"
@@ -31675,12 +32658,11 @@
     },
     "transformationsbonus": {
       "terms": [
-        "uebergangsschutz",
         "weiterbildung",
         "automatisierung",
         "wirkungsfonds",
         "wirkungseinkommen",
-        "transformationsrente",
+        "wirkungsrente",
         "maschinenleistungsrueckkopplung"
       ],
       "documents": [
@@ -31932,51 +32914,33 @@
     },
     "transformationswirkung": {
       "terms": [
-        "wirkungsinnovation",
-        "transformationswelle",
-        "strukturdeterminiertheit",
-        "diffusion",
-        "hebelpunkt",
-        "pfadabhaengigkeit",
-        "t-sroi",
-        "verlustaversion",
         "wirkung",
         "wirkungspotenzial",
         "wirkungsrisiko",
-        "wirkmechanismus",
-        "wirkungstraeger",
-        "wirkungsempfaenger",
-        "wirkungsraum",
-        "wirkungsbewertung",
         "netto-wirkung",
         "positive-netto-wirkung",
-        "wirkungslenkung",
+        "wirkungsbewertung",
         "wirkungsrueckkopplung",
-        "wirkungsarchitektur",
-        "wirkungswahrheit",
-        "wirkungsblindheit",
-        "wirkungsgrenze",
-        "mensch-planet-demokratie",
-        "sdgs",
-        "agenda-2030",
-        "sdg-plus",
-        "woek-id",
-        "produktscorecard",
-        "reverse-merit-order",
-        "nwi",
-        "wirkungshaushalt",
-        "wirkungssteuer",
-        "wirkungsrat",
-        "produktwirkung",
-        "digitaler-produktpass",
-        "produktdaten",
-        "responsible-marketing",
-        "greenwashing",
-        "fuenftes-p-planet",
-        "impact-strategie"
+        "wirkungslenkung",
+        "t-sroi",
+        "wirkpfad",
+        "systemgrenze",
+        "datenqualitaet",
+        "nichtkompensationsprinzip"
       ],
       "documents": [
-        "[object Object]",
+        {
+          "label": "Die neue Ordnung des Wohlstands",
+          "href": "../../referenz/"
+        },
+        {
+          "label": "Grundlagenpapier Wirkungsökonomie",
+          "href": "../../dokumente/grundlagenpapier-wirkungsoekonomie-woek/"
+        },
+        {
+          "label": "Leitbild Mensch, Planet und Demokratie",
+          "href": "../../dokumente/leitbild-mensch-planet-demokratie/"
+        },
         "impact-strategie-controlling-marketing-management-einkauf-chemieindustrie"
       ],
       "methods": [],
@@ -32324,7 +33288,10 @@
       "dataRegisters": []
     },
     "uebergabestation": {
-      "terms": [],
+      "terms": [
+        "verteilnetz",
+        "energieinfrastruktur"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -32334,7 +33301,10 @@
       "dataRegisters": []
     },
     "uebergangstaetigkeit": {
-      "terms": [],
+      "terms": [
+        "qualifikationsverlust",
+        "weiterbildung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -32344,7 +33314,10 @@
       "dataRegisters": []
     },
     "uebertragungsnetz": {
-      "terms": [],
+      "terms": [
+        "stromnetz",
+        "verteilnetz"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -32354,7 +33327,10 @@
       "dataRegisters": []
     },
     "ueberwachungskapitalismus": {
-      "terms": [],
+      "terms": [
+        "digitale-selbstbestimmung",
+        "datenschutz"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -32908,7 +33884,10 @@
       "dataRegisters": []
     },
     "unternehmens-impact-und-governance-frameworks": {
-      "terms": [],
+      "terms": [
+        "wirkungsgovernance",
+        "managementsystemstandards"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -33105,7 +34084,7 @@
         "impact-fit",
         "persona",
         "design-thinking",
-        "wirkungspfad",
+        "wirkpfad",
         "reverse-merit-order"
       ],
       "documents": [],
@@ -33208,7 +34187,7 @@
     "verantwortungsverkuerzung": {
       "terms": [
         "wirkung",
-        "wirkungspfad",
+        "wirkpfad",
         "wirkungspotenzial",
         "wirkungsrisiko",
         "wirkungsblindheit",
@@ -33606,6 +34585,24 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "verschwoerungserzaehlung": {
+      "terms": [
+        "desinformation",
+        "faktencheck",
+        "wissenschaftsfeindlichkeit",
+        "polarisierung",
+        "echokammer",
+        "diskursqualitaet",
+        "wirkungsrisiko"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "versicherbarkeit": {
       "terms": [
         "kapitalwirkung",
@@ -33765,7 +34762,10 @@
       "dataRegisters": []
     },
     "verteidigungsfaehigkeit": {
-      "terms": [],
+      "terms": [
+        "sicherheitsresilienz",
+        "sicherheitspolitische-staatsschuld"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -33963,7 +34963,10 @@
       "dataRegisters": []
     },
     "vlop": {
-      "terms": [],
+      "terms": [
+        "dsa",
+        "plattformregulierung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -34004,7 +35007,10 @@
       "dataRegisters": []
     },
     "vorgriffswohlstand": {
-      "terms": [],
+      "terms": [
+        "scheinwohlstand",
+        "zukunftsschulden"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -34064,7 +35070,10 @@
       "dataRegisters": []
     },
     "w-bip": {
-      "terms": [],
+      "terms": [
+        "bip",
+        "wellbeing-economy"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -34244,7 +35253,6 @@
     },
     "waok": {
       "terms": [
-        "wirkungsaufsicht",
         "wirkungsrat",
         "portfolio-wirkung",
         "kapitalwirkung",
@@ -34549,6 +35557,23 @@
       "academyModules": [],
       "dataRegisters": []
     },
+    "weiterbildung": {
+      "terms": [
+        "wirkungskompetenz",
+        "teilhabe",
+        "gesundheitskompetenz",
+        "informationssouveraenitaet",
+        "wirkungspotenzial",
+        "wirkung"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "weiterverteilung": {
       "terms": [
         "wiederverwendung",
@@ -34591,7 +35616,10 @@
       "dataRegisters": []
     },
     "wellbeing-economy": {
-      "terms": [],
+      "terms": [
+        "bip",
+        "w-bip"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -34616,7 +35644,10 @@
       "dataRegisters": []
     },
     "weltfaehig": {
-      "terms": [],
+      "terms": [
+        "zukunftsfaehigkeit",
+        "positive-netto-wirkung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -34675,7 +35706,13 @@
       "dataRegisters": []
     },
     "wertebruecke": {
-      "terms": [],
+      "terms": [
+        "gesichtswahrende_korrektur",
+        "kommunikative_souveraenitaet",
+        "reaktanz",
+        "identitaetsschutz",
+        "positive-netto-wirkung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -34751,7 +35788,7 @@
     "wesentlicher-beitrag": {
       "terms": [
         "eu-taxonomie",
-        "dnsh",
+        "dnsh-do-no-significant-harm",
         "technische-bewertungskriterien"
       ],
       "documents": [],
@@ -34781,7 +35818,7 @@
       "terms": [
         "red-herring",
         "tu-quoque",
-        "derailing",
+        "derailing-themenverschiebung",
         "wirkungsbewertung"
       ],
       "documents": [],
@@ -34988,7 +36025,6 @@
         "faktencheck",
         "folgencheck",
         "wirkpfad",
-        "wirkungspfad",
         "wirkungsdaten",
         "datenqualitaet",
         "wirkungspotenzial",
@@ -35038,7 +36074,7 @@
     "wirkmechanismus": {
       "terms": [
         "wirkstoff",
-        "wirkungspfad",
+        "wirkpfad",
         "wirkungspotenzial",
         "wirkungstraeger",
         "kognitive-dissonanz"
@@ -35070,7 +36106,10 @@
       "dataRegisters": []
     },
     "wirksame-arbeit": {
-      "terms": [],
+      "terms": [
+        "wirkung",
+        "wirksamkeit"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -35142,7 +36181,7 @@
       "terms": [
         "wirkungspotenzial",
         "wirkmechanismus",
-        "wirkungspfad",
+        "wirkpfad",
         "resonanzraum",
         "salienz",
         "framing",
@@ -35166,7 +36205,7 @@
       "terms": [
         "wirkungspotenzial",
         "wirkungsrisiko",
-        "wirkungspfad",
+        "wirkpfad",
         "folgewirkung",
         "positive-netto-wirkung",
         "effektivitaet-vs-effizienz",
@@ -35217,7 +36256,18 @@
         "impact-strategie"
       ],
       "documents": [
-        "[object Object]",
+        {
+          "label": "Die neue Ordnung des Wohlstands",
+          "href": "../../referenz/"
+        },
+        {
+          "label": "Grundlagenpapier Wirkungsökonomie",
+          "href": "../../dokumente/grundlagenpapier-wirkungsoekonomie-woek/"
+        },
+        {
+          "label": "Leitbild Mensch, Planet und Demokratie",
+          "href": "../../dokumente/leitbild-mensch-planet-demokratie/"
+        },
         "impact-strategie-controlling-marketing-management-einkauf-chemieindustrie"
       ],
       "methods": [],
@@ -35799,7 +36849,7 @@
         "positive-netto-wirkung",
         "transformationswirkung",
         "wirkungsgrenze",
-        "wirkungspfad",
+        "wirkpfad",
         "wirkungsnetz",
         "wirkungsdaten",
         "reverse-merit-order",
@@ -35940,8 +36990,7 @@
         "umsetzungs-und-uebergangsschutzplan",
         "wirkungsdashboard-und-managementcockpit",
         "wirkungsfruehwarn-und-eskalationssystem",
-        "wirkungsreview-und-lernende-retrospektive",
-        "wirkungsassurance-audit-und-methodenpruefung"
+        "wirkungsreview-und-lernende-retrospektive"
       ],
       "documents": [],
       "methods": [],
@@ -36160,7 +37209,7 @@
         "transformationswirkung",
         "wirkungsrueckkopplung",
         "wirkungsgrenze",
-        "wirkungspfad",
+        "wirkpfad",
         "wirkungsnetz",
         "wirkungsdaten",
         "wirkungssteuer",
@@ -36229,7 +37278,7 @@
         "lebenswirkung",
         "wirkungsbonus",
         "wirkleistung",
-        "care-arbeit",
+        "sorgearbeit",
         "ehrenamt"
       ],
       "documents": [
@@ -36278,7 +37327,7 @@
         "transformationswirkung",
         "wirkungsrueckkopplung",
         "wirkungsgrenze",
-        "wirkungspfad",
+        "wirkpfad",
         "wirkungsnetz",
         "wirkungsdaten",
         "woek-id",
@@ -36339,7 +37388,7 @@
         "wirkungseinkommen",
         "grunddividende",
         "wirkungsrente",
-        "care-arbeit",
+        "sorgearbeit",
         "ehrenamt"
       ],
       "documents": [
@@ -36703,7 +37752,10 @@
       ]
     },
     "wirkungsdefizit": {
-      "terms": [],
+      "terms": [
+        "wirkungsfinanzierung",
+        "oeffentliche-netto-wirkung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -36752,7 +37804,30 @@
       "dataRegisters": []
     },
     "wirkungsdisziplin": {
-      "terms": [],
+      "terms": [
+        "wirkungsfinanzierung",
+        "datenqualitaet"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
+    "wirkungsdividende": {
+      "terms": [
+        "wirkungseinkommen",
+        "grunddividende",
+        "automatisierungsdividende",
+        "wirkungsrente",
+        "ehrenamt",
+        "wirkung",
+        "positive-netto-wirkung",
+        "wirkungsrueckkopplung",
+        "reverse-merit-order"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -36762,7 +37837,10 @@
       "dataRegisters": []
     },
     "wirkungsebene-1": {
-      "terms": [],
+      "terms": [
+        "wirkungsebene-2",
+        "wirkung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -36772,7 +37850,10 @@
       "dataRegisters": []
     },
     "wirkungsebene-2": {
-      "terms": [],
+      "terms": [
+        "wirkungsebene-1",
+        "wirkungsebene-3"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -36782,7 +37863,10 @@
       "dataRegisters": []
     },
     "wirkungsebene-3": {
-      "terms": [],
+      "terms": [
+        "wirkungsebene-2",
+        "transformationswirkung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -36891,7 +37975,7 @@
       "terms": [
         "wirkung",
         "wirkungsraum",
-        "wirkungspfad",
+        "wirkpfad",
         "kundennutzen",
         "persona",
         "impact-fit",
@@ -36977,7 +38061,10 @@
       "dataRegisters": []
     },
     "wirkungsfeld": {
-      "terms": [],
+      "terms": [
+        "mensch-planet-demokratie",
+        "wirkungsindikator"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -36987,7 +38074,10 @@
       "dataRegisters": []
     },
     "wirkungsfinanzierung": {
-      "terms": [],
+      "terms": [
+        "oeffentliche-netto-wirkung",
+        "realressourcengrenze"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -37559,7 +38649,10 @@
       "dataRegisters": []
     },
     "wirkungshaushalt-fuer-auslandsprojekte": {
-      "terms": [],
+      "terms": [
+        "wirkungshaushalt",
+        "internationale-zusammenarbeit"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -37569,7 +38662,10 @@
       "dataRegisters": []
     },
     "wirkungshebel": {
-      "terms": [],
+      "terms": [
+        "hebelpunkt",
+        "wirkpfad"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -37601,7 +38697,7 @@
     "wirkungsindikator": {
       "terms": [
         "wirkungsdaten",
-        "wirkungspfad",
+        "wirkpfad",
         "datenqualitaet",
         "scorecard",
         "wirkungscontrolling",
@@ -37768,7 +38864,6 @@
         "wirkungsoekonomie",
         "wirkungsarchitektur",
         "wirkpfad",
-        "wirkungspfad",
         "wirkungspotenzial",
         "wirkungsrisiko",
         "positive-netto-wirkung",
@@ -37818,7 +38913,10 @@
       "dataRegisters": []
     },
     "wirkungsinvestition-des-staates": {
-      "terms": [],
+      "terms": [
+        "wirkungsfinanzierung",
+        "positive-netto-wirkung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -37926,7 +39024,10 @@
       "dataRegisters": []
     },
     "wirkungsklasse": {
-      "terms": [],
+      "terms": [
+        "scorecard",
+        "finalscore"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -38183,44 +39284,18 @@
     },
     "wirkungslenkung": {
       "terms": [
+        "wirkungsarchitektur",
         "wirkungsbewertung",
         "wirkungsrueckkopplung",
-        "wirkungsarchitektur",
-        "positive-netto-wirkung",
-        "wirkungssteuer",
-        "wirkungshaushalt",
-        "wirkungsrat",
-        "reverse-merit-order",
-        "wirkungswahrheit",
-        "wirkungsblindheit",
-        "datenqualitaet",
-        "mensch-planet-demokratie",
-        "wirkung",
-        "wirkungspotenzial",
-        "wirkungsrisiko",
-        "netto-wirkung",
-        "transformationswirkung",
+        "reporting",
         "wirkungsgrenze",
-        "wirkungspfad",
-        "wirkungsnetz",
+        "nichtkompensationsprinzip",
+        "reverse-merit-order",
+        "positive-netto-wirkung",
+        "wirkungsrisiko",
         "wirkungsdaten",
-        "woek-id",
-        "produktscorecard",
-        "digitaler-produktpass",
-        "wirkungsaudit",
-        "wirkungsassurance",
-        "greenwashing",
-        "impact-washing",
-        "sdg-washing",
-        "sdgs",
-        "agenda-2030",
-        "sdg-plus",
-        "hebelpunkt",
-        "rueckkopplung",
-        "donella-meadows",
-        "pfadabhaengigkeit",
-        "wirkungseinkommen",
-        "impact-strategie"
+        "wirkungsrat",
+        "wirkungshaushalt"
       ],
       "documents": [
         "Führender Begriffsleitfaden der Wirkungsökonomie",
@@ -38371,7 +39446,7 @@
     },
     "wirkungsnetz": {
       "terms": [
-        "wirkungspfad",
+        "wirkpfad",
         "resonanzraum",
         "wirkungsarchitektur",
         "interdependenz",
@@ -38415,7 +39490,7 @@
         "wirkungsarchitektur",
         "wirkungsrueckkopplung",
         "positive-netto-wirkung",
-        "nichtkompensation",
+        "nichtkompensationsprinzip",
         "reverse-merit-order",
         "woek-id",
         "qualitaetssicherung",
@@ -39192,7 +40267,7 @@
         "wirkmechanismus",
         "wirkungsdaten",
         "wirkungspaedagogik",
-        "wirkungspfad",
+        "wirkpfad",
         "wirkungstraeger",
         "wirkungsempfaenger",
         "wirkungsraum",
@@ -39226,7 +40301,18 @@
         "fuenftes-p-planet"
       ],
       "documents": [
-        "[object Object]"
+        {
+          "label": "Die neue Ordnung des Wohlstands",
+          "href": "../../referenz/"
+        },
+        {
+          "label": "Grundlagenpapier Wirkungsökonomie",
+          "href": "../../dokumente/grundlagenpapier-wirkungsoekonomie-woek/"
+        },
+        {
+          "label": "Leitbild Mensch, Planet und Demokratie",
+          "href": "../../dokumente/leitbild-mensch-planet-demokratie/"
+        }
       ],
       "methods": [],
       "tools": [
@@ -39646,7 +40732,7 @@
     "wirkungsraum": {
       "terms": [
         "wirkungsempfaenger",
-        "wirkungspfad",
+        "wirkpfad",
         "vertrauen",
         "wirkungsarchitektur",
         "folgencheck",
@@ -39986,8 +41072,6 @@
         "feminisierung-von-armut",
         "erwerbsbiografie",
         "wirkungsdividende",
-        "buergerinnenfonds",
-        "transformationsrente",
         "automatisierungsdividende"
       ],
       "documents": [
@@ -40047,7 +41131,6 @@
         "impact-management",
         "impact-controlling",
         "systemresilienz",
-        "wirkungsresilienz",
         "wirkungsrueckkopplung",
         "positive-netto-wirkung",
         "sdgs",
@@ -40190,7 +41273,6 @@
         "wirkungskompetenz-matrix",
         "lern-und-rueckkopplungsarchitektur",
         "wirkungstransformations-bereitschaft",
-        "wirkungsreview-und-lernende-retrospektive",
         "wirkungsassurance-audit-und-methodenpruefung"
       ],
       "documents": [],
@@ -40277,7 +41359,10 @@
       "dataRegisters": []
     },
     "wirkungsrisikomanagement": {
-      "terms": [],
+      "terms": [
+        "wirkungsrisiko",
+        "risikomanagement"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -40327,27 +41412,18 @@
     },
     "wirkungsrueckkopplung": {
       "terms": [
-        "rueckkopplung",
-        "kybernetik",
         "wirkungsarchitektur",
         "wirkungslenkung",
-        "fuenftes-p-planet",
-        "erweiterte-herstellerverantwortung",
-        "esg",
-        "gewinn-als-test",
-        "hebelpunkt",
-        "hebelwirkung",
-        "nachhaltigkeit",
-        "steuerungsdaten",
-        "sustainable-finance",
-        "verstaerkungslernen",
-        "wirkungsfonds",
-        "wirkungshaushalt",
-        "wirkungssteuer",
-        "zentralverwaltungswirtschaft",
-        "impact-management",
-        "impact-controlling",
-        "doppelte-wesentlichkeit"
+        "wirkungsbewertung",
+        "reporting",
+        "wirkungsdaten",
+        "datenqualitaet",
+        "wirkungsrisiko",
+        "wirkungsgrenze",
+        "positive-netto-wirkung",
+        "wirkpfad",
+        "wirkung",
+        "nichtkompensationsprinzip"
       ],
       "documents": [
         "verstehen/sdgs-sdgplus/risiko-resilienzregister/",
@@ -40486,7 +41562,10 @@
       "dataRegisters": []
     },
     "wirkungsspielraum": {
-      "terms": [],
+      "terms": [
+        "realressourcengrenze",
+        "wirkungskapazitaet-des-staates"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -40680,7 +41759,10 @@
       "dataRegisters": []
     },
     "wirkungssteuerkonto": {
-      "terms": [],
+      "terms": [
+        "wirkungssteuer",
+        "wkg"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -40927,7 +42009,7 @@
       "terms": [
         "wirkungsethik",
         "folgewirkung",
-        "wirkungspfad",
+        "wirkpfad",
         "kapitalwirkung",
         "folgencheck",
         "karl-marx",
@@ -40948,7 +42030,7 @@
     },
     "wirkungsvermietung": {
       "terms": [
-        "wirkungspflicht-des-eigentums",
+        "wirkungspflicht-eigentum",
         "warmmietenneutralitaet",
         "wix-vi"
       ],
@@ -41003,7 +42085,7 @@
         "transformationswirkung",
         "wirkungsrueckkopplung",
         "wirkungsgrenze",
-        "wirkungspfad",
+        "wirkpfad",
         "wirkungsnetz",
         "wirkungsdaten",
         "woek-id",
@@ -41050,7 +42132,10 @@
       "dataRegisters": []
     },
     "wirkungswashing": {
-      "terms": [],
+      "terms": [
+        "greenwashing",
+        "wirkungsbewertung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -41145,7 +42230,7 @@
         "wirkungsforschung",
         "wirkung",
         "wirkungsbewertung",
-        "wirkungspfad",
+        "wirkpfad",
         "wirkungsnachweis"
       ],
       "documents": [],
@@ -41443,6 +42528,23 @@
         "woek-id-register"
       ]
     },
+    "wissenschaftsfeindlichkeit": {
+      "terms": [
+        "faktencheck",
+        "desinformation",
+        "verschwoerungserzaehlung",
+        "medienfreiheit",
+        "diskursqualitaet",
+        "wirkungsrisiko"
+      ],
+      "documents": [],
+      "methods": [],
+      "tools": [],
+      "demos": [],
+      "impactFields": [],
+      "academyModules": [],
+      "dataRegisters": []
+    },
     "wissensfluss-kritisches-wissen-und-communities-canvas": {
       "terms": [
         "woems-auftragsklaerung",
@@ -41607,7 +42709,10 @@
       "dataRegisters": []
     },
     "wkg": {
-      "terms": [],
+      "terms": [
+        "wirkungssteuerkonto",
+        "wirkungsdaten"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -41707,7 +42812,7 @@
     },
     "wohnwirkung": {
       "terms": [
-        "wirkungspflicht-des-eigentums",
+        "wirkungspflicht-eigentum",
         "energiearmut",
         "quartierswirkung",
         "umweltgerechtigkeit",
@@ -41727,7 +42832,6 @@
     "woek": {
       "terms": [
         "wirkungsoekonomie",
-        "woek",
         "wirkung-statt-kapital",
         "wirkung",
         "positive-netto-wirkung",
@@ -41792,7 +42896,18 @@
       "documents": [
         "woek-master-items-register",
         "wirkungscontrolling-detailkonzept-dossier-v1-0",
-        "[object Object]",
+        {
+          "label": "Die neue Ordnung des Wohlstands",
+          "href": "../../referenz/"
+        },
+        {
+          "label": "Technische Leitlinien WUStG",
+          "href": "../../dokumente/technische-leitlinien-wustg-v2/"
+        },
+        {
+          "label": "Wirkungsfeld Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        },
         "impact-strategie-controlling-marketing-management-einkauf-chemieindustrie"
       ],
       "methods": [],
@@ -42020,7 +43135,6 @@
     "wr": {
       "terms": [
         "wirkungsrat",
-        "wr",
         "wirkung",
         "positive-netto-wirkung",
         "mensch-planet-demokratie",
@@ -42192,7 +43306,7 @@
     },
     "zeitwirkung": {
       "terms": [
-        "wirkungspfad",
+        "wirkpfad",
         "wirkungsrisiko"
       ],
       "documents": [],
@@ -42218,7 +43332,6 @@
     },
     "zen": {
       "terms": [
-        "zen",
         "wirkungskompetenz",
         "selbstwirksamkeit",
         "resonanz",
@@ -42546,7 +43659,10 @@
       "dataRegisters": []
     },
     "zukunftsdisziplin": {
-      "terms": [],
+      "terms": [
+        "zukunftsschulden",
+        "wirkungsfinanzierung"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],
@@ -42648,7 +43764,10 @@
       ]
     },
     "zuschuss": {
-      "terms": [],
+      "terms": [
+        "foerderlogik",
+        "foerdercontrolling"
+      ],
       "documents": [],
       "methods": [],
       "tools": [],

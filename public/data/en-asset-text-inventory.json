@@ -1,6 +1,6 @@
 {
   "schemaVersion": "2026-07-english-asset-text-inventory",
-  "generatedAt": "2026-07-30",
+  "generatedAt": "2026-08-02",
   "scope": "Static inventory for visible German text in website image assets. SVG text can usually be translated directly; raster images need manual/OCR review and English variants where embedded text exists.",
   "summary": {
     "totalImages": 299,
@@ -82,7 +82,7 @@
       ],
       "detectedSvgText": [],
       "germanAltOrTitle": [
-        "Editoriale Wirkungsökonomie-Grafik: Fakten sind nicht gleich Wirkung, politische Narrative enthalten Wirkstoffe wie Angst, Kränkung, Zugehörigkeit, Empörung und Wiederholung.",
+        "Editoriale Wirkungsökonomie-Grafik: Fakten sind nicht gleich Wirkung, politische Narrative enthalten Wirkstoffe (als didaktische Analogie) wie Angst, Kränkung, Zugehörigkeit, Empörung und Wiederholung.",
         "Editoriale Wirkungsökonomie-Grafik: Fakten sind nicht gleich Wirkung, politische Narrative enthalten Resonanzfaktoren wie Angst, Kränkung, Zugehörigkeit, Empörung und Wiederholung."
       ],
       "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
@@ -528,7 +528,7 @@
       ],
       "detectedSvgText": [],
       "germanAltOrTitle": [
-        "Dunkles Titelbild zu Wirkstoff Narrative: rechte Frames werden als kommunikativer Wirkstoff wiederholt, verstärkt und können Vertrauen sowie Demokratie belasten."
+        "Dunkles Titelbild zu Wirkstoff (didaktische Analogie) Narrative: rechte Frames werden als kommunikativer Wirkstoff (didaktische Analogie) wiederholt, verstärkt und können Vertrauen sowie Demokratie belasten."
       ],
       "recommendation": "Check whether the bitmap contains embedded German text. If yes, create an English raster variant; alt/title text can be translated in HTML."
     },

@@ -8,9 +8,9 @@
 
 **Referenz:** Wirkungsökonomie
 
-**Version:** v1.0
+**Version:** v1.1
 
-**Stand:** 24. Mai 2026
+**Stand:** 2. August 2026
 
 
 > Negative Wirkung darf nicht als Durchlaufposten durch die Lieferkette verschwinden.
@@ -69,7 +69,7 @@
 
 Dieses Detailkonzept beschreibt die Lieferketten-, Import- und Wirkungsvorsteuerlogik der Wirkungsumsatzsteuer. Es zeigt, warum die Produktwirkungssteuer nicht erst am Regal beginnen darf, sondern entlang der gesamten Wertschöpfungskette wirken muss.
 
-Der zentrale Satz lautet: Negative Wirkung darf nicht als steuerlicher Durchlaufposten verschwinden. Wenn eine Vorleistung Kinderarbeit, Entwaldung, toxische Chemie, hohen Wasserstress, hohe Emissionen oder systemische Intransparenz enthält, muss diese Wirkung für Einkauf, Vorsteuer und Importkosten relevant werden.
+Der zentrale Satz lautet: Negative Wirkung darf nicht als steuerlicher Durchlaufposten verschwinden. Wenn eine Vorleistung Kinderarbeit, Entwaldung, toxische Chemie, hohen Wasserstress, hohe Emissionen oder systemische Intransparenz enthält, muss dieser Befund für Einkauf, eine mögliche Vorsteuerprüfung und Importentscheidungen sichtbar werden. Ein Score löst jedoch keine automatische Steuerfolge aus.
 
 Die Logik ersetzt keine klassische Sorgfaltspflicht, sondern macht deren Daten wirtschaftlich wirksam. CSDDD, CSRD/ESRS, DPP und CBAM werden zu Anschlussstellen einer breiteren Rückkopplungsarchitektur.
 
@@ -87,7 +87,7 @@ Die zentrale Frage lautet: Welche Vorleistungen dürfen steuerlich durchlässig 
 
 | --- | --- |
 
-| Vorsteuer meist wirkungsneutral | Vorsteuerfähigkeit abhängig vom FinalScore |
+| Vorsteuer meist wirkungsneutral | Wirkungsprofil, Datenqualität und rote Linien informieren einen rechtlich geregelten Prüfpfad |
 
 | Importe nach Zollwert bewertet | Wirkungsimportbewertung ergänzt Zollwert |
 
@@ -123,35 +123,31 @@ Die Wirkungsumsatzsteuer muss deshalb jede wesentliche Vorleistung mitdenken. Si
 ## Wirkungsvorsteuer: Prinzip und Berechnungsidee
 
 
-Die klassische Vorsteuerlogik wird nicht abgeschafft, sondern qualifiziert. Positive Vorleistungen bleiben steuerlich durchlässig und können zusätzlich bonifiziert werden. Neutrale Vorleistungen bleiben zunächst durchlässig, aber ohne Transformationsvorteil. Negative Vorleistungen verlieren ganz oder teilweise ihre Vorsteuerfähigkeit.
+Die klassische Vorsteuerlogik wird nicht abgeschafft, sondern kann um einen Wirkungs-Prüfpfad ergänzt werden. Ein Wirkungsprofil zeigt positive Befunde, Unsicherheit und rote Linien; der gesetzlich geregelte Vorsteuerstatus wird davon getrennt und mit Rechtsschutz entschieden. So kann die Prüfung Lieferantenverbesserung fördern, ohne eine Punkte-zu-Euro-Automatik zu behaupten.
 
-Damit entsteht ein direkter finanzieller Anreiz, Lieferanten zu verbessern oder zu wechseln. Unternehmen, die ihre Lieferkette transformieren, profitieren nicht nur reputativ, sondern betriebswirtschaftlich.
+Die genaue Ausgestaltung kann politisch abgestuft werden: rote Linien, Abhilfeverfahren, gesetzliche Anrechnungsregeln, Übergangskorridore und KMU-Schutz. Jede steuerliche Folge braucht eine transparente Norm, eine nachvollziehbare Begründung und Korrekturwege.
 
-Die genaue Ausgestaltung kann politisch abgestuft werden: harte rote Linien, eingeschränkte Abzugsfähigkeit, Bonusgutschriften, Übergangskorridore und KMU-Schutz.
-
-| Vorleistungs-Score | Vorsteuerstatus | Lenkungswirkung |
+| Wirkungsbefund | Prüfstatus | Möglicher nächster Schritt |
 
 | --- | --- | --- |
 
-| +3 / +2 | voll vorsteuerfähig plus Bonusoption | transformative Lieferanten werden attraktiver |
+| gut belegt, keine rote Linie | positive Hinweise | rechtlich zulässige Anrechnungs- oder Förderoption prüfen |
 
-| +1 | voll vorsteuerfähig | positive Mindestwirkung lohnt sich |
+| neutral oder unklar | Standard- oder Nachreichungsstatus | Behandlung nach geltendem Recht, Daten ergänzen |
 
-| 0 | durchlässig ohne Bonus | Übergangs- und Standardzone |
+| negativer Befund | Risiko- oder Abhilfestatus | Abhilfeplan, vertiefte Prüfung oder gesetzlich vorgesehene Folge |
 
-| -1 / -2 | eingeschränkt vorsteuerfähig | negative Wirkung wird Kostenfaktor |
-
-| -3 / rote Linie | nicht vorsteuerfähig, ggf. Ausschluss | schwere Schäden werden nicht durchgereicht |
+| rote Linie | Sonderprüfstatus | Schutzmaßnahme, Rechtsschutz und gegebenenfalls Ausschluss nach Gesetz |
 
 
 ## Bonuslogik: Der positive Hebel
 
 
-Die WÖk ist keine reine Malus-Architektur. Entscheidend ist der positive Hebel: Lieferanten mit nachweislich guter Wirkung erhalten Marktvorteile. Sie werden für Abnehmer attraktiver, weil sie Vorsteuerfähigkeit, Bonusgutschriften, bessere Finanzierung und niedrigere Risikoaufschläge ermöglichen.
+Die WÖk ist keine reine Malus-Architektur. Entscheidend ist der positive Hebel: Lieferanten mit nachweislich gutem Wirkungsprofil können für Abnehmer attraktiver werden, weil sie Risiken senken, Datenqualität erhöhen und eine rechtlich zulässige Anrechnungs- oder Förderprüfung ermöglichen.
 
 Die Bonuslogik sollte aber niemals schwere Negativwirkung kompensieren. Sie kann Übererfüllung honorieren, aber keine roten Linien aufheben. Das schützt den Unterschied zwischen Verbesserung und Ablasshandel.
 
-- Wirkungsgutschrift für +2/+3-Vorleistungen.
+- Mögliche Wirkungsgutschrift nur nach gesetzlich definierten Voraussetzungen, unabhängiger Prüfung und ohne Aufhebung roter Linien.
 
 - Bessere Zahlungsbedingungen und Rahmenverträge für positive Lieferanten.
 
@@ -243,13 +239,13 @@ Liberale Perspektiven können Bürokratiearmut und faire Standards betonen, sozi
 
 | Sozialausgleich | Kaufkraftschutz für Grundbedarf |
 
-| Rechtsschutz | Einspruch gegen Einstufung, offene Methodik, unabhängige Prüfung |
+| Rechtsschutz | Einspruch gegen Prüfstatus oder eine gesetzliche Folge, offene Methodik, unabhängige Prüfung |
 
 
 ## Website- und Tool-Integration
 
 
-Die Website sollte eine visuelle Lieferkettenlinie zeigen, in der jede Stufe Score, Datenqualität, Vorsteuerstatus und Engpassfeld erhält. Nutzer:innen sollen sehen, warum ein Endprodukt günstiger oder teurer wird.
+Die Website sollte eine visuelle Lieferkettenlinie zeigen, in der jede Stufe Score, Datenqualität, Prüfstatus und Engpassfeld erhält. Nutzer:innen sollen sehen, welche Befunde und gegebenenfalls welche offen ausgewiesene Preis-Testannahme relevant sind; ein Preis wird nicht aus Scores abgeleitet.
 
 Toolkarten: Lieferketten-Scorecard, Vorsteuer-Simulator, Import-Wirkungscheck, T-Shirt-Demo und Konzern-zu-Produktgruppen-Mapping.
 
@@ -267,7 +263,7 @@ Toolkarten: Lieferketten-Scorecard, Vorsteuer-Simulator, Import-Wirkungscheck, T
 
 Die Lieferketten-, Import- und Vorsteuerlogik ist der systemische Kern der Produktwirkungssteuer. Ohne sie bliebe die WUStG am Endprodukt hängen und würde globale Vorwirkungen zu spät erfassen.
 
-Mit ihr werden Nachhaltigkeitsdaten zu Marktdaten: Gute Lieferanten gewinnen, destruktive Vorleistungen verlieren steuerliche Durchlässigkeit und Unternehmen erhalten einen klaren Grund, Lieferketten zu verbessern.
+Mit ihr werden Nachhaltigkeitsdaten zu Marktdaten: Gut belegte Lieferantenprofile können an Relevanz gewinnen, kritische Vorleistungen bleiben als Risiko sichtbar und Unternehmen erhalten einen klaren Grund, Lieferketten zu verbessern. Ob und welche steuerliche Folge gilt, bestimmt ein rechtsstaatlicher Tarif- und Prüfrahmen, nicht der Score allein.
 
 
 ## Internationale Fairness und Nicht-Protektionismus
@@ -297,9 +293,9 @@ Die WÖk sollte daher mit Wirkungspartnerschaften arbeiten: Datentransfer, Schul
 ## Rechenbeispiel Wirkungsvorsteuer
 
 
-Die Wirkungsvorsteuer kann als Demo-Rechner auf der Website modelliert werden. Ein Unternehmen kauft drei Vorleistungen ein: eine positive, eine neutrale und eine negative. Der Rechner zeigt, wie sich der steuerliche Abzug verändert und warum ein negativer Lieferant betriebswirtschaftlich unattraktiver wird.
+Die Wirkungsvorsteuer kann als Demo-Rechner auf der Website modelliert werden. Ein Unternehmen dokumentiert drei Vorleistungen: eine gut belegte, eine neutrale und eine kritische. Der Rechner zeigt die Prüfpfade, Datenlücken und eine offen eingegebene Szenarioannahme; er berechnet keinen Abzug aus einem Score.
 
-Das Ziel ist nicht, einen endgültigen Steuersatz festzulegen, sondern die Kostenlogik zu zeigen. Wenn negative Vorleistungen nicht mehr vollständig durchgereicht werden können, entsteht ein finanzieller Anreiz zur Lieferkettenverbesserung.
+Das Ziel ist nicht, einen Steuersatz festzulegen, sondern die Kosten- und Risikologik verständlich zu machen. Wenn eine Rechtsregel nach Prüfung eine Folge vorsieht, muss sie getrennt von der Scorecard, transparent und anfechtbar ausgewiesen werden.
 
 Besonders wichtig ist der Vergleich mit der heutigen Logik: Heute bleibt schlechte Wirkung häufig steuerlich neutral. In der WÖk wird sie zu einem sichtbaren Kostenbestandteil.
 
@@ -307,13 +303,13 @@ Besonders wichtig ist der Vergleich mit der heutigen Logik: Heute bleibt schlech
 
 | --- | --- | --- | --- |
 
-| Bio-Rohstoff / faire Arbeit | +2 | normaler Vorsteuerabzug | voller Abzug plus Bonusoption |
+| Bio-Rohstoff / faire Arbeit | positive Hinweise | normaler Vorsteuerabzug | Daten- und Rechtsprüfung für eine mögliche Option |
 
-| Standard-Vorprodukt | 0 | normaler Vorsteuerabzug | Abzug ohne Bonus |
+| Standard-Vorprodukt | neutral | normaler Vorsteuerabzug | Standardbehandlung und Datenpflege |
 
-| kritische Chemie / Arbeitsrisiko | -2 | normaler Vorsteuerabzug | eingeschränkt oder nicht vorsteuerfähig |
+| kritische Chemie / Arbeitsrisiko | kritischer Befund | normaler Vorsteuerabzug | Abhilfe-, Risiko- oder Rechtsprüfung |
 
-| rote Linie | -3 | normaler Vorsteuerabzug möglich | Ausschluss-/Sanktionspfad |
+| rote Linie | Sonderprüfstatus | normaler Vorsteuerabzug möglich | Schutz- und Einspruchspfad; Folge nur nach Gesetz |
 
 
 ## Daten- und Rollenmodell in der Lieferkette
@@ -388,7 +384,7 @@ Nach jeder Pilotphase müssen Datenqualität, Preiswirkung, Lieferantenverhalten
 
 ## Vertiefung: Vom Lieferkettengesetz zur Preisrückkopplung
 
-Sorgfaltspflichten und Berichtspflichten sind notwendig, aber sie erzeugen noch keine automatische Marktlogik. Unternehmen können Risiken identifizieren, Prozesse dokumentieren und Berichte veröffentlichen, ohne dass der Preis eines Produkts die Lieferkettenwirkung unmittelbar abbildet. Die Wirkungsumsatzsteuer ergänzt diese Pflichten nicht durch mehr Symbolik, sondern durch Preisrückkopplung.
+Sorgfaltspflichten und Berichtspflichten sind notwendig, aber sie erzeugen noch keine nachvollziehbare Rückkopplung. Unternehmen können Risiken identifizieren, Prozesse dokumentieren und Berichte veröffentlichen, ohne dass ein Produktpreis die Lieferkettenwirkung sichtbar macht. Die Wirkungsumsatzsteuer ergänzt diese Pflichten nicht durch mehr Symbolik, sondern durch einen transparenten Prüfpfad für Preisrückkopplung.
 
 Der Unterschied ist zentral: Eine Compliance-Pflicht fragt, ob ein Unternehmen bestimmte Prozesse erfüllt. Eine Wirkungssteuer fragt zusätzlich, ob die Produkt- und Lieferkettenwirkung in den wirtschaftlichen Anreiz eingeht. Damit entsteht ein praktischer Hebel, der über reine Berichtspflicht hinausgeht.
 
@@ -396,8 +392,8 @@ Der Unterschied ist zentral: Eine Compliance-Pflicht fragt, ob ein Unternehmen b
 | --- | --- | --- |
 | Lieferkettengesetz / CSDDD | Sorgfaltspflichten, Risikoanalyse, Beschwerdemechanismen | Steuerliche und preisliche Rückkopplung der Wirkung. |
 | CSRD/ESRS | Berichtsdaten und doppelte Wesentlichkeit | Überführung in Produkt- und Lieferkettenscorecards. |
-| DPP | Produkt- und Materialinformationen | Verknüpfung mit FinalScore, Vorsteuer und Verbraucherinformation. |
-| Zoll/Importlogik | Warenwert, Herkunft, Einfuhrprozess | Wirkungsabhängige Importsteuer und Datenqualitätsprüfung. |
+| DPP | Produkt- und Materialinformationen | Verknüpfung mit FinalScore als Engpasssignal, Prüfstatus und Verbraucherinformation. |
+| Zoll/Importlogik | Warenwert, Herkunft, Einfuhrprozess | Datenqualitäts- und Rechtsprüfung für mögliche Importfolgen. |
 
 
 
@@ -428,10 +424,10 @@ Eine europäische Wirkungslogik darf nicht dazu führen, dass große Unternehmen
 
 ## Vertiefung: Mindestanforderungen an Import- und Vorsteuer-Tools
 
-Die Website und spätere Rechner sollten die Lieferkettenlogik in drei Ebenen erklären: erstens Lieferkettenscore, zweitens Vorsteuerfähigkeit, drittens Importwirkung. Ein gutes Tool zeigt nicht nur das Ergebnis, sondern die Engstelle. Wo entsteht der negative Score? Welche Daten fehlen? Welche Verbesserung würde die Steuerklasse verändern?
+Die Website und spätere Rechner sollten die Lieferkettenlogik in drei Ebenen erklären: erstens Lieferkettenscore, zweitens Prüfstatus, drittens Importwirkung. Ein gutes Tool zeigt nicht nur das Ergebnis, sondern die Engstelle. Wo entsteht der negative Score? Welche Daten fehlen? Welche Verbesserung verändert den Prüfstatus? Ein Tarif darf nie aus dieser Anzeige abgeleitet werden.
 
 - Lieferketten-Scorecard mit Stufen: Rohstoff, Verarbeitung, Fertigung, Transport, Handel.
-- Vorsteuer-Modul: Welche Vorleistungen sind voll, teilweise oder nicht vorsteuerfähig?
-- Import-Modul: Warenwert plus FinalScore plus Datenqualität.
+- Vorsteuer-Modul: Welche Vorleistungen sind nach geltendem Recht zu behandeln und welche Prüfpfade sind nötig?
+- Import-Modul: Warenwert plus FinalScore als Engpasssignal plus Datenqualität.
 - Verbesserungsmodus: Welche Lieferanten- oder Prozessänderung hebt das schwächste Feld?
 - Sicherheitsmodus: Rote Linien und Datenunsicherheiten separat anzeigen.

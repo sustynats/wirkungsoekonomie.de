@@ -485,7 +485,7 @@ Go 3 · echte Detailkonzepte
 
 SDG-/SDG+-Fachdetailkonzepte online lesen #
 
-Diese drei Fachdetailkonzepte bilden Paket 1 der Go-2-Produktionsreihenfolge. Der Die Seite ist online lesbar; Word- und PDF-Dateien sind ergänzende ergänzende Downloadfassungen. Die Unterzielmatrix steht zusätzlich als CSV und JSON bereit.
+Diese drei Fachdetailkonzepte bilden Paket 1 der Go-2-Produktionsreihenfolge. Der Die Seite ist online lesbar; Word- und PDF-Dateien sind ergänzende Downloadfassungen. Die Unterzielmatrix steht zusätzlich als CSV und JSON bereit.
 
 Detailkonzept v1.0
 

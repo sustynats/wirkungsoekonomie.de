@@ -90,6 +90,8 @@ Die operative Fondssteuerung braucht zwei Ebenen. Der NWI prüft, ob ein konkret
 
 > **NWI und T-SROI:** NWI beantwortet: Ist die Maßnahme netto positiv? T-SROI beantwortet: Verändert die Maßnahme ein System in Richtung Mensch, Planet und Demokratie?
 
+Eine Fondsentscheidung darf diese Fragen nicht vermischen. Der NWI bleibt ein dimensionsgleicher operativer Profilwert und ist nur bei offenem Schutz-Gate ausweisbar. T-SROI ist dagegen eine Euro-zu-Euro-Kennzahl. Er setzt den Barwert direkter und separat belegter transformativer Nettonutzen zum Barwert der Ressourcen in Beziehung. Resilienz, Reichweite, Skalierung oder Datenqualität werden dokumentiert und geprüft; sie sind keine frei wählbaren Aufschlagsfaktoren.
+
 | Fondsentscheidung | NWI-Frage | T-SROI-Frage |
 | --- | --- | --- |
 | Bildungsprojekt | Verbessert es Teilhabe, Kompetenz, Gesundheit und Zukunftsfähigkeit? | Verändert es Schulentwicklung, Lehrpläne, kommunale Bildungsnetzwerke? |
@@ -148,17 +150,23 @@ Wirkungsfonds sind hybride Instrumente. Sie sollen nicht alle Entscheidungen zen
 
 ## Berechnungslogik: Wirkungsfonds-Simulator
 
-Für jedes Fondsprojekt braucht es eine einfache, später ausbaubare Berechnungslogik. Der Simulator sollte nicht behaupten, exakte Wahrheit zu liefern. Er soll Wirkpfade transparent machen: Mittelzufluss, Wirkungsziel, Datenqualität, erwartete Netto-Wirkung, Transformationsmultiplikator, Rückfluss an Fonds oder Gesellschaft und Risikoabschlag.
+Für jedes Fondsprojekt braucht es eine einfache, später ausbaubare Berechnungslogik. Der Simulator sollte nicht behaupten, exakte Wahrheit zu liefern. Er soll Wirkpfade transparent machen: Mittelzufluss, Wirkungsziel, Datenqualität, Wirkungsprofil, Schutz-Gate, separat belegte transformative Nutzenströme, Rückfluss an Fonds oder Gesellschaft und Unsicherheitsanalyse. Reichweite, Resilienz oder ein plausibler Transformationspfad sind dabei keine Aufschlagsfaktoren.
 
 | Parameter | Beschreibung | Beispiel |
 | --- | --- | --- |
 | Mittelzufluss | Kapital, Steueranteil, Co-Investment oder Maluszahlung | 10 Mio. Euro Wohnfonds |
 | Zielwirkung | konkretes Wirkungsziel im MPD-Rahmen | Warmmietenbelastung senken, CO2 reduzieren |
-| NWI | operative Netto-Wirkung nach positiven/negativen Wirkungen | +1,8 bei Einhaltung roter Linien |
-| T-SROI | Transformationsbeitrag pro eingesetztem Euro | 3,2:1 bei skalierbarem Quartiersmodell |
+| NWI | dimensionsgleicher Profilwert, nur bei offenem Schutz-Gate als NWI ausweisbar | Profilwert +1,8; NWI nur bei G = 1 und dokumentierten kritischen Feldern |
+| T-SROI | diskontierter direkter und separat belegter transformativer Nettonutzen je Ressourceneuro | erst berechenbar, wenn Nutzen, Schäden und Ressourcen in Euro derselben Preisbasis vorliegen |
 | Datenqualität | Prüfgrad und Unsicherheit | B: geprüfte Primärdaten plus Schätzungen |
 | Rückfluss | finanzieller oder gesellschaftlicher Rückfluss | Energieeinsparung, vermiedene Transferkosten |
-| Risikoabschlag | Unsicherheit, Rebound, Verdrängung, Governance | -15 % bei mittlerem Umsetzungsrisiko |
+| Unsicherheitsanalyse | Unsicherheit, Rebound, Verdrängung, Governance | Sensitivitätsintervall und konservative Untergrenze; keine frei gewählte pauschale Kürzung |
+
+Für T-SROI gilt der aktuelle Rechenstandard v1.1. Das Schutz-Gate muss offen sein; alle Werte verwenden dieselbe Preisbasis. a_t, d_t und v_t mindern nur den beanspruchten Nutzen. Schäden werden vollständig abgezogen.
+
+T-SROI = Summe t=1..T [((B_direkt,t + B_transformativ,t) * a_t * (1-d_t) * (1-v_t) - S_t) / (1+r)^t] / Summe t=0..T [(I_t + K_t) / (1+r_K)^t].
+
+Die konservative Untergrenze setzt die Unsicherheit u_t ausschließlich beim Nutzen an. Beispiel: Bei 100 Euro direktem Nutzen, 25 Euro separat belegtem Transformationsnutzen, 60 Euro Schaden, fünf Prozent Diskontsatz und 50 Euro Ressourcen bei t=0 beträgt der T-SROI 1,24 Euro/Euro; bei 20 Prozent Nutzenunsicherheit beträgt die Untergrenze 0,76 Euro/Euro. Der Schaden wird nie mitgekürzt.
 
 
 ## Einzelfonds im Detail

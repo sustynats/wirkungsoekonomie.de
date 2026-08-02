@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 const ROOT = process.cwd();
@@ -173,6 +173,31 @@ function buildReaderPage(script) {
   writeFileSync(destination, page, "utf8");
 }
 
+function stripEditorialReaderResidue(html) {
+  return String(html)
+    .replace(/<(p|li)\b[^>]*>[\s\S]*?\b(?:Codex|Claude|CI\/CD|Markdown-Master|Word-Rohfassung|woek-akademie-app|CODEX-HANDOFF|Vorlesung-Template)\b[\s\S]*?<\/\1>/gi, "")
+    .replace(/<ul>\s*<\/ul>/gi, "")
+    .replace(/<p>\s*<\/p>/gi, "");
+}
+
+function sanitizeExistingReaderPages() {
+  const libraryRoot = join(ROOT, "bibliothek", "studienskripte");
+  if (!existsSync(libraryRoot)) return 0;
+  let changed = 0;
+  for (const entry of readdirSync(libraryRoot, { withFileTypes: true })) {
+    if (!entry.isDirectory()) continue;
+    const page = join(libraryRoot, entry.name, "index.html");
+    if (!existsSync(page)) continue;
+    const original = readFileSync(page, "utf8");
+    const cleaned = stripEditorialReaderResidue(original);
+    if (cleaned !== original) {
+      writeFileSync(page, cleaned, "utf8");
+      changed += 1;
+    }
+  }
+  return changed;
+}
+
 const sections = Array.from(byTrack.entries()).map(([track, scripts]) => `
       <section class="section">
         <div class="section-header">
@@ -249,3 +274,5 @@ ${sections}
 
 writeFileSync(join(ROOT, "bibliothek", "studienskripte", "index.html"), html.replace(/[ \t]+\n/g, "\n"), "utf8");
 for (const script of releasedScripts) buildReaderPage(script);
+const cleanedReaderPages = sanitizeExistingReaderPages();
+if (cleanedReaderPages) console.log(`Redaktionelle Produktionshinweise aus ${cleanedReaderPages} Studienskript-Lesefassungen entfernt.`);

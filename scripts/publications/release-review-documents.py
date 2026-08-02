@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import argparse
 import html
 import re
 import shutil
@@ -43,7 +44,7 @@ DOCUMENTS = [
         "public_name": "WP_Produkte.pdf",
         "mode": "clean-pdf",
         "remove": [
-            r"Soll ich jetzt den nächsten Abschnitt schreiben.*?(?:\\?|$)",
+            r"Soll ich jetzt den nächsten Abschnitt schreiben.*?(?:\?|$)",
         ],
     },
     {
@@ -67,8 +68,9 @@ DOCUMENTS = [
         "public_name": "Wenn-Maschinen-arbeiten.pdf",
         "mode": "clean-pdf",
         "remove": [
-            r"Möchtest du, dass ich jetzt Abschnitt.*?(?:\\?|$)",
-            r"Moechtest du, dass ich jetzt Abschnitt.*?(?:\\?|$)",
+            r"Möchtest du, dass ich jetzt Abschnitt.*?(?:\?|$)",
+            r"Moechtest du, dass ich jetzt Abschnitt.*?(?:\?|$)",
+            r"1\.2\s*[–-]\s*These:\s*Einkommenssystem an Wirkung koppeln\s+schreibe\s*\(nahtlos\s+weiter\s+im\s+gleichen\s+Stil\)\?\s*",
         ],
     },
     {
@@ -246,14 +248,33 @@ def html_fragment(title: str, text: str) -> str:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description="Erzeugt bereinigte öffentliche PDF- und Onlinefassungen.")
+    parser.add_argument("--only", action="append", default=[], metavar="ID", help="Nur die angegebene Dokument-ID verarbeiten (wiederholbar).")
+    args = parser.parse_args()
+    selected = set(args.only)
+    if selected:
+        known = {str(doc["id"]) for doc in DOCUMENTS}
+        unknown = selected - known
+        if unknown:
+            parser.error(f"Unbekannte Dokument-ID(s): {', '.join(sorted(unknown))}")
+
     PUBLIC_DIR.mkdir(parents=True, exist_ok=True)
     ONLINE_DIR.mkdir(parents=True, exist_ok=True)
     SOURCE_DIR.mkdir(parents=True, exist_ok=True)
     for doc in DOCUMENTS:
+        if selected and doc["id"] not in selected:
+            continue
         source = doc["source"]
-        if not source.exists():
-            raise FileNotFoundError(source)
         destination = PUBLIC_DIR / doc["public_name"]
+        if not source.exists():
+            # Nach einem bereinigten Release liegt die redaktionelle Quelle
+            # bewusst nicht mehr im öffentlichen Build. Für eine gezielte
+            # Nachbereinigung darf die vorhandene öffentliche PDF-Fassung
+            # deshalb als nachvollziehbarer Ausgangstext dienen.
+            if destination.exists():
+                source = destination
+            else:
+                raise FileNotFoundError(source)
         if source.suffix.lower() == ".docx":
             text = extract_docx_text(source)
         else:
@@ -261,7 +282,8 @@ def main() -> None:
         text = clean_text(text, doc.get("remove"))
         online_text = preview_text(doc, text)
         if doc["mode"] == "copy":
-            shutil.copy2(source, destination)
+            if source.resolve() != destination.resolve():
+                shutil.copy2(source, destination)
         else:
             write_pdf(doc["title"], text, destination)
         (ONLINE_DIR / f"{doc['id']}.inc").write_text(html_fragment(doc["title"], online_text), encoding="utf-8")

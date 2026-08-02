@@ -4,8 +4,8 @@
 
 **Autorin:** Natalie Weber  
 **Referenz:** Wirkungsökonomie  
-**Version:** v1.0  
-**Stand:** 24. Mai 2026
+**Version:** v1.1  
+**Stand:** 2. August 2026
 
 > Ein Produkt ist kein Ding im Regal. Es ist verdichtete Lieferkette, Nutzungsgeschichte und Zukunftsfolge.
 
@@ -84,7 +84,7 @@ Besonders wichtig ist die Unterscheidung zwischen kleinen Unternehmen und große
 | Lieferanten | Rohstoffe, Vorprodukte, Arbeits- und Umweltwirkungen | Vorprodukt-Scores, Audit, Vorsteuerlogik |
 | Handel | Sortiment, Preissichtbarkeit, Kund:inneninformation | Wirkungskennzeichnung, Toolkarten, Datenübernahme |
 | Konsument:innen | Kauf, Nutzung, Reparatur, Entsorgung | verständliche Information, keine moralische Überforderung |
-| Politik/Verwaltung | Regeln, Register, Steuerklassen, Schutzmechanismen | rechtlicher Rahmen, Kaufkraftschutz, Prüfung |
+| Politik/Verwaltung | Regeln, Register, Tarifrahmen, Schutzmechanismen | rechtlicher Rahmen, Kaufkraftschutz, Prüfung |
 | Wirkungsrat/Prüfer:innen | Methodik, Benchmarks, Assurance, Revision | Unabhängigkeit, Korrektur, Missbrauchsschutz |
 
 ## Wirkungsmechanik: direkte, indirekte und systemische Produktwirkung
@@ -101,7 +101,7 @@ Diese Unterscheidung schützt vor simplen Behauptungen. Nicht jedes nachhaltige 
 
 Die Produktbewertung baut nicht auf subjektiven Einschätzungen auf. Sie nutzt Daten, die heute bereits entstehen oder über europäische Regulierung ausgebaut werden: CSRD/ESRS, GRI, EU-Taxonomie, EPDs, NACE, digitale Produktpässe, Lieferkettendaten, LCA-Daten, Produktsicherheitsdaten und sektorale Benchmarks.
 
-Entscheidend ist: Daten werden nicht nur berichtet, sondern rückgekoppelt. Was heute in Nachhaltigkeitsberichten, Produktdatenblättern oder Auditunterlagen liegt, wird in Scorecards, Produktpässe, Steuerklassen, Einkauf, Finanzierung und Verbraucherinformation übersetzt.
+Entscheidend ist: Daten werden nicht nur berichtet, sondern rückgekoppelt. Was heute in Nachhaltigkeitsberichten, Produktdatenblättern oder Auditunterlagen liegt, wird in Scorecards, Produktpässe, Prüfprofile, Einkauf, Finanzierung und Verbraucherinformation übersetzt. Ein Prüfprofil ist dabei kein automatisch abgeleiteter Tarif.
 
 | Datenquelle | Beitrag zur Produktwirkung | Grenze / Schutzbedarf |
 | --- | --- | --- |
@@ -130,7 +130,7 @@ Bestimmte negative Wirkungen dürfen nicht beliebig kompensiert werden. Kinderar
 
 Die Wirkungsökonomie soll Verbraucher:innen nicht moralisch überfordern. Heute müssen Menschen selbst recherchieren, ob ein Produkt fair, ökologisch, gesund, kreislauffähig oder demokratisch unproblematisch ist. Das ist unrealistisch und sozial unfair. Informationslast darf nicht auf Einzelne abgewälzt werden.
 
-Stattdessen sollen Wirkungsscore, Steuerklasse, Kernrisiken und Alternativen sichtbar werden. Wer frei entscheiden soll, braucht verständliche Information. Wirkung im Preisschild ist deshalb kein Bevormundungsinstrument, sondern ein Freiheitsinstrument: Es macht die Wirklichkeit sichtbar, die der Preis heute verdeckt.
+Stattdessen sollen Wirkungsscore, Prüfstatus, Kernrisiken und Alternativen sichtbar werden. Wer frei entscheiden soll, braucht verständliche Information. Wirkung im Preisschild ist deshalb kein Bevormundungsinstrument, sondern ein Freiheitsinstrument: Es macht die Wirklichkeit sichtbar, die der Preis heute verdeckt. Ein Score darf jedoch weder einen Tarif noch einen Endpreis automatisch erzeugen.
 
 ## Politische Anschlussfähigkeit
 
@@ -138,7 +138,7 @@ Stattdessen sollen Wirkungsscore, Steuerklasse, Kernrisiken und Alternativen sic
 | --- | --- |
 | Aufgabe der Politik | Preise, Steuern, Produktdaten und Verbraucherinformation so rahmen, dass reale Wirkung sichtbar und rückkoppelbar wird. |
 | Politische Rahmenbedingungen | Wirkungsregister, WÖk-IDs, DPP-Anschluss, Auditstandards, KMU-Erleichterungen, Übergangsfristen und Rechtsschutz. |
-| Ausgestaltungsspielraum | Parteien können Tempo, Steuerklassen, Pilotsektoren, Sozialausgleich, Förderung, Sanktionen und Grenzfälle unterschiedlich gewichten. |
+| Ausgestaltungsspielraum | Parteien können Tempo, Tarifrahmen, Pilotsektoren, Sozialausgleich, Förderung, Sanktionen und Grenzfälle unterschiedlich gewichten. |
 | Zielkonflikte | Kaufkraftschutz, Wettbewerbsfähigkeit, Datenlast, Innovation, Datenschutz, EU-Recht und internationale Lieferketten müssen austariert werden. |
 | Rollenverteilung | EU, Bund, Länder, Kommunen, Unternehmen, Handel, Prüfer:innen, Wissenschaft, Verbraucher:innen und Wirkungsrat tragen unterschiedliche Aufgaben. |
 | Übergang und Schutz | Kleine Unternehmen, Grundbedarf, vulnerable Haushalte und Transformationsbranchen brauchen Übergang, Beratung und soziale Abfederung. |
@@ -149,7 +149,7 @@ Stattdessen sollen Wirkungsscore, Steuerklasse, Kernrisiken und Alternativen sic
 
 Dieses Detailkonzept gehört auf die Portalseite Produkte & Konsum als Vertiefung unter „Produkte als Wirkungsträger“. Der bestehende Portaltext bleibt als Einstieg und Themenlandkarte erhalten. Dieses Dokument ersetzt keine guten Grundtexte, sondern ergänzt sie als fachliche Vertiefung.
 
-- Produktwirkungsrechner: veranschaulicht Produktdaten, Scorefelder und Steuerklasse.
+- Produktwirkungsrechner: veranschaulicht Produktdaten, Scorefelder, Engpasssignal und eine eingegebene Preis-Testannahme.
 - Produktscorecard-Viewer: zeigt WÖk-IDs, Benchmarks und FinalScore.
 - DPP-Demo: macht sichtbar, welche Daten in den Produktpass gehören.
 - Apfel-Rechner: nutzt das bekannte Beispiel als niedrigschwelligen Einstieg.
@@ -168,7 +168,7 @@ Produkte sind der alltagsnächste Einstieg in die Wirkungsökonomie. An ihnen wi
 | Quelle / Anschlussstelle | Bedeutung | Referenz |
 | --- | --- | --- |
 | WP Produkte | Grundlage für Produktbesteuerung, ehrliche Preise, Wirkungssteuer und Marktlogik. | Interne Arbeitsbibliothek / Wirkungsökonomie |
-| Beispiel Apfel | NACE-Zuordnung, CSRD/ESRS/GRI-Daten, Reverse Merit Order und Steuerklassen am Produktbeispiel. | Interne Arbeitsbibliothek / Wirkungsökonomie |
+| Beispiel Apfel | NACE-Zuordnung, CSRD/ESRS/GRI-Daten, Reverse Merit Order, Prüfstatus und Preis-Testannahme am Produktbeispiel. | Interne Arbeitsbibliothek / Wirkungsökonomie |
 | Technische Leitlinien WUStG | WÖk-IDs, Scorecards, Archetypen, Benchmarks, Datenqualität und Assurance. | Interne Arbeitsbibliothek / Wirkungsökonomie |
 | Wirkungsökonomie in der Lieferkette | Vorsteuerlogik, Lieferkettenscores, Reverse Merit Order und globale Anschlussfähigkeit. | Interne Arbeitsbibliothek / Wirkungsökonomie |
 | Die neue Ordnung des Wohlstands | Buchanker: Produkte, Märkte, Preise, Produktscorecards, Apfelbeispiel, DPP und WUStG. | Natalie Weber, 2026 |

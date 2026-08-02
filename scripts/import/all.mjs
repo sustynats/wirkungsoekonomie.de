@@ -1,7 +1,9 @@
 import { spawnSync } from "node:child_process";
 
 const steps = [
+  ["python3", ["scripts/publications/archive-historical-person-scoring-pdfs.py"]],
   ["python3", ["scripts/import/import-workpapers.py"]],
+  ["node", ["scripts/publications/archive-historical-person-scoring-pages.mjs"]],
   ["node", ["scripts/import/inventory.mjs"]],
   ["node", ["scripts/glossary/build-glossary-registry.mjs"]],
   ["node", ["scripts/glossary/build-term-links.mjs"]],

@@ -10,6 +10,19 @@ export const TERMINOLOGY_BASE_DATE = "2026-05-21";
 
 const htmlRoots = ["referenz", "dokumente"];
 
+function publicReferenceWording(value = "") {
+  return String(value)
+    .replace(/\blebenden Referenz\b/giu, "fortgeschriebenen Onlinefassung")
+    .replace(/\blebende Referenz\b/giu, "fortgeschriebene Onlinefassung")
+    .replace(/\blebenden Online-Referenzfassung\b/giu, "fortgeschriebenen Onlinefassung")
+    .replace(/\blebende Online-Referenz\b/giu, "fortgeschriebene Onlinefassung")
+    .replace(/\bLebende Online-Referenz\b/gu, "Fortgeschriebene Onlinefassung")
+    .replace(/\bLive-Referenz\b/gu, "Onlinefassung")
+    .replace(/\bLive-Reference\b/gu, "Onlinefassung")
+    .replace(/\bReviewstatus\b/gu, "Prüfstatus")
+    .replace(/\bReview-Status\b/gu, "Prüfstatus");
+}
+
 const priorityChapters = new Map([
   [6, {
     cluster: "Systemarchitektur",
@@ -33,7 +46,7 @@ const priorityChapters = new Map([
     cluster: "Begriffssystem",
     terms: ["Wirkungsrückkopplung", "Wirkungslenkung", "Wirkungsrisiko"],
     source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-    text: "Die lebende Referenz unterscheidet stärker zwischen Wirkungslenkung und Wirkungsrückkopplung. Wirkungslenkung richtet Anreize und Entscheidungen aus; Wirkungsrückkopplung führt bewertete Wirkung in Preise, Steuern, Kapitalzugang, Beschaffung, Förderung oder Entscheidungen zurück."
+    text: "Wirkungslenkung und Wirkungsrückkopplung sind verschiedene Dinge. Wirkungslenkung legt Richtung, Ziele, Schutzgrenzen, Prioritäten und Instrumentregeln fest. Wirkungsrückkopplung führt beobachtete Zustandsveränderungen, Evidenz und Unsicherheit in spätere Entscheidungen zurück. Erst die Rückkopplung zeigt, ob die Lenkung beibehalten, verändert oder beendet werden muss."
   }],
   [13, {
     cluster: "Begriffssystem",
@@ -57,7 +70,7 @@ const priorityChapters = new Map([
     cluster: "Begriffssystem",
     terms: ["Wirkungslenkung", "Wirkungsrückkopplung"],
     source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-    text: "Wirkungslenkung beschreibt die bewusste Ausrichtung von Anreizen und Entscheidungen. Wirkungsrückkopplung ist der Mechanismus, durch den bewertete Wirkung in wirtschaftliche, politische oder institutionelle Folgen übersetzt wird."
+    text: "Wirkungslenkung beschreibt die bewusste Ausrichtung von Anreizen und Entscheidungen: Ziele, Schutzgrenzen, Prioritäten und Instrumente. Wirkungsrückkopplung ist der Lernmechanismus: Beobachtungen über tatsächliche Zustandsveränderungen, Datenqualität und Unsicherheit fließen in die nächste Entscheidung ein. Eine Preis-, Steuer- oder Förderregel kann ein Instrument der Lenkung sein; sie ist nicht mit der Rückkopplung selbst gleichzusetzen."
   }],
   [23, {
     cluster: "Begriffssystem",
@@ -75,7 +88,7 @@ const priorityChapters = new Map([
     cluster: "Mess- und Bewertungslogik",
     terms: ["WÖk-ID", "Wirkungsindikator", "WÖk Master Items"],
     source: "WOeK_Master_Items_final_v1.2.xlsx",
-    text: "Das WÖk-ID-Register wird in der Live-Referenz aus der strukturierten XLSX-Quelle geführt. Die WÖk-ID ist der technische und fachliche Anker für Indikatoren, SDG/SDG+-Zuordnung, Datenqualität, Scorecards und digitale Produktpässe."
+    text: "Die WÖk-ID ist ein technischer und fachlicher Anker für Indikatoren, SDG/SDG+-Zuordnung, Datenqualität, Scorecards und digitale Produktpässe. Sie kennzeichnet Gegenstände, Prozesse oder Indikatoren – keine Menschen und keine persönliche Wertigkeit. Eine ID ersetzt weder eine Wirkungsgrenze noch eine begründete Bewertung."
   }],
   [32, {
     cluster: "Mess- und Bewertungslogik",
@@ -92,8 +105,8 @@ const priorityChapters = new Map([
   [34, {
     cluster: "Mess- und Bewertungslogik",
     terms: ["T-SROI", "NWI", "Netto-Wirkung", "Transformationswirkung"],
-    source: "Whitepaper T-SROI",
-    text: "T-SROI und NWI werden in der Live-Referenz getrennt: NWI beschreibt operative Netto-Wirkung unter Wirkungsgrenzen; T-SROI beschreibt Transformationswirkung, also Veränderungen von Systemlogiken, Standards, Anreizen und Handlungspfaden."
+    source: "T-SROI-Rechenstandard v1.1 (WÖK-Q-1024)",
+    text: "NWI und T-SROI beantworten unterschiedliche Fragen. Der NWI beschreibt ein nichtmonetäres Wirkungsprofil: gewichtete positive minus gewichtete negative Wirkungen, nur bei erfüllten Schutzgrenzen. Der T-SROI ist ein Geldverhältnis: Der Barwert kausal zurechenbarer direkter und transformativer Nutzen minus Schäden wird durch den Barwert der Kosten geteilt. Transformationswirkung ist dabei eine getrennt belegte Nutzenreihe, kein frei wählbarer Multiplikator. Attribution, Deadweight, Verdrängung, Diskontsatz, Systemgrenze und Unsicherheit müssen offen gelegt werden."
   }],
   [37, {
     cluster: "Steuerlogik",
@@ -147,13 +160,13 @@ const priorityChapters = new Map([
     cluster: "Automatisierung, Arbeit, Einkommen, Rente",
     terms: ["Wirkungseinkommen", "Wirkungsdividende", "WEstG"],
     source: "WP_Einkommen / Wenn Maschinen arbeiten",
-    text: "Wirkungseinkommen wird nicht als altes BGE geführt, sondern als wirkungsgebundene Rückkopplung gesellschaftlicher Wertschöpfung. WEstG und Wirkungseinkommensteuer sind von Wirkungseinkommen und Wirkungsdividende sprachlich zu trennen."
+    text: "Wirkungseinkommen ist ein modellhafter Ansatz für die Rückkopplung gesellschaftlicher Wertschöpfung, keine Personenbewertung und kein individualisiertes Belohnungssystem. WEstG und Wirkungseinkommensteuer sind von Wirkungseinkommen und Wirkungsdividende sprachlich zu trennen. Konkrete Ausgestaltung, Rechtsgrundlage, Verteilungswirkung und Missbrauchsschutz wären jeweils eigenständig zu prüfen."
   }],
   [58, {
     cluster: "Automatisierung, Arbeit, Einkommen, Rente",
     terms: ["Wirkungsrente", "Lebensleistung", "Wirkungseinkommen"],
     source: "WP_Rente / WP_Einkommen",
-    text: "Wirkungsrente bewertet Lebensleistung nicht nur als Erwerbsbiografie, sondern als Beitrag zu tragenden Lebens-, Sozial- und Demokratiefunktionen. Sie bleibt vom Wirkungseinkommen und von Steuerinstrumenten zu unterscheiden."
+    text: "Wirkungsrente ist ein modellhafter Finanzierungs- und Verteilungsansatz, keine moralische Rangliste von Lebensläufen und keine Bewertung einzelner Personen. Sie wäre vom Wirkungseinkommen und von Steuerinstrumenten zu unterscheiden; Ansprüche, Bedarfe, Gleichbehandlung, Datenschutz und demokratische Regeln dürften nicht durch einen individuellen Wirkungswert ersetzt werden."
   }],
   [80, {
     cluster: "Systemarchitektur",
@@ -183,7 +196,7 @@ const priorityChapters = new Map([
     cluster: "Governance und Fehlbarkeit",
     terms: ["Fehlbarkeit", "Wirkungswahrheit", "demokratische Kontrolle"],
     source: "Führender Begriffsleitfaden / Wirkungsrat_Konzept",
-    text: "Die Wirkungsökonomie beansprucht kein Wahrheitsmonopol. Ihre Fehlbarkeit wird als Governance-Anforderung geführt: offene Daten, Kritikfähigkeit, Einspruch, Korrektur, demokratische Kontrolle und Versionsgeschichte sind Teil der Architektur."
+    text: "Die Wirkungsökonomie beansprucht kein Wahrheitsmonopol. Ihre Fehlbarkeit ist eine Governance-Anforderung: nachvollziehbare Daten, Kritikfähigkeit, Einspruch, Korrektur, demokratische Kontrolle und dokumentierte Änderungen gehören zur Architektur."
   }]
 ]);
 
@@ -247,45 +260,159 @@ function routeFor(file) {
   return rel.endsWith("/index.html") ? `/${rel.slice(0, -"/index.html".length)}/` : `/${rel}`;
 }
 
-function liveNotice() {
-  return `<section class="callout live-reference-notice">
-          <h2>Live-Reference-Hinweis 2026.2</h2>
-          <p>Diese Seite gehört zur lebenden Online-Referenzfassung ${LIVE_REFERENCE_VERSION}. Die Source-Original-Fassung bleibt über Originaldatei und Importversion zitierfähig; begriffliche Präzisierungen, Reviewstatus und Aktualisierungen werden im Live-Reference-Changelog dokumentiert.</p>
-        </section>`;
-}
-
 function addendumHtml(chapterNumber, update) {
   const sectionId = `woek-main-2026-k${String(chapterNumber).padStart(3, "0")}-lr-2026-2`;
   const terms = update.terms.map((term) => `<li>${term}</li>`).join("");
-  return `<aside id="${sectionId}" class="callout live-reference-addendum" data-document-id="woek-main-2026" data-section-id="${sectionId}" data-version="${LIVE_REFERENCE_VERSION}" data-content-hash="${hash(update.text)}">
-          <h2>Aktualisierung der lebenden Online-Referenz 2026.2</h2>
-          <p><strong>Cluster:</strong> ${update.cluster}</p>
-          <p>${update.text}</p>
-          <p><strong>Quelle der Aktualisierung:</strong> ${update.source}</p>
-          <p><strong>Betroffene Begriffe:</strong></p>
+  return `<aside id="${sectionId}" class="callout fachliche-einordnung">
+          <h2>${update.cluster}: fachliche Einordnung</h2>
+          <p>${publicReferenceWording(update.text)}</p>
+          <p><strong>Weiterführende Grundlage:</strong> ${update.source}</p>
+          <p><strong>Zentrale Begriffe:</strong></p>
           <ul>${terms}</ul>
-          <p><a href="../../docs/LIVE_REFERENCE_CHANGELOG.md">Changelog der Live-Referenz</a></p>
         </aside>`;
 }
 
-function ensureMeta(html, reviewStatus) {
-  let next = html;
-  next = next.replaceAll(`data-version="${IMPORT_VERSION}"`, `data-version="${LIVE_REFERENCE_VERSION}"`);
-  next = next.replace(/<dt>Web-Version<\/dt><dd>.*?<\/dd>/g, `<dt>Web-Version</dt><dd>${LIVE_REFERENCE_VERSION}</dd>`);
-  next = next.replace(/<dt>Reviewstatus<\/dt><dd>.*?<\/dd>/g, `<dt>Reviewstatus</dt><dd>${reviewStatus}</dd>`);
-  next = next.replace(/<dt>Status<\/dt><dd>source-original \/ online strukturierter Import<\/dd>/g, "<dt>Status</dt><dd>live-reference / source-original erhalten</dd>");
-  if (!next.includes("<dt>Import-Version</dt>")) {
-    next = next.replace(/(<dt>Source-Version<\/dt><dd>.*?<\/dd>)/, `$1\n        <dt>Import-Version</dt><dd>${IMPORT_VERSION}</dd>`);
+function removeNestedElementByClass(html, className) {
+  const escaped = String(className).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const startPattern = new RegExp(`<([a-z][\\w-]*)\\b[^>]*\\bclass=(["'])[^"']*\\b${escaped}\\b[^"']*\\2[^>]*>`, "ig");
+  let match;
+  while ((match = startPattern.exec(html))) {
+    const tag = match[1];
+    const tokenPattern = new RegExp(`<\\/?${tag}\\b[^>]*>`, "ig");
+    tokenPattern.lastIndex = match.index + match[0].length;
+    let depth = 1;
+    let token;
+    let end = -1;
+    while ((token = tokenPattern.exec(html))) {
+      if (token[0].startsWith("</")) depth -= 1;
+      else if (!/\/\s*>$/.test(token[0])) depth += 1;
+      if (depth === 0) {
+        end = tokenPattern.lastIndex;
+        break;
+      }
+    }
+    if (end < 0) break;
+    html = `${html.slice(0, match.index)}${html.slice(end)}`;
+    startPattern.lastIndex = 0;
   }
-  if (!next.includes("<dt>Live-Reference-Version</dt>")) {
-    next = next.replace(/(<dt>Import-Version<\/dt><dd>.*?<\/dd>)/, `$1\n        <dt>Live-Reference-Version</dt><dd>${LIVE_REFERENCE_VERSION}</dd>`);
-  }
-  if (!next.includes("<dt>Terminologiebasis</dt>")) {
-    next = next.replace(/(<dt>Reviewstatus<\/dt><dd>.*?<\/dd>)/, `$1\n        <dt>Terminologiebasis</dt><dd>${TERMINOLOGY_BASE}</dd>`);
-  }
-  if (!next.includes("<dt>Terminologiebasis-Stand</dt>")) {
-    next = next.replace(/(<dt>Terminologiebasis<\/dt><dd>.*?<\/dd>)/, `$1\n        <dt>Terminologiebasis-Stand</dt><dd>${TERMINOLOGY_BASE_DATE}</dd>`);
-  }
+  return html;
+}
+
+function ensureMeta(html) {
+  const citationSummary = `<section class="meta-box citation-summary">
+      <h2>Lesen und zitieren</h2>
+      <p>Die Webfassung ist nach Kapiteln und Abschnitten gegliedert. Quellen und Begriffe sind an den jeweiligen Fundstellen verlinkt.</p>
+    </section>`;
+  let cleaned = removeNestedElementByClass(html, "version-summary");
+  cleaned = removeNestedElementByClass(cleaned, "fulltext-status-summary");
+  cleaned = removeNestedElementByClass(cleaned, "live-reference-notice");
+  cleaned = removeNestedElementByClass(cleaned, "technical-meta");
+  return cleaned
+    .replace(/<section class="callout live-reference-notice">[\s\S]*?<\/section>/gi, "")
+    .replace(/<aside\b[^>]*class="[^"]*live-reference-addendum[^"]*"[^>]*>[\s\S]*?<\/aside>/gi, "")
+    .replace(/<section\b[^>]*class="[^"]*\b(?:version-summary|fulltext-status-summary|live-reference-notice)[^"]*"[^>]*>[\s\S]*?<\/section>/gi, citationSummary)
+    .replace(/<section class="meta-box">\s*<h2>(?:Version und Reviewstatus|Stand dieser Onlinefassung|Versionsinformationen)<\/h2>[\s\S]*?<\/section>/gi, citationSummary)
+    .replace(/<details\b[^>]*class="[^"]*\btechnical-meta\b[^"]*"[^>]*>[\s\S]*?<\/details>/gi, "")
+    .replace(/<dt>(?:Onlinefassung-(?:Version|Stand)|Web-Version)<\/dt><dd>[\s\S]*?<\/dd>/gi, "")
+    .replace(/\sdata-(?:document-id|section-id|paragraph-id|version|content-hash)=(?:"[^"]*"|'[^']*')/gi, "")
+    .replace(/\b(\d+\.\d+)-live-reference\b/gi, "$1")
+    .replace(/(<section class="meta-box citation-summary">[\s\S]*?<\/section>)\s*<\/section>/gi, "$1");
+}
+
+function replaceParagraphById(html, id, body) {
+  const pattern = new RegExp(`(<p\\b[^>]*\\bid="${id}"[^>]*)>[\\s\\S]*?<\\/p>`, "i");
+  return html.replace(pattern, `$1>${body}</p>`);
+}
+
+// Das Whitepaper von 2025 bleibt als historische Quelle erhalten. In einer
+// aktuellen Referenz darf es aber weder als "neuer Standard" erscheinen noch
+// eine überholte Multiplikatorformel stillschweigend stützen. Diese Korrektur
+// ändert nur Quellenabsätze des Online-Buchs; die historische Originalfassung
+// unter /dokumente/ wird separat und sichtbar als Archivfassung behandelt.
+//
+// Wichtig: Diese Konstanten sind zugleich das kanonische Ziel jeder
+// Normalisierung. Ein Build darf denselben Hinweis beliebig oft anwenden,
+// ohne erneut "Historisches" oder den Verweis auf den Rechenstandard
+// anzuhängen.
+const RETIRED_T_SROI_CITATION = "Historisches Whitepaper T-SROI, 2025; für aktuelle Rechenregeln: T-SROI-Rechenstandard v1.1, 2026 (WÖK-Q-1024)";
+const RETIRED_T_SROI_MULTIPLIER_NOTE = "historisch verwendete Multiplikatorlogik (durch v1.1 ersetzt)";
+
+const retiredTSroiCitationPattern = /(?:\bHistorisches\s+)*(?:Whitepaper\s+T[-‑–]SROI(?:\s*-\s*[^,;<]+)?(?:,?\s*(?:September\s*)?2025)?)(?:\s*;\s*für\s+aktuelle\s+Rechenregeln:\s*T[-‑–]SROI-Rechenstandard\s+v1\.1,\s*2026\s*\(W[ÖO]K-Q-1024\))*/giu;
+const retiredTSroiMultiplierPattern = /(?:\bhistorisch\s+verwendete\s+)*(?:Transformationsmultiplikator|Multiplikatorlogik)(?:\s*\(durch\s+v1\.1\s+ersetzt\))*/giu;
+const referenceSourceIdPattern = /^\[?((?:I|E)-[A-Z0-9]+(?:-[A-Z0-9]+)*)\]?\s*/iu;
+
+export function normalizeRetiredTSroiSourceCitation(body = "") {
+  return String(body)
+    .replace(retiredTSroiCitationPattern, RETIRED_T_SROI_CITATION)
+    .replace(retiredTSroiMultiplierPattern, RETIRED_T_SROI_MULTIPLIER_NOTE)
+    .replace(/\bMultiplikatoreffekte\b/giu, "belegte Wirkpfade (keine Rechenmultiplikatoren)");
+}
+
+function updateRetiredTSroiSourceCitations(html) {
+  return html.replace(/<p\b([^>]*)>([\s\S]*?)<\/p>/gi, (whole, attributes, body) => {
+    const text = body.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+    const sourceId = text.match(referenceSourceIdPattern)?.[1];
+    if (!sourceId || !/Whitepaper\s+T[-‑–]SROI/i.test(text)) return whole;
+
+    const revised = normalizeRetiredTSroiSourceCitation(body);
+
+    return revised === body ? whole : `<p${attributes}>${revised}</p>`;
+  });
+}
+
+function updateCurrentTSroiMethodLinks(html) {
+  return html
+    .replace(
+      /<a\b([^>]*?)href=(['"])\.\.\/\.\.\/dokumente\/whitepaper-t-sroi\/\2([^>]*)>\s*Whitepaper T-SROI\s*<\/a>/gi,
+      '<a$1href=$2../../quellenarchiv/wok-q-1024/$2$3>T-SROI-Rechenstandard v1.1</a>'
+    )
+    .replace(
+      /(<strong>Weiterführende Grundlage:<\/strong>)\s*Whitepaper T-SROI/gi,
+      '$1 <a href="../../quellenarchiv/wok-q-1024/">T-SROI-Rechenstandard v1.1</a> (das Whitepaper von 2025 ist als historische Vorfassung dokumentiert)'
+    );
+}
+
+export function applyCurrentMethodologyCorrections(html, chapterNumber, { currentReference = false } = {}) {
+  let next = currentReference ? updateCurrentTSroiMethodLinks(updateRetiredTSroiSourceCitations(html)) : html;
+  const corrections = {
+    32: {
+      "woek-main-2026-k032-s004-p004": "Der NWI trennt zwei Aufgaben, die leicht verwechselt werden. Zuerst übersetzt die Scorecard Rohdaten in dimensionsgleiche Feldscores s<sub>i</sub> auf einer vorher dokumentierten Skala, zum Beispiel von −3 bis +3. Daraus kann ein beschreibender Profilwert P = Σ<sub>i</sub> w<sub>i</sub>s<sub>i</sub> mit vorab festgelegten Gewichten w<sub>i</sub> und Σw<sub>i</sub> = 1 entstehen. Danach prüft das Schutz-Gate G die roten Linien, kritischen Felder, Systemgrenze, Zurechnung und Datenqualität. NWI = P darf nur bei G = 1 ausgewiesen werden. Datenqualität und Unsicherheit verändern nicht still die Punkte; sie bestimmen Evidenzstatus, Intervall und gegebenenfalls die Blockade.",
+      "woek-main-2026-k032-s004-p005": "Ein positiver NWI bedeutet deshalb nur bei offenem Gate: Das dokumentierte Profil ist im definierten Wirkungsraum netto tragfähig. Ein niedriger oder negativer Profilwert bleibt kritisch. Fehlende Evidenz ist etwas Drittes: Sie ist nicht der neutrale Messwert 0 und auch kein versteckter Minuspunkt, sondern „nicht bewertbar“ oder „Prüfung nötig“. So wird Unsicherheit sichtbar, ohne Datenlücken zu belohnen oder kleine Akteure pauschal zu bestrafen.",
+      "woek-main-2026-k032-s004-p010": "Vom T-SROI unterscheidet sich der NWI klar. Der NWI verdichtet ein nichtmonetäres, dimensionsgleiches Wirkungsprofil und seine Schutzprüfung. Der T-SROI rechnet ausschließlich belegte Nutzen, Schäden und Ressourcen in Euro derselben Preisbasis. Transformationswirkung wird dort nur als separat nachgewiesener zukünftiger Nutzenstrom berücksichtigt, nicht als Multiplikator für ein Profil.",
+      "woek-main-2026-k032-s004-p011": "Ein einfaches Beispiel macht die Reihenfolge greifbar: Klima +2, Arbeit +1 und Gesundheit 0 ergeben bei Gewichten 0,4, 0,4 und 0,2 den Profilwert P = 1,2. Liegt Arbeit als kritisches Feld jedoch bei −1 und verlangt die vorab gesetzte Schwelle mindestens 0, bleibt G = 0: Die Scorecard zeigt die Werte, aber ein positiver NWI wird nicht ausgegeben. Erst wenn das kritische Feld und die Evidenzlage verbessert sind, kann der Profilwert als NWI dienen.",
+      "woek-main-2026-k032-s004-p013": "Damit wird aus der Scorecard ein steuerungsfähiges Instrument. Die Scorecard zeigt Rohdaten, Einheiten, Feldscores, Evidenz und Grenzen. Der NWI verdichtet nur das geprüfte, dimensionsgleiche Profil bei offenem Gate. Der T-SROI fragt anschließend und getrennt, ob belegte direkte und transformative Nettonutzenströme in Euro einen Transformationspfad tragen.",
+      "woek-main-2026-k032-s007-p008": "<a class=\"source-chip\" href=\"../../quellenarchiv/wok-q-1024/\" data-source-id=\"I-K32-7\">[I-K32-7]</a> Weber, Natalie: T-SROI-Rechenstandard v1.1, 2026. Grundlage für die Trennung von NWI, IOI und T-SROI, die monetäre Nutzen-, Schaden- und Kostenlogik, das Schutz-Gate sowie die Regel, dass Transformationswirkung nur als separat belegter Nutzenstrom in Euro in die Rechnung eingeht."
+    },
+    33: {
+      "woek-main-2026-k033-s002-p005": "RMO-Grenzwert = min<sub>i ∈ C</sub>(s<sub>i</sub>), wenn keine rote Linie aktiv ist. C ist die vor der Bewertung dokumentierte Menge kritischer Wirkungsfelder; s<sub>i</sub> ist der gemessene Feldscore. Der RMO-Grenzwert begrenzt eine Gesamtentscheidung, ist aber nicht selbst der NWI und keine Durchschnittsnote.",
+      "woek-main-2026-k033-s002-p006": "Für jedes kritische Feld wird vorab eine Schwelle τ<sub>i</sub> dokumentiert. Liegt s<sub>i</sub> unter τ<sub>i</sub>, bleibt das Schutz-Gate geschlossen; bei roter Linie ebenfalls. Ein fehlender Messwert ist nicht 0, sondern „Evidenz fehlt“ und löst je nach Risiko einen Nachweispfad oder die Blockade aus. Die Skala von −3 bis +3 ist nur eine klar markierte Modellskala; ihre Anker und Schwellen müssen je Anwendung veröffentlicht werden.",
+      "woek-main-2026-k033-s002-p009": "Ein einfaches Beispiel: Ein Produkt erhält Klima +2, Ressourcen +1, Arbeit und Fairness −1, Gesundheit +2. Wenn Arbeit und Fairness zum kritischen Set C gehören und die vorab gesetzte Schwelle τ<sub>Arbeit</sub> = 0 lautet, ist der RMO-Grenzwert −1 und das Schutz-Gate bleibt geschlossen. Ein Durchschnitt könnte positiv sein; er darf die Blockade nicht überschreiben. Erst nach belegter Verbesserung des kritischen Feldes ist eine positive Gesamtentscheidung möglich."
+    },
+    34: {
+    "woek-main-2026-k034-s002-p001": "T-SROI macht nur den Teil einer Transformationswirkung rechenbar, der als eigener künftiger Nutzenstrom in Euro belegt ist. Er ersetzt den NWI nicht: Der NWI beschreibt das operative Wirkungsprofil und die Schutzprüfung. T-SROI fragt anschließend, welcher diskontierte direkte und transformative Nettonutzen je diskontiertem Ressourceneuro entsteht.",
+    "woek-main-2026-k034-s002-p003": "NWI = Σᵢ wᵢ sᵢ, nur bei offenem Schutz-Gate G = 1. Die Feldscores sᵢ liegen auf derselben vorher dokumentierten Skala; die Gewichte wᵢ sind vor der Bewertung festzulegen und zu dokumentieren. Bei G = 0 ist der NWI nicht positiv ausweisbar.",
+    "woek-main-2026-k034-s002-p004": "IOI<sub>EUR</sub> = Σ<sub>t=1…T</sub>[(B<sub>direkt,t</sub> · a<sub>t</sub> · (1 − d<sub>t</sub>) · (1 − v<sub>t</sub>) − S<sub>t</sub>) / (1 + r)<sup>t</sup>] ÷ Σ<sub>t=0…T</sub>[(I<sub>t</sub> + K<sub>t</sub>) / (1 + r<sub>k</sub>)<sup>t</sup>]. Der IOI bezieht sich auf den kausal zugerechneten direkten Nettonutzen in Euro je Ressourceneuro. Die Anfangsinvestition I<sub>0</sub> steht im Nenner bei t = 0 und wird nicht abgezinst. Ein NWI-Punktwert oder eine qualitative Bilanz darf nicht unbemerkt als Euro-Zähler verwendet werden.",
+    "woek-main-2026-k034-s002-p005": "T-SROI = Σ<sub>t=1…T</sub>[((B<sub>direkt,t</sub> + B<sub>transformativ,t</sub>) · a<sub>t</sub> · (1 − d<sub>t</sub>) · (1 − v<sub>t</sub>) − S<sub>t</sub>) / (1 + r)<sup>t</sup>] ÷ Σ<sub>t=0…T</sub>[(I<sub>t</sub> + K<sub>t</sub>) / (1 + r<sub>k</sub>)<sup>t</sup>]. Für das Gate gilt zusätzlich PV<sub>N</sub><sup>L</sup> = Σ<sub>t=1…T</sub>[((B<sub>direkt,t</sub> + B<sub>transformativ,t</sub>) · a<sub>t</sub> · (1 − d<sub>t</sub>) · (1 − v<sub>t</sub>) · (1 − u<sub>t</sub>) − S<sub>t</sub>) / (1 + r)<sup>t</sup>]. T ist eine ganze Zahl von Jahren mit T ≥ 1; I<sub>0</sub> steht bei t = 0 und wird nicht abgezinst.",
+    "woek-main-2026-k034-s002-p006": "Das Schutz-Gate G ist kein Multiplikator in der Formel. Es ist die Veröffentlichungsvoraussetzung: Eine positive T-SROI- oder IOI-Aussage ist nur bei G = 1 zulässig. G bleibt geschlossen bei roter Linie, negativem kritischem Kernfeld, nicht dokumentierter Systemgrenze oder Zurechnung, unzureichender Datenqualität, nicht positiver Ressourcenbasis oder PV<sub>N</sub><sup>L</sup> ≤ 0. u ist ein dokumentierter konservativer Szenarioabschlag auf den beanspruchten Nutzen; er reduziert nicht den Schaden S. PV<sub>N</sub><sup>L</sup> ist keine statistische Konfidenzgrenze. Dann lautet das Ergebnis „blockiert“ oder „nicht bewertbar“, nicht null und nicht positiv.",
+    "woek-main-2026-k034-s002-p007": "Formelkasten 34-2: monetäre Arbeitsformel",
+    "woek-main-2026-k034-s002-p008": "Der Zähler enthält für jedes Jahr den kausal reduzierten direkten Nutzen B<sub>direkt</sub> und den separat belegten transformativen Nutzen B<sub>transformativ</sub>, abzüglich der konservativ angesetzten Schäden S. Der Nenner enthält Investition I und inkrementelle Kosten K. Alle Terme sind Euro derselben Preisbasis und werden mit offengelegten Diskontsätzen abgezinst. PV<sub>N</sub><sup>L</sup> bildet dieselbe Rechnung als vorsichtige Szenariountergrenze, indem u nur den beanspruchten Nutzen kürzt.",
+    "woek-main-2026-k034-s002-p009": "a steht für Attribution, d für Counterfactual beziehungsweise Deadweight und v für Verdrängung des beanspruchten Nutzens. Diese Faktoren reduzieren nur den beanspruchten Nutzen. Auch u reduziert nur diesen Nutzen. Schäden S werden weder mit a, d, v noch mit u pauschal verringert: Eine geringere Schaden-Zurechnung braucht eine eigene belegte Gegenfaktik. Datenqualität, Unsicherheit, Diffusion, Resilienz und Zeitwirkung sind keine frei wählbaren Multiplikatoren. Sie werden als Evidenz, Sensitivität, Intervall, Wirkpfad und Schutz-Gate dokumentiert; ein monetärer transformativer Nutzenstrom entsteht erst mit eigener Ursache-Wirkungs-Begründung und Preisbasis.",
+      "woek-main-2026-k034-s002-p010": "Die Kennzahlen bleiben damit getrennt: Der NWI verdichtet ein dimensionsgleiches Wirkungsprofil auf einer dokumentierten Skala. Der IOI setzt nur monetär bewerteten direkten Nettonutzen in Euro ins Verhältnis zu Kapital in Euro. Der T-SROI ergänzt zusätzlich separat belegte transformative Nutzenströme in Euro. Reichweite, Datenqualität, Resilienz oder ein überzeugendes Narrativ sind wichtig für die Prüfung, aber keine Rechenfaktoren, die aus sich heraus einen höheren Geldwert erzeugen.",
+      "woek-main-2026-k034-s008-p002": "<a class=\"source-chip\" href=\"../../quellenarchiv/wok-q-1024/\" data-source-id=\"I-K34-1\">[I-K34-1]</a> Weber, Natalie: T-SROI-Rechenstandard v1.1, 2026. Grundlage für die Abgrenzung von ROI, SROI, NWI, IOI und T-SROI sowie für die Euro-zu-Euro-Formel mit separat belegten transformativen Nutzenströmen.",
+      "woek-main-2026-k034-s008-p006": "<a class=\"source-chip\" href=\"../../quellenarchiv/wok-q-1024/\" data-source-id=\"I-K34-5\">[I-K34-5]</a> Weber, Natalie: T-SROI-Rechenstandard v1.1, 2026. Grundlage für die Prüfung von Diffusion, Standardsetzung, Infrastruktur und Resilienz als Wirkpfad-Evidenz. Sie werden nur bei eigenständigem Nachweis und gleicher Preisbasis als Nutzenstrom in Euro berücksichtigt, nicht als Multiplikator.",
+      "woek-main-2026-k034-s008-p007": "<a class=\"source-chip\" href=\"../../quellenarchiv/wok-q-1024/\" data-source-id=\"I-K34-6\">[I-K34-6]</a> Weber, Natalie: T-SROI-Rechenstandard v1.1, 2026. Grundlage für die Anwendung in Unternehmen, öffentlicher Finanzierung und Portfolios: Systemgrenze, Zurechnung, Unsicherheit, Diskontierung und Schutz-Gate sind offen zu legen.",
+      "woek-main-2026-k034-s008-p008": "<a class=\"source-chip\" href=\"../../quellenarchiv/wok-q-1024/\" data-source-id=\"I-K34-7\">[I-K34-7]</a> Weber, Natalie: T-SROI-Rechenstandard v1.1, 2026. Grundlage für die gestufte Impact-Controlling-Architektur aus KII, Scorecard, NWI, IOI und T-SROI sowie für die Trennung von Profilwert, monetärem direkten Nettonutzen und transformativem Nutzenstrom."
+    },
+    35: {
+      "woek-main-2026-k035-s001-p005": "Für die Wirkungsökonomie ist diese technische Idee grundlegend, aber nicht ausreichend. Der DPP speichert Daten. Die WÖk-ID ordnet Wirkungsindikatoren. Benchmarks und Skalen bewerten Daten. Scorecards bündeln sie. T-SROI kann daraus nur dann eine monetäre Transformationsrechnung bilden, wenn direkte und transformative Nutzenströme, Schäden und Ressourcen in Euro derselben Preisbasis belegt sind. Diffusion, Resilienz und Reichweite bleiben Wirkpfad-Evidenz, solange sie nicht selbst als getrennte Nutzenströme nachgewiesen sind.",
+      "woek-main-2026-k035-s004-p004": "Steuerungsdaten entstehen, wenn diese Informationen entscheidungsrelevant werden. Ein Produktpass macht Daten am Produkt verfügbar. Ein Datenraum macht sie verknüpfbar. WÖk-IDs machen sie adressierbar. Benchmarks und Scorecards machen sie bewertbar. Sie liefern auch die Evidenz, um mögliche direkte oder transformative Nutzenströme, Schäden und Risiken getrennt zu prüfen. T-SROI darf erst danach und nur für monetär dokumentierte Ströme berechnet werden. Damit können Daten in Entscheidungen zurückkehren.",
+      "woek-main-2026-k035-s005-p001": "Teil V hat die Mess- und Datenarchitektur der Wirkungsökonomie aufgebaut. Kapitel 30 hat gezeigt, warum Wirkung messbar werden muss, ohne auf Zahlen reduziert zu werden. Kapitel 31 hat die WÖk-ID als Adresse der Wirkung eingeführt. Kapitel 32 hat Benchmarks, Skalen und Scorecards als Übersetzung von Daten in Bewertung erklärt. Kapitel 33 hat mit der Reverse Merit Order klargestellt, dass schwere Schäden nicht durch gute Werte an anderer Stelle verdeckt werden dürfen. Kapitel 34 hat die Bedingungen einer monetären T-SROI-Rechnung geklärt: separat belegte direkte und transformative Nutzenströme, Schäden, Ressourcen, Zurechnung, Preisbasis und Schutz-Gate. Kapitel 35 zeigt nun, wie digitale Produktpässe und Wirkungsdatenräume die dazu nötigen Daten verfügbar, prüfbar, verknüpfbar und entscheidungsrelevant machen."
+    }
+  };
+  const paragraphs = corrections[chapterNumber];
+  if (!paragraphs) return next;
+
+  for (const [id, body] of Object.entries(paragraphs)) next = replaceParagraphById(next, id, body);
   return next;
 }
 
@@ -439,10 +566,8 @@ export function applyLiveReferenceLayer() {
     const route = routeFor(file);
     const chapterNumber = chapterNumberFromFile(file);
     const hasPriorityAddendum = chapterNumber && priorityChapters.has(chapterNumber);
-    const reviewStatus = hasPriorityAddendum ? "delta-reviewed" : route.startsWith("/referenz/") ? "partially-delta-reviewed" : "partially-delta-reviewed";
-
-    html = ensureMeta(html, reviewStatus);
-    if (!html.includes("live-reference-notice")) html = insertAfterFirstMeta(html, liveNotice());
+    html = ensureMeta(html);
+    html = applyCurrentMethodologyCorrections(html, chapterNumber, { currentReference: route.startsWith("/referenz/") });
 
     if (hasPriorityAddendum) {
       const update = priorityChapters.get(chapterNumber);
@@ -485,6 +610,7 @@ export function applyLiveReferenceLayer() {
       }
     }
 
+    html = publicReferenceWording(html);
     html = stripTrailingWhitespace(dedupeHtmlIds(html));
 
     if (html !== original) fs.writeFileSync(file, html);
@@ -593,7 +719,7 @@ export function buildLogicFindings() {
       term: "T-SROI",
       required: "T-SROI und NWI",
       issueType: "logic-inconsistency",
-      source: "Whitepaper T-SROI"
+      source: "T-SROI-Rechenstandard v1.1 (WÖK-Q-1024)"
     },
     {
       route: "/referenz/kapitel-038-das-wustg-und-die-produktwirkungssteuer/",
@@ -785,8 +911,9 @@ export function checkLiveReferenceVersion() {
   ];
   const errors = required.filter((file) => !fs.existsSync(file)).map((file) => `Missing ${file}`);
   const portal = fs.existsSync("referenz/index.html") ? fs.readFileSync("referenz/index.html", "utf8") : "";
-  if (!portal.includes(LIVE_REFERENCE_VERSION)) errors.push("/referenz/ does not expose 2026.2-live-reference.");
-  if (!portal.includes("Import-Version")) errors.push("/referenz/ does not expose importVersion.");
+  if (/\b(?:Live-Reference|Import-Version|Source-Hash)\b/i.test(portal)) {
+    errors.push("/referenz/ still exposes internal production metadata.");
+  }
   const manifest = fs.existsSync("public/data/content-manifest.json") ? JSON.parse(fs.readFileSync("public/data/content-manifest.json", "utf8")) : { entries: [] };
   if (!manifest.entries?.some((entry) => entry.webVersion === LIVE_REFERENCE_VERSION)) errors.push("content-manifest does not include live-reference entries.");
   return errors;
@@ -804,7 +931,12 @@ export function checkLogicConsistency() {
     }
   }
   const k34 = fs.readFileSync("referenz/kapitel-034-t-sroi-und-systemische-transformationsmessung/index.html", "utf8");
-  if (!/T-SROI und NWI/.test(k34)) errors.push("T-SROI and NWI distinction missing.");
+  if (!k34.includes("NWI = Σᵢ wᵢ sᵢ") || !k34.includes("T-SROI = Σ<sub>t=1…T</sub>[((B<sub>direkt,t</sub> + B<sub>transformativ,t</sub>)") || !k34.includes("Σ<sub>t=0…T</sub>[(I<sub>t</sub> + K<sub>t</sub>)") || !k34.includes("PV<sub>N</sub><sup>L</sup>") || !k34.includes("(1 − u<sub>t</sub>)")) {
+    errors.push("T-SROI and NWI distinction missing.");
+  }
+  if (/T-SROI\s*=\s*Transformationswirkung\s*[×*]|\(T_struktur\s*[×*]\s*H_sys/i.test(k34)) {
+    errors.push("Chapter 34 still contains the retired T-SROI multiplier formula.");
+  }
   const k38 = fs.readFileSync("referenz/kapitel-038-das-wustg-und-die-produktwirkungssteuer/index.html", "utf8");
   if (!/WStG/.test(k38) || !/WUStG/.test(k38)) errors.push("WStG/WUStG distinction missing.");
   return errors;

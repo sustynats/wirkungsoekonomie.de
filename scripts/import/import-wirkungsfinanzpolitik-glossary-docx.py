@@ -377,7 +377,7 @@ def normalize_entry(entry: Entry) -> dict[str, Any]:
     meta_description = section_text(entry, "Meta-Beschreibung")
     category = entry.meta.get("Kategorie", "Wirkungsfinanzpolitik")
     term_type = entry.meta.get("Begriffstyp", "Wirkungsfinanzpolitik / WÖk-Prägungsbegriff")
-    version = entry.meta.get("Stand / Version", "Glossar-Erweiterung v0.1")
+    version = entry.meta.get("Stand / Version", "1.0")
     source_field = entry.meta.get("Quellenfeld", "")
     categories = unique(
         [

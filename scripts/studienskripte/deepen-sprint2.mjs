@@ -443,33 +443,28 @@ const lectures = [
     code: "V33",
     title: "NWI und T-SROI unterscheiden",
     thesis:
-      "NWI und T-SROI beantworten unterschiedliche Fragen: Der Netto-Wirkungs-Index verdichtet ein Wirkungsprofil, T-SROI beschreibt Transformationswirkung im Verhältnis zu eingesetzten Ressourcen und langfristigen Systemeffekten.",
+      "NWI, IOI und T-SROI beantworten unterschiedliche Fragen: Der NWI ordnet ein Wirkungsprofil auf einer dokumentierten Skala; IOI und T-SROI rechnen getrennte, kausal begrenzte Euroströme nur bei offenem Schutz-Gate.",
     pages: [
-      "referenz/kapitel-034-t-sroi-und-systemische-transformationsmessung/index.html",
-      "werkzeuge/netto-wirkungs-index/index.html",
-      "werkzeuge/t-sroi/index.html",
-      "werkzeuge/impact-controlling/t-sroi/index.html",
       "werkzeuge/impact-controlling/index.html",
-      "werkzeuge/impact-controlling/detailkonzepte/t-sroi/index.html",
-      "werkzeuge/impact-controlling/dossiers/t-sroi/index.html",
       "werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/index.html",
-      "werkzeuge/impact-controlling/methodenpapiere/scorecards-benchmarks-nwi/index.html",
-      "dokumente/whitepaper-t-sroi/index.html",
-      "wirkungsfelder/gesundheit-pflege/tools/t-sroi-praevention-gesundheitsinvestitionen/index.html",
+      "begriffe/nwi/index.html",
+      "begriffe/impact-of-investment/index.html",
+      "begriffe/t-sroi/index.html",
     ],
     matrix: [
-      ["NWI", "verdichtetes Bewertungsprofil positiver Netto-Wirkung", "Index als absolute Wahrheit lesen", "Profil, Datenqualität, Grenzen und Sperrlogik mitlesen"],
-      ["T-SROI", "Verhältnis von Transformationswirkung zu Ressourceneinsatz", "klassischen ROI mit Wirkung verwechseln", "langfristige Systemwirkung und vermiedene Schäden berücksichtigen"],
+      ["NWI", "operatives Wirkungsprofil auf dokumentierter Skala", "Punkte als Euro lesen", "Profil, Datenqualität, Grenzen und Sperrlogik mitlesen"],
+      ["IOI", "direkter monetarisierter Nettonutzen je Ressourceneuro", "NWI als Zähler verwenden", "gleichpreisige Nutzen-, Schaden- und Ressourcenströme getrennt rechnen"],
+      ["T-SROI", "IOI mit separat belegtem transformativem Nutzenstrom", "Wirkpfad-Evidenz als freien Rechenfaktor verwenden", "eigenen Wirkpfad, Gegenhypothese, Zurechnung und Unsicherheit dokumentieren"],
       ["Scorecard", "mehrdimensionales Vorprofil", "Scorecard und Index gleichsetzen", "Scorecard erklärt, NWI verdichtet"],
       ["Entscheidung", "Rückkopplung in Budget, Beschaffung, Kapital oder Strategie", "Kennzahl als Bericht beenden", "Kennzahl muss Steuerung verändern"],
     ],
     cases: [
-      "Ein Präventionsprogramm kann kurzfristig teuer wirken, aber über vermiedene Krankheit, Pflegebedarf, Arbeitsausfall und familiäre Belastung hohe Transformationswirkung entfalten. Hier hilft T-SROI.",
-      "Ein Produktvergleich mit mehreren Wirkungsfeldern braucht zuerst Scorecard und NWI, bevor über Preis-, Beschaffungs- oder Kapitalrückkopplung entschieden wird.",
+      "Ein Präventionsprogramm kann direkte und später eintretende Nutzen haben. Ein T-SROI entsteht aber erst, wenn ein zusätzlicher transformativer Nutzenstrom mit Empfängerkreis, Vergleichsfall, Preisbasis und Unsicherheit belegt ist.",
+      "Ein Produktvergleich braucht zuerst Scorecard und NWI. Nur wenn direkte Nutzen, Schäden, Ressourcen und ein Vergleichsfall in Euro derselben Preisbasis dokumentiert sind, kann eine IOI- oder T-SROI-Rechnung folgen.",
     ],
-    formula: "T\\text{-}SROI = \\frac{Transformationswirkung + vermiedene\\;Schadenskosten + Systemlernen}{Ressourceneinsatz}",
+    formula: "T\\text{-}SROI = \\frac{PV_r((B_{direkt}+B_{transformativ}) \\cdot a \\cdot (1-d) \\cdot (1-v) - S)}{PV_{r_K}(I+K)} \\quad \\text{nur bei offenem Schutz-Gate}",
     formulaNote:
-      "T-SROI ist didaktisch als Verhältnis gedacht. Entscheidend ist, welche Wirkungen, Zeiträume und Systemeffekte begründet einbezogen werden.",
+      "NWI bleibt ein Profil. Im T-SROI zählt Transformation nur als eigener, monetarisierter Nutzenstrom; Nutzen und Ressourcen werden mit getrennt begründeten Sätzen r und r_K diskontiert. Nur eine klar markierte Demo darf r = r_K setzen; Datenqualität, Reichweite, Resilienz und Diffusion sind Prüf- oder Evidenzangaben, keine Multiplikatoren.",
     backflow: [
       "NWI und T-SROI in Werkzeugseiten konsequent als unterschiedliche Kennzahltypen erklären.",
       "Präventions-, Bildungs- und Gesundheitsfälle als T-SROI-Lernfälle markieren.",
@@ -795,7 +790,7 @@ function buildDeepening(lecture) {
     : "";
   return `## 7. Tiefenskript-Erweiterung Sprint ${sprint}
 
-**Status dieser Erweiterung:** ausgebaute Arbeitsfassung für Claude-CI/CD, Word-Rohfassung und Reader-Spiegel. Sie ersetzt noch nicht die spätere Satz-, Quellen- und PDF-Finalisierung, bringt die Vorlesung aber aus der Kurzfassung in eine substanzielle Studienskriptfassung.
+**Methodischer Hinweis:** Diese Lernfassung erklärt Begriffe, Annahmen, Quellen und Grenzen. Sie ist keine Einzelfallprüfung und keine automatische Entscheidung.
 
 ### 7.1 Leitthese
 
@@ -838,7 +833,7 @@ ${lecture.cases.map((text, idx) => `**Fall ${idx + 1}.** ${text}`).join("\n\n")}
 
 ### 7.6 Prüfungsnahe Fallfragen ohne geschützte Antwortlogik
 
-Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogik, Scoring-Regeln und CorrectAnswer-Felder bleiben in der Prüfungs-Lane der App.
+Diese Fragen dienen dem Lernen. Sie verlangen nachvollziehbare Begriffe, Quellen, Unsicherheiten und Schutzregeln statt einer scheinbar eindeutigen Punktzahl.
 
 1. Beschreibe den Auslöser im Fall und trenne ihn von Absicht, Image oder Reichweite.
 2. Formuliere einen plausiblen Wirkpfad mit Wirkungsempfängern, Zustandsveränderung und Rückkopplung.
@@ -867,9 +862,9 @@ ${lecture.title} ist kein Randthema. Es zeigt, ob die WÖk nur schöne Begriffe 
 function replaceOrInsert(markdown, lecture) {
   const sprint = lecture.sprint ?? 2;
   let next = markdown
-    .replace(/\*\*Status:\*\* Rohfassung V0 · Sprint-Produktionslauf · muss im nächsten Tiefensprint auf 40-50 Seiten erweitert werden/, `**Status:** Tiefenskript-Sprint ${sprint} · substanzielle Arbeitsfassung, Claude-CI/CD-Finalisierung offen`)
-    .replace(/\*\*Status:\*\* Tiefenskript-Sprint \d+ · [^\n]+/, `**Status:** Tiefenskript-Sprint ${sprint} · substanzielle Arbeitsfassung, Claude-CI/CD-Finalisierung offen`)
-    .replace(/\*\*Status:\*\* Pilot-Arbeitsfassung · [^\n]+/, `**Status:** Tiefenskript-Sprint ${sprint} · substanzielle Arbeitsfassung, Claude-CI/CD-Finalisierung offen`)
+    .replace(/\*\*Status:\*\* Rohfassung V0 · Sprint-Produktionslauf · muss im nächsten Tiefensprint auf 40-50 Seiten erweitert werden/, `**Fachlicher Stand:** methodisch überarbeitete Lernfassung · Sprint ${sprint}`)
+    .replace(/\*\*Status:\*\* Tiefenskript-Sprint \d+ · [^\n]+/, `**Fachlicher Stand:** methodisch überarbeitete Lernfassung · Sprint ${sprint}`)
+    .replace(/\*\*Status:\*\* Pilot-Arbeitsfassung · [^\n]+/, `**Fachlicher Stand:** methodisch überarbeitete Lernfassung · Sprint ${sprint}`)
     .replace(/\*\*Lesezeit:\*\* ca\. 45–60 Minuten/, "**Lesezeit:** ca. 120–180 Minuten");
 
   const deepening = buildDeepening(lecture).trim();
@@ -897,7 +892,7 @@ function updateIndex(slugs) {
   for (const item of index.scripts) {
     if (slugs.includes(item.slug)) {
       item.status = "tiefensprint-arbeitsfassung";
-      item.notes = "Tiefenskript-Sprint 2: substanzielle Arbeitsfassung mit Website-Referenzmaterial; Claude-CI/CD-Finalisierung offen.";
+      item.notes = "Methodisch überarbeitete Lernfassung mit Quellen-, Wirkpfad- und Unsicherheitsbezug.";
     }
   }
   writeFileSync(indexPath, JSON.stringify(index, null, 2) + "\n");

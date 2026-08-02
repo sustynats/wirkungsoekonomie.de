@@ -50,7 +50,6 @@ const specialOverrides = new Map([
     {
       detailHtml: "verstehen/sdgs-sdgplus/geschichte/index.html",
       detailDocx: "assets/downloads/04_woek_sdg_geschichte_vorlaeufer_verhandlungsprozess_detailkonzept_v1_0.docx",
-      forceDetailStatus: "vollständig",
     },
   ],
   [
@@ -58,7 +57,6 @@ const specialOverrides = new Map([
     {
       detailHtml: "verstehen/sdgs-sdgplus/risikomanagement-finanzmarkt/index.html",
       detailDocx: "assets/downloads/05_woek_sdgs_risikomanagement_finanzmarktanschluss_detailkonzept_v1_0.docx",
-      forceDetailStatus: "vollständig",
     },
   ],
 ]);

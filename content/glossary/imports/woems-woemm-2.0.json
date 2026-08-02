@@ -106,9 +106,9 @@
     {
       "title": "WÖMS-Methodenkarte",
       "section": "WÖMS 2.0 · Methodensystem",
-      "Kurzdefinition": "Eine WÖMS-Methodenkarte dokumentiert Zweck, Einsatzrahmen, Inputs, Schritte, Output, Schnittstellen, Canvas-Spezifikation, Qualitäts- und Schutzregeln einer Methode.",
-      "WÖk-Verwendung": "Sie ist der standardisierte, versionierbare Datensatz für Anwendung, Ausbildung, Prüfung und Assurance.",
-      "Abgrenzung": "Keine bloße Moderationskarte und kein Ersatz fachlicher Evidenz.",
+      "Kurzdefinition": "Eine WÖMS-Methodenkarte beschreibt Zweck, Einsatzrahmen, benötigte Informationen, Arbeitsschritte, erwartete Arbeitsergebnisse, Schnittstellen, Formularfelder sowie Qualitäts- und Schutzregeln einer Methode.",
+      "WÖk-Verwendung": "Sie schafft eine einheitliche Grundlage für Anwendung, Ausbildung, fachliche Prüfung und Qualitätssicherung.",
+      "Abgrenzung": "Keine bloße Moderationshilfe und kein Ersatz für fachliche Evidenz.",
       "Querverweise": "Wirkungsökonomisches Methodensystem, WÖMS-Methodenregister, Canvas-Mindeststandard",
       "slug": "woems-methodenkarte",
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
@@ -183,9 +183,9 @@
     {
       "title": "Wirkungsrealisierungsarchitektur",
       "section": "WÖMM 2.0 · Wirkungsrealisierung",
-      "Kurzdefinition": "Die Wirkungsrealisierungsarchitektur verbindet Wirkungsziele mit Capabilities, Wertströmen, Prozessen, Operating Model, Daten, Technologie, Delivery, Change und Adoption.",
-      "WÖk-Verwendung": "Sie schließt die Managementkette zwischen strategischer Wirkungsabsicht und tatsächlich eingetretener, dauerhaft verfügbarer Zustandsveränderung.",
-      "Abgrenzung": "Weder Projektplan noch Organigramm; Outputs und installierte Systeme gelten ohne Nutzung, Adoption, Benefit und Wirkungsrückkopplung nicht als realisierte Wirkung.",
+      "Kurzdefinition": "Die Wirkungsrealisierungsarchitektur verbindet Wirkungsziele mit Fähigkeiten, Wertströmen, Prozessen, Betriebsmodell, Daten, Technologie, Umsetzung sowie Einführung und tatsächlicher Nutzung.",
+      "WÖk-Verwendung": "Sie verbindet die strategische Wirkungsabsicht mit den Voraussetzungen dafür, dass eine Zustandsveränderung tatsächlich eintritt und dauerhaft verfügbar bleibt.",
+      "Abgrenzung": "Sie ist weder Projektplan noch Organigramm. Erbrachte Leistungen und eingeführte Systeme sind noch keine realisierte Wirkung, solange sie nicht tatsächlich genutzt werden, Nutzen schaffen und in eine Wirkungsrückkopplung einfließen.",
       "Querverweise": "Wirkungsökonomisches Managementmodell, Wirkungs-Capability, Wirkungswertstrom, Impact & Benefits Realization, Wirkungsrückkopplung",
       "slug": "wirkungsrealisierungsarchitektur",
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
@@ -274,7 +274,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie A",
       "Kurzdefinition": "Klären, welche Entscheidung, Zustandsveränderung und Verantwortung der Methodenprozess tatsächlich unterstützen soll.",
-      "WÖk-Verwendung": "A01 gehört zur Kategorie „Orientierung, Mandat und Schutzrahmen“. Verbindlicher Output: Ein schriftliches Wirkungsmandat mit Entscheidungsfrage, Auftraggeber:in, Entscheidungsspielraum, Betroffenen, Zeithorizont und Abbruchkriterien.",
+      "WÖk-Verwendung": "A01 gehört zur Kategorie „Orientierung, Mandat und Schutzrahmen“. Erwartetes Arbeitsergebnis: Ein schriftliches Wirkungsmandat mit Entscheidungsfrage, Auftraggeber:in, Entscheidungsspielraum, Betroffenen, Zeithorizont und Abbruchkriterien.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungskompass-Ausrichtung",
@@ -291,7 +291,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie A",
       "Kurzdefinition": "Den normativen Referenzrahmen Mensch, Planet und Demokratie sowie SDGs, Agenda 2030 und SDG+ für den konkreten Fall operationalisieren.",
-      "WÖk-Verwendung": "A02 gehört zur Kategorie „Orientierung, Mandat und Schutzrahmen“. Verbindlicher Output: Eine priorisierte Kompasskarte mit relevanten Zielen, Schutzgütern, Spannungen und Begründungen.",
+      "WÖk-Verwendung": "A02 gehört zur Kategorie „Orientierung, Mandat und Schutzrahmen“. Erwartetes Arbeitsergebnis: Eine priorisierte Kompasskarte mit relevanten Zielen, Schutzgütern, Spannungen und Begründungen.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -308,7 +308,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie A",
       "Kurzdefinition": "Zeitliche, räumliche, organisatorische, lebenszyklische und kausale Grenzen so festlegen, dass wesentliche Wirkungen weder versteckt noch unbeherrschbar weit gefasst werden.",
-      "WÖk-Verwendung": "A03 gehört zur Kategorie „Orientierung, Mandat und Schutzrahmen“. Verbindlicher Output: Eine begründete Systemgrenzendefinition einschließlich einbezogener und ausgeschlossener Bereiche sowie Review-Zeitpunkt.",
+      "WÖk-Verwendung": "A03 gehört zur Kategorie „Orientierung, Mandat und Schutzrahmen“. Erwartetes Arbeitsergebnis: Eine begründete Systemgrenzendefinition einschließlich einbezogener und ausgeschlossener Bereiche sowie Review-Zeitpunkt.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -326,7 +326,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie A",
       "Kurzdefinition": "Alle direkt und indirekt betroffenen Menschen, Gruppen, Lebewesen, Ökosysteme, Institutionen und künftigen Generationen identifizieren und ihre Perspektiven unterscheiden.",
-      "WÖk-Verwendung": "A04 gehört zur Kategorie „Orientierung, Mandat und Schutzrahmen“. Verbindlicher Output: Eine priorisierte Betroffenenkarte mit Betroffenheit, Einfluss, Verletzlichkeit, Stimme und Beteiligungsbedarf.",
+      "WÖk-Verwendung": "A04 gehört zur Kategorie „Orientierung, Mandat und Schutzrahmen“. Erwartetes Arbeitsergebnis: Eine priorisierte Betroffenenkarte mit Betroffenheit, Einfluss, Verletzlichkeit, Stimme und Beteiligungsbedarf.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Systemgrenzen- und Reichweiten-Canvas",
@@ -344,7 +344,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie A",
       "Kurzdefinition": "Nicht kompensierbare Grenzen, Rechte, Mindeststandards und rote Linien vor Optimierung und Abwägung prüfen.",
-      "WÖk-Verwendung": "A05 gehört zur Kategorie „Orientierung, Mandat und Schutzrahmen“. Verbindlicher Output: Ein Gate-Protokoll mit zulässig, redesignpflichtig oder unzulässig sowie dokumentierten Schutzmaßnahmen.",
+      "WÖk-Verwendung": "A05 gehört zur Kategorie „Orientierung, Mandat und Schutzrahmen“. Erwartetes Arbeitsergebnis: Ein Gate-Protokoll mit zulässig, redesignpflichtig oder unzulässig sowie dokumentierten Schutzmaßnahmen.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungskompass-Ausrichtung",
@@ -361,7 +361,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie A",
       "Kurzdefinition": "Wissen, Schätzungen, normative Setzungen, Hypothesen und Unsicherheiten getrennt dokumentieren und über den Prozess fortschreiben.",
-      "WÖk-Verwendung": "A06 gehört zur Kategorie „Orientierung, Mandat und Schutzrahmen“. Verbindlicher Output: Versioniertes Register mit Aussage, Typ, Evidenzstufe E0–E5, Quelle, Unsicherheit, Verantwortlichen und Prüfdatum.",
+      "WÖk-Verwendung": "A06 gehört zur Kategorie „Orientierung, Mandat und Schutzrahmen“. Erwartetes Arbeitsergebnis: Versioniertes Register mit Aussage, Typ, Evidenzstufe E0–E5, Quelle, Unsicherheit, Verantwortlichen und Prüfdatum.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungsökonomisches Methodensystem",
@@ -375,7 +375,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie A",
       "Kurzdefinition": "Bestimmen, ob eine Situation überwiegend klar, kompliziert, komplex, chaotisch oder widersprüchlich ist und welche Vorgehenslogik dazu passt.",
-      "WÖk-Verwendung": "A07 gehört zur Kategorie „Orientierung, Mandat und Schutzrahmen“. Verbindlicher Output: Kontextklassifikation mit passender Kombination aus Analyse, Expertise, Experiment, Schutz und Krisenintervention.",
+      "WÖk-Verwendung": "A07 gehört zur Kategorie „Orientierung, Mandat und Schutzrahmen“. Erwartetes Arbeitsergebnis: Kontextklassifikation mit passender Kombination aus Analyse, Expertise, Experiment, Schutz und Krisenintervention.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -393,7 +393,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie A",
       "Kurzdefinition": "Beteiligung so gestalten, dass Betroffene, Wissensträger:innen, Entscheider:innen und fehlende Stimmen angemessen in Analyse und Entscheidung eingehen.",
-      "WÖk-Verwendung": "A08 gehört zur Kategorie „Orientierung, Mandat und Schutzrahmen“. Verbindlicher Output: Beteiligungsplan mit Zweck, Stufe, Auswahl, Barrierenabbau, Entscheidungseinfluss, Rückmeldung und Schutz.",
+      "WÖk-Verwendung": "A08 gehört zur Kategorie „Orientierung, Mandat und Schutzrahmen“. Erwartetes Arbeitsergebnis: Beteiligungsplan mit Zweck, Stufe, Auswahl, Barrierenabbau, Entscheidungseinfluss, Rückmeldung und Schutz.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungsempfänger- und Stakeholder-Landkarte",
@@ -408,7 +408,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie B",
       "Kurzdefinition": "Den gegenwärtigen Zustand eines Wirkungsraums anhand beobachtbarer Bedingungen, Erfahrungen, Daten und institutioneller Regeln beschreiben.",
-      "WÖk-Verwendung": "B01 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Verbindlicher Output: Gemeinsames, evidenzmarkiertes Ausgangsbild mit Stärken, Schäden, Spannungen und Datenlücken.",
+      "WÖk-Verwendung": "B01 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Erwartetes Arbeitsergebnis: Gemeinsames, evidenzmarkiertes Ausgangsbild mit Stärken, Schäden, Spannungen und Datenlücken.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungskompass-Ausrichtung",
@@ -430,7 +430,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie B",
       "Kurzdefinition": "Ein Problem als unerwünschte Zustandsveränderung mit Betroffenen, Ursachen, aufrechterhaltenden Bedingungen und Folgewirkungen formulieren.",
-      "WÖk-Verwendung": "B02 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Verbindlicher Output: Präzise Problemdefinition statt lösungsnaher oder moralischer Problembehauptung.",
+      "WÖk-Verwendung": "B02 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Erwartetes Arbeitsergebnis: Präzise Problemdefinition statt lösungsnaher oder moralischer Problembehauptung.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungszustandskarte",
@@ -451,7 +451,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie B",
       "Kurzdefinition": "Ursachen, Kernproblem und Folgewirkungen in einer ersten gerichteten Struktur ordnen und später in ein dynamisches Modell überführen.",
-      "WÖk-Verwendung": "B03 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Verbindlicher Output: Problembaum mit Wurzelursachen, vermittelnden Ursachen, Kernzustand und Wirkungsfolgen.",
+      "WÖk-Verwendung": "B03 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Erwartetes Arbeitsergebnis: Problembaum mit Wurzelursachen, vermittelnden Ursachen, Kernzustand und Wirkungsfolgen.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungsproblem-Canvas",
@@ -469,7 +469,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie B",
       "Kurzdefinition": "Verstärkende und ausgleichende Rückkopplungen, Verzögerungen und nichtlineare Dynamiken sichtbar machen.",
-      "WÖk-Verwendung": "B04 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Verbindlicher Output: Causal Loop Diagram mit Variablen, Wirkungsrichtung, Polarität, Schleifen und Zeitverzögerungen.",
+      "WÖk-Verwendung": "B04 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Erwartetes Arbeitsergebnis: Causal Loop Diagram mit Variablen, Wirkungsrichtung, Polarität, Schleifen und Zeitverzögerungen.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Problem- und Wirkungsbaum",
@@ -488,7 +488,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie B",
       "Kurzdefinition": "Akkumulationen, Zuflüsse, Abflüsse und Verzögerungen erfassen, wenn Mengen- und Zeitdynamik entscheidend sind.",
-      "WÖk-Verwendung": "B05 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Verbindlicher Output: Qualitatives oder quantitatives Stock-and-Flow-Modell mit definierten Einheiten und Hypothesen.",
+      "WÖk-Verwendung": "B05 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Erwartetes Arbeitsergebnis: Qualitatives oder quantitatives Stock-and-Flow-Modell mit definierten Einheiten und Hypothesen.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Kausalschleifen- und Rückkopplungsdiagramm",
@@ -506,7 +506,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie B",
       "Kurzdefinition": "Wechselwirkungen zwischen Wirkungsfeldern, Akteuren, Ressourcen oder Systemzuständen strukturiert vergleichen.",
-      "WÖk-Verwendung": "B06 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Verbindlicher Output: Quadratische Matrix mit Richtung, Stärke, Art, Zeit und Evidenz der Abhängigkeiten.",
+      "WÖk-Verwendung": "B06 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Erwartetes Arbeitsergebnis: Quadratische Matrix mit Richtung, Stärke, Art, Zeit und Evidenz der Abhängigkeiten.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungszustandskarte",
@@ -525,7 +525,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie B",
       "Kurzdefinition": "Unsichtbare ökologische, soziale, gesundheitliche, demokratische und zeitliche Kosten sowie Nutzen entlang von Akteuren und Lebenszyklus sichtbar machen.",
-      "WÖk-Verwendung": "B07 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Verbindlicher Output: Karte der internen und externalisierten Wirkungen mit Trägern, Empfängern, Zeit und möglicher Rückführung.",
+      "WÖk-Verwendung": "B07 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Erwartetes Arbeitsergebnis: Karte der internen und externalisierten Wirkungen mit Trägern, Empfängern, Zeit und möglicher Rückführung.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungszustandskarte",
@@ -546,7 +546,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie B",
       "Kurzdefinition": "Unmittelbare, indirekte und strukturverändernde Wirkungen erster, zweiter und dritter Ordnung unterscheiden.",
-      "WÖk-Verwendung": "B08 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Verbindlicher Output: Zeitlich und kausal geordnete Landkarte mit direkten Zustandsänderungen, Folgewirkungen und Veränderungen von Regeln oder Handlungspfaden.",
+      "WÖk-Verwendung": "B08 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Erwartetes Arbeitsergebnis: Zeitlich und kausal geordnete Landkarte mit direkten Zustandsänderungen, Folgewirkungen und Veränderungen von Regeln oder Handlungspfaden.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Kausalschleifen- und Rückkopplungsdiagramm",
@@ -564,7 +564,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie B",
       "Kurzdefinition": "Wirkungszeit, Regenerationszeit, Entscheidungszeit, Nutzungszeit und Generationenfolgen explizit machen.",
-      "WÖk-Verwendung": "B09 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Verbindlicher Output: Mehrhorizont-Zeitkarte mit Verzögerungen, Kipppunkten, Irreversibilitäten und Verantwortung für Abwesende.",
+      "WÖk-Verwendung": "B09 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Erwartetes Arbeitsergebnis: Mehrhorizont-Zeitkarte mit Verzögerungen, Kipppunkten, Irreversibilitäten und Verantwortung für Abwesende.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Kausalschleifen- und Rückkopplungsdiagramm",
@@ -584,7 +584,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie B",
       "Kurzdefinition": "Interventionspunkte nach Tiefe, Reichweite, Umsetzbarkeit, Risiken und Lernpotenzial identifizieren und nicht mit bloß zentralen Variablen verwechseln.",
-      "WÖk-Verwendung": "B10 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Verbindlicher Output: Priorisierte Hebelliste von Parametern über Informationsflüsse und Regeln bis zu Zielen und Paradigmen.",
+      "WÖk-Verwendung": "B10 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Erwartetes Arbeitsergebnis: Priorisierte Hebelliste von Parametern über Informationsflüsse und Regeln bis zu Zielen und Paradigmen.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Kausalschleifen- und Rückkopplungsdiagramm",
@@ -604,7 +604,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie B",
       "Kurzdefinition": "Das schwächste relevante Wirkungsfeld, eine harte Mindestbedingung oder den systemischen Engpass bestimmen, der den Gesamterfolg begrenzt.",
-      "WÖk-Verwendung": "B11 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Verbindlicher Output: Engpassprofil mit Mindestbedingungen, FinalScore-Logik und Redesignpriorität.",
+      "WÖk-Verwendung": "B11 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Erwartetes Arbeitsergebnis: Engpassprofil mit Mindestbedingungen, FinalScore-Logik und Redesignpriorität.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungsgrenzen- und Rechteprüfung",
@@ -623,7 +623,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie B",
       "Kurzdefinition": "Prüfen, wie ein Modell unter Schocks, Trendbrüchen, Datenfehlern, Gegenstrategien und kumulativen Belastungen wirkt.",
-      "WÖk-Verwendung": "B12 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Verbindlicher Output: Stresstestbericht mit kritischen Szenarien, Schwellen, Ausfallmodi, Frühwarnsignalen und Schutzmaßnahmen.",
+      "WÖk-Verwendung": "B12 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Erwartetes Arbeitsergebnis: Stresstestbericht mit kritischen Szenarien, Schwellen, Ausfallmodi, Frühwarnsignalen und Schutzmaßnahmen.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Kausalschleifen- und Rückkopplungsdiagramm",
@@ -648,8 +648,8 @@
       "slug": "wirkpfad",
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie C",
-      "Kurzdefinition": "Die Kette von Auslösern über Aktivitäten, Outputs, Outcomes und Wirkungen bis zu Rückkopplungen nachvollziehbar darstellen.",
-      "WÖk-Verwendung": "C01 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Verbindlicher Output: Prüfbarer Wirkungspfad mit Empfängern, Annahmen, Kontextbedingungen, Nebenwirkungen und Evidenz.",
+      "Kurzdefinition": "Auslöser, Aktivitäten und erbrachte Leistungen den erwarteten Veränderungen bei Wirkungsempfängern, möglichen Zustandsveränderungen und Rückkopplungen nachvollziehbar zuordnen.",
+      "WÖk-Verwendung": "C01 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Erwartetes Arbeitsergebnis: Prüfbarer Wirkungspfad mit Empfängern, Annahmen, Kontextbedingungen, Nebenwirkungen und Evidenz.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungsproblem-Canvas",
@@ -674,7 +674,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie C",
       "Kurzdefinition": "Erklären, durch welchen sozialen, technischen, ökonomischen, psychologischen, institutionellen oder ökologischen Mechanismus eine Handlung Zustände verändern soll.",
-      "WÖk-Verwendung": "C02 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Verbindlicher Output: Mechanismushypothese mit Auslöser, Empfänger, Vermittlung, Kontext, Gegenmechanismus und Beobachtungsmerkmalen.",
+      "WÖk-Verwendung": "C02 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Erwartetes Arbeitsergebnis: Mechanismushypothese mit Auslöser, Empfänger, Vermittlung, Kontext, Gegenmechanismus und Beobachtungsmerkmalen.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungspfad",
@@ -693,7 +693,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie C",
       "Kurzdefinition": "Eine Theory of Change um negative Wirkungen, Nichtkompensation, Systemhebel, Rückkopplung, Transformationswirkung und Entscheidungstore erweitern.",
-      "WÖk-Verwendung": "C03 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Verbindlicher Output: Gesamtmodell von Ausgangslage, Voraussetzungen, Interventionen, Wirkungspfaden, Risiken, Grenzen, Lernfragen und Governance.",
+      "WÖk-Verwendung": "C03 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Erwartetes Arbeitsergebnis: Gesamtmodell von Ausgangslage, Voraussetzungen, Interventionen, Wirkungspfaden, Risiken, Grenzen, Lernfragen und Governance.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungspfad",
@@ -711,8 +711,8 @@
       "slug": "outcome-und-empfaengerlandkarte",
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie C",
-      "Kurzdefinition": "Verhaltens-, Beziehungs-, Praxis- und Zustandsveränderungen bei konkreten Wirkungsempfängern statt nur organisationsinterne Outputs planen.",
-      "WÖk-Verwendung": "C04 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Verbindlicher Output: Empfängerbezogene Outcome-Landkarte mit Fortschrittsmarkern, Einflussbereich und Beobachtungsplan.",
+      "Kurzdefinition": "Verhaltens-, Beziehungs-, Praxis- und Zustandsveränderungen bei konkreten Wirkungsempfängern planen, statt allein organisationsinterne Leistungen zu zählen.",
+      "WÖk-Verwendung": "C04 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Erwartetes Arbeitsergebnis: Empfängerbezogene Outcome-Landkarte mit Fortschrittsmarkern, Einflussbereich und Beobachtungsplan.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungsempfänger- und Stakeholder-Landkarte",
@@ -730,7 +730,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie C",
       "Kurzdefinition": "Plausibel und evidenzbasiert beurteilen, welchen Beitrag eine Intervention zu beobachteten Wirkungen geleistet hat, ohne unangemessene Alleinursächlichkeit zu behaupten.",
-      "WÖk-Verwendung": "C05 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Verbindlicher Output: Beitragsnarrativ mit Alternativerklärungen, Evidenzkette, verbleibender Unsicherheit und Lernschlussfolgerung.",
+      "WÖk-Verwendung": "C05 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Erwartetes Arbeitsergebnis: Beitragsnarrativ mit Alternativerklärungen, Evidenzkette, verbleibender Unsicherheit und Lernschlussfolgerung.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungsökonomische Theory of Change",
@@ -749,7 +749,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie C",
       "Kurzdefinition": "Alle entscheidungsrelevanten Wirkungsannahmen als testbare Hypothesen mit Falsifikations- und Lernkriterien führen.",
-      "WÖk-Verwendung": "C06 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Verbindlicher Output: Priorisiertes Hypothesenportfolio mit Risiko, Evidenz, Test, Ergebnis und Entscheidungsfolge.",
+      "WÖk-Verwendung": "C06 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Erwartetes Arbeitsergebnis: Priorisiertes Hypothesenportfolio mit Risiko, Evidenz, Test, Ergebnis und Entscheidungsfolge.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Evidenz- und Annahmenregister",
@@ -770,7 +770,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie C",
       "Kurzdefinition": "Unerwünschte, indirekte, kompensierende oder zurückschlagende Wirkungen systematisch vor und während der Umsetzung prüfen.",
-      "WÖk-Verwendung": "C07 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Verbindlicher Output: Nebenwirkungsregister mit Wirkpfad, Betroffenen, Schwere, Frühwarnsignal, Gegenmaßnahme und Restunsicherheit.",
+      "WÖk-Verwendung": "C07 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Erwartetes Arbeitsergebnis: Nebenwirkungsregister mit Wirkpfad, Betroffenen, Schwere, Frühwarnsignal, Gegenmaßnahme und Restunsicherheit.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Kausalschleifen- und Rückkopplungsdiagramm",
@@ -790,7 +790,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie C",
       "Kurzdefinition": "Mehrere plausible Zukunftskontexte entwickeln, um Strategien, Wirkungsmodelle und Annahmen auf Robustheit und blinde Flecken zu prüfen.",
-      "WÖk-Verwendung": "C08 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Verbindlicher Output: Drei bis fünf plausible Szenarien mit Treibern, Wirkungszuständen, Kipppunkten, Signalen und strategischen Implikationen.",
+      "WÖk-Verwendung": "C08 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Erwartetes Arbeitsergebnis: Drei bis fünf plausible Szenarien mit Treibern, Wirkungszuständen, Kipppunkten, Signalen und strategischen Implikationen.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Zeit-, Verzögerungs- und Generationenkarte",
@@ -809,7 +809,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie C",
       "Kurzdefinition": "Fähigkeiten und Pfade entwerfen, mit denen wesentliche positive Wirkung unter Störungen erhalten, angepasst oder regeneriert wird.",
-      "WÖk-Verwendung": "C09 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Verbindlicher Output: Resilienzarchitektur aus kritischen Funktionen, Redundanz, Diversität, Puffer, Anpassung, Wiederherstellung und Lernen.",
+      "WÖk-Verwendung": "C09 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Erwartetes Arbeitsergebnis: Resilienzarchitektur aus kritischen Funktionen, Redundanz, Diversität, Puffer, Anpassung, Wiederherstellung und Lernen.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungs-Systemstresstest",
@@ -828,7 +828,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie C",
       "Kurzdefinition": "Erfassen, ob und wie eine Intervention Entscheidungsregeln, Standards, Infrastrukturen, Märkte, Machtverhältnisse oder Handlungspfade verändert.",
-      "WÖk-Verwendung": "C10 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Verbindlicher Output: Transformationsmodell mit Hebel, Diffusion, Standardsetzung, Pfadveränderung, Resilienzgewinn und Risiken.",
+      "WÖk-Verwendung": "C10 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Erwartetes Arbeitsergebnis: Transformationsmodell mit Hebel, Diffusion, Standardsetzung, Pfadveränderung, Resilienzgewinn und Risiken.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungsordnungen-Landkarte",
@@ -848,7 +848,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie D",
       "Kurzdefinition": "Relevante SDGs, SDG+, ESRS, GRI, ISO-, Branchen-, Rechts- und Wissenschaftsreferenzen einem Wirkungsobjekt zuordnen.",
-      "WÖk-Verwendung": "D01 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Verbindlicher Output: Referenzmatrix mit Ziel, Standard, Indikator, Datenquelle, Verbindlichkeit und Lücke.",
+      "WÖk-Verwendung": "D01 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Erwartetes Arbeitsergebnis: Referenzmatrix mit Ziel, Standard, Indikator, Datenquelle, Verbindlichkeit und Lücke.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungskompass-Ausrichtung",
@@ -870,7 +870,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie D",
       "Kurzdefinition": "Relevante tatsächliche und potenzielle Wirkungen unabhängig von finanzieller Materialität identifizieren und anschließend mit Risiken, Chancen und Abhängigkeiten verbinden.",
-      "WÖk-Verwendung": "D02 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Verbindlicher Output: Priorisierte IRO- und Wirkungslandkarte mit Schwere, Reichweite, Unabänderlichkeit, Wahrscheinlichkeit, Betroffenen und finanzieller Rückwirkung.",
+      "WÖk-Verwendung": "D02 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Erwartetes Arbeitsergebnis: Priorisierte IRO- und Wirkungslandkarte mit Schwere, Reichweite, Unabänderlichkeit, Wahrscheinlichkeit, Betroffenen und finanzieller Rückwirkung.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungsempfänger- und Stakeholder-Landkarte",
@@ -889,7 +889,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie D",
       "Kurzdefinition": "Aus Wirkungsmodell und Referenzrahmen ein hierarchisches Set aus Zustands-, Prozess-, Früh-, Risiko- und Transformationsindikatoren entwickeln.",
-      "WÖk-Verwendung": "D03 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Verbindlicher Output: Indikatorenbaum mit Definition, Einheit, Referenzwert, Quelle, Frequenz, Empfänger, Verantwortlichen und WÖk-ID.",
+      "WÖk-Verwendung": "D03 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Erwartetes Arbeitsergebnis: Indikatorenbaum mit Definition, Einheit, Referenzwert, Quelle, Frequenz, Empfänger, Verantwortlichen und WÖk-ID.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungspfad",
@@ -914,7 +914,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie D",
       "Kurzdefinition": "Wenige führende Wirkungskennzahlen auswählen, die Managemententscheidungen direkt steuern und nicht nur berichten.",
-      "WÖk-Verwendung": "D04 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Verbindlicher Output: KII-Set mit Zielwerten, Schwellen, Verantwortlichen, Gate-Verknüpfung und Eskalationsregeln.",
+      "WÖk-Verwendung": "D04 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Erwartetes Arbeitsergebnis: KII-Set mit Zielwerten, Schwellen, Verantwortlichen, Gate-Verknüpfung und Eskalationsregeln.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "WÖk-Indikatorenarchitektur",
@@ -933,7 +933,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie D",
       "Kurzdefinition": "Vorhandene und benötigte Wirkungsdaten, ihre Herkunft, Verarbeitung, Rechte, Schnittstellen und Nutzung über den gesamten Datenfluss erfassen.",
-      "WÖk-Verwendung": "D05 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Verbindlicher Output: Datenkatalog und Flusskarte mit Datenlücken, Eigentum, Qualität, Zugriff, Automatisierung und Schutz.",
+      "WÖk-Verwendung": "D05 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Erwartetes Arbeitsergebnis: Datenkatalog und Flusskarte mit Datenlücken, Eigentum, Qualität, Zugriff, Automatisierung und Schutz.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "WÖk-Indikatorenarchitektur",
@@ -951,7 +951,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie D",
       "Kurzdefinition": "Daten und Evidenz nach Herkunft, Vollständigkeit, Aktualität, Vergleichbarkeit, Prüfbarkeit, Verzerrung und Unsicherheit bewerten.",
-      "WÖk-Verwendung": "D06 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Verbindlicher Output: Qualitätsprofil je Indikator samt Freigabestufe, konservativer Behandlung und Verbesserungsplan.",
+      "WÖk-Verwendung": "D06 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Erwartetes Arbeitsergebnis: Qualitätsprofil je Indikator samt Freigabestufe, konservativer Behandlung und Verbesserungsplan.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Evidenz- und Annahmenregister",
@@ -972,7 +972,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie D",
       "Kurzdefinition": "Messwerte anhand transparenter Benchmarks in Wirkungsscores übersetzen und unter Nichtkompensation zu einem entscheidungsfähigen Profil zusammenführen.",
-      "WÖk-Verwendung": "D07 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Verbindlicher Output: Scorecard je Wirkungsobjekt mit Einzelwerten, Benchmarks, Datenqualität, Mindestbedingungen und FinalScore.",
+      "WÖk-Verwendung": "D07 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Erwartetes Arbeitsergebnis: Scorecard je Wirkungsobjekt mit Einzelwerten, Benchmarks, Datenqualität, Mindestbedingungen und FinalScore.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Referenzrahmen- und Standardmapping",
@@ -997,8 +997,8 @@
       "slug": "nwi",
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie D",
-      "Kurzdefinition": "Positive und negative operative Wirkungen unter Berücksichtigung von Mindestbedingungen, Verteilung, Zeit, Datenqualität und Nichtkompensation zu einer steuerungsfähigen Kennzahl verdichten.",
-      "WÖk-Verwendung": "D08 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Verbindlicher Output: NWI mit Wirkungsprofil, Spannbreite, Grenzprüfung und Entscheidungsinterpretation.",
+      "Kurzdefinition": "Ein dimensionsgleiches Wirkungsprofil aus vorab definierten Feldscores bilden und nur bei erfüllten Schutzgrenzen als NWI ausweisen.",
+      "WÖk-Verwendung": "D08 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Erwartetes Arbeitsergebnis: Wirkungsprofil, Profilwert, Evidenz- und Unsicherheitsangaben sowie bei offenem Gate der NWI.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungsscorecard und FinalScore",
@@ -1017,8 +1017,8 @@
       "slug": "t-sroi",
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie D",
-      "Kurzdefinition": "Auf Grundlage geprüfter Netto-Wirkung beurteilen, ob eine Investition systemische Hebelwirkung, Diffusion, Resilienz und Pfadveränderung erzeugt.",
-      "WÖk-Verwendung": "D09 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Verbindlicher Output: T-SROI-Auswertung mit Basiswirkung, Investition, Transformationsmultiplikatoren, Risiken, Grenzen und Sensitivität.",
+      "Kurzdefinition": "Den Barwert kausal zurechenbarer direkter und separat belegter transformativer Nettonutzen in Euro dem Barwert der eingesetzten Ressourcen in Euro gegenüberstellen.",
+      "WÖk-Verwendung": "D09 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Erwartetes Arbeitsergebnis: T-SROI-Auswertung mit Nutzen- und Schadenströmen, Ressourcen, Preisbasis, Schutz-Gate, Sensitivitäten und nachvollziehbarer Beispielrechnung.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Transformationswirkungs-Logik",
@@ -1037,7 +1037,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie D",
       "Kurzdefinition": "Potenzielle negative Zustandsveränderungen nach Schwere, Reichweite, Unabänderlichkeit, Wahrscheinlichkeit, Zeit und Datenqualität bewerten.",
-      "WÖk-Verwendung": "D10 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Verbindlicher Output: Risikoregister mit Prävention, Owner, Frühwarnsignal, Restwirkung und Eskalationsstufe.",
+      "WÖk-Verwendung": "D10 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Erwartetes Arbeitsergebnis: Risikoregister mit Prävention, Owner, Frühwarnsignal, Restwirkung und Eskalationsstufe.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Nebenwirkungs-, Wechselwirkungs- und Rebound-Analyse",
@@ -1057,7 +1057,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie D",
       "Kurzdefinition": "Wirkleistung, Scheinleistung, Blindleistung und Verlustleistung eines Projekts, Portfolios oder Systems sichtbar machen.",
-      "WÖk-Verwendung": "D11 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Verbindlicher Output: Wirkungsbilanz mit realen Zustandsverbesserungen, bloßen Aktivitäten, systemerhaltendem Aufwand und verursachten Verlusten.",
+      "WÖk-Verwendung": "D11 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Erwartetes Arbeitsergebnis: Wirkungsbilanz mit realen Zustandsverbesserungen, bloßen Aktivitäten, systemerhaltendem Aufwand und verursachten Verlusten.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungsscorecard und FinalScore",
@@ -1076,7 +1076,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie D",
       "Kurzdefinition": "Eine verhältnismäßige Evaluation entwerfen, die Relevanz, Kohärenz, Wirksamkeit, Effizienz, Wirkung, Nachhaltigkeit und WÖMS-spezifische Systemfragen beantwortet.",
-      "WÖk-Verwendung": "D12 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Verbindlicher Output: Evaluationsdesign mit Fragen, Kriterien, Methodenmix, Vergleichslogik, Beteiligung, Zeitplan und Nutzung.",
+      "WÖk-Verwendung": "D12 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Erwartetes Arbeitsergebnis: Evaluationsdesign mit Fragen, Kriterien, Methodenmix, Vergleichslogik, Beteiligung, Zeitplan und Nutzung.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungsökonomische Theory of Change",
@@ -1096,7 +1096,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie E",
       "Kurzdefinition": "Ein attraktives, konkretes und überprüfbares Bild des angestrebten Systemzustands entwickeln, ohne es mit Maßnahmen zu verwechseln.",
-      "WÖk-Verwendung": "E01 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlicher Output: Zielbild 3–10 Jahre mit Zuständen, Empfängern, Grenzen, Indikatoren und Nicht-Zielen.",
+      "WÖk-Verwendung": "E01 gehört zur Kategorie „Strategie, Portfolio und Governance“. Erwartetes Arbeitsergebnis: Zielbild 3–10 Jahre mit Zuständen, Empfängern, Grenzen, Indikatoren und Nicht-Zielen.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungskompass-Ausrichtung",
@@ -1115,7 +1115,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie E",
       "Kurzdefinition": "Wirkungsziel, Systemhebel, Fähigkeiten, Portfolios, Ressourcen, Risiken, Governance und Lernen in einer gemeinsamen Strategie verbinden.",
-      "WÖk-Verwendung": "E02 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlicher Output: Integrierte Wirkungsstrategie mit klaren Entscheidungen, Prioritäten und Rückkopplung.",
+      "WÖk-Verwendung": "E02 gehört zur Kategorie „Strategie, Portfolio und Governance“. Erwartetes Arbeitsergebnis: Integrierte Wirkungsstrategie mit klaren Entscheidungen, Prioritäten und Rückkopplung.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungszielbild",
@@ -1141,7 +1141,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie E",
       "Kurzdefinition": "Strategische Wirkungsziele in überprüfbare, lernorientierte Zielzyklen übersetzen, ohne Aktivitätskennzahlen mit Wirkung zu verwechseln.",
-      "WÖk-Verwendung": "E03 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlicher Output: Zielhierarchie aus Outcome-/Impact-Objectives, Key Impact Results, Grenzen und Lernhypothesen.",
+      "WÖk-Verwendung": "E03 gehört zur Kategorie „Strategie, Portfolio und Governance“. Erwartetes Arbeitsergebnis: Zielhierarchie aus Outcome-/Impact-Objectives, Key Impact Results, Grenzen und Lernhypothesen.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungsstrategie-Canvas",
@@ -1160,7 +1160,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie E",
       "Kurzdefinition": "Produkte, Projekte, Programme oder Geschäftsfelder nach Netto-Wirkung, Tragfähigkeit, Resilienz, Evidenz und strategischer Bedeutung steuern.",
-      "WÖk-Verwendung": "E04 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlicher Output: Portfolio mit Investitions-, Transformations-, Halte-, Redesign- und Exit-Entscheidungen.",
+      "WÖk-Verwendung": "E04 gehört zur Kategorie „Strategie, Portfolio und Governance“. Erwartetes Arbeitsergebnis: Portfolio mit Investitions-, Transformations-, Halte-, Redesign- und Exit-Entscheidungen.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungsscorecard und FinalScore",
@@ -1182,7 +1182,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie E",
       "Kurzdefinition": "Transformationsinitiativen nach Systemhebel, Netto-Wirkung, Reife, Lernwert, Abhängigkeit und zeitlicher Sequenz ordnen.",
-      "WÖk-Verwendung": "E05 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlicher Output: Ausbalanciertes Portfolio aus Soforthebeln, Enablern, Experimenten, strukturellen Umbauten und Exits.",
+      "WÖk-Verwendung": "E05 gehört zur Kategorie „Strategie, Portfolio und Governance“. Erwartetes Arbeitsergebnis: Ausbalanciertes Portfolio aus Soforthebeln, Enablern, Experimenten, strukturellen Umbauten und Exits.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Transformationswirkungs-Logik",
@@ -1202,7 +1202,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie E",
       "Kurzdefinition": "Budgets und Kapazitäten nach erwarteter Netto-Wirkung, Pflicht, Prävention, Resilienz, Evidenz und Transformationsbeitrag verteilen.",
-      "WÖk-Verwendung": "E06 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlicher Output: Wirkungsbudget mit Basisversorgung, Schutzpflichten, Portfolioentscheidungen, Reserven und Reviewregeln.",
+      "WÖk-Verwendung": "E06 gehört zur Kategorie „Strategie, Portfolio und Governance“. Erwartetes Arbeitsergebnis: Wirkungsbudget mit Basisversorgung, Schutzpflichten, Portfolioentscheidungen, Reserven und Reviewregeln.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungsportfolio",
@@ -1221,7 +1221,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie E",
       "Kurzdefinition": "CAPEX, Akquisitionen, Finanzierungen und größere Programme vor Freigabe auf Grenzen, Netto-Wirkung, Tragfähigkeit, Resilienz und Transformation prüfen.",
-      "WÖk-Verwendung": "E07 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlicher Output: Investitionsmemo mit Gate-Entscheidung, Auflagen, Szenarien, KII, Exit- und Lernbedingungen.",
+      "WÖk-Verwendung": "E07 gehört zur Kategorie „Strategie, Portfolio und Governance“. Erwartetes Arbeitsergebnis: Investitionsmemo mit Gate-Entscheidung, Auflagen, Szenarien, KII, Exit- und Lernbedingungen.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungsscorecard und FinalScore",
@@ -1245,7 +1245,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie E",
       "Kurzdefinition": "Entscheidungsrechte, Verantwortlichkeit, unabhängige Prüfung, Beteiligung, Datenhoheit, Widerspruch und Lernpflichten institutionell verankern.",
-      "WÖk-Verwendung": "E08 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlicher Output: Governance-Blueprint mit Organen, Rollen, Rechten, Informationsflüssen, Eskalation und Review.",
+      "WÖk-Verwendung": "E08 gehört zur Kategorie „Strategie, Portfolio und Governance“. Erwartetes Arbeitsergebnis: Governance-Blueprint mit Organen, Rollen, Rechten, Informationsflüssen, Eskalation und Review.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Beteiligungs- und Repräsentationsdesign",
@@ -1264,7 +1264,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie E",
       "Kurzdefinition": "Verantwortung für Wirkung, Daten, Entscheidungen, Beteiligung, Prüfung und Lernen über Prozesse und Ebenen eindeutig zuweisen.",
-      "WÖk-Verwendung": "E09 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlicher Output: RACI+-Matrix mit Responsible, Accountable, Consulted, Informed sowie Challenge, Affected und Stop-Recht.",
+      "WÖk-Verwendung": "E09 gehört zur Kategorie „Strategie, Portfolio und Governance“. Erwartetes Arbeitsergebnis: RACI+-Matrix mit Responsible, Accountable, Consulted, Informed sowie Challenge, Affected und Stop-Recht.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungsgovernance-Canvas",
@@ -1282,7 +1282,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie E",
       "Kurzdefinition": "Komplexe Wirkungsentscheidungen knapp, vergleichbar und revisionsfähig dokumentieren.",
-      "WÖk-Verwendung": "E10 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlicher Output: Standardmemo mit Problem, Optionen, Evidenz, Wirkung, Grenzen, Risiken, Entscheidung, Auflagen und Lernplan.",
+      "WÖk-Verwendung": "E10 gehört zur Kategorie „Strategie, Portfolio und Governance“. Erwartetes Arbeitsergebnis: Standardmemo mit Problem, Optionen, Evidenz, Wirkung, Grenzen, Risiken, Entscheidung, Auflagen und Lernplan.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungspilot-Design",
@@ -1299,7 +1299,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie E",
       "Kurzdefinition": "Strategie in eine zeitlich, kausal und organisatorisch sinnvolle Abfolge aus Schutz, Enablern, Piloten, Skalierung, Umbau und Exit übersetzen.",
-      "WÖk-Verwendung": "E11 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlicher Output: Mehrhorizont-Roadmap mit Meilensteinen, Abhängigkeiten, Wirkungsgates, KII und Übergangsschutz.",
+      "WÖk-Verwendung": "E11 gehört zur Kategorie „Strategie, Portfolio und Governance“. Erwartetes Arbeitsergebnis: Mehrhorizont-Roadmap mit Meilensteinen, Abhängigkeiten, Wirkungsgates, KII und Übergangsschutz.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungsstrategie-Canvas",
@@ -1319,7 +1319,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie E",
       "Kurzdefinition": "Bewerten, wie weit Wirkung von Berichterstattung zu integrierter, rückgekoppelter und transformativer Steuerung entwickelt ist.",
-      "WÖk-Verwendung": "E12 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlicher Output: Reifegradprofil 0–5 je Dimension mit Evidenz, Lücken, Zielniveau und Entwicklungsplan.",
+      "WÖk-Verwendung": "E12 gehört zur Kategorie „Strategie, Portfolio und Governance“. Erwartetes Arbeitsergebnis: Reifegradprofil 0–5 je Dimension mit Evidenz, Lücken, Zielniveau und Entwicklungsplan.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -1338,7 +1338,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie F",
       "Kurzdefinition": "Prüfen, ob eine relevante Zustandsveränderung verstanden ist und eine Lösung einen plausiblen Mechanismus adressiert, bevor Geschäftsmodell oder Skalierung optimiert werden.",
-      "WÖk-Verwendung": "F01 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: Fit-Statement mit Problembeleg, Empfängern, Mechanismus, Grenzen, Alternativen und kritischsten Hypothesen.",
+      "WÖk-Verwendung": "F01 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Erwartetes Arbeitsergebnis: Fit-Statement mit Problembeleg, Empfängern, Mechanismus, Grenzen, Alternativen und kritischsten Hypothesen.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungsproblem-Canvas",
@@ -1356,7 +1356,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie F",
       "Kurzdefinition": "Nutzerwert, Wirkung für weitere Empfänger und Systemwirkung zu einem verantwortbaren Leistungsversprechen verbinden.",
-      "WÖk-Verwendung": "F02 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: Wirkungsversprechen mit Nutzeraufgaben, Bedürfnissen, Zustandsgewinn, externen Wirkungen, Grenzen und Nachweis.",
+      "WÖk-Verwendung": "F02 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Erwartetes Arbeitsergebnis: Wirkungsversprechen mit Nutzeraufgaben, Bedürfnissen, Zustandsgewinn, externen Wirkungen, Grenzen und Nachweis.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungsproblem–Lösungs-Fit",
@@ -1374,7 +1374,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie F",
       "Kurzdefinition": "Ein Geschäfts-, Finanzierungs- oder Leistungsmodell als dynamisches Wirkungssystem mit Zuständen, Empfängern, Mechanismen, Wertschöpfung, Tragfähigkeit, Grenzen und Lernen gestalten.",
-      "WÖk-Verwendung": "F03 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: Vollständiges Wirkungsmodell mit zwölf Feldern und Anschluss an Scorecards, Portfolios und Gates.",
+      "WÖk-Verwendung": "F03 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Erwartetes Arbeitsergebnis: Vollständiges Wirkungsmodell mit zwölf Feldern und Anschluss an Scorecards, Portfolios und Gates.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungsproblem–Lösungs-Fit",
@@ -1400,7 +1400,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie F",
       "Kurzdefinition": "Design Thinking und Double Diamond um Systemdiagnose, Wirkungsgrenzen, Netto-Wirkung, Umsetzung und Lernrückkopplung erweitern.",
-      "WÖk-Verwendung": "F04 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: Durchgängiger Innovationsprozess von Problemraum über Wirkungsraum und Lösungsraum zur verantwortbaren Erprobung.",
+      "WÖk-Verwendung": "F04 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Erwartetes Arbeitsergebnis: Durchgängiger Innovationsprozess von Problemraum über Wirkungsraum und Lösungsraum zur verantwortbaren Erprobung.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -1440,7 +1440,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie F",
       "Kurzdefinition": "Vielfältige Interventionsoptionen auf unterschiedlichen Systemhebeln erzeugen, kombinieren und vor vorschneller Lieblingslösung schützen.",
-      "WÖk-Verwendung": "F05 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: Breites Optionenportfolio mit Mechanismus, Hebeltiefe, Wirkung, Grenzen, Aufwand und Lernwert.",
+      "WÖk-Verwendung": "F05 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Erwartetes Arbeitsergebnis: Breites Optionenportfolio mit Mechanismus, Hebeltiefe, Wirkung, Grenzen, Aufwand und Lernwert.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Systemhebel-Analyse",
@@ -1458,7 +1458,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie F",
       "Kurzdefinition": "Eine minimale Darstellung oder Intervention bauen, die neben Nutzung auch Mechanismus, Betroffenenwirkung und Risiken lernbar macht.",
-      "WÖk-Verwendung": "F06 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: Prototypplan mit Lernfragen, betroffenen Gruppen, Schutzmaßnahmen, Beobachtungen und Abbruchregeln.",
+      "WÖk-Verwendung": "F06 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Erwartetes Arbeitsergebnis: Prototypplan mit Lernfragen, betroffenen Gruppen, Schutzmaßnahmen, Beobachtungen und Abbruchregeln.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungsversprechen-Canvas",
@@ -1477,7 +1477,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie F",
       "Kurzdefinition": "Eine Wirkungshypothese unter kontrollierten oder realweltlichen Bedingungen so testen, dass Lernen, Schutz und Entscheidung möglich werden.",
-      "WÖk-Verwendung": "F07 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: Experimentprotokoll mit Hypothese, Vergleich, Messung, Ethik, Nebenwirkungen, Ergebnis und Entscheidungsregel.",
+      "WÖk-Verwendung": "F07 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Erwartetes Arbeitsergebnis: Experimentprotokoll mit Hypothese, Vergleich, Messung, Ethik, Nebenwirkungen, Ergebnis und Entscheidungsregel.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungshypothesen-Register",
@@ -1496,7 +1496,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie F",
       "Kurzdefinition": "Die kleinste real nutzbare Lösung bestimmen, die eine relevante positive Zustandsveränderung verantwortbar testen kann.",
-      "WÖk-Verwendung": "F08 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: MVP-Scope mit Mindestwirkung, Mindesttragfähigkeit, Schutzgrenzen, Zielgruppe, Daten und Lernplan.",
+      "WÖk-Verwendung": "F08 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Erwartetes Arbeitsergebnis: MVP-Scope mit Mindestwirkung, Mindesttragfähigkeit, Schutzgrenzen, Zielgruppe, Daten und Lernplan.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungsprototyp-Canvas",
@@ -1514,7 +1514,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie F",
       "Kurzdefinition": "Prüfen, ob Problemrelevanz, Wirkungsmechanismus, Systemverträglichkeit, Markt-/Finanzierungslogik und organisatorische Fähigkeit gleichzeitig ausreichend passen.",
-      "WÖk-Verwendung": "F09 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: Fit-Profil mit fünf Dimensionen, Engpass, Evidenz und nächstem Lernschritt.",
+      "WÖk-Verwendung": "F09 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Erwartetes Arbeitsergebnis: Fit-Profil mit fünf Dimensionen, Engpass, Evidenz und nächstem Lernschritt.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungsproblem–Lösungs-Fit",
@@ -1539,7 +1539,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie F",
       "Kurzdefinition": "Wirkungen von Rohstoffen über Herstellung, Distribution, Nutzung, Wartung und Ende des Lebenszyklus gemeinsam gestalten.",
-      "WÖk-Verwendung": "F10 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: Lebenszyklusprofil mit Hotspots, Empfängern, Daten, Kreisläufen, Grenzen und Designentscheidungen.",
+      "WÖk-Verwendung": "F10 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Erwartetes Arbeitsergebnis: Lebenszyklusprofil mit Hotspots, Empfängern, Daten, Kreisläufen, Grenzen und Designentscheidungen.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungsmodell-Canvas",
@@ -1558,7 +1558,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie F",
       "Kurzdefinition": "Lieferketten als Wirkungs- und Risikonetz statt als reine Kostenkette gestalten.",
-      "WÖk-Verwendung": "F11 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: Lieferkettenkarte mit Stufen, WÖk-IDs, Wirkungen, Datenqualität, Macht, Risiken, Alternativen und Entwicklungsplan.",
+      "WÖk-Verwendung": "F11 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Erwartetes Arbeitsergebnis: Lieferkettenkarte mit Stufen, WÖk-IDs, Wirkungen, Datenqualität, Macht, Risiken, Alternativen und Entwicklungsplan.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Produktlebenszyklus-Wirkungs-Canvas",
@@ -1577,7 +1577,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie F",
       "Kurzdefinition": "Direkte und indirekte Netzwerkeffekte, Moderation, Daten-, Ranking- und Machtlogiken sowie gesellschaftliche Wirkungen einer Plattform gestalten.",
-      "WÖk-Verwendung": "F12 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: Plattformmodell mit Akteursseiten, Wert-/Datenflüssen, Wirkmechanismen, Externalitäten, Governance und Schutz.",
+      "WÖk-Verwendung": "F12 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Erwartetes Arbeitsergebnis: Plattformmodell mit Akteursseiten, Wert-/Datenflüssen, Wirkmechanismen, Externalitäten, Governance und Schutz.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungsmodell-Canvas",
@@ -1595,7 +1595,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie F",
       "Kurzdefinition": "Preise, Gebühren, Boni, Steuern, Vergütung, Defaults und nicht monetäre Signale so gestalten, dass sie Wirkung sichtbar machen und keine schädlichen Nebenanreize erzeugen.",
-      "WÖk-Verwendung": "F13 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: Anreizarchitektur mit Zielverhalten, Wirkmechanismus, Verteilung, Gegenanreiz, Schutz und Monitoring.",
+      "WÖk-Verwendung": "F13 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Erwartetes Arbeitsergebnis: Anreizarchitektur mit Zielverhalten, Wirkmechanismus, Verteilung, Gegenanreiz, Schutz und Monitoring.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Externalitäten- und Kostenverlagerungskarte",
@@ -1613,7 +1613,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie F",
       "Kurzdefinition": "Entscheiden, ob Wirkung durch Organisationswachstum, Replikation, Partnerschaft, Open Source, Standardsetzung, Politikänderung oder bewussten Exit verbreitet wird.",
-      "WÖk-Verwendung": "F14 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: Skalierungsstrategie mit Pfad, Voraussetzungen, Qualitätsgrenzen, Macht- und Lock-in-Schutz sowie Exit-Regeln.",
+      "WÖk-Verwendung": "F14 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Erwartetes Arbeitsergebnis: Skalierungsstrategie mit Pfad, Voraussetzungen, Qualitätsgrenzen, Macht- und Lock-in-Schutz sowie Exit-Regeln.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Problem–Wirkungs–System–Markt-Fit",
@@ -1631,7 +1631,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie G",
       "Kurzdefinition": "Die Organisation als Wirkungssystem aus Zweck, Rollen, Prozessen, Netzwerken, Ressourcen, Daten, Anreizen, Governance und Lernen gestalten.",
-      "WÖk-Verwendung": "G01 gehört zur Kategorie „Organisation, Führung und Kultur“. Verbindlicher Output: Organisationsblueprint mit Wirkungskern, Betriebsmodell und Entwicklungsprioritäten.",
+      "WÖk-Verwendung": "G01 gehört zur Kategorie „Organisation, Führung und Kultur“. Erwartetes Arbeitsergebnis: Organisationsblueprint mit Wirkungskern, Betriebsmodell und Entwicklungsprioritäten.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungsstrategie-Canvas",
@@ -1655,7 +1655,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie G",
       "Kurzdefinition": "Führung als Gestaltung von Orientierung, Bedingungen, Entscheidungen, Rückkopplung, Schutz, Lernen und Selbstwirksamkeit operationalisieren.",
-      "WÖk-Verwendung": "G02 gehört zur Kategorie „Organisation, Führung und Kultur“. Verbindlicher Output: Führungsprofil und Teamvereinbarung mit sieben Führungsfunktionen und beobachtbaren Praktiken.",
+      "WÖk-Verwendung": "G02 gehört zur Kategorie „Organisation, Führung und Kultur“. Erwartetes Arbeitsergebnis: Führungsprofil und Teamvereinbarung mit sieben Führungsfunktionen und beobachtbaren Praktiken.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Organisationswirkungs-Canvas",
@@ -1674,7 +1674,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie G",
       "Kurzdefinition": "Strategie und Wirkung in End-to-End-Prozesse, Entscheidungsrechte, Daten, Technologie, Fähigkeiten und Steuerungsrhythmen übersetzen.",
-      "WÖk-Verwendung": "G03 gehört zur Kategorie „Organisation, Führung und Kultur“. Verbindlicher Output: Operating-Model-Blueprint mit Kernprozessen, Governance, Datenpunkten, KII und Schnittstellen.",
+      "WÖk-Verwendung": "G03 gehört zur Kategorie „Organisation, Führung und Kultur“. Erwartetes Arbeitsergebnis: Operating-Model-Blueprint mit Kernprozessen, Governance, Datenpunkten, KII und Schnittstellen.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Organisationswirkungs-Canvas",
@@ -1693,7 +1693,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie G",
       "Kurzdefinition": "Untersuchen, welche formellen und informellen Signale tatsächliches Verhalten fördern und ob sie mit dem Wirkungsauftrag übereinstimmen.",
-      "WÖk-Verwendung": "G04 gehört zur Kategorie „Organisation, Führung und Kultur“. Verbindlicher Output: Kultur- und Anreizprofil mit Verstärkern, Widersprüchen, Ritualen und Veränderungshebeln.",
+      "WÖk-Verwendung": "G04 gehört zur Kategorie „Organisation, Führung und Kultur“. Erwartetes Arbeitsergebnis: Kultur- und Anreizprofil mit Verstärkern, Widersprüchen, Ritualen und Veränderungshebeln.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Organisationswirkungs-Canvas",
@@ -1714,7 +1714,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie G",
       "Kurzdefinition": "Sichtbare und unsichtbare Macht, Ressourcenabhängigkeiten, Vetos, Agenda-Setting und Ausschlüsse in Wirkungssystemen analysieren.",
-      "WÖk-Verwendung": "G05 gehört zur Kategorie „Organisation, Führung und Kultur“. Verbindlicher Output: Machtlandkarte mit Quellen, Abhängigkeiten, Schutzrisiken, Gegenmacht und Governanceoptionen.",
+      "WÖk-Verwendung": "G05 gehört zur Kategorie „Organisation, Führung und Kultur“. Erwartetes Arbeitsergebnis: Machtlandkarte mit Quellen, Abhängigkeiten, Schutzrisiken, Gegenmacht und Governanceoptionen.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungsempfänger- und Stakeholder-Landkarte",
@@ -1734,7 +1734,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie G",
       "Kurzdefinition": "Räume und Regeln schaffen, in denen Risiken, Grenzverletzungen, Fehler und abweichende Perspektiven früh geäußert werden können.",
-      "WÖk-Verwendung": "G06 gehört zur Kategorie „Organisation, Führung und Kultur“. Verbindlicher Output: Widerspruchsvereinbarung mit Kanälen, Reaktionsstandard, Schutz, Eskalation und Lernroutine.",
+      "WÖk-Verwendung": "G06 gehört zur Kategorie „Organisation, Führung und Kultur“. Erwartetes Arbeitsergebnis: Widerspruchsvereinbarung mit Kanälen, Reaktionsstandard, Schutz, Eskalation und Lernroutine.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungsführungsrad",
@@ -1754,7 +1754,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie G",
       "Kurzdefinition": "Benötigte Fähigkeiten für Wirkungsverständnis, Systemdenken, Daten, Moderation, Bewertung, Governance und Transformation bestimmen und entwickeln.",
-      "WÖk-Verwendung": "G07 gehört zur Kategorie „Organisation, Führung und Kultur“. Verbindlicher Output: Rollenbezogene Kompetenzmatrix mit Niveaus, Evidenz, Lernpfaden und Kapazitätsplan.",
+      "WÖk-Verwendung": "G07 gehört zur Kategorie „Organisation, Führung und Kultur“. Erwartetes Arbeitsergebnis: Rollenbezogene Kompetenzmatrix mit Niveaus, Evidenz, Lernpfaden und Kapazitätsplan.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "WÖMS-Reifegrad- und Fähigkeitsassessment",
@@ -1770,7 +1770,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie G",
       "Kurzdefinition": "Single-, Double- und Triple-Loop-Lernen so institutionalisieren, dass nicht nur Maßnahmen, sondern Annahmen, Regeln und Ziele korrigiert werden.",
-      "WÖk-Verwendung": "G08 gehört zur Kategorie „Organisation, Führung und Kultur“. Verbindlicher Output: Lernarchitektur mit Rhythmen, Daten, Reflexionsfragen, Entscheidungsrechten, Wissensspeicher und Methodenpflege.",
+      "WÖk-Verwendung": "G08 gehört zur Kategorie „Organisation, Führung und Kultur“. Erwartetes Arbeitsergebnis: Lernarchitektur mit Rhythmen, Daten, Reflexionsfragen, Entscheidungsrechten, Wissensspeicher und Methodenpflege.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungsführungsrad",
@@ -1794,7 +1794,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie H",
       "Kurzdefinition": "Prüfen, ob Mandat, Fähigkeiten, Daten, Ressourcen, Governance, Kultur und Schutz für eine Transformation ausreichen.",
-      "WÖk-Verwendung": "H01 gehört zur Kategorie „Umsetzung, Monitoring, Lernen und Assurance“. Verbindlicher Output: Readiness-Profil mit kritischen Voraussetzungen, No-Go-Lücken und Aufbauplan.",
+      "WÖk-Verwendung": "H01 gehört zur Kategorie „Umsetzung, Monitoring, Lernen und Assurance“. Erwartetes Arbeitsergebnis: Readiness-Profil mit kritischen Voraussetzungen, No-Go-Lücken und Aufbauplan.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungstransformations-Roadmap",
@@ -1816,7 +1816,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie H",
       "Kurzdefinition": "Eine begrenzte, reversible und lernorientierte Umsetzung gestalten, die reale Wirkung prüft und Betroffene schützt.",
-      "WÖk-Verwendung": "H02 gehört zur Kategorie „Umsetzung, Monitoring, Lernen und Assurance“. Verbindlicher Output: Pilot-Charta mit Scope, Hypothesen, Population, KII, Risiken, Schutz, Governance, Stop und Skalierungskriterien.",
+      "WÖk-Verwendung": "H02 gehört zur Kategorie „Umsetzung, Monitoring, Lernen und Assurance“. Erwartetes Arbeitsergebnis: Pilot-Charta mit Scope, Hypothesen, Population, KII, Risiken, Schutz, Governance, Stop und Skalierungskriterien.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungsexperiment",
@@ -1839,7 +1839,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie H",
       "Kurzdefinition": "Wirkungsentscheidungen, Daten, Rollen und Kontrollen in bestehende Kernprozesse und IT-Systeme einbauen, ohne Parallelbürokratie zu schaffen.",
-      "WÖk-Verwendung": "H03 gehört zur Kategorie „Umsetzung, Monitoring, Lernen und Assurance“. Verbindlicher Output: Integrationsplan je Prozess mit Entscheidungspunkt, Daten, Rolle, System, Kontrolle und Vereinfachung.",
+      "WÖk-Verwendung": "H03 gehört zur Kategorie „Umsetzung, Monitoring, Lernen und Assurance“. Erwartetes Arbeitsergebnis: Integrationsplan je Prozess mit Entscheidungspunkt, Daten, Rolle, System, Kontrolle und Vereinfachung.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungsorientiertes Operating Model",
@@ -1858,7 +1858,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie H",
       "Kurzdefinition": "Umsetzung so planen, dass Beschäftigte, Betroffene, Versorgung, Kaufkraft und kritische Funktionen während des Übergangs geschützt werden.",
-      "WÖk-Verwendung": "H04 gehört zur Kategorie „Umsetzung, Monitoring, Lernen und Assurance“. Verbindlicher Output: Übergangsplan mit Betroffenenfolgen, Qualifizierung, Kompensation, Versorgungsschutz, Kommunikation und Eskalation.",
+      "WÖk-Verwendung": "H04 gehört zur Kategorie „Umsetzung, Monitoring, Lernen und Assurance“. Erwartetes Arbeitsergebnis: Übergangsplan mit Betroffenenfolgen, Qualifizierung, Kompensation, Versorgungsschutz, Kommunikation und Eskalation.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungstransformations-Roadmap",
@@ -1877,7 +1877,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie H",
       "Kurzdefinition": "KII, Grenzen, Risiken, Datenqualität, Portfolio und Lernfragen in einer entscheidungsfähigen, nicht überladenen Sicht zusammenführen.",
-      "WÖk-Verwendung": "H05 gehört zur Kategorie „Umsetzung, Monitoring, Lernen und Assurance“. Verbindlicher Output: Rollenbezogenes Dashboard mit Trend, Ziel, Grenze, Verteilung, Evidenz, Kommentar und Entscheidung.",
+      "WÖk-Verwendung": "H05 gehört zur Kategorie „Umsetzung, Monitoring, Lernen und Assurance“. Erwartetes Arbeitsergebnis: Rollenbezogenes Dashboard mit Trend, Ziel, Grenze, Verteilung, Evidenz, Kommentar und Entscheidung.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "WÖk-Indikatorenarchitektur",
@@ -1898,7 +1898,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie H",
       "Kurzdefinition": "Schwache Signale, Trends, Grenznähe, Beschwerden, Datenanomalien und Systemrisiken früh erkennen und verbindlich eskalieren.",
-      "WÖk-Verwendung": "H06 gehört zur Kategorie „Umsetzung, Monitoring, Lernen und Assurance“. Verbindlicher Output: Frühwarnregister mit Signal, Schwelle, Quelle, Owner, Eskalationsweg, Sofortschutz und Lernschleife.",
+      "WÖk-Verwendung": "H06 gehört zur Kategorie „Umsetzung, Monitoring, Lernen und Assurance“. Erwartetes Arbeitsergebnis: Frühwarnregister mit Signal, Schwelle, Quelle, Owner, Eskalationsweg, Sofortschutz und Lernschleife.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungsrisiko-Matrix",
@@ -1918,7 +1918,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie H",
       "Kurzdefinition": "Regelmäßig prüfen, was tatsächlich wirkte, was nicht, welche Nebenwirkungen entstanden und welche Annahmen, Regeln oder Ziele geändert werden müssen.",
-      "WÖk-Verwendung": "H07 gehört zur Kategorie „Umsetzung, Monitoring, Lernen und Assurance“. Verbindlicher Output: Reviewprotokoll mit Evidenz, Abweichung, Beitrag, Nebenwirkung, Lernstufe und verbindlichen Änderungen.",
+      "WÖk-Verwendung": "H07 gehört zur Kategorie „Umsetzung, Monitoring, Lernen und Assurance“. Erwartetes Arbeitsergebnis: Reviewprotokoll mit Evidenz, Abweichung, Beitrag, Nebenwirkung, Lernstufe und verbindlichen Änderungen.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Wirkungspilot-Design",
@@ -2016,7 +2016,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie H",
       "Kurzdefinition": "Daten, Bewertungslogik, Grenzprüfung, Governance, Aussagen und Methodenprozess unabhängig und risikoorientiert prüfen.",
-      "WÖk-Verwendung": "H08 gehört zur Kategorie „Umsetzung, Monitoring, Lernen und Assurance“. Verbindlicher Output: Assurance-Bericht mit Prüfgegenstand, Kriterien, Umfang, Feststellungen, Konfidenz, Auflagen und Follow-up.",
+      "WÖk-Verwendung": "H08 gehört zur Kategorie „Umsetzung, Monitoring, Lernen und Assurance“. Erwartetes Arbeitsergebnis: Assurance-Bericht mit Prüfgegenstand, Kriterien, Umfang, Feststellungen, Konfidenz, Auflagen und Follow-up.",
       "Abgrenzung": "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden.",
       "Querverweise": [
         "Referenzrahmen- und Standardmapping",
@@ -2050,7 +2050,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie I",
       "Kurzdefinition": "Zukunftsannahmen, Wissenslücken und Unsicherheitsarten sichtbar machen, bevor Strategie oder Investition festgelegt werden.",
-      "WÖk-Verwendung": "I01 gehört zur Kategorie „Strategische Vorausschau und Entscheidungsintelligenz“. Verbindlicher Output: Versioniertes Annahmenregister mit Unsicherheitsklasse, Bedeutung, Evidenz, Verantwortlichen und Aktualisierungstriggern.",
+      "WÖk-Verwendung": "I01 gehört zur Kategorie „Strategische Vorausschau und Entscheidungsintelligenz“. Erwartetes Arbeitsergebnis: Versioniertes Annahmenregister mit Unsicherheitsklasse, Bedeutung, Evidenz, Verantwortlichen und Aktualisierungstriggern.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2070,7 +2070,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie I",
       "Kurzdefinition": "Frühe Veränderungen, neue Risiken, Technologien, soziale Dynamiken und regulatorische Verschiebungen systematisch beobachten.",
-      "WÖk-Verwendung": "I02 gehört zur Kategorie „Strategische Vorausschau und Entscheidungsintelligenz“. Verbindlicher Output: Priorisiertes Signalradar mit Quelle, Reife, möglicher Wirkung, Zeithorizont und Beobachtungsauftrag.",
+      "WÖk-Verwendung": "I02 gehört zur Kategorie „Strategische Vorausschau und Entscheidungsintelligenz“. Erwartetes Arbeitsergebnis: Priorisiertes Signalradar mit Quelle, Reife, möglicher Wirkung, Zeithorizont und Beobachtungsauftrag.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2090,7 +2090,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie I",
       "Kurzdefinition": "Kontinuierliche Entwicklungen von Brüchen, Kipppunkten und seltenen Ereignissen unterscheiden.",
-      "WÖk-Verwendung": "I03 gehört zur Kategorie „Strategische Vorausschau und Entscheidungsintelligenz“. Verbindlicher Output: Zukunftstreiber-Portfolio mit Dynamik, Unsicherheit, Wechselwirkung und potenzieller Wirkung erster bis dritter Ordnung.",
+      "WÖk-Verwendung": "I03 gehört zur Kategorie „Strategische Vorausschau und Entscheidungsintelligenz“. Erwartetes Arbeitsergebnis: Zukunftstreiber-Portfolio mit Dynamik, Unsicherheit, Wechselwirkung und potenzieller Wirkung erster bis dritter Ordnung.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2110,7 +2110,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie I",
       "Kurzdefinition": "Mehrere plausible, intern konsistente Zukunftsräume entwickeln, ohne Prognose als Gewissheit auszugeben.",
-      "WÖk-Verwendung": "I04 gehört zur Kategorie „Strategische Vorausschau und Entscheidungsintelligenz“. Verbindlicher Output: Drei bis fünf Szenarien mit Treiberlogik, Zustandsbild, Wirkungsfolgen, Frühindikatoren und Managementimplikationen.",
+      "WÖk-Verwendung": "I04 gehört zur Kategorie „Strategische Vorausschau und Entscheidungsintelligenz“. Erwartetes Arbeitsergebnis: Drei bis fünf Szenarien mit Treiberlogik, Zustandsbild, Wirkungsfolgen, Frühindikatoren und Managementimplikationen.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2130,7 +2130,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie I",
       "Kurzdefinition": "Strategien, Geschäftsmodelle oder politische Maßnahmen unter mehreren Zukunfts- und Störungslagen prüfen.",
-      "WÖk-Verwendung": "I05 gehört zur Kategorie „Strategische Vorausschau und Entscheidungsintelligenz“. Verbindlicher Output: Stresstestbericht mit Versagensmodi, Wirkungseinbrüchen, Grenzverletzungen, Robustheitslücken und Redesign-Aufträgen.",
+      "WÖk-Verwendung": "I05 gehört zur Kategorie „Strategische Vorausschau und Entscheidungsintelligenz“. Erwartetes Arbeitsergebnis: Stresstestbericht mit Versagensmodi, Wirkungseinbrüchen, Grenzverletzungen, Robustheitslücken und Redesign-Aufträgen.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2150,7 +2150,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie I",
       "Kurzdefinition": "Unter hoher Unsicherheit Maßnahmen wählen, die robust, schrittweise, reversibel und lernfähig sind.",
-      "WÖk-Verwendung": "I06 gehört zur Kategorie „Strategische Vorausschau und Entscheidungsintelligenz“. Verbindlicher Output: Adaptiver Pfad mit Sofortmaßnahmen, Realoptionen, Entscheidungspunkten, Triggern und Stop-/Skalierungsregeln.",
+      "WÖk-Verwendung": "I06 gehört zur Kategorie „Strategische Vorausschau und Entscheidungsintelligenz“. Erwartetes Arbeitsergebnis: Adaptiver Pfad mit Sofortmaßnahmen, Realoptionen, Entscheidungspunkten, Triggern und Stop-/Skalierungsregeln.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2170,7 +2170,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie I",
       "Kurzdefinition": "Entscheidungsmodus, Beteiligung, Evidenz- und Assurancetiefe an Komplexität, Reversibilität und Wirkungsschwere anpassen.",
-      "WÖk-Verwendung": "I07 gehört zur Kategorie „Strategische Vorausschau und Entscheidungsintelligenz“. Verbindlicher Output: Klassifizierte Entscheidung mit vorgeschriebenem Verfahren, Gate, Beteiligung, Prüftiefe und Reviewfrequenz.",
+      "WÖk-Verwendung": "I07 gehört zur Kategorie „Strategische Vorausschau und Entscheidungsintelligenz“. Erwartetes Arbeitsergebnis: Klassifizierte Entscheidung mit vorgeschriebenem Verfahren, Gate, Beteiligung, Prüftiefe und Reviewfrequenz.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2190,7 +2190,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie I",
       "Kurzdefinition": "Entscheidungsqualität verbessern und Hindsight Bias durch nachvollziehbare Vorannahmen und spätere Evidenzupdates begrenzen.",
-      "WÖk-Verwendung": "I08 gehört zur Kategorie „Strategische Vorausschau und Entscheidungsintelligenz“. Verbindlicher Output: Versioniertes Entscheidungslog mit Pre-Mortem, Alternativen, Unsicherheit, erwarteten Signalen und späterem Outcome-Review.",
+      "WÖk-Verwendung": "I08 gehört zur Kategorie „Strategische Vorausschau und Entscheidungsintelligenz“. Erwartetes Arbeitsergebnis: Versioniertes Entscheidungslog mit Pre-Mortem, Alternativen, Unsicherheit, erwarteten Signalen und späterem Outcome-Review.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2210,7 +2210,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie J",
       "Kurzdefinition": "Stabile Fähigkeiten identifizieren, die ein System unabhängig von Organigramm, Projekten oder Technologien dauerhaft beherrschen muss.",
-      "WÖk-Verwendung": "J01 gehört zur Kategorie „Business Architecture, Capabilities und Zielarchitektur“. Verbindlicher Output: Hierarchische Capability Map mit Definition, Wirkungsbeitrag, Owner und Systemgrenze.",
+      "WÖk-Verwendung": "J01 gehört zur Kategorie „Business Architecture, Capabilities und Zielarchitektur“. Erwartetes Arbeitsergebnis: Hierarchische Capability Map mit Definition, Wirkungsbeitrag, Owner und Systemgrenze.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2230,7 +2230,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie J",
       "Kurzdefinition": "Fähigkeiten direkt mit Wirkungspfaden, Empfängern, KII und Risiken verbinden.",
-      "WÖk-Verwendung": "J02 gehört zur Kategorie „Business Architecture, Capabilities und Zielarchitektur“. Verbindlicher Output: Matrix mit Capability-Beitrag, Wirkungspfad, Empfänger, KII, Risiko, Reife und Verantwortlichkeit.",
+      "WÖk-Verwendung": "J02 gehört zur Kategorie „Business Architecture, Capabilities und Zielarchitektur“. Erwartetes Arbeitsergebnis: Matrix mit Capability-Beitrag, Wirkungspfad, Empfänger, KII, Risiko, Reife und Verantwortlichkeit.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2250,7 +2250,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie J",
       "Kurzdefinition": "Ist- und Zielreife der wirkungskritischen Fähigkeiten evidenzbasiert bewerten.",
-      "WÖk-Verwendung": "J03 gehört zur Kategorie „Business Architecture, Capabilities und Zielarchitektur“. Verbindlicher Output: Capability Heatmap mit Reifegrad, Evidenz, Zielzustand, Risiko und Verbesserungsauftrag.",
+      "WÖk-Verwendung": "J03 gehört zur Kategorie „Business Architecture, Capabilities und Zielarchitektur“. Erwartetes Arbeitsergebnis: Capability Heatmap mit Reifegrad, Evidenz, Zielzustand, Risiko und Verbesserungsauftrag.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2270,7 +2270,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie J",
       "Kurzdefinition": "Abhängigkeiten, gemeinsame Enabler, Konzentrationsrisiken und Kaskaden zwischen Fähigkeiten sichtbar machen.",
-      "WÖk-Verwendung": "J04 gehört zur Kategorie „Business Architecture, Capabilities und Zielarchitektur“. Verbindlicher Output: Netzwerkdiagramm mit kritischen Knoten, Single Points of Failure, Enablern und Entkopplungsoptionen.",
+      "WÖk-Verwendung": "J04 gehört zur Kategorie „Business Architecture, Capabilities und Zielarchitektur“. Erwartetes Arbeitsergebnis: Netzwerkdiagramm mit kritischen Knoten, Single Points of Failure, Enablern und Entkopplungsoptionen.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2290,7 +2290,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie J",
       "Kurzdefinition": "Fähigkeitslücken nach Wirkungsbeitrag, Dringlichkeit, Risiko, Aufwand und Lernwert priorisieren.",
-      "WÖk-Verwendung": "J05 gehört zur Kategorie „Business Architecture, Capabilities und Zielarchitektur“. Verbindlicher Output: Priorisiertes Capability-Investment-Portfolio mit Entscheidung, Budget, Sequenz und Benefit-/Impact-Owner.",
+      "WÖk-Verwendung": "J05 gehört zur Kategorie „Business Architecture, Capabilities und Zielarchitektur“. Erwartetes Arbeitsergebnis: Priorisiertes Capability-Investment-Portfolio mit Entscheidung, Budget, Sequenz und Benefit-/Impact-Owner.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2310,7 +2310,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie J",
       "Kurzdefinition": "Strategie, Stakeholder, Capabilities, Wertströme, Information, Organisation, Produkte und Regeln in einer konsistenten Sicht verbinden.",
-      "WÖk-Verwendung": "J06 gehört zur Kategorie „Business Architecture, Capabilities und Zielarchitektur“. Verbindlicher Output: Integrierte Business-Architecture-Map mit definierten Beziehungen und Architektursichten.",
+      "WÖk-Verwendung": "J06 gehört zur Kategorie „Business Architecture, Capabilities und Zielarchitektur“. Erwartetes Arbeitsergebnis: Integrierte Business-Architecture-Map mit definierten Beziehungen und Architektursichten.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2330,7 +2330,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie J",
       "Kurzdefinition": "Ein wirkungsfähiges Zielbild und realistische Zwischenzustände für Organisation, Prozesse, Daten, Technologie und Governance gestalten.",
-      "WÖk-Verwendung": "J07 gehört zur Kategorie „Business Architecture, Capabilities und Zielarchitektur“. Verbindlicher Output: Zielarchitektur mit Übergangsarchitekturen, Architekturbausteinen, Risiken, Abhängigkeiten und Roadmap.",
+      "WÖk-Verwendung": "J07 gehört zur Kategorie „Business Architecture, Capabilities und Zielarchitektur“. Erwartetes Arbeitsergebnis: Zielarchitektur mit Übergangsarchitekturen, Architekturbausteinen, Risiken, Abhängigkeiten und Roadmap.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2350,7 +2350,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie J",
       "Kurzdefinition": "Dauerhafte Leitplanken für dezentrale Architekturentscheidungen festlegen und Ausnahmen nachvollziehbar dokumentieren.",
-      "WÖk-Verwendung": "J08 gehört zur Kategorie „Business Architecture, Capabilities und Zielarchitektur“. Verbindlicher Output: Katalog von Wirkungs-, Daten-, Technologie-, Sicherheits- und Interoperabilitätsprinzipien plus Architecture Decision Records.",
+      "WÖk-Verwendung": "J08 gehört zur Kategorie „Business Architecture, Capabilities und Zielarchitektur“. Erwartetes Arbeitsergebnis: Katalog von Wirkungs-, Daten-, Technologie-, Sicherheits- und Interoperabilitätsprinzipien plus Architecture Decision Records.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2370,7 +2370,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie K",
       "Kurzdefinition": "Den End-to-End-Fluss vom Bedarf beziehungsweise Problem bis zur tatsächlichen Zustandsveränderung darstellen.",
-      "WÖk-Verwendung": "K01 gehört zur Kategorie „Wirkungswertströme, Prozesse, Services und Flow“. Verbindlicher Output: Wirkungswertstrom mit Stufen, Empfängerzuständen, Übergaben, Daten, Wartezeiten, Risiken und KII.",
+      "WÖk-Verwendung": "K01 gehört zur Kategorie „Wirkungswertströme, Prozesse, Services und Flow“. Erwartetes Arbeitsergebnis: Wirkungswertstrom mit Stufen, Empfängerzuständen, Übergaben, Daten, Wartezeiten, Risiken und KII.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2390,7 +2390,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie K",
       "Kurzdefinition": "Mehrere Produkte, Services und Prozesse auf einen gemeinsamen Empfänger-Outcome ausrichten.",
-      "WÖk-Verwendung": "K02 gehört zur Kategorie „Wirkungswertströme, Prozesse, Services und Flow“. Verbindlicher Output: Outcome Stream mit Teiloutcomes, Beiträgen, Capabilities, Produkten, KII und Abhängigkeiten.",
+      "WÖk-Verwendung": "K02 gehört zur Kategorie „Wirkungswertströme, Prozesse, Services und Flow“. Erwartetes Arbeitsergebnis: Outcome Stream mit Teiloutcomes, Beiträgen, Capabilities, Produkten, KII und Abhängigkeiten.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2410,7 +2410,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie K",
       "Kurzdefinition": "Prozesslandschaft, Kernprozesse, Steuerungs- und Unterstützungsprozesse mit Wirkungspfaden verbinden.",
-      "WÖk-Verwendung": "K03 gehört zur Kategorie „Wirkungswertströme, Prozesse, Services und Flow“. Verbindlicher Output: Prozessarchitektur mit Ebenen, Verantwortungen, Schnittstellen, KII und Modellierungsregeln.",
+      "WÖk-Verwendung": "K03 gehört zur Kategorie „Wirkungswertströme, Prozesse, Services und Flow“. Erwartetes Arbeitsergebnis: Prozessarchitektur mit Ebenen, Verantwortungen, Schnittstellen, KII und Modellierungsregeln.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2430,7 +2430,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie K",
       "Kurzdefinition": "Sichtbare Serviceerfahrung, Backstage-Abläufe, Unterstützungsprozesse und indirekte Wirkungen gemeinsam gestalten.",
-      "WÖk-Verwendung": "K04 gehört zur Kategorie „Wirkungswertströme, Prozesse, Services und Flow“. Verbindlicher Output: Service Blueprint mit Nutzerhandlung, Betroffenenperspektive, Frontstage, Backstage, Support, Daten, Risiken und KII.",
+      "WÖk-Verwendung": "K04 gehört zur Kategorie „Wirkungswertströme, Prozesse, Services und Flow“. Erwartetes Arbeitsergebnis: Service Blueprint mit Nutzerhandlung, Betroffenenperspektive, Frontstage, Backstage, Support, Daten, Risiken und KII.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2450,7 +2450,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie K",
       "Kurzdefinition": "Erfahrungen und Zustandsveränderungen unterschiedlicher Rollen über Zeit vergleichen.",
-      "WÖk-Verwendung": "K05 gehört zur Kategorie „Wirkungswertströme, Prozesse, Services und Flow“. Verbindlicher Output: Mehrperspektivische Journey mit Touchpoints, Emotionen, Barrieren, Macht, Daten, Wirkung und Schutzbedarf.",
+      "WÖk-Verwendung": "K05 gehört zur Kategorie „Wirkungswertströme, Prozesse, Services und Flow“. Erwartetes Arbeitsergebnis: Mehrperspektivische Journey mit Touchpoints, Emotionen, Barrieren, Macht, Daten, Wirkung und Schutzbedarf.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2470,7 +2470,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie K",
       "Kurzdefinition": "Prozessleistung mit tatsächlicher Wirkung, Risiken und Schutzkontrollen verbinden.",
-      "WÖk-Verwendung": "K06 gehört zur Kategorie „Wirkungswertströme, Prozesse, Services und Flow“. Verbindlicher Output: KII- und Kontrollplan je Prozessstufe mit Definition, Datenquelle, Schwelle, Owner und Eskalation.",
+      "WÖk-Verwendung": "K06 gehört zur Kategorie „Wirkungswertströme, Prozesse, Services und Flow“. Erwartetes Arbeitsergebnis: KII- und Kontrollplan je Prozessstufe mit Definition, Datenquelle, Schwelle, Owner und Eskalation.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2490,7 +2490,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie K",
       "Kurzdefinition": "Flow-Verluste, Blindleistung und ausgelagerte Kosten gemeinsam analysieren.",
-      "WÖk-Verwendung": "K07 gehört zur Kategorie „Wirkungswertströme, Prozesse, Services und Flow“. Verbindlicher Output: Priorisierte Liste von Engpässen, Verschwendung, Externalitäten, Ursachen und Verbesserungsoptionen.",
+      "WÖk-Verwendung": "K07 gehört zur Kategorie „Wirkungswertströme, Prozesse, Services und Flow“. Erwartetes Arbeitsergebnis: Priorisierte Liste von Engpässen, Verschwendung, Externalitäten, Ursachen und Verbesserungsoptionen.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2510,7 +2510,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie K",
       "Kurzdefinition": "Tatsächliche Prozessabläufe aus Ereignisdaten mit Sollmodell, Wirkung und Kontrollen vergleichen.",
-      "WÖk-Verwendung": "K08 gehört zur Kategorie „Wirkungswertströme, Prozesse, Services und Flow“. Verbindlicher Output: Reality Map mit Varianten, Durchlaufzeiten, Abweichungen, Wirkungsrisiken und priorisierten Untersuchungen.",
+      "WÖk-Verwendung": "K08 gehört zur Kategorie „Wirkungswertströme, Prozesse, Services und Flow“. Erwartetes Arbeitsergebnis: Reality Map mit Varianten, Durchlaufzeiten, Abweichungen, Wirkungsrisiken und priorisierten Untersuchungen.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2530,7 +2530,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie L",
       "Kurzdefinition": "Dauerhafte Produktverantwortung für Problem, Outcome, Nebenwirkung, Betrieb und Lernen gestalten.",
-      "WÖk-Verwendung": "L01 gehört zur Kategorie „Product Operating Model, Teams, Plattformen und Ökosysteme“. Verbindlicher Output: Product Operating Model mit Produktgrenzen, Outcome, Team, Finanzierung, Discovery/Delivery, Plattformen, Governance und KII.",
+      "WÖk-Verwendung": "L01 gehört zur Kategorie „Product Operating Model, Teams, Plattformen und Ökosysteme“. Erwartetes Arbeitsergebnis: Product Operating Model mit Produktgrenzen, Outcome, Team, Finanzierung, Discovery/Delivery, Plattformen, Governance und KII.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2550,7 +2550,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie L",
       "Kurzdefinition": "Ownership über Produktlebenszyklus, Betrieb, Daten, Wirkung und Rückbau eindeutig zuordnen.",
-      "WÖk-Verwendung": "L02 gehört zur Kategorie „Product Operating Model, Teams, Plattformen und Ökosysteme“. Verbindlicher Output: Responsibility Map mit Product Owner, Impact Owner, Operations, Data, Risk, Legal, Community und Exit-Verantwortung.",
+      "WÖk-Verwendung": "L02 gehört zur Kategorie „Product Operating Model, Teams, Plattformen und Ökosysteme“. Erwartetes Arbeitsergebnis: Responsibility Map mit Product Owner, Impact Owner, Operations, Data, Risk, Legal, Community und Exit-Verantwortung.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2570,7 +2570,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie L",
       "Kurzdefinition": "Kontinuierliche Problemexploration, Lösungsentdeckung, sichere Lieferung, Betrieb und Wirkungslernen verbinden.",
-      "WÖk-Verwendung": "L03 gehört zur Kategorie „Product Operating Model, Teams, Plattformen und Ökosysteme“. Verbindlicher Output: Integrierter Loop mit Hypothesen, Experimente, Release, Betriebsdaten, Wirkungsmessung und Kursentscheidung.",
+      "WÖk-Verwendung": "L03 gehört zur Kategorie „Product Operating Model, Teams, Plattformen und Ökosysteme“. Erwartetes Arbeitsergebnis: Integrierter Loop mit Hypothesen, Experimente, Release, Betriebsdaten, Wirkungsmessung und Kursentscheidung.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2590,7 +2590,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie L",
       "Kurzdefinition": "Teams entlang von Wirkungswertströmen, Plattformen, Enabling-Bedarf und Spezialkomplexität gestalten.",
-      "WÖk-Verwendung": "L04 gehört zur Kategorie „Product Operating Model, Teams, Plattformen und Ökosysteme“. Verbindlicher Output: Teamtopologie mit Teamtypen, Verantwortungsgrenzen, Outcomes, KII und geplanten Interaktionsmodi.",
+      "WÖk-Verwendung": "L04 gehört zur Kategorie „Product Operating Model, Teams, Plattformen und Ökosysteme“. Erwartetes Arbeitsergebnis: Teamtopologie mit Teamtypen, Verantwortungsgrenzen, Outcomes, KII und geplanten Interaktionsmodi.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2610,7 +2610,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie L",
       "Kurzdefinition": "Überforderung, Koordinationslast und diffuse Verantwortungen als Risiko für Qualität und Wirkung sichtbar machen.",
-      "WÖk-Verwendung": "L05 gehört zur Kategorie „Product Operating Model, Teams, Plattformen und Ökosysteme“. Verbindlicher Output: Heatmap kognitiver Last mit Aufgabenarten, Abhängigkeiten, Teaminteraktionen und Entlastungsoptionen.",
+      "WÖk-Verwendung": "L05 gehört zur Kategorie „Product Operating Model, Teams, Plattformen und Ökosysteme“. Erwartetes Arbeitsergebnis: Heatmap kognitiver Last mit Aufgabenarten, Abhängigkeiten, Teaminteraktionen und Entlastungsoptionen.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2630,7 +2630,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie L",
       "Kurzdefinition": "Interne oder externe Plattformen nach ihrem Beitrag zu Flow, Qualität, Zugänglichkeit, Macht und gesellschaftlicher Wirkung gestalten.",
-      "WÖk-Verwendung": "L06 gehört zur Kategorie „Product Operating Model, Teams, Plattformen und Ökosysteme“. Verbindlicher Output: Plattformcanvas mit Nutzerteams, Services, Self-Service, Daten, Governance, Lock-in, KII und Schutzregeln.",
+      "WÖk-Verwendung": "L06 gehört zur Kategorie „Product Operating Model, Teams, Plattformen und Ökosysteme“. Erwartetes Arbeitsergebnis: Plattformcanvas mit Nutzerteams, Services, Self-Service, Daten, Governance, Lock-in, KII und Schutzregeln.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2650,7 +2650,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie L",
       "Kurzdefinition": "Finanzierung von zeitlich begrenzten Projekten zu dauerhaften Produkten, Outcomes und Lernoptionen verschieben.",
-      "WÖk-Verwendung": "L07 gehört zur Kategorie „Product Operating Model, Teams, Plattformen und Ökosysteme“. Verbindlicher Output: Portfolio mit Produkt-/Outcome-Budgets, Capabilities, KII, Lernmeilensteinen und Stop-/Reallokationsregeln.",
+      "WÖk-Verwendung": "L07 gehört zur Kategorie „Product Operating Model, Teams, Plattformen und Ökosysteme“. Erwartetes Arbeitsergebnis: Portfolio mit Produkt-/Outcome-Budgets, Capabilities, KII, Lernmeilensteinen und Stop-/Reallokationsregeln.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2670,7 +2670,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie L",
       "Kurzdefinition": "Mehrere Organisationen, Plattformen und öffentliche Akteure auf gemeinsame Wirkung, faire Lastenteilung und robuste Regeln ausrichten.",
-      "WÖk-Verwendung": "L08 gehört zur Kategorie „Product Operating Model, Teams, Plattformen und Ökosysteme“. Verbindlicher Output: Orchestrierungsmodell mit Rollen, gemeinsamen Outcomes, Daten, Finanzierung, Entscheidungsrechten, Konflikt- und Exit-Regeln.",
+      "WÖk-Verwendung": "L08 gehört zur Kategorie „Product Operating Model, Teams, Plattformen und Ökosysteme“. Erwartetes Arbeitsergebnis: Orchestrierungsmodell mit Rollen, gemeinsamen Outcomes, Daten, Finanzierung, Entscheidungsrechten, Konflikt- und Exit-Regeln.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2690,7 +2690,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie M",
       "Kurzdefinition": "Die Veränderung aus Wirkung, Risiko, Strategie und realen Betroffenheiten legitimieren statt nur aus Effizienz oder Managementwillen.",
-      "WÖk-Verwendung": "M01 gehört zur Kategorie „Change, Adoption, Workforce, Skills und Wissen“. Verbindlicher Output: Change Case mit Ausgangszustand, Zielwirkung, Nicht-Verändern-Risiko, Betroffenen, Übergangslasten, Benefits und Mandat.",
+      "WÖk-Verwendung": "M01 gehört zur Kategorie „Change, Adoption, Workforce, Skills und Wissen“. Erwartetes Arbeitsergebnis: Change Case mit Ausgangszustand, Zielwirkung, Nicht-Verändern-Risiko, Betroffenen, Übergangslasten, Benefits und Mandat.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2710,7 +2710,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie M",
       "Kurzdefinition": "Auswirkungen der Veränderung auf Rollen, Aufgaben, Identität, Macht, Systeme, Standorte und externe Gruppen differenziert erfassen.",
-      "WÖk-Verwendung": "M02 gehört zur Kategorie „Change, Adoption, Workforce, Skills und Wissen“. Verbindlicher Output: Betroffenheitsmatrix mit Ausmaß, Art, Zeitpunkt, Bereitschaft, Schutzbedarf und verantwortlicher Maßnahme.",
+      "WÖk-Verwendung": "M02 gehört zur Kategorie „Change, Adoption, Workforce, Skills und Wissen“. Erwartetes Arbeitsergebnis: Betroffenheitsmatrix mit Ausmaß, Art, Zeitpunkt, Bereitschaft, Schutzbedarf und verantwortlicher Maßnahme.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2730,7 +2730,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie M",
       "Kurzdefinition": "Aktive, glaubwürdige und widerspruchsfähige Führung über Hierarchie- und Organisationsgrenzen gestalten.",
-      "WÖk-Verwendung": "M03 gehört zur Kategorie „Change, Adoption, Workforce, Skills und Wissen“. Verbindlicher Output: Sponsor Map mit Rollen, Entscheidungen, Ressourcen, Verhaltenszusagen, Konflikten und Eskalationswegen.",
+      "WÖk-Verwendung": "M03 gehört zur Kategorie „Change, Adoption, Workforce, Skills und Wissen“. Erwartetes Arbeitsergebnis: Sponsor Map mit Rollen, Entscheidungen, Ressourcen, Verhaltenszusagen, Konflikten und Eskalationswegen.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2750,7 +2750,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie M",
       "Kurzdefinition": "Widerstand nicht als Defizit einzelner Personen, sondern als Information über Interessen, Verluste, Identität und Systemwidersprüche nutzen.",
-      "WÖk-Verwendung": "M04 gehört zur Kategorie „Change, Adoption, Workforce, Skills und Wissen“. Verbindlicher Output: Konfliktkarte mit Themen, Akteuren, Macht, legitimen Anliegen, Risiken, Dialog- und Entscheidungsformaten.",
+      "WÖk-Verwendung": "M04 gehört zur Kategorie „Change, Adoption, Workforce, Skills und Wissen“. Erwartetes Arbeitsergebnis: Konfliktkarte mit Themen, Akteuren, Macht, legitimen Anliegen, Risiken, Dialog- und Entscheidungsformaten.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2770,7 +2770,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie M",
       "Kurzdefinition": "Dezentrale Übersetzung, Rückmeldung und Befähigung über formale Hierarchien hinaus organisieren.",
-      "WÖk-Verwendung": "M05 gehört zur Kategorie „Change, Adoption, Workforce, Skills und Wissen“. Verbindlicher Output: Change-Netzwerk mit Rollen, Auswahlkriterien, Reichweite, Feedbackkanälen, Schutz und Lernrhythmus.",
+      "WÖk-Verwendung": "M05 gehört zur Kategorie „Change, Adoption, Workforce, Skills und Wissen“. Erwartetes Arbeitsergebnis: Change-Netzwerk mit Rollen, Auswahlkriterien, Reichweite, Feedbackkanälen, Schutz und Lernrhythmus.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2790,7 +2790,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie M",
       "Kurzdefinition": "Eine wahrhaftige, zielgruppengerechte und dialogfähige Veränderungserzählung mit konkreten Entscheidungs- und Feedbackformaten verbinden.",
-      "WÖk-Verwendung": "M06 gehört zur Kategorie „Change, Adoption, Workforce, Skills und Wissen“. Verbindlicher Output: Change Story, Botschaftsarchitektur, Zielgruppenplan, Kanäle, Dialogformate, Quellen und Korrekturregeln.",
+      "WÖk-Verwendung": "M06 gehört zur Kategorie „Change, Adoption, Workforce, Skills und Wissen“. Erwartetes Arbeitsergebnis: Change Story, Botschaftsarchitektur, Zielgruppenplan, Kanäle, Dialogformate, Quellen und Korrekturregeln.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2810,7 +2810,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie M",
       "Kurzdefinition": "Menschen rechtzeitig mit Wissen, Skills, Übungsräumen, Werkzeugen und Unterstützung für die neue Wirkungslogik ausstatten.",
-      "WÖk-Verwendung": "M07 gehört zur Kategorie „Change, Adoption, Workforce, Skills und Wissen“. Verbindlicher Output: Enablement-Plan mit Zielkompetenzen, Lernformaten, Praxisaufgaben, Support, Nachweis und Transfermessung.",
+      "WÖk-Verwendung": "M07 gehört zur Kategorie „Change, Adoption, Workforce, Skills und Wissen“. Erwartetes Arbeitsergebnis: Enablement-Plan mit Zielkompetenzen, Lernformaten, Praxisaufgaben, Support, Nachweis und Transfermessung.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2830,7 +2830,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie M",
       "Kurzdefinition": "Nutzung und neues Verhalten als Ergebnis von Fähigkeit, Gelegenheit, Motivation, Anreizen und Systembedingungen gestalten.",
-      "WÖk-Verwendung": "M08 gehört zur Kategorie „Change, Adoption, Workforce, Skills und Wissen“. Verbindlicher Output: Adoptionsplan mit Zielverhalten, Barrieren, Interventionen, ethischen Grenzen, Messung und Verstetigung.",
+      "WÖk-Verwendung": "M08 gehört zur Kategorie „Change, Adoption, Workforce, Skills und Wissen“. Erwartetes Arbeitsergebnis: Adoptionsplan mit Zielverhalten, Barrieren, Interventionen, ethischen Grenzen, Messung und Verstetigung.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2850,7 +2850,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie M",
       "Kurzdefinition": "Zukünftige Fähigkeiten, Rollen, Kapazitäten, Mensch-KI-Arbeitsteilung und faire Übergänge systematisch planen.",
-      "WÖk-Verwendung": "M09 gehört zur Kategorie „Change, Adoption, Workforce, Skills und Wissen“. Verbindlicher Output: Workforce Architecture mit Rollenfamilien, Skills, Kapazität, Sourcing, Übergängen, Risiken und Entwicklungswegen.",
+      "WÖk-Verwendung": "M09 gehört zur Kategorie „Change, Adoption, Workforce, Skills und Wissen“. Erwartetes Arbeitsergebnis: Workforce Architecture mit Rollenfamilien, Skills, Kapazität, Sourcing, Übergängen, Risiken und Entwicklungswegen.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2870,7 +2870,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie M",
       "Kurzdefinition": "Wissen als Wirkungsinfrastruktur erfassen, teilen, schützen und erneuern.",
-      "WÖk-Verwendung": "M10 gehört zur Kategorie „Change, Adoption, Workforce, Skills und Wissen“. Verbindlicher Output: Knowledge Map mit kritischem Wissen, Quellen, Communities, Flüssen, Risiken, Schutz, Nachfolge und Lernschleifen.",
+      "WÖk-Verwendung": "M10 gehört zur Kategorie „Change, Adoption, Workforce, Skills und Wissen“. Erwartetes Arbeitsergebnis: Knowledge Map mit kritischem Wissen, Quellen, Communities, Flüssen, Risiken, Schutz, Nachfolge und Lernschleifen.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2890,7 +2890,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie N",
       "Kurzdefinition": "Alle Initiativen nach strategischem Wirkungsbeitrag, Capability-Aufbau, Risiko, Abhängigkeit, Aufwand und Lernwert steuern.",
-      "WÖk-Verwendung": "N01 gehört zur Kategorie „Portfolio, Programme, Delivery und Impact & Benefits Realization“. Verbindlicher Output: Portfolio mit Initiativen, Wirkungspfaden, Capabilities, Benefits, Risiken, Ressourcen, Gates und Stop-/Reallokationsregeln.",
+      "WÖk-Verwendung": "N01 gehört zur Kategorie „Portfolio, Programme, Delivery und Impact & Benefits Realization“. Erwartetes Arbeitsergebnis: Portfolio mit Initiativen, Wirkungspfaden, Capabilities, Benefits, Risiken, Ressourcen, Gates und Stop-/Reallokationsregeln.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2910,7 +2910,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie N",
       "Kurzdefinition": "Zusammengehörige Initiativen, Capabilities, Übergänge und Benefits in einer koordinierten Transformationsarchitektur verbinden.",
-      "WÖk-Verwendung": "N02 gehört zur Kategorie „Portfolio, Programme, Delivery und Impact & Benefits Realization“. Verbindlicher Output: Program Blueprint mit Outcomes, Workstreams, Abhängigkeiten, Meilensteinen, Benefits, Governance und Risiken.",
+      "WÖk-Verwendung": "N02 gehört zur Kategorie „Portfolio, Programme, Delivery und Impact & Benefits Realization“. Erwartetes Arbeitsergebnis: Program Blueprint mit Outcomes, Workstreams, Abhängigkeiten, Meilensteinen, Benefits, Governance und Risiken.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2930,7 +2930,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie N",
       "Kurzdefinition": "Jede Initiative mit klarem Problem, Output, Outcome, Wirkung, Grenzen, Ownern und Lernpflicht starten.",
-      "WÖk-Verwendung": "N03 gehört zur Kategorie „Portfolio, Programme, Delivery und Impact & Benefits Realization“. Verbindlicher Output: Wirkungsvertrag mit Mandat, Scope, Deliverables, Outcomes, Benefits, KII, Capabilities, Schutz und Gates.",
+      "WÖk-Verwendung": "N03 gehört zur Kategorie „Portfolio, Programme, Delivery und Impact & Benefits Realization“. Erwartetes Arbeitsergebnis: Wirkungsvertrag mit Mandat, Scope, Deliverables, Outcomes, Benefits, KII, Capabilities, Schutz und Gates.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2950,7 +2950,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie N",
       "Kurzdefinition": "Transformation als transparenten, begrenzten Fluss von Optionen, Entscheidungen, Umsetzung und Benefits steuern.",
-      "WÖk-Verwendung": "N04 gehört zur Kategorie „Portfolio, Programme, Delivery und Impact & Benefits Realization“. Verbindlicher Output: Portfolio-Kanban mit WIP-Limits, Entscheidungszuständen, Evidenz, Risiken, Gates und Benefit-Tracking.",
+      "WÖk-Verwendung": "N04 gehört zur Kategorie „Portfolio, Programme, Delivery und Impact & Benefits Realization“. Erwartetes Arbeitsergebnis: Portfolio-Kanban mit WIP-Limits, Entscheidungszuständen, Evidenz, Risiken, Gates und Benefit-Tracking.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2970,7 +2970,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie N",
       "Kurzdefinition": "Portfolioambition mit realer Kapazität, knappen Skills, Abhängigkeiten und Betriebsbelastung abgleichen.",
-      "WÖk-Verwendung": "N05 gehört zur Kategorie „Portfolio, Programme, Delivery und Impact & Benefits Realization“. Verbindlicher Output: Ressourcen- und Kapazitätsplan mit Engpässen, kritischem Pfad, Reserven und Repriorisierungsentscheidungen.",
+      "WÖk-Verwendung": "N05 gehört zur Kategorie „Portfolio, Programme, Delivery und Impact & Benefits Realization“. Erwartetes Arbeitsergebnis: Ressourcen- und Kapazitätsplan mit Engpässen, kritischem Pfad, Reserven und Repriorisierungsentscheidungen.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -2990,7 +2990,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie N",
       "Kurzdefinition": "Die Kette von Deliverables über Nutzung und Benefits bis zur positiven Netto-Wirkung explizit und prüfbar machen.",
-      "WÖk-Verwendung": "N06 gehört zur Kategorie „Portfolio, Programme, Delivery und Impact & Benefits Realization“. Verbindlicher Output: Benefit-/Impact-Map mit Annahmen, Ownern, Messpunkten, Zeitverzug, Nebenwirkungen und Nachhaltigkeitsplan.",
+      "WÖk-Verwendung": "N06 gehört zur Kategorie „Portfolio, Programme, Delivery und Impact & Benefits Realization“. Erwartetes Arbeitsergebnis: Benefit-/Impact-Map mit Annahmen, Ownern, Messpunkten, Zeitverzug, Nebenwirkungen und Nachhaltigkeitsplan.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -3010,7 +3010,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie N",
       "Kurzdefinition": "Verantwortung, Betrieb, Budget, Daten und Lernpflicht nach Projekt- oder Programmende sichern.",
-      "WÖk-Verwendung": "N07 gehört zur Kategorie „Portfolio, Programme, Delivery und Impact & Benefits Realization“. Verbindlicher Output: Handover- und Ownership-Plan mit Abnahmekriterien, Betriebsfähigkeit, Benefit Owner, Impact Owner und Reviewkalender.",
+      "WÖk-Verwendung": "N07 gehört zur Kategorie „Portfolio, Programme, Delivery und Impact & Benefits Realization“. Erwartetes Arbeitsergebnis: Handover- und Ownership-Plan mit Abnahmekriterien, Betriebsfähigkeit, Benefit Owner, Impact Owner und Reviewkalender.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -3030,7 +3030,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie N",
       "Kurzdefinition": "Eine zeitlich begrenzte Integrationsfunktion für Portfolio, Architektur, Change, Benefits, Risiken und Entscheidungsvorbereitung gestalten.",
-      "WÖk-Verwendung": "N08 gehört zur Kategorie „Portfolio, Programme, Delivery und Impact & Benefits Realization“. Verbindlicher Output: Design des Transformation Office mit Auftrag, Rollen, Services, Daten, Entscheidungsforen, Sunset-Kriterien und Reviewformat.",
+      "WÖk-Verwendung": "N08 gehört zur Kategorie „Portfolio, Programme, Delivery und Impact & Benefits Realization“. Erwartetes Arbeitsergebnis: Design des Transformation Office mit Auftrag, Rollen, Services, Daten, Entscheidungsforen, Sunset-Kriterien und Reviewformat.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -3050,7 +3050,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie O",
       "Kurzdefinition": "Daten als gemeinsame Wirkungs- und Entscheidungsinfrastruktur mit eindeutiger Verantwortung, Rechten und Qualitätsregeln organisieren.",
-      "WÖk-Verwendung": "O01 gehört zur Kategorie „Daten, Technologie, KI und agentische Systeme“. Verbindlicher Output: Data Governance Map mit Domains, Ownern, Stewards, Nutzungsrechten, Qualitätszielen, Zugriff, KII und Eskalation.",
+      "WÖk-Verwendung": "O01 gehört zur Kategorie „Daten, Technologie, KI und agentische Systeme“. Erwartetes Arbeitsergebnis: Data Governance Map mit Domains, Ownern, Stewards, Nutzungsrechten, Qualitätszielen, Zugriff, KII und Eskalation.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -3070,7 +3070,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie O",
       "Kurzdefinition": "Herkunft, Transformation, Aggregation, Unsicherheit und Nutzung von Wirkungsdaten nachvollziehbar machen.",
-      "WÖk-Verwendung": "O02 gehört zur Kategorie „Daten, Technologie, KI und agentische Systeme“. Verbindlicher Output: Lineage Map von Quelle bis Entscheidung mit Transformationen, Kontrollen, Qualitätsklasse und Verantwortlichen.",
+      "WÖk-Verwendung": "O02 gehört zur Kategorie „Daten, Technologie, KI und agentische Systeme“. Erwartetes Arbeitsergebnis: Lineage Map von Quelle bis Entscheidung mit Transformationen, Kontrollen, Qualitätsklasse und Verantwortlichen.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -3090,7 +3090,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie O",
       "Kurzdefinition": "Wiederverwendbare, betreibbare Datenprodukte mit klaren Nutzern, Verträgen, Qualität, Wirkung und Lifecycle gestalten.",
-      "WÖk-Verwendung": "O03 gehört zur Kategorie „Daten, Technologie, KI und agentische Systeme“. Verbindlicher Output: Canvas mit Nutzerentscheidungen, Datenversprechen, Quellen, Schnittstellen, Qualität, Owner, Kosten, Risiken und KII.",
+      "WÖk-Verwendung": "O03 gehört zur Kategorie „Daten, Technologie, KI und agentische Systeme“. Erwartetes Arbeitsergebnis: Canvas mit Nutzerentscheidungen, Datenversprechen, Quellen, Schnittstellen, Qualität, Owner, Kosten, Risiken und KII.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -3110,7 +3110,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie O",
       "Kurzdefinition": "Kritische Technologie-, Anbieter-, Cloud-, Schnittstellen- und Kompetenzabhängigkeiten analysieren.",
-      "WÖk-Verwendung": "O04 gehört zur Kategorie „Daten, Technologie, KI und agentische Systeme“. Verbindlicher Output: Dependency Map mit Kritikalität, Substituierbarkeit, Datenportabilität, Exitkosten, Resilienz und Maßnahmen.",
+      "WÖk-Verwendung": "O04 gehört zur Kategorie „Daten, Technologie, KI und agentische Systeme“. Erwartetes Arbeitsergebnis: Dependency Map mit Kritikalität, Substituierbarkeit, Datenportabilität, Exitkosten, Resilienz und Maßnahmen.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -3130,7 +3130,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie O",
       "Kurzdefinition": "Voraussichtliche Auswirkungen eines KI-Systems auf Menschen, Gruppen, Organisation, Planet und Demokratie über den Lebenszyklus prüfen.",
-      "WÖk-Verwendung": "O05 gehört zur Kategorie „Daten, Technologie, KI und agentische Systeme“. Verbindlicher Output: AI Impact Assessment mit Kontext, Betroffenen, Nutzen, Risiken, Daten, Bias, Rechte, Kontrollen, Monitoring und Entscheidung.",
+      "WÖk-Verwendung": "O05 gehört zur Kategorie „Daten, Technologie, KI und agentische Systeme“. Erwartetes Arbeitsergebnis: AI Impact Assessment mit Kontext, Betroffenen, Nutzen, Risiken, Daten, Bias, Rechte, Kontrollen, Monitoring und Entscheidung.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -3150,7 +3150,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie O",
       "Kurzdefinition": "Modellentwicklung, Freigabe, Betrieb, Änderung und menschliche Verantwortung durchgängig steuern.",
-      "WÖk-Verwendung": "O06 gehört zur Kategorie „Daten, Technologie, KI und agentische Systeme“. Verbindlicher Output: Lifecycle Governance mit Rollen, Tests, Validierung, Schwellen, Overrides, Monitoring, Changes und Decommissioning.",
+      "WÖk-Verwendung": "O06 gehört zur Kategorie „Daten, Technologie, KI und agentische Systeme“. Erwartetes Arbeitsergebnis: Lifecycle Governance mit Rollen, Tests, Validierung, Schwellen, Overrides, Monitoring, Changes und Decommissioning.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -3170,7 +3170,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie O",
       "Kurzdefinition": "Ziele, Aufgaben, Werkzeuge und Entscheidungsrechte zwischen Menschen und autonomen oder teilautonomen Agenten sicher verteilen.",
-      "WÖk-Verwendung": "O07 gehört zur Kategorie „Daten, Technologie, KI und agentische Systeme“. Verbindlicher Output: Agent Architecture mit Rollen, Delegationsgrenzen, Toolrechten, Kontext, Kontrollpunkten, Logs, Eskalation und Haftung.",
+      "WÖk-Verwendung": "O07 gehört zur Kategorie „Daten, Technologie, KI und agentische Systeme“. Erwartetes Arbeitsergebnis: Agent Architecture mit Rollen, Delegationsgrenzen, Toolrechten, Kontext, Kontrollpunkten, Logs, Eskalation und Haftung.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -3190,7 +3190,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie O",
       "Kurzdefinition": "Fehler, Missbrauch, Kontrollverlust und schädliche Wirkung schnell begrenzen und Systeme geordnet stilllegen.",
-      "WÖk-Verwendung": "O08 gehört zur Kategorie „Daten, Technologie, KI und agentische Systeme“. Verbindlicher Output: Incident- und Exit-Playbook mit Erkennung, Triage, Eindämmung, Abschaltung, Kommunikation, Redress, Recovery und Lernen.",
+      "WÖk-Verwendung": "O08 gehört zur Kategorie „Daten, Technologie, KI und agentische Systeme“. Erwartetes Arbeitsergebnis: Incident- und Exit-Playbook mit Erkennung, Triage, Eindämmung, Abschaltung, Kommunikation, Redress, Recovery und Lernen.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -3210,7 +3210,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie P",
       "Kurzdefinition": "Führung, Strategie, Realisierung, Ergebnisse und Lernen ganzheitlich gegen das WÖMM/WÖMS bewerten.",
-      "WÖk-Verwendung": "P01 gehört zur Kategorie „Qualität, operative Resilienz, Kontrollen und integrierte Assurance“. Verbindlicher Output: Selbstbewertung mit Stärken, Evidenz, Reife, Ergebnisqualität, Lücken und priorisierter Verbesserungsroadmap.",
+      "WÖk-Verwendung": "P01 gehört zur Kategorie „Qualität, operative Resilienz, Kontrollen und integrierte Assurance“. Erwartetes Arbeitsergebnis: Selbstbewertung mit Stärken, Evidenz, Reife, Ergebnisqualität, Lücken und priorisierter Verbesserungsroadmap.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -3230,7 +3230,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie P",
       "Kurzdefinition": "PDCA und systemisches Lernen auf Wirkung, Prozess, Capability und Governance anwenden.",
-      "WÖk-Verwendung": "P02 gehört zur Kategorie „Qualität, operative Resilienz, Kontrollen und integrierte Assurance“. Verbindlicher Output: Verbesserungszyklus mit Problem, Baseline, Hypothese, Experiment, KII, Ergebnis, Standardisierung oder Rücknahme.",
+      "WÖk-Verwendung": "P02 gehört zur Kategorie „Qualität, operative Resilienz, Kontrollen und integrierte Assurance“. Erwartetes Arbeitsergebnis: Verbesserungszyklus mit Problem, Baseline, Hypothese, Experiment, KII, Ergebnis, Standardisierung oder Rücknahme.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -3250,7 +3250,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie P",
       "Kurzdefinition": "Nach Fehlern, Beinaheereignissen oder Wirkungsabweichungen systemisch lernen, ohne vorschnelle Personalisierung.",
-      "WÖk-Verwendung": "P03 gehört zur Kategorie „Qualität, operative Resilienz, Kontrollen und integrierte Assurance“. Verbindlicher Output: Lernbericht mit Ereignislinie, Systembedingungen, Barrieren, Ursachen, Wirkungsfolgen und Maßnahmen.",
+      "WÖk-Verwendung": "P03 gehört zur Kategorie „Qualität, operative Resilienz, Kontrollen und integrierte Assurance“. Erwartetes Arbeitsergebnis: Lernbericht mit Ereignislinie, Systembedingungen, Barrieren, Ursachen, Wirkungsfolgen und Maßnahmen.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -3270,7 +3270,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie P",
       "Kurzdefinition": "Kritische Produkte, Services, gesellschaftliche Funktionen und maximal tolerierbare Ausfälle bestimmen.",
-      "WÖk-Verwendung": "P04 gehört zur Kategorie „Qualität, operative Resilienz, Kontrollen und integrierte Assurance“. Verbindlicher Output: BIA mit kritischen Services, Empfängern, Auswirkungen über Zeit, Toleranzen, Abhängigkeiten und Prioritäten.",
+      "WÖk-Verwendung": "P04 gehört zur Kategorie „Qualität, operative Resilienz, Kontrollen und integrierte Assurance“. Erwartetes Arbeitsergebnis: BIA mit kritischen Services, Empfängern, Auswirkungen über Zeit, Toleranzen, Abhängigkeiten und Prioritäten.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -3290,7 +3290,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie P",
       "Kurzdefinition": "Kritische Wirkung unter Störung erhalten beziehungsweise sicher und priorisiert wiederherstellen.",
-      "WÖk-Verwendung": "P05 gehört zur Kategorie „Qualität, operative Resilienz, Kontrollen und integrierte Assurance“. Verbindlicher Output: Continuity Plan mit Szenarien, Strategien, Mindestservices, RTO/RPO, Rollen, Fallback, Kommunikation und Tests.",
+      "WÖk-Verwendung": "P05 gehört zur Kategorie „Qualität, operative Resilienz, Kontrollen und integrierte Assurance“. Erwartetes Arbeitsergebnis: Continuity Plan mit Szenarien, Strategien, Mindestservices, RTO/RPO, Rollen, Fallback, Kommunikation und Tests.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -3310,7 +3310,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie P",
       "Kurzdefinition": "Entscheidungen, Kommunikation, Barrieren und Recovery unter realistischen Störungen testen.",
-      "WÖk-Verwendung": "P06 gehört zur Kategorie „Qualität, operative Resilienz, Kontrollen und integrierte Assurance“. Verbindlicher Output: Übungsdesign und After-Action-Report mit Beobachtungen, Lücken, Maßnahmen und Re-Test.",
+      "WÖk-Verwendung": "P06 gehört zur Kategorie „Qualität, operative Resilienz, Kontrollen und integrierte Assurance“. Erwartetes Arbeitsergebnis: Übungsdesign und After-Action-Report mit Beobachtungen, Lücken, Maßnahmen und Re-Test.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -3330,7 +3330,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie P",
       "Kurzdefinition": "Gefahren, Ursachen, präventive und reaktive Barrieren sowie Konsequenzen systematisch verbinden.",
-      "WÖk-Verwendung": "P07 gehört zur Kategorie „Qualität, operative Resilienz, Kontrollen und integrierte Assurance“. Verbindlicher Output: Bow-Tie mit Top Event, Ursachen, Folgen, Barrieren, Ownern, Wirksamkeit, Degradation und KII.",
+      "WÖk-Verwendung": "P07 gehört zur Kategorie „Qualität, operative Resilienz, Kontrollen und integrierte Assurance“. Erwartetes Arbeitsergebnis: Bow-Tie mit Top Event, Ursachen, Folgen, Barrieren, Ownern, Wirksamkeit, Degradation und KII.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -3350,7 +3350,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie P",
       "Kurzdefinition": "Wesentliche Kontrollen für Wirkungsgrenzen, Daten, KI, Prozesse und Governance standardisieren und betreiben.",
-      "WÖk-Verwendung": "P08 gehört zur Kategorie „Qualität, operative Resilienz, Kontrollen und integrierte Assurance“. Verbindlicher Output: Control Library mit Risiko/Wirkung, Ziel, Design, Owner, Frequenz, Evidenz, Test und Wirksamkeitsstatus.",
+      "WÖk-Verwendung": "P08 gehört zur Kategorie „Qualität, operative Resilienz, Kontrollen und integrierte Assurance“. Erwartetes Arbeitsergebnis: Control Library mit Risiko/Wirkung, Ziel, Design, Owner, Frequenz, Evidenz, Test und Wirksamkeitsstatus.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -3370,7 +3370,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie P",
       "Kurzdefinition": "Management, spezialisierte Challenge, interne Revision und externe Assurance auf wesentliche Wirkungsrisiken ausrichten.",
-      "WÖk-Verwendung": "P09 gehört zur Kategorie „Qualität, operative Resilienz, Kontrollen und integrierte Assurance“. Verbindlicher Output: Assurance Map mit Risiken, Controls, Assurance-Anbietern, Tiefe, Frequenz, Lücken und Reliance.",
+      "WÖk-Verwendung": "P09 gehört zur Kategorie „Qualität, operative Resilienz, Kontrollen und integrierte Assurance“. Erwartetes Arbeitsergebnis: Assurance Map mit Risiken, Controls, Assurance-Anbietern, Tiefe, Frequenz, Lücken und Reliance.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",
@@ -3390,7 +3390,7 @@
       "action": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "section": "WÖMS 2.0 · Kernmethoden · Kategorie P",
       "Kurzdefinition": "WÖMS-Anwendung, Bewertungsmodelle, Daten, Entscheidungen und behauptete Wirkung unabhängig challengen.",
-      "WÖk-Verwendung": "P10 gehört zur Kategorie „Qualität, operative Resilienz, Kontrollen und integrierte Assurance“. Verbindlicher Output: Prüfbericht mit Scope, Kriterien, Evidenz, Feststellungen, Unsicherheiten, Managementantwort und Follow-up.",
+      "WÖk-Verwendung": "P10 gehört zur Kategorie „Qualität, operative Resilienz, Kontrollen und integrierte Assurance“. Erwartetes Arbeitsergebnis: Prüfbericht mit Scope, Kriterien, Evidenz, Feststellungen, Unsicherheiten, Managementantwort und Follow-up.",
       "Abgrenzung": "Methode nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Workshopkonsens darf Betroffene, negative Wirkung, Machtasymmetrien oder Minderheitsvoten nicht ausblenden.",
       "Querverweise": [
         "WÖMS-Auftragsklärung",

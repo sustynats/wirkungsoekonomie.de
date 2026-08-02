@@ -131,6 +131,65 @@ function sanitizeCtaText(html) {
   });
 }
 
+/**
+ * Apply the text rules until they reach their public, readable normal form.
+ *
+ * A rule can deliberately create the input of a more specific rule (for
+ * example when a historic status label occurs inside a CTA).  A single pass
+ * would then make the output depend on how often the build happened to call
+ * this script.  Normalising to a fixed point makes one run sufficient and
+ * makes later runs a no-op.
+ */
+function normalizeToolLanguage(html, rules = replacements) {
+  let current = html;
+  const maxPasses = rules.length + 2;
+
+  for (let pass = 0; pass < maxPasses; pass += 1) {
+    const replaced = rules.reduce((value, [pattern, replacement]) => value.replace(pattern, replacement), current);
+    const next = sanitizeCtaText(replaced);
+    if (next === current) return next;
+    current = next;
+  }
+
+  throw new Error(`Public tool-language rules did not converge after ${maxPasses} passes.`);
+}
+
+function runIdempotenceSelfTest() {
+  // The historic generic status rule used to create "wird ergänzt" only after
+  // the earlier, more precise rule had already run.  That required a second
+  // invocation to reach the intended public wording.  Keep that exact rule
+  // order as a regression test without touching any generated page.
+  const historicRuleOrder = [
+    [/Tool-Orientierung · Rechner · wird ergänzt/g, "Tool-Orientierung · Rechner · Modellhafte Einordnung"],
+    [/Download wird ergänzt/g, "Arbeitsmaterial"],
+    [/in Vorbereitung/g, "wird ergänzt"],
+  ];
+  const legacyTemplate = [
+    "Tool-Orientierung · Rechner · in Vorbereitung",
+    "Download in Vorbereitung",
+  ].join("\n");
+  const expectedFragments = [
+    "Tool-Orientierung · Rechner · Modellhafte Einordnung",
+    "Arbeitsmaterial",
+  ];
+  const normalized = normalizeToolLanguage(legacyTemplate, historicRuleOrder);
+  const normalizedAgain = normalizeToolLanguage(normalized, historicRuleOrder);
+
+  if (normalizedAgain !== normalized) {
+    throw new Error("Self-test failed: the legacy tool-language path is not idempotent.");
+  }
+  for (const fragment of expectedFragments) {
+    if (!normalized.includes(fragment)) {
+      throw new Error(`Self-test failed: expected public wording is missing: ${fragment}`);
+    }
+  }
+  if (/in Vorbereitung|wird ergänzt/.test(normalized)) {
+    throw new Error("Self-test failed: legacy editorial status remains after normalisation.");
+  }
+
+  console.log("Public tool-language fixed-point self-test passed.");
+}
+
 function walk(dir, files = []) {
   if (!fs.existsSync(dir)) return files;
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -141,6 +200,13 @@ function walk(dir, files = []) {
   return files;
 }
 
+const args = process.argv.slice(2);
+if (args.includes("--self-test")) {
+  runIdempotenceSelfTest();
+  process.exit(0);
+}
+
+const checkOnly = args.includes("--check");
 let changed = 0;
 const htmlFiles = [
   ...TARGETS.flatMap((target) => walk(path.join(ROOT, target))),
@@ -149,11 +215,24 @@ const htmlFiles = [
 
 for (const file of htmlFiles) {
   const before = fs.readFileSync(file, "utf8");
-  const after = sanitizeCtaText(replacements.reduce((value, [pattern, replacement]) => value.replace(pattern, replacement), before));
+  const after = normalizeToolLanguage(before);
+  const afterSecondRun = normalizeToolLanguage(after);
+  if (afterSecondRun !== after) {
+    throw new Error(`Public tool-language normalisation is not idempotent: ${path.relative(ROOT, file)}`);
+  }
   if (after !== before) {
-    fs.writeFileSync(file, after, "utf8");
+    if (!checkOnly) fs.writeFileSync(file, after, "utf8");
     changed += 1;
   }
 }
 
-console.log(`Sanitized public tool language in ${changed} files.`);
+if (checkOnly) {
+  if (changed) {
+    console.error(`Public tool-language normalisation still has ${changed} pending file(s). Run the normaliser before this check.`);
+    process.exitCode = 1;
+  } else {
+    console.log("Public tool-language normalisation is idempotent and up to date.");
+  }
+} else {
+  console.log(`Sanitized public tool language in ${changed} files.`);
+}

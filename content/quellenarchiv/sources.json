@@ -1,7 +1,7 @@
 {
   "title": "Quellenarchiv der Wirkungsökonomie",
   "generatedAt": "2026-07-30T00:00:00.000Z",
-  "count": 1023,
+  "count": 1024,
   "clusters": [
     {
       "key": "A",
@@ -472,7 +472,7 @@
     },
     {
       "code": "WÖK-Q-0598",
-      "title": "Whitepaper t sroi",
+      "title": "Whitepaper T-SROI (historische Fassung)",
       "url": "https://wirkungsoekonomie.de/dokumente/whitepaper-t-sroi/",
       "doi": null,
       "author": "Natalie Weber",
@@ -482,10 +482,10 @@
       "cluster": "A",
       "clusterLabel": "Eigene WÖk-Referenzen",
       "origin": "intern",
-      "reviewStatus": "fuehrend",
+      "reviewStatus": "historisch",
       "dataQuality": "graue-literatur",
-      "summary": "WÖk-Whitepaper zum T-SROI (transformativer Social Return on Investment): Methodik zur Bewertung transformativer, langfristiger Wirkung von Investitionen und Maßnahmen.",
-      "einordnung": "Das Whitepaper legt eine der methodischen Kernkennzahlen der Wirkungsökonomie offen und erweitert den klassischen SROI um eine transformative, langfristig-systemische Dimension. Es ist querschnittlich, weil T-SROI über alle Wirkungsdimensionen Mensch, Planet und Demokratie hinweg als Bewertungslogik dient und direkt an Prüflogik, Wirkungspfade, Netto-Wirkungs-Index und Datenqualität anknüpft. Seine Rolle ist grundlegend-methodisch: Es definiert das Messgerüst, auf das sich Instrumente wie Wirkungssteuer und Wirkungshaushalt stützen. Der Leitframe Systemresilienz ist im Begriff des Transformativen selbst angelegt. Ehrliche Grenze: eigenpubliziertes Methodenpapier, dessen Aussagekraft an der Verfügbarkeit und Qualität der Wirkungsdaten hängt; die transformative Zurechnung bleibt methodisch anspruchsvoll und empirisch schwer abzusichern.",
+      "summary": "Historische Whitepaper-Fassung mit einer multiplikativen T-SROI-Darstellung; sie ist als Quellenfassung erhalten, aber nicht die aktuelle Rechenregel.",
+      "einordnung": "Die Fassung dokumentiert den Entwicklungstand der T-SROI-Diskussion. Ihre frei gesetzten Transformations-, Resilienz- und Datenqualitätsmultiplikatoren gelten nicht als aktuelle Rechenmethode. Für Berechnungen verweist die Seite auf den T-SROI-Rechenstandard v1.1. Als eigenpublizierte historische Quelle ersetzt sie weder Evidenzprüfung noch eine fachliche Einzelentscheidung.",
       "impactFields": [
         "Mensch",
         "Planet",
@@ -1113,8 +1113,8 @@
     },
     {
       "code": "WÖK-Q-0020",
-      "title": "SDG-Portal (Bertelsmann Stiftung): SDGs auf kommunaler Ebene",
-      "url": "https://sdg-portal.de/de/",
+      "title": "Nachhaltige Kommunen: Nachfolgeangebot zum eingestellten SDG-Portal",
+      "url": "https://nachhaltigekommunen.de/",
       "doi": null,
       "author": "Bertelsmann Stiftung",
       "year": null,
@@ -1123,10 +1123,10 @@
       "cluster": "B",
       "clusterLabel": "SDGs / UN / Agenda 2030",
       "origin": "extern",
-      "reviewStatus": "geprueft",
+      "reviewStatus": "historisch",
       "dataQuality": "graue-literatur",
-      "summary": "Deutschsprachiges Portal, das Daten und Indikatoren zu den SDGs auf Ebene deutscher Kommunen bereitstellt und lokale Nachhaltigkeitsfortschritte vergleichbar macht.",
-      "einordnung": "Für die Wirkungsökonomie ist das Portal relevant, weil es SDG-Wirkung auf kommunaler Ebene messbar und entscheidungsrelevant macht und damit lokale Wirkungspfade unterstützt. Es berührt vor allem die Dimensionen Mensch und Planet, mit demokratischem Bezug über kommunale Steuerung. Anknüpfungspunkt ist die WÖk-Datenlogik prüfbarer Indikatoren; als Stiftungsangebot ist es graue Literatur.",
+      "summary": "Das frühere SDG-Portal wurde zum 30. Juni 2026 eingestellt. Der Link führt zum kommunalen Nachfolgeangebot Nachhaltige Kommunen; frühere Portal-Daten und das Nachfolgeangebot sind nicht ohne Prüfung gleichzusetzen.",
+      "einordnung": "Die historische Referenz dokumentiert einen früheren kommunalen SDG-Datenzugang. Das Nachfolgeangebot ist ein Auffindehinweis, kein Nachweis dafür, dass frühere Indikatoren, Zeitreihen oder Methoden unverändert fortgelten. Für Wirkungsmessung sind Datensatz, Zeitraum und Methodik jeweils einzeln zu prüfen.",
       "impactFields": [
         "Mensch",
         "Planet",
@@ -1134,7 +1134,8 @@
         "Kommunen"
       ],
       "sdg": "SDGs 1-17 (kommunal), Agenda 2030",
-      "domain": "sdg-portal.de"
+      "domain": "nachhaltigekommunen.de",
+      "locatorType": "nachfolge"
     },
     {
       "code": "WÖK-Q-0719",
@@ -1493,7 +1494,7 @@
     {
       "code": "WÖK-Q-0521",
       "title": "UNDP - Climate justice",
-      "url": "https://climatepromise.undp.org/news-and-stories/climate-justice-what-it-and-why-it-matters",
+      "url": "https://climatepromise.undp.org/news-and-stories/climate-change-matter-justice-heres-why",
       "doi": null,
       "author": "UN-Entwicklungsprogramm (UNDP)",
       "year": null,
@@ -2280,7 +2281,7 @@
     {
       "code": "WÖK-Q-0033",
       "title": "EPRS Briefing (Europäisches Parlament, 2025)",
-      "url": "https://www.europarl.europa.eu/thinktank/en/document/EPRS_BRI%282025%2977925",
+      "url": "https://www.europarl.europa.eu/thinktank/en/",
       "doi": null,
       "author": "Europäisches Parlament",
       "year": null,
@@ -2289,22 +2290,24 @@
       "cluster": "C",
       "clusterLabel": "EU-Regulierung und Reporting",
       "origin": "extern",
-      "reviewStatus": "geprueft",
-      "dataQuality": "graue-literatur",
-      "summary": "Briefing des Wissenschaftlichen Dienstes des Europäischen Parlaments (EPRS) mit Bezug zu Regulierung entlang der Wertschöpfungskette.",
-      "einordnung": "Als analytisches Briefing des Parlaments ordnet die Quelle regulatorische Entwicklungen ein und stützt das Verständnis von Wirkungspfaden entlang von Wertschöpfungsketten. Sie betrifft je nach Thema Mensch und Planet und dient eher der Einordnung als der Normsetzung. Genauer Inhalt anhand des Kontexts nicht vollständig bestimmbar, daher ungeprüft.",
+      "reviewStatus": "ungeprueft",
+      "dataQuality": "bibliografischer-nachweis",
+      "summary": "Die ursprünglich erfasste EPRS-Dokumentkennung ist nicht mehr auflösbar. Der Link führt ausschließlich zur Rechercheoberfläche des Europäischen Parlaments, nicht zu einem verifizierten Einzelbriefing.",
+      "einordnung": "Kein fachlicher Beleg: Titel, Inhalt und Kennung der ursprünglich behaupteten Einzelquelle sind nicht ausreichend verifiziert. Die Quelle darf erst nach Rekonstruktion der exakten EPRS-Veröffentlichung für inhaltliche Aussagen verwendet werden.",
       "impactFields": [
         "Mensch",
         "Planet",
         "Wertschöpfungskette"
       ],
       "sdg": null,
-      "domain": "europarl.europa.eu"
+      "domain": "europarl.europa.eu",
+      "locatorType": "recherchehinweis",
+      "locatorNote": "Recherchehinweis: Die ursprüngliche EPRS-Einzelquelle ist nicht verifiziert. Der Link öffnet nur die offizielle Rechercheoberfläche und ist kein Ersatz für einen überprüften Beleg."
     },
     {
       "code": "WÖK-Q-0314",
       "title": "EU Carbon Removals and Carbon Farming Regulation",
-      "url": "https://climate.ec.europa.eu/eu-action/certification-carbon-removals-and-carbon-farming_en",
+      "url": "https://climate.ec.europa.eu/eu-action/carbon-removals-and-carbon-farming/carbon-removals-and-carbon-farming-crcf-regulation_en",
       "doi": null,
       "author": "Europäische Kommission",
       "year": null,
@@ -2788,7 +2791,7 @@
     {
       "code": "WÖK-Q-0233",
       "title": "EU: Energy Performance of Buildings Directive (EPBD)",
-      "url": null,
+      "url": "https://eur-lex.europa.eu/eli/dir/2024/1275/oj",
       "doi": null,
       "author": null,
       "year": null,
@@ -3019,7 +3022,7 @@
     {
       "code": "WÖK-Q-0330",
       "title": "European Commission - Ecodesign for Sustainable Products Regulation",
-      "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/ecodesign-sustainable-products-regulation_en",
+      "url": "https://single-market-economy.ec.europa.eu/industry/sustainability/sustainable-product-policy-ecodesign_en",
       "doi": null,
       "author": "Europäische Kommission",
       "year": null,
@@ -4249,7 +4252,7 @@
     {
       "code": "WÖK-Q-0047",
       "title": "EFRAG ESRS / CSRD XBRL-Tagging (Lab 3)",
-      "url": "https://efrag.org/lab3",
+      "url": "https://www.efrag.org/en/projects/esrs-xbrl-taxonomy/concluded",
       "doi": null,
       "author": "EFRAG",
       "year": null,
@@ -4298,7 +4301,7 @@
     {
       "code": "WÖK-Q-0365",
       "title": "EFRAG: ESRS",
-      "url": "https://www.efrag.org/lab6",
+      "url": "https://www.efrag.org/en/sustainability-reporting",
       "doi": null,
       "author": "EFRAG",
       "year": null,
@@ -5879,7 +5882,7 @@
     {
       "code": "WÖK-Q-0281",
       "title": "CoARA - Agreement on Reforming Research Assessment (2022)",
-      "url": null,
+      "url": "https://www.coara.org/agreement/the-agreement-full-text/",
       "doi": null,
       "author": null,
       "year": null,
@@ -5902,7 +5905,7 @@
     {
       "code": "WÖK-Q-0763",
       "title": "Cybernetics of Cybernetics",
-      "url": "",
+      "url": "https://search.worldcat.org/search?q=Cybernetics%20of%20Cybernetics%20Heinz%20von%20Foerster",
       "doi": null,
       "author": "Heinz von Foerster (Hrsg.)",
       "year": 1974,
@@ -6166,7 +6169,7 @@
     {
       "code": "WÖK-Q-0283",
       "title": "Humberto Maturana und Francisco Varela: Autopoiesis / strukturdeterminierte Systeme",
-      "url": null,
+      "url": "https://search.worldcat.org/search?q=Humberto%20Maturana%20Francisco%20Varela%20Autopoiesis",
       "doi": null,
       "author": null,
       "year": null,
@@ -6590,7 +6593,7 @@
     {
       "code": "WÖK-Q-0764",
       "title": "Radical Constructivism: A Way of Knowing and Learning",
-      "url": "https://www.routledge.com/Radical-Constructivism-A-Way-of-Knowing-and-Learning/Glasersfeld/p/book/9780750702378",
+      "url": "https://search.worldcat.org/search?q=9780750702378",
       "doi": null,
       "author": "Ernst von Glasersfeld",
       "year": 1995,
@@ -6600,7 +6603,7 @@
       "clusterLabel": "Systemtheorie / Kybernetik / Komplexität",
       "origin": "extern",
       "reviewStatus": "geprueft",
-      "dataQuality": "peer-reviewed",
+      "dataQuality": "bibliografischer-nachweis",
       "summary": "Zentrale Quelle für radikalen Konstruktivismus, Lernen und Wirklichkeitskonstruktion.",
       "einordnung": "Diese Quelle stärkt die theoretische Tiefenstruktur der Wirkungsökonomie: Rückkopplung, Nichtlinearität, Beobachterabhängigkeit, Selbstorganisation und Lernen. Sie sollte nicht als Autoritätsbeweis geführt werden, sondern als Bezugslinie für die Frage, warum Wirkung nicht linear, additiv oder rein kapitalbezogen gesteuert werden kann.",
       "impactFields": [
@@ -6609,7 +6612,8 @@
         "Demokratie"
       ],
       "sdg": null,
-      "domain": null
+      "domain": "worldcat.org",
+      "locatorType": "katalog"
     },
     {
       "code": "WÖK-Q-0784",
@@ -7047,7 +7051,7 @@
     {
       "code": "WÖK-Q-0074",
       "title": "Adam Smith - The Wealth of Nations / The Theory of Moral Sentiments",
-      "url": null,
+      "url": "https://search.worldcat.org/search?q=Adam%20Smith%20The%20Wealth%20of%20Nations%20The%20Theory%20of%20Moral%20Sentiments",
       "doi": null,
       "author": "Adam Smith",
       "year": null,
@@ -7260,7 +7264,7 @@
     {
       "code": "WÖK-Q-0077",
       "title": "BMWK-Dossier: Wettbewerbspolitik",
-      "url": "https://www.bundeswirtschaftsministerium.de/Redaktion/DE/Dossier/wettbewerbspoli",
+      "url": "https://www.bundeswirtschaftsministerium.de/Redaktion/DE/Dossier/wettbewerbspolitik.html",
       "doi": null,
       "author": "Bundesministerium für Wirtschaft und Klimaschutz",
       "year": null,
@@ -7272,7 +7276,7 @@
       "reviewStatus": "geprueft",
       "dataQuality": "amtlich",
       "summary": "Dossier des Bundeswirtschaftsministeriums zur Wettbewerbspolitik und zur Rolle des Gesetzes gegen Wettbewerbsbeschränkungen.",
-      "einordnung": "Wettbewerbspolitik betrifft aus Wirkungssicht die Machtverteilung in Märkten und damit, wer Wirkung auf Mensch und Demokratie ausüben kann (Marktmacht, Verbraucherschutz, offene Märkte). Die Quelle ist eher Kontext- als Kernmaterial für die Wirkungsökonomie und amtlich-programmatisch gehalten. Die URL wirkt abgeschnitten und sollte verifiziert werden.",
+      "einordnung": "Wettbewerbspolitik betrifft aus Wirkungssicht die Machtverteilung in Märkten und damit, wer Wirkung auf Mensch und Demokratie ausüben kann (Marktmacht, Verbraucherschutz, offene Märkte). Die Quelle ist eher Kontext- als Kernmaterial für die Wirkungsökonomie und amtlich-programmatisch gehalten.",
       "impactFields": [
         "Mensch",
         "Demokratie",
@@ -7495,20 +7499,22 @@
     },
     {
       "code": "WÖK-Q-0815",
-      "title": "Dapismus / DAPismus",
-      "url": "",
+      "title": "Dapismus / DAPismus (ungeklärter Gesprächsverweis)",
+      "url": "https://search.worldcat.org/search?q=Dapismus%20DAPismus",
       "doi": null,
-      "author": "Unklar / Gesprächsnotiz",
+      "author": "nicht zuordenbar",
       "year": 2026,
       "type": "sonstiges",
       "typeLabel": "Sonstiges",
       "cluster": "F",
       "clusterLabel": "Ökonomie / BWL / Management",
       "origin": "extern",
-      "reviewStatus": "geprueft",
-      "dataQuality": "graue-literatur",
-      "summary": "Der Begriff wurde in der Diskussion genannt, ist aber bibliografisch nicht eindeutig. Als Recherche-Marker aufnehmen, nicht veröffentlichen, bevor Bedeutung und Quelle geklärt sind.",
-      "einordnung": "Diese Quelle erklärt, wie Entwicklung, Innovation, neue Kombinationen, Unternehmerfunktion und lange Transformationspfade entstehen. Wirkungsökonomisch wird sie eingeordnet mit der Einschränkung: Innovation ist erst Fortschritt, wenn sie positive Netto-Wirkung erzeugt.",
+      "reviewStatus": "ungeprueft",
+      "dataQuality": "niedrig",
+      "locatorType": "katalog",
+      "locatorNote": "Der Link ist ausschließlich eine bibliografische Suche nach dem überlieferten Ausdruck. Ohne nachvollziehbare Autor:innenschaft, Textfundstelle und Definition ist der Eintrag keine verwendbare Fachquelle.",
+      "summary": "Ungeklärter Gesprächsverweis ohne belastbaren bibliografischen Nachweis.",
+      "einordnung": "Der Eintrag dokumentiert einen nicht verifizierten Recherchehinweis. Er ist weder Evidenz noch methodische Grundlage der Wirkungsökonomie und darf nicht für fachliche Aussagen herangezogen werden.",
       "impactFields": [
         "Mensch",
         "Planet",
@@ -7995,7 +8001,7 @@
     {
       "code": "WÖK-Q-0231",
       "title": "European Commission: Guiding Principles for Knowledge Valorisation (2022)",
-      "url": null,
+      "url": "https://research-and-innovation.ec.europa.eu/research-area/industrial-research-and-innovation/eu-valorisation-policy/knowledge-valorisation-platform/guiding-principles-knowledge-valorisation-and-implementing-codes-practice_en",
       "doi": null,
       "author": null,
       "year": null,
@@ -8204,7 +8210,7 @@
     {
       "code": "WÖK-Q-0248",
       "title": "ICC Advertising and Marketing Communications Code, 2024",
-      "url": null,
+      "url": "https://iccwbo.org/business-solutions/the-icc-advertising-and-marketing-communications-code/",
       "doi": null,
       "author": null,
       "year": null,
@@ -8579,7 +8585,7 @@
     {
       "code": "WÖK-Q-0088",
       "title": "John Maynard Keynes - The General Theory of Employment, Interest and Money",
-      "url": null,
+      "url": "https://search.worldcat.org/search?q=John%20Maynard%20Keynes%20The%20General%20Theory%20of%20Employment%20Interest%20and%20Money",
       "doi": null,
       "author": "John Maynard Keynes",
       "year": null,
@@ -8602,7 +8608,7 @@
     {
       "code": "WÖK-Q-0089",
       "title": "Joseph A. Schumpeter - Theory of Economic Development / Capitalism, Socialism and Democracy",
-      "url": null,
+      "url": "https://search.worldcat.org/search?q=Joseph%20Schumpeter%20Theory%20of%20Economic%20Development%20Capitalism%20Socialism%20Democracy",
       "doi": null,
       "author": "Joseph A. Schumpeter",
       "year": null,
@@ -8672,7 +8678,7 @@
     {
       "code": "WÖK-Q-0091",
       "title": "Karl Marx - Das Kapital / Grundrisse",
-      "url": null,
+      "url": "https://search.worldcat.org/search?q=Karl%20Marx%20Das%20Kapital%20Grundrisse",
       "doi": null,
       "author": "Karl Marx",
       "year": null,
@@ -8885,7 +8891,7 @@
     {
       "code": "WÖK-Q-0876",
       "title": "Mūlamadhyamakakārikā",
-      "url": "",
+      "url": "https://search.worldcat.org/search?q=Nagarjuna%20Mulamadhyamakakarika",
       "doi": null,
       "author": "Nāgārjuna",
       "year": 150,
@@ -9053,7 +9059,7 @@
     {
       "code": "WÖK-Q-0093",
       "title": "Nikolai Kondratieff - Lange Wellen / Kondratieff-Zyklen",
-      "url": null,
+      "url": "https://search.worldcat.org/search?q=Nikolai%20Kondratieff%20Long%20Waves%20Economic%20Life",
       "doi": null,
       "author": "Nikolai Kondratieff",
       "year": null,
@@ -9552,7 +9558,7 @@
     {
       "code": "WÖK-Q-0474",
       "title": "Stiglitz-Sen-Fitoussi Commission",
-      "url": "https://ec.europa.eu/eurostat/documents/118025/118123/Fitoussi+Commission+report",
+      "url": "https://ec.europa.eu/eurostat/documents/8131721/8131772/Stiglitz-Sen-Fitoussi-Commission-report.pdf",
       "doi": null,
       "author": "Europäische Kommission",
       "year": null,
@@ -13541,7 +13547,7 @@
     {
       "code": "WÖK-Q-0483",
       "title": "Umweltbundesamt: Gesellschaftliche Kosten von Umweltbelastungen",
-      "url": "https://www.umweltbundesamt.de/themen/wirtschaft-konsum/wirtschaft-umwelt/gesellschaftliche-kosten-von-umweltbelastungen",
+      "url": "https://www.umweltbundesamt.de/daten/umweltzustand-trends/umwelt-wirtschaft/gesellschaftliche-kosten-von-umweltbelastungen",
       "doi": null,
       "author": "Umweltbundesamt",
       "year": null,
@@ -14409,7 +14415,7 @@
     {
       "code": "WÖK-Q-0476",
       "title": "Bundeszentrale fuer politische Bildung: Demokratie",
-      "url": "https://www.bpb.de/themen/politisches-system/politik-einfach-fuer-alle/236879/demokratie/",
+      "url": "https://www.bpb.de/themen/politisches-system/politik-einfach-fuer-alle/573362/deutschland-ist-eine-demokratie/",
       "doi": null,
       "author": "Bundeszentrale für politische Bildung (bpb)",
       "year": null,
@@ -17880,7 +17886,7 @@
     {
       "code": "WÖK-Q-0155",
       "title": "BVerfG: Klimabeschluss vom 24.03.2021 (1 BvR 2656/18 u.a.)",
-      "url": "https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2021/03/r",
+      "url": "https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2021/03/rs20210324_1bvr265618.html",
       "doi": null,
       "author": "Bundesverfassungsgericht",
       "year": null,
@@ -18097,7 +18103,7 @@
     {
       "code": "WÖK-Q-0240",
       "title": "European Commission, Preparedness Union Strategy, 2025",
-      "url": null,
+      "url": "https://commission.europa.eu/topics/preparedness_en",
       "doi": null,
       "author": null,
       "year": null,
@@ -18169,7 +18175,7 @@
     {
       "code": "WÖK-Q-0267",
       "title": "GEG (Gebäudeenergiegesetz)",
-      "url": null,
+      "url": "https://www.gesetze-im-internet.de/geg/BJNR172810020.html",
       "doi": null,
       "author": null,
       "year": null,
@@ -18455,20 +18461,20 @@
     },
     {
       "code": "WÖK-Q-0963",
-      "title": "Landesklimaschutzgesetze und Landesnachhaltigkeitsgesetze",
-      "url": "",
+      "title": "Umweltbundesamt: Regelungen der Bundesländer auf dem Gebiet der umweltfreundlichen Beschaffung (2025)",
+      "url": "https://www.umweltbundesamt.de/publikationen/regelungen-der-bundeslaender-auf-dem-gebiet-der-1",
       "doi": null,
-      "author": "Bundesländer",
-      "year": 2026,
-      "type": "artikel",
-      "typeLabel": "Artikel",
+      "author": "Umweltbundesamt",
+      "year": 2025,
+      "type": "bericht",
+      "typeLabel": "Bericht",
       "cluster": "I",
       "clusterLabel": "Staat / Recht / Steuern / Verwaltung",
       "origin": "extern",
       "reviewStatus": "geprueft",
-      "dataQuality": "peer-reviewed",
-      "summary": "Für föderale Umsetzung und kommunale Wirkungshaushalte müssen relevante Landesgesetze nach Bundesland aufgenommen werden.",
-      "einordnung": "Diese Quelle ist für nationale Anschlussfähigkeit wichtig. Sie zeigt, welche Rechtsnormen bereits Wirkungsgrenzen, Zielpfade, Energie-, Umwelt-, Lieferketten- oder Beschaffungslogiken enthalten und in eine WÖk-Architektur übersetzt werden können.",
+      "dataQuality": "graue-literatur",
+      "summary": "UBA-Übersicht zu landesrechtlichen Regelungen der umweltfreundlichen Beschaffung mit Verweisen auf einschlägige Landesnormen und -programme.",
+      "einordnung": "Die Übersicht ist ein Rechercheeinstieg für föderale Beschaffungs- und Klimabezüge. Für eine konkrete Rechtsaussage muss die aktuell geltende Primärnorm des jeweiligen Bundeslandes geprüft werden; die Übersicht ersetzt diese Prüfung nicht.",
       "impactFields": [
         "Mensch",
         "Planet",
@@ -18551,7 +18557,7 @@
     {
       "code": "WÖK-Q-0257",
       "title": "NATO: Resilience, civil preparedness and Article 3",
-      "url": null,
+      "url": "https://nato.int/en/what-we-do/deterrence-and-defence/resilience-civil-preparedness-and-article-3",
       "doi": null,
       "author": null,
       "year": null,
@@ -19859,7 +19865,7 @@
     {
       "code": "WÖK-Q-0272",
       "title": "Bundesamt für Migration und Flüchtlinge (BAMF)",
-      "url": null,
+      "url": "https://www.bamf.de/DE/Startseite/startseite_node.html",
       "doi": null,
       "author": null,
       "year": null,
@@ -20295,7 +20301,7 @@
     {
       "code": "WÖK-Q-0171",
       "title": "ILO Flagship Reports (u. a. World Employment and Social Outlook)",
-      "url": "https://www.ilo.org/publications/flagship-reports",
+      "url": "https://www.ilo.org/research-and-publications",
       "doi": null,
       "author": "Internationale Arbeitsorganisation (ILO)",
       "year": null,
@@ -20430,7 +20436,7 @@
     {
       "code": "WÖK-Q-0254",
       "title": "International Organization for Migration (IOM) - World Migration Report",
-      "url": null,
+      "url": "https://worldmigrationreport.iom.int/",
       "doi": null,
       "author": null,
       "year": null,
@@ -20831,7 +20837,7 @@
     {
       "code": "WÖK-Q-0271",
       "title": "Robert Koch-Institut (RKI) / Gesundheitsberichterstattung (GBE)",
-      "url": null,
+      "url": "https://www.rki.de/DE/Institut/Organisation/Abteilungen/Abteilung-2/FG24/fg24_org.html",
       "doi": null,
       "author": null,
       "year": null,
@@ -21535,8 +21541,8 @@
     },
     {
       "code": "WÖK-Q-0274",
-      "title": "Bundesamt für Sicherheit in der Informationstechnik (BSI): Lage der IT-Sicherheit in Deutschland 2025",
-      "url": null,
+      "title": "Bundesamt für Sicherheit in der Informationstechnik (BSI): Lageberichte zur IT-Sicherheit",
+      "url": "https://www.bsi.bund.de/DE/Service-Navi/Publikationen/Lagebericht/lagebericht_node.html?nn=129410",
       "doi": null,
       "author": null,
       "year": null,
@@ -21547,7 +21553,7 @@
       "origin": "extern",
       "reviewStatus": "geprueft",
       "dataQuality": "amtlich",
-      "summary": "Jährlicher Lagebericht des BSI zur IT-Sicherheit in Deutschland, der Bedrohungslage, Angriffsvektoren und Resilienzstand digitaler Infrastrukturen dokumentiert.",
+      "summary": "Publikationsübersicht des BSI zu Lageberichten über Bedrohungslage, Angriffsvektoren und Resilienz digitaler Infrastrukturen.",
       "einordnung": "Hohe Relevanz für die Systemresilienz digitaler Infrastrukturen. Betrifft primär die Dimension Demokratie (Schutz kritischer Infrastrukturen, Vertrauen in staatliche und wirtschaftliche Systeme) und mittelbar Mensch (Datenschutz, Betroffenheit von Bürgerinnen und Bürgern bei Cyberangriffen). Anschluss an WÖk über das Leitframe Systemresilienz und Risiko, da IT-Sicherheit eine tragende Bedingung funktionierender wirtschaftlicher und demokratischer Systeme ist.",
       "impactFields": [
         "Demokratie",
@@ -22379,7 +22385,7 @@
     {
       "code": "WÖK-Q-0250",
       "title": "CRREM (Carbon Risk Real Estate Monitor)",
-      "url": null,
+      "url": "https://crrem.org/",
       "doi": null,
       "author": null,
       "year": null,
@@ -22807,7 +22813,7 @@
     {
       "code": "WÖK-Q-0203",
       "title": "Eurosif – Reports (nachhaltige Investments)",
-      "url": "https://www.eurosif.org/reports/",
+      "url": "https://www.eurosif.org/eurosif-reports/",
       "doi": null,
       "author": "Eurosif",
       "year": null,
@@ -24207,6 +24213,30 @@
       ],
       "sdg": "SDG 13; SDG 16; SDG+ Systemqualität",
       "domain": "doi.org"
+    },
+    {
+      "code": "WÖK-Q-1024",
+      "title": "T-SROI-Rechenstandard v1.1",
+      "url": "https://wirkungsoekonomie.de/werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/",
+      "doi": null,
+      "author": "Wirkungsökonomie",
+      "year": 2026,
+      "summary": "Aktueller WÖk-Rechenstandard für T-SROI: kausal begrenzte und diskontierte Netto-Nutzenrechnung mit Schutz-Gate, ohne freie Transformations-, Resilienz- oder Datenqualitätsmultiplikatoren.",
+      "einordnung": "Der Rechenstandard trennt direkte und separat belegte transformative Nutzenströme, Schäden und Ressourcen. Er verlangt Systemgrenze, Vergleichsfall, Preisbasis, kausale Zurechnung, Sensitivität und eine dokumentierte Datenqualität. Eine positive Kennzahl ist nur bei offenem Schutz-Gate ausweisbar; rote Linien, negatives Kernprofil oder unzureichende Evidenz ergeben „blockiert / nicht bewertbar“. Die Quelle ist eine transparente, eigenpublizierte Methodenreferenz und keine extern peer-reviewte oder amtliche Bewertungsnorm.",
+      "type": "methodenpapier",
+      "typeLabel": "Methodenpapier",
+      "cluster": "A",
+      "clusterLabel": "Eigene WÖk-Referenzen",
+      "origin": "intern",
+      "reviewStatus": "fuehrend",
+      "dataQuality": "graue-literatur",
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "sdg": "SDG 12; SDG 16; SDG+ Systemqualität",
+      "domain": "wirkungsoekonomie.de"
     }
   ]
 }

@@ -1,0 +1,401 @@
+{
+  "terms": [
+    {
+      "id": "debiasing",
+      "termId": "debiasing",
+      "slug": "debiasing",
+      "canonicalLabel": "Debiasing",
+      "aliases": ["Debiasing", "Entzerrung kognitiver Verzerrungen"],
+      "shortDefinition": "Debiasing bezeichnet Maßnahmen, die die Wahrscheinlichkeit verringern sollen, dass Verzerrungen oder Fehlinformationen ein Urteil bestimmen. Es ist keine Technik, Menschen zu überzeugen oder zu bewerten.",
+      "hoverDefinition": "Debiasing räumt Denkfehler nicht weg wie Krümel vom Tisch. Es trennt Behauptung, Beleg und Unsicherheit – und prüft dann noch einmal.",
+      "definition": "Debiasing bezeichnet Verfahren, die Urteile weniger anfällig für systematische Verzerrungen oder fortwirkende Fehlinformationen machen sollen. Dazu können nachvollziehbare Quellenprüfung, das Ersetzen einer falschen Erklärung durch eine besser belegte Erklärung, metakognitive Fragen oder ein Hinweis auf typische Manipulationsmuster gehören. Ob eine Maßnahme wirkt, hängt von Gegenstand, Zielgruppe, Situation und Umsetzung ab. Ein plausibler Mechanismus ist noch kein Nachweis einer tatsächlichen Zustandsveränderung.",
+      "longDefinition": "Debiasing bezeichnet Verfahren, die Urteile weniger anfällig für systematische Verzerrungen oder fortwirkende Fehlinformationen machen sollen. Dazu können nachvollziehbare Quellenprüfung, das Ersetzen einer falschen Erklärung durch eine besser belegte Erklärung, metakognitive Fragen oder ein Hinweis auf typische Manipulationsmuster gehören. Ob eine Maßnahme wirkt, hängt von Gegenstand, Zielgruppe, Situation und Umsetzung ab. Ein plausibler Mechanismus ist noch kein Nachweis einer tatsächlichen Zustandsveränderung. Wer Debiasing als Wirkung behauptet, muss daher vorab festlegen, welches Urteil oder Verhalten sich in welchem Kontext verändern soll, womit es verglichen wird, welche Daten die Veränderung zeigen und welche unerwünschten Nebenwirkungen möglich sind.",
+      "woekRelation": "Im WÖk-Kontext ist Debiasing eine mögliche Kommunikations- und Lernintervention. Es beschreibt zunächst Wirkungspotenzial und Wirkungsrisiko, nicht automatisch Wirkung. Die WÖk bewertet dabei weder Personen noch Gesinnungen; geprüft werden Aussagen, Evidenz, Kommunikationsbedingungen und beobachtbare Folgen.",
+      "usageNote": "Debiasing nur verwenden, wenn die konkrete Verzerrung oder Fehlinformation, die Intervention, der Kontext und der Prüfmaßstab genannt sind. Nicht aus einer Korrektur oder einer Reichweite auf eine veränderte Überzeugung oder Handlung schließen.",
+      "doNotConfuseWith": [
+        "Faktencheck: Er prüft den Wahrheitsgehalt einer konkreten Behauptung; Debiasing beschreibt mögliche Bedingungen, unter denen eine Korrektur verarbeitet wird.",
+        "Manipulation: Debiasing macht Quellen, Gründe und Unsicherheit prüfbar; Manipulation verdeckt sie oder steuert verdeckt auf ein Ergebnis zu.",
+        "Wirkung: Eine Verbesserung der Informationslage ist noch keine nachgewiesene Veränderung von Urteil oder Verhalten."
+      ],
+      "examples": [
+        "Eine Korrektur nennt nicht nur den Fehler, sondern erklärt mit einer überprüfbaren Quelle, was stattdessen zutrifft und warum. Das ist ein möglicher Debiasing-Schritt, kein automatisch bewiesener Erfolg.",
+        "Vor einer Entscheidung werden Gegenbeispiele und eine unabhängige Quelle dokumentiert. Das kann Bestätigungsfehler begrenzen; ob die Entscheidung dadurch besser wird, bleibt prüfbar.",
+        "Ein Lernformat zeigt ein typisches Täuschungsmuster und lässt anschließend die Belege selbst vergleichen. Die beobachtete Lernwirkung braucht trotzdem einen passenden Vergleichsmaßstab."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Erst die Annahme, dann die Wirkung prüfen",
+          "body": "Debiasing ist kein Knopf mit der Aufschrift „richtig denken“. Es ist eine überprüfbare Intervention. Deshalb wird zuerst festgelegt, welche Annahme oder Information verändert werden soll. Danach wird geprüft, ob die gewählte Erklärung verständlicher, belegter und weniger irreführend ist.",
+          "items": [
+            "Behauptung, Quelle, Gegenstand und Kontext klar benennen.",
+            "Eine bessere, belegte Erklärung anbieten – nicht nur ein Etikett „falsch“.",
+            "Vorher festlegen, woran eine Veränderung und mögliche Gegenwirkung erkannt würden."
+          ]
+        },
+        {
+          "title": "Was die Bezeichnung nicht erlaubt",
+          "body": "Aus der psychologischen Plausibilität folgt keine Diagnose und keine Rangfolge von Menschen. Eine Korrektur kann übersehen, missverstanden oder als Angriff erlebt werden. Deshalb werden Unsicherheit, Reaktanz und Kontext ausdrücklich mitgeprüft.",
+          "items": [
+            "Keine Absicht oder Denkweise einer Person allein aus einer Aussage ableiten.",
+            "Keine Korrektur als Nachweis einer eingetretenen Wirkung ausgeben.",
+            "Mögliche Nebenwirkungen und Alternativerklärungen dokumentieren."
+          ]
+        }
+      ],
+      "relatedTerms": ["kognitive-dissonanz", "bestaetigungsfehler", "meta-kognitive-intervention", "faktencheck", "reaktanz"],
+      "officialSources": [
+        "Misinformation and Its Correction: Continued Influence and Successful Debiasing|/quellenarchiv/wok-q-1001/",
+        "The Psychological Drivers of Misinformation Belief and Its Resistance to Correction|/quellenarchiv/wok-q-1009/"
+      ],
+      "sourceProvenance": "Die Fachquellen behandeln Fehlinformation, Korrektur und Bedingungen möglicher Entzerrung. Die Begriffsabgrenzung zu Wirkung, Wirkungspotenzial und Personenbewertung folgt der WÖk-Terminologie.",
+      "category": "Psychologie und Resonanz",
+      "type": "Kommunikations- und Lernintervention",
+      "source": "Wirkungsradar Psychologie · fachlich konsolidierte Begriffsdefinition",
+      "status": "approved",
+      "version": "2.0",
+      "reviewStatus": "fachlich konsolidiert",
+      "autoLinkAllowed": true
+    },
+    {
+      "id": "framekontrolle",
+      "termId": "framekontrolle",
+      "slug": "framekontrolle",
+      "canonicalLabel": "Framekontrolle",
+      "aliases": ["Framekontrolle", "Deutungsrahmen prüfen"],
+      "shortDefinition": "Framekontrolle bedeutet, die Deutungsannahme einer Aussage zu erkennen, nicht unbemerkt zu übernehmen und die Sachfrage unter einem passenden, offenen Rahmen zu klären.",
+      "hoverDefinition": "Ein Frame ist die Brille einer Aussage. Framekontrolle heißt: erst merken, welche Brille aufgesetzt wurde – dann durch eine passende ersetzen.",
+      "definition": "Framekontrolle ist ein Arbeitsbegriff für den bewussten Umgang mit Deutungsrahmen in Sprache und Diskussionen. Sie macht sichtbar, welche Voraussetzung, Auswahl oder Wertung eine Formulierung mitliefert, und trennt diese von der überprüfbaren Sachfrage. Ihr Ziel ist nicht eine rahmenfreie Sprache – die gibt es kaum –, sondern ein transparenter Rahmen, in dem Begriffe, Belege, Alternativen und Folgen prüfbar bleiben.",
+      "longDefinition": "Framekontrolle ist ein Arbeitsbegriff für den bewussten Umgang mit Deutungsrahmen in Sprache und Diskussionen. Sie macht sichtbar, welche Voraussetzung, Auswahl oder Wertung eine Formulierung mitliefert, und trennt diese von der überprüfbaren Sachfrage. Ihr Ziel ist nicht eine rahmenfreie Sprache – die gibt es kaum –, sondern ein transparenter Rahmen, in dem Begriffe, Belege, Alternativen und Folgen prüfbar bleiben. Sie kann etwa eine falsche Voraussetzung ausdrücklich zurückweisen, eine Frage präzisieren oder ein Reframing begründen. Ob diese Schritte Verständnis, Urteil oder Handeln verändern, ist eine gesonderte empirische Frage.",
+      "woekRelation": "Im WÖk-Kontext schützt Framekontrolle die Trennung von Darstellung und Wirkung: Ein eingängiger Rahmen kann Wirkungspotenzial entfalten, beweist aber keine tatsächliche Zustandsveränderung. Sie dient der offenen Prüfung von Wirkpfad, Referenz, Evidenz und Nebenfolgen – nicht der Kontrolle von Personen oder Debatten.",
+      "usageNote": "Bei Framekontrolle zuerst die Sachbehauptung und die mitgelieferte Annahme benennen. Den neuen Rahmen begründen und offenlegen; nicht durch einen eigenen unprüfbaren Frame ersetzen.",
+      "doNotConfuseWith": [
+        "Framing: Framing beschreibt die Einbettung einer Information; Framekontrolle prüft diese Einbettung.",
+        "Reframing: Reframing formuliert einen anderen Rahmen; Framekontrolle entscheidet nicht automatisch, welcher davon sachlich trägt.",
+        "Dominanz: Framekontrolle soll eine Frage klärbar machen, nicht Gesprächspartner:innen beherrschen."
+      ],
+      "examples": [
+        "Aus „Ist diese Regel eine Bevormundung?“ wird: „Welche Freiheit, welches Risiko und welche Schutzpflicht stehen hier konkret zur Prüfung?“",
+        "Eine Frage setzt voraus, eine Maßnahme sei wirkungslos. Framekontrolle trennt diese Annahme von der Aufgabe, Daten, Zeitraum und Vergleichsmaßstab zu prüfen.",
+        "Eine Antwort benennt ein mögliches Gegenargument statt es auszublenden. So bleibt der Rahmen nachprüfbar."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Die einfache Prüffolge",
+          "body": "Man kann einen Frame prüfen wie eine Verpackung: Was steht außen drauf, was steckt stillschweigend drin und was fehlt? Danach wird die Sache selbst wieder beschrieben – mit Begriffen, die sich anhand von Belegen und Folgen prüfen lassen.",
+          "items": [
+            "Welche Behauptung wird tatsächlich gemacht?",
+            "Welche Voraussetzung oder falsche Alternative schwingt mit?",
+            "Welcher offen gelegte Rahmen erlaubt eine faire Prüfung von Belegen und Folgen?"
+          ]
+        },
+        {
+          "title": "Kein Wirkungsnachweis durch gute Sprache",
+          "body": "Eine klare Umformulierung kann Verständigung erleichtern. Ob sie etwas verändert hat, muss jedoch getrennt beobachtet werden. Reichweite, Applaus oder eine geschickte Formulierung sind keine Wirkung im engen WÖk-Sinn.",
+          "items": [
+            "Wirkungspotenzial und tatsächliche Wirkung getrennt berichten.",
+            "Wirkungsrisiken wie Reaktanz oder Missverständnisse mitdenken.",
+            "Keine verdeckte Steuerung oder Personenbewertung aus der Methode ableiten."
+          ]
+        }
+      ],
+      "relatedTerms": ["framing", "reframing", "metakommunikation", "reaktanz"],
+      "officialSources": [
+        "The Framing of Decisions and the Psychology of Choice|/quellenarchiv/wok-q-1006/",
+        "Understanding Psychological Reactance: New Developments and Findings|/quellenarchiv/wok-q-1005/"
+      ],
+      "sourceProvenance": "Die Fachquellen erläutern Framing und Reaktanz als mögliche psychologische Mechanismen. Framekontrolle ist eine transparente WÖk-Arbeitsbezeichnung für die Prüfung von Deutungsrahmen, keine universell validierte Einzeltechnik.",
+      "category": "Psychologie und Resonanz",
+      "type": "Gesprächs- und Prüfpraxis",
+      "source": "Wirkungsradar Psychologie · fachlich konsolidierte Begriffsdefinition",
+      "status": "approved",
+      "version": "2.0",
+      "reviewStatus": "fachlich konsolidiert",
+      "autoLinkAllowed": true
+    },
+    {
+      "id": "gesichtswahrende_korrektur",
+      "termId": "gesichtswahrende_korrektur",
+      "slug": "gesichtswahrende-korrektur",
+      "canonicalLabel": "Gesichtswahrende Korrektur",
+      "aliases": ["Gesichtswahrende Korrektur", "respektvolle Korrektur"],
+      "shortDefinition": "Gesichtswahrende Korrektur berichtigt eine Aussage, ohne die Würde der Person abzuwerten. Sie trennt Person, Behauptung, Beleg und mögliche Folgen.",
+      "hoverDefinition": "Nicht die Person kleinmachen, sondern die Aussage groß genug hinlegen, damit man sie gemeinsam prüfen kann.",
+      "definition": "Gesichtswahrende Korrektur ist eine Gesprächspraxis, die eine strittige oder falsche Behauptung klar berichtigt und zugleich vermeidet, die Person zu beschämen oder ihre Identität anzugreifen. Sie anerkennt gegebenenfalls eine nachvollziehbare Sorge, erklärt die sachliche Korrektur mit Belegen und hält die Frage nach Folgen offen. Das ist kein Verzicht auf Widerspruch und keine Zusage, dass die Korrektur angenommen wird.",
+      "longDefinition": "Gesichtswahrende Korrektur ist eine Gesprächspraxis, die eine strittige oder falsche Behauptung klar berichtigt und zugleich vermeidet, die Person zu beschämen oder ihre Identität anzugreifen. Sie anerkennt gegebenenfalls eine nachvollziehbare Sorge, erklärt die sachliche Korrektur mit Belegen und hält die Frage nach Folgen offen. Das ist kein Verzicht auf Widerspruch und keine Zusage, dass die Korrektur angenommen wird. Die Bezeichnung ist im WÖk-Glossar ein beschreibender Praxisbegriff, keine klinische Diagnose und kein Beweis für eine bestimmte psychologische Reaktion. Ob sie Reaktanz senkt oder Lernen fördert, ist kontextabhängig zu prüfen.",
+      "woekRelation": "Die WÖk trennt Person und Prüfgegenstand: Bewertet werden Behauptungen, Kommunikationsbedingungen und beobachtbare Folgen, nie der Wert eines Menschen. Gesichtswahrende Korrektur kann einen Resonanzraum für sachliche Prüfung öffnen; sie ist zunächst Wirkungspotenzial, nicht nachgewiesene Wirkung.",
+      "usageNote": "Eine Korrektur soll die unzutreffende Aussage eindeutig benennen, eine überprüfbare Quelle anbieten und die Person nicht etikettieren. Bei Schutzgütern, Täuschung oder Diskriminierung darf Respekt keine Verharmlosung bedeuten.",
+      "doNotConfuseWith": [
+        "Höflichkeit um jeden Preis: Eine falsche Behauptung darf klar korrigiert werden.",
+        "Zustimmung: Eine anerkannte Sorge macht die Schlussfolgerung nicht richtig.",
+        "Psychologische Diagnose: Aus einer Reaktion lässt sich keine Diagnose einer Person ableiten."
+      ],
+      "examples": [
+        "„Die Sorge um bezahlbare Energie ist berechtigt. Die Behauptung, Windenergie erzeuge grundsätzlich keinen Nettonutzen, wird durch diese Bilanz aber nicht gedeckt.“",
+        "„Ich verstehe, dass die Zahl irritiert. Schauen wir auf Quelle, Zeitraum und Vergleichsgruppe, bevor wir daraus eine Ursache ableiten.“",
+        "Eine Moderation trennt einen Fehler von der Person und bietet an, die belastbaren Daten gemeinsam nachzusehen."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Die Aussage bleibt prüfbar",
+          "body": "Eine faire Korrektur lässt sich selbst kontrollieren: Was genau ist unzutreffend? Welche Quelle trägt die Korrektur? Welche Unsicherheit bleibt? So wird weder die Person noch die Gegenposition aus dem Gespräch gedrängt.",
+          "items": [
+            "Sorge und Behauptung auseinanderhalten.",
+            "Die Korrektur mit nachvollziehbarer Quelle und Grenze erläutern.",
+            "Auf die Wirkungsfrage zurückführen, statt über Charakter oder Zugehörigkeit zu urteilen."
+          ]
+        },
+        {
+          "title": "Grenze der Technik",
+          "body": "Respektvolle Formulierungen können Zugang schaffen, garantieren aber keine Einigung. Wenn eine Behauptung Menschen abwertet, Gewalt rechtfertigt oder Schutzgrenzen verletzt, müssen Inhalt und Folgen klar benannt werden. Freundlicher Ton ersetzt keine Schutzregel.",
+          "items": [
+            "Keinen schädlichen Inhalt durch Tonfall normalisieren.",
+            "Reaktanz als mögliches Risiko, nicht als Eigenschaft einer Person behandeln.",
+            "Bei strittiger Evidenz Unsicherheit offen ausweisen."
+          ]
+        }
+      ],
+      "relatedTerms": ["wertebruecke", "kommunikative_souveraenitaet", "reaktanz", "kognitive-dissonanz"],
+      "officialSources": [
+        "Misinformation and Its Correction: Continued Influence and Successful Debiasing|/quellenarchiv/wok-q-1001/",
+        "Understanding Psychological Reactance: New Developments and Findings|/quellenarchiv/wok-q-1005/"
+      ],
+      "sourceProvenance": "Die Fachquellen stützen die vorsichtige Einordnung von Korrektur und möglicher Reaktanz. „Gesichtswahrende Korrektur“ ist ein WÖk-Praxisbegriff; sie wird nicht als garantiert wirksame Methode ausgegeben.",
+      "category": "Psychologie und Resonanz",
+      "type": "Gesprächspraxis",
+      "source": "Wirkungsradar Psychologie · fachlich konsolidierte Begriffsdefinition",
+      "status": "approved",
+      "version": "2.0",
+      "reviewStatus": "fachlich konsolidiert",
+      "autoLinkAllowed": true
+    },
+    {
+      "id": "kommunikative_souveraenitaet",
+      "termId": "kommunikative_souveraenitaet",
+      "slug": "kommunikative-souveraenitaet",
+      "canonicalLabel": "Kommunikative Souveränität",
+      "aliases": ["Kommunikative Souveränität", "souveräne Gesprächsführung"],
+      "shortDefinition": "Kommunikative Souveränität ist die Fähigkeit, in einer strittigen Situation Person, Behauptung, Beleg, Unsicherheit und Folgen getrennt und ruhig besprechbar zu halten.",
+      "hoverDefinition": "Souverän heißt nicht lauter. Es heißt: den Faden behalten, die Frage klären und nichts behaupten, was man nicht zeigen kann.",
+      "definition": "Kommunikative Souveränität bezeichnet eine Gesprächskompetenz: Sie erkennt Deutungsrahmen, vermeidet falsche Alternativen, benennt Belege und Unsicherheit und führt zur prüfbaren Sach- und Wirkungsfrage zurück. Sie setzt keine Dominanz voraus und ist kein Mittel, andere Menschen zu steuern. Ob sie Vertrauen, Verständnis oder Entscheidungen verändert, muss für den jeweiligen Kontext gesondert geprüft werden.",
+      "longDefinition": "Kommunikative Souveränität bezeichnet eine Gesprächskompetenz: Sie erkennt Deutungsrahmen, vermeidet falsche Alternativen, benennt Belege und Unsicherheit und führt zur prüfbaren Sach- und Wirkungsfrage zurück. Sie setzt keine Dominanz voraus und ist kein Mittel, andere Menschen zu steuern. Dazu gehört, eine Person nicht mit ihrer Behauptung gleichzusetzen, nachfragbar zu bleiben und gegebenenfalls eine offene Frage zu formulieren statt einen Scheinabschluss zu liefern. Ob sie Vertrauen, Verständnis oder Entscheidungen verändert, muss für den jeweiligen Kontext gesondert geprüft werden.",
+      "woekRelation": "Im WÖk-Kontext unterstützt kommunikative Souveränität eine transparente Wirkungsarchitektur: Sie hält die Trennung von Aussage, Wirkungspotenzial, Wirkungsrisiko und tatsächlich beobachteter Wirkung sichtbar. Sie legitimiert weder Personenbewertung noch verdeckte Verhaltenssteuerung.",
+      "usageNote": "Den Begriff für eine nachvollziehbare Gesprächspraxis verwenden, nicht als Lobetikett. Benennen, welche Behauptung, Evidenz, Unsicherheit und Folgeentscheidung in der konkreten Situation geklärt werden sollen.",
+      "doNotConfuseWith": [
+        "Dominanz oder Schlagfertigkeit: Lautstärke und schnelle Antworten sind keine Souveränität.",
+        "Manipulation: Die Gründe und Grenzen der eigenen Antwort bleiben offen prüfbar.",
+        "Wirkungsnachweis: Gute Gesprächsführung kann Wirkungspotenzial haben, beweist aber keine Verhaltens- oder Systemwirkung."
+      ],
+      "examples": [
+        "„Die Angst vor Kosten ist ein wichtiger Punkt. Welche Kosten zählen wir mit, über welchen Zeitraum und was passiert ohne die Maßnahme?“",
+        "„Die Quelle stützt den ersten Teil der Aussage. Für den zweiten Teil fehlt noch der Vergleichsmaßstab – den sollten wir getrennt prüfen.“",
+        "Eine Moderatorin sagt bei Unsicherheit nicht „Das ist geklärt“, sondern benennt die offene Datenfrage und den nächsten Prüfschritt."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Fünf Dinge auseinanderhalten",
+          "body": "In hitzigen Gesprächen klebt oft alles aneinander. Die Fähigkeit besteht darin, die Teile wieder zu lösen: Wer sagt was? Was belegt die Aussage? Was ist nur Vermutung? Welche Wirkung wird behauptet? Welche Folge soll daraus entstehen?",
+          "items": [
+            "Person und Behauptung trennen.",
+            "Beleg und Schlussfolgerung trennen.",
+            "Wirkungspotenzial, Wirkungsrisiko und beobachtete Wirkung trennen.",
+            "Unsicherheit benennen statt sie mit Sicherheit zu übermalen.",
+            "Eine überprüfbare nächste Frage formulieren."
+          ]
+        },
+        {
+          "title": "Kein Steuerungsinstrument für Menschen",
+          "body": "Kommunikative Souveränität ist eine Praxis für Offenheit und Prüfbarkeit. Sie darf nicht in ein Profil, einen Überredungsalgorithmus oder eine Rangordnung von Gesprächspartner:innen übersetzt werden. Die WÖk bewertet keine Personen.",
+          "items": [
+            "Keine psychologischen Profile aus Gesprächsdaten ableiten.",
+            "Keine verdeckten Anreize oder Sanktionen an Kommunikation knüpfen.",
+            "Erfolg nur mit offenem Prüfkriterium und passender Datenbasis behaupten."
+          ]
+        }
+      ],
+      "relatedTerms": ["framekontrolle", "psychologischer_wirkungscheck", "metakommunikation", "reaktanz", "wirkungskommunikation"],
+      "officialSources": [
+        "The Framing of Decisions and the Psychology of Choice|/quellenarchiv/wok-q-1006/",
+        "Understanding Psychological Reactance: New Developments and Findings|/quellenarchiv/wok-q-1005/"
+      ],
+      "sourceProvenance": "Die Fachquellen geben Anhaltspunkte zu Framing und Reaktanz. „Kommunikative Souveränität“ ist eine WÖk-Kompetenzbeschreibung; sie beansprucht keine allgemeine Vorhersage über Menschen oder Gesprächsergebnisse.",
+      "category": "Psychologie und Resonanz",
+      "type": "Gesprächskompetenz",
+      "source": "Wirkungsradar Psychologie · fachlich konsolidierte Begriffsdefinition",
+      "status": "approved",
+      "version": "2.0",
+      "reviewStatus": "fachlich konsolidiert",
+      "autoLinkAllowed": true
+    },
+    {
+      "id": "psychologischer_wirkungscheck",
+      "termId": "psychologischer_wirkungscheck",
+      "slug": "psychologischer-wirkungscheck",
+      "canonicalLabel": "Psychologischer Wirkungscheck",
+      "aliases": ["Psychologischer Wirkungscheck", "psychologischer Folgencheck"],
+      "shortDefinition": "Der psychologische Wirkungscheck prüft als Hypothese, welche Aufmerksamkeit, Deutung, Gefühle oder Reaktionen eine Aussage oder Maßnahme in einem bestimmten Kontext auslösen könnte.",
+      "hoverDefinition": "Der Check fragt nicht: „Was ist mit Menschen los?“ Sondern: „Was kann diese Aussage hier auslösen – und woran würden wir es erkennen?“",
+      "definition": "Der psychologische Wirkungscheck ist ein strukturierter Prüfschritt für Kommunikationsmaßnahmen, Aussagen oder Gestaltungselemente. Er beschreibt Zielgruppe, Situation, mögliche Mechanismen wie Framing oder Reaktanz, erwartete Reaktionen, Gegenwirkungen und die Daten, mit denen eine tatsächliche Veränderung geprüft werden könnte. Er ist keine klinische Diagnose, keine Absichtsunterstellung und kein Beweis, dass eine Wirkung bereits eingetreten ist.",
+      "longDefinition": "Der psychologische Wirkungscheck ist ein strukturierter Prüfschritt für Kommunikationsmaßnahmen, Aussagen oder Gestaltungselemente. Er beschreibt Zielgruppe, Situation, mögliche Mechanismen wie Framing oder Reaktanz, erwartete Reaktionen, Gegenwirkungen und die Daten, mit denen eine tatsächliche Veränderung geprüft werden könnte. Er ist keine klinische Diagnose, keine Absichtsunterstellung und kein Beweis, dass eine Wirkung bereits eingetreten ist. Der Check übersetzt psychologische Plausibilität in eine offene Wirkungsannahme: Erst eine definierte Referenz, geeignete Beobachtung, Datenqualität und eine Gegenhypothese erlauben eine belastbarere Aussage über tatsächliche Veränderung.",
+      "woekRelation": "Der Begriff macht die WÖk-Unterscheidung praktisch: Eine Sprache, ein Bild oder ein Tool hat höchstens ein vermutetes Wirkungspotenzial und mögliche Wirkungsrisiken. Wirkung ist erst die tatsächlich belegte Veränderung eines Zustands. Reichweite, Klicks oder ein starkes Gefühl allein genügen nicht.",
+      "usageNote": "Für jeden Check mindestens Gegenstand, Zielgruppe oder Kontext, angenommene Mechanismen, erwartete positive und negative Folgen, Mess- oder Beobachtungsweg, Unsicherheit und Schutzgrenzen dokumentieren. Keine Aussagen über innere Zustände als Fakten ausgeben.",
+      "doNotConfuseWith": [
+        "Psychologische Diagnose: Der Check untersucht eine Kommunikationssituation, nicht den Gesundheitszustand oder Charakter einer Person.",
+        "Wirkungsnachweis: Er erzeugt prüfbare Hypothesen, aber keine gemessene Wirkung.",
+        "Reichweitenanalyse: Sichtbarkeit kann eine Voraussetzung sein, ersetzt aber weder Verständnis noch Zustandsveränderung."
+      ],
+      "examples": [
+        "Eine Kampagne nutzt ein starkes Verlustbild. Der Check dokumentiert mögliche Aufmerksamkeit und Angst, prüft Reaktanz als Risiko und legt fest, wie Verständnis und Handlung getrennt erhoben würden.",
+        "Vor einem Faktenvideo wird geprüft, welche falsche Voraussetzung im Titel steckt, welche alternative Erklärung angeboten wird und ob der Vergleich zu einer neutralen Fassung möglich ist.",
+        "Ein Tool testet nicht, ob ein Satz „wirkt“, sondern ob Nutzer:innen die Quelle, die Unsicherheit und die nächste Prüffrage finden."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Vier Fragen statt Gedankenlesen",
+          "body": "Der Check arbeitet mit nachvollziehbaren Fragen. Er schreibt niemandem eine Absicht oder eine Eigenschaft zu. So bleibt aus einer psychologischen Vermutung eine prüfbare Annahme.",
+          "items": [
+            "Welche Aussage, Gestaltung oder Maßnahme wird betrachtet?",
+            "Für wen und in welcher Situation könnte sie relevant sein?",
+            "Welche Mechanismen und Gegenwirkungen sind plausibel?",
+            "Woran wäre eine tatsächliche Veränderung – oder ihr Ausbleiben – zu erkennen?"
+          ]
+        },
+        {
+          "title": "Vom Check zur belastbaren Aussage",
+          "body": "Der Check kann eine Messung vorbereiten, ersetzt sie aber nicht. Eine belastbare Aussage braucht einen zuvor definierten Zustand, einen Vergleichsmaßstab, passende Daten, Transparenz über Unsicherheit und eine Erklärung, wie alternative Ursachen geprüft wurden.",
+          "items": [
+            "Wirkungspotenzial und Wirkungsrisiko vorab kennzeichnen.",
+            "Ergebnisdaten und Datenqualität getrennt ausweisen.",
+            "Bei fehlender Evidenz keine Wirkungsbehauptung ableiten."
+          ]
+        }
+      ],
+      "relatedTerms": ["debiasing", "resonanzprofil", "framing", "reaktanz", "sprachlicher-trigger"],
+      "officialSources": [
+        "The Psychological Drivers of Misinformation Belief and Its Resistance to Correction|/quellenarchiv/wok-q-1009/",
+        "The Framing of Decisions and the Psychology of Choice|/quellenarchiv/wok-q-1006/",
+        "Understanding Psychological Reactance: New Developments and Findings|/quellenarchiv/wok-q-1005/"
+      ],
+      "sourceProvenance": "Die Fachquellen erläutern mögliche psychologische Mechanismen. Der psychologische Wirkungscheck ist eine WÖk-Prüfstruktur, die diese Mechanismen ausdrücklich nur als Hypothesen behandelt und sie von einem Wirkungsnachweis trennt.",
+      "category": "Psychologie und Resonanz",
+      "type": "Prüf- und Hypotheseninstrument",
+      "source": "Wirkungsradar Psychologie · fachlich konsolidierte Begriffsdefinition",
+      "status": "approved",
+      "version": "2.0",
+      "reviewStatus": "fachlich konsolidiert",
+      "autoLinkAllowed": true
+    },
+    {
+      "id": "psychologisches_stoeckchen",
+      "termId": "psychologisches_stoeckchen",
+      "slug": "psychologisches-stoeckchen",
+      "canonicalLabel": "Psychologisches Stöckchen",
+      "aliases": ["Psychologisches Stöckchen", "diskurslenkender Reiz"],
+      "shortDefinition": "Ein psychologisches Stöckchen ist im WÖk-Glossar eine umgangssprachliche Bezeichnung für eine Formulierung, die eine Diskussion von der Sachfrage auf eine schnelle emotionale oder defensive Reaktion lenken kann.",
+      "hoverDefinition": "Das Stöckchen ist kein Etikett für Menschen. Es ist ein Warnschild für Sätze, die eine Reaktion auslösen können, bevor die Sache geprüft ist.",
+      "definition": "„Psychologisches Stöckchen“ ist ein WÖk-Arbeitsbegriff für eine Aussage oder Frage, die eine Diskussion möglicherweise in eine reaktive Schleife zieht: etwa durch einen starken Trigger, eine falsche Voraussetzung, Beweislastumkehr oder Themenverschiebung. Der Begriff beschreibt ein beobachtbares Diskursmuster, keine Diagnose und keinen sicheren Nachweis einer Absicht. Aus einem einzelnen Satz lässt sich nicht zuverlässig ableiten, ob jemand täuschen, provozieren oder lediglich ungenau formulieren wollte.",
+      "longDefinition": "„Psychologisches Stöckchen“ ist ein WÖk-Arbeitsbegriff für eine Aussage oder Frage, die eine Diskussion möglicherweise in eine reaktive Schleife zieht: etwa durch einen starken Trigger, eine falsche Voraussetzung, Beweislastumkehr oder Themenverschiebung. Der Begriff beschreibt ein beobachtbares Diskursmuster, keine Diagnose und keinen sicheren Nachweis einer Absicht. Aus einem einzelnen Satz lässt sich nicht zuverlässig ableiten, ob jemand täuschen, provozieren oder lediglich ungenau formulieren wollte. Die angemessene Reaktion ist daher nicht ein Gegenangriff, sondern das Muster zu markieren, die Sache zu präzisieren, die Belegfrage zurückzugeben und eine offene Wirkungsfrage zu stellen.",
+      "woekRelation": "Im WÖk-Kontext ist das psychologische Stöckchen ein Hinweis auf mögliches Wirkungspotenzial und Wirkungsrisiko von Kommunikation. Es erlaubt weder die Bewertung von Personen noch die Behauptung, eine bestimmte Wirkung sei eingetreten. Die Analyse bleibt bei überprüfbaren Aussagen, Rahmen, Quellen und Folgen.",
+      "usageNote": "Den Begriff sparsam und nur für das konkrete Muster verwenden. Immer angeben, welche Formulierung, welche falsche Voraussetzung oder welcher Trigger geprüft wird und welche alternative, sachliche Frage stattdessen möglich ist.",
+      "doNotConfuseWith": [
+        "Kritik: Widerspruch mit Belegen und einer klaren Sachfrage ist kein psychologisches Stöckchen.",
+        "Absichtsbeweis: Ein auffälliges Muster belegt noch keine Täuschungs- oder Manipulationsabsicht.",
+        "Personenlabel: Der Begriff beschreibt eine Formulierung oder Gesprächsdynamik, niemals den Wert oder Charakter eines Menschen."
+      ],
+      "examples": [
+        "„Willst du den Menschen ihre Freiheit nehmen?“ kann eine offene Sachfrage verdecken. Die ruhige Rückfrage lautet: „Welche konkrete Freiheit, welche Regel und welche Folge meinst du?“",
+        "Eine Diskussion springt von der geprüften Emissionszahl plötzlich zu einer unverbundenen Einzelanekdote. Das Muster kann als Themenverschiebung benannt werden.",
+        "Eine pauschale Unterstellung wird nicht gespiegelt, sondern in eine überprüfbare Behauptung mit Quelle und Vergleichsmaßstab übersetzt."
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Woran man das Muster erkennt",
+          "body": "Nicht der Ton allein entscheidet. Entscheidend ist, ob eine Formulierung die Prüfung erschwert: Wird eine Frage mit einer falschen Voraussetzung versehen? Wird aus einem Einzelfall eine allgemeine Regel? Wird die Belegpflicht verschoben?",
+          "items": [
+            "Aussage und mitgelieferte Voraussetzung trennen.",
+            "Nach Quelle, Zeitraum, Vergleich und Begriffsdefinition fragen.",
+            "Eine alternative Frage formulieren, die ohne Unterstellung auskommt."
+          ]
+        },
+        {
+          "title": "Nicht zurückwerfen",
+          "body": "Ein Gegenreiz macht die Sache meist nicht klarer. Die WÖk-Praxis ist: anhalten, präzisieren, belegen, Folgen prüfen. Damit bleibt die Tür für Korrektur offen, ohne das Muster zu verharmlosen.",
+          "items": [
+            "Keine Beschämung oder Ferndiagnose einsetzen.",
+            "Mögliche Reaktanz als Risiko berücksichtigen.",
+            "Nur beobachtete Veränderungen als Wirkung ausgeben."
+          ]
+        }
+      ],
+      "relatedTerms": ["sprachlicher-trigger", "psychologischer_wirkungscheck", "framing", "derailing-themenverschiebung", "reaktanz"],
+      "officialSources": [
+        "The Framing of Decisions and the Psychology of Choice|/quellenarchiv/wok-q-1006/",
+        "Understanding Psychological Reactance: New Developments and Findings|/quellenarchiv/wok-q-1005/",
+        "Misinformation and Its Correction: Continued Influence and Successful Debiasing|/quellenarchiv/wok-q-1001/"
+      ],
+      "sourceProvenance": "Die Fachquellen stützen die Einordnung möglicher Framing-, Reaktanz- und Korrekturmechanismen. „Psychologisches Stöckchen“ selbst ist ein klar als solcher markierter WÖk-Arbeitsbegriff, keine wissenschaftliche Diagnosekategorie.",
+      "category": "Psychologie und Resonanz",
+      "type": "Diskursmuster",
+      "source": "Wirkungsradar Psychologie · fachlich konsolidierte Begriffsdefinition",
+      "status": "approved",
+      "version": "2.0",
+      "reviewStatus": "fachlich konsolidiert",
+      "autoLinkAllowed": true
+    },
+    {
+      "id": "wertebruecke",
+      "termId": "wertebruecke",
+      "slug": "wertebruecke",
+      "canonicalLabel": "Wertebrücke",
+      "aliases": ["Wertebrücke", "gemeinsame Werte als Gesprächsbrücke"],
+      "shortDefinition": "Eine Wertebrücke macht einen gemeinsamen, legitimen Wert sichtbar und verbindet ihn mit einer prüfbaren Sach- und Wirkungsfrage. Sie ersetzt weder Belege noch die Klärung echter Zielkonflikte.",
+      "hoverDefinition": "Eine Wertebrücke ist kein Trick. Sie sagt: „Der gemeinsame Wert zählt – jetzt schauen wir gemeinsam, was ihn tatsächlich schützt.“",
+      "definition": "Wertebrücke ist ein WÖk-Praxisbegriff für einen Gesprächsschritt: Ein gemeinsamer oder zumindest anerkennenswerter Wert – etwa Freiheit, Sicherheit, Würde oder Verlässlichkeit – wird ausdrücklich benannt. Anschließend wird die strittige Behauptung mit Belegen, Alternativen und Folgen geprüft. Die Technik kann einen Gesprächszugang eröffnen, beweist aber nicht, dass Menschen ihre Einschätzung ändern oder ein Zielkonflikt verschwindet.",
+      "longDefinition": "Wertebrücke ist ein WÖk-Praxisbegriff für einen Gesprächsschritt: Ein gemeinsamer oder zumindest anerkennenswerter Wert – etwa Freiheit, Sicherheit, Würde oder Verlässlichkeit – wird ausdrücklich benannt. Anschließend wird die strittige Behauptung mit Belegen, Alternativen und Folgen geprüft. Die Technik kann einen Gesprächszugang eröffnen, beweist aber nicht, dass Menschen ihre Einschätzung ändern oder ein Zielkonflikt verschwindet. Eine tragfähige Wertebrücke darf keine falsche Behauptung bestätigen, keine Schutzgrenze relativieren und keinen Konsens vortäuschen. Sie macht nur den gemeinsamen Prüfpunkt sichtbar.",
+      "woekRelation": "Im WÖk-Kontext hilft die Wertebrücke, normativen Bezug und empirische Prüfung zu unterscheiden: Der geteilte Wert erklärt, warum die Frage wichtig ist; Daten, Wirkpfad, Nebenfolgen und Schutzgrenzen entscheiden, welche Handlung positive Netto-Wirkung erwarten lässt. Die Technik bewertet keine Personen und ersetzt keine demokratische oder rechtliche Abwägung.",
+      "usageNote": "Den gemeinsamen Wert konkret nennen und anschließend offenlegen, welche Behauptung, Evidenz und Folge geprüft werden. Bei unvereinbaren Werten oder harten Schutzgrenzen keinen künstlichen Konsens behaupten.",
+      "doNotConfuseWith": [
+        "Zustimmung zur Behauptung: Einen Wert anzuerkennen heißt nicht, eine daraus gezogene Schlussfolgerung zu akzeptieren.",
+        "Manipulation: Die Wertebrücke legt Wert, Belegfrage und Zielkonflikt offen, statt sie zu verdecken.",
+        "Konfliktauflösung: Sie kann einen Zugang eröffnen, löst aber nicht automatisch reale Interessen- oder Schutzkonflikte."
+      ],
+      "examples": [
+        "„Energie muss bezahlbar bleiben. Deshalb vergleichen wir Preise, Folgekosten und Versorgungssicherheit über denselben Zeitraum.“",
+        "„Freiheit ist wichtig. Genau deshalb prüfen wir, ob die vorgeschlagene Regel verhältnismäßig ist und welche Schäden ohne sie entstehen.“",
+        "„Sicherheit ist ein gemeinsames Ziel. Nun brauchen wir Quellen dazu, welche Maßnahme das Risiko tatsächlich verringert und welche Nebenfolgen sie hat.“"
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Wert und Behauptung getrennt halten",
+          "body": "Ein Wert ist kein Messwert und eine Behauptung ist kein Beleg. Die Wertebrücke hält beides nebeneinander: Der Wert erklärt, worum es geht. Die Prüfung klärt, ob eine Maßnahme unter benannten Bedingungen zu der gewünschten Zustandsveränderung beiträgt.",
+          "items": [
+            "Gemeinsamen oder anerkennenswerten Wert konkret benennen.",
+            "Strittige Behauptung und belegbare Alternativen getrennt formulieren.",
+            "Wirkpfad, Nebenfolgen und Schutzgrenzen offen prüfen."
+          ]
+        },
+        {
+          "title": "Wo die Brücke endet",
+          "body": "Manche Konflikte sind echt: Freiheit, Sicherheit, Verteilung oder ökologische Grenzen können unterschiedlich gewichtet werden. Dann hilft keine schöne Formulierung allein. Es braucht transparente Zuständigkeit, Rechtsschutz, Evidenz und eine begründete Abwägung.",
+          "items": [
+            "Keinen Konsens vorspiegeln.",
+            "Harte Schutzgrenzen und Nichtkompensation sichtbar halten.",
+            "Eine kommunikative Öffnung nicht als nachgewiesene Wirkung melden."
+          ]
+        }
+      ],
+      "relatedTerms": ["gesichtswahrende_korrektur", "kommunikative_souveraenitaet", "reaktanz", "identitaetsschutz", "positive-netto-wirkung"],
+      "officialSources": [
+        "The Case for Motivated Reasoning|/quellenarchiv/wok-q-0999/",
+        "Understanding Psychological Reactance: New Developments and Findings|/quellenarchiv/wok-q-1005/"
+      ],
+      "sourceProvenance": "Die Fachquellen liefern Bezugspunkte zu motiviertem Schlussfolgern und möglicher Reaktanz. „Wertebrücke“ ist eine WÖk-Gesprächspraxis, keine empirisch garantierte oder normativ neutrale Konfliktlösung.",
+      "category": "Psychologie und Resonanz",
+      "type": "Gesprächspraxis",
+      "source": "Wirkungsradar Psychologie · fachlich konsolidierte Begriffsdefinition",
+      "status": "approved",
+      "version": "2.0",
+      "reviewStatus": "fachlich konsolidiert",
+      "autoLinkAllowed": true
+    }
+  ]
+}

@@ -7,6 +7,7 @@ const ignoredDirs = new Set([".git", "_site", "node_modules", "templates", "woek
 const ignoredRoutePatterns = [
   /^\/(?:_debug|admin)\//,
   /^\/404\.html$/,
+  /^\/api\/v1\/production(?:\/|\.json|$)/,
 ];
 const htmlFiles = [];
 

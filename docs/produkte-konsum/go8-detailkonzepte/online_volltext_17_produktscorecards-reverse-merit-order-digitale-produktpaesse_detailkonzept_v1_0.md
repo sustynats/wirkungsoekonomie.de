@@ -4,8 +4,8 @@
 
 **Autorin:** Natalie Weber  
 **Referenz:** Wirkungsökonomie  
-**Version:** v1.0  
-**Stand:** 24. Mai 2026
+**Version:** v1.1  
+**Stand:** 2. August 2026
 
 > Eine Produktscorecard ist kein Label. Sie ist die Übersetzung von Produktwirklichkeit in steuerungsfähige Daten.
 
@@ -40,7 +40,7 @@ Dieses Detailkonzept beschreibt die methodische Brücke zwischen Produktdaten un
 
 Damit entsteht die operative Grundlage für Produktwirkungssteuer, Verbraucherinformation, Einkauf, Lieferkettensteuerung, Kapitalzugang und Wirkungscontrolling. Die Scorecard ist nicht bloß ein Label. Sie ist ein Datenobjekt, das Produktwirkung in Entscheidungen zurückführt.
 
-Die zentrale These lautet: Ohne Produktscorecards bleibt Nachhaltigkeitsreporting zu weit von Markt und Preis entfernt. Mit Produktscorecards wird Wirkung dort sichtbar, wo Entscheidungen fallen: im Einkauf, in der Produktentwicklung, im Handel, im Preisschild, in der Rechnung und in der Steuer.
+Die zentrale These lautet: Ohne Produktscorecards bleibt Nachhaltigkeitsreporting zu weit von Markt und Preis entfernt. Mit Produktscorecards wird Wirkung dort sichtbar, wo Entscheidungen fallen: im Einkauf, in der Produktentwicklung, im Handel, im Preisschild, in der Rechnung und bei der rechtsstaatlichen Prüfung einer möglichen Steuerlogik. Die Scorecard ist dabei Evidenz, nicht Tarifautomat.
 
 ## Ausgangsdiagnose: Warum Reporting ohne Produkttiefe nicht reicht
 
@@ -107,11 +107,11 @@ Die RMO ist außerdem ein Innovationsmotor: Unternehmen verbessern nicht nur die
 
 Der Digitale Produktpass ist die technische Infrastruktur, die Produktwirkung über den Lebenszyklus sichtbar machen kann. Er enthält Informationen zu Materialien, Herkunft, technischer Leistung, Reparatur, Recycling, Lebenszyklusfolgen und Konformität. In der Wirkungsökonomie wird er zum Produktgedächtnis: Er macht sichtbar, was im Produkt steckt und wie es wirkt.
 
-Der DPP ist keine WÖk-Erfindung, sondern europäisch angelegt. Die Wirkungsökonomie nutzt ihn als Anschlussstelle: Produktdaten, Scorecards, WÖk-IDs, Steuerklassen, Reparaturinformationen und Kreislauffähigkeit können darüber verknüpft werden. Wichtig ist, dass der Produktpass nicht nur Umweltinformation sammelt, sondern auch soziale, gesundheitliche und - wo relevant - demokratische Wirkung anschlussfähig macht.
+Der DPP ist keine WÖk-Erfindung, sondern europäisch angelegt. Die Wirkungsökonomie nutzt ihn als Anschlussstelle: Produktdaten, Scorecards, WÖk-IDs, Prüfstatus, Reparaturinformationen und Kreislauffähigkeit können darüber verknüpft werden. Wichtig ist, dass der Produktpass nicht nur Umweltinformation sammelt, sondern auch soziale, gesundheitliche und - wo relevant - demokratische Wirkung anschlussfähig macht.
 
 ## Datenfluss vom Lieferanten bis zum Preisschild
 
-Ein wirkungsökonomischer Produktdatenfluss beginnt bei Rohstoffen und Vorprodukten. Lieferanten stellen Daten bereit, Hersteller aggregieren und ergänzen sie, Scorecards berechnen die Produktwirkung, Prüfer:innen sichern Datenqualität, Händler:innen übernehmen Score und Steuerklasse, Verbraucher:innen sehen die Wirkung am Preisschild oder in digitalen Informationen.
+Ein wirkungsökonomischer Produktdatenfluss beginnt bei Rohstoffen und Vorprodukten. Lieferanten stellen Daten bereit, Hersteller aggregieren und ergänzen sie, Scorecards dokumentieren das Wirkungsprofil, Prüfer:innen sichern Datenqualität, Händler:innen übernehmen Score und Prüfstatus, Verbraucher:innen sehen die Wirkung am Preisschild oder in digitalen Informationen. Ein Satz oder Preis wird dabei nicht aus dem Score abgeleitet.
 
 Damit wird das Preisschild zum Endpunkt einer Datenkette. Es zeigt nicht alle Details, aber es trägt die zentrale Wirkungsinformation. Wer mehr wissen will, kann über den Produktpass Details einsehen. Behörden und Prüfer:innen sehen die Nachweise. Unternehmen nutzen die Daten für Einkauf, Produktentwicklung und Controlling.
 
@@ -120,7 +120,7 @@ Damit wird das Preisschild zum Endpunkt einer Datenkette. Es zeigt nicht alle De
 | Lieferant | Rohstoff, Arbeit, Umwelt, Zertifikate, Messwerte | Vorprodukt-Score |
 | Hersteller | Aggregation, Verarbeitung, Produktdesign | Produkt-Scorecard |
 | Prüfung | Datenqualität, Plausibilität, Audit | validierter Score / Risiko-Hinweis |
-| Handel | Übernahme in Warenwirtschaft und Preisschild | sichtbare Steuerklasse |
+| Handel | Übernahme in Warenwirtschaft und Preisschild | sichtbares Wirkungsprofil und Prüfstatus |
 | Kund:in | Kauf, Nutzung, Reparatur, Rückgabe | informierte Entscheidung |
 | Wirkungsrat | Revision von Benchmarks und Methodik | lernende Systemkorrektur |
 
@@ -149,7 +149,7 @@ Der Wirkungsrat, Prüfstellen, wissenschaftliche Methodik und öffentliche Konsu
 | --- | --- |
 | Aufgabe der Politik | Preise, Steuern, Produktdaten und Verbraucherinformation so rahmen, dass reale Wirkung sichtbar und rückkoppelbar wird. |
 | Politische Rahmenbedingungen | Wirkungsregister, WÖk-IDs, DPP-Anschluss, Auditstandards, KMU-Erleichterungen, Übergangsfristen und Rechtsschutz. |
-| Ausgestaltungsspielraum | Parteien können Tempo, Steuerklassen, Pilotsektoren, Sozialausgleich, Förderung, Sanktionen und Grenzfälle unterschiedlich gewichten. |
+| Ausgestaltungsspielraum | Parteien können Tempo, Tarifrahmen, Pilotsektoren, Sozialausgleich, Förderung, Sanktionen und Grenzfälle unterschiedlich gewichten. |
 | Zielkonflikte | Kaufkraftschutz, Wettbewerbsfähigkeit, Datenlast, Innovation, Datenschutz, EU-Recht und internationale Lieferketten müssen austariert werden. |
 | Rollenverteilung | EU, Bund, Länder, Kommunen, Unternehmen, Handel, Prüfer:innen, Wissenschaft, Verbraucher:innen und Wirkungsrat tragen unterschiedliche Aufgaben. |
 | Übergang und Schutz | Kleine Unternehmen, Grundbedarf, vulnerable Haushalte und Transformationsbranchen brauchen Übergang, Beratung und soziale Abfederung. |
@@ -179,7 +179,7 @@ Produktscorecards sind die methodische Voraussetzung dafür, dass die Wirkungsö
 | Quelle / Anschlussstelle | Bedeutung | Referenz |
 | --- | --- | --- |
 | WP Produkte | Grundlage für Produktbesteuerung, ehrliche Preise, Wirkungssteuer und Marktlogik. | Interne Arbeitsbibliothek / Wirkungsökonomie |
-| Beispiel Apfel | NACE-Zuordnung, CSRD/ESRS/GRI-Daten, Reverse Merit Order und Steuerklassen am Produktbeispiel. | Interne Arbeitsbibliothek / Wirkungsökonomie |
+| Beispiel Apfel | NACE-Zuordnung, CSRD/ESRS/GRI-Daten, Reverse Merit Order, Prüfstatus und Preis-Testannahme am Produktbeispiel. | Interne Arbeitsbibliothek / Wirkungsökonomie |
 | Technische Leitlinien WUStG | WÖk-IDs, Scorecards, Archetypen, Benchmarks, Datenqualität und Assurance. | Interne Arbeitsbibliothek / Wirkungsökonomie |
 | Wirkungsökonomie in der Lieferkette | Vorsteuerlogik, Lieferkettenscores, Reverse Merit Order und globale Anschlussfähigkeit. | Interne Arbeitsbibliothek / Wirkungsökonomie |
 | Die neue Ordnung des Wohlstands | Buchanker: Produkte, Märkte, Preise, Produktscorecards, Apfelbeispiel, DPP und WUStG. | Natalie Weber, 2026 |

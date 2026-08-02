@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-30T18:22:33.412Z",
+  "generatedAt": "2026-08-02T19:45:36.865Z",
   "links": {
     "fuenftes-p-planet": {
       "label": "5. P = Planet",
@@ -207,9 +207,8 @@
         "Agentur für Digitale Öffentlichkeit"
       ],
       "relatedTerms": [
-        "digitale-oeffentlichkeit",
-        "wirkungsrat",
         "oeffentlichkeit-als-wirkungsraum",
+        "wirkungsrat",
         "desinformation",
         "wr",
         "demokratie",
@@ -428,7 +427,7 @@
         "politischer-vorraum",
         "salienz",
         "priming",
-        "wirkungsraum-oeffentlichkeit"
+        "oeffentlichkeit-als-wirkungsraum"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -896,7 +895,7 @@
         "wirkungsrisiko",
         "diskursfaehigkeit",
         "desinformation",
-        "faktenresistenz",
+        "faktenreaktanz",
         "kognitive-dissonanz",
         "dunning-kruger-effekt",
         "bestaetigungsfehler",
@@ -934,7 +933,7 @@
         "Ambiguitätsintoleranz"
       ],
       "relatedTerms": [
-        "false-urgency",
+        "false-urgency-kuenstliche-dringlichkeit",
         "moralische-panik",
         "wirkungskompetenz",
         "sdg-plus"
@@ -1940,6 +1939,32 @@
         "bibliothek/woek-begriffsleitfaden-fuehrend/",
         "nachhaltigkeit-als-systemresilienz-definition-und-klimamodell"
       ],
+      "relatedObjections": []
+    },
+    "attributionsfehler": {
+      "label": "Attributionsfehler",
+      "slug": "attributionsfehler",
+      "url": "/begriffe/attributionsfehler/",
+      "hoverDefinition": "Der fundamentale Attributionsfehler überschätzt persönliche Eigenschaften und unterschätzt die Situation.",
+      "shortDefinition": "Ein Attributionsfehler ist ein systematischer Fehler beim Zuschreiben von Ursachen, Motiven oder Verantwortung.",
+      "category": "Psychologie, Erkenntnis & Wirkung",
+      "synonyms": [
+        "Attributionsfehler",
+        "fundamentaler Attributionsfehler",
+        "Korrespondenzverzerrung"
+      ],
+      "relatedTerms": [
+        "wirkung",
+        "wirkungsbewertung",
+        "wirkungsdaten",
+        "wirkungsrisiko",
+        "wissenschaftsfeindlichkeit",
+        "diskursqualitaet"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
       "relatedObjections": []
     },
     "attributionsforschung": {
@@ -3466,7 +3491,9 @@
       "synonyms": [
         "Benchmarks"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "benchmark"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -3746,7 +3773,10 @@
       "synonyms": [
         "Bestandsimmobilie"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "immobilien",
+        "energetische-sanierung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -3828,6 +3858,32 @@
       ],
       "relatedObjections": []
     },
+    "betroffenenperspektive": {
+      "label": "Betroffenenperspektive",
+      "slug": "betroffenenperspektive",
+      "url": "/begriffe/betroffenenperspektive/",
+      "hoverDefinition": "Betroffene sind keine Datenpunkte. Ihre Perspektive ist für gute Entscheidungen nötig, aber weder ein einheitlicher Block noch ein automatisches Veto.",
+      "shortDefinition": "Die Betroffenenperspektive bringt Wissen, Erfahrungen und Urteile der Menschen ein, die von einer Entscheidung oder Maßnahme wesentlich betroffen sind.",
+      "category": "Teilhabe, Rechte & Wirkung",
+      "synonyms": [
+        "Betroffenenperspektive",
+        "Perspektive Betroffener",
+        "Erfahrungsperspektive"
+      ],
+      "relatedTerms": [
+        "partizipation",
+        "teilhabe",
+        "grundrechte",
+        "gesundheit",
+        "wirkungsempfaenger",
+        "wirkungsbewertung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "bewegungs-ngo": {
       "label": "Bewegungs-NGO",
       "slug": "bewegungs-ngo",
@@ -3880,7 +3936,10 @@
       "synonyms": [
         "Bilanzgrenze"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "systemgrenze",
+        "lebenszyklusanalyse"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -3938,7 +3997,10 @@
       "synonyms": [
         "Biodiversität"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "planet",
+        "biodiversitaetsrisiko"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -3971,7 +4033,7 @@
         "humusaufbau",
         "hydrologischer-kreislauf",
         "nature-positive",
-        "oekosystemleistungen",
+        "oekosystemleistungen-oekosystemfunktionen",
         "one-health",
         "planetare-grenzen"
       ],
@@ -4137,7 +4199,10 @@
       "synonyms": [
         "BIP"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "wellbeing-economy",
+        "w-bip"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -4331,7 +4396,9 @@
       "synonyms": [
         "BNE"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "bip"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -4437,7 +4504,10 @@
       "synonyms": [
         "Brutblanket"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "tiere",
+        "biodiversitaet"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -4454,7 +4524,10 @@
       "synonyms": [
         "Bruttokreditaufnahme"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "nettokreditaufnahme",
+        "refinanzierung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -4865,6 +4938,33 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "cancel-dynamiken": {
+      "label": "Cancel-Dynamiken",
+      "slug": "cancel-dynamiken",
+      "url": "/begriffe/cancel-dynamiken/",
+      "hoverDefinition": "Der Begriff beschreibt einen Ablauf. Er entscheidet nicht, ob Kritik, Verantwortung oder eine Sanktion gerechtfertigt ist.",
+      "shortDefinition": "Cancel-Dynamiken sind Prozesse, in denen öffentliche Kritik, Boykottaufrufe, Distanzierung und Ausschluss einander verstärken können.",
+      "category": "Medien, Öffentlichkeit & Demokratie",
+      "synonyms": [
+        "Cancel-Dynamiken",
+        "Cancel Culture",
+        "öffentliche Ausschlussdynamiken"
+      ],
+      "relatedTerms": [
+        "diskursqualitaet",
+        "moderationsstandards",
+        "plattformregulierung",
+        "grundrechte",
+        "medienfreiheit",
+        "soziale-sanktionierung",
+        "betroffenenperspektive"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "canvas-mindeststandard": {
       "label": "Canvas-Mindeststandard",
       "slug": "canvas-mindeststandard",
@@ -5033,7 +5133,10 @@
       "synonyms": [
         "CapEx-Plan"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "capex",
+        "investitionsschuld"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -5139,7 +5242,10 @@
       "synonyms": [
         "Care Economy / Feministische Ökonomie"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "sorgearbeit",
+        "gender-care-gap"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -5455,7 +5561,7 @@
       ],
       "relatedTerms": [
         "bestaetigungsfehler",
-        "quote-mining",
+        "quote-mining-dekontextualisierung",
         "impact-washing",
         "netto-wirkung"
       ],
@@ -5496,7 +5602,10 @@
       "synonyms": [
         "Circular Economy / Regenerative Economy"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "kreislaufwirtschaft",
+        "kreislauffaehigkeit"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -6083,7 +6192,14 @@
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [
-        "[object Object]",
+        {
+          "label": "Wirkungsökonomie Glossar",
+          "href": "../../glossar.html"
+        },
+        {
+          "label": "Referenz / Online-Buch",
+          "href": "../../referenz/"
+        },
         "die-neue-ordnung-des-wohlstands",
         "systemmodell-der-wirkungsoekonomie",
         "leitbild-mensch-planet-demokratie"
@@ -6100,7 +6216,10 @@
       "synonyms": [
         "CRREM / Carbon Risk Real Estate Monitor"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "immobilien",
+        "misalignment-year"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -6236,7 +6355,10 @@
       "synonyms": [
         "Cyberresilienz"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "dora",
+        "risiko-und-resilienzregister"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -6253,7 +6375,10 @@
       "synonyms": [
         "D&O"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "unternehmens-impact-und-governance-frameworks",
+        "risikomanagement"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -6724,6 +6849,32 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "datenschutz": {
+      "label": "Datenschutz",
+      "slug": "datenschutz",
+      "url": "/begriffe/datenschutz/",
+      "hoverDefinition": "Datenschutz bedeutet nicht Datenverbot, sondern rechtmäßigen, nachvollziehbaren und verhältnismäßigen Umgang mit personenbezogenen Daten.",
+      "shortDefinition": "Datenschutz schützt Menschen bei der Verarbeitung personenbezogener Daten durch Regeln, Rechte und technische sowie organisatorische Maßnahmen.",
+      "category": "Daten, Rechte & Governance",
+      "synonyms": [
+        "Datenschutz",
+        "Schutz personenbezogener Daten",
+        "Data Protection"
+      ],
+      "relatedTerms": [
+        "informationssouveraenitaet",
+        "digitale-selbstbestimmung",
+        "wirkungsdaten",
+        "grundrechte",
+        "lernende-systeme",
+        "plattformregulierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "datenstandard": {
       "label": "Datenstandard / Standardisierung von Risikomanagement",
       "slug": "datenstandard",
@@ -6734,7 +6885,10 @@
       "synonyms": [
         "Datenstandard / Standardisierung von Risikomanagement"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "datenqualitaet",
+        "managementsystemstandards"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -6775,7 +6929,10 @@
       "synonyms": [
         "DEAL"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "clean-industrial-deal",
+        "eu"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -6786,13 +6943,20 @@
       "label": "Debiasing",
       "slug": "debiasing",
       "url": "/begriffe/debiasing/",
-      "hoverDefinition": "Debiasing heißt nicht Manipulation, sondern bessere Bedingungen für Klärung schaffen.",
-      "shortDefinition": "Strategien, um kognitive Verzerrungen und emotionale Fehlreaktionen zu entschärfen.",
+      "hoverDefinition": "Debiasing räumt Denkfehler nicht weg wie Krümel vom Tisch. Es trennt Behauptung, Beleg und Unsicherheit – und prüft dann noch einmal.",
+      "shortDefinition": "Debiasing bezeichnet Maßnahmen, die die Wahrscheinlichkeit verringern sollen, dass Verzerrungen oder Fehlinformationen ein Urteil bestimmen. Es ist keine Technik, Menschen zu überzeugen oder zu bewerten.",
       "category": "Psychologie und Resonanz",
       "synonyms": [
-        "Debiasing"
+        "Debiasing",
+        "Entzerrung kognitiver Verzerrungen"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "kognitive-dissonanz",
+        "bestaetigungsfehler",
+        "meta-kognitive-intervention",
+        "faktencheck",
+        "reaktanz"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -6838,7 +7002,7 @@
       "relatedTerms": [
         "wirkungsblindheit",
         "interdisziplinaritaet",
-        "systemkompetenz",
+        "wirkungskompetenz",
         "wirkungsaudit"
       ],
       "relatedMethods": [],
@@ -6879,7 +7043,10 @@
       "synonyms": [
         "Degrowth / Postwachstum"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "wellbeing-economy",
+        "bip"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -6918,7 +7085,10 @@
       "synonyms": [
         "Deindustrialisierungsnarrativ"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "narrativ",
+        "green-deal-industrial-plan"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -7410,7 +7580,10 @@
       "synonyms": [
         "Demokratische Staatsschuld"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "demokratische-erosion",
+        "nicht-finanzielle-staatsschulden"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -7692,7 +7865,14 @@
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [
-        "[object Object]",
+        {
+          "label": "Wirkungsökonomie Glossar",
+          "href": "../../glossar.html"
+        },
+        {
+          "label": "Referenz / Online-Buch",
+          "href": "../../referenz/"
+        },
         "die-neue-ordnung-des-wohlstands",
         "systemmodell-der-wirkungsoekonomie",
         "leitbild-mensch-planet-demokratie"
@@ -7835,7 +8015,10 @@
       "synonyms": [
         "Digital-, KI- und Plattformstandards"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "ki-governance",
+        "plattformregulierung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -7953,7 +8136,18 @@
       ],
       "relatedDemos": [],
       "relatedDocuments": [
-        "[object Object]"
+        {
+          "label": "Die neue Ordnung des Wohlstands",
+          "href": "../../referenz/"
+        },
+        {
+          "label": "Technische Leitlinien WUStG",
+          "href": "../../dokumente/technische-leitlinien-wustg-v2/"
+        },
+        {
+          "label": "Wirkungsfeld Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        }
       ],
       "relatedObjections": []
     },
@@ -8313,11 +8507,45 @@
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [
-        "[object Object]",
+        {
+          "label": "Wirkungsökonomie Glossar",
+          "href": "../../glossar.html"
+        },
+        {
+          "label": "Referenz / Online-Buch",
+          "href": "../../referenz/"
+        },
         "die-neue-ordnung-des-wohlstands",
         "systemmodell-der-wirkungsoekonomie",
         "leitbild-mensch-planet-demokratie"
       ],
+      "relatedObjections": []
+    },
+    "diskursqualitaet": {
+      "label": "Diskursqualität",
+      "slug": "diskursqualitaet",
+      "url": "/begriffe/diskursqualitaet/",
+      "hoverDefinition": "Gute Diskursqualität heißt nicht: alle sind einer Meinung oder immer höflich. Sie heißt: Behauptungen, Kritik und Korrektur sind fair möglich.",
+      "shortDefinition": "Diskursqualität beschreibt, wie gut ein öffentlicher Austausch informierte, pluralistische, sichere und korrigierbare Auseinandersetzung ermöglicht.",
+      "category": "Medien, Öffentlichkeit & Demokratie",
+      "synonyms": [
+        "Diskursqualität",
+        "Qualität öffentlicher Debatte",
+        "Debattenqualität"
+      ],
+      "relatedTerms": [
+        "medienqualitaet",
+        "medienfreiheit",
+        "faktencheck",
+        "moderationsstandards",
+        "betroffenenperspektive",
+        "plattformregulierung",
+        "polarisierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
       "relatedObjections": []
     },
     "diskursraum": {
@@ -8337,8 +8565,7 @@
         "resonanzraum",
         "wirkpfad",
         "wirkungspotenzial",
-        "deliberative-demokratie",
-        "wirkungspfad"
+        "deliberative-demokratie"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -8364,7 +8591,7 @@
         "wirkungswahrheit",
         "wirkungsrueckkopplung",
         "resonanzraum",
-        "wirkungspfad",
+        "wirkpfad",
         "wirkungsrisiko",
         "reverse-merit-order"
       ],
@@ -8537,7 +8764,10 @@
       "synonyms": [
         "Donut-Ökonomie / Doughnut Economics Action Lab"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "planetare-grenzen",
+        "mensch-planet-demokratie"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -8601,7 +8831,10 @@
       "synonyms": [
         "DORA"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "cyberresilienz",
+        "risikomanagement"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -8720,9 +8953,8 @@
       ],
       "relatedTerms": [
         "plattformregulierung",
-        "digitale-oeffentlichkeit",
-        "dsa-digital-services-act",
         "oeffentlichkeit-als-wirkungsraum",
+        "dsa-digital-services-act",
         "adoe",
         "wirkung",
         "positive-netto-wirkung",
@@ -8775,7 +9007,7 @@
       ],
       "relatedTerms": [
         "datenschutz",
-        "digitale-oeffentlichkeit",
+        "oeffentlichkeit-als-wirkungsraum",
         "digitale-selbstbestimmung",
         "wirkung",
         "positive-netto-wirkung",
@@ -9170,6 +9402,34 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "ehrenamt": {
+      "label": "Ehrenamt",
+      "slug": "ehrenamt",
+      "url": "/begriffe/ehrenamt/",
+      "hoverDefinition": "Ehrenamt ist kein moralischer Kredit. Stunden zeigen Einsatz, aber nicht automatisch Wirkung und dürfen keine Personenwertung erzeugen.",
+      "shortDefinition": "Ehrenamt ist freiwillige, nicht verpflichtende und grundsätzlich unbezahlte Arbeit oder Tätigkeit für andere, Organisationen oder das Gemeinwesen.",
+      "category": "Teilhabe, Arbeit & Gemeinwohl",
+      "synonyms": [
+        "Ehrenamt",
+        "freiwilliges Engagement",
+        "Volunteering",
+        "Freiwilligenarbeit"
+      ],
+      "relatedTerms": [
+        "gemeinwohl",
+        "teilhabe",
+        "wirkung",
+        "wirkungspotenzial",
+        "weiterbildung",
+        "wirkungsdividende",
+        "wirkungsrente"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "ehrliche-preise": {
       "label": "Ehrliche Preise",
       "slug": "ehrliche-preise",
@@ -9358,7 +9618,10 @@
       "synonyms": [
         "Eigentumsangst"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "eigentumsrechte",
+        "status-threat"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -9514,7 +9777,10 @@
       "synonyms": [
         "EIOPA"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "versicherbarkeit",
+        "esma"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -9553,7 +9819,10 @@
       "synonyms": [
         "Elektrolyse"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "wasserstoff",
+        "energieeffizienz"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -9619,7 +9888,6 @@
         "selbstorganisation",
         "vertrauen",
         "commons",
-        "elinor-ostrom",
         "wirkungsrat",
         "wirkungsgovernance",
         "teilgabe"
@@ -9899,7 +10167,10 @@
       "synonyms": [
         "Endogenes Geld"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "mmt",
+        "monetaere-souveraenitaet"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -9942,7 +10213,10 @@
       "synonyms": [
         "Energetische Sanierung"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "bestandsimmobilie",
+        "sanierungsfahrplan"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -10660,7 +10934,10 @@
       "synonyms": [
         "Entmenschlichender Kampfbegriff"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "dehumanisierung",
+        "menschenwuerde"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -10797,7 +11074,10 @@
       "synonyms": [
         "Entwicklungskredit"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "kapitalzugang",
+        "wirkungsinvestition-des-staates"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -10836,7 +11116,10 @@
       "synonyms": [
         "EPBD / Energy Performance of Buildings Directive"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "gebaeudeenergieperformance",
+        "energetische-sanierung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -11017,7 +11300,14 @@
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [
-        "[object Object]",
+        {
+          "label": "Wirkungsökonomie Glossar",
+          "href": "../../glossar.html"
+        },
+        {
+          "label": "Referenz / Online-Buch",
+          "href": "../../referenz/"
+        },
         "die-neue-ordnung-des-wohlstands",
         "systemmodell-der-wirkungsoekonomie",
         "leitbild-mensch-planet-demokratie"
@@ -11058,7 +11348,10 @@
       "synonyms": [
         "ERM"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "risikomanagement",
+        "enterprise-risk-management-nach-wirkung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -11289,7 +11582,10 @@
       "synonyms": [
         "Erwünschte Wirkung"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "positive-wirkung",
+        "positive-netto-wirkung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -11383,7 +11679,10 @@
       "synonyms": [
         "ESG-Beratung / Nachhaltigkeitsberatung"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "esg",
+        "nachhaltigkeitsmanagement"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -11400,7 +11699,10 @@
       "synonyms": [
         "ESG-Rating"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "sustainability-benchmarking",
+        "wirkungsbewertung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -11417,7 +11719,10 @@
       "synonyms": [
         "ESMA"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "eu",
+        "esg-rating"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -11523,7 +11828,10 @@
       "synonyms": [
         "ETS"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "emissionshandel",
+        "treibhausgasemissionen"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -11540,7 +11848,10 @@
       "synonyms": [
         "EU"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "eu-nachhaltigkeitsverfassungsrahmen",
+        "eu-taxonomie"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -11663,7 +11974,7 @@
         "nachhaltigkeit",
         "taxonomiefaehigkeit",
         "taxonomiekonformitaet",
-        "dnsh",
+        "dnsh-do-no-significant-harm",
         "technische-bewertungskriterien",
         "nace",
         "mindestschutz-minimum-safeguards",
@@ -11696,7 +12007,10 @@
       "synonyms": [
         "EU-Taxonomie bei Immobilien"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "eu-taxonomie",
+        "immobilien"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -12339,7 +12653,10 @@
       "synonyms": [
         "Fach Zukunft"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "zukunftsfaehigkeit",
+        "wirkungskompetenz"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -13156,7 +13473,7 @@
       "relatedTerms": [
         "flood-the-zone",
         "gish-galopp",
-        "bullshit-asymmetrie",
+        "bullshit-asymmetrie-brandolinis-gesetz",
         "wirkungsresilienz"
       ],
       "relatedMethods": [],
@@ -13169,8 +13486,8 @@
       "label": "Fiskalischer Wirkungsgrad",
       "slug": "fiskalischer-wirkungsgrad",
       "url": "/begriffe/fiskalischer-wirkungsgrad/",
-      "hoverDefinition": "Der fiskalische Wirkungsgrad beschreibt, wie viel bewertete positive Netto-Wirkung pro eingesetztem öffentlichen Euro entsteht.",
-      "shortDefinition": "Der fiskalische Wirkungsgrad beschreibt, wie viel bewertete positive Netto-Wirkung pro eingesetztem öffentlichen Euro entsteht.",
+      "hoverDefinition": "Der fiskalische Wirkungsgrad beschreibt den monetär bewerteten, kausal zugerechneten direkten Nettonutzen je diskontiertem öffentlichen Euro.",
+      "shortDefinition": "Der fiskalische Wirkungsgrad beschreibt den monetär bewerteten, kausal zugerechneten direkten Nettonutzen je diskontiertem öffentlichen Euro.",
       "category": "Wirkungsfinanzpolitik",
       "synonyms": [
         "Fiskalischer Wirkungsgrad"
@@ -13225,7 +13542,10 @@
       "synonyms": [
         "Fledermausabschaltung"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "windenergie",
+        "biodiversitaet"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -13290,7 +13610,7 @@
       "relatedTerms": [
         "firehose-of-falsehood",
         "gish-galopp",
-        "derailing",
+        "derailing-themenverschiebung",
         "agenda-setting"
       ],
       "relatedMethods": [],
@@ -13309,7 +13629,10 @@
       "synonyms": [
         "Folgekosten"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "kosten-des-nicht-handelns",
+        "externalitaeten"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -13326,7 +13649,10 @@
       "synonyms": [
         "Folgekostenvermeidung"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "folgekosten",
+        "praevention-als-wirkleistung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -13337,7 +13663,7 @@
       "label": "Folgencheck",
       "slug": "folgencheck",
       "url": "/begriffe/folgencheck/",
-      "hoverDefinition": "Folgencheck fragt: Was kann das auslösen? Er prüft Wirkstoffe, Wirkungspotenziale, Wirkungspfade und Wirkungsräume ex ante.",
+      "hoverDefinition": "Folgencheck fragt: Was kann das auslösen? Er prüft Auslöser mit Wirkungspotenzial, Wirkungspfade und Wirkungsräume ex ante.",
       "shortDefinition": "Ein Folgencheck prüft vorsorgend, was eine Aussage, Entscheidung oder Maßnahme auslösen kann.",
       "category": "Grundbegriff",
       "synonyms": [
@@ -13349,7 +13675,7 @@
       "relatedTerms": [
         "faktencheck",
         "fakten",
-        "wirkungspfad",
+        "wirkpfad",
         "wirkungspotenzial",
         "wirkungsrisiko",
         "metakommunikation",
@@ -13426,7 +13752,7 @@
       ],
       "relatedTerms": [
         "wirkung",
-        "wirkungspfad",
+        "wirkpfad",
         "rueckkopplung",
         "interdependenz",
         "wirkungsrisiko",
@@ -13473,7 +13799,10 @@
       "synonyms": [
         "Fördercontrolling"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "foerderlogik",
+        "wirkungscontrolling"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -13490,7 +13819,10 @@
       "synonyms": [
         "Förderlogik"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "foerdercontrolling",
+        "neoklassische-foerderlogik"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -13507,7 +13839,10 @@
       "synonyms": [
         "Fossile Alternative"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "fossile-systemkosten",
+        "lock-in-effekt"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -13583,7 +13918,7 @@
         "framing",
         "reframing",
         "wirkungspotenzial",
-        "wirkungspfad",
+        "wirkpfad",
         "wirkungsrisiko"
       ],
       "relatedMethods": [],
@@ -13631,11 +13966,10 @@
         "populismus",
         "paltering",
         "frame",
-        "tonalitaet",
-        "wirkungspfad",
+        "framing-sprache-tonalitaet",
+        "wirkpfad",
         "wirkungsrisiko",
-        "gegenframe",
-        "wirkpfad"
+        "gegenframe"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -13649,13 +13983,19 @@
       "label": "Framekontrolle",
       "slug": "framekontrolle",
       "url": "/begriffe/framekontrolle/",
-      "hoverDefinition": "Framekontrolle bedeutet: Ich beantworte die Frage, aber ich übernehme nicht die falsche Voraussetzung.",
-      "shortDefinition": "Bewusstes Verhindern, dass der problematische Deutungsrahmen einer Aussage unkritisch übernommen wird.",
+      "hoverDefinition": "Ein Frame ist die Brille einer Aussage. Framekontrolle heißt: erst merken, welche Brille aufgesetzt wurde – dann durch eine passende ersetzen.",
+      "shortDefinition": "Framekontrolle bedeutet, die Deutungsannahme einer Aussage zu erkennen, nicht unbemerkt zu übernehmen und die Sachfrage unter einem passenden, offenen Rahmen zu klären.",
       "category": "Psychologie und Resonanz",
       "synonyms": [
-        "Framekontrolle"
+        "Framekontrolle",
+        "Deutungsrahmen prüfen"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "framing",
+        "reframing",
+        "metakommunikation",
+        "reaktanz"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -13754,7 +14094,14 @@
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [
-        "[object Object]",
+        {
+          "label": "Wirkungsökonomie Glossar",
+          "href": "../../glossar.html"
+        },
+        {
+          "label": "Referenz / Online-Buch",
+          "href": "../../referenz/"
+        },
         "die-neue-ordnung-des-wohlstands",
         "systemmodell-der-wirkungsoekonomie",
         "leitbild-mensch-planet-demokratie"
@@ -14136,7 +14483,10 @@
       "synonyms": [
         "Functional Finance"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "mmt",
+        "funktionale-wirkungsfinanzpolitik"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -14175,7 +14525,10 @@
       "synonyms": [
         "Funktionale Wirkungsfinanzpolitik"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "functional-finance",
+        "wirkungsfinanzierung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -14192,7 +14545,10 @@
       "synonyms": [
         "Fusion"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "technologiereifegrad",
+        "energie"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -14209,7 +14565,10 @@
       "synonyms": [
         "Garantie"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "risikomanagement",
+        "kapitalzugang"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -14246,7 +14605,10 @@
       "synonyms": [
         "Gebäude- und Immobilienstandards"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "epbd",
+        "gebaeudeenergiegesetz"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -14293,7 +14655,10 @@
       "synonyms": [
         "Gebäudeenergieperformance"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "energetische-sanierung",
+        "gebaeudeenergiegesetz"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -14413,7 +14778,7 @@
       "label": "Geld",
       "slug": "geld",
       "url": "/begriffe/geld/",
-      "hoverDefinition": "Geld: liquide Handlungsmöglichkeit; als gesellschaftlicher Wirkstoff verstanden, besitzt jeder Geldfluss Wirkungspotenzial.",
+      "hoverDefinition": "Geld: liquide Handlungsmöglichkeit; jeder Geldfluss ist ein Auslöser mit Wirkungspotenzial.",
       "shortDefinition": "Geld ist liquide Handlungsmöglichkeit. In der Wirkungsökonomie ist Geld nicht wirkungsneutral: Jeder Geldfluss besitzt Wirkungspotenzial, weil er Nachfrage, Investitionen, Macht, Preise, Geschäftsmodelle und Zukunftspfade stärkt oder schwächt.",
       "category": "Kapital, Markt und Eigentum",
       "synonyms": [
@@ -14598,7 +14963,10 @@
       "synonyms": [
         "Gemeinwohlökonomie / Gemeinwohl-Bilanz"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "mensch-planet-demokratie",
+        "wirkungsbewertung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -15108,13 +15476,19 @@
       "label": "Gesichtswahrende Korrektur",
       "slug": "gesichtswahrende-korrektur",
       "url": "/begriffe/gesichtswahrende-korrektur/",
-      "hoverDefinition": "Hilfreich bei kognitiver Dissonanz: Person respektieren, Aussage prüfen.",
-      "shortDefinition": "Korrektur einer Aussage, ohne die Person zu demütigen oder ihre Identität anzugreifen.",
+      "hoverDefinition": "Nicht die Person kleinmachen, sondern die Aussage groß genug hinlegen, damit man sie gemeinsam prüfen kann.",
+      "shortDefinition": "Gesichtswahrende Korrektur berichtigt eine Aussage, ohne die Würde der Person abzuwerten. Sie trennt Person, Behauptung, Beleg und mögliche Folgen.",
       "category": "Psychologie und Resonanz",
       "synonyms": [
-        "Gesichtswahrende Korrektur"
+        "Gesichtswahrende Korrektur",
+        "respektvolle Korrektur"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "wertebruecke",
+        "kommunikative_souveraenitaet",
+        "reaktanz",
+        "kognitive-dissonanz"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -15299,6 +15673,32 @@
         "staat-recht-demokratie",
         "finanzsystem-kapital"
       ],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "gesundheitskompetenz": {
+      "label": "Gesundheitskompetenz",
+      "slug": "gesundheitskompetenz",
+      "url": "/begriffe/gesundheitskompetenz/",
+      "hoverDefinition": "Gesundheitskompetenz ist nicht bloß Wissen. Auch verständliche Informationen und zugängliche Dienste gehören dazu.",
+      "shortDefinition": "Gesundheitskompetenz ist die Fähigkeit und Möglichkeit, Gesundheitsinformationen und -leistungen zu finden, zu verstehen, zu beurteilen und zu nutzen.",
+      "category": "Gesundheit & Leben",
+      "synonyms": [
+        "Gesundheitskompetenz",
+        "Health Literacy",
+        "gesundheitliche Informationskompetenz"
+      ],
+      "relatedTerms": [
+        "gesundheit",
+        "praevention",
+        "gesundheitswirkung",
+        "one-health",
+        "informationssouveraenitaet",
+        "weiterbildung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [],
       "relatedObjections": []
@@ -15532,7 +15932,7 @@
         "Gish-Galopp"
       ],
       "relatedTerms": [
-        "bullshit-asymmetrie",
+        "bullshit-asymmetrie-brandolinis-gesetz",
         "flood-the-zone",
         "firehose-of-falsehood",
         "faktencheck"
@@ -15901,7 +16301,10 @@
       "synonyms": [
         "Globale öffentliche Güter"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "internationale-zusammenarbeit",
+        "globale-wirkungsordnung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -16075,7 +16478,10 @@
       "synonyms": [
         "Globale Wirkungsordnung"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "internationale-zusammenarbeit",
+        "mensch-planet-demokratie"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -16321,7 +16727,18 @@
       ],
       "relatedDemos": [],
       "relatedDocuments": [
-        "[object Object]"
+        {
+          "label": "Wirkungsökonomie Glossar",
+          "href": "../../glossar.html"
+        },
+        {
+          "label": "Wirkungsfeld Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        },
+        {
+          "label": "Referenz / Online-Buch",
+          "href": "../../referenz/"
+        }
       ],
       "relatedObjections": []
     },
@@ -16683,7 +17100,10 @@
       "synonyms": [
         "GSBP"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "biodiversitaet",
+        "globale-wirkungsordnung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -16852,7 +17272,7 @@
       "relatedTerms": [
         "wirkung",
         "wirkungspotenzial",
-        "wirkungspfad",
+        "wirkpfad",
         "wirkungsbewertung",
         "handlungspfad"
       ],
@@ -16975,7 +17395,7 @@
         "Massnahmenpfad"
       ],
       "relatedTerms": [
-        "wirkungspfad",
+        "wirkpfad",
         "handlung",
         "folgencheck",
         "wirkungsraum"
@@ -17143,7 +17563,10 @@
       "synonyms": [
         "Haushaltsblindleistung"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "staatsfinanzielle-wirkungsblindheit",
+        "wirkungsdefizit"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -17187,7 +17610,10 @@
       "synonyms": [
         "Haushaltsverlustleistung"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "negative-wirkung",
+        "oeffentliche-netto-wirkung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -17204,7 +17630,10 @@
       "synonyms": [
         "Haushaltswashing"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "wirkungswashing",
+        "haushaltswirkleistung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -17221,7 +17650,10 @@
       "synonyms": [
         "Haushaltswirkleistung"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "positive-netto-wirkung",
+        "oeffentliche-netto-wirkung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -17344,7 +17776,7 @@
       "relatedTerms": [
         "hebelwirkung",
         "wirkungsrueckkopplung",
-        "wirkungspfad",
+        "wirkpfad",
         "wirkungssteuer",
         "wirkungslenkung",
         "transformationswirkung",
@@ -17375,7 +17807,7 @@
       "relatedTerms": [
         "hebelpunkt",
         "wirkungsrueckkopplung",
-        "wirkungspfad",
+        "wirkpfad",
         "positive-netto-wirkung"
       ],
       "relatedMethods": [],
@@ -17464,7 +17896,10 @@
       "synonyms": [
         "Heizhammer"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "kommunale-waermeplanung",
+        "framing"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -17481,7 +17916,10 @@
       "synonyms": [
         "Heizkostenrisiko"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "energetische-sanierung",
+        "energiearmut"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -18010,7 +18448,14 @@
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [
-        "[object Object]",
+        {
+          "label": "Wirkungsökonomie Glossar",
+          "href": "../../glossar.html"
+        },
+        {
+          "label": "Referenz / Online-Buch",
+          "href": "../../referenz/"
+        },
         "die-neue-ordnung-des-wohlstands",
         "systemmodell-der-wirkungsoekonomie",
         "leitbild-mensch-planet-demokratie"
@@ -18256,6 +18701,37 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "hybride-kriegsfuehrung": {
+      "label": "Hybride Einflussnahme und Kriegsführung",
+      "slug": "hybride-kriegsfuehrung",
+      "url": "/begriffe/hybride-kriegsfuehrung/",
+      "hoverDefinition": "Hybride Einflussnahme und Kriegsführung bezeichnet die koordinierte Nutzung verschiedener Mittel, um Sicherheit, Entscheidungsfähigkeit oder Vertrauen zu beeinflussen oder zu destabilisieren.",
+      "shortDefinition": "Hybride Einflussnahme und Kriegsführung bezeichnet die koordinierte Nutzung verschiedener Mittel, um Sicherheit, Entscheidungsfähigkeit oder Vertrauen zu beeinflussen oder zu destabilisieren.",
+      "category": "Sicherheits- und Risikobegriff",
+      "synonyms": [
+        "Hybride Einflussnahme und Kriegsführung",
+        "hybride Kriegsführung",
+        "Hybride Kriegsfuehrung",
+        "hybride Bedrohungen",
+        "Hybrid Warfare",
+        "hybride Einflussnahme"
+      ],
+      "relatedTerms": [
+        "desinformation",
+        "resonanzraum",
+        "demokratische-resilienz",
+        "cyberresilienz",
+        "medienvertrauen",
+        "plattformregulierung",
+        "globale-makro-wirkungsrisiken",
+        "wirkungsrisiko"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "hybridregime": {
       "label": "Hybridregime",
       "slug": "hybridregime",
@@ -18379,7 +18855,10 @@
       "synonyms": [
         "Identitätsschutz-Kognition"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "kognitive-dissonanz",
+        "status-threat"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -18423,7 +18902,10 @@
       "synonyms": [
         "IEA"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "energie",
+        "energiesicherheit"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -18532,7 +19014,10 @@
       "synonyms": [
         "Immobilien"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "bestandsimmobilie",
+        "gebaeude-und-immobilienstandards"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -18598,7 +19083,10 @@
       "synonyms": [
         "Impact Investing"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "impact-of-investment",
+        "t-sroi"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -18840,8 +19328,8 @@
       "label": "Impact-of-Investment / IOI",
       "slug": "impact-of-investment",
       "url": "/begriffe/impact-of-investment/",
-      "hoverDefinition": "Impact-of-Investment (IOI) misst die bewertete positive Netto-Wirkung pro investiertem Kapital. Er ist die investitionsbezogene Variante eines wirkungsökonomischen Wirkungsgrads.",
-      "shortDefinition": "Impact-of-Investment (IOI) misst die bewertete positive Netto-Wirkung pro investiertem Kapital. Er ist die investitionsbezogene Variante eines wirkungsökonomischen Wirkungsgrads.",
+      "hoverDefinition": "Impact-of-Investment (IOI) misst den monetär bewerteten, kausal zugerechneten direkten Nettonutzen je diskontiertem Euro an investiertem Kapital. Er ist eine investitionsbezogene Kennzahl und kein Ersatz für die Schutzprüfung.",
+      "shortDefinition": "Impact-of-Investment (IOI) misst den monetär bewerteten, kausal zugerechneten direkten Nettonutzen je diskontiertem Euro an investiertem Kapital. Er ist eine investitionsbezogene Kennzahl und kein Ersatz für die Schutzprüfung.",
       "category": "Messbegriff",
       "synonyms": [
         "Impact-of-Investment / IOI",
@@ -18907,7 +19395,7 @@
       "relatedTerms": [
         "greenwashing",
         "sdg-washing",
-        "wirkungspfad",
+        "wirkpfad",
         "datenqualitaet",
         "folgencheck",
         "green-claims-directive",
@@ -18947,10 +19435,9 @@
         "destruktives-narrativ",
         "vertrauensverschiebung",
         "xenophobie",
-        "ingroup-outgroup-dynamik",
         "outgroup-homogenitaet",
         "resonanzraum",
-        "kontakt-hypothese"
+        "kontakthypothese"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -18988,7 +19475,10 @@
       "synonyms": [
         "Industriestrom"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "energieinfrastruktur",
+        "energieeffizienz"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -19026,7 +19516,10 @@
       "synonyms": [
         "Inflationsgrenze"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "realressourcengrenze",
+        "mmt"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -19078,6 +19571,32 @@
         "demokratische-oeffentlichkeit",
         "demokratische-resilienz",
         "paltering"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "informationssouveraenitaet": {
+      "label": "Informationssouveränität",
+      "slug": "informationssouveraenitaet",
+      "url": "/begriffe/informationssouveraenitaet/",
+      "hoverDefinition": "Informationssouveränität verbindet verständliche Information, eigene Entscheidung und Schutz persönlicher Daten.",
+      "shortDefinition": "Informationssouveränität ist der geschützte Spielraum, Informationen kritisch zu nutzen und über die Preisgabe eigener Daten mitzuentscheiden.",
+      "category": "Daten, Medien & Demokratie",
+      "synonyms": [
+        "Informationssouveränität",
+        "informationelle Souveränität",
+        "Souveränität über Informationen"
+      ],
+      "relatedTerms": [
+        "digitale-selbstbestimmung",
+        "datenschutz",
+        "medienqualitaet",
+        "wirkungsdaten",
+        "grundrechte",
+        "reichweite"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -19154,7 +19673,10 @@
       "synonyms": [
         "Infraschall"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "windenergie",
+        "messgrenzen-und-unsicherheit"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -19171,7 +19693,10 @@
       "synonyms": [
         "Infrastrukturelle Staatsschuld"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "investitionsschuld",
+        "nicht-finanzielle-staatsschulden"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -19462,7 +19987,10 @@
       "synonyms": [
         "Integration als Infrastruktur"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "kommunale-integrationskapazitaet",
+        "soziale-infrastruktur"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -19581,6 +20109,31 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "interdisziplinaritaet": {
+      "label": "Interdisziplinarität",
+      "slug": "interdisziplinaritaet",
+      "url": "/begriffe/interdisziplinaritaet/",
+      "hoverDefinition": "Interdisziplinär heißt nicht: viele Fachlabels auf einem Deckblatt. Es heißt: eine gemeinsame Frage und nachvollziehbar zusammengeführtes Wissen.",
+      "shortDefinition": "Interdisziplinarität ist die Zusammenarbeit verschiedener Fachgebiete an einer gemeinsamen Frage, bei der Wissen und Methoden wirklich zusammengeführt werden.",
+      "category": "Wissen, Forschung & Methodik",
+      "synonyms": [
+        "Interdisziplinarität",
+        "interdisziplinäre Zusammenarbeit",
+        "fachübergreifende Zusammenarbeit"
+      ],
+      "relatedTerms": [
+        "mensch-planet-demokratie",
+        "wirkungsarchitektur",
+        "wirkungsbewertung",
+        "wirkung",
+        "wissenschaftsfeindlichkeit"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "interessenkonflikt": {
       "label": "Interessenkonflikt",
       "slug": "interessenkonflikt",
@@ -19638,7 +20191,7 @@
       "relatedTerms": [
         "rage-bait",
         "empoerungsbewirtschaftung",
-        "plattformlogik",
+        "plattformlogik-und-algorithmen",
         "soziale-ansteckung"
       ],
       "relatedMethods": [],
@@ -19753,7 +20306,10 @@
       "synonyms": [
         "Internationale Zusammenarbeit"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "globale-oeffentliche-gueter",
+        "globale-wirkungsordnung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -19978,7 +20534,10 @@
       "synonyms": [
         "ISO / DIN / EN"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "managementsystemstandards",
+        "datenstandard"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -20572,7 +21131,10 @@
       "synonyms": [
         "Kapitalzugang"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "entwicklungskredit",
+        "wirkungsfonds"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -20655,7 +21217,10 @@
       "synonyms": [
         "Kausalität und Zurechnung"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "wirkungszurechnung",
+        "wirkpfad"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -21127,7 +21692,10 @@
       "synonyms": [
         "Kinderarbeit / Zwangsarbeit"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "menschenrechte-in-der-lieferkette",
+        "ilo-kernarbeitsnormen"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -21204,7 +21772,7 @@
       ],
       "relatedTerms": [
         "wirkungsrisiko",
-        "wirkungspfad",
+        "wirkpfad",
         "wirkungsresilienz"
       ],
       "relatedMethods": [],
@@ -21291,7 +21859,10 @@
       "synonyms": [
         "Klima- und Emissionsstandards"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "thg-emissions-scopes",
+        "treibhausgasemissionen"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -21721,7 +22292,10 @@
       "synonyms": [
         "Kommunale Integrationskapazität"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "integration-als-infrastruktur",
+        "soziale-infrastruktur"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -21738,7 +22312,10 @@
       "synonyms": [
         "Kommunale Wärmeplanung"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "waermewende",
+        "kommunale-energie"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -21798,8 +22375,7 @@
         "wirkpfad",
         "wirkungspotenzial",
         "oeffentlichkeit",
-        "diskurskultur",
-        "wirkungspfad"
+        "diskurskultur"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -21811,13 +22387,20 @@
       "label": "Kommunikative Souveränität",
       "slug": "kommunikative-souveraenitaet",
       "url": "/begriffe/kommunikative-souveraenitaet/",
-      "hoverDefinition": "Souveränität heißt nicht Dominanz. Sie heißt: Frame halten, Mechanismus erkennen, Wirkung klären.",
-      "shortDefinition": "Fähigkeit, in einer Debatte ruhig zu bleiben, den Frame zu erkennen, den Mechanismus sichtbar zu machen und zur Wirkungsfrage zurückzuführen.",
+      "hoverDefinition": "Souverän heißt nicht lauter. Es heißt: den Faden behalten, die Frage klären und nichts behaupten, was man nicht zeigen kann.",
+      "shortDefinition": "Kommunikative Souveränität ist die Fähigkeit, in einer strittigen Situation Person, Behauptung, Beleg, Unsicherheit und Folgen getrennt und ruhig besprechbar zu halten.",
       "category": "Psychologie und Resonanz",
       "synonyms": [
-        "Kommunikative Souveränität"
+        "Kommunikative Souveränität",
+        "souveräne Gesprächsführung"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "framekontrolle",
+        "psychologischer_wirkungscheck",
+        "metakommunikation",
+        "reaktanz",
+        "wirkungskommunikation"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -22115,7 +22698,10 @@
       "synonyms": [
         "Konsumbilanz"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "produktwirkung",
+        "territorialbilanz"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -22177,9 +22763,8 @@
         "Guilt by Association"
       ],
       "relatedTerms": [
-        "kontaktschuld",
-        "derailing",
-        "ingroup-bias",
+        "derailing-themenverschiebung",
+        "ingroup-outgroup-dynamik",
         "diskursfaehigkeit"
       ],
       "relatedMethods": [],
@@ -22250,7 +22835,10 @@
       "synonyms": [
         "Kontraindikation"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "wirkungsrisiko",
+        "rote-linien"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -22267,7 +22855,10 @@
       "synonyms": [
         "Kontrollbedürfnis"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "ambiguitaetsintoleranz",
+        "risikomanagement"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -22404,7 +22995,10 @@
       "synonyms": [
         "KPI"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "key-impact-indicator",
+        "impact-controlling"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -22443,7 +23037,10 @@
       "synonyms": [
         "Kraftwerks-Nettoleistung"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "gesicherte-leistung",
+        "energieinfrastruktur"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -22821,7 +23418,14 @@
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [
-        "[object Object]",
+        {
+          "label": "Wirkungsökonomie Glossar",
+          "href": "../../glossar.html"
+        },
+        {
+          "label": "Referenz / Online-Buch",
+          "href": "../../referenz/"
+        },
         "die-neue-ordnung-des-wohlstands",
         "systemmodell-der-wirkungsoekonomie",
         "leitbild-mensch-planet-demokratie"
@@ -23083,7 +23687,10 @@
       "synonyms": [
         "Label / Siegel"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "nachhaltigkeitslabel",
+        "labelwashing"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -23100,7 +23707,10 @@
       "synonyms": [
         "Labelwashing"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "label",
+        "greenwashing"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -23117,7 +23727,10 @@
       "synonyms": [
         "Lächerlichkeitsframe"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "framing",
+        "diskurskultur"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -23134,7 +23747,10 @@
       "synonyms": [
         "Ladeangst"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "ladeinfrastruktur",
+        "ladefenster"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -23172,7 +23788,10 @@
       "synonyms": [
         "Ladefenster"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "dynamischer-stromtarif",
+        "ladeangst"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -24035,6 +24654,33 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "lernende-systeme": {
+      "label": "Lernende Systeme",
+      "slug": "lernende-systeme",
+      "url": "/begriffe/lernende-systeme/",
+      "hoverDefinition": "Nicht jede Automatisierung lernt. Ein lernendes System braucht eine nachvollziehbare Daten-, Prüf- und Korrekturlogik.",
+      "shortDefinition": "Lernende Systeme nutzen Daten oder Rückmeldung, um ein Modell oder ihr Verhalten für eine Aufgabe anzupassen.",
+      "category": "Daten, KI & Governance",
+      "synonyms": [
+        "Lernende Systeme",
+        "lernendes System",
+        "adaptive Systeme",
+        "Machine Learning Systeme"
+      ],
+      "relatedTerms": [
+        "kuenstliche-intelligenz",
+        "wirkungsdaten",
+        "datenqualitaet",
+        "datenschutz",
+        "digitale-selbstbestimmung",
+        "attributionsfehler"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "lernender-unternehmer": {
       "label": "Lernender Unternehmer",
       "slug": "lernender-unternehmer",
@@ -24381,7 +25027,10 @@
       "synonyms": [
         "Lieferkettenrisiko"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "lieferkettenwirkung",
+        "menschenrechte-in-der-lieferkette"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -24643,7 +25292,10 @@
       "synonyms": [
         "Living Wage / existenzsichernder Lohn"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "sozial-arbeits-und-menschenrechtsstandards",
+        "lohnabstand"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -24768,7 +25420,10 @@
       "synonyms": [
         "Lock-in-Effekt"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "pfadabhaengigkeit",
+        "verbrenner-lock-in"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -24785,7 +25440,10 @@
       "synonyms": [
         "Lohnabstand"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "arbeitsanreiz",
+        "sozialabgaben"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -24850,31 +25508,6 @@
       "relatedDocuments": [
         "die-neue-ordnung-des-wohlstands"
       ],
-      "relatedObjections": []
-    },
-    "oeffentlichkeit-als-wirkungsraum": {
-      "label": "Öffentlichkeit als Wirkungsraum",
-      "slug": "oeffentlichkeit-als-wirkungsraum",
-      "url": "/begriffe/oeffentlichkeit-als-wirkungsraum/",
-      "hoverDefinition": "Lokale Energie als Wirkungsinfrastruktur beschreibt erneuerbare, dezentrale und gemeinschaftlich organisierte Energieversorgung als Teil gesellschaftlicher Grundversorgung. Energie wird nicht nur als Ware betrachtet, sondern als Bedingung für Teilhabe, Gesundheit, Bildung, Pflege, digitale Infrastruktur, Klimaschutz und demokratische Resilienz.",
-      "shortDefinition": "Lokale Energie als Wirkungsinfrastruktur beschreibt erneuerbare, dezentrale und gemeinschaftlich organisierte Energieversorgung als Teil gesellschaftlicher Grundversorgung. Energie wird nicht nur als Ware betrachtet, sondern als Bedingung für Teilhabe, Gesundheit, Bildung, Pflege, digitale Infrastruktur, Klimaschutz und demokratische Resilienz.",
-      "category": "Grundbegriff",
-      "synonyms": [
-        "Öffentlichkeit als Wirkungsraum",
-        "öffentliche Wirkung",
-        "öffentliche Resonanzräume",
-        "Öffentlichkeit als Resonanzraum",
-        "demokratische Öffentlichkeit",
-        "Medienöffentlichkeit als Wirkungsraum",
-        "digitale Öffentlichkeit",
-        "public sphere as impact space",
-        "öffentlicher Wirkungsraum"
-      ],
-      "relatedTerms": [],
-      "relatedMethods": [],
-      "relatedImpactFields": [],
-      "relatedDemos": [],
-      "relatedDocuments": [],
       "relatedObjections": []
     },
     "ludwig-erhard": {
@@ -25180,7 +25813,10 @@
       "synonyms": [
         "Managementsystemstandards"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "iso",
+        "risikomanagement"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -25740,6 +26376,32 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "medienvertrauen": {
+      "label": "Medienvertrauen",
+      "slug": "medienvertrauen",
+      "url": "/begriffe/medienvertrauen/",
+      "hoverDefinition": "Medienvertrauen ist eine Haltung von Publikumsteilen. Es beweist weder Wahrheit noch Qualität.",
+      "shortDefinition": "Medienvertrauen ist die kontextabhängige Erwartung, dass ein Medium Informationen zuverlässig, fair und nachvollziehbar vermittelt.",
+      "category": "Medien & Öffentlichkeit",
+      "synonyms": [
+        "Medienvertrauen",
+        "Vertrauen in Nachrichten",
+        "News Trust"
+      ],
+      "relatedTerms": [
+        "medienqualitaet",
+        "medienfreiheit",
+        "reichweite",
+        "diskursqualitaet",
+        "faktencheck",
+        "wirkung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "megawatt-charging-system": {
       "label": "Megawatt Charging System / MCS",
       "slug": "megawatt-charging-system",
@@ -25772,7 +26434,10 @@
       "synonyms": [
         "Megawattladen"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "schnellladen",
+        "ladeinfrastruktur"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -25910,7 +26575,10 @@
       "synonyms": [
         "Menschenrechte in der Lieferkette"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "kinderarbeit",
+        "lieferkettenrisiko"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -25995,8 +26663,8 @@
       "label": "Merit Order",
       "slug": "merit-order",
       "url": "/begriffe/merit-order/",
-      "hoverDefinition": "Merit Order beschreibt die Einsatzreihenfolge von Stromerzeugungsanlagen nach Grenzkosten.",
-      "shortDefinition": "Merit Order beschreibt die Einsatzreihenfolge von Stromerzeugungsanlagen nach Grenzkosten.",
+      "hoverDefinition": "Die Merit Order ordnet Stromangebote in einer Reihenfolge; Markträumung und Grenzpreisverfahren bestimmen daraus den Day-Ahead-Preis.",
+      "shortDefinition": "Die Merit Order bezeichnet im ökonomischen Grundmodell die Reihenfolge, in der verfügbare Stromerzeugungs- und Flexibilitätsangebote zur Deckung der Nachfrage herangezogen werden: zuerst die Angebote mit den niedrigsten kurzfristigen Grenzkosten, danach die teureren. In der realen Day-Ahead-Auktion sind jedoch die abgegebenen Verkaufs- und Kaufgebote samt ihren Bedingungen maßgeblich. Erst die Markträumung und das Grenzpreisverfahren machen daraus einen Börsenpreis für eine Gebotszone und ein Marktzeitintervall.",
       "category": "Energie, Strommarkt und Systemkosten",
       "synonyms": [
         "Merit Order"
@@ -26004,7 +26672,12 @@
       "relatedTerms": [
         "grenzkosten",
         "grenzkraftwerk",
-        "strommarkt"
+        "strommarkt",
+        "strommarktdesign",
+        "systemkosten",
+        "regelenergie",
+        "externalitaet",
+        "reverse-merit-order"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -26407,7 +27080,10 @@
       "synonyms": [
         "Misalignment Year"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "crrem",
+        "klimaneutralitaet"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -26496,7 +27172,10 @@
       "synonyms": [
         "MMT"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "endogenes-geld",
+        "functional-finance"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -26691,11 +27370,44 @@
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [
-        "[object Object]",
+        {
+          "label": "Wirkungsökonomie Glossar",
+          "href": "../../glossar.html"
+        },
+        {
+          "label": "Referenz / Online-Buch",
+          "href": "../../referenz/"
+        },
         "die-neue-ordnung-des-wohlstands",
         "systemmodell-der-wirkungsoekonomie",
         "leitbild-mensch-planet-demokratie"
       ],
+      "relatedObjections": []
+    },
+    "moderationsstandards": {
+      "label": "Moderationsstandards",
+      "slug": "moderationsstandards",
+      "url": "/begriffe/moderationsstandards/",
+      "hoverDefinition": "Gute Moderationsstandards erklären Kriterien, Entscheidungen und Beschwerdewege – sie sortieren keine politischen Meinungen nach Gefallen.",
+      "shortDefinition": "Moderationsstandards sind veröffentlichte Regeln und Verfahren für den fairen Umgang mit Beiträgen, Meldungen und Beschwerden in Kommunikationsräumen.",
+      "category": "Daten, Medien & Demokratie",
+      "synonyms": [
+        "Moderationsstandards",
+        "Standards der Inhaltsmoderation",
+        "Moderationsregeln"
+      ],
+      "relatedTerms": [
+        "plattformregulierung",
+        "datenschutz",
+        "digitale-selbstbestimmung",
+        "grundrechte",
+        "diskursqualitaet",
+        "reichweite"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
       "relatedObjections": []
     },
     "moderner-patriotismus": {
@@ -26763,7 +27475,10 @@
       "synonyms": [
         "Molekül-Hierarchie"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "wasserstoff-hierarchie",
+        "energieeffizienz"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -26800,7 +27515,10 @@
       "synonyms": [
         "Monetäre Souveränität"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "endogenes-geld",
+        "mmt"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -26931,7 +27649,7 @@
         "angstappell",
         "suendenbockmechanismus",
         "verfuegbarkeitsheuristik",
-        "false-urgency"
+        "false-urgency-kuenstliche-dringlichkeit"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -27028,7 +27746,10 @@
       "synonyms": [
         "MSCI ESG Ratings"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "esg-rating",
+        "sustainability-benchmarking"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -27134,7 +27855,6 @@
         "eu-taxonomie",
         "stranded-assets",
         "sechster-kondratieff",
-        "nachhaltigkeit",
         "resilienz",
         "systemresilienz",
         "sdgs",
@@ -27407,7 +28127,10 @@
       "synonyms": [
         "Natur-, Landwirtschafts- und Biodiversitätsstandards"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "biodiversitaet",
+        "regenerative-landwirtschaft"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -27480,7 +28203,7 @@
         "habitatfragmentierung",
         "habitatverlust",
         "ipbes",
-        "oekosystemleistungen"
+        "oekosystemleistungen-oekosystemfunktionen"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -27543,7 +28266,10 @@
       "synonyms": [
         "Nebenwirkung"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "folgewirkung",
+        "wirkungsrisiko"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -27712,7 +28438,10 @@
       "synonyms": [
         "Neoklassische Förderlogik"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "foerderlogik",
+        "wirkungsfinanzierung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -27839,7 +28568,18 @@
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [
-        "[object Object]"
+        {
+          "label": "Die neue Ordnung des Wohlstands",
+          "href": "../../referenz/"
+        },
+        {
+          "label": "Grundlagenpapier Wirkungsökonomie",
+          "href": "../../dokumente/grundlagenpapier-wirkungsoekonomie-woek/"
+        },
+        {
+          "label": "Leitbild Mensch, Planet und Demokratie",
+          "href": "../../dokumente/leitbild-mensch-planet-demokratie/"
+        }
       ],
       "relatedObjections": []
     },
@@ -27902,7 +28642,10 @@
       "synonyms": [
         "Nettokreditaufnahme"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "bruttokreditaufnahme",
+        "refinanzierung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -28599,7 +29342,7 @@
         "zielkonflikt",
         "biodiversity-net-gain-no-net-loss",
         "carbon-credits",
-        "dnsh",
+        "dnsh-do-no-significant-harm",
         "forced-labour-regulation",
         "offsetting-kompensation",
         "social-taxonomy",
@@ -28756,7 +29499,10 @@
       "synonyms": [
         "Nie-eingezahlt-Narrativ"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "sozialstaats-suendenbock",
+        "erwerbsarbeitslogik"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -28904,7 +29650,10 @@
       "synonyms": [
         "No-Regret-Anwendung"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "wirkungsrisikomanagement",
+        "vorsorgeprinzip"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -29093,8 +29842,6 @@
         "sdg-plus",
         "sdgs",
         "agenda-2030",
-        "voelkerrecht-und-menschenrechte",
-        "europaeisches-primaerrecht-und-grundrechte",
         "staatsziele-und-verfassungsauftraege",
         "grundgesetz",
         "rechtsstaatlichkeit",
@@ -29117,7 +29864,10 @@
       "synonyms": [
         "Normativer Maßstab"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "sdg-sdgplus-referenzrahmen",
+        "wirkungsbewertung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -29222,7 +29972,10 @@
       "synonyms": [
         "Nullsummenfehler"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "interdependenz",
+        "wohlstand-als-systemzustand"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -29372,7 +30125,10 @@
       "synonyms": [
         "OECD"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "oecd-leitsaetze",
+        "wellbeing-economy"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -29520,7 +30276,10 @@
       "synonyms": [
         "Öffentliche Finanzen, Schulden und Wirkung"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "wirkungsfinanzierung",
+        "oeffentliche-netto-wirkung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -29561,7 +30320,10 @@
       "synonyms": [
         "Öffentliche Netto-Wirkung"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "netto-wirkung",
+        "mensch-planet-demokratie"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -29801,6 +30563,44 @@
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "oeffentlichkeit-als-wirkungsraum": {
+      "label": "Öffentlichkeit als Wirkungsraum",
+      "slug": "oeffentlichkeit-als-wirkungsraum",
+      "url": "/begriffe/oeffentlichkeit-als-wirkungsraum/",
+      "hoverDefinition": "Öffentlichkeit als Wirkungsraum beschreibt den pluralistischen Kommunikationsraum, in dem Informationen und Deutungen Wirkungspotenziale entfalten können.",
+      "shortDefinition": "Öffentlichkeit als Wirkungsraum ist der pluralistische, grundrechtsgebundene Raum, in dem Informationen, Deutungen und Aushandlungen Handlungsmöglichkeiten, Vertrauen und institutionelle Entscheidungen beeinflussen können.",
+      "category": "Demokratiebegriff",
+      "synonyms": [
+        "Öffentlichkeit als Wirkungsraum",
+        "öffentliche Wirkung",
+        "öffentliche Resonanzräume",
+        "Öffentlichkeit als Resonanzraum",
+        "demokratische Öffentlichkeit",
+        "Medienöffentlichkeit als Wirkungsraum",
+        "digitale Öffentlichkeit",
+        "public sphere as impact space",
+        "öffentlicher Wirkungsraum"
+      ],
+      "relatedTerms": [
+        "resonanzraum",
+        "wirkungspotenzial",
+        "wirkpfad",
+        "wirkmechanismus",
+        "diskursfaehigkeit",
+        "informationsintegritaet",
+        "demokratie"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        {
+          "label": "Öffentlicher Wirkungsraum",
+          "href": "../../oeffentlicher-wirkungsraum/"
+        }
+      ],
       "relatedObjections": []
     },
     "offsetting-kompensation": {
@@ -30459,7 +31259,6 @@
         "walter-eucken",
         "wirkungsrecht",
         "rechtsstaatlichkeit",
-        "ordoliberalismus",
         "wettbewerb-als-suchverfahren",
         "wirkungsstaat"
       ],
@@ -30592,7 +31391,10 @@
       "synonyms": [
         "Outcome"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "output",
+        "wirkung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -30603,8 +31405,8 @@
       "label": "Outcome- und Empfängerlandkarte",
       "slug": "outcome-und-empfaengerlandkarte",
       "url": "/begriffe/outcome-und-empfaengerlandkarte/",
-      "hoverDefinition": "Verhaltens-, Beziehungs-, Praxis- und Zustandsveränderungen bei konkreten Wirkungsempfängern statt nur organisationsinterne Outputs planen.",
-      "shortDefinition": "Verhaltens-, Beziehungs-, Praxis- und Zustandsveränderungen bei konkreten Wirkungsempfängern statt nur organisationsinterne Outputs planen.",
+      "hoverDefinition": "Die Outcome- und Empfängerlandkarte plant Verhaltens-, Beziehungs-, Praxis- und Zustandsveränderungen bei konkreten Wirkungsempfängern, statt allein organisationsinterne Leistungen zu zählen.",
+      "shortDefinition": "Die Outcome- und Empfängerlandkarte plant Verhaltens-, Beziehungs-, Praxis- und Zustandsveränderungen bei konkreten Wirkungsempfängern, statt allein organisationsinterne Leistungen zu zählen.",
       "category": "WÖMS Methodensystem",
       "synonyms": [
         "Outcome- und Empfängerlandkarte"
@@ -30681,7 +31483,10 @@
       "synonyms": [
         "Output"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "outcome",
+        "wirkung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -31245,6 +32050,35 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "personenbewertung": {
+      "label": "Personenbewertung",
+      "slug": "personenbewertung",
+      "url": "/begriffe/personenbewertung/",
+      "hoverDefinition": "Die Wirkungsökonomie bewertet keine Menschen, Gesinnungen oder Lebensstile. Sie prüft Wirkungen von Regeln, Produkten, Organisationen und Programmen.",
+      "shortDefinition": "Personenbewertung ordnet einzelne Menschen nach Verhalten, Merkmalen, Ansichten oder vermuteter Konformität ein. Sie ist kein Instrument der Wirkungsökonomie.",
+      "category": "Schutzbegriff",
+      "synonyms": [
+        "Personenbewertung",
+        "Personenscore",
+        "Verhaltensscore"
+      ],
+      "relatedTerms": [
+        "social-credit",
+        "wirkungspunkte",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "datenschutz",
+        "grundrechte",
+        "verhaeltnismaessigkeit",
+        "rechtsschutz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "pessimismus-bias": {
       "label": "Pessimismus-Bias",
       "slug": "pessimismus-bias",
@@ -31659,7 +32493,10 @@
       "synonyms": [
         "Planet"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "biodiversitaet",
+        "planetare-grenzen"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -31752,7 +32589,10 @@
       "synonyms": [
         "Platform on Sustainable Finance"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "eu-taxonomie",
+        "taxonomy-compass"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -31972,11 +32812,44 @@
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [
-        "[object Object]",
+        {
+          "label": "Wirkungsökonomie Glossar",
+          "href": "../../glossar.html"
+        },
+        {
+          "label": "Referenz / Online-Buch",
+          "href": "../../referenz/"
+        },
         "die-neue-ordnung-des-wohlstands",
         "systemmodell-der-wirkungsoekonomie",
         "leitbild-mensch-planet-demokratie"
       ],
+      "relatedObjections": []
+    },
+    "plattformregulierung": {
+      "label": "Plattformregulierung",
+      "slug": "plattformregulierung",
+      "url": "/begriffe/plattformregulierung/",
+      "hoverDefinition": "Plattformregulierung schützt Rechte und faire Verfahren. Sie ist keine staatliche Fernbedienung einzelner Meinungen.",
+      "shortDefinition": "Plattformregulierung sind rechtsstaatliche Regeln und Aufsicht für Plattformen, etwa zu Transparenz, Daten, Werbung, Empfehlungssystemen und Beschwerden.",
+      "category": "Daten, Medien & Demokratie",
+      "synonyms": [
+        "Plattformregulierung",
+        "Regulierung digitaler Plattformen",
+        "Plattform-Governance"
+      ],
+      "relatedTerms": [
+        "moderationsstandards",
+        "datenschutz",
+        "digitale-selbstbestimmung",
+        "grundrechte",
+        "plattformlogik-und-algorithmen",
+        "diskursqualitaet"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
       "relatedObjections": []
     },
     "plug-and-charge": {
@@ -32663,7 +33536,18 @@
         "verstehen/sdgs-sdgplus/risiko-resilienzregister/",
         "blog/das-managementmodell-der-zukunft/",
         "sdg-sdgplus-referenzrahmen",
-        "[object Object]",
+        {
+          "label": "Die neue Ordnung des Wohlstands",
+          "href": "../../referenz/"
+        },
+        {
+          "label": "Grundlagenpapier Wirkungsökonomie",
+          "href": "../../dokumente/grundlagenpapier-wirkungsoekonomie-woek/"
+        },
+        {
+          "label": "Leitbild Mensch, Planet und Demokratie",
+          "href": "../../dokumente/leitbild-mensch-planet-demokratie/"
+        },
         "impact-strategie-controlling-marketing-management-einkauf-chemieindustrie"
       ],
       "relatedObjections": []
@@ -32846,7 +33730,10 @@
       "synonyms": [
         "Prävention als Wirkleistung"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "praevention",
+        "folgekostenvermeidung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -33132,7 +34019,10 @@
       "synonyms": [
         "Privathaushaltsmythos"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "mmt",
+        "privatkredit-frame"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -33171,7 +34061,10 @@
       "synonyms": [
         "Privatkredit-Frame"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "privathaushaltsmythos",
+        "monetaere-souveraenitaet"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -33391,7 +34284,10 @@
       "synonyms": [
         "Produkt-, Umwelt- und Kreislauflabels"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "label",
+        "produktwirkung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -33494,7 +34390,18 @@
       ],
       "relatedDemos": [],
       "relatedDocuments": [
-        "[object Object]"
+        {
+          "label": "Wirkungsökonomie Glossar",
+          "href": "../../glossar.html"
+        },
+        {
+          "label": "Wirkungsfeld Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        },
+        {
+          "label": "Referenz / Online-Buch",
+          "href": "../../referenz/"
+        }
       ],
       "relatedObjections": []
     },
@@ -33696,7 +34603,18 @@
       ],
       "relatedDemos": [],
       "relatedDocuments": [
-        "[object Object]"
+        {
+          "label": "Die neue Ordnung des Wohlstands",
+          "href": "../../referenz/"
+        },
+        {
+          "label": "Technische Leitlinien WUStG",
+          "href": "../../dokumente/technische-leitlinien-wustg-v2/"
+        },
+        {
+          "label": "Wirkungsfeld Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        }
       ],
       "relatedObjections": []
     },
@@ -33758,7 +34676,18 @@
       ],
       "relatedDemos": [],
       "relatedDocuments": [
-        "[object Object]"
+        {
+          "label": "Die neue Ordnung des Wohlstands",
+          "href": "../../referenz/"
+        },
+        {
+          "label": "Technische Leitlinien WUStG",
+          "href": "../../dokumente/technische-leitlinien-wustg-v2/"
+        },
+        {
+          "label": "Wirkungsfeld Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        }
       ],
       "relatedObjections": []
     },
@@ -33870,8 +34799,8 @@
         "Projektions-Bias"
       ],
       "relatedTerms": [
-        "false-consensus",
-        "ingroup-bias",
+        "false-consensus-effect",
+        "ingroup-outgroup-dynamik",
         "partizipation",
         "wirkungsempfaenger"
       ],
@@ -34063,13 +34992,20 @@
       "label": "Psychologischer Wirkungscheck",
       "slug": "psychologischer-wirkungscheck",
       "url": "/begriffe/psychologischer-wirkungscheck/",
-      "hoverDefinition": "Der psychologische Wirkungscheck fragt: Warum bleibt diese Aussage hängen, welche Reaktion soll sie auslösen, und wie führt man zur Wirkungsfrage zurück?",
-      "shortDefinition": "Analyse, welche kognitiven Effekte, emotionalen Trigger und Gesprächsmuster eine Aussage aktiviert.",
+      "hoverDefinition": "Der Check fragt nicht: „Was ist mit Menschen los?“ Sondern: „Was kann diese Aussage hier auslösen – und woran würden wir es erkennen?“",
+      "shortDefinition": "Der psychologische Wirkungscheck prüft als Hypothese, welche Aufmerksamkeit, Deutung, Gefühle oder Reaktionen eine Aussage oder Maßnahme in einem bestimmten Kontext auslösen könnte.",
       "category": "Psychologie und Resonanz",
       "synonyms": [
-        "Psychologischer Wirkungscheck"
+        "Psychologischer Wirkungscheck",
+        "psychologischer Folgencheck"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "debiasing",
+        "resonanzprofil",
+        "framing",
+        "reaktanz",
+        "sprachlicher-trigger"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -34080,13 +35016,20 @@
       "label": "Psychologisches Stöckchen",
       "slug": "psychologisches-stoeckchen",
       "url": "/begriffe/psychologisches-stoeckchen/",
-      "hoverDefinition": "Ein psychologisches Stöckchen setzt oft einen Frame, verdreht die Beweislast oder springt von Thema zu Thema.",
-      "shortDefinition": "Aussage oder Frage, die weniger klären soll, sondern eine emotionale oder defensive Reaktion auslösen will.",
+      "hoverDefinition": "Das Stöckchen ist kein Etikett für Menschen. Es ist ein Warnschild für Sätze, die eine Reaktion auslösen können, bevor die Sache geprüft ist.",
+      "shortDefinition": "Ein psychologisches Stöckchen ist im WÖk-Glossar eine umgangssprachliche Bezeichnung für eine Formulierung, die eine Diskussion von der Sachfrage auf eine schnelle emotionale oder defensive Reaktion lenken kann.",
       "category": "Psychologie und Resonanz",
       "synonyms": [
-        "Psychologisches Stöckchen"
+        "Psychologisches Stöckchen",
+        "diskurslenkender Reiz"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "sprachlicher-trigger",
+        "psychologischer_wirkungscheck",
+        "framing",
+        "derailing-themenverschiebung",
+        "reaktanz"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -34103,7 +35046,10 @@
       "synonyms": [
         "PtL-Kraftstoff"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "elektrolyse",
+        "wasserstoff"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -34141,7 +35087,10 @@
       "synonyms": [
         "Public Purpose"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "public-purpose-finance",
+        "oeffentliche-netto-wirkung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -34158,7 +35107,10 @@
       "synonyms": [
         "Public Purpose Finance"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "public-purpose",
+        "wirkungsfinanzierung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -34324,7 +35276,10 @@
       "synonyms": [
         "Qualifikationsverlust"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "weiterbildung",
+        "uebergangstaetigkeit"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -35029,7 +35984,10 @@
       "synonyms": [
         "REACH"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "hazardous-substances",
+        "materialgesundheit"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -35122,7 +36080,10 @@
       "synonyms": [
         "Realressourcengrenze"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "inflationsgrenze",
+        "wirkungsspielraum"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -35631,7 +36592,7 @@
         "Red Herring"
       ],
       "relatedTerms": [
-        "derailing",
+        "derailing-themenverschiebung",
         "whataboutism",
         "strohmann",
         "wirkungsbewertung"
@@ -35745,7 +36706,10 @@
       "synonyms": [
         "Refinanzierung"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "bruttokreditaufnahme",
+        "nettokreditaufnahme"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -35847,12 +36811,11 @@
         "wirkungswahrheit",
         "wirkungsrueckkopplung",
         "positive-netto-wirkung",
-        "wirkungspfad",
+        "wirkpfad",
         "resonanzraum",
         "wirkungspotenzial",
         "wirkungsrisiko",
-        "agenda-setting",
-        "wirkpfad"
+        "agenda-setting"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -35894,7 +36857,10 @@
       "synonyms": [
         "Regelbasierte Ordnung"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "rechtsstaatlichkeit",
+        "globale-wirkungsordnung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -36037,7 +37003,6 @@
         "neukombination",
         "kreislaufwirtschaft",
         "positive-netto-wirkung",
-        "regeneratives-wachstum",
         "planetare-grenzen"
       ],
       "relatedMethods": [],
@@ -36187,6 +37152,33 @@
         "regulatory-capture",
         "wirkungssteuer",
         "deregulierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "reichweite": {
+      "label": "Reichweite",
+      "slug": "reichweite",
+      "url": "/begriffe/reichweite/",
+      "hoverDefinition": "Reichweite misst Verteilung oder Kontakt. Sie misst weder Aufmerksamkeit noch Wirkung.",
+      "shortDefinition": "Reichweite ist die Zahl oder der Anteil eindeutig definierter Kontakte mit einem Angebot in einem festgelegten Zeitraum.",
+      "category": "Wirkung, Medien & Kommunikation",
+      "synonyms": [
+        "Reichweite",
+        "Nettoreichweite",
+        "Audience Reach",
+        "erreichte Personen"
+      ],
+      "relatedTerms": [
+        "wirkung",
+        "wirkungspotenzial",
+        "medienqualitaet",
+        "medienvertrauen",
+        "wirkungsdaten",
+        "wirkungsbewertung"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -36461,7 +37453,10 @@
       "synonyms": [
         "Reparaturwohlstand"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "reparierbarkeit-recht-auf-reparatur",
+        "circular-economy"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -36517,6 +37512,34 @@
         "digitaler-produktpass",
         "produktdaten",
         "positive-netto-wirkung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "reporting": {
+      "label": "Reporting",
+      "slug": "reporting",
+      "url": "/begriffe/reporting/",
+      "hoverDefinition": "Reporting macht Informationen nachvollziehbar. Erst ein prüfbarer Lern- und Entscheidungsprozess macht daraus Wirkungsrückkopplung.",
+      "shortDefinition": "Reporting dokumentiert Informationen, Annahmen und Messwerte. Es ist weder Wirkung noch Wirkungsrückkopplung.",
+      "category": "Daten- und Prüfbegriff",
+      "synonyms": [
+        "Reporting",
+        "Wirkungsreporting",
+        "Impact Reporting"
+      ],
+      "relatedTerms": [
+        "berichtsdaten",
+        "wirkungsdaten",
+        "wirkungsbewertung",
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "datenqualitaet",
+        "wirkung",
+        "wirkungspotenzial"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -36761,7 +37784,6 @@
         "vertrauen",
         "sechster-kondratieff",
         "nachhaltigkeit",
-        "resilienz",
         "systemresilienz",
         "wirkungsrueckkopplung",
         "positive-netto-wirkung",
@@ -36981,7 +38003,7 @@
       "relatedTerms": [
         "resonanzraum",
         "wirkungsraum",
-        "wirkungspfad",
+        "wirkpfad",
         "wirkungsarchitektur",
         "wirkungsorientiertes-hosting"
       ],
@@ -37003,7 +38025,10 @@
       "synonyms": [
         "Resonanzprofil"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "resonanzraum",
+        "psychologischer_wirkungscheck"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -37021,9 +38046,6 @@
         "Resonanzraum",
         "Hate Speech",
         "Hassrede",
-        "hybride Bedrohungen",
-        "hybride Kriegsführung",
-        "Hybride Kriegsfuehrung",
         "Halluzinationen von KI",
         "KI-Halluzinationen",
         "Host-Verantwortung",
@@ -37311,7 +38333,7 @@
         "planetare-grenzen",
         "zielkonflikt",
         "biodiversity-net-gain-no-net-loss",
-        "dnsh",
+        "dnsh-do-no-significant-harm",
         "finalscore",
         "greenwashing",
         "haushaltsneutralitaet",
@@ -37370,7 +38392,18 @@
       "relatedDocuments": [
         "technische-leitlinien-wustg",
         "beispiel-apfel-wirkungssteuer",
-        "[object Object]",
+        {
+          "label": "Die neue Ordnung des Wohlstands",
+          "href": "../../referenz/"
+        },
+        {
+          "label": "Technische Leitlinien WUStG",
+          "href": "../../dokumente/technische-leitlinien-wustg-v2/"
+        },
+        {
+          "label": "Wirkungsfeld Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        },
         "impact-strategie-controlling-marketing-management-einkauf-chemieindustrie"
       ],
       "relatedObjections": []
@@ -37496,7 +38529,7 @@
         "wirkungsresilienz",
         "risikomanagement",
         "wirkungsdaten",
-        "wirkungspfad"
+        "wirkpfad"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -37520,7 +38553,10 @@
       "synonyms": [
         "Risikomanagement"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "erm",
+        "wirkungsrisikomanagement"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -37590,7 +38626,10 @@
       "synonyms": [
         "RMO"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "reverse-merit-order",
+        "nichtkompensationsprinzip"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -37870,7 +38909,10 @@
       "synonyms": [
         "ROI"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "impact-of-investment",
+        "t-sroi"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -37887,7 +38929,10 @@
       "synonyms": [
         "Rote Linien"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "nichtkompensationsprinzip",
+        "wirkungsgrenze"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -37989,7 +39034,10 @@
       "synonyms": [
         "Rückbaupflicht"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "rueckbaustandard",
+        "kreislauffaehigkeit"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -38070,7 +39118,7 @@
         "wirkungsarchitektur",
         "wirkungsblindheit",
         "wirkungslenkung",
-        "wirkungspfad",
+        "wirkpfad",
         "wu-wei",
         "demokratische-rueckkopplung",
         "wirkungshaushalt",
@@ -38330,7 +39378,10 @@
       "synonyms": [
         "Sachleistung"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "daseinsvorsorge",
+        "soziale-infrastruktur"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -38413,7 +39464,10 @@
       "synonyms": [
         "Sanierungsfahrplan"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "energetische-sanierung",
+        "bestandsimmobilie"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -38665,7 +39719,10 @@
       "synonyms": [
         "Scheinwohlstand"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "vorgriffswohlstand",
+        "externalitaeten"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -38702,7 +39759,10 @@
       "synonyms": [
         "Schnellladepark"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "ladepark",
+        "ladeinfrastruktur"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -38825,7 +39885,10 @@
       "synonyms": [
         "Schuldenmythos"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "privathaushaltsmythos",
+        "mmt"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -38931,7 +39994,7 @@
         "grundrechte",
         "rechtsstaatlichkeit",
         "demokratische-resilienz",
-        "wirkungspfad"
+        "wirkpfad"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -38990,7 +40053,10 @@
       "synonyms": [
         "Schwarze Null"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "schuldenbremse",
+        "nettokreditaufnahme"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -39549,8 +40615,7 @@
       "relatedTerms": [
         "moving-the-goalposts",
         "gish-galopp",
-        "derailing",
-        "moderation"
+        "derailing-themenverschiebung"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -40053,7 +41118,10 @@
       "synonyms": [
         "Sicherheits-T-SROI"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "t-sroi",
+        "sicherheitsresilienz"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -40070,7 +41138,10 @@
       "synonyms": [
         "Sicherheitspolitische Staatsschuld"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "nicht-finanzielle-staatsschulden",
+        "sicherheitsresilienz"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -40087,7 +41158,10 @@
       "synonyms": [
         "Sicherheitsresilienz"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "verteidigungsfaehigkeit",
+        "cyberresilienz"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -40184,7 +41258,7 @@
       ],
       "relatedTerms": [
         "angstappell",
-        "false-urgency",
+        "false-urgency-kuenstliche-dringlichkeit",
         "framing",
         "wirkungsrisiko"
       ],
@@ -40308,8 +41382,8 @@
       "label": "Social Credit",
       "slug": "social-credit",
       "url": "/begriffe/social-credit/",
-      "hoverDefinition": "Social Credit ist die umfassende Bewertung von Menschen nach Verhalten oder Konformität. Die Wirkungsökonomie zieht hier eine rote Linie.",
-      "shortDefinition": "Social Credit bezeichnet die umfassende Bewertung von Menschen nach Verhalten, Konformität oder Loyalität.",
+      "hoverDefinition": "Die Wirkungsökonomie bewertet keine Menschen, Gesinnungen oder Lebensstile. Social-Credit- und Verhaltensscores sind ausgeschlossen.",
+      "shortDefinition": "Social Credit bezeichnet Systeme, die Menschen anhand von Verhalten, Merkmalen, Konformität oder Loyalität umfassend bewerten oder einordnen. Sie sind kein Instrument der Wirkungsökonomie.",
       "category": "Schutzbegriff",
       "synonyms": [
         "Social Credit",
@@ -40317,10 +41391,15 @@
         "Social-Credit-System"
       ],
       "relatedTerms": [
+        "personenbewertung",
         "wirkungspunkte",
-        "wirkungswahrheit",
-        "wirkungsrat",
-        "social-taxonomy"
+        "wirkungslenkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur",
+        "datenschutz",
+        "grundrechte",
+        "rechtsschutz",
+        "verhaeltnismaessigkeit"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -40340,7 +41419,10 @@
       "synonyms": [
         "Social Economy / Solidarity Economy"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "solidaritaet",
+        "genossenschaft"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -40521,7 +41603,10 @@
       "synonyms": [
         "Sozial-, Arbeits- und Menschenrechtsstandards"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "ilo-kernarbeitsnormen",
+        "living-wage"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -40640,7 +41725,7 @@
         "echokammer",
         "filterblase",
         "resonanzraum",
-        "kontakt-hypothese"
+        "kontakthypothese"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -40808,7 +41893,10 @@
       "synonyms": [
         "Soziale Staatsschuld"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "nicht-finanzielle-staatsschulden",
+        "soziale-infrastruktur"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -40970,7 +42058,10 @@
       "synonyms": [
         "Sozialstaats-Sündenbock"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "sozialstaatsprinzip",
+        "narrativ"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -41008,7 +42099,10 @@
       "synonyms": [
         "Sozialtourismus-Frame"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "sozialstaats-suendenbock",
+        "framing"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -41076,7 +42170,7 @@
         "spekulative Verwertungslogik"
       ],
       "relatedTerms": [
-        "wirkungspflicht-des-eigentums",
+        "wirkungspflicht-eigentum",
         "stranded-assets"
       ],
       "relatedMethods": [],
@@ -41228,7 +42322,10 @@
       "synonyms": [
         "SROI"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "t-sroi",
+        "impact-of-investment"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -41440,7 +42537,10 @@
       "synonyms": [
         "Staatsfinanzielle Wirkungsblindheit"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "oeffentliche-finanzen-schulden-und-wirkung",
+        "oeffentliche-netto-wirkung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -41917,7 +43017,10 @@
       "synonyms": [
         "Standortscorecard"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "scorecard",
+        "standortwirkung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -41934,7 +43037,10 @@
       "synonyms": [
         "Standortwirkung"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "standortscorecard",
+        "wirkungsfeld"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -42047,7 +43153,10 @@
       "synonyms": [
         "Status Threat"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "identitaetsschutz-kognition",
+        "status-quo-bias"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -42092,7 +43201,10 @@
       "synonyms": [
         "Steuergeld-Frame"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "privathaushaltsmythos",
+        "oeffentliche-finanzen-schulden-und-wirkung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -42160,7 +43272,10 @@
       "synonyms": [
         "Steward Ownership / Verantwortungseigentum"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "eigentum-verpflichtet",
+        "eigentumsverantwortung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -42363,7 +43478,7 @@
       "relatedTerms": [
         "normatives-management",
         "operatives-management",
-        "wirkungspfad",
+        "wirkpfad",
         "st-galler-management-modell"
       ],
       "relatedMethods": [],
@@ -42682,7 +43797,7 @@
         "nichttriviales-system",
         "resonanzraum",
         "anschlussfaehigkeit",
-        "wirkungspfad",
+        "wirkpfad",
         "transformationswirkung",
         "nichttriviale-maschine",
         "selbstreferenz",
@@ -42906,7 +44021,7 @@
       ],
       "relatedTerms": [
         "wirkungspotenzial",
-        "wirkungspfad",
+        "wirkpfad",
         "wirkungsrisiko",
         "handlungsmoeglichkeiten"
       ],
@@ -43055,7 +44170,10 @@
       "synonyms": [
         "Sustainability Benchmarking / ESG-Rating-Methodik"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "benchmark",
+        "esg-rating"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -43159,7 +44277,10 @@
       "synonyms": [
         "Sustainalytics"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "esg-rating",
+        "sustainability-benchmarking"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -43176,7 +44297,10 @@
       "synonyms": [
         "Symbolausgabe"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "haushaltsblindleistung",
+        "haushaltswashing"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -43195,7 +44319,6 @@
         "Liking Bias"
       ],
       "relatedTerms": [
-        "sympathie-verzerrung",
         "halo-effekt",
         "autoritaetsbias",
         "wirkungsaudit"
@@ -43385,8 +44508,7 @@
         "systemresilienz",
         "wirkungsrisiko",
         "wirkungsresilienz",
-        "outside-in",
-        "inside-out",
+        "inside-out-outside-in",
         "rueckkopplung"
       ],
       "relatedMethods": [],
@@ -43549,7 +44671,6 @@
         "positive-netto-wirkung",
         "demokratische-resilienz",
         "nachhaltigkeit",
-        "systemresilienz",
         "wirkungsrueckkopplung",
         "supply-chain-resilienz",
         "globale-resilienz",
@@ -43637,8 +44758,8 @@
       "label": "T-SROI – Transformational Social Return on Investment",
       "slug": "t-sroi",
       "url": "/begriffe/t-sroi/",
-      "hoverDefinition": "T-SROI bewertet auf Grundlage geprüfter Netto-Wirkung, ob eine Investition systemische Hebelwirkung, Diffusion, Resilienz und Pfadveränderung im Verhältnis zum Kapitaleinsatz erzeugt.",
-      "shortDefinition": "T-SROI bewertet auf Grundlage geprüfter Netto-Wirkung, ob eine Investition systemische Hebelwirkung, Diffusion, Resilienz und Pfadveränderung im Verhältnis zum Kapitaleinsatz erzeugt.",
+      "hoverDefinition": "T-SROI ist ein modellhaftes Euro-zu-Euro-Verhältnis: diskontierter, kausal zugerechneter direkter und transformativ belegter Nettonutzen je diskontiertem Ressourceneuro.",
+      "shortDefinition": "T-SROI ist ein modellhaftes Euro-zu-Euro-Verhältnis: diskontierter, kausal zugerechneter direkter und transformativ belegter Nettonutzen je diskontiertem Ressourceneuro.",
       "category": "Messbegriff",
       "synonyms": [
         "T-SROI – Transformational Social Return on Investment",
@@ -43789,7 +44910,10 @@
       "synonyms": [
         "Tankstellenlogik"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "ladeangst",
+        "ladeinfrastruktur"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -43828,7 +44952,10 @@
       "synonyms": [
         "Target Gain"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "wirkungsziele-und-impact-okr",
+        "benchmark"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -43913,7 +45040,7 @@
       ],
       "relatedTerms": [
         "eu-taxonomie",
-        "dnsh",
+        "dnsh-do-no-significant-harm",
         "mindestschutz-minimum-safeguards",
         "technische-bewertungskriterien",
         "taxonomy-kpis",
@@ -43936,7 +45063,10 @@
       "synonyms": [
         "Taxonomy Compass / EU Taxonomy Compass"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "eu-taxonomie",
+        "technische-bewertungskriterien"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -44057,7 +45187,7 @@
         "eu-taxonomie",
         "taxonomy-navigator",
         "taxonomiekonformitaet",
-        "dnsh",
+        "dnsh-do-no-significant-harm",
         "wesentlicher-beitrag"
       ],
       "relatedMethods": [],
@@ -44235,7 +45365,10 @@
       "synonyms": [
         "Technologiereifegrad"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "technologieoffenheit",
+        "no-regret-anwendung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -44324,7 +45457,10 @@
       "synonyms": [
         "Territorialbilanz"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "konsumbilanz",
+        "bilanzgrenze"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -44409,7 +45545,10 @@
       "synonyms": [
         "Thermischer Strompfad"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "waermepumpe",
+        "energieeffizienz"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -44449,7 +45588,10 @@
       "synonyms": [
         "THG"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "treibhausgasemissionen",
+        "klima-und-emissionsstandards"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -44615,7 +45757,10 @@
       "synonyms": [
         "Tiere / nicht-menschliches Leben"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "tierschutz-und-tierwohl",
+        "biodiversitaet"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -44712,7 +45857,7 @@
         "Tone Policing"
       ],
       "relatedTerms": [
-        "derailing",
+        "derailing-themenverschiebung",
         "soziale-sanktionierung",
         "diskursfaehigkeit",
         "betroffenenperspektive"
@@ -44966,12 +46111,11 @@
         "Weiterbildungsbonus"
       ],
       "relatedTerms": [
-        "uebergangsschutz",
         "weiterbildung",
         "automatisierung",
         "wirkungsfonds",
         "wirkungseinkommen",
-        "transformationsrente",
+        "wirkungsrente",
         "maschinenleistungsrueckkopplung"
       ],
       "relatedMethods": [
@@ -45280,8 +46424,8 @@
       "label": "Transformationswirkung",
       "slug": "transformationswirkung",
       "url": "/begriffe/transformationswirkung/",
-      "hoverDefinition": "Transformationswirkung verändert nicht nur einzelne Zustände, sondern die Bedingungen künftiger Entscheidungen: Regeln, Standards, Anreize, Märkte oder Pfade.",
-      "shortDefinition": "Transformationswirkung liegt vor, wenn Wirkung nicht nur einzelne Zustände verbessert, sondern Systemlogiken, Standards, Anreize, Märkte, Institutionen oder Handlungspfade dauerhaft verändert.",
+      "hoverDefinition": "Transformationswirkung verändert nachweisbar nicht nur einen einzelnen Zustand, sondern Bedingungen künftiger Entscheidungen. Eine bloße Erwartung ist Wirkungspotenzial, keine Transformationswirkung.",
+      "shortDefinition": "Transformationswirkung ist eine eingetretene Zustandsveränderung, die die Bedingungen künftiger Entscheidungen – etwa Regeln, Standards, Anreize, Infrastrukturen oder Pfade – verändert.",
       "category": "Grundbegriffe der Wirkungsökonomie",
       "synonyms": [
         "Transformationswirkung",
@@ -45293,54 +46437,36 @@
         "Pfadveränderung"
       ],
       "relatedTerms": [
-        "wirkungsinnovation",
-        "transformationswelle",
-        "strukturdeterminiertheit",
-        "diffusion",
-        "hebelpunkt",
-        "pfadabhaengigkeit",
-        "t-sroi",
-        "verlustaversion",
         "wirkung",
         "wirkungspotenzial",
         "wirkungsrisiko",
-        "wirkmechanismus",
-        "wirkungstraeger",
-        "wirkungsempfaenger",
-        "wirkungsraum",
-        "wirkungsbewertung",
         "netto-wirkung",
         "positive-netto-wirkung",
-        "wirkungslenkung",
+        "wirkungsbewertung",
         "wirkungsrueckkopplung",
-        "wirkungsarchitektur",
-        "wirkungswahrheit",
-        "wirkungsblindheit",
-        "wirkungsgrenze",
-        "mensch-planet-demokratie",
-        "sdgs",
-        "agenda-2030",
-        "sdg-plus",
-        "woek-id",
-        "produktscorecard",
-        "reverse-merit-order",
-        "nwi",
-        "wirkungshaushalt",
-        "wirkungssteuer",
-        "wirkungsrat",
-        "produktwirkung",
-        "digitaler-produktpass",
-        "produktdaten",
-        "responsible-marketing",
-        "greenwashing",
-        "fuenftes-p-planet",
-        "impact-strategie"
+        "wirkungslenkung",
+        "t-sroi",
+        "wirkpfad",
+        "systemgrenze",
+        "datenqualitaet",
+        "nichtkompensationsprinzip"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [
-        "[object Object]",
+        {
+          "label": "Die neue Ordnung des Wohlstands",
+          "href": "../../referenz/"
+        },
+        {
+          "label": "Grundlagenpapier Wirkungsökonomie",
+          "href": "../../dokumente/grundlagenpapier-wirkungsoekonomie-woek/"
+        },
+        {
+          "label": "Leitbild Mensch, Planet und Demokratie",
+          "href": "../../dokumente/leitbild-mensch-planet-demokratie/"
+        },
         "impact-strategie-controlling-marketing-management-einkauf-chemieindustrie"
       ],
       "relatedObjections": []
@@ -45804,7 +46930,10 @@
       "synonyms": [
         "Übergabestation"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "verteilnetz",
+        "energieinfrastruktur"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -45821,7 +46950,10 @@
       "synonyms": [
         "Übergangstätigkeit"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "qualifikationsverlust",
+        "weiterbildung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -45838,7 +46970,10 @@
       "synonyms": [
         "Übertragungsnetz"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "stromnetz",
+        "verteilnetz"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -45855,7 +46990,10 @@
       "synonyms": [
         "Überwachungskapitalismus"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "digitale-selbstbestimmung",
+        "datenschutz"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -46582,7 +47720,10 @@
       "synonyms": [
         "Unternehmens-, Impact- und Governance-Frameworks"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "wirkungsgovernance",
+        "managementsystemstandards"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -46865,7 +48006,7 @@
         "impact-fit",
         "persona",
         "design-thinking",
-        "wirkungspfad",
+        "wirkpfad",
         "reverse-merit-order"
       ],
       "relatedMethods": [],
@@ -47022,7 +48163,7 @@
       ],
       "relatedTerms": [
         "wirkung",
-        "wirkungspfad",
+        "wirkpfad",
         "wirkungspotenzial",
         "wirkungsrisiko",
         "wirkungsblindheit",
@@ -47565,6 +48706,33 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "verschwoerungserzaehlung": {
+      "label": "Verschwörungserzählung",
+      "slug": "verschwoerungserzaehlung",
+      "url": "/begriffe/verschwoerungserzaehlung/",
+      "hoverDefinition": "Verschwörungserzählungen ersetzen prüfbare Belege oft durch eine gegen Kritik abgeschirmte Geschichte über geheime Mächte.",
+      "shortDefinition": "Eine Verschwörungserzählung erklärt Ereignisse vor allem durch angeblich geheime, absichtlich schädliche Steuerung mächtiger Akteure.",
+      "category": "Wissen, Medien & Demokratie",
+      "synonyms": [
+        "Verschwörungserzählung",
+        "Verschwörungsnarrativ",
+        "Verschwörungstheorie"
+      ],
+      "relatedTerms": [
+        "desinformation",
+        "faktencheck",
+        "wissenschaftsfeindlichkeit",
+        "polarisierung",
+        "echokammer",
+        "diskursqualitaet",
+        "wirkungsrisiko"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "versicherbarkeit": {
       "label": "Versicherbarkeit",
       "slug": "versicherbarkeit",
@@ -47777,7 +48945,10 @@
       "synonyms": [
         "Verteidigungsfähigkeit"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "sicherheitsresilienz",
+        "sicherheitspolitische-staatsschuld"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -48049,7 +49220,10 @@
       "synonyms": [
         "VLOP"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "dsa",
+        "plattformregulierung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -48111,7 +49285,10 @@
       "synonyms": [
         "Vorgriffswohlstand"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "scheinwohlstand",
+        "zukunftsschulden"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -48201,7 +49378,10 @@
       "synonyms": [
         "W-BIP"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "bip",
+        "wellbeing-economy"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -48466,7 +49646,6 @@
         "Wirkungsaufsicht für Kapital"
       ],
       "relatedTerms": [
-        "wirkungsaufsicht",
         "wirkungsrat",
         "portfolio-wirkung",
         "kapitalwirkung",
@@ -48898,6 +50077,33 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "weiterbildung": {
+      "label": "Weiterbildung",
+      "slug": "weiterbildung",
+      "url": "/begriffe/weiterbildung/",
+      "hoverDefinition": "Weiterbildung ist mehr als ein Zertifikat. Entscheidend sind zugängliches Lernen, nutzbare Kompetenzen und faire Teilhabe.",
+      "shortDefinition": "Weiterbildung umfasst formale, non-formale und informelle Lernprozesse nach der Erstausbildung, mit denen Fähigkeiten weiterentwickelt werden.",
+      "category": "Bildung, Arbeit & Teilhabe",
+      "synonyms": [
+        "Weiterbildung",
+        "Erwachsenenbildung",
+        "Fortbildung",
+        "lebensbegleitendes Lernen"
+      ],
+      "relatedTerms": [
+        "wirkungskompetenz",
+        "teilhabe",
+        "gesundheitskompetenz",
+        "informationssouveraenitaet",
+        "wirkungspotenzial",
+        "wirkung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "weiterverteilung": {
       "label": "Weiterverteilung / Redistribute",
       "slug": "weiterverteilung",
@@ -48972,7 +50178,10 @@
       "synonyms": [
         "Wellbeing Economy / Beyond GDP"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "bip",
+        "w-bip"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -49011,7 +50220,10 @@
       "synonyms": [
         "Weltfähig"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "zukunftsfaehigkeit",
+        "positive-netto-wirkung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -49092,13 +50304,20 @@
       "label": "Wertebrücke",
       "slug": "wertebruecke",
       "url": "/begriffe/wertebruecke/",
-      "hoverDefinition": "Beispiel: Freiheit anerkennen, dann zeigen, wie faire Regeln Freiheit schützen.",
-      "shortDefinition": "Verbindung über einen gemeinsamen Wert, bevor ein Denkfehler oder eine falsche Schlussfolgerung erklärt wird.",
+      "hoverDefinition": "Eine Wertebrücke ist kein Trick. Sie sagt: „Der gemeinsame Wert zählt – jetzt schauen wir gemeinsam, was ihn tatsächlich schützt.“",
+      "shortDefinition": "Eine Wertebrücke macht einen gemeinsamen, legitimen Wert sichtbar und verbindet ihn mit einer prüfbaren Sach- und Wirkungsfrage. Sie ersetzt weder Belege noch die Klärung echter Zielkonflikte.",
       "category": "Psychologie und Resonanz",
       "synonyms": [
-        "Wertebrücke"
+        "Wertebrücke",
+        "gemeinsame Werte als Gesprächsbrücke"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "gesichtswahrende_korrektur",
+        "kommunikative_souveraenitaet",
+        "reaktanz",
+        "identitaetsschutz",
+        "positive-netto-wirkung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -49210,7 +50429,7 @@
       ],
       "relatedTerms": [
         "eu-taxonomie",
-        "dnsh",
+        "dnsh-do-no-significant-harm",
         "technische-bewertungskriterien"
       ],
       "relatedMethods": [],
@@ -49254,7 +50473,7 @@
       "relatedTerms": [
         "red-herring",
         "tu-quoque",
-        "derailing",
+        "derailing-themenverschiebung",
         "wirkungsbewertung"
       ],
       "relatedMethods": [],
@@ -49552,7 +50771,6 @@
         "faktencheck",
         "folgencheck",
         "wirkpfad",
-        "wirkungspfad",
         "wirkungsdaten",
         "datenqualitaet",
         "wirkungspotenzial",
@@ -49617,7 +50835,7 @@
       ],
       "relatedTerms": [
         "wirkstoff",
-        "wirkungspfad",
+        "wirkpfad",
         "wirkungspotenzial",
         "wirkungstraeger",
         "kognitive-dissonanz"
@@ -49663,7 +50881,10 @@
       "synonyms": [
         "Wirksame Arbeit"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "wirkung",
+        "wirksamkeit"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -49766,7 +50987,7 @@
       "relatedTerms": [
         "wirkungspotenzial",
         "wirkmechanismus",
-        "wirkungspfad",
+        "wirkpfad",
         "resonanzraum",
         "salienz",
         "framing",
@@ -49803,7 +51024,7 @@
       "relatedTerms": [
         "wirkungspotenzial",
         "wirkungsrisiko",
-        "wirkungspfad",
+        "wirkpfad",
         "folgewirkung",
         "positive-netto-wirkung",
         "effektivitaet-vs-effizienz",
@@ -49857,7 +51078,18 @@
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [
-        "[object Object]",
+        {
+          "label": "Die neue Ordnung des Wohlstands",
+          "href": "../../referenz/"
+        },
+        {
+          "label": "Grundlagenpapier Wirkungsökonomie",
+          "href": "../../dokumente/grundlagenpapier-wirkungsoekonomie-woek/"
+        },
+        {
+          "label": "Leitbild Mensch, Planet und Demokratie",
+          "href": "../../dokumente/leitbild-mensch-planet-demokratie/"
+        },
         "impact-strategie-controlling-marketing-management-einkauf-chemieindustrie"
       ],
       "relatedObjections": []
@@ -50568,7 +51800,7 @@
         "positive-netto-wirkung",
         "transformationswirkung",
         "wirkungsgrenze",
-        "wirkungspfad",
+        "wirkpfad",
         "wirkungsnetz",
         "wirkungsdaten",
         "reverse-merit-order",
@@ -50730,8 +51962,7 @@
         "umsetzungs-und-uebergangsschutzplan",
         "wirkungsdashboard-und-managementcockpit",
         "wirkungsfruehwarn-und-eskalationssystem",
-        "wirkungsreview-und-lernende-retrospektive",
-        "wirkungsassurance-audit-und-methodenpruefung"
+        "wirkungsreview-und-lernende-retrospektive"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -51024,7 +52255,7 @@
         "transformationswirkung",
         "wirkungsrueckkopplung",
         "wirkungsgrenze",
-        "wirkungspfad",
+        "wirkpfad",
         "wirkungsnetz",
         "wirkungsdaten",
         "wirkungssteuer",
@@ -51111,7 +52342,7 @@
         "lebenswirkung",
         "wirkungsbonus",
         "wirkleistung",
-        "care-arbeit",
+        "sorgearbeit",
         "ehrenamt"
       ],
       "relatedMethods": [
@@ -51175,7 +52406,7 @@
         "transformationswirkung",
         "wirkungsrueckkopplung",
         "wirkungsgrenze",
-        "wirkungspfad",
+        "wirkpfad",
         "wirkungsnetz",
         "wirkungsdaten",
         "woek-id",
@@ -51246,7 +52477,7 @@
         "wirkungseinkommen",
         "grunddividende",
         "wirkungsrente",
-        "care-arbeit",
+        "sorgearbeit",
         "ehrenamt"
       ],
       "relatedMethods": [
@@ -51707,7 +52938,10 @@
       "synonyms": [
         "Wirkungsdefizit"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "wirkungsfinanzierung",
+        "oeffentliche-netto-wirkung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -51770,7 +53004,39 @@
       "synonyms": [
         "Wirkungsdisziplin"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "wirkungsfinanzierung",
+        "datenqualitaet"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "wirkungsdividende": {
+      "label": "Wirkungsdividende",
+      "slug": "wirkungsdividende",
+      "url": "/begriffe/wirkungsdividende/",
+      "hoverDefinition": "Die Wirkungsdividende ist ein Modellbaustein, kein persönlicher Wirkungslohn und kein Social-Credit-Bonus.",
+      "shortDefinition": "Eine Wirkungsdividende ist im WÖk-Modell ein öffentlich verantworteter Verteilungsanteil aus tatsächlich verfügbaren, kollektiv erwirtschafteten Mitteln eines Wirkungsfonds.",
+      "category": "Arbeit, Einkommen & Verteilung",
+      "synonyms": [
+        "Wirkungsdividende",
+        "Impact-Dividende",
+        "gesellschaftliche Wirkungsdividende"
+      ],
+      "relatedTerms": [
+        "wirkungseinkommen",
+        "grunddividende",
+        "automatisierungsdividende",
+        "wirkungsrente",
+        "ehrenamt",
+        "wirkung",
+        "positive-netto-wirkung",
+        "wirkungsrueckkopplung",
+        "reverse-merit-order"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -51787,7 +53053,10 @@
       "synonyms": [
         "Wirkungsebene 1"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "wirkungsebene-2",
+        "wirkung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -51804,7 +53073,10 @@
       "synonyms": [
         "Wirkungsebene 2"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "wirkungsebene-1",
+        "wirkungsebene-3"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -51821,7 +53093,10 @@
       "synonyms": [
         "Wirkungsebene 3"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "wirkungsebene-2",
+        "transformationswirkung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -51976,7 +53251,7 @@
       "relatedTerms": [
         "wirkung",
         "wirkungsraum",
-        "wirkungspfad",
+        "wirkpfad",
         "kundennutzen",
         "persona",
         "impact-fit",
@@ -52097,7 +53372,10 @@
       "synonyms": [
         "Wirkungsfeld"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "mensch-planet-demokratie",
+        "wirkungsindikator"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -52114,7 +53392,10 @@
       "synonyms": [
         "Wirkungsfinanzierung"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "oeffentliche-netto-wirkung",
+        "realressourcengrenze"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -52853,7 +54134,10 @@
       "synonyms": [
         "Wirkungshaushalt für Auslandsprojekte"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "wirkungshaushalt",
+        "internationale-zusammenarbeit"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -52870,7 +54154,10 @@
       "synonyms": [
         "Wirkungshebel / Systemhebel"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "hebelpunkt",
+        "wirkpfad"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -52923,7 +54210,7 @@
       ],
       "relatedTerms": [
         "wirkungsdaten",
-        "wirkungspfad",
+        "wirkpfad",
         "datenqualitaet",
         "scorecard",
         "wirkungscontrolling",
@@ -53114,7 +54401,6 @@
         "wirkungsoekonomie",
         "wirkungsarchitektur",
         "wirkpfad",
-        "wirkungspfad",
         "wirkungspotenzial",
         "wirkungsrisiko",
         "positive-netto-wirkung",
@@ -53178,7 +54464,10 @@
       "synonyms": [
         "Wirkungsinvestition des Staates"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "wirkungsfinanzierung",
+        "positive-netto-wirkung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -53328,7 +54617,10 @@
       "synonyms": [
         "Wirkungsklasse"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "scorecard",
+        "finalscore"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -53669,57 +54961,27 @@
       "label": "Wirkungslenkung",
       "slug": "wirkungslenkung",
       "url": "/begriffe/wirkungslenkung/",
-      "hoverDefinition": "Wirkungslenkung bedeutet, Wirkungsbewertung in Anreize, Preise, Steuern, Kapital, Beschaffung, Förderung und Entscheidungen zurückzukoppeln.",
-      "shortDefinition": "Wirkungslenkung bedeutet, Wirkungsbewertung in Anreize, Preise, Steuern, Kapital, Beschaffung, Förderung und Entscheidungen zurückzukoppeln.",
+      "hoverDefinition": "Wirkungslenkung legt Ziele, Schutzgrenzen, Prioritäten und Instrumente fest. Sie ist nicht die Rückmeldung darüber, was später tatsächlich geschieht.",
+      "shortDefinition": "Wirkungslenkung ist die legitimierte Entscheidung über Ziele, Schutzgrenzen, Prioritäten und Instrumente, mit denen eine positive Netto-Wirkung angestrebt wird.",
       "category": "Steuerungsbegriff",
       "synonyms": [
         "Wirkungslenkung",
-        "Lenkung durch Wirkung",
         "wirkungsorientierte Steuerung",
-        "Wirkungssteuerung",
-        "Impact Steering",
-        "Rückkopplung von Wirkung",
-        "Steuerung nach Wirkung"
+        "Impact Steering"
       ],
       "relatedTerms": [
+        "wirkungsarchitektur",
         "wirkungsbewertung",
         "wirkungsrueckkopplung",
-        "wirkungsarchitektur",
-        "positive-netto-wirkung",
-        "wirkungssteuer",
-        "wirkungshaushalt",
-        "wirkungsrat",
-        "reverse-merit-order",
-        "wirkungswahrheit",
-        "wirkungsblindheit",
-        "datenqualitaet",
-        "mensch-planet-demokratie",
-        "wirkung",
-        "wirkungspotenzial",
-        "wirkungsrisiko",
-        "netto-wirkung",
-        "transformationswirkung",
+        "reporting",
         "wirkungsgrenze",
-        "wirkungspfad",
-        "wirkungsnetz",
+        "nichtkompensationsprinzip",
+        "reverse-merit-order",
+        "positive-netto-wirkung",
+        "wirkungsrisiko",
         "wirkungsdaten",
-        "woek-id",
-        "produktscorecard",
-        "digitaler-produktpass",
-        "wirkungsaudit",
-        "wirkungsassurance",
-        "greenwashing",
-        "impact-washing",
-        "sdg-washing",
-        "sdgs",
-        "agenda-2030",
-        "sdg-plus",
-        "hebelpunkt",
-        "rueckkopplung",
-        "donella-meadows",
-        "pfadabhaengigkeit",
-        "wirkungseinkommen",
-        "impact-strategie"
+        "wirkungsrat",
+        "wirkungshaushalt"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -53926,7 +55188,7 @@
         "horizontale Kooperation"
       ],
       "relatedTerms": [
-        "wirkungspfad",
+        "wirkpfad",
         "resonanzraum",
         "wirkungsarchitektur",
         "interdependenz",
@@ -53999,7 +55261,7 @@
         "wirkungsarchitektur",
         "wirkungsrueckkopplung",
         "positive-netto-wirkung",
-        "nichtkompensation",
+        "nichtkompensationsprinzip",
         "reverse-merit-order",
         "woek-id",
         "qualitaetssicherung",
@@ -54269,8 +55531,8 @@
       "label": "Wirkungsökonomischer Wirkungsgrad",
       "slug": "wirkungsoekonomischer-wirkungsgrad",
       "url": "/begriffe/wirkungsoekonomischer-wirkungsgrad/",
-      "hoverDefinition": "Der wirkungsökonomische Wirkungsgrad setzt eine bewertete positive Netto-Wirkung ins Verhältnis zu einem klar benannten Einsatz, etwa Geld, Zeit, Energie, Material oder institutioneller Kapazität.",
-      "shortDefinition": "Der wirkungsökonomische Wirkungsgrad setzt eine bewertete positive Netto-Wirkung ins Verhältnis zu einem klar benannten Einsatz, etwa Geld, Zeit, Energie, Material oder institutioneller Kapazität.",
+      "hoverDefinition": "Der wirkungsökonomische Wirkungsgrad beschreibt die Intensität einer dokumentierten positiven Netto-Wirkung je klar benanntem Einsatz. Seine Einheit muss immer sichtbar bleiben, sofern Zähler und Nenner nicht dieselbe Einheit haben.",
+      "shortDefinition": "Der wirkungsökonomische Wirkungsgrad beschreibt die Intensität einer dokumentierten positiven Netto-Wirkung je klar benanntem Einsatz. Seine Einheit muss immer sichtbar bleiben, sofern Zähler und Nenner nicht dieselbe Einheit haben.",
       "category": "Messbegriff",
       "synonyms": [
         "Wirkungsökonomischer Wirkungsgrad",
@@ -54792,8 +56054,8 @@
       "label": "Wirkungspfad",
       "slug": "wirkpfad",
       "url": "/begriffe/wirkpfad/",
-      "hoverDefinition": "Die Kette von Auslösern über Aktivitäten, Outputs, Outcomes und Wirkungen bis zu Rückkopplungen nachvollziehbar darstellen.",
-      "shortDefinition": "Die Kette von Auslösern über Aktivitäten, Outputs, Outcomes und Wirkungen bis zu Rückkopplungen nachvollziehbar darstellen.",
+      "hoverDefinition": "Ein Wirkungspfad ordnet Auslöser, Aktivitäten und erbrachte Leistungen den erwarteten Veränderungen bei Wirkungsempfängern, möglichen Zustandsveränderungen und Rückkopplungen in einer prüfbaren Reihenfolge zu.",
+      "shortDefinition": "Ein Wirkungspfad ordnet Auslöser, Aktivitäten und erbrachte Leistungen den erwarteten Veränderungen bei Wirkungsempfängern, möglichen Zustandsveränderungen und Rückkopplungen in einer prüfbaren Reihenfolge zu.",
       "category": "WÖMS Methodensystem",
       "synonyms": [
         "Wirkungspfad",
@@ -54994,7 +56256,7 @@
         "wirkmechanismus",
         "wirkungsdaten",
         "wirkungspaedagogik",
-        "wirkungspfad",
+        "wirkpfad",
         "wirkungstraeger",
         "wirkungsempfaenger",
         "wirkungsraum",
@@ -55031,7 +56293,18 @@
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [
-        "[object Object]"
+        {
+          "label": "Die neue Ordnung des Wohlstands",
+          "href": "../../referenz/"
+        },
+        {
+          "label": "Grundlagenpapier Wirkungsökonomie",
+          "href": "../../dokumente/grundlagenpapier-wirkungsoekonomie-woek/"
+        },
+        {
+          "label": "Leitbild Mensch, Planet und Demokratie",
+          "href": "../../dokumente/leitbild-mensch-planet-demokratie/"
+        }
       ],
       "relatedObjections": []
     },
@@ -55557,7 +56830,7 @@
       ],
       "relatedTerms": [
         "wirkungsempfaenger",
-        "wirkungspfad",
+        "wirkpfad",
         "vertrauen",
         "wirkungsarchitektur",
         "folgencheck",
@@ -55580,8 +56853,8 @@
       "label": "Wirkungsrealisierungsarchitektur",
       "slug": "wirkungsrealisierungsarchitektur",
       "url": "/begriffe/wirkungsrealisierungsarchitektur/",
-      "hoverDefinition": "Die Wirkungsrealisierungsarchitektur verbindet Wirkungsziele mit Capabilities, Wertströmen, Prozessen, Operating Model, Daten, Technologie, Delivery, Change und Adoption.",
-      "shortDefinition": "Die Wirkungsrealisierungsarchitektur verbindet Wirkungsziele mit Capabilities, Wertströmen, Prozessen, Operating Model, Daten, Technologie, Delivery, Change und Adoption.",
+      "hoverDefinition": "Die Wirkungsrealisierungsarchitektur verbindet Wirkungsziele mit Fähigkeiten, Wertströmen, Prozessen, Betriebsmodell, Daten, Technologie, Umsetzung sowie Einführung und tatsächlicher Nutzung.",
+      "shortDefinition": "Die Wirkungsrealisierungsarchitektur verbindet Wirkungsziele mit Fähigkeiten, Wertströmen, Prozessen, Betriebsmodell, Daten, Technologie, Umsetzung sowie Einführung und tatsächlicher Nutzung.",
       "category": "WÖMM Managementmodell",
       "synonyms": [
         "Wirkungsrealisierungsarchitektur"
@@ -55802,8 +57075,8 @@
       "label": "Wirkungsrendite",
       "slug": "wirkungsrendite",
       "url": "/begriffe/wirkungsrendite/",
-      "hoverDefinition": "Wirkungsrendite beschreibt den Ertrag eines Kapitaleinsatzes in Form geprüfter positiver Netto-Wirkung oder Transformationswirkung, getrennt von, aber verbunden mit finanzieller Rendite.",
-      "shortDefinition": "Wirkungsrendite beschreibt den Ertrag eines Kapitaleinsatzes in Form geprüfter positiver Netto-Wirkung oder Transformationswirkung, getrennt von, aber verbunden mit finanzieller Rendite.",
+      "hoverDefinition": "Wirkungsrendite beschreibt den monetär bewerteten, kausal zugerechneten direkten Nettonutzen eines Kapitaleinsatzes je Kapitaleuro, getrennt von finanzieller Rendite.",
+      "shortDefinition": "Wirkungsrendite beschreibt den monetär bewerteten, kausal zugerechneten direkten Nettonutzen eines Kapitaleinsatzes je Kapitaleuro, getrennt von finanzieller Rendite.",
       "category": "Messbegriff",
       "synonyms": [
         "Wirkungsrendite",
@@ -55895,8 +57168,8 @@
       "label": "Wirkungsrendite öffentlicher Ausgaben",
       "slug": "wirkungsrendite-oeffentlicher-ausgaben",
       "url": "/begriffe/wirkungsrendite-oeffentlicher-ausgaben/",
-      "hoverDefinition": "Wirkungsrendite öffentlicher Ausgaben beschreibt die bewertete positive Netto-Wirkung eines klar abgegrenzten öffentlichen Mitteleinsatzes.",
-      "shortDefinition": "Wirkungsrendite öffentlicher Ausgaben beschreibt die bewertete positive Netto-Wirkung eines klar abgegrenzten öffentlichen Mitteleinsatzes.",
+      "hoverDefinition": "Wirkungsrendite öffentlicher Ausgaben beschreibt den monetär bewerteten, kausal zugerechneten direkten Nettonutzen eines klar abgegrenzten öffentlichen Mitteleinsatzes je öffentlichem Euro.",
+      "shortDefinition": "Wirkungsrendite öffentlicher Ausgaben beschreibt den monetär bewerteten, kausal zugerechneten direkten Nettonutzen eines klar abgegrenzten öffentlichen Mitteleinsatzes je öffentlichem Euro.",
       "category": "Wirkungsfinanzpolitik",
       "synonyms": [
         "Wirkungsrendite öffentlicher Ausgaben"
@@ -55968,8 +57241,6 @@
         "feminisierung-von-armut",
         "erwerbsbiografie",
         "wirkungsdividende",
-        "buergerinnenfonds",
-        "transformationsrente",
         "automatisierungsdividende"
       ],
       "relatedMethods": [
@@ -56044,7 +57315,6 @@
         "impact-management",
         "impact-controlling",
         "systemresilienz",
-        "wirkungsresilienz",
         "wirkungsrueckkopplung",
         "positive-netto-wirkung",
         "sdgs",
@@ -56201,7 +57471,6 @@
         "wirkungskompetenz-matrix",
         "lern-und-rueckkopplungsarchitektur",
         "wirkungstransformations-bereitschaft",
-        "wirkungsreview-und-lernende-retrospektive",
         "wirkungsassurance-audit-und-methodenpruefung"
       ],
       "relatedMethods": [],
@@ -56317,7 +57586,10 @@
       "synonyms": [
         "Wirkungsrisikomanagement"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "wirkungsrisiko",
+        "risikomanagement"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -56386,40 +57658,27 @@
       "label": "Wirkungsrückkopplung",
       "slug": "wirkungsrueckkopplung",
       "url": "/begriffe/wirkungsrueckkopplung/",
-      "hoverDefinition": "Wirkungsrückkopplung bedeutet: erkannte Wirkung bleibt nicht Bericht, sondern verändert Steuerung - etwa Preise, Fonds, Regeln, Investitionen, Sortimente oder Einkommenslogiken.",
-      "shortDefinition": "Wirkungsrückkopplung führt gemessene oder geprüfte Wirkung in Preise, Budgets, Regeln, Kapital, Produktgestaltung oder Einkommen zurück.",
+      "hoverDefinition": "Wirkungsrückkopplung bringt geprüfte Beobachtungen und Unsicherheit in die nächste Entscheidung zurück. Sie legt nicht selbst Ziele oder Instrumente fest.",
+      "shortDefinition": "Wirkungsrückkopplung ist der Lernmechanismus, der beobachtete Zustandsveränderungen, Evidenz und Unsicherheit in spätere Entscheidungen zurückführt.",
       "category": "Grundbegriff",
       "synonyms": [
         "Wirkungsrückkopplung",
-        "Rückkopplung",
-        "Wirkungsrueckkopplung",
-        "Rueckkopplung",
         "Impact Feedback",
-        "Feedback in Wirkung",
         "wirkungsbezogene Rückführung"
       ],
       "relatedTerms": [
-        "rueckkopplung",
-        "kybernetik",
         "wirkungsarchitektur",
         "wirkungslenkung",
-        "fuenftes-p-planet",
-        "erweiterte-herstellerverantwortung",
-        "esg",
-        "gewinn-als-test",
-        "hebelpunkt",
-        "hebelwirkung",
-        "nachhaltigkeit",
-        "steuerungsdaten",
-        "sustainable-finance",
-        "verstaerkungslernen",
-        "wirkungsfonds",
-        "wirkungshaushalt",
-        "wirkungssteuer",
-        "zentralverwaltungswirtschaft",
-        "impact-management",
-        "impact-controlling",
-        "doppelte-wesentlichkeit"
+        "wirkungsbewertung",
+        "reporting",
+        "wirkungsdaten",
+        "datenqualitaet",
+        "wirkungsrisiko",
+        "wirkungsgrenze",
+        "positive-netto-wirkung",
+        "wirkpfad",
+        "wirkung",
+        "nichtkompensationsprinzip"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [
@@ -56594,7 +57853,10 @@
       "synonyms": [
         "Wirkungsspielraum"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "realressourcengrenze",
+        "wirkungskapazitaet-des-staates"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -56839,7 +58101,10 @@
       "synonyms": [
         "Wirkungssteuerkonto"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "wirkungssteuer",
+        "wkg"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -57168,7 +58433,7 @@
       "relatedTerms": [
         "wirkungsethik",
         "folgewirkung",
-        "wirkungspfad",
+        "wirkpfad",
         "kapitalwirkung",
         "folgencheck",
         "karl-marx",
@@ -57197,7 +58462,7 @@
         "wirkungsorientierte Vermietung"
       ],
       "relatedTerms": [
-        "wirkungspflicht-des-eigentums",
+        "wirkungspflicht-eigentum",
         "warmmietenneutralitaet",
         "wix-vi"
       ],
@@ -57274,7 +58539,7 @@
         "transformationswirkung",
         "wirkungsrueckkopplung",
         "wirkungsgrenze",
-        "wirkungspfad",
+        "wirkpfad",
         "wirkungsnetz",
         "wirkungsdaten",
         "woek-id",
@@ -57328,7 +58593,10 @@
       "synonyms": [
         "Wirkungswashing"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "greenwashing",
+        "wirkungsbewertung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -57461,7 +58729,7 @@
         "wirkungsforschung",
         "wirkung",
         "wirkungsbewertung",
-        "wirkungspfad",
+        "wirkpfad",
         "wirkungsnachweis"
       ],
       "relatedMethods": [],
@@ -57814,6 +59082,32 @@
       ],
       "relatedObjections": []
     },
+    "wissenschaftsfeindlichkeit": {
+      "label": "Wissenschaftsfeindlichkeit",
+      "slug": "wissenschaftsfeindlichkeit",
+      "url": "/begriffe/wissenschaftsfeindlichkeit/",
+      "hoverDefinition": "Wissenschaftsfeindlichkeit richtet sich gegen nachvollziehbares Prüfen und Korrigieren – nicht gegen berechtigte Kritik an einzelnen Studien.",
+      "shortDefinition": "Wissenschaftsfeindlichkeit ist die pauschale Abwertung, Behinderung oder Verzerrung wissenschaftlicher Verfahren, Freiheit oder Korrektur.",
+      "category": "Wissen, Medien & Demokratie",
+      "synonyms": [
+        "Wissenschaftsfeindlichkeit",
+        "Wissenschaftsablehnung",
+        "Feindlichkeit gegenüber Wissenschaft"
+      ],
+      "relatedTerms": [
+        "faktencheck",
+        "desinformation",
+        "verschwoerungserzaehlung",
+        "medienfreiheit",
+        "diskursqualitaet",
+        "wirkungsrisiko"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "wissensfluss-kritisches-wissen-und-communities-canvas": {
       "label": "Wissensfluss-, kritisches-Wissen- und Communities-Canvas",
       "slug": "wissensfluss-kritisches-wissen-und-communities-canvas",
@@ -58030,7 +59324,10 @@
       "synonyms": [
         "WKG"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "wirkungssteuerkonto",
+        "wirkungsdaten"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -58185,7 +59482,7 @@
         "Gentrifizierung"
       ],
       "relatedTerms": [
-        "wirkungspflicht-des-eigentums",
+        "wirkungspflicht-eigentum",
         "energiearmut",
         "quartierswirkung",
         "umweltgerechtigkeit",
@@ -58214,7 +59511,6 @@
       ],
       "relatedTerms": [
         "wirkungsoekonomie",
-        "woek",
         "wirkung-statt-kapital",
         "wirkung",
         "positive-netto-wirkung",
@@ -58306,7 +59602,18 @@
       "relatedDocuments": [
         "woek-master-items-register",
         "wirkungscontrolling-detailkonzept-dossier-v1-0",
-        "[object Object]",
+        {
+          "label": "Die neue Ordnung des Wohlstands",
+          "href": "../../referenz/"
+        },
+        {
+          "label": "Technische Leitlinien WUStG",
+          "href": "../../dokumente/technische-leitlinien-wustg-v2/"
+        },
+        {
+          "label": "Wirkungsfeld Produkte & Konsum",
+          "href": "../../wirkungsfelder/produkte-konsum/"
+        },
         "impact-strategie-controlling-marketing-management-einkauf-chemieindustrie"
       ],
       "relatedObjections": []
@@ -58440,8 +59747,8 @@
       "label": "WÖMS-Methodenkarte",
       "slug": "woems-methodenkarte",
       "url": "/begriffe/woems-methodenkarte/",
-      "hoverDefinition": "Eine WÖMS-Methodenkarte dokumentiert Zweck, Einsatzrahmen, Inputs, Schritte, Output, Schnittstellen, Canvas-Spezifikation, Qualitäts- und Schutzregeln einer Methode.",
-      "shortDefinition": "Eine WÖMS-Methodenkarte dokumentiert Zweck, Einsatzrahmen, Inputs, Schritte, Output, Schnittstellen, Canvas-Spezifikation, Qualitäts- und Schutzregeln einer Methode.",
+      "hoverDefinition": "Eine WÖMS-Methodenkarte beschreibt Zweck, Einsatzrahmen, benötigte Informationen, Arbeitsschritte, erwartete Arbeitsergebnisse, Schnittstellen, Formularfelder sowie Qualitäts- und Schutzregeln einer Methode.",
+      "shortDefinition": "Eine WÖMS-Methodenkarte beschreibt Zweck, Einsatzrahmen, benötigte Informationen, Arbeitsschritte, erwartete Arbeitsergebnisse, Schnittstellen, Formularfelder sowie Qualitäts- und Schutzregeln einer Methode.",
       "category": "WÖMS Methodensystem",
       "synonyms": [
         "WÖMS-Methodenkarte"
@@ -58601,7 +59908,6 @@
       ],
       "relatedTerms": [
         "wirkungsrat",
-        "wr",
         "wirkung",
         "positive-netto-wirkung",
         "mensch-planet-demokratie",
@@ -58858,7 +60164,7 @@
         "Wirkungszeit"
       ],
       "relatedTerms": [
-        "wirkungspfad",
+        "wirkpfad",
         "wirkungsrisiko"
       ],
       "relatedMethods": [],
@@ -58900,7 +60206,6 @@
         "Achtsamkeit"
       ],
       "relatedTerms": [
-        "zen",
         "wirkungskompetenz",
         "selbstwirksamkeit",
         "resonanz",
@@ -59376,7 +60681,10 @@
       "synonyms": [
         "Zukunftsdisziplin"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "zukunftsschulden",
+        "wirkungsfinanzierung"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
@@ -59514,7 +60822,10 @@
       "synonyms": [
         "Zuschuss"
       ],
-      "relatedTerms": [],
+      "relatedTerms": [
+        "foerderlogik",
+        "foerdercontrolling"
+      ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],

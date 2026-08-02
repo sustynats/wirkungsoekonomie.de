@@ -7,6 +7,9 @@ const markerEnd = "<!-- tool-template-2-0:end -->";
 
 const targetRoots = ["werkzeuge", "erleben", "anwendungen"];
 const skipFiles = new Set(["anwendungen/index.html"]);
+const args = process.argv.slice(2);
+const onlyArg = args.find((arg) => arg.startsWith("--only="));
+const checkOnly = args.includes("--check");
 
 function walk(dir) {
   if (!fs.existsSync(dir)) return [];
@@ -69,14 +72,27 @@ function descriptionFrom(html, title) {
 }
 
 function pageKind(rel, html) {
-  const text = `${rel} ${html}`.toLowerCase();
-  if (text.includes("rechner")) return "Rechner";
-  if (text.includes("scanner")) return "Scanner";
-  if (text.includes("dashboard")) return "Dashboard";
-  if (text.includes("register")) return "Register";
-  if (text.includes("check")) return "Check";
+  const route = path.dirname(rel);
+  const title = (route + " " + titleFrom(html, rel)).toLowerCase();
+  const text = (route + " " + html).toLowerCase();
+  const kindIn = (value) => {
+    if (value.includes("rechner")) return "Rechner";
+    if (value.includes("scanner")) return "Scanner";
+    if (value.includes("dashboard")) return "Dashboard";
+    if (value.includes("register")) return "Register";
+    if (value.includes("check")) return "Check";
+    if (value.includes("radar")) return "Radar";
+    if (value.includes("monitor")) return "Monitor";
+    if (value.includes("matrix")) return "Matrix";
+    if (value.includes("index")) return "Index";
+    if (value.includes("score")) return "Score";
+    if (value.includes("profil")) return "Profil";
+    return "";
+  };
+  const classified = kindIn(title) || kindIn(text);
+  if (classified) return classified;
   if (rel.startsWith("erleben/")) return "Demo";
-  if (text.includes("gesetz") || text.includes("rechtsmodell")) return "Rechtsmodell";
+  if (title.includes("gesetz") || title.includes("rechtsmodell")) return "Rechtsmodell";
   return "Methode";
 }
 
@@ -87,6 +103,12 @@ function kindWithArticle(kind) {
     Dashboard: "Ein Dashboard",
     Register: "Ein Register",
     Check: "Ein Check",
+    Radar: "Ein Radar",
+    Monitor: "Ein Monitor",
+    Matrix: "Eine Matrix",
+    Index: "Ein Index",
+    Score: "Ein Score",
+    Profil: "Ein Profil",
     Demo: "Eine Demo",
     Rechtsmodell: "Ein Rechtsmodell",
     Methode: "Eine Methode",
@@ -96,9 +118,8 @@ function kindWithArticle(kind) {
 
 function statusFor(kind, rel, html) {
   const text = `${rel} ${html}`.toLowerCase();
-  if (text.includes("in vorbereitung")) return "in Vorbereitung";
   if (text.includes("arbeitsfassung") || text.includes("modellfassung")) return "Modellfassung";
-  if (kind === "Demo" || kind === "Rechner" || kind === "Scanner" || kind === "Check") return "Demo / Modell";
+  if (["Demo", "Rechner", "Scanner", "Check", "Radar", "Monitor", "Matrix", "Index", "Score", "Profil"].includes(kind)) return "Modellhafte Einordnung";
   return "Methodik / Referenz";
 }
 
@@ -176,19 +197,47 @@ function replaceMarked(html, block) {
   return html.replace("</main>", `${block}\n    </main>`);
 }
 
-const files = targetRoots
-  .flatMap((dir) => walk(path.join(root, dir)))
-  .filter((file) => !skipFiles.has(path.relative(root, file).replaceAll(path.sep, "/")));
+function selectedFiles() {
+  if (!onlyArg) {
+    return targetRoots
+      .flatMap((dir) => walk(path.join(root, dir)))
+      .filter((file) => !skipFiles.has(path.relative(root, file).replaceAll(path.sep, "/")));
+  }
+
+  return onlyArg
+    .slice("--only=".length)
+    .split(",")
+    .map((entry) => entry.trim())
+    .filter(Boolean)
+    .map((relativePath) => {
+      const file = path.resolve(root, relativePath);
+      const rel = path.relative(root, file).replaceAll(path.sep, "/");
+      const belongsToToolTemplate = targetRoots.some((dir) => rel.startsWith(`${dir}/`));
+      if (!belongsToToolTemplate || rel.startsWith("../") || !rel.endsWith(".html")) {
+        throw new Error(`Ungültiges Ziel für die Toolvorlage: ${relativePath}`);
+      }
+      if (!fs.existsSync(file)) throw new Error(`Zieldatei nicht gefunden: ${relativePath}`);
+      return file;
+    });
+}
+
+const files = selectedFiles();
 
 let changed = 0;
+const stale = [];
 for (const file of files) {
   const html = fs.readFileSync(file, "utf8");
   if (!html.includes("<main")) continue;
   const next = replaceMarked(html, blockFor(file));
   if (next !== html) {
-    fs.writeFileSync(file, next);
     changed += 1;
+    if (checkOnly) stale.push(path.relative(root, file).replaceAll(path.sep, "/"));
+    else fs.writeFileSync(file, next);
   }
+}
+
+if (checkOnly && stale.length) {
+  throw new Error(`ToolTemplate2.0 ist nicht synchron: ${stale.join(", ")}`);
 }
 
 const report = {
@@ -196,10 +245,12 @@ const report = {
   checked_files: files.length,
   updated_files: changed,
 };
-fs.mkdirSync(path.join(root, "reports/2-0-traceability"), { recursive: true });
-fs.writeFileSync(
-  path.join(root, "reports/2-0-traceability/tool-template-2-0-application.json"),
-  `${JSON.stringify(report, null, 2)}\n`,
-);
+if (!checkOnly) {
+  fs.mkdirSync(path.join(root, "reports/2-0-traceability"), { recursive: true });
+  fs.writeFileSync(
+    path.join(root, "reports/2-0-traceability/tool-template-2-0-application.json"),
+    `${JSON.stringify(report, null, 2)}\n`,
+  );
+}
 
-console.log(`ToolTemplate2.0 applied: ${changed} files updated, ${files.length} checked.`);
+console.log(`ToolTemplate2.0 ${checkOnly ? "checked" : "applied"}: ${changed} ${checkOnly ? "differences" : "files updated"}, ${files.length} checked.`);

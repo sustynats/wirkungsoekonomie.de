@@ -1,16 +1,16 @@
 # Das Apfelbeispiel und die Produktwirkungsrechnung im Alltag
 
 
-**Untertitel:** Automatisierte Einstufung, Scorecard, Steuerklasse und Preisschild am kleinsten verständlichen Produktfall
+**Untertitel:** Scorecard, Prüfpfad, Preis-Testannahme und Preisschild am kleinsten verständlichen Produktfall
 
 
 **Autorin:** Natalie Weber
 
 **Referenz:** Wirkungsökonomie
 
-**Version:** v1.0
+**Version:** v1.1
 
-**Stand:** 24. Mai 2026
+**Stand:** 2. August 2026
 
 
 > Der Apfel ist kein Symbol. Er ist der kleinste vollständige Testfall für ehrliche Preise.
@@ -18,7 +18,7 @@
 
 ## Kurzprofil
 
-- **Unterbereich:** Apfelbeispiel, Produktdemo, automatisierte Einstufung
+- **Unterbereich:** Apfelbeispiel, Produktdemo, nachvollziehbarer Prüfpfad
 
 - **Ziel:** Die Logik der Wirkungsumsatzsteuer an einem alltagsnahen Produkt nachvollziehbar machen.
 
@@ -43,7 +43,7 @@
 
 6. Scorecard, Benchmarks und Reverse Merit Order
 
-7. Automatisierte Einstufung: Ablaufmodell
+7. Prüfpfad: Ablaufmodell
 
 8. Fallvergleich: Regionaler Bio-Apfel und importierter Apfel
 
@@ -65,7 +65,7 @@
 ## Executive Summary
 
 
-Dieses Detailkonzept macht das Apfelbeispiel zum kleinsten vollständigen Demonstrationsfall der Wirkungsumsatzsteuer. Es zeigt, wie aus einem alltäglichen Produkt ein nachvollziehbarer Wirkungs- und Steuerfall wird: NACE-Zuordnung, relevante SDGs, Datenquellen, WÖk-IDs, Scorecard, Reverse Merit Order, Steuerklasse, Preisschild und Einspruchspfad.
+Dieses Detailkonzept macht das Apfelbeispiel zum kleinsten vollständigen Demonstrationsfall der Wirkungsumsatzsteuer. Es zeigt, wie aus einem alltäglichen Produkt ein nachvollziehbarer Wirkungs- und Prüfpfad wird: NACE-Zuordnung, relevante SDGs, Datenquellen, WÖk-IDs, Scorecard, Reverse Merit Order, Prüfstatus, Preisschild und Einspruchspfad. Der Score liefert keine automatische Tarifentscheidung.
 
 Der Apfel eignet sich, weil er einfach verständlich und zugleich systemisch reich ist. Er berührt Ernährung, Wasser, Boden, Biodiversität, Pestizide, Saisonarbeit, Lagerung, Transport, Verpackung, regionale Versorgung und Verbraucherinformation. Genau daran lässt sich zeigen, dass Wirkung nicht moralische Behauptung ist, sondern strukturierte Zustandsbewertung.
 
@@ -85,7 +85,7 @@ Die Wirkungsökonomie korrigiert das nicht durch Konsumvorschriften. Sie macht d
 
 | --- | --- |
 
-| Steuersatz nach Produktkategorie | Steuerklasse nach gemessener Wirkung |
+| Steuersatz nach Produktkategorie | Wirkungsprofil als Evidenz für einen gesetzlich bestimmten Tarifrahmen |
 
 | Siegel als Zusatzinformation | Scorecard als geprüfte Rückkopplung |
 
@@ -117,7 +117,7 @@ Der Lebenszyklus umfasst Anbau, Betriebsmittel, Bewässerung, Ernte, Lagerung, P
 
 | Datenstatus | Primärdaten + Sekundärdaten + Audit | bestimmt Vertrauensniveau |
 
-| Ergebnis | FinalScore und Steuerklasse | wirkt auf Preis und Vorsteuerlogik |
+| Ergebnis | FinalScore als Engpasssignal und Prüfstatus | informiert Prüfung, Preis-Testannahme und Vorsteuerlogik; leitet keinen Satz ab |
 
 
 ## Relevante SDGs und SDG+-Dimensionen
@@ -151,7 +151,7 @@ SDG+ ergänzt die klassische SDG-Logik dort, wo Daten, Vertrauen und Information
 
 Das Apfelmodell nutzt unterschiedliche Datenquellen. Primärdaten stammen vom Betrieb, Packhaus, Händler oder Logistiker. Sekundärdaten ergänzen dort, wo betriebsspezifische Daten fehlen, etwa bei Wasserstressregionen oder Transportemissionsfaktoren. Audits, Laboranalysen und Zertifizierungen erhöhen die Datenqualität, ersetzen aber nicht die Scorecardlogik.
 
-Fehlende Daten dürfen keinen Wettbewerbsvorteil erzeugen. Deshalb arbeitet die WÖk mit konservativer Bewertung, Nachreichungsfristen und Datenqualitätsklassen. Ein Produkt mit unklarer Lieferkette kann nicht dieselbe Einstufung erhalten wie ein Produkt mit geprüften Daten.
+Fehlende Daten dürfen keinen Wettbewerbsvorteil erzeugen. Deshalb arbeitet die WÖk mit konservativer Bewertung, Nachreichungsfristen und Datenqualitätsklassen. Ein Produkt mit unklarer Lieferkette kann nicht denselben Prüfstatus erhalten wie ein Produkt mit geprüften Daten.
 
 Der digitale Produktpass wird zum Produktgedächtnis. Er trägt Daten über Herkunft, Lebenszyklus, Material, Lagerung, Transport, Zertifikate, Prüfstatus und Score-Entscheidung.
 
@@ -196,12 +196,12 @@ Für den Apfel ist diese Engpasslogik besonders wichtig, weil einzelne Produktke
 | Biodiversität | Boden, Habitat, Pestiziddruck | regenerative Praxis wird belohnt |
 
 
-## Automatisierte Einstufung: Ablaufmodell
+## Prüfpfad: Ablaufmodell
 
 
-Automatisierte Einstufung bedeutet nicht, dass ein Algorithmus heimlich entscheidet. Es bedeutet, dass klare Regeln auf klare Daten angewendet werden. Das System muss nachvollziehbar, auditierbar und anfechtbar bleiben.
+Der Prüfpfad bedeutet nicht, dass ein Algorithmus heimlich entscheidet. Er macht transparent, welche Daten und Regeln zu welchem Wirkungsprofil führen. Das System muss nachvollziehbar, auditierbar und anfechtbar bleiben.
 
-Der Ablauf beginnt mit Produktidentifikation, führt über Datenabruf und Scoreberechnung zur Steuerklasse und endet mit Preisschild, Rechnung und Produktpass. Jede Entscheidung bleibt versioniert. Unternehmen können Daten nachreichen oder eine Einstufung anfechten; Verbraucher:innen und Zivilgesellschaft können Fehlhinweise melden.
+Der Ablauf beginnt mit Produktidentifikation, führt über Datenabruf und Scoreberechnung zu Engpasssignal und Prüfstatus und endet mit Produktpass und Verbraucherinformation. Ein rechtlicher Tarif kann nur in einem gesonderten, gesetzlich geregelten Verfahren bestimmt werden. Jede Entscheidung bleibt versioniert. Unternehmen können Daten nachreichen oder den Prüfstatus anfechten; Verbraucher:innen und Zivilgesellschaft können Fehlhinweise melden.
 
 - Produkt identifizieren: NACE, Warencode, Herkunft, Produktpass-ID.
 
@@ -213,7 +213,7 @@ Der Ablauf beginnt mit Produktidentifikation, führt über Datenabruf und Scoreb
 
 - Reverse Merit Order anwenden: schwächstes zentrales Feld begrenzt FinalScore.
 
-- Steuerklasse bestimmen und auf Preisschild/Rechnung ausgeben.
+- Engpasssignal und Prüfstatus ausgeben; nur bei einem rechtlich bestimmten Satz eine offen gekennzeichnete Preisrechnung zeigen.
 
 - Prüf- und Einspruchspfad offenhalten.
 
@@ -239,7 +239,7 @@ Die WÖk ersetzt Vorurteile durch Wirkungsdaten.
 
 | Biodiversität | Bio kann positiv sein | Plantagenstruktur relevant | Betriebs- und Habitatdaten zählen |
 
-| Steuerklasse | niedriger bei positiver Netto-Wirkung | höher bei Engpassfeld | Reverse Merit Order |
+| Prüfstatus | positive Aussage nur ohne kritischen Engpass | kritischer Befund begrenzt sie | Reverse Merit Order |
 
 
 ## Politische Anschlussfähigkeit und Umsetzungsoptionen
@@ -267,7 +267,7 @@ Entscheidend ist, dass Methodik, Daten, Schutzmechanismen und Korrekturpfade tra
 ## Website- und Tool-Integration
 
 
-Das Apfelbeispiel sollte auf der Website als interaktive Demo sichtbar werden. Nutzer:innen wählen Herkunft, Anbauform, Transport, Wasserstress, Arbeit und Verpackung. Die Demo zeigt, wie sich Feldscores, Engpassfeld und Steuerklasse verändern.
+Das Apfelbeispiel sollte auf der Website als interaktive Demo sichtbar werden. Nutzer:innen wählen Herkunft, Anbauform, Transport, Wasserstress, Arbeit und Verpackung. Die Demo zeigt, wie sich Feldscores, Engpassfeld und Prüfstatus verändern; ein Satz wird nicht aus diesen Werten berechnet.
 
 Wichtig ist die klare Kennzeichnung als Lernmodell. Die Demo darf nicht als echter Steuerbescheid erscheinen, sondern soll die Logik verständlich machen.
 
@@ -291,7 +291,7 @@ Wenn die Wirkungsökonomie am Apfel verständlich wird, kann sie später auf kom
 ## Rechenlogik und Beispielszene im Detail
 
 
-Die Wirkungsrechnung im Apfelmodell kann für die Website als transparente Beispielrechnung aufgebaut werden. Dabei wird nicht behauptet, dass die hier genannten Werte reale Produktdaten sind; sie dienen der Darstellung der Methode. Wichtig ist, dass Nutzer:innen erkennen: Die Steuerklasse entsteht nicht aus einem einzelnen Label, sondern aus mehreren nachvollziehbaren Feldern.
+Die Wirkungsrechnung im Apfelmodell kann für die Website als transparente Beispielrechnung aufgebaut werden. Dabei wird nicht behauptet, dass die hier genannten Werte reale Produktdaten sind; sie dienen der Darstellung der Methode. Wichtig ist: Das Wirkungsprofil entsteht nicht aus einem einzelnen Label, und aus ihm entsteht kein Steuersatz. Bei einer ausdrücklich gesetzten Testannahme, etwa `t = 10 %`, rechnet die Seite nur `P_brutto = P_netto × (1 + t)`; aus 1,00 EUR werden dann 1,10 EUR.
 
 Eine typische Demonstrationsrechnung kann drei Szenarien unterscheiden: regionaler Bio-Apfel ohne kritische Datenlücken, regionaler konventioneller Apfel mit Pestizid- und Biodiversitätsrisiko und Importapfel aus wasserstressreicher Region. Jede Variante zeigt andere Engpassfelder. So wird verständlich, warum eine pauschale Herkunfts- oder Bio-Logik nicht ausreicht.
 
@@ -321,7 +321,7 @@ Im Apfelbeispiel sollte deshalb immer sichtbar sein, ob die Wasser-, Arbeits-, K
 
 Ein gutes System unterscheidet zwischen methodischer Unsicherheit und fehlender Mitwirkung. Unsicherheit ist normal und muss offen markiert werden. Strategisches Nicht-Liefern von Daten darf dagegen keinen Vorteil erzeugen.
 
-| Datenstufe | Beschreibung | Folge für Einstufung |
+| Datenstufe | Beschreibung | Folge für den Prüfstatus |
 
 | --- | --- | --- |
 
@@ -331,7 +331,7 @@ Ein gutes System unterscheidet zwischen methodischer Unsicherheit und fehlender 
 
 | C | Sekundärdaten / Branchenwerte | konservativer Sicherheitsabschlag |
 
-| D | wesentliche Lücke | vorläufige Einstufung und Nachreichung |
+| D | wesentliche Lücke | vorläufiger Prüfstatus und Nachreichung |
 
 | E | unplausibel oder verweigert | Malus-/Prüfpfad |
 
@@ -339,13 +339,13 @@ Ein gutes System unterscheidet zwischen methodischer Unsicherheit und fehlender 
 ## Governance, Einspruch und Fehlerkorrektur
 
 
-Automatisierung braucht demokratische und rechtsstaatliche Einbettung. Ein Betrieb muss nachvollziehen können, warum sein Produkt eingestuft wurde. Er braucht die Möglichkeit, bessere Daten nachzureichen, methodische Fehler geltend zu machen oder eine falsche Zuordnung zu korrigieren.
+Ein digitaler Prüfpfad braucht demokratische und rechtsstaatliche Einbettung. Ein Betrieb muss nachvollziehen können, warum sein Produkt welches Wirkungsprofil und welchen Prüfstatus erhalten hat. Er braucht die Möglichkeit, bessere Daten nachzureichen, methodische Fehler geltend zu machen oder eine falsche Zuordnung zu korrigieren.
 
 Umgekehrt brauchen Verbraucher:innen, Wettbewerber und Zivilgesellschaft die Möglichkeit, offensichtliche Fehler, Scheinzertifikate oder irreführende Angaben zu melden. Ein Wirkungsregister darf also kein statisches Archiv sein, sondern muss als lernendes Korrektursystem angelegt werden.
 
 Die Methodik selbst darf nicht von einzelnen Konzernen oder Behörden allein kontrolliert werden. Sie braucht öffentliche Konsultation, wissenschaftliche Prüfung, Branchenwissen, Zivilgesellschaft und eine klare Rolle des Wirkungsrats.
 
-- Einspruchsfrist nach Einstufung und nach wesentlichen Methodikänderungen.
+- Einspruchsfrist nach einem Prüfstatus und nach wesentlichen Methodikänderungen.
 
 - Offener Prüfpfad: welche Daten, welche Benchmarks, welche Scorefunktion.
 
@@ -452,10 +452,10 @@ Das Apfelbeispiel muss kommunikativ sauber geführt werden. Es darf nicht so wir
 
 ## Vertiefung: Mindestanforderungen an den Apfel-Rechner
 
-Der Apfel-Rechner sollte nicht nur einen Steuersatz ausspucken. Er sollte den Denkweg zeigen: Produktidentifikation, relevante SDGs, Datenfelder, Score je Wirkungsfeld, schwächstes Feld, Steuerklasse, Verbraucherinformation und Verbesserungshebel. Damit wird das Tool pädagogisch und politisch anschlussfähig.
+Der Apfel-Rechner sollte keinen Steuersatz ausspucken. Er sollte den Denkweg zeigen: Produktidentifikation, relevante SDGs, Datenfelder, Score je Wirkungsfeld, schwächstes Feld, Prüfstatus, Verbraucherinformation und Verbesserungshebel. Eine separat eingegebene Preis-Testannahme darf nur als Rechenbeispiel erscheinen. Damit wird das Tool pädagogisch und politisch anschlussfähig.
 
 - Eingabe: Herkunft, Anbauform, Lagerung, Verpackung, Transportart, Wasserstress, Arbeitsnachweis, Pestizid-/Chemierisiko.
-- Ausgabe: Score je Feld, FinalScore, illustrative Steuerklasse, kurzer Erklärungstext.
+- Ausgabe: Score je Feld, FinalScore als Engpasssignal, Prüfstatus, kurzer Erklärungstext und gegebenenfalls eine ausdrücklich eingegebene Preis-Testannahme.
 - Transparenz: Markierung von Annahmen, Datenqualität und Unsicherheit.
 - Vergleich: regional frisch vs. Lagerapfel vs. Import per Schiff vs. Import per Luftfracht.
 - Schutz: Kein Personen- oder Betriebsranking im öffentlichen Tool, sondern Produktlogik und Lernbeispiel.

@@ -1,36 +1,5 @@
 (function initToolExamplesDashboard() {
-  const calculations = window.WoekImpactCalculations || {
-    calculateTSROI({
-      nwi = 0,
-      redLineActive = false,
-      transformation = 0,
-      systemLeverage = 1,
-      timeFactor = 1,
-      resilienceFactor = 1,
-      dataQuality = 1,
-      investment = 1
-    } = {}) {
-      if (redLineActive || Number(nwi) < 0) {
-        return {
-          tsroi: 0,
-          status: "blocked",
-          explanation: "T-SROI wird nicht positiv ausgewiesen, wenn NWI negativ ist oder eine rote Linie aktiv ist."
-        };
-      }
-      const safeInvestment = Math.max(1, Math.abs(Number(investment) || 1));
-      return {
-        tsroi:
-          ((Number(transformation) || 0) *
-            (Number(systemLeverage) || 1) *
-            (Number(timeFactor) || 1) *
-            (Number(resilienceFactor) || 1) *
-            Math.max(0, Math.min(1, Number(dataQuality) || 0))) /
-          safeInvestment,
-        status: "model",
-        explanation: "T-SROI ist ein modellhafter Transformationswert, keine operative Netto-Wirkungskennzahl."
-      };
-    }
-  };
+  const calculations = window.WoekImpactCalculations;
   window.ToolExamplesDashboardLoaded = true;
 
   function formatScore(value) {
@@ -121,37 +90,72 @@
     if (!calculations) return;
     const inputs = root.querySelectorAll("input, select");
     const output = root.querySelector("[data-tsroi-output]");
-    function value(name) {
+    function rawValue(name) {
       const field = root.querySelector(`[name="${name}"]`);
-      return field?.type === "checkbox" ? field.checked : Number(field?.value || 0);
+      return field?.type === "checkbox" ? field.checked : field?.value;
+    }
+    function percent(name) {
+      const raw = rawValue(name);
+      if (typeof raw === "string" && raw.trim() === "") return raw;
+      const parsed = Number(raw);
+      return Number.isFinite(parsed) ? parsed / 100 : raw;
+    }
+    function resetEvidenceForChangedAssumption(event) {
+      const name = event?.target?.name;
+      if (["redLineActive", "systemBoundaryDefined", "attributionDefined"].includes(name)) return;
+      const systemBoundary = root.querySelector('[name="systemBoundaryDefined"]');
+      const attribution = root.querySelector('[name="attributionDefined"]');
+      if (systemBoundary) systemBoundary.checked = false;
+      if (attribution) attribution.checked = false;
     }
     function update() {
-      const nwi = value("nwi");
-      const redLineActive = value("redLineActive");
+      const redLineActive = rawValue("redLineActive");
       const result = calculations.calculateTSROI({
-        nwi,
+        investment: rawValue("investment"),
+        annualDirectBenefit: rawValue("annualDirectBenefit"),
+        annualTransformativeBenefit: rawValue("annualTransformativeBenefit"),
+        annualHarm: rawValue("annualHarm"),
+        annualOperatingCost: rawValue("annualOperatingCost"),
+        years: rawValue("years"),
+        benefitDiscountRate: percent("discountRate"),
+        costDiscountRate: percent("discountRate"),
+        attribution: percent("attribution"),
+        deadweight: percent("deadweight"),
+        displacement: percent("displacement"),
+        uncertainty: percent("uncertainty"),
         redLineActive,
-        transformation: value("transformation"),
-        systemLeverage: value("systemLeverage"),
-        timeFactor: value("timeFactor"),
-        resilienceFactor: value("resilienceFactor"),
-        dataQuality: value("dataQuality"),
-        investment: value("investment")
+        dataQuality: rawValue("dataQuality"),
+        scores: {
+          mensch: rawValue("mensch"),
+          planet: rawValue("planet"),
+          demokratie: rawValue("demokratie"),
+        },
+        systemBoundaryDefined: rawValue("systemBoundaryDefined"),
+        attributionDefined: rawValue("attributionDefined"),
       });
       output.innerHTML = `
         <div class="result-card ${result.status === "blocked" ? "is-critical" : "is-positive"}">
-          <span>T-SROI-Modellwert</span>
-          <strong>${result.status === "blocked" ? "blockiert" : formatScore(result.tsroi)}</strong>
+          <span>Monetärer T-SROI</span>
+          <strong>${result.status === "blocked" ? "blockiert" : `${formatScore(result.tsroi)} : 1`}</strong>
           <p>${result.explanation}</p>
         </div>
         <div class="result-card">
-          <span>NWI-Eingangsschwelle</span>
-          <strong>${formatScore(nwi)}</strong>
-          <p>NWI bleibt operative Netto-Wirkungskennzahl. T-SROI bewertet Transformationswirkung nur nach geprüfter Netto-Wirkung.</p>
+          <span>Schutz-Gate</span>
+          <strong>${result.gate.passed ? "offen" : "blockiert"}</strong>
+          <p>${result.gate.passed ? `Diskontierter Netto-Nutzen: ${formatScore(result.benefitPv)} EUR; Ressourcen: ${formatScore(result.costPv)} EUR.` : result.gate.reasons.join(" ")}</p>
         </div>
       `;
     }
-    inputs.forEach((input) => input.addEventListener("input", update));
+    inputs.forEach((input) => {
+      input.addEventListener("input", (event) => {
+        resetEvidenceForChangedAssumption(event);
+        update();
+      });
+      input.addEventListener("change", (event) => {
+        resetEvidenceForChangedAssumption(event);
+        update();
+      });
+    });
     update();
   }
 

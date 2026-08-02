@@ -71,7 +71,7 @@ WORKPAPERS = [
         "title": "Whitepaper T-SROI",
         "slug": "whitepaper-t-sroi",
         "documentType": "whitepaper",
-        "status": "arbeitspapier",
+        "status": "ersetzt",
         "source": "Whitepaper-T-SROI.pdf",
         "originalName": "Whitepaper-T-SROI.pdf",
     },
@@ -111,7 +111,7 @@ WORKPAPERS = [
         "title": "WP Wohnungsmarkt",
         "slug": "wp-wohnungsmarkt",
         "documentType": "arbeitspapier",
-        "status": "arbeitspapier",
+        "status": "ersetzt",
         "source": "assets/pdf/working-paper-wohnungsmarkt.pdf",
         "originalName": "WP_Wohnungsmarkt_.pdf",
     },
@@ -259,6 +259,38 @@ def render_page(item: dict, paragraphs: list[str], issues: list[str], original_h
         issue_html = "<section class=\"callout\"><h2>Konvertierungshinweise</h2><ul>" + "".join(
             f"<li>{escape(issue)}</li>" for issue in issues
         ) + "</ul></section>"
+    if item["slug"] in {"whitepaper-t-sroi", "wp-wohnungsmarkt"}:
+        historical_label = "Whitepapers" if item["slug"] == "whitepaper-t-sroi" else "Working Papers zum Wohnungsmarkt"
+        frontmatter_html = f"""
+        <aside class="reference-term-notice" data-tsroi-rechenstandard-einordnung>
+          <strong>Fachliche Einordnung</strong>
+          <p>Die nachfolgende Multiplikatorlogik ist eine historische Darstellungsform. Für eine T-SROI-Berechnung gilt ausschließlich der <a href="../../werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/">aktuelle T-SROI-Rechenstandard</a>: direkte und separat belegte transformative Nutzenströme werden kausal begrenzt, Schäden innerhalb der Bilanzgrenze separat abgezogen und der Netto-Nutzen wird durch diskontierte Ressourcen geteilt. Datenqualität ist Schutz- und Prüfbedingung, kein Aufschlagsfaktor. Bei roten Linien, negativem Kernprofil oder unzureichender Evidenz lautet das Ergebnis „blockiert / nicht bewertbar“.</p>
+        </aside>
+        <p class="lead">Historische Onlinefassung des {historical_label}. Sie bleibt als Quellenfassung lesbar.</p>
+        <p><a class="button" href="../../werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/">Aktuellen T-SROI-Rechenstandard lesen</a> <a class="text-link" href="{escape(original_href)}">Historische PDF-Fassung öffnen</a></p>"""
+    else:
+        frontmatter_html = f"""
+        <p class="lead">Webfassung aus der gelieferten Originaldatei. Der Originaltext bleibt über die Originaldatei zitierbar.</p>
+        <p><a class="button" href="{escape(original_href)}">Originaldatei öffnen</a></p>
+        <section class="meta-box">
+          <h2>Metadaten</h2>
+          <dl>
+            <dt>Dokumenttyp</dt><dd>{escape(item["documentType"])}</dd>
+            <dt>Status</dt><dd>{escape(item["status"])}</dd>
+            <dt>Source-Version</dt><dd>2026.0</dd>
+            <dt>Web-Version</dt><dd>2026.1-import</dd>
+            <dt>Prüfstatus</dt><dd>partially-reviewed</dd>
+            <dt>Terminologiebasis</dt><dd>WOeK_Begriffsleitfaden_fuehrend_v1.0.md</dd>
+            <dt>Originaldatei</dt><dd>{escape(item["originalName"])}</dd>
+            <dt>Source-Hash</dt><dd>{escape(source_hash)}</dd>
+            <dt>Absätze/Textblöcke</dt><dd>{len(paragraphs)}</dd>
+          </dl>
+        </section>
+        <section class="callout">
+          <h2>Importstatus</h2>
+          <p>Diese Webfassung ist ein technischer Volltextimport. Layout, Fußnotenpositionen, komplexe Tabellen und eingebettete Grafiken können vom Original abweichen; die Originaldatei bleibt die zitierfähige Fassung.</p>
+          <p>Diskurs zu einzelnen Abschnitten wird in Phase 2 aktiviert; die Abschnitts- und Absatz-IDs sind vorbereitet.</p>
+        </section>"""
     return f"""<!DOCTYPE html>
 <html lang="de">
   <head>
@@ -290,27 +322,7 @@ def render_page(item: dict, paragraphs: list[str], issues: list[str], original_h
       <article class="article-shell">
         <nav class="breadcrumb"><a href="../">Dokumente</a> / {escape(item["title"])}</nav>
         <h1>{escape(item["title"])}</h1>
-        <p class="lead">Webfassung aus der gelieferten Originaldatei. Der Originaltext bleibt über die Originaldatei zitierbar.</p>
-        <p><a class="button" href="{escape(original_href)}">Originaldatei öffnen</a></p>
-        <section class="meta-box">
-          <h2>Metadaten</h2>
-          <dl>
-            <dt>Dokumenttyp</dt><dd>{escape(item["documentType"])}</dd>
-            <dt>Status</dt><dd>{escape(item["status"])}</dd>
-            <dt>Source-Version</dt><dd>2026.0</dd>
-            <dt>Web-Version</dt><dd>2026.1-import</dd>
-            <dt>Reviewstatus</dt><dd>partially-reviewed</dd>
-            <dt>Terminologiebasis</dt><dd>WOeK_Begriffsleitfaden_fuehrend_v1.0.md</dd>
-            <dt>Originaldatei</dt><dd>{escape(item["originalName"])}</dd>
-            <dt>Source-Hash</dt><dd>{escape(source_hash)}</dd>
-            <dt>Absätze/Textblöcke</dt><dd>{len(paragraphs)}</dd>
-          </dl>
-        </section>
-        <section class="callout">
-          <h2>Importstatus</h2>
-          <p>Diese Webfassung ist ein technischer Volltextimport. Layout, Fußnotenpositionen, komplexe Tabellen und eingebettete Grafiken können vom Original abweichen; die Originaldatei bleibt die zitierfähige Fassung.</p>
-          <p>Diskurs zu einzelnen Abschnitten wird in Phase 2 aktiviert; die Abschnitts- und Absatz-IDs sind vorbereitet.</p>
-        </section>
+        {frontmatter_html}
         {issue_html}
         <section>
           <h2>Web-Volltext</h2>

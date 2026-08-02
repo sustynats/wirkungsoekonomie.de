@@ -9,7 +9,7 @@
       "ESG",
       "Grundlagen"
     ],
-    "status": "current",
+    "status": "superseded",
     "stand": "2026",
     "summary": "Ein Handout zur Einordnung von Agenda 2030, SDGs, ESG und Wirkungsökonomie.",
     "audience": [
@@ -1537,9 +1537,9 @@
       "Stadt",
       "Mieten"
     ],
-    "status": "current",
+    "status": "superseded",
     "stand": "2026",
-    "summary": "Das Working Paper zeigt, wie Wohnen als Wirkungsfeld betrachtet werden kann: Bezahlbarkeit, Stabilität, Verdrängung, Klima und kommunale Verantwortung gehören zusammen.",
+    "summary": "Historische Quellenfassung zur Wohnwirkung mit vereinfachter T-SROI-Darstellung. Für T-SROI-Berechnungen gilt der aktuelle kausale und diskontierte Rechenstandard.",
     "audience": [
       "Kommunen",
       "Mieter:innen",
@@ -1547,11 +1547,11 @@
       "Politik"
     ],
     "keyPoints": [
-      "Wohnkosten zeigen nicht automatisch Wohnwirkung.",
-      "Wirkungsvermietung verbindet Bezahlbarkeit, Qualität, Stabilität und Zukunftsfähigkeit.",
-      "Kommunen brauchen steuerbare Daten, ohne Haushalte zu bewerten."
+      "Die Darstellung bleibt als historische Quellenfassung nachvollziehbar.",
+      "Die darin enthaltene T-SROI-Logik ist durch den aktuellen Rechenstandard ersetzt.",
+      "Wohnen wird über Systeme und Entscheidungen betrachtet, nicht über eine Bewertung von Menschen oder Haushalten."
     ],
-    "onlineUrl": "/bibliothek/working-paper-wohnungsmarkt/",
+    "onlineUrl": "/werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/",
     "sourceOnlineUrl": "/dokumente/wp-wohnungsmarkt/",
     "pdfUrl": "/assets/pdf/working-paper-wohnungsmarkt.pdf",
     "docxUrl": null,
@@ -1568,7 +1568,7 @@
     "relatedPages": [
       "/begriffe/wohnwirkung/"
     ],
-    "isArchive": false,
+    "isArchive": true,
     "isPublic": true,
     "sourceFormat": "internal",
     "publicFormats": [
@@ -9742,7 +9742,7 @@
   {
     "id": "topic-werkzeuge-impact-controlling-detailkonzepte-t-sroi",
     "slug": "detailkonzept-werkzeuge-impact-controlling-detailkonzepte-t-sroi",
-    "title": "T-SROI",
+    "title": "T-SROI-Rechenstandard",
     "type": "Konzeptpapier",
     "category": [
       "Werkzeuge",
@@ -9751,7 +9751,7 @@
     ],
     "status": "current",
     "stand": "2026",
-    "summary": "Transformational Social Return on Investment für Investitions-, Präventions- und Transformationswirkung.",
+    "summary": "Kausale, diskontierte Netto-Nutzenrechnung für Investitions- und Transformationsentscheidungen.",
     "audience": [
       "Praxis",
       "Politik",
@@ -9759,15 +9759,15 @@
       "Akademie"
     ],
     "keyPoints": [
-      "Das Konzeptpapier ordnet T-SROI fachlich und wirkungsökonomisch ein.",
-      "Es erklärt alte Logik, WÖk-Perspektive, Schutzgrenzen und politische Anschlussfähigkeit.",
-      "Die PDF-Fassung ist die Downloadfassung; die Seite selbst bleibt online lesbar."
+      "Direkte und separat belegte transformative Nutzenströme werden kausal begrenzt, Schäden separat abgezogen und Ressourcen diskontiert.",
+      "Rote Linien, negative Kernprofile und unzureichende Evidenz blockieren die positive Kennzahl.",
+      "Datenqualität ist eine Prüfbedingung; sie darf Nutzen nicht aufwerten und Schäden nicht abschwächen."
     ],
-    "onlineUrl": "/werkzeuge/impact-controlling/detailkonzepte/t-sroi/",
+    "onlineUrl": "/werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/",
     "sourceOnlineUrl": null,
-    "pdfUrl": "/assets/downloads/23_woek_impact_controlling_t_sroi_transformationsmessung_methodenpapier_v1_0.pdf",
+    "pdfUrl": "/assets/downloads/23_woek_impact_controlling_t_sroi_transformationsmessung_methodenpapier_v1_1.pdf",
     "docxUrl": null,
-    "fileSize": "0.2 MB",
+    "fileSize": "0.1 MB",
     "relatedTerms": [
       "scorecard",
       "nwi",

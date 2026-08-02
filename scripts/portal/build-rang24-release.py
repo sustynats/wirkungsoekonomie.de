@@ -365,7 +365,7 @@ def page_shell(path: Path, title: str, subtitle: str, body: str, extra_script: s
       <section class="hero"><div class="hero-grid"><div><nav class="breadcrumb" aria-label="Breadcrumb"><a href="{href(prefix, 'index.html')}">Start</a> / Website 1.0</nav><p class="hero-kicker">Masterbibliothek · Website 1.0</p><h1>{html.escape(title)}</h1><p class="hero-subtitle">{html.escape(subtitle)}</p><div class="hero-actions no-print"><button class="btn btn-secondary" type="button" onclick="window.print()">Seite drucken</button><a class="btn btn-primary" href="#bibliothek">Zur Bibliothek</a></div></div><aside class="card"><p class="card-kicker">Version</p><dl class="portal-meta-grid compact"><div><dt>Autorin</dt><dd>Natalie Weber</dd></div><div><dt>Referenz</dt><dd>Wirkungsökonomie</dd></div><div><dt>Version</dt><dd>1.0</dd></div><div><dt>Stand</dt><dd>25. Mai 2026</dd></div><div><dt>Status</dt><dd>Öffentliche Releaseübersicht</dd></div></dl></aside></div></section>
       {body}
     </main>
-    <footer class="site-footer"><div class="footer-inner"><div class="footer-brand"><strong>Wirkungsökonomie</strong><p>Für Mensch, Planet und Demokratie.</p></div><div class="footer-nav-group"><h2>Website 1.0</h2><div><a href="{href(prefix, 'fachbibliothek/')}">Fachbibliothek</a><a href="{href(prefix, 'downloads/')}">Downloads</a><a href="{href(prefix, 'tools/')}">Tools</a><a href="{href(prefix, 'website-1-0-release/')}">Releasebericht</a></div></div></div></footer>
+    <footer class="site-footer"><div class="footer-inner"><div class="footer-brand"><strong>Wirkungsökonomie</strong><p>Für Mensch, Planet und Demokratie.</p></div><div class="footer-nav-group"><h2>Website 1.0</h2><div><a href="{href(prefix, 'fachbibliothek/')}">Fachbibliothek</a><a href="{href(prefix, 'downloads/')}">Downloads</a><a href="{href(prefix, 'werkzeuge/')}">Werkzeuge</a><a href="{href(prefix, 'website-1-0-release/')}">Releasebericht</a></div></div></div></footer>
     <script src="{href(prefix, 'assets/js/main.js?v=20260612-mobile-table-fix')}"></script>
     {extra_script}
   </body>
@@ -591,7 +591,9 @@ def update_sitemap() -> None:
     sitemap = ROOT / "sitemap.xml"
     if not sitemap.exists():
         return
-    rels = ["fachbibliothek/", "downloads/", "tools/", "portale/", "sdg-sdgplus/", "website-1-0-release/"]
+    # /tools/ ist eine Auslieferungs-Kompatibilitätsroute auf /werkzeuge/ und
+    # gehört deshalb weder als kanonische Seite noch in die Sitemap.
+    rels = ["fachbibliothek/", "downloads/", "werkzeuge/", "portale/", "sdg-sdgplus/", "website-1-0-release/"]
     xml = sitemap.read_text(encoding="utf-8")
     for rel in rels:
         xml = re.sub(rf"\s*<url><loc>{re.escape(SITE + '/' + rel)}</loc><lastmod>[^<]+</lastmod></url>", "", xml)

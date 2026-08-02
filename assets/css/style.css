@@ -8659,12 +8659,12 @@ body .hero-system-visual.podcast-cover-visual img {
   text-align: right;
 }
 
-.live-reference-notice,
-.live-reference-addendum {
+.onlinefassung-hinweis,
+.onlinefassung-aktualisierung {
   border-left: 4px solid var(--green);
 }
 
-.live-reference-addendum ul {
+.onlinefassung-aktualisierung ul {
   display: flex;
   flex-wrap: wrap;
   gap: 0.45rem;
@@ -8672,7 +8672,7 @@ body .hero-system-visual.podcast-cover-visual img {
   list-style: none;
 }
 
-.live-reference-addendum li {
+.onlinefassung-aktualisierung li {
   padding: 0.18rem 0.55rem;
   border: 1px solid rgba(45, 125, 91, 0.28);
   border-radius: 999px;
@@ -13078,13 +13078,13 @@ body[data-reader-mode="lesen"] .article-shell {
 
 body[data-reader-mode="lesen"] .discussion-placeholder,
 body[data-reader-mode="lesen"] .version-summary,
-body[data-reader-mode="lesen"] .live-reference-notice {
+body[data-reader-mode="lesen"] .onlinefassung-hinweis {
   display: none;
 }
 
 body[data-reader-mode="lesen"] .source-chip,
-body[data-reader-mode="lesen"] .live-reference-addendum,
-body[data-reader-mode="lesen"] .live-reference-patch {
+body[data-reader-mode="lesen"] .onlinefassung-aktualisierung,
+body[data-reader-mode="lesen"] .onlinefassung-nachtrag {
   filter: saturate(0.78);
 }
 
@@ -13113,11 +13113,11 @@ body[data-reader-mode="quellen"] .article-shell h3[id*="endnoten"] {
   outline-offset: 6px;
 }
 
-body[data-reader-mode="updates"] .live-reference-addendum,
-body[data-reader-mode="updates"] .live-reference-patch,
+body[data-reader-mode="updates"] .onlinefassung-aktualisierung,
+body[data-reader-mode="updates"] .onlinefassung-nachtrag,
 body[data-reader-mode="updates"] .logic-update-box,
 body[data-reader-mode="updates"] .version-summary,
-body[data-reader-mode="updates"] .live-reference-notice {
+body[data-reader-mode="updates"] .onlinefassung-hinweis {
   background: rgba(236, 244, 239, 0.86);
   box-shadow: 0 0 0 3px rgba(47, 125, 92, 0.18);
 }
@@ -17166,7 +17166,7 @@ a.principle-card:hover,
 
 .workpaper-reader .meta-box,
 .workpaper-reader .callout,
-.workpaper-reader .live-reference-notice {
+.workpaper-reader .onlinefassung-hinweis {
   max-width: none;
   margin: clamp(1.1rem, 2.8vw, 1.8rem) 0;
 }
@@ -18182,13 +18182,6 @@ body .audio-transcript-note {
   }
 }
 
-/* =====================================================================
-   WÖk Design-Refresh (Codex, 2026-07-03) - Override-Layer am Dateiende.
-   Zweck: echte selbst-gehostete Schriften (DSGVO), ruhigere Typo-Skala,
-   konsistente Abstands-Tokens, robuste (umbrechende) Mehrspalten-Grids.
-   Reversibel: dieser Block kann als Ganzes entfernt werden.
-   ===================================================================== */
-
 /* 1) Selbst-gehostete Schriften - DSGVO-konform, kein Google-CDN */
 @font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url("../fonts/inter-400.woff2") format("woff2");}
 @font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url("../fonts/inter-500.woff2") format("woff2");}
@@ -18296,7 +18289,6 @@ body.theme-akademie .akademie-wordmark-2{
   body.theme-akademie .akademie-brand{ flex-direction:column; align-items:flex-start; gap:.6rem; }
 }
 
-/* === Hauptdomain-Redesign (Claude) – Schritt 1: mehr Kontrast & Ruhe (Institut-Vorbild) === */
 /* Überschriften ruhiger (weniger dominant) */
 .hero-title{ font-weight:600; font-size:clamp(1.95rem,4vw,2.7rem); letter-spacing:-0.02em; }
 h2, .section-title{ font-weight:600; }
@@ -18387,17 +18379,6 @@ h2, .section-title{ font-size:clamp(1.5rem,3vw,2rem); }
 h3{ font-size:1.2rem; }
 h1, h2, h3, .hero-title, .section-title{ line-height:1.15; }
 body{ line-height:1.6; }
-
-/* =====================================================================
-   Mobile-Konsolidierung 2026-07 (Claude, Hauptdomain-Redesign P1)
-   Zweck: alle mehrspaltigen Grids unter 760px sicher einspaltig,
-   4/5-spaltige Card-Grids zwischen 761–900px auf 2 Spalten begrenzen,
-   Überschriften ausbalancieren, Tabellen-Mindestbreiten entschärfen.
-   Grundlage: systematischer grep-Audit aller repeat(n>=3,…)-Grids ohne
-   eigenen Mobile-Breakpoint. Bewusst NICHT angefasst: .qr-grid
-   (dekoratives QR-Visual, repeat(9, 0.52rem) ≈ 67px breit, kein Overflow).
-   Reversibel: Block kann als Ganzes entfernt werden.
-   ===================================================================== */
 
 /* Überschriften ruhiger umbrechen (ergänzt .hero-title, Basisregel ~Z.1960) */
 h1, h2, h3 {

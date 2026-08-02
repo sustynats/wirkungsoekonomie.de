@@ -1,12 +1,13 @@
 # Logic-Consistency-Report
 
-Stand: 2026-07-30
+Stand: 2026-08-02
 
 Prüft zentrale Logikfelder: Wirkung, Wirkungspotenzial, T-SROI/NWI, WStG/WUStG/WEstG und Wirkungseinkommen.
 
 ## Zusammenfassung
 
-- confirmed-current: 5
+- confirmed-current: 3
+- needs-human-review: 2
 
 ## Fundstellen
 
@@ -30,12 +31,12 @@ Prüft zentrale Logikfelder: Wirkung, Wirkungspotenzial, T-SROI/NWI, WStG/WUStG/
 
 ### /referenz/kapitel-034-t-sroi-und-systemische-transformationsmessung/ - logic-inconsistency
 
-- Status: confirmed-current
-- Schweregrad: low
+- Status: needs-human-review
+- Schweregrad: high
 - Abschnitt: `woek-main-2026-k034-lr-2026-2`
-- Quelle: Whitepaper T-SROI
-- Aktion: confirmed-current
-- Live-Referenztext/Hinweis: Live-Reference-Addendum vorhanden.
+- Quelle: T-SROI-Rechenstandard v1.1 (WÖK-Q-1024)
+- Aktion: update-required
+- Live-Referenztext/Hinweis: Addendum mit T-SROI und NWI ergänzen.
 
 ### /referenz/kapitel-038-das-wustg-und-die-produktwirkungssteuer/ - cross-document-consistency
 
@@ -48,9 +49,9 @@ Prüft zentrale Logikfelder: Wirkung, Wirkungspotenzial, T-SROI/NWI, WStG/WUStG/
 
 ### /referenz/kapitel-057-wirkungseinkommen/ - logic-inconsistency
 
-- Status: confirmed-current
-- Schweregrad: low
+- Status: needs-human-review
+- Schweregrad: high
 - Abschnitt: `woek-main-2026-k057-lr-2026-2`
 - Quelle: WP_Einkommen / Wenn Maschinen arbeiten
-- Aktion: confirmed-current
-- Live-Referenztext/Hinweis: Live-Reference-Addendum vorhanden.
+- Aktion: update-required
+- Live-Referenztext/Hinweis: Addendum mit nicht als altes BGE ergänzen.

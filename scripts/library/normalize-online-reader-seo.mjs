@@ -9,6 +9,8 @@ const SITE_URL = "https://wirkungsoekonomie.de";
 const STATUS_MARKER = "data-reader-version-status";
 const TOC_START = "<!-- reader-generated-toc:start -->";
 const TOC_END = "<!-- reader-generated-toc:end -->";
+const LEADING_GLOSSARY_READER_ROUTE = "/bibliothek/eintraege/leading-reference-bibliothek-woek-begriffsleitfaden-fuehrend-index-html/lesen/";
+const LEADING_GLOSSARY_FIRST_TERM_ROUTE = "../01-wirkungsokonomie/";
 const ALIAS_BY_SOURCE_ROUTE = new Map(readerRouteAliases.map((alias) => [alias.from, alias]));
 const CHAPTER_TITLE_OVERRIDES = new Map(readerRouteAliases.map((alias) => [alias.to, alias.title]));
 
@@ -106,12 +108,25 @@ function isRedirect(html) {
 
 function redirectStub(alias) {
   const destination = escapeHtml(alias.to);
+  const historical = alias.historical === true;
+  const title = historical
+    ? "Historische Fassung ersetzt | Bibliothek der Wirkungsökonomie"
+    : "Lesefassung verschoben | Bibliothek der Wirkungsökonomie";
+  const heading = historical
+    ? "Diese historische Fassung ist ersetzt"
+    : "Diese Lesefassung wurde verschoben";
+  const explanation = historical
+    ? "Die frühere Fassung ist kein aktueller fachlicher Stand mehr. Du wirst zur aktuellen Einordnung weitergeleitet."
+    : "Du wirst zur aktuellen, zitierbaren Lesefassung weitergeleitet.";
+  const linkLabel = historical && alias.title
+    ? `${alias.title} öffnen`
+    : "Zur Lesefassung";
   return `<!DOCTYPE html>
 <html lang="de">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lesefassung verschoben | Bibliothek der Wirkungsökonomie</title>
+    <title>${escapeHtml(title)}</title>
     <meta name="robots" content="noindex,follow">
     <meta http-equiv="refresh" content="0; url=${destination}">
     <link rel="canonical" href="${SITE_URL}${destination}">
@@ -120,9 +135,9 @@ function redirectStub(alias) {
   <body>
     <main class="section" data-search-exclude>
       <article class="article-shell reference-reader">
-        <h1>Diese Lesefassung wurde verschoben</h1>
-        <p>Du wirst zur aktuellen, zitierbaren Lesefassung weitergeleitet.</p>
-        <p><a class="btn btn-primary" href="${destination}">Zur Lesefassung</a></p>
+        <h1>${escapeHtml(heading)}</h1>
+        <p>${escapeHtml(explanation)}</p>
+        <p><a class="btn btn-primary" href="${destination}">${escapeHtml(linkLabel)}</a></p>
       </article>
     </main>
   </body>
@@ -191,6 +206,15 @@ function repairKnownReaderNavigation(file, html) {
     }
   }
   return html;
+}
+
+function repairLeadingGlossaryReaderNavigation(file, html) {
+  const route = routeFor(file);
+  if (!route.startsWith(LEADING_GLOSSARY_READER_ROUTE)) return html;
+
+  // The source export used a non-existent “dossier” placeholder for the first
+  // substantive chapter. Both affected links mean “Wirkungsökonomie”.
+  return replaceHref(html, "../dossier/", LEADING_GLOSSARY_FIRST_TERM_ROUTE);
 }
 
 function ensurePoliticalStandardToc(html, file) {
@@ -300,6 +324,12 @@ function isHistoricalStatus(status) {
 }
 
 function replacementFor(meta, base) {
+  if (meta?.successorUrl) {
+    return {
+      href: `${base}${String(meta.successorUrl).replace(/^\/+/, "")}`,
+      label: meta.successorLabel || "Aktuelle Einordnung öffnen"
+    };
+  }
   const searchable = `${meta?.title || ""} ${meta?.primaryUrl || ""} ${meta?.shortDescription || ""}`.toLocaleLowerCase("de-DE");
   if (/t-sroi|impact.controlling|wirkungscontrolling|working.paper.wohnungsmarkt/u.test(searchable)) {
     return { href: `${base}werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/`, label: "Aktuellen T-SROI-Rechenstandard lesen" };
@@ -315,7 +345,10 @@ function replacementFor(meta, base) {
 
 function statusBlock(meta, documentTitle, file) {
   const status = statusKey(meta?.status);
-  const config = STATUS_COPY.get(meta?.status) || STATUS_COPY.get(status);
+  const standardConfig = STATUS_COPY.get(meta?.status) || STATUS_COPY.get(status);
+  const config = isHistoricalStatus(status) && meta?.historicalNotice
+    ? { label: "Historische, ersetzte Fassung", text: meta.historicalNotice }
+    : standardConfig;
   if (!config) return "";
   const base = relativeBase(file);
   const documentEntry = `${base}bibliothek/eintraege/${meta.detailSlug}/`;
@@ -355,14 +388,25 @@ function setNoindexFollow(html) {
   return html.replace(/<head(\s[^>]*)?>/iu, (head) => `${head}\n    <meta name="robots" content="noindex,follow">`);
 }
 
+function setSearchExclude(html) {
+  return html.replace(/<main\b([^>]*)>/iu, (tag, attributes) => {
+    if (/\bdata-search-exclude\b/iu.test(attributes)) return tag;
+    return `<main${attributes} data-search-exclude>`;
+  });
+}
+
 function normalizeEditorialLabels(html) {
   return normalizeEditorialLabelText(html);
 }
 
 function removeEditorialReaderText(html) {
   const technicalNote = /\b(?:codex|codex)\b|\b(?:interne[rs]?\s+)?repository(?:-|\s)*(?:anweisungen?|pfade?|strukturen?|informationen?|hinweise?)\b|\bredaktioneller\s+hinweis\b|\b(?:interne[rs]?\s+)?(?:arbeitsauftrag|prompts?|build[-\s]*(?:schritte?|notizen?)|testnotizen?|ki-anweisungen?)\b/iu;
+  // Solche Fragen gehören zum Entstehungsprozess, nie in einen zitierbaren
+  // Volltext. Die Regel greift auf Absatz-/Listenelementebene, damit keine
+  // fachliche Passage rund um die Frage mit gelöscht wird.
+  const editorialPrompt = /\b(?:möchtest\s+du|moechtest\s+du|soll\s+ich)\b[\s\S]{0,320}\b(?:abschnitt|kapitel|teil|weiter(?:schreiben|führen)|schreibe(?:n)?)\b/iu;
   const withoutNotes = normalizeEditorialLabels(html)
-    .replace(/<(p|li|h[1-6])\b[^>]*>([\s\S]*?)<\/\1>/giu, (block, tag, inner) => technicalNote.test(textFromHtml(inner)) ? "" : block);
+    .replace(/<(p|li|h[1-6])\b[^>]*>([\s\S]*?)<\/\1>/giu, (block, tag, inner) => (technicalNote.test(textFromHtml(inner)) || editorialPrompt.test(textFromHtml(inner))) ? "" : block);
   return withoutNotes.replace(/<p\b[^>]*>\s*[-–-]?\s*(?:Anweisungen|Umsetzungen?)\.?\s*<\/p>/giu, "");
 }
 
@@ -452,6 +496,7 @@ for (const file of readerFiles(LIBRARY_ROOT)) {
   }
   html = updateBreadcrumb(html, documentTitle);
   html = repairKnownReaderNavigation(file, html);
+  html = repairLeadingGlossaryReaderNavigation(file, html);
 
   if (/<title\b[^>]*>[\s\S]*?<\/title>/iu.test(html)) {
     html = html.replace(/<title\b[^>]*>[\s\S]*?<\/title>/iu, `<title>${escapeHtml(title)}</title>`);
@@ -470,6 +515,7 @@ for (const file of readerFiles(LIBRARY_ROOT)) {
   html = insertStatusBlock(html, statusBlock(meta, documentTitle, file));
   if (isHistoricalStatus(meta?.status)) {
     html = setNoindexFollow(html);
+    html = setSearchExclude(html);
     historicalPages += 1;
   }
 

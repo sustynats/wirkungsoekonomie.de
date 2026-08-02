@@ -341,7 +341,7 @@ def register_page(items, sources, methods, data_quality, changelog, source_hash)
         <nav class="breadcrumb"><a href="../index.html">Start</a> / <a href="../register/">Register</a></nav>
         <p class="hero-kicker">Public Research Draft · {VERSION}</p>
         <h1>WÖk-ID Register Explorer</h1>
-        <p class="hero-subtitle">Filterbares Forschungsregister mit {len(items)} WÖk-IDs, Quellen, Formeln, Benchmarks und Reviewstatus.</p>
+        <p class="hero-subtitle">Filterbares Forschungsregister mit {len(items)} WÖk-IDs, Quellen, Formeln, Benchmarks und Prüfstatus.</p>
         <div class="document-card-badges">{badge_html(["public research", "not official"])}</div>
         <p class="callout warning">Demo- und Forschungsumgebung. Nicht amtlich. Keine automatische Bewertung, keine Steuerentscheidung und keine Beratung.</p>
       </section>
@@ -474,7 +474,7 @@ def detail_page(item, sources_by_id):
           <dt>Source Specificity</dt><dd>{esc(item["source_specificity"])}</dd>
         </dl><a class="btn btn-secondary" href="mailto:kontakt@wirkungsoekonomie.de?subject=Feedback%20zu%20{esc(item["id"])}">Fehler / Ergänzung melden</a></aside>
       </section>"""
-    return layout(f'{item["id"]} – {item["item"]}', f'Detailseite zur WÖk-ID {item["id"]} mit Quellen, Berechnung, Benchmark und Reviewstatus.', body, "../../")
+    return layout(f'{item["id"]} – {item["item"]}', f'Detailseite zur WÖk-ID {item["id"]} mit Quellen, Berechnung, Benchmark und Prüfstatus.', body, "../../")
 
 
 def methodology_page():

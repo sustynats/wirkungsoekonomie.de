@@ -80,8 +80,16 @@ Die operative Mechanik beginnt mit der Zuordnung des Kapitalflusses zu einem Wir
 | 3. Datenqualität | Welche Daten sind verfügbar und prüfbar? | CSRD/ESRS, Taxonomie, DPP, Audit |
 | 4. Risiko | Welche negativen Wirkungsrisiken bestehen? | Reverse Merit Order, rote Linien |
 | 5. Netto-Wirkung | Welche positive Netto-Wirkung bleibt? | NWI, Portfolio-Wirkungsindex |
-| 6. Transformation | Verändert der Kapitalfluss Pfade oder nur Symptome? | T-SROI, Transformationsmultiplikator |
+| 6. Transformation | Verändert der Kapitalfluss Pfade oder nur Symptome? | T-SROI mit separat belegten transformativen Nutzenströmen und Schutz-Gate |
 | 7. Rückkopplung | Wie wirkt das Ergebnis auf Zins, Steuer, Förderung, Versicherung? | WStG, Wirkungsfonds, Kreditkonditionen |
+
+### T-SROI bei Kapitalentscheidungen: prüfbare Rechenregel
+
+T-SROI ist weder ein Renditeaufschlag noch eine freie Faktorlogik. Die Kennzahl darf nur bei offenem Schutz-Gate ausgewiesen werden: rote Linien, Systemgrenze, Vergleichsfall, Preisbasis, Zurechnung und Evidenz sind vor der Rechnung zu dokumentieren. Direkter Nutzen, separat belegter transformativer Nutzen, Schäden und Ressourcen werden in Euro derselben Preisbasis erfasst.
+
+T-SROI = Summe t=1..T [((B_direkt,t + B_transformativ,t) * a_t * (1-d_t) * (1-v_t) - S_t) / (1+r)^t] / Summe t=0..T [(I_t + K_t) / (1+r_K)^t].
+
+Zurechnung a_t, Deadweight d_t und Verdrängung v_t begrenzen nur den beanspruchten Nutzen. Der Schaden S_t bleibt vollständig sichtbar und wird nicht mit einem Unsicherheits- oder Resilienzfaktor gekürzt. Bei 100 Euro direktem Nutzen, 25 Euro separat belegtem Transformationsnutzen, 60 Euro Schaden, fünf Prozent Diskontsatz und 50 Euro Investition bei t=0 ergibt sich (100 + 25 - 60) / 1,05 / 50 = 1,24 Euro/Euro. Bei 20 Prozent Unsicherheit auf den Nutzen beträgt die konservative Untergrenze (125 * 0,8 - 60) / 1,05 / 50 = 0,76 Euro/Euro. Reichweite, Resilienz und Datenqualität sind Prüf- und Evidenzangaben, keine Geldwertaufschläge.
 
 
 ## Daten, Indikatoren und Kapitalwirkungsindex

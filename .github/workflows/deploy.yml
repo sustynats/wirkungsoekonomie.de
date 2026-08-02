@@ -30,7 +30,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install Python build dependencies
-        run: python -m pip install --upgrade pip openpyxl
+        run: python -m pip install --upgrade pip openpyxl pymupdf
       - name: Build static reference data and search
         run: npm run build
       - name: Build public deploy artifact

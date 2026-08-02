@@ -1,22 +1,10 @@
 const dashboardRoot = document.querySelector("[data-scorecard-dashboard]");
-const euro = new Intl.NumberFormat("de-DE", {
-  style: "currency",
-  currency: "EUR",
-  maximumFractionDigits: 2
-});
 
 let scorecardItems = [];
 let selectedScorecardId = null;
 
-const TAX_BANDS = [
-  { score: 3, label: "Transformativ", rate: "0 %", tone: "good" },
-  { score: 2, label: "Sehr positiv", rate: "0 %", tone: "good" },
-  { score: 1, label: "Positiv", rate: "5 %", tone: "good" },
-  { score: 0, label: "Neutral", rate: "10 %", tone: "mid" },
-  { score: -1, label: "Schädlich", rate: "15 %", tone: "bad" },
-  { score: -2, label: "Sehr schädlich", rate: "20 %", tone: "bad" },
-  { score: -3, label: "Zerstörerisch", rate: "25 %", tone: "bad" }
-];
+const EFFECT_DIMENSIONS = ["Mensch", "Planet", "Demokratie"];
+const DATA_QUALITY_DIMENSION = "Datenqualität";
 
 function scoreTone(score) {
   if (score >= 1) return "tone-good";
@@ -25,7 +13,7 @@ function scoreTone(score) {
 }
 
 function scoreLabel(score) {
-  return Number(score).toFixed(1).replace(".", ",");
+  return Number.isFinite(Number(score)) ? Number(score).toFixed(1).replace(".", ",") : "–";
 }
 
 function scoreWord(score) {
@@ -36,34 +24,31 @@ function scoreWord(score) {
   return "deutlich belastend";
 }
 
-function passId(item) {
-  const hash = Array.from(item.id).reduce((sum, char) => sum + char.charCodeAt(0), 0);
-  return `PP-2026-${String(hash).padStart(4, "0")}`;
-}
-
 function dimensionWidth(score) {
-  return Math.max(0, Math.min(100, ((score + 3) / 6) * 100));
+  return Math.max(0, Math.min(100, ((Number(score) + 3) / 6) * 100));
 }
 
-function costWidth(value, max) {
-  return max > 0 ? Math.max(4, (value / max) * 100) : 0;
-}
+function profileForItem(item) {
+  const fields = EFFECT_DIMENSIONS.map((label) => ({
+    label,
+    value: Number(item?.dimensions?.[label])
+  })).filter((field) => Number.isFinite(field.value));
+  const missingFields = EFFECT_DIMENSIONS.filter((label) => !fields.some((field) => field.label === label));
+  const weakest = fields.length ? [...fields].sort((left, right) => left.value - right.value)[0] : null;
+  const dataQuality = Number(item?.dimensions?.[DATA_QUALITY_DIMENSION]);
+  const sourcesPresent = Array.isArray(item?.indicators)
+    && item.indicators.length > 0
+    && item.indicators.every((indicator) => String(indicator.source || "").trim());
 
-function taxBandForScore(score) {
-  return Math.max(-3, Math.min(3, Math.round(score)));
-}
-
-function taxRateFromScore(score) {
-  const active = TAX_BANDS.find((band) => band.score === taxBandForScore(score));
-  return active ? active.rate : "10 %";
-}
-
-function average(values) {
-  return values.length ? values.reduce((sum, value) => sum + value, 0) / values.length : 0;
-}
-
-function sum(values) {
-  return values.reduce((total, value) => total + value, 0);
+  return {
+    fields,
+    weakest,
+    missingFields,
+    dataQuality: Number.isFinite(dataQuality) ? dataQuality : null,
+    sourcesPresent,
+    gateOpen: false,
+    gateReason: "geschlossen: Die Beispieldaten enthalten keine dokumentierte Systemgrenze, keinen Vergleichsfall, keine vollständige Attribution und keine unabhängige Prüfung."
+  };
 }
 
 function setSectors(items) {
@@ -89,22 +74,26 @@ function renderList() {
     selectedScorecardId = items[0]?.id || scorecardItems[0]?.id;
   }
 
-  list.innerHTML = items.map((item) => `
-    <button class="scorecard-list-item ${item.id === selectedScorecardId ? "active" : ""}" type="button" data-scorecard-id="${item.id}">
-      <img src="${item.image}" alt="" loading="lazy" decoding="async">
-      <span class="scorecard-list-copy">
-        <b>${item.name}</b>
-        <small>${item.type} · ${item.sector}</small>
-      </span>
-      <em class="${scoreTone(item.score)}">${scoreLabel(item.score)}</em>
-    </button>
-  `).join("");
+  list.innerHTML = items.map((item) => {
+    const profile = profileForItem(item);
+    const weak = profile.weakest;
+    return `
+      <button class="scorecard-list-item ${item.id === selectedScorecardId ? "active" : ""}" type="button" data-scorecard-id="${item.id}">
+        <img src="${item.image}" alt="" loading="lazy" decoding="async">
+        <span class="scorecard-list-copy">
+          <b>${item.name}</b>
+          <small>${item.type} · ${item.sector}</small>
+        </span>
+        <em class="${weak ? scoreTone(weak.value) : "tone-mid"}" title="Schwächstes Wirkungsfeld nach Reverse Merit Order">${weak ? scoreLabel(weak.value) : "–"}</em>
+      </button>
+    `;
+  }).join("") || `<p class="formula-note">Für diese Auswahl gibt es kein Beispielprofil.</p>`;
 
-  renderDashboard(items);
+  renderDashboard();
   renderDetail();
 }
 
-function renderDashboard(items) {
+function renderDashboard() {
   const summaryTarget = dashboardRoot.querySelector("[data-dashboard-summary]");
   const coreTarget = dashboardRoot.querySelector("[data-dashboard-core]");
   const historyTarget = dashboardRoot.querySelector("[data-dashboard-history]");
@@ -114,44 +103,32 @@ function renderDashboard(items) {
   const distributionTarget = dashboardRoot.querySelector("[data-dashboard-distribution]");
   if (!summaryTarget || !coreTarget || !historyTarget || !rankingTarget || !chainTarget || !costsTarget || !distributionTarget) return;
 
-  const totalExternal = sum(items.map((item) => item.externalCosts));
-  const totalMarket = sum(items.map((item) => item.marketPrice));
-  const averageScore = average(items.map((item) => item.score));
-  const averageHiddenShare = totalMarket > 0 ? (totalExternal / totalMarket) * 100 : 0;
-  const selectedItem = scorecardItems.find((entry) => entry.id === selectedScorecardId) || items[0];
-  const impactPoints = Math.max(0, Math.round((averageScore + 3) * 2450 + items.length * 95));
-  const netTax = Math.max(0, Math.round(totalExternal * 1828));
-  const best = [...items].sort((a, b) => b.score - a.score)[0];
-  const worst = [...items].sort((a, b) => a.score - b.score)[0];
+  const item = scorecardItems.find((entry) => entry.id === selectedScorecardId);
+  if (!item) return;
+  const profile = profileForItem(item);
+  const weak = profile.weakest;
+  const gateTone = "metric-bad";
 
   summaryTarget.innerHTML = [
-    ["Final Score", scoreLabel(averageScore), scoreWord(averageScore), averageScore],
-    ["Steuerklasse", selectedItem ? taxRateFromScore(selectedItem.score) : "-", selectedItem ? `${selectedItem.name} aktiv` : "-", selectedItem?.score || 0],
-    ["Wirkungspunkte", impactPoints.toLocaleString("de-DE"), "+2.350 vs. Vorjahr", averageScore],
-    ["Steuerlast (netto)", euro.format(netTax), "nach Wirkung", -averageScore]
-  ].map(([label, value, note, toneScore]) => {
-    const tone = toneScore >= 1 ? "metric-good" : toneScore >= 0 ? "metric-mid" : "metric-bad";
-    return `
+    ["RMO-Gate", "geschlossen", profile.gateReason, gateTone, "⛔"],
+    ["Schwächstes Feld", weak ? weak.label : "nicht bestimmbar", weak ? `${scoreLabel(weak.value)} · ${scoreWord(weak.value)}` : "Kernfeld fehlt", weak ? (weak.value >= 0 ? "metric-mid" : "metric-bad") : "metric-bad", "↓"],
+    ["Datenstatus", "Beispieldaten", profile.sourcesPresent ? "Quellenhinweise vorhanden, aber nicht unabhängig verifiziert." : "Quellenhinweise unvollständig.", "metric-mid", "i"],
+    ["Ausgabe", "Profil, keine Preisfolge", "Keine Steuerklasse, kein echter Preis, kein Wirkungsranking.", "metric-mid", "≠"]
+  ].map(([label, value, note, tone, icon]) => `
     <article class="dashboard-metric ${tone}">
       <div>
         <span>${label}</span>
         <strong>${value}</strong>
         <small>${note}</small>
       </div>
-      <i aria-hidden="true">${label === "Final Score" ? "↗" : label === "Steuerklasse" ? "%" : label === "Wirkungspunkte" ? "☆" : "€"}</i>
+      <i aria-hidden="true">${icon}</i>
     </article>
-  `;
-  }).join("");
+  `).join("");
 
-  const coreEntries = ["Klima", "Ressourcen & Kreislauf", "Arbeit & Fairness", "Gesundheit & Sicherheit"].map((label, index) => {
-    const key = index === 0 ? "Planet" : index === 1 ? "Datenqualität" : index === 2 ? "Mensch" : "Demokratie";
-    const value = average(items.map((item) => item.dimensions[key] ?? item.score));
-    return [label, value];
-  });
   coreTarget.innerHTML = `
-    <h3>Scorecard - 4 Kernfelder</h3>
+    <h3>Wirkungsprofil des ausgewählten Beispiels</h3>
     <div class="core-field-grid">
-      ${coreEntries.map(([label, value]) => `
+      ${profile.fields.map(({ label, value }) => `
         <div class="core-field">
           <span>${label}</span>
           <strong class="${scoreTone(value)}">${scoreLabel(value)}</strong>
@@ -159,162 +136,63 @@ function renderDashboard(items) {
           <small>${scoreWord(value)}</small>
         </div>
       `).join("")}
+      <div class="core-field">
+        <span>Datenqualität</span>
+        <strong class="${profile.dataQuality === null ? "tone-mid" : scoreTone(profile.dataQuality)}">${profile.dataQuality === null ? "–" : scoreLabel(profile.dataQuality)}</strong>
+        <div class="score-axis"><i style="left:${profile.dataQuality === null ? 50 : dimensionWidth(profile.dataQuality)}%"></i></div>
+        <small>Prüfbedingung, keine Wirkungsdimension</small>
+      </div>
     </div>
-    <p class="formula-note">Reverse Merit Order: Das schwächste Feld begrenzt den Final Score.</p>
+    <p class="formula-note">Reverse Merit Order: Das schwächste Wirkungsfeld wird nicht mit anderen Feldern verrechnet. Die Datenqualität prüft, ob überhaupt eine belastbare Aussage möglich ist.</p>
   `;
 
-  const history = [-0.2, 0.4, 1.2, averageScore];
   historyTarget.innerHTML = `
-    <h3>Entwicklung Final Score</h3>
-    <div class="score-history" aria-label="Final Score Entwicklung">
-      ${history.map((value, index) => `
-        <div class="score-point" style="left:${10 + index * 28}%; bottom:${18 + dimensionWidth(value) * 0.55}%">
-          <span>${scoreLabel(value)}</span>
-        </div>
-      `).join("")}
-      <svg viewBox="0 0 100 60" aria-hidden="true" preserveAspectRatio="none">
-        <polyline points="${history.map((value, index) => `${10 + index * 28},${52 - dimensionWidth(value) * 0.35}`).join(" ")}" />
-      </svg>
-    </div>
-    <div class="history-years"><span>2022</span><span>2023</span><span>2024</span><span>2025</span></div>
+    <h3>Zeitverlauf</h3>
+    <p>Für diese Beispiele ist keine versionierte Zeitreihe hinterlegt. Deshalb zeigt das Dashboard keine Kurve und behauptet keine Verbesserung oder Verschlechterung.</p>
+    <p class="formula-note">Für einen Verlauf braucht jede Messung dieselbe Systemgrenze, Methode und Datenbasis.</p>
   `;
 
-  const rankedItems = [...items].sort((a, b) => b.score - a.score);
   rankingTarget.innerHTML = `
-    <h3>Wirkungsranking</h3>
-    <div class="ranking-extremes">
-      <div><span>Stärkste Wirkung</span><strong>${best?.name || "-"}</strong><em class="${best ? scoreTone(best.score) : ""}">${best ? scoreLabel(best.score) : "-"}</em></div>
-      <div><span>Größte Belastung</span><strong>${worst?.name || "-"}</strong><em class="${worst ? scoreTone(worst.score) : ""}">${worst ? scoreLabel(worst.score) : "-"}</em></div>
-    </div>
-    <ol class="ranking-list">
-      ${rankedItems.slice(0, 5).map((item) => `
-        <li>
-          <button type="button" data-scorecard-id="${item.id}">
-            <span>${item.name}</span>
-            <strong class="${scoreTone(item.score)}">${scoreLabel(item.score)}</strong>
-          </button>
-        </li>
-      `).join("")}
-    </ol>
-  `;
-
-  const costTotals = {};
-  items.forEach((item) => {
-    Object.entries(item.costBreakdown).forEach(([label, value]) => {
-      costTotals[label] = (costTotals[label] || 0) + value;
-    });
-  });
-  const costEntries = Object.entries(costTotals).sort((a, b) => b[1] - a[1]).slice(0, 6);
-  costsTarget.innerHTML = `
-    <h3>Externe Kostentreiber</h3>
-    <div class="impact-bars">${renderBars(costEntries, { money: true })}</div>
+    <h3>Keine Rangliste</h3>
+    <p>Die Beispiele dienen der Erklärung, nicht dem Wettbewerb. Ein einzelner Gesamtwert würde Unterschiede in Systemgrenze, Evidenz und Schwachfeldern verschleiern.</p>
+    <p class="formula-note">Vergleichen darf nur, wer dieselben Prüfkriterien, Zeiträume und Datenqualitäten offenlegt.</p>
   `;
 
   chainTarget.innerHTML = `
-    <h3>Wirkungskette (Auszug)</h3>
+    <h3>Prüfpfad statt Punkteschlange</h3>
     <div class="chain-flow">
-      ${["Rohstoffe", "Produktion", "Transport", "Nutzung", "Ende"].map((step, index) => `
-        <div class="chain-step">
-          <span>${index + 1}</span>
-          <strong>${step}</strong>
-          <em>${scoreLabel(averageScore + (index - 2) * 0.12)}</em>
-        </div>
+      ${["Systemgrenze", "Wirkpfad", "Vergleichsfall", "Schäden & Nebenfolgen", "Prüfung"].map((step, index) => `
+        <div class="chain-step"><span>${index + 1}</span><strong>${step}</strong></div>
       `).join("")}
     </div>
-    <a class="text-link" href="#dashboard">Gesamte Wirkungskette ansehen</a>
+    <p class="formula-note">Die Schritte sind Fragen für eine vollständige Bewertung, keine behauptete Liefer- oder Wirkungskette dieses Beispiels.</p>
   `;
 
-  const typeCounts = items.reduce((map, item) => {
-    map[item.type] = (map[item.type] || 0) + 1;
-    return map;
-  }, {});
-  const sectorCounts = items.reduce((map, item) => {
-    map[item.sector] = (map[item.sector] || 0) + 1;
-    return map;
-  }, {});
+  costsTarget.innerHTML = `
+    <h3>Monetarisierung nicht ausgewiesen</h3>
+    <p>Für diese Demo sind keine geprüften Preis-, Steuer- oder externen Kostenwerte veröffentlicht. Geldbeträge würden eine Genauigkeit vortäuschen, die die Beispieldaten nicht tragen.</p>
+    <p class="formula-note">Eine Monetarisierung braucht Bewertungsjahr, Einheit, Preisbasis, Systemgrenze, Quellen und Sensitivitätsanalyse.</p>
+  `;
+
   distributionTarget.innerHTML = `
-    <h3>Wirkungspunkte</h3>
-    <div class="points-donut" style="--score:${Math.max(0, Math.min(100, dimensionWidth(averageScore)))}%">
-      <strong>${impactPoints.toLocaleString("de-DE")}</strong>
-      <span>Gesamt</span>
-    </div>
+    <h3>Datenstatus</h3>
     <div class="distribution-block">
-      <p class="hero-kicker">Typ</p>
-      ${Object.entries(typeCounts).map(([label, count]) => `<div class="distribution-row"><span>${label}</span><strong>${count}</strong></div>`).join("")}
+      <p class="hero-kicker">Ausgewähltes Beispiel</p>
+      <div class="distribution-row"><span>Indikatorhinweise</span><strong>${Array.isArray(item.indicators) ? item.indicators.length : 0}</strong></div>
+      <div class="distribution-row"><span>Kernfelder vorhanden</span><strong>${profile.fields.length} / ${EFFECT_DIMENSIONS.length}</strong></div>
+      <div class="distribution-row"><span>Fehlende Kernfelder</span><strong>${profile.missingFields.length || "keine"}</strong></div>
     </div>
-    <div class="distribution-block">
-      <p class="hero-kicker">Sektoren</p>
-      ${Object.entries(sectorCounts).sort((a, b) => b[1] - a[1]).slice(0, 6).map(([label, count]) => `<div class="distribution-row"><span>${label}</span><strong>${count}</strong></div>`).join("")}
-    </div>
+    <p class="formula-note">Die Angaben beschreiben die Demo-Datenlage. Sie sind keine Zertifizierung, keine Verifikation und kein Freigabesignal.</p>
   `;
 }
 
-function renderBars(entries, options = {}) {
-  const max = options.max || Math.max(...entries.map((entry) => Math.abs(entry[1])), 1);
-  return entries.map(([label, value]) => {
-    const width = options.score ? dimensionWidth(value) : costWidth(Math.abs(value), max);
-    const display = options.money ? euro.format(value) : scoreLabel(value);
-    return `
-      <div class="impact-bar">
-        <div class="impact-bar-heading"><span>${label}</span><span>${display}</span></div>
-        <div class="impact-track"><div class="impact-fill ${options.score ? scoreTone(value) : "tone-mid"}" style="width:${width}%"></div></div>
-      </div>
-    `;
-  }).join("");
-}
-
-function lifecycleSteps(item) {
-  if (item.sector === "Textilien") return ["Rohstoffe", "Spinnen & Weben", "Färben & Nähen", "Nutzung", "Entsorgung"];
-  if (item.sector === "Elektronik") return ["Rohstoffe", "Bauteile", "Montage", "Nutzung", "Rücknahme"];
-  if (item.sector === "Ernährung" || item.sector === "Agrarhandel") return ["Anbau", "Verarbeitung", "Transport", "Konsum", "Boden & Abfall"];
-  if (item.sector === "Digitale Infrastruktur" || item.sector === "Medien") return ["Infrastruktur", "Datenmodell", "Betrieb", "Nutzung", "Folgewirkung"];
-  if (item.sector === "Wohnen") return ["Grundstück", "Bau/Sanierung", "Betrieb", "Nutzung", "Quartier"];
-  if (item.sector === "Pflege") return ["Personal", "Planung", "Leistung", "Stabilisierung", "Folgekosten"];
-  return ["Input", "Produktion", "Transport", "Nutzung", "Rückkopplung"];
-}
-
-function supplySteps(item) {
-  const base = {
-    Textilien: [["Baumwollanbau", "Türkei"], ["Spinnen/Weben", "Türkei"], ["Färben", "Portugal"], ["Konfektion", "Portugal"], ["Transport", "Portugal -> DE"]],
-    Elektronik: [["Rohstoffe", "global"], ["Bauteile", "EU/Asien"], ["Montage", "EU"], ["Rücknahme", "DE"], ["Audit", "extern"]],
-    Ernährung: [["Landwirtschaft", "regional/global"], ["Verarbeitung", "DE"], ["Kühlkette", "DE"], ["Handel", "DE"], ["Abfall", "kommunal"]],
-    Agrarhandel: [["Kooperative", "Ursprungsland"], ["Aufbereitung", "regional"], ["Import", "EU"], ["Röstung", "DE"], ["Prämie", "geprüft"]],
-    "Digitale Infrastruktur": [["Hardware", "Lieferanten"], ["Rechenzentrum", "EU"], ["Strom", "Herkunftsnachweis"], ["Datenresidenz", "vertraglich"], ["Audit", "ISO"]],
-    Logistik: [["Depot", "DE"], ["Sortierung", "DE"], ["Zustellung", "regional"], ["Retouren", "DE"], ["Subunternehmer", "geprüft"]],
-    Medien: [["Algorithmus", "intern"], ["Moderation", "hybrid"], ["Beschwerdeweg", "öffentlich"], ["Transparenzbericht", "jährlich"], ["Audit", "modelliert"]],
-    Wohnen: [["Gebäude", "DE"], ["Energie", "lokal"], ["Mietvertrag", "geprüft"], ["Quartier", "kommunal"], ["Sanierung", "geplant"]],
-    Pflege: [["Fachkräfte", "regional"], ["Dienstplanung", "geprüft"], ["Pflegeleistung", "vor Ort"], ["Dokumentation", "laufend"], ["Prävention", "gemessen"]]
-  };
-  return base[item.sector] || [["Input", "geprüft"], ["Leistung", "geprüft"], ["Nutzung", "gemessen"], ["Folgewirkung", "modelliert"], ["Audit", "plausibilisiert"]];
-}
-
-function standards(item) {
-  const sources = item.indicators.flatMap((indicator) => indicator.source.split(";").map((entry) => entry.trim()));
-  return Array.from(new Set(sources)).slice(0, 5);
-}
-
-function recommendations(item) {
-  const weakDimensions = Object.entries(item.dimensions)
-    .sort((a, b) => a[1] - b[1])
-    .slice(0, 2)
-    .map(([label]) => label);
-  const biggestCost = Object.entries(item.costBreakdown).sort((a, b) => b[1] - a[1])[0]?.[0] || "Folgekosten";
-  const lowestIndicator = [...item.indicators].sort((a, b) => a.score - b.score)[0];
-  return [
-    `${biggestCost} als größte externe Kostenart gezielt senken.`,
-    `${weakDimensions.join(" und ")} mit verbindlichen Schwellen verbessern.`,
-    `${lowestIndicator.label}: Datenlücke oder Schwachstelle priorisieren.`,
-    "Primärdaten erhöhen und externe Prüfung dokumentieren."
-  ];
-}
-
-function qrCells(item) {
-  const seed = Array.from(item.id).map((char) => char.charCodeAt(0));
-  return Array.from({ length: 81 }, (_, index) => {
-    const finder = (index < 18 && index % 9 < 2) || (index < 18 && index % 9 > 6) || (index > 62 && index % 9 < 2);
-    const active = finder || ((seed[index % seed.length] + index * 7) % 5 < 2);
-    return `<span class="${active ? "is-dark" : ""}"></span>`;
-  }).join("");
+function renderBars(entries) {
+  return entries.map(([label, value]) => `
+    <div class="impact-bar">
+      <div class="impact-bar-heading"><span>${label}</span><span>${scoreLabel(value)}</span></div>
+      <div class="impact-track"><div class="impact-fill ${scoreTone(value)}" style="width:${dimensionWidth(value)}%"></div></div>
+    </div>
+  `).join("");
 }
 
 function renderOverview(item) {
@@ -325,143 +203,137 @@ function renderOverview(item) {
       <h3>${item.name}</h3>
       <p>${item.summary}</p>
     </div>
-    <ul class="pass-checks" aria-label="Produktpass Eigenschaften">
-      <li>Nachvollziehbar</li>
-      <li>Vergleichbar</li>
-      <li>Wirkungsbasiert</li>
+    <ul class="pass-checks" aria-label="Status des Beispiels">
+      <li>Beispieldaten</li>
+      <li>keine Zertifizierung</li>
+      <li>keine Preis- oder Steuerfolge</li>
     </ul>
   `;
 }
 
 function renderIdentity(item) {
   return `
-    <h3>Produktidentität</h3>
+    <h3>Einordnung des Beispiels</h3>
     <dl class="pass-facts">
-      <div><dt>Pass-ID</dt><dd>${passId(item)}</dd></div>
+      <div><dt>Demo-Fall</dt><dd>${item.id}</dd></div>
       <div><dt>Name</dt><dd>${item.name}</dd></div>
       <div><dt>Kategorie</dt><dd>${item.type} · ${item.sector}</dd></div>
-      <div><dt>Systemgrenze</dt><dd>Cradle to Gate + Nutzung</dd></div>
-      <div><dt>Status</dt><dd>Demo, plausibilisiert</dd></div>
-      <div><dt>Gültig bis</dt><dd>31.12.2026</dd></div>
+      <div><dt>Systemgrenze</dt><dd>nicht dokumentiert</dd></div>
+      <div><dt>Prüfstatus</dt><dd>keine unabhängige Verifikation</dd></div>
+      <div><dt>Verwendung</dt><dd>Methodenbeispiel, keine Produktbehauptung</dd></div>
     </dl>
   `;
 }
 
-function renderLifecycle(item) {
+function renderLifecycle() {
   return `
-    <h3>Lebenszyklus-Übersicht</h3>
+    <h3>Wirkpfad prüfen</h3>
     <div class="lifecycle-map">
-      ${lifecycleSteps(item).map((step, index) => `
-        <div class="lifecycle-node">
-          <span>${index + 1}</span>
-          <strong>${step}</strong>
-        </div>
+      ${["Ausgangslage", "Intervention", "beobachtete Veränderung", "Gegenfaktoren", "Folgewirkung"].map((step, index) => `
+        <div class="lifecycle-node"><span>${index + 1}</span><strong>${step}</strong></div>
       `).join("")}
     </div>
+    <p class="formula-note">Das ist ein Prüfschema. Es beschreibt keine verifizierte Lieferkette des ausgewählten Beispiels.</p>
   `;
 }
 
 function renderScorecard(item) {
+  const profile = profileForItem(item);
+  const weak = profile.weakest;
   return `
-    <h3>Wirkungsscorecard</h3>
+    <h3>Wirkungsprofil mit RMO-Gate</h3>
     <div class="pass-score-summary">
-      <span class="score-pill ${scoreTone(item.score)}">${scoreLabel(item.score)} / 3</span>
-      <strong>${scoreWord(item.score)}</strong>
+      <span class="score-pill ${weak ? scoreTone(weak.value) : "tone-mid"}">${weak ? `${scoreLabel(weak.value)} / 3` : "–"}</span>
+      <strong>${weak ? `Schwächstes Feld: ${weak.label}` : "Kernfelder unvollständig"}</strong>
     </div>
-    <div class="impact-bars">${renderBars(Object.entries(item.dimensions), { score: true })}</div>
+    <div class="impact-bars">${renderBars(profile.fields.map(({ label, value }) => [label, value]))}</div>
+    <p class="formula-note"><strong>Gate: geschlossen.</strong> ${profile.gateReason}</p>
   `;
 }
 
-function renderTax(item) {
-  const activeScore = taxBandForScore(item.score);
+function renderTax() {
   return `
-    <h3>Steuerklasse & Auswirkung</h3>
-    <div class="tax-pyramid" aria-label="Steuerklassen nach Wirkung">
-      ${TAX_BANDS.map((band, index) => {
-        const width = 50 + (index * 8);
-        return `
-          <div class="tax-band tax-${band.tone} ${band.score === activeScore ? "active" : ""}" style="width:${width}%">
-            <span>${band.score > 0 ? `+${band.score}` : band.score}</span>
-            <strong>${band.label}</strong>
-            <em>${band.rate}</em>
-          </div>
-        `;
-      }).join("")}
-    </div>
-    <p class="formula-note">Aktive Steuerklasse: ${taxRateFromScore(item.score)}. Reverse Merit Order: positive Netto-Wirkung kann entlastet, negative Wirkung belastet werden.</p>
+    <h3>Keine Steuerklasse aus Beispieldaten</h3>
+    <p>Eine Steuer- oder Preisfolge braucht eine demokratisch beschlossene Rechtsgrundlage und geprüfte, vergleichbare Daten. Beides liegt hier nicht vor.</p>
+    <p class="formula-note">Der RMO-Check verhindert vor allem Scheingenauigkeit: Ein Demo-Profil löst keine Abgabe aus.</p>
   `;
 }
 
-function renderSupply(item) {
+function renderSupply() {
   return `
-    <h3>Lieferketten-Transparenz</h3>
-    <ul class="pass-list">
-      ${supplySteps(item).map(([step, location]) => `<li><span>${step}</span><strong>${location}</strong></li>`).join("")}
-    </ul>
+    <h3>Lieferkettennachweis offen</h3>
+    <p>Dieses Beispiel enthält keine verifizierte Lieferkettendokumentation. Die unten genannten Quellenhinweise sind Ansatzpunkte für die Prüfung, keine Bestätigung einzelner Stationen.</p>
   `;
 }
 
 function renderStandards(item) {
+  const sources = Array.from(new Set((item.indicators || [])
+    .flatMap((indicator) => String(indicator.source || "").split(";").map((source) => source.trim()))
+    .filter(Boolean))).slice(0, 5);
   return `
-    <h3>Zertifizierungen & Standards</h3>
+    <h3>Genannte Referenztypen</h3>
     <ul class="pass-list standards-list">
-      ${standards(item).map((standard) => `<li><span>${standard}</span><strong>geprüft</strong></li>`).join("")}
+      ${sources.map((source) => `<li><span>${source}</span><strong>im Beispiel genannt</strong></li>`).join("") || "<li><span>Keine Quellenhinweise</span><strong>Prüfbedarf</strong></li>"}
     </ul>
   `;
 }
 
 function renderRecommendations(item) {
+  const profile = profileForItem(item);
+  const weakFields = profile.fields.slice().sort((left, right) => left.value - right.value).slice(0, 2).map((field) => field.label);
+  const lowestIndicator = [...(item.indicators || [])].sort((left, right) => Number(left.score) - Number(right.score))[0];
+  const prompts = [
+    `${weakFields.join(" und ") || "Kernfelder"}: Messgrenze, Kennzahl und Vergleichsfall offenlegen.`,
+    `${lowestIndicator?.label || "Schwächstes Indikatorfeld"}: Datenquelle, Zeitraum und Unsicherheit prüfen.`,
+    "Negative Folgen, Verdrängung und Ohnehin-Effekte getrennt dokumentieren.",
+    "Erst nach unabhängiger Prüfung über eine Preis-, Steuer- oder Förderfolge entscheiden."
+  ];
   return `
-    <h3>Empfehlungen & Verbesserungen</h3>
+    <h3>Nächste Prüffragen</h3>
     <ul class="recommendation-list">
-      ${recommendations(item).map((entry, index) => `<li><span>${index + 1}</span>${entry}</li>`).join("")}
+      ${prompts.map((prompt, index) => `<li><span>${index + 1}</span>${prompt}</li>`).join("")}
     </ul>
   `;
 }
 
-function renderVerification(item) {
+function renderVerification() {
   return `
-    <h3>Digitale Verifikation</h3>
-    <div class="verification-grid">
-      <div class="qr-grid" aria-hidden="true">${qrCells(item)}</div>
-      <div>
-        <strong>Scannen, prüfen, verstehen.</strong>
-        <p>Mehr Informationen und aktuelle Daten finden sich im digitalen Produktpass.</p>
-        <small>ID: ${passId(item)}</small>
-      </div>
-    </div>
+    <h3>Keine digitale Verifikation</h3>
+    <p>Es gibt für diese Beispiele keinen scanbaren, amtlichen oder zertifizierten Produktpass. Ein Muster-QR-Code würde eine Prüfung vortäuschen und wird deshalb nicht angezeigt.</p>
   `;
 }
 
 function renderDetail() {
   const item = scorecardItems.find((entry) => entry.id === selectedScorecardId) || scorecardItems[0];
   if (!item) return;
+  const profile = profileForItem(item);
+  const weak = profile.weakest;
 
-  dashboardRoot.querySelector("[data-kpi-market]").textContent = euro.format(item.marketPrice);
-  dashboardRoot.querySelector("[data-kpi-external]").textContent = euro.format(item.externalCosts);
-  dashboardRoot.querySelector("[data-kpi-true]").textContent = euro.format(item.truePrice);
+  dashboardRoot.querySelector("[data-kpi-gate]").textContent = "geschlossen";
+  dashboardRoot.querySelector("[data-kpi-weakest]").textContent = weak ? weak.label : "–";
+  dashboardRoot.querySelector("[data-kpi-data]").textContent = "Beispieldaten";
   const scoreEl = dashboardRoot.querySelector("[data-kpi-score]");
-  scoreEl.textContent = scoreLabel(item.score);
-  scoreEl.className = `score-pill ${scoreTone(item.score)}`;
+  scoreEl.textContent = weak ? scoreLabel(weak.value) : "–";
+  scoreEl.className = `score-pill ${weak ? scoreTone(weak.value) : "tone-mid"}`;
 
   dashboardRoot.querySelector("[data-pass-overview]").innerHTML = renderOverview(item);
   dashboardRoot.querySelector("[data-pass-identity]").innerHTML = renderIdentity(item);
-  dashboardRoot.querySelector("[data-pass-lifecycle]").innerHTML = renderLifecycle(item);
+  dashboardRoot.querySelector("[data-pass-lifecycle]").innerHTML = renderLifecycle();
   dashboardRoot.querySelector("[data-pass-scorecard]").innerHTML = renderScorecard(item);
-  dashboardRoot.querySelector("[data-pass-tax]").innerHTML = renderTax(item);
-  dashboardRoot.querySelector("[data-pass-supply]").innerHTML = renderSupply(item);
+  dashboardRoot.querySelector("[data-pass-tax]").innerHTML = renderTax();
+  dashboardRoot.querySelector("[data-pass-supply]").innerHTML = renderSupply();
   dashboardRoot.querySelector("[data-pass-standards]").innerHTML = renderStandards(item);
   dashboardRoot.querySelector("[data-pass-recommendations]").innerHTML = renderRecommendations(item);
-  dashboardRoot.querySelector("[data-pass-verification]").innerHTML = renderVerification(item);
+  dashboardRoot.querySelector("[data-pass-verification]").innerHTML = renderVerification();
 
-  dashboardRoot.querySelector("[data-source-table]").innerHTML = item.indicators.map((indicator) => `
+  dashboardRoot.querySelector("[data-source-table]").innerHTML = (item.indicators || []).map((indicator) => `
     <tr>
-      <td>${indicator.wokId}</td>
-      <td>${indicator.label}</td>
-      <td>${indicator.value}</td>
-      <td><span class="score-pill ${scoreTone(indicator.score)}">${scoreLabel(indicator.score)}</span></td>
-      <td>${indicator.source}</td>
-      <td>${indicator.assessment}</td>
+      <td>${indicator.wokId || "–"}</td>
+      <td>${indicator.label || "–"}</td>
+      <td>${indicator.value || "–"}</td>
+      <td><span class="score-pill ${scoreTone(Number(indicator.score))}">${scoreLabel(indicator.score)}</span></td>
+      <td>${indicator.source || "–"}</td>
+      <td>${indicator.assessment || "Beispieldaten; nicht unabhängig verifiziert"}</td>
     </tr>
   `).join("");
 }
@@ -481,11 +353,17 @@ async function initScorecardDashboard() {
   window.addEventListener("hashchange", () => syncActiveNav());
   syncActiveNav();
 
-  const response = await fetch("assets/data/scorecard-examples.json");
-  scorecardItems = await response.json();
-  selectedScorecardId = scorecardItems[0].id;
-  setSectors(scorecardItems);
-  renderList();
+  try {
+    const response = await fetch("assets/data/scorecard-examples.json");
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    scorecardItems = await response.json();
+    selectedScorecardId = scorecardItems[0]?.id || null;
+    setSectors(scorecardItems);
+    renderList();
+  } catch (error) {
+    const list = dashboardRoot.querySelector("[data-scorecard-list]");
+    if (list) list.innerHTML = "<p class=\"formula-note\">Die Beispieldaten konnten nicht geladen werden.</p>";
+  }
 
   dashboardRoot.addEventListener("click", (event) => {
     const button = event.target.closest("[data-scorecard-id]");

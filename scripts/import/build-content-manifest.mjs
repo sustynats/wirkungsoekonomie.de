@@ -50,9 +50,9 @@ for (const file of roots.flatMap((dir) => walk(dir))) {
   const documentType = firstMatch(text, /^documentType:\s*["']?(.+?)["']?\s*$/m) || firstMatch(text, /<meta name="search_type" content="([^"]+)"/i, "referenz");
   const sourceVersion = firstMatch(text, /<dt>Source-Version<\/dt><dd>(.*?)<\/dd>/i, "2026.0");
   const importVersion = firstMatch(text, /<dt>Import-Version<\/dt><dd>(.*?)<\/dd>/i, "");
-  const liveReferenceVersion = firstMatch(text, /<dt>Live-Reference-Version<\/dt><dd>(.*?)<\/dd>/i, isReferenceRoute ? "2026.2-live-reference" : "");
+  const liveReferenceVersion = firstMatch(text, /<dt>(?:Onlinefassung-Stand|Live-Reference-Version)<\/dt><dd>(.*?)<\/dd>/i, isReferenceRoute ? "2026.2-live-reference" : "");
   const webVersion = firstMatch(text, /<dt>Web-Version<\/dt><dd>(.*?)<\/dd>/i, firstMatch(text, /^webVersion:\s*["']?(.+?)["']?\s*$/m, isReferenceRoute ? "2026.2-live-reference" : "2026.1"));
-  const reviewStatus = firstMatch(text, /<dt>Reviewstatus<\/dt><dd>(.*?)<\/dd>/i, isReferenceRoute ? "partially-delta-reviewed" : "partially-reviewed");
+  const reviewStatus = firstMatch(text, /<dt>(?:Prüfstatus|Reviewstatus)<\/dt><dd>(.*?)<\/dd>/i, isReferenceRoute ? "partially-delta-reviewed" : "partially-reviewed");
   const status = firstMatch(text, /^status:\s*["']?(.+?)["']?\s*$/m) || firstMatch(text, /<dt>Status<\/dt><dd>(.*?)<\/dd>/i, isReferenceRoute ? "live-reference" : "online-reviewed");
   const originalFileUrl = firstMatch(text, /<a[^>]+href=["']([^"']+)["'][^>]*>(?:Original(?:datei|-PDF|-XLSX)? öffnen|Original-PDF öffnen|Original-XLSX öffnen)/i);
   const sourceFile = firstMatch(text, /<dt>Quelle<\/dt><dd>(.*?)<\/dd>/i) || firstMatch(text, /<dt>Originaldatei<\/dt><dd>(.*?)<\/dd>/i) || file;

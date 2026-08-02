@@ -130,7 +130,7 @@ def main() -> None:
         "official_index_disclaimer": "Kein offizieller Index. Das UWP-100-Universum ist ein kuratiertes Beta-Universum.",
         "minimum_profile_rule": "Für echte Unternehmen werden ohne belegte, versionierte Beobachtungen keine Scores angezeigt.",
         "companies": companies,
-        "todo": [
+        "quality_assurance_next_steps": [
             "ISIN und LEI aus Primärquellen validieren.",
             "Ticker- und Indexmitgliedschaften gegen Deutsche Börse / Unternehmens-IR prüfen.",
             "Dokumente, Berichtsjahre und Quellen-Snapshots je Unternehmen ergänzen.",

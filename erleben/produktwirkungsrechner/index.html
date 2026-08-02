@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Produktwirkungsrechner | Wirkungsumsatzsteuer erleben</title>
-    <meta name="description" content="Modellhafte Demo: Produktbeispiel wählen, Nettopreis und Scores setzen, FinalScore, Wirkungssteuersatz und Bruttopreis berechnen.">
+    <meta name="description" content="Modellhafte Demo: Produktprofil prüfen und Preisarithmetik mit einer ausdrücklich eingegebenen Testannahme nachvollziehen.">
     <meta name="search_title" content="Produktwirkungsrechner">
-    <meta name="search_description" content="Modellhafte Demo: Produktbeispiel wählen, Nettopreis und Scores setzen, FinalScore, Wirkungssteuersatz und Bruttopreis berechnen.">
+    <meta name="search_description" content="Modellhafte Demo: Produktprofil prüfen und Preisarithmetik mit einer ausdrücklich eingegebenen Testannahme nachvollziehen.">
     <meta name="search_section" content="Erleben">
     <meta name="search_type" content="Demo">
     <link rel="canonical" href="https://wirkungsoekonomie.de/erleben/produktwirkungsrechner/">
@@ -14,12 +14,12 @@
     <meta property="og:locale" content="de_DE">
     <meta property="og:site_name" content="Wirkungsökonomie">
     <meta property="og:title" content="Produktwirkungsrechner">
-    <meta property="og:description" content="Modellhafte Demo: Produktbeispiel wählen, Nettopreis und Scores setzen, FinalScore, Wirkungssteuersatz und Bruttopreis berechnen.">
+    <meta property="og:description" content="Modellhafte Demo: Produktprofil prüfen und Preisarithmetik mit einer ausdrücklich eingegebenen Testannahme nachvollziehen.">
     <meta property="og:url" content="https://wirkungsoekonomie.de/erleben/produktwirkungsrechner/">
     <meta property="og:image" content="https://wirkungsoekonomie.de/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Produktwirkungsrechner">
-    <meta name="twitter:description" content="Modellhafte Demo: Produktbeispiel wählen, Nettopreis und Scores setzen, FinalScore, Wirkungssteuersatz und Bruttopreis berechnen.">
+    <meta name="twitter:description" content="Modellhafte Demo: Produktprofil prüfen und Preisarithmetik mit einer ausdrücklich eingegebenen Testannahme nachvollziehen.">
     <meta name="twitter:image" content="https://wirkungsoekonomie.de/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png">
     <link rel="icon" href="../../assets/img/brand/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="../../assets/css/style.css?v=20260612-mobile-table-fix">
@@ -41,13 +41,13 @@
         <span class="sr-only">Menü</span>
       </button>
       <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation" data-search-exclude>
-        <a href="../../verstehen/" data-nav-match="verstehen/|verstehen.html|wirkungsoekonomie.html|wirkungsoekonomie/|modell.html|ordnung/|so-wirkt-wirkungsoekonomie/">Verstehen</a>
+        <a href="../../verstehen/" data-nav-match="verstehen/|verstehen.html|wirkungsoekonomie.html|wirkungsoekonomie/|modell.html|ordnung/|so-wirkt-wirkungsoekonomie/|sdg-plus/|referenzrahmen/|sdg-sdgplus/|wissen/">Verstehen</a>
         <a href="../../fuer/" data-nav-match="fuer/|fuer-wen/|fuer/unternehmen.html|fuer/unternehmen/impact-controlling/|fuer/buergerinnen.html|fuer/investoren.html|fuer/investoren/impact-controlling/|fuer/kommunen.html">Für wen?</a>
         <a href="../../wirkungsfelder/" data-nav-match="wirkungsfelder/|anwendungen.html">Wirkungsfelder</a>
-        <a href="../../werkzeuge/" data-nav-match="werkzeuge/|tools/|methodik/|workflow.html|scanner.html|anwendungen/scanner.html|scorecard-dashboard.html|erleben/|erleben.html|ausprobieren/|wirkungssteuerung/|fuer/wirkungssteuer.html|werkstatt/gesetze/wirkungssteuergesetz/">Praxis &amp; Tools</a>
+        <a href="../../werkzeuge/" data-nav-match="werkzeuge/|tools/|methodik/|workflow.html|scanner.html|anwendungen/scanner.html|scorecard-dashboard.html|erleben/|erleben.html|ausprobieren/|wirkungssteuerung/|fuer/wirkungssteuer.html|werkstatt/">Praxis &amp; Tools</a>
         <a href="../../oeffentlicher-wirkungsraum/" data-nav-match="oeffentlicher-wirkungsraum/|wirkungsradar/|woek-ki/|app/">Debatte &amp; Radar</a>
         <a href="../../lernen/" data-nav-match="lernen/|akademie.html|akademie/">Lernen</a>
-        <a href="../../bibliothek/" data-nav-match="bibliothek/|downloads.html|downloads/|dokumente/|referenz/|buch.html|buch/|evidenz/|quellen/|quellenarchiv/|fachbibliothek/|blog.html|blog/|podcast/|begriffe/|glossar.html">Bibliothek</a>
+        <a href="../../bibliothek/" data-nav-match="bibliothek/|downloads.html|downloads/|dokumente/|referenz/|buch.html|buch/|evidenz/|quellen/|quellenarchiv/|fachbibliothek/|blog.html|blog/|podcast/|begriffe/|glossar.html|portale/|website-1-0-release/">Bibliothek</a>
         <a href="../../mitmachen.html" data-nav-match="mitmachen.html|mitmachen/">Mitmachen</a>
         <div class="site-nav-utility" aria-label="Schnellzugriffe">
         <a class="site-utility-link site-utility-link--suche" href="../../suche.html" data-nav-match="suche.html" data-utility-label="Suche">Suche</a>
@@ -62,10 +62,10 @@
 <section class="hero portal-hero">
       <div class="hero-content">
         <nav class="breadcrumb"><a href="../../index.html">Start</a> / <a href="../../erleben.html">Erleben</a></nav>
-        <p class="hero-kicker">Demo · Modell Modellfassung</p>
+        <p class="hero-kicker">Demo · Prüfpfad und Preisarithmetik</p>
         <h1>Produktwirkungsrechner</h1>
-        <p class="hero-subtitle">Scores, FinalScore, Steuerklasse und Bruttopreis modellhaft ausprobieren.</p>
-        <p>Die Demo zeigt, wie die Wirkungsumsatzsteuer als Rückkopplung gedacht werden kann. Sie ist keine amtliche Einstufung und keine Steuerberatung.</p>
+        <p class="hero-subtitle">Produktprofil prüfen und Preisarithmetik mit einer Testannahme nachvollziehen.</p>
+        <p>Die Demo trennt Scorecard, Prüfstatus und Preisrechnung. Sie leitet aus keinem Score einen Steuersatz ab, ist keine amtliche Einstufung und keine Steuerberatung.</p>
         <div class="hero-actions no-print">
       <button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button>
       <a class="btn btn-primary" href="../../wirkungsfelder/produkte-konsum/">Wirkungsfeld ansehen</a>
@@ -147,7 +147,7 @@
         <div class="section-header">
           <p class="hero-kicker">Rechner</p>
           <h2 id="calculator-title">Produktwirkung simulieren <a class="cite-anchor no-print" href="#calculator-title" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
-          <p>FinalScore = niedrigster Score der Kernfelder. Für FinalScore -3 wird in der Demo mit 30 % gerechnet; der Modellkorridor lautet 25-30 %.</p>
+          <p>Das Engpasssignal orientiert sich am niedrigsten Kernfeldscore und macht kritische Befunde sichtbar. Es löst keinen Satz aus. Die Preisrechnung verwendet ausschließlich die unten ausdrücklich eingegebene Testannahme t: P_brutto = P_netto × (1 + t).</p>
         </div>
         <div class="calculator-grid">
           <form class="card calculator-form">
@@ -161,6 +161,9 @@
             </label>
             <label>Nettopreis in EUR
               <input name="netPrice" type="number" min="0" step="0.01" value="1.00">
+            </label>
+            <label>Testannahme t in Prozent (nur Preisarithmetik, kein abgeleiteter Tarif)
+              <input name="modelRate" type="number" min="0" max="100" step="0.1" value="10">
             </label>
             <div class="score-inputs" aria-label="Kernfeld-Scores">
               <label>Mensch
@@ -178,13 +181,14 @@
             <p class="card-kicker">Ergebnis</p>
             <h2 id="calc-product-name">Bio-Apfel regional</h2>
             <dl>
-              <div><dt>FinalScore</dt><dd data-result="finalScore">+1</dd></div>
-              <div><dt>Modell-Steuersatz</dt><dd data-result="taxRate">10 %</dd></div>
+              <div><dt>Engpasssignal / FinalScore</dt><dd data-result="finalScore">+1</dd></div>
+              <div><dt>Prüfstatus</dt><dd data-result="status">Profil dokumentiert</dd></div>
+              <div><dt>Testannahme t</dt><dd data-result="modelRate">10 % (keine Tarifempfehlung)</dd></div>
               <div><dt>Nettopreis</dt><dd data-result="netPrice">1,00 EUR</dd></div>
-              <div><dt>Bruttopreis</dt><dd data-result="grossPrice">1,10 EUR</dd></div>
+              <div><dt>Preis bei Testannahme</dt><dd data-result="grossPrice">1,10 EUR</dd></div>
             </dl>
-            <p data-result="explanation">Der FinalScore wird durch das schwächste Kernfeld begrenzt.</p>
-            <p class="scanner-notice"><strong>Hinweis:</strong> Modellhafte Demonstration. Keine amtliche Einstufung. Keine Steuerberatung.</p>
+            <p data-result="explanation">Der FinalScore begrenzt die positive Bewertung, leitet aber keinen Tarif ab.</p>
+            <p class="scanner-notice"><strong>Hinweis:</strong> Modellhafte Demonstration. Kein Score führt automatisch zu einem Satz, Bonus, Malus oder Preis. Keine amtliche Einstufung. Keine Steuerberatung.</p>
           </aside>
         </div>
       </div>
@@ -199,8 +203,8 @@
         <article class="card context-tool-card">
           <p class="card-kicker">Gesetz / Steuerlogik · Methodik</p>
           <h3 class="card-title">Wirkungsumsatzsteuer</h3>
-          <p class="card-text">Koppelt Produkt- und Leistungsbesteuerung im Pilotmodell an geprüfte Wirkung.</p>
-          <p class="card-text"><strong>Warum hier relevant?</strong> Im Produktbereich ist sie die Rückkopplung zwischen Scorecard, Steuerklasse, Preis und Konsumentscheidung.</p>
+          <p class="card-text">Beschreibt, wie geprüfte Produktwirkung eine demokratisch bestimmte Steuerlogik informieren kann.</p>
+          <p class="card-text"><strong>Warum hier relevant?</strong> Im Produktbereich trennt sie Scorecard und Prüfstatus von der rechtlichen Tarifentscheidung und der anschließenden Preisarithmetik.</p>
           <div class="portal-card-actions">
             <a class="text-link" href="../../werkzeuge/wirkungsumsatzsteuer/">Methodik lesen</a>
             
@@ -371,7 +375,7 @@
         
       </div>
     </section>
-    <script src="../../assets/js/produktwirkungsrechner.js?v=20260524-produktrechner"></script>
+    <script src="../../assets/js/produktwirkungsrechner.js?v=20260802-pruefpfad-v2"></script>
     </main>
     <footer class="footer" data-search-exclude>
   <div class="footer-grid">

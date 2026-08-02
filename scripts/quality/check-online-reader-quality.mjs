@@ -67,6 +67,25 @@ function redirectsTo(html, route) {
   return new RegExp(`<meta\\b(?=[^>]*\\bhttp-equiv=["']refresh["'])(?=[^>]*\\bcontent=["'][^"']*\\burl\\s*=\\s*${escapeRegExp(route)}[^"']*["'])[^>]*>`, "iu").test(html);
 }
 
+function localNavigationTargetExists(file, rawHref) {
+  const href = String(rawHref || "").split(/[?#]/u, 1)[0];
+  if (!href || /^(?:[a-z][a-z0-9+.-]*:\/\/|\/\/)/iu.test(href)) return true;
+  const target = href.startsWith("/")
+    ? path.join(ROOT, href.replace(/^\/+/, ""))
+    : path.resolve(path.dirname(file), href);
+  if (!fs.existsSync(target)) return false;
+  return !fs.statSync(target).isDirectory() || fs.existsSync(path.join(target, "index.html"));
+}
+
+function checkChapterNavigationTargets(errors, file, html) {
+  const navigation = html.match(/<nav\b[^>]*\bclass=["'][^"']*\bchapter-bottom-nav\b[^"']*["'][^>]*>([\s\S]*?)<\/nav>/iu)?.[1] || "";
+  for (const match of navigation.matchAll(/\bhref=["']([^"']+)["']/giu)) {
+    if (!localNavigationTargetExists(file, match[1])) {
+      fail(errors, file, "Kapitelnavigation verweist auf ein fehlendes Ziel: " + match[1]);
+    }
+  }
+}
+
 function readerFiles() {
   if (!fs.existsSync(LIBRARY_ROOT)) return [];
   const files = [];
@@ -170,6 +189,8 @@ for (const file of libraryFiles) {
     }
   }
 
+  if (!isReaderRoot(file)) checkChapterNavigationTargets(errors, file, html);
+
   if (!meta?.status) continue;
   const status = String(meta.status).trim().toLocaleLowerCase("de-DE");
   const marker = new RegExp(`\\bdata-reader-status=["']${status.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}["']`, "iu");
@@ -198,10 +219,12 @@ for (const alias of readerRouteAliases) {
     fail(errors, targetFile, `Alias-Ziel ${alias.to} muss eine indexierbare Lesefassung bleiben.`);
   }
   const relativeAliasHref = `../${routeSlug(alias.from)}/`;
+  const aliasReaderRoot = path.resolve(readerRootFor(sourceFile));
   for (const file of libraryFiles) {
     if (routeFor(file) === alias.from) continue;
     const html = fs.readFileSync(file, "utf8");
-    if (html.includes(alias.from) || html.includes(relativeAliasHref)) {
+    const belongsToAliasReader = path.resolve(readerRootFor(file)) === aliasReaderRoot;
+    if (html.includes(alias.from) || (belongsToAliasReader && html.includes(relativeAliasHref))) {
       fail(errors, file, `Navigation verweist noch auf die Aliasroute ${alias.from}.`);
     }
   }

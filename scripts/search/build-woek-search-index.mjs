@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
+import { hasNoindex, htmlFileForRoute } from "../lib/method-version-indexability.mjs";
 
 const indexPath = "assets/search/search-index.json";
 const metaPath = "public/data/woek-search-meta.json";
@@ -8,6 +9,7 @@ const glossaryPath = "public/data/glossary.terms.json";
 const PAGE_BODY_LIMIT = 1600;
 const SECTION_BODY_LIMIT = 900;
 const FULLTEXT_BODY_LIMIT = 500;
+const SITE_ROOT = process.cwd();
 
 function compareStableText(left, right) {
   const a = String(left);
@@ -17,6 +19,10 @@ function compareStableText(left, right) {
 }
 
 const INTERNAL_PUBLIC_ROUTE_PATTERNS = [
+  // Quell- und Build-Ordner werden nie mit dem öffentlichen Artefakt
+  // ausgeliefert. /tools/ bleibt ausschließlich eine Kompatibilitätsroute
+  // auf /werkzeuge/ und ist deshalb weder Suchziel noch kanonische Seite.
+  /^\/(?:docs|tools)(?:\/|$)/,
   /^\/referenz\/version(?:en|-)/,
   /^\/referenz\/export\//,
   // macOS-Duplikat-Artefakte ("… 2.html"): archivierte Redirect-Stubs auf das
@@ -91,12 +97,39 @@ const PUBLIC_SEARCH_REPLACEMENTS = [
   [/KPI-Rechner/g, "Wirkungsindikatoren-Demo"],
   [/Methodenlandkarte/g, "Methoden & Werkzeuge"],
   [/RSS & Updates|Updates & RSS/g, "Neu auf der Website"],
+  [/\bDruckdatum\s*:\s*(?:\d{1,4}\s*[-./]\s*){2}\d{1,4}\b/giu, ""],
+  [/Dein Browser kann diese Audiodatei nicht direkt abspielen\.?/giu, ""],
+  [/Auszug aus der umfangreichen Korrekturfassung\.?/gi, ""],
+  [/PDF-Fassung in Produktion\.?/gi, ""],
+  [/\b(?:Codex|CodeX)(?:-Anweisung|-Fassung)?\b/giu, ""],
+  [/\bClaude(?:-CI\/CD)?\b/giu, ""],
+  [/\bCI\/CD(?:-Satzfreigabe|-Freigabe)?\b/giu, ""],
+  [/\b(?:Source-Hash|Source-Version|Import-Version|Live-Reference(?:-Version)?|Reviewstatus)\b/giu, ""],
+  [/\bOriginaldatei(?:en)?\b/giu, "Ausgangsdokument"],
+  [/\b(?:Markdown-Master|Word-Rohfassung|Vorlesung-Template)\b/giu, ""],
+  [/\b(?:redaktionell(?:er|en|es|em)?|intern(?:er|en|es|em)?)\s+Hinweis(?:e|en)?\b/giu, "nichtöffentliche Metadaten"],
+  [/Codex-Anweisung\.?/gi, ""],
+  [/ergänzende\s+ergänzende/gi, "ergänzende"],
+  [/Kernformel\.(?=\s|$)/gi, ""],
+  [/\b(?:Import-Version|Reviewstatus|Source-Hash|Live-Reference-Version)\b/gi, ""],
 ];
 
+const EDITORIAL_SEARCH_MARKER = /\b(?:codex|claude|ci\/cd|source[-\s]?hash|source[-\s]?version|import[-\s]?version|live[-\s]?reference|reviewstatus|redaktionell(?:er|en|es|em)?\s+hinweis(?:e|en)?|intern(?:er|en|es|em)?\s+hinweis(?:e|en)?|arbeitsauftrag|vorlesung-template|markdown-master|word-rohfassung|originaldatei(?:en)?|druckdatum)\b/iu;
+const EDITORIAL_SEARCH_SECTION = /\b(?:quellenanker|interne\s+quellen|abschlussnotiz|finalisierung|tiefenskript(?:-erweiterung)?|redaktionell(?:er|en|es|em)?\s+hinweis(?:e|en)?|intern(?:er|en|es|em)?\s+hinweis(?:e|en)?|arbeitsauftrag|vorlesung-template)\b/iu;
+
+function stripEditorialSearchBlocks(value) {
+  return String(value || "").replace(/<(p|li|h[1-6]|dt|dd)\b[^>]*>([\s\S]*?)<\/\1>/giu, (block, _tag, inner) => {
+    const readable = String(inner).replace(/<[^>]+>/gu, " ");
+    return EDITORIAL_SEARCH_MARKER.test(readable) ? " " : block;
+  });
+}
+
 function clean(text) {
-  return String(text || "")
+  return stripEditorialSearchBlocks(text)
     .replace(/<([a-z][\w:-]*)\b[^>]*data-search-exclude[^>]*>[\s\S]*?<\/\1>/gi, " ")
-    .replace(/<([a-z][\w:-]*)\b[^>]*class=["'][^"']*(?:no-print|breadcrumb|side-nav|toc-card|model-strip|footer-nav|site-nav|publication-matrix-wrap)[^"']*["'][^>]*>[\s\S]*?<\/\1>/gi, " ")
+    .replace(/<([a-z][\w:-]*)\b[^>]*class=["'][^"']*(?:no-print|print-meta|breadcrumb|side-nav|toc-card|model-strip|footer-nav|site-nav|publication-matrix-wrap|version-ribbon|technical-meta|live-reference-notice|live-reference-addendum)[^"']*["'][^>]*>[\s\S]*?<\/\1>/gi, " ")
+    .replace(/<audio\b[^>]*>[\s\S]*?<\/audio>/gi, " ")
+    .replace(/<(?:code|pre)\b[^>]*>[\s\S]*?<\/(?:code|pre)>/gi, " ")
     .replace(/<script[\s\S]*?<\/script>/gi, " ")
     .replace(/<style[\s\S]*?<\/style>/gi, " ")
     .replace(/<header[\s\S]*?<\/header>/gi, " ")
@@ -110,6 +143,10 @@ function clean(text) {
 
 function publicSearchText(text) {
   return PUBLIC_SEARCH_REPLACEMENTS.reduce((value, [pattern, replacement]) => value.replace(pattern, replacement), String(text || ""));
+}
+
+function isSearchExcludedSection(title, body = "") {
+  return EDITORIAL_SEARCH_MARKER.test(`${title} ${body}`) || EDITORIAL_SEARCH_SECTION.test(title);
 }
 
 function publicSearchValue(value) {
@@ -254,7 +291,7 @@ function entryFromTerm(term) {
     impactSpaces: ["Mensch", "Planet", "Demokratie"],
     standards: term.relatedTerms?.filter((item) => /sdg|csrd|esrs|taxonomie|gri|nace/i.test(item)) || [],
     instruments: term.relatedTerms || [],
-    tags: [term.status, term.version, term.reviewStatus, ...(term.synonyms || []), ...(term.searchKeywords || [])].filter(Boolean),
+    tags: [term.status, ...(term.synonyms || []), ...(term.searchKeywords || [])].filter(Boolean),
     aliases: [...(term.synonyms || []), term.hoverDefinition],
     body,
     semanticTerms,
@@ -289,21 +326,56 @@ function semanticAliases(term) {
     .slice(0, 10);
 }
 
+const SEMANTIC_STOP_TOKENS = new Set([
+  "und", "oder", "der", "die", "das", "ein", "eine", "einer", "einem", "einen", "mit", "von", "fuer", "als", "ist", "bei", "auf", "aus", "nach", "zur", "zum", "des", "den", "dem",
+]);
+
+let semanticAliasIndex;
+function getSemanticAliasIndex() {
+  if (semanticAliasIndex) return semanticAliasIndex;
+  const index = new Map();
+  for (const term of glossary) {
+    for (const alias of semanticAliases(term)) {
+      const tokens = alias.split(/\s+/).filter(Boolean);
+      // Jedes Alias wird an seinem unterscheidungskräftigsten Wort abgelegt.
+      // Trifft das Wort im Seitentext vor, prüft der zweite Schritt weiterhin
+      // die vollständige Aliasphrase. So bleibt die Zuordnung exakt, ohne für
+      // jede Seite alle Glossarbegriffe durchsuchen zu müssen.
+      const key = [...tokens]
+        .filter((token) => !SEMANTIC_STOP_TOKENS.has(token))
+        .sort((a, b) => b.length - a.length || compareStableText(a, b))[0] || tokens[0];
+      if (!key) continue;
+      const candidate = {
+        alias,
+        label: term.canonicalLabel || term.label || term.slug,
+        score: alias.length + (term.status === "führender-begriff" ? 12 : 0),
+        related: (term.relatedTerms || []).slice(0, 5),
+      };
+      if (!index.has(key)) index.set(key, []);
+      index.get(key).push(candidate);
+    }
+  }
+  semanticAliasIndex = index;
+  return semanticAliasIndex;
+}
+
 function semanticTermsForText(text, limit = 28) {
   const normalized = normalizeSemantic(text).slice(0, 12000);
-  const matches = [];
-  for (const term of glossary) {
-    const aliases = semanticAliases(term);
-    const matchedAlias = aliases.find((alias) => normalized.includes(alias));
-    if (!matchedAlias) continue;
-    matches.push({
-      label: term.canonicalLabel || term.label || term.slug,
-      score: matchedAlias.length + (term.status === "führender-begriff" ? 12 : 0),
-      related: (term.relatedTerms || []).slice(0, 5),
-    });
+  const candidateKeys = new Set(normalized.match(/[a-z0-9+#/-]+/g) || []);
+  const matches = new Map();
+  const aliasIndex = getSemanticAliasIndex();
+  for (const key of candidateKeys) {
+    for (const candidate of aliasIndex.get(key) || []) {
+      if (!normalized.includes(candidate.alias)) continue;
+      const current = matches.get(candidate.label);
+      if (!current || candidate.score > current.score) matches.set(candidate.label, candidate);
+    }
   }
-  matches.sort((a, b) => b.score - a.score || compareStableText(a.label, b.label));
-  return unique(matches.flatMap((match) => [match.label, ...match.related])).slice(0, limit);
+  return [...matches.values()]
+    .sort((a, b) => b.score - a.score || compareStableText(a.label, b.label))
+    .flatMap((match) => [match.label, ...match.related])
+    .filter((value, index, values) => Boolean(value) && values.indexOf(value) === index)
+    .slice(0, limit);
 }
 
 const EXCLUDED_WALK_DIRS = new Set([
@@ -317,6 +389,104 @@ const EXCLUDED_WALK_DIRS = new Set([
   "woek-akademie-app",
   "woek-institut-app",
 ]);
+
+// Die Suche entsteht vor dem öffentlichen Artefakt. Damit alte Einträge nicht
+// weiterleben, bilden wir hier dieselbe öffentliche HTML-Oberfläche ab wie der
+// Artefakt-Build: Jede Suchadresse muss auf eine tatsächlich auslieferbare
+// HTML-Seite im Repository zeigen. Fragmente und Query-Parameter dürfen dabei
+// auf derselben Seite landen, ändern aber nicht den Auslieferungspfad.
+const EXCLUDED_PUBLIC_ROUTE_DIRS = new Set([
+  ".git",
+  ".github",
+  ".claude",
+  ".next",
+  ".codex-backup",
+  "_internal",
+  "_site",
+  "components",
+  "content",
+  "data",
+  "docs",
+  "export",
+  "lib",
+  "manifest",
+  "node_modules",
+  "outputs",
+  "public",
+  "reports",
+  "scripts",
+  "source-assets",
+  "src",
+  "templates",
+  "tiktok_archive",
+  "tiktok_library",
+  "tools",
+  "woek-akademie-app",
+  "woek-institut-app",
+]);
+
+function publicRouteForHtml(relative) {
+  const normalized = relative.replace(/\\/g, "/");
+  if (normalized === "index.html") return "/";
+  if (normalized.endsWith("/index.html")) return `/${normalized.slice(0, -"/index.html".length)}/`;
+  return `/${normalized}`;
+}
+
+function collectPublicHtmlRoutes(dir, relativeDir = "", routes = new Set()) {
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    if (entry.isDirectory()) {
+      if (!relativeDir && EXCLUDED_PUBLIC_ROUTE_DIRS.has(entry.name)) continue;
+      collectPublicHtmlRoutes(path.join(dir, entry.name), path.join(relativeDir, entry.name), routes);
+      continue;
+    }
+    if (!entry.isFile() || !/\.html?$/i.test(entry.name)) continue;
+    routes.add(publicRouteForHtml(path.join(relativeDir, entry.name)));
+  }
+  return routes;
+}
+
+let publicHtmlRoutes;
+function getPublicHtmlRoutes() {
+  if (!publicHtmlRoutes) publicHtmlRoutes = collectPublicHtmlRoutes(SITE_ROOT);
+  return publicHtmlRoutes;
+}
+
+function searchPath(url) {
+  const value = String(url || "").trim();
+  if (!value) return "";
+  if (/^https?:\/\//i.test(value)) {
+    try {
+      const parsed = new URL(value);
+      if (parsed.origin !== "https://wirkungsoekonomie.de") return "";
+      return parsed.pathname || "/";
+    } catch {
+      return "";
+    }
+  }
+  if (!value.startsWith("/")) return "";
+  return value.split(/[?#]/, 1)[0] || "/";
+}
+
+function isDeliverableSearchRoute(url) {
+  const route = searchPath(canonicalSearchRoute(url));
+  if (!route || isInternalPublicRoute(route)) return false;
+  return getPublicHtmlRoutes().has(route);
+}
+
+// The generator deliberately rebuilds WÖk entries, but manually curated or
+// older retained entries can survive between builds. Check the actual public
+// HTML once more at merge time so a noindex archive never remains in the
+// in-site search index merely because it had an older entry object.
+const searchIndexabilityCache = new Map();
+function isIndexableSearchRoute(url) {
+  const route = searchPath(canonicalSearchRoute(url));
+  if (!route || !isDeliverableSearchRoute(route)) return false;
+  if (searchIndexabilityCache.has(route)) return searchIndexabilityCache.get(route);
+  const file = htmlFileForRoute(SITE_ROOT, route);
+  const indexable = Boolean(file && fs.existsSync(file) && !hasNoindex(fs.readFileSync(file, "utf8")));
+  searchIndexabilityCache.set(route, indexable);
+  return indexable;
+}
 
 function walk(dir, files = []) {
   if (!fs.existsSync(dir)) return files;
@@ -342,6 +512,10 @@ function entriesFromContent(file) {
   const text = fs.readFileSync(file, "utf8");
   const route = routeFor(file);
   if (isInternalPublicRoute(route)) return [];
+  // Archiv- und Aliasfassungen bleiben direkt erreichbar, sollen aber nicht
+  // als gleichrangige Empfehlung vor der aktuellen Methode auftauchen.
+  if (/<meta\b(?=[^>]*\bname=["']robots["'])(?=[^>]*\bcontent=["'][^"']*\bnoindex\b)[^>]*>/i.test(text)
+    || /<meta\b(?=[^>]*\bcontent=["'][^"']*\bnoindex\b)(?=[^>]*\bname=["']robots["'])[^>]*>/i.test(text)) return [];
   const metaTitle = clean(text.match(/<meta\s+name=["']search_title["']\s+content=["']([^"']+)["']/i)?.[1]);
   const metaDescription =
     clean(text.match(/<meta\s+name=["']search_description["']\s+content=["']([^"']+)["']/i)?.[1]) ||
@@ -357,7 +531,7 @@ function entriesFromContent(file) {
     text.match(/<dt>Web-Version<\/dt><dd>(.*?)<\/dd>/i)?.[1] ||
     text.match(/^webVersion:\s*["']?(.+?)["']?\s*$/m)?.[1] ||
     "2026.1";
-  const liveBoost = version === "2026.2-live-reference" ? 25 : 0;
+  const liveBoost = 0;
   const isReferenceChapter = /referenz\/kapitel-\d{3}-/.test(file);
   const isRegister = /woek-master-items-final-v1-2/.test(file);
   const isFulltext = route === "/referenz/volltext/";
@@ -384,7 +558,7 @@ function entriesFromContent(file) {
     impactSpaces: [],
     standards: [],
     instruments: [],
-    tags: [status, version, "WÖk-Referenz"],
+    tags: ["WÖk-Referenz"],
     aliases: [],
     body,
     semanticTerms: pageSemanticTerms,
@@ -405,6 +579,7 @@ function entriesFromContent(file) {
         ? text.slice(matchStart, matchStart + match[0].length + nextHeading)
         : text.slice(matchStart, matchStart + 9000);
     const sectionBody = clean(sectionHtml).slice(0, SECTION_BODY_LIMIT);
+    if (isSearchExcludedSection(sectionTitle, sectionBody)) continue;
     const sectionSemanticTerms = semanticTermsForText(`${sectionTitle} ${sectionBody}`);
     entries.push({
       ...pageEntry,
@@ -465,6 +640,7 @@ for (const entry of existing.filter((item) => !String(item.id || "").startsWith(
 }
 const merged = Array.from(byUrl.values())
   .filter((entry) => !isInternalPublicRoute(entry.url))
+  .filter((entry) => isIndexableSearchRoute(entry.url))
   .filter((entry) => !isSearchNoiseEntry(entry))
   .map(publicSearchValue)
   .map(normalizePriority)
@@ -480,6 +656,10 @@ const generatedAt = process.env.SOURCE_DATE_EPOCH
   : "source-derived";
 
 fs.writeFileSync(indexPath, `${JSON.stringify(merged, null, 2)}\n`);
-const stableMeta = Object.fromEntries(Object.entries(meta).sort(([a], [b]) => compareStableText(a, b)));
+const stableMeta = Object.fromEntries(
+  Object.entries(meta)
+    .filter(([route]) => isIndexableSearchRoute(route))
+    .sort(([a], [b]) => compareStableText(a, b)),
+);
 fs.writeFileSync(metaPath, `${JSON.stringify({ generatedAt, entries: stableMeta }, null, 2)}\n`);
-console.log(`Integrated ${generated.length} WÖk search entries into existing search index.`);
+console.log(`Integrated ${generated.length} WÖk search entries into ${merged.length} deliverable search results.`);

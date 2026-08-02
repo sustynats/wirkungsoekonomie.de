@@ -426,31 +426,19 @@ def page_shell(title: str, description: str, body: str, depth: int = 1, search_t
 
 
 def meta_panel(source_hash: str, extra: str = "") -> str:
-    return f"""<section class="meta-box">
-      <h2>Version und Reviewstatus</h2>
-      <dl>
-        <dt>Dokument-ID</dt><dd>{DOC_ID}</dd>
-        <dt>Status</dt><dd>source-original / online strukturierter Import</dd>
-        <dt>Source-Version</dt><dd>{SOURCE_VERSION}</dd>
-        <dt>Web-Version</dt><dd>{WEB_VERSION}</dd>
-        <dt>Reviewstatus</dt><dd>{REVIEW_STATUS}</dd>
-        <dt>Terminologiebasis</dt><dd>WOeK_Begriffsleitfaden_fuehrend_v1.0.md</dd>
-        <dt>Source-Hash</dt><dd>{source_hash}</dd>
-      </dl>
+    return f"""<section class="meta-box citation-summary">
+      <h2>Lesen und zitieren</h2>
+      <p>Diese Onlinefassung ist nach Teilen, Kapiteln und Abschnitten gegliedert. Für eine genaue Fundstelle genügen Titel, Kapitel, Abschnitt und die stabile Seitenadresse.</p>
+      <p>Begriffe und Quellen werden an den jeweiligen Fundstellen verlinkt.</p>
       {extra}
     </section>"""
 
 
 def fulltext_status_panel(stats: dict[str, int]) -> str:
-    return f"""<section class="meta-box version-summary fulltext-status-summary">
-      <h2>Stand dieser Onlinefassung</h2>
-      <p>Diese Volltextansicht enthält das vollständige Grundlagenwerk als lesbare Webfassung. Die zitierfähige Originalfassung bleibt über das PDF erhalten; die Onlinefassung ist strukturiert, verlinkt und versioniert.</p>
-      <div class="version-summary-grid" aria-label="Versionsinformationen">
-        <div><span>Original</span><strong>2026.0</strong><small>PDF bleibt zitierfähig</small></div>
-        <div><span>Onlinefassung</span><strong>2026.2</strong><small>Live-Referenz</small></div>
-        <div><span>Umfang</span><strong>{stats["paragraphs"]} Absätze</strong><small>{stats["headings"]} Überschriften · {stats["figures"]} Abbildungen</small></div>
-      </div>
-      <p class="version-summary-note"><a class="text-link" href="../versionen/">Versionen ansehen</a></p>
+    return f"""<section class="meta-box citation-summary">
+      <h2>Lesen und zitieren</h2>
+      <p>Diese Volltextansicht enthält das Grundlagenwerk als zusammenhängende Webfassung. Kapitelrouten und Abschnittsanker erleichtern genaue Fundstellen.</p>
+      <p>{stats["paragraphs"]} Absätze · {stats["headings"]} Überschriften · {stats["figures"]} Abbildungen</p>
     </section>"""
 
 

@@ -14,9 +14,9 @@ Methodikentwurf für Produktscorecards, FinalScore, NWI, digitale Produktpässe 
 
 Diese Fassung aktualisiert die technischen Leitlinien zum WUStG auf die neue Begriffssystematik der Wirkungsökonomie. Sie übernimmt starke Elemente der Extended-v2-Fassung: WÖk-IDs, Archetypen, Benchmarks, Scorecards, die operative Skala -3 bis +3, FinalScore, Reverse Merit Order, Nichtkompensation, Datenqualität, Assurance und Wirkungsrat-Governance.
 
-Version 2.1 korrigiert und präzisiert zugleich zentrale Punkte: Wirkung wird neutral verwendet, positive Netto-Wirkung ist die Zielgröße, FinalScore, NWI und T-SROI werden getrennt, Steuerklassen werden nur als Modell- und Pilotlogik beschrieben, Rechtsschutz und Datenkorrektur werden systematisiert, EU-Kompatibilität wird als Prüfrahmen formuliert, soziale Abfederung und KMU-Schutz werden ergänzt.
+Version 2.1 korrigiert und präzisiert zugleich zentrale Punkte: Wirkung wird neutral verwendet, positive Netto-Wirkung ist die Zielgröße, FinalScore, NWI und T-SROI werden getrennt, Prüfprofil und rechtliche Tarifentscheidung werden nicht vermischt, Rechtsschutz und Datenkorrektur werden systematisiert, EU-Kompatibilität wird als Prüfrahmen formuliert, soziale Abfederung und KMU-Schutz werden ergänzt.
 
-Alte Fassungen bleiben historische Arbeitsfassungen. Die PDF-Fassung `Technische_Leitlinien_WUStG_Vollversion_Extended_v2.pdf` wird nicht überschrieben.
+Alte Fassungen bleiben historische Arbeitsfassungen. Die PDF-Fassung `Technische_Leitlinien_WUStG_Vollversion_Extended_v2.pdf` ist als Archivquelle zu lesen; für den aktuellen Begriff- und Methodenstand ist diese Online-Fassung maßgeblich.
 
 Leitformel dieser Fassung:
 
@@ -46,7 +46,7 @@ Bei Plattform-, Medien-, Kommunikations- und KI-Produkten ist besondere Vorsicht
 
 Diese Leitlinien beschreiben eine Zielarchitektur und ein Pilotmodell. Eine verbindliche steuerliche Anwendung setzt ein entsprechendes Gesetzgebungsverfahren, europarechtliche Prüfung, Rechtsschutzregelungen, Dateninfrastruktur und Übergangsfristen voraus.
 
-Steuerklassen, Entlastungen, Zuschläge oder Vorsteuerlogiken in dieser Fassung sind Modellvarianten für Simulation und Pilotierung. Sie sind nicht als unmittelbar geltendes Recht zu verstehen.
+Frühere Steuerklassen, Entlastungen, Zuschläge oder Vorsteuerlogiken in dieser Fassung sind Modellvarianten für Simulation und Pilotierung. Sie sind nicht als unmittelbar geltendes Recht zu verstehen. Ein Score oder FinalScore erzeugt keinen Satz: Ein verbindlicher Tarif braucht eine gesetzliche Regel, Prüfung, Einspruch und eine transparent dokumentierte Anwendung.
 
 ## Teil 2 - Begriffe
 
@@ -84,7 +84,7 @@ Ein Score ist die operative Einzelbewertung eines Indikators oder Wirkungsfelds 
 
 ### 2.9 FinalScore
 
-Der FinalScore ist die verdichtete steuerungsrelevante Bewertung eines Produkts, einer Dienstleistung oder Aktivität unter Einbeziehung von Scorecards, Datenqualität, Reverse Merit Order und Nichtkompensation.
+Der FinalScore ist die verdichtete steuerungsrelevante Bewertung eines Produkts, einer Dienstleistung oder Aktivität unter Einbeziehung von Scorecards, Datenqualität, Reverse Merit Order und Nichtkompensation. Er ist ein Prüf- und Begrenzungssignal, keine automatische Rechts- oder Tarifentscheidung.
 
 ### 2.10 NWI
 
@@ -369,7 +369,7 @@ Scorecards enthalten:
 
 ### 8.2 FinalScore-Bildung
 
-Der FinalScore ist die steuerungsrelevante Verdichtung. Er darf kritische Defizite nicht verdecken.
+Der FinalScore ist die steuerungsrelevante Verdichtung. Er darf kritische Defizite nicht verdecken und darf nicht in einen Steuersatz umgerechnet werden.
 
 Er berücksichtigt:
 
@@ -383,29 +383,29 @@ Er berücksichtigt:
 
 ### 8.3 Unterschied FinalScore und NWI
 
-FinalScore ist die praktisch steuerungsrelevante Score-Verdichtung für Produkt- und Umsatzsteuerzwecke.
+FinalScore ist die praktisch steuerungsrelevante Score-Verdichtung für Produkt- und Umsatzsteuer-Prüfpfade. Er dokumentiert Evidenz und Grenzen für eine mögliche spätere Rechtsanwendung, ersetzt aber keine demokratisch beschlossene Tarifregel.
 
 NWI ist die operative Netto-Wirkungskennzahl, wenn positive und negative Wirkungen systematisch unter Nichtkompensation zusammengeführt werden.
 
 FinalScore kann aus NWI-Logiken gespeist werden, ist aber nicht identisch mit T-SROI.
 
-T-SROI bewertet Transformation, nicht die Standard-Produktsteuerklasse.
+T-SROI bewertet Transformation, nicht einen Produktstatus oder einen Steuertarif.
 
-### 8.4 Steuerklassen als Modellvariante
+### 8.4 Prüfprofile und Tarifvarianten (keine Ableitungsregel)
 
-Steuerklassen und Steuersätze sind in dieser Leitlinie Modellvarianten für Pilotierung und Simulation. Ihre verbindliche Anwendung setzt gesetzliche Umsetzung und europarechtliche Prüfung voraus.
+Die folgende Matrix ordnet Prüfprofile, nicht Tarife. Sie darf nicht als Funktion `t = f(FinalScore)` gelesen werden. Ein verbindlicher Satz braucht eine gesetzliche, verhältnismäßige und anfechtbare Regel; die Scorecard liefert dafür nur die dokumentierte Evidenz, einschließlich Datenqualität und roter Linien.
 
-| FinalScore | Modellklasse | Mögliche steuerliche Rückkopplung |
+| Prüfprofil | Aussage der Scorecard | Möglicher nächster Schritt |
 |---|---|---|
-| +3 | transformativ | starke Entlastung / Pilot: niedrigster Satz |
-| +2 | sehr positiv | Entlastung |
-| +1 | positiv | moderate Entlastung |
-| 0 | neutral | Standardsatz / keine Entlastung |
-| -1 | negativ | leichte Belastung |
-| -2 | schädlich | erhöhte Belastung |
-| -3 | hoch schädlich / rote Linie | höchste Belastung / Ausschluss / Sonderprüfung |
+| +3 | stark dokumentierte positive Netto-Wirkung, keine rote Linie | Evaluation einer rechtlich zulässigen Entlastungsoption |
+| +2 | überwiegend positive, gut belegte Wirkung | Prüfung einer Entlastungsoption |
+| +1 | positive Hinweise mit Grenzen | Daten- und Rechtsprüfung vor jeder Rückkopplung |
+| 0 | kein belastbarer positiver oder negativer Ausschlag | Standardbehandlung nach geltendem Recht |
+| -1 | negativer Befund oder Unsicherheit | Abhilfe-, Daten- oder Risiko-Prüfung |
+| -2 | deutlicher negativer Befund | vertiefte Prüfung, Abhilfeplan oder Schutzmaßnahme |
+| -3 / rote Linie | schwerer kritischer Befund | Sonderprüfung, Rechtsschutz und gegebenenfalls gesetzlich vorgesehene Folge |
 
-Konkrete Prozentsätze werden nicht verbindlich gesetzt. Frühere Werte wie 0 %, 5 %, 12 %, 19 %, 20 % oder 25 % sind historische Simulationswerte oder mögliche Pilotannahmen, nicht geltendes Recht.
+Für eine Preisrechnung gilt erst nach unabhängiger Bestimmung eines Satzes `t`: `P_brutto = P_netto × (1 + t)`. Frühere Werte wie 0 %, 5 %, 12 %, 19 %, 20 % oder 25 % sind historische Simulationswerte, nicht geltendes Recht und keine Ausgaben des FinalScore.
 
 ## Teil 9 - Reverse Merit Order und Nichtkompensation
 
@@ -729,16 +729,13 @@ Die historische PDF-Fassung bleibt unverändert zitierfähig. Diese v2.1-Fassung
 | D | Ersatzwert / unsicher | deutlicher Abschlag |
 | E | fehlend / nicht prüfbar | konservativer Negativ- oder Neutralwert, je nach Risikoklasse |
 
-### Tabelle D - Beispielhafte Modellklassen
+### Tabelle D - Prüfprofile und mögliche Folgeschritte
 
-| FinalScore | Modellklasse | Mögliche steuerliche Rückkopplung |
+| Prüfprofil | Dokumentierter Befund | Möglicher nächster Schritt |
 |---|---|---|
-| +3 | transformativ | starke Entlastung / niedrigster Pilotsatz |
-| +2 | sehr positiv | Entlastung |
-| +1 | positiv | moderate Entlastung |
-| 0 | neutral | Standardsatz / keine Entlastung |
-| -1 | negativ | leichte Belastung |
-| -2 | schädlich | erhöhte Belastung |
-| -3 | hoch schädlich / rote Linie | höchste Belastung / Ausschluss / Sonderprüfung |
+| +3 bis +2 | positive Netto-Wirkung mit hoher Datenqualität | rechtlich zulässige Entlastungsoption evaluieren |
+| +1 bis 0 | begrenzte oder neutrale Evidenz | Standardbehandlung und Datenpflege |
+| -1 bis -2 | negativer Befund oder erhebliche Unsicherheit | Abhilfe-, Risiko- oder Datenprüfung |
+| -3 / rote Linie | schwerer kritischer Befund | Sonderprüfung, Rechtsschutz und gegebenenfalls gesetzlich vorgesehene Folge |
 
-Diese Tabelle beschreibt Modellklassen, keine verbindlichen Steuersätze.
+Diese Tabelle beschreibt Prüfprofile, keine verbindlichen Steuersätze und keine automatische Preisfolge.

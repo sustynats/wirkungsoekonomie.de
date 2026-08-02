@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-30T18:24:51.059Z",
+  "generatedAt": "2026-08-02T19:49:46.648Z",
   "version": "v1",
   "source": "assets/search/search-index.json",
   "publicIndexUrl": "/assets/search/search-index.json",
-  "count": 30214,
+  "count": 28957,
   "sections": [
     "Akademie",
     "Anwendungen",
@@ -14,7 +14,6 @@
     "Erleben",
     "Evidenz",
     "Für wen",
-    "Glossar",
     "Grundlagen",
     "Kompass",
     "Lernen",
@@ -24,14 +23,11 @@
     "Öffentlicher Wirkungsraum",
     "Ordnung",
     "Portale",
-    "Produkte / Preise",
-    "Produkte & Konsum / Wirkungsumsatzsteuer",
     "Referenz",
     "Register",
     "SDG / SDG+",
     "SDG+",
     "Seite",
-    "Steuern / Recht",
     "Suche",
     "Verstehen",
     "Website 1.0",
@@ -78,7 +74,6 @@
     "Fachvertiefung / Onlinefassung",
     "Fallstudie",
     "Gesamtdossier / Onlinefassung",
-    "Glossarbegriff",
     "Hub",
     "Interaktiver Rechner",
     "Internationale Ordnung, Globalisierung und Geopolitik",
@@ -277,8 +272,6 @@
       "format": "Glossarbegriff",
       "tags": [
         "führender-begriff",
-        "1.1",
-        "redaktionell zu prüfen",
         "Algorithmische Fairness und digitale Rechte",
         "Algorithmische Fairness",
         "algorithmic fairness",
@@ -300,8 +293,6 @@
       "format": "Glossarbegriff",
       "tags": [
         "führender-begriff",
-        "1.1",
-        "redaktionell zu prüfen",
         "Archetyp",
         "Bewertungsarchetyp",
         "Bewertungsfunktion",
@@ -315,6 +306,20 @@
       ]
     },
     {
+      "id": "woek-term-attributionsfehler",
+      "title": "Attributionsfehler",
+      "url": "/begriffe/attributionsfehler/",
+      "section": "Begriffe",
+      "type": "Begriff",
+      "format": "Glossarbegriff",
+      "tags": [
+        "führender-begriff",
+        "Attributionsfehler",
+        "fundamentaler Attributionsfehler",
+        "Korrespondenzverzerrung"
+      ]
+    },
+    {
       "id": "woek-term-automatisierungsdividende",
       "title": "Automatisierungsdividende",
       "url": "/begriffe/automatisierungsdividende/",
@@ -323,8 +328,6 @@
       "format": "Glossarbegriff",
       "tags": [
         "führender-begriff",
-        "1.1",
-        "approved",
         "Automatisierungsdividende",
         "Produktivitätsdividende",
         "Maschinenleistungsdividende",
@@ -350,8 +353,6 @@
       "format": "Glossarbegriff",
       "tags": [
         "führender-begriff",
-        "1.1",
-        "redaktionell zu prüfen",
         "Benchmark",
         "Vergleichswert",
         "Schwellenwert",
@@ -364,6 +365,34 @@
       ]
     },
     {
+      "id": "woek-term-betroffenenperspektive",
+      "title": "Betroffenenperspektive",
+      "url": "/begriffe/betroffenenperspektive/",
+      "section": "Begriffe",
+      "type": "Begriff",
+      "format": "Glossarbegriff",
+      "tags": [
+        "führender-begriff",
+        "Betroffenenperspektive",
+        "Perspektive Betroffener",
+        "Erfahrungsperspektive"
+      ]
+    },
+    {
+      "id": "woek-term-cancel-dynamiken",
+      "title": "Cancel-Dynamiken",
+      "url": "/begriffe/cancel-dynamiken/",
+      "section": "Begriffe",
+      "type": "Begriff",
+      "format": "Glossarbegriff",
+      "tags": [
+        "führender-begriff",
+        "Cancel-Dynamiken",
+        "Cancel Culture",
+        "öffentliche Ausschlussdynamiken"
+      ]
+    },
+    {
       "id": "woek-term-digitale-selbstbestimmung",
       "title": "Digitale Selbstbestimmung",
       "url": "/begriffe/digitale-selbstbestimmung/",
@@ -372,8 +401,6 @@
       "format": "Glossarbegriff",
       "tags": [
         "führender-begriff",
-        "1.0",
-        "fachlich im WÖk-Kontext ergänzt, offen für Vertiefung",
         "Digitale Selbstbestimmung"
       ]
     },
@@ -386,8 +413,6 @@
       "format": "Glossarbegriff",
       "tags": [
         "führender-begriff",
-        "1.0",
-        "fachlich im WÖk-Kontext ergänzt, offen für Vertiefung",
         "Digitalisierung"
       ]
     },
@@ -400,14 +425,41 @@
       "format": "Glossarbegriff",
       "tags": [
         "führender-begriff",
-        "1.1",
-        "redaktionell zu prüfen",
         "Digitalisierung als Infrastruktur der Wirkungsökonomie",
         "Digitalisierung als Infrastruktur",
         "Digitales Nervensystem der Wirkungsökonomie",
         "digitale Wirkungsinfrastruktur",
         "Daten als Rückkopplung",
         "Digitalisierung als WÖk-Infrastruktur"
+      ]
+    },
+    {
+      "id": "woek-term-diskursqualitaet",
+      "title": "Diskursqualität",
+      "url": "/begriffe/diskursqualitaet/",
+      "section": "Begriffe",
+      "type": "Begriff",
+      "format": "Glossarbegriff",
+      "tags": [
+        "führender-begriff",
+        "Diskursqualität",
+        "Qualität öffentlicher Debatte",
+        "Debattenqualität"
+      ]
+    },
+    {
+      "id": "woek-term-ehrenamt",
+      "title": "Ehrenamt",
+      "url": "/begriffe/ehrenamt/",
+      "section": "Begriffe",
+      "type": "Begriff",
+      "format": "Glossarbegriff",
+      "tags": [
+        "führender-begriff",
+        "Ehrenamt",
+        "freiwilliges Engagement",
+        "Volunteering",
+        "Freiwilligenarbeit"
       ]
     },
     {
@@ -419,8 +471,6 @@
       "format": "Glossarbegriff",
       "tags": [
         "führender-begriff",
-        "1.1",
-        "approved",
         "Erwerbsarbeitslogik",
         "Erwerbsarbeitszentrierung",
         "Arbeitsgesellschaft",
@@ -437,8 +487,6 @@
       "format": "Glossarbegriff",
       "tags": [
         "führender-begriff",
-        "1.1",
-        "approved",
         "Faktencheck",
         "Fact Check",
         "Richtigkeitsprüfung"
@@ -453,8 +501,6 @@
       "format": "Glossarbegriff",
       "tags": [
         "führender-begriff",
-        "1.1",
-        "redaktionell zu prüfen",
         "FinalScore",
         "Final Score",
         "Gesamt-Score",
@@ -474,95 +520,10 @@
       "format": "Glossarbegriff",
       "tags": [
         "führender-begriff",
-        "1.1",
-        "approved",
         "Folgencheck",
         "Folgenprüfung",
         "Ex-ante-Folgenprüfung",
         "Wirkungsfolgencheck"
-      ]
-    },
-    {
-      "id": "woek-term-fraunhofersche-linien",
-      "title": "Fraunhofersche Linien",
-      "url": "/begriffe/fraunhofersche-linien/",
-      "section": "Begriffe",
-      "type": "Begriff",
-      "format": "Glossarbegriff",
-      "tags": [
-        "führender-begriff",
-        "1.0",
-        "approved",
-        "Fraunhofersche Linien",
-        "Fraunhofer-Linien",
-        "Fraunhofersche Linien der Preise",
-        "Fraunhofersche Linien der Wirtschaft",
-        "Fraunhofersche Linien der Kommunikation",
-        "kommunikative Fraunhofer-Linien",
-        "institutionalisierte Fraunhofer-Linien",
-        "indoktrinierte Fraunhofer-Linien"
-      ]
-    },
-    {
-      "id": "woek-term-gesundheit",
-      "title": "Gesundheit",
-      "url": "/begriffe/gesundheit/",
-      "section": "Begriffe",
-      "type": "Begriff",
-      "format": "Glossarbegriff",
-      "tags": [
-        "führender-begriff",
-        "1.0",
-        "fachlich im WÖk-Kontext ergänzt, offen für Vertiefung",
-        "Gesundheit"
-      ]
-    },
-    {
-      "id": "woek-term-gesundheitsdividende",
-      "title": "Gesundheitsdividende",
-      "url": "/begriffe/gesundheitsdividende/",
-      "section": "Begriffe",
-      "type": "Begriff",
-      "format": "Glossarbegriff",
-      "tags": [
-        "führender-begriff",
-        "1.0",
-        "fachlich geprüft im WÖk-Kontext, offen für wissenschaftliche Ergänzung",
-        "Gesundheitsdividende",
-        "Präventionsdividende",
-        "Health Dividend"
-      ]
-    },
-    {
-      "id": "woek-term-gesundheitskasse",
-      "title": "Gesundheitskasse",
-      "url": "/begriffe/gesundheitskasse/",
-      "section": "Begriffe",
-      "type": "Begriff",
-      "format": "Glossarbegriff",
-      "tags": [
-        "führender-begriff",
-        "1.0",
-        "fachlich geprüft im WÖk-Kontext, offen für wissenschaftliche Ergänzung",
-        "Gesundheitskasse",
-        "Präventionskasse",
-        "Health Impact Fund im Kassensystem"
-      ]
-    },
-    {
-      "id": "woek-term-gesundheitssystem",
-      "title": "Gesundheitssystem",
-      "url": "/begriffe/gesundheitssystem/",
-      "section": "Begriffe",
-      "type": "Begriff",
-      "format": "Glossarbegriff",
-      "tags": [
-        "führender-begriff",
-        "1.0",
-        "fachlich geprüft im WÖk-Kontext, offen für wissenschaftliche Ergänzung",
-        "Gesundheitssystem",
-        "präventives Gesundheitssystem",
-        "wirkungsorientiertes Gesundheitssystem"
       ]
     }
   ]

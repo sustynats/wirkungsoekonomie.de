@@ -427,9 +427,14 @@ def short_label(title):
 def load_data():
     import json
     reg = json.load(open(REG))["documents"]
-    det = {e["id"]: e.get("detailSlug") for e in json.load(open(DET)).get("entries", [])}
-    tbl = {e["title"]: e.get("detailSlug") for e in json.load(open(DET)).get("entries", [])}
-    return reg, det, tbl
+    details = json.load(open(DET)).get("entries", [])
+    # IDs are intentionally not necessarily unique across versioned source
+    # files. Prefer the concrete source path before falling back to an ID or
+    # title, otherwise a reader for v1.0 can overwrite the one for v1.1.
+    by_primary = {e.get("primaryUrl"): e.get("detailSlug") for e in details if e.get("primaryUrl")}
+    by_id = {e["id"]: e.get("detailSlug") for e in details if e.get("id")}
+    by_title = {e["title"]: e.get("detailSlug") for e in details if e.get("title")}
+    return reg, by_primary, by_id, by_title
 
 
 def select(mode, reg):
@@ -443,19 +448,19 @@ def select(mode, reg):
                 and "rang-" not in ((x.get("urls") or {}).get("primary") or "")]
     if mode == "all-standalone":
         return [x for x in docs if "rang-" not in ((x.get("urls") or {}).get("primary") or "")]
-    ids = set(mode.split(","))
-    return [x for x in docs if x.get("id") in ids]
+    targets = set(mode.split(","))
+    return [x for x in docs if x.get("id") in targets or ((x.get("urls") or {}).get("primary") in targets)]
 
 
 if __name__ == "__main__":
     mode = sys.argv[1] if len(sys.argv) > 1 else "wave1"
-    reg, det, tbl = load_data()
+    reg, by_primary, by_id, by_title = load_data()
     sel = select(mode, reg)
     print(f"Auswahl '{mode}': {len(sel)} Dokumente")
     made_ch = made_single = failed = 0
     for x in sel:
         did = x.get("id")
-        slug = det.get(did) or tbl.get(x.get("title"))
+        slug = by_primary.get((x.get("urls") or {}).get("primary")) or by_id.get(did) or by_title.get(x.get("title"))
         pdf = (x.get("urls") or {}).get("primary")
         if not slug or not pdf or not os.path.isfile(os.path.join(ROOT, pdf)):
             print(f"  ÜBERSPRUNGEN {did}: slug={slug} pdf={pdf}")

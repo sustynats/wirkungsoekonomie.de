@@ -154,27 +154,32 @@ const REVIEW_RELEASE_OVERRIDES = new Map(Object.entries({
   },
   "wp-produkte": {
     title: "Produktbesteuerung durch Wirkung",
-    subtitle: "Warum Preise die ganze Wirkung eines Produkts sichtbar machen müssen",
+    subtitle: "Historische Quellenfassung zur Produkt- und Preissteuerung",
     fileName: "WP_Produkte.pdf",
     filePath: "public/downloads/originals/WP_Produkte.pdf",
-    contentHtmlPath: "content/documents/online/wp-produkte.inc",
+    contentHtmlPath: "",
+    suppressHistoricalText: true,
     documentType: "working-paper",
-    status: "aktuell",
-    visibility: "public",
+    status: "ersetzt",
+    visibility: "archive",
     audience: ["Politik", "Unternehmen", "Wissenschaft"],
     level: "expert",
-    summaryShort: "Working Paper zur Produktwirkungssteuer und zur Rückkopplung ökologischer, sozialer und demokratischer Wirkungen in Preise.",
-    whatToExpect: "Eine ausführliche Herleitung, wie Produktdaten, Scorecards und steuerliche Rückkopplung zu wahreren Preisen beitragen können.",
-    keyQuestions: ["Warum reichen heutige Produktpreise nicht aus?", "Wie könnte eine Produktwirkungssteuer funktionieren?", "Wie bleiben Wirkung, Wirkungspotenzial und Wirkungsrisiko getrennt?"],
-    topics: ["Produktwirkungssteuer", "Wahre Preise", "Produktwirkung"],
+    summaryShort: "Historische Quellenfassung zur Produktsteuerung. Sie enthält überholte automatische Zuordnungen von Scores zu Steuerklassen und dehnt die Logik teilweise auf Personen und Einkommen aus.",
+    whatToExpect: "Die Fassung bleibt als Entwicklungsspur verfügbar. Der aktuelle Ansatz trennt Produkt-, Organisations- und Personenebene strikt: Ein Score löst weder automatisch einen Preis noch eine Steuerklasse aus; Entscheidungen brauchen Rechtsgrundlage, Datenqualität, Prüfung und demokratische Kontrolle.",
+    keyQuestions: ["Welche automatische Score- und Steuerlogik ist verworfen?", "Wie begrenzen Nichtkompensation und Reverse Merit Order eine aktuelle Produktprüfung?", "Wo liegt das aktuelle Dossier Produkte & Konsum?"],
+    topics: ["Produktwirkung", "Wirkungssteuerung", "Historische Quellenfassung"],
     methods: ["Wirkungssteuer", "Reverse Merit Order", "Nichtkompensation"],
     impactFields: ["Mensch", "Planet", "Demokratie"],
-    legalNotice: "Working Paper. Keine Rechts-, Steuer-, Förder-, Anlage-, Prüfungs- oder Unternehmensberatung; keine amtliche Bewertungsmethode.",
-    editorialNote: "Bereinigte öffentliche Fassung; redaktionelle Arbeitsprozess-Sätze wurden entfernt.",
+    successorUrl: "wirkungsfelder/produkte-konsum/dossier/",
+    successorLabel: "Aktuelles Dossier Produkte & Konsum öffnen",
+    historicalNotice: "Diese Fassung koppelt Scores teilweise automatisch an Steuerklassen, Preise und personenbezogene Daten. Das ist verworfen: Die WÖk bewertet keine Personen und setzt weder individuelle Steuern noch Preise automatisch aus einem Score fest. Nichtkompensation und Reverse Merit Order sind Schutz-Gates, keine Rechenabkürzung für automatische Entscheidungen.",
+    legalNotice: "Historische Quellenfassung. Nicht als Grundlage für Personenbewertungen, automatische Steuer- oder Preisentscheidungen oder reale Produktklassifikationen verwenden. Keine Rechts-, Steuer-, Förder-, Anlage-, Prüfungs- oder Unternehmensberatung; keine amtliche Bewertungsmethode.",
+    editorialNote: "",
+    internalNote: "",
     downloadAllowed: true,
     previewAllowed: true,
-    section: "Wirkungssteuerung",
-    order: 314
+    section: "Archiv",
+    order: 912
   },
   "wp-einkommen": {
     title: "Wirkungseinkommen",
@@ -202,21 +207,23 @@ const REVIEW_RELEASE_OVERRIDES = new Map(Object.entries({
   },
   "wp-wohnungsmarkt": {
     title: "Working-Paper Wohnungsmarkt",
-    subtitle: "Bezahlbar, nachhaltig, gerecht: Wohnwirkung statt Knappheitsrendite",
+    subtitle: "Historische T-SROI- und Wohnwirkungsdarstellung",
     fileName: "WP_Wohnungsmarkt.pdf",
     filePath: "public/downloads/originals/WP_Wohnungsmarkt.pdf",
     contentHtmlPath: "content/documents/online/wp-wohnungsmarkt.inc",
     documentType: "working-paper",
-    status: "aktuell",
-    visibility: "public",
+    status: "ersetzt",
+    visibility: "archive",
     audience: ["Kommunen", "Politik", "Wohnen"],
     level: "expert",
-    summaryShort: "Working Paper zur wirkungsökonomischen Einordnung des Wohnungsmarkts, von Bodenknappheit bis Wohnwirkung.",
-    whatToExpect: "Eine ausführliche Analyse von Wohnraum, Boden, Mieten, Energie, Quartieren und Steuerungslogiken nach Wirkung.",
-    keyQuestions: ["Warum verteilt der heutige Markt nach Zahlungsfähigkeit?", "Wie kann Wettbewerb auf Wohnwirkung umgelenkt werden?", "Wie lassen sich Bürokratie und Flickenteppich reduzieren?"],
+    summaryShort: "Historisches Working Paper mit einer vereinfachten T-SROI-Darstellung. Für T-SROI-Berechnungen gilt der aktuelle Rechenstandard.",
+    whatToExpect: "Die Wohnungsmarktanalyse bleibt als historische Quellenfassung lesbar; ihre T-SROI-Aussagen sind durch die kausale, diskontierte Netto-Nutzenrechnung eingeordnet.",
+    keyQuestions: ["Welche T-SROI-Annahmen sind historisch?", "Wie lautet der aktuelle Rechenstandard?"],
     topics: ["Wohnen", "Boden", "Wohnwirkung"],
     methods: ["Wirkungssteuer", "Scorecard", "Reverse Merit Order"],
     impactFields: ["Mensch", "Planet", "Demokratie"],
+    successorUrl: "werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/",
+    successorLabel: "Aktuellen T-SROI-Rechenstandard öffnen",
     legalNotice: "Working Paper. Keine Rechts-, Steuer-, Miet-, Immobilien-, Förder-, Anlage- oder Kommunalberatung.",
     editorialNote: "Öffentliche Fassung nach Red-Flag-Prüfung freigegeben.",
     downloadAllowed: true,
@@ -226,27 +233,35 @@ const REVIEW_RELEASE_OVERRIDES = new Map(Object.entries({
   },
   "wenn-maschinen-arbeiten": {
     title: "Wenn Maschinen arbeiten",
-    subtitle: "Warum Automatisierung ein neues Einkommens- und Wirkungsmodell braucht",
+    subtitle: "Historische Quellenfassung zu Automatisierung und Wirkungseinkommen",
     fileName: "Wenn-Maschinen-arbeiten.pdf",
     filePath: "public/downloads/originals/Wenn-Maschinen-arbeiten.pdf",
-    contentHtmlPath: "content/documents/online/wenn-maschinen-arbeiten.inc",
+    // Die frühere Online-Transkription bleibt als interne Quellenableitung
+    // erhalten, wird aber nicht mehr als öffentliche Dokumentseite ausgespielt.
+    // Die historische, noindex geschützte Lesefassung liegt im Bibliotheksarchiv.
+    contentHtmlPath: "",
+    suppressHistoricalText: true,
     documentType: "working-paper",
-    status: "aktuell",
-    visibility: "public",
+    status: "ersetzt",
+    visibility: "archive",
     audience: ["Politik", "Wirtschaft", "Wissenschaft"],
     level: "expert",
-    summaryShort: "Working Paper zur Frage, wie Automatisierung, KI, Arbeit, Einkommen und Wirkung neu zusammengedacht werden können.",
-    whatToExpect: "Eine ausführliche Systemanalyse zu Arbeit, Maschinenleistung, sozialer Sicherung und Wirkung als Steuerungsmaßstab.",
-    keyQuestions: ["Was passiert, wenn Arbeit als Einkommensgrundlage schwindet?", "Warum bleibt Wirkung auch dann relevant, wenn Arbeit automatisiert wird?", "Welche Rückkopplung braucht ein neues Einkommensmodell?"],
-    topics: ["Automatisierung", "KI", "Wirkungseinkommen"],
-    methods: ["Wirkungsarchitektur", "Systemanalyse", "Positive Netto-Wirkung"],
+    summaryShort: "Historische Quellenfassung. Sie dokumentiert einen frühen Denkweg zu Automatisierung und sozialer Sicherung, enthält aber verworfene Vorschläge zur personenbezogenen Bewertung und zu automatischen individuellen Steuer- und Transferfolgen.",
+    whatToExpect: "Die historische Argumentation bleibt nur als Entwicklungsspur lesbar. Der aktuelle Ansatz bewertet Wirkungen von Angeboten, Entscheidungen und Systemen – nicht Menschen – und trifft keine automatischen Individualentscheidungen.",
+    keyQuestions: ["Welche Annahmen dieser historischen Fassung sind verworfen?", "Wie werden Automatisierung und soziale Sicherung heute ohne Personen-Scoring eingeordnet?", "Wo liegt die aktuelle Einordnung zu Arbeit und Einkommen?"],
+    topics: ["Automatisierung", "Arbeit & Einkommen", "Historische Quellenfassung"],
+    methods: ["Wirkungsarchitektur", "Systemanalyse", "Schutzlinien"],
     impactFields: ["Mensch", "Demokratie"],
-    legalNotice: "Konzeptionelles Working Paper. Keine Rechts-, Steuer-, Sozial-, Arbeitsmarkt-, Anlage- oder Unternehmensberatung.",
-    editorialNote: "Bereinigte öffentliche Fassung; redaktionelle Arbeitsprozess-Sätze wurden entfernt.",
+    successorUrl: "wirkungsfelder/arbeit-einkommen/",
+    successorLabel: "Aktuelle Einordnung zu Arbeit & Einkommen öffnen",
+    historicalNotice: "Diese Fassung enthält Passagen zu individuellen Wirkungswerten, Konten und automatischen Steuer-, Transfer- oder Leistungsfolgen. Diese Passagen sind verworfen: Die WÖk bewertet keine Personen, vergibt keine sozialen Punkte und trifft keine automatischen Entscheidungen über Menschen. Nichtkompensation und Reverse Merit Order begrenzen die Bewertung von Angeboten und Entscheidungen; sie rechtfertigen keine Personeneingriffe.",
+    legalNotice: "Historische Quellenfassung. Nicht als Grundlage für Bewertungen von Personen, automatische Entscheidungen oder Steuer-, Transfer-, Leistungs- oder Zugangsentscheidungen verwenden. Keine Rechts-, Steuer-, Sozial-, Arbeitsmarkt-, Anlage- oder Unternehmensberatung.",
+    editorialNote: "",
+    internalNote: "",
     downloadAllowed: true,
     previewAllowed: true,
-    section: "Wirkungsfelder",
-    order: 320
+    section: "Archiv",
+    order: 920
   },
   "nats-woek-allgemein": {
     title: "Von Kapital zu Wirkung",
@@ -346,27 +361,32 @@ const REVIEW_RELEASE_OVERRIDES = new Map(Object.entries({
   },
   "wp-rente": {
     title: "Working-Paper Rente",
-    subtitle: "Rente, Wirkung und soziale Sicherung in der Wirkungsökonomie",
+    subtitle: "Historische Quellenfassung zu Rente und sozialer Sicherung",
     fileName: "WP_Rente.pdf",
     filePath: "public/downloads/originals/WP_Rente.pdf",
-    contentHtmlPath: "content/documents/online/wp-rente.inc",
+    contentHtmlPath: "",
+    suppressHistoricalText: true,
     documentType: "working-paper",
-    status: "aktuell",
-    visibility: "public",
+    status: "ersetzt",
+    visibility: "archive",
     audience: ["Politik", "Soziales", "Wissenschaft"],
     level: "expert",
-    summaryShort: "Working Paper zur wirkungsökonomischen Einordnung von Rente, Generationenvertrag, sozialer Sicherung und Zukunftsfähigkeit.",
-    whatToExpect: "Eine konzeptionelle Betrachtung von Rentensystem, Demografie, Kapital, Arbeit und Wirkung.",
-    keyQuestions: ["Wie lässt sich Alterssicherung wirkungsökonomisch denken?", "Welche Rolle spielen Demografie, Arbeit und Kapital?", "Welche Schutzlinien braucht ein Rentenmodell?"],
-    topics: ["Rente", "Soziale Sicherung", "Generationenvertrag"],
-    methods: ["Wirkungsarchitektur", "Systemanalyse", "Positive Netto-Wirkung"],
+    summaryShort: "Historische Quellenfassung zu Rente und sozialer Sicherung. Sie enthält verworfene Formeln, die individuelle Biografien und Wirkungsfaktoren zu automatischen Rentenfolgen verrechnen.",
+    whatToExpect: "Die Fassung bleibt nur für die Entwicklungsgeschichte lesbar. Die aktuelle Einordnung schützt Grundsicherung, Gleichbehandlung, Datenschutz und Rechtsschutz; sie bewertet keine Menschen und automatisiert keine individuellen Rentenansprüche.",
+    keyQuestions: ["Welche individuellen Rentenformeln dieser Fassung sind verworfen?", "Wie werden Automatisierung und Alterssicherung heute ohne Personen-Scoring eingeordnet?", "Wo liegt die aktuelle Einordnung zu Rente und sozialer Sicherung?"],
+    topics: ["Rente", "Soziale Sicherung", "Historische Quellenfassung"],
+    methods: ["Wirkungsarchitektur", "Systemanalyse", "Schutzlinien"],
     impactFields: ["Mensch", "Demokratie"],
-    legalNotice: "Working Paper. Keine Rechts-, Steuer-, Renten-, Sozial-, Versicherungs-, Förder- oder Anlageberatung.",
-    editorialNote: "Öffentliche Fassung nach Red-Flag-Prüfung freigegeben.",
+    successorUrl: "wirkungsfelder/rente-soziale-sicherung/",
+    successorLabel: "Aktuelle Einordnung zu Rente & sozialer Sicherung öffnen",
+    historicalNotice: "Diese Fassung verrechnet individuelle Biografien, Wirkungsfaktoren und Rentenhöhen. Diese Logik ist verworfen: Die WÖk bewertet keine Personen, führt keine persönlichen Wirkungskonten und trifft keine automatischen Entscheidungen über individuelle Renten- oder Leistungsansprüche.",
+    legalNotice: "Historische Quellenfassung. Nicht als Grundlage für Personenbewertungen, automatische Renten-, Steuer-, Transfer- oder Leistungsentscheidungen verwenden. Keine Rechts-, Steuer-, Renten-, Sozial-, Versicherungs-, Förder- oder Anlageberatung.",
+    editorialNote: "",
+    internalNote: "",
     downloadAllowed: true,
     previewAllowed: true,
-    section: "Wirkungsfelder",
-    order: 330
+    section: "Archiv",
+    order: 916
   }
 }));
 
@@ -697,23 +717,25 @@ const DOCUMENTS = [
     id: "whitepaper-t-sroi",
     slug: "whitepaper-t-sroi",
     title: "Whitepaper T-SROI",
-    subtitle: "Transformationswirkung und Systemhebel bewerten",
+    subtitle: "Historische Multiplikatorlogik und ihr wissenschaftlicher Ersatz",
     fileName: "Whitepaper-T-SROI.pdf",
     filePath: "public/downloads/originals/Whitepaper-T-SROI.pdf",
     documentType: "whitepaper",
-    status: "aktuell",
-    visibility: "expert_public",
+    status: "ersetzt",
+    visibility: "archive",
     audience: ["Unternehmen", "Wissenschaft", "Impact Controlling"],
     level: "fortgeschritten",
-    summaryShort: "Fachliche Einführung in T-SROI als Transformationskennzahl und Impact-Controlling-Instrument.",
-    whatToExpect: "Methodische Einordnung von T-SROI als Transformationswirkung und Systemhebel.",
-    keyQuestions: ["Was unterscheidet T-SROI von operativen Kennzahlen?", "Wie werden Systemhebel sichtbar?"],
+    summaryShort: "Historische Whitepaper-Fassung mit multiplikativer T-SROI-Logik. Für Berechnungen gilt der aktuelle T-SROI-Rechenstandard.",
+    whatToExpect: "Die frühere Argumentation bleibt nachvollziehbar; die enthaltene Multiplikatorformel ist durch die kausale, diskontierte Netto-Nutzenrechnung ersetzt.",
+    keyQuestions: ["Wie ist die historische Multiplikatorlogik einzuordnen?", "Wo steht der aktuelle T-SROI-Rechenstandard?"],
     topics: ["T-SROI", "Impact Controlling", "Transformationswirkung"],
     methods: ["T-SROI", "Impact Controlling"],
     impactFields: ["Wirtschaft & Kapital", "Demokratie"],
     relatedDocuments: ["grundlagenpapier-wirkungsoekonomie", "technische-leitlinien-wustg"],
     version: "v1.0",
     date: "2026-05",
+    successorUrl: "werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/",
+    successorLabel: "Aktuellen T-SROI-Rechenstandard öffnen",
     downloadAllowed: true,
     previewAllowed: true,
     section: "Methoden & Werkzeuge",
@@ -2022,6 +2044,7 @@ function downloadHref(doc, prefix = "") {
 }
 
 function onlineHref(doc, prefix = "") {
+  if (doc.suppressHistoricalText) return "";
   if (doc.contentHtmlPath && fs.existsSync(path.join(ROOT, doc.contentHtmlPath))) return "#onlinefassung";
   if (doc.onlinePath) return `${prefix}${doc.onlinePath}`;
   const candidate = path.join(ROOT, "dokumente", doc.slug || "", "index.html");
@@ -2046,7 +2069,7 @@ function card(doc, prefix = "") {
   </article>`;
 }
 
-function layout({ title, description, body, prefix = "" }) {
+function layout({ title, description, body, prefix = "", robots = "" }) {
   return `<!DOCTYPE html>
 <html lang="de">
   <head>
@@ -2058,6 +2081,7 @@ function layout({ title, description, body, prefix = "" }) {
     <meta name="search_description" content="${escapeHtml(description)}">
     <meta name="search_section" content="Bibliothek">
     <meta name="search_type" content="Dokument">
+    ${robots ? `<meta name="robots" content="${escapeHtml(robots)}">` : ""}
     <link rel="stylesheet" href="${prefix}assets/css/style.css?v=20260612-mobile-table-fix">
   </head>
   <body>
@@ -2231,10 +2255,13 @@ function detailPage(doc, prefix = "../../") {
   const online = onlineHref(doc, prefix);
   const foundation = foundationHref(doc, prefix);
   const related = (doc.relatedDocuments || []).map((id) => model.find((item) => item.id === id)).filter(Boolean);
-  const onlineContent = doc.contentHtmlPath && fs.existsSync(path.join(ROOT, doc.contentHtmlPath))
+  const onlineContent = !doc.suppressHistoricalText && doc.contentHtmlPath && fs.existsSync(path.join(ROOT, doc.contentHtmlPath))
     ? read(path.join(ROOT, doc.contentHtmlPath))
     : "";
-  const statusNotice = ["diskussionsfassung", "arbeitsfassung"].includes(doc.status)
+  const isHistorical = ["ersetzt", "archiv", "archiviert"].includes(String(doc.status || "").toLocaleLowerCase("de-DE"));
+  const statusNotice = isHistorical
+    ? `<div class="callout warning"><strong>Historischer Status:</strong> Diese Fassung ist ersetzt. Sie bleibt als nachvollziehbare Quellenfassung erhalten, ist aber kein aktueller fachlicher Maßstab.</div>`
+    : ["diskussionsfassung", "arbeitsfassung"].includes(doc.status)
     ? `<div class="callout"><strong>Statushinweis:</strong> Dieses Dokument ist eine Arbeits- bzw. Diskussionsfassung und kann sich ändern.</div>`
     : "";
   const expertNotice = doc.level === "expert"
@@ -2246,7 +2273,12 @@ function detailPage(doc, prefix = "../../") {
   const leadingNotice = doc.id === "folgencheck-wirkungspolitische-sprache"
     ? `<div class="callout"><strong>Führende Dokumentseite:</strong> Diese Bibliotheksseite ist die vollständige Arbeitsfassung zum Folgencheck politischer Sprache. Die ältere Seite <a class="text-link" href="../../werkstatt/arbeitsbibliothek/whitepaper/faktencheck-folgencheck/">Faktencheck und Folgencheck - Methodenseite</a> dient als methodischer Kurzüberblick und verweist hierher.</div>`
     : "";
+  const successor = doc.successorUrl ? `${prefix}${doc.successorUrl}` : "";
+  const successorNotice = successor
+    ? `<div class="callout"><strong>${doc.historicalNotice ? "Fachliche Korrektur" : "Fachliche Einordnung"}:</strong> ${escapeHtml(doc.historicalNotice || "Für die aktuelle fachliche Einordnung gilt die verlinkte Nachfolgefassung.")} <a class="text-link" href="${successor}">${escapeHtml(doc.successorLabel || "Aktuelle Fassung öffnen")}</a>.</div>`
+    : "";
   const actionLinks = [
+    successor ? `<a class="btn btn-primary" href="${successor}">${escapeHtml(doc.successorLabel || "Aktuelle Fassung öffnen")}</a>` : "",
     foundation ? `<a class="btn btn-secondary" href="${foundation}">Grundlagenpfad</a>` : "",
     online ? `<a class="btn btn-secondary" href="${online}">Onlinefassung lesen</a>` : "",
     href ? `<a class="btn btn-primary" href="${href}">PDF öffnen</a>` : ""
@@ -2279,6 +2311,7 @@ function detailPage(doc, prefix = "../../") {
         ${metaAside}
         <article class="document-detail-main">
           ${statusNotice}
+          ${successorNotice}
           ${expertNotice}
           ${leadingNotice}
           ${legalNotice}
@@ -2304,7 +2337,8 @@ function detailPage(doc, prefix = "../../") {
     title: `${doc.title} | Bibliothek der Wirkungsökonomie`,
     description: doc.summaryShort,
     body,
-    prefix
+    prefix,
+    robots: isHistorical ? "noindex,follow" : ""
   });
 }
 

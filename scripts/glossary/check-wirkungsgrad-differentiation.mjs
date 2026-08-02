@@ -4,11 +4,19 @@ const registry = JSON.parse(fs.readFileSync("public/data/glossary.terms.json", "
 const expected = [
   ["wirkungsgrad", "Wirkungsgrad", "klar definierten Ergebnis"],
   ["physikalischer-wirkungsgrad", "Physikalischer Wirkungsgrad", "nutzbar abgegebener"],
-  ["wirkungsoekonomischer-wirkungsgrad", "Wirkungsökonomischer Wirkungsgrad", "positive Netto-Wirkung"],
+  ["wirkungsoekonomischer-wirkungsgrad", "Wirkungsökonomischer Wirkungsgrad", "positiven Netto-Wirkung"],
   ["fiskalischer-wirkungsgrad", "Fiskalischer Wirkungsgrad", "öffentlichen Euro"],
   ["impact-of-investment", "Impact-of-Investment / IOI", "investiertem Kapital"],
 ];
 const errors = [];
+
+// Editorial typography may use a non-breaking hyphen in compound terms such as
+// "Netto‑Wirkung".  The gate is about the semantic distinction, not the chosen
+// hyphen glyph, so compare a small normalized representation.
+const normalizeForComparison = (value) => String(value || "")
+  .normalize("NFKC")
+  .replace(/[‐‑‒–-−]/g, "-")
+  .replace(/\s+/g, " ");
 
 for (const [slug, label, phrase] of expected) {
   const term = registry.terms.find((entry) => entry.slug === slug);
@@ -17,7 +25,7 @@ for (const [slug, label, phrase] of expected) {
     continue;
   }
   if (term.canonicalLabel !== label) errors.push(`${slug}: unerwartete Bezeichnung ${term.canonicalLabel}`);
-  if (!String(term.shortDefinition || "").includes(phrase)) errors.push(`${slug}: Kurzdefinition ohne Pflichtabgrenzung`);
+  if (!normalizeForComparison(term.shortDefinition).includes(normalizeForComparison(phrase))) errors.push(`${slug}: Kurzdefinition ohne Pflichtabgrenzung`);
 
   const file = `begriffe/${slug}/index.html`;
   if (!fs.existsSync(file)) {
@@ -25,7 +33,7 @@ for (const [slug, label, phrase] of expected) {
     continue;
   }
   const html = fs.readFileSync(file, "utf8");
-  if (!html.includes(phrase)) errors.push(`${slug}: Detailseite ohne Pflichtabgrenzung`);
+  if (!normalizeForComparison(html).includes(normalizeForComparison(phrase))) errors.push(`${slug}: Detailseite ohne Pflichtabgrenzung`);
 }
 
 const ioiPage = fs.readFileSync("begriffe/impact-of-investment/index.html", "utf8");

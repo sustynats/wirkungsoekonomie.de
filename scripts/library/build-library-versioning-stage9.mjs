@@ -171,10 +171,19 @@ const READING_PATHS = [
 const LEADING_REFERENCE_PATHS = new Set([
   "buch.html",
   "assets/pdf/die-neue-ordnung-des-wohlstands.pdf",
+  "assets/downloads/23_woek_impact_controlling_t_sroi_transformationsmessung_methodenpapier_v1_1.pdf",
   "glossar.html",
   "verstehen/sdgs-sdgplus/index.html",
   "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
   "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.3.pdf"
+]);
+
+// Neu erzeugte, öffentliche Rechenstandards werden vor dem Commit bewusst in
+// das Versionsregister aufgenommen. Das Register bleibt ansonsten strikt auf
+// versionierte Dateien beschränkt und ignoriert zufällige Arbeitsartefakte.
+const EXPLICIT_PUBLIC_DOCUMENTS = new Set([
+  "assets/downloads/23_woek_impact_controlling_t_sroi_transformationsmessung_methodenpapier_v1_1.pdf",
+  "assets/downloads/woek_gesundheit_pflege_einzeldossier_set_v0_3.pdf"
 ]);
 
 const LEADING_REFERENCE_PATTERNS = [
@@ -230,6 +239,187 @@ const LEADING_OVERRIDES = new Map([
     type: "Glossar",
     status: "archiviert",
     shortDescription: "Zitierfähige historische PDF-Fassung; für den aktuellen Begriffsstand gilt Version 1.2."
+  }],
+  ["assets/downloads/23_woek_impact_controlling_t_sroi_transformationsmessung_methodenpapier_v1_1.pdf", {
+    title: "T-SROI-Rechenstandard v1.1",
+    type: "Methodik",
+    status: "führend",
+    shortDescription: "Maßgeblicher Rechenstandard für T-SROI: kausal begrenzte und diskontierte Netto-Nutzenrechnung mit Schutz-Gate, ohne freie Multiplikatoren."
+  }],
+  ["assets/downloads/woek_gesundheit_pflege_einzeldossier_set_v0_3.pdf", {
+    title: "Einzeldossiers Gesundheit & Pflege - Korrekturfassung v0.3",
+    type: "Dossier",
+    status: "aktuell",
+    shortDescription: "Aktuelle Lesefassung mit getrennter monetärer Bilanz und nichtmonetärem Wirkungsprofil; eine positive Geldbilanz ersetzt kein Schutz-Gate."
+  }],
+  ["assets/downloads/woek_gesundheit_pflege_einzeldossier_set_v0_2.pdf", {
+    title: "Einzeldossiers Gesundheit & Pflege v0.2 (historische Fassung)",
+    type: "Dossier",
+    status: "ersetzt",
+    shortDescription: "Historische Quellenfassung mit einer früheren Mischrechnung. Für die aktuelle Lesefassung und Rechenlogik gilt die Korrekturfassung v0.3."
+  }],
+  ["assets/downloads/woek_gesundheit_pflege_einzeldossier_set_v0_2 2.pdf", {
+    title: "Einzeldossiers Gesundheit & Pflege v0.2 (historische Fassung)",
+    type: "Dossier",
+    status: "ersetzt",
+    shortDescription: "Historische Duplikatfassung. Für die aktuelle Lesefassung und Rechenlogik gilt die Korrekturfassung v0.3."
+  }],
+  ["assets/downloads/23_woek_impact_controlling_t_sroi_transformationsmessung_methodenpapier_v1_0.pdf", {
+    title: "T-SROI und Impact Controlling v1.0",
+    type: "Methodik",
+    status: "ersetzt",
+    shortDescription: "Historische T-SROI-Darstellung mit multiplikativer Rechenlogik. Für Berechnungen gilt ausschließlich der führende T-SROI-Rechenstandard v1.1.",
+    historicalNotice: "Historische Quellenfassung: Die frühere multiplikative T-SROI-Logik mit Transformations-, Resilienz- oder Datenqualitätsaufschlägen ist verworfen. Im führenden Rechenstandard ist transformative Wirkung kein Multiplikator, sondern ein separat belegter und diskontierter Nettonutzenstrom. Schäden werden innerhalb der Bilanzgrenze separat abgezogen; Datenqualität und Unsicherheit sind Prüf- und Sensitivitätsbedingungen. Ein positiver T-SROI setzt ein offenes Schutz-Gate voraus.",
+    successorUrl: "werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/",
+    successorLabel: "Führenden T-SROI-Rechenstandard v1.1 öffnen"
+  }],
+  ["assets/downloads/23_woek_impact_controlling_t_sroi_transformationsmessung_methodenpapier_v1_0 2.pdf", {
+    title: "T-SROI und Impact Controlling v1.0",
+    type: "Methodik",
+    status: "ersetzt",
+    shortDescription: "Historische T-SROI-Darstellung mit multiplikativer Rechenlogik. Für Berechnungen gilt ausschließlich der führende T-SROI-Rechenstandard v1.1.",
+    historicalNotice: "Historische Duplikatfassung: Die frühere multiplikative T-SROI-Logik mit Transformations-, Resilienz- oder Datenqualitätsaufschlägen ist verworfen. Im führenden Rechenstandard ist transformative Wirkung kein Multiplikator, sondern ein separat belegter und diskontierter Nettonutzenstrom. Schäden werden innerhalb der Bilanzgrenze separat abgezogen; Datenqualität und Unsicherheit sind Prüf- und Sensitivitätsbedingungen. Ein positiver T-SROI setzt ein offenes Schutz-Gate voraus.",
+    successorUrl: "werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/",
+    successorLabel: "Führenden T-SROI-Rechenstandard v1.1 öffnen"
+  }],
+  // Diese drei macOS-Duplikate enthalten Verweise auf die frühere
+  // Multiplikatorlogik. Sie bleiben ausschließlich als zitierfähige
+  // Quellenfassungen erreichbar; die gleichnamigen aktuellen Kapitel werden
+  // dadurch ausdrücklich nicht pauschal archiviert.
+  ["assets/downloads/08_woek_wirtschaft_unternehmen_risikomanagement_resilienz_finanzmarkt_detailkonzept_v1_0 2.pdf", {
+    title: "Wirkungsorientiertes Risikomanagement, Resilienz und Finanzmarktanforderungen (historische Duplikatfassung)",
+    type: "Arbeitspapier",
+    status: "ersetzt",
+    shortDescription: "Historische Duplikatfassung mit Verweisen auf eine überholte multiplikative T-SROI-Logik. Für Berechnungen gilt der führende T-SROI-Rechenstandard v1.1.",
+    historicalNotice: "Historische Duplikatfassung: Verweise auf einen Transformationsmultiplikator sind keine aktuelle Rechenregel. Im aktuellen Standard ist transformative Wirkung kein Aufschlagsfaktor, sondern ein separat belegter und diskontierter Nettonutzenstrom. Datenqualität, Resilienz und Unsicherheit sind Prüf- und Sensitivitätsbedingungen; bei geschlossenem Schutz-Gate wird kein positiver T-SROI ausgewiesen.",
+    successorUrl: "werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/",
+    successorLabel: "Aktuellen T-SROI-Rechenstandard öffnen"
+  }],
+  ["assets/downloads/30_woek_finanzsystem_kapital_kapitalwirkung_statt_kapitalrendite_detailkonzept_v1_0 2.pdf", {
+    title: "Kapital als Wirkungskraft und Kapitalwirkung statt Kapitalrendite (historische Duplikatfassung)",
+    type: "Arbeitspapier",
+    status: "ersetzt",
+    shortDescription: "Historische Duplikatfassung mit Verweisen auf eine überholte multiplikative T-SROI-Logik. Für Berechnungen gilt der führende T-SROI-Rechenstandard v1.1.",
+    historicalNotice: "Historische Duplikatfassung: Verweise auf einen Transformationsmultiplikator sind keine aktuelle Rechenregel. Im aktuellen Standard ist transformative Wirkung kein Aufschlagsfaktor, sondern ein separat belegter und diskontierter Nettonutzenstrom. Datenqualität, Resilienz und Unsicherheit sind Prüf- und Sensitivitätsbedingungen; bei geschlossenem Schutz-Gate wird kein positiver T-SROI ausgewiesen.",
+    successorUrl: "werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/",
+    successorLabel: "Aktuellen T-SROI-Rechenstandard öffnen"
+  }],
+  ["assets/downloads/31_woek_finanzsystem_kapital_wirkungsfonds_dacharchitektur_detailkonzept_v1_0 2.pdf", {
+    title: "Wirkungsfonds als Dacharchitektur (historische Duplikatfassung)",
+    type: "Arbeitspapier",
+    status: "ersetzt",
+    shortDescription: "Historische Duplikatfassung mit Verweisen auf eine überholte multiplikative T-SROI-Logik. Für Berechnungen gilt der führende T-SROI-Rechenstandard v1.1.",
+    historicalNotice: "Historische Duplikatfassung: Verweise auf einen Transformationsmultiplikator sind keine aktuelle Rechenregel. Im aktuellen Standard ist transformative Wirkung kein Aufschlagsfaktor, sondern ein separat belegter und diskontierter Nettonutzenstrom. Datenqualität, Resilienz und Unsicherheit sind Prüf- und Sensitivitätsbedingungen; bei geschlossenem Schutz-Gate wird kein positiver T-SROI ausgewiesen.",
+    successorUrl: "werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/",
+    successorLabel: "Aktuellen T-SROI-Rechenstandard öffnen"
+  }],
+  ["assets/downloads/impact-controlling-einfach-erklaert.pdf", {
+    title: "Impact Controlling einfach erklärt",
+    type: "Präsentation",
+    status: "ersetzt",
+    shortDescription: "Historische Einführung mit einer multiplikativen T-SROI-Darstellung. Für Berechnungen gilt ausschließlich der führende T-SROI-Rechenstandard v1.1.",
+    historicalNotice: "Historische Quellenfassung: Die gezeigte multiplikative T-SROI-Logik ist verworfen. Der führende Rechenstandard verwendet keine Transformations-, Resilienz- oder Datenqualitätsaufschläge. Transformative Wirkung ist dort ein separat belegter und diskontierter Nettonutzenstrom; Schäden werden separat abgezogen. Datenqualität und Unsicherheit sind Prüf- und Sensitivitätsbedingungen, und ein positiver T-SROI setzt ein offenes Schutz-Gate voraus.",
+    successorUrl: "werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/",
+    successorLabel: "Führenden T-SROI-Rechenstandard v1.1 öffnen"
+  }],
+  ["assets/downloads/wirkungscontrolling_detailkonzept_dossier_v1_0.pdf", {
+    title: "Wirkungscontrolling - Detailkonzept v1.0",
+    type: "Dossier",
+    status: "ersetzt",
+    shortDescription: "Historische Dossierfassung mit einer überholten multiplikativen T-SROI-Formel. Für Berechnungen gilt ausschließlich der führende T-SROI-Rechenstandard v1.1.",
+    historicalNotice: "Historische Quellenfassung: Die frühere multiplikative T-SROI-Formel ist verworfen. Der führende Rechenstandard verwendet keine Transformations-, Resilienz- oder Datenqualitätsaufschläge. Transformative Wirkung ist dort ein separat belegter und diskontierter Nettonutzenstrom; Schäden werden innerhalb der Bilanzgrenze separat abgezogen. Datenqualität und Unsicherheit sind Prüf- und Sensitivitätsbedingungen, und ein positiver T-SROI setzt ein offenes Schutz-Gate voraus.",
+    successorUrl: "werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/",
+    successorLabel: "Führenden T-SROI-Rechenstandard v1.1 öffnen"
+  }],
+  ["public/downloads/originals/Whitepaper-T-SROI.pdf", {
+    title: "Whitepaper T-SROI (historische Fassung)",
+    type: "Whitepaper",
+    status: "ersetzt",
+    shortDescription: "Historische Quellenfassung mit multiplikativer T-SROI-Logik. Für Berechnungen gilt der führende T-SROI-Rechenstandard v1.1."
+  }],
+  ["assets/pdf/working-paper-wohnungsmarkt.pdf", {
+    title: "Working Paper Wohnungsmarkt (historische Fassung)",
+    type: "Arbeitspapier",
+    status: "ersetzt",
+    shortDescription: "Historische Quellenfassung mit vereinfachter T-SROI-Darstellung. Für T-SROI-Berechnungen gilt der führende T-SROI-Rechenstandard v1.1."
+  }],
+  ["public/downloads/originals/WP_Wohnungsmarkt.pdf", {
+    title: "Working Paper Wohnungsmarkt (historische Fassung)",
+    type: "Arbeitspapier",
+    status: "ersetzt",
+    shortDescription: "Historische Quellenfassung mit vereinfachter T-SROI-Darstellung. Für T-SROI-Berechnungen gilt der führende T-SROI-Rechenstandard v1.1."
+  }],
+  ["assets/pdf/wenn-maschinen-arbeiten.pdf", {
+    title: "Wenn Maschinen arbeiten",
+    type: "Arbeitspapier",
+    status: "ersetzt",
+    shortDescription: "Historische Quellenfassung zu Automatisierung und Einkommen. Personenbezogene Wirkungswerte sowie automatische individuelle Steuer-, Transfer- oder Leistungsfolgen gehören nicht zum aktuellen WÖk-Modell.",
+    historicalNotice: "Historische Quellenfassung: Personen-Scoring, persönliche Wirkungskonten und automatische Individualentscheidungen sind verworfen. Wirkung wird an Angeboten, Entscheidungen und Systemen geprüft, nicht am sozialen Wert von Menschen.",
+    successorUrl: "wirkungsfelder/arbeit-einkommen/",
+    successorLabel: "Aktuelle Einordnung zu Arbeit & Einkommen öffnen"
+  }],
+  ["public/downloads/originals/Wenn-Maschinen-arbeiten.pdf", {
+    title: "Wenn Maschinen arbeiten",
+    type: "Arbeitspapier",
+    status: "ersetzt",
+    shortDescription: "Historische Quellenfassung zu Automatisierung und Einkommen. Personenbezogene Wirkungswerte sowie automatische individuelle Steuer-, Transfer- oder Leistungsfolgen gehören nicht zum aktuellen WÖk-Modell.",
+    historicalNotice: "Historische Quellenfassung: Personen-Scoring, persönliche Wirkungskonten und automatische Individualentscheidungen sind verworfen. Wirkung wird an Angeboten, Entscheidungen und Systemen geprüft, nicht am sozialen Wert von Menschen.",
+    successorUrl: "wirkungsfelder/arbeit-einkommen/",
+    successorLabel: "Aktuelle Einordnung zu Arbeit & Einkommen öffnen"
+  }],
+  ["dokumente/wenn-maschinen-arbeiten/index.html", {
+    title: "Wenn Maschinen arbeiten",
+    type: "Arbeitspapier",
+    status: "ersetzt",
+    shortDescription: "Historische Quellenfassung zu Automatisierung und Einkommen. Personenbezogene Wirkungswerte sowie automatische individuelle Steuer-, Transfer- oder Leistungsfolgen gehören nicht zum aktuellen WÖk-Modell.",
+    historicalNotice: "Historische Quellenfassung: Personen-Scoring, persönliche Wirkungskonten und automatische Individualentscheidungen sind verworfen. Wirkung wird an Angeboten, Entscheidungen und Systemen geprüft, nicht am sozialen Wert von Menschen.",
+    successorUrl: "wirkungsfelder/arbeit-einkommen/",
+    successorLabel: "Aktuelle Einordnung zu Arbeit & Einkommen öffnen"
+  }],
+  ["assets/pdf/working-paper-produktbesteuerung-durch-wirkung.pdf", {
+    title: "Produktbesteuerung durch Wirkung",
+    type: "Arbeitspapier",
+    status: "ersetzt",
+    shortDescription: "Historische Quellenfassung zur Produktsteuerung. Eine Wirkungseinstufung erzeugt im aktuellen WÖk-Modell weder automatisch eine Steuerklasse noch einen Preis und wird nie auf Personen übertragen.",
+    historicalNotice: "Historische Quellenfassung: Automatische Score-zu-Steuer-/Preis-Zuordnungen und jede Ausdehnung auf Personen oder Einkommen sind verworfen. Produktprüfung braucht Rechtsgrundlage, Datenqualität, Prüfung und demokratische Kontrolle.",
+    successorUrl: "wirkungsfelder/produkte-konsum/dossier/",
+    successorLabel: "Aktuelles Dossier Produkte & Konsum öffnen"
+  }],
+  ["public/downloads/originals/WP_Produkte.pdf", {
+    title: "Produktbesteuerung durch Wirkung",
+    type: "Arbeitspapier",
+    status: "ersetzt",
+    shortDescription: "Historische Quellenfassung zur Produktsteuerung. Eine Wirkungseinstufung erzeugt im aktuellen WÖk-Modell weder automatisch eine Steuerklasse noch einen Preis und wird nie auf Personen übertragen.",
+    historicalNotice: "Historische Quellenfassung: Automatische Score-zu-Steuer-/Preis-Zuordnungen und jede Ausdehnung auf Personen oder Einkommen sind verworfen. Produktprüfung braucht Rechtsgrundlage, Datenqualität, Prüfung und demokratische Kontrolle.",
+    successorUrl: "wirkungsfelder/produkte-konsum/dossier/",
+    successorLabel: "Aktuelles Dossier Produkte & Konsum öffnen"
+  }],
+  ["dokumente/wp-produkte/index.html", {
+    title: "Produktbesteuerung durch Wirkung",
+    type: "Arbeitspapier",
+    status: "ersetzt",
+    shortDescription: "Historische Quellenfassung zur Produktsteuerung. Eine Wirkungseinstufung erzeugt im aktuellen WÖk-Modell weder automatisch eine Steuerklasse noch einen Preis und wird nie auf Personen übertragen.",
+    historicalNotice: "Historische Quellenfassung: Automatische Score-zu-Steuer-/Preis-Zuordnungen und jede Ausdehnung auf Personen oder Einkommen sind verworfen. Produktprüfung braucht Rechtsgrundlage, Datenqualität, Prüfung und demokratische Kontrolle.",
+    successorUrl: "wirkungsfelder/produkte-konsum/dossier/",
+    successorLabel: "Aktuelles Dossier Produkte & Konsum öffnen"
+  }],
+  ["public/downloads/originals/WP_Rente.pdf", {
+    title: "Working-Paper Rente",
+    type: "Arbeitspapier",
+    status: "ersetzt",
+    shortDescription: "Historische Quellenfassung zu Rente und sozialer Sicherung. Individuelle Wirkungsfaktoren und automatische Rentenfolgen gehören nicht zum aktuellen WÖk-Modell.",
+    historicalNotice: "Historische Quellenfassung: Die Verrechnung persönlicher Biografien, Wirkungsfaktoren und Rentenhöhen ist verworfen. Die WÖk bewertet keine Personen und automatisiert keine individuellen Leistungsansprüche.",
+    successorUrl: "wirkungsfelder/rente-soziale-sicherung/",
+    successorLabel: "Aktuelle Einordnung zu Rente & sozialer Sicherung öffnen"
+  }],
+  ["dokumente/wp-rente/index.html", {
+    title: "Working-Paper Rente",
+    type: "Arbeitspapier",
+    status: "ersetzt",
+    shortDescription: "Historische Quellenfassung zu Rente und sozialer Sicherung. Individuelle Wirkungsfaktoren und automatische Rentenfolgen gehören nicht zum aktuellen WÖk-Modell.",
+    historicalNotice: "Historische Quellenfassung: Die Verrechnung persönlicher Biografien, Wirkungsfaktoren und Rentenhöhen ist verworfen. Die WÖk bewertet keine Personen und automatisiert keine individuellen Leistungsansprüche.",
+    successorUrl: "wirkungsfelder/rente-soziale-sicherung/",
+    successorLabel: "Aktuelle Einordnung zu Rente & sozialer Sicherung öffnen"
   }],
   ["verstehen/sdgs-sdgplus/index.html", {
     title: "SDGs & SDG+",
@@ -331,7 +521,7 @@ function walk(dir, extensions, acc = []) {
       continue;
     }
     if (!entry.isFile()) continue;
-    if (TRACKED_FILES && !TRACKED_FILES.has(relative)) continue;
+    if (TRACKED_FILES && !TRACKED_FILES.has(relative) && !EXPLICIT_PUBLIC_DOCUMENTS.has(relative)) continue;
     if (INTERNAL_REFERENCE_ROUTE_PATTERNS.some((pattern) => pattern.test(relative))) continue;
     if (MACOS_DUPLICATE_HTML.test(entry.name)) continue;
     const ext = path.extname(entry.name).toLowerCase();
@@ -590,6 +780,7 @@ function documentFor(relativePath, source) {
   const fields = fieldsFor(relativePath);
   const ext = path.extname(relativePath).replace(".", "").toUpperCase() || "HTML";
   const overrides = LEADING_OVERRIDES.get(relativePath) || {};
+  const effectiveStatus = overrides.status || status;
   const insight = documentInsight(relativePath);
   const isPortalStart = /\/00[_-]portalstartseite(?:\s\d+)?\.(pdf|docx)$/i.test(relativePath);
   const contentTitle = isPortalStart && !/rang\s+\d+|portalstartseite/i.test(insight.title || "") ? "" : insight.title;
@@ -598,7 +789,7 @@ function documentFor(relativePath, source) {
     title: overrides.title || contentTitle || title,
     shortDescription: overrides.shortDescription || insight.shortDescription || summaryFor(type, status, topics),
     type: overrides.type || type,
-    status: overrides.status || status,
+    status: effectiveStatus,
     dateOrStand: standFor(relativePath),
     topics,
     relatedMethods: methods,
@@ -609,7 +800,10 @@ function documentFor(relativePath, source) {
       sourcePath: relativePath
     },
     source,
-    isLeadingReference: status === "führend"
+    isLeadingReference: effectiveStatus === "führend",
+    historicalNotice: overrides.historicalNotice || "",
+    successorUrl: overrides.successorUrl || "",
+    successorLabel: overrides.successorLabel || ""
   };
 }
 

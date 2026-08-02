@@ -1,6 +1,10 @@
 import fs from "node:fs";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
+import {
+  normalizeHistoricalMethodRobots,
+  synchronizeSitemapIndexability,
+} from "../lib/method-version-indexability.mjs";
 
 const root = process.cwd();
 const artifactDir = path.join(root, "_site");
@@ -75,6 +79,8 @@ const allowedRootFiles = new Set([
 const legacyRedirectFiles = [
   "docs/wirtschaft-unternehmen/source-html/detail_impact_controlling_im_unternehmen.html",
 ];
+const LEGACY_TOOLS_ROUTE = "tools/index.html";
+const CANONICAL_TOOLS_ROUTE = "/werkzeuge/";
 
 function removeArtifact() {
   fs.rmSync(artifactDir, { recursive: true, force: true });
@@ -363,13 +369,91 @@ function copyLegacyRedirectFiles() {
   if (copied) console.log(`Copied ${copied} legacy redirect files.`);
 }
 
+function writeLegacyToolsRedirect() {
+  const destination = path.join(artifactDir, LEGACY_TOOLS_ROUTE);
+  fs.mkdirSync(path.dirname(destination), { recursive: true });
+  fs.writeFileSync(destination, `<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,follow">
+    <meta http-equiv="refresh" content="0; url=${CANONICAL_TOOLS_ROUTE}">
+    <link rel="canonical" href="https://wirkungsoekonomie.de${CANONICAL_TOOLS_ROUTE}">
+    <title>Weiterleitung zu den Werkzeugen | Wirkungsökonomie</title>
+  </head>
+  <body>
+    <p>Die Werkzeuge sind umgezogen. <a href="${CANONICAL_TOOLS_ROUTE}">Zu den Werkzeugen</a></p>
+    <script>location.replace(${JSON.stringify(CANONICAL_TOOLS_ROUTE)} + location.search + location.hash);</script>
+  </body>
+</html>
+`, "utf8");
+  console.log(`Created legacy compatibility redirect: /tools/ → ${CANONICAL_TOOLS_ROUTE}`);
+}
+
+function removeNonCanonicalSitemapEntries() {
+  const sitemapPath = path.join(artifactDir, "sitemap.xml");
+  if (!fs.existsSync(sitemapPath)) return;
+  const result = synchronizeSitemapIndexability({
+    siteRoot: artifactDir,
+    sitemapPath,
+    excludedRoutes: ["/tools/"],
+  });
+  console.log(
+    `Synchronized public sitemap: ${result.removedNoindex.length} noindex, ${result.removedDuplicates.length} duplicate, ${result.removedExcluded.length} legacy route(s) removed; ${result.added.length} current method route(s) added.`,
+  );
+}
+
+function normalizeHistoricalMethodSeo() {
+  const result = normalizeHistoricalMethodRobots(artifactDir);
+  if (result.missingPrefixes.length || result.unresolved.length) {
+    throw new Error(
+      `Historical method SEO is incomplete in the public artifact:\n${[
+        ...result.missingPrefixes.map((route) => `missing ${route}`),
+        ...result.unresolved.map((route) => `robots metadata unresolved on ${route}`),
+      ].join("\n")}`,
+    );
+  }
+  console.log(`Normalized noindex,follow on ${result.files.length} historical method page(s) in the public artifact.`);
+}
+
+function validateLegacyToolsRedirect() {
+  const file = path.join(artifactDir, LEGACY_TOOLS_ROUTE);
+  if (!fs.existsSync(file)) throw new Error("Legacy /tools/ compatibility redirect is missing from public artifact.");
+  const content = fs.readFileSync(file, "utf8");
+  const sitemap = fs.existsSync(path.join(artifactDir, "sitemap.xml"))
+    ? fs.readFileSync(path.join(artifactDir, "sitemap.xml"), "utf8")
+    : "";
+  if (!content.includes(`href=\"${CANONICAL_TOOLS_ROUTE}\"`) || !content.includes('name="robots" content="noindex,follow"')) {
+    throw new Error("Legacy /tools/ redirect is not marked noindex or does not point to /werkzeuge/.");
+  }
+  if (sitemap.includes("https://wirkungsoekonomie.de/tools/")) {
+    throw new Error("Public sitemap must not contain the non-canonical /tools/ route.");
+  }
+  console.log("Legacy /tools/ redirect and sitemap exclusion passed.");
+}
+
 function sanitizePublicDataString(value) {
   return String(value || "")
+    .replace(/\b(\d+\.\d+)-live-reference\b/gi, "$1")
     .replace(/https?:\/\/[^"'\s<>]+\.(?:md|docx?|rtf)(?:[?#][^"'\s<>]*)?/gi, "")
     .replace(/\/(?:assets|downloads|docs|content|public)\/[^"'\s<>]+\.(?:md|docx?|rtf)(?:[?#][^"'\s<>]*)?/gi, "")
     .replace(/\b[\wÄÖÜäöüß.+() -]+\.(?:md|docx?|rtf)\b/giu, "")
-    .replace(/\b(?:Source-Hash|Source-Version|Import-Version|Live-Reference-Version|partially-delta-reviewed)\b/gi, "")
+    .replace(/\b(?:Source-Hash|Source-Version|Import-Version|Live-Reference-Version|partially-delta-reviewed|needs-human-review|delta-reviewed)\b/gi, "")
+    .replace(/\b(?:Live-Reference|Delta-Review|Changelog)\b/gi, "")
     .replace(/technischer Volltextimport|Abschnitts- und Absatz-IDs sind vorbereitet/gi, "")
+    .replace(/Auszug aus der umfangreichen Korrekturfassung\.?/gi, "")
+    .replace(/PDF-Fassung in Produktion\.?/gi, "")
+    .replace(/Codex-Anweisung\.?/gi, "")
+    .replace(/(?:fachlich\s+)?finale\s+Codex(?:-Fassung)?[^.]*\.?/gi, "")
+    .replace(/Claude(?:-CI\/CD)?[^.]*\.?/gi, "")
+    .replace(/CI\/CD(?:-Satzfreigabe|-Freigabe)?[^.]*\.?/gi, "")
+    .replace(/(?:Quell-)?Dokument\s+für\s+(?:Claude|Codex)[^.]*\.?/gi, "")
+    .replace(/Erstellt nach\s+[`_]?[^.\n]*Vorlesung-Template[^.\n]*\.?/gi, "")
+    .replace(/Claude\/Codex\/Hintergrundprozesse schreiben gleichzeitig in dieselben Bereiche\./gi, "Parallel laufende Arbeitsprozesse können gleichzeitig in dieselben Bereiche schreiben.")
+    .replace(/\bReviewstatus\b/gi, "Prüfstatus")
+    .replace(/\bReview-Status\b/gi, "Prüfstatus")
+    .replace(/ergänzende\s+ergänzende/gi, "ergänzende")
     .replace(/Originaldatei\s*:/gi, "Ausgangsdokument:")
     .replace(/\s{2,}/g, " ")
     .trim();
@@ -379,15 +463,40 @@ function sanitizePublicJsonValue(value) {
   if (typeof value === "string") return sanitizePublicDataString(value);
   if (Array.isArray(value)) return value.map(sanitizePublicJsonValue);
   if (value && typeof value === "object") {
+    const nonPublicMetadata = new Set(["internalnote", "internalnotes", "editorialnote", "editorialnotes"]);
     return Object.fromEntries(
-      Object.entries(value).map(([key, item]) => [key, sanitizePublicJsonValue(item)]),
+      Object.entries(value)
+        .filter(([key]) => !nonPublicMetadata.has(String(key).toLowerCase()))
+        .map(([key, item]) => [key, sanitizePublicJsonValue(item)]),
     );
   }
   return value;
 }
 
+function stripPrivateDocumentLinks(content) {
+  return content.replace(
+    /<a\b([^>]*?)\shref=(["'])[^"']*\.(?:md|docx?|rtf)(?:[^"']*)?\2([^>]*)>([\s\S]*?)<\/a>/gi,
+    (match, before, quote, after, label) => `<span${before}${after}>${label}</span>`,
+  );
+}
+
+function stripEditorialHtmlNotes(content) {
+  // Produktions- und Agentenhinweise sind weder Beleg noch Erklärung. Eine
+  // veröffentlichte Seite darf nur fachlichen Inhalt, Quellen- und
+  // Versionsinformationen für Leser:innen enthalten.
+  const editorialPhrase = "(?:Live-Reference|Import-?Version|Source-Hash|PDF-Fassung in Produktion|Codex(?:-Anweisung|-Fassung)?|Claude(?:-CI\\/CD)?|CI\\/CD(?:-Satzfreigabe|-Freigabe)?|Erstellt nach[^<]{0,180}Vorlesung-Template|Quell-?Dokument für (?:Claude|Codex))";
+  const block = new RegExp(`<(?:p|li|aside|section)\\b[^>]*>[\\s\\S]*?${editorialPhrase}[\\s\\S]*?<\\/(?:p|li|aside|section)>`, "gi");
+  return content
+    .replace(block, "")
+    // These are legacy production labels, not headings that help a reader.
+    // Keep the substantive section and give it a plain, meaningful label.
+    .replace(/Auszug aus der umfangreichen Korrekturfassung\.?/gi, "Fachliche Vertiefung")
+    .replace(/ergänzende\s+ergänzende/gi, "ergänzende");
+}
+
 function normalizePublicArtifactLinksAndText() {
   const textExtensions = new Set([
+    ".css",
     ".csv",
     ".html",
     ".htm",
@@ -405,9 +514,9 @@ function normalizePublicArtifactLinksAndText() {
     let content = fs.readFileSync(file, "utf8");
     const before = content;
     const relative = toPosixRelative(file);
-    const preserveMainworkFulltext = relative === "referenz/volltext/index.html";
 
-    content = rewritePublicReleaseAssetReferences(content)
+    content = stripEditorialHtmlNotes(stripPrivateDocumentLinks(rewritePublicReleaseAssetReferences(content)))
+      .replace(/Claude\/Codex\/Hintergrundprozesse schreiben gleichzeitig in dieselben Bereiche\./gi, "Parallel laufende Arbeitsprozesse können gleichzeitig in dieselben Bereiche schreiben.")
       .replace(/([?&])utm_source=chatgpt\.com(?:&amp;|&)?/gi, (match, separator) => {
         if (match.endsWith("&amp;") || match.endsWith("&")) return separator;
         return "";
@@ -418,6 +527,19 @@ function normalizePublicArtifactLinksAndText() {
         "docs/go2-produktionsreihenfolge/source/woek_go2_produktionsreihenfolge_detailkonzepte_v1_0.xlsx",
         "assets/downloads/go2-produktionsreihenfolge/woek_go2_produktionsreihenfolge_detailkonzepte_v1_0.xlsx",
       );
+
+    if (ext === ".css") {
+      content = content
+        .replace(/\blive-reference-notice\b/gi, "onlinefassung-hinweis")
+        .replace(/\blive-reference-addendum\b/gi, "onlinefassung-aktualisierung")
+        .replace(/\blive-reference-patch\b/gi, "onlinefassung-nachtrag")
+        .replace(/\/\*[\s\S]*?\*\//g, (comment) => (/\b(?:Codex|Claude)\b/i.test(comment) ? "" : comment));
+      if (content !== before) {
+        fs.writeFileSync(file, content, "utf8");
+        changed += 1;
+      }
+      continue;
+    }
 
     if (ext === ".json") {
       try {
@@ -446,17 +568,23 @@ function normalizePublicArtifactLinksAndText() {
       continue;
     }
 
-    if (!preserveMainworkFulltext) {
+    {
       content = content
         .replace(/<section class="meta-box">\s*<h2>Metadaten<\/h2>[\s\S]*?<\/section>/gi, "")
         .replace(/<section class="callout live-reference-notice">[\s\S]*?<\/section>/gi, "")
         .replace(/<section class="callout">\s*<h2>Importstatus<\/h2>[\s\S]*?<\/section>/gi, "")
         .replace(/<dt>(?:Source-Hash|Source-Version|Import-Version|Live-Reference-Version|Web-Version|Reviewstatus|Originaldatei|Absätze\/Textblöcke)<\/dt><dd>[\s\S]*?<\/dd>/gi, "")
+        .replace(/<dt>Onlinefassung-(?:Version|Stand)<\/dt><dd>[\s\S]*?<\/dd>/gi, "")
+        .replace(/\bReviewstatus\b/gi, "Prüfstatus")
+        .replace(/\bReview-Status\b/gi, "Prüfstatus")
+        .replace(/\blive-reference-notice\b/gi, "onlinefassung-hinweis")
+        .replace(/\blive-reference-addendum\b/gi, "onlinefassung-aktualisierung")
+        .replace(/\blive-reference-patch\b/gi, "onlinefassung-nachtrag")
+        .replace(/\b(\d+\.\d+)-live-reference\b/gi, "$1")
         .replace(/Webfassung und Originaldatei:/gi, "Öffentliche Webfassung:")
         .replace(/Webfassung eines Arbeitspapiers der Wirkungsökonomie mit Originaldatei\./gi, "Öffentliche Webfassung eines Arbeitspapiers der Wirkungsökonomie.")
         .replace(/Webfassung aus der gelieferten Originaldatei\.[^<]*/gi, "Öffentliche Webfassung.")
         .replace(/Originaldatei/gi, "Ausgangsdokument")
-        .replace(/href=(["'])[^"']*\.(?:md|docx?|rtf)(?:[^"']*)\1/gi, 'href="#" data-public-link-removed="true"')
         .replace(/(["'])([^"']*\.(?:md|docx?|rtf)(?:[^"']*)?)\1/gi, (match, quote, value) => {
           if (!/(?:^|\/|\\)(?:assets|downloads|docs|public|content|src|rang\d+|woek_|WOeK_|WÖk_|README|[0-9]{2}_)/.test(value)) return match;
           return `${quote}${quote}`;
@@ -465,7 +593,7 @@ function normalizePublicArtifactLinksAndText() {
         .replace(/"((?:docxUrl|detailDownload|dossierDownload|downloadUrl|sourceDocument|online_target|path|file_name|source|expected|originalName|name))"\s*:\s*"[^"]*\.(?:md|docx?|rtf)(?:[^"]*)?"/gi, '"$1": ""');
     }
 
-    if (ext !== ".js" && !preserveMainworkFulltext) {
+    if (ext !== ".js") {
       content = content.replace(/(?:^|[\s"'>(])[\p{L}\p{N}_ .+()/-]+\.(?:md|docx?|rtf)/giu, (match) => {
         const prefix = /^[\s"'>(]/u.test(match) ? match[0] : "";
         return `${prefix}Arbeitsdatei entfernt`;
@@ -589,6 +717,56 @@ function validatePublicJson() {
   console.log("Public JSON validation passed.");
 }
 
+function validatePublicArtifactSafety() {
+  const forbiddenExtensions = new Set([".env", ".mjs", ".py", ".sh", ".sql", ".ts", ".yaml", ".yml"]);
+  const forbiddenPaths = new Set([
+    "api/kwi.py",
+    "api/v1/production.json",
+    "assets/data/production-workflow-manifest.json",
+    // This is build-time routing data for release-hosted files. Public pages
+    // already contain the resolved URLs; publishing the manifest would expose
+    // raw editorial document paths and is not part of the public interface.
+    "assets/data/public-release-assets.json",
+  ]);
+  const forbiddenPrefixes = ["api/v1/production/", "intern/"];
+  const publicTextExtensions = new Set([".css", ".html", ".htm", ".js", ".json", ".txt", ".xml"]);
+  const editorialMarkers = [
+    /\bImport-Version\b/i,
+    /\bReviewstatus\b/i,
+    /\bLive-Reference(?:-|\b)/i,
+    /\bSource-Hash\b/i,
+    /\bPDF-Fassung in Produktion\b/i,
+    /\bCodex-Anweisung\b/i,
+    /\b(?:Claude|Codex)(?:-CI\/CD|-Fassung)?\b/i,
+    /\bCI\/CD(?:-Satzfreigabe|-Freigabe)?\b/i,
+    /\b(?:internalNotes?|editorialNotes?)\b/i,
+    /\bdata-public-link-removed\b/i,
+    /href=(["'])#\1/i,
+    /Auszug aus der umfangreichen Korrekturfassung/i,
+    /ergänzende\s+ergänzende/i,
+  ];
+  const failures = [];
+
+  for (const file of walkFiles(artifactDir)) {
+    const relative = toPosixRelative(file);
+    const ext = path.extname(file).toLowerCase();
+    if (forbiddenExtensions.has(ext) || forbiddenPaths.has(relative) || forbiddenPrefixes.some((prefix) => relative.startsWith(prefix))) {
+      failures.push(`${relative}: non-public source or workflow file`);
+      continue;
+    }
+    if (!publicTextExtensions.has(ext)) continue;
+    const content = fs.readFileSync(file, "utf8");
+    for (const pattern of editorialMarkers) {
+      if (pattern.test(content)) failures.push(`${relative}: contains ${pattern}`);
+    }
+  }
+
+  if (failures.length) {
+    throw new Error(`Public artifact safety validation failed:\n\n${failures.join("\n")}`);
+  }
+  console.log("Public artifact safety validation passed.");
+}
+
 function prunePublicArtifact() {
   const references = collectArtifactReferences();
   const prunableAssetPrefixes = [
@@ -616,11 +794,25 @@ function prunePublicArtifact() {
     ".xlsx",
     ".zip",
   ]);
+  const forbiddenExtensions = new Set([".env", ".mjs", ".py", ".sh", ".sql", ".ts", ".yaml", ".yml"]);
+  const forbiddenPaths = new Set([
+    "api/kwi.py",
+    "api/v1/production.json",
+    "assets/data/production-workflow-manifest.json",
+    "assets/data/public-release-assets.json",
+  ]);
+  const forbiddenPrefixes = ["api/v1/production/", "intern/"];
   let pruned = 0;
 
   for (const file of walkFiles(artifactDir)) {
     const ext = path.extname(file).toLowerCase();
     const relative = toPosixRelative(file);
+
+    if (forbiddenExtensions.has(ext) || forbiddenPaths.has(relative) || forbiddenPrefixes.some((prefix) => relative.startsWith(prefix))) {
+      removeFile(file, "non-public source or workflow file");
+      pruned += 1;
+      continue;
+    }
 
     if (publicReleaseAssets.has(relative)) {
       removeFile(file, "large public asset is served from GitHub Releases");
@@ -694,12 +886,20 @@ copyReferencedPublicFiles();
 copySnapshotManifestFiles();
 copyPublicRuntimeContentData();
 copyLegacyRedirectFiles();
+writeLegacyToolsRedirect();
+normalizeHistoricalMethodSeo();
+removeNonCanonicalSitemapEntries();
+// Referenzierte Runtime-Dateien werden erst nach dem ersten Durchlauf kopiert.
+// Deshalb braucht das fertige Artefakt einen zweiten, abschließenden Durchlauf.
+normalizePublicArtifactLinksAndText();
 prunePublicArtifact();
 validateNoCorruptedHtmlAttributes();
 validateNoTemplatePlaceholders();
 validateMainworkFulltextArtifact();
 validatePublicScripts();
 validatePublicJson();
+validateLegacyToolsRedirect();
+validatePublicArtifactSafety();
 
 const mb = collectSize(artifactDir) / 1024 / 1024;
 console.log(`Built _site with ${copied} top-level entries (${mb.toFixed(1)} MB).`);

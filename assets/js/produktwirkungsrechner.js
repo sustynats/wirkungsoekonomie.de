@@ -7,37 +7,27 @@
       name: "Bio-Apfel regional",
       price: 1,
       scores: { mensch: 2, planet: 1, demokratie: 1, daten: 2 },
-      explanation: "Regionale und geprüfte Daten verbessern das Modell, aber der niedrigste Kernfeldscore begrenzt die Steuerklasse.",
+      explanation: "Regionale und geprüfte Daten können den Prüfpfad stärken; ein Score begründet jedoch keine automatische Tarifentscheidung.",
     },
     chileApfel: {
       name: "Chile-Apfel importiert",
       price: 1,
       scores: { mensch: 0, planet: -1, demokratie: 0, daten: 1 },
-      explanation: "Transport, Wasserstress und Datenlage können die Bewertung begrenzen. Das Beispiel ist bewusst modellhaft.",
+      explanation: "Transport, Wasserstress und Datenlage können den Prüfstatus begrenzen. Das Beispiel ist bewusst modellhaft.",
     },
     tshirt: {
       name: "T-Shirt",
       price: 24,
       scores: { mensch: 0, planet: -1, demokratie: 0, daten: 0 },
-      explanation: "Textilien hängen stark an Arbeit, Wasser, Chemie, Nutzungsdauer und Kreislauffähigkeit.",
+      explanation: "Textilien hängen stark an Arbeit, Wasser, Chemie, Nutzungsdauer und Kreislauffähigkeit; der Prüfstatus ist keine Preisvorgabe.",
     },
     polyamid: {
       name: "Polyamid Produktgruppe",
       price: 399,
       scores: { mensch: 0, planet: -2, demokratie: 0, daten: 1 },
-      explanation: "Das Polyamid-Beispiel zeigt den Weg von Konzern- und ESRS-Daten zu Produktgruppen, nicht eine amtliche Einstufung.",
+      explanation: "Das Polyamid-Beispiel zeigt den Weg von Konzern- und ESRS-Daten zu Produktgruppen, nicht eine amtliche Einstufung oder Tarifentscheidung.",
     },
   };
-
-  const taxMatrix = new Map([
-    [3, 0],
-    [2, 0.05],
-    [1, 0.1],
-    [0, 0.15],
-    [-1, 0.2],
-    [-2, 0.25],
-    [-3, 0.3],
-  ]);
 
   const form = root.querySelector(".calculator-form");
   const productSelect = form.elements.product;
@@ -52,8 +42,20 @@
     return Math.max(-3, Math.min(3, number));
   }
 
+  function finiteNumber(value, fallback = 0) {
+    const number = Number.parseFloat(value);
+    return Number.isFinite(number) ? number : fallback;
+  }
+
   function formatScore(score) {
     return score > 0 ? `+${score}` : String(score);
+  }
+
+  function assessmentMessage(finalScore, dataScore) {
+    if (dataScore < 0) return "nicht bewertbar: Datenstand und Systemgrenze müssen vor jeder Tarifdiskussion geklärt werden.";
+    if (finalScore <= -2) return "kritisch: Schutzprüfung und Korrekturweg vor jeder möglichen Rechtsfolge.";
+    if (finalScore < 0) return "ambivalent: negativer Kernbefund, kein automatischer Tarif.";
+    return "Profil dokumentiert: Eine mögliche Tarifregel müsste separat gesetzlich festgelegt und überprüft werden.";
   }
 
   function render() {
@@ -61,18 +63,20 @@
     fields.forEach((field, index) => {
       form.elements[field].value = scores[index];
     });
-    const netPrice = Math.max(0, Number.parseFloat(form.elements.netPrice.value || "0"));
+    const netPrice = Math.max(0, finiteNumber(form.elements.netPrice.value));
     const finalScore = Math.min(...scores);
-    const taxRate = taxMatrix.get(finalScore) ?? 0.15;
-    const grossPrice = netPrice * (1 + taxRate);
+    const modelRate = Math.max(0, Math.min(1, finiteNumber(form.elements.modelRate.value) / 100));
+    const grossPrice = netPrice * (1 + modelRate);
+    const status = assessmentMessage(finalScore, scores[fields.indexOf("daten")]);
     const selected = presets[productSelect.value] || presets.bioApfel;
 
     productName.textContent = selected.name;
     result("finalScore").textContent = formatScore(finalScore);
-    result("taxRate").textContent = finalScore === -3 ? "25-30 % (Demo: 30 %)" : `${Math.round(taxRate * 100)} %`;
+    result("status").textContent = status;
+    result("modelRate").textContent = `${Math.round(modelRate * 100)} % (Testannahme, keine Tarifempfehlung)`;
     result("netPrice").textContent = money.format(netPrice);
     result("grossPrice").textContent = money.format(grossPrice);
-    result("explanation").textContent = selected.explanation;
+    result("explanation").textContent = `${selected.explanation} Der angezeigte Preis folgt nur P_brutto = P_netto × (1 + t) mit der von dir eingegebenen Testannahme t.`;
   }
 
   productSelect.addEventListener("change", () => {

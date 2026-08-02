@@ -1,18 +1,18 @@
 {
   "schemaVersion": "2026-07-english-download-documents",
-  "generatedAt": "2026-07-30",
+  "generatedAt": "2026-08-02",
   "locale": "en",
   "targetBaseRule": "English downloadable document variants live next to public download roots under an en/ subfolder and use the .en file-name suffix.",
   "imagePolicy": "Raster images and German text embedded inside raster images remain unchanged for the first English release. SVG and editable text layers may be translated.",
   "routingPolicy": "English pages must prefer englishUrl when status is available. If status is missing, English pages should not silently label the German source as English.",
   "counts": {
-    "total": 877,
+    "total": 886,
     "available": 0,
-    "missing": 877,
-    "p0": 36,
-    "p1": 816,
-    "p2": 25,
-    "library": 36,
+    "missing": 886,
+    "p0": 31,
+    "p1": 833,
+    "p2": 22,
+    "library": 31,
     "studyScripts": 0
   },
   "items": [
@@ -986,7 +986,6 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
-        "bibliothek/eintraege/download-or-document-assets-downloads-15-woek-produkte-konsum-produkte-als-wirkungstraeger-leben-2/index.html",
         "bibliothek/eintraege/download-or-document-assets-downloads-15-woek-produkte-konsum-produkte-als-wirkungstraeger-leben-2/lesen/00-kurzprofil/index.html",
         "bibliothek/eintraege/download-or-document-assets-downloads-15-woek-produkte-konsum-produkte-als-wirkungstraeger-leben-2/lesen/01-inhaltsubersicht/index.html",
         "bibliothek/eintraege/download-or-document-assets-downloads-15-woek-produkte-konsum-produkte-als-wirkungstraeger-leben-2/lesen/02-executive-summary/index.html",
@@ -1003,7 +1002,8 @@
         "bibliothek/eintraege/download-or-document-assets-downloads-15-woek-produkte-konsum-produkte-als-wirkungstraeger-leben-2/lesen/13-tool-und-website-integration/index.html",
         "bibliothek/eintraege/download-or-document-assets-downloads-15-woek-produkte-konsum-produkte-als-wirkungstraeger-leben-2/lesen/14-sdg-sdg-bezug/index.html",
         "bibliothek/eintraege/download-or-document-assets-downloads-15-woek-produkte-konsum-produkte-als-wirkungstraeger-leben-2/lesen/15-quellen-und-fazit/index.html",
-        "bibliothek/eintraege/download-or-document-assets-downloads-15-woek-produkte-konsum-produkte-als-wirkungstraeger-leben-2/lesen/index.html"
+        "bibliothek/eintraege/download-or-document-assets-downloads-15-woek-produkte-konsum-produkte-als-wirkungstraeger-leben-2/lesen/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-15-woek-produkte-konsum-produkte-als-wirkungstraeger-leben-3/index.html"
       ],
       "status": "missing",
       "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
@@ -1023,7 +1023,27 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
-        "bibliothek/eintraege/download-or-document-assets-downloads-15-woek-produkte-konsum-produkte-als-wirkungstraeger-leben/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-15-woek-produkte-konsum-produkte-als-wirkungstraeger-leben/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-downloads-15-woek-produkte-konsum-produkte-als-wirkungstraeger-lebenszyklus-detailkonzept-v1-1-pdf",
+      "sourcePath": "assets/downloads/15_woek_produkte_konsum_produkte-als-wirkungstraeger-lebenszyklus_detailkonzept_v1_1.pdf",
+      "englishTargetPath": "assets/downloads/en/15_woek_produkte_konsum_produkte-als-wirkungstraeger-lebenszyklus_detailkonzept_v1_1.en.pdf",
+      "sourceUrl": "/assets/downloads/15_woek_produkte_konsum_produkte-als-wirkungstraeger-lebenszyklus_detailkonzept_v1_1.pdf",
+      "englishUrl": "/assets/downloads/en/15_woek_produkte_konsum_produkte-als-wirkungstraeger-lebenszyklus_detailkonzept_v1_1.en.pdf",
+      "fileType": "pdf",
+      "kind": "download",
+      "titleDe": "15_woek_produkte_konsum_produkte-als-wirkungstraeger-lebenszyklus_detailkonzept_v1_1",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-downloads-15-woek-produkte-konsum-produkte-als-wirkungstraeger-leben-2/index.html",
         "wirkungsfelder/produkte-konsum/produkte-als-wirkungstraeger/index.html"
       ],
       "status": "missing",
@@ -1044,7 +1064,6 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
-        "bibliothek/eintraege/download-or-document-assets-downloads-16-woek-produkte-konsum-wirkungsumsatzsteuer-produktwirkun-2/index.html",
         "bibliothek/eintraege/download-or-document-assets-downloads-16-woek-produkte-konsum-wirkungsumsatzsteuer-produktwirkun-2/lesen/00-kurzprofil/index.html",
         "bibliothek/eintraege/download-or-document-assets-downloads-16-woek-produkte-konsum-wirkungsumsatzsteuer-produktwirkun-2/lesen/01-inhaltsubersicht/index.html",
         "bibliothek/eintraege/download-or-document-assets-downloads-16-woek-produkte-konsum-wirkungsumsatzsteuer-produktwirkun-2/lesen/02-executive-summary/index.html",
@@ -1061,7 +1080,8 @@
         "bibliothek/eintraege/download-or-document-assets-downloads-16-woek-produkte-konsum-wirkungsumsatzsteuer-produktwirkun-2/lesen/13-tool-und-website-integration/index.html",
         "bibliothek/eintraege/download-or-document-assets-downloads-16-woek-produkte-konsum-wirkungsumsatzsteuer-produktwirkun-2/lesen/14-sdg-sdg-bezug/index.html",
         "bibliothek/eintraege/download-or-document-assets-downloads-16-woek-produkte-konsum-wirkungsumsatzsteuer-produktwirkun-2/lesen/15-quellen-und-fazit/index.html",
-        "bibliothek/eintraege/download-or-document-assets-downloads-16-woek-produkte-konsum-wirkungsumsatzsteuer-produktwirkun-2/lesen/index.html"
+        "bibliothek/eintraege/download-or-document-assets-downloads-16-woek-produkte-konsum-wirkungsumsatzsteuer-produktwirkun-2/lesen/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-16-woek-produkte-konsum-wirkungsumsatzsteuer-produktwirkun-3/index.html"
       ],
       "status": "missing",
       "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
@@ -1081,7 +1101,27 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
-        "bibliothek/eintraege/download-or-document-assets-downloads-16-woek-produkte-konsum-wirkungsumsatzsteuer-produktwirkun/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-16-woek-produkte-konsum-wirkungsumsatzsteuer-produktwirkun/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-downloads-16-woek-produkte-konsum-wirkungsumsatzsteuer-produktwirkungssteuer-detailkonzept-v1-1-pdf",
+      "sourcePath": "assets/downloads/16_woek_produkte_konsum_wirkungsumsatzsteuer-produktwirkungssteuer_detailkonzept_v1_1.pdf",
+      "englishTargetPath": "assets/downloads/en/16_woek_produkte_konsum_wirkungsumsatzsteuer-produktwirkungssteuer_detailkonzept_v1_1.en.pdf",
+      "sourceUrl": "/assets/downloads/16_woek_produkte_konsum_wirkungsumsatzsteuer-produktwirkungssteuer_detailkonzept_v1_1.pdf",
+      "englishUrl": "/assets/downloads/en/16_woek_produkte_konsum_wirkungsumsatzsteuer-produktwirkungssteuer_detailkonzept_v1_1.en.pdf",
+      "fileType": "pdf",
+      "kind": "download",
+      "titleDe": "16_woek_produkte_konsum_wirkungsumsatzsteuer-produktwirkungssteuer_detailkonzept_v1_1",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-downloads-16-woek-produkte-konsum-wirkungsumsatzsteuer-produktwirkun-2/index.html",
         "wirkungsfelder/produkte-konsum/wirkungsumsatzsteuer-produktwirkungssteuer/index.html"
       ],
       "status": "missing",
@@ -1102,7 +1142,6 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
-        "bibliothek/eintraege/download-or-document-assets-downloads-17-woek-produkte-konsum-produktscorecards-reverse-merit-or-2/index.html",
         "bibliothek/eintraege/download-or-document-assets-downloads-17-woek-produkte-konsum-produktscorecards-reverse-merit-or-2/lesen/00-kurzprofil/index.html",
         "bibliothek/eintraege/download-or-document-assets-downloads-17-woek-produkte-konsum-produktscorecards-reverse-merit-or-2/lesen/01-inhaltsubersicht/index.html",
         "bibliothek/eintraege/download-or-document-assets-downloads-17-woek-produkte-konsum-produktscorecards-reverse-merit-or-2/lesen/02-executive-summary/index.html",
@@ -1119,7 +1158,8 @@
         "bibliothek/eintraege/download-or-document-assets-downloads-17-woek-produkte-konsum-produktscorecards-reverse-merit-or-2/lesen/13-tool-und-website-integration/index.html",
         "bibliothek/eintraege/download-or-document-assets-downloads-17-woek-produkte-konsum-produktscorecards-reverse-merit-or-2/lesen/14-sdg-sdg-bezug/index.html",
         "bibliothek/eintraege/download-or-document-assets-downloads-17-woek-produkte-konsum-produktscorecards-reverse-merit-or-2/lesen/15-quellen-und-fazit/index.html",
-        "bibliothek/eintraege/download-or-document-assets-downloads-17-woek-produkte-konsum-produktscorecards-reverse-merit-or-2/lesen/index.html"
+        "bibliothek/eintraege/download-or-document-assets-downloads-17-woek-produkte-konsum-produktscorecards-reverse-merit-or-2/lesen/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-17-woek-produkte-konsum-produktscorecards-reverse-merit-or-3/index.html"
       ],
       "status": "missing",
       "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
@@ -1139,7 +1179,27 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
-        "bibliothek/eintraege/download-or-document-assets-downloads-17-woek-produkte-konsum-produktscorecards-reverse-merit-or/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-17-woek-produkte-konsum-produktscorecards-reverse-merit-or/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-downloads-17-woek-produkte-konsum-produktscorecards-reverse-merit-order-digitale-produktpaesse-detailkonzept-v1-1-pdf",
+      "sourcePath": "assets/downloads/17_woek_produkte_konsum_produktscorecards-reverse-merit-order-digitale-produktpaesse_detailkonzept_v1_1.pdf",
+      "englishTargetPath": "assets/downloads/en/17_woek_produkte_konsum_produktscorecards-reverse-merit-order-digitale-produktpaesse_detailkonzept_v1_1.en.pdf",
+      "sourceUrl": "/assets/downloads/17_woek_produkte_konsum_produktscorecards-reverse-merit-order-digitale-produktpaesse_detailkonzept_v1_1.pdf",
+      "englishUrl": "/assets/downloads/en/17_woek_produkte_konsum_produktscorecards-reverse-merit-order-digitale-produktpaesse_detailkonzept_v1_1.en.pdf",
+      "fileType": "pdf",
+      "kind": "download",
+      "titleDe": "17_woek_produkte_konsum_produktscorecards-reverse-merit-order-digitale-produktpaesse_detailkonzept_v1_1",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-downloads-17-woek-produkte-konsum-produktscorecards-reverse-merit-or-2/index.html",
         "wirkungsfelder/produkte-konsum/produktscorecards-reverse-merit-order-digitale-produktpaesse/index.html"
       ],
       "status": "missing",
@@ -1160,7 +1220,6 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
-        "bibliothek/eintraege/download-or-document-assets-downloads-18-woek-produkte-konsum-apfelbeispiel-produktwirkungsrechn-2/index.html",
         "bibliothek/eintraege/download-or-document-assets-downloads-18-woek-produkte-konsum-apfelbeispiel-produktwirkungsrechn-2/lesen/00-kurzprofil/index.html",
         "bibliothek/eintraege/download-or-document-assets-downloads-18-woek-produkte-konsum-apfelbeispiel-produktwirkungsrechn-2/lesen/01-inhaltsubersicht/index.html",
         "bibliothek/eintraege/download-or-document-assets-downloads-18-woek-produkte-konsum-apfelbeispiel-produktwirkungsrechn-2/lesen/02-executive-summary/index.html",
@@ -1183,7 +1242,8 @@
         "bibliothek/eintraege/download-or-document-assets-downloads-18-woek-produkte-konsum-apfelbeispiel-produktwirkungsrechn-2/lesen/19-vertiefung-datenqualitatsstufen-und-fairness-fur-kleine-betr/index.html",
         "bibliothek/eintraege/download-or-document-assets-downloads-18-woek-produkte-konsum-apfelbeispiel-produktwirkungsrechn-2/lesen/20-vertiefung-missverstandnisse-und-schutz-vor-moralisierung/index.html",
         "bibliothek/eintraege/download-or-document-assets-downloads-18-woek-produkte-konsum-apfelbeispiel-produktwirkungsrechn-2/lesen/21-vertiefung-mindestanforderungen-an-den-apfel-rechner/index.html",
-        "bibliothek/eintraege/download-or-document-assets-downloads-18-woek-produkte-konsum-apfelbeispiel-produktwirkungsrechn-2/lesen/index.html"
+        "bibliothek/eintraege/download-or-document-assets-downloads-18-woek-produkte-konsum-apfelbeispiel-produktwirkungsrechn-2/lesen/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-18-woek-produkte-konsum-apfelbeispiel-produktwirkungsrechn-3/index.html"
       ],
       "status": "missing",
       "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
@@ -1204,7 +1264,27 @@
       "downloadAllowed": true,
       "referencedBy": [
         "bibliothek/eintraege/download-or-document-assets-downloads-18-woek-produkte-konsum-apfelbeispiel-produktwirkungsrechn/index.html",
-        "quellenarchiv/wok-q-0609/index.html",
+        "quellenarchiv/wok-q-0609/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-downloads-18-woek-produkte-konsum-apfelbeispiel-produktwirkungsrechnung-detailkonzept-v1-1-pdf",
+      "sourcePath": "assets/downloads/18_woek_produkte_konsum_apfelbeispiel_produktwirkungsrechnung_detailkonzept_v1_1.pdf",
+      "englishTargetPath": "assets/downloads/en/18_woek_produkte_konsum_apfelbeispiel_produktwirkungsrechnung_detailkonzept_v1_1.en.pdf",
+      "sourceUrl": "/assets/downloads/18_woek_produkte_konsum_apfelbeispiel_produktwirkungsrechnung_detailkonzept_v1_1.pdf",
+      "englishUrl": "/assets/downloads/en/18_woek_produkte_konsum_apfelbeispiel_produktwirkungsrechnung_detailkonzept_v1_1.en.pdf",
+      "fileType": "pdf",
+      "kind": "download",
+      "titleDe": "18_woek_produkte_konsum_apfelbeispiel_produktwirkungsrechnung_detailkonzept_v1_1",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-downloads-18-woek-produkte-konsum-apfelbeispiel-produktwirkungsrechn-2/index.html",
         "wirkungsfelder/produkte-konsum/apfelbeispiel-produktwirkungsrechnung/index.html"
       ],
       "status": "missing",
@@ -1225,7 +1305,6 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
-        "bibliothek/eintraege/download-or-document-assets-downloads-19-woek-produkte-konsum-lieferketten-importlogik-wirkungsv-2/index.html",
         "bibliothek/eintraege/download-or-document-assets-downloads-19-woek-produkte-konsum-lieferketten-importlogik-wirkungsv-2/lesen/00-kurzprofil/index.html",
         "bibliothek/eintraege/download-or-document-assets-downloads-19-woek-produkte-konsum-lieferketten-importlogik-wirkungsv-2/lesen/01-inhaltsubersicht/index.html",
         "bibliothek/eintraege/download-or-document-assets-downloads-19-woek-produkte-konsum-lieferketten-importlogik-wirkungsv-2/lesen/02-executive-summary/index.html",
@@ -1249,7 +1328,8 @@
         "bibliothek/eintraege/download-or-document-assets-downloads-19-woek-produkte-konsum-lieferketten-importlogik-wirkungsv-2/lesen/20-vertiefung-rote-linien-in-globalen-lieferketten/index.html",
         "bibliothek/eintraege/download-or-document-assets-downloads-19-woek-produkte-konsum-lieferketten-importlogik-wirkungsv-2/lesen/21-vertiefung-lieferantenschutz-und-entwicklungswirkung/index.html",
         "bibliothek/eintraege/download-or-document-assets-downloads-19-woek-produkte-konsum-lieferketten-importlogik-wirkungsv-2/lesen/22-vertiefung-mindestanforderungen-an-import-und-vorsteuer-tool/index.html",
-        "bibliothek/eintraege/download-or-document-assets-downloads-19-woek-produkte-konsum-lieferketten-importlogik-wirkungsv-2/lesen/index.html"
+        "bibliothek/eintraege/download-or-document-assets-downloads-19-woek-produkte-konsum-lieferketten-importlogik-wirkungsv-2/lesen/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-19-woek-produkte-konsum-lieferketten-importlogik-wirkungsv-3/index.html"
       ],
       "status": "missing",
       "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
@@ -1269,7 +1349,27 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
-        "bibliothek/eintraege/download-or-document-assets-downloads-19-woek-produkte-konsum-lieferketten-importlogik-wirkungsv/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-19-woek-produkte-konsum-lieferketten-importlogik-wirkungsv/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-downloads-19-woek-produkte-konsum-lieferketten-importlogik-wirkungsvorsteuer-detailkonzept-v1-1-pdf",
+      "sourcePath": "assets/downloads/19_woek_produkte_konsum_lieferketten_importlogik_wirkungsvorsteuer_detailkonzept_v1_1.pdf",
+      "englishTargetPath": "assets/downloads/en/19_woek_produkte_konsum_lieferketten_importlogik_wirkungsvorsteuer_detailkonzept_v1_1.en.pdf",
+      "sourceUrl": "/assets/downloads/19_woek_produkte_konsum_lieferketten_importlogik_wirkungsvorsteuer_detailkonzept_v1_1.pdf",
+      "englishUrl": "/assets/downloads/en/19_woek_produkte_konsum_lieferketten_importlogik_wirkungsvorsteuer_detailkonzept_v1_1.en.pdf",
+      "fileType": "pdf",
+      "kind": "download",
+      "titleDe": "19_woek_produkte_konsum_lieferketten_importlogik_wirkungsvorsteuer_detailkonzept_v1_1",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-downloads-19-woek-produkte-konsum-lieferketten-importlogik-wirkungsv-2/index.html",
         "wirkungsfelder/produkte-konsum/lieferketten-importlogik-wirkungsvorsteuer/index.html"
       ],
       "status": "missing",
@@ -1290,7 +1390,6 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
-        "bibliothek/eintraege/download-or-document-assets-downloads-20-woek-produkte-konsum-konzernbeispiel-csrd-produktscorec-2/index.html",
         "bibliothek/eintraege/download-or-document-assets-downloads-20-woek-produkte-konsum-konzernbeispiel-csrd-produktscorec-2/lesen/00-kurzprofil/index.html",
         "bibliothek/eintraege/download-or-document-assets-downloads-20-woek-produkte-konsum-konzernbeispiel-csrd-produktscorec-2/lesen/01-inhaltsubersicht/index.html",
         "bibliothek/eintraege/download-or-document-assets-downloads-20-woek-produkte-konsum-konzernbeispiel-csrd-produktscorec-2/lesen/02-executive-summary/index.html",
@@ -1313,7 +1412,8 @@
         "bibliothek/eintraege/download-or-document-assets-downloads-20-woek-produkte-konsum-konzernbeispiel-csrd-produktscorec-2/lesen/19-vertiefung-datenraum-und-audit-trail/index.html",
         "bibliothek/eintraege/download-or-document-assets-downloads-20-woek-produkte-konsum-konzernbeispiel-csrd-produktscorec-2/lesen/20-vertiefung-produktportfolio-als-wirkungs-heatmap/index.html",
         "bibliothek/eintraege/download-or-document-assets-downloads-20-woek-produkte-konsum-konzernbeispiel-csrd-produktscorec-2/lesen/21-vertiefung-verbindung-zu-finanzierung-und-kapitalzugang/index.html",
-        "bibliothek/eintraege/download-or-document-assets-downloads-20-woek-produkte-konsum-konzernbeispiel-csrd-produktscorec-2/lesen/index.html"
+        "bibliothek/eintraege/download-or-document-assets-downloads-20-woek-produkte-konsum-konzernbeispiel-csrd-produktscorec-2/lesen/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-20-woek-produkte-konsum-konzernbeispiel-csrd-produktscorec-3/index.html"
       ],
       "status": "missing",
       "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
@@ -1334,7 +1434,27 @@
       "downloadAllowed": true,
       "referencedBy": [
         "bibliothek/eintraege/download-or-document-assets-downloads-20-woek-produkte-konsum-konzernbeispiel-csrd-produktscorec/index.html",
-        "quellenarchiv/wok-q-0610/index.html",
+        "quellenarchiv/wok-q-0610/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-downloads-20-woek-produkte-konsum-konzernbeispiel-csrd-produktscorecard-detailkonzept-v1-1-pdf",
+      "sourcePath": "assets/downloads/20_woek_produkte_konsum_konzernbeispiel_csrd_produktscorecard_detailkonzept_v1_1.pdf",
+      "englishTargetPath": "assets/downloads/en/20_woek_produkte_konsum_konzernbeispiel_csrd_produktscorecard_detailkonzept_v1_1.en.pdf",
+      "sourceUrl": "/assets/downloads/20_woek_produkte_konsum_konzernbeispiel_csrd_produktscorecard_detailkonzept_v1_1.pdf",
+      "englishUrl": "/assets/downloads/en/20_woek_produkte_konsum_konzernbeispiel_csrd_produktscorecard_detailkonzept_v1_1.en.pdf",
+      "fileType": "pdf",
+      "kind": "download",
+      "titleDe": "20_woek_produkte_konsum_konzernbeispiel_csrd_produktscorecard_detailkonzept_v1_1",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-downloads-20-woek-produkte-konsum-konzernbeispiel-csrd-produktscorec-2/index.html",
         "wirkungsfelder/produkte-konsum/konzernbeispiel-csrd-produktscorecard/index.html"
       ],
       "status": "missing",
@@ -1527,14 +1647,69 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-downloads-23-woek-impact-controlling-t-sroi-transformationsmessung-m-3/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-downloads-23-woek-impact-controlling-t-sroi-transformationsmessung-methodenpapier-v1-1-pdf",
+      "sourcePath": "assets/downloads/23_woek_impact_controlling_t_sroi_transformationsmessung_methodenpapier_v1_1.pdf",
+      "englishTargetPath": "assets/downloads/en/23_woek_impact_controlling_t_sroi_transformationsmessung_methodenpapier_v1_1.en.pdf",
+      "sourceUrl": "/assets/downloads/23_woek_impact_controlling_t_sroi_transformationsmessung_methodenpapier_v1_1.pdf",
+      "englishUrl": "/assets/downloads/en/23_woek_impact_controlling_t_sroi_transformationsmessung_methodenpapier_v1_1.en.pdf",
+      "fileType": "pdf",
+      "kind": "download",
+      "titleDe": "23_woek_impact_controlling_t_sroi_transformationsmessung_methodenpapier_v1_1",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
         "bibliothek/eintraege/download-or-document-assets-downloads-23-woek-impact-controlling-t-sroi-transformationsmessung-m/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-23-woek-impact-controlling-t-sroi-transformationsmessung-m-2/lesen/00-kurzprofil/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-23-woek-impact-controlling-t-sroi-transformationsmessung-m-2/lesen/01-inhaltsubersicht/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-23-woek-impact-controlling-t-sroi-transformationsmessung-m-2/lesen/02-executive-summary/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-23-woek-impact-controlling-t-sroi-transformationsmessung-m-2/lesen/03-warum-roi-und-sroi-nicht-reichen/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-23-woek-impact-controlling-t-sroi-transformationsmessung-m-2/lesen/04-definition-des-t-sroi/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-23-woek-impact-controlling-t-sroi-transformationsmessung-m-2/lesen/05-wirkungsebenen-output-outcome-impact-transformation/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-23-woek-impact-controlling-t-sroi-transformationsmessung-m-2/lesen/06-berechnungslogik/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-23-woek-impact-controlling-t-sroi-transformationsmessung-m-2/lesen/07-netto-wirkung-und-negativwirkungen/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-23-woek-impact-controlling-t-sroi-transformationsmessung-m-2/lesen/08-transformationsmultiplikator/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-23-woek-impact-controlling-t-sroi-transformationsmessung-m-2/lesen/09-daten-scorecards-und-monetarisierung/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-23-woek-impact-controlling-t-sroi-transformationsmessung-m-2/lesen/10-anwendungsfelder/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-23-woek-impact-controlling-t-sroi-transformationsmessung-m-2/lesen/11-t-sroi-im-unternehmen/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-23-woek-impact-controlling-t-sroi-transformationsmessung-m-2/lesen/12-t-sroi-im-staat-und-in-wirkungsfonds/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-23-woek-impact-controlling-t-sroi-transformationsmessung-m-2/lesen/13-grenzen-unsicherheit-und-assurance/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-23-woek-impact-controlling-t-sroi-transformationsmessung-m-2/lesen/14-politische-anschlussfahigkeit-und-umsetzungsoptionen/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-23-woek-impact-controlling-t-sroi-transformationsmessung-m-2/lesen/15-sdg-sdg-bezug/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-23-woek-impact-controlling-t-sroi-transformationsmessung-m-2/lesen/16-website-und-portalintegration/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-23-woek-impact-controlling-t-sroi-transformationsmessung-m-2/lesen/17-quellen-und-anschlussstellen/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-23-woek-impact-controlling-t-sroi-transformationsmessung-m-2/lesen/18-fazit/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-23-woek-impact-controlling-t-sroi-transformationsmessung-m-2/lesen/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-impact-controlling-einfach-erklaert-pdf/lesen/15-slide-16/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-impact-controlling-einfach-erklaert-pdf/lesen/17-slide-18/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-wirkungscontrolling-detailkonzept-dossier-v1-0-pdf/lesen/12-zu-steuerungsdaten/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-wirkungscontrolling-detailkonzept-dossier-v1-0-pdf/lesen/14-schutzmechanismen/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-wirkungscontrolling-detailkonzept-dossier-v1-0-pdf/lesen/15-teil-v-formeln-und-berechnungsweisen/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-wirkungscontrolling-detailkonzept-dossier-v1-0-pdf/lesen/17-teil-vii-beispielrechnungen-und-konkrete/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-wirkungscontrolling-detailkonzept-dossier-v1-0-pdf/lesen/23-teil-x-erweiterte-bereichsdossiers/index.html",
+        "bibliothek/eintraege/download-or-document-assets-pdf-working-paper-wohnungsmarkt-pdf/lesen/01-teil-ii-das-prinzip-wirkung-statt-kapital-wok/index.html",
+        "bibliothek/eintraege/download-or-document-assets-pdf-working-paper-wohnungsmarkt-pdf/lesen/index.html",
+        "dokumente/whitepaper-t-sroi/index.html",
+        "dokumente/wp-wohnungsmarkt/index.html",
+        "fuer/investoren/impact-controlling/index.html",
+        "fuer/unternehmen/impact-controlling/index.html",
         "werkzeuge/impact-controlling/dossier/index.html",
+        "werkzeuge/impact-controlling/dossiers/index.html",
+        "werkzeuge/impact-controlling/dossiers/wirkungscontrolling/index.html",
         "werkzeuge/impact-controlling/impact-of-investment/index.html",
         "werkzeuge/impact-controlling/index.html",
         "werkzeuge/impact-controlling/methodenpapiere/index.html",
         "werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/index.html",
-        "werkzeuge/impact-controlling/t-sroi/index.html",
-        "werkzeuge/t-sroi/index.html"
+        "werkzeuge/t-sroi/index.html",
+        "wirkungsfelder/wirtschaft-unternehmen/wirkungscontrolling/index.html"
       ],
       "status": "missing",
       "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
@@ -2754,9 +2929,7 @@
         "bibliothek/eintraege/download-or-document-assets-downloads-impact-controlling-einfach-erklaert-pdf/lesen/29-slide-30/index.html",
         "bibliothek/eintraege/download-or-document-assets-downloads-impact-controlling-einfach-erklaert-pdf/lesen/30-slide-31/index.html",
         "bibliothek/eintraege/download-or-document-assets-downloads-impact-controlling-einfach-erklaert-pdf/lesen/31-slide-32/index.html",
-        "bibliothek/eintraege/download-or-document-assets-downloads-impact-controlling-einfach-erklaert-pdf/lesen/index.html",
-        "fuer/investoren/impact-controlling/index.html",
-        "fuer/unternehmen/impact-controlling/index.html"
+        "bibliothek/eintraege/download-or-document-assets-downloads-impact-controlling-einfach-erklaert-pdf/lesen/index.html"
       ],
       "status": "missing",
       "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
@@ -3682,7 +3855,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
-        "bibliothek/eintraege/online-version-portale-migration-vielfalt-bestands-und-nachlieferliste-index-html/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-rang-16-sicherheit-resilienz-01-bestands-und-nachlieferlis/index.html",
         "downloads/rang-16-sicherheit-resilienz/index.html",
         "portale/sicherheit-resilienz/cyberresilienz/index.html",
         "portale/sicherheit-resilienz/dienstjahr-fuer-wirkung/index.html",
@@ -5343,10 +5516,12 @@
       "libraryVisibility": "",
       "librarySection": "",
       "downloadAllowed": true,
-      "referencedBy": [],
+      "referencedBy": [
+        "bibliothek/eintraege/online-version-portale-migration-vielfalt-wirkungsindikatoren-index-html/index.html"
+      ],
       "status": "missing",
       "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
-      "priority": "P2"
+      "priority": "P1"
     },
     {
       "id": "assets-downloads-rang-17-digitalisierung-ki-13-wirkungsindikatoren-pdf",
@@ -5401,10 +5576,12 @@
       "libraryVisibility": "",
       "librarySection": "",
       "downloadAllowed": true,
-      "referencedBy": [],
+      "referencedBy": [
+        "bibliothek/eintraege/online-version-portale-migration-vielfalt-toolkarten-index-html/index.html"
+      ],
       "status": "missing",
       "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
-      "priority": "P2"
+      "priority": "P1"
     },
     {
       "id": "assets-downloads-rang-17-digitalisierung-ki-14-toolkarten-pdf",
@@ -5518,10 +5695,12 @@
       "libraryVisibility": "",
       "librarySection": "",
       "downloadAllowed": true,
-      "referencedBy": [],
+      "referencedBy": [
+        "bibliothek/eintraege/online-version-portale-migration-vielfalt-politische-anschlussfaehigkeit-index-html/index.html"
+      ],
       "status": "missing",
       "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
-      "priority": "P2"
+      "priority": "P1"
     },
     {
       "id": "assets-downloads-rang-17-digitalisierung-ki-16-politische-anschlussfaehigkeit-pdf",
@@ -7755,10 +7934,12 @@
       "libraryVisibility": "",
       "librarySection": "",
       "downloadAllowed": true,
-      "referencedBy": [],
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-downloads-rang-19-internationale-ordnung-18-buchanker-querverlinkung/index.html"
+      ],
       "status": "missing",
       "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
-      "priority": "P2"
+      "priority": "P1"
     },
     {
       "id": "assets-downloads-rang-19-internationale-ordnung-18-buchanker-querverlinkungen-pdf",
@@ -10133,10 +10314,12 @@
       "libraryVisibility": "",
       "librarySection": "",
       "downloadAllowed": true,
-      "referencedBy": [],
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-19-faq/index.html"
+      ],
       "status": "missing",
       "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
-      "priority": "P2"
+      "priority": "P1"
     },
     {
       "id": "assets-downloads-rang-21-kritik-missverstaendnisse-schutzarchitektur-19-faq-missverstaendnisse-pdf",
@@ -13013,12 +13196,7 @@
         "bibliothek/eintraege/download-or-document-assets-downloads-wirkungscontrolling-detailkonzept-dossier-v1-0-pdf/lesen/23-teil-x-erweiterte-bereichsdossiers/index.html",
         "bibliothek/eintraege/download-or-document-assets-downloads-wirkungscontrolling-detailkonzept-dossier-v1-0-pdf/lesen/24-schluss-wirkung-wird-erst-durch-ruckkopp/index.html",
         "bibliothek/eintraege/download-or-document-assets-downloads-wirkungscontrolling-detailkonzept-dossier-v1-0-pdf/lesen/25-lung-steuerungsfahig/index.html",
-        "bibliothek/eintraege/download-or-document-assets-downloads-wirkungscontrolling-detailkonzept-dossier-v1-0-pdf/lesen/index.html",
-        "werkzeuge/impact-controlling/dossier/index.html",
-        "werkzeuge/impact-controlling/dossiers/index.html",
-        "werkzeuge/impact-controlling/dossiers/wirkungscontrolling/index.html",
-        "werkzeuge/impact-controlling/index.html",
-        "wirkungsfelder/wirtschaft-unternehmen/wirkungscontrolling/index.html"
+        "bibliothek/eintraege/download-or-document-assets-downloads-wirkungscontrolling-detailkonzept-dossier-v1-0-pdf/lesen/index.html"
       ],
       "status": "missing",
       "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
@@ -18142,7 +18320,76 @@
         "bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-pdf/lesen/12-versorgung-kliniken-und-gesundheitsnetzwerke/index.html",
         "bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-pdf/lesen/13-governance-wirkungsrat-und-politische-anschlussfahigkeit/index.html",
         "bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-pdf/lesen/14-quellen-und-anschlussdokumente/index.html",
-        "bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-pdf/lesen/index.html"
+        "bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-pdf/lesen/index.html",
+        "wirkungsfelder/gesundheit-pflege/dossiers/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-3-pdf",
+      "sourcePath": "assets/downloads/woek_gesundheit_pflege_einzeldossier_set_v0_3.pdf",
+      "englishTargetPath": "assets/downloads/en/woek_gesundheit_pflege_einzeldossier_set_v0_3.en.pdf",
+      "sourceUrl": "/assets/downloads/woek_gesundheit_pflege_einzeldossier_set_v0_3.pdf",
+      "englishUrl": "/assets/downloads/en/woek_gesundheit_pflege_einzeldossier_set_v0_3.en.pdf",
+      "fileType": "pdf",
+      "kind": "download",
+      "titleDe": "woek_gesundheit_pflege_einzeldossier_set_v0_3",
+      "titleEn": "",
+      "libraryVisibility": "",
+      "librarySection": "",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-2-pdf/lesen/00-inhaltslogik/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-2-pdf/lesen/01-dossier-methodik/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-2-pdf/lesen/02-gesundheit-als-gesellschaftliches-wirkungsfeld/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-2-pdf/lesen/03-pravention-gesundheitskassen-und-wirkungshaushalt/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-2-pdf/lesen/04-versorgungsraume-kliniken-und-gesundheitsnetzwerke/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-2-pdf/lesen/05-pflege-als-wirkleistung-und-pflegeokosystem/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-2-pdf/lesen/06-psychische-gesundheit-und-soziale-stabilitat/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-2-pdf/lesen/07-gesundheitsgerechtigkeit-inklusion-und-migration/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-2-pdf/lesen/08-one-health-klima-umwelt-und-ernahrung/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-2-pdf/lesen/09-arbeitswelt-unternehmen-und-gesundheitswirkung/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-2-pdf/lesen/10-gesundheitsdaten-ki-und-burgerkontrolle/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-2-pdf/lesen/11-finanzierung-wirkungsfonds-und-gesundheitskassen/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-2-pdf/lesen/12-versorgung-kliniken-und-gesundheitsnetzwerke/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-2-pdf/lesen/13-governance-wirkungsrat-und-politische-anschlussfahigkeit/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-2-pdf/lesen/14-quellen-und-anschlussdokumente/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-2-pdf/lesen/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-pdf/lesen/00-inhaltslogik/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-pdf/lesen/01-dossier-methodik/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-pdf/lesen/02-gesundheit-als-gesellschaftliches-wirkungsfeld/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-pdf/lesen/03-pravention-gesundheitskassen-und-wirkungshaushalt/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-pdf/lesen/04-versorgungsraume-kliniken-und-gesundheitsnetzwerke/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-pdf/lesen/05-pflege-als-wirkleistung-und-pflegeokosystem/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-pdf/lesen/06-psychische-gesundheit-und-soziale-stabilitat/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-pdf/lesen/07-gesundheitsgerechtigkeit-inklusion-und-migration/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-pdf/lesen/08-one-health-klima-umwelt-und-ernahrung/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-pdf/lesen/09-arbeitswelt-unternehmen-und-gesundheitswirkung/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-pdf/lesen/10-gesundheitsdaten-ki-und-burgerkontrolle/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-pdf/lesen/11-finanzierung-wirkungsfonds-und-gesundheitskassen/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-pdf/lesen/12-versorgung-kliniken-und-gesundheitsnetzwerke/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-pdf/lesen/13-governance-wirkungsrat-und-politische-anschlussfahigkeit/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-pdf/lesen/14-quellen-und-anschlussdokumente/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-pdf/lesen/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-3-pdf/index.html",
+        "werkstatt/arbeitsbibliothek/wirkungsfelder/gesundheit-pflege/index.html",
+        "wirkungsfelder/gesundheit-pflege/detailkonzepte/index.html",
+        "wirkungsfelder/gesundheit-pflege/dossier/index.html",
+        "wirkungsfelder/gesundheit-pflege/dossiers/index.html",
+        "wirkungsfelder/gesundheit-pflege/index.html",
+        "wirkungsfelder/gesundheit-pflege/konzept/index.html",
+        "wirkungsfelder/gesundheit-pflege/tools/gesundheitsdatenraum-privacy-by-design/index.html",
+        "wirkungsfelder/gesundheit-pflege/tools/gesundheitswirkungscheck/index.html",
+        "wirkungsfelder/gesundheit-pflege/tools/kommunaler-gesundheitsraum-check/index.html",
+        "wirkungsfelder/gesundheit-pflege/tools/mental-health-reflexionstool/index.html",
+        "wirkungsfelder/gesundheit-pflege/tools/one-health-score/index.html",
+        "wirkungsfelder/gesundheit-pflege/tools/pflegewirkungscheck/index.html",
+        "wirkungsfelder/gesundheit-pflege/tools/praeventionswirkungsrechner/index.html",
+        "wirkungsfelder/gesundheit-pflege/tools/t-sroi-praevention-gesundheitsinvestitionen/index.html",
+        "wirkungsfelder/gesundheit-pflege/tools/wirkungsfonds-gesundheit-pflege/index.html",
+        "wirkungsfelder/gesundheit-pflege/tools/wirkungshaushalt-gesundheit/index.html"
       ],
       "status": "missing",
       "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
@@ -19801,7 +20048,7 @@
         "bibliothek/eintraege/download-or-document-assets-downloads-woek-standard-politische-anschlussfaehigkeit-v0-1-pdf/lesen/04-4-politische-optionenmatrix/index.html",
         "bibliothek/eintraege/download-or-document-assets-downloads-woek-standard-politische-anschlussfaehigkeit-v0-1-pdf/lesen/05-5-ruckwirkende-anwendung/index.html",
         "bibliothek/eintraege/download-or-document-assets-downloads-woek-standard-politische-anschlussfaehigkeit-v0-1-pdf/lesen/06-6-textbaustein-fur-portalseiten/index.html",
-        "bibliothek/eintraege/download-or-document-assets-downloads-woek-standard-politische-anschlussfaehigkeit-v0-1-pdf/lesen/07-7-mindestanforderungen-in-codex/index.html",
+        "bibliothek/eintraege/download-or-document-assets-downloads-woek-standard-politische-anschlussfaehigkeit-v0-1-pdf/lesen/07-7-mindestanforderungen-fuer-oeffentliche-inhalte/index.html",
         "bibliothek/eintraege/download-or-document-assets-downloads-woek-standard-politische-anschlussfaehigkeit-v0-1-pdf/lesen/08-quellen-und-interne-referenzen/index.html",
         "bibliothek/eintraege/download-or-document-assets-downloads-woek-standard-politische-anschlussfaehigkeit-v0-1-pdf/lesen/index.html"
       ],
@@ -21428,6 +21675,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/journal-blog-afd-ideologie-kann-deinen-job-kosten-index-html/index.html",
         "bibliothek/eintraege/journal-blog-afd-ideologie-kann-deinen-job-kosten-index-html/index.html"
       ],
       "status": "missing",
@@ -21448,6 +21696,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-boden-ist-kein-broetchen-wohnungsmarkt-wirkungsoekonomie/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-boden-ist-kein-broetchen-wohnungsmarkt-wirkungsoekonomie/index.html"
       ],
       "status": "missing",
@@ -21468,6 +21717,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-co2-preis-warum-wir-ihn-ohnehin-zahlen-pdf/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-co2-preis-warum-wir-ihn-ohnehin-zahlen-pdf/index.html"
       ],
       "status": "missing",
@@ -21488,6 +21738,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/journal-blog-das-managementmodell-der-zukunft-index-html/index.html",
         "bibliothek/eintraege/journal-blog-das-managementmodell-der-zukunft-index-html/index.html"
       ],
       "status": "missing",
@@ -21508,6 +21759,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-das-schachbrett-der-oeffentlichkeit-pdf/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-das-schachbrett-der-oeffentlichkeit-pdf/index.html"
       ],
       "status": "missing",
@@ -21528,6 +21780,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-der-verbrenner-stirbt-durch-risikomanagement-des-finanzs/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-der-verbrenner-stirbt-durch-risikomanagement-des-finanzs/index.html"
       ],
       "status": "missing",
@@ -21548,6 +21801,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-der-versoehner-und-die-wellen-index-pdf/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-der-versoehner-und-die-wellen-index-pdf/index.html"
       ],
       "status": "missing",
@@ -21568,6 +21822,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/journal-blog-die-fraunhoferschen-linien-des-preises-html/index.html",
         "bibliothek/eintraege/journal-blog-die-fraunhoferschen-linien-des-preises-html/index.html"
       ],
       "status": "missing",
@@ -21588,6 +21843,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/journal-blog-die-stille-neubewertung-html/index.html",
         "bibliothek/eintraege/journal-blog-die-stille-neubewertung-html/index.html"
       ],
       "status": "missing",
@@ -21608,6 +21864,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-geg-wirkungscheck-ioi-t-sroi-pdf/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-geg-wirkungscheck-ioi-t-sroi-pdf/index.html"
       ],
       "status": "missing",
@@ -21628,6 +21885,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-ki-souveraenitaet-statt-abhaengigkeit-fable-moment-pdf/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-ki-souveraenitaet-statt-abhaengigkeit-fable-moment-pdf/index.html"
       ],
       "status": "missing",
@@ -21648,6 +21906,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-ki-texte-kennzeichnen-wirkung-verantwortung-pdf/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-ki-texte-kennzeichnen-wirkung-verantwortung-pdf/index.html"
       ],
       "status": "missing",
@@ -21668,6 +21927,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-kognitive-dissonanz-als-wirkungsbremse-index-pdf/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-kognitive-dissonanz-als-wirkungsbremse-index-pdf/index.html"
       ],
       "status": "missing",
@@ -21688,6 +21948,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-kollaps-der-zivilisation-systemresilienz-demokratie-sdgp/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-kollaps-der-zivilisation-systemresilienz-demokratie-sdgp/index.html"
       ],
       "status": "missing",
@@ -21708,6 +21969,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-leistung-ohne-wirkung-pdf/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-leistung-ohne-wirkung-pdf/index.html"
       ],
       "status": "missing",
@@ -21728,6 +21990,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-08-09-wirkung-statt-kapital-zeit-fur-eine/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-08-09-wirkung-statt-kapital-zeit-fur-eine/index.html"
       ],
       "status": "missing",
@@ -21748,6 +22011,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-09-19-die-wirtschaft-ist-keine-marklin-eis/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-09-19-die-wirtschaft-ist-keine-marklin-eis/index.html"
       ],
       "status": "missing",
@@ -21768,6 +22032,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-06-die-wirkungsokonomie-warum-wir-wirts/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-06-die-wirkungsokonomie-warum-wir-wirts/index.html"
       ],
       "status": "missing",
@@ -21788,6 +22053,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-07-wenn-maschinen-arbeiten-warum-die-wi/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-07-wenn-maschinen-arbeiten-warum-die-wi/index.html"
       ],
       "status": "missing",
@@ -21808,6 +22074,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-08-solar-verschenken-ware-billiger-als/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-08-solar-verschenken-ware-billiger-als/index.html"
       ],
       "status": "missing",
@@ -21828,6 +22095,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-10-neues-grundsicherungs-kapitel-nur-ei/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-10-neues-grundsicherungs-kapitel-nur-ei/index.html"
       ],
       "status": "missing",
@@ -21848,6 +22116,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-10-technologieoffenheit-freiheit-oder-f/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-10-technologieoffenheit-freiheit-oder-f/index.html"
       ],
       "status": "missing",
@@ -21868,6 +22137,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-10-warum-die-freie-marktwirtschaft-sich/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-10-warum-die-freie-marktwirtschaft-sich/index.html"
       ],
       "status": "missing",
@@ -21888,6 +22158,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-10-was-china-mit-solar-macht-und-warum/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-10-was-china-mit-solar-macht-und-warum/index.html"
       ],
       "status": "missing",
@@ -21908,6 +22179,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-11-warum-das-richtige-endlich-gunstiger/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-11-warum-das-richtige-endlich-gunstiger/index.html"
       ],
       "status": "missing",
@@ -21928,6 +22200,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-12-wenn-mieten-wirkung-zeigen-wohnungsm/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-12-wenn-mieten-wirkung-zeigen-wohnungsm/index.html"
       ],
       "status": "missing",
@@ -21948,6 +22221,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-13-produktbesteuerung-durch-wirkung-wen/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-13-produktbesteuerung-durch-wirkung-wen/index.html"
       ],
       "status": "missing",
@@ -21968,6 +22242,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-13-wie-die-wirkungsokonomie-das-rentenp/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-13-wie-die-wirkungsokonomie-das-rentenp/index.html"
       ],
       "status": "missing",
@@ -21988,6 +22263,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-13-wirkung-statt-leistung-das-neue-eink/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-13-wirkung-statt-leistung-das-neue-eink/index.html"
       ],
       "status": "missing",
@@ -22008,6 +22284,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-13-wirkung-statt-zertifikate-wie-die-wi/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-13-wirkung-statt-zertifikate-wie-die-wi/index.html"
       ],
       "status": "missing",
@@ -22028,6 +22305,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-14-medien-wirkung-warum-die-zukunft-der/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-14-medien-wirkung-warum-die-zukunft-der/index.html"
       ],
       "status": "missing",
@@ -22048,6 +22326,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-16-vom-steuersystem-zum-steuerungssyste/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-16-vom-steuersystem-zum-steuerungssyste/index.html"
       ],
       "status": "missing",
@@ -22068,6 +22347,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-24-von-werten-zu-wirkung-pdf/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-10-24-von-werten-zu-wirkung-pdf/index.html"
       ],
       "status": "missing",
@@ -22088,6 +22368,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-11-02-wenn-maschinen-arbeiten-warum-wir-da/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-11-02-wenn-maschinen-arbeiten-warum-wir-da/index.html"
       ],
       "status": "missing",
@@ -22108,6 +22389,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-11-07-warum-deutschland-wohlstand-verschen/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-11-07-warum-deutschland-wohlstand-verschen/index.html"
       ],
       "status": "missing",
@@ -22128,6 +22410,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-11-18-der-historische-fehler-vor-120-jahre/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-11-18-der-historische-fehler-vor-120-jahre/index.html"
       ],
       "status": "missing",
@@ -22148,6 +22431,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-11-28-die-wirkungsokonomie-warum-wir-ein-n/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-11-28-die-wirkungsokonomie-warum-wir-ein-n/index.html"
       ],
       "status": "missing",
@@ -22168,6 +22452,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-12-11-wenn-politik-scheitert-ubernimmt-der/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-12-11-wenn-politik-scheitert-ubernimmt-der/index.html"
       ],
       "status": "missing",
@@ -22188,6 +22473,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-12-12-die-wirkungsokonomie-ein-lernendes-k/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-12-12-die-wirkungsokonomie-ein-lernendes-k/index.html"
       ],
       "status": "missing",
@@ -22208,6 +22494,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-12-13-warum-demokratie-sich-selbst-destabi/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-12-13-warum-demokratie-sich-selbst-destabi/index.html"
       ],
       "status": "missing",
@@ -22228,6 +22515,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-12-15-medien-plattformen-und-wirkung-pdf/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-12-15-medien-plattformen-und-wirkung-pdf/index.html"
       ],
       "status": "missing",
@@ -22248,6 +22536,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-12-15-was-ist-leistung-im-21-jahrhundert-p/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-12-15-was-ist-leistung-im-21-jahrhundert-p/index.html"
       ],
       "status": "missing",
@@ -22268,6 +22557,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-12-16-warum-wir-glauben-nachhaltigkeit-sei/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-12-16-warum-wir-glauben-nachhaltigkeit-sei/index.html"
       ],
       "status": "missing",
@@ -22288,6 +22578,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-12-16-wirkungsokonomie-wie-wir-wirtschaft/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-12-16-wirkungsokonomie-wie-wir-wirtschaft/index.html"
       ],
       "status": "missing",
@@ -22308,6 +22599,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-12-18-die-grenzen-der-zukunftsforschung-un/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-12-18-die-grenzen-der-zukunftsforschung-un/index.html"
       ],
       "status": "missing",
@@ -22328,6 +22620,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-12-22-von-der-pigou-steuer-zur-wirkungsoko/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-12-22-von-der-pigou-steuer-zur-wirkungsoko/index.html"
       ],
       "status": "missing",
@@ -22348,6 +22641,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-12-30-wie-die-wirkungsokonomie-funktionier/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2025-12-30-wie-die-wirkungsokonomie-funktionier/index.html"
       ],
       "status": "missing",
@@ -22368,6 +22662,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-01-04-gedankenspiel-wenn-sich-demokratien/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-01-04-gedankenspiel-wenn-sich-demokratien/index.html"
       ],
       "status": "missing",
@@ -22388,6 +22683,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-01-05-reverse-merit-order-wie-wirkungsokon/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-01-05-reverse-merit-order-wie-wirkungsokon/index.html"
       ],
       "status": "missing",
@@ -22408,6 +22704,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-01-05-sdg-warum-nachhaltigkeit-ohne-wirkun/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-01-05-sdg-warum-nachhaltigkeit-ohne-wirkun/index.html"
       ],
       "status": "missing",
@@ -22428,6 +22725,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-01-09-soziale-resilienz-gegen-verhetzung-e/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-01-09-soziale-resilienz-gegen-verhetzung-e/index.html"
       ],
       "status": "missing",
@@ -22448,6 +22746,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-01-13-schadenokonomie-wie-aufhetzung-und-s/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-01-13-schadenokonomie-wie-aufhetzung-und-s/index.html"
       ],
       "status": "missing",
@@ -22468,6 +22767,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-01-14-warum-leistung-ohne-wirkung-eine-ill/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-01-14-warum-leistung-ohne-wirkung-eine-ill/index.html"
       ],
       "status": "missing",
@@ -22488,6 +22788,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-01-17-das-grote-steuersparprogramm-der-ges/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-01-17-das-grote-steuersparprogramm-der-ges/index.html"
       ],
       "status": "missing",
@@ -22508,6 +22809,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-01-17-meinungsfreiheit-braucht-mehr-als-gu/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-01-17-meinungsfreiheit-braucht-mehr-als-gu/index.html"
       ],
       "status": "missing",
@@ -22528,6 +22830,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-01-22-wirkung-schlagt-wahrheit-wie-offentl/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-01-22-wirkung-schlagt-wahrheit-wie-offentl/index.html"
       ],
       "status": "missing",
@@ -22548,6 +22851,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-01-28-wirkung-statt-weltbild-eine-wirkungs/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-01-28-wirkung-statt-weltbild-eine-wirkungs/index.html"
       ],
       "status": "missing",
@@ -22568,6 +22872,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-01-29-was-ist-wirkungsokonomie-pdf/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-01-29-was-ist-wirkungsokonomie-pdf/index.html"
       ],
       "status": "missing",
@@ -22588,6 +22893,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-03-warum-unser-wirtschaftsmodell-an-sei/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-03-warum-unser-wirtschaftsmodell-an-sei/index.html"
       ],
       "status": "missing",
@@ -22608,6 +22914,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-03-wenn-fakten-nicht-mehr-reichen-warum/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-03-wenn-fakten-nicht-mehr-reichen-warum/index.html"
       ],
       "status": "missing",
@@ -22628,6 +22935,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-05-vom-nachhaltigkeitsbewusstsein-zur-w/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-05-vom-nachhaltigkeitsbewusstsein-zur-w/index.html"
       ],
       "status": "missing",
@@ -22648,6 +22956,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-06-wenn-kommunikation-realitat-formt-wi/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-06-wenn-kommunikation-realitat-formt-wi/index.html"
       ],
       "status": "missing",
@@ -22668,6 +22977,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-07-macht-ohne-mehrheit-die-afd-strategi/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-07-macht-ohne-mehrheit-die-afd-strategi/index.html"
       ],
       "status": "missing",
@@ -22688,6 +22998,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-08-millionen-seiten-und-trotzdem-keine/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-08-millionen-seiten-und-trotzdem-keine/index.html"
       ],
       "status": "missing",
@@ -22708,6 +23019,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-09-von-der-wertschopfungskette-zum-wirk/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-09-von-der-wertschopfungskette-zum-wirk/index.html"
       ],
       "status": "missing",
@@ -22728,6 +23040,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-10-impact-controlling-im-unternehmen-vo/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-10-impact-controlling-im-unternehmen-vo/index.html"
       ],
       "status": "missing",
@@ -22748,6 +23061,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-10-warum-die-vollbremsung-von-wind-und/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-10-warum-die-vollbremsung-von-wind-und/index.html"
       ],
       "status": "missing",
@@ -22768,6 +23082,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-10-wie-setzt-man-die-wirkungsokonomie-u/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-10-wie-setzt-man-die-wirkungsokonomie-u/index.html"
       ],
       "status": "missing",
@@ -22788,6 +23103,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-10-wirkungsorientierte-unternehmensfuhr/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-10-wirkungsorientierte-unternehmensfuhr/index.html"
       ],
       "status": "missing",
@@ -22808,6 +23124,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-11-warum-der-ruckhalt-fur-klimaschutz-s/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-11-warum-der-ruckhalt-fur-klimaschutz-s/index.html"
       ],
       "status": "missing",
@@ -22828,6 +23145,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-12-wahl-o-mat-zur-landtagswahl-baden-wu/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-12-wahl-o-mat-zur-landtagswahl-baden-wu/index.html"
       ],
       "status": "missing",
@@ -22848,6 +23166,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-12-wirkungsokonomie-wir-messen-wirkung/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-12-wirkungsokonomie-wir-messen-wirkung/index.html"
       ],
       "status": "missing",
@@ -22868,6 +23187,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-15-der-co2-preis-konnte-zu-einem-der-wi/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-15-der-co2-preis-konnte-zu-einem-der-wi/index.html"
       ],
       "status": "missing",
@@ -22888,6 +23208,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-16-der-co2-rucksack-sagt-systemisch-nic/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-16-der-co2-rucksack-sagt-systemisch-nic/index.html"
       ],
       "status": "missing",
@@ -22908,6 +23229,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-16-zeit-der-monster-munchen-macht-und-d/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-16-zeit-der-monster-munchen-macht-und-d/index.html"
       ],
       "status": "missing",
@@ -22928,6 +23250,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-17-was-wir-2021-furchteten-und-was-wir/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-17-was-wir-2021-furchteten-und-was-wir/index.html"
       ],
       "status": "missing",
@@ -22948,6 +23271,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-18-demokratie-schutzen-menschen-zuruckg/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-18-demokratie-schutzen-menschen-zuruckg/index.html"
       ],
       "status": "missing",
@@ -22968,6 +23292,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-19-nachhaltigkeit-ist-keine-strategie-s/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-19-nachhaltigkeit-ist-keine-strategie-s/index.html"
       ],
       "status": "missing",
@@ -22988,6 +23313,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-20-die-unterschatzte-macht-der-tonalita/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-20-die-unterschatzte-macht-der-tonalita/index.html"
       ],
       "status": "missing",
@@ -23008,6 +23334,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-20-multipolare-systemdynamik-2025-siche/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-20-multipolare-systemdynamik-2025-siche/index.html"
       ],
       "status": "missing",
@@ -23028,6 +23355,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-21-social-media-fur-kinder-jugendschutz/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-21-social-media-fur-kinder-jugendschutz/index.html"
       ],
       "status": "missing",
@@ -23048,6 +23376,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-22-warum-fakten-nicht-reichen-und-was-s/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-22-warum-fakten-nicht-reichen-und-was-s/index.html"
       ],
       "status": "missing",
@@ -23068,6 +23397,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-26-energie-ist-infrastruktur-warum-erne/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-02-26-energie-ist-infrastruktur-warum-erne/index.html"
       ],
       "status": "missing",
@@ -23088,6 +23418,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-02-wirkungsokonomische-einordnung-geopo/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-02-wirkungsokonomische-einordnung-geopo/index.html"
       ],
       "status": "missing",
@@ -23108,6 +23439,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-03-die-grungasstrategie-im-warmemarkt-e/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-03-die-grungasstrategie-im-warmemarkt-e/index.html"
       ],
       "status": "missing",
@@ -23128,6 +23460,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-04-multikrisen-zeigen-eine-neue-okonomi/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-04-multikrisen-zeigen-eine-neue-okonomi/index.html"
       ],
       "status": "missing",
@@ -23148,6 +23481,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-05-wenn-emporung-zum-verstarker-wird-un/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-05-wenn-emporung-zum-verstarker-wird-un/index.html"
       ],
       "status": "missing",
@@ -23168,6 +23502,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-06-csrd-warum-eine-berichtspflicht-zum/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-06-csrd-warum-eine-berichtspflicht-zum/index.html"
       ],
       "status": "missing",
@@ -23188,6 +23523,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-07-thermodynamik-des-diskurses-informat/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-07-thermodynamik-des-diskurses-informat/index.html"
       ],
       "status": "missing",
@@ -23208,6 +23544,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-10-wirtschaft-in-einer-welt-systemische/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-10-wirtschaft-in-einer-welt-systemische/index.html"
       ],
       "status": "missing",
@@ -23228,6 +23565,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-11-vom-wissen-zur-wirkung-warum-im-ki-z/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-11-vom-wissen-zur-wirkung-warum-im-ki-z/index.html"
       ],
       "status": "missing",
@@ -23248,6 +23586,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-13-die-architektur-der-europaischen-nac/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-13-die-architektur-der-europaischen-nac/index.html"
       ],
       "status": "missing",
@@ -23268,6 +23607,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-17-das-grote-missverstandnis-bei-nachha/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-17-das-grote-missverstandnis-bei-nachha/index.html"
       ],
       "status": "missing",
@@ -23288,6 +23628,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-19-25-der-bevolkerung-gegen-unsere-wirt/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-19-25-der-bevolkerung-gegen-unsere-wirt/index.html"
       ],
       "status": "missing",
@@ -23308,6 +23649,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-20-integritat-als-blinder-fleck-der-tra/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-20-integritat-als-blinder-fleck-der-tra/index.html"
       ],
       "status": "missing",
@@ -23328,6 +23670,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-21-das-integritats-paradoxon-warum-fakt/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-21-das-integritats-paradoxon-warum-fakt/index.html"
       ],
       "status": "missing",
@@ -23348,6 +23691,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-21-das-integritats-paradoxon-warum-wir/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-21-das-integritats-paradoxon-warum-wir/index.html"
       ],
       "status": "missing",
@@ -23368,6 +23712,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-21-reporting-burnout-oder-resilienz-cha/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-21-reporting-burnout-oder-resilienz-cha/index.html"
       ],
       "status": "missing",
@@ -23388,6 +23733,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-23-warum-das-neue-gebaudeenergiegesetz/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-23-warum-das-neue-gebaudeenergiegesetz/index.html"
       ],
       "status": "missing",
@@ -23408,6 +23754,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-23-warum-wir-den-klimawandel-systematis/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-23-warum-wir-den-klimawandel-systematis/index.html"
       ],
       "status": "missing",
@@ -23428,6 +23775,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-24-warum-politik-immer-zu-spat-handelt/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-24-warum-politik-immer-zu-spat-handelt/index.html"
       ],
       "status": "missing",
@@ -23448,6 +23796,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-25-das-ende-der-symbolpolitik-warum-der/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-25-das-ende-der-symbolpolitik-warum-der/index.html"
       ],
       "status": "missing",
@@ -23468,6 +23817,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-25-warum-wir-schneller-grun-werden-als/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-03-25-warum-wir-schneller-grun-werden-als/index.html"
       ],
       "status": "missing",
@@ -23488,6 +23838,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-04-02-ai-first-ist-eine-sackgasse-nicht-we/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-04-02-ai-first-ist-eine-sackgasse-nicht-we/index.html"
       ],
       "status": "missing",
@@ -23508,6 +23859,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-04-14-warum-spates-handeln-immer-teurer-wi/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-04-14-warum-spates-handeln-immer-teurer-wi/index.html"
       ],
       "status": "missing",
@@ -23528,6 +23880,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-04-15-wenn-politik-unternehmen-nach-argume/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-04-15-wenn-politik-unternehmen-nach-argume/index.html"
       ],
       "status": "missing",
@@ -23548,6 +23901,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-04-19-die-afd-im-wirkungscheck-warum-diese/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-04-19-die-afd-im-wirkungscheck-warum-diese/index.html"
       ],
       "status": "missing",
@@ -23568,6 +23922,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-04-22-warum-selbst-die-common-good-economy/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-linkedin-2026-04-22-warum-selbst-die-common-good-economy/index.html"
       ],
       "status": "missing",
@@ -23588,6 +23943,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/journal-blog-nicht-billiger-werden-besser-werden-index-html/index.html",
         "bibliothek/eintraege/journal-blog-nicht-billiger-werden-besser-werden-index-html/index.html"
       ],
       "status": "missing",
@@ -23608,6 +23964,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-nicht-die-vorschrift-macht-es-teuer-kostenwahrheit-eu-re/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-nicht-die-vorschrift-macht-es-teuer-kostenwahrheit-eu-re/index.html"
       ],
       "status": "missing",
@@ -23628,6 +23985,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-nicht-schulden-belasten-die-zukunft-schulden-ohne-wirkun/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-nicht-schulden-belasten-die-zukunft-schulden-ohne-wirkun/index.html"
       ],
       "status": "missing",
@@ -23648,6 +24006,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-oeffentlicher-wirkungsraum-debatten-resonanz-resilienz-p/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-oeffentlicher-wirkungsraum-debatten-resonanz-resilienz-p/index.html"
       ],
       "status": "missing",
@@ -23668,6 +24027,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-partei-der-verwundbarkeit-afd-programm-index-pdf/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-partei-der-verwundbarkeit-afd-programm-index-pdf/index.html"
       ],
       "status": "missing",
@@ -23688,6 +24048,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-schadenoekonomie-pdf/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-schadenoekonomie-pdf/index.html"
       ],
       "status": "missing",
@@ -23708,6 +24069,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-schoepferisch-zerstoert-konservative-politik-systemresil/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-schoepferisch-zerstoert-konservative-politik-systemresil/index.html"
       ],
       "status": "missing",
@@ -23728,6 +24090,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-social-media-verbot-kinder-falscher-ansatz-pdf/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-social-media-verbot-kinder-falscher-ansatz-pdf/index.html"
       ],
       "status": "missing",
@@ -23748,6 +24111,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-social-taxonomy-soziale-wirkung-nachhaltige-maerkte-pdf/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-social-taxonomy-soziale-wirkung-nachhaltige-maerkte-pdf/index.html"
       ],
       "status": "missing",
@@ -23768,6 +24132,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/journal-blog-soziale-resilienz-gegen-verhetzung-html/index.html",
         "bibliothek/eintraege/journal-blog-soziale-resilienz-gegen-verhetzung-html/index.html"
       ],
       "status": "missing",
@@ -23788,6 +24153,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-spaltung-ueberwinden-demokratie-wirkungsraeume-pdf/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-spaltung-ueberwinden-demokratie-wirkungsraeume-pdf/index.html"
       ],
       "status": "missing",
@@ -23808,6 +24174,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-sprache-als-politischer-wirkstoff-rechte-narrative-pdf/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-sprache-als-politischer-wirkstoff-rechte-narrative-pdf/index.html"
       ],
       "status": "missing",
@@ -23828,6 +24195,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-stranded-assets-gebaeudebestand-pdf/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-stranded-assets-gebaeudebestand-pdf/index.html"
       ],
       "status": "missing",
@@ -23848,6 +24216,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-stranded-germany-afd-politik-refinanzierungsresilienz-pd/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-stranded-germany-afd-politik-refinanzierungsresilienz-pd/index.html"
       ],
       "status": "missing",
@@ -23868,6 +24237,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-strom-vom-nachbarn-energy-sharing-wirkungsoekonomie-pdf/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-strom-vom-nachbarn-energy-sharing-wirkungsoekonomie-pdf/index.html"
       ],
       "status": "missing",
@@ -23888,6 +24258,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-systemresilienz-statt-nachhaltigkeit-index-pdf/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-systemresilienz-statt-nachhaltigkeit-index-pdf/index.html"
       ],
       "status": "missing",
@@ -23908,6 +24279,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-technologieoffenheit-wirkungsoffenheit-geg-verbrenner-pd/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-technologieoffenheit-wirkungsoffenheit-geg-verbrenner-pd/index.html"
       ],
       "status": "missing",
@@ -23928,6 +24300,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-vom-gemeinwohl-kompass-zur-wirkungsoekonomie-pdf/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-vom-gemeinwohl-kompass-zur-wirkungsoekonomie-pdf/index.html"
       ],
       "status": "missing",
@@ -23948,6 +24321,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/online-version-dokumente-von-der-wissensgesellschaft-zur-wirkungsgesellschaft-index-html/index.html",
         "bibliothek/eintraege/online-version-dokumente-von-der-wissensgesellschaft-zur-wirkungsgesellschaft-index-html/index.html"
       ],
       "status": "missing",
@@ -23968,6 +24342,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/journal-blog-warum-billig-oft-teuer-ist-html/index.html",
         "bibliothek/eintraege/journal-blog-warum-billig-oft-teuer-ist-html/index.html"
       ],
       "status": "missing",
@@ -23988,6 +24363,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-warum-ich-das-wirkungsinstitut-gegruendet-habe-pdf/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-warum-ich-das-wirkungsinstitut-gegruendet-habe-pdf/index.html"
       ],
       "status": "missing",
@@ -24008,6 +24384,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-warum-unser-wirtschaftsmodell-an-seine-logischen-grenzen/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-warum-unser-wirtschaftsmodell-an-seine-logischen-grenzen/index.html"
       ],
       "status": "missing",
@@ -24028,6 +24405,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-was-der-staat-wirklich-produziert-steuern-wirkungsoekono/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-was-der-staat-wirklich-produziert-steuern-wirkungsoekono/index.html"
       ],
       "status": "missing",
@@ -24048,7 +24426,8 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
-        "bibliothek/eintraege/journal-blog-was-ist-nachhaltigkeit-wirklich-html/index.html"
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-was-ist-nachhaltigkeit-wirklich-pdf/index.html",
+        "bibliothek/eintraege/download-or-document-assets-pdf-journal-was-ist-nachhaltigkeit-wirklich-pdf/index.html"
       ],
       "status": "missing",
       "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
@@ -24068,6 +24447,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-wellen-tiefen-modell-oeffentliche-kommunikation-pdf/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-wellen-tiefen-modell-oeffentliche-kommunikation-pdf/index.html"
       ],
       "status": "missing",
@@ -24088,6 +24468,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-wenn-alle-von-wirkung-sprechen-foerderpolitik-wirkungsma/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-wenn-alle-von-wirkung-sprechen-foerderpolitik-wirkungsma/index.html"
       ],
       "status": "missing",
@@ -24108,6 +24489,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-wir-messen-das-falsche-pdf/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-wir-messen-das-falsche-pdf/index.html"
       ],
       "status": "missing",
@@ -24128,6 +24510,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-wirkstoff-narrative-rechte-frames-wirkungspotenzial-pdf/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-wirkstoff-narrative-rechte-frames-wirkungspotenzial-pdf/index.html"
       ],
       "status": "missing",
@@ -24148,6 +24531,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-wirkung-schlaegt-wahrheit-pdf/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-wirkung-schlaegt-wahrheit-pdf/index.html"
       ],
       "status": "missing",
@@ -24168,6 +24552,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-wirkung-statt-weltbild-afd-regierungsprogramm-pdf/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-wirkung-statt-weltbild-afd-regierungsprogramm-pdf/index.html"
       ],
       "status": "missing",
@@ -24188,6 +24573,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-wirkungsoekonomie-kein-parteiprogramm-pdf/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-wirkungsoekonomie-kein-parteiprogramm-pdf/index.html"
       ],
       "status": "missing",
@@ -24208,6 +24594,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-wirkungsoekonomie-lernendes-kreislaufsystem-pdf/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-wirkungsoekonomie-lernendes-kreislaufsystem-pdf/index.html"
       ],
       "status": "missing",
@@ -24228,6 +24615,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/journal-blog-wirkungspotenzial-warum-fakten-allein-nicht-wirken-html/index.html",
         "bibliothek/eintraege/journal-blog-wirkungspotenzial-warum-fakten-allein-nicht-wirken-html/index.html"
       ],
       "status": "missing",
@@ -24248,6 +24636,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/online-version-werkstatt-arbeitsbibliothek-wirkungsfelder-bildung-wirkungsschule-wirkungspaedago/index.html",
         "bibliothek/eintraege/online-version-werkstatt-arbeitsbibliothek-wirkungsfelder-bildung-wirkungsschule-wirkungspaedago/index.html"
       ],
       "status": "missing",
@@ -24268,6 +24657,7 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
+        "_site/bibliothek/eintraege/download-or-document-assets-pdf-journal-wirkungswissenschaften-wirkungsforschung-wirkungsoekonom/index.html",
         "bibliothek/eintraege/download-or-document-assets-pdf-journal-wirkungswissenschaften-wirkungsforschung-wirkungsoekonom/index.html"
       ],
       "status": "missing",
@@ -24621,7 +25011,8 @@
         "bibliothek/eintraege/online-version-dokumente-wenn-maschinen-arbeiten-index-html/lesen/12-7-internationale-ordnung-und-globale-wirkung/index.html",
         "bibliothek/eintraege/online-version-dokumente-wenn-maschinen-arbeiten-index-html/lesen/13-8-ubergang-implementierung-und-pfadabhangigkeit/index.html",
         "bibliothek/eintraege/online-version-dokumente-wenn-maschinen-arbeiten-index-html/lesen/14-9-systemische-immunitat-lernen-als-selbstheilung/index.html",
-        "bibliothek/eintraege/online-version-dokumente-wenn-maschinen-arbeiten-index-html/lesen/index.html"
+        "bibliothek/eintraege/online-version-dokumente-wenn-maschinen-arbeiten-index-html/lesen/index.html",
+        "dokumente/wenn-maschinen-arbeiten/index.html"
       ],
       "status": "missing",
       "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
@@ -24882,17 +25273,8 @@
       "librarySection": "",
       "downloadAllowed": true,
       "referencedBy": [
-        "bibliothek/eintraege/download-or-document-assets-pdf-working-paper-produktbesteuerung-durch-wirkung-pdf/index.html",
-        "bibliothek/eintraege/download-or-document-assets-pdf-working-paper-produktbesteuerung-durch-wirkung-pdf/lesen/00-teil-i-grundlagen/index.html",
-        "bibliothek/eintraege/download-or-document-assets-pdf-working-paper-produktbesteuerung-durch-wirkung-pdf/lesen/01-wirkungsokonomie/index.html",
-        "bibliothek/eintraege/download-or-document-assets-pdf-working-paper-produktbesteuerung-durch-wirkung-pdf/lesen/02-teil-ii-fallstudien/index.html",
-        "bibliothek/eintraege/download-or-document-assets-pdf-working-paper-produktbesteuerung-durch-wirkung-pdf/lesen/03-fallstudien/index.html",
-        "bibliothek/eintraege/download-or-document-assets-pdf-working-paper-produktbesteuerung-durch-wirkung-pdf/lesen/04-teil-ii-fazit-systemische-schlussfolgerung-aus-den/index.html",
-        "bibliothek/eintraege/download-or-document-assets-pdf-working-paper-produktbesteuerung-durch-wirkung-pdf/lesen/05-teil-iii-systemische-wirkung-steuerarchitektur/index.html",
-        "bibliothek/eintraege/download-or-document-assets-pdf-working-paper-produktbesteuerung-durch-wirkung-pdf/lesen/06-teil-iv-die-wirkungsgesellschaft-der/index.html",
-        "bibliothek/eintraege/download-or-document-assets-pdf-working-paper-produktbesteuerung-durch-wirkung-pdf/lesen/07-zukunftsausblick/index.html",
-        "bibliothek/eintraege/download-or-document-assets-pdf-working-paper-produktbesteuerung-durch-wirkung-pdf/lesen/08-teil-v-schlussfolgerung-manifest-der/index.html",
-        "bibliothek/eintraege/download-or-document-assets-pdf-working-paper-produktbesteuerung-durch-wirkung-pdf/lesen/index.html",
+        "bibliothek/eintraege/online-version-dokumente-wp-produkte-index-html/index.html",
+        "dokumente/wp-produkte/index.html",
         "werkstatt/dossiers/produkte-konsum/index.html",
         "werkstatt/whitepaper/produktbesteuerung-durch-wirkung/index.html",
         "wirkungsfelder/produkte-konsum/dossier/index.html",
@@ -25288,11 +25670,31 @@
       "priority": "P0"
     },
     {
-      "id": "nachhaltigkeit-als-systemresilienz-definition-und-klimamodell",
+      "id": "nachhaltigkeit-als-systemresilienz-definition-und-klimamodell-v1-0",
       "sourcePath": "public/downloads/originals/Nachhaltigkeit_als_Systemresilienz_Definition_und_Klimamodell_v1.0.pdf",
       "englishTargetPath": "public/downloads/en/originals/Nachhaltigkeit_als_Systemresilienz_Definition_und_Klimamodell_v1.0.en.pdf",
       "sourceUrl": "/public/downloads/originals/Nachhaltigkeit_als_Systemresilienz_Definition_und_Klimamodell_v1.0.pdf",
       "englishUrl": "/public/downloads/en/originals/Nachhaltigkeit_als_Systemresilienz_Definition_und_Klimamodell_v1.0.en.pdf",
+      "fileType": "pdf",
+      "kind": "public-original",
+      "titleDe": "Nachhaltigkeit als Systemresilienz v1.0",
+      "titleEn": "",
+      "libraryVisibility": "archive",
+      "librarySection": "Archiv",
+      "downloadAllowed": true,
+      "referencedBy": [
+        "bibliothek/eintraege/download-or-document-public-downloads-originals-nachhaltigkeit-als-systemresilienz-definition-un/index.html"
+      ],
+      "status": "missing",
+      "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
+      "priority": "P1"
+    },
+    {
+      "id": "nachhaltigkeit-als-systemresilienz-definition-und-klimamodell",
+      "sourcePath": "public/downloads/originals/Nachhaltigkeit_als_Systemresilienz_Definition_und_Klimamodell_v1.1.pdf",
+      "englishTargetPath": "public/downloads/en/originals/Nachhaltigkeit_als_Systemresilienz_Definition_und_Klimamodell_v1.1.en.pdf",
+      "sourceUrl": "/public/downloads/originals/Nachhaltigkeit_als_Systemresilienz_Definition_und_Klimamodell_v1.1.pdf",
+      "englishUrl": "/public/downloads/en/originals/Nachhaltigkeit_als_Systemresilienz_Definition_und_Klimamodell_v1.1.en.pdf",
       "fileType": "pdf",
       "kind": "public-original",
       "titleDe": "Nachhaltigkeit als Systemresilienz",
@@ -25578,15 +25980,13 @@
       "kind": "public-original",
       "titleDe": "Wenn Maschinen arbeiten",
       "titleEn": "",
-      "libraryVisibility": "public",
-      "librarySection": "Wirkungsfelder",
+      "libraryVisibility": "archive",
+      "librarySection": "Archiv",
       "downloadAllowed": true,
-      "referencedBy": [
-        "bibliothek/wenn-maschinen-arbeiten/index.html"
-      ],
+      "referencedBy": [],
       "status": "missing",
       "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
-      "priority": "P0"
+      "priority": "P2"
     },
     {
       "id": "whitepaper-t-sroi",
@@ -25598,16 +25998,16 @@
       "kind": "public-original",
       "titleDe": "Whitepaper T-SROI",
       "titleEn": "",
-      "libraryVisibility": "expert_public",
+      "libraryVisibility": "archive",
       "librarySection": "Methoden & Werkzeuge",
       "downloadAllowed": true,
       "referencedBy": [
-        "bibliothek/eintraege/online-version-dokumente-whitepaper-t-sroi-index-html/index.html",
-        "bibliothek/whitepaper-t-sroi/index.html"
+        "bibliothek/eintraege/download-or-document-public-downloads-originals-whitepaper-t-sroi-pdf/index.html",
+        "dokumente/whitepaper-t-sroi/index.html"
       ],
       "status": "missing",
       "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
-      "priority": "P0"
+      "priority": "P1"
     },
     {
       "id": "public-downloads-originals-wirkungsfinanzpolitik-aufsatz-woek-v2-mmt-public-purpose-pdf",
@@ -25960,7 +26360,6 @@
         "bibliothek/eintraege/leading-reference-bibliothek-woek-begriffsleitfaden-fuehrend-index-html/lesen/04-2-die-wichtigste-kurzformel/index.html",
         "bibliothek/eintraege/leading-reference-bibliothek-woek-begriffsleitfaden-fuehrend-index-html/lesen/05-medien/index.html",
         "bibliothek/eintraege/leading-reference-bibliothek-woek-begriffsleitfaden-fuehrend-index-html/lesen/06-social-media/index.html",
-        "bibliothek/eintraege/leading-reference-bibliothek-woek-begriffsleitfaden-fuehrend-index-html/lesen/07-und-codex/index.html",
         "bibliothek/eintraege/leading-reference-bibliothek-woek-begriffsleitfaden-fuehrend-index-html/lesen/08-3-der-bewertungsrahmen-sdgs-agenda-2030/index.html",
         "bibliothek/eintraege/leading-reference-bibliothek-woek-begriffsleitfaden-fuehrend-index-html/lesen/09-4-grundregeln-fur-kunftigen-content/index.html",
         "bibliothek/eintraege/leading-reference-bibliothek-woek-begriffsleitfaden-fuehrend-index-html/lesen/10-daten/index.html",
@@ -26037,7 +26436,8 @@
       "downloadAllowed": true,
       "referencedBy": [
         "bibliothek/eintraege/leading-reference-bibliothek-woek-begriffsleitfaden-fuehrend-index-html/index.html",
-        "bibliothek/woek-begriffsleitfaden-fuehrend/index.html"
+        "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
+        "quellenarchiv/wok-g-1125028e8701/index.html"
       ],
       "status": "missing",
       "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
@@ -26144,16 +26544,13 @@
       "kind": "public-original",
       "titleDe": "Produktbesteuerung durch Wirkung",
       "titleEn": "",
-      "libraryVisibility": "public",
-      "librarySection": "Wirkungssteuerung",
+      "libraryVisibility": "archive",
+      "librarySection": "Archiv",
       "downloadAllowed": true,
-      "referencedBy": [
-        "bibliothek/eintraege/online-version-dokumente-wp-produkte-index-html/index.html",
-        "bibliothek/wp-produkte/index.html"
-      ],
+      "referencedBy": [],
       "status": "missing",
       "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
-      "priority": "P0"
+      "priority": "P2"
     },
     {
       "id": "wp-rente",
@@ -26165,22 +26562,16 @@
       "kind": "public-original",
       "titleDe": "Working-Paper Rente",
       "titleEn": "",
-      "libraryVisibility": "public",
-      "librarySection": "Wirkungsfelder",
+      "libraryVisibility": "archive",
+      "librarySection": "Archiv",
       "downloadAllowed": true,
       "referencedBy": [
-        "bibliothek/eintraege/download-or-document-public-downloads-originals-wp-rente-pdf/index.html",
-        "bibliothek/eintraege/download-or-document-public-downloads-originals-wp-rente-pdf/lesen/00-kapitel-5-wirkungsmechanik-im-lebensverlauf/index.html",
-        "bibliothek/eintraege/download-or-document-public-downloads-originals-wp-rente-pdf/lesen/01-kapitel-5-zeigt-wie-sich-das-system-uber-ein-ganzes-leben-hi/index.html",
-        "bibliothek/eintraege/download-or-document-public-downloads-originals-wp-rente-pdf/lesen/02-kapitel-6-beispielrechnungen-und-systemsimulationen/index.html",
-        "bibliothek/eintraege/download-or-document-public-downloads-originals-wp-rente-pdf/lesen/03-kapitel-6-hat-gezeigt-dass-die-wirkungsrente-funktioniert-ma/index.html",
-        "bibliothek/eintraege/download-or-document-public-downloads-originals-wp-rente-pdf/lesen/04-kapitel-7-wie-die-wirkungsrente-das-rentenproblem-lost/index.html",
-        "bibliothek/eintraege/download-or-document-public-downloads-originals-wp-rente-pdf/lesen/index.html",
-        "bibliothek/wp-rente/index.html"
+        "bibliothek/eintraege/online-version-dokumente-wp-rente-index-html/index.html",
+        "dokumente/wp-rente/index.html"
       ],
       "status": "missing",
       "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
-      "priority": "P0"
+      "priority": "P1"
     },
     {
       "id": "wp-wohnungsmarkt",
@@ -26192,16 +26583,15 @@
       "kind": "public-original",
       "titleDe": "Working-Paper Wohnungsmarkt",
       "titleEn": "",
-      "libraryVisibility": "public",
+      "libraryVisibility": "archive",
       "librarySection": "Wirkungsfelder",
       "downloadAllowed": true,
       "referencedBy": [
-        "bibliothek/eintraege/online-version-dokumente-wp-wohnungsmarkt-index-html/index.html",
-        "bibliothek/wp-wohnungsmarkt/index.html"
+        "bibliothek/eintraege/download-or-document-public-downloads-originals-wp-wohnungsmarkt-pdf/index.html"
       ],
       "status": "missing",
       "contentRule": "Translate all selectable document text; keep raster images and image-internal German text unchanged for now.",
-      "priority": "P0"
+      "priority": "P1"
     },
     {
       "id": "wstg-oktober-2025",

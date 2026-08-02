@@ -348,7 +348,7 @@ Macht operative Netto-Wirkung vergleichbar und steuerbar.
 
 T-SROI
 
-Bewertet Transformationswirkung, systemische Hebelwirkung, Zeitwirkung, Resilienz und Multiplikation.
+Setzt nur separat belegte direkte und transformative Nettonutzenströme ins Verhältnis zu den eingesetzten Ressourcen. Systemhebel, Zeit, Resilienz und Diffusion werden dabei als Wirkpfad, Zeitraum oder Sensitivität belegt - nicht als frei wählbare Multiplikatoren.
 
 Wirkungssteuer
 
