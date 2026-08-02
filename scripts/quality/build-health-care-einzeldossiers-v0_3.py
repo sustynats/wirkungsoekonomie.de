@@ -17,9 +17,9 @@ from reportlab.lib import colors
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 from reportlab.lib.units import mm
-from reportlab.pdfbase import pdfmetrics
-from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.platypus import BaseDocTemplate, Frame, PageBreak, PageTemplate, Paragraph, Spacer, Table, TableStyle
+
+from pdf_font_support import register_woek_fonts
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -49,20 +49,6 @@ MODULE_TITLES = {
     "Governance, Wirkungsrat und politische Anschlussfähigkeit",
     "Quellen und Anschlussdokumente",
 }
-
-
-def font_path(name: str) -> Path:
-    for base in (Path("/System/Library/Fonts/Supplemental"), Path("/Library/Fonts")):
-        candidate = base / name
-        if candidate.exists():
-            return candidate
-    raise FileNotFoundError(f"PDF-Schrift nicht gefunden: {name}")
-
-
-def register_fonts() -> None:
-    pdfmetrics.registerFont(TTFont("WoeKText", str(font_path("Arial Unicode.ttf"))))
-    pdfmetrics.registerFont(TTFont("WoeKBold", str(font_path("Arial Bold.ttf"))))
-    pdfmetrics.registerFont(TTFont("WoeKMono", str(font_path("Andale Mono.ttf"))))
 
 
 def esc(value: str) -> str:
@@ -191,7 +177,7 @@ def two_balance_example(sty: dict[str, ParagraphStyle]) -> list[object]:
 
 
 def build() -> None:
-    register_fonts()
+    register_woek_fonts()
     sty = styles()
     lines = SOURCE.read_text(encoding="utf-8").splitlines()
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
