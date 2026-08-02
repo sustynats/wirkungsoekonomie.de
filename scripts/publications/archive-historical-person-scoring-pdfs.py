@@ -324,7 +324,7 @@ def main() -> None:
     parser.add_argument("--check", action="store_true", help="Nur prüfen, nichts schreiben.")
     args = parser.parse_args()
 
-    if args.check:
+    if args.check or os.environ.get("WOEK_PDF_BUILD_MODE") == "verify":
         errors = [error for publication in PUBLICATIONS for error in check_publication(publication)]
         if errors:
             raise SystemExit("Historical PDF check failed:\n- " + "\n- ".join(errors))
