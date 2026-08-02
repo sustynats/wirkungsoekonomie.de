@@ -30,7 +30,10 @@ jobs:
           python-version: "3.12"
 
       - name: Install Python build dependencies
-        run: python -m pip install --upgrade pip openpyxl
+        run: python -m pip install --upgrade pip openpyxl pymupdf pypdf
+
+      - name: Build complete site before artifact checks
+        run: npm run build
 
       - name: Build search index
         run: npm run build:search
