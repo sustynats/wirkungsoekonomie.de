@@ -282485,17 +282485,29 @@
       "canonicalLabel": "Scorecard",
       "slug": "scorecard",
       "aliases": [
-        "Scorecard"
+        "Scorecard",
+        "Scorecards",
+        "Wirkungsscorecard",
+        "Wirkungs-Scorecard",
+        "Wirkungsscorecards",
+        "Wirkungs-Scorecards",
+        "Impact Scorecard"
       ],
       "synonyms": [
-        "Scorecard"
+        "Scorecard",
+        "Scorecards",
+        "Wirkungsscorecard",
+        "Wirkungs-Scorecard",
+        "Wirkungsscorecards",
+        "Wirkungs-Scorecards",
+        "Impact Scorecard"
       ],
-      "shortDefinition": "Eine Scorecard strukturiert Wirkungsfelder, Indikatoren, Datenqualität und Bewertung.",
-      "definition": "Scorecards verbinden WÖk-IDs, Benchmarks, Datenqualität, Wirkungsgrenzen und Bewertungslogik.",
-      "longDefinition": "Scorecards verbinden WÖk-IDs, Benchmarks, Datenqualität, Wirkungsgrenzen und Bewertungslogik.",
-      "woekRelation": "Nicht als bloße Checkliste ohne Bewertungslogik verwenden.",
-      "statusNote": "Nicht als automatische Wahrheit darstellen.",
-      "usageNote": "Nicht als bloße Checkliste ohne Bewertungslogik verwenden.",
+      "shortDefinition": "Eine Scorecard oder Wirkungsscorecard ist ein transparentes Bewertungsraster, das relevante Wirkungsfelder, Indikatoren, Datenquellen, Datenqualität, Grenzen und Einzelergebnisse so verbindet, dass Entscheidungen prüfbar werden.",
+      "definition": "Scorecards strukturieren die Bewertung eines Gegenstands – etwa eines Produkts, einer Organisation, Investition, Maßnahme oder eines öffentlichen Programms. Sie legen offen, was betrachtet wird, welche Systemgrenze und welcher Zeitraum gelten, welche Indikatoren und Vergleichsmaßstäbe verwendet werden, wie Datenqualität und Unsicherheit einfließen und welche Schutzgrenzen eine Gesamtbewertung begrenzen. Eine Wirkungsscorecard bewertet Eigenschaften, Entscheidungen oder Systeme; sie bewertet keine Menschen.",
+      "longDefinition": "Eine Scorecard bündelt mehrere Wirkungsinformationen in einer nachvollziehbaren Bewertungsarchitektur. Sie übersetzt weder komplexe Wirklichkeit in eine bloße Zahl noch ersetzt sie die fachliche und demokratische Abwägung. Eine belastbare Scorecard zeigt deshalb die einzelnen Wirkungsfelder, Indikatoren, Datenquellen, Annahmen, Zeit- und Systemgrenzen, Datenlücken, Prüfstatus und Version offen. In der Wirkungsökonomie wird eine Wirkungsscorecard an Mensch, Planet und Demokratie ausgerichtet. Sie kann Orientierung und Steuerung ermöglichen, aber schwere negative Wirkungen, rote Linien oder fehlende Evidenz nicht durch gute Werte in anderen Feldern verdecken.",
+      "woekRelation": "Wirkungsscorecards machen Wirkungsbewertung für Entscheidungen nutzbar: in Beschaffung, Produktgestaltung, Kapital, Förderung, Management, Kommunikation und öffentlichen Programmen. Sie verbinden Wirkung, Wirkungspotenzial und Wirkungsrisiko mit Datenqualität, Wirkungsgrenzen, Nichtkompensation und Rückkopplung. Eine Scorecard ist dabei ein Instrument, keine moralische Rangliste und kein automatischer Entscheidungsautomat.",
+      "statusNote": "Kerninstrument der Wirkungsbewertung: transparent, versioniert und überprüfbar; keine Personenbewertung, kein Social Credit und kein Ersatz für Rechtsschutz oder demokratische Entscheidung.",
+      "usageNote": "Scorecards nur für klar abgegrenzte und vergleichbare Gegenstände einsetzen. Immer sichtbar machen: Bewertungsobjekt, Systemgrenze, Zeitraum, Indikatoren, Datenquellen, Unsicherheit, rote Linien, Prüfstatus, Version und Korrekturweg. Ein FinalScore darf Einzelscores und kritische Schwachstellen nicht verdecken.",
       "categories": [
         "daten-standards-regularien",
         "woek-uebersetzung"
@@ -282505,14 +282517,29 @@
       "dataStandardsGroup": "WÖk-Übersetzung",
       "dataStandardsOrder": 99,
       "relatedTerms": [
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkungsbewertung",
         "woek-id",
+        "wirkungsindikator",
+        "wirkungsdaten",
+        "datenqualitaet",
+        "datenluecke",
+        "systemgrenze",
         "benchmark",
         "finalscore",
+        "produktscorecard",
+        "produktwirkung",
         "wirkungscontrolling",
-        "wirkungsindikator",
         "reverse-merit-order",
+        "nichtkompensationsprinzip",
+        "wirkungsgrenze",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsrueckkopplung",
+        "positive-netto-wirkung",
         "archetyp",
-        "datenluecke",
         "digitaler-produktpass",
         "nace",
         "oef-organisation-environmental-footprint",
@@ -282545,32 +282572,45 @@
         "impact-strategie"
       ],
       "officialSources": [
-        "WÖk Scorecards|https://wirkungsoekonomie.de/werkzeuge/scorecards/"
+        "WÖMS 2.0 und WÖMM 2.0|/quellenarchiv/wok-g-e0fb1cbb43a2/",
+        "OECD DAC Criteria: Impact|https://www.oecd.org/dac/evaluation/daccriteriaforevaluatingdevelopmentassistance.htm"
       ],
       "pageUrl": "/begriffe/scorecard/",
       "priority": 100,
       "status": "führender-begriff",
-      "version": "1.0",
+      "version": "1.1",
       "category": "Messbegriff",
       "source": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceDocument": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
       "sourceSection": "Daten, Standards und Regularien · WÖk-Übersetzung",
-      "hoverDefinition": "Eine Scorecard macht Wirkungsbewertung nachvollziehbar, vergleichbar und prüfbar.",
+      "hoverDefinition": "Eine Wirkungsscorecard macht sichtbar, was nach welchen Indikatoren, Daten und Grenzen bewertet wird – damit Wirkungsentscheidungen nachvollziehbar, vergleichbar und prüfbar bleiben.",
       "doNotConfuseWith": [
-        "Dashboard",
-        "Reporting"
+        "Dashboard: visualisiert Informationen; eine Scorecard enthält zusätzlich eine dokumentierte Bewertungslogik.",
+        "Reporting: berichtet Daten oder Maßnahmen; eine Scorecard ordnet sie anhand von Indikatoren, Referenzwerten und Grenzen ein.",
+        "Rating oder Label: verdichtet oder kommuniziert ein Ergebnis; es ersetzt nicht die offenliegende Scorecard mit Daten, Annahmen und Version.",
+        "Audit oder Assurance: prüft Vorgehen, Daten oder Aussagen; die Scorecard ist das Bewertungsraster, das geprüft werden kann.",
+        "FinalScore: ist gegebenenfalls eine abgeleitete Gesamtbewertung; die Scorecard macht die zugrunde liegenden Einzelbewertungen sichtbar.",
+        "Personenbewertung: Wirkungsscorecards beziehen sich auf Produkte, Organisationen, Maßnahmen, Regeln oder Systeme – nicht auf den Wert oder die Rechte einzelner Menschen."
       ],
       "relatedDocuments": [
         "wirkungscontrolling-detailkonzept-dossier-v1-0",
         "impact-strategie-controlling-marketing-management-einkauf-chemieindustrie"
       ],
-      "examples": [],
-      "preferredUsage": "Scorecard als methodisches Bewertungsinstrument.",
-      "deprecatedUsage": [],
+      "examples": [
+        "Eine Produktscorecard zeigt getrennt Klima-, Wasser-, Gesundheits-, Arbeits- und Kreislaufwirkungen sowie die zugrunde liegende Datenqualität.",
+        "Eine Beschaffungs-Scorecard vergleicht Angebote nicht nur nach Preis, sondern auch nach Lieferkettenrisiken, Lebenszyklus, Reparierbarkeit und sozialen Folgen.",
+        "Eine Programm-Scorecard dokumentiert, welche Zustände verbessert werden sollen, welche Daten das stützen und welche Nebenwirkungen oder Zielkonflikte beobachtet werden müssen."
+      ],
+      "preferredUsage": "Scorecard als transparentes Bewertungs- und Lerninstrument verwenden. Die Einzelwerte und ihre Grenzen bleiben lesbar; ein Gesamtwert darf nur nach dokumentierten Schutz- und Nichtkompensationsregeln abgeleitet werden.",
+      "deprecatedUsage": [
+        "Scorecard als automatisches Gütesiegel oder Wahrheitsmaschine darstellen",
+        "kritische negative Wirkungen durch positive Teilwerte verrechnen",
+        "Menschen, Gesinnungen oder Lebensstile mit einer Wirkungsscorecard bewerten"
+      ],
       "reviewStatus": "approved",
       "glossaryOrderKey": "scorecard",
       "firstApprovedIn": "2026.1",
-      "lastUpdated": "2026-05-27",
+      "lastUpdated": "2026-08-03",
       "related_terms": [
         "woek-id",
         "benchmark",
@@ -282615,7 +282655,7 @@
       "concept_status": "",
       "source_links": [],
       "internal_links": [],
-      "last_reviewed": "2026-05-29",
+      "last_reviewed": "2026-08-03",
       "type": "WÖk-Präzisierungsbegriff",
       "begriffstyp": "WÖk-Präzisierungsbegriff",
       "theme": [
@@ -282647,8 +282687,76 @@
       "mythos": "",
       "woekKlaerung": "",
       "woek_klaerung": "",
-      "blindSpot": "",
-      "blind_spot": ""
+      "blindSpot": "Eine Scorecard kann Vollständigkeit vortäuschen. Fehlende Daten, Machtasymmetrien, nicht messbare Folgen und umstrittene Bewertungsentscheidungen müssen deshalb sichtbar bleiben.",
+      "blind_spot": "Eine Scorecard kann Vollständigkeit vortäuschen. Fehlende Daten, Machtasymmetrien, nicht messbare Folgen und umstrittene Bewertungsentscheidungen müssen deshalb sichtbar bleiben.",
+      "sourceLinks": [
+        {
+          "title": "WÖMS 2.0 und WÖMM 2.0",
+          "url": "/quellenarchiv/wok-g-e0fb1cbb43a2/",
+          "sourceType": "Methodenreferenz",
+          "status": "WÖk-Primärquelle"
+        }
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Hauptdefinition",
+          "body": "Eine Scorecard oder Wirkungsscorecard ist ein offenes Bewertungsraster. Sie legt fest, welche Wirkungsfelder und Indikatoren für ein bestimmtes Objekt relevant sind, welche Daten dafür herangezogen werden und nach welcher Regel die Informationen eingeordnet werden. Damit wird nicht nur ein Ergebnis gezeigt, sondern der Weg dorthin: Systemgrenze, Zeitraum, Vergleichsmaßstab, Datenqualität, Annahmen, Schwellen, Einzelwerte und Prüfstatus."
+        },
+        {
+          "title": "Was eine belastbare Scorecard ausweist",
+          "items": [
+            "Bewertungsobjekt, Zweck und relevante Bezugsgruppen",
+            "Systemgrenze, räumlicher Geltungsbereich und Zeitraum",
+            "Wirkungsfelder, Indikatoren, Einheiten und Datenquellen",
+            "Vergleichsmaßstäbe, Benchmarks und dokumentierte Bewertungsregeln",
+            "Datenqualität, Unsicherheit, Datenlücken und Annahmen",
+            "Einzelscores, kritische Schwachstellen, rote Linien und Nichtkompensation",
+            "Prüfstatus, Gültigkeit, Version, Zuständigkeit und Korrekturweg"
+          ]
+        },
+        {
+          "title": "Warum nicht eine Zahl genügt",
+          "body": "Ein Gesamtwert kann Orientierung geben, darf aber die Struktur der Bewertung nicht verdecken. Unterschiedliche Wirkungsfelder sind nicht beliebig austauschbar. Deshalb zeigt eine Wirkungsscorecard die einzelnen Felder und ihre Datenbasis weiterhin an. Die Reverse Merit Order und das Nichtkompensationsprinzip verhindern, dass ein schwerer Schaden durch gute Werte in anderen Bereichen schön gerechnet wird."
+        },
+        {
+          "title": "Von der Bewertung zur Steuerung",
+          "body": "Scorecards können Entscheidungen vorbereiten: etwa in Produktgestaltung, Einkauf, Beschaffung, Kapitalallokation, Förderung oder Management. Sie ersetzen jedoch weder fachliche Prüfung noch demokratische Legitimation. Ihre Steuerungswirkung hängt davon ab, ob Kriterien, Daten, Zuständigkeiten und Korrekturmöglichkeiten transparent sind und ob die Entscheidung bei neuen Erkenntnissen angepasst wird."
+        },
+        {
+          "title": "Abgrenzung zu Dashboard, Reporting, Rating und Audit",
+          "body": "Ein Dashboard visualisiert Daten, ohne sie zwingend zu bewerten. Reporting berichtet Angaben oder Aktivitäten; eine Scorecard ordnet sie anhand festgelegter Kriterien ein. Ein Rating, Label oder FinalScore kann ein Ergebnis der Scorecard verdichten, ersetzt aber nicht ihre offengelegte Bewertungslogik. Audit und Assurance prüfen Daten oder Verfahren; die Scorecard ist das Instrument, dessen Logik und Anwendung geprüft werden können."
+        },
+        {
+          "title": "Grenzen und Schutz",
+          "body": "Eine Scorecard ist kein Urteil über Menschen, kein Social-Credit-System und keine automatische Entscheidungsmaschine. Sie kann Datenlücken, ungleiche Macht, langfristige oder schwer messbare Wirkungen nicht wegdefinieren. Deshalb müssen ihre Grenzen sichtbar bleiben: Ungewissheit, umstrittene Gewichtungen, mögliche Externalisierung und die Rechte der Betroffenen gehören in die Bewertung und in die nachfolgende Abwägung."
+        },
+        {
+          "title": "Typische Formen",
+          "body": "Produktscorecards beziehen sich auf Produkt- und Lebenszyklusdaten. Organisations- oder Lieferanten-Scorecards betrachten Steuerung, Wertschöpfung und Risiken. Projekt- und Programm-Scorecards verbinden Wirkpfad, Wirkungsindikatoren und Evaluation. Für alle Formen gilt: Die passende Systemgrenze und die konkreten Wirkungsfelder müssen vor der Bewertung festgelegt und begründet werden."
+        },
+        {
+          "title": "Wirkungsökonomische Einordnung",
+          "body": "Die Wirkungsökonomie nutzt Scorecards als Infrastruktur der Wirkungsbewertung. Positive Netto-Wirkung wird nicht aus einer beliebigen Durchschnittsnote abgeleitet, sondern unter Berücksichtigung von Wirkungsgrenzen, Datenqualität, Nebenfolgen und Rückkopplung. Der Referenzrahmen ist Mensch, Planet und Demokratie. Scorecards machen diese Logik prüfbar, statt sie in einer Kennzahl zu verstecken."
+        },
+        {
+          "title": "Anwendung und Quellenbasis",
+          "body": "Die Werkzeugseite zeigt die praktische Methodik; die Glossarseite erklärt den Begriff und seine Grenzen. Ergänzend liefern die OECD-DAC-Kriterien einen internationalen Evaluationsbezug für Wirkungsbewertung.",
+          "links": [
+            {
+              "label": "Scorecards unter Werkzeuge",
+              "href": "/werkzeuge/scorecards/"
+            },
+            {
+              "label": "WÖMS 2.0 und WÖMM 2.0 im Quellenarchiv",
+              "href": "/quellenarchiv/wok-g-e0fb1cbb43a2/"
+            },
+            {
+              "label": "OECD DAC Criteria: Impact",
+              "href": "/quellenarchiv/wok-q-0329/"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "sdg-plus",
@@ -355207,28 +355315,47 @@
       "aliases": [
         "Wirkpfad",
         "Wirkungspfad",
+        "Wirkpfade",
+        "Wirkungspfade",
         "Wirkmechanismus-Pfad"
       ],
       "synonyms": [
         "Wirkpfad",
         "Wirkungspfad",
+        "Wirkpfade",
+        "Wirkungspfade",
         "Wirkmechanismus-Pfad"
       ],
-      "shortDefinition": "Ein Wirkungspfad ordnet Auslöser, Aktivitäten und erbrachte Leistungen den erwarteten Veränderungen bei Wirkungsempfängern, möglichen Zustandsveränderungen und Rückkopplungen in einer prüfbaren Reihenfolge zu.",
-      "definition": "Ein Wirkungspfad ordnet Auslöser, Aktivitäten und erbrachte Leistungen den erwarteten Veränderungen bei Wirkungsempfängern, möglichen Zustandsveränderungen und Rückkopplungen in einer prüfbaren Reihenfolge zu.",
-      "longDefinition": "Ein Wirkungspfad ordnet Auslöser, Aktivitäten und erbrachte Leistungen den erwarteten Veränderungen bei Wirkungsempfängern, möglichen Zustandsveränderungen und Rückkopplungen in einer prüfbaren Reihenfolge zu.",
-      "woekRelation": "C01 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Erwartetes Arbeitsergebnis: ein prüfbarer Wirkungspfad mit Wirkungsempfängern, Annahmen, Kontextbedingungen, möglichen Nebenwirkungen und Evidenz.",
-      "usageNote": "C01 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Erwartetes Arbeitsergebnis: ein prüfbarer Wirkungspfad mit Wirkungsempfängern, Annahmen, Kontextbedingungen, möglichen Nebenwirkungen und Evidenz.",
-      "statusNote": "Methodenbegriff.",
+      "shortDefinition": "Wirkpfade oder Wirkungspfade beschreiben nachvollziehbare Hypothesen darüber, wie eine Handlung, Entscheidung, ein Produkt oder eine Kommunikation unter bestimmten Bedingungen Zustände verändert – einschließlich Wirkmechanismen, Betroffener, Nebenwirkungen und Rückkopplungen.",
+      "definition": "Ein Wirkpfad verbindet einen Auslöser mit den angenommenen Wirkmechanismen, Zwischenwirkungen und möglichen Zustandsveränderungen. Er benennt Wirkungsträger, Wirkungsempfänger, System- und Zeitgrenzen, Kontextbedingungen, Nebenwirkungen sowie Rückkopplungen. Damit macht er eine Kausalannahme prüfbar; er ist weder der Nachweis eingetretener Wirkung noch eine lineare Erfolgsgeschichte.",
+      "longDefinition": "Wirkpfade machen sichtbar, über welche Schritte eine Intervention zu Veränderungen führen könnte: von einer Entscheidung oder Aktivität über Ressourcen, Leistungen und Verhaltens- oder Strukturveränderungen bis zu direkten, indirekten und längerfristigen Wirkungen. Ein belastbarer Wirkpfad hält zugleich fest, für wen diese Veränderungen gelten, unter welchen Bedingungen sie eintreten, welche anderen Ursachen mitwirken, wo Schäden oder Kosten anfallen können und wie Beobachtungen die Annahmen verändern. Gerade in komplexen sozialen, ökologischen und demokratischen Systemen verlaufen Wirkpfade nicht nur vorwärts, sondern über Verzögerungen, Rückkopplungen, Wechselwirkungen und mögliche Externalisierung.",
+      "woekRelation": "In der Wirkungsökonomie ist ein Wirkpfad eine versionierte Arbeits- und Prüfhypothese zwischen Wirkungspotenzial, Wirkungsrisiko und tatsächlicher Wirkung. Er verbindet die Beobachtung von Zustandsveränderungen mit dem Referenzrahmen Mensch, Planet und Demokratie. Positive Netto-Wirkung kann erst verantwortbar beurteilt werden, wenn auch Nebenwirkungen, Verteilungsfolgen, Grenzen und Rückkopplungen im Wirkpfad sichtbar sind.",
+      "usageNote": "Wirkpfade als analytische, überprüfbare Annahmen formulieren: Was verändert sich wodurch, für wen, in welchem Zeitraum, unter welchen Bedingungen und mit welchen möglichen Nebenfolgen? Bei Sprache, Medien und Narrativen ist meist zunächst von Wirkungspotenzial und Wirkungsrisiko zu sprechen, nicht von sicher eingetretener Wirkung.",
+      "statusNote": "Methoden- und Kernbegriff: Ein Wirkpfad erklärt eine Annahme über Veränderung; er ersetzt weder Evidenz, Wirkungsnachweis noch demokratische Abwägung.",
       "category": "WÖMS Methodensystem",
       "sourceSection": "WÖMS 2.0 · Kernmethoden · Kategorie C",
       "relatedTerms": [
-        "wirkungspotenzial",
-        "wirkmechanismus",
         "wirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkmechanismus",
         "wirkungsbewertung",
+        "wirkungsdaten",
+        "wirkungszurechnung",
+        "wirkungsempfaenger",
+        "wirkungstraeger",
+        "wirkungsraum",
+        "wirkungskette",
+        "wirkungsoekonomische-theory-of-change",
+        "wirkungshypothesen-register",
+        "evidenz-und-annahmenregister",
         "folgencheck",
+        "folgewirkung",
+        "rueckkopplung",
         "resonanzraum",
+        "rebound-effekt",
+        "externalitaeten-und-kostenverlagerungskarte",
+        "positive-netto-wirkung",
         "wirkungsproblem-canvas",
         "problem-und-wirkungsbaum",
         "kausalschleifen-und-rueckkopplungsdiagramm",
@@ -355246,27 +355373,113 @@
       "pageUrl": "/begriffe/wirkpfad/",
       "classicGlossary": true,
       "autoLinkAllowed": true,
-      "updatedAt": "2026-06-06",
+      "updatedAt": "2026-08-03",
       "doNotConfuseWith": [
-        "Ergebnis nicht als endgültige Wahrheit, sondern als versionierte Entscheidungsgrundlage behandeln. Betroffene, negative Wirkungen und Machtasymmetrien dürfen nicht durch Workshopkonsens verschwinden."
+        "Wirkung: eine tatsächliche Zustandsveränderung; der Wirkpfad beschreibt zunächst die Annahme, wie sie zustande kommen könnte.",
+        "Wirkungspotenzial: die Möglichkeit einer Veränderung; ein Wirkpfad strukturiert, über welche Bedingungen sie eintreten oder ausbleiben kann.",
+        "Wirkungsrisiko: die Möglichkeit negativer Wirkung oder verfehlter positiver Wirkung; es gehört in den Wirkpfad, ist aber nicht mit ihm identisch.",
+        "Wirkungskette: eine häufig lineare Darstellungsform von Input bis Wirkung; Wirkpfade ergänzen sie um Kontext, Verzweigungen, Rückkopplungen und Unsicherheit.",
+        "Kausalnachweis: Ein Wirkpfad liefert eine prüfbare Hypothese. Kausale Zurechnung verlangt zusätzlich geeignete Evidenz, Vergleichsfälle und den Umgang mit anderen Einflussfaktoren.",
+        "Output oder Bericht: Erbrachte Leistungen und Dokumentationen sind Zwischenschritte oder Nachweise, nicht automatisch Wirkung."
       ],
-      "officialSources": [],
-      "hoverDefinition": "Ein Wirkungspfad ordnet Auslöser, Aktivitäten und erbrachte Leistungen den erwarteten Veränderungen bei Wirkungsempfängern, möglichen Zustandsveränderungen und Rückkopplungen in einer prüfbaren Reihenfolge zu.",
+      "officialSources": [
+        "OECD DAC Criteria: Impact|https://www.oecd.org/dac/evaluation/daccriteriaforevaluatingdevelopmentassistance.htm"
+      ],
+      "hoverDefinition": "Ein Wirkpfad beschreibt prüfbar, wie ein Auslöser über Mechanismen und Bedingungen zu möglichen Zustandsveränderungen, Nebenwirkungen und Rückkopplungen führt.",
       "sourceNotes": "Natalie Weber: Wirkungsökonomisches Methodensystem (WÖMS) 2.0, Methode C01, DOCX-Seite 63.",
       "type": "Methodenbegriff",
       "status": "approved",
-      "version": "2.0",
+      "version": "2.1",
       "source": "WÖMS 2.0 · Kernmethoden · Kategorie C",
       "reviewStatus": "redaktionell synchronisiert",
       "glossaryOrderKey": "Wirkungspfad",
-      "lastReviewed": "2026-07-10",
+      "lastReviewed": "2026-08-03",
       "sourceDocument": "WÖMS 2.0 und WÖMM 2.0",
       "importSource": "content/glossary/imports/woems-woemm-2.0.json",
       "importAction": "Neu anlegen oder fachlich synchronisieren | Priorität A",
       "priority": 10,
       "showInHub": true,
       "showHover": true,
-      "maxAutoLinksPerPage": 1
+      "maxAutoLinksPerPage": 1,
+      "examples": [
+        "Eine energetische Sanierung kann den Energieverbrauch senken. Ob daraus für Bewohner:innen auch geringere Belastungen, bessere Gesundheit und mehr Klimaschutz entstehen, hängt unter anderem von Nutzung, Mieten, Fördergestaltung, Bauqualität und möglichen Verdrängungseffekten ab.",
+        "Ein Medienbeitrag kann Aufmerksamkeit verändern. Ob daraus Wissen, Vertrauen, Polarisierung, Abwehr oder Handeln folgt, hängt von Framing, Publikum, Plattformlogik, Vorwissen und weiteren öffentlichen Rückkopplungen ab."
+      ],
+      "preferredUsage": "Bei Entscheidungen, Programmen, Produkten und Kommunikation zuerst den Wirkpfad offenlegen und dann Daten, Vergleichsmaßstab, Zuständigkeit und Rückkopplung ergänzen. Ein Wirkpfad bewertet keine Menschen und ist keine Social-Credit- oder Moralranglistenlogik.",
+      "deprecatedUsage": [
+        "Wirkpfad als Beweis einer behaupteten Wirkung verwenden",
+        "lineare Wirkung ohne Kontext, Nebenwirkungen oder Rückkopplung behaupten",
+        "Reichweite, Aktivität oder Output als Wirkungspfad ausgeben"
+      ],
+      "sourceLinks": [
+        {
+          "title": "WÖMS 2.0 und WÖMM 2.0",
+          "url": "/quellenarchiv/wok-g-e0fb1cbb43a2/",
+          "sourceType": "Methodenreferenz",
+          "status": "WÖk-Primärquelle"
+        }
+      ],
+      "deepGlossarySections": [
+        {
+          "title": "Hauptdefinition",
+          "body": "Ein Wirkpfad ist ein nachvollziehbares Modell einer Kausalannahme. Er beschreibt, wie ein Auslöser – etwa eine Regel, Investition, Produktentscheidung oder Kommunikation – über bestimmte Wirkmechanismen zu möglichen Veränderungen von Zuständen führen kann. Er beginnt nicht erst beim gewünschten Ergebnis und endet nicht beim Output: Er macht auch Bedingungen, Betroffene, Zwischenwirkungen, Nebenwirkungen, Verzögerungen und Rückkopplungen sichtbar."
+        },
+        {
+          "title": "Was ein Wirkpfad enthalten muss",
+          "items": [
+            "Auslöser oder Intervention: Welche Entscheidung, Handlung, Regel oder Struktur wird betrachtet?",
+            "Ausgangszustand und Vergleichsfall: Was wäre ohne die Intervention plausibel passiert?",
+            "Wirkmechanismen und Kontextbedingungen: Warum und unter welchen Voraussetzungen könnte sich etwas verändern?",
+            "Wirkungsträger und Wirkungsempfänger: Wer oder was trägt, vermittelt, erfährt oder erleidet die Veränderung?",
+            "Direkte, indirekte und zeitversetzte Wirkungen: Welche Zwischen- und Folgewirkungen sind plausibel?",
+            "Nebenwirkungen, Zielkonflikte und Externalisierung: Wo könnten Lasten räumlich, sozial oder zeitlich verlagert werden?",
+            "Evidenz, Indikatoren und Unsicherheit: Welche Daten stützen die Annahme, was bleibt offen?",
+            "Rückkopplung und Verantwortung: Wer überprüft den Pfad, lernt aus Abweichungen und passt die Entscheidung an?"
+          ]
+        },
+        {
+          "title": "Wirkung, Potenzial, Risiko und Nachweis unterscheiden",
+          "body": "Ein Wirkpfad ist noch keine eingetretene Wirkung. Er ordnet zunächst Wirkungspotenziale und Wirkungsrisiken. Erst Beobachtungen, geeignete Vergleichsfälle und belastbare Zurechnung können zeigen, ob die erwartete Veränderung tatsächlich eingetreten ist und welcher Anteil auf die Intervention zurückgeht. Deshalb müssen Hypothese, Evidenzgrad und Unsicherheit getrennt dokumentiert werden."
+        },
+        {
+          "title": "Systemgrenzen, Kausalität und Rückkopplungen",
+          "body": "In komplexen Systemen ist ein Wirkpfad selten eine gerade Kette. Verhalten, Institutionen, Marktpreise, Naturprozesse, Machtverhältnisse und öffentliche Deutungen können Wirkungen verstärken, dämpfen, umkehren oder zeitlich verschieben. Eine gute Darstellung benennt daher die gewählte Systemgrenze und die relevanten Einflüsse außerhalb dieser Grenze. Sie verschweigt nicht, wenn ein positiver Effekt im betrachteten Bereich durch Schäden an anderer Stelle erkauft werden könnte."
+        },
+        {
+          "title": "So wird ein Wirkpfad prüfbar",
+          "body": "Prüfbar wird der Wirkpfad durch eine konkrete Zustandsfrage, definierte Bezugsgruppen und Zeiträume, einen dokumentierten Vergleichsmaßstab, passende Indikatoren und Quellen, eine Begründung der Kausalannahmen sowie einen Review-Zyklus. Für Entscheidungen genügt nicht, dass ein Pfad plausibel klingt: Die Datenqualität, alternative Erklärungen, blinde Flecken und die Möglichkeit der Korrektur müssen sichtbar bleiben."
+        },
+        {
+          "title": "Beispiel: energetische Sanierung",
+          "body": "Die Intervention ist eine Sanierung. Ein direkter Pfad kann über besseren Wärmeschutz zu geringerem Energiebedarf führen. Ob sich daraus Klimaschutz, geringere Wohnkosten und gesundheitliche Entlastung ergeben, hängt jedoch von Bauqualität, Energieträgern, Finanzierung, Mietgestaltung, Nutzung und Zugang ab. Mieterhöhungen oder Verdrängung wären mögliche negative Wirkungen; sie gehören ebenso in den Wirkpfad wie die erwarteten Vorteile."
+        },
+        {
+          "title": "Kommunikation, Medien und Öffentlichkeit",
+          "body": "Bei Sprache, Bildern und Medien ist die Unterscheidung besonders wichtig. Ein Beitrag kann einen Resonanzraum verändern oder Aufmerksamkeit erzeugen; damit ist weder Zustimmung noch Verhaltensänderung bewiesen. Wirkungspfad, Wirkungspotenzial und Wirkungsrisiko helfen, Wirkbehauptungen nicht mit Reichweite, Absicht oder moralischem Wunschdenken zu verwechseln."
+        },
+        {
+          "title": "Wirkungsökonomische Einordnung",
+          "body": "Die Wirkungsökonomie nutzt Wirkpfade, um Wirkungswahrheit und Wirkungssteuerung zu verbinden. Der Bezugsrahmen ist Mensch, Planet und Demokratie. Eine erwartete Teilwirkung reicht nicht aus, wenn relevante Schäden, verletzte Schutzgrenzen oder Externalisierung unsichtbar bleiben. Wirkpfade machen damit nicht automatisch eine Entscheidung richtig; sie schaffen die Grundlage, sie transparent zu prüfen, demokratisch abzuwägen und bei neuen Erkenntnissen zu korrigieren."
+        },
+        {
+          "title": "Quellenbasis",
+          "body": "Der Begriff verbindet die WÖk-Methodenreferenz mit etablierter evaluativer Wirkungslogik. Die OECD-DAC-Kriterien geben einen internationalen Rahmen für die Bewertung von Wirkung; das britische Magenta Book erläutert die Rolle von Theories of Change bei der Planung und Evaluation öffentlicher Maßnahmen.",
+          "links": [
+            {
+              "label": "WÖMS 2.0 und WÖMM 2.0 im Quellenarchiv",
+              "href": "/quellenarchiv/wok-g-e0fb1cbb43a2/"
+            },
+            {
+              "label": "OECD DAC Criteria: Impact",
+              "href": "/quellenarchiv/wok-q-0329/"
+            },
+            {
+              "label": "HM Treasury: The Magenta Book",
+              "href": "https://www.gov.uk/government/publications/the-magenta-book"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "wirksames-management",

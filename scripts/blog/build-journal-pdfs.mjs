@@ -190,7 +190,8 @@ function renderPdfHtml(entry, sourceHtml) {
   const main = extractMain(sourceHtml);
   if (!main) throw new Error("Kein <main>-Inhalt gefunden");
   const hero = extractHero(main);
-  const content = cleanArticleMarkup(main.replace(hero, ""));
+  const articleContent = main.replace(hero, "");
+  const content = cleanArticleMarkup(articleContent);
   const title = entry.title || firstMatch(sourceHtml, [/<h1[^>]*>([\s\S]*?)<\/h1>/i, /<title>([\s\S]*?)<\/title>/i]);
   const category = entry.category || "Journal";
   const date = formatDate(entry.date || entry.publishedAt || "");
@@ -198,7 +199,7 @@ function renderPdfHtml(entry, sourceHtml) {
   const siteUrl = `https://wirkungsoekonomie.de${normalizeJournalUrl(entry.url)}`;
   const articleDirectory = path.posix.dirname(normalizeJournalUrl(entry.url));
   const baseUrl = `https://wirkungsoekonomie.de${articleDirectory.endsWith("/") ? articleDirectory : `${articleDirectory}/`}`;
-  const hasFigures = /<figure\b|<img\b/i.test(main);
+  const hasFigures = /<figure\b|<img\b/i.test(articleContent);
 
   return `<!doctype html>
 <html lang="de">
