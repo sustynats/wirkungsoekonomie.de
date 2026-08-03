@@ -728,7 +728,9 @@ function validatePublicArtifactSafety() {
     // raw editorial document paths and is not part of the public interface.
     "assets/data/public-release-assets.json",
   ]);
-  const forbiddenPrefixes = ["api/v1/production/", "intern/"];
+  // `/intern/` contains intentionally unlinked application pages. They are
+  // accessed through their direct URLs and must remain in every deployment.
+  const forbiddenPrefixes = ["api/v1/production/"];
   const publicTextExtensions = new Set([".css", ".html", ".htm", ".js", ".json", ".txt", ".xml"]);
   const editorialMarkers = [
     /\bImport-Version\b/i,
@@ -801,7 +803,8 @@ function prunePublicArtifact() {
     "assets/data/production-workflow-manifest.json",
     "assets/data/public-release-assets.json",
   ]);
-  const forbiddenPrefixes = ["api/v1/production/", "intern/"];
+  // Keep intentionally unlinked application pages under `/intern/` live.
+  const forbiddenPrefixes = ["api/v1/production/"];
   let pruned = 0;
 
   for (const file of walkFiles(artifactDir)) {
