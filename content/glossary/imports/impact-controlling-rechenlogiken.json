@@ -92,10 +92,10 @@
       "termId": "scorecard",
       "slug": "scorecard",
       "canonicalLabel": "Scorecard",
-      "shortDefinition": "Eine Scorecard strukturiert Wirkungsfelder, Indikatoren, Datenqualität und Bewertung.",
-      "longDefinition": "Eine Scorecard ist die nachvollziehbare Bewertungsstruktur für ein Objekt, etwa ein Produkt, eine Investition, ein Programm oder eine Organisation. Sie ordnet Wirkungsfelder, WÖk-IDs, Indikatoren, Systemgrenzen, Benchmarks, Datenqualität und Regeln für die Bewertung. Eine Scorecard ist keine bloße Checkliste und keine Durchschnittsformel.",
-      "woekRelation": "In der Wirkungsökonomie wird aus einer Scorecard erst dann ein Steuerungsinstrument, wenn sie Bewertungsgrenzen, Nichtkompensation, Reverse Merit Order, Prüfstatus und konkrete Rückkopplung mitführt. Positive Einzelwerte dürfen kritische Schäden nicht neutralisieren.",
-      "usageNote": "Scorecards für vergleichbare Objekte mit derselben Systemgrenze, Indikatorversion und Bewertungslogik einsetzen. Die Einzelwerte, die Datenqualität und die Begrenzungen des FinalScore müssen lesbar bleiben.",
+      "shortDefinition": "Eine Scorecard oder Wirkungsscorecard ist ein transparentes Bewertungsraster, das relevante Wirkungsfelder, Indikatoren, Datenquellen, Datenqualität, Grenzen und Einzelergebnisse so verbindet, dass Entscheidungen prüfbar werden.",
+      "longDefinition": "Eine Scorecard oder Wirkungsscorecard ist ein offenes Bewertungsraster. Sie legt fest, welche Wirkungsfelder und Indikatoren für ein bestimmtes Objekt relevant sind, welche Daten dafür herangezogen werden und nach welcher Regel die Informationen eingeordnet werden. Damit wird nicht nur ein Ergebnis gezeigt, sondern der Weg dorthin: Systemgrenze, Zeitraum, Vergleichsmaßstab, Datenqualität, Annahmen, Schwellen, Einzelwerte und Prüfstatus. Eine Scorecard ist keine bloße Checkliste, keine Durchschnittsformel und keine Bewertung von Menschen.",
+      "woekRelation": "In der Wirkungsökonomie wird aus einer Scorecard erst dann ein Steuerungsinstrument, wenn sie Bewertungsgrenzen, Nichtkompensation, Reverse Merit Order, Prüfstatus und konkrete Rückkopplung mitführt. Positive Einzelwerte dürfen kritische Schäden nicht neutralisieren; Datenlücken und Unsicherheit müssen sichtbar bleiben.",
+      "usageNote": "Scorecards nur für klar abgegrenzte und vergleichbare Gegenstände einsetzen. Bewertungsobjekt, Systemgrenze, Zeitraum, Indikatorversion, Datenqualität, Einzelwerte, Schutzgrenzen und Korrekturweg müssen lesbar bleiben.",
       "calculationModel": {
         "title": "So entsteht eine belastbare Scorecard",
         "explanation": "Die Scorecard definiert den Rechenrahmen; sie ist selbst keine einfache Summenformel.",
@@ -112,7 +112,7 @@
       "type": "Bewertungs- und Steuerungsrahmen",
       "source": "WÖk-Begriffsleitfaden · Rechenlogiken Impact-Controlling",
       "status": "approved",
-      "version": "2.0",
+      "version": "2.1",
       "reviewStatus": "redaktionell synchronisiert",
       "relatedTerms": ["finalscore", "wirkungsindikator", "woek-id", "benchmark", "datenqualitaet", "reverse-merit-order", "nichtkompensationsprinzip", "wirkungscontrolling"]
     },

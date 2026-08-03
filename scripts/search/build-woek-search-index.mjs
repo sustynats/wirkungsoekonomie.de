@@ -520,12 +520,21 @@ function entriesFromContent(file) {
   const metaDescription =
     clean(text.match(/<meta\s+name=["']search_description["']\s+content=["']([^"']+)["']/i)?.[1]) ||
     clean(text.match(/<meta\s+name=["']description["']\s+content=["']([^"']+)["']/i)?.[1]);
+  const metaSection = clean(text.match(/<meta\s+name=["']search_section["']\s+content=["']([^"']+)["']/i)?.[1]);
+  const metaType = clean(text.match(/<meta\s+name=["']search_type["']\s+content=["']([^"']+)["']/i)?.[1]);
+  const metaIndexKind = clean(text.match(/<meta\s+name=["']search_index_kind["']\s+content=["']([^"']+)["']/i)?.[1]);
   const title =
     metaTitle ||
     text.match(/^title:\s*["']?(.+?)["']?\s*$/m)?.[1] ||
     clean(text.match(/<h1[^>]*>(.*?)<\/h1>/i)?.[1]) ||
     path.basename(file).replace(/\.[^.]+$/, "");
-  const documentType = text.match(/^documentType:\s*["']?(.+?)["']?\s*$/m)?.[1] || "Referenz";
+  const isJournalRoute = /^\/(?:blog|journal)\//.test(route);
+  // Explicitly tagged current Journal pages keep their editorial document type.
+  // Historical pages retain their established generic index type until they
+  // receive their own reviewed metadata migration.
+  const isExplicitJournalEntry = isJournalRoute && (metaIndexKind === "journal" || metaType === "Buchbesprechung");
+  const documentType = text.match(/^documentType:\s*["']?(.+?)["']?\s*$/m)?.[1]
+    || (isExplicitJournalEntry ? (metaType || "Journalartikel") : "Referenz");
   const status = text.match(/^status:\s*["']?(.+?)["']?\s*$/m)?.[1] || "online-reviewed";
   const version =
     text.match(/<dt>Web-Version<\/dt><dd>(.*?)<\/dd>/i)?.[1] ||
@@ -552,18 +561,18 @@ function entriesFromContent(file) {
     title,
     description: metaDescription || body.slice(0, 240),
     url: route,
-    section: documentType,
+    section: isExplicitJournalEntry ? (metaSection || "Journal") : documentType,
     type: documentType,
     format: documentType,
     impactSpaces: [],
     standards: [],
     instruments: [],
-    tags: ["WÖk-Referenz"],
+    tags: isExplicitJournalEntry ? ["WÖk-Journal"] : ["WÖk-Referenz"],
     aliases: [],
     body,
     semanticTerms: pageSemanticTerms,
     semanticText: pageSemanticTerms.join(" "),
-    priority: 70 + liveBoost + (isReferenceChapter ? 15 : 0) + (isRegister ? 20 : 0),
+    priority: (isExplicitJournalEntry ? 60 : 70) + liveBoost + (isReferenceChapter ? 15 : 0) + (isRegister ? 20 : 0),
   };
   const entries = [pageEntry];
   if (isFulltext) {
