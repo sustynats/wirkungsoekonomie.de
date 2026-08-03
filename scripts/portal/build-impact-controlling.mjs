@@ -227,7 +227,7 @@ const toolPages = [
   ["werkzeuge/t-sroi/index.html", "T-SROI", "Transformational Social Return on Investment.", "T-SROI ergänzt eine direkte IOI-Geldrechnung nur um einen separat belegten, monetarisierten Transformationsnutzen innerhalb derselben Systemgrenze und Preisbasis.", "werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/"],
   ["werkzeuge/netto-wirkungs-index/index.html", "Netto-Wirkungs-Index", "Kennzahl für positive, negative und neutrale Wirkung.", "Der Netto-Wirkungs-Index ordnet Wirkung im Referenzrahmen der SDGs, Agenda 2030 und SDG+ ein.", "werkzeuge/impact-controlling/dossiers/nwi/"],
   ["werkzeuge/woek-ids/index.html", "WÖk-IDs", "Indikatorenarchitektur der Wirkungsökonomie.", "WÖk-IDs verbinden Referenzrahmen, Datenquellen, Einheiten, Schwellen, Versionen und Prüfstatus.", "werkzeuge/impact-controlling/dossiers/woek-ids/"],
-  ["werkzeuge/scorecards/index.html", "Scorecards", "Bewertungsraster für Wirkung.", "Scorecards machen Zustandsveränderungen, Nebenwirkungen, Datenqualität und Zielkonflikte entscheidungsfähig.", "werkzeuge/impact-controlling/dossiers/scorecards/"],
+  ["werkzeuge/scorecards/index.html", "Scorecards", "Bewertungsraster für Wirkung.", "Scorecards machen Zustandsveränderungen, Nebenwirkungen, Datenqualität und Zielkonflikte entscheidungsfähig.", "werkzeuge/impact-controlling/dossiers/scorecards/", { href: "begriffe/scorecard/", label: "Scorecard / Wirkungsscorecard" }],
   ["werkzeuge/reverse-merit-order/index.html", "Reverse Merit Order", "Das schwächste kritische Wirkungsfeld entscheidet.", "Die Reverse Merit Order verhindert, dass schwere negative Wirkung durch positive Einzelwerte kompensiert wird.", "werkzeuge/impact-controlling/dossiers/reverse-merit-order/"],
   ["werkzeuge/benchmarks-archetypen/index.html", "Benchmarks & Archetypen", "Vergleichslogik für Wirkungsbewertung.", "Benchmarks und Archetypen übersetzen Branchen-, Produkt- und Organisationstypen in nachvollziehbare Bewertungsräume.", "werkzeuge/impact-controlling/dossiers/benchmarks-archetypen/"],
   ["werkzeuge/datenqualitaet-assurance/index.html", "Datenqualität & Assurance", "Prüfbarkeit der Wirkungsdaten.", "Datenqualität, Prüfstatus und Assurance sichern, dass Wirkungsdaten belastbar bleiben.", "werkzeuge/impact-controlling/dossiers/datenqualitaet-assurance/"],
@@ -492,13 +492,14 @@ function tocFromHeadings(headings) {
   </details>`;
 }
 
-function hero(base, { kicker, title, subtitle, text, action }) {
+function hero(base, { kicker, title, subtitle, text, action, supporting = "" }) {
   return `<section class="hero portal-hero">
     <div class="hero-content">
       <nav class="breadcrumb"><a href="${base}index.html">Start</a> / <a href="${base}werkzeuge/">Werkzeuge</a></nav>
       <p class="hero-kicker">${escapeHtml(kicker)}</p>
       <h1>${escapeHtml(title)}</h1>
       <p class="hero-subtitle">${escapeHtml(subtitle)}</p>
+      ${supporting}
       <p>${escapeHtml(text)}</p>
       ${printActions(action || "")}
     </div>
@@ -1105,10 +1106,13 @@ function tsroiInteractiveExample() {
 }
 
 function toolExplanationPages() {
-  for (const [rel, title, subtitle, description, dossier] of toolPages) {
+  for (const [rel, title, subtitle, description, dossier, glossaryTerm] of toolPages) {
     const relatedPapers = methodPapersForTool(title);
     const isPublicTSROIPage = rel === "werkzeuge/t-sroi/index.html";
     const resourceLabel = dossier.includes("methodenpapiere/") ? "Rechenstandard lesen" : "Dossier lesen";
+    const supporting = glossaryTerm
+      ? `<p><a class="text-link" href="${href(baseFor(rel), glossaryTerm.href)}">Begriffsgrundlage: ${escapeHtml(glossaryTerm.label)} im Glossar</a></p>`
+      : "";
     page({
       rel,
       title: `${title} | Wirkungsökonomie`,
@@ -1125,6 +1129,7 @@ function toolExplanationPages() {
         subtitle,
         text: description,
         action: `<a class="btn btn-primary" href="${href(base, dossier)}">${resourceLabel}</a>`,
+        supporting,
       })}
       <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
       <section class="section narrow">${statusMeta("Methodenseite / Webfassung")}</section>
