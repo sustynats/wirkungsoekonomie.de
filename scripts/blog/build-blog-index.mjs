@@ -5,6 +5,23 @@ const root = process.cwd();
 const blogDir = path.join(root, "blog");
 const indexPath = path.join(root, "assets", "data", "blog-index.json");
 const entryOverrides = new Map([
+  ["/blog/atomkraft-wetterabhaengigkeit-hinter-beton.html", {
+    relatedPages: [
+      "/begriffe/kernenergie/",
+      "/begriffe/systemresilienz/",
+      "/begriffe/wirkungsresilienz/",
+      "/begriffe/wirkungsrisiko/",
+      "/blog/wohlstandsverlust-preise-klimakrise.html"
+    ],
+    relatedTerms: [
+      "Kernenergie",
+      "Systemresilienz",
+      "Wirkungsresilienz",
+      "Wirkungsrisiko",
+      "positive Netto-Wirkung",
+      "Stranded Assets"
+    ]
+  }],
   ["/blog/was-ist-nachhaltigkeit-wirklich.html", {
     excerpt: "Kurzthese: Nachhaltigkeit ist die langfristige Wirkungsresilienz des gekoppelten Systems Mensch–Planet–Demokratie – mit Regeneration, demokratischer Korrektur, Lernen und Nicht-Externalisierung.",
     relatedPages: [
