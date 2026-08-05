@@ -7,6 +7,14 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 
 ---
 
+## 2026-08-05
+
+### Codex · Finales PDF der kooperativen Wirkungsordnung (Release)
+- **Was:** Finales 331-seitiges PDF unter `/assets/downloads/woek_grundlagenstudie_kooperative_wirkungsordnung_v0_1.pdf` als separaten, additiven Release veröffentlicht; bestehende Kurse, Reader und Akademie-Assets bleiben unverändert.
+- **Geprüft:** SHA-256 der Übergabe stimmt; vollständiger `npm run build` erfolgreich; Release-Diff und `git diff --check` grün.
+
+---
+
 ## 2026-07-25
 
 ### Codex · Freigegebene Studienskripte als Lesefassungen (Release vorbereitet)
