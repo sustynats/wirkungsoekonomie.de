@@ -117,7 +117,8 @@ def main() -> None:
                       documentWidth: document.documentElement.scrollWidth,
                       bodyWidth: document.body.scrollWidth,
                       visible: document.querySelector('#view')?.innerText.length > 0,
-                      draftNote: document.querySelector('.demo-note')?.innerText.includes('Redaktioneller Arbeitsstand')
+                      reviewNote: document.querySelector('.demo-note')?.innerText.includes('Transparenz zum Prüfstatus'),
+                      sitePath: ['Startseite', 'Praxis & Tools', 'Mein Wirkungsraum'].every(label => [...document.querySelectorAll('.site-context a, .breadcrumb a')].some(link => link.textContent.trim() === label))
                     })""",
                 )
                 overflow = max(measure["documentWidth"], measure["bodyWidth"]) - measure["inner"]
@@ -126,15 +127,18 @@ def main() -> None:
                     "route": route,
                     "overflow": overflow,
                     "visible": measure["visible"],
-                    "draftNote": measure["draftNote"],
+                    "reviewNote": measure["reviewNote"],
+                    "sitePath": measure["sitePath"],
                 }
                 results.append(result)
                 if overflow > 1:
                     errors.append(f"global overflow {overflow}px at {width}px {route}")
                 if not measure["visible"]:
                     errors.append(f"empty screen at {width}px {route}")
-                if not measure["draftNote"]:
-                    errors.append(f"missing draft notice at {width}px {route}")
+                if not measure["reviewNote"]:
+                    errors.append(f"missing review notice at {width}px {route}")
+                if not measure["sitePath"]:
+                    errors.append(f"missing Wirkungsökonomie path at {width}px {route}")
 
             page.goto(f"{base_url}#/vergleich", wait_until="load")
             set_complete_local_state(page)

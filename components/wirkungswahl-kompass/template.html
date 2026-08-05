@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Wirkungswahl-Kompass · redaktioneller Arbeitsstand | Wirkungsökonomie</title>
-<meta name="description" content="Programmbasierter Arbeitsstand des Wirkungswahl-Kompasses: 36 Fragen, neun Themenfelder und sieben Parteien. Keine Wahlempfehlung, keine Rangliste und kein Gesamtscore.">
-<meta name="robots" content="noindex, nofollow">
+<title>Wirkungswahl-Kompass · in unabhängiger Prüfung | Wirkungsökonomie</title>
+<meta name="description" content="Öffentlich nutzbarer, programm- und quellenbasierter Wirkungswahl-Kompass mit 36 Fragen, neun Themenfeldern und sieben Parteien. In unabhängiger Prüfung; keine Wahlempfehlung, keine Rangliste, kein Gesamtscore.">
+<meta name="robots" content="noindex, follow">
 <meta name="content_status" content="needs_editorial_review">
 <meta name="theme-color" content="#f6f3ec">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; form-action 'self'; frame-ancestors 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; connect-src 'self'; font-src 'self'; object-src 'none'">
@@ -65,16 +65,30 @@ button{font:inherit;cursor:pointer}
 
 /* ============================================================= LAYOUT */
 .app{min-height:100dvh;display:flex;flex-direction:column}
+.site-context{background:var(--surface-2);border-bottom:1px solid var(--line)}
+.site-context-in{max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:12px;padding:7px 16px}
+.site-context-brand{display:inline-flex;align-items:center;gap:7px;min-height:38px;color:var(--ink);font-family:var(--serif);font-weight:700;text-decoration:none}
+.site-context-brand img{width:24px;height:24px;flex:none}
+.site-context-links{margin-left:auto;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.site-context-links a{display:inline-flex;align-items:center;min-height:38px;color:var(--link);font-size:.78rem;font-weight:700;text-decoration:none}
+.site-context-links a:hover{text-decoration:underline}
 .bar{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--bg) 88%,transparent);
   backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .bar-in{max-width:var(--maxw);margin:0 auto;display:flex;align-items:center;gap:10px;padding:10px 16px}
 .brand{display:flex;align-items:center;gap:9px;min-height:44px;text-decoration:none;color:var(--ink)}
 .brand b{font-family:var(--serif);font-size:1.02rem;letter-spacing:.2px}
-.badge{font-size:.66rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--link);
-  border:1px solid var(--link);border-radius:999px;padding:2px 8px}
+.badge{display:inline-flex;align-items:center;min-height:32px;font-size:.66rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--link);
+  border:1px solid var(--link);border-radius:999px;padding:2px 8px;text-decoration:none}
+.badge-short{display:none}
 .bar .sp{flex:1}
 .iconbtn{background:var(--card);border:1px solid var(--line);border-radius:9px;padding:7px 11px;color:var(--tx);font-size:.85rem;min-width:48px;min-height:48px}
+.breadcrumb{max-width:var(--maxw);margin:0 auto;padding:10px 16px 0;font-size:.78rem;color:var(--tx-2)}
+.breadcrumb ol{display:flex;flex-wrap:wrap;gap:5px;margin:0;padding:0;list-style:none}
+.breadcrumb li{display:flex;align-items:center;gap:5px}
+.breadcrumb li+li::before{content:"/";color:var(--muted-2)}
+.breadcrumb a{display:inline-flex;align-items:center;min-height:30px;color:var(--link)}
 main{flex:1} .wrap{max-width:var(--maxw);margin:0 auto;padding:20px 16px 120px}
+#view:focus-visible{outline:none}
 .demo-note{background:var(--gold-soft);border:1px solid color-mix(in srgb,var(--gold) 40%,transparent);
   color:var(--tx);border-radius:var(--r-s);padding:9px 12px;font-size:.82rem;margin-bottom:18px;display:flex;gap:8px;align-items:flex-start}
 .card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px;box-shadow:var(--shadow);margin-bottom:16px}
@@ -229,12 +243,19 @@ code{overflow-wrap:anywhere}
 
 /* ============================================================= NARROW VIEWPORTS */
 @media(max-width:440px){
+  .site-context-in{gap:5px;padding:5px 10px;align-items:flex-start;flex-wrap:wrap}
+  .site-context-brand{min-height:34px;font-size:.83rem}
+  .site-context-brand img{width:21px;height:21px}
+  .site-context-links{width:100%;margin-left:0;justify-content:space-between;gap:8px}
+  .site-context-links a{min-height:34px;font-size:.74rem}
   .bar-in{gap:6px;padding:8px 10px}
   .brand{gap:6px;min-width:0}
   .brand svg{width:22px;height:22px;flex:none}
-  .brand b{font-size:.86rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:158px}
-  .badge{display:none}
+  .brand b{font-size:.86rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:116px}
+  .badge{padding:2px 6px;font-size:.61rem;letter-spacing:.08em}
+  .badge-long{display:none}.badge-short{display:inline}
   .iconbtn{padding:7px 8px;font-size:.78rem;min-width:44px;min-height:44px}
+  .breadcrumb{padding:8px 12px 0;font-size:.74rem}
   .wrap{padding-left:12px;padding-right:12px}
   .ibar{grid-template-columns:1fr;gap:4px}
   .meta-list>div{grid-template-columns:1fr;gap:2px}
@@ -248,18 +269,30 @@ code{overflow-wrap:anywhere}
 
 <a href="#main" class="skip">Zum Inhalt springen</a>
 <div class="app">
+  <nav class="site-context" aria-label="Wirkungsökonomie">
+    <div class="site-context-in">
+      <a class="site-context-brand" href="../../" aria-label="Zur Startseite der Wirkungsökonomie"><img src="../../assets/img/brand/signet.svg" alt=""><span>Wirkungsökonomie</span></a>
+      <div class="site-context-links">
+        <a href="../../werkzeuge/">Praxis &amp; Tools</a>
+        <a href="../../mein-wirkungsraum/">Mein Wirkungsraum</a>
+      </div>
+    </div>
+  </nav>
   <header class="bar">
     <div class="bar-in">
       <a class="brand" href="#/" aria-label="Wirkungswahl-Kompass — Start">
         <svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><circle cx="13" cy="9" r="5.2" fill="none" stroke="var(--ink)" stroke-width="1.7"/><circle cx="9" cy="16.5" r="5.2" fill="none" stroke="var(--green)" stroke-width="1.7"/><circle cx="17" cy="16.5" r="5.2" fill="none" stroke="var(--gold)" stroke-width="1.7"/></svg>
         <b>Wirkungswahl-Kompass</b>
       </a>
-      <span class="badge" title="Redaktioneller Arbeitsstand · programmbasiert · vor unabhängiger Zweitprüfung">Entwurf</span>
+      <a class="badge" href="#/transparenz" aria-label="In unabhängiger Prüfung – Prüfstatus und Quellen ansehen" title="Öffentlich nutzbarer redaktioneller Entwurf in unabhängiger Prüfung"><span class="badge-long">In unabhängiger Prüfung</span><span class="badge-short">Prüfung</span></a>
       <span class="sp"></span>
       <button class="iconbtn" data-action="theme" aria-label="Hell/Dunkel wechseln">◐</button>
   <button class="iconbtn" data-action="menu" aria-haspopup="dialog" aria-controls="sheet" aria-expanded="false">Menü</button>
     </div>
   </header>
+  <nav class="breadcrumb" aria-label="Pfad">
+    <ol><li><a href="../../">Startseite</a></li><li><a href="../../werkzeuge/">Praxis &amp; Tools</a></li><li aria-current="page">Wirkungswahl-Kompass</li></ol>
+  </nav>
   <main id="main"><div class="wrap" id="view" tabindex="-1"></div></main>
   <footer class="foot" id="foot"></footer>
 </div>

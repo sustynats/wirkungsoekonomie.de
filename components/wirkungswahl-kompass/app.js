@@ -85,7 +85,7 @@ function bandBar(dimId,lo,hi){const toX=v=>((v+3)/6)*100;const x0=toX(lo),x1=toX
      <span class="num">${lo>0?'+':''}${lo}${hi!==lo?'…'+(hi>0?'+':'')+hi:''}</span></div></div>`;}
 
 /* ================= Screens ================= */
-const demoNote=`<div class="demo-note" role="note"><span aria-hidden="true">🛈</span><span><b>Redaktioneller Arbeitsstand.</b> Programmbasis: offizielle Bundestagswahlprogramme 2025 · ${esc(DATA.meta.dataVersion)}. Vor Veröffentlichung: unabhängige Zweitprüfung, symmetrisches Stellungnahmeverfahren für Parteien und juristischer Check. Keine Wahlempfehlung.</span></div>`;
+const demoNote=`<section class="demo-note" role="note" aria-labelledby="review-note-title"><span aria-hidden="true">🛈</span><span><b id="review-note-title">Transparenz zum Prüfstatus.</b> Der Wirkungswahl-Kompass ist ein öffentlich nutzbarer, programm- und quellenbasierter redaktioneller Entwurf. Die 252 Parteizuordnungen und 36 Wirkungsanalysen werden noch unabhängig zweitgeprüft. Danach erhalten alle einbezogenen Parteien dieselbe Gelegenheit zur Stellungnahme; zusätzlich folgt ein juristischer Check. Bis dahin dient der Kompass der Orientierung, nicht als Wahlempfehlung. <a href="#/transparenz">Prüfstatus und Quellen ansehen</a></span></section>`;
 
 const SCREENS={
  landing(){const on=DATA.resultCopy.onboarding||[];return `
@@ -242,6 +242,7 @@ const SCREENS={
  },
  transparenz(){return `<div class="eyebrow">Transparenz &amp; Quellen</div><h1>Nachvollziehbarkeit</h1>
   <div class="card"><dl class="meta-list"><div><dt>Modus</dt><dd>Programmatic Mode — Bundestagswahlprogramme 2025</dd></div><div><dt>Datenstand</dt><dd>${esc(DATA.meta.dataVersion)}</dd></div><div><dt>Methodik</dt><dd>Version ${esc(DATA.meta.methodologyVersion)}</dd></div><div><dt>Content</dt><dd>Version ${esc(DATA.meta.contentVersion)}</dd></div><div><dt>Status</dt><dd>${esc(DATA.meta.status)}</dd></div></dl></div>
+  <div class="card"><h2>Warum der Kompass als Entwurf gekennzeichnet ist</h2><p>Der Kompass ist öffentlich nutzbar, aber noch nicht formal freigegeben. Die Datenbasis, Quellen und Versionsstände sind offen einsehbar; die Einordnungen befinden sich noch im unabhängigen Prüfprozess.</p><ul class="small" style="margin:.5em 0 0;padding-left:18px"><li><b>Bereits offen:</b> Programmbasis, Evidenzquellen, Wirkungsgrenzen und der aktuelle Versionsstand.</li><li><b>Noch in unabhängiger Zweitprüfung:</b> alle 252 Parteizuordnungen und 36 Wirkungsanalysen.</li><li><b>Vor einer formalen Freigabe:</b> ein symmetrisches Stellungnahmeverfahren für alle einbezogenen Parteien und ein juristischer Check.</li></ul><p class="small" style="margin:.8em 0 0">Bis zum Abschluss bleibt der Kompass eine Orientierung ohne Wahlempfehlung, Parteiranking oder Gesamtscore.</p></div>
   <div class="card"><h3>Programmbasis</h3><div class="source-list">${DATA.programs.map(p=>{const href=safeHttpsUrl(p.url);const title=S.reveal?esc(p.title):'Programmquelle';return href?`<a class="source-link" href="${esc(href)}" target="_blank" rel="noopener noreferrer"><b>${esc(p.id)}</b> — ${title} · geprüft ${esc(p.checked_at)} ↗</a>`:`<span class="small mut"><b>${esc(p.id)}</b> — ${title}</span>`;}).join('')}</div></div>
   <div class="card"><h3>Nicht erzeugte Werte (verboten)</h3><ul class="small">${(DATA.forbiddenFields||[]).map(x=>`<li><code>${esc(x)}</code></li>`).join('')}</ul></div>
   <div class="redline"><div class="h">${warnSvg()} Übergreifende Wirkungsgrenzen</div><ul class="small" style="margin:.5em 0 0">${(DATA.globalRedLines||[]).map(r=>`<li>${esc(r)}</li>`).join('')}</ul></div>
@@ -291,9 +292,10 @@ function savePriorityProfile(){const priorities=shareProfile();if(!priorities.le
 async function sharePriority(){if(!shareProfile().length){announceShare('Setze zuerst die Wichtigkeit für mindestens ein Thema.');return;}const text=priorityShareText(),url=`${location.href.split('#')[0]}#/teilen`;try{if(navigator.share){await navigator.share({title:'Meine Wirkungs-Prioritäten',text,url});announceShare('Deine neutralen Prioritäten wurden zum Teilen vorbereitet.');return;}if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(`${text}\n${url}`);announceShare('Der neutrale Prioritäten-Text wurde in die Zwischenablage kopiert.');return;}announceShare('Teilen ist hier nicht verfügbar. Du kannst PNG oder PDF laden.');}catch(error){if(error&&error.name==='AbortError'){announceShare('Teilen abgebrochen.');}else{announceShare('Teilen ist hier nicht verfügbar. Du kannst PNG oder PDF laden.');}}}
 
 /* ================= Router ================= */
-const MENU=[['#/','Start'],['#/methodik','Methodik'],['#/fragen','Fragen'],['#/profil','Persönliches Profil'],
+const MENU=[['#/','Kompass-Start'],['#/methodik','Methodik'],['#/fragen','Fragen'],['#/profil','Persönliches Profil'],
   ['#/ergebnis','Themenmatrix'],['#/vergleich','Vergleich'],['#/transparenz','Transparenz &amp; Quellen'],
-  ['#/teilen','Ergebnis sichern &amp; teilen'],['#/datenschutz','Datenschutz'],['../../werkzeuge/','Zur Website: Werkzeuge']];
+  ['#/teilen','Ergebnis sichern &amp; teilen'],['#/datenschutz','Datenschutz'],['../../','Wirkungsökonomie · Startseite'],
+  ['../../werkzeuge/','Praxis &amp; Tools · Alle Werkzeuge'],['../../mein-wirkungsraum/','Mein Wirkungsraum']];
 function render(focusSelector){const seg=(location.hash.replace(/^#/,'')||'/').split('/').filter(Boolean);const view=document.getElementById('view');
   let html='',name=seg[0]||'landing';
   try{
@@ -308,7 +310,7 @@ function render(focusSelector){const seg=(location.hash.replace(/^#/,'')||'/').s
   else if(ctaBox){ctaBox.classList.add('cta-bar');ctaBox.innerHTML=`<div class="cta-in">${ctaBox.innerHTML}</div>`;slot.appendChild(ctaBox);document.querySelector('.wrap').style.paddingBottom='120px';}
   else document.querySelector('.wrap').style.paddingBottom='60px';
   document.getElementById('menunav').innerHTML=MENU.map(m=>`<a href="${m[0]}" data-a="menu-close">${m[1]}</a>`).join('');
-  document.getElementById('foot').innerHTML=`Wirkungswahl-Kompass · Programme 2025 · ${esc(DATA.meta.dataVersion)} · Keine Wahlempfehlung · <a href="#/datenschutz">Datenschutz</a> · <a href="#/transparenz">Transparenz</a> · <a href="../../werkzeuge/">Werkzeuge</a>`;
+  document.getElementById('foot').innerHTML=`Wirkungswahl-Kompass · Programme 2025 · ${esc(DATA.meta.dataVersion)} · Keine Wahlempfehlung · <a href="#/transparenz">Transparenz</a> · <a href="#/datenschutz">Datenschutz</a> · <a href="../../">Wirkungsökonomie</a> · <a href="../../werkzeuge/">Alle Werkzeuge</a> · <a href="../../mein-wirkungsraum/">Mein Wirkungsraum</a>`;
   if(focusSelector){view.querySelector(focusSelector)?.focus({preventScroll:true});}
   else if(focusSelector!==false){view.focus({preventScroll:true});window.scrollTo(0,0);}}
 

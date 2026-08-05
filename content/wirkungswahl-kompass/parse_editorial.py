@@ -326,7 +326,7 @@ def parse(docx_path: Path) -> dict:
             "dataVersion": "Programme 2025 · Stichtag 2026-08-04",
             "methodologyVersion": "1.0",
             "contentVersion": "1.1",
-            "status": "redaktioneller Arbeitsstand — vor Veröffentlichung Zweitprüfung + juristischer Check",
+            "status": "Öffentlich nutzbarer redaktioneller Entwurf · unabhängige Zweitprüfung, Stellungnahmeverfahren und juristischer Check ausstehend",
             "claim": "Wo du stehst. Was Parteien vorschlagen. Was daraus folgen kann.",
             "demo": False,
             "sourceDocument": docx_path.name,

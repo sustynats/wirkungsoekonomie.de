@@ -4,7 +4,7 @@
 
 `/werkzeuge/wirkungswahl-kompass/`
 
-Der Kompass ist auf der öffentlichen Werkzeugseite verlinkt und bleibt als redaktioneller Arbeitsstand gekennzeichnet. Die Seite trägt bis zum Abschluss der unabhängigen Zweitprüfung, des Stellungnahmeverfahrens und der juristischen Prüfung weiterhin `noindex, nofollow`; das begrenzt nur die Suchmaschinenaufnahme, nicht die öffentliche Nutzbarkeit über die Werkzeugseite. Sie lädt bewusst nicht `assets/js/main.js`, damit weder Analytics noch Besucher-IDs oder politische Antworten übertragen werden.
+Der Kompass ist über die Startseite und „Praxis & Tools“ öffentlich erreichbar. Er ist klar als „in unabhängiger Prüfung“ markiert: ein öffentlich nutzbarer, programm- und quellenbasierter redaktioneller Entwurf. Die Seite trägt bis zum Abschluss der unabhängigen Zweitprüfung, des Stellungnahmeverfahrens und der juristischen Prüfung weiterhin `noindex, follow`; das begrenzt die eigene Suchmaschinenaufnahme, nicht die öffentliche Nutzbarkeit über die Website-Navigation. Sie lädt bewusst nicht `assets/js/main.js`, damit weder Analytics noch Besucher-IDs oder politische Antworten übertragen werden.
 
 Nutzende können ihr Prioritätenprofil ausdrücklich als lokale Merkkarte in „Mein Wirkungsraum“ speichern, als PNG/PDF/SVG laden oder per Web-Share bzw. Zwischenablage teilen. Die Merkkarte enthält nur bis zu vier priorisierte Wirkungsfelder sowie technische Metadaten für die Karte; keine einzelnen Antworten, Parteien, Nähewerte oder Vergleiche. Der Kompass startet weder eine Konto- noch eine Server-Synchronisierung. Eine gegebenenfalls später im Wirkungsraum aktivierte Synchronisierung bleibt eine dortige, separate Entscheidung der Nutzenden.
 
@@ -68,4 +68,4 @@ Rollback: den Release-Commit auf `main` per neuem Revert-Commit zurücknehmen un
 
 ## Redaktionelle Restfreigabe
 
-Die Seite bleibt bis zum Abschluss der unabhängigen Prüfung ein sichtbarer redaktioneller Arbeitsstand. Vor Aufhebung von `noindex` und des Arbeitsstand-Hinweises sind die 252 Parteizuordnungen, 36 Wirkungsanalysen, die symmetrische Parteistellungnahme und die juristische Prüfung zu dokumentieren.
+Die Seite bleibt bis zum Abschluss der unabhängigen Prüfung ein sichtbar gekennzeichneter redaktioneller Entwurf. Vor Aufhebung von `noindex` und der Prüfkennzeichnung sind die 252 Parteizuordnungen, 36 Wirkungsanalysen, die symmetrische Parteistellungnahme und die juristische Prüfung zu dokumentieren.

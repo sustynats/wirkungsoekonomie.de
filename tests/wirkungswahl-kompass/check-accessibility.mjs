@@ -30,7 +30,7 @@ for (const [foreground, background, mode] of [
 }
 
 for (const expected of [
-  'meta name="robots" content="noindex, nofollow"',
+  'meta name="robots" content="noindex, follow"',
   'meta name="content_status" content="needs_editorial_review"',
   "default-src 'self'",
   "base-uri 'none'",
@@ -41,6 +41,8 @@ for (const expected of [
   "min-width:48px;min-height:48px",
   "min-height:44px",
   "prefers-reduced-motion",
+  'aria-label="Wirkungsökonomie"',
+  'aria-label="Pfad"',
 ]) {
   assert.ok(template.includes(expected), `template must include ${expected}`);
 }
@@ -56,7 +58,7 @@ for (const expected of [
   "download-priority-png",
   "download-priority-pdf",
   "application/pdf",
-  "data:image/svg+xml",
+  "image/svg+xml;charset=utf-8",
 ]) {
   assert.ok(app.includes(expected), `app must include ${expected}`);
 }
