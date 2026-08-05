@@ -30,7 +30,7 @@ const toolsHtml = fs.readFileSync(toolsOverview, "utf8");
 assert.match(toolsHtml, /<h3 class="card-title">Wirkungswahl-Kompass<\/h3>/, "Die Kompass-Karte fehlt in Praxis & Tools.");
 assert.match(toolsHtml, /In unabhängiger Prüfung/, "Der Prüfstatus fehlt auf der Kompass-Karte.");
 assert.match(toolsHtml, /252 Parteizuordnungen und 36 Wirkungsanalysen werden zweitgeprüft\./, "Die Prüfhinweise fehlen auf der Kompass-Karte.");
-const kompassLink = toolsHtml.match(/href="([^"]+)">Wirkungswahl-Kompass öffnen<\/a>/);
+const kompassLink = toolsHtml.match(/<a\b[^>]*\bhref="([^"]+)"[^>]*>Wirkungswahl-Kompass öffnen<\/a>/);
 assert.ok(kompassLink, "Der Öffnen-Link der Kompass-Karte fehlt.");
 assert.equal(
   new URL(kompassLink[1], "https://wirkungsoekonomie.de/werkzeuge/").pathname,
