@@ -6,6 +6,7 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../..");
 const template = fs.readFileSync(path.join(root, "components/wirkungswahl-kompass/template.html"), "utf8");
 const app = fs.readFileSync(path.join(root, "components/wirkungswahl-kompass/app.js"), "utf8");
+const homepage = fs.readFileSync(path.join(root, "index.html"), "utf8");
 
 function luminance(hex) {
   const channels = [1, 3, 5].map((offset) => Number.parseInt(hex.slice(offset, offset + 2), 16) / 255);
@@ -62,5 +63,8 @@ for (const expected of [
 ]) {
   assert.ok(app.includes(expected), `app must include ${expected}`);
 }
+
+assert.match(homepage, /Wirkungswahl-Kompass öffnen \(in unabhängiger Prüfung\)/,
+  "homepage entry must visibly disclose the independent review status");
 
 console.log("Accessibility static checks passed: contrast, status visibility, CSP directives, touch targets, dialog and reduced motion.");

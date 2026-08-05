@@ -119,7 +119,8 @@ def main() -> None:
                       visible: document.querySelector('#view')?.innerText.length > 0,
                       reviewNote: document.querySelector('.demo-note')?.innerText.includes('Transparenz zum Prüfstatus'),
                       sitePath: ['Startseite', 'Praxis & Tools', 'Mein Wirkungsraum'].every(label => [...document.querySelectorAll('.site-context a, .breadcrumb a')].some(link => link.textContent.trim() === label)),
-                      legalLink: [...document.querySelectorAll('#foot a')].some(link => link.textContent.trim() === 'Impressum' && link.getAttribute('href') === '../../impressum.html')
+                      legalLink: [...document.querySelectorAll('#foot a')].some(link => link.textContent.trim() === 'Impressum' && link.getAttribute('href') === '../../impressum.html'),
+                      privacyLink: [...document.querySelectorAll('#foot a')].some(link => link.textContent.trim() === 'Datenschutzerklärung' && link.getAttribute('href') === '../../datenschutz.html')
                     })""",
                 )
                 overflow = max(measure["documentWidth"], measure["bodyWidth"]) - measure["inner"]
@@ -131,6 +132,7 @@ def main() -> None:
                     "reviewNote": measure["reviewNote"],
                     "sitePath": measure["sitePath"],
                     "legalLink": measure["legalLink"],
+                    "privacyLink": measure["privacyLink"],
                 }
                 results.append(result)
                 if overflow > 1:
@@ -143,6 +145,8 @@ def main() -> None:
                     errors.append(f"missing Wirkungsökonomie path at {width}px {route}")
                 if not measure["legalLink"]:
                     errors.append(f"missing Impressum link at {width}px {route}")
+                if not measure["privacyLink"]:
+                    errors.append(f"missing Datenschutzerklärung link at {width}px {route}")
 
             page.goto(f"{base_url}#/vergleich", wait_until="load")
             set_complete_local_state(page)

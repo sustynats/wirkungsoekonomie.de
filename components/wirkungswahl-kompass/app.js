@@ -136,7 +136,7 @@ const SCREENS={
   <div class="card"><ul style="margin:0;padding-left:18px;line-height:1.9">
     <li>Nutzung <b>ohne Konto</b>.</li><li>Antworten <b>nur lokal im Browser</b>.</li>
     <li><b>Keine</b> Übertragung individueller Antwortprofile.</li><li>Keine personalisierte Werbung, keine Tracker.</li>
-    <li>Beim ausdrücklichen Speichern in <b>Mein Wirkungsraum</b> entsteht nur eine lokale Merkkarte mit bis zu vier Prioritäten - ohne einzelne Antworten, Parteien oder Nähewerte.</li></ul></div>
+    <li>Beim ausdrücklichen Speichern in <b>Mein Wirkungsraum</b> entsteht nur eine lokale Merkkarte mit bis zu vier Prioritäten - ohne einzelne Antworten, Parteien oder Nähewerte.</li></ul><p class="small" style="margin:.9em 0 0">Die rechtliche <a href="../../datenschutz.html">Datenschutzerklärung der Wirkungsökonomie</a> gilt zusätzlich für die Website.</p></div>
   <div class="card"><h3>Kompass-Antworten lokal löschen</h3><p class="small">Entfernt nur die Antworten dieses Kompasses. Eine bewusst gespeicherte Merkkarte bleibt in Mein Wirkungsraum und kann dort entfernt werden.</p><button class="btn btn-danger" data-a="wipe">Kompassdaten löschen</button></div>
   <div class="cta"><a class="btn btn-ghost" href="#/">Zur Startseite</a></div>`;
  },
@@ -249,7 +249,7 @@ const SCREENS={
   <div class="card"><h3>Evidenzregister (${DATA.evidence.length})</h3><div class="tblwrap"><table><thead><tr><th scope="col">ID</th><th scope="col">Institution</th><th scope="col">Thema</th><th scope="col">Quelle</th></tr></thead>
     <tbody>${DATA.evidence.map(e=>{const href=safeHttpsUrl(e.url);return `<tr><th scope="row">${esc(e.id)}</th><td>${esc(e.institution)}</td><td class="small">${esc(e.topic)}</td><td>${href?`<a class="source-link" href="${esc(href)}" target="_blank" rel="noopener noreferrer">öffnen ↗</a>`:'<span class="small mut">URL nicht verfügbar</span>'}<div class="small mut">geprüft ${esc(e.checked_at)}</div></td></tr>`;}).join('')}</tbody></table></div>
     <p class="small mut" style="margin:.6em 0 0">${(DATA.resultCopy.sources||[]).map(esc).join(' ')}</p></div>
-  <div class="cta"><a class="btn btn-ghost" href="#/">Startseite</a><a class="btn btn-quiet" href="#/datenschutz">Datenschutz</a></div>`;
+  <div class="cta"><a class="btn btn-ghost" href="#/">Startseite</a><a class="btn btn-quiet" href="#/datenschutz">Datenschutz im Kompass</a></div>`;
  },
  teilen(){const prof=shareProfile(),ready=Boolean(prof.length),disabled=ready?'':' disabled';
   return `<div class="eyebrow">Ergebnis sichern &amp; teilen</div><h1>Dein Prioritätenprofil</h1>
@@ -294,7 +294,7 @@ async function sharePriority(){if(!shareProfile().length){announceShare('Setze z
 /* ================= Router ================= */
 const MENU=[['#/','Kompass-Start'],['#/methodik','Methodik'],['#/fragen','Fragen'],['#/profil','Persönliches Profil'],
   ['#/ergebnis','Themenmatrix'],['#/vergleich','Vergleich'],['#/transparenz','Transparenz &amp; Quellen'],
-  ['#/teilen','Ergebnis sichern &amp; teilen'],['#/datenschutz','Datenschutz'],['../../impressum.html','Impressum'],['../../','Wirkungsökonomie · Startseite'],
+  ['#/teilen','Ergebnis sichern &amp; teilen'],['#/datenschutz','Datenschutz im Kompass'],['../../datenschutz.html','Datenschutzerklärung'],['../../impressum.html','Impressum'],['../../','Wirkungsökonomie · Startseite'],
   ['../../werkzeuge/','Praxis &amp; Tools · Alle Werkzeuge'],['../../mein-wirkungsraum/','Mein Wirkungsraum']];
 function render(focusSelector){const seg=(location.hash.replace(/^#/,'')||'/').split('/').filter(Boolean);const view=document.getElementById('view');
   let html='',name=seg[0]||'landing';
@@ -310,7 +310,7 @@ function render(focusSelector){const seg=(location.hash.replace(/^#/,'')||'/').s
   else if(ctaBox){ctaBox.classList.add('cta-bar');ctaBox.innerHTML=`<div class="cta-in">${ctaBox.innerHTML}</div>`;slot.appendChild(ctaBox);document.querySelector('.wrap').style.paddingBottom='120px';}
   else document.querySelector('.wrap').style.paddingBottom='60px';
   document.getElementById('menunav').innerHTML=MENU.map(m=>`<a href="${m[0]}" data-a="menu-close">${m[1]}</a>`).join('');
-  document.getElementById('foot').innerHTML=`Wirkungswahl-Kompass · Programme 2025 · ${esc(DATA.meta.dataVersion)} · Keine Wahlempfehlung · <a href="#/transparenz">Transparenz</a> · <a href="../../impressum.html">Impressum</a> · <a href="#/datenschutz">Datenschutz</a> · <a href="../../">Wirkungsökonomie</a> · <a href="../../werkzeuge/">Alle Werkzeuge</a> · <a href="../../mein-wirkungsraum/">Mein Wirkungsraum</a>`;
+  document.getElementById('foot').innerHTML=`Wirkungswahl-Kompass · Programme 2025 · ${esc(DATA.meta.dataVersion)} · Keine Wahlempfehlung · <a href="#/transparenz">Transparenz</a> · <a href="../../impressum.html">Impressum</a> · <a href="../../datenschutz.html">Datenschutzerklärung</a> · <a href="#/datenschutz">Datenschutz im Kompass</a> · <a href="../../">Wirkungsökonomie</a> · <a href="../../werkzeuge/">Alle Werkzeuge</a> · <a href="../../mein-wirkungsraum/">Mein Wirkungsraum</a>`;
   if(focusSelector){view.querySelector(focusSelector)?.focus({preventScroll:true});}
   else if(focusSelector!==false){view.focus({preventScroll:true});window.scrollTo(0,0);}}
 
