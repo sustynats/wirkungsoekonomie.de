@@ -314,6 +314,7 @@ function loadJournalArticles() {
 
 function journalToLibraryDoc(article) {
   const tags = article.tags || [];
+  const canonicalLibraryUrl = normalizeSitePath(article.url);
   return {
     id: `journal-${slug(article.url || article.title)}`,
     title: article.title,
@@ -323,8 +324,12 @@ function journalToLibraryDoc(article) {
     source: "Journal",
     formats: ["Online"],
     urls: {
-      primary: normalizeSitePath(article.url),
+      primary: canonicalLibraryUrl,
     },
+    // Journalartikel haben bereits ihre veröffentlichte kanonische Route. Die
+    // Bibliothek verlinkt deshalb direkt dorthin, statt eine nicht vorhandene
+    // abgeleitete Detailseite unter /bibliothek/eintraege/ zu behaupten.
+    canonicalLibraryUrl,
     topics: [...new Set([article.category, ...tags].filter(Boolean))],
     relatedMethods: tags.filter((tag) => /wirk|debatte|resonanz|agenda|frame|folge/i.test(tag)).slice(0, 4),
     relatedImpactFields: [article.category].filter(Boolean),

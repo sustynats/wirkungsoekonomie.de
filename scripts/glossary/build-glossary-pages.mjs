@@ -1017,28 +1017,38 @@ function resolveContentReference(input, options = {}) {
   const canonicalUrl = normalizeReferenceUrl(rawText);
   const slug = slugFromReference(rawText);
   const titleKey = normalizedHubConcept(rawText);
+  // Die kuratierte Zuordnung ist verbindlicher als ein Titel-Treffer aus dem
+  // (erst später im Build erneuerten) Suchindex. So kann ein gleichnamiger
+  // Journalartikel keinen bewusst ausgewählten Dokumentenverweis ersetzen.
+  const curatedTarget = options.skipCuratedTarget ? null : relatedContentTargets.get(slug);
+  if (curatedTarget) {
+    const [title, href] = curatedTarget;
+    const canonicalTarget = normalizeReferenceUrl(href);
+    const mappedEntry = contentByUrl.get(canonicalTarget) || contentByUrl.get(canonicalTarget.split("#")[0]);
+    if (mappedEntry) {
+      return resolveContentReference(canonicalTarget, {
+        ...options,
+        fallbackTitle: title,
+        skipCuratedTarget: true,
+      });
+    }
+    return {
+      url: href,
+      canonicalUrl: canonicalTarget || href,
+      title: cleanReferenceTitle(title),
+      description: options.description || "Öffentliche Vertiefung zu diesem Begriff.",
+      contentTypeLabel: options.contentTypeLabel || "Quelle",
+      scopeLabel: options.scopeLabel || "",
+      extentLabel: options.extentLabel || "",
+      relevanceReason: options.relevanceReason || "",
+      isFallback: true,
+    };
+  }
   const entry = contentByUrl.get(canonicalUrl)
     || contentByUrl.get(canonicalUrl.split("#")[0])
     || contentBySlug.get(slug)
     || contentByTitle.get(titleKey)
     || chapterEntryFromLabel(rawText);
-  if (!entry && relatedContentTargets.has(slug)) {
-    const [title, href] = relatedContentTargets.get(slug);
-    const canonicalTarget = normalizeReferenceUrl(href);
-    const mappedEntry = contentByUrl.get(canonicalTarget) || contentByUrl.get(canonicalTarget.split("#")[0]);
-    if (mappedEntry) return resolveContentReference(canonicalTarget, { ...options, fallbackTitle: title });
-      return {
-        url: canonicalTarget || href,
-        canonicalUrl: canonicalTarget || href,
-        title: cleanReferenceTitle(title),
-        description: options.description || "Öffentliche Vertiefung zu diesem Begriff.",
-        contentTypeLabel: options.contentTypeLabel || "Quelle",
-        scopeLabel: options.scopeLabel || "",
-        extentLabel: options.extentLabel || "",
-        relevanceReason: options.relevanceReason || "",
-      isFallback: true,
-    };
-  }
   if (!entry) {
     if (options.allowTextFallback) {
       return {
