@@ -209,6 +209,15 @@ def main() -> None:
             for label in ["In Mein Wirkungsraum speichern", "Als PNG laden", "Als PDF laden", "Prioritäten teilen"]:
                 if page.get_by_role("button", name=label).count() != 1:
                     errors.append(f"result action {label!r} is unavailable at {width}px")
+            graphic_bounds = page.evaluate(
+                """() => {
+                  const count = Math.max(shareProfile().length, 1);
+                  const lastBaseline = 178 + (count - 1) * 34;
+                  return { cardBottom: priorityGraphicGeometry().height - 36, lastBaseline };
+                }""",
+            )
+            if graphic_bounds["cardBottom"] < graphic_bounds["lastBaseline"] + 30:
+                errors.append(f"priority graphic clips its last line at {width}px")
 
             page.get_by_role("button", name="In Mein Wirkungsraum speichern").click()
             page.wait_for_timeout(30)
