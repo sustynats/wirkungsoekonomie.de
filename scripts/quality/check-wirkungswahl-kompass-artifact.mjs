@@ -18,6 +18,10 @@ assert.match(html, /Praxis &amp; Tools/, "Die Einbindung in die Werkzeugnavigati
 assert.match(html, /Wirkungsökonomie · Startseite/, "Der Rückweg zur Startseite fehlt im Artefakt.");
 assert.match(html, /impressum\.html/, "Der Impressumslink fehlt im Artefakt.");
 assert.match(html, /datenschutz\.html/, "Der Link zur Datenschutzerklärung fehlt im Artefakt.");
+assert.match(html, /property="og:title" content="Wirkungswahl-Kompass · in unabhängiger Prüfung"/, "Die Teilen-Vorschau enthält keinen passenden Titel.");
+assert.match(html, /property="og:description"/, "Die Teilen-Vorschau enthält keine Beschreibung.");
+assert.match(html, /property="og:url" content="https:\/\/wirkungsoekonomie\.de\/werkzeuge\/wirkungswahl-kompass\/"/, "Die Teilen-Vorschau enthält keine kanonische URL.");
+assert.match(html, /name="twitter:card" content="summary_large_image"/, "Die Teilen-Vorschau enthält keine Twitter-Card-Angabe.");
 assert.doesNotMatch(html, /Arbeitsdatei entferntumentElement/, "Der Artefakt-Scrubber hat Inline-JavaScript beschädigt.");
 
 const toolsOverview = path.resolve("_site/werkzeuge/index.html");
