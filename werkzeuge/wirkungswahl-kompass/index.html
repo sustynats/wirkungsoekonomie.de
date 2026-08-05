@@ -350,11 +350,29 @@ const POS_L={clear_support:'klare Zustimmung (+2)',leaning_support:'tendenzielle
 
 /* ---- State (nur lokal) ---- */
 const KEY='wwk_real_state_v1';
+const USER_SPACE_KEY='woek_user_space';
+const USER_SPACE_ITEM_ID='wirkungswahl-kompass-mein-ergebnis';
 const DEF={answers:{},reveal:false,compare:[],compareField:'A',qi:0};
 let S=load();
 function load(){try{return Object.assign({},DEF,JSON.parse(localStorage.getItem(KEY))||{})}catch(e){return {...DEF}}}
 function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
 function wipe(){try{localStorage.removeItem(KEY)}catch(e){} S={...DEF,answers:{},compare:[],compareField:'A',qi:0};}
+
+/* Der Kompass lädt bewusst nicht assets/js/main.js: dort würden Analytics und
+   weitere Seitendienste starten. Dieser kleine Adapter schreibt deshalb nur
+   einen kompatiblen, rein lokalen Merkeintrag in Mein Wirkungsraum. */
+function userSpaceDefaults(now){return {namespace:USER_SPACE_KEY,schema_version:3,created_at:now,updated_at:now,local_only:true,sync_ready:true,server_storage_enabled:false,
+  sync:{prepared:true,enabled:false,login_enabled:false,server_storage_enabled:false,user_id:null,auth_provider:null,device_id:null,synced_at:null,status:'local_only',conflict_strategy:'latest_updated_at_wins',conflict_log:[]},
+  objects:{saved_items:{version:1,updated_at:null,user_id:null,device_id:null,synced_at:null,sync_status:'local',conflicts:[],items:[]}}};}
+function userSpaceStore(now){let raw=null;try{raw=JSON.parse(localStorage.getItem(USER_SPACE_KEY)||'null');}catch(e){}
+  const store=raw&&typeof raw==='object'&&!Array.isArray(raw)&&raw.namespace===USER_SPACE_KEY?raw:userSpaceDefaults(now);
+  store.schema_version=Math.max(3,Number(store.schema_version)||0);store.created_at=store.created_at||now;store.updated_at=now;store.local_only=true;store.sync_ready=true;store.server_storage_enabled=false;
+  const sync=store.sync&&typeof store.sync==='object'&&!Array.isArray(store.sync)?store.sync:{};
+  store.sync={...sync,prepared:true,enabled:Boolean(sync.enabled),login_enabled:Boolean(sync.login_enabled),server_storage_enabled:Boolean(sync.server_storage_enabled),user_id:Object.prototype.hasOwnProperty.call(sync,'user_id')?sync.user_id:null,auth_provider:Object.prototype.hasOwnProperty.call(sync,'auth_provider')?sync.auth_provider:null,device_id:Object.prototype.hasOwnProperty.call(sync,'device_id')?sync.device_id:null,synced_at:null,status:'local_only',conflict_strategy:sync.conflict_strategy||'latest_updated_at_wins',conflict_log:Array.isArray(sync.conflict_log)?sync.conflict_log.slice(-100):[]};
+  store.objects=store.objects&&typeof store.objects==='object'&&!Array.isArray(store.objects)?store.objects:{};
+  const saved=store.objects.saved_items&&typeof store.objects.saved_items==='object'&&!Array.isArray(store.objects.saved_items)?store.objects.saved_items:{};
+  store.objects.saved_items={...saved,version:Math.max(1,Number(saved.version)||1),updated_at:saved.updated_at||null,user_id:Object.prototype.hasOwnProperty.call(saved,'user_id')?saved.user_id:store.sync.user_id,device_id:Object.prototype.hasOwnProperty.call(saved,'device_id')?saved.device_id:store.sync.device_id,synced_at:null,sync_status:'local_changed',conflicts:Array.isArray(saved.conflicts)?saved.conflicts.slice(-50):[],items:Array.isArray(saved.items)?saved.items.filter(item=>item&&typeof item==='object'&&!Array.isArray(item)):[]};
+  return store;}
 
 /* ---- Methodik-Helfer ---- */
 const {isAnswered,proximity,priorityProfile}=WWKLogic;
@@ -450,8 +468,9 @@ const SCREENS={
   <div class="eyebrow">Datenschutz &amp; Speicherung</div><h1>Deine Antworten bleiben lokal</h1>
   <div class="card"><ul style="margin:0;padding-left:18px;line-height:1.9">
     <li>Nutzung <b>ohne Konto</b>.</li><li>Antworten <b>nur lokal im Browser</b>.</li>
-    <li><b>Keine</b> Übertragung individueller Antwortprofile.</li><li>Keine personalisierte Werbung, keine Tracker.</li></ul></div>
-  <div class="card"><h3>Lokale Daten löschen</h3><button class="btn btn-danger" data-a="wipe">Alle lokalen Daten löschen</button></div>
+    <li><b>Keine</b> Übertragung individueller Antwortprofile.</li><li>Keine personalisierte Werbung, keine Tracker.</li>
+    <li>Beim ausdrücklichen Speichern in <b>Mein Wirkungsraum</b> entsteht nur eine lokale Merkkarte mit bis zu vier Prioritäten - ohne einzelne Antworten, Parteien oder Nähewerte.</li></ul></div>
+  <div class="card"><h3>Kompass-Antworten lokal löschen</h3><p class="small">Entfernt nur die Antworten dieses Kompasses. Eine bewusst gespeicherte Merkkarte bleibt in Mein Wirkungsraum und kann dort entfernt werden.</p><button class="btn btn-danger" data-a="wipe">Kompassdaten löschen</button></div>
   <div class="cta"><a class="btn btn-ghost" href="#/">Zur Startseite</a></div>`;
  },
  fragen(){
@@ -484,7 +503,7 @@ const SCREENS={
   <div class="figure">${radar(prof)}</div>
   <details class="disclosure" open><summary>Tabellen-Alternative</summary><div class="tblwrap"><table><thead><tr><th scope="col">Dimension</th><th class="cell" scope="col">Wichtigkeit (0–3)</th></tr></thead>
     <tbody>${rows.map(r=>`<tr><th scope="row"><span class="sw" style="display:inline-block;width:10px;height:10px;border-radius:2px;background:${dimVar(r.id)};margin-right:6px"></span>${esc(DIM[r.id].label)}</th><td class="cell" style="font-variant-numeric:tabular-nums">${r.val.toFixed(1)}</td></tr>`).join('')}</tbody></table></div></details>
-  <div class="cta"><a class="btn btn-primary" href="#/ergebnis">Weiter: Positionen vergleichen</a></div>`;
+  <div class="cta"><a class="btn btn-primary" href="#/ergebnis">Weiter: Positionen vergleichen</a><a class="btn btn-quiet" href="#/teilen">Ergebnis sichern &amp; teilen</a></div>`;
  },
  ergebnis(){const aq=answeredQs();if(!aq.length)return emptyState('Noch keine Antworten','Beantworte zuerst Fragen.','#/fragen','Zu den Fragen');
   const byField={};aq.forEach(q=>{(byField[q.field]=byField[q.field]||[]).push(q);});
@@ -564,13 +583,16 @@ const SCREENS={
     <p class="small mut" style="margin:.6em 0 0">${(DATA.resultCopy.sources||[]).map(esc).join(' ')}</p></div>
   <div class="cta"><a class="btn btn-ghost" href="#/">Startseite</a><a class="btn btn-quiet" href="#/datenschutz">Datenschutz</a></div>`;
  },
- teilen(){const prof=shareProfile();
-  return `<div class="eyebrow">Teilbare Grafik</div><h1>Neutrale Ergebnisgrafik</h1>
-  <p class="small">Zeigt <b>deine Prioritäten</b> — kein Parteibekenntnis, kein Ranking.</p>
+ teilen(){const prof=shareProfile(),ready=Boolean(prof.length),disabled=ready?'':' disabled';
+  return `<div class="eyebrow">Ergebnis sichern &amp; teilen</div><h1>Dein Prioritätenprofil</h1>
+  <p class="small">Es zeigt <b>deine Prioritäten</b> — kein Parteibekenntnis, keine Nähewerte und kein Ranking.</p>
   <div class="share"><div style="display:flex;align-items:center;gap:9px;margin-bottom:12px"><svg width="24" height="24" viewBox="0 0 26 26" aria-hidden="true"><circle cx="13" cy="9" r="5.2" fill="none" stroke="var(--ink)" stroke-width="1.7"/><circle cx="9" cy="16.5" r="5.2" fill="none" stroke="var(--green)" stroke-width="1.7"/><circle cx="17" cy="16.5" r="5.2" fill="none" stroke="var(--gold)" stroke-width="1.7"/></svg><b style="font-family:var(--serif)">Meine Wirkungs-Prioritäten</b></div>
-    ${prof.length?prof.map(p=>`<span class="pill">${esc(DIM_SHORT[p.id])}</span>`).join(''):'<p class="small">Noch keine Antworten.</p>'}
+    ${prof.length?prof.map(p=>`<span class="pill">${esc(DIM_SHORT[p.id])}</span>`).join(''):'<p class="small">Noch keine gewichteten Prioritäten. Setze bei den Fragen zuerst die Wichtigkeit.</p>'}
     <p class="small" style="margin:14px 0 0">Wirkungswahl-Kompass · ${esc(DATA.meta.claim)}</p></div>
-  <div class="btn-row"><button class="btn btn-primary" data-a="download-priority-graphic">Grafik als SVG laden</button><button class="btn btn-ghost" data-a="share-priority">Prioritäten teilen</button></div>
+  <div class="card"><h2>In Mein Wirkungsraum speichern</h2><p class="small">Nur auf deinen Klick wird eine lokale Merkkarte mit den wichtigsten Prioritäten gespeichert. Einzelne Antworten, Parteien und Nähewerte werden nicht übernommen.</p>
+    <div class="btn-row"><button class="btn btn-primary" data-a="save-priority-profile"${disabled}>In Mein Wirkungsraum speichern</button><a class="btn btn-ghost" href="../../mein-wirkungsraum/#gemerkte-inhalte">Mein Wirkungsraum öffnen</a></div></div>
+  <div class="card"><h2>Download &amp; teilen</h2><p class="small">Die Dateien enthalten nur das sichtbare Prioritätenprofil und den Hinweis „keine Wahlempfehlung“.</p>
+    <div class="btn-row"><button class="btn btn-ghost" data-a="download-priority-png"${disabled}>Als PNG laden</button><button class="btn btn-ghost" data-a="download-priority-pdf"${disabled}>Als PDF laden</button><button class="btn btn-quiet" data-a="download-priority-graphic"${disabled}>Als SVG laden</button><button class="btn btn-quiet" data-a="share-priority"${disabled}>Prioritäten teilen</button></div></div>
   <p id="share-status" class="small" role="status" aria-live="polite"></p>
   <div class="cta"><a class="btn btn-ghost" href="#/profil">Zum Profil</a></div>`;
  },
@@ -583,16 +605,28 @@ function emptyState(h,p,href,btn){return `<div class="card" style="text-align:ce
 function notFound(){return emptyState('Nicht gefunden','Dieser Bereich existiert nicht.','#/','Zur Startseite');}
 function clamp(v,a,b){return Math.max(a,Math.min(b,v));}
 function shareProfile(){return importanceProfile().filter(p=>p.val>0).sort((a,b)=>b.val-a.val).slice(0,4);}
-function priorityShareText(){const labels=shareProfile().map(p=>DIM_SHORT[p.id]).filter(Boolean);return `Meine Wirkungs-Prioritäten: ${labels.length?labels.join(' · '):'noch nicht festgelegt'}. Wirkungswahl-Kompass – keine Wahlempfehlung.`;}
-function priorityGraphicSvg(){const lines=shareProfile().map(p=>DIM_SHORT[p.id]).filter(Boolean);const items=lines.length?lines:['Noch keine Prioritäten festgelegt'];const height=156+items.length*34;const xml=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[c]));return `<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" width="1200" height="${height}" viewBox="0 0 1200 ${height}" role="img" aria-label="Meine Wirkungs-Prioritäten"><rect width="1200" height="${height}" fill="#f6f3ec"/><rect x="44" y="36" width="1112" height="${height-72}" rx="28" fill="#fffdf8" stroke="#cfc7b4"/><text x="86" y="92" fill="#12213a" font-family="Georgia, serif" font-size="42" font-weight="700">Meine Wirkungs-Prioritäten</text><text x="86" y="126" fill="#775000" font-family="Arial, sans-serif" font-size="20">Wirkungswahl-Kompass · keine Wahlempfehlung</text>${items.map((item,index)=>`<text x="86" y="${178+index*34}" fill="#12213a" font-family="Arial, sans-serif" font-size="25">• ${xml(item)}</text>`).join('')}</svg>`;}
 function announceShare(message){const status=document.getElementById('share-status');if(status)status.textContent=message;}
-function downloadPriorityGraphic(){const blob=new Blob([priorityGraphicSvg()],{type:'image/svg+xml;charset=utf-8'});const href=URL.createObjectURL(blob);const link=document.createElement('a');link.href=href;link.download='meine-wirkungs-prioritaeten.svg';link.click();setTimeout(()=>URL.revokeObjectURL(href),0);announceShare('Die neutrale Prioritätengrafik wurde als SVG geladen.');}
-async function sharePriority(){const text=priorityShareText(),url=`${location.href.split('#')[0]}#/teilen`;try{if(navigator.share){await navigator.share({title:'Meine Wirkungs-Prioritäten',text,url});announceShare('Deine neutralen Prioritäten wurden zum Teilen vorbereitet.');return;}if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(`${text}\n${url}`);announceShare('Der neutrale Prioritäten-Text wurde in die Zwischenablage kopiert.');return;}announceShare('Teilen ist hier nicht verfügbar. Du kannst die Grafik als SVG laden.');}catch(error){if(error&&error.name==='AbortError'){announceShare('Teilen abgebrochen.');}else{announceShare('Teilen ist hier nicht verfügbar. Du kannst die Grafik als SVG laden.');}}}
+function priorityLabels(withValue=false){return shareProfile().map(p=>{const label=DIM_SHORT[p.id]||p.id;return withValue?`${label} · Wichtigkeit ${p.val.toFixed(1).replace('.',',')} von 3`:label;});}
+function priorityShareText(){const labels=priorityLabels();return `Meine Wirkungs-Prioritäten: ${labels.length?labels.join(' · '):'noch nicht festgelegt'}. Wirkungswahl-Kompass – keine Wahlempfehlung.`;}
+function priorityGraphicGeometry(){return {width:1200,height:156+Math.max(shareProfile().length,1)*34};}
+function priorityGraphicSvg(){const lines=priorityLabels(true),items=lines.length?lines:['Noch keine Prioritäten festgelegt'],{width,height}=priorityGraphicGeometry();const xml=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[c]));return `<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-label="Meine Wirkungs-Prioritäten"><rect width="${width}" height="${height}" fill="#f6f3ec"/><rect x="44" y="36" width="${width-88}" height="${height-72}" rx="28" fill="#fffdf8" stroke="#cfc7b4"/><text x="86" y="92" fill="#12213a" font-family="Georgia, serif" font-size="42" font-weight="700">Meine Wirkungs-Prioritäten</text><text x="86" y="126" fill="#775000" font-family="Arial, sans-serif" font-size="20">Wirkungswahl-Kompass · keine Wahlempfehlung</text>${items.map((item,index)=>`<text x="86" y="${178+index*34}" fill="#12213a" font-family="Arial, sans-serif" font-size="25">• ${xml(item)}</text>`).join('')}</svg>`;}
+function downloadBlob(blob,filename){const href=URL.createObjectURL(blob),link=document.createElement('a');link.href=href;link.download=filename;link.hidden=true;document.body.appendChild(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(href),0);}
+function downloadPriorityGraphic(){downloadBlob(new Blob([priorityGraphicSvg()],{type:'image/svg+xml;charset=utf-8'}),'meine-wirkungs-prioritaeten.svg');announceShare('Die neutrale Prioritätengrafik wurde als SVG geladen.');}
+function priorityGraphicCanvas(){const {width,height}=priorityGraphicGeometry();return new Promise((resolve,reject)=>{const image=new Image();image.onload=()=>{try{const canvas=document.createElement('canvas'),context=canvas.getContext('2d');if(!context)throw new Error('Grafik kann nicht gerendert werden.');canvas.width=width;canvas.height=height;context.fillStyle='#f6f3ec';context.fillRect(0,0,width,height);context.drawImage(image,0,0,width,height);resolve(canvas);}catch(error){reject(error);}};image.onerror=()=>reject(new Error('Grafik kann nicht gerendert werden.'));image.src=`data:image/svg+xml;charset=utf-8,${encodeURIComponent(priorityGraphicSvg())}`;});}
+function canvasBlob(canvas,type,quality){return new Promise((resolve,reject)=>canvas.toBlob(blob=>blob?resolve(blob):reject(new Error('Datei kann nicht erstellt werden.')),type,quality));}
+async function downloadPriorityPng(){try{const canvas=await priorityGraphicCanvas(),blob=await canvasBlob(canvas,'image/png');downloadBlob(blob,'meine-wirkungs-prioritaeten.png');announceShare('Dein Prioritätenprofil wurde als PNG geladen.');}catch(error){announceShare('PNG konnte in diesem Browser nicht erstellt werden.');}}
+function dataUrlBytes(value){const binary=atob(String(value).split(',',2)[1]||''),bytes=new Uint8Array(binary.length);for(let i=0;i<binary.length;i+=1)bytes[i]=binary.charCodeAt(i);return bytes;}
+function textBytes(value){return new TextEncoder().encode(value);}
+function joinBytes(parts){const size=parts.reduce((sum,part)=>sum+part.length,0),out=new Uint8Array(size);let offset=0;parts.forEach(part=>{out.set(part,offset);offset+=part.length;});return out;}
+function priorityPdfBytes(imageBytes,imageWidth,imageHeight){const pageWidth=842,pageHeight=595,margin=36,scale=Math.min((pageWidth-margin*2)/imageWidth,(pageHeight-margin*2)/imageHeight),drawWidth=imageWidth*scale,drawHeight=imageHeight*scale,x=(pageWidth-drawWidth)/2,y=(pageHeight-drawHeight)/2,content=`q\n${drawWidth.toFixed(2)} 0 0 ${drawHeight.toFixed(2)} ${x.toFixed(2)} ${y.toFixed(2)} cm\n/Im0 Do\nQ`,contentBytes=textBytes(content),objects=[textBytes('<< /Type /Catalog /Pages 2 0 R >>'),textBytes('<< /Type /Pages /Kids [3 0 R] /Count 1 >>'),textBytes(`<< /Type /Page /Parent 2 0 R /MediaBox [0 0 ${pageWidth} ${pageHeight}] /Resources << /XObject << /Im0 4 0 R >> >> /Contents 5 0 R >>`),joinBytes([textBytes(`<< /Type /XObject /Subtype /Image /Width ${imageWidth} /Height ${imageHeight} /ColorSpace /DeviceRGB /BitsPerComponent 8 /Filter /DCTDecode /Length ${imageBytes.length} >>\nstream\n`),imageBytes,textBytes('\nendstream')]),textBytes(`<< /Length ${contentBytes.length} >>\nstream\n${content}\nendstream`)],header=textBytes('%PDF-1.4\n%Wirkungswahl-Kompass\n');let offset=header.length;const offsets=[0],parts=[header];objects.forEach((object,index)=>{const before=textBytes(`${index+1} 0 obj\n`),after=textBytes('\nendobj\n');offsets.push(offset);parts.push(before,object,after);offset+=before.length+object.length+after.length;});const xrefOffset=offset;let xref=`xref\n0 ${objects.length+1}\n0000000000 65535 f \n`;offsets.slice(1).forEach(value=>{xref+=`${String(value).padStart(10,'0')} 00000 n \n`;});parts.push(textBytes(`${xref}trailer\n<< /Size ${objects.length+1} /Root 1 0 R >>\nstartxref\n${xrefOffset}\n%%EOF\n`));return joinBytes(parts);}
+async function downloadPriorityPdf(){try{const canvas=await priorityGraphicCanvas(),jpeg=dataUrlBytes(canvas.toDataURL('image/jpeg',.92)),pdf=priorityPdfBytes(jpeg,canvas.width,canvas.height);downloadBlob(new Blob([pdf],{type:'application/pdf'}),'meine-wirkungs-prioritaeten.pdf');announceShare('Dein Prioritätenprofil wurde als PDF geladen.');}catch(error){announceShare('PDF konnte in diesem Browser nicht erstellt werden.');}}
+function savePriorityProfile(){const priorities=shareProfile();if(!priorities.length){announceShare('Setze zuerst die Wichtigkeit für mindestens ein Thema.');return false;}const now=new Date().toISOString();try{const store=userSpaceStore(now),saved=store.objects.saved_items,existing=saved.items.find(item=>item.id===USER_SPACE_ITEM_ID),summary=priorities.map(p=>({dimension:p.id,label:DIM_SHORT[p.id]||p.id})),item={id:USER_SPACE_ITEM_ID,type:'Werkzeug',title:'Wirkungswahl-Kompass – Meine Prioritäten',url:'/werkzeuge/wirkungswahl-kompass/#/teilen',category:'Wirkungswahl-Kompass',tags:summary.map(p=>p.label),saved_at:existing&&existing.saved_at||now,updated_at:now,synced_at:null,sync_status:'local_changed',result_summary:{kind:'priority_profile',data_version:DATA.meta.dataVersion,answered_questions:answeredQs().length,top_priorities:summary}};saved.items=[item,...saved.items.filter(entry=>entry.id!==USER_SPACE_ITEM_ID)].slice(0,300);saved.updated_at=now;saved.user_id=store.sync.user_id;saved.device_id=store.sync.device_id;saved.synced_at=null;saved.sync_status='local_changed';store.updated_at=now;localStorage.setItem(USER_SPACE_KEY,JSON.stringify(store));announceShare('Dein Prioritätenprofil wurde lokal in Mein Wirkungsraum gespeichert.');return true;}catch(error){announceShare('Mein Wirkungsraum konnte in diesem Browser nicht gespeichert werden.');return false;}}
+async function sharePriority(){if(!shareProfile().length){announceShare('Setze zuerst die Wichtigkeit für mindestens ein Thema.');return;}const text=priorityShareText(),url=`${location.href.split('#')[0]}#/teilen`;try{if(navigator.share){await navigator.share({title:'Meine Wirkungs-Prioritäten',text,url});announceShare('Deine neutralen Prioritäten wurden zum Teilen vorbereitet.');return;}if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(`${text}\n${url}`);announceShare('Der neutrale Prioritäten-Text wurde in die Zwischenablage kopiert.');return;}announceShare('Teilen ist hier nicht verfügbar. Du kannst PNG oder PDF laden.');}catch(error){if(error&&error.name==='AbortError'){announceShare('Teilen abgebrochen.');}else{announceShare('Teilen ist hier nicht verfügbar. Du kannst PNG oder PDF laden.');}}}
 
 /* ================= Router ================= */
 const MENU=[['#/','Start'],['#/methodik','Methodik'],['#/fragen','Fragen'],['#/profil','Persönliches Profil'],
   ['#/ergebnis','Themenmatrix'],['#/vergleich','Vergleich'],['#/transparenz','Transparenz &amp; Quellen'],
-  ['#/teilen','Ergebnisgrafik'],['#/datenschutz','Datenschutz'],['../../werkzeuge/','Zur Website: Werkzeuge']];
+  ['#/teilen','Ergebnis sichern &amp; teilen'],['#/datenschutz','Datenschutz'],['../../werkzeuge/','Zur Website: Werkzeuge']];
 function render(focusSelector){const seg=(location.hash.replace(/^#/,'')||'/').split('/').filter(Boolean);const view=document.getElementById('view');
   let html='',name=seg[0]||'landing';
   try{
@@ -614,8 +648,11 @@ function render(focusSelector){const seg=(location.hash.replace(/^#/,'')||'/').s
 document.addEventListener('click',e=>{const t=e.target.closest('[data-action],[data-a]');if(!t)return;const act=t.dataset.action||t.dataset.a;
   if(act==='theme'){const c=document.documentElement.getAttribute('data-theme'),n=c==='dark'?'light':c==='light'?'':'dark';if(n)document.documentElement.setAttribute('data-theme',n);else document.documentElement.removeAttribute('data-theme');return;}
   if(act==='menu'){openSheet(true);return;} if(act==='menu-close'){openSheet(false);return;}
-  if(act==='wipe'){if(confirm('Alle lokalen Daten löschen?')){wipe();render();}return;}
+  if(act==='wipe'){if(confirm('Kompass-Antworten in diesem Browser löschen?')){wipe();render();}return;}
+  if(act==='save-priority-profile'){savePriorityProfile();return;}
   if(act==='download-priority-graphic'){downloadPriorityGraphic();return;}
+  if(act==='download-priority-png'){downloadPriorityPng();return;}
+  if(act==='download-priority-pdf'){downloadPriorityPdf();return;}
   if(act==='share-priority'){sharePriority();return;}
   if(act==='reveal'){S.reveal=!S.reveal;save();render('[data-a="reveal"]');return;}
   if(act==='goto'){location.hash=t.dataset.h;return;}
