@@ -45,9 +45,24 @@ def paragraph_html(el: ET.Element) -> str:
         out.append(value)
     return "".join(out)
 def linkify(value: str) -> str:
+    """Render URLs and DOI references once, without matching generated hrefs."""
+    def url_anchor(match: re.Match[str]) -> str:
+        url = match.group(1)
+        return f'<a href="{url}">{url}</a>'
+
+    def doi_anchor(match: re.Match[str]) -> str:
+        prefix, doi = match.group(1), match.group(2)
+        trailing = ""
+        while doi and doi[-1] in ".,;:":
+            trailing = doi[-1] + trailing
+            doi = doi[:-1]
+        return f'{prefix}<a href="https://doi.org/{doi}">{doi}</a>{trailing}'
+
     value = esc(value)
-    value = re.sub(r"(DOI:\s*)(10\.\d{4,9}/[-._;()/:A-Za-z0-9]+)", r'\1<a href="https://doi.org/\2">\2</a>', value)
-    return re.sub(r"(https?://[^\s<]+)", r'<a href="\1">\1</a>', value)
+    # Link URLs first. The subsequent DOI substitution then only sees plain DOI
+    # identifiers, rather than the URL introduced in an href attribute.
+    value = re.sub(r"(https?://[^\s<]+)", url_anchor, value)
+    return re.sub(r"(DOI:\s*)(10\.\d{4,9}/[-._;()/:A-Za-z0-9]+)", doi_anchor, value)
 def rows(table: ET.Element) -> list[list[str]]:
     return [[" ".join(text(p) for p in cell.findall("w:p", NS) if text(p)).strip() for cell in row.findall("w:tc", NS)] for row in table.findall("w:tr", NS)]
 def table_html(table: ET.Element) -> str:
@@ -64,7 +79,9 @@ def table_html(table: ET.Element) -> str:
 
 def copy_assets() -> dict[str, str]:
     ASSETS.mkdir(parents=True, exist_ok=True)
-    shutil.copy2(TITLE_IMAGE, ASSETS / IMAGE)
+    title_target = ASSETS / IMAGE
+    if TITLE_IMAGE.resolve() != title_target.resolve():
+        shutil.copy2(TITLE_IMAGE, title_target)
     with ZipFile(SOURCE_DOCX) as doc:
         rels = ET.fromstring(doc.read("word/_rels/document.xml.rels"))
         mapping = {rel.get("Id"): rel.get("Target") for rel in rels if rel.get("Type", "").endswith("/image")}
@@ -125,7 +142,7 @@ def write_article(figures: dict[str, str]) -> None:
 <title>{esc(TITLE)} - Journal der Wirkungsökonomie</title><meta name="description" content="{esc(DESCRIPTION)}"><meta name="search_title" content="{esc(TITLE)}"><meta name="search_description" content="{esc(DESCRIPTION)}"><meta name="search_section" content="Journal"><meta name="search_type" content="Journalartikel"><meta name="search_index_kind" content="journal"><meta name="search_tags" content="Wirkungsökonomie, soziale Dilemmata, Gefangenendilemma, Tragik der Allmende, Vertrauen, Kooperation, Wirkungsintegrität, SDG+, Reverse Merit Order, Demokratie"><link rel="canonical" href="https://wirkungsoekonomie.de/blog/{SLUG}.html"><meta property="og:type" content="article"><meta property="og:locale" content="de_DE"><meta property="og:site_name" content="Wirkungsökonomie"><meta property="og:title" content="{esc(TITLE)}"><meta property="og:description" content="{esc(DESCRIPTION)}"><meta property="og:url" content="https://wirkungsoekonomie.de/blog/{SLUG}.html"><meta property="og:image" content="https://wirkungsoekonomie.de/assets/img/blog/{IMAGE}"><meta property="og:image:alt" content="Geteiltes Spielfeld: Ausbeutung und Kooperation als zwei Systemlogiken."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{esc(TITLE)}"><meta name="twitter:description" content="{esc(DESCRIPTION)}"><meta name="twitter:image" content="https://wirkungsoekonomie.de/assets/img/blog/{IMAGE}"><meta property="article:published_time" content="{DATE_ISO}"><meta property="article:modified_time" content="{DATE_ISO}"><meta property="article:section" content="Grundlagen der Wirkungsökonomie"><meta property="article:tag" content="soziale Dilemmata"><meta property="article:tag" content="Kooperation"><meta property="article:tag" content="Vertrauen"><meta property="article:tag" content="Wirkungsintegrität"><meta property="article:tag" content="SDG+"><meta property="article:tag" content="Reverse Merit Order"><link rel="alternate" type="application/rss+xml" title="Journal der Wirkungsökonomie" href="https://wirkungsoekonomie.de/feeds/journal.xml"><link rel="icon" href="../assets/img/brand/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/css/style.css?v=20260612-mobile-table-fix"><script type="application/ld+json">{json.dumps(schema, ensure_ascii=False)}</script></head><body>
 {header}    <main data-pagefind-body><article class="hero"><div class="hero-copy"><p class="hero-kicker">Grundlagen der Wirkungsökonomie · {DATE} · 28 Min.</p><h1 class="hero-title">{esc(TITLE)}</h1><p class="hero-subtitle">{esc(SUBTITLE)}</p><p class="journal-pdf-download-row no-print" data-search-exclude><a class="btn btn-secondary journal-pdf-download" data-journal-pdf-download href="../assets/pdf/journal/{SLUG}.pdf" download>PDF herunterladen</a></p><p class="meta">Von Natalie Weber · Begründerin der Wirkungsökonomie</p></div><figure class="hero-system-visual article-visual"><img src="../assets/img/blog/{IMAGE}" width="2048" height="1152" alt="Geteiltes Spielfeld: Ausbeutung und Kooperation als zwei Systemlogiken." decoding="async" fetchpriority="high"></figure></article><section class="article-page"><div class="article-body"><div class="status-note"><strong>Einordnung:</strong> Dieser Grundlagenbeitrag beschreibt ein WÖk-Modell. Er ist keine individuelle Anlage-, Rechts- oder Verhaltensberatung und ersetzt keine disziplinäre Literaturübersicht.</div>
 {content}
-          <p><strong>Weiterlesen:</strong> <a class="text-link" href="../begriffe/wirkungsintegritaet/">Wirkungsintegrität</a>, <a class="text-link" href="../begriffe/kooperative-wehrhaftigkeit/">kooperative Wehrhaftigkeit</a>, <a class="text-link" href="../begriffe/positive-netto-wirkung/">positive Netto-Wirkung</a> und <a class="text-link" href="../verstehen/sdgs-sdgplus/">SDG+</a>.</p><p><a class="text-link" href="../blog.html">Zurück zum Journal</a></p></div></section></main>
+          <p><strong>Weiterlesen:</strong> Wirkungsintegrität, kooperative Wehrhaftigkeit, <a class="text-link" href="../begriffe/positive-netto-wirkung/">positive Netto-Wirkung</a> und <a class="text-link" href="../verstehen/sdgs-sdgplus/">SDG+</a>.</p><p><a class="text-link" href="../blog.html">Zurück zum Journal</a></p></div></section></main>
 {footer}''', encoding="utf-8")
 
 if __name__ == "__main__":
