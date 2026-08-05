@@ -16,6 +16,7 @@ const SNAPSHOT_PATH = "content/quellenarchiv/sources.json";
 const GLOSSARY_SOURCE_PATH = "content/quellenarchiv/glossary-source-records.json";
 const EVIDENCE_SOURCE_PATH = "content/quellenarchiv/evidence-source-records.json";
 const LEGAL_SOURCE_PATH = "content/quellenarchiv/legal-source-records.json";
+const PUBLICATION_SUPPLEMENT_DIR = "content/quellenarchiv/publication-supplements";
 const EVIDENCE_REGISTRY_PATH = "content/sources/evidence-source-registry.json";
 const OUT_DIR = "quellenarchiv";
 const CSS_VERSION = "20260612-mobile-table-fix";
@@ -28,30 +29,173 @@ const footerTemplate = fs.readFileSync("templates/footer.html", "utf8");
 // ---------------------------------------------------------------------------
 // Datenquelle laden (Snapshot; optional API-Refresh)
 // ---------------------------------------------------------------------------
+function normalizedPublicationLinks(value, context) {
+  const rawLinks = Array.isArray(value) ? value : value ? [value] : [];
+  const seen = new Map();
+  for (const rawLink of rawLinks) {
+    if (!rawLink || typeof rawLink !== "object") {
+      throw new Error(`${context}: relatedPublications enthält keinen gültigen Eintrag`);
+    }
+    const title = String(rawLink.title || "").trim();
+    const url = String(rawLink.url || "").trim();
+    if (!title || !url) {
+      throw new Error(`${context}: relatedPublications benötigt title und url`);
+    }
+    const link = { ...rawLink, title, url };
+    const key = `${url.replace(/\/$/, "")}|${title}`;
+    seen.set(key, { ...(seen.get(key) || {}), ...link });
+  }
+  return [...seen.values()];
+}
+
+function mergedPublicationLinks(...values) {
+  const merged = [];
+  const seen = new Map();
+  for (const value of values) {
+    for (const link of normalizedPublicationLinks(value, "Quellenarchiv-Publikationssupplement")) {
+      const key = `${link.url.replace(/\/$/, "")}|${link.title}`;
+      seen.set(key, { ...(seen.get(key) || {}), ...link });
+    }
+  }
+  for (const link of seen.values()) merged.push(link);
+  return merged;
+}
+
+function overrideEntries(value, file) {
+  if (!value) return [];
+  if (Array.isArray(value)) {
+    return value.map((entry) => {
+      const code = String(entry?.code || "").trim();
+      if (!code || !entry || typeof entry !== "object") {
+        throw new Error(`Ungültiger Override in ${file}: code fehlt`);
+      }
+      const { code: _code, ...patch } = entry;
+      return [code, patch];
+    });
+  }
+  if (typeof value !== "object") throw new Error(`Ungültige overrides-Struktur in ${file}`);
+  return Object.entries(value).map(([rawCode, patch]) => {
+    const code = String(rawCode || "").trim();
+    if (!code || !patch || typeof patch !== "object" || Array.isArray(patch)) {
+      throw new Error(`Ungültiger Override in ${file}: ${rawCode || "code fehlt"}`);
+    }
+    return [code, patch];
+  });
+}
+
+// Zusätzlich zu den Quellen selbst kann ein Supplement Beziehungen deklarieren.
+// Unterstützte Formen:
+// { "WÖK-Q-0001": [{ title, url, label }] }
+// oder [{ sourceCode: "WÖK-Q-0001", publications: [{ title, url, label }] }].
+function relatedPublicationEntries(value, file) {
+  if (!value) return [];
+  if (Array.isArray(value)) {
+    return value.map((entry) => {
+      const code = String(entry?.sourceCode || entry?.source || entry?.code || "").trim();
+      if (!code || !entry || typeof entry !== "object") {
+        throw new Error(`Ungültiger relatedPublications-Eintrag in ${file}: Quellen-ID fehlt`);
+      }
+      const publications = entry.publications ?? entry.items ?? entry.relatedPublications ?? (
+        entry.title || entry.url ? [{ title: entry.title, url: entry.url, label: entry.label }] : []
+      );
+      return [code, normalizedPublicationLinks(publications, `${file}: ${code}`)];
+    });
+  }
+  if (typeof value !== "object") throw new Error(`Ungültige relatedPublications-Struktur in ${file}`);
+  return Object.entries(value).map(([rawCode, publications]) => {
+    const code = String(rawCode || "").trim();
+    if (!code) throw new Error(`Ungültiger relatedPublications-Eintrag in ${file}: Quellen-ID fehlt`);
+    const links = publications?.publications ?? publications?.items ?? publications?.relatedPublications ?? publications;
+    return [code, normalizedPublicationLinks(links, `${file}: ${code}`)];
+  });
+}
+
+function publicationSupplementPaths() {
+  if (!fs.existsSync(PUBLICATION_SUPPLEMENT_DIR)) return [];
+  return fs.readdirSync(PUBLICATION_SUPPLEMENT_DIR)
+    .filter((name) => name.endsWith(".json"))
+    .sort((a, b) => a.localeCompare(b, "de"))
+    .map((name) => path.join(PUBLICATION_SUPPLEMENT_DIR, name));
+}
+
 function mergeSupplementalSourceRecords(data) {
   const supplementalPaths = [GLOSSARY_SOURCE_PATH, EVIDENCE_SOURCE_PATH, LEGAL_SOURCE_PATH]
     .filter((file) => fs.existsSync(file));
-  if (!supplementalPaths.length) return data;
-  const byCode = new Map();
   const clusterLabels = new Map((data.clusters || []).map((cluster) => [cluster.key, cluster.label]));
+  const byCode = new Map();
+  for (const source of data.sources || []) {
+    const code = String(source?.code || "").trim();
+    if (!code) throw new Error("Quellenarchiv-Snapshot enthält eine Quellen-ID ohne Wert");
+    if (byCode.has(code)) throw new Error(`Doppelte Quellen-ID im Snapshot: ${code}`);
+    byCode.set(code, source);
+  }
+
+  // Bereits bestehende ergänzende Register behalten ihre bisherige Semantik:
+  // Die Basisquelle hat bei einer gleichlautenden ID Vorrang.
+  const additionalCodes = new Set();
   for (const file of supplementalPaths) {
     const extra = JSON.parse(fs.readFileSync(file, "utf8"));
     for (const cluster of extra.clusters || []) clusterLabels.set(cluster.key, cluster.label);
     for (const source of extra.sources || []) {
-      if (source?.code && byCode.has(source.code)) {
+      const code = String(source?.code || "").trim();
+      if (!code) throw new Error(`Ergänzende Quelle ohne ID: ${file}`);
+      if (additionalCodes.has(code)) {
         throw new Error(`Doppelte ergänzende Quellen-ID: ${source.code} (${file})`);
       }
-      if (source?.code) byCode.set(source.code, source);
+      additionalCodes.add(code);
+      if (!byCode.has(code)) byCode.set(code, source);
     }
   }
-  for (const source of data.sources || []) {
-    if (source?.code) byCode.set(source.code, source);
+
+  // Veröffentlichungen können Quellen ergänzen oder bestehende Quellen gezielt
+  // anreichern. Neue IDs gehören in sources; Änderungen an einer bestehenden ID
+  // gehören in overrides. Dadurch bleiben Kollisionen sichtbar und mehrere
+  // Veröffentlichungen können ihre Rückverweise verlustfrei zusammenführen.
+  for (const file of publicationSupplementPaths()) {
+    const supplement = JSON.parse(fs.readFileSync(file, "utf8"));
+    if (!supplement || typeof supplement !== "object" || Array.isArray(supplement)) {
+      throw new Error(`Ungültiges Quellenarchiv-Publikationssupplement: ${file}`);
+    }
+    for (const cluster of supplement.clusters || []) clusterLabels.set(cluster.key, cluster.label);
+    for (const source of supplement.sources || []) {
+      const code = String(source?.code || "").trim();
+      if (!code) throw new Error(`Publikationssupplement enthält eine Quelle ohne ID: ${file}`);
+      if (byCode.has(code)) {
+        throw new Error(`Publikationssupplement dupliziert Quellen-ID ${code} (${file}); verwende overrides.`);
+      }
+      byCode.set(code, {
+        ...source,
+        code,
+        relatedPublications: mergedPublicationLinks(source.relatedPublications)
+      });
+    }
+    for (const [code, patch] of overrideEntries(supplement.overrides, file)) {
+      const current = byCode.get(code);
+      if (!current) throw new Error(`Publikationssupplement überschreibt unbekannte Quellen-ID ${code} (${file})`);
+      const { relatedPublications: patchLinks, ...values } = patch;
+      byCode.set(code, {
+        ...current,
+        ...values,
+        relatedPublications: mergedPublicationLinks(current.relatedPublications, patchLinks)
+      });
+    }
+    for (const [code, links] of relatedPublicationEntries(supplement.relatedPublications, file)) {
+      const current = byCode.get(code);
+      if (!current) throw new Error(`Publikationssupplement verknüpft unbekannte Quellen-ID ${code} (${file})`);
+      byCode.set(code, {
+        ...current,
+        relatedPublications: mergedPublicationLinks(current.relatedPublications, links)
+      });
+    }
   }
-  const sources = [...byCode.values()].sort((a, b) => String(a.code).localeCompare(String(b.code), "de"));
+
+  const sources = [...byCode.values()]
+    .map((source) => ({ ...source, relatedPublications: mergedPublicationLinks(source.relatedPublications) }))
+    .sort((a, b) => String(a.code).localeCompare(String(b.code), "de"));
   const clusters = [...clusterLabels.entries()]
     .map(([key, label]) => ({ key, label, count: sources.filter((source) => source.cluster === key).length }))
     .filter((cluster) => cluster.count > 0);
-  return { ...data, sources, clusters };
+  return { ...data, count: sources.length, sources, clusters };
 }
 
 function attachEvidenceRegistryMetadata(data) {
@@ -308,8 +452,14 @@ function detailBody(source, clusterLabels) {
   const s = slug(source.code);
   const clusterLabel = source.clusterLabel || clusterLabels[source.cluster] || source.cluster || "";
   const ext = externalLink(source);
+  const externalLocator = /^https?:\/\//i.test(ext);
+  const locatorAttributes = externalLocator ? ' target="_blank" rel="noopener noreferrer"' : "";
+  const relatedPublications = mergedPublicationLinks(source.relatedPublications);
   const impactChips = (source.impactFields || [])
     .map((f) => `<span class="term-chip">${esc(f)}</span>`)
+    .join("\n            ");
+  const relatedPublicationItems = relatedPublications
+    .map((publication) => `<li><a class="text-link" href="${esc(publication.url)}">${esc(publication.title)}</a>${publication.label ? ` <span class="muted">(${esc(publication.label)})</span>` : ""}</li>`)
     .join("\n            ");
 
   const metaRow = [
@@ -320,7 +470,7 @@ function detailBody(source, clusterLabels) {
   ].filter(Boolean).join("\n            ");
 
   const actions = [
-    ext ? `<a class="btn btn-primary" href="${esc(ext)}" target="_blank" rel="noopener noreferrer">${externalLinkLabel(source)}</a>` : "",
+    ext ? `<a class="btn btn-primary" href="${esc(ext)}"${locatorAttributes}>${externalLinkLabel(source)}</a>` : "",
     `<a class="btn btn-secondary" href="../">Alle Quellen</a>`,
     `<a class="btn btn-secondary" href="../../suche.html?q=${encodeURIComponent(source.title || source.code)}">Website durchsuchen</a>`
   ].filter(Boolean).join("\n            ");
@@ -340,6 +490,7 @@ function detailBody(source, clusterLabels) {
     ["DOI", source.doi ? `<a class="text-link" href="https://doi.org/${esc(source.doi)}" target="_blank" rel="noopener noreferrer">${esc(source.doi)}</a>` : ""],
     ["Evidenzregister-ID", source.evidenceRegistryId ? esc(source.evidenceRegistryId) : ""],
     ["Quellenqualität im Evidenzregister", source.evidenceQuality ? `Stufe ${esc(source.evidenceQuality)}` : ""],
+    ...(relatedPublications.length && source.citation ? [["Zitierform", esc(source.citation)]] : []),
     ["Quellen-ID", esc(source.code)]
   ].filter(([, v]) => v);
 
@@ -401,13 +552,23 @@ function detailBody(source, clusterLabels) {
           </div>
         </section>` : ""}
 
+        ${relatedPublicationItems ? `<section class="term-link-section source-related-publications" aria-labelledby="used-in-${s}">
+          <div>
+            <p class="section-eyebrow">Publikationsbezug</p>
+            <h2 id="used-in-${s}">Verwendet in</h2>
+          </div>
+          <ul class="clean-list">
+            ${relatedPublicationItems}
+          </ul>
+        </section>` : ""}
+
         <section class="meta-box source-steckbrief" aria-labelledby="steckbrief-${s}">
           <h2 id="steckbrief-${s}">Steckbrief</h2>
           <dl class="source-fact-grid">
 ${factRows}
           </dl>
           ${locatorNote(source) ? `<p class="source-provenance">${esc(locatorNote(source))}</p>` : ""}
-          ${ext ? `<p><a class="text-link" href="${esc(ext)}" target="_blank" rel="noopener noreferrer">${esc(ext)} ↗</a></p>` : ""}
+          ${ext ? `<p><a class="text-link" href="${esc(ext)}"${locatorAttributes}>${esc(ext)}${externalLocator ? " ↗" : ""}</a></p>` : ""}
           <p class="muted source-readonly-note">Diese Detailseite ordnet die Quelle ein. Maßgeblich bleibt die verlinkte Originalquelle oder bibliografische Fundstelle.</p>
         </section>
       </article>`;

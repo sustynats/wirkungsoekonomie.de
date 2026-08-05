@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-02T19:45:36.487Z",
+  "generatedAt": "2026-08-05T18:34:48.165Z",
   "schema": {
     "term": "canonicalLabel",
     "shortDefinition": "shortDefinition",
@@ -751,6 +751,67 @@
       "version": "1.0"
     },
     {
+      "id": "allmende",
+      "term": "Allmende",
+      "slug": "allmende",
+      "shortDefinition": "Eine Allmende ist eine gemeinsame Ressource oder Systemleistung, deren Nutzung mehreren Akteuren offensteht und deren Erhalt gemeinsame Regeln, Verantwortung oder Governance benötigt.",
+      "longDefinition": "Allmenden können natürliche Ressourcen wie Grundwasser, Fischbestände oder Böden sein. In einer erweiterten systemischen Perspektive können auch gemeinsame Infrastrukturen, Informationsräume oder regenerative Systemleistungen als Allmende betrachtet werden.\n\nNicht jede Allmende ist tragisch. Zum Problem wird sie, wenn Zugriff, Nutzung und Wirkungstragung nicht wirksam geregelt sind und der gemeinsame Bestand dadurch geschwächt wird.",
+      "synonyms": [
+        "Allmende",
+        "Allmenden",
+        "Commons",
+        "Gemeingut"
+      ],
+      "relatedTerms": [
+        "allmendedilemma",
+        "senkenallmende",
+        "commons",
+        "allmendeproblem",
+        "wirkungstragung",
+        "positive-netto-wirkung",
+        "nichtkompensationsprinzip"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
+      ],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "woek-praezisierungsbegriff",
+      "version": "0.1"
+    },
+    {
+      "id": "allmendedilemma",
+      "term": "Allmendedilemma",
+      "slug": "allmendedilemma",
+      "shortDefinition": "Ein Allmendedilemma entsteht, wenn individuell vorteilhafte Nutzung einen gemeinsamen Bestand oder eine gemeinsame Systemleistung schwächt und die Kosten der Schädigung auf viele verteilt werden.",
+      "longDefinition": "Das Dilemma beschreibt eine Konfliktlage zwischen kurzfristigem Einzelvorteil und dem Erhalt eines gemeinsamen Bestands. Es ist keine Aussage darüber, dass Menschen oder Kooperation zwangsläufig scheitern.\n\nEntscheidend sind Regeln, Beteiligung, nachvollziehbare Zuständigkeiten, Monitoring und die Frage, ob die Folgen der Nutzung dorthin zurückwirken, wo Entscheidungen getroffen werden.",
+      "synonyms": [
+        "Allmendedilemma",
+        "Allmende-Dilemma",
+        "Commons-Dilemma"
+      ],
+      "relatedTerms": [
+        "allmende",
+        "allmendeproblem",
+        "externalisierung",
+        "wirkungstragung",
+        "nichtkompensationsprinzip"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
+      ],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "woek-praezisierungsbegriff",
+      "version": "0.1"
+    },
+    {
       "id": "allmendeproblem",
       "term": "Allmendeproblem",
       "slug": "allmendeproblem",
@@ -1378,6 +1439,35 @@
       "version": "2.0"
     },
     {
+      "id": "anticommons",
+      "term": "Anticommons",
+      "slug": "anticommons",
+      "shortDefinition": "Eine Anticommons-Situation entsteht, wenn zu viele voneinander unabhängige Ausschluss-, Veto- oder Kontrollrechte sinnvolle Nutzung, Kooperation oder Innovation blockieren.",
+      "longDefinition": "Anticommons beschreibt die Kehrseite eines ungeregelten Zugriffs auf gemeinsame Güter. Zu viele fragmentierte Rechte, Nachweise oder Schnittstellen können verhindern, dass eine sinnvolle Handlung zustande kommt, obwohl sie im Ergebnis positive Wirkung hätte.\n\nDer Begriff richtet sich nicht gegen Rechte, Sicherheit oder demokratische Kontrolle. Er fragt, ob deren Zusammenspiel unverhältnismäßige Blockaden erzeugt und ob es transparente, rechtsstaatliche Koordinationswege gibt.",
+      "synonyms": [
+        "Anticommons",
+        "Anti-Commons",
+        "Anticommons-Situation"
+      ],
+      "relatedTerms": [
+        "allmende",
+        "allmendedilemma",
+        "kooperative-wehrhaftigkeit",
+        "wirkungsintegritaet",
+        "verhaeltnismaessigkeit"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
+      ],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "woek-praezisierungsbegriff",
+      "version": "0.1"
+    },
+    {
       "id": "antidiskriminierung",
       "term": "Antidiskriminierung",
       "slug": "antidiskriminierung",
@@ -1989,6 +2079,36 @@
       "category": "Datenbegriff",
       "status": "anschlussbegriff",
       "version": "1.0"
+    },
+    {
+      "id": "assurance-game",
+      "term": "Assurance Game",
+      "slug": "assurance-game",
+      "shortDefinition": "Ein Assurance Game beschreibt eine Lage, in der Kooperation für alle vorteilhaft wäre, aber einzelne Akteure wegen unsicherer Mitwirkung anderer beim kleineren sicheren Vorteil bleiben.",
+      "longDefinition": "Das Problem ist nicht zwingend Defektion oder schlechte Absicht, sondern fehlende Verlässlichkeit über die Beteiligung anderer. Glaubwürdige Pfade, Garantien, gemeinsame Standards, Vorfinanzierung und Koordination können hier geeigneter sein als Strafe.",
+      "synonyms": [
+        "Assurance Game",
+        "Hirschjagd",
+        "Stag Hunt",
+        "Stag-Hunt"
+      ],
+      "relatedTerms": [
+        "soziales-dilemma",
+        "gefangenendilemma",
+        "kooperationsfaehigkeit",
+        "systemische-kooperation",
+        "wirkungsarchitektur"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
+      ],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "woek-praezisierungsbegriff",
+      "version": "0.1"
     },
     {
       "id": "astroturfing",
@@ -3334,6 +3454,37 @@
       "category": "Sprache, Wirklichkeit und Kommunikation",
       "status": "anschlussbegriff",
       "version": "1.0"
+    },
+    {
+      "id": "bedingte-kooperation",
+      "term": "Bedingte Kooperation",
+      "slug": "bedingte-kooperation",
+      "shortDefinition": "Bedingte Kooperation bezeichnet die Bereitschaft, zum gemeinsamen Nutzen beizutragen, wenn andere ebenfalls nachvollziehbar und fair beitragen oder wenn hierfür glaubwürdige institutionelle Sicherungen bestehen.",
+      "longDefinition": "Bedingte Kooperation liegt zwischen bedingungslosem Vertrauen und pauschaler Verweigerung. Sie kann wachsen, wenn Beiträge sichtbar, Regeln verständlich, Missbrauch begrenzt und Fehler korrigierbar sind. Sie kann schwinden, wenn Ausbeutung folgenlos bleibt oder Verfahren willkürlich erscheinen.\n\nDer Begriff beschreibt ein Beziehungsmuster und keine persönliche Eigenschaft, die bewertet, gespeichert oder zu einem Menschen-Score verdichtet werden dürfte.",
+      "synonyms": [
+        "Bedingte Kooperation",
+        "conditional cooperation",
+        "konditionale Kooperation"
+      ],
+      "relatedTerms": [
+        "reziprozitaet",
+        "soziales-dilemma",
+        "gefangenendilemma",
+        "kooperationsfaehigkeit",
+        "vertrauensallmende",
+        "kooperative-wehrhaftigkeit",
+        "reparaturfaehigkeit"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
+      ],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "woek-praezisierungsbegriff",
+      "version": "0.1"
     },
     {
       "id": "bedingungsloses-grundeinkommen",
@@ -5535,6 +5686,37 @@
       "version": "1.0"
     },
     {
+      "id": "capture",
+      "term": "Capture",
+      "slug": "capture",
+      "shortDefinition": "Capture bezeichnet die Vereinnahmung von Regeln, Standards, Datenzugängen oder Bewertungsinstitutionen, sodass private Interessen als öffentliche Wirkung erscheinen können.",
+      "longDefinition": "Capture kann etwa über einseitigen Zugang zu Daten, Interessenkonzentration, Personalwechsel, Einfluss auf Benchmarks oder abhängige Prüfstellen entstehen. Es ist besonders riskant, wenn dieselbe Institution Methoden festlegt und zugleich Einzelfälle sanktioniert oder wirtschaftliche Vorteile verteilt.",
+      "synonyms": [
+        "Capture",
+        "institutionelles Capture",
+        "Vereinnahmung von Bewertungsregeln"
+      ],
+      "relatedTerms": [
+        "regulatory-capture",
+        "corporate-capture",
+        "state-capture",
+        "ngo-capture",
+        "interessenkonflikt",
+        "wirkungsintegritaet",
+        "wirkungsrat"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
+      ],
+      "relatedObjections": [],
+      "category": "Schutzbegriff",
+      "status": "woek-praezisierungsbegriff",
+      "version": "0.1"
+    },
+    {
       "id": "capture-price",
       "term": "Capture Price / Marktwert von Strom",
       "slug": "capture-price",
@@ -6016,6 +6198,36 @@
       "category": "Liberalismus, Libertarismus, Neoklassik und Marktbegriffe",
       "status": "anschlussbegriff",
       "version": "1.0"
+    },
+    {
+      "id": "chicken-game",
+      "term": "Chicken Game",
+      "slug": "chicken-game",
+      "shortDefinition": "Ein Chicken Game beschreibt eine Eskalationslage, in der jede Seite möchte, dass die andere nachgibt, während gegenseitiges Festhalten für alle besonders schädlich ist.",
+      "longDefinition": "Die Lage unterscheidet sich vom Gefangenendilemma: Das einseitige Nachgeben ist hier häufig der ungünstigste individuelle Ausgang, während gegenseitige Eskalation den größten gemeinsamen Schaden auslöst. Dadurch können Drohungen, Gesichtsverlust und unklare Grenzen die Deeskalation erschweren.\n\nMögliche Auswege sind überprüfbare Informationen, glaubwürdige und verhältnismäßige Grenzen, Verfahren zur Deeskalation sowie gesicherte Rückkehr- und Korrekturpfade.",
+      "synonyms": [
+        "Chicken Game",
+        "Chicken-Spiel",
+        "Eskalationsdilemma"
+      ],
+      "relatedTerms": [
+        "soziales-dilemma",
+        "gefangenendilemma",
+        "kooperative-wehrhaftigkeit",
+        "verhaeltnismaessigkeit",
+        "rechtsschutz",
+        "reparaturfaehigkeit"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
+      ],
+      "relatedObjections": [],
+      "category": "Schutzbegriff",
+      "status": "woek-praezisierungsbegriff",
+      "version": "0.1"
     },
     {
       "id": "circular-economy",
@@ -8133,7 +8345,9 @@
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
+      ],
       "relatedObjections": [],
       "category": "Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur",
       "status": "woek-praezisierungsbegriff",
@@ -8754,7 +8968,8 @@
         {
           "label": "Wirkungsfeld Produkte & Konsum",
           "href": "../../wirkungsfelder/produkte-konsum/"
-        }
+        },
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
       ],
       "relatedObjections": [],
       "category": "Glossar-Erweiterung",
@@ -13419,16 +13634,53 @@
         "libertarismus",
         "externalitaet",
         "negative-externalitaet",
-        "moral-hazard"
+        "moral-hazard",
+        "externalisierungsluecke",
+        "unvollstaendiger-preis",
+        "wirkungstragung",
+        "allmendedilemma",
+        "positive-netto-wirkung",
+        "nichtkompensationsprinzip"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
+      ],
       "relatedObjections": [],
       "category": "Kapital, Markt und Eigentum",
       "status": "woek-praezisierungsbegriff",
       "version": "1.0"
+    },
+    {
+      "id": "externalisierungsluecke",
+      "term": "Externalisierungslücke",
+      "slug": "externalisierungsluecke",
+      "shortDefinition": "Die Externalisierungslücke ist die Differenz zwischen den zurechenbaren negativen Wirkungen einer Aktivität und dem Anteil, der im Entscheidungs-, Preis-, Haftungs-, Rückstellungs- oder Steuerkonto zurückwirkt.",
+      "longDefinition": "Die Lücke macht sichtbar, wo Folgen zwar zurechenbar oder zumindest beschreibbar sind, aber noch nicht in der Entscheidungssituation ankommen. Sie kann monetär, physisch oder als Wirkungs- und Risikovektor dargestellt werden.\n\nEine große Lücke ist kein Beweis für eine einfache monetäre Lösung. Sie kann auf fehlende Daten, unklare Zuständigkeiten, nicht kompensierbare Grenzen oder institutionelle Fehlanreize hinweisen.",
+      "synonyms": [
+        "Externalisierungslücke",
+        "Externalisierungs-Lücke"
+      ],
+      "relatedTerms": [
+        "externalisierung",
+        "unvollstaendiger-preis",
+        "preisvollstaendigkeit",
+        "wirkungstragung",
+        "wirkungsrisiko",
+        "wirkungsgrenze"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
+      ],
+      "relatedObjections": [],
+      "category": "Bewertungsbegriff",
+      "status": "woek-praezisierungsbegriff",
+      "version": "0.1"
     },
     {
       "id": "externalitaet",
@@ -15396,6 +15648,36 @@
       "version": "1.1"
     },
     {
+      "id": "freiwilligendilemma",
+      "term": "Freiwilligendilemma",
+      "slug": "freiwilligendilemma",
+      "shortDefinition": "Ein Freiwilligendilemma liegt vor, wenn eine gemeinsame Leistung nur zustande kommt, wenn mindestens eine Seite handelt, während für jede einzelne Seite Abwarten zunächst günstiger erscheinen kann.",
+      "longDefinition": "Das Dilemma betrifft etwa Erstinvestitionen, Pflege gemeinsamer Infrastruktur oder das Übernehmen einer notwendigen, aber nicht exklusiv vergüteten Aufgabe. Wenn alle auf andere warten, bleibt die Leistung aus. Wer handelt, kann jedoch unverhältnismäßig belastet werden.\n\nDie Diagnose ersetzt keine Prüfung von Fähigkeit, Zumutbarkeit oder gerechter Lastenteilung. Sie beschreibt eine institutionelle Unterversorgungsgefahr, keine moralische Pflicht einzelner Personen.",
+      "synonyms": [
+        "Freiwilligendilemma",
+        "Volunteer’s Dilemma",
+        "Freiwilligen-Dilemma"
+      ],
+      "relatedTerms": [
+        "oeffentliche-gueter",
+        "trittbrettfahren",
+        "soziales-dilemma",
+        "kooperationsfaehigkeit",
+        "wirkungshaushalt",
+        "wirkungstragung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
+      ],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "woek-praezisierungsbegriff",
+      "version": "0.1"
+    },
+    {
       "id": "fremdenfeindlichkeit",
       "term": "Fremdenfeindlichkeit / Xenophobie",
       "slug": "fremdenfeindlichkeit",
@@ -15862,6 +16144,35 @@
       "category": "Hannah Arendt und politische Wirkungsbegriffe",
       "status": "anschlussbegriff",
       "version": "1.0"
+    },
+    {
+      "id": "gefangenendilemma",
+      "term": "Gefangenendilemma",
+      "slug": "gefangenendilemma",
+      "shortDefinition": "Das Gefangenendilemma beschreibt eine Lage, in der Defektion für jeden einzelnen kurzfristig attraktiv sein kann, obwohl gegenseitige Kooperation für alle besser wäre.",
+      "longDefinition": "Im klassischen Gefangenendilemma bleibt Defektion individuell vorteilhaft, unabhängig vom Verhalten der anderen Seite. Wiederholte Beziehungen, nachvollziehbares Verhalten und glaubwürdige Korrektur können die Auszahlungslage verändern; sie rechtfertigen jedoch weder dauerhafte Stigmatisierung noch automatisierte Sanktionen.",
+      "synonyms": [
+        "Gefangenendilemma",
+        "Gefangenen-Dilemma",
+        "wiederholtes Gefangenendilemma"
+      ],
+      "relatedTerms": [
+        "soziales-dilemma",
+        "assurance-game",
+        "wirkungstragung",
+        "kooperative-wehrhaftigkeit",
+        "positive-netto-wirkung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
+      ],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "woek-praezisierungsbegriff",
+      "version": "0.1"
     },
     {
       "id": "gegenframe",
@@ -21380,6 +21691,38 @@
       "version": "1.0"
     },
     {
+      "id": "institutionelle-vertrauenswuerdigkeit",
+      "term": "Institutionelle Vertrauenswürdigkeit",
+      "slug": "institutionelle-vertrauenswuerdigkeit",
+      "shortDefinition": "Institutionelle Vertrauenswürdigkeit bezeichnet die überprüfbare Qualität von Institutionen, berechenbar, fair, rechtsgebunden, korrigierbar und gegen Vereinnahmung geschützt zu handeln.",
+      "longDefinition": "Vertrauenswürdigkeit ist nicht bloß hohe Zustimmung oder persönliche Reputation. Sie zeigt sich in fairen Verfahren, begründbaren Entscheidungen, Korrekturmöglichkeiten, Rechtsschutz und einem Schutz gegen Capture. Auch autoritäre oder korrupte Systeme können gruppenintern Vertrauen erzeugen, ohne institutionell vertrauenswürdig zu sein.",
+      "synonyms": [
+        "Institutionelle Vertrauenswürdigkeit",
+        "Vertrauenswürdigkeit",
+        "institutionelle Vertrauenswürdigkeit",
+        "Institutional Trustworthiness"
+      ],
+      "relatedTerms": [
+        "vertrauen",
+        "vertrauensallmende",
+        "kooperative-wehrhaftigkeit",
+        "reparaturfaehigkeit",
+        "capture",
+        "wirkungsintegritaet",
+        "rechtsschutz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
+      ],
+      "relatedObjections": [],
+      "category": "Schutzbegriff",
+      "status": "woek-praezisierungsbegriff",
+      "version": "0.1"
+    },
+    {
       "id": "institutioneller-rassismus",
       "term": "Institutioneller Rassismus",
       "slug": "institutioneller-rassismus",
@@ -21691,6 +22034,37 @@
       "category": "Akteure, Einfluss, Ideologien und demokratische Wirkungsräume",
       "status": "anschlussbegriff",
       "version": "1.0"
+    },
+    {
+      "id": "intergenerationelles-dilemma",
+      "term": "Intergenerationelles Dilemma",
+      "slug": "intergenerationelles-dilemma",
+      "shortDefinition": "Ein intergenerationelles Dilemma entsteht, wenn heutige Vorteile oder vermiedene Kosten zu Lasten von Menschen in späteren Zeiträumen gehen, die an der gegenwärtigen Entscheidung nicht gleichberechtigt beteiligt sind.",
+      "longDefinition": "Solche Dilemmata können sich über lange Zeiträume, große Entfernungen und komplexe Wirkpfade entfalten. Betroffen sind etwa ökologische Regenerationsfähigkeit, öffentliche Infrastruktur, Staatsfinanzen oder institutionelle Vertrauensgrundlagen. Kurzfristige Gewinne können deshalb mit langfristigen Risiken verbunden sein, die im aktuellen Preis oder Mandat nicht sichtbar sind.\n\nDer Begriff setzt nicht voraus, alle Zukunft präzise berechnen zu können. Er verlangt, bekannte Unsicherheiten, irreversible Schäden und Schutzgrenzen in Entscheidungen angemessen zu berücksichtigen.",
+      "synonyms": [
+        "Intergenerationelles Dilemma",
+        "intergenerationale Dilemmata",
+        "Generationen-Dilemma"
+      ],
+      "relatedTerms": [
+        "wirkungsrisiko",
+        "wirkungspotenzial",
+        "positive-netto-wirkung",
+        "sdg-plus",
+        "externalisierung",
+        "senkenallmende",
+        "nichtkompensationsprinzip"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
+      ],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "woek-praezisierungsbegriff",
+      "version": "0.1"
     },
     {
       "id": "intermittent-reinforcement",
@@ -24597,6 +24971,36 @@
       "version": "1.0"
     },
     {
+      "id": "kooperationsfaehigkeit",
+      "term": "Kooperationsfähigkeit",
+      "slug": "kooperationsfaehigkeit",
+      "shortDefinition": "Kooperationsfähigkeit bezeichnet die Fähigkeit einer Ordnung, faire Lastenteilung, Reziprozität, Beteiligung, Konfliktlösung, Partnerwahl und Wiedergutmachung praktisch zu ermöglichen.",
+      "longDefinition": "Kooperationsfähigkeit ist kein Zustimmungswert und keine Pflicht zur Harmonie. Sie hängt von realen Alternativen, Verfahrensfairness, Schutz vor Ausbeutung und der Möglichkeit ab, Fehlverhalten zu korrigieren, ohne Menschen dauerhaft aus gemeinsamer Handlung auszuschließen.",
+      "synonyms": [
+        "Kooperationsfähigkeit",
+        "kooperationsfähige Integrität"
+      ],
+      "relatedTerms": [
+        "systemische-kooperation",
+        "soziales-dilemma",
+        "assurance-game",
+        "kooperative-wehrhaftigkeit",
+        "reparaturfaehigkeit",
+        "institutionelle-vertrauenswuerdigkeit",
+        "positive-netto-wirkung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
+      ],
+      "relatedObjections": [],
+      "category": "Schutzbegriff",
+      "status": "woek-praezisierungsbegriff",
+      "version": "0.1"
+    },
+    {
       "id": "kooperationslogik",
       "term": "Kooperationslogik",
       "slug": "kooperationslogik",
@@ -24620,6 +25024,66 @@
       "category": "Feminismus, feministische Ökonomie und Care-Wirkung",
       "status": "woek-praezisierungsbegriff",
       "version": "1.0"
+    },
+    {
+      "id": "kooperative-wehrhaftigkeit",
+      "term": "Kooperative Wehrhaftigkeit",
+      "slug": "kooperative-wehrhaftigkeit",
+      "shortDefinition": "Kooperative Wehrhaftigkeit verbindet Kooperation als Ausgangspunkt mit risikobasierter Verifikation, proportionaler Reaktion, Wiedergutmachung, Lernfähigkeit und konsequenter Eskalation bei wiederholtem oder vorsätzlichem Missbrauch.",
+      "longDefinition": "Die Leitlinie lautet: Vertrauen als Ausgangspunkt, Verifikation nach Risiko, Sanktion nach Evidenz, Rückkehr nach Wiedergutmachung. Sie ordnet Fehler, Lücken, Überforderung, Fahrlässigkeit und Betrug nicht gleich ein.\n\nKooperative Wehrhaftigkeit soll Kooperation nicht durch naives Vertrauen gefährden, aber auch nicht durch Generalverdacht und drakonische Kontrolle zerstören. Sie braucht Rechtsstaatlichkeit, Verhältnismäßigkeit und überprüfbare Verfahren.",
+      "synonyms": [
+        "Kooperative Wehrhaftigkeit",
+        "kooperative Wehrhaftigkeit"
+      ],
+      "relatedTerms": [
+        "vertrauensallmende",
+        "wirkungsintegritaet",
+        "wirkungssimulation",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsrat",
+        "verhaeltnismaessigkeit"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
+      ],
+      "relatedObjections": [],
+      "category": "Schutzbegriff",
+      "status": "woek-praezisierungsbegriff",
+      "version": "0.1"
+    },
+    {
+      "id": "koordinationsdilemma",
+      "term": "Koordinationsdilemma",
+      "slug": "koordinationsdilemma",
+      "shortDefinition": "Ein Koordinationsdilemma entsteht, wenn mehrere Beteiligte von einem abgestimmten Vorgehen profitieren könnten, aber wegen unklarer Erwartungen, inkompatibler Standards oder fehlender Verbindlichkeit bei getrennten Lösungen bleiben.",
+      "longDefinition": "Anders als beim Gefangenendilemma ist Kooperation hier nicht zwingend individuell nachteilig. Das Hindernis ist häufig die Unsicherheit darüber, welcher gemeinsame Pfad gilt, wer zuerst handelt oder ob andere anschlussfähig bleiben. Mehrere Lösungen können grundsätzlich sinnvoll sein, solange sie zuverlässig koordiniert werden.\n\nVerlässliche Standards, offene Schnittstellen, abgestimmte Zeitpläne, Vorleistungen und klare Ausstiegs- oder Korrekturwege können ein Koordinationsdilemma entschärfen.",
+      "synonyms": [
+        "Koordinationsdilemma",
+        "Koordinierungsdilemma",
+        "Koordinationsproblem"
+      ],
+      "relatedTerms": [
+        "soziales-dilemma",
+        "assurance-game",
+        "kooperationsfaehigkeit",
+        "systemische-kooperation",
+        "wirkungsarchitektur",
+        "bedingte-kooperation"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
+      ],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "woek-praezisierungsbegriff",
+      "version": "0.1"
     },
     {
       "id": "koerperliche-selbstbestimmung",
@@ -29640,7 +30104,9 @@
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
+      ],
       "relatedObjections": [],
       "category": "Liberalismus, Libertarismus, Neoklassik und Marktbegriffe",
       "status": "anschlussbegriff",
@@ -31603,7 +32069,8 @@
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [
-        "blog/das-managementmodell-der-zukunft/"
+        "blog/das-managementmodell-der-zukunft/",
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
       ],
       "relatedObjections": [],
       "category": "Bewertungsbegriff",
@@ -32623,7 +33090,9 @@
       "shortDefinition": "Öffentliche Güter sind Güter, von deren Nutzung niemand leicht ausgeschlossen werden kann und deren Nutzung andere kaum verringert.",
       "longDefinition": "Öffentliche Güter sind Güter, von deren Nutzung niemand leicht ausgeschlossen werden kann und deren Nutzung andere kaum verringert.\n\nSaubere Luft, Wissen, Sicherheit oder demokratische Öffentlichkeit brauchen besondere Governance, weil Märkte sie oft unterbereitstellen.",
       "synonyms": [
-        "Öffentliche Güter"
+        "Öffentliche Güter",
+        "Öffentliches Gut",
+        "Public Good"
       ],
       "relatedTerms": [
         "trittbrettfahrerproblem",
@@ -32631,12 +33100,20 @@
         "wohlfahrtsstaat",
         "anarchokapitalismus",
         "marktversagen",
-        "demokratie"
+        "demokratie",
+        "soziales-dilemma",
+        "trittbrettfahren",
+        "allmende",
+        "allmendedilemma",
+        "positive-netto-wirkung",
+        "nichtkompensationsprinzip"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
+      ],
       "relatedObjections": [],
       "category": "Liberalismus, Libertarismus, Neoklassik und Marktbegriffe",
       "status": "anschlussbegriff",
@@ -36094,7 +36571,8 @@
           "label": "Leitbild Mensch, Planet und Demokratie",
           "href": "../../dokumente/leitbild-mensch-planet-demokratie/"
         },
-        "impact-strategie-controlling-marketing-management-einkauf-chemieindustrie"
+        "impact-strategie-controlling-marketing-management-einkauf-chemieindustrie",
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
       ],
       "relatedObjections": [],
       "category": "Grundbegriffe der Wirkungsökonomie",
@@ -36482,6 +36960,35 @@
       "version": "2.0"
     },
     {
+      "id": "preisvollstaendigkeit",
+      "term": "Preisvollständigkeit",
+      "slug": "preisvollstaendigkeit",
+      "shortDefinition": "Preisvollständigkeit bezeichnet die materielle Vollständigkeit der Wirkungsrückkopplung in Preis, Steuer, Haftung, Rückstellung, Versicherung, Marktzugang oder Wirkungsgrenze.",
+      "longDefinition": "Preisvollständigkeit verlangt nicht, jede Wirkung zu monetarisieren. Je nach Wirkungsart können Preise, Steuern, Haftung, Rückstellungen, Versicherung, Marktzugang oder verbindliche Grenzen die angemessene Form der Rückkopplung sein.\n\nSie ist damit kein technischer Anspruch auf eine perfekte Zahl, sondern ein Prüfbegriff für die Frage, ob relevante Folgen in der Entscheidung und ihre Verantwortung zurückwirken.",
+      "synonyms": [
+        "Preisvollständigkeit",
+        "Preis-Vollständigkeit"
+      ],
+      "relatedTerms": [
+        "unvollstaendiger-preis",
+        "externalisierungsluecke",
+        "wirkungstragung",
+        "nichtkompensationsprinzip",
+        "wirkungsgrenze",
+        "reverse-merit-order"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
+      ],
+      "relatedObjections": [],
+      "category": "Bewertungsbegriff",
+      "status": "woek-praezisierungsbegriff",
+      "version": "0.1"
+    },
+    {
       "id": "pressefreiheit",
       "term": "Pressefreiheit",
       "slug": "pressefreiheit",
@@ -36584,7 +37091,8 @@
       "shortDefinition": "Das Principal-Agent-Problem beschreibt Zielkonflikte und Informationsasymmetrien zwischen Auftraggeber:innen und Beauftragten.",
       "longDefinition": "Das Principal-Agent-Problem beschreibt Zielkonflikte und Informationsasymmetrien zwischen Auftraggeber:innen und Beauftragten.\n\nRelevant für Management, Politik, Kapitalmärkte, Lieferketten, Prüfungen und Wirkungsrat.",
       "synonyms": [
-        "Principal-Agent-Problem"
+        "Principal-Agent-Problem",
+        "Principal-Agent"
       ],
       "relatedTerms": [
         "informationsasymmetrie",
@@ -36593,7 +37101,9 @@
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
+      ],
       "relatedObjections": [],
       "category": "Liberalismus, Libertarismus, Neoklassik und Marktbegriffe",
       "status": "anschlussbegriff",
@@ -39159,7 +39669,9 @@
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
+      ],
       "relatedObjections": [],
       "category": "Demokratie, Rechtsstaat und demokratische Wirkungsarchitektur",
       "status": "anschlussbegriff",
@@ -40251,6 +40763,36 @@
       "version": "1.0"
     },
     {
+      "id": "reparaturfaehigkeit",
+      "term": "Reparaturfähigkeit",
+      "slug": "reparaturfaehigkeit",
+      "shortDefinition": "Reparaturfähigkeit bezeichnet die Fähigkeit eines Systems, Fehler, Schäden und Konflikte nachvollziehbar zu korrigieren, wiedergutzumachen und eine begründete Rückkehr zu ermöglichen.",
+      "longDefinition": "Reparaturfähigkeit umfasst Korrektur, Wiedergutmachung, Beschwerdewege, Rehabilitationspfade und Lernen aus Fehlern. Sie verlangt weder automatische Vergebung noch eine Verharmlosung von Vorsatz; Maßstab bleiben Evidenz, Verhältnismäßigkeit, Rechtsschutz und der Schutz Betroffener.",
+      "synonyms": [
+        "Reparaturfähigkeit",
+        "institutionelle Reparaturfähigkeit",
+        "soziale Reparaturfähigkeit"
+      ],
+      "relatedTerms": [
+        "institutionelle-vertrauenswuerdigkeit",
+        "kooperative-wehrhaftigkeit",
+        "wirkungsintegritaet",
+        "rechtsschutz",
+        "verhaeltnismaessigkeit",
+        "vertrauensallmende"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
+      ],
+      "relatedObjections": [],
+      "category": "Schutzbegriff",
+      "status": "woek-praezisierungsbegriff",
+      "version": "0.1"
+    },
+    {
       "id": "reparaturschulden",
       "term": "Reparaturschulden",
       "slug": "reparaturschulden",
@@ -41321,7 +41863,8 @@
           "label": "Wirkungsfeld Produkte & Konsum",
           "href": "../../wirkungsfelder/produkte-konsum/"
         },
-        "impact-strategie-controlling-marketing-management-einkauf-chemieindustrie"
+        "impact-strategie-controlling-marketing-management-einkauf-chemieindustrie",
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
       ],
       "relatedObjections": [
         [
@@ -41332,6 +41875,36 @@
       "category": "Messung, Bewertung & Steuerung",
       "status": "führender-begriff",
       "version": "1.1"
+    },
+    {
+      "id": "reziprozitaet",
+      "term": "Reziprozität",
+      "slug": "reziprozitaet",
+      "shortDefinition": "Reziprozität bezeichnet die Erwartung und Praxis, auf Beiträge, Kooperation oder Schädigung anderer in einer nachvollziehbaren Weise zu reagieren.",
+      "longDefinition": "Positive Reziprozität kann verlässliche Kooperation durch Anerkennung und Erwiderung stärken. Negative Reziprozität kann Regelverletzungen begrenzen, wenn sie evidenzbasiert, verhältnismäßig und rechtsgebunden bleibt. Ohne solche Grenzen kann Gegenseitigkeit in Vergeltung, Ausschluss oder Eskalation kippen.\n\nReziprozität ist daher weder eine Pflicht zur Gleichbehandlung jeder Situation noch eine Rechtfertigung privater Selbstjustiz.",
+      "synonyms": [
+        "Reziprozität",
+        "Gegenseitigkeit",
+        "reciprocity"
+      ],
+      "relatedTerms": [
+        "bedingte-kooperation",
+        "kooperative-wehrhaftigkeit",
+        "vertrauensallmende",
+        "reparaturfaehigkeit",
+        "verhaeltnismaessigkeit",
+        "rechtsschutz"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
+      ],
+      "relatedObjections": [],
+      "category": "Schutzbegriff",
+      "status": "woek-praezisierungsbegriff",
+      "version": "0.1"
     },
     {
       "id": "rezyklatanteil",
@@ -43354,22 +43927,41 @@
       "id": "scorecard",
       "term": "Scorecard",
       "slug": "scorecard",
-      "shortDefinition": "Eine Scorecard strukturiert Wirkungsfelder, Indikatoren, Datenqualität und Bewertung.",
-      "longDefinition": "Eine Scorecard ist die nachvollziehbare Bewertungsstruktur für ein Objekt, etwa ein Produkt, eine Investition, ein Programm oder eine Organisation. Sie ordnet Wirkungsfelder, WÖk-IDs, Indikatoren, Systemgrenzen, Benchmarks, Datenqualität und Regeln für die Bewertung. Eine Scorecard ist keine bloße Checkliste und keine Durchschnittsformel.",
+      "shortDefinition": "Eine Scorecard oder Wirkungsscorecard ist ein transparentes Bewertungsraster, das relevante Wirkungsfelder, Indikatoren, Datenquellen, Datenqualität, Grenzen und Einzelergebnisse so verbindet, dass Entscheidungen prüfbar werden.",
+      "longDefinition": "Eine Scorecard bündelt mehrere Wirkungsinformationen in einer nachvollziehbaren Bewertungsarchitektur. Sie übersetzt weder komplexe Wirklichkeit in eine bloße Zahl noch ersetzt sie die fachliche und demokratische Abwägung. Eine belastbare Scorecard zeigt deshalb die einzelnen Wirkungsfelder, Indikatoren, Datenquellen, Annahmen, Zeit- und Systemgrenzen, Datenlücken, Prüfstatus und Version offen. In der Wirkungsökonomie wird eine Wirkungsscorecard an Mensch, Planet und Demokratie ausgerichtet. Sie kann Orientierung und Steuerung ermöglichen, aber schwere negative Wirkungen, rote Linien oder fehlende Evidenz nicht durch gute Werte in anderen Feldern verdecken.",
       "synonyms": [
-        "Scorecard"
+        "Scorecard",
+        "Scorecards",
+        "Wirkungsscorecard",
+        "Wirkungs-Scorecard",
+        "Wirkungsscorecards",
+        "Wirkungs-Scorecards",
+        "Impact Scorecard"
       ],
       "relatedTerms": [
-        "finalscore",
-        "wirkungsindikator",
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkungsbewertung",
         "woek-id",
-        "benchmark",
+        "wirkungsindikator",
+        "wirkungsdaten",
         "datenqualitaet",
+        "datenluecke",
+        "systemgrenze",
+        "benchmark",
+        "finalscore",
+        "produktscorecard",
+        "produktwirkung",
+        "wirkungscontrolling",
         "reverse-merit-order",
         "nichtkompensationsprinzip",
-        "wirkungscontrolling",
+        "wirkungsgrenze",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsrueckkopplung",
+        "positive-netto-wirkung",
         "archetyp",
-        "datenluecke",
         "digitaler-produktpass",
         "nace",
         "oef-organisation-environmental-footprint",
@@ -43377,8 +43969,6 @@
         "social-taxonomy",
         "steuerungsdaten",
         "wirkungsarchitektur",
-        "wirkungsbewertung",
-        "wirkungsdaten",
         "wirkungsregister",
         "wirkungsumsatzsteuer",
         "wustg",
@@ -43390,7 +43980,6 @@
         "lebenszykluswirkungsabschaetzung",
         "product-environmental-footprint",
         "organisation-environmental-footprint",
-        "systemgrenze",
         "schwellenwert",
         "wirkungswert",
         "stakeholder-kapitalismus",
@@ -43450,8 +44039,8 @@
         ]
       ],
       "category": "Messbegriff",
-      "status": "approved",
-      "version": "2.0"
+      "status": "führender-begriff",
+      "version": "1.1"
     },
     {
       "id": "sdg-plus",
@@ -43500,7 +44089,8 @@
       "relatedDocuments": [
         "verstehen/sdgs-sdgplus/risiko-resilienzregister/",
         "blog/systemresilienz-statt-nachhaltigkeit/",
-        "sdg-sdgplus-referenzrahmen"
+        "sdg-sdgplus-referenzrahmen",
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
       ],
       "relatedObjections": [
         [
@@ -44037,6 +44627,35 @@
       "relatedObjections": [],
       "category": "Kognitive und affektive Verzerrungen",
       "status": "approved",
+      "version": "0.1"
+    },
+    {
+      "id": "senkenallmende",
+      "term": "Senkenallmende",
+      "slug": "senkenallmende",
+      "shortDefinition": "Eine Senkenallmende ist eine gemeinsame, begrenzte Aufnahme-, Puffer- oder Regenerationsleistung eines natürlichen oder gesellschaftlichen Systems.",
+      "longDefinition": "Beispiele sind die atmosphärische Aufnahme zusätzlicher Treibhausgase, die Aufnahme von Nähr- oder Schadstoffen in Gewässern und die Regenerationsfähigkeit von Böden. Der Begriff benennt nicht eine beliebige Umweltleistung, sondern eine reale begrenzte Aufnahme- oder Regenerationskapazität.\n\nWird diese Kapazität überbeansprucht, können die Folgen räumlich, zeitlich und sozial weit über die unmittelbar Handelnden hinausreichen.",
+      "synonyms": [
+        "Senkenallmende",
+        "Senken-Allmende"
+      ],
+      "relatedTerms": [
+        "allmende",
+        "externalisierung",
+        "klimafolgeschaeden",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "positive-netto-wirkung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
+      ],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "woek-praezisierungsbegriff",
       "version": "0.1"
     },
     {
@@ -45137,6 +45756,36 @@
       "category": "Wirkungsfinanzpolitik",
       "status": "approved",
       "version": "1.0"
+    },
+    {
+      "id": "soziales-dilemma",
+      "term": "Soziales Dilemma",
+      "slug": "soziales-dilemma",
+      "shortDefinition": "Ein soziales Dilemma liegt vor, wenn individuell nachvollziehbare Handlungsanreize zu einem Ergebnis führen können, das für die Beteiligten gemeinsam schlechter ist.",
+      "longDefinition": "Soziale Dilemmata sind keine Aussage darüber, dass Menschen egoistisch oder unkooperativ sein müssten. Auch vorsichtige, faire oder kooperationsbereite Menschen können scheitern, wenn Verhalten anderer unsicher bleibt, Ausbeutung droht oder verlässliche Regeln fehlen. Dilemmata können Übernutzung, Unterversorgung, Verteilungs-, Macht- oder Informationsprobleme betreffen.",
+      "synonyms": [
+        "Soziales Dilemma",
+        "soziale Dilemmata"
+      ],
+      "relatedTerms": [
+        "gefangenendilemma",
+        "allmendedilemma",
+        "oeffentliche-gueter",
+        "trittbrettfahren",
+        "assurance-game",
+        "wirkungstragung",
+        "positive-netto-wirkung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
+      ],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "woek-praezisierungsbegriff",
+      "version": "0.1"
     },
     {
       "id": "sozialfinanzierung",
@@ -47890,6 +48539,36 @@
       "version": "2.0"
     },
     {
+      "id": "systemisch-positives-summenspiel",
+      "term": "Systemisch positives Summenspiel",
+      "slug": "systemisch-positives-summenspiel",
+      "shortDefinition": "Ein systemisch positives Summenspiel liegt vor, wenn Kooperation die positive Netto-Wirkung für die Beteiligten und das relevante Gesamtsystem erhöht, ohne nicht getragene Schäden auf Dritte, Ökosysteme oder zukünftige Generationen zu verlagern und ohne Wirkungsgrenzen zu verletzen.",
+      "longDefinition": "Kooperation ist nicht automatisch positiv. Eine Gruppe kann intern gewinnen und zugleich Kosten auf andere verlagern oder demokratische, soziale oder ökologische Grenzen verletzen.\n\nDer systemische Zusatz verlangt deshalb, den relevanten Wirkungsraum und die ausgelagerten Folgen mitzudenken. Positive Netto-Wirkung bleibt die Zielgröße, nicht bloße Gruppensynergie oder Reichweite.",
+      "synonyms": [
+        "Systemisch positives Summenspiel",
+        "systemisch positives Plus-Summen-Spiel",
+        "positives Summenspiel"
+      ],
+      "relatedTerms": [
+        "positive-netto-wirkung",
+        "externalisierung",
+        "allmendedilemma",
+        "kooperative-wehrhaftigkeit",
+        "nichtkompensationsprinzip",
+        "wirkungsgrenze"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
+      ],
+      "relatedObjections": [],
+      "category": "Bewertungsbegriff",
+      "status": "woek-praezisierungsbegriff",
+      "version": "0.1"
+    },
+    {
       "id": "systemische-kohaerenz",
       "term": "Systemische Kohärenz",
       "slug": "systemische-kohaerenz",
@@ -47921,6 +48600,37 @@
       "category": "Psychologische und systemische Wirkmechanismen",
       "status": "woek-anschlussbegriff",
       "version": "1.0"
+    },
+    {
+      "id": "systemische-kooperation",
+      "term": "Systemische Kooperation",
+      "slug": "systemische-kooperation",
+      "shortDefinition": "Systemische Kooperation bezeichnet Zusammenarbeit, die im relevanten Wirkungsraum positive Netto-Wirkung ermöglicht und dabei Rechte Betroffener, faire Lastenteilung und Schutzgrenzen wahrt.",
+      "longDefinition": "Kooperation ist nicht automatisch positiv: Gruppen können interne Vorteile erzeugen und zugleich Dritte ausbeuten, Kosten verlagern oder Macht abschotten. Systemische Kooperation verlangt deshalb transparente Regeln, Beteiligung, Konfliktlösung, Korrektur und einen prüfbaren Bezug auf Mensch, Planet und Demokratie.",
+      "synonyms": [
+        "Systemische Kooperation",
+        "systemische Kooperation",
+        "kooperative Wirkungsordnung"
+      ],
+      "relatedTerms": [
+        "kooperationsfaehigkeit",
+        "systemisch-positives-summenspiel",
+        "positive-netto-wirkung",
+        "nichtkompensationsprinzip",
+        "kooperative-wehrhaftigkeit",
+        "wirkungsintegritaet",
+        "wirkungstragung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
+      ],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "woek-praezisierungsbegriff",
+      "version": "0.1"
     },
     {
       "id": "systemische-risikointelligenz",
@@ -48274,7 +48984,8 @@
       ],
       "relatedDocuments": [
         "whitepaper-t-sroi",
-        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling",
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
       ],
       "relatedObjections": [
         [
@@ -50432,6 +51143,35 @@
       "version": "Glossar-Sanierung v1"
     },
     {
+      "id": "trittbrettfahren",
+      "term": "Trittbrettfahren",
+      "slug": "trittbrettfahren",
+      "shortDefinition": "Trittbrettfahren bedeutet, von einer gemeinsamen Leistung zu profitieren, ohne einen angemessenen Beitrag zu ihrer Bereitstellung oder ihrem Erhalt zu leisten.",
+      "longDefinition": "Das Muster entsteht besonders bei öffentlichen Gütern, deren Nutzen sich nicht zuverlässig auf Beitragsleistende begrenzen lässt. Es ist keine pauschale Schuldzuweisung: Ob ein Beitrag angemessen ist, hängt von Fähigkeiten, Zugang, Belastungen und institutionellen Regeln ab.",
+      "synonyms": [
+        "Trittbrettfahren",
+        "Trittbrettfahrer",
+        "Free Riding"
+      ],
+      "relatedTerms": [
+        "soziales-dilemma",
+        "oeffentliche-gueter",
+        "kooperationsfaehigkeit",
+        "positive-netto-wirkung",
+        "wirkungshaushalt"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
+      ],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "woek-praezisierungsbegriff",
+      "version": "0.1"
+    },
+    {
       "id": "trittbrettfahrerproblem",
       "term": "Trittbrettfahrerproblem",
       "slug": "trittbrettfahrerproblem",
@@ -51551,6 +52291,36 @@
       "version": "1.1"
     },
     {
+      "id": "unvollstaendiger-preis",
+      "term": "Unvollständiger Preis",
+      "slug": "unvollstaendiger-preis",
+      "shortDefinition": "Ein unvollständiger Preis ist ein Marktpreis, der materiell relevante ökologische, soziale, gesundheitliche, demokratische oder zukünftige Wirkungen nicht ausreichend als Entscheidungssignal enthält.",
+      "longDefinition": "Ein Preis kann private Kosten korrekt abbilden und gesellschaftlich dennoch irreführend sein. Unvollständigkeit bedeutet deshalb nicht zwingend mathematisch falsch, sondern unzureichend als Signal für die relevante Wirkungs- und Risikolage.\n\nDer Begriff macht keine Aussage darüber, dass jede Wirkung in Geld ausgedrückt werden muss. Manche Wirkungen brauchen andere Formen der Rückkopplung oder klare Grenzen.",
+      "synonyms": [
+        "Unvollständiger Preis",
+        "unvollständige Preise",
+        "Preisunvollständigkeit"
+      ],
+      "relatedTerms": [
+        "preisvollstaendigkeit",
+        "externalisierung",
+        "externalisierungsluecke",
+        "wirkungstragung",
+        "reverse-merit-order",
+        "nichtkompensationsprinzip"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
+      ],
+      "relatedObjections": [],
+      "category": "Bewertungsbegriff",
+      "status": "woek-praezisierungsbegriff",
+      "version": "0.1"
+    },
+    {
       "id": "upcycling",
       "term": "Upcycling",
       "slug": "upcycling",
@@ -51991,6 +52761,37 @@
       "version": "2026-06-12"
     },
     {
+      "id": "verfahrensgerechtigkeit",
+      "term": "Verfahrensgerechtigkeit",
+      "slug": "verfahrensgerechtigkeit",
+      "shortDefinition": "Verfahrensgerechtigkeit bezeichnet die Qualität eines Entscheidungs- oder Prüfverfahrens, in dem Regeln nachvollziehbar sind, Betroffene gehört werden, Gründe offengelegt und Fehler wirksam korrigiert werden können.",
+      "longDefinition": "Ein Ergebnis kann als ungünstig erlebt werden und dennoch verfahrensgerecht zustande kommen, wenn Zuständigkeiten, Maßstäbe, Evidenz, Beteiligung und Beschwerdewege transparent sind. Umgekehrt ersetzt ein beliebtes Ergebnis kein faires Verfahren.\n\nVerfahrensgerechtigkeit umfasst insbesondere angemessene Beteiligung, unabhängige Prüfung, Verhältnismäßigkeit, Begründung, Datenschutz und Rechtsschutz. Sie ergänzt Verteilungs- und Ergebnisfragen, ersetzt sie aber nicht.",
+      "synonyms": [
+        "Verfahrensgerechtigkeit",
+        "prozedurale Gerechtigkeit",
+        "procedural justice"
+      ],
+      "relatedTerms": [
+        "rechtsschutz",
+        "verhaeltnismaessigkeit",
+        "institutionelle-vertrauenswuerdigkeit",
+        "reparaturfaehigkeit",
+        "wirkungsintegritaet",
+        "kooperative-wehrhaftigkeit",
+        "sdg-plus"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
+      ],
+      "relatedObjections": [],
+      "category": "Schutzbegriff",
+      "status": "woek-praezisierungsbegriff",
+      "version": "0.1"
+    },
+    {
       "id": "verfassung",
       "term": "Verfassung",
       "slug": "verfassung",
@@ -52187,7 +52988,9 @@
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
+      ],
       "relatedObjections": [],
       "category": "Akteure, Einfluss, Ideologien und demokratische Wirkungsräume",
       "status": "methodenbegriff",
@@ -52833,12 +53636,42 @@
       "relatedDocuments": [
         "folgencheck-statt-faktencheck-democracy-intelligence",
         "wirkung-schlaegt-wahrheit",
-        "kapitel-028-demokratie-als-wirkungsraum"
+        "kapitel-028-demokratie-als-wirkungsraum",
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
       ],
       "relatedObjections": [],
       "category": "Demokratiebegriff",
       "status": "woek-praegungsbegriff",
       "version": "1.0"
+    },
+    {
+      "id": "vertrauensallmende",
+      "term": "Vertrauensallmende",
+      "slug": "vertrauensallmende",
+      "shortDefinition": "Die Vertrauensallmende ist der gemeinsam erzeugte, regenerative Bestand an Verlässlichkeit, Berechenbarkeit und institutioneller Glaubwürdigkeit, der Kooperation und gesellschaftliche Handlungsfähigkeit ermöglicht.",
+      "longDefinition": "Vertrauen ist keine klassische rivalisierende Common-Pool-Ressource. Der Begriff verwendet Allmende als WÖk-Analogie für eine gemeinsame relationale Infrastruktur, die Kooperation erleichtert und durch Missbrauch, Intransparenz oder pauschalen Verdacht geschwächt werden kann.\n\nVertrauen kann wachsen, wenn Regeln verständlich, Verfahren fair, Korrekturen möglich und Daten nachvollziehbar sind. Es ersetzt weder Prüfung noch Rechtsschutz.",
+      "synonyms": [
+        "Vertrauensallmende",
+        "Vertrauens-Allmende"
+      ],
+      "relatedTerms": [
+        "kooperative-wehrhaftigkeit",
+        "wirkungsintegritaet",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsrat",
+        "demokratische-rueckkopplung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
+      ],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "woek-praezisierungsbegriff",
+      "version": "0.1"
     },
     {
       "id": "vertrauensverschiebung",
@@ -55043,7 +55876,8 @@
           "label": "Leitbild Mensch, Planet und Demokratie",
           "href": "../../dokumente/leitbild-mensch-planet-demokratie/"
         },
-        "impact-strategie-controlling-marketing-management-einkauf-chemieindustrie"
+        "impact-strategie-controlling-marketing-management-einkauf-chemieindustrie",
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
       ],
       "relatedObjections": [
         [
@@ -55841,7 +56675,8 @@
         "Technische Leitlinien WUStG",
         "Wirkungsrat-Konzept",
         "Produktbesteuerung durch Wirkung",
-        "impact-strategie-controlling-marketing-management-einkauf-chemieindustrie"
+        "impact-strategie-controlling-marketing-management-einkauf-chemieindustrie",
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
       ],
       "relatedObjections": [],
       "category": "Systemmodell & Steuerungsarchitektur",
@@ -55925,7 +56760,8 @@
         "Technische Leitlinien WUStG",
         "Working-Paper Wirkungssteuergesetz",
         "Systemmodell der Wirkungsökonomie",
-        "WÖk-Master-Items"
+        "WÖk-Master-Items",
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
       ],
       "relatedObjections": [],
       "category": "Prüfung, Assurance & Vertrauen",
@@ -56046,7 +56882,8 @@
         "Technische Leitlinien WUStG",
         "Working-Paper Wirkungssteuergesetz",
         "Systemmodell der Wirkungsökonomie",
-        "WÖk-Master-Items"
+        "WÖk-Master-Items",
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
       ],
       "relatedObjections": [],
       "category": "Prüfung, Audit & Qualitätssicherung",
@@ -57058,6 +57895,38 @@
       "category": "WÖMS Methodensystem",
       "status": "approved",
       "version": "2.0"
+    },
+    {
+      "id": "wirkungsdilemma",
+      "term": "Wirkungsdilemma",
+      "slug": "wirkungsdilemma",
+      "shortDefinition": "Ein Wirkungsdilemma liegt vor, wenn eine im engen oder kurzfristigen Rahmen vorteilhafte Entscheidung im relevanten Wirkungsraum negative Folgen auslöst, verstärkt oder auf andere verlagert.",
+      "longDefinition": "Wirkungsdilemmata entstehen etwa, wenn ein lokaler Kennwert verbessert wird, während Belastungen für andere Menschen, Ökosysteme oder spätere Zeiträume wachsen. Sie sind keine Behauptung, dass Beteiligte schlecht handeln. Sie beschreiben eine Lage, in der Informationen, Anreize, Zuständigkeiten oder Grenzen nicht ausreichend zusammenwirken.\n\nOb die Gesamtwirkung positiv oder negativ ist, muss am konkreten Referenzrahmen und an den tatsächlich veränderten Zuständen geprüft werden. Reichweite, Absicht oder ein einzelner Erfolgswert reichen dafür nicht aus.",
+      "synonyms": [
+        "Wirkungsdilemma",
+        "Wirkungs-Dilemma",
+        "Wirkungsdilemmata"
+      ],
+      "relatedTerms": [
+        "wirkung",
+        "positive-netto-wirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkungsrueckkopplung",
+        "externalisierung",
+        "wirkungstragung",
+        "nichtkompensationsprinzip"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
+      ],
+      "relatedObjections": [],
+      "category": "Grundbegriff",
+      "status": "woek-praezisierungsbegriff",
+      "version": "0.1"
     },
     {
       "id": "wirkungsdisziplin",
@@ -58252,7 +59121,8 @@
         "Wirkungsrat-Konzept",
         "Systemmodell der Wirkungsökonomie",
         "T-SROI-Whitepaper",
-        "Leitbild für Mensch, Planet und Demokratie"
+        "Leitbild für Mensch, Planet und Demokratie",
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
       ],
       "relatedObjections": [],
       "category": "Staat, Haushalt & öffentliche Mittel",
@@ -58602,6 +59472,36 @@
       "category": "Psychologische und systemische Wirkmechanismen",
       "status": "woek-anschlussbegriff",
       "version": "1.0"
+    },
+    {
+      "id": "wirkungsintegritaet",
+      "term": "Wirkungsintegrität",
+      "slug": "wirkungsintegritaet",
+      "shortDefinition": "Wirkungsintegrität bezeichnet, ob eine behauptete oder gemessene Wirkung einer tatsächlichen, zurechenbaren und hinreichend abgegrenzten Zustandsveränderung entspricht und gegen Manipulation, Auslassung, unzulässige Kompensation und Interessenkonflikte geschützt ist.",
+      "longDefinition": "Wirkungsintegrität prüft die Gültigkeit einer Wirkungsbehauptung, bevor sie für Steuerung, Förderung, Beschaffung, Berichterstattung oder Kommunikation genutzt wird. Dazu gehören Datenqualität, Abgrenzung, Zurechnung, Umgang mit Unsicherheit, Unabhängigkeit und Schutz vor Wirkungssimulation.\n\nSie ist kein zusätzlicher Wirkungsbereich und kein Bonuspunkt. Fehlt die Integrität, kann ein hoher Score keine positive Wirkung belegen.",
+      "synonyms": [
+        "Wirkungsintegrität",
+        "Wirkungs-Integrität"
+      ],
+      "relatedTerms": [
+        "wirkungssimulation",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsrat",
+        "wirkungstragung",
+        "kooperative-wehrhaftigkeit",
+        "nichtkompensationsprinzip"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
+      ],
+      "relatedObjections": [],
+      "category": "Schutzbegriff",
+      "status": "woek-praezisierungsbegriff",
+      "version": "0.1"
     },
     {
       "id": "wirkungsinvestition-des-staates",
@@ -59203,6 +60103,7 @@
       ],
       "relatedDemos": [],
       "relatedDocuments": [
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie",
         "Führender Begriffsleitfaden der Wirkungsökonomie",
         "Die neue Ordnung des Wohlstands",
         "Technische Leitlinien WUStG",
@@ -59212,8 +60113,8 @@
       ],
       "relatedObjections": [],
       "category": "Steuerungsbegriff",
-      "status": "führender-begriff",
-      "version": "1.1"
+      "status": "approved",
+      "version": "1.0"
     },
     {
       "id": "wirkungsluecke",
@@ -60335,26 +61236,42 @@
       "id": "wirkpfad",
       "term": "Wirkungspfad",
       "slug": "wirkpfad",
-      "shortDefinition": "Ein Wirkungspfad ordnet Auslöser, Aktivitäten und erbrachte Leistungen den erwarteten Veränderungen bei Wirkungsempfängern, möglichen Zustandsveränderungen und Rückkopplungen in einer prüfbaren Reihenfolge zu.",
-      "longDefinition": "Ein Wirkungspfad ordnet Auslöser, Aktivitäten und erbrachte Leistungen den erwarteten Veränderungen bei Wirkungsempfängern, möglichen Zustandsveränderungen und Rückkopplungen in einer prüfbaren Reihenfolge zu.\n\nC01 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Erwartetes Arbeitsergebnis: ein prüfbarer Wirkungspfad mit Wirkungsempfängern, Annahmen, Kontextbedingungen, möglichen Nebenwirkungen und Evidenz.",
+      "shortDefinition": "Wirkpfade oder Wirkungspfade beschreiben nachvollziehbare Hypothesen darüber, wie eine Handlung, Entscheidung, ein Produkt oder eine Kommunikation unter bestimmten Bedingungen Zustände verändert – einschließlich Wirkmechanismen, Betroffener, Nebenwirkungen und Rückkopplungen.",
+      "longDefinition": "Wirkpfade machen sichtbar, über welche Schritte eine Intervention zu Veränderungen führen könnte: von einer Entscheidung oder Aktivität über Ressourcen, Leistungen und Verhaltens- oder Strukturveränderungen bis zu direkten, indirekten und längerfristigen Wirkungen. Ein belastbarer Wirkpfad hält zugleich fest, für wen diese Veränderungen gelten, unter welchen Bedingungen sie eintreten, welche anderen Ursachen mitwirken, wo Schäden oder Kosten anfallen können und wie Beobachtungen die Annahmen verändern. Gerade in komplexen sozialen, ökologischen und demokratischen Systemen verlaufen Wirkpfade nicht nur vorwärts, sondern über Verzögerungen, Rückkopplungen, Wechselwirkungen und mögliche Externalisierung.",
       "synonyms": [
         "Wirkungspfad",
         "Wirkpfad",
+        "Wirkpfade",
+        "Wirkungspfade",
         "Wirkmechanismus-Pfad"
       ],
       "relatedTerms": [
-        "wirkungspotenzial",
-        "wirkmechanismus",
         "wirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkmechanismus",
         "wirkungsbewertung",
+        "wirkungsdaten",
+        "wirkungszurechnung",
+        "wirkungsempfaenger",
+        "wirkungstraeger",
+        "wirkungsraum",
+        "wirkungskette",
+        "wirkungsoekonomische-theory-of-change",
+        "wirkungshypothesen-register",
+        "evidenz-und-annahmenregister",
         "folgencheck",
+        "folgewirkung",
+        "rueckkopplung",
         "resonanzraum",
+        "rebound-effekt",
+        "externalitaeten-und-kostenverlagerungskarte",
+        "positive-netto-wirkung",
         "wirkungsproblem-canvas",
         "problem-und-wirkungsbaum",
         "kausalschleifen-und-rueckkopplungsdiagramm",
         "bestands-und-flussmodell",
         "interdependenz-und-abhaengigkeitsmatrix",
-        "externalitaeten-und-kostenverlagerungskarte",
         "wirkungsordnungen-landkarte",
         "wirkmechanismus-canvas",
         "woek-indikatorenarchitektur",
@@ -60363,24 +61280,18 @@
         "wirkungsoekonomisches-managementmodell",
         "zeit-verzoegerungs-und-generationenkarte",
         "wirkstoff",
-        "folgewirkung",
-        "rueckkopplung",
         "handlung",
         "handlungspfad",
         "hebelpunkt",
         "hebelwirkung",
         "impact-washing",
         "kipppunkt-systemschwelle",
-        "rebound-effekt",
         "resonanzarchitektur",
         "strategisches-management",
         "strukturdeterminiertheit",
-        "wirkungsempfaenger",
         "wirkungsindikator",
         "wirkungskompetenz",
         "wirkungsnetz",
-        "wirkungsraum",
-        "wirkungstraeger",
         "wirkungsverantwortung",
         "zeitwirkung",
         "frame",
@@ -60394,7 +61305,7 @@
       "relatedObjections": [],
       "category": "WÖMS Methodensystem",
       "status": "approved",
-      "version": "2.0"
+      "version": "2.1"
     },
     {
       "id": "wirkungspflicht-eigentum",
@@ -60613,7 +61524,8 @@
         {
           "label": "Leitbild Mensch, Planet und Demokratie",
           "href": "../../dokumente/leitbild-mensch-planet-demokratie/"
-        }
+        },
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
       ],
       "relatedObjections": [
         [
@@ -61170,7 +62082,8 @@
         "Technische Leitlinien WUStG",
         "Working-Paper Wirkungssteuergesetz",
         "Systemmodell der Wirkungsökonomie",
-        "WÖk-Master-Items"
+        "WÖk-Master-Items",
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
       ],
       "relatedObjections": [
         [
@@ -61954,7 +62867,8 @@
         ]
       ],
       "relatedDocuments": [
-        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling",
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
       ],
       "relatedObjections": [
         [
@@ -62130,6 +63044,7 @@
         ]
       ],
       "relatedDocuments": [
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie",
         "verstehen/sdgs-sdgplus/risiko-resilienzregister/",
         "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
       ],
@@ -62140,8 +63055,8 @@
         ]
       ],
       "category": "Grundbegriff",
-      "status": "führender-begriff",
-      "version": "1.1"
+      "status": "approved",
+      "version": "1.0"
     },
     {
       "id": "wirkungsschule",
@@ -62266,7 +63181,8 @@
         "fuehrender-begriffsleitfaden",
         "wirkungsrat-konzept",
         "working-paper-wirkungssteuergesetz",
-        "systemmodell-der-wirkungsoekonomie"
+        "systemmodell-der-wirkungsoekonomie",
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
       ],
       "relatedObjections": [],
       "category": "Wirkungsmessung, Manipulation & Missbrauchsschutz",
@@ -62718,6 +63634,35 @@
       "category": "Grundbegriff",
       "status": "führender-begriff",
       "version": "1.1"
+    },
+    {
+      "id": "wirkungstragung",
+      "term": "Wirkungstragung",
+      "slug": "wirkungstragung",
+      "shortDefinition": "Wirkungstragung bezeichnet die institutionelle Zuordnung positiver und negativer Folgen zu den Akteuren, die sie verursachen, von ihnen profitieren, sie kontrollieren oder sie mit vertretbarem Aufwand verändern können.",
+      "longDefinition": "Die Leitfrage lautet: Wer entscheidet, wer profitiert, wer kontrolliert und wer trägt die Folgen? Wirkungstragung macht diese Fragen nicht zu einer moralischen Rangliste von Menschen, sondern zu einer prüfbaren institutionellen Frage.\n\nSie kann sich auf Unternehmen, öffentliche Stellen, Eigentums- und Vertragsbeziehungen, Lieferketten oder andere Handlungskontexte beziehen. Ihre konkrete Ausgestaltung braucht Rechtsschutz, Verhältnismäßigkeit und nachvollziehbare Zuständigkeiten.",
+      "synonyms": [
+        "Wirkungstragung",
+        "Wirkungs-Tragung"
+      ],
+      "relatedTerms": [
+        "wirkungsverantwortung",
+        "externalisierung",
+        "externalisierungsluecke",
+        "preisvollstaendigkeit",
+        "wirkungslenkung",
+        "positive-netto-wirkung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [
+        "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
+      ],
+      "relatedObjections": [],
+      "category": "Steuerungsbegriff",
+      "status": "woek-praezisierungsbegriff",
+      "version": "0.1"
     },
     {
       "id": "wirkungstransformations-bereitschaft",

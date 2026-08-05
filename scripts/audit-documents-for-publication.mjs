@@ -23,6 +23,7 @@ const SKIP_PARTS = [
   ".claude/",
   ".codex-backup/",
   ".next/",
+  "_site/",
   ".vercel/",
   "node_modules/",
   ".wt-",
@@ -67,6 +68,8 @@ const REQUIRED_FIELDS = [
   "slug",
   "title",
   "subtitle",
+  "author",
+  "publicationLabel",
   "fileName",
   "filePath",
   "fileType",
@@ -93,7 +96,8 @@ const REQUIRED_FIELDS = [
   "editorialNote",
   "internalNote",
   "downloadAllowed",
-  "previewAllowed"
+  "previewAllowed",
+  "includeInFullKnowledgeLibrary"
 ];
 
 const RESTORED_PUBLIC_BOOK_IDS = new Set([
@@ -528,6 +532,43 @@ const DOCUMENTS = [
     previewAllowed: true,
     section: "Grundlagen & Leitbild",
     order: 40
+  },
+  {
+    id: "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie",
+    slug: "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie",
+    title: "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung",
+    subtitle: "Soziale Dilemmata, psychologische Dynamiken, Vertrauen, Macht, Wirkungsintegrität, SDG+ und die Bedingungen gelingender Transformation",
+    author: "Natalie Weber",
+    publicationLabel: "Gesamtstudie 2.0",
+    fileName: "woek_gesamtstudie_wirkungsdilemmata_kooperation_sdgplus_v2_0.pdf",
+    filePath: "assets/downloads/woek_gesamtstudie_wirkungsdilemmata_kooperation_sdgplus_v2_0.pdf",
+    contentHtmlPath: "content/documents/online/wirkungsdilemmata-kooperation-sdgplus-gesamtstudie.inc",
+    documentType: "grundlagenpapier",
+    status: "arbeitsfassung",
+    visibility: "expert_public",
+    audience: ["Fachöffentlichkeit", "Wissenschaft", "Politik", "Methodik", "Zivilgesellschaft"],
+    level: "expert",
+    summaryShort: "Gesamtstudie 2.0 zur Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung. Sie ordnet soziale Dilemmata, psychologische Dynamiken, Vertrauen, Macht, Wirkungsintegrität und SDG+ als Bedingungen gelingender Transformation ein.",
+    whatToExpect: "Eine umfassende Theorie- und Architekturstudie zu sozialen Wirkungsdilemmata, Kooperation, Rückkopplung, Wirkungstragung, Nichtkompensation, Reverse Merit Order, Wirkungsintegrität, SDG+ und institutioneller Lernfähigkeit. Modellhafte Vorschläge bleiben als Arbeits- und Diskussionsfassung gekennzeichnet.",
+    keyQuestions: [
+      "Unter welchen Bedingungen wird Kooperation ohne Naivität tragfähig und wehrhaft?",
+      "Wie lassen sich soziale Wirkungsdilemmata, Macht- und Informationsprobleme, Externalisierung und Vertrauensverluste gemeinsam einordnen?",
+      "Wie schützen Nichtkompensation, Reverse Merit Order, Rechtsstaatlichkeit und Wirkungsintegrität vor Scheingenauigkeit, Machtmissbrauch und Personenbewertung?",
+      "Wie kann eine Wirkungsordnung positive Netto-Wirkung am Referenzrahmen Mensch, Planet, Demokratie, SDGs und SDG+ ausrichten?"
+    ],
+    topics: ["Soziale Wirkungsdilemmata", "Kooperation", "Vertrauen", "Macht", "Wirkungsintegrität", "Wirkungstragung", "Externalisierung", "Nichtkompensation", "Reverse Merit Order", "SDG+"],
+    methods: ["Wirkungsarchitektur", "Wirkungsrückkopplung", "Wirkungsintegrität", "Polyzentralität", "Wirkungsassurance"],
+    impactFields: ["Mensch", "Planet", "Demokratie"],
+    relatedDocuments: ["grundlagenpapier-wirkungsoekonomie", "systemmodell-wirkungsoekonomie", "woek-begriffsleitfaden-fuehrend", "whitepaper-t-sroi", "technische-leitlinien-wustg", "wirkungsrat-konzept"],
+    version: "v2.0",
+    date: "2026-08-05",
+    legalNotice: "Konzeptionelle Gesamtstudie und Arbeitsfassung. Kein empirischer Nachweis einer bereits gesamtwirtschaftlich bewährten Wirkungsökonomie; keine Rechts-, Steuer-, Förder-, Anlage-, Prüfungs-, Unternehmens- oder Politikberatung, keine amtliche Bewertungsmethode, keine Personenbewertung und kein Social-Credit-System.",
+    editorialNote: "Die öffentliche Fassung trennt Theorie, Modelle, Forschungsfragen und Quellen von redaktioneller Arbeitsplanung. Modellhafte Aussagen, Pilotlogiken und institutionelle Module sind als Vorschläge gekennzeichnet.",
+    downloadAllowed: true,
+    previewAllowed: true,
+    includeInFullKnowledgeLibrary: true,
+    section: "Grundlagen & Leitbild",
+    order: 42
   },
   {
     id: "von-der-wissensgesellschaft-zur-wirkungsgesellschaft",
@@ -2032,6 +2073,10 @@ function badge(value, prefix = "") {
   return `<span class="status-badge status-badge--${slugify(value)}">${escapeHtml(prefix ? `${prefix}: ${value}` : value)}</span>`;
 }
 
+function displayType(doc) {
+  return doc.publicationLabel || doc.documentType;
+}
+
 function documentUrl(doc, prefix = "") {
   return `${prefix}bibliothek/${doc.slug}/`;
 }
@@ -2058,8 +2103,8 @@ function foundationHref(doc, prefix = "") {
 }
 
 function card(doc, prefix = "") {
-  return `<article class="document-card" data-document-card data-type="${escapeHtml(doc.documentType)}" data-status="${escapeHtml(doc.status)}" data-level="${escapeHtml(doc.level)}" data-audience="${escapeHtml(doc.audience.join(" "))}" data-topics="${escapeHtml(doc.topics.join(" "))}" data-methods="${escapeHtml(doc.methods.join(" "))}" data-fields="${escapeHtml(doc.impactFields.join(" "))}" data-order="${Number(doc.order || 999)}" data-date="${escapeHtml(doc.date || "")}" data-pages="${Number(doc.pageCount || 0)}">
-    <div class="document-card-badges">${badge(doc.documentType)}${badge(doc.status)}${badge(doc.level, "Niveau")}</div>
+  return `<article class="document-card" data-document-card data-type="${escapeHtml(doc.documentType)}" data-author="${escapeHtml(doc.author || "")}" data-status="${escapeHtml(doc.status)}" data-level="${escapeHtml(doc.level)}" data-audience="${escapeHtml(doc.audience.join(" "))}" data-topics="${escapeHtml(doc.topics.join(" "))}" data-methods="${escapeHtml(doc.methods.join(" "))}" data-fields="${escapeHtml(doc.impactFields.join(" "))}" data-order="${Number(doc.order || 999)}" data-date="${escapeHtml(doc.date || "")}" data-pages="${Number(doc.pageCount || 0)}">
+    <div class="document-card-badges">${badge(displayType(doc))}${badge(doc.status)}${badge(doc.level, "Niveau")}</div>
     <h3>${escapeHtml(doc.title)}</h3>
     <p>${escapeHtml(doc.summaryShort)}</p>
     <dl class="document-card-meta"><dt>Umfang</dt><dd>${escapeHtml([doc.pageCount ? `${doc.pageCount} Seiten` : "", doc.estimatedReadingTime, doc.fileType?.toUpperCase()].filter(Boolean).join(" · ") || "Umfang offen")}</dd></dl>
@@ -2069,7 +2114,8 @@ function card(doc, prefix = "") {
   </article>`;
 }
 
-function layout({ title, description, body, prefix = "", robots = "" }) {
+function layout({ title, description, body, prefix = "", robots = "", canonicalPath = "", author = "" }) {
+  const canonical = canonicalPath ? `https://wirkungsoekonomie.de${canonicalPath}` : "";
   return `<!DOCTYPE html>
 <html lang="de">
   <head>
@@ -2077,6 +2123,14 @@ function layout({ title, description, body, prefix = "", robots = "" }) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>${escapeHtml(title)}</title>
     <meta name="description" content="${escapeHtml(description)}">
+    ${canonical ? `<link rel="canonical" href="${escapeHtml(canonical)}">` : ""}
+    ${canonical ? `<meta property="og:type" content="article">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:site_name" content="Wirkungsökonomie">
+    <meta property="og:title" content="${escapeHtml(title)}">
+    <meta property="og:description" content="${escapeHtml(description)}">
+    <meta property="og:url" content="${escapeHtml(canonical)}">` : ""}
+    ${author ? `<meta name="author" content="${escapeHtml(author)}">` : ""}
     <meta name="search_title" content="${escapeHtml(title)}">
     <meta name="search_description" content="${escapeHtml(description)}">
     <meta name="search_section" content="Bibliothek">
@@ -2214,6 +2268,7 @@ function libraryPage(publicDocs, archiveDocs, prefix = "") {
       const searchMatch = !query || [
         card.textContent,
         card.dataset.type,
+        card.dataset.author,
         card.dataset.status,
         card.dataset.level,
         card.dataset.audience,
@@ -2281,7 +2336,8 @@ function detailPage(doc, prefix = "../../") {
     successor ? `<a class="btn btn-primary" href="${successor}">${escapeHtml(doc.successorLabel || "Aktuelle Fassung öffnen")}</a>` : "",
     foundation ? `<a class="btn btn-secondary" href="${foundation}">Grundlagenpfad</a>` : "",
     online ? `<a class="btn btn-secondary" href="${online}">Onlinefassung lesen</a>` : "",
-    href ? `<a class="btn btn-primary" href="${href}">PDF öffnen</a>` : ""
+    href ? `<a class="btn btn-primary" href="${href}">PDF öffnen</a>` : "",
+    onlineContent ? `<button class="btn btn-secondary" type="button" data-print-page onclick="window.print()">Onlinefassung drucken</button>` : ""
   ].filter(Boolean);
   const downloadBlock = actionLinks.length
     ? `<div class="document-action-row">${actionLinks.join("")}</div>`
@@ -2289,7 +2345,8 @@ function detailPage(doc, prefix = "../../") {
   const metaAside = `
         <aside class="document-detail-aside" data-search-exclude>
           <dl>
-            <dt>Dokumentart</dt><dd>${escapeHtml(doc.documentType)}</dd>
+            <dt>Dokumentart</dt><dd>${escapeHtml(displayType(doc))}</dd>
+            ${doc.author ? `<dt>Autorin</dt><dd>${escapeHtml(doc.author)}</dd>` : ""}
             <dt>Status</dt><dd>${escapeHtml(doc.status)}</dd>
             <dt>Umfang</dt><dd>${escapeHtml([doc.pageCount ? `${doc.pageCount} Seiten` : "", doc.estimatedReadingTime, doc.fileType?.toUpperCase()].filter(Boolean).join(" · ") || "offen")}</dd>
             <dt>Stand / Version</dt><dd>${escapeHtml([doc.date, doc.version].filter(Boolean).join(" · ") || "offen")}</dd>
@@ -2302,10 +2359,11 @@ function detailPage(doc, prefix = "../../") {
         </aside>`;
   const body = `
       <section class="hero compact-hero document-detail-hero">
-        <p class="hero-kicker">${doc.isLeadingReference ? "führende dokumentseite · " : ""}${escapeHtml(doc.documentType)} · ${escapeHtml(doc.status)}</p>
+        <p class="hero-kicker">${doc.isLeadingReference ? "führende dokumentseite · " : ""}${escapeHtml(displayType(doc))} · ${escapeHtml(doc.status)}</p>
         <h1>${escapeHtml(doc.title)}</h1>
         <p class="hero-subtitle">${escapeHtml(doc.subtitle)}</p>
-        <div class="document-card-badges">${badge(doc.documentType)}${badge(doc.status)}${badge(doc.level, "Niveau")}</div>
+        ${doc.author ? `<p class="document-author">Von ${escapeHtml(doc.author)}</p>` : ""}
+        <div class="document-card-badges">${badge(displayType(doc))}${badge(doc.status)}${badge(doc.level, "Niveau")}</div>
       </section>
       <section class="section document-detail-grid">
         ${metaAside}
@@ -2338,7 +2396,9 @@ function detailPage(doc, prefix = "../../") {
     description: doc.summaryShort,
     body,
     prefix,
-    robots: isHistorical ? "noindex,follow" : ""
+    robots: isHistorical ? "noindex,follow" : "",
+    canonicalPath: `/bibliothek/${doc.slug}/`,
+    author: doc.author || ""
   });
 }
 
@@ -2466,6 +2526,8 @@ function writeModel(gatedDocs) {
       slug: doc.slug,
       title: doc.title,
       subtitle: doc.subtitle,
+      author: doc.author || "",
+      publicationLabel: doc.publicationLabel || "",
       documentType: doc.documentType,
       status: doc.status,
       visibility: doc.visibility,
@@ -2477,7 +2539,10 @@ function writeModel(gatedDocs) {
       impactFields: doc.impactFields,
       pageCount: doc.pageCount,
       estimatedReadingTime: doc.estimatedReadingTime,
+      version: doc.version,
+      date: doc.date,
       downloadAllowed: doc.downloadAllowed,
+      includeInFullKnowledgeLibrary: doc.includeInFullKnowledgeLibrary === true,
       url: `/bibliothek/${doc.slug}/`
     }))
   }, null, 2)}\n`);

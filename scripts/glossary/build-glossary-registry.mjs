@@ -14,9 +14,11 @@ const supplementSources = [
   path.join(root, "content/glossary/imports/terminologie-leitplanken.json"),
   path.join(root, "content/glossary/imports/rechtsgrundlagen-primarquellen.json"),
   path.join(root, "content/glossary/imports/psychologie-und-kommunikation-definitionen.json"),
+  path.join(root, "content/glossary/imports/gesamtstudie-wirkungsdilemmata-kooperation-sdgplus-term-definitions.json"),
   // Fachlich begründete Verbindungen für zuvor isolierte Begriffe. Diese
   // Datei ist kuratiert, nicht aus Kategorien automatisch abgeleitet.
   path.join(root, "content/glossary/imports/curated-crosslinks.json"),
+  path.join(root, "content/glossary/imports/gesamtstudie-wirkungsdilemmata-kooperation-sdgplus-crosslinks.json"),
 ];
 const out = path.join(root, "public/data/glossary.terms.json");
 const modelOut = path.join(root, "assets/data/glossary-model.json");
@@ -805,6 +807,9 @@ function sourceUrlForArchive(label, originalUrl = "") {
   ]);
   if (originalUrl) return canonicalInternalRoutes.get(originalUrl) || originalUrl;
   const normalized = normalizeKey(label);
+  if (normalized === "die wirkungsoekonomie als kooperative lernende und wehrhafte wirkungsordnung") {
+    return "https://wirkungsoekonomie.de/bibliothek/wirkungsdilemmata-kooperation-sdgplus-gesamtstudie/";
+  }
   if (/begriffsleitfaden/.test(normalized)) return "https://wirkungsoekonomie.de/public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.3.pdf";
   if (/woems|woemm|methodensystem|managementmodell/.test(normalized)) return "https://wirkungsoekonomie.de/methodenraum/gesamtbild/";
   if (/impact controlling|doppelte wesent/.test(normalized)) return "https://wirkungsoekonomie.de/werkzeuge/impact-controlling/";
