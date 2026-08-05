@@ -593,7 +593,9 @@ function normalizePublicArtifactLinksAndText() {
         .replace(/"((?:docxUrl|detailDownload|dossierDownload|downloadUrl|sourceDocument|online_target|path|file_name|source|expected|originalName|name))"\s*:\s*"[^"]*\.(?:md|docx?|rtf)(?:[^"]*)?"/gi, '"$1": ""');
     }
 
-    if (ext !== ".js") {
+    // Inline application code must not be treated as prose: the generic
+    // workfile scrubber would misread document.documentElement as a .doc filename.
+    if (ext !== ".js" && relative !== "werkzeuge/wirkungswahl-kompass/index.html") {
       content = content.replace(/(?:^|[\s"'>(])[\p{L}\p{N}_ .+()/-]+\.(?:md|docx?|rtf)/giu, (match) => {
         const prefix = /^[\s"'>(]/u.test(match) ? match[0] : "";
         return `${prefix}Arbeitsdatei entfernt`;
