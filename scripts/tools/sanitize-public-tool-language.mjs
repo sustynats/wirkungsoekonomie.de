@@ -105,6 +105,7 @@ function ctaLabelForHref(href) {
   if (/assets\/downloads|\/downloads\/|\.pdf($|#|\?)|\.docx($|#|\?)/i.test(value)) return "Herunterladen";
   if (/\/begriffe\//i.test(value)) return "Glossarbegriff erklären";
   if (/\/wirkungsfelder\//i.test(value)) return "Wirkungsfeld ansehen";
+  if (/(?:^|\/)wirkungswahl-kompass\/?($|#|\?)/i.test(value)) return "Wirkungswahl-Kompass öffnen";
   if (/\/werkzeuge\//i.test(value)) return "Methodik lesen";
   if (/\/mein-wirkungsraum(?:\/|#|\?|$)/i.test(value)) return "Mein Wirkungsraum öffnen";
   if (/\/erleben\/|\/anwendungen\/scanner\.html|scanner\.html/i.test(value)) return "Tool testen";
@@ -186,6 +187,11 @@ function runIdempotenceSelfTest() {
   }
   if (/in Vorbereitung|wird ergänzt/.test(normalized)) {
     throw new Error("Self-test failed: legacy editorial status remains after normalisation.");
+  }
+
+  const compassCta = sanitizeCtaText('<a href="wirkungswahl-kompass/">Wirkungswahl-Kompass öffnen</a>');
+  if (compassCta !== '<a href="wirkungswahl-kompass/">Wirkungswahl-Kompass öffnen</a>') {
+    throw new Error("Self-test failed: the Wirkungswahl-Kompass CTA was not preserved.");
   }
 
   console.log("Public tool-language fixed-point self-test passed.");
