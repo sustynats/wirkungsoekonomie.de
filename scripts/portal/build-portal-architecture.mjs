@@ -1612,6 +1612,19 @@ const publicToolEntrypoints = [
     type: "Orientierung",
   },
   {
+    title: "Wirkungswahl-Kompass",
+    question: "Wie passen politische Wirkungspotenziale zu meinen Prioritäten?",
+    text: "Ordnet 36 politische Vorschläge anhand von Wirkungsfeldern, Quellen und Unsicherheiten ein – ohne Partei-Ranking oder Wahlempfehlung.",
+    href: "werkzeuge/wirkungswahl-kompass/",
+    status: "In unabhängiger Prüfung",
+    badgeStatus: "Arbeitsfassung",
+    statusLabel: "In unabhängiger Prüfung",
+    statusTitle: "Status: In unabhängiger Prüfung",
+    type: "Wirkungswerkzeug",
+    notice: "In unabhängiger Prüfung: Quellen sind offen; 252 Parteizuordnungen und 36 Wirkungsanalysen werden zweitgeprüft.",
+    actionLabel: "Wirkungswahl-Kompass öffnen",
+  },
+  {
     title: "WÖk-Scanner",
     question: "Welches Werkzeug passt zu meiner Frage?",
     text: "Führt von Nutzerfrage und Zielgruppe zu passender Methode, Demo, Rechner oder Vertiefung.",
@@ -1665,13 +1678,13 @@ function publicToolEntrypointsSection(base) {
             ${publicToolEntrypoints.map((tool) => `<article class="card method-tool-card">
               <div class="method-tool-card-head">
                 <p class="card-kicker">${escapeHtml(tool.type)}</p>
-                ${StatusBadge(tool.status)}
+                ${StatusBadge(tool.badgeStatus || tool.status, { label: tool.statusLabel, title: tool.statusTitle })}
               </div>
               <h3 class="card-title">${escapeHtml(tool.title)}</h3>
               <p class="card-text"><strong>${escapeHtml(tool.question)}</strong></p>
               <p class="card-text">${escapeHtml(tool.text)}</p>
-              <p class="method-tool-notice">Modellhafte Orientierung, keine Personenbewertung und keine automatische Entscheidung.</p>
-              <div class="portal-card-actions"><a class="text-link" href="${href(base, tool.href)}">Öffnen</a></div>
+              <p class="method-tool-notice">${escapeHtml(tool.notice || "Modellhafte Orientierung, keine Personenbewertung und keine automatische Entscheidung.")}</p>
+              <div class="portal-card-actions"><a class="text-link" href="${href(base, tool.href)}">${escapeHtml(tool.actionLabel || "Öffnen")}</a></div>
             </article>`).join("")}
           </div>
         </div>
