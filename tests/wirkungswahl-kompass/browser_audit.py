@@ -55,6 +55,7 @@ def local_server():
 def set_complete_local_state(page) -> None:
     page.evaluate(
         """() => {
+          localStorage.removeItem('woek_user_space');
           S.answers = {};
           Q.forEach((question, index) => {
             S.answers[question.id] = { value: (index % 5) - 2, importance: index % 4 };
@@ -67,6 +68,14 @@ def set_complete_local_state(page) -> None:
           render();
         }""",
     )
+
+
+def nested_keys(value: object) -> set[str]:
+    if isinstance(value, dict):
+        return {str(key) for key in value} | set().union(*(nested_keys(item) for item in value.values()))
+    if isinstance(value, list):
+        return set().union(*(nested_keys(item) for item in value)) if value else set()
+    return set()
 
 
 def main() -> None:
@@ -84,7 +93,8 @@ def main() -> None:
             launch_options["executable_path"] = executable
         browser = playwright.chromium.launch(**launch_options)
         for width in WIDTHS:
-            page = browser.new_page(viewport={"width": width, "height": 900})
+            context = browser.new_context(viewport={"width": width, "height": 900})
+            page = context.new_page()
             console_errors: list[str] = []
             requests: list[str] = []
             page.on(
@@ -179,20 +189,100 @@ def main() -> None:
             page.goto(f"{base_url}#/datenschutz", wait_until="load")
             set_complete_local_state(page)
             page.once("dialog", lambda dialog: dialog.accept())
-            page.get_by_role("button", name="Alle lokalen Daten löschen").click()
+            page.get_by_role("button", name="Kompassdaten löschen").click()
             page.wait_for_timeout(30)
             persisted = page.evaluate("() => localStorage.getItem('wwk_real_state_v1')")
             if persisted is not None:
                 errors.append(f"wipe left local state at {width}px")
 
             page.goto(f"{base_url}#/teilen", wait_until="load")
-            if page.get_by_role("button", name="Grafik als SVG laden").count() != 1:
-                errors.append(f"share graphic download is unavailable at {width}px")
+            set_complete_local_state(page)
+            page.evaluate(
+                """() => localStorage.setItem('woek_user_space', JSON.stringify({
+                  namespace: 'woek_user_space', schema_version: 3,
+                  objects: {
+                    saved_items: { version: 1, items: [{ id: 'bestehende-merkung', type: 'Werkzeug', title: 'Bestehende Merkung', url: '/werkzeuge/', saved_at: '2026-01-01T00:00:00.000Z' }] },
+                    notes: { version: 1, items: [{ id: 'notiz-bleibt', text: 'Erhalten' }] }
+                  }
+                }))""",
+            )
+            for label in ["In Mein Wirkungsraum speichern", "Als PNG laden", "Als PDF laden", "Prioritäten teilen"]:
+                if page.get_by_role("button", name=label).count() != 1:
+                    errors.append(f"result action {label!r} is unavailable at {width}px")
+
+            page.get_by_role("button", name="In Mein Wirkungsraum speichern").click()
+            page.wait_for_timeout(30)
+            page.get_by_role("button", name="In Mein Wirkungsraum speichern").click()
+            saved_store = page.evaluate("() => JSON.parse(localStorage.getItem('woek_user_space') || '{}')")
+            saved_items = saved_store.get("objects", {}).get("saved_items", {}).get("items", [])
+            result_items = [item for item in saved_items if item.get("id") == "wirkungswahl-kompass-mein-ergebnis"]
+            result_item = result_items[0] if result_items else {}
+            if len(result_items) != 1 or not saved_items or saved_items[0].get("id") != "wirkungswahl-kompass-mein-ergebnis":
+                errors.append(f"priority profile was not upserted at the top of Mein Wirkungsraum at {width}px")
+            if any(item.get("id") == "bestehende-merkung" for item in saved_items) is False:
+                errors.append(f"saving priority profile removed an existing saved item at {width}px")
+            if saved_store.get("objects", {}).get("notes", {}).get("items", [{}])[0].get("id") != "notiz-bleibt":
+                errors.append(f"saving priority profile removed another Mein-Wirkungsraum object at {width}px")
+            if result_item.get("type") != "Werkzeug" or result_item.get("url") != "/werkzeuge/wirkungswahl-kompass/#/teilen":
+                errors.append(f"priority profile has no compatible Werkzeug card at {width}px")
+            if not result_item.get("saved_at") or not result_item.get("tags") or not result_item.get("result_summary", {}).get("top_priorities"):
+                errors.append(f"priority profile summary is incomplete at {width}px")
+            forbidden = {"answers", "party", "parties", "proximity", "compare", "reveal", "stance"}
+            if nested_keys(result_item) & forbidden:
+                errors.append(f"priority profile stores excluded political answer data at {width}px")
+
+            if width == WIDTHS[0]:
+                with page.expect_download() as png_download_info:
+                    page.get_by_role("button", name="Als PNG laden").click()
+                png_download = png_download_info.value
+                png_path = png_download.path()
+                png_bytes = Path(png_path).read_bytes() if png_path else b""
+                if not png_download.suggested_filename.endswith(".png") or not png_bytes.startswith(b"\x89PNG\r\n\x1a\n"):
+                    errors.append("priority PNG export is not a PNG download")
+
+                with page.expect_download() as pdf_download_info:
+                    page.get_by_role("button", name="Als PDF laden").click()
+                pdf_download = pdf_download_info.value
+                pdf_path = pdf_download.path()
+                pdf_bytes = Path(pdf_path).read_bytes() if pdf_path else b""
+                if not pdf_download.suggested_filename.endswith(".pdf") or not pdf_bytes.startswith(b"%PDF-") or b"%%EOF" not in pdf_bytes[-128:]:
+                    errors.append("priority PDF export is not a valid PDF download")
+
+                page.evaluate(
+                    """() => {
+                      window.__wwk_shared_payload = null;
+                      Object.defineProperty(navigator, 'share', { configurable: true, value: payload => {
+                        window.__wwk_shared_payload = payload;
+                        return Promise.resolve();
+                      }});
+                    }""",
+                )
+                page.get_by_role("button", name="Prioritäten teilen").click()
+                page.wait_for_timeout(30)
+                shared_payload = page.evaluate("() => window.__wwk_shared_payload") or {}
+                shared_text = json.dumps(shared_payload, ensure_ascii=False).lower()
+                if "#/teilen" not in str(shared_payload.get("url", "")) or any(token in shared_text for token in ["answers", "cdu/csu", "spd", "afd", "proximity"]):
+                    errors.append("share payload contains more than the neutral priority profile")
+
+                portal = context.new_page()
+                portal.goto(f"{base_url[:-len(BASE_PATH)]}/mein-wirkungsraum/#gemerkte-inhalte", wait_until="load")
+                portal.get_by_role("button", name="Werkzeuge").click()
+                try:
+                    portal.get_by_role("heading", name="Wirkungswahl-Kompass – Meine Prioritäten").wait_for(timeout=3000)
+                except Exception:
+                    errors.append("Mein Wirkungsraum does not render the saved priority card")
+                portal.close()
+
+                page.evaluate("() => localStorage.setItem('woek_user_space', 'unlesbar')")
+                page.get_by_role("button", name="In Mein Wirkungsraum speichern").click()
+                if "gespeichert" not in page.locator("#share-status").inner_text().lower():
+                    errors.append("saving with malformed Mein-Wirkungsraum data failed")
 
             if any("akademie.wirkungsoekonomie.de/api/site-event" in request for request in requests):
                 errors.append(f"external analytics request at {width}px")
             errors.extend(f"console at {width}px: {error}" for error in console_errors)
             page.close()
+            context.close()
         browser.close()
 
     report = {"passed": not errors, "results": results, "errors": errors}

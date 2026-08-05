@@ -20,4 +20,4 @@ Die optionale Browserprüfung braucht zusätzlich Playwright und Chromium:
 /tmp/wwk-venv/bin/python tests/wirkungswahl-kompass/browser_audit.py
 ```
 
-Sie prüft alle Kernrouten bei 360, 485, 768 und 1.440 Pixeln, globalen horizontalen Überlauf, Konsolenfehler, fehlende externe Requests, Dialog-Fokusverhalten und die lokale Löschung.
+Sie prüft alle Kernrouten bei 360, 485, 768 und 1.440 Pixeln, globalen horizontalen Überlauf, Konsolenfehler, fehlende externe Requests, Dialog-Fokusverhalten, die lokale Löschung, die datensparsame Merkkarte in Mein Wirkungsraum sowie PNG- und PDF-Downloads.

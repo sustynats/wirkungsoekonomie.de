@@ -6,6 +6,8 @@
 
 Der Kompass ist auf der öffentlichen Werkzeugseite verlinkt und bleibt als redaktioneller Arbeitsstand gekennzeichnet. Die Seite trägt bis zum Abschluss der unabhängigen Zweitprüfung, des Stellungnahmeverfahrens und der juristischen Prüfung weiterhin `noindex, nofollow`; das begrenzt nur die Suchmaschinenaufnahme, nicht die öffentliche Nutzbarkeit über die Werkzeugseite. Sie lädt bewusst nicht `assets/js/main.js`, damit weder Analytics noch Besucher-IDs oder politische Antworten übertragen werden.
 
+Nutzende können ihr Prioritätenprofil ausdrücklich als lokale Merkkarte in „Mein Wirkungsraum“ speichern, als PNG/PDF/SVG laden oder per Web-Share bzw. Zwischenablage teilen. Die Merkkarte enthält nur bis zu vier priorisierte Wirkungsfelder sowie technische Metadaten für die Karte; keine einzelnen Antworten, Parteien, Nähewerte oder Vergleiche. Der Kompass startet weder eine Konto- noch eine Server-Synchronisierung. Eine gegebenenfalls später im Wirkungsraum aktivierte Synchronisierung bleibt eine dortige, separate Entscheidung der Nutzenden.
+
 ## Verbindliche Datenquellen
 
 1. Kontrolliert vorgehaltene Word-Quelldokumente `Wirkungswahl-Kompass_Methodik_Content_UX-Paket_v1.0.docx` und `Wirkungswahl-Kompass_Redaktionelles_Inhaltspaket_v1.0.docx` (nicht im Website-Repository)
@@ -39,13 +41,13 @@ node tests/wirkungswahl-kompass/check-accessibility.mjs
 
 `build-preview.py` schreibt nur `werkzeuge/wirkungswahl-kompass/index.html`. Der Datensatz wird dabei erst nach Schema- und Integritätsprüfung in die eigenständige Seite eingebettet. Das verhindert eine Laufzeitabhängigkeit von nicht deployten `content/`-Dateien.
 
-Die Browser-Abnahme ist unter `tests/wirkungswahl-kompass/browser_audit.py` dokumentiert. Sie benötigt Playwright und Chromium und prüft Kernrouten, 360/485/768/1440 Pixel, Überlauf, Menüfokus, vollständiges Löschen des lokalen Zustands, A–G-Anonymisierung, alle 36 Vergleichsfragen, den neutralen SVG-Export und fehlende Analytics-Requests.
+Die Browser-Abnahme ist unter `tests/wirkungswahl-kompass/browser_audit.py` dokumentiert. Sie benötigt Playwright und Chromium und prüft Kernrouten, 360/485/768/1440 Pixel, Überlauf, Menüfokus, vollständiges Löschen des lokalen Zustands, A–G-Anonymisierung, alle 36 Vergleichsfragen, die lokale Wirkungsraum-Merkkarte, PNG/PDF/SVG-Downloads, das neutrale Teilen und fehlende Analytics-Requests im Kompass.
 
 ## Hosting und Sicherheit
 
 Die statische GitHub-Pages-Umgebung stellt keine konfigurierbaren Response-Header bereit. Deshalb enthält die Seite eine restriktive CSP als Meta-Policy (`default-src 'self'`, keine Objektquellen, keine externen Verbindungen) und bindet keine Drittanbieter-Skripte ein. Die derzeitige eigenständige Seite braucht Inline-Styles und -Skripte; die CSP lässt deshalb nur diese lokalen Inline-Blöcke zu. Für eine spätere Verschärfung auf nonces oder Hashes braucht es eine Hosting-/CDN-Konfiguration mit HTTP-Headern.
 
-Alle Antworten bleiben unter `localStorage["wwk_real_state_v1"]` im Browser. „Alle lokalen Daten löschen“ entfernt diesen Schlüssel vollständig. Das Tool sendet keine Antworten, keine Telemetrie und keine Tracker-Anfragen.
+Alle Antworten bleiben unter `localStorage["wwk_real_state_v1"]` im Browser. „Kompassdaten löschen“ entfernt nur diesen Schlüssel vollständig. Die opt-in Merkkarte liegt getrennt unter `localStorage["woek_user_space"]`, damit sie in Mein Wirkungsraum sichtbar ist; sie wird durch das Löschen der Kompassantworten nicht versehentlich entfernt. Das Tool sendet keine Antworten, keine Telemetrie und keine Tracker-Anfragen.
 
 ## Live-Release und Rollback
 
@@ -60,7 +62,8 @@ Rollback: den Release-Commit auf `main` per neuem Revert-Commit zurücknehmen un
 - A–G bleiben auch in Routen und im Quellenregister verborgen, bis Namen bewusst eingeblendet werden,
 - Fokus bleibt bei Antwort- und Wichtigkeitsauswahl erhalten,
 - 44-Pixel-Touchziele und kontraststärkere Link-Tokens,
-- neutraler SVG-Export und opt-in Teilen der Prioritätengrafik,
+- lokale Merkkarte in Mein Wirkungsraum ohne Antwort- oder Parteidaten,
+- neutraler PNG-, PDF- und SVG-Export sowie opt-in Teilen des Prioritätenprofils,
 - sichere HTTPS-URL-Gate, engere Datenintegritätsprüfung, `noindex`-Status und trackerfreie Seite.
 
 ## Redaktionelle Restfreigabe

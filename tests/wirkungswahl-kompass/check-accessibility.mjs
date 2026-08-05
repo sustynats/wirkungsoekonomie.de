@@ -51,6 +51,12 @@ for (const expected of [
   "lastFocus.focus()",
   "role=\"status\"",
   "safeHttpsUrl",
+  "woek_user_space",
+  "type:'Werkzeug'",
+  "download-priority-png",
+  "download-priority-pdf",
+  "application/pdf",
+  "data:image/svg+xml",
 ]) {
   assert.ok(app.includes(expected), `app must include ${expected}`);
 }
