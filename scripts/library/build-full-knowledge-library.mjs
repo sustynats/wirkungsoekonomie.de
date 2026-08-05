@@ -4,6 +4,7 @@ import { execFileSync } from "node:child_process";
 
 const ROOT = process.cwd();
 const REGISTRY_PATH = path.join(ROOT, "assets/data/library-version-registry.json");
+const DOCUMENT_LIBRARY_PATH = path.join(ROOT, "assets/data/document-library.json");
 const BLOG_INDEX_PATH = path.join(ROOT, "assets/data/blog-index.json");
 const PODCAST_INDEX_PATH = path.join(ROOT, "assets/data/podcast-index.json");
 const GLOSSARY_INDEX_PATH = path.join(ROOT, "begriffe/index.html");
@@ -212,6 +213,7 @@ function typeIntro(type) {
     Journalartikel: "Aktuelle Einordnungen, Kommentare und Leitartikel aus dem Journal.",
     Buch: "Vollständige Bücher, Handbücher und online lesbare Gesamtfassungen.",
     Grundlagenwerk: "Tragende Referenzen, Bücher und Systemdarstellungen.",
+    "Gesamtstudie 2.0": "Umfassende Arbeits- und Diskussionsstudie zu sozialen Wirkungsdilemmata, Kooperation, Integrität und den Schutzlinien einer tragfähigen Wirkungsordnung.",
     Dossier: "Systematische Vertiefungen mit Kontext, Einordnung und Online-/PDF-Fassung.",
     Whitepaper: "Fachliche Einordnung mit Argumentations- und Methodenfokus.",
     Arbeitspapier: "Arbeits- und Diskussionsmaterial, oft mit Entwurfs- oder Vertiefungscharakter.",
@@ -248,6 +250,58 @@ function formatDate(value = "") {
 
 function normalizeSitePath(value = "") {
   return String(value).replace(/^\/+/, "");
+}
+
+function comparableLibraryPath(value = "") {
+  return normalizeSitePath(value).replace(/index\.html?$/i, "").replace(/\/?$/, "/");
+}
+
+// Redaktionell veröffentlichte Dokumente werden im Dokumenten-Register gepflegt.
+// Sie erhalten bereits eine kanonische Veröffentlichungsseite und dürfen deshalb
+// nicht zusätzlich als aus einem Dateinamen abgeleitete /eintraege/-Seite entstehen.
+function loadCuratedPublicationDocuments() {
+  if (!fs.existsSync(DOCUMENT_LIBRARY_PATH)) return [];
+  try {
+    const payload = JSON.parse(fs.readFileSync(DOCUMENT_LIBRARY_PATH, "utf8"));
+    const records = Array.isArray(payload) ? payload : payload.documents || [];
+    return records
+      .filter((doc) => doc?.url && doc.includeInFullKnowledgeLibrary === true && ["public", "expert_public"].includes(doc.visibility))
+      .map((doc) => ({
+        id: `curated-${doc.id || doc.slug || slug(doc.url)}`,
+        title: doc.title,
+        subtitle: doc.subtitle || "",
+        shortDescription: doc.summaryShort || "Redaktionell veröffentlichte Publikation der Wirkungsökonomie.",
+        type: doc.publicationLabel || doc.documentType || "Publikation",
+        status: doc.status || "aktuell",
+        source: "curated-publication",
+        formats: ["Online", ...(doc.downloadAllowed ? ["PDF"] : [])],
+        urls: { primary: normalizeSitePath(doc.url) },
+        topics: doc.topics || [],
+        relatedMethods: doc.methods || [],
+        relatedImpactFields: doc.impactFields || [],
+        isLeadingReference: Boolean(doc.isLeadingReference),
+        version: doc.version || "",
+        dateOrStand: doc.date || "",
+        publicationDate: doc.date || "",
+        author: doc.author || "",
+        pages: doc.pageCount || "",
+        readingTime: doc.estimatedReadingTime || "",
+        canonicalLibraryUrl: normalizeSitePath(doc.url),
+      }));
+  } catch (error) {
+    console.warn(`Kuratiertes Dokumentenregister konnte nicht gelesen werden: ${error.message}`);
+    return [];
+  }
+}
+
+function excludeAlreadyIndexedCuratedDocuments(curatedDocuments, existingDocuments) {
+  const indexedPaths = new Set(existingDocuments.map((doc) => comparableLibraryPath(doc.urls?.primary || "")).filter(Boolean));
+  const indexedTitles = new Set(existingDocuments.map((doc) => normalizedPairKey(doc.title)).filter(Boolean));
+  return curatedDocuments.filter((doc) => {
+    const pathKnown = indexedPaths.has(comparableLibraryPath(doc.canonicalLibraryUrl || doc.urls?.primary));
+    const titleKnown = indexedTitles.has(normalizedPairKey(doc.title));
+    return !pathKnown && !titleKnown;
+  });
 }
 
 function loadJournalArticles() {
@@ -348,6 +402,8 @@ function card(doc, index, onlineByKey) {
   const type = displayType(doc);
   const searchableTypes = type === doc.type ? [type] : [type, doc.type];
   const searchable = [doc.title, doc.shortDescription, ...searchableTypes, doc.status, topics.join(" "), methods.join(" "), fields.join(" ")].join(" ");
+  const detailHref = doc.canonicalLibraryUrl ? siteHref(doc.canonicalLibraryUrl) : `eintraege/${doc.detailSlug}/`;
+  const detailLabel = doc.canonicalLibraryUrl ? "Veröffentlichung öffnen" : "Details zur Quelle";
   return `<article class="knowledge-library-card" data-library-card data-type="${esc(type)}" data-status="${esc(doc.status)}" data-source="${esc(doc.source)}" data-query="${esc(searchable.toLowerCase())}" data-index="${index}">
       <div class="document-card-badges">
         <span class="status-badge status-badge--${slug(type)}">${esc(type)}</span>
@@ -361,7 +417,7 @@ function card(doc, index, onlineByKey) {
         <dt>Themen</dt><dd>${esc(topics.slice(0, 4).join(", ") || "nicht verschlagwortet")}</dd>
       </dl>
       <div class="document-chip-row muted">${[...methods.slice(0, 3), ...fields.slice(0, 2)].map((item) => `<span>${esc(item)}</span>`).join("")}</div>
-      <div class="document-action-row"><a class="btn btn-primary" href="eintraege/${esc(doc.detailSlug)}/">Details zur Quelle</a></div>
+      <div class="document-action-row"><a class="btn btn-primary" href="${esc(detailHref)}">${detailLabel}</a></div>
     </article>`;
 }
 
@@ -429,7 +485,10 @@ function detailPage(doc, all, onlineByKey) {
   const keyPoints = (doc.keyPoints || []).map((item) => `<li>${esc(item)}</li>`).join("");
   const outline = (doc.contentOutline || topics).map((item) => `<li>${esc(item)}</li>`).join("");
   const chips = [...topics, ...methods, ...impactFields].slice(0, 16).map((item) => `<span class="term-chip">${esc(item)}</span>`).join("");
-  const relatedHtml = related.map((item) => `<li><a href="../${esc(item.detailSlug)}/">${esc(item.title)}</a></li>`).join("");
+  const relatedHtml = related.map((item) => {
+    const href = item.canonicalLibraryUrl ? siteHref(item.canonicalLibraryUrl, "../../../") : `../${item.detailSlug}/`;
+    return `<li><a href="${esc(href)}">${esc(item.title)}</a></li>`;
+  }).join("");
   const classification = doc.impactClassification || `${typeIntro(type)} Der Eintrag wird über Themen, Methoden, Status und Herkunft in die Wirkungsökonomie eingeordnet; die zugrunde liegende Quelle bleibt für ihre Aussagen verantwortlich.`;
   return `<!DOCTYPE html>
 <html lang="de">
@@ -537,7 +596,13 @@ const registry = JSON.parse(fs.readFileSync(REGISTRY_PATH, "utf8"));
 const journalArticles = loadJournalArticles();
 const podcastEpisodes = loadPodcastEpisodes();
 const rawDocuments = registry.documents.filter((doc) => doc.urls?.primary && isPublicLibraryFormat(doc.urls.primary));
-const documents = assignDetailSlugs(mergeDocumentVariants([...rawDocuments, ...journalArticles.map(journalToLibraryDoc), ...podcastToLibraryDocs(podcastEpisodes)]));
+const curatedDocuments = excludeAlreadyIndexedCuratedDocuments(loadCuratedPublicationDocuments(), rawDocuments);
+const documents = assignDetailSlugs(mergeDocumentVariants([
+  ...rawDocuments,
+  ...curatedDocuments,
+  ...journalArticles.map(journalToLibraryDoc),
+  ...podcastToLibraryDocs(podcastEpisodes)
+]));
 const typeValues = new Set(documents.map((doc) => displayType(doc)).filter(Boolean));
 const statusValues = new Set(documents.map((doc) => doc.status).filter(Boolean));
 const sourceValues = new Set(documents.map((doc) => doc.source).filter(Boolean));
@@ -553,12 +618,13 @@ for (const doc of documents) {
 const previousDetailRegistry = fs.existsSync(DETAIL_REGISTRY_PATH)
   ? JSON.parse(fs.readFileSync(DETAIL_REGISTRY_PATH, "utf8"))
   : { entries: [] };
+const generatedDetailDocuments = documents.filter((doc) => !doc.canonicalLibraryUrl);
 for (const entry of previousDetailRegistry.entries || []) {
-  if (entry.detailSlug && !documents.some((doc) => doc.detailSlug === entry.detailSlug)) {
+  if (entry.detailSlug && !generatedDetailDocuments.some((doc) => doc.detailSlug === entry.detailSlug)) {
     fs.rmSync(path.join(DETAIL_DIR, entry.detailSlug), { recursive: true, force: true });
   }
 }
-for (const doc of documents) {
+for (const doc of generatedDetailDocuments) {
   const directory = path.join(DETAIL_DIR, doc.detailSlug);
   fs.mkdirSync(directory, { recursive: true });
   fs.writeFileSync(path.join(directory, "index.html"), detailPage(doc, documents, onlineByKey).replace(/[ \t]+$/gm, ""));
@@ -567,8 +633,8 @@ fs.mkdirSync(path.dirname(DETAIL_REGISTRY_PATH), { recursive: true });
 fs.writeFileSync(DETAIL_REGISTRY_PATH, `${JSON.stringify({
   schemaVersion: "1.0.0",
   generatedAt: new Date().toISOString(),
-  count: documents.length,
-  entries: documents.map((doc) => ({
+  count: generatedDetailDocuments.length,
+  entries: generatedDetailDocuments.map((doc) => ({
     id: doc.id,
     detailSlug: doc.detailSlug,
     title: doc.title,

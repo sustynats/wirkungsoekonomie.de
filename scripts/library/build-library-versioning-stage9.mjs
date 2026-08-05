@@ -186,6 +186,14 @@ const EXPLICIT_PUBLIC_DOCUMENTS = new Set([
   "assets/downloads/woek_gesundheit_pflege_einzeldossier_set_v0_3.pdf"
 ]);
 
+// Kuratierte Dokumentseiten aus dem Dokument-Generator dürfen nicht zusätzlich
+// als technisch abgeleitete Download-Einträge im Vollregister erscheinen.
+// Sonst entstünde neben der redaktionellen Studienseite ein zweiter Eintrag mit
+// einem aus dem Dateinamen abgeleiteten Titel.
+const CURATED_DOCUMENT_PATHS = new Set([
+  "assets/downloads/woek_gesamtstudie_wirkungsdilemmata_kooperation_sdgplus_v2_0.pdf"
+]);
+
 const LEADING_REFERENCE_PATTERNS = [
   /assets\/downloads\/woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3\.(docx|pdf)$/i,
   /referenz\/version-1-1\/index\.html$/i
@@ -522,6 +530,7 @@ function walk(dir, extensions, acc = []) {
     }
     if (!entry.isFile()) continue;
     if (TRACKED_FILES && !TRACKED_FILES.has(relative) && !EXPLICIT_PUBLIC_DOCUMENTS.has(relative)) continue;
+    if (CURATED_DOCUMENT_PATHS.has(relative)) continue;
     if (INTERNAL_REFERENCE_ROUTE_PATTERNS.some((pattern) => pattern.test(relative))) continue;
     if (MACOS_DUPLICATE_HTML.test(entry.name)) continue;
     const ext = path.extname(entry.name).toLowerCase();

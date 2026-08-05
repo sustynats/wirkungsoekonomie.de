@@ -6,6 +6,7 @@ const baseArchivePath = path.join(root, "content/quellenarchiv/sources.json");
 const glossaryArchivePath = path.join(root, "content/quellenarchiv/glossary-source-records.json");
 const evidenceArchivePath = path.join(root, "content/quellenarchiv/evidence-source-records.json");
 const legalArchivePath = path.join(root, "content/quellenarchiv/legal-source-records.json");
+const publicationSupplementDir = path.join(root, "content/quellenarchiv/publication-supplements");
 const glossaryPath = path.join(root, "public/data/glossary.terms.json");
 const reportPath = path.join(root, "reports/quellenarchiv-quality.json");
 const siteHosts = new Set(["wirkungsoekonomie.de", "www.wirkungsoekonomie.de"]);
@@ -18,6 +19,200 @@ function readJson(file) {
 
 function asSources(data) {
   return Array.isArray(data) ? data : Array.isArray(data?.sources) ? data.sources : [];
+}
+
+function normalizedPublicationLinks(value, context) {
+  const rawLinks = Array.isArray(value) ? value : value ? [value] : [];
+  const seen = new Map();
+  for (const rawLink of rawLinks) {
+    if (!rawLink || typeof rawLink !== "object") {
+      errors.push(`${context}: relatedPublications enthält keinen gültigen Eintrag`);
+      continue;
+    }
+    const title = String(rawLink.title || "").trim();
+    const url = String(rawLink.url || "").trim();
+    if (!title || !url) {
+      errors.push(`${context}: relatedPublications benötigt title und url`);
+      continue;
+    }
+    const key = `${url.replace(/\/$/, "")}|${title}`;
+    seen.set(key, { ...(seen.get(key) || {}), ...rawLink, title, url });
+  }
+  return [...seen.values()];
+}
+
+function mergedPublicationLinks(...values) {
+  const seen = new Map();
+  for (const value of values) {
+    for (const link of normalizedPublicationLinks(value, "Quellenarchiv-Publikationssupplement")) {
+      const key = `${link.url.replace(/\/$/, "")}|${link.title}`;
+      seen.set(key, { ...(seen.get(key) || {}), ...link });
+    }
+  }
+  return [...seen.values()];
+}
+
+function overrideEntries(value, file) {
+  if (!value) return [];
+  if (Array.isArray(value)) {
+    return value.flatMap((entry) => {
+      const code = String(entry?.code || "").trim();
+      if (!code || !entry || typeof entry !== "object") {
+        errors.push(`Ungültiger Override in ${file}: code fehlt`);
+        return [];
+      }
+      const { code: _code, ...patch } = entry;
+      return [[code, patch]];
+    });
+  }
+  if (typeof value !== "object") {
+    errors.push(`Ungültige overrides-Struktur in ${file}`);
+    return [];
+  }
+  return Object.entries(value).flatMap(([rawCode, patch]) => {
+    const code = String(rawCode || "").trim();
+    if (!code || !patch || typeof patch !== "object" || Array.isArray(patch)) {
+      errors.push(`Ungültiger Override in ${file}: ${rawCode || "code fehlt"}`);
+      return [];
+    }
+    return [[code, patch]];
+  });
+}
+
+function relatedPublicationEntries(value, file) {
+  if (!value) return [];
+  if (Array.isArray(value)) {
+    return value.flatMap((entry) => {
+      const code = String(entry?.sourceCode || entry?.source || entry?.code || "").trim();
+      if (!code || !entry || typeof entry !== "object") {
+        errors.push(`Ungültiger relatedPublications-Eintrag in ${file}: Quellen-ID fehlt`);
+        return [];
+      }
+      const publications = entry.publications ?? entry.items ?? entry.relatedPublications ?? (
+        entry.title || entry.url ? [{ title: entry.title, url: entry.url, label: entry.label }] : []
+      );
+      return [[code, normalizedPublicationLinks(publications, `${file}: ${code}`)]];
+    });
+  }
+  if (typeof value !== "object") {
+    errors.push(`Ungültige relatedPublications-Struktur in ${file}`);
+    return [];
+  }
+  return Object.entries(value).map(([rawCode, publications]) => {
+    const code = String(rawCode || "").trim();
+    if (!code) {
+      errors.push(`Ungültiger relatedPublications-Eintrag in ${file}: Quellen-ID fehlt`);
+      return ["", []];
+    }
+    const links = publications?.publications ?? publications?.items ?? publications?.relatedPublications ?? publications;
+    return [code, normalizedPublicationLinks(links, `${file}: ${code}`)];
+  }).filter(([code]) => code);
+}
+
+function publicationSupplementPaths() {
+  if (!fs.existsSync(publicationSupplementDir)) return [];
+  return fs.readdirSync(publicationSupplementDir)
+    .filter((name) => name.endsWith(".json"))
+    .sort((a, b) => a.localeCompare(b, "de"))
+    .map((name) => path.join(publicationSupplementDir, name));
+}
+
+function mergedArchiveSources(baseSources, supplementalSources) {
+  const byCode = new Map();
+  const publicationCodes = new Set();
+  const standardSupplementCodes = new Set();
+
+  for (const source of baseSources) {
+    const code = String(source?.code || "").trim();
+    if (!code) {
+      errors.push("Basisarchiv: Quellen-ID fehlt");
+      continue;
+    }
+    if (byCode.has(code)) {
+      errors.push(`Basisarchiv: doppelte Quellen-ID ${code}`);
+      continue;
+    }
+    byCode.set(code, source);
+  }
+
+  for (const [origin, entries] of supplementalSources) {
+    for (const source of entries) {
+      const code = String(source?.code || "").trim();
+      if (!code) {
+        errors.push(`${origin}: Quellen-ID fehlt`);
+        continue;
+      }
+      if (standardSupplementCodes.has(code)) {
+        errors.push(`${origin}: doppelte Quellen-ID ${code}`);
+        continue;
+      }
+      standardSupplementCodes.add(code);
+      // Gleiche Semantik wie der Builder: Quellen aus dem Basisarchiv haben Vorrang.
+      if (!byCode.has(code)) byCode.set(code, source);
+    }
+  }
+
+  for (const file of publicationSupplementPaths()) {
+    const relative = path.relative(root, file);
+    let supplement;
+    try {
+      supplement = readJson(file);
+    } catch (error) {
+      errors.push(`Ungültiges Quellenarchiv-Publikationssupplement ${relative}: ${error.message}`);
+      continue;
+    }
+    if (!supplement || typeof supplement !== "object" || Array.isArray(supplement)) {
+      errors.push(`Ungültiges Quellenarchiv-Publikationssupplement: ${relative}`);
+      continue;
+    }
+    for (const source of supplement.sources || []) {
+      const code = String(source?.code || "").trim();
+      if (!code) {
+        errors.push(`${relative}: Quelle ohne ID`);
+        continue;
+      }
+      if (byCode.has(code)) {
+        errors.push(`${relative}: Publikationsquelle dupliziert ID ${code}; verwende overrides`);
+        continue;
+      }
+      publicationCodes.add(code);
+      byCode.set(code, { ...source, code, relatedPublications: mergedPublicationLinks(source.relatedPublications) });
+    }
+    for (const [code, patch] of overrideEntries(supplement.overrides, relative)) {
+      const current = byCode.get(code);
+      if (!current) {
+        errors.push(`${relative}: Override verweist auf unbekannte Quellen-ID ${code}`);
+        continue;
+      }
+      publicationCodes.add(code);
+      const { relatedPublications: patchLinks, ...values } = patch;
+      byCode.set(code, {
+        ...current,
+        ...values,
+        relatedPublications: mergedPublicationLinks(current.relatedPublications, patchLinks)
+      });
+    }
+    for (const [code, links] of relatedPublicationEntries(supplement.relatedPublications, relative)) {
+      const current = byCode.get(code);
+      if (!current) {
+        errors.push(`${relative}: Publikationsbezug verweist auf unbekannte Quellen-ID ${code}`);
+        continue;
+      }
+      publicationCodes.add(code);
+      byCode.set(code, {
+        ...current,
+        relatedPublications: mergedPublicationLinks(current.relatedPublications, links)
+      });
+    }
+  }
+
+  return {
+    sources: [...byCode.values()].map((source) => ({
+      ...source,
+      relatedPublications: mergedPublicationLinks(source.relatedPublications)
+    })),
+    publicationCodes
+  };
 }
 
 function slug(value) {
@@ -150,28 +345,16 @@ if (!errors.length) {
     errors.push(`Glossar-Quellenarchiv: Clusterzählung (${glossaryClusterCount}) stimmt nicht mit sources (${generatedGlossarySources.length}) überein`);
   }
 
-  const sourceByCode = new Map();
-  for (const [origin, entries] of [
-    ["Basisarchiv", baseSources],
+  const { sources: archiveSources, publicationCodes } = mergedArchiveSources(baseSources, [
     ["Glossararchiv", generatedGlossarySources],
     ["Evidenzregister-Archiv", evidenceSources],
     ["Amtliche Rechtsquellen", legalSources]
-  ]) {
-    for (const source of entries) {
-      const code = String(source?.code || "").trim();
-      if (!code) {
-        errors.push(`${origin}: Quellen-ID fehlt`);
-        continue;
-      }
-      if (sourceByCode.has(code)) {
-        errors.push(`${origin}: doppelte Quellen-ID ${code}`);
-        continue;
-      }
-      sourceByCode.set(code, source);
-    }
-  }
+  ]);
+  const sourceByCode = new Map(archiveSources.map((source) => [String(source.code).trim(), source]));
 
   const sourceByArchivePath = new Map([...sourceByCode.entries()].map(([code, source]) => [`/quellenarchiv/${slug(code)}/`, source]));
+  let publicationRelations = 0;
+  let verifiedPublicationBacklinks = 0;
   for (const [code, source] of sourceByCode) {
     const title = String(source?.title || "").trim();
     const summary = String(source?.summary || "").trim();
@@ -204,7 +387,7 @@ if (!errors.length) {
     const canonical = `https://wirkungsoekonomie.de/quellenarchiv/${sourceSlug}/`;
     if (!html.includes(`rel="canonical" href="${canonical}"`)) errors.push(`${code}: Canonical der Detailseite fehlt oder ist falsch`);
     if (!hrefContains(html, locator)) errors.push(`${code}: Locator ist auf der Detailseite nicht verlinkt`);
-    if (!/target="_blank"[^>]*rel="noopener noreferrer"|rel="noopener noreferrer"[^>]*target="_blank"/i.test(html)) {
+    if (!localPathFromLocator(locator) && !/target="_blank"[^>]*rel="noopener noreferrer"|rel="noopener noreferrer"[^>]*target="_blank"/i.test(html)) {
       errors.push(`${code}: externe Fundstelle ist nicht sicher als externer Link markiert`);
     }
     const kind = locatorType(source, locator);
@@ -219,6 +402,35 @@ if (!errors.length) {
     }
     if (kind === "recherchehinweis" && !/Recherchehinweis|Offizielle Recherche öffnen/i.test(html)) {
       errors.push(`${code}: Recherchehinweis ist auf der Detailseite nicht transparent erläutert`);
+    }
+
+    const relatedPublications = normalizedPublicationLinks(source.relatedPublications, code);
+    if (publicationCodes.has(code) && !relatedPublications.length) {
+      errors.push(`${code}: Publikationssupplement enthält keine Verknüpfung unter relatedPublications`);
+    }
+    for (const publication of relatedPublications) {
+      publicationRelations++;
+      const publicationPath = localPathFromLocator(publication.url);
+      if (!publicationPath) {
+        errors.push(`${code}: Veröffentlichungsbezug ist keine interne URL (${publication.url})`);
+        continue;
+      }
+      if (!hrefContains(html, publication.url)) {
+        errors.push(`${code}: Veröffentlichungsbezug ist auf der Quellen-Detailseite nicht sichtbar (${publication.url})`);
+      }
+      // Der Quellenarchiv-Lauf erfolgt im Gesamtbuild vor dem Dokument-Generator.
+      // Sobald die Zielseite schon vorhanden ist, wird der Rücklink dennoch streng
+      // geprüft; nach dem vollständigen Build entsteht so die beidseitige Kontrolle.
+      const publicationTarget = path.join(root, publicationPath.replace(/^\/+/, ""), "index.html");
+      if (fs.existsSync(publicationTarget)) {
+        const publicationHtml = fs.readFileSync(publicationTarget, "utf8");
+        const sourcePath = `/quellenarchiv/${sourceSlug}/`;
+        if (!archiveHrefExists(publicationHtml, sourcePath)) {
+          errors.push(`${code}: Veröffentlichungsseite verlinkt die Quellen-Detailseite nicht (${publication.url} → ${sourcePath})`);
+        } else {
+          verifiedPublicationBacklinks++;
+        }
+      }
     }
   }
 
@@ -252,7 +464,7 @@ if (!errors.length) {
     if (errors.length > 150) console.error(`… ${errors.length - 150} weitere Befunde`);
     process.exit(1);
   }
-  console.log(`Quellenarchiv-Qualität bestanden: ${sourceByCode.size} Detailseiten, ${glossaryTerms.length} Glossarbegriffe und alle veröffentlichten Locator-Ketten geprüft.`);
+  console.log(`Quellenarchiv-Qualität bestanden: ${sourceByCode.size} Detailseiten, ${glossaryTerms.length} Glossarbegriffe, ${publicationCodes.size} Publikationsquellen und ${publicationRelations} Publikationsbezüge geprüft${verifiedPublicationBacklinks ? ` (${verifiedPublicationBacklinks} Rücklinks auf vorhandenen Veröffentlichungsseiten bestätigt)` : ""}.`);
 } else {
   writeReport([], []);
   console.error(`Quellenarchiv-Qualität fehlgeschlagen (${errors.length} Befunde):`);
