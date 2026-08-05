@@ -16,6 +16,7 @@ assert.match(html, /In unabhängiger Prüfung/, "Die sichtbare Prüfkennzeichnun
 assert.match(html, /Transparenz zum Prüfstatus/, "Die Erklärung zum Prüfstatus fehlt im Artefakt.");
 assert.match(html, /Praxis &amp; Tools/, "Die Einbindung in die Werkzeugnavigation fehlt im Artefakt.");
 assert.match(html, /Wirkungsökonomie · Startseite/, "Der Rückweg zur Startseite fehlt im Artefakt.");
+assert.match(html, /impressum\.html/, "Der Impressumslink fehlt im Artefakt.");
 assert.doesNotMatch(html, /Arbeitsdatei entferntumentElement/, "Der Artefakt-Scrubber hat Inline-JavaScript beschädigt.");
 
 const executableScripts = [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)]

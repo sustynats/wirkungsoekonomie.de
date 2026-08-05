@@ -118,7 +118,8 @@ def main() -> None:
                       bodyWidth: document.body.scrollWidth,
                       visible: document.querySelector('#view')?.innerText.length > 0,
                       reviewNote: document.querySelector('.demo-note')?.innerText.includes('Transparenz zum Prüfstatus'),
-                      sitePath: ['Startseite', 'Praxis & Tools', 'Mein Wirkungsraum'].every(label => [...document.querySelectorAll('.site-context a, .breadcrumb a')].some(link => link.textContent.trim() === label))
+                      sitePath: ['Startseite', 'Praxis & Tools', 'Mein Wirkungsraum'].every(label => [...document.querySelectorAll('.site-context a, .breadcrumb a')].some(link => link.textContent.trim() === label)),
+                      legalLink: [...document.querySelectorAll('#foot a')].some(link => link.textContent.trim() === 'Impressum' && link.getAttribute('href') === '../../impressum.html')
                     })""",
                 )
                 overflow = max(measure["documentWidth"], measure["bodyWidth"]) - measure["inner"]
@@ -129,6 +130,7 @@ def main() -> None:
                     "visible": measure["visible"],
                     "reviewNote": measure["reviewNote"],
                     "sitePath": measure["sitePath"],
+                    "legalLink": measure["legalLink"],
                 }
                 results.append(result)
                 if overflow > 1:
@@ -139,6 +141,8 @@ def main() -> None:
                     errors.append(f"missing review notice at {width}px {route}")
                 if not measure["sitePath"]:
                     errors.append(f"missing Wirkungsökonomie path at {width}px {route}")
+                if not measure["legalLink"]:
+                    errors.append(f"missing Impressum link at {width}px {route}")
 
             page.goto(f"{base_url}#/vergleich", wait_until="load")
             set_complete_local_state(page)
