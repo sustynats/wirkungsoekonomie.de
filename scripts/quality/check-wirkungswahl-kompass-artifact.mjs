@@ -11,6 +11,7 @@ assert.match(html, /In Mein Wirkungsraum speichern/, "Die Speicherfunktion fehlt
 assert.match(html, /Als PNG laden/, "Der PNG-Export fehlt im Artefakt.");
 assert.match(html, /Als PDF laden/, "Der PDF-Export fehlt im Artefakt.");
 assert.match(html, /Prioritäten teilen/, "Die Teilen-Funktion fehlt im Artefakt.");
+assert.match(html, /Mein Wirkungsraum öffnen/, "Der direkte Link zum Wirkungsraum ist nicht eindeutig beschriftet.");
 assert.doesNotMatch(html, /Arbeitsdatei entferntumentElement/, "Der Artefakt-Scrubber hat Inline-JavaScript beschädigt.");
 
 const executableScripts = [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)]
