@@ -20,8 +20,8 @@ SOURCE_DOCX = Path(os.environ["SOURCE_DOCX"])
 TITLE_IMAGE = Path(os.environ["TITLE_IMAGE"])
 SLUG = "wahl-o-mat-methodenkritik-sachsen-anhalt-2026"
 TITLE = "Wenn Ja und Nein nicht dasselbe meinen"
-SUBTITLE = "Methodenkritik am Wahl-O-Mat Sachsen-Anhalt 2026"
-DESCRIPTION = "Warum Auswahl, Formulierung, Gewichtung und Kompetenzebene der Wahl-O-Mat-Thesen den Nähewert prägen - eine konstruktive wirkungsökonomische Methodenkritik."
+SUBTITLE = "Was der Wahl-O-Mat tatsächlich misst, wo seine Methodik an Grenzen stößt – und warum seine Fragen selbst politische Wirkung entfalten können"
+DESCRIPTION = "Eine vollumfassende wirkungsökonomische Methodenkritik am Wahl-O-Mat Sachsen-Anhalt 2026: Entscheidungsreife, Auswahl, Rechenlogik, Kompetenzebenen, Demokratiekontext und strategische Robustheit."
 DATE = "9. August 2026"
 DATE_ISO = "2026-08-09T09:30:00+02:00"
 IMAGE = "2026-08-09-wahl-o-mat-methodenkritik-sachsen-anhalt-2026.png"
@@ -77,7 +77,11 @@ def callout_cell_html(cell: ET.Element) -> str:
     parts = ["".join(node.text or "" for node in run.findall(".//w:t", NS)) for run in paragraph.findall("w:r", NS)]
     parts = [part for part in parts if part]
     if len(parts) < 2:
-        return esc(text(cell))
+        value = text(cell)
+        for label in ("Die zentrale These dieses Artikels", "Methodischer Hinweis", "Die einfache Korrektur", "Wichtig", "Kurz gesagt"):
+            if value.startswith(label):
+                return f"<strong>{esc(label)}</strong> {esc(value[len(label):])}"
+        return esc(value)
     # The Word source uses adjacent styled runs for callout labels and body text
     # without a literal whitespace run between them.
     return f"<strong>{esc(parts[0])}</strong> {esc(''.join(parts[1:]))}"
@@ -109,15 +113,6 @@ def table_html(table: ET.Element) -> str:
           </tbody></table></div>'''
 
 
-STRATEGIC_BLIND_SPOT = '''          <h3>Der blinde Fleck: Ist der Wahl-O-Mat strategisch „spielbar“?</h3>
-          <p>Noch weiter geht eine Frage, die sich aus dieser Konstruktion zwangsläufig ergibt: <strong>Was passiert, wenn Parteien die Auswahlmechanik des Wahl-O-Mat kennen und strategisch mitdenken?</strong></p>
-          <p>Dafür muss man keiner Partei eine konkrete Absicht unterstellen. Schon die Architektur erzeugt einen möglichen Anreiz. Wenn kontroverse und stark unterscheidbare Positionen für die Auswahl der endgültigen Thesen besonders geeignet sind, können auffällige Forderungen einen zusätzlichen kommunikativen Wert bekommen: nicht nur als Programmpunkt für die eigene Anhängerschaft, sondern als möglicher Eingang in eine reichweitenstarke politische Entscheidungshilfe.</p>
-          <p>Besonders problematisch wäre dieser Mechanismus bei Forderungen, die auf der jeweiligen politischen Ebene <strong>gar nicht unmittelbar umgesetzt werden können</strong>. Dann kann ihr programmatischer Nutzen vor allem kommunikativ sein: Ein Problemrahmen wird gesetzt, eine Konfliktlinie geschaffen und ein Narrativ verbreitet. Gelangt eine solche Forderung anschließend in den Wahl-O-Mat, wird sie aus ihrem parteipolitischen Ursprung herausgelöst und als allgemeine, institutionell präsentierte Sachfrage behandelt.</p>
-          <p>Wirkungsökonomisch entsteht damit ein möglicher Verstärkungspfad:</p>
-          <blockquote><p><strong>strategisch gesetzter Frame → hohe Kontroversität → Thesenpool → institutionelle Auswahl → massenhafte Exposition → Positionierung der Nutzer:innen → gesellschaftliche Anschlussfähigkeit des Frames.</strong></p></blockquote>
-          <p>Ob eine Partei diese Möglichkeit tatsächlich gezielt nutzt, müsste empirisch untersucht werden. <strong>Die entscheidende methodische Frage ist zunächst, ob das System dafür anfällig ist.</strong> Ein demokratisches Informationsinstrument sollte nicht nur neutral gemeint sein, sondern auch gegenüber strategischem Agenda-Setting möglichst robust konstruiert sein.</p>'''
-
-
 def copy_asset() -> None:
     ASSETS.mkdir(parents=True, exist_ok=True)
     target = ASSETS / IMAGE
@@ -135,7 +130,7 @@ def render_content() -> str:
         if child.tag == W + "p":
             raw, kind = text(child), style(child)
             if not active:
-                if kind == "Heading1" and raw.startswith("Der Wahl-O-Mat ist wertvoll"):
+                if kind == "Heading1" and raw == "Executive Summary":
                     active = True
                 else:
                     continue
@@ -153,13 +148,9 @@ def render_content() -> str:
                 output.append(f"          <p>{paragraph_html(child)}</p>")
         elif active and child.tag == W + "tbl":
             table_rows = rows(child)
-            if table_rows and table_rows[0] == ["Kurz gesagtDer bessere Wahl-O-Mat müsste nicht unbedingt länger sein. Er müsste klarer zeigen, was eine These bedeutet, wer darüber überhaupt entscheidet, warum sie ausgewählt wurde und wann ein „Neutral“ eigentlich heißt: Diese Frage ist so nicht entscheidungsreif. Politische Bildung beginnt nicht bei der Antwort. Sie beginnt bei der Qualität der Frage."]:
-                output.append("          <p><strong>Die demokratisch entscheidende Frage lautet deshalb nicht nur, ob der Wahl-O-Mat Parteien neutral vergleicht, sondern auch, ob seine Auswahlmechanik von Parteien strategisch genutzt werden kann, um eigene Problemdefinitionen und Narrative institutionell zu vervielfältigen.</strong></p>")
             rendered = table_html(child)
             if rendered:
                 output.append(rendered)
-            if table_rows and table_rows[0] == ["Schritt", "Mechanismus", "Mögliche Wirkung"]:
-                output.append(STRATEGIC_BLIND_SPOT)
     return "\n".join(output)
 
 
@@ -173,7 +164,7 @@ def shell() -> tuple[str, str]:
 
 def write_article() -> None:
     header, footer = shell()
-    tags = ["Wahl-O-Mat", "Sachsen-Anhalt", "politische Bildung", "Methodenkritik", "Agenda-Setting", "Framing", "Wirkungspotenzial", "Wirkpfad"]
+    tags = ["Wahl-O-Mat", "Sachsen-Anhalt", "politische Bildung", "Methodenkritik", "Agenda-Setting", "Framing", "Wirkungspotenzial", "Wirkpfad", "Demokratie", "Verfassung"]
     tags_html = "".join(f'<meta property="article:tag" content="{esc(tag)}">' for tag in tags)
     schema = {
         "@context": "https://schema.org", "@type": "Article", "headline": TITLE,
@@ -188,7 +179,7 @@ def write_article() -> None:
     ARTICLE.write_text(f'''<!doctype html>
 <html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(TITLE)} - Journal der Wirkungsökonomie</title><meta name="description" content="{esc(DESCRIPTION)}"><meta name="search_title" content="{esc(TITLE)}"><meta name="search_description" content="{esc(DESCRIPTION)}"><meta name="search_section" content="Journal"><meta name="search_type" content="Journalartikel"><meta name="search_index_kind" content="journal"><meta name="search_tags" content="{esc(', '.join(tags))}"><link rel="canonical" href="https://wirkungsoekonomie.de/blog/{SLUG}.html"><meta property="og:type" content="article"><meta property="og:locale" content="de_DE"><meta property="og:site_name" content="Wirkungsökonomie"><meta property="og:title" content="{esc(TITLE)}"><meta property="og:description" content="{esc(DESCRIPTION)}"><meta property="og:url" content="https://wirkungsoekonomie.de/blog/{SLUG}.html"><meta property="og:image" content="https://wirkungsoekonomie.de/assets/img/blog/{IMAGE}"><meta property="og:image:alt" content="{esc(IMAGE_ALT)}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{esc(TITLE)}"><meta name="twitter:description" content="{esc(DESCRIPTION)}"><meta name="twitter:image" content="https://wirkungsoekonomie.de/assets/img/blog/{IMAGE}"><meta property="article:published_time" content="{DATE_ISO}"><meta property="article:modified_time" content="{DATE_ISO}"><meta property="article:section" content="Wirkung und Demokratie">{tags_html}<link rel="alternate" type="application/rss+xml" title="Journal der Wirkungsökonomie" href="https://wirkungsoekonomie.de/feeds/journal.xml"><link rel="icon" href="../assets/img/brand/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/css/style.css?v=20260612-mobile-table-fix"><script type="application/ld+json">{json.dumps(schema, ensure_ascii=False)}</script></head><body>
-{header}    <main data-pagefind-body><article class="hero"><div class="hero-copy"><p class="hero-kicker">Wirkung und Demokratie · {DATE} · 19 Min.</p><h1 class="hero-title">{esc(TITLE)}</h1><p class="hero-subtitle">{esc(SUBTITLE)}</p><p class="journal-pdf-download-row no-print" data-search-exclude><a class="btn btn-secondary journal-pdf-download" data-journal-pdf-download href="../assets/pdf/journal/{SLUG}.pdf" download>PDF herunterladen</a></p><p class="meta">Von Natalie Weber · Begründerin der Wirkungsökonomie</p></div><figure class="hero-system-visual article-visual"><img src="../assets/img/blog/{IMAGE}" width="1672" height="941" alt="{esc(IMAGE_ALT)}" decoding="async" fetchpriority="high"></figure></article><section class="article-page"><div class="article-body"><div class="status-note"><strong>Methodische Einordnung:</strong> Dieser Beitrag ist eine konstruktive Kritik der Wahl-O-Mat-Methodik und keine Wahlempfehlung. Er behauptet keine parteipolitische Absicht der Wahl-O-Mat-Redaktion, sondern untersucht Auswahl-, Formulierungs- und Bewertungslogiken sowie ihr Wirkungspotenzial.</div>
+{header}    <main data-pagefind-body><article class="hero"><div class="hero-copy"><p class="hero-kicker">Wirkung und Demokratie · {DATE} · 23 Min.</p><h1 class="hero-title">{esc(TITLE)}</h1><p class="hero-subtitle">{esc(SUBTITLE)}</p><p class="journal-pdf-download-row no-print" data-search-exclude><a class="btn btn-secondary journal-pdf-download" data-journal-pdf-download href="../assets/pdf/journal/{SLUG}.pdf" download>PDF herunterladen</a></p><p class="meta">Von Natalie Weber · Begründerin der Wirkungsökonomie</p></div><figure class="hero-system-visual article-visual"><img src="../assets/img/blog/{IMAGE}" width="1672" height="941" alt="{esc(IMAGE_ALT)}" decoding="async" fetchpriority="high"></figure></article><section class="article-page"><div class="article-body"><div class="status-note"><strong>Kernbefund:</strong> Von 38 Thesen sind nach dem verwendeten Prüfraster nur 10 klar entscheidungsreif. Bei 28 müssen Nutzer:innen relevante Bedingungen ergänzen; 15 sind so offen, dass plausible Ausgestaltungen zu gegensätzlichen Bewertungen führen können. Diese Analyse ist keine Wahlempfehlung und unterstellt weder Parteien noch der Wahl-O-Mat-Redaktion eine unbelegte Absicht.</div>
 {render_content()}
           <p><strong>Vollständiger Folgencheck:</strong> Die wirkungsökonomische Einordnung aller 38 Thesen findet sich im <a class="text-link" href="wahl-o-mat-sachsen-anhalt-2026.html">Wahl-O-Mat Sachsen-Anhalt 2026</a>.</p><p><strong>Weiterlesen:</strong> <a class="text-link" href="../begriffe/wirkungspotenzial/">Wirkungspotenzial</a>, <a class="text-link" href="../begriffe/wirkpfad/">Wirkpfad</a>, <a class="text-link" href="../begriffe/wirkungsrisiko/">Wirkungsrisiko</a> und <a class="text-link" href="../begriffe/positive-netto-wirkung/">positive Netto-Wirkung</a>.</p><p><a class="text-link" href="../blog.html">Zurück zum Journal</a></p></div></section></main>
 {footer}''', encoding="utf-8")
