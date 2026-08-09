@@ -109,6 +109,15 @@ def table_html(table: ET.Element) -> str:
           </tbody></table></div>'''
 
 
+STRATEGIC_BLIND_SPOT = '''          <h3>Der blinde Fleck: Ist der Wahl-O-Mat strategisch „spielbar“?</h3>
+          <p>Noch weiter geht eine Frage, die sich aus dieser Konstruktion zwangsläufig ergibt: <strong>Was passiert, wenn Parteien die Auswahlmechanik des Wahl-O-Mat kennen und strategisch mitdenken?</strong></p>
+          <p>Dafür muss man keiner Partei eine konkrete Absicht unterstellen. Schon die Architektur erzeugt einen möglichen Anreiz. Wenn kontroverse und stark unterscheidbare Positionen für die Auswahl der endgültigen Thesen besonders geeignet sind, können auffällige Forderungen einen zusätzlichen kommunikativen Wert bekommen: nicht nur als Programmpunkt für die eigene Anhängerschaft, sondern als möglicher Eingang in eine reichweitenstarke politische Entscheidungshilfe.</p>
+          <p>Besonders problematisch wäre dieser Mechanismus bei Forderungen, die auf der jeweiligen politischen Ebene <strong>gar nicht unmittelbar umgesetzt werden können</strong>. Dann kann ihr programmatischer Nutzen vor allem kommunikativ sein: Ein Problemrahmen wird gesetzt, eine Konfliktlinie geschaffen und ein Narrativ verbreitet. Gelangt eine solche Forderung anschließend in den Wahl-O-Mat, wird sie aus ihrem parteipolitischen Ursprung herausgelöst und als allgemeine, institutionell präsentierte Sachfrage behandelt.</p>
+          <p>Wirkungsökonomisch entsteht damit ein möglicher Verstärkungspfad:</p>
+          <blockquote><p><strong>strategisch gesetzter Frame → hohe Kontroversität → Thesenpool → institutionelle Auswahl → massenhafte Exposition → Positionierung der Nutzer:innen → gesellschaftliche Anschlussfähigkeit des Frames.</strong></p></blockquote>
+          <p>Ob eine Partei diese Möglichkeit tatsächlich gezielt nutzt, müsste empirisch untersucht werden. <strong>Die entscheidende methodische Frage ist zunächst, ob das System dafür anfällig ist.</strong> Ein demokratisches Informationsinstrument sollte nicht nur neutral gemeint sein, sondern auch gegenüber strategischem Agenda-Setting möglichst robust konstruiert sein.</p>'''
+
+
 def copy_asset() -> None:
     ASSETS.mkdir(parents=True, exist_ok=True)
     target = ASSETS / IMAGE
@@ -143,9 +152,14 @@ def render_content() -> str:
             else:
                 output.append(f"          <p>{paragraph_html(child)}</p>")
         elif active and child.tag == W + "tbl":
+            table_rows = rows(child)
+            if table_rows and table_rows[0] == ["Kurz gesagtDer bessere Wahl-O-Mat müsste nicht unbedingt länger sein. Er müsste klarer zeigen, was eine These bedeutet, wer darüber überhaupt entscheidet, warum sie ausgewählt wurde und wann ein „Neutral“ eigentlich heißt: Diese Frage ist so nicht entscheidungsreif. Politische Bildung beginnt nicht bei der Antwort. Sie beginnt bei der Qualität der Frage."]:
+                output.append("          <p><strong>Die demokratisch entscheidende Frage lautet deshalb nicht nur, ob der Wahl-O-Mat Parteien neutral vergleicht, sondern auch, ob seine Auswahlmechanik von Parteien strategisch genutzt werden kann, um eigene Problemdefinitionen und Narrative institutionell zu vervielfältigen.</strong></p>")
             rendered = table_html(child)
             if rendered:
                 output.append(rendered)
+            if table_rows and table_rows[0] == ["Schritt", "Mechanismus", "Mögliche Wirkung"]:
+                output.append(STRATEGIC_BLIND_SPOT)
     return "\n".join(output)
 
 
