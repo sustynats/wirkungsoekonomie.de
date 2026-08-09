@@ -5,6 +5,10 @@ const root = process.cwd();
 const blogDir = path.join(root, "blog");
 const indexPath = path.join(root, "assets", "data", "blog-index.json");
 const entryOverrides = new Map([
+  ["/blog/wahl-o-mat-methodenkritik-sachsen-anhalt-2026.html", {
+    readingTime: "23 Min.",
+    excerpt: "Der Wahl-O-Mat ist Teil einer gesellschaftlichen Verstärkungsschleife: Auswahl, Framing und institutionelle Reichweite entscheiden mit darüber, welche politischen Problemdefinitionen zusätzlich Relevanz erhalten.",
+  }],
   ["/blog/atomkraft-wetterabhaengigkeit-hinter-beton.html", {
     relatedPages: [
       "/begriffe/kernenergie/",
