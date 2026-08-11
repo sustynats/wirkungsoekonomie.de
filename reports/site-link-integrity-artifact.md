@@ -1,10 +1,14 @@
 # Site Link Integrity
 Stand: generiert aus dem aktuellen Arbeitsbaum
-- HTML-Seiten: 15994
-- Interne Broken Links: 0
-- Waisenseiten ohne eingehende Links: 1369
-- Doppelte Seitentitel: 825
+- HTML-Seiten: 16087
+- Interne Broken Links: 4
+- Waisenseiten ohne eingehende Links: 1375
+- Doppelte Seitentitel: 827
 ## Broken Links
+- /bibliothek/ -> /bibliothek/eintraege/journal-blog-das-bessere-spiel-html/
+- /bibliothek/ -> /bibliothek/eintraege/journal-blog-atomkraft-wetterabhaengigkeit-hinter-beton-html/
+- /bibliothek/ -> /bibliothek/eintraege/journal-blog-wohlstandsverlust-preise-klimakrise-html/
+- /bibliothek/ -> /bibliothek/eintraege/journal-blog-nachhaltige-betriebswirtschaft-wirkungssteuerung-html/
 ## Waisenseiten
 - /afd-programm/
 - /anwendungen/
@@ -166,7 +170,7 @@ Stand: generiert aus dem aktuellen Arbeitsbaum
 - /bibliothek/agenda2030-sdg-esg-handout/
 - /bibliothek/apfel-t-shirt-wirkung-im-preis/
 - /bibliothek/beispiel-zange-sdg-esrs-fussnoten/
-- ... 1209 weitere
+- ... 1215 weitere
 ## Doppelte Seitentitel
 - Weiterleitung: /afd-programm/, /akademie/, /anwendungen/, /ausprobieren/, /blog/, /buch/, /datenschutz/, /fa-qs-und-links/, /funktionsweise.html, /impressum/, /inhalt-und-strategie/, /leitbild/, /mitmachen/, /modell/, /natalie-weber.html, /scorecard-dashboard/, /sdg-und-sdg-plus/, /teil-i-grundlagen/, /teil-ii-methoden-and-instrumente/, /teil-iii-anwendung-and-praxis/, /teil-iv-transformation-and-zukunft/, /ueber-die-w-oek/, /ueber-die-woek/, /ueber/, /veroeffentlichungen/, /w-est-g-journal/, /wirkung-werte-journal/, /wirkungsoekonomie/
 - WÖk API · Daten: /api/, /api/v1/, /api/v1/capabilities/, /api/v1/glossary/, /api/v1/sdg-plus/, /api/v1/search/, /api/v1/wirkungsradar/
@@ -248,4 +252,4 @@ Stand: generiert aus dem aktuellen Arbeitsbaum
 - Detail science for policy statistik | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-09-detail-science-fo-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-09-detail-science-fo/
 - Detail forschungsdaten replikation qualitaet | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-10-detail-forschungs-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-10-detail-forschungs/
 - Detail rechtsprechung sachverstaendige wirkungsrecht | Bibliothek der Wirkungsökonomie: /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-11-detail-rechtsprec-2/, /bibliothek/eintraege/download-or-document-assets-downloads-rang-18-wissen-wissenschaft-forschung-11-detail-rechtsprec/
-- ... 745 weitere
+- ... 747 weitere
