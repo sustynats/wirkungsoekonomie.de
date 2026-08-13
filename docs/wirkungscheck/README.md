@@ -1,6 +1,6 @@
-# Wahlkreis-Wirkungscheck — UX-Handoff
+# Wahlkreis-Wirkungscheck — Produkt- und UX-Dokumentation
 
-Version 1.0 · Stand 2026-08-13 · Lane: Claude (Design/UX) · Umsetzung: Codex
+Version 2026.2 · Stand 2026-08-13 · UX-Handoff und Produktumsetzung
 
 Vollständiger Design- und UX-Handoff für den Wahlkreis-Wirkungscheck, einen
 parteiunabhängigen Wirkungscheck für Mitglieder des Deutschen Bundestages.
@@ -20,17 +20,22 @@ Empfohlene Lesereihenfolge für die Umsetzung: UX_SPEC, dann DESIGN_SYSTEM,
 dann COMPONENTS. RESULT_EXPLAINABILITY ist die inhaltlich anspruchsvollste
 Stelle und definiert das Kernfeature.
 
-## Prototyp
+## Öffentlicher Fragebogen
 
 ```
 werkzeuge/wahlkreis-wirkungscheck/index.html
 assets/css/wahlkreis-wirkungscheck.css
 assets/js/wahlkreis-wirkungscheck/app.js
-assets/js/wahlkreis-wirkungscheck/mock-data.js
+assets/js/wahlkreis-wirkungscheck/data-2025.js
+assets/js/wahlkreis-wirkungscheck/check-config.js
+assets/js/wahlkreis-wirkungscheck/rules.js
+scripts/wahlkreis-wirkungscheck/build-district-data.mjs
+scripts/wahlkreis-wirkungscheck/validate-check.mjs
 ```
 
-Der Prototyp ist ein **Gestaltungsprototyp**, keine Vorstufe der Produktion.
-Er dient der Abnahme von Interaktion, Layout, Bedienbarkeit und Tonalität.
+Der veröffentlichte Fragebogen ist ein lokales Werkzeug: Bundespolitik ist der
+Kern, der freiwillig gewählte Wahlkreis liefert die Rückkopplung vor Ort. Er
+bewertet keine Personen, Parteien oder Wahlchancen.
 
 Lokal starten, nicht über `file://` öffnen, sonst greift die Content Security
 Policy nicht und Skripte werden blockiert:
@@ -41,36 +46,37 @@ python3 -m http.server 8731
 
 Danach `http://localhost:8731/werkzeuge/wahlkreis-wirkungscheck/index.html`.
 
-### Was der Prototyp kann
+### Was der Fragebogen kann
 
-Landing, Wahlkreis-Suche mit Combobox, zehn Fragen mit allen Antworttypen,
-Antworten prüfen, Ladezustand, vollständiger Report, Herleitungs-Drawer,
-Wirkpfad in zwei Ansichten, Quellen-Drawer, Sensitivität, Politik-Kit,
-Forschungs-Opt-in, Vertrauens-Drawer, lokales Löschen.
+Amtliche Suche über alle 299 Wahlkreise einschließlich Verwaltungs-PLZ als
+Suchhilfe, zehn feste Fragen, Antworten prüfen, vollständiger lokaler Report,
+deterministische Prüfpfade mit Regel-ID, direkten und indirekten Folgen,
+Wirkungsrisiken, Quellen-Drawer, Sensitivität, Politik-Kit und Lernlinks zur
+Wirkungsökonomie.
 
-### Was der Prototyp nicht kann
+### Daten, Regeln und Datenschutz
 
-Keine Recommendation Engine. Die Regeln, Wahlkreisdaten, Indikatorwerte, Quellen
-und Handlungspfade sind erfunden und in `mock-data.js` als solche markiert. Der
-Regeltext im Herleitungs-Drawer ist fest hinterlegt und reagiert nicht auf die
-Eingaben; im Drawer steht das ausdrücklich. Die Screens S-12 sowie S-19 bis S-23
-sind spezifiziert, aber nicht interaktiv gebaut.
+Die Wahlkreis- und Strukturdaten stammen aus den verlinkten Datensätzen der
+Bundeswahlleiterin. Zeitstand, Ebene, territorialer Hinweis und Lizenz stehen
+an jeder Quelle. Die Regeltexte sind deklarativ und werden nur angezeigt, wenn
+jede Bedingung einen freigegebenen Text hat. Fehlt er, lautet die sichtbare
+Meldung exakt: „Die Herleitung dieser Regel ist noch nicht freigegeben."
 
-Keine Datenübertragung. Kein Analytics, kein `main.js` der Website, keine
-Dienste Dritter. Antworten liegen ausschliesslich unter `wc_state_v1` im
-`localStorage`.
+Die Website lädt weder `main.js` noch Dienste Dritter. Die CSP verbietet
+Verbindungen; Antworten liegen ausschließlich unter `wc_state_v1` im
+`localStorage`. Der getrennte Analytics- und Betriebsdienst ist unter
+`ops/wahlkreis-wirkungscheck/` dokumentiert, aber nicht an den öffentlichen
+Fragebogen angeschlossen und wird nicht ohne eigenen Freigabeprozess aktiviert.
 
-## Vor einer Veröffentlichung zwingend
+## Release-Prüfung
 
-1. `mock-data.js` vollständig durch geprüfte Daten ersetzen.
-2. Regelwerk deterministisch definieren, siehe RESULT_EXPLAINABILITY §4.
-3. Themenliste in Frage 1 redaktionell auf Ausgewogenheit prüfen und freigeben.
-   Das ist die politisch heikelste Stelle des Produkts.
-4. Betreiberangaben, Kontakt und Datenschutztexte eintragen, alle mit
-   **[ENTWURF]** markierten Stellen in COPY.md auflösen.
-5. Rechtliche Prüfung der Opt-in-Texte und des Veröffentlichungsverfahrens.
-6. Unabhängige Zweitprüfung der Neutralität, analog zum Wirkungswahl-Kompass.
-7. `noindex, nofollow` und den Prototyp-Hinweis erst danach entfernen.
+1. `node scripts/wahlkreis-wirkungscheck/validate-check.mjs` ausführen.
+2. Daten- oder Regeländerungen nachvollziehbar prüfen; keine Regel ohne Text
+   publizieren.
+3. Die allgemeinen Website-Gates für Suche, Taxonomie, Datenschutz, URLs und
+   öffentliche Artefakte bestehen lassen.
+4. Einen späteren Versand, Forschungsbeitrag oder Import von Kontaktdaten erst
+   mit eigenem, dokumentiertem Freigabeprozess aktivieren.
 
 ## Grundregeln, die nicht verhandelbar sind
 

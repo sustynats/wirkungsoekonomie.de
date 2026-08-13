@@ -660,7 +660,9 @@ Die vollständige Prüfliste steht in `UX_SPEC.md`, Abschnitt „Abnahme".
 werkzeuge/wahlkreis-wirkungscheck/index.html
 assets/css/wahlkreis-wirkungscheck.css
 assets/js/wahlkreis-wirkungscheck/app.js
-assets/js/wahlkreis-wirkungscheck/mock-data.js
+assets/js/wahlkreis-wirkungscheck/data-2025.js
+assets/js/wahlkreis-wirkungscheck/check-config.js
+assets/js/wahlkreis-wirkungscheck/rules.js
 docs/wirkungscheck/*.md
 ```
 
