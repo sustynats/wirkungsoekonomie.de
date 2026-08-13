@@ -1,14 +1,13 @@
-/* Wahlkreis-Wirkungscheck - Prototyp
- * Gestaltungsprototyp zur UX-Abnahme. Keine Recommendation Engine.
- * Alle Inhalte stammen aus mock-data.js und sind erfunden.
- * Spezifikation: docs/wirkungscheck/UX_SPEC.md
+/* Wahlkreis-Wirkungscheck
+ * Lokaler, regelbasierter Fragebogen. Die Anwendung überträgt keine Antworten.
+ * Amtliche Wahlkreisdaten: data-2025.js; Prüfregeln: rules.js.
  */
 (function () {
   "use strict";
 
-  var M = window.WC_MOCK;
+  var M = window.WC_CHECK;
   var STORE_KEY = "wc_state_v1";
-  var SCHEMA = 1;
+  var SCHEMA = 2;
 
   /* ------------------------------------------------------------- Zustand */
 
@@ -95,6 +94,7 @@
   }
 
   var EVIDENCE = {
+    amtlich: { label: "Amtliche Datenquelle", filled: 3, tone: "var(--wc-scale-4)" },
     hoch: { label: "Belegbarkeit: hoch", filled: 3, tone: "var(--wc-scale-4)" },
     mittel: { label: "Belegbarkeit: mittel", filled: 2, tone: "var(--wc-scale-3)" },
     begrenzt: { label: "Belegbarkeit: begrenzt", filled: 1, tone: "var(--wc-scale-2)" },
@@ -163,7 +163,8 @@
       class: "wc-tile",
       role: opts.mode === "multi" ? "checkbox" : "radio",
       "aria-checked": opts.checked ? "true" : "false",
-      "data-id": opts.id
+      "data-id": opts.id,
+      "data-answer-id": opts.focusId || opts.id
     });
     if (opts.disabled) {
       b.setAttribute("aria-disabled", "true");
@@ -210,14 +211,28 @@
     return top.length ? byId(M.topics, top[0]) : null;
   }
 
+  function currentIndicators() {
+    if (state.district && state.district !== "bundesweit" && state.district.indicators) return state.district.indicators;
+    return M.national || [];
+  }
+
+  function indicatorValue(indicator) {
+    if (!indicator || indicator.value === null || indicator.value === undefined || indicator.value === "") return null;
+    var number = Number(indicator.value);
+    var value = Number.isFinite(number)
+      ? number.toLocaleString("de-DE", { maximumFractionDigits: 2 })
+      : String(indicator.value);
+    return value + (indicator.suffix || "");
+  }
+
   function questions() {
     var list = [];
     var sel = state.answers.q_prioritaeten || [];
 
     list.push({
       id: "q_prioritaeten", nr: 1, short: "Prioritäten", eyebrow: "Wirkungsprioritäten",
-      title: "Welche Themen sollen sich in Ihrem Wahlkreis am spürbarsten verbessern?",
-      help: "Wählen Sie bis zu fünf Themen. Im nächsten Schritt bringen Sie bis zu drei davon in eine Reihenfolge.",
+      title: "Welche Veränderung soll Bundespolitik für Menschen und Orte zuerst ermöglichen?",
+      help: "Wählen Sie bis zu fünf Themen. Der Wahlkreis ergänzt später die Rückmeldung vor Ort, begrenzt aber nicht die bundespolitische Frage.",
       type: "multi", options: M.topics, max: 5, min: 1, showField: true,
       error: "Bitte wählen Sie mindestens ein Thema.",
       why: "Wirkung entsteht selten überall gleichzeitig. Die Themenauswahl bestimmt, welche Wirkungszusammenhänge geprüft werden, und mit welchen Daten Ihres Wahlkreises sie abgeglichen werden. Sie legt keine Rangfolge zwischen politischen Zielen fest."
@@ -231,7 +246,7 @@
     list.push({
       id: "q_top3", nr: 0, short: "Priorisierung", eyebrow: "Priorisierung",
       title: sel.length > 1
-        ? "Welche drei Themen haben für Ihre Arbeit den grössten Stellenwert?"
+        ? "Welche drei Themen haben für Ihre bundespolitische Arbeit den grössten Stellenwert?"
         : "Möchten Sie weitere Schwerpunkte aufnehmen?",
       help: sel.length > 1
         ? "Die Reihenfolge steuert, welchen Wirkungszusammenhang wir zuerst prüfen. Sie ist keine Bewertung der übrigen Themen."
@@ -271,12 +286,12 @@
     });
 
     list.push({
-      id: "q_ebene", nr: 0, short: "Ebene", eyebrow: "Handlungsebene",
-      title: "Auf welcher Ebene müsste aus Ihrer Sicht gehandelt werden?",
-      help: "Mehrfachauswahl möglich.",
-      type: "multi", options: M.levels, min: 1,
-      error: "Bitte wählen Sie mindestens eine Ebene.",
-      why: "Dieselbe Zielsetzung führt je nach Ebene zu völlig unterschiedlichen Handlungspfaden. Ihre Angabe filtert Optionen heraus, die auf einer Ebene liegen, die Sie nicht adressieren möchten."
+      id: "q_bundesrolle", nr: 0, short: "Bundesrolle", eyebrow: "Bundespolitik",
+      title: "Welche Rolle des Bundes ist für diese Veränderung vorrangig?",
+      help: "Wählen Sie bis zu zwei Rollen. Die Auswahl steuert, welche direkten und indirekten Folgen im Wirkungscheck sichtbar werden.",
+      type: "multi", options: M.federalRoles, max: 2, min: 1,
+      error: "Bitte wählen Sie mindestens eine bundespolitische Rolle.",
+      why: "Der Bundestag kann Rahmen, Anreize, Vollzug und Rückkopplung unterschiedlich gestalten. Eine sichtbare Rolle verhindert, dass der Wirkpfad nur allgemein bleibt."
     });
 
     list.push({
@@ -295,21 +310,21 @@
       why: "Positive Wirkung an einer Stelle kann negative Wirkung an anderer Stelle erzeugen. In der Wirkungsökonomie darf eine schwere negative Wirkung nicht durch positive Werte anderswo verdeckt werden. Ihre Angabe setzt Handlungspfade nach hinten, die das genannte Feld belasten würden."
     });
 
-    if (state.district && state.district !== "bundesweit") {
-      list.push({
-        id: "q_wahlkreis_kontext", nr: 0, short: "Wahlkreiskontext", eyebrow: "Wahlkreiskontext",
-        title: "Welcher dieser Befunde ist aus Ihrer Sicht der drängendste?",
-        adaptive: "Diese Frage erscheint, weil Sie den Wahlkreis " + state.district.nr + " " + state.district.name + " gewählt haben.",
-        help: "Die Werte stammen aus amtlichen Quellen. Jeder Wert lässt sich über „Quelle“ nachvollziehen.",
-        type: "indicators", options: M.indicators, min: 0, optional: true,
-        why: "Der Report soll nicht nur Ihre Einschätzung wiedergeben, sondern sie mit der Datenlage vor Ort abgleichen. Wo beides auseinanderfällt, ist das ein eigenständiger Befund und erscheint im Report."
-      });
-    }
+    list.push({
+      id: "q_wahlkreis_kontext", nr: 0, short: "Rückkopplung", eyebrow: state.district && state.district !== "bundesweit" ? "Wahlkreis-Rückkopplung" : "Bundesweite Rückkopplung",
+      title: "Welcher Befund soll bei der bundespolitischen Prüfung besonders sichtbar bleiben?",
+      adaptive: state.district && state.district !== "bundesweit"
+        ? "Die Daten ergänzen den bundespolitischen Wirkpfad um den Wahlkreis " + state.district.nr + " " + state.district.name + "."
+        : "Die Daten zeigen Deutschland insgesamt und ersetzen keine regionale Verteilungsanalyse.",
+      help: "Die Werte stammen aus amtlichen Quellen. Zeitstand, Ebene und räumlicher Hinweis stehen bei jeder Quelle.",
+      type: "indicators", options: currentIndicators(), min: 0, optional: true,
+      why: "Der Wahlkreis ist die Rückkopplung für bundespolitische Entscheidungen. Ein einzelner Wert beweist keine Wirkung und wird deshalb nicht als Rangliste oder Personenurteil verwendet."
+    });
 
     list.push({
       id: "q_freitext", nr: 0, short: "Ergänzung", eyebrow: "Ergänzung · optional",
-      title: "Gibt es eine konkrete Situation in Ihrem Wahlkreis, die wir kennen sollten?",
-      help: "Optional. Höchstens 600 Zeichen.",
+      title: "Welcher Hinweis aus Wahlkreis oder Fachpraxis sollte den Wirkungscheck ergänzen?",
+      help: "Optional. Höchstens 600 Zeichen. Bitte keine personenbezogenen Angaben Dritter.",
       type: "text", min: 0, optional: true,
       why: "Ihr Hinweis wird in dieser Fassung nicht automatisch ausgewertet. Er erscheint in Ihrem Report und, falls Sie zustimmen, in der redaktionellen Auswertung."
     });
@@ -607,7 +622,8 @@
     bar.appendChild(aside);
   }
 
-  function renderQuestion() {
+  function renderQuestion(options) {
+    options = options || {};
     var qs = questions();
     var q = qs[state.step];
     if (!q) return;
@@ -668,8 +684,21 @@
     right.appendChild(next);
     foot.appendChild(right);
 
-    focusHeading("#survey-h1");
-    announce("Frage " + q.nr + " von " + qs.length);
+    if (options.preservePosition) {
+      /* Eine Auswahl darf weder den Fokus noch die Leseposition nach oben
+         ziehen. Der erneuerte Button erhält Fokus ohne Scrollen; danach wird
+         exakt die vorherige Position wiederhergestellt. */
+      window.requestAnimationFrame(function () {
+        if (options.focusId) {
+          var target = $("[data-answer-id='" + options.focusId + "']");
+          if (target) target.focus({ preventScroll: true });
+        }
+        window.scrollTo({ top: options.scrollTop || 0, left: 0, behavior: "auto" });
+      });
+    } else {
+      focusHeading("#survey-h1");
+      announce("Frage " + q.nr + " von " + qs.length);
+    }
   }
 
   function advance(qs) {
@@ -677,9 +706,11 @@
     openSurvey(state.step + 1);
   }
 
-  function refresh() {
+  function refresh(options) {
+    options = options || {};
+    var scrollTop = window.scrollY;
     save();
-    renderQuestion();
+    renderQuestion({ preservePosition: true, focusId: options.focusId, scrollTop: scrollTop });
   }
 
   function buildAnswerUI(q, errorBox) {
@@ -721,7 +752,7 @@
               state.answers.q_top3 = keep;
             }
             errorBox.textContent = "";
-            refresh();
+            refresh({ focusId: o.id });
           }
         }));
       });
@@ -738,8 +769,8 @@
         var extra = null, hint = o.hint, value = null;
         if (q.type === "indicators") {
           if (o.value) {
-            value = o.value + (o.compare ? " · " + o.compare : "");
-            hint = null;
+            value = indicatorValue(o);
+            hint = "Beobachtungszeitpunkt: " + o.observation + ". " + o.territorialNote;
           } else {
             hint = o.gapReason || "Für diesen Indikator liegen keine Daten vor.";
           }
@@ -749,7 +780,10 @@
           onToggle: function () {
             state.answers[q.id] = (val === o.id && q.optional) ? null : o.id;
             errorBox.textContent = "";
-            refresh();
+            /* Eine Einzelauswahl schließt die Frage kontrolliert ab. Die
+               Mehrfachauswahlen behalten dagegen die Position auf der Seite. */
+            if (q.type === "single" || q.type === "axis" || q.type === "indicators") advance(questions());
+            else refresh({ focusId: o.id });
           }
         });
         if (q.type === "indicators") {
@@ -902,7 +936,8 @@
         var checked = val[row.id] === s.value;
         var b = el("button", {
           type: "button", class: "wc-likert__opt", role: "radio",
-          "aria-checked": checked ? "true" : "false"
+          "aria-checked": checked ? "true" : "false",
+          "data-answer-id": row.id + "-" + s.value
         });
         b.innerHTML = glyph("single", checked);
         b.appendChild(el("span", { text: s.label }));
@@ -911,7 +946,7 @@
           v[row.id] = s.value;
           state.answers[q.id] = v;
           errorBox.textContent = "";
-          refresh();
+          refresh({ focusId: row.id + "-" + s.value });
         });
         scale.appendChild(b);
       });
@@ -1094,19 +1129,19 @@
       ]));
     }
 
-    /* Kontext */
-    $("#report-context-title").textContent = isNational ? "Relevanter Bundeskontext" : "Relevanter Wahlkreiskontext";
+    /* Kontext: amtliche Daten ergänzen die bundespolitische Herleitung. */
+    $("#report-context-title").textContent = isNational ? "Amtlicher Bundeskontext" : "Amtlicher Wahlkreiskontext für Bundespolitik";
     var ctx = $("#report-context");
     ctx.innerHTML = "";
-    M.indicators.forEach(function (ind) {
+    currentIndicators().forEach(function (ind) {
       var row = el("div", { class: "wc-datarow" });
       row.appendChild(el("span", { class: "wc-datarow__name", text: ind.label }));
-      if (ind.value) {
-        row.appendChild(el("span", { class: "wc-datarow__value", text: ind.value }));
-        if (ind.compare) row.appendChild(el("span", { class: "wc-meta", text: ind.compare }));
+      if (indicatorValue(ind)) {
+        row.appendChild(el("span", { class: "wc-datarow__value", text: indicatorValue(ind) }));
+        row.appendChild(el("span", { class: "wc-meta", text: "Beobachtungszeitpunkt: " + ind.observation }));
       } else {
         row.appendChild(evidenceMark("datenluecke"));
-        row.appendChild(el("span", { class: "wc-meta", text: ind.gapReason + " " + ind.gapEffect }));
+        row.appendChild(el("span", { class: "wc-meta", text: ind.gapReason }));
       }
       row.appendChild(sourceButton(ind.source));
       ctx.appendChild(row);
@@ -1115,30 +1150,42 @@
     /* Hebel */
     var lev = $("#report-levers");
     lev.innerHTML = "";
-    var words = { 3: "ausreichend adressiert", 2: "teilweise adressiert", 1: "begrenzend", 0: "nicht bewertbar" };
-    M.levers.forEach(function (l) {
-      var li = el("li", { class: "wc-lever", "data-binding": l.binding ? "true" : "false" });
-      if (l.binding) li.setAttribute("aria-current", "true");
+    var bottlenecks = state.answers.q_engpass || [];
+    M.bottlenecks.forEach(function (l) {
+      var named = bottlenecks.indexOf(l.id) > -1;
+      var li = el("li", { class: "wc-lever", "data-binding": named ? "true" : "false" });
+      if (named) li.setAttribute("aria-current", "true");
       li.appendChild(el("span", { class: "wc-lever__name", text: l.label }));
-      li.appendChild(degreeMark(l.degree));
-      li.appendChild(el("span", { class: "wc-lever__state",
-        text: words[l.degree] + (l.binding ? " · hier setzt Pfad A an" : "") }));
+      li.appendChild(degreeMark(named ? 1 : 0));
+      li.appendChild(el("span", { class: "wc-lever__state", text: named ? "von Ihnen als Engpass genannt" : "nicht als Engpass ausgewählt" }));
       lev.appendChild(li);
     });
     $("#report-levers-conclusion").textContent =
-      "Solange das Verfahren begrenzt, erhöhen zusätzliche Mittel die Wirkung nur unterproportional.";
+      "Die Markierung zeigt Ihre Angaben, keine objektive Rangfolge. Ein Prüfpfad trennt direkte Folgen, Folgewirkungen und Wirkungsrisiken.";
 
     /* Pfade */
     var pathsBox = $("#report-paths");
     pathsBox.innerHTML = "";
-    M.paths.forEach(function (p) {
+    var matchingPaths = window.WC_RULE_ENGINE.evaluate(state.answers);
+    if (!matchingPaths.length) {
+      pathsBox.appendChild(el("div", { class: "wc-card" }, [
+        el("h3", { class: "wc-h3", text: "Noch kein passender freigegebener Prüfpfad" }),
+        el("p", { class: "wc-muted", text: "Die Herleitung dieser Regel ist noch nicht freigegeben." }),
+        el("p", { class: "wc-meta", text: "Wählen Sie bei der Bundesrolle einen der angebotenen Wirkpfade und benennen Sie einen dazu passenden Engpass, damit die transparente Herleitung angezeigt werden kann." })
+      ]));
+    }
+    matchingPaths.forEach(function (p) {
       pathsBox.appendChild(pathCard(p));
     });
 
     /* MPD */
     var sp = $("#report-spaces");
     sp.innerHTML = "";
-    M.spaces.forEach(function (s) {
+    [
+      { key: "direct", label: "Direkte erwartete Veränderung", items: matchingPaths.map(function (p) { return { text: p.direct, evidence: p.evidence }; }) },
+      { key: "indirect", label: "Mögliche Folgewirkungen", items: matchingPaths.map(function (p) { return { text: p.indirect, evidence: p.evidence }; }) },
+      { key: "risk", label: "Wirkungsrisiken", items: matchingPaths.flatMap(function (p) { return p.risks.map(function (text) { return { text: text, evidence: p.evidence }; }); }) }
+    ].forEach(function (s) {
       var card = el("div", { class: "wc-card" });
       var inner = el("div", { class: "wc-space", "data-space": s.key });
       inner.appendChild(el("h3", { class: "wc-h3", text: s.label }));
@@ -1167,7 +1214,7 @@
     card.appendChild(el("p", { class: "wc-eyebrow", text: "Handlungspfad " + p.letter }));
     card.appendChild(el("h3", { class: "wc-h3 wc-card__title", text: p.title }));
     card.appendChild(el("p", { class: "wc-body", text: p.summary }));
-    card.appendChild(el("p", { class: "wc-path__match", text: "Passt zu Ihrer Angabe: " + p.match }));
+    card.appendChild(el("p", { class: "wc-path__match", text: "Ausgelöst durch: " + p.rule.conditions.map(function (condition) { return condition.text; }).join(" und ") + "." }));
 
     var badges = el("ul", { class: "wc-badges" });
     badges.appendChild(el("li", {}, [el("span", { class: "wc-badge", text: p.level })]));
@@ -1178,6 +1225,7 @@
     evLi.appendChild(evBadge);
     badges.appendChild(evLi);
     card.appendChild(badges);
+    card.appendChild(sourceButton(p.source));
 
     var acts = el("div", { class: "wc-path__actions" });
     var why = el("button", { type: "button", class: "wc-btn wc-btn--primary wc-btn--sm",
@@ -1277,25 +1325,25 @@
       box.appendChild(card);
     });
 
+    var learning = el("div", { class: "wc-card" });
+    learning.appendChild(el("h3", { class: "wc-h3 wc-card__title", text: "Wirkungskompetenz vertiefen" }));
+    learning.appendChild(el("p", { class: "wc-meta", text: "Die Begriffe im Report sind keine Schlagworte. Sie beschreiben, was eine politische Maßnahme direkt verändert, welche Folgewirkungen möglich sind und worauf Rückkopplung achten muss." }));
+    var learningList = el("ul");
+    M.learningLinks.forEach(function (link) {
+      var item = el("li");
+      item.appendChild(el("a", { href: link.href, text: link.label }));
+      item.appendChild(el("span", { class: "wc-muted", text: " – " + link.text }));
+      learningList.appendChild(item);
+    });
+    learning.appendChild(learningList);
+    box.appendChild(learning);
+
     var consent = $("#report-consent");
     consent.innerHTML = "";
-    var group = el("div", { class: "wc-options wc-options--two", role: "radiogroup", "aria-labelledby": "consent-q" });
-    [
-      { id: "lokal", label: "Nur meinen Report nutzen", hint: "Ihre Angaben bleiben in Ihrem Browser. Nichts wird übertragen." },
-      { id: "beitragen", label: "Zusätzlich zur Gesamtauswertung beitragen", hint: "Ihre Angaben werden ohne Namen und ohne Kontaktdaten gespeichert und fliessen in aggregierte Auswertungen ein." }
-    ].forEach(function (o) {
-      group.appendChild(tile({
-        id: o.id, mode: "single", checked: state.answers._consent === o.id,
-        label: o.label, hint: o.hint,
-        onToggle: function () {
-          state.answers._consent = o.id; save(); renderToolkit();
-          announce(o.id === "lokal"
-            ? "Ihre Angaben bleiben in diesem Browser. Sie können das jederzeit ändern."
-            : "Vielen Dank. Sie können den Beitrag jederzeit widerrufen.");
-        }
-      }));
-    });
-    consent.appendChild(group);
+    consent.appendChild(el("div", { class: "wc-card" }, [
+      el("h3", { class: "wc-h3", text: "Ihre Angaben bleiben lokal" }),
+      el("p", { class: "wc-muted", text: "Der veröffentlichte Fragebogen überträgt keine Antworten. Eine freiwillige Forschungsbeteiligung wird erst angeboten, wenn der getrennte Dienst, die Information und der Widerrufsweg veröffentlicht sind." })
+    ]));
   }
 
   /* --------------------------------------------------------------- Drawer */
@@ -1371,7 +1419,7 @@
         ["Priorität", (function () { var t = topPriority(); return t ? t.label : null; })()],
         ["Zustandsziel", labelFor(byId(qs, "q_zustandsziel") || {})],
         ["Engpass", labelFor(byId(qs, "q_engpass") || {})],
-        ["Handlungsebene", labelFor(byId(qs, "q_ebene") || {})],
+        ["Bundespolitische Rolle", labelFor(byId(qs, "q_bundesrolle") || {})],
         ["Wirkungshorizont", labelFor(byId(qs, "q_horizont") || {})],
         ["Rote Linie", labelFor(byId(qs, "q_rote_linie") || {})]
       ].forEach(function (pair) {
@@ -1382,20 +1430,18 @@
 
       /* 2 Wahlkreisdaten */
       var dataWrap = el("div");
-      p.usesIndicators.forEach(function (indId) {
-        var ind = byId(M.indicators, indId);
-        if (!ind) return;
+      currentIndicators().forEach(function (ind) {
         var row = el("div", { class: "wc-datarow" });
         row.appendChild(el("span", { class: "wc-datarow__name", text: ind.label }));
-        if (ind.value) {
-          row.appendChild(el("span", { class: "wc-datarow__value", text: ind.value }));
+        if (indicatorValue(ind)) {
+          row.appendChild(el("span", { class: "wc-datarow__value", text: indicatorValue(ind) }));
         } else {
           row.appendChild(evidenceMark("datenluecke"));
         }
         row.appendChild(sourceButton(ind.source));
-        if (!ind.value) {
+        if (!indicatorValue(ind)) {
           row.appendChild(el("p", { class: "wc-meta", style: "flex:1 1 100%",
-            text: ind.gapReason + " " + ind.gapEffect }));
+            text: ind.gapReason }));
         }
         dataWrap.appendChild(row);
       });
@@ -1406,30 +1452,35 @@
       /* 3 Methodik */
       var rule = el("div", { class: "wc-rulebox" });
       rule.appendChild(el("p", { class: "wc-rule-id", text: "Regel " + p.rule.id }));
-      rule.appendChild(el("p", { text: "Wenn " + p.rule.conditions.join(" und ") + ", dann " + p.rule.conclusion + "." }));
-      rule.appendChild(evidenceMark(p.evidence));
-      rule.appendChild(el("p", { class: "wc-meta", text: "Grundlage: " + p.rule.basis }));
+      if (window.WC_RULE_ENGINE.hasApprovedText(p)) {
+        rule.appendChild(el("p", { text: "Wenn " + p.rule.conditions.map(function (condition) { return condition.text; }).join(" und ") + ", dann " + p.rule.conclusion.text + "." }));
+        rule.appendChild(evidenceMark(p.evidence));
+        rule.appendChild(el("p", { class: "wc-meta", text: "Grundlage: " + p.rule.basis }));
+      } else {
+        rule.appendChild(el("p", { text: window.WC_RULE_ENGINE.unavailableText }));
+      }
       body.appendChild(section("explain-s3", "Methodik", [
         rule,
         el("p", { class: "wc-meta", style: "margin-top:.75rem",
-          text: "Prototyp: Der Regeltext ist fest hinterlegt und reagiert nicht auf Ihre Angaben. " +
-                "Im fertigen Werkzeug wird die auslösende Regel deterministisch aus Ihren Angaben bestimmt." })
+          text: "Diese Regel wird deterministisch aus Ihren Angaben ausgewertet. Sie beschreibt einen Prüfpfad, keine Wahl- oder Personenempfehlung." })
       ]));
 
       /* 4 Daraus folgt */
-      body.appendChild(section("explain-s4", "Daraus folgt", [el("p", { text: p.follows })]));
+      body.appendChild(section("explain-s4", "Direkte und indirekte Folgen", [
+        el("p", { text: "Direkt: " + p.direct }),
+        el("p", { text: "Indirekt: " + p.indirect })
+      ]));
 
       /* 5 Was wuerde das veraendern */
       var ul = el("ul");
-      p.wouldChange.forEach(function (t) { ul.appendChild(el("li", { text: t })); });
+      ul.appendChild(el("li", { text: "Ein anderer Engpass oder eine andere Bundesrolle kann einen anderen Prüfpfad auslösen." }));
+      ul.appendChild(el("li", { text: "Amtliche Kontextdaten ergänzen die Herleitung, sie ersetzen keine Wirkungsprüfung für eine konkrete Maßnahme." }));
       body.appendChild(section("explain-s5", "Was würde das verändern", [ul]));
 
-      /* 6 Warum nicht Alternative B */
-      body.appendChild(section("explain-s6", "Warum nicht Alternative B", [
-        p.notAlternative
-          ? el("p", { text: p.notAlternative.text })
-          : el("p", { class: "wc-muted", text: "Für diese Konstellation ist derzeit keine Alternative hinterlegt. Das bedeutet nicht, dass es keine gibt." })
-      ]));
+      /* 6 Wirkungsrisiken */
+      var risks = el("ul");
+      p.risks.forEach(function (risk) { risks.appendChild(el("li", { text: risk })); });
+      body.appendChild(section("explain-s6", "Wirkungsrisiken", [risks]));
     }, opener, focusSection);
   }
 
@@ -1486,8 +1537,8 @@
         var rul = el("ul");
         p.risks.forEach(function (r) {
           var li = el("li");
-          li.appendChild(el("span", { text: r.text }));
-          li.appendChild(el("div", { style: "margin-top:.35rem" }, [evidenceMark(r.evidence)]));
+          li.appendChild(el("span", { text: typeof r === "string" ? r : r.text }));
+          li.appendChild(el("div", { style: "margin-top:.35rem" }, [evidenceMark(typeof r === "string" ? p.evidence : r.evidence)]));
           rul.appendChild(li);
         });
         risks.appendChild(rul);
@@ -1501,21 +1552,17 @@
   function openSource(sourceId, opener) {
     var s = M.sources[sourceId];
     if (!s) return;
-    openDrawer("Quelle", s.metric, function (body) {
+    openDrawer("Quelle", s.title || s.metric, function (body) {
       var dl = el("dl", { class: "wc-deflist" });
-      [["Institution", s.institution], ["Kennzahl", s.metric], ["Jahr", s.year], ["Geografische Ebene", s.level]]
+      [["Institution", s.institution], ["Datensatz oder Methode", s.title || s.metric], ["Jahr", s.year], ["Geografische Ebene", s.level], ["Datenqualität", s.quality], ["Räumlicher Hinweis", s.territorialNote], ["Lizenz", s.licence]]
         .forEach(function (p) {
           dl.appendChild(el("dt", { text: p[0] }));
           dl.appendChild(el("dd", { text: p[1] }));
         });
-      dl.appendChild(el("dt", { text: "Datenqualität" }));
-      var dd = el("dd");
-      dd.appendChild(evidenceMark(s.quality));
-      dl.appendChild(dd);
       body.appendChild(dl);
-      if (s.note) body.appendChild(el("p", { class: "wc-note wc-note--quiet", style: "margin-top:1rem", text: s.note }));
-      body.appendChild(el("p", { class: "wc-meta", style: "margin-top:1rem",
-        text: s.url ? "" : "Nicht online verfügbar. Im Prototyp sind keine Quellenlinks hinterlegt." }));
+      if (s.url) {
+        body.appendChild(el("a", { class: "wc-btn wc-btn--quiet wc-btn--sm", href: s.url, target: "_blank", rel: "noopener noreferrer", style: "margin-top:1rem", text: "Quelle öffnen" }));
+      }
     }, opener);
   }
 
@@ -1525,21 +1572,21 @@
         ["Zweck", "Wofür dieses Werkzeug gebaut wurde",
           "Der Wahlkreis-Wirkungscheck unterstützt Mandatsträgerinnen und Mandatsträger dabei, politische Ziele auf Wirkung statt auf Massnahmen hin zu prüfen. Er ersetzt keine fachliche Beratung und keine parlamentarische Willensbildung.", false],
         ["Betreiber", "Wer verantwortlich ist",
-          "ENTWURF. Verantwortliche Stelle, Anschrift und Kontakt werden vor der Veröffentlichung eingetragen.", false],
+          "Die verantwortliche Stelle und die vollständigen Angaben stehen im Impressum der Wirkungsökonomie.", false],
         ["Daten", "Was gespeichert wird",
           "Ihre Antworten liegen ausschliesslich in Ihrem Browser unter dem Schlüssel wc_state_v1. Es gibt kein Konto und keine Anmeldung. Ohne Ihre ausdrückliche Zustimmung wird nichts übertragen. Es werden keine Cookies zu Analysezwecken gesetzt und keine Dienste Dritter eingebunden. Sie können alle lokalen Daten jederzeit vollständig löschen.", true],
         ["Veröffentlichung", "Was öffentlich werden kann",
-          "Nichts wird veröffentlicht, solange Sie dem nicht in einem eigenen, getrennten Schritt zustimmen. Eine Zustimmung ist jederzeit widerrufbar.", false],
+          "Dieser Fragebogen veröffentlicht keine Antworten und überträgt keine Angaben. Ein späterer Forschungsbeitrag wäre ein eigener, nicht vorausgewählter Schritt.", false],
         ["KI", "Wo KI vorkommt und wo nicht",
-          "ENTWURF. Die Handlungsoptionen entstehen regelbasiert und deterministisch. Dieselben Angaben führen immer zum selben Ergebnis. Es werden keine Empfehlungen von einem Sprachmodell erzeugt.", false],
+          "Die Prüfpfade entstehen regelbasiert und deterministisch. Dieselben Angaben führen immer zum selben Ergebnis. Es werden keine Empfehlungen von einem Sprachmodell erzeugt.", false],
         ["Parteiunabhängigkeit", "Unabhängigkeit und Finanzierung",
-          "ENTWURF. Das Werkzeug ist keiner Partei zugeordnet und wird nicht von Parteien finanziert. Es fragt weder nach Fraktion noch nach Partei, erstellt keine Rangliste und gibt keine Wahlempfehlung.", false],
+          "Das Werkzeug fragt weder nach Fraktion noch nach Partei, erstellt keine Rangliste und gibt keine Wahlempfehlung.", false],
         ["Quellen", "Welche Daten verwendet werden",
-          "Alle Wahlkreisdaten stammen aus benannten Quellen mit Angabe von Institution, Kennzahl, Jahr, Ebene und Datenqualität. Datenlücken werden ausgewiesen und nicht überbrückt. Im Prototyp sind alle Quellen erfunden.", false],
+          "Die Wahlkreisdaten stammen aus den verlinkten amtlichen Datensätzen der Bundeswahlleiterin. Institution, Jahr, Ebene, räumlicher Hinweis und Lizenz sind bei jeder Quelle sichtbar. Datenlücken werden ausgewiesen und nicht überbrückt.", false],
         ["Methodik", "Wie das Ergebnis entsteht",
           "Ihre Angaben werden mit Wahlkreisdaten abgeglichen und auf ein offengelegtes Regelwerk angewendet. Jede Empfehlung nennt die Regel, auf der sie beruht.", false],
         ["Kontakt", "Auskunft, Widerspruch, Korrekturhinweis",
-          "ENTWURF. Kontaktweg wird vor der Veröffentlichung eingetragen. Hinweise auf fehlerhafte Daten oder Regeln sind ausdrücklich erwünscht.", false]
+          "Hinweise auf fehlerhafte Daten oder Regeln sind willkommen: wirkungscheck@wirkungsoekonomie.de. Rechtliche Angaben stehen im Impressum.", false]
       ];
       items.forEach(function (it) {
         var d = el("details", { class: "wc-accordion" });
