@@ -152,9 +152,18 @@ Das Modul erzeugt nie:
 
 ## Weiterführende Inhalte
 
-Jede Karte kann zu einer redaktionell gepflegten, öffentlich verständlichen
-Erklärseite auf wirkungsoekonomie.de verlinken. Vor der technischen
-Freischaltung werden Ziel-URL, Seitentitel, Stand und redaktionelle Freigabe in
-einem Content-Register hinterlegt. Ein Link ersetzt keine Erklärung im
-Kurzreport.
+Jede Karte verlinkt zusätzlich zu einer redaktionell gepflegten,
+öffentlich verständlichen Erklärseite. Für Phase 1 sind diese internen Ziele
+vorbehaltlich einer abschließenden redaktionellen Prüfung vorgesehen:
 
+| Instrument | Ziel |
+| --- | --- |
+| Gesetzliche Wirkungsrückkopplung | `/wirkungssteuerung/wstg/` – Wirkungssteuergesetz |
+| Nichtkompensation | `/begriffe/wirkungsrisiko/` – Wirkungsrisiko und Grenzen |
+| Wirkungshaushalt | `/wirkungssteuerung/wirkungshaushalt/` |
+| Fördermittelrückkopplung | `/wirkungssteuerung/beschaffung-foerderung/` |
+| Wirkungsdaten | `/wirkungssteuerung/woek-ids/` und `/begriffe/wirkungsdaten/` |
+
+Vor der technischen Freischaltung werden Ziel-URL, Seitentitel, Stand und
+redaktionelle Freigabe in einem Content-Register geprüft. Ein Link ersetzt
+keine Erklärung im Kurzreport.
