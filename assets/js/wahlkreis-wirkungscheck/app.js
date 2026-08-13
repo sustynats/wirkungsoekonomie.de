@@ -2573,26 +2573,26 @@
   }
 
   function openTrust(opener) {
-    openDrawer("Vertrauen & Datenschutz", "Die wichtigsten Angaben in Kurzform", function (body) {
+    openDrawer("Vertrauen & Datenschutz", "Kurz, konkret und vollständig", function (body) {
       var items = [
-        ["Zweck", "Wofür dieses Werkzeug gebaut wurde",
-          "Der Wahlkreis-Wirkungscheck unterstützt Mandatsträgerinnen und Mandatsträger dabei, politische Ziele auf Wirkung statt auf Massnahmen hin zu prüfen. Er ersetzt keine fachliche Beratung und keine parlamentarische Willensbildung.", false],
-        ["Betreiber", "Wer verantwortlich ist",
-          "Die verantwortliche Stelle und die vollständigen Angaben stehen im Impressum der Wirkungsökonomie.", false],
-        ["Daten", "Was gespeichert wird",
-          "Ihre Antworten liegen ausschliesslich in Ihrem Browser unter dem Schlüssel wc_state_v1. Es gibt kein Konto und keine Anmeldung. Dieser Fragebogen überträgt nichts, setzt keine Analyse-Cookies und bindet keine Dienste Dritter ein. Sie können alle lokalen Daten jederzeit vollständig löschen.", true],
-        ["Veröffentlichung", "Was öffentlich werden kann",
-          "Dieser Fragebogen veröffentlicht keine Antworten und überträgt keine Angaben. Ein späterer Forschungsbeitrag wäre ein eigener, nicht vorausgewählter Schritt.", false],
-        ["KI", "Wo KI vorkommt und wo nicht",
-          "Die Prüfpfade entstehen regelbasiert und deterministisch. Dieselben Angaben führen immer zum selben Ergebnis. Es werden keine Empfehlungen von einem Sprachmodell erzeugt.", false],
-        ["Parteiunabhängigkeit", "Unabhängigkeit und Finanzierung",
-          "Das Werkzeug fragt weder nach Fraktion noch nach Partei, erstellt keine Rangliste und gibt keine Wahlempfehlung.", false],
-        ["Quellen", "Welche Daten verwendet werden",
-          "Die Wahlkreisdaten stammen aus den verlinkten amtlichen Datensätzen der Bundeswahlleiterin. Institution, Jahr, Ebene, räumlicher Hinweis und Lizenz sind bei jeder Quelle sichtbar. Datenlücken werden ausgewiesen und nicht überbrückt.", false],
-        ["Methodik", "Wie das Ergebnis entsteht",
-          "Ihre Angaben werden mit Wahlkreisdaten abgeglichen und auf ein offengelegtes Regelwerk angewendet. Jede Empfehlung nennt die Regel, auf der sie beruht.", false],
-        ["Kontakt", "Auskunft, Widerspruch, Korrekturhinweis",
-          "Hinweise auf fehlerhafte Daten oder Regeln sind willkommen: wirkungscheck@wirkungsoekonomie.de. Rechtliche Angaben stehen im Impressum.", false]
+        ["Zweck", "Wofür der Check da ist",
+          "Der Wirkungscheck ist ein Arbeitsinstrument des Instituts für Wirkungsökonomie. Er hilft dabei, politische Schwerpunkte und mögliche Folgen von Instrumenten auf Bundesebene und im Wahlkreis zu reflektieren. Der Report ist weder ein Gutachten noch eine Bewertung Ihrer Person, Ihrer Partei oder Ihrer Arbeit.", false],
+        ["Verantwortung", "Wer hinter dem Werkzeug steht",
+          "Fachlich herausgegeben wird der Wirkungscheck vom Institut für Wirkungsökonomie. Datenschutzrechtlich verantwortliche Stelle ist Natalie Weber, c/o IP-Management #6537, Ludwig-Erhard-Straße 18, 20459 Hamburg, impact@wirkungsoekonomie.org.", false, "Impressum öffnen", "../../impressum.html"],
+        ["Im Browser", "Welche Angaben lokal gespeichert werden",
+          "Bis Sie sie löschen, speichert dieser Browser die gewählte Betrachtung (Bund oder Wahlkreis), Ihre Antworten, Ihren Report und – falls angefordert – die lokale Kopie einer KI-Auswertung. Die Daten liegen nur auf diesem Gerät unter dem Schlüssel wc_state_v1. Es gibt kein Konto, keine Anmeldung und keine Übertragung im Hintergrund.", true],
+        ["Keine Veröffentlichung", "Was nicht mit Ihren Antworten geschieht",
+          "Ihre Antworten werden nicht veröffentlicht, nicht an ein CRM übertragen, nicht für Versand oder Profilbildung verwendet und nicht zu einer Rangliste zusammengeführt. Ohne Ihre aktive Anforderung einer KI-Auswertung verlässt keine Antwort den Browser.", false],
+        ["KI nur auf Wunsch", "Wann eine Übertragung stattfindet",
+          "Die regelbasierte Auswertung entsteht vollständig lokal. Erst wenn Sie am Ende die Einwilligungsbox aktivieren und die persönliche WÖK-KI-Auswertung anfordern, werden die dafür freigegebenen Reportangaben, die ausgewählte Betrachtung und ein möglicher freiwilliger Hinweis an den WÖK-KI-Dienst übertragen. Name, E-Mail-Adresse, Fraktion, Partei und Wahlchance werden dabei nicht automatisch mitgesendet. Bei einer technischen Anfrage können die für den Dienst notwendigen Server-Logdaten verarbeitet werden.", false, "Datenschutzhinweise zur WÖK-KI öffnen", "../../datenschutz.html#woek-ki"],
+        ["Freigabelink", "Was beim Teilen zu beachten ist",
+          "Ein Freigabelink wird nur nach einem zusätzlichen Klick erstellt. Er enthält die betreffende KI-Auswertung und ihre Analysegrundlage direkt im Link; für diese Funktion wird der Link nicht auf einem Website-Server gespeichert. Jede Person mit dem Link kann die enthaltenen Informationen lesen. Teilen Sie ihn daher nur bewusst.", false],
+        ["Keine Personenbewertung", "Unabhängigkeit des Instruments",
+          "Der Wirkungscheck fragt nicht nach Fraktion oder Partei. Er erstellt keine Wahlempfehlung, keine Rangliste und kein Profil von Abgeordneten. Unterschiedliche politische Ziele und Zielkonflikte bleiben politische Entscheidungen.", false],
+        ["Daten und Regeln", "Wie der Report zustande kommt",
+          "Die Auswertung verbindet Ihre Antworten mit dem offen gelegten Regelwerk und – sofern gewählt – mit den verlinkten amtlichen Wahlkreisdaten. Bei jeder Datenquelle sind Institution, Jahr, räumliche Ebene und Lizenz sichtbar. Datenlücken werden benannt, nicht geschätzt. Die regelbasierte Auswertung ist nachvollziehbar: Gleiche Angaben führen zum gleichen Ergebnis.", false],
+        ["Kontakt", "Fragen und Korrekturhinweise",
+          "Für Hinweise zu Fragen, Daten oder Regeln erreichen Sie das Projekt unter wirkungscheck@wirkungsoekonomie.de. Für Datenschutzanliegen gelten die Kontaktdaten und Rechte in der Datenschutzerklärung.", false, "Datenschutzerklärung öffnen", "../../datenschutz.html"]
       ];
       items.forEach(function (it) {
         var d = el("details", { class: "wc-accordion" });
@@ -2601,7 +2601,11 @@
         sum.appendChild(document.createTextNode(it[0]));
         sum.appendChild(el("span", { text: it[1] }));
         d.appendChild(sum);
-        d.appendChild(el("div", { class: "wc-accordion__body" }, [el("p", { text: it[2] })]));
+        var content = el("div", { class: "wc-accordion__body" }, [el("p", { text: it[2] })]);
+        if (it[4] && it[5]) {
+          content.appendChild(el("a", { class: "wc-btn wc-btn--quiet wc-btn--sm", href: it[5], target: "_blank", rel: "noopener noreferrer", style: "margin-top:.75rem", text: it[4] }));
+        }
+        d.appendChild(content);
         body.appendChild(d);
       });
       var del = el("button", { type: "button", class: "wc-btn wc-btn--danger", style: "margin-top:1.5rem",
