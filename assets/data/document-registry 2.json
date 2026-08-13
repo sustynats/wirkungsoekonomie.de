@@ -1484,9 +1484,9 @@
       "Indikatoren",
       "Methodik"
     ],
-    "status": "current",
+    "status": "superseded",
     "stand": "2026",
-    "summary": "Das Methodenregister sammelt zentrale Items, Begriffe und Bewertungsbausteine, die für Wirkungsdaten, Scorecards und Einordnung genutzt werden.",
+    "summary": "Historische Methodenregister-Fassung. Für die aktuelle Regel-, Benchmark- und Prüfstatuslogik gilt WÖk Master Items v1.3.",
     "audience": [
       "Methodik",
       "Wissenschaft",
@@ -1518,13 +1518,39 @@
       "/glossar.html",
       "/begriffe/woek-id/"
     ],
-    "isArchive": false,
+    "isArchive": true,
     "isPublic": true,
     "sourceFormat": "internal",
     "publicFormats": [
       "online",
       "pdf"
     ],
+    "allowPublicDocx": false
+  },
+  {
+    "id": "woek-master-items-v1-3",
+    "slug": "woek-master-items-v1-3",
+    "title": "WÖk Master Items v1.3",
+    "type": "Methodenregister",
+    "category": ["Daten", "Indikatoren", "Methodik"],
+    "status": "current",
+    "stand": "2026-08-13",
+    "summary": "Geprüftes Arbeits- und Governance-Register mit 621 WÖk-IDs, 28 Scoring-Regeln, getrenntem Benchmarkstatus und Prüfprotokoll.",
+    "audience": ["Methodik", "Wissenschaft", "Verwaltung", "Akademie"],
+    "keyPoints": ["Leere Eingaben bleiben unbewertet.", "Aktive Benchmarks sind von historischen Berechnungswerten getrennt.", "Datenqualität, Assurance, Systemgrenze und Prüfstatus bleiben nachvollziehbar."],
+    "onlineUrl": "/bibliothek/woek-master-items-register/",
+    "sourceOnlineUrl": "/dokumente/woek-master-items-v1-3/",
+    "xlsxUrl": "/assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx",
+    "pdfUrl": null,
+    "docxUrl": null,
+    "relatedTerms": ["woek-id", "scorecard", "wirkungsdatenraum"],
+    "relatedFields": ["/wirkungsfelder/wissenschaft-innovation-digitalisierung/"],
+    "relatedTools": ["/werkzeuge/impact-controlling/"],
+    "relatedPages": ["/glossar.html", "/begriffe/woek-id/", "/woek-id-register/"],
+    "isArchive": false,
+    "isPublic": true,
+    "sourceFormat": "xlsx",
+    "publicFormats": ["online", "xlsx"],
     "allowPublicDocx": false
   },
   {

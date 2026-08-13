@@ -1,583 +1,192 @@
 #!/usr/bin/env python3
+"""Build the public explorer from the reviewed WÖk Master Items v1.3 workbook."""
 from __future__ import annotations
 
-import csv
 import hashlib
 import html
 import json
-import shutil
 from datetime import datetime, timezone
 from pathlib import Path
 
 from openpyxl import load_workbook
 
 ROOT = Path(__file__).resolve().parents[2]
-VERSION = "v2.1"
-
-CONTENT_DIR = ROOT / "content" / "woek-register"
+VERSION = "v1.3"
 DOWNLOAD_DIR = ROOT / "assets" / "downloads" / "woek-register"
-SOURCE_XLSX_LOCAL = Path("WOeK_Master_Items_Public_Research_Register_v2.1.xlsx")
-SOURCE_XLSX_PUBLIC = DOWNLOAD_DIR / "WOeK_Master_Items_Public_Research_Register_v2.1.xlsx"
+SOURCE_XLSX = DOWNLOAD_DIR / "WOeK_Master_Items_v1.3_geprueft.xlsx"
+CONTENT_DIR = ROOT / "content" / "woek-register"
 DATA_PATH = ROOT / "assets" / "data" / "woek-id-register.json"
-OVERVIEW_DIR = ROOT / "register"
 REGISTER_DIR = ROOT / "woek-id-register"
+OVERVIEW_DIR = ROOT / "register"
 LEGACY_TOOL_DIR = ROOT / "werkzeuge" / "woek-id-register"
-OLD_PUBLIC_XLSX = DOWNLOAD_DIR / "WOeK_Master_Items_Public_Research_Register_v2.0.xlsx"
-OLD_DUPLICATE_PUBLIC_XLSX = DOWNLOAD_DIR / "WOeK_Master_Items_Public_Research_Register_v2.1 2.xlsx"
-NON_PUBLIC_EXPORTS = [
-    DOWNLOAD_DIR / "items-v2.1.json",
-    DOWNLOAD_DIR / "sources-v2.1.json",
-    DOWNLOAD_DIR / "methods-v2.1.json",
-    DOWNLOAD_DIR / "changelog-v2.1.json",
-    DOWNLOAD_DIR / "items-v2.1.csv",
-    DOWNLOAD_DIR / "items.json",
-    DOWNLOAD_DIR / "sources.json",
-    DOWNLOAD_DIR / "methods.json",
-    DOWNLOAD_DIR / "data-quality.json",
-    DOWNLOAD_DIR / "changelog.json",
-    DOWNLOAD_DIR / "items.csv",
-]
+HEADER_ROW = 4
 
 
-def source_xlsx() -> Path:
-    if SOURCE_XLSX_LOCAL.exists():
-        return SOURCE_XLSX_LOCAL
-    return SOURCE_XLSX_PUBLIC
-
-
-def public_text(value: object) -> object:
-    if isinstance(value, str):
-        return value.replace("—", "-")
-    return value
-
-
-def sanitize_public_payload(value: object) -> object:
-    if isinstance(value, dict):
-        return {key: sanitize_public_payload(item) for key, item in value.items()}
-    if isinstance(value, list):
-        return [sanitize_public_payload(item) for item in value]
-    return public_text(value)
+def digest(path: Path) -> str:
+    hasher = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            hasher.update(chunk)
+    return hasher.hexdigest()
 
 
 def esc(value: object) -> str:
-    return html.escape("" if value is None else str(public_text(value)), quote=True)
+    return html.escape("" if value is None else str(value).replace("—", "-"), quote=True)
 
 
 def slugify(value: object) -> str:
     text = str(value or "").strip().lower()
-    for old, new in {"ä": "ae", "ö": "oe", "ü": "ue", "ß": "ss", "–": "-", "-": "-", "‑": "-"}.items():
-        text = text.replace(old, new)
-    return "-".join("".join(char if char.isalnum() else "-" for char in text).split("-"))
+    for source, target in {"ä": "ae", "ö": "oe", "ü": "ue", "ß": "ss", "–": "-", "‑": "-"}.items():
+        text = text.replace(source, target)
+    chunks = "".join(char if char.isalnum() else "-" for char in text).split("-")
+    return "-".join(chunk for chunk in chunks if chunk)
 
 
-def digest(path: Path) -> str:
-    h = hashlib.sha256()
-    with path.open("rb") as handle:
-        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
-            h.update(chunk)
-    return h.hexdigest()
-
-
-def read_sheet(workbook, sheet_name: str) -> list[dict[str, object]]:
-    rows = [row for row in workbook[sheet_name].iter_rows(values_only=True) if any(cell not in (None, "") for cell in row)]
-    if not rows:
-        return []
-    headers = [str(cell or "").strip() for cell in rows[0]]
-    records = []
-    for row in rows[1:]:
-        record = {}
-        for index, header in enumerate(headers):
-            if not header:
-                continue
-            value = row[index] if index < len(row) else ""
-            if hasattr(value, "isoformat"):
-                value = value.isoformat()
-            record[header] = "" if value is None else value
-        if any(value not in ("", None) for value in record.values()):
-            records.append(record)
-    return records
-
-
-def split_multi(value: object) -> list[str]:
-    text = str(value or "").replace("\n", ";")
-    return [part.strip() for part in text.split(";") if part.strip()]
-
-
-def normalize_number(value: object):
-    if value in ("", None):
-        return ""
-    try:
-        return float(value)
-    except (TypeError, ValueError):
-        return value
-
-
-def is_truthy(value: object) -> bool:
-    return str(value or "").strip().lower() in {"true", "ja", "yes", "1", "red line", "red_line"}
-
-
-def status_badges(item: dict[str, object]) -> list[str]:
-    badges = ["public research", "not official"]
-    readiness = str(item.get("publication_readiness", "")).lower()
-    specificity = str(item.get("source_specificity", "")).lower()
-    scoring = str(item.get("scoring_mode", "")).lower()
-    benchmark_status = str(item.get("benchmark_status", "")).lower()
-    if item.get("thresholds") or "numeric" in scoring:
-        badges.append("formula-ready")
-    if "synthetic" in benchmark_status or "benchmark" in scoring:
-        badges.append("benchmark calibration required")
-    if "qualitative" in scoring or "review" in readiness:
-        badges.append("qualitative review required")
-    if is_truthy(item.get("non_compensation_red_line")):
-        badges.append("red line")
-    if item.get("source_ids"):
-        badges.append("source mapped")
-    if "exakte" in specificity or "exact" in specificity or "missing" in specificity:
-        badges.append("exact disclosure missing")
-    return list(dict.fromkeys(badges))
-
-
-def normalize_items(raw_items, benchmarks, calculator):
-    items = []
-    for row in raw_items:
-        wok_id = str(row.get("WOK_ID") or "").strip()
-        if not wok_id:
+def records(workbook, name: str) -> list[dict[str, object]]:
+    sheet = workbook[name]
+    headers = [str(cell.value or "").strip() for cell in sheet[HEADER_ROW]]
+    result: list[dict[str, object]] = []
+    for row in sheet.iter_rows(min_row=HEADER_ROW + 1, values_only=True):
+        if not any(value not in (None, "") for value in row):
             continue
-        benchmark = benchmarks.get(wok_id, {})
-        calc = calculator.get(wok_id, {})
+        record = {headers[i]: value for i, value in enumerate(row) if i < len(headers) and headers[i]}
+        if any(value not in (None, "") for value in record.values()):
+            result.append(record)
+    return result
+
+
+def multi(value: object) -> list[str]:
+    return [part.strip() for part in str(value or "").replace("\n", ";").split(";") if part.strip()]
+
+
+def mpd_dimension(sdg: object) -> str:
+    value = str(sdg or "").lower()
+    if any(token in value for token in ["sdg 16", "sdg 17", "demokratie", "rechtsstaat", "governance"]):
+        return "Demokratie"
+    if any(token in value for token in ["sdg 6", "sdg 7", "sdg 12", "sdg 13", "sdg 14", "sdg 15", "klima", "biodivers", "wasser"]):
+        return "Planet"
+    if any(token in value for token in ["sdg 1", "sdg 2", "sdg 3", "sdg 4", "sdg 5", "sdg 8", "sdg 10", "gesund", "arbeit", "armut", "bildung"]):
+        return "Mensch"
+    return "Nicht zugeordnet"
+
+
+def normalize(items_raw, benchmarks_raw, rules_raw, sources_raw):
+    benchmarks = {str(row.get("WOK_ID") or ""): row for row in benchmarks_raw}
+    rules = {str(row.get("Rule_ID") or ""): row for row in rules_raw}
+    source_map = {str(row.get("Source_ID") or ""): row for row in sources_raw}
+    result = []
+    for row in items_raw:
+        identifier = str(row.get("WOK_ID") or "").strip()
+        if not identifier:
+            continue
+        rule = rules.get(str(row.get("Rule_ID") or ""), {})
+        benchmark = benchmarks.get(identifier, {})
         item = {
-            "id": wok_id,
-            "slug": slugify(wok_id),
-            "category": row.get("Category", ""),
-            "mpd_dimension": row.get("MPD_Dimension", ""),
-            "core_field": row.get("Core_Field", ""),
+            "id": identifier, "slug": slugify(identifier),
             "sdg_or_sdgplus": row.get("SDG_or_SDGplus", ""),
             "target": row.get("Target/Unterziel", ""),
             "indicator_family": row.get("Indikatorfamilie", ""),
-            "item": row.get("Item", ""),
-            "definition": row.get("Definition/Messgröße", ""),
-            "unit": row.get("Einheit", ""),
-            "polarity": row.get("Polarity", ""),
-            "archetype": row.get("Archetype", ""),
-            "scoring_mode": row.get("Scoring_Mode", ""),
-            "source_detail_original": row.get("Source_Detail_Original", ""),
-            "source_ids": split_multi(row.get("Source_IDs", "")),
-            "source_urls": split_multi(row.get("Source_URLs", "")),
-            "source_specificity": row.get("Source_Specificity", ""),
-            "measurement_type": row.get("Measurement_Type", ""),
-            "numerator_denominator": row.get("Numerator_Denominator", ""),
-            "calculation_original": row.get("Berechnungslogik_Original", ""),
-            "calculation_formula_plain": row.get("Calculation_Formula_Plain", ""),
-            "thresholds": row.get("Thresholds_WUStG_Classes", ""),
-            "bm": normalize_number(row.get("BM", "")),
-            "bm_150pct": normalize_number(row.get("BM_150pct", "")),
-            "bm_250pct": normalize_number(row.get("BM_250pct", "")),
-            "benchmark_source": row.get("Benchmark_Source", ""),
-            "benchmark_status": row.get("Benchmark_Status", ""),
-            "nace_examples": row.get("NACE_Beispiele", ""),
-            "non_compensation_red_line": row.get("NonCompensation_RedLine", ""),
-            "assurance_level_required": row.get("Assurance_Level_Required", ""),
-            "data_quality_minimum": row.get("Data_Quality_Minimum", ""),
-            "update_cadence": row.get("Update_Cadence", ""),
-            "publication_readiness": row.get("Publication_Readiness", ""),
-            "editorial_note": row.get("Editorial_Note", ""),
-            "benchmark": benchmark,
-            "scorecard": {
-                key: normalize_number(calc.get(key, ""))
-                for key in ["B1", "B2", "B3", "B4", "B5", "B6", "S1", "S2", "S3", "S4", "S5", "S6", "BM", "BM_150pct", "BM_250pct"]
-            },
+            "item": row.get("Item", ""), "definition": row.get("Definition/Messgröße", ""),
+            "unit": row.get("Einheit", ""), "polarity": row.get("Polarity", ""),
+            "rule_id": row.get("Rule_ID", ""), "archetype": row.get("Rule_ID", ""),
+            "scoring_mode": rule.get("Regeltyp", ""), "input_mode": rule.get("Eingabemodus", ""),
+            "thresholds": row.get("Schwellen (WÖk-Klassen)", ""),
+            "threshold_status": row.get("Schwellenstatus", ""),
+            "threshold_basis": row.get("Grenzwertbasis", ""),
+            "benchmark_requirement": row.get("Benchmarkbedarf", ""),
+            "benchmark_status": benchmark.get("Active_Status", ""),
+            "active_benchmark": {key: benchmark.get(key, "") for key in ["Active_BM_Best", "Active_BM_Neutral", "Active_BM_Warn", "Active_BM_Critical", "Active_Source_ID", "Gültig_ab"]},
+            "source_ids": multi(row.get("Source_IDs", "")),
+            "source_status": row.get("Quellenstatus", ""),
+            "source_detail": row.get("Quelle_detail", ""),
+            "calculation": row.get("Berechnungslogik", ""),
+            "system_boundary": row.get("Systemgrenze", ""),
+            "data_quality_minimum": row.get("Datenqualitätsanforderung", ""),
+            "assurance_level_required": row.get("Assurance_Anforderung", ""),
+            "publication_readiness": row.get("Fachlogik_Status", ""),
+            "audit_priority": row.get("Prüfpriorität", ""), "editorial_note": row.get("Prüfhinweis", ""),
+            "valid_from": row.get("Gültig_ab", ""), "valid_to": row.get("Gültig_bis", ""),
+            "mpd_dimension": mpd_dimension(row.get("SDG_or_SDGplus", "")),
+            "core_field": "WÖk-ID-Register",
         }
-        item["badges"] = status_badges(item)
-        items.append(item)
-    return items
+        badges = ["geprüft v1.3"]
+        if str(item["benchmark_requirement"]).lower() == "ja" and "aktiv" not in str(item["benchmark_status"]).lower():
+            badges.append("validierter Benchmark offen")
+        if "qual" in str(item["scoring_mode"]).lower() or "hybrid" in str(item["scoring_mode"]).lower():
+            badges.append("Fachprüfung erforderlich")
+        if item["source_ids"]:
+            badges.append("Quelle zugeordnet")
+        item["badges"] = badges
+        item["sources"] = [{"id": source_id, "name": source_map.get(source_id, {}).get("Organisation", source_id), "title": source_map.get(source_id, {}).get("Titel/Standard", ""), "url": source_map.get(source_id, {}).get("URL", "")} for source_id in item["source_ids"]]
+        result.append(item)
+    return result
 
 
-def normalize_sources(raw_sources, items):
-    usage = {}
-    for item in items:
-        for source_id in item["source_ids"]:
-            usage.setdefault(source_id, []).append(item["id"])
-    return [{
-        "id": row.get("Source_ID", ""),
-        "name": row.get("Source_Name", ""),
-        "type": row.get("Source_Type", ""),
-        "scope": row.get("Scope", ""),
-        "url": row.get("Official_URL", ""),
-        "access_type": row.get("Access_Type", ""),
-        "update_cadence": row.get("Update_Cadence", ""),
-        "used_for": row.get("Used_For", ""),
-        "used_by_count": len(usage.get(str(row.get("Source_ID", "")), [])),
-        "used_by_sample": usage.get(str(row.get("Source_ID", "")), [])[:16],
-    } for row in raw_sources if row.get("Source_ID")]
-
-
-def normalize_methods(raw_methods):
-    methods = []
-    for row in raw_methods:
-        archetype = row.get("Archetype", "")
-        if not archetype:
-            continue
-        methods.append({
-            "id": archetype,
-            "archetype": archetype,
-            "use_case": row.get("Use_case", ""),
-            "polarity": row.get("Polarity", ""),
-            "thresholds": {key: normalize_number(row.get(key, "")) for key in ["B1", "B2", "B3", "B4", "B5", "B6", "S1", "S2", "S3", "S4", "S5", "S6"]},
-            "calculation_rule": row.get("Calculation_Rule", ""),
-            "notes": row.get("Notes", ""),
-        })
-    return methods
-
-
-def write_json(path: Path, payload: object):
+def write_json(path: Path, payload: object) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(sanitize_public_payload(payload), ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2, default=str) + "\n", encoding="utf-8")
 
 
-def write_csv(path: Path, items: list[dict[str, object]]):
-    fields = [
-        "id", "category", "mpd_dimension", "core_field", "sdg_or_sdgplus", "target",
-        "indicator_family", "item", "definition", "unit", "polarity", "archetype",
-        "scoring_mode", "source_ids", "measurement_type", "numerator_denominator",
-        "calculation_formula_plain", "thresholds", "bm", "bm_150pct", "bm_250pct",
-        "non_compensation_red_line", "assurance_level_required", "data_quality_minimum",
-        "publication_readiness", "badges",
-    ]
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("w", encoding="utf-8", newline="") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fields)
-        writer.writeheader()
-        for item in items:
-            row = {field: public_text(item.get(field, "")) for field in fields}
-            row["source_ids"] = "; ".join(item.get("source_ids", []))
-            row["badges"] = "; ".join(item.get("badges", []))
-            writer.writerow(row)
+def layout(title: str, description: str, body: str, prefix: str) -> str:
+    return f'''<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>{esc(title)}</title><meta name="description" content="{esc(description)}"><link rel="stylesheet" href="{prefix}assets/css/style.css"><link rel="canonical" href="https://wirkungsoekonomie.de/woek-id-register/"></head><body><header class="site-header"><a class="brand" href="{prefix}index.html"><span class="brand-name">Wirkungsökonomie</span></a><nav class="site-nav"><a href="{prefix}index.html">Start</a><a href="{prefix}begriffe/">Begriffe</a><a href="{prefix}downloads.html">Bibliothek</a><a href="{prefix}suche.html">Suche</a></nav></header><main data-pagefind-body>{body}</main><script src="{prefix}assets/js/main.js"></script></body></html>'''
 
 
-def layout(title: str, description: str, body: str, prefix: str = "../") -> str:
-    return f"""<!doctype html>
-<html lang="de">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{esc(title)}</title>
-    <meta name="description" content="{esc(description)}">
-    <meta name="search_title" content="{esc(title)}">
-    <meta name="search_description" content="{esc(description)}">
-    <meta name="search_section" content="Register">
-    <meta name="search_type" content="WÖk-ID Register">
-    <link rel="canonical" href="https://wirkungsoekonomie.de/{'' if prefix == '../' else 'woek-id-register/'}">
-    <link rel="icon" href="{prefix}assets/img/brand/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="{prefix}assets/css/style.css?v=20260612-mobile-table-fix">
-  </head>
-  <body>
-    <header class="site-header" data-search-exclude>
-      <a class="brand" href="{prefix}index.html" aria-label="Wirkungsökonomie Startseite">
-        <span class="brand-mark"><img src="{prefix}assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span>
-        <span class="brand-name">Wirkungsökonomie</span>
-      </a>
-      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav"><span class="nav-toggle-icon" aria-hidden="true">☰</span><span class="sr-only">Menü</span></button>
-      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation" data-search-exclude>
-        <a href="{prefix}index.html">Start</a>
-        <a href="{prefix}verstehen.html">Verstehen</a>
-        <a href="{prefix}wirkungsfelder/">Wirkungsfelder</a>
-        <a href="{prefix}werkzeuge/">Methoden &amp; Werkzeuge</a>
-        <a href="{prefix}erleben/">Erleben</a>
-        <a href="{prefix}downloads.html">Bibliothek</a>
-        <a href="{prefix}suche.html">Suche</a>
-      </nav>
-    </header>
-    <main data-pagefind-body>{body}</main>
-    <script src="{prefix}assets/js/main.js"></script>
-  </body>
-</html>
-"""
+def overview_page(items: list[dict[str, object]]) -> str:
+    body = f'''<section class="hero portal-hero"><div class="hero-content"><nav class="breadcrumb"><a href="../index.html">Start</a> / Register</nav><p class="hero-kicker">Geprüftes Arbeitsmodell {VERSION}</p><h1>WÖk-ID Register</h1><p class="hero-subtitle">Öffentliches Register der WÖk-Messgrößen, Regeln, Benchmarkstatus und Prüfpfade.</p><p>Das Register dokumentiert {len(items)} WÖk-IDs. Es macht Messlogik, Systemgrenzen, Quellen, Datenqualität und Assurance sichtbar, ohne aus fehlenden Daten automatische Bewertungen abzuleiten.</p><p class="callout warning">Arbeits- und Governance-Modell, keine Rechtsnorm und keine automatische Steuerungs-, Förder-, Kredit- oder Personenentscheidung.</p><div class="hero-actions"><a class="btn btn-primary" href="../woek-id-register/">Register durchsuchen</a><a class="btn btn-secondary" href="../bibliothek/woek-master-items-register/">v1.3 herunterladen</a></div></div></section>'''
+    return layout("WÖk-ID Register", "Geprüftes WÖk-ID Register v1.3.", body, "../")
 
 
-def badge_html(badges: list[str]) -> str:
-    return "".join(f'<span class="status-badge status-badge--{slugify(badge)}">{esc(badge)}</span>' for badge in badges)
+def register_page(items, sources, rules, audit, changelog, source_hash) -> str:
+    embedded = json.dumps({"items": items}, ensure_ascii=False, default=str).replace("<", "\\u003c")
+    body = f'''<section class="hero compact-hero"><nav class="breadcrumb"><a href="../index.html">Start</a> / <a href="../register/">Register</a></nav><p class="hero-kicker">Geprüftes Arbeitsmodell {VERSION}</p><h1>WÖk-ID Register Explorer</h1><p class="hero-subtitle">{len(items)} WÖk-IDs mit Regelzuordnung, Quellen, Systemgrenze, Datenqualität und Prüfstatus.</p><p class="callout warning">Leere Messwerte bleiben unbewertet. Aktive Benchmarkwerte werden nur dort ausgewiesen, wo sie validiert sind. Diese Ansicht berechnet keine automatische Entscheidung.</p></section><section class="section"><div class="section-header"><h2>Register durchsuchen</h2><p>Filtert nach Begriffen, SDG-/SDG+-Bezug, Regel und Status.</p></div><form class="woek-register-filters" data-search-exclude><label>Suche<input id="woekSearch" type="search" placeholder="WOK-S-101, Wasser, ESRS"></label><label>Dimension<select id="filterMpd"><option value="">Alle</option><option>Mensch</option><option>Planet</option><option>Demokratie</option><option>Nicht zugeordnet</option></select></label><label>Regel<select id="filterRule"><option value="">Alle</option>{''.join(f'<option>{esc(rule["Rule_ID"])}</option>' for rule in rules if rule.get("Rule_ID"))}</select></label><label>Prüfstatus<select id="filterStatus"><option value="">Alle</option>{''.join(f'<option>{esc(status)}</option>' for status in sorted({str(item["publication_readiness"]) for item in items if item["publication_readiness"]}))}</select></label></form><p class="text-note" id="registerCount"></p><div class="table-wrap"><table class="data-table"><thead><tr><th>WÖk-ID</th><th>Item</th><th>SDG/SDG+</th><th>Dimension</th><th>Regel</th><th>Prüfstatus</th><th>Details</th></tr></thead><tbody id="registerRows"></tbody></table></div></section><section class="section"><div class="card-grid three"><article class="card"><h2 class="card-title">XLSX v1.3</h2><p>Führende geprüfte Arbeits- und Governance-Fassung.</p><a class="text-link" href="../assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx">XLSX herunterladen</a></article><article class="card"><h2 class="card-title">Prüfprotokoll</h2><p>{len(audit)} dokumentierte Prüf- und Korrekturpunkte.</p><a class="text-link" href="methodik/">Methodik und Einordnung</a></article><article class="card"><h2 class="card-title">Versionierung</h2><p>{len(changelog)} nachvollziehbare Änderungen; v1.2 bleibt archiviert.</p><a class="text-link" href="../dokumente/woek-master-items-final-v1-2/">Historische v1.2</a></article></div></section><script id="woekRegisterData" type="application/json">{embedded}</script><script>const data=JSON.parse(document.getElementById('woekRegisterData').textContent),items=data.items,$=id=>document.getElementById(id),safe=v=>String(v??'').replace(/[&<>"']/g,c=>({{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}}[c]));function render(){{const q=$('woekSearch').value.toLowerCase().trim(),mpd=$('filterMpd').value,rule=$('filterRule').value,status=$('filterStatus').value,rows=items.filter(i=>(!q||[i.id,i.item,i.definition,i.sdg_or_sdgplus,i.indicator_family].join(' ').toLowerCase().includes(q))&&(!mpd||i.mpd_dimension===mpd)&&(!rule||i.rule_id===rule)&&(!status||i.publication_readiness===status));$('registerCount').textContent=`${{rows.length}} von ${{items.length}} WÖk-IDs sichtbar`;$('registerRows').innerHTML=rows.slice(0,250).map(i=>`<tr><td><strong>${{safe(i.id)}}</strong></td><td>${{safe(i.item)}}</td><td>${{safe(i.sdg_or_sdgplus)}}</td><td>${{safe(i.mpd_dimension)}}</td><td>${{safe(i.rule_id)}}</td><td>${{safe(i.publication_readiness)}}</td><td><a class="btn btn-secondary table-action" href="${{safe(i.slug)}}/">Details</a></td></tr>`).join('')+(rows.length>250?'<tr><td colspan="7">Bitte die Filter weiter eingrenzen.</td></tr>':'');}}document.querySelectorAll('.woek-register-filters input,.woek-register-filters select').forEach(e=>e.addEventListener('input',render));render();</script>'''
+    return layout("WÖk-ID Register Explorer", "WÖk-ID Register v1.3 mit geprüfter Regel-, Benchmark- und Prüfstatuslogik.", body, "../")
 
 
-def overview_page(items):
-    body = f"""
-      <section class="hero portal-hero woek-register-hero">
-        <div class="hero-content">
-          <nav class="breadcrumb"><a href="../index.html">Start</a> / Register</nav>
-          <p class="hero-kicker">Public Research Draft · {VERSION}</p>
-          <h1>WÖk-ID Register</h1>
-          <p class="hero-subtitle">Öffentliches Forschungs- und Operationalisierungsregister der Wirkungsökonomie.</p>
-          <p>Eine WÖk-ID ist eine eindeutige Kennung für eine Wirkungs-Messgröße. Sie verbindet Zielbezug, Messlogik, Einheit, Quellen, Datenqualität, Benchmark, Prüfpfad und Schutzlinien.</p>
-          <p>Das Register zeigt, dass die Wirkungsökonomie operationalisierbar, prüfbar, versionierbar und kritisierbar ist. Es macht sichtbar, wo Formeln bereits verwendbar sind, wo Benchmarks kalibriert werden müssen und wo qualitative oder wissenschaftliche Prüfung nötig bleibt.</p>
-          <p class="callout warning">Forschungs-/Pilotregister, nicht amtlich, keine Rechts-, Steuer-, Anlage-, Kredit-, Förder- oder Versicherungsberatung.</p>
-          <div class="hero-actions no-print"><a class="btn btn-primary" href="../woek-id-register/">Register durchsuchen</a><a class="btn btn-secondary" href="../woek-id-register/methodik/">Methodik verstehen</a></div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="feature-grid">
-          <article class="card"><p class="card-kicker">Registerumfang</p><h2 class="card-title">{len(items)} WÖk-IDs</h2><p class="card-text">Jede Zeile ist als Public Research Draft gekennzeichnet und enthält Quellen- und Berechnungsansicht.</p></article>
-          <article class="card"><p class="card-kicker">Operationalisierung</p><h2 class="card-title">Daten → Score → Rückkopplung</h2><p class="card-text">Messwerte werden über transparente Schwellen, Benchmarks, rote Linien und Datenqualität eingeordnet.</p></article>
-          <article class="card"><p class="card-kicker">Kritikfähigkeit</p><h2 class="card-title">Review offen</h2><p class="card-text">Quellen, Benchmarks und Formeln können fachlich ergänzt, korrigiert und versioniert werden.</p></article>
-        </div>
-      </section>"""
-    return layout("WÖk-ID Register – Public Research Explorer", "Öffentlicher Forschungs-Explorer mit WÖk-IDs, Quellen, Benchmarks, Berechnungslogik und Schutzlinien.", body, "../")
+def detail_page(item: dict[str, object]) -> str:
+    source_rows = "".join(f'<li><strong>{esc(source["id"])}:</strong> {esc(source["name"])}{(" - <a href=\"" + esc(source["url"]) + "\">Quelle</a>") if source.get("url") else ""}</li>' for source in item["sources"]) or "<li>Keine Quelle hinterlegt.</li>"
+    body = f'''<section class="hero compact-hero"><nav class="breadcrumb"><a href="../../register/">Register</a> / <a href="../">WÖk-ID Register</a> / {esc(item["id"])}</nav><p class="hero-kicker">WÖk-ID {VERSION}</p><h1>{esc(item["id"])}: {esc(item["item"])}</h1><p class="hero-subtitle">{esc(item["definition"])}</p><p class="callout warning">Arbeits- und Governance-Modell. Ein leerer Messwert erzeugt keinen Score; qualitative oder hybride Fälle benötigen den dokumentierten Prüfpfad.</p></section><section class="section document-detail-grid"><article class="document-detail-main"><h2>Einordnung</h2><p>{esc(item["sdg_or_sdgplus"])} · {esc(item["target"])} · {esc(item["mpd_dimension"])}</p><h2>Messgröße und Einheit</h2><p>{esc(item["definition"])} · {esc(item["unit"])}</p><h2>Regel und Schwellen</h2><p>{esc(item["rule_id"])} · {esc(item["scoring_mode"])}<br>{esc(item["thresholds"])}<br>Status: {esc(item["threshold_status"])}</p><h2>Benchmarkstatus</h2><p>{esc(item["benchmark_requirement"])} · {esc(item["benchmark_status"])}. Historische Berechnungswerte sind von aktiven validierten Benchmarks getrennt.</p><h2>Systemgrenze und Berechnungslogik</h2><p>{esc(item["system_boundary"])}</p><p>{esc(item["calculation"])}</p><h2>Quellen</h2><ul>{source_rows}</ul></article><aside class="document-detail-aside"><dl><dt>Datenqualität</dt><dd>{esc(item["data_quality_minimum"])}</dd><dt>Assurance</dt><dd>{esc(item["assurance_level_required"])}</dd><dt>Fachlogik</dt><dd>{esc(item["publication_readiness"])}</dd><dt>Prüfpriorität</dt><dd>{esc(item["audit_priority"])}</dd><dt>Prüfhinweis</dt><dd>{esc(item["editorial_note"])}</dd></dl></aside></section>'''
+    return layout(f'{item["id"]} | WÖk-ID Register', f'Detailseite zur WÖk-ID {item["id"]}.', body, "../../")
 
 
-def register_page(items, sources, methods, data_quality, changelog, source_hash):
-    payload = {
-        "meta": {"version": VERSION, "item_count": len(items), "source_hash_sha256": source_hash, "generated_at": datetime.now(timezone.utc).isoformat()},
-        "items": items,
-        "sources": sources,
-        "methods": methods,
-        "data_quality": data_quality,
-        "changelog": changelog,
-    }
-    embedded = json.dumps(payload, ensure_ascii=False).replace("<", "\\u003c")
-    def opts(values, label):
-        unique = sorted({str(v).strip() for v in values if str(v or "").strip()})
-        return f'<option value="">{esc(label)}</option>' + "".join(f'<option value="{esc(v)}">{esc(v)}</option>' for v in unique)
-
-    body = f"""
-      <section class="hero compact-hero woek-register-hero">
-        <nav class="breadcrumb"><a href="../index.html">Start</a> / <a href="../register/">Register</a></nav>
-        <p class="hero-kicker">Public Research Draft · {VERSION}</p>
-        <h1>WÖk-ID Register Explorer</h1>
-        <p class="hero-subtitle">Filterbares Forschungsregister mit {len(items)} WÖk-IDs, Quellen, Formeln, Benchmarks und Prüfstatus.</p>
-        <div class="document-card-badges">{badge_html(["public research", "not official"])}</div>
-        <p class="callout warning">Demo- und Forschungsumgebung. Nicht amtlich. Keine automatische Bewertung, keine Steuerentscheidung und keine Beratung.</p>
-      </section>
-      <section class="section" id="register-table">
-        <div class="section-header"><p class="hero-kicker">Durchsuchen</p><h2>Register durchsuchen</h2><p>Jede Zeile führt zu einer eigenen Detailseite mit Quellen- und Berechnungsansicht.</p></div>
-        <form class="woek-register-filters" data-search-exclude>
-          <label>WÖk-ID / Suche<input id="woekSearch" type="search" placeholder="WOK-S-101, Living Wage, ESRS"></label>
-          <label>SDG / SDG+<select id="filterSdg">{opts([i["sdg_or_sdgplus"] for i in items], "Alle")}</select></label>
-          <label>Mensch / Planet / Demokratie<select id="filterMpd">{opts([i["mpd_dimension"] for i in items], "Alle")}</select></label>
-          <label>Core Field<select id="filterCore">{opts([i["core_field"] for i in items], "Alle")}</select></label>
-          <label>Indikatorfamilie<select id="filterFamily">{opts([i["indicator_family"] for i in items], "Alle")}</select></label>
-          <label>Archetype<select id="filterArchetype">{opts([i["archetype"] for i in items], "Alle")}</select></label>
-          <label>Scoring Mode<select id="filterScoring">{opts([i["scoring_mode"] for i in items], "Alle")}</select></label>
-          <label>Source<select id="filterSource">{opts([s["id"] for s in sources], "Alle")}</select></label>
-          <label>NonCompensation_RedLine<select id="filterRedLine">{opts([i["non_compensation_red_line"] for i in items], "Alle")}</select></label>
-          <label>Publication_Readiness<select id="filterReadiness">{opts([i["publication_readiness"] for i in items], "Alle")}</select></label>
-        </form>
-        <p class="text-note" id="registerCount" data-search-exclude></p>
-        <div class="table-wrap woek-register-table-wrap" data-search-exclude><table class="data-table woek-register-table"><thead><tr><th>WÖk-ID</th><th>Item</th><th>SDG/SDG+</th><th>MPD</th><th>Core Field</th><th>Archetype</th><th>Scoring</th><th>Status</th><th>Details</th></tr></thead><tbody id="registerRows"></tbody></table></div>
-      </section>
-      <section class="section" id="score-demo">
-        <div class="card woek-score-demo">
-          <p class="hero-kicker">Score-Demo</p><h2>Modellhafte Score-Berechnung</h2>
-          <p class="callout warning">Demo, nicht amtlich. Keine Steuer-, Rechts-, Anlage-, Kredit-, Förder- oder Versicherungsberatung. Keine Personenbewertung.</p>
-          <div class="woek-demo-grid"><label>WÖk-ID<select id="demoItem"></select></label><label>Messwert<input id="demoValue" type="number" step="any"></label><button class="btn btn-primary" type="button" id="demoCalculate">Demo berechnen</button></div>
-          <div id="demoResult" class="woek-demo-result" aria-live="polite">Noch keine Berechnung.</div>
-        </div>
-      </section>
-      <section class="section" id="downloads"><div class="section-header"><p class="hero-kicker">Downloads</p><h2>Öffentliche Registerversion {VERSION}</h2></div><div class="card-grid three">
-        <article class="card"><h3 class="card-title">XLSX</h3><a class="text-link" href="../assets/downloads/woek-register/WOeK_Master_Items_Public_Research_Register_v2.1.xlsx">XLSX herunterladen</a></article>
-        <article class="card"><h3 class="card-title">Methodik</h3><a class="text-link" href="../woek-id-register/methodik/">Methodik online lesen</a></article>
-        <article class="card"><h3 class="card-title">Quellen</h3><a class="text-link" href="../woek-id-register/quellen/">Quellen online lesen</a></article>
-      </div></section>
-      <section class="section"><div class="card"><p class="hero-kicker">Feedback</p><h2>Review beitragen</h2><p>Quelle vorschlagen, Benchmark vorschlagen, Fehler melden oder Fachreview beitragen. Bitte keine personenbezogenen Daten senden.</p><a class="btn btn-secondary" href="mailto:kontakt@wirkungsoekonomie.de?subject=Feedback%20zum%20WOEK-ID-Register%20v2.1&body=Bitte%20W%C3%96k-ID%2C%20Quelle%2C%20Benchmark%20oder%20Fehlerhinweis%20eintragen.%20Bitte%20keine%20personenbezogenen%20Daten%20senden.">Fehler / Ergänzung melden</a></div></section>
-      <script id="woekRegisterData" type="application/json">{embedded}</script>
-      <script>
-const data = JSON.parse(document.getElementById("woekRegisterData").textContent);
-const items = data.items;
-const $ = (id) => document.getElementById(id);
-const safe = (v) => String(v ?? "").replace(/[&<>"']/g, c => ({{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}}[c]));
-const val = (id) => $(id).value;
-function match(item) {{
-  const q = val("woekSearch").toLowerCase().trim();
-  if (q && ![item.id,item.item,item.definition,item.source_ids.join(" "),item.core_field,item.indicator_family].join(" ").toLowerCase().includes(q)) return false;
-  if (val("filterSdg") && item.sdg_or_sdgplus !== val("filterSdg")) return false;
-  if (val("filterMpd") && item.mpd_dimension !== val("filterMpd")) return false;
-  if (val("filterCore") && item.core_field !== val("filterCore")) return false;
-  if (val("filterFamily") && item.indicator_family !== val("filterFamily")) return false;
-  if (val("filterArchetype") && item.archetype !== val("filterArchetype")) return false;
-  if (val("filterScoring") && item.scoring_mode !== val("filterScoring")) return false;
-  if (val("filterSource") && !item.source_ids.includes(val("filterSource"))) return false;
-  if (val("filterRedLine") && String(item.non_compensation_red_line) !== val("filterRedLine")) return false;
-  if (val("filterReadiness") && item.publication_readiness !== val("filterReadiness")) return false;
-  return true;
-}}
-function renderRows() {{
-  const rows = items.filter(match);
-  $("registerCount").textContent = `${{rows.length}} von ${{items.length}} WÖk-IDs sichtbar`;
-  $("registerRows").innerHTML = rows.slice(0, 240).map(item => `<tr><td><strong>${{safe(item.id)}}</strong></td><td>${{safe(item.item)}}</td><td>${{safe(item.sdg_or_sdgplus)}}</td><td>${{safe(item.mpd_dimension)}}</td><td>${{safe(item.core_field)}}</td><td>${{safe(item.archetype)}}</td><td>${{safe(item.scoring_mode)}}</td><td>${{item.badges.slice(0,3).map(b=>`<span class="status-badge status-badge--${{safe(b.replaceAll(" ","-"))}}">${{safe(b)}}</span>`).join(" ")}}</td><td><a class="btn btn-secondary table-action" href="${{safe(item.slug)}}/">Details ansehen</a></td></tr>`).join("");
-  if (rows.length > 240) $("registerRows").insertAdjacentHTML("beforeend", `<tr><td colspan="9">Weitere ${{rows.length - 240}} Treffer. Bitte Filter verfeinern.</td></tr>`);
-}}
-function thresholdScore(item, value) {{
-  const b = ["B1","B2","B3","B4","B5","B6"].map(k => Number(item.scorecard[k]));
-  const s = ["S1","S2","S3","S4","S5","S6"].map(k => Number(item.scorecard[k]));
-  let score = s[0];
-  for (let i = 0; i < b.length; i += 1) if (!Number.isNaN(b[i]) && value >= b[i] && !Number.isNaN(s[i])) score = s[i];
-  return Number.isNaN(score) ? null : score;
-}}
-function benchmarkScore(item, value) {{
-  const bm = Number(item.bm), b150 = Number(item.bm_150pct), b250 = Number(item.bm_250pct);
-  if ([bm,b150,b250].some(Number.isNaN)) return null;
-  if (item.polarity === "lower_is_better") return value <= bm ? 0 : value <= b150 ? -2 : -3;
-  return value >= b150 ? 2 : value >= bm ? 0 : -2;
-}}
-function tax(score) {{ return {{ "-3": "25%", "-2": "20%", "-1": "15%", "0": "10%", "1": "5%", "2": "0%", "3": "0%" }}[String(score)] ?? "offen"; }}
-function setupDemo() {{
-  $("demoItem").innerHTML = items.map(item => `<option value="${{safe(item.id)}}">${{safe(item.id)}} · ${{safe(item.item)}}</option>`).join("");
-  $("demoCalculate").addEventListener("click", () => {{
-    const item = items.find(x => x.id === $("demoItem").value);
-    const value = Number($("demoValue").value);
-    if (!item || Number.isNaN(value)) {{ $("demoResult").textContent = "Bitte WÖk-ID und Messwert eingeben."; return; }}
-    const auto = thresholdScore(item, value);
-    const bench = benchmarkScore(item, value);
-    const red = String(item.non_compensation_red_line).toLowerCase() === "true" ? -3 : 3;
-    const finalScore = Math.min(...[auto, bench, red].filter(x => x !== null));
-    $("demoResult").innerHTML = `<strong>AutoScore: ${{safe(auto ?? "offen")}} · BenchmarkScore: ${{safe(bench ?? "offen")}} · RedLineScore: ${{safe(red)}} · FinalScore: ${{safe(finalScore)}} · Steuerklasse: ${{safe(tax(finalScore))}}</strong><br><span class="text-note">Modellrechnung für ${{safe(item.id)}}. Nicht amtlich, keine Entscheidung, keine Personenbewertung.</span>`;
-  }});
-}}
-document.querySelectorAll(".woek-register-filters input,.woek-register-filters select").forEach(el => el.addEventListener("input", renderRows));
-renderRows(); setupDemo();
-      </script>"""
-    return layout("WÖk-ID Register – Indikatoren der Wirkungsökonomie", "Offenes Forschungsregister der Wirkungsökonomie mit WÖk-IDs, Quellen, Berechnungslogiken, Datenqualität und Scorecard-Methodik.", body, "../")
+def information_page(title: str, text: str, prefix: str) -> str:
+    return layout(title, title, f'<section class="hero compact-hero"><h1>{esc(title)}</h1><p class="lead">{esc(text)}</p><p><a class="btn btn-primary" href="../">Zum Register</a></p></section>', prefix)
 
 
-def detail_page(item, sources_by_id):
-    source_links = []
-    for source_id in item["source_ids"]:
-        source = sources_by_id.get(source_id)
-        label = source["name"] if source else source_id
-        source_links.append(f'<li><strong>{esc(source_id)}</strong> · {esc(label)}{f" · {esc(source.get("url", ""))}" if source else ""}</li>')
-    body = f"""
-      <section class="hero compact-hero woek-register-hero">
-        <nav class="breadcrumb"><a href="../../register/">Register</a> / <a href="../">WÖk-ID Register</a> / {esc(item["id"])}</nav>
-        <p class="hero-kicker">WÖk-ID · {VERSION}</p>
-        <h1>{esc(item["id"])} · {esc(item["item"])}</h1>
-        <p class="hero-subtitle">{esc(item["definition"])}</p>
-        <div class="document-card-badges">{badge_html(item["badges"])}</div>
-        <p class="callout warning">Public Research Draft. Nicht amtlich, keine automatische Steuerentscheidung und keine Rechts-, Steuer-, Anlage-, Kredit-, Förder- oder Versicherungsberatung.</p>
-      </section>
-      <section class="section document-detail-grid">
-        <article class="document-detail-main">
-          <h2>Kurzbeschreibung</h2><p>{esc(item["definition"])}</p>
-          <h2>Zielbezug und Dimension</h2><p>{esc(item["sdg_or_sdgplus"])} · {esc(item["target"])} · {esc(item["mpd_dimension"])}</p>
-          <h2>Messgröße und Einheit</h2><p>{esc(item["measurement_type"])} · {esc(item["unit"])}</p>
-          <h2>Zähler/Nenner-Logik</h2><p>{esc(item["numerator_denominator"])}</p>
-          <h2>Berechnungslogik</h2><p>{esc(item["calculation_formula_plain"] or item["calculation_original"])}</p>
-          <h2>Schwellen / Benchmark</h2><p>{esc(item["thresholds"])}<br>BM: {esc(item["bm"])} · BM_150pct: {esc(item["bm_150pct"])} · BM_250pct: {esc(item["bm_250pct"])} · {esc(item["benchmark_status"])}</p>
-          <h2>Quellen</h2><ul>{''.join(source_links) or '<li>Keine Quelle hinterlegt.</li>'}</ul>
-          <h2>Red-Line-/Nichtkompensationshinweis</h2><p>{esc(item["non_compensation_red_line"] or "Kein roter Linienstatus hinterlegt.")}</p>
-          <h2>Verwandte Methoden</h2><p><a href="../../werkzeuge/scorecards/">Scorecards</a> · <a href="../../werkzeuge/reverse-merit-order/">Reverse Merit Order</a> · <a href="../../werkzeuge/netto-wirkungs-index/">NWI</a> · <a href="../../werkzeuge/t-sroi/">T-SROI</a> · <a href="../../werkzeuge/digitale-produktpaesse/">DPP</a> · <a href="../../werkzeuge/wirkungsdatenraeume/">Wirkungsdatenräume</a></p>
-        </article>
-        <aside class="document-detail-aside" data-search-exclude><dl>
-          <dt>Core Field</dt><dd>{esc(item["core_field"])}</dd>
-          <dt>Indikatorfamilie</dt><dd>{esc(item["indicator_family"])}</dd>
-          <dt>Archetype</dt><dd>{esc(item["archetype"])}</dd>
-          <dt>Scoring Mode</dt><dd>{esc(item["scoring_mode"])}</dd>
-          <dt>Datenqualität</dt><dd>{esc(item["data_quality_minimum"])}</dd>
-          <dt>Assurance-Level</dt><dd>{esc(item["assurance_level_required"])}</dd>
-          <dt>Publication / Review</dt><dd>{esc(item["publication_readiness"])}</dd>
-          <dt>Source Specificity</dt><dd>{esc(item["source_specificity"])}</dd>
-        </dl><a class="btn btn-secondary" href="mailto:kontakt@wirkungsoekonomie.de?subject=Feedback%20zu%20{esc(item["id"])}">Fehler / Ergänzung melden</a></aside>
-      </section>"""
-    return layout(f'{item["id"]} – {item["item"]}', f'Detailseite zur WÖk-ID {item["id"]} mit Quellen, Berechnung, Benchmark und Prüfstatus.', body, "../../")
-
-
-def methodology_page():
-    body = """
-      <section class="hero compact-hero"><nav class="breadcrumb"><a href="../../register/">Register</a> / Methodik</nav><p class="hero-kicker">Methodik</p><h1>Wie aus Daten Wirkungsscores werden</h1><p class="hero-subtitle">Daten → Messwert → AutoScore → BenchmarkScore → RedLineScore → FinalScore → Rückkopplung.</p></section>
-      <section class="section narrow"><div class="card"><h2>Bewertungsfluss</h2><p>Ein Messwert wird zuerst gegen zeilenspezifische Schwellen gelesen. Danach wird er mit einem Benchmark abgeglichen. Rote Linien und Nichtkompensation begrenzen die Aufwertung. Der FinalScore ist eine Forschungslogik, keine amtliche Entscheidung.</p><h2>Reverse Merit Order</h2><p>Die schwächste kritische Wirkung begrenzt die Gesamtbewertung. Schwerwiegende negative Wirkung darf nicht durch positive Wirkung an anderer Stelle schön gerechnet werden.</p><h2>NWI und T-SROI getrennt</h2><p>NWI ist eine operative Netto-Wirkungskennzahl für konkrete Wirkungseinheiten. T-SROI betrachtet Transformationswirkung und Systemhebel. Beide dürfen nicht vermischt werden.</p><h2>Datenqualität und Unsicherheit</h2><p>Datenqualität, Quelle, Systemgrenze, Benchmarkreife und Assurance-Level bleiben sichtbar. Fehlende Daten erzeugen keinen finalen Score.</p></div></section>"""
-    return layout("Methodik des WÖk-ID Registers", "Methodikseite zum Forschungsregister: Daten, AutoScore, BenchmarkScore, RedLineScore, FinalScore und Rückkopplung.", body, "../../")
-
-
-def sources_page(sources):
-    cards = "".join(f'<article class="card"><p class="card-kicker">{esc(source["type"])}</p><h3 class="card-title">{esc(source["name"])}</h3><p class="card-text"><strong>{esc(source["id"])}</strong><br>{esc(source["scope"])}</p><p class="card-text">Nutzung: {esc(source["used_for"])}</p><p class="text-note">{esc(source["url"])}</p></article>' for source in sources)
-    body = f'<section class="hero compact-hero"><nav class="breadcrumb"><a href="../../register/">Register</a> / Quellen</nav><p class="hero-kicker">Quellenbibliothek</p><h1>Quellen des WÖk-ID Registers</h1><p class="hero-subtitle">UN SDGs, UN SDG Indicator Framework, UN Metadata, CSRD/ESRS, EFRAG, GRI, NACE, EU-Taxonomie, GHG Protocol, OECD, ILO, ISO, WRI Aqueduct, WJP, V-Dem und weitere Quellen aus v2.1.</p></section><section class="section"><div class="card-grid three">{cards}</div></section>'
-    return layout("Quellen des WÖk-ID Registers", "Quellenübersicht des öffentlichen WÖk-ID Forschungsregisters v2.1.", body, "../../")
-
-
-def legacy_tool_alias():
-    return """<!doctype html>
-<html lang="de">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>WÖk-ID Register – Weiterleitung</title>
-    <meta name="description" content="Weiterleitung zum öffentlichen WÖk-ID Register Explorer v2.1.">
-    <meta http-equiv="refresh" content="0; url=../../woek-id-register/">
-    <link rel="canonical" href="https://wirkungsoekonomie.de/woek-id-register/">
-    <link rel="stylesheet" href="../../assets/css/style.css?v=20260612-mobile-table-fix">
-  </head>
-  <body>
-    <main class="section narrow">
-      <h1>WÖk-ID Register</h1>
-      <p>Der öffentliche Forschungs-Explorer ist umgezogen.</p>
-      <p><a class="btn btn-primary" href="../../woek-id-register/">Zum WÖk-ID Register Explorer</a></p>
-    </main>
-  </body>
-</html>
-"""
-
-
-def archive_old_public_download():
-    # GitHub Pages publishes the repository root. Old raw workbooks therefore
-    # must not be moved into a public-looking in-repo archive.
-    if OLD_PUBLIC_XLSX.exists():
-        OLD_PUBLIC_XLSX.unlink()
-    if OLD_DUPLICATE_PUBLIC_XLSX.exists():
-        OLD_DUPLICATE_PUBLIC_XLSX.unlink()
-    for path in NON_PUBLIC_EXPORTS:
-        if path.exists():
-            path.unlink()
-
-
-def main():
-    workbook_path = source_xlsx()
-    if not workbook_path.exists():
-        raise SystemExit(f"Missing source workbook: {workbook_path}")
-    workbook = load_workbook(workbook_path, data_only=True)
-    raw_items = read_sheet(workbook, "04_WOeK_ID_Register")
-    raw_sources = read_sheet(workbook, "02_Source_Library")
-    raw_methods = read_sheet(workbook, "03_Archetypes_Method")
-    raw_benchmarks = read_sheet(workbook, "05_Benchmarks_NACE")
-    raw_calculator = read_sheet(workbook, "06_Scorecard_Calculator")
-    data_quality = read_sheet(workbook, "07_Data_Quality_Assurance")
-    audit = read_sheet(workbook, "08_Audit_Findings")
-    changelog = read_sheet(workbook, "10_Changelog")
-
-    benchmarks = {str(row.get("WOK_ID")): row for row in raw_benchmarks if row.get("WOK_ID")}
-    calculator = {str(row.get("WOK_ID")): row for row in raw_calculator if row.get("WOK_ID")}
-    items = normalize_items(raw_items, benchmarks, calculator)
-    sources = normalize_sources(raw_sources, items)
-    methods = normalize_methods(raw_methods)
-    source_hash = digest(workbook_path)
-    sources_by_id = {source["id"]: source for source in sources}
-
-    CONTENT_DIR.mkdir(parents=True, exist_ok=True)
-    DOWNLOAD_DIR.mkdir(parents=True, exist_ok=True)
-    REGISTER_DIR.mkdir(parents=True, exist_ok=True)
-    OVERVIEW_DIR.mkdir(parents=True, exist_ok=True)
-    LEGACY_TOOL_DIR.mkdir(parents=True, exist_ok=True)
-    archive_old_public_download()
-
+def main() -> None:
+    if not SOURCE_XLSX.exists():
+        raise SystemExit(f"Missing reviewed workbook: {SOURCE_XLSX}")
+    workbook = load_workbook(SOURCE_XLSX, data_only=True, read_only=True)
+    raw_items = records(workbook, "01_Item_Register")
+    raw_benchmarks = records(workbook, "02_Benchmarks")
+    raw_rules = records(workbook, "03_Scoring_Rules")
+    raw_sources = records(workbook, "07_Quellenkatalog")
+    audit = records(workbook, "08_Prüfprotokoll")
+    changelog = records(workbook, "05_Changelog")
+    items = normalize(raw_items, raw_benchmarks, raw_rules, raw_sources)
+    if len(items) != 621 or len(raw_rules) != 28:
+        raise SystemExit(f"Unexpected v1.3 import: {len(items)} items / {len(raw_rules)} rules")
+    source_hash = digest(SOURCE_XLSX)
+    payload = {"version": VERSION, "source_hash_sha256": source_hash, "generated_at": datetime.now(timezone.utc).isoformat(), "items": items, "sources": raw_sources, "methods": raw_rules, "audit": audit, "changelog": changelog}
+    for directory in [CONTENT_DIR, REGISTER_DIR, OVERVIEW_DIR, LEGACY_TOOL_DIR]:
+        directory.mkdir(parents=True, exist_ok=True)
     write_json(CONTENT_DIR / "items.json", items)
-    write_json(CONTENT_DIR / "sources.json", sources)
-    write_json(CONTENT_DIR / "methods.json", methods)
-    write_json(CONTENT_DIR / "data-quality.json", data_quality)
+    write_json(CONTENT_DIR / "sources.json", raw_sources)
+    write_json(CONTENT_DIR / "methods.json", raw_rules)
     write_json(CONTENT_DIR / "audit-findings.json", audit)
     write_json(CONTENT_DIR / "changelog.json", changelog)
-    write_json(DATA_PATH, {"version": VERSION, "source_hash_sha256": source_hash, "items": items, "sources": sources, "methods": methods, "data_quality": data_quality, "audit": audit, "changelog": changelog})
-
-    public_workbook = DOWNLOAD_DIR / SOURCE_XLSX_PUBLIC.name
-    if workbook_path.resolve() != public_workbook.resolve():
-        shutil.copy2(workbook_path, public_workbook)
-
+    write_json(DATA_PATH, payload)
     (OVERVIEW_DIR / "index.html").write_text(overview_page(items), encoding="utf-8")
-    (REGISTER_DIR / "index.html").write_text(register_page(items, sources, methods, data_quality, changelog, source_hash), encoding="utf-8")
-    (LEGACY_TOOL_DIR / "index.html").write_text(legacy_tool_alias(), encoding="utf-8")
-    (REGISTER_DIR / "methodik").mkdir(parents=True, exist_ok=True)
-    (REGISTER_DIR / "methodik" / "index.html").write_text(methodology_page(), encoding="utf-8")
-    (REGISTER_DIR / "quellen").mkdir(parents=True, exist_ok=True)
-    (REGISTER_DIR / "quellen" / "index.html").write_text(sources_page(sources), encoding="utf-8")
+    (REGISTER_DIR / "index.html").write_text(register_page(items, raw_sources, raw_rules, audit, changelog, source_hash), encoding="utf-8")
+    (REGISTER_DIR / "methodik").mkdir(exist_ok=True)
+    (REGISTER_DIR / "methodik/index.html").write_text(information_page("Methodik des WÖk-ID Registers", "WÖk Master Items v1.3 dokumentiert Regeln, Eingabemodi, Systemgrenzen, Datenqualität, Assurance und den getrennten Status aktiver Benchmarks. Es berechnet keine automatische Entscheidung aus unvollständigen Daten.", "../../"), encoding="utf-8")
+    (REGISTER_DIR / "quellen").mkdir(exist_ok=True)
+    (REGISTER_DIR / "quellen/index.html").write_text(information_page("Quellen des WÖk-ID Registers", "Der Quellenkatalog v1.3 enthält die zugeordneten Organisationen, Standards, Versionen und offiziellen URLs.", "../../"), encoding="utf-8")
+    (LEGACY_TOOL_DIR / "index.html").write_text('<!doctype html><meta http-equiv="refresh" content="0; url=../../woek-id-register/"><link rel="canonical" href="https://wirkungsoekonomie.de/woek-id-register/">', encoding="utf-8")
     for item in items:
         detail_dir = REGISTER_DIR / item["slug"]
-        detail_dir.mkdir(parents=True, exist_ok=True)
-        (detail_dir / "index.html").write_text(detail_page(item, sources_by_id), encoding="utf-8")
-    print(f"Wrote WÖk-ID Register Explorer {VERSION}: {len(items)} detail pages, {len(sources)} sources, {len(methods)} methods.")
+        detail_dir.mkdir(exist_ok=True)
+        (detail_dir / "index.html").write_text(detail_page(item), encoding="utf-8")
+    print(f"Built WÖk-ID Register Explorer {VERSION}: {len(items)} IDs, {len(raw_rules)} rules, {len(raw_sources)} sources.")
 
 
 if __name__ == "__main__":

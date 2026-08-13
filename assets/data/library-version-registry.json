@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-02T19:46:35.490Z",
+  "generatedAt": "2026-08-13T10:11:15.321Z",
   "purpose": "Stage 9: kuratiertes Quellen- und Versionssystem der Wirkungsökonomie-Bibliothek.",
   "schema": {
     "type": [
@@ -205,20 +205,20 @@
     }
   ],
   "counts": {
-    "total": 3190,
+    "total": 3196,
     "byStatus": {
       "archiviert": 1,
-      "führend": 10,
-      "aktuell": 2624,
-      "Arbeitsfassung": 276,
-      "ältere Fassung": 259,
-      "ersetzt": 20
+      "führend": 11,
+      "aktuell": 2625,
+      "Arbeitsfassung": 277,
+      "ältere Fassung": 261,
+      "ersetzt": 21
     },
     "byType": {
       "Glossar": 47,
-      "Grundlagenwerk": 67,
-      "Methodik": 112,
-      "Arbeitspapier": 2651,
+      "Grundlagenwerk": 68,
+      "Methodik": 115,
+      "Arbeitspapier": 2653,
       "Gesetzesentwurf": 39,
       "Beispiel": 18,
       "Dossier": 234,
@@ -228,13 +228,13 @@
       "Präsentation": 1
     },
     "bySource": {
-      "download-or-document": 894,
+      "download-or-document": 899,
       "curated-publication": 3,
       "leading-reference": 8,
-      "online-version": 2285
+      "online-version": 2286
     },
-    "downloadFiles": 900,
-    "onlineVersions": 2285
+    "downloadFiles": 905,
+    "onlineVersions": 2286
   },
   "documents": [
     {
@@ -538,6 +538,33 @@
       "urls": {
         "primary": "assets/downloads/23_woek_impact_controlling_t_sroi_transformationsmessung_methodenpapier_v1_1.pdf",
         "sourcePath": "assets/downloads/23_woek_impact_controlling_t_sroi_transformationsmessung_methodenpapier_v1_1.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": true,
+      "historicalNotice": "",
+      "successorUrl": "",
+      "successorLabel": ""
+    },
+    {
+      "id": "download-or-document-assets-downloads-woek-register-woek-master-items-v1-3-geprueft-xlsx",
+      "title": "WÖk Master Items v1.3",
+      "shortDescription": "Geprüftes Arbeits- und Governance-Register mit 621 WÖk-IDs, 28 Regeln, getrennten aktiven und historischen Benchmarkwerten sowie Prüfstatus.",
+      "type": "Methodik",
+      "status": "führend",
+      "dateOrStand": "v1.3",
+      "topics": [
+        "Daten & Infrastruktur"
+      ],
+      "relatedMethods": [
+        "Datenqualität & Assurance"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "XLSX"
+      ],
+      "urls": {
+        "primary": "assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx",
+        "sourcePath": "assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx"
       },
       "source": "download-or-document",
       "isLeadingReference": true,
@@ -4392,6 +4419,31 @@
         "sourcePath": "wirkungsfelder/wissenschaft-innovation-digitalisierung/cyberresilienz-kritische-wissensinfrastruktur/index.html"
       },
       "source": "online-version",
+      "isLeadingReference": false,
+      "historicalNotice": "",
+      "successorUrl": "",
+      "successorLabel": ""
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-das-bessere-spiel-pdf",
+      "title": "Das bessere spiel",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/das-bessere-spiel.pdf",
+        "sourcePath": "assets/pdf/journal/das-bessere-spiel.pdf"
+      },
+      "source": "download-or-document",
       "isLeadingReference": false,
       "historicalNotice": "",
       "successorUrl": "",
@@ -66985,25 +67037,25 @@
       "successorLabel": ""
     },
     {
-      "id": "download-or-document-assets-pdf-woek-master-items-v1-2-pdf",
+      "id": "online-version-dokumente-woek-master-items-v1-3-index-html",
       "title": "WÖk master items",
       "shortDescription": "Methodik im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
       "type": "Methodik",
       "status": "aktuell",
-      "dateOrStand": "v1-2",
+      "dateOrStand": "v1-3",
       "topics": [
         "Grundlagen & Orientierung"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "formats": [
-        "PDF"
+        "HTML"
       ],
       "urls": {
-        "primary": "assets/pdf/woek-master-items-v1-2.pdf",
-        "sourcePath": "assets/pdf/woek-master-items-v1-2.pdf"
+        "primary": "dokumente/woek-master-items-v1-3/",
+        "sourcePath": "dokumente/woek-master-items-v1-3/index.html"
       },
-      "source": "download-or-document",
+      "source": "online-version",
       "isLeadingReference": false,
       "historicalNotice": "",
       "successorUrl": "",
@@ -73438,6 +73490,31 @@
       "urls": {
         "primary": "assets/downloads/woek_gesundheit_pflege_konzeptpapier_v0_1 2.pdf",
         "sourcePath": "assets/downloads/woek_gesundheit_pflege_konzeptpapier_v0_1 2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false,
+      "historicalNotice": "",
+      "successorUrl": "",
+      "successorLabel": ""
+    },
+    {
+      "id": "download-or-document-assets-downloads-woek-grundlagenstudie-kooperative-wirkungsordnung-v0-1-pdf",
+      "title": "WÖk grundlagenstudie kooperative wirkungsordnung",
+      "shortDescription": "Grundlagenwerk im Bibliotheks- und Versionssystem; Status: Arbeitsfassung; Themen: Grundlagen & Orientierung.",
+      "type": "Grundlagenwerk",
+      "status": "Arbeitsfassung",
+      "dateOrStand": "v0.1",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/downloads/woek_grundlagenstudie_kooperative_wirkungsordnung_v0_1.pdf",
+        "sourcePath": "assets/downloads/woek_grundlagenstudie_kooperative_wirkungsordnung_v0_1.pdf"
       },
       "source": "download-or-document",
       "isLeadingReference": false,
@@ -80705,6 +80782,56 @@
       "successorLabel": ""
     },
     {
+      "id": "download-or-document-assets-pdf-journal-wahl-o-mat-methodenkritik-sachsen-anhalt-2026-pdf",
+      "title": "Wahl o mat methodenkritik sachsen anhalt",
+      "shortDescription": "Methodik im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Grundlagen & Orientierung.",
+      "type": "Methodik",
+      "status": "ältere Fassung",
+      "dateOrStand": "2026",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/wahl-o-mat-methodenkritik-sachsen-anhalt-2026.pdf",
+        "sourcePath": "assets/pdf/journal/wahl-o-mat-methodenkritik-sachsen-anhalt-2026.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false,
+      "historicalNotice": "",
+      "successorUrl": "",
+      "successorLabel": ""
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-wahl-o-mat-sachsen-anhalt-2026-pdf",
+      "title": "Wahl o mat sachsen anhalt",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "2026",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/wahl-o-mat-sachsen-anhalt-2026.pdf",
+        "sourcePath": "assets/pdf/journal/wahl-o-mat-sachsen-anhalt-2026.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false,
+      "historicalNotice": "",
+      "successorUrl": "",
+      "successorLabel": ""
+    },
+    {
       "id": "download-or-document-assets-pdf-journal-was-ist-nachhaltigkeit-wirklich-pdf",
       "title": "Was ist nachhaltigkeit wirklich",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Grundlagen & Orientierung.",
@@ -83123,6 +83250,31 @@
       "historicalNotice": "Historische Duplikatfassung: Verweise auf einen Transformationsmultiplikator sind keine aktuelle Rechenregel. Im aktuellen Standard ist transformative Wirkung kein Aufschlagsfaktor, sondern ein separat belegter und diskontierter Nettonutzenstrom. Datenqualität, Resilienz und Unsicherheit sind Prüf- und Sensitivitätsbedingungen; bei geschlossenem Schutz-Gate wird kein positiver T-SROI ausgewiesen.",
       "successorUrl": "werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/",
       "successorLabel": "Aktuellen T-SROI-Rechenstandard öffnen"
+    },
+    {
+      "id": "download-or-document-assets-pdf-woek-master-items-v1-2-pdf",
+      "title": "WÖk Master Items v1.2 (historische Fassung)",
+      "shortDescription": "Historische Quellenfassung des WÖk-Master-Items-Registers. Für den aktuellen Stand gilt WÖk Master Items v1.3.",
+      "type": "Methodik",
+      "status": "ersetzt",
+      "dateOrStand": "v1-2",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/woek-master-items-v1-2.pdf",
+        "sourcePath": "assets/pdf/woek-master-items-v1-2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false,
+      "historicalNotice": "Historische Quellenfassung. Aktive validierte Benchmarks, Regelstatus und Prüfprotokoll sind in v1.3 getrennt ausgewiesen.",
+      "successorUrl": "bibliothek/woek-master-items-register/",
+      "successorLabel": "WÖk Master Items v1.3 öffnen"
     },
     {
       "id": "download-or-document-assets-pdf-working-paper-wohnungsmarkt-pdf",

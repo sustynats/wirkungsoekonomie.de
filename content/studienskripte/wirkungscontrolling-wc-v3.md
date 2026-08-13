@@ -43,7 +43,7 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Vorlesungscode:** WC-V3
 **Empfohlene Dauer:** ~50 Min · **Videolänge:** ~15 Min
 **Voraussetzung:** WC-V2
-**Führende Quellen (Repo):** `content/internal-documents/originals/WOeK_Master_Items_final_v1.2.pdf` · `docs/gesetze/WUStG_Technische_Leitlinien_v2.1_Entwurf.md` · Glossar `begriffe/woek-id`
+**Führende Quellen (Repo):** `assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx` · `docs/gesetze/WUStG_Technische_Leitlinien_v2.1_Entwurf.md` · Glossar `begriffe/woek-id`
 
 ## 1. Einstieg / Wirkungsfrage
 
@@ -72,7 +72,7 @@ Daten ohne Ordnung sind Rauschen. **Wie werden Wirkungsdaten so strukturiert, da
 
 **Eine WÖk-ID ist ein Ordnungs- und Mapping-Instrument, kein Siegel.** Sie ordnet Daten, Produktmerkmale oder Aktivitäten einem **Wirkungsfeld**, einer **Bewertungslogik** und einer **Scorecard** zu (Grundlagen V6). Damit wird aus einem isolierten Datenpunkt eine bewertbare, vergleichbare Wirkungsinformation.
 
-**Die Indikatorenarchitektur** (Master Items) liefert die Bausteine: definierte Indikatoren, ihre Bezüge zum Referenzrahmen, Benchmarks und Archetypen. WÖk-IDs verweisen auf diese Architektur, statt Kennzahlen willkürlich neu zu erfinden. So bleibt das System konsistent und auditierbar (`content/internal-documents/originals/WOeK_Master_Items_final_v1.2.pdf`).
+**Die Indikatorenarchitektur** (Master Items) liefert die Bausteine: definierte Indikatoren, ihre Bezüge zum Referenzrahmen, Regeln, Benchmarkstatus und Prüfpfade. WÖk-IDs verweisen auf diese Architektur, statt Kennzahlen willkürlich neu zu erfinden. Leere Eingaben bleiben unbewertet; so bleibt das System konsistent und auditierbar (`assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx`).
 
 **Anschluss an bestehende Codierungen.** WÖk-IDs docken an NACE (Branche), CSRD/ESRS-Datenpunkte und den digitalen Produktpass an. Ein Produkt oder eine Aktivität erhält damit eine nachvollziehbare Zuordnung zur Wirkungsbewertung – die Brücke von Rohdaten (V2) zur Scorecard (V4).
 
@@ -327,7 +327,7 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer WC-V3. Offen blei
 
 ## 9. Quellen / Vertiefung
 
-- `content/internal-documents/originals/WOeK_Master_Items_final_v1.2.pdf` – Indikatorenarchitektur
+- `assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx` – Indikatorenarchitektur, Regelstatus und Prüfpfade
 - `docs/gesetze/WUStG_Technische_Leitlinien_v2.1_Entwurf.md` – WÖk-IDs, Benchmarks, Archetypen, Auditierbarkeit
 - Glossar: `begriffe/woek-id`, `begriffe/benchmark`, `begriffe/archetyp`
 

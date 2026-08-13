@@ -542,7 +542,7 @@ function entriesFromContent(file) {
     "2026.1";
   const liveBoost = 0;
   const isReferenceChapter = /referenz\/kapitel-\d{3}-/.test(file);
-  const isRegister = /woek-master-items-final-v1-2/.test(file);
+const isRegister = /woek-master-items-(?:final-)?v1-2|woek-master-items-v1-3/.test(file);
   const isFulltext = route === "/referenz/volltext/";
   const bodyLimit = isFulltext ? FULLTEXT_BODY_LIMIT : PAGE_BODY_LIMIT;
   const body = clean(text).slice(0, bodyLimit);

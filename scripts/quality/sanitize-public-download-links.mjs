@@ -16,10 +16,10 @@ const ignoreDirs = new Set([
   "woek-institut-app"
 ]);
 const htmlFiles = [];
-const allowedSpreadsheetPattern = /assets\/downloads\/woek-register\/WOeK_Master_Items_Public_Research_Register_v2\.1\.(xlsx|xls)(?:[#?][^"']*)?$/i;
+const allowedSpreadsheetPattern = /assets\/downloads\/woek-register\/(?:WOeK_Master_Items_Public_Research_Register_v2\.1|WOeK_Master_Items_v1\.3_geprueft)\.(xlsx|xls)(?:[#?][^"']*)?$/i;
 const allowedStudyScriptRawPattern = /^docs\/studienskripte\/word-rohfassungen\/[a-z0-9-]+\.docx$/i;
 const publicDownloadDirPattern = /^(assets\/downloads|downloads|public\/downloads)\//i;
-const forbiddenDownloadPattern = /(?:href|src)=["'](?!(?:[^"']*assets\/downloads\/woek-register\/WOeK_Master_Items_Public_Research_Register_v2\.1\.(?:xlsx|xls)(?:[#?][^"']*)?["']))[^"']*\.(docx|dotx|pages|key|numbers|zip|wav|csv|json|xlsx|xls)(?:[#?][^"']*)?["']/i;
+const forbiddenDownloadPattern = /(?:href|src)=["'](?!(?:[^"']*assets\/downloads\/woek-register\/(?:WOeK_Master_Items_Public_Research_Register_v2\.1|WOeK_Master_Items_v1\.3_geprueft)\.(?:xlsx|xls)(?:[#?][^"']*)?["']))[^"']*\.(docx|dotx|pages|key|numbers|zip|wav|csv|json|xlsx|xls)(?:[#?][^"']*)?["']/i;
 const forbiddenAnchorPattern = /<a\b([^>]*?)\bhref=(["'])([^"']*\.(?:docx|dotx|pages|key|numbers|zip|wav|csv|json|xlsx|xls)(?:[#?][^"']*)?)\2([^>]*)>([\s\S]*?)<\/a>/gi;
 const forbiddenSrcPattern = /<source\b([^>]*?)\bsrc=(["'])([^"']*\.(?:docx|dotx|pages|key|numbers|zip|wav|csv|json|xlsx|xls)(?:[#?][^"']*)?)\2([^>]*)>\s*<\/source>/gi;
 const forbiddenFiles = [];

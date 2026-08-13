@@ -1747,12 +1747,12 @@
     {
       "id": "woek-master-items-register",
       "slug": "woek-master-items-register",
-      "title": "WÖk Master Items Register",
-      "subtitle": "Technisches Register der WÖk-IDs und Wirkungsitems",
-      "fileName": "WOeK_Master_Items_final_v1.2.pdf",
-      "filePath": "public/downloads/originals/WOeK_Master_Items_final_v1.2.pdf",
+      "title": "WÖk Master Items v1.3",
+      "subtitle": "Geprüftes Arbeits- und Governance-Register für WÖk-IDs, Scorecards und Benchmarks",
+      "fileName": "WOeK_Master_Items_v1.3_geprueft.xlsx",
+      "filePath": "assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx",
       "documentType": "datenregister",
-      "status": "aktuell",
+      "status": "führend",
       "visibility": "expert_public",
       "audience": [
         "Methodik",
@@ -1760,22 +1760,23 @@
         "Wissenschaft"
       ],
       "level": "expert",
-      "summaryShort": "PDF-Register der WÖk-Master-Items zur methodischen Nachvollziehbarkeit der Wirkungsitem-Struktur.",
-      "whatToExpect": "Ein technisches Register für Expert:innen; kein narrativer Einstieg und keine amtliche Klassifikation.",
+      "summaryShort": "Geprüftes Register mit 621 WÖk-IDs, 28 Regeln, getrennten aktiven und historischen Benchmarkwerten sowie Prüfstatus.",
+      "whatToExpect": "Ein technisches Register für Expert:innen: Itemlogik, Regelzuordnung, Quellen, Systemgrenzen, Datenqualität, Assurance und Benchmarkstatus.",
       "keyQuestions": [
-        "Welche Items sind im WÖk-System angelegt?",
-        "Wie sind SDG-/SDG+-Bezüge strukturiert?",
-        "Welche Datenbasis braucht methodische Weiterarbeit?"
+        "Welche WÖk-IDs und Prüfpfade sind aktuell geführt?",
+        "Wann bleibt ein Messwert bewusst unbewertet?",
+        "Welche Benchmarks sind aktiv validiert und welche noch offen?"
       ],
       "topics": [
         "WÖk-ID",
         "Datenregister",
-        "Wirkungsitems"
+        "Scorecards",
+        "Benchmarks"
       ],
       "methods": [
         "WÖk-ID",
-        "Register",
-        "SDG+"
+        "Scorecards",
+        "Datenqualität & Assurance"
       ],
       "impactFields": [
         "Mensch",
@@ -1785,22 +1786,24 @@
       "relatedDocuments": [
         "technische-leitlinien-wustg"
       ],
-      "version": "v1.2",
-      "date": "2025",
-      "internalNote": "Wenn öffentlich, eigene technische Register-Seite mit Einführung.",
+      "version": "v1.3",
+      "date": "2026-08-13",
+      "legalNotice": "Technisches Register. Keine amtliche Klassifikation, keine Rechts-, Steuer-, Förder-, Anlage- oder Unternehmensberatung.",
       "downloadAllowed": true,
       "previewAllowed": true,
       "section": "Register & Daten",
       "order": 324,
       "contentHtmlPath": "content/documents/online/woek-master-items-register.inc",
-      "legalNotice": "Technisches Register. Keine amtliche Klassifikation, keine Rechts-, Steuer-, Förder-, Anlage- oder Unternehmensberatung.",
-      "editorialNote": "Öffentliche Fachfassung nach Red-Flag-Prüfung freigegeben. Die XLSX-Arbeitsdatei bleibt intern.",
-      "fileType": "pdf",
-      "fileSize": "1008 KB",
+      "editorialNote": "Geprüfte Fassung v1.3, Stand 13. August 2026. Leere Eingaben bleiben unbewertet; das Arbeitsmodell ist keine Rechtsnorm und keine automatische Entscheidung.",
+      "replaces": [
+        "woek-master-items-v1-2"
+      ],
+      "fileType": "xlsx",
+      "fileSize": "445 KB",
       "pageCount": 221,
       "estimatedReadingTime": "376 Min.",
-      "replaces": [],
       "replacedBy": "",
+      "internalNote": "",
       "author": "",
       "publicationLabel": "",
       "includeInFullKnowledgeLibrary": ""

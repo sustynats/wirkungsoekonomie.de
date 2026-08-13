@@ -1,14 +1,128 @@
 [
   {
-    "Version": "v2.1",
-    "Date": "2026-05-31",
-    "Change": "Public Research Register mit Quellen-URLs, Berechnungslogik, Datenqualität, Audit-Findings, Scorecard-Calculator und Web-Explorer-Spec erstellt",
-    "Rationale": "WÖk operationalisierbar und wissenschaftlich anschlussfähig machen"
+    "Change_ID": "CH-001",
+    "Bereich": "Scorecards",
+    "Änderungstyp": "Fehlerkorrektur",
+    "Vorher": "Leere Messwerte wurden als 0 interpretiert.",
+    "Nachher": "Leere Eingaben bleiben unbewertet.",
+    "Begründung": "Datenlücken dürfen keinen Score oder Steuersatz erzeugen.",
+    "Status": "Umgesetzt"
   },
   {
-    "Version": "v1.2",
-    "Date": "2025-09-01",
-    "Change": "Ausgangsdatei: Benchmarks_by_NACE für alle Items automatisch befüllt",
-    "Rationale": "Rohregister/Arbeitsstand"
+    "Change_ID": "CH-002",
+    "Bereich": "Scoring",
+    "Änderungstyp": "Fehlerkorrektur",
+    "Vorher": "320 Zeilen verwiesen auf fehlende Archetypen.",
+    "Nachher": "Alle 621 Items sind einer von 28 dokumentierten Regeln zugeordnet.",
+    "Begründung": "Vermeidung von #N/A und transparente Regelpflege.",
+    "Status": "Umgesetzt"
+  },
+  {
+    "Change_ID": "CH-003",
+    "Bereich": "FinalScore",
+    "Änderungstyp": "Fehlerkorrektur",
+    "Vorher": "Benchmark wurde bei vorhandenem Archetyp regelmäßig ignoriert.",
+    "Nachher": "FinalScore ist das Minimum aller vorhandenen Teilbewertungen.",
+    "Begründung": "Konservative Nichtkompensations- und Vorsorgelogik.",
+    "Status": "Umgesetzt"
+  },
+  {
+    "Change_ID": "CH-004",
+    "Bereich": "Benchmarks",
+    "Änderungstyp": "Strukturänderung",
+    "Vorher": "Generierte Schwellenwerte erschienen als Branchenbenchmarks.",
+    "Nachher": "Aktive validierte Benchmarks und Legacy-Rechenwerte sind strikt getrennt.",
+    "Begründung": "Keine Scheingenauigkeit oder falsche Quellenbehauptung.",
+    "Status": "Umgesetzt"
+  },
+  {
+    "Change_ID": "CH-005",
+    "Bereich": "Qualitative Regeln",
+    "Änderungstyp": "Governance",
+    "Vorher": "Qualitative Texte waren nicht operationalisiert.",
+    "Nachher": "Assurance-Score und Kriterienkatalog werden explizit verlangt.",
+    "Begründung": "Qualitative Wirkung braucht Evidenz und Prüfbarkeit.",
+    "Status": "Umgesetzt"
+  },
+  {
+    "Change_ID": "CH-006",
+    "Bereich": "Rechtsgrenzen",
+    "Änderungstyp": "Methodenkorrektur",
+    "Vorher": "Einheit und Definition passten nicht zur Prozent-vom-Grenzwert-Regel.",
+    "Nachher": "Bewertet wird Messwert ÷ anwendbarer Grenzwert × 100.",
+    "Begründung": "Rechts- und Genehmigungsgrenzen müssen fallbezogen parametrisiert werden.",
+    "Status": "Umgesetzt"
+  },
+  {
+    "Change_ID": "CH-007",
+    "Bereich": "NACE",
+    "Änderungstyp": "Versionierung",
+    "Vorher": "NACE war nicht versioniert.",
+    "Nachher": "Legacy-Zuordnung bleibt erhalten; Migration auf NACE Rev. 2.1 wird ausgewiesen.",
+    "Begründung": "Klassifikationsänderungen dürfen nicht unsichtbar bleiben.",
+    "Status": "Umgesetzt"
+  },
+  {
+    "Change_ID": "CH-008",
+    "Bereich": "Quellen",
+    "Änderungstyp": "Strukturänderung",
+    "Vorher": "Messstandards und Schwellenquellen waren vermischt.",
+    "Nachher": "Quellenfunktion, Quellenstatus und Source_IDs werden getrennt geführt.",
+    "Begründung": "Ein Messstandard belegt nicht automatisch einen Grenzwert.",
+    "Status": "Umgesetzt"
+  },
+  {
+    "Change_ID": "CH-009",
+    "Bereich": "Register",
+    "Änderungstyp": "Erweiterung",
+    "Vorher": "Systemgrenze, Datenqualität, Assurance und Gültigkeit fehlten.",
+    "Nachher": "Pflichtfelder wurden ergänzt.",
+    "Begründung": "Auditierbarkeit und spätere Automatisierung.",
+    "Status": "Umgesetzt"
+  },
+  {
+    "Change_ID": "CH-010",
+    "Bereich": "Fachlogik",
+    "Änderungstyp": "Qualitätssicherung",
+    "Vorher": "Generische Schablonenfehler waren unsichtbar.",
+    "Nachher": "Fachlogik_Status, Prüfpriorität und Prüfhinweis kennzeichnen offene Punkte.",
+    "Begründung": "Schablonenabweichungen dürfen nicht stillschweigend fortgeschrieben werden.",
+    "Status": "Umgesetzt"
+  },
+  {
+    "Change_ID": "CH-011",
+    "Bereich": "Tarifmodell",
+    "Änderungstyp": "Versionierung",
+    "Vorher": "Mehrere historische Tarifmodelle standen nebeneinander.",
+    "Nachher": "Aktives v1.3-Arbeitsmodell wird klar von historischen Varianten getrennt.",
+    "Begründung": "Keine Verwechslung mit geltendem Recht.",
+    "Status": "Umgesetzt"
+  },
+  {
+    "Change_ID": "CH-012",
+    "Bereich": "Dashboard",
+    "Änderungstyp": "Usability",
+    "Vorher": "Keine Qualitätsübersicht.",
+    "Nachher": "KPI-, Kategorien- und Prioritätsübersicht ergänzt.",
+    "Begründung": "Schnelle Navigation und Governance-Transparenz.",
+    "Status": "Umgesetzt"
+  },
+  {
+    "Change_ID": "CH-013",
+    "Bereich": "Layout",
+    "Änderungstyp": "Design",
+    "Vorher": "Technische Rohlisten mit uneinheitlicher Darstellung.",
+    "Nachher": "Einheitliches WÖk-Design, Filter, Freeze Panes, Eingabezonen und bedingte Formatierung.",
+    "Begründung": "Professionelle Arbeits- und Präsentationsqualität.",
+    "Status": "Umgesetzt"
+  },
+  {
+    "Change_ID": "CH-014",
+    "Bereich": "Scorecard-Eingabe",
+    "Änderungstyp": "Governance",
+    "Vorher": "Keine getrennte manuelle Evidenz-/Assurance-Spur.",
+    "Nachher": "Messwert, Assurance-Score, Nachweis und Datenstand sind separate Eingaben.",
+    "Begründung": "Automatik und fachliche Prüfung bleiben nachvollziehbar.",
+    "Status": "Umgesetzt"
   }
 ]
