@@ -31,7 +31,7 @@
     try {
       localStorage.setItem(STORE_KEY, JSON.stringify(state));
     } catch (e) {
-      /* Privatmodus oder voller Speicher: Prototyp laeuft ohne Persistenz weiter */
+      /* Privatmodus oder voller Speicher: Der Fragebogen läuft ohne Persistenz weiter. */
     }
   }
 
@@ -273,7 +273,7 @@
       help: "Wählen Sie bis zu zwei.",
       type: "multi", options: M.bottlenecks, max: 2, min: 1,
       error: "Bitte wählen Sie mindestens einen Engpass.",
-      why: "In der Wirkungsökonomie begrenzt der schwächste zentrale Faktor das Gesamtergebnis. Zusätzliche Mittel an einer Stelle erhöhen die Wirkung nur unterproportional, solange an anderer Stelle etwas blockiert. Ihre Angabe bestimmt, an welcher Stelle die Handlungsoptionen ansetzen."
+      why: "In der Wirkungsökonomie begrenzt der schwächste zentrale Faktor das Gesamtergebnis. Zusätzliche Mittel an einer Stelle erhöhen die Wirkung nur unterproportional, solange an anderer Stelle etwas blockiert. Ihre Angabe bestimmt, welcher Prüfpfad sichtbar wird."
     });
 
     list.push({
@@ -326,7 +326,7 @@
       title: "Welcher Hinweis aus Wahlkreis oder Fachpraxis sollte den Wirkungscheck ergänzen?",
       help: "Optional. Höchstens 600 Zeichen. Bitte keine personenbezogenen Angaben Dritter.",
       type: "text", min: 0, optional: true,
-      why: "Ihr Hinweis wird in dieser Fassung nicht automatisch ausgewertet. Er erscheint in Ihrem Report und, falls Sie zustimmen, in der redaktionellen Auswertung."
+      why: "Ihr Hinweis wird nicht automatisch ausgewertet und bleibt in dieser Veröffentlichung lokal in Ihrem Report."
     });
 
     list.forEach(function (q, i) { q.nr = i + 1; });
@@ -569,7 +569,7 @@
     wrap.appendChild(el("p", { class: "wc-subhead", text: "Oder ohne Wahlkreisbezug" }));
     wrap.appendChild(altGroup);
     wrap.appendChild(el("p", { class: "wc-meta", style: "margin-top:1rem",
-      text: "Die Wahlkreisangabe bleibt in Ihrem Browser. Sie wird nur übertragen, wenn Sie am Ende ausdrücklich zustimmen." }));
+      text: "Die Wahlkreisangabe bleibt in Ihrem Browser. Dieser Fragebogen überträgt keine Angaben." }));
   }
 
   /* --------------------------------------------------------------- Survey */
@@ -766,7 +766,7 @@
         role: "radiogroup", "aria-labelledby": "survey-h1"
       });
       q.options.forEach(function (o) {
-        var extra = null, hint = o.hint, value = null;
+        var extra = null, hint = o.hint, value = null, sourceMeta = null;
         if (q.type === "indicators") {
           if (o.value) {
             value = indicatorValue(o);
@@ -787,14 +787,13 @@
           }
         });
         if (q.type === "indicators") {
-          var meta = el("div", { style: "margin-top:.35rem;display:flex;flex-wrap:wrap;gap:.75rem;align-items:center" });
-          meta.appendChild(evidenceMark(o.evidence));
+          sourceMeta = el("div", { class: "wc-meta", style: "margin:-.35rem .5rem .75rem 3.25rem;display:flex;flex-wrap:wrap;gap:.75rem;align-items:center" });
+          sourceMeta.appendChild(evidenceMark(o.evidence));
           var sb = sourceButton(o.source);
-          sb.addEventListener("click", function (ev) { ev.stopPropagation(); });
-          meta.appendChild(sb);
-          t.querySelector(".wc-tile__body").appendChild(meta);
+          sourceMeta.appendChild(sb);
         }
         wrap.appendChild(t);
+        if (sourceMeta) wrap.appendChild(sourceMeta);
       });
       return wrap;
     }
@@ -824,7 +823,7 @@
       holder.appendChild(ta);
       holder.appendChild(count);
       holder.appendChild(el("p", { class: "wc-meta",
-        text: "Ihr Hinweis wird nicht automatisch ausgewertet. Er erscheint in Ihrem Report und, falls Sie zustimmen, in der redaktionellen Auswertung." }));
+        text: "Ihr Hinweis wird nicht automatisch ausgewertet und bleibt lokal in Ihrem Report." }));
       return holder;
     }
 
@@ -1574,7 +1573,7 @@
         ["Betreiber", "Wer verantwortlich ist",
           "Die verantwortliche Stelle und die vollständigen Angaben stehen im Impressum der Wirkungsökonomie.", false],
         ["Daten", "Was gespeichert wird",
-          "Ihre Antworten liegen ausschliesslich in Ihrem Browser unter dem Schlüssel wc_state_v1. Es gibt kein Konto und keine Anmeldung. Ohne Ihre ausdrückliche Zustimmung wird nichts übertragen. Es werden keine Cookies zu Analysezwecken gesetzt und keine Dienste Dritter eingebunden. Sie können alle lokalen Daten jederzeit vollständig löschen.", true],
+          "Ihre Antworten liegen ausschliesslich in Ihrem Browser unter dem Schlüssel wc_state_v1. Es gibt kein Konto und keine Anmeldung. Dieser Fragebogen überträgt nichts, setzt keine Analyse-Cookies und bindet keine Dienste Dritter ein. Sie können alle lokalen Daten jederzeit vollständig löschen.", true],
         ["Veröffentlichung", "Was öffentlich werden kann",
           "Dieser Fragebogen veröffentlicht keine Antworten und überträgt keine Angaben. Ein späterer Forschungsbeitrag wäre ein eigener, nicht vorausgewählter Schritt.", false],
         ["KI", "Wo KI vorkommt und wo nicht",

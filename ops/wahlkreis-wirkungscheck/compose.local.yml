@@ -1,0 +1,13 @@
+# Local-only override: do not start Caddy or request certificates.
+# CRM: http://localhost:8081/civicrm  Survey: http://localhost:8082
+
+services:
+  crm:
+    ports:
+      - "127.0.0.1:8081:80"
+  survey:
+    ports:
+      - "127.0.0.1:8082:80"
+  analytics:
+    ports:
+      - "127.0.0.1:8083:3000"
