@@ -1,3 +1,4 @@
-<h2>WÖk Master Items Register</h2>
-<p>Das WÖk Master Items Register ist ein fachliches Arbeitsregister für Wirkungsindikatoren, Scorecards, Benchmarks und Steuerungslogiken der Wirkungsökonomie. Die Online-Fassung zeigt eine kurze Einordnung; das vollständige Register steht als PDF bereit, damit Tabellen, Skalen und Referenzwerte unverzerrt genutzt werden können.</p>
-<p>Das Register dient als Grundlage für Wirkungsmessung, WÖK-IDs, Produkt- und Organisationsscorecards, Reverse Merit Order, Nichtkompensation und Wirkungssteuerung.</p>
+<h2>WÖk Master Items v1.3</h2>
+<p>Die geprüfte Arbeits- und Governance-Fassung v1.3 führt 621 WÖk-IDs, 28 Scoring-Regeln, Scorecards, Benchmarkstatus, Quellen und ein Prüfprotokoll zusammen. Sie macht nachvollziehbar, wie einzelne Messgrößen, Systemgrenzen, Datenqualität und Assurance zusammenhängen.</p>
+<p>Die Fassung trennt aktive, validierte Benchmarks von historischen Berechnungswerten. Leere Eingaben bleiben unbewertet. Qualitative und hybride Fälle benötigen den vorgesehenen Nachweis- und Prüfpfad. Das Register ist ein Arbeitsmodell, keine Rechtsnorm und keine automatische Steuerungs- oder Personenentscheidung.</p>
+<p>Die <a href="../../woek-id-register/">öffentliche Registeransicht</a> ermöglicht die Recherche nach WÖk-ID, Regel, Quellen, Systemgrenze und Prüfstatus. Die vorige <a href="../../dokumente/woek-master-items-final-v1-2/">Fassung v1.2</a> bleibt als historische Referenz erhalten.</p>

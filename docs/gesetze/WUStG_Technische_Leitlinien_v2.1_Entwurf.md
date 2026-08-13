@@ -212,7 +212,7 @@ Mindestfamilien sind:
 
 ### 4.4 Master-Items
 
-Soweit die Datei `WOeK_Master_Items_final_v1.2.xlsx` vorhanden ist, ist sie als strukturierte Ausgangsquelle für WÖk-IDs und Indikatorfamilien zu verwenden. Die PDF-Fassung dient nur als Original- oder Fallbackquelle.
+Als strukturierte Ausgangsquelle für WÖk-IDs und Indikatorfamilien gilt `WOeK_Master_Items_v1.3_geprueft.xlsx`. Sie dokumentiert Regelzuordnung, Systemgrenze, Datenqualität, Assurance und den getrennten Status aktiver Benchmarks. Leere Eingaben bleiben unbewertet; die Datei ist keine Rechtsnorm und löst keine automatische Entscheidung aus. Die PDF-Fassung v1.2 bleibt ausschließlich historische Original- und Fallbackquelle.
 
 IDs werden nicht ohne Prüfung frei umnummeriert. Neue IDs, Merges oder Umbenennungen müssen versioniert und dokumentiert werden.
 

@@ -43,7 +43,7 @@ Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verw
 **Vorlesungscode:** WC-V4
 **Empfohlene Dauer:** ~55 Min · **Videolänge:** ~16 Min
 **Voraussetzung:** WC-V3
-**Führende Quellen (Repo):** `docs/whitepaper/T-SROI_v2.0_Transformationswirkung.md` · `content/internal-documents/originals/WOeK_Master_Items_final_v1.2.pdf` · Glossar `begriffe/scorecard`
+**Führende Quellen (Repo):** `docs/whitepaper/T-SROI_v2.0_Transformationswirkung.md` · `assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx` · Glossar `begriffe/scorecard`
 
 ## 1. Einstieg / Wirkungsfrage
 
@@ -72,7 +72,7 @@ Wie wird aus vielen Einzeldaten ein bewertbares Gesamtbild – ohne dass gute We
 
 **Die Scorecard ordnet Wirkungsfelder, Datenqualität und Bewertung** (Grundlagen V6). Sie ist der Ort, an dem aus strukturierten Daten (V2–V3) ein bewertbares **Profil** wird: je Wirkungsfeld ein Wert, ergänzt um die **Datenqualität** (wie belastbar ist der Wert?).
 
-**Benchmarks und Archetypen geben den Maßstab.** Ein Feldwert ist ohne Vergleich bedeutungslos. **Benchmarks** liefern den Vergleichsmaßstab (z. B. Branchenreferenz über NACE), **Archetypen** typisierte Bewertungsvorlagen. So wird Bewertung nachvollziehbar statt willkürlich (`content/internal-documents/originals/WOeK_Master_Items_final_v1.2.pdf`).
+**Benchmarks und Regeln geben den Maßstab.** Ein Feldwert ist ohne Vergleich bedeutungslos. **Benchmarks** liefern den Vergleichsmaßstab, wenn sie aktiv validiert sind; Regeln beschreiben den zulässigen Eingabemodus und die Schwellenlogik. Ohne Daten, Nachweis und Assurance bleibt ein Feld unbewertet (`assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx`).
 
 **Von der Scorecard zur Wirkungsklasse.** Aus den Feldwerten entsteht – **unter Reverse Merit Order** – die **Netto-Wirkung** und eine **Wirkungsklasse**. Entscheidend: Die Verdichtung (FinalScore) darf schlechte kritische Werte nicht durch gute Teilwerte überdecken (V5). Erst danach lassen sich Steuerungsentscheidungen ableiten.
 
@@ -267,7 +267,7 @@ Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer WC-V4. Offen blei
 ## 9. Quellen / Vertiefung
 
 - `docs/whitepaper/T-SROI_v2.0_Transformationswirkung.md` – Kennzahlenordnung
-- `content/internal-documents/originals/WOeK_Master_Items_final_v1.2.pdf` – Benchmarks, Archetypen
+- `assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx` – Regeln, Benchmarkstatus und Assurance
 - Glossar: `begriffe/scorecard`, `begriffe/benchmark`, `begriffe/finalscore`
 
 ## 4. Wirkungsökonomische Vertiefung

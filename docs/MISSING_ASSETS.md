@@ -17,7 +17,7 @@ Stand: 2026-05-23T19:10:28.988Z
 
 ## Nachgelieferte Dateien
 
-- `WOeK_Master_Items_final_v1.2.xlsx` wurde am 2026-05-23 nachgeliefert, nach `/public/downloads/originals/` übernommen und als strukturiertes WÖk-ID-Register mit 621 Zeilen importiert.
+- `WOeK_Master_Items_v1.3_geprueft.xlsx` wurde am 2026-08-13 als geprüfte führende Registerquelle mit 621 WÖk-IDs importiert. v1.2 bleibt als historische Fassung erhalten.
 
 Die vorhandenen PDF-/Archivfassungen wurden nicht als aktuelle führende Fassung umgedeutet.
 

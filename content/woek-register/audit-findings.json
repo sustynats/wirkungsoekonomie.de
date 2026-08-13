@@ -1,158 +1,162 @@
 [
   {
-    "Check": "Total WÖk-ID rows",
-    "Result": 621,
-    "Interpretation": "Vollständiger Import aus WOeK_Master_Items_final_v1.2.xlsx",
-    "Recommended_Action": "Weiter als öffentliches Forschungsregister verwenden"
+    "Audit_ID": "A-001",
+    "Schweregrad": "Kritisch",
+    "Bereich": "Scorecards",
+    "Befund": "621 leere Messwertzellen erzeugten dennoch Scores bzw. Steuersätze.",
+    "Betroffene_Zeilen": 621,
+    "Korrektur_v1.3": "Formeln geben bei leerer Eingabe keinen AutoScore aus.",
+    "Restrisiko/Nächster_Schritt": "Nutzer:innen müssen Messwert oder Assurance-Evidenz eintragen.",
+    "Status": "Behoben"
   },
   {
-    "Check": "Rows with source_detail present",
-    "Result": 621,
-    "Interpretation": "Alle Zeilen haben eine Quellenfamilie",
-    "Recommended_Action": "Exakte Disclosure-/Paragraph-IDs ergänzen"
+    "Audit_ID": "A-002",
+    "Schweregrad": "Kritisch",
+    "Bereich": "Archetypen",
+    "Befund": "higher_is_better_abs und lower_is_better_abs fehlten; 320 Zeilen ergaben #N/A.",
+    "Betroffene_Zeilen": 320,
+    "Korrektur_v1.3": "28 Rule_IDs ersetzen die unvollständige Archetypenliste.",
+    "Restrisiko/Nächster_Schritt": "Fachliche Kalibrierung der Regeln bleibt erforderlich.",
+    "Status": "Behoben"
   },
   {
-    "Check": "Rows with original calculation logic present",
-    "Result": 621,
-    "Interpretation": "Alle Zeilen haben eine Berechnungslogik im Ausgangsregister",
-    "Recommended_Action": "Zähler/Nenner/Systemgrenze in v2.x weiter präzisieren"
+    "Audit_ID": "A-003",
+    "Schweregrad": "Kritisch",
+    "Bereich": "FinalScore",
+    "Befund": "Die ursprüngliche Formel übernahm bei vorhandenem Archetyp den AutoScore und ignorierte den Benchmark.",
+    "Betroffene_Zeilen": 621,
+    "Korrektur_v1.3": "FinalScore = Minimum aller vorhandenen Auto-, Benchmark- und Assurance-Scores.",
+    "Restrisiko/Nächster_Schritt": "Regel durch Tests und spätere Softwareimplementierung absichern.",
+    "Status": "Behoben"
   },
   {
-    "Check": "Original v1.2 scorecard rows with NA/error outputs",
-    "Result": 320,
-    "Interpretation": "Ausgangsproblem erkannt; v2.1 repariert die öffentliche Darstellung durch Status/Parsing/Benchmarklogik",
-    "Recommended_Action": "Keine NA/error outputs als öffentliches Register ausspielen"
+    "Audit_ID": "A-004",
+    "Schweregrad": "Hoch",
+    "Bereich": "Benchmarks",
+    "Befund": "Legacy-BM-Werte wurden überwiegend aus Schwellen/Defaults abgeleitet, nicht aus validierten Branchenstichproben.",
+    "Betroffene_Zeilen": 621,
+    "Korrektur_v1.3": "Legacy-Werte archiviert; aktive BM-Felder leer und gesperrt bis Validierung.",
+    "Restrisiko/Nächster_Schritt": "72 benchmarkabhängige Items benötigen echte Referenzdaten.",
+    "Status": "Strukturell behoben"
   },
   {
-    "Check": "Numeric threshold rows parsed",
-    "Result": 495,
-    "Interpretation": "Diese Zeilen sind direkt formelbereit aus dem Schwellenstring",
-    "Recommended_Action": "Als Live-Rechner online nutzbar machen"
+    "Audit_ID": "A-005",
+    "Schweregrad": "Hoch",
+    "Bereich": "NACE",
+    "Befund": "NACE-Beispiele waren nicht versioniert.",
+    "Betroffene_Zeilen": 621,
+    "Korrektur_v1.3": "Legacy-Status und Migrationsfeld für NACE Rev. 2.1 ergänzt.",
+    "Restrisiko/Nächster_Schritt": "Fachliches Mapping je Item durchführen.",
+    "Status": "Offen"
   },
   {
-    "Check": "Benchmark-relative / qualitative rows",
-    "Result": 126,
-    "Interpretation": "Diese Zeilen brauchen Benchmark- oder Kodierlogik statt Scheingenauigkeit",
-    "Recommended_Action": "Fachreview und Quellen für Kriterien ergänzen"
+    "Audit_ID": "A-006",
+    "Schweregrad": "Hoch",
+    "Bereich": "Quellen",
+    "Befund": "Berichts-/Messstandards wurden teilweise wie Belege für WÖk-Grenzwerte behandelt.",
+    "Betroffene_Zeilen": 621,
+    "Korrektur_v1.3": "Quellenfunktion und Schwellenstatus getrennt.",
+    "Restrisiko/Nächster_Schritt": "Jede WÖk-Kalibrierung empirisch oder normativ dokumentieren.",
+    "Status": "Strukturell behoben"
   },
   {
-    "Check": "Rows marked as non-compensation red line",
-    "Result": 210,
-    "Interpretation": "Rote Linien verhindern Durchschnittsschönrechnung",
-    "Recommended_Action": "RedLineScore automatisieren und auditierbar machen"
+    "Audit_ID": "A-007",
+    "Schweregrad": "Hoch",
+    "Bereich": "Benchmarks",
+    "Befund": "Benchmarkabhängige Regeln ohne validierte aktive Benchmarks.",
+    "Betroffene_Zeilen": 72,
+    "Korrektur_v1.3": "Kein automatischer BenchmarkScore bis Status = Aktiv.",
+    "Restrisiko/Nächster_Schritt": "Branchen-, Regions- und Technologiebenchmarks entwickeln.",
+    "Status": "Offen"
   },
   {
-    "Check": "Archetype count: higher_is_better_abs",
-    "Result": 191,
-    "Interpretation": "Verteilung der Bewertungslogiken",
-    "Recommended_Action": "Für jede Archetype-Gruppe eine Methodenkarte online bereitstellen"
+    "Audit_ID": "A-008",
+    "Schweregrad": "Hoch",
+    "Bereich": "Qualitative Regeln",
+    "Befund": "Qualitative Schwellen ohne vollständigen Kriterien- und Assurance-Katalog.",
+    "Betroffene_Zeilen": 54,
+    "Korrektur_v1.3": "Assurance-Score als eigene, nachweisgebundene Eingabe.",
+    "Restrisiko/Nächster_Schritt": "Rubrics je Indikatorfamilie beschließen.",
+    "Status": "Offen"
   },
   {
-    "Check": "Archetype count: higher_is_better_pct",
-    "Result": 196,
-    "Interpretation": "Verteilung der Bewertungslogiken",
-    "Recommended_Action": "Für jede Archetype-Gruppe eine Methodenkarte online bereitstellen"
+    "Audit_ID": "A-009",
+    "Schweregrad": "Hoch",
+    "Bereich": "Rechtsgrenzen",
+    "Befund": "10 Items nutzten Prozent-vom-Grenzwert, obwohl Definition/Einheit einen absoluten Wert suggerierten.",
+    "Betroffene_Zeilen": 10,
+    "Korrektur_v1.3": "Definition, Einheit und Berechnung auf Grenzwertquote korrigiert.",
+    "Restrisiko/Nächster_Schritt": "Konkrete Rechtsfundstelle je Messung eintragen.",
+    "Status": "Teilweise offen"
   },
   {
-    "Check": "Archetype count: higher_is_better_score",
-    "Result": 12,
-    "Interpretation": "Verteilung der Bewertungslogiken",
-    "Recommended_Action": "Für jede Archetype-Gruppe eine Methodenkarte online bereitstellen"
+    "Audit_ID": "A-010",
+    "Schweregrad": "Hoch",
+    "Bereich": "Schwellen",
+    "Befund": "Bei 10 Items war die Grenze zwischen −2 und −3 nicht operationalisiert.",
+    "Betroffene_Zeilen": 10,
+    "Korrektur_v1.3": "Automatik bildet nur die explizit sichere Klasse ab; Assurance kann verschärfen.",
+    "Restrisiko/Nächster_Schritt": "Fachgrenze durch Wirkungsrat festlegen.",
+    "Status": "Offen"
   },
   {
-    "Check": "Archetype count: lower_is_better_abs",
-    "Result": 129,
-    "Interpretation": "Verteilung der Bewertungslogiken",
-    "Recommended_Action": "Für jede Archetype-Gruppe eine Methodenkarte online bereitstellen"
+    "Audit_ID": "A-011",
+    "Schweregrad": "Kritisch",
+    "Bereich": "Fachquellen",
+    "Befund": "SROI/SDG17 wurde bei 120 Items als generischer Quellenplatzhalter verwendet.",
+    "Betroffene_Zeilen": 120,
+    "Korrektur_v1.3": "Als Platzhalter gekennzeichnet; konkrete Fachquelle erforderlich.",
+    "Restrisiko/Nächster_Schritt": "Indikatorfamilien einzeln operationalisieren.",
+    "Status": "Offen"
   },
   {
-    "Check": "Archetype count: near_zero_better",
-    "Result": 70,
-    "Interpretation": "Verteilung der Bewertungslogiken",
-    "Recommended_Action": "Für jede Archetype-Gruppe eine Methodenkarte online bereitstellen"
+    "Audit_ID": "A-012",
+    "Schweregrad": "Hoch",
+    "Bereich": "Reparierbarkeit",
+    "Befund": "12 Items vermischten EU- und französische Reparierbarkeitssysteme.",
+    "Betroffene_Zeilen": 12,
+    "Korrektur_v1.3": "Produktspezifischer Indexstatus und Quellen getrennt.",
+    "Restrisiko/Nächster_Schritt": "Produktgruppe, Indexsystem und Rechtsstand festlegen.",
+    "Status": "Offen"
   },
   {
-    "Check": "Archetype count: pue",
-    "Result": 9,
-    "Interpretation": "Verteilung der Bewertungslogiken",
-    "Recommended_Action": "Für jede Archetype-Gruppe eine Methodenkarte online bereitstellen"
+    "Audit_ID": "A-013",
+    "Schweregrad": "Hoch",
+    "Bereich": "Lokale Daten",
+    "Befund": "Stadt/GIS war bei 9 Items kein hinreichend bestimmter Datenbeleg.",
+    "Betroffene_Zeilen": 9,
+    "Korrektur_v1.3": "Datenhalter-/Layer-/Stichtag-Pflicht ergänzt.",
+    "Restrisiko/Nächster_Schritt": "Lokale Quellen je Anwendung eintragen.",
+    "Status": "Offen"
   },
   {
-    "Check": "Archetype count: reg_limit",
-    "Result": 14,
-    "Interpretation": "Verteilung der Bewertungslogiken",
-    "Recommended_Action": "Für jede Archetype-Gruppe eine Methodenkarte online bereitstellen"
+    "Audit_ID": "A-014",
+    "Schweregrad": "Mittel",
+    "Bereich": "Innovation",
+    "Befund": "Patentstatistik wurde bei 4 Items ohne Wirkungs- und Qualitätslogik verwendet.",
+    "Betroffene_Zeilen": 4,
+    "Korrektur_v1.3": "PATSTAT als Inputquelle, nicht als Wirkungsnachweis klassifiziert.",
+    "Restrisiko/Nächster_Schritt": "Patentqualität, Nutzung und Transformationswirkung ergänzen.",
+    "Status": "Offen"
   },
   {
-    "Check": "Core field count: Arbeit & Fairness",
-    "Result": 73,
-    "Interpretation": "Thematische Abdeckung",
-    "Recommended_Action": "Als Filter im Online-Explorer anbieten"
+    "Audit_ID": "A-015",
+    "Schweregrad": "Hoch",
+    "Bereich": "Biodiversität",
+    "Befund": "8 Net-Gain-Regeln waren qualitativ und nicht feldspezifisch operationalisiert.",
+    "Betroffene_Zeilen": 8,
+    "Korrektur_v1.3": "Assurance- und Kriterienpflicht ergänzt.",
+    "Restrisiko/Nächster_Schritt": "Methodik je Ökosystem, Baseline und Dauer festlegen.",
+    "Status": "Offen"
   },
   {
-    "Check": "Core field count: Bildung & Kompetenzen",
-    "Result": 23,
-    "Interpretation": "Thematische Abdeckung",
-    "Recommended_Action": "Als Filter im Online-Explorer anbieten"
-  },
-  {
-    "Check": "Core field count: Biodiversität/Boden",
-    "Result": 27,
-    "Interpretation": "Thematische Abdeckung",
-    "Recommended_Action": "Als Filter im Online-Explorer anbieten"
-  },
-  {
-    "Check": "Core field count: Energie",
-    "Result": 35,
-    "Interpretation": "Thematische Abdeckung",
-    "Recommended_Action": "Als Filter im Online-Explorer anbieten"
-  },
-  {
-    "Check": "Core field count: Gesundheit & Sicherheit",
-    "Result": 27,
-    "Interpretation": "Thematische Abdeckung",
-    "Recommended_Action": "Als Filter im Online-Explorer anbieten"
-  },
-  {
-    "Check": "Core field count: Governance & Demokratie",
-    "Result": 124,
-    "Interpretation": "Thematische Abdeckung",
-    "Recommended_Action": "Als Filter im Online-Explorer anbieten"
-  },
-  {
-    "Check": "Core field count: Innovation & Infrastruktur",
-    "Result": 9,
-    "Interpretation": "Thematische Abdeckung",
-    "Recommended_Action": "Als Filter im Online-Explorer anbieten"
-  },
-  {
-    "Check": "Core field count: Klima",
-    "Result": 36,
-    "Interpretation": "Thematische Abdeckung",
-    "Recommended_Action": "Als Filter im Online-Explorer anbieten"
-  },
-  {
-    "Check": "Core field count: Querschnitt",
-    "Result": 139,
-    "Interpretation": "Thematische Abdeckung",
-    "Recommended_Action": "Als Filter im Online-Explorer anbieten"
-  },
-  {
-    "Check": "Core field count: Ressourcen & Kreislauf",
-    "Result": 48,
-    "Interpretation": "Thematische Abdeckung",
-    "Recommended_Action": "Als Filter im Online-Explorer anbieten"
-  },
-  {
-    "Check": "Core field count: Stadt/Wohnen/Infrastruktur",
-    "Result": 19,
-    "Interpretation": "Thematische Abdeckung",
-    "Recommended_Action": "Als Filter im Online-Explorer anbieten"
-  },
-  {
-    "Check": "Core field count: Wasser",
-    "Result": 61,
-    "Interpretation": "Thematische Abdeckung",
-    "Recommended_Action": "Als Filter im Online-Explorer anbieten"
+    "Audit_ID": "A-016",
+    "Schweregrad": "Kritisch",
+    "Bereich": "Fachlogik",
+    "Befund": "Mindestens 12 Items zeigen deutliche Schablonenabweichungen zwischen Indikatorfamilie, Item und Definition.",
+    "Betroffene_Zeilen": 12,
+    "Korrektur_v1.3": "Kritische Prüfmarkierung im Register.",
+    "Restrisiko/Nächster_Schritt": "Indikatoren fachlich neu entwerfen; keine automatische Freigabe.",
+    "Status": "Offen"
   }
 ]

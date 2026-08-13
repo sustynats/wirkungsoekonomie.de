@@ -81,20 +81,20 @@ const priorityChapters = new Map([
   [30, {
     cluster: "Mess- und Bewertungslogik",
     terms: ["Wirkungsbewertung", "Datenqualität", "Wirkungsindikator"],
-    source: "Technische Leitlinien WUStG / WÖk Master Items v1.2",
+    source: "Technische Leitlinien WUStG / WÖk Master Items v1.3",
     text: "Die Messlogik der lebenden Referenz unterscheidet Berichtsdaten, Steuerungsdaten und Wirkungsdaten. Daten werden erst dann wirkungsökonomisch relevant, wenn sie auf Zustandsveränderungen, Datenqualität, Systemgrenzen und Rückkopplung bezogen werden."
   }],
   [31, {
     cluster: "Mess- und Bewertungslogik",
     terms: ["WÖk-ID", "Wirkungsindikator", "WÖk Master Items"],
-    source: "WOeK_Master_Items_final_v1.2.xlsx",
-    text: "Die WÖk-ID ist ein technischer und fachlicher Anker für Indikatoren, SDG/SDG+-Zuordnung, Datenqualität, Scorecards und digitale Produktpässe. Sie kennzeichnet Gegenstände, Prozesse oder Indikatoren – keine Menschen und keine persönliche Wertigkeit. Eine ID ersetzt weder eine Wirkungsgrenze noch eine begründete Bewertung."
+    source: "WOeK_Master_Items_v1.3_geprueft.xlsx",
+    text: "Die WÖk-ID ist ein technischer und fachlicher Anker für Indikatoren, SDG/SDG+-Zuordnung, Regelzuweisung, Systemgrenze, Datenqualität, Assurance und Scorecards. Sie kennzeichnet Gegenstände, Prozesse oder Indikatoren - keine Menschen und keine persönliche Wertigkeit. Leere Eingaben bleiben unbewertet; eine ID ersetzt weder eine Wirkungsgrenze noch eine begründete Bewertung."
   }],
   [32, {
     cluster: "Mess- und Bewertungslogik",
     terms: ["Scorecard", "Benchmark", "Archetyp", "FinalScore"],
-    source: "Technische Leitlinien WUStG / WÖk Master Items v1.2",
-    text: "Scorecards bleiben Bewertungsinstrumente, nicht die Wirkung selbst. Benchmarks, Archetypen und FinalScores müssen mit Datenqualität, Wirkungsgrenzen und Nichtkompensation verbunden werden."
+    source: "Technische Leitlinien WUStG / WÖk Master Items v1.3",
+    text: "Scorecards bleiben Bewertungsinstrumente, nicht die Wirkung selbst. Benchmarks, Regeln und FinalScores müssen mit Datenqualität, Wirkungsgrenzen, Assurance und Nichtkompensation verbunden werden. Nicht aktiv validierte Benchmarks werden nicht als aktive Bewertungsgrundlage ausgegeben."
   }],
   [33, {
     cluster: "Mess- und Bewertungslogik",
@@ -141,8 +141,8 @@ const priorityChapters = new Map([
   [50, {
     cluster: "Produkt- und Lieferkettenlogik",
     terms: ["Scorecard", "Reverse Merit Order", "Datenqualität"],
-    source: "Technische Leitlinien WUStG / WÖk Master Items v1.2",
-    text: "Produktscorecards werden mit WÖk-IDs, Datenqualität, Benchmarks und Reverse Merit Order verbunden. Sie sind Beispiel- und Steuerungsinstrumente, keine endgültige Rechtsanwendung ohne geprüfte Datenbasis."
+    source: "Technische Leitlinien WUStG / WÖk Master Items v1.3",
+    text: "Produktscorecards werden mit WÖk-IDs, Datenqualität, Benchmarkstatus, Assurance und Reverse Merit Order verbunden. Sie sind Beispiel- und Steuerungsinstrumente, keine endgültige Rechtsanwendung und keine automatische Entscheidung ohne geprüfte Datenbasis."
   }],
   [51, {
     cluster: "Produkt- und Lieferkettenlogik",
@@ -183,7 +183,7 @@ const priorityChapters = new Map([
   [85, {
     cluster: "Produkt- und Lieferkettenlogik",
     terms: ["Digitaler Produktpass", "DPP", "WÖk-ID", "NACE"],
-    source: "WP_Produkte / technische Leitlinien / WÖk Master Items v1.2",
+    source: "WP_Produkte / technische Leitlinien / WÖk Master Items v1.3",
     text: "Der digitale Produktpass wird als technische Brücke zwischen Produktdaten, WÖk-ID, Scorecards, Lieferkette und Rückkopplung verstanden. Er ersetzt keine Bewertung, sondern transportiert prüfbare Daten und Versionen."
   }],
   [104, {
@@ -508,8 +508,8 @@ Diese Dokumente werden als mögliche Aktualisierungsquellen der lebenden Referen
 - WStG_Oktober2025
 - Technische_Leitlinien_WUStG_Vollversion_Extended_v2
 - Beispiel_Apfel_Wirkungssteuer_Bonusregel
-- WOeK_Master_Items_final_v1.2.xlsx
-- WOeK_Master_Items_final_v1.2.pdf
+- WOeK_Master_Items_v1.3_geprueft.xlsx
+- WOeK_Master_Items_final_v1.2.pdf (historische Fassung)
 - Wirkungsrat_Konzept
 - Whitepaper-T-SROI
 - Wirkungsökonomie in der Lieferkette
@@ -765,7 +765,7 @@ export function buildCrossDocumentFindings() {
     ["WStG Oktober 2025", "/dokumente/wstg-oktober-2025/"],
     ["Technische Leitlinien WUStG", "/dokumente/technische-leitlinien-wustg-v2/"],
     ["Apfelbeispiel", "/dokumente/beispiel-apfel-wirkungssteuer-bonusregel/"],
-    ["WÖk Master Items", "/dokumente/woek-master-items-final-v1-2/"],
+    ["WÖk Master Items v1.3", "/bibliothek/woek-master-items-register/"],
     ["Wirkungsrat", "/dokumente/wirkungsrat-konzept/"],
     ["Whitepaper T-SROI", "/dokumente/whitepaper-t-sroi/"],
     ["Lieferkette", "/dokumente/wirkungsoekonomie-in-der-lieferkette/"],
@@ -955,7 +955,7 @@ export function checkSourceHierarchy() {
   const errors = [];
   if (!fs.existsSync("docs/LIVE_REFERENCE_SOURCE_HIERARCHY.md")) errors.push("Missing LIVE_REFERENCE_SOURCE_HIERARCHY.md");
   const hierarchy = fs.existsSync("docs/LIVE_REFERENCE_SOURCE_HIERARCHY.md") ? fs.readFileSync("docs/LIVE_REFERENCE_SOURCE_HIERARCHY.md", "utf8") : "";
-  for (const needle of ["Ebene 1", "Ebene 2", "Ebene 3", "Ebene 4", TERMINOLOGY_BASE, "WOeK_Master_Items_final_v1.2.xlsx"]) {
+  for (const needle of ["Ebene 1", "Ebene 2", "Ebene 3", "Ebene 4", TERMINOLOGY_BASE, "WOeK_Master_Items_v1.3_geprueft.xlsx"]) {
     if (!hierarchy.includes(needle)) errors.push(`Source hierarchy missing ${needle}`);
   }
   return errors;

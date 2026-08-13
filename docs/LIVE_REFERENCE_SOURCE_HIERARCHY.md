@@ -1,6 +1,6 @@
 # Live-Reference-Quellenhierarchie
 
-Stand: 2026-08-02
+Stand: 2026-08-13
 
 ## Ebene 1: Original / Source
 
@@ -22,8 +22,8 @@ Diese Dokumente werden als mögliche Aktualisierungsquellen der lebenden Referen
 - WStG_Oktober2025
 - Technische_Leitlinien_WUStG_Vollversion_Extended_v2
 - Beispiel_Apfel_Wirkungssteuer_Bonusregel
-- WOeK_Master_Items_final_v1.2.xlsx
-- WOeK_Master_Items_final_v1.2.pdf
+- WOeK_Master_Items_v1.3_geprueft.xlsx
+- WOeK_Master_Items_final_v1.2.pdf (historische Fassung)
 - Wirkungsrat_Konzept
 - Whitepaper-T-SROI
 - Wirkungsökonomie in der Lieferkette
