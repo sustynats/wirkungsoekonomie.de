@@ -445,6 +445,9 @@ function sanitizePublicDataString(value) {
     .replace(/Auszug aus der umfangreichen Korrekturfassung\.?/gi, "")
     .replace(/PDF-Fassung in Produktion\.?/gi, "")
     .replace(/Codex-Anweisung\.?/gi, "")
+    .replace(/(?:ChatGPT|OpenAI)-?(?:Bild|Image)\s*/gi, "Bilddatei ")
+    .replace(/(?:^|\n)\s*(?:updated_by|updatedBy)\s*:\s*(?:codex|claude|chatgpt|openai)\s*(?=\n|$)/gim, "")
+    .replace(/Aktualisiert durch:\s*(?:codex|claude|chatgpt|openai)\.?/gi, "")
     .replace(/(?:fachlich\s+)?finale\s+Codex(?:-Fassung)?[^.]*\.?/gi, "")
     .replace(/Claude(?:-CI\/CD)?[^.]*\.?/gi, "")
     .replace(/CI\/CD(?:-Satzfreigabe|-Freigabe)?[^.]*\.?/gi, "")
@@ -463,7 +466,17 @@ function sanitizePublicJsonValue(value) {
   if (typeof value === "string") return sanitizePublicDataString(value);
   if (Array.isArray(value)) return value.map(sanitizePublicJsonValue);
   if (value && typeof value === "object") {
-    const nonPublicMetadata = new Set(["internalnote", "internalnotes", "editorialnote", "editorialnotes"]);
+    const nonPublicMetadata = new Set([
+      "internalnote",
+      "internalnotes",
+      "editorialnote",
+      "editorialnotes",
+      "updated_by",
+      "updatedby",
+      "reviewed_by",
+      "reviewedby",
+      "claudereviewdigest",
+    ]);
     return Object.fromEntries(
       Object.entries(value)
         .filter(([key]) => !nonPublicMetadata.has(String(key).toLowerCase()))
@@ -471,6 +484,13 @@ function sanitizePublicJsonValue(value) {
     );
   }
   return value;
+}
+
+function stripAiTrackingParameters(content) {
+  return content
+    .replace(/([?&](?:amp;)*)((?:utm_source|utm_medium|utm_campaign))=(?:chatgpt|openai|claude|anthropic|gemini|copilot)(?:\.com)?/gi, (match, separator) => (separator.startsWith("?") ? "?" : ""))
+    .replace(/\?&(?:amp;)*/g, "?")
+    .replace(/[?&](?:amp;)*(?=["'\s<>]|$)/gi, "");
 }
 
 function stripPrivateDocumentLinks(content) {
@@ -515,14 +535,8 @@ function normalizePublicArtifactLinksAndText() {
     const before = content;
     const relative = toPosixRelative(file);
 
-    content = stripEditorialHtmlNotes(stripPrivateDocumentLinks(rewritePublicReleaseAssetReferences(content)))
+    content = stripAiTrackingParameters(stripEditorialHtmlNotes(stripPrivateDocumentLinks(rewritePublicReleaseAssetReferences(content))))
       .replace(/Claude\/Codex\/Hintergrundprozesse schreiben gleichzeitig in dieselben Bereiche\./gi, "Parallel laufende Arbeitsprozesse können gleichzeitig in dieselben Bereiche schreiben.")
-      .replace(/([?&])utm_source=chatgpt\.com(?:&amp;|&)?/gi, (match, separator) => {
-        if (match.endsWith("&amp;") || match.endsWith("&")) return separator;
-        return "";
-      })
-      .replace(/\?(&amp;|&)/g, "?")
-      .replace(/(?:\?|&(?:amp;)+|&)utm_source=chatgpt\.com/gi, "")
       .replaceAll(
         "docs/go2-produktionsreihenfolge/source/woek_go2_produktionsreihenfolge_detailkonzepte_v1_0.xlsx",
         "assets/downloads/go2-produktionsreihenfolge/woek_go2_produktionsreihenfolge_detailkonzepte_v1_0.xlsx",

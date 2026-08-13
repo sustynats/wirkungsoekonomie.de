@@ -79,14 +79,18 @@ function publicPath(file) {
   return path.basename(file);
 }
 
+function publicAssetName(value) {
+  return String(value || "").replace(/\b(?:ChatGPT|OpenAI)-(?:Bild|Image)\s*/gi, "Bilddatei ");
+}
+
 const allFiles = sourceRoots.flatMap((dir) => walk(dir));
 const inventory = allFiles
   .filter((file) => /\.(pdf|docx|docm|md|xlsx|png|jpe?g|pptx)$/i.test(file))
   .map((file) => {
     const stat = fs.statSync(file);
     return {
-      name: path.basename(file),
-      path: publicPath(file),
+      name: publicAssetName(path.basename(file)),
+      path: publicAssetName(publicPath(file)),
       sizeBytes: stat.size,
       modifiedAt: stat.mtime.toISOString(),
       extension: path.extname(file).slice(1).toLowerCase(),

@@ -140,6 +140,13 @@ function stripTags(value = "") {
     .trim();
 }
 
+function stripAiTrackingParameters(value = "") {
+  return String(value)
+    .replace(/([?&](?:amp;)*)(?:utm_source|utm_medium|utm_campaign)=(?:chatgpt|openai|claude|anthropic|gemini|copilot)(?:\.com)?(?=(?:&(?:amp;)?|["')\s<>]|$))/gi, (match, separator) => (separator.startsWith("?") ? "?" : ""))
+    .replace(/\?&(?:amp;)*/g, "?")
+    .replace(/[?&](?:amp;)*(?=["'\s<>]|$)/gi, "");
+}
+
 function cleanTitle(value = "") {
   return stripTags(value).replace(/\s+-\s+Wirkungsökonomie.*$/i, "").trim();
 }
@@ -737,7 +744,7 @@ function sourceCategory(id, text) {
 function collectReferenceSources(chapters) {
   const sourceMap = new Map();
   const addSource = (id, sourceText, chapter) => {
-    let cleanSourceText = String(sourceText || "").trim();
+    let cleanSourceText = stripAiTrackingParameters(sourceText).trim();
     if (!cleanSourceText || cleanSourceText === "." || cleanSourceText.startsWith("[I-") || cleanSourceText.startsWith("[E-")) {
       cleanSourceText = "Quelle im Kapitelquellenblock des Hauptwerks. Die Originalformulierung bleibt im Kapitel erhalten.";
     }
