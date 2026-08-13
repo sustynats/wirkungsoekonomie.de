@@ -11,15 +11,24 @@ ermöglicht eine korrekte Zustellung, einen erreichbaren Dialog und eine sichere
 Öffnungen, Klicks, politische Positionen oder Umfrageantworten als Kommunikationsprofil zu
 erfassen.
 
-Sichtbarer Absender, `From` und `Reply-To`:
+Für den späteren Versand ist folgende Absenderidentität festgelegt:
 
 ```text
-Wirkungsinstitut | Wahlkreis-Wirkungscheck <wirkungscheck@wirkungsoekonomie.de>
+Institut für Wirkungsökonomie | Wahlkreis-Wirkungscheck
+wirkungscheck@wirkungsoekonomie.de
 ```
 
-Die Bezeichnung „Wirkungsinstitut“ beschreibt die Projektkommunikation; das Impressum und die
-Datenschutzerklärung nennen vor dem Versand die tatsächlich verantwortliche Rechtsperson. Es wird
-keine Rechtsform behauptet, die nicht besteht.
+Der sichtbare `From` lautet entsprechend `Institut für Wirkungsökonomie | Wahlkreis-Wirkungscheck
+<wirkungscheck@wirkungsoekonomie.de>`; `Reply-To` verweist auf dieselbe betreute Adresse.
+`institut.wirkungsoekonomie.de` ist die institutionelle Webadresse, nicht die technische
+Versandmailbox. Die persönliche Absenderin ist Natalie Weber und wird in der Signatur genannt;
+die technische Mailbox bleibt unverändert.
+Das Impressum und die Datenschutzerklärung nennen vor dem Versand die tatsächlich verantwortliche
+Rechtsperson. Es wird keine Rechtsform behauptet, die nicht besteht.
+
+**Status:** Das ist eine Vorgabe für die noch ausstehende Versandfreigabe. Die vorhandene IONOS-
+Mailbox wird weder geändert noch zum Versand verwendet, bis DNS-Authentisierung und der rechtliche
+Versandprozess ausdrücklich freigegeben wurden.
 
 ## Getrennte Systeme
 
@@ -71,7 +80,8 @@ Die eingerichtete IONOS-Mailbox wird wie folgt verwendet:
 | SMTP | `smtp.ionos.de`, Port 587, STARTTLS, Authentifizierung |
 | SMTP-Benutzer | `wirkungscheck@wirkungsoekonomie.de` |
 | Rückläufer / Antworten | `imap.ionos.de`, Port 993, SSL |
-| Sichtbarer Absender und Reply-To | `wirkungscheck@wirkungsoekonomie.de` |
+| Sichtbarer Absender | `Institut für Wirkungsökonomie | Wahlkreis-Wirkungscheck <wirkungscheck@wirkungsoekonomie.de>` |
+| Reply-To | `wirkungscheck@wirkungsoekonomie.de` |
 
 Das IONOS-Passwort wird ausschließlich als Server-Secret bzw. in den geschützten
 Systemeinstellungen gespeichert. Es gehört weder in Git noch in die Website noch in eine

@@ -277,6 +277,104 @@
     }
   };
 
+  /* Der Fragebogen fragt noch nicht nach einem fertigen Gesetzentwurf. Damit
+     der Report trotzdem nicht bei Allgemeinplätzen bleibt, übersetzt diese
+     Ebene jede Themenwahl in prüfbare Entscheidungsobjekte, Zustandsmaße und
+     Abbruch- bzw. Korrektursignale. Das sind keine Zusagen über Wirkungen,
+     sondern Mindestanforderungen an eine belastbare Wirkannahme. */
+  var decisionContexts = {
+    wohnen: {
+      caseLabel: "den Zugang eines Haushalts zu einer angemessenen und tragbaren Wohnung",
+      decisionObject: "Anspruch, Schutzstandard, Förderzugang oder eine konkrete Bau- und Belegungsregel",
+      outcome: "ob Haushalte tatsächlich eine passende Wohnung erreichen und die laufende Belastung tragen können",
+      federalReadout: "Anzahl und Profil der erreichten Haushalte, neue beziehungsweise gesicherte Wohnungen, Wohnkostenbelastung und Dauer des Zugangswegs",
+      localReadout: "Wohnungssuche bis Vertragsabschluss, Ablehnungen nach Einkommens- oder Bedarfslage, gebundene Wohnungen und Verdrängungshinweise",
+      correctionTrigger: "Steigen Bewilligungen oder Fertigstellungen, ohne dass Haushalte mit niedrigerem Einkommen Zugang gewinnen oder die Belastung sinkt, muss Zugang, Bindung oder Mittelverwendung nachgesteuert werden.",
+      evidenceLimit: "Eine Veränderung der Wohnkostenbelastung zeigt einen Zustand, beweist aber nicht für sich allein die Wirkung einer einzelnen Bundesregel: Zinsen, Baukosten, Einkommen, Nachfrage und kommunale Planung wirken gleichzeitig."
+    },
+    gesundheit: {
+      caseLabel: "den Weg einer Person von Bedarf über Termin und Behandlung bis zur verlässlichen Weiterbehandlung",
+      decisionObject: "Zugangsstandard, Vergütungsregel, Übergabepflicht oder Versorgungsauftrag",
+      outcome: "ob Menschen passende Versorgung rechtzeitig erreichen und nicht zwischen Versorgungsstufen verloren gehen",
+      federalReadout: "Wartezeit bis zur passenden Versorgung, regionale Verfügbarkeit, Versorgungsabbrüche und vermeidbare Wiederaufnahmen",
+      localReadout: "Erreichbarkeit, Terminwege, Übergaben zwischen Praxis, Klinik, Pflege und Beratung sowie Wartezeiten nach Bedarfslage",
+      correctionTrigger: "Steigt die Zahl vergüteter Leistungen, während Wartezeiten, Abbrüche oder regionale Unterversorgung bestehen bleiben, müssen Kapazität, Übergabe oder Anreizlogik korrigiert werden.",
+      evidenceLimit: "Weniger Behandlungsfälle können erfolgreiche Prävention ebenso wie schlechteren Zugang bedeuten. Erst die gemeinsame Betrachtung von Zugang, Qualität, Kontinuität und Bedarf erlaubt eine belastbare Einordnung."
+    },
+    bildung: {
+      caseLabel: "den Weg von einem Anspruch oder Angebot zu tatsächlicher Teilnahme und einem gelungenen Übergang",
+      decisionObject: "Teilhaberecht, Qualitätsmindeststandard, Finanzierungszugang oder Übergaberegel",
+      outcome: "ob Kinder, Jugendliche oder Erwachsene teilnehmen können und Bildungs- oder Teilhabechancen stabiler werden",
+      federalReadout: "Teilnahme nach Ausgangslage, Wartelisten, Abbrüche, Übergänge und Qualitätsbedingungen",
+      localReadout: "Platzsuche, tatsächliche Teilnahme, Personalverfügbarkeit, Übergänge und Zugang für Familien mit höherem Unterstützungsbedarf",
+      correctionTrigger: "Erhöht sich die Zahl der Plätze oder Programme ohne Teilnahme, verlässliche Qualität oder gelingende Übergänge, müssen Personal, Zugang oder Qualitätsvorgaben angepasst werden.",
+      evidenceLimit: "Mehr Plätze, Geräte oder Projekte belegen keine Bildungswirkung. Entscheidend sind tatsächliche Teilnahme, Qualität und Übergänge – getrennt nach den Ausgangslagen der betroffenen Gruppen."
+    },
+    arbeit: {
+      caseLabel: "den Übergang einer Person von Arbeitslosigkeit oder Qualifizierung in tragfähige Beschäftigung",
+      decisionObject: "Zugangsregel, Qualifizierungsanreiz, Absicherungsinstrument oder Vermittlungsstandard",
+      outcome: "ob Menschen in passende, stabile Arbeit übergehen und nicht lediglich kurzfristig aus einer Statistik fallen",
+      federalReadout: "Übergänge in Beschäftigung, Abschluss von Qualifizierung, Verbleib nach sechs und zwölf Monaten sowie Arbeitsqualität",
+      localReadout: "Beratungszugang, passgenaue Qualifizierung, Übergänge zu regionalen Betrieben und Abbrüche nach Ausgangslage",
+      correctionTrigger: "Steigt die schnelle Vermittlung, während Abbrüche, instabile Beschäftigung oder Ausschlüsse zunehmen, muss die Anreizlogik von Tempo auf nachhaltigen Übergang umgestellt werden.",
+      evidenceLimit: "Eine sinkende Arbeitslosenquote kann viele Ursachen haben und sagt weder etwas über Arbeitsqualität noch über die Stabilität oder Zugänglichkeit eines Übergangs aus."
+    },
+    wirtschaft: {
+      caseLabel: "die Entscheidung eines Betriebs für eine zusätzliche, resilienzstärkende Investition",
+      decisionObject: "Investitionsregel, Förderkriterium, Zugang zu Finanzierung oder Transformationsstandard",
+      outcome: "ob zusätzliche Anpassungsfähigkeit und tragfähige Beschäftigung entstehen statt ohnehin geplanter Aktivitäten finanziert zu werden",
+      federalReadout: "Zusätzlichkeit der Investition, Energie- und Materialintensität, Unternehmensüberleben sowie Beschäftigungsqualität",
+      localReadout: "Zugang kleiner und mittlerer Betriebe, Investitionsentscheidung, Qualifizierungsbedarf und regionale Beschäftigungsfolgen",
+      correctionTrigger: "Fließen Mittel überwiegend an ohnehin geplante Vorhaben oder nur an große, antragsstarke Betriebe, müssen Zusätzlichkeitsnachweis und Zugangskriterien geändert werden.",
+      evidenceLimit: "Mittelabfluss und höhere Investitionen belegen keine zusätzliche Transformation. Ohne Gegenfaktik bleibt offen, was auch ohne den Impuls geschehen wäre und wer vom Zugang ausgeschlossen wurde."
+    },
+    energie: {
+      caseLabel: "den Anschluss und die verlässliche Versorgung eines Haushalts, Betriebs oder einer öffentlichen Einrichtung",
+      decisionObject: "Planungs- oder Anschlussregel, Netz- und Effizienzanreiz oder Umsetzungsauftrag",
+      outcome: "ob Versorgung, Anschluss, Kosten und Resilienz für die betroffenen Nutzergruppen tatsächlich besser werden",
+      federalReadout: "Anschlussdauer, verfügbare Netzkapazität, Unterbrechungen, Kostenbelastung und regionale Verteilung",
+      localReadout: "Wartezeit auf Anschluss, Engpassorte, Kostenwirkung für Haushalte und Betriebe sowie Konflikte um Flächen und Genehmigung",
+      correctionTrigger: "Werden Projekte oder Fördermittel sichtbar, aber Anschlusszeiten, Kosten oder Versorgungssicherheit verbessern sich nicht, müssen Netz-, Genehmigungs- oder Zugangshürden zuerst bearbeitet werden.",
+      evidenceLimit: "Die Zahl geförderter Anlagen oder Projekte belegt weder eine sichere Versorgung noch eine faire Kostenwirkung. Netze, Anschlüsse, Preise und Verteilungsfolgen müssen getrennt beobachtet werden."
+    },
+    mobilitaet: {
+      caseLabel: "die reale Erreichbarkeit von Arbeit, Bildung und Versorgung für eine Person ohne verlässliche Alternative",
+      decisionObject: "Erreichbarkeitsstandard, Finanzierungsregel, Planungszuständigkeit oder Betriebsauftrag",
+      outcome: "ob Wege tatsächlich verlässlich, bezahlbar und barrierearm zurückgelegt werden können",
+      federalReadout: "Reisezeit zu zentralen Zielen, Pünktlichkeit, Ausfälle, Barrierefreiheit und Verteilung der Erreichbarkeit",
+      localReadout: "erste und letzte Meile, Anschlüsse, Ausfälle, Fahrzeit und Zugänglichkeit für unterschiedliche Orte und Gruppen",
+      correctionTrigger: "Verbessert sich eine Hauptachse, während Anschlüsse, Randlagen oder Barrierefreiheit schlechter werden, muss die Maßnahme vor einer Ausweitung umgestaltet werden.",
+      evidenceLimit: "Mehr Fahrten, Straßenkilometer oder geförderte Fahrzeuge zeigen keine verbesserte Erreichbarkeit. Entscheidend sind verlässliche Wege zu realen Zielen, bezahlbar und barrierearm für unterschiedliche Gruppen."
+    },
+    klima: {
+      caseLabel: "den Schutz einer gefährdeten Person, Einrichtung oder Fläche vor einer konkret benannten Klimafolge",
+      decisionObject: "Vorsorge- oder Planungsstandard, Finanzierungszugang, Schutzpflicht oder Umsetzungsauftrag",
+      outcome: "ob Exposition und Verwundbarkeit sinken, ohne Risiken oder ökologische Schäden zu verlagern",
+      federalReadout: "Exposition, geschützte Personen und Einrichtungen, vermiedene Schäden sowie ökologische Nebenwirkungen",
+      localReadout: "betroffene Orte und Gruppen, Schutzlücken, Pflege und Dauerhaftigkeit der Maßnahme sowie Flächen- und Naturkonflikte",
+      correctionTrigger: "Senkt eine Maßnahme ein lokales Risiko, verlagert aber Belastungen, Naturverlust oder Schutzlücken an andere Orte, darf sie nicht als positive Netto-Wirkung gelten.",
+      evidenceLimit: "Ein einzelnes Ereignis oder ein kurzfristiger Rückgang von Schäden beweist keine Resilienzwirkung. Exposition, Vulnerabilität, Dauerhaftigkeit und ökologische Nebenfolgen müssen über Zeit betrachtet werden."
+    },
+    digital: {
+      caseLabel: "den erfolgreichen Abschluss eines Verwaltungs- oder Alltagsanliegens über einen digitalen und gleichwertigen analogen Zugang",
+      decisionObject: "Interoperabilitäts- oder Zugangsstandard, Finanzierung, Vollzugsvorgabe oder Rückkopplungsregel",
+      outcome: "ob Anliegen sicher, verständlich und ohne neue Ausschlüsse erledigt werden können",
+      federalReadout: "Abschlussquote, Bearbeitungsdauer, Medienbrüche, Supportfälle, Ausfälle und analoge Gleichwertigkeit",
+      localReadout: "tatsächliche Nutzung, Abbrüche, Hilfebedarf, analoge Alternative und Verteilung der Zugangsprobleme",
+      correctionTrigger: "Sinkt die Bearbeitungszeit nur für digital versierte Gruppen oder steigen Abbrüche und Supportfälle, müssen Zugang, Unterstützung und analoge Gleichwertigkeit vor einer Skalierung gesichert werden.",
+      evidenceLimit: "Eine höhere Online-Nutzung oder kürzere digitale Bearbeitung beweist keinen besseren Zugang. Abbrüche, Hilfebedarf, Datenschutz, Ausfälle und die gleichwertige analoge Alternative bleiben Teil der Wirkungsprüfung."
+    },
+    staat: {
+      caseLabel: "den Weg eines Antrags, einer Genehmigung oder eines sonstigen Verwaltungsfalls bis zu einer rechtssicheren Entscheidung",
+      decisionObject: "Anspruchs- oder Verfahrensregel, Vollzugspaket oder verbindliche Rückkopplung",
+      outcome: "ob Menschen und Organisationen ihr Anliegen rechtzeitig, verständlich und mit wirksamem Rechtsschutz erledigen können",
+      federalReadout: "Bearbeitungsdauer nach Verfahrensart, erfolgreiche Abschlüsse, Widersprüche, Abbrüche, Vollzugskosten und ungleiche Zugänge",
+      localReadout: "Zahl der Schritte und Nachweise, Wartezeit, Rückfragen, Abbrüche, Widersprüche, Personal- und IT-Belastung im konkreten Verfahren",
+      correctionTrigger: "Sinkt die formale Bearbeitungszeit, während Widersprüche, Abbrüche, Fehler oder ungedeckte Mehrarbeit steigen, muss das Verfahren vor einer breiten Ausweitung korrigiert werden.",
+      evidenceLimit: "Eine kürzere Durchlaufzeit ist zunächst Verwaltungswirkung. Sie belegt nicht, dass ein Anliegen rechtssicherer, verständlicher oder für alle Gruppen besser zugänglich entschieden wird."
+    }
+  };
+
   var bottleneckChecks = {
     finanzierung: "Die Mittel- und Anreizarchitektur muss den begrenzenden Faktor treffen; sonst steigt der Mitteleinsatz ohne entsprechende Zustandsveränderung.",
     personal: "Ohne verfügbare und qualifizierte Menschen bleibt ein Rechtsanspruch, Förderprogramm oder Standard vor Ort begrenzt vollziehbar.",
@@ -292,6 +390,67 @@
     risiko_oekologisch: "Die positive Netto-Wirkung entfällt, wenn eine schwerwiegende negative Umweltwirkung durch andere Vorteile verdeckt würde.",
     risiko_recht: "Die positive Netto-Wirkung entfällt, wenn Rechtsschutz, Beteiligung oder diskriminierungsfreier Zugang eingeschränkt werden."
   };
+
+  function roleDecisionCheck(role, domain) {
+    if (role === "bund_recht") {
+      return "Rechtsrahmen: Der Entwurf für " + domain.decisionObject + " muss für " + domain.caseLabel + " Anspruch oder Geltung, zuständige Stelle, zulässige Nachweise, Frist beziehungsweise Verfahrensfolge und Rechtsschutz eindeutig festlegen. Jeder zusätzliche Nachweis und jeder zusätzliche Entscheidungsschritt braucht eine begründete Wirkungsfunktion.";
+    }
+    if (role === "bund_finanzierung") {
+      return "Finanzierungsarchitektur: Die Mittel oder Anreize müssen an " + domain.decisionObject + " und an " + domain.outcome + " gebunden werden. Vorab festzulegen sind Zielgruppe, Zugang, beabsichtigte Zusätzlichkeit, Folgekosten nach Förderende und die Stelle, die Fehlsteuerungen korrigiert.";
+    }
+    if (role === "bund_vollzug") {
+      return "Vollzugspaket: Vor dem Beschluss müssen für " + domain.caseLabel + " Fallzahl, Personal- und Kompetenzbedarf, IT- und Datenübergaben, Übergangsfrist, Finanzierung und Rückmeldung aus Ländern und Kommunen verbindlich geklärt sein. Ein neuer Bundesauftrag ohne diese Voraussetzungen verschiebt nur Lasten.";
+    }
+    if (role === "bund_rueckkopplung") {
+      return "Rückkopplungsregel: Der Beschluss muss eine Ausgangslage, die Indikatoren, einen Beobachtungszeitpunkt, eine nach Gruppen und Orten getrennte Auswertung sowie eine entscheidungsbefugte Stelle festlegen. Ein Bericht ohne vorab definierte Korrekturentscheidung ist keine Rückkopplung.";
+    }
+    return null;
+  }
+
+  function bottleneckDecisionCheck(id, domain) {
+    if (id === "verfahren") {
+      return "Verfahrensprüfung vor der Ausweitung: Den heutigen und den vorgesehenen Weg für " + domain.caseLabel + " Schritt für Schritt vergleichen – Eingabe, Nachweis, Zuständigkeit, Wartepunkt, Entscheidung und Rechtsbehelf. Eine Beschleunigung ist nicht belegt, wenn nur ein interner Schritt schneller wird und Rückfragen, Ablehnungen oder Widersprüche steigen.";
+    }
+    if (id === "finanzierung") {
+      return "Finanzierungsprüfung vor der Ausweitung: Für " + domain.decisionObject + " den tatsächlich begrenzenden Kostenpunkt, die Trägerschaft, die Dauerfinanzierung und die Verteilungswirkung offenlegen. Mehr Mittel ohne Zugang zum begrenzenden Faktor sind kein Wirkungsnachweis.";
+    }
+    if (id === "personal") {
+      return "Kapazitätsprüfung vor der Ausweitung: Für " + domain.caseLabel + " benötigte Qualifikation, verfügbare Zeit, Ersatz bei Ausfall und Lernaufwand bestimmen. Ein Anspruch oder Programm verändert den Zustand nicht, wenn die erforderliche Arbeit nicht geleistet werden kann.";
+    }
+    if (id === "daten") {
+      return "Wirkungsdatenprüfung vor der Ausweitung: Baseline, Zielgruppe, Gegenprüfung und Korrekturentscheidung für " + domain.outcome + " festlegen. Zählen allein, wie viele Fälle, Mittel oder Projekte es gibt, reicht nicht.";
+    }
+    if (id === "koordination") {
+      return "Schnittstellenprüfung vor der Ausweitung: Für " + domain.caseLabel + " muss jede Übergabe zwischen Bund, Land, Kommune und Träger eine verantwortliche Stelle, eine Frist, Finanzierung und einen Eskalationsweg haben. Sonst wird eine Bundesregel an der Übergabe wirkungslos.";
+    }
+    if (id === "infrastruktur") {
+      return "Zugangsprüfung vor der Ausweitung: Räumliche, technische und organisatorische Kapazität für " + domain.caseLabel + " muss dort verfügbar sein, wo die Regel Nachfrage oder Verpflichtungen auslöst. Ein formaler Anspruch ohne erreichbaren Zugang ist keine tatsächliche Wirkung.";
+    }
+    return null;
+  }
+
+  function decisionPlan(topicId, roles, bottlenecks, context) {
+    var domain = decisionContexts[topicId];
+    if (!domain) return null;
+    return {
+      decisionObject: domain.decisionObject,
+      caseLabel: domain.caseLabel,
+      outcome: domain.outcome,
+      modelPath: [
+        "Bundesentscheidung: " + domain.decisionObject + ".",
+        "Umsetzungssituation: " + domain.caseLabel + ".",
+        "Zu prüfende Zustandsveränderung: " + domain.outcome + ".",
+        "Rückkopplung: " + domain.federalReadout + "."
+      ],
+      federalChecks: roles.map(function (role) { return roleDecisionCheck(role, domain); }).filter(Boolean),
+      bottleneckChecks: bottlenecks.map(function (id) { return bottleneckDecisionCheck(id, domain); }).filter(Boolean),
+      federalReadout: domain.federalReadout,
+      localReadout: domain.localReadout,
+      correctionTrigger: domain.correctionTrigger,
+      evidenceLimit: domain.evidenceLimit,
+      districtReference: context && context.districtName ? context.districtName : null
+    };
+  }
 
   function selectedFirst(answers, field) {
     var values = answers[field] || [];
@@ -319,6 +478,7 @@
     var direct = roles.map(function (role) { return profile.roles[role]; }).filter(Boolean);
     var constraints = bottlenecks.map(function (id) { return bottleneckChecks[id]; }).filter(Boolean);
     var locks = redLines.map(function (id) { return riskLocks[id]; }).filter(Boolean);
+    var plan = decisionPlan(topicId, roles, bottlenecks, context);
 
     return {
       topicId: topicId,
@@ -330,7 +490,8 @@
       constraints: constraints,
       signals: profile.signals,
       risks: unique(profile.risks.concat(locks)),
-      overall: "Die beabsichtigte Gesamtwirkung kann nur als positive Netto-Wirkung gelten, wenn der bundespolitische Eingriff den benannten Engpass erreicht, die Wirkung für Betroffene eintritt und keine der ausgewählten roten Linien verletzt wird.",
+      decisionPlan: plan,
+      overall: "Die beabsichtigte Gesamtwirkung kann nur als positive Netto-Wirkung gelten, wenn " + (plan ? plan.decisionObject : "der bundespolitische Eingriff") + " den benannten Engpass erreicht, die behauptete Zustandsveränderung für Betroffene tatsächlich eintritt und keine der ausgewählten roten Linien verletzt wird.",
       context: context || {}
     };
   }

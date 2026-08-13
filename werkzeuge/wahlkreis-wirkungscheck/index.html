@@ -6,7 +6,7 @@
 <title>Wahlkreis-Wirkungscheck | Wirkungsökonomie</title>
 <meta name="description" content="Parteiunabhängiger Wirkungscheck für Mitglieder des Deutschen Bundestages: Bundespolitik mit nachvollziehbaren direkten und indirekten Folgen sowie Rückkopplung aus dem Wahlkreis.">
 <meta name="theme-color" content="#0B1020">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'none'; font-src 'self'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self' https://130.162.217.58.sslip.io; font-src 'self'; object-src 'none'">
 <link rel="icon" href="../../assets/img/brand/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="../../assets/css/wahlkreis-wirkungscheck.css">
 </head>
@@ -56,7 +56,7 @@
           <a class="wc-btn wc-btn--secondary" href="#methodik">So funktioniert die Methodik</a>
         </div>
         <p class="wc-meta" style="color:#D9D3C9;margin-top:.75rem">
-          Etwa 5 Minuten · 10 Fragen · Abbrechen jederzeit möglich
+          Etwa 8 Minuten · drei Teile · Abbrechen jederzeit möglich
         </p>
         <ul class="wc-trustline">
           <li>Parteiunabhängig</li>
@@ -106,8 +106,8 @@
         <ol class="wc-steps" style="margin-top:1.5rem;max-width:68ch">
           <li><strong>Bundespolitische Frage mit Rückkopplung auf zwei Ebenen</strong>
             <p class="wc-muted">Der Wahlkreis ist freiwilliger Kontext, nicht die Grenze der politischen Frage. Bundes- und Wahlkreisebene bleiben nebeneinander sichtbar.</p></li>
-          <li><strong>Zehn kurze Fragen zu Prioritäten und Engpässen</strong>
-            <p class="wc-muted">Etwa 4 Minuten. Jede Antwort ist jederzeit änderbar.</p></li>
+          <li><strong>Neutrale Diagnose, dann Instrumentenmodule</strong>
+            <p class="wc-muted">Zuerst etwa 4 Minuten zu Prioritäten und Engpässen. Danach folgen kurze, neutrale Erklärungen zu sechs Instrumenten der Wirkungsökonomie. Ihre Instrumentenbewertung verändert die Diagnose nicht.</p></li>
           <li><strong>Angaben prüfen und korrigieren</strong>
             <p class="wc-muted">Etwa 20 Sekunden.</p></li>
           <li><strong>Report lesen, Herleitung öffnen, als PDF sichern</strong>
@@ -134,8 +134,10 @@
         <h2 class="wc-h2" style="margin-top:2.5rem">Was mit Ihren Angaben geschieht</h2>
         <p class="wc-body wc-muted">
           Ihre Antworten bleiben ausschliesslich in Ihrem Browser. Es gibt kein Konto, keine
-          Anmeldung und keine Übertragung im Hintergrund. Dieser veröffentlichte Fragebogen
-          bietet keine Datenübertragung an. Sie können jederzeit alle lokalen Daten löschen.
+          Anmeldung und keine Übertragung im Hintergrund. Nur wenn Sie am Ende ausdrücklich eine
+          WÖK-KI-Auswertung anfordern, werden die dafür freigegebenen Angaben an den
+          WÖK-KI-Dienst übermittelt. Hinweise zur Verarbeitung stehen in der Datenschutzerklärung.
+          Sie können jederzeit alle lokalen Daten löschen.
         </p>
         <div class="wc-btn-row" style="margin-top:1rem">
           <button type="button" class="wc-btn wc-btn--quiet" data-trust aria-haspopup="dialog">
@@ -148,7 +150,7 @@
     <section class="wc-band--deep wc-section">
       <div class="wc-shell">
         <h2 class="wc-h2">Bereit?</h2>
-        <p class="wc-lead wc-muted">Etwa 5 Minuten. Sie können jederzeit abbrechen, ohne dass etwas übertragen wird.</p>
+        <p class="wc-lead wc-muted">Etwa 8 Minuten. Sie können jederzeit abbrechen, ohne dass etwas übertragen wird.</p>
         <div class="wc-btn-row wc-btn-row--stack" style="margin-top:1.5rem">
           <button type="button" class="wc-btn wc-btn--primary" id="landing-start-2">Wirkungscheck starten</button>
         </div>
@@ -180,7 +182,7 @@
     <section class="wc-section">
       <div class="wc-shell wc-shell--narrow">
         <p class="wc-eyebrow">Bevor es losgeht</p>
-        <h1 class="wc-h1" id="intro-h1">Zehn Fragen zu Wirkung statt zu Meinung</h1>
+        <h1 class="wc-h1" id="intro-h1">Drei Teile zu Wirkung statt zu Meinung</h1>
         <p class="wc-body wc-muted">
           Die folgenden Fragen betreffen Zustände, die sich verändern sollen, und die Stellen, an
           denen Veränderung derzeit hängt. Es gibt keine richtigen und keine falschen Antworten.
@@ -206,8 +208,9 @@
           </div>
         </div>
         <p class="wc-note" style="margin-top:2rem">
-          Etwa 4 Minuten. Sie können jede Antwort jederzeit ändern und die Befragung jederzeit
-          abbrechen.
+          Zuerst etwa 4 Minuten für die neutrale Diagnose. Anschließend folgen kurze,
+          erklärende Instrumentenmodule. Die Gesamtzeit beträgt etwa 8 Minuten. Sie können jede
+          Antwort jederzeit ändern und die Befragung jederzeit abbrechen.
         </p>
         <div class="wc-btn-row wc-btn-row--stack" style="margin-top:1.5rem">
           <button type="button" class="wc-btn wc-btn--primary" id="intro-start">Mit Frage 1 beginnen</button>
@@ -325,6 +328,12 @@
             <div id="report-analysis" style="margin-top:1rem"></div>
           </section>
 
+          <section class="wc-reportsection" id="rs-trajectory">
+            <h2 class="wc-h2">Modellierter Wirkpfad · Daten und Korrektur</h2>
+            <p class="wc-muted">Die Kurven zeigen keine Zahlenprognose. Sie trennen das Wirkungspotenzial Ihrer Auswahl vom Risikopfad, falls ein Engpass oder eine rote Linie nicht bearbeitet wird.</p>
+            <div id="report-trajectory" style="margin-top:1rem"></div>
+          </section>
+
           <section class="wc-reportsection" id="rs-sens">
             <h2 class="wc-h2">Was würde sich ändern, wenn</h2>
             <p class="wc-muted">Verschieben Sie probeweise Ihre Gewichtung.
@@ -350,10 +359,23 @@
             <div id="report-overall" style="margin-top:1rem"></div>
           </section>
 
+          <section class="wc-reportsection" id="rs-instruments">
+            <h2 class="wc-h2">Instrumente wirkungsorientierter Politik</h2>
+            <p class="wc-muted">Die Diagnose oben beruht ausschließlich auf Ihren neutralen Kernangaben. Dieser Abschnitt zeigt getrennt, welche Instrumente dazu methodisch passen könnten und wie Sie diese selbst bewertet haben. Er enthält keine Zustimmungspunktzahl und keine Personen- oder Parteibewertung.</p>
+            <div id="report-instruments" style="margin-top:1rem"></div>
+          </section>
+
+          <section class="wc-reportsection" id="rs-woek-ai">
+            <h2 class="wc-h2">Persönliche WÖK-KI-Auswertung · freiwillig</h2>
+            <p class="wc-muted">Die WÖK-KI liest nur die von Ihnen freigegebenen Reportangaben. Sie erklärt Wirkungspfad, Zielkonflikte, Evidenzlücken und Rückkopplung; sie bewertet weder Personen noch Parteien und gibt keine Wahlempfehlung.</p>
+            <div id="report-woek-ai" style="margin-top:1rem"></div>
+          </section>
+
           <section class="wc-reportsection" id="rs-optin">
             <h2 class="wc-h2" id="consent-q">Datenschutz</h2>
-            <p class="wc-muted">Ihr Report bleibt in diesem Browser. Der veröffentlichte Fragebogen
-              überträgt keine Antworten und verwendet keine Analyse- oder Drittanbieter-Dienste.</p>
+            <p class="wc-muted">Ihr regelbasierter Report bleibt in diesem Browser. Nur die freiwillige
+              WÖK-KI-Auswertung übermittelt die von Ihnen dort ausdrücklich freigegebenen Angaben an den WÖK-KI-Dienst.
+              <a href="../../datenschutz.html#woek-ki" target="_blank" rel="noopener noreferrer">Mehr erfahren</a>.</p>
             <div id="report-consent" style="margin-top:1rem"></div>
           </section>
 
@@ -381,8 +403,12 @@
             <li><a href="#rs-levers">Wirkungshebel</a></li>
             <li><a href="#rs-paths">Prüfpfade</a></li>
             <li><a href="#rs-mpd">Direkte und indirekte Folgen</a></li>
+            <li><a href="#rs-trajectory">Modellierter Wirkpfad</a></li>
             <li><a href="#rs-sens">Sensitivität</a></li>
             <li><a href="#rs-kit">Politik-Kit</a></li>
+            <li><a href="#rs-overall">Gesamtwirkung</a></li>
+            <li><a href="#rs-instruments">Instrumente</a></li>
+            <li><a href="#rs-woek-ai">WÖK-KI-Auswertung</a></li>
             <li><a href="#rs-optin">Datenschutz</a></li>
             <li><a href="#rs-save">Report sichern</a></li>
           </ul>
@@ -391,7 +417,7 @@
     </div>
   </div>
 
-<section class="section" aria-labelledby="political-implementation">
+      <section class="section" aria-labelledby="political-implementation">
     <div class="card">
       <p class="hero-kicker">Umsetzung</p>
       <h2 id="political-implementation">Politische Anschlussfähigkeit und Umsetzungsoptionen <a class="cite-anchor no-print" href="#political-implementation" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
@@ -414,7 +440,7 @@
     </ul>
     <p>Keine Personenbewertung. Keine Wahlempfehlung. Keine Rangliste von Abgeordneten oder Parteien.</p>
     <p class="wc-meta" style="color:#D9D3C9">
-      Amtliche Wahlkreisdaten 2025 · Methodik-Version 2026.2 · Keine Datenübertragung aus diesem Fragebogen
+      Amtliche Wahlkreisdaten 2025 · Methodik-Version 2026.4 · Regelbasierte Auswertung lokal · WÖK-KI nur auf ausdrücklichen Wunsch
     </p>
   </div>
 </footer>
@@ -437,8 +463,10 @@
 <div class="wc-sr" id="wc-live-assertive" role="alert" aria-live="assertive"></div>
 
 <script src="../../assets/js/wahlkreis-wirkungscheck/data-2025.js"></script>
+<script src="../../assets/js/wahlkreis-wirkungscheck/instruments-2026.js"></script>
 <script src="../../assets/js/wahlkreis-wirkungscheck/check-config.js"></script>
 <script src="../../assets/js/wahlkreis-wirkungscheck/rules.js"></script>
+<script src="../../assets/js/woek-ai-client.js"></script>
 <script src="../../assets/js/wahlkreis-wirkungscheck/app.js"></script>
 </body>
 </html>

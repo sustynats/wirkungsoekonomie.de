@@ -5,7 +5,9 @@
   "use strict";
 
   var data = window.WC_DATA;
+  var instrumentData = window.WC_INSTRUMENTS;
   if (!data) throw new Error("WC_DATA muss vor WC_CHECK geladen werden.");
+  if (!instrumentData) throw new Error("WC_INSTRUMENTS muss vor WC_CHECK geladen werden.");
 
   var sources = Object.assign({}, data.sources, {
     method: {
@@ -22,7 +24,10 @@
 
   window.WC_CHECK = Object.assign({}, data, {
     sources: sources,
-    methodVersion: "2026.3",
+    methodVersion: "2026.4",
+    instrumentModuleVersion: instrumentData.version,
+    instruments: instrumentData.instruments,
+    instrumentQuestions: instrumentData.questions,
     topics: [
       { id: "wohnen", label: "Bezahlbares Wohnen", hint: "Kosten, Verfügbarkeit und Wohnsicherheit", field: "Soziales" },
       { id: "gesundheit", label: "Gesundheit und Pflege", hint: "Zugang, Verlässlichkeit und Versorgung", field: "Soziales" },
@@ -101,7 +106,9 @@
       { label: "Wirkung verstehen", href: "../../wirkungsoekonomie.html", text: "Wirkung ist die tatsächliche Veränderung eines Zustands, nicht Reichweite oder bloße Umsetzung." },
       { label: "Wirkungsrisiken prüfen", href: "../wirkungsrisiko-matrix/index.html", text: "Positive Folgen an einer Stelle kompensieren schwere negative Folgen an anderer Stelle nicht." },
       { label: "Reverse Merit Order", href: "../reverse-merit-order/index.html", text: "Zuerst den begrenzenden Faktor bearbeiten, statt Ressourcen dort zu erhöhen, wo sie kaum zusätzliche Wirkung auslösen." },
-      { label: "Wirkungscontrolling", href: "../impact-controlling/index.html", text: "Reporting wird erst durch Rückkopplung zur Steuerung." }
+      { label: "Wirkungscontrolling", href: "../impact-controlling/index.html", text: "Reporting wird erst durch Rückkopplung zur Steuerung." },
+      { label: "Das Grundlagenwerk online lesen", href: "../../buch.html", text: "Die neue Ordnung des Wohlstands erklärt die Wirkungsökonomie im Zusammenhang." },
+      { label: "Buch als PDF herunterladen", href: "../../assets/pdf/die-neue-ordnung-des-wohlstands.pdf", download: true, text: "Kostenloser PDF-Download des vollständigen Grundlagenwerks von Natalie Weber." }
     ],
     toolkit: {
       pruefrage: "Welche direkte Veränderung soll die bundespolitische Maßnahme auslösen, wie wird ihre Folgewirkung beobachtet, und welche Wirkungsrisiken schließen wir aus?",
