@@ -2,6 +2,65 @@
    Design System v1.0 - siehe docs/wirkungscheck/DESIGN_SYSTEM.md
    Praefix wc-. Greift nicht in assets/css/style.css ein. */
 
+/* Selbst gehostet: Der Wirkungscheck lädt keine Schrift von einem Drittanbieter.
+   Ohne diese Deklarationen fielen Überschriften auf Georgia und Lauftext auf die
+   jeweilige Systemschrift zurück, obwohl das Design Inter und Source Serif nutzt. */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/inter-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/inter-500.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/inter-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/inter-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/source-serif-4-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/source-serif-4-600.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/source-serif-4-700.woff2") format("woff2");
+}
+
 /* ---------------------------------------------------------------- 1. Token */
 
 :root {
@@ -347,6 +406,101 @@ h1.wc-h1 {
 
 .wc-scroll-x:focus-visible {
   outline-offset: 0;
+}
+
+/* Der politische Umsetzungsrahmen ist ein eigenständiger, öffentlicher
+   Inhaltsteil. Er verwendet bewusst nur die Komponenten dieses Tools; die
+   generischen Klassen der Hauptwebsite wuerden hier ohne deren Stylesheet am
+   Viewportrand beginnen und typografisch aus dem Raster fallen. */
+.wc-implementation__intro {
+  max-width: 68ch;
+}
+
+.wc-implementation__intro .wc-h2 {
+  margin-bottom: var(--wc-space-3);
+}
+
+/* Verhindert, dass ein Aufruf über den Zitierlink die Überschrift unter der
+   festen Kopfzeile versteckt. */
+#political-implementation {
+  scroll-margin-top: calc(var(--wc-header-h) + var(--wc-space-4));
+}
+
+.wc-cite-anchor {
+  margin-left: 0.2em;
+  color: var(--wc-green-dark);
+  font-family: var(--wc-font-body);
+  font-size: 0.7em;
+  font-weight: 700;
+  text-decoration: none;
+  vertical-align: 0.08em;
+}
+
+.wc-cite-anchor:hover {
+  color: var(--wc-navy);
+  text-decoration: underline;
+}
+
+.wc-implementation__table-wrap {
+  margin-top: var(--wc-space-6);
+  border: 1px solid var(--wc-line);
+  border-radius: var(--wc-radius);
+  background: var(--wc-white);
+}
+
+.wc-implementation__table {
+  width: 100%;
+  min-width: 42rem;
+  border-collapse: collapse;
+  color: var(--wc-ink);
+  font-size: 0.9375rem;
+  line-height: 1.55;
+  text-align: left;
+}
+
+.wc-implementation__table th,
+.wc-implementation__table td {
+  padding: 1rem 1.15rem;
+  border-bottom: 1px solid var(--wc-line);
+  vertical-align: top;
+}
+
+.wc-implementation__table th {
+  background: var(--wc-ivory-deep);
+  color: var(--wc-navy);
+  font-family: var(--wc-font-body);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.wc-implementation__table th:first-child,
+.wc-implementation__table td:first-child {
+  width: 30%;
+}
+
+.wc-implementation__table td:first-child {
+  color: var(--wc-navy);
+  font-weight: 600;
+}
+
+.wc-implementation__table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.wc-implementation__table tbody tr:nth-child(even) td {
+  background: rgba(239, 231, 217, 0.35);
+}
+
+@media (max-width: 47.99rem) {
+  .wc-implementation__table {
+    min-width: 36rem;
+  }
+
+  .wc-implementation__table th,
+  .wc-implementation__table td {
+    padding: 0.85rem 1rem;
+  }
 }
 
 .wc-screen {
