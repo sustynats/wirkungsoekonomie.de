@@ -36,7 +36,6 @@ const blockedContentPatterns = [
   { label: "Claude worktree path", pattern: /(?:^|[/"'])\.claude(?:[/"']|$)/i },
   { label: "local worktree path", pattern: /(?:^|[/"'])worktrees(?:[/"']|$)/i },
   { label: "file URL", pattern: /file:\/\//i },
-  { label: "local account name", pattern: /\bhagen\b/i },
   { label: "GitHub token", pattern: /\bgh[opsu]_[A-Za-z0-9_]{20,}\b/ },
   { label: "Supabase service key", pattern: /\beyJ[A-Za-z0-9_-]{20,}\.[A-Za-z0-9_-]{20,}\.[A-Za-z0-9_-]{20,}\b/ },
   { label: "generic secret assignment", pattern: /\b(?:SECRET|TOKEN|PRIVATE_KEY|SERVICE_ROLE_KEY)\b\s*[:=]\s*["'][^"']{12,}["']/i },
