@@ -1,0 +1,475 @@
+/* Wirkungscheck Bundestag V2 – nur für die nicht indexierte Vorschau. */
+
+.wc-v2 {
+  --wcv2-blue-soft: #e8edf8;
+  --wcv2-green-wash: #e5f0ea;
+  --wcv2-danger: #8c2f1e;
+}
+
+.wcv2-preview {
+  padding: 0.55rem 0;
+  background: var(--wc-gold-soft);
+  border-bottom: 1px solid var(--wc-gold-ink);
+  color: var(--wc-ink);
+  font-size: 0.875rem;
+}
+
+.wcv2-meta-on-dark {
+  margin-top: 1rem;
+  color: #d9d3c9;
+}
+
+.wcv2-screen {
+  display: none;
+}
+
+.wcv2-screen.is-active {
+  display: block;
+}
+
+.wcv2-process {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding: 0;
+  counter-reset: v2-process;
+  list-style: none;
+}
+
+.wcv2-process li {
+  position: relative;
+  padding-left: 3rem;
+}
+
+.wcv2-process li::before {
+  position: absolute;
+  top: 0.1rem;
+  left: 0;
+  display: grid;
+  width: 2rem;
+  height: 2rem;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--wc-green-soft);
+  color: var(--wc-green-dark);
+  content: counter(v2-process);
+  counter-increment: v2-process;
+  font-weight: 700;
+}
+
+.wcv2-choice-row {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 42rem) {
+  .wcv2-choice-row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.wcv2-region-choice {
+  width: 100%;
+  color: var(--wc-ink);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.wcv2-region-choice strong,
+.wcv2-region-choice span {
+  display: block;
+}
+
+.wcv2-region-choice strong {
+  margin-bottom: 0.25rem;
+  color: var(--wc-navy);
+  font-size: 1.05rem;
+}
+
+.wcv2-region-choice span {
+  color: var(--wc-ink-muted);
+  line-height: 1.5;
+}
+
+.wcv2-region-choice[aria-pressed="true"] {
+  border-color: var(--wc-green);
+  box-shadow: 0 0 0 2px var(--wc-green-soft), var(--wc-shadow-card);
+}
+
+.wcv2-label {
+  display: block;
+  margin: 2rem 0 0.4rem;
+  color: var(--wc-navy);
+  font-weight: 700;
+}
+
+.wcv2-input {
+  width: 100%;
+  min-height: 3rem;
+  padding: 0.7rem 0.85rem;
+  border: 1.5px solid var(--wc-border-strong);
+  border-radius: var(--wc-radius-sm);
+  background: var(--wc-white);
+  color: var(--wc-ink);
+  font: inherit;
+}
+
+.wcv2-results {
+  display: grid;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.wcv2-result {
+  width: 100%;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid var(--wc-line);
+  border-radius: var(--wc-radius-sm);
+  background: var(--wc-white);
+  color: var(--wc-ink);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.wcv2-result:hover,
+.wcv2-result:focus-visible {
+  border-color: var(--wc-green);
+  background: var(--wc-green-soft);
+}
+
+.wcv2-result small {
+  display: block;
+  color: var(--wc-ink-muted);
+}
+
+.wcv2-error {
+  margin: 1rem 0 0;
+  color: var(--wcv2-danger);
+  font-weight: 600;
+}
+
+.wcv2-progress {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 0.45rem;
+  padding: 1rem 0;
+}
+
+.wcv2-progress__item {
+  display: grid;
+  gap: 0.35rem;
+  color: var(--wc-ink-faint);
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.wcv2-progress__bar {
+  height: 0.4rem;
+  border-radius: 999px;
+  background: var(--wc-scale-1);
+}
+
+.wcv2-progress__item.is-done .wcv2-progress__bar {
+  background: var(--wc-green);
+}
+
+.wcv2-progress__item.is-current {
+  color: var(--wc-navy);
+  font-weight: 700;
+}
+
+.wcv2-progress__item.is-current .wcv2-progress__bar {
+  background: var(--wc-gold);
+}
+
+.wcv2-question-kicker {
+  margin-bottom: 0.5rem;
+  color: var(--wc-green-dark);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.wcv2-question-intro {
+  max-width: 65ch;
+  margin-top: 0.75rem;
+  color: var(--wc-ink-muted);
+}
+
+.wcv2-option-grid {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.wcv2-option {
+  position: relative;
+  width: 100%;
+  min-height: 0;
+  padding: 1rem 1.1rem 1rem 3.2rem;
+  border: 1.5px solid var(--wc-line);
+  border-radius: var(--wc-radius);
+  background: var(--wc-white);
+  color: var(--wc-ink);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.wcv2-option:hover {
+  border-color: var(--wc-border-strong);
+}
+
+.wcv2-option[aria-pressed="true"] {
+  border-color: var(--wc-green);
+  background: var(--wcv2-green-wash);
+  box-shadow: 0 0 0 1px var(--wc-green);
+}
+
+.wcv2-option__mark {
+  position: absolute;
+  top: 1.15rem;
+  left: 1rem;
+  display: grid;
+  width: 1.2rem;
+  height: 1.2rem;
+  place-items: center;
+  border: 2px solid var(--wc-border-strong);
+  border-radius: 50%;
+  color: var(--wc-white);
+  font-size: 0.8rem;
+}
+
+.wcv2-option[data-mode="multi"] .wcv2-option__mark {
+  border-radius: 0.25rem;
+}
+
+.wcv2-option[aria-pressed="true"] .wcv2-option__mark {
+  border-color: var(--wc-green);
+  background: var(--wc-green);
+}
+
+.wcv2-option__label,
+.wcv2-option__hint {
+  display: block;
+}
+
+.wcv2-option__label {
+  color: var(--wc-navy);
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.wcv2-option__hint {
+  margin-top: 0.25rem;
+  color: var(--wc-ink-muted);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.wcv2-textarea {
+  width: 100%;
+  min-height: 7rem;
+  margin-top: 1.25rem;
+  padding: 0.75rem;
+  border: 1.5px solid var(--wc-border-strong);
+  border-radius: var(--wc-radius-sm);
+  background: var(--wc-white);
+  color: var(--wc-ink);
+  font: inherit;
+  line-height: 1.5;
+  resize: vertical;
+}
+
+.wcv2-field-label {
+  display: block;
+  margin-top: 1.5rem;
+  color: var(--wc-navy);
+  font-weight: 700;
+}
+
+.wcv2-report-head {
+  padding-block: clamp(2rem, 5vw, 3.5rem);
+}
+
+.wcv2-report-head .wc-meta {
+  color: #d9d3c9;
+}
+
+.wcv2-report-head .wc-note {
+  color: var(--wc-ivory);
+  border-left-color: var(--wc-gold);
+}
+
+/* Die Report-Überschrift erhält nur für die programmatische Fokusführung einen
+   Fokus. Ein sichtbarer Rahmen an dieser rein statischen Überschrift würde wie
+   ein Eingabefehler wirken. Interaktive Elemente behalten den normalen Ring. */
+.wc-v2 .wcv2-report-head [tabindex="-1"]:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.wcv2-report-layout {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.wcv2-report-section {
+  padding-block: 1.5rem;
+  border-bottom: 1px solid var(--wc-line);
+}
+
+.wcv2-report-section:first-child {
+  padding-top: 0;
+}
+
+.wcv2-report-section:last-child {
+  border-bottom: 0;
+}
+
+.wcv2-report-section > .wc-h2 {
+  margin-bottom: 0.65rem;
+}
+
+.wcv2-report-path {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1.25rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.wcv2-report-path li {
+  position: relative;
+  padding: 0.9rem 1rem 0.9rem 3.1rem;
+  border: 1px solid var(--wc-line);
+  border-radius: var(--wc-radius-sm);
+  background: var(--wc-white);
+}
+
+.wcv2-report-path li::before {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 1.3rem;
+  height: 1.3rem;
+  content: "↓";
+  color: var(--wc-green-dark);
+  font-weight: 700;
+  text-align: center;
+}
+
+.wcv2-report-path li:first-child::before {
+  content: "1";
+}
+
+.wcv2-report-path strong,
+.wcv2-report-path span {
+  display: block;
+}
+
+.wcv2-report-path span {
+  color: var(--wc-ink-muted);
+  line-height: 1.5;
+}
+
+.wcv2-observations {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.wcv2-observation {
+  padding: 1rem;
+  border-left: 4px solid var(--wc-gold);
+  background: var(--wc-white);
+}
+
+.wcv2-status {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: var(--wc-ink-muted);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.wcv2-question-copy {
+  position: relative;
+  padding: 1.25rem;
+  border: 1px solid var(--wc-green);
+  border-radius: var(--wc-radius);
+  background: var(--wc-green-soft);
+}
+
+.wcv2-question-copy p {
+  max-width: 65ch;
+  margin-bottom: 1rem;
+  color: var(--wc-ink);
+  font-weight: 600;
+}
+
+.wcv2-report-details {
+  margin-top: 1.5rem;
+  border: 1px solid var(--wc-line);
+  border-radius: var(--wc-radius);
+  background: var(--wc-white);
+}
+
+.wcv2-report-details summary {
+  padding: 1rem 1.25rem;
+  cursor: pointer;
+  color: var(--wc-navy);
+  font-weight: 700;
+}
+
+.wcv2-report-details > div {
+  padding: 0 1.25rem 1.25rem;
+}
+
+.wcv2-instruments {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.wcv2-instrument {
+  padding: 1rem;
+  border: 1px solid var(--wc-line);
+  border-radius: var(--wc-radius);
+  background: var(--wc-white);
+}
+
+.wcv2-instrument h3 {
+  margin-bottom: 0.5rem;
+}
+
+@media print {
+  .wcv2-preview,
+  .wc-header,
+  .wc-footer,
+  .wc-surveyfoot,
+  .wc-skip,
+  .wcv2-screen:not(#v2-report),
+  .wcv2-report-details,
+  [data-action="print"],
+  [data-action="restart"] {
+    display: none !important;
+  }
+
+  .wcv2-screen#v2-report {
+    display: block !important;
+  }
+
+  .wcv2-report-head {
+    background: none !important;
+    color: #000 !important;
+  }
+
+  .wcv2-report-head h1,
+  .wcv2-report-head h2,
+  .wcv2-report-head p {
+    color: #000 !important;
+  }
+}
