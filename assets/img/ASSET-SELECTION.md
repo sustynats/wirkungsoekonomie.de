@@ -1,6 +1,6 @@
 # Asset Selection
 
-Quelle: `assets/img/ASSET-INVENTORY.md`
+Interne Asset-Auswahlhilfe.
 
 Stand: 2026-05-17
 
