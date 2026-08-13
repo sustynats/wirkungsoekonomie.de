@@ -36,6 +36,23 @@ const groupAliases = new Map([
   ["Kommunikation und Greenwashing", "Kommunikation, Claims und Greenwashing"],
 ]);
 
+function removeProductionMetadata(value) {
+  if (Array.isArray(value)) return value.map(removeProductionMetadata);
+  if (value && typeof value === "object") {
+    const privateKeys = new Set(["updated_by", "updatedby", "reviewed_by", "reviewedby", "claudereviewdigest"]);
+    return Object.fromEntries(
+      Object.entries(value)
+        .filter(([key]) => !privateKeys.has(String(key).toLowerCase()))
+        .map(([key, item]) => [key, removeProductionMetadata(item)]),
+    );
+  }
+  if (typeof value !== "string") return value;
+  return value
+    .replace(/(?:^|\n)\s*(?:updated_by|updatedBy)\s*:\s*(?:codex|claude|chatgpt|openai)\s*(?=\n|$)/gim, "")
+    .replace(/Aktualisiert durch:\s*(?:codex|claude|chatgpt|openai)\.?/gi, "")
+    .replace(/\n{3,}/g, "\n\n");
+}
+
 function asArray(value) {
   if (Array.isArray(value)) return value;
   return value === undefined || value === null || value === "" ? [] : [value];
@@ -918,12 +935,12 @@ function attachGlossarySourceArchive(terms) {
   return [...records.values()].sort((a, b) => String(a.code).localeCompare(String(b.code), "de"));
 }
 
-const raw = JSON.parse(fs.readFileSync(source, "utf8"));
+const raw = removeProductionMetadata(JSON.parse(fs.readFileSync(source, "utf8")));
 const rawTerms = [
   ...(Array.isArray(raw) ? raw : raw.terms || []),
   ...supplementSources.flatMap((file) => {
     if (!fs.existsSync(file)) return [];
-    const supplement = JSON.parse(fs.readFileSync(file, "utf8"));
+    const supplement = removeProductionMetadata(JSON.parse(fs.readFileSync(file, "utf8")));
     return Array.isArray(supplement) ? supplement : supplement.terms || [];
   }),
 ];
