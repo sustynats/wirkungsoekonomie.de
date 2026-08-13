@@ -216,6 +216,31 @@
     return M.national || [];
   }
 
+  function hasDistrictContext() {
+    return Boolean(state.district && state.district !== "bundesweit" && state.district.indicators);
+  }
+
+  function nationalIndicator(id) {
+    return byId(M.national || [], id);
+  }
+
+  function indicatorContextText(indicator) {
+    var national = nationalIndicator(indicator.id);
+    if (!hasDistrictContext()) return "Bundesebene: " + (indicatorValue(national) || "Datenlücke");
+    return "Bundesebene: " + (indicatorValue(national) || "Datenlücke") +
+      " · Wahlkreis " + state.district.nr + ": " + (indicatorValue(indicator) || "Datenlücke");
+  }
+
+  function currentIndicatorById(id) {
+    return byId(currentIndicators(), id);
+  }
+
+  function selectedGoalLabel() {
+    var topic = topPriority();
+    var goal = byId(topic ? goalsFor(topic.id) : M.goals._generisch, state.answers.q_zustandsziel);
+    return goal ? goal.label : (state.answers.q_zustandsziel || "der gewählte Zustand");
+  }
+
   function indicatorValue(indicator) {
     if (!indicator || indicator.value === null || indicator.value === undefined || indicator.value === "") return null;
     var number = Number(indicator.value);
@@ -232,7 +257,7 @@
     list.push({
       id: "q_prioritaeten", nr: 1, short: "Prioritäten", eyebrow: "Wirkungsprioritäten",
       title: "Welche Veränderung soll Bundespolitik für Menschen und Orte zuerst ermöglichen?",
-      help: "Wählen Sie bis zu fünf Themen. Der Wahlkreis ergänzt später die Rückmeldung vor Ort, begrenzt aber nicht die bundespolitische Frage.",
+      help: "Wählen Sie bis zu fünf Themen. Der Wahlkreis ergänzt später die Rückmeldung vor Ort; Bundes- und Wahlkreisebene bleiben sichtbar. Er begrenzt die bundespolitische Frage nicht.",
       type: "multi", options: M.topics, max: 5, min: 1, showField: true,
       error: "Bitte wählen Sie mindestens ein Thema.",
       why: "Wirkung entsteht selten überall gleichzeitig. Die Themenauswahl bestimmt, welche Wirkungszusammenhänge geprüft werden, und mit welchen Daten Ihres Wahlkreises sie abgeglichen werden. Sie legt keine Rangfolge zwischen politischen Zielen fest."
@@ -312,13 +337,13 @@
 
     list.push({
       id: "q_wahlkreis_kontext", nr: 0, short: "Rückkopplung", eyebrow: state.district && state.district !== "bundesweit" ? "Wahlkreis-Rückkopplung" : "Bundesweite Rückkopplung",
-      title: "Welcher Befund soll bei der bundespolitischen Prüfung besonders sichtbar bleiben?",
+      title: "Welcher Befund soll bei der bundespolitischen Prüfung bundesweit und im Wahlkreis sichtbar bleiben?",
       adaptive: state.district && state.district !== "bundesweit"
-        ? "Die Daten ergänzen den bundespolitischen Wirkpfad um den Wahlkreis " + state.district.nr + " " + state.district.name + "."
+        ? "Der Report zeigt den Befund auf Bundesebene und für den Wahlkreis " + state.district.nr + " " + state.district.name + " nebeneinander."
         : "Die Daten zeigen Deutschland insgesamt und ersetzen keine regionale Verteilungsanalyse.",
-      help: "Die Werte stammen aus amtlichen Quellen. Zeitstand, Ebene und räumlicher Hinweis stehen bei jeder Quelle.",
+      help: "Die Werte stammen aus amtlichen Quellen. Sie sind Ausgangsdaten, kein Wirkungsnachweis. Zeitstand, Ebene und räumlicher Hinweis stehen bei jeder Quelle.",
       type: "indicators", options: currentIndicators(), min: 0, optional: true,
-      why: "Der Wahlkreis ist die Rückkopplung für bundespolitische Entscheidungen. Ein einzelner Wert beweist keine Wirkung und wird deshalb nicht als Rangliste oder Personenurteil verwendet."
+      why: "Bundesebene und Wahlkreis bilden zwei Rückkopplungsebenen für bundespolitische Entscheidungen. Ein einzelner Wert beweist keine Wirkung und wird deshalb nicht als Rangliste oder Personenurteil verwendet."
     });
 
     list.push({
@@ -622,6 +647,32 @@
     bar.appendChild(aside);
   }
 
+  function buildImpactPreview(q) {
+    if (["q_engpass", "q_bundesrolle", "q_rote_linie"].indexOf(q.id) < 0) return null;
+    var analysis = window.WC_RULE_ENGINE.derive(state.answers, {
+      hasDistrictContext: hasDistrictContext(),
+      districtName: hasDistrictContext() ? state.district.nr + " " + state.district.name : null
+    });
+    if (!analysis) return null;
+
+    var preview = el("aside", { class: "wc-card", "aria-live": "polite", style: "margin-top:1.25rem" });
+    preview.appendChild(el("p", { class: "wc-eyebrow", text: "Unmittelbare Wirkungsvorschau" }));
+    preview.appendChild(el("h2", { class: "wc-h3", text: "Was Ihre Auswahl jetzt im Wirkpfad verändert" }));
+    if (analysis.federal.length) {
+      preview.appendChild(el("p", { text: analysis.federal[analysis.federal.length - 1] }));
+    } else {
+      preview.appendChild(el("p", { class: "wc-muted", text: "Die direkte bundespolitische Folge wird sichtbar, sobald Sie eine Bundesrolle auswählen." }));
+    }
+    if (analysis.constraints.length) {
+      preview.appendChild(el("p", { class: "wc-meta", text: "Begrenzender Faktor: " + analysis.constraints[analysis.constraints.length - 1] }));
+    }
+    if (analysis.risks.length) {
+      preview.appendChild(el("p", { class: "wc-meta", text: "Zu prüfende Grenze: " + analysis.risks[analysis.risks.length - 1] }));
+    }
+    preview.appendChild(el("p", { class: "wc-meta", text: "Modellannahme: Die vollständige Wirkungskette mit Bundes- und Wahlkreisebene erscheint im Report." }));
+    return preview;
+  }
+
   function renderQuestion(options) {
     options = options || {};
     var qs = questions();
@@ -640,6 +691,8 @@
     var errorBox = el("p", { class: "wc-fielderror", id: "survey-error", role: "status" });
     var group = buildAnswerUI(q, errorBox);
     main.appendChild(group);
+    var impactPreview = buildImpactPreview(q);
+    if (impactPreview) main.appendChild(impactPreview);
     main.appendChild(errorBox);
 
     if (isAnswered(q) && q.why) {
@@ -1129,14 +1182,14 @@
     }
 
     /* Kontext: amtliche Daten ergänzen die bundespolitische Herleitung. */
-    $("#report-context-title").textContent = isNational ? "Amtlicher Bundeskontext" : "Amtlicher Wahlkreiskontext für Bundespolitik";
+    $("#report-context-title").textContent = isNational ? "Amtlicher Bundeskontext" : "Amtlicher Bundes- und Wahlkreiskontext";
     var ctx = $("#report-context");
     ctx.innerHTML = "";
     currentIndicators().forEach(function (ind) {
       var row = el("div", { class: "wc-datarow" });
       row.appendChild(el("span", { class: "wc-datarow__name", text: ind.label }));
       if (indicatorValue(ind)) {
-        row.appendChild(el("span", { class: "wc-datarow__value", text: indicatorValue(ind) }));
+        row.appendChild(el("span", { class: "wc-datarow__value", text: indicatorContextText(ind) }));
         row.appendChild(el("span", { class: "wc-meta", text: "Beobachtungszeitpunkt: " + ind.observation }));
       } else {
         row.appendChild(evidenceMark("datenluecke"));
@@ -1204,8 +1257,107 @@
       sp.appendChild(card);
     });
 
+    renderImpactAnalysis(window.WC_RULE_ENGINE.derive(state.answers, {
+      hasDistrictContext: hasDistrictContext(),
+      districtName: hasDistrictContext() ? state.district.nr + " " + state.district.name : null
+    }), matchingPaths);
+
     renderSensitivity();
     renderToolkit();
+  }
+
+  function impactList(items, options) {
+    var list = el("ul");
+    (items || []).forEach(function (item) {
+      var li = el("li", { text: typeof item === "string" ? item : item.text });
+      if (options && options.evidence) li.appendChild(el("div", { style: "margin-top:.35rem" }, [evidenceMark(options.evidence)]));
+      list.appendChild(li);
+    });
+    return list;
+  }
+
+  function impactCard(title, text, nodes) {
+    var card = el("div", { class: "wc-card" });
+    card.appendChild(el("h3", { class: "wc-h3 wc-card__title", text: title }));
+    if (text) card.appendChild(el("p", { class: "wc-body", text: text }));
+    (nodes || []).forEach(function (node) { if (node) card.appendChild(node); });
+    return card;
+  }
+
+  function renderImpactAnalysis(analysis, matchingPaths) {
+    var box = $("#report-analysis");
+    var overall = $("#report-overall");
+    box.innerHTML = "";
+    overall.innerHTML = "";
+    if (!analysis) {
+      box.appendChild(impactCard("Noch keine konkrete Wirkungsanalyse", "Wählen Sie zuerst Schwerpunkt und Zustandsziel. Dann wird die Wirkungskette aus Ihren Antworten hergeleitet."));
+      overall.appendChild(impactCard("Keine Gesamtbilanz möglich", "Ohne Schwerpunkt und Zustandsziel gibt es keine überprüfbare Wirkannahme."));
+      return;
+    }
+    var goalLabel = selectedGoalLabel();
+
+    box.appendChild(impactCard("Wirkannahme für „" + analysis.subject + "“", analysis.affected, [
+      el("p", { class: "wc-meta", text: "Zielzustand aus Ihrer Auswahl: " + goalLabel + "." }),
+      el("p", { class: "wc-meta", text: "Die folgenden Aussagen sind Modellannahmen. Amtliche Kontextdaten beschreiben den Ausgangspunkt; sie beweisen keine Ursache." })
+    ]));
+
+    box.appendChild(impactCard("1. Direkter Eingriff auf Bundesebene", "Ihre ausgewählte Bundesrolle verändert konkret Folgendes:", [
+      impactList(analysis.federal, { evidence: "annahme" })
+    ]));
+
+    box.appendChild(impactCard("2. Begrenzender Faktor und Wirkungskette", "Ihre Engpassauswahl entscheidet, was vor einer Skalierung geklärt werden muss:", [
+      impactList(analysis.constraints, { evidence: "annahme" })
+    ]));
+
+    box.appendChild(impactCard("3. Rückkopplung im Wahlkreis", analysis.local, [
+      el("p", { class: "wc-meta", text: hasDistrictContext()
+        ? "Der Wahlkreiswert ist ein lokaler Prüfpunkt neben dem Bundeswert; er ersetzt keine Verteilungsanalyse über alle Wahlkreise."
+        : "Ohne gewählten Wahlkreis bleibt diese Ebene als notwendiger lokaler Prüfpunkt benannt." })
+    ]));
+
+    var signalCard = impactCard("4. Woran sich die Annahme überprüfen lässt", "Die ausgewählten Daten sind Ausgangsdaten. Für den Wirknachweis braucht es Zeitreihen, Vergleichsgruppen oder eine andere geeignete Gegenfaktik.");
+    var signalList = el("ul");
+    analysis.signals.forEach(function (signal) {
+      var li = el("li");
+      if (signal.id) {
+        var indicator = currentIndicatorById(signal.id);
+        var title = signal.title || (indicator && indicator.label) || signal.id;
+        li.appendChild(el("strong", { text: title + ": " }));
+        li.appendChild(document.createTextNode(signal.text));
+        if (indicator && indicatorValue(indicator)) {
+          li.appendChild(el("p", { class: "wc-meta", text: indicatorContextText(indicator) + " · Beobachtungszeitpunkt: " + indicator.observation }));
+          li.appendChild(sourceButton(indicator.source));
+        } else {
+          li.appendChild(el("div", { style: "margin-top:.35rem" }, [evidenceMark("datenluecke")]));
+        }
+      } else {
+        li.appendChild(el("strong", { text: signal.required + ": " }));
+        li.appendChild(document.createTextNode(signal.text));
+        li.appendChild(el("div", { style: "margin-top:.35rem" }, [evidenceMark("datenluecke")]));
+      }
+      signalList.appendChild(li);
+    });
+    signalCard.appendChild(signalList);
+    box.appendChild(signalCard);
+
+    overall.appendChild(impactCard("Vorläufige Gesamtwirkungsbilanz", analysis.overall, [
+      el("p", { class: "wc-meta", text: "Diese Bilanz ist bewusst keine Punktzahl: Direkte Wirkung, Folgewirkungen und Risiken sind nicht gegeneinander verrechenbar." })
+    ]));
+
+    var nationalItems = analysis.federal.concat(matchingPaths.map(function (path) { return path.direct; }));
+    overall.appendChild(impactCard("Bundesebene", "Der erwartete direkte Veränderungsraum liegt in Regel, Anreiz, Vollzug oder Rückkopplung:", [
+      impactList(nationalItems, { evidence: "annahme" })
+    ]));
+
+    overall.appendChild(impactCard("Wahlkreisebene", analysis.local, [
+      el("p", { class: "wc-meta", text: hasDistrictContext()
+        ? "Der gewählte Wahlkreis wird neben dem Bundeswert beobachtet. Sichtbar wird nicht nur Aktivität, sondern ob der Zugang oder Zustand für Betroffene tatsächlich anders wird."
+        : "Für die lokale Rückkopplung wäre ein Wahlkreis oder ein anderer klar benannter Umsetzungsraum zu ergänzen." })
+    ]));
+
+    var lockCard = impactCard("Nicht kompensierbare Risiken und offene Voraussetzungen", "Positive Folgen an einer Stelle rechtfertigen keine schwere negative Folge an anderer Stelle.");
+    lockCard.appendChild(impactList(analysis.risks.concat(analysis.constraints), { evidence: "annahme" }));
+    overall.appendChild(lockCard);
   }
 
   function pathCard(p) {
@@ -1427,13 +1579,13 @@
       });
       body.appendChild(section("explain-s1", "Ihre Angaben", [dl]));
 
-      /* 2 Wahlkreisdaten */
+      /* 2 Bundes- und Wahlkreisdaten */
       var dataWrap = el("div");
       currentIndicators().forEach(function (ind) {
         var row = el("div", { class: "wc-datarow" });
         row.appendChild(el("span", { class: "wc-datarow__name", text: ind.label }));
         if (indicatorValue(ind)) {
-          row.appendChild(el("span", { class: "wc-datarow__value", text: indicatorValue(ind) }));
+          row.appendChild(el("span", { class: "wc-datarow__value", text: indicatorContextText(ind) }));
         } else {
           row.appendChild(evidenceMark("datenluecke"));
         }
@@ -1445,8 +1597,8 @@
         dataWrap.appendChild(row);
       });
       var districtName = state.district && state.district !== "bundesweit"
-        ? state.district.nr + " " + state.district.name : "bundesweit";
-      body.appendChild(section("explain-s2", "Wahlkreisdaten · " + districtName, [dataWrap]));
+        ? "Bundesebene und Wahlkreis " + state.district.nr + " " + state.district.name : "Bundesebene";
+      body.appendChild(section("explain-s2", "Amtliche Ausgangsdaten · " + districtName, [dataWrap]));
 
       /* 3 Methodik */
       var rule = el("div", { class: "wc-rulebox" });

@@ -22,7 +22,7 @@
 
   window.WC_CHECK = Object.assign({}, data, {
     sources: sources,
-    methodVersion: "2026.2",
+    methodVersion: "2026.3",
     topics: [
       { id: "wohnen", label: "Bezahlbares Wohnen", hint: "Kosten, Verfügbarkeit und Wohnsicherheit", field: "Soziales" },
       { id: "gesundheit", label: "Gesundheit und Pflege", hint: "Zugang, Verlässlichkeit und Versorgung", field: "Soziales" },
@@ -110,7 +110,7 @@
         "Vollzugsindikator: Wo entsteht der Engpass im Weg von der Regel zur Wirkung?",
         "Rückkopplungsindikator: Welches Signal zeigt früh, dass eine Annahme nicht trägt?"
       ],
-      dialogfrage: "Woran wäre im Wahlkreis konkret erkennbar, dass eine bundespolitische Änderung hilft – und wer würde eine unerwünschte Folge zuerst bemerken?",
+      dialogfrage: "Woran wäre bundesweit und im Wahlkreis konkret erkennbar, dass eine bundespolitische Änderung hilft – und wer würde eine unerwünschte Folge zuerst bemerken?",
       ersterschritt: "Vor der Entscheidung Zielzustand, Wirkpfad, mögliche Wirkungsrisiken und eine Rückkopplung verbindlich festhalten."
     },
     sensitivity: [

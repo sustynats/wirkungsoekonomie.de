@@ -26,8 +26,19 @@ assert.ok(rules.paths.every(rules.hasApprovedText), "Keine Regel ohne freigegebe
 assert.equal(rules.hasApprovedText({ rule: { conditions: [{ text: "" }], conclusion: { text: "x" } } }), false);
 assert.equal(rules.unavailableText, "Die Herleitung dieser Regel ist noch nicht freigegeben.");
 assert.equal(rules.evaluate({ q_bundesrolle: ["bund_recht"], q_engpass: ["verfahren"] })[0].rule.id, "R-BUND-RECHT-01");
+const detailed = rules.derive({
+  q_prioritaeten: ["wohnen"],
+  q_top3: ["wohnen"],
+  q_zustandsziel: "zugang",
+  q_bundesrolle: ["bund_finanzierung"],
+  q_engpass: ["finanzierung"],
+  q_rote_linie: ["risiko_sozial"]
+});
+assert.ok(detailed && detailed.federal[0].includes("Förder"), "Die Antworten müssen eine konkrete, themenbezogene Wirkungskette auslösen.");
+assert.ok(detailed.risks.some((risk) => risk.includes("positive Netto-Wirkung")), "Rote Linien müssen die Gesamtwirkung als nicht kompensierbare Bedingung begrenzen.");
 assert.match(html, /connect-src 'none'/, "Der öffentliche Fragebogen darf keine Netzwerkverbindung aufbauen.");
 assert.match(html, /data-2025\.js/);
+assert.match(html, /Gesamtwirkung des gewählten Wirkpfads/);
 assert.doesNotMatch(html, /mock-data\.js|WC_MOCK/);
 
 console.log("Wahlkreis-Wirkungscheck validiert: 299 Wahlkreise, Quellenfelder, Regeltexte und Offline-CSP.");

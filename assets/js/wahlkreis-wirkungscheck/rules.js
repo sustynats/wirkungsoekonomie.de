@@ -113,6 +113,228 @@
     }
   ];
 
+  /* Die Fallprofile sind keine Politikempfehlungen. Sie machen transparent,
+     welche Veränderung durch die gewählte Kombination überhaupt behauptet
+     werden müsste, welche Folgeketten dafür tragen müssen und welche Daten
+     dafür noch fehlen. Damit bleibt die Antwort auch bei breiten Themen
+     konkret, ohne aus einer Auswahl eine Kausalitätsbehauptung zu machen. */
+  var topicProfiles = {
+    wohnen: {
+      subject: "bezahlbaren und angemessenen Wohnraum",
+      affected: "Haushalte können eine passende Wohnung nur dann tatsächlich erreichen, wenn Angebot, Zugangsvoraussetzungen und laufende Belastung zusammenpassen.",
+      local: "Im Wahlkreis wäre nicht nur Bautätigkeit, sondern der Zugang betroffener Haushalte zu passendem und tragbarem Wohnraum sichtbar zu machen.",
+      roles: {
+        bund_recht: "Der Bund würde Anspruchs-, Schutz- oder Standardregeln für Wohnen verändern. Direkt zu prüfen ist, ob daraus ein klarerer Zugang entsteht und welche zusätzlichen Nachweise, Fristen oder Kosten dabei entstehen.",
+        bund_finanzierung: "Der Bund würde Förder- oder Anreizbedingungen für Wohnraum verändern. Direkt zu prüfen ist, welche zusätzlichen oder gebundenen Wohnungen dadurch wirtschaftlich entstehen können und wer Zugang zu den Mitteln erhält.",
+        bund_vollzug: "Der Bund würde die Umsetzbarkeit für Länder, Kommunen, Vermieter oder Träger mitgestalten. Direkt zu prüfen sind Verfahren, Zuständigkeiten und Bearbeitungszeiten entlang des Zugangswegs.",
+        bund_rueckkopplung: "Der Bund würde festlegen, ob Wohnungszugang, Kostenbelastung und Verdrängungsrisiken früh genug erfasst werden und wer bei Abweichungen nachsteuert."
+      },
+      signals: [
+        { id: "housing_completion", title: "Fertiggestellte Wohnungen", text: "zeigt Angebotszugang nur als Vorstufe; der Wert belegt weder Bezahlbarkeit noch die Verteilung auf Suchende." },
+        { required: "Wohnkostenbelastung nach Einkommensgruppen, verfügbare gebundene Wohnungen und Bearbeitungsdauer", text: "sind für die behauptete Veränderung des tatsächlichen Zugangs zusätzlich erforderlich." }
+      ],
+      risks: ["Neue Förderung kann in Preissteigerungen, Bodenrenten oder Mitnahmeeffekten aufgehen.", "Ein formal gleicher Zugang kann Haushalte mit geringerer Liquidität, Sprachbarrieren oder unsicheren Mietverhältnissen weiterhin ausschließen."]
+    },
+    gesundheit: {
+      subject: "verlässliche gesundheitliche und pflegerische Versorgung",
+      affected: "Menschen profitieren erst, wenn sie eine fachlich passende Versorgung rechtzeitig erreichen und die Übergänge zwischen Angeboten funktionieren.",
+      local: "Im Wahlkreis wäre die Versorgung entlang eines konkreten Wegs sichtbar zu machen: Termin, Erreichbarkeit, Übergabe und Kontinuität – nicht nur die Zahl finanzierter Leistungen.",
+      roles: {
+        bund_recht: "Der Bund würde Zugangs-, Qualitäts- oder Übergabestandards verändern. Direkt zu prüfen ist, ob diese Standards die Versorgungskette schließen oder zusätzliche Dokumentations- und Zugangshürden schaffen.",
+        bund_finanzierung: "Der Bund würde Vergütung oder Finanzierung von Versorgung verändern. Direkt zu prüfen ist, ob die Anreize die knappe Leistung tatsächlich dort verfügbar machen, wo Menschen sie benötigen.",
+        bund_vollzug: "Der Bund würde Voraussetzungen für die Umsetzung durch Kassen, Länder, Kommunen und Leistungserbringer beeinflussen. Direkt zu prüfen sind Personal, Schnittstellen und die Übernahme zusätzlicher Aufgaben.",
+        bund_rueckkopplung: "Der Bund würde festlegen, ob Wartezeit, Abbruch zwischen Versorgungsstufen und regionale Unterversorgung sichtbar werden und eine Korrektur auslösen."
+      },
+      signals: [
+        { required: "Wartezeit bis zur passenden Versorgung, vermeidbare Versorgungsabbrüche und Erreichbarkeit nach Bedarf", text: "fehlen im Basissatz und müssen vor einer Wirkungsbilanz nach Zielgruppen und Regionen erhoben werden." },
+        { id: "employment", title: "Sozialversicherungspflichtig Beschäftigte", text: "kann allenfalls als grober Kontext für Arbeitsmarkt- und Pendelstrukturen dienen, nicht als Versorgungsindikator." }
+      ],
+      risks: ["Mehr finanzierte Leistung kann Kapazitäten von anderen notwendigen Versorgungswegen abziehen.", "Ein bundesweit einheitlicher Standard kann regionale Engpässe verdecken, wenn Personal und Erreichbarkeit nicht mitgeprüft werden."]
+    },
+    bildung: {
+      subject: "Bildungs- und Teilhabechancen",
+      affected: "Eine Verbesserung liegt erst vor, wenn Kinder, Jugendliche oder Erwachsene Zugang haben, Übergänge bewältigen und Lern- oder Teilhabeergebnisse stabiler werden.",
+      local: "Im Wahlkreis wäre sichtbar zu machen, ob der Weg von Platz, Angebot und Unterstützung tatsächlich zu Teilnahme und gelungenen Übergängen führt.",
+      roles: {
+        bund_recht: "Der Bund würde Rechte, Mindeststandards oder Schnittstellen für Teilhabe verändern. Direkt zu prüfen ist, ob die Regel einen Anspruch praktisch erreichbar macht und welche Vollzugslast daraus entsteht.",
+        bund_finanzierung: "Der Bund würde Finanzierung oder Anreize für Bildungs- und Teilhabeangebote verändern. Direkt zu prüfen ist, ob Mittel dort ankommen, wo Zugang oder Qualität begrenzt sind.",
+        bund_vollzug: "Der Bund würde die Umsetzung über Länder, Kommunen und Träger beeinflussen. Direkt zu prüfen sind Personal, Zuständigkeiten, Übergaben und Zugang ohne zusätzliche Selektionshürden.",
+        bund_rueckkopplung: "Der Bund würde festlegen, ob Teilnahme, Abbrüche und Übergänge nach sozialen Gruppen und Orten sichtbar werden und eine Korrektur auslösen."
+      },
+      signals: [
+        { id: "under3_care", title: "Betreuungsquote unter Dreijähriger", text: "zeigt einen Zugangsausschnitt, aber weder die Qualität noch die Teilhabe älterer Kinder und Jugendlicher." },
+        { required: "Wartelisten, Teilnahme, Übergänge und Lern- bzw. Teilhabeergebnisse nach Ausgangslage", text: "sind für die behauptete Bildungswirkung zusätzlich erforderlich." }
+      ],
+      risks: ["Ein Ausbau von Plätzen ohne Personal kann Zugang erhöhen, ohne die Betreuungs- oder Lernqualität zu sichern.", "Einheitliche Nachweis- oder Antragswege können gerade Familien mit höherem Unterstützungsbedarf ausschließen."]
+    },
+    arbeit: {
+      subject: "Zugang zu guter und robuster Arbeit",
+      affected: "Wirkung liegt nicht in der Zahl von Maßnahmen, sondern in tragfähigen Übergängen in Beschäftigung, Qualifizierung und Absicherung bei Umbrüchen.",
+      local: "Im Wahlkreis wäre sichtbar zu machen, ob Menschen in passende, stabile Beschäftigung übergehen und ob Qualifizierung an reale Arbeitsplätze anschließt.",
+      roles: {
+        bund_recht: "Der Bund würde Regeln für Zugang, Absicherung oder Qualifizierung verändern. Direkt zu prüfen ist, ob sie Übergänge erleichtern oder neue Ausschlüsse und Bürokratie erzeugen.",
+        bund_finanzierung: "Der Bund würde Anreize für Qualifizierung, Einstellung oder Absicherung verändern. Direkt zu prüfen ist, ob sie zusätzliche Übergänge auslösen statt ohnehin geplante Aktivitäten zu finanzieren.",
+        bund_vollzug: "Der Bund würde die Umsetzbarkeit durch Arbeitsverwaltung, Bildungsträger und Betriebe beeinflussen. Direkt zu prüfen sind Beratungskapazität, Verfahren und Übergaben.",
+        bund_rueckkopplung: "Der Bund würde festlegen, ob Übergänge, Abbrüche und Beschäftigungsstabilität nach Ausgangslage sichtbar werden und eine Korrektur auslösen."
+      },
+      signals: [
+        { id: "unemployment", title: "Arbeitslosenquote", text: "zeigt einen Arbeitsmarktstatus, aber weder Jobqualität noch gelungene Qualifizierung oder Verdrängung." },
+        { id: "employment", title: "Sozialversicherungspflichtig Beschäftigte", text: "zeigt Beschäftigungsumfang im Kontext, aber nicht die Qualität, Stabilität oder Zugänglichkeit der Arbeit." },
+        { required: "Übergänge aus Arbeitslosigkeit, Qualifizierungsabschluss, Verbleib nach sechs und zwölf Monaten sowie Arbeitsqualität", text: "sind für die Wirkungsprüfung zusätzlich erforderlich." }
+      ],
+      risks: ["Anreize können Mitnahmeeffekte erzeugen oder Gruppen mit höherem Unterstützungsbedarf aus dem Blick drängen.", "Schnelle Vermittlung kann eine nachhaltige Qualifizierung und Beschäftigungsstabilität verdrängen."]
+    },
+    wirtschaft: {
+      subject: "resiliente wirtschaftliche Transformation und Wertschöpfung",
+      affected: "Wirkung liegt vor, wenn Betriebe und Beschäftigte ihre Anpassungsfähigkeit erhöhen, ohne Risiken und Kosten unbemerkt auf andere Gruppen oder Orte zu verlagern.",
+      local: "Im Wahlkreis wäre sichtbar zu machen, ob Investitionen zusätzliche Anpassungsfähigkeit und tragfähige Beschäftigung erzeugen, nicht nur Mittelabfluss.",
+      roles: {
+        bund_recht: "Der Bund würde Regeln für Investition, Standards oder Marktzugang verändern. Direkt zu prüfen ist, welche Umstellung sie auslöst und welche kleineren oder weniger kapitalstarken Betriebe ausgeschlossen werden könnten.",
+        bund_finanzierung: "Der Bund würde Transformationsanreize oder Finanzierung verändern. Direkt zu prüfen ist die Zusätzlichkeit: Welche Investition oder Anpassung wäre ohne den Impuls nicht erfolgt?",
+        bund_vollzug: "Der Bund würde die praktische Nutzung durch Unternehmen, Förderstellen und Verwaltung beeinflussen. Direkt zu prüfen sind Antrag, Beratung, Nachweis und die Fähigkeit kleiner Betriebe zur Teilnahme.",
+        bund_rueckkopplung: "Der Bund würde festlegen, ob Zusätzlichkeit, Beschäftigungsfolgen und regionale Verteilung sichtbar werden und eine Korrektur auslösen."
+      },
+      signals: [
+        { id: "employment", title: "Sozialversicherungspflichtig Beschäftigte", text: "zeigt Beschäftigungsumfang, aber keine Produktivität, Resilienz oder Zusätzlichkeit einer Investition." },
+        { required: "zusätzliche Investitionen, Energie- und Materialintensität, Unternehmensüberleben und Beschäftigungsqualität", text: "sind für eine Transformationswirkung zusätzlich erforderlich." }
+      ],
+      risks: ["Förderung kann ohnehin geplante Investitionen bezuschussen, ohne zusätzliche Wirkung auszulösen.", "Hohe Nachweislast kann kleine und mittlere Unternehmen vom Zugang ausschließen."]
+    },
+    energie: {
+      subject: "zuverlässige und bezahlbare Energie- und Netzinfrastruktur",
+      affected: "Wirkung liegt erst vor, wenn Versorgung, Kosten, Anschluss und Resilienz für Haushalte, Betriebe und öffentliche Infrastruktur zusammen besser werden.",
+      local: "Im Wahlkreis wäre sichtbar zu machen, ob Anschluss, Netzverfügbarkeit und Kosten den Zugang tatsächlich verbessern, statt nur Projekte oder Mittel zu zählen.",
+      roles: {
+        bund_recht: "Der Bund würde Planungs-, Anschluss- oder Standardregeln verändern. Direkt zu prüfen ist, welche Genehmigungs- und Umsetzungszeit dadurch sinkt und welche Schutzgüter berührt werden.",
+        bund_finanzierung: "Der Bund würde Finanzierung oder Anreize für Netze, Effizienz oder Versorgung verändern. Direkt zu prüfen ist, ob die Mittel den tatsächlich begrenzenden Netz-, Anschluss- oder Kostenfaktor erreichen.",
+        bund_vollzug: "Der Bund würde die Umsetzbarkeit durch Netzbetreiber, Länder und Kommunen beeinflussen. Direkt zu prüfen sind Genehmigung, Flächen, Fachkräfte und Schnittstellen.",
+        bund_rueckkopplung: "Der Bund würde festlegen, ob Anschlussdauer, Unterbrechungen, Kosten und regionale Verteilung sichtbar werden und eine Korrektur auslösen."
+      },
+      signals: [
+        { required: "Anschlussdauer, verfügbare Netzkapazität, Versorgungsunterbrechungen und Kostenbelastung nach Nutzergruppen", text: "fehlen im Basissatz und sind für eine Energie- oder Infrastrukturwirkung erforderlich." }
+      ],
+      risks: ["Beschleunigung kann Kosten, Flächenkonflikte oder Naturwirkungen auf Orte verlagern.", "Förderung ohne Netz- und Genehmigungskapazität kann Mittel binden, ohne Anschluss oder Versorgung zu verbessern."]
+    },
+    mobilitaet: {
+      subject: "verlässliche Mobilität und Erreichbarkeit",
+      affected: "Wirkung liegt vor, wenn Menschen die für Arbeit, Bildung und Versorgung nötigen Orte tatsächlich erreichbar und planbar erreichen.",
+      local: "Im Wahlkreis wäre sichtbar zu machen, ob Reisezeit, Verlässlichkeit und Barrierefreiheit für unterschiedliche Gruppen besser werden, nicht nur ob Infrastruktur gebaut wird.",
+      roles: {
+        bund_recht: "Der Bund würde Standards, Zuständigkeiten oder Planungsregeln verändern. Direkt zu prüfen ist, ob sie Zugänge vereinfachen und welche neuen Anforderungen für Aufgabenträger entstehen.",
+        bund_finanzierung: "Der Bund würde Finanzierung oder Anreize für Mobilität verändern. Direkt zu prüfen ist, ob dadurch ein relevantes Erreichbarkeitsdefizit geschlossen wird und wer profitiert.",
+        bund_vollzug: "Der Bund würde die Umsetzung durch Länder, Kommunen und Betreiber beeinflussen. Direkt zu prüfen sind Betriebsfinanzierung, Personal, Schnittstellen und dauerhafte Wartung.",
+        bund_rueckkopplung: "Der Bund würde festlegen, ob Reisezeit, Ausfälle und Zugänglichkeit nach Ort und Personengruppe sichtbar werden und eine Korrektur auslösen."
+      },
+      signals: [
+        { required: "Reisezeit zu Arbeit, Bildung und Versorgung, Pünktlichkeit, Ausfälle und Barrierefreiheit", text: "fehlen im Basissatz und sind für die behauptete Erreichbarkeitswirkung erforderlich." }
+      ],
+      risks: ["Ein Ausbau auf einer Achse kann andere Orte oder Gruppen schlechter anbinden.", "Neue Infrastruktur ohne dauerhaften Betrieb kann nach kurzer Zeit keine verlässliche Erreichbarkeit liefern."]
+    },
+    klima: {
+      subject: "Schutz vor Klimafolgen und Vorsorge",
+      affected: "Wirkung liegt vor, wenn konkrete Risiken für Menschen, Natur und Infrastruktur sinken und Schäden nicht nur räumlich oder zeitlich verlagert werden.",
+      local: "Im Wahlkreis wäre sichtbar zu machen, ob Exposition, Schutz und Verwundbarkeit tatsächlich sinken – getrennt nach betroffenen Orten und Gruppen.",
+      roles: {
+        bund_recht: "Der Bund würde Schutz-, Vorsorge- oder Planungsstandards verändern. Direkt zu prüfen ist, welche Risiken verbindlich berücksichtigt werden und welche Zielkonflikte vor Ort entstehen.",
+        bund_finanzierung: "Der Bund würde Anreize oder Finanzierung für Vorsorge verändern. Direkt zu prüfen ist, ob Mittel die größte verbleibende Verwundbarkeit erreichen und zusätzliche Schäden vermeiden.",
+        bund_vollzug: "Der Bund würde die Umsetzung durch Länder, Kommunen und Träger beeinflussen. Direkt zu prüfen sind Zuständigkeit, Datenlage, Flächen und dauerhafte Pflege der Maßnahmen.",
+        bund_rueckkopplung: "Der Bund würde festlegen, ob Schäden, Schutzwirkung und ungleiche Betroffenheit sichtbar werden und eine Korrektur auslösen."
+      },
+      signals: [
+        { required: "Exposition, gefährdete Personen und Einrichtungen, Schadensvermeidung sowie ökologische Nebenwirkungen", text: "fehlen im Basissatz und sind für eine Vorsorgewirkung erforderlich." }
+      ],
+      risks: ["Schutz an einem Ort kann Risiko oder Belastung in andere Räume verlagern.", "Beschleunigte Maßnahmen können Natur-, Beteiligungs- oder Verteilungswirkungen verdecken."]
+    },
+    digital: {
+      subject: "zugängliche und verlässliche digitale staatliche Infrastruktur",
+      affected: "Wirkung liegt vor, wenn ein Anliegen sicher, verständlich und ohne analoge Ausschlüsse erfolgreich erledigt werden kann.",
+      local: "Im Wahlkreis wäre sichtbar zu machen, ob Menschen und Betriebe Verfahren tatsächlich abschließen können und ob analoge Zugänge gleichwertig bleiben.",
+      roles: {
+        bund_recht: "Der Bund würde Rechtsgrundlagen, Standards oder Nachweispflichten verändern. Direkt zu prüfen ist, ob sie Medienbrüche senken und Datenschutz, Rechtsschutz sowie analoge Zugänge sichern.",
+        bund_finanzierung: "Der Bund würde Finanzierung oder Anreize für digitale Infrastruktur verändern. Direkt zu prüfen ist, ob sie interoperable, dauerhafte Lösungen statt isolierter Projekte ermöglichen.",
+        bund_vollzug: "Der Bund würde die praktische Umsetzung durch Verwaltung und Anbieter beeinflussen. Direkt zu prüfen sind Schnittstellen, Support, Kompetenz und Übergänge zum analogen Weg.",
+        bund_rueckkopplung: "Der Bund würde festlegen, ob Erfolgsquote, Abbruch, Bearbeitungsdauer und Ausschlüsse sichtbar werden und eine Korrektur auslösen."
+      },
+      signals: [
+        { required: "Abschlussquote digitaler Verfahren, Bearbeitungsdauer, Medienbrüche, Supportfälle und analoge Gleichwertigkeit", text: "fehlen im Basissatz und sind für die Digitalisierungswirkung erforderlich." }
+      ],
+      risks: ["Ein digitaler Standard kann ohne gleichwertigen alternativen Zugang neue Ausschlüsse schaffen.", "Schnellere Datennutzung kann Datenschutz, Zweckbindung oder Rechtsschutz beeinträchtigen."]
+    },
+    staat: {
+      subject: "einen handlungsfähigen, rechtsstaatlichen Vollzug",
+      affected: "Wirkung liegt vor, wenn Menschen und Organisationen ihr Anliegen zuverlässig, nachvollziehbar und mit Rechtsschutz bearbeiten lassen können.",
+      local: "Im Wahlkreis wäre sichtbar zu machen, ob Verfahren tatsächlich schneller, verständlicher und zugänglicher werden – ohne Verlagerung ungedeckter Aufgaben.",
+      roles: {
+        bund_recht: "Der Bund würde Zuständigkeiten, Anspruchsregeln oder Verfahrensstandards verändern. Direkt zu prüfen ist, ob sie Entscheidungen vereinfachen oder neue Prüf- und Nachweispflichten erzeugen.",
+        bund_finanzierung: "Der Bund würde Finanzierung oder Anreize für Verwaltungsfähigkeit verändern. Direkt zu prüfen ist, ob Mittel an einen konkreten Vollzugsengpass gebunden sind und dauerhafte Folgekosten abdecken.",
+        bund_vollzug: "Der Bund würde Rollen, Übergaben und Ressourcen zwischen Ebenen beeinflussen. Direkt zu prüfen sind Fallzahl, Personal, IT, Übergangsfristen und ein verbindlicher Rückmeldeweg.",
+        bund_rueckkopplung: "Der Bund würde festlegen, ob Bearbeitungsdauer, Widersprüche, Abbrüche und ungleiche Zugänge sichtbar werden und eine Korrektur auslösen."
+      },
+      signals: [
+        { required: "Bearbeitungsdauer, erfolgreiche Abschlüsse, Widersprüche, Abbrüche und Vollzugskosten nach Verfahren", text: "fehlen im Basissatz und sind für die behauptete Verwaltungswirkung erforderlich." }
+      ],
+      risks: ["Eine Vereinfachung kann Rechtsschutz oder Beteiligung schwächen, wenn die Folgen nicht getrennt geprüft werden.", "Neue Bundespflichten ohne Finanzierung, Personal oder Übergangszeit können kommunale Handlungsfähigkeit mindern."]
+    }
+  };
+
+  var bottleneckChecks = {
+    finanzierung: "Die Mittel- und Anreizarchitektur muss den begrenzenden Faktor treffen; sonst steigt der Mitteleinsatz ohne entsprechende Zustandsveränderung.",
+    personal: "Ohne verfügbare und qualifizierte Menschen bleibt ein Rechtsanspruch, Förderprogramm oder Standard vor Ort begrenzt vollziehbar.",
+    verfahren: "Die Zahl der Schritte, Nachweise, Zuständigkeiten und Fristen bestimmt, ob der formale Anspruch praktisch erreichbar wird.",
+    daten: "Vor der Skalierung muss feststehen, welches Signal eine falsche Annahme zeigt und welche Stelle darauf entscheidet.",
+    koordination: "Die Übergabe zwischen Bund, Ländern, Kommunen und Trägern braucht Zuständigkeit, Finanzierung und einen verbindlichen Rückmeldeweg.",
+    infrastruktur: "Räumliche, technische oder organisatorische Kapazität muss vor dem Ausbau der Nachfrage oder Verpflichtung verfügbar sein."
+  };
+
+  var riskLocks = {
+    risiko_sozial: "Die positive Netto-Wirkung entfällt, wenn der Zugang für Menschen mit höherer Belastung oder geringerem Ressourcenpolster schwerer wird.",
+    risiko_kommunal: "Die positive Netto-Wirkung entfällt, wenn eine ungedeckte Daueraufgabe kommunale Handlungsfähigkeit an anderer Stelle schwächt.",
+    risiko_oekologisch: "Die positive Netto-Wirkung entfällt, wenn eine schwerwiegende negative Umweltwirkung durch andere Vorteile verdeckt würde.",
+    risiko_recht: "Die positive Netto-Wirkung entfällt, wenn Rechtsschutz, Beteiligung oder diskriminierungsfreier Zugang eingeschränkt werden."
+  };
+
+  function selectedFirst(answers, field) {
+    var values = answers[field] || [];
+    return Array.isArray(values) && values.length ? values[0] : null;
+  }
+
+  function selectedAll(answers, field) {
+    var values = answers[field] || [];
+    return Array.isArray(values) ? values : [];
+  }
+
+  function unique(items) {
+    return items.filter(function (item, index) { return item && items.indexOf(item) === index; });
+  }
+
+  function derive(answers, context) {
+    var topicId = selectedFirst(answers, "q_top3") || selectedFirst(answers, "q_prioritaeten");
+    var profile = topicProfiles[topicId];
+    if (!profile) return null;
+
+    var goal = answers.q_zustandsziel || "den gewählten Zustand";
+    var roles = selectedAll(answers, "q_bundesrolle");
+    var bottlenecks = selectedAll(answers, "q_engpass");
+    var redLines = selectedAll(answers, "q_rote_linie");
+    var direct = roles.map(function (role) { return profile.roles[role]; }).filter(Boolean);
+    var constraints = bottlenecks.map(function (id) { return bottleneckChecks[id]; }).filter(Boolean);
+    var locks = redLines.map(function (id) { return riskLocks[id]; }).filter(Boolean);
+
+    return {
+      topicId: topicId,
+      subject: profile.subject,
+      goal: goal,
+      affected: profile.affected,
+      federal: direct,
+      local: profile.local,
+      constraints: constraints,
+      signals: profile.signals,
+      risks: unique(profile.risks.concat(locks)),
+      overall: "Die beabsichtigte Gesamtwirkung kann nur als positive Netto-Wirkung gelten, wenn der bundespolitische Eingriff den benannten Engpass erreicht, die Wirkung für Betroffene eintritt und keine der ausgewählten roten Linien verletzt wird.",
+      context: context || {}
+    };
+  }
+
   function conditionMatches(condition, answers) {
     if (condition.op === "includes") return includes(condition.field, condition.value)(answers);
     if (condition.op === "anyOf") return anyOf(condition.field, condition.value)(answers);
@@ -135,6 +357,7 @@
   window.WC_RULE_ENGINE = {
     paths: paths,
     evaluate: evaluate,
+    derive: derive,
     hasApprovedText: hasApprovedText,
     unavailableText: "Die Herleitung dieser Regel ist noch nicht freigegeben."
   };

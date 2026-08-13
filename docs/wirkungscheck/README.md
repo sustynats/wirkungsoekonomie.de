@@ -1,6 +1,6 @@
-# Wahlkreis-Wirkungscheck — Produkt- und UX-Dokumentation
+# Wahlkreis-Wirkungscheck - Produkt- und UX-Dokumentation
 
-Version 2026.2 · Stand 2026-08-13 · UX-Handoff und Produktumsetzung
+Version 2026.3 · Stand 2026-08-13 · UX-Handoff und Produktumsetzung
 
 Vollständiger Design- und UX-Handoff für den Wahlkreis-Wirkungscheck, einen
 parteiunabhängigen Wirkungscheck für Mitglieder des Deutschen Bundestages.
@@ -50,16 +50,22 @@ Danach `http://localhost:8731/werkzeuge/wahlkreis-wirkungscheck/index.html`.
 
 Amtliche Suche über alle 299 Wahlkreise einschließlich Verwaltungs-PLZ als
 Suchhilfe, zehn feste Fragen, Antworten prüfen, vollständiger lokaler Report,
-deterministische Prüfpfade mit Regel-ID, direkten und indirekten Folgen,
-Wirkungsrisiken, Quellen-Drawer, Sensitivität, Politik-Kit und Lernlinks zur
-Wirkungsökonomie.
+deterministische Prüfpfade mit Regel-ID, unmittelbare Wirkungsvorschau während
+der Auswahl, themen- und rollenbezogene Wirkungsketten, getrennte Bundes- und
+Wahlkreisebene, Gesamtwirkungsbilanz ohne Punktzahl, direkten und indirekten
+Folgen, Wirkungsrisiken, Quellen-Drawer, Sensitivität, Politik-Kit und
+Lernlinks zur Wirkungsökonomie.
 
 ### Daten, Regeln und Datenschutz
 
 Die Wahlkreis- und Strukturdaten stammen aus den verlinkten Datensätzen der
 Bundeswahlleiterin. Zeitstand, Ebene, territorialer Hinweis und Lizenz stehen
-an jeder Quelle. Die Regeltexte sind deklarativ und werden nur angezeigt, wenn
-jede Bedingung einen freigegebenen Text hat. Fehlt er, lautet die sichtbare
+an jeder Quelle. Die Regeltexte und Themenprofile sind deklarativ. Aus
+Schwerpunkt, Bundesrolle, Engpass und roten Linien entsteht eine konkrete
+Wirkannahme: direkter Eingriff, Folgekette, prüfbare Signale, notwendige
+Zusatzdaten und nicht kompensierbare Risiken. Sie ist als Modellannahme
+kenntlich, nicht als Kausalitätsbehauptung. Regelpfade werden nur angezeigt,
+wenn jede Bedingung einen freigegebenen Text hat. Fehlt er, lautet die sichtbare
 Meldung exakt: „Die Herleitung dieser Regel ist noch nicht freigegeben."
 
 Die Website lädt weder `main.js` noch Dienste Dritter. Die CSP verbietet
