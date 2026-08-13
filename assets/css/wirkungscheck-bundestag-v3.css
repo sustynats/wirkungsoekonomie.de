@@ -25,6 +25,18 @@
 .wc-v3 .v3-facts strong, .wc-v3 .v3-facts span { display: block; }
 .wc-v3 .v3-facts strong { color: var(--wc-navy); font-size: .9rem; }
 .wc-v3 .v3-facts span { margin-top: .2rem; color: var(--wc-ink-muted); font-size: .94rem; line-height: 1.5; }
+.wc-v3 .v3-framework { border-top: 1px solid var(--wc-line); background: var(--wc-ivory); }
+.wc-v3 .v3-framework h2 { margin-bottom: var(--wc-space-4); }
+.wc-v3 .v3-framework__dimensions { display: grid; gap: 1px; margin-top: var(--wc-space-6); overflow: hidden; border: 1px solid var(--wc-line); border-radius: var(--wc-radius); background: var(--wc-line); }
+.wc-v3 .v3-framework__dimensions article { padding: 1.15rem 1.25rem; background: var(--wc-white); }
+.wc-v3 .v3-framework__dimensions h3 { margin-bottom: .35rem; font-family: var(--wc-font-body); font-size: 1rem; }
+.wc-v3 .v3-framework__dimensions article:nth-child(1) h3 { color: var(--wc-mpd-mensch); }
+.wc-v3 .v3-framework__dimensions article:nth-child(2) h3 { color: var(--wc-mpd-planet); }
+.wc-v3 .v3-framework__dimensions article:nth-child(3) h3 { color: var(--wc-mpd-demokratie); }
+.wc-v3 .v3-framework__dimensions p { color: var(--wc-ink-muted); font-size: .94rem; line-height: 1.5; }
+.wc-v3 .v3-framework__note { margin-top: var(--wc-space-5); padding: 1.15rem 1.25rem; border-left: 4px solid var(--wc-gold-ink); background: var(--wc-gold-soft); }
+.wc-v3 .v3-framework__note p + p { margin-top: .85rem; }
+.wc-v3 .v3-framework .wc-meta { margin-top: var(--wc-space-4); }
 .wc-v3 .v3-trust { border-top: 1px solid var(--wc-line); background: var(--wc-ivory-deep); }
 .wc-v3 .v3-trust h2 { margin-bottom: var(--wc-space-4); }
 .wc-v3 .v3-trust-list { display: grid; gap: .65rem; padding-left: 1.25rem; }
@@ -96,5 +108,5 @@
 .wc-v3 .v3-ai-result h3 { margin-bottom: .5rem; font-family: var(--wc-font-body); font-size: 1rem; }
 .wc-v3 .v3-why { padding-bottom: 0; border-bottom: 0; }
 .wc-v3 code { padding: .08rem .25rem; border-radius: .2rem; background: var(--wc-ivory-deep); font-family: var(--wc-font-mono); font-size: .85em; }
-@media (min-width: 48rem) { .wc-v3 .v3-hero__grid { grid-template-columns: minmax(0, 1.25fr) minmax(18rem, .75fr); } .wc-v3 .v3-explain__grid { grid-template-columns: minmax(0, 1fr) minmax(19rem, .82fr); } .wc-v3 .v3-role-grid, .wc-v3 .v3-instrument-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 48rem) { .wc-v3 .v3-hero__grid { grid-template-columns: minmax(0, 1.25fr) minmax(18rem, .75fr); } .wc-v3 .v3-explain__grid { grid-template-columns: minmax(0, 1fr) minmax(19rem, .82fr); } .wc-v3 .v3-framework__dimensions { grid-template-columns: repeat(3, minmax(0, 1fr)); } .wc-v3 .v3-role-grid, .wc-v3 .v3-instrument-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 30rem) { .wc-v3 .v3-hero h1 { font-size: 2.2rem; } .wc-v3 .v3-district { display: grid; } .wc-v3 .v3-nav .wc-btn { flex: 1 1 auto; } }
