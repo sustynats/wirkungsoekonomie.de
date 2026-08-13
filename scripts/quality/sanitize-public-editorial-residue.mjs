@@ -14,7 +14,7 @@ const excludedDirectories = new Set([
   "tmp",
 ]);
 const eligibleExtensions = new Set([".htm", ".html", ".md"]);
-const aiTrackingPattern = /([?&](?:amp;)*)(?:utm_source|utm_medium|utm_campaign)=(?:chatgpt|openai|claude|anthropic|gemini|copilot)(?:\.com)?/gi;
+const aiTrackingPattern = /([?&](?:amp;)*)(?:utm_source|utm_medium|utm_campaign)=(?:chatgpt|openai|claude|anthropic|gemini|copilot)(?:\.com)?(?=(?:&(?:amp;)?|["')\s<>]|$))/gi;
 const residualPatterns = [
   /Auszug aus der umfangreichen Korrekturfassung\.?/i,
   /ergänzende\s+ergänzende/i,
@@ -38,7 +38,7 @@ function sanitize(content) {
     .replace(/ergänzende\s+ergänzende/gi, "ergänzende")
     .replace(aiTrackingPattern, (match, separator) => (separator.startsWith("?") ? "?" : ""))
     .replace(/\?&(?:amp;)*/g, "?")
-    .replace(/[?&](?:amp;)*(?=["'\s<>]|$)/gi, "");
+    .replace(/\?(?:&(?:amp;)*)+(?=(?:["'\s<>]|$))/gi, "");
 }
 
 const affected = [];

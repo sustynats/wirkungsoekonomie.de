@@ -144,7 +144,7 @@ function stripAiTrackingParameters(value = "") {
   return String(value)
     .replace(/([?&](?:amp;)*)(?:utm_source|utm_medium|utm_campaign)=(?:chatgpt|openai|claude|anthropic|gemini|copilot)(?:\.com)?(?=(?:&(?:amp;)?|["')\s<>]|$))/gi, (match, separator) => (separator.startsWith("?") ? "?" : ""))
     .replace(/\?&(?:amp;)*/g, "?")
-    .replace(/[?&](?:amp;)*(?=["'\s<>]|$)/gi, "");
+    .replace(/\?(?:&(?:amp;)*)+(?=(?:["'\s<>]|$))/gi, "");
 }
 
 function cleanTitle(value = "") {
