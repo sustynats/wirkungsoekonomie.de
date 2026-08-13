@@ -166,7 +166,7 @@ Live-Versand testweise in einer separaten Umgebung wiederhergestellt werden. Vor
 - Keine Open-/Click-Trackingdaten als Maß für Interesse interpretieren; sie sind technisch
   unzuverlässig und datenschutzsensibel.
 - Der Analytics-Collector, Retention-Job, Cohort-Schutz, Rollenmodell und die automatisierten
-  Tests aus `docs/wirkungscheck/ANALYTICS_TESTING.md` müssen vor seiner Produktivnutzung
+  Die Analytics-Tests müssen vor seiner Produktivnutzung
   vollständig geprüft sein.
 - Exportrechte, Antworttexte und Freigaben beschränken; politische Freitexte benötigen einen
   besonders klaren Zugriffs- und Löschrahmen.

@@ -3,8 +3,8 @@
 This directory follows the Wirkungsökonomie visual system. New visuals must be categorized before creation and documented in:
 
 - `content/visuals/visual-source-registry.json`
-- `docs/visual-registry.md`
-- `docs/visual-system-guide.md`
+- visuelles Register
+- Leitfaden zum visuellen System
 
 ## Folders
 
