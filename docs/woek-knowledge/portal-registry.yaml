@@ -1,0 +1,60 @@
+# WÖk Portal Registry (maschinenlesbar)
+# Stand: 2026-08-14 · Offizielles Rang-Register der Site: portale/index.html (Rang 0–24)
+# Vollprosa: PORTALS.md
+
+rang_system:
+  quelle: portale/index.html
+  raenge:
+    - {rang: 0, portal: sdg-sdgplus-referenzrahmen, route: /verstehen/sdgs-sdgplus/, status: PRODUCTION, fuehrend: true, notes: "17 SDG- + 7 SDG+-Seiten, Agenda 2030, Risiko-/Resilienzregister; Daten data/sdg_*.json"}
+    - {rang: 1, portal: produkte-konsum, route: /wirkungsfelder/produkte-konsum/, status: PRODUCTION, notes: "Wirkungsumsatzsteuer, Fallbeispiele Apfel/T-Shirt/BASF, Scorecards/RMO/DPP"}
+    - {rang: 2, portal: impact-controlling, route: /werkzeuge/impact-controlling/, status: PRODUCTION, notes: "T-SROI, NWI, WÖk-IDs, Scorecards — Methodik-Hub + Rechner"}
+    - {rang: 3, portal: staat-recht-demokratie, route: /wirkungsfelder/staat-recht-demokratie/, status: PRODUCTION, notes: "WStG, Wirkungsrat, Wirkungshaushalt, Resilienzstaat — Kernreferenz fürs Parlament-Portal"}
+    - {rang: 4, portal: wirtschaft-unternehmen, route: /wirkungsfelder/wirtschaft-unternehmen/, status: PRODUCTION}
+    - {rang: 5, portal: wohnen-stadt, route: /wirkungsfelder/wohnen-stadt/, status: PRODUCTION}
+    - {rang: 6, portal: arbeit-einkommen, route: /wirkungsfelder/arbeit-einkommen/, status: PRODUCTION, notes: "Wirkungseinkommen, Automatisierungsdividende"}
+    - {rang: 7, portal: rente-soziale-sicherung, route: /wirkungsfelder/rente-soziale-sicherung/, status: PRODUCTION}
+    - {rang: 8, portal: bildung, route: /wirkungsfelder/bildung/, status: PRODUCTION, notes: "Wirkungsschule, eigene tools/"}
+    - {rang: 9, portal: medien-oeffentlichkeit, route: /wirkungsfelder/medien-oeffentlichkeit/, status: PRODUCTION, notes: "MWIX, Desinformation, Framing; verzahnt mit Wirkungsradar"}
+    - {rang: 10, portal: gesundheit-pflege, route: /wirkungsfelder/gesundheit-pflege/, status: PRODUCTION, conflict: "Duplikat wirkungsfelder/gesundheit/ (beide live, unterschiedliche Verlinkung)"}
+    - {rang: 11, portal: wissenschaft-innovation-digitalisierung, route: /wirkungsfelder/wissenschaft-innovation-digitalisierung/, status: PRODUCTION}
+    - {rang: 12, portal: finanzsystem-kapital, route: /wirkungsfelder/finanzsystem-kapital/, status: PRODUCTION}
+    - {rang: 13, portal: klima-energie-ressourcen, route: /wirkungsfelder/klima-energie-ressourcen/, status: PRODUCTION}
+    - {rang: 14, portal: kultur-identitaet-resonanz, route: /wirkungsfelder/kultur-identitaet-resonanz/, status: PRODUCTION, conflict: "portale/index.html Rang 14 verlinkt fälschlich ../referenz/"}
+    - {rang: 15, portal: migration-vielfalt, route: /portale/migration-vielfalt/, status: PRODUCTION}
+    - {rang: 16, portal: sicherheit-resilienz, route: /portale/sicherheit-resilienz/, status: PRODUCTION}
+    - {rang: 17, portal: digitalisierung-ki-wirkungsdatenraeume, route: /portale/digitalisierung-ki-wirkungsdatenraeume/, status: PRODUCTION, notes: "KI-Governance, Wirkungsdatenräume"}
+    - {rang: 18, portal: wissen-wissenschaft-forschung, route: /portale/wissen-wissenschaft-forschung-wirkungsinnovation/, status: PRODUCTION}
+    - {rang: 19, portal: internationale-ordnung, route: /portale/internationale-ordnung-globalisierung-geopolitik/, status: PRODUCTION}
+    - {rang: 20, portal: transformation-uebergaenge, route: /portale/transformation-uebergaenge-implementierung/, status: PRODUCTION, notes: "Roadmap 2030–2050, Pilotkommunen, Reallabore"}
+    - {rang: 21, portal: kritik-schutzarchitektur, route: /portale/kritik-missverstaendnisse-schutzarchitektur/, status: PRODUCTION, notes: "Missverständnisse (Planwirtschaft/Social Credit), Missbrauchsschutz"}
+    - {rang: 22, portal: zukunftsbilder-wirkungswohlstand, route: /portale/zukunftsbilder-wirkungswohlstand/, status: PRODUCTION}
+    - {rang: 23, portal: wirkungsakademie-fachbibliothek, route: /portale/wirkungsakademie-fachbibliothek/, status: PRODUCTION}
+    - {rang: 24, portal: masterbibliothek-downloadzentrum, route: /portale/ + /downloads/ + /website-1-0-release/, status: PRODUCTION}
+  ausserhalb_rangliste:
+    - {portal: wirkungsfinanzpolitik, route: /wirkungsfelder/wirkungsfinanzpolitik/, status: PRODUCTION, notes: "nicht auf wirkungsfelder/index.html gelistet (versteckt); IOI, MMT-Anschluss"}
+
+querschnittsbereiche:
+  - {id: wirkungsradar, route: /wirkungsradar/, status: PRODUCTION, notes: "Faktencheck-/Debatten-System: 139 Mythen-Detailseiten (+live/-Spiegel), Narrative, Resonanz(-Kompass), Ursachen(-Navigator), Psychologie, Debattenkarten (127, interaktiv), Studio, Workshops, Agenda-Radar, Embed-Widgets; Hub /oeffentlicher-wirkungsraum/; Community-Einreichung → Akademie-Moderation"}
+  - {id: werkzeuge, route: /werkzeuge/, status: PRODUCTION, notes: "67 Verzeichnisse; Interaktivität siehe tool-registry.yaml"}
+  - {id: wirkungssteuerung, route: /wirkungssteuerung/, status: PRODUCTION, notes: "19 Policy-Seiten inkl. WStG/WEstG/WUStG-Kurzfassungen; Volltexte werkstatt/gesetze/"}
+  - {id: erleben, route: /erleben/ (+erleben.html), status: PRODUCTION, notes: "interaktive Demos/Rechner/Quiz; ausprobieren/ = Redirect"}
+  - {id: fuer-zielgruppen, route: /fuer/, status: PRODUCTION, notes: "Zielgruppen-Einstiege: Bürger:innen, Unternehmen, Investor:innen, Kommunen, Politik, Journalismus, Wissenschaft, Landwirtschaft, Mieter:innen, Rente"}
+  - {id: verstehen, route: /verstehen/, status: PRODUCTION, notes: "Modell-Einstieg; verstehen.html parallel (Drift)"}
+  - {id: bibliothek, route: /bibliothek/, status: PRODUCTION, notes: "8088 Dateien; kuratierter Katalog + eintraege/-Leselayer (3225 generierte Einträge) + studienskripte/; Statusregister assets/data/library-version-registry.json"}
+  - {id: referenz-buch, route: /referenz/ (+/buch.html), status: PRODUCTION, notes: "Online-Lesefassung des Buchs, 1670 Dateien, Kapitel + Glossar + Export"}
+  - {id: quellenarchiv, route: /quellenarchiv/, status: PRODUCTION, notes: "read-only-Spiegel der Institut-API; Snapshot 1024 Quellen; RSS; wöchentl. Sync-PR"}
+  - {id: woek-id-register, route: /woek-id-register/ (+/register/), status: PRODUCTION, notes: "Explorer über 621 geprüfte WÖk-IDs v1.3"}
+  - {id: methodenraum, route: /methodenraum/ (+methodenraum.html), status: PRODUCTION, notes: "WÖMM/WÖMS: 152 Methoden, Canvas, 20 Journeys; PPTX-Template"}
+  - {id: akademie-lernen, route: /akademie.html + /lernen/ + /zertifikat/, status: PRODUCTION, notes: "Website-Lernpfad; echte Lernplattform = akademie.wirkungsoekonomie.de (eigenes Repo)"}
+  - {id: institut-bruecke, route: /institut/, status: PRODUCTION, notes: "Brückenseite; eigentliches Institut = institut.wirkungsoekonomie.de (Repo lokal nicht vorhanden → KNOWLEDGE_GAPS)"}
+  - {id: wirkungswissenschaften, route: /wirkungswissenschaften/, status: PRODUCTION, notes: "Disziplin-Rahmen: Definition, Begriffssystem, Methodik, Publikationen, FAQ"}
+  - {id: werkstatt, route: /werkstatt/, status: PRODUCTION, notes: "Arbeitsbibliothek, Whitepaper, Gesetzes-Volltexte (WStG), Leitlinien"}
+  - {id: blog-journal, route: /blog.html + /blog/ (+/journal/), status: PRODUCTION, notes: "149 Einträge lt. blog-index.json (162 Dateien); LinkedIn-Archiv; journal/ separat (2 Einträge)"}
+  - {id: podcast, route: /podcast/, status: PRODUCTION, notes: "9 Episodenseiten; Audio via GitHub Releases"}
+  - {id: en-lokalisierung, route: /en/, status: BETA, notes: "nur 7 Seiten (Home, App, Library, My Impact Space, Search, Tools, WÖk-AI)"}
+  - {id: mein-wirkungsraum, route: /mein-wirkungsraum/, status: BETA}
+  - {id: app-pwa, route: /app/, status: PRODUCTION}
+  - {id: api-statisch, route: /api/v1/, status: PRODUCTION}
+  - {id: suche, route: /suche.html, status: PRODUCTION, notes: "Suchindex 28957 Einträge (assets/search/search-index.json)"}
+  - {id: natalie-weber, route: /w/natalie-weber/, status: PRODUCTION, notes: "Begründerinnen-Profil: Bio, FAQ, Musik, Podcast, Presse, Publikationen, Urheberschaft"}
+  - {id: admin-wirkungsradar, route: /admin/wirkungsradar/, status: PROTOTYPE, notes: "nur Prozess-Doku, kein echtes Queue-UI, kein Auth (noindex only)"}

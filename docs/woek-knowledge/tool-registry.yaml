@@ -1,0 +1,120 @@
+# WÖk Tool Registry (maschinenlesbar) — interaktive Werkzeuge + Cluster
+# Stand: 2026-08-14 · Erhebung: Code-Inventur origin/main (Formular-/fetch-Prüfung je Seite)
+# implementation: CONTENT_ONLY | FRONTEND_ONLY | BACKEND_AVAILABLE | API_AVAILABLE | FULLY_REUSABLE
+# Bestehende Site-Registries (nicht duplizieren, referenzieren): assets/data/tool-registry.json (9 Einträge),
+#   assets/data/tool-examples.json, docs/dashboard-tool-inventory.md (Routenliste mit Formular-Spalte)
+
+tools:
+  # ── KI-/Backend-gestützt (Oracle WÖk-Kern-API) ────────────────────────────
+  - tool_id: woek-app
+    name: WÖk-App (PWA)
+    route: /app/
+    repo_paths: [app/index.html, assets/js/woek-app.js, manifest.webmanifest, sw.js]
+    implementation: API_AVAILABLE
+    backend: "POST /api/factcheck, /api/woek-ai, /api/product-check @ Oracle (130.162.217.58.sslip.io)"
+    status: PRODUCTION
+    notes: "3 Tabs: Wirkungscheck (Faktencheck), Frag die WÖk, Produktcheck; Text/Link/Bild/OCR; Discord-Login optional; EN-Variante /en/app/"
+  - tool_id: faktencheck
+    name: Faktencheck / WÖk-Wirkungscheck
+    route: /werkzeuge/faktencheck/
+    repo_paths: [werkzeuge/faktencheck/index.html, assets/js/faktencheck.js]
+    implementation: API_AVAILABLE
+    backend: "POST /api/factcheck @ Oracle"
+    status: PRODUCTION
+    notes: "Methodik Folgen-vor-Fakten; Doppel-Frontend zu /app/-Tab (Duplikat)"
+  - tool_id: woek-ki
+    name: WÖk-KI „Frag die WÖk"
+    route: /woek-ki/
+    repo_paths: [woek-ki/index.html, assets/js/woek-ai-client.js]
+    implementation: API_AVAILABLE
+    backend: "POST /api/woek-ai + /api/feedback @ Oracle"
+    status: BETA
+    notes: "Quellengebundener Chat; Details WOEK_AI_CAPABILITIES.md"
+  - tool_id: wirkungscheck-bundestag
+    name: Wahlkreis-/Bundestag-Wirkungscheck (V3-Pilot)
+    route: /werkzeuge/wahlkreis-wirkungscheck/
+    repo_paths: [werkzeuge/wahlkreis-wirkungscheck/index.html, assets/js/wirkungscheck-bundestag-v3/, assets/js/wahlkreis-wirkungscheck/instruments-2026.js, assets/js/wahlkreis-wirkungscheck/data-2025.js]
+    implementation: API_AVAILABLE
+    backend: "lokale deterministische Regel-Engine; Opt-in POST /api/woek-ai @ Oracle"
+    status: BETA  # noindex-Pilot; Themenmodule Wohnen + Gesundheit/Pflege
+    notes: "V1 verwaist (Code da, nicht eingebunden), V2 = Holding-Page; Sofortreaktions-Registry, rote Linien, Evidenzklassen, Instrumentenbibliothek (6 Instrumente); MdB-Befragungs-Infrastruktur (CiviCRM/LimeSurvey) nur lokal vorbereitet"
+  - tool_id: zertifikate-pruefen
+    name: Zertifikate prüfen
+    route: /zertifikat/
+    repo_paths: [zertifikat/index.html]
+    implementation: API_AVAILABLE
+    backend: "GET akademie.wirkungsoekonomie.de/api/certificates/{id}"
+    status: PRODUCTION
+    notes: "⚠️ Akademie stellt derzeit keine Zertifikate aus (keine INSERT-Logik) — Endpoint-Existenz von Codex prüfen"
+  - tool_id: mein-wirkungsraum
+    name: Mein Wirkungsraum
+    route: /mein-wirkungsraum/
+    repo_paths: [mein-wirkungsraum/index.html, assets/js/woek-wirkungsraum-account.js]
+    implementation: BACKEND_AVAILABLE
+    backend: "GET/POST akademie.wirkungsoekonomie.de/api/me(/saved), Cookie-Auth; Rest localStorage"
+    status: BETA
+    notes: "Merkliste per WÖk-ID geräteübergreifend; laut api/v1/capabilities.json Shared-Core-Funktion"
+
+  # ── Rechner & Simulationen (rein clientseitig) ────────────────────────────
+  - {tool_id: impact-controlling-rechner, name: Impact-Controlling-Rechner (NWI + T-SROI live), route: /erleben/impact-controlling-rechner/, repo_paths: [assets/js/impact-controlling-rechner.js, assets/js/impact-calculations.js], implementation: FRONTEND_ONLY, status: PRODUCTION, notes: "18 Inputs, Schutz-Gate/rote Linie"}
+  - {tool_id: t-sroi-rechner, name: T-SROI-Rechner, route: "/werkzeuge/t-sroi/#interaktives-beispiel", repo_paths: [werkzeuge/t-sroi/index.html, assets/js/tool-examples-dashboard.js, assets/js/impact-calculations.js], implementation: FRONTEND_ONLY, status: PRODUCTION, notes: "einziges werkzeuge/*-Tool mit aktiviertem Rechen-Widget; Logik = Rechenstandard v1.1"}
+  - {tool_id: produktwirkungsrechner, name: Produktwirkungsrechner, route: /erleben/produktwirkungsrechner/, repo_paths: [assets/js/produktwirkungsrechner.js], implementation: FRONTEND_ONLY, status: PRODUCTION, notes: "Scorecard + FinalScore nach RMO"}
+  - {tool_id: scorecard-dashboard, name: Scorecard-Dashboard & Produktpass, route: /scorecard-dashboard.html, repo_paths: [assets/js/scorecard-dashboard.js, assets/data/scorecard-examples.json], implementation: FRONTEND_ONLY, status: PRODUCTION}
+  - {tool_id: wohnwirkungsrechner, name: Wohnwirkungsrechner (WIX-Wohn), route: /erleben/wohnwirkungsrechner/, implementation: FRONTEND_ONLY, status: PRODUCTION}
+  - {tool_id: stranded-asset-check, name: Stranded-Asset-Check, route: /stranded-assets/, repo_paths: [assets/js/stranded-assets.js, assets/data/stranded-assets-parameter.json], implementation: FRONTEND_ONLY, status: PRODUCTION}
+  - {tool_id: automatisierungs-wirkungseinkommensrechner, name: Automatisierungs- & Wirkungseinkommensrechner, route: /erleben/automatisierungs-wirkungseinkommensrechner/, implementation: FRONTEND_ONLY, status: PRODUCTION, notes: "15 Inputs; = Kandidat Wirkungseinkommensrechner"}
+  - {tool_id: impact-investment-rechner, name: Impact-/Investment-Rechner (Unternehmen/Investor:innen), route: [/fuer/unternehmen/impact-controlling/, /fuer/investoren/impact-controlling/], repo_paths: [assets/js/impact-investment-calculators.js], implementation: FRONTEND_ONLY, status: UNKNOWN}
+  - {tool_id: risiko-resilienz-simulation, name: Risiko- & Resilienz-Simulation, route: /erleben/risiko.html, repo_paths: [assets/js/erleben.js], implementation: FRONTEND_ONLY, status: PRODUCTION}
+  - {tool_id: plattform-algorithmuswirkung, name: Plattform-/Algorithmuswirkung erleben, route: /erleben/plattformen.html, implementation: FRONTEND_ONLY, status: PRODUCTION}
+  - {tool_id: produktwirkung-erleben, name: Produktwirkung erleben (Simulator), route: /erleben/produktwirkung.html, implementation: FRONTEND_ONLY, status: PRODUCTION, notes: "Überlappung mit produktwirkungsrechner"}
+  - {tool_id: medienwirkung-erleben, name: Medienwirkung erleben, route: /erleben/medienwirkung.html, implementation: FRONTEND_ONLY, status: PRODUCTION, notes: "Überlappung mit medienwirkungscheck"}
+  - {tool_id: medienwirkungscheck, name: Medienwirkungscheck, route: /erleben/medienwirkungscheck/, implementation: FRONTEND_ONLY, status: PRODUCTION}
+
+  # ── Profile, Register, Kompasse (datengetrieben, clientseitig) ────────────
+  - {tool_id: unternehmens-wirkungsprofil, name: Unternehmens-Wirkungsprofil (UWP) Beta, route: /erleben/unternehmens-wirkungsprofil/, repo_paths: [assets/js/uwp/uwp-profile.js, data/uwp/company-universe.uwp100.json], implementation: FRONTEND_ONLY, status: BETA, notes: "Scoring Mensch/Planet/Demokratie/Transformation/Datenqualität, rote Linien, Anlageberatungs-Sperrfilter"}
+  - {tool_id: kommunaler-wirkungsindex, name: Kommunaler Wirkungsindex (KWI) Beta, route: /erleben/kommunaler-wirkungsindex/, repo_paths: [assets/js/kwi-beta.js, assets/data/kwi/], implementation: FRONTEND_ONLY, status: BETA, notes: "45 Städte-Snapshots; Quelle SDG-Portal abgeschaltet 30.06.2026 → REGIONAL_DATA_CAPABILITIES.md"}
+  - {tool_id: welt-wirkungskompass, name: Welt-Wirkungskompass, route: /erleben/welt-wirkungskompass/, repo_paths: [assets/js/wirkungskompass/territorial-compass.js, data/wirkungskompass/], implementation: FRONTEND_ONLY, status: BETA}
+  - {tool_id: laender-wirkungskompass, name: Länder-Wirkungskompass (16 Bundesländer), route: /erleben/laender-wirkungskompass/, implementation: FRONTEND_ONLY, status: BETA}
+  - {tool_id: europa-wirkungskompass, name: Europa-Wirkungskompass (EU-27), route: /erleben/europa-wirkungskompass/, implementation: FRONTEND_ONLY, status: BETA}
+  - {tool_id: woek-id-register-explorer, name: WÖk-ID-Register-Explorer, route: /woek-id-register/, repo_paths: [assets/data/woek-id-register.json], implementation: FRONTEND_ONLY, status: PRODUCTION, notes: "Suche + Filter MPD/Regel/Prüfstatus; /register/ = Übersicht, /werkzeuge/woek-id-register/ = Redirect"}
+  - {tool_id: woek-kompass, name: WÖk-Kompass „Verstehe Wirkung", route: /kompass.html, repo_paths: [assets/js/kompass.js, content/kompass/], implementation: FRONTEND_ONLY, status: PRODUCTION, notes: "kuratierte Frage-Antwort-Pfade, kein KI-Chat"}
+  - {tool_id: woek-scanner, name: WÖk-Scanner, route: /anwendungen/scanner.html, repo_paths: [assets/js/scanner-mvp.js], implementation: FRONTEND_ONLY, status: PRODUCTION}
+
+  # ── Wahl & Debatte ────────────────────────────────────────────────────────
+  - {tool_id: wirkungswahl-kompass, name: Wirkungswahl-Kompass, route: /werkzeuge/wirkungswahl-kompass/, repo_paths: [components/wirkungswahl-kompass/, tests/wirkungswahl-kompass/], implementation: FRONTEND_ONLY, status: PRODUCTION, notes: "Wahl-O-Mat-artig: Prioritäten → Parteien-/Programm-Matrix 2025; nur localStorage; kein Parteien-Matching-Score im WÖk-Votum-Sinn"}
+  - {tool_id: debattenkarten, name: Debattenkarten (Debatten-Kompass), route: /wirkungsradar/debattenkarten/, implementation: FRONTEND_ONLY, status: PRODUCTION, notes: "127 Karten, Live-Suche/Filter; Build aus DOCX-Master via scripts/wirkungsradar/apply-master-debattenkarten.mjs"}
+  - {tool_id: debatten-kompass-studio, name: Debatten-Kompass Studio, route: /wirkungsradar/studio/, implementation: FRONTEND_ONLY, status: BETA, notes: "Export in Kommentar/TikTok/Instagram/Newsletter/Workshop/Sharepic/Unterricht"}
+
+  # ── Bildung ───────────────────────────────────────────────────────────────
+  - {tool_id: fach-zukunft-generator, name: Fach-Zukunft-Modulgenerator, route: /erleben/fach-zukunft-generator/, implementation: FRONTEND_ONLY, status: PRODUCTION}
+  - {tool_id: wirkungsportfolio-generator, name: Wirkungsportfolio-Generator, route: /erleben/wirkungsportfolio-generator/, implementation: FRONTEND_ONLY, status: PRODUCTION}
+  - {tool_id: wirkungsfoerderungs-check, name: Wirkungsförderungs-Check, route: /erleben/wirkungsfoerderungs-check/, implementation: FRONTEND_ONLY, status: PRODUCTION}
+  - {tool_id: wirkungsschule-check, name: Wirkungsschule-Check, route: /erleben/wirkungsschule-check/, implementation: FRONTEND_ONLY, status: PRODUCTION}
+  - {tool_id: bildungswirkungsindex-bwk, name: Bildungswirkungsindex (BWK), route: /werkzeuge/bildungswirkungsindex-bwk/, implementation: FRONTEND_ONLY, status: PRODUCTION}
+  - {tool_id: schulraum-wirkungscheck, name: Schulraum-Wirkungscheck, route: /werkzeuge/schulraum-wirkungscheck/, implementation: FRONTEND_ONLY, status: PRODUCTION}
+  - {tool_id: erleben-quiz, name: "Erleben-Quiz-Module (4 Themen + Mini-Quiz)", route: /erleben.html, repo_paths: [assets/js/erleben.js], implementation: FRONTEND_ONLY, status: PRODUCTION, notes: "Lernfeedback, kein Personenranking"}
+
+  # ── Meta ──────────────────────────────────────────────────────────────────
+  - {tool_id: werkzeug-dashboard, name: Werkzeug-Dashboard, route: /werkzeuge/dashboard/, repo_paths: [assets/js/tool-examples-dashboard.js, assets/data/tool-examples.json], implementation: FRONTEND_ONLY, status: PRODUCTION, notes: "filterbare Galerie aller Tool-Demos"}
+
+clusters:
+  - cluster_id: werkzeuge-methodikseiten
+    beschreibung: "~45 CONTENT_ONLY-Methodikseiten unter /werkzeuge/* mit Tool-artigen Namen (-Check/-Monitor/-Index/-Radar/-Simulator/-Rechner) OHNE Formular"
+    beispiele: [wirkungsrisiko-matrix, reverse-merit-order, netto-wirkungs-index, produktscorecards, wirkungsfonds-simulator, wirkungskredit-rechner, automatisierungsdividenden-rechner, kapitalwirkungscheck, ki-wirkungsrisiko-check, hybrid-risk-radar, kritische-infrastruktur-monitor, wirkungsdatenraeume, wirkungsaudit, esg-zu-woek-mapping, wissensrat-integritaetsregister]
+    implementation: CONTENT_ONLY
+    status: "PRODUCTION als Methodik-Bibliothek; als interaktive Tools nicht eingelöst (13 Seiten laden Rechen-JS ungenutzt)"
+    referenz: docs/dashboard-tool-inventory.md
+  - cluster_id: wirkungsradar-content
+    beschreibung: "~640 Content-Seiten (139 Mythen-Detailseiten + live/-Spiegel, narrative, psychologie, themen, resonanz(-kompass), ursachen(-navigator), agenda-radar, workshops, playbooks)"
+    implementation: CONTENT_ONLY
+    status: PRODUCTION
+  - cluster_id: wirkungssteuerung-policy
+    beschreibung: "19 Policy-/Instrumentenseiten (WStG/WEstG/WUStG-Kurzfassungen, Wirkungshaushalt, Beschaffung, CSRD/ESRS/GRI, digitaler Produktpass …)"
+    implementation: CONTENT_ONLY
+    status: PRODUCTION
+
+not_found:
+  - {kandidat: "LawReader/Gesetzesreader (eigenständiges Tool)", befund: "nur Lesekapitel im generischen Dokument-Reader (assets/js/reference-reader.js, 1681 Einbindungen); Gesetzes-Volltexte statisch in werkstatt/gesetze/"}
+  - {kandidat: "Folgencheck (separates Tool)", befund: "nur Methodikseite werkstatt/arbeitsbibliothek/whitepaper/faktencheck-folgencheck/; funktional im Faktencheck enthalten"}
+  - {kandidat: "Merken/Flashcards-Lernwerkzeug", befund: "glossaryTerms.js nur Tooltips/Verlinkung; kein Karteikarten-Interface (auch nicht in der Akademie-App)"}
+  - {kandidat: "Produkt-/Wirkungssteuer-Simulator (dedizierte Route)", befund: "als #simulator-Abschnitt in erleben.html bzw. erleben/produktwirkung.html realisiert"}
