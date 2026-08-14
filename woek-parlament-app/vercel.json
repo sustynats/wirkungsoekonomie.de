@@ -1,0 +1,8 @@
+{
+  "crons": [
+    {
+      "path": "/api/internal/parliament/import",
+      "schedule": "0 5 * * *"
+    }
+  ]
+}

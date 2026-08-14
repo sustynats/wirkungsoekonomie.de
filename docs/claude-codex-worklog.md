@@ -106,3 +106,13 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 - UX_HANDOFF auf Stand 2: 24 Komponenten mit Datenfeldern/Zuständen, ausführliche Responsive-Regeln (Breakpoint 640/760, Erste-Viewport-Regel, Touch) und WCAG-2.2-AA-Anforderungen inkl. Testpflicht. Rückschaufehler-Schutz (Quellenfilterung nach Entscheidungsdatum) als Datenmodell-Anforderung markiert.
 - Antwort an Codex: `docs/parlament/CLAUDE_ANTWORT_AN_CODEX_2026-08-14.md` — Import-Status je führender Referenz (WÖMS 2.0/Master Items v1.3/SDG v0.3 = FULL; Begriffsleitfaden v1.3, T-SROI v1.1, WÖMM 2.0 = nur TEXT mit benannten Lücken), Auflösung der „zwei fehlenden" führenden Referenzen (11 Registry-Einträge = 8 Werke, registry_id_map ergänzt), Korrektur /api/v1/methods = 152 statt 84 Methoden.
 - Neue Codex-Punkte A12–A14 in CROSSCHECK (Build-Kette WÖMS, fehlende WÖMM-Registry, T-SROI-Parametrisierung). Keine Backend-/DB-Arbeit in der Claude-Lane; woek-parlament-app bleibt unberührt.
+
+## 2026-08-14 — Codex: Wirkungsportal Parlament — Tech-MVP und Importvorbereitung
+
+- **Was:** Eigenständige Next.js-Anwendung unter `woek-parlament-app/` angelegt; UX-Handoff Stand 2 umgesetzt (Start, Karten, Entscheidungsseite, Monitor, Historie, Dialog, Trust-/Versionszustände). Alle sichtbaren Falldaten sind explizit synthetisch bzw. `CONTENT_REQUIRED`/`DATA_GAP`.
+- **Daten/Sicherheit:** Öffentliche Read-API, CSP/HSTS/Frame-Policy, Opt-in-KI ohne Votumsänderung, Supabase-Migration mit `ParliamentaryCase ≠ DecisionUnit`, Dokumenthash/Fassung und serverseitig erzwungener Damals/Heute-Grenze für Retrospektiven.
+- **DIP:** Adapter und Importfenster implementiert: laufendes Jahr als Bootstrap, Radar heute + 10 Tage (konfigurierbar 7–14), Importstatus immer `IMPORTED_UNREVIEWED`. Keine automatische Veröffentlichung oder Fachbewertung.
+- **Dokumentation:** Architektur- und Launch-Dokumente unter `docs/parlament/tech/`; führende WÖk-Referenzen und Reuse-Map übernommen.
+- **Geprüft:** `npm run lint`, `npm run typecheck`, `npm run build`; lokale Read-API und Security-Header getestet.
+- **Offen:** personalisierten DIP-Schlüssel, private Import-Worker/Supabase-Workbench mit RBAC+MFA, formelle Materialitäts- und Freigaberegeln, Hosting/DNS/TLS und Live-Gates.
+- **Nachtrag DIP:** Der offiziell veröffentlichte Schlüssel ist laut Hilfeseite bis Ende Mai 2027 gültig und funktionsgleich mit einem eigenen Schlüssel; einmaliger serverseitiger Lesetest `GET /api/v1/vorgang` am 2026-08-14: HTTP 200. Nutzung bis Ablauf nur als Hosting-Secret, mit 401-Rotationsalarm; personalisierter Schlüssel ist kein MVP-Gate.
