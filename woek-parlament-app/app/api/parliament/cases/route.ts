@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { publicCases } from "@/lib/public-api";
 
-export function GET() {
-  return NextResponse.json({ data: publicCases(), meta: { publicReadOnly: true, containsPublishedPoliticalVerdicts: false } });
+export async function GET() {
+  return NextResponse.json({ data: await publicCases(), meta: { publicReadOnly: true, containsPublishedPoliticalVerdicts: false } });
 }

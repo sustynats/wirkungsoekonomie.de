@@ -5,6 +5,7 @@ import { AiConsent } from "@/app/components/AiConsent";
 import { ScenarioPanel } from "@/app/components/ScenarioPanel";
 import type { EvidenceClass } from "@/data/cases";
 import { getCase, formatDate, materialityLabel } from "@/lib/cases";
+import { getPublishedPortalCase, type PublishedPortalCaseDetail } from "@/lib/published-cases";
 
 const steps = ["Einordnung", "Beratung", "Entscheidung", "Umsetzung", "Monitor"];
 
@@ -19,14 +20,47 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const item = getCase(slug);
-  return item ? { title: item.plainTitle, description: item.summary, openGraph: { title: item.plainTitle, description: item.summary, images: [] }, twitter: { title: item.plainTitle, description: item.summary, images: [] } } : {};
+  if (item) return { title: item.plainTitle, description: item.summary, openGraph: { title: item.plainTitle, description: item.summary, images: [] }, twitter: { title: item.plainTitle, description: item.summary, images: [] } };
+  const published = await getPublishedPortalCase(slug);
+  return published ? { title: published.title, description: "Veröffentlichter, quellengebundener Wirkungscheck des Instituts für Wirkungsökonomie.", openGraph: { title: published.title, images: [] } } : {};
+}
+
+function recommendationLabel(value: string) {
+  return {
+    IMPACT_LOGIC_ROBUST: "Wirkungslogik robust",
+    IMPACT_LOGIC_CONDITIONAL: "Wirkungslogik bedingt tragfähig",
+    PILOT_RECOMMENDED: "Erprobung empfohlen",
+    REWORK_BEFORE_DECISION: "Vor Entscheidung nacharbeiten",
+    CURRENTLY_NOT_ROBUST: "Derzeit nicht robust",
+    NO_ROBUST_RECOMMENDATION: "Keine belastbare Empfehlung"
+  }[value] ?? value.replaceAll("_", " ");
+}
+
+function readableAssessmentSummary(summary: Record<string, unknown>) {
+  const candidates = [summary.public_summary, summary.summary, summary.explanation];
+  return candidates.find((value): value is string => typeof value === "string" && value.trim().length > 0) ?? null;
+}
+
+function PublishedDecisionPage({ item }: { item: PublishedPortalCaseDetail }) {
+  const assessmentSummary = item.assessment ? readableAssessmentSummary(item.assessment.summary) : null;
+  return <div className="container decision-page">
+    <nav className="breadcrumb" aria-label="Pfad"><Link href="/entscheidungen">Entscheidungen</Link><span aria-hidden="true">/</span><span>{item.title}</span></nav>
+    <header className="decision-header"><div><p className="kicker">Veröffentlichter Wirkungscheck</p><h1>{item.title}</h1>{item.originalTitle ? <p className="original-title">{item.originalTitle}</p> : null}<p className="lead">Diese Veröffentlichung trennt amtliche Fakten, Wirkungsanalyse, normative Einordnung und verbleibende Unsicherheit.</p></div><aside className="decision-status"><span className="chip chip--verified">VERÖFFENTLICHT</span><dl><div><dt>Entscheidung</dt><dd>{item.decisionDate ? formatDate(item.decisionDate) : "Datum in der amtlichen Quelle"}</dd></div><div><dt>Aktualisiert</dt><dd>{formatDate(item.lastUpdated)}</dd></div><div><dt>Fassung</dt><dd>{item.source?.isFinalVotingVersion ? "finale Abstimmungsfassung" : "analysierte Fassung"}</dd></div><div><dt>Methodik</dt><dd>{item.assessment?.methodVersion ?? "im Manifest ausgewiesen"}</dd></div></dl></aside></header>
+    <section id="60-sekunden" className="sixty-second" aria-labelledby="published-sixty-title"><div className="sixty-heading"><p className="kicker">60 Sekunden</p><h2 id="published-sixty-title">Die geprüfte Einordnung</h2></div><dl className="sixty-grid"><div><dt>Was wurde entschieden?</dt><dd>{item.factPackage?.decisionObject ?? "Der freigegebene Entscheidungsgegenstand ist im Fachdossier dokumentiert."}</dd></div><div><dt>Parlamentarischer Stand</dt><dd>{item.factPackage?.parliamentaryStatus ?? "Amtliche Fassung liegt dem Check zugrunde."}</dd></div><div><dt>Offizielles Ziel</dt><dd>{item.factPackage?.officialObjective ?? "Im geprüften Faktpaket nicht als eigenständiges Ziel ausgewiesen."}</dd></div><div><dt>Fachliche Einordnung</dt><dd>{assessmentSummary ?? "Die methodische Herleitung und die offenen Punkte sind im Fachdossier ausgewiesen."}</dd></div><div className="sixty-recommendation"><dt>Empfehlungskategorie</dt><dd>{item.recommendation ? recommendationLabel(item.recommendation.category) : "Keine Empfehlungskategorie veröffentlicht."}</dd></div></dl></section>
+    <section id="dossier" className="panel dossier"><p className="kicker">Fachdossier</p><h2>Quellen, Methode und Grenzen</h2><article className="dossier-level level--fact"><p>Sachverhalt</p><h3>Amtliche Grundlage</h3><span>{item.source ? <a href={item.source.url} target="_blank" rel="noreferrer">{item.source.publisher}: {item.source.versionLabel} vom {formatDate(item.source.publishedOn)}</a> : "Die Quellenreferenz wird mit der Veröffentlichung mitgeführt."}</span></article><article className="dossier-level level--analysis"><p>Wirkungsanalyse</p><h3>Versionierte Herleitung</h3><span>{item.assessment ? `Methode ${item.assessment.methodVersion} · Regelwerk ${item.assessment.rulesetVersion} · Herleitung: ${item.assessment.provenance}.` : "Kein unversionierter Kurzschluss: Die Analyse wird nur mit ausgewiesenem Method- und Referenzstand veröffentlicht."}</span></article><article className="dossier-level level--assessment"><p>WÖk-Bewertung</p><h3>Grenzen bleiben sichtbar</h3><span>{item.recommendation ? `Evidenzstatus: ${item.recommendation.evidenceStatus.replaceAll("_", " ")} · Grenzstatus: ${item.recommendation.boundaryStatus.replaceAll("_", " ")}.` : "Keine Empfehlung wird aus einer bloßen Import- oder KI-Information erzeugt."}</span></article></section>
+    <section className="panel"><p className="kicker">Prüfbarkeit</p><h2>Was dieses Ergebnis verändern könnte</h2><p>Quellenstand, Methodenversion, Wirkpfade, Rechenannahmen und offene Evidenz werden versioniert. Eine neue Fassung oder substanzielle neue Evidenz löst eine erneute fachliche Prüfung aus; frühere Veröffentlichungen werden nicht still überschrieben.</p></section>
+  </div>;
 }
 
 export default async function DecisionPage({ params, searchParams }: { params: Promise<{ slug: string }>; searchParams: Promise<{ modus?: string }> }) {
   const { slug } = await params;
   const { modus } = await searchParams;
   const item = getCase(slug);
-  if (!item) notFound();
+  if (!item) {
+    const published = await getPublishedPortalCase(slug);
+    if (!published) notFound();
+    return <PublishedDecisionPage item={published} />;
+  }
   const parliamentMode = modus === "parlament";
   return <div className="container decision-page">
     <nav className="breadcrumb" aria-label="Pfad"><Link href="/entscheidungen">Entscheidungen</Link><span aria-hidden="true">/</span><span>{item.plainTitle}</span></nav>

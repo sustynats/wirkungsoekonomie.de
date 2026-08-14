@@ -5,11 +5,11 @@ import { getSupabaseConfiguration } from "@/lib/supabase-rest";
 
 export const dynamic = "force-dynamic";
 
-export function GET() {
+export async function GET() {
   const dip = getDipConfiguration();
   const supabase = getSupabaseConfiguration();
   return NextResponse.json({
-    data: publicCases().filter((item) => item.type === "RADAR"),
+    data: (await publicCases()).filter((item) => item.type === "RADAR"),
     importStatus: dip.configured && supabase.configured ? "CONFIGURED_DAILY_LOOKAHEAD_DRAFT_ONLY" : "CONFIGURATION_INCOMPLETE",
     plannedWindows: buildImportWindows(new Date(), dip.requestedLeadDays)
   });
