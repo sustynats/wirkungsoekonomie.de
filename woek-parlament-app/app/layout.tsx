@@ -13,6 +13,7 @@ export async function generateMetadata(): Promise<Metadata> {
     metadataBase: new URL(`${protocol}://${host}`),
     title: { default: "Wirkungsportal Parlament", template: "%s | Wirkungsportal Parlament" },
     description: "Das Wirkungsportal Parlament zeigt, was politische Entscheidungen bewirken könnten – mit Quellen, Rechenwegen, Unsicherheiten und späterer Überprüfung.",
+    alternates: { types: { "application/rss+xml": [{ url: "/rss.xml", title: "Wirkungsportal Parlament – RSS" }] } },
     robots: { index: false, follow: false },
     openGraph: { type: "website", locale: "de_DE", title: "Wirkungsportal Parlament", description: "Wirkung prüfen. Quellen offenlegen. Aus Entscheidungen lernen.", images: [{ url: "/og.png", width: 1736, height: 909, alt: "Wirkungsportal Parlament" }] },
     twitter: { card: "summary_large_image", title: "Wirkungsportal Parlament", description: "Wirkung prüfen. Quellen offenlegen. Aus Entscheidungen lernen.", images: ["/og.png"] }
@@ -28,6 +29,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <Suspense fallback={<nav className="portal-nav" aria-label="Hauptnavigation"><Link href="/bevorstehend">Anstehend</Link><Link href="/entscheidungen">Entscheidungen</Link><Link href="/historie">Historie</Link></nav>}><PortalNav /></Suspense>
     </div></header>
     <main id="main-content">{children}</main>
-    <footer className="site-footer"><div className="container footer-grid"><div><p className="kicker">Wirkungsportal Parlament</p><h2>Nachvollziehbar prüfen. Offen korrigieren.</h2><p>Ein öffentliches Fachangebot des Instituts für Wirkungsökonomie. Keine Personen- oder Parteibewertung, kein Social-Credit-System.</p></div><nav aria-label="Fußnavigation"><Link href="/transparenz">Transparenz</Link><Link href="/methodik">Methodik</Link><Link href="/transparenz/korrekturen">Korrekturen</Link><Link href="/datenschutz">Datenschutzerklärung</Link><a href="https://wirkungsoekonomie.de/impressum.html">Impressum</a><Link href="https://wirkungsoekonomie.de">Wirkungsökonomie.de</Link><a href="mailto:wirkungscheck@wirkungsoekonomie.de">Kontakt</a></nav></div></footer>
+    <footer className="site-footer"><div className="container footer-grid"><div><p className="kicker">Wirkungsportal Parlament</p><h2>Nachvollziehbar prüfen. Offen korrigieren.</h2><p>Ein öffentliches Fachangebot des Instituts für Wirkungsökonomie. Keine Personen- oder Parteibewertung, kein Social-Credit-System.</p></div><nav aria-label="Fußnavigation"><Link href="/transparenz">Transparenz</Link><Link href="/methodik">Methodik</Link><Link href="/transparenz/korrekturen">Korrekturen</Link><a href="/rss.xml">RSS-Feed</a><Link href="/datenschutz">Datenschutzerklärung</Link><a href="https://wirkungsoekonomie.de/impressum.html">Impressum</a><Link href="https://wirkungsoekonomie.de">Wirkungsökonomie.de</Link><a href="mailto:wirkungscheck@wirkungsoekonomie.de">Kontakt</a></nav></div></footer>
   </body></html>;
 }
