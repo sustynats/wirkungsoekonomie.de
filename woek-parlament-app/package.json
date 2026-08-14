@@ -1,0 +1,39 @@
+{
+  "name": "woek-parlament-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "node scripts/quality/check-release-safety.mjs --scope=repository && next build && node scripts/quality/check-release-safety.mjs --scope=release",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "db:migrate": "node scripts/run-parliament-migrations.mjs",
+    "db:verify": "node scripts/verify-parliament-db.mjs",
+    "storage:report": "node scripts/storage-report.mjs",
+    "supabase:connect": "node scripts/connect-supabase.mjs",
+    "backfill:historical": "tsx scripts/run-historical-backfill.ts",
+    "privacy:check": "node scripts/quality/check-release-safety.mjs --scope=repository",
+    "privacy:release": "node scripts/quality/check-release-safety.mjs --scope=release"
+  },
+  "engines": {
+    "node": ">=22 <25"
+  },
+  "dependencies": {
+    "jszip": "^3.10.1",
+    "next": "15.5.13",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "eslint": "9.17.0",
+    "eslint-config-next": "15.5.13",
+    "tsx": "^4.20.6",
+    "typescript": "5.7.2"
+  }
+}
