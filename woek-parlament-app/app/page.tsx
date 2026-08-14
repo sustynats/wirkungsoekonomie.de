@@ -41,6 +41,48 @@ function CurrentPriority() {
   </aside>;
 }
 
+const conclusionLabels = {
+  DECISION_CONFIRMED: "Entscheidung bestätigt",
+  DECISION_MOSTLY_CONFIRMED: "Überwiegend bestätigt",
+  JUSTIFIABLE_AT_TIME_NOT_CONFIRMED_EX_POST: "Damals vertretbar – heute nicht bestätigt",
+  ALTERNATIVE_PREFERABLE: "Alternative vorzugswürdig",
+  NO_ROBUST_RETROSPECTIVE_ASSESSMENT: "Keine belastbare Rückschau möglich"
+} as const;
+
+function RecentConclusions() {
+  const cases = parliamentaryCases
+    .filter((item) => item.editorialStatus === "PUBLISHED" && item.retrospective && item.publishedConclusion)
+    .sort((a, b) => (b.publishedConclusion?.completedAt ?? "").localeCompare(a.publishedConclusion?.completedAt ?? ""))
+    .slice(0, 3);
+
+  if (cases.length === 0) {
+    return <section className="section section--paper" aria-labelledby="history-preview-title">
+      <div className="container home-history-preview home-history-preview--empty">
+        <div><p className="kicker">Aus Entscheidungen lernen</p><h2 id="history-preview-title">Die ersten Abschlusseinordnungen folgen nach dem amtlichen Backfill.</h2></div>
+        <div><p>Historische Wirkungschecks trennen strikt: Was war damals bekannt? Was lässt sich heute beobachten? Erst danach wird eine nachvollziehbare Rückschau veröffentlicht.</p><Link className="button" href="/historie">So funktioniert der WÖk-Rückblick</Link></div>
+      </div>
+    </section>;
+  }
+
+  return <section className="section section--paper" aria-labelledby="history-preview-title">
+    <div className="container">
+      <div className="section-heading home-section-heading"><div><p className="kicker">Aus Entscheidungen lernen</p><h2 id="history-preview-title">Die jüngsten abgeschlossenen Wirkungschecks.</h2></div><Link href="/historie">Alle Rückblicke</Link></div>
+      <div className="home-history-grid">
+        {cases.map((item) => {
+          const conclusion = item.publishedConclusion!;
+          return <article key={item.slug}>
+            <p className="kicker">{conclusionLabels[conclusion.label]}</p>
+            <h3>{item.plainTitle}</h3>
+            <p>{conclusion.summary}</p>
+            <small>Abgeschlossen am {formatDate(conclusion.completedAt)}</small>
+            <Link href={`/entscheidungen/${item.slug}`}>Rückblick ansehen</Link>
+          </article>;
+        })}
+      </div>
+    </div>
+  </section>;
+}
+
 export default function HomePage() {
   return <>
     <section className="hero container">
@@ -56,6 +98,8 @@ export default function HomePage() {
       </div>
       <CurrentPriority />
     </section>
+
+    <RecentConclusions />
 
     <section id="so-funktioniert-es" className="section section--paper">
       <div className="container home-intro-grid">

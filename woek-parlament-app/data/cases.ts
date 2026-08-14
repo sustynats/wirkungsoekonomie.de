@@ -22,6 +22,12 @@ export type CaseSource = {
   note: string;
 };
 
+export type PublishedConclusion = {
+  label: "DECISION_CONFIRMED" | "DECISION_MOSTLY_CONFIRMED" | "JUSTIFIABLE_AT_TIME_NOT_CONFIRMED_EX_POST" | "ALTERNATIVE_PREFERABLE" | "NO_ROBUST_RETROSPECTIVE_ASSESSMENT";
+  summary: string;
+  completedAt: string;
+};
+
 export type ParliamentaryCase = {
   slug: string;
   title: string;
@@ -50,6 +56,7 @@ export type ParliamentaryCase = {
   versionNote: string;
   finalVotingVersionVerified: boolean | null;
   retrospective?: boolean;
+  publishedConclusion?: PublishedConclusion;
   changedSinceLastAnalysis?: boolean;
 };
 

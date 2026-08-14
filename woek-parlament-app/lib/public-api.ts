@@ -12,6 +12,7 @@ export function toPublicCase(item: NonNullable<ReturnType<typeof getCase>>) {
     term: item.termLabel,
     materiality: item.materiality,
     updatedAt: item.lastUpdated,
+    publishedConclusion: item.publishedConclusion,
     links: { html: `/entscheidungen/${item.slug}`, dossier: `/entscheidungen/${item.slug}#dossier` }
   };
 }
