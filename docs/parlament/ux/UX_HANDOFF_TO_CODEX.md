@@ -60,6 +60,26 @@ Stand: 2026-08-14 · Referenz: `prototype/` (index.html, entscheidung-beispiel.h
 
 Portal erbt Site-Tokens (`--navy #0B1020`, `--ivory`, `--gold`, `--green`, `--coral`, Radius 8, Container 1180) und lokale Fonts (`/assets/fonts/source-serif-4-*.woff2`, `inter-*.woff2`). Empfehlungs- und Statusfarben ausschließlich aus `prototype.css` (`.rec--*`, `.chip--*`) — keine Ampel-Semantik erfinden.
 
+## Stand-2-Komponenten (Prototyp `rueckblick-beispiel.html`, `dialog-beispiel.html`)
+
+18. **Monitor-Zeile** (`.monitor-row`, Route `/monitor/`): vier Spalten **Erwartung (ex ante) · Indikator · Beobachtung · Einordnung**; Desktop 4-spaltig, < 760px gestapelt mit erhaltenen Feldlabels. Datenfelder je Zeile: `erwartung_text, indikator_label, woek_id(Register-Referenz), beobachtung_text, beobachtungsstand_datum, status`. Status-Werte (`.mstatus--*`): `NOT_YET_OBSERVABLE | ON_TRACK | MIXED | OFF_TRACK | BOUNDARY_RISK | DATA_GAP`. Pflicht-Hinweis über der Tabelle: aus einer Zeitreihe allein folgt keine Kausalität.
+19. **Korrekturtrigger-Kasten**: erscheint, wenn eine als kritisch markierte Annahme abweicht; Felder `ausgeloeste_annahme, trigger_definition, folge_status(VERDICT_REVIEW_REQUIRED)`. Ausdrücklich „redaktionell, nicht automatisch" — kein Auto-Update des Votums.
+20. **Damals/Heute-Gegenüberstellung** (`.damals-heute`, Route `/historie/`, `RETROSPECTIVE_CASE`): zwei gleichwertige Spalten mit Goldtrenner; links nur Quellen mit `datum <= entscheidungsdatum`, rechts nur `datum > entscheidungsdatum`. **Diese Filterung ist eine Datenmodell-Anforderung, keine Redaktionsdisziplin** — bitte serverseitig erzwingen (Rückschaufehler-Schutz). Felder: `wissensstand_damals{evidenz, beabsichtigte_wirkung}`, `wissensstand_heute{evidenz, beobachtete_entwicklung, zurechenbarkeit}`, je `evidenzstand`.
+21. **Lernpunkt-Kasten** (`.hindsight`): heutige WÖk-Einordnung + `lernpunkt` — dieser Wert fließt zurück in den Wirkungsrelevanz-Standard des Radars (Feld `feeds_into: materiality_standard`).
+22. **Dialog-Trennungskasten** (`.trennung`, Route `/dialog/`): fester Text „Was Umfragen dürfen / nicht dürfen"; darf nicht abschaltbar oder einklappbar sein.
+23. **Umfrage-Ergebnisbalken** (`.balken`): Parlament (Navy) vs. Öffentlichkeit (Gold) je Frage; Pflicht-Metazeile darunter: `n je Gruppe, zeitraum, auswahlverfahren, repraesentativitaets_hinweis, mindestkohorte (n>=10, kleinere unterdrücken)`. Vergleich nur bei methodisch identischer Frage rendern — sonst Gruppen getrennt ausgeben.
+24. **Dialog-Prozesskette** (4 Karten): Eingang (anonymisiert, keine Verknüpfung Person↔Antwort↔Analyse) → redaktionelle Prüfung gegen Wirkungsrelevanz-Standard → Aufnahme ins Radar mit ausgewiesener Herkunft → Grenze (Votum bleibt analysebasiert).
+
 ## Noch offen (nächste Claude-Iterationen)
 
-Wireframes/Screens: Historie-Ansicht (damals/heute-Gegenüberstellung), Monitor (Erwartung→Beobachtung→Abweichung), Dialog, Werkzeugkasten-Seite, Methodik-/Trust-Center-Langform, Parlament-Modus-Zusatzblöcke (Drucksachenliste, Prüffragen, Kurzbrief-Kopierblock), Wirkungsnetz (Komplexfälle), Fassungs-Detailseite. Diese folgen als Stand 2; die Komponentensprache oben gilt für sie unverändert.
+Werkzeugkasten-Seite, Methodik-/Trust-Center-Langform, Parlament-Modus-Zusatzblöcke (Drucksachenliste, Prüffragen, Kurzbrief-Kopierblock), Wirkungsnetz (Komplexfälle), Fassungs-Detailseite, Radar-Listenansichten mit Filtern. Folgen als Stand 3; die Komponentensprache oben gilt für sie unverändert.
+
+## Prototyp-Dateien (Stand 2)
+
+| Datei | Deckt ab |
+|---|---|
+| `prototype/index.html` | Portalstart, Decision Cards, Fünf-Säulen-Schleife, Unabhängigkeitserklärung |
+| `prototype/entscheidung-beispiel.html` | Entscheidungsseite: Stepper, 60 Sekunden, Wirkpfad, Interaktiv, Dossier-Ebenen, Claim-Drawer, Nichtkompensation, Empfehlung, Region, Werkzeuge, KI, Versionen, Trust-Card |
+| `prototype/rueckblick-beispiel.html` | `/monitor/` (Monitor-Zeilen, Korrekturtrigger) und `/historie/` (Damals/Heute, Lernpunkt) |
+| `prototype/dialog-beispiel.html` | `/dialog/` (Trennungskasten, zwei Fragerunden, Ergebnisbalken mit Pflicht-Metazeile, Prozesskette) |
+| `prototype/prototype.css` | Alle Tokens, Komponentenklassen, Breakpoint 640/760, A11y-Stile |

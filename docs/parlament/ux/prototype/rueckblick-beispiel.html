@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Wirkungsmonitor &amp; Historischer Check (Beispiel) — Wirkungsportal Parlament</title>
+<link rel="stylesheet" href="prototype.css">
+<style>
+/* Stand-2-Komponenten */
+.monitor-row { display:grid; grid-template-columns: 1.1fr 1fr 1fr .9fr; gap:0; border:1px solid var(--line); border-radius:var(--radius); background:var(--white); overflow:hidden; margin-bottom:.7rem; }
+.monitor-row > div { padding:.75rem .9rem; border-left:1px solid var(--line); font-size:.88rem; }
+.monitor-row > div:first-child { border-left:0; background:var(--cream); }
+.monitor-row dt { font-size:.66rem; font-weight:700; letter-spacing:.7px; text-transform:uppercase; color:var(--muted); margin-bottom:.15rem; }
+.mstatus { display:inline-block; font-size:.72rem; font-weight:600; padding:.15rem .55rem; border-radius:999px; border:1px solid; }
+.mstatus--ontrack { background:#EAF3EE; border-color:#B9D6C6; color:var(--green-dark); }
+.mstatus--mixed { background:#F8F0DC; border-color:#E2CD9A; color:var(--gold-deep); }
+.mstatus--offtrack { background:#F7E9E6; border-color:#E0BBB3; color:#8e3d30; }
+.mstatus--notyet { background:#EFEFEC; border-color:#D5D5CE; color:#55554e; }
+.mstatus--gap { background:#fff; border-color:var(--coral); color:#8e3d30; }
+.damals-heute { display:grid; grid-template-columns:1fr 1fr; gap:0; border:1px solid var(--line); border-radius:var(--radius); overflow:hidden; background:var(--white); }
+.damals-heute > section { padding:1rem 1.15rem; }
+.damals-heute > section + section { border-left:3px solid var(--gold); }
+.damals-heute h3 { font-size:1rem; margin-bottom:.2rem; }
+.damals-heute .zeitmarke { font-size:.7rem; font-weight:700; letter-spacing:.8px; text-transform:uppercase; color:var(--muted); }
+.hindsight { border:1.5px solid var(--navy); background:var(--cream); border-radius:var(--radius); padding:.9rem 1.1rem; font-size:.88rem; margin-top:1rem; }
+@media (max-width:760px){ .monitor-row{grid-template-columns:1fr;} .monitor-row>div{border-left:0;border-top:1px solid var(--line);} .damals-heute{grid-template-columns:1fr;} .damals-heute>section+section{border-left:0;border-top:3px solid var(--gold);} }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+<div class="demo-banner">Synthetischer Demonstrationsfall — zwei getrennte Routen (/monitor/ und /historie/), hier zur Übersicht auf einer Prototypseite.</div>
+
+<div class="trust-band">
+  <div class="container">
+    <span><strong>Herausgegeben vom Institut für Wirkungsökonomie</strong></span>
+    <span>Rückblick-Ansichten · Beobachtung ist nicht automatisch Kausalität</span>
+  </div>
+</div>
+
+<header class="site-head">
+  <div class="container">
+    <a class="brand" href="index.html">Wirkungsportal Parlament<small>Bundespolitik verstehen · Wirkungen prüfen · Entscheidungen rückkoppeln</small></a>
+    <nav class="main-nav" aria-label="Hauptnavigation">
+      <a href="index.html#diese-woche">Anstehend</a>
+      <a href="entscheidung-beispiel.html">Entscheidungen</a>
+      <a href="#historie" aria-current="page">Historie</a>
+      <a href="#monitor">Monitor</a>
+      <a href="dialog-beispiel.html">Dialog</a>
+      <a href="index.html#unabhaengigkeit">Methodik &amp; Transparenz</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ── Wirkungsmonitor ────────────────────────────────────────────── -->
+  <section class="section" id="monitor">
+    <div class="container">
+      <p class="kicker">Route /monitor/ · Nach dem Beschluss</p>
+      <h1>Wirkungsmonitor: Was ist tatsächlich eingetreten?</h1>
+      <p>Der Monitor ersetzt die Analyse nicht — er kommt als Abschnitt auf derselben Entscheidungsseite hinzu, sobald beschlossen wurde. Jede Zeile stellt eine <strong>Erwartung</strong> ihrer <strong>Beobachtung</strong> gegenüber und weist die <strong>Abweichung</strong> aus.</p>
+      <p style="font-size:.85rem;color:var(--muted);border-left:3px solid var(--gold);padding-left:.8rem">Aus einer Zeitreihe allein folgt nie „das Gesetz hat X verursacht". Zurechnung nur, wenn die Evidenz sie trägt — sonst bleibt es beobachtete Veränderung.</p>
+
+      <div style="margin-top:1.2rem" role="table" aria-label="Wirkungsmonitor: Erwartung, Indikator, Beobachtung, Einordnung">
+        <div class="monitor-row">
+          <div><dt>Erwartung (ex ante)</dt>Bearbeitungsdauer sinkt spürbar, wenn Kapazität mitwächst.</div>
+          <div><dt>Indikator</dt>Ø Bearbeitungsdauer je Antragsart <span class="evid">WOK-ID: [Register-Referenz]</span></div>
+          <div><dt>Beobachtung</dt>Erste Erhebung läuft; belastbare Werte ab Q2 des Folgejahres.</div>
+          <div><dt>Einordnung</dt><span class="mstatus mstatus--notyet">NOT_YET_OBSERVABLE</span></div>
+        </div>
+        <div class="monitor-row">
+          <div><dt>Erwartung (ex ante)</dt>Der assistierte Zugangsweg wird real genutzt (rote Linie: Zugang).</div>
+          <div><dt>Indikator</dt>Nutzungsquote assistierter vs. digitaler Weg</div>
+          <div><dt>Beobachtung</dt>Erhebung nicht flächendeckend vorgesehen.</div>
+          <div><dt>Einordnung</dt><span class="mstatus mstatus--gap">DATA_GAP</span> — Lücke wird ausgewiesen, nicht überbrückt.</div>
+        </div>
+        <div class="monitor-row">
+          <div><dt>Erwartung (ex ante)</dt>Kommunale Umsetzungskapazität wächst mit (kritische Annahme).</div>
+          <div><dt>Indikator</dt>Anteil Kommunen mit abgeschlossener Umstellung</div>
+          <div><dt>Beobachtung</dt>Umstellung verläuft langsamer als im Zeitplan angenommen. <em>(fiktiv)</em></div>
+          <div><dt>Einordnung</dt><span class="mstatus mstatus--offtrack">OFF_TRACK</span></div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:1rem;border-left:4px solid var(--gold)">
+        <h3 style="margin-bottom:.3rem">Korrekturtrigger ausgelöst</h3>
+        <p style="font-size:.9rem;margin:0">Die Annahme „Kapazität wächst mit" war als kritischste Annahme markiert. Weil sie abweicht, greift der vorab definierte Trigger: <strong>Neubewertung der Empfehlung</strong> (Status <span class="evid">VERDICT_REVIEW_REQUIRED</span>) — redaktionell, nicht automatisch. Was sich daraus ergibt, wird in der Änderungshistorie sichtbar begründet.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Historischer Wirkungscheck ─────────────────────────────────── -->
+  <section class="section section--ivory" id="historie">
+    <div class="container">
+      <p class="kicker">Route /historie/ · RETROSPECTIVE_CASE</p>
+      <h2>Historischer Wirkungscheck: Was war damals bekannt?</h2>
+      <p>Kein Rückschaufehler: Spätere Erkenntnisse dürfen nicht so dargestellt werden, als hätten sie dem Parlament damals vorgelegen. Deshalb sind beide Wissensstände strikt getrennt.</p>
+
+      <div class="damals-heute" style="margin-top:1rem">
+        <section>
+          <p class="zeitmarke">Wissensstand damals · Entscheidungszeitpunkt</p>
+          <h3>Was war bekannt?</h3>
+          <p style="font-size:.9rem">Verfügbare Evidenz zum Beschlusszeitpunkt: [Quellen mit Datum ≤ Entscheidung]. <em>(fiktiver Fall, CONTENT_REQUIRED)</em></p>
+          <p style="font-size:.9rem"><strong>Beabsichtigte Wirkung:</strong> rekonstruiertes Ziel aus der damaligen Vorlage — nicht aus heutiger Deutung.</p>
+          <span class="evid">Evidenzstand: damals LIMITED</span>
+        </section>
+        <section>
+          <p class="zeitmarke">Wissensstand heute · Auswertung</p>
+          <h3>Was wissen wir zusätzlich?</h3>
+          <p style="font-size:.9rem">Spätere Studien, Evaluationen und amtliche Zeitreihen: [Quellen mit Datum &gt; Entscheidung].</p>
+          <p style="font-size:.9rem"><strong>Beobachtete Entwicklung:</strong> Zustandsveränderung X. <strong>Zurechenbar?</strong> Nur teilweise — konkurrierende Ursachen benannt.</p>
+          <span class="evid">Evidenzstand: heute MEDIUM</span>
+        </section>
+      </div>
+
+      <div class="hindsight">
+        <p style="margin:0 0 .5rem"><strong>Heutige WÖk-Einordnung</strong> <span class="ebene ebene--bewertung">WÖk-Bewertung</span> — am selben veröffentlichten Referenzrahmen wie alle anderen Fälle. Was sich bestätigt hat, was nicht, und welche Nebenwirkung erst später sichtbar wurde.</p>
+        <p style="margin:0"><strong>Lernpunkt für künftige Entscheidungen:</strong> Der Wirkpfad brach an der Vollzugsstation — künftig gehört die Kapazitätsfrage in die Ex-ante-Prüfung, nicht in die Nachbetrachtung. <em>Genau dieser Lernpunkt fließt zurück in den Wirkungsrelevanz-Standard des Radars.</em></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="kicker">Lernschleife</p>
+      <h2>Rückblick ist kein Archiv, sondern Eingabe</h2>
+      <p>Monitor und Historie speisen den Radar: bestätigte Bruchstellen erhöhen die Wirkungsrelevanz vergleichbarer Vorhaben, widerlegte Annahmen ändern Regeln der Analyse — nachvollziehbar dokumentiert in Methodik- und Änderungshistorie.</p>
+      <p><a class="btn btn--primary" href="entscheidung-beispiel.html">Zur Entscheidungsseite</a> <a class="btn" href="dialog-beispiel.html">Zum Wirkungsdialog</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="container">
+    <div><h4>Wirkungsportal Parlament</h4>Herausgegeben vom Institut für Wirkungsökonomie.<br>Kontakt: wirkungscheck@wirkungsoekonomie.de</div>
+    <div><h4>Transparenz</h4><a href="index.html#unabhaengigkeit">Unabhängigkeit</a><br><a href="#">Korrekturen</a></div>
+    <div class="legal">Prototyp (Claude-Lane) · synthetischer Fall · Beobachtung ≠ Kausalität.</div>
+  </div>
+</footer>
+</body>
+</html>
