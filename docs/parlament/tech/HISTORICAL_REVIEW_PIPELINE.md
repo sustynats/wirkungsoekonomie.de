@@ -1,4 +1,4 @@
-# Historical Backfill → ChatGPT/WÖk-Review-Pipeline
+# Historical Backfill → externe WÖk-Review-Pipeline
 
 ## Zweck
 

@@ -1,13 +1,13 @@
-# CODEX-AUFTRAG — Phase 0 abschließen & Wirkungsportal Parlament (Tech-Lane)
+# Technischer Umsetzungsauftrag — Phase 0 abschließen & Wirkungsportal Parlament
 
-Stand: 2026-08-14 · Von: Claude (Phase 0 abgeschlossen, PR #219) · Für: Codex
+Stand: 2026-08-14 · Phase 0 abgeschlossen, PR #219
 Verbindliche Vorleseliste, in dieser Reihenfolge: `docs/woek-knowledge/README.md` → `SOURCE_HIERARCHY.md` → `CROSSCHECK.md` → `PARLIAMENT_REUSE_MAP.md` → `INTEGRATIONS.md` → `SYSTEM_ARCHITECTURE.md` → `KNOWLEDGE_GAPS.md`. Der gemeinsame Master-Prompt (Wirkungsportal Parlament + Vertrauens-/Unabhängigkeits-Ergänzung + Versionssicherheits-Block) gilt unverändert; dieses Dokument operationalisiert deine Lane.
 
 ## Arbeitsregeln (unverändert verbindlich)
 
 - Kein direkter main-Push: Branch + PR + Checks. Kleine, thematisch getrennte PRs.
 - Statushierarchie der Bibliothek schlägt lokale Dateien (führend: Begriffsleitfaden v1.3, Master Items v1.3, T-SROI v1.1, SDG/SDG+ v0.3, WÖMM/WÖMS 2.0, Buch, Glossar). Nichts auf ersetzten Fassungen aufbauen.
-- Nie-Rückbau-Liste beachten; keine privaten Pfade in GitHub; Worklog-Eintrag je Block (`docs/claude-codex-worklog.md`).
+- Nie-Rückbau-Liste beachten; keine privaten Pfade in GitHub; Worklog-Eintrag je Block.
 - `docs/woek-knowledge/` bei jeder relevanten Änderung mitpflegen (+ `CHANGELOG.md`); `UNKNOWN` statt raten; `last_verified` setzen.
 
 ## Block 1 — Verifikation & TECHNICAL_CAPABILITY_MAP (zuerst, ~1 PR)
@@ -26,7 +26,7 @@ Fülle `docs/woek-knowledge/TECHNICAL_CAPABILITY_MAP.md` und hake `CROSSCHECK.md
 
 ## Block 3 — Architekturentscheidungen (Entscheidungsvorlagen für Natalie, keine Alleingänge)
 
-`CROSSCHECK.md` Abschnitt C: ① kanonischer `WoekAiService` (Oracle vs. Akademie-RAG) mit Kontextmodell `PARLIAMENT_CASE|PRODUCT_ANALYSIS|ACADEMY|IMPACT_CHECK|GENERAL_WOEK` · ② Analytics-Kanonisierung · ③ territoriale Zuordnungsschicht (AGS, Kommune↔Wahlkreis, `territorial_level/territorial_id/is_exact/is_proxy`) · ④ DIP-API-Spike (aktuelle Doku, API-Key-Beantragung, Rate-Limits, Entitäten; Vorgangs-Lebenszyklen NICHT hart verdrahten) · ⑤ Redaktions-Backend-Platzierung (Empfehlung: eigene App nach Akademie-Muster, Supabase+RBAC+MFA, nie noindex-Statik) · ⑥ Sichtung deines Alt-Arbeitsbaums `codex/live-clean-20260628` (ahead 31/behind 333; u.a. Kontextdossier v1.0 nur dort) — retten oder verwerfen, dokumentiert.
+`CROSSCHECK.md` Abschnitt C: ① kanonischer `WoekAiService` (Oracle vs. Akademie-RAG) mit Kontextmodell `PARLIAMENT_CASE|PRODUCT_ANALYSIS|ACADEMY|IMPACT_CHECK|GENERAL_WOEK` · ② Analytics-Kanonisierung · ③ territoriale Zuordnungsschicht (AGS, Kommune↔Wahlkreis, `territorial_level/territorial_id/is_exact/is_proxy`) · ④ DIP-API-Spike (aktuelle Doku, API-Key-Beantragung, Rate-Limits, Entitäten; Vorgangs-Lebenszyklen NICHT hart verdrahten) · ⑤ Redaktions-Backend-Platzierung (Empfehlung: eigene App nach Akademie-Muster, Supabase+RBAC+MFA, nie noindex-Statik) · ⑥ Sichtung vorhandener Alt-Arbeitsbäume — retten oder verwerfen, dokumentiert.
 
 ## Block 4 — Wirkungsportal Parlament, Tech-Foundation (nach Blöcken 1–3)
 
@@ -40,8 +40,8 @@ Deliverables nach Master-Prompt §70 unter `docs/parlament/tech/` (REPOSITORY_RE
 - KI-Grenze technisch erzwingen: kein LLM-Schreibzugriff auf Voten; `EDITORIAL_REVIEW_REQUIRED`-Pfad; Privacy-Muster des Wirkungscheck-V3 (Opt-in, Kontext-Sperrliste) übernehmen.
 - MdB-Dialog: `ops/wahlkreis-wirkungscheck/`-Blaupause (CiviCRM/LimeSurvey/Invitation/Disclosure-Control n≥10) als Ausgangspunkt für SURVEY_ARCHITECTURE/CIVICRM_NOTIFICATIONS — Produktivversand bleibt hinter Vier-Augen-Freigabe.
 
-**Vor produktiver Frontend-Implementierung**: Claudes `docs/parlament/ux/UX_HANDOFF_TO_CODEX.md` lesen (entsteht parallel in der Claude-Lane); Abweichungen nur aus Technik-/Security-/A11y-Gründen, dokumentiert.
+**Vor produktiver Frontend-Implementierung**: `docs/parlament/ux/UX_HANDOFF.md` lesen; Abweichungen nur aus Technik-/Security-/A11y-Gründen, dokumentiert.
 
 ## Übergaberegeln
 
-Ergebnisse je Block als PR mit Verweis auf die aktualisierten `woek-knowledge`-Dateien; Differenzen zu Claude-Annahmen in `CROSSCHECK.md` eintragen (nicht überschreiben). Bei Konflikten mit führenden Referenzen: `REFERENCE_METADATA_CONFLICT` melden, Natalie entscheidet.
+Ergebnisse je Block als PR mit Verweis auf die aktualisierten `woek-knowledge`-Dateien; Differenzen zu bestehenden Annahmen in `CROSSCHECK.md` eintragen (nicht überschreiben). Bei Konflikten mit führenden Referenzen: `REFERENCE_METADATA_CONFLICT` melden; die Fachverantwortung entscheidet.

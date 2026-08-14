@@ -50,6 +50,16 @@ jobs:
       - name: Build public deploy artifact
         run: npm run build:artifact
 
+      - name: Check tracked files for private local paths
+        run: npm run check:private-paths
+
+      - name: Check changed artifact metadata for private local paths
+        run: >-
+          git diff --name-only --diff-filter=ACMR origin/main...HEAD --
+          '*.pdf' '*.docx' '*.xlsx' '*.pptx' '*.odt' '*.ods' '*.odp' '*.epub'
+          '*.avif' '*.heic' '*.jpeg' '*.jpg' '*.png' '*.tif' '*.tiff' '*.webp'
+          | python3 scripts/quality/check-private-artifact-metadata.py --paths-stdin
+
       - name: Check public artifact privacy
         run: npm run check:privacy
 

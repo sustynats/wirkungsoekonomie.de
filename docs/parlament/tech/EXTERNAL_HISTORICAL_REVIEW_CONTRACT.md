@@ -1,20 +1,20 @@
-# ChatGPT-Vertrag für historische WÖk-Reviews
+# Vertrag für externe historische WÖk-Reviews
 
 ## Zweck und Grenze
 
-ChatGPT prüft nach dem amtlichen DIP-Backfill in begrenzten Chargen ausschließlich die fachliche Vorarbeit. Es liefert keine veröffentlichungsfähige Empfehlung, keine errechneten Wirkungswerte ohne Quelle und kein Urteil über Menschen, Parteien oder Fraktionen. Die vollständige Ablauf- und Sicherheitsbeschreibung steht in [`HISTORICAL_REVIEW_PIPELINE.md`](HISTORICAL_REVIEW_PIPELINE.md).
+Das externe Fachreview prüft nach dem amtlichen DIP-Backfill in begrenzten Chargen ausschließlich die fachliche Vorarbeit. Es liefert keine veröffentlichungsfähige Empfehlung, keine errechneten Wirkungswerte ohne Quelle und kein Urteil über Menschen, Parteien oder Fraktionen. Die vollständige Ablauf- und Sicherheitsbeschreibung steht in [`HISTORICAL_REVIEW_PIPELINE.md`](HISTORICAL_REVIEW_PIPELINE.md).
 
 Der maschinenlesbare Vertrag wird in `woek-parlament-app/lib/editorial/external-review-contract.ts` als Zod-Schema validiert. Jede Ausgabe muss dieses Schema erfüllen.
 
 ## Ein- und Ausgabe
 
 ```text
-.local/chatgpt-review/incoming/historical-backfill/
+.local/external-review/incoming/historical-backfill/
   ALL_DECISIONS.md
   decision-registry.jsonl
   cases/<case-id>/...
 
-.local/chatgpt-review/outgoing/historical-backfill/
+.local/external-review/outgoing/historical-backfill/
   batch-summary.md
   case-results/<case-id>/review-result.json
 ```
@@ -38,7 +38,7 @@ Der Back-End-Validator verweigert andere Werte als `AI_SUGGESTION` bei fachliche
 
 ## Namentliche Abstimmungen
 
-Die `DecisionUnit` darf auf die amtliche namentliche Abstimmung und deren Originalquelle verweisen. Individuelle Stimmzeilen werden jedoch nicht in ChatGPT-Pakete exportiert, nicht zur Profilbildung verwendet und nicht zu Scores oder Ranglisten aggregiert. Bei nicht namentlichen Abstimmungen wird kein individuelles Verhalten rekonstruiert.
+Die `DecisionUnit` darf auf die amtliche namentliche Abstimmung und deren Originalquelle verweisen. Individuelle Stimmzeilen werden jedoch nicht in externe Review-Pakete exportiert, nicht zur Profilbildung verwendet und nicht zu Scores oder Ranglisten aggregiert. Bei nicht namentlichen Abstimmungen wird kein individuelles Verhalten rekonstruiert.
 
 ## Chargen und Qualität
 

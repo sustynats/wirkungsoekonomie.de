@@ -1,4 +1,4 @@
-# Wirkungsportal Parlament — Design System (Claude-Lane)
+# Wirkungsportal Parlament — Design System
 
 Stand: 2026-08-14 · Referenz-Implementierung: `docs/parlament/ux/prototype/` (der Prototyp IST die Spezifikation; dieses Dokument erklärt die Regeln dahinter).
 

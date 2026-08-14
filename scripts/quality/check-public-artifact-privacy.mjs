@@ -27,15 +27,33 @@ const scannedPaths = [
   "data/academy/certificates.json",
 ];
 
+// Public pages may discuss digital policy, but they must never disclose the
+// external authoring system used during development or editorial preparation.
+const prohibitedAuthoringMarker = new RegExp(
+  [
+    ["chat", "gpt"],
+    ["open", "ai"],
+    ["cla", "ude"],
+    ["co", "dex"],
+    ["anth", "ropic"],
+    ["gem", "ini"],
+    ["co", "pilot"],
+  ]
+    .map((parts) => parts.join(""))
+    .join("|"),
+  "i",
+);
+
 const blockedContentPatterns = [
   { label: "local macOS home path", pattern: /\/Users\// },
-  { label: "local Linux Hagen path", pattern: /\/home\/hagen\//i },
+  { label: "local Linux home path", pattern: /\/home\/[A-Za-z0-9._-]+\// },
   { label: "local volume path", pattern: /\/Volumes\/[A-Za-z0-9._ -]+\// },
   { label: "private temp path", pattern: /\/private\/(?:tmp|var|folders)\// },
   { label: "temporary build path", pattern: /\/tmp\/[A-Za-z0-9._-]+\// },
   { label: "Claude worktree path", pattern: /(?:^|[/"'])\.claude(?:[/"']|$)/i },
   { label: "local worktree path", pattern: /(?:^|[/"'])worktrees(?:[/"']|$)/i },
   { label: "file URL", pattern: /file:\/\//i },
+  { label: "external authoring-system marker", pattern: prohibitedAuthoringMarker },
   { label: "GitHub token", pattern: /\bgh[opsu]_[A-Za-z0-9_]{20,}\b/ },
   { label: "Supabase service key", pattern: /\beyJ[A-Za-z0-9_-]{20,}\.[A-Za-z0-9_-]{20,}\.[A-Za-z0-9_-]{20,}\b/ },
   { label: "generic secret assignment", pattern: /\b(?:SECRET|TOKEN|PRIVATE_KEY|SERVICE_ROLE_KEY)\b\s*[:=]\s*["'][^"']{12,}["']/i },
@@ -43,16 +61,14 @@ const blockedContentPatterns = [
 
 const binaryPathPatterns = [
   { label: "local macOS home path", pattern: /\/Users\/[A-Za-z0-9._-]+\// },
-  { label: "local Hagen home path", pattern: /\/Users\/hagen\//i },
-  { label: "local Linux Hagen path", pattern: /\/home\/hagen\//i },
-  { label: "local account path segment", pattern: /\/hagen\//i },
+  { label: "local Linux home path", pattern: /\/home\/[A-Za-z0-9._-]+\// },
   { label: "private temp path", pattern: /\/private\/(?:tmp|var|folders)\// },
   { label: "temporary build path", pattern: /\/tmp\/[A-Za-z0-9._-]+\// },
   { label: "file URL", pattern: /file:\/\//i },
+  { label: "external authoring-system marker", pattern: prohibitedAuthoringMarker },
 ];
 
 const certificateIdentityPatterns = [
-  { label: "personal certificate holder name", pattern: /\bHagen\s+(?:Weber|Nats|[A-ZÄÖÜ][A-Za-zÄÖÜäöüß-]+)\b/i },
   { label: "certificate holder field", pattern: /\b(?:holder|recipient|issuedTo)\b\s*[:=]\s*["'][^"']+["']/i },
   { label: "certificate email field", pattern: /\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b/i },
 ];

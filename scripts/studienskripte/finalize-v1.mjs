@@ -8,9 +8,7 @@ const APP = join(ROOT, "woek-akademie-app");
 const MASTER_DIR = join(ROOT, "content", "studienskripte");
 const WORD_DIR = join(ROOT, "docs", "studienskripte", "word-rohfassungen");
 const EXPORTER = join(ROOT, "scripts", "studienskripte", "export-word-rohfassung.py");
-const PYTHON = existsSync("/Users/hagen/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3")
-  ? "/Users/hagen/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3"
-  : "python3";
+const PYTHON = process.env.PYTHON ?? "python3";
 const TARGET_WORDS = 14500;
 const FINAL_STATUS = "studienskript-v1";
 const FINAL_STATUS_LINE = "**Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  ";

@@ -25,9 +25,6 @@ from xml.etree import ElementTree as ET
 
 
 ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_SOURCE = Path(
-    "/Users/hagen/Downloads/Wirkungsoekonomie_Gesamtstudie_Wirkungsdilemmata_Kooperation_SDGplus_v2.docx"
-)
 DEFAULT_OUTPUT = ROOT / "content/documents/online/wirkungsdilemmata-kooperation-sdgplus-gesamtstudie.inc"
 DEFAULT_ASSET_DIR = ROOT / "assets/img/publications/gesamtstudie-wirkungsdilemmata-kooperation-sdgplus"
 ARCHIVE_SNAPSHOT = ROOT / "content/quellenarchiv/sources.json"
@@ -1107,7 +1104,12 @@ def validate_output(rendered: str, stats: dict[str, int]) -> None:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--source", type=Path, default=DEFAULT_SOURCE, help="Pfad zur freigegebenen DOCX-Studie")
+    parser.add_argument(
+        "--source",
+        type=Path,
+        required=True,
+        help="Pfad zur freigegebenen DOCX-Studie (lokal übergeben, niemals versionieren)",
+    )
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT, help="Zieldatei für das HTML-Include")
     parser.add_argument("--asset-dir", type=Path, default=DEFAULT_ASSET_DIR, help="Zielordner für die eingebetteten Originalgrafiken")
     parser.add_argument("--no-assets", action="store_true", help="keine Bilder extrahieren (nur HTML neu bauen)")
