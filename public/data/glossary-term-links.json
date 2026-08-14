@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-05T18:34:48.597Z",
+  "generatedAt": "2026-08-14T09:44:24.123Z",
   "links": {
     "fuenftes-p-planet": {
       "label": "5. P = Planet",
@@ -24005,7 +24005,9 @@
         "jobs-to-be-done",
         "product-market-fit",
         "peter-drucker",
-        "gebrauchswert"
+        "gebrauchswert",
+        "value-based-pricing",
+        "wirkungsbasiertes-value-pricing"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -34366,7 +34368,8 @@
         "wirkungstragung",
         "nichtkompensationsprinzip",
         "wirkungsgrenze",
-        "reverse-merit-order"
+        "reverse-merit-order",
+        "wirkungsbasiertes-value-pricing"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -40896,7 +40899,8 @@
         "gender-data-gap",
         "vollstaendige-information",
         "informationsasymmetrie",
-        "impact-strategie"
+        "impact-strategie",
+        "wirkungsbasiertes-value-pricing"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -45458,7 +45462,8 @@
         "wirkungskapital-und-investitionsgate",
         "wirkungsoekonomisches-methodensystem",
         "wirkungsoekonomisches-managementmodell",
-        "wirkungsskalierungs-diffusions-und-exit-canvas"
+        "wirkungsskalierungs-diffusions-und-exit-canvas",
+        "wirkungsbasiertes-value-pricing"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -48565,7 +48570,9 @@
         "externalisierungsluecke",
         "wirkungstragung",
         "reverse-merit-order",
-        "nichtkompensationsprinzip"
+        "nichtkompensationsprinzip",
+        "value-based-pricing",
+        "wirkungsbasiertes-value-pricing"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -48730,6 +48737,42 @@
         "design-thinking",
         "wirkpfad",
         "reverse-merit-order"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "value-based-pricing": {
+      "label": "Value-based Pricing",
+      "slug": "value-based-pricing",
+      "url": "/begriffe/value-based-pricing/",
+      "hoverDefinition": "Value-based Pricing leitet den Preis aus dem nachvollziehbaren wirtschaftlichen Kundennutzen ab, nicht primär aus Stunden oder Selbstkosten.",
+      "shortDefinition": "Value-based Pricing ist eine Preisstrategie, bei der sich der Preis vor allem am nachvollziehbaren wirtschaftlichen Nutzen einer Leistung für den jeweiligen Kunden orientiert, nicht allein an Aufwand, Kosten, Marge oder Wettbewerb.",
+      "category": "Management, Wirksamkeit und Organisation",
+      "synonyms": [
+        "Value-based Pricing",
+        "Value-Based Pricing",
+        "Value Based Pricing",
+        "Value Pricing",
+        "wertbasiertes Pricing",
+        "kundennutzenbasiertes Pricing"
+      ],
+      "relatedTerms": [
+        "kundennutzen",
+        "business-value",
+        "value-proposition",
+        "value-proposition-canvas",
+        "wirkungspotenzial",
+        "wirkung",
+        "wirkungszurechnung",
+        "zurechnung-ohne-scheingenauigkeit",
+        "wirkpfad",
+        "wirkungscontrolling",
+        "unvollstaendiger-preis",
+        "preisvollstaendigkeit",
+        "wirkungsbasiertes-value-pricing"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -52937,6 +52980,50 @@
       ],
       "relatedObjections": []
     },
+    "wirkungsbasiertes-value-pricing": {
+      "label": "Wirkungsbasiertes Value Pricing",
+      "slug": "wirkungsbasiertes-value-pricing",
+      "url": "/begriffe/wirkungsbasiertes-value-pricing/",
+      "hoverDefinition": "Wirkungsbasiertes Value Pricing verbindet Kundenwert mit einer getrennten MPD-Wirkungsprüfung, ohne beide Größen zu einer Euro-Summe zu verrechnen.",
+      "shortDefinition": "Wirkungsbasiertes Value Pricing ist ein WÖk-Arbeitsmodell, das den zurechenbaren ökonomischen Kundenwert einer Leistung und ihre getrennt geprüfte Netto-Wirkung für Mensch, Planet und Demokratie gemeinsam in die Preisentscheidung einordnet.",
+      "category": "Management, Wirksamkeit und Organisation",
+      "synonyms": [
+        "Wirkungsbasiertes Value Pricing",
+        "wirkungsorientiertes Value Pricing",
+        "impact-basiertes Value Pricing",
+        "impact-informed Value Pricing",
+        "wirkungsbasiertes Pricing"
+      ],
+      "relatedTerms": [
+        "value-based-pricing",
+        "kundennutzen",
+        "business-value",
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "positive-netto-wirkung",
+        "wirkpfad",
+        "wirkungszurechnung",
+        "zurechnung-ohne-scheingenauigkeit",
+        "systemgrenze",
+        "wirkungscontrolling",
+        "scorecard",
+        "nwi",
+        "t-sroi",
+        "datenqualitaet",
+        "unvollstaendiger-preis",
+        "preisvollstaendigkeit",
+        "nichtkompensationsprinzip",
+        "wirkungsgrenze",
+        "reverse-merit-order",
+        "transformationswirkung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "wirkungsbedingte-stranded-assets": {
       "label": "Wirkungsbedingte Stranded Assets",
       "slug": "wirkungsbedingte-stranded-assets",
@@ -53469,7 +53556,9 @@
         "mensch-planet-demokratie",
         "sdgs",
         "agenda-2030",
-        "sdg-plus"
+        "sdg-plus",
+        "wirkungsbasiertes-value-pricing",
+        "value-based-pricing"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],

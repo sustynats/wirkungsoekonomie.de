@@ -14,6 +14,7 @@ const supplementSources = [
   path.join(root, "content/glossary/imports/terminologie-leitplanken.json"),
   path.join(root, "content/glossary/imports/rechtsgrundlagen-primarquellen.json"),
   path.join(root, "content/glossary/imports/psychologie-und-kommunikation-definitionen.json"),
+  path.join(root, "content/glossary/imports/value-pricing-und-wirkungsbasiertes-value-pricing.json"),
   path.join(root, "content/glossary/imports/gesamtstudie-wirkungsdilemmata-kooperation-sdgplus-term-definitions.json"),
   // Fachlich begründete Verbindungen für zuvor isolierte Begriffe. Diese
   // Datei ist kuratiert, nicht aus Kategorien automatisch abgeleitet.
