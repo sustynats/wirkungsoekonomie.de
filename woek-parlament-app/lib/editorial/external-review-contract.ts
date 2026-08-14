@@ -51,8 +51,26 @@ const candidateAssessmentSchema = z.object({
   uncertainty: z.string().min(1)
 });
 
+const impactDomainSchema = z.object({
+  domain: z.enum([
+    "HOUSING", "HEALTH_CARE", "EDUCATION_PARTICIPATION", "WORK_SKILLS",
+    "ECONOMY_TRANSFORMATION", "ENERGY_GRIDS", "MOBILITY", "CLIMATE_RESILIENCE",
+    "DIGITAL_STATE_INFRASTRUCTURE", "STATE_ADMINISTRATION", "HUMAN", "PLANET", "DEMOCRACY"
+  ]),
+  status: z.enum(["MATERIAL", "INDIRECT", "NOT_MATERIAL_IDENTIFIED", "EVIDENCE_OPEN"]),
+  reason: z.string().min(1),
+  source_refs: z.array(z.string().min(1))
+});
+
+const sourceConflictSchema = z.object({
+  question: z.string().min(1),
+  source_refs: z.array(z.string().min(1)).min(1),
+  why_unresolved: z.string().min(1)
+});
+
 export const historicalReviewResultSchema = z.object({
   case_id: z.string().min(1),
+  review_type: z.literal("HISTORICAL_WOEK_REVIEW").default("HISTORICAL_WOEK_REVIEW"),
   review_status: z.enum(["READY_FOR_EDITORIAL_REVIEW", "SOURCE_INCOMPLETE", "DATA_GAP", "METHOD_REVIEW_REQUIRED"]),
   source_completeness: z.object({
     decision_object: z.boolean(),
@@ -89,6 +107,11 @@ export const historicalReviewResultSchema = z.object({
     impact_paths_not_confirmed: z.array(z.string().min(1)),
     candidate_woek_assessment: candidateAssessmentSchema
   }),
+  // A top-level list deliberately mirrors the two temporal partitions. It
+  // makes an import easier to route while the nested items preserve whether a
+  // path was available at decision time or observed only later.
+  impact_paths: z.array(impactPathSchema).default([]),
+  impact_domains: z.array(impactDomainSchema).default([]),
   calculation_requirements: z.array(calculationRequirementSchema),
   normative_mapping: z.object({
     woek_ids: z.array(z.string().min(1)),
@@ -99,8 +122,12 @@ export const historicalReviewResultSchema = z.object({
     democracy: z.array(z.string().min(1))
   }),
   risks_and_boundaries: z.array(evidenceItemSchema),
+  risks: z.array(evidenceItemSchema).default([]),
+  non_compensable_boundaries: z.array(evidenceItemSchema).default([]),
+  counterfactuals: z.array(counterfactualSchema).default([]),
   data_gaps: z.array(z.object({ question: z.string().min(1), impact: z.string().min(1), source_refs_checked: z.array(z.string().min(1)) })),
   counterarguments: z.array(evidenceItemSchema),
+  source_conflicts: z.array(sourceConflictSchema).default([]),
   cross_case_links: z.array(z.object({ case_id: z.string().min(1), relation: z.string().min(1), note: z.string().min(1) })),
   retrospective: z.object({
     candidate_preferred_option_ex_ante: candidateAssessmentSchema,
@@ -110,6 +137,7 @@ export const historicalReviewResultSchema = z.object({
   }),
   provenance: z.object({
     woek_reference_snapshot: z.string().min(1),
+    exported_package_hash: z.string().min(1),
     review_generated_at: z.string().datetime(),
     source_refs_used: z.array(z.string().min(1)).min(1),
     review_system: z.string().min(1)
@@ -118,6 +146,75 @@ export const historicalReviewResultSchema = z.object({
 
 export type HistoricalReviewResult = z.infer<typeof historicalReviewResultSchema>;
 
+export type HistoricalReviewPackageBoundary = {
+  caseId: string;
+  decisionDate: string;
+  referenceSnapshot: string;
+  packageHash: string;
+  sourceIds: readonly string[];
+};
+
+export type HistoricalReviewValidation = {
+  valid: boolean;
+  result: HistoricalReviewResult;
+  errors: string[];
+  warnings: string[];
+};
+
 export function validateHistoricalReviewResult(input: unknown): HistoricalReviewResult {
   return historicalReviewResultSchema.parse(input);
+}
+
+function collectSourceReferences(value: unknown, references: string[]) {
+  if (Array.isArray(value)) {
+    value.forEach((item) => collectSourceReferences(item, references));
+    return;
+  }
+  if (!value || typeof value !== "object") return;
+  for (const [key, nested] of Object.entries(value as Record<string, unknown>)) {
+    if ((key === "source_refs" || key === "source_refs_checked" || key === "source_refs_used") && Array.isArray(nested)) {
+      nested.forEach((sourceId) => {
+        if (typeof sourceId === "string") references.push(sourceId);
+      });
+    } else if (key === "sources" && Array.isArray(nested)) {
+      nested.forEach((source) => {
+        if (source && typeof source === "object" && typeof (source as { source_id?: unknown }).source_id === "string") {
+          references.push((source as { source_id: string }).source_id);
+        }
+      });
+    } else {
+      collectSourceReferences(nested, references);
+    }
+  }
+}
+
+/**
+ * A schema-valid review can still point to a source that was not in the
+ * exported package. That is a validation failure, not an invitation to add an
+ * unreviewed source silently. The caller stores these messages and stages no
+ * public content in either case.
+ */
+export function validateHistoricalReviewAgainstPackage(input: unknown, boundary: HistoricalReviewPackageBoundary): HistoricalReviewValidation {
+  const result = validateHistoricalReviewResult(input);
+  const errors: string[] = [];
+  const warnings: string[] = [];
+  const allowedSources = new Set(boundary.sourceIds);
+
+  if (result.case_id !== boundary.caseId) errors.push("CASE_ID_MISMATCH");
+  if (result.provenance.woek_reference_snapshot !== boundary.referenceSnapshot) errors.push("REFERENCE_SNAPSHOT_MISMATCH");
+  if (result.provenance.exported_package_hash !== boundary.packageHash) errors.push("PACKAGE_HASH_MISMATCH");
+  if (result.ex_ante.knowledge_cutoff !== boundary.decisionDate) errors.push("EX_ANTE_KNOWLEDGE_CUTOFF_MISMATCH");
+
+  const referencedSources: string[] = [];
+  collectSourceReferences(result, referencedSources);
+  for (const sourceId of new Set(referencedSources)) {
+    if (!allowedSources.has(sourceId)) errors.push(`UNKNOWN_SOURCE_REFERENCE:${sourceId}`);
+  }
+  for (const requirement of result.calculation_requirements) {
+    for (const operand of requirement.required_operands) {
+      if (operand.status === "AI_GENERATED_NUMERIC_VALUE") warnings.push(`AI_NUMERIC_VALUE_NOT_USABLE:${requirement.impact_id}:${operand.name}`);
+    }
+  }
+
+  return { valid: errors.length === 0, result, errors, warnings };
 }

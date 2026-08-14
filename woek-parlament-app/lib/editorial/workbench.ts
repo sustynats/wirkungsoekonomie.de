@@ -104,6 +104,8 @@ type HistoricalRegistryRow = {
   parliamentary_case_id: string;
   selection_status: string;
   materiality_assessment: string;
+  review_package_status: string;
+  review_import_status: string | null;
 };
 
 type ImportJobRow = {
@@ -126,7 +128,7 @@ export async function historicalBackfillDashboard() {
   const term = terms[0] ?? null;
   if (!term) return { term: null, counts: null };
   const [registry, tasks, calculations, reviews, importJobs] = await Promise.all([
-    supabaseRest<HistoricalRegistryRow[]>(`historical_decision_registry?government_term_id=eq.${encodeURIComponent(term.id)}&select=parliamentary_case_id,selection_status,materiality_assessment&limit=5000`),
+    supabaseRest<HistoricalRegistryRow[]>(`historical_decision_registry?government_term_id=eq.${encodeURIComponent(term.id)}&select=parliamentary_case_id,selection_status,materiality_assessment,review_package_status,review_import_status&limit=5000`),
     supabaseRest<Array<{ parliamentary_case_id: string }>>(`editorial_tasks?status=${activeTaskStatuses}&select=parliamentary_case_id&limit=5000`),
     supabaseRest<Array<{ parliamentary_case_id: string }>>("calculation_records?select=parliamentary_case_id&calculation_status=in.(DRAFT,REVIEW_REQUIRED)&limit=5000"),
     supabaseRest<Array<{ parliamentary_case_id: string; status: string }>>("historical_decision_reviews?select=parliamentary_case_id,status&limit=5000"),
@@ -139,6 +141,9 @@ export async function historicalBackfillDashboard() {
     counts: {
       found: registry.length,
       preSorted: registry.filter((entry) => entry.materiality_assessment !== "UNSCREENED").length,
+      reviewPackageReady: registry.filter((entry) => entry.review_package_status === "READY" || entry.review_package_status === "EXPORTED").length,
+      reviewAwaiting: registry.filter((entry) => entry.review_package_status === "EXPORTED" && entry.review_import_status === null).length,
+      reviewImported: registry.filter((entry) => entry.review_import_status === "APPLIED_TO_TASKS").length,
       fullAnalyzed: registry.filter((entry) => reviewByCase.get(entry.parliamentary_case_id) === "APPROVED").length,
       inCalculation: new Set(calculations.filter((record) => caseIds.has(record.parliamentary_case_id)).map((record) => record.parliamentary_case_id)).size,
       dataGaps: registry.filter((entry) => entry.selection_status === "DATA_GAP" || entry.selection_status === "NOT_YET_ASSESSABLE").length,
