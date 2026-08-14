@@ -175,7 +175,7 @@ const LEADING_REFERENCE_PATHS = new Set([
   "glossar.html",
   "verstehen/sdgs-sdgplus/index.html",
   "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-  "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.3.pdf",
+  "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.4.pdf",
   "assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx"
 ]);
 
@@ -232,22 +232,22 @@ const LEADING_OVERRIDES = new Map([
     shortDescription: "Öffentliche Begriffskarte für zentrale WÖk-Begriffe und Abkürzungen."
   }],
   ["bibliothek/woek-begriffsleitfaden-fuehrend/index.html", {
-    title: "WÖk-Begriffsleitfaden führend v1.3",
+    title: "WÖk-Begriffsleitfaden führend v1.4",
     type: "Glossar",
     status: "führend",
-    shortDescription: "Maßgebliche Sprachreferenz für Nachhaltigkeit als langfristig gesicherte Wirkungsresilienz und acht Analysebausteine von Resilienz und Systementwicklung."
+    shortDescription: "Maßgebliche Sprachreferenz für Nachhaltigkeit als langfristige Wirkungsresilienz sowie IOOI als Wirkpfad innerhalb der Wirkungsarchitektur."
   }],
-  ["public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.3.pdf", {
-    title: "WÖk-Begriffsleitfaden führend v1.3",
+  ["public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.4.pdf", {
+    title: "WÖk-Begriffsleitfaden führend v1.4",
     type: "Glossar",
     status: "führend",
-    shortDescription: "PDF-Fassung der maßgeblichen Sprachreferenz für langfristig gesicherte Wirkungsresilienz und acht Analysebausteine von Resilienz und Systementwicklung."
+    shortDescription: "PDF-Fassung der maßgeblichen Sprachreferenz für langfristige Wirkungsresilienz sowie IOOI als Wirkpfad innerhalb der Wirkungsarchitektur."
   }],
   ["public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.pdf", {
     title: "WÖk-Begriffsleitfaden führend v1.0",
     type: "Glossar",
     status: "archiviert",
-    shortDescription: "Zitierfähige historische PDF-Fassung; für den aktuellen Begriffsstand gilt Version 1.2."
+    shortDescription: "Zitierfähige historische PDF-Fassung; für den aktuellen Begriffsstand gilt Version 1.4."
   }],
   ["assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx", {
     title: "WÖk Master Items v1.3",

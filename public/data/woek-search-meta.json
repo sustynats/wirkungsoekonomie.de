@@ -415,6 +415,25 @@
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
       "searchBoost": 110
     },
+    "/begriffe/aktivitaet/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-aktivitaet",
+      "documentId": "aktivitaet",
+      "relatedTerms": [
+        "ausloeser",
+        "input",
+        "output",
+        "iooi",
+        "wirkmechanismus",
+        "wirkungspotenzial",
+        "wirkung"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "IOOI und Wirkungsarchitektur · Begriffseinordnung v1.0",
+      "searchBoost": 110
+    },
     "/begriffe/alan-watts-daoismus/": {
       "documentType": "begriff",
       "status": "vordenker-bezugslinie",
@@ -1728,6 +1747,25 @@
       "sourceFile": "Definitionsmaster WÖk v1",
       "searchBoost": 110
     },
+    "/begriffe/ausloeser/": {
+      "documentType": "begriff",
+      "status": "woek-praezisierungsbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-ausloeser",
+      "documentId": "ausloeser",
+      "relatedTerms": [
+        "wirkstoff",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkmechanismus",
+        "aktivitaet",
+        "wirkpfad",
+        "wirkung"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Führender Begriffsleitfaden der Wirkungsökonomie · IOOI-Ergänzung v1.0",
+      "searchBoost": 110
+    },
     "/begriffe/austeritaet/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -2085,6 +2123,23 @@
         "warum-fakten-nicht-reichen-und-was-stattdessen-gesellschaftliche-stabilitat-erzeugt"
       ],
       "sourceFile": "Warum Fakten nicht reichen - und was stattdessen gesellschaftliche Stabilität erzeugt",
+      "searchBoost": 110
+    },
+    "/begriffe/baseline/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-baseline",
+      "documentId": "baseline",
+      "relatedTerms": [
+        "wirkungsanalyse",
+        "wirkungsnachweis",
+        "counterfactual",
+        "attributionsforschung",
+        "datenqualitaet"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "IOOI und Wirkungsarchitektur · Begriffseinordnung v1.0",
       "searchBoost": 110
     },
     "/begriffe/basisinnovation/": {
@@ -4404,6 +4459,23 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
+      "searchBoost": 110
+    },
+    "/begriffe/counterfactual/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-counterfactual",
+      "documentId": "counterfactual",
+      "relatedTerms": [
+        "baseline",
+        "wirkungsanalyse",
+        "wirkungsnachweis",
+        "attributionsforschung",
+        "kontribution"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "IOOI und Wirkungsarchitektur · Begriffseinordnung v1.0",
       "searchBoost": 110
     },
     "/begriffe/cradle-to-cradle/": {
@@ -13945,7 +14017,11 @@
         "datenqualitaet",
         "steuerungsdaten",
         "wirkungsdatenraum",
-        "wirkungsrueckkopplung"
+        "wirkungsrueckkopplung",
+        "iooi",
+        "wirkungsanalyse",
+        "wirkungsbewertung",
+        "referenzrahmen"
       ],
       "relatedDocuments": [
         "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
@@ -14151,6 +14227,26 @@
         "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
       ],
       "sourceFile": "Glossar-Datenstandards",
+      "searchBoost": 110
+    },
+    "/begriffe/impact/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-impact",
+      "documentId": "impact",
+      "relatedTerms": [
+        "iooi",
+        "outcome",
+        "wirkung",
+        "transformationswirkung",
+        "wirkungsbewertung",
+        "wirkungsnachweis",
+        "impact-management",
+        "impact-controlling"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "IOOI und Wirkungsarchitektur · Begriffseinordnung v1.0",
       "searchBoost": 110
     },
     "/begriffe/industrielle-dekonstruktion/": {
@@ -14455,6 +14551,25 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "",
+      "searchBoost": 110
+    },
+    "/begriffe/input/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-input",
+      "documentId": "input",
+      "relatedTerms": [
+        "iooi",
+        "aktivitaet",
+        "output",
+        "ausloeser",
+        "wirkungsanalyse",
+        "wirkung",
+        "wirkungsbewertung"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "IOOI und Wirkungsarchitektur · Begriffseinordnung v1.0",
       "searchBoost": 110
     },
     "/begriffe/insetting/": {
@@ -14932,6 +15047,38 @@
       "relatedDocuments": [
         "schulden-machen-oder-sparen"
       ],
+      "searchBoost": 110
+    },
+    "/begriffe/iooi/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-iooi",
+      "documentId": "iooi",
+      "relatedTerms": [
+        "ausloeser",
+        "wirkstoff",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkmechanismus",
+        "input",
+        "aktivitaet",
+        "output",
+        "outcome",
+        "impact",
+        "wirkung",
+        "wirkpfad",
+        "wirkungskette",
+        "theory-of-change",
+        "wirkungsbewertung",
+        "referenzrahmen",
+        "netto-wirkung",
+        "transformationswirkung",
+        "wirkungsrueckkopplung",
+        "impact-of-investment"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "IOOI und Wirkungsarchitektur · Begriffseinordnung v1.0",
       "searchBoost": 110
     },
     "/begriffe/ipbes/": {
@@ -16684,6 +16831,23 @@
         "rote-linien"
       ],
       "relatedDocuments": [],
+      "searchBoost": 110
+    },
+    "/begriffe/kontribution/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-kontribution",
+      "documentId": "kontribution",
+      "relatedTerms": [
+        "attributionsforschung",
+        "counterfactual",
+        "wirkungsnachweis",
+        "wirkungsanalyse",
+        "zurechnung-ohne-scheingenauigkeit"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "IOOI und Wirkungsarchitektur · Begriffseinordnung v1.0",
       "searchBoost": 110
     },
     "/begriffe/kontrollbeduerfnis/": {
@@ -20662,15 +20826,21 @@
     },
     "/begriffe/nebenwirkung/": {
       "documentType": "begriff",
-      "status": "approved",
+      "status": "woek-praezisierungsbegriff",
       "version": "1.0",
       "sectionId": "begriff-nebenwirkung",
       "documentId": "nebenwirkung",
       "relatedTerms": [
-        "folgewirkung",
-        "wirkungsrisiko"
+        "wechselwirkung",
+        "rebound-effekt",
+        "wirkungsrisiko",
+        "netto-wirkung",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "folgewirkung"
       ],
       "relatedDocuments": [],
+      "sourceFile": "IOOI und Wirkungsarchitektur · Begriffseinordnung v1.0",
       "searchBoost": 110
     },
     "/begriffe/nebenwirkungs-wechselwirkungs-und-rebound-analyse/": {
@@ -22985,15 +23155,24 @@
     },
     "/begriffe/outcome/": {
       "documentType": "begriff",
-      "status": "approved",
+      "status": "anschlussbegriff",
       "version": "1.0",
       "sectionId": "begriff-outcome",
       "documentId": "outcome",
       "relatedTerms": [
+        "iooi",
         "output",
-        "wirkung"
+        "impact",
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungsnachweis",
+        "wirkungsanalyse",
+        "wirkungsbewertung",
+        "attributionsforschung",
+        "kontribution"
       ],
       "relatedDocuments": [],
+      "sourceFile": "IOOI und Wirkungsarchitektur · Begriffseinordnung v1.0",
       "searchBoost": 110
     },
     "/begriffe/outgroup-homogenitaet/": {
@@ -23014,15 +23193,22 @@
     },
     "/begriffe/output/": {
       "documentType": "begriff",
-      "status": "approved",
+      "status": "anschlussbegriff",
       "version": "1.0",
       "sectionId": "begriff-output",
       "documentId": "output",
       "relatedTerms": [
+        "iooi",
+        "input",
+        "aktivitaet",
         "outcome",
-        "wirkung"
+        "impact",
+        "wirkung",
+        "wirkungskette",
+        "wirkungstreppe"
       ],
       "relatedDocuments": [],
+      "sourceFile": "IOOI und Wirkungsarchitektur · Begriffseinordnung v1.0",
       "searchBoost": 110
     },
     "/begriffe/overton-fenster/": {
@@ -26371,7 +26557,10 @@
         "sdg-plus",
         "kreislaufwirtschaft",
         "dunning-kruger-effekt",
-        "wirkungskompetenz"
+        "wirkungskompetenz",
+        "iooi",
+        "nebenwirkung",
+        "wirkungsanalyse"
       ],
       "relatedDocuments": [],
       "sourceFile": "",
@@ -26781,6 +26970,28 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "WÖMS 2.0 und WÖMM 2.0",
+      "searchBoost": 110
+    },
+    "/begriffe/referenzrahmen/": {
+      "documentType": "begriff",
+      "status": "woek-praezisierungsbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-referenzrahmen",
+      "documentId": "referenzrahmen",
+      "relatedTerms": [
+        "wirkung",
+        "wirkungsbewertung",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "wirkungsgrenze",
+        "reverse-merit-order",
+        "nichtkompensationsprinzip"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "IOOI und Wirkungsarchitektur · Begriffseinordnung v1.0",
       "searchBoost": 110
     },
     "/begriffe/refinanzierung/": {
@@ -33216,6 +33427,23 @@
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
       "searchBoost": 110
     },
+    "/begriffe/theory-of-change/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-theory-of-change",
+      "documentId": "theory-of-change",
+      "relatedTerms": [
+        "iooi",
+        "wirkungskette",
+        "wirkpfad",
+        "wirkmechanismus",
+        "wirkungsnachweis"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "IOOI und Wirkungsarchitektur · Begriffseinordnung v1.0",
+      "searchBoost": 110
+    },
     "/begriffe/thermal-runaway/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -36688,7 +36916,13 @@
         "wirkungsnetz",
         "interdependenz",
         "systemtheorie",
-        "wirkung"
+        "wirkung",
+        "nebenwirkung",
+        "rebound-effekt",
+        "wirkungsraum",
+        "wirkpfad",
+        "wirkungsrisiko",
+        "netto-wirkung"
       ],
       "relatedDocuments": [],
       "sourceFile": "",
@@ -37257,20 +37491,25 @@
     },
     "/begriffe/wirkmechanismus/": {
       "documentType": "begriff",
-      "status": "führender-begriff",
+      "status": "woek-praezisierungsbegriff",
       "version": "1.0",
       "sectionId": "begriff-wirkmechanismus",
       "documentId": "wirkmechanismus",
       "relatedTerms": [
+        "ausloeser",
         "wirkstoff",
-        "wirkpfad",
         "wirkungspotenzial",
+        "wirkungsrisiko",
+        "iooi",
+        "wirkungsnachweis",
+        "wirkung",
+        "wirkpfad",
         "wirkungstraeger",
         "kognitive-dissonanz"
       ],
       "relatedDocuments": [],
-      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "searchBoost": 140
+      "sourceFile": "Führender Begriffsleitfaden der Wirkungsökonomie · IOOI-Ergänzung v1.0",
+      "searchBoost": 110
     },
     "/begriffe/wirkpfad/": {
       "documentType": "begriff",
@@ -37329,7 +37568,11 @@
         "zeitwirkung",
         "frame",
         "framing",
-        "reframing"
+        "reframing",
+        "iooi",
+        "ausloeser",
+        "theory-of-change",
+        "wirkungsanalyse"
       ],
       "relatedDocuments": [],
       "sourceFile": "WÖMS 2.0 und WÖMM 2.0",
@@ -37412,13 +37655,17 @@
     },
     "/begriffe/wirkstoff/": {
       "documentType": "begriff",
-      "status": "führender-begriff",
+      "status": "woek-praezisierungsbegriff",
       "version": "1.0",
       "sectionId": "begriff-wirkstoff",
       "documentId": "wirkstoff",
       "relatedTerms": [
+        "ausloeser",
+        "iooi",
         "wirkungspotenzial",
+        "wirkungsrisiko",
         "wirkmechanismus",
+        "wirkung",
         "wirkpfad",
         "resonanzraum",
         "salienz",
@@ -37432,8 +37679,8 @@
         "ankereffekt"
       ],
       "relatedDocuments": [],
-      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
-      "searchBoost": 140
+      "sourceFile": "Führender Begriffsleitfaden der Wirkungsökonomie · IOOI-Ergänzung v1.0",
+      "searchBoost": 110
     },
     "/begriffe/wirkung-als-rechtsprinzip/": {
       "documentType": "begriff",
@@ -37670,7 +37917,11 @@
         "responsible-marketing",
         "greenwashing",
         "fuenftes-p-planet",
-        "impact-strategie"
+        "impact-strategie",
+        "output",
+        "outcome",
+        "impact",
+        "referenzrahmen"
       ],
       "relatedDocuments": [
         {
@@ -38034,6 +38285,27 @@
       "sourceFile": "Wirkungsradar Sprachmuster und Emotionalisierung",
       "searchBoost": 110
     },
+    "/begriffe/wirkungsanalyse/": {
+      "documentType": "begriff",
+      "status": "woek-praezisierungsbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-wirkungsanalyse",
+      "documentId": "wirkungsanalyse",
+      "relatedTerms": [
+        "wirkpfad",
+        "iooi",
+        "wirkungsnachweis",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "attributionsforschung",
+        "kontribution",
+        "wirkungsbewertung",
+        "datenqualitaet"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "IOOI und Wirkungsarchitektur · Begriffseinordnung v1.0",
+      "searchBoost": 110
+    },
     "/begriffe/wirkungsarchitektur/": {
       "documentType": "begriff",
       "status": "führender-begriff",
@@ -38097,7 +38369,9 @@
         "wirkungsraum",
         "wirkungsresilienz",
         "demokratische-wirkungsarchitektur",
-        "impact-strategie"
+        "impact-strategie",
+        "iooi",
+        "referenzrahmen"
       ],
       "relatedDocuments": [
         "blog/systemresilienz-statt-nachhaltigkeit/",
@@ -38491,7 +38765,8 @@
         "zielkonflikt",
         "host-wirkungsscore",
         "genossenschaftsblindheit",
-        "gemeineigentum"
+        "gemeineigentum",
+        "referenzrahmen"
       ],
       "relatedDocuments": [
         "Führender Begriffsleitfaden der Wirkungsökonomie",
@@ -40272,7 +40547,15 @@
         "sdgs",
         "agenda-2030",
         "sdg-plus",
-        "wirkungsoekonomie"
+        "wirkungsoekonomie",
+        "iooi",
+        "theory-of-change",
+        "wirkungstreppe",
+        "input",
+        "output",
+        "outcome",
+        "impact",
+        "wirkungsrad"
       ],
       "relatedDocuments": [],
       "sourceFile": "Definitionsmaster WÖk v1",
@@ -40708,7 +40991,15 @@
         "sdgs",
         "agenda-2030",
         "sdg-plus",
-        "wirkungsoekonomie"
+        "wirkungsoekonomie",
+        "wirkungspotenzial",
+        "wirkmechanismus",
+        "wirkungsanalyse",
+        "attributionsforschung",
+        "kontribution",
+        "counterfactual",
+        "baseline",
+        "datenqualitaet"
       ],
       "relatedDocuments": [],
       "sourceFile": "Definitionsmaster WÖk v1",
@@ -41509,7 +41800,10 @@
         "produktdaten",
         "responsible-marketing",
         "greenwashing",
-        "fuenftes-p-planet"
+        "fuenftes-p-planet",
+        "ausloeser",
+        "iooi",
+        "wirkungsnachweis"
       ],
       "relatedDocuments": [
         {
@@ -41833,6 +42127,27 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Definitionsmaster WÖk v1",
+      "searchBoost": 110
+    },
+    "/begriffe/wirkungsrad/": {
+      "documentType": "begriff",
+      "status": "woek-praezisierungsbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-wirkungsrad",
+      "documentId": "wirkungsrad",
+      "relatedTerms": [
+        "iooi",
+        "wirkungstreppe",
+        "wirkungskette",
+        "ausloeser",
+        "wirkungspotenzial",
+        "wirkungsbewertung",
+        "netto-wirkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "IOOI und Wirkungsarchitektur · Begriffseinordnung v1.0",
       "searchBoost": 110
     },
     "/begriffe/wirkungsradar/": {
@@ -42544,7 +42859,11 @@
         "zeitwirkung",
         "financial-materiality",
         "impact-management",
-        "impact-controlling"
+        "impact-controlling",
+        "ausloeser",
+        "wirkmechanismus",
+        "iooi",
+        "nebenwirkung"
       ],
       "relatedDocuments": [
         "arbeitspapier-doppelte-wesentlichkeit-impact-controlling",
@@ -43208,6 +43527,26 @@
         "Leitbild für Mensch, Planet und Demokratie"
       ],
       "sourceFile": "Glossar-Pack 008: Öffentliche Mittel & Wirkungshaushalt",
+      "searchBoost": 110
+    },
+    "/begriffe/wirkungstreppe/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-wirkungstreppe",
+      "documentId": "wirkungstreppe",
+      "relatedTerms": [
+        "iooi",
+        "wirkungskette",
+        "wirkpfad",
+        "outcome",
+        "impact",
+        "theory-of-change",
+        "wirkungsrad",
+        "wirkungsbewertung"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "IOOI und Wirkungsarchitektur · Begriffseinordnung v1.0",
       "searchBoost": 110
     },
     "/begriffe/wirkungsumsatzsteuer/": {
@@ -45040,7 +45379,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/index.html",
-      "contentHash": "051d7404a3805773",
+      "contentHash": "05b493d90046677a",
       "sectionId": "woek-page-e6bdb60cf0627b03"
     },
     "/bibliothek/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/": {
@@ -145400,7 +145739,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "woek-page-023712678d9e514f"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#1-zweck-dieses-dokuments": {
@@ -145408,7 +145747,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "1-zweck-dieses-dokuments"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#10-besondere-regeln-fuer-politische-sprache-und-medien": {
@@ -145416,7 +145755,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "10-besondere-regeln-fuer-politische-sprache-und-medien"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#11-besondere-regeln-fuer-produkte-steuern-und-daten": {
@@ -145424,7 +145763,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "11-besondere-regeln-fuer-produkte-steuern-und-daten"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#12-begriffspaare-fuer-kuenftige-debatten": {
@@ -145432,7 +145771,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "12-begriffspaare-fuer-kuenftige-debatten"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#13-pruefcheckliste-fuer-neue-inhalte": {
@@ -145440,7 +145779,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "13-pruefcheckliste-fuer-neue-inhalte"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#14-fuehrende-mini-definitionen-fuer-glossar-suche-und-kurze-erklaertexte": {
@@ -145448,7 +145787,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "14-fuehrende-mini-definitionen-fuer-glossar-suche-und-kurze-erklaertexte"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#15-schlussformel": {
@@ -145456,7 +145795,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "15-schlussformel"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#2-die-wichtigste-kurzformel": {
@@ -145464,7 +145803,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "2-die-wichtigste-kurzformel"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#3-der-bewertungsrahmen-sdgs-agenda-2030-und-sdg": {
@@ -145472,7 +145811,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "3-der-bewertungsrahmen-sdgs-agenda-2030-und-sdg"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#4-grundregeln-fuer-kuenftigen-content": {
@@ -145480,7 +145819,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "4-grundregeln-fuer-kuenftigen-content"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#5-die-begriffslogik-als-stufenmodell": {
@@ -145488,7 +145827,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "5-die-begriffslogik-als-stufenmodell"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#6-1-anschlussbegriffe": {
@@ -145496,7 +145835,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "6-1-anschlussbegriffe"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#6-2-praezisierungsbegriffe": {
@@ -145504,7 +145843,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "6-2-praezisierungsbegriffe"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#6-3-woek-praegungsbegriffe": {
@@ -145512,7 +145851,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "6-3-woek-praegungsbegriffe"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#6-4-nachhaltigkeit-resilienz-systemresilienz-und-wirkungsresilienz": {
@@ -145520,7 +145859,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "6-4-nachhaltigkeit-resilienz-systemresilienz-und-wirkungsresilienz"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#6-5-resilienzmodell-v1-3-hierarchie-und-wissenschaftliche-zuordnung": {
@@ -145528,7 +145867,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "6-5-resilienzmodell-v1-3-hierarchie-und-wissenschaftliche-zuordnung"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#6-5-resilienzsystematik": {
@@ -145536,15 +145875,23 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "6-5-resilienzsystematik"
+    },
+    "/bibliothek/woek-begriffsleitfaden-fuehrend/#6-6-iooi-und-wirkungsarchitektur-v1-4-vor-der-wirkung-beginnen": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
+      "contentHash": "57d79ed0d562ae58",
+      "sectionId": "6-6-iooi-und-wirkungsarchitektur-v1-4-vor-der-wirkung-beginnen"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#6-anschlussbegriffe-praezisierungsbegriffe-und-woek-praegungsbegriffe": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "6-anschlussbegriffe-praezisierungsbegriffe-und-woek-praegungsbegriffe"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#7-verbindliche-glossardefinitionen": {
@@ -145552,7 +145899,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "7-verbindliche-glossardefinitionen"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#8-begriffe-die-nicht-verwechselt-werden-duerfen": {
@@ -145560,7 +145907,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "8-begriffe-die-nicht-verwechselt-werden-duerfen"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#9-1-verwenden": {
@@ -145568,7 +145915,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "9-1-verwenden"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#9-2-vermeiden": {
@@ -145576,7 +145923,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "9-2-vermeiden"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#9-3-bessere-formulierungen": {
@@ -145584,7 +145931,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "9-3-bessere-formulierungen"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#9-sprachregeln-fuer-website-blog-akademie-und-social-media": {
@@ -145592,7 +145939,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "9-sprachregeln-fuer-website-blog-akademie-und-social-media"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#acht-analysebausteine-von-resilienz-und-systementwicklung": {
@@ -145600,7 +145947,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "acht-analysebausteine-von-resilienz-und-systementwicklung"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#attributionsforschung": {
@@ -145608,15 +145955,23 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "attributionsforschung"
+    },
+    "/bibliothek/woek-begriffsleitfaden-fuehrend/#drei-phasen-der-wirkungsoekonomie": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
+      "contentHash": "57d79ed0d562ae58",
+      "sectionId": "drei-phasen-der-wirkungsoekonomie"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#fuehrende-definition-nachhaltigkeit": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "fuehrende-definition-nachhaltigkeit"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#fuehrende-definition-resilienz": {
@@ -145624,7 +145979,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "fuehrende-definition-resilienz"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#fuehrende-definition-systemresilienz": {
@@ -145632,7 +145987,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "fuehrende-definition-systemresilienz"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#fuehrende-definition-wirkungsresilienz": {
@@ -145640,7 +145995,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "fuehrende-definition-wirkungsresilienz"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#fuehrender-begriffsleitfaden-der-wirkungsoekonomie": {
@@ -145648,15 +146003,23 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "fuehrender-begriffsleitfaden-der-wirkungsoekonomie"
+    },
+    "/bibliothek/woek-begriffsleitfaden-fuehrend/#iooi-als-teil-des-wirkpfads": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
+      "contentHash": "57d79ed0d562ae58",
+      "sectionId": "iooi-als-teil-des-wirkpfads"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#kapitalwirkung": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "kapitalwirkung"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#nebenwirkung": {
@@ -145664,7 +146027,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "nebenwirkung"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#negative-wirkung": {
@@ -145672,7 +146035,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "negative-wirkung"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#netto-wirkung": {
@@ -145680,7 +146043,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "netto-wirkung"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#neutrale-wirkung": {
@@ -145688,7 +146051,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "neutrale-wirkung"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#positive-netto-wirkung": {
@@ -145696,7 +146059,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "positive-netto-wirkung"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#positive-wirkung": {
@@ -145704,7 +146067,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "positive-wirkung"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#rebound-effekt": {
@@ -145712,15 +146075,23 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "rebound-effekt"
+    },
+    "/bibliothek/woek-begriffsleitfaden-fuehrend/#regeln-fuer-sprache-medien-und-politische-kommunikation": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
+      "contentHash": "57d79ed0d562ae58",
+      "sectionId": "regeln-fuer-sprache-medien-und-politische-kommunikation"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#resonanzprofil": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "resonanzprofil"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#resonanzraum": {
@@ -145728,7 +146099,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "resonanzraum"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#resonanzrisiko": {
@@ -145736,7 +146107,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "resonanzrisiko"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#reverse-merit-order-nichtkompensationsprinzip": {
@@ -145744,7 +146115,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "reverse-merit-order-nichtkompensationsprinzip"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#transformationswirkung": {
@@ -145752,23 +146123,39 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "transformationswirkung"
+    },
+    "/bibliothek/woek-begriffsleitfaden-fuehrend/#verbindliche-grundregel": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
+      "contentHash": "57d79ed0d562ae58",
+      "sectionId": "verbindliche-grundregel"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#verbindliche-verweise": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "verbindliche-verweise"
+    },
+    "/bibliothek/woek-begriffsleitfaden-fuehrend/#vollstaendige-woek-wirkungslogik": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
+      "contentHash": "57d79ed0d562ae58",
+      "sectionId": "vollstaendige-woek-wirkungslogik"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wechselwirkung": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wechselwirkung"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkmechanismus": {
@@ -145776,7 +146163,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wirkmechanismus"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkstoff": {
@@ -145784,7 +146171,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wirkstoff"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkung": {
@@ -145792,7 +146179,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wirkung"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkungsanalyse": {
@@ -145800,7 +146187,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wirkungsanalyse"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkungsarchitektur": {
@@ -145808,7 +146195,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wirkungsarchitektur"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkungsassurance": {
@@ -145816,7 +146203,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wirkungsassurance"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkungsaudit": {
@@ -145824,7 +146211,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wirkungsaudit"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkungsbericht": {
@@ -145832,7 +146219,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wirkungsbericht"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkungsbewertung": {
@@ -145840,7 +146227,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wirkungsbewertung"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkungsblindheit": {
@@ -145848,7 +146235,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wirkungsblindheit"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkungsblindheit-2": {
@@ -145856,7 +146243,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wirkungsblindheit-2"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkungscontrolling": {
@@ -145864,7 +146251,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wirkungscontrolling"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkungsdatenraum": {
@@ -145872,7 +146259,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wirkungsdatenraum"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkungsempfaenger": {
@@ -145880,7 +146267,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wirkungsempfaenger"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkungsfaehigkeit": {
@@ -145888,7 +146275,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wirkungsfaehigkeit"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkungsfeld": {
@@ -145896,7 +146283,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wirkungsfeld"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkungsgovernance": {
@@ -145904,7 +146291,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wirkungsgovernance"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkungsgrenze": {
@@ -145912,7 +146299,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wirkungsgrenze"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkungshebel-systemhebel": {
@@ -145920,7 +146307,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wirkungshebel-systemhebel"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkungsindikator": {
@@ -145928,7 +146315,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wirkungsindikator"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkungskapital": {
@@ -145936,7 +146323,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wirkungskapital"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkungskennzahl-kii": {
@@ -145944,7 +146331,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wirkungskennzahl-kii"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkungskette": {
@@ -145952,7 +146339,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wirkungskette"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkungskompetenz": {
@@ -145960,7 +146347,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wirkungskompetenz"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkungslenkung": {
@@ -145968,7 +146355,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wirkungslenkung"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkungsmanagement": {
@@ -145976,7 +146363,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wirkungsmanagement"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkungsmonitoring": {
@@ -145984,7 +146371,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wirkungsmonitoring"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkungsnachweis": {
@@ -145992,7 +146379,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wirkungsnachweis"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkungsnetz": {
@@ -146000,7 +146387,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wirkungsnetz"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkungspfad-wirkpfad": {
@@ -146008,7 +146395,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wirkungspfad-wirkpfad"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkungspotenzial": {
@@ -146016,7 +146403,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wirkungspotenzial"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkungsradar": {
@@ -146024,7 +146411,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wirkungsradar"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkungsrat": {
@@ -146032,7 +146419,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wirkungsrat"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkungsraum": {
@@ -146040,7 +146427,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wirkungsraum"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkungsregister": {
@@ -146048,7 +146435,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wirkungsregister"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkungsrisiko": {
@@ -146056,7 +146443,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wirkungsrisiko"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkungsrueckkopplung": {
@@ -146064,7 +146451,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wirkungsrueckkopplung"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkungsrueckkopplung-2": {
@@ -146072,7 +146459,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wirkungsrueckkopplung-2"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkungssteuer": {
@@ -146080,7 +146467,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wirkungssteuer"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkungswahrheit": {
@@ -146088,7 +146475,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wirkungswahrheit"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkungswahrheit-2": {
@@ -146096,7 +146483,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wirkungswahrheit-2"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkungszurechnung": {
@@ -146104,7 +146491,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wirkungszurechnung"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wissenschaftlicher-anschluss": {
@@ -146112,7 +146499,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "wissenschaftlicher-anschluss"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#woek-id": {
@@ -146120,7 +146507,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "woek-id"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#zurechnung-ohne-scheingenauigkeit": {
@@ -146128,7 +146515,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "63e0bcad50b54a2a",
+      "contentHash": "57d79ed0d562ae58",
       "sectionId": "zurechnung-ohne-scheingenauigkeit"
     },
     "/bibliothek/woek-manifest/": {
@@ -158344,7 +158731,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/index.html",
-      "contentHash": "cc8a538056b5b7f2",
+      "contentHash": "1abd0be5ed29a9c3",
       "sectionId": "woek-page-06c0a37a8592ce92"
     },
     "/quellenarchiv/wok-e-0001/": {
@@ -160739,6 +161126,30 @@
       "contentHash": "872db75215c22764",
       "sectionId": "steckbrief-wok-g-3ac3b43183c8"
     },
+    "/quellenarchiv/wok-g-3aee66661e29/": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-3aee66661e29/index.html",
+      "contentHash": "4c0b41de1f4881c8",
+      "sectionId": "woek-page-35c970baa96b0d1d"
+    },
+    "/quellenarchiv/wok-g-3aee66661e29/#glance-wok-g-3aee66661e29": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-3aee66661e29/index.html",
+      "contentHash": "4c0b41de1f4881c8",
+      "sectionId": "glance-wok-g-3aee66661e29"
+    },
+    "/quellenarchiv/wok-g-3aee66661e29/#steckbrief-wok-g-3aee66661e29": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-3aee66661e29/index.html",
+      "contentHash": "4c0b41de1f4881c8",
+      "sectionId": "steckbrief-wok-g-3aee66661e29"
+    },
     "/quellenarchiv/wok-g-3b34cd84f295/": {
       "documentType": "Referenz",
       "status": "online-reviewed",
@@ -160834,6 +161245,30 @@
       "sourceFile": "quellenarchiv/wok-g-3d3b1ec0ae13/index.html",
       "contentHash": "584bd52e35043a8a",
       "sectionId": "steckbrief-wok-g-3d3b1ec0ae13"
+    },
+    "/quellenarchiv/wok-g-3dde245df3e2/": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-3dde245df3e2/index.html",
+      "contentHash": "e21292fa7270f3e7",
+      "sectionId": "woek-page-86cd64e0529cdd93"
+    },
+    "/quellenarchiv/wok-g-3dde245df3e2/#glance-wok-g-3dde245df3e2": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-3dde245df3e2/index.html",
+      "contentHash": "e21292fa7270f3e7",
+      "sectionId": "glance-wok-g-3dde245df3e2"
+    },
+    "/quellenarchiv/wok-g-3dde245df3e2/#steckbrief-wok-g-3dde245df3e2": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-3dde245df3e2/index.html",
+      "contentHash": "e21292fa7270f3e7",
+      "sectionId": "steckbrief-wok-g-3dde245df3e2"
     },
     "/quellenarchiv/wok-g-3eb44d5214ab/": {
       "documentType": "Referenz",
@@ -161891,6 +162326,30 @@
       "contentHash": "eaa15b6e6110b765",
       "sectionId": "steckbrief-wok-g-5bcf7f7b38b6"
     },
+    "/quellenarchiv/wok-g-5cdb1d463d15/": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-5cdb1d463d15/index.html",
+      "contentHash": "232f26dde824a6ec",
+      "sectionId": "woek-page-c8400a95daa844b2"
+    },
+    "/quellenarchiv/wok-g-5cdb1d463d15/#glance-wok-g-5cdb1d463d15": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-5cdb1d463d15/index.html",
+      "contentHash": "232f26dde824a6ec",
+      "sectionId": "glance-wok-g-5cdb1d463d15"
+    },
+    "/quellenarchiv/wok-g-5cdb1d463d15/#steckbrief-wok-g-5cdb1d463d15": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-5cdb1d463d15/index.html",
+      "contentHash": "232f26dde824a6ec",
+      "sectionId": "steckbrief-wok-g-5cdb1d463d15"
+    },
     "/quellenarchiv/wok-g-5dad38014a73/": {
       "documentType": "Referenz",
       "status": "online-reviewed",
@@ -161986,6 +162445,30 @@
       "sourceFile": "quellenarchiv/wok-g-5f3db7ef4c8a/index.html",
       "contentHash": "09f46026ead75921",
       "sectionId": "steckbrief-wok-g-5f3db7ef4c8a"
+    },
+    "/quellenarchiv/wok-g-5f9a4a116888/": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-5f9a4a116888/index.html",
+      "contentHash": "cdabb78b140841f9",
+      "sectionId": "woek-page-b41ce5d2b72dfa3c"
+    },
+    "/quellenarchiv/wok-g-5f9a4a116888/#glance-wok-g-5f9a4a116888": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-5f9a4a116888/index.html",
+      "contentHash": "cdabb78b140841f9",
+      "sectionId": "glance-wok-g-5f9a4a116888"
+    },
+    "/quellenarchiv/wok-g-5f9a4a116888/#steckbrief-wok-g-5f9a4a116888": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-5f9a4a116888/index.html",
+      "contentHash": "cdabb78b140841f9",
+      "sectionId": "steckbrief-wok-g-5f9a4a116888"
     },
     "/quellenarchiv/wok-g-60c162e389f5/": {
       "documentType": "Referenz",
@@ -162706,6 +163189,30 @@
       "sourceFile": "quellenarchiv/wok-g-72d37d5c96d7/index.html",
       "contentHash": "d16b2c1ce6b5a7d2",
       "sectionId": "steckbrief-wok-g-72d37d5c96d7"
+    },
+    "/quellenarchiv/wok-g-743b762a8b80/": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-743b762a8b80/index.html",
+      "contentHash": "481723b6e130f15d",
+      "sectionId": "woek-page-ad73c22195a2b4d4"
+    },
+    "/quellenarchiv/wok-g-743b762a8b80/#glance-wok-g-743b762a8b80": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-743b762a8b80/index.html",
+      "contentHash": "481723b6e130f15d",
+      "sectionId": "glance-wok-g-743b762a8b80"
+    },
+    "/quellenarchiv/wok-g-743b762a8b80/#steckbrief-wok-g-743b762a8b80": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-743b762a8b80/index.html",
+      "contentHash": "481723b6e130f15d",
+      "sectionId": "steckbrief-wok-g-743b762a8b80"
     },
     "/quellenarchiv/wok-g-752b4ba359e1/": {
       "documentType": "Referenz",
@@ -224639,7 +225146,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/index.html",
-      "contentHash": "6f3c211740555752",
+      "contentHash": "30838245b25939e8",
       "sectionId": "woek-page-3513b68e976194bb"
     },
     "/verstehen/ausgangslage/": {
@@ -224649,6 +225156,102 @@
       "sourceFile": "verstehen/ausgangslage/index.html",
       "contentHash": "5d7a83fde44b0b3a",
       "sectionId": "woek-page-9206bc5b717e734c"
+    },
+    "/verstehen/iooi-und-wirkungsoekonomie/": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "verstehen/iooi-und-wirkungsoekonomie/index.html",
+      "contentHash": "8afad4a08873e253",
+      "sectionId": "woek-page-23fbdd09a7d6a365"
+    },
+    "/verstehen/iooi-und-wirkungsoekonomie/#beispiele-title": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "verstehen/iooi-und-wirkungsoekonomie/index.html",
+      "contentHash": "8afad4a08873e253",
+      "sectionId": "beispiele-title"
+    },
+    "/verstehen/iooi-und-wirkungsoekonomie/#bewertung-title": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "verstehen/iooi-und-wirkungsoekonomie/index.html",
+      "contentHash": "8afad4a08873e253",
+      "sectionId": "bewertung-title"
+    },
+    "/verstehen/iooi-und-wirkungsoekonomie/#iooi-title": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "verstehen/iooi-und-wirkungsoekonomie/index.html",
+      "contentHash": "8afad4a08873e253",
+      "sectionId": "iooi-title"
+    },
+    "/verstehen/iooi-und-wirkungsoekonomie/#kurzformel-title": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "verstehen/iooi-und-wirkungsoekonomie/index.html",
+      "contentHash": "8afad4a08873e253",
+      "sectionId": "kurzformel-title"
+    },
+    "/verstehen/iooi-und-wirkungsoekonomie/#methodenkarte-title": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "verstehen/iooi-und-wirkungsoekonomie/index.html",
+      "contentHash": "8afad4a08873e253",
+      "sectionId": "methodenkarte-title"
+    },
+    "/verstehen/iooi-und-wirkungsoekonomie/#schutz-title": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "verstehen/iooi-und-wirkungsoekonomie/index.html",
+      "contentHash": "8afad4a08873e253",
+      "sectionId": "schutz-title"
+    },
+    "/verstehen/iooi-und-wirkungsoekonomie/#vergleich-title": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "verstehen/iooi-und-wirkungsoekonomie/index.html",
+      "contentHash": "8afad4a08873e253",
+      "sectionId": "vergleich-title"
+    },
+    "/verstehen/iooi-und-wirkungsoekonomie/#verstehen-title": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "verstehen/iooi-und-wirkungsoekonomie/index.html",
+      "contentHash": "8afad4a08873e253",
+      "sectionId": "verstehen-title"
+    },
+    "/verstehen/iooi-und-wirkungsoekonomie/#vorwirkung-title": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "verstehen/iooi-und-wirkungsoekonomie/index.html",
+      "contentHash": "8afad4a08873e253",
+      "sectionId": "vorwirkung-title"
+    },
+    "/verstehen/iooi-und-wirkungsoekonomie/#weiter-title": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "verstehen/iooi-und-wirkungsoekonomie/index.html",
+      "contentHash": "8afad4a08873e253",
+      "sectionId": "weiter-title"
+    },
+    "/verstehen/iooi-und-wirkungsoekonomie/#wirkungsrad-title": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "verstehen/iooi-und-wirkungsoekonomie/index.html",
+      "contentHash": "8afad4a08873e253",
+      "sectionId": "wirkungsrad-title"
     },
     "/verstehen/sdgs-sdgplus/": {
       "documentType": "Referenz",
@@ -238391,7 +238994,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkzeuge/impact-controlling/index.html",
-      "contentHash": "08ee54074897eaa5",
+      "contentHash": "88764170bc1adf5a",
       "sectionId": "woek-page-947dfbebd2127b19"
     },
     "/werkzeuge/impact-controlling/#arbeit-einkommen-link": {
@@ -238399,7 +239002,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkzeuge/impact-controlling/index.html",
-      "contentHash": "08ee54074897eaa5",
+      "contentHash": "88764170bc1adf5a",
       "sectionId": "arbeit-einkommen-link"
     },
     "/werkzeuge/impact-controlling/#book-anchors": {
@@ -238407,7 +239010,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkzeuge/impact-controlling/index.html",
-      "contentHash": "08ee54074897eaa5",
+      "contentHash": "88764170bc1adf5a",
       "sectionId": "book-anchors"
     },
     "/werkzeuge/impact-controlling/#context-tools": {
@@ -238415,7 +239018,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkzeuge/impact-controlling/index.html",
-      "contentHash": "08ee54074897eaa5",
+      "contentHash": "88764170bc1adf5a",
       "sectionId": "context-tools"
     },
     "/werkzeuge/impact-controlling/#dossiers": {
@@ -238423,7 +239026,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkzeuge/impact-controlling/index.html",
-      "contentHash": "08ee54074897eaa5",
+      "contentHash": "88764170bc1adf5a",
       "sectionId": "dossiers"
     },
     "/werkzeuge/impact-controlling/#downloads": {
@@ -238431,7 +239034,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkzeuge/impact-controlling/index.html",
-      "contentHash": "08ee54074897eaa5",
+      "contentHash": "88764170bc1adf5a",
       "sectionId": "downloads"
     },
     "/werkzeuge/impact-controlling/#external-sources": {
@@ -238439,7 +239042,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkzeuge/impact-controlling/index.html",
-      "contentHash": "08ee54074897eaa5",
+      "contentHash": "88764170bc1adf5a",
       "sectionId": "external-sources"
     },
     "/werkzeuge/impact-controlling/#go10-tools": {
@@ -238447,7 +239050,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkzeuge/impact-controlling/index.html",
-      "contentHash": "08ee54074897eaa5",
+      "contentHash": "88764170bc1adf5a",
       "sectionId": "go10-tools"
     },
     "/werkzeuge/impact-controlling/#impact-crosslinks": {
@@ -238455,15 +239058,23 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkzeuge/impact-controlling/index.html",
-      "contentHash": "08ee54074897eaa5",
+      "contentHash": "88764170bc1adf5a",
       "sectionId": "impact-crosslinks"
+    },
+    "/werkzeuge/impact-controlling/#iooi-evidenz": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "werkzeuge/impact-controlling/index.html",
+      "contentHash": "88764170bc1adf5a",
+      "sectionId": "iooi-evidenz"
     },
     "/werkzeuge/impact-controlling/#logic": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkzeuge/impact-controlling/index.html",
-      "contentHash": "08ee54074897eaa5",
+      "contentHash": "88764170bc1adf5a",
       "sectionId": "logic"
     },
     "/werkzeuge/impact-controlling/#methodenpapiere": {
@@ -238471,7 +239082,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkzeuge/impact-controlling/index.html",
-      "contentHash": "08ee54074897eaa5",
+      "contentHash": "88764170bc1adf5a",
       "sectionId": "methodenpapiere"
     },
     "/werkzeuge/impact-controlling/#political-implementation": {
@@ -238479,7 +239090,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkzeuge/impact-controlling/index.html",
-      "contentHash": "08ee54074897eaa5",
+      "contentHash": "88764170bc1adf5a",
       "sectionId": "political-implementation"
     },
     "/werkzeuge/impact-controlling/#sdg-title": {
@@ -238487,7 +239098,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkzeuge/impact-controlling/index.html",
-      "contentHash": "08ee54074897eaa5",
+      "contentHash": "88764170bc1adf5a",
       "sectionId": "sdg-title"
     },
     "/werkzeuge/impact-controlling/#vertiefung-arbeitsmaterial-title": {
@@ -238495,7 +239106,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "werkzeuge/impact-controlling/index.html",
-      "contentHash": "08ee54074897eaa5",
+      "contentHash": "88764170bc1adf5a",
       "sectionId": "vertiefung-arbeitsmaterial-title"
     },
     "/werkzeuge/impact-controlling/detailkonzepte/": {

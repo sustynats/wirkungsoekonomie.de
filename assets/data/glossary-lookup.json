@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-14T09:44:23.831Z",
-  "count": 2123,
+  "generatedAt": "2026-08-14T11:19:46.696Z",
+  "count": 2136,
   "terms": [
     {
       "id": "fuenftes-p-planet",
@@ -267,6 +267,22 @@
       ],
       "shortDefinition": "Ein Akkumulator ist eine wiederaufladbare Batterie.",
       "definition": "Ein Akkumulator ist eine wiederaufladbare Batterie."
+    },
+    {
+      "id": "aktivitaet",
+      "label": "Aktivität",
+      "canonicalLabel": "Aktivität",
+      "slug": "aktivitaet",
+      "url": "/begriffe/aktivitaet/",
+      "aliases": [
+        "Aktivität",
+        "Handlung",
+        "Intervention",
+        "Maßnahme",
+        "Durchführung"
+      ],
+      "shortDefinition": "Aktivität bezeichnet das konkrete Handeln, durch das Inputs mobilisiert werden, um Leistungen oder Veränderungen zu ermöglichen.",
+      "definition": "Aktivitäten sind die ausgeführten Handlungen einer Intervention: etwa eine Beratung, ein Kurs, eine Produktion, eine Gesetzesänderung, eine Beschaffung, eine Investition oder eine Kommunikationsmaßnahme. Im IOOI-Modell liegt die Aktivität logisch zwischen Input und Output.\n\nEine Aktivität ist weder mit ihrer Absicht noch mit ihrem Ergebnis gleichzusetzen. Sie kann stattfinden, ohne dass der erwartete Output erreicht wird oder eine Veränderung bei Betroffenen eintritt."
     },
     {
       "id": "alan-watts-daoismus",
@@ -1091,6 +1107,21 @@
       "definition": "Das Ausland-statt-Inland-Narrativ rahmt öffentliche Ausgaben für internationale Verantwortung als Gegensatz zu nationaler Daseinsvorsorge. Wirkungsökonomisch ist diese Gegenüberstellung oft verkürzt, weil Sicherheit, Klima, Lieferketten, Migration und Demokratie grenzüberschreitend wirken."
     },
     {
+      "id": "ausloeser",
+      "label": "Auslöser",
+      "canonicalLabel": "Auslöser",
+      "slug": "ausloeser",
+      "url": "/begriffe/ausloeser/",
+      "aliases": [
+        "Auslöser",
+        "Wirkungsauslöser",
+        "Trigger",
+        "Ausgangshandlung"
+      ],
+      "shortDefinition": "Ein Auslöser ist eine Handlung, ein Unterlassen, ein Produkt, ein Gesetz, ein Preis, ein Narrativ, eine Technologie, ein Kapitalfluss oder ein anderes Ereignis, das Wirkung hervorrufen kann.",
+      "definition": "Auslöser markieren den Anfang eines möglichen Wirkpfads. Sie können beabsichtigt oder unbeabsichtigt, individuell oder institutionell sein. Ein Auslöser kann erwünschte oder unerwünschte Wirkung, Nebenwirkungen, Wechselwirkungen, Rebound oder auch keine relevante Veränderung auslösen.\n\nZwischen Auslöser und tatsächlicher Wirkung liegen Bedingungen, Wirkmechanismen, Kontext und Unsicherheit. Der Auslöser ist deshalb keine Kurzform für Kausalität oder Verantwortungszuweisung."
+    },
+    {
       "id": "aeussere-loops",
       "label": "Äußere Loops",
       "canonicalLabel": "Äußere Loops",
@@ -1344,6 +1375,21 @@
       ],
       "shortDefinition": "Gefahren, Ursachen, präventive und reaktive Barrieren sowie Konsequenzen systematisch verbinden.",
       "definition": "Gefahren, Ursachen, präventive und reaktive Barrieren sowie Konsequenzen systematisch verbinden."
+    },
+    {
+      "id": "baseline",
+      "label": "Baseline",
+      "canonicalLabel": "Baseline",
+      "slug": "baseline",
+      "url": "/begriffe/baseline/",
+      "aliases": [
+        "Baseline",
+        "Ausgangswert",
+        "Ausgangszustand",
+        "Referenzwert vor Intervention"
+      ],
+      "shortDefinition": "Eine Baseline beschreibt die Ausgangsbedingungen vor einer Intervention oder zu Beginn eines Beobachtungszeitraums, gegen die spätere Veränderungen verglichen werden.",
+      "definition": "Eine Baseline kann aus Messwerten, qualitativen Beobachtungen, Vergleichsdaten oder einer klar dokumentierten Ausgangslage bestehen. Sie ist eine wichtige Grundlage, um Veränderungen über Zeit zu erkennen und nicht eine Momentaufnahme mit einem Ergebnis zu verwechseln.\n\nEine Baseline ersetzt kein Counterfactual. Sie zeigt, wo ein System oder eine Gruppe startete; die Frage, was ohne die Maßnahme passiert wäre, erfordert zusätzliche Vergleichs- oder Modellannahmen."
     },
     {
       "id": "baseline-verschiebung",
@@ -2982,6 +3028,21 @@
       ],
       "shortDefinition": "Corporate Capture beschreibt die Vereinnahmung politischer, regulatorischer oder öffentlicher Prozesse durch Unternehmensinteressen.",
       "definition": "Corporate Capture beschreibt die Vereinnahmung politischer, regulatorischer oder öffentlicher Prozesse durch Unternehmensinteressen."
+    },
+    {
+      "id": "counterfactual",
+      "label": "Counterfactual",
+      "canonicalLabel": "Counterfactual",
+      "slug": "counterfactual",
+      "url": "/begriffe/counterfactual/",
+      "aliases": [
+        "Counterfactual",
+        "Kontrafaktisches Szenario",
+        "Was wäre ohne die Maßnahme passiert?",
+        "Gegenhypothese"
+      ],
+      "shortDefinition": "Ein Counterfactual beschreibt den plausiblen Vergleichsfall, was ohne eine betrachtete Maßnahme, Intervention oder Entscheidung wahrscheinlich passiert wäre.",
+      "definition": "Counterfactuals sind nötig, weil beobachtete Veränderungen auch durch andere Ursachen, Trends, externe Schocks oder parallele Maßnahmen entstehen können. Je nach Fall werden sie mit Kontrollgruppen, Vorher-Nachher-Vergleichen, Zeitreihen, Vergleichsregionen, Simulationen oder transparenten Gegenhypothesen angenähert.\n\nEin Counterfactual ist häufig keine unmittelbar beobachtbare Tatsache, sondern eine methodisch begründete Vergleichsannahme. Seine Qualität und Unsicherheit müssen offenliegen."
     },
     {
       "id": "cradle-to-cradle",
@@ -9228,6 +9289,22 @@
       "definition": "Immobilien sind Grundstücke und Gebäude; ihre Wirkung umfasst unter anderem Wohnen, Flächenverbrauch, Energie, Infrastruktur, soziale Teilhabe und Vermögensverteilung."
     },
     {
+      "id": "impact",
+      "label": "Impact",
+      "canonicalLabel": "Impact",
+      "slug": "impact",
+      "url": "/begriffe/impact/",
+      "aliases": [
+        "Impact",
+        "höherstufige Wirkung",
+        "langfristige Wirkung",
+        "breitere Wirkung",
+        "gesellschaftlicher Impact"
+      ],
+      "shortDefinition": "Impact ist ein etablierter, je nach Fachfeld unterschiedlich verwendeter Begriff für höherstufige, längerfristige oder breitere Wirkungen.",
+      "definition": "In Evaluation, Wirkungsorientierung und Impact Management bezeichnet Impact häufig übergeordnete, breitere oder längerfristige Wirkungen: etwa veränderte Lebenslagen, gesellschaftliche Strukturen, Ökosysteme, Märkte oder Institutionen. Die genaue Abgrenzung zu Outcome variiert nach Methode und Anwendungsfeld; deshalb muss sie in jeder Anwendung offengelegt werden.\n\nImpact kann positiv oder negativ, beabsichtigt oder unbeabsichtigt, direkt oder indirekt sein. Der Begriff ist weder methodisch minderwertig noch automatisch ein positiver Qualitätsnachweis."
+    },
+    {
       "id": "impact-benefits-realization",
       "label": "Impact & Benefits Realization",
       "canonicalLabel": "Impact & Benefits Realization",
@@ -9621,6 +9698,21 @@
       "definition": "Der innovative Unternehmer setzt neue Kombinationen durch: neue Produkte, neue Produktionsweisen, neue Märkte, neue Bezugsquellen oder neue Organisationsformen. Er verschiebt bestehende Gleichgewichte und eröffnet neue Entwicklungspfade."
     },
     {
+      "id": "input",
+      "label": "Input",
+      "canonicalLabel": "Input",
+      "slug": "input",
+      "url": "/begriffe/input/",
+      "aliases": [
+        "Input",
+        "Ressourceneinsatz",
+        "eingesetzte Ressourcen",
+        "Mittelinput"
+      ],
+      "shortDefinition": "Input bezeichnet die Ressourcen, die für eine Aktivität, ein Projekt, ein Produkt, eine Organisation oder eine Intervention eingesetzt werden.",
+      "definition": "Inputs können finanzielle, personelle, materielle, natürliche, digitale oder organisatorische Ressourcen sein: zum Beispiel Budget, Arbeitszeit, Wissen, Daten, Energie, Fläche, Infrastruktur oder Kapital. Ihre Erfassung zeigt, was eingesetzt wurde und welche Voraussetzungen eine Aktivität hatte.\n\nEin hoher Input belegt weder die Qualität einer Leistung noch eine Veränderung bei Betroffenen. Er ist Aufwand beziehungsweise Voraussetzung, nicht Outcome, Impact oder positive Netto-Wirkung."
+    },
+    {
       "id": "insetting",
       "label": "Insetting",
       "canonicalLabel": "Insetting",
@@ -9941,6 +10033,24 @@
       ],
       "shortDefinition": "Rückstand an notwendigen Investitionen in Infrastruktur, Bildung, Klima, Digitalisierung, Gesundheit oder Sicherheit.",
       "definition": "Investitionsschuld bezeichnet den Rückstand an notwendigen Investitionen, der entsteht, wenn Infrastruktur, Bildung, Klimaresilienz, Digitalisierung, Gesundheit, Sicherheit oder Verwaltung nicht ausreichend erhalten und modernisiert werden."
+    },
+    {
+      "id": "iooi",
+      "label": "IOOI",
+      "canonicalLabel": "IOOI",
+      "slug": "iooi",
+      "url": "/begriffe/iooi/",
+      "aliases": [
+        "IOOI",
+        "I-O-O-I",
+        "Input Output Outcome Impact",
+        "Results Chain",
+        "Logic Model",
+        "Wirkungslogik",
+        "Wirkungskette"
+      ],
+      "shortDefinition": "IOOI steht für Input, Output, Outcome und Impact. Das etablierte Logikmodell ordnet den Weg von eingesetzten Ressourcen über erbrachte Leistungen zu eingetretenen Veränderungen und höherstufigen Wirkungen.",
+      "definition": "IOOI ist ein verbreitetes Modell aus Evaluation, Wirkungsorientierung und Results-Based Management. Es macht transparent, welche Ressourcen eingesetzt werden, welche Leistungen daraus entstehen, welche Veränderungen tatsächlich eintreten und welche breiteren oder längerfristigen Wirkungen daraus folgen können. Aktivität liegt logisch zwischen Input und Output, ist aber kein eigener Buchstabe des Akronyms.\n\nIOOI strukturiert einen Wirkpfad und die dazugehörigen Annahmen. Aus einer plausiblen Kette folgt jedoch noch kein Nachweis, dass ein Outcome oder Impact tatsächlich eingetreten und der Maßnahme zurechenbar ist. Dafür braucht es mindestens eine Baseline, geeignete Daten, eine Prüfung anderer Ursachen und eine angemessene Aussage über Unsicherheit."
     },
     {
       "id": "ipbes",
@@ -11102,6 +11212,21 @@
       ],
       "shortDefinition": "Eine Kontraindikation ist ein Umstand, der gegen die Anwendung einer Maßnahme spricht, weil Risiken, Schäden oder ungeeignete Bedingungen überwiegen.",
       "definition": "Eine Kontraindikation ist ein Umstand, der gegen die Anwendung einer Maßnahme spricht, weil Risiken, Schäden oder ungeeignete Bedingungen überwiegen."
+    },
+    {
+      "id": "kontribution",
+      "label": "Kontribution",
+      "canonicalLabel": "Kontribution",
+      "slug": "kontribution",
+      "url": "/begriffe/kontribution/",
+      "aliases": [
+        "Kontribution",
+        "Beitrag zur Wirkung",
+        "Contribution",
+        "Wirkungsbeitrag"
+      ],
+      "shortDefinition": "Kontribution beschreibt den plausiblen Beitrag einer Maßnahme zu einer beobachteten Veränderung, ohne zu behaupten, sie sei deren alleinige Ursache.",
+      "definition": "In komplexen Systemen entstehen Wirkungen meist durch das Zusammenwirken mehrerer Akteure, Bedingungen und Ereignisse. Kontribution prüft, welchen nachvollziehbaren Beitrag eine Maßnahme zu einer Veränderung leistet, auch wenn eine vollständige kausale Zurechnung nicht möglich oder nicht angemessen ist.\n\nSie ist besonders wichtig bei langfristigen, systemischen oder gesellschaftlichen Wirkungen. Eine plausible Kontribution muss Daten, Mechanismen, andere Ursachen und Unsicherheit sichtbar machen."
     },
     {
       "id": "kontrollbeduerfnis",
@@ -13770,7 +13895,7 @@
         "Nebenwirkung"
       ],
       "shortDefinition": "Eine Nebenwirkung ist eine zusätzliche, oft unbeabsichtigte direkte oder indirekte Folge einer Maßnahme, Entscheidung oder Kommunikation.",
-      "definition": "Eine Nebenwirkung ist eine zusätzliche, oft unbeabsichtigte direkte oder indirekte Folge einer Maßnahme, Entscheidung oder Kommunikation."
+      "definition": "Nebenwirkungen entstehen neben der primär erwarteten Veränderung. Sie können direkt oder indirekt, kurzfristig oder zeitverzögert, bei anderen Gruppen oder in anderen Räumen auftreten. Der Begriff beschreibt zunächst die zusätzliche Folge, nicht automatisch ihre moralische Bewertung.\n\nWirkungsanalysen müssen Nebenwirkungen sichtbar machen, damit positive Teilwirkungen keine erheblichen Schäden in Lieferketten, Ökosystemen, Gesellschaft oder Zukunft verdecken."
     },
     {
       "id": "nebenwirkungs-wechselwirkungs-und-rebound-analyse",
@@ -15271,10 +15396,13 @@
       "slug": "outcome",
       "url": "/begriffe/outcome/",
       "aliases": [
-        "Outcome"
+        "Outcome",
+        "eingetretene Veränderung",
+        "Ergebnis bei Zielgruppen",
+        "Wirkungsebene"
       ],
       "shortDefinition": "Outcome bezeichnet die bei Zielgruppen oder Systemen eingetretene Veränderung und ist von Leistungserbringung und bloßem Output zu unterscheiden.",
-      "definition": "Outcome bezeichnet die bei Zielgruppen oder Systemen eingetretene Veränderung und ist von Leistungserbringung und bloßem Output zu unterscheiden."
+      "definition": "Outcomes sind Veränderungen, die nach oder durch eine Aktivität bei Betroffenen oder in einem relevanten System eintreten: etwa neues Wissen, verändertes Verhalten, bessere Gesundheit, mehr Teilhabe, höhere Sicherheit, ein veränderter Ressourcenverbrauch oder ein verändertes Vertrauen. Sie können kurzfristig oder mittelfristig sichtbar werden.\n\nOb eine beobachtete Veränderung tatsächlich der betrachteten Aktivität zuzurechnen ist, bleibt eine eigene Evidenzfrage. Baseline, Counterfactual, Kontribution, Attribution, Datenqualität und Nebenfolgen müssen je nach Anspruch geprüft werden."
     },
     {
       "id": "outcome-und-empfaengerlandkarte",
@@ -15319,10 +15447,13 @@
       "slug": "output",
       "url": "/begriffe/output/",
       "aliases": [
-        "Output"
+        "Output",
+        "Leistungsergebnis",
+        "direktes Ergebnis",
+        "unmittelbare Leistung"
       ],
       "shortDefinition": "Output ist die unmittelbar erbrachte Leistung oder Menge einer Maßnahme, etwa Teilnehmende, Beratungen oder gebaute Einheiten; er belegt noch keine Wirkung.",
-      "definition": "Output ist die unmittelbar erbrachte Leistung oder Menge einer Maßnahme, etwa Teilnehmende, Beratungen oder gebaute Einheiten; er belegt noch keine Wirkung."
+      "definition": "Output beschreibt, was unmittelbar produziert, bereitgestellt oder durchgeführt wurde. Dazu zählen beispielsweise gefertigte Güter, ausgeführte Beratungen, Kurse, Teilnehmende, erreichte Haushalte, Infrastruktur oder veröffentlichte Inhalte. Outputs lassen sich oft relativ leicht zählen oder dokumentieren.\n\nOutput kann eine notwendige Voraussetzung für Wirkung sein, ist aber im engeren WÖk-Sinn noch keine Wirkung. Erst wenn sich ein relevanter Zustand bei Menschen, Organisationen, Ökosystemen oder Systemen verändert, liegt mindestens ein Outcome vor."
     },
     {
       "id": "overton-fenster",
@@ -17718,6 +17849,21 @@
       ],
       "shortDefinition": "Redox-Flow-Batterien speichern Energie in flüssigen Elektrolyten, die durch eine elektrochemische Zelle gepumpt werden.",
       "definition": "Redox-Flow-Batterien speichern Energie in flüssigen Elektrolyten, die durch eine elektrochemische Zelle gepumpt werden."
+    },
+    {
+      "id": "referenzrahmen",
+      "label": "Referenzrahmen",
+      "canonicalLabel": "Referenzrahmen",
+      "slug": "referenzrahmen",
+      "url": "/begriffe/referenzrahmen/",
+      "aliases": [
+        "Referenzrahmen",
+        "Bewertungsrahmen",
+        "normativer Referenzrahmen",
+        "Wirkungsmaßstab"
+      ],
+      "shortDefinition": "Ein Referenzrahmen legt offen, anhand welcher Ziele, Grenzen, Benchmarks oder gesellschaftlichen Normen eine Wirkung bewertet wird.",
+      "definition": "Ein Referenzrahmen unterscheidet die empirische Frage, was sich verändert hat, von der normativen Frage, wie diese Veränderung einzuordnen ist. Er kann Ziele, Rechte, Grenzen, Benchmarks, Indikatoren oder fachliche Schwellen enthalten. Ohne Referenzrahmen lässt sich feststellen, dass etwas wirkt, aber nicht transparent begründen, warum diese Wirkung als positiv oder negativ gelten soll.\n\nIn der Wirkungsökonomie bilden Agenda 2030, die SDGs und SDG+ den primären Orientierungsrahmen. Je nach Gegenstand können Grund- und Menschenrechte, Staatsziele, gesetzliche Grenzwerte, wissenschaftliche Schwellen und fachliche Benchmarks die Anwendung konkretisieren. Diese ergänzenden Referenzen ersetzen nicht die Offenlegung des übergeordneten Maßstabs."
     },
     {
       "id": "referenzrahmen-und-standardmapping",
@@ -22054,6 +22200,21 @@
       "definition": "Theokratie beschreibt eine Herrschaftsform, in der religiöse Autorität und staatliche Macht eng verbunden oder religiös legitimiert sind."
     },
     {
+      "id": "theory-of-change",
+      "label": "Theory of Change",
+      "canonicalLabel": "Theory of Change",
+      "slug": "theory-of-change",
+      "url": "/begriffe/theory-of-change/",
+      "aliases": [
+        "Theory of Change",
+        "ToC",
+        "Theorie des Wandels",
+        "Veränderungstheorie"
+      ],
+      "shortDefinition": "Eine Theory of Change beschreibt, warum und unter welchen Bedingungen eine Intervention zu einer angestrebten Veränderung führen soll.",
+      "definition": "Eine Theory of Change macht die Annahmen eines Wirkpfads explizit: Welche Aktivität soll über welchen Mechanismus bei welchen Gruppen welche Veränderung auslösen? Welche Voraussetzungen müssen gelten, welche Faktoren im Umfeld beeinflussen den Pfad und welche Risiken oder Wechselwirkungen sind zu beachten?\n\nSie ist umfassender als eine bloße Abfolge von Input, Output, Outcome und Impact. Zugleich bleibt sie zunächst ein plausibles Erklärungs- und Planungsmodell, bis ihre Annahmen mit Daten geprüft sind."
+    },
+    {
       "id": "thermal-runaway",
       "label": "Thermal Runaway",
       "canonicalLabel": "Thermal Runaway",
@@ -24214,7 +24375,10 @@
       "slug": "wechselwirkung",
       "url": "/begriffe/wechselwirkung/",
       "aliases": [
-        "Wechselwirkung"
+        "Wechselwirkung",
+        "Interaktionseffekt",
+        "gegenseitige Beeinflussung",
+        "Systemwechselwirkung"
       ],
       "shortDefinition": "Wechselwirkung bezeichnet allgemein, dass Systeme, Akteure oder Zustände nicht isoliert bleiben, sondern aufeinander einwirken und sich gegenseitig verändern.",
       "definition": "Wechselwirkung bezeichnet allgemein, dass Systeme, Akteure oder Zustände nicht isoliert bleiben, sondern aufeinander einwirken und sich gegenseitig verändern."
@@ -24615,10 +24779,13 @@
       "url": "/begriffe/wirkmechanismus/",
       "aliases": [
         "Wirkmechanismus",
+        "Wirkungsmechanik",
+        "kausaler Mechanismus",
+        "Mechanismus des Wirkpfads",
         "Wirkungsmechanismus"
       ],
-      "shortDefinition": "Ein Wirkmechanismus beschreibt, wie ein Auslöser über Bedingungen, Akteure und Rückkopplungen Wirkung erzeugen kann.",
-      "definition": "Wirkmechanismen verbinden Wirkstoff-Analogie, Wirkungspotenzial, Wirkpfade, Resonanzräume und tatsächliche Zustandsveränderungen."
+      "shortDefinition": "Ein Wirkmechanismus beschreibt, wie eine Wirkung entstehen soll oder entstehen kann.",
+      "definition": "Wirkmechanismen beschreiben die vermuteten oder empirisch untersuchten Prozesse zwischen Auslöser und Zustandsveränderung. Eine Preisänderung kann Kaufverhalten verändern, ein Algorithmus bestimmte Inhalte verstärken, eine Steuerdifferenz Lieferantenauswahl beeinflussen oder Desinformation Vertrauen schwächen.\n\nEin plausibler Mechanismus beweist nicht, dass die Wirkung in der erwarteten Stärke, Richtung oder bei den erwarteten Gruppen eintritt. Für starke Kausalaussagen braucht es passende Evidenz, eine klare Systemgrenze und die Prüfung alternativer Erklärungen."
     },
     {
       "id": "wirkmechanismus-canvas",
@@ -24690,10 +24857,11 @@
       "url": "/begriffe/wirkstoff/",
       "aliases": [
         "Wirkstoff",
-        "gesellschaftlicher Wirkstoff"
+        "gesellschaftlicher Wirkstoff",
+        "Wirkstoff als Analogie"
       ],
-      "shortDefinition": "Wirkstoff ist in der WÖk eine didaktische Analogie für einen Auslöser mit Wirkungspotenzial.",
-      "definition": "Der Begriff darf nur als gesellschaftlicher Wirkstoff im Sinne einer Analogie verwendet werden. Er beschreibt Auslöser, die unter bestimmten Bedingungen Wirkungspotenzial entfalten können. Ein Wirkstoff ist nicht selbst Wirkung."
+      "shortDefinition": "Wirkstoff ist in der Wirkungsökonomie eine didaktische Analogie für einen Auslöser mit Wirkungspotenzial.",
+      "definition": "Der Ausdruck Wirkstoff dient als anschauliche Analogie für einen Auslöser, der in einem bestimmten Kontext Wirkung hervorrufen kann: etwa eine Steuerregel, ein Produktdesign, ein Preis, ein Algorithmus, ein Frame oder ein Medienbeitrag. Die Analogie darf nicht so verstanden werden, als seien gesellschaftliche Wirkungen mechanisch oder zwangsläufig.\n\nEin gesellschaftlicher Wirkstoff kann erwünschte oder unerwünschte Wirkung, Nebenwirkungen, Wechselwirkungen, Rebound oder keine relevante Veränderung auslösen. Entscheidend bleiben Wirkmechanismus, Kontext, Datenlage und die Trennung zwischen Potenzial und eingetretener Wirkung."
     },
     {
       "id": "wirkung",
@@ -24942,6 +25110,21 @@
       "definition": "Wirkungsabwehr beschreibt die psychologische, kommunikative oder institutionelle Abwehr gegen Informationen, Daten oder Erfahrungen, die negative Wirkung sichtbar machen."
     },
     {
+      "id": "wirkungsanalyse",
+      "label": "Wirkungsanalyse",
+      "canonicalLabel": "Wirkungsanalyse",
+      "slug": "wirkungsanalyse",
+      "url": "/begriffe/wirkungsanalyse/",
+      "aliases": [
+        "Wirkungsanalyse",
+        "Impact Analysis",
+        "Wirkungsuntersuchung",
+        "Analyse von Wirkpfaden"
+      ],
+      "shortDefinition": "Wirkungsanalyse untersucht, welche Zustandsveränderungen entstehen oder entstehen können, wen sie betreffen, wodurch sie zustande kommen und wie belastbar die Evidenz ist.",
+      "definition": "Eine Wirkungsanalyse strukturiert Auslöser, Wirkmechanismen, Wirkungsempfänger, Wirkungsraum, Zeitverlauf, Daten und mögliche Folgen. Sie kann eingetretene Wirkungen untersuchen oder ex ante Wirkungspotenziale und -risiken transparent machen. Je nach Fragestellung prüft sie Baseline, Counterfactual, Attribution, Kontribution, Nebenwirkung, Wechselwirkung, Rebound, Displacement und Datenqualität.\n\nDie Analyse ersetzt nicht die Bewertung. Sie liefert die Grundlage, auf der eine Wirkung am Referenzrahmen eingeordnet und anschließend rückgekoppelt werden kann."
+    },
+    {
       "id": "wirkungsanalyse-von-sprache",
       "label": "Wirkungsanalyse von Sprache",
       "canonicalLabel": "Wirkungsanalyse von Sprache",
@@ -25121,7 +25304,8 @@
         "Wirkungsprüfung",
         "Wirkungsanalyse",
         "Bewertung von Wirkung",
-        "Wirkungs-Scoring"
+        "Wirkungs-Scoring",
+        "normative Wirkungseinordnung"
       ],
       "shortDefinition": "Wirkungsbewertung ordnet tatsächliche oder plausibel erwartbare Zustandsveränderungen nach Relevanz, Richtung, Stärke, Risiko und Netto-Beitrag für Mensch, Planet und Demokratie ein.",
       "definition": "Wirkungsbewertung ordnet tatsächliche oder plausibel erwartbare Zustandsveränderungen nach Relevanz, Richtung, Stärke, Risiko und Netto-Beitrag für Mensch, Planet und Demokratie ein."
@@ -25986,7 +26170,10 @@
       "slug": "wirkungskette",
       "url": "/begriffe/wirkungskette/",
       "aliases": [
-        "Wirkungskette"
+        "Wirkungskette",
+        "Results Chain",
+        "Impact Chain",
+        "IOOI-Kette"
       ],
       "shortDefinition": "Eine Wirkungskette beschreibt den Zusammenhang von Auslöser, Input, Aktivität, Output, Outcome, Impact, Nebenwirkungen und Rückkopplung. Sie macht sichtbar, wie aus Handlung tatsächliche Zustandsveränderung entstehen soll.",
       "definition": "Eine Wirkungskette beschreibt den Zusammenhang von Auslöser, Input, Aktivität, Output, Outcome, Impact, Nebenwirkungen und Rückkopplung. Sie macht sichtbar, wie aus Handlung tatsächliche Zustandsveränderung entstehen soll."
@@ -26205,7 +26392,10 @@
       "slug": "wirkungsnachweis",
       "url": "/begriffe/wirkungsnachweis/",
       "aliases": [
-        "Wirkungsnachweis"
+        "Wirkungsnachweis",
+        "Impact Evidence",
+        "Wirksamkeitsnachweis",
+        "Nachweis eingetretener Wirkung"
       ],
       "shortDefinition": "Ein Wirkungsnachweis ist die nachvollziehbare Begründung oder Messung, dass eine Handlung, Ausgabe, Investition oder Regel eine bestimmte Zustandsveränderung erzeugt oder plausibel ermöglicht hat.",
       "definition": "Ein Wirkungsnachweis ist die nachvollziehbare Begründung oder Messung, dass eine Handlung, Ausgabe, Investition oder Regel eine bestimmte Zustandsveränderung erzeugt oder plausibel ermöglicht hat."
@@ -27345,6 +27535,21 @@
       "definition": "Ein Wirkungstransparenzbericht macht öffentlich nachvollziehbar, welche Wirkung öffentliche Mittel, Programme, Beschaffung und Gesetze tatsächlich erzeugt haben."
     },
     {
+      "id": "wirkungstreppe",
+      "label": "Wirkungstreppe",
+      "canonicalLabel": "Wirkungstreppe",
+      "slug": "wirkungstreppe",
+      "url": "/begriffe/wirkungstreppe/",
+      "aliases": [
+        "Wirkungstreppe",
+        "PHINEO-Wirkungstreppe",
+        "Wirkungsstufen",
+        "Wirkungslogik als Stufenmodell"
+      ],
+      "shortDefinition": "Die Wirkungstreppe ist eine didaktische Darstellung von Wirkungsstufen. Sie ordnet Aktivitäten, Outputs, Outcomes und gesellschaftliche Wirkung in aufeinander aufbauende Ebenen.",
+      "definition": "Wirkungstreppen machen anschaulich, dass durchgeführte Aktivitäten und erreichte Zielgruppen noch keine Veränderung belegen. In der verbreiteten PHINEO-Einordnung liegen Aktivitäten, erreichte Zielgruppen und angenommene Angebote auf Output-Ebenen; Veränderungen von Wissen, Verhalten und Lebenslage werden als Wirkungsebenen bis hin zu gesellschaftlicher Veränderung erklärt.\n\nEine Wirkungstreppe kann bei Planung, Monitoring und Kommunikation helfen. Sie beantwortet aber nicht allein Fragen der Attribution, der Nebenwirkungen, des Referenzrahmens, der Nichtkompensation oder der ökonomischen Rückkopplung."
+    },
+    {
       "id": "wirkungsumsatzsteuer",
       "label": "Wirkungsumsatzsteuer",
       "canonicalLabel": "Wirkungsumsatzsteuer",
@@ -27846,6 +28051,21 @@
       ],
       "shortDefinition": "Aus Wirkungsmodell und Referenzrahmen ein hierarchisches Set aus Zustands-, Prozess-, Früh-, Risiko- und Transformationsindikatoren entwickeln.",
       "definition": "Aus Wirkungsmodell und Referenzrahmen ein hierarchisches Set aus Zustands-, Prozess-, Früh-, Risiko- und Transformationsindikatoren entwickeln."
+    },
+    {
+      "id": "wirkungsrad",
+      "label": "WÖk-Wirkungsrad",
+      "canonicalLabel": "WÖk-Wirkungsrad",
+      "slug": "wirkungsrad",
+      "url": "/begriffe/wirkungsrad/",
+      "aliases": [
+        "WÖk-Wirkungsrad",
+        "Wirkungsrad",
+        "Wirkungsrad der Wirkungsökonomie",
+        "lernendes Wirkungsrad"
+      ],
+      "shortDefinition": "Das WÖk-Wirkungsrad ist ein Lernmodell, das Vorwirkung, Wirkungsermittlung, Bewertung, Schutz, Rückkopplung und neue Systemzustände als rekursiven Kreislauf verbindet.",
+      "definition": "Das Wirkungsrad zeigt, dass reale Systeme nicht am Ende einer linearen Wirkungskette stehen bleiben. Auslöser, Wirkpotenziale, Interventionen und der IOOI-Wirkpfad erzeugen Zustandsveränderungen, Nebenwirkungen und Rückkopplungen. Diese werden an einem Referenzrahmen bewertet, unter Schutzregeln zur Netto-Wirkung zusammengeführt und in die nächste Entscheidung zurückgeführt.\n\nDer neue Systemzustand wird wiederum zur Ausgangslage für die nächste Analyse. Das Modell ist ein Orientierungsbild, keine additive Rechenformel oder automatisierte Entscheidungsmaschine."
     },
     {
       "id": "woemm-betriebssystem",

@@ -1,20 +1,24 @@
-# Grundstudium Wirkungsökonomie · Vorlesung 15: Nebenwirkungen, Rebound und Zielkonflikte
+# Grundstudium Wirkungsökonomie · Vorlesung 15: Evidenz, Attribution, Nebenwirkungen und Rebound
 
-**Track:** Grundstudium Wirkungsökonomie  
-**Kurscode:** woek-g  
-**Vorlesungscode:** V15  
-**Modul/Abschnitt:** G2.1  
-**Titel:** Nebenwirkungen, Rebound und Zielkonflikte  
-**Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/content/lehrgaenge/woek-g-v15.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/woek-g-v15.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v15.docx`  
+**Track:** Grundstudium Wirkungsökonomie
+**Kurscode:** woek-g
+**Vorlesungscode:** V15
+**Modul/Abschnitt:** G2.1
+**Titel:** Evidenz, Attribution, Nebenwirkungen und Rebound
+**Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen
+**Quelle:** `woek-akademie-app/content/lehrgaenge/woek-g-v15.md`
+**Ablage:** Markdown-Master in `content/studienskripte/woek-g-v15.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v15.docx`
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+
+## Aktualisierung v1.4: Evidenz und Schutzregeln
+
+Die Wirkungskette reicht nicht für eine Wertung. Diese Vorlesung ergänzt deshalb Baseline, Counterfactual, Attribution, Datenqualität und Unsicherheit sowie Nebenwirkungen, Wechselwirkungen und Rebound. Positive und negative Wirkungen werden am Referenzrahmen getrennt bewertet; schwere Schäden dürfen nicht beliebig kompensiert werden.
 
 ## Lernziele
 
 Nach dieser Vorlesung kannst du:
 
-1. die Kernfrage von **Nebenwirkungen, Rebound und Zielkonflikte** in der Sprache der Wirkungsökonomie erklären.
+1. Wirkungspotenzial, plausiblen Wirkmechanismus und Wirkungsnachweis unterscheiden sowie Attribution und Unsicherheit offenlegen.
 2. Wirkung, Wirkungspotenzial und Wirkungsrisiko im Themenfeld sauber unterscheiden.
 3. typische Verwechslungen erkennen, insbesondere Reichweite, Aktivität, Absicht oder Reporting als Wirkung auszugeben.
 4. den Bezug zu Mensch, Planet und Demokratie sowie zur positiven Netto-Wirkung herstellen.

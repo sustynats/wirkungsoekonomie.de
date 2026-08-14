@@ -1964,6 +1964,74 @@
           "note": "bürgernahe Erklärungsebene; stützt die Formel, dass Nachhaltigkeit Zukunftsfähigkeit und Vorsorge bedeutet, ersetzt aber keine WÖk-Definition."
         }
       ]
+    },
+    {
+      "id": "iooi-und-wirkungsoekonomie",
+      "status": "published",
+      "confidence_notice": "methodische Einordnung; IOOI strukturiert den Wirkpfad, ersetzt aber keinen Wirkungsnachweis oder normativen Maßstab",
+      "levels": {
+        "einfach": {"label": "Einfach erklärt", "short_answer": "IOOI zeigt den Weg von Ressourcen und Aktivitäten über Leistungen zu Veränderungen: Input, Aktivität, Output, Outcome und Impact. Die Wirkungsökonomie ergänzt die Frage, ob diese Veränderung für Mensch, Planet und Demokratie positiv, negativ oder neutral ist – und was sich daraus für Entscheidungen ändern muss.", "one_sentence": "IOOI erklärt den Wirkpfad; die Wirkungsökonomie ergänzt Maßstab, Schutzregeln und Rückkopplung."},
+        "fachlich": {"label": "Fachlich", "short_answer": "IOOI ist eine Results Chain: Inputs ermöglichen Aktivitäten, diese erzeugen Outputs; Outcomes und Impacts beschreiben Veränderungsebenen. Die WÖk verbindet diesen Pfad mit Wirkmechanismen, Evidenz, Attribution, Wirkungsbewertung nach SDGs, Agenda 2030 und SDG+, Nichtkompensation und Wirkungssteuerung.", "one_sentence": "Die WÖk ordnet IOOI als Teil der Wirkungsarchitektur ein."},
+        "systemisch": {"label": "Systemisch", "short_answer": "Eine Wirkungskette genügt nicht, wenn ihre Ergebnisse keine Regeln verändern. Die WÖk ergänzt daher Schutzgrenzen, Netto- und Transformationswirkung sowie Rückkopplung in Preise, Kapital, Beschaffung, Management, Recht und Regulation.", "one_sentence": "Wirkung wird erst steuerungsfähig, wenn Evidenz, Maßstab und Rückkopplung verbunden sind."}
+      },
+      "impact_path_id": "iooi-und-wirkungsoekonomie",
+      "mpd": {"Mensch": "Fragt, welche Menschen unter welchen Bedingungen betroffen sind.", "Planet": "Macht Umweltfolgen, Grenzen und mögliche Verlagerungen sichtbar.", "Demokratie": "Verlangt transparente Maßstäbe, Korrektur und nachvollziehbare Entscheidungen."},
+      "sdg_relations": ["SDGs", "SDG+", "SDG 16"],
+      "glossary_terms": ["IOOI", "Input", "Output", "Outcome", "Impact", "Wirkungsbewertung", "Wirkungsrückkopplung"],
+      "related_cards": ["IOOI und Wirkungsökonomie"],
+      "misunderstanding": "IOOI ist kein Nachweis dafür, dass Wirkung eingetreten ist, und die WÖk behauptet nicht, IOOI zu ersetzen.",
+      "sources": [{"type": "Leitseite", "title": "IOOI und Wirkungsökonomie", "url": "verstehen/iooi-und-wirkungsoekonomie/", "note": "ordnet Wirkpfad, Evidenz, Bewertung und Rückkopplung zusammen ein."}]
+    },
+    {
+      "id": "output-ist-keine-wirkung",
+      "status": "published",
+      "confidence_notice": "begriffliche Einordnung",
+      "levels": {
+        "einfach": {"label": "Einfach erklärt", "short_answer": "Output ist die direkte Leistung einer Aktivität, zum Beispiel ein Kurs, ein Bericht, ein Produkt oder eine erreichte Personenzahl. Wirkung beginnt erst, wenn sich bei Betroffenen oder in einem System etwas verändert.", "one_sentence": "Ein Bericht, ein Kurs oder eine Reichweite kann wichtig sein, ist aber noch keine Wirkung."},
+        "fachlich": {"label": "Fachlich", "short_answer": "In der IOOI-Logik folgt Output auf Aktivität. Outcome beschreibt eine beobachtete Veränderung; Impact eine weiterreichende Wirkungsebene. Ob eine Veränderung tatsächlich durch die Maßnahme verursacht wurde, verlangt zusätzliche Evidenz und Attribution.", "one_sentence": "Output beschreibt Leistung, Outcome eine Wirkungsebene und Attribution eine offene Prüfungsfrage."},
+        "systemisch": {"label": "Systemisch", "short_answer": "Die WÖk prüft zusätzlich Nebenwirkungen, Verteilung, Grenzen und Rückkopplung. Eine hohe Reichweite kann etwa ein Wirkungsrisiko oder nur ein Resonanzsignal sein, nicht automatisch positive Wirkung.", "one_sentence": "Reichweite und Output dürfen nicht als Wirkungsersatz dienen."}
+      },
+      "impact_path_id": "output-ist-keine-wirkung",
+      "mpd": {"Mensch": "Veränderungen bei Betroffenen werden nicht durch Produktionszahlen ersetzt.", "Planet": "Ressourcen- und Umweltfolgen bleiben auch bei hohem Output sichtbar.", "Demokratie": "Transparente Begriffe verhindern Wirkungs- und Kommunikationswashing."},
+      "sdg_relations": ["SDG 16"],
+      "glossary_terms": ["Output", "Outcome", "Impact", "Wirkung"],
+      "related_cards": ["IOOI und Wirkungsökonomie"],
+      "misunderstanding": "Eine Outputzahl ist kein Beweis positiver Wirkung.",
+      "sources": [{"type": "Leitseite", "title": "IOOI und Wirkungsökonomie", "url": "verstehen/iooi-und-wirkungsoekonomie/", "note": "trennt Leistung, Veränderung und Evidenz."}]
+    },
+    {
+      "id": "wirkungspotenzial-und-nachweis",
+      "status": "published",
+      "confidence_notice": "evidenzorientierte Einordnung",
+      "levels": {
+        "einfach": {"label": "Einfach erklärt", "short_answer": "Wirkungspotenzial bedeutet: Etwas könnte unter bestimmten Bedingungen eine Veränderung auslösen. Ein Wirkungsnachweis zeigt dagegen mit Daten und einer nachvollziehbaren Methode, dass sich ein Zustand tatsächlich verändert hat.", "one_sentence": "Möglichkeit ist nicht Nachweis."},
+        "fachlich": {"label": "Fachlich", "short_answer": "Ein plausibler Wirkmechanismus begründet eine Hypothese. Für einen Wirkungsnachweis braucht es eine klar abgegrenzte Veränderung, Betroffene, Zeitraum, Datenqualität und eine plausible Zurechnung gegenüber dem Counterfactual.", "one_sentence": "Wirkmechanismus, Evidenz und Attribution sind getrennte Prüfschritte."},
+        "systemisch": {"label": "Systemisch", "short_answer": "Bei Sprache und Medien ist diese Unterscheidung besonders wichtig: Reichweite, Resonanz und ein plausibler Mechanismus können Wirkungsrisiken sichtbar machen, belegen aber keine konkrete Einstellungsänderung einzelner Menschen.", "one_sentence": "Kommunikation beschreibt Wirkungspotenziale und Risiken vorsichtig, nicht als belegte Einzeleffekte."}
+      },
+      "impact_path_id": "wirkungspotenzial-und-nachweis",
+      "mpd": {"Mensch": "Schützt Betroffene vor unbelegten Wirkungsbehauptungen.", "Planet": "Trennt Umweltrisiko, Wirkungsannahme und gemessene Veränderung.", "Demokratie": "Stärkt Evidenz, Transparenz und Korrekturfähigkeit."},
+      "sdg_relations": ["SDG 16", "SDG+ Medienqualität"],
+      "glossary_terms": ["Wirkungspotenzial", "Wirkmechanismus", "Wirkungsnachweis", "Counterfactual", "Attribution"],
+      "related_cards": ["IOOI und Wirkungsökonomie"],
+      "misunderstanding": "Ein plausibler Mechanismus ist kein Beleg, dass eine Wirkung eingetreten ist.",
+      "sources": [{"type": "Leitseite", "title": "IOOI und Wirkungsökonomie", "url": "verstehen/iooi-und-wirkungsoekonomie/", "note": "erklärt die Evidenzlogik."}]
+    },
+    {
+      "id": "nichtkompensation-wirkung",
+      "status": "published",
+      "confidence_notice": "normative Schutzlogik der Wirkungsökonomie",
+      "levels": {
+        "einfach": {"label": "Einfach erklärt", "short_answer": "Viele gute Einzelwerte heben einen schweren Schaden nicht einfach auf. Wer Menschenrechte verletzt oder kritische ökologische Grenzen überschreitet, kann das nicht mit einem guten Teilwert schönrechnen.", "one_sentence": "Schwere Schäden sind kein Rabattposten."},
+        "fachlich": {"label": "Fachlich", "short_answer": "Nichtkompensation schützt vor einer rein additiven Durchschnittslogik. Die Reverse Merit Order und rote Linien verlangen, kritische negative Wirkungen getrennt zu prüfen und gegebenenfalls als Begrenzung einer Gesamtbewertung zu behandeln.", "one_sentence": "Netto-Wirkung ist keine freie Verrechnung unvergleichbarer Werte."},
+        "systemisch": {"label": "Systemisch", "short_answer": "Die Schutzlogik verbindet Wirkungsbewertung mit Grundrechten, Grenzen, Betroffenenperspektiven und Rückkopplung. Sie entscheidet nicht über den Wert von Personen, sondern über die Zulässigkeit und Priorisierung von Handlungen, Produkten und Regeln.", "one_sentence": "Schutzregeln machen Wirkung demokratisch und begründbar steuerbar."}
+      },
+      "impact_path_id": "nichtkompensation-wirkung",
+      "mpd": {"Mensch": "Grundrechte und schwere soziale Schäden bleiben sichtbar.", "Planet": "Kritische Grenzen werden nicht durch andere Vorteile verrechnet.", "Demokratie": "Regeln und Begründungen bleiben öffentlich überprüfbar."},
+      "sdg_relations": ["SDGs", "SDG+", "SDG 16"],
+      "glossary_terms": ["Nichtkompensation", "Reverse Merit Order", "positive Netto-Wirkung", "Wirkungsbewertung"],
+      "related_cards": ["Scorecard", "Reverse Merit Order"],
+      "misunderstanding": "Nichtkompensation ist keine moralische Rangliste von Menschen und kein Social-Credit-System.",
+      "sources": [{"type": "Leitseite", "title": "IOOI und Wirkungsökonomie", "url": "verstehen/iooi-und-wirkungsoekonomie/", "note": "ordnet Schutzregeln und Rückkopplung ein."}]
     }
   ]
 }

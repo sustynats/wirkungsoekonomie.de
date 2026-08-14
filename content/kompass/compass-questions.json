@@ -606,6 +606,50 @@
         "wirkungsrueckkopplung"
       ],
       "status": "published"
+    },
+    {
+      "id": "iooi-und-wirkungsoekonomie",
+      "question": "Was unterscheidet IOOI von der Wirkungsökonomie?",
+      "aliases": ["IOOI WÖk Unterschied", "Input Output Outcome Impact Wirkungsökonomie", "IOOI Wirkung"],
+      "mode": "Verstehen",
+      "topic": "Wirkung & SDGs",
+      "answer_template_id": "iooi-und-wirkungsoekonomie",
+      "impact_path_id": "iooi-und-wirkungsoekonomie",
+      "related_knowledge_cards": ["glossar-wirkung", "wirkungspotenzial", "scorecard", "sdg-plus"],
+      "status": "published"
+    },
+    {
+      "id": "output-ist-keine-wirkung",
+      "question": "Wann ist Output noch keine Wirkung?",
+      "aliases": ["Output Wirkung Unterschied", "Output Outcome", "Reichweite ist keine Wirkung"],
+      "mode": "Verstehen",
+      "topic": "Wirkung & SDGs",
+      "answer_template_id": "output-ist-keine-wirkung",
+      "impact_path_id": "output-ist-keine-wirkung",
+      "related_knowledge_cards": ["glossar-wirkung", "wirkungspotenzial"],
+      "status": "published"
+    },
+    {
+      "id": "wirkungspotenzial-und-nachweis",
+      "question": "Was unterscheidet Wirkungspotenzial von Wirkungsnachweis?",
+      "aliases": ["Wirkungspotenzial Wirkung", "Wirkmechanismus Wirkungsnachweis", "Evidenz Wirkung"],
+      "mode": "Analysieren",
+      "topic": "Wirkung & SDGs",
+      "answer_template_id": "wirkungspotenzial-und-nachweis",
+      "impact_path_id": "wirkungspotenzial-und-nachweis",
+      "related_knowledge_cards": ["wirkungspotenzial", "wirkungsrisiko", "datenqualität"],
+      "status": "published"
+    },
+    {
+      "id": "nichtkompensation-wirkung",
+      "question": "Warum werden schwere Schäden nicht einfach mit positiver Wirkung verrechnet?",
+      "aliases": ["Nichtkompensation einfach erklärt", "positive Wirkung verrechnen", "Reverse Merit Order"],
+      "mode": "Einordnen",
+      "topic": "Wirkungssteuer",
+      "answer_template_id": "nichtkompensation-wirkung",
+      "impact_path_id": "nichtkompensation-wirkung",
+      "related_knowledge_cards": ["scorecard", "reverse-merit-order", "positive-netto-wirkung"],
+      "status": "published"
     }
   ]
 }
