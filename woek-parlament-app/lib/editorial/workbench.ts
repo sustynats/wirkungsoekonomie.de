@@ -106,6 +106,17 @@ type HistoricalRegistryRow = {
   materiality_assessment: string;
 };
 
+type ImportJobRow = {
+  scope: string;
+  status: string;
+  pages_completed: number;
+  imported_count: number;
+  skipped_count: number;
+  window_from: string;
+  window_to: string;
+  updated_at: string;
+};
+
 /** A registry overview, not a government score. All figures are counts of
  * documented case states and link back to the decision-level register. */
 export async function historicalBackfillDashboard() {
@@ -114,11 +125,12 @@ export async function historicalBackfillDashboard() {
   );
   const term = terms[0] ?? null;
   if (!term) return { term: null, counts: null };
-  const [registry, tasks, calculations, reviews] = await Promise.all([
+  const [registry, tasks, calculations, reviews, importJobs] = await Promise.all([
     supabaseRest<HistoricalRegistryRow[]>(`historical_decision_registry?government_term_id=eq.${encodeURIComponent(term.id)}&select=parliamentary_case_id,selection_status,materiality_assessment&limit=5000`),
     supabaseRest<Array<{ parliamentary_case_id: string }>>(`editorial_tasks?status=${activeTaskStatuses}&select=parliamentary_case_id&limit=5000`),
     supabaseRest<Array<{ parliamentary_case_id: string }>>("calculation_records?select=parliamentary_case_id&calculation_status=in.(DRAFT,REVIEW_REQUIRED)&limit=5000"),
-    supabaseRest<Array<{ parliamentary_case_id: string; status: string }>>("historical_decision_reviews?select=parliamentary_case_id,status&limit=5000")
+    supabaseRest<Array<{ parliamentary_case_id: string; status: string }>>("historical_decision_reviews?select=parliamentary_case_id,status&limit=5000"),
+    supabaseRest<ImportJobRow[]>("parliament_import_jobs?scope=eq.BOOTSTRAP&select=scope,status,pages_completed,imported_count,skipped_count,window_from,window_to,updated_at&order=updated_at.desc&limit=5")
   ]);
   const caseIds = new Set(registry.map((entry) => entry.parliamentary_case_id));
   const reviewByCase = new Map(reviews.map((review) => [review.parliamentary_case_id, review.status]));
@@ -134,6 +146,14 @@ export async function historicalBackfillDashboard() {
       notMaterial: registry.filter((entry) => entry.selection_status === "NOT_SELECTED_FOR_FULL_IMPACT_REVIEW").length,
       readyForPublication: registry.filter((entry) => entry.selection_status === "READY_FOR_PUBLICATION").length,
       published: registry.filter((entry) => entry.selection_status === "PUBLISHED").length
+    },
+    importProgress: {
+      activeJobs: importJobs.filter((job) => job.status === "PENDING" || job.status === "RUNNING").length,
+      completedJobs: importJobs.filter((job) => job.status === "SUCCEEDED").length,
+      failedJobs: importJobs.filter((job) => job.status === "FAILED").length,
+      totalPages: importJobs.reduce((total, job) => total + job.pages_completed, 0),
+      totalImported: importJobs.reduce((total, job) => total + job.imported_count, 0),
+      latestJob: importJobs[0] ?? null
     }
   };
 }

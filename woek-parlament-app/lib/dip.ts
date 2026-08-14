@@ -47,7 +47,10 @@ export function getDipConfiguration() {
     requestedLeadDays: Math.min(14, Math.max(7, Number(process.env.DIP_LOOKAHEAD_DAYS ?? 10))),
     historicalBackfillStart: /^\d{4}-\d{2}-\d{2}$/.test(process.env.HISTORICAL_WOEK_BACKFILL_START ?? "") ? process.env.HISTORICAL_WOEK_BACKFILL_START! : "2025-05-06",
     legislativeTerm: Math.max(1, Number(process.env.DIP_WAHLPERIODE ?? 21)),
-    importMaxPages: Math.min(20, Math.max(1, Number(process.env.DIP_IMPORT_MAX_PAGES ?? 10)))
+    // This limit applies to one invocation only. The import cursor is stored
+    // after every fetched page, so it can never silently define the coverage
+    // of the historical register.
+    importPagesPerInvocation: Math.min(3, Math.max(1, Number(process.env.DIP_IMPORT_PAGES_PER_INVOCATION ?? 3)))
   };
 }
 

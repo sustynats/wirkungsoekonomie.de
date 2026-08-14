@@ -12,6 +12,7 @@ export default async function HistoricalBackfillPage() {
   if (!session) redirect("/redaktion/anmelden?next=/redaktion/historischer-aufbau");
   const dashboard = await historicalBackfillDashboard();
   const counts = dashboard.counts;
+  const importProgress = dashboard.importProgress;
 
   return <div className="editorial-shell container">
     <p className="breadcrumb"><Link href="/redaktion">Meine Aufgaben</Link><span aria-hidden="true">/</span><span>Historischer Aufbau</span></p>
@@ -20,6 +21,12 @@ export default async function HistoricalBackfillPage() {
       <h1>Wirkungsbilanz der laufenden Regierungszeit</h1>
       <p>{dashboard.term ? <>Historischer WÖk-Backfill seit <strong>{formatDate(dashboard.term.historical_woek_backfill_start)}</strong>. Beginn der Wahlperiode: {formatDate(dashboard.term.legislative_term_start)}; Beginn der Regierungszeit: {formatDate(dashboard.term.government_term_start)}.</> : "Die Regierungszeit-Konfiguration wird nach der Migration geladen."}</p>
     </header>
+    {importProgress ? <section className="editorial-empty" aria-label="Importfortschritt">
+      <h2>Importfortschritt</h2>
+      <p>{importProgress.activeJobs > 0 ? "Der historische DIP-Backfill läuft fortsetzbar." : importProgress.completedJobs > 0 ? "Der historische DIP-Backfill ist für seinen festgehaltenen Zeitraum vollständig." : "Der Bootstrap-Import wurde noch nicht gestartet."}</p>
+      <p><strong>{importProgress.totalPages}</strong> Seiten verarbeitet · <strong>{importProgress.totalImported}</strong> importierte Positionen · <strong>{importProgress.failedJobs}</strong> fehlgeschlagene Jobs.</p>
+      {importProgress.latestJob ? <p className="muted">Letzter Zeitraum: {formatDate(importProgress.latestJob.window_from)} bis {formatDate(importProgress.latestJob.window_to)} · Stand: {importProgress.latestJob.status}.</p> : null}
+    </section> : null}
     {counts ? <section className="editorial-kpis editorial-kpis--three" aria-label="Backfill-Stand">
       <article><span>Gefunden</span><strong>{counts.found}</strong><small>Entscheidungen im Register</small></article>
       <article><span>Vorsortiert</span><strong>{counts.preSorted}</strong><small>mit Materialitätsstand</small></article>

@@ -16,6 +16,26 @@ sind getrennte Datenfelder in `government_terms`, nicht austauschbare Labels.
 `BOOTSTRAP`-Import. Der tägliche Standardimport bleibt ein 7–14-Tage-Radar und
 zieht nicht jedes Mal die gesamte Regierungszeit erneut.
 
+## Vollständiger, fortsetzbarer Import
+
+Der Backfill verarbeitet DIP nicht bis zu einer stillen Seitenobergrenze.
+`parliament_import_jobs` speichert für jedes Fenster den DIP-Cursor,
+verarbeitete Seiten, Zähler und den Zustand. Eine Invocation bearbeitet nur
+`DIP_IMPORT_PAGES_PER_INVOCATION` Seiten (Standard: drei) und antwortet dann
+mit `PARTIAL`, solange ein Cursor vorhanden ist. Der nächste Aufruf desselben
+Scopes nimmt exakt dort wieder auf. Erst `SUCCEEDED` bedeutet, dass DIP für das
+festgehaltene Zeitfenster keine weitere Seite geliefert hat.
+
+Jede DIP-Vorgangsposition ist eine eigene technische DecisionUnit. So gehen
+mehrere Beschlüsse innerhalb desselben parlamentarischen Vorgangs nicht durch
+eine Deduplikation auf Vorgangsebene verloren.
+
+Das anfängliche Screening ist bewusst konservativ: nur eindeutig erkennbare
+Personal-, Geschäftsordnungs- oder Verfahrensereignisse erhalten
+`NOT_MATERIAL`; alle übrigen Beschlüsse bleiben `POTENTIAL_MATERIAL` und
+`PENDING_SCREEN`. Das ist keine Wirkungsbewertung und verwendet weder
+Einbringer noch Partei, Regierungsstatus oder politisches Interesse.
+
 ## Zwei Ebenen
 
 1. **Decision Registry:** Jede seit Stichtag deterministisch erfasste materielle

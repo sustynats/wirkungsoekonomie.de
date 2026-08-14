@@ -117,6 +117,35 @@ create table public.historical_decision_registry (
 create index historical_decision_registry_dashboard_idx
   on public.historical_decision_registry (government_term_id, selection_status, materiality_assessment, decision_date desc);
 
+-- The first historical pass is intentionally narrow and reproducible.  It
+-- distinguishes clearly routine parliamentary events from decisions that need
+-- a source-backed materiality review; it never produces a WÖk verdict.  The
+-- importer supplies these values from documented procedure metadata only.
+-- In particular, the decision's proposer, party or government status is not
+-- an input to this screen.
+create table public.parliament_import_jobs (
+  id uuid primary key default gen_random_uuid(),
+  job_key text not null unique,
+  scope text not null check (scope in ('BOOTSTRAP', 'LOOKAHEAD')),
+  legislative_term integer not null check (legislative_term > 0),
+  window_from date not null,
+  window_to date not null,
+  next_cursor text,
+  status text not null default 'PENDING' check (status in ('PENDING', 'RUNNING', 'SUCCEEDED', 'FAILED')),
+  pages_completed integer not null default 0 check (pages_completed >= 0),
+  imported_count integer not null default 0 check (imported_count >= 0),
+  skipped_count integer not null default 0 check (skipped_count >= 0),
+  last_error text,
+  metadata jsonb not null default '{}'::jsonb check (jsonb_typeof(metadata) = 'object'),
+  started_at timestamptz not null default now(),
+  updated_at timestamptz not null default now(),
+  finished_at timestamptz,
+  check (window_to >= window_from),
+  check ((status = 'SUCCEEDED') = (finished_at is not null))
+);
+create index parliament_import_jobs_progress_idx
+  on public.parliament_import_jobs (scope, status, updated_at desc);
+
 -- A registry entry is created deterministically for every screened decision
 -- inside the selected government term. It is a complete decision register, not
 -- a claim that every case has already received a full WÖk assessment.
@@ -130,6 +159,9 @@ declare
   v_term public.government_terms;
   v_decision_unit_id uuid;
   v_document_version_id uuid;
+  v_materiality public.historical_materiality_status;
+  v_selection public.historical_registry_selection_status;
+  v_selection_reason text;
 begin
   select * into v_case from public.parliamentary_cases where id = new.parliamentary_case_id;
   if not found or v_case.decision_date is null or v_case.government_term_id is null then return new; end if;
@@ -137,27 +169,52 @@ begin
   if not found or v_case.decision_date < v_term.historical_woek_backfill_start then return new; end if;
   select id into v_decision_unit_id from public.decision_units where parliamentary_case_id = v_case.id order by created_at limit 1;
   select id into v_document_version_id from public.document_versions where parliamentary_case_id = v_case.id order by is_final_voting_version desc, created_at desc limit 1;
+  v_materiality := case new.criteria->>'deterministic_materiality'
+    when 'POTENTIAL_MATERIAL' then 'POTENTIAL_MATERIAL'::public.historical_materiality_status
+    when 'MATERIAL' then 'MATERIAL'::public.historical_materiality_status
+    when 'NOT_MATERIAL' then 'NOT_MATERIAL'::public.historical_materiality_status
+    when 'EVIDENCE_OPEN' then 'EVIDENCE_OPEN'::public.historical_materiality_status
+    else 'UNSCREENED'::public.historical_materiality_status
+  end;
+  v_selection := case
+    when v_materiality = 'NOT_MATERIAL' then 'NOT_SELECTED_FOR_FULL_IMPACT_REVIEW'::public.historical_registry_selection_status
+    else 'PENDING_SCREEN'::public.historical_registry_selection_status
+  end;
+  v_selection_reason := coalesce(
+    new.criteria->>'deterministic_materiality_reason',
+    case when v_materiality = 'NOT_MATERIAL' then 'Routine-/Verfahrensvorgang laut deterministischem Metadaten-Screening.' else null end
+  );
 
   insert into public.historical_decision_registry (
     registry_key, government_term_id, parliamentary_case_id, decision_unit_id,
     decision_date, parliamentary_stage, analysed_document_version_id,
-    decision_type, official_objective, source_snapshot
+    decision_type, official_objective, materiality_assessment, selection_status,
+    selection_reason, source_snapshot
   ) values (
     'historical-case:' || v_case.id::text,
     v_term.id, v_case.id, v_decision_unit_id, v_case.decision_date,
     'IMPORTED_DECISION_REQUIRES_SOURCE_CONFIRMATION', v_document_version_id,
-    v_case.case_kind::text, null,
+    v_case.case_kind::text, null, v_materiality, v_selection, v_selection_reason,
     jsonb_build_object('external_system', v_case.external_system, 'external_id', v_case.external_id, 'imported_at', now())
   ) on conflict (registry_key) do update set
     decision_date = excluded.decision_date,
     analysed_document_version_id = coalesce(excluded.analysed_document_version_id, public.historical_decision_registry.analysed_document_version_id),
+    materiality_assessment = case
+      when public.historical_decision_registry.materiality_assessment = 'UNSCREENED' then excluded.materiality_assessment
+      else public.historical_decision_registry.materiality_assessment
+    end,
+    selection_status = case
+      when public.historical_decision_registry.selection_status = 'PENDING_SCREEN' then excluded.selection_status
+      else public.historical_decision_registry.selection_status
+    end,
+    selection_reason = coalesce(public.historical_decision_registry.selection_reason, excluded.selection_reason),
     source_snapshot = excluded.source_snapshot,
     updated_at = now();
   return new;
 end;
 $$;
 create trigger case_screenings_register_historical_case
-after insert on public.case_screenings
+after insert or update of criteria on public.case_screenings
 for each row execute function public.register_historical_screened_case();
 
 create or replace function public.touch_historical_decision_registry()
@@ -170,6 +227,7 @@ for each row execute function public.touch_historical_decision_registry();
 
 alter table public.government_terms enable row level security;
 alter table public.historical_decision_registry enable row level security;
+alter table public.parliament_import_jobs enable row level security;
 create policy "editorial members read government terms"
   on public.government_terms for select to authenticated using (public.is_editorial_member());
 create policy "editorial members read historical registry"
