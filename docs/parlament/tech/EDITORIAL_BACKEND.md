@@ -15,5 +15,10 @@ Primary navigation:
 
 The first operational screen is **Meine Aufgaben**.  A task exposes the specific question, why it needs a human, the minimal fact/source context, structured options and the impact of saving.  The initial implementation stores these elements in `editorial_tasks.context_refs`, `candidate_options` and `impact_preview`; it does not open a free-form AI chat.
 
-Authentication and RBAC are a launch gate for this private surface.  Server routes use only server credentials and must verify an editorial role before calling the service-role data layer.  The currently added worker route is additionally protected by a dedicated server-only secret and cannot publish a case.
+For a Calculation Review, the question names the missing operand or contested
+rule, its source position, the allowed resolution paths and the consequences
+for the calculation. A redaction may record a source-backed value or interval,
+choose a rule-based result, or mark it `NOT_ROBUSTLY_QUANTIFIABLE`; it may not
+enter an unexplained expert number.
 
+Authentication and RBAC are a launch gate for this private surface.  Server routes use only server credentials and must verify an editorial role before calling the service-role data layer.  The currently added worker route is additionally protected by a dedicated server-only secret and cannot publish a case.

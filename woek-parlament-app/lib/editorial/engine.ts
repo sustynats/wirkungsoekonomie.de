@@ -42,11 +42,19 @@ export type TaskType =
   | "DOMAIN_RELEVANCE"
   | "NORMATIVE_MAPPING_REVIEW"
   | "BOUNDARY_REVIEW"
+  | "COUNTERFACTUAL_REVIEW"
+  | "CALCULATION_INPUT_REVIEW"
+  | "ATTRIBUTION_REVIEW"
+  | "BENCHMARK_REVIEW"
+  | "NORMALIZATION_REVIEW"
+  | "AGGREGATION_REVIEW"
+  | "UNCERTAINTY_REVIEW"
+  | "DOUBLE_COUNTING_REVIEW"
   | "RECOMMENDATION_REVIEW"
   | "METHOD_PATTERN_PROMOTION";
 
 export type CandidateOption = {
-  value: DomainResolution;
+  value: string;
   label: string;
   effect: string;
 };
