@@ -1,0 +1,241 @@
+{
+  "terms": [
+    {
+      "id": "value-based-pricing",
+      "termId": "value-based-pricing",
+      "canonicalLabel": "Value-based Pricing",
+      "slug": "value-based-pricing",
+      "aliases": [
+        "Value-Based Pricing",
+        "Value Based Pricing",
+        "Value Pricing",
+        "wertbasiertes Pricing",
+        "kundennutzenbasiertes Pricing"
+      ],
+      "shortDefinition": "Value-based Pricing ist eine Preisstrategie, bei der sich der Preis vor allem am nachvollziehbaren wirtschaftlichen Nutzen einer Leistung für den jeweiligen Kunden orientiert, nicht allein an Aufwand, Kosten, Marge oder Wettbewerb.",
+      "hoverDefinition": "Value-based Pricing leitet den Preis aus dem nachvollziehbaren wirtschaftlichen Kundennutzen ab, nicht primär aus Stunden oder Selbstkosten.",
+      "longDefinition": "Value-based Pricing fragt zuerst, welche ökonomisch relevante Zustandsveränderung ein Produkt oder eine Dienstleistung beim Kunden ermöglicht: etwa vermiedene Kosten, ein zusätzlicher Deckungsbeitrag, ein reduziertes Risiko, höhere Qualität oder eine kürzere Durchlaufzeit. Der Preis wird anschließend innerhalb eines transparenten, verhandelten Korridors an diesem Kundenwert ausgerichtet. Deshalb kann dieselbe Leistung für verschiedene Kunden unterschiedlich viel wert sein.\n\nDer errechnete Kundenwert ist kein Selbstbeweis. Er braucht einen Ausgangszustand, einen Ziel- oder Vergleichszustand, einen Zeitraum, eine plausible Gegenhypothese und eine nachvollziehbare Zurechnung. Erwartungen oder Vertriebsannahmen sind zunächst Wertpotenzial, nicht bereits realisierter Kundenwert.",
+      "woekRelation": "Value-based Pricing beschreibt die ökonomische Perspektive des Kunden. Es beantwortet nicht, ob die Leistung für Mensch, Planet und Demokratie positive Netto-Wirkung erzeugt. Eine Leistung kann einen hohen Kundenwert schaffen und zugleich Schäden externalisieren. Die Wirkungsökonomie ergänzt Value-based Pricing daher um eine getrennte Wirkungsprüfung; sie ersetzt den Kundenwert nicht durch einen pauschalen Wirkungsaufschlag.",
+      "usageNote": "Value-based Pricing nur verwenden, wenn Kundennutzen, Bezugszeitraum, Vergleichsmaßstab, Zurechnung und Preislogik offenliegen. Nicht aus Umsatz, Reichweite oder einer behaupteten Einsparung ohne Vergleichsfall ableiten.",
+      "statusNote": "Anschlussbegriff der Preisstrategie; die wirkungsökonomische Erweiterung ist im Begriff Wirkungsbasiertes Value Pricing beschrieben.",
+      "status": "anschlussbegriff",
+      "type": "Preisstrategie",
+      "category": "Management, Wirksamkeit und Organisation",
+      "version": "1.0",
+      "reviewStatus": "redaktionell konsolidiert",
+      "source": "Value-based Pricing und Wirkungsbasiertes Value Pricing · Glossareinordnung v0.1",
+      "sourceDocument": "Value-based Pricing und Wirkungsbasiertes Value Pricing · Glossareinordnung v0.1",
+      "sourceSection": "Kundennutzen, Zurechnung und Preis",
+      "sourceProvenance": "Die Definition des klassischen Value-based Pricing wird anhand von Fachliteratur eingeordnet. Die Abgrenzung zu Wirkung und Netto-Wirkung beschreibt die Verwendung in der Wirkungsökonomie.",
+      "officialSources": [
+        "Hinterhuber, Andreas (2008): Customer value-based pricing strategies: why companies resist|https://doi.org/10.1108/02756660810887079",
+        "Hinterhuber, Andreas (2017): Value quantification capabilities in industrial markets|https://doi.org/10.1016/j.jbusres.2016.11.019"
+      ],
+      "relatedTerms": [
+        "kundennutzen",
+        "business-value",
+        "value-proposition",
+        "value-proposition-canvas",
+        "wirkungspotenzial",
+        "wirkung",
+        "wirkungszurechnung",
+        "zurechnung-ohne-scheingenauigkeit",
+        "wirkpfad",
+        "wirkungscontrolling",
+        "unvollstaendiger-preis",
+        "preisvollstaendigkeit",
+        "wirkungsbasiertes-value-pricing"
+      ],
+      "doNotConfuseWith": [
+        "Cost-plus Pricing: Es leitet den Preis primär aus Kosten und Aufschlag ab, nicht aus dem Kundennutzen.",
+        "Erfolgsvergütung: Sie kann an ein Ergebnis gekoppelt sein, ist aber nicht automatisch Value-based Pricing.",
+        "Wirkung oder positive Netto-Wirkung: Kundennutzen ist eine Kundenperspektive und kein Nachweis systemischer Qualität.",
+        "Beliebiger Preisspielraum: Ein wertorientierter Preis braucht nachvollziehbare Annahmen, faire Verteilung und echte Wahlmöglichkeiten."
+      ],
+      "examples": [
+        "Eine Beratung reduziert nachweisbar den jährlichen Fehleraufwand eines Kunden. Der Preis orientiert sich am zurechenbaren Anteil der dauerhaft vermiedenen Kosten, nicht nur an den geleisteten Beratungsstunden.",
+        "Ein Softwareprodukt erzeugt bei zwei Kunden unterschiedlich hohe Zeit- und Risikoeinsparungen. Ein kundenspezifischer Wertkorridor kann deshalb unterschiedlich ausfallen."
+      ],
+      "calculationModel": {
+        "title": "Kundenwert zuerst prüfen, Preis danach verhandeln",
+        "explanation": "Value-based Pricing ist keine Formel für einen beliebig hohen Preis. Es macht den Nutzenfall prüfbar und leitet daraus einen fairen Preis-Korridor ab.",
+        "steps": [
+          "Ausgangszustand, Zielzustand, Zeitraum und relevante wirtschaftliche Größen festlegen.",
+          "Bruttokundenwert aus belegbaren Veränderungen bestimmen, zum Beispiel aus vermiedenen Kosten, zusätzlichem Deckungsbeitrag, reduziertem Erwartungsrisiko oder Qualitätsgewinn.",
+          "Gegenhypothesen und den zurechenbaren Anteil der eigenen Leistung prüfen; andere Ursachen nicht dem Anbieter zurechnen.",
+          "Aus dem zurechenbaren Kundenwert einen nachvollziehbaren Preis-Korridor ableiten und mit Zahlungsfähigkeit, Risiko, Leistungspflichten und fairer Verteilung abgleichen.",
+          "Annahmen, Datenstand und spätere Überprüfung dokumentieren; eine Erwartung bei Bedarf nach Projektabschluss korrigieren."
+        ],
+        "note": "Es gibt keinen allgemein gültigen Prozentsatz des Kundenwerts. Der Preis bleibt eine transparente, verhandelbare Vereinbarung und darf Abhängigkeiten oder Informationsasymmetrien nicht ausnutzen."
+      },
+      "deepGlossarySections": [
+        {
+          "title": "Kundennutzen ist nicht Systemwirkung",
+          "body": "Kundennutzen beschreibt, was ein Angebot für die Käuferin oder den Käufer verändert. Wirkung beschreibt dagegen Zustandsveränderungen im gesamten relevanten System. Beide Perspektiven können zusammenfallen, müssen es aber nicht. Gerade bei Dienstleistungen kann ein hoher Kundenwert durch Kostenverlagerung, Ressourcenverbrauch, schlechtere Arbeitsbedingungen oder demokratische Risiken erkauft sein.",
+          "items": [
+            "Den Preis nicht aus behauptetem, sondern aus prüfbarem Kundenwert ableiten.",
+            "Kundennutzen und Wirkungsprüfung getrennt dokumentieren.",
+            "Zurechnung und Unsicherheit sichtbar lassen, statt Vertriebshypothesen als Ergebnis auszugeben."
+          ]
+        },
+        {
+          "title": "Der Wertkorridor statt Stundenlogik",
+          "body": "Der Aufwand bleibt für Kapazitätsplanung, Kosten, Mindestpreis und Leistungspflichten relevant. Er ist aber nicht der alleinige Maßstab dafür, welchen wirtschaftlichen Wert eine Leistung beim Kunden erzeugt. Value-based Pricing verschiebt deshalb die Leitfrage von „Wie viele Stunden wurden eingesetzt?“ zu „Welche zurechenbare Veränderung entsteht für diesen Kunden?“.",
+          "items": [
+            "Ein Preis-Korridor lässt dem Kunden einen erkennbaren Anteil des geschaffenen Werts.",
+            "Aufteilung, Zahlungszeitpunkt und Erfolgsanteile können Risiko und Nachweisgrad berücksichtigen.",
+            "Ein hoher erwarteter Wert rechtfertigt keine intransparente oder erpresserische Preisgestaltung."
+          ]
+        }
+      ],
+      "classicGlossary": true,
+      "autoLinkAllowed": true,
+      "maxAutoLinksPerPage": 1,
+      "pageUrl": "/begriffe/value-based-pricing/",
+      "glossaryOrderKey": "Value-based Pricing"
+    },
+    {
+      "id": "wirkungsbasiertes-value-pricing",
+      "termId": "wirkungsbasiertes-value-pricing",
+      "canonicalLabel": "Wirkungsbasiertes Value Pricing",
+      "slug": "wirkungsbasiertes-value-pricing",
+      "aliases": [
+        "wirkungsorientiertes Value Pricing",
+        "impact-basiertes Value Pricing",
+        "impact-informed Value Pricing",
+        "wirkungsbasiertes Pricing"
+      ],
+      "shortDefinition": "Wirkungsbasiertes Value Pricing ist ein WÖk-Arbeitsmodell, das den zurechenbaren ökonomischen Kundenwert einer Leistung und ihre getrennt geprüfte Netto-Wirkung für Mensch, Planet und Demokratie gemeinsam in die Preisentscheidung einordnet.",
+      "hoverDefinition": "Wirkungsbasiertes Value Pricing verbindet Kundenwert mit einer getrennten MPD-Wirkungsprüfung, ohne beide Größen zu einer Euro-Summe zu verrechnen.",
+      "longDefinition": "Wirkungsbasiertes Value Pricing erweitert Value-based Pricing um eine zweite, nicht kompensierbare Bewertungsebene. Auf der ersten Ebene wird der wirtschaftliche Kundenwert einer Leistung aus einer nachvollziehbaren Zustandsveränderung und ihrer Zurechnung bestimmt. Auf der zweiten Ebene wird geprüft, welche Wirkungen und Wirkungsrisiken die Leistung im Referenzrahmen Mensch, Planet und Demokratie auslöst.\n\nDie beiden Ebenen werden bewusst nicht zu einer einzigen Geldsumme verrechnet: Ein hoher Kundenwert kann schwere negative Wirkungen nicht ausgleichen. Die Netto-Wirkung ist daher kein automatischer Preisaufschlag, sondern eine eigenständige Qualitäts-, Schutz- und Lernbedingung. Das Modell ist eine WÖk-Arbeitslogik in Entwicklung, kein allgemeiner Marktstandard und keine automatische Preisformel.",
+      "woekRelation": "Der Leitsatz lautet: Der Kundenwert bestimmt den ökonomischen Wert einer Leistung; die Netto-Wirkung bestimmt ihre systemische Qualität. Der Preis soll sich an einer zurechenbaren Veränderung statt allein am Aufwand orientieren. Zugleich begrenzen Nichtkompensation, Wirkungsgrenzen, Erschwinglichkeit und faire Lastenverteilung, was als wirkungsökonomisch vertretbare Preisentscheidung gelten kann.",
+      "usageNote": "Nur als transparentes Modell für klar abgegrenzte Leistungen verwenden. Kundenwert, Zurechnung, Wirkung, Risiken, Datenqualität, Schutzgrenzen und Preis-Korridor müssen getrennt ausgewiesen werden. Eine Wirkungserwartung bleibt Wirkungspotenzial, bis sie überprüft ist.",
+      "statusNote": "WÖk-Arbeitsmodell v0.1. Die Verbindung „gemessener Wert → Preis“ ist als methodischer Entwicklungsraum gekennzeichnet und noch kein vollständig standardisierter Rechenstandard.",
+      "status": "woek-praezisierungsbegriff",
+      "type": "WÖk-Arbeitsmodell für Dienstleistungen und Angebote",
+      "category": "Management, Wirksamkeit und Organisation",
+      "version": "0.1",
+      "reviewStatus": "Arbeits- und Diskussionsfassung",
+      "source": "Wirkungsbasiertes Value Pricing · WÖk-Arbeitsmodell v0.1",
+      "sourceDocument": "Wirkungsbasiertes Value Pricing · WÖk-Arbeitsmodell v0.1",
+      "sourceSection": "Doppelte Wertmessung, Nichtkompensation und Preis-Korridor",
+      "sourceProvenance": "Das Arbeitsmodell verbindet die WÖk-Begriffe Kundennutzen, Wirkung, Wirkungszurechnung, Wirkungscontrolling, Scorecards, NWI und T-SROI. Es ist kein externer Standard und keine Finanz-, Rechts- oder Preisberatung.",
+      "officialSources": [
+        "Hinterhuber, Andreas (2017): Value quantification capabilities in industrial markets|https://doi.org/10.1016/j.jbusres.2016.11.019"
+      ],
+      "relatedTerms": [
+        "value-based-pricing",
+        "kundennutzen",
+        "business-value",
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "positive-netto-wirkung",
+        "wirkpfad",
+        "wirkungszurechnung",
+        "zurechnung-ohne-scheingenauigkeit",
+        "systemgrenze",
+        "wirkungscontrolling",
+        "scorecard",
+        "nwi",
+        "t-sroi",
+        "datenqualitaet",
+        "unvollstaendiger-preis",
+        "preisvollstaendigkeit",
+        "nichtkompensationsprinzip",
+        "wirkungsgrenze",
+        "reverse-merit-order",
+        "transformationswirkung"
+      ],
+      "doNotConfuseWith": [
+        "Value-based Pricing: Es bewertet den wirtschaftlichen Kundennutzen, aber nicht automatisch die Netto-Wirkung im MPD-Referenzrahmen.",
+        "T-SROI oder NWI: Beide können Teile der Wirkungsbewertung unterstützen, legen aber keinen Dienstleistungspreis fest.",
+        "True Cost Pricing oder Preisvollständigkeit: Sie behandeln die Rückkopplung gesellschaftlicher Folgen in Märkten; dieses Modell behandelt zunächst die Preisvereinbarung für eine konkrete Leistung.",
+        "Erfolgsversprechen: Ein Preis-Korridor ist keine Garantie, dass die erwartete Veränderung eintritt.",
+        "Kompensationsformel: Hoher Kundenwert oder positive Teilwirkung heben eine relevante Wirkungsgrenze nicht auf."
+      ],
+      "examples": [
+        "Eine Dienstleistung schafft bei einem Kunden einen belegbaren Bruttokundenwert aus Kostensenkung, reduziertem Erwartungsrisiko und Prozessverbesserung. Erst nach Prüfung der Zurechnung wird daraus ein Preis-Korridor abgeleitet. Parallel prüft eine Scorecard, ob die Umsetzung Arbeitsbedingungen, Ressourcen, Resilienz und demokratische Korrekturfähigkeit stärkt oder schwächt.",
+        "Eine Beratung erzeugt hohen Kundenwert, verschiebt aber erhebliche Schäden in eine Lieferkette. Klassisches Value-based Pricing kann wirtschaftlich funktionieren; wirkungsbasiertes Value Pricing würde die negative Netto-Wirkung nicht gegen den Kundenwert verrechnen, sondern die Leistung umgestalten oder die Preisentscheidung verwerfen."
+      ],
+      "calculationModel": {
+        "title": "Zwei getrennte Bewertungen, eine verantwortete Preisentscheidung",
+        "explanation": "Das Modell verbindet keine Wert- und Wirkungsgrößen zu einer universellen Euro-Summe. Es prüft zuerst den zurechenbaren Kundenwert und daneben die systemische Qualität der Leistung.",
+        "steps": [
+          "Ausgangszustand bestimmen: Kosten, Qualität, Risiko, Durchlaufzeit, Umsatz, Fehler, Fähigkeiten und relevante Wirkungsdaten vor der Leistung erfassen.",
+          "Zielzustand und Wirkpfad festlegen: Welche Veränderung soll für den Kunden und welche möglichen Wirkungen sollen für Mensch, Planet und Demokratie entstehen?",
+          "Zurechnung prüfen: Mit Vergleichsfall, Gegenhypothesen und Projektdaten bestimmen, welcher Anteil der beobachteten Kundenveränderung tatsächlich der Leistung zuzurechnen ist.",
+          "Kundenwert getrennt quantifizieren: Den zurechenbaren ökonomischen Wert zum Beispiel aus vermiedenen Kosten, zusätzlichem Beitrag, reduziertem Erwartungsrisiko oder Qualitätsgewinn bestimmen.",
+          "MPD-Wirkung getrennt bewerten: Wirkungen, Risiken, Datenqualität, Grenzen und mögliche Externalisierung mit Wirkungscontrolling und geeigneter Scorecard prüfen.",
+          "Beständigkeit und Transformation prüfen: Bleibt die Veränderung bestehen, baut sie Fähigkeiten, Resilienz oder andere tragfähige Strukturen auf und sind solche Aussagen tatsächlich belegt?",
+          "Fairen Preis-Korridor vereinbaren: Ein angemessener Anteil des zurechenbaren Kundenwerts kann den Preisrahmen bilden; Erschwinglichkeit, Risiko, Leistungspflichten, Verteilung und die MPD-Prüfung bleiben eigenständige Bedingungen."
+        ],
+        "note": "Die Netto-Wirkung wird nicht in den Kundenwert eingerechnet. Verletzte Wirkungsgrenzen oder schwere nicht kompensierbare Schäden lösen keine Preisoptimierung aus, sondern eine Umgestaltung, Begrenzung oder Ablehnung der Leistung."
+      },
+      "deepGlossarySections": [
+        {
+          "title": "Doppelte Wertmessung ohne Verrechnung",
+          "body": "Das Modell unterscheidet bewusst Kundenwert und Systemwirkung. Der Kundenwert kann als ökonomische Veränderung quantifiziert werden, soweit Daten und Zurechnung es tragen. Die Netto-Wirkung wird separat nach Mensch, Planet und Demokratie bewertet. Beide Perspektiven sind für eine verantwortete Preisentscheidung relevant, aber nicht gegeneinander aufrechenbar.",
+          "items": [
+            "Kundenwert: Was verändert sich wirtschaftlich für den Kunden und welcher Anteil ist der Leistung zurechenbar?",
+            "Systemwirkung: Was verändert sich für Mensch, Planet und Demokratie, einschließlich Risiken, Nebenwirkungen und Externalisierung?",
+            "Preis: Welcher faire Anteil des zurechenbaren Kundenwerts wird vereinbart, wenn die eigenständige Wirkungsprüfung keine untragbare Grenze zeigt?"
+          ]
+        },
+        {
+          "title": "Von der Erwartung zur überprüften Leistung",
+          "body": "Vor Vertragsschluss liegen oft nur Annahmen zum Kundenwert und Wirkungspotenzial vor. Deshalb braucht das Modell eine Rückkopplung nach der Leistung: Daten werden mit der Baseline verglichen, Zurechnung und Nebenfolgen erneut geprüft und künftige Preis- oder Leistungslogiken bei Bedarf angepasst. Eine leistungsabhängige Vergütung kann diese Lernlogik unterstützen, ersetzt aber weder die Wirkungsprüfung noch eine faire Risikoverteilung.",
+          "items": [
+            "Potenziale und Versprechen klar von eingetretener Wirkung unterscheiden.",
+            "Datenlücken, Unsicherheit und externe Mitursachen offenlegen.",
+            "Eine erneute Prüfung darf nicht zu verdecktem Personen-Scoring oder automatischen Sanktionen führen."
+          ]
+        },
+        {
+          "title": "Was noch methodisch zu schließen ist",
+          "body": "Das Arbeitsmodell legt die Begriffslogik und die Prüfsequenz fest, nicht den endgültigen Rechenstandard. Für eine belastbare Anwendung sind unter anderem Regeln für Attributionsanteile, den Preis-Korridor, die Risikoteilung, Mindestdaten, Prüfverfahren, Erschwinglichkeit und branchenspezifische Scorecards weiter auszuarbeiten.",
+          "items": [
+            "Kein allgemeiner Prozentsatz des Kundenwerts als Preisregel.",
+            "Keine Monetarisierungspflicht für alle MPD-Wirkungen.",
+            "Keine Kompensation schwerer Schäden durch hohen Kundenwert oder positive Teilwerte."
+          ]
+        }
+      ],
+      "classicGlossary": true,
+      "autoLinkAllowed": true,
+      "maxAutoLinksPerPage": 1,
+      "pageUrl": "/begriffe/wirkungsbasiertes-value-pricing/",
+      "glossaryOrderKey": "Wirkungsbasiertes Value Pricing"
+    },
+    {
+      "termId": "kundennutzen",
+      "canonicalLabel": "Kundennutzen",
+      "relatedTerms": ["value-based-pricing", "wirkungsbasiertes-value-pricing"]
+    },
+    {
+      "termId": "wirkungscontrolling",
+      "canonicalLabel": "Wirkungscontrolling",
+      "relatedTerms": ["wirkungsbasiertes-value-pricing", "value-based-pricing"]
+    },
+    {
+      "termId": "scorecard",
+      "canonicalLabel": "Scorecard",
+      "relatedTerms": ["wirkungsbasiertes-value-pricing"]
+    },
+    {
+      "termId": "unvollstaendiger-preis",
+      "canonicalLabel": "Unvollständiger Preis",
+      "relatedTerms": ["value-based-pricing", "wirkungsbasiertes-value-pricing"]
+    },
+    {
+      "termId": "preisvollstaendigkeit",
+      "canonicalLabel": "Preisvollständigkeit",
+      "relatedTerms": ["wirkungsbasiertes-value-pricing"]
+    },
+    {
+      "termId": "t-sroi",
+      "canonicalLabel": "T-SROI – Transformational Social Return on Investment",
+      "relatedTerms": ["wirkungsbasiertes-value-pricing"]
+    }
+  ]
+}
