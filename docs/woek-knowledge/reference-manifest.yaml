@@ -1,0 +1,144 @@
+# WÖk Reference Manifest — führende Referenzen und Versionssicherheit
+# Stand: 2026-08-14 · Quelle der Statusangaben: assets/data/library-version-registry.json
+#   (3196 Einträge; Status-Werte: führend=11, aktuell=2625, Arbeitsfassung=277, ältere Fassung=261, ersetzt=21, archiviert=1)
+#   Generator: scripts/library/build-library-versioning-stage9.mjs · Oberfläche: bibliothek/index.html + downloads.html#lesepfade
+# REGEL: Website-Bibliotheksstatus schlägt lokale Dateinamen. Bei Widersprüchen: REFERENCE_METADATA_CONFLICT dokumentieren (KNOWLEDGE_GAPS.md), nicht still harmonisieren.
+# Statushierarchie: führend > aktuell > arbeitsfassung > historisch > archiviert > ersetzt (ersetzt = nie für neue Berechnungen/Regeln/Produkte).
+
+references:
+  - reference_id: WOEK_BUCH
+    title: "Die neue Ordnung des Wohlstands. Begründung und Grundlagen der Wirkungsökonomie"
+    domain: Gesamtsystemlogik
+    status: leading
+    version: null
+    date: "2026"
+    canonical_url: "https://wirkungsoekonomie.de/buch.html"
+    online_reading: "https://wirkungsoekonomie.de/referenz/"
+    download_asset: die-neue-ordnung-des-wohlstands.pdf
+    local_repository_copy: assets/pdf/die-neue-ordnung-des-wohlstands.pdf
+    supersedes: []
+    authority_scope: [systemlogik, mensch_planet_demokratie, positive_netto_wirkung, institutionelle_gesamtarchitektur]
+    last_verified: "2026-08-14"
+
+  - reference_id: WOEMM_2_0
+    title: "Das Wirkungsökonomische Managementmodell (WÖMM)"
+    domain: Management und Wirkungsrealisierung
+    status: leading
+    version: "2.0"
+    date: "2026-07-10"
+    canonical_url: "https://wirkungsoekonomie.de/bibliothek/eintraege/woemm-2-0/lesen/"
+    download_asset: woemm-2.0-referenzfassung.pdf
+    local_repository_copy: assets/downloads/grundlagen/woemm-2.0-referenzfassung.pdf
+    supersedes: []
+    authority_scope: [wirkungskompass, systemlandkarte, managementarchitektur, wirkungsrealisierungsarchitektur, wirkungsrad, betriebssystem]
+    notes: "98 Seiten; 12 Managementfelder, 17 Managementfunktionen; Onlinefassung 69 Kapitelseiten"
+    last_verified: "2026-08-14"
+
+  - reference_id: WOEMS_2_0
+    title: "Das Wirkungsökonomische Methodensystem (WÖMS)"
+    domain: Methoden und Anwendung
+    status: leading
+    version: "2.0"
+    date: "2026-07-10"
+    canonical_url: "https://wirkungsoekonomie.de/bibliothek/eintraege/woems-2-0/lesen/"
+    download_asset: woems-2.0-referenzfassung.pdf
+    local_repository_copy: assets/downloads/grundlagen/woems-2.0-referenzfassung.pdf
+    machine_readable: [public/data/woems-methoden.json, public/data/woems-canvas.json, content/methods/woems-methods.ts]
+    supersedes: []
+    authority_scope: [kernmethoden, canvas, workshop_journeys, qualitaets_governance_realisierungs_ausbildungslogik]
+    notes: "387 Seiten; 152 Kernmethoden in 16 Kategorien (A01–P10), 56 Canvas in 14 Modulen, 20 Workshop-Journeys; API /api/v1/methods/ + /api/v1/canvases/"
+    last_verified: "2026-08-14"
+
+  - reference_id: WOEK_BEGRIFFSLEITFADEN
+    title: "WÖk-Begriffsleitfaden führend"
+    domain: Sprache und Begriffe
+    status: leading
+    version: "1.3"
+    date: "2026-07-30"
+    canonical_url: "https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/"
+    download_asset: WOeK_Begriffsleitfaden_fuehrend_v1.3.pdf
+    local_repository_copy: >
+      public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.3.pdf;
+      Live-HTML: content/documents/online/woek-begriffsleitfaden-fuehrend.inc (kumulativ, Build: scripts/publications/build-begriffsleitfaden-v1.3.py);
+      Quell-MD: source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.1.md (Basis) + v1.2-resilienzsystematik.md + v1.3-resilienzpraezisierung.md (Deltas)
+    supersedes:
+      - {version: "1.2", local: public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.2.pdf, status: aktuell}
+      - {version: "1.1", local: public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.1.pdf, status: aktuell}
+      - {version: "1.0", local: public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.pdf, status: archiviert}
+    authority_scope: [begriffe, formulierung, resilienzsystematik, nachhaltigkeitsdefinition]
+    notes: >
+      Enthält seit v1.2/v1.3 die Resilienzsystematik; führende Definition: „Nachhaltigkeit ist die langfristig
+      gesicherte Wirkungsresilienz des gekoppelten Systems Mensch-Planet-Demokratie."
+      KONFLIKT: v1.0-Archiveintrag behauptet „für den aktuellen Begriffsstand gilt Version 1.2" → siehe KNOWLEDGE_GAPS.md.
+    last_verified: "2026-08-14"
+
+  - reference_id: WOEK_GLOSSAR
+    title: "Glossar der Wirkungsökonomie"
+    domain: Öffentliche Begriffsorientierung
+    status: leading
+    version: null
+    date: null
+    canonical_url: "https://wirkungsoekonomie.de/glossar.html"
+    download_asset: null
+    local_repository_copy: "glossar.html → begriffe/ (2281 Begriffsseiten); Daten: assets/data/glossary-lookup.json (2121 Begriffe, 2026-08-05)"
+    supersedes: []
+    authority_scope: [oeffentliche_kurzdefinitionen]
+    notes: "Nur soweit mit Begriffsleitfaden v1.3 vereinbar; API-Snapshot api/v1/glossary.json hinkt nach (2092 vs. 2121)"
+    last_verified: "2026-08-14"
+
+  - reference_id: SDG_SDGPLUS_REFERENZRAHMEN
+    title: "SDG-/SDG+-Referenzrahmen (Vertiefungskonzept, Lesefassung)"
+    domain: Normativer Referenzrahmen
+    status: leading
+    version: "0.3"
+    date: null
+    canonical_url: "https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/"
+    download_asset: woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3.pdf
+    local_repository_copy: "assets/downloads/woek_sdg_sdgplus_referenzrahmen_vertiefungskonzept_lesefassung_v0_3.pdf; Daten: assets/data/sdg-reference.json (24 Items: 17 offizielle SDGs + 7 SDG+)"
+    supersedes: []
+    authority_scope: [sdg_einordnung, sdgplus_einordnung, normative_wirkungsbewertung]
+    notes: "SDG+ stets als WÖk-Erweiterung ausweisen, nie als offizielle UN-Kategorie; API /api/v1/sdg-plus/"
+    last_verified: "2026-08-14"
+
+  - reference_id: WOEK_MASTER_ITEMS
+    title: "WÖk Master Items"
+    domain: WÖk-IDs, Regeln, Benchmarks, Governance
+    status: leading
+    version: "1.3 (geprüft)"
+    date: "2026-08-13"
+    canonical_url: "https://wirkungsoekonomie.de/bibliothek/woek-master-items-register/"
+    download_asset: WOeK_Master_Items_v1.3_geprueft.xlsx
+    local_repository_copy: assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx
+    checksum: null  # TODO Codex: SHA-256 ergänzen
+    supersedes:
+      - {version: "1.2 (PDF)", local: assets/pdf/woek-master-items-v1-2.pdf, status: ersetzt}
+      - {version: "1.2 (final, PDF)", local: public/downloads/originals/WOeK_Master_Items_final_v1.2.pdf, status: aktuell, conflict: "müsste konsequent ersetzt sein → KNOWLEDGE_GAPS.md"}
+    related_not_leading:
+      - {title: "Public Research Register", version: "2.1", local: assets/downloads/woek-register/WOeK_Master_Items_Public_Research_Register_v2.1.xlsx, status: aktuell, note: "Forschungsvariante, 621 Items, erweiterte Spalten (MPD_Dimension, Core_Field, Archetype, NonCompensation_RedLine …) — NICHT führend"}
+    authority_scope: [woek_ids, indicator_registry, benchmark_status, governance_rules, assurance_status]
+    notes: "621 WÖk-IDs, 28 Scoring-Regeln, aktive vs. historische (archivierte) Benchmarks, Prüfstatus + Prüfprotokoll. Die früher genannte Zahl 622 ist nicht mehr kanonisch."
+    last_verified: "2026-08-14 (XLSX im Repo geöffnet und Sheets gezählt)"
+
+  - reference_id: T_SROI_RECHENSTANDARD
+    title: "T-SROI-Rechenstandard (Impact Controlling · Transformationsmessung, Methodenpapier)"
+    domain: T-SROI-Berechnung
+    status: leading
+    version: "1.1"
+    date: "2026-08-02"
+    canonical_url: "https://wirkungsoekonomie.de/werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/"
+    download_asset: 23_woek_impact_controlling_t_sroi_transformationsmessung_methodenpapier_v1_1.pdf
+    local_repository_copy: "assets/downloads/23_woek_impact_controlling_t_sroi_transformationsmessung_methodenpapier_v1_1.pdf; Quell-MD: docs/impact-controlling/go10-methodenpapiere/t-sroi-rechenstandard-v1_1.md"
+    supersedes:
+      - {version: "1.0", local: assets/downloads/23_woek_impact_controlling_t_sroi_transformationsmessung_methodenpapier_v1_0.pdf, status: ersetzt}
+      - {version: "Whitepaper T-SROI (multiplikative Logik)", local: public/downloads/originals/Whitepaper-T-SROI.pdf, status: ersetzt}
+    authority_scope: [t_sroi_rechenlogik]
+    notes: >
+      Kausal begrenzte, diskontierte Netto-Nutzenrechnung mit Schutz-Gate.
+      ACHTUNG Versionslinien: docs/whitepaper/T-SROI_v2.0_Transformationswirkung.md (2026-05-24) trägt höhere Nummer,
+      ist aber ÄLTER, nur Entwurf und NICHT führend — Nummern nie über Statusregister stellen.
+    last_verified: "2026-08-14"
+
+# Domainbezogene Autorität (Konfliktregel): Begriff/Formulierung → Begriffsleitfaden v1.3 · öffentliche Kurzdefinition → Glossar (soweit leitfadenkonform)
+# · Gesamtsystemlogik → Buch · Management → WÖMM 2.0 · Methoden/Canvas/Journeys → WÖMS 2.0 · SDG/SDG+ → Referenzrahmen v0.3 + Onlinefassung
+# · WÖk-IDs/Regeln/Benchmarks/Prüfstatus → Master Items v1.3 · T-SROI → Rechenstandard v1.1.
+# Eine ältere Gesamtquelle überschreibt nie eine neuere fachgebietsspezifische führende Referenz.
