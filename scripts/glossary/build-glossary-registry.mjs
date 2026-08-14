@@ -15,6 +15,7 @@ const supplementSources = [
   path.join(root, "content/glossary/imports/rechtsgrundlagen-primarquellen.json"),
   path.join(root, "content/glossary/imports/psychologie-und-kommunikation-definitionen.json"),
   path.join(root, "content/glossary/imports/value-pricing-und-wirkungsbasiertes-value-pricing.json"),
+  path.join(root, "content/glossary/imports/iooi-wirkungsarchitektur.json"),
   path.join(root, "content/glossary/imports/gesamtstudie-wirkungsdilemmata-kooperation-sdgplus-term-definitions.json"),
   // Fachlich begründete Verbindungen für zuvor isolierte Begriffe. Diese
   // Datei ist kuratiert, nicht aus Kategorien automatisch abgeleitet.
@@ -828,7 +829,7 @@ function sourceUrlForArchive(label, originalUrl = "") {
   if (normalized === "die wirkungsoekonomie als kooperative lernende und wehrhafte wirkungsordnung") {
     return "https://wirkungsoekonomie.de/bibliothek/wirkungsdilemmata-kooperation-sdgplus-gesamtstudie/";
   }
-  if (/begriffsleitfaden/.test(normalized)) return "https://wirkungsoekonomie.de/public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.3.pdf";
+  if (/begriffsleitfaden/.test(normalized)) return "https://wirkungsoekonomie.de/public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.4.pdf";
   if (/woems|woemm|methodensystem|managementmodell/.test(normalized)) return "https://wirkungsoekonomie.de/methodenraum/gesamtbild/";
   if (/impact controlling|doppelte wesent/.test(normalized)) return "https://wirkungsoekonomie.de/werkzeuge/impact-controlling/";
   if (/wirkungsfinanzpolitik|schuldenfrage/.test(normalized)) return "https://wirkungsoekonomie.de/wirkungsfelder/finanzsystem-kapital/";

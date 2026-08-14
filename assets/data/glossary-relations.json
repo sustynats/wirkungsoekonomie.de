@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-02T19:45:36.345Z",
-  "count": 2092,
+  "generatedAt": "2026-08-14T11:19:46.696Z",
+  "count": 2136,
   "relations": {
     "fuenftes-p-planet": {
       "related": [
@@ -258,6 +258,22 @@
       ],
       "doNotConfuse": []
     },
+    "aktivitaet": {
+      "related": [
+        "ausloeser",
+        "input",
+        "output",
+        "iooi",
+        "wirkmechanismus",
+        "wirkungspotenzial",
+        "wirkung"
+      ],
+      "doNotConfuse": [
+        "input-die-eingesetzten-ressourcen",
+        "output-die-erbrachte-leistung",
+        "wirkung-die-tatsaechlich-eingetretene-veraenderung"
+      ]
+    },
     "alan-watts-daoismus": {
       "related": [
         "dao",
@@ -346,6 +362,34 @@
         "modellannahme"
       ],
       "doNotConfuse": []
+    },
+    "allmende": {
+      "related": [
+        "allmendedilemma",
+        "senkenallmende",
+        "elinor-ostrom",
+        "allmendeproblem",
+        "wirkungstragung",
+        "positive-netto-wirkung",
+        "reverse-merit-order"
+      ],
+      "doNotConfuse": [
+        "allmendeproblem",
+        "open-science"
+      ]
+    },
+    "allmendedilemma": {
+      "related": [
+        "commons-gemeingueter",
+        "allmendeproblem",
+        "externalisierung",
+        "wirkungstragung",
+        "reverse-merit-order"
+      ],
+      "doNotConfuse": [
+        "allmendeproblem",
+        "tragoedie-der-allmende"
+      ]
     },
     "allmendeproblem": {
       "related": [
@@ -660,6 +704,19 @@
       ],
       "doNotConfuse": [
         "nicht-als-allgemeiner-rechtsschutzartikel-ueberfrachten-fokus-schutz-oeffentlicher-beteiligung-als-bedingung-demokratischer-wirkungsraeume"
+      ]
+    },
+    "anticommons": {
+      "related": [
+        "commons-gemeingueter",
+        "allmendedilemma",
+        "kooperative-wehrhaftigkeit",
+        "wirkungsintegritaet",
+        "wirkungsrat"
+      ],
+      "doNotConfuse": [
+        "deregulierung",
+        "allmendeproblem"
       ]
     },
     "antidiskriminierung": {
@@ -984,6 +1041,19 @@
         "zertifizierung"
       ]
     },
+    "assurance-game": {
+      "related": [
+        "soziales-dilemma",
+        "gefangenendilemma",
+        "kooperationsfaehigkeit",
+        "systemische-kooperation",
+        "wirkungsarchitektur"
+      ],
+      "doNotConfuse": [
+        "assurance",
+        "gefangenendilemma"
+      ]
+    },
     "astroturfing": {
       "related": [
         "grassroots-bewegung",
@@ -1178,6 +1248,22 @@
         "nicht-als-blosse-absicht-imagewirkung-oder-outputkennzahl-verwenden",
         "nicht-mit-positiver-netto-wirkung-gleichsetzen-die-bewertung-erfolgt-erst-ueber-referenzrahmen-bilanzgrenze-datenqualitaet-und-rueckkopplung",
         "nicht-als-personenbewertung-moralische-rangliste-oder-social-credit-logik-verwenden"
+      ]
+    },
+    "ausloeser": {
+      "related": [
+        "wirkstoff",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkmechanismus",
+        "aktivitaet",
+        "wirkpfad",
+        "wirkung"
+      ],
+      "doNotConfuse": [
+        "wirkstoff-didaktische-analogie-fuer-einen-ausloeser-mit-wirkungspotenzial",
+        "aktivitaet-konkrete-handlung-innerhalb-einer-intervention",
+        "wirkung-tatsaechliche-zustandsveraenderung"
       ]
     },
     "aeussere-loops": {
@@ -1408,6 +1494,16 @@
         "methode-nicht-als-endgueltige-wahrheit-sondern-als-versionierte-entscheidungsgrundlage-behandeln-workshopkonsens-darf-betroffene-negative-wirkung-machtasymmetrien-oder-minderheitsvoten-nicht-ausblenden"
       ]
     },
+    "baseline": {
+      "related": [
+        "wirkungsbewertung",
+        "wirkungsnachweis",
+        "counterfactual",
+        "attributionsforschung",
+        "datenqualitaet"
+      ],
+      "doNotConfuse": []
+    },
     "baseline-verschiebung": {
       "related": [
         "normalisierung",
@@ -1569,6 +1665,22 @@
         "ludwig-wittgenstein"
       ],
       "doNotConfuse": []
+    },
+    "bedingte-kooperation": {
+      "related": [
+        "reziprozitaet",
+        "soziales-dilemma",
+        "gefangenendilemma",
+        "kooperationsfaehigkeit",
+        "vertrauensallmende",
+        "kooperative-wehrhaftigkeit",
+        "reparaturfaehigkeit"
+      ],
+      "doNotConfuse": [
+        "konformitaet",
+        "social-credit",
+        "personenbewertung"
+      ]
     },
     "bedingungsloses-grundeinkommen": {
       "related": [
@@ -2569,6 +2681,21 @@
       ],
       "doNotConfuse": []
     },
+    "capture": {
+      "related": [
+        "regulatory-capture",
+        "corporate-capture",
+        "state-capture",
+        "ngo-capture",
+        "interessenkonflikt",
+        "wirkungsintegritaet",
+        "wr"
+      ],
+      "doNotConfuse": [
+        "lobbyismus",
+        "carbon-capture"
+      ]
+    },
     "capture-price": {
       "related": [
         "kannibalisierungseffekt",
@@ -2781,6 +2908,20 @@
       ],
       "doNotConfuse": []
     },
+    "chicken-game": {
+      "related": [
+        "soziales-dilemma",
+        "gefangenendilemma",
+        "kooperative-wehrhaftigkeit",
+        "wirkungsrat",
+        "reparaturfaehigkeit"
+      ],
+      "doNotConfuse": [
+        "gefangenendilemma",
+        "verhandlung",
+        "personenbewertung"
+      ]
+    },
     "circular-regenerative-economy": {
       "related": [
         "kreislaufwirtschaft",
@@ -2940,6 +3081,16 @@
         "systemverzerrender-lobbyismus",
         "marktmacht",
         "ngo-capture"
+      ],
+      "doNotConfuse": []
+    },
+    "counterfactual": {
+      "related": [
+        "baseline",
+        "wirkungsbewertung",
+        "wirkungsnachweis",
+        "attributionsforschung",
+        "kontribution"
       ],
       "doNotConfuse": []
     },
@@ -6304,7 +6455,24 @@
         "libertarismus",
         "externalitaet",
         "negative-externalitaet",
-        "moral-hazard"
+        "moral-hazard",
+        "externalisierungsluecke",
+        "unvollstaendiger-preis",
+        "wirkungstragung",
+        "allmendedilemma",
+        "positive-netto-wirkung",
+        "reverse-merit-order"
+      ],
+      "doNotConfuse": []
+    },
+    "externalisierungsluecke": {
+      "related": [
+        "externalisierung",
+        "unvollstaendiger-preis",
+        "preisvollstaendigkeit",
+        "wirkungstragung",
+        "wirkungsrisiko",
+        "wirkungsgrenze"
       ],
       "doNotConfuse": []
     },
@@ -7293,6 +7461,21 @@
         "laissez-faire-woek-akzeptiert-nicht-dass-marktpreise-schaeden-unsichtbar-lassen"
       ]
     },
+    "freiwilligendilemma": {
+      "related": [
+        "oeffentliche-gueter",
+        "trittbrettfahren",
+        "soziales-dilemma",
+        "kooperationsfaehigkeit",
+        "wirkungshaushalt",
+        "wirkungstragung"
+      ],
+      "doNotConfuse": [
+        "ehrenamt",
+        "personenbewertung",
+        "moral-hazard"
+      ]
+    },
     "fremdenfeindlichkeit": {
       "related": [
         "rassismus",
@@ -7462,6 +7645,19 @@
         "wirkungsblindheit"
       ],
       "doNotConfuse": []
+    },
+    "gefangenendilemma": {
+      "related": [
+        "soziales-dilemma",
+        "assurance-game",
+        "wirkungstragung",
+        "kooperative-wehrhaftigkeit",
+        "positive-netto-wirkung"
+      ],
+      "doNotConfuse": [
+        "assurance-game",
+        "allmendedilemma"
+      ]
     },
     "gegenframe": {
       "related": [
@@ -9439,6 +9635,23 @@
       ],
       "doNotConfuse": []
     },
+    "impact": {
+      "related": [
+        "iooi",
+        "outcome",
+        "wirkung",
+        "transformationswirkung",
+        "wirkungsbewertung",
+        "wirkungsnachweis",
+        "impact-management",
+        "wirkungscontrolling"
+      ],
+      "doNotConfuse": [
+        "positive-netto-wirkung-eine-bewertete-zielgroesse-der-woek",
+        "output-unmittelbare-leistung",
+        "transformationswirkung-praeziser-woek-begriff-fuer-veraenderte-systemlogiken-standards-anreize-oder-pfade"
+      ]
+    },
     "impact-benefits-realization": {
       "related": [
         "wirkungsrealisierungsarchitektur",
@@ -9540,7 +9753,10 @@
         "datenqualitaet",
         "steuerungsdaten",
         "wirkungsdatenraeume",
-        "wirkungsrueckkopplung"
+        "wirkungsrueckkopplung",
+        "iooi",
+        "wirkungsbewertung",
+        "sdg-sdgplus-referenzrahmen"
       ],
       "doNotConfuse": []
     },
@@ -9822,6 +10038,21 @@
         "neu-ist-nicht-automatisch-gut-eine-app-ein-geschaeftsmodell-oder-eine-technologie-kann-innovativ-und-dennoch-wirkungsnegativ-sein-etwa-durch-datenmacht-suchtlogik-ressourcenverbrauch-oder-soziale-verdraengung"
       ]
     },
+    "input": {
+      "related": [
+        "iooi",
+        "aktivitaet",
+        "output",
+        "ausloeser",
+        "wirkungsbewertung",
+        "wirkung"
+      ],
+      "doNotConfuse": [
+        "output-direkte-leistung-nach-einer-aktivitaet",
+        "outcome-eingetretene-veraenderung",
+        "wirkung-tatsaechliche-zustandsveraenderung-nicht-der-blosse-ressourceneinsatz"
+      ]
+    },
     "insetting": {
       "related": [
         "offsetting-kompensation",
@@ -9840,6 +10071,22 @@
         "financial-materiality"
       ],
       "doNotConfuse": []
+    },
+    "institutionelle-vertrauenswuerdigkeit": {
+      "related": [
+        "vertrauen",
+        "vertrauensallmende",
+        "kooperative-wehrhaftigkeit",
+        "reparaturfaehigkeit",
+        "capture",
+        "wirkungsintegritaet",
+        "wirkungsrat"
+      ],
+      "doNotConfuse": [
+        "reputation",
+        "social-credit",
+        "personenbewertung"
+      ]
     },
     "institutioneller-rassismus": {
       "related": [
@@ -9982,6 +10229,22 @@
       ],
       "doNotConfuse": []
     },
+    "intergenerationelles-dilemma": {
+      "related": [
+        "wirkungsrisiko",
+        "wirkungspotenzial",
+        "positive-netto-wirkung",
+        "sdg-plus",
+        "externalisierung",
+        "senkenallmende",
+        "reverse-merit-order"
+      ],
+      "doNotConfuse": [
+        "demografie",
+        "personenbewertung",
+        "prognose"
+      ]
+    },
     "intermittent-reinforcement": {
       "related": [
         "rage-bait",
@@ -10123,6 +10386,34 @@
         "wirkungshaushalt"
       ],
       "doNotConfuse": []
+    },
+    "iooi": {
+      "related": [
+        "ausloeser",
+        "wirkstoff",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkmechanismus",
+        "input",
+        "aktivitaet",
+        "output",
+        "outcome",
+        "wirkung",
+        "wirkpfad",
+        "wirkungskette",
+        "theory-of-change",
+        "wirkungsbewertung",
+        "sdg-sdgplus-referenzrahmen",
+        "netto-wirkung",
+        "transformationswirkung",
+        "wirkungsrueckkopplung",
+        "impact-of-investment"
+      ],
+      "doNotConfuse": [
+        "ioi-impact-of-investment-ein-woek-instrument-nicht-die-abkuerzung-fuer-input-output-outcome-und-impact",
+        "output-eine-erbrachte-leistung-nicht-bereits-eine-eingetretene-wirkung",
+        "wirkungsnachweis-iooi-strukturiert-annahmen-und-messung-beweist-aber-keine-kausalitaet"
+      ]
     },
     "ipbes": {
       "related": [
@@ -11333,6 +11624,16 @@
       ],
       "doNotConfuse": []
     },
+    "kontribution": {
+      "related": [
+        "attributionsforschung",
+        "counterfactual",
+        "wirkungsnachweis",
+        "wirkungsbewertung",
+        "zurechnung-ohne-scheingenauigkeit"
+      ],
+      "doNotConfuse": []
+    },
     "kontrollbeduerfnis": {
       "related": [
         "ambiguitaetsintoleranz",
@@ -11346,6 +11647,22 @@
       ],
       "doNotConfuse": []
     },
+    "kooperationsfaehigkeit": {
+      "related": [
+        "systemische-kooperation",
+        "soziales-dilemma",
+        "assurance-game",
+        "kooperative-wehrhaftigkeit",
+        "reparaturfaehigkeit",
+        "institutionelle-vertrauenswuerdigkeit",
+        "positive-netto-wirkung"
+      ],
+      "doNotConfuse": [
+        "kooperationsbereitschaft",
+        "personenbewertung",
+        "kartell"
+      ]
+    },
     "kooperationslogik": {
       "related": [
         "dominanzlogik",
@@ -11355,6 +11672,36 @@
         "feministische-transformation"
       ],
       "doNotConfuse": []
+    },
+    "kooperative-wehrhaftigkeit": {
+      "related": [
+        "vertrauensallmende",
+        "wirkungsintegritaet",
+        "wirkungssimulation",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wr",
+        "wirkungsrat"
+      ],
+      "doNotConfuse": [
+        "social-credit",
+        "autoritaeres-wirkungspotenzial"
+      ]
+    },
+    "koordinationsdilemma": {
+      "related": [
+        "soziales-dilemma",
+        "assurance-game",
+        "kooperationsfaehigkeit",
+        "systemische-kooperation",
+        "wirkungsarchitektur",
+        "bedingte-kooperation"
+      ],
+      "doNotConfuse": [
+        "gefangenendilemma",
+        "zentralplanung",
+        "konflikt"
+      ]
     },
     "koerperliche-selbstbestimmung": {
       "related": [
@@ -11706,7 +12053,9 @@
         "jobs-to-be-done",
         "product-market-fit",
         "peter-drucker",
-        "gebrauchswert"
+        "gebrauchswert",
+        "value-based-pricing",
+        "wirkungsbasiertes-value-pricing"
       ],
       "doNotConfuse": []
     },
@@ -13958,10 +14307,19 @@
     },
     "nebenwirkung": {
       "related": [
-        "folgewirkung",
-        "wirkungsrisiko"
+        "wechselwirkung",
+        "sharing",
+        "wirkungsrisiko",
+        "netto-wirkung",
+        "wirkungsgrenze",
+        "reverse-merit-order",
+        "folgewirkung"
       ],
-      "doNotConfuse": []
+      "doNotConfuse": [
+        "wechselwirkung-gegenseitige-beeinflussung-mehrerer-faktoren",
+        "rebound-effekt-folgeeffekt-der-eine-verbesserung-teilweise-oder-vollstaendig-aufheben-kann",
+        "negative-wirkung-ergebnis-der-bewertung-einer-zustandsveraenderung"
+      ]
     },
     "nebenwirkungs-wechselwirkungs-und-rebound-analyse": {
       "related": [
@@ -14957,9 +15315,19 @@
         "wohlfahrtsstaat",
         "anarchokapitalismus",
         "marktversagen",
-        "demokratie"
+        "demokratie",
+        "soziales-dilemma",
+        "trittbrettfahren",
+        "commons-gemeingueter",
+        "allmendedilemma",
+        "positive-netto-wirkung",
+        "reverse-merit-order"
       ],
-      "doNotConfuse": []
+      "doNotConfuse": [
+        "commons-gemeingueter",
+        "open-science",
+        "clubgut"
+      ]
     },
     "oeffentliche-netto-wirkung": {
       "related": [
@@ -15566,10 +15934,20 @@
     },
     "outcome": {
       "related": [
+        "iooi",
         "output",
-        "wirkung"
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungsnachweis",
+        "wirkungsbewertung",
+        "attributionsforschung",
+        "kontribution"
       ],
-      "doNotConfuse": []
+      "doNotConfuse": [
+        "output-unmittelbar-erbrachte-leistung-ohne-nachweis-einer-zustandsveraenderung",
+        "impact-breitere-laengerfristige-oder-hoeherstufige-wirkung",
+        "wirkungspotenzial-moegliche-noch-nicht-eingetretene-veraenderung"
+      ]
     },
     "outcome-und-empfaengerlandkarte": {
       "related": [
@@ -15612,10 +15990,19 @@
     },
     "output": {
       "related": [
+        "iooi",
+        "input",
+        "aktivitaet",
         "outcome",
-        "wirkung"
+        "wirkung",
+        "wirkungskette",
+        "wirkungstreppe"
       ],
-      "doNotConfuse": []
+      "doNotConfuse": [
+        "aktivitaet-das-handeln-aus-dem-ein-output-hervorgeht",
+        "outcome-eingetretene-veraenderung-bei-betroffenen-oder-systemen",
+        "wirkungsnachweis-ein-outputnachweis-reicht-nicht-als-nachweis-einer-veraenderung"
+      ]
     },
     "overton-fenster": {
       "related": [
@@ -16861,6 +17248,17 @@
         "ergebnis-nicht-als-endgueltige-wahrheit-sondern-als-versionierte-entscheidungsgrundlage-behandeln-betroffene-negative-wirkungen-und-machtasymmetrien-duerfen-nicht-durch-workshopkonsens-verschwinden"
       ]
     },
+    "preisvollstaendigkeit": {
+      "related": [
+        "unvollstaendiger-preis",
+        "externalisierungsluecke",
+        "wirkungstragung",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "wirkungsbasiertes-value-pricing"
+      ],
+      "doNotConfuse": []
+    },
     "pressefreiheit": {
       "related": [
         "medienfreiheit",
@@ -17928,7 +18326,9 @@
         "sdg-plus",
         "kreislaufwirtschaft",
         "dunning-kruger-effekt",
-        "wirkungskompetenz"
+        "wirkungskompetenz",
+        "iooi",
+        "nebenwirkung"
       ],
       "doNotConfuse": [
         "effizienz-effizienz-bedeutet-weniger-einsatz-pro-einheit-rebound-beschreibt-dass-dadurch-die-gesamtnutzung-steigen-kann",
@@ -18211,6 +18611,24 @@
         "speicher-energie"
       ],
       "doNotConfuse": []
+    },
+    "referenzrahmen": {
+      "related": [
+        "wirkung",
+        "wirkungsbewertung",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "wirkungsgrenze",
+        "reverse-merit-order"
+      ],
+      "doNotConfuse": [
+        "indikator-eine-kennzahl-oder-beobachtung-nicht-der-massstab-selbst",
+        "benchmark-fachliche-vergleichsgroesse-oder-schwelle-die-einen-referenzrahmen-konkretisieren-kann",
+        "wirkung-tatsaechliche-veraenderung-vor-ihrer-bewertung"
+      ]
     },
     "referenzrahmen-und-standardmapping": {
       "related": [
@@ -18556,6 +18974,20 @@
         "nutzungsdauerverlaengerung"
       ],
       "doNotConfuse": []
+    },
+    "reparaturfaehigkeit": {
+      "related": [
+        "institutionelle-vertrauenswuerdigkeit",
+        "kooperative-wehrhaftigkeit",
+        "wirkungsintegritaet",
+        "wirkungsrat",
+        "vertrauensallmende"
+      ],
+      "doNotConfuse": [
+        "reparatur",
+        "automatische-vergebung",
+        "personenbewertung"
+      ]
     },
     "reparaturschulden": {
       "related": [
@@ -19057,6 +19489,20 @@
         "straflogik-ist-nicht-ziel-ziel-ist-lenkung-und-transformation",
         "ausschlussliste-ist-enger-als-reverse-merit-order",
         "esg-rating-erlaubt-oft-faktische-kompensation-woek-begrenzt-diese"
+      ]
+    },
+    "reziprozitaet": {
+      "related": [
+        "bedingte-kooperation",
+        "kooperative-wehrhaftigkeit",
+        "vertrauensallmende",
+        "reparaturfaehigkeit",
+        "wirkungsrat"
+      ],
+      "doNotConfuse": [
+        "rache",
+        "reputation",
+        "social-credit"
       ]
     },
     "rezyklatanteil": {
@@ -19965,15 +20411,28 @@
     },
     "scorecard": {
       "related": [
-        "finalscore",
-        "wirkungsindikator",
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkungsbewertung",
         "woek-id",
-        "benchmark",
+        "wirkungsindikator",
+        "wirkungsdaten",
         "datenqualitaet",
-        "reverse-merit-order",
-        "wirkungscontrolling",
-        "archetyp",
         "datenluecke",
+        "systemgrenze",
+        "benchmark",
+        "finalscore",
+        "produktscorecard",
+        "produktwirkung",
+        "wirkungscontrolling",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wirkungsrueckkopplung",
+        "positive-netto-wirkung",
+        "archetyp",
         "digitaler-produktpass",
         "nace",
         "oef-organisation-environmental-footprint",
@@ -19981,8 +20440,6 @@
         "social-taxonomy",
         "steuerungsdaten",
         "wirkungsarchitektur",
-        "wirkungsbewertung",
-        "wirkungsdaten",
         "wirkungsregister",
         "wirkungsumsatzsteuer",
         "wustg",
@@ -19994,7 +20451,6 @@
         "lebenszykluswirkungsabschaetzung",
         "product-environmental-footprint",
         "organisation-environmental-footprint",
-        "systemgrenze",
         "schwellenwert",
         "wirkungswert",
         "stakeholder-kapitalismus",
@@ -20003,11 +20459,16 @@
         "gender-data-gap",
         "vollstaendige-information",
         "informationsasymmetrie",
-        "impact-strategie"
+        "impact-strategie",
+        "wirkungsbasiertes-value-pricing"
       ],
       "doNotConfuse": [
-        "dashboard",
-        "reporting"
+        "dashboard-visualisiert-informationen-eine-scorecard-enthaelt-zusaetzlich-eine-dokumentierte-bewertungslogik",
+        "reporting-berichtet-daten-oder-massnahmen-eine-scorecard-ordnet-sie-anhand-von-indikatoren-referenzwerten-und-grenzen-ein",
+        "rating-oder-label-verdichtet-oder-kommuniziert-ein-ergebnis-es-ersetzt-nicht-die-offenliegende-scorecard-mit-daten-annahmen-und-version",
+        "audit-oder-assurance-prueft-vorgehen-daten-oder-aussagen-die-scorecard-ist-das-bewertungsraster-das-geprueft-werden-kann",
+        "finalscore-ist-gegebenenfalls-eine-abgeleitete-gesamtbewertung-die-scorecard-macht-die-zugrunde-liegenden-einzelbewertungen-sichtbar",
+        "personenbewertung-wirkungsscorecards-beziehen-sich-auf-produkte-organisationen-massnahmen-regeln-oder-systeme-nicht-auf-den-wert-oder-die-rechte-einzelner-menschen"
       ]
     },
     "sdg-plus": {
@@ -20297,6 +20758,17 @@
       "doNotConfuse": [
         "nicht-verwechseln-mit-legitimer-erfolgszuschreibung-entscheidend-ist-pruefbare-wirkungszurechnung"
       ]
+    },
+    "senkenallmende": {
+      "related": [
+        "commons-gemeingueter",
+        "externalisierung",
+        "klimafolgeschaeden",
+        "wirkungsgrenze",
+        "reverse-merit-order",
+        "positive-netto-wirkung"
+      ],
+      "doNotConfuse": []
     },
     "sensemaking": {
       "related": [
@@ -20764,6 +21236,21 @@
         "soziale-infrastruktur"
       ],
       "doNotConfuse": []
+    },
+    "soziales-dilemma": {
+      "related": [
+        "gefangenendilemma",
+        "allmendedilemma",
+        "oeffentliche-gueter",
+        "trittbrettfahren",
+        "assurance-game",
+        "wirkungstragung",
+        "positive-netto-wirkung"
+      ],
+      "doNotConfuse": [
+        "allmendedilemma",
+        "personenbewertung"
+      ]
     },
     "sozialfinanzierung": {
       "related": [
@@ -22006,6 +22493,21 @@
         "ergebnis-nicht-als-endgueltige-wahrheit-sondern-als-versionierte-entscheidungsgrundlage-behandeln-betroffene-negative-wirkungen-und-machtasymmetrien-duerfen-nicht-durch-workshopkonsens-verschwinden"
       ]
     },
+    "systemisch-positives-summenspiel": {
+      "related": [
+        "positive-netto-wirkung",
+        "externalisierung",
+        "allmendedilemma",
+        "kooperative-wehrhaftigkeit",
+        "reverse-merit-order",
+        "wirkungsgrenze"
+      ],
+      "doNotConfuse": [
+        "synergie",
+        "kooperation",
+        "reichweite"
+      ]
+    },
     "systemische-kohaerenz": {
       "related": [
         "kohaerenz",
@@ -22024,6 +22526,22 @@
         "wirkung",
         "wirkungspotenzial",
         "wirkungsnachweis"
+      ]
+    },
+    "systemische-kooperation": {
+      "related": [
+        "kooperationsfaehigkeit",
+        "systemisch-positives-summenspiel",
+        "positive-netto-wirkung",
+        "reverse-merit-order",
+        "kooperative-wehrhaftigkeit",
+        "wirkungsintegritaet",
+        "wirkungstragung"
+      ],
+      "doNotConfuse": [
+        "kartell",
+        "korruption",
+        "perverse-kooperation"
       ]
     },
     "systemische-risikointelligenz": {
@@ -22183,7 +22701,8 @@
         "wirkungskapital-und-investitionsgate",
         "wirkungsoekonomisches-methodensystem",
         "wirkungsoekonomisches-managementmodell",
-        "wirkungsskalierungs-diffusions-und-exit-canvas"
+        "wirkungsskalierungs-diffusions-und-exit-canvas",
+        "wirkungsbasiertes-value-pricing"
       ],
       "doNotConfuse": [
         "ergebnis-nicht-als-endgueltige-wahrheit-sondern-als-versionierte-entscheidungsgrundlage-behandeln-betroffene-negative-wirkungen-und-machtasymmetrien-duerfen-nicht-durch-workshopkonsens-verschwinden"
@@ -22526,6 +23045,20 @@
         "pluralismusfeindlichkeit"
       ],
       "doNotConfuse": []
+    },
+    "theory-of-change": {
+      "related": [
+        "iooi",
+        "wirkungskette",
+        "wirkpfad",
+        "wirkmechanismus",
+        "wirkungsnachweis"
+      ],
+      "doNotConfuse": [
+        "wirkungskette-lineare-abfolge-von-wirkungsstufen",
+        "wirkungsnachweis-pruefung-ob-eine-veraenderung-eingetreten-ist",
+        "referenzrahmen-massstab-fuer-die-bewertung-einer-wirkung"
+      ]
     },
     "thermal-runaway": {
       "related": [
@@ -23231,6 +23764,19 @@
         "nicht-als-personenbewertung-moralische-rangliste-oder-social-credit-logik-verwenden"
       ]
     },
+    "trittbrettfahren": {
+      "related": [
+        "soziales-dilemma",
+        "oeffentliche-gueter",
+        "kooperationsfaehigkeit",
+        "positive-netto-wirkung",
+        "wirkungshaushalt"
+      ],
+      "doNotConfuse": [
+        "personenbewertung",
+        "moral-hazard"
+      ]
+    },
     "trittbrettfahrerproblem": {
       "related": [
         "oeffentliche-gueter",
@@ -23819,6 +24365,18 @@
         "charaktertest-moralische-unternehmerbewertung-social-credit-heldenerzaehlung"
       ]
     },
+    "unvollstaendiger-preis": {
+      "related": [
+        "preisvollstaendigkeit",
+        "externalisierung",
+        "externalisierungsluecke",
+        "wirkungstragung",
+        "reverse-merit-order",
+        "value-based-pricing",
+        "wirkungsbasiertes-value-pricing"
+      ],
+      "doNotConfuse": []
+    },
     "upcycling": {
       "related": [
         "recycling",
@@ -23893,6 +24451,29 @@
       ],
       "doNotConfuse": [
         "nicht-als-ersatz-fuer-geschaeftsmodell-oder-wirkungspruefung-verwenden-das-canvas-hilft-beim-verstehen-von-kundennutzen-aber-nicht-automatisch-bei-planetarer-sozialer-oder-demokratischer-netto-wirkung"
+      ]
+    },
+    "value-based-pricing": {
+      "related": [
+        "kundennutzen",
+        "business-value",
+        "value-proposition",
+        "value-proposition-canvas",
+        "wirkungspotenzial",
+        "wirkung",
+        "wirkungszurechnung",
+        "zurechnung-ohne-scheingenauigkeit",
+        "wirkpfad",
+        "wirkungscontrolling",
+        "unvollstaendiger-preis",
+        "preisvollstaendigkeit",
+        "wirkungsbasiertes-value-pricing"
+      ],
+      "doNotConfuse": [
+        "cost-plus-pricing-es-leitet-den-preis-primaer-aus-kosten-und-aufschlag-ab-nicht-aus-dem-kundennutzen",
+        "erfolgsverguetung-sie-kann-an-ein-ergebnis-gekoppelt-sein-ist-aber-nicht-automatisch-value-based-pricing",
+        "wirkung-oder-positive-netto-wirkung-kundennutzen-ist-eine-kundenperspektive-und-kein-nachweis-systemischer-qualitaet",
+        "beliebiger-preisspielraum-ein-wertorientierter-preis-braucht-nachvollziehbare-annahmen-faire-verteilung-und-echte-wahlmoeglichkeiten"
       ]
     },
     "varietaet": {
@@ -24006,6 +24587,21 @@
         "elektroauto",
         "e-fuel",
         "mobilitaetswende"
+      ]
+    },
+    "verfahrensgerechtigkeit": {
+      "related": [
+        "wirkungsrat",
+        "institutionelle-vertrauenswuerdigkeit",
+        "reparaturfaehigkeit",
+        "wirkungsintegritaet",
+        "kooperative-wehrhaftigkeit",
+        "sdg-plus"
+      ],
+      "doNotConfuse": [
+        "ergebnisgerechtigkeit",
+        "zustimmung",
+        "social-credit"
       ]
     },
     "verfassung": {
@@ -24492,6 +25088,20 @@
         "destruktive-vertrauensbindung"
       ]
     },
+    "vertrauensallmende": {
+      "related": [
+        "kooperative-wehrhaftigkeit",
+        "wirkungsintegritaet",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wr",
+        "demokratische-rueckkopplung"
+      ],
+      "doNotConfuse": [
+        "social-credit",
+        "reputation"
+      ]
+    },
     "vertrauensverschiebung": {
       "related": [
         "vertrauen",
@@ -24965,10 +25575,19 @@
         "wirkungsnetz",
         "interdependenz",
         "systemtheorie",
-        "wirkung"
+        "wirkung",
+        "nebenwirkung",
+        "sharing",
+        "wirkungsraum",
+        "wirkpfad",
+        "wirkungsrisiko",
+        "netto-wirkung"
       ],
       "doNotConfuse": [
-        "nicht-jede-wechselwirkung-ist-bereits-positive-wirkung-wechselwirkungen-koennen-positiv-negativ-neutral-ambivalent-verzoegert-oder-nichtlinear-sein"
+        "nicht-jede-wechselwirkung-ist-bereits-positive-wirkung-wechselwirkungen-koennen-positiv-negativ-neutral-ambivalent-verzoegert-oder-nichtlinear-sein",
+        "nebenwirkung-zusaetzliche-oft-unerwuenschte-folge",
+        "rebound-effekt-spezielle-gegenbewegung-die-eine-verbesserung-teilweise-oder-vollstaendig-aufheben-kann",
+        "wirkungsmechanismus-erklaerung-wie-eine-bestimmte-wirkung-entstehen-kann"
       ]
     },
     "wehrhafte-demokratie": {
@@ -25336,13 +25955,21 @@
     },
     "wirkmechanismus": {
       "related": [
+        "ausloeser",
         "wirkstoff",
-        "wirkpfad",
         "wirkungspotenzial",
+        "wirkungsrisiko",
+        "iooi",
+        "wirkungsnachweis",
+        "wirkung",
+        "wirkpfad",
         "wirkungstraeger",
         "kognitive-dissonanz"
       ],
       "doNotConfuse": [
+        "wirkungsnachweis-evidenz-dass-eine-veraenderung-eingetreten-und-gegebenenfalls-zurechenbar-ist",
+        "wirkungspotenzial-moeglichkeit-einer-veraenderung",
+        "output-unmittelbare-leistung-einer-aktivitaet",
         "wirkung",
         "wirkstoff"
       ]
@@ -25415,8 +26042,12 @@
     },
     "wirkstoff": {
       "related": [
+        "ausloeser",
+        "iooi",
         "wirkungspotenzial",
+        "wirkungsrisiko",
         "wirkmechanismus",
+        "wirkung",
         "wirkpfad",
         "resonanzraum",
         "salienz",
@@ -25430,6 +26061,9 @@
         "ankereffekt"
       ],
       "doNotConfuse": [
+        "ausloeser-der-praezise-oberbegriff-fuer-handlung-unterlassen-produkt-oder-ereignis",
+        "wirkung-tatsaechliche-zustandsveraenderung",
+        "wirkmechanismus-erklaerung-wie-eine-wirkung-entstehen-kann",
         "wirkung",
         "wirkungspotenzial",
         "wirkmechanismus"
@@ -25487,7 +26121,10 @@
         "responsible-marketing",
         "greenwashing",
         "fuenftes-p-planet",
-        "impact-strategie"
+        "impact-strategie",
+        "output",
+        "outcome",
+        "sdg-sdgplus-referenzrahmen"
       ],
       "doNotConfuse": [
         "wirkungspotenzial",
@@ -25496,9 +26133,12 @@
         "image",
         "outcome",
         "impact-als-unscharfer-anschlussbegriff",
-        "massnahme",
+        "aktivitaet",
         "bericht",
-        "positive-wirkung"
+        "positive-wirkung",
+        "absicht-oder-haltung-beides-kann-einen-wirkpfad-ausloesen-belegt-aber-keine-veraenderung",
+        "output-erbrachte-leistung-nicht-automatisch-wirkung",
+        "positive-netto-wirkung-die-bewertete-zielgroesse-der-woek"
       ]
     },
     "wirkung-als-rechtsprinzip": {
@@ -25915,6 +26555,24 @@
         "wirkungsabwehr-ist-nicht-dasselbe-wie-berechtigte-kritik-an-datenqualitaet-methodik-zielkonflikten-oder-verhaeltnismaessigkeit-sie-liegt-vor-wenn-kritik-nicht-auf-bessere-wirkungsbewertung-zielt-sondern-wiederholt-jede-konsequenz-verhindert-verantwortlichkeit-verschiebt-oder-negative-wirkung-durch-positive-nebenaspekte-verdeckt"
       ]
     },
+    "wirkungsanalyse": {
+      "related": [
+        "wirkpfad",
+        "iooi",
+        "wirkungsnachweis",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "attributionsforschung",
+        "kontribution",
+        "wirkungsbewertung",
+        "datenqualitaet"
+      ],
+      "doNotConfuse": [
+        "wirkungsbewertung-einordnung-an-einem-referenzrahmen",
+        "monitoring-fortlaufendes-beobachten-kann-daten-fuer-analysen-liefern",
+        "output-reporting-dokumentiert-leistungen-aber-nicht-notwendig-wirkpfade-oder-zustandsveraenderungen"
+      ]
+    },
     "wirkungsanalyse-von-sprache": {
       "related": [
         "folgencheck",
@@ -25982,7 +26640,9 @@
         "wirkungsraum",
         "wirkungsresilienz",
         "demokratische-wirkungsarchitektur",
-        "impact-strategie"
+        "impact-strategie",
+        "iooi",
+        "sdg-sdgplus-referenzrahmen"
       ],
       "doNotConfuse": [
         "wirkungsmodell-beschreibt-zusammenhaenge-architektur-baut-das-operative-system",
@@ -26202,6 +26862,38 @@
       ],
       "doNotConfuse": []
     },
+    "wirkungsbasiertes-value-pricing": {
+      "related": [
+        "value-based-pricing",
+        "kundennutzen",
+        "business-value",
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "positive-netto-wirkung",
+        "wirkpfad",
+        "wirkungszurechnung",
+        "zurechnung-ohne-scheingenauigkeit",
+        "systemgrenze",
+        "wirkungscontrolling",
+        "scorecard",
+        "nwi",
+        "t-sroi",
+        "datenqualitaet",
+        "unvollstaendiger-preis",
+        "preisvollstaendigkeit",
+        "reverse-merit-order",
+        "wirkungsgrenze",
+        "transformationswirkung"
+      ],
+      "doNotConfuse": [
+        "value-based-pricing-es-bewertet-den-wirtschaftlichen-kundennutzen-aber-nicht-automatisch-die-netto-wirkung-im-mpd-referenzrahmen",
+        "t-sroi-oder-nwi-beide-koennen-teile-der-wirkungsbewertung-unterstuetzen-legen-aber-keinen-dienstleistungspreis-fest",
+        "true-cost-pricing-oder-preisvollstaendigkeit-sie-behandeln-die-rueckkopplung-gesellschaftlicher-folgen-in-maerkten-dieses-modell-behandelt-zunaechst-die-preisvereinbarung-fuer-eine-konkrete-leistung",
+        "erfolgsversprechen-ein-preis-korridor-ist-keine-garantie-dass-die-erwartete-veraenderung-eintritt",
+        "kompensationsformel-hoher-kundenwert-oder-positive-teilwirkung-heben-eine-relevante-wirkungsgrenze-nicht-auf"
+      ]
+    },
     "wirkungsbedingte-stranded-assets": {
       "related": [
         "stranded-assets",
@@ -26281,7 +26973,8 @@
         "zielkonflikt",
         "host-wirkungsscore",
         "genossenschaftsblindheit",
-        "gemeineigentum"
+        "gemeineigentum",
+        "sdg-sdgplus-referenzrahmen"
       ],
       "doNotConfuse": [
         "wirkungsmessung-misst-oder-schaetzt-indikatoren-bewertung-ordnet-sie-normativ-und-methodisch-ein",
@@ -26290,7 +26983,10 @@
         "wirkungslenkung-nutzt-bewertung-fuer-anreize-und-entscheidungen",
         "moralurteil-bewertet-wirkungen-von-produkten-regeln-organisationen-oder-taetigkeiten-nicht-den-wert-von-menschen",
         "reporting",
-        "wirkungspotenzial"
+        "wirkungspotenzial",
+        "wirkung-tatsaechliche-zustandsveraenderung",
+        "netto-wirkung-zusammenfuehrung-bewerteter-positiver-und-negativer-wirkungen-unter-schutzregeln",
+        "reporting-dokumentation-kann-eine-bewertung-sichtbar-machen-ist-aber-noch-keine-rueckkopplung"
       ]
     },
     "wirkungsbilanz-und-leistungszerlegung": {
@@ -26541,7 +27237,9 @@
         "mensch-planet-demokratie",
         "sdgs",
         "agenda-2030",
-        "sdg-plus"
+        "sdg-plus",
+        "wirkungsbasiertes-value-pricing",
+        "value-based-pricing"
       ],
       "doNotConfuse": [
         "nachhaltigkeitsreporting-reporting-veroeffentlicht-wirkungscontrolling-steuert",
@@ -26737,6 +27435,23 @@
       ],
       "doNotConfuse": [
         "ergebnis-nicht-als-endgueltige-wahrheit-sondern-als-versionierte-entscheidungsgrundlage-behandeln-betroffene-negative-wirkungen-und-machtasymmetrien-duerfen-nicht-durch-workshopkonsens-verschwinden"
+      ]
+    },
+    "wirkungsdilemma": {
+      "related": [
+        "wirkung",
+        "positive-netto-wirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkungsrueckkopplung",
+        "externalisierung",
+        "wirkungstragung",
+        "reverse-merit-order"
+      ],
+      "doNotConfuse": [
+        "zielkonflikt",
+        "wirkung",
+        "wirkungsrisiko"
       ]
     },
     "wirkungsdisziplin": {
@@ -27608,6 +28323,22 @@
         "wirkungsnachweis"
       ]
     },
+    "wirkungsintegritaet": {
+      "related": [
+        "wirkungssimulation",
+        "wirkungsaudit",
+        "wirkungsassurance",
+        "wr",
+        "wirkungstragung",
+        "kooperative-wehrhaftigkeit",
+        "reverse-merit-order"
+      ],
+      "doNotConfuse": [
+        "wirkungswert",
+        "rating",
+        "reporting"
+      ]
+    },
     "wirkungsinvestition-des-staates": {
       "related": [
         "wirkungskredit",
@@ -27699,12 +28430,22 @@
         "sdgs",
         "agenda-2030",
         "sdg-plus",
-        "woek"
+        "woek",
+        "iooi",
+        "theory-of-change",
+        "wirkungstreppe",
+        "input",
+        "output",
+        "outcome",
+        "wirkungsrad"
       ],
       "doNotConfuse": [
         "nicht-als-blosse-absicht-imagewirkung-oder-outputkennzahl-verwenden",
         "nicht-mit-positiver-netto-wirkung-gleichsetzen-die-bewertung-erfolgt-erst-ueber-referenzrahmen-bilanzgrenze-datenqualitaet-und-rueckkopplung",
-        "nicht-als-personenbewertung-moralische-rangliste-oder-social-credit-logik-verwenden"
+        "nicht-als-personenbewertung-moralische-rangliste-oder-social-credit-logik-verwenden",
+        "wirkungsnachweis-eine-kette-formuliert-zunaechst-eine-logik-keine-belegte-kausalitaet",
+        "wirkungsnetz-macht-parallele-und-gegenseitige-wirkungen-sichtbar",
+        "wirkungsarchitektur-umfasst-zusaetzlich-daten-regeln-governance-bewertung-und-rueckkopplung"
       ]
     },
     "wirkungsklasse": {
@@ -28050,12 +28791,23 @@
         "sdgs",
         "agenda-2030",
         "sdg-plus",
-        "woek"
+        "woek",
+        "wirkungspotenzial",
+        "wirkmechanismus",
+        "wirkungsbewertung",
+        "attributionsforschung",
+        "kontribution",
+        "counterfactual",
+        "baseline",
+        "datenqualitaet"
       ],
       "doNotConfuse": [
         "nicht-als-blosse-absicht-imagewirkung-oder-outputkennzahl-verwenden",
         "nicht-mit-positiver-netto-wirkung-gleichsetzen-die-bewertung-erfolgt-erst-ueber-referenzrahmen-bilanzgrenze-datenqualitaet-und-rueckkopplung",
-        "nicht-als-personenbewertung-moralische-rangliste-oder-social-credit-logik-verwenden"
+        "nicht-als-personenbewertung-moralische-rangliste-oder-social-credit-logik-verwenden",
+        "outputnachweis-dokumentiert-leistung-aber-nicht-zwingend-wirkung",
+        "wirkungspotenzial-moeglichkeit-nicht-eingetretene-veraenderung",
+        "wirkungsbewertung-normative-einordnung-nach-dem-nachweis-oder-der-transparenten-modellierung"
       ]
     },
     "wirkungsnetz": {
@@ -28619,18 +29371,32 @@
     },
     "wirkpfad": {
       "related": [
-        "wirkungspotenzial",
-        "wirkmechanismus",
         "wirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkmechanismus",
         "wirkungsbewertung",
+        "wirkungsdaten",
+        "wirkungszurechnung",
+        "wirkungsempfaenger",
+        "wirkungstraeger",
+        "wirkungsraum",
+        "wirkungskette",
+        "wirkungsoekonomische-theory-of-change",
+        "wirkungshypothesen-register",
+        "evidenz-und-annahmenregister",
         "folgencheck",
+        "folgewirkung",
+        "rueckkopplung",
         "resonanzraum",
+        "sharing",
+        "externalitaeten-und-kostenverlagerungskarte",
+        "positive-netto-wirkung",
         "wirkungsproblem-canvas",
         "problem-und-wirkungsbaum",
         "kausalschleifen-und-rueckkopplungsdiagramm",
         "bestands-und-flussmodell",
         "interdependenz-und-abhaengigkeitsmatrix",
-        "externalitaeten-und-kostenverlagerungskarte",
         "wirkungsordnungen-landkarte",
         "wirkmechanismus-canvas",
         "woek-indikatorenarchitektur",
@@ -28639,32 +29405,34 @@
         "wirkungsoekonomisches-managementmodell",
         "zeit-verzoegerungs-und-generationenkarte",
         "wirkstoff",
-        "folgewirkung",
-        "rueckkopplung",
         "handlung",
         "handlungspfad",
         "hebelpunkt",
         "hebelwirkung",
         "impact-washing",
         "kipppunkt-systemschwelle",
-        "sharing",
         "resonanzarchitektur",
         "strategisches-management",
         "strukturdeterminiertheit",
-        "wirkungsempfaenger",
         "wirkungsindikator",
         "wirkungskompetenz",
         "wirkungsnetz",
-        "wirkungsraum",
-        "wirkungstraeger",
         "wirkungsverantwortung",
         "zeitwirkung",
         "framing",
         "framing-sprache-tonalitaet",
-        "reframing"
+        "reframing",
+        "iooi",
+        "ausloeser",
+        "theory-of-change"
       ],
       "doNotConfuse": [
-        "ergebnis-nicht-als-endgueltige-wahrheit-sondern-als-versionierte-entscheidungsgrundlage-behandeln-betroffene-negative-wirkungen-und-machtasymmetrien-duerfen-nicht-durch-workshopkonsens-verschwinden",
+        "wirkung-eine-tatsaechliche-zustandsveraenderung-der-wirkpfad-beschreibt-zunaechst-die-annahme-wie-sie-zustande-kommen-koennte",
+        "wirkungspotenzial-die-moeglichkeit-einer-veraenderung-ein-wirkpfad-strukturiert-ueber-welche-bedingungen-sie-eintreten-oder-ausbleiben-kann",
+        "wirkungsrisiko-die-moeglichkeit-negativer-wirkung-oder-verfehlter-positiver-wirkung-es-gehoert-in-den-wirkpfad-ist-aber-nicht-mit-ihm-identisch",
+        "wirkungskette-eine-haeufig-lineare-darstellungsform-von-input-bis-wirkung-wirkpfade-ergaenzen-sie-um-kontext-verzweigungen-rueckkopplungen-und-unsicherheit",
+        "kausalnachweis-ein-wirkpfad-liefert-eine-pruefbare-hypothese-kausale-zurechnung-verlangt-zusaetzlich-geeignete-evidenz-vergleichsfaelle-und-den-umgang-mit-anderen-einflussfaktoren",
+        "output-oder-bericht-erbrachte-leistungen-und-dokumentationen-sind-zwischenschritte-oder-nachweise-nicht-automatisch-wirkung",
         "wirkung",
         "kausalnachweis"
       ]
@@ -28781,7 +29549,10 @@
         "produktdaten",
         "responsible-marketing",
         "greenwashing",
-        "fuenftes-p-planet"
+        "fuenftes-p-planet",
+        "ausloeser",
+        "iooi",
+        "wirkungsnachweis"
       ],
       "doNotConfuse": [
         "wirkung",
@@ -29658,7 +30429,11 @@
         "zeitwirkung",
         "financial-materiality",
         "impact-management",
-        "wirkungscontrolling"
+        "wirkungscontrolling",
+        "ausloeser",
+        "wirkmechanismus",
+        "iooi",
+        "nebenwirkung"
       ],
       "doNotConfuse": [
         "finanzrisiko-finanzielle-auswirkungen-koennen-folge-von-wirkungsrisiken-sein-aber-wirkungsrisiken-beginnen-frueher",
@@ -30093,6 +30868,20 @@
         "ursache-massnahme-instrument-ein-traeger-kann-ursache-vermittler-verstaerker-oder-infrastruktur-sein-er-ist-analytisch-breiter-und-auch-unbeabsichtigt-oder-historisch-gewachsen-wirksam"
       ]
     },
+    "wirkungstragung": {
+      "related": [
+        "wirkungsverantwortung",
+        "externalisierung",
+        "externalisierungsluecke",
+        "preisvollstaendigkeit",
+        "wirkungslenkung",
+        "positive-netto-wirkung"
+      ],
+      "doNotConfuse": [
+        "wirkungsverantwortung",
+        "personenbewertung"
+      ]
+    },
     "wirkungstransformations-bereitschaft": {
       "related": [
         "wirkungstransformations-roadmap",
@@ -30192,6 +30981,23 @@
         "wirkungsaudit-prueft-daten-und-nachweise-bericht-veroeffentlicht-ergebnisse-und-lernentscheidungen",
         "statistikbericht-liefert-daten-wirkungstransparenzbericht-ordnet-sie-in-wirkungslogik-und-oeffentliche-mittel-ein",
         "open-data-portal-datenportal-ist-infrastruktur-wirkungstransparenzbericht-erklaert-wirkungslogik-verstaendlich"
+      ]
+    },
+    "wirkungstreppe": {
+      "related": [
+        "iooi",
+        "wirkungskette",
+        "wirkpfad",
+        "outcome",
+        "wirkung",
+        "theory-of-change",
+        "wirkungsrad",
+        "wirkungsbewertung"
+      ],
+      "doNotConfuse": [
+        "wirkungsrad-rekursive-gesamtarchitektur-mit-bewertung-schutz-und-rueckkopplung",
+        "wirkungsnachweis-eine-stufenlogik-beweist-keine-eingetretene-oder-zurechenbare-wirkung",
+        "output-nur-eine-ebene-der-treppe-nicht-ihre-zielgroesse"
       ]
     },
     "wirkungsumsatzsteuer": {
@@ -30980,6 +31786,20 @@
       "doNotConfuse": [
         "ergebnis-nicht-als-endgueltige-wahrheit-sondern-als-versionierte-entscheidungsgrundlage-behandeln-betroffene-negative-wirkungen-und-machtasymmetrien-duerfen-nicht-durch-workshopkonsens-verschwinden"
       ]
+    },
+    "wirkungsrad": {
+      "related": [
+        "iooi",
+        "wirkungstreppe",
+        "wirkungskette",
+        "ausloeser",
+        "wirkungspotenzial",
+        "wirkungsbewertung",
+        "netto-wirkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur"
+      ],
+      "doNotConfuse": []
     },
     "woemm-betriebssystem": {
       "related": [

@@ -729,11 +729,24 @@ function overviewPage() {
         ${sectionTitle("logic", "Von Wirkung zu Entscheidung")}
         <p>Wirkung ist neutral und relational. Impact Controlling macht sichtbar, welche Zustände sich verändern, welche Nebenwirkungen entstehen, welche Daten belastbar sind und wie Entscheidungen auf positive Netto-Wirkung, wirksamen Kapitaleinsatz und lernende Rückkopplung ausgerichtet werden können.</p>
       </div>
-      ${cardGrid(base, [
+    ${cardGrid(base, [
         { title: "Messen", text: "WÖk-IDs, Datenquellen, Einheiten und Schwellen machen Wirkung adressierbar." },
         { title: "Bewerten", text: "Scorecards, Benchmarks, NWI, IOI und Reverse Merit Order ordnen Wirkung ein." },
         { title: "Steuern", text: "IOI, T-SROI, KII, Assurance und Wirkungsdatenräume machen Wirkung entscheidungsrelevant." },
       ])}
+    </section>
+    <section class="section section-soft" aria-labelledby="iooi-evidenz">
+      <div class="section-header">
+        <p class="hero-kicker">Evidenzlogik</p>
+        ${sectionTitle("iooi-evidenz", "Vom Projektmodell zur steuerungsfähigen Wirkung")}
+        <p>IOOI und Theory of Change ordnen den Wirkpfad: Welche Inputs ermöglichen welche Aktivitäten, welche Outputs entstehen, welche Outcomes werden beobachtet und welcher Impact ist plausibel oder nachweisbar? Das ist keine Ersatzmessung für Wirkung, sondern die Grundlage, um Annahmen, Datenlücken, Attribution und Nebenwirkungen offen zu legen.</p>
+      </div>
+      ${cardGrid(base, [
+        { title: "Vor der Wirkung", text: "Auslöser, Wirkungspotenzial, Wirkungsrisiko und Wirkmechanismus werden als Annahmen oder Risiken gekennzeichnet – nicht als eingetretene Wirkung." },
+        { title: "IOOI und Evidenz", text: "Input → Aktivität → Output → Outcome → Impact trennt Ressourceneinsatz, Leistung und Veränderung. Output ist keine Wirkung; Outcome ist eine Wirkungsebene." },
+        { title: "Bewertung und Steuerung", text: "Die WÖk bewertet nach SDGs, Agenda 2030 und SDG+, schützt durch Nichtkompensation und übersetzt Ergebnisse in Investitions-, Beschaffungs- und Managemententscheidungen." },
+      ])}
+      <p><a class="text-link" href="${href(base, "verstehen/iooi-und-wirkungsoekonomie/")}">IOOI und Wirkungsökonomie im vollständigen Überblick</a></p>
     </section>
     ${toolGrid(base)}
     <section class="section" aria-labelledby="methodenpapiere">

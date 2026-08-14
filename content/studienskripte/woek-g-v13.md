@@ -1,20 +1,24 @@
-# Grundstudium Wirkungsökonomie · Vorlesung 13: Handlung, Unterlassen und Zustandsveränderung
+# Grundstudium Wirkungsökonomie · Vorlesung 13: Vom Auslöser zum Wirkpfad
 
-**Track:** Grundstudium Wirkungsökonomie  
-**Kurscode:** woek-g  
-**Vorlesungscode:** V13  
-**Modul/Abschnitt:** G2.1  
-**Titel:** Handlung, Unterlassen und Zustandsveränderung  
-**Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/content/lehrgaenge/woek-g-v13.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/woek-g-v13.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v13.docx`  
+**Track:** Grundstudium Wirkungsökonomie
+**Kurscode:** woek-g
+**Vorlesungscode:** V13
+**Modul/Abschnitt:** G2.1
+**Titel:** Vom Auslöser zum Wirkpfad
+**Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen
+**Quelle:** `woek-akademie-app/content/lehrgaenge/woek-g-v13.md`
+**Ablage:** Markdown-Master in `content/studienskripte/woek-g-v13.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v13.docx`
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+
+## Aktualisierung v1.4: Vor der Wirkung beginnen
+
+Die Vorlesung folgt seit Version 1.4 der vollständigen WÖk-Logik: Auslöser → Wirkstoff als didaktische Analogie → Wirkungspotenzial und Wirkungsrisiko → Wirkmechanismus → IOOI-Wirkpfad → Wirkung und Folgen → Bewertung → Schutzregeln → Rückkopplung. Wirkungspotenzial ist nicht Wirkung; ein plausibler Wirkmechanismus ist kein Wirkungsnachweis.
 
 ## Lernziele
 
 Nach dieser Vorlesung kannst du:
 
-1. die Kernfrage von **Handlung, Unterlassen und Zustandsveränderung** in der Sprache der Wirkungsökonomie erklären.
+1. Auslöser, Wirkstoff als didaktische Analogie, Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus und eingetretene Zustandsveränderung sauber unterscheiden.
 2. Wirkung, Wirkungspotenzial und Wirkungsrisiko im Themenfeld sauber unterscheiden.
 3. typische Verwechslungen erkennen, insbesondere Reichweite, Aktivität, Absicht oder Reporting als Wirkung auszugeben.
 4. den Bezug zu Mensch, Planet und Demokratie sowie zur positiven Netto-Wirkung herstellen.

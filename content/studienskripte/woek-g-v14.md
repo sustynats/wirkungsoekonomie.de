@@ -1,20 +1,24 @@
-# Grundstudium Wirkungsökonomie · Vorlesung 14: Wirkung erster, zweiter und dritter Ordnung
+# Grundstudium Wirkungsökonomie · Vorlesung 14: IOOI, Theory of Change und Wirkungstreppe
 
-**Track:** Grundstudium Wirkungsökonomie  
-**Kurscode:** woek-g  
-**Vorlesungscode:** V14  
-**Modul/Abschnitt:** G2.1  
-**Titel:** Wirkung erster, zweiter und dritter Ordnung  
-**Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
-**Quelle:** `woek-akademie-app/content/lehrgaenge/woek-g-v14.md`  
-**Ablage:** Markdown-Master in `content/studienskripte/woek-g-v14.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v14.docx`  
+**Track:** Grundstudium Wirkungsökonomie
+**Kurscode:** woek-g
+**Vorlesungscode:** V14
+**Modul/Abschnitt:** G2.1
+**Titel:** IOOI, Theory of Change und Wirkungstreppe
+**Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen
+**Quelle:** `woek-akademie-app/content/lehrgaenge/woek-g-v14.md`
+**Ablage:** Markdown-Master in `content/studienskripte/woek-g-v14.md`, Word-Rohfassung in `docs/studienskripte/word-rohfassungen/woek-g-v14.docx`
 **Wissensbasis:** aktuelles Grundlagenwerk, Website-Korpus inklusive Journal, Akademie-Quelltexte, Glossar, interne Dossiers und externe Fachquellen
+
+## Aktualisierung v1.4: IOOI als Wirkpfad
+
+IOOI strukturiert die Kette Input → Aktivität → Output → Outcome → Impact. Output ist eine direkte Leistung und noch keine Wirkung; Outcome ist eine Wirkungsebene. Theory of Change macht die Annahmen und Wirkmechanismen sichtbar, die zwischen Ausgangslage und Veränderung liegen. Attribution, Systemgrenze und Counterfactual bleiben gesonderte Evidenzfragen.
 
 ## Lernziele
 
 Nach dieser Vorlesung kannst du:
 
-1. die Kernfrage von **Wirkung erster, zweiter und dritter Ordnung** in der Sprache der Wirkungsökonomie erklären.
+1. Input, Aktivität, Output, Outcome und Impact sowie ihre jeweiligen Aussagegrenzen erklären.
 2. Wirkung, Wirkungspotenzial und Wirkungsrisiko im Themenfeld sauber unterscheiden.
 3. typische Verwechslungen erkennen, insbesondere Reichweite, Aktivität, Absicht oder Reporting als Wirkung auszugeben.
 4. den Bezug zu Mensch, Planet und Demokratie sowie zur positiven Netto-Wirkung herstellen.
