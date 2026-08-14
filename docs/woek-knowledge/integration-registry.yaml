@@ -11,8 +11,8 @@ integrations:
     available_operations:
       - GET capabilities/   # Architekturprinzipien + Datenklassen + Grenzen
       - GET glossary/       # aus assets/data/glossary-lookup.json
-      - GET methods/        # 84 WÖMS-Kernmethoden (public/data/woems-methoden.json)
-      - GET canvases/       # WÖMS-Canvas (public/data/woems-canvas.json)
+      - GET methods/        # 152 WÖMS-Kernmethoden in 16 Kategorien (v2.0, Stand 2026-07-10, sourceSha256 fdfb7cb2…); kanonisch content/methods/woems-methoden.json → public/data/woems-methoden.json
+      - GET canvases/       # 208 Canvas (152 Methoden-Canvas + 56 Varianten), public/data/woems-canvas.json
       - GET search/         # Metadaten zum Suchindex (assets/search/search-index.json)
       - GET sdg-plus/       # aus assets/data/sdg-reference.json
       - GET wirkungsradar/  # 13 Debattenkarten + Distribution-Kits + Embed-Formate

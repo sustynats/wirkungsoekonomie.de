@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Wirkungsdialog (Beispiel) — Wirkungsportal Parlament</title>
+<link rel="stylesheet" href="prototype.css">
+<style>
+.trennung { border:2px solid var(--navy); border-radius:var(--radius); background:var(--cream); padding:1rem 1.2rem; margin:1.2rem 0; }
+.trennung h3 { margin-bottom:.3rem; }
+.balken { margin:.6rem 0 1rem; }
+.balken .zeile { display:grid; grid-template-columns:minmax(150px,1fr) 2fr auto; gap:.6rem; align-items:center; margin-bottom:.4rem; font-size:.88rem; }
+.balken .track { background:var(--ivory); border:1px solid var(--line-strong); border-radius:999px; height:14px; overflow:hidden; }
+.balken .fill { height:100%; background:var(--navy); }
+.balken .fill.pub { background:var(--gold); }
+.balken .val { font-size:.8rem; color:var(--muted); font-variant-numeric:tabular-nums; }
+.meta-umfrage { font-size:.78rem; color:var(--muted); border-top:1px solid var(--line); padding-top:.6rem; }
+.frage-card { border:1px solid var(--line); border-radius:var(--radius); background:var(--white); padding:1rem 1.15rem; }
+.frage-card ul { margin:.4rem 0 0; padding-left:1.1rem; font-size:.9rem; }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+<div class="demo-banner">Synthetischer Demonstrationsfall — Beispielwerte ohne reale Erhebung. Umfragedaten sind niemals Wirkungsnachweis.</div>
+
+<div class="trust-band">
+  <div class="container">
+    <span><strong>Herausgegeben vom Institut für Wirkungsökonomie</strong></span>
+    <span>Wirkungsdialog · Präferenzen und Erfahrungen — getrennt von der Wirkungsanalyse</span>
+  </div>
+</div>
+
+<header class="site-head">
+  <div class="container">
+    <a class="brand" href="index.html">Wirkungsportal Parlament<small>Bundespolitik verstehen · Wirkungen prüfen · Entscheidungen rückkoppeln</small></a>
+    <nav class="main-nav" aria-label="Hauptnavigation">
+      <a href="index.html#diese-woche">Anstehend</a>
+      <a href="entscheidung-beispiel.html">Entscheidungen</a>
+      <a href="rueckblick-beispiel.html#historie">Historie</a>
+      <a href="rueckblick-beispiel.html#monitor">Monitor</a>
+      <a href="dialog-beispiel.html" aria-current="page">Dialog</a>
+      <a href="index.html#unabhaengigkeit">Methodik &amp; Transparenz</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="section">
+    <div class="container">
+      <p class="kicker">Route /dialog/ · Säule 3</p>
+      <h1>Wirkungsdialog</h1>
+      <p>Wo fehlen Wirkungsdaten? Welche Folgen sollten stärker geprüft werden? Der Dialog sammelt Einschätzungen aus Parlament und Öffentlichkeit — und hält sie sichtbar getrennt von der Analyse.</p>
+
+      <div class="trennung">
+        <h3>Was Umfragen hier dürfen — und was nicht</h3>
+        <p style="font-size:.92rem;margin-bottom:.4rem"><strong>Sie dürfen:</strong> Themen im Radar priorisieren, Forschungsfragen anstoßen, vertiefte Analysen auslösen, regionale Perspektiven ergänzen.</p>
+        <p style="font-size:.92rem;margin:0"><strong>Sie dürfen nicht:</strong> das veröffentlichte Fachvotum verändern. 80 % Zustimmung machen eine Maßnahme nicht wirkungsvoll; 80 % Ablehnung machen einen belegten Wirkmechanismus nicht falsch.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="frage-card">
+          <p class="kicker" style="margin-bottom:.2rem">Für Abgeordnete und Büros</p>
+          <h3>Laufende Fragerunde</h3>
+          <ul>
+            <li>Welche Themen werden im kommenden Jahr besonders wirkungsrelevant?</li>
+            <li>Wo fehlen Ihnen Wirkungsdaten für Ihre Arbeit?</li>
+            <li>Wo erleben Sie die größte Lücke zwischen Bundesentscheidung und Vollzug?</li>
+          </ul>
+          <p style="margin-top:.8rem"><a class="btn btn--primary" href="#" aria-disabled="true">Teilnehmen (Einladungslink)</a></p>
+          <p style="font-size:.78rem;color:var(--muted);margin:.5rem 0 0">Zugang über neutrale Einladungspässe: keine Namen, keine Fraktionszuordnung, keine Rückführung von Antworten auf Personen.</p>
+        </div>
+        <div class="frage-card">
+          <p class="kicker" style="margin-bottom:.2rem">Für alle</p>
+          <h3>Öffentliche Fragerunde</h3>
+          <ul>
+            <li>Welche Zustandsveränderung ist Ihnen besonders wichtig?</li>
+            <li>Wo erleben Sie Wirkungslücken im Alltag?</li>
+            <li>Welche Folgen einer Entscheidung sollten stärker geprüft werden?</li>
+          </ul>
+          <p style="margin-top:.8rem"><a class="btn" href="#" aria-disabled="true">Ohne Konto teilnehmen</a></p>
+          <p style="font-size:.78rem;color:var(--muted);margin:.5rem 0 0">Keine Profilbildung, keine politische Einordnung von Teilnehmenden, keine Speicherung über die Auswertung hinaus.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--ivory">
+    <div class="container">
+      <p class="kicker">Ergebnisdarstellung (Beispielwerte)</p>
+      <h2>Wo fehlen Wirkungsdaten am dringendsten?</h2>
+      <div class="balken">
+        <div class="zeile"><span>Vollzug in Kommunen</span><div class="track"><div class="fill" style="width:72%"></div></div><span class="val">Parlament 72 %</span></div>
+        <div class="zeile"><span></span><div class="track"><div class="fill pub" style="width:54%"></div></div><span class="val">Öffentlichkeit 54 %</span></div>
+        <div class="zeile"><span>Langfristfolgen</span><div class="track"><div class="fill" style="width:48%"></div></div><span class="val">Parlament 48 %</span></div>
+        <div class="zeile"><span></span><div class="track"><div class="fill pub" style="width:66%"></div></div><span class="val">Öffentlichkeit 66 %</span></div>
+      </div>
+      <p class="meta-umfrage">n = [Zahl] Parlament · n = [Zahl] Öffentlichkeit · Zeitraum [Datum–Datum] · Auswahlverfahren: Selbstselektion, <strong>nicht repräsentativ</strong> · Mindestkohorte für Auswertung: n ≥ 10, kleinere Gruppen werden unterdrückt · Vergleich nur bei methodisch identischer Fragestellung.</p>
+      <p style="font-size:.88rem"><span class="ebene ebene--fakt">Sachverhalt</span> Dies sind Präferenzangaben — keine Wirkungsmessung. Sie beeinflussen, <em>was</em> wir als Nächstes prüfen, nicht <em>wie</em> das Ergebnis ausfällt.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="kicker">Was aus dem Dialog folgt</p>
+      <h2>Von der Einschätzung zur Prüfung</h2>
+      <div class="grid-2">
+        <div class="card"><h3>1 · Eingang</h3><p style="font-size:.9rem;margin:0">Antworten und Hinweise laufen anonymisiert in die Redaktion — getrennt vom Kontaktsystem, keine Verknüpfung Person ↔ Antwort ↔ Analyse.</p></div>
+        <div class="card"><h3>2 · Redaktionelle Prüfung</h3><p style="font-size:.9rem;margin:0">Hinweise werden gegen den Wirkungsrelevanz-Standard geprüft — nicht gegen Popularität.</p></div>
+        <div class="card"><h3>3 · Wirkung im Radar</h3><p style="font-size:.9rem;margin:0">Aufgenommene Themen erscheinen mit Begründung „Warum prüfen wir dieses Vorhaben?" — die Herkunft aus dem Dialog wird ausgewiesen.</p></div>
+        <div class="card"><h3>4 · Grenze</h3><p style="font-size:.9rem;margin:0">Das Fachvotum entsteht weiterhin ausschließlich aus Analyse, Evidenz und redaktioneller Freigabe.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="container">
+    <div><h4>Wirkungsportal Parlament</h4>Herausgegeben vom Institut für Wirkungsökonomie.<br>Kontakt: wirkungscheck@wirkungsoekonomie.de</div>
+    <div><h4>Transparenz</h4><a href="index.html#unabhaengigkeit">Unabhängigkeit</a><br><a href="#">Datenschutz im Dialog</a></div>
+    <div class="legal">Prototyp (Claude-Lane) · Beispielwerte · keine Profilbildung, keine Personenbewertung.</div>
+  </div>
+</footer>
+</body>
+</html>
