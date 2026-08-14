@@ -7,6 +7,12 @@ export type DipRequest = {
   params?: Record<string, string | number | boolean | undefined>;
 };
 
+export type DipListResponse<T> = {
+  cursor?: string;
+  numFound?: number;
+  documents?: T[];
+};
+
 export type DipImportWindow = {
   mode: "BOOTSTRAP" | "LOOKAHEAD";
   from: string;
@@ -37,7 +43,9 @@ export function getDipConfiguration() {
   return {
     configured: Boolean(process.env.DIP_API_KEY),
     baseUrl: DIP_BASE_URL,
-    requestedLeadDays: Math.min(14, Math.max(7, Number(process.env.DIP_LOOKAHEAD_DAYS ?? 10)))
+    requestedLeadDays: Math.min(14, Math.max(7, Number(process.env.DIP_LOOKAHEAD_DAYS ?? 10))),
+    legislativeTerm: Math.max(1, Number(process.env.DIP_WAHLPERIODE ?? 21)),
+    importMaxPages: Math.min(20, Math.max(1, Number(process.env.DIP_IMPORT_MAX_PAGES ?? 10)))
   };
 }
 

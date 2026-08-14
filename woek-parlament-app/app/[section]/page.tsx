@@ -5,7 +5,7 @@ import { dialogueQuestions, monitorRows, parliamentaryCases } from "@/data/cases
 
 const pageCopy: Record<string, { kicker: string; title: string; lead: string }> = {
   bundestag: { kicker: "Parlament", title: "Deutscher Bundestag", lead: "Der MVP ist von Beginn an für mehrere Parlamente modelliert. Sichtbar ist zunächst nur dieser eindeutige Zuständigkeitsrahmen." },
-  bevorstehend: { kicker: "Wirkungsradar", title: "Bevorstehende Beratungen und Entscheidungen", lead: "Der Radar zeigt nur amtlich belegte und redaktionell freigegebene Vorgänge. Derzeit ist die Anbindung als transparenter Leerzustand vorbereitet." },
+  bevorstehend: { kicker: "Wirkungsradar", title: "Bevorstehende Beratungen und Entscheidungen", lead: "Der Radar zeigt nur amtlich belegte und redaktionell freigegebene Vorgänge. Der tägliche Vorlauf bleibt bis zur Quellen- und Fassungsprüfung ein interner Prüfbestand." },
   entscheidungen: { kicker: "Archiv", title: "Analysierte Entscheidungen", lead: "Eine Dauerseite pro Vorgang verbindet Fassung, Analyse, spätere Beobachtung und Korrekturhistorie." },
   "im-verfahren": { kicker: "Verfahren", title: "Laufende Verfahren", lead: "Vorgangsphasen werden aus Daten abgeleitet, nicht in der Oberfläche festgeschrieben." },
   werkzeuge: { kicker: "Kontextuell", title: "WÖk-Werkzeugkasten", lead: "Hier werden bestehende WÖk-Werkzeuge nach Falltyp verlinkt. Neue Instrumente werden nicht für das Portal dupliziert." },
@@ -32,7 +32,7 @@ function MethodOrTransparency({ section }: { section: string }) {
 
 function Listing({ section }: { section: string }) {
   const copy = pageCopy[section];
-  return <><header className="page-intro"><p className="kicker">{copy.kicker}</p><h1>{copy.title}</h1><p>{copy.lead}</p></header><div className="notice"><strong>Status vor Inhalt.</strong><p>Filter und reale Dokumentdaten werden erst mit der amtlichen, versionierten DIP-Importstrecke aktiviert.</p></div><section className="card-grid">{parliamentaryCases.filter((item) => section === "bevorstehend" ? item.kind === "RADAR" : true).map((item) => <CaseCard key={item.slug} item={item} />)}</section></>;
+  return <><header className="page-intro"><p className="kicker">{copy.kicker}</p><h1>{copy.title}</h1><p>{copy.lead}</p></header><div className="notice"><strong>Status vor Inhalt.</strong><p>Amtliche DIP-Metadaten und Fassungen werden versioniert importiert. Öffentliche Filter zeigen ausschließlich redaktionell freigegebene Fälle; bis dahin bleiben sie bewusst nicht sichtbar.</p></div><section className="card-grid">{parliamentaryCases.filter((item) => section === "bevorstehend" ? item.kind === "RADAR" : true).map((item) => <CaseCard key={item.slug} item={item} />)}</section></>;
 }
 
 export default async function SectionPage({ params }: { params: Promise<{ section: string }> }) {
