@@ -11,7 +11,10 @@ Stand: 2026-08-14 · Claude-Seite ausgefüllt (Phase-0-Inventur); **Codex-Spalte
 | A3 | `api/kwi.py` (Website) deployt? Wo? | Deployment-Ziel | ☐ |
 | A4 | Zertifikats-API `akademie…/api/certificates/{id}` existiert? (Website-Prüfseite ruft sie; im Akademie-Repo **keine** solche Route gefunden — nur `/zertifikat/[code]`-Page + `/api/me/certificate-status`) → möglicher toter Endpoint! | Route-Existenz + Test | ☐ |
 | A5 | Supabase-Edge-Fn `site-event` aktiv (im Akademie-Repo keine functions/ — wo liegt ihr Code?) | Supabase-Projekt inspizieren | ☐ |
-| A6 | `assets/data/woek-id-register.json` ≙ Master Items v1.3 (Erzeugung? Hash?) | Generator-Skript + Abgleich | ☐ |
+| A6 | `assets/data/woek-id-register.json` ≙ Master Items v1.3 — **Teil-Antwort 2026-08-14 (Claude)**: JSON trägt `version: v1.3`, **621 items** (deckungsgleich mit XLSX) und `source_hash_sha256 fd0af24c…`; offen bleibt: **47 sources (JSON) vs. 50 Quellen (XLSX Sheet 07)** und welches Skript den Export erzeugt | Generator benennen + Quellen-Delta klären | ☐ |
+| A12 | **Neu**: `/api/v1/methods/` liefert 152 Methoden (v2.0, `sourceSha256 fdfb7cb2…`, kanonisch `content/methods/woems-methoden.json`) — frühere „84"-Angabe war die Grundmethoden-Teilmenge; Canvas-Snapshot: 208 (152+56). Bitte bestätigen, dass content/ → public/ → api/ synchron gebaut werden | Build-Kette prüfen | ☐ |
+| A13 | **Neu**: WÖMM 2.0 hat — anders als WÖMS 2.0 — **keine strukturierte Registry** (nur PDF + 69 Kapitel-HTML). Soll ein Import analog `woems-methoden.json` erzeugt werden (Managementfelder/-funktionen, Wirkungsrad, Realisierungsarchitektur)? | Entscheidung + ggf. Import | ☐ |
+| A14 | **Neu**: T-SROI v1.1 existiert als Markdown/PDF, die Rechenlogik aber nur als Code (`assets/js/impact-calculations.js`) — Parameter/Diskontsätze/Schutz-Gate nicht als Daten. Risiko: Standard und Implementierung laufen auseinander | Parametrisierung prüfen | ☐ |
 | A7 | Institut: Repo, Deployment, Datenmodell `/api/quellen`, Auth, implementierte Module | Institut-Codebase | ☐ |
 | A8 | Wirkungscheck-V1 wirklich nirgends mehr eingebunden (nur Doku/Validator-Referenzen) | Live-URL + grep | ☐ |
 | A9 | Zwei Analytics-Ingests parallel aktiv — welcher ist kanonisch? | Traffic/Code | ☐ |

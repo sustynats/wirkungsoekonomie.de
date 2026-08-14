@@ -22,9 +22,39 @@ Stand: 2026-08-14 · Referenz: `prototype/` (index.html, entscheidung-beispiel.h
 16. **Trust-Card** (`.trust-card`): Herausgeber, Fassung, Methodenversion, Quellenstand, Redaktion/Gegenprüfung, Korrekturen + CTA.
 17. **Footer**: Institut/Kontakt, Transparenz-Links, Ökosystem-Ausleitungen; keine Partei-/Kampagnenlinks.
 
-## Responsive & A11y (verbindlich)
+## Responsive-Regeln (verbindlich)
 
-Mobile-first: erster Viewport der Entscheidungsseite = Kurztitel, Status/Termin, Empfehlung (im Prototyp verifiziert, 375×812). Breakpoint-Verhalten in `prototype.css` (@media 640px). Fokusstile, Skip-Link, `aria-current/pressed/live`, Chips nie Farbe-allein, `<details>`-Linearfassung des Wirkpfads, Reduced-Motion-Guard — alles im Prototyp vorhanden und zu übernehmen. Ziel WCAG 2.2 AA.
+**Breakpoints**: ein einziger harter Breakpoint bei **640px** (`prototype.css`), alles darüber fließend über `clamp()`/`auto-fit`-Grids. Keine festen Pixelbreiten, keine horizontale Scrollleiste auf `body` — breite Inhalte (Wirkpfad, Tabellen) scrollen in eigenem Container.
+
+**Erste-Viewport-Regel (§56, im Prototyp bei 375×812 verifiziert)**: Auf der Entscheidungsseite müssen ohne Scrollen sichtbar sein — Kurztitel, Wirkungsrelevanz, Termin/Phase, Empfehlungs-Chip (falls freigegeben). Verboten: lange Einleitungstexte, Cookie-/Modal-Overlays, Hero-Bilder vor dem Inhalt.
+
+| Komponente | < 640px | ≥ 640px |
+|---|---|---|
+| Header/Nav | Nav umbricht unter Brand (`margin-left:0`), keine Hamburger-Pflicht bei 6 Punkten | Nav rechtsbündig |
+| 60-Sekunden-Block | **einspaltig** (`grid-template-columns:1fr`), Reihenfolge = Lesereihenfolge, Empfehlungszelle bleibt letzte | 2–3 Spalten `auto-fit minmax(250px,…)` |
+| Decision-Card-CTAs | volle Breite, gestapelt (`flex:1 1 100%`), Primär-CTA zuerst | nebeneinander |
+| Wirkpfad | Stationen stapeln (`min-width:150px` + wrap), Nummern bleiben sichtbar | horizontale Kette |
+| Szenario-Karten / Empfehlungsspalten / Trust-Card-dl | einspaltig | `auto-fit` mehrspaltig |
+| Stepper | umbricht in mehrere Zeilen, aktueller Schritt behält Kontrast | eine Zeile |
+| Modus-Schalter | bleibt sichtbar über dem Titel (nicht in ein Menü verstecken) | rechts neben Kicker |
+
+**Touch**: Interaktive Ziele ≥ 44×44 px effektiv (Chips mit Link-Funktion brauchen Padding-Ausgleich); Drawer/`<details>`-Summaries volle Zeilenbreite als Trefferfläche. Keine Hover-only-Information — Glossar-Definitionen müssen auf Touch per Tap erreichbar sein (Hover ist nur Progressive Enhancement).
+
+## Accessibility-Anforderungen (Ziel WCAG 2.2 AA — Launch-Gate)
+
+**Struktur & Navigation**: genau eine `<h1>` je Seite (der Kurztitel); lückenlose Überschriftenhierarchie; Skip-Link als erstes fokussierbares Element; Landmarks (`header/nav/main/footer`) mit `aria-label` bei Mehrfachnutzung; Tab-Reihenfolge = visuelle Reihenfolge (kein positives `tabindex`).
+
+**Zustände in ARIA** (im Prototyp umgesetzt): Nav `aria-current="page"` · Stepper `aria-current="step"` · Szenario- und Modus-Buttons `aria-pressed` · Sofortreaktions-Container `aria-live="polite"` (nur der Ergebnisbereich, nie die ganze Seite) · deaktivierte CTAs `aria-disabled="true"` **plus** erklärender Text („folgt"), nie nur ausgegraut · Drawer als `<details>` oder Dialog mit Fokusfalle, Escape schließt, Fokus kehrt zum Auslöser zurück.
+
+**Farbe & Kontrast**: Text ≥ 4.5:1, große Typo/UI-Ränder ≥ 3:1 — geprüft auf Ivory `#F6F1E8` und Navy `#0B1020`. **Farbe nie alleiniger Bedeutungsträger**: Empfehlungskategorien, Evidenzklassen, Phasen und rote Linien tragen immer Text; Wirkpfad-Bruchstellen sind zusätzlich beschriftet („Mögliche Bruchstelle:"). Fokus sichtbar mit 2px-Outline + Offset, auf beiden Grundfarben geprüft (`--gold-deep` auf Ivory, Gold auf Navy).
+
+**Diagramme/Daten**: Jede Visualisierung braucht eine lineare Textalternative im DOM (Wirkpfad: `<details>`-Fassung im Prototyp; Wirkungsnetz und Monitor-Kurven später analog). Keine reinen Bild-Diagramme ohne Textfassung. Zahlen im Fließtext immer mit Einheit und Bezugszeitpunkt.
+
+**Bewegung & Eingabe**: `prefers-reduced-motion`-Guard global (im Prototyp gesetzt, inkl. `scroll-behavior`); keine Auto-Play-Animationen, kein Auto-Scroll; keine Zeitlimits; Formularfelder mit persistenten `<label>` (kein Placeholder-als-Label); Fehlermeldungen textlich und programmatisch verknüpft.
+
+**Sprache & Verständlichkeit**: `lang="de"`; Fachbegriffe bei erster Nennung erklärt (Progressive Disclosure Alltagssprache → Kurzerklärung → Fachbegriff); Linktexte selbsterklärend („Vollständige Begründung", nie „hier"); Abkürzungen (T-SROI, RMO, SDG+) beim ersten Auftreten ausgeschrieben.
+
+**Testpflicht vor Launch**: axe/Lighthouse-A11y in CI; manueller Tastatur-Durchlauf der Entscheidungsseite (inkl. Drawer, Szenario-Auswahl, Modus-Schalter, KI-Consent); Screenreader-Stichprobe (VoiceOver/NVDA) auf 60-Sekunden-Block und Wirkpfad; 200%-Zoom und 320px-Breite ohne Inhaltsverlust.
 
 ## Tokens/Fonts
 

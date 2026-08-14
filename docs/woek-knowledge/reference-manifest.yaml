@@ -138,6 +138,78 @@ references:
       ist aber ÄLTER, nur Entwurf und NICHT führend — Nummern nie über Statusregister stellen.
     last_verified: "2026-08-14"
 
+# ─────────────────────────────────────────────────────────────────────────────
+# ABGLEICH MIT DEM STATUSREGISTER (Prüfung 2026-08-14)
+# assets/data/library-version-registry.json enthält 11 Einträge mit status="führend".
+# Diese 11 Einträge sind 11 MANIFESTATIONEN von 8 Werken — drei Werke werden doppelt
+# geführt (Onlinefassung/Bibliotheksseite + Download-Asset). Es fehlt keine Referenz.
+# Zuordnung (registry_id → reference_id), maschinell prüfbar:
+registry_id_map:
+  WOEK_BUCH:
+    - leading-reference-buch-html                                              # HTML-Landingpage
+    - download-or-document-assets-pdf-die-neue-ordnung-des-wohlstands-pdf      # PDF-Asset
+  WOEMM_2_0:  [woemm-2-0]
+  WOEMS_2_0:  [woems-2-0]
+  WOEK_BEGRIFFSLEITFADEN:
+    - leading-reference-bibliothek-woek-begriffsleitfaden-fuehrend-index-html  # Onlinefassung v1.3
+    - download-or-document-public-downloads-originals-woek-begriffsleitfaden…  # PDF v1.3
+  WOEK_GLOSSAR: [leading-reference-glossar-html]
+  SDG_SDGPLUS_REFERENZRAHMEN:
+    - download-or-document-assets-downloads-woek-sdg-sdgplus-referenzrahmen…   # Lesefassung v0.3 (PDF)
+    - online-version-verstehen-sdgs-sdgplus-index-html                         # führende Onlinefassung „SDGs & SDG+"
+  WOEK_MASTER_ITEMS: [download-or-document-assets-downloads-woek-register-woek-master-items-…]
+  T_SROI_RECHENSTANDARD: [download-or-document-assets-downloads-23-woek-impact-controlling-t-sro…]
+# Summe: 2+1+1+2+1+2+1+1 = 11 ✓
+
+# ─────────────────────────────────────────────────────────────────────────────
+# IMPORT-STATUS DER FÜHRENDEN INHALTE (nicht nur Metadaten) — Stand 2026-08-14
+# FULL = strukturiert maschinenlesbar im Repo · TEXT = nur Volltext/HTML/PDF · GAP = fehlt
+machine_readable_import:
+  WOEMS_2_0:
+    status: FULL
+    artefakte:
+      - {pfad: content/methods/woems-methoden.json, rolle: kanonisch, inhalt: "152 Methoden / 16 Kategorien", version: "2.0", stand: "2026-07-10", sha256: fdfb7cb2484666daa71af84caa376bf3d7c8621dc4d5b493807d505daa1c9a40}
+      - {pfad: public/data/woems-methoden.json, rolle: public-export}
+      - {pfad: public/data/woems-canvas.json, inhalt: "208 Canvas (152 Methoden-Canvas + 56 Varianten)"}
+      - {pfad: "bibliothek/eintraege/woems-2-0/lesen/", inhalt: "245 Kapitelseiten"}
+      - {pfad: api/v1/methods/index.json, inhalt: "152 Methoden (öffentlicher Snapshot)"}
+  WOEK_MASTER_ITEMS:
+    status: FULL
+    artefakte:
+      - {pfad: assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx, inhalt: "621 Items, 28 Regeln, 9 Sheets, 50 Quellen"}
+      - {pfad: assets/data/woek-id-register.json, version: v1.3, inhalt: "621 items, 47 sources", source_hash_sha256: fd0af24ce9261633…}
+    offen: "Quellenzahl 47 (JSON) vs. 50 (XLSX Sheet 07) — Delta von Codex klären"
+  SDG_SDGPLUS_REFERENZRAHMEN:
+    status: FULL
+    artefakte:
+      - {pfad: assets/data/sdg-reference.json, inhalt: "24 Einträge = 17 offizielle SDGs + 7 SDG+"}
+      - {pfad: api/v1/sdg-plus/index.json, inhalt: "24"}
+      - {pfad: "verstehen/sdgs-sdgplus/", inhalt: "33 Portalseiten"}
+  WOEK_BEGRIFFSLEITFADEN:
+    status: TEXT
+    artefakte:
+      - {pfad: content/documents/online/woek-begriffsleitfaden-fuehrend.inc, inhalt: "Volltext HTML 58,6 KB, kumulativ v1.1 + Δv1.2 + Δv1.3", build: scripts/publications/build-begriffsleitfaden-v1.3.py}
+      - {pfad: docs/woek-knowledge/terminology.yaml, inhalt: "21 Kernbegriffe strukturiert (Claude, Erstauszug)"}
+    luecke: "Kein maschinenlesbares Mapping Leitfaden-Definition ↔ Glossar-Begriff (Glossar-Lookup 2121 Begriffe ist unabhängig gepflegt)"
+  T_SROI_RECHENSTANDARD:
+    status: TEXT
+    artefakte:
+      - {pfad: docs/impact-controlling/go10-methodenpapiere/t-sroi-rechenstandard-v1_1.md, inhalt: "113 Zeilen Markdown-Quelle"}
+      - {pfad: assets/js/impact-calculations.js, inhalt: "calculateTSROI — implementierte Rechenlogik"}
+    luecke: "Parameter/Diskontsätze/Schutz-Gate nicht als Daten (JSON) hinterlegt — Rechenstandard und Code können auseinanderlaufen"
+  WOEMM_2_0:
+    status: TEXT
+    artefakte:
+      - {pfad: assets/downloads/grundlagen/woemm-2.0-referenzfassung.pdf, inhalt: "98 Seiten"}
+      - {pfad: "bibliothek/eintraege/woemm-2-0/lesen/", inhalt: "69 Kapitelseiten"}
+    luecke: "Anders als WÖMS 2.0 KEINE strukturierte Registry (Managementfelder/-funktionen, Wirkungsrad, Realisierungsarchitektur nicht maschinenlesbar) → Import-Kandidat"
+  WOEK_BUCH:
+    status: TEXT
+    artefakte: [{pfad: "referenz/", inhalt: "Online-Lesefassung, 1670 Dateien, Kapitel + Cite-Anker"}, {pfad: assets/pdf/die-neue-ordnung-des-wohlstands.pdf}]
+  WOEK_GLOSSAR:
+    status: FULL
+    artefakte: [{pfad: assets/data/glossary-lookup.json, inhalt: "2121 Begriffe (2026-08-05)"}, {pfad: api/v1/glossary/index.json, inhalt: "2092 — Snapshot-Drift, Rebuild nötig"}]
+
 # Domainbezogene Autorität (Konfliktregel): Begriff/Formulierung → Begriffsleitfaden v1.3 · öffentliche Kurzdefinition → Glossar (soweit leitfadenkonform)
 # · Gesamtsystemlogik → Buch · Management → WÖMM 2.0 · Methoden/Canvas/Journeys → WÖMS 2.0 · SDG/SDG+ → Referenzrahmen v0.3 + Onlinefassung
 # · WÖk-IDs/Regeln/Benchmarks/Prüfstatus → Master Items v1.3 · T-SROI → Rechenstandard v1.1.
