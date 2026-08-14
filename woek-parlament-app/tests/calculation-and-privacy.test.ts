@@ -5,6 +5,8 @@ import { UnitValidationError } from "@/lib/calculation/units";
 import { assertExternalReviewSafe } from "@/lib/review/privacy";
 import { createReviewZip } from "@/lib/review/zip";
 import type { ReviewBatchPackage } from "@/lib/review/contracts";
+import { supabaseRest } from "@/lib/database/supabase-admin";
+import { fetchAllDipPages } from "@/lib/dip";
 
 const sourceOperand = (operandId: string, value: number, unit: CalculationOperand["unit"]): CalculationOperand => ({
   operandId,
@@ -92,4 +94,73 @@ test("review ZIP contains only the defined review contract", async () => {
   const zip = await createReviewZip(batch);
   assert.equal(zip.filename, "woek-review-2026-0001.zip");
   assert.ok(zip.bytes.byteLength > 0);
+});
+
+test("protected-schema writes carry the PostgREST content profile", async () => {
+  const originalFetch = globalThis.fetch;
+  const originalUrl = process.env.SUPABASE_URL;
+  const originalKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  process.env.SUPABASE_URL = "https://database.example.test";
+  process.env.SUPABASE_SERVICE_ROLE_KEY = "test-key";
+  let requestHeaders: Headers | undefined;
+  globalThis.fetch = async (_input, init) => {
+    requestHeaders = new Headers(init?.headers);
+    return new Response("[]", { status: 201, headers: { "content-type": "application/json" } });
+  };
+
+  try {
+    await supabaseRest("parliament.parliaments", { method: "POST", body: "{}" });
+    assert.equal(requestHeaders?.get("Accept-Profile"), "parliament");
+    assert.equal(requestHeaders?.get("Content-Profile"), "parliament");
+    assert.equal(requestHeaders?.get("apikey"), "test-key");
+  } finally {
+    globalThis.fetch = originalFetch;
+    if (originalUrl === undefined) delete process.env.SUPABASE_URL;
+    else process.env.SUPABASE_URL = originalUrl;
+    if (originalKey === undefined) delete process.env.SUPABASE_SERVICE_ROLE_KEY;
+    else process.env.SUPABASE_SERVICE_ROLE_KEY = originalKey;
+  }
+});
+
+test("successful minimal database writes do not require a JSON body", async () => {
+  const originalFetch = globalThis.fetch;
+  const originalUrl = process.env.SUPABASE_URL;
+  const originalKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  process.env.SUPABASE_URL = "https://database.example.test";
+  process.env.SUPABASE_SERVICE_ROLE_KEY = "test-key";
+  globalThis.fetch = async () => new Response(null, { status: 201 });
+
+  try {
+    const result = await supabaseRest<void>("parliament.parliaments", { method: "POST", body: "{}" });
+    assert.equal(result, undefined);
+  } finally {
+    globalThis.fetch = originalFetch;
+    if (originalUrl === undefined) delete process.env.SUPABASE_URL;
+    else process.env.SUPABASE_URL = originalUrl;
+    if (originalKey === undefined) delete process.env.SUPABASE_SERVICE_ROLE_KEY;
+    else process.env.SUPABASE_SERVICE_ROLE_KEY = originalKey;
+  }
+});
+
+test("DIP's repeated final cursor closes a complete paginated import", async () => {
+  const originalFetch = globalThis.fetch;
+  const originalKey = process.env.DIP_API_KEY;
+  process.env.DIP_API_KEY = "test-key";
+  let requestCount = 0;
+  globalThis.fetch = async () => {
+    requestCount += 1;
+    return Response.json(requestCount === 1
+      ? { documents: [{ id: "first" }], cursor: "final-page", numFound: 2 }
+      : { documents: [{ id: "second" }], cursor: "final-page", numFound: 2 });
+  };
+
+  try {
+    const result = await fetchAllDipPages("vorgang");
+    assert.equal(result.pageCount, 2);
+    assert.deepEqual(result.documents, [{ id: "first" }, { id: "second" }]);
+  } finally {
+    globalThis.fetch = originalFetch;
+    if (originalKey === undefined) delete process.env.DIP_API_KEY;
+    else process.env.DIP_API_KEY = originalKey;
+  }
 });

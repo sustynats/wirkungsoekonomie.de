@@ -1,19 +1,17 @@
 #!/usr/bin/env node
 
 import { spawnSync } from "node:child_process";
+import { readdirSync } from "node:fs";
 import path from "node:path";
 import { loadEnvFile, readConfigValue } from "./env-utils.mjs";
 
 const env = loadEnvFile();
 const databaseUrl = readConfigValue("DATABASE_URL", env) || readConfigValue("POSTGRES_URL", env) || readConfigValue("SUPABASE_DB_URL", env);
-const files = [
-  "supabase/migrations/202608140001_parliament_core.sql",
-  "supabase/migrations/202608140002_operational_review_pipeline.sql",
-  "supabase/migrations/202608140003_calculation_accounting.sql",
-  "supabase/migrations/202608140004_expose_protected_schema_to_server_api.sql",
-  "supabase/migrations/202608140005_reload_postgrest_schema.sql",
-  "supabase/migrations/202608140006_storage_policy.sql"
-];
+const migrationsDirectory = path.resolve(process.cwd(), "supabase/migrations");
+const files = readdirSync(migrationsDirectory)
+  .filter((file) => /^\d{12}_[a-z0-9_-]+\.sql$/i.test(file))
+  .sort()
+  .map((file) => path.join("supabase/migrations", file));
 
 if (!databaseUrl && !readConfigValue("SUPABASE_PROJECT_REF", env)) {
   console.error("Database access is not configured. Set DATABASE_URL, SUPABASE_DB_URL or link the intended Supabase project before running migrations.");

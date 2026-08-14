@@ -19,6 +19,7 @@ const tables = [
   "parliament.document_chunks",
   "parliament.decision_fact_packages",
   "parliament.import_runs",
+  "parliament.historical_backfill_checkpoints",
   "parliament.materiality_assessments",
   "parliament.review_batches",
   "parliament.review_batch_cases",
