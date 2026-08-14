@@ -7,6 +7,7 @@ const links = [
   ["Anstehend", "/bevorstehend"],
   ["Entscheidungen", "/entscheidungen"],
   ["Historie", "/historie"],
+  ["Mandat", "/mandat-und-umsetzung"],
   ["Monitor", "/monitor"],
   ["Dialog", "/dialog"],
   ["Methodik & Transparenz", "/methodik"]

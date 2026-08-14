@@ -165,6 +165,7 @@ export default function HomePage() {
         <Link href="/methodik"><strong>Methodik verstehen</strong><span>Wie Wirkung, Risiko, Grenzen und positive Netto-Wirkung getrennt geprüft werden.</span></Link>
         <Link href="/transparenz"><strong>Quellen und Unabhängigkeit</strong><span>Was eine Einordnung trägt, wer sie verantwortet und wie Korrekturen sichtbar werden.</span></Link>
         <Link href="/historie"><strong>Aus Entscheidungen lernen</strong><span>Erwartung, tatsächliche Entscheidung und spätere Beobachtung fair vergleichen.</span></Link>
+        <Link href="/mandat-und-umsetzung"><strong>Mandat und Umsetzung</strong><span>Wahlprogramm, Koalitionsvertrag und Beschluss transparent vergleichen – ohne Parteienranking.</span></Link>
       </div>
     </section>
   </>;

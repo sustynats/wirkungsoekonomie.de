@@ -136,11 +136,18 @@ small { display: block; }
 .home-history-grid article > p:not(.kicker) { margin-bottom: .75rem; color: var(--muted); font-size: .9rem; }
 .home-history-grid small { margin-top: auto; color: var(--muted); font-size: .75rem; }
 .home-history-grid a { display: inline-flex; align-items: center; min-height: 44px; margin-top: .55rem; color: var(--navy); font-size: .82rem; font-weight: 850; }
-.home-explore-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+.home-explore-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); }
 .home-explore-grid a { display: grid; align-content: start; min-height: 164px; padding: 1.2rem; color: var(--navy); background: var(--paper); text-decoration: none; }
 .home-explore-grid a:hover { color: var(--navy); background: #f5eddc; }
 .home-explore-grid strong { margin-bottom: .65rem; font-family: var(--serif); font-size: 1.3rem; line-height: 1.15; }
 .home-explore-grid span { color: var(--muted); font-size: .9rem; }
+.mandate-chain { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1px; margin-bottom: 1.5rem; background: var(--line); border: 1px solid var(--line); }
+.mandate-chain article { min-height: 230px; padding: 1.15rem; background: var(--paper); }
+.mandate-chain article > span { display: grid; width: 1.8rem; height: 1.8rem; place-items: center; margin-bottom: 1.3rem; color: var(--paper); background: var(--navy); border-radius: 50%; font-size: .76rem; font-weight: 850; }
+.mandate-chain h2 { font-size: 1.38rem; }
+.mandate-chain article > p:last-child, .mandate-next > p:not(.kicker) { color: var(--muted); font-size: .91rem; }
+.mandate-next { max-width: 880px; padding: clamp(1.2rem, 3vw, 2rem); margin-top: 1.5rem; background: #eef2f5; border-top: 4px solid var(--blue-gray); }
+.mandate-next h2 { max-width: 700px; }
 .home-example { align-items: center; }
 .home-example > div > p:not(.kicker) { max-width: 650px; color: var(--muted); font-size: 1.04rem; }
 .home-example-path { display: grid; gap: .65rem; padding: 0; margin: 0; list-style: none; }
@@ -411,6 +418,8 @@ small { display: block; }
   .home-history-grid article { min-height: 0; }
   .home-explore-grid { grid-template-columns: 1fr; }
   .home-explore-grid a { min-height: 0; }
+  .mandate-chain { grid-template-columns: 1fr; }
+  .mandate-chain article { min-height: 0; }
   .home-example-path { margin-top: .25rem; }
   .home-assurance__checks { grid-template-columns: 1fr; }
   .home-assurance__checks div { min-height: auto; }
