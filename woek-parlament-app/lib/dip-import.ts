@@ -133,8 +133,8 @@ async function fetchWindow(window: DipImportWindow, maxPages: number, legislativ
   return all;
 }
 
-function selectWindows(scope: ImportScope, leadDays: number) {
-  const windows = buildImportWindows(new Date(), leadDays);
+function selectWindows(scope: ImportScope, leadDays: number, historicalBackfillStart: string) {
+  const windows = buildImportWindows(new Date(), leadDays, historicalBackfillStart);
   if (scope === "BOTH") return windows;
   return windows.filter((window) => window.mode === scope);
 }
@@ -167,7 +167,7 @@ async function finishRun(run: ImportRun, status: "SUCCEEDED" | "FAILED", importe
 export async function runDipImport(scope: ImportScope = "BOTH"): Promise<ImportResult> {
   const config = getDipConfiguration();
   if (!config.configured) throw new Error("DIP_API_KEY_MISSING");
-  const windows = selectWindows(scope, config.requestedLeadDays);
+  const windows = selectWindows(scope, config.requestedLeadDays, config.historicalBackfillStart);
   const run = await startRun(scope, windows);
   try {
     const positionSets = await Promise.all(windows.map((window) => fetchWindow(window, config.importMaxPages, config.legislativeTerm)));

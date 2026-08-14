@@ -91,3 +91,49 @@ export async function editorialDashboardCounts() {
     readyForApproval: states.filter((state) => state.readiness === "READY_FOR_APPROVAL").length
   };
 }
+
+type GovernmentTerm = {
+  id: string;
+  label: string;
+  legislative_term_start: string;
+  government_term_start: string;
+  historical_woek_backfill_start: string;
+};
+
+type HistoricalRegistryRow = {
+  parliamentary_case_id: string;
+  selection_status: string;
+  materiality_assessment: string;
+};
+
+/** A registry overview, not a government score. All figures are counts of
+ * documented case states and link back to the decision-level register. */
+export async function historicalBackfillDashboard() {
+  const terms = await supabaseRest<GovernmentTerm[]>(
+    "government_terms?jurisdiction=eq.DE&government_term_end=is.null&select=id,label,legislative_term_start,government_term_start,historical_woek_backfill_start&order=government_term_start.desc&limit=1"
+  );
+  const term = terms[0] ?? null;
+  if (!term) return { term: null, counts: null };
+  const [registry, tasks, calculations, reviews] = await Promise.all([
+    supabaseRest<HistoricalRegistryRow[]>(`historical_decision_registry?government_term_id=eq.${encodeURIComponent(term.id)}&select=parliamentary_case_id,selection_status,materiality_assessment&limit=5000`),
+    supabaseRest<Array<{ parliamentary_case_id: string }>>(`editorial_tasks?status=${activeTaskStatuses}&select=parliamentary_case_id&limit=5000`),
+    supabaseRest<Array<{ parliamentary_case_id: string }>>("calculation_records?select=parliamentary_case_id&calculation_status=in.(DRAFT,REVIEW_REQUIRED)&limit=5000"),
+    supabaseRest<Array<{ parliamentary_case_id: string; status: string }>>("historical_decision_reviews?select=parliamentary_case_id,status&limit=5000")
+  ]);
+  const caseIds = new Set(registry.map((entry) => entry.parliamentary_case_id));
+  const reviewByCase = new Map(reviews.map((review) => [review.parliamentary_case_id, review.status]));
+  return {
+    term,
+    counts: {
+      found: registry.length,
+      preSorted: registry.filter((entry) => entry.materiality_assessment !== "UNSCREENED").length,
+      fullAnalyzed: registry.filter((entry) => reviewByCase.get(entry.parliamentary_case_id) === "APPROVED").length,
+      inCalculation: new Set(calculations.filter((record) => caseIds.has(record.parliamentary_case_id)).map((record) => record.parliamentary_case_id)).size,
+      dataGaps: registry.filter((entry) => entry.selection_status === "DATA_GAP" || entry.selection_status === "NOT_YET_ASSESSABLE").length,
+      openTasks: new Set(tasks.filter((task) => caseIds.has(task.parliamentary_case_id)).map((task) => task.parliamentary_case_id)).size,
+      notMaterial: registry.filter((entry) => entry.selection_status === "NOT_SELECTED_FOR_FULL_IMPACT_REVIEW").length,
+      readyForPublication: registry.filter((entry) => entry.selection_status === "READY_FOR_PUBLICATION").length,
+      published: registry.filter((entry) => entry.selection_status === "PUBLISHED").length
+    }
+  };
+}

@@ -29,12 +29,13 @@ function toIsoDate(value: Date) {
  * the current DIP OpenAPI contract is the source of truth and lives in the
  * adapter configuration in the production import worker.
  */
-export function buildImportWindows(now = new Date(), leadDays = 10): DipImportWindow[] {
+export function buildImportWindows(now = new Date(), leadDays = 10, historicalBackfillStart = "2025-05-06"): DipImportWindow[] {
   const safeLeadDays = Math.min(14, Math.max(7, leadDays));
+  const safeHistoricalStart = /^\d{4}-\d{2}-\d{2}$/.test(historicalBackfillStart) ? historicalBackfillStart : "2025-05-06";
   const lookaheadEnd = new Date(now);
   lookaheadEnd.setUTCDate(lookaheadEnd.getUTCDate() + safeLeadDays);
   return [
-    { mode: "BOOTSTRAP", from: `${now.getUTCFullYear()}-01-01`, to: toIsoDate(now), reviewState: "IMPORTED_UNREVIEWED" },
+    { mode: "BOOTSTRAP", from: safeHistoricalStart, to: toIsoDate(now), reviewState: "IMPORTED_UNREVIEWED" },
     { mode: "LOOKAHEAD", from: toIsoDate(now), to: toIsoDate(lookaheadEnd), reviewState: "IMPORTED_UNREVIEWED" }
   ];
 }
@@ -44,6 +45,7 @@ export function getDipConfiguration() {
     configured: Boolean(process.env.DIP_API_KEY),
     baseUrl: DIP_BASE_URL,
     requestedLeadDays: Math.min(14, Math.max(7, Number(process.env.DIP_LOOKAHEAD_DAYS ?? 10))),
+    historicalBackfillStart: /^\d{4}-\d{2}-\d{2}$/.test(process.env.HISTORICAL_WOEK_BACKFILL_START ?? "") ? process.env.HISTORICAL_WOEK_BACKFILL_START! : "2025-05-06",
     legislativeTerm: Math.max(1, Number(process.env.DIP_WAHLPERIODE ?? 21)),
     importMaxPages: Math.min(20, Math.max(1, Number(process.env.DIP_IMPORT_MAX_PAGES ?? 10)))
   };

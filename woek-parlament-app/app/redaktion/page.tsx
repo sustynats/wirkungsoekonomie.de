@@ -27,7 +27,7 @@ export default async function EditorialDashboardPage() {
         <h1>Meine Aufgaben</h1>
         <p>Nur offene Fragen, die Regeln, bestätigte Quellen und freigegebene Muster nicht verantwortbar entscheiden können.</p>
       </div>
-      <div className="editorial-user"><span>{session.user.email}</span><strong>{session.role}</strong></div>
+      <div className="editorial-user"><span>{session.user.email}</span><strong>{session.role}</strong><Link href="/redaktion/historischer-aufbau">Historischer Aufbau →</Link></div>
     </header>
 
     <section className="editorial-kpis" aria-label="Redaktionsstand">
