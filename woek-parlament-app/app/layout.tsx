@@ -12,10 +12,10 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     metadataBase: new URL(`${protocol}://${host}`),
     title: { default: "Wirkungsportal Parlament", template: "%s | Wirkungsportal Parlament" },
-    description: "Wirkungsorientierte, quellen- und versionssensible Einordnung parlamentarischer Entscheidungen.",
+    description: "Das Wirkungsportal Parlament zeigt, was politische Entscheidungen bewirken könnten – mit Quellen, Rechenwegen, Unsicherheiten und späterer Überprüfung.",
     robots: { index: false, follow: false },
-    openGraph: { type: "website", locale: "de_DE", title: "Wirkungsportal Parlament", description: "Wirkung prüfen. Quellen offenlegen. Lernen.", images: [{ url: "/og.png", width: 1736, height: 909, alt: "Wirkungsportal Parlament" }] },
-    twitter: { card: "summary_large_image", title: "Wirkungsportal Parlament", description: "Wirkung prüfen. Quellen offenlegen. Lernen.", images: ["/og.png"] }
+    openGraph: { type: "website", locale: "de_DE", title: "Wirkungsportal Parlament", description: "Wirkung prüfen. Quellen offenlegen. Aus Entscheidungen lernen.", images: [{ url: "/og.png", width: 1736, height: 909, alt: "Wirkungsportal Parlament" }] },
+    twitter: { card: "summary_large_image", title: "Wirkungsportal Parlament", description: "Wirkung prüfen. Quellen offenlegen. Aus Entscheidungen lernen.", images: ["/og.png"] }
   };
 }
 
