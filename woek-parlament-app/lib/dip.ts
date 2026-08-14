@@ -6,11 +6,13 @@ const dipEnvelopeSchema = z.object({
   numFound: z.number().optional()
 }).passthrough();
 
+export type DipPage = z.infer<typeof dipEnvelopeSchema>;
+
 const baseUrl = "https://search.dip.bundestag.de/api/v1";
 
 export class DipConfigurationError extends Error {}
 
-export async function fetchDipResource(resource: string, params: Record<string, string> = {}) {
+export async function fetchDipResource(resource: string, params: Record<string, string> = {}): Promise<DipPage> {
   const apiKey = process.env.DIP_API_KEY;
   if (!apiKey) throw new DipConfigurationError("DIP_API_KEY is not configured. Live import remains disabled.");
   if (!/^[a-z]+$/i.test(resource)) throw new Error("Invalid DIP resource.");
@@ -40,7 +42,8 @@ export async function fetchDipRecord(resource: string, id: string) {
 }
 
 /** Cursor pagination is mandatory: a partial result set must never be silently
- * treated as a completed parliamentary import. */
+ * treated as a completed parliamentary import. DIP signals the last page by
+ * returning the same cursor value as in the preceding response. */
 export async function fetchAllDipPages(resource: string, params: Record<string, string> = {}, maxPages = 1_000) {
   const documents: unknown[] = [];
   let cursor: string | undefined;
@@ -54,7 +57,7 @@ export async function fetchAllDipPages(resource: string, params: Record<string, 
     previousCursor = cursor;
     cursor = page.cursor;
     pageCount += 1;
-    if (cursor && cursor === previousCursor) throw new Error("DIP pagination cursor did not advance.");
+    if (cursor && cursor === previousCursor) break;
   } while (cursor);
 
   return { documents, pageCount };
