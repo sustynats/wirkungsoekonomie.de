@@ -115,3 +115,4 @@ Kurzlog für die Zwei-Agenten-Arbeit an der WÖk (Website / Akademie / Institut 
 - **Dokumentation:** Architektur- und Launch-Dokumente unter `docs/parlament/tech/`; führende WÖk-Referenzen und Reuse-Map übernommen.
 - **Geprüft:** `npm run lint`, `npm run typecheck`, `npm run build`; lokale Read-API und Security-Header getestet.
 - **Offen:** personalisierten DIP-Schlüssel, private Import-Worker/Supabase-Workbench mit RBAC+MFA, formelle Materialitäts- und Freigaberegeln, Hosting/DNS/TLS und Live-Gates.
+- **Nachtrag DIP:** Der offiziell veröffentlichte Schlüssel ist laut Hilfeseite bis Ende Mai 2027 gültig und funktionsgleich mit einem eigenen Schlüssel; einmaliger serverseitiger Lesetest `GET /api/v1/vorgang` am 2026-08-14: HTTP 200. Nutzung bis Ablauf nur als Hosting-Secret, mit 401-Rotationsalarm; personalisierter Schlüssel ist kein MVP-Gate.

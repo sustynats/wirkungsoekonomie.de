@@ -1,6 +1,8 @@
 # DIP and Open Data
 
-**Entscheidung: BUILD_NEW.** DIP ist die amtliche Quelle für Vorgänge und Dokumente. Die API ist read-only, benötigt bei jeder Anfrage einen gültigen Schlüssel und wird über aktuelle OpenAPI/Swagger-Beschreibungen geführt. Für einen dauerhaften Dienst wird ein personalisierter Schlüssel verwendet, kein flüchtiger Beispiel-/Öffentlichkeitsschlüssel.
+**Entscheidung: BUILD_NEW.** DIP ist die amtliche Quelle für Vorgänge und Dokumente. Die API ist read-only, benötigt bei jeder Anfrage einen gültigen Schlüssel und wird über aktuelle OpenAPI/Swagger-Beschreibungen geführt. Der am 2026-08-14 auf der offiziellen Hilfeseite veröffentlichte Schlüssel gilt dort bis Ende Mai 2027 und hat laut DIP denselben Funktionsumfang wie ein eigener Schlüssel. Der technische Lese-Test gegen `GET /api/v1/vorgang` ergab HTTP 200.
+
+Bis zum veröffentlichten Ablauf darf dieser Schlüssel als serverseitiges Übergangssecret für den Import-Worker verwendet werden. Er gehört weder in Git noch in `NEXT_PUBLIC_*` noch in URLs oder Logs. Der Worker überwacht 401-Antworten als Rotationssignal; ein personalisierter Schlüssel ist langfristige Betriebsabsicherung, kein funktionales Launch-Gate.
 
 ## Zwei Importfenster
 

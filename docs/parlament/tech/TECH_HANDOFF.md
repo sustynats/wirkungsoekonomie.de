@@ -10,7 +10,7 @@
 
 ## Noch vor öffentlichem Launch nötig
 
-1. Dauerhaften DIP-Schlüssel anfordern und die aktuelle OpenAPI-Filterkonfiguration versioniert hinterlegen.
+1. Die aktuelle OpenAPI-Filterkonfiguration versioniert hinterlegen und den bis Ende Mai 2027 öffentlichen DIP-Schlüssel ausschließlich als Hosting-Secret setzen. Einen eigenen Schlüssel rechtzeitig vor Ablauf als Betriebsabsicherung anfordern.
 2. Private Import-Worker + Supabase-Workbench/RBAC/MFA installieren; Bootstrap-Import des laufenden Jahres durchführen.
 3. Redaktionelle Materialitätsregeln, Quellenarchiv-Anbindung, Freigabeteam und Korrekturprozess formell freigeben.
 4. Hosting auswählen, DNS/TLS setzen, Preview und Live-Gates ausführen.
