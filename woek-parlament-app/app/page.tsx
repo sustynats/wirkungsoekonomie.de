@@ -59,6 +59,28 @@ export default function HomePage() {
       </div>
     </section>
 
+    <section className="section container" aria-labelledby="assurance-title">
+      <div className="home-assurance">
+        <div className="home-assurance__intro">
+          <p className="kicker">Vertrauensanker</p>
+          <h2 id="assurance-title">Nicht glauben müssen. Prüfen können.</h2>
+          <p>Das Portal verkündet keine politische Wahrheit. Es arbeitet mit dokumentierten Daten, offengelegten Wirkmodellen und klaren Grenzen der Aussagekraft. Eine Einordnung ist nur so stark wie ihre Quellen, Annahmen und Rechenwege.</p>
+          <p><strong>Wissenschaftlich arbeiten heißt hier:</strong> Begriffe präzise verwenden, Quellen und Methoden versionieren, Gegenargumente zulassen und Unsicherheit sichtbar lassen – statt eine glatte Gesamtnote zu erzeugen.</p>
+        </div>
+        <dl className="home-assurance__checks">
+          <div><dt>Quellen statt Behauptungen</dt><dd>Amtliche Fassungen, Daten und fachliche Quellen sind je Aussage nachvollziehbar verlinkt.</dd></div>
+          <div><dt>Modelle statt Bauchgefühl</dt><dd>Wirkpfade, Rechenregeln und Referenzwerte werden versioniert dokumentiert.</dd></div>
+          <div><dt>Unsicherheit bleibt sichtbar</dt><dd>Fehlt Evidenz oder ein tragfähiges Gegenfaktum, lautet das Ergebnis ausdrücklich: offen oder nicht belastbar quantifizierbar.</dd></div>
+          <div><dt>Unabhängig und korrigierbar</dt><dd>Parteien und Personen sind keine Bewertungsparameter. Neue Evidenz oder Fehler führen zu einer datierten Überprüfung.</dd></div>
+          <div><dt>Datensparsam und geschützt</dt><dd>Keine öffentliche Verhaltensanalyse, kein Werbetracking und keine politische Profilbildung von Besucherinnen oder Besuchern.</dd></div>
+        </dl>
+        <div className="home-assurance__actions">
+          <Link className="button button--primary" href="/transparenz">Quellen und Unabhängigkeit prüfen</Link>
+          <Link className="button" href="/datenschutz">Datenschutz lesen</Link>
+        </div>
+      </div>
+    </section>
+
     <section className="section container" aria-labelledby="benefit-title">
       <div className="section-heading home-section-heading">
         <div><p className="kicker">Ihr Nutzen</p><h2 id="benefit-title">Politik besser prüfen, ohne sich auf eine Blackbox verlassen zu müssen.</h2></div>
