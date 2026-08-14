@@ -563,6 +563,54 @@ begin
 end;
 $$;
 
+-- Escalating a gap changes the machine's backlog, never the current case's
+-- method or public verdict.  The originating task remains fully auditable.
+create or replace function public.create_method_change_request_from_task(
+  p_task_id uuid,
+  p_problem text,
+  p_desired_behavior text,
+  p_reviewer_id uuid,
+  p_priority public.editorial_task_priority default 'NORMAL'
+) returns public.method_change_requests
+language plpgsql
+security invoker
+set search_path = public
+as $$
+declare
+  v_task public.editorial_tasks;
+  v_request public.method_change_requests;
+begin
+  select * into v_task from public.editorial_tasks where id = p_task_id for update;
+  if not found then raise exception 'EDITORIAL_TASK_NOT_FOUND'; end if;
+  if v_task.status not in ('OPEN', 'IN_PROGRESS', 'WAITING_EVIDENCE', 'AI_REQUESTED') then
+    raise exception 'EDITORIAL_TASK_NOT_ESCALATABLE';
+  end if;
+  if length(trim(p_problem)) < 8 or length(trim(p_desired_behavior)) < 8 then
+    raise exception 'METHOD_CHANGE_REQUEST_TOO_SHORT';
+  end if;
+
+  insert into public.method_change_requests (
+    parliamentary_case_id, editorial_task_id, problem, case_example, current_rule,
+    observed_problem, desired_behavior, affected_components, candidate_regression_test,
+    priority, created_by
+  ) values (
+    v_task.parliamentary_case_id, v_task.id, trim(p_problem),
+    jsonb_build_object('task_id', v_task.id, 'question', v_task.question, 'context_refs', v_task.context_refs),
+    jsonb_build_object('router_status', v_task.router_status, 'task_type', v_task.task_type),
+    v_task.reason_manual, trim(p_desired_behavior),
+    jsonb_build_array('DECISION_ROUTER', 'EDITORIAL_TASKS'),
+    jsonb_build_object('given', v_task.context_refs, 'expectation', trim(p_desired_behavior)),
+    p_priority, p_reviewer_id
+  ) returning * into v_request;
+
+  update public.editorial_tasks
+  set status = 'RESOLVED', router_status = 'METHOD_REVIEW_REQUIRED', resolved_at = now(), updated_at = now()
+  where id = v_task.id;
+  perform public.recompute_case_analysis_state(v_task.parliamentary_case_id, 'METHOD_VERSION', v_request.id::text);
+  return v_request;
+end;
+$$;
+
 create or replace function public.touch_editorial_task() returns trigger language plpgsql as $$
 begin new.updated_at := now(); return new; end $$;
 create trigger editorial_tasks_touch before update on public.editorial_tasks for each row execute function public.touch_editorial_task();
@@ -572,8 +620,12 @@ begin new.updated_at := now(); return new; end $$;
 create trigger method_change_requests_touch before update on public.method_change_requests for each row execute function public.touch_method_change_request();
 
 -- Ingestion creates one focused evidence task instead of a queue of speculative
--- impact tasks.  The deterministic engine can screen a case only after the
--- official source passage and fact package are available.
+-- impact tasks, but only for a confirmed near-term event.  A historical import
+-- can contain hundreds of records; placing a source-confirmation task on every
+-- one would turn the editorial dashboard into task spam.  Historical records
+-- remain in the Radar and are opened deliberately for assessment.
+-- The deterministic engine can screen a case only after the official source
+-- passage and fact package are available.
 create or replace function public.create_case_intake_task() returns trigger
 language plpgsql
 security invoker
@@ -585,8 +637,14 @@ declare
 begin
   select * into v_case from public.parliamentary_cases where id = new.parliamentary_case_id;
   if not found then return new; end if;
+  if v_case.next_confirmed_event_on is null
+    or v_case.next_confirmed_event_on < current_date
+    or v_case.next_confirmed_event_on > current_date + 14 then
+    perform public.recompute_case_analysis_state(new.parliamentary_case_id, 'IMPORT', new.id::text);
+    return new;
+  end if;
   v_priority := case
-    when v_case.next_confirmed_event_on is not null and v_case.next_confirmed_event_on <= current_date + 14 then 'HIGH'::public.editorial_task_priority
+    when v_case.next_confirmed_event_on <= current_date + 7 then 'HIGH'::public.editorial_task_priority
     else 'NORMAL'::public.editorial_task_priority
   end;
 
@@ -685,7 +743,9 @@ $$;
 
 revoke all on function public.recompute_case_analysis_state(uuid, text, text) from public, anon, authenticated;
 revoke all on function public.record_editorial_decision(uuid, text, text, jsonb, uuid, text, text) from public, anon, authenticated;
+revoke all on function public.create_method_change_request_from_task(uuid, text, text, uuid, public.editorial_task_priority) from public, anon, authenticated;
 revoke all on function public.is_editorial_member() from public, anon;
 grant execute on function public.recompute_case_analysis_state(uuid, text, text) to service_role;
 grant execute on function public.record_editorial_decision(uuid, text, text, jsonb, uuid, text, text) to service_role;
+grant execute on function public.create_method_change_request_from_task(uuid, text, text, uuid, public.editorial_task_priority) to service_role;
 grant execute on function public.is_editorial_member() to authenticated;

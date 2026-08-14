@@ -7,7 +7,9 @@ const activeTaskStatuses = "in.(OPEN,IN_PROGRESS,WAITING_EVIDENCE,AI_REQUESTED)"
 
 export const editorialDecisionInput = z.object({
   taskId: z.string().uuid(),
-  selectedValue: z.string().trim().min(1).max(120),
+  // A normal choice is short; a batched domain screen is stored as a compact
+  // structured JSON resolution and therefore needs a little more room.
+  selectedValue: z.string().trim().min(1).max(3_000),
   rationale: z.string().trim().max(1_000).optional().default(""),
   sourceRefs: z.array(z.string().uuid()).max(12).default([]),
   reviewerId: z.string().uuid().nullable().default(null),
