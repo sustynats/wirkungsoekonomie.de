@@ -17287,7 +17287,9 @@
         "jobs-to-be-done",
         "product-market-fit",
         "peter-drucker",
-        "gebrauchswert"
+        "gebrauchswert",
+        "value-based-pricing",
+        "wirkungsbasiertes-value-pricing"
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
@@ -24768,7 +24770,8 @@
         "wirkungstragung",
         "nichtkompensationsprinzip",
         "wirkungsgrenze",
-        "reverse-merit-order"
+        "reverse-merit-order",
+        "wirkungsbasiertes-value-pricing"
       ],
       "relatedDocuments": [
         "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
@@ -29420,7 +29423,8 @@
         "gender-data-gap",
         "vollstaendige-information",
         "informationsasymmetrie",
-        "impact-strategie"
+        "impact-strategie",
+        "wirkungsbasiertes-value-pricing"
       ],
       "relatedDocuments": [
         "wirkungscontrolling-detailkonzept-dossier-v1-0",
@@ -32754,7 +32758,8 @@
         "wirkungskapital-und-investitionsgate",
         "wirkungsoekonomisches-methodensystem",
         "wirkungsoekonomisches-managementmodell",
-        "wirkungsskalierungs-diffusions-und-exit-canvas"
+        "wirkungsskalierungs-diffusions-und-exit-canvas",
+        "wirkungsbasiertes-value-pricing"
       ],
       "relatedDocuments": [
         "whitepaper-t-sroi",
@@ -34983,7 +34988,9 @@
         "externalisierungsluecke",
         "wirkungstragung",
         "reverse-merit-order",
-        "nichtkompensationsprinzip"
+        "nichtkompensationsprinzip",
+        "value-based-pricing",
+        "wirkungsbasiertes-value-pricing"
       ],
       "relatedDocuments": [
         "wirkungsdilemmata-kooperation-sdgplus-gesamtstudie"
@@ -35067,6 +35074,31 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
+      "searchBoost": 110
+    },
+    "/begriffe/value-based-pricing/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-value-based-pricing",
+      "documentId": "value-based-pricing",
+      "relatedTerms": [
+        "kundennutzen",
+        "business-value",
+        "value-proposition",
+        "value-proposition-canvas",
+        "wirkungspotenzial",
+        "wirkung",
+        "wirkungszurechnung",
+        "zurechnung-ohne-scheingenauigkeit",
+        "wirkpfad",
+        "wirkungscontrolling",
+        "unvollstaendiger-preis",
+        "preisvollstaendigkeit",
+        "wirkungsbasiertes-value-pricing"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Value-based Pricing und Wirkungsbasiertes Value Pricing · Glossareinordnung v0.1",
       "searchBoost": 110
     },
     "/begriffe/value-proposition-canvas/": {
@@ -38329,6 +38361,40 @@
       "sourceFile": "Glossar-Pack 021: Europäische & internationale Ordnungslogik",
       "searchBoost": 110
     },
+    "/begriffe/wirkungsbasiertes-value-pricing/": {
+      "documentType": "begriff",
+      "status": "woek-praezisierungsbegriff",
+      "version": "0.1",
+      "sectionId": "begriff-wirkungsbasiertes-value-pricing",
+      "documentId": "wirkungsbasiertes-value-pricing",
+      "relatedTerms": [
+        "value-based-pricing",
+        "kundennutzen",
+        "business-value",
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "positive-netto-wirkung",
+        "wirkpfad",
+        "wirkungszurechnung",
+        "zurechnung-ohne-scheingenauigkeit",
+        "systemgrenze",
+        "wirkungscontrolling",
+        "scorecard",
+        "nwi",
+        "t-sroi",
+        "datenqualitaet",
+        "unvollstaendiger-preis",
+        "preisvollstaendigkeit",
+        "nichtkompensationsprinzip",
+        "wirkungsgrenze",
+        "reverse-merit-order",
+        "transformationswirkung"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Wirkungsbasiertes Value Pricing · WÖk-Arbeitsmodell v0.1",
+      "searchBoost": 110
+    },
     "/begriffe/wirkungsbedingte-stranded-assets/": {
       "documentType": "begriff",
       "status": "arbeitsbegriff",
@@ -38727,7 +38793,9 @@
         "mensch-planet-demokratie",
         "sdgs",
         "agenda-2030",
-        "sdg-plus"
+        "sdg-plus",
+        "wirkungsbasiertes-value-pricing",
+        "value-based-pricing"
       ],
       "relatedDocuments": [
         "die-neue-ordnung-des-wohlstands",
@@ -158276,7 +158344,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/index.html",
-      "contentHash": "099fd95b7de9b49f",
+      "contentHash": "cc8a538056b5b7f2",
       "sectionId": "woek-page-06c0a37a8592ce92"
     },
     "/quellenarchiv/wok-e-0001/": {
@@ -163743,6 +163811,30 @@
       "contentHash": "0b045ff001dc0e50",
       "sectionId": "steckbrief-wok-g-93f8f8775f74"
     },
+    "/quellenarchiv/wok-g-9427cdb37b08/": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-9427cdb37b08/index.html",
+      "contentHash": "da842629010d8aa2",
+      "sectionId": "woek-page-c6db88620cf6a2c6"
+    },
+    "/quellenarchiv/wok-g-9427cdb37b08/#glance-wok-g-9427cdb37b08": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-9427cdb37b08/index.html",
+      "contentHash": "da842629010d8aa2",
+      "sectionId": "glance-wok-g-9427cdb37b08"
+    },
+    "/quellenarchiv/wok-g-9427cdb37b08/#steckbrief-wok-g-9427cdb37b08": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-9427cdb37b08/index.html",
+      "contentHash": "da842629010d8aa2",
+      "sectionId": "steckbrief-wok-g-9427cdb37b08"
+    },
     "/quellenarchiv/wok-g-953341c07d99/": {
       "documentType": "Referenz",
       "status": "online-reviewed",
@@ -165350,6 +165442,30 @@
       "sourceFile": "quellenarchiv/wok-g-d30e14e563de/index.html",
       "contentHash": "a93b75fb2bf51334",
       "sectionId": "steckbrief-wok-g-d30e14e563de"
+    },
+    "/quellenarchiv/wok-g-d32cc24c3313/": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-d32cc24c3313/index.html",
+      "contentHash": "ca20e688d9113700",
+      "sectionId": "woek-page-6f440dd07598bc3f"
+    },
+    "/quellenarchiv/wok-g-d32cc24c3313/#glance-wok-g-d32cc24c3313": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-d32cc24c3313/index.html",
+      "contentHash": "ca20e688d9113700",
+      "sectionId": "glance-wok-g-d32cc24c3313"
+    },
+    "/quellenarchiv/wok-g-d32cc24c3313/#steckbrief-wok-g-d32cc24c3313": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-d32cc24c3313/index.html",
+      "contentHash": "ca20e688d9113700",
+      "sectionId": "steckbrief-wok-g-d32cc24c3313"
     },
     "/quellenarchiv/wok-g-d42bcc113c45/": {
       "documentType": "Referenz",
