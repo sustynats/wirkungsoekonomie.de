@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CaseCard } from "@/app/components/CaseCard";
+import { PublishedCaseCard } from "@/app/components/PublishedCaseCard";
 import { dialogueQuestions, monitorRows, parliamentaryCases } from "@/data/cases";
+import { listPublishedPortalCases } from "@/lib/published-cases";
 
 const pageCopy: Record<string, { kicker: string; title: string; lead: string }> = {
   bundestag: { kicker: "Parlament", title: "Deutscher Bundestag", lead: "Der MVP ist von Beginn an für mehrere Parlamente modelliert. Sichtbar ist zunächst nur dieser eindeutige Zuständigkeitsrahmen." },
@@ -37,9 +39,14 @@ function MethodOrTransparency({ section }: { section: string }) {
   return <><header className="page-intro"><p className="kicker">{copy.kicker}</p><h1>{copy.title}</h1><p>{copy.lead}</p></header><section className="editorial-grid">{section === "methodik" ? <><article><h2>Wirkung messen, nicht versprechen</h2><p>Wirkung ist tatsächliche Veränderung von Zuständen. Reichweite und Reporting sind keine Wirkung; Wirkungspotenzial und Wirkungsrisiko bleiben getrennt.</p></article><article><h2>Nichtkompensation</h2><p>Rote Linien werden nicht durch Vorteile an anderer Stelle verrechnet. Die Reverse Merit Order macht Engpässe sichtbar.</p></article><article><h2>Normativer Rahmen</h2><p>Positive Wirkung wird am SDG-/SDG+-Referenzrahmen bewertet. SDG+ ist eine WÖk-Erweiterung, keine UN-Kategorie.</p></article></> : <><article><h2>Institutionelle Herausgeberschaft</h2><p>Das Institut für Wirkungsökonomie verantwortet Quellen- und Korrekturpraxis. Die konkrete Finanzierung und Firewall werden vor Launch vollständig belegt.</p></article><article><h2>Keine Personen- oder Parteibewertung</h2><p>Die Prüfung bezieht sich auf nachvollziehbare Maßnahmen, Fassungen und Wirkpfade. Sie erstellt keine moralische Rangliste.</p></article><article><h2>Fassungssicherheit</h2><p>Eine Analyse nennt ihre Fassung, Quellenstand und Methodenversion. Materielle Änderungen lösen eine fachliche Überprüfung aus.</p></article></>}</section></>;
 }
 
-function Listing({ section }: { section: string }) {
+async function Listing({ section }: { section: string }) {
   const copy = pageCopy[section];
-  return <><header className="page-intro"><p className="kicker">{copy.kicker}</p><h1>{copy.title}</h1><p>{copy.lead}</p></header><div className="notice"><strong>Status vor Inhalt.</strong><p>Amtliche DIP-Metadaten und Fassungen werden versioniert importiert. Öffentliche Filter zeigen ausschließlich redaktionell freigegebene Fälle; bis dahin bleiben sie bewusst nicht sichtbar.</p></div><section className="card-grid">{parliamentaryCases.filter((item) => section === "bevorstehend" ? item.kind === "RADAR" : true).map((item) => <CaseCard key={item.slug} item={item} />)}</section></>;
+  const published = await listPublishedPortalCases();
+  const items = published.filter((item) => {
+    if (section === "bevorstehend" || section === "im-verfahren") return item.nextEvent !== null;
+    return true;
+  });
+  return <><header className="page-intro"><p className="kicker">{copy.kicker}</p><h1>{copy.title}</h1><p>{copy.lead}</p></header><div className="notice"><strong>Status vor Inhalt.</strong><p>Amtliche DIP-Metadaten und Fassungen werden versioniert importiert. Öffentliche Filter zeigen ausschließlich redaktionell freigegebene Fälle; bis dahin bleiben sie bewusst nicht sichtbar.</p></div>{items.length ? <section className="card-grid">{items.map((item) => <PublishedCaseCard key={item.id} item={item} />)}</section> : <section className="editorial-empty"><h2>Noch keine freigegebenen Fälle</h2><p>Der amtliche Import und die redaktionelle Prüfung laufen getrennt. Ein Vorgang erscheint hier erst nach Quellen-, Fassungs- und Fachprüfung.</p>{section === "bevorstehend" ? <p>Der tägliche Radarimport erfasst den nächsten bestätigten parlamentarischen Zeitraum mit einem Vorlauf von 7 bis 14 Tagen.</p> : null}</section>}<section className="card-grid" aria-label="Methodischer Musterfall"><CaseCard item={parliamentaryCases[0]} /></section></>;
 }
 
 export default async function SectionPage({ params }: { params: Promise<{ section: string }> }) {

@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { parliamentaryCases, type ParliamentaryCase } from "@/data/cases";
+import { parliamentaryCases } from "@/data/cases";
 import { formatDate } from "@/lib/cases";
+import { listPublishedPortalCases, type PublishedPortalCase } from "@/lib/published-cases";
 
 const benefits = [
   ["Vor der Entscheidung", "Sie sehen die maßgebliche Fassung, den parlamentarischen Stand und die Fragen, die für mögliche Wirkung entscheidend sind."],
@@ -8,9 +9,9 @@ const benefits = [
   ["Nach der Entscheidung", "Das Portal hält fest, was erwartet wurde, was später beobachtbar ist und wann eine Einordnung überprüft werden muss."],
 ];
 
-function priorityCase(): { item: ParliamentaryCase; isUpcoming: boolean } | undefined {
+async function priorityCase(): Promise<{ item: PublishedPortalCase; isUpcoming: boolean } | undefined> {
   const now = Date.now();
-  const published = parliamentaryCases.filter((item) => item.editorialStatus === "PUBLISHED");
+  const published = await listPublishedPortalCases();
   const upcoming = published
     .filter((item) => item.nextEvent && new Date(item.nextEvent).getTime() >= now)
     .sort((a, b) => new Date(a.nextEvent ?? 0).getTime() - new Date(b.nextEvent ?? 0).getTime())[0];
@@ -19,8 +20,8 @@ function priorityCase(): { item: ParliamentaryCase; isUpcoming: boolean } | unde
   return latest ? { item: latest, isUpcoming: false } : undefined;
 }
 
-function CurrentPriority() {
-  const priority = priorityCase();
+async function CurrentPriority() {
+  const priority = await priorityCase();
   if (!priority) {
     return <aside className="home-priority" aria-label="Aktueller Stand des Wirkungsradars">
       <p className="kicker">Aktuell im Radar</p>
@@ -34,9 +35,9 @@ function CurrentPriority() {
   const { item, isUpcoming } = priority;
   return <aside className="home-priority" aria-label={isUpcoming ? "Nächste relevante Entscheidung" : "Zuletzt veröffentlichte Entscheidung"}>
     <p className="kicker">{isUpcoming ? "Als Nächstes" : "Zuletzt veröffentlicht"}</p>
-    <h2>{item.plainTitle}</h2>
+    <h2>{item.title}</h2>
     <p>{isUpcoming ? `Nächster bestätigter Termin: ${formatDate(item.nextEvent ?? "")}.` : `Stand der Veröffentlichung: ${formatDate(item.lastUpdated)}.`}</p>
-    <p>{item.summary}</p>
+    <p>Der veröffentlichte Wirkungscheck trennt amtliche Fakten, Wirkungsanalyse, normative Einordnung und verbleibende Unsicherheit.</p>
     <Link className="button button--light" href={`/entscheidungen/${item.slug}`}>{isUpcoming ? "Wirkungscheck öffnen" : "Entscheidung ansehen"}</Link>
   </aside>;
 }
@@ -83,7 +84,7 @@ function RecentConclusions() {
   </section>;
 }
 
-export default function HomePage() {
+export default async function HomePage() {
   return <>
     <section className="hero container">
       <div>
