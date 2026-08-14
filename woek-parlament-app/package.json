@@ -8,9 +8,10 @@
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "test": "node --experimental-strip-types --test lib/calculation/*.test.ts"
+    "test": "node --experimental-strip-types --test lib/calculation/*.test.ts lib/editorial/*.test.ts"
   },
   "dependencies": {
+    "fflate": "^0.8.3",
     "next": "16.3.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",

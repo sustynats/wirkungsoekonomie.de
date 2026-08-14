@@ -51,6 +51,19 @@ politischem Interesse. Er lädt amtliche Vorgänge, dedupliziert, bildet
 DecisionUnits, wendet den gleichen Wirkungsrelevanzstandard an und erzeugt
 erst danach begrenzte Aufgaben/Microtasks. Importe veröffentlichen nichts.
 
+## Übergabe an den strukturierten WÖk-Review
+
+Nach einem vollständigen Register erzeugt die Redaktion aus Quellendaten
+kleine Review-Batches, nicht einen Gesamtprompt für alle Entscheidungen. Das
+Backend prüft jedes Detailpaket vor dem Export und lässt keine unvollständige
+primäre Entscheidungsgrundlage in eine substantielle Prüfung. Details:
+[`HISTORICAL_REVIEW_PIPELINE.md`](HISTORICAL_REVIEW_PIPELINE.md).
+
+Ein externer Review kann Wirkpfade, Variablen, Datenbedarf, Gegenfaktum,
+WÖk-/SDG-/SDG+-Kandidaten und Risiken strukturiert vorbereiten. Die
+Calculation Engine rechnet anschließend ausschließlich mit dokumentierten,
+typisierten und freigegebenen Eingaben. Fehlende Werte bleiben `DATA_GAP`.
+
 Die öffentliche Überschrift lautet **„Wirkungsbilanz der laufenden
 Regierungszeit – seit 6. Mai 2025“**. Sie aggregiert keine Regierungspunktzahl;
 zulässig sind nur nachvollziehbare Muster über freigegebene Einzelfälle, etwa
