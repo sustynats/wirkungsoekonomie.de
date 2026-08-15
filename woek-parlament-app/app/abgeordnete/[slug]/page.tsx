@@ -19,7 +19,6 @@ export default async function MemberProfilePage({ params }: { params: Promise<{ 
   const { slug } = await params;
   const profile = await getPublishedMemberProfile(slug);
   if (!profile) notFound();
-  const percentage = profile.summary.agreementRate === null ? "–" : new Intl.NumberFormat("de-DE", { style: "percent", maximumFractionDigits: 1 }).format(profile.summary.agreementRate);
   return <div className="shell decision-page member-profile-page">
     <nav className="breadcrumb" aria-label="Brotkrumen"><Link href="/">Startseite</Link><span>/</span><Link href="/abgeordnete">Abstimmungen im Wirkungscheck</Link><span>/</span><span>{profile.displayName}</span></nav>
     <header className="member-profile-header">
@@ -27,8 +26,8 @@ export default async function MemberProfilePage({ params }: { params: Promise<{ 
       <div><p className="eyebrow">Amtlich dokumentierte namentliche Abstimmungen</p><h1>{profile.displayName}</h1><p className="lead">{[profile.parliamentaryGroup, profile.federalState, profile.constituency, profile.mandateType].filter(Boolean).join(" · ")}</p><Link className="text-link" href={`/abgeordnete/${profile.slug}/quelle`}>Quellendetail ansehen <span aria-hidden="true">→</span></Link></div>
     </header>
     <section className="member-summary" aria-label="Zusammenfassung einzelner namentlicher Abstimmungen">
-      <div><span>Dokumentierter Abgleich</span><strong>{percentage}</strong><small>kein Ranking und keine Gesamtbewertung; nur abgegebene, eindeutig einordenbare namentliche Stimmen</small></div>
-      <div><span>Auswertbar</span><strong>{profile.summary.scorable}</strong><small>{profile.summary.aligned} entsprechend · {profile.summary.notAligned} abweichend</small></div>
+      <div><span>Eindeutig zuordenbare Einzelfälle</span><strong>{profile.summary.scorable}</strong><small>nur namentliche Stimmen mit dokumentierter ex-ante Option</small></div>
+      <div><span>Dokumentierte Stimmen</span><strong>{profile.votes.length}</strong><small>{profile.summary.aligned} entsprechend · {profile.summary.notAligned} abweichend</small></div>
       <div><span>Getrennt ausgewiesen</span><strong>{profile.summary.abstained + profile.summary.didNotVote}</strong><small>{profile.summary.abstained} Enthaltungen · {profile.summary.didNotVote} nicht abgestimmt</small></div>
     </section>
     <section className="decision-section" aria-labelledby="votes-title"><p className="eyebrow">Einzelne amtliche Abstimmungen</p><h2 id="votes-title">Jeder Wert führt zurück zur Entscheidung.</h2>

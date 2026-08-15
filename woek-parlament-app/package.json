@@ -22,6 +22,7 @@
     "review:export-upcoming": "tsx scripts/export-upcoming-review-batch.ts",
     "review:export-batch": "tsx scripts/export-review-batch.ts",
     "reviews:prepare-upcoming": "tsx scripts/run-upcoming-preparation.ts",
+    "fachanalysen:import-full-text": "node scripts/import-fachanalyse-full-text.mjs",
     "review:export-mandate": "tsx scripts/export-mandate-review-batch.ts",
     "review:export-final-historical": "tsx scripts/export-final-historical-review.ts",
     "review:import-final-evidence": "tsx scripts/import-final-evidence-archive.ts",

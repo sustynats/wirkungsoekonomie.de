@@ -7,7 +7,7 @@ test("search finds public cases by words from the decision content", () => {
   const results = searchPublicCases(parliamentaryCases, { ...defaultSearchFilters, query: "zugang" });
   assert.ok(results.length > 0);
   assert.ok(results.some((item) => item.slug === "musterfall-fassungswechsel"));
-  assert.ok(results.every((item) => [item.title, item.plainTitle, item.summary, item.whatIsDecided, item.intendedGoal, item.parliamentaryStatus, item.analysisStatus, ...item.impactPath, ...item.affectedGroups, ...item.questions, ...item.sources.map((source) => `${source.title} ${source.publisher}`)].join(" ").toLocaleLowerCase("de-DE").includes("zugang")));
+  assert.ok(results.every((item) => [item.title, item.plainTitle, item.summary, item.whatIsDecided, item.intendedGoal, item.parliamentaryStatus, item.analysisStatus, ...item.impactPath, ...item.affectedGroups, ...item.questions, ...item.sources.map((source) => `${source.title} ${source.publisher}`)].join(" ").toLocaleLowerCase("de-DE").normalize("NFD").replace(/[\u0300-\u036f]/g, "").includes("zugang")));
 });
 
 test("search filters by content type and never invents unseen results", () => {

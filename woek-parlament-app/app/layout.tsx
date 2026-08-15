@@ -48,15 +48,13 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
                 <span className="brand-mark" aria-hidden="true">W</span>
                 <span><strong>Wirkungsportal Parlament</strong><small>Parlamentarische Entscheidungen verstehen · Wirkungen prüfen · Entscheidungen rückkoppeln</small></span>
               </Link>
-              <div className="header-navigation">
-                <nav className="portal-utility-nav" aria-label="Schnellzugriffe">
-                  <Link href="/suche">Suche</Link>
-                  <WirkungsraumLink>Mein Wirkungsraum</WirkungsraumLink>
-                  <AudienceModeSwitch />
-                  <a className="ecosystem-link" href="https://wirkungsoekonomie.de">Wirkungsökonomie.de <span aria-hidden="true">↗</span></a>
-                </nav>
-                <PortalNav />
-              </div>
+              <nav className="portal-utility-nav" aria-label="Schnellzugriffe">
+                <Link href="/suche">Suche</Link>
+                <WirkungsraumLink>Mein Wirkungsraum</WirkungsraumLink>
+                <AudienceModeSwitch />
+                <a className="ecosystem-link" href="https://wirkungsoekonomie.de">Wirkungsökonomie.de <span aria-hidden="true">↗</span></a>
+              </nav>
+              <PortalNav />
             </div>
           </div>
         </header>

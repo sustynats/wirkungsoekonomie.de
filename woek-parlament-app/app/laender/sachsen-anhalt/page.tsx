@@ -21,8 +21,8 @@ export default function SaxonyAnhaltPage() {
             <h1>Was könnten die Programme für Sachsen-Anhalt bewirken?</h1>
             <p className="lead">Zur Landtagswahl am {electionDate} bereitet das Portal die Wahlprogramme verständlich auf: Welche Veränderung wird jeweils angestrebt? Für wen? Über welchen Wirkpfad? Wo liegen Risiken, Grenzen und offene Datenfragen?</p>
             <div className="hero-actions">
-              <a className="button button-primary" href="#so-funktioniert-es">So wird geprüft</a>
-              <Link className="button button-secondary" href="/laender/sachsen-anhalt/quellen">Quellen ansehen</Link>
+              <Link className="button button-primary" href="/laender/sachsen-anhalt/ziele">28 Landesziele ansehen</Link>
+              <Link className="button button-secondary" href="/laender/sachsen-anhalt/quellen">Quellen und Programme</Link>
             </div>
           </div>
           <aside className="state-hero-fact" aria-label="Einordnung des Wahlbereichs">
@@ -31,8 +31,7 @@ export default function SaxonyAnhaltPage() {
             <p>Deshalb zeigt der Vergleich Wirkungspotenzial und Wirkungsrisiken klar getrennt von tatsächlich beobachteter Wirkung. Eine Parteizugehörigkeit ist kein Bewertungskriterium.</p>
             <dl>
               <div><dt>Wahltag</dt><dd>{electionDate}</dd></div>
-              <div><dt>Start</dt><dd>Quellen- und Programmprüfung</dd></div>
-              <div><dt>Danach</dt><dd>Entscheidungen und Umsetzung verfolgen</dd></div>
+              <div><dt>28 Landesziele</dt><dd>mit Fundstelle und SDG-Bezug</dd></div>
             </dl>
           </aside>
         </div>
@@ -65,18 +64,18 @@ export default function SaxonyAnhaltPage() {
       </section>
 
       <section className="shell section section-surface state-publication-status" aria-labelledby="state-status-title">
-        <div><p className="eyebrow">Veröffentlichungsstand</p><h2 id="state-status-title">Die Programme werden erst nach Quellenprüfung verglichen.</h2><p className="lead">Der Wahlbereich ist bewusst vor der ersten Bewertung sichtbar. So ist nachvollziehbar, welche Quellen geprüft werden und nach welchem Maßstab der spätere Vergleich entsteht – ohne eine voreilige Einordnung zu behaupten.</p></div>
+        <div><p className="eyebrow">Referenzrahmen und Programme</p><h2 id="state-status-title">Landesziele und Programme bleiben getrennt nachvollziehbar.</h2><p className="lead">Die landeseigenen Nachhaltigkeitsziele sind mit ihren Fundstellen veröffentlicht. Für jedes Wahlprogramm entsteht eine eigene, quellengestützte Wirkungsakte – nicht eine aus Wahlkampftexten abgeleitete Gesamtwertung.</p></div>
         <ul>
-          <li><strong>1. Primärquelle</strong><span>Jede Programmaussage erhält Fassung, Abrufzeitpunkt und Fundstelle.</span></li>
-          <li><strong>2. Prüfen statt punkten</strong><span>Keine Parteienrangliste und keine Gesamtpunktzahl. Einzelne Zusagen bleiben mit ihren Annahmen sichtbar.</span></li>
-          <li><strong>3. Vollständig machen</strong><span>Nach der Zulassung der Landeslisten wird der Quellenbestand nach derselben öffentlichen Regel vervollständigt.</span></li>
+          <li><strong>1. Landesziele</strong><span>28 Zieltexte der Nachhaltigkeitsstrategie sind mit Fundstelle, Indikatorbezug, SDG-Bezug und Wirkungsräumen dokumentiert.</span></li>
+          <li><strong>2. Programme</strong><span>Jede künftige Programmakte braucht Fassung, Fundstelle, Wirkpfad, Zuständigkeit, Bedingungen und Datenlücken – keine Parteipunktzahl.</span></li>
+          <li><strong>3. Entscheidungen</strong><span>Nach der Wahl werden Koalitionsvereinbarung, Landtagsentscheidungen, Umsetzung und spätere Beobachtung als getrennte Stationen verbunden.</span></li>
         </ul>
       </section>
 
       <section className="shell section state-next" aria-labelledby="state-next-title">
         <div><p className="eyebrow">Was als Nächstes kommt</p><h2 id="state-next-title">Vom Programm zur überprüfbaren politischen Praxis.</h2></div>
         <ol>
-          <li><span>01</span><div><h3>Wahlprogramme</h3><p>Quellenbasiert, verständlich und mit Wirkungspotenzialen statt Parolen.</p></div></li>
+          <li><span>01</span><div><h3>Wahlprogramme</h3><p>Welche Vorschläge stehen in den Originalfassungen – und welche Wirkungspotenziale, Risiken und Bedingungen sind daran gebunden?</p></div></li>
           <li><span>02</span><div><h3>Koalitionsvereinbarung</h3><p>Welche Zusagen werden übernommen, verändert oder nicht vereinbart?</p></div></li>
           <li><span>03</span><div><h3>Landtagsentscheidungen</h3><p>Was steht konkret zur Entscheidung – und was könnte vor dem Beschluss noch verbessert werden?</p></div></li>
           <li><span>04</span><div><h3>Wirkungsmonitor</h3><p>Was lässt sich später tatsächlich beobachten und begründet zurückkoppeln?</p></div></li>

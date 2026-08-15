@@ -143,10 +143,37 @@ export type PublicReviewDetail = {
 };
 
 /**
- * A public working act is deliberately narrower than a published professional
- * opinion. It makes the official decision, the provisional impact logic and
- * remaining work visible without asserting an observed impact or a final
- * recommendation.
+ * The complete, approved review payload. It is rendered as a dedicated
+ * navigable Fachakte in addition to the orientation views. Keeping this
+ * source-bound record prevents the overview layer from becoming the only
+ * public representation of a review.
+ */
+export type PublicFullReview = {
+  result: Record<string, unknown>;
+  sourceManifest: Array<Record<string, unknown>>;
+  sourceHash: string;
+  sourceDocumentHash: string;
+  requiredContentPaths: string[];
+  renderedContentPaths: string[];
+  duplicateMappings: Array<{ sourcePath: string; renderedAt: string }>;
+  unrenderedContentPaths: string[];
+};
+
+/** Plain-language statements approved with the analytical review. */
+export type PublicEditorialSummary = {
+  keyStatement: string;
+  whatIsKnown?: string;
+  whatIsNotYetKnown?: string;
+  evidenceBoundary?: string;
+  improvementOptions: string[];
+};
+
+/**
+ * A public working act keeps the official decision, provisional impact logic
+ * and remaining work distinct. Its detailed review is published progressively:
+ * an understandable entry point first, then all approved public reasoning,
+ * data gaps and boundaries – without asserting observed impact or a final
+ * recommendation that the underlying evidence cannot support.
  */
 export type PublicWorkingAct = {
   maturity: PublicMaturityStatus;
@@ -156,8 +183,10 @@ export type PublicWorkingAct = {
   risks: string[];
   dataGaps: string[];
   counterfactualQuestions: string[];
+  editorialSummary?: PublicEditorialSummary;
   normativeMapping?: PublicNormativeMapping;
   reviewDetail?: PublicReviewDetail;
+  fullReview?: PublicFullReview;
 };
 
 export type ParliamentaryCase = {

@@ -1,0 +1,970 @@
+{
+  "sourceLabel": "Freigegebener Fachbestand Release 1.0",
+  "publisher": "Institut für Wirkungsökonomie",
+  "importedAt": "2026-08-15T19:38:13.736Z",
+  "archiveHash": "0ca0bcceb48d8b41b4b481f7070f1c20e0ed86abce72c38371575d54452ad7e4",
+  "archiveEntries": 42,
+  "originalPathWithheld": true,
+  "schema_version": "1.0.0",
+  "register_id": "sachsen-anhalt-nachhaltigkeitsstrategie-2022",
+  "jurisdiction_id": "sachsen-anhalt",
+  "source": {
+    "title": "Nachhaltigkeitsstrategie des Landes Sachsen-Anhalt – Neuauflage 2022",
+    "published_at": "2022-09-20",
+    "source_url": "https://mwu.sachsen-anhalt.de/api/media/230220_Nachhaltigkeitsstrategie_Sachsen-Anhalt-1.pdf?collection=document",
+    "source_sha256": "07654ed01f23a8cc5bd81321e9a9bba1e38aeb59978c29f4fad05fd9b4ef849b",
+    "declared_target_count": 28
+  },
+  "framework_separation": {
+    "global_reference_frame": "Die 17 SDGs der Agenda 2030 gelten als gemeinsamer Referenzrahmen für alle Länder.",
+    "state_strategy_role": "Die Nachhaltigkeitsstrategie Sachsen-Anhalt 2022 ist eine zusätzliche, versionierte Konkretisierung mit landeseigenen Zielen und Indikatoren; sie ersetzt die SDGs nicht.",
+    "constitutional_anchors": "Landesverfassung, Grundrechte, Staatsziele und Schutzaufträge sind getrennte rechtliche Prüfanker und werden nicht als Strategieziel oder SDG ausgegeben.",
+    "external_effects": "Wirkungen auf Bund, andere Länder, EU und globale öffentliche Güter werden als eigener Wirkungsraum geführt und nicht stillschweigend zugerechnet."
+  },
+  "targets": [
+    {
+      "id": "st-sa-2022-001",
+      "jurisdiction_id": "sachsen-anhalt",
+      "label": "Armutsgefährdungsquote senken",
+      "source_quote": "Perspektivisch wird für Sachsen-Anhalt eine Reduzierung der Armutsgefährdungsquote um drei Prozentpunkte angestrebt.",
+      "source_location": {
+        "page": 49,
+        "section": "SDG 1 – 1.2 Ziele"
+      },
+      "sdg_codes": [
+        "SDG_01"
+      ],
+      "indicator_refs": [
+        "1.1.a"
+      ],
+      "target_type": "QUANTIFIED",
+      "target_value": {
+        "value": -3,
+        "unit": "Prozentpunkte",
+        "target_date": null
+      },
+      "measurement_boundary": "Bevölkerung in Privathaushalten in Sachsen-Anhalt; besondere Aufmerksamkeit für vulnerable Gruppen.",
+      "effect_space": {
+        "sachsen_anhalt": "Direkter, durch die Landesstrategie definierter Wirkungs- und Messraum: Bevölkerung in Privathaushalten in Sachsen-Anhalt; besondere Aufmerksamkeit für vulnerable Gruppen.",
+        "other_states_or_federal": "Bundesrecht, Konjunktur und Transfers beeinflussen die Quote; Effekte außerhalb des Landes sind nicht der Landesstrategie zurechenbar.",
+        "europe_or_global": "Der Bezug zu europäischen oder globalen öffentlichen Gütern wird als eigener Wirkungsraum geführt. Eine Zielerreichung in Sachsen-Anhalt wird nicht stillschweigend als Wirkung auf Bund, EU oder globale Güter zugerechnet.",
+        "status": "SOURCE_SUPPORTED"
+      },
+      "valid_from": "2022-09-20",
+      "valid_to": null,
+      "source_ref": "sachsen-anhalt-nachhaltigkeitsstrategie-2022"
+    },
+    {
+      "id": "st-sa-2022-002",
+      "jurisdiction_id": "sachsen-anhalt",
+      "label": "Mindestsicherungsquote senken",
+      "source_quote": "Perspektivisch wird für Sachsen-Anhalt eine Reduzierung des Anteils der Menschen, die auf Mindestsicherungsleistungen angewiesen sind, um drei Prozentpunkte angestrebt.",
+      "source_location": {
+        "page": 49,
+        "section": "SDG 1 – 1.2 Ziele"
+      },
+      "sdg_codes": [
+        "SDG_01"
+      ],
+      "indicator_refs": [
+        "1.2.a,b"
+      ],
+      "target_type": "QUANTIFIED",
+      "target_value": {
+        "value": -3,
+        "unit": "Prozentpunkte",
+        "target_date": null
+      },
+      "measurement_boundary": "Empfängerinnen und Empfänger sozialer Mindestsicherungsleistungen in Sachsen-Anhalt.",
+      "effect_space": {
+        "sachsen_anhalt": "Direkter, durch die Landesstrategie definierter Wirkungs- und Messraum: Empfängerinnen und Empfänger sozialer Mindestsicherungsleistungen in Sachsen-Anhalt.",
+        "other_states_or_federal": "Bundesgesetzliche Leistungssysteme und Arbeitsmarktentwicklung wirken mit; externe Effekte bleiben getrennt.",
+        "europe_or_global": "Der Bezug zu europäischen oder globalen öffentlichen Gütern wird als eigener Wirkungsraum geführt. Eine Zielerreichung in Sachsen-Anhalt wird nicht stillschweigend als Wirkung auf Bund, EU oder globale Güter zugerechnet.",
+        "status": "SOURCE_SUPPORTED"
+      },
+      "valid_from": "2022-09-20",
+      "valid_to": null,
+      "source_ref": "sachsen-anhalt-nachhaltigkeitsstrategie-2022"
+    },
+    {
+      "id": "st-sa-2022-003",
+      "jurisdiction_id": "sachsen-anhalt",
+      "label": "Stickstoffüberschuss der Landwirtschaft senken",
+      "source_quote": "Für Sachsen-Anhalt wird für das Jahr 2030 ein Zielwert von 40 kg N/ha als Flächenbilanz-Überschuss im Mittel des Landes vorgegeben.",
+      "source_location": {
+        "page": 51,
+        "section": "SDG 2 – Landbewirtschaftung, 1.2 Ziele"
+      },
+      "sdg_codes": [
+        "SDG_02",
+        "SDG_06",
+        "SDG_15"
+      ],
+      "indicator_refs": [
+        "2.1.a"
+      ],
+      "target_type": "QUANTIFIED",
+      "target_value": {
+        "value": 40,
+        "unit": "kg N/ha und Jahr",
+        "target_date": "2030-12-31"
+      },
+      "measurement_boundary": "Landwirtschaftlich genutzte Fläche; Flächenbilanz im Landesmittel.",
+      "effect_space": {
+        "sachsen_anhalt": "Direkter, durch die Landesstrategie definierter Wirkungs- und Messraum: Landwirtschaftlich genutzte Fläche; Flächenbilanz im Landesmittel.",
+        "other_states_or_federal": "Einträge in Flussgebiete, Luft und Grundwasser können andere Länder und globale Umweltgüter betreffen; Zurechnung erfordert Stoffstromdaten.",
+        "europe_or_global": "Der Bezug zu europäischen oder globalen öffentlichen Gütern wird als eigener Wirkungsraum geführt. Eine Zielerreichung in Sachsen-Anhalt wird nicht stillschweigend als Wirkung auf Bund, EU oder globale Güter zugerechnet.",
+        "status": "SOURCE_SUPPORTED"
+      },
+      "valid_from": "2022-09-20",
+      "valid_to": null,
+      "source_ref": "sachsen-anhalt-nachhaltigkeitsstrategie-2022"
+    },
+    {
+      "id": "st-sa-2022-004",
+      "jurisdiction_id": "sachsen-anhalt",
+      "label": "Anteil ökologischer Landwirtschaft ausweiten",
+      "source_quote": "Zielwert 2030 für Sachsen-Anhalt: 20 Prozent der landwirtschaftlich genutzten Fläche.",
+      "source_location": {
+        "page": 94,
+        "section": "Indikatorenbericht 2.2 Ökologische Landwirtschaft"
+      },
+      "sdg_codes": [
+        "SDG_02",
+        "SDG_12",
+        "SDG_15"
+      ],
+      "indicator_refs": [
+        "2.2"
+      ],
+      "target_type": "QUANTIFIED",
+      "target_value": {
+        "value": 20,
+        "unit": "Prozent der landwirtschaftlich genutzten Fläche",
+        "target_date": "2030-12-31"
+      },
+      "measurement_boundary": "Ökologisch bewirtschaftete Fläche in Sachsen-Anhalt nach geltendem Öko-Recht.",
+      "effect_space": {
+        "sachsen_anhalt": "Direkter, durch die Landesstrategie definierter Wirkungs- und Messraum: Ökologisch bewirtschaftete Fläche in Sachsen-Anhalt nach geltendem Öko-Recht.",
+        "other_states_or_federal": "Markt-, Lieferketten- und Biodiversitätseffekte reichen über das Land hinaus; keine automatische globale Wirkung zurechnen.",
+        "europe_or_global": "Der Bezug zu europäischen oder globalen öffentlichen Gütern wird als eigener Wirkungsraum geführt. Eine Zielerreichung in Sachsen-Anhalt wird nicht stillschweigend als Wirkung auf Bund, EU oder globale Güter zugerechnet.",
+        "status": "SOURCE_SUPPORTED"
+      },
+      "valid_from": "2022-09-20",
+      "valid_to": null,
+      "source_ref": "sachsen-anhalt-nachhaltigkeitsstrategie-2022"
+    },
+    {
+      "id": "st-sa-2022-005",
+      "jurisdiction_id": "sachsen-anhalt",
+      "label": "Vorzeitige Sterblichkeit reduzieren",
+      "source_quote": "Bis zum Jahr 2030 sollte die vorzeitige Sterblichkeit bei Frauen bei höchstens 100 und bei Männern bei höchstens 190 Todesfällen je 100.000 Einwohner liegen.",
+      "source_location": {
+        "page": 53,
+        "section": "SDG 3 – Gesunde Bevölkerung, 1.2 Ziele"
+      },
+      "sdg_codes": [
+        "SDG_03"
+      ],
+      "indicator_refs": [
+        "3.1.a,b"
+      ],
+      "target_type": "QUANTIFIED",
+      "target_value": {
+        "value": "Frauen ≤100; Männer ≤190",
+        "unit": "Todesfälle je 100.000 Einwohner:innen",
+        "target_date": "2030-12-31"
+      },
+      "measurement_boundary": "Vorzeitige Sterblichkeit der Wohnbevölkerung Sachsen-Anhalts, geschlechtsspezifisch.",
+      "effect_space": {
+        "sachsen_anhalt": "Direkter, durch die Landesstrategie definierter Wirkungs- und Messraum: Vorzeitige Sterblichkeit der Wohnbevölkerung Sachsen-Anhalts, geschlechtsspezifisch.",
+        "other_states_or_federal": "Bundesweite Gesundheitsversorgung, Mobilität und Risikofaktoren wirken mit; keine alleinige Landeskausalität.",
+        "europe_or_global": "Der Bezug zu europäischen oder globalen öffentlichen Gütern wird als eigener Wirkungsraum geführt. Eine Zielerreichung in Sachsen-Anhalt wird nicht stillschweigend als Wirkung auf Bund, EU oder globale Güter zugerechnet.",
+        "status": "SOURCE_SUPPORTED"
+      },
+      "valid_from": "2022-09-20",
+      "valid_to": null,
+      "source_ref": "sachsen-anhalt-nachhaltigkeitsstrategie-2022"
+    },
+    {
+      "id": "st-sa-2022-006",
+      "jurisdiction_id": "sachsen-anhalt",
+      "label": "Raucherquote senken",
+      "source_quote": "Bis zum Jahr 2030 soll der Anteil der Raucherinnen und Raucher bei allen Personen ab 15 Jahren auf 19 Prozent abgesenkt werden.",
+      "source_location": {
+        "page": 53,
+        "section": "SDG 3 – Gesunde Bevölkerung, 1.2 Ziele"
+      },
+      "sdg_codes": [
+        "SDG_03"
+      ],
+      "indicator_refs": [
+        "3.1.d"
+      ],
+      "target_type": "QUANTIFIED",
+      "target_value": {
+        "value": 19,
+        "unit": "Prozent der Bevölkerung ab 15 Jahren",
+        "target_date": "2030-12-31"
+      },
+      "measurement_boundary": "Wohnbevölkerung Sachsen-Anhalts ab 15 Jahren.",
+      "effect_space": {
+        "sachsen_anhalt": "Direkter, durch die Landesstrategie definierter Wirkungs- und Messraum: Wohnbevölkerung Sachsen-Anhalts ab 15 Jahren.",
+        "other_states_or_federal": "Bundessteuer-, Werbe- und Produktregeln wirken mit; grenzüberschreitende Markteffekte sind separat zu prüfen.",
+        "europe_or_global": "Der Bezug zu europäischen oder globalen öffentlichen Gütern wird als eigener Wirkungsraum geführt. Eine Zielerreichung in Sachsen-Anhalt wird nicht stillschweigend als Wirkung auf Bund, EU oder globale Güter zugerechnet.",
+        "status": "SOURCE_SUPPORTED"
+      },
+      "valid_from": "2022-09-20",
+      "valid_to": null,
+      "source_ref": "sachsen-anhalt-nachhaltigkeitsstrategie-2022"
+    },
+    {
+      "id": "st-sa-2022-007",
+      "jurisdiction_id": "sachsen-anhalt",
+      "label": "Adipositasquote bei Erwachsenen stabilisieren",
+      "source_quote": "Das Wissen zu Bewegung und gesunder Ernährung soll verbessert werden, um den Anteil der erwachsenen Bevölkerung mit Adipositas auf dem aktuellen Niveau zu halten und einen weiteren Anstieg zu vermeiden.",
+      "source_location": {
+        "page": 54,
+        "section": "SDG 3 – Gesunde Bevölkerung, 1.2 Ziele"
+      },
+      "sdg_codes": [
+        "SDG_03"
+      ],
+      "indicator_refs": [
+        "3.1.f"
+      ],
+      "target_type": "DIRECTIONAL",
+      "target_value": {
+        "value": null,
+        "unit": null,
+        "target_date": null
+      },
+      "measurement_boundary": "Erwachsene Wohnbevölkerung Sachsen-Anhalts; BMI-basierter Indikator.",
+      "effect_space": {
+        "sachsen_anhalt": "Direkter, durch die Landesstrategie definierter Wirkungs- und Messraum: Erwachsene Wohnbevölkerung Sachsen-Anhalts; BMI-basierter Indikator.",
+        "other_states_or_federal": "Lebensmittelmarkt, Einkommen und Bundespolitik wirken mit; externe Wirkung bleibt Evidenzfrage.",
+        "europe_or_global": "Der Bezug zu europäischen oder globalen öffentlichen Gütern wird als eigener Wirkungsraum geführt. Eine Zielerreichung in Sachsen-Anhalt wird nicht stillschweigend als Wirkung auf Bund, EU oder globale Güter zugerechnet.",
+        "status": "SOURCE_SUPPORTED"
+      },
+      "valid_from": "2022-09-20",
+      "valid_to": null,
+      "source_ref": "sachsen-anhalt-nachhaltigkeitsstrategie-2022"
+    },
+    {
+      "id": "st-sa-2022-008",
+      "jurisdiction_id": "sachsen-anhalt",
+      "label": "Mitgliedschaft und Organisationsgrad in Sportvereinen halten oder erhöhen",
+      "source_quote": "Beibehaltung oder Erhöhung der Anzahl der Mitglieder in Sportvereinen sowie des Organisationsgrades.",
+      "source_location": {
+        "page": 58,
+        "section": "SDG 3 – Bewegung durch Mitgliedschaft im Sportverein, 3.2 Ziele"
+      },
+      "sdg_codes": [
+        "SDG_03",
+        "SDG_10"
+      ],
+      "indicator_refs": [
+        "3.ST1"
+      ],
+      "target_type": "DIRECTIONAL",
+      "target_value": {
+        "value": null,
+        "unit": null,
+        "target_date": null
+      },
+      "measurement_boundary": "Mitglieder in Sportvereinen und Anteil an der Landesbevölkerung.",
+      "effect_space": {
+        "sachsen_anhalt": "Direkter, durch die Landesstrategie definierter Wirkungs- und Messraum: Mitglieder in Sportvereinen und Anteil an der Landesbevölkerung.",
+        "other_states_or_federal": "Überregionale Vereins- und Verbandsstrukturen können mitwirken; Wirkung außerhalb Sachsen-Anhalts nicht zurechnen.",
+        "europe_or_global": "Der Bezug zu europäischen oder globalen öffentlichen Gütern wird als eigener Wirkungsraum geführt. Eine Zielerreichung in Sachsen-Anhalt wird nicht stillschweigend als Wirkung auf Bund, EU oder globale Güter zugerechnet.",
+        "status": "SOURCE_SUPPORTED"
+      },
+      "valid_from": "2022-09-20",
+      "valid_to": null,
+      "source_ref": "sachsen-anhalt-nachhaltigkeitsstrategie-2022"
+    },
+    {
+      "id": "st-sa-2022-009",
+      "jurisdiction_id": "sachsen-anhalt",
+      "label": "Verdienstabstand zwischen Frauen und Männern verringern",
+      "source_quote": "Die Erreichung von Lohngleichheit ist Bestandteil des Landesziels der wirtschaftlichen Unabhängigkeit aller Geschlechter.",
+      "source_location": {
+        "page": 60,
+        "section": "SDG 5 – Gleichstellung, 1.2 Ziele"
+      },
+      "sdg_codes": [
+        "SDG_05",
+        "SDG_08",
+        "SDG_10"
+      ],
+      "indicator_refs": [
+        "5.1.a"
+      ],
+      "target_type": "DIRECTIONAL",
+      "target_value": {
+        "value": null,
+        "unit": null,
+        "target_date": null
+      },
+      "measurement_boundary": "Bruttostundenverdienste von Frauen und Männern in Sachsen-Anhalt.",
+      "effect_space": {
+        "sachsen_anhalt": "Direkter, durch die Landesstrategie definierter Wirkungs- und Messraum: Bruttostundenverdienste von Frauen und Männern in Sachsen-Anhalt.",
+        "other_states_or_federal": "Tarif-, Branchen- und Bundesrechtsstrukturen wirken mit; Landesbeitrag ist getrennt zu identifizieren.",
+        "europe_or_global": "Der Bezug zu europäischen oder globalen öffentlichen Gütern wird als eigener Wirkungsraum geführt. Eine Zielerreichung in Sachsen-Anhalt wird nicht stillschweigend als Wirkung auf Bund, EU oder globale Güter zugerechnet.",
+        "status": "SOURCE_SUPPORTED"
+      },
+      "valid_from": "2022-09-20",
+      "valid_to": null,
+      "source_ref": "sachsen-anhalt-nachhaltigkeitsstrategie-2022"
+    },
+    {
+      "id": "st-sa-2022-010",
+      "jurisdiction_id": "sachsen-anhalt",
+      "label": "Repräsentanz von Frauen in kommunalen Vertretungen verbessern",
+      "source_quote": "Die Landesregierung strebt eine verbesserte Repräsentanz von Frauen in kommunalen Vertretungen an.",
+      "source_location": {
+        "page": 61,
+        "section": "SDG 5 – Gleichberechtigte Beteiligung, 2.2 Ziele"
+      },
+      "sdg_codes": [
+        "SDG_05",
+        "SDG_16"
+      ],
+      "indicator_refs": [
+        "5.2.a"
+      ],
+      "target_type": "DIRECTIONAL",
+      "target_value": {
+        "value": null,
+        "unit": null,
+        "target_date": null
+      },
+      "measurement_boundary": "Mandate in Kreistagen und Stadträten kreisfreier Städte in Sachsen-Anhalt.",
+      "effect_space": {
+        "sachsen_anhalt": "Direkter, durch die Landesstrategie definierter Wirkungs- und Messraum: Mandate in Kreistagen und Stadträten kreisfreier Städte in Sachsen-Anhalt.",
+        "other_states_or_federal": "Keine Zurechnung auf Parteien oder Personen; bundesweite Wahlrechts- und Kulturfaktoren bleiben getrennt.",
+        "europe_or_global": "Der Bezug zu europäischen oder globalen öffentlichen Gütern wird als eigener Wirkungsraum geführt. Eine Zielerreichung in Sachsen-Anhalt wird nicht stillschweigend als Wirkung auf Bund, EU oder globale Güter zugerechnet.",
+        "status": "SOURCE_SUPPORTED"
+      },
+      "valid_from": "2022-09-20",
+      "valid_to": null,
+      "source_ref": "sachsen-anhalt-nachhaltigkeitsstrategie-2022"
+    },
+    {
+      "id": "st-sa-2022-011",
+      "jurisdiction_id": "sachsen-anhalt",
+      "label": "Phosphorbelastung in Fließgewässern reduzieren",
+      "source_quote": "Ziel ist es, die Phosphorbelastung in den Gewässern zu reduzieren und die gewässertypspezifischen Orientierungswerte einzuhalten.",
+      "source_location": {
+        "page": 62,
+        "section": "SDG 6 – Gewässerqualität Phosphor, 1.2 Ziele"
+      },
+      "sdg_codes": [
+        "SDG_06",
+        "SDG_14",
+        "SDG_15"
+      ],
+      "indicator_refs": [
+        "6.1.a"
+      ],
+      "target_type": "RULE_BASED",
+      "target_value": {
+        "value": 0.1,
+        "unit": "mg Gesamtphosphor/l (Orientierungswert für die betrachteten Fließgewässertypen)",
+        "target_date": null
+      },
+      "measurement_boundary": "Repräsentative Fließgewässermessstellen und Gewässertypen in Sachsen-Anhalt.",
+      "effect_space": {
+        "sachsen_anhalt": "Direkter, durch die Landesstrategie definierter Wirkungs- und Messraum: Repräsentative Fließgewässermessstellen und Gewässertypen in Sachsen-Anhalt.",
+        "other_states_or_federal": "Flussgebiete überschreiten Landesgrenzen; Beiträge anderer Länder und des Bundes sind getrennt zu berücksichtigen.",
+        "europe_or_global": "Der Bezug zu europäischen oder globalen öffentlichen Gütern wird als eigener Wirkungsraum geführt. Eine Zielerreichung in Sachsen-Anhalt wird nicht stillschweigend als Wirkung auf Bund, EU oder globale Güter zugerechnet.",
+        "status": "SOURCE_SUPPORTED"
+      },
+      "valid_from": "2022-09-20",
+      "valid_to": null,
+      "source_ref": "sachsen-anhalt-nachhaltigkeitsstrategie-2022",
+      "target_value_status": "RULE_ORIENTATION_VALUE_NOT_UNIVERSAL_SCALAR_TARGET"
+    },
+    {
+      "id": "st-sa-2022-012",
+      "jurisdiction_id": "sachsen-anhalt",
+      "label": "Nitrat-Schwellenwert im Grundwasser einhalten",
+      "source_quote": "Ziel ist es, bis 2027 an allen Grundwassermessstellen Überschreitungen von 50 mg Nitrat/l zu vermeiden und den Schwellenwert einzuhalten.",
+      "source_location": {
+        "page": 63,
+        "section": "SDG 6 – Nitrat im Grundwasser, 2.2 Ziele"
+      },
+      "sdg_codes": [
+        "SDG_06",
+        "SDG_02",
+        "SDG_15"
+      ],
+      "indicator_refs": [
+        "6.1.b"
+      ],
+      "target_type": "QUANTIFIED",
+      "target_value": {
+        "value": 50,
+        "unit": "mg Nitrat/l (maximal)",
+        "target_date": "2027-12-31"
+      },
+      "measurement_boundary": "Repräsentative Grundwassermessstellen in Sachsen-Anhalt; lange Fließzeiten sind zu beachten.",
+      "effect_space": {
+        "sachsen_anhalt": "Direkter, durch die Landesstrategie definierter Wirkungs- und Messraum: Repräsentative Grundwassermessstellen in Sachsen-Anhalt; lange Fließzeiten sind zu beachten.",
+        "other_states_or_federal": "Grundwasserkörper und Agrarmärkte können grenzüberschreitend wirken; zeitverzögerte Effekte nicht allein dem Land zurechnen.",
+        "europe_or_global": "Der Bezug zu europäischen oder globalen öffentlichen Gütern wird als eigener Wirkungsraum geführt. Eine Zielerreichung in Sachsen-Anhalt wird nicht stillschweigend als Wirkung auf Bund, EU oder globale Güter zugerechnet.",
+        "status": "SOURCE_SUPPORTED"
+      },
+      "valid_from": "2022-09-20",
+      "valid_to": null,
+      "source_ref": "sachsen-anhalt-nachhaltigkeitsstrategie-2022"
+    },
+    {
+      "id": "st-sa-2022-013",
+      "jurisdiction_id": "sachsen-anhalt",
+      "label": "Guten ökologischen Zustand oberirdischer Binnengewässer erreichen",
+      "source_quote": "Spätestens bis zum Jahr 2027 ist der gute ökologische Zustand für alle Oberflächenwasserkörper zu erreichen.",
+      "source_location": {
+        "page": 64,
+        "section": "SDG 6 – Ökologischer Zustand, 3.2 Ziele"
+      },
+      "sdg_codes": [
+        "SDG_06",
+        "SDG_14",
+        "SDG_15"
+      ],
+      "indicator_refs": [
+        "6.1.ST1"
+      ],
+      "target_type": "RULE_BASED",
+      "target_value": {
+        "value": null,
+        "unit": "guter ökologischer Zustand nach Wasserrahmenrichtlinie",
+        "target_date": "2027-12-31"
+      },
+      "measurement_boundary": "Fließgewässer- und Seenwasserkörper Sachsen-Anhalts nach Wasserrahmenrichtlinie.",
+      "effect_space": {
+        "sachsen_anhalt": "Direkter, durch die Landesstrategie definierter Wirkungs- und Messraum: Fließgewässer- und Seenwasserkörper Sachsen-Anhalts nach Wasserrahmenrichtlinie.",
+        "other_states_or_federal": "Einzugsgebiete und Gewässernetze reichen über Landesgrenzen; Maßnahmenbeiträge müssen flussgebietsbezogen getrennt werden.",
+        "europe_or_global": "Der Bezug zu europäischen oder globalen öffentlichen Gütern wird als eigener Wirkungsraum geführt. Eine Zielerreichung in Sachsen-Anhalt wird nicht stillschweigend als Wirkung auf Bund, EU oder globale Güter zugerechnet.",
+        "status": "SOURCE_SUPPORTED"
+      },
+      "valid_from": "2022-09-20",
+      "valid_to": null,
+      "source_ref": "sachsen-anhalt-nachhaltigkeitsstrategie-2022"
+    },
+    {
+      "id": "st-sa-2022-014",
+      "jurisdiction_id": "sachsen-anhalt",
+      "label": "Gewässerstruktur und Durchgängigkeit verbessern",
+      "source_quote": "Gewässergüte, naturnahe Strukturen und ökologische Durchgängigkeit sind Voraussetzung für den guten ökologischen Zustand; möglichst alle signifikanten Querbauwerke sollen für den Fischaufstieg durchgängig sein.",
+      "source_location": {
+        "page": 64,
+        "section": "SDG 6 – Gewässerstruktur / Indikatoren"
+      },
+      "sdg_codes": [
+        "SDG_06",
+        "SDG_14",
+        "SDG_15"
+      ],
+      "indicator_refs": [
+        "6.1.ST2"
+      ],
+      "target_type": "RULE_BASED",
+      "target_value": {
+        "value": null,
+        "unit": "Strukturklasse und Anteil durchgängiger Querbauwerke",
+        "target_date": "2027-12-31"
+      },
+      "measurement_boundary": "WRRL-Berichtsnetz der Fließgewässer in Sachsen-Anhalt; Talsperren als ausgewiesene Ausnahme.",
+      "effect_space": {
+        "sachsen_anhalt": "Direkter, durch die Landesstrategie definierter Wirkungs- und Messraum: WRRL-Berichtsnetz der Fließgewässer in Sachsen-Anhalt; Talsperren als ausgewiesene Ausnahme.",
+        "other_states_or_federal": "Wanderfische und Flussgebiete betreffen andere Länder und europäische Gewässer; Wirkung ist flussgebietsbezogen zu messen.",
+        "europe_or_global": "Der Bezug zu europäischen oder globalen öffentlichen Gütern wird als eigener Wirkungsraum geführt. Eine Zielerreichung in Sachsen-Anhalt wird nicht stillschweigend als Wirkung auf Bund, EU oder globale Güter zugerechnet.",
+        "status": "SOURCE_SUPPORTED"
+      },
+      "valid_from": "2022-09-20",
+      "valid_to": null,
+      "source_ref": "sachsen-anhalt-nachhaltigkeitsstrategie-2022"
+    },
+    {
+      "id": "st-sa-2022-015",
+      "jurisdiction_id": "sachsen-anhalt",
+      "label": "Endenergieverbrauch senken und Energieeffizienz erhöhen",
+      "source_quote": "Die Energieeffizienz soll erhöht und der Endenergieverbrauch gesenkt werden; im Mit-Maßnahmen-Szenario werden bis 2030 Einsparpotenziale von 20 Prozent beschrieben.",
+      "source_location": {
+        "page": 65,
+        "section": "SDG 7 – Ressourcenschonung / Erneuerbare Energien, 1.2 Ziele"
+      },
+      "sdg_codes": [
+        "SDG_07",
+        "SDG_13"
+      ],
+      "indicator_refs": [
+        "7.1.ST1"
+      ],
+      "target_type": "DIRECTIONAL",
+      "target_value": {
+        "value": null,
+        "unit": null,
+        "target_date": "2030-12-31"
+      },
+      "measurement_boundary": "Endenergieverbrauch der Verbrauchssektoren in Sachsen-Anhalt.",
+      "effect_space": {
+        "sachsen_anhalt": "Direkter, durch die Landesstrategie definierter Wirkungs- und Messraum: Endenergieverbrauch der Verbrauchssektoren in Sachsen-Anhalt.",
+        "other_states_or_federal": "Energieimporte, Bundesregeln und Konjunktur wirken mit; ein beschriebenes Potenzial ist kein automatisch zurechenbarer Zielerfolg.",
+        "europe_or_global": "Der Bezug zu europäischen oder globalen öffentlichen Gütern wird als eigener Wirkungsraum geführt. Eine Zielerreichung in Sachsen-Anhalt wird nicht stillschweigend als Wirkung auf Bund, EU oder globale Güter zugerechnet.",
+        "status": "SOURCE_SUPPORTED"
+      },
+      "valid_from": "2022-09-20",
+      "valid_to": null,
+      "source_ref": "sachsen-anhalt-nachhaltigkeitsstrategie-2022"
+    },
+    {
+      "id": "st-sa-2022-016",
+      "jurisdiction_id": "sachsen-anhalt",
+      "label": "Primärenergieverbrauch reduzieren",
+      "source_quote": "Der Primärenergieverbrauch dient als Gradmesser für Ressourcenverbrauch und Treibhausgasemissionen und soll im Rahmen der Energieeffizienz- und Klimapolitik sinken.",
+      "source_location": {
+        "page": 65,
+        "section": "SDG 7 – Ressourcenschonung / Erneuerbare Energien"
+      },
+      "sdg_codes": [
+        "SDG_07",
+        "SDG_12",
+        "SDG_13"
+      ],
+      "indicator_refs": [
+        "7.1.b"
+      ],
+      "target_type": "DIRECTIONAL",
+      "target_value": {
+        "value": null,
+        "unit": null,
+        "target_date": "2030-12-31"
+      },
+      "measurement_boundary": "Primärenergieverbrauch Sachsen-Anhalts nach Länderenergiebilanz.",
+      "effect_space": {
+        "sachsen_anhalt": "Direkter, durch die Landesstrategie definierter Wirkungs- und Messraum: Primärenergieverbrauch Sachsen-Anhalts nach Länderenergiebilanz.",
+        "other_states_or_federal": "Import-/Exportbilanzen und Bundesenergiemix wirken mit; externe Emissionen sind gesondert auszuweisen.",
+        "europe_or_global": "Der Bezug zu europäischen oder globalen öffentlichen Gütern wird als eigener Wirkungsraum geführt. Eine Zielerreichung in Sachsen-Anhalt wird nicht stillschweigend als Wirkung auf Bund, EU oder globale Güter zugerechnet.",
+        "status": "SOURCE_SUPPORTED"
+      },
+      "valid_from": "2022-09-20",
+      "valid_to": null,
+      "source_ref": "sachsen-anhalt-nachhaltigkeitsstrategie-2022"
+    },
+    {
+      "id": "st-sa-2022-017",
+      "jurisdiction_id": "sachsen-anhalt",
+      "label": "Erneuerbare Energien am Endenergieverbrauch ausbauen",
+      "source_quote": "Zielwert 2030 für Sachsen-Anhalt: 45 Prozent Anteil erneuerbarer Energien am Endenergieverbrauch.",
+      "source_location": {
+        "page": 124,
+        "section": "Indikatorenbericht 7.2.a"
+      },
+      "sdg_codes": [
+        "SDG_07",
+        "SDG_13"
+      ],
+      "indicator_refs": [
+        "7.2.a"
+      ],
+      "target_type": "QUANTIFIED",
+      "target_value": {
+        "value": 45,
+        "unit": "Prozent",
+        "target_date": "2030-12-31"
+      },
+      "measurement_boundary": "Brutto-Endenergieverbrauch in Sachsen-Anhalt einschließlich relevanter Verluste und Eigenverbräuche.",
+      "effect_space": {
+        "sachsen_anhalt": "Direkter, durch die Landesstrategie definierter Wirkungs- und Messraum: Brutto-Endenergieverbrauch in Sachsen-Anhalt einschließlich relevanter Verluste und Eigenverbräuche.",
+        "other_states_or_federal": "Energiehandel und Lieferketten wirken über Landes- und EU-Grenzen; territoriale und verbrauchsbezogene Wirkung trennen.",
+        "europe_or_global": "Der Bezug zu europäischen oder globalen öffentlichen Gütern wird als eigener Wirkungsraum geführt. Eine Zielerreichung in Sachsen-Anhalt wird nicht stillschweigend als Wirkung auf Bund, EU oder globale Güter zugerechnet.",
+        "status": "SOURCE_SUPPORTED"
+      },
+      "valid_from": "2022-09-20",
+      "valid_to": null,
+      "source_ref": "sachsen-anhalt-nachhaltigkeitsstrategie-2022"
+    },
+    {
+      "id": "st-sa-2022-018",
+      "jurisdiction_id": "sachsen-anhalt",
+      "label": "Erneuerbare Energien am Bruttostromverbrauch ausbauen",
+      "source_quote": "Zielwert 2030 für Sachsen-Anhalt: 100 Prozent Anteil erneuerbarer Energien am Bruttostromverbrauch.",
+      "source_location": {
+        "page": 126,
+        "section": "Indikatorenbericht 7.2.b"
+      },
+      "sdg_codes": [
+        "SDG_07",
+        "SDG_13"
+      ],
+      "indicator_refs": [
+        "7.2.b"
+      ],
+      "target_type": "QUANTIFIED",
+      "target_value": {
+        "value": 100,
+        "unit": "Prozent",
+        "target_date": "2030-12-31"
+      },
+      "measurement_boundary": "Bruttostromverbrauch einschließlich Austauschsaldo, Kraftwerkseigenverbrauch und Netzverlusten.",
+      "effect_space": {
+        "sachsen_anhalt": "Direkter, durch die Landesstrategie definierter Wirkungs- und Messraum: Bruttostromverbrauch einschließlich Austauschsaldo, Kraftwerkseigenverbrauch und Netzverlusten.",
+        "other_states_or_federal": "Stromexporte und Importe machen die Wirkung bundes- und europäisch; territoriale Erzeugung nicht mit Verbrauchswirkung gleichsetzen.",
+        "europe_or_global": "Der Bezug zu europäischen oder globalen öffentlichen Gütern wird als eigener Wirkungsraum geführt. Eine Zielerreichung in Sachsen-Anhalt wird nicht stillschweigend als Wirkung auf Bund, EU oder globale Güter zugerechnet.",
+        "status": "SOURCE_SUPPORTED"
+      },
+      "valid_from": "2022-09-20",
+      "valid_to": null,
+      "source_ref": "sachsen-anhalt-nachhaltigkeitsstrategie-2022"
+    },
+    {
+      "id": "st-sa-2022-019",
+      "jurisdiction_id": "sachsen-anhalt",
+      "label": "Erwerbstätigenquote erhöhen",
+      "source_quote": "Bis 2030 soll die Erwerbstätigenquote der 20- bis 64-Jährigen auf 83 Prozent, der 55- bis 64-Jährigen auf 77 Prozent und die Quote der Frauen auf 80 Prozent steigen.",
+      "source_location": {
+        "page": 66,
+        "section": "SDG 8 – Nachhaltiges Wirtschaftswachstum und Arbeit, 1.2 Ziele"
+      },
+      "sdg_codes": [
+        "SDG_08",
+        "SDG_05",
+        "SDG_10"
+      ],
+      "indicator_refs": [
+        "8.5.a,b"
+      ],
+      "target_type": "QUANTIFIED",
+      "target_value": {
+        "value": "20–64: 83; 55–64: 77; Frauen: 80",
+        "unit": "Prozent",
+        "target_date": "2030-12-31"
+      },
+      "measurement_boundary": "Wohnbevölkerung Sachsen-Anhalts in den jeweiligen Alters- und Geschlechtsgruppen.",
+      "effect_space": {
+        "sachsen_anhalt": "Direkter, durch die Landesstrategie definierter Wirkungs- und Messraum: Wohnbevölkerung Sachsen-Anhalts in den jeweiligen Alters- und Geschlechtsgruppen.",
+        "other_states_or_federal": "Bundesarbeitsmarkt, Pendeln und Migration wirken mit; Landesmaßnahmen nicht allein kausal zurechnen.",
+        "europe_or_global": "Der Bezug zu europäischen oder globalen öffentlichen Gütern wird als eigener Wirkungsraum geführt. Eine Zielerreichung in Sachsen-Anhalt wird nicht stillschweigend als Wirkung auf Bund, EU oder globale Güter zugerechnet.",
+        "status": "SOURCE_SUPPORTED"
+      },
+      "valid_from": "2022-09-20",
+      "valid_to": null,
+      "source_ref": "sachsen-anhalt-nachhaltigkeitsstrategie-2022"
+    },
+    {
+      "id": "st-sa-2022-020",
+      "jurisdiction_id": "sachsen-anhalt",
+      "label": "Einkommensreichtumsquote stabil halten",
+      "source_quote": "Parallel zur Reduzierung der Armutsgefährdung soll die Einkommensreichtumsquote auf dem derzeitigen Niveau stabil gehalten werden.",
+      "source_location": {
+        "page": 69,
+        "section": "SDG 10 – Einkommensreichtumsquote, 1.2 Ziele"
+      },
+      "sdg_codes": [
+        "SDG_10",
+        "SDG_01"
+      ],
+      "indicator_refs": [
+        "10.2.ST1"
+      ],
+      "target_type": "DIRECTIONAL",
+      "target_value": {
+        "value": null,
+        "unit": null,
+        "target_date": null
+      },
+      "measurement_boundary": "Einkommensreichtumsquote der Bevölkerung in Privathaushalten Sachsen-Anhalts.",
+      "effect_space": {
+        "sachsen_anhalt": "Direkter, durch die Landesstrategie definierter Wirkungs- und Messraum: Einkommensreichtumsquote der Bevölkerung in Privathaushalten Sachsen-Anhalts.",
+        "other_states_or_federal": "Steuer-, Transfer- und Kapitalmarkteffekte liegen teilweise auf Bundesebene; Landeswirkung ist separat zu identifizieren.",
+        "europe_or_global": "Der Bezug zu europäischen oder globalen öffentlichen Gütern wird als eigener Wirkungsraum geführt. Eine Zielerreichung in Sachsen-Anhalt wird nicht stillschweigend als Wirkung auf Bund, EU oder globale Güter zugerechnet.",
+        "status": "SOURCE_SUPPORTED"
+      },
+      "valid_from": "2022-09-20",
+      "valid_to": null,
+      "source_ref": "sachsen-anhalt-nachhaltigkeitsstrategie-2022"
+    },
+    {
+      "id": "st-sa-2022-021",
+      "jurisdiction_id": "sachsen-anhalt",
+      "label": "Gini-Koeffizient der Äquivalenzeinkommen nicht erhöhen und möglichst senken",
+      "source_quote": "Das Ziel besteht darin, die Einkommensungleichheit zu verringern, zumindest aber nicht zu erhöhen und den Gini-Koeffizienten stabil zu halten beziehungsweise weiter zu reduzieren.",
+      "source_location": {
+        "page": 70,
+        "section": "SDG 10 – Gini-Koeffizient, 2.2 Ziele"
+      },
+      "sdg_codes": [
+        "SDG_10",
+        "SDG_01"
+      ],
+      "indicator_refs": [
+        "10.2"
+      ],
+      "target_type": "DIRECTIONAL",
+      "target_value": {
+        "value": null,
+        "unit": null,
+        "target_date": null
+      },
+      "measurement_boundary": "Äquivalenzeinkommen der Bevölkerung in Privathaushalten Sachsen-Anhalts.",
+      "effect_space": {
+        "sachsen_anhalt": "Direkter, durch die Landesstrategie definierter Wirkungs- und Messraum: Äquivalenzeinkommen der Bevölkerung in Privathaushalten Sachsen-Anhalts.",
+        "other_states_or_federal": "Bundessteuer- und Transfersysteme dominieren Teile der Verteilung; keine alleinige Landeszurechnung.",
+        "europe_or_global": "Der Bezug zu europäischen oder globalen öffentlichen Gütern wird als eigener Wirkungsraum geführt. Eine Zielerreichung in Sachsen-Anhalt wird nicht stillschweigend als Wirkung auf Bund, EU oder globale Güter zugerechnet.",
+        "status": "SOURCE_SUPPORTED"
+      },
+      "valid_from": "2022-09-20",
+      "valid_to": null,
+      "source_ref": "sachsen-anhalt-nachhaltigkeitsstrategie-2022"
+    },
+    {
+      "id": "st-sa-2022-022",
+      "jurisdiction_id": "sachsen-anhalt",
+      "label": "Flächenneuinanspruchnahme begrenzen",
+      "source_quote": "Sachsen-Anhalt strebt eine durchschnittliche Flächenneuinanspruchnahme von unter 1 Hektar, möglichst 0,75 Hektar, bis zum Jahr 2030 an.",
+      "source_location": {
+        "page": 73,
+        "section": "SDG 11 – Flächeninanspruchnahme, 2.2 Ziele"
+      },
+      "sdg_codes": [
+        "SDG_11",
+        "SDG_15",
+        "SDG_13"
+      ],
+      "indicator_refs": [
+        "11.1"
+      ],
+      "target_type": "QUANTIFIED",
+      "target_value": {
+        "value": "<1, möglichst 0,75",
+        "unit": "Hektar pro Tag",
+        "target_date": "2030-12-31"
+      },
+      "measurement_boundary": "Neue Siedlungs- und Verkehrsfläche in Sachsen-Anhalt.",
+      "effect_space": {
+        "sachsen_anhalt": "Direkter, durch die Landesstrategie definierter Wirkungs- und Messraum: Neue Siedlungs- und Verkehrsfläche in Sachsen-Anhalt.",
+        "other_states_or_federal": "Verkehrs- und Siedlungsentscheidungen können bundesweit induziert sein; Biodiversitäts- und Klimawirkung ist standortbezogen zu messen.",
+        "europe_or_global": "Der Bezug zu europäischen oder globalen öffentlichen Gütern wird als eigener Wirkungsraum geführt. Eine Zielerreichung in Sachsen-Anhalt wird nicht stillschweigend als Wirkung auf Bund, EU oder globale Güter zugerechnet.",
+        "status": "SOURCE_SUPPORTED"
+      },
+      "valid_from": "2022-09-20",
+      "valid_to": null,
+      "source_ref": "sachsen-anhalt-nachhaltigkeitsstrategie-2022"
+    },
+    {
+      "id": "st-sa-2022-023",
+      "jurisdiction_id": "sachsen-anhalt",
+      "label": "Kreislaufwirtschaft fördern und Siedlungsabfälle reduzieren",
+      "source_quote": "Nach dem derzeit noch gültigen AWP 2017 sollte das Hausmüllaufkommen von 155 kg/E*a (2014) auf 147 kg/E*a bis 2025 reduziert werden. Bei linearer Fortschreibung erscheint ein Aufkommen von unter 140 kg/E*a im Jahr 2030 realistisch.",
+      "source_location": {
+        "page": 74,
+        "section": "SDG 12 – Abfall, 1.2 Ziele"
+      },
+      "sdg_codes": [
+        "SDG_12",
+        "SDG_11",
+        "SDG_13"
+      ],
+      "indicator_refs": [
+        "12.ST1"
+      ],
+      "target_type": "QUANTIFIED",
+      "target_value": {
+        "value": 147,
+        "unit": "kg je Einwohner:in und Jahr",
+        "target_date": "2025-12-31"
+      },
+      "measurement_boundary": "Hausmüllaufkommen und ausgewählte Siedlungsabfälle in Sachsen-Anhalt.",
+      "effect_space": {
+        "sachsen_anhalt": "Direkter, durch die Landesstrategie definierter Wirkungs- und Messraum: Hausmüllaufkommen und ausgewählte Siedlungsabfälle in Sachsen-Anhalt.",
+        "other_states_or_federal": "Abfallverbringung und Produktketten reichen über Länder und EU hinaus; territoriales Aufkommen nicht mit globaler Kreislaufwirkung gleichsetzen.",
+        "europe_or_global": "Der Bezug zu europäischen oder globalen öffentlichen Gütern wird als eigener Wirkungsraum geführt. Eine Zielerreichung in Sachsen-Anhalt wird nicht stillschweigend als Wirkung auf Bund, EU oder globale Güter zugerechnet.",
+        "status": "SOURCE_SUPPORTED"
+      },
+      "valid_from": "2022-09-20",
+      "valid_to": null,
+      "source_ref": "sachsen-anhalt-nachhaltigkeitsstrategie-2022",
+      "projection_not_formal_target": {
+        "value": "unter 140",
+        "unit": "kg je Einwohner:in und Jahr",
+        "reference_year": "2030",
+        "status": "SOURCE_PROJECTION_NOT_FORMAL_TARGET"
+      }
+    },
+    {
+      "id": "st-sa-2022-024",
+      "jurisdiction_id": "sachsen-anhalt",
+      "label": "Energie- und prozessbedingte CO₂-Emissionen senken",
+      "source_quote": "Zielwert 2030 für Sachsen-Anhalt: 18,05 Millionen Tonnen energie- und prozessbedingte CO₂-Emissionen.",
+      "source_location": {
+        "page": 140,
+        "section": "Indikatorenbericht 13.1.ST"
+      },
+      "sdg_codes": [
+        "SDG_13",
+        "SDG_07",
+        "SDG_09"
+      ],
+      "indicator_refs": [
+        "13.1.ST"
+      ],
+      "target_type": "QUANTIFIED",
+      "target_value": {
+        "value": 18.05,
+        "unit": "Millionen Tonnen CO₂ pro Jahr",
+        "target_date": "2030-12-31"
+      },
+      "measurement_boundary": "Quellenbilanz der energie- und prozessbedingten Emissionen in Sachsen-Anhalt; Importstrom bleibt unberücksichtigt, Exportstrom enthalten.",
+      "effect_space": {
+        "sachsen_anhalt": "Direkter, durch die Landesstrategie definierter Wirkungs- und Messraum: Quellenbilanz der energie- und prozessbedingten Emissionen in Sachsen-Anhalt; Importstrom bleibt unberücksichtigt, Exportstrom enthalten.",
+        "other_states_or_federal": "Klimawirkung ist global; territoriale Bilanz, Konsumfußabdruck und Exportstrom müssen getrennt bleiben.",
+        "europe_or_global": "Der Bezug zu europäischen oder globalen öffentlichen Gütern wird als eigener Wirkungsraum geführt. Eine Zielerreichung in Sachsen-Anhalt wird nicht stillschweigend als Wirkung auf Bund, EU oder globale Güter zugerechnet.",
+        "status": "SOURCE_SUPPORTED"
+      },
+      "valid_from": "2022-09-20",
+      "valid_to": null,
+      "source_ref": "sachsen-anhalt-nachhaltigkeitsstrategie-2022"
+    },
+    {
+      "id": "st-sa-2022-025",
+      "jurisdiction_id": "sachsen-anhalt",
+      "label": "Artenvielfalt und Landschaftsqualität wiederherstellen",
+      "source_quote": "Für ausgewählte Indikatorarten soll bis 2030 ein Indexwert von 100 Prozent erreicht und der Rückgang der Biodiversität gestoppt werden.",
+      "source_location": {
+        "page": 77,
+        "section": "SDG 15 – Artenvielfalt, 1.2 Ziele"
+      },
+      "sdg_codes": [
+        "SDG_15",
+        "SDG_02",
+        "SDG_13"
+      ],
+      "indicator_refs": [
+        "15.1"
+      ],
+      "target_type": "QUANTIFIED",
+      "target_value": {
+        "value": 100,
+        "unit": "Index Prozent",
+        "target_date": "2030-12-31"
+      },
+      "measurement_boundary": "Repräsentative Arten der Agrarlandschaft, Wälder, Siedlungen und Binnengewässer Sachsen-Anhalts.",
+      "effect_space": {
+        "sachsen_anhalt": "Direkter, durch die Landesstrategie definierter Wirkungs- und Messraum: Repräsentative Arten der Agrarlandschaft, Wälder, Siedlungen und Binnengewässer Sachsen-Anhalts.",
+        "other_states_or_federal": "Arten, Lebensräume und Zugvögel überschreiten Grenzen; globale Biodiversitätswirkung nur mit geeigneten räumlichen Daten zurechnen.",
+        "europe_or_global": "Der Bezug zu europäischen oder globalen öffentlichen Gütern wird als eigener Wirkungsraum geführt. Eine Zielerreichung in Sachsen-Anhalt wird nicht stillschweigend als Wirkung auf Bund, EU oder globale Güter zugerechnet.",
+        "status": "SOURCE_SUPPORTED"
+      },
+      "valid_from": "2022-09-20",
+      "valid_to": null,
+      "source_ref": "sachsen-anhalt-nachhaltigkeitsstrategie-2022"
+    },
+    {
+      "id": "st-sa-2022-026",
+      "jurisdiction_id": "sachsen-anhalt",
+      "label": "Natura-2000-Gebiete und Naturschutzflächen sichern",
+      "source_quote": "Ziel ist es, die nationalrechtliche Sicherung der Natura-2000-Gebiete durch Landesverordnung und ergänzende Maßnahmen zu gewährleisten.",
+      "source_location": {
+        "page": 78,
+        "section": "SDG 15 – Schutzgebiete, 2.2 Ziele"
+      },
+      "sdg_codes": [
+        "SDG_15",
+        "SDG_14"
+      ],
+      "indicator_refs": [
+        "15.2.ST1"
+      ],
+      "target_type": "RULE_BASED",
+      "target_value": {
+        "value": null,
+        "unit": "rechtliche Sicherung und Flächenanteil",
+        "target_date": null
+      },
+      "measurement_boundary": "Natura-2000- und streng geschützte Flächen in Sachsen-Anhalt.",
+      "effect_space": {
+        "sachsen_anhalt": "Direkter, durch die Landesstrategie definierter Wirkungs- und Messraum: Natura-2000- und streng geschützte Flächen in Sachsen-Anhalt.",
+        "other_states_or_federal": "Natura 2000 ist ein europäisches Netz; ökologische Wirkungen und Kohärenzbeiträge reichen über das Land hinaus.",
+        "europe_or_global": "Der Bezug zu europäischen oder globalen öffentlichen Gütern wird als eigener Wirkungsraum geführt. Eine Zielerreichung in Sachsen-Anhalt wird nicht stillschweigend als Wirkung auf Bund, EU oder globale Güter zugerechnet.",
+        "status": "SOURCE_SUPPORTED"
+      },
+      "valid_from": "2022-09-20",
+      "valid_to": null,
+      "source_ref": "sachsen-anhalt-nachhaltigkeitsstrategie-2022"
+    },
+    {
+      "id": "st-sa-2022-027",
+      "jurisdiction_id": "sachsen-anhalt",
+      "label": "Waldumbau zu stabilen Mischbeständen voranbringen",
+      "source_quote": "Bis 2030 wird ein Anteil von 34 Prozent Laub-/Nadel-Mischbeständen am Gesamtwald Sachsen-Anhalts angestrebt.",
+      "source_location": {
+        "page": 80,
+        "section": "SDG 15 – Waldumbau, 3.2 Ziele"
+      },
+      "sdg_codes": [
+        "SDG_15",
+        "SDG_13"
+      ],
+      "indicator_refs": [
+        "15.3.ST1"
+      ],
+      "target_type": "QUANTIFIED",
+      "target_value": {
+        "value": 34,
+        "unit": "Prozent des Gesamtwaldes",
+        "target_date": "2030-12-31"
+      },
+      "measurement_boundary": "Gesamtwald Sachsen-Anhalts; stabile Laub-/Nadel-Mischbestände nach Bundeswaldinventur.",
+      "effect_space": {
+        "sachsen_anhalt": "Direkter, durch die Landesstrategie definierter Wirkungs- und Messraum: Gesamtwald Sachsen-Anhalts; stabile Laub-/Nadel-Mischbestände nach Bundeswaldinventur.",
+        "other_states_or_federal": "Kohlenstoffbindung, Holzmarkt und Biodiversität wirken bundes- und global; territoriale Waldfläche getrennt von importiertem Holz betrachten.",
+        "europe_or_global": "Der Bezug zu europäischen oder globalen öffentlichen Gütern wird als eigener Wirkungsraum geführt. Eine Zielerreichung in Sachsen-Anhalt wird nicht stillschweigend als Wirkung auf Bund, EU oder globale Güter zugerechnet.",
+        "status": "SOURCE_SUPPORTED"
+      },
+      "valid_from": "2022-09-20",
+      "valid_to": null,
+      "source_ref": "sachsen-anhalt-nachhaltigkeitsstrategie-2022"
+    },
+    {
+      "id": "st-sa-2022-028",
+      "jurisdiction_id": "sachsen-anhalt",
+      "label": "Kriminalitätsbelastung senken",
+      "source_quote": "Ziel ist die Senkung der Straftaten je 100.000 Einwohnerinnen und Einwohner.",
+      "source_location": {
+        "page": 81,
+        "section": "SDG 16 – Kriminalität, 1.2 Ziele"
+      },
+      "sdg_codes": [
+        "SDG_16"
+      ],
+      "indicator_refs": [
+        "16.1"
+      ],
+      "target_type": "DIRECTIONAL",
+      "target_value": {
+        "value": null,
+        "unit": null,
+        "target_date": null
+      },
+      "measurement_boundary": "Polizeilich bekannt gewordene Straftaten je 100.000 Einwohner:innen in Sachsen-Anhalt.",
+      "effect_space": {
+        "sachsen_anhalt": "Direkter, durch die Landesstrategie definierter Wirkungs- und Messraum: Polizeilich bekannt gewordene Straftaten je 100.000 Einwohner:innen in Sachsen-Anhalt.",
+        "other_states_or_federal": "Anzeigeverhalten, Bundesrecht und grenzüberschreitende Kriminalität wirken mit; Häufigkeitszahl ist kein vollständiges Sicherheits- oder Kausalmaß.",
+        "europe_or_global": "Der Bezug zu europäischen oder globalen öffentlichen Gütern wird als eigener Wirkungsraum geführt. Eine Zielerreichung in Sachsen-Anhalt wird nicht stillschweigend als Wirkung auf Bund, EU oder globale Güter zugerechnet.",
+        "status": "SOURCE_SUPPORTED"
+      },
+      "valid_from": "2022-09-20",
+      "valid_to": null,
+      "source_ref": "sachsen-anhalt-nachhaltigkeitsstrategie-2022"
+    }
+  ],
+  "legal_reference_layer": {
+    "status": "SEPARATE_REFERENCE_PENDING_ARTICLE_LEVEL_IMPORT",
+    "role": "Die Landesverfassung, Grundrechte, Staatsziele und Schutzaufträge sind rechtliche Prüfanker. Sie werden nicht als SDG oder Strategieziel geführt.",
+    "official_reference_url": "https://www.landtag.sachsen-anhalt.de/service/rechtsgrundlagen",
+    "data_gap": "Das Paket enthält keinen artikelgenau versionierten Verfassungstext mit amtlicher Fundstellenstruktur. Daher werden keine Artikelanker erfunden oder in die 28 Strategieziele eingemischt."
+  }
+}

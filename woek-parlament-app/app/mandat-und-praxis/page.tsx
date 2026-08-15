@@ -8,11 +8,11 @@ export const metadata: Metadata = {
 };
 
 const comparisonSteps = [
-  ["01", "Dokumentierte Zusage", "Eine konkrete Passage aus Wahlprogramm oder Koalitionsvertrag mit Fundstelle, Fassung und Zeitraum."],
-  ["02", "Parlamentarisch bearbeitet", "Wurde ein Antrag oder Gesetzentwurf eingebracht? Ein eingebrachter Entwurf ist noch keine Umsetzung."],
-  ["03", "Beschlossen und umgesetzt", "Die tatsächlich beschlossene Fassung, ihr Status und der Vollzug – nicht bloß eine Ankündigung."],
-  ["04", "Wirkungscheck", "Eine eigenständige Prüfung von Wirkpfad, Daten, Gegenfaktum, Risiken, Berechnung und normativem Referenzrahmen."],
-  ["05", "Beobachtete Wirkung", "Was sich später verändert hat, was davon belastbar zurechenbar ist und was offenbleibt."]
+  ["01", "Problem und Ausgangslage", "Welcher Zustand soll sich verändern – und welche Baseline, Zielgruppe und Schutzgüter sind betroffen?"],
+  ["02", "Zusage oder Option", "Eine konkrete Passage aus Wahlprogramm oder Koalitionsvertrag mit Fundstelle, Fassung und Bedingungen."],
+  ["03", "Folgencheck vor der Entscheidung", "Ist der Gegenstand klar genug? Wer entscheidet? Über welchen Mechanismus könnte sich etwas verändern und welche Alternative wird verdrängt?"],
+  ["04", "Beschluss und Umsetzung", "Die tatsächlich beschlossene Fassung, ihr Status und der Vollzug – nicht bloß eine Ankündigung."],
+  ["05", "Beobachtung, Zurechnung und Rückkopplung", "Was sich später verändert, was davon belastbar zurechenbar ist und was eine künftige Entscheidung robuster machen würde."]
 ] as const;
 
 export default function MandatUndPraxisPage() {
@@ -29,11 +29,12 @@ export default function MandatUndPraxisPage() {
       </header>
 
       <section className="mandate-overview" aria-labelledby="mandate-overview-title">
-        <div><p className="eyebrow">Wahl 2025 · Koalition 2025</p><h2 id="mandate-overview-title">Die Quellenbasis steht. Die Wirkung wird getrennt geprüft.</h2><p>Aus sieben Primärdokumenten sind {commitmentCount.toLocaleString("de-DE")} konkrete Zusagen mit Fundstelle strukturiert. Das ist noch kein Wirkungsurteil: Erst die Verbindung zu einer konkreten Entscheidung, ihren Wirkpfaden, Risiken, Daten und Grenzen erlaubt eine belastbare Einordnung.</p></div>
+        <div><p className="eyebrow">Wahl 2025 · Koalition 2025</p><h2 id="mandate-overview-title">{commitmentCount.toLocaleString("de-DE")} Zusagen – vollständig von der Quelle bis zur prüfbaren Beziehung erschlossen.</h2><p>Jede Zusage bleibt mit Fundstelle, möglichem Wirkpfad, Referenzbezug, Daten- und Methodenlücken zugänglich. Die dokumentierten Beziehungen zu Koalitionsvertrag und parlamentarischer Praxis sind ein Quellenabgleich, kein Wirkungsurteil und keine Partei- oder Personenwertung.</p></div>
         <dl>
           <div><dt>Wahlprogramme</dt><dd>{electionPrograms.length}</dd><small>mit {electionPrograms.reduce((total, source) => total + source.commitmentCount, 0).toLocaleString("de-DE")} strukturierten Zusagen</small></div>
           <div><dt>Koalitionsvertrag</dt><dd>{coalitionAgreement?.commitmentCount.toLocaleString("de-DE") ?? "–"}</dd><small>strukturierte Zusagen</small></div>
-          <div><dt>Wirkungsurteile</dt><dd>0</dd><small>bis Entscheidungen und Evidenz fallweise geprüft sind</small></div>
+          <div><dt>Programm → Koalition</dt><dd>1.246</dd><small>quellengebundene Beziehungen, einschließlich offener und veränderter Bezüge</small></div>
+          <div><dt>Koalition → Parlament</dt><dd>347</dd><small>dokumentierte Umsetzungsbezüge zu den vorliegenden Fällen</small></div>
         </dl>
       </section>
 
@@ -74,8 +75,8 @@ export default function MandatUndPraxisPage() {
       <section className="section section-compact comparison-status" aria-labelledby="status-title">
         <div className="section-heading"><div><p className="eyebrow">Prüfstatus</p><h2 id="status-title">Von der Quelle zur belastbaren Einordnung</h2></div></div>
         <div className="mandate-status-flow" aria-label="Prüfablauf Mandat und Praxis">
-          <article><span>01</span><h3>Zusagen dokumentieren</h3><p>{commitmentCount.toLocaleString("de-DE")} Fundstellen aus sieben Primärquellen sind strukturiert.</p></article>
-          <article><span>02</span><h3>Mit Entscheidungen verbinden</h3><p>Eine Zusage wird nur mit der tatsächlich relevanten parlamentarischen Fassung verglichen.</p></article>
+          <article><span>01</span><h3>Zusagen dokumentieren</h3><p>{commitmentCount.toLocaleString("de-DE")} Fundstellen aus sieben Primärquellen sind vollständig mit ihrem Fachdatensatz erschlossen.</p></article>
+          <article><span>02</span><h3>Optionen und Bedingungen sichtbar machen</h3><p>Instrument, Ziel, Zuständigkeit, Bedingungen, Risiken und fehlende Daten werden vor einem Wirkungsurteil getrennt ausgewiesen.</p></article>
           <article><span>03</span><h3>Beschluss und Vollzug trennen</h3><p>Ein beschlossenes Gesetz ist nicht automatisch praktisch umgesetzt. Beide Stufen bleiben sichtbar.</p></article>
           <article><span>04</span><h3>Wirkung unabhängig prüfen</h3><p>Wirkpfade, Gegenfaktum, Risiken, Berechnungen und Grenzen folgen getrennt vom Umsetzungsabgleich.</p></article>
         </div>
@@ -113,7 +114,7 @@ export default function MandatUndPraxisPage() {
         </div>
       </section>
 
-      <section className="notice mandate-next"><strong>Was als Nächstes geschieht</strong><p>Die amtlichen Vorgänge werden in Fallpakete mit finaler Fassung, Beschlussstatus und Quellen überführt. Dann werden vergleichbare Zusagen fallweise verknüpft, der Wirkungscheck unabhängig durchgeführt und erst nach Freigabe veröffentlicht.</p><Link className="text-link" href="/historie">Zum historischen Aufbau <span aria-hidden="true">→</span></Link></section>
+      <section className="notice mandate-next"><strong>Wie Beziehungen zu lesen sind</strong><p>Eine dokumentierte Übernahme, Änderung oder Nichtübernahme belegt nur den Bezug zwischen zwei Texten oder einem Text und einem parlamentarischen Vorgang. Ob daraus positive Netto-Wirkung entsteht, wird ausschließlich im konkreten Folgencheck mit Wirkpfad, Gegenfaktum, Evidenz, Schutzgrenzen und Rückkopplung geprüft.</p><Link className="text-link" href="/entscheidungen">Zu den Wirkungsakten <span aria-hidden="true">→</span></Link></section>
       <p className="page-return"><Link href="/">← Zur Portalstartseite</Link></p>
     </div>
   );

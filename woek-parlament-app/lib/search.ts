@@ -14,6 +14,19 @@ export type ParliamentSearchFilters = {
   source: SearchSourceFilter;
 };
 
+/**
+ * The client-side search receives this deliberately small public projection.
+ * Full source records remain on their respective detail pages, where they are
+ * needed for inspection, instead of being shipped with every search visit.
+ */
+export type SearchableCase = Pick<ParliamentaryCase,
+  "slug" | "title" | "plainTitle" | "kind" | "editorialStatus" | "materiality" |
+  "parliamentaryStatus" | "statusVerification" | "summary" | "whatIsDecided" |
+  "intendedGoal" | "analysisStatus" | "impactPath" | "affectedGroups" | "questions" | "sources"
+>;
+
+export type SearchableFachanalyse = Pick<Fachanalyse, "slug" | "title" | "subtitle" | "type" | "status" | "scope" | "summary" | "focusAreas">;
+
 export const defaultSearchFilters: ParliamentSearchFilters = {
   query: "",
   type: "ALL",
@@ -22,7 +35,7 @@ export const defaultSearchFilters: ParliamentSearchFilters = {
   source: "ALL"
 };
 
-export function searchPublicCases(cases: ParliamentaryCase[], filters: ParliamentSearchFilters): ParliamentaryCase[] {
+export function searchPublicCases<T extends SearchableCase>(cases: T[], filters: ParliamentSearchFilters): T[] {
   const query = normalize(filters.query);
   return cases.filter((item) => {
     if (filters.type !== "ALL" && filters.type !== "FACHANALYSE" && item.kind !== filters.type) return false;
@@ -33,7 +46,7 @@ export function searchPublicCases(cases: ParliamentaryCase[], filters: Parliamen
   });
 }
 
-export function searchFachanalysen(analyses: Fachanalyse[], filters: ParliamentSearchFilters): Fachanalyse[] {
+export function searchFachanalysen<T extends SearchableFachanalyse>(analyses: T[], filters: ParliamentSearchFilters): T[] {
   if (filters.type !== "ALL" && filters.type !== "FACHANALYSE") return [];
   if (filters.editorial !== "ALL" || filters.materiality !== "ALL" || filters.source !== "ALL") return [];
   const query = normalize(filters.query);
@@ -46,7 +59,7 @@ export function searchFachanalysen(analyses: Fachanalyse[], filters: ParliamentS
   ].join(" ")).includes(query));
 }
 
-function searchableText(item: ParliamentaryCase): string {
+function searchableText(item: SearchableCase): string {
   return normalize([
     item.title,
     item.plainTitle,

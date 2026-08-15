@@ -2,11 +2,8 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import type { ParliamentaryCase } from "@/data/cases";
-import type { Fachanalyse } from "@/data/fachanalysen";
-import { materialityLabel } from "@/lib/cases";
-import { humanizeSystemValue } from "@/lib/presentation/labels";
-import { defaultSearchFilters, searchFachanalysen, searchPublicCases, type ParliamentSearchFilters } from "@/lib/search";
+import { humanizeSystemValue, materialityLabel } from "@/lib/presentation/labels";
+import { defaultSearchFilters, searchFachanalysen, searchPublicCases, type ParliamentSearchFilters, type SearchableCase, type SearchableFachanalyse } from "@/lib/search";
 import { wirkungsraumBookmarkUrl } from "@/lib/wirkungsraum";
 
 const TYPE_LABELS: Record<ParliamentSearchFilters["type"], string> = {
@@ -42,7 +39,7 @@ const SOURCE_LABELS: Record<ParliamentSearchFilters["source"], string> = {
   STATUS_UNVERIFIED: "Noch ohne veröffentlichte Fallquelle"
 };
 
-export function ParliamentSearch({ cases, analyses }: { cases: ParliamentaryCase[]; analyses: Fachanalyse[] }) {
+export function ParliamentSearch({ cases, analyses }: { cases: SearchableCase[]; analyses: SearchableFachanalyse[] }) {
   const [filters, setFilters] = useState<ParliamentSearchFilters>(defaultSearchFilters);
   const results = useMemo(() => [
     ...searchPublicCases(cases, filters).map((item) => ({ type: "CASE" as const, item })),
@@ -92,7 +89,7 @@ function SelectFilter({ label, value, values, onChange }: { label: string; value
   return <label><span>{label}</span><select value={value} onChange={(event) => onChange(event.target.value)}>{Object.entries(values).map(([key, text]) => <option value={key} key={key}>{text}</option>)}</select></label>;
 }
 
-function CaseSearchResult({ item }: { item: ParliamentaryCase }) {
+function CaseSearchResult({ item }: { item: SearchableCase }) {
   const path = `/entscheidungen/${item.slug}`;
   return (
     <article>
@@ -110,7 +107,7 @@ function CaseSearchResult({ item }: { item: ParliamentaryCase }) {
   );
 }
 
-function FachanalyseSearchResult({ item }: { item: Fachanalyse }) {
+function FachanalyseSearchResult({ item }: { item: SearchableFachanalyse }) {
   const path = `/fachanalysen/${item.slug}`;
   return (
     <article>

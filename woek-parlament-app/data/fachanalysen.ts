@@ -58,18 +58,18 @@ const publishedFachanalysen = publicationData as Fachanalyse[];
 const documentedAnalyses: Fachanalyse[] = [
   {
     slug: "sondervermoegen-infrastruktur-klimaneutralitaet",
-    title: "Sondervermögen Infrastruktur und Klimaneutralität im Wirkungscheck",
-    subtitle: "Fachliche Dokumentation zu Wirkungslogik, Zusätzlichkeit und Rückkopplung eines Investitionsportfolios",
+    title: "Wie wirksam ist das Sondervermögen wirklich?",
+    subtitle: "Vollständige Fachanalyse des Sondervermögens Infrastruktur und Klimaneutralität",
     type: "PORTFOLIO_ANALYSIS",
-    status: "DOCUMENTATION_PUBLISHED",
+    status: "PUBLISHED",
     analysisDate: "2026-08-15",
     scope: "Sondervermögen Infrastruktur und Klimaneutralität",
-    summary: "Die Dokumentation ordnet die Investitionsarchitektur nach Wirkungspotenzialen, Wirkungsrisiken und Prüffragen. Sie ersetzt keine Gesamtwertung: zusätzliche Veränderungen, Schutzgrenzen und spätere Beobachtung bleiben getrennt.",
+    summary: "Das Sondervermögen eröffnet große finanzielle Handlungsmöglichkeiten. Die vollständige Fachanalyse prüft, unter welchen Bedingungen daraus Wirkungspotenziale entstehen, welche Risiken und Schutzgrenzen bleiben und welche Rückkopplung vor einer positiven Netto-Wirkung erforderlich ist.",
     sources: [],
     publicDownload: {
       href: "/downloads/fachanalysen/wirkungsoekonomische-analyse-sondervermoegen-infrastruktur-klimaneutralitaet.pdf",
-      label: "Fachliche Dokumentation als PDF",
-      description: "Dokumentation mit Quellen, Annahmen und Prüffragen"
+      label: "Originaldokument als PDF",
+      description: "Zusätzlich zur vollständigen, barrierefrei navigierbaren Webfassung"
     }
   }
 ];

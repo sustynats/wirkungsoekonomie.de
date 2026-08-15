@@ -309,8 +309,7 @@ test("member vote ledger does not turn abstentions or absences into wrong votes"
     notAligned: 1,
     abstained: 1,
     didNotVote: 1,
-    notScorable: 1,
-    agreementRate: 0.5
+    notScorable: 1
   });
 });
 
@@ -356,7 +355,7 @@ test("mandate source catalog contains only HTTPS original assets", () => {
 
 test("commitment registers never expose raw import labels as public headings", () => {
   assert.deepEqual(
-    publicCommitmentDisplay({ title: "34 -", text: "Wir sorgen für eine verlässliche Finanzierung tierwohlgerechter Haltung.", policyDomain: "HEALTH_CARE" }),
+    publicCommitmentDisplay({ text: "Wir sorgen für eine verlässliche Finanzierung tierwohlgerechter Haltung.", policyDomain: "HEALTH_CARE" }),
     { title: "Wir sorgen für eine verlässliche Finanzierung tierwohlgerechter Haltung", policyDomain: "Gesundheit und Pflege" }
   );
 });

@@ -1,0 +1,448 @@
+{
+  "sourceLabel": "Freigegebener Fachbestand Release 1.0",
+  "publisher": "Institut für Wirkungsökonomie",
+  "importedAt": "2026-08-15T19:38:13.736Z",
+  "archiveHash": "0ca0bcceb48d8b41b4b481f7070f1c20e0ed86abce72c38371575d54452ad7e4",
+  "archiveEntries": 42,
+  "originalPathWithheld": true,
+  "schema_version": "1.0.0",
+  "release_id": "WOEK-RELEASE-1.0-FACHPRUEFUNG-ERGEBNIS-2026-08-15",
+  "coverage": {
+    "federal_cases_expected": 28,
+    "federal_cases_completed": 28,
+    "cases_with_data_gaps": 28,
+    "cases_ready_for_editorial_approval": 28,
+    "upcoming_decisions": 16,
+    "historical_cases": 12,
+    "commitment_registers": 7,
+    "commitments": 1593,
+    "state_targets_sachsen_anhalt": 28,
+    "detailed_expert_analyses": 1,
+    "cases_ready_for_public_release_with_maturity_labels": 28,
+    "cases_ready_as_final_causal_net_impact_assessment": 0
+  },
+  "publication_readiness": "READY_FOR_TECHNICAL_IMPORT_AND_PUBLIC_RELEASE_WITH_MATURITY_LABELS",
+  "reference_snapshot": {
+    "snapshot_id": "WOEK-CONTROLLED-REFERENCE-SNAPSHOT-2026-08-15",
+    "effective_for_this_delivery": "2026-08-15",
+    "status": "CONTROLLED_WITH_ONE_METADATA_CONFLICT",
+    "works_count": 8,
+    "manifestations_count": 11,
+    "mapping_release_status": "PROPOSED_PENDING_REFERENCE_RECONCILIATION",
+    "leading_references": [
+      {
+        "reference_id": "WOEK_SYSTEM_LOGIC",
+        "title": "Die neue Ordnung des Wohlstands",
+        "version": "2026",
+        "scope": [
+          "system_logic",
+          "positive_net_impact",
+          "mensch_planet_demokratie",
+          "feedback"
+        ],
+        "canonical_url": "https://wirkungsoekonomie.de/referenz/",
+        "content_hash_status": "PUBLIC_MANIFESTATION_HASH_TO_BE_RECORDED_BY_BACKEND"
+      },
+      {
+        "reference_id": "WOEMM_2_0",
+        "title": "Das Wirkungsökonomische Managementmodell",
+        "version": "2.0",
+        "scope": [
+          "management_architecture",
+          "governance",
+          "impact_realisation"
+        ],
+        "canonical_url": "https://wirkungsoekonomie.de/bibliothek/eintraege/woemm-2-0/",
+        "git_blob_sha": "6af06e20b444c44066856c5f804ce3f9bae6f94b"
+      },
+      {
+        "reference_id": "WOEMS_2_0",
+        "title": "Das Wirkungsökonomische Methodensystem",
+        "version": "2.0",
+        "scope": [
+          "methods",
+          "canvas",
+          "quality",
+          "governance",
+          "realisation"
+        ],
+        "canonical_url": "https://wirkungsoekonomie.de/bibliothek/eintraege/woems-2-0/",
+        "git_blob_sha": "98af82cd0d711fec3137b32058da3160dc3bf07b"
+      },
+      {
+        "reference_id": "WOEK_GLOSSARY_GUIDE",
+        "title": "WÖk-Begriffsleitfaden führend",
+        "version": "1.4",
+        "scope": [
+          "terminology",
+          "public_language",
+          "iooi",
+          "effect_potential",
+          "net_impact",
+          "feedback"
+        ],
+        "canonical_url": "https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/",
+        "asset_path": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.4.pdf",
+        "git_blob_sha": "2965e51e39f88be440d549620d9131be1edd4526"
+      },
+      {
+        "reference_id": "WOEK_GLOSSARY_PUBLIC",
+        "title": "Glossar der Wirkungsökonomie",
+        "version": "CURRENT_HTML",
+        "scope": [
+          "public_short_definitions"
+        ],
+        "canonical_url": "https://wirkungsoekonomie.de/glossar.html",
+        "content_hash_status": "BACKEND_RECORD_REQUIRED"
+      },
+      {
+        "reference_id": "SDG_SDGPLUS_REFERENCE",
+        "title": "SDG-/SDG+-Referenzrahmen",
+        "version": "0.3",
+        "scope": [
+          "sdgs",
+          "sdg_plus",
+          "mensch_planet_demokratie",
+          "protection_gates"
+        ],
+        "canonical_url": "https://wirkungsoekonomie.de/verstehen/sdgs-sdgplus/",
+        "content_hash_status": "BACKEND_RECORD_REQUIRED"
+      },
+      {
+        "reference_id": "WOEK_MASTER_ITEMS",
+        "title": "WÖk Master Items",
+        "version": "1.3 geprüft",
+        "scope": [
+          "woek_ids",
+          "indicator_registry",
+          "benchmark_status",
+          "governance",
+          "assurance"
+        ],
+        "canonical_url": "https://wirkungsoekonomie.de/dokumente/woek-master-items-v1-3/",
+        "asset_path": "assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx",
+        "sha256": "fd0af24ce9261633e2876abbb284f562e7bd1daf1abfd5438b015ab2c66573dc",
+        "git_blob_sha": "f6200a9045b09815272294b659b52f34d9f8994b",
+        "item_count": 621
+      },
+      {
+        "reference_id": "TSROI_STANDARD",
+        "title": "T-SROI-Rechenstandard",
+        "version": "1.1",
+        "scope": [
+          "causally_bounded_discounted_net_benefit",
+          "protection_gate"
+        ],
+        "canonical_url": "https://wirkungsoekonomie.de/werkzeuge/impact-controlling/methodenpapiere/t-sroi-transformationsmessung/",
+        "content_hash_status": "BACKEND_RECORD_REQUIRED"
+      }
+    ],
+    "work_to_manifestation_rule": "Onlinefassungen, Bibliotheksseiten und Download-Assets desselben Werks sind Manifestationen, nicht zusätzliche Werke.",
+    "metadata_conflicts": [
+      {
+        "conflict_id": "REF-META-001",
+        "reference_id": "WOEK_GLOSSARY_GUIDE",
+        "description": "Das v1.4-PDF-Asset ist im Repository vorhanden; die führende Bibliotheksseite/ältere Wissensbasis weist teilweise noch v1.3 aus.",
+        "decision_for_this_delivery": "v1.4 wird als inhaltlicher Begriffsstand verwendet; der Konflikt bleibt sichtbar und blockiert automatische Endscores, nicht die fachliche Vorarbeit."
+      }
+    ],
+    "final_reference_review_blocked": false,
+    "final_score_or_preference_blocked": true,
+    "reason": "Der Bestand reicht für vorgeschlagene Mappings und strukturierte Forschung aus. Endscore, Gewichtung, Schwellenanwendung und Präferenz bleiben außerhalb dieses Auftrags.",
+    "snapshot_sha256": "7d184b2da6b9d2d4f7255a8baaa3978a6f2599b19cd3502b612bb693204ab4c2",
+    "qualitative_mapping_release": "PUBLISHABLE_WITH_VISIBLE_METADATA_CONFLICT",
+    "final_score_or_preference": "NOT_PART_OF_RELEASE"
+  },
+  "case_maturity_stages": {
+    "EVIDENZPRUEFUNG": 4,
+    "MONITORING": 8,
+    "VORPRUEFUNG": 10,
+    "METHODENPRUEFUNG": 6
+  },
+  "normative_mapping_counts": {
+    "SDG": 221,
+    "SDG_PLUS": 110,
+    "CONSTITUTIONAL_ANCHOR": 101
+  },
+  "commitment_link_counts": {
+    "programme_to_coalition": 1246,
+    "programme_to_coalition_by_status": {
+      "NICHT_UEBERNOMMEN": 666,
+      "OFFEN": 502,
+      "VERAENDERT": 59,
+      "UEBERNOMMEN": 19
+    },
+    "coalition_to_parliament": 347,
+    "coalition_to_parliament_by_status": {
+      "NOCH_OFFEN": 333,
+      "UMGESETZT": 14
+    },
+    "open_or_ambiguous_relations": 314
+  },
+  "methodology_notes": [
+    "Fakt, Wirkungspotenzial, Wirkungsrisiko, beobachtete Wirkung und normative Einordnung bleiben getrennt.",
+    "SDG, SDG+ sowie Grundrechte, Staatsziele und Schutzaufträge werden als getrennte Referenzebenen geführt.",
+    "Output, Vollzug, Mittelabfluss und Zeitreihen sind ohne Gegenfaktum und Attribution kein kausaler Wirkungsnachweis.",
+    "Kein Fall, Programm oder Akteur erhält einen Score, eine Gewichtung oder ein Ranking.",
+    "Alle 28 Fallakten sind öffentlich nutzbar, sofern die jeweilige Reifestufe und Evidenzgrenze sichtbar bleibt.",
+    "Alle 28 Fallakten sind in ihrer ausgewiesenen Reifestufe publikationsfähig; keine ist eine abgeschlossene kausale Netto-Wirkungsbewertung.",
+    "Der ursprüngliche Referenzsnapshot jeder Fallakte bleibt unverändert; der kontrollierte Release-Snapshot dokumentiert den aktuellen qualitativen Zuordnungsrahmen.",
+    "Die 17 SDGs bilden den gemeinsamen Referenzrahmen. Landesstrategien, SDG+, Grundrechte, Staatsziele und Schutzaufträge bleiben getrennte Ebenen."
+  ],
+  "source_conflicts": [],
+  "data_gaps": [
+    {
+      "case_id": "05454260-5f17-4ba0-b3df-5c32a4cf36db",
+      "title": "Beschleunigte Zulassungs- und Planungsverfahren",
+      "count": 6
+    },
+    {
+      "case_id": "14867d53-4b63-49d0-9889-73fc60d41a5d",
+      "title": "Sondervermögen Infrastruktur und Klimaneutralität",
+      "count": 8
+    },
+    {
+      "case_id": "1bcb54ff-f064-43a1-bf98-bd45a5a2e212",
+      "title": "BKA-Datenerhebung bei Kontaktpersonen",
+      "count": 7
+    },
+    {
+      "case_id": "2c9d8b24-ce03-4784-93b7-cce23829bb68",
+      "title": "Flächenbedarfe der Eisenbahninfrastruktur",
+      "count": 6
+    },
+    {
+      "case_id": "37e5199d-a236-432d-a979-adfe6fcda478",
+      "title": "Haftgründe und Ausweisung durch Strafurteil",
+      "count": 7
+    },
+    {
+      "case_id": "43c02ec8-e1f6-42de-93b8-8bd0731a2565",
+      "title": "Steuerliches Investitionssofortprogramm",
+      "count": 6
+    },
+    {
+      "case_id": "47ca9029-a749-4f79-a4e6-8e33f08082cd",
+      "title": "Länder- und Kommunal-Infrastrukturfinanzierung",
+      "count": 7
+    },
+    {
+      "case_id": "4c5f138f-f81e-4b5e-8bc5-4cef1b91a2c1",
+      "title": "Schutz vor K.-o.-Tropfen",
+      "count": 6
+    },
+    {
+      "case_id": "4c755c57-3b13-4e6c-95c3-4c01a8a08695",
+      "title": "Internationale Rechtshilfe in Strafsachen",
+      "count": 6
+    },
+    {
+      "case_id": "539ca2eb-04ba-4bb9-b525-d30da6fe2747",
+      "title": "Digitale Identität und EUDI-Wallet",
+      "count": 7
+    },
+    {
+      "case_id": "53f11245-34de-4f85-8096-5c2c41d0db30",
+      "title": "Ärztliche Zwangsmaßnahmen im Betreuungsrecht",
+      "count": 7
+    },
+    {
+      "case_id": "64892605-37f9-4a8c-a1ab-ff5e86056693",
+      "title": "GAP-Direktzahlungen und verschobene Öko-Regelungen",
+      "count": 6
+    },
+    {
+      "case_id": "6a88c960-c7e9-400c-84bb-aa52039b62e7",
+      "title": "Aussetzung des Familiennachzugs",
+      "count": 7
+    },
+    {
+      "case_id": "79146c82-e8d0-467a-929e-142c72d9d6cd",
+      "title": "Bundeseinheitliche Pflegefachassistenzausbildung",
+      "count": 7
+    },
+    {
+      "case_id": "7b3bb327-d7a2-4c77-b46d-535be8590cb6",
+      "title": "TKG-Änderung 2025",
+      "count": 7
+    },
+    {
+      "case_id": "94cdfef9-baca-41aa-91df-4a1dbd6b5d4e",
+      "title": "Tierhaltungskennzeichnung",
+      "count": 7
+    },
+    {
+      "case_id": "95921553-b404-4db1-aba2-fbdde40ff3de",
+      "title": "Handel mit Gegenständen von NS-Opfern",
+      "count": 7
+    },
+    {
+      "case_id": "a28ad2d7-be12-42b5-8329-4bab34dabada",
+      "title": "Siebzehnte Änderung des Luftverkehrsgesetzes",
+      "count": 7
+    },
+    {
+      "case_id": "a938dc30-3474-4f7c-a055-67a8cc2007c1",
+      "title": "Widerspruchsregelung bei Organspenden",
+      "count": 7
+    },
+    {
+      "case_id": "aca79efa-63fe-4eb4-a68b-6930096304f0",
+      "title": "Fristverlängerung beim Ganztagsausbau",
+      "count": 7
+    },
+    {
+      "case_id": "aee171b2-57eb-47f7-96b6-60e47cea8422",
+      "title": "Volksabstimmungen auf Bundesebene",
+      "count": 7
+    },
+    {
+      "case_id": "c315ec77-da20-4ff4-9ab0-8321030b085c",
+      "title": "Demokratische Willensbildung in Parteien",
+      "count": 6
+    },
+    {
+      "case_id": "c945bb6b-623d-4a70-8041-faa10cf01e70",
+      "title": "Strafverschärfung bei Wiederholungstätern",
+      "count": 7
+    },
+    {
+      "case_id": "caf988db-91fe-435c-bbe1-4b4c55ccbbf3",
+      "title": "Bundeshaushalt 2027",
+      "count": 12
+    },
+    {
+      "case_id": "d3b89eb6-b1d3-49b1-b67e-1352541904f0",
+      "title": "Faire Kostenentscheidungen im Wohnungseigentum",
+      "count": 6
+    },
+    {
+      "case_id": "e8fe0be8-69c8-426d-8414-abc8df0549ad",
+      "title": "Unerlaubter Umgang mit halbautomatischen Kurzwaffen",
+      "count": 7
+    },
+    {
+      "case_id": "e9bbdd4a-9f5f-47e4-ac5a-bc347d1e659e",
+      "title": "GAP-Verwaltungs- und Kontrollsystem",
+      "count": 7
+    },
+    {
+      "case_id": "ec3dd2c3-c21b-4050-830c-d6f5af416d3d",
+      "title": "Reform des Fahrlehrerrechts",
+      "count": 7
+    }
+  ],
+  "method_review_cases": [
+    {
+      "case_id": "37e5199d-a236-432d-a979-adfe6fcda478",
+      "title": "Haftgründe und Ausweisung durch Strafurteil"
+    },
+    {
+      "case_id": "95921553-b404-4db1-aba2-fbdde40ff3de",
+      "title": "Handel mit Gegenständen von NS-Opfern"
+    },
+    {
+      "case_id": "aee171b2-57eb-47f7-96b6-60e47cea8422",
+      "title": "Volksabstimmungen auf Bundesebene"
+    },
+    {
+      "case_id": "c315ec77-da20-4ff4-9ab0-8321030b085c",
+      "title": "Demokratische Willensbildung in Parteien"
+    },
+    {
+      "case_id": "c945bb6b-623d-4a70-8041-faa10cf01e70",
+      "title": "Strafverschärfung bei Wiederholungstätern"
+    },
+    {
+      "case_id": "e8fe0be8-69c8-426d-8414-abc8df0549ad",
+      "title": "Unerlaubter Umgang mit halbautomatischen Kurzwaffen"
+    }
+  ],
+  "open_calculation_requirements": 68,
+  "public_key_messages": [
+    "Die Aussetzung des Familiennachzugs kann kurzfristig einzelne Verwaltungs- und Aufnahmekapazitäten entlasten. Dem stehen Risiken längerer Familientrennung, psychosozialer Belastung und erschwerter Integration gegenüber; bisherige Vollzugszahlen erlauben keine kausale Netto-Wirkungsaussage.",
+    "Die BKA-Befugnis kann einen zusätzlichen Sicherheitsnutzen haben, greift aber in Datenschutz und Freiheitsrechte unbeteiligter Kontaktpersonen ein. Für eine belastbare Einordnung fehlen Daten zu Nutzung, relevanten Treffern, Fehlzuordnungen, Löschung und weniger eingriffsintensiven Alternativen.",
+    "Schnellere Zulassungs- und Planungsverfahren können erneuerbare Anlagen früher in Betrieb bringen. Eine kürzere Verfahrensdauer ist aber noch keine Klima- oder Versorgungswirkung; entscheidend sind reale Inbetriebnahme, Netzanschluss sowie wirksamer Natur-, Wasser- und Beteiligungsschutz.",
+    "Eine bundeseinheitliche Pflegefachassistenzausbildung kann Zugang, Mobilität und Personalgewinnung verbessern. Wirkung lässt sich erst nach Ausbildungsjahrgängen an Abschlüssen, Übergängen, Versorgungsqualität, Arbeitsbedingungen und möglicher Fachkraftsubstitution beurteilen.",
+    "Der Bundeshaushalt 2027 verteilt Ressourcen und bindet künftige Handlungsspielräume; das sind Inputs, noch keine Wirkung. Wirkung entsteht nur bei zusätzlicher, umsetzbarer Finanzierung mit messbaren Zustandszielen, Lebenszyklus- und Verteilungsprüfung sowie verbindlicher Rückkopplung.",
+    "Parteitage und friedlicher Protest sind beide demokratische Schutzgüter. Eine robuste Regelung braucht neutrale, risikobasierte Schutzstandards, klare Kostenzuständigkeit, transparente Gefährdungsbewertung und darf weder parteipolitisch selektiv noch protestfeindlich wirken.",
+    "Die EUDI-Wallet kann Nachweise vereinfachen und selektive Datenfreigabe ermöglichen. Positive Wirkung setzt freiwillige und barrierefreie Nutzung, eine gleichwertige nichtdigitale Alternative, Datensparsamkeit, Interoperabilität, Cybersicherheit und wirksame Haftung voraus.",
+    "Breitere Mehrheiten und Lebenszyklusinformationen können Kostenentscheidungen im Wohnungseigentum fairer und planbarer machen. Die Regeln sollten Minderheiten vor unverhältnismäßiger Belastung schützen, ohne notwendige Klima-, Sicherheits- oder Barrierefreiheitsmaßnahmen dauerhaft zu blockieren.",
+    "Der Schutz eisenbahnbetriebsbezogener Flächen kann spätere Schienenkapazitäten und klimaverträgliche Mobilität sichern. Ob die konkrete Regelung Flächen tatsächlich verfügbar hält oder andere Nutzungen unverhältnismäßig blockiert, ist noch nicht belastbar beobachtbar.",
+    "Die Fristverlängerung kann verhindern, dass Ganztagsmittel an fehlender Bau- und Umsetzungskapazität scheitern. Zugleich verschiebt sie Bildungs-, Teilhabe- und Entlastungswirkungen; relevant sind Plätze, Qualität, regionale Verteilung und das tatsächliche Startdatum.",
+    "Verschobene oder vereinfachte GAP-Regeln können Betriebe kurzfristig entlasten. Ob dies Resilienz stärkt oder Klima-, Boden-, Biodiversitäts- und Tierwohlziele schwächt, muss anhand von Bewirtschaftung, Kontrollen und Umweltzuständen beobachtet werden.",
+    "Ein vereinfachtes GAP-Verwaltungs- und Kontrollsystem kann Doppelprüfungen und Fehlerkosten reduzieren. Entlastung ist nur positiv, wenn Umwelt-, Klima-, Tierwohl- und Lebensmittelschutz gleich wirksam bleiben und Zertifikate, Ausnahmen und Kontrollen verlässlich sind.",
+    "Zusätzliche Haftgründe und eine Ausweisung im Strafurteil können Verfahren bündeln und in eng begrenzten Hochrisikofällen schützen. Wirkungsrobust wäre dies nur mit individualisierter Gefahrenprognose, voller Verhältnismäßigkeitsprüfung, wirksamem fachgerichtlichem Rechtsschutz und ohne pauschale Kopplung von Herkunft und Kriminalität.",
+    "Der Handel mit Gegenständen von NS-Opfern berührt Würde, Erinnerung, Eigentum und Restitution. Wirkungsrobuster als reine Marktunterdrückung ist eine Kombination aus klaren Verboten gegen entwürdigende Kommerzialisierung und geregelten Wegen für Provenienzklärung, Restitution, Sicherung und öffentliche Zugänglichkeit.",
+    "Klarere und digital unterstützte internationale Rechtshilfe kann Verfahren beschleunigen und Rechtssicherheit erhöhen. Der Nutzen ist nur robust, wenn Datenschutz, Nachvollziehbarkeit, Betroffenenrechte, Rechtsbehelfe und sichere Übermittlung vollständig erhalten bleiben.",
+    "Zusätzliche Mittel für Länder und Kommunen können Daseinsvorsorge und Infrastruktur stärken. Wirkung entsteht erst, wenn die Finanzierung zusätzlich ist, vor Ort umgesetzt werden kann und messbar bessere Zugänglichkeit, Qualität, Resilienz oder Klimawirkung hervorbringt.",
+    "Digitalere und flexiblere Fahrausbildung kann Kosten senken, Zugang verbessern und Berufsmobilität erhöhen. Entscheidend sind Lern- und Verkehrssicherheit, transparente Gesamtpreise, Qualität digitaler Angebote und eine Evaluation realer Prüfungsergebnisse.",
+    "Eine klarere strafrechtliche Erfassung von K.-o.-Tropfen kann eine Schutzlücke schließen. Die praktische Schutzwirkung hängt jedoch ebenso von schneller toxikologischer Beweissicherung, Beratung, Prävention und einer verlässlichen Erfassung der Fälle ab.",
+    "Lärm- und emissionsbezogene Luftverkehrsentgelte, wirksame Sanktionen und transparente Flugverfahren können Gesundheits- und Umweltbelastungen reduzieren. Zu prüfen sind Ausweichverkehre, Wettbewerbs- und Verteilungsfolgen sowie die tatsächliche Änderung von Flotten und Flugbewegungen.",
+    "Das Sondervermögen besitzt ein sehr hohes Wirkungspotenzial. Bislang sind vor allem Planung, Mittelbindung und Mittelabfluss beobachtbar; ob zusätzliche, dauerhaft bessere Infrastruktur- und Klimazustände entstehen, muss projektbezogen nachgewiesen werden.",
+    "Steuerliche Abschreibungs- und Entlastungsinstrumente können Investitionen vorziehen. Ohne belastbares Gegenfaktum, Zusätzlichkeitsprüfung und Wirkungskonditionen bleiben jedoch Mitnahmeeffekte, Verteilungswirkungen, fiskalische Kosten und die Förderung schädlicher Investitionen offen.",
+    "Längere Strafen können in einzelnen Hochrisikofällen den unmittelbaren Schutzzeitraum verlängern, belegen aber keine geringere Rückfallquote. Wirkungsvoller ist ein Vergleich mit individualisierter Risikoprüfung, Resozialisierung, Behandlung und Nachsorge; Freiheit und Verhältnismäßigkeit bleiben Schutzgates.",
+    "Ein höheres Gewicht des Telekommunikationsausbaus kann Genehmigungen beschleunigen. Es garantiert weder Ausbau in unterversorgten Regionen noch Bezahlbarkeit, Netzqualität oder Resilienz; Umwelt-, Eigentums- und kommunale Planungsbelange brauchen weiterhin wirksame Schutzgates.",
+    "Eine Tierhaltungskennzeichnung kann Transparenz schaffen und Nachfrage sowie Investitionen verändern. Die tatsächliche Tierwohlwirkung hängt von vollständigem Anwendungsbereich, überprüfbaren Kriterien, Kontrollen, verständlicher Information und realen Haltungsverbesserungen ab.",
+    "Höhere Strafen und Telekommunikationsüberwachung können Ermittlungen gegen illegale Kurzwaffen unterstützen. Eine Sicherheitswirkung entsteht erst, wenn Waffenflüsse und Netzwerke tatsächlich unterbrochen werden; Verhältnismäßigkeit, Zweckbindung und Schutz Unbeteiligter sind nicht kompensierbar.",
+    "Bundesweite Volksabstimmungen können direkte Teilhabe und Agenda-Setzung stärken. Sie sind nur wirkungsrobust mit Vorabprüfung, Minderheiten- und Grundrechtsschutz, fairer Finanzierung, pluralistischer Information und Verfahren, die komplexe Abwägung ermöglichen.",
+    "Eine Widerspruchsregelung kann den Kreis potenzieller Organspender vergrößern, erzeugt aber nicht automatisch mehr realisierte Spenden. Selbstbestimmung, verlässliche Registrierung, umfassende Information und ausreichende Klinik- und Koordinationskapazitäten sind die entscheidenden Schutz- und Wirkungsvoraussetzungen.",
+    "Eine eng begrenzte Behandlung außerhalb eines Krankenhauses kann in einzelnen Fällen schwere Transport- oder Klinikschäden vermeiden. Wegen des Grundrechtseingriffs dürfen Patientenwille, Alternativenprüfung, richterliche Kontrolle und Zwangsvermeidung nicht durch einen medizinischen Nutzen aufgerechnet werden."
+  ],
+  "next_verifiable_steps": [
+    "Amtliche finale Fassungen und Verfahrensstände unmittelbar vor Import technisch abgleichen.",
+    "Quellenkandidaten gegen Originale, Fundstellen und Hashes verifizieren, bevor sie in die veröffentlichte Provenienz aufgenommen werden.",
+    "Für historische Fälle Baseline, Beobachtungswert, Gegenfaktum, Zurechnungsbasis, Reichweite und Unsicherheit nachführen.",
+    "Für Monitoringfälle die festgelegten Indikatoren zum frühestmöglichen sinnvollen Reviewtermin aktualisieren.",
+    "Für Methodenfälle das ausgewählte Gegenfaktum und die harten Schutzgates vor einer Präferenzentscheidung autorisieren."
+  ],
+  "artifact_integrity": {
+    "file_count": 42,
+    "sha256_by_path": {
+      "FACHANALYSE_GEBAEUDEENERGIEGESETZ.md": "0a84340f66d00b26bc58a88e55e4e3c58a1dc6e0b39fa5899e0f6387ffa44f39",
+      "RELEASE-REPORT.md": "2343fb3dcb65568c2ab48401e43a60b8977657013fe3cb71401b86b4274c7ec1",
+      "batch-summary.md": "7822ced57e8637d3cfc2fa0bf3d0abf61c2b5a421d01c6f5b5fbeac270690ddb",
+      "case-results/05454260-5f17-4ba0-b3df-5c32a4cf36db/review-result.json": "31e5f90104bced55500d8792bfed5fd828a33bf3ed2f53dcf52f06c0e85b4938",
+      "case-results/14867d53-4b63-49d0-9889-73fc60d41a5d/review-result.json": "22f3bfa2bb53fcd511eb74b8f29334e0197774f3054558cdf4bf3309c98c908b",
+      "case-results/1bcb54ff-f064-43a1-bf98-bd45a5a2e212/review-result.json": "c3cd737ca918ab972bd0649da4eda3e6d901230928dc8faca3537a0b0d7ecb0b",
+      "case-results/2c9d8b24-ce03-4784-93b7-cce23829bb68/review-result.json": "3bd2ffe477d1744ce450dea070c04016c2c71eb89663b620226bf80663c47e4b",
+      "case-results/37e5199d-a236-432d-a979-adfe6fcda478/review-result.json": "9ceb1331044801425a18de40c2b03240a5536b9fa1fb84bb1b16ae357f50583e",
+      "case-results/43c02ec8-e1f6-42de-93b8-8bd0731a2565/review-result.json": "3bcaacf0480cdeebcfca6f00b098efebab50e2b8bac313f36a88680e05c85c9a",
+      "case-results/47ca9029-a749-4f79-a4e6-8e33f08082cd/review-result.json": "be24c3686594f64884ee05b251a66fce230e86c80aa3ff60fe66a42c36e324ca",
+      "case-results/4c5f138f-f81e-4b5e-8bc5-4cef1b91a2c1/review-result.json": "bfa0fbfb3ed7129524c818a3082960efdd0c3dc698e1a4dff38dbf7dcd2cdd68",
+      "case-results/4c755c57-3b13-4e6c-95c3-4c01a8a08695/review-result.json": "507e2ad57569954afbfd183f926d973445045b16ee23bd04da7467629a11dd0d",
+      "case-results/539ca2eb-04ba-4bb9-b525-d30da6fe2747/review-result.json": "2aedb135b3d7d23cce6c5702c5ccc7a3fba13a3b70e7ecbc9a5efe2606fd9d11",
+      "case-results/53f11245-34de-4f85-8096-5c2c41d0db30/review-result.json": "604913ac6c7deb7507bab3c107b25a7613e979a628d7a1922f6df9ebc0a026be",
+      "case-results/64892605-37f9-4a8c-a1ab-ff5e86056693/review-result.json": "d3591594746a2c2ad93516eadfd598e9429f4bb4b1cf4f3c4fcf3648ef416078",
+      "case-results/6a88c960-c7e9-400c-84bb-aa52039b62e7/review-result.json": "9ed95c4bdd179e4664b3c9e14b1f4d12f7f10e5152e8e9fcd42a370746dfa1ed",
+      "case-results/79146c82-e8d0-467a-929e-142c72d9d6cd/review-result.json": "28096a4f1b8a06b51ee94ab9c590ea077ad731d714a09b9de77e392af305050a",
+      "case-results/7b3bb327-d7a2-4c77-b46d-535be8590cb6/review-result.json": "019e98835b8320b72361941b565e15ca569ea532e0fcf5787f3b65875798e9b7",
+      "case-results/94cdfef9-baca-41aa-91df-4a1dbd6b5d4e/review-result.json": "06e49ab5270e8448ab1901b6d02e89db3f3f09be2a38d4c7e420480f0c08df96",
+      "case-results/95921553-b404-4db1-aba2-fbdde40ff3de/review-result.json": "1d108f3d9fb1eaceff2c7fedd94e514486c75cc9bd64a63b53d4013c6ac03ff1",
+      "case-results/a28ad2d7-be12-42b5-8329-4bab34dabada/review-result.json": "170a31196e049bec5d517c23a7790498b28c74c498fd1f572ea225223f254b33",
+      "case-results/a938dc30-3474-4f7c-a055-67a8cc2007c1/review-result.json": "dc435613641d74eef826ddf90d7cf3f0d283ae07acb1d38cc419d6b17599ed2c",
+      "case-results/aca79efa-63fe-4eb4-a68b-6930096304f0/review-result.json": "73fc4722890a9d52a8b150788603843450eda787fc35c79eb0f1eff0de6e7953",
+      "case-results/aee171b2-57eb-47f7-96b6-60e47cea8422/review-result.json": "02d936569ab9f8acd0a722aef3b526aa83f1ce1cdbaa3a019a52bb079d654d12",
+      "case-results/c315ec77-da20-4ff4-9ab0-8321030b085c/review-result.json": "e7412631156b240959b2d30ee96a0754e1ff62ee0668e318487fba18956f83e8",
+      "case-results/c945bb6b-623d-4a70-8041-faa10cf01e70/review-result.json": "f9c28cd5fd1a61e125bddd16adb232e35e7864aa55ed93b4e04dc551a7bfb0cf",
+      "case-results/caf988db-91fe-435c-bbe1-4b4c55ccbbf3/review-result.json": "c2db4e56534d97a71b2e1c0b2ebfb6af9488c9e89dd923612c5e698510a7c276",
+      "case-results/d3b89eb6-b1d3-49b1-b67e-1352541904f0/review-result.json": "8b0d6e3cbeeb580feeee4ab9f701bcfcd0c93cc22303060f535a24540f63f1ac",
+      "case-results/e8fe0be8-69c8-426d-8414-abc8df0549ad/review-result.json": "94f2234d21b361130ef0274d107bf002288eea4b50f4972b95df3c0a3f0f64c1",
+      "case-results/e9bbdd4a-9f5f-47e4-ac5a-bc347d1e659e/review-result.json": "2169ecad1fb56c94c7fbde28b0b73c83242413b99650282e1abeb59122ca7a98",
+      "case-results/ec3dd2c3-c21b-4050-830c-d6f5af416d3d/review-result.json": "25921101709cdd98f8e8c97aa841f4cec7090ccc10e3a6e49d59b95a57110613",
+      "commitment-links.json": "0838c31edaf80bdd09af27c522f9ba434020ce5ae0f698f163e4872d7d351e0f",
+      "commitment-registers/btw-2025-afd/commitment-register.json": "ac573a7ef126cc47929df4ab825c85236989de21b71b3d5eed5ab66abf429fbd",
+      "commitment-registers/btw-2025-cdu-csu/commitment-register.json": "d0c4bcd393e2c9c1944096871fa686e86c1bf9d3d5cc4b84e7f7fcd36b78370d",
+      "commitment-registers/btw-2025-gruene/commitment-register.json": "79f407fef5c891ce6c8aaa64b74eb2128067cd1934e573b2fe88a51f2ae3ed23",
+      "commitment-registers/btw-2025-linke/commitment-register.json": "151a7097f62346018fdd3429d4f5b773a77f85acd72613a1099aa0ade1eeb089",
+      "commitment-registers/btw-2025-spd/commitment-register.json": "c42d147d4bace1582cb466ffcf3b40a4df33b1b13686f5946cdcf726d6ec8164",
+      "commitment-registers/btw-2025-ssw/commitment-register.json": "2d358a8b23a2a0dc49be7c9e6c09f93dc36755b39b3c24ced4b558216e3b8e44",
+      "commitment-registers/coalition-2025-cdu-csu-spd/commitment-register.json": "4a0057bb2c7e4439d278a0a45d2229e2734fca2d9d9957f0ef09003eb7373e06",
+      "fachanalysen/gebaeudeenergiegesetz-medienwirkung.json": "8410325d22fc6a88ade9b45902116c2b7ec0d169da55e77904748f55a71440e9",
+      "state-target-register.json": "60e0095ac82f2167b3e955e15a4b00f4302202890206beb97f23d30a4be3acdd"
+    },
+    "file_count_including_release_summary": 42,
+    "hashed_file_count": 41,
+    "release_summary_self_hash": "EXCLUDED_TO_AVOID_SELF_REFERENCE"
+  }
+}

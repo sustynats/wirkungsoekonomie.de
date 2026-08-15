@@ -145,6 +145,23 @@ export const normativeMappingSchema = z.object({
   tile_mappings: z.array(normativeTileMappingSchema).max(80).default([])
 }).passthrough();
 
+/**
+ * Editorially approved plain-language entry point for a review.  It is kept
+ * separate from the analytical payload: it explains the case without turning
+ * an open causal question into a finding.
+ */
+export const publicSummarySchema = z.object({
+  headline: z.string().min(1).max(240),
+  key_statement: z.string().min(1).max(2_000),
+  stage: z.string().min(1).max(160).optional(),
+  what_is_known: z.string().min(1).max(2_000).optional(),
+  what_is_not_yet_known: z.string().min(1).max(2_000).optional(),
+  improvement_options: z.array(z.string().min(1).max(2_000)).max(20).default([]),
+  publisher: z.literal("Institut für Wirkungsökonomie").optional(),
+  maturity_stage: z.string().min(1).max(160).optional(),
+  evidence_boundary: z.string().min(1).max(2_000).optional()
+}).optional();
+
 export const reviewResultSchema = z.object({
   schema_version: z.literal(reviewPackageSchemaVersion),
   review_id: z.string().min(1).max(200),
@@ -156,6 +173,7 @@ export const reviewResultSchema = z.object({
   analysis_version: z.string().min(1).max(120),
   generated_at: z.string().datetime(),
   review_status: z.enum(["COMPLETE", "DATA_GAP", "SOURCE_CONFLICT", "METHOD_REVIEW_REQUIRED", "PARTIAL"]),
+  public_summary: publicSummarySchema,
   source_completeness: z.record(z.unknown()),
   decision: z.record(z.unknown()),
   ex_ante: z.record(z.unknown()),

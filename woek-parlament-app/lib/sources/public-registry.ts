@@ -3,6 +3,7 @@ import { supabaseRest } from "@/lib/database/supabase-admin";
 import { parliamentaryCases, type CaseSource } from "@/data/cases";
 import { politicalSourceCatalog } from "@/lib/commitments/source-catalog";
 import { fachanalyseSources } from "@/data/fachanalysen";
+import { stateTargetRegisters } from "@/data/state-target-registers";
 
 export const sourceCategories = [
   "PARLIAMENTARY_RECORD",
@@ -162,7 +163,23 @@ function publishedStaticCaseSources(): StaticPublicSource[] {
   );
 
   for (const item of publicCases) {
-    for (const source of item.sources) {
+    const completeSourceManifest = item.publicWorkingAct?.fullReview?.sourceManifest ?? [];
+    const sources = [
+      ...item.sources,
+      ...completeSourceManifest.flatMap((value) => {
+        const source = value && typeof value === "object" ? value as Record<string, unknown> : {};
+        const url = typeof source.url === "string" ? source.url : "";
+        if (!url) return [];
+        return [{
+          title: typeof source.title === "string" && source.title.trim() ? source.title : "Quellenangabe der Fachakte",
+          publisher: typeof source.institution === "string" && source.institution.trim() ? source.institution : "In der Fachakte dokumentierte Stelle",
+          url,
+          retrievedAt: typeof source.retrieved_at === "string" && source.retrieved_at.trim() ? source.retrieved_at.slice(0, 10) : item.lastUpdated,
+          note: typeof source.document_type === "string" && source.document_type.trim() ? source.document_type : "Quellenangabe der Fachakte"
+        } satisfies CaseSource];
+      })
+    ];
+    for (const source of sources) {
       const safeUrl = isSafePublicSourceUrl(source.url);
       const slug = sourceSlugForCanonicalUrl(source.url);
       if (!safeUrl || !slug) continue;
@@ -236,10 +253,11 @@ function categoryForFachanalyseSource(documentType: string): SourceCategory {
 function fachanalyseCatalogSources(): StaticPublicSource[] {
   return fachanalyseSources().flatMap((source) => {
     const canonicalUrl = isSafePublicSourceUrl(source.canonicalUrl);
-    if (!canonicalUrl) return [];
+    const slug = canonicalUrl ? sourceSlugForCanonicalUrl(canonicalUrl) : null;
+    if (!canonicalUrl || !slug) return [];
     return [{
       id: `fachanalyse-${source.slug}`,
-      slug: source.slug,
+      slug,
       title: source.title,
       institution: source.institution,
       category: categoryForFachanalyseSource(source.documentType),
@@ -252,6 +270,31 @@ function fachanalyseCatalogSources(): StaticPublicSource[] {
       sourceHash: null,
       temporalClass: source.temporalClass,
       abstract: `${source.supports} Nicht belegt: ${source.doesNotSupport}`,
+      usages: []
+    } satisfies StaticPublicSource];
+  });
+}
+
+function stateTargetCatalogSources(): StaticPublicSource[] {
+  return stateTargetRegisters.flatMap((register) => {
+    const canonicalUrl = isSafePublicSourceUrl(register.sourceUrl);
+    const slug = canonicalUrl ? sourceSlugForCanonicalUrl(canonicalUrl) : null;
+    if (!canonicalUrl || !slug) return [];
+    return [{
+      id: `state-target-${register.id}`,
+      slug,
+      title: register.title,
+      institution: "Land Sachsen-Anhalt",
+      category: "GOVERNMENT_RECORD",
+      role: "NORMATIVE_REFERENCE",
+      documentType: "Landesnachhaltigkeitsstrategie",
+      canonicalUrl,
+      documentDate: register.sourcePublishedAt,
+      retrievedAt: "2026-08-15",
+      versionLabel: `${register.declaredTargetCount} Zieltexte mit Fundstellen dokumentiert`,
+      sourceHash: register.sourceSha256,
+      temporalClass: "CURRENT_REFERENCE",
+      abstract: "Landeseigener, versionierter Zielrahmen. Er ergänzt die SDGs für Sachsen-Anhalt und wird je Fall mit Zuständigkeit, Wirkungsraum und Schutzgrenzen verbunden.",
       usages: []
     } satisfies StaticPublicSource];
   });
@@ -382,7 +425,7 @@ function foundationalReferenceSources(): StaticPublicSource[] {
 }
 
 function staticPublicSources() {
-  return [...publishedStaticCaseSources(), ...politicalCatalogSources(), ...fachanalyseCatalogSources(), ...foundationalReferenceSources()];
+  return [...publishedStaticCaseSources(), ...politicalCatalogSources(), ...fachanalyseCatalogSources(), ...stateTargetCatalogSources(), ...foundationalReferenceSources()];
 }
 
 async function usagesForSources(sourceIds: string[]) {

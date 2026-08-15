@@ -17,11 +17,10 @@ export type VoteLedgerSummary = {
   abstained: number;
   didNotVote: number;
   notScorable: number;
-  agreementRate: number | null;
 };
 
 export function summarizeVoteLedger(statuses: AgreementStatus[]): VoteLedgerSummary {
-  const summary: VoteLedgerSummary = { scorable: 0, aligned: 0, notAligned: 0, abstained: 0, didNotVote: 0, notScorable: 0, agreementRate: null };
+  const summary: VoteLedgerSummary = { scorable: 0, aligned: 0, notAligned: 0, abstained: 0, didNotVote: 0, notScorable: 0 };
   for (const status of statuses) {
     if (status === "ALIGNED") { summary.aligned += 1; summary.scorable += 1; }
     if (status === "NOT_ALIGNED") { summary.notAligned += 1; summary.scorable += 1; }
@@ -29,6 +28,5 @@ export function summarizeVoteLedger(statuses: AgreementStatus[]): VoteLedgerSumm
     if (status === "DID_NOT_VOTE") summary.didNotVote += 1;
     if (status === "NOT_SCORABLE") summary.notScorable += 1;
   }
-  summary.agreementRate = summary.scorable === 0 ? null : summary.aligned / summary.scorable;
   return summary;
 }

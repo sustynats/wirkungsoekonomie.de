@@ -20,11 +20,7 @@ const moreLinks = [
 export function PortalNav() {
   return <>
     <nav className="portal-nav portal-nav--desktop" aria-label="Hauptnavigation">
-      {links.map(([label, href]) => <Link key={href} href={href}>{label}</Link>)}
-      <details className="portal-more-menu">
-        <summary>Mehr<span className="sr-only"> Bereiche öffnen</span></summary>
-        <div>{moreLinks.map(([label, href]) => <Link key={href} href={href}>{label}</Link>)}</div>
-      </details>
+      {[...links, ...moreLinks].map(([label, href]) => <Link key={href} href={href}>{label}</Link>)}
     </nav>
     <nav className="portal-nav--mobile" aria-label="Hauptnavigation mobil">
       <details>

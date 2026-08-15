@@ -112,6 +112,7 @@ export function normalizeExternalReviewResult(input: unknown, reviewPackage: Rev
     analysis_version: text(source.analysis_version, text(source.review_result_schema_version, "1.0.0")),
     generated_at: isoDateTime(source.generated_at ?? provenance.review_generated_at ?? provenance.generated_at),
     review_status: mappedReviewStatus(source.review_status ?? source.status),
+    public_summary: Object.keys(record(source.public_summary)).length > 0 ? record(source.public_summary) : undefined,
     source_completeness: sourceCompleteness,
     decision: record(source.decision),
     ex_ante: exAnte,

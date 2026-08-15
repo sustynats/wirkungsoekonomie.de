@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { CaseCard } from "@/app/components/CaseCard";
+import { EditorialVisual } from "@/app/components/EditorialVisual";
 import { listPublishedCases } from "@/lib/cases";
 
 export default async function HomePage({ searchParams }: { searchParams: Promise<{ modus?: string }> }) {
@@ -72,6 +73,16 @@ export default async function HomePage({ searchParams }: { searchParams: Promise
           <article><p className="example-label">Nachvollziehen</p><h3>Warum lautet die Einordnung so?</h3><p>Die Kurzfassung bleibt lesbar. Quellen, Annahmen, Rechenweg und Unsicherheit lassen sich bei Bedarf öffnen.</p></article>
         </div>
       </section>
+
+      <EditorialVisual
+        src="/visuals/woek/wirkung-und-wirkungspotenzial.svg"
+        alt="Infografik: Wirkungspotenzial kann über einen Wirkmechanismus zu beobachtbarer Wirkung führen. Risiken und Schutzgrenzen werden dabei getrennt geprüft."
+        eyebrow="Einfach unterscheiden"
+        title="Eine Entscheidung kann etwas ermöglichen. Ob sie wirklich etwas verändert, zeigt sich erst später."
+        description="Vor einer Abstimmung untersucht das Portal Wirkungspotenzial und Wirkungsrisiken: Was könnte sich verändern, über welchen Weg und unter welchen Voraussetzungen? Nach der Umsetzung wird getrennt beobachtet, was tatsächlich geschieht und was sich der Entscheidung belastbar zurechnen lässt."
+        href="/methodik#grundlagen"
+        linkLabel="Den Prüfweg verstehen"
+      />
 
       <section className="shell section section-compact mandate-teaser" aria-labelledby="mandate-teaser-title">
         <div className="section-heading"><div><p className="eyebrow">Mandat &amp; Praxis</p><h2 id="mandate-teaser-title">Versprechen, Vereinbarung, Entscheidung – und ihre Wirkung.</h2></div><Link className="text-link" href="/mandat-und-praxis">Bereich öffnen <span aria-hidden="true">→</span></Link></div>

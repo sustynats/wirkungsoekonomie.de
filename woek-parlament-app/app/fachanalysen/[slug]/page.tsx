@@ -5,8 +5,11 @@ import { CalculationIcon, EvidenceIcon, HistoryIcon, MonitorIcon, PathIcon, Sour
 import { ImpactReviewMap } from "@/app/components/ImpactReviewMap";
 import { GlossaryBasics } from "@/app/components/GlossaryBasics";
 import { ReferenceFieldTiles } from "@/app/components/ReferenceFieldTiles";
+import { FullAnalysisText } from "@/app/components/FullAnalysisText";
 import type { FachanalyseSource } from "@/data/fachanalysen";
+import { fullAnalysisBySlug } from "@/data/fachanalysen-full";
 import { getFachanalyse } from "@/lib/fachanalysen";
+import { sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
 
 export const dynamic = "force-dynamic";
 
@@ -23,7 +26,7 @@ function humanize(value: string | undefined) {
 function SourceLinks({ sources }: { sources: FachanalyseSource[] }) {
   if (sources.length === 0) return null;
   return <ul className="inline-source-links" aria-label="Quellen">
-    {sources.map((source) => <li key={source.slug}><SourceIcon aria-hidden="true" /><Link href={`/quellen/${source.slug}`}>{source.institution}: {source.title}</Link></li>)}
+    {sources.map((source) => <li key={source.slug}><SourceIcon aria-hidden="true" /><Link href={sourceDetailHrefForUrl(source.canonicalUrl)}>{source.institution}: {source.title}</Link></li>)}
   </ul>;
 }
 
@@ -47,6 +50,7 @@ export default async function FachanalyseDetailPage({ params }: { params: Promis
   const { slug } = await params;
   const analysis = getFachanalyse(slug);
   if (!analysis) notFound();
+  const fullSource = fullAnalysisBySlug[slug];
   const detailed = Boolean(analysis.timeline?.length);
   return (
     <div className="shell content-page fachanalyse-detail">
@@ -148,6 +152,7 @@ export default async function FachanalyseDetailPage({ params }: { params: Promis
       </>}
 
       {analysis.publicDownload ? <section className="decision-section download-section" aria-labelledby="download-title"><p className="eyebrow">Dokumentation</p><h2 id="download-title">Dossier als PDF</h2><p>{analysis.publicDownload.description}</p><a className="button button-primary" href={analysis.publicDownload.href} download>{analysis.publicDownload.label}</a></section> : null}
+      {fullSource ? <FullAnalysisText source={fullSource} /> : null}
       <section className="decision-section source-overview" aria-labelledby="sources-title"><p className="eyebrow">Quellenarchiv</p><h2 id="sources-title">{analysis.sources.length} Quellen mit Einordnung</h2><p>Jede Quelle führt zuerst auf ihre Detailseite: Herausgeber, zeitliche Einordnung, Fundstelle und Aussagegrenze bleiben dort sichtbar.</p><div className="source-overview-links"><SourceLinks sources={analysis.sources} /></div></section>
       <p className="page-return"><Link href="/fachanalysen">← Alle Fachanalysen</Link></p>
     </div>

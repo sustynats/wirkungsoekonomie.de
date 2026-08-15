@@ -3,12 +3,14 @@
 import { readFileSync } from "node:fs";
 import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
+import releasedCaseReviews from "@/data/generated/release-1/case-reviews.json";
 import { supabaseRest } from "@/lib/database/supabase-admin";
-import { assertExternalReviewSafe } from "@/lib/review/privacy";
+import { assertExternalReviewSafe, sha256 } from "@/lib/review/privacy";
 import { isSafePublicSourceUrl } from "@/lib/sources/public-registry";
 import type {
   ParliamentaryCase,
   PublicMaturityStatus,
+  PublicFullReview,
   PublicNormativeMapping,
   PublicNormativeMappingItem,
   PublicReviewDetail
@@ -47,6 +49,14 @@ type BatchCaseRow = {
 };
 
 type JsonRecord = Record<string, unknown>;
+type ReleasedCaseReviews = { reviews?: unknown[] };
+
+const releasedReviewByCaseId = new Map(
+  ((releasedCaseReviews as ReleasedCaseReviews).reviews ?? [])
+    .map((review) => object(review))
+    .filter((review) => text(review.case_id))
+    .map((review) => [text(review.case_id), review])
+);
 
 function loadLocalEnvironment() {
   try {
@@ -95,6 +105,54 @@ function firstText(rows: JsonRecord[], fields: string[], cap = 8) {
 
 function unique(items: string[], cap = 8) {
   return [...new Set(items.filter(Boolean))].slice(0, cap);
+}
+
+function nonEmptyContentPaths(value: unknown, prefix = ""): string[] {
+  if (value === null || value === undefined || value === "") return [];
+  if (Array.isArray(value)) {
+    if (value.length === 0) return [];
+    return value.flatMap((item) => nonEmptyContentPaths(item, `${prefix}[]`));
+  }
+  if (typeof value === "object") {
+    return Object.entries(value as JsonRecord).flatMap(([key, nested]) => nonEmptyContentPaths(nested, prefix ? `${prefix}.${key}` : key));
+  }
+  return prefix ? [prefix] : [];
+}
+
+function publicSourceManifest(packagePayload: unknown): Array<Record<string, unknown>> {
+  return records(object(packagePayload).source_manifest).map((source) => ({
+    source_id: text(source.source_id),
+    title: text(source.title),
+    institution: text(source.institution),
+    url: isSafePublicSourceUrl(text(source.url)) ?? "",
+    document_date: source.document_date ?? null,
+    retrieved_at: text(source.retrieved_at),
+    document_type: text(source.document_type),
+    version: source.version ?? null,
+    temporal_class: text(source.temporal_class),
+    relevant_locations: Array.isArray(source.relevant_locations) ? source.relevant_locations : []
+  }));
+}
+
+function completePublicReview(result: JsonRecord, packagePayload: unknown): PublicFullReview {
+  const requiredContentPaths = [...new Set(nonEmptyContentPaths(result))].sort();
+  // FullReviewRecord recursively renders every nonempty result field. Exact
+  // duplicates in the orientation layer are documented, never discarded.
+  return {
+    result,
+    sourceManifest: publicSourceManifest(packagePayload),
+    sourceHash: sha256(result),
+    sourceDocumentHash: sha256({ result, source_manifest: publicSourceManifest(packagePayload) }),
+    requiredContentPaths,
+    renderedContentPaths: requiredContentPaths,
+    duplicateMappings: [
+      { sourcePath: "public_summary", renderedAt: "orientation" },
+      { sourcePath: "normative_mapping", renderedAt: "sdg-and-schutzgueter" },
+      { sourcePath: "impact_paths", renderedAt: "wirkpfade" },
+      { sourcePath: "calculation_requirements", renderedAt: "rechenweg" }
+    ],
+    unrenderedContentPaths: []
+  };
 }
 
 function isClosedStage(stage: string) {
@@ -313,6 +371,7 @@ function buildWorkingAct(caseRow: DatabaseCase, review: ReviewRow, packagePayloa
   const result = object(review.result_payload);
   const decision = object(result.decision);
   const exAnte = object(result.ex_ante);
+  const publicSummary = object(result.public_summary);
   const impactPaths = records(exAnte.impact_paths).length > 0 ? records(exAnte.impact_paths) : records(result.impact_paths);
   const dataGaps = records(result.data_gaps);
   const counterfactuals = records(result.counterfactuals);
@@ -320,6 +379,8 @@ function buildWorkingAct(caseRow: DatabaseCase, review: ReviewRow, packagePayloa
   const stage = text(caseRow.current_stage, "Amtlicher Verfahrensstand wird fortlaufend geprüft");
   const retrievedAt = safeDate(review.imported_at, new Date().toISOString().slice(0, 10));
   const potential = text(exAnte.overall_potential, text(exAnte.scope_statement, "Die Fallakte wird auf Grundlage der amtlichen Unterlagen strukturiert."));
+  const publicHeadline = text(publicSummary.headline);
+  const publicKeyStatement = text(publicSummary.key_statement, maturityCopy(maturity));
   const levers = unique(firstText(impactPaths, ["change_lever_for_positive_net_impact"], 5));
   const risks = unique([
     ...impactPaths.flatMap((item) => strings(item.risks_and_side_effects, 6)),
@@ -339,6 +400,10 @@ function buildWorkingAct(caseRow: DatabaseCase, review: ReviewRow, packagePayloa
   const sourceCount = publicSources(packagePayload, retrievedAt).length;
   const normativeMapping = publicNormativeMapping(result);
   const reviewDetail = publicReviewDetail(result, impactPaths);
+  // The overview may use a current editorial projection, but the Fachakte
+  // always renders the released source record verbatim. This prevents a
+  // normalized database shape from silently shortening a public analysis.
+  const fullReview = completePublicReview(releasedReviewByCaseId.get(caseRow.id) ?? result, packagePayload);
 
   const materiality = caseRow.materiality === "VERY_HIGH" || caseRow.materiality === "HIGH" || caseRow.materiality === "MEDIUM" || caseRow.materiality === "WATCH"
     ? caseRow.materiality
@@ -350,7 +415,7 @@ function buildWorkingAct(caseRow: DatabaseCase, review: ReviewRow, packagePayloa
     // Titles identify the parliamentary decision. The analytical maturity is
     // a small, visible status below the title, never a repeated headline.
     title: caseRow.official_title ?? caseRow.title,
-    plainTitle: shortDecisionTitle(caseRow.official_title ?? caseRow.title),
+    plainTitle: publicHeadline || shortDecisionTitle(caseRow.official_title ?? caseRow.title),
     kind: caseKind(stage),
     editorialStatus: "WORKING_ACT_PUBLISHED",
     materiality,
@@ -358,10 +423,13 @@ function buildWorkingAct(caseRow: DatabaseCase, review: ReviewRow, packagePayloa
     statusVerification: "VERIFIED",
     nextEvent: null,
     lastUpdated: retrievedAt,
-    summary: `${maturityCopy(maturity)} ${sourceCount > 0 ? `Die Akte verweist auf ${sourceCount} amtliche Quellen.` : "Die amtlichen Quellen werden sichtbar nachgeführt."}`,
+    // The release review supplies the public plain-language statement.  The
+    // maturity sentence is valuable context, but must not replace the actual
+    // subject of the parliamentary case in the first viewport.
+    summary: `${publicKeyStatement} ${sourceCount > 0 ? `Die Akte verweist auf ${sourceCount} amtliche Quellen.` : "Die amtlichen Quellen werden sichtbar nachgeführt."}`,
     whatIsDecided: text(decision.object, caseRow.official_title ?? caseRow.title),
     analysisStatus: maturity,
-    intendedGoal: text(object(result.ex_ante).official_objective, "Das amtlich benannte Ziel und die Wirkungslogik werden in dieser Akte getrennt ausgewiesen."),
+    intendedGoal: text(object(result.ex_ante).official_objective, "Ein separates amtliches Ziel ist im vorliegenden Fachbestand nicht ausgewiesen. Die vollständige Fachakte zeigt stattdessen, welche Ziele, Wirkpfade und Voraussetzungen für die Einordnung geprüft werden."),
     impactPath: pathSummary.length ? pathSummary : ["Die relevanten Wirkpfade werden mit der amtlichen Fassung und belastbaren Quellen weiter präzisiert."],
     affectedGroups: groups,
     questions: questions.length ? questions : ["Welche Daten, Annahmen und Vergleichsmaßstäbe sind noch erforderlich?"],
@@ -378,8 +446,16 @@ function buildWorkingAct(caseRow: DatabaseCase, review: ReviewRow, packagePayloa
       risks,
       dataGaps: firstText(dataGaps, ["description"], 12),
       counterfactualQuestions: firstText(counterfactuals, ["question"], 6),
+      editorialSummary: {
+        keyStatement: publicKeyStatement,
+        whatIsKnown: text(publicSummary.what_is_known) || undefined,
+        whatIsNotYetKnown: text(publicSummary.what_is_not_yet_known) || undefined,
+        evidenceBoundary: text(publicSummary.evidence_boundary) || undefined,
+        improvementOptions: strings(publicSummary.improvement_options, 8)
+      },
       normativeMapping,
-      reviewDetail
+      reviewDetail,
+      fullReview
     }
   };
 }
@@ -432,9 +508,21 @@ async function main() {
   });
   assertExternalReviewSafe(rows, "public-working-acts");
   const output = path.resolve(process.cwd(), "data/public-working-acts.json");
+  const contentIntegrity = rows.map((row) => ({
+    case_id: row.slug,
+    route: `/entscheidungen/${row.slug}?ansicht=fachakte`,
+    source_sha256: row.publicWorkingAct?.fullReview?.sourceHash ?? null,
+    required_content_paths: row.publicWorkingAct?.fullReview?.requiredContentPaths ?? [],
+    rendered_content_paths: row.publicWorkingAct?.fullReview?.renderedContentPaths ?? [],
+    duplicate_mappings: row.publicWorkingAct?.fullReview?.duplicateMappings ?? [],
+    unrendered_content_paths: row.publicWorkingAct?.fullReview?.unrenderedContentPaths ?? [],
+    reference_version: text(object(row.publicWorkingAct?.fullReview?.result).woek_reference_snapshot ? "documented" : "not documented"),
+    last_verified: new Date().toISOString()
+  }));
   await mkdir(path.dirname(output), { recursive: true });
   await writeFile(output, `${JSON.stringify(rows, null, 2)}\n`, "utf8");
-  console.log(JSON.stringify({ output: "data/public-working-acts.json", working_acts: rows.length }, null, 2));
+  await writeFile(path.resolve(process.cwd(), "data/content-integrity-manifest.json"), `${JSON.stringify({ generated_at: new Date().toISOString(), cases: contentIntegrity }, null, 2)}\n`, "utf8");
+  console.log(JSON.stringify({ output: "data/public-working-acts.json", content_integrity_manifest: "data/content-integrity-manifest.json", working_acts: rows.length }, null, 2));
 }
 
 main().catch((error) => {
