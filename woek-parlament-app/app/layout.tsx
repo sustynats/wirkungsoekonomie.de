@@ -3,6 +3,7 @@ import { headers } from "next/headers";
 import Link from "next/link";
 import { Suspense } from "react";
 import { PortalNav } from "@/app/components/PortalNav";
+import { SiteAnalyticsTracker } from "@/app/components/SiteAnalyticsTracker";
 import "./globals.css";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -29,6 +30,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <Suspense fallback={<nav className="portal-nav" aria-label="Hauptnavigation"><Link href="/bevorstehend">Anstehend</Link><Link href="/entscheidungen">Entscheidungen</Link><Link href="/historie">Historie</Link></nav>}><PortalNav /></Suspense>
     </div></header>
     <main id="main-content">{children}</main>
+    <SiteAnalyticsTracker />
     <footer className="site-footer"><div className="container footer-grid"><div><p className="kicker">Wirkungsportal Parlament</p><h2>Nachvollziehbar prüfen. Offen korrigieren.</h2><p>Ein öffentliches Fachangebot des Instituts für Wirkungsökonomie. Keine Personen- oder Parteibewertung, kein Social-Credit-System.</p></div><nav aria-label="Fußnavigation"><Link href="/transparenz">Transparenz</Link><Link href="/methodik">Methodik</Link><Link href="/transparenz/korrekturen">Korrekturen</Link><a href="/rss.xml">RSS-Feed</a><Link href="/datenschutz">Datenschutzerklärung</Link><a href="https://wirkungsoekonomie.de/impressum.html">Impressum</a><Link href="https://wirkungsoekonomie.de">Wirkungsökonomie.de</Link><a href="mailto:wirkungscheck@wirkungsoekonomie.de">Kontakt</a></nav></div></footer>
   </body></html>;
 }

@@ -54,7 +54,10 @@ TAG_STOPWORDS = {
 
 EXCLUDED_DIRS = {
     ".git",
+    ".claude",
     ".codex-backup",
+    ".next",
+    ".vercel",
     "_debug",
     "_internal",
     "_site",
