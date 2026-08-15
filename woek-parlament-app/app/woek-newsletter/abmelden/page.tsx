@@ -1,27 +1,14 @@
 "use client";
 
-import { useSearchParams } from "next/navigation";
-import { Suspense, useState } from "react";
+import { useEffect } from "react";
 
-export default function UnsubscribeNewsletterPage() {
-  return <Suspense fallback={<div className="shell content-page"><p className="eyebrow">E-Mail-Anmeldung</p><h1>Newsletter abmelden</h1></div>}><UnsubscribeNewsletter /></Suspense>;
-}
+const landingUrl = "https://wirkungsoekonomie.de/newsletter/abmelden.html";
 
-function UnsubscribeNewsletter() {
-  const params = useSearchParams();
-  const [message, setMessage] = useState<string | null>(null);
-  const [pending, setPending] = useState(false);
-  async function remove() {
-    setPending(true);
-    const delivery = params.get("delivery");
-    const response = await fetch(delivery ? "/api/newsletter-tracking/unsubscribe" : "/api/woek-newsletter/abmelden", {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify(delivery ? { delivery, token: params.get("token") } : { subscription: params.get("subscription"), token: params.get("token") })
-    });
-    const result = await response.json() as { error?: string };
-    setMessage(response.ok ? "Die Adresse erhält keine weiteren Ausgaben des Wirkungsbriefs." : (result.error ?? "Die Abmeldung konnte nicht abgeschlossen werden."));
-    setPending(false);
-  }
-  return <div className="shell content-page confirmation-page"><p className="eyebrow">E-Mail-Anmeldung</p><h1>Der Wirkungsbrief: abmelden</h1><p className="lead">Die Abmeldung gilt sofort. Wenn Sie sich später erneut anmelden möchten, fordern Sie eine neue Bestätigungs-E-Mail an.</p><button className="button button-secondary" onClick={remove} disabled={pending}>{pending ? "Wird abgemeldet …" : "Wirkungsbrief abmelden"}</button>{message && <p className="notice" role="status">{message}</p>}<p className="page-return"><a href="https://wirkungsoekonomie.de/">Zur Website der Wirkungsökonomie</a></p></div>;
+/** Redirects historic Wirkungsbrief unsubscribe links to the main site. */
+export default function UnsubscribeNewsletterRedirect() {
+  useEffect(() => {
+    window.location.replace(`${landingUrl}${window.location.search}`);
+  }, []);
+
+  return <main className="shell content-page"><p className="eyebrow">Der Wirkungsbrief</p><h1>Weiterleitung zur Abmeldung</h1><p className="lead">Ihre Abmeldung wird auf der Website der Wirkungsökonomie geöffnet.</p><p><a href={landingUrl}>Zur Abmeldeseite</a></p></main>;
 }

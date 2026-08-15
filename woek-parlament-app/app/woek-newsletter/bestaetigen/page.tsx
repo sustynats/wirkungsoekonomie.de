@@ -1,22 +1,18 @@
 "use client";
 
-import { useSearchParams } from "next/navigation";
-import { Suspense, useState } from "react";
+import { useEffect } from "react";
 
-export default function ConfirmNewsletterPage() {
-  return <Suspense fallback={<div className="shell content-page"><p className="eyebrow">E-Mail-Anmeldung</p><h1>Newsletter bestätigen</h1></div>}><ConfirmNewsletter /></Suspense>;
-}
+const landingUrl = "https://wirkungsoekonomie.de/newsletter/bestaetigen.html";
 
-function ConfirmNewsletter() {
-  const params = useSearchParams();
-  const [message, setMessage] = useState<string | null>(null);
-  const [pending, setPending] = useState(false);
-  async function confirm() {
-    setPending(true);
-    const response = await fetch("/api/woek-newsletter/bestaetigen", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ subscription: params.get("subscription"), token: params.get("token"), unsubscribe_token: params.get("unsubscribe_token") }) });
-    const result = await response.json() as { outcome?: string; error?: string };
-    setMessage(response.ok ? (result.outcome === "already_active" ? "Diese Anmeldung war bereits bestätigt." : "Vielen Dank. Der Wirkungsbrief ist jetzt aktiv.") : (result.error ?? "Die Bestätigung konnte nicht abgeschlossen werden."));
-    setPending(false);
-  }
-  return <div className="shell content-page confirmation-page"><p className="eyebrow">E-Mail-Anmeldung</p><h1>Der Wirkungsbrief: Anmeldung bestätigen</h1><p className="lead">Mit der Bestätigung aktivieren Sie den Wirkungsbrief. Sie können ihn jederzeit mit einem Link in jeder E-Mail abbestellen.</p><button className="button button-primary" onClick={confirm} disabled={pending}>{pending ? "Wird bestätigt …" : "Anmeldung bestätigen"}</button>{message && <p className="notice" role="status">{message}</p>}<p className="page-return"><a href="https://wirkungsoekonomie.de/">Zur Website der Wirkungsökonomie</a></p></div>;
+/**
+ * Kept only for confirmation links sent before the landing page moved. The
+ * Wirkungsbrief is a main-site newsletter and must never expose its flow as
+ * a Parliament product.
+ */
+export default function ConfirmNewsletterRedirect() {
+  useEffect(() => {
+    window.location.replace(`${landingUrl}${window.location.search}`);
+  }, []);
+
+  return <main className="shell content-page"><p className="eyebrow">Der Wirkungsbrief</p><h1>Weiterleitung zur Bestätigung</h1><p className="lead">Ihre Anmeldung wird auf der Website der Wirkungsökonomie geöffnet.</p><p><a href={landingUrl}>Zur Bestätigungsseite</a></p></main>;
 }

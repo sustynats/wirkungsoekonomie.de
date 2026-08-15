@@ -27,6 +27,10 @@ function portalUrl() {
   return (process.env.NEXT_PUBLIC_PORTAL_URL ?? "https://parlament.wirkungsoekonomie.de").replace(/\/$/, "");
 }
 
+function websiteUrl() {
+  return (process.env.NEXT_PUBLIC_WOEK_WEBSITE_URL ?? "https://wirkungsoekonomie.de").replace(/\/$/, "");
+}
+
 function recipientPath(newsletterKey: NewsletterKey, offset: number) {
   const table = newsletterKey === "wirkungsbrief" ? "woek_newsletter_subscriptions" : "wirkungsradar_subscriptions";
   return `parliament.${table}?status=eq.ACTIVE&select=id,email,email_hash&order=id.asc&limit=1000&offset=${offset}`;
@@ -70,7 +74,9 @@ export async function POST(request: NextRequest) {
         subscriptionId: recipient.id,
         recipientHash: recipient.email_hash
       });
-      const unsubscribeUrl = `${portalUrl()}/woek-newsletter/abmelden?delivery=${encodeURIComponent(tracked.deliveryId)}&token=${encodeURIComponent(tracked.trackingToken)}`;
+      const unsubscribeUrl = input.newsletter_key === "wirkungsbrief"
+        ? `${websiteUrl()}/newsletter/abmelden.html?delivery=${encodeURIComponent(tracked.deliveryId)}&token=${encodeURIComponent(tracked.trackingToken)}`
+        : `${portalUrl()}/woek-newsletter/abmelden?delivery=${encodeURIComponent(tracked.deliveryId)}&token=${encodeURIComponent(tracked.trackingToken)}`;
       try {
         const html = await renderTrackedCampaignHtml({
           html: input.html,
@@ -82,7 +88,13 @@ export async function POST(request: NextRequest) {
         const text = input.text
           .replaceAll("{{unsubscribe_url}}", unsubscribeUrl)
           .replaceAll("{{web_view_url}}", input.web_view_url);
-        await sendNewsletterMail({ to: recipient.email, subject: input.subject, html, text });
+        await sendNewsletterMail({
+          to: recipient.email,
+          subject: input.subject,
+          html,
+          text,
+          fromName: input.newsletter_key === "wirkungsbrief" ? "Institut für Wirkungsökonomie" : undefined
+        });
         await markDeliverySent(tracked.deliveryId);
         sent += 1;
       } catch (error) {
