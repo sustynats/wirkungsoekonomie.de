@@ -122,6 +122,38 @@ function createIonosTransport(delivery: SmtpDelivery) {
   });
 }
 
+/**
+ * Used by the authenticated campaign endpoint as well as the DOI lifecycle.
+ * The transport remains the established shared sender mailbox; only the
+ * recipient tenant differs between Wirkungsradar and Wirkungsbrief.
+ */
+export async function sendNewsletterMail(input: {
+  to: string;
+  subject: string;
+  text: string;
+  html: string;
+  listUnsubscribeUrl?: string;
+}) {
+  const delivery = configuredDelivery();
+  if (!delivery || delivery.type !== "ionos_smtp") {
+    throw new NewsletterDeliveryConfigurationError("Campaign delivery requires the configured SMTP transport.");
+  }
+  const headers: Record<string, string> = { "X-Auto-Response-Suppress": "All" };
+  if (input.listUnsubscribeUrl) {
+    headers["List-Unsubscribe"] = `<${input.listUnsubscribeUrl}>`;
+    headers["List-Unsubscribe-Post"] = "List-Unsubscribe=One-Click";
+  }
+  await createIonosTransport(delivery).sendMail({
+    from: delivery.from,
+    replyTo: delivery.replyTo,
+    to: input.to,
+    subject: input.subject,
+    text: input.text,
+    html: input.html,
+    headers
+  });
+}
+
 function links(unsubscribeUrl: string, confirmationUrl: string, replyTo: string) {
   const website = websiteUrl();
   return {
@@ -165,15 +197,7 @@ async function sendDoubleOptIn(subscription: SubscriptionRow, confirmationToken:
   const unsubscribeUrl = `${baseUrl}/woek-newsletter/abmelden?subscription=${encodeURIComponent(subscription.id)}&token=${encodeURIComponent(unsubscribeToken)}`;
   if (delivery.type === "ionos_smtp") {
     const message = newsletterDoubleOptInEmail(links(unsubscribeUrl, confirmationUrl, delivery.replyTo));
-    await createIonosTransport(delivery).sendMail({
-      from: delivery.from,
-      replyTo: delivery.replyTo,
-      to: subscription.email,
-      subject: message.subject,
-      text: message.text,
-      html: message.html,
-      headers: { "X-Auto-Response-Suppress": "All" }
-    });
+    await sendNewsletterMail({ to: subscription.email, ...message });
     return delivery.type;
   }
   const response = await fetch(delivery.url, {
@@ -200,15 +224,7 @@ async function sendWelcome(subscription: SubscriptionRow, unsubscribeToken: stri
   if (!delivery || delivery.type !== "ionos_smtp") return false;
   const unsubscribeUrl = `${portalUrl()}/woek-newsletter/abmelden?subscription=${encodeURIComponent(subscription.id)}&token=${encodeURIComponent(unsubscribeToken)}`;
   const message = newsletterWelcomeEmail(links(unsubscribeUrl, "", delivery.replyTo));
-  await createIonosTransport(delivery).sendMail({
-    from: delivery.from,
-    replyTo: delivery.replyTo,
-    to: subscription.email,
-    subject: message.subject,
-    text: message.text,
-    html: message.html,
-    headers: { "X-Auto-Response-Suppress": "All" }
-  });
+  await sendNewsletterMail({ to: subscription.email, ...message });
   return true;
 }
 
@@ -216,15 +232,7 @@ async function sendUnsubscribeConfirmation(subscription: SubscriptionRow) {
   const delivery = configuredDelivery();
   if (!delivery || delivery.type !== "ionos_smtp") return false;
   const message = newsletterUnsubscribeConfirmedEmail(links("", "", delivery.replyTo));
-  await createIonosTransport(delivery).sendMail({
-    from: delivery.from,
-    replyTo: delivery.replyTo,
-    to: subscription.email,
-    subject: message.subject,
-    text: message.text,
-    html: message.html,
-    headers: { "X-Auto-Response-Suppress": "All" }
-  });
+  await sendNewsletterMail({ to: subscription.email, ...message });
   return true;
 }
 
