@@ -13,7 +13,12 @@ function UnsubscribeNewsletter() {
   const [pending, setPending] = useState(false);
   async function remove() {
     setPending(true);
-    const response = await fetch("/api/woek-newsletter/abmelden", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ subscription: params.get("subscription"), token: params.get("token") }) });
+    const delivery = params.get("delivery");
+    const response = await fetch(delivery ? "/api/newsletter-tracking/unsubscribe" : "/api/woek-newsletter/abmelden", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(delivery ? { delivery, token: params.get("token") } : { subscription: params.get("subscription"), token: params.get("token") })
+    });
     const result = await response.json() as { error?: string };
     setMessage(response.ok ? "Die Adresse erhält keine weiteren Ausgaben des Wirkungsbriefs." : (result.error ?? "Die Abmeldung konnte nicht abgeschlossen werden."));
     setPending(false);
