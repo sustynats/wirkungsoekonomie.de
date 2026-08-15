@@ -18704,6 +18704,214 @@ h1, h2, h3 {
   white-space: nowrap;
 }
 
+/* Double-opt-in and unsubscribe are deliberately focused pages on the main
+   Wirkungsoekonomie domain. They use the site palette without pulling people
+   into the Parliament product or a generic application shell. */
+.newsletter-landing-document {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background:
+    radial-gradient(circle at 84% 11%, rgba(200, 155, 60, 0.16), transparent 21rem),
+    radial-gradient(circle at 13% 91%, rgba(47, 125, 92, 0.14), transparent 26rem),
+    var(--ivory);
+  color: var(--navy);
+}
+
+.newsletter-landing-header,
+.newsletter-landing-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: min(1180px, calc(100% - (2 * var(--space-gutter))));
+  margin: 0 auto;
+}
+
+.newsletter-landing-header {
+  min-height: 5.75rem;
+  border-bottom: 1px solid rgba(11, 16, 32, 0.12);
+}
+
+.newsletter-landing-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: var(--navy);
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 750;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+}
+
+.newsletter-landing-mark {
+  display: grid;
+  width: 2.1rem;
+  height: 2.1rem;
+  place-items: center;
+  border-radius: 999px;
+  background: var(--navy);
+}
+
+.newsletter-landing-mark img {
+  width: 1.35rem;
+  height: 1.35rem;
+}
+
+.newsletter-landing-back {
+  color: var(--navy);
+  font-size: 0.9rem;
+  font-weight: 760;
+  text-decoration-color: rgba(11, 16, 32, 0.32);
+  text-underline-offset: 0.2em;
+}
+
+.newsletter-landing-main {
+  display: grid;
+  place-items: center;
+  padding: clamp(2.5rem, 7vw, 6.5rem) var(--space-gutter);
+}
+
+.newsletter-landing-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(17rem, 0.7fr);
+  width: min(100%, 980px);
+  overflow: hidden;
+  border: 1px solid rgba(11, 16, 32, 0.12);
+  border-radius: 1rem;
+  background: rgba(255, 252, 245, 0.86);
+  box-shadow: var(--shadow-soft);
+}
+
+.newsletter-landing-content {
+  padding: clamp(2rem, 5vw, 4.4rem);
+}
+
+.newsletter-landing-kicker {
+  margin: 0 0 0.8rem;
+  color: var(--gold-deep);
+  font-size: 0.76rem;
+  font-weight: 850;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.newsletter-landing-content h1 {
+  max-width: 12ch;
+  margin: 0;
+  color: var(--navy);
+  font-family: var(--font-heading);
+  font-size: clamp(2.45rem, 5.5vw, 4.5rem);
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+}
+
+.newsletter-landing-intro {
+  max-width: 38rem;
+  margin: 1.5rem 0 0;
+  color: #313847;
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+  line-height: 1.58;
+}
+
+.newsletter-landing-action {
+  margin-top: 1.8rem;
+}
+
+.newsletter-landing-message {
+  min-height: 1.5em;
+  margin: 1rem 0 0;
+  color: var(--green-dark);
+  font-weight: 740;
+  line-height: 1.5;
+}
+
+.newsletter-landing-message.is-error {
+  color: #9d3125;
+}
+
+.newsletter-landing-note {
+  max-width: 40rem;
+  margin: 1.2rem 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.newsletter-landing-aside {
+  padding: clamp(2rem, 4vw, 3.2rem);
+  background: var(--navy);
+  color: rgba(246, 241, 232, 0.88);
+}
+
+.newsletter-landing-aside .newsletter-landing-kicker {
+  color: var(--gold);
+}
+
+.newsletter-landing-aside p:not(.newsletter-landing-kicker) {
+  margin: 1.5rem 0 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.newsletter-landing-aside a {
+  color: var(--gold);
+}
+
+.newsletter-landing-list {
+  display: grid;
+  gap: 1rem;
+  margin: 1.65rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.newsletter-landing-list li {
+  position: relative;
+  padding-left: 1.25rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.newsletter-landing-list li::before {
+  content: "";
+  position: absolute;
+  top: 0.5em;
+  left: 0;
+  width: 0.48rem;
+  height: 0.48rem;
+  border-radius: 999px;
+  background: var(--gold);
+}
+
+.newsletter-landing-panel--unsubscribe .newsletter-landing-aside {
+  background: #173f36;
+}
+
+.newsletter-landing-panel[data-state="complete"] .newsletter-landing-content {
+  border-left: 4px solid var(--green);
+}
+
+.newsletter-landing-footer {
+  min-height: 5.5rem;
+  padding: 1.25rem 0;
+  border-top: 1px solid rgba(11, 16, 32, 0.12);
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.newsletter-landing-footer > span:last-child {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.newsletter-landing-footer a {
+  color: inherit;
+  text-underline-offset: 0.2em;
+}
+
 @media (max-width: 720px) {
   body .site-header .site-utility-nav .site-utility-link--newsletter {
     width: 2.45rem;
@@ -18720,4 +18928,35 @@ h1, h2, h3 {
   .footer-newsletter-fields .btn {
     flex: 1 1 100%;
   }
+
+  .newsletter-landing-header,
+  .newsletter-landing-footer {
+    width: min(100% - 2rem, 1180px);
+  }
+
+  .newsletter-landing-header {
+    min-height: 4.65rem;
+  }
+
+  .newsletter-landing-brand {
+    font-size: 1.1rem;
+  }
+
+  .newsletter-landing-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .newsletter-landing-content {
+    padding: 2rem 1.35rem;
+  }
+
+  .newsletter-landing-aside {
+    padding: 1.75rem 1.35rem;
+  }
+
+  .newsletter-landing-footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
 }

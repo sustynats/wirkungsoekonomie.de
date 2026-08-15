@@ -1,8 +1,80 @@
 (() => {
+  const apiFallback = "https://parlament.wirkungsoekonomie.de";
+  const landing = document.querySelector("[data-woek-newsletter-landing]");
   const root = document.querySelector("[data-woek-newsletter]");
-  if (!(root instanceof HTMLElement)) return;
+  const apiOrigin = landing instanceof HTMLElement
+    ? (landing.dataset.apiOrigin || apiFallback)
+    : root instanceof HTMLElement
+      ? (root.dataset.apiOrigin || apiFallback)
+      : apiFallback;
 
-  const apiOrigin = root.dataset.apiOrigin || "https://parlament.wirkungsoekonomie.de";
+  function parameters() {
+    return new URLSearchParams(window.location.search);
+  }
+
+  function cleanAddress() {
+    window.history.replaceState({}, document.title, window.location.pathname);
+  }
+
+  function setupLanding() {
+    if (!(landing instanceof HTMLElement)) return false;
+    const action = landing.dataset.woekNewsletterLanding;
+    const button = landing.querySelector("[data-woek-newsletter-landing-action]");
+    const message = landing.querySelector("[data-woek-newsletter-landing-message]");
+    if (!(button instanceof HTMLButtonElement) || !(message instanceof HTMLElement)) return true;
+
+    const query = parameters();
+    const subscription = query.get("subscription");
+    const token = query.get("token");
+    const delivery = query.get("delivery");
+    if ((!subscription && !delivery) || !token) {
+      button.disabled = true;
+      message.textContent = "Dieser Link ist unvollständig. Bitte öffnen Sie den Link aus Ihrer E-Mail erneut.";
+      message.classList.add("is-error");
+      return true;
+    }
+
+    button.addEventListener("click", async () => {
+      button.disabled = true;
+      message.classList.remove("is-error");
+      message.textContent = action === "confirm" ? "Ihre Anmeldung wird bestätigt …" : "Ihre Abmeldung wird verarbeitet …";
+      const isDeliveryUnsubscribe = action === "unsubscribe" && Boolean(delivery);
+      const endpoint = isDeliveryUnsubscribe
+        ? "/api/newsletter-tracking/unsubscribe"
+        : action === "confirm"
+          ? "/api/woek-newsletter/bestaetigen"
+          : "/api/woek-newsletter/abmelden";
+      const body = isDeliveryUnsubscribe
+        ? { delivery, token }
+        : action === "confirm"
+          ? { subscription, token, unsubscribe_token: query.get("unsubscribe_token") }
+          : { subscription, token };
+      try {
+        const response = await fetch(`${apiOrigin}${endpoint}`, {
+          method: "POST",
+          credentials: "include",
+          headers: { "content-type": "application/json" },
+          body: JSON.stringify(body)
+        });
+        const result = await response.json();
+        if (!response.ok) throw new Error(result.error || "Der Vorgang konnte nicht abgeschlossen werden.");
+        landing.dataset.state = "complete";
+        button.hidden = true;
+        message.textContent = action === "confirm"
+          ? "Vielen Dank. Ihre Anmeldung zum Wirkungsbrief ist jetzt aktiv."
+          : "Ihre Abmeldung wurde bestätigt. Sie erhalten keine weiteren Ausgaben des Wirkungsbriefs.";
+        cleanAddress();
+      } catch (error) {
+        message.textContent = error instanceof Error ? error.message : "Der Vorgang konnte nicht abgeschlossen werden.";
+        message.classList.add("is-error");
+        button.disabled = false;
+      }
+    });
+    return true;
+  }
+
+  if (setupLanding() || !(root instanceof HTMLElement)) return;
+
   const form = root.querySelector("[data-woek-newsletter-form]");
   const message = root.querySelector("[data-woek-newsletter-message]");
   const welcome = root.querySelector("[data-woek-newsletter-welcome]");

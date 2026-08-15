@@ -65,13 +65,6 @@ function websiteUrl() {
   return parsed.toString().replace(/\/$/, "");
 }
 
-function portalUrl() {
-  const configured = process.env.NEXT_PUBLIC_PORTAL_URL ?? "https://parlament.wirkungsoekonomie.de";
-  const parsed = new URL(configured);
-  if (parsed.protocol !== "https:") throw new NewsletterDeliveryConfigurationError("The public portal URL must use HTTPS.");
-  return parsed.toString().replace(/\/$/, "");
-}
-
 function configuredDelivery(): DeliveryConfiguration | null {
   // The recipient data is a separate newsletter tenant. The established
   // sending mailbox and SMTP transport are intentionally shared.
@@ -122,6 +115,10 @@ function createIonosTransport(delivery: SmtpDelivery) {
   });
 }
 
+function senderAddress(value: string) {
+  return value.match(/<([^>]+)>/)?.[1] ?? value.trim();
+}
+
 /**
  * Used by the authenticated campaign endpoint as well as the DOI lifecycle.
  * The transport remains the established shared sender mailbox; only the
@@ -132,6 +129,7 @@ export async function sendNewsletterMail(input: {
   subject: string;
   text: string;
   html: string;
+  fromName?: string;
   listUnsubscribeUrl?: string;
 }) {
   const delivery = configuredDelivery();
@@ -144,7 +142,7 @@ export async function sendNewsletterMail(input: {
     headers["List-Unsubscribe-Post"] = "List-Unsubscribe=One-Click";
   }
   await createIonosTransport(delivery).sendMail({
-    from: delivery.from,
+    from: input.fromName ? `${input.fromName} <${senderAddress(delivery.from)}>` : delivery.from,
     replyTo: delivery.replyTo,
     to: input.to,
     subject: input.subject,
@@ -192,12 +190,12 @@ async function recordMetric(metricKey: NewsletterMetricKey) {
 async function sendDoubleOptIn(subscription: SubscriptionRow, confirmationToken: string, unsubscribeToken: string): Promise<DeliveryChannel | false> {
   const delivery = configuredDelivery();
   if (!delivery) return false;
-  const baseUrl = portalUrl();
-  const confirmationUrl = `${baseUrl}/woek-newsletter/bestaetigen?subscription=${encodeURIComponent(subscription.id)}&token=${encodeURIComponent(confirmationToken)}&unsubscribe_token=${encodeURIComponent(unsubscribeToken)}`;
-  const unsubscribeUrl = `${baseUrl}/woek-newsletter/abmelden?subscription=${encodeURIComponent(subscription.id)}&token=${encodeURIComponent(unsubscribeToken)}`;
+  const baseUrl = websiteUrl();
+  const confirmationUrl = `${baseUrl}/newsletter/bestaetigen.html?subscription=${encodeURIComponent(subscription.id)}&token=${encodeURIComponent(confirmationToken)}&unsubscribe_token=${encodeURIComponent(unsubscribeToken)}`;
+  const unsubscribeUrl = `${baseUrl}/newsletter/abmelden.html?subscription=${encodeURIComponent(subscription.id)}&token=${encodeURIComponent(unsubscribeToken)}`;
   if (delivery.type === "ionos_smtp") {
     const message = newsletterDoubleOptInEmail(links(unsubscribeUrl, confirmationUrl, delivery.replyTo));
-    await sendNewsletterMail({ to: subscription.email, ...message });
+    await sendNewsletterMail({ to: subscription.email, ...message, fromName: "Institut für Wirkungsökonomie" });
     return delivery.type;
   }
   const response = await fetch(delivery.url, {
@@ -222,9 +220,9 @@ async function sendDoubleOptIn(subscription: SubscriptionRow, confirmationToken:
 async function sendWelcome(subscription: SubscriptionRow, unsubscribeToken: string) {
   const delivery = configuredDelivery();
   if (!delivery || delivery.type !== "ionos_smtp") return false;
-  const unsubscribeUrl = `${portalUrl()}/woek-newsletter/abmelden?subscription=${encodeURIComponent(subscription.id)}&token=${encodeURIComponent(unsubscribeToken)}`;
+  const unsubscribeUrl = `${websiteUrl()}/newsletter/abmelden.html?subscription=${encodeURIComponent(subscription.id)}&token=${encodeURIComponent(unsubscribeToken)}`;
   const message = newsletterWelcomeEmail(links(unsubscribeUrl, "", delivery.replyTo));
-  await sendNewsletterMail({ to: subscription.email, ...message });
+  await sendNewsletterMail({ to: subscription.email, ...message, fromName: "Institut für Wirkungsökonomie" });
   return true;
 }
 
@@ -232,7 +230,7 @@ async function sendUnsubscribeConfirmation(subscription: SubscriptionRow) {
   const delivery = configuredDelivery();
   if (!delivery || delivery.type !== "ionos_smtp") return false;
   const message = newsletterUnsubscribeConfirmedEmail(links("", "", delivery.replyTo));
-  await sendNewsletterMail({ to: subscription.email, ...message });
+  await sendNewsletterMail({ to: subscription.email, ...message, fromName: "Institut für Wirkungsökonomie" });
   return true;
 }
 
