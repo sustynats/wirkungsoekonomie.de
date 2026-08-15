@@ -57,3 +57,17 @@ export async function supabaseRest<T>(path: string, init: RequestInitWithoutHead
   }
   return supabaseAdminRequest<T>(`/rest/v1/${target}`, { ...init, headers });
 }
+
+export async function supabaseRpc<T>(functionName: string, args: Record<string, unknown> = {}) {
+  if (!/^[a-z_][a-z0-9_]*$/i.test(functionName)) {
+    throw new DatabaseConfigurationError("Invalid protected database function name.");
+  }
+  return supabaseAdminRequest<T>(`/rest/v1/rpc/${functionName}`, {
+    method: "POST",
+    headers: {
+      "Accept-Profile": protectedSchema,
+      "Content-Profile": protectedSchema
+    },
+    body: JSON.stringify(args)
+  });
+}

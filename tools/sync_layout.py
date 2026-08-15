@@ -16,6 +16,7 @@ FOOTER_TEMPLATE = (SITE_ROOT / "templates/footer.html").read_text(encoding="utf-
 SYNC_EXCLUDED_DIRS = {
     ".git",
     ".cache",
+    ".claude",
     ".codex-backup",
     "_site",
     "node_modules",
@@ -108,7 +109,16 @@ def header_utility_link(item: dict[str, object], base: str) -> str:
 
 
 def header_utility_nav(base: str) -> str:
-    return "\n".join(header_utility_link(item, base) for item in header_utility_items())
+    newsletter = (
+        '<button class="site-utility-link site-utility-link--newsletter" type="button" '
+        'data-woek-newsletter-control data-newsletter-label="Newsletter" '
+        'aria-label="Newsletter zur Wirkungsökonomie anmelden">Newsletter</button>'
+    )
+    language = (
+        f'<a class="site-utility-link site-utility-link--language" href="{escape(base, quote=True)}en/" '
+        'hreflang="en" lang="en" data-lang-switch="en" data-utility-label="English">EN</a>'
+    )
+    return "\n".join([*(header_utility_link(item, base) for item in header_utility_items()), newsletter, language])
 
 
 def footer_group(group: dict[str, object], base: str) -> str:
@@ -152,6 +162,8 @@ def insert_footer(text: str, footer: str) -> str:
 def should_sync(path: Path, text: str) -> bool:
     relative_parts = path.relative_to(SITE_ROOT).parts
     if any(part in SYNC_EXCLUDED_DIRS for part in relative_parts):
+        return False
+    if relative_parts[0] == "en":
         return False
     if path.name == "404.html":
         return False

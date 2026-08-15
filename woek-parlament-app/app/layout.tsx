@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { PortalNav } from "@/app/components/PortalNav";
+import { SiteAnalyticsTracker } from "@/app/components/SiteAnalyticsTracker";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -24,6 +25,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           </div>
         </header>
         <main id="content">{children}</main>
+        <SiteAnalyticsTracker />
         <footer className="site-footer">
           <div className="shell footer-grid">
             <div>
