@@ -1,0 +1,30 @@
+sourcePack:
+  slug: "e-autos-schlimmer-als-verbrenner"
+  dossier: "E-Autos schlimmer als Verbrenner?"
+  dataStand: "2026-06"
+  nextReviewDate: "2027-06"
+  requiredSources:
+    - "bmv_ladeinfrastruktur_erneuerbar"
+    - "adac_lca_drives"
+    - "adac_emobility_facts"
+    - "iea_evs"
+    - "icct_lifecycle_evs"
+    - "uba_emissions_inventory"
+  optionalSources:
+    - "debunking_handbook"
+  missingSources:
+
+  evidenceSummary:
+    secure:
+      - "Der Claim enthält einen prüfbaren wahren Kern."
+      - "Die öffentliche Schlussfolgerung wird irreführend, wenn Bilanzgrenzen, Zeitpfad oder Alternativen fehlen."
+    uncertain:
+      - "Exakte Zahlen hängen von Methodik, Zeitpunkt, Datenstand und regionalem Kontext ab."
+    contested:
+      - "Politisch umstritten bleibt, wie Verantwortung, Kosten und Prioritäten verteilt werden."
+  accountingBoundary: "lebenszyklusbezogen, produktionsbezogen, ladestrombezogen, gesundheitlich, geopolitisch"
+  counterposition: "Batterien brauchen Rohstoffe und saubere Lieferketten. Deshalb sind kleinere Fahrzeuge, Batteriepass, LFP-Optionen, Recycling, erneuerbarer Produktionsstrom und sauberer Ladestrom wichtig."
+  doesNotClaim: "Diese Karte behauptet nicht, dass alle Einwände falsch sind oder eine einzige Quelle die politische Entscheidung ersetzt."
+  sourceNotes:
+    - "C-Quellen werden nur mit A- oder B-Quellen verwendet."
+    - "Quellen werden als Belege mit Grenzen gelesen, nicht als Autoritätsersatz."

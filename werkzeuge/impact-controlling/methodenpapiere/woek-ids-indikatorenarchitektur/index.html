@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WÖk-IDs und Indikatorenarchitektur | Methodenpapier Impact Controlling</title>
+    <meta name="description" content="Wie Wirkungsdaten eindeutig, prüfbar, vergleichbar und rückkoppelbar werden. Onlinefassung des Methodenpapiers der Wirkungsökonomie.">
+    <meta name="search_title" content="WÖk-IDs und Indikatorenarchitektur">
+    <meta name="search_description" content="Wie Wirkungsdaten eindeutig, prüfbar, vergleichbar und rückkoppelbar werden. Onlinefassung des Methodenpapiers der Wirkungsökonomie.">
+    <meta name="search_section" content="Werkzeuge">
+    <meta name="search_type" content="Methodenpapier">
+    <link rel="canonical" href="https://wirkungsoekonomie.de/werkzeuge/impact-controlling/methodenpapiere/woek-ids-indikatorenarchitektur/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:site_name" content="Wirkungsökonomie">
+    <meta property="og:title" content="WÖk-IDs und Indikatorenarchitektur">
+    <meta property="og:description" content="Wie Wirkungsdaten eindeutig, prüfbar, vergleichbar und rückkoppelbar werden. Onlinefassung des Methodenpapiers der Wirkungsökonomie.">
+    <meta property="og:url" content="https://wirkungsoekonomie.de/werkzeuge/impact-controlling/methodenpapiere/woek-ids-indikatorenarchitektur/">
+    <meta property="og:image" content="https://wirkungsoekonomie.de/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="WÖk-IDs und Indikatorenarchitektur">
+    <meta name="twitter:description" content="Wie Wirkungsdaten eindeutig, prüfbar, vergleichbar und rückkoppelbar werden. Onlinefassung des Methodenpapiers der Wirkungsökonomie.">
+    <meta name="twitter:image" content="https://wirkungsoekonomie.de/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png">
+    <link rel="icon" href="../../../../assets/img/brand/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../../../../assets/css/style.css?v=20260612-mobile-table-fix">
+  </head>
+  <body>
+    <header class="site-header" data-search-exclude>
+      <a class="brand" href="../../../../index.html" aria-label="Wirkungsökonomie Startseite">
+        <span class="brand-mark"><img src="../../../../assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span>
+        <span class="brand-name">Wirkungsökonomie</span>
+      </a>
+      <nav class="site-utility-nav" aria-label="Schnellzugriffe" data-search-exclude>
+        <a class="site-utility-link site-utility-link--suche" href="../../../../suche.html" data-nav-match="suche.html" data-utility-label="Suche">Suche</a>
+        <a class="site-utility-link site-utility-link--woek-ki" href="../../../../woek-ki/" data-nav-match="woek-ki/" data-utility-label="WÖk-KI">KI</a>
+        <a class="site-utility-link site-utility-link--wok-app" href="../../../../app/" data-nav-match="app/" data-utility-label="WÖk-App">WÖk-App</a>
+        <a class="site-utility-link site-utility-link--mein-wirkungsraum" href="../../../../mein-wirkungsraum/" data-nav-match="mein-wirkungsraum/" data-utility-label="Mein Wirkungsraum" data-utility-primary="true">Mein Wirkungsraum</a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-icon" aria-hidden="true">☰</span>
+        <span class="sr-only">Menü</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation" data-search-exclude>
+        <a href="../../../../index.html" data-nav-match="index.html">Start</a>
+        <a href="../../../../verstehen/" data-nav-match="verstehen/|verstehen.html|wirkungsoekonomie.html|wirkungsoekonomie/|modell.html|ordnung/|so-wirkt-wirkungsoekonomie/">Verstehen</a>
+        <a href="../../../../fuer/" data-nav-match="fuer/|fuer-wen/|fuer/unternehmen.html|fuer/unternehmen/impact-controlling/|fuer/buergerinnen.html|fuer/investoren.html|fuer/investoren/impact-controlling/|fuer/kommunen.html">Für wen?</a>
+        <a href="../../../../wirkungsfelder/" data-nav-match="wirkungsfelder/|anwendungen.html">Wirkungsfelder</a>
+        <a href="../../../../wirkungssteuerung/" data-nav-match="wirkungssteuerung/|fuer/wirkungssteuer.html|werkstatt/gesetze/wirkungssteuergesetz/|werkzeuge/scorecards/|werkzeuge/t-sroi/">Wirkungssteuerung</a>
+        <a href="../../../../oeffentlicher-wirkungsraum/" data-nav-match="oeffentlicher-wirkungsraum/|wirkungsradar/|woek-ki/|app/">Öffentlicher Wirkungsraum</a>
+        <a href="../../../../werkzeuge/" data-nav-match="werkzeuge/|tools/|methodik/|workflow.html|scanner.html|anwendungen/scanner.html|scorecard-dashboard.html|erleben/|erleben.html|ausprobieren/">Praxis &amp; Tools</a>
+        <a href="../../../../lernen/" data-nav-match="lernen/|akademie.html|akademie/">Lernen</a>
+        <a href="../../../../bibliothek/" data-nav-match="bibliothek/|downloads.html|downloads/|dokumente/|referenz/|buch.html|buch/|evidenz/|quellen/|fachbibliothek/|blog.html|blog/|podcast/|begriffe/|glossar.html">Bibliothek</a>
+        <a href="../../../../mitmachen.html" data-nav-match="mitmachen.html|mitmachen/">Mitmachen</a>
+        <div class="site-nav-utility" aria-label="Schnellzugriffe">
+        <a class="site-utility-link site-utility-link--suche" href="../../../../suche.html" data-nav-match="suche.html" data-utility-label="Suche">Suche</a>
+        <a class="site-utility-link site-utility-link--woek-ki" href="../../../../woek-ki/" data-nav-match="woek-ki/" data-utility-label="WÖk-KI">KI</a>
+        <a class="site-utility-link site-utility-link--wok-app" href="../../../../app/" data-nav-match="app/" data-utility-label="WÖk-App">WÖk-App</a>
+        <a class="site-utility-link site-utility-link--mein-wirkungsraum" href="../../../../mein-wirkungsraum/" data-nav-match="mein-wirkungsraum/" data-utility-label="Mein Wirkungsraum" data-utility-primary="true">Mein Wirkungsraum</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <p class="print-meta">Wirkungsökonomie · WÖk-IDs und Indikatorenarchitektur · https://wirkungsoekonomie.de/werkzeuge/impact-controlling/methodenpapiere/woek-ids-indikatorenarchitektur/ · Druckdatum: 24.05.2026</p>
+<section class="hero portal-hero">
+    <div class="hero-content">
+      <nav class="breadcrumb"><a href="../../../../index.html">Start</a> / <a href="../../../../werkzeuge/">Werkzeuge</a></nav>
+      <p class="hero-kicker">Methodenpapier 21 · Go 10</p>
+      <h1>WÖk-IDs und Indikatorenarchitektur</h1>
+      <p class="hero-subtitle">Wie Wirkungsdaten eindeutig, prüfbar, vergleichbar und rückkoppelbar werden</p>
+      <p>Dieses Dokument ist ein ausführliches Methodenpapier für den Werkzeugbereich Impact Controlling. Es ist keine fachliche Ausarbeitung eines einzelnen Wirkungsfelds.</p>
+      <div class="hero-actions no-print">
+      <button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button>
+      <span class="btn btn-primary">DOCX herunterladen nicht öffentlich</span><a class="btn btn-secondary" href="../../../../assets/downloads/21_woek_impact_controlling_woek_ids_indikatorenarchitektur_methodenpapier_v1_0.pdf">PDF herunterladen</a>
+    </div>
+    </div>
+  </section>
+      <section class="section narrow"><aside class="citation-note" role="note">
+      <p class="card-kicker">Onlinefassung</p>
+      <h2>Du liest die Onlinefassung</h2>
+      <p>Diese Seite ist der öffentliche Einstieg in die Methodik. Vertiefungen, Downloads und Arbeitsmaterial stehen weiter unten gesammelt bereit.</p>
+    </aside></section>
+      <section class="section narrow"><details class="toc-card no-print" aria-label="Inhaltsverzeichnis">
+    <summary class="card-title">Inhaltsverzeichnis anzeigen</summary>
+    <ol><li class="toc-level-2"><a href="#method-21-wok-ids-und-indikatorenarchitektur">WÖk-IDs und Indikatorenarchitektur</a></li><li class="toc-level-3"><a href="#method-21-kurzprofil">Kurzprofil</a></li><li class="toc-level-3"><a href="#method-21-inhaltsubersicht">Inhaltsübersicht</a></li><li class="toc-level-3"><a href="#method-21-executive-summary">Executive Summary</a></li><li class="toc-level-3"><a href="#method-21-ausgangsdiagnose-berichte-ohne-ruckkopplung">Ausgangsdiagnose: Berichte ohne Rückkopplung</a></li><li class="toc-level-3"><a href="#method-21-begriffsabgrenzung">Begriffsabgrenzung</a></li><li class="toc-level-3"><a href="#method-21-architektur-der-wok-id">Architektur der WÖk-ID</a></li><li class="toc-level-3"><a href="#method-21-zuordnung-zu-sdgs-sdg-und-unterzielen">Zuordnung zu SDGs, SDG+ und Unterzielen</a></li><li class="toc-level-3"><a href="#method-21-nace-aktivitatslogik-und-kontext">NACE, Aktivitätslogik und Kontext</a></li><li class="toc-level-3"><a href="#method-21-datenquellen-esrs-gri-taxonomie-dpp">Datenquellen: ESRS, GRI, Taxonomie, DPP</a></li><li class="toc-level-3"><a href="#method-21-indikatorfamilien">Indikatorfamilien</a></li><li class="toc-level-3"><a href="#method-21-datenqualitat-und-assurance">Datenqualität und Assurance</a></li><li class="toc-level-3"><a href="#method-21-governance-durch-wirkungsrat">Governance durch Wirkungsrat</a></li><li class="toc-level-3"><a href="#method-21-anwendung-in-produkten-unternehmen-staat-und-kapital">Anwendung in Produkten, Unternehmen, Staat und Kapital</a></li><li class="toc-level-3"><a href="#method-21-missbrauchsschutz-und-rote-linien">Missbrauchsschutz und rote Linien</a></li><li class="toc-level-3"><a href="#method-21-politische-anschlussfahigkeit-und-umsetzungsoptionen">Politische Anschlussfähigkeit und Umsetzungsoptionen</a></li><li class="toc-level-3"><a href="#method-21-sdg-sdg-bezug">SDG-/SDG+-Bezug</a></li><li class="toc-level-3"><a href="#method-21-website-und-portalintegration">Website- und Bereichintegration</a></li><li class="toc-level-3"><a href="#method-21-quellen-und-anschlussstellen">Quellen und Anschlussstellen</a></li><li class="toc-level-3"><a href="#method-21-fazit">Fazit</a></li></ol>
+  </details></section>
+      <section class="section article-section" aria-labelledby="volltext">
+        <article class="article-body fulltext-reader">
+          <h2 id="volltext">Onlinefassung <a class="cite-anchor no-print" href="#volltext" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
+          <h2 id="method-21-wok-ids-und-indikatorenarchitektur">WÖk-IDs und Indikatorenarchitektur <a class="cite-anchor no-print" href="#method-21-wok-ids-und-indikatorenarchitektur" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
+<p>Wie Wirkungsdaten eindeutig, prüfbar, vergleichbar und rückkoppelbar werden</p>
+<p>Wirkungsökonomie · Natalie Weber</p>
+<p>WIRKUNGSÖKONOMIE METHODENPAPIER</p>
+<p>WÖk-IDs und Indikatorenarchitektur</p>
+<p>Wie Wirkungsdaten eindeutig, prüfbar, vergleichbar und rückkoppelbar werden</p>
+<p>„Ohne eindeutige Wirkungsindikatoren bleibt Wirkung Erzählung. Mit WÖk-IDs wird sie prüfbare Rückkopplung.“</p>
+<h3 id="method-21-kurzprofil">Kurzprofil <a class="cite-anchor no-print" href="#method-21-kurzprofil" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
+<h3 id="method-21-inhaltsubersicht">Inhaltsübersicht <a class="cite-anchor no-print" href="#method-21-inhaltsubersicht" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
+<p>1. Executive Summary</p>
+<p>2. Ausgangsdiagnose</p>
+<p>3. Begriffsabgrenzung</p>
+<p>4. Architektur der WÖk-ID</p>
+<p>5. Zuordnung zu SDGs, SDG+ und Unterzielen</p>
+<p>6. NACE, Aktivitätslogik und Kontext</p>
+<p>7. Datenquellen: ESRS, GRI, Taxonomie, DPP</p>
+<p>8. Indikatorfamilien</p>
+<p>9. Datenqualität und Assurance</p>
+<p>10. Governance durch Wirkungsrat</p>
+<p>11. Anwendung in Produkten, Unternehmen, Staat und Kapital</p>
+<p>12. Missbrauchsschutz und rote Linien</p>
+<p>13. Politische Anschlussfähigkeit</p>
+<p>14. SDG-/SDG+-Bezug</p>
+<p>15. Website- und Bereichintegration</p>
+<p>16. Quellen und Anschlussstellen</p>
+<p>17. Fazit</p>
+<h3 id="method-21-executive-summary">Executive Summary <a class="cite-anchor no-print" href="#method-21-executive-summary" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
+<p>WÖk-IDs sind die gemeinsame Sprache der Wirkungsökonomie. Sie ordnen Wirkungsdaten so, dass Produkte, Dienstleistungen, Unternehmen, Investitionen, öffentliche Maßnahmen und Kapitalflüsse nicht nur beschrieben, sondern vergleichbar bewertet und in Entscheidungen zurückgeführt werden können. Ohne diese Identifikatoren bliebe Wirkung eine Sammlung von Berichten, Einzelindikatoren und Interpretationen. Mit ihnen entsteht eine operationalisierbare Wirkungsarchitektur.</p>
+<p>Eine WÖk-ID ist kein Etikett für moralisch gutes oder schlechtes Verhalten. Sie ist ein methodischer Schlüssel: Sie verbindet ein Wirkungsfeld mit einem Zielrahmen, einer Datenquelle, einer Messgröße, einem Kontext, einer Bewertungsfunktion, einem Benchmark und einer Prüflogik. Damit wird aus einem Nachhaltigkeitsdatum ein Steuerungsdatum.</p>
+<p>Dieses Methodenpapier beschreibt, wie WÖk-IDs aufgebaut werden, welche Rolle SDGs, Agenda 2030 und SDG+ spielen, wie NACE-Codes und Aktivitätsklassen den Kontext bestimmen, wie ESRS-, GRI-, EU-Taxonomie-, Lieferketten- und Produktpassdaten eingebunden werden und welche Governance notwendig ist, damit die WÖk-ID nicht zum Greenwashing- oder Bürokratieinstrument wird.</p>
+<p>Ziel ist nicht maximale Datensammlung, sondern eindeutige Wirkungssprache. Eine gute WÖk-ID ist knapp, überprüfbar, versionierbar, anschlussfähig und politisch korrigierbar. Sie darf nicht Menschen bewerten, sondern Aktivitäten, Produkte, Organisationen, Kapitalflüsse oder Maßnahmen. Dadurch bleibt die Wirkungsökonomie demokratiefähig und marktwirtschaftlich anschlussfähig.</p>
+<h3 id="method-21-ausgangsdiagnose-berichte-ohne-ruckkopplung">Ausgangsdiagnose: Berichte ohne Rückkopplung <a class="cite-anchor no-print" href="#method-21-ausgangsdiagnose-berichte-ohne-ruckkopplung" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
+<p>Die moderne Nachhaltigkeitswelt verfügt über viele Daten, aber nur begrenzte Rückkopplung. Unternehmen berichten Emissionen, Energieverbrauch, Arbeitsunfälle, Wasserentnahmen, Lieferkettenrisiken, Diversitätsdaten, Governance-Strukturen, Taxonomiequoten und Klimarisiken. Öffentliche Stellen erheben Indikatoren zu Armut, Bildung, Gesundheit, Infrastruktur, Klima und Demokratie. Kapitalmärkte nutzen ESG-Ratings, Kreditgeber fragen Nachhaltigkeitsdaten ab, Versicherungen prüfen Risiken, Kund:innen verlangen Transparenz.</p>
+<p>Trotz dieser Datenfülle bleiben Preise, Steuern, Kapitalzugang und öffentliche Mittel häufig wirkungsblind. Die Daten existieren, aber sie sind nicht durchgängig in die Entscheidungslogik eingebaut. Genau hier entsteht die Aufgabe der WÖk-ID: Sie macht Daten zu einer eindeutig referenzierten Wirkungseinheit, die in Scorecards, NWI, T-SROI, Wirkungssteuern, Beschaffung, Kapitalzugang und Wirkungshaushalten genutzt werden kann.</p>
+<p>Das Problem ist nicht nur technische Fragmentierung. Es ist eine Maßstabskrise. Unterschiedliche Akteure verwenden unterschiedliche Kategorien, Begriffe, Bewertungsskalen und Zeiträume. Ein Unternehmen kann nach ESRS berichten, nach GRI ergänzen, für Banken Taxonomiedaten liefern, für Kund:innen Produktdaten bereitstellen und dennoch bleibt unklar, welche dieser Daten für die Wirkungsökonomie steuerungsrelevant sind. Die WÖk-ID schafft die Brücke von Reporting zu Steuerung.</p>
+<h3 id="method-21-begriffsabgrenzung">Begriffsabgrenzung <a class="cite-anchor no-print" href="#method-21-begriffsabgrenzung" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
+<p>WÖk-IDs sind keine SDGs, keine ESRS-Datenpunkte und keine einfachen KPIs. Sie sind auch keine Social-Credit-Kennziffern. Sie sind Übersetzungsanker zwischen vorhandenen Daten und wirkungsökonomischer Bewertung.</p>
+<p>Ein KPI misst Leistung oder Aktivität aus Sicht eines Unternehmens. Eine WÖk-ID misst eine wirkungsrelevante Zustandsveränderung oder Risikokonstellation im Verhältnis zu Mensch, Planet und Demokratie. Ein ESRS-Datenpunkt kann Rohmaterial liefern, aber erst durch Zielbezug, Kontext, Bewertungsfunktion und Benchmark wird daraus eine WÖk-ID. Eine SDG-Zuordnung ist der normative Bezug, aber keine operative Messlogik. Die WÖk-ID verbindet beides.</p>
+<p>Die Grundregel lautet: Wirkung ist neutral und relational. Eine WÖk-ID beschreibt nicht automatisch positive Wirkung. Sie beschreibt ein Wirkungsfeld und ermöglicht eine Bewertung. Positive Wirkung liegt erst vor, wenn der gemessene Zustand im Referenzrahmen von SDGs, Agenda 2030 und SDG+ positiv eingeordnet werden kann.</p>
+<h3 id="method-21-architektur-der-wok-id">Architektur der WÖk-ID <a class="cite-anchor no-print" href="#method-21-architektur-der-wok-id" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
+<p>Eine WÖk-ID muss so aufgebaut sein, dass sie fachlich präzise und technisch nutzbar bleibt. Sie braucht einen stabilen Kern und eine versionierbare Methodik. Der stabile Kern bezeichnet das Wirkungsfeld; die Methodik kann sich durch neue Daten, neue Benchmarks und Revisionsentscheidungen des Wirkungsrats weiterentwickeln.</p>
+<p>Eine mögliche Struktur lautet: WOK-[Dimension]-[Familie]-[Nummer]-[Version]. Die Dimension kann beispielsweise E für Umwelt, S für Soziales, G für Governance, P für Produkt, SC für Supply Chain, RE für Real Estate, SYS für systemische Wirkung oder POL für politische/steuerliche Bewertungsbezüge sein. Die Familie beschreibt den Wirkungsbereich, etwa THG-Intensität, Living Wage, Wasserstress, Chemikaliensicherheit, Medienqualität, Demokratievertrauen oder Produktreparierbarkeit.</p>
+<h3 id="method-21-zuordnung-zu-sdgs-sdg-und-unterzielen">Zuordnung zu SDGs, SDG+ und Unterzielen <a class="cite-anchor no-print" href="#method-21-zuordnung-zu-sdgs-sdg-und-unterzielen" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
+<p>Jede WÖk-ID braucht einen Zielbezug. Dieser Zielbezug beginnt bei den SDGs und ihren Unterzielen, wird aber durch SDG+ ergänzt. Die SDGs liefern den globalen Referenzrahmen. SDG+ ergänzt jene Voraussetzungen, die für eine digitale, mediale und demokratische Gesellschaft entscheidend sind: Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskursfähigkeit, institutionelles Vertrauen, gesellschaftlicher Zusammenhalt und digitale Selbstbestimmung.</p>
+<p>Die Zuordnung darf nicht dekorativ erfolgen. Eine WÖk-ID zu Wasserentnahme darf nicht pauschal SDG 6 tragen, sondern muss klären, welches Unterziel, welcher Kontext, welche Region, welcher Wasserstress und welche Nutzungsform betroffen sind. Eine WÖk-ID zu Medienqualität darf nicht pauschal Demokratie stärken, sondern muss messbar beschreiben, welche öffentliche Rückkopplung geschützt oder gefährdet wird.</p>
+<p>Zielbezug: SDG, Target, ggf. SDG+ Dimension.</p>
+<p>Wirkungsempfänger: Menschen, Ökosysteme, Institutionen, Märkte, künftige Generationen.</p>
+<p>Wirkungsraum: Produkt, Unternehmen, Lieferkette, Kommune, Kapitalportfolio, Medienraum, Gesetzgebung.</p>
+<p>Bewertungsrichtung: higher_is_better, lower_is_better, near_zero_better, reg_limit, absolute_cap, compliance_index oder qualitative Prüflogik.</p>
+<p>Nichtkompensationsgrenze: rote Linien, die nicht durch andere Positivwerte ausgeglichen werden dürfen.</p>
+<h3 id="method-21-nace-aktivitatslogik-und-kontext">NACE, Aktivitätslogik und Kontext <a class="cite-anchor no-print" href="#method-21-nace-aktivitatslogik-und-kontext" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
+<p>Wirkung ist kontextabhängig. Ein Liter Wasserverbrauch ist in einer wasserreichen Region anders zu bewerten als in einer Wasserstressregion. Ein Energieverbrauch ist in einem Stahlwerk anders zu bewerten als in einem Bürogebäude. Eine Lieferkettenkennzahl für Textilien braucht andere Benchmarks als eine für Software.</p>
+<p>Deshalb brauchen WÖk-IDs neben dem Zielbezug eine Aktivitätslogik. NACE-Codes können diese Funktion übernehmen, weil sie wirtschaftliche Tätigkeiten klassifizieren. Über NACE wird bestimmt, welche Indikatorfamilien relevant sind, welche Benchmarks gelten und welche Sonderrisiken beachtet werden müssen. Die WÖk-ID wird dadurch nicht pauschal, sondern branchenspezifisch fair.</p>
+<h3 id="method-21-datenquellen-esrs-gri-taxonomie-dpp">Datenquellen: ESRS, GRI, Taxonomie, DPP <a class="cite-anchor no-print" href="#method-21-datenquellen-esrs-gri-taxonomie-dpp" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
+<p>Die WÖk-ID-Architektur baut nicht auf einer neuen Parallelwelt von Daten auf. Sie nutzt bestehende und entstehende Dateninfrastrukturen: ESRS und CSRD für Unternehmensdaten, GRI für globale Impact-Reporting-Anschlüsse, EU-Taxonomie für nachhaltige Wirtschaftstätigkeiten, digitale Produktpässe für Produkt- und Lebenszyklusdaten, EPDs und LCA-Daten für Umweltwirkungen, Lieferkettendaten für soziale und ökologische Vorwirkungen sowie amtliche Statistik für öffentliche Wirkungsräume.</p>
+<p>Die zentrale Verschiebung lautet: Berichtsdaten werden zu Steuerungsdaten. Damit steigt die Verantwortung für Datenqualität. Eine WÖk-ID darf nicht beliebige Unternehmensangaben übernehmen, sondern muss Datenherkunft, Prüfbarkeit, Datenqualität, Aktualität und Unsicherheiten dokumentieren.</p>
+<h3 id="method-21-indikatorfamilien">Indikatorfamilien <a class="cite-anchor no-print" href="#method-21-indikatorfamilien" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
+<h3 id="method-21-datenqualitat-und-assurance">Datenqualität und Assurance <a class="cite-anchor no-print" href="#method-21-datenqualitat-und-assurance" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
+<p>Wirkungsdaten sind nur so gut wie ihre Herkunft, Prüfbarkeit und Aktualität. Die WÖk-ID muss daher immer eine Datenqualitätsstufe enthalten. Diese Stufe entscheidet nicht allein über den Score, aber sie bestimmt, wie belastbar der Score ist und welche Prüfpflichten folgen.</p>
+<p>Datenqualität darf nicht zur Bestrafung kleiner Akteure führen. Wo Primärdaten fehlen, können Sekundärdaten, Branchenwerte oder konservative Proxywerte genutzt werden. Wichtig ist, dass Nicht-Berichterstattung nicht belohnt wird. Fehlende Daten müssen transparent und vorsichtig behandelt werden, ohne jede Innovation durch Bürokratie zu ersticken.</p>
+<h3 id="method-21-governance-durch-wirkungsrat">Governance durch Wirkungsrat <a class="cite-anchor no-print" href="#method-21-governance-durch-wirkungsrat" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
+<p>Die WÖk-ID-Architektur braucht eine unabhängige Governance. Der Wirkungsrat ist dafür nicht nur Symbol, sondern technische und demokratische Sicherung. Er prüft, ob Indikatoren aktuell, fair, manipulationsresistent und politisch anschlussfähig sind. Er veröffentlicht Versionen, Konsultationen und Revisionsentscheidungen. Er verhindert, dass Branchen ihre eigenen Benchmarks weichzeichnen oder politische Akteure einzelne Indikatoren opportunistisch verschieben.</p>
+<p>Die Governance muss plural sein: Wissenschaft, Verwaltung, Wirtschaft, Zivilgesellschaft, Prüfinstitutionen und Bürger:innen müssen beteiligt werden, ohne dass eine Gruppe dominieren darf. Eine WÖk-ID ist nur dann legitim, wenn sie überprüfbar, öffentlich nachvollziehbar und korrigierbar ist.</p>
+<h3 id="method-21-anwendung-in-produkten-unternehmen-staat-und-kapital">Anwendung in Produkten, Unternehmen, Staat und Kapital <a class="cite-anchor no-print" href="#method-21-anwendung-in-produkten-unternehmen-staat-und-kapital" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
+<p>WÖk-IDs werden nicht nur in einem Bereich eingesetzt. Sie bilden die gemeinsame Datenlogik für Produkte, Unternehmen, öffentliche Haushalte, Förderentscheidungen, Wirkungsfonds, Kapitalportfolios, Versicherbarkeit, Beschaffung, Lieferketten und politische Programme.</p>
+<p>Bei Produkten fließen WÖk-IDs in Produktscorecards und Wirkungsumsatzsteuer ein. In Unternehmen werden sie für Wirkungscontrolling, Einkauf, Produktentwicklung, Risikomanagement und Finanzkommunikation genutzt. Im Staat dienen sie der Wirkungshaushaltslogik. Im Kapitalmarkt ermöglichen sie Portfolio-Wirkungsrating, Zinsdifferenzierung und Stranded-Asset-Prävention.</p>
+<h3 id="method-21-missbrauchsschutz-und-rote-linien">Missbrauchsschutz und rote Linien <a class="cite-anchor no-print" href="#method-21-missbrauchsschutz-und-rote-linien" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
+<p>Jede Kennzahl erzeugt die Gefahr des Kennzahlenspiels. WÖk-IDs müssen daher gegen drei Missbrauchsformen geschützt werden: Greenwashing, Datenmanipulation und Personenbewertung. Die Wirkungsökonomie bewertet Aktivitäten, Produkte, Organisationen und Kapitalflüsse, nicht den Wert von Menschen.</p>
+<p>Rote Linien sind unverzichtbar. Menschenwürde, Kinderrechte, Rechtsstaatlichkeit, demokratische Stabilität, ökologische Kipppunkte und schwere Gesundheitsrisiken dürfen nicht durch gute Werte in anderen Feldern kompensiert werden. Hier greift die Reverse Merit Order als Engpasslogik. Sie schützt gegen Ablasshandel und Scheintransformation.</p>
+<h3 id="method-21-politische-anschlussfahigkeit-und-umsetzungsoptionen">Politische Anschlussfähigkeit und Umsetzungsoptionen <a class="cite-anchor no-print" href="#method-21-politische-anschlussfahigkeit-und-umsetzungsoptionen" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
+<p>Die folgenden Anforderungen beschreiben keinen fertigen Parteibeschluss. Sie markieren den notwendigen Rahmen, damit WÖk-IDs und Indikatorenarchitektur demokratisch, rechtsstaatlich und praktisch umgesetzt werden kann. Unterschiedliche Parteien können innerhalb dieses Rahmens verschiedene Wege wählen. Entscheidend ist, dass Wirkung sichtbar, überprüfbar, korrigierbar und grundrechtskonform bleibt.</p>
+<h3 id="method-21-sdg-sdg-bezug">SDG-/SDG+-Bezug <a class="cite-anchor no-print" href="#method-21-sdg-sdg-bezug" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
+<p>Der Methodenbereich ist kein eigenes Nachhaltigkeitsziel, sondern eine Rückkopplungsinfrastruktur. Er übersetzt Zielrahmen, Daten, Benchmarks und Governance in steuerbare Entscheidungslogiken. Die relevanten SDGs und SDG+-Dimensionen werden nicht dekorativ genannt, sondern als Bewertungs- und Prüfraster verwendet.</p>
+<h3 id="method-21-website-und-portalintegration">Website- und Bereichintegration <a class="cite-anchor no-print" href="#method-21-website-und-portalintegration" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
+<p>Auf der Website sollte dieses Methodenpapier nicht als bloßer Download erscheinen. Es braucht eine Onlinefassungseite mit Kapitelankern, Kurzfassung, Anwendungsbeispielen, verlinkten WÖk-ID-Familien und Toolkarten. Wichtig ist die Trennung zwischen Seiteneinstieg, Methodenpapier, Methodikbeschreibung und Glossar. Eine Kurzbeschreibung darf nicht als vollständiges Methodenpapier erscheinen.</p>
+<p>Empfohlene URL: /werkzeuge/woek-ids/ sowie Querverlinkung zu /werkzeuge/scorecards/, /werkzeuge/t-sroi/, /wirkungsfelder/produkte-konsum/, /wirkungsfelder/wirtschaft-unternehmen/, /verstehen/sdgs-sdgplus/ und zum Online-Buch.</p>
+<h3 id="method-21-quellen-und-anschlussstellen">Quellen und Anschlussstellen <a class="cite-anchor no-print" href="#method-21-quellen-und-anschlussstellen" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
+<p>Die neue Ordnung des Wohlstands: Buchanker: Kapitel zu WÖk-IDs, Scorecards, Reverse Merit Order, T-SROI, DPP, WStG, WUStG, Unternehmen, Produkte, Kapital und Wirkungsmessung. /werkstatt/online-buch/</p>
+<p>Führender Begriffsleitfaden der Wirkungsökonomie: Verbindliche Begrifflichkeit für Wirkung, Wirkungspotenzial, Netto-Wirkung, Transformationswirkung, Wirkungslenkung und Wirkungsarchitektur. WOeK_Begriffsleitfaden_fuehrend_v1.0.md</p>
+<p>Technische Leitlinien WUStG: Methodische Grundlage für WÖk-IDs, Archetypen, Benchmarks, Scorecards, Datenquellen und Assurance. Technische_Leitlinien_WUStG_Vollversion_Extended_v2.pdf</p>
+<p>Whitepaper T-SROI: Grundlage für Transformational Social Return on Investment und Impact Controlling. Whitepaper-T-SROI.pdf</p>
+<p>Europäische Kommission - CSRD: Nachhaltigkeitsberichterstattung und ESRS-Anschluss. https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en</p>
+<p>Europäische Kommission - EU Taxonomy: Klassifikationssystem und Markttransparenz für nachhaltige wirtschaftliche Aktivitäten. https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en</p>
+<p>EFRAG - ESRS: Technischer Berater der Europäischen Kommission für ESRS und digitale Berichterstattung. https://www.efrag.org/en/sustainability-reporting/esrs-workstreams</p>
+<p>GRI Standards: Globale Standards für Impact Reporting über Wirtschaft, Umwelt und Menschen. https://www.globalreporting.org/standards/</p>
+<h3 id="method-21-fazit">Fazit <a class="cite-anchor no-print" href="#method-21-fazit" aria-label="Zitierlink zu diesem Abschnitt">#</a></h3>
+<p>WÖk-IDs sind die Grammatik der Wirkungsökonomie. Sie machen Wirkung nicht perfekt, aber anschlussfähig, prüfbar und lernfähig. Ihre Stärke liegt nicht darin, komplexe Wirklichkeit auf eine Zahl zu reduzieren, sondern darin, Wirkungspfad, Zielbezug, Datenquelle, Kontext, Benchmark und Governance sichtbar zusammenzuführen.</p>
+<p>Damit entsteht die Grundlage für alles Weitere: Scorecards, NWI, T-SROI, Wirkungssteuern, Wirkungshaushalte, Wirkungsfonds, Wirkungsrat und öffentliche Rechenschaft. Ohne WÖk-IDs bleibt Wirkung ein Anspruch. Mit WÖk-IDs wird sie eine rückkoppelbare Ordnungssprache.</p>
+        </article>
+      </section>
+      <section class="section" aria-labelledby="querverweise">
+        <div class="section-header">
+          <p class="hero-kicker">Querverlinkung</p>
+          <h2 id="querverweise">Verwandte Methoden und Wirkungsfelder <a class="cite-anchor no-print" href="#querverweise" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
+          <p>Methodenpapiere dienen als Rückgrat für mehrere Wirkungsfelder. Die folgenden Links führen zu den wichtigsten Anschlussstellen.</p>
+        </div>
+        <div class="card-grid three">
+    <article class="card">
+      
+      <h3 class="card-title">werkzeuge woek-ids</h3>
+      <p class="card-text">Anschlussseite der Methodik.</p>
+      <div class="portal-card-actions"><a class="text-link" href="../../../../werkzeuge/woek-ids/">Methodik lesen</a></div>
+    </article><article class="card">
+      
+      <h3 class="card-title">werkzeuge impact-controlling</h3>
+      <p class="card-text">Anschlussseite der Methodik.</p>
+      <div class="portal-card-actions"><a class="text-link" href="../../../../werkzeuge/impact-controlling/">Methodik lesen</a></div>
+    </article><article class="card">
+      
+      <h3 class="card-title">werkzeuge scorecards</h3>
+      <p class="card-text">Anschlussseite der Methodik.</p>
+      <div class="portal-card-actions"><a class="text-link" href="../../../../werkzeuge/scorecards/">Methodik lesen</a></div>
+    </article><article class="card">
+      
+      <h3 class="card-title">SDG-/SDG+-Referenzrahmen</h3>
+      <p class="card-text">Referenzrahmen für positive, negative und neutrale Wirkung.</p>
+      <div class="portal-card-actions"><a class="text-link" href="../../../../verstehen/sdgs-sdgplus/">Vertiefung lesen</a></div>
+    </article><article class="card">
+      
+      <h3 class="card-title">Produkte &amp; Konsum</h3>
+      <p class="card-text">Wirkungsumsatzsteuer, Produktwirkung und Scorecards.</p>
+      <div class="portal-card-actions"><a class="text-link" href="../../../../wirkungsfelder/produkte-konsum/">Wirkungsfeld ansehen</a></div>
+    </article><article class="card">
+      
+      <h3 class="card-title">Wirtschaft &amp; Unternehmen</h3>
+      <p class="card-text">Impact Controlling im Unternehmen, Risiko, Lieferketten und Transformation.</p>
+      <div class="portal-card-actions"><a class="text-link" href="../../../../wirkungsfelder/wirtschaft-unternehmen/">Wirkungsfeld ansehen</a></div>
+    </article><article class="card">
+      
+      <h3 class="card-title">Staat, Recht &amp; Demokratie</h3>
+      <p class="card-text">Wirkungsrat, Wirkungshaushalt, WStG und demokratische Korrektur.</p>
+      <div class="portal-card-actions"><a class="text-link" href="../../../../wirkungsfelder/staat-recht-demokratie/">Wirkungsfeld ansehen</a></div>
+    </article><article class="card">
+      
+      <h3 class="card-title">Finanzsystem &amp; Kapital</h3>
+      <p class="card-text">Kapitalwirkung, Wirkungsfonds und Finanzmarktanschluss.</p>
+      <div class="portal-card-actions"><a class="text-link" href="../../../../wirkungsfelder/finanzsystem-kapital/">Wirkungsfeld ansehen</a></div>
+    </article>
+  </div>
+      </section>
+      <section class="section" aria-labelledby="context-tools">
+    <div class="section-header">
+      <p class="hero-kicker">Methoden & Werkzeuge</p>
+      <h2 id="context-tools">Werkzeuge in diesem Bereich <a class="cite-anchor no-print" href="#context-tools" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
+      <p>Impact Controlling ist der Methodenrahmen. Interaktive Rechner werden als Rechner bezeichnet; statische Zielseiten führen als Methodik oder Dossier weiter.</p>
+    </div>
+    <div class="card-grid three context-tool-grid">
+      <article class="card context-tool-card">
+        <p class="card-kicker">Datenarchitektur</p>
+        <h3 class="card-title">WÖk-IDs</h3>
+        <p class="card-text">WÖk-IDs verbinden SDGs, SDG+, NACE, ESRS, GRI, Quellen, Einheiten, Schwellen und Versionen.</p>
+        <p class="card-text"><strong>Warum hier relevant?</strong> Sie bilden die Brücke zwischen Referenzrahmen und prüfbarer Wirkungsbewertung.</p>
+        <div class="portal-card-actions">
+          <a class="text-link" href="../../../../werkzeuge/woek-ids/">Methodik lesen</a>
+          <a class="text-link" href="../../../../werkzeuge/impact-controlling/dossiers/woek-ids/">Dossier lesen</a>
+        </div>
+      </article><article class="card context-tool-card">
+        <p class="card-kicker">Bewertungsraster</p>
+        <h3 class="card-title">Scorecards</h3>
+        <p class="card-text">Scorecards übersetzen Daten und Benchmarks in nachvollziehbare Skalen und Entscheidungslogik.</p>
+        <p class="card-text"><strong>Warum hier relevant?</strong> Sie strukturieren Wirkung über Produkte, Organisationen, Projekte und Portfolios hinweg.</p>
+        <div class="portal-card-actions">
+          <a class="text-link" href="../../../../werkzeuge/scorecards/">Methodik lesen</a>
+          <a class="text-link" href="../../../../werkzeuge/impact-controlling/dossiers/scorecards/">Dossier lesen</a>
+        </div>
+      </article><article class="card context-tool-card">
+        <p class="card-kicker">Prüflogik</p>
+        <h3 class="card-title">Datenqualität &amp; Assurance</h3>
+        <p class="card-text">Datenqualität, Prüfstatus und Assurance sichern, dass Wirkungsdaten nicht zur Simulation werden.</p>
+        <p class="card-text"><strong>Warum hier relevant?</strong> Impact Controlling braucht Verlässlichkeit, Versionierung und auditierbare Quellen.</p>
+        <div class="portal-card-actions">
+          <a class="text-link" href="../../../../werkzeuge/datenqualitaet-assurance/">Methodik lesen</a>
+          <a class="text-link" href="../../../../werkzeuge/impact-controlling/dossiers/datenqualitaet-assurance/">Dossier lesen</a>
+        </div>
+      </article>
+    </div>
+  </section>
+      <section class="section" aria-labelledby="go10-tools">
+    <div class="section-header">
+      <p class="hero-kicker">Tool-Suite</p>
+      <h2 id="go10-tools">Methoden in Werkzeuglogik übersetzen <a class="cite-anchor no-print" href="#go10-tools" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
+      <p>Die Methodenpapiere beschreiben die fachliche Logik. Die Karten führen zu Methodenseiten; sie versprechen keine Interaktion, wenn keine Bedienoberfläche vorhanden ist.</p>
+    </div>
+    <div class="card-grid three context-tool-grid">
+      <article class="card context-tool-card">
+        <p class="card-kicker">Methode</p>
+        <h3 class="card-title">WÖk-ID-Browser</h3>
+        <p class="card-text">Wirkungsindikatoren, Quellen, SDG-Bezüge, Datenqualität und Versionen nachvollziehbar ordnen.</p>
+        <div class="portal-card-actions"><a class="text-link" href="../../../../werkzeuge/woek-ids/">Methodik lesen</a></div>
+      </article><article class="card context-tool-card">
+        <p class="card-kicker">Methodik</p>
+        <h3 class="card-title">Scorecard-Generator</h3>
+        <p class="card-text">Aus WÖk-IDs, Benchmarks und Datenqualität eine prüfbare Bewertungsoberfläche ableiten.</p>
+        <div class="portal-card-actions"><a class="text-link" href="../../../../werkzeuge/scorecards/">Methodik lesen</a></div>
+      </article><article class="card context-tool-card">
+        <p class="card-kicker">Methodik</p>
+        <h3 class="card-title">NWI-Rechner</h3>
+        <p class="card-text">Positive, negative und neutrale Wirkung ohne freie Kompensation zusammenführen.</p>
+        <div class="portal-card-actions"><a class="text-link" href="../../../../werkzeuge/netto-wirkungs-index/">Methodik lesen</a></div>
+      </article><article class="card context-tool-card">
+        <p class="card-kicker">Methodik</p>
+        <h3 class="card-title">IOI-Rechner</h3>
+        <p class="card-text">Positive Netto-Wirkung je investiertem Euro, Budget oder Kapitaleinsatz sichtbar machen.</p>
+        <div class="portal-card-actions"><a class="text-link" href="../../../../werkzeuge/impact-controlling/impact-of-investment/">Methodik lesen</a></div>
+      </article><article class="card context-tool-card">
+        <p class="card-kicker">Methodik</p>
+        <h3 class="card-title">T-SROI-Rechner</h3>
+        <p class="card-text">Investitionen, Transformationswirkung, Resilienzfaktor und Datenqualität modellhaft zusammenführen.</p>
+        <div class="portal-card-actions"><a class="text-link" href="../../../../werkzeuge/t-sroi/">Methodik lesen</a></div>
+      </article><article class="card context-tool-card">
+        <p class="card-kicker">Methodik</p>
+        <h3 class="card-title">Reverse-Merit-Order-Demo</h3>
+        <p class="card-text">Rote Linien und schwächste kritische Wirkungsfelder sichtbar machen.</p>
+        <div class="portal-card-actions"><a class="text-link" href="../../../../werkzeuge/reverse-merit-order/">Methodik lesen</a></div>
+      </article><article class="card context-tool-card">
+        <p class="card-kicker">Methodik</p>
+        <h3 class="card-title">Datenqualitäts-/Assurance-Check</h3>
+        <p class="card-text">Prüfstatus, Datenherkunft, Schätzungen und Revisionsbedarf transparent markieren.</p>
+        <div class="portal-card-actions"><a class="text-link" href="../../../../werkzeuge/datenqualitaet-assurance/">Methodik lesen</a></div>
+      </article>
+    </div>
+  </section>
+      <section class="section" aria-labelledby="impact-crosslinks">
+    <div class="section-header">
+      <p class="hero-kicker">Querverlinkung</p>
+      <h2 id="impact-crosslinks">Methodenanschluss in Wirkungsfeldern <a class="cite-anchor no-print" href="#impact-crosslinks" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
+      <p>Impact Controlling ist eine Querschnittsmethodik. Die folgenden Bereiche zeigen typische Anwendungsräume.</p>
+    </div>
+    <div class="card-grid three">
+    <article class="card">
+      
+      <h3 class="card-title">SDG-/SDG+-Referenzrahmen</h3>
+      <p class="card-text">Ziel- und Risikorahmen für positive, negative und neutrale Wirkung.</p>
+      <div class="portal-card-actions"><a class="text-link" href="../../../../verstehen/sdgs-sdgplus/">Vertiefung lesen</a></div>
+    </article><article class="card">
+      
+      <h3 class="card-title">Produkte &amp; Konsum</h3>
+      <p class="card-text">WUStG, Produktscorecards, Lieferketten und Produktpässe.</p>
+      <div class="portal-card-actions"><a class="text-link" href="../../../../wirkungsfelder/produkte-konsum/">Wirkungsfeld ansehen</a></div>
+    </article><article class="card">
+      
+      <h3 class="card-title">Wirtschaft &amp; Unternehmen</h3>
+      <p class="card-text">Wirkungscontrolling, Risiko, Finanzierung, Führung und Transformation.</p>
+      <div class="portal-card-actions"><a class="text-link" href="../../../../wirkungsfelder/wirtschaft-unternehmen/">Wirkungsfeld ansehen</a></div>
+    </article><article class="card">
+      
+      <h3 class="card-title">Staat, Recht &amp; Demokratie</h3>
+      <p class="card-text">Wirkungsrat, Wirkungshaushalt, WStG und rechtsstaatliche Korrektur.</p>
+      <div class="portal-card-actions"><a class="text-link" href="../../../../wirkungsfelder/staat-recht-demokratie/">Wirkungsfeld ansehen</a></div>
+    </article><article class="card">
+      
+      <h3 class="card-title">Finanzsystem &amp; Kapital</h3>
+      <p class="card-text">Kapitalwirkung, Wirkungsfonds, Banken, Versicherungen und Portfolio-Steuerung.</p>
+      <div class="portal-card-actions"><a class="text-link" href="../../../../wirkungsfelder/finanzsystem-kapital/">Wirkungsfeld ansehen</a></div>
+    </article><article class="card">
+      
+      <h3 class="card-title">Bildung</h3>
+      <p class="card-text">Wirkungskompetenz, Bildungswirkung, Schulentwicklung und Schutz vor Personenbewertung.</p>
+      <div class="portal-card-actions"><a class="text-link" href="../../../../wirkungsfelder/bildung/">Wirkungsfeld ansehen</a></div>
+    </article><article class="card">
+      
+      <h3 class="card-title">Gesundheit &amp; Pflege</h3>
+      <p class="card-text">Prävention, Pflege, Gesundheitswirkung und T-SROI für öffentliche Investitionen.</p>
+      <div class="portal-card-actions"><a class="text-link" href="../../../../wirkungsfelder/gesundheit-pflege/">Wirkungsfeld ansehen</a></div>
+    </article><article class="card">
+      
+      <h3 class="card-title">Wohnen &amp; Stadt</h3>
+      <p class="card-text">Wohnwirkungsindex, Warmmietenneutralität, Sanierung und Quartierswirkung.</p>
+      <div class="portal-card-actions"><a class="text-link" href="../../../../wirkungsfelder/wohnen-stadt/">Wirkungsfeld ansehen</a></div>
+    </article><article class="card">
+      
+      <h3 class="card-title">Klima, Energie &amp; Ressourcen</h3>
+      <p class="card-text">Emissionspfade, Ressourcenwirkung, Energieinfrastruktur und Systemgrenzen.</p>
+      <div class="portal-card-actions"><a class="text-link" href="../../../../wirkungsfelder/klima-energie-ressourcen/">Wirkungsfeld ansehen</a></div>
+    </article>
+  </div>
+  </section>
+      <section class="section" aria-labelledby="political-implementation">
+    <div class="card">
+      <p class="hero-kicker">Umsetzung</p>
+      <h2 id="political-implementation">Politische Anschlussfähigkeit und Umsetzungsoptionen <a class="cite-anchor no-print" href="#political-implementation" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
+      <p>Die folgenden politischen Anforderungen beschreiben keinen fertigen Parteibeschluss. Sie markieren den notwendigen Rahmen, damit dieses Wirkungsfeld demokratisch, rechtsstaatlich und praktisch umgesetzt werden kann. Unterschiedliche Parteien können innerhalb dieses Rahmens verschiedene Wege wählen. Entscheidend ist, dass Wirkung sichtbar, überprüfbar, korrigierbar und grundrechtskonform bleibt.</p>
+      <div class="table-wrap"><table class="data-table political-implementation-table">
+        <thead><tr><th>Ebene</th><th>Konkrete Ausgestaltung für Impact Controlling</th></tr></thead>
+        <tbody><tr><td>Aufgabe der Politik</td><td>Politik schafft Datenzugang, Prüfstandards und Verlässlichkeit, damit Impact Controlling als Entscheidungsgrundlage statt als Berichtsroutine funktioniert.</td></tr><tr><td>Politische Rahmenbedingungen</td><td>WÖk-IDs, Scorecards, NWI, T-SROI, Datenqualität, Assurance, Datenschutz, Verhältnismäßigkeit und Berichtspflichten brauchen klare Zuständigkeiten.</td></tr><tr><td>Ausgestaltungsspielraum</td><td>Berichtspflichten, freiwillige Pilotierung, öffentliche Beschaffung, Förderlogik, Steuerungsinstrumente und Prüfintensität können unterschiedlich ausgestaltet werden.</td></tr><tr><td>Zielkonflikte</td><td>Vergleichbarkeit, Kosten, Geschäftsgeheimnisse, Datenschutz, Prüftiefe, Geschwindigkeit und KMU-Tauglichkeit stehen in politischer Spannung.</td></tr><tr><td>Rollenverteilung</td><td>Gesetzgeber setzen Mindeststandards, Unternehmen steuern intern, Prüfer:innen sichern Qualität, Wissenschaft entwickelt Methodik, Verwaltung nutzt Ergebnisse.</td></tr><tr><td>Übergang und Schutz</td><td>Gestufte Pflichten, Branchenarchetypen, Standardwerte, Assurance-Level und geförderte Dateninfrastruktur schützen kleinere Organisationen.</td></tr><tr><td>Evaluation und Korrektur</td><td>Indikatoren, Schwellen, Methoden und Datenquellen müssen versioniert, geprüft und bei Fehlsteuerung korrigiert werden.</td></tr><tr><td>Parteipolitische Anschlussfähigkeit</td><td>Liberale Transparenzlogik, soziale Schutzlogik, ökologische Transformationslogik und wirtschaftliche Resilienzlogik können hier anschließen.</td></tr><tr><td>Schutz vor Technokratie</td><td>Impact Controlling liefert Entscheidungswissen. Es ersetzt weder Managementverantwortung noch demokratische Abwägung.</td></tr></tbody>
+      </table></div>
+    </div>
+  </section>
+      <section class="section" aria-labelledby="sdg-title">
+    <div class="portal-reference-block">
+      <p class="hero-kicker">Referenzrahmen</p>
+      <h2 id="sdg-title">SDG-/SDG+-Bezug <a class="cite-anchor no-print" href="#sdg-title" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
+      <h3>Relevante SDGs</h3>
+      <div class="model-strip"><span class="sdg-ref" data-sdg-id="sdg-8">
+    <a class="sdg-ref-link" href="../../../../verstehen/sdgs-sdgplus/sdg-8-menschenwuerdige-arbeit-wirtschaftswachstum/" aria-label="SDG 8 Menschenwürdige Arbeit nachhaltige wirtschaftliche Entwicklung: SDG 8 ist für die WÖk kritisch, weil Wachstum nicht automatisch positiv ist." aria-describedby="sdg-popover-sdg-8-1217">SDG 8 Menschenwürdige Arbeit nachhaltige wirtschaftliche Entwicklung</a>
+    <button class="sdg-ref-info" type="button" aria-label="Kurzbeschreibung zu SDG 8 Menschenwürdige Arbeit nachhaltige wirtschaftliche Entwicklung: SDG 8 ist für die WÖk kritisch, weil Wachstum nicht automatisch positiv ist." aria-describedby="sdg-popover-sdg-8-1217">i</button>
+    <span class="sdg-ref-popover" id="sdg-popover-sdg-8-1217" role="tooltip">SDG 8 ist für die WÖk kritisch, weil Wachstum nicht automatisch positiv ist. <span class="sdg-ref-more">Details öffnen</span></span>
+  </span><span class="sdg-ref" data-sdg-id="sdg-9">
+    <a class="sdg-ref-link" href="../../../../verstehen/sdgs-sdgplus/sdg-9-industrie-innovation-infrastruktur/" aria-label="SDG 9 Industrie, Innovation Infrastruktur: SDG 9 ist die technische Seite der Transformation." aria-describedby="sdg-popover-sdg-9-1218">SDG 9 Industrie, Innovation Infrastruktur</a>
+    <button class="sdg-ref-info" type="button" aria-label="Kurzbeschreibung zu SDG 9 Industrie, Innovation Infrastruktur: SDG 9 ist die technische Seite der Transformation." aria-describedby="sdg-popover-sdg-9-1218">i</button>
+    <span class="sdg-ref-popover" id="sdg-popover-sdg-9-1218" role="tooltip">SDG 9 ist die technische Seite der Transformation. <span class="sdg-ref-more">Details öffnen</span></span>
+  </span><span class="sdg-ref" data-sdg-id="sdg-10">
+    <a class="sdg-ref-link" href="../../../../verstehen/sdgs-sdgplus/sdg-10-weniger-ungleichheiten/" aria-label="SDG 10 Weniger Ungleichheiten: SDG 10 liest die WÖk als Systemfrage von Macht, Einkommen, Kapital, Zugang, Diskriminierung, Migration und regionaler Teilhabe." aria-describedby="sdg-popover-sdg-10-1219">SDG 10 Weniger Ungleichheiten</a>
+    <button class="sdg-ref-info" type="button" aria-label="Kurzbeschreibung zu SDG 10 Weniger Ungleichheiten: SDG 10 liest die WÖk als Systemfrage von Macht, Einkommen, Kapital, Zugang, Diskriminierung, Migration und regionaler Teilhabe." aria-describedby="sdg-popover-sdg-10-1219">i</button>
+    <span class="sdg-ref-popover" id="sdg-popover-sdg-10-1219" role="tooltip">SDG 10 liest die WÖk als Systemfrage von Macht, Einkommen, Kapital, Zugang, Diskriminierung, Migration und regionaler Teilhabe. <span class="sdg-ref-more">Details öffnen</span></span>
+  </span><span class="sdg-ref" data-sdg-id="sdg-12">
+    <a class="sdg-ref-link" href="../../../../verstehen/sdgs-sdgplus/sdg-12-nachhaltiger-konsum-produktion/" aria-label="SDG 12 Konsum Produktion: SDG 12 ist der direkte Anschluss an Produktbesteuerung, WUStG, Lieferketten, Produktpässe und ehrliche Preise." aria-describedby="sdg-popover-sdg-12-1220">SDG 12 Konsum Produktion</a>
+    <button class="sdg-ref-info" type="button" aria-label="Kurzbeschreibung zu SDG 12 Konsum Produktion: SDG 12 ist der direkte Anschluss an Produktbesteuerung, WUStG, Lieferketten, Produktpässe und ehrliche Preise." aria-describedby="sdg-popover-sdg-12-1220">i</button>
+    <span class="sdg-ref-popover" id="sdg-popover-sdg-12-1220" role="tooltip">SDG 12 ist der direkte Anschluss an Produktbesteuerung, WUStG, Lieferketten, Produktpässe und ehrliche Preise. <span class="sdg-ref-more">Details öffnen</span></span>
+  </span><span class="sdg-ref" data-sdg-id="sdg-13">
+    <a class="sdg-ref-link" href="../../../../verstehen/sdgs-sdgplus/sdg-13-klimaschutz/" aria-label="SDG 13 Klimaschutz: SDG 13 ist eine planetare Grenze und ein Systemrisiko." aria-describedby="sdg-popover-sdg-13-1221">SDG 13 Klimaschutz</a>
+    <button class="sdg-ref-info" type="button" aria-label="Kurzbeschreibung zu SDG 13 Klimaschutz: SDG 13 ist eine planetare Grenze und ein Systemrisiko." aria-describedby="sdg-popover-sdg-13-1221">i</button>
+    <span class="sdg-ref-popover" id="sdg-popover-sdg-13-1221" role="tooltip">SDG 13 ist eine planetare Grenze und ein Systemrisiko. <span class="sdg-ref-more">Details öffnen</span></span>
+  </span><span class="sdg-ref" data-sdg-id="sdg-16">
+    <a class="sdg-ref-link" href="../../../../verstehen/sdgs-sdgplus/sdg-16-frieden-gerechtigkeit-starke-institutionen/" aria-label="SDG 16 Frieden, Gerechtigkeit starke Institutionen: SDG 16 ist der offizielle SDG-Anker für Demokratie, Recht, Institutionen, Frieden, Korruption und Zugang zu Information." aria-describedby="sdg-popover-sdg-16-1222">SDG 16 Frieden, Gerechtigkeit starke Institutionen</a>
+    <button class="sdg-ref-info" type="button" aria-label="Kurzbeschreibung zu SDG 16 Frieden, Gerechtigkeit starke Institutionen: SDG 16 ist der offizielle SDG-Anker für Demokratie, Recht, Institutionen, Frieden, Korruption und Zugang zu Information." aria-describedby="sdg-popover-sdg-16-1222">i</button>
+    <span class="sdg-ref-popover" id="sdg-popover-sdg-16-1222" role="tooltip">SDG 16 ist der offizielle SDG-Anker für Demokratie, Recht, Institutionen, Frieden, Korruption und Zugang zu Information. <span class="sdg-ref-more">Details öffnen</span></span>
+  </span><span class="sdg-ref" data-sdg-id="sdg-17">
+    <a class="sdg-ref-link" href="../../../../verstehen/sdgs-sdgplus/sdg-17-partnerschaften/" aria-label="SDG 17 Partnerschaften zur Erreichung der Ziele: SDG 17 ist die Umsetzungsdimension: Daten, Finanzierung, Technologie, Handel, Kapazitäten und Partnerschaften." aria-describedby="sdg-popover-sdg-17-1223">SDG 17 Partnerschaften zur Erreichung der Ziele</a>
+    <button class="sdg-ref-info" type="button" aria-label="Kurzbeschreibung zu SDG 17 Partnerschaften zur Erreichung der Ziele: SDG 17 ist die Umsetzungsdimension: Daten, Finanzierung, Technologie, Handel, Kapazitäten und Partnerschaften." aria-describedby="sdg-popover-sdg-17-1223">i</button>
+    <span class="sdg-ref-popover" id="sdg-popover-sdg-17-1223" role="tooltip">SDG 17 ist die Umsetzungsdimension: Daten, Finanzierung, Technologie, Handel, Kapazitäten und Partnerschaften. <span class="sdg-ref-more">Details öffnen</span></span>
+  </span></div>
+      <h3>Relevante SDG+-Dimensionen</h3>
+      <div class="model-strip"><span class="sdg-ref" data-sdg-id="sdgplus-demokratie">
+    <a class="sdg-ref-link" href="../../../../verstehen/sdgs-sdgplus/#sdgplus-demokratie" aria-label="SDG+ Demokratie: SDG+ Demokratie macht demokratische Stabilität, Teilhabe, Streitfähigkeit und Korrekturfähigkeit als Wirkungsbedingung sichtbar." aria-describedby="sdg-popover-sdgplus-demokratie-1224">SDG+ Demokratie</a>
+    <button class="sdg-ref-info" type="button" aria-label="Kurzbeschreibung zu SDG+ Demokratie: SDG+ Demokratie macht demokratische Stabilität, Teilhabe, Streitfähigkeit und Korrekturfähigkeit als Wirkungsbedingung sichtbar." aria-describedby="sdg-popover-sdgplus-demokratie-1224">i</button>
+    <span class="sdg-ref-popover" id="sdg-popover-sdgplus-demokratie-1224" role="tooltip">SDG+ Demokratie macht demokratische Stabilität, Teilhabe, Streitfähigkeit und Korrekturfähigkeit als Wirkungsbedingung sichtbar. <span class="sdg-ref-more">Details öffnen</span></span>
+  </span><span class="sdg-ref" data-sdg-id="sdgplus-rechtsstaatlichkeit">
+    <a class="sdg-ref-link" href="../../../../verstehen/sdgs-sdgplus/#sdgplus-rechtsstaatlichkeit" aria-label="SDG+ Rechtsstaatlichkeit: SDG+ Rechtsstaatlichkeit schützt Wirkungssteuerung vor Willkür: unabhängige Gerichte, Grundrechte, Verhältnismäßigkeit und Zugang zu Recht." aria-describedby="sdg-popover-sdgplus-rechtsstaatlichkeit-1225">SDG+ Rechtsstaatlichkeit</a>
+    <button class="sdg-ref-info" type="button" aria-label="Kurzbeschreibung zu SDG+ Rechtsstaatlichkeit: SDG+ Rechtsstaatlichkeit schützt Wirkungssteuerung vor Willkür: unabhängige Gerichte, Grundrechte, Verhältnismäßigkeit und Zugang zu Recht." aria-describedby="sdg-popover-sdgplus-rechtsstaatlichkeit-1225">i</button>
+    <span class="sdg-ref-popover" id="sdg-popover-sdgplus-rechtsstaatlichkeit-1225" role="tooltip">SDG+ Rechtsstaatlichkeit schützt Wirkungssteuerung vor Willkür: unabhängige Gerichte, Grundrechte, Verhältnismäßigkeit und Zugang zu Recht. <span class="sdg-ref-more">Details öffnen</span></span>
+  </span><span class="sdg-ref" data-sdg-id="sdgplus-diskursfaehigkeit">
+    <a class="sdg-ref-link" href="../../../../verstehen/sdgs-sdgplus/#sdgplus-diskursfaehigkeit" aria-label="SDG+ Diskursfähigkeit: SDG+ Diskursfähigkeit macht sichtbar, ob Gesellschaften Konflikte faktenbasiert, respektvoll und korrekturfähig bearbeiten können." aria-describedby="sdg-popover-sdgplus-diskursfaehigkeit-1226">SDG+ Diskursfähigkeit</a>
+    <button class="sdg-ref-info" type="button" aria-label="Kurzbeschreibung zu SDG+ Diskursfähigkeit: SDG+ Diskursfähigkeit macht sichtbar, ob Gesellschaften Konflikte faktenbasiert, respektvoll und korrekturfähig bearbeiten können." aria-describedby="sdg-popover-sdgplus-diskursfaehigkeit-1226">i</button>
+    <span class="sdg-ref-popover" id="sdg-popover-sdgplus-diskursfaehigkeit-1226" role="tooltip">SDG+ Diskursfähigkeit macht sichtbar, ob Gesellschaften Konflikte faktenbasiert, respektvoll und korrekturfähig bearbeiten können. <span class="sdg-ref-more">Details öffnen</span></span>
+  </span><span class="sdg-ref" data-sdg-id="sdgplus-institutionelles-vertrauen">
+    <a class="sdg-ref-link" href="../../../../verstehen/sdgs-sdgplus/#sdgplus-institutionelles-vertrauen" aria-label="SDG+ institutionelles Vertrauen: SDG+ institutionelles Vertrauen beschreibt die begründete Erwartung, dass Institutionen fair, kompetent, transparent und korrigierbar handeln." aria-describedby="sdg-popover-sdgplus-institutionelles-vertrauen-1227">SDG+ institutionelles Vertrauen</a>
+    <button class="sdg-ref-info" type="button" aria-label="Kurzbeschreibung zu SDG+ institutionelles Vertrauen: SDG+ institutionelles Vertrauen beschreibt die begründete Erwartung, dass Institutionen fair, kompetent, transparent und korrigierbar handeln." aria-describedby="sdg-popover-sdgplus-institutionelles-vertrauen-1227">i</button>
+    <span class="sdg-ref-popover" id="sdg-popover-sdgplus-institutionelles-vertrauen-1227" role="tooltip">SDG+ institutionelles Vertrauen beschreibt die begründete Erwartung, dass Institutionen fair, kompetent, transparent und korrigierbar handeln. <span class="sdg-ref-more">Details öffnen</span></span>
+  </span><span class="sdg-ref" data-sdg-id="sdgplus-digitale-selbstbestimmung">
+    <a class="sdg-ref-link" href="../../../../verstehen/sdgs-sdgplus/#sdgplus-digitale-selbstbestimmung" aria-label="SDG+ digitale Selbstbestimmung: SDG+ digitale Selbstbestimmung schützt Datenrechte, digitale Teilhabe, algorithmische Fairness und Freiheit vor Manipulation." aria-describedby="sdg-popover-sdgplus-digitale-selbstbestimmung-1228">SDG+ digitale Selbstbestimmung</a>
+    <button class="sdg-ref-info" type="button" aria-label="Kurzbeschreibung zu SDG+ digitale Selbstbestimmung: SDG+ digitale Selbstbestimmung schützt Datenrechte, digitale Teilhabe, algorithmische Fairness und Freiheit vor Manipulation." aria-describedby="sdg-popover-sdgplus-digitale-selbstbestimmung-1228">i</button>
+    <span class="sdg-ref-popover" id="sdg-popover-sdgplus-digitale-selbstbestimmung-1228" role="tooltip">SDG+ digitale Selbstbestimmung schützt Datenrechte, digitale Teilhabe, algorithmische Fairness und Freiheit vor Manipulation. <span class="sdg-ref-more">Details öffnen</span></span>
+  </span></div>
+      <p>Impact Controlling bewertet Wirkung nicht als automatisch positiv, sondern als tatsächliche Zustandsveränderung. Zielgröße ist positive Netto-Wirkung für Mensch, Planet und Demokratie.</p>
+      <p><a class="text-link" href="../../../../verstehen/sdgs-sdgplus/#sdgplus">SDG+</a> ist keine offizielle UN-Kategorie, sondern eine transparente Erweiterung der Wirkungsökonomie.</p>
+    </div>
+  </section>
+      <section class="section" aria-labelledby="book-anchors">
+    <div class="section-header">
+      <p class="hero-kicker">Online-Buch</p>
+      <h2 id="book-anchors">Anker im Online-Buch <a class="cite-anchor no-print" href="#book-anchors" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
+      <p>Diese Kapitel bilden die methodische Grundlage für Wirkungsmessung, WÖk-IDs, Scorecards, NWI, IOI, T-SROI und Wirkungsdatenräume.</p>
+    </div>
+    <div class="model-strip"><a href="../../../../referenz/kapitel-030-von-wirkung-zu-messung/">Kapitel 30 - Von Wirkung zu Messung</a><a href="../../../../referenz/kapitel-031-woek-ids-und-indikatorenarchitektur/">Kapitel 31 - WÖk-IDs und Indikatorenarchitektur</a><a href="../../../../referenz/kapitel-032-benchmarks-skalen-und-scorecards/">Kapitel 32 - Benchmarks, Skalen und Scorecards</a><a href="../../../../referenz/kapitel-033-reverse-merit-order/">Kapitel 33 - Reverse Merit Order</a><a href="../../../../referenz/kapitel-034-t-sroi-und-systemische-transformationsmessung/">Kapitel 34 - T-SROI und systemische Transformationsmessung</a><a href="../../../../referenz/kapitel-035-digitale-produktpaesse-und-wirkungsdatenraeume/">Kapitel 35 - Digitale Produktpässe und Wirkungsdatenräume</a><a href="../../../../referenz/kapitel-044-wirkungscontrolling-im-unternehmen/">Kapitel 44 - Wirkungscontrolling im Unternehmen</a></div>
+  </section>
+      <section class="section" aria-labelledby="external-sources">
+    <div class="card">
+      <p class="hero-kicker">Quellen</p>
+      <h2 id="external-sources">Quellen und Datenquellenregister <a class="cite-anchor no-print" href="#external-sources" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
+      <p class="card-text">Externe Quellen werden als Referenzen geführt. Die wirkungsökonomische Einordnung steht online auf dieser Website.</p>
+      <div class="model-strip"><a href="https://sdgs.un.org/goals" target="_blank" rel="noopener noreferrer">UN SDGs <span class="sr-only">(externe Quelle)</span></a><a href="https://unstats.un.org/sdgs/indicators/indicators-list/" target="_blank" rel="noopener noreferrer">UN SDG Indicators <span class="sr-only">(externe Quelle)</span></a><a href="https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en" target="_blank" rel="noopener noreferrer">European Commission CSRD <span class="sr-only">(externe Quelle)</span></a><a href="https://www.efrag.org/en/sustainability-reporting" target="_blank" rel="noopener noreferrer">EFRAG ESRS <span class="sr-only">(externe Quelle)</span></a><a href="https://www.globalreporting.org/standards/" target="_blank" rel="noopener noreferrer">GRI Standards <span class="sr-only">(externe Quelle)</span></a><a href="https://ec.europa.eu/eurostat/web/nace" target="_blank" rel="noopener noreferrer">Eurostat NACE <span class="sr-only">(externe Quelle)</span></a><a href="https://sdg-indikatoren.de/" target="_blank" rel="noopener noreferrer">Destatis SDG-Indikatoren <span class="sr-only">(externe Quelle)</span></a></div>
+    </div>
+  </section>
+      <section class="section" aria-labelledby="downloads">
+    <div class="card">
+      <p class="hero-kicker">Downloads</p>
+      <h2 id="downloads">Vertiefung und Arbeitsmaterial <a class="cite-anchor no-print" href="#downloads" aria-label="Zitierlink zu diesem Abschnitt">#</a></h2>
+      <p class="card-text">Du liest die Onlinefassung. Word/PDF-Dateien und Druckfunktion ergänzen sie als Arbeitsmaterial.</p>
+      <div class="portal-card-actions no-print">
+        <button class="btn btn-secondary" type="button" onclick="window.print()" aria-label="Diese Seite drucken">Seite drucken</button>
+        <a class="btn btn-secondary" href="../../../../assets/downloads/21_woek_impact_controlling_woek_ids_indikatorenarchitektur_methodenpapier_v1_0.pdf">WÖk-IDs und Indikatorenarchitektur PDF</a><a class="btn btn-secondary" href="../../../../werkzeuge/impact-controlling/">Methodik lesen</a><a class="btn btn-secondary" href="../../../../erleben/impact-controlling-rechner/">Impact-Controlling-Beispiel ansehen</a>
+      </div>
+      <p class="card-text">Noch nicht als Download vorhanden: WÖk-IDs und Indikatorenarchitektur DOCX. Es wird kein kaputter Downloadlink gesetzt.</p>
+    </div>
+  </section>
+    </main>
+    <footer class="footer" data-search-exclude>
+      <div class="footer-grid">
+        <div>
+          <p class="hero-kicker">Wirkungsökonomie</p>
+          <h2>Die neue Ordnung des Wohlstands</h2>
+          <p>Die Wirkungsökonomie ist ein eigenständiges Gesellschafts- und Wirtschaftsmodell, das Wirkung auf Mensch, Planet und Demokratie sichtbar macht, bewertet und in Entscheidungen zurückführt.</p>
+          <p><a class="text-link" href="../../../../mitmachen.html">Kontakt und Mitmachen</a></p>
+        </div>
+        <a class="btn btn-primary" href="../../../../kompass.html">WÖk-Kompass öffnen</a>
+        <nav class="footer-nav" aria-label="Footer Navigation" data-search-exclude>
+          <div class="footer-nav-group">
+      <h3>Verstehen</h3>
+      <div class="footer-nav-links">
+          <a href="../../../../verstehen/" data-nav-match="verstehen/">Einstieg</a>
+          <a href="../../../../verstehen/woek-auf-einer-seite/" data-nav-match="verstehen/woek-auf-einer-seite/">WÖk auf einer Seite</a>
+          <a href="../../../../so-wirkt-wirkungsoekonomie/" data-nav-match="so-wirkt-wirkungsoekonomie/">So wirkt WÖk</a>
+          <a href="../../../../modell.html" data-nav-match="modell.html|modell/">Modell</a>
+          <a href="../../../../einwaende/" data-nav-match="einwaende/">Einwände</a>
+          <a href="../../../../begriffe/" data-nav-match="begriffe/|glossar.html">Glossar</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Für wen?</h3>
+      <div class="footer-nav-links">
+          <a href="../../../../fuer/" data-nav-match="fuer/">Übersicht</a>
+          <a href="../../../../fuer/buergerinnen.html" data-nav-match="fuer/buergerinnen.html">Bürger:innen</a>
+          <a href="../../../../fuer/unternehmen.html" data-nav-match="fuer/unternehmen.html">Unternehmen</a>
+          <a href="../../../../fuer/unternehmen/impact-controlling/" data-nav-match="fuer/unternehmen/impact-controlling/">Impact-Controlling Unternehmen</a>
+          <a href="../../../../fuer/politik.html" data-nav-match="fuer/politik.html">Politik</a>
+          <a href="../../../../fuer/kommunen.html" data-nav-match="fuer/kommunen.html">Kommunen</a>
+          <a href="../../../../fuer/investoren.html" data-nav-match="fuer/investoren.html">Investor:innen</a>
+          <a href="../../../../fuer/investoren/impact-controlling/" data-nav-match="fuer/investoren/impact-controlling/">Impact-Controlling Finanzmarkt</a>
+          <a href="../../../../fuer/journalismus.html" data-nav-match="fuer/journalismus.html">Journalismus</a>
+          <a href="../../../../fuer/wissenschaft-forschung.html" data-nav-match="fuer/wissenschaft-forschung.html">Wissenschaft</a>
+          <a href="../../../../fuer/gesundheit.html" data-nav-match="fuer/gesundheit.html">Gesundheit</a>
+          <a href="../../../../fuer/landwirtschaft/" data-nav-match="fuer/landwirtschaft/">Landwirtschaft</a>
+          <a href="../../../../fuer/mieter.html" data-nav-match="fuer/mieter.html">Wohnen</a>
+          <a href="../../../../fuer/rente.html" data-nav-match="fuer/rente.html">Rente</a>
+          <a href="../../../../fuer/wirkungseinkommen.html" data-nav-match="fuer/wirkungseinkommen.html">Wirkungseinkommen</a>
+          <a href="../../../../fuer/akademie.html" data-nav-match="fuer/akademie.html">Akademie</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Wirkungsfelder</h3>
+      <div class="footer-nav-links">
+          <a href="../../../../wirkungsfelder/" data-nav-match="wirkungsfelder/">Alle Wirkungsfelder</a>
+          <a href="../../../../wirkungsfelder/bildung/" data-nav-match="wirkungsfelder/bildung/">Bildung</a>
+          <a href="../../../../wirkungsfelder/gesundheit-pflege/" data-nav-match="wirkungsfelder/gesundheit-pflege/">Gesundheit &amp; Pflege</a>
+          <a href="../../../../wirkungsfelder/klima-energie-ressourcen/" data-nav-match="wirkungsfelder/klima-energie-ressourcen/">Klima, Energie &amp; Ressourcen</a>
+          <a href="../../../../wirkungsfelder/produkte-konsum/" data-nav-match="wirkungsfelder/produkte-konsum/">Produkte &amp; Konsum</a>
+          <a href="../../../../wirkungsfelder/wirtschaft-unternehmen/" data-nav-match="wirkungsfelder/wirtschaft-unternehmen/">Wirtschaft &amp; Unternehmen</a>
+          <a href="../../../../wirkungsfelder/arbeit-einkommen/" data-nav-match="wirkungsfelder/arbeit-einkommen/">Arbeit &amp; Einkommen</a>
+          <a href="../../../../wirkungsfelder/finanzsystem-kapital/" data-nav-match="wirkungsfelder/finanzsystem-kapital/">Finanzsystem &amp; Kapital</a>
+          <a href="../../../../wirkungsfelder/staat-recht-demokratie/" data-nav-match="wirkungsfelder/staat-recht-demokratie/">Staat, Recht &amp; Demokratie</a>
+          <a href="../../../../wirkungsfelder/medien-oeffentlichkeit/" data-nav-match="wirkungsfelder/medien-oeffentlichkeit/">Öffentlichkeit &amp; Medien</a>
+          <a href="../../../../wirkungsfelder/wissenschaft-innovation-digitalisierung/" data-nav-match="wirkungsfelder/wissenschaft-innovation-digitalisierung/">Wissenschaft &amp; Innovation</a>
+          <a href="../../../../wirkungsfelder/wirkungsfinanzpolitik/" data-nav-match="wirkungsfelder/wirkungsfinanzpolitik/">Wirkungsfinanzpolitik</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Wirkungssteuerung</h3>
+      <div class="footer-nav-links">
+          <a href="../../../../wirkungssteuerung/" data-nav-match="wirkungssteuerung/">Überblick</a>
+          <a href="../../../../wirkungssteuerung/wirkungssteuer/" data-nav-match="wirkungssteuerung/wirkungssteuer/">Wirkungssteuer</a>
+          <a href="../../../../wirkungssteuerung/wirkungshaushalt/" data-nav-match="wirkungssteuerung/wirkungshaushalt/">Wirkungshaushalt</a>
+          <a href="../../../../wirkungsfelder/wirkungsfinanzpolitik/" data-nav-match="wirkungsfelder/wirkungsfinanzpolitik/">Wirkungsfinanzpolitik</a>
+          <a href="../../../../werkzeuge/woek-id-register/" data-nav-match="werkzeuge/woek-id-register/|woek-id-register/|register/">WÖk-ID Register</a>
+          <a href="../../../../werkzeuge/woek-ids/" data-nav-match="werkzeuge/woek-ids/|wirkungssteuerung/woek-ids/">WÖk-IDs</a>
+          <a href="../../../../werkzeuge/scorecards/" data-nav-match="werkzeuge/scorecards/|wirkungssteuerung/scorecards/">Scorecards</a>
+          <a href="../../../../werkzeuge/netto-wirkungs-index/" data-nav-match="werkzeuge/netto-wirkungs-index/">Netto-Wirkungs-Index</a>
+          <a href="../../../../begriffe/impact-of-investment/" data-nav-match="begriffe/impact-of-investment/">Impact-of-Investment</a>
+          <a href="../../../../werkzeuge/t-sroi/" data-nav-match="werkzeuge/t-sroi/">T-SROI</a>
+          <a href="../../../../werkzeuge/reverse-merit-order/" data-nav-match="werkzeuge/reverse-merit-order/|wirkungssteuerung/reverse-merit-order/">Reverse Merit Order</a>
+          <a href="../../../../werkzeuge/" data-nav-match="werkzeuge/">Alle Werkzeuge</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Öffentlicher Wirkungsraum</h3>
+      <div class="footer-nav-links">
+          <a href="../../../../oeffentlicher-wirkungsraum/" data-nav-match="oeffentlicher-wirkungsraum/">Übersicht</a>
+          <a href="../../../../wirkungsradar/" data-nav-match="wirkungsradar/">Wirkungsradar</a>
+          <a href="../../../../werkzeuge/faktencheck/" data-nav-match="werkzeuge/faktencheck/">WÖk-Wirkungscheck</a>
+          <a href="../../../../wirkungsradar/debattenkarten/" data-nav-match="wirkungsradar/debattenkarten/">Debattenkarten</a>
+          <a href="../../../../wirkungsradar/themen/" data-nav-match="wirkungsradar/themen/">Themenräume</a>
+          <a href="../../../../wirkungsradar/ursachen/" data-nav-match="wirkungsradar/ursachen/">Ursachen-Navigator</a>
+          <a href="../../../../wirkungsradar/antwort-playbooks/" data-nav-match="wirkungsradar/antwort-playbooks/">Antwort-Playbooks</a>
+          <a href="../../../../woek-ki/" data-nav-match="woek-ki/">WÖk-KI</a>
+          <a href="../../../../app/" data-nav-match="app/">WÖk-App</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Praxis &amp; Tools</h3>
+      <div class="footer-nav-links">
+          <a href="../../../../app/" data-nav-match="app/">WÖk-App</a>
+          <a href="../../../../erleben/" data-nav-match="erleben.html|erleben/">Interaktive Demos</a>
+          <a href="../../../../erleben/produktwirkungsrechner/" data-nav-match="erleben/produktwirkungsrechner/">Produktwirkungsrechner</a>
+          <a href="../../../../erleben/impact-controlling-rechner/" data-nav-match="erleben/impact-controlling-rechner/">Impact-Controlling-Rechner</a>
+          <a href="../../../../erleben/medienwirkungscheck/" data-nav-match="erleben/medienwirkungscheck/">Medienwirkungscheck</a>
+          <a href="../../../../erleben/unternehmens-wirkungscheck/" data-nav-match="erleben/unternehmens-wirkungscheck/">Unternehmens-Wirkungscheck</a>
+          <a href="../../../../erleben/wirkungsportfolio-generator/" data-nav-match="erleben/wirkungsportfolio-generator/">Wirkungsportfolio-Generator</a>
+          <a href="../../../../erleben/wohnwirkungsrechner/" data-nav-match="erleben/wohnwirkungsrechner/">Wohnwirkungsrechner</a>
+          <a href="../../../../erleben/wirkungsrenten-rechner/" data-nav-match="erleben/wirkungsrenten-rechner/">Wirkungsrenten-Rechner</a>
+          <a href="../../../../erleben/" data-nav-match="erleben/">Alle Demos</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Lernen</h3>
+      <div class="footer-nav-links">
+          <a href="../../../../lernen/" data-nav-match="lernen/">Lernportal</a>
+          <a href="../../../../akademie/" data-nav-match="akademie/">Akademie</a>
+          <a href="../../../../akademie/wirkungsfinanzpolitik/" data-nav-match="akademie/wirkungsfinanzpolitik/">Wirkungsfinanzpolitik</a>
+          <a href="../../../../akademie/wirkungsradar/" data-nav-match="akademie/wirkungsradar/">Wirkungsradar</a>
+          <a href="../../../../mein-wirkungsraum/" data-nav-match="mein-wirkungsraum/">Mein Wirkungsraum</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Bibliothek</h3>
+      <div class="footer-nav-links">
+          <a href="../../../../bibliothek/" data-nav-match="bibliothek/">Bibliothek</a>
+          <a href="../../../../journal/" data-nav-match="journal/|blog.html|blog/">Journal</a>
+          <a href="../../../../podcast/" data-nav-match="podcast/">Podcast</a>
+          <a href="../../../../referenz/" data-nav-match="referenz/">Online-Buch</a>
+          <a href="../../../../dokumente/" data-nav-match="dokumente/">Dokumente</a>
+          <a href="../../../../dokumente/wirkungsfinanzpolitik/" data-nav-match="dokumente/wirkungsfinanzpolitik/">Wirkungsfinanzpolitik-Aufsatz</a>
+          <a href="../../../../werkstatt/arbeitsbibliothek/" data-nav-match="werkstatt/arbeitsbibliothek/">Arbeitsbibliothek</a>
+          <a href="../../../../bibliothek/whitepaper-t-sroi/" data-nav-match="bibliothek/whitepaper-t-sroi/">Whitepaper</a>
+          <a href="../../../../wissen/working-papers/" data-nav-match="wissen/working-papers/">Working Papers</a>
+          <a href="../../../../werkstatt/gesetze/wirkungssteuergesetz/" data-nav-match="werkstatt/gesetze/">Gesetze</a>
+          <a href="../../../../werkstatt/leitlinien/wustg/" data-nav-match="werkstatt/leitlinien/">Leitlinien</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Mitmachen</h3>
+      <div class="footer-nav-links">
+          <a href="../../../../mitmachen.html" data-nav-match="mitmachen.html|mitmachen/">Mitmachen</a>
+          <a href="../../../../suche.html" data-nav-match="suche.html|suche/">Suche</a>
+          <a href="../../../../woek-ki/" data-nav-match="woek-ki/">WÖk-KI</a>
+          <a href="../../../../mein-wirkungsraum/" data-nav-match="mein-wirkungsraum/">Mein Wirkungsraum</a>
+          <a href="../../../../ueber.html" data-nav-match="ueber.html|ueber/">Über die WÖk</a>
+          <a href="../../../../impressum.html" data-nav-match="impressum.html|impressum/">Impressum</a>
+          <a href="../../../../datenschutz.html" data-nav-match="datenschutz.html|datenschutz/">Datenschutz</a>
+      </div>
+    </div>
+        </nav>
+        <nav class="footer-legal-nav" aria-label="Rechtliches" data-search-exclude>
+    <a href="../../../../journal/" data-nav-match="journal/|blog.html|blog/">Journal</a>
+    <a href="../../../../ueber.html" data-nav-match="ueber.html|ueber/|ueber-die-woek/|ueber-die-w-oek/">Über die Wirkungsökonomie</a>
+    <a href="../../../../impressum.html" data-nav-match="impressum.html|impressum/">Impressum</a>
+    <a href="../../../../datenschutz.html" data-nav-match="datenschutz.html|datenschutz/">Datenschutz</a>
+        </nav>
+        <p>© 2026 Natalie Weber - Wirkungsökonomie</p>
+      </div>
+    </footer>
+    <script src="../../../../assets/js/main.js?v=20260612-mobile-table-fix"></script>
+    
+  </body>
+</html>

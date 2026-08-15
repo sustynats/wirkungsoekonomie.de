@@ -1,0 +1,158 @@
+[
+  {
+    "Check": "Total WÖk-ID rows",
+    "Result": 621,
+    "Interpretation": "Vollständiger Import aus WOeK_Master_Items_final_v1.2.xlsx",
+    "Recommended_Action": "Weiter als öffentliches Forschungsregister verwenden"
+  },
+  {
+    "Check": "Rows with source_detail present",
+    "Result": 621,
+    "Interpretation": "Alle Zeilen haben eine Quellenfamilie",
+    "Recommended_Action": "Exakte Disclosure-/Paragraph-IDs ergänzen"
+  },
+  {
+    "Check": "Rows with original calculation logic present",
+    "Result": 621,
+    "Interpretation": "Alle Zeilen haben eine Berechnungslogik im Ausgangsregister",
+    "Recommended_Action": "Zähler/Nenner/Systemgrenze in v2.x weiter präzisieren"
+  },
+  {
+    "Check": "Original v1.2 scorecard rows with NA/error outputs",
+    "Result": 320,
+    "Interpretation": "Ausgangsproblem erkannt; v2.1 repariert die öffentliche Darstellung durch Status/Parsing/Benchmarklogik",
+    "Recommended_Action": "Keine NA/error outputs als öffentliches Register ausspielen"
+  },
+  {
+    "Check": "Numeric threshold rows parsed",
+    "Result": 495,
+    "Interpretation": "Diese Zeilen sind direkt formelbereit aus dem Schwellenstring",
+    "Recommended_Action": "Als Live-Rechner online nutzbar machen"
+  },
+  {
+    "Check": "Benchmark-relative / qualitative rows",
+    "Result": 126,
+    "Interpretation": "Diese Zeilen brauchen Benchmark- oder Kodierlogik statt Scheingenauigkeit",
+    "Recommended_Action": "Fachreview und Quellen für Kriterien ergänzen"
+  },
+  {
+    "Check": "Rows marked as non-compensation red line",
+    "Result": 210,
+    "Interpretation": "Rote Linien verhindern Durchschnittsschönrechnung",
+    "Recommended_Action": "RedLineScore automatisieren und auditierbar machen"
+  },
+  {
+    "Check": "Archetype count: higher_is_better_abs",
+    "Result": 191,
+    "Interpretation": "Verteilung der Bewertungslogiken",
+    "Recommended_Action": "Für jede Archetype-Gruppe eine Methodenkarte online bereitstellen"
+  },
+  {
+    "Check": "Archetype count: higher_is_better_pct",
+    "Result": 196,
+    "Interpretation": "Verteilung der Bewertungslogiken",
+    "Recommended_Action": "Für jede Archetype-Gruppe eine Methodenkarte online bereitstellen"
+  },
+  {
+    "Check": "Archetype count: higher_is_better_score",
+    "Result": 12,
+    "Interpretation": "Verteilung der Bewertungslogiken",
+    "Recommended_Action": "Für jede Archetype-Gruppe eine Methodenkarte online bereitstellen"
+  },
+  {
+    "Check": "Archetype count: lower_is_better_abs",
+    "Result": 129,
+    "Interpretation": "Verteilung der Bewertungslogiken",
+    "Recommended_Action": "Für jede Archetype-Gruppe eine Methodenkarte online bereitstellen"
+  },
+  {
+    "Check": "Archetype count: near_zero_better",
+    "Result": 70,
+    "Interpretation": "Verteilung der Bewertungslogiken",
+    "Recommended_Action": "Für jede Archetype-Gruppe eine Methodenkarte online bereitstellen"
+  },
+  {
+    "Check": "Archetype count: pue",
+    "Result": 9,
+    "Interpretation": "Verteilung der Bewertungslogiken",
+    "Recommended_Action": "Für jede Archetype-Gruppe eine Methodenkarte online bereitstellen"
+  },
+  {
+    "Check": "Archetype count: reg_limit",
+    "Result": 14,
+    "Interpretation": "Verteilung der Bewertungslogiken",
+    "Recommended_Action": "Für jede Archetype-Gruppe eine Methodenkarte online bereitstellen"
+  },
+  {
+    "Check": "Core field count: Arbeit & Fairness",
+    "Result": 73,
+    "Interpretation": "Thematische Abdeckung",
+    "Recommended_Action": "Als Filter im Online-Explorer anbieten"
+  },
+  {
+    "Check": "Core field count: Bildung & Kompetenzen",
+    "Result": 23,
+    "Interpretation": "Thematische Abdeckung",
+    "Recommended_Action": "Als Filter im Online-Explorer anbieten"
+  },
+  {
+    "Check": "Core field count: Biodiversität/Boden",
+    "Result": 27,
+    "Interpretation": "Thematische Abdeckung",
+    "Recommended_Action": "Als Filter im Online-Explorer anbieten"
+  },
+  {
+    "Check": "Core field count: Energie",
+    "Result": 35,
+    "Interpretation": "Thematische Abdeckung",
+    "Recommended_Action": "Als Filter im Online-Explorer anbieten"
+  },
+  {
+    "Check": "Core field count: Gesundheit & Sicherheit",
+    "Result": 27,
+    "Interpretation": "Thematische Abdeckung",
+    "Recommended_Action": "Als Filter im Online-Explorer anbieten"
+  },
+  {
+    "Check": "Core field count: Governance & Demokratie",
+    "Result": 124,
+    "Interpretation": "Thematische Abdeckung",
+    "Recommended_Action": "Als Filter im Online-Explorer anbieten"
+  },
+  {
+    "Check": "Core field count: Innovation & Infrastruktur",
+    "Result": 9,
+    "Interpretation": "Thematische Abdeckung",
+    "Recommended_Action": "Als Filter im Online-Explorer anbieten"
+  },
+  {
+    "Check": "Core field count: Klima",
+    "Result": 36,
+    "Interpretation": "Thematische Abdeckung",
+    "Recommended_Action": "Als Filter im Online-Explorer anbieten"
+  },
+  {
+    "Check": "Core field count: Querschnitt",
+    "Result": 139,
+    "Interpretation": "Thematische Abdeckung",
+    "Recommended_Action": "Als Filter im Online-Explorer anbieten"
+  },
+  {
+    "Check": "Core field count: Ressourcen & Kreislauf",
+    "Result": 48,
+    "Interpretation": "Thematische Abdeckung",
+    "Recommended_Action": "Als Filter im Online-Explorer anbieten"
+  },
+  {
+    "Check": "Core field count: Stadt/Wohnen/Infrastruktur",
+    "Result": 19,
+    "Interpretation": "Thematische Abdeckung",
+    "Recommended_Action": "Als Filter im Online-Explorer anbieten"
+  },
+  {
+    "Check": "Core field count: Wasser",
+    "Result": 61,
+    "Interpretation": "Thematische Abdeckung",
+    "Recommended_Action": "Als Filter im Online-Explorer anbieten"
+  }
+]

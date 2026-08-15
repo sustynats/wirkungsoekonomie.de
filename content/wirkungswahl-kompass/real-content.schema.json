@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wirkungsoekonomie.de/schemas/wirkungswahlkompass-real-content-v1.1.json",
+  "title": "Wirkungswahl-Kompass real content",
+  "type": "object",
+  "required": ["meta", "forbiddenFields", "dimensions", "fields", "parties", "programs", "evidence", "globalRedLines", "resultCopy", "answerScale", "importanceScale", "questions"],
+  "additionalProperties": false,
+  "properties": {
+    "meta": {"type": "object", "required": ["product", "mode", "dataVersion", "methodologyVersion", "contentVersion", "status", "claim", "demo"], "additionalProperties": true},
+    "forbiddenFields": {"type": "array", "items": {"type": "string"}, "minItems": 5},
+    "dimensions": {"type": "array", "minItems": 8, "maxItems": 8, "items": {"$ref": "#/$defs/idLabel"}},
+    "fields": {"type": "array", "minItems": 9, "maxItems": 9, "items": {"type": "object", "required": ["id", "topic"], "additionalProperties": false, "properties": {"id": {"type": "string", "pattern": "^[A-I]$"}, "topic": {"type": "string", "minLength": 1}}}},
+    "parties": {"type": "array", "minItems": 7, "maxItems": 7, "items": {"type": "object", "required": ["id", "name", "code"], "additionalProperties": false, "properties": {"id": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$"}, "name": {"type": "string"}, "code": {"type": "string", "pattern": "^[A-G]$"}}}},
+    "programs": {"type": "array", "minItems": 7, "maxItems": 7, "items": {"type": "object", "required": ["id", "party_id", "title", "year", "url", "checked_at"], "additionalProperties": false, "properties": {"id": {"type": "string", "pattern": "^P0[1-7]$"}, "party_id": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$"}, "title": {"type": "string"}, "year": {"const": 2025}, "url": {"type": "string", "format": "uri", "pattern": "^https://"}, "checked_at": {"type": "string", "format": "date"}}}},
+    "evidence": {"type": "array", "minItems": 28, "maxItems": 28, "items": {"type": "object", "required": ["id", "institution", "topic", "url", "checked_at"], "additionalProperties": false, "properties": {"id": {"type": "string", "pattern": "^E(0[1-9]|1[0-9]|2[0-8])$"}, "institution": {"type": "string"}, "topic": {"type": "string"}, "url": {"type": "string", "format": "uri", "pattern": "^https://"}, "checked_at": {"type": "string", "format": "date"}}}},
+    "globalRedLines": {"type": "array", "minItems": 9, "items": {"type": "string", "minLength": 1}},
+    "resultCopy": {"type": "object", "required": ["onboarding", "results", "sources"], "additionalProperties": false, "properties": {"onboarding": {"$ref": "#/$defs/stringArray"}, "results": {"$ref": "#/$defs/stringArray"}, "sources": {"$ref": "#/$defs/stringArray"}}},
+    "answerScale": {"type": "array", "minItems": 5, "maxItems": 5},
+    "importanceScale": {"type": "array", "minItems": 4, "maxItems": 4},
+    "questions": {"type": "array", "minItems": 36, "maxItems": 36, "items": {"$ref": "#/$defs/question"}}
+  },
+  "$defs": {
+    "idLabel": {"type": "object", "required": ["id", "label"], "additionalProperties": false, "properties": {"id": {"type": "string"}, "label": {"type": "string", "minLength": 1}}},
+    "stringArray": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "band": {"type": "array", "minItems": 2, "maxItems": 2, "prefixItems": [{"type": "integer", "minimum": -3, "maximum": 3}, {"type": "integer", "minimum": -3, "maximum": 3}]},
+    "partyPosition": {
+      "type": "object",
+      "required": ["party_id", "stance", "editorial_value", "position_status", "einordnung", "kurzbegruendung", "source_id", "pdf_page", "confidence", "review_required"],
+      "additionalProperties": false,
+      "properties": {
+        "party_id": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$"},
+        "stance": {"type": ["integer", "null"], "minimum": -2, "maximum": 2},
+        "editorial_value": {"type": ["integer", "null"], "minimum": -2, "maximum": 2},
+        "position_status": {"enum": ["clear_support", "leaning_support", "mixed", "not_evidenced", "leaning_opposition", "clear_opposition"]},
+        "einordnung": {"type": "string"},
+        "kurzbegruendung": {"type": "string"},
+        "source_id": {"type": ["string", "null"]},
+        "pdf_page": {"type": ["string", "null"]},
+        "confidence": {"enum": ["high", "medium", "low"]},
+        "review_required": {"type": "boolean"}
+      }
+    },
+    "impactAssessment": {
+      "type": "object",
+      "required": ["status", "effect_path", "time_effect", "affected_groups", "evidence_grade", "uncertainty", "bands", "positive_potentials", "risks", "red_lines_text", "evidence_ids", "indicators", "microcopy"],
+      "additionalProperties": false,
+      "properties": {
+        "status": {"const": "modelled_potential"},
+        "effect_path": {"$ref": "#/$defs/stringArray"},
+        "time_effect": {"type": "string", "minLength": 1},
+        "affected_groups": {"type": "string", "minLength": 1},
+        "evidence_grade": {"enum": ["high", "medium", "low"]},
+        "uncertainty": {"enum": ["high", "medium", "low"]},
+        "bands": {"type": "object", "minProperties": 4, "additionalProperties": {"$ref": "#/$defs/band"}},
+        "positive_potentials": {"$ref": "#/$defs/stringArray"},
+        "risks": {"$ref": "#/$defs/stringArray"},
+        "red_lines_text": {"type": "string", "minLength": 1},
+        "evidence_ids": {"type": "array", "minItems": 1, "items": {"type": "string", "pattern": "^E\\d{2}$"}},
+        "indicators": {"type": "string", "minLength": 1},
+        "microcopy": {"type": "array", "minItems": 3, "maxItems": 3, "items": {"type": "string"}}
+      }
+    },
+    "question": {
+      "type": "object",
+      "required": ["id", "field", "topic", "title", "thesis", "explanation", "dimensions", "referenceFrame", "baseline", "answer_scale", "importance_scale", "party_positions", "impact_assessment"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {"type": "string", "pattern": "^Q(0[1-9]|[12][0-9]|3[0-6])$"},
+        "field": {"type": "string", "pattern": "^[A-I]$"},
+        "topic": {"type": "string"},
+        "title": {"type": "string"},
+        "thesis": {"type": "string"},
+        "explanation": {"type": "string"},
+        "dimensions": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "referenceFrame": {"type": "string"},
+        "baseline": {"type": "string"},
+        "answer_scale": {"type": "array", "const": [-2, -1, 0, 1, 2]},
+        "importance_scale": {"type": "array", "const": [0, 1, 2, 3]},
+        "party_positions": {"type": "array", "minItems": 7, "maxItems": 7, "items": {"$ref": "#/$defs/partyPosition"}},
+        "impact_assessment": {"$ref": "#/$defs/impactAssessment"}
+      }
+    }
+  }
+}

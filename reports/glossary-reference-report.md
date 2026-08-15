@@ -1,0 +1,363 @@
+# Glossar-Referenzindex Report
+
+- Generated: 2026-06-11T10:07:08.148Z
+- Content pages scanned: 1025
+- Glossary terms indexed: 1485
+- Warnings: 614
+
+## Stichproben
+
+### Salienz (salienz)
+
+- 597 · defined · Warum der Rückhalt für Klimaschutz sinkt - und was das über unsere Demokratie verrät · /blog/linkedin/2026-02-11-warum-der-ruckhalt-fur-klimaschutz-sinkt-und-was-das-uber-unsere-demokratie-verrat.html · manual override +500, related proximity 1, 4 occurrences, blog +25
+- 171 · strong · Wirkungsräume gestalten · /wirkungsfelder/medien-oeffentlichkeit/wirkungsraeume-gestalten-hosting/ · related proximity 6, 2 occurrences, field +35
+- 166 · strong · Methoden & Werkzeuge der Wirkungsökonomie | Tool-Landschaft 2.0 · /werkzeuge/ · related proximity 3, 2 occurrences, method +60
+- 153 · strong · Nicht der Stein verändert die Welt. Sondern die Wellen. - Journal der Wirkungsökonomie · /blog/wellen-tiefen-modell-oeffentliche-kommunikation.html · related proximity 5, 1 occurrence, blog +25
+
+### Wirkung (wirkung)
+
+- 1784 · defined · Kapitel 10 - Wirkung - Wirkungsökonomie Online · /referenz/kapitel-010-wirkung/ · manual override +1000, title match, h1 match, h2 match, h3 match, lead match, definition pattern, related proximity 5, 254 occurrences, book-chapter +80
+- 1104 · defined · Was ist Wirkungsökonomie? · /wirkungsoekonomie.html · manual override +650, h2 match, lead match, definition pattern, related proximity 4, 42 occurrences, page +20
+- 754 · defined · Kapitel 1 - Meine Reise zur Wirkung - Wirkungsökonomie Online · /referenz/kapitel-001-meine-reise-zur-wirkung/ · title match, h1 match, h2 match, h3 match, lead match, definition pattern, related proximity 3, 138 occurrences, book-chapter +80
+- 709 · defined · Wirkung statt Weltbild - eine wirkungsökonomische Analyse des AfD-Regierungsprogramms · /blog/linkedin/2026-01-28-wirkung-statt-weltbild-eine-wirkungsokonomische-analyse-des-afd-regierungsprogramms.html · title match, h1 match, h2 match, h3 match, lead match, definition pattern, related proximity 3, 95 occurrences, blog +25
+- 679 · defined · Journalismus: Wirkung statt Klicks | Medien & Öffentlichkeit · /wirkungsfelder/medien-oeffentlichkeit/journalismus-wirkung-statt-klicks/ · title match, h1 match, h2 match, h3 match, lead match, definition pattern, related proximity 2, 32 occurrences, field +35
+- 674 · defined · Die fünf Wellen öffentlicher Wirkung | Bibliothek der Wirkungsökonomie · /bibliothek/fuenf-wellen-oeffentlicher-wirkung/ · title match, h1 match, h2 match, lead match, definition pattern, related proximity 4, 275 occurrences, page +20
+- 674 · defined · Kapitel 30 - Von Wirkung zu Messung - Wirkungsökonomie Online · /referenz/kapitel-030-von-wirkung-zu-messung/ · title match, h1 match, h2 match, lead match, definition pattern, related proximity 2, 93 occurrences, book-chapter +80
+- 674 · defined · Kapitel 92 - Handel, Lieferketten und globale Wirkung - Wirkungsökonomie Online · /referenz/kapitel-092-handel-lieferketten-und-globale-wirkung/ · title match, h1 match, h2 match, lead match, definition pattern, related proximity 2, 106 occurrences, book-chapter +80
+
+### Wirkungspotenzial (wirkungspotenzial)
+
+- 784 · defined · Kapitel 11 - Wirkungspotenzial - Wirkungsökonomie Online · /referenz/kapitel-011-wirkungspotenzial/ · title match, h1 match, h2 match, h3 match, lead match, definition pattern, related proximity 7, 98 occurrences, book-chapter +80
+- 649 · defined · Wirkungspotenzial: Warum Fakten allein nicht wirken - Journal der Wirkungsökonomie · /blog/wirkungspotenzial-warum-fakten-allein-nicht-wirken.html · title match, h1 match, h2 match, lead match, definition pattern, related proximity 3, 10 occurrences, blog +25
+- 494 · defined · Die neue Ordnung des Wohlstands - Volltext - Wirkungsökonomie Online · /referenz/volltext/ · h2 match, h3 match, definition pattern, related proximity 8, 412 occurrences, book +70
+- 434 · defined · Kapitel 12 - Handlung, Unterlassen und Rückkopplung - Wirkungsökonomie Online · /referenz/kapitel-012-handlung-unterlassen-und-rueckkopplung/ · h3 match, definition pattern, related proximity 6, 14 occurrences, book-chapter +80
+- 434 · defined · Kapitel 13 - Wirkungsträger, Wirkungsempfänger, Wirkungsräume - Wirkungsökonomie Online · /referenz/kapitel-013-wirkungstraeger-wirkungsempfaenger-wirkungsraeume/ · h3 match, definition pattern, related proximity 6, 10 occurrences, book-chapter +80
+- 434 · defined · Kapitel 16 - Das Begriffssystem der Wirkungsökonomie - Wirkungsökonomie Online · /referenz/kapitel-016-das-begriffssystem-der-wirkungsoekonomie/ · h3 match, definition pattern, related proximity 6, 22 occurrences, book-chapter +80
+- 434 · defined · Kapitel 17 - Wirkungsökonomie im Vergleich · /referenz/kapitel-017-wirkungsoekonomie-im-vergleich/ · h3 match, definition pattern, related proximity 5, 12 occurrences, book-chapter +80
+- 434 · defined · Kapitel 18 - Wirkungsordnungen - Wirkungsökonomie Online · /referenz/kapitel-018-wirkungsordnungen/ · h3 match, definition pattern, related proximity 6, 30 occurrences, book-chapter +80
+
+### Wirkungssteuer (wirkungssteuer)
+
+- 754 · defined · Kapitel 38 - Das WUStG und die Produktwirkungssteuer - Wirkungsökonomie Online · /referenz/kapitel-038-das-wustg-und-die-produktwirkungssteuer/ · title match, h1 match, h2 match, h3 match, lead match, definition pattern, related proximity 3, 27 occurrences, book-chapter +80
+- 739 · defined · Wirkungsumsatzsteuer / Produktwirkungssteuer | Produkte & Konsum · /wirkungsfelder/produkte-konsum/wirkungsumsatzsteuer-produktwirkungssteuer/ · title match, h1 match, h2 match, h3 match, lead match, definition pattern, related proximity 4, 42 occurrences, field +35
+- 614 · defined · Wirkungsumsatzsteuer · /werkzeuge/wirkungsumsatzsteuer/ · title match, h1 match, h2 match, h3 match, lead match, related proximity 3, 20 occurrences, method +60
+- 494 · defined · Die neue Ordnung des Wohlstands - Volltext - Wirkungsökonomie Online · /referenz/volltext/ · h2 match, h3 match, definition pattern, related proximity 9, 130 occurrences, book +70
+- 489 · defined · Detailkonzept Wirkungsumsatzsteuer im Rechtsrahmen · /werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungsumsatzsteuer-rechtsrahmen/ · title match, h1 match, lead match, related proximity 3, 13 occurrences, whitepaper +55
+- 489 · defined · Detailkonzepte Produkte & Konsum / Wirkungsumsatzsteuer · /wirkungsfelder/produkte-konsum/detailkonzepte/ · title match, h1 match, h3 match, lead match, related proximity 2, 8 occurrences, field +35
+- 489 · defined · Einzeldossier Wirkungsumsatzsteuer / Produktwirkungssteuer · /wirkungsfelder/produkte-konsum/dossiers/wirkungsumsatzsteuer/ · title match, h1 match, lead match, related proximity 3, 12 occurrences, whitepaper +55
+- 489 · defined · Einzeldossier Wirkungsumsatzsteuer im Rechtsrahmen · /werkstatt/dossiers/staat-recht-demokratie/wirkungsumsatzsteuer-rechtsrahmen/ · title match, h1 match, lead match, related proximity 3, 8 occurrences, whitepaper +55
+
+### Demokratie (demokratie)
+
+- 784 · defined · Kapitel 28 - Demokratie als Wirkungsraum - Wirkungsökonomie Online · /referenz/kapitel-028-demokratie-als-wirkungsraum/ · title match, h1 match, h2 match, h3 match, lead match, definition pattern, related proximity 9, 130 occurrences, book-chapter +80
+- 739 · defined · Demokratie, Rechtsstaat und SDG+ als Wirkungsraum | Staat, Recht & Demokratie · /wirkungsfelder/staat-recht-demokratie/demokratie-rechtsstaat-sdgplus-wirkungsraum/ · title match, h1 match, h2 match, h3 match, lead match, definition pattern, related proximity 8, 68 occurrences, field +35
+- 679 · defined · Soziale Resilienz gegen Verhetzung - Ein wirkungsökonomisches Gesamtkonzept für Demokratie, Gesellschaft und Zukunftsfähigkeit · /blog/linkedin/2026-01-09-soziale-resilienz-gegen-verhetzung-ein-wirkungsokonomisches-gesamtkonzept-fur-demokratie-gesells.html · title match, h1 match, h2 match, h3 match, lead match, definition pattern, related proximity 2, 22 occurrences, blog +25
+- 654 · defined · Detailkonzept: Geopolitische Wirkungsrisiken, Desinformation und Demokratie · /portale/internationale-ordnung-globalisierung-geopolitik/geopolitische-wirkungsrisiken-desinformation-demokratie/ · title match, h1 match, h3 match, lead match, definition pattern, related proximity 6, 48 occurrences, page +20
+- 619 · defined · Demokratie-, Medien- und Wirkungskompetenz | Bildung & Wirkungsschule · /wirkungsfelder/bildung/demokratie-medien-wirkungskompetenz/ · title match, h1 match, h2 match, h3 match, lead match, related proximity 6, 54 occurrences, field +35
+- 619 · defined · Spaltung überwinden: Warum Demokratie gesunde Wirkungsräume braucht - Journal der Wirkungsökonomie · /blog/spaltung-ueberwinden-demokratie-wirkungsraeume.html · title match, h1 match, h2 match, lead match, definition pattern, related proximity 2, 26 occurrences, blog +25
+- 619 · defined · Staat, Recht & Demokratie · /wirkungsfelder/staat-recht-demokratie/ · title match, h1 match, h2 match, h3 match, lead match, related proximity 8, 40 occurrences, field +35
+- 589 · defined · Gesamtdossier Staat, Recht & Demokratie · /werkstatt/dossiers/staat-recht-demokratie/ · title match, h1 match, h2 match, lead match, related proximity 8, 30 occurrences, whitepaper +55
+
+## Warnungen
+
+- term has no content references: ac-laden
+- term has no content references: ad-hoc-laden
+- term has no content references: adverse-selection
+- term has no content references: advocacy-organisation
+- term has no content references: affektheuristik
+- term has no content references: akkumulator
+- term has no content references: allgemeines-gleichgewicht
+- term has no content references: allmendeproblem
+- term has no content references: alltagsrassismus
+- term has no content references: anaerobe-vergaerung
+- term has no content references: anarchokapitalismus
+- term has no content references: ankereffekt
+- term has no content references: anlagenpass
+- term has no content references: anpassungskapazitaet
+- term has no content references: anschlusskosten
+- term has no content references: anschlussleistung
+- term has no content references: anti-slapp-richtlinie
+- term has no content references: antiziganismus
+- term has no content references: arbeitspreis
+- term has no content references: art-2-euv-werte-der-europaeischen-union
+- term has no content references: art-3-euv-nachhaltige-entwicklung-europas
+- term has no content references: art-11-aeuv-umweltintegrationsprinzip
+- term has no content references: art-37-eu-grundrechtecharta-umweltschutz
+- term has no content references: art-191-aeuv-vorsorge-praeventions-und-verursacherprinzip
+- term has no content references: astroturfing
+- term has no content references: atlas-network
+- term has no content references: aeussere-loops
+- term has no content references: austeritaet
+- term has no content references: autokratisierung
+- term has no content references: automatisierungsrendite
+- term has no content references: autoritaeres-wirkungspotenzial
+- term has no content references: backend-ladeinfrastruktur
+- term has no content references: backup-kapazitaet
+- term has no content references: banalitaet-des-boesen
+- term has no content references: bandluecke
+- term has no content references: baseline-verschiebung
+- term has no content references: basisinnovation
+- term has no content references: batteriealterung
+- term has no content references: batterielebenszyklus
+- term has no content references: batteriemanagementsystem
+- term has no content references: batteriemodul
+- term has no content references: batteriepack
+- term has no content references: batteriepass
+- term has no content references: batterierohstoffe
+- term has no content references: batteriezelle
+- term has no content references: baukostenzuschuss
+- term has no content references: bedeutung-als-gebrauch
+- term has no content references: bedrohungsverarbeitung
+- term has no content references: belohnungslernen
+- term has no content references: bestaetigungsfehler
+- term has no content references: betriebsemissionen
+- term has no content references: bewegungs-ngo
+- term has no content references: bidirektionales-laden
+- term has no content references: bilanzraum
+- term has no content references: biochemische-rohstoffgewinnung
+- term has no content references: biologischer-naehrstoff
+- term has no content references: black-mass
+- term has no content references: blauer-wasserstoff
+- term has no content references: blei-saeure-batterie
+- term has no content references: brennstoffkette
+- term has no content references: business-ecosystem
+- term has no content references: business-model-canvas
+- term has no content references: c-rate
+- term has no content references: capture-price
+- term has no content references: carbon-budget
+- term has no content references: carbon-credits
+- term has no content references: carbonfaserverstaerkter-kunststoff
+- term has no content references: cbam-co2-grenzausgleichssystem
+- term has no content references: ccs-ladestecker
+- term has no content references: chademo
+- term has no content references: chicago-school
+- term has no content references: circular-economy-butterfly-model
+- term has no content references: zirkularitaetsindikator
+- term has no content references: clean-industrial-deal
+- term has no content references: climate-neutral-claim
+- term has no content references: co2-preis
+- term has no content references: co2e
+- term has no content references: coase-theorem
+- term has no content references: conflict-minerals-regulation
+- term has no content references: contracts-for-difference
+- term has no content references: cooling-off-regel
+- term has no content references: corporate-capture
+- term has no content references: csddd-corporate-sustainability-due-diligence-directive
+- term has no content references: cso
+- term has no content references: dark-money
+- term has no content references: dc-laden
+- term has no content references: debiasing
+- term has no content references: degradation-batterie
+- term has no content references: dekohaerenz
+- term has no content references: demand-response
+- term has no content references: demokratiefeindlichkeit
+- term has no content references: demokratieskepsis
+- term has no content references: demokratische-resilienz-gegen-extremismus
+- term has no content references: demokratischer-sozialismus
+- term has no content references: demokratisches-mandat
+- term has no content references: depotladen
+- term has no content references: design-thinking
+- term has no content references: destruktive-vertrauensbindung
+- term has no content references: destruktives-narrativ
+- term has no content references: dezentralisierung-von-macht
+- term has no content references: direktrecycling-batterie
+- term has no content references: direktstrom
+- term has no content references: dissonanzreduktion
+- term has no content references: donor-dependency
+- term has no content references: drehtuer-effekt
+- term has no content references: dsa-digital-services-act
+- term has no content references: dunkelflaute
+- term has no content references: dynamischer-stromtarif
+- term has no content references: dynamisches-lastmanagement
+- term has no content references: eeg
+- term has no content references: effektivitaet-vs-effizienz
+- term has no content references: eichrecht-ladeinfrastruktur
+- term has no content references: einparteienstaat
+- term has no content references: einspeisemanagement
+- term has no content references: einspeiseverguetung
+- term has no content references: elektorale-autokratie
+- term has no content references: elektromobilitaetsdienstleister
+- term has no content references: emergenz-des-klassischen
+- term has no content references: endlager
+- term has no content references: energiedichte
+- term has no content references: energieflussstrom
+- term has no content references: energiemanagementsystem
+- term has no content references: energietraegerstrom
+- term has no content references: energy-only-markt
+- term has no content references: epistemische-gemeinschaft
+- term has no content references: erlernte-hilflosigkeit
+- term has no content references: ermoeglichende-taetigkeit
+- term has no content references: ernst-von-glasersfeld
+- term has no content references: esef
+- term has no content references: esrs-themenstandards
+- term has no content references: eu-climate-law
+- term has no content references: eu-nachhaltigkeitsverfassungsrahmen
+- term has no content references: europaeisches-klimagesetz
+- term has no content references: evolutionstheorie
+- term has no content references: evolutorischer-unternehmer
+- term has no content references: expertinnenlobbyismus
+- term has no content references: extraktiver-kapitalismus
+- term has no content references: faktenreaktanz
+- term has no content references: faschismus
+- term has no content references: faschistoid
+- term has no content references: faserverbundwerkstoff
+- term has no content references: feminisierung-von-armut
+- term has no content references: feministische-oekonomie
+- term has no content references: feministische-transformation
+- term has no content references: feministische-wirtschaftspolitik
+- term has no content references: fernwirktechnik
+- term has no content references: feststoffbatterie
+- term has no content references: finanzmarktkapitalismus
+- term has no content references: finanzschuld
+- term has no content references: fit-for-55
+- term has no content references: flexibilitaetsmarkt
+- term has no content references: fossiles-kraftwerk
+- term has no content references: framekontrolle
+- term has no content references: frankfurter-schule
+- term has no content references: fremdenfeindlichkeit
+- term has no content references: frequenzhaltung
+- term has no content references: fuehrerkult
+- term has no content references: fuehrerprinzip
+- term has no content references: gaskraftwerk
+- term has no content references: gedaechtniskonsolidierung
+- term has no content references: gedankenlosigkeit
+- term has no content references: gemeineigentum
+- term has no content references: gender-care-gap
+- term has no content references: gender-data-gap
+- term has no content references: gender-mainstreaming
+- term has no content references: genossenschaftsblindheit
+- term has no content references: geschlossene-autokratie
+- term has no content references: gesichtswahrende-korrektur
+- term has no content references: gestrandeter-kredit
+- term has no content references: gesundheitskasse
+- term has no content references: gewaltenteilungsabbau
+- term has no content references: gewerbespeicher
+- term has no content references: glaeserne-klippe
+- term has no content references: glasfaserverstaerkter-kunststoff
+- term has no content references: gleichstellungsfolgenabschaetzung
+- term has no content references: global-warming-potential
+- term has no content references: glossar-backlink-audit
+- term has no content references: glossar-publizierungsprozess
+- term has no content references: goldene-wirkungsregel
+- term has no content references: gongo
+- term has no content references: grassroots-bewegung
+- term has no content references: grauer-wasserstoff
+- term has no content references: grenzkraftwerk
+- term has no content references: grenznutzen
+- term has no content references: grundlast
+- term has no content references: gruener-kapitalismus
+- term has no content references: gruenstrom
+- term has no content references: habitatfragmentierung
+- term has no content references: habitatverlust
+- term has no content references: handlungsfenster
+- term has no content references: heimspeicher
+- term has no content references: heritage-foundation
+- term has no content references: herkunftsframe
+- term has no content references: herkunftstransparenz
+- term has no content references: hfcs-hydrofluorocarbons
+- term has no content references: hochspannung
+- term has no content references: hoechstspannung
+- term has no content references: hotspot-analyse
+- term has no content references: hpc-charger
+- term has no content references: human-rights-impact-assessment
+- term has no content references: hybridregime
+- term has no content references: hydrometallurgie
+- term has no content references: illiberale-demokratie
+- term has no content references: ilo
+- term has no content references: immanuel-kant
+- term has no content references: impact-fit
+- term has no content references: industrielle-dekonstruktion
+- term has no content references: innere-loops
+- term has no content references: innovativer-unternehmer
+- term has no content references: insetting
+- term has no content references: institutioneller-rassismus
+- term has no content references: institutionendelegitimierung
+- term has no content references: institutionenoekonomik
+- term has no content references: intertemporale-freiheit
+- term has no content references: investitionsschuld
+- term has no content references: jobs-to-be-done
+- term has no content references: john-dewey
+- term has no content references: kannibalisierungseffekt
+- term has no content references: kapazitaetsmarkt
+- term has no content references: kapazitaetsreserve
+- term has no content references: kaskadennutzung
+- term has no content references: kernenergie
+- term has no content references: kernkraft-neubau
+- term has no content references: keynesianismus
+- term has no content references: klassischer-liberalismus
+- term has no content references: kleptokratie
+- term has no content references: kognitive-belastung
+- term has no content references: kommunikative-souveraenitaet
+- term has no content references: kommunistischer-staat
+- term has no content references: komplexitaetsmanagement
+- term has no content references: komponentenrueckgewinnung
+- term has no content references: kondratieff-zyklus
+- term has no content references: konsumentensouveraenitaet
+- term has no content references: konzessionsabgabe
+- term has no content references: koerperliche-selbstbestimmung
+- term has no content references: kraft-waerme-kopplung
+- term has no content references: kreative-rekonstruktion
+- term has no content references: kreislaufblindheit
+- term has no content references: kreislaufgrad
+- term has no content references: kritische-energieinfrastruktur
+- term has no content references: kundenanlage
+- term has no content references: kurzzeitspeicher
+- term has no content references: ladeeinrichtung
+- term has no content references: ladehub
+- term has no content references: ladeleistung
+- term has no content references: ladepark
+- term has no content references: ladepark-mittelspannungsanschluss
+- term has no content references: ladepunkt
+- term has no content references: ladepunktbetreiber
+- term has no content references: ladesaeule
+- term has no content references: laffer-kurve
+- term has no content references: lastgang
+- term has no content references: lebenszyklus-emissionen
+- term has no content references: lebenszyklusinventar
+- term has no content references: lebenszykluswirkungsabschaetzung
+- term has no content references: legislative-footprint
+- term has no content references: legitimer-lobbyismus
+- term has no content references: leistungsdichte
+- term has no content references: leistungsfaktor
+- term has no content references: leistungspreis
+- term has no content references: lernebenen
+- term has no content references: lernender-unternehmer
+- term has no content references: lfp-batterie
+- term has no content references: liberalismus
+- term has no content references: libertarismus
+- term has no content references: lieferkettenbelasteter-kredit
+- term has no content references: limited-assurance
+- term has no content references: lineare-wirtschaft
+- term has no content references: linker-faschismus
+- term has no content references: linksextremismus
+- term has no content references: lithium-ionen-batterie
+- term has no content references: lithium-titanat-batterie
+- term has no content references: lokale-energie-als-wirkungsinfrastruktur
+- term has no content references: ludwig-wittgenstein
+- term has no content references: macht-und-gewalt
+- term has no content references: machtdezentralisierung
+- term has no content references: majoritarismus
+- term has no content references: marktpraemie
+- term has no content references: material-footprint
+- term has no content references: mediengleichschaltung
+- term has no content references: megawatt-charging-system
+- term has no content references: mehrheitsprinzip
+- term has no content references: mental-load
+- term has no content references: mentales-modell
+- term has no content references: messung-in-der-quantenmechanik
+- term has no content references: messwandler
+- term has no content references: messwandlerschrank
+- term has no content references: metakommunikation
+- term has no content references: militaerdiktatur
+- term has no content references: minarchismus
+- term has no content references: minutenreserve
+- term has no content references: mittelspannung
+- term has no content references: mittelspannungsschaltanlage
+- term has no content references: mobilitaetsarmut
+- term has no content references: modellblindheit
+- term has no content references: moderner-patriotismus
+- term has no content references: momentanreserve
+- term has no content references: monetarismus
+- term has no content references: moral-hazard
+- term has no content references: muslimfeindlichkeit
+- ... 314 weitere Warnungen

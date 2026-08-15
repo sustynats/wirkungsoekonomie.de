@@ -1,0 +1,44 @@
+# Bibliografie der Wirkungsökonomie
+
+Stand: 2026-05-22
+
+- **Humberto R. Maturana; Francisco J. Varela** (1980): *Autopoiesis and Cognition: The Realization of the Living*. D. Reidel. https://link.springer.com/book/10.1007/978-94-009-8947-4
+- **Humberto R. Maturana; Francisco J. Varela** (1987): *The Tree of Knowledge: The Biological Roots of Human Understanding*. Shambhala. 
+- **Heinz von Foerster** (1981): *Observing Systems*. Intersystems Publications. 
+- **Heinz von Foerster** (2003): *Understanding Understanding: Essays on Cybernetics and Cognition*. Springer. 
+- **Stafford Beer** (1972): *Brain of the Firm*. Allen Lane. 
+- **Stafford Beer** (1974): *Designing Freedom*. CBC Learning Systems. 
+- **Gregory Bateson** (1972): *Steps to an Ecology of Mind*. University of Chicago Press. 
+- **Gregory Bateson** (1979): *Mind and Nature: A Necessary Unity*. Dutton. 
+- **Frederic Vester** (1999): *Die Kunst vernetzt zu denken*. DVA. 
+- **Donella H. Meadows; Dennis L. Meadows; Jørgen Randers; William W. Behrens III** (1972): *The Limits to Growth*. Club of Rome / Universe Books. 
+- **Donella H. Meadows** (1999): *Leverage Points: Places to Intervene in a System*. The Sustainability Institute. https://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/
+- **Donella H. Meadows** (2008): *Thinking in Systems: A Primer*. Chelsea Green Publishing. 
+- **Peter F. Drucker** (1954): *The Practice of Management*. Harper & Row. 
+- **Joseph A. Schumpeter** (1911): *Theorie der wirtschaftlichen Entwicklung*. Duncker & Humblot. 
+- **Joseph A. Schumpeter** (1942): *Capitalism, Socialism and Democracy*. Harper & Brothers. 
+- **Nikolai D. Kondratieff** (1925): *The Major Economic Cycles*. Voprosy Konjunktury. 
+- **Nikolai D. Kondratieff** (1935): *The Long Waves in Economic Life*. Review of Economic Statistics. https://www.jstor.org/stable/1884756
+- **Adam Smith** (1776): *An Inquiry into the Nature and Causes of the Wealth of Nations*. W. Strahan and T. Cadell. 
+- **Adam Smith** (1759): *The Theory of Moral Sentiments*. A. Millar. 
+- **Elinor Ostrom** (1990): *Governing the Commons: The Evolution of Institutions for Collective Action*. Cambridge University Press. 
+- **Amartya Sen** (1999): *Development as Freedom*. Oxford University Press. 
+- **Martha C. Nussbaum** (2011): *Creating Capabilities: The Human Development Approach*. Harvard University Press. 
+- **Herman E. Daly** (1977): *Steady-State Economics*. W. H. Freeman. 
+- **Nicholas Georgescu-Roegen** (1971): *The Entropy Law and the Economic Process*. Harvard University Press. 
+- **European Union** (2022): *Directive (EU) 2022/2464 as regards corporate sustainability reporting*. European Union. https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022L2464
+- **European Commission** (2023): *Commission Delegated Regulation (EU) 2023/2772: European Sustainability Reporting Standards*. European Union. https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R2772
+- **European Union** (2020): *Regulation (EU) 2020/852 on the establishment of a framework to facilitate sustainable investment*. European Union. https://eur-lex.europa.eu/eli/reg/2020/852/oj/eng
+- **European Union** (2022): *Regulation (EU) 2022/2065 on a Single Market For Digital Services*. European Union. https://eur-lex.europa.eu/eli/reg/2022/2065/oj
+- **United Nations General Assembly** (2015): *Transforming our world: the 2030 Agenda for Sustainable Development*. United Nations. https://sdgs.un.org/2030agenda
+- **United Nations Statistical Commission** (2024): *Global indicator framework for the Sustainable Development Goals and targets*. United Nations. https://unstats.un.org/sdgs/indicators/indicators-list/
+- **IPCC** (2023): *Climate Change 2023: Synthesis Report*. IPCC. https://www.ipcc.ch/report/ar6/syr/
+- **IPBES** (2019): *Global Assessment Report on Biodiversity and Ecosystem Services*. IPBES. https://ipbes.net/global-assessment
+- **Richardson et al.** (2023): *Earth beyond six of nine planetary boundaries*. Science Advances. https://www.science.org/doi/10.1126/sciadv.adh2458
+- **Global Reporting Initiative** (2021): *GRI Universal Standards 2021*. GRI. https://www.globalreporting.org/standards/
+- **IFRS Foundation** (2023): *IFRS S1 and IFRS S2 Sustainability Disclosure Standards*. IFRS Foundation. https://www.ifrs.org/issued-standards/ifrs-sustainability-standards-navigator/
+- **WRI / WBCSD** (2004): *The Greenhouse Gas Protocol: A Corporate Accounting and Reporting Standard*. WRI / WBCSD. https://ghgprotocol.org/corporate-standard
+- **Taskforce on Nature-related Financial Disclosures** (2023): *Recommendations of the Taskforce on Nature-related Financial Disclosures*. TNFD. https://tnfd.global/publication/recommendations-of-the-taskforce-on-nature-related-financial-disclosures/
+- **Kate Raworth** (2017): *Doughnut Economics: Seven Ways to Think Like a 21st-Century Economist*. Random House. https://www.kateraworth.com/doughnut/
+- **Tim Jackson** (2009): *Prosperity without Growth: Economics for a Finite Planet*. Earthscan. 
+- **Joseph Stiglitz; Amartya Sen; Jean-Paul Fitoussi** (2009): *Report by the Commission on the Measurement of Economic Performance and Social Progress*. Commission on the Measurement of Economic Performance and Social Progress. https://ec.europa.eu/eurostat/documents/8131721/8131772/Stiglitz-Sen-Fitoussi-Commission-report.pdf

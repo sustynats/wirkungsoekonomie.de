@@ -1,0 +1,620 @@
+Wirkungsökonomie Website 2.0
+Überarbeitungs- und Perfektionierungsanweisung für die Tool-Landschaft
+Optik · Funktion · Inhalt · Verständlichkeit · Qualitätssicherung
+CodeX-Briefing / Version 2.0
+KernauftragDie bestehende Tool-Landschaft der Website wird nicht reduziert, sondern verständlicher, schöner, eindeutiger, nutzbarer und vertrauenswürdiger gemacht. Inhalte bleiben erhalten. Was unklar, doppelt oder zu abstrakt ist, wird besser einsortiert, erklärt, markiert oder zusammengeführt - nicht gelöscht.
+Leitgedanke: Erst Alltag, dann Begriff. Erst Nutzerfrage, dann Methode. Erst verstehen, dann ausprobieren. Erst Wirkungspfad, dann Score.
+Stand: 05.06.2026 · Für Umsetzung durch CodeX
+Inhalt
+1. Vorschalt-Anweisung an CodeX
+2. Zielbild: Was die Tool-Landschaft 2.0 leisten muss
+3. Nicht verhandelbare Grundsätze
+4. Begrifflicher und methodischer Contract der WÖk
+5. Diagnose der aktuellen Tool-Landschaft
+6. Neue Informationsarchitektur
+7. Öffentlichkeitslogik: Welche Tools nach vorne gehören
+8. Tool-Gruppen, Zusammenführungen und Umbenennungen
+9. Fehlende Tools und neue UX-Bausteine
+10. Einheitliches Tool-Seitentemplate
+11. Armin-Maiwald-Erklärstandard
+12. Designsystem und UI-Komponenten
+13. Funktionale Anforderungen und Datenmodell
+14. Quellen-, Status-, Glossar- und Hoverlogik
+15. Inhaltliche Qualitätsregeln gegen KI-Standard-Sprech
+16. Konkrete Umsetzungsanweisungen je Tool-Familie
+17. Tests, QA, Accessibility und Content-Erhalt
+18. Deployment und Abschlussbericht
+Anhänge: Migration, Microcopy, DoD, Code-Komponenten
+1. Vorschalt-Anweisung an CodeX
+Diese Anweisung zuerst lesenDieses Dokument ist als verbindliches Umsetzungsbriefing für die Perfektionierung aller Tool-, Methoden-, Rechner-, Demo-, Register- und Governance-Seiten der Website wirkungsoekonomie.de zu verwenden. Es ergänzt das Website-2.0-Relaunch-Briefing und den Debatten-Kompass-Textmaster. Bei Konflikten gilt: Begriffsleitfaden > Content-Erhalt > Nutzerverständnis > Designsystem > technische Convenience.
+1.1 Copy-Paste-Auftrag für CodeX
+AUFTRAG AN CODEX: TOOL-LANDSCHAFT DER WIRKUNGSÖKONOMIE AUF VERSION 2.0 BRINGENBitte setze dieses Word-Dokument als verbindliche Überarbeitungs- und Perfektionierungsanweisung für alle Tool-, Methoden-, Rechner-, Demo-, Register-, Kompass-, Wirkungsradar-, Scanner- und Governance-Seiten der Website www.wirkungsoekonomie.de um.Ziel ist NICHT die Reduktion von Inhalten. Ziel ist bessere Verständlichkeit, klare UX, einheitliches Design, korrekte Wirkungslogik, nachvollziehbare Quellen, klare Statuskennzeichnung und bessere Antwortqualität.Kein bestehender Inhalt darf verloren gehen. Wenn etwas redundant, unfertig, zu abstrakt oder falsch einsortiert ist, dann: inventarisieren, verschieben, zusammenführen, als Labor/Werkstatt markieren, intern verlinken oder archivieren - aber nicht löschen.Alle Erklärungen für nichtwissenschaftliche Zielgruppen folgen dem Armin-Maiwald-Prinzip: erst Alltag, dann Problem, dann Beobachtung, dann Begriff, dann Methode, dann Wirkungspfad, dann Grenzen. Verständlich, konkret, logisch, nicht kindlich.Die Tool-Landschaft muss künftig unterscheiden zwischen:1. Orientierung & Einstieg,2. öffentlichen Demos und Rechnern,3. Methoden- und Bewertungsbausteinen,4. Governance, Datenqualität und Prüfung,5. Labor/Werkstatt/Forschungsmodellen,6. Referenz/Archiv.Jede Tool-Seite erhält ein einheitliches Template:Hero, Nutzerfrage, Was ist das?, Was ist die heutige Blindstelle?, Was gibst du ein?, Was bekommst du heraus?, Was verändert sich dadurch?, Wirkpfad, Folgencheck, Datenqualität/Status, Grenzen/Schutzlinien, Quellen, Glossar, verwandte Inhalte und nächster Schritt.Vor Live-Deployment sind Content-Inventar, Migrationsmatrix, Linkcheck, Snapshot-Tests, Statusprüfung, Glossarprüfung, Barrierefreiheitscheck und Smoke-Test durchzuführen. Version 1.5 wird erst nach erfolgreicher QA koordiniert durch Version 2.0 ersetzt.
+2. Zielbild: Was die Tool-Landschaft 2.0 leisten muss
+ZielbildDie Tool-Landschaft soll nicht mehr wie eine Liste sehr unterschiedlicher Dinge wirken, sondern wie ein nutzerzentriertes Wirkungssystem: Ich habe eine Frage. Ich finde den richtigen Zugang. Ich verstehe, was das Tool tut. Ich sehe, welche Wirkung sichtbar wird. Ich erkenne Grenzen, Quellen und Status. Ich kann tiefer einsteigen, ohne von Begriffen erschlagen zu werden.
+2.1 Ergebnis aus Nutzer:innensicht
+Neue Besucher:innen verstehen in maximal 90 Sekunden, dass nicht jedes Element ein interaktiver Rechner ist.
+Fachnutzer:innen finden Scorecards, NWI, T-SROI, WÖk-IDs, Register, Governance und Quellen sauber geordnet.
+CodeX/Entwicklung erhält ein einheitliches Komponentenmodell, wiederverwendbare Layouts und Tests gegen Strukturdrift.
+Redaktion bekommt ein Seitentemplate und Sprachregeln, damit keine KI-Standardtexte oder Begriffslawinen entstehen.
+Öffentlichkeit erkennt zuverlässig: Demo ist Demo, Methode ist Methode, Register ist Register, Rechtsmodell ist Modell, keine Personenbewertung.
+2.2 Die neue Grundfrage jeder Tool-Seite
+Was hilft mir dieses Werkzeug zu verstehen oder besser zu entscheiden - und welche reale Veränderung würde daraus folgen?
+2.3 Wirkungsökonomischer Anspruch
+Jedes Tool muss Wirkung nicht nur als Ergebniswert zeigen, sondern als Pfad: Auslöser -> Wirkungspotenzial -> Zustandsveränderung -> Bewertung -> Rückkopplung -> neue Entscheidung.
+Jedes Tool muss Nebenwirkungen, Zielkonflikte, Datenqualität und Schutzlinien sichtbar machen.
+Jedes Tool muss erklären, was sich in Preisen, Kapital, Beschaffung, Management, Öffentlichkeit, Haushalt, Förderung oder Verhalten verändern würde.
+Jedes Tool muss klären, ob es eine Demo, Methode, Kennzahl, Registerlogik, Governance-Instanz, Kompass oder Forschungsmodell ist.
+3. Nicht verhandelbare Grundsätze
+3.1 Kein Content-Verlust
+Harter ContractKeine Glossar-Begriffe, Veröffentlichungen, Journal-Beiträge, Bibliothekseinträge, Debattenkarten, Demos, PDFs, Methodenseiten, Registereinträge oder alten relevanten URLs dürfen ersatzlos gelöscht werden. Optimierung bedeutet Strukturierung, nicht Ausdünnung.
+Bei Unklarheit wird ein Inhalt in Referenz, Archiv, Labor/Werkstatt oder Methodik verschoben.
+Bei Dopplung wird eine kanonische Seite bestimmt und die andere Seite weitergeleitet oder als vertiefender Kontext verlinkt.
+Bei veralteten Aussagen wird ein Status ergänzt: Altstand, Arbeitsfassung, ersetzt durch, in Prüfung, Archiv.
+Bei fehlenden Quellen wird nicht gelöscht, sondern der Status transparent gemacht: Quellenprüfung offen.
+Alte URLs bekommen Redirects oder Canonical-Hinweise. Keine 404 für relevante Inhalte.
+3.2 Keine Personenbewertung, kein Social Credit, keine automatische Entscheidung
+Alle Demos, Rechner und Checks zeigen modellhafte Wirkungslogik, keine amtliche Bewertung.
+Kein Tool darf einzelne Bürger:innen, Kinder, Lehrkräfte, Migrant:innen, Medienakteur:innen oder politische Personen bewerten oder ranken.
+Tools dürfen Entscheidungen vorbereiten, aber nicht ersetzen.
+Wo individuelle Daten genutzt würden, muss die Seite klar sagen: In der Demo keine personenbezogene Auswertung.
+3.3 Verständlichkeit ohne Verflachung
+Öffentliche Seiten: Armin-Maiwald-Prinzip, kurze Einstiege, Beispiele, Alltagssprache, klare Bilder.
+Fachseiten: Tiefe erhalten, aber mit Einstiegskasten, Glossar-Hovern, Wirkpfad und Zusammenfassung ergänzen.
+Wissenschaftliche Publikationen, Bücher und Whitepaper bleiben vollständig. Sie bekommen Orientierung, nicht Kürzung.
+Juristische und steuerliche Modelle werden als Modell-/Arbeitsfassung markiert, nicht als geltendes Recht behauptet.
+4. Begrifflicher und methodischer Contract der WÖk
+Führender BegriffsrahmenFür alle Tool-Seiten gilt der führende Begriffsleitfaden der Wirkungsökonomie. Wirkung ist neutral und relational. Wirkung bedeutet tatsächliche Veränderung von Zuständen. Bewertet wird am Referenzrahmen SDGs, Agenda 2030 und SDG+. Zielgröße ist positive Netto-Wirkung für Mensch, Planet und Demokratie.
+4.1 Schreibweise und Präzision
+Ungenau / vermeiden
+Präzise / verwenden
+Warum
+Wirkung ist gut.
+Positive Wirkung zahlt auf SDGs, Agenda 2030 und SDG+ ein.
+Wirkung ist neutral; die Bewertung gibt Richtung.
+Wir maximieren Wirkung.
+Wir richten auf positive Netto-Wirkung für Mensch, Planet und Demokratie aus.
+Sonst klingt Wirkung automatisch positiv und beliebig.
+Das Narrativ wirkt demokratiefeindlich.
+Das Narrativ öffnet Resonanzräume, die Vertrauen, Diskursfähigkeit und demokratische Stabilität schwächen können.
+Bei Sprache meist Wirkungspotenzial, nicht eingetretene Wirkung.
+Das Tool entscheidet.
+Das Tool bereitet Entscheidungen vor und macht Wirkpfade, Datenqualität und Grenzen sichtbar.
+Menschliche Verantwortung und demokratische Legitimation bleiben.
+Score = Wahrheit.
+Score = modellhafte, daten- und statusabhängige Bewertung.
+Keine Scheingenauigkeit, keine endgültige Wahrheit.
+4.2 Pflichtbegriffe mit Hover-Glossar
+Wirkung
+Wirkungspotenzial
+Wirkungsrisiko
+Wirkpfad / Wirkungspfad
+Wirkungsbewertung
+Netto-Wirkung
+Positive Netto-Wirkung
+Wirkungsraum
+Wirkungsgrenze
+Reverse Merit Order / Nichtkompensationsprinzip
+WÖk-ID
+Scorecard
+FinalScore
+NWI
+T-SROI
+Datenqualität & Assurance
+Wirkungsrückkopplung
+SDG+
+4.3 Methodische Trennung NWI / T-SROI
+Nicht vermischenNWI ist die operative Netto-Wirkungskennzahl. T-SROI bewertet Transformationswirkung und systemische Hebelwirkung. Ein Tool darf diese Unterscheidung nicht verwischen. NWI fragt: Wie ist die Netto-Wirkung? T-SROI fragt: Verändert diese Wirkung Strukturen, Pfade, Standards, Kapitalflüsse oder Resilienz?
+5. Diagnose der aktuellen Tool-Landschaft
+5.1 Kernproblem
+Die aktuelle Website ist fachlich reich, aber für viele Nutzer:innen noch uneindeutig. Unter Methoden & Werkzeuge stehen Begriffe, Dateninstrumente, Bewertungslogiken, Kennzahlen, Managementinstrumente, Governance-Bausteine und Demos nebeneinander. Das ist inhaltlich korrekt, aber aus UX-Sicht erklärungsbedürftig.
+5.2 Was dadurch unklar wird
+Ist das ein Tool zum Anklicken oder ein Methodikbegriff?
+Ist das Ergebnis eine Demo, eine Kennzahl, ein Modell oder eine geprüfte Bewertung?
+Was muss ich eingeben? Was bekomme ich heraus?
+Welche Veränderung würde das Tool in der Realität bewirken?
+Welche Daten sind echt, modellhaft, geschätzt oder noch nicht geprüft?
+Welche Tools gehören zusammen und welche sind nur interne Bausteine?
+Was ist öffentlich relevant und was gehört in Labor/Werkstatt oder Referenz?
+5.3 Was schon gut ist und behalten werden muss
+Clusterlogik: Die aktuelle Seite trennt bereits acht Cluster. Diese Struktur ist als interne Ordnung nützlich, aber nicht automatisch der beste Einstieg für Laien.
+Schutzlinien: Demos sind als modellhaft, nicht amtlich, keine Beratung und keine Personenbewertung markiert. Diese Linie muss visuell stärker und einheitlicher werden.
+WÖk-Kompass-Prinzip: Erst Alltag, dann Fachbegriff. Das ist der richtige Erklärstandard und muss auf alle Tools übertragen werden.
+Erleben-Hub: Nutzerfrage, heutige Blindstelle, was das Tool zeigt und was das Ergebnis bedeutet: Diese Struktur ist sehr gut und muss standardisiert werden.
+6. Neue Informationsarchitektur
+Neue OberlogikDie Website soll nicht mehr primär fragen: Welche Cluster gibt es? Sie soll fragen: Was willst du verstehen, prüfen oder entscheiden? Darunter bleibt die fachliche Clusterlogik erhalten.
+6.1 Öffentliche Haupteinstiege
+Einstieg
+Nutzerfrage
+Zielseiten / Tools
+Wirkung verstehen
+Was bedeutet Wirkung überhaupt?
+WÖk-Kompass, Wissenskarten, Glossar, So wirkt WÖk
+Narrativ prüfen
+Worauf antworte ich eigentlich?
+Debatten-Kompass, Medienwirkungscheck, Sprach-/Framing-Analyse
+Produkt prüfen
+Warum ist billig oft nicht wirklich billig?
+Produktwirkungsrechner, Produktscorecards, Apfelbeispiel, Lieferkette
+Organisation prüfen
+Wie wirkt ein Unternehmen, Projekt oder Programm?
+Unternehmens-Wirkungscheck, Impact-Controlling-Rechner, NWI, T-SROI
+Wohnen / Kommune prüfen
+Was macht Wohnen bezahlbar, gesund und klimafähig?
+Wohnwirkungscheck, Resilienz-Radar Kommune, Sozialraumprofil
+Kapital prüfen
+Skaliert Kapital Wirkung oder Risiko?
+Kapitalwirkungscheck, Portfolio-Wirkungsrating, Wirkungskredit, Wirkungsfonds
+Tiefe Methodik
+Wie wird gemessen, geprüft, versioniert?
+WÖk-IDs, Scorecards, Datenqualität, Wirkungsrat, Register, Audit
+6.2 Fünf sichtbare Ebenen
+Ebene
+Was gehört hinein?
+UX-Regel
+1. Orientierung
+WÖk-Kompass, Debatten-Kompass, WÖk-Scanner/Tool-Finder, Einstiegskarten
+Maximal einfache Sprache, direkte Fragen, schnelle Antwort.
+2. Öffentliche Demos
+Produkt, Medien, Impact, Unternehmen, Wohnen, Bildung, Resilienz
+Interaktiv, Status klar, Demo-Werte sichtbar, Ergebnis erklärt.
+3. Methoden
+Wirkung, NWI, T-SROI, Scorecards, Reverse Merit Order, WÖk-IDs
+Kein Rechner-Versprechen. Erklären, warum der Baustein gebraucht wird.
+4. Governance & Vertrauen
+Wirkungsrat, Register, Audit, Datenqualität, Review, Missbrauchsschutz
+Transparenz, Prüfstatus, Korrekturwege, keine Expertokratie.
+5. Labor/Werkstatt
+WStG/WUStG/WEstG, Rente, Einkommen, Automatisierung, Fonds, Hybrid-Risk, KI-Risiko
+Klar als Modellraum; kein fertiges Gesetz, keine Beratung, keine Entscheidung.
+7. Öffentlichkeitslogik: Welche Tools nach vorne gehören
+7.1 Key Features für öffentliche Kommunikation
+Debatten-Kompass: Key-Feature für Narrative, Mythen, Frames, Transformation, Rechtsruck und demokratische Resilienz. Er ist kein klassischer Faktencheck, sondern ein Wirkungscheck für öffentliche Debatten.
+WÖk-Kompass: Zentraler Einstieg, um Wirkung, positive Netto-Wirkung, Rückkopplung und Schutzregeln zu verstehen.
+WÖk-Scanner / Tool-Finder: Soll die Brücke von Nutzerfrage zu passendem Werkzeug sein. Wenn der Scanner existiert, ihn zur zentralen Einstiegslogik ausbauen.
+Produktwirkungsrechner: Beste Demo für Preiswahrheit, Scorecard, Reverse Merit Order und Wirkungssteuer-Logik.
+Medienwirkungscheck: Brücke zwischen SDG+, öffentlicher Resonanz, Medienqualität und Debatten-Kompass.
+Impact-Controlling-Rechner: Für Unternehmen, Projekte, Kapital und Verwaltung, aber mit klarer NWI/T-SROI-Trennung.
+Wohnwirkungscheck: Alltagsnahes Feld mit Mensch, Planet und Demokratie: Bezahlbarkeit, Gesundheit, Energie, Teilhabe, Vertrauen.
+7.2 Nicht prominent als fertige Tools kommunizieren
+Wirkungsrente, Wirkungseinkommen, WEstG, Automatisierungsdividende, Maschinenwertschöpfungsbeitrag, Wirkungsfonds-Simulator, Kapital-/Vermögens-/Erbschaftschecks: sichtbar behalten, aber als Labor/Werkstatt/Forschungsmodell markieren.
+Hybrid-Risk-Radar, KI-Wirkungsrisiko, Desinformations-Risikocheck, Plattform-Wirkungscheck: keine Zensur- oder Kontrollästhetik; immer als Risiko-/Resonanzanalyse ohne Personenbewertung erklären.
+WStG/WUStG/WEstG: keine Steuerberatung und kein geltendes Recht behaupten; als Modellarchitektur erklären.
+8. Tool-Gruppen, Zusammenführungen und Umbenennungen
+8.1 Zusammenführen ohne Löschen
+RegelWenn mehrere Tools dasselbe Problem aus verschiedenen Blickwinkeln bearbeiten, bleiben alle Inhalte erhalten, aber die öffentliche Navigation zeigt eine Suite mit Modi. Einzelmodule bleiben über Deep Links und Methodik erreichbar.
+Bisherige Einzeltools
+Neue öffentliche Bündelung
+Umsetzungsanweisung
+Wohnwirkungsrechner, Stranded-Asset-Check Wohnen, Vermieter-Check
+Wohnwirkungscheck
+Eine Seite mit Modi: Mieter:in, Vermieter:in, Kommune/Bestand. Alte URLs weiterleiten oder als Modulanker erhalten.
+Automatisierungsdividenden-Rechner, Automatisierungs- und Wirkungseinkommensrechner
+Automatisierung & Teilhabe-Labor
+Ein Labor mit Modulen: Beitragslücke, Maschinenwertschöpfung, Dividende, Wirkungseinkommen, Fonds. Klarer Modellstatus.
+Medienwirkungscheck, Sprach-/Framing-Analyse, Plattform-Wirkungscheck, Desinformations-Risikocheck, Diskursrisiko-Radar, Hybrid-Risk-Radar
+Öffentlichkeits- und Diskurswirkungs-Suite
+Debatten-Kompass für Narrative; Medienwirkungscheck für einzelne Inhalte; Plattform/Risiko als Fachmodule.
+Wirkungsschule-Check, Wirkungsförderungs-Check, Fach-Zukunft-Modulgenerator, Wirkungsportfolio-Generator, Bildungswirkungsindex, Schulraum-Wirkungscheck
+Bildungs-Wirkungswerkstatt
+Ein öffentlicher Einstieg, darunter Module. Keine Bewertung von Kindern oder Lehrkräften.
+Kapitalwirkungscheck, Portfolio-Wirkungsrating, Wirkungskredit, Wirkungsfonds, Versicherbarkeits-/Resilienzcheck
+Kapital-Wirkungs-Suite
+Klare Trennung: keine Anlage-, Kredit- oder Versicherungsberatung; Wirkung, Risiko und Transformation als Lernmodell.
+Wirkungsrat, Wirkungsregister, Wirkungsaudit, Review-/Versionierungslogik, Missbrauchsschutz, Anti-Greenwashing, Anti-Impact-Washing
+Qualität, Prüfung & demokratische Sicherung
+Als Vertrauensinfrastruktur erzählen, nicht als Kontrollapparat.
+8.2 Umbenennungsregeln
+Keine kryptischen Kürzel im Einstieg. Kürzel erst nach Erklärung verwenden.
+Aus Nutzerperspektive benennen: 'Produktwirkung verstehen' statt 'FinalScore-Demo'.
+Fachbegriff als Untertitel: 'Produktwirkungsrechner - Scorecard, Reverse Merit Order und Preisrückkopplung'.
+Rechtsmodelle immer mit 'Modell' oder 'Arbeitsfassung' kennzeichnen.
+Risiko-Tools nicht dramatisieren; nüchtern, systemisch, demokratisch sensibel formulieren.
+9. Fehlende Tools und neue UX-Bausteine
+9.1 Tool-Finder / WÖk-Scanner als Hauptzugang
+PflichtbausteinDer WÖk-Scanner muss als Tool-Finder funktionieren: Nutzer:innen wählen eine Frage und werden zum passenden Tool geführt. Kein Suchformular allein. Kein Begriffsregister als erster Einstieg.
+Nutzerfrage
+Route
+Ich habe eine politische Aussage gehört.
+Debatten-Kompass / Sprach- und Framing-Analyse
+Ich will einen Text oder Medienbeitrag prüfen.
+Medienwirkungscheck
+Ich will ein Produkt verstehen.
+Produktwirkungsrechner / Produktscorecards
+Ich will ein Unternehmen oder Projekt prüfen.
+Unternehmens-Wirkungscheck / Impact-Controlling-Rechner
+Ich will wissen, was Kapital bewirkt.
+Kapitalwirkungscheck / Kapital-Wirkungs-Suite
+Ich will eine Kommune oder Infrastruktur prüfen.
+Resilienz-Radar Kommune / Kritische-Infrastruktur-Monitor
+Ich will nur den Begriff verstehen.
+WÖk-Kompass / Glossar
+9.2 Neu zu bauen oder als Standardmodul einzuführen
+Wirkpfad-Visualisierer: Zeigt für jedes Tool: Auslöser -> Wirkungspotenzial -> Zustandsveränderung -> Bewertung -> Rückkopplung -> neue Entscheidung.
+Folgencheck-Modul: Erste, zweite und dritte Ordnung: direkte Folge, Anschlussfolge, System-/Anreizänderung.
+Datenqualitätsampel: Quelle, Aktualität, Messwert/Schätzung, Modellwert/Realwert, Reviewstatus, Unsicherheit.
+Zielkonflikt-Navigator: Zeigt Zielkonflikte, Schutzgrenzen, Trade-offs, Nebenwirkungen und demokratische Entscheidungspunkte.
+Vorher-Nachher-Rückkopplung: Was passiert im heutigen System? Was ändert sich mit WÖk? Welche Nebenwirkungen entstehen?
+Pilot-Assistent: Für Unternehmen, Kommunen, Schulen, Medienhäuser: Wie starte ich einen WÖk-Pilot?
+Glossar-Hover-Layer: Kurzer Tooltip + Link zu Glossar + 'einfach/fachlich/systemisch' Umschalter.
+10. Einheitliches Tool-Seitentemplate
+Verbindliches SeitentemplateJede Tool-, Demo-, Rechner-, Check- und Methodenseite muss dieselbe Orientierung bieten. Die inhaltliche Tiefe kann variieren, aber die Reihenfolge und Grundbausteine müssen wiedererkennbar sein.
+1.  Hero: Name, Kurzzweck, Statusbadges, Zielgruppe, Schutzlinie.
+2.  Nutzerfrage: Die reale Frage, mit der Menschen kommen.
+3.  Was ist das? Ein Satz ohne Fachjargon.
+4.  Heutige Blindstelle: Was sieht das heutige System nicht?
+5.  Was gibst du ein? Inputs, Beispielwerte, Datenquellen, Demo-/Realstatus.
+6.  Was bekommst du heraus? Score, Profil, Pfad, Risikomatrix, Empfehlung zur Prüfung - keine automatische Entscheidung.
+7.  Was verändert sich dadurch? Rückkopplung in Preis, Steuer, Kapital, Management, Öffentlichkeit, Haushalt, Beschaffung oder Verhalten.
+8.  Wirkpfad: Visualisierung der Entstehung von Wirkung.
+9.  Folgencheck: Direkte Folgen, Anschlussfolgen, systemische Folgen.
+10.  Kritische Fragen / Zielkonflikte: Was darf man berechtigt fragen?
+11.  Datenqualität und Status: Demo, Arbeitsfassung, Methodik, Live, Public Research, in Prüfung, quellengeprüft.
+12.  Schutzlinien: Keine Beratung, nicht amtlich, keine Personenbewertung, keine automatische Entscheidung, Unsicherheit sichtbar.
+13.  Methodik: NWI, T-SROI, Scorecards, Reverse Merit Order, WÖk-ID usw. mit Links.
+14.  Quellen: Interne WÖk-Quellen und externe Standards/Faktenquellen getrennt.
+15.  Verwandte Inhalte: Kompass, Glossar, Bibliothek, Debattenkarten, Veröffentlichungen, Demos.
+16.  Nächster Schritt: Ausprobieren, vertiefen, Pilot starten, Methodik lesen, Narrativ einreichen.
+10.1 Hero-Statusbadges
+Badge
+Bedeutung
+Design
+Live
+Inhalt öffentlich stabil, aber weiter lernfähig.
+Grün/Teal, ruhig.
+Demo
+Modellhafte Anwendung, keine amtliche Bewertung.
+Blau mit Info-Icon.
+Arbeitsfassung
+Inhalt nutzbar, aber redaktionell/methodisch noch nicht final.
+Gelb/Amber.
+Public Research
+Forschungsregister oder offener Methodikstand.
+Violett/Indigo oder Blau-Grau.
+In Vorbereitung
+Platzhalter oder Roadmap, noch kein fertiges Tool.
+Grau.
+Quellenprüfung offen
+Fakten/Quellen noch nicht final geprüft.
+Amber + Hinweis.
+Nicht amtlich
+Keine staatliche Bewertung/Zertifizierung.
+Immer sichtbar bei Demos/Rechtsmodellen.
+Keine Personenbewertung
+Kein Social Credit, keine Rangliste von Personen.
+Immer sichtbar bei Medien/Bildung/Migration.
+11. Armin-Maiwald-Erklärstandard
+DefinitionArmin-Maiwaldisierung bedeutet: komplexe Dinge so erklären, dass man den Mechanismus versteht, ohne den Anspruch zu verlieren. Nicht kindlich. Nicht banal. Nicht belehrend. Sondern anschaulich, logisch, alltagsnah, mit einem klaren 'Aha'.
+11.1 Erklärformel
+1. Stell dir eine konkrete Alltagssituation vor.2. Zeige, was heute sichtbar ist.3. Zeige, was heute unsichtbar bleibt.4. Benenne das Problem erst danach fachlich.5. Erkläre, was das Tool macht.6. Zeige den Wirkpfad.7. Zeige, was sich dadurch verändern würde.8. Zeige Grenzen, Datenqualität und Schutzlinien.9. Gib einen nächsten sinnvollen Schritt.
+11.2 Beispiel: Produktwirkungsrechner
+Vorher: abstrakt
+Nachher: Armin-Maiwald-Stil
+Der Produktwirkungsrechner operationalisiert Scorecards auf Basis von WÖk-IDs und Reverse Merit Order.
+Ein T-Shirt kann billig sein, weil jemand anderes die Rechnung bezahlt: die Näherin, der Fluss, das Klima oder später die Krankenkasse. Der Produktwirkungsrechner zeigt, welche dieser Kosten im Preis fehlen - und wie sich der Preis ändern würde, wenn Wirkung mitgerechnet wird.
+Der NWI verdichtet multiple Impactdimensionen.
+Ein einzelner guter Wert reicht nicht. Ein T-Shirt wird nicht fair, nur weil die Verpackung recycelt ist, wenn in der Lieferkette Kinderarbeit steckt. Darum schaut die WÖk auf das schwächste kritische Feld.
+11.3 Erklärungsebenen
+Ebene
+Länge
+Ziel
+Einfach
+3-5 Sätze
+Sofort verstehen. Alltag, Bild, Kernlogik.
+Fachlich
+1-3 Abschnitte
+Begriffe, Methode, Daten, Grenzen.
+Systemisch
+1 Vertiefungsblock
+Wirkungen 1./2./3. Ordnung, Rückkopplung, Zielkonflikte.
+Quellen
+kompakt
+Interne WÖk-Referenz + externe Fakten/Standards.
+11.4 Sprachverbote
+Keine generischen KI-Einstiege: 'In der heutigen Zeit stehen wir vor komplexen Herausforderungen'.
+Keine Worthülsen: ganzheitlich, nachhaltig, zukunftsfähig, resilient, Transformation - ohne konkreten Mechanismus.
+Keine moralisierenden Sätze: 'Wir alle müssen nur ...'.
+Keine scheinbare Objektivität durch Scores ohne Datenqualität.
+Keine Fachwortlawinen im ersten Absatz.
+Keine Überlegenheitsrhetorik gegenüber ESG, Gemeinwohlökonomie, Donut-Ökonomie. Besser: Anschluss und Abgrenzung sauber erklären.
+12. Designsystem und UI-Komponenten
+12.1 Visuelles Ziel
+Ruhig, präzise, vertrauenswürdig, nicht aktivistisch überhitzt.
+Mehr Editorial-/Wissenssystem als Startup-Landingpage.
+Klare Card-Logik, ausreichender Weißraum, gute Lesbarkeit, klare Hierarchie.
+Status und Schutzlinien sichtbar, aber nicht defensiv oder überwarnend.
+Komplexität darf vorhanden sein, muss aber gestaffelt werden.
+12.2 Typografie
+Primär: moderne Sans-Serif über System-Font-Stack oder bereits vorhandene Webfont-Lösung. Keine neuen Fontdateien ohne Lizenzprüfung einbauen.
+Headlines: größer, klar, nicht zu eng. Hero-H1 44-64px Desktop, 34-42px Mobile.
+Body: 18-20px Desktop, mindestens 16px Mobile, Zeilenhöhe 1.55-1.7.
+Fachbegriffe und Kürzel nicht typografisch überbetonen; Toolnamen und Nutzerfragen priorisieren.
+Lange wissenschaftliche Texte: Lesebreite 68-78 Zeichen, Inhaltsverzeichnis und Sprungmarken.
+12.3 Layout-Grid
+Bereich
+Layout-Regel
+Hero
+Max-width 1120-1240px, zwei Spalten nur wenn rechts wirklich Mehrwert entsteht. Statusbadges direkt unter Titel.
+Tool-Hub
+Kartenraster mit Filter, aber zusätzlich geführte Nutzerfragen. Nicht nur Fachcluster.
+Tool-Seite
+Einspaltige Leseführung für Erklärung; zweispaltige Layouts nur für Ergebnis/Visualisierung.
+Methodik
+Tabs oder Akkordeons für Einfach/Fachlich/Systemisch; nicht alles sofort offen.
+Quellen
+Ganz unten, aber mit Datenqualitäts- und Statushinweisen sichtbar vor Ergebnisinterpretation.
+Mobile
+Karten untereinander, Status zuerst, Ergebnis nicht unter Formular verstecken.
+12.4 Kernkomponenten
+ToolHero
+StatusBadge
+UseCaseRouter / Tool-Finder
+ToolCard
+InputOutputPanel
+ImpactPathVisual
+ConsequenceCheck
+DataQualityAmpel
+ProtectionLinesBox
+MethodLinkCard
+GlossaryHover
+RelatedContentRail
+VersionStatusFooter
+SourceList getrennt nach intern/extern
+Redirect/ArchiveNotice
+12.5 ToolCard-Pflichtfelder
+Feld
+Inhalt
+Name
+Öffentlicher Name, verständlich.
+Typ
+Kompass, Demo, Rechner, Methode, Kennzahl, Register, Governance, Labor.
+Status
+Live, Demo, Arbeitsfassung, In Vorbereitung, Public Research, quellengeprüft usw.
+Nutzerfrage
+Alltagsfrage statt Fachfrage.
+Zeigt
+Was sichtbar wird.
+Verändert
+Welche Rückkopplung oder Entscheidungsqualität daraus entsteht.
+Schutzlinie
+Nicht amtlich, keine Beratung, keine Personenbewertung, keine automatische Entscheidung.
+Quellenbasis
+Interne Methodik + externe Daten/Standards.
+13. Funktionale Anforderungen und Datenmodell
+13.1 Frontend-Funktionalität
+Filter nach Nutzerfrage, Zielgruppe, Typ, Status, Wirkungsfeld und Methode.
+Suche mit Synonymen: Tool, Rechner, Check, Kompass, Scorecard, Produkt, Medien, Kapital, Rente, Wohnen, Migration, KI.
+Jede Karte per URL/Slug direkt erreichbar. Alte Slugs redirecten.
+Jede Tool-Seite zeigt interne Sprungmarken und mobile Inhaltsnavigation.
+Ergebnisblöcke müssen erklärbar sein: 'Was bedeutet das?' nie nur Zahlen anzeigen.
+Alle Demo-Eingaben müssen Beispieldaten klar von echten Nutzerdaten trennen.
+Alle Demos müssen ohne Anmeldung verständlich sein; vertiefende Pilotfunktionen können separat markiert werden.
+13.2 Datenmodell für Tool-Metadaten
+type ToolStatus = 'live' | 'demo' | 'arbeitsfassung' | 'public-research' | 'in-vorbereitung' | 'archiv' | 'quellenpruefung-offen';type ToolType = 'kompass' | 'scanner' | 'demo' | 'rechner' | 'check' | 'methode' | 'kennzahl' | 'register' | 'governance' | 'rechtsmodell' | 'labor';type ToolMeta = {  id: string;  slug: string;  canonicalUrl: string;  title: string;  shortTitle?: string;  type: ToolType;  status: ToolStatus;  cluster: 'orientation' | 'public-demo' | 'method' | 'governance' | 'lab' | 'reference';  userQuestion: string;  oneSentence: string;  currentBlindspot: string;  shows: string;  changes: string;  inputs: string[];  outputs: string[];  impactPath: string[];  consequenceCheck: {    firstOrder: string;    secondOrder: string;    thirdOrder: string;  };  protectionLines: string[];  dataQuality: {    valueType: 'demo' | 'model' | 'estimate' | 'measured' | 'mixed';    sourceStatus: 'none' | 'internal' | 'external' | 'reviewed' | 'audited';    uncertainty: 'low' | 'medium' | 'high' | 'unknown';    lastUpdated?: string;  };  glossaryTerms: string[];  internalSources: string[];  externalSources: string[];  relatedTools: string[];  relatedPublications: string[];  redirectsFrom: string[];};
+13.3 Snapshot-Tests für Reihenfolge und Pflichtblöcke
+Alle Tool-Seiten müssen die Pflichtabschnitte in der vorgegebenen Reihenfolge rendern.
+Jede Demo muss einen Schutzlinienblock enthalten.
+Jede Seite mit Score/Index muss Datenqualitätsampel und Interpretation enthalten.
+Jede Seite mit Sprache/Medien/Migration muss 'Wirkungspotenzial' verwenden, wenn keine eingetretene Wirkung nachgewiesen ist.
+Jede Seite mit NWI/T-SROI muss die Abgrenzung korrekt anzeigen.
+Jede alte URL aus dem Inventar muss erreichbar oder redirectet sein.
+14. Quellen-, Status-, Glossar- und Hoverlogik
+14.1 Quellenlogik
+Quellentyp
+Beispiele
+Darstellung
+Interne WÖk-Quellen
+Begriffsleitfaden, Systemmodell, WStG/WUStG, T-SROI, Produktpapier, Wirkungsrat, Buch, Leitbild
+Im Quellenblock getrennt: 'Interne WÖk-Referenzen'.
+Externe Standards
+SDGs, Agenda 2030, CSRD, ESRS, GRI, EU-Taxonomie, NACE, ISO, ILO
+Als methodische Anschlussquellen mit Links und Datenstand.
+Externe Faktenquellen
+Destatis, UBA, IPCC, IEA, OECD, WHO, Eurostat, wissenschaftliche Studien
+Bei aktuellen Fakten mit Datum, Quelle und was die Quelle belegt.
+Demo-Annahmen
+Beispielwerte, Modellkorridore, vereinfachte Scores
+Direkt am Ergebnis als Demo-Annahme markieren.
+14.2 Statuslogik
+Status darf nicht nur im Backend stehen. Er muss visuell auf der Seite erscheinen.
+'Geprüft' darf nur stehen, wenn Prüfung tatsächlich abgeschlossen ist.
+'Arbeitsfassung' oder 'Quellenprüfung offen' ist zulässig und besser als Scheinsicherheit.
+Bei Demo-Seiten: 'Modellhaft, nicht amtlich, keine Beratung' direkt im Hero und am Ergebnis.
+Bei Governance/Register: 'Vorbereitete Registerlogik, keine amtliche Entscheidung'.
+14.3 Glossar-Hover
+Kurzer Tooltip: maximal 280 Zeichen.
+Link: 'Mehr im Glossar'.
+Tooltip muss für Touch/Mobile und Tastatur zugänglich sein.
+Bei Mehrdeutigkeit: Begriff im Kontext erklären, nicht nur Glossar ausgeben.
+Glossar darf nicht über der Lesbarkeit schweben; Nutzer:innen müssen ohne Hover weiterkommen.
+15. Inhaltliche Qualitätsregeln gegen KI-Standard-Sprech
+15.1 Qualität jeder Antwort / Tool-Erklärung
+Jeder erste Absatz muss eine konkrete Beobachtung enthalten, kein allgemeines Weltlage-Intro.
+Jede Erklärung muss eine echte Ursache-Wirkungs-Logik haben.
+Jede Wirkungsbehauptung muss als Wirkung, Wirkungspotenzial, Wirkpfad oder Risiko korrekt benannt werden.
+Jede Demo muss sagen, was sie zeigt und was sie nicht zeigt.
+Jede Kennzahl muss erklären, was sie nicht misst.
+Jede Systemfrage muss mindestens eine Nebenwirkung oder einen Zielkonflikt nennen.
+Jede Antwort muss die menschliche, planetare und demokratische Dimension zumindest prüfen, wenn relevant.
+15.2 Stil: professionell, systemisch, nicht 0-8-15
+Statt
+Besser
+Dieses Tool hilft Ihnen, nachhaltige Entscheidungen zu treffen.
+Dieses Tool zeigt, welche Folgen heute im Preis, Bericht oder Score unsichtbar bleiben - und welche Entscheidung dadurch ehrlicher würde.
+Die Transformation stellt uns vor große Herausforderungen.
+Ein System, das nur Preise sieht, bemerkt oft erst spät, wer die Folgekosten trägt.
+Der Score bewertet die Nachhaltigkeit.
+Der Score zeigt im Modell, welches Wirkungsfeld die Gesamtbewertung begrenzt und warum gute Einzelwerte kritische Schäden nicht verdecken dürfen.
+Medien können positive oder negative Wirkung haben.
+Ein Beitrag kann informieren, aber auch Misstrauen verstärken, wenn Quellen fehlen, Gegner markiert werden oder Empörung mehr Reichweite bekommt als Klärung.
+Kapital soll nachhaltig investiert werden.
+Kapital skaliert immer etwas: Lösung, Risiko, Abhängigkeit oder Transformation. Das Tool fragt, was genau skaliert wird.
+16. Konkrete Umsetzungsanweisungen je Tool-Familie
+16.1 Orientierung & Kompass
+WÖk-Kompass als zentrales 'Wirkung verstehen in 10 Minuten' führen.
+WÖk-Scanner als Tool-Finder ausbauen: Nutzerfrage -> passendes Tool -> kurze Erklärung -> vertiefen.
+Debatten-Kompass als Key-Feature prominent verlinken, aber separat nach seinem eigenen Textmaster und seiner eigenen Reihenfolge behandeln.
+Kompass-Seiten brauchen kurze Antwortkarten: 10 Sekunden, 30 Sekunden, systemisch vertiefen.
+16.2 Produkt & Lieferkette
+Produktwirkungsrechner, Produktscorecards, WÖk-IDs, Digitale Produktpässe, Reverse Merit Order und WUStG enger verknüpfen.
+Öffentliche Erklärung immer am Beispiel starten: Apfel, T-Shirt, Strom, Smartphone, Pflegeprodukt.
+Reverse Merit Order nicht als abstraktes Regelwerk einführen, sondern als Schutz gegen Ablasslogik: Kinderarbeit wird nicht durch gute CO2-Werte aufgehoben.
+Demos müssen klare Demo-Korridore, Datenqualitätsstufen und Unterschied zwischen Modell und Rechts-/Steuerfassung zeigen.
+16.3 Medien, Öffentlichkeit und Debatten
+Medienwirkungscheck nicht als Wahrheitsrichter inszenieren, sondern als Wirkungsanalyse von Quellenklarheit, Frame, Tonalität, Emotionalisierung und Resonanzrisiko.
+Sprach-/Framing-Analyse mit Debatten-Kompass verbinden: Was wird behauptet? Welcher Frame? Welche implizite Botschaft? Welche Wirkungspotenziale?
+Desinformations- und Hybrid-Risk-Tools immer mit demokratischer Schutzlinie: keine Personenbewertung, keine Gesinnungsbewertung, keine automatische Sperrentscheidung.
+Bei Narrativen immer 'Wirkungspotenzial', 'Wirkpfad', 'Resonanzraum' verwenden, solange keine empirische Wirkung nachgewiesen ist.
+16.4 Unternehmen, Projekte und Impact Controlling
+Unternehmens-Wirkungscheck und Impact-Controlling-Rechner als Praxiszugänge bündeln.
+NWI und T-SROI klar trennen: operative Netto-Wirkung vs. Transformationswirkung.
+KII statt KPI als Managementlogik erklären: Nicht nur Aktivität messen, sondern Zustandsveränderung, Nebenwirkung und Rückkopplung.
+Jede Unternehmensseite: keine Unternehmensbewertung, sondern Prüf- und Lernwerkzeug.
+16.5 Wohnen, Kommune, Resilienz
+Wohnwirkungsrechner, Vermieter-Check und Stranded-Asset-Check Wohnen als Wohnwirkungscheck mit drei Modi bündeln.
+Erklären: Wohnen ist Mensch (Bezahlbarkeit/Gesundheit), Planet (Energie/Material/Fläche) und Demokratie (Teilhabe/Vertrauen/Stabilität).
+Resilienz-Radar Kommune und Kritische-Infrastruktur-Monitor als kommunale Wirkungswerkzeuge verknüpfen.
+Nicht nur Risiken anzeigen, sondern Handlungsfähigkeit: Was würde präventive Wirkung erzeugen?
+16.6 Bildung, Wissenschaft, Wissen
+Bildungswerkzeuge in einer Bildungs-Wirkungswerkstatt bündeln.
+Keine Bewertung einzelner Schüler:innen, Kinder, Lehrkräfte oder Schulen als Ranking.
+Fokus: Räume, Förderung, Selbstwirksamkeit, Demokratiepraxis, Zukunftskompetenz, Datenethik.
+Forschungs-Wirkungscheck und Open-Science-Check mit Integritätsregister verknüpfen: Replikation, Quellen, Transfer, Mission, wissenschaftliche Redlichkeit.
+16.7 Kapital, Finanzierung, Automatisierung
+Kapital-Wirkungs-Suite aus Kapitalwirkungscheck, Portfolio, Kredit, Fonds, Versicherbarkeit und Resilienz bauen.
+Keine Anlageberatung, keine Kreditentscheidung, keine Versicherungsberatung - visuell und inhaltlich klar.
+Automatisierungs-Tools als Labor markieren. Sie zeigen Systemlogik, keine Sozialleistungsentscheidung.
+Erklären: Automatisierung ist nicht automatisch schlecht; das Problem ist die fehlende Rückkopplung von maschineller Wertschöpfung in Teilhabe, Sicherung und Zukunftsfähigkeit.
+17. Tests, QA, Accessibility und Content-Erhalt
+17.1 Content-Inventar vor Umsetzung
+Alle bestehenden Tool-, Methoden-, Rechner-, Demo-, Kompass-, Glossar-, Register- und Governance-Seiten erfassen.
+Alle alten URLs, Anchors und internen Links erfassen.
+Alle PDF-/Bibliotheksverweise und Publikationen erfassen.
+Alle Statusangaben und unklaren Labels erfassen.
+Migrationsmatrix erstellen: alt -> neu / bleibt / redirect / Archiv / Labor / Referenz.
+17.2 Automatisierte Tests
+Test
+Erfolgskriterium
+Content-Erhalt
+Keine relevante alte URL ohne Ziel; keine entfernten Glossarbegriffe oder Veröffentlichungen.
+Pflichtblöcke
+Jede Tool-Seite enthält Hero, Nutzerfrage, Input/Output, Veränderung, Wirkpfad, Folgencheck, Status, Schutzlinien, Quellen.
+Status
+Keine Demo ohne Demo-Badge; keine Arbeitsfassung als geprüft ausgeben.
+NWI/T-SROI
+Abgrenzung überall korrekt.
+Sprache/Medien
+Wirkungspotenzial statt unbewiesener Wirkungsbehauptung.
+Barrierefreiheit
+Tastaturbedienung, Kontrast, Alt-Texte, responsive Layouts, zugängliche Tooltips.
+No-AI-Floskeln
+Blacklist-Prüfung für generische Einstiege und falsche WÖk-Begriffe.
+Linkcheck
+Interne Links, externe Quellen, Downloads, Glossar-Hover funktionieren.
+17.3 Manuelle QA
+Kann eine fachfremde Person nach 30 Sekunden sagen, wofür das Tool ist?
+Kann eine fachkundige Person Quellen, Methode, Status und Grenzen nachvollziehen?
+Sieht die Seite auf Mobile nicht wie eine gekippte Tabelle aus?
+Ist der erste Absatz konkret und nicht generisch?
+Wird klar, was sich durch das Tool in der realen Welt verändern würde?
+Sind alle riskanten Bereiche als Modell/Labor/Demo markiert?
+Sind alte Inhalte auffindbar?
+18. Deployment und Abschlussbericht
+18.1 Deployment-Regel
+Koordinierter Upgrade-SchrittNicht wieder viele kleine, unkoordinierte Deployments. Erst Inventar, Staging, QA, Linkcheck, Content-Erhalt, Snapshot-Tests und Preview. Danach Version 1.5 durch Version 2.0 ersetzen. Rollback-Punkt behalten.
+18.2 Reihenfolge der Umsetzung
+1.  Backup der bestehenden Website erstellen.
+2.  Content- und URL-Inventar erzeugen.
+3.  Tool-Metadatenmodell anlegen.
+4.  Neue IA und Komponenten implementieren.
+5.  Kanonische Tool-Seiten und Weiterleitungen setzen.
+6.  Tool-Finder/WÖk-Scanner als Haupteinstieg bauen.
+7.  Alle Tool-Seiten auf neues Template migrieren.
+8.  Glossar-Hover und Statusbadges einbauen.
+9.  Quellen-, Schutzlinien- und Datenqualitätsmodule einbauen.
+10.  Tests und QA laufen lassen.
+11.  Preview/Staging prüfen.
+12.  Live-Deploy als Version 2.0.
+13.  Smoke-Test auf Live-System.
+14.  Abschlussbericht ausgeben.
+18.3 Abschlussbericht von CodeX
+Welche Tool-Seiten wurden überarbeitet?
+Welche Inhalte wurden zusammengeführt, aber nicht gelöscht?
+Welche alten URLs wurden wohin weitergeleitet?
+Welche Tools wurden als Orientierung, Demo, Methodik, Governance, Labor oder Referenz markiert?
+Welche neuen Komponenten wurden implementiert?
+Welche Tools haben weiterhin Quellenprüfung offen?
+Welche Tests wurden bestanden?
+Welche Accessibility-Ergebnisse liegen vor?
+Welche Version ist live?
+Wo liegt der Rollback-Punkt?
+Anhang A: Tool-Familien und Zielpositionierung
+Tool-Familie
+Öffentliche Positionierung
+Status-/Schutzlogik
+WÖk-Kompass
+Orientierung: Wirkung verstehen
+Keine Beratung, keine amtliche Bewertung.
+Debatten-Kompass
+Key-Feature: Narrative, Mythen, Frames, Wirkungscheck
+Quellenstatus je Karte, Wirkungspotenzial bei Sprache.
+WÖk-Scanner / Tool-Finder
+Geführter Zugang zur passenden Methode
+Keine automatische Entscheidung.
+Produktwirkungsrechner
+Öffentliche Demo: Preiswahrheit und Produktwirkung
+Demo, nicht amtlich, keine Beratung.
+Scorecard-Dashboard
+Methodik-Demo: Bewertung verstehen
+Modellhaft, Datenqualität sichtbar.
+Impact-Controlling-Rechner
+Praxisdemo für Projekt/Organisation/Kapital
+NWI/T-SROI getrennt.
+Unternehmens-Wirkungscheck
+Lernwerkzeug für Unternehmenswirkung
+Keine Unternehmens- oder Personenbewertung.
+Wohnwirkungscheck
+Alltagsnaher Rechner mit Modi
+Keine Rechts-/Förder-/Immobilienberatung.
+Medienwirkungscheck
+Öffentlichkeitswirkung analysieren
+Kein Wahrheitsurteil, keine Gesinnungsbewertung.
+Bildungs-Wirkungswerkstatt
+Bildung, Förderung, Räume, Zukunftskompetenz
+Keine Bewertung von Kindern/Lehrkräften.
+Kapital-Wirkungs-Suite
+Kapitalwirkung, Risiko, Transformation
+Keine Anlage-/Kredit-/Versicherungsberatung.
+Automatisierung & Teilhabe-Labor
+Systemmodell zu Maschinenwertschöpfung und Einkommen
+Labor, keine Sozial-/Steuerentscheidung.
+Governance & Register
+Vertrauensinfrastruktur
+Kein amtliches Register, wenn noch Forschungsstand.
+Anhang B: Microcopy für einheitliche Tool-Seiten
+B.1 Standard-Schutzlinien
+Diese Demo zeigt eine Wirkungslogik, kein amtliches Urteil.Sie ersetzt keine Rechts-, Steuer-, Anlage-, Kredit-, Versicherungs-, Förder- oder Fachberatung.Sie bewertet keine Personen und trifft keine automatische Entscheidung.Datenqualität, Annahmen und Unsicherheit bleiben sichtbar.Kritische Wirkungsgrenzen dürfen nicht durch gute Einzelwerte verdeckt werden.
+B.2 Standard-Block 'Was verändert sich dadurch?'
+Das Ergebnis ist nicht der Endpunkt. Es zeigt, welcher Hebel sichtbar wird.Je nach Tool kann daraus folgen: ein anderer Preis, eine andere Steuerklasse, ein anderes Beschaffungsverhalten, eine andere Investitionsentscheidung, eine andere Förderpriorität, eine andere Debattenantwort oder ein anderer Prüfauftrag.Wichtig: Das Tool entscheidet nicht. Es macht die Wirkung so lesbar, dass bessere Entscheidungen möglich werden.
+B.3 Standard-Block 'Folgencheck'
+Direkte Wirkung: Was verändert sich unmittelbar?Anschlusswirkung: Welche Folgekosten, Folgevorteile oder Verlagerungen entstehen?Systemwirkung: Ändern sich Anreize, Regeln, Kapitalflüsse, Vertrauen, Resilienz oder künftige Entscheidungen?Zielkonflikt: Wer gewinnt, wer trägt Kosten, und welche rote Linie darf nicht überschritten werden?
+Anhang C: Definition of Done
+Alle Tool-Seiten sind im neuen Template oder als Archiv/Labor/Referenz gekennzeichnet.
+Alle Inhalte sind erhalten oder weitergeleitet.
+Tool-Finder/WÖk-Scanner führt von Nutzerfragen zu passenden Tools.
+Demos zeigen Status, Schutzlinien, Datenqualität und Grenzen sichtbar.
+NWI und T-SROI sind überall korrekt getrennt.
+Medien-/Narrativtools verwenden Wirkungspotenzial, Wirkpfad und Resonanzraum präzise.
+Keine generische KI-Sprache in Hero, Nutzerfrage oder Kurzantwort.
+Glossar-Hover funktionieren und sind barrierefrei.
+Quellenblöcke trennen interne WÖk-Referenzen und externe Quellen.
+Mobile, Tastatur, Screenreader, Kontrast, Linkcheck und Snapshot-Tests bestanden.
+Version 2.0 ist live, Version 1.5 gesichert, Rollback-Punkt vorhanden.
+Anhang D: Referenzbasis für CodeX
+Führender Begriffsleitfaden der Wirkungsökonomie v1.0, 21.05.2026.
+Website: Methoden & Werkzeuge der Wirkungsökonomie, /werkzeuge/.
+Website: Erleben / Demos der Wirkungsökonomie, /erleben/.
+Website: WÖk-Kompass, /kompass.html.
+Dokumente: Technische Leitlinien WUStG, WStG Oktober 2025, Whitepaper T-SROI, Wirkungsrat-Konzept, Systemmodell der Wirkungsökonomie, Produktpapier, Lieferkettenpapier, Wohnungsmarkt-/Renten-/Einkommens-/Automatisierungs-Papiere.
+Vorherige CodeX-Briefings: Website-Relaunch 2.0 und Debatten-Kompass-Textmaster.
+Anhang E: Kurzer Codex-Prüfauftrag am Ende
+Bitte bestätige nach Umsetzung:1. Kein Tool, Glossarbegriff, PDF, Journalbeitrag, Buch, Debatteninhalt oder Download wurde gelöscht.2. Alle alten relevanten URLs haben Inhalt oder Redirect.3. Alle Tool-Seiten nutzen das neue Template oder sind bewusst als Archiv/Labor/Referenz markiert.4. Alle Demos haben Schutzlinien, Datenqualitätsanzeige und Grenzen.5. NWI/T-SROI sind korrekt getrennt.6. Sprache/Medien/Narrative verwenden Wirkungspotenzial/Wirkpfad statt unbewiesener Wirkungsbehauptung.7. Tool-Finder/WÖk-Scanner funktioniert.8. Mobile, Accessibility, Linkcheck und Snapshot-Tests sind bestanden.9. Version 2.0 wurde live deployed und Version 1.5 ist rollbackfähig gesichert.

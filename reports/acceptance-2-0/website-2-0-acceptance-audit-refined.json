@@ -1,0 +1,205 @@
+{
+  "commit": "64a00755e96cce98d0321e267c0c48da4eefb289",
+  "summary": {
+    "erfüllt": 26,
+    "offen": 2
+  },
+  "checks": [
+    {
+      "area": "Deployment",
+      "requirement": "Live-Commit entspricht lokalem Hauptstand",
+      "status": "erfüllt",
+      "evidence": "HEAD=64a00755e, origin/main=64a00755e, non-audit dirty=[]",
+      "action": ""
+    },
+    {
+      "area": "Routen",
+      "requirement": "Alle Kernrouten aus 2.0 erreichbar",
+      "status": "erfüllt",
+      "evidence": "missing=[]",
+      "action": ""
+    },
+    {
+      "area": "Öffentlicher Wirkungsraum",
+      "requirement": "/oeffentlicher-wirkungsraum/ Kerninhalt vorhanden",
+      "status": "erfüllt",
+      "evidence": "missing=[]",
+      "action": ""
+    },
+    {
+      "area": "Öffentlicher Wirkungsraum",
+      "requirement": "/wirkungsradar/resonanz-kompass/ Kerninhalt vorhanden",
+      "status": "erfüllt",
+      "evidence": "missing=[]",
+      "action": ""
+    },
+    {
+      "area": "Öffentlicher Wirkungsraum",
+      "requirement": "/wirkungsradar/agenda-radar/ Kerninhalt vorhanden",
+      "status": "erfüllt",
+      "evidence": "missing=[]",
+      "action": ""
+    },
+    {
+      "area": "Öffentlicher Wirkungsraum",
+      "requirement": "/wirkungsradar/ursachen-navigator/ Kerninhalt vorhanden",
+      "status": "erfüllt",
+      "evidence": "missing=[]",
+      "action": ""
+    },
+    {
+      "area": "Öffentlicher Wirkungsraum",
+      "requirement": "/wirkungsradar/resilienz-prinzipien/ Kerninhalt vorhanden",
+      "status": "erfüllt",
+      "evidence": "missing=[]",
+      "action": ""
+    },
+    {
+      "area": "Journal",
+      "requirement": "Journalbeitrag „Nicht jedem Stöckchen hinterher“ vorhanden",
+      "status": "offen",
+      "evidence": "",
+      "action": ""
+    },
+    {
+      "area": "Debatten-Kompass",
+      "requirement": "Live-Debattenseiten folgen Standardstruktur; Aliasse redirecten",
+      "status": "erfüllt",
+      "evidence": "content=94, redirects=6, missing=0, examples=[]",
+      "action": ""
+    },
+    {
+      "area": "Debatten-Kompass",
+      "requirement": "Kanonisierung/Dublettenbericht vorhanden",
+      "status": "erfüllt",
+      "evidence": "# Debatten-Kompass Kanonisierung  Stand: 2026-06-06T08:14:22.834Z  | Kennzahl | Wert | |---|---:| | Radar-Seiten | 583 | | Claim-Seiten | 202 | | Kanonische Narrative | 91 | | Dubletten / Kandidaten | 352 | | Zusammengef",
+      "action": ""
+    },
+    {
+      "area": "Glossar",
+      "requirement": "Neue und zentrale Glossarbegriffe vorhanden",
+      "status": "erfüllt",
+      "evidence": "missing=[]",
+      "action": ""
+    },
+    {
+      "area": "Glossar",
+      "requirement": "Debatten-Bridge nicht auf normalen Glossar-Samples",
+      "status": "erfüllt",
+      "evidence": "bridge=[]",
+      "action": ""
+    },
+    {
+      "area": "Glossar",
+      "requirement": "Keine sichtbaren ASCII-Umlautverdachtsfälle in Glossar-Samples",
+      "status": "erfüllt",
+      "evidence": "ascii_suspects=[]",
+      "action": ""
+    },
+    {
+      "area": "Suche",
+      "requirement": "Suchindex enthält neue Glossarbegriffe",
+      "status": "offen",
+      "evidence": "index length=7162578",
+      "action": ""
+    },
+    {
+      "area": "Audio",
+      "requirement": "Audio-Dateien aus Hördokumenten als MP3 öffentlich vorhanden",
+      "status": "erfüllt",
+      "evidence": "mp3=46, wav=0, missing_key=[]",
+      "action": ""
+    },
+    {
+      "area": "Mein Wirkungsraum",
+      "requirement": "LocalStorage Namespace und Objekte",
+      "status": "erfüllt",
+      "evidence": "missing=[]",
+      "action": ""
+    },
+    {
+      "area": "Mein Wirkungsraum",
+      "requirement": "Merken/Sammlung/Lernliste/Notizen/Sync-Link",
+      "status": "erfüllt",
+      "evidence": "missing=[]",
+      "action": ""
+    },
+    {
+      "area": "Mein Wirkungsraum",
+      "requirement": "Nur-gemerkt/Lesefortschritt",
+      "status": "erfüllt",
+      "evidence": "missing=[]",
+      "action": ""
+    },
+    {
+      "area": "Mein Wirkungsraum",
+      "requirement": "Dashboard-Reihenfolge/Bereiche vorhanden",
+      "status": "erfüllt",
+      "evidence": "missing=[]",
+      "action": ""
+    },
+    {
+      "area": "Mein Wirkungsraum",
+      "requirement": "Seitentyp-Samples laden main.js für dynamische Wirkungsraum-Funktionen",
+      "status": "erfüllt",
+      "evidence": "missing_hooks=[]",
+      "action": ""
+    },
+    {
+      "area": "Downloads",
+      "requirement": "Keine öffentlichen DOCX/ZIP/WAV/MD-Dateien; Excel-Ausnahmen bleiben",
+      "status": "erfüllt",
+      "evidence": "bad=[], excel=['assets/downloads/woek-register/WOeK_Master_Items_Public_Research_Register_v2.1.xlsx', 'assets/downloads/go2-produktionsreihenfolge/woek_go2_produktionsreihenfolge_detailkonzepte_v1_0.xlsx']",
+      "action": ""
+    },
+    {
+      "area": "Quellen/Links",
+      "requirement": "Debattenquellen mit Belegfunktion und ohne harte Platzhalter",
+      "status": "erfüllt",
+      "evidence": "belegmarker=424, bad_mail=0, placeholders=0, bad_links=0",
+      "action": ""
+    },
+    {
+      "area": "Public Quality",
+      "requirement": "Keine harten internen Arbeitsmarker in Stichprobe/Top-Level-Crawl",
+      "status": "erfüllt",
+      "evidence": "{}",
+      "action": ""
+    },
+    {
+      "area": "Reports",
+      "requirement": "reports/website-2.0-content-inventory.md vorhanden",
+      "status": "erfüllt",
+      "evidence": "# Website 2.0 Content Inventory  Stand: 2026-06-05T21:00:25.181Z  ## Zählung  - HTML-Seiten: 8109 - Debatten-Live-Seiten: 101 - Debatten-Detailseiten: 101 - Audio-Dateien in assets",
+      "action": ""
+    },
+    {
+      "area": "Reports",
+      "requirement": "reports/debattenkarten-masterintegration.md vorhanden",
+      "status": "erfüllt",
+      "evidence": "# Debattenkarten Website 2.0 Integration  Stand: 2026-06-05  ## Ergebnis  - Karten im Textmaster: 88 - Bestehende Live-Routen überschrieben/aktualisiert: 88 - Neue Live-Routen ange",
+      "action": ""
+    },
+    {
+      "area": "Reports",
+      "requirement": "reports/glossary-final-executive-summary.md vorhanden",
+      "status": "erfüllt",
+      "evidence": "# Executive Summary Glossar-Pack 027  - Timestamp: 2026-06-02T06:50:09.381Z - Charakter: Abschluss-, Audit- und Sicherungspack fuer Glossar-Packs 001-026 - Glossarbegriffe vorher: ",
+      "action": ""
+    },
+    {
+      "area": "Reports",
+      "requirement": "docs/audio-explanations-integration-audit.md vorhanden",
+      "status": "erfüllt",
+      "evidence": "# Audio-Erklärungen Integration Audit  Integriert: 36 MP3-Dateien.  ## Fehlende Audiodateien  - Erleben / Demos (https://wirkungsoekonomie.de/erleben/): keine passende WAV-Datei im",
+      "action": ""
+    },
+    {
+      "area": "Reports",
+      "requirement": "reports/cta-intent-audit.md vorhanden",
+      "status": "erfüllt",
+      "evidence": "# CTA-Intent-Audit  Stand: 2026-06-05  Ziel: Button-Text und Zielseite müssen dieselbe Nutzerabsicht bedienen. Dieser Audit fokussiert auf sichtbare Haupt-CTAs und den konkret geme",
+      "action": ""
+    }
+  ]
+}

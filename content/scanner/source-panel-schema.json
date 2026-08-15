@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "status": "published",
+    "last_updated": "2026-05-22",
+    "purpose": "Einheitlicher Quellenpanel-Standard für Scanner-Ausgaben."
+  },
+  "component": "SourcePanel",
+  "required_fields": [
+    "Eingabequelle",
+    "interne WÖk-Basis",
+    "externe Quelle",
+    "Datenstand",
+    "Datenqualität",
+    "Limitierung",
+    "Was diese Quelle liefert",
+    "Was diese Quelle nicht liefert"
+  ],
+  "rules": [
+    "Jede Analyse muss mindestens Eingabequelle, interne WÖk-Basis, Datenqualität und Limitierung anzeigen.",
+    "Externe Quellen dürfen nur als Teilindikatoren erscheinen, nicht als WÖk-Bewertung.",
+    "Datenstand und Zugriffsbeschränkung müssen sichtbar sein.",
+    "Wenn eine URL nicht abrufbar ist, muss der Scanner um einen kurzen Textauszug bitten.",
+    "Bei urheberrechtlich geschützten Texten dürfen keine langen Passagen reproduziert werden."
+  ],
+  "example": {
+    "source": "Open Food Facts",
+    "what_it_provides": "Zutaten-, Label-, Kategorie- und Barcode-Daten.",
+    "what_it_does_not_provide": "Keine geprüfte vollständige Lieferkettenwirkung und keine WÖk-Steuerklasse.",
+    "data_quality": "C",
+    "limitation": "Nutzergenerierte oder unvollständige Produktdaten möglich."
+  }
+}

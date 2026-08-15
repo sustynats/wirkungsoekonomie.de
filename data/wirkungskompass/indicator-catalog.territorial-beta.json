@@ -1,0 +1,169 @@
+{
+  "method_version": "territorial-compass-beta-0.2",
+  "created_at": "2026-06-10T09:00:00+02:00",
+  "scope_note": "Startkatalog fuer Snapshot-Importer. Die Indikatoren liefern Rohbeobachtungen, noch keine validierten Scores.",
+  "indicators": [
+    {
+      "indicator_id": "ewk_eurostat_sdg_01_10_total_pc",
+      "name": "Personen mit Armuts- oder sozialem Ausgrenzungsrisiko",
+      "dimension": "mensch",
+      "subdimension": "Armut / soziale Ausgrenzung",
+      "sdg_or_sdgplus": "SDG 1",
+      "unit": "PC",
+      "polarity": "lower_is_better",
+      "source_provider": "eurostat_sdg",
+      "source_dataset": "sdg_01_10",
+      "source_url": "https://ec.europa.eu/eurostat/databrowser/view/sdg_01_10/default/table",
+      "filters": {
+        "freq": "A",
+        "age": "TOTAL",
+        "unit": "PC"
+      },
+      "required": true,
+      "red_line": false,
+      "method_version": "territorial-compass-beta-0.2"
+    },
+    {
+      "indicator_id": "ewk_eurostat_sdg_04_10_total_pc",
+      "name": "Fruehe Schul- und Ausbildungsabgaenger:innen",
+      "dimension": "mensch",
+      "subdimension": "Bildung",
+      "sdg_or_sdgplus": "SDG 4",
+      "unit": "PC",
+      "polarity": "lower_is_better",
+      "source_provider": "eurostat_sdg",
+      "source_dataset": "sdg_04_10",
+      "source_url": "https://ec.europa.eu/eurostat/databrowser/view/sdg_04_10/default/table",
+      "filters": {
+        "freq": "A",
+        "unit": "PC",
+        "wstatus": "POP",
+        "age": "Y18-24",
+        "sex": "T"
+      },
+      "required": false,
+      "red_line": false,
+      "method_version": "territorial-compass-beta-0.2"
+    },
+    {
+      "indicator_id": "ewk_eurostat_sdg_07_40_ren_pc",
+      "name": "Anteil erneuerbarer Energien am Bruttoendenergieverbrauch",
+      "dimension": "planet",
+      "subdimension": "Energie / Transformation",
+      "sdg_or_sdgplus": "SDG 7",
+      "unit": "PC",
+      "polarity": "higher_is_better",
+      "source_provider": "eurostat_sdg",
+      "source_dataset": "sdg_07_40",
+      "source_url": "https://ec.europa.eu/eurostat/databrowser/view/sdg_07_40/default/table",
+      "filters": {
+        "freq": "A",
+        "nrg_bal": "REN",
+        "unit": "PC"
+      },
+      "required": true,
+      "red_line": false,
+      "method_version": "territorial-compass-beta-0.2"
+    },
+    {
+      "indicator_id": "ewk_eurostat_sdg_13_10_t_hab",
+      "name": "Netto-Treibhausgasemissionen pro Kopf",
+      "dimension": "planet",
+      "subdimension": "Klima",
+      "sdg_or_sdgplus": "SDG 13",
+      "unit": "T_HAB",
+      "polarity": "lower_is_better",
+      "source_provider": "eurostat_sdg",
+      "source_dataset": "sdg_13_10",
+      "source_url": "https://ec.europa.eu/eurostat/databrowser/view/sdg_13_10/default/table",
+      "filters": {
+        "freq": "A",
+        "src_crf": "TOTXMEMO",
+        "unit": "T_HAB"
+      },
+      "required": true,
+      "red_line": false,
+      "method_version": "territorial-compass-beta-0.2"
+    },
+    {
+      "indicator_id": "wwk_wb_sp_dyn_le00_in",
+      "name": "Lebenserwartung bei Geburt",
+      "dimension": "mensch",
+      "subdimension": "Gesundheit",
+      "sdg_or_sdgplus": "SDG 3",
+      "unit": "years",
+      "polarity": "higher_is_better",
+      "source_provider": "world_bank_wdi",
+      "source_dataset": "SP.DYN.LE00.IN",
+      "source_url": "https://data.worldbank.org/indicator/SP.DYN.LE00.IN",
+      "required": true,
+      "red_line": false,
+      "method_version": "territorial-compass-beta-0.2"
+    },
+    {
+      "indicator_id": "wwk_wb_se_prm_cmpt_zs",
+      "name": "Abschlussquote Primarbildung",
+      "dimension": "mensch",
+      "subdimension": "Bildung",
+      "sdg_or_sdgplus": "SDG 4",
+      "unit": "percent",
+      "polarity": "higher_is_better",
+      "source_provider": "world_bank_wdi",
+      "source_dataset": "SE.PRM.CMPT.ZS",
+      "source_url": "https://data.worldbank.org/indicator/SE.PRM.CMPT.ZS",
+      "required": false,
+      "red_line": false,
+      "method_version": "territorial-compass-beta-0.2"
+    },
+    {
+      "indicator_id": "wwk_wb_en_atm_co2e_pc",
+      "name": "CO2-Emissionen pro Kopf",
+      "dimension": "planet",
+      "subdimension": "Klima",
+      "sdg_or_sdgplus": "SDG 13",
+      "unit": "metric tons per capita",
+      "polarity": "lower_is_better",
+      "source_provider": "world_bank_wdi",
+      "source_dataset": "EN.ATM.CO2E.PC",
+      "source_url": "https://data.worldbank.org/indicator/EN.ATM.CO2E.PC",
+      "required": true,
+      "red_line": false,
+      "method_version": "territorial-compass-beta-0.2"
+    },
+    {
+      "indicator_id": "wwk_wb_eg_fec_rnew_zs",
+      "name": "Anteil erneuerbarer Energien am Endenergieverbrauch",
+      "dimension": "planet",
+      "subdimension": "Energie / Transformation",
+      "sdg_or_sdgplus": "SDG 7",
+      "unit": "percent",
+      "polarity": "higher_is_better",
+      "source_provider": "world_bank_wdi",
+      "source_dataset": "EG.FEC.RNEW.ZS",
+      "source_url": "https://data.worldbank.org/indicator/EG.FEC.RNEW.ZS",
+      "required": true,
+      "red_line": false,
+      "method_version": "territorial-compass-beta-0.2"
+    },
+    {
+      "indicator_id": "wwk_unsdg_si_pov_day1",
+      "name": "Bevoelkerung unter internationaler Armutsgrenze",
+      "dimension": "mensch",
+      "subdimension": "Extreme Armut",
+      "sdg_or_sdgplus": "SDG 1.1.1",
+      "unit": "percent",
+      "polarity": "lower_is_better",
+      "source_provider": "un_global_sdg",
+      "source_dataset": "SI_POV_DAY1",
+      "source_url": "https://unstats.un.org/sdgs/dataportal/database",
+      "filters": {
+        "dimensions": {
+          "Age": "ALLAGE"
+        }
+      },
+      "required": true,
+      "red_line": false,
+      "method_version": "territorial-compass-beta-0.2"
+    }
+  ]
+}

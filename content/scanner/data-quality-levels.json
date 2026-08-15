@@ -1,0 +1,71 @@
+{
+  "metadata": {
+    "status": "draft",
+    "last_updated": "2026-05-22",
+    "principle": "Nicht behaupten, sondern einordnen. Der Scanner liefert wirkungsökonomische Ersteinschätzungen, keine amtlichen Bewertungen."
+  },
+  "levels": [
+    {
+      "level": "A",
+      "label": "produktbezogene, geprüfte Daten / geprüfte berichtete Unternehmensdaten",
+      "meaning": "auditierte, produkt- oder unternehmensspezifische Daten mit klarer Quelle; bei Unternehmen geprüfte berichtete Unternehmensdaten",
+      "scanner_use": "belastbare Grundlage für Hypothese, noch keine finale WÖk-Bewertung"
+    },
+    {
+      "level": "B",
+      "label": "Hersteller-/Berichtsdaten, plausibilisiert",
+      "meaning": "öffentliche Berichte, Nachhaltigkeitsberichte, CSRD/ESRS/GRI oder Herstellerdaten mit Plausibilisierung",
+      "scanner_use": "gute Datenbasis mit Prüfbedarf"
+    },
+    {
+      "level": "C",
+      "label": "offene Datenbank / Label / Zertifizierung",
+      "meaning": "Open Food Facts, Label, Zertifizierung oder offene Datenbank mit begrenztem Scope",
+      "scanner_use": "Teilindikator, nicht vollständige Wirkung"
+    },
+    {
+      "level": "D",
+      "label": "Kategorie- oder Branchenbenchmark",
+      "meaning": "Benchmark, NACE-/Branchenprofil, generische LCA- oder Marktannahme",
+      "scanner_use": "Orientierung, keine Produktaussage"
+    },
+    {
+      "level": "E",
+      "label": "Annahme / unvollständige Daten",
+      "meaning": "plausible, aber ungeprüfte Annahme oder lückenhafte Eingabe",
+      "scanner_use": "nur vorsichtige Hypothese"
+    },
+    {
+      "level": "F",
+      "label": "keine belastbare Datenbasis",
+      "meaning": "keine ausreichenden Daten für eine sinnvolle Einordnung",
+      "scanner_use": "nur Datenbedarf und Fragen ausgeben"
+    }
+  ],
+  "context_specific_interpretation": {
+    "company_scanner": {
+      "A": "geprüfte, berichtete Unternehmensdaten",
+      "B": "öffentliche Nachhaltigkeitsberichte",
+      "C": "öffentliche ESG-/Ratinginformationen",
+      "D": "Branchenbenchmark",
+      "E": "Annahme / unvollständig",
+      "F": "keine belastbare Datenbasis"
+    },
+    "product_scanner": {
+      "A": "produktbezogene, geprüfte Daten",
+      "B": "Hersteller-/Berichtsdaten, plausibilisiert",
+      "C": "offene Datenbank / Label / Zertifizierung",
+      "D": "Kategorie- oder Branchenbenchmark",
+      "E": "Annahme / unvollständige Daten",
+      "F": "keine belastbare Datenbasis"
+    },
+    "text_or_election_scanner": {
+      "A": "Primärtext mit überprüfbarer Quelle und Kontext",
+      "B": "offizieller Textauszug oder PDF mit nachvollziehbarer Herkunft",
+      "C": "öffentlich zugängliche Sekundärquelle",
+      "D": "Kontext- oder Vergleichsquelle",
+      "E": "unvollständiger Auszug / unsichere Zuschreibung",
+      "F": "keine belastbare Textbasis"
+    }
+  }
+}

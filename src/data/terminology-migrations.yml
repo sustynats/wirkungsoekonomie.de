@@ -1,0 +1,56 @@
+wirkung:
+  check:
+    - "Wird Wirkung automatisch positiv verwendet?"
+    - "Ist positive Netto-Wirkung gemeint?"
+    - "Ist ein Bezugspunkt genannt?"
+    - "Ist der Referenzrahmen SDGs / Agenda 2030 / SDG+ genannt?"
+  safeReplacement:
+    from: "Wirkung als Zielgröße"
+    to: "positive Netto-Wirkung als Zielgröße"
+    mode: "suggest-only"
+wirkstoff:
+  check:
+    - "Wird Wirkstoff als harte Fachkategorie statt als Analogie verwendet?"
+    - "Wird klar, dass Wirkstoff nicht selbst Wirkung ist?"
+  preferred:
+    - "gesellschaftlicher Wirkstoff als Analogie"
+    - "Auslöser mit Wirkungspotenzial"
+  mode: "suggest-or-patch-if-unambiguous"
+wirkungspotenzial:
+  check:
+    - "Wird Potenzial mit eingetretener Wirkung verwechselt?"
+    - "Ist bei Sprache, Medien und Narrativen nur ein Wirkpfad gemeint?"
+  mode: "suggest-only"
+frame-framing-reframing:
+  check:
+    - "Wird bei Frame, Framing und Reframing klar zwischen Deutungsrahmen, Prozess und bewusster Verschiebung unterschieden?"
+    - "Wird bei Sprache, Medien und Narrativen zwischen Wirkungspotenzial, Wirkpfad und Wirkungsnachweis unterschieden?"
+    - "Wird Reframing nicht als Manipulation, Schönfärberei oder PR verwendet?"
+    - "Macht der neue Frame mehr Wirklichkeit sichtbar als der alte?"
+    - "Werden Zielkonflikte, Nebenwirkungen und Risiken offengelegt?"
+    - "Vermeidet der Frame Feindbilder, Entwürdigung und unbelegte Absichtszuschreibungen?"
+    - "Verschiebt der Frame den Bewertungsmaßstab nachvollziehbar in Richtung positive Netto-Wirkung für Mensch, Planet und Demokratie?"
+  preferred:
+    - "Frame als Deutungsrahmen"
+    - "Framing als Setzen oder Verstärken eines Deutungsrahmens"
+    - "Reframing als Verschiebung des Deutungs- und Bewertungsrahmens"
+    - "wirkungsorientiertes Reframing als Sichtbarmachen von blinden Flecken, Folgekosten, Wirkungspfaden und positiver Netto-Wirkung"
+  mode: "suggest-only"
+netto-wirkung:
+  check:
+    - "Wird Netto-Wirkung als Addition positiver und negativer Werte dargestellt?"
+    - "Werden rote Linien und Nichtkompensation berücksichtigt?"
+  mode: "suggest-only"
+positive-netto-wirkung:
+  check:
+    - "Wird bei Zielgrößen präzise positive Netto-Wirkung verwendet?"
+  mode: "suggest-or-patch-if-unambiguous"
+wirkungsarchitektur:
+  check:
+    - "Wird Wirkungsarchitektur als Gesamtsystem verstanden?"
+    - "Sind Daten, Regeln, Institutionen, Anreize, Governance, Kontrolle und Lernen genannt?"
+  mode: "suggest-or-add-context-box"
+sdg-plus:
+  check:
+    - "Wird SDG+ als WÖk-Erweiterung und nicht als UN-Kategorie dargestellt?"
+  mode: "suggest-or-add-context-box"

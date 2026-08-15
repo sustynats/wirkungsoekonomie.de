@@ -1,0 +1,50 @@
+[
+  {
+    "Dimension": "Source traceability",
+    "Score 0": "keine Quelle",
+    "Score 1": "Quellenfamilie",
+    "Score 2": "konkreter Standard/Datensatz",
+    "Score 3": "exakte Disclosure-/Paragraph-/Dataset-ID",
+    "Required evidence": "URL, Version, Stand, Responsible Owner"
+  },
+  {
+    "Dimension": "Calculation clarity",
+    "Score 0": "unklar",
+    "Score 1": "verbale Logik",
+    "Score 2": "Zähler/Nenner/Einheit/Systemgrenze klar",
+    "Score 3": "reproduzierbare Formel + Beispielrechnung",
+    "Required evidence": "Formel, Variablen, Unit, period, boundary"
+  },
+  {
+    "Dimension": "Benchmark maturity",
+    "Score 0": "kein Benchmark",
+    "Score 1": "synthetischer Pilot-Benchmark",
+    "Score 2": "sektoraler Benchmark vorhanden",
+    "Score 3": "empirisch validiert und versioniert",
+    "Required evidence": "NACE, Region, Technologieklasse, Datenjahr"
+  },
+  {
+    "Dimension": "Auditability",
+    "Score 0": "nicht prüfbar",
+    "Score 1": "Selbstauskunft",
+    "Score 2": "limited assurance möglich",
+    "Score 3": "reasonable assurance / externe Prüfung",
+    "Required evidence": "Audit trail, evidence, data controls"
+  },
+  {
+    "Dimension": "Data freshness",
+    "Score 0": "unbekannt",
+    "Score 1": ">36 Monate",
+    "Score 2": "12–36 Monate",
+    "Score 3": "≤12 Monate oder ereignisbasiert",
+    "Required evidence": "Stand, update cadence, trigger events"
+  },
+  {
+    "Dimension": "Non-compensation control",
+    "Score 0": "nicht geprüft",
+    "Score 1": "Hinweis vorhanden",
+    "Score 2": "rote Linie markiert",
+    "Score 3": "automatischer Red-Line-Check im Score",
+    "Required evidence": "RedLineScore, RMO, exception log"
+  }
+]

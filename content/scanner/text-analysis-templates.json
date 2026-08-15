@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "status": "draft",
+    "last_updated": "2026-05-22",
+    "principle": "Nicht behaupten, sondern einordnen. Der Scanner liefert wirkungsökonomische Ersteinschätzungen, keine amtlichen Bewertungen."
+  },
+  "templates": [
+    {
+      "id": "article-narrative-analysis",
+      "mode": "text-article-scanner",
+      "sections": [
+        "Erkanntes Thema",
+        "Zentrale Aussage",
+        "Frame / Narrativ",
+        "Wirkungspotenzial",
+        "Resonanzraum",
+        "SDG+-Bezug",
+        "Wirkpfad",
+        "Ausgeblendete Systemfragen",
+        "WÖk-Gegenfrage",
+        "Unsicherheit / keine Faktenprüfung",
+        "Quellenpanel"
+      ],
+      "standard_notice": "Die Analyse zeigt Wirkungspotenziale und Resonanzrisiken, keinen empirischen Wirkungsnachweis und keine vollständige Faktenprüfung.",
+      "copyright_rule": "Keine langen Texte reproduzieren; nur kurze Auszüge und Analyse.",
+      "url_fallback": "Diese Seite kann nicht automatisch gelesen werden. Bitte füge einen kurzen Textauszug ein."
+    },
+    {
+      "id": "election-program-analysis",
+      "mode": "election-program-scanner",
+      "sections": [
+        "Behauptetes Ziel",
+        "Vorgeschlagene Maßnahme",
+        "Alte Logik / impliziter Maßstab",
+        "Wirkungsökonomische Frage",
+        "Wirkung auf Mensch",
+        "Wirkung auf Planet",
+        "Wirkung auf Demokratie",
+        "SDG-/SDG+-Bezug",
+        "Zielkonflikte",
+        "Folgekosten",
+        "Datenbedarf",
+        "Rückkopplungslogik",
+        "WÖk-Gegenfrage",
+        "Quellenpanel"
+      ],
+      "standard_notice": "Keine Wahlempfehlung. Keine Parteienbewertung nach Gesinnung. Keine Personen-Scores. Analyse nur nach Wirkungspfaden, Zielkonflikten, Datenlage, Folgekosten, Risiken und Vereinbarkeit mit Mensch, Planet und Demokratie.",
+      "url_fallback": "Diese Seite oder dieses PDF kann nicht automatisch gelesen werden. Bitte füge einen kurzen Textauszug oder Abschnitt ein."
+    }
+  ]
+}

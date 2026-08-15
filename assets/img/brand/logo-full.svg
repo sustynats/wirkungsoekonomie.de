@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 280" role="img" aria-labelledby="title desc">
+  <title id="title">Logo der Wirkungsökonomie</title>
+  <desc id="desc">Vollstaendiges WÖk-Logo mit Signet, Wortmarke und Claim.</desc>
+  <defs>
+    <linearGradient id="woek-bg" x1="34" y1="28" x2="230" y2="236" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#071a3a"/>
+      <stop offset=".52" stop-color="#031126"/>
+      <stop offset="1" stop-color="#08234a"/>
+    </linearGradient>
+    <radialGradient id="woek-glow" cx="50%" cy="52%" r="58%">
+      <stop offset="0" stop-color="#123866" stop-opacity=".82"/>
+      <stop offset="1" stop-color="#031126" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="woek-needle-gold" x1="132" y1="110" x2="132" y2="152" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffd27b"/>
+      <stop offset="1" stop-color="#d69d35"/>
+    </linearGradient>
+    <linearGradient id="woek-needle-cream" x1="132" y1="152" x2="132" y2="194" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f6ead4"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <rect x="24" y="24" width="216" height="216" rx="52" fill="url(#woek-bg)"/>
+    <rect x="24" y="24" width="216" height="216" rx="52" fill="url(#woek-glow)"/>
+    <g fill="#8794a7" opacity=".58">
+      <path d="M132 45l6.2 37h-12.4z"/>
+      <path d="M132 219l-6.2-37h12.4z"/>
+      <path d="M45 155l37-6.2v12.4z"/>
+      <path d="M219 155l-37 6.2v-12.4z"/>
+    </g>
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="132" cy="104" r="50" stroke="#fff3df" stroke-width="8.2"/>
+      <circle cx="101" cy="162" r="50" stroke="#3e9468" stroke-width="8.2"/>
+      <circle cx="163" cy="162" r="50" stroke="#d9a13a" stroke-width="8.2"/>
+      <path d="M132 104 101 162 163 162Z" stroke="#dbe3e5" stroke-width="3.5" opacity=".45"/>
+    </g>
+    <g stroke="#031126" stroke-linejoin="round" stroke-width="1.6">
+      <path d="M132 118 142 152H132Z" fill="url(#woek-needle-gold)"/>
+      <path d="M132 118 122 152H132Z" fill="#f0b54b"/>
+      <path d="M132 198 142 152H132Z" fill="url(#woek-needle-cream)"/>
+      <path d="M132 198 122 152H132Z" fill="#fff9ee"/>
+    </g>
+    <path d="M101 152h62" stroke="#031126" stroke-linecap="round" stroke-width="2.4"/>
+  </g>
+  <text x="284" y="112" fill="#0B1020" font-family="Georgia, 'Times New Roman', serif" font-size="34" letter-spacing="3">WIRKUNGSÖKONOMIE</text>
+  <text x="287" y="158" fill="#2F7D5C" font-family="Inter, Arial, sans-serif" font-size="19" font-weight="800" letter-spacing="3">WIRKUNG STATT KAPITAL</text>
+  <text x="294" y="202" fill="#0B1020" font-family="Inter, Arial, sans-serif" font-size="18">Für Mensch, Planet und Demokratie.</text>
+</svg>

@@ -1,0 +1,94 @@
+{
+  "name": "WÖk-App",
+  "short_name": "WÖk",
+  "description": "WÖk-Wirkungscheck, Frag die WÖk und Produktcheck mit Text, Link oder Bildbeleg.",
+  "id": "/app/",
+  "start_url": "/app/?source=pwa",
+  "scope": "/app/",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui", "browser"],
+  "background_color": "#f7f1e8",
+  "theme_color": "#f7f1e8",
+  "orientation": "portrait-primary",
+  "lang": "de-DE",
+  "dir": "ltr",
+  "categories": ["education", "productivity", "news"],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/assets/img/brand/app-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/img/brand/app-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/img/brand/signet.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "WÖk-Wirkungscheck",
+      "short_name": "Wirkungscheck",
+      "url": "/app/?mode=factcheck",
+      "description": "Fakten, Frames und Folgen prüfen.",
+      "icons": [
+        {
+          "src": "/assets/img/brand/app-icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Frag die WÖk",
+      "short_name": "WÖk",
+      "url": "/app/?mode=woek",
+      "description": "Eine Frage zur Wirkungsökonomie stellen.",
+      "icons": [
+        {
+          "src": "/assets/img/brand/app-icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Produktcheck",
+      "short_name": "Produkt",
+      "url": "/app/?mode=product",
+      "description": "Produktversprechen und Quellenlage prüfen.",
+      "icons": [
+        {
+          "src": "/assets/img/brand/app-icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/assets/img/app/pwa-screenshot-wide.png",
+      "sizes": "1440x960",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "WÖk-App auf dem Desktop mit Eingabe und Antwortbereich."
+    },
+    {
+      "src": "/assets/img/app/pwa-screenshot-mobile.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "WÖk-App auf dem Smartphone mit WÖk-Wirkungscheck, Frag die WÖk und Produktcheck."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "generated_at": "2026-06-07T14:54:43.823Z",
+  "principle": "Orientierung vor Werkzeug",
+  "scope": "/oeffentlicher-wirkungsraum/ und Unterseiten im öffentlichen Wirkungsraum",
+  "levels": [
+    {
+      "level": 1,
+      "name": "Verstehen",
+      "purpose": "Die fünf Wellen öffentlicher Wirkung und die Tiefe des Wirkungsraums erklären.",
+      "anchors": [
+        "#verstehen",
+        "#fuenf-wellen",
+        "#tiefe"
+      ]
+    },
+    {
+      "level": 2,
+      "name": "Anwenden",
+      "purpose": "Debattenkarten, Narrative, Debatten-Kompass, Agenda-Radar, Ursachen-Navigator und Resilienz-Prinzipien auffindbar machen.",
+      "anchors": [
+        "#anwenden",
+        "#aktuell"
+      ]
+    },
+    {
+      "level": 3,
+      "name": "Vertiefen",
+      "purpose": "Dossiers, Journal, Glossar, Akademie und Forschung bündeln.",
+      "anchors": [
+        "#vertiefen"
+      ]
+    }
+  ],
+  "preserved_urls": [
+    "/oeffentlicher-wirkungsraum/",
+    "/oeffentlicher-wirkungsraum/dossier-stein-wellen-tiefe/",
+    "/wirkungsradar/",
+    "/wirkungsradar/debattenkarten/",
+    "/wirkungsradar/live/",
+    "/wirkungsradar/narrative/",
+    "/wirkungsradar/antwort-playbooks/",
+    "/wirkungsradar/resonanz-kompass/",
+    "/wirkungsradar/agenda-radar/",
+    "/wirkungsradar/ursachen-navigator/",
+    "/wirkungsradar/resilienz-prinzipien/",
+    "/wirkungsradar/methode/"
+  ],
+  "changed_components": [
+    {
+      "file": "scripts/wirkungsradar/build-resonance-compass.mjs",
+      "change": "Hub-Seite wird generatorseitig nach Verstehen, Anwenden, Vertiefen aufgebaut; Suche/Filter und Dossier-/Vertiefungslinks integriert."
+    },
+    {
+      "file": "scripts/wirkungsradar/apply-master-debattenkarten.mjs",
+      "change": "Debattenkarten erhalten additiv Wellenprofil, Tiefe und Index-Previews mit Hauptwelle/Tiefenstruktur."
+    }
+  ],
+  "no_public_placeholders": true,
+  "notes": [
+    "Bestehende URLs bleiben erhalten.",
+    "Wellen/Tiefe ordnen Inhalte, ersetzen aber keine Antworttexte, Quellen oder Folgenchecks.",
+    "Wirkungsraum-Funktionen Merken, Sammlung, Lernliste und Notizen greifen weiterhin über den globalen Wirkungsraum-Layer."
+  ]
+}

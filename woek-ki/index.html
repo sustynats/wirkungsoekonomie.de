@@ -1,0 +1,1007 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WÖk-KI Beta | Wirkungsökonomie</title>
+    <meta name="description" content="Frag die Wirkungsökonomie: WÖk-KI Beta beantwortet Fragen mit Quellen aus Website, Bibliothek, Glossar und Dossiers.">
+    <link rel="canonical" href="https://wirkungsoekonomie.de/woek-ki/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:site_name" content="Wirkungsökonomie">
+    <meta property="og:title" content="WÖk-KI Beta">
+    <meta property="og:description" content="Ein quellengebundener Beta-Assistent für Fragen zur Wirkungsökonomie.">
+    <meta property="og:url" content="https://wirkungsoekonomie.de/woek-ki/">
+    <meta property="og:image" content="https://wirkungsoekonomie.de/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="WÖk-KI Beta">
+    <meta name="twitter:description" content="Ein quellengebundener Beta-Assistent für Fragen zur Wirkungsökonomie.">
+    <meta name="twitter:image" content="https://wirkungsoekonomie.de/assets/img/generated/hero-systemgrafik-wirkungsoekonomie.png">
+    <link rel="icon" href="../assets/img/brand/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../assets/css/style.css?v=20260628-woek-feedback">
+    <style>
+      .woek-ai-shell {
+        display: grid;
+        gap: clamp(1rem, 3vw, 1.5rem);
+        align-items: start;
+      }
+
+      .woek-ai-panel,
+      .woek-ai-result,
+      .woek-ai-status {
+        display: grid;
+        gap: 1rem;
+        padding: clamp(1.1rem, 3vw, 1.75rem);
+        border: 1px solid var(--line, #e7ded0);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.78);
+      }
+
+      .woek-ai-form {
+        display: grid;
+        gap: 0.85rem;
+      }
+
+      .woek-ai-form label {
+        color: var(--ink, #171717);
+        font-size: 0.78rem;
+        font-weight: 850;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .woek-ai-form textarea {
+        width: 100%;
+        min-height: 14rem;
+        padding: 0.85rem 0.95rem;
+        border: 1px solid var(--line, #e7ded0);
+        border-radius: 8px;
+        background: #fff;
+        color: var(--ink, #171717);
+        font: inherit;
+        font-size: 1rem;
+        font-weight: 650;
+        line-height: 1.55;
+        resize: vertical;
+      }
+
+      .woek-ai-actions,
+      .woek-ai-examples,
+      .woek-ai-source-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.6rem;
+      }
+
+      .woek-ai-example {
+        min-height: 2.35rem;
+        padding: 0.48rem 0.7rem;
+        border: 1px solid rgba(47, 125, 92, 0.24);
+        border-radius: 8px;
+        background: rgba(47, 125, 92, 0.08);
+        color: var(--ink, #171717);
+        font: inherit;
+        font-size: 0.9rem;
+        font-weight: 780;
+        cursor: pointer;
+      }
+
+      .woek-ai-result-head {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        align-items: flex-start;
+      }
+
+      .woek-ai-beta-pill {
+        display: inline-flex;
+        align-items: center;
+        width: fit-content;
+        min-height: 1.65rem;
+        padding: 0.24rem 0.5rem;
+        border: 1px solid rgba(154, 111, 18, 0.28);
+        border-radius: 999px;
+        background: rgba(154, 111, 18, 0.1);
+        color: #73520d;
+        font-size: 0.72rem;
+        font-weight: 900;
+        letter-spacing: 0.08em;
+        line-height: 1;
+        text-transform: uppercase;
+      }
+
+      .woek-ai-answer {
+        white-space: pre-wrap;
+        color: var(--ink, #171717);
+        line-height: 1.72;
+      }
+
+      .woek-ai-warning {
+        margin: 0;
+        padding: 0.75rem 0.85rem;
+        border: 1px solid rgba(154, 111, 18, 0.24);
+        border-radius: 8px;
+        background: rgba(154, 111, 18, 0.08);
+        color: #73520d;
+        font-weight: 760;
+      }
+
+      .woek-ai-feedback {
+        display: grid;
+        gap: 0.65rem;
+        padding-top: 1rem;
+        border-top: 1px solid rgba(11, 16, 32, 0.1);
+      }
+
+      .woek-ai-feedback[hidden] {
+        display: none;
+      }
+
+      .woek-ai-feedback p {
+        margin: 0;
+        font-weight: 850;
+      }
+
+      .woek-ai-feedback-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .woek-ai-feedback button {
+        min-height: 2.35rem;
+        padding: 0.55rem 0.72rem;
+        border: 1px solid rgba(11, 16, 32, 0.16);
+        border-radius: 6px;
+        background: #fff;
+        color: var(--ink, #171717);
+        font: inherit;
+        font-size: 0.9rem;
+        font-weight: 850;
+        cursor: pointer;
+      }
+
+      .woek-ai-feedback button:hover,
+      .woek-ai-feedback button:focus-visible {
+        border-color: rgba(47, 125, 92, 0.4);
+        color: var(--green, #2f7d5c);
+      }
+
+      .woek-ai-feedback button:disabled {
+        cursor: default;
+        opacity: 0.62;
+      }
+
+      .woek-ai-feedback small {
+        color: var(--muted, #6f6a61);
+        font-size: 0.82rem;
+        font-weight: 760;
+      }
+
+      .woek-ai-sources {
+        display: grid;
+        gap: 0.75rem;
+      }
+
+      .woek-ai-source-card {
+        display: grid;
+        gap: 0.42rem;
+        padding: 0.95rem 1rem;
+        border: 1px solid var(--line, #e7ded0);
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.74);
+        color: var(--ink, #171717);
+        text-decoration: none;
+      }
+
+      .woek-ai-source-card span {
+        color: var(--green, #2f7d5c);
+        font-size: 0.74rem;
+        font-weight: 900;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .woek-ai-source-card strong {
+        color: var(--ink, #171717);
+        font-family: var(--font-heading, Georgia, serif);
+        font-size: 1.05rem;
+        line-height: 1.22;
+      }
+
+      .woek-ai-source-card p {
+        margin: 0;
+        color: var(--muted, #6f6a61);
+        font-size: 0.92rem;
+        line-height: 1.48;
+      }
+
+      .woek-ai-source-card:hover,
+      .woek-ai-source-card:focus-visible {
+        border-color: rgba(47, 125, 92, 0.42);
+        background: #fff;
+      }
+
+      .woek-ai-meta {
+        display: grid;
+        gap: 0.55rem;
+        margin: 0;
+      }
+
+      .woek-ai-meta div {
+        display: grid;
+        gap: 0.1rem;
+      }
+
+      .woek-ai-meta dt {
+        color: var(--green, #2f7d5c);
+        font-size: 0.72rem;
+        font-weight: 900;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .woek-ai-meta dd {
+        margin: 0;
+        color: var(--ink, #171717);
+        font-weight: 800;
+      }
+
+      @media (max-width: 680px) {
+        .woek-ai-actions .btn {
+          width: 100%;
+        }
+
+        .woek-ai-result-head {
+          display: grid;
+        }
+      }
+
+      @media (min-width: 880px) {
+        .woek-ai-shell {
+          grid-template-columns: minmax(0, 1fr) minmax(280px, 0.38fr);
+        }
+      }
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://wirkungsoekonomie.de/woek-ki/#webpage",
+        "url": "https://wirkungsoekonomie.de/woek-ki/",
+        "name": "WÖk-KI Beta",
+        "description": "Quellengebundener Beta-Assistent für Fragen zur Wirkungsökonomie.",
+        "inLanguage": "de",
+        "isPartOf": {
+          "@id": "https://wirkungsoekonomie.de/#website"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header" data-search-exclude>
+      <a class="brand" href="../index.html" aria-label="Wirkungsökonomie Startseite">
+        <span class="brand-mark"><img src="../assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span>
+        <span class="brand-name">Wirkungsökonomie</span>
+      </a>
+      <nav class="site-utility-nav" aria-label="Schnellzugriffe" data-search-exclude>
+        <a class="site-utility-link site-utility-link--suche" href="../suche.html" data-nav-match="suche.html" data-utility-label="Suche">Suche</a>
+        <a class="site-utility-link site-utility-link--woek-ki" href="../woek-ki/" data-nav-match="woek-ki/" data-utility-label="WÖk-KI">KI</a>
+        <a class="site-utility-link site-utility-link--wok-app" href="../app/" data-nav-match="app/" data-utility-label="WÖk-App">WÖk-App</a>
+        <a class="site-utility-link site-utility-link--mein-wirkungsraum" href="../mein-wirkungsraum/" data-nav-match="mein-wirkungsraum/" data-utility-label="Mein Wirkungsraum" data-utility-primary="true">Mein Wirkungsraum</a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-icon" aria-hidden="true">☰</span>
+        <span class="sr-only">Menü</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation" data-search-exclude>
+        <a href="../index.html" data-nav-match="index.html">Start</a>
+        <a href="../verstehen/" data-nav-match="verstehen/|verstehen.html|wirkungsoekonomie.html|wirkungsoekonomie/|modell.html|ordnung/|so-wirkt-wirkungsoekonomie/">Verstehen</a>
+        <a href="../fuer/" data-nav-match="fuer/|fuer-wen/|fuer/unternehmen.html|fuer/unternehmen/impact-controlling/|fuer/buergerinnen.html|fuer/investoren.html|fuer/investoren/impact-controlling/|fuer/kommunen.html">Für wen?</a>
+        <a href="../wirkungsfelder/" data-nav-match="wirkungsfelder/|anwendungen.html">Wirkungsfelder</a>
+        <a href="../wirkungssteuerung/" data-nav-match="wirkungssteuerung/|fuer/wirkungssteuer.html|werkstatt/gesetze/wirkungssteuergesetz/|werkzeuge/scorecards/|werkzeuge/t-sroi/">Wirkungssteuerung</a>
+        <a href="../oeffentlicher-wirkungsraum/" data-nav-match="oeffentlicher-wirkungsraum/|wirkungsradar/|woek-ki/|app/">Öffentlicher Wirkungsraum</a>
+        <a href="../werkzeuge/" data-nav-match="werkzeuge/|tools/|methodik/|workflow.html|scanner.html|anwendungen/scanner.html|scorecard-dashboard.html|erleben/|erleben.html|ausprobieren/">Praxis &amp; Tools</a>
+        <a href="../lernen/" data-nav-match="lernen/|akademie.html|akademie/">Lernen</a>
+        <a href="../bibliothek/" data-nav-match="bibliothek/|downloads.html|downloads/|dokumente/|referenz/|buch.html|buch/|evidenz/|quellen/|fachbibliothek/|blog.html|blog/|podcast/|begriffe/|glossar.html">Bibliothek</a>
+        <a href="../mitmachen.html" data-nav-match="mitmachen.html|mitmachen/">Mitmachen</a>
+        <div class="site-nav-utility" aria-label="Schnellzugriffe">
+        <a class="site-utility-link site-utility-link--suche" href="../suche.html" data-nav-match="suche.html" data-utility-label="Suche">Suche</a>
+        <a class="site-utility-link site-utility-link--woek-ki" href="../woek-ki/" data-nav-match="woek-ki/" data-utility-label="WÖk-KI">KI</a>
+        <a class="site-utility-link site-utility-link--wok-app" href="../app/" data-nav-match="app/" data-utility-label="WÖk-App">WÖk-App</a>
+        <a class="site-utility-link site-utility-link--mein-wirkungsraum" href="../mein-wirkungsraum/" data-nav-match="mein-wirkungsraum/" data-utility-label="Mein Wirkungsraum" data-utility-primary="true">Mein Wirkungsraum</a>
+        </div>
+      </nav>
+    </header>
+
+    <main data-search-content>
+      <section class="hero experience-hero">
+        <div class="hero-copy">
+          <p class="hero-kicker">WÖk-KI <span class="woek-ai-beta-pill">Beta</span></p>
+          <h1 class="hero-title">Frag die Wirkungsökonomie.</h1>
+          <p class="hero-subtitle">Ein quellengebundener Assistent für Website, Bibliothek, Glossar, Dossiers und Methoden.</p>
+          <p class="card-text">Die WÖk-KI beantwortet Fragen zur Wirkungsökonomie mit Fundstellen aus dem öffentlichen Wissensbestand. Sie ist ein Lern- und Orientierungswerkzeug, keine amtliche Bewertung und keine Beratung.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#frage">Frage stellen</a>
+            <a class="btn btn-secondary" href="../bibliothek/">Bibliothek öffnen</a>
+          </div>
+        </div>
+        <div class="hero-aside card">
+          <p class="hero-kicker">Beta-Status</p>
+          <h2>Antwort zuerst, Erklärung danach.</h2>
+          <p class="card-text">Die Antwort beginnt mit dem Satz, der direkt weiterhilft. Danach folgen WÖk-Einordnung, Quellen, Unsicherheit und Grenzen.</p>
+        </div>
+      </section>
+
+      <section class="section demo-governance" aria-labelledby="schutzlinien">
+        <div class="section-header">
+          <p class="hero-kicker">Schutzlinien</p>
+          <h2 id="schutzlinien">Was die WÖk-KI leistet und was nicht</h2>
+          <p>Diese Beta ist ein Zugang zum Wissensbestand der Wirkungsökonomie. Sie ersetzt keine fachliche Einzelfallprüfung.</p>
+        </div>
+        <aside class="protection-notice" role="note" aria-label="Schutzlinien der WÖk-KI Beta">
+          <p class="card-kicker">Schutzlinien</p>
+          <h3 class="card-title">Nicht amtlich. Keine Beratung. Keine Personenbewertung.</h3>
+          <ul class="protection-notice-list">
+            <li>Keine amtliche WÖk-Zertifizierung und keine endgültige Einstufung.</li>
+            <li>Keine Rechts-, Steuer-, Anlage-, Kredit-, Versicherungs- oder Förderberatung.</li>
+            <li>Keine Personenbewertung und kein Social-Credit-Mechanismus.</li>
+            <li>Quellenlage, Interpretation und Unsicherheit müssen sichtbar bleiben.</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="section" id="frage" aria-labelledby="frage-title">
+        <div class="section-header">
+          <p class="hero-kicker">Assistent</p>
+          <h2 id="frage-title">Eine Frage stellen</h2>
+          <p>Formuliere deine Frage möglichst konkret. Die Beta nutzt denselben Oracle-Strang wie der WÖk-Wirkungscheck: Antwort zuerst, danach WÖk-Einordnung, Quellen und Grenzen.</p>
+        </div>
+
+        <div class="woek-ai-shell">
+          <div class="woek-ai-panel">
+            <form class="woek-ai-form" id="woek-ai-form">
+              <label for="woek-ai-question">Frage</label>
+              <textarea id="woek-ai-question" name="question" rows="7" placeholder="Stelle eine Frage zur Wirkungsökonomie."></textarea>
+              <div class="woek-ai-actions">
+                <button class="btn btn-primary" id="woek-ai-submit" type="submit" disabled>Frage stellen</button>
+                <button class="btn btn-secondary" id="woek-ai-clear" type="button">Leeren</button>
+              </div>
+            </form>
+            <div class="woek-ai-examples" aria-label="Beispielfragen">
+              <button class="woek-ai-example" type="button">Was bedeutet Wirkung statt Kapital?</button>
+              <button class="woek-ai-example" type="button">Wie hängt die Wirkungsumsatzsteuer mit Produktscorecards zusammen?</button>
+              <button class="woek-ai-example" type="button">Welche Rolle spielen Mensch, Planet und Demokratie im Modell?</button>
+            </div>
+            <section class="woek-ai-result" aria-live="polite" id="woek-ai-result">
+              <div class="woek-ai-result-head">
+                <div>
+                  <p class="hero-kicker" id="woek-ai-mode">Bereit</p>
+                  <h3 class="card-title">Antwort</h3>
+                </div>
+                <span class="woek-ai-beta-pill">Beta</span>
+              </div>
+              <p class="card-text" id="woek-ai-placeholder">Noch keine Frage gestellt.</p>
+              <p class="woek-ai-warning" id="woek-ai-warning" hidden></p>
+              <div class="woek-ai-answer" id="woek-ai-answer"></div>
+              <section class="woek-ai-feedback" id="woek-ai-feedback" hidden>
+                <p>War diese Antwort hilfreich?</p>
+                <div class="woek-ai-feedback-actions">
+                  <button type="button" id="woek-ai-feedback-up" aria-label="Antwort als hilfreich bewerten">Hilfreich</button>
+                  <button type="button" id="woek-ai-feedback-down" aria-label="Antwort als nicht hilfreich bewerten">Nicht hilfreich</button>
+                </div>
+                <small id="woek-ai-feedback-status"></small>
+              </section>
+            </section>
+          </div>
+
+          <aside class="woek-ai-status" aria-label="Status und Quellen">
+            <div>
+              <p class="hero-kicker">Status</p>
+              <h3 class="card-title">WÖk-KI Beta</h3>
+            </div>
+            <dl class="woek-ai-meta">
+              <div>
+                <dt>Anbieter</dt>
+                <dd id="woek-ai-provider">Hosted API</dd>
+              </div>
+              <div>
+                <dt>Modell</dt>
+                <dd id="woek-ai-model">OpenAI-kompatibel</dd>
+              </div>
+              <div>
+                <dt>Quellen</dt>
+                <dd id="woek-ai-source-count">0</dd>
+              </div>
+            </dl>
+            <div class="woek-ai-sources">
+              <div>
+                <p class="hero-kicker">Quellen</p>
+                <h3 class="card-title">Fundstellen</h3>
+              </div>
+              <div class="woek-ai-source-list" id="woek-ai-sources">
+                <p class="card-text">Noch keine Quellenabfrage in dieser Sitzung.</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+      <section class="section section-soft wirkungsraum-query-inline" aria-labelledby="ai-history-title">
+        <div>
+          <div class="section-header">
+            <p class="hero-kicker">Mein Wirkungsraum</p>
+            <h2 id="ai-history-title">Meine vergangenen KI-Anfragen</h2>
+            <p>Frühere KI-Fragen bleiben mit Antwort und Quellen lokal in diesem Browser. Du kannst eine Frage erneut öffnen oder sie direkt wieder in das Eingabefeld übernehmen.</p>
+          </div>
+          <div class="wirkungsraum-history-list" data-ai-history-inline-list>
+            <article class="card"><p class="card-text">Noch keine vergangenen KI-Anfragen in diesem Browser.</p></article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" data-search-exclude>
+      <div class="footer-grid">
+        <div>
+          <p class="hero-kicker">Wirkungsökonomie</p>
+          <h2>Die neue Ordnung des Wohlstands</h2>
+          <p>Die Wirkungsökonomie ist ein eigenständiges Gesellschafts- und Wirtschaftsmodell, das Wirkung auf Mensch, Planet und Demokratie sichtbar macht, bewertet und in Entscheidungen zurückführt.</p>
+          <p><a class="text-link" href="../mitmachen.html">Kontakt und Mitmachen</a></p>
+        </div>
+        <a class="btn btn-primary" href="../kompass.html">WÖk-Kompass öffnen</a>
+        <nav class="footer-nav" aria-label="Footer Navigation" data-search-exclude>
+          <div class="footer-nav-group">
+      <h3>Verstehen</h3>
+      <div class="footer-nav-links">
+          <a href="../verstehen/" data-nav-match="verstehen/">Einstieg</a>
+          <a href="../verstehen/woek-auf-einer-seite/" data-nav-match="verstehen/woek-auf-einer-seite/">WÖk auf einer Seite</a>
+          <a href="../so-wirkt-wirkungsoekonomie/" data-nav-match="so-wirkt-wirkungsoekonomie/">So wirkt WÖk</a>
+          <a href="../modell.html" data-nav-match="modell.html|modell/">Modell</a>
+          <a href="../einwaende/" data-nav-match="einwaende/">Einwände</a>
+          <a href="../begriffe/" data-nav-match="begriffe/|glossar.html">Glossar</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Für wen?</h3>
+      <div class="footer-nav-links">
+          <a href="../fuer/" data-nav-match="fuer/">Übersicht</a>
+          <a href="../fuer/buergerinnen.html" data-nav-match="fuer/buergerinnen.html">Bürger:innen</a>
+          <a href="../fuer/unternehmen.html" data-nav-match="fuer/unternehmen.html">Unternehmen</a>
+          <a href="../fuer/unternehmen/impact-controlling/" data-nav-match="fuer/unternehmen/impact-controlling/">Impact-Controlling Unternehmen</a>
+          <a href="../fuer/politik.html" data-nav-match="fuer/politik.html">Politik</a>
+          <a href="../fuer/kommunen.html" data-nav-match="fuer/kommunen.html">Kommunen</a>
+          <a href="../fuer/investoren.html" data-nav-match="fuer/investoren.html">Investor:innen</a>
+          <a href="../fuer/investoren/impact-controlling/" data-nav-match="fuer/investoren/impact-controlling/">Impact-Controlling Finanzmarkt</a>
+          <a href="../fuer/journalismus.html" data-nav-match="fuer/journalismus.html">Journalismus</a>
+          <a href="../fuer/wissenschaft-forschung.html" data-nav-match="fuer/wissenschaft-forschung.html">Wissenschaft</a>
+          <a href="../fuer/gesundheit.html" data-nav-match="fuer/gesundheit.html">Gesundheit</a>
+          <a href="../fuer/landwirtschaft/" data-nav-match="fuer/landwirtschaft/">Landwirtschaft</a>
+          <a href="../fuer/mieter.html" data-nav-match="fuer/mieter.html">Wohnen</a>
+          <a href="../fuer/rente.html" data-nav-match="fuer/rente.html">Rente</a>
+          <a href="../fuer/wirkungseinkommen.html" data-nav-match="fuer/wirkungseinkommen.html">Wirkungseinkommen</a>
+          <a href="../fuer/akademie.html" data-nav-match="fuer/akademie.html">Akademie</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Wirkungsfelder</h3>
+      <div class="footer-nav-links">
+          <a href="../wirkungsfelder/" data-nav-match="wirkungsfelder/">Alle Wirkungsfelder</a>
+          <a href="../wirkungsfelder/bildung/" data-nav-match="wirkungsfelder/bildung/">Bildung</a>
+          <a href="../wirkungsfelder/gesundheit-pflege/" data-nav-match="wirkungsfelder/gesundheit-pflege/">Gesundheit &amp; Pflege</a>
+          <a href="../wirkungsfelder/klima-energie-ressourcen/" data-nav-match="wirkungsfelder/klima-energie-ressourcen/">Klima, Energie &amp; Ressourcen</a>
+          <a href="../wirkungsfelder/produkte-konsum/" data-nav-match="wirkungsfelder/produkte-konsum/">Produkte &amp; Konsum</a>
+          <a href="../wirkungsfelder/wirtschaft-unternehmen/" data-nav-match="wirkungsfelder/wirtschaft-unternehmen/">Wirtschaft &amp; Unternehmen</a>
+          <a href="../wirkungsfelder/arbeit-einkommen/" data-nav-match="wirkungsfelder/arbeit-einkommen/">Arbeit &amp; Einkommen</a>
+          <a href="../wirkungsfelder/finanzsystem-kapital/" data-nav-match="wirkungsfelder/finanzsystem-kapital/">Finanzsystem &amp; Kapital</a>
+          <a href="../wirkungsfelder/staat-recht-demokratie/" data-nav-match="wirkungsfelder/staat-recht-demokratie/">Staat, Recht &amp; Demokratie</a>
+          <a href="../wirkungsfelder/medien-oeffentlichkeit/" data-nav-match="wirkungsfelder/medien-oeffentlichkeit/">Öffentlichkeit &amp; Medien</a>
+          <a href="../wirkungsfelder/wissenschaft-innovation-digitalisierung/" data-nav-match="wirkungsfelder/wissenschaft-innovation-digitalisierung/">Wissenschaft &amp; Innovation</a>
+          <a href="../wirkungsfelder/wirkungsfinanzpolitik/" data-nav-match="wirkungsfelder/wirkungsfinanzpolitik/">Wirkungsfinanzpolitik</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Wirkungssteuerung</h3>
+      <div class="footer-nav-links">
+          <a href="../wirkungssteuerung/" data-nav-match="wirkungssteuerung/">Überblick</a>
+          <a href="../wirkungssteuerung/wirkungssteuer/" data-nav-match="wirkungssteuerung/wirkungssteuer/">Wirkungssteuer</a>
+          <a href="../wirkungssteuerung/wirkungshaushalt/" data-nav-match="wirkungssteuerung/wirkungshaushalt/">Wirkungshaushalt</a>
+          <a href="../wirkungsfelder/wirkungsfinanzpolitik/" data-nav-match="wirkungsfelder/wirkungsfinanzpolitik/">Wirkungsfinanzpolitik</a>
+          <a href="../werkzeuge/woek-id-register/" data-nav-match="werkzeuge/woek-id-register/|woek-id-register/|register/">WÖk-ID Register</a>
+          <a href="../werkzeuge/woek-ids/" data-nav-match="werkzeuge/woek-ids/|wirkungssteuerung/woek-ids/">WÖk-IDs</a>
+          <a href="../werkzeuge/scorecards/" data-nav-match="werkzeuge/scorecards/|wirkungssteuerung/scorecards/">Scorecards</a>
+          <a href="../werkzeuge/netto-wirkungs-index/" data-nav-match="werkzeuge/netto-wirkungs-index/">Netto-Wirkungs-Index</a>
+          <a href="../begriffe/impact-of-investment/" data-nav-match="begriffe/impact-of-investment/">Impact-of-Investment</a>
+          <a href="../werkzeuge/t-sroi/" data-nav-match="werkzeuge/t-sroi/">T-SROI</a>
+          <a href="../werkzeuge/reverse-merit-order/" data-nav-match="werkzeuge/reverse-merit-order/|wirkungssteuerung/reverse-merit-order/">Reverse Merit Order</a>
+          <a href="../werkzeuge/" data-nav-match="werkzeuge/">Alle Werkzeuge</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Öffentlicher Wirkungsraum</h3>
+      <div class="footer-nav-links">
+          <a href="../oeffentlicher-wirkungsraum/" data-nav-match="oeffentlicher-wirkungsraum/">Übersicht</a>
+          <a href="../wirkungsradar/" data-nav-match="wirkungsradar/">Wirkungsradar</a>
+          <a href="../werkzeuge/faktencheck/" data-nav-match="werkzeuge/faktencheck/">WÖk-Wirkungscheck</a>
+          <a href="../wirkungsradar/debattenkarten/" data-nav-match="wirkungsradar/debattenkarten/">Debattenkarten</a>
+          <a href="../wirkungsradar/themen/" data-nav-match="wirkungsradar/themen/">Themenräume</a>
+          <a href="../wirkungsradar/ursachen/" data-nav-match="wirkungsradar/ursachen/">Ursachen-Navigator</a>
+          <a href="../wirkungsradar/antwort-playbooks/" data-nav-match="wirkungsradar/antwort-playbooks/">Antwort-Playbooks</a>
+          <a href="../woek-ki/" data-nav-match="woek-ki/">WÖk-KI</a>
+          <a href="../app/" data-nav-match="app/">WÖk-App</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Praxis &amp; Tools</h3>
+      <div class="footer-nav-links">
+          <a href="../app/" data-nav-match="app/">WÖk-App</a>
+          <a href="../erleben/" data-nav-match="erleben.html|erleben/">Interaktive Demos</a>
+          <a href="../erleben/produktwirkungsrechner/" data-nav-match="erleben/produktwirkungsrechner/">Produktwirkungsrechner</a>
+          <a href="../erleben/impact-controlling-rechner/" data-nav-match="erleben/impact-controlling-rechner/">Impact-Controlling-Rechner</a>
+          <a href="../erleben/medienwirkungscheck/" data-nav-match="erleben/medienwirkungscheck/">Medienwirkungscheck</a>
+          <a href="../erleben/unternehmens-wirkungscheck/" data-nav-match="erleben/unternehmens-wirkungscheck/">Unternehmens-Wirkungscheck</a>
+          <a href="../erleben/wirkungsportfolio-generator/" data-nav-match="erleben/wirkungsportfolio-generator/">Wirkungsportfolio-Generator</a>
+          <a href="../erleben/wohnwirkungsrechner/" data-nav-match="erleben/wohnwirkungsrechner/">Wohnwirkungsrechner</a>
+          <a href="../erleben/wirkungsrenten-rechner/" data-nav-match="erleben/wirkungsrenten-rechner/">Wirkungsrenten-Rechner</a>
+          <a href="../erleben/" data-nav-match="erleben/">Alle Demos</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Lernen</h3>
+      <div class="footer-nav-links">
+          <a href="../lernen/" data-nav-match="lernen/">Lernportal</a>
+          <a href="../akademie/" data-nav-match="akademie/">Akademie</a>
+          <a href="../akademie/wirkungsfinanzpolitik/" data-nav-match="akademie/wirkungsfinanzpolitik/">Wirkungsfinanzpolitik</a>
+          <a href="../akademie/wirkungsradar/" data-nav-match="akademie/wirkungsradar/">Wirkungsradar</a>
+          <a href="../mein-wirkungsraum/" data-nav-match="mein-wirkungsraum/">Mein Wirkungsraum</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Bibliothek</h3>
+      <div class="footer-nav-links">
+          <a href="../bibliothek/" data-nav-match="bibliothek/">Bibliothek</a>
+          <a href="../journal/" data-nav-match="journal/|blog.html|blog/">Journal</a>
+          <a href="../podcast/" data-nav-match="podcast/">Podcast</a>
+          <a href="../referenz/" data-nav-match="referenz/">Online-Buch</a>
+          <a href="../dokumente/" data-nav-match="dokumente/">Dokumente</a>
+          <a href="../dokumente/wirkungsfinanzpolitik/" data-nav-match="dokumente/wirkungsfinanzpolitik/">Wirkungsfinanzpolitik-Aufsatz</a>
+          <a href="../werkstatt/arbeitsbibliothek/" data-nav-match="werkstatt/arbeitsbibliothek/">Arbeitsbibliothek</a>
+          <a href="../bibliothek/whitepaper-t-sroi/" data-nav-match="bibliothek/whitepaper-t-sroi/">Whitepaper</a>
+          <a href="../wissen/working-papers/" data-nav-match="wissen/working-papers/">Working Papers</a>
+          <a href="../werkstatt/gesetze/wirkungssteuergesetz/" data-nav-match="werkstatt/gesetze/">Gesetze</a>
+          <a href="../werkstatt/leitlinien/wustg/" data-nav-match="werkstatt/leitlinien/">Leitlinien</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Mitmachen</h3>
+      <div class="footer-nav-links">
+          <a href="../mitmachen.html" data-nav-match="mitmachen.html|mitmachen/">Mitmachen</a>
+          <a href="../suche.html" data-nav-match="suche.html|suche/">Suche</a>
+          <a href="../woek-ki/" data-nav-match="woek-ki/">WÖk-KI</a>
+          <a href="../mein-wirkungsraum/" data-nav-match="mein-wirkungsraum/">Mein Wirkungsraum</a>
+          <a href="../ueber.html" data-nav-match="ueber.html|ueber/">Über die WÖk</a>
+          <a href="../impressum.html" data-nav-match="impressum.html|impressum/">Impressum</a>
+          <a href="../datenschutz.html" data-nav-match="datenschutz.html|datenschutz/">Datenschutz</a>
+      </div>
+    </div>
+        </nav>
+        <nav class="footer-legal-nav" aria-label="Rechtliches" data-search-exclude>
+    <a href="../journal/" data-nav-match="journal/|blog.html|blog/">Journal</a>
+    <a href="../ueber.html" data-nav-match="ueber.html|ueber/|ueber-die-woek/|ueber-die-w-oek/">Über die Wirkungsökonomie</a>
+    <a href="../impressum.html" data-nav-match="impressum.html|impressum/">Impressum</a>
+    <a href="../datenschutz.html" data-nav-match="datenschutz.html|datenschutz/">Datenschutz</a>
+        </nav>
+        <p>© 2026 Natalie Weber - Wirkungsökonomie</p>
+      </div>
+    </footer>
+
+    <script src="../assets/js/main.js?v=20260628-woek-feedback"></script>
+    <script>
+      const form = document.querySelector("#woek-ai-form");
+      const question = document.querySelector("#woek-ai-question");
+      const submit = document.querySelector("#woek-ai-submit");
+      const clearButton = document.querySelector("#woek-ai-clear");
+      const placeholder = document.querySelector("#woek-ai-placeholder");
+      const answer = document.querySelector("#woek-ai-answer");
+      const warning = document.querySelector("#woek-ai-warning");
+      const mode = document.querySelector("#woek-ai-mode");
+      const provider = document.querySelector("#woek-ai-provider");
+      const model = document.querySelector("#woek-ai-model");
+      const sourceCount = document.querySelector("#woek-ai-source-count");
+      const sources = document.querySelector("#woek-ai-sources");
+      const feedback = document.querySelector("#woek-ai-feedback");
+      const feedbackUp = document.querySelector("#woek-ai-feedback-up");
+      const feedbackDown = document.querySelector("#woek-ai-feedback-down");
+      const feedbackStatus = document.querySelector("#woek-ai-feedback-status");
+      const apiUrl = window.WOEK_AI_API_URL || "https://130.162.217.58.sslip.io/api/woek-ai";
+      const feedbackUrl = apiUrl.replace(/\/api\/woek-ai(?:\?.*)?$/, "/api/feedback");
+      const unavailableMessage = "Die WÖk-KI ist vorübergehend nicht verfügbar. Bitte versuche es später erneut.";
+      const feedbackUnavailableMessage = "Feedback konnte gerade nicht gespeichert werden.";
+      const glossaryLookupUrl = "../assets/data/glossary-lookup.json";
+      let glossaryLookupPromise = null;
+      let currentFeedback = null;
+
+      function setLoading(isLoading) {
+        submit.disabled = isLoading || question.value.trim().length < 4;
+        submit.textContent = isLoading ? "Antwort wird erstellt" : "Frage stellen";
+      }
+
+      function clearResult() {
+        currentFeedback = null;
+        placeholder.hidden = false;
+        placeholder.textContent = "Noch keine Frage gestellt.";
+        answer.textContent = "";
+        warning.hidden = true;
+        warning.textContent = "";
+        mode.textContent = "Bereit";
+        provider.textContent = "Hosted API";
+        model.textContent = "OpenAI-kompatibel";
+        sourceCount.textContent = "0";
+        sources.innerHTML = '<p class="card-text">Noch keine Quellenabfrage in dieser Sitzung.</p>';
+        setFeedbackVisible(false);
+      }
+
+      function modeLabel(value) {
+        if (value === "rag-hosted-llm") return "LLM + Quellen";
+        if (value === "woek-ai-oracle-llm") return "Oracle WÖk-KI";
+        if (value === "retrieval-only") return "Nur Quellen";
+        return "Bereit";
+      }
+
+      function escapeHtml(value) {
+        return String(value ?? "")
+          .replaceAll("&", "&amp;")
+          .replaceAll("<", "&lt;")
+          .replaceAll(">", "&gt;")
+          .replaceAll('"', "&quot;")
+          .replaceAll("'", "&#039;");
+      }
+
+      function normalizeTerm(value) {
+        return String(value ?? "")
+          .normalize("NFD")
+          .replace(/\p{Diacritic}/gu, "")
+          .replace(/ß/g, "ss")
+          .toLowerCase()
+          .replace(/[^a-z0-9]+/g, " ")
+          .trim();
+      }
+
+      function stripDefinitionFraming(value) {
+        return normalizeTerm(value)
+          .replace(/^(was ist|was bedeutet|erklaere mir|erklaere|erlautere|definiere|definition von|begriff|im glossar)\s+/i, "")
+          .replace(/\s+(in der|im)\s+wirkungsoekonomie$/i, "")
+          .replace(/^(der|die|das|den|dem|eine|einen|einem|einer)\s+/i, "")
+          .replace(/\s+bitte$/i, "")
+          .trim();
+      }
+
+      function isDefinitionQuestion(value) {
+        return /^(was ist|was bedeutet|erklaere mir|erklaere|erlautere|definiere|definition von|begriff|im glossar)\b/i.test(normalizeTerm(value));
+      }
+
+      function loadGlossaryLookup() {
+        if (!glossaryLookupPromise) {
+          glossaryLookupPromise = fetch(glossaryLookupUrl)
+            .then((response) => {
+              if (!response.ok) {
+                throw new Error("Glossar-Lookup konnte nicht geladen werden.");
+              }
+              return response.json();
+            })
+            .then((payload) => Array.isArray(payload?.terms) ? payload.terms : []);
+        }
+        return glossaryLookupPromise;
+      }
+
+      function matchGlossaryTerm(terms, queryValue, options = {}) {
+        const query = stripDefinitionFraming(queryValue);
+        if (query.length < 3) return null;
+
+        const queryWords = new Set(query.split(/\s+/).filter(Boolean));
+        const candidates = [];
+
+        for (const term of terms) {
+          const names = [
+            { value: term.canonicalLabel, priority: 30 },
+            { value: term.label, priority: 25 },
+            { value: term.slug, priority: 20 },
+            ...(Array.isArray(term.aliases) ? term.aliases.map((alias) => ({ value: alias, priority: 0 })) : []),
+          ]
+            .map((item) => ({ value: normalizeTerm(item.value), priority: item.priority }))
+            .filter((item) => item.value);
+
+          for (const nameItem of names) {
+            const name = nameItem.value;
+            const nameWords = name.split(/\s+/).filter(Boolean);
+            const allWordsMatch = nameWords.length > 0 && nameWords.every((word) => queryWords.has(word));
+
+            let score = 0;
+            if (name === query) {
+              score = 1000;
+            } else if (allWordsMatch) {
+              score = 800 + name.length;
+            } else if (query.includes(name) && name.length >= 5) {
+              score = 500 + name.length;
+            } else if (name.includes(query) && query.length >= 5) {
+              score = 400 + query.length;
+            }
+
+            if (score > 0) {
+              candidates.push({ term, score, priority: nameItem.priority, nameLength: name.length });
+            }
+          }
+        }
+
+        if (!candidates.length) return null;
+
+        candidates.sort((a, b) => b.score - a.score || b.priority - a.priority || b.nameLength - a.nameLength);
+        if (!options.allowBroad && !isDefinitionQuestion(queryValue) && candidates[0].score < 1000) return null;
+        return candidates[0].term;
+      }
+
+      function renderGlossaryMatch(term, notice) {
+        const source = glossarySourceFromTerm(term);
+        placeholder.hidden = true;
+        answer.textContent = `${term.canonicalLabel}\n\n${term.shortDefinition || term.definition || ""}`;
+        mode.textContent = "Glossar direkt";
+        provider.textContent = "Website-Glossar";
+        model.textContent = "Lokaler Begriffsabgleich";
+        sourceCount.textContent = "1";
+        warning.hidden = false;
+        warning.textContent = notice || "Direkter Glossartreffer aus der Website. Für weitergehende Einordnung kannst du die Frage konkreter stellen.";
+        renderSources([source]);
+        setFeedbackContext({
+          question: question.value.trim(),
+          answer: answer.textContent || "",
+          sources: [source],
+          model: "Lokaler Begriffsabgleich"
+        });
+        return source;
+      }
+
+      function renderDirectGlossaryMatch(term) {
+        return renderGlossaryMatch(term);
+      }
+
+      function renderFallbackGlossaryMatch(term) {
+        return renderGlossaryMatch(term, "Live-KI derzeit nicht verfügbar: Antwort aus dem Glossar.");
+      }
+
+      function renderAnswerPayload(payload) {
+        const lines = [];
+        if (payload.answer) {
+          lines.push(payload.answer);
+        }
+        if (payload.explanation) {
+          lines.push(`\nWarum das trägt:\n${payload.explanation}`);
+        }
+        if (payload.woekLens) {
+          lines.push(`\nWÖk-Einordnung:\n${payload.woekLens}`);
+        }
+        if (Array.isArray(payload.limits) && payload.limits.length) {
+          lines.push(`\nGrenzen:\n${payload.limits.map((item) => `- ${item}`).join("\n")}`);
+        }
+        return lines.join("\n").trim();
+      }
+
+      function glossarySourceFromTerm(term) {
+        return {
+          rank: 1,
+          section: "Begriffe",
+          type: "Glossarbegriff",
+          title: term.canonicalLabel,
+          url: term.url,
+          excerpt: term.shortDefinition || term.definition || "",
+        };
+      }
+
+      function recordAiHistory(questionValue, payload = {}) {
+        if (!window.WoekUserSpace?.recordAiQuery) return;
+        const items = Array.isArray(payload.sources) ? payload.sources : [];
+        window.WoekUserSpace.recordAiQuery({
+          question: questionValue,
+          answer: payload.answer || answer.textContent || "",
+          sources: items,
+          source_count: Number.isFinite(Number(payload.source_count)) ? Number(payload.source_count) : items.length,
+          mode: payload.mode || mode.textContent || "",
+          provider: payload.provider || provider.textContent || "",
+          model: payload.model || model.textContent || ""
+        });
+        document.dispatchEvent(new CustomEvent("wirkungsraum:changed"));
+      }
+
+      function getClientId() {
+        const key = "woek_app_client_id";
+        const existing = window.localStorage.getItem(key);
+        if (existing) return existing;
+        const value = `woek-${crypto.randomUUID ? crypto.randomUUID() : `${Date.now()}-${Math.random().toString(16).slice(2)}`}`;
+        window.localStorage.setItem(key, value);
+        return value;
+      }
+
+      function setFeedbackVisible(visible) {
+        feedback.hidden = !visible;
+        feedbackUp.disabled = false;
+        feedbackDown.disabled = false;
+        feedbackStatus.textContent = "";
+      }
+
+      function setFeedbackContext(payload) {
+        currentFeedback = {
+          target: "woek-ai",
+          route: "/api/woek-ai",
+          question: payload.question || "",
+          answer: payload.answer || "",
+          sources: normalizeFeedbackSources(payload.sources || []),
+          model: payload.model || ""
+        };
+        setFeedbackVisible(Boolean(currentFeedback.question && currentFeedback.answer));
+      }
+
+      function normalizeFeedbackSources(items) {
+        if (!Array.isArray(items)) return [];
+        return items.slice(0, 8).map((item) => ({
+          title: item.title || item.url || "Quelle",
+          url: item.url || "",
+          excerpt: item.excerpt || item.note || item.supports || ""
+        })).filter((item) => item.url);
+      }
+
+      async function sendFeedback(rating) {
+        if (!currentFeedback) return;
+        feedbackUp.disabled = true;
+        feedbackDown.disabled = true;
+        feedbackStatus.textContent = "Wird gespeichert...";
+
+        try {
+          const response = await fetch(feedbackUrl, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              "X-WOEK-Client-ID": getClientId()
+            },
+            body: JSON.stringify({ ...currentFeedback, rating })
+          });
+          const data = await response.json().catch(() => undefined);
+          if (!response.ok || !data?.ok) {
+            throw new Error(feedbackUnavailableMessage);
+          }
+          feedbackStatus.textContent = rating === "down" ? "Danke. Diese Antwort landet im Review." : "Danke. Bewertung gespeichert.";
+        } catch (error) {
+          feedbackUp.disabled = false;
+          feedbackDown.disabled = false;
+          feedbackStatus.textContent = feedbackUnavailableMessage;
+        }
+      }
+
+      feedbackUp.addEventListener("click", () => sendFeedback("up"));
+      feedbackDown.addEventListener("click", () => sendFeedback("down"));
+
+      function renderSources(items) {
+        if (!items || !items.length) {
+          sources.innerHTML = '<p class="card-text">Keine Quellen gefunden.</p>';
+          return;
+        }
+
+        sources.innerHTML = items.map((item) => `
+          <a class="woek-ai-source-card" href="${escapeHtml(item.url)}" target="_blank" rel="noopener noreferrer">
+            <span>[${escapeHtml(item.rank)}] ${escapeHtml(item.section)} · ${escapeHtml(item.type)}</span>
+            <strong>${escapeHtml(item.title)}</strong>
+            <p>${escapeHtml(item.excerpt)}</p>
+          </a>
+        `).join("");
+      }
+
+      question.addEventListener("input", () => setLoading(false));
+
+      clearButton.addEventListener("click", () => {
+        question.value = "";
+        setLoading(false);
+        clearResult();
+      });
+
+      document.querySelectorAll(".woek-ai-example").forEach((button) => {
+        button.addEventListener("click", () => {
+          question.value = button.textContent.trim();
+          setLoading(false);
+          clearResult();
+        });
+      });
+
+      function applyQuestionParam() {
+        const params = new URLSearchParams(window.location.search);
+        const value = params.get("frage");
+        if (!value) return;
+        question.value = value;
+        setLoading(false);
+        clearResult();
+      }
+
+      applyQuestionParam();
+
+      form.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        const value = question.value.trim();
+        if (value.length < 4) return;
+
+        setLoading(true);
+        placeholder.hidden = false;
+        placeholder.textContent = "Die Beta erstellt zuerst eine Antwort und prüft danach Quellen, WÖk-Einordnung und Grenzen.";
+        answer.textContent = "";
+        warning.hidden = true;
+        mode.textContent = "Wird erstellt";
+        setFeedbackVisible(false);
+
+        try {
+          try {
+            const glossaryTerms = await loadGlossaryLookup();
+            const glossaryMatch = matchGlossaryTerm(glossaryTerms, value);
+            if (glossaryMatch) {
+              const source = renderDirectGlossaryMatch(glossaryMatch);
+              recordAiHistory(value, { answer: answer.textContent, sources: [source], source_count: 1 });
+              return;
+            }
+          } catch (lookupError) {
+            console.warn(lookupError);
+          }
+
+          const response = await fetch(apiUrl, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              "X-WOEK-Client-ID": getClientId()
+            },
+            body: JSON.stringify({ question: value }),
+          });
+          const data = await response.json().catch(() => undefined);
+          if (!response.ok || !data.ok) {
+            throw new Error(unavailableMessage);
+          }
+
+          placeholder.hidden = true;
+          const renderedAnswer = renderAnswerPayload(data);
+          answer.textContent = renderedAnswer;
+          mode.textContent = modeLabel(data.mode);
+          provider.textContent = data.provider || "Oracle WÖk-KI API";
+          model.textContent = data.model || "OpenAI-kompatibel";
+          sourceCount.textContent = String(data.source_count || data.sources?.length || 0);
+          warning.hidden = true;
+          warning.textContent = "";
+          renderSources(data.sources || []);
+          setFeedbackContext({
+            question: value,
+            answer: renderedAnswer,
+            sources: data.sources || [],
+            model: data.model || "OpenAI-kompatibel"
+          });
+          recordAiHistory(value, {
+            answer: renderedAnswer,
+            sources: data.sources || [],
+            source_count: data.source_count || data.sources?.length || 0,
+            mode: modeLabel(data.mode),
+            provider: data.provider || "Oracle WÖk-KI API",
+            model: data.model || "OpenAI-kompatibel"
+          });
+        } catch (error) {
+          try {
+            const glossaryTerms = await loadGlossaryLookup();
+            const glossaryMatch = matchGlossaryTerm(glossaryTerms, value, { allowBroad: true });
+            if (glossaryMatch) {
+              const source = renderFallbackGlossaryMatch(glossaryMatch);
+              recordAiHistory(value, { answer: answer.textContent, sources: [source], source_count: 1 });
+              return;
+            }
+          } catch (fallbackError) {
+            console.warn(fallbackError);
+          }
+
+          placeholder.hidden = false;
+          placeholder.textContent = unavailableMessage;
+          mode.textContent = "Fehler";
+          renderSources([]);
+        } finally {
+          setLoading(false);
+        }
+      });
+    </script>
+  </body>
+</html>

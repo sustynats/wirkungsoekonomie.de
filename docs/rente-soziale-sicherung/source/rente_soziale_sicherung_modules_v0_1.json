@@ -1,0 +1,195 @@
+{
+  "portal": "rente-soziale-sicherung",
+  "version": "v0.1",
+  "submodules": [
+    {
+      "slug": "wirkungsrente-generationenvertrag",
+      "title": "Wirkungsrente und neuer Generationenvertrag",
+      "problem": "Das bestehende Rentensystem koppelt Sicherheit im Alter stark an Erwerbsbiografie, Einkommen und Beitragsjahre. Dadurch erscheinen Care-Arbeit, Bildung, Pflege, Ehrenamt, Prävention, Transformation und demokratisches Engagement zu oft als Randzeiten oder Lücken, obwohl sie gesellschaftliche Stabilität tragen.",
+      "shift": "Die Wirkungsrente denkt Generationenvertrag als Wirkungskreislauf: Die Wirkenden sichern die Zukunft der Wirkenden. Rente wird nicht nur als Auszahlung vergangener Beiträge verstanden, sondern als Anerkennung und Stabilisierung eines lebenslangen Wirkungsbeitrags.",
+      "chapters": [
+        "Generationengerechtigkeit ohne Generationenkampf",
+        "Wirkung statt bloßer Beitragsbiografie",
+        "Rente als Vertrauensarchitektur",
+        "Vom Umlagesystem zum lernenden Wirkungskreislauf",
+        "Politische Ausgestaltungsspielräume"
+      ],
+      "sdgs": "SDG 1, SDG 3, SDG 8, SDG 10, SDG 16, SDG 17, SDG+ institutionelles Vertrauen, SDG+ gesellschaftlicher Zusammenhalt"
+    },
+    {
+      "slug": "basisrente-wuerdesicherung",
+      "title": "Basisrente, Würdesicherung und soziale Teilhabe",
+      "problem": "Altersarmut und Unsicherheit entstehen dort, wo Alterssicherung zu stark an Markteinkommen gekoppelt bleibt. Wer lange Care leistet, prekär arbeitet oder von Strukturwandel betroffen ist, kann trotz hoher Lebenswirkung geringe Rentenansprüche haben.",
+      "shift": "Eine wirkungsökonomische Basisrente schützt Würde und Teilhabe unabhängig davon, ob Lebensleistung in hohe Einkommen übersetzt wurde. Sie ist kein Almosen, sondern die untere Stabilitätsebene eines demokratischen Gemeinwesens.",
+      "chapters": [
+        "Würdegrenze statt bloßer Mindestsicherung",
+        "Teilhabe im Alter als gesellschaftliche Infrastruktur",
+        "Verbindung zu Grundsicherung und Pflege",
+        "Schutz vor verdeckter Altersarmut",
+        "Finanzierung und politische Spielräume"
+      ],
+      "sdgs": "SDG 1, SDG 3, SDG 10, SDG 16, SDG+ gesellschaftlicher Zusammenhalt"
+    },
+    {
+      "slug": "lebenswirkungs-konto",
+      "title": "Lebenswirkungs-Konto und Wirkungsbiografie",
+      "problem": "Lebensläufe werden rentenrechtlich häufig als Beitrags-, Versicherungs- und Lückenbiografien gelesen. Diese Sicht erkennt Tätigkeiten nur unvollständig, die nicht gut bezahlt sind, aber Zustände verbessern.",
+      "shift": "Das Lebenswirkungs-Konto macht Wirkung über den Lebenslauf sichtbar, ohne Menschen zu bewerten. Es dokumentiert anerkannte Wirkungsräume, Qualifikationen, Care-Zeiten, Engagement, Transformationsbeiträge und Belastungen als Grundlage für Transparenz und Fairness.",
+      "chapters": [
+        "Was gespeichert wird - und was nicht",
+        "Keine Personenbewertung, kein Social Credit",
+        "Anerkennungsfelder und Nachweise",
+        "Datenschutz und Recht auf Korrektur",
+        "Online- und Offline-Zugänglichkeit"
+      ],
+      "sdgs": "SDG 4, SDG 5, SDG 8, SDG 10, SDG 16, SDG+ digitale Selbstbestimmung"
+    },
+    {
+      "slug": "lebenswirkungs-faktor",
+      "title": "Lebenswirkungs-Faktor und Berechnungslogik",
+      "problem": "Die heutige Rentenformel rechnet Beiträge präzise, aber Wirkung nur indirekt. Sie kann nicht erklären, warum gesellschaftlich unverzichtbare Tätigkeiten im Alter oft schlechter abgesichert sind als hoch bezahlte, aber wirkungsambivalente Tätigkeiten.",
+      "shift": "Der Lebenswirkungs-Faktor ergänzt die klassische Rentenlogik um eine begrenzte, transparente und überprüfbare Wirkungslogik. Er erhöht nicht beliebig, sondern korrigiert erkennbare Wirkungslücken, ohne die Würdegrenze zu unterschreiten.",
+      "chapters": [
+        "Arbeitsannahme v0.1 der Formel",
+        "Schutzkorridore und Begrenzungen",
+        "Positive, negative und neutrale Wirkung",
+        "Nicht-Kompensation bei roten Linien",
+        "Beispielrechnung und Unsicherheit"
+      ],
+      "sdgs": "SDG 1, SDG 8, SDG 10, SDG 16, SDG+ Rechtsstaatlichkeit"
+    },
+    {
+      "slug": "care-bildung-ehrenamt",
+      "title": "Care, Bildung, Pflege, Ehrenamt und Wirkleistung",
+      "problem": "Care, Bildung, Pflege, Ehrenamt, kulturelle Arbeit und demokratisches Engagement erzeugen Stabilität, werden aber oft schlechter bezahlt oder gar nicht entlohnt. Das erzeugt Rentenlücken und schwächt Vertrauen in das Leistungsprinzip.",
+      "shift": "Die Wirkungsrente erkennt nicht-marktliche und unterbewertete Wirkleistung als systemische Leistung an. Sie unterscheidet dabei zwischen echter Wirkleistung, bloßer Aktivität und symbolischer Behauptung.",
+      "chapters": [
+        "Care als Infrastrukturleistung",
+        "Bildung und Prävention als Zukunftswirkung",
+        "Ehrenamt und Demokratiearbeit",
+        "Nachweise ohne Bürokratiewut",
+        "Gender Pension Gap und Care-Gerechtigkeit"
+      ],
+      "sdgs": "SDG 3, SDG 4, SDG 5, SDG 10, SDG 16, SDG+ Demokratie"
+    },
+    {
+      "slug": "automatisierung-sozialabgaben",
+      "title": "Automatisierung, Sozialabgaben-Entkopplung und Wirkungsdividende",
+      "problem": "Wenn Maschinen, KI und Plattformen mehr produktive Arbeit übernehmen, bricht die Kette Arbeit - Einkommen - Sozialabgaben - Rentenfinanzierung. Eine Ordnung, die soziale Sicherung an menschliche Lohnarbeit bindet, wird dadurch instabil.",
+      "shift": "Die Wirkungsökonomie entkoppelt die Finanzierungsbasis sozialer Sicherung schrittweise von menschlicher Arbeitsleistung. Automatisierte Wertschöpfung wird nicht bestraft, sondern gesellschaftlich rückgekoppelt: in Wirkungsfonds, Wirkungsdividende und sozial stabile Übergänge.",
+      "chapters": [
+        "Warum Robotersteuer allein zu kurz greift",
+        "Maschinenleistung als Wertschöpfungsquelle",
+        "Sozialabgaben-Entkopplung",
+        "Wirkungsdividende als systemischer Anspruch",
+        "Übergänge für Unternehmen und Beschäftigte"
+      ],
+      "sdgs": "SDG 8, SDG 9, SDG 10, SDG 16, SDG+ institutionelles Vertrauen"
+    },
+    {
+      "slug": "renten-impact-fonds",
+      "title": "Renten-Impact-Fonds und Wirkungsfondsarchitektur",
+      "problem": "Kapitalgedeckte Altersvorsorge kann alte Fehler wiederholen, wenn sie Rendite aus zerstörerischen Geschäftsmodellen bezieht. Dann finanziert Altersvorsorge die Risiken, die künftige Generationen tragen müssen.",
+      "shift": "Wirkungsfonds investieren Kapital nach positiver Netto-Wirkung. Der Renten-Impact-Fonds wird nicht als Spekulationsinstrument verstanden, sondern als Transformations- und Stabilitätsinstrument für Bildung, Gesundheit, Wohnen, Klima, Pflege, Demokratie und Infrastruktur.",
+      "chapters": [
+        "Kapital als Werkzeug, nicht Ziel",
+        "Fondsquellen und Mittelverwendung",
+        "Investitionskriterien und Ausschlüsse",
+        "Rendite als Folge positiver Wirkung",
+        "Governance und Wirkungsrat"
+      ],
+      "sdgs": "SDG 1, SDG 3, SDG 9, SDG 10, SDG 11, SDG 13, SDG 16, SDG 17"
+    },
+    {
+      "slug": "betriebliche-private-vorsorge",
+      "title": "Betriebliche und private Vorsorge nach Wirkung",
+      "problem": "Betriebliche und private Vorsorge können individuelle Sicherheit stärken, aber auch Wirkungslücken erzeugen, wenn Kapitalanlagen nach Rendite ohne Wirkungswahrheit gesteuert werden.",
+      "shift": "Die Wirkungsökonomie ordnet betriebliche und private Vorsorge nicht ab, sondern richtet sie neu aus: Transparente Kapitalwirkung, faire Kosten, soziale Zugänglichkeit und Resilienz werden zu Qualitätskriterien.",
+      "chapters": [
+        "Betriebsrente als Transformationsinstrument",
+        "Private Vorsorge ohne Greenwashing",
+        "Kapitalwirkung, ESG und WÖk-IDs",
+        "Versicherbarkeit und Risiko-Wahrheit",
+        "Schutz für kleine Einkommen"
+      ],
+      "sdgs": "SDG 8, SDG 10, SDG 12, SDG 16, SDG+ institutionelles Vertrauen"
+    },
+    {
+      "slug": "recht-datenschutz-korrektur",
+      "title": "Rechtsschutz, Datenschutz und Korrekturverfahren",
+      "problem": "Ein System, das Lebenswirkung sichtbar macht, kann Vertrauen nur gewinnen, wenn es klare Grenzen, Rechte, Korrekturwege und Schutz vor technokratischer Verengung hat.",
+      "shift": "Wirkungsdaten bereiten Entscheidungen vor, ersetzen sie aber nicht. Das Rentensystem braucht Transparenz, Datensparsamkeit, Einspruchsrechte, menschliche Prüfung und parlamentarische Kontrolle.",
+      "chapters": [
+        "Datensparsamkeit und Zweckbindung",
+        "Recht auf Auskunft und Korrektur",
+        "Keine automatisierte Letztentscheidung",
+        "Schutz vulnerabler Gruppen",
+        "Demokratische Evaluation"
+      ],
+      "sdgs": "SDG 10, SDG 16, SDG 17, SDG+ Rechtsstaatlichkeit, SDG+ digitale Selbstbestimmung"
+    },
+    {
+      "slug": "politische-umsetzung",
+      "title": "Politische Anschlussfähigkeit und Umsetzungsoptionen",
+      "problem": "Rentenreformen scheitern oft, wenn sie als Nullsummenspiel zwischen Generationen, Parteien oder Einkommensgruppen erscheinen.",
+      "shift": "Die Wirkungsrente formuliert einen Rahmen, aber keinen fertigen Parteibeschluss. Parteien können unterschiedliche Wege wählen: stärker umlageorientiert, stärker fondsorientiert, stärker kommunal, stärker marktwirtschaftlich oder stärker sozialstaatlich - solange Wirkung sichtbar, überprüfbar und korrigierbar bleibt.",
+      "chapters": [
+        "Parteipolitischer Ausgestaltungsspielraum",
+        "Pilotierung und Revisionszyklen",
+        "Bund, Länder, Kommunen, EU",
+        "Sozialer Schutz im Übergang",
+        "Evaluation und demokratische Korrektur"
+      ],
+      "sdgs": "SDG 16, SDG 17, SDG+ Demokratie, SDG+ Diskursfähigkeit"
+    }
+  ],
+  "tool_variables": {
+    "B": "Basisrente",
+    "A": "Anwartschaftsanteil",
+    "LWF": "Lebenswirkungs-Faktor",
+    "WD": "Wirkungsdividende",
+    "F": "Fondsanteil"
+  },
+  "sources": [
+    {
+      "name": "WÖk-Arbeitspapier Rentensystem",
+      "ref": "WP_Rente.pdf, Natalie Weber, 2025"
+    },
+    {
+      "name": "Wenn Maschinen arbeiten",
+      "ref": "Natalie Weber, 2025"
+    },
+    {
+      "name": "Die neue Ordnung des Wohlstands",
+      "ref": "Natalie Weber, 2026, Kapitel 56-58 und Exkurs SDGs"
+    },
+    {
+      "name": "Systemmodell der Wirkungsökonomie",
+      "ref": "Natalie Weber, 2025, Finanzsystem & Kapital / Gesellschaft & Soziales"
+    },
+    {
+      "name": "Führender Begriffsleitfaden",
+      "ref": "Wirkung ist neutral und relational, SDGs/Agenda2030/SDG+ als Referenzrahmen"
+    },
+    {
+      "name": "BMAS Rentenversicherungsbericht 2025",
+      "ref": "https://www.bmas.de/SharedDocs/Downloads/DE/Rente/rentenversicherungsbericht-2025.html"
+    },
+    {
+      "name": "Destatis Babyboomer und Erwerbspersonen 2025",
+      "ref": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2025/08/PD25_N048_13.html"
+    },
+    {
+      "name": "Destatis Altenquotient 2025",
+      "ref": "https://www.destatis.de/DE/Themen/Querschnitt/Demografischer-Wandel/Aspekte/demografie-altenquotient.html"
+    },
+    {
+      "name": "Deutsche Rentenversicherung in Zahlen 2025",
+      "ref": "https://www.deutsche-rentenversicherung.de/SharedDocs/Downloads/DE/Statistiken-und-Berichte/statistikpublikationen/rv_in_zahlen.html"
+    },
+    {
+      "name": "OECD Pensions at a Glance 2025: Germany",
+      "ref": "https://www.oecd.org/en/publications/pensions-at-a-glance-2025-country-notes_8a53ef12-en/germany_c480c8fa-en.html"
+    }
+  ]
+}

@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>WÖk-App | Wirkungsökonomie</title>
+    <meta name="description" content="Die installierbare WÖk-App für WÖk-Wirkungscheck, Frag die WÖk und Produktcheck mit Text, Link oder Bildbeleg.">
+    <meta name="theme-color" content="#f7f1e8">
+    <meta name="application-name" content="WÖk-App">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="WÖk-App">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="search_title" content="WÖk-App">
+    <meta name="search_description" content="Mobile Web-App für WÖk-Wirkungscheck, Frag die WÖk und Produktcheck.">
+    <meta name="search_section" content="Öffentlicher Wirkungsraum">
+    <meta name="search_type" content="App">
+    <meta name="search_tags" content="WÖk-App, PWA, WÖk-Wirkungscheck, Faktencheck, Frames, Folgen, Frag die WÖk, Produktcheck, Screenshot, Artikel, Link, OCR">
+    <link rel="canonical" href="https://wirkungsoekonomie.de/app/">
+    <link rel="manifest" href="../manifest.webmanifest">
+    <link rel="icon" href="../assets/img/brand/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="../assets/img/brand/apple-touch-icon.png">
+    <link rel="stylesheet" href="../assets/css/style.css?v=20260629-share-tools">
+  </head>
+  <body>
+    <header class="site-header" data-search-exclude>
+      <a class="brand" href="../index.html" aria-label="Wirkungsökonomie Startseite">
+        <span class="brand-mark"><img src="../assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span>
+        <span class="brand-name">Wirkungsökonomie</span>
+      </a>
+      <nav class="site-utility-nav" aria-label="Schnellzugriffe" data-search-exclude>
+        <a class="site-utility-link site-utility-link--suche" href="../suche.html" data-nav-match="suche.html" data-utility-label="Suche">Suche</a>
+        <a class="site-utility-link site-utility-link--woek-ki" href="../woek-ki/" data-nav-match="woek-ki/" data-utility-label="WÖk-KI">KI</a>
+        <a class="site-utility-link site-utility-link--wok-app" href="../app/" data-nav-match="app/" data-utility-label="WÖk-App">WÖk-App</a>
+        <a class="site-utility-link site-utility-link--mein-wirkungsraum" href="../mein-wirkungsraum/" data-nav-match="mein-wirkungsraum/" data-utility-label="Mein Wirkungsraum" data-utility-primary="true">Mein Wirkungsraum</a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-icon" aria-hidden="true">☰</span>
+        <span class="sr-only">Menü</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation" data-search-exclude>
+        <a href="../index.html" data-nav-match="index.html">Start</a>
+        <a href="../verstehen/" data-nav-match="verstehen/|verstehen.html|wirkungsoekonomie.html|wirkungsoekonomie/|modell.html|ordnung/|so-wirkt-wirkungsoekonomie/">Verstehen</a>
+        <a href="../fuer/" data-nav-match="fuer/|fuer-wen/|fuer/unternehmen.html|fuer/unternehmen/impact-controlling/|fuer/buergerinnen.html|fuer/investoren.html|fuer/investoren/impact-controlling/|fuer/kommunen.html">Für wen?</a>
+        <a href="../wirkungsfelder/" data-nav-match="wirkungsfelder/|anwendungen.html">Wirkungsfelder</a>
+        <a href="../wirkungssteuerung/" data-nav-match="wirkungssteuerung/|fuer/wirkungssteuer.html|werkstatt/gesetze/wirkungssteuergesetz/|werkzeuge/scorecards/|werkzeuge/t-sroi/">Wirkungssteuerung</a>
+        <a href="../oeffentlicher-wirkungsraum/" data-nav-match="oeffentlicher-wirkungsraum/|wirkungsradar/|woek-ki/|app/">Öffentlicher Wirkungsraum</a>
+        <a href="../werkzeuge/" data-nav-match="werkzeuge/|tools/|methodik/|workflow.html|scanner.html|anwendungen/scanner.html|scorecard-dashboard.html|erleben/|erleben.html|ausprobieren/">Praxis &amp; Tools</a>
+        <a href="../lernen/" data-nav-match="lernen/|akademie.html|akademie/">Lernen</a>
+        <a href="../bibliothek/" data-nav-match="bibliothek/|downloads.html|downloads/|dokumente/|referenz/|buch.html|buch/|evidenz/|quellen/|fachbibliothek/|blog.html|blog/|podcast/|begriffe/|glossar.html">Bibliothek</a>
+        <a href="../mitmachen.html" data-nav-match="mitmachen.html|mitmachen/">Mitmachen</a>
+        <div class="site-nav-utility" aria-label="Schnellzugriffe">
+        <a class="site-utility-link site-utility-link--suche" href="../suche.html" data-nav-match="suche.html" data-utility-label="Suche">Suche</a>
+        <a class="site-utility-link site-utility-link--woek-ki" href="../woek-ki/" data-nav-match="woek-ki/" data-utility-label="WÖk-KI">KI</a>
+        <a class="site-utility-link site-utility-link--wok-app" href="../app/" data-nav-match="app/" data-utility-label="WÖk-App">WÖk-App</a>
+        <a class="site-utility-link site-utility-link--mein-wirkungsraum" href="../mein-wirkungsraum/" data-nav-match="mein-wirkungsraum/" data-utility-label="Mein Wirkungsraum" data-utility-primary="true">Mein Wirkungsraum</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="inhalt" data-pagefind-body data-search-content>
+      <section class="woek-app-hero">
+        <div>
+          <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Start</a> / WÖk-App</nav>
+          <p class="hero-kicker">Installierbare Web-App</p>
+          <h1 class="hero-title">WÖk-App</h1>
+          <p class="hero-subtitle">WÖk-Wirkungscheck, Frag die WÖk und Produktcheck für unterwegs. Text, Artikel-Link oder Bildbeleg rein; Antwort zuerst, Erklärung danach.</p>
+          <p>Der WÖk-Wirkungscheck schaut nicht nur auf Zahlen, sondern auch auf Sprache, Frames, rhetorische Muster und psychologische Wirkungspotenziale. Negierte Frames werden demaskiert, statt sie durch Wiederholung stärker zu machen.</p>
+          <p>Die öffentliche App ist der Basiszugang. Der volle Community-Workflow mit erweiterten Funktionen, höheren Nutzungsmöglichkeiten, Discord-Bots und gemeinsamer Weiterentwicklung steht Mitgliedern der WÖk-Community zur Verfügung.</p>
+        </div>
+      </section>
+
+      <section class="woek-app-shell" data-woek-app aria-labelledby="woek-app-title">
+        <div class="woek-app-toolbar" role="tablist" aria-label="WÖk-App Funktionen">
+          <button class="woek-app-tab" type="button" role="tab" data-app-tab="factcheck">Wirkungscheck</button>
+          <button class="woek-app-tab" type="button" role="tab" data-app-tab="woek">Frag die WÖk</button>
+          <button class="woek-app-tab" type="button" role="tab" data-app-tab="product">Produktcheck</button>
+        </div>
+
+        <div class="woek-app-install" data-pwa-install hidden>
+          <div>
+            <p class="hero-kicker">Installierbar</p>
+            <h2>Als App öffnen.</h2>
+            <p data-pwa-install-copy>Lege die WÖk-App auf Startbildschirm oder Dock. Sie startet dann ohne Browserrahmen.</p>
+          </div>
+          <div class="woek-app-install-actions">
+            <button class="btn btn-primary" type="button" data-pwa-install-button>Installieren</button>
+            <button class="btn btn-secondary" type="button" data-pwa-install-dismiss>Ausblenden</button>
+          </div>
+        </div>
+
+        <div class="woek-app-community" data-community-auth data-community-variant="app">
+          <div>
+            <p class="hero-kicker" data-community-kicker>Community-Funktionen</p>
+            <h2 data-community-title>Mehr Nutzen im WÖk-Server.</h2>
+            <p data-community-copy>Ohne Community-Mitgliedschaft ist die WebApp als Basiszugang gedacht. Mit Discord-Anmeldung erkennt die Website, ob du im WÖk-Server bist und kann erweiterte Workflows zuordnen.</p>
+          </div>
+          <div class="woek-app-install-actions" data-community-actions>
+            <a class="btn btn-primary" href="https://discord.com/oauth2/authorize?client_id=1520742698615832586&amp;redirect_uri=https%3A%2F%2Fwirkungsoekonomie.de%2Fapp%2F&amp;response_type=token&amp;scope=identify">Mit Discord anmelden</a>
+            <a class="btn btn-secondary" href="https://discord.gg/AtJpB3ErPZ" target="_blank" rel="noopener noreferrer">Server ansehen</a>
+            <a class="btn btn-secondary" href="../werkzeuge/faktencheck/">Wirkungscheck ansehen</a>
+          </div>
+        </div>
+
+        <div class="woek-app-layout">
+          <div class="woek-app-input">
+            <h2 id="woek-app-title">Prüfung starten</h2>
+
+            <form class="woek-app-form" data-app-panel="factcheck" data-factcheck-form>
+              <label>
+                <span class="field-label">Aussage oder Behauptung <small class="field-badge field-badge--required">Pflicht</small></span>
+                <textarea name="claim" rows="5" maxlength="1800" required placeholder="Welche Aussage soll geprüft werden?"></textarea>
+              </label>
+              <label>
+                <span class="field-label">Artikel-Link oder Quelle <small class="field-badge">optional</small></span>
+                <input name="evidenceUrl" type="url" inputmode="url" placeholder="https://...">
+              </label>
+              <label>
+                <span class="field-label">Kopierter Text oder OCR <small class="field-badge">optional</small></span>
+                <textarea name="evidenceText" rows="4" maxlength="5000" placeholder="Text aus Artikel, Screenshot oder iOS/Android-Live-Text einfügen."></textarea>
+              </label>
+              <label class="woek-app-file">
+                <span class="field-label">Screenshot oder Foto <small class="field-badge">optional</small></span>
+                <input name="image" type="file" accept="image/*" capture="environment">
+                <small data-file-name>Kein Bild ausgewählt</small>
+              </label>
+              <label>
+                <span class="field-label">Themenbereich <small class="field-badge">optional</small></span>
+                <select name="domain">
+                  <option value="">Automatisch erkennen</option>
+                  <option value="general">Allgemein</option>
+                  <option value="climate">Klima, Energie, Ressourcen</option>
+                  <option value="social">Sozialstaat, Arbeit, Migration</option>
+                  <option value="democracy">Demokratie, Medien, Öffentlichkeit</option>
+                  <option value="highstakes">Recht, Medizin, Finanzen, Sicherheit</option>
+                  <option value="breaking">Aktuelles Ereignis</option>
+                </select>
+              </label>
+              <label>
+                <span class="field-label">Kontext <small class="field-badge">optional</small></span>
+                <textarea name="context" rows="3" maxlength="700" placeholder="Wer sagt das, wo, wann, mit welchem Zusammenhang?"></textarea>
+              </label>
+              <button class="btn btn-primary" type="submit" data-label="Wirkungscheck starten">Wirkungscheck starten</button>
+            </form>
+
+            <form class="woek-app-form" data-app-panel="woek" data-woek-form hidden>
+              <label>
+                <span class="field-label">Frage <small class="field-badge field-badge--required">Pflicht</small></span>
+                <textarea name="question" rows="7" maxlength="1800" required placeholder="Was möchtest du zur Wirkungsökonomie wissen?"></textarea>
+              </label>
+              <label>
+                <span class="field-label">Kontext <small class="field-badge">optional</small></span>
+                <textarea name="context" rows="3" maxlength="700" placeholder="Optional: Anwendungsfall, Begriff oder Link."></textarea>
+              </label>
+              <button class="btn btn-primary" type="submit" data-label="Frage stellen">Frage stellen</button>
+            </form>
+
+            <form class="woek-app-form" data-app-panel="product" data-product-form hidden>
+              <label>
+                <span class="field-label">Produkt <small class="field-badge field-badge--required">Pflicht</small></span>
+                <input name="product" type="text" maxlength="700" required placeholder="Produktname, Marke oder Produktlink">
+              </label>
+              <label>
+                <span class="field-label">Produktlink <small class="field-badge">optional</small></span>
+                <input name="url" type="url" inputmode="url" placeholder="https://...">
+              </label>
+              <label>
+                <span class="field-label">Werbeclaim oder Frage <small class="field-badge">optional</small></span>
+                <textarea name="claim" rows="4" maxlength="900" placeholder="Zum Beispiel: klimaneutral, nachhaltig, besonders gesund, fair produziert."></textarea>
+              </label>
+              <label>
+                <span class="field-label">Kopierter Text oder OCR <small class="field-badge">optional</small></span>
+                <textarea name="evidenceText" rows="4" maxlength="5000" placeholder="Text aus Produktseite, Anzeige, Etikett oder Screenshot einfügen."></textarea>
+              </label>
+              <label class="woek-app-file">
+                <span class="field-label">Produktfoto oder Screenshot <small class="field-badge">optional</small></span>
+                <input name="image" type="file" accept="image/*" capture="environment">
+                <small data-file-name>Kein Bild ausgewählt</small>
+              </label>
+              <label>
+                <span class="field-label">Kontext <small class="field-badge">optional</small></span>
+                <textarea name="context" rows="3" maxlength="700" placeholder="Wofür wird das Produkt genutzt? Welche Wirkung soll geprüft werden?"></textarea>
+              </label>
+              <button class="btn btn-primary" type="submit" data-label="Produkt prüfen">Produkt prüfen</button>
+            </form>
+          </div>
+
+          <aside class="woek-app-result" aria-live="polite">
+            <div class="woek-app-statusbar">
+              <span data-app-status>Bereit</span>
+              <span data-pwa-status>Online</span>
+            </div>
+            <div data-app-result>
+              <p class="hero-kicker">Bereit</p>
+              <h2>Gib Text, Link oder Bildbeleg ein.</h2>
+              <p>Viele Handys können Text aus Fotos bereits selbst kopieren. Wenn das klappt, ist Text einfügen am günstigsten. Das Bild bleibt als Fallback möglich.</p>
+            </div>
+          </aside>
+        </div>
+
+        <p class="woek-app-note">Beta: keine Rechts-, Medizin-, Finanz- oder Kaufberatung. Bei unsicherer Quellenlage bleibt das Ergebnis vorläufig.</p>
+      </section>
+    </main>
+    <footer class="footer" data-search-exclude>
+      <div class="footer-grid">
+        <div>
+          <p class="hero-kicker">Wirkungsökonomie</p>
+          <h2>Die neue Ordnung des Wohlstands</h2>
+          <p>Die Wirkungsökonomie ist ein eigenständiges Gesellschafts- und Wirtschaftsmodell, das Wirkung auf Mensch, Planet und Demokratie sichtbar macht, bewertet und in Entscheidungen zurückführt.</p>
+          <p><a class="text-link" href="../mitmachen.html">Kontakt und Mitmachen</a></p>
+        </div>
+        <a class="btn btn-primary" href="../kompass.html">WÖk-Kompass öffnen</a>
+        <nav class="footer-nav" aria-label="Footer Navigation" data-search-exclude>
+          <div class="footer-nav-group">
+      <h3>Verstehen</h3>
+      <div class="footer-nav-links">
+          <a href="../verstehen/" data-nav-match="verstehen/">Einstieg</a>
+          <a href="../verstehen/woek-auf-einer-seite/" data-nav-match="verstehen/woek-auf-einer-seite/">WÖk auf einer Seite</a>
+          <a href="../so-wirkt-wirkungsoekonomie/" data-nav-match="so-wirkt-wirkungsoekonomie/">So wirkt WÖk</a>
+          <a href="../modell.html" data-nav-match="modell.html|modell/">Modell</a>
+          <a href="../einwaende/" data-nav-match="einwaende/">Einwände</a>
+          <a href="../begriffe/" data-nav-match="begriffe/|glossar.html">Glossar</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Für wen?</h3>
+      <div class="footer-nav-links">
+          <a href="../fuer/" data-nav-match="fuer/">Übersicht</a>
+          <a href="../fuer/buergerinnen.html" data-nav-match="fuer/buergerinnen.html">Bürger:innen</a>
+          <a href="../fuer/unternehmen.html" data-nav-match="fuer/unternehmen.html">Unternehmen</a>
+          <a href="../fuer/unternehmen/impact-controlling/" data-nav-match="fuer/unternehmen/impact-controlling/">Impact-Controlling Unternehmen</a>
+          <a href="../fuer/politik.html" data-nav-match="fuer/politik.html">Politik</a>
+          <a href="../fuer/kommunen.html" data-nav-match="fuer/kommunen.html">Kommunen</a>
+          <a href="../fuer/investoren.html" data-nav-match="fuer/investoren.html">Investor:innen</a>
+          <a href="../fuer/investoren/impact-controlling/" data-nav-match="fuer/investoren/impact-controlling/">Impact-Controlling Finanzmarkt</a>
+          <a href="../fuer/journalismus.html" data-nav-match="fuer/journalismus.html">Journalismus</a>
+          <a href="../fuer/wissenschaft-forschung.html" data-nav-match="fuer/wissenschaft-forschung.html">Wissenschaft</a>
+          <a href="../fuer/gesundheit.html" data-nav-match="fuer/gesundheit.html">Gesundheit</a>
+          <a href="../fuer/landwirtschaft/" data-nav-match="fuer/landwirtschaft/">Landwirtschaft</a>
+          <a href="../fuer/mieter.html" data-nav-match="fuer/mieter.html">Wohnen</a>
+          <a href="../fuer/rente.html" data-nav-match="fuer/rente.html">Rente</a>
+          <a href="../fuer/wirkungseinkommen.html" data-nav-match="fuer/wirkungseinkommen.html">Wirkungseinkommen</a>
+          <a href="../fuer/akademie.html" data-nav-match="fuer/akademie.html">Akademie</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Wirkungsfelder</h3>
+      <div class="footer-nav-links">
+          <a href="../wirkungsfelder/" data-nav-match="wirkungsfelder/">Alle Wirkungsfelder</a>
+          <a href="../wirkungsfelder/bildung/" data-nav-match="wirkungsfelder/bildung/">Bildung</a>
+          <a href="../wirkungsfelder/gesundheit-pflege/" data-nav-match="wirkungsfelder/gesundheit-pflege/">Gesundheit &amp; Pflege</a>
+          <a href="../wirkungsfelder/klima-energie-ressourcen/" data-nav-match="wirkungsfelder/klima-energie-ressourcen/">Klima, Energie &amp; Ressourcen</a>
+          <a href="../wirkungsfelder/produkte-konsum/" data-nav-match="wirkungsfelder/produkte-konsum/">Produkte &amp; Konsum</a>
+          <a href="../wirkungsfelder/wirtschaft-unternehmen/" data-nav-match="wirkungsfelder/wirtschaft-unternehmen/">Wirtschaft &amp; Unternehmen</a>
+          <a href="../wirkungsfelder/arbeit-einkommen/" data-nav-match="wirkungsfelder/arbeit-einkommen/">Arbeit &amp; Einkommen</a>
+          <a href="../wirkungsfelder/finanzsystem-kapital/" data-nav-match="wirkungsfelder/finanzsystem-kapital/">Finanzsystem &amp; Kapital</a>
+          <a href="../wirkungsfelder/staat-recht-demokratie/" data-nav-match="wirkungsfelder/staat-recht-demokratie/">Staat, Recht &amp; Demokratie</a>
+          <a href="../wirkungsfelder/medien-oeffentlichkeit/" data-nav-match="wirkungsfelder/medien-oeffentlichkeit/">Öffentlichkeit &amp; Medien</a>
+          <a href="../wirkungsfelder/wissenschaft-innovation-digitalisierung/" data-nav-match="wirkungsfelder/wissenschaft-innovation-digitalisierung/">Wissenschaft &amp; Innovation</a>
+          <a href="../wirkungsfelder/wirkungsfinanzpolitik/" data-nav-match="wirkungsfelder/wirkungsfinanzpolitik/">Wirkungsfinanzpolitik</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Wirkungssteuerung</h3>
+      <div class="footer-nav-links">
+          <a href="../wirkungssteuerung/" data-nav-match="wirkungssteuerung/">Überblick</a>
+          <a href="../wirkungssteuerung/wirkungssteuer/" data-nav-match="wirkungssteuerung/wirkungssteuer/">Wirkungssteuer</a>
+          <a href="../wirkungssteuerung/wirkungshaushalt/" data-nav-match="wirkungssteuerung/wirkungshaushalt/">Wirkungshaushalt</a>
+          <a href="../wirkungsfelder/wirkungsfinanzpolitik/" data-nav-match="wirkungsfelder/wirkungsfinanzpolitik/">Wirkungsfinanzpolitik</a>
+          <a href="../werkzeuge/woek-id-register/" data-nav-match="werkzeuge/woek-id-register/|woek-id-register/|register/">WÖk-ID Register</a>
+          <a href="../werkzeuge/woek-ids/" data-nav-match="werkzeuge/woek-ids/|wirkungssteuerung/woek-ids/">WÖk-IDs</a>
+          <a href="../werkzeuge/scorecards/" data-nav-match="werkzeuge/scorecards/|wirkungssteuerung/scorecards/">Scorecards</a>
+          <a href="../werkzeuge/netto-wirkungs-index/" data-nav-match="werkzeuge/netto-wirkungs-index/">Netto-Wirkungs-Index</a>
+          <a href="../begriffe/impact-of-investment/" data-nav-match="begriffe/impact-of-investment/">Impact-of-Investment</a>
+          <a href="../werkzeuge/t-sroi/" data-nav-match="werkzeuge/t-sroi/">T-SROI</a>
+          <a href="../werkzeuge/reverse-merit-order/" data-nav-match="werkzeuge/reverse-merit-order/|wirkungssteuerung/reverse-merit-order/">Reverse Merit Order</a>
+          <a href="../werkzeuge/" data-nav-match="werkzeuge/">Alle Werkzeuge</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Öffentlicher Wirkungsraum</h3>
+      <div class="footer-nav-links">
+          <a href="../oeffentlicher-wirkungsraum/" data-nav-match="oeffentlicher-wirkungsraum/">Übersicht</a>
+          <a href="../wirkungsradar/" data-nav-match="wirkungsradar/">Wirkungsradar</a>
+          <a href="../werkzeuge/faktencheck/" data-nav-match="werkzeuge/faktencheck/">WÖk-Wirkungscheck</a>
+          <a href="../wirkungsradar/debattenkarten/" data-nav-match="wirkungsradar/debattenkarten/">Debattenkarten</a>
+          <a href="../wirkungsradar/themen/" data-nav-match="wirkungsradar/themen/">Themenräume</a>
+          <a href="../wirkungsradar/ursachen/" data-nav-match="wirkungsradar/ursachen/">Ursachen-Navigator</a>
+          <a href="../wirkungsradar/antwort-playbooks/" data-nav-match="wirkungsradar/antwort-playbooks/">Antwort-Playbooks</a>
+          <a href="../woek-ki/" data-nav-match="woek-ki/">WÖk-KI</a>
+          <a href="../app/" data-nav-match="app/">WÖk-App</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Praxis &amp; Tools</h3>
+      <div class="footer-nav-links">
+          <a href="../app/" data-nav-match="app/">WÖk-App</a>
+          <a href="../erleben/" data-nav-match="erleben.html|erleben/">Interaktive Demos</a>
+          <a href="../erleben/produktwirkungsrechner/" data-nav-match="erleben/produktwirkungsrechner/">Produktwirkungsrechner</a>
+          <a href="../erleben/impact-controlling-rechner/" data-nav-match="erleben/impact-controlling-rechner/">Impact-Controlling-Rechner</a>
+          <a href="../erleben/medienwirkungscheck/" data-nav-match="erleben/medienwirkungscheck/">Medienwirkungscheck</a>
+          <a href="../erleben/unternehmens-wirkungscheck/" data-nav-match="erleben/unternehmens-wirkungscheck/">Unternehmens-Wirkungscheck</a>
+          <a href="../erleben/wirkungsportfolio-generator/" data-nav-match="erleben/wirkungsportfolio-generator/">Wirkungsportfolio-Generator</a>
+          <a href="../erleben/wohnwirkungsrechner/" data-nav-match="erleben/wohnwirkungsrechner/">Wohnwirkungsrechner</a>
+          <a href="../erleben/wirkungsrenten-rechner/" data-nav-match="erleben/wirkungsrenten-rechner/">Wirkungsrenten-Rechner</a>
+          <a href="../erleben/" data-nav-match="erleben/">Alle Demos</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Lernen</h3>
+      <div class="footer-nav-links">
+          <a href="../lernen/" data-nav-match="lernen/">Lernportal</a>
+          <a href="../akademie/" data-nav-match="akademie/">Akademie</a>
+          <a href="../akademie/wirkungsfinanzpolitik/" data-nav-match="akademie/wirkungsfinanzpolitik/">Wirkungsfinanzpolitik</a>
+          <a href="../akademie/wirkungsradar/" data-nav-match="akademie/wirkungsradar/">Wirkungsradar</a>
+          <a href="../mein-wirkungsraum/" data-nav-match="mein-wirkungsraum/">Mein Wirkungsraum</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Bibliothek</h3>
+      <div class="footer-nav-links">
+          <a href="../bibliothek/" data-nav-match="bibliothek/">Bibliothek</a>
+          <a href="../journal/" data-nav-match="journal/|blog.html|blog/">Journal</a>
+          <a href="../podcast/" data-nav-match="podcast/">Podcast</a>
+          <a href="../referenz/" data-nav-match="referenz/">Online-Buch</a>
+          <a href="../dokumente/" data-nav-match="dokumente/">Dokumente</a>
+          <a href="../dokumente/wirkungsfinanzpolitik/" data-nav-match="dokumente/wirkungsfinanzpolitik/">Wirkungsfinanzpolitik-Aufsatz</a>
+          <a href="../werkstatt/arbeitsbibliothek/" data-nav-match="werkstatt/arbeitsbibliothek/">Arbeitsbibliothek</a>
+          <a href="../bibliothek/whitepaper-t-sroi/" data-nav-match="bibliothek/whitepaper-t-sroi/">Whitepaper</a>
+          <a href="../wissen/working-papers/" data-nav-match="wissen/working-papers/">Working Papers</a>
+          <a href="../werkstatt/gesetze/wirkungssteuergesetz/" data-nav-match="werkstatt/gesetze/">Gesetze</a>
+          <a href="../werkstatt/leitlinien/wustg/" data-nav-match="werkstatt/leitlinien/">Leitlinien</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Mitmachen</h3>
+      <div class="footer-nav-links">
+          <a href="../mitmachen.html" data-nav-match="mitmachen.html|mitmachen/">Mitmachen</a>
+          <a href="../suche.html" data-nav-match="suche.html|suche/">Suche</a>
+          <a href="../woek-ki/" data-nav-match="woek-ki/">WÖk-KI</a>
+          <a href="../mein-wirkungsraum/" data-nav-match="mein-wirkungsraum/">Mein Wirkungsraum</a>
+          <a href="../ueber.html" data-nav-match="ueber.html|ueber/">Über die WÖk</a>
+          <a href="../impressum.html" data-nav-match="impressum.html|impressum/">Impressum</a>
+          <a href="../datenschutz.html" data-nav-match="datenschutz.html|datenschutz/">Datenschutz</a>
+      </div>
+    </div>
+        </nav>
+        <nav class="footer-legal-nav" aria-label="Rechtliches" data-search-exclude>
+    <a href="../journal/" data-nav-match="journal/|blog.html|blog/">Journal</a>
+    <a href="../ueber.html" data-nav-match="ueber.html|ueber/|ueber-die-woek/|ueber-die-w-oek/">Über die Wirkungsökonomie</a>
+    <a href="../impressum.html" data-nav-match="impressum.html|impressum/">Impressum</a>
+    <a href="../datenschutz.html" data-nav-match="datenschutz.html|datenschutz/">Datenschutz</a>
+        </nav>
+        <p>© 2026 Natalie Weber - Wirkungsökonomie</p>
+      </div>
+    </footer>
+
+    <script src="../assets/js/main.js?v=20260612-mobile-table-fix"></script>
+    <script src="../assets/js/woek-community-auth-v2.js?v=20260628-community-copy" defer></script>
+    <script src="../assets/js/woek-app.js?v=20260629-share-tools" defer></script>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+{
+  "metadata": {
+    "status": "published",
+    "last_updated": "2026-05-22",
+    "purpose": "Einheitliches Datenqualitätsmodell für WÖk-Scanner, Kompass, Produktscanner, Unternehmensscanner und spätere RAG-/API-Schichten.",
+    "standard_notice": "Eine Datenqualitätsstufe ist keine WÖk-Bewertung. Sie zeigt, wie belastbar die verfügbare Datenbasis für eine wirkungsökonomische Ersteinschätzung ist."
+  },
+  "levels": [
+    {
+      "level": "A",
+      "label": "geprüfte produkt- oder organisationsspezifische Primärdaten",
+      "description": "Auditierte, nachvollziehbare und aktuelle Primärdaten zu einem konkreten Produkt, einer Organisation, Lieferkette, Maßnahme oder Wirkungsebene.",
+      "typical_sources": [
+        "geprüfte Produktdaten",
+        "auditierte Organisationsdaten",
+        "validierte Lieferkettendaten",
+        "geprüfte Messdaten"
+      ],
+      "scanner_use": "starke Grundlage für eine Wirkungshypothese; trotzdem keine finale WÖk-Bewertung ohne freigegebene Methodik und Schutzregeln.",
+      "required_display": "Datenqualität: A - geprüfte Primärdaten. Limitierungen und Prüfstand anzeigen."
+    },
+    {
+      "level": "B",
+      "label": "veröffentlichte Berichts- oder Auditdaten",
+      "description": "Öffentliche Berichte, CSRD-/ESRS-, GRI-, EU-Taxonomie-, Geschäfts-, Nachhaltigkeits- oder Auditdaten mit erkennbarem Stand und Scope.",
+      "typical_sources": [
+        "Geschäftsbericht",
+        "Nachhaltigkeitsbericht",
+        "CSRD-/ESRS-Bericht",
+        "GRI-Index",
+        "Auditbericht"
+      ],
+      "scanner_use": "gute Grundlage für öffentliche Wirkungsprofile; Berichtsdaten beschreiben, ersetzen aber keine WÖk-Rückkopplung.",
+      "required_display": "Datenqualität: B - veröffentlichte Berichts- oder Auditdaten. Scope, Stand und Prüfgrad anzeigen."
+    },
+    {
+      "level": "C",
+      "label": "offene Datenbank / offizieller Standard / öffentliches Register",
+      "description": "Offene Datenbanken, amtliche Register, öffentliche Standards, Klassifikationen oder Produktregister mit begrenztem Wirkungsumfang.",
+      "typical_sources": [
+        "Open Food Facts",
+        "EPREL",
+        "NACE",
+        "Eurostat",
+        "Destatis",
+        "UBA",
+        "EU Ecolabel",
+        "Blauer Engel"
+      ],
+      "scanner_use": "belastbarer Teilindikator; liefert meist keine vollständige Netto-Wirkung.",
+      "required_display": "Datenqualität: C - offene Datenbank / Standard / Register. Abdeckung und fehlende Wirkungsebenen anzeigen."
+    },
+    {
+      "level": "D",
+      "label": "Branchenbenchmark / Kategorieannahme",
+      "description": "Generische Branchen-, Kategorie-, Material-, Prozess-, NACE- oder Marktannahme ohne konkrete Produkt- oder Organisationsdaten.",
+      "typical_sources": [
+        "Branchenbenchmark",
+        "Kategorieprofil",
+        "generische LCA-Annahme",
+        "NACE-Profil",
+        "Sektorstudie"
+      ],
+      "scanner_use": "Orientierung und Plausibilisierung; keine belastbare Einzelaussage.",
+      "required_display": "Datenqualität: D - Branchenbenchmark. Für belastbare Bewertung fehlen konkrete Produkt-, Organisations- oder Lieferkettendaten."
+    },
+    {
+      "level": "E",
+      "label": "unvollständige Annahme / Plausibilisierung",
+      "description": "Nutzereingabe, kurzer Textauszug, unvollständige Quelle oder plausible Annahme ohne ausreichende Nachweise.",
+      "typical_sources": [
+        "kurzer Textauszug",
+        "Nutzereingabe",
+        "Screenshotbeschreibung",
+        "unsichere Zuschreibung",
+        "unvollständiger Produktvergleich"
+      ],
+      "scanner_use": "nur vorsichtige Ersteinschätzung; Fokus auf Wirkungspotenzial, Datenlücken und WÖk-Gegenfrage.",
+      "required_display": "Datenqualität: E - Annahme / unvollständig. Keine Bewertung, sondern Datenbedarf ausgeben."
+    },
+    {
+      "level": "F",
+      "label": "keine belastbare Datenbasis",
+      "description": "Es liegen keine ausreichenden Quellen oder Daten vor, um Wirkungspotenziale seriös einzuordnen.",
+      "typical_sources": [
+        "keine Quelle",
+        "unprüfbare Behauptung",
+        "zu wenig Kontext",
+        "nicht abrufbare URL ohne Auszug"
+      ],
+      "scanner_use": "keine Analyse behaupten; nur benötigte Daten, Grenzen und nächste Prüfwege nennen.",
+      "required_display": "Datenqualität: F - keine belastbare Datenbasis. Analyse abbrechen oder auf Datenbedarf begrenzen."
+    }
+  ],
+  "required_fields_per_analysis": [
+    "data_quality_level",
+    "source",
+    "source_status",
+    "date_or_last_checked",
+    "limitation",
+    "what_this_source_provides",
+    "what_this_source_does_not_provide"
+  ],
+  "example_notice": "Datenqualität: D - Branchenbenchmark. Für eine belastbare WÖk-Bewertung fehlen produktbezogene Lieferketten- und Wirkungsdaten."
+}

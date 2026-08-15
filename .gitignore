@@ -1,0 +1,21 @@
+node_modules/
+outputs/
+content/internal-documents/
+.codex-backup/
+.claude/
+.next/
+_site/
+woek-akademie-app/.next/
+__pycache__/
+.DS_Store
+
+woek-akademie-app/
+
+# Large public media belongs in GitHub Releases.
+# Keep covers/posters and source metadata in the repo, but do not commit new
+# podcast audio or ad-hoc video exports into the website deploy tree.
+assets/audio/podcast/*.mp3
+assets/audio/podcast/*.m4a
+assets/audio/podcast/*.wav
+assets/video/*.mov
+assets/video/*.wav

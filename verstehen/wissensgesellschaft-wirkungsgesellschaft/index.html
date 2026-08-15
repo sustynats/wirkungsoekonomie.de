@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Von der Wissensgesellschaft zur Wirkungsgesellschaft | Wirkungsökonomie</title>
+    <meta name="description" content="Warum Wissen allein nicht reicht: Die Wirkungsgesellschaft fragt, welche Zustände sich tatsächlich verändern - für Mensch, Planet und Demokratie.">
+    <meta name="search_title" content="Von der Wissensgesellschaft zur Wirkungsgesellschaft">
+    <meta name="search_description" content="Wir wissen mehr denn je. Aber Wissen allein verändert noch keine Welt. Diese Grundlagen-Seite erklärt, warum die nächste Entwicklungsstufe Wirkungsrückkopplung braucht.">
+    <meta name="search_section" content="Verstehen">
+    <meta name="search_type" content="Grundlagen- und Orientierungsseite">
+    <meta name="search_tags" content="Wissensgesellschaft, Wirkungsgesellschaft, Wirkungsökonomie, Wirkung, positive Netto-Wirkung, 6. Kondratieff, Transformation, Wirkungskompetenz, SDG+, Wirkungsrückkopplung, Wirkungsarchitektur">
+    <link rel="canonical" href="https://wirkungsoekonomie.de/verstehen/wissensgesellschaft-wirkungsgesellschaft/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:site_name" content="Wirkungsökonomie">
+    <meta property="og:title" content="Von der Wissensgesellschaft zur Wirkungsgesellschaft">
+    <meta property="og:description" content="Die nächste Entwicklungsstufe fragt nicht nur, was wir wissen, sondern was unser Wissen bewirkt. Eine Grundlagen-Seite der Wirkungsökonomie.">
+    <meta property="og:url" content="https://wirkungsoekonomie.de/verstehen/wissensgesellschaft-wirkungsgesellschaft/">
+    <meta property="og:image" content="https://wirkungsoekonomie.de/assets/img/blog/2026-06-15-wissensgesellschaft-wirkungsgesellschaft.webp">
+    <meta property="og:image:alt" content="Illustration des Übergangs von der Wissensgesellschaft zur Wirkungsgesellschaft: Daten, Bücher und digitale Netzwerke gehen in sichtbare gesellschaftliche Wirkung für Bildung, Gesundheit, Demokratie, Klima und Lebensqualität über.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Von der Wissensgesellschaft zur Wirkungsgesellschaft">
+    <meta name="twitter:description" content="Warum Wissen allein nicht reicht: Die Wirkungsgesellschaft fragt, welche Zustände sich tatsächlich verändern - für Mensch, Planet und Demokratie.">
+    <meta name="twitter:image" content="https://wirkungsoekonomie.de/assets/img/blog/2026-06-15-wissensgesellschaft-wirkungsgesellschaft.webp">
+    <link rel="icon" href="../../assets/img/brand/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../../assets/css/style.css?v=20260612-mobile-table-fix">
+    <style>
+      .wg-page .hero-system-visual img {
+        object-fit: cover;
+      }
+
+      .wg-orientation {
+        display: grid;
+        gap: 1rem;
+      }
+
+      .kondratieff-model {
+        display: grid;
+        gap: 1.25rem;
+      }
+
+      .kondratieff-track {
+        display: grid;
+        grid-template-columns: minmax(0, .85fr) minmax(0, 1fr) minmax(0, 1.15fr) minmax(0, .7fr) minmax(0, 1.2fr);
+        gap: .85rem;
+        align-items: stretch;
+      }
+
+      .kondratieff-card,
+      .kondratieff-bridge {
+        border: 1px solid var(--border, #d9d2c5);
+        border-radius: 16px;
+        padding: 1rem;
+        background: rgba(255,255,255,.76);
+        box-shadow: 0 14px 32px rgba(12, 31, 27, .07);
+      }
+
+      .kondratieff-card small,
+      .kondratieff-bridge small {
+        display: inline-block;
+        color: var(--accent, #1f6b4f);
+        font-weight: 800;
+        letter-spacing: .08em;
+        text-transform: uppercase;
+        margin-bottom: .35rem;
+      }
+
+      .kondratieff-card h3,
+      .kondratieff-bridge h3 {
+        margin: 0 0 .55rem;
+        font-size: clamp(1.05rem, 1.5vw, 1.45rem);
+      }
+
+      .kondratieff-card p,
+      .kondratieff-bridge p {
+        margin: 0;
+      }
+
+      .kondratieff-muted {
+        background: linear-gradient(145deg, rgba(237,240,241,.82), rgba(246,244,238,.88));
+      }
+
+      .kondratieff-blue {
+        background: linear-gradient(145deg, rgba(221,236,248,.94), rgba(244,248,250,.9));
+        border-color: rgba(65, 115, 160, .28);
+      }
+
+      .kondratieff-bridge {
+        background: linear-gradient(145deg, rgba(224,243,239,.94), rgba(245,248,241,.92));
+        border-color: rgba(64, 143, 126, .32);
+      }
+
+      .kondratieff-green {
+        background: linear-gradient(145deg, rgba(219,243,229,.97), rgba(232,248,246,.95));
+        border-color: rgba(31, 107, 79, .42);
+        box-shadow: 0 18px 38px rgba(31, 107, 79, .13);
+      }
+
+      .kondratieff-question {
+        margin-top: .75rem;
+        padding-top: .75rem;
+        border-top: 1px solid rgba(12, 31, 27, .12);
+        font-weight: 800;
+        color: var(--ink, #081126);
+      }
+
+      .shift-grid {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: .85rem;
+      }
+
+      .shift-card {
+        min-height: 8rem;
+      }
+
+      .wg-faq details {
+        margin-bottom: .75rem;
+      }
+
+      @media (max-width: 900px) {
+        .kondratieff-track,
+        .shift-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .kondratieff-card,
+        .kondratieff-bridge {
+          position: relative;
+        }
+
+        .kondratieff-card:not(:last-child)::after,
+        .kondratieff-bridge::after {
+          content: "↓";
+          display: block;
+          margin-top: .8rem;
+          color: var(--accent, #1f6b4f);
+          font-weight: 900;
+        }
+      }
+    </style>
+  </head>
+  <body class="wg-page">
+    <header class="site-header" data-search-exclude>
+      <a class="brand" href="../../index.html" aria-label="Wirkungsökonomie Startseite">
+        <span class="brand-mark"><img src="../../assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span>
+        <span class="brand-name">Wirkungsökonomie</span>
+      </a>
+      <nav class="site-utility-nav" aria-label="Schnellzugriffe" data-search-exclude>
+        <a class="site-utility-link site-utility-link--suche" href="../../suche.html" data-nav-match="suche.html" data-utility-label="Suche">Suche</a>
+        <a class="site-utility-link site-utility-link--woek-ki" href="../../woek-ki/" data-nav-match="woek-ki/" data-utility-label="WÖk-KI">KI</a>
+        <a class="site-utility-link site-utility-link--wok-app" href="../../app/" data-nav-match="app/" data-utility-label="WÖk-App">WÖk-App</a>
+        <a class="site-utility-link site-utility-link--mein-wirkungsraum" href="../../mein-wirkungsraum/" data-nav-match="mein-wirkungsraum/" data-utility-label="Mein Wirkungsraum" data-utility-primary="true">Mein Wirkungsraum</a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-icon" aria-hidden="true">☰</span>
+        <span class="sr-only">Menü</span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Hauptnavigation" data-search-exclude>
+        <a href="../../index.html" data-nav-match="index.html">Start</a>
+        <a href="../../verstehen/" data-nav-match="verstehen/|verstehen.html|wirkungsoekonomie.html|wirkungsoekonomie/|modell.html|ordnung/|so-wirkt-wirkungsoekonomie/">Verstehen</a>
+        <a href="../../fuer/" data-nav-match="fuer/|fuer-wen/|fuer/unternehmen.html|fuer/unternehmen/impact-controlling/|fuer/buergerinnen.html|fuer/investoren.html|fuer/investoren/impact-controlling/|fuer/kommunen.html">Für wen?</a>
+        <a href="../../wirkungsfelder/" data-nav-match="wirkungsfelder/|anwendungen.html">Wirkungsfelder</a>
+        <a href="../../wirkungssteuerung/" data-nav-match="wirkungssteuerung/|fuer/wirkungssteuer.html|werkstatt/gesetze/wirkungssteuergesetz/|werkzeuge/scorecards/|werkzeuge/t-sroi/">Wirkungssteuerung</a>
+        <a href="../../oeffentlicher-wirkungsraum/" data-nav-match="oeffentlicher-wirkungsraum/|wirkungsradar/|woek-ki/|app/">Öffentlicher Wirkungsraum</a>
+        <a href="../../werkzeuge/" data-nav-match="werkzeuge/|tools/|methodik/|workflow.html|scanner.html|anwendungen/scanner.html|scorecard-dashboard.html|erleben/|erleben.html|ausprobieren/">Praxis &amp; Tools</a>
+        <a href="../../lernen/" data-nav-match="lernen/|akademie.html|akademie/">Lernen</a>
+        <a href="../../bibliothek/" data-nav-match="bibliothek/|downloads.html|downloads/|dokumente/|referenz/|buch.html|buch/|evidenz/|quellen/|fachbibliothek/|blog.html|blog/|podcast/|begriffe/|glossar.html">Bibliothek</a>
+        <a href="../../mitmachen.html" data-nav-match="mitmachen.html|mitmachen/">Mitmachen</a>
+        <div class="site-nav-utility" aria-label="Schnellzugriffe">
+        <a class="site-utility-link site-utility-link--suche" href="../../suche.html" data-nav-match="suche.html" data-utility-label="Suche">Suche</a>
+        <a class="site-utility-link site-utility-link--woek-ki" href="../../woek-ki/" data-nav-match="woek-ki/" data-utility-label="WÖk-KI">KI</a>
+        <a class="site-utility-link site-utility-link--wok-app" href="../../app/" data-nav-match="app/" data-utility-label="WÖk-App">WÖk-App</a>
+        <a class="site-utility-link site-utility-link--mein-wirkungsraum" href="../../mein-wirkungsraum/" data-nav-match="mein-wirkungsraum/" data-utility-label="Mein Wirkungsraum" data-utility-primary="true">Mein Wirkungsraum</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="inhalt" data-pagefind-body>
+      <article class="hero">
+        <div class="hero-copy">
+          <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Start</a> / <a href="../">Verstehen</a> / Von der Wissensgesellschaft zur Wirkungsgesellschaft</nav>
+          <p class="hero-kicker">Verstehen · Grundlagen- und Orientierungsseite · 12-15 Min.</p>
+          <h1 class="hero-title">Von der Wissensgesellschaft zur Wirkungsgesellschaft</h1>
+          <p class="hero-subtitle">Warum die nächste Entwicklungsstufe nicht nur fragt, was wir wissen - sondern was wir bewirken.</p>
+          <p class="card-text">Wir wissen heute mehr als jede Gesellschaft vor uns. Aber Wissen verändert noch keine Anreize. Die Wirkungsgesellschaft fragt, welche Zustände sich tatsächlich verändern - und wie Wissen in Entscheidungen zurückwirkt.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#kondratieff">Vom 5. zum 6. Kondratieff</a>
+            <a class="btn btn-secondary" href="../../blog/von-der-wissensgesellschaft-zur-wirkungsgesellschaft.html">Journal lesen</a>
+            <a class="btn btn-secondary" href="../../bibliothek/von-der-wissensgesellschaft-zur-wirkungsgesellschaft/">Dossier lesen</a>
+          </div>
+        </div>
+        <figure class="hero-system-visual article-visual">
+          <img src="../../assets/img/blog/2026-06-15-wissensgesellschaft-wirkungsgesellschaft.webp" width="1672" height="941" alt="Illustration des Übergangs von der Wissensgesellschaft zur Wirkungsgesellschaft: Daten, Bücher und digitale Netzwerke gehen in sichtbare gesellschaftliche Wirkung für Bildung, Gesundheit, Demokratie, Klima und Lebensqualität über." decoding="async" fetchpriority="high">
+          <figcaption>Vom Wissen zur Rückkopplung: Daten, Analyse und KI werden dann wirksam, wenn sie bessere Zustände ermöglichen.</figcaption>
+        </figure>
+      </article>
+
+      <section class="section home-video-section" id="erklaervideo" aria-labelledby="erklaervideo-title">
+        <div>
+          <div class="section-header">
+            <p class="hero-kicker">Erklärvideo</p>
+            <h2 id="erklaervideo-title">Von Wissen zu Wirkung</h2>
+            <p>Das Video erklärt den Übergang von der Wissensgesellschaft zur Wirkungsgesellschaft: Warum Wissen, Daten und KI erst dann gesellschaftlich wirksam werden, wenn sie in Entscheidungen, Preise, Regeln, Kapital und demokratische Rückkopplung zurückfließen.</p>
+          </div>
+          <video class="home-explainer-video" controls controlsList="nodownload" preload="metadata" playsinline poster="../../assets/video/wirkungsgesellschaft-erklaervideo-poster.png?v=20260616b" aria-label="Erklärvideo: Von der Wissensgesellschaft zur Wirkungsgesellschaft">
+            <source src="../../assets/video/wirkungsgesellschaft-erklaervideo.mp4?v=20260616b" type="video/mp4">
+            Dein Browser kann dieses Video nicht direkt abspielen.
+          </video>
+        </div>
+      </section>
+
+      <section class="section section-soft" aria-labelledby="orientierung">
+        <div class="section-header">
+          <p class="hero-kicker">Auf einen Blick</p>
+          <h2 id="orientierung">Drei Fragen, ein Maßstab</h2>
+          <p>Die Seite ist der dauerhafte Einstieg unter Verstehen. Sie verlinkt Journal, Dossier und Glossar und erklärt den Gedanken ohne Fachnebel.</p>
+        </div>
+        <div class="card-grid three">
+          <article class="card">
+            <p class="card-kicker">Wissensgesellschaft</p>
+            <h3 class="card-title">Was wissen wir?</h3>
+            <p class="card-text">Welche Daten haben wir? Was können wir analysieren, berichten, modellieren und erklären?</p>
+          </article>
+          <article class="card">
+            <p class="card-kicker">Wirkungsgesellschaft</p>
+            <h3 class="card-title">Was bewirkt es?</h3>
+            <p class="card-text">Was verändert sich wirklich, für wen, mit welchen Nebenwirkungen - und wie fließt das in Preise, Steuern, Kapital, Bildung, Medien, Verwaltung und Alltag zurück?</p>
+          </article>
+          <article class="card">
+            <p class="card-kicker">Maßstab</p>
+            <h3 class="card-title">Positive Netto-Wirkung</h3>
+            <p class="card-text">Nicht Kapital, Wachstum, Gewinn, Output oder Reichweite stehen im Mittelpunkt, sondern tatsächliche Zustandsveränderung für Mensch, Planet und Demokratie.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="unterschied">
+        <div class="article-body">
+          <h2 id="unterschied">Der Unterschied in einem Satz</h2>
+          <div class="callout">
+            <p><strong>Die Wissensgesellschaft baut den Rauchmelder. Die Wirkungsgesellschaft sorgt dafür, dass jemand den Herd ausschaltet.</strong></p>
+            <p>Oder systemischer: Die Wissensgesellschaft baut das Thermometer. Die Wirkungsgesellschaft baut den demokratischen Thermostat.</p>
+          </div>
+          <p>Ein Thermometer zeigt, dass es zu kalt oder zu heiß ist. Ein Thermostat verbindet die Messung mit einer <a class="text-link" href="../../begriffe/wirkungsrueckkopplung/">Rückkopplung</a>. Es verändert etwas. Genau darum geht es.</p>
+          <p>Diese Seite ist eine Brücke. Der <a class="text-link" href="../../blog/von-der-wissensgesellschaft-zur-wirkungsgesellschaft.html">Journal-Beitrag</a> ordnet den Gedanken publizistisch ein. Das <a class="text-link" href="../../bibliothek/von-der-wissensgesellschaft-zur-wirkungsgesellschaft/">Dossier</a> vertieft ihn ausführlich. Das <a class="text-link" href="../../begriffe/">Glossar</a> klärt die Begriffe.</p>
+        </div>
+      </section>
+
+      <section class="section section-soft" aria-labelledby="wissen">
+        <div class="article-body">
+          <h2 id="wissen">1. Was war die Wissensgesellschaft?</h2>
+          <p>Die <a class="text-link" href="../../begriffe/wissensgesellschaft/">Wissensgesellschaft</a> war ein großer Fortschritt. In der Agrargesellschaft war Boden entscheidend. In der Industriegesellschaft waren Maschinen, Energie und Fabriken entscheidend. In der Wissensgesellschaft wurden Bildung, Forschung, Daten, Software, Organisation, Kommunikation und Innovation zu zentralen Ressourcen.</p>
+          <p>Computer, Internet, Hochschulen, Labore, Plattformen, Datenbanken, KI und globale Forschung haben unsere Welt verändert. Wir können heute Emissionen berechnen, Lieferketten verfolgen, Krankheitsverläufe modellieren, Finanzrisiken analysieren, Satellitendaten auswerten und Bildungsungleichheit sichtbar machen.</p>
+          <p>Aber die Wissensgesellschaft hat eine Grenze: Sie erzeugt Erkenntnis, aber nicht automatisch Veränderung. Man kann wissen, dass CO2 das Klima destabilisiert - und trotzdem fossile Geschäftsmodelle belohnen. Man kann wissen, dass Kinderarmut Bildungschancen zerstört - und trotzdem ein System betreiben, das soziale Herkunft weitervererbt.</p>
+          <p><strong>Wissen ist notwendig. Aber Wissen allein reicht nicht.</strong></p>
+
+          <h2 id="warum-wissen-nicht-reicht">2. Warum Wissen nicht reicht</h2>
+          <p>Eine Gesellschaft kann sehr viel wissen und trotzdem falsch steuern. Das liegt daran, dass unsere zentralen Anreizsysteme noch immer vor allem Gewinn, Wachstum, Kapitalrendite, Output, Reichweite, kurzfristige Effizienz, Marktwert oder politische Sichtbarkeit belohnen.</p>
+          <p>Diese Größen sind nicht wertlos. Aber sie beantworten nicht die wichtigste Frage: Wird dadurch ein Zustand besser oder schlechter?</p>
+          <p>Die Wirkungsökonomie nennt diese Lücke <a class="text-link" href="../../begriffe/wirkungsblindheit/">Wirkungsblindheit</a>. Wir messen viel Bewegung. Aber wir messen zu selten Richtung.</p>
+
+          <h2 id="wirkung">3. Was bedeutet Wirkung?</h2>
+          <p><a class="text-link" href="../../begriffe/wirkung/">Wirkung</a> bedeutet in der Wirkungsökonomie: die tatsächliche Veränderung von Zuständen. Ein Zustand kann Gesundheit, Vertrauen, Bildung, Wohnsicherheit, Wasserqualität, Biodiversität, Medienqualität, Rechtsstaatlichkeit oder demokratische Stabilität sein.</p>
+          <p>Wirkung ist nicht automatisch gut. Wirkung kann positiv, negativ oder neutral sein. Positive Wirkung wird in der Wirkungsökonomie am Referenzrahmen von SDGs, Agenda 2030 und <a class="text-link" href="../../begriffe/sdg-plus/">SDG+</a> bewertet. SDG+ ergänzt Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskursfähigkeit, institutionelles Vertrauen, gesellschaftlichen Zusammenhalt und digitale Selbstbestimmung.</p>
+          <p>Deshalb unterscheidet die Wirkungsökonomie zwischen Absicht, Output, <a class="text-link" href="../../begriffe/wirkungspotenzial/">Wirkungspotenzial</a>, tatsächlicher Wirkung, <a class="text-link" href="../../begriffe/wirkungsrisiko/">Wirkungsrisiko</a>, Netto-Wirkung, Transformationswirkung und Wirkungsrückkopplung.</p>
+
+          <h2 id="wirkungsgesellschaft">4. Was ist eine Wirkungsgesellschaft?</h2>
+          <p>Eine <a class="text-link" href="../../begriffe/wirkungsgesellschaft/">Wirkungsgesellschaft</a> ist eine Gesellschaft, die Wissen nicht nur sammelt, sondern in Rückkopplung übersetzt. Sie fragt nicht nur: Was wissen wir? Sondern: Was bewirkt es? Für wen? Wer trägt die Folgen? Welche Risiken wachsen? Welche Anreize müssen sich ändern?</p>
+          <p>Daten gehören nicht nur in Berichte. Sie gehören in Entscheidungen. Preise sollen nicht verschweigen, dass ein Produkt Wasser verbraucht, Menschen ausbeutet oder Klima belastet. Kapital soll nicht neutral erscheinen, wenn es Zerstörung finanziert. Medien sollen nicht nur Reichweite feiern, wenn sie Vertrauen schwächen.</p>
+          <p>Die Wirkungsgesellschaft ist deshalb keine Anti-Wissensgesellschaft. Sie ist die Reifung der Wissensgesellschaft.</p>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="apfel">
+        <div class="section-header">
+          <p class="hero-kicker">Beispiel</p>
+          <h2 id="apfel">Der Apfel ist nicht nur ein Apfel</h2>
+          <p>Im Supermarkt steht bei beiden: Apfel. Die Wirkungsfrage schaut auf das, was das Preisschild oft nicht zeigt.</p>
+        </div>
+        <div class="card-grid two">
+          <article class="card">
+            <p class="card-kicker">Preisschild</p>
+            <h3 class="card-title">Was kostet er?</h3>
+            <p class="card-text">Der heutige Preis zeigt Kosten, Nachfrage, Logistik und Marge. Er sagt oft wenig über Wasserstress, Arbeit, Boden, Transport, Biodiversität oder regionale Versorgung.</p>
+          </article>
+          <article class="card">
+            <p class="card-kicker">Wirkungsfrage</p>
+            <h3 class="card-title">Was hat er unterwegs bewirkt?</h3>
+            <p class="card-text">Wenn schädliche Wirkung im Preis unsichtbar bleibt, erscheint Zerstörung billig. Wenn positive Netto-Wirkung sichtbar wird, kann Verantwortung günstiger werden.</p>
+          </article>
+        </div>
+        <div class="callout"><p><strong>Ein Preis zeigt, was bezahlt wird. Wirkung zeigt, was mitbezahlt wird.</strong></p></div>
+      </section>
+
+      <section class="section section-soft" id="kondratieff" aria-labelledby="kondratieff-title">
+        <div class="section-header">
+          <p class="hero-kicker">Vom 5. zum 6. Kondratieff</p>
+          <h2 id="kondratieff-title">Von der Wissensgesellschaft zur Wirkungsgesellschaft</h2>
+          <p>Nicht mehr nur: Was wissen wir? Sondern: Was bewirkt es?</p>
+        </div>
+        <div class="kondratieff-model" role="img" aria-label="Wellenförmige Visualisierung des Übergangs vom 5. Kondratieff der Digitalisierung und Wissensgesellschaft zum 6. Kondratieff der Wirkungsgesellschaft mit Nachhaltigkeit, Resilienz, Gesundheit und positiver Netto-Wirkung für Mensch, Planet und Demokratie.">
+          <div class="kondratieff-track">
+            <article class="kondratieff-card kondratieff-muted">
+              <small>1.-2. Kondratieff</small>
+              <h3>Industrialisierung</h3>
+              <p>Dampfmaschine, Eisenbahn, Stahl. Leitlogik: Kosten senken, Produktion steigern.</p>
+            </article>
+            <article class="kondratieff-card kondratieff-muted">
+              <small>3.-4. Kondratieff</small>
+              <h3>Massenproduktion &amp; Konsumgesellschaft</h3>
+              <p>Elektrizität, Chemie, Automobil, Massenmärkte. Leitlogik: Nutzen schaffen, Konsum ausweiten.</p>
+            </article>
+            <article class="kondratieff-card kondratieff-blue">
+              <small>5. Kondratieff</small>
+              <h3>Digitalisierung &amp; Wissensgesellschaft</h3>
+              <p>Digitalisierung, Daten, Wissen, Effizienz, IT, Kommunikation, Forschung und Globalisierung.</p>
+              <div class="kondratieff-question">Leitfrage: Was wissen wir?</div>
+            </article>
+            <article class="kondratieff-bridge">
+              <small>Schwelle der Rückkopplung</small>
+              <h3>Vom Wissen zur Wirkungsrückkopplung</h3>
+              <p>Wissen reicht nicht mehr, wenn es Preise, Steuern, Kapital und Entscheidungen nicht verändert.</p>
+            </article>
+            <article class="kondratieff-card kondratieff-green">
+              <small>6. Kondratieff</small>
+              <h3>Wirkungsgesellschaft</h3>
+              <p>Nachhaltigkeit, Resilienz, Gesundheit, Wirkung, SDGs, SDG+, Transformation und grüne Technologien.</p>
+              <div class="kondratieff-question">Leitfrage: Was bewirkt es?</div>
+            </article>
+          </div>
+          <div class="callout">
+            <p>Die Wissensgesellschaft ist die Logik des 5. Kondratieff: Daten, Digitalisierung, Forschung, Effizienz und globale Vernetzung. Die Wirkungsgesellschaft markiert den Übergang in den 6. Kondratieff: Nachhaltigkeit, Resilienz, Gesundheit und Wirkung werden zur neuen Leitlogik.</p>
+            <p>Der entscheidende Schritt ist die Rückkopplung: Wissen bleibt nicht im Bericht, sondern verändert Preise, Steuern, Kapital, Beschaffung, Bildung, Medien und politische Entscheidungen.</p>
+            <p><small>Kondratieff-Zyklen dienen hier als Deutungsmodell, nicht als exakter Fahrplan.</small></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="verschiebungen">
+        <div class="section-header">
+          <p class="hero-kicker">Was sich verschiebt</p>
+          <h2 id="verschiebungen">Fünf kleine Verschiebungen mit großer Wirkung</h2>
+        </div>
+        <div class="shift-grid">
+          <article class="card shift-card"><p class="card-kicker">1</p><h3 class="card-title">Von Wissen zu Wirkungsrückkopplung</h3></article>
+          <article class="card shift-card"><p class="card-kicker">2</p><h3 class="card-title">Von Effizienz zu Impact-Intensität</h3></article>
+          <article class="card shift-card"><p class="card-kicker">3</p><h3 class="card-title">Von Kapital zu Wirkung als Maßstab</h3></article>
+          <article class="card shift-card"><p class="card-kicker">4</p><h3 class="card-title">Von Output zu positiver Netto-Wirkung</h3></article>
+          <article class="card shift-card"><p class="card-kicker">5</p><h3 class="card-title">Von Reporting zu Steuerung</h3></article>
+        </div>
+      </section>
+
+      <section class="section section-soft" aria-labelledby="nicht-ist">
+        <div class="article-body">
+          <h2 id="nicht-ist">Was die Wirkungsgesellschaft nicht ist</h2>
+          <p>Die Wirkungsgesellschaft ist keine Planwirtschaft. Sie ersetzt Märkte nicht, Kapital nicht, Eigentum nicht, Freiheit nicht und Demokratie nicht. Sie verändert den Kompass.</p>
+          <p>Märkte bleiben. Aber Preise sollen mehr Wirklichkeit enthalten. Kapital bleibt. Aber es soll nicht blind Schäden finanzieren. Gewinn bleibt. Aber er ist Ergebnis tragfähiger Wirkung, nicht Selbstzweck.</p>
+          <p>Die Wirkungsgesellschaft ist auch kein Social-Credit-System. Sie bewertet nicht private Menschenleben. Sie bewertet Wirkungsträger: Produkte, Regeln, Institutionen, Kapitalflüsse, Programme, Infrastrukturen, Lieferketten, Medienlogiken und politische Maßnahmen - mit Grundrechtsschutz, Transparenz, Einspruchsmöglichkeiten, demokratischer Kontrolle und Lernfähigkeit.</p>
+
+          <h2 id="positive-netto-wirkung">Positive Netto-Wirkung statt Schönrechnung</h2>
+          <p>Ein einzelner positiver Effekt reicht nicht. Ein T-Shirt kann aus Bio-Baumwolle bestehen und trotzdem durch Kinderarbeit hergestellt werden. Eine Plattform kann Bildungsvideos zeigen und gleichzeitig Hass verstärken.</p>
+          <p>Darum arbeitet die Wirkungsökonomie mit <a class="text-link" href="../../begriffe/positive-netto-wirkung/">positiver Netto-Wirkung</a>. Schwere negative Wirkungen dürfen nicht beliebig durch gute Werte an anderer Stelle ausgeglichen werden. Das ist das Prinzip der <a class="text-link" href="../../begriffe/reverse-merit-order/">Reverse Merit Order</a> beziehungsweise des <a class="text-link" href="../../begriffe/nichtkompensationsprinzip/">Nichtkompensationsprinzips</a>.</p>
+          <div class="callout"><p><strong>Ein Kuchen wird nicht dadurch essbar, dass die Erdbeeren schön sind, wenn im Teig Glassplitter stecken.</strong></p></div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="faq">
+        <div class="section-header">
+          <p class="hero-kicker">Einwände</p>
+          <h2 id="faq">Kurze Antworten</h2>
+        </div>
+        <div class="faq-accordion wg-faq">
+          <details>
+            <summary>Ist die Wirkungsgesellschaft wissensfeindlich?</summary>
+            <p>Nein. Sie baut auf Wissen auf. Sie sagt nur: Wissen muss in Entscheidungen zurückwirken, sonst bleibt es folgenlos.</p>
+          </details>
+          <details>
+            <summary>Ist das Planwirtschaft?</summary>
+            <p>Nein. Märkte bleiben Suchprozesse. Aber die Signale werden ehrlicher, weil Wirkung in Preise, Steuern, Kapital und Beschaffung zurückgekoppelt wird.</p>
+          </details>
+          <details>
+            <summary>Wird damit alles messbar gemacht?</summary>
+            <p>Nein. Nicht alles ist perfekt messbar. Aber vieles ist heute sichtbar genug, um bessere Entscheidungen zu treffen. Unsicherheit muss offengelegt werden, nicht verdrängt.</p>
+          </details>
+          <details>
+            <summary>Werden Menschen bewertet?</summary>
+            <p>Nein. Die Wirkungsökonomie darf nicht zur Personenbewertung werden. Bewertet werden Wirkungsträger wie Produkte, Programme, Regeln, Kapitalflüsse, Institutionen und Infrastrukturen.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="section section-soft" aria-labelledby="vertiefen">
+        <div class="section-header">
+          <p class="hero-kicker">Vertiefen</p>
+          <h2 id="vertiefen">Weiterlesen ohne Umweg</h2>
+        </div>
+        <div class="card-grid three">
+          <article class="card">
+            <p class="card-kicker">Journal</p>
+            <h3 class="card-title">Von der Wissensgesellschaft zur Wirkungsgesellschaft</h3>
+            <p class="card-text">Die kompakte publizistische Fassung des Gedankens.</p>
+            <a class="text-link" href="../../blog/von-der-wissensgesellschaft-zur-wirkungsgesellschaft.html">Journal-Beitrag lesen</a>
+          </article>
+          <article class="card">
+            <p class="card-kicker">Dossier</p>
+            <h3 class="card-title">Die Langfassung</h3>
+            <p class="card-text">Historische Einordnung, wirtschaftliche Entwicklung, 6. Kondratieff und Wirkungsarchitektur ausführlich erklärt.</p>
+            <a class="text-link" href="../../bibliothek/von-der-wissensgesellschaft-zur-wirkungsgesellschaft/">Dossier lesen</a>
+          </article>
+          <article class="card">
+            <p class="card-kicker">Glossar</p>
+            <h3 class="card-title">Begriffe verstehen</h3>
+            <p class="card-text">Wirkung, Wirkungsgesellschaft, positive Netto-Wirkung und Wirkungsrückkopplung sauber erklärt.</p>
+            <a class="text-link" href="../../begriffe/">Zum Glossar</a>
+          </article>
+        </div>
+        <div class="document-chip-row">
+          <a href="../../begriffe/wirkung/">Wirkung</a>
+          <a href="../../begriffe/positive-netto-wirkung/">Positive Netto-Wirkung</a>
+          <a href="../../begriffe/wirkungspotenzial/">Wirkungspotenzial</a>
+          <a href="../../begriffe/wirkungsrisiko/">Wirkungsrisiko</a>
+          <a href="../../begriffe/wirkungsrueckkopplung/">Wirkungsrückkopplung</a>
+          <a href="../../begriffe/wirkungsarchitektur/">Wirkungsarchitektur</a>
+          <a href="../../begriffe/wirkungsblindheit/">Wirkungsblindheit</a>
+          <a href="../../begriffe/wirkungswahrheit/">Wirkungswahrheit</a>
+          <a href="../../begriffe/sechster-kondratieff/">6. Kondratieff</a>
+          <a href="../../begriffe/wissensgesellschaft/">Wissensgesellschaft</a>
+          <a href="../../begriffe/wirkungsgesellschaft/">Wirkungsgesellschaft</a>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="einordnung">
+        <div class="article-body">
+          <h2 id="einordnung">Quellen- und Einordnungshinweis</h2>
+          <p>Diese Seite ist eine Grundlagen- und Orientierungsseite der Wirkungsökonomie. Sie basiert auf dem Dossier <a class="text-link" href="../../dokumente/von-der-wissensgesellschaft-zur-wirkungsgesellschaft/">Von der Wissensgesellschaft zur Wirkungsgesellschaft</a> und steht im Zusammenhang mit dem Journal-Beitrag gleichen Titels.</p>
+          <p>Sie ersetzt nicht das Dossier, sondern macht den Gedanken als dauerhaften Einstieg im Bereich Verstehen zugänglich.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" data-search-exclude>
+      <div class="footer-grid">
+        <div>
+          <p class="hero-kicker">Wirkungsökonomie</p>
+          <h2>Die neue Ordnung des Wohlstands</h2>
+          <p>Die Wirkungsökonomie ist ein eigenständiges Gesellschafts- und Wirtschaftsmodell, das Wirkung auf Mensch, Planet und Demokratie sichtbar macht, bewertet und in Entscheidungen zurückführt.</p>
+          <p><a class="text-link" href="../../mitmachen.html">Kontakt und Mitmachen</a></p>
+        </div>
+        <a class="btn btn-primary" href="../../kompass.html">WÖk-Kompass öffnen</a>
+        <nav class="footer-nav" aria-label="Footer Navigation" data-search-exclude>
+          <div class="footer-nav-group">
+      <h3>Verstehen</h3>
+      <div class="footer-nav-links">
+          <a href="../../verstehen/" data-nav-match="verstehen/">Einstieg</a>
+          <a href="../../verstehen/woek-auf-einer-seite/" data-nav-match="verstehen/woek-auf-einer-seite/">WÖk auf einer Seite</a>
+          <a href="../../so-wirkt-wirkungsoekonomie/" data-nav-match="so-wirkt-wirkungsoekonomie/">So wirkt WÖk</a>
+          <a href="../../modell.html" data-nav-match="modell.html|modell/">Modell</a>
+          <a href="../../einwaende/" data-nav-match="einwaende/">Einwände</a>
+          <a href="../../begriffe/" data-nav-match="begriffe/|glossar.html">Glossar</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Für wen?</h3>
+      <div class="footer-nav-links">
+          <a href="../../fuer/" data-nav-match="fuer/">Übersicht</a>
+          <a href="../../fuer/buergerinnen.html" data-nav-match="fuer/buergerinnen.html">Bürger:innen</a>
+          <a href="../../fuer/unternehmen.html" data-nav-match="fuer/unternehmen.html">Unternehmen</a>
+          <a href="../../fuer/unternehmen/impact-controlling/" data-nav-match="fuer/unternehmen/impact-controlling/">Impact-Controlling Unternehmen</a>
+          <a href="../../fuer/politik.html" data-nav-match="fuer/politik.html">Politik</a>
+          <a href="../../fuer/kommunen.html" data-nav-match="fuer/kommunen.html">Kommunen</a>
+          <a href="../../fuer/investoren.html" data-nav-match="fuer/investoren.html">Investor:innen</a>
+          <a href="../../fuer/investoren/impact-controlling/" data-nav-match="fuer/investoren/impact-controlling/">Impact-Controlling Finanzmarkt</a>
+          <a href="../../fuer/journalismus.html" data-nav-match="fuer/journalismus.html">Journalismus</a>
+          <a href="../../fuer/wissenschaft-forschung.html" data-nav-match="fuer/wissenschaft-forschung.html">Wissenschaft</a>
+          <a href="../../fuer/gesundheit.html" data-nav-match="fuer/gesundheit.html">Gesundheit</a>
+          <a href="../../fuer/landwirtschaft/" data-nav-match="fuer/landwirtschaft/">Landwirtschaft</a>
+          <a href="../../fuer/mieter.html" data-nav-match="fuer/mieter.html">Wohnen</a>
+          <a href="../../fuer/rente.html" data-nav-match="fuer/rente.html">Rente</a>
+          <a href="../../fuer/wirkungseinkommen.html" data-nav-match="fuer/wirkungseinkommen.html">Wirkungseinkommen</a>
+          <a href="../../fuer/akademie.html" data-nav-match="fuer/akademie.html">Akademie</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Wirkungsfelder</h3>
+      <div class="footer-nav-links">
+          <a href="../../wirkungsfelder/" data-nav-match="wirkungsfelder/">Alle Wirkungsfelder</a>
+          <a href="../../wirkungsfelder/bildung/" data-nav-match="wirkungsfelder/bildung/">Bildung</a>
+          <a href="../../wirkungsfelder/gesundheit-pflege/" data-nav-match="wirkungsfelder/gesundheit-pflege/">Gesundheit &amp; Pflege</a>
+          <a href="../../wirkungsfelder/klima-energie-ressourcen/" data-nav-match="wirkungsfelder/klima-energie-ressourcen/">Klima, Energie &amp; Ressourcen</a>
+          <a href="../../wirkungsfelder/produkte-konsum/" data-nav-match="wirkungsfelder/produkte-konsum/">Produkte &amp; Konsum</a>
+          <a href="../../wirkungsfelder/wirtschaft-unternehmen/" data-nav-match="wirkungsfelder/wirtschaft-unternehmen/">Wirtschaft &amp; Unternehmen</a>
+          <a href="../../wirkungsfelder/arbeit-einkommen/" data-nav-match="wirkungsfelder/arbeit-einkommen/">Arbeit &amp; Einkommen</a>
+          <a href="../../wirkungsfelder/finanzsystem-kapital/" data-nav-match="wirkungsfelder/finanzsystem-kapital/">Finanzsystem &amp; Kapital</a>
+          <a href="../../wirkungsfelder/staat-recht-demokratie/" data-nav-match="wirkungsfelder/staat-recht-demokratie/">Staat, Recht &amp; Demokratie</a>
+          <a href="../../wirkungsfelder/medien-oeffentlichkeit/" data-nav-match="wirkungsfelder/medien-oeffentlichkeit/">Öffentlichkeit &amp; Medien</a>
+          <a href="../../wirkungsfelder/wissenschaft-innovation-digitalisierung/" data-nav-match="wirkungsfelder/wissenschaft-innovation-digitalisierung/">Wissenschaft &amp; Innovation</a>
+          <a href="../../wirkungsfelder/wirkungsfinanzpolitik/" data-nav-match="wirkungsfelder/wirkungsfinanzpolitik/">Wirkungsfinanzpolitik</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Wirkungssteuerung</h3>
+      <div class="footer-nav-links">
+          <a href="../../wirkungssteuerung/" data-nav-match="wirkungssteuerung/">Überblick</a>
+          <a href="../../wirkungssteuerung/wirkungssteuer/" data-nav-match="wirkungssteuerung/wirkungssteuer/">Wirkungssteuer</a>
+          <a href="../../wirkungssteuerung/wirkungshaushalt/" data-nav-match="wirkungssteuerung/wirkungshaushalt/">Wirkungshaushalt</a>
+          <a href="../../wirkungsfelder/wirkungsfinanzpolitik/" data-nav-match="wirkungsfelder/wirkungsfinanzpolitik/">Wirkungsfinanzpolitik</a>
+          <a href="../../werkzeuge/woek-id-register/" data-nav-match="werkzeuge/woek-id-register/|woek-id-register/|register/">WÖk-ID Register</a>
+          <a href="../../werkzeuge/woek-ids/" data-nav-match="werkzeuge/woek-ids/|wirkungssteuerung/woek-ids/">WÖk-IDs</a>
+          <a href="../../werkzeuge/scorecards/" data-nav-match="werkzeuge/scorecards/|wirkungssteuerung/scorecards/">Scorecards</a>
+          <a href="../../werkzeuge/netto-wirkungs-index/" data-nav-match="werkzeuge/netto-wirkungs-index/">Netto-Wirkungs-Index</a>
+          <a href="../../begriffe/impact-of-investment/" data-nav-match="begriffe/impact-of-investment/">Impact-of-Investment</a>
+          <a href="../../werkzeuge/t-sroi/" data-nav-match="werkzeuge/t-sroi/">T-SROI</a>
+          <a href="../../werkzeuge/reverse-merit-order/" data-nav-match="werkzeuge/reverse-merit-order/|wirkungssteuerung/reverse-merit-order/">Reverse Merit Order</a>
+          <a href="../../werkzeuge/" data-nav-match="werkzeuge/">Alle Werkzeuge</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Öffentlicher Wirkungsraum</h3>
+      <div class="footer-nav-links">
+          <a href="../../oeffentlicher-wirkungsraum/" data-nav-match="oeffentlicher-wirkungsraum/">Übersicht</a>
+          <a href="../../wirkungsradar/" data-nav-match="wirkungsradar/">Wirkungsradar</a>
+          <a href="../../werkzeuge/faktencheck/" data-nav-match="werkzeuge/faktencheck/">WÖk-Wirkungscheck</a>
+          <a href="../../wirkungsradar/debattenkarten/" data-nav-match="wirkungsradar/debattenkarten/">Debattenkarten</a>
+          <a href="../../wirkungsradar/themen/" data-nav-match="wirkungsradar/themen/">Themenräume</a>
+          <a href="../../wirkungsradar/ursachen/" data-nav-match="wirkungsradar/ursachen/">Ursachen-Navigator</a>
+          <a href="../../wirkungsradar/antwort-playbooks/" data-nav-match="wirkungsradar/antwort-playbooks/">Antwort-Playbooks</a>
+          <a href="../../woek-ki/" data-nav-match="woek-ki/">WÖk-KI</a>
+          <a href="../../app/" data-nav-match="app/">WÖk-App</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Praxis &amp; Tools</h3>
+      <div class="footer-nav-links">
+          <a href="../../app/" data-nav-match="app/">WÖk-App</a>
+          <a href="../../erleben/" data-nav-match="erleben.html|erleben/">Interaktive Demos</a>
+          <a href="../../erleben/produktwirkungsrechner/" data-nav-match="erleben/produktwirkungsrechner/">Produktwirkungsrechner</a>
+          <a href="../../erleben/impact-controlling-rechner/" data-nav-match="erleben/impact-controlling-rechner/">Impact-Controlling-Rechner</a>
+          <a href="../../erleben/medienwirkungscheck/" data-nav-match="erleben/medienwirkungscheck/">Medienwirkungscheck</a>
+          <a href="../../erleben/unternehmens-wirkungscheck/" data-nav-match="erleben/unternehmens-wirkungscheck/">Unternehmens-Wirkungscheck</a>
+          <a href="../../erleben/wirkungsportfolio-generator/" data-nav-match="erleben/wirkungsportfolio-generator/">Wirkungsportfolio-Generator</a>
+          <a href="../../erleben/wohnwirkungsrechner/" data-nav-match="erleben/wohnwirkungsrechner/">Wohnwirkungsrechner</a>
+          <a href="../../erleben/wirkungsrenten-rechner/" data-nav-match="erleben/wirkungsrenten-rechner/">Wirkungsrenten-Rechner</a>
+          <a href="../../erleben/" data-nav-match="erleben/">Alle Demos</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Lernen</h3>
+      <div class="footer-nav-links">
+          <a href="../../lernen/" data-nav-match="lernen/">Lernportal</a>
+          <a href="../../akademie/" data-nav-match="akademie/">Akademie</a>
+          <a href="../../akademie/wirkungsfinanzpolitik/" data-nav-match="akademie/wirkungsfinanzpolitik/">Wirkungsfinanzpolitik</a>
+          <a href="../../akademie/wirkungsradar/" data-nav-match="akademie/wirkungsradar/">Wirkungsradar</a>
+          <a href="../../mein-wirkungsraum/" data-nav-match="mein-wirkungsraum/">Mein Wirkungsraum</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Bibliothek</h3>
+      <div class="footer-nav-links">
+          <a href="../../bibliothek/" data-nav-match="bibliothek/">Bibliothek</a>
+          <a href="../../journal/" data-nav-match="journal/|blog.html|blog/">Journal</a>
+          <a href="../../podcast/" data-nav-match="podcast/">Podcast</a>
+          <a href="../../referenz/" data-nav-match="referenz/">Online-Buch</a>
+          <a href="../../dokumente/" data-nav-match="dokumente/">Dokumente</a>
+          <a href="../../dokumente/wirkungsfinanzpolitik/" data-nav-match="dokumente/wirkungsfinanzpolitik/">Wirkungsfinanzpolitik-Aufsatz</a>
+          <a href="../../werkstatt/arbeitsbibliothek/" data-nav-match="werkstatt/arbeitsbibliothek/">Arbeitsbibliothek</a>
+          <a href="../../bibliothek/whitepaper-t-sroi/" data-nav-match="bibliothek/whitepaper-t-sroi/">Whitepaper</a>
+          <a href="../../wissen/working-papers/" data-nav-match="wissen/working-papers/">Working Papers</a>
+          <a href="../../werkstatt/gesetze/wirkungssteuergesetz/" data-nav-match="werkstatt/gesetze/">Gesetze</a>
+          <a href="../../werkstatt/leitlinien/wustg/" data-nav-match="werkstatt/leitlinien/">Leitlinien</a>
+      </div>
+    </div>
+    <div class="footer-nav-group">
+      <h3>Mitmachen</h3>
+      <div class="footer-nav-links">
+          <a href="../../mitmachen.html" data-nav-match="mitmachen.html|mitmachen/">Mitmachen</a>
+          <a href="../../suche.html" data-nav-match="suche.html|suche/">Suche</a>
+          <a href="../../woek-ki/" data-nav-match="woek-ki/">WÖk-KI</a>
+          <a href="../../mein-wirkungsraum/" data-nav-match="mein-wirkungsraum/">Mein Wirkungsraum</a>
+          <a href="../../ueber.html" data-nav-match="ueber.html|ueber/">Über die WÖk</a>
+          <a href="../../impressum.html" data-nav-match="impressum.html|impressum/">Impressum</a>
+          <a href="../../datenschutz.html" data-nav-match="datenschutz.html|datenschutz/">Datenschutz</a>
+      </div>
+    </div>
+        </nav>
+        <nav class="footer-legal-nav" aria-label="Rechtliches" data-search-exclude>
+    <a href="../../journal/" data-nav-match="journal/|blog.html|blog/">Journal</a>
+    <a href="../../ueber.html" data-nav-match="ueber.html|ueber/|ueber-die-woek/|ueber-die-w-oek/">Über die Wirkungsökonomie</a>
+    <a href="../../impressum.html" data-nav-match="impressum.html|impressum/">Impressum</a>
+    <a href="../../datenschutz.html" data-nav-match="datenschutz.html|datenschutz/">Datenschutz</a>
+        </nav>
+        <p>© 2026 Natalie Weber - Wirkungsökonomie</p>
+      </div>
+    </footer>
+    <script src="../../assets/js/main.js?v=20260612-mobile-table-fix" defer></script>
+  </body>
+</html>

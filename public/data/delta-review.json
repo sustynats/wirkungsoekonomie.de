@@ -1,0 +1,993 @@
+{
+  "version": "2026.2-live-reference",
+  "generatedAt": "2026-07-02T20:49:49.690Z",
+  "findings": [
+    {
+      "documentId": "woek-main-2026",
+      "route": "/referenz/kapitel-006-nachhaltigkeit-ist-keine-strategie/",
+      "sectionId": "woek-main-2026-k006-lr-2026-2",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "addendum",
+      "severity": "medium",
+      "suggestedAction": "Delta-Review-Ergänzung für Cluster Systemarchitektur.",
+      "suggestedLiveReferenceText": "Nachhaltigkeit wird in der lebenden Referenz nicht als Zusatzlabel, ESG-Ersatz oder Berichtspflicht gelesen, sondern als Ergebnis gelingender Wirkungsrückkopplung. Maßgeblich bleibt positive Netto-Wirkung für Mensch, Planet und Demokratie; Nachhaltigkeit beschreibt die resiliente Systemfähigkeit, die daraus entstehen kann.",
+      "sourceForUpdate": "Nachhaltigkeit-Systemarchitektur / führender Begriffsleitfaden",
+      "affectedTerms": [
+        "Nachhaltigkeit",
+        "Wirkungsarchitektur",
+        "interdependente Netto-Wirkung",
+        "Wirkungsrückkopplung"
+      ],
+      "affectedDocuments": [
+        "Nachhaltigkeit-Systemarchitektur / führender Begriffsleitfaden"
+      ],
+      "reviewStatus": "applied-as-live-reference-update"
+    },
+    {
+      "documentId": "woek-main-2026",
+      "route": "/referenz/kapitel-010-wirkung/",
+      "sectionId": "woek-main-2026-k010-lr-2026-2",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "addendum",
+      "severity": "medium",
+      "suggestedAction": "Delta-Review-Ergänzung für Cluster Begriffssystem.",
+      "suggestedLiveReferenceText": "Wirkung ist in der Wirkungsökonomie neutral und relational: die tatsächliche Veränderung von Zuständen. Wenn eine Zielgröße gemeint ist, lautet sie positive Netto-Wirkung für Mensch, Planet und Demokratie. Eine Absicht, ein Output, ein Bericht oder ein Image ist noch keine Wirkung.",
+      "sourceForUpdate": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "affectedTerms": [
+        "Wirkung",
+        "positive Netto-Wirkung",
+        "Wirkungspotenzial"
+      ],
+      "affectedDocuments": [
+        "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+      ],
+      "reviewStatus": "applied-as-live-reference-update"
+    },
+    {
+      "documentId": "woek-main-2026",
+      "route": "/referenz/kapitel-011-wirkungspotenzial/",
+      "sectionId": "woek-main-2026-k011-lr-2026-2",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "addendum",
+      "severity": "medium",
+      "suggestedAction": "Delta-Review-Ergänzung für Cluster Begriffssystem.",
+      "suggestedLiveReferenceText": "Wirkungspotenzial bezeichnet die Möglichkeit, dass Wirkung eintreten kann. Es ist noch keine eingetretene Wirkung. Der Begriff Wirkstoff wird nur als didaktische Analogie verwendet: Ein gesellschaftlicher Wirkstoff kann etwas auslösen, muss aber über Wirkmechanismus, Wirkungspfad, Kontext, Dosis, Nebenwirkung und Wechselwirkung geprüft werden.",
+      "sourceForUpdate": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "affectedTerms": [
+        "Wirkungspotenzial",
+        "Wirkstoff",
+        "Wirkmechanismus",
+        "Wirkungspfad"
+      ],
+      "affectedDocuments": [
+        "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+      ],
+      "reviewStatus": "applied-as-live-reference-update"
+    },
+    {
+      "documentId": "woek-main-2026",
+      "route": "/referenz/kapitel-012-handlung-unterlassen-und-rueckkopplung/",
+      "sectionId": "woek-main-2026-k012-lr-2026-2",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "addendum",
+      "severity": "medium",
+      "suggestedAction": "Delta-Review-Ergänzung für Cluster Begriffssystem.",
+      "suggestedLiveReferenceText": "Die lebende Referenz unterscheidet stärker zwischen Wirkungslenkung und Wirkungsrückkopplung. Wirkungslenkung richtet Anreize und Entscheidungen aus; Wirkungsrückkopplung führt bewertete Wirkung in Preise, Steuern, Kapitalzugang, Beschaffung, Förderung oder Entscheidungen zurück.",
+      "sourceForUpdate": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "affectedTerms": [
+        "Wirkungsrückkopplung",
+        "Wirkungslenkung",
+        "Wirkungsrisiko"
+      ],
+      "affectedDocuments": [
+        "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+      ],
+      "reviewStatus": "applied-as-live-reference-update"
+    },
+    {
+      "documentId": "woek-main-2026",
+      "route": "/referenz/kapitel-013-wirkungstraeger-wirkungsempfaenger-wirkungsraeume/",
+      "sectionId": "woek-main-2026-k013-lr-2026-2",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "addendum",
+      "severity": "medium",
+      "suggestedAction": "Delta-Review-Ergänzung für Cluster Begriffssystem.",
+      "suggestedLiveReferenceText": "Wirkungsraum, Resonanzraum, Wirkungsträger und Wirkungsempfänger werden getrennt geführt. Ein Wirkungsraum ist der Bereich, in dem Zustände verändert werden; ein Resonanzraum ist ein sozialer oder kultureller Raum, in dem Deutungen, Zugehörigkeit und Reaktionen entstehen können.",
+      "sourceForUpdate": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "affectedTerms": [
+        "Wirkungsträger",
+        "Wirkungsempfänger",
+        "Wirkungsraum",
+        "Resonanzraum"
+      ],
+      "affectedDocuments": [
+        "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+      ],
+      "reviewStatus": "applied-as-live-reference-update"
+    },
+    {
+      "documentId": "woek-main-2026",
+      "route": "/referenz/kapitel-016-das-begriffssystem-der-wirkungsoekonomie/",
+      "sectionId": "woek-main-2026-k016-lr-2026-2",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "addendum",
+      "severity": "medium",
+      "suggestedAction": "Delta-Review-Ergänzung für Cluster Begriffssystem.",
+      "suggestedLiveReferenceText": "Wirkungsarchitektur meint nicht eine Website oder ein Diagramm, sondern das Gesamtsystem aus Daten, Regeln, Institutionen, Anreizen, Preisen, Steuern, Governance, Kontrolle, Lernen und Rückkopplung. Wirkungswahrheit meint Wirkungsnähe und Transparenz über Folgen, kein Wahrheitsmonopol.",
+      "sourceForUpdate": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "affectedTerms": [
+        "Wirkungsarchitektur",
+        "Wirkungsgrenze",
+        "Wirkungswahrheit",
+        "Wirkungsnetz"
+      ],
+      "affectedDocuments": [
+        "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+      ],
+      "reviewStatus": "applied-as-live-reference-update"
+    },
+    {
+      "documentId": "woek-main-2026",
+      "route": "/referenz/kapitel-020-systemhebel-engpaesse-und-interdependenzen/",
+      "sectionId": "woek-main-2026-k020-lr-2026-2",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "addendum",
+      "severity": "medium",
+      "suggestedAction": "Delta-Review-Ergänzung für Cluster Systemarchitektur.",
+      "suggestedLiveReferenceText": "Die lebende Referenz betont die Interdependenzlogik: Mensch, Planet und Demokratie sind keine additiven Spalten, sondern gekoppelte Systembedingungen. Engpässe und Wirkungsgrenzen dürfen nicht durch Durchschnittslogik verdeckt werden.",
+      "sourceForUpdate": "Systemmodell der Wirkungsökonomie / führender Begriffsleitfaden",
+      "affectedTerms": [
+        "Interdependenz",
+        "Engpasslogik",
+        "Systemhebel",
+        "Wirkungsgrenze"
+      ],
+      "affectedDocuments": [
+        "Systemmodell der Wirkungsökonomie / führender Begriffsleitfaden"
+      ],
+      "reviewStatus": "applied-as-live-reference-update"
+    },
+    {
+      "documentId": "woek-main-2026",
+      "route": "/referenz/kapitel-022-wirkungslenkung/",
+      "sectionId": "woek-main-2026-k022-lr-2026-2",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "addendum",
+      "severity": "medium",
+      "suggestedAction": "Delta-Review-Ergänzung für Cluster Begriffssystem.",
+      "suggestedLiveReferenceText": "Wirkungslenkung beschreibt die bewusste Ausrichtung von Anreizen und Entscheidungen. Wirkungsrückkopplung ist der Mechanismus, durch den bewertete Wirkung in wirtschaftliche, politische oder institutionelle Folgen übersetzt wird.",
+      "sourceForUpdate": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "affectedTerms": [
+        "Wirkungslenkung",
+        "Wirkungsrückkopplung"
+      ],
+      "affectedDocuments": [
+        "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+      ],
+      "reviewStatus": "applied-as-live-reference-update"
+    },
+    {
+      "documentId": "woek-main-2026",
+      "route": "/referenz/kapitel-023-wirkungsrisiko-und-wirkungsresilienz/",
+      "sectionId": "woek-main-2026-k023-lr-2026-2",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "addendum",
+      "severity": "medium",
+      "suggestedAction": "Delta-Review-Ergänzung für Cluster Begriffssystem.",
+      "suggestedLiveReferenceText": "Wirkungsresilienz wird als positive, normativ gebundene Resilienz verstanden: Ein System bleibt unter Stress handlungsfähig, lernt und stärkt tragende Lebens-, Sozial- und Demokratiefunktionen. Robustheit allein reicht nicht; auch destruktive Systeme können robust sein.",
+      "sourceForUpdate": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "affectedTerms": [
+        "Wirkungsrisiko",
+        "Wirkungsresilienz",
+        "Resilienz"
+      ],
+      "affectedDocuments": [
+        "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+      ],
+      "reviewStatus": "applied-as-live-reference-update"
+    },
+    {
+      "documentId": "woek-main-2026",
+      "route": "/referenz/kapitel-030-von-wirkung-zu-messung/",
+      "sectionId": "woek-main-2026-k030-lr-2026-2",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "addendum",
+      "severity": "medium",
+      "suggestedAction": "Delta-Review-Ergänzung für Cluster Mess- und Bewertungslogik.",
+      "suggestedLiveReferenceText": "Die Messlogik der lebenden Referenz unterscheidet Berichtsdaten, Steuerungsdaten und Wirkungsdaten. Daten werden erst dann wirkungsökonomisch relevant, wenn sie auf Zustandsveränderungen, Datenqualität, Systemgrenzen und Rückkopplung bezogen werden.",
+      "sourceForUpdate": "Technische Leitlinien WUStG / WÖk Master Items v1.2",
+      "affectedTerms": [
+        "Wirkungsbewertung",
+        "Datenqualität",
+        "Wirkungsindikator"
+      ],
+      "affectedDocuments": [
+        "Technische Leitlinien WUStG / WÖk Master Items v1.2"
+      ],
+      "reviewStatus": "applied-as-live-reference-update"
+    },
+    {
+      "documentId": "woek-main-2026",
+      "route": "/referenz/kapitel-031-woek-ids-und-indikatorenarchitektur/",
+      "sectionId": "woek-main-2026-k031-lr-2026-2",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "addendum",
+      "severity": "medium",
+      "suggestedAction": "Delta-Review-Ergänzung für Cluster Mess- und Bewertungslogik.",
+      "suggestedLiveReferenceText": "Das WÖk-ID-Register wird in der Live-Referenz aus der strukturierten XLSX-Quelle geführt. Die WÖk-ID ist der technische und fachliche Anker für Indikatoren, SDG/SDG+-Zuordnung, Datenqualität, Scorecards und digitale Produktpässe.",
+      "sourceForUpdate": "WOeK_Master_Items_final_v1.2.xlsx",
+      "affectedTerms": [
+        "WÖk-ID",
+        "Wirkungsindikator",
+        "WÖk Master Items"
+      ],
+      "affectedDocuments": [
+        "WOeK_Master_Items_final_v1.2.xlsx"
+      ],
+      "reviewStatus": "applied-as-live-reference-update"
+    },
+    {
+      "documentId": "woek-main-2026",
+      "route": "/referenz/kapitel-032-benchmarks-skalen-und-scorecards/",
+      "sectionId": "woek-main-2026-k032-lr-2026-2",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "addendum",
+      "severity": "medium",
+      "suggestedAction": "Delta-Review-Ergänzung für Cluster Mess- und Bewertungslogik.",
+      "suggestedLiveReferenceText": "Scorecards bleiben Bewertungsinstrumente, nicht die Wirkung selbst. Benchmarks, Archetypen und FinalScores müssen mit Datenqualität, Wirkungsgrenzen und Nichtkompensation verbunden werden.",
+      "sourceForUpdate": "Technische Leitlinien WUStG / WÖk Master Items v1.2",
+      "affectedTerms": [
+        "Scorecard",
+        "Benchmark",
+        "Archetyp",
+        "FinalScore"
+      ],
+      "affectedDocuments": [
+        "Technische Leitlinien WUStG / WÖk Master Items v1.2"
+      ],
+      "reviewStatus": "applied-as-live-reference-update"
+    },
+    {
+      "documentId": "woek-main-2026",
+      "route": "/referenz/kapitel-033-reverse-merit-order/",
+      "sectionId": "woek-main-2026-k033-lr-2026-2",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "addendum",
+      "severity": "medium",
+      "suggestedAction": "Delta-Review-Ergänzung für Cluster Mess- und Bewertungslogik.",
+      "suggestedLiveReferenceText": "Die Reverse Merit Order wird als Schutzregel gegen Schönrechnung bestätigt: Schwere negative Wirkungen dürfen nicht durch positive Teilwirkungen verdeckt werden. Netto-Wirkung ist keine einfache Addition; rote Linien und Wirkungsgrenzen begrenzen Kompensation.",
+      "sourceForUpdate": "Technische Leitlinien WUStG / Apfelbeispiel / Lieferkettenpapier",
+      "affectedTerms": [
+        "Reverse Merit Order",
+        "Nichtkompensationsprinzip",
+        "Wirkungsgrenze"
+      ],
+      "affectedDocuments": [
+        "Technische Leitlinien WUStG / Apfelbeispiel / Lieferkettenpapier"
+      ],
+      "reviewStatus": "applied-as-live-reference-update"
+    },
+    {
+      "documentId": "woek-main-2026",
+      "route": "/referenz/kapitel-034-t-sroi-und-systemische-transformationsmessung/",
+      "sectionId": "woek-main-2026-k034-lr-2026-2",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "addendum",
+      "severity": "medium",
+      "suggestedAction": "Delta-Review-Ergänzung für Cluster Mess- und Bewertungslogik.",
+      "suggestedLiveReferenceText": "T-SROI und NWI werden in der Live-Referenz getrennt: NWI beschreibt operative Netto-Wirkung unter Wirkungsgrenzen; T-SROI beschreibt Transformationswirkung, also Veränderungen von Systemlogiken, Standards, Anreizen und Handlungspfaden.",
+      "sourceForUpdate": "Whitepaper T-SROI",
+      "affectedTerms": [
+        "T-SROI",
+        "NWI",
+        "Netto-Wirkung",
+        "Transformationswirkung"
+      ],
+      "affectedDocuments": [
+        "Whitepaper T-SROI"
+      ],
+      "reviewStatus": "applied-as-live-reference-update"
+    },
+    {
+      "documentId": "woek-main-2026",
+      "route": "/referenz/kapitel-037-das-wirkungssteuergesetz-wstg/",
+      "sectionId": "woek-main-2026-k037-lr-2026-2",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "addendum",
+      "severity": "medium",
+      "suggestedAction": "Delta-Review-Ergänzung für Cluster Steuerlogik.",
+      "suggestedLiveReferenceText": "Das WStG wird als Rahmengesetz der wirkungsbasierten Steuerordnung geführt. Es ersetzt nicht jedes Einzelsteuergesetz, sondern setzt den gemeinsamen Maßstab, an den WUStG, WEstG und weitere Steuerlogiken anschließen.",
+      "sourceForUpdate": "WStG_Oktober2025",
+      "affectedTerms": [
+        "WStG",
+        "Wirkungssteuergesetz",
+        "Wirkungsrat"
+      ],
+      "affectedDocuments": [
+        "WStG_Oktober2025"
+      ],
+      "reviewStatus": "applied-as-live-reference-update"
+    },
+    {
+      "documentId": "woek-main-2026",
+      "route": "/referenz/kapitel-038-das-wustg-und-die-produktwirkungssteuer/",
+      "sectionId": "woek-main-2026-k038-lr-2026-2",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "addendum",
+      "severity": "medium",
+      "suggestedAction": "Delta-Review-Ergänzung für Cluster Steuerlogik.",
+      "suggestedLiveReferenceText": "Das WUStG ist die Produkt- und Umsatzsteuerlogik der Wirkungsökonomie. Produkt-Scorecards können in Beispielrechnungen mit -3 bis +3 arbeiten, während rahmengesetzliche Wirkungswerte anders skaliert sein können; die Skalen sind als Anwendungsebenen zu unterscheiden.",
+      "sourceForUpdate": "Technische Leitlinien WUStG / WP_Produkte / Apfelbeispiel",
+      "affectedTerms": [
+        "WUStG",
+        "Wirkungsumsatzsteuer",
+        "Vorsteuerlogik",
+        "Score-Skalen"
+      ],
+      "affectedDocuments": [
+        "Technische Leitlinien WUStG / WP_Produkte / Apfelbeispiel"
+      ],
+      "reviewStatus": "applied-as-live-reference-update"
+    },
+    {
+      "documentId": "woek-main-2026",
+      "route": "/referenz/kapitel-039-wirkungshaushalt-und-oeffentliche-mittel/",
+      "sectionId": "woek-main-2026-k039-lr-2026-2",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "addendum",
+      "severity": "medium",
+      "suggestedAction": "Delta-Review-Ergänzung für Cluster Steuerlogik.",
+      "suggestedLiveReferenceText": "Haushaltsneutralität wird als Steuerungsprinzip und politisch zu prüfende Modellannahme geführt: Die Wirkungsökonomie verschiebt Bemessung und Verteilung, ohne automatisch zusätzliche Verschuldung zu unterstellen. Konkrete Haushaltswirkungen bleiben pilot- und modellprüfungspflichtig.",
+      "sourceForUpdate": "WStG_Oktober2025 / WP_Einkommen",
+      "affectedTerms": [
+        "Wirkungshaushalt",
+        "Haushaltsneutralität",
+        "Rückkopplung"
+      ],
+      "affectedDocuments": [
+        "WStG_Oktober2025 / WP_Einkommen"
+      ],
+      "reviewStatus": "applied-as-live-reference-update"
+    },
+    {
+      "documentId": "woek-main-2026",
+      "route": "/referenz/kapitel-048-produkte-als-wirkungstraeger/",
+      "sectionId": "woek-main-2026-k048-lr-2026-2",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "addendum",
+      "severity": "medium",
+      "suggestedAction": "Delta-Review-Ergänzung für Cluster Produkt- und Lieferkettenlogik.",
+      "suggestedLiveReferenceText": "Produkte werden als Wirkungsträger verstanden. Entscheidend ist nicht ein einzelnes grünes Merkmal, sondern die Netto-Wirkung entlang Wertschöpfung, Nutzung, Risiken, Datenqualität und Rückkopplung.",
+      "sourceForUpdate": "WP_Produkte / Lieferkettenpapier / DPP-Logik",
+      "affectedTerms": [
+        "Produktwirkung",
+        "Digitaler Produktpass",
+        "Wirkungsträger"
+      ],
+      "affectedDocuments": [
+        "WP_Produkte / Lieferkettenpapier / DPP-Logik"
+      ],
+      "reviewStatus": "applied-as-live-reference-update"
+    },
+    {
+      "documentId": "woek-main-2026",
+      "route": "/referenz/kapitel-049-ehrliche-preise/",
+      "sectionId": "woek-main-2026-k049-lr-2026-2",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "addendum",
+      "severity": "medium",
+      "suggestedAction": "Delta-Review-Ergänzung für Cluster Produkt- und Lieferkettenlogik.",
+      "suggestedLiveReferenceText": "Ehrliche Preise bedeuten in der Live-Referenz nicht moralische Verteuerung, sondern Rückkopplung verdrängter Folgekosten in Preise, Steuern, Kapitalzugang, Beschaffung und Entscheidungen.",
+      "sourceForUpdate": "WP_Produkte / FAZ-Beitrag",
+      "affectedTerms": [
+        "Ehrliche Preise",
+        "Wirkungsrückkopplung",
+        "Folgekosten"
+      ],
+      "affectedDocuments": [
+        "WP_Produkte / FAZ-Beitrag"
+      ],
+      "reviewStatus": "applied-as-live-reference-update"
+    },
+    {
+      "documentId": "woek-main-2026",
+      "route": "/referenz/kapitel-050-produktscorecards/",
+      "sectionId": "woek-main-2026-k050-lr-2026-2",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "addendum",
+      "severity": "medium",
+      "suggestedAction": "Delta-Review-Ergänzung für Cluster Produkt- und Lieferkettenlogik.",
+      "suggestedLiveReferenceText": "Produktscorecards werden mit WÖk-IDs, Datenqualität, Benchmarks und Reverse Merit Order verbunden. Sie sind Beispiel- und Steuerungsinstrumente, keine endgültige Rechtsanwendung ohne geprüfte Datenbasis.",
+      "sourceForUpdate": "Technische Leitlinien WUStG / WÖk Master Items v1.2",
+      "affectedTerms": [
+        "Scorecard",
+        "Reverse Merit Order",
+        "Datenqualität"
+      ],
+      "affectedDocuments": [
+        "Technische Leitlinien WUStG / WÖk Master Items v1.2"
+      ],
+      "reviewStatus": "applied-as-live-reference-update"
+    },
+    {
+      "documentId": "woek-main-2026",
+      "route": "/referenz/kapitel-051-das-apfelbeispiel/",
+      "sectionId": "woek-main-2026-k051-lr-2026-2",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "addendum",
+      "severity": "medium",
+      "suggestedAction": "Delta-Review-Ergänzung für Cluster Produkt- und Lieferkettenlogik.",
+      "suggestedLiveReferenceText": "Das Apfelbeispiel bleibt eine Beispielrechnung. Es zeigt die Logik von Daten, Scorecard, Reverse Merit Order, Steuerklasse und Bonus-/Vorsteuerlogik, ersetzt aber keine rechtliche Einzelfallentscheidung.",
+      "sourceForUpdate": "Beispiel_Apfel_Wirkungssteuer_Bonusregel",
+      "affectedTerms": [
+        "Apfelbeispiel",
+        "Reverse Merit Order",
+        "Bonuslogik"
+      ],
+      "affectedDocuments": [
+        "Beispiel_Apfel_Wirkungssteuer_Bonusregel"
+      ],
+      "reviewStatus": "applied-as-live-reference-update"
+    },
+    {
+      "documentId": "woek-main-2026",
+      "route": "/referenz/kapitel-056-arbeit-automatisierung-und-maschinenleistung/",
+      "sectionId": "woek-main-2026-k056-lr-2026-2",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "addendum",
+      "severity": "medium",
+      "suggestedAction": "Delta-Review-Ergänzung für Cluster Automatisierung, Arbeit, Einkommen, Rente.",
+      "suggestedLiveReferenceText": "Arbeit verliert in der Live-Referenz nicht Würde oder Bedeutung, sondern ihre Exklusivität als Einkommensanker. Automatisierung verschiebt die Frage vom Arbeitsvolumen zum wirksamen Beitrag für Mensch, Planet und Demokratie.",
+      "sourceForUpdate": "Wenn Maschinen arbeiten / WP_Einkommen",
+      "affectedTerms": [
+        "Maschinenleistung",
+        "Arbeit",
+        "Wirkungseinkommen"
+      ],
+      "affectedDocuments": [
+        "Wenn Maschinen arbeiten / WP_Einkommen"
+      ],
+      "reviewStatus": "applied-as-live-reference-update"
+    },
+    {
+      "documentId": "woek-main-2026",
+      "route": "/referenz/kapitel-057-wirkungseinkommen/",
+      "sectionId": "woek-main-2026-k057-lr-2026-2",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "addendum",
+      "severity": "medium",
+      "suggestedAction": "Delta-Review-Ergänzung für Cluster Automatisierung, Arbeit, Einkommen, Rente.",
+      "suggestedLiveReferenceText": "Wirkungseinkommen wird nicht als altes BGE geführt, sondern als wirkungsgebundene Rückkopplung gesellschaftlicher Wertschöpfung. WEstG und Wirkungseinkommensteuer sind von Wirkungseinkommen und Wirkungsdividende sprachlich zu trennen.",
+      "sourceForUpdate": "WP_Einkommen / Wenn Maschinen arbeiten",
+      "affectedTerms": [
+        "Wirkungseinkommen",
+        "Wirkungsdividende",
+        "WEstG"
+      ],
+      "affectedDocuments": [
+        "WP_Einkommen / Wenn Maschinen arbeiten"
+      ],
+      "reviewStatus": "applied-as-live-reference-update"
+    },
+    {
+      "documentId": "woek-main-2026",
+      "route": "/referenz/kapitel-058-wirkungsrente/",
+      "sectionId": "woek-main-2026-k058-lr-2026-2",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "addendum",
+      "severity": "medium",
+      "suggestedAction": "Delta-Review-Ergänzung für Cluster Automatisierung, Arbeit, Einkommen, Rente.",
+      "suggestedLiveReferenceText": "Wirkungsrente bewertet Lebensleistung nicht nur als Erwerbsbiografie, sondern als Beitrag zu tragenden Lebens-, Sozial- und Demokratiefunktionen. Sie bleibt vom Wirkungseinkommen und von Steuerinstrumenten zu unterscheiden.",
+      "sourceForUpdate": "WP_Rente / WP_Einkommen",
+      "affectedTerms": [
+        "Wirkungsrente",
+        "Lebensleistung",
+        "Wirkungseinkommen"
+      ],
+      "affectedDocuments": [
+        "WP_Rente / WP_Einkommen"
+      ],
+      "reviewStatus": "applied-as-live-reference-update"
+    },
+    {
+      "documentId": "woek-main-2026",
+      "route": "/referenz/kapitel-080-digitalisierung-als-infrastruktur-der-wirkungsoekonomie/",
+      "sectionId": "woek-main-2026-k080-lr-2026-2",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "addendum",
+      "severity": "medium",
+      "suggestedAction": "Delta-Review-Ergänzung für Cluster Systemarchitektur.",
+      "suggestedLiveReferenceText": "Digitalisierung wird als Infrastruktur der Wirkungsökonomie geführt, nicht als Selbstzweck. Datenräume, Schnittstellen, IDs und Prüfregeln dienen Rückkopplung, nicht Überwachung.",
+      "sourceForUpdate": "Systemmodell der Wirkungsökonomie",
+      "affectedTerms": [
+        "Digitalisierung",
+        "Wirkungsdatenraum",
+        "Governance"
+      ],
+      "affectedDocuments": [
+        "Systemmodell der Wirkungsökonomie"
+      ],
+      "reviewStatus": "applied-as-live-reference-update"
+    },
+    {
+      "documentId": "woek-main-2026",
+      "route": "/referenz/kapitel-081-wirkungsdatenraeume/",
+      "sectionId": "woek-main-2026-k081-lr-2026-2",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "addendum",
+      "severity": "medium",
+      "suggestedAction": "Delta-Review-Ergänzung für Cluster Systemarchitektur.",
+      "suggestedLiveReferenceText": "Wirkungsdatenräume verbinden Datenstandards, Interoperabilität, Rechte, Prüfstatus und Rückkopplung. Sie sollen Doppelerhebungen reduzieren und Steuerungsfähigkeit erhöhen, ohne eine zentrale Datenmacht zu schaffen.",
+      "sourceForUpdate": "Systemmodell der Wirkungsökonomie / technische Leitlinien",
+      "affectedTerms": [
+        "Wirkungsdatenraum",
+        "Datenstandard",
+        "Interoperabilität"
+      ],
+      "affectedDocuments": [
+        "Systemmodell der Wirkungsökonomie / technische Leitlinien"
+      ],
+      "reviewStatus": "applied-as-live-reference-update"
+    },
+    {
+      "documentId": "woek-main-2026",
+      "route": "/referenz/kapitel-085-dpp-infrastruktur-und-technische-umsetzung/",
+      "sectionId": "woek-main-2026-k085-lr-2026-2",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "addendum",
+      "severity": "medium",
+      "suggestedAction": "Delta-Review-Ergänzung für Cluster Produkt- und Lieferkettenlogik.",
+      "suggestedLiveReferenceText": "Der digitale Produktpass wird als technische Brücke zwischen Produktdaten, WÖk-ID, Scorecards, Lieferkette und Rückkopplung verstanden. Er ersetzt keine Bewertung, sondern transportiert prüfbare Daten und Versionen.",
+      "sourceForUpdate": "WP_Produkte / technische Leitlinien / WÖk Master Items v1.2",
+      "affectedTerms": [
+        "Digitaler Produktpass",
+        "DPP",
+        "WÖk-ID",
+        "NACE"
+      ],
+      "affectedDocuments": [
+        "WP_Produkte / technische Leitlinien / WÖk Master Items v1.2"
+      ],
+      "reviewStatus": "applied-as-live-reference-update"
+    },
+    {
+      "documentId": "woek-main-2026",
+      "route": "/referenz/kapitel-104-wirkungsmessung-manipulation-und-wirkungssimulation/",
+      "sectionId": "woek-main-2026-k104-lr-2026-2",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "addendum",
+      "severity": "medium",
+      "suggestedAction": "Delta-Review-Ergänzung für Cluster Mess- und Bewertungslogik.",
+      "suggestedLiveReferenceText": "Wirkungsmessung braucht Schutz vor Scheingenauigkeit, Impact Washing, Datenmanipulation und Gaming the System. Datenqualität, Audits, Einspruchslogik, Wirkungsgrenzen und Nichtkompensation sind deshalb Bestandteil der Referenz.",
+      "sourceForUpdate": "Führender Begriffsleitfaden / technische Leitlinien",
+      "affectedTerms": [
+        "Gaming the System",
+        "Impact Washing",
+        "Datenqualität",
+        "Wirkungsgrenze"
+      ],
+      "affectedDocuments": [
+        "Führender Begriffsleitfaden / technische Leitlinien"
+      ],
+      "reviewStatus": "applied-as-live-reference-update"
+    },
+    {
+      "documentId": "woek-main-2026",
+      "route": "/referenz/kapitel-106-die-fehlbarkeit-der-wirkungsoekonomie/",
+      "sectionId": "woek-main-2026-k106-lr-2026-2",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "addendum",
+      "severity": "medium",
+      "suggestedAction": "Delta-Review-Ergänzung für Cluster Governance und Fehlbarkeit.",
+      "suggestedLiveReferenceText": "Die Wirkungsökonomie beansprucht kein Wahrheitsmonopol. Ihre Fehlbarkeit wird als Governance-Anforderung geführt: offene Daten, Kritikfähigkeit, Einspruch, Korrektur, demokratische Kontrolle und Versionsgeschichte sind Teil der Architektur.",
+      "sourceForUpdate": "Führender Begriffsleitfaden / Wirkungsrat_Konzept",
+      "affectedTerms": [
+        "Fehlbarkeit",
+        "Wirkungswahrheit",
+        "demokratische Kontrolle"
+      ],
+      "affectedDocuments": [
+        "Führender Begriffsleitfaden / Wirkungsrat_Konzept"
+      ],
+      "reviewStatus": "applied-as-live-reference-update"
+    },
+    {
+      "documentId": "woek-reference-system",
+      "route": "/referenz/",
+      "sectionId": "live-reference-layer",
+      "paragraphId": null,
+      "originalText": "2026.1-import",
+      "issueType": "structural-update",
+      "severity": "medium",
+      "suggestedAction": "Einführung der sichtbaren Live-Reference-Schicht mit Importversion, Live-Version, Reviewstatus und Changelog.",
+      "suggestedLiveReferenceText": "2026.2-live-reference",
+      "sourceForUpdate": "Phase-1-Live-Reference-Review",
+      "affectedTerms": [
+        "Versionierung",
+        "Terminologiebasis",
+        "Delta-Review"
+      ],
+      "affectedDocuments": [
+        "Hauptwerk",
+        "Arbeitspapiere",
+        "Glossar"
+      ],
+      "reviewStatus": "applied-as-live-reference-update"
+    },
+    {
+      "documentId": "wenn-maschinen-arbeiten",
+      "route": "/dokumente/wenn-maschinen-arbeiten/",
+      "sectionId": "document",
+      "paragraphId": null,
+      "originalText": "next-section-chat-prompt",
+      "issueType": "drafting-artifact-removal",
+      "severity": "high",
+      "suggestedAction": "Entfernung eines Chat-/Arbeitsartefakts aus der Live-Referenzfassung; Originaldatei bleibt unverändert.",
+      "suggestedLiveReferenceText": "",
+      "sourceForUpdate": "Drafting-Artefakt-Check 2026.2",
+      "affectedTerms": [],
+      "affectedDocuments": [],
+      "reviewStatus": "applied-as-live-reference-update"
+    },
+    {
+      "documentId": "wp-produkte",
+      "route": "/dokumente/wp-produkte/",
+      "sectionId": "document",
+      "paragraphId": null,
+      "originalText": "next-section-chat-prompt",
+      "issueType": "drafting-artifact-removal",
+      "severity": "high",
+      "suggestedAction": "Entfernung eines Chat-/Arbeitsartefakts aus der Live-Referenzfassung; Originaldatei bleibt unverändert.",
+      "suggestedLiveReferenceText": "",
+      "sourceForUpdate": "Drafting-Artefakt-Check 2026.2",
+      "affectedTerms": [],
+      "affectedDocuments": [],
+      "reviewStatus": "applied-as-live-reference-update"
+    },
+    {
+      "documentId": "woek-main-2026",
+      "route": "/referenz/kapitel-010-wirkung/",
+      "sectionId": "woek-main-2026-k010-lr-2026-2",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "terminology-outdated",
+      "severity": "low",
+      "suggestedAction": "confirmed-current",
+      "suggestedLiveReferenceText": "Live-Reference-Addendum vorhanden.",
+      "sourceForUpdate": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "affectedTerms": [
+        "Wirkung"
+      ],
+      "affectedDocuments": [
+        "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+      ],
+      "reviewStatus": "confirmed-current"
+    },
+    {
+      "documentId": "woek-main-2026",
+      "route": "/referenz/kapitel-011-wirkungspotenzial/",
+      "sectionId": "woek-main-2026-k011-lr-2026-2",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "logic-inconsistency",
+      "severity": "low",
+      "suggestedAction": "confirmed-current",
+      "suggestedLiveReferenceText": "Live-Reference-Addendum vorhanden.",
+      "sourceForUpdate": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "affectedTerms": [
+        "Wirkungspotenzial"
+      ],
+      "affectedDocuments": [
+        "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
+      ],
+      "reviewStatus": "confirmed-current"
+    },
+    {
+      "documentId": "woek-main-2026",
+      "route": "/referenz/kapitel-034-t-sroi-und-systemische-transformationsmessung/",
+      "sectionId": "woek-main-2026-k034-lr-2026-2",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "logic-inconsistency",
+      "severity": "low",
+      "suggestedAction": "confirmed-current",
+      "suggestedLiveReferenceText": "Live-Reference-Addendum vorhanden.",
+      "sourceForUpdate": "Whitepaper T-SROI",
+      "affectedTerms": [
+        "T-SROI"
+      ],
+      "affectedDocuments": [
+        "Whitepaper T-SROI"
+      ],
+      "reviewStatus": "confirmed-current"
+    },
+    {
+      "documentId": "woek-main-2026",
+      "route": "/referenz/kapitel-038-das-wustg-und-die-produktwirkungssteuer/",
+      "sectionId": "woek-main-2026-k038-lr-2026-2",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "cross-document-consistency",
+      "severity": "low",
+      "suggestedAction": "confirmed-current",
+      "suggestedLiveReferenceText": "Live-Reference-Addendum vorhanden.",
+      "sourceForUpdate": "WStG_Oktober2025 / technische Leitlinien",
+      "affectedTerms": [
+        "WUStG"
+      ],
+      "affectedDocuments": [
+        "WStG_Oktober2025 / technische Leitlinien"
+      ],
+      "reviewStatus": "confirmed-current"
+    },
+    {
+      "documentId": "woek-main-2026",
+      "route": "/referenz/kapitel-057-wirkungseinkommen/",
+      "sectionId": "woek-main-2026-k057-lr-2026-2",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "logic-inconsistency",
+      "severity": "low",
+      "suggestedAction": "confirmed-current",
+      "suggestedLiveReferenceText": "Live-Reference-Addendum vorhanden.",
+      "sourceForUpdate": "WP_Einkommen / Wenn Maschinen arbeiten",
+      "affectedTerms": [
+        "Wirkungseinkommen"
+      ],
+      "affectedDocuments": [
+        "WP_Einkommen / Wenn Maschinen arbeiten"
+      ],
+      "reviewStatus": "confirmed-current"
+    },
+    {
+      "documentId": "wstg-oktober-2025",
+      "route": "/dokumente/wstg-oktober-2025/",
+      "sectionId": "document",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "confirmed-current",
+      "severity": "high",
+      "suggestedAction": "Originaldatei-Link oder Webfassung ergänzen.",
+      "suggestedLiveReferenceText": "WStG Oktober 2025",
+      "sourceForUpdate": "Source-Logic-Review",
+      "affectedTerms": [],
+      "affectedDocuments": [
+        "WStG Oktober 2025"
+      ],
+      "reviewStatus": "needs-human-review"
+    },
+    {
+      "documentId": "technische-leitlinien-wustg-v2",
+      "route": "/dokumente/technische-leitlinien-wustg-v2/",
+      "sectionId": "document",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "confirmed-current",
+      "severity": "high",
+      "suggestedAction": "Originaldatei-Link oder Webfassung ergänzen.",
+      "suggestedLiveReferenceText": "Technische Leitlinien WUStG",
+      "sourceForUpdate": "Source-Logic-Review",
+      "affectedTerms": [],
+      "affectedDocuments": [
+        "Technische Leitlinien WUStG"
+      ],
+      "reviewStatus": "needs-human-review"
+    },
+    {
+      "documentId": "beispiel-apfel-wirkungssteuer-bonusregel",
+      "route": "/dokumente/beispiel-apfel-wirkungssteuer-bonusregel/",
+      "sectionId": "document",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "confirmed-current",
+      "severity": "high",
+      "suggestedAction": "Originaldatei-Link oder Webfassung ergänzen.",
+      "suggestedLiveReferenceText": "Apfelbeispiel",
+      "sourceForUpdate": "Source-Logic-Review",
+      "affectedTerms": [],
+      "affectedDocuments": [
+        "Apfelbeispiel"
+      ],
+      "reviewStatus": "needs-human-review"
+    },
+    {
+      "documentId": "woek-master-items-final-v1-2",
+      "route": "/dokumente/woek-master-items-final-v1-2/",
+      "sectionId": "document",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "confirmed-current",
+      "severity": "high",
+      "suggestedAction": "Originaldatei-Link oder Webfassung ergänzen.",
+      "suggestedLiveReferenceText": "WÖk Master Items",
+      "sourceForUpdate": "Source-Logic-Review",
+      "affectedTerms": [],
+      "affectedDocuments": [
+        "WÖk Master Items"
+      ],
+      "reviewStatus": "needs-human-review"
+    },
+    {
+      "documentId": "wirkungsrat-konzept",
+      "route": "/dokumente/wirkungsrat-konzept/",
+      "sectionId": "document",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "confirmed-current",
+      "severity": "high",
+      "suggestedAction": "Originaldatei-Link oder Webfassung ergänzen.",
+      "suggestedLiveReferenceText": "Wirkungsrat",
+      "sourceForUpdate": "Source-Logic-Review",
+      "affectedTerms": [],
+      "affectedDocuments": [
+        "Wirkungsrat"
+      ],
+      "reviewStatus": "needs-human-review"
+    },
+    {
+      "documentId": "whitepaper-t-sroi",
+      "route": "/dokumente/whitepaper-t-sroi/",
+      "sectionId": "document",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "confirmed-current",
+      "severity": "high",
+      "suggestedAction": "Originaldatei-Link oder Webfassung ergänzen.",
+      "suggestedLiveReferenceText": "Whitepaper T-SROI",
+      "sourceForUpdate": "Source-Logic-Review",
+      "affectedTerms": [],
+      "affectedDocuments": [
+        "Whitepaper T-SROI"
+      ],
+      "reviewStatus": "needs-human-review"
+    },
+    {
+      "documentId": "wirkungsoekonomie-in-der-lieferkette",
+      "route": "/dokumente/wirkungsoekonomie-in-der-lieferkette/",
+      "sectionId": "document",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "confirmed-current",
+      "severity": "high",
+      "suggestedAction": "Originaldatei-Link oder Webfassung ergänzen.",
+      "suggestedLiveReferenceText": "Lieferkette",
+      "sourceForUpdate": "Source-Logic-Review",
+      "affectedTerms": [],
+      "affectedDocuments": [
+        "Lieferkette"
+      ],
+      "reviewStatus": "needs-human-review"
+    },
+    {
+      "documentId": "wp-produkte",
+      "route": "/dokumente/wp-produkte/",
+      "sectionId": "document",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "confirmed-current",
+      "severity": "high",
+      "suggestedAction": "Originaldatei-Link oder Webfassung ergänzen.",
+      "suggestedLiveReferenceText": "WP Produkte",
+      "sourceForUpdate": "Source-Logic-Review",
+      "affectedTerms": [],
+      "affectedDocuments": [
+        "WP Produkte"
+      ],
+      "reviewStatus": "needs-human-review"
+    },
+    {
+      "documentId": "wp-einkommen",
+      "route": "/dokumente/wp-einkommen/",
+      "sectionId": "document",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "confirmed-current",
+      "severity": "high",
+      "suggestedAction": "Originaldatei-Link oder Webfassung ergänzen.",
+      "suggestedLiveReferenceText": "WP Einkommen",
+      "sourceForUpdate": "Source-Logic-Review",
+      "affectedTerms": [],
+      "affectedDocuments": [
+        "WP Einkommen"
+      ],
+      "reviewStatus": "needs-human-review"
+    },
+    {
+      "documentId": "wp-wohnungsmarkt",
+      "route": "/dokumente/wp-wohnungsmarkt/",
+      "sectionId": "document",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "confirmed-current",
+      "severity": "high",
+      "suggestedAction": "Originaldatei-Link oder Webfassung ergänzen.",
+      "suggestedLiveReferenceText": "WP Wohnungsmarkt",
+      "sourceForUpdate": "Source-Logic-Review",
+      "affectedTerms": [],
+      "affectedDocuments": [
+        "WP Wohnungsmarkt"
+      ],
+      "reviewStatus": "needs-human-review"
+    },
+    {
+      "documentId": "wenn-maschinen-arbeiten",
+      "route": "/dokumente/wenn-maschinen-arbeiten/",
+      "sectionId": "document",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "confirmed-current",
+      "severity": "high",
+      "suggestedAction": "Originaldatei-Link oder Webfassung ergänzen.",
+      "suggestedLiveReferenceText": "Wenn Maschinen arbeiten",
+      "sourceForUpdate": "Source-Logic-Review",
+      "affectedTerms": [],
+      "affectedDocuments": [
+        "Wenn Maschinen arbeiten"
+      ],
+      "reviewStatus": "needs-human-review"
+    },
+    {
+      "documentId": "systemmodell-der-wirkungsoekonomie",
+      "route": "/dokumente/systemmodell-der-wirkungsoekonomie/",
+      "sectionId": "document",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "confirmed-current",
+      "severity": "high",
+      "suggestedAction": "Originaldatei-Link oder Webfassung ergänzen.",
+      "suggestedLiveReferenceText": "Systemmodell",
+      "sourceForUpdate": "Source-Logic-Review",
+      "affectedTerms": [],
+      "affectedDocuments": [
+        "Systemmodell"
+      ],
+      "reviewStatus": "needs-human-review"
+    },
+    {
+      "documentId": "leitbild-mensch-planet-demokratie",
+      "route": "/dokumente/leitbild-mensch-planet-demokratie/",
+      "sectionId": "document",
+      "paragraphId": null,
+      "originalText": "",
+      "issueType": "confirmed-current",
+      "severity": "high",
+      "suggestedAction": "Originaldatei-Link oder Webfassung ergänzen.",
+      "suggestedLiveReferenceText": "Leitbild",
+      "sourceForUpdate": "Source-Logic-Review",
+      "affectedTerms": [],
+      "affectedDocuments": [
+        "Leitbild"
+      ],
+      "reviewStatus": "needs-human-review"
+    }
+  ]
+}

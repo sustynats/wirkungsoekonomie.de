@@ -1,0 +1,883 @@
+# Grundstudium Wirkungsökonomie · Vorlesung 15: Nebenwirkungen, Rebound und Zielkonflikte
+
+**Track:** Grundstudium Wirkungsökonomie  
+**Kurscode:** woek-g  
+**Vorlesungscode:** V15  
+**Modul/Abschnitt:** G2.1  
+**Titel:** Nebenwirkungen, Rebound und Zielkonflikte  
+**Status:** Studienskript V1 · fachlich finale Codex-Fassung, Claude-CI/CD-Satzfreigabe offen  
+**Primäre WÖk-Quellen:** [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) · [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) · [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) · [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/)  
+**Ausgabe:** Markdown-Master, Word-Rohfassung und Akademie-Reader-Spiegel  
+**Wissensbasis:** aktuelles Grundlagenwerk, öffentliche WÖk-Referenz, Wirkungsfelder, Werkzeuge, Glossar, Bibliothek, Journal und externe Fachquellen  
+
+## Lernziele
+
+Nach dieser Vorlesung kannst du:
+
+1. die Kernfrage von **Nebenwirkungen, Rebound und Zielkonflikte** in der Sprache der Wirkungsökonomie erklären.
+2. Wirkung, Wirkungspotenzial und Wirkungsrisiko im Themenfeld sauber unterscheiden.
+3. typische Verwechslungen erkennen, insbesondere Reichweite, Aktivität, Absicht oder Reporting als Wirkung auszugeben.
+4. den Bezug zu Mensch, Planet und Demokratie sowie zur positiven Netto-Wirkung herstellen.
+5. eine einfache Tabelle, Formel oder Scorecard-Logik für das Thema lesen und begründen.
+6. offene Daten-, Quellen- und Unsicherheitsfragen benennen, ohne Scheingenauigkeit zu erzeugen.
+
+## 1. Einleitung / Wirkungsfrage
+
+Diese Vorlesung gehört zum Grundstudium der Wirkungsökonomie. Sie baut die begriffliche und methodische Fähigkeit auf, Nebenwirkungen, Rebound und Zielkonflikte wirkungsökonomisch zu lesen: nicht nach Absicht, Lautstärke oder Image, sondern nach tatsächlichen Zustandsveränderungen.
+
+Die Leitfrage lautet:
+
+> Welche tatsächlichen Zustandsveränderungen werden durch **Nebenwirkungen, Rebound und Zielkonflikte** möglich, wahrscheinlich oder riskant - und welche Bedingungen entscheiden darüber, ob aus Wirkungspotenzial tatsächliche Wirkung wird?
+
+Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
+
+## 2. Kernaussage
+
+**Nebenwirkungen, Rebound und Zielkonflikte** ist für die Wirkungsökonomie relevant, weil es zeigt, dass Wirkung nicht aus einem einzelnen Wunsch, Signal oder Instrument entsteht. Wirkung entsteht in Wirkpfaden: Auslöser, Wirkmechanismus, Wirkungsempfänger, Resonanzraum, Datenlage, Bewertung und Rückkopplung müssen zusammen betrachtet werden.
+
+Die praktische Pointe ist schlicht: Wer nur misst, was leicht sichtbar ist, verwechselt oft Oberfläche mit Wirkung. Wer dagegen Wirkpfade, Empfänger, Risiken und Rückkopplung sauber beschreibt, kann Entscheidungen verbessern.
+
+## 3. Quelltext und fachliche Grundlegung
+
+## Drei Fallen auf dem Weg zur guten Wirkung
+
+Willkommen zur fünfzehnten Vorlesung, die unser erstes Modul zur Wirkungskompetenz abschließt. Wir wissen jetzt, dass Wirkung in Wellen läuft. Heute lernen wir drei besonders häufige Fallen kennen, über die selbst gute Absichten immer wieder stolpern. Diese drei Muster tauchen so oft auf, dass es sich lohnt, sie beim Namen zu kennen. Es sind die Nebenwirkungen, der Rebound-Effekt und die Zielkonflikte. Wer diese drei Fallen kennt, geht deutlich klüger an jede Bewertung heran. Er lässt sich nicht so leicht von der schönen ersten Ordnung blenden, sondern rechnet mit den typischen Haken, die fast jede gut gemeinte Maßnahme mit sich bringt.
+
+## Nebenwirkungen: die ungewollten Begleiter
+
+Die erste Falle sind die Nebenwirkungen. Eine Nebenwirkung ist eine unbeabsichtigte Folge, die neben der gewünschten Hauptwirkung auftritt. Der Begriff stammt aus der Medizin, und das Bild passt gut. Eine Arznei soll heilen, das ist die Hauptwirkung, aber sie kann zugleich müde machen, das ist die Nebenwirkung. Genauso hat fast jede wirtschaftliche Maßnahme neben ihrem eigentlichen Zweck weitere Folgen. Ein neues Bewässerungssystem soll die Ernte sichern, kann aber die Böden versalzen. Nebenwirkungen werden übersehen, weil man beim Handeln naturgemäß auf das Ziel starrt und die Begleiterscheinungen ausblendet. Die Wirkungskompetenz besteht darin, bewusst auch nach diesen ungewollten Begleitern zu suchen, statt sich von der Hauptwirkung blenden zu lassen.
+
+## Nebenwirkungen ernst nehmen
+
+Nebenwirkungen sind keine Kleinigkeit am Rande. Manchmal ist die eigentliche Hauptwirkung klein, während die Nebenwirkungen groß und schwerwiegend sind. Dann kann eine Maßnahme, die auf den ersten Blick gut aussieht, unter dem Strich sogar schaden. Erinnere dich an die Netto-Wirkung aus dem ersten Abschnitt. Erst die Summe aller Wirkungen, der gewollten und der ungewollten, entscheidet über das echte Ergebnis. Deshalb gehört die aktive Suche nach Nebenwirkungen zur Pflicht jeder ehrlichen Bewertung. Man fragt systematisch. Was passiert hier noch, außer dem, was ich erreichen will. Wer diese Frage konsequent stellt, wird selten böse überrascht. Wer sie unterlässt, tappt immer wieder in dieselbe Falle.
+
+## Der Rebound-Effekt
+
+Die zweite Falle ist der Rebound-Effekt, und er ist besonders tückisch, weil er sich hinter guten Nachrichten versteckt. Rebound bedeutet, dass eine Verbesserung sich teilweise selbst auffrisst. Das klassische Muster betrifft die Effizienz. Wird etwas sparsamer und billiger, neigen wir dazu, mehr davon zu nutzen. Ein sparsameres Auto verführt dazu, mehr zu fahren. Eine effizientere Beleuchtung verführt dazu, mehr und länger zu beleuchten. Die Ersparnis pro Einheit ist real, aber weil die Menge steigt, bleibt am Ende weniger übrig, als man gehofft hatte. Manchmal kehrt sich der Effekt sogar um, und der Gesamtverbrauch steigt trotz besserer Effizienz. Der Rebound ist deshalb eine der wichtigsten Fallen, die man beim Bewerten von Effizienzmaßnahmen im Kopf haben muss.
+
+## Warum der Rebound so oft übersehen wird
+
+Warum tappen selbst kluge Leute so oft in die Rebound-Falle. Weil die gute Nachricht in der ersten Ordnung steht und die schlechte erst in der zweiten. Die Effizienzverbesserung, also weniger Verbrauch pro Einheit, wird stolz gefeiert, denn sie ist sofort sichtbar. Der Mehrverbrauch durch die gestiegene Nutzung kommt später und leiser. Hier verbinden sich die Themen der letzten Vorlesung direkt mit dieser. Nur wer die Wellen bis in die zweite Ordnung weiterdenkt, sieht den Rebound überhaupt kommen. Wer bei der ersten Ordnung stehen bleibt, jubelt zu früh. Der Rebound ist damit ein Musterbeispiel dafür, warum sich der Weitblick über die Ordnungen hinweg so praktisch auszahlt.
+
+## Ein Beispiel zum Rebound
+
+Machen wir den Rebound an einem Beispiel greifbar. Eine Firma führt eine neue Technik ein, die den Energieverbrauch je Produkt um dreißig Prozent senkt. In der ersten Ordnung ist das eine klare Verbesserung, jedes einzelne Stück ist sparsamer. Doch weil die Produktion nun billiger ist, senkt die Firma die Preise, verkauft viel mehr und baut ihre Fabriken aus. In der zweiten Ordnung verdoppelt sich die produzierte Menge. Rechnet man beides zusammen, ist der gesamte Energieverbrauch am Ende sogar gestiegen, obwohl jedes einzelne Produkt sparsamer wurde. Das ist der Rebound in Reinform. Eine echte Wirkungsbewertung schaut deshalb nie nur auf den Verbrauch je Einheit, sondern immer auf den Gesamtverbrauch am Ende der Kette.
+
+## Zielkonflikte
+
+Die dritte Falle sind die Zielkonflikte. Ein Zielkonflikt liegt vor, wenn zwei an sich gute Ziele einander in die Quere kommen, sodass mehr vom einen weniger vom anderen bedeutet. Solche Konflikte sind der Normalfall, nicht die Ausnahme. Der Schutz von Arbeitsplätzen in einer alten, schmutzigen Industrie kann mit dem Schutz des Klimas in Konflikt geraten. Günstige Preise können mit fairen Löhnen in Konflikt stehen. Man kann eben nicht alle guten Ziele gleichzeitig zu hundert Prozent erreichen. Die unehrliche Reaktion ist, so zu tun, als gäbe es den Konflikt nicht, und alles gleichzeitig zu versprechen. Die ehrliche Reaktion ist, den Zielkonflikt offen zu benennen und bewusst abzuwägen, welchem Ziel man in welchem Maß den Vorrang gibt.
+
+## Zielkonflikte ehrlich abwägen
+
+Wie geht man mit Zielkonflikten um. Zunächst gilt, man kann sie nicht wegreden, man kann sie nur bewusst gestalten. Eine gute Bewertung macht den Konflikt und die getroffene Abwägung transparent. Sie sagt offen, hier haben wir dem einen Ziel den Vorrang gegeben und dafür beim anderen einen Abstrich gemacht, und zwar aus diesen Gründen. Diese Offenheit schafft Vertrauen, weil sie niemanden für dumm verkauft. Wichtig ist außerdem, dass nicht alle Ziele gleich verhandelbar sind. Wo etwas Grundlegendes auf dem Spiel steht, etwa Menschenrechte oder eine planetare Grenze, greift die Schutzlogik, die wir im dritten Abschnitt als Nichtkompensation kennenlernen. Dann darf man den Schaden nicht einfach gegen einen Vorteil aufrechnen. Manche Güter sind nicht verhandelbar, und das muss die Abwägung respektieren.
+
+## Die drei Fallen zusammen im Blick
+
+Sehen wir die drei Fallen im Zusammenhang, denn sie treten selten allein auf. Eine Maßnahme kann zugleich ungewollte Nebenwirkungen haben, einen Rebound auslösen und in einem Zielkonflikt stecken. Wer diese drei Muster kennt, prüft jede Maßnahme mit geschärftem Blick und stellt fast automatisch die richtigen Fragen. Was passiert hier noch nebenbei. Frisst sich die Verbesserung womöglich selbst auf. Und welches andere gute Ziel gerät dadurch unter Druck. Diese eingebaute Skepsis ist kein Pessimismus und kein Misstrauen gegen jede Idee. Sie ist schlicht Sorgfalt. Sie sorgt dafür, dass eine Maßnahme nicht nur auf dem Papier und in der ersten Ordnung gut ist, sondern auch am Ende, wenn alle Wellen durchgelaufen sind.
+
+## Was du aus dieser Vorlesung mitnimmst
+
+Fassen wir das Modul zusammen. Drei Fallen begleiten fast jede gut gemeinte Maßnahme. Nebenwirkungen sind die ungewollten Begleitfolgen, die neben dem eigentlichen Ziel auftreten. Der Rebound-Effekt bedeutet, dass eine Verbesserung sich durch gestiegene Nutzung teilweise selbst auffrisst. Und Zielkonflikte entstehen, wenn zwei gute Ziele einander in die Quere kommen, sodass man ehrlich abwägen muss. Wer diese drei Muster kennt, bewertet mit der nötigen Sorgfalt und lässt sich nicht von der schönen ersten Ordnung täuschen. Damit ist das Modul zum Erkennen von Wirkung abgeschlossen. Im nächsten Modul lernen wir, die verschiedenen Räume zu lesen, in denen Wirkung entsteht. Danke, dass du dabei warst.
+
+## 4. Wirkungsökonomische Vertiefung
+
+### 4.1 Begriffliche Präzision
+
+In dieser Vorlesung gilt die Grundregel der WÖk-Terminologie: **Wirkung ist neutral und relational.** Sie beschreibt zunächst nur eine tatsächliche Veränderung von Zuständen. Ob diese Veränderung positiv, negativ oder ambivalent ist, wird erst am Referenzrahmen bewertet. Wenn eine Zielgröße gemeint ist, sprechen wir von **positiver Netto-Wirkung**.
+
+Deshalb darf **Nebenwirkungen, Rebound und Zielkonflikte** nicht verkürzt werden auf Absicht, Aktivität, Reichweite, Symbolik oder moralische Selbstauskunft. Entscheidend bleibt: Wer oder was ist betroffen, welcher Zustand verändert sich, welcher Wirkpfad ist plausibel, welche Nebenwirkungen entstehen und welche Unsicherheit bleibt?
+
+### 4.2 Wirkpfad
+
+Ein erster Wirkpfad für diese Vorlesung lässt sich als Arbeitsmodell beschreiben:
+
+1. **Auslöser:** ein Produkt, eine Regel, eine Entscheidung, eine Kommunikation, eine Investition oder eine institutionelle Praxis.
+2. **Mechanismus:** der Zusammenhang, über den der Auslöser Verhalten, Ressourcen, Anreize, Rechte, Belastungen oder Schutz verändert.
+3. **Wirkungsempfänger:** Menschen, Ökosysteme, demokratische Öffentlichkeit, Organisationen oder künftige Generationen.
+4. **Zustandsveränderung:** beobachtbare oder plausibel belegbare Veränderung, nicht nur Output.
+5. **Bewertung:** Einordnung nach SDGs, Agenda 2030, SDG+ und WÖk-Schutzlinien.
+6. **Rückkopplung:** Anpassung von Entscheidung, Prozess, Anreiz oder Kommunikation.
+
+### 4.3 Formel-/Modellbaustein
+
+Die folgende Formel ist ein didaktisches Arbeitsmodell, kein amtlicher Bewertungsstandard:
+
+$$
+NW_{pos} = \sum_{i=1}^{n} w_i \cdot \Delta Z_i^{+} - \sum_{j=1}^{m} r_j \cdot \Delta Z_j^{-}
+$$
+
+Dabei steht $NW_{pos}$ für positive Netto-Wirkung als Zielgröße, $\Delta Z$ für Zustandsveränderungen, $w_i$ für begründete Gewichtungen positiver Wirkungen und $r_j$ für Risiken oder negative Zustandsveränderungen. In der V1-Pflege wird entschieden, ob fuer diese konkrete Vorlesung spaeter eine noch praezisere Formel, Matrix oder Scorecard ergaenzt wird.
+
+### 4.4 Tabellenbaustein
+
+| Prüffrage | Bedeutung für diese Vorlesung | Typischer Fehler | Saubere WÖk-Formulierung |
+|---|---|---|---|
+| Was ist der Auslöser? | Klärt, wodurch ein Wirkpfad beginnt. | Absicht mit Auslöser verwechseln. | "Der Auslöser ist ..., nicht die behauptete gute Absicht." |
+| Wer ist betroffen? | Bestimmt Wirkungsempfänger und Wirkungsraum. | Nur Kund:innen oder Entscheider:innen betrachten. | "Betroffen sind direkte, indirekte und stimmlose Empfänger." |
+| Was verändert sich? | Trennt Wirkung von Aktivität und Reichweite. | Output als Wirkung ausgeben. | "Wirkung liegt erst bei Zustandsveränderung vor." |
+| Welche Risiken entstehen? | Macht Nebenwirkungen und Zielkonflikte sichtbar. | Positive Wirkung behaupten und Schäden ausblenden. | "Wirkungsrisiken werden getrennt ausgewiesen." |
+| Wie wird rückgekoppelt? | Verbindet Bewertung mit Steuerung. | Reporting als Abschluss betrachten. | "Ergebnisse verändern Entscheidung und Prozess." |
+
+### 4.5 Chart-Spec
+
+```chart-spec
+slug: woek-g-v15-wirkpfad
+type: wirkpfad
+reuse_first: true
+preferred_asset: content/studienskripte/assets/woek-g-v15/woek-g-v15-wirkpfad.svg
+message: Nebenwirkungen, Rebound und Zielkonflikte wird als Wirkpfad von Auslöser über Mechanismus, Wirkungsempfänger und Zustandsveränderung bis zur Rückkopplung dargestellt.
+source: WÖk-Grundlagenwerk, Website-Korpus, Akademie-Quelltexte, Glossar
+```
+
+> **Bildvorgabe:** Wirkpfadgrafik mit sechs Stationen: Auslöser, Mechanismus, Wirkungsempfänger, Zustandsveränderung, Bewertung, Rückkopplung. Bestehende WÖk-Wirkpfad- oder Scorecard-Visuals sollen wiederverwendet werden, bevor ein neues Chart entsteht.
+
+## 5. Verständnisfragen (Mini-Quiz)
+
+1. **Was ist die zentrale Wirkungsfrage dieser Vorlesung?**
+   - A) Wie hoch ist die Reichweite?  B) Welche tatsächliche Zustandsveränderung entsteht und bei wem?  C) Wer wirkt sympathisch?  D) Welche Absicht wurde formuliert?
+   - ✅ **Richtig: B** — Wirkung meint tatsächliche Veränderung von Zuständen, nicht Absicht, Aktivität oder Reichweite.
+
+2. **Warum reicht ein guter Auslöser noch nicht aus?**
+   - A) Weil Wirkung immer zufällig ist  B) Weil erst Wirkpfad, Empfänger, Resonanz und Rückkopplung klären, ob Wirkung entsteht  C) Weil Daten unwichtig sind  D) Weil Bewertung verboten ist
+   - ✅ **Richtig: B** — Ein Auslöser erzeugt höchstens Wirkungspotenzial, solange keine tatsächliche Veränderung nachvollziehbar ist.
+
+3. **Welche rote Linie gilt auch bei „Nebenwirkungen, Rebound und Zielkonflikte"?**
+   - A) Menschen dürfen moralisch sortiert werden  B) Reichweite gilt als Wirkung  C) Keine Personenbewertung, kein Social Credit, keine Vermischung von Wirkung und Meinung  D) Reporting ersetzt Rückkopplung
+   - ✅ **Richtig: C** — Die WÖk bewertet Wirkpfade und Zustandsveränderungen, nicht den Wert von Menschen.
+
+4. **Wann ist eine Aussage prüfbar?**
+   - A) Wenn Quelle, Begriff, Wirkpfad und Unsicherheit benannt sind  B) Wenn sie oft geteilt wurde  C) Wenn sie gut klingt  D) Wenn sie keine Gegenfragen zulässt
+   - ✅ **Richtig: A** — Quellenklarheit und begriffliche Präzision sind Voraussetzungen für prüfbare Wirkungsaussagen.
+
+5. **Was unterscheidet Reporting von Rückkopplung?**
+   - A) Nichts  B) Reporting beschreibt, Rückkopplung verändert Steuerung nach beobachteter Wirkung  C) Reporting ist immer falsch  D) Rückkopplung ist nur Marketing
+   - ✅ **Richtig: B** — Rückkopplung bedeutet Lernen und Nachsteuern anhand tatsächlicher Zustandsveränderungen.
+
+6. **Welche Zielgröße bleibt leitend?**
+   - A) Positive Netto-Wirkung  B) Maximale Aktivität  C) Maximale Reichweite  D) Geringste Kritik
+   - ✅ **Richtig: A** — Wenn eine Zielgröße gemeint ist, geht es um positive Netto-Wirkung im Referenzrahmen Mensch, Planet und Demokratie.
+
+## 6. Glossar der Kernbegriffe
+
+| Begriff | Kurzdefinition |
+|---|---|
+| Wirkung | Tatsächliche Veränderung von Zuständen bei Wirkungsempfängern. |
+| Wirkungspotenzial | Plausible Möglichkeit künftiger Wirkung; noch keine beobachtete Wirkung. |
+| Wirkungsrisiko | Möglichkeit negativer Zustandsveränderung oder schädlicher Nebenwirkung. |
+| positive Netto-Wirkung | Bewertete Zielgröße nach positiven und negativen Wirkungen im Referenzrahmen Mensch, Planet und Demokratie. |
+| Rückkopplung | Lern- und Steuerungsprozess, der Wirkungsergebnisse in Entscheidungen zurückführt. |
+
+## 7. Tiefenskript-Erweiterung Sprint 7
+
+**Status dieser Erweiterung:** V1-finalisierte Codex-Erweiterung fuer Markdown-Master, Word-Rohfassung und Reader-Spiegel. Satz, Medienintegration, Lektorat und PDF-Freigabe bleiben der Claude-CI/CD-Lane vorbehalten.
+
+### 7.1 Leitthese
+
+Nebenwirkungen, Rebound und Zielkonflikte markiert im Grundstudium eine Grundentscheidung der Wirkungsökonomie: Entscheidend ist nicht, was plausibel klingt, sondern welche Zustände sich bei welchen Wirkungsempfängern in welchem Wirkungsraum tatsächlich verändern.
+
+Die Vorlesung bleibt dabei an die Grundregel gebunden: Wirkung ist neutral und relational. Erst die Bewertung im Referenzrahmen Mensch, Planet, Demokratie, SDGs, Agenda 2030 und SDG+ entscheidet, ob eine Veränderung positiv, negativ oder ambivalent einzuordnen ist. Wenn eine Zielgröße gemeint ist, sprechen wir von positiver Netto-Wirkung.
+
+### 7.2 Didaktische Einordnung im Studiengang
+
+V15 liegt an der Schwelle zwischen begrifflicher Grundlegung und Bewertungsarchitektur. Die Studierenden sollen nicht nur Begriffe wiedergeben, sondern an Fällen erkennen, welche Aussage schon Wirkung behauptet, welche nur Wirkungspotenzial beschreibt und wo ein Wirkungsrisiko offenliegt. Der Tiefensinn dieser Vorlesung liegt deshalb nicht in zusätzlicher Komplexität, sondern in besserer Unterscheidungsfähigkeit.
+
+Für die spätere Praxis ist entscheidend, dass jede Analyse vier Ebenen getrennt hält:
+
+1. **Beschreibung:** Was geschieht tatsächlich oder soll geschehen?
+2. **Kausalannahme:** Über welchen Mechanismus könnte daraus eine Zustandsveränderung entstehen?
+3. **Bewertung:** Welche Richtung hat diese Veränderung im Referenzrahmen?
+4. **Rückkopplung:** Welche Entscheidung, Regel, Ressource oder Kommunikation wird dadurch verändert?
+
+Wo diese Ebenen vermischt werden, entstehen typische WÖk-Fehler: Aktivität wird als Wirkung ausgegeben, Reichweite ersetzt Zustandsveränderung, gute Absicht verdeckt Nebenwirkungen oder Reporting wird mit Lernen verwechselt.
+
+### 7.3 Analysemodell
+
+| Analyseobjekt | Woran es wirkt | Typischer Fehler | Saubere WÖk-Lesart |
+|---|---|---|---|
+| Begriff | Was muss präzise getrennt werden? | Typischer Fehler | Saubere WÖk-Lesart |
+| Wirkung | tatsächliche Zustandsveränderung | Absicht, Aktivität oder Reichweite als Wirkung ausgeben | Zustand, Empfänger, Wirkpfad und Quelle nennen |
+| Potenzial | mögliche künftige Wirkung | Möglichkeit als Ergebnis verkaufen | Bedingungen, Unsicherheit und Resonanzraum markieren |
+| Risiko | mögliche negative Wirkung oder Nebenwirkung | positive Geschichte ohne Schattenseite erzählen | Nebenwirkungen, Rebound und Zielkonflikte offenlegen |
+| Rückkopplung | Konsequenz aus beobachteter oder bewerteter Wirkung | Reporting als Abschluss behandeln | Lernen und Steuerungsänderung einbauen |
+
+### 7.4 Modellformel
+
+Die folgende Formel ist ein didaktisches Denkmodell, kein amtlicher Bewertungsstandard:
+
+$
+Wirkung = \Delta Zustand(Empfaenger, Raum, Zeit) \; durch \; Wirkpfad(Ausloeser, Mechanismus, Resonanz, Rueckkopplung)
+$
+
+Die Formel ist ein didaktisches Raster: Sie schützt davor, Wirkung auf Absicht, Output, Symbolik oder Reichweite zu verkürzen.
+
+Die Formel soll gerade keine Scheingenauigkeit erzeugen. Sie zwingt dazu, die Faktoren offen zu legen, die eine Aussage tragen. In einem echten Bewertungsprozess müssten Datenquelle, Aktualität, Datenqualitätsklasse, Unsicherheitsgrad und Rückkopplungsregel ergänzt werden.
+
+### 7.5 Fallfenster
+
+**Fall 1.** Ein Projekt kann im Themenfeld Nebenwirkungen, Rebound und Zielkonflikte überzeugend kommunizieren und trotzdem nur Wirkungspotenzial erzeugen. Die WÖk-Prüfung beginnt erst, wenn klar wird, welcher Zustand sich bei wem verändert.
+
+**Fall 2.** Eine Organisation kann im Themenfeld Nebenwirkungen, Rebound und Zielkonflikte gute Absichten haben und zugleich Wirkungsrisiken übersehen. Das Skript trainiert deshalb die Trennung von Absicht, Auslöser, Wirkmechanismus, Empfänger, Datenlage und Bewertung.
+
+### 7.6 Prüfungsnahe Fallfragen ohne geschützte Antwortlogik
+
+Diese Fragen sind öffentlich und dienen dem Lernen. Die geschützte Antwortlogik, Scoring-Regeln und CorrectAnswer-Felder bleiben in der Prüfungs-Lane der App.
+
+1. Beschreibe den Auslöser im Fall und trenne ihn von Absicht, Image oder Reichweite.
+2. Formuliere einen plausiblen Wirkpfad mit Wirkungsempfängern, Zustandsveränderung und Rückkopplung.
+3. Benenne mindestens ein Wirkungspotenzial und ein Wirkungsrisiko.
+4. Zeige, welche Quelle oder Datenart nötig wäre, um von Potenzial zu belastbarer Wirkungsaussage zu kommen.
+5. Prüfe, ob Nichtkompensation oder Reverse Merit Order einschlägig sein könnten.
+6. Formuliere eine saubere Wirkungsaussage in einem Satz: Was wissen wir, was nehmen wir an, was bleibt offen?
+
+### 7.7 Auswertung aus der lebenden Website-Referenz
+
+### Quellenanker: Kapitel 23 - Wirkungsrisiko und Wirkungsresilienz
+
+*Öffentliche Quelle:* [Kapitel 23 - Wirkungsrisiko und Wirkungsresilienz](https://wirkungsoekonomie.de/referenz/kapitel-023-wirkungsrisiko-und-wirkungsresilienz/)
+
+### 23.1 Warum Wirkung immer auch Risiko bedeutet
+
+Kapitel 22 hat gezeigt: Wirkung darf nicht bei Sichtbarkeit stehen bleiben. Sie muss in Entscheidungsstrukturen zurückkehren. Wenn Wirkung Preise, Steuern, Kapitalzugang, Versicherbarkeit, Beschaffung, Management, Einkommen, öffentliche Haushalte, Recht, Bildung oder Medienlogik verändert, wird sie lenkend [I-23-1].
+
+Dieses Kapitel schließt Teil III ab und ergänzt die Systemlogik um eine zweite Perspektive. Wirkung ist nicht nur Nutzenlogik. Wirkung ist auch Risikologik. Wer Wirkung als Zustandsveränderung versteht, muss auch die Möglichkeit negativer Zustandsveränderung betrachten: Gesundheit kann geschwächt werden, Vertrauen kann sinken, Böden können erschöpfen, Lieferketten können brüchig werden, Kapital kann falsche Pfade finanzieren, Öffentlichkeit kann manipulierbarer werden, Demokratie kann ihre Korrekturfähigkeit verlieren [I-23-2].
+
+Wirkungsrisiko bezeichnet die Möglichkeit einer negativen Zustandsveränderung für Mensch, Planet oder Demokratie. Es ist mehr als finanzielles Risiko. Finanzielle Schäden sind häufig nur die späte Übersetzung negativer Wirkung. Eine Lieferkette kann kurzfristig billig sein und später durch Wasserstress, Arbeitsrechtsverletzungen, Reputationsschäden oder politische Instabilität teuer werden. Ein Geschäftsmodell kann Gewinne erzeugen und zugleich ökologische, soziale oder demokratische Risiken aufbauen. Eine Infrastruktur kann im Alltag funktionieren und bei Hitze, Cyberangriff, Energieengpass oder Personalmangel brüchig werden [I-23-3].
+
+Die Wirkungsökonomie verschiebt deshalb den Risikobegriff. Risiko beginnt nicht erst, wenn ein Verlust in der Bilanz steht. Risiko beginnt, wenn ein Zustand verletzlicher wird.
+
+### 23.2 Wirkungspotenzial, Wirkungsrisiko und eingetretener Schaden
+
+Wirkungspotenzial beschreibt den Möglichkeitsraum vor der eingetretenen Wirkung. Wirkungsrisiko beschreibt jenen Teil dieses Möglichkeitsraums, der negative Zustandsveränderungen wahrscheinlicher macht [I-23-4]. Ein Gesetzesentwurf kann Wirkungspotenzial erzeugen, bevor er beschlossen ist. Eine politische Aussage kann Wirkungspotenzial erzeugen, bevor sie Verhalten verändert. Ein Produktdesign kann Wirkungsrisiko erzeugen, bevor Nutzung, Reparatur oder Entsorgung Schäden auslösen. Eine ungesicherte digitale Infrastruktur kann Wirkungsrisiko erzeugen, bevor ein Angriff gelingt.
+
+Eingetretener Schaden liegt erst vor, wenn sich ein Zustand tatsächlich negativ verändert hat. Die Wirkungsökonomie darf diese drei Ebenen nicht vermischen. Potenzial ist nicht Wirkung. Risiko ist nicht Schaden. Schaden ist nicht bloß Verdacht. Diese Trennung schützt Freiheit, Datenqualität und Fairness.
+
+Gleichzeitig darf die Trennung nicht zur Verharmlosung führen. Eine marode Brücke ist nicht erst relevant, wenn sie bricht. Eine unsanierte Wohnung ist nicht erst relevant, wenn Menschen krank werden. Eine Lieferkette mit ungeprüften Arbeitsbedingungen ist nicht erst relevant, wenn ein Skandal öffentlich wird. Eine Plattformlogik, die Manipulation verstärkt, ist nicht erst relevant, wenn demokratische Institutionen beschädigt sind [I-23-5].
+
+Wirkungsrisiko ist daher Frühwarnung. Es verlangt Prüfung, Beobachtung, Priorisierung und gegebenenfalls Lenkung. Es begründet nicht automatisch Schuld. Es begründet Verantwortlichkeit im Umgang mit möglichen Folgen.
+
+### 23.3 Risiko nach erster, zweiter und dritter Wirkungsordnung
+
+Kapitel 18 hat Wirkungen erster, zweiter und dritter Ordnung unterschieden [Kap. 18]. Diese Unterscheidung gilt auch für Risiken.
+
+Wirkungsrisiko erster Ordnung betrifft eine direkte negative Zustandsveränderung. Ein Produkt kann gesundheitsgefährdende Stoffe enthalten. Eine Straße kann Unfallrisiken erhöhen. Eine Wohnung kann Schimmelbelastung erzeugen. Ein fossiler Energieträger kann direkte Emissionen verursachen. Diese Risiken liegen nah an der Handlung, am Produkt oder am Zustand.
+
+Wirkungsrisiko zweiter Ordnung betrifft indirekte Folgen. Eine schlechte Wohnung kann nicht nur krank machen, sondern Bildungswege, Arbeitsfähigkeit, Familienleben und soziale Stabilität beeinflussen. Ein billiges Fast-Fashion-Produkt kann nicht nur Ressourcen verbrauchen, sondern Arbeitsbedingungen, Abfallströme, Chemikalienbelastung, Preisdruck und Konsumroutinen verändern [I-23-6]. Eine politische Aussage kann nicht nur Aufmerksamkeit erzeugen, sondern Vertrauen, Gruppenzugehörigkeit, Angst oder Handlungsbereitschaft verschieben [I-23-7].
+
+Wirkungsrisiko dritter Ordnung betrifft die Struktur, in der spätere Entscheidungen entstehen. Wenn schlechte Wirkung dauerhaft billiger bleibt, verändert das den Wettbewerb. Wenn Kapital externe Risiken ignoriert, finanziert es fragile Pfade. Wenn öffentliche Kommunikation Wahrheit durch Reichweite ersetzt, verändert sich die demokratische Entscheidungsstruktur. Wenn Versicherbarkeit sinkt, zeigt sich ein Systemrisiko, das nicht mehr nur einzelne Schäden betrifft [I-23-8].
+
+Diese Ordnung schützt vor zu enger Risikolesart. Eine Gefahr ist nicht nur das, was direkt eintritt. Eine Gefahr kann auch in Folgeketten und Entscheidungsstrukturen liegen.
+
+### 23.4 Wirkungsdaten als Frühwarninformationen
+
+Wirkungsdaten sind nicht nur Bewertungsdaten. Sie sind Frühwarninformationen. Sie zeigen nicht nur, was geschehen ist, sondern auch, wo Verwundbarkeit entsteht, wo negative Wirkung wahrscheinlicher wird und wo Prävention möglich ist [I-23-9].
+
+Klimadaten zeigen nicht nur Emissionen, sondern künftige Kosten, Versicherungsrisiken, Standortfragen, Lieferkettenrisiken und politische Belastungen. Arbeitsdaten zeigen nicht nur soziale Standards, sondern Fluktuation, Konflikt, Ausbeutung, Reputationsrisiken und Resilienz der Wertschöpfung. Gesundheitsdaten zeigen nicht nur Krankheit, sondern Überlastung, Präventionslücken, Wohnrisiken, Arbeitsrisiken und Pflegeengpässe. Demokratiedaten zeigen nicht nur Institutionenvertrauen, sondern Manipulationsanfälligkeit, Polarisierung, Medienqualität und Korrekturfähigkeit [I-23-10].
+
+Die Wirkungsökonomie liest Daten daher nicht als Berichtspflicht, sondern als Risikointelligenz. CSRD, ESRS, GRI, NACE, WÖk-IDs, Scorecards, digitale Produktpässe, T-SROI, Wirkungsberichte und Datenqualitätsklassen können nur dann Sinn entfalten, wenn sie nicht in Dokumenten enden, sondern in Entscheidungen zurückwirken [I-23-11][E-23-1].
+
+Ein Bericht zeigt einen Zustand. Rückkopplung verändert den Umgang mit diesem Zustand.
+
+### 23.5 Finanzierbarkeit, Versicherbarkeit und Kapitalzugang
+
+Risiko wird im Finanzsystem sichtbar, sobald es Finanzierungskosten, Kapitalzugang, Versicherbarkeit, Bewertung oder Geschäftsmodellstabilität verändert. Genau dort wird Wirkung ökonomisch relevant [I-23-8].
+
+Ein Unternehmen mit hohen Emissionen hat nicht nur ein Klimathema. Es hat mögliche Kosten aus Regulierung, CO2-Preisen, Technologieumstellung, Reputationsdruck, Lieferkettenanforderungen, Kapitalbewertung und Marktverlusten. Eine Immobilie in einer Risikoregion hat nicht nur ein Standortthema. Sie hat ein Versicherungs-, Finanzierungs- und Wertthema. Eine Lieferkette mit schlechten Arbeits- und Umweltbedingungen hat nicht nur ein Compliance-Thema. Sie hat ein Produktions-, Haftungs-, Beschaffungs- und Kapitalthema [I-23-12].
+
+Versicherbarkeit wird damit zum Resilienzindikator. Was nicht mehr oder nur noch sehr teuer versicherbar ist, zeigt eine reale Verwundbarkeit des Systems. Versicherungen sind in der Wirkungsökonomie nicht nur Schadensausgleicher. Sie sind Wirkungslenker, weil sie Risiken bepreisen und damit Investitionen, Standortentscheidungen und Prävention beeinflussen [I-23-8].
+
+Wirkungsrisiko wird im Finanzsystem nicht erst durch ein Verbot wirksam. Es kann schon vorher in Risikomodellen, Restwertannahmen, Prämien, Sicherheiten, Kapitalanforderungen, Ratings, Kreditlaufzeiten, Refinanzierung und Investorenerwartungen erscheinen. Eine Technologie kann rechtlich erlaubt bleiben und dennoch teurer, kürzer oder schwerer finanzierbar werden, wenn ihre Zukunftsrechnung schwächer wird. Technologieoffenheit ist deshalb kein Finanzierungsanspruch [I-23-25].
+
+Kapitalzugang wird ebenfalls zum Wirkungsindikator. Kapital, das positive Wirkung finanziert, kann Resilienz erhöhen. Kapital, das Schäden externalisiert, kann Systemrisiken vergrößern. Der T-SROI übersetzt diesen Unterschied in eine Bewertungslogik, die finanzielle Rendite, Netto-Wirkung, negative Wirkung, Zeitwirkung, Resilienz und Transformationsbeitrag verbindet [I-23-13].
+
+### 23.6 Infrastruktur, Lieferketten und Staat
+
+Wirkungsrisiken entstehen nicht nur in Unternehmen. Sie entstehen in Infrastrukturen, Lieferketten, Verwaltungen, öffentlichen Haushalten und staatlicher Planung. Ein Staat kann haushaltspolitisch geordnet erscheinen und dennoch durch unterlassene Prävention künftige Krisenkosten erhöhen [I-23-14].
+
+Eine Straße, eine Brücke, ein Stromnetz, ein Krankenhaus, ein Schulgebäude, ein Datenraum oder ein Verwaltungsverfahren kann im Alltag funktionieren und trotzdem verwundbar sein. Hitze, Personalmangel, Cyberangriffe, Energiepreise, Lieferausfälle, Starkregen, Pandemien oder politische Instabilität können zeigen, dass ein System zu knapp, zu zentral, zu abhängig oder zu wenig lernfähig gebaut wurde [I-23-15].
+
+Lieferketten zeigen dieselbe Logik. Ein billiger Zulieferer ist kein Vorteil, wenn er Wasserstress, giftige Prozesse, unsichere Arbeit, instabile Herkunft oder fehlende Datenqualität in die Kette bringt. Die Lieferkettenlogik der Wirkungsökonomie macht kleine und große Vorleistungen sichtbar, ohne kleine Betriebe durch Bürokratie auszuschließen. Archetypen, Default-Werte, Nachweismöglichkeiten und Vorsteuerlogik sollen Sichtbarkeit, Verbesserung und wirtschaftlichen Anreiz verbinden [I-23-6].
+
+Für den Staat folgt daraus: Wirkungsrisiko gehört in Haushalte, Beschaffung, Infrastrukturplanung, Gesetzesfolgenabschätzung und Krisenvorsorge. Prävention ist keine freiwillige Zusatzleistung. Sie ist Wirkleistung, wenn sie Schäden verhindert, Kosten senkt und Handlungsspielräume erhält [I-23-14].
+
+### 23.7 Demokratie, Medien und öffentliche Resonanzräume
+
+Wirkungsrisiken betreffen auch Demokratie und Öffentlichkeit. Eine Demokratie kann nicht nur durch formale Angriffe beschädigt werden. Sie kann ihre Orientierungsfähigkeit verlieren, wenn Wahrheit, Vertrauen, Medienqualität, Rechtsstaatlichkeit und öffentliche Resonanzräume geschwächt werden [I-23-7].
+
+Sprache erzeugt zuerst Wirkungspotenzial. Wiederholung, Tonalität, Frames, Bilder, Plattformlogiken und algorithmische Verstärkung können aus Potenzial Risiko machen. Eine einzelne Aussage ist nicht automatisch Schaden. Eine Kommunikationsstruktur kann jedoch demokratisches Wirkungsrisiko erzeugen, wenn sie Institutionen systematisch delegitimiert, Gruppen entmenschlicht, Quellenklarheit zerstört oder Manipulation belohnt [I-23-7].
+
+Hybride Einflussnahme greift nicht nur Informationen an. Sie greift Rückkopplung an. Wenn Menschen nicht mehr wissen, welchen Daten sie vertrauen können, welche Institutionen legitim handeln, welche Quellen prüfbar sind oder welche Konflikte real sind, sinkt demokratische Lernfähigkeit [I-23-16].
+
+Demokratische Resilienz bedeutet daher nicht nur Schutz von Wahlen. Sie umfasst Medienqualität, Plattformverantwortung, Bildung, digitale Mündigkeit, Statistik, Wissenschaft, Gerichte, Transparenz, Quellenklarheit und Vertrauen. Öffentlichkeit ist ein Wirkungsraum. Sie braucht Schutz vor Manipulation, ohne Meinung zu normieren [I-23-7][I-23-17].
+
+### Quellenanker: Kapitel 47 - Unternehmensrisiko und Transformation
+
+*Öffentliche Quelle:* [Kapitel 47 - Unternehmensrisiko und Transformation](https://wirkungsoekonomie.de/referenz/kapitel-047-unternehmensrisiko-und-transformation/)
+
+Kapitel 46 hat Lieferketten und interne Wertschöpfung als Wirkungsräume des Unternehmens beschrieben. Dieses Kapitel schließt Teil VII ab. Es verbindet Unternehmenszweck, Führung, Controlling, Organisation und Lieferkettensteuerung mit der Frage der Zukunftsfähigkeit. Wirkung ist für Unternehmen nicht nur Verantwortung. Wirkung ist Risiko, Resilienz und Transformationsfrage.
+
+Ein Unternehmen ist zukunftsfähig, wenn es seine Wirkung, seine Risiken und seine Transformationsfähigkeit als zusammenhängendes System versteht.
+
+Klassisches Risikomanagement fragt nach Eintrittswahrscheinlichkeit, Schadenshöhe, Liquidität, Haftung, Compliance, Marktentwicklung, operativen Störungen und finanziellen Verlusten. Das bleibt notwendig. Doch in der Wirkungsökonomie beginnt Risiko früher. Wirkungsrisiko entsteht dort, wo ein Unternehmen negative Zustandsveränderungen möglich macht oder von negativen Zustandsveränderungen abhängig wird. Solche Risiken können finanziell relevant werden, bevor sie in der Bilanz sichtbar sind: durch Regulierung, Reputationsverlust, Lieferkettenbrüche, Versicherungsprobleme, Kapitalzugang, Fachkräftemangel, Klagen, Kundenabwanderung, Transformationsdruck oder Wertverluste alter Anlagen [Kap. 23; I-K47-1; I-K47-2].
+
+Damit wird Wirkung zur strategischen Risikofrage und zugleich zur strategischen Chance. Wer negative Wirkung verdrängt, baut Zukunftsrisiko auf. Wer positive Wirkung systematisch erzeugt, baut Resilienz, Vertrauen, Zugang, Innovationsfähigkeit und Transformationsfähigkeit auf.
+
+### 47.1 Wirkungsrisiko im Enterprise Risk Management
+
+Enterprise Risk Management, kurz ERM, soll Risiken nicht isoliert verwalten, sondern mit Strategie und Leistung verbinden. Das COSO-ERM-Framework beschreibt Risiko ausdrücklich als Bestandteil von Strategieentwicklung und Performance-Steuerung. Die Wirkungsökonomie erweitert diesen Gedanken: Unternehmensrisiken sind nicht nur finanzielle, operative oder rechtliche Risiken. Sie sind auch Wirkungsrisiken.
+
+Wirkungsrisiko im ERM heißt, dass die Wirkung eines Geschäftsmodells, einer Lieferkette, eines Produkts, einer Technologie, eines Standortes oder einer Kommunikationspraxis als Risikofeld betrachtet wird. Ein Unternehmen fragt nicht nur: Was kann uns passieren? Es fragt auch: Welche Wirkung erzeugen wir, die später auf uns, unsere Stakeholder, unsere Finanzierung, unsere Märkte, unsere Mitarbeitenden und unsere Legitimität zurückkehrt?
+
+Diese Perspektive verändert die Risikolandkarte. Klimarisiko ist nicht nur die Frage, ob Extremwetter einen Standort trifft. Es ist auch die Frage, ob das eigene Geschäftsmodell planetare Belastungen erhöht und dadurch regulatorische, reputative, versicherungsbezogene oder marktliche Risiken aufbaut. Lieferkettenrisiko ist nicht nur die Frage, ob ein Zulieferer ausfällt. Es ist auch die Frage, ob Menschenrechtsverletzungen, Wasserstress, geopolitische Abhängigkeiten oder Datenlücken in der Kette entstehen. Reputationsrisiko ist nicht nur die Angst vor schlechter Presse. Es ist häufig das sichtbare Signal eines tieferen Wirkungsrisikos: Die Öffentlichkeit erkennt eine Diskrepanz zwischen Behauptung und Wirkung.
+
+Wirkungsrisiko umfasst ökologische Risiken wie Klima, Wasser, Boden, Biodiversität, Ressourcen und Kreislauffähigkeit. Es umfasst soziale Risiken wie Arbeitsbedingungen, Gesundheit, Sicherheit, Diskriminierung, regionale Wirkung und Menschenrechte. Es umfasst demokratische Risiken wie Lobbytransparenz, Medienwirkung, Datenmacht, Desinformation, Polarisierung und institutionelles Vertrauen. Es umfasst Lieferkettenrisiken, technologische Risiken, Finanzierungs- und Versicherungsrisiken sowie Transformationsrisiken durch Pfadabhängigkeit, alte Anlagen, falsche Kompetenzen oder Geschäftsmodelle, die an neuen Wirkungsvorgaben scheitern [I-K47-2; I-K47-3].
+
+ERM muss den Unterschied zwischen sichtbarem Krisenschaden und unsichtbarer Prävention erfassen. Viele Unternehmensrisiken werden erst ernst genommen, wenn sie finanziell sichtbar sind: Umsatzverlust, Lieferausfall, Klage, Rückruf, Versicherungsprämie, Personalabgang, Reputationsschaden oder regulatorische Auflage. Wirkungsökonomisch ist dieser Zeitpunkt spät. Der Handlungsspielraum ist dann bereits enger. Vorher hätte das Unternehmen gestalten können. Später muss es reparieren.
+
+Die erfolgreiche Prävention bleibt häufig unspektakulär. Ein nicht eingetretener Lieferkettenbruch, ein vermiedener Cybervorfall, eine nicht eskalierte Arbeitsbelastung, ein nicht verlorenes Vertrauen oder ein nicht entstandener regulatorischer Konflikt erscheinen leicht als „nichts passiert“. Wirkungsökonomisch kann gerade dieses Nicht-Eintreten eine hohe Wirkleistung des Risikomanagements sein.
+
+Wirkungsrisiko im ERM darf daher nicht nur eingetretene Schäden bilanzieren. Es muss auch verhinderte Schäden, erhaltene Optionen und gestärkte Resilienz sichtbar machen. Es fragt: Welche Kosten wurden vermieden? Welche Wahlmöglichkeiten blieben erhalten? Welche Vertrauensbasis blieb stabil? Welche Lieferketten wurden robuster? Welche regulatorische Eskalation wurde verhindert? Welche Mitarbeitenden blieben gesund? Welche Wirkung konnte korrigiert werden, bevor sie zum finanziellen Schaden wurde?
+
+Diese Felder gehören nicht in getrennte Risikosilos. Sie bilden zusammen die Wirkungsrisiken des Unternehmens. Ein niedriger Einkaufspreis kann Lieferkettenrisiko erhöhen. Eine hohe Marge kann Reputationsrisiko enthalten. Eine effiziente Technologie kann Datenschutzrisiko erzeugen. Ein erfolgreiches Produkt kann Gesundheitsrisiken oder demokratische Nebenwirkungen haben. Ein stabiler Markt kann kippen, wenn seine negative Wirkung sichtbar wird.
+
+ERM muss deshalb wirkungsfähig werden. Risiken werden nicht nur nach finanzieller Schadenshöhe sortiert, sondern nach ihrer Fähigkeit, Mensch, Planet, Demokratie und die Unternehmenszukunft zu beschädigen. Das entspricht der Logik aus Kapitel 23: Wirkungsdaten sind Frühwarninformationen. Im Unternehmen werden sie zu Risiko- und Resilienzsignalen.
+
+### 47.2 Geschäftsmodellprüfung
+
+Geschäftsmodelle sind Wirkungsmodelle. Sie beantworten nicht nur, wie ein Unternehmen Geld verdient. Sie zeigen, welche Probleme es löst, welche Bedürfnisse es erzeugt, welche Ressourcen es nutzt, welche Abhängigkeiten es schafft, welche Gruppen es stärkt oder schwächt und welche Zustände es verändert.
+
+Eine wirkungsökonomische Geschäftsmodellprüfung fragt daher nicht nur nach Profitabilität, Skalierbarkeit und Marktposition. Sie fragt: Auf welcher Wirkung beruht dieses Geschäftsmodell? Welche Zustände werden verbessert? Welche Schäden werden vorausgesetzt? Welche Folgekosten werden verschoben? Welche Wirkungspotenziale entstehen? Welche Risiken kehren später zurück?
+
+Geschäftsmodelle mit negativer Wirkung sind Zukunftsrisiken. Sie können heute profitabel sein, weil ihre Folgekosten außerhalb des Preises liegen. Genau darin liegt ihre Fragilität. Wenn Wirkung sichtbar, berichtspflichtig, versicherungsrelevant, kapitalrelevant, regulierungsrelevant oder kaufentscheidend wird, können solche Geschäftsmodelle ihre wirtschaftliche Grundlage verlieren.
+
+Das gilt für fossile Anlagen, ressourcenintensive Produktionsweisen, ausbeuterische Lieferketten, gesundheitsbelastende Produkte, manipulative digitale Geschäftsmodelle, spekulative Wohnmodelle, datenintensive Überwachungsmodelle oder Kommunikationsmodelle, die Erregung und Vertrauenszerstörung monetarisieren. Sie können über längere Zeit hohe Rendite erzeugen. Wirkungsökonomisch enthalten sie Stranded-Asset-Risiko: Werte, Anlagen, Kompetenzen, Marken oder Verträge können unter neuen ökologischen, sozialen, rechtlichen oder demokratischen Bedingungen an Tragfähigkeit verlieren [E-K47-5; E-K47-6].
+
+Stranded Assets sind nicht nur ein Klimathema. Klimabezogene Vermögensverluste sind der sichtbarste Fall. Es gibt auch soziale, digitale, demokratische und reputative Stranded Assets. Ein Algorithmus, der Reichweite durch Polarisierung erzeugt, kann zum Risiko werden. Eine Marke, die von Niedriglohnketten abhängt, kann an Legitimität verlieren. Ein Geschäftsmodell, das auf Datenintransparenz beruht, kann durch neue Rechte und Transparenzpflichten brüchig werden. Eine Immobilie, die auf energetischer Vernachlässigung und sozialer Verdrängung beruht, kann regulatorisch, versicherungstechnisch und gesellschaftlich unter Druck geraten.
+
+Stranding bedeutet nicht, dass ein Vermögenswert physisch zerstört sein muss. Ein Asset kann technisch weiter funktionieren und zugleich wirtschaftlich nicht mehr in die Zukunftsrechnung passen. Restwerte, Betriebskosten, CO2-Preise, Versicherbarkeit, Sicherheiten, Nachfrage, Regulierung, Refinanzierung und gesellschaftliche Akzeptanz können sich so verändern, dass aus einem nutzbaren Gegenstand ein schwächer finanzierbarer oder wertgeminderter Vermögenswert wird. Genau darin liegt die stille Neubewertung von Wirkungsrisiken.
+
+Geschäftsmodellprüfung heißt deshalb: Das Unternehmen prüft nicht nur, ob sein Modell Geld verdient, sondern ob es unter einer wirkungsorientierten Ordnung bestehen kann. Es behandelt Business-as-Usual nicht als neutralen Referenzpunkt, sondern als Szenario mit eigenen Risiken. Es fragt, welche Annahmen über Energie, Wasser, Rohstoffe, Arbeit, Daten, Demokratie, Regulierung, Kapital und Kundenvertrauen das Modell voraussetzt.
+
+Hier schließt ein kurzer Verweis auf Schumpeter und Röpke an. Schumpeter beschreibt wirtschaftliche Entwicklung als Prozess neuer Kombinationen, in dem Innovation bestehende Strukturen verdrängt und neue Entwicklungspfade schafft. Jochen Röpke verbindet Unternehmertum mit Lernen, Kompetenzentwicklung und evolutorischer Selbstveränderung. Für dieses Kapitel folgt daraus: Transformation ist nicht nur technische Umrüstung. Sie verlangt unternehmerische Lernfähigkeit. Die ausführliche Einordnung von Schumpeter, Röpke und langfristigen Innovationszyklen gehört in die späteren Teile zur wirtschaftlichen Entwicklung. Hier reicht die Unternehmensfolge: Geschäftsmodelle müssen sich selbst erneuern können, wenn ihre Wirkung zur Zukunftsgrenze wird.
+
+Eine Geschäftsmodellprüfung ist deshalb nicht nur defensiv. Sie ist auch Chancenprüfung. Wo negative Wirkung zur Grenze wird, entsteht Raum für neue Lösungen: regenerative Produkte, faire Lieferketten, gesündere Arbeitsmodelle, kreislauffähige Materialien, vertrauenswürdige Datenräume, resiliente Infrastruktur, transparente Kommunikation und wirkungsfähige Dienstleistungen. Transformation ist Risiko und Chance zugleich.
+
+### 47.3 Transformationspfade
+
+Transformation ist kein einmaliges Projekt. Sie ist ein lernender Pfad.
+
+Ein Unternehmen kann nicht einfach beschließen, morgen wirkungspositiv zu sein. Es hat bestehende Anlagen, Lieferverträge, Kompetenzen, Marken, IT-Systeme, Kundenerwartungen, Kapitalstrukturen, Kultur, Führung, Datenlücken und regulatorische Pflichten. Viele dieser Elemente erzeugen Pfadabhängigkeit. Je länger ein Unternehmen in ein bestimmtes Modell investiert hat, desto schwerer wird der Wechsel. Pfadabhängigkeit ist kein Vorwurf. Sie ist eine Systemrealität.
+
+Transformationspfade machen diese Realität bearbeitbar. Sie beschreiben, wie ein Unternehmen von einem gegenwärtigen Wirkungsprofil zu einem zukunftsfähigen Wirkungsprofil gelangt. Ein Transformationspfad enthält Etappen, Investitionen, Rückbau alter Risiken, Aufbau neuer Kompetenzen, Lieferantenentwicklung, Datenqualität, Personalentwicklung, Produktanpassung, Governance, Risikoreduktion und Wirkungsziele. Er muss so konkret sein, dass er Entscheidungen verändert, und so lernfähig, dass er auf neue Daten reagieren kann.
+
+Impact-Controlling kann hier eine wichtige Rolle spielen. Kapitel 34 hat NWI, IOI und T-SROI als getrennte Kennzahlenrollen eingeführt. Im Transformationspfad bewertet der NWI die Netto-Wirkung des Projekts. Der IOI zeigt, welche positive Netto-Wirkung pro eingesetztem Kapital entsteht. Der T-SROI bewertet, ob aus dieser Wirkung ein systemischer Hebel und damit ein Transformationspfad entsteht [Kap. 34; I-K47-4].
+
+Transformationspfade müssen zugleich Risiken offenlegen. Ein Pfad kann scheitern, wenn Daten fehlen, Kapital falsch allokiert wird, Lieferanten nicht mitgehen, Technologie überschätzt wird, Mitarbeitende überlastet werden, Regulierung schneller kommt als geplant oder Märkte alte Anreize beibehalten. Ein wirkungsorientierter Transformationspfad enthält deshalb nicht nur Ziele, sondern Frühwarnindikatoren. Er fragt: Woran erkennen wir, dass der Pfad zu langsam, zu teuer, zu wirkungsschwach oder sozial instabil wird?
+
+Wichtig ist auch der Unterschied zwischen Transformation und Kompensation. Ein Unternehmen transformiert nicht, wenn es negative Wirkung unverändert fortsetzt und an anderer Stelle positive Projekte finanziert. Transformation verändert das eigene Wirkungsmodell. Kompensation kann in bestimmten Übergangsphasen eine Rolle spielen, ersetzt aber keinen Pfadwechsel. Die Nichtkompensationslogik und die Reverse Merit Order setzen hier die methodische Grenze [Kap. 33].
+
+Transformationspfade müssen außerdem soziale Stabilität berücksichtigen. Wenn ein Geschäftsmodell umgebaut wird, verändern sich Arbeit, Kompetenzen, Standorte, Einkommen, Identität und Sicherheit. Transformation, die Menschen übergeht, erzeugt Widerstand, Angst und Vertrauensverlust. Transformation, die Menschen beteiligt, qualifiziert und absichert, erhöht Lernfähigkeit. Das Systemmodell beschreibt dafür Übergangssysteme, Transformationsteams, Budgets, soziale Absicherung und Transition-Standards für Branchen mit hohem Transformationsdruck. Für dieses Kapitel folgt daraus: Ein Transformationspfad muss auch ein Lern- und Übergangspfad für Menschen sein.
+
+### 47.4 Unternehmen als lernende Systeme
+
+Ein Unternehmen ist zukunftsfähig, wenn es lernt, bevor der Schock es zwingt.
+
+Lernende Unternehmen warten nicht, bis negative Wirkung als Krise zurückkehrt. Sie nutzen Wirkungsdaten, Risikodaten, Lieferkettendaten, Kundenfeedback, Mitarbeitendenwissen, regulatorische Signale, wissenschaftliche Erkenntnisse und gesellschaftliche Resonanz als Frühwarnsystem. Sie behandeln Kritik nicht als Angriff, sondern als Hinweis auf blinde Flecken. Sie verstehen Transformation nicht als Imageprojekt, sondern als dauerhafte Anpassung an Wirkung.
+
+Kapitel 43 hat Führung als Rückkopplung beschrieben. Kapitel 44 hat Wirkungscontrolling als Rückführung von Daten in Entscheidungen beschrieben. Kapitel 45 hat Organisation, Kultur und Verantwortung als Bedingungen von Lernfähigkeit beschrieben. Kapitel 46 hat Lieferkettensteuerung und Datenflüsse als konkrete Wirkungshebel beschrieben. Kapitel 47 bündelt diese Bausteine: Unternehmensrisiko und Transformation entstehen dort, wo Wirkung, Daten, Führung, Organisation und Lieferketten zusammenkommen.
+
+Ein lernendes Unternehmen stellt vier Fragen wiederholt. Welche Wirkung erzeugen wir? Welche Risiken entstehen aus dieser Wirkung? Welche positive Netto-Wirkung entsteht mit welchem Mitteleinsatz? Welche Wirkungen müssen wir verändern, damit unser Geschäftsmodell zukunftsfähig bleibt? Welche Rückkopplungen zeigen uns, ob unsere Transformation wirkt?
+
+### Quellenanker: Kapitel 104 - Wirkungsmessung, Manipulation und Wirkungssimulation
+
+*Öffentliche Quelle:* [Kapitel 104 - Wirkungsmessung, Manipulation und Wirkungssimulation](https://wirkungsoekonomie.de/referenz/kapitel-104-wirkungsmessung-manipulation-und-wirkungssimulation/)
+
+Je wichtiger Wirkung wird, desto größer wird der Anreiz, Wirkung zu behaupten, zu inszenieren oder zu simulieren. Das ist kein Randproblem der Wirkungsökonomie. Es ist ihr zentraler methodischer Stresstest.
+
+Denn jede Steuerungsgröße erzeugt Anpassungsverhalten. Wenn Kapital zählt, wird Kapital optimiert. Wenn Gewinn zählt, wird Gewinn optimiert. Wenn Reichweite zählt, wird Reichweite optimiert. Wenn Wirkung zählt, wird auch Wirkung optimiert. Das kann positiv sein, wenn reale Zustände verbessert werden. Es kann aber destruktiv werden, wenn Akteure lernen, nicht die Wirkung selbst zu verbessern, sondern die Darstellung von Wirkung.
+
+Dann entsteht Wirkungssimulation.
+
+Wirkungssimulation bedeutet: Eine Handlung, Organisation, Investition, Kommunikation oder politische Maßnahme erzeugt den Anschein positiver Wirkung, ohne die zugrunde liegenden Zustände entsprechend zu verändern. Sie sieht nach Wirkung aus. Sie spricht die Sprache der Wirkung. Sie nutzt Indikatoren, Berichte, Labels, Zielbezüge, Kampagnen, Bilder, Versprechen oder Nachhaltigkeitsrhetorik. Aber sie erzeugt keine ausreichende reale Zustandsverbesserung - oder sie verdeckt negative Wirkungen an anderer Stelle.
+
+Die Wirkungsökonomie muss diese Gefahr offen benennen. Wenn sie Wirkung zur zentralen Steuerungsgröße macht, muss sie verhindern, dass Wirkung selbst zur neuen Oberfläche wird.
+
+Greenwashing, ESG-Theater, SDG-Washing, Impact-Washing, symbolische Politik, KPI-Gaming, moralische Selbsttäuschung und performative Verantwortung sind deshalb keine Nebenphänomene. Sie sind die Schattenseite jeder Ordnung, die Wirkung sichtbar macht. Je stärker Wirkung Anerkennung, Kapitalzugang, Marktposition, politische Legitimation oder Steuerentlastung beeinflusst, desto stärker wächst der Anreiz, Wirkung zu simulieren.
+
+Dieses Kapitel erklärt, warum das geschieht, welche Formen Wirkungssimulation annimmt und wie die Wirkungsökonomie sich dagegen schützen muss.
+
+### 104.1 Warum jede Kennzahl manipulierbar wird
+
+Sobald eine Kennzahl zur Steuerungsgröße wird, verändert sich das Verhalten derer, die an ihr gemessen werden. Das ist keine Besonderheit von Nachhaltigkeit. Es ist ein allgemeines Steuerungsproblem.
+
+Goodhart’s Law beschreibt diesen Zusammenhang zugespitzt: Wenn ein Maß zur Zielgröße wird, verliert es leicht seine Qualität als Maß. Campbell’s Law formuliert ähnlich, dass quantitative Indikatoren, die für soziale Entscheidungen verwendet werden, anfällig für Verfälschung und Verhaltensverzerrung werden.
+
+Das gilt für Schulnoten, Kriminalstatistiken, Krankenhauskennzahlen, Verkaufsziele, Produktivitätsvorgaben, Haushaltsmittel, Forschungsmetriken, Reichweitenzahlen und Nachhaltigkeitsindikatoren. Sobald Akteure wissen, welche Größe belohnt wird, können sie versuchen, genau diese Größe zu optimieren - unabhängig davon, ob sich die dahinterliegende Wirklichkeit verbessert.
+
+In der alten Ökonomie geschieht das ständig. Unternehmen können Gewinne verbessern, indem sie Kosten externalisieren. Plattformen können Reichweite steigern, indem sie Erregung verstärken. Verwaltungen können Mittelabfluss als Erfolg darstellen, obwohl die Wirkung unklar bleibt. Politik kann Maßnahmen zählen, ohne Zustände zu verbessern. Unternehmen können Nachhaltigkeitsberichte ausbauen, ohne ihre Steuerungslogik zu verändern.
+
+Die Wirkungsökonomie darf deshalb nicht glauben, sie sei gegen Manipulation immun, nur weil ihr Maßstab besser ist. Ein besserer Maßstab kann ebenfalls pervertiert werden, wenn er falsch operationalisiert wird.
+
+Je wertvoller Wirkung wird, desto wertvoller wird die Simulation von Wirkung.
+
+### 104.2 Wirkungssimulation als neue Form der Scheinleistung
+
+Wirkungssimulation ist eine Form von Scheinleistung. Sie erzeugt sichtbare Aktivität, Sprache, Berichte, Kampagnen oder Kennzahlen, aber keine entsprechende positive Zustandsveränderung.
+
+Sie unterscheidet sich von Irrtum. Nicht jede falsche Wirkungsannahme ist Simulation. Komplexe Systeme sind unsicher. Eine Maßnahme kann gut begründet sein und trotzdem anders wirken als erwartet. Ein Unternehmen kann ehrliche Ziele verfolgen und methodische Fehler machen. Eine Politik kann ernsthaft präventiv handeln wollen und Nebenfolgen unterschätzen.
+
+Wirkungssimulation beginnt dort, wo die Darstellung positiver Wirkung wichtiger wird als die reale Wirkung selbst. Sie beginnt, wenn ein Akteur ein Nachhaltigkeitsbild erzeugt, aber die zugrunde liegende Wirkung nicht ausreichend prüft. Sie beginnt, wenn einzelne positive Effekte hervorgehoben und zentrale negative Wirkungen verschwiegen werden. Sie beginnt, wenn Indikatoren so gewählt werden, dass sie das gewünschte Bild erzeugen. Sie beginnt, wenn Wirkungssprache zur Reputationsstrategie wird.
+
+Wirkungssimulation kann absichtlich sein. Dann ist sie Täuschung.
+
+Sie kann aber auch halbabsichtlich sein. Dann entsteht moralische Selbsttäuschung: Akteure glauben an ihre Wirkung, weil sie nur die Indikatoren sehen, die ihre Erzählung bestätigen. Sie verwechseln Absicht mit Wirkung, Aufwand mit Wirkung, Bericht mit Wirkung, Reichweite mit Wirkung oder Zielbezug mit Wirkung.
+
+Gerade diese zweite Form ist gefährlich, weil sie gesellschaftlich weit verbreitet ist. Viele Organisationen wollen gut wirken. Aber sie prüfen nicht streng genug, ob sie tatsächlich wirken.
+
+### 104.3 Greenwashing und die Illusion ökologischer Wirkung
+
+Greenwashing ist die bekannteste Form der Wirkungssimulation. Es entsteht, wenn ökologische Verantwortung behauptet, übertrieben, selektiv dargestellt oder irreführend kommuniziert wird.
+
+Die Europäische Kommission begründet ihre Green-Claims-Initiative ausdrücklich mit der Notwendigkeit, Greenwashing zu bekämpfen und Verbraucherinnen und Verbraucher vor irreführenden Umweltangaben zu schützen. Auf ihrer Green-Claims-Seite nennt sie unter anderem, dass 53 Prozent der geprüften Umweltangaben vage, irreführende oder unbegründete Informationen enthielten, 40 Prozent keine stützenden Belege hatten und die Vielzahl von Nachhaltigkeitslabels sehr unterschiedliche Transparenzniveaus aufweist.
+
+Die EU-Richtlinie 2024/825 verschärft zudem den Verbraucherschutz gegen unfaire Praktiken im Kontext grüner Transformation. Sie adressiert unter anderem Nachhaltigkeitslabel ohne Zertifizierungssystem oder öffentliche Grundlage, allgemeine Umweltbehauptungen ohne nachweisbare anerkannte hervorragende Umweltleistung, Umweltbehauptungen über das gesamte Produkt oder Unternehmen, die sich tatsächlich nur auf einen Teilaspekt beziehen, sowie Behauptungen klimaneutraler, reduzierter oder positiver Treibhausgaswirkung, wenn diese auf Kompensation beruhen.
+
+Diese Regulierung zeigt, dass Greenwashing kein bloßes Kommunikationsproblem ist. Es ist ein Steuerungsproblem. Wenn ein Produkt grün erscheint, ohne tatsächlich entsprechend zu wirken, werden Verbraucherentscheidungen verzerrt. Kapital kann falsch fließen. Verantwortliche Unternehmen verlieren Wettbewerbsvorteile. Destruktive Wirkung bleibt verdeckt. Vertrauen sinkt.
+
+Für die Wirkungsökonomie folgt daraus: Umweltwirkung darf nicht aus Sprache abgeleitet werden. Sie muss aus Daten, Kontext, Lebenszyklus, Lieferkette, Nutzung, Entsorgung, Systemwirkung und Nichtkompensation abgeleitet werden.
+
+Ein Produkt ist nicht nachhaltig, weil es so genannt wird. Es ist nur dann wirkungspositiv, wenn seine Zustandsveränderungen belastbar nachvollziehbar sind.
+
+### 104.4 ESG-Theater und Nachhaltigkeit als Bühnenbild
+
+ESG-Theater entsteht, wenn Nachhaltigkeit institutionell sichtbar wird, aber nicht tief genug in Entscheidungen zurückwirkt.
+
+Das Unternehmen berichtet. Das Portfolio klassifiziert. Die Bank fragt Daten ab. Das Management formuliert Ziele. Die Webseite zeigt SDG-Symbole. Der Bericht enthält Klimakapitel, Diversity-Ziele, Governance-Kennzahlen und Lieferkettenversprechen. Alles sieht nach Verantwortung aus.
+
+Aber die Kernfrage bleibt offen: Was verändert sich dadurch tatsächlich?
+
+ESG-Theater ist nicht automatisch Betrug. Oft ist es eine Zwischenform. Daten werden erhoben, aber nicht in Preise, Steuern, Kapitalzugang, Beschaffung, Managementboni oder Produktentscheidungen zurückgeführt. Nachhaltigkeit wird sichtbar, aber nicht steuernd. Die Organisation erfüllt Erwartungen, ohne ihre innere Logik ausreichend zu verändern.
+
+Die Europäische Wertpapier- und Marktaufsichtsbehörde ESMA hat Greenwashing im Finanzsektor als Aufsichtsthema behandelt. Ihr Final Report on Greenwashing von 2024 bewertet die Rolle der Aufsicht bei der Minderung von Greenwashing-Risiken und beschreibt eine schrittweise Verbesserung der Aufsichtspraxis in den kommenden Jahren.
+
+Dass Aufsichtsbehörden Greenwashing im Finanzmarkt ausdrücklich adressieren, zeigt: Nachhaltigkeitssprache ist wirtschaftlich relevant geworden. Wenn Fonds, Banken, Versicherungen, Ratings oder Finanzprodukte mit Nachhaltigkeit werben, beeinflusst dies Kapitalflüsse. Damit entstehen neue Täuschungsanreize.
+
+Die Wirkungsökonomie muss deshalb zwischen ESG-Sichtbarkeit und Wirkungsrückkopplung unterscheiden. Ein ESG-Bericht kann notwendige Daten liefern. Aber er ist noch kein Beweis positiver Wirkung. Ein ESG-Rating kann Hinweise geben. Aber es ersetzt keine Wirkungsanalyse. Ein nachhaltiger Fondsname kann Kapital lenken. Aber er darf keine Wirkung behaupten, die nicht belegt ist.
+
+ESG-Theater endet erst dort, wo Nachhaltigkeitsdaten reale Entscheidungen verändern und negative Wirkungen nicht durch positive Einzelbilder verdeckt werden.
+
+### Quellenanker: Anschlussbegriff / WÖk-Präzisierungsbegriff
+
+*Öffentliche Quelle:* [Anschlussbegriff / WÖk-Präzisierungsbegriff](https://wirkungsoekonomie.de/begriffe/rebound-effekt/)
+
+Der Rebound-Effekt beschreibt, dass Effizienzgewinne durch verändertes Verhalten, Mehrnutzung oder neue Nachfrage teilweise oder ganz wieder aufgehoben werden.
+
+Auf einen Blick
+
+Der Rebound-Effekt beschreibt, dass Effizienzgewinne durch verändertes Verhalten, Mehrnutzung oder neue Nachfrage teilweise oder ganz wieder aufgehoben werden.
+
+Der Begriff gehört zum Bereich Systemeffekte, Nachhaltigkeit, Wirkungsmessung & Transformation und dient der präzisen Wirkungsprüfung.
+
+Wirkungsökonomisch fragt „Rebound-Effekt“ nach Zustandsveränderung, Bilanzgrenze, Datenqualität und Rückkopplung.
+
+Er darf nicht als isoliertes Etikett genutzt werden, sondern braucht Bezug zu Mensch, Planet und Demokratie. Er ist besonders anschlussfähig an Wirkung, Wirkungspotenzial, Wirkungsrisiko.
+
+Definition
+
+Was bedeutet der Begriff?
+
+Der Rebound-Effekt beschreibt eine Rückwirkung von Effizienzsteigerungen. Eine Maßnahme senkt den Ressourcen-, Energie-, Zeit- oder Kostenaufwand pro Nutzungseinheit. Dadurch wird die Nutzung attraktiver. Menschen, Unternehmen oder Märkte nutzen das effizientere Angebot häufiger, intensiver oder an anderer Stelle zusätzlich. Das Ergebnis: Die erwartete Einsparung fällt geringer aus als berechnet.
+
+Ein sparsameres Auto verbraucht weniger Kraftstoff pro Kilometer. Wenn dadurch aber mehr gefahren wird, sinkt der tatsächliche Kraftstoffverbrauch weniger stark als technisch möglich. Eine effizientere Heizung senkt Kosten. Wenn deshalb stärker geheizt wird, wird ein Teil der Energieeinsparung wieder aufgezehrt. Effizientere digitale Infrastruktur kann einzelne Rechenoperationen günstiger machen. Wenn dadurch aber massiv mehr KI-Anwendungen, Streaming oder Datenverarbeitung genutzt werden, kann der Gesamtverbrauch steigen.
+
+Der Rebound-Effekt ist kein Argument gegen Effizienz. Er ist ein Hinweis darauf, dass Effizienz allein nicht genügt, wenn das Ziel absolute Reduktion, Ressourcenschutz oder positive Netto-Wirkung ist.
+
+Wirkungsökonomie
+
+Einordnung in der Wirkungsökonomie
+
+Der Rebound-Effekt zeigt, warum die Wirkungsökonomie technische Verbesserung, Wirkungspotenzial, tatsächliche Wirkung, Nebenwirkung, Netto-Wirkung und Transformationswirkung trennt. Eine Effizienzmaßnahme kann ein positives Wirkungspotenzial haben; ob daraus positive Netto-Wirkung entsteht, hängt davon ab, wie Menschen, Märkte, Organisationen und Systeme darauf reagieren. Effizienz ist ein Mittel. Positive Netto-Wirkung ist das Ziel.
+
+Verwendung
+
+Verwendung
+
+Den Begriff verwenden, wenn Effizienzgewinne durch Mehrnutzung, indirekten Mehrkonsum, Nachfrageausweitung oder systemische Rückkopplungen die erwartete Einsparung verringern. Nicht als Argument gegen Effizienz verwenden, sondern als Prüfhinweis für tatsächliche Netto-Wirkung.
+
+Abgrenzung
+
+Abgrenzung
+
+Effizienz: Effizienz bedeutet weniger Einsatz pro Einheit. Rebound beschreibt, dass dadurch die Gesamtnutzung steigen kann.
+
+Suffizienz: Suffizienz zielt auf angemessenen, begrenzten Verbrauch. Rebound zeigt, warum Effizienz ohne Suffizienz oft nicht reicht.
+
+Nebenwirkung: Rebound ist eine spezielle Form von Nebenwirkung oder Rückwirkung, die durch veränderte Nutzung nach Effizienzgewinnen entsteht.
+
+Wechselwirkung: Wechselwirkungen sind allgemeine gegenseitige Effekte zwischen Systemteilen. Rebound ist eine bestimmte Wechselwirkung zwischen Effizienz, Kosten, Verhalten und Nachfrage.
+
+Backfire: Backfire ist ein Extremfall des Rebounds, bei dem die Einsparung überkompensiert wird.
+
+Jevons-Paradox: Das Jevons-Paradox beschreibt historisch, dass Effizienzsteigerungen bei einer Ressource zu steigender Gesamtnachfrage nach dieser Ressource führen können. Der Rebound-Effekt ist der breitere moderne Oberbegriff für solche Rückwirkungen.
+
+Greenwashing: Greenwashing ist die irreführende Darstellung positiver Umweltwirkung. Rebound kann Greenwashing begünstigen, ist aber selbst ein realer Wirkmechanismus.
+
+Dunning-Kruger-Effekt: Dunning-Kruger beschreibt Selbstüberschätzung bei geringer Kompetenz. Rebound beschreibt eine systemische Rückwirkung nach Effizienzgewinnen.
+
+Vertiefung
+
+Vertiefte Begriffsstruktur
+
+Auf einen Blick
+
+Der Rebound-Effekt zeigt, dass Effizienz nicht automatisch zu weniger Verbrauch führt.
+
+Wenn etwas günstiger, bequemer oder effizienter wird, kann es häufiger oder intensiver genutzt werden.
+
+Erwartete Einsparungen können teilweise, vollständig oder in Ausnahmefällen sogar überkompensiert werden.
+
+Rebound-Effekte können direkt, indirekt oder systemisch auftreten.
+
+Wirkungsökonomisch ist der Rebound-Effekt zentral, weil Wirkung nicht identisch mit technischer Effizienz ist.
+
+Im WÖk-Stufenmodell gehört Rebound zu Nebenwirkungen, Wechselwirkungen und rückschlagenden Folgen.
+
+Maßnahmen müssen an tatsächlicher Netto-Wirkung gemessen werden, nicht nur an theoretischem Einsparpotenzial.
+
+
+### 7.9 Konsequenzen für die WÖk-Architektur
+
+Aus dieser Vorlesung fließen drei Punkte zurück in den WÖk-Korpus:
+
+- Glossar und Reader sollten Nebenwirkungen, Rebound und Zielkonflikte mit Wirkung, Wirkungspotenzial, Wirkungsrisiko und Rückkopplung verlinken.
+- Fallbeispiele aus Website und Journal als Prüfungsfälle ohne öffentliche Antwortlogik markieren.
+- Wo Begriffe noch unscharf sind, Rückfluss in zentrale Begriffsseiten und Erklärseiten anlegen.
+
+### 7.10 Kurzfazit
+
+Nebenwirkungen, Rebound und Zielkonflikte ist kein Randthema. Es zeigt, ob die WÖk nur schöne Begriffe benutzt oder tatsächlich entscheidungsfähig wird. Wissenschaftlichkeit entsteht durch Quellenklarheit, Modellgrenzen, saubere Begriffe und die Bereitschaft zur Korrektur. Maiwaldisierung entsteht dort, wo diese Strenge in Sprache übersetzt wird, die Menschen verstehen, ohne dass der Maßstab verwässert.
+
+
+## 8. Prüfungsrelevanz
+
+Diese Vorlesung ist prüfungsrelevant, aber die eigentliche Antwortlogik gehört **nicht** in das öffentliche Studienskript. Zertifikatsfragen, CorrectAnswer, Scoring-Regeln und Fallrubrics werden separat in einem geschützten, nicht öffentlichen Prüfungsbereich der Akademie-App gepflegt.
+
+Für den Fragenpool sind besonders geeignet:
+
+- Begriffstrennung: Wirkung, Wirkungspotenzial, Wirkungsrisiko.
+- Anwendungsszenarien: Auslöser, Wirkpfad, Wirkungsempfänger und Rückkopplung an einem Fall.
+- Missverständnisse: Reichweite, Aktivität, Reporting oder Absicht als Wirkung auszugeben.
+- Transfer: positive Netto-Wirkung unter Nichtkompensation und, wo passend, Reverse Merit Order begründen.
+
+## 9. Quellen
+
+### WÖk-Quellen
+
+- [Die neue Ordnung des Wohlstands](https://wirkungsoekonomie.de/buch.html) — aktuelles Grundlagenwerk der Wirkungsökonomie.
+- [WÖk-Referenz](https://wirkungsoekonomie.de/referenz/) — öffentliche Kapitel- und Volltextreferenz.
+- [Glossar der Wirkungsökonomie](https://wirkungsoekonomie.de/glossar.html) — öffentliche Begriffsdefinitionen und Abgrenzungen.
+- [WÖk-Werkzeuge](https://wirkungsoekonomie.de/werkzeuge/) — öffentliche Methoden-, Scorecard- und Controlling-Werkzeuge.
+- [WÖk-Journal](https://wirkungsoekonomie.de/blog.html) — Dossiers und Fallanalysen.
+
+### Externe Quellen fuer die V1-Fassung
+
+- United Nations (2015): [*Transforming our world: the 2030 Agenda for Sustainable Development*](https://sdgs.un.org/2030agenda).
+- European Commission: [Corporate sustainability reporting](https://finance.ec.europa.eu/financial-markets/company-reporting-and-auditing/company-reporting/corporate-sustainability-reporting_en), [EU taxonomy for sustainable activities](https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en) und [Digital Product Passport](https://single-market-economy.ec.europa.eu/news/commission-launches-consultation-digital-product-passport-2025-04-09_en), soweit fuer das Thema einschlaegig.
+- EFRAG: [Sustainability reporting und ESRS](https://www.efrag.org/en/sustainability-reporting), soweit fuer das Thema einschlaegig.
+- Global Reporting Initiative: [GRI Standards](https://www.globalreporting.org/standards/), soweit fuer Berichts- und Indikatorenfragen einschlaegig.
+- Fachliteratur zu Wirkungslogik, Evaluation, Systemtheorie, Resilienz, Governance, Diffusion, Vertrauen oder Controlling je nach Thema.
+
+## V1-Finalisierung: Vertiefung, Anwendung und Evidenz
+
+Dieses Studienskript ist die fachlich finale Codex-V1-Fassung fuer den Akademie-Reader und die oeffentliche Bibliothek. Claude uebernimmt danach Satz, CI/CD, PDF/Reader-Freigabe und die abschliessende Lektoratsabnahme.
+
+### Finaler Leseauftrag
+
+Dieses Skript zu **V15 Nebenwirkungen, Rebound und Zielkonflikte** ist als Langformtext angelegt. Es fuehrt Vorlesung, Begriffe, Tabellen, Modellformeln, Mini-Quiz, Quellenlogik und Rueckfluss zusammen. Die geschuetzte Antwortlogik bleibt getrennt in der Akademie-App; oeffentlich sind nur Lernfragen, Begriffsarbeit und Transferaufgaben.
+
+Der Abschluss liest **Nebenwirkungen, Rebound und Zielkonflikte** im Feld **Grundstudium Wirkungsoekonomie**. Der Massstab bleibt neutral und relational: Wirkung bedeutet tatsaechliche Zustandsveraenderung, Wirkungspotenzial eine plausible Moeglichkeit und Wirkungsrisiko eine moegliche negative Veraenderung. Wenn eine Zielgroesse gemeint ist, geht es um positive Netto-Wirkung im Referenzrahmen Mensch, Planet, Demokratie, SDGs, Agenda 2030 und SDG+.
+
+### Abschlussmatrix
+
+| Pruefebene | Anwendung in V15 | Grenze |
+|---|---|---|
+| Begriff | Wirkung, Wirkungspotenzial, Wirkungsrisiko und positive Netto-Wirkung getrennt lesen. | Keine Absicht als Wirkung ausgeben. |
+| Wirkpfad | Ausloeser, Mechanismus, Empfaenger, Zustand und Rueckkopplung verbinden. | Keine lineare Erfolgsgeschichte erfinden. |
+| Evidenz | begriffliche Praezision, Fallbeschreibung, Quellenklarheit, Plausibilitaet und offene Unsicherheit pruefen. | Keine Scheingenauigkeit erzeugen. |
+| Bewertung | SDGs, Agenda 2030, SDG+, Nichtkompensation und Reverse Merit Order passend einsetzen. | Keine Durchschnittslogik gegen rote Linien. |
+| Steuerung | Ergebnis in Begriff, Fallbewertung, Wirkpfad, rote Linie, Quellenbeurteilung oder Rueckkopplungsregel uebersetzen. | Kein Reporting ohne Rueckkopplung. |
+
+### Schlusslesart: vom Kapitel zur Entscheidung
+
+Die folgenden Abschnitte verdichten vorhandene Kapitel zu einer eigenstaendigen Lesart. Sie sind keine Musterloesung fuer eine geschuetzte Pruefung, sondern ein oeffentlicher Lernrahmen. Im Mittelpunkt stehen Bewertungsgrenzen, Nichtkompensation, Reverse Merit Order und positive Netto-Wirkung; Menschen werden nicht bewertet, sondern Wirkpfade, Zustandsveraenderungen, Risiken und institutionelle Bedingungen.
+
+**Begriffliche Sicherung.** Bei **Einleitung / Wirkungsfrage** wird **Nebenwirkungen, Rebound und Zielkonflikte** als Arbeitsfrage im Feld Bewertungsgrenzen, Nichtkompensation, Reverse Merit Order und positive Netto-Wirkung lesbar. Die wirkungsoekonomische Frage lautet: Welche reale Veraenderung wird moeglich, welche bleibt nur Potenzial und wo entsteht ein Wirkungsrisiko? Diese Unterscheidung schuetzt vor Impact-Washing, weil sie Absicht, Aktivitaet, Reichweite und Wirkung auseinanderhaelt.
+
+Eine Kommune, ein Unternehmen oder eine Bildungsorganisation will **Nebenwirkungen, Rebound und Zielkonflikte** praktisch anwenden. Der erste Schritt ist nicht die Auswahl eines Instruments, sondern die Klaerung der Zustandsveraenderung. Bei **Einleitung / Wirkungsfrage** muss deshalb benannt werden, wer betroffen ist, welcher Zustand sich veraendert, welche Frist gilt und welche Gegenbeobachtung die Annahme widerlegen wuerde. Erst danach entsteht eine begruendete Entscheidung im Feld Begriff, Fallbewertung, Wirkpfad, rote Linie, Quellenbeurteilung oder Rueckkopplungsregel.
+
+**Fallpruefung.** Wenn eine Kommune eine bestehende Massnahme neu priorisieren will, beginnt die Analyse bei Empfaengern, Wirkraum, Zeitraum und Datenquelle. Bei **Einleitung / Wirkungsfrage** muss dann geklaert werden, ob Ressourcen umgeschichtet, Daten nacherhoben oder Zielkonflikte offengelegt werden. Eine tragfaehige Antwort benennt mindestens eine Quelle, eine offene Unsicherheit, eine moegliche Gegenbeobachtung und die Entscheidung, die nach der Bewertung geaendert wird.
+
+**Wirkpfadpruefung.** In V15 muss **Kernaussage** immer mit Empfaengern gelesen werden. Wirkung entsteht nicht beim Sender, sondern an veraenderten Zustaenden von Menschen, Oekosystemen, Institutionen, Oeffentlichkeit oder kuenftigen Handlungsspielraeumen. Darum reicht es nicht, interne Aktivitaeten zu dokumentieren. Entscheidend ist, ob sich ein Zustand nachvollziehbar veraendert und ob diese Veraenderung im Referenzrahmen Mensch, Planet, Demokratie, SDGs, Agenda 2030 und SDG+ tragfaehig bewertet werden kann.
+
+Ein Bericht behauptet, die Massnahme zu **Nebenwirkungen, Rebound und Zielkonflikte** sei erfolgreich. Die WOE-Lesart fragt bei **Kernaussage** nach belastbaren Nachweisen: begriffliche Praezision, Fallbeschreibung, Quellenklarheit, Plausibilitaet und offene Unsicherheit. Wenn diese Nachweise fehlen, bleibt die Aussage Wirkungspotenzial oder Kommunikationsbehauptung. Sie kann wichtig sein, aber sie ist noch keine belegte Wirkung.
+
+**Fallpruefung.** Wenn ein Unternehmen ein Produkt, einen Prozess oder eine Investition wirkungsbezogen bewerten will, beginnt die Analyse bei Empfaengern, Wirkraum, Zeitraum und Datenquelle. Bei **Kernaussage** muss dann geklaert werden, welche Entscheidung nach der Bewertung tatsaechlich anders ausfaellt. Eine tragfaehige Antwort benennt mindestens eine Quelle, eine offene Unsicherheit, eine moegliche Gegenbeobachtung und die Entscheidung, die nach der Bewertung geaendert wird.
+
+Fuer die Bewertung reicht kein Summenscore, der zentrale Schaeden mit bequemen Pluspunkten verrechnet. Nichtkompensation und Reverse Merit Order markieren, wo rote Linien, demokratische Grundbedingungen oder planetare Grenzen Vorrang vor Durchschnittslogik haben. So bleibt positive Netto-Wirkung eine anspruchsvolle Zielgroesse und wird nicht zur dekorativen Formel.
+
+**Evidenzfenster.** Wissenschaftliche Anschlussfaehigkeit entsteht hier durch Quellenklarheit. Bei **Quelltext und fachliche Grundlegung** werden interne WOE-Begriffe nicht als Ersatz fuer Belege benutzt, sondern mit WOE-Bewertungslogik, SDG+, rote Linien, NWI/T-SROI-Abgrenzung und Schutzgueter verbunden. Wo die Datenlage offen bleibt, wird das offengelegt. Wo eine Aussage nur plausibel ist, bleibt sie als Wirkungspotenzial markiert. Wo ein Schaden eine rote Linie beruehrt, greift Nichtkompensation vor Durchschnittslogik.
+
+In einer kontroversen Entscheidung wirkt **Quelltext und fachliche Grundlegung** als Pruefpunkt fuer Ambivalenz. Ein Nutzen fuer eine Gruppe kann mit Risiken fuer andere Wirkungsempfaenger einhergehen. Das Skript verlangt deshalb, positive und negative Zustandsveraenderungen getrennt zu fuehren, bevor von positiver Netto-Wirkung gesprochen wird.
+
+**Fallpruefung.** Wenn eine Bildungs- oder Forschungseinrichtung eine Wirkungsaussage fuer Lernende und Praxispartner pruefbar machen will, beginnt die Analyse bei Empfaengern, Wirkraum, Zeitraum und Datenquelle. Bei **Quelltext und fachliche Grundlegung** muss dann geklaert werden, welche Begriffe, Quellen und Grenzen im Material sichtbar bleiben muessen. Eine tragfaehige Antwort benennt mindestens eine Quelle, eine offene Unsicherheit, eine moegliche Gegenbeobachtung und die Entscheidung, die nach der Bewertung geaendert wird.
+
+Der Rueckfluss in den WOE-Korpus liegt hier in klaren Begriffen, sauber verlinkten Quellen und benannten Forschungsfragen. Wo Glossar, Werkzeuge, Journal oder Reader noch doppeldeutig bleiben, sollte **Nebenwirkungen, Rebound und Zielkonflikte** nicht als fertige Gewissheit auftreten, sondern als pruefbarer Lernstand mit Korrekturpfad.
+
+**Bewertungsgrenze.** In Grundstudium Wirkungsoekonomie wird **Drei Fallen auf dem Weg zur guten Wirkung** erst steuerungsfaehig, wenn daraus eine Entscheidung folgt. Die Grundbegriffe muessen in spaeteren Modulen wiedererkennbar bleiben. Ohne diese Rueckkopplung bleibt Reporting eine Beschreibung. Mit Rueckkopplung wird aus Bewertung eine veraenderte Routine: ein anderer Prozess, ein geaenderter Anreiz, eine bessere Datenpflicht, eine korrigierte Kommunikation oder eine neue Priorisierung.
+
+Die typische Fehlstelle bei **Nebenwirkungen, Rebound und Zielkonflikte** liegt darin, schwere Schaeden mit bequemen Pluspunkten zu verrechnen. Bei **Drei Fallen auf dem Weg zur guten Wirkung** wird diese Fehlstelle konkret: Ein scheinbar plausibler Befund darf nicht zur Abkuerzung werden. Quellen, Systemgrenzen, Unsicherheit und Rueckkopplung bleiben sichtbar.
+
+**Fallpruefung.** Wenn eine Kommune eine bestehende Massnahme neu priorisieren will, beginnt die Analyse bei Empfaengern, Wirkraum, Zeitraum und Datenquelle. Bei **Drei Fallen auf dem Weg zur guten Wirkung** muss dann geklaert werden, ob Ressourcen umgeschichtet, Daten nacherhoben oder Zielkonflikte offengelegt werden. Eine tragfaehige Antwort benennt mindestens eine Quelle, eine offene Unsicherheit, eine moegliche Gegenbeobachtung und die Entscheidung, die nach der Bewertung geaendert wird.
+
+**Steuerungsfolge.** Die Grenze gegen Scheingenauigkeit verlaeuft bei **Nebenwirkungen: die ungewollten Begleiter** nicht zwischen Optimismus und Pessimismus. Sie verlaeuft zwischen offengelegter Unsicherheit und rhetorischer Sicherheit. Wer **Nebenwirkungen, Rebound und Zielkonflikte** belastbar anwenden will, benennt Systemgrenze, Zeitraum, Vergleichspunkt und offene Gegenhypothese. Gerade dadurch bleibt das Skript anschlussfaehig fuer Forschung, Praxis und spaetere Revision.
+
+Fuer die Pruefung ist **Nebenwirkungen: die ungewollten Begleiter** dann verstanden, wenn daraus eine belastbare Fallantwort entsteht. Eine gute Antwort unterscheidet Beobachtung, Kausalannahme, Bewertung und Steuerungsfolge. Sie bewertet keine Menschen, sondern Wirkpfade, Zustandsveraenderungen, Risiken und institutionelle Bedingungen.
+
+**Fallpruefung.** Wenn ein Unternehmen ein Produkt, einen Prozess oder eine Investition wirkungsbezogen bewerten will, beginnt die Analyse bei Empfaengern, Wirkraum, Zeitraum und Datenquelle. Bei **Nebenwirkungen: die ungewollten Begleiter** muss dann geklaert werden, welche Entscheidung nach der Bewertung tatsaechlich anders ausfaellt. Eine tragfaehige Antwort benennt mindestens eine Quelle, eine offene Unsicherheit, eine moegliche Gegenbeobachtung und die Entscheidung, die nach der Bewertung geaendert wird.
+
+Fuer die Bewertung reicht kein Summenscore, der zentrale Schaeden mit bequemen Pluspunkten verrechnet. Nichtkompensation und Reverse Merit Order markieren, wo rote Linien, demokratische Grundbedingungen oder planetare Grenzen Vorrang vor Durchschnittslogik haben. So bleibt positive Netto-Wirkung eine anspruchsvolle Zielgroesse und wird nicht zur dekorativen Formel.
+
+**Transferhinweis.** Bei **Nebenwirkungen ernst nehmen** wird **Nebenwirkungen, Rebound und Zielkonflikte** als Arbeitsfrage im Feld Bewertungsgrenzen, Nichtkompensation, Reverse Merit Order und positive Netto-Wirkung lesbar. Die wirkungsoekonomische Frage lautet: Welche reale Veraenderung wird moeglich, welche bleibt nur Potenzial und wo entsteht ein Wirkungsrisiko? Diese Unterscheidung schuetzt vor Impact-Washing, weil sie Absicht, Aktivitaet, Reichweite und Wirkung auseinanderhaelt.
+
+Eine Kommune, ein Unternehmen oder eine Bildungsorganisation will **Nebenwirkungen, Rebound und Zielkonflikte** praktisch anwenden. Der erste Schritt ist nicht die Auswahl eines Instruments, sondern die Klaerung der Zustandsveraenderung. Bei **Nebenwirkungen ernst nehmen** muss deshalb benannt werden, wer betroffen ist, welcher Zustand sich veraendert, welche Frist gilt und welche Gegenbeobachtung die Annahme widerlegen wuerde. Erst danach entsteht eine begruendete Entscheidung im Feld Begriff, Fallbewertung, Wirkpfad, rote Linie, Quellenbeurteilung oder Rueckkopplungsregel.
+
+**Fallpruefung.** Wenn eine Bildungs- oder Forschungseinrichtung eine Wirkungsaussage fuer Lernende und Praxispartner pruefbar machen will, beginnt die Analyse bei Empfaengern, Wirkraum, Zeitraum und Datenquelle. Bei **Nebenwirkungen ernst nehmen** muss dann geklaert werden, welche Begriffe, Quellen und Grenzen im Material sichtbar bleiben muessen. Eine tragfaehige Antwort benennt mindestens eine Quelle, eine offene Unsicherheit, eine moegliche Gegenbeobachtung und die Entscheidung, die nach der Bewertung geaendert wird.
+
+Der Rueckfluss in den WOE-Korpus liegt hier in klaren Begriffen, sauber verlinkten Quellen und benannten Forschungsfragen. Wo Glossar, Werkzeuge, Journal oder Reader noch doppeldeutig bleiben, sollte **Nebenwirkungen, Rebound und Zielkonflikte** nicht als fertige Gewissheit auftreten, sondern als pruefbarer Lernstand mit Korrekturpfad.
+
+### Vertiefungsrunde 2: Anschluss an Praxis und Forschung
+
+Diese Runde wechselt den Blickwinkel, damit der Schlussblock nicht nur wiederholt, sondern Leseentscheidungen vorbereitet: Was ist belegt, was bleibt Potenzial, welche Nebenwirkung ist relevant und welche Steuerungsfolge wird daraus abgeleitet?
+
+**Rueckflussnotiz.** In V15 muss **Der Rebound-Effekt** immer mit Empfaengern gelesen werden. Wirkung entsteht nicht beim Sender, sondern an veraenderten Zustaenden von Menschen, Oekosystemen, Institutionen, Oeffentlichkeit oder kuenftigen Handlungsspielraeumen. Darum reicht es nicht, interne Aktivitaeten zu dokumentieren. Entscheidend ist, ob sich ein Zustand nachvollziehbar veraendert und ob diese Veraenderung im Referenzrahmen Mensch, Planet, Demokratie, SDGs, Agenda 2030 und SDG+ tragfaehig bewertet werden kann.
+
+Ein Bericht behauptet, die Massnahme zu **Nebenwirkungen, Rebound und Zielkonflikte** sei erfolgreich. Die WOE-Lesart fragt bei **Der Rebound-Effekt** nach belastbaren Nachweisen: begriffliche Praezision, Fallbeschreibung, Quellenklarheit, Plausibilitaet und offene Unsicherheit. Wenn diese Nachweise fehlen, bleibt die Aussage Wirkungspotenzial oder Kommunikationsbehauptung. Sie kann wichtig sein, aber sie ist noch keine belegte Wirkung.
+
+**Fallpruefung.** Wenn eine Kommune eine bestehende Massnahme neu priorisieren will, beginnt die Analyse bei Empfaengern, Wirkraum, Zeitraum und Datenquelle. Bei **Der Rebound-Effekt** muss dann geklaert werden, ob Ressourcen umgeschichtet, Daten nacherhoben oder Zielkonflikte offengelegt werden. Eine tragfaehige Antwort benennt mindestens eine Quelle, eine offene Unsicherheit, eine moegliche Gegenbeobachtung und die Entscheidung, die nach der Bewertung geaendert wird.
+
+**Pruefungsimpuls.** Wissenschaftliche Anschlussfaehigkeit entsteht hier durch Quellenklarheit. Bei **Warum der Rebound so oft übersehen wird** werden interne WOE-Begriffe nicht als Ersatz fuer Belege benutzt, sondern mit WOE-Bewertungslogik, SDG+, rote Linien, NWI/T-SROI-Abgrenzung und Schutzgueter verbunden. Wo die Datenlage offen bleibt, wird das offengelegt. Wo eine Aussage nur plausibel ist, bleibt sie als Wirkungspotenzial markiert. Wo ein Schaden eine rote Linie beruehrt, greift Nichtkompensation vor Durchschnittslogik.
+
+In einer kontroversen Entscheidung wirkt **Warum der Rebound so oft übersehen wird** als Pruefpunkt fuer Ambivalenz. Ein Nutzen fuer eine Gruppe kann mit Risiken fuer andere Wirkungsempfaenger einhergehen. Das Skript verlangt deshalb, positive und negative Zustandsveraenderungen getrennt zu fuehren, bevor von positiver Netto-Wirkung gesprochen wird.
+
+**Fallpruefung.** Wenn ein Unternehmen ein Produkt, einen Prozess oder eine Investition wirkungsbezogen bewerten will, beginnt die Analyse bei Empfaengern, Wirkraum, Zeitraum und Datenquelle. Bei **Warum der Rebound so oft übersehen wird** muss dann geklaert werden, welche Entscheidung nach der Bewertung tatsaechlich anders ausfaellt. Eine tragfaehige Antwort benennt mindestens eine Quelle, eine offene Unsicherheit, eine moegliche Gegenbeobachtung und die Entscheidung, die nach der Bewertung geaendert wird.
+
+Fuer die Bewertung reicht kein Summenscore, der zentrale Schaeden mit bequemen Pluspunkten verrechnet. Nichtkompensation und Reverse Merit Order markieren, wo rote Linien, demokratische Grundbedingungen oder planetare Grenzen Vorrang vor Durchschnittslogik haben. So bleibt positive Netto-Wirkung eine anspruchsvolle Zielgroesse und wird nicht zur dekorativen Formel.
+
+**Begriffliche Sicherung.** In Grundstudium Wirkungsoekonomie wird **Ein Beispiel zum Rebound** erst steuerungsfaehig, wenn daraus eine Entscheidung folgt. Die Grundbegriffe muessen in spaeteren Modulen wiedererkennbar bleiben. Ohne diese Rueckkopplung bleibt Reporting eine Beschreibung. Mit Rueckkopplung wird aus Bewertung eine veraenderte Routine: ein anderer Prozess, ein geaenderter Anreiz, eine bessere Datenpflicht, eine korrigierte Kommunikation oder eine neue Priorisierung.
+
+Die typische Fehlstelle bei **Nebenwirkungen, Rebound und Zielkonflikte** liegt darin, schwere Schaeden mit bequemen Pluspunkten zu verrechnen. Bei **Ein Beispiel zum Rebound** wird diese Fehlstelle konkret: Ein scheinbar plausibler Befund darf nicht zur Abkuerzung werden. Quellen, Systemgrenzen, Unsicherheit und Rueckkopplung bleiben sichtbar.
+
+**Fallpruefung.** Wenn eine Bildungs- oder Forschungseinrichtung eine Wirkungsaussage fuer Lernende und Praxispartner pruefbar machen will, beginnt die Analyse bei Empfaengern, Wirkraum, Zeitraum und Datenquelle. Bei **Ein Beispiel zum Rebound** muss dann geklaert werden, welche Begriffe, Quellen und Grenzen im Material sichtbar bleiben muessen. Eine tragfaehige Antwort benennt mindestens eine Quelle, eine offene Unsicherheit, eine moegliche Gegenbeobachtung und die Entscheidung, die nach der Bewertung geaendert wird.
+
+Der Rueckfluss in den WOE-Korpus liegt hier in klaren Begriffen, sauber verlinkten Quellen und benannten Forschungsfragen. Wo Glossar, Werkzeuge, Journal oder Reader noch doppeldeutig bleiben, sollte **Nebenwirkungen, Rebound und Zielkonflikte** nicht als fertige Gewissheit auftreten, sondern als pruefbarer Lernstand mit Korrekturpfad.
+
+**Wirkpfadpruefung.** Die Grenze gegen Scheingenauigkeit verlaeuft bei **Zielkonflikte** nicht zwischen Optimismus und Pessimismus. Sie verlaeuft zwischen offengelegter Unsicherheit und rhetorischer Sicherheit. Wer **Nebenwirkungen, Rebound und Zielkonflikte** belastbar anwenden will, benennt Systemgrenze, Zeitraum, Vergleichspunkt und offene Gegenhypothese. Gerade dadurch bleibt das Skript anschlussfaehig fuer Forschung, Praxis und spaetere Revision.
+
+Fuer die Pruefung ist **Zielkonflikte** dann verstanden, wenn daraus eine belastbare Fallantwort entsteht. Eine gute Antwort unterscheidet Beobachtung, Kausalannahme, Bewertung und Steuerungsfolge. Sie bewertet keine Menschen, sondern Wirkpfade, Zustandsveraenderungen, Risiken und institutionelle Bedingungen.
+
+**Fallpruefung.** Wenn eine Kommune eine bestehende Massnahme neu priorisieren will, beginnt die Analyse bei Empfaengern, Wirkraum, Zeitraum und Datenquelle. Bei **Zielkonflikte** muss dann geklaert werden, ob Ressourcen umgeschichtet, Daten nacherhoben oder Zielkonflikte offengelegt werden. Eine tragfaehige Antwort benennt mindestens eine Quelle, eine offene Unsicherheit, eine moegliche Gegenbeobachtung und die Entscheidung, die nach der Bewertung geaendert wird.
+
+**Evidenzfenster.** Bei **Zielkonflikte ehrlich abwägen** wird **Nebenwirkungen, Rebound und Zielkonflikte** als Arbeitsfrage im Feld Bewertungsgrenzen, Nichtkompensation, Reverse Merit Order und positive Netto-Wirkung lesbar. Die wirkungsoekonomische Frage lautet: Welche reale Veraenderung wird moeglich, welche bleibt nur Potenzial und wo entsteht ein Wirkungsrisiko? Diese Unterscheidung schuetzt vor Impact-Washing, weil sie Absicht, Aktivitaet, Reichweite und Wirkung auseinanderhaelt.
+
+Eine Kommune, ein Unternehmen oder eine Bildungsorganisation will **Nebenwirkungen, Rebound und Zielkonflikte** praktisch anwenden. Der erste Schritt ist nicht die Auswahl eines Instruments, sondern die Klaerung der Zustandsveraenderung. Bei **Zielkonflikte ehrlich abwägen** muss deshalb benannt werden, wer betroffen ist, welcher Zustand sich veraendert, welche Frist gilt und welche Gegenbeobachtung die Annahme widerlegen wuerde. Erst danach entsteht eine begruendete Entscheidung im Feld Begriff, Fallbewertung, Wirkpfad, rote Linie, Quellenbeurteilung oder Rueckkopplungsregel.
+
+**Fallpruefung.** Wenn ein Unternehmen ein Produkt, einen Prozess oder eine Investition wirkungsbezogen bewerten will, beginnt die Analyse bei Empfaengern, Wirkraum, Zeitraum und Datenquelle. Bei **Zielkonflikte ehrlich abwägen** muss dann geklaert werden, welche Entscheidung nach der Bewertung tatsaechlich anders ausfaellt. Eine tragfaehige Antwort benennt mindestens eine Quelle, eine offene Unsicherheit, eine moegliche Gegenbeobachtung und die Entscheidung, die nach der Bewertung geaendert wird.
+
+Fuer die Bewertung reicht kein Summenscore, der zentrale Schaeden mit bequemen Pluspunkten verrechnet. Nichtkompensation und Reverse Merit Order markieren, wo rote Linien, demokratische Grundbedingungen oder planetare Grenzen Vorrang vor Durchschnittslogik haben. So bleibt positive Netto-Wirkung eine anspruchsvolle Zielgroesse und wird nicht zur dekorativen Formel.
+
+**Bewertungsgrenze.** In V15 muss **Die drei Fallen zusammen im Blick** immer mit Empfaengern gelesen werden. Wirkung entsteht nicht beim Sender, sondern an veraenderten Zustaenden von Menschen, Oekosystemen, Institutionen, Oeffentlichkeit oder kuenftigen Handlungsspielraeumen. Darum reicht es nicht, interne Aktivitaeten zu dokumentieren. Entscheidend ist, ob sich ein Zustand nachvollziehbar veraendert und ob diese Veraenderung im Referenzrahmen Mensch, Planet, Demokratie, SDGs, Agenda 2030 und SDG+ tragfaehig bewertet werden kann.
+
+Ein Bericht behauptet, die Massnahme zu **Nebenwirkungen, Rebound und Zielkonflikte** sei erfolgreich. Die WOE-Lesart fragt bei **Die drei Fallen zusammen im Blick** nach belastbaren Nachweisen: begriffliche Praezision, Fallbeschreibung, Quellenklarheit, Plausibilitaet und offene Unsicherheit. Wenn diese Nachweise fehlen, bleibt die Aussage Wirkungspotenzial oder Kommunikationsbehauptung. Sie kann wichtig sein, aber sie ist noch keine belegte Wirkung.
+
+**Fallpruefung.** Wenn eine Bildungs- oder Forschungseinrichtung eine Wirkungsaussage fuer Lernende und Praxispartner pruefbar machen will, beginnt die Analyse bei Empfaengern, Wirkraum, Zeitraum und Datenquelle. Bei **Die drei Fallen zusammen im Blick** muss dann geklaert werden, welche Begriffe, Quellen und Grenzen im Material sichtbar bleiben muessen. Eine tragfaehige Antwort benennt mindestens eine Quelle, eine offene Unsicherheit, eine moegliche Gegenbeobachtung und die Entscheidung, die nach der Bewertung geaendert wird.
+
+Der Rueckfluss in den WOE-Korpus liegt hier in klaren Begriffen, sauber verlinkten Quellen und benannten Forschungsfragen. Wo Glossar, Werkzeuge, Journal oder Reader noch doppeldeutig bleiben, sollte **Nebenwirkungen, Rebound und Zielkonflikte** nicht als fertige Gewissheit auftreten, sondern als pruefbarer Lernstand mit Korrekturpfad.
+
+### Vertiefungsrunde 3: Anschluss an Praxis und Forschung
+
+Diese Runde wechselt den Blickwinkel, damit der Schlussblock nicht nur wiederholt, sondern Leseentscheidungen vorbereitet: Was ist belegt, was bleibt Potenzial, welche Nebenwirkung ist relevant und welche Steuerungsfolge wird daraus abgeleitet?
+
+**Steuerungsfolge.** Wissenschaftliche Anschlussfaehigkeit entsteht hier durch Quellenklarheit. Bei **Was du aus dieser Vorlesung mitnimmst** werden interne WOE-Begriffe nicht als Ersatz fuer Belege benutzt, sondern mit WOE-Bewertungslogik, SDG+, rote Linien, NWI/T-SROI-Abgrenzung und Schutzgueter verbunden. Wo die Datenlage offen bleibt, wird das offengelegt. Wo eine Aussage nur plausibel ist, bleibt sie als Wirkungspotenzial markiert. Wo ein Schaden eine rote Linie beruehrt, greift Nichtkompensation vor Durchschnittslogik.
+
+In einer kontroversen Entscheidung wirkt **Was du aus dieser Vorlesung mitnimmst** als Pruefpunkt fuer Ambivalenz. Ein Nutzen fuer eine Gruppe kann mit Risiken fuer andere Wirkungsempfaenger einhergehen. Das Skript verlangt deshalb, positive und negative Zustandsveraenderungen getrennt zu fuehren, bevor von positiver Netto-Wirkung gesprochen wird.
+
+**Fallpruefung.** Wenn eine Kommune eine bestehende Massnahme neu priorisieren will, beginnt die Analyse bei Empfaengern, Wirkraum, Zeitraum und Datenquelle. Bei **Was du aus dieser Vorlesung mitnimmst** muss dann geklaert werden, ob Ressourcen umgeschichtet, Daten nacherhoben oder Zielkonflikte offengelegt werden. Eine tragfaehige Antwort benennt mindestens eine Quelle, eine offene Unsicherheit, eine moegliche Gegenbeobachtung und die Entscheidung, die nach der Bewertung geaendert wird.
+
+**Transferhinweis.** In Grundstudium Wirkungsoekonomie wird **Wirkungsökonomische Vertiefung** erst steuerungsfaehig, wenn daraus eine Entscheidung folgt. Die Grundbegriffe muessen in spaeteren Modulen wiedererkennbar bleiben. Ohne diese Rueckkopplung bleibt Reporting eine Beschreibung. Mit Rueckkopplung wird aus Bewertung eine veraenderte Routine: ein anderer Prozess, ein geaenderter Anreiz, eine bessere Datenpflicht, eine korrigierte Kommunikation oder eine neue Priorisierung.
+
+Die typische Fehlstelle bei **Nebenwirkungen, Rebound und Zielkonflikte** liegt darin, schwere Schaeden mit bequemen Pluspunkten zu verrechnen. Bei **Wirkungsökonomische Vertiefung** wird diese Fehlstelle konkret: Ein scheinbar plausibler Befund darf nicht zur Abkuerzung werden. Quellen, Systemgrenzen, Unsicherheit und Rueckkopplung bleiben sichtbar.
+
+**Fallpruefung.** Wenn ein Unternehmen ein Produkt, einen Prozess oder eine Investition wirkungsbezogen bewerten will, beginnt die Analyse bei Empfaengern, Wirkraum, Zeitraum und Datenquelle. Bei **Wirkungsökonomische Vertiefung** muss dann geklaert werden, welche Entscheidung nach der Bewertung tatsaechlich anders ausfaellt. Eine tragfaehige Antwort benennt mindestens eine Quelle, eine offene Unsicherheit, eine moegliche Gegenbeobachtung und die Entscheidung, die nach der Bewertung geaendert wird.
+
+Fuer die Bewertung reicht kein Summenscore, der zentrale Schaeden mit bequemen Pluspunkten verrechnet. Nichtkompensation und Reverse Merit Order markieren, wo rote Linien, demokratische Grundbedingungen oder planetare Grenzen Vorrang vor Durchschnittslogik haben. So bleibt positive Netto-Wirkung eine anspruchsvolle Zielgroesse und wird nicht zur dekorativen Formel.
+
+**Rueckflussnotiz.** Die Grenze gegen Scheingenauigkeit verlaeuft bei **Begriffliche Präzision** nicht zwischen Optimismus und Pessimismus. Sie verlaeuft zwischen offengelegter Unsicherheit und rhetorischer Sicherheit. Wer **Nebenwirkungen, Rebound und Zielkonflikte** belastbar anwenden will, benennt Systemgrenze, Zeitraum, Vergleichspunkt und offene Gegenhypothese. Gerade dadurch bleibt das Skript anschlussfaehig fuer Forschung, Praxis und spaetere Revision.
+
+Fuer die Pruefung ist **Begriffliche Präzision** dann verstanden, wenn daraus eine belastbare Fallantwort entsteht. Eine gute Antwort unterscheidet Beobachtung, Kausalannahme, Bewertung und Steuerungsfolge. Sie bewertet keine Menschen, sondern Wirkpfade, Zustandsveraenderungen, Risiken und institutionelle Bedingungen.
+
+**Fallpruefung.** Wenn eine Bildungs- oder Forschungseinrichtung eine Wirkungsaussage fuer Lernende und Praxispartner pruefbar machen will, beginnt die Analyse bei Empfaengern, Wirkraum, Zeitraum und Datenquelle. Bei **Begriffliche Präzision** muss dann geklaert werden, welche Begriffe, Quellen und Grenzen im Material sichtbar bleiben muessen. Eine tragfaehige Antwort benennt mindestens eine Quelle, eine offene Unsicherheit, eine moegliche Gegenbeobachtung und die Entscheidung, die nach der Bewertung geaendert wird.
+
+Der Rueckfluss in den WOE-Korpus liegt hier in klaren Begriffen, sauber verlinkten Quellen und benannten Forschungsfragen. Wo Glossar, Werkzeuge, Journal oder Reader noch doppeldeutig bleiben, sollte **Nebenwirkungen, Rebound und Zielkonflikte** nicht als fertige Gewissheit auftreten, sondern als pruefbarer Lernstand mit Korrekturpfad.
+
+**Pruefungsimpuls.** Bei **Wirkpfad** wird **Nebenwirkungen, Rebound und Zielkonflikte** als Arbeitsfrage im Feld Bewertungsgrenzen, Nichtkompensation, Reverse Merit Order und positive Netto-Wirkung lesbar. Die wirkungsoekonomische Frage lautet: Welche reale Veraenderung wird moeglich, welche bleibt nur Potenzial und wo entsteht ein Wirkungsrisiko? Diese Unterscheidung schuetzt vor Impact-Washing, weil sie Absicht, Aktivitaet, Reichweite und Wirkung auseinanderhaelt.
+
+Eine Kommune, ein Unternehmen oder eine Bildungsorganisation will **Nebenwirkungen, Rebound und Zielkonflikte** praktisch anwenden. Der erste Schritt ist nicht die Auswahl eines Instruments, sondern die Klaerung der Zustandsveraenderung. Bei **Wirkpfad** muss deshalb benannt werden, wer betroffen ist, welcher Zustand sich veraendert, welche Frist gilt und welche Gegenbeobachtung die Annahme widerlegen wuerde. Erst danach entsteht eine begruendete Entscheidung im Feld Begriff, Fallbewertung, Wirkpfad, rote Linie, Quellenbeurteilung oder Rueckkopplungsregel.
+
+**Fallpruefung.** Wenn eine Kommune eine bestehende Massnahme neu priorisieren will, beginnt die Analyse bei Empfaengern, Wirkraum, Zeitraum und Datenquelle. Bei **Wirkpfad** muss dann geklaert werden, ob Ressourcen umgeschichtet, Daten nacherhoben oder Zielkonflikte offengelegt werden. Eine tragfaehige Antwort benennt mindestens eine Quelle, eine offene Unsicherheit, eine moegliche Gegenbeobachtung und die Entscheidung, die nach der Bewertung geaendert wird.
+
+**Begriffliche Sicherung.** In V15 muss **Leitthese** immer mit Empfaengern gelesen werden. Wirkung entsteht nicht beim Sender, sondern an veraenderten Zustaenden von Menschen, Oekosystemen, Institutionen, Oeffentlichkeit oder kuenftigen Handlungsspielraeumen. Darum reicht es nicht, interne Aktivitaeten zu dokumentieren. Entscheidend ist, ob sich ein Zustand nachvollziehbar veraendert und ob diese Veraenderung im Referenzrahmen Mensch, Planet, Demokratie, SDGs, Agenda 2030 und SDG+ tragfaehig bewertet werden kann.
+
+Ein Bericht behauptet, die Massnahme zu **Nebenwirkungen, Rebound und Zielkonflikte** sei erfolgreich. Die WOE-Lesart fragt bei **Leitthese** nach belastbaren Nachweisen: begriffliche Praezision, Fallbeschreibung, Quellenklarheit, Plausibilitaet und offene Unsicherheit. Wenn diese Nachweise fehlen, bleibt die Aussage Wirkungspotenzial oder Kommunikationsbehauptung. Sie kann wichtig sein, aber sie ist noch keine belegte Wirkung.
+
+**Fallpruefung.** Wenn ein Unternehmen ein Produkt, einen Prozess oder eine Investition wirkungsbezogen bewerten will, beginnt die Analyse bei Empfaengern, Wirkraum, Zeitraum und Datenquelle. Bei **Leitthese** muss dann geklaert werden, welche Entscheidung nach der Bewertung tatsaechlich anders ausfaellt. Eine tragfaehige Antwort benennt mindestens eine Quelle, eine offene Unsicherheit, eine moegliche Gegenbeobachtung und die Entscheidung, die nach der Bewertung geaendert wird.
+
+Fuer die Bewertung reicht kein Summenscore, der zentrale Schaeden mit bequemen Pluspunkten verrechnet. Nichtkompensation und Reverse Merit Order markieren, wo rote Linien, demokratische Grundbedingungen oder planetare Grenzen Vorrang vor Durchschnittslogik haben. So bleibt positive Netto-Wirkung eine anspruchsvolle Zielgroesse und wird nicht zur dekorativen Formel.
+
+**Wirkpfadpruefung.** Wissenschaftliche Anschlussfaehigkeit entsteht hier durch Quellenklarheit. Bei **Didaktische Einordnung im Studiengang** werden interne WOE-Begriffe nicht als Ersatz fuer Belege benutzt, sondern mit WOE-Bewertungslogik, SDG+, rote Linien, NWI/T-SROI-Abgrenzung und Schutzgueter verbunden. Wo die Datenlage offen bleibt, wird das offengelegt. Wo eine Aussage nur plausibel ist, bleibt sie als Wirkungspotenzial markiert. Wo ein Schaden eine rote Linie beruehrt, greift Nichtkompensation vor Durchschnittslogik.
+
+In einer kontroversen Entscheidung wirkt **Didaktische Einordnung im Studiengang** als Pruefpunkt fuer Ambivalenz. Ein Nutzen fuer eine Gruppe kann mit Risiken fuer andere Wirkungsempfaenger einhergehen. Das Skript verlangt deshalb, positive und negative Zustandsveraenderungen getrennt zu fuehren, bevor von positiver Netto-Wirkung gesprochen wird.
+
+**Fallpruefung.** Wenn eine Bildungs- oder Forschungseinrichtung eine Wirkungsaussage fuer Lernende und Praxispartner pruefbar machen will, beginnt die Analyse bei Empfaengern, Wirkraum, Zeitraum und Datenquelle. Bei **Didaktische Einordnung im Studiengang** muss dann geklaert werden, welche Begriffe, Quellen und Grenzen im Material sichtbar bleiben muessen. Eine tragfaehige Antwort benennt mindestens eine Quelle, eine offene Unsicherheit, eine moegliche Gegenbeobachtung und die Entscheidung, die nach der Bewertung geaendert wird.
+
+Der Rueckfluss in den WOE-Korpus liegt hier in klaren Begriffen, sauber verlinkten Quellen und benannten Forschungsfragen. Wo Glossar, Werkzeuge, Journal oder Reader noch doppeldeutig bleiben, sollte **Nebenwirkungen, Rebound und Zielkonflikte** nicht als fertige Gewissheit auftreten, sondern als pruefbarer Lernstand mit Korrekturpfad.
+
+### Vertiefungsrunde 4: Anschluss an Praxis und Forschung
+
+Diese Runde wechselt den Blickwinkel, damit der Schlussblock nicht nur wiederholt, sondern Leseentscheidungen vorbereitet: Was ist belegt, was bleibt Potenzial, welche Nebenwirkung ist relevant und welche Steuerungsfolge wird daraus abgeleitet?
+
+**Evidenzfenster.** In Grundstudium Wirkungsoekonomie wird **Analysemodell** erst steuerungsfaehig, wenn daraus eine Entscheidung folgt. Die Grundbegriffe muessen in spaeteren Modulen wiedererkennbar bleiben. Ohne diese Rueckkopplung bleibt Reporting eine Beschreibung. Mit Rueckkopplung wird aus Bewertung eine veraenderte Routine: ein anderer Prozess, ein geaenderter Anreiz, eine bessere Datenpflicht, eine korrigierte Kommunikation oder eine neue Priorisierung.
+
+Die typische Fehlstelle bei **Nebenwirkungen, Rebound und Zielkonflikte** liegt darin, schwere Schaeden mit bequemen Pluspunkten zu verrechnen. Bei **Analysemodell** wird diese Fehlstelle konkret: Ein scheinbar plausibler Befund darf nicht zur Abkuerzung werden. Quellen, Systemgrenzen, Unsicherheit und Rueckkopplung bleiben sichtbar.
+
+**Fallpruefung.** Wenn eine Kommune eine bestehende Massnahme neu priorisieren will, beginnt die Analyse bei Empfaengern, Wirkraum, Zeitraum und Datenquelle. Bei **Analysemodell** muss dann geklaert werden, ob Ressourcen umgeschichtet, Daten nacherhoben oder Zielkonflikte offengelegt werden. Eine tragfaehige Antwort benennt mindestens eine Quelle, eine offene Unsicherheit, eine moegliche Gegenbeobachtung und die Entscheidung, die nach der Bewertung geaendert wird.
+
+**Bewertungsgrenze.** Die Grenze gegen Scheingenauigkeit verlaeuft bei **Modellformel** nicht zwischen Optimismus und Pessimismus. Sie verlaeuft zwischen offengelegter Unsicherheit und rhetorischer Sicherheit. Wer **Nebenwirkungen, Rebound und Zielkonflikte** belastbar anwenden will, benennt Systemgrenze, Zeitraum, Vergleichspunkt und offene Gegenhypothese. Gerade dadurch bleibt das Skript anschlussfaehig fuer Forschung, Praxis und spaetere Revision.
+
+Fuer die Pruefung ist **Modellformel** dann verstanden, wenn daraus eine belastbare Fallantwort entsteht. Eine gute Antwort unterscheidet Beobachtung, Kausalannahme, Bewertung und Steuerungsfolge. Sie bewertet keine Menschen, sondern Wirkpfade, Zustandsveraenderungen, Risiken und institutionelle Bedingungen.
+
+**Fallpruefung.** Wenn ein Unternehmen ein Produkt, einen Prozess oder eine Investition wirkungsbezogen bewerten will, beginnt die Analyse bei Empfaengern, Wirkraum, Zeitraum und Datenquelle. Bei **Modellformel** muss dann geklaert werden, welche Entscheidung nach der Bewertung tatsaechlich anders ausfaellt. Eine tragfaehige Antwort benennt mindestens eine Quelle, eine offene Unsicherheit, eine moegliche Gegenbeobachtung und die Entscheidung, die nach der Bewertung geaendert wird.
+
+Fuer die Bewertung reicht kein Summenscore, der zentrale Schaeden mit bequemen Pluspunkten verrechnet. Nichtkompensation und Reverse Merit Order markieren, wo rote Linien, demokratische Grundbedingungen oder planetare Grenzen Vorrang vor Durchschnittslogik haben. So bleibt positive Netto-Wirkung eine anspruchsvolle Zielgroesse und wird nicht zur dekorativen Formel.
+
+**Steuerungsfolge.** Bei **Fallfenster** wird **Nebenwirkungen, Rebound und Zielkonflikte** als Arbeitsfrage im Feld Bewertungsgrenzen, Nichtkompensation, Reverse Merit Order und positive Netto-Wirkung lesbar. Die wirkungsoekonomische Frage lautet: Welche reale Veraenderung wird moeglich, welche bleibt nur Potenzial und wo entsteht ein Wirkungsrisiko? Diese Unterscheidung schuetzt vor Impact-Washing, weil sie Absicht, Aktivitaet, Reichweite und Wirkung auseinanderhaelt.
+
+Eine Kommune, ein Unternehmen oder eine Bildungsorganisation will **Nebenwirkungen, Rebound und Zielkonflikte** praktisch anwenden. Der erste Schritt ist nicht die Auswahl eines Instruments, sondern die Klaerung der Zustandsveraenderung. Bei **Fallfenster** muss deshalb benannt werden, wer betroffen ist, welcher Zustand sich veraendert, welche Frist gilt und welche Gegenbeobachtung die Annahme widerlegen wuerde. Erst danach entsteht eine begruendete Entscheidung im Feld Begriff, Fallbewertung, Wirkpfad, rote Linie, Quellenbeurteilung oder Rueckkopplungsregel.
+
+**Fallpruefung.** Wenn eine Bildungs- oder Forschungseinrichtung eine Wirkungsaussage fuer Lernende und Praxispartner pruefbar machen will, beginnt die Analyse bei Empfaengern, Wirkraum, Zeitraum und Datenquelle. Bei **Fallfenster** muss dann geklaert werden, welche Begriffe, Quellen und Grenzen im Material sichtbar bleiben muessen. Eine tragfaehige Antwort benennt mindestens eine Quelle, eine offene Unsicherheit, eine moegliche Gegenbeobachtung und die Entscheidung, die nach der Bewertung geaendert wird.
+
+Der Rueckfluss in den WOE-Korpus liegt hier in klaren Begriffen, sauber verlinkten Quellen und benannten Forschungsfragen. Wo Glossar, Werkzeuge, Journal oder Reader noch doppeldeutig bleiben, sollte **Nebenwirkungen, Rebound und Zielkonflikte** nicht als fertige Gewissheit auftreten, sondern als pruefbarer Lernstand mit Korrekturpfad.
+
+**Transferhinweis.** In V15 muss **Prüfungsnahe Fallfragen ohne geschützte Antwortlogik** immer mit Empfaengern gelesen werden. Wirkung entsteht nicht beim Sender, sondern an veraenderten Zustaenden von Menschen, Oekosystemen, Institutionen, Oeffentlichkeit oder kuenftigen Handlungsspielraeumen. Darum reicht es nicht, interne Aktivitaeten zu dokumentieren. Entscheidend ist, ob sich ein Zustand nachvollziehbar veraendert und ob diese Veraenderung im Referenzrahmen Mensch, Planet, Demokratie, SDGs, Agenda 2030 und SDG+ tragfaehig bewertet werden kann.
+
+Ein Bericht behauptet, die Massnahme zu **Nebenwirkungen, Rebound und Zielkonflikte** sei erfolgreich. Die WOE-Lesart fragt bei **Prüfungsnahe Fallfragen ohne geschützte Antwortlogik** nach belastbaren Nachweisen: begriffliche Praezision, Fallbeschreibung, Quellenklarheit, Plausibilitaet und offene Unsicherheit. Wenn diese Nachweise fehlen, bleibt die Aussage Wirkungspotenzial oder Kommunikationsbehauptung. Sie kann wichtig sein, aber sie ist noch keine belegte Wirkung.
+
+**Fallpruefung.** Wenn eine Kommune eine bestehende Massnahme neu priorisieren will, beginnt die Analyse bei Empfaengern, Wirkraum, Zeitraum und Datenquelle. Bei **Prüfungsnahe Fallfragen ohne geschützte Antwortlogik** muss dann geklaert werden, ob Ressourcen umgeschichtet, Daten nacherhoben oder Zielkonflikte offengelegt werden. Eine tragfaehige Antwort benennt mindestens eine Quelle, eine offene Unsicherheit, eine moegliche Gegenbeobachtung und die Entscheidung, die nach der Bewertung geaendert wird.
+
+**Rueckflussnotiz.** Wissenschaftliche Anschlussfaehigkeit entsteht hier durch Quellenklarheit. Bei **Einleitung / Wirkungsfrage** werden interne WOE-Begriffe nicht als Ersatz fuer Belege benutzt, sondern mit WOE-Bewertungslogik, SDG+, rote Linien, NWI/T-SROI-Abgrenzung und Schutzgueter verbunden. Wo die Datenlage offen bleibt, wird das offengelegt. Wo eine Aussage nur plausibel ist, bleibt sie als Wirkungspotenzial markiert. Wo ein Schaden eine rote Linie beruehrt, greift Nichtkompensation vor Durchschnittslogik.
+
+In einer kontroversen Entscheidung wirkt **Einleitung / Wirkungsfrage** als Pruefpunkt fuer Ambivalenz. Ein Nutzen fuer eine Gruppe kann mit Risiken fuer andere Wirkungsempfaenger einhergehen. Das Skript verlangt deshalb, positive und negative Zustandsveraenderungen getrennt zu fuehren, bevor von positiver Netto-Wirkung gesprochen wird.
+
+**Fallpruefung.** Wenn ein Unternehmen ein Produkt, einen Prozess oder eine Investition wirkungsbezogen bewerten will, beginnt die Analyse bei Empfaengern, Wirkraum, Zeitraum und Datenquelle. Bei **Einleitung / Wirkungsfrage** muss dann geklaert werden, welche Entscheidung nach der Bewertung tatsaechlich anders ausfaellt. Eine tragfaehige Antwort benennt mindestens eine Quelle, eine offene Unsicherheit, eine moegliche Gegenbeobachtung und die Entscheidung, die nach der Bewertung geaendert wird.
+
+Fuer die Bewertung reicht kein Summenscore, der zentrale Schaeden mit bequemen Pluspunkten verrechnet. Nichtkompensation und Reverse Merit Order markieren, wo rote Linien, demokratische Grundbedingungen oder planetare Grenzen Vorrang vor Durchschnittslogik haben. So bleibt positive Netto-Wirkung eine anspruchsvolle Zielgroesse und wird nicht zur dekorativen Formel.
+
+**Pruefungsimpuls.** In Grundstudium Wirkungsoekonomie wird **Kernaussage** erst steuerungsfaehig, wenn daraus eine Entscheidung folgt. Die Grundbegriffe muessen in spaeteren Modulen wiedererkennbar bleiben. Ohne diese Rueckkopplung bleibt Reporting eine Beschreibung. Mit Rueckkopplung wird aus Bewertung eine veraenderte Routine: ein anderer Prozess, ein geaenderter Anreiz, eine bessere Datenpflicht, eine korrigierte Kommunikation oder eine neue Priorisierung.
+
+Die typische Fehlstelle bei **Nebenwirkungen, Rebound und Zielkonflikte** liegt darin, schwere Schaeden mit bequemen Pluspunkten zu verrechnen. Bei **Kernaussage** wird diese Fehlstelle konkret: Ein scheinbar plausibler Befund darf nicht zur Abkuerzung werden. Quellen, Systemgrenzen, Unsicherheit und Rueckkopplung bleiben sichtbar.
+
+**Fallpruefung.** Wenn eine Bildungs- oder Forschungseinrichtung eine Wirkungsaussage fuer Lernende und Praxispartner pruefbar machen will, beginnt die Analyse bei Empfaengern, Wirkraum, Zeitraum und Datenquelle. Bei **Kernaussage** muss dann geklaert werden, welche Begriffe, Quellen und Grenzen im Material sichtbar bleiben muessen. Eine tragfaehige Antwort benennt mindestens eine Quelle, eine offene Unsicherheit, eine moegliche Gegenbeobachtung und die Entscheidung, die nach der Bewertung geaendert wird.
+
+Der Rueckfluss in den WOE-Korpus liegt hier in klaren Begriffen, sauber verlinkten Quellen und benannten Forschungsfragen. Wo Glossar, Werkzeuge, Journal oder Reader noch doppeldeutig bleiben, sollte **Nebenwirkungen, Rebound und Zielkonflikte** nicht als fertige Gewissheit auftreten, sondern als pruefbarer Lernstand mit Korrekturpfad.
+
+### Vertiefungsrunde 5: Anschluss an Praxis und Forschung
+
+Diese Runde wechselt den Blickwinkel, damit der Schlussblock nicht nur wiederholt, sondern Leseentscheidungen vorbereitet: Was ist belegt, was bleibt Potenzial, welche Nebenwirkung ist relevant und welche Steuerungsfolge wird daraus abgeleitet?
+
+**Begriffliche Sicherung.** Die Grenze gegen Scheingenauigkeit verlaeuft bei **Quelltext und fachliche Grundlegung** nicht zwischen Optimismus und Pessimismus. Sie verlaeuft zwischen offengelegter Unsicherheit und rhetorischer Sicherheit. Wer **Nebenwirkungen, Rebound und Zielkonflikte** belastbar anwenden will, benennt Systemgrenze, Zeitraum, Vergleichspunkt und offene Gegenhypothese. Gerade dadurch bleibt das Skript anschlussfaehig fuer Forschung, Praxis und spaetere Revision.
+
+Fuer die Pruefung ist **Quelltext und fachliche Grundlegung** dann verstanden, wenn daraus eine belastbare Fallantwort entsteht. Eine gute Antwort unterscheidet Beobachtung, Kausalannahme, Bewertung und Steuerungsfolge. Sie bewertet keine Menschen, sondern Wirkpfade, Zustandsveraenderungen, Risiken und institutionelle Bedingungen.
+
+**Fallpruefung.** Wenn eine Kommune eine bestehende Massnahme neu priorisieren will, beginnt die Analyse bei Empfaengern, Wirkraum, Zeitraum und Datenquelle. Bei **Quelltext und fachliche Grundlegung** muss dann geklaert werden, ob Ressourcen umgeschichtet, Daten nacherhoben oder Zielkonflikte offengelegt werden. Eine tragfaehige Antwort benennt mindestens eine Quelle, eine offene Unsicherheit, eine moegliche Gegenbeobachtung und die Entscheidung, die nach der Bewertung geaendert wird.
+
+**Wirkpfadpruefung.** Bei **Drei Fallen auf dem Weg zur guten Wirkung** wird **Nebenwirkungen, Rebound und Zielkonflikte** als Arbeitsfrage im Feld Bewertungsgrenzen, Nichtkompensation, Reverse Merit Order und positive Netto-Wirkung lesbar. Die wirkungsoekonomische Frage lautet: Welche reale Veraenderung wird moeglich, welche bleibt nur Potenzial und wo entsteht ein Wirkungsrisiko? Diese Unterscheidung schuetzt vor Impact-Washing, weil sie Absicht, Aktivitaet, Reichweite und Wirkung auseinanderhaelt.
+
+Eine Kommune, ein Unternehmen oder eine Bildungsorganisation will **Nebenwirkungen, Rebound und Zielkonflikte** praktisch anwenden. Der erste Schritt ist nicht die Auswahl eines Instruments, sondern die Klaerung der Zustandsveraenderung. Bei **Drei Fallen auf dem Weg zur guten Wirkung** muss deshalb benannt werden, wer betroffen ist, welcher Zustand sich veraendert, welche Frist gilt und welche Gegenbeobachtung die Annahme widerlegen wuerde. Erst danach entsteht eine begruendete Entscheidung im Feld Begriff, Fallbewertung, Wirkpfad, rote Linie, Quellenbeurteilung oder Rueckkopplungsregel.
+
+**Fallpruefung.** Wenn ein Unternehmen ein Produkt, einen Prozess oder eine Investition wirkungsbezogen bewerten will, beginnt die Analyse bei Empfaengern, Wirkraum, Zeitraum und Datenquelle. Bei **Drei Fallen auf dem Weg zur guten Wirkung** muss dann geklaert werden, welche Entscheidung nach der Bewertung tatsaechlich anders ausfaellt. Eine tragfaehige Antwort benennt mindestens eine Quelle, eine offene Unsicherheit, eine moegliche Gegenbeobachtung und die Entscheidung, die nach der Bewertung geaendert wird.
+
+Fuer die Bewertung reicht kein Summenscore, der zentrale Schaeden mit bequemen Pluspunkten verrechnet. Nichtkompensation und Reverse Merit Order markieren, wo rote Linien, demokratische Grundbedingungen oder planetare Grenzen Vorrang vor Durchschnittslogik haben. So bleibt positive Netto-Wirkung eine anspruchsvolle Zielgroesse und wird nicht zur dekorativen Formel.
+
+**Evidenzfenster.** In V15 muss **Nebenwirkungen: die ungewollten Begleiter** immer mit Empfaengern gelesen werden. Wirkung entsteht nicht beim Sender, sondern an veraenderten Zustaenden von Menschen, Oekosystemen, Institutionen, Oeffentlichkeit oder kuenftigen Handlungsspielraeumen. Darum reicht es nicht, interne Aktivitaeten zu dokumentieren. Entscheidend ist, ob sich ein Zustand nachvollziehbar veraendert und ob diese Veraenderung im Referenzrahmen Mensch, Planet, Demokratie, SDGs, Agenda 2030 und SDG+ tragfaehig bewertet werden kann.
+
+Ein Bericht behauptet, die Massnahme zu **Nebenwirkungen, Rebound und Zielkonflikte** sei erfolgreich. Die WOE-Lesart fragt bei **Nebenwirkungen: die ungewollten Begleiter** nach belastbaren Nachweisen: begriffliche Praezision, Fallbeschreibung, Quellenklarheit, Plausibilitaet und offene Unsicherheit. Wenn diese Nachweise fehlen, bleibt die Aussage Wirkungspotenzial oder Kommunikationsbehauptung. Sie kann wichtig sein, aber sie ist noch keine belegte Wirkung.
+
+**Fallpruefung.** Wenn eine Bildungs- oder Forschungseinrichtung eine Wirkungsaussage fuer Lernende und Praxispartner pruefbar machen will, beginnt die Analyse bei Empfaengern, Wirkraum, Zeitraum und Datenquelle. Bei **Nebenwirkungen: die ungewollten Begleiter** muss dann geklaert werden, welche Begriffe, Quellen und Grenzen im Material sichtbar bleiben muessen. Eine tragfaehige Antwort benennt mindestens eine Quelle, eine offene Unsicherheit, eine moegliche Gegenbeobachtung und die Entscheidung, die nach der Bewertung geaendert wird.
+
+Der Rueckfluss in den WOE-Korpus liegt hier in klaren Begriffen, sauber verlinkten Quellen und benannten Forschungsfragen. Wo Glossar, Werkzeuge, Journal oder Reader noch doppeldeutig bleiben, sollte **Nebenwirkungen, Rebound und Zielkonflikte** nicht als fertige Gewissheit auftreten, sondern als pruefbarer Lernstand mit Korrekturpfad.
+
+**Bewertungsgrenze.** Wissenschaftliche Anschlussfaehigkeit entsteht hier durch Quellenklarheit. Bei **Nebenwirkungen ernst nehmen** werden interne WOE-Begriffe nicht als Ersatz fuer Belege benutzt, sondern mit WOE-Bewertungslogik, SDG+, rote Linien, NWI/T-SROI-Abgrenzung und Schutzgueter verbunden. Wo die Datenlage offen bleibt, wird das offengelegt. Wo eine Aussage nur plausibel ist, bleibt sie als Wirkungspotenzial markiert. Wo ein Schaden eine rote Linie beruehrt, greift Nichtkompensation vor Durchschnittslogik.
+
+In einer kontroversen Entscheidung wirkt **Nebenwirkungen ernst nehmen** als Pruefpunkt fuer Ambivalenz. Ein Nutzen fuer eine Gruppe kann mit Risiken fuer andere Wirkungsempfaenger einhergehen. Das Skript verlangt deshalb, positive und negative Zustandsveraenderungen getrennt zu fuehren, bevor von positiver Netto-Wirkung gesprochen wird.
+
+**Fallpruefung.** Wenn eine Kommune eine bestehende Massnahme neu priorisieren will, beginnt die Analyse bei Empfaengern, Wirkraum, Zeitraum und Datenquelle. Bei **Nebenwirkungen ernst nehmen** muss dann geklaert werden, ob Ressourcen umgeschichtet, Daten nacherhoben oder Zielkonflikte offengelegt werden. Eine tragfaehige Antwort benennt mindestens eine Quelle, eine offene Unsicherheit, eine moegliche Gegenbeobachtung und die Entscheidung, die nach der Bewertung geaendert wird.
+
+**Steuerungsfolge.** In Grundstudium Wirkungsoekonomie wird **Der Rebound-Effekt** erst steuerungsfaehig, wenn daraus eine Entscheidung folgt. Die Grundbegriffe muessen in spaeteren Modulen wiedererkennbar bleiben. Ohne diese Rueckkopplung bleibt Reporting eine Beschreibung. Mit Rueckkopplung wird aus Bewertung eine veraenderte Routine: ein anderer Prozess, ein geaenderter Anreiz, eine bessere Datenpflicht, eine korrigierte Kommunikation oder eine neue Priorisierung.
+
+Die typische Fehlstelle bei **Nebenwirkungen, Rebound und Zielkonflikte** liegt darin, schwere Schaeden mit bequemen Pluspunkten zu verrechnen. Bei **Der Rebound-Effekt** wird diese Fehlstelle konkret: Ein scheinbar plausibler Befund darf nicht zur Abkuerzung werden. Quellen, Systemgrenzen, Unsicherheit und Rueckkopplung bleiben sichtbar.
+
+**Fallpruefung.** Wenn ein Unternehmen ein Produkt, einen Prozess oder eine Investition wirkungsbezogen bewerten will, beginnt die Analyse bei Empfaengern, Wirkraum, Zeitraum und Datenquelle. Bei **Der Rebound-Effekt** muss dann geklaert werden, welche Entscheidung nach der Bewertung tatsaechlich anders ausfaellt. Eine tragfaehige Antwort benennt mindestens eine Quelle, eine offene Unsicherheit, eine moegliche Gegenbeobachtung und die Entscheidung, die nach der Bewertung geaendert wird.
+
+Fuer die Bewertung reicht kein Summenscore, der zentrale Schaeden mit bequemen Pluspunkten verrechnet. Nichtkompensation und Reverse Merit Order markieren, wo rote Linien, demokratische Grundbedingungen oder planetare Grenzen Vorrang vor Durchschnittslogik haben. So bleibt positive Netto-Wirkung eine anspruchsvolle Zielgroesse und wird nicht zur dekorativen Formel.
+
+**Transferhinweis.** Die Grenze gegen Scheingenauigkeit verlaeuft bei **Warum der Rebound so oft übersehen wird** nicht zwischen Optimismus und Pessimismus. Sie verlaeuft zwischen offengelegter Unsicherheit und rhetorischer Sicherheit. Wer **Nebenwirkungen, Rebound und Zielkonflikte** belastbar anwenden will, benennt Systemgrenze, Zeitraum, Vergleichspunkt und offene Gegenhypothese. Gerade dadurch bleibt das Skript anschlussfaehig fuer Forschung, Praxis und spaetere Revision.
+
+Fuer die Pruefung ist **Warum der Rebound so oft übersehen wird** dann verstanden, wenn daraus eine belastbare Fallantwort entsteht. Eine gute Antwort unterscheidet Beobachtung, Kausalannahme, Bewertung und Steuerungsfolge. Sie bewertet keine Menschen, sondern Wirkpfade, Zustandsveraenderungen, Risiken und institutionelle Bedingungen.
+
+**Fallpruefung.** Wenn eine Bildungs- oder Forschungseinrichtung eine Wirkungsaussage fuer Lernende und Praxispartner pruefbar machen will, beginnt die Analyse bei Empfaengern, Wirkraum, Zeitraum und Datenquelle. Bei **Warum der Rebound so oft übersehen wird** muss dann geklaert werden, welche Begriffe, Quellen und Grenzen im Material sichtbar bleiben muessen. Eine tragfaehige Antwort benennt mindestens eine Quelle, eine offene Unsicherheit, eine moegliche Gegenbeobachtung und die Entscheidung, die nach der Bewertung geaendert wird.
+
+Der Rueckfluss in den WOE-Korpus liegt hier in klaren Begriffen, sauber verlinkten Quellen und benannten Forschungsfragen. Wo Glossar, Werkzeuge, Journal oder Reader noch doppeldeutig bleiben, sollte **Nebenwirkungen, Rebound und Zielkonflikte** nicht als fertige Gewissheit auftreten, sondern als pruefbarer Lernstand mit Korrekturpfad.
+
+### Vertiefungsrunde 6: Anschluss an Praxis und Forschung
+
+Diese Runde wechselt den Blickwinkel, damit der Schlussblock nicht nur wiederholt, sondern Leseentscheidungen vorbereitet: Was ist belegt, was bleibt Potenzial, welche Nebenwirkung ist relevant und welche Steuerungsfolge wird daraus abgeleitet?
+
+**Rueckflussnotiz.** Bei **Ein Beispiel zum Rebound** wird **Nebenwirkungen, Rebound und Zielkonflikte** als Arbeitsfrage im Feld Bewertungsgrenzen, Nichtkompensation, Reverse Merit Order und positive Netto-Wirkung lesbar. Die wirkungsoekonomische Frage lautet: Welche reale Veraenderung wird moeglich, welche bleibt nur Potenzial und wo entsteht ein Wirkungsrisiko? Diese Unterscheidung schuetzt vor Impact-Washing, weil sie Absicht, Aktivitaet, Reichweite und Wirkung auseinanderhaelt.
+
+Eine Kommune, ein Unternehmen oder eine Bildungsorganisation will **Nebenwirkungen, Rebound und Zielkonflikte** praktisch anwenden. Der erste Schritt ist nicht die Auswahl eines Instruments, sondern die Klaerung der Zustandsveraenderung. Bei **Ein Beispiel zum Rebound** muss deshalb benannt werden, wer betroffen ist, welcher Zustand sich veraendert, welche Frist gilt und welche Gegenbeobachtung die Annahme widerlegen wuerde. Erst danach entsteht eine begruendete Entscheidung im Feld Begriff, Fallbewertung, Wirkpfad, rote Linie, Quellenbeurteilung oder Rueckkopplungsregel.
+
+**Fallpruefung.** Wenn eine Kommune eine bestehende Massnahme neu priorisieren will, beginnt die Analyse bei Empfaengern, Wirkraum, Zeitraum und Datenquelle. Bei **Ein Beispiel zum Rebound** muss dann geklaert werden, ob Ressourcen umgeschichtet, Daten nacherhoben oder Zielkonflikte offengelegt werden. Eine tragfaehige Antwort benennt mindestens eine Quelle, eine offene Unsicherheit, eine moegliche Gegenbeobachtung und die Entscheidung, die nach der Bewertung geaendert wird.
+
+**Pruefungsimpuls.** In V15 muss **Zielkonflikte** immer mit Empfaengern gelesen werden. Wirkung entsteht nicht beim Sender, sondern an veraenderten Zustaenden von Menschen, Oekosystemen, Institutionen, Oeffentlichkeit oder kuenftigen Handlungsspielraeumen. Darum reicht es nicht, interne Aktivitaeten zu dokumentieren. Entscheidend ist, ob sich ein Zustand nachvollziehbar veraendert und ob diese Veraenderung im Referenzrahmen Mensch, Planet, Demokratie, SDGs, Agenda 2030 und SDG+ tragfaehig bewertet werden kann.
+
+Ein Bericht behauptet, die Massnahme zu **Nebenwirkungen, Rebound und Zielkonflikte** sei erfolgreich. Die WOE-Lesart fragt bei **Zielkonflikte** nach belastbaren Nachweisen: begriffliche Praezision, Fallbeschreibung, Quellenklarheit, Plausibilitaet und offene Unsicherheit. Wenn diese Nachweise fehlen, bleibt die Aussage Wirkungspotenzial oder Kommunikationsbehauptung. Sie kann wichtig sein, aber sie ist noch keine belegte Wirkung.
+
+**Fallpruefung.** Wenn ein Unternehmen ein Produkt, einen Prozess oder eine Investition wirkungsbezogen bewerten will, beginnt die Analyse bei Empfaengern, Wirkraum, Zeitraum und Datenquelle. Bei **Zielkonflikte** muss dann geklaert werden, welche Entscheidung nach der Bewertung tatsaechlich anders ausfaellt. Eine tragfaehige Antwort benennt mindestens eine Quelle, eine offene Unsicherheit, eine moegliche Gegenbeobachtung und die Entscheidung, die nach der Bewertung geaendert wird.
+
+Fuer die Bewertung reicht kein Summenscore, der zentrale Schaeden mit bequemen Pluspunkten verrechnet. Nichtkompensation und Reverse Merit Order markieren, wo rote Linien, demokratische Grundbedingungen oder planetare Grenzen Vorrang vor Durchschnittslogik haben. So bleibt positive Netto-Wirkung eine anspruchsvolle Zielgroesse und wird nicht zur dekorativen Formel.
+
+**Begriffliche Sicherung.** Wissenschaftliche Anschlussfaehigkeit entsteht hier durch Quellenklarheit. Bei **Zielkonflikte ehrlich abwägen** werden interne WOE-Begriffe nicht als Ersatz fuer Belege benutzt, sondern mit WOE-Bewertungslogik, SDG+, rote Linien, NWI/T-SROI-Abgrenzung und Schutzgueter verbunden. Wo die Datenlage offen bleibt, wird das offengelegt. Wo eine Aussage nur plausibel ist, bleibt sie als Wirkungspotenzial markiert. Wo ein Schaden eine rote Linie beruehrt, greift Nichtkompensation vor Durchschnittslogik.
+
+In einer kontroversen Entscheidung wirkt **Zielkonflikte ehrlich abwägen** als Pruefpunkt fuer Ambivalenz. Ein Nutzen fuer eine Gruppe kann mit Risiken fuer andere Wirkungsempfaenger einhergehen. Das Skript verlangt deshalb, positive und negative Zustandsveraenderungen getrennt zu fuehren, bevor von positiver Netto-Wirkung gesprochen wird.
+
+**Fallpruefung.** Wenn eine Bildungs- oder Forschungseinrichtung eine Wirkungsaussage fuer Lernende und Praxispartner pruefbar machen will, beginnt die Analyse bei Empfaengern, Wirkraum, Zeitraum und Datenquelle. Bei **Zielkonflikte ehrlich abwägen** muss dann geklaert werden, welche Begriffe, Quellen und Grenzen im Material sichtbar bleiben muessen. Eine tragfaehige Antwort benennt mindestens eine Quelle, eine offene Unsicherheit, eine moegliche Gegenbeobachtung und die Entscheidung, die nach der Bewertung geaendert wird.
+
+Der Rueckfluss in den WOE-Korpus liegt hier in klaren Begriffen, sauber verlinkten Quellen und benannten Forschungsfragen. Wo Glossar, Werkzeuge, Journal oder Reader noch doppeldeutig bleiben, sollte **Nebenwirkungen, Rebound und Zielkonflikte** nicht als fertige Gewissheit auftreten, sondern als pruefbarer Lernstand mit Korrekturpfad.
+
+**Wirkpfadpruefung.** In Grundstudium Wirkungsoekonomie wird **Die drei Fallen zusammen im Blick** erst steuerungsfaehig, wenn daraus eine Entscheidung folgt. Die Grundbegriffe muessen in spaeteren Modulen wiedererkennbar bleiben. Ohne diese Rueckkopplung bleibt Reporting eine Beschreibung. Mit Rueckkopplung wird aus Bewertung eine veraenderte Routine: ein anderer Prozess, ein geaenderter Anreiz, eine bessere Datenpflicht, eine korrigierte Kommunikation oder eine neue Priorisierung.
+
+Die typische Fehlstelle bei **Nebenwirkungen, Rebound und Zielkonflikte** liegt darin, schwere Schaeden mit bequemen Pluspunkten zu verrechnen. Bei **Die drei Fallen zusammen im Blick** wird diese Fehlstelle konkret: Ein scheinbar plausibler Befund darf nicht zur Abkuerzung werden. Quellen, Systemgrenzen, Unsicherheit und Rueckkopplung bleiben sichtbar.
+
+**Fallpruefung.** Wenn eine Kommune eine bestehende Massnahme neu priorisieren will, beginnt die Analyse bei Empfaengern, Wirkraum, Zeitraum und Datenquelle. Bei **Die drei Fallen zusammen im Blick** muss dann geklaert werden, ob Ressourcen umgeschichtet, Daten nacherhoben oder Zielkonflikte offengelegt werden. Eine tragfaehige Antwort benennt mindestens eine Quelle, eine offene Unsicherheit, eine moegliche Gegenbeobachtung und die Entscheidung, die nach der Bewertung geaendert wird.
+
+### V1-Abschlussnotiz
+
+Diese Finalisierung schliesst die Codex-Inhaltsproduktion fuer V15. Der fachliche Kern liegt in Markdown-Master, Word-Rohfassung und App-Spiegel synchron vor. Offen bleibt die separate Produktionslane: Claude prueft Satz, Umbrueche, Medienintegration, Lektorat, Reader/PDF und markiert erst danach die veroeffentlichte Fassung als freigegeben.

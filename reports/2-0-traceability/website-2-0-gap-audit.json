@@ -1,0 +1,212 @@
+[
+  {
+    "cluster": "Routen",
+    "requirement": "Öffentlicher Wirkungsraum",
+    "status": "OK",
+    "evidence": "oeffentlicher-wirkungsraum/index.html",
+    "action": ""
+  },
+  {
+    "cluster": "Routen",
+    "requirement": "Resonanz-Kompass",
+    "status": "OK",
+    "evidence": "wirkungsradar/resonanz-kompass/index.html",
+    "action": ""
+  },
+  {
+    "cluster": "Routen",
+    "requirement": "Agenda-Radar",
+    "status": "OK",
+    "evidence": "wirkungsradar/agenda-radar/index.html",
+    "action": ""
+  },
+  {
+    "cluster": "Routen",
+    "requirement": "Ursachen-Navigator",
+    "status": "OK",
+    "evidence": "wirkungsradar/ursachen-navigator/index.html",
+    "action": ""
+  },
+  {
+    "cluster": "Routen",
+    "requirement": "Resilienz-Prinzipien",
+    "status": "OK",
+    "evidence": "wirkungsradar/resilienz-prinzipien/index.html",
+    "action": ""
+  },
+  {
+    "cluster": "Routen",
+    "requirement": "Updates",
+    "status": "OK",
+    "evidence": "updates/index.html",
+    "action": ""
+  },
+  {
+    "cluster": "Routen",
+    "requirement": "Mein Wirkungsraum",
+    "status": "OK",
+    "evidence": "mein-wirkungsraum/index.html",
+    "action": ""
+  },
+  {
+    "cluster": "Routen",
+    "requirement": "Thomas Piketty",
+    "status": "OK",
+    "evidence": "begriffe/thomas-piketty/index.html",
+    "action": ""
+  },
+  {
+    "cluster": "Routen",
+    "requirement": "Kapitalakkumulation",
+    "status": "OK",
+    "evidence": "begriffe/kapitalakkumulation/index.html",
+    "action": ""
+  },
+  {
+    "cluster": "Suche",
+    "requirement": "Bibliothekssuche",
+    "status": "OK",
+    "evidence": "bibliothek/index.html: data-library-search",
+    "action": ""
+  },
+  {
+    "cluster": "Suche",
+    "requirement": "Veröffentlichungen/Downloads Suche",
+    "status": "OK",
+    "evidence": "downloads.html: data-document-search",
+    "action": ""
+  },
+  {
+    "cluster": "Suche",
+    "requirement": "Online-Dokumente Suche",
+    "status": "OK",
+    "evidence": "dokumente/index.html: data-online-document-search",
+    "action": ""
+  },
+  {
+    "cluster": "Suche",
+    "requirement": "Journal Suche",
+    "status": "OK",
+    "evidence": "blog.html: data-blog-search",
+    "action": ""
+  },
+  {
+    "cluster": "Suche",
+    "requirement": "Updates Suche",
+    "status": "FEHLT",
+    "evidence": "updates/index.html: data-updates-search",
+    "action": "Suchfeld und Filterlogik ergänzen"
+  },
+  {
+    "cluster": "Bibliothek/Bridge",
+    "requirement": "Kein Wirkungsradar-Dossier-Bridge auf bibliothek/index.html",
+    "status": "OK",
+    "evidence": "bad block not present",
+    "action": ""
+  },
+  {
+    "cluster": "Bibliothek/Bridge",
+    "requirement": "Kein Wirkungsradar-Dossier-Bridge auf downloads.html",
+    "status": "OK",
+    "evidence": "bad block not present",
+    "action": ""
+  },
+  {
+    "cluster": "Bibliothek/Bridge",
+    "requirement": "Kein Wirkungsradar-Dossier-Bridge auf dokumente/index.html",
+    "status": "OK",
+    "evidence": "bad block not present",
+    "action": ""
+  },
+  {
+    "cluster": "Bibliothek/Bridge",
+    "requirement": "Kein Wirkungsradar-Dossier-Bridge auf blog.html",
+    "status": "OK",
+    "evidence": "bad block not present",
+    "action": ""
+  },
+  {
+    "cluster": "Debatten-Kompass Template",
+    "requirement": "Pflichtreihenfolge wirkungsradar/live/migration-kostet-nur/index.html",
+    "status": "OK",
+    "evidence": "[('inhaltsverzeichnis', 4219), ('behauptung', 5036), ('sofortantwort', 5970), ('folgencheck', 11896), ('wirkpfad', 13664), ('kritische-fragen', 14577), ('faktenlage', 15179), ('quellen', 17061)]",
+    "action": ""
+  },
+  {
+    "cluster": "Debatten-Kompass Template",
+    "requirement": "Pflichtreihenfolge wirkungsradar/live/radwege-in-peru/index.html",
+    "status": "OK",
+    "evidence": "[('inhaltsverzeichnis', 4263), ('behauptung', 5080), ('sofortantwort', 6081), ('folgencheck', 11539), ('wirkpfad', 13215), ('kritische-fragen', 14158), ('faktenlage', 14760), ('quellen', 17275)]",
+    "action": ""
+  },
+  {
+    "cluster": "Debatten-Kompass Template",
+    "requirement": "Pflichtreihenfolge wirkungsradar/live/15-minuten-stadt-oder-klimakaefig/index.html",
+    "status": "OK",
+    "evidence": "[('inhaltsverzeichnis', 4121), ('behauptung', 4938), ('sofortantwort', 5835), ('folgencheck', 11311), ('wirkpfad', 13001), ('kritische-fragen', 13857), ('faktenlage', 14459), ('quellen', 15690)]",
+    "action": ""
+  },
+  {
+    "cluster": "Dubletten/Kanonisierung",
+    "requirement": "SDGs Weltregierung",
+    "status": "PROBLEM",
+    "evidence": "[{\"slug\": \"sdgs-weltregierung\", \"title\": \"SDGs sind Weltregierung?\", \"canonical\": \"https://wirkungsoekonomie.de/wirkungsradar/live/sdgs-weltregierung/\", \"redirect\": false}, {\"slug\": \"sdgs-sind-weltregierung\", \"title\": \"SDGs / Agenda 2030 sind Weltregierung?\", \"canonical\": \"https://wirkungsoekonomie.de/wirkungsradar/live/sdgs-sind-weltregierung/\", \"redirect\": false}]",
+    "action": "Kanonische Zielseite festlegen; Aliasse als Redirect/Canonical umstellen; Kartenlisten nur kanonisch"
+  },
+  {
+    "cluster": "Dubletten/Kanonisierung",
+    "requirement": "Altparteien/Diktatur",
+    "status": "PROBLEM",
+    "evidence": "[{\"slug\": \"altparteien\", \"title\": \"Altparteien?\", \"canonical\": \"https://wirkungsoekonomie.de/wirkungsradar/live/altparteien/\", \"redirect\": false}, {\"slug\": \"altparteiendiktatur\", \"title\": \"Diktatur der Altparteien?\", \"canonical\": \"https://wirkungsoekonomie.de/wirkungsradar/live/altparteiendiktatur/\", \"redirect\": false}, {\"slug\": \"diktatur-der-altparteien\", \"title\": \"Diktatur der Altparteien?\", \"canonical\": \"https://wirkungsoekonomie.de/wirkungsradar/live/diktatur-der-altparteien/\", \"redirect\": false}]",
+    "action": "Kanonische Zielseite festlegen; Aliasse als Redirect/Canonical umstellen; Kartenlisten nur kanonisch"
+  },
+  {
+    "cluster": "Dubletten/Kanonisierung",
+    "requirement": "Remigration",
+    "status": "PROBLEM",
+    "evidence": "[{\"slug\": \"remigration\", \"title\": \"Remigration / Remigrationslotsen?\", \"canonical\": \"https://wirkungsoekonomie.de/wirkungsradar/live/remigration/\", \"redirect\": false}, {\"slug\": \"remigration-remigrationslotsen\", \"title\": \"Remigration / Remigrationslotsen?\", \"canonical\": \"https://wirkungsoekonomie.de/wirkungsradar/live/remigration-remigrationslotsen/\", \"redirect\": false}]",
+    "action": "Kanonische Zielseite festlegen; Aliasse als Redirect/Canonical umstellen; Kartenlisten nur kanonisch"
+  },
+  {
+    "cluster": "Dubletten/Kanonisierung",
+    "requirement": "Leistungsträger ausgepresst",
+    "status": "PROBLEM",
+    "evidence": "[{\"slug\": \"leistungstraeger-werden-ausgepresst\", \"title\": \"Werden Leistungsträger ausgepresst?\", \"canonical\": \"https://wirkungsoekonomie.de/wirkungsradar/live/leistungstraeger-werden-ausgepresst/\", \"redirect\": false}, {\"slug\": \"leistungstraeger-ausgepresst\", \"title\": \"Werden Leistungsträger ausgepresst?\", \"canonical\": \"https://wirkungsoekonomie.de/wirkungsradar/live/leistungstraeger-ausgepresst/\", \"redirect\": false}]",
+    "action": "Kanonische Zielseite festlegen; Aliasse als Redirect/Canonical umstellen; Kartenlisten nur kanonisch"
+  },
+  {
+    "cluster": "Tool-Landschaft",
+    "requirement": "Keine öffentlichen Platzhalter-Toolseiten",
+    "status": "PROBLEM",
+    "evidence": "5 Treffer: werkzeuge/digitale-produktpaesse/index.html, werkzeuge/wirkungsaudit/index.html, werkzeuge/wirkungsdatenraeume/index.html, werkzeuge/wirkungsregister/index.html, werkzeuge/oeffentliche-beschaffung/index.html",
+    "action": "Entweder fachlich ausbauen oder als nicht-prominent/Coming-soon sauber kennzeichnen/aus Listen nehmen"
+  },
+  {
+    "cluster": "Kontakt/Einreichen",
+    "requirement": "Keine falschen/unklaren Mailstrecken in öffentlichen Workflows",
+    "status": "UNKLAR",
+    "evidence": "1263 HTML-Treffer, u.a. index.html, wirkungsoekonomie.html, buch.html, impressum.html, ueber.html, mitmachen.html, datenschutz.html, woek-id-register/index.html",
+    "action": "Klären, ob impact@ existiert; falls nicht: alle CTAs auf Akademie-/Formularstrecken umstellen"
+  },
+  {
+    "cluster": "Download-Härtung",
+    "requirement": "Keine öffentlichen doc/docx/md/rtf Links in HTML",
+    "status": "PROBLEM",
+    "evidence": "1 HTML-Treffer: begriffe/sexarbeit/index.html",
+    "action": "Links auf PDF oder Online-Publikationsseite umstellen"
+  },
+  {
+    "cluster": "Glossar",
+    "requirement": "Glossarseiten vorhanden inkl. Piketty/Kapitalakkumulation",
+    "status": "OK",
+    "evidence": "1727 Begriffsrouten; Piketty/Kapitalakkumulation existieren",
+    "action": ""
+  },
+  {
+    "cluster": "Audio",
+    "requirement": "Audio-Dateien als mp3 vorhanden",
+    "status": "UNKLAR",
+    "evidence": "7 mp3 in assets/audio",
+    "action": "Zuordnung gegen Sprechertextliste stichprobenartig/live prüfen"
+  }
+]

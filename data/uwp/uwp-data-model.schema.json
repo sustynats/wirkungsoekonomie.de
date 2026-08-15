@@ -1,0 +1,189 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wirkungsoekonomie.de/data/uwp/uwp-data-model.schema.json",
+  "title": "UWP-100 Beta Datenmodelle",
+  "description": "Struktur für das Unternehmens-Wirkungsprofil Beta. Der MVP zeigt ohne belegte Beobachtungen keine echten Scores.",
+  "type": "object",
+  "required": [
+    "companies",
+    "company_universe",
+    "documents",
+    "indicators",
+    "observations",
+    "scores",
+    "events",
+    "profiles"
+  ],
+  "properties": {
+    "companies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["company_id", "name", "country", "status"],
+        "properties": {
+          "company_id": { "type": "string" },
+          "name": { "type": "string" },
+          "legal_name": { "type": ["string", "null"] },
+          "lei": { "type": ["string", "null"] },
+          "isin": { "type": ["string", "null"] },
+          "ticker": { "type": ["string", "null"] },
+          "country": { "type": "string" },
+          "sector": { "type": ["string", "null"] },
+          "industry": { "type": ["string", "null"] },
+          "nace": { "type": ["string", "null"] },
+          "index_memberships": { "type": "array", "items": { "type": "string" } },
+          "website": { "type": ["string", "null"] },
+          "ir_url": { "type": ["string", "null"] },
+          "sustainability_url": { "type": ["string", "null"] },
+          "status": { "type": "string" }
+        }
+      }
+    },
+    "company_universe": {
+      "type": "object",
+      "required": ["universe_id", "title", "description", "method", "created_at", "source_note", "companies"],
+      "properties": {
+        "universe_id": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "method": { "type": "string" },
+        "created_at": { "type": "string" },
+        "source_note": { "type": "string" },
+        "companies": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "documents": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["document_id", "company_id", "year", "type", "title"],
+        "properties": {
+          "document_id": { "type": "string" },
+          "company_id": { "type": "string" },
+          "year": { "type": "integer" },
+          "type": { "type": "string" },
+          "title": { "type": "string" },
+          "framework": { "type": ["string", "null"] },
+          "source_url": { "type": ["string", "null"] },
+          "local_path": { "type": ["string", "null"] },
+          "retrieved_at": { "type": ["string", "null"] },
+          "file_hash": { "type": ["string", "null"] },
+          "language": { "type": ["string", "null"] },
+          "assurance_status": { "type": ["string", "null"] },
+          "notes": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "indicators": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["indicator_id", "name", "dimension", "polarity", "method_version"],
+        "properties": {
+          "indicator_id": { "type": "string" },
+          "name": { "type": "string" },
+          "dimension": { "enum": ["mensch", "planet", "demokratie", "transformation", "datenqualitaet"] },
+          "subdimension": { "type": ["string", "null"] },
+          "sdg_or_sdgplus": { "type": ["string", "null"] },
+          "framework_mapping": { "type": ["string", "null"] },
+          "unit": { "type": ["string", "null"] },
+          "polarity": {
+            "enum": [
+              "higher_is_better",
+              "lower_is_better",
+              "target_corridor",
+              "near_zero_better",
+              "binary_compliance",
+              "red_line_event",
+              "disclosure_quality"
+            ]
+          },
+          "benchmark_method": { "type": ["string", "null"] },
+          "required": { "type": "boolean" },
+          "red_line": { "type": "boolean" },
+          "method_version": { "type": "string" }
+        }
+      }
+    },
+    "observations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["observation_id", "company_id", "year", "indicator_id", "extraction_method", "confidence", "data_quality"],
+        "properties": {
+          "observation_id": { "type": "string" },
+          "company_id": { "type": "string" },
+          "year": { "type": "integer" },
+          "indicator_id": { "type": "string" },
+          "raw_value": {},
+          "unit": { "type": ["string", "null"] },
+          "source_document_id": { "type": ["string", "null"] },
+          "source_anchor": { "type": ["string", "null"] },
+          "extraction_method": { "type": "string" },
+          "confidence": { "type": "number" },
+          "data_quality": { "enum": ["hoch", "mittel", "niedrig", "unvollständig"] },
+          "notes": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "scores": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["score_id", "company_id", "year", "indicator_id", "score_0_100", "dimension", "method_version", "data_quality", "red_line_flag"],
+        "properties": {
+          "score_id": { "type": "string" },
+          "company_id": { "type": "string" },
+          "year": { "type": "integer" },
+          "indicator_id": { "type": "string" },
+          "score_0_100": { "type": "number", "minimum": 0, "maximum": 100 },
+          "dimension": { "type": "string" },
+          "method_version": { "type": "string" },
+          "data_quality": { "type": "string" },
+          "red_line_flag": { "type": "boolean" },
+          "notes": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["event_id", "company_id", "date", "event_type", "dimension", "severity", "source_url", "description", "confidence"],
+        "properties": {
+          "event_id": { "type": "string" },
+          "company_id": { "type": "string" },
+          "date": { "type": "string" },
+          "event_type": { "type": "string" },
+          "dimension": { "type": "string" },
+          "severity": { "type": "string" },
+          "source_url": { "type": "string" },
+          "description": { "type": "string" },
+          "confidence": { "type": "number" }
+        }
+      }
+    },
+    "profiles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["company_id", "year", "method_version", "coverage", "red_lines", "created_at"],
+        "properties": {
+          "company_id": { "type": "string" },
+          "year": { "type": "integer" },
+          "method_version": { "type": "string" },
+          "overall_score": { "type": ["number", "null"], "minimum": 0, "maximum": 100 },
+          "mensch_score": { "type": ["number", "null"], "minimum": 0, "maximum": 100 },
+          "planet_score": { "type": ["number", "null"], "minimum": 0, "maximum": 100 },
+          "demokratie_score": { "type": ["number", "null"], "minimum": 0, "maximum": 100 },
+          "transformation_score": { "type": ["number", "null"], "minimum": 0, "maximum": 100 },
+          "data_quality_score": { "type": ["number", "null"], "minimum": 0, "maximum": 100 },
+          "coverage": { "type": "number", "minimum": 0, "maximum": 1 },
+          "red_lines": { "type": "array" },
+          "interpretation": { "type": ["string", "null"] },
+          "created_at": { "type": "string" }
+        }
+      }
+    }
+  }
+}

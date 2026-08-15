@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1100" viewBox="0 0 1800 1100" role="img" aria-labelledby="title desc">
+  <title id="title">6. Kondratieff als Nachhaltigkeitstransformation</title>
+  <desc id="desc">Modellgrafik zur sechsten Kondratieff-Welle. Die Welle ist Nachhaltigkeitstransformation im Sinne der Agenda 2030. KI, Robotik, Automatisierung, Datenräume, Kreislaufwirtschaft, erneuerbare Energien, biobasierte Innovationen, Bildung, Gesundheit und resiliente Wertschöpfung sind Wachstumstreiber. Die Wirkungsökonomie übersetzt Richtung in Wirkung, WÖk-ID, Scorecard, Rückkopplung und Lernen mit dem Ziel positiver Netto-Wirkung für Mensch, Planet und Demokratie.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f6f1e8}
+      .navy{fill:#0b1b36}
+      .green{fill:#2d7f5f}
+      .gold{fill:#c9932e}
+      .coral{fill:#c95a4a}
+      .muted{fill:#5f6268}
+      .line{stroke:#d7d4cc;stroke-width:2;fill:none}
+      .arrow{stroke:#c9932e;stroke-width:4;fill:none;marker-end:url(#arrow)}
+      .card{fill:rgba(255,255,255,.68);stroke:#d7d4cc;stroke-width:2}
+      .card-green{fill:#eaf3ef;stroke:#2d7f5f;stroke-width:2}
+      .card-gold{fill:#f8efd9;stroke:#c9932e;stroke-width:2}
+      .card-coral{fill:#f7e7e2;stroke:#c95a4a;stroke-width:2}
+      .h1{font-family:Georgia,serif;font-size:64px;font-weight:700;letter-spacing:4px}
+      .h2{font-family:Georgia,serif;font-size:34px;font-weight:700}
+      .h3{font-family:Arial,sans-serif;font-size:26px;font-weight:800}
+      .body{font-family:Arial,sans-serif;font-size:22px}
+      .small{font-family:Arial,sans-serif;font-size:18px}
+      .tiny{font-family:Arial,sans-serif;font-size:16px}
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c9932e"/>
+    </marker>
+  </defs>
+  <rect width="1800" height="1100" class="bg"/>
+
+  <text x="900" y="82" class="h1 navy" text-anchor="middle">DER 6. KONDRATIEFF</text>
+  <text x="900" y="124" class="h2 gold" text-anchor="middle">Nachhaltigkeitstransformation als Leitwelle der Agenda 2030</text>
+  <line x1="120" y1="154" x2="1680" y2="154" class="line"/>
+
+  <g transform="translate(120 205)">
+    <rect width="1560" height="118" rx="18" class="card-gold"/>
+    <text x="38" y="48" class="h3 navy">1. Welle</text>
+    <text x="300" y="48" class="h2 navy">Nachhaltigkeitstransformation</text>
+    <text x="300" y="86" class="body muted">nicht als enge Klima- oder Grünwelle, sondern als Agenda-2030-Transformation von Wirtschaft, Staat und Gesellschaft</text>
+  </g>
+
+  <path d="M900 340 L900 386" class="arrow"/>
+
+  <g transform="translate(120 390)">
+    <rect width="1560" height="210" rx="18" class="card"/>
+    <text x="38" y="48" class="h3 navy">2. Wachstumstreiber innerhalb der Welle</text>
+    <g class="body">
+      <rect x="40" y="82" width="130" height="42" rx="21" class="card-green"/><text x="105" y="110" text-anchor="middle" class="body green">KI</text>
+      <rect x="188" y="82" width="160" height="42" rx="21" class="card-green"/><text x="268" y="110" text-anchor="middle" class="body green">Robotik</text>
+      <rect x="366" y="82" width="220" height="42" rx="21" class="card-green"/><text x="476" y="110" text-anchor="middle" class="body green">Automatisierung</text>
+      <rect x="604" y="82" width="180" height="42" rx="21" class="card-green"/><text x="694" y="110" text-anchor="middle" class="body green">Datenräume</text>
+      <rect x="802" y="82" width="240" height="42" rx="21" class="card-green"/><text x="922" y="110" text-anchor="middle" class="body green">Kreislaufwirtschaft</text>
+      <rect x="1060" y="82" width="260" height="42" rx="21" class="card-green"/><text x="1190" y="110" text-anchor="middle" class="body green">erneuerbare Energien</text>
+      <rect x="40" y="142" width="270" height="42" rx="21" class="card-green"/><text x="175" y="170" text-anchor="middle" class="body green">biobasierte Innovationen</text>
+      <rect x="330" y="142" width="150" height="42" rx="21" class="card-green"/><text x="405" y="170" text-anchor="middle" class="body green">Bildung</text>
+      <rect x="500" y="142" width="170" height="42" rx="21" class="card-green"/><text x="585" y="170" text-anchor="middle" class="body green">Gesundheit</text>
+      <rect x="690" y="142" width="290" height="42" rx="21" class="card-green"/><text x="835" y="170" text-anchor="middle" class="body green">resiliente Wertschöpfung</text>
+    </g>
+    <text x="1130" y="168" class="small muted">Technologie liefert Produktivität.</text>
+  </g>
+
+  <path d="M900 615 L900 660" class="arrow"/>
+
+  <g transform="translate(120 670)">
+    <rect width="720" height="180" rx="18" class="card"/>
+    <text x="38" y="48" class="h3 navy">3a. Ordnungsrahmen</text>
+    <text x="38" y="90" class="body muted">Agenda 2030 · SDGs · SDG+</text>
+    <text x="38" y="128" class="body muted">Mensch · Planet · Demokratie</text>
+    <text x="38" y="160" class="small gold">Nachhaltigkeit gibt Richtung.</text>
+  </g>
+  <g transform="translate(960 670)">
+    <rect width="720" height="180" rx="18" class="card-coral"/>
+    <text x="38" y="48" class="h3 navy">3b. Steuerungslogik</text>
+    <text x="38" y="90" class="body muted">Wirkungsökonomie · Wirkung · WÖk-ID</text>
+    <text x="38" y="128" class="body muted">Scorecard · Rückkopplung · Lernen</text>
+    <text x="38" y="160" class="small gold">Wirkungsökonomie macht Richtung steuerbar.</text>
+  </g>
+
+  <path d="M840 760 C890 760 910 760 960 760" class="arrow"/>
+  <path d="M900 865 L900 910" class="arrow"/>
+
+  <g transform="translate(120 920)">
+    <rect width="1560" height="94" rx="18" class="card-green"/>
+    <text x="38" y="58" class="h3 navy">4. Ziel:</text>
+    <text x="180" y="58" class="h2 navy">positive Netto-Wirkung für Mensch, Planet und Demokratie</text>
+  </g>
+
+  <text x="900" y="1060" class="h3 navy" text-anchor="middle">KI und Robotik treiben Wachstum. Die Agenda 2030 gibt Richtung. Die Wirkungsökonomie übersetzt diese Richtung in Steuerung.</text>
+</svg>

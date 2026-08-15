@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,nofollow,noarchive">
+    <title>Bild + Audio zu Video | Wirkungsökonomie</title>
+    <meta name="description" content="Privates Browser-Werkzeug zum Erstellen eines Videos aus Bild und Audio.">
+    <link rel="icon" href="../../assets/img/brand/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../../assets/css/style.css?v=20260612-mobile-table-fix">
+    <style>
+      .private-tool-page {
+        min-height: 100vh;
+        background:
+          linear-gradient(135deg, rgba(255, 252, 245, 0.95), rgba(239, 248, 243, 0.8)),
+          var(--paper);
+      }
+
+      .private-tool-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 1rem var(--space-gutter);
+        border-bottom: 1px solid var(--line);
+        background: rgba(246, 241, 232, 0.92);
+      }
+
+      .private-tool-header .brand {
+        text-decoration: none;
+      }
+
+      .private-tool-lock {
+        color: var(--green-dark);
+        font-size: 0.8rem;
+        font-weight: 900;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .private-tool-main {
+        width: min(1180px, calc(100% - (2 * var(--space-gutter))));
+        margin: 0 auto;
+        padding: clamp(2rem, 5vw, 4rem) 0;
+      }
+
+      .private-tool-hero {
+        display: grid;
+        max-width: 860px;
+        gap: 0.8rem;
+        margin-bottom: clamp(1.4rem, 3vw, 2rem);
+      }
+
+      .private-tool-hero h1 {
+        margin: 0;
+      }
+
+      .private-tool-hero p {
+        max-width: 72ch;
+      }
+
+      .private-video-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+        gap: clamp(1rem, 3vw, 1.6rem);
+        align-items: start;
+      }
+
+      .private-video-panel {
+        display: grid;
+        gap: 1rem;
+        padding: clamp(1rem, 3vw, 1.4rem);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: rgba(255, 252, 245, 0.92);
+        box-shadow: 0 16px 44px rgba(11, 16, 32, 0.06);
+      }
+
+      .private-video-form {
+        display: grid;
+        gap: 1rem;
+      }
+
+      .private-video-field {
+        display: grid;
+        gap: 0.42rem;
+      }
+
+      .private-video-field label,
+      .private-video-label {
+        color: var(--navy);
+        font-size: 0.86rem;
+        font-weight: 850;
+      }
+
+      .private-video-field input,
+      .private-video-field select {
+        width: 100%;
+        min-height: 2.8rem;
+        padding: 0.68rem 0.78rem;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--white);
+        color: var(--navy);
+        font: inherit;
+        font-weight: 680;
+      }
+
+      .private-video-field input[type="file"] {
+        min-height: auto;
+        padding: 0.62rem;
+      }
+
+      .private-video-hint {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.88rem;
+        line-height: 1.55;
+      }
+
+      .private-video-inline {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.85rem;
+      }
+
+      .private-video-check {
+        display: flex;
+        align-items: center;
+        gap: 0.65rem;
+        color: var(--navy);
+        font-weight: 780;
+      }
+
+      .private-video-check input {
+        width: 1.1rem;
+        height: 1.1rem;
+      }
+
+      .private-video-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.7rem;
+        align-items: center;
+      }
+
+      .private-video-progress {
+        width: 100%;
+        height: 0.65rem;
+        overflow: hidden;
+        border: 1px solid rgba(47, 125, 92, 0.24);
+        border-radius: 999px;
+        background: rgba(47, 125, 92, 0.08);
+      }
+
+      .private-video-progress span {
+        display: block;
+        width: 0%;
+        height: 100%;
+        border-radius: inherit;
+        background: var(--green);
+        transition: width 0.2s ease;
+      }
+
+      .private-video-status {
+        min-height: 1.6rem;
+        margin: 0;
+        color: var(--muted);
+        font-weight: 750;
+        line-height: 1.55;
+      }
+
+      .private-video-status[data-tone="error"] {
+        color: #8d2d22;
+      }
+
+      .private-video-status[data-tone="success"] {
+        color: var(--green-dark);
+      }
+
+      .private-video-preview-wrap {
+        display: grid;
+        gap: 0.8rem;
+      }
+
+      .private-video-canvas {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        object-fit: contain;
+        border: 1px solid rgba(11, 16, 32, 0.12);
+        border-radius: 8px;
+        background: #f4efe7;
+      }
+
+      .private-video-export {
+        display: none;
+        width: fit-content;
+      }
+
+      .private-video-export.is-visible {
+        display: inline-flex;
+      }
+
+      .private-video-note {
+        padding: 0.9rem;
+        border: 1px solid rgba(154, 111, 18, 0.24);
+        border-radius: 8px;
+        background: rgba(154, 111, 18, 0.08);
+        color: #5f4309;
+        font-size: 0.92rem;
+        line-height: 1.6;
+      }
+
+      @media (max-width: 860px) {
+        .private-video-grid,
+        .private-video-inline {
+          grid-template-columns: 1fr;
+        }
+
+        .private-tool-header {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body class="private-tool-page">
+    <header class="private-tool-header" data-search-exclude>
+      <a class="brand" href="../../index.html" aria-label="Wirkungsökonomie Startseite">
+        <span class="brand-mark"><img src="../../assets/img/brand/signet.svg" alt="Wirkungsökonomie Logo"></span>
+        <span class="brand-name">Wirkungsökonomie</span>
+      </a>
+      <span class="private-tool-lock">Private Werkzeugseite</span>
+    </header>
+
+    <main class="private-tool-main" data-search-exclude>
+      <section class="private-tool-hero" aria-labelledby="private-video-title">
+        <p class="hero-kicker">Intern</p>
+        <h1 id="private-video-title">Bild und Audio zu Video machen</h1>
+        <p>Dieses Werkzeug erstellt direkt im Browser ein Video aus einem Titelbild und einer Tonspur. Die Dateien werden nicht hochgeladen. Am Ende entsteht eine Videodatei zum Herunterladen.</p>
+        <p class="private-video-note"><strong>Wichtig:</strong> Eine Audio-URL funktioniert nur, wenn sie eine direkte Audiodatei liefert und der Anbieter das Laden im Browser erlaubt. Player-Seiten oder fremde HTTP-Links können blockiert werden. Dann einfach die Audiodatei herunterladen und unten als Datei auswählen.</p>
+      </section>
+
+      <section class="private-video-grid" aria-label="Video erstellen">
+        <article class="private-video-panel">
+          <h2>Eingaben</h2>
+          <form class="private-video-form" id="private-video-form">
+            <div class="private-video-field">
+              <label for="image-file">Bild hochladen</label>
+              <input id="image-file" name="image-file" type="file" accept="image/*" required>
+              <p class="private-video-hint">Quadratische Podcast-Cover, 16:9-Bilder und Hochformate werden automatisch eingepasst.</p>
+            </div>
+
+            <div class="private-video-field">
+              <label for="audio-url">Audio-URL</label>
+              <input id="audio-url" name="audio-url" type="url" inputmode="url" placeholder="https://.../audio.mp3 oder https://play.3bfin.com/song/...">
+              <p class="private-video-hint">Optional. 3bfin-Player-Links werden automatisch auf die MP3-Datei aufgelöst. Wenn eine andere URL nicht lädt, nutze stattdessen den Datei-Upload darunter.</p>
+            </div>
+
+            <div class="private-video-field">
+              <label for="audio-file">Oder Audiodatei hochladen</label>
+              <input id="audio-file" name="audio-file" type="file" accept="audio/*">
+            </div>
+
+            <div class="private-video-inline">
+              <div class="private-video-field">
+                <label for="video-ratio">Format</label>
+                <select id="video-ratio" name="video-ratio">
+                  <option value="square">1:1 Podcast / Cover</option>
+                  <option value="wide">16:9 YouTube</option>
+                  <option value="vertical">9:16 Kurzvideo</option>
+                </select>
+              </div>
+
+              <div class="private-video-field">
+                <label for="image-fit">Bildmodus</label>
+                <select id="image-fit" name="image-fit">
+                  <option value="contain">Ganzes Bild zeigen</option>
+                  <option value="cover">Fläche füllen</option>
+                </select>
+              </div>
+            </div>
+
+            <label class="private-video-check" for="motion-enabled">
+              <input id="motion-enabled" name="motion-enabled" type="checkbox" checked>
+              dezente Bewegung im Standbild
+            </label>
+
+            <div class="private-video-actions">
+              <button class="button button-primary" id="render-button" type="submit">Video erstellen</button>
+              <button class="button button-secondary" id="reset-button" type="button">Zurücksetzen</button>
+            </div>
+          </form>
+        </article>
+
+        <article class="private-video-panel private-video-preview-wrap">
+          <h2>Vorschau und Export</h2>
+          <canvas class="private-video-canvas" id="video-canvas" width="1080" height="1080" aria-label="Videovorschau"></canvas>
+          <div class="private-video-progress" aria-label="Fortschritt"><span id="progress-bar"></span></div>
+          <p class="private-video-status" id="video-status">Bild und Audio auswählen, dann Video erstellen.</p>
+          <div class="private-video-actions">
+            <a class="button button-primary private-video-export" id="download-link" href="#" download="video.webm">Video herunterladen</a>
+            <button class="button button-secondary private-video-export" id="share-button" type="button">Teilen / In Fotos sichern</button>
+          </div>
+          <p class="private-video-hint">Der Browser entscheidet, ob MP4 oder WebM erzeugt werden kann. Auf iPhone und iPad öffnet „Teilen“ das Systemmenü; dort kannst du „Video sichern“ wählen.</p>
+        </article>
+      </section>
+    </main>
+
+    <script src="../../assets/js/private-image-audio-video.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "buildCommand": "next build",
+  "crons": [
+    {
+      "path": "/api/cron/historical-backfill",
+      "schedule": "20 2 * * *"
+    },
+    {
+      "path": "/api/cron/upcoming-preparation",
+      "schedule": "50 2 * * *"
+    }
+  ]
+}
