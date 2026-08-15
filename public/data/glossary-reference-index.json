@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-14T09:44:24.330Z",
-  "count": 2123,
+  "generatedAt": "2026-08-15T00:01:13.735Z",
+  "count": 2137,
   "letters": [
     "#",
     "A",
@@ -57,6 +57,7 @@
       "ai-act",
       "akkumulation",
       "akkumulator",
+      "aktivitaet",
       "alan-watts-daoismus",
       "alarm-frame",
       "algorithmische-fairness",
@@ -119,6 +120,7 @@
       "aufstocker",
       "aufwaertswettbewerb",
       "ausland-statt-inland-narrativ",
+      "ausloeser",
       "austeritaet",
       "autokratie",
       "autokratisierung",
@@ -142,6 +144,7 @@
       "bandluecke",
       "bandwagon-effekt",
       "barrier-bow-tie-und-kontrollwirksamkeitskarte",
+      "baseline",
       "baseline-verschiebung",
       "basisinnovation",
       "batterie",
@@ -269,6 +272,7 @@
       "contracts-for-difference",
       "cooling-off-regel",
       "corporate-capture",
+      "counterfactual",
       "cradle-to-cradle",
       "cradle-to-gate",
       "cradle-to-grave",
@@ -743,6 +747,7 @@
       "ilo-kernarbeitsnormen",
       "immanuel-kant",
       "immobilien",
+      "impact",
       "impact-benefits-realization",
       "impact-fit",
       "impact-investing",
@@ -771,6 +776,7 @@
       "innere-loops",
       "innovation",
       "innovativer-unternehmer",
+      "input",
       "insetting",
       "inside-out-outside-in",
       "institutionelle-vertrauenswuerdigkeit",
@@ -795,6 +801,7 @@
       "intertemporale-freiheitssicherung",
       "invention",
       "investitionsschuld",
+      "iooi",
       "ipbes",
       "ipcc",
       "iro",
@@ -888,6 +895,7 @@
       "kontinuierliche-wirkungsverbesserung",
       "kontinuitaets-recovery-und-wirkungsresilienzplan",
       "kontraindikation",
+      "kontribution",
       "kontrollbeduerfnis",
       "konzessionsabgabe",
       "kooperationsfaehigkeit",
@@ -1251,6 +1259,7 @@
       "peter-drucker",
       "pfadabhaengigkeit",
       "pflege-als-wirkleistung",
+      "phineo-wirkungslogik",
       "photoelektrischer-effekt",
       "photovoltaik",
       "physical-climate-risk",
@@ -1409,6 +1418,7 @@
       "redispatch",
       "redispatch-2-0",
       "redox-flow-batterie",
+      "referenzrahmen",
       "referenzrahmen-und-standardmapping",
       "refinanzierung",
       "refinanzierungsresilienz",
@@ -1736,6 +1746,7 @@
       "territorialbilanz",
       "drain-the-swamp",
       "theokratie",
+      "theory-of-change",
       "thermal-runaway",
       "thermischer-strompfad",
       "thermisches-kraftwerk",
@@ -1964,6 +1975,7 @@
       "wirkungs-product-operating-model-canvas",
       "wirkungs-systemstresstest",
       "wirkungsabwehr",
+      "wirkungsanalyse",
       "wirkungsanalyse-von-sprache",
       "wirkungsarchitektur",
       "wirkungsassurance",
@@ -2127,6 +2139,7 @@
       "wirkungstransformations-portfolio",
       "wirkungstransformations-roadmap",
       "wirkungstransparenzbericht",
+      "wirkungstreppe",
       "wirkungsumsatzsteuer",
       "wirkungsverantwortung",
       "wirkungsvermietung",
@@ -2164,6 +2177,7 @@
       "woek-ids",
       "woek-indikatorenarchitektur",
       "normative-wirkungsarchitektur",
+      "wirkungsrad",
       "woemm-betriebssystem",
       "woemm-managementfunktion",
       "woems-auftragsklaerung",
@@ -2463,6 +2477,21 @@
         "Akkumulator / Akku",
         "Akku",
         "Akkumulator"
+      ]
+    },
+    {
+      "id": "aktivitaet",
+      "label": "Aktivität",
+      "slug": "aktivitaet",
+      "url": "/begriffe/aktivitaet/",
+      "category": "Grundbegriff",
+      "shortDefinition": "Aktivität bezeichnet das konkrete Handeln, durch das Inputs mobilisiert werden, um Leistungen oder Veränderungen zu ermöglichen.",
+      "aliases": [
+        "Aktivität",
+        "Handlung",
+        "Intervention",
+        "Maßnahme",
+        "Durchführung"
       ]
     },
     {
@@ -3226,6 +3255,20 @@
       ]
     },
     {
+      "id": "ausloeser",
+      "label": "Auslöser",
+      "slug": "ausloeser",
+      "url": "/begriffe/ausloeser/",
+      "category": "Grundbegriff",
+      "shortDefinition": "Ein Auslöser ist eine Handlung, ein Unterlassen, ein Produkt, ein Gesetz, ein Preis, ein Narrativ, eine Technologie, ein Kapitalfluss oder ein anderes Ereignis, das Wirkung hervorrufen kann.",
+      "aliases": [
+        "Auslöser",
+        "Wirkungsauslöser",
+        "Trigger",
+        "Ausgangshandlung"
+      ]
+    },
+    {
       "id": "aeussere-loops",
       "label": "Äußere Loops",
       "slug": "aeussere-loops",
@@ -3459,6 +3502,20 @@
       "shortDefinition": "Gefahren, Ursachen, präventive und reaktive Barrieren sowie Konsequenzen systematisch verbinden.",
       "aliases": [
         "Barrier-, Bow-Tie- und Kontrollwirksamkeitskarte"
+      ]
+    },
+    {
+      "id": "baseline",
+      "label": "Baseline",
+      "slug": "baseline",
+      "url": "/begriffe/baseline/",
+      "category": "Messbegriff",
+      "shortDefinition": "Eine Baseline beschreibt die Ausgangsbedingungen vor einer Intervention oder zu Beginn eines Beobachtungszeitraums, gegen die spätere Veränderungen verglichen werden.",
+      "aliases": [
+        "Baseline",
+        "Ausgangswert",
+        "Ausgangszustand",
+        "Referenzwert vor Intervention"
       ]
     },
     {
@@ -4972,6 +5029,20 @@
       "shortDefinition": "Corporate Capture beschreibt die Vereinnahmung politischer, regulatorischer oder öffentlicher Prozesse durch Unternehmensinteressen.",
       "aliases": [
         "Corporate Capture"
+      ]
+    },
+    {
+      "id": "counterfactual",
+      "label": "Counterfactual",
+      "slug": "counterfactual",
+      "url": "/begriffe/counterfactual/",
+      "category": "Messbegriff",
+      "shortDefinition": "Ein Counterfactual beschreibt den plausiblen Vergleichsfall, was ohne eine betrachtete Maßnahme, Intervention oder Entscheidung wahrscheinlich passiert wäre.",
+      "aliases": [
+        "Counterfactual",
+        "Kontrafaktisches Szenario",
+        "Was wäre ohne die Maßnahme passiert?",
+        "Gegenhypothese"
       ]
     },
     {
@@ -10757,6 +10828,21 @@
       ]
     },
     {
+      "id": "impact",
+      "label": "Impact",
+      "slug": "impact",
+      "url": "/begriffe/impact/",
+      "category": "Grundbegriff",
+      "shortDefinition": "Impact ist ein etablierter, je nach Fachfeld unterschiedlich verwendeter Begriff für höherstufige, längerfristige oder breitere Wirkungen.",
+      "aliases": [
+        "Impact",
+        "höherstufige Wirkung",
+        "langfristige Wirkung",
+        "breitere Wirkung",
+        "gesellschaftlicher Impact"
+      ]
+    },
+    {
       "id": "impact-benefits-realization",
       "label": "Impact & Benefits Realization",
       "slug": "impact-benefits-realization",
@@ -11122,6 +11208,20 @@
       ]
     },
     {
+      "id": "input",
+      "label": "Input",
+      "slug": "input",
+      "url": "/begriffe/input/",
+      "category": "Grundbegriff",
+      "shortDefinition": "Input bezeichnet die Ressourcen, die für eine Aktivität, ein Projekt, ein Produkt, eine Organisation oder eine Intervention eingesetzt werden.",
+      "aliases": [
+        "Input",
+        "Ressourceneinsatz",
+        "eingesetzte Ressourcen",
+        "Mittelinput"
+      ]
+    },
+    {
       "id": "insetting",
       "label": "Insetting",
       "slug": "insetting",
@@ -11417,6 +11517,23 @@
         "Investitionsrückstand",
         "Investitionsrueckstand",
         "Infrastrukturschuld"
+      ]
+    },
+    {
+      "id": "iooi",
+      "label": "IOOI",
+      "slug": "iooi",
+      "url": "/begriffe/iooi/",
+      "category": "Grundbegriff",
+      "shortDefinition": "IOOI steht für Input, Output, Outcome und Impact. Das etablierte Logikmodell ordnet den Weg von eingesetzten Ressourcen über erbrachte Leistungen zu eingetretenen Veränderungen und höherstufigen Wirkungen.",
+      "aliases": [
+        "IOOI",
+        "I-O-O-I",
+        "Input Output Outcome Impact",
+        "Results Chain",
+        "Logic Model",
+        "Wirkungslogik",
+        "Wirkungskette"
       ]
     },
     {
@@ -12489,6 +12606,20 @@
       "shortDefinition": "Eine Kontraindikation ist ein Umstand, der gegen die Anwendung einer Maßnahme spricht, weil Risiken, Schäden oder ungeeignete Bedingungen überwiegen.",
       "aliases": [
         "Kontraindikation"
+      ]
+    },
+    {
+      "id": "kontribution",
+      "label": "Kontribution",
+      "slug": "kontribution",
+      "url": "/begriffe/kontribution/",
+      "category": "Messbegriff",
+      "shortDefinition": "Kontribution beschreibt den plausiblen Beitrag einer Maßnahme zu einer beobachteten Veränderung, ohne zu behaupten, sie sei deren alleinige Ursache.",
+      "aliases": [
+        "Kontribution",
+        "Beitrag zur Wirkung",
+        "Contribution",
+        "Wirkungsbeitrag"
       ]
     },
     {
@@ -16326,7 +16457,10 @@
       "category": "Grundbegriff",
       "shortDefinition": "Outcome bezeichnet die bei Zielgruppen oder Systemen eingetretene Veränderung und ist von Leistungserbringung und bloßem Output zu unterscheiden.",
       "aliases": [
-        "Outcome"
+        "Outcome",
+        "eingetretene Veränderung",
+        "Ergebnis bei Zielgruppen",
+        "Wirkungsebene"
       ]
     },
     {
@@ -16370,7 +16504,10 @@
       "category": "Grundbegriff",
       "shortDefinition": "Output ist die unmittelbar erbrachte Leistung oder Menge einer Maßnahme, etwa Teilnehmende, Beratungen oder gebaute Einheiten; er belegt noch keine Wirkung.",
       "aliases": [
-        "Output"
+        "Output",
+        "Leistungsergebnis",
+        "direktes Ergebnis",
+        "unmittelbare Leistung"
       ]
     },
     {
@@ -16695,6 +16832,22 @@
         "Pflegewirkung",
         "Care als Wirkleistung",
         "Pflege als Wirkungsinfrastruktur"
+      ]
+    },
+    {
+      "id": "phineo-wirkungslogik",
+      "label": "PHINEO / PHINEO-Wirkungslogik",
+      "slug": "phineo-wirkungslogik",
+      "url": "/begriffe/phineo-wirkungslogik/",
+      "category": "Management, Wirksamkeit und Organisation",
+      "shortDefinition": "PHINEO ist ein etablierter Akteur für Wirkungsorientierung, Wirkungsmanagement und Wirkungsanalyse. Seine Wirkungslogik arbeitet unter anderem mit Wirkungszielen und der IOOI-Abfolge aus Input, Output, Outcome und Impact, um Wirkpfade von Projekten, Organisationen und Investitionen zu strukturieren und zu überprüfen. Die Wirkungsökonomie verwendet solche Ansätze als wichtige methodische Bausteine und ordnet sie in eine systemische Bewertungs- und Steuerungsarchitektur ein.",
+      "aliases": [
+        "PHINEO / PHINEO-Wirkungslogik",
+        "PHINEO",
+        "PHINEO Wirkung",
+        "PHINEO Wirkungslogik",
+        "PHINEO IOOI",
+        "Wirkungsökonomie PHINEO"
       ]
     },
     {
@@ -18585,6 +18738,20 @@
       "shortDefinition": "Redox-Flow-Batterien speichern Energie in flüssigen Elektrolyten, die durch eine elektrochemische Zelle gepumpt werden.",
       "aliases": [
         "Redox-Flow-Batterie"
+      ]
+    },
+    {
+      "id": "referenzrahmen",
+      "label": "Referenzrahmen",
+      "slug": "referenzrahmen",
+      "url": "/begriffe/referenzrahmen/",
+      "category": "Bewertungsbegriff",
+      "shortDefinition": "Ein Referenzrahmen legt offen, anhand welcher Ziele, Grenzen, Benchmarks oder gesellschaftlichen Normen eine Wirkung bewertet wird.",
+      "aliases": [
+        "Referenzrahmen",
+        "Bewertungsrahmen",
+        "normativer Referenzrahmen",
+        "Wirkungsmaßstab"
       ]
     },
     {
@@ -22622,6 +22789,20 @@
       ]
     },
     {
+      "id": "theory-of-change",
+      "label": "Theory of Change",
+      "slug": "theory-of-change",
+      "url": "/begriffe/theory-of-change/",
+      "category": "Grundbegriff",
+      "shortDefinition": "Eine Theory of Change beschreibt, warum und unter welchen Bedingungen eine Intervention zu einer angestrebten Veränderung führen soll.",
+      "aliases": [
+        "Theory of Change",
+        "ToC",
+        "Theorie des Wandels",
+        "Veränderungstheorie"
+      ]
+    },
+    {
       "id": "thermal-runaway",
       "label": "Thermal Runaway",
       "slug": "thermal-runaway",
@@ -24619,7 +24800,10 @@
       "category": "Glossar-Erweiterung",
       "shortDefinition": "Wechselwirkung bezeichnet allgemein, dass Systeme, Akteure oder Zustände nicht isoliert bleiben, sondern aufeinander einwirken und sich gegenseitig verändern.",
       "aliases": [
-        "Wechselwirkung"
+        "Wechselwirkung",
+        "Interaktionseffekt",
+        "gegenseitige Beeinflussung",
+        "Systemwechselwirkung"
       ]
     },
     {
@@ -24986,9 +25170,12 @@
       "slug": "wirkmechanismus",
       "url": "/begriffe/wirkmechanismus/",
       "category": "Grundbegriff",
-      "shortDefinition": "Ein Wirkmechanismus beschreibt, wie ein Auslöser über Bedingungen, Akteure und Rückkopplungen Wirkung erzeugen kann.",
+      "shortDefinition": "Ein Wirkmechanismus beschreibt, wie eine Wirkung entstehen soll oder entstehen kann.",
       "aliases": [
         "Wirkmechanismus",
+        "Wirkungsmechanik",
+        "kausaler Mechanismus",
+        "Mechanismus des Wirkpfads",
         "Wirkungsmechanismus"
       ]
     },
@@ -25054,11 +25241,12 @@
       "label": "Wirkstoff",
       "slug": "wirkstoff",
       "url": "/begriffe/wirkstoff/",
-      "category": "Psychologische und systemische Wirkmechanismen",
-      "shortDefinition": "Wirkstoff ist in der WÖk eine didaktische Analogie für einen Auslöser mit Wirkungspotenzial.",
+      "category": "Grundbegriff",
+      "shortDefinition": "Wirkstoff ist in der Wirkungsökonomie eine didaktische Analogie für einen Auslöser mit Wirkungspotenzial.",
       "aliases": [
         "Wirkstoff",
-        "gesellschaftlicher Wirkstoff"
+        "gesellschaftlicher Wirkstoff",
+        "Wirkstoff als Analogie"
       ]
     },
     {
@@ -25290,6 +25478,20 @@
       ]
     },
     {
+      "id": "wirkungsanalyse",
+      "label": "Wirkungsanalyse",
+      "slug": "wirkungsanalyse",
+      "url": "/begriffe/wirkungsanalyse/",
+      "category": "Messbegriff",
+      "shortDefinition": "Wirkungsanalyse untersucht, welche Zustandsveränderungen entstehen oder entstehen können, wen sie betreffen, wodurch sie zustande kommen und wie belastbar die Evidenz ist.",
+      "aliases": [
+        "Wirkungsanalyse",
+        "Impact Analysis",
+        "Wirkungsuntersuchung",
+        "Analyse von Wirkpfaden"
+      ]
+    },
+    {
       "id": "wirkungsanalyse-von-sprache",
       "label": "Wirkungsanalyse von Sprache",
       "slug": "wirkungsanalyse-von-sprache",
@@ -25460,7 +25662,8 @@
         "Wirkungsprüfung",
         "Wirkungsanalyse",
         "Bewertung von Wirkung",
-        "Wirkungs-Scoring"
+        "Wirkungs-Scoring",
+        "normative Wirkungseinordnung"
       ]
     },
     {
@@ -26266,7 +26469,10 @@
       "category": "WÖk-Präzisierungsbegriff / Methodenbegriff",
       "shortDefinition": "Eine Wirkungskette beschreibt den Zusammenhang von Auslöser, Input, Aktivität, Output, Outcome, Impact, Nebenwirkungen und Rückkopplung. Sie macht sichtbar, wie aus Handlung tatsächliche Zustandsveränderung entstehen soll.",
       "aliases": [
-        "Wirkungskette"
+        "Wirkungskette",
+        "Results Chain",
+        "Impact Chain",
+        "IOOI-Kette"
       ]
     },
     {
@@ -26470,7 +26676,10 @@
       "category": "WÖk-Präzisierungsbegriff / Prüfbegriff",
       "shortDefinition": "Ein Wirkungsnachweis ist die nachvollziehbare Begründung oder Messung, dass eine Handlung, Ausgabe, Investition oder Regel eine bestimmte Zustandsveränderung erzeugt oder plausibel ermöglicht hat.",
       "aliases": [
-        "Wirkungsnachweis"
+        "Wirkungsnachweis",
+        "Impact Evidence",
+        "Wirksamkeitsnachweis",
+        "Nachweis eingetretener Wirkung"
       ]
     },
     {
@@ -27530,6 +27739,20 @@
       ]
     },
     {
+      "id": "wirkungstreppe",
+      "label": "Wirkungstreppe",
+      "slug": "wirkungstreppe",
+      "url": "/begriffe/wirkungstreppe/",
+      "category": "Grundbegriff",
+      "shortDefinition": "Die Wirkungstreppe ist eine didaktische Darstellung von Wirkungsstufen. Sie ordnet Aktivitäten, Outputs, Outcomes und gesellschaftliche Wirkung in aufeinander aufbauende Ebenen.",
+      "aliases": [
+        "Wirkungstreppe",
+        "PHINEO-Wirkungstreppe",
+        "Wirkungsstufen",
+        "Wirkungslogik als Stufenmodell"
+      ]
+    },
+    {
       "id": "wirkungsumsatzsteuer",
       "label": "Wirkungsumsatzsteuer",
       "slug": "wirkungsumsatzsteuer",
@@ -28008,6 +28231,20 @@
         "Normative Wirkungsarchitektur",
         "Mehrebenen-Referenzrahmen",
         "normativer Referenzrahmen"
+      ]
+    },
+    {
+      "id": "wirkungsrad",
+      "label": "WÖk-Wirkungsrad",
+      "slug": "wirkungsrad",
+      "url": "/begriffe/wirkungsrad/",
+      "category": "Architekturbegriff",
+      "shortDefinition": "Das WÖk-Wirkungsrad ist ein Lernmodell, das Vorwirkung, Wirkungsermittlung, Bewertung, Schutz, Rückkopplung und neue Systemzustände als rekursiven Kreislauf verbindet.",
+      "aliases": [
+        "WÖk-Wirkungsrad",
+        "Wirkungsrad",
+        "Wirkungsrad der Wirkungsökonomie",
+        "lernendes Wirkungsrad"
       ]
     },
     {

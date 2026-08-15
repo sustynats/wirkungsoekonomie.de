@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T09:44:24.123Z",
+  "generatedAt": "2026-08-15T00:01:13.541Z",
   "links": {
     "fuenftes-p-planet": {
       "label": "5. P = Planet",
@@ -522,6 +522,35 @@
       "relatedTerms": [
         "batterie",
         "zyklenfestigkeit"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "aktivitaet": {
+      "label": "Aktivität",
+      "slug": "aktivitaet",
+      "url": "/begriffe/aktivitaet/",
+      "hoverDefinition": "Aktivität ist das konkrete Handeln zwischen Input und Output, etwa ein Projekt, eine Dienstleistung, ein Gesetz oder eine Investition.",
+      "shortDefinition": "Aktivität bezeichnet das konkrete Handeln, durch das Inputs mobilisiert werden, um Leistungen oder Veränderungen zu ermöglichen.",
+      "category": "Grundbegriff",
+      "synonyms": [
+        "Aktivität",
+        "Handlung",
+        "Intervention",
+        "Maßnahme",
+        "Durchführung"
+      ],
+      "relatedTerms": [
+        "ausloeser",
+        "input",
+        "output",
+        "iooi",
+        "wirkmechanismus",
+        "wirkungspotenzial",
+        "wirkung"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -2306,6 +2335,34 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "ausloeser": {
+      "label": "Auslöser",
+      "slug": "ausloeser",
+      "url": "/begriffe/ausloeser/",
+      "hoverDefinition": "Ein Auslöser kann einen Wirkpfad in Gang setzen, ist aber selbst noch keine Wirkung.",
+      "shortDefinition": "Ein Auslöser ist eine Handlung, ein Unterlassen, ein Produkt, ein Gesetz, ein Preis, ein Narrativ, eine Technologie, ein Kapitalfluss oder ein anderes Ereignis, das Wirkung hervorrufen kann.",
+      "category": "Grundbegriff",
+      "synonyms": [
+        "Auslöser",
+        "Wirkungsauslöser",
+        "Trigger",
+        "Ausgangshandlung"
+      ],
+      "relatedTerms": [
+        "wirkstoff",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkmechanismus",
+        "aktivitaet",
+        "wirkpfad",
+        "wirkung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "aeussere-loops": {
       "label": "Äußere Loops",
       "slug": "aeussere-loops",
@@ -2846,6 +2903,32 @@
         "evidenz-und-annahmenregister",
         "wirkungsoekonomisches-methodensystem",
         "wirkungsoekonomisches-managementmodell"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "baseline": {
+      "label": "Baseline",
+      "slug": "baseline",
+      "url": "/begriffe/baseline/",
+      "hoverDefinition": "Die Baseline macht sichtbar, was sich gegenüber dem Ausgangszustand verändert hat; ohne sie bleibt Wirkung oft unklar.",
+      "shortDefinition": "Eine Baseline beschreibt die Ausgangsbedingungen vor einer Intervention oder zu Beginn eines Beobachtungszeitraums, gegen die spätere Veränderungen verglichen werden.",
+      "category": "Messbegriff",
+      "synonyms": [
+        "Baseline",
+        "Ausgangswert",
+        "Ausgangszustand",
+        "Referenzwert vor Intervention"
+      ],
+      "relatedTerms": [
+        "wirkungsanalyse",
+        "wirkungsnachweis",
+        "counterfactual",
+        "attributionsforschung",
+        "datenqualitaet"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -6160,6 +6243,32 @@
         "systemverzerrender-lobbyismus",
         "marktmacht",
         "ngo-capture"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "counterfactual": {
+      "label": "Counterfactual",
+      "slug": "counterfactual",
+      "url": "/begriffe/counterfactual/",
+      "hoverDefinition": "Der Counterfactual prüft, was ohne die Maßnahme passiert wäre; er hilft, beobachtete Veränderung nicht vorschnell zuzuschreiben.",
+      "shortDefinition": "Ein Counterfactual beschreibt den plausiblen Vergleichsfall, was ohne eine betrachtete Maßnahme, Intervention oder Entscheidung wahrscheinlich passiert wäre.",
+      "category": "Messbegriff",
+      "synonyms": [
+        "Counterfactual",
+        "Kontrafaktisches Szenario",
+        "Was wäre ohne die Maßnahme passiert?",
+        "Gegenhypothese"
+      ],
+      "relatedTerms": [
+        "baseline",
+        "wirkungsanalyse",
+        "wirkungsnachweis",
+        "attributionsforschung",
+        "kontribution"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -19315,6 +19424,36 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "impact": {
+      "label": "Impact",
+      "slug": "impact",
+      "url": "/begriffe/impact/",
+      "hoverDefinition": "Impact bezeichnet meist breitere oder längerfristige Wirkung; er ist nicht automatisch positiv und kein Synonym für bloße Reichweite.",
+      "shortDefinition": "Impact ist ein etablierter, je nach Fachfeld unterschiedlich verwendeter Begriff für höherstufige, längerfristige oder breitere Wirkungen.",
+      "category": "Grundbegriff",
+      "synonyms": [
+        "Impact",
+        "höherstufige Wirkung",
+        "langfristige Wirkung",
+        "breitere Wirkung",
+        "gesellschaftlicher Impact"
+      ],
+      "relatedTerms": [
+        "iooi",
+        "outcome",
+        "wirkung",
+        "transformationswirkung",
+        "wirkungsbewertung",
+        "wirkungsnachweis",
+        "impact-management",
+        "impact-controlling"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "impact-benefits-realization": {
       "label": "Impact & Benefits Realization",
       "slug": "impact-benefits-realization",
@@ -19527,7 +19666,11 @@
         "datenqualitaet",
         "steuerungsdaten",
         "wirkungsdatenraum",
-        "wirkungsrueckkopplung"
+        "wirkungsrueckkopplung",
+        "iooi",
+        "wirkungsanalyse",
+        "wirkungsbewertung",
+        "referenzrahmen"
       ],
       "relatedMethods": [
         "Impact Controlling",
@@ -20122,6 +20265,34 @@
         "positive-netto-wirkung",
         "wirkungsrisiko",
         "rueckkopplungsfaehigkeit"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "input": {
+      "label": "Input",
+      "slug": "input",
+      "url": "/begriffe/input/",
+      "hoverDefinition": "Input sind eingesetzte Ressourcen wie Geld, Zeit, Personal, Material, Energie, Daten oder Infrastruktur; sie sind noch keine Wirkung.",
+      "shortDefinition": "Input bezeichnet die Ressourcen, die für eine Aktivität, ein Projekt, ein Produkt, eine Organisation oder eine Intervention eingesetzt werden.",
+      "category": "Grundbegriff",
+      "synonyms": [
+        "Input",
+        "Ressourceneinsatz",
+        "eingesetzte Ressourcen",
+        "Mittelinput"
+      ],
+      "relatedTerms": [
+        "iooi",
+        "aktivitaet",
+        "output",
+        "ausloeser",
+        "wirkungsanalyse",
+        "wirkung",
+        "wirkungsbewertung"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -20794,6 +20965,51 @@
       "relatedDocuments": [
         "schulden-machen-oder-sparen"
       ],
+      "relatedObjections": []
+    },
+    "iooi": {
+      "label": "IOOI",
+      "slug": "iooi",
+      "url": "/begriffe/iooi/",
+      "hoverDefinition": "IOOI ordnet Input, Output, Outcome und Impact als Wirkpfad; es ist allein noch kein Wirkungsnachweis, Bewertungs- oder Steuerungssystem.",
+      "shortDefinition": "IOOI steht für Input, Output, Outcome und Impact. Das etablierte Logikmodell ordnet den Weg von eingesetzten Ressourcen über erbrachte Leistungen zu eingetretenen Veränderungen und höherstufigen Wirkungen.",
+      "category": "Grundbegriff",
+      "synonyms": [
+        "IOOI",
+        "I-O-O-I",
+        "Input Output Outcome Impact",
+        "Results Chain",
+        "Logic Model",
+        "Wirkungslogik",
+        "Wirkungskette"
+      ],
+      "relatedTerms": [
+        "ausloeser",
+        "wirkstoff",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkmechanismus",
+        "input",
+        "aktivitaet",
+        "output",
+        "outcome",
+        "impact",
+        "wirkung",
+        "wirkpfad",
+        "wirkungskette",
+        "theory-of-change",
+        "wirkungsbewertung",
+        "referenzrahmen",
+        "netto-wirkung",
+        "transformationswirkung",
+        "wirkungsrueckkopplung",
+        "phineo-wirkungslogik",
+        "impact-of-investment"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
       "relatedObjections": []
     },
     "ipbes": {
@@ -23188,6 +23404,32 @@
       "relatedTerms": [
         "wirkungsrisiko",
         "rote-linien"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "kontribution": {
+      "label": "Kontribution",
+      "slug": "kontribution",
+      "url": "/begriffe/kontribution/",
+      "hoverDefinition": "Kontribution fragt nach dem Beitrag einer Maßnahme unter mehreren Ursachen; sie ist vorsichtiger als die vollständige Attribution.",
+      "shortDefinition": "Kontribution beschreibt den plausiblen Beitrag einer Maßnahme zu einer beobachteten Veränderung, ohne zu behaupten, sie sei deren alleinige Ursache.",
+      "category": "Messbegriff",
+      "synonyms": [
+        "Kontribution",
+        "Beitrag zur Wirkung",
+        "Contribution",
+        "Wirkungsbeitrag"
+      ],
+      "relatedTerms": [
+        "attributionsforschung",
+        "counterfactual",
+        "wirkungsnachweis",
+        "wirkungsanalyse",
+        "zurechnung-ohne-scheingenauigkeit"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -28698,15 +28940,20 @@
       "label": "Nebenwirkung",
       "slug": "nebenwirkung",
       "url": "/begriffe/nebenwirkung/",
-      "hoverDefinition": "Eine Nebenwirkung ist eine zusätzliche, oft unbeabsichtigte direkte oder indirekte Folge einer Maßnahme, Entscheidung oder Kommunikation.",
+      "hoverDefinition": "Nebenwirkungen sind zusätzliche Folgen eines Wirkpfads und können erwünscht, unerwünscht, positiv oder negativ sein; ihre Bewertung muss offengelegt werden.",
       "shortDefinition": "Eine Nebenwirkung ist eine zusätzliche, oft unbeabsichtigte direkte oder indirekte Folge einer Maßnahme, Entscheidung oder Kommunikation.",
       "category": "Grundbegriff",
       "synonyms": [
         "Nebenwirkung"
       ],
       "relatedTerms": [
-        "folgewirkung",
-        "wirkungsrisiko"
+        "wechselwirkung",
+        "rebound-effekt",
+        "wirkungsrisiko",
+        "netto-wirkung",
+        "wirkungsgrenze",
+        "nichtkompensationsprinzip",
+        "folgewirkung"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -31834,15 +32081,26 @@
       "label": "Outcome",
       "slug": "outcome",
       "url": "/begriffe/outcome/",
-      "hoverDefinition": "Outcome bezeichnet die bei Zielgruppen oder Systemen eingetretene Veränderung und ist von Leistungserbringung und bloßem Output zu unterscheiden.",
+      "hoverDefinition": "Outcome ist eine eingetretene Veränderung und damit Wirkung, nicht nur eine erbrachte Leistung oder ein erreichter Output.",
       "shortDefinition": "Outcome bezeichnet die bei Zielgruppen oder Systemen eingetretene Veränderung und ist von Leistungserbringung und bloßem Output zu unterscheiden.",
       "category": "Grundbegriff",
       "synonyms": [
-        "Outcome"
+        "Outcome",
+        "eingetretene Veränderung",
+        "Ergebnis bei Zielgruppen",
+        "Wirkungsebene"
       ],
       "relatedTerms": [
+        "iooi",
         "output",
-        "wirkung"
+        "impact",
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungsnachweis",
+        "wirkungsanalyse",
+        "wirkungsbewertung",
+        "attributionsforschung",
+        "kontribution"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -31926,15 +32184,24 @@
       "label": "Output",
       "slug": "output",
       "url": "/begriffe/output/",
-      "hoverDefinition": "Output ist die unmittelbar erbrachte Leistung oder Menge einer Maßnahme, etwa Teilnehmende, Beratungen oder gebaute Einheiten; er belegt noch keine Wirkung.",
+      "hoverDefinition": "Output ist eine erbrachte Leistung, nicht automatisch Wirkung: Teilnahmen, Produkte oder Beratungen belegen noch keine Zustandsveränderung.",
       "shortDefinition": "Output ist die unmittelbar erbrachte Leistung oder Menge einer Maßnahme, etwa Teilnehmende, Beratungen oder gebaute Einheiten; er belegt noch keine Wirkung.",
       "category": "Grundbegriff",
       "synonyms": [
-        "Output"
+        "Output",
+        "Leistungsergebnis",
+        "direktes Ergebnis",
+        "unmittelbare Leistung"
       ],
       "relatedTerms": [
+        "iooi",
+        "input",
+        "aktivitaet",
         "outcome",
-        "wirkung"
+        "impact",
+        "wirkung",
+        "wirkungskette",
+        "wirkungstreppe"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -32646,6 +32913,57 @@
       "relatedDocuments": [
         "referenz-kapitel-069-pflege"
       ],
+      "relatedObjections": []
+    },
+    "phineo-wirkungslogik": {
+      "label": "PHINEO / PHINEO-Wirkungslogik",
+      "slug": "phineo-wirkungslogik",
+      "url": "/begriffe/phineo-wirkungslogik/",
+      "hoverDefinition": "PHINEO verbindet Wirkungsziele, IOOI und Wirkungsmanagement; die WÖk ordnet diese Methoden in einen gemeinsamen Referenz-, Bewertungs- und Rückkopplungsrahmen ein.",
+      "shortDefinition": "PHINEO ist ein etablierter Akteur für Wirkungsorientierung, Wirkungsmanagement und Wirkungsanalyse. Seine Wirkungslogik arbeitet unter anderem mit Wirkungszielen und der IOOI-Abfolge aus Input, Output, Outcome und Impact, um Wirkpfade von Projekten, Organisationen und Investitionen zu strukturieren und zu überprüfen. Die Wirkungsökonomie verwendet solche Ansätze als wichtige methodische Bausteine und ordnet sie in eine systemische Bewertungs- und Steuerungsarchitektur ein.",
+      "category": "Management, Wirksamkeit und Organisation",
+      "synonyms": [
+        "PHINEO / PHINEO-Wirkungslogik",
+        "PHINEO",
+        "PHINEO Wirkung",
+        "PHINEO Wirkungslogik",
+        "PHINEO IOOI",
+        "Wirkungsökonomie PHINEO"
+      ],
+      "relatedTerms": [
+        "iooi",
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkmechanismus",
+        "wirkpfad",
+        "wirkungskette",
+        "theory-of-change",
+        "wirkungstreppe",
+        "wirkungsanalyse",
+        "wirkungsbewertung",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungsgrenze",
+        "reverse-merit-order",
+        "nichtkompensationsprinzip",
+        "wirkungsrueckkopplung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "impact",
+        "wirkungsmanagement",
+        "wirkungscontrolling",
+        "woek-id"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
       "relatedObjections": []
     },
     "photoelektrischer-effekt": {
@@ -36630,7 +36948,10 @@
         "sdg-plus",
         "kreislaufwirtschaft",
         "dunning-kruger-effekt",
-        "wirkungskompetenz"
+        "wirkungskompetenz",
+        "iooi",
+        "nebenwirkung",
+        "wirkungsanalyse"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -37144,6 +37465,37 @@
       "relatedTerms": [
         "stationaerer-batteriespeicher",
         "speicher-energie"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "referenzrahmen": {
+      "label": "Referenzrahmen",
+      "slug": "referenzrahmen",
+      "url": "/begriffe/referenzrahmen/",
+      "hoverDefinition": "Der Referenzrahmen macht sichtbar, woran eine Wirkung als positiv, negativ oder neutral bewertet wird.",
+      "shortDefinition": "Ein Referenzrahmen legt offen, anhand welcher Ziele, Grenzen, Benchmarks oder gesellschaftlichen Normen eine Wirkung bewertet wird.",
+      "category": "Bewertungsbegriff",
+      "synonyms": [
+        "Referenzrahmen",
+        "Bewertungsrahmen",
+        "normativer Referenzrahmen",
+        "Wirkungsmaßstab"
+      ],
+      "relatedTerms": [
+        "wirkung",
+        "wirkungsbewertung",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "wirkungsgrenze",
+        "reverse-merit-order",
+        "nichtkompensationsprinzip"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -46185,6 +46537,32 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "theory-of-change": {
+      "label": "Theory of Change",
+      "slug": "theory-of-change",
+      "url": "/begriffe/theory-of-change/",
+      "hoverDefinition": "Theory of Change ergänzt eine Wirkungskette um Annahmen, Kontext, Mechanismen und externe Faktoren.",
+      "shortDefinition": "Eine Theory of Change beschreibt, warum und unter welchen Bedingungen eine Intervention zu einer angestrebten Veränderung führen soll.",
+      "category": "Grundbegriff",
+      "synonyms": [
+        "Theory of Change",
+        "ToC",
+        "Theorie des Wandels",
+        "Veränderungstheorie"
+      ],
+      "relatedTerms": [
+        "iooi",
+        "wirkungskette",
+        "wirkpfad",
+        "wirkmechanismus",
+        "wirkungsnachweis"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "thermal-runaway": {
       "label": "Thermal Runaway",
       "slug": "thermal-runaway",
@@ -48777,7 +49155,9 @@
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "wirkungsbasiertes-value-pricing"
+      ],
       "relatedObjections": []
     },
     "varietaet": {
@@ -50865,14 +51245,23 @@
       "shortDefinition": "Wechselwirkung bezeichnet allgemein, dass Systeme, Akteure oder Zustände nicht isoliert bleiben, sondern aufeinander einwirken und sich gegenseitig verändern.",
       "category": "Glossar-Erweiterung",
       "synonyms": [
-        "Wechselwirkung"
+        "Wechselwirkung",
+        "Interaktionseffekt",
+        "gegenseitige Beeinflussung",
+        "Systemwechselwirkung"
       ],
       "relatedTerms": [
         "rueckkopplung",
         "wirkungsnetz",
         "interdependenz",
         "systemtheorie",
-        "wirkung"
+        "wirkung",
+        "nebenwirkung",
+        "rebound-effekt",
+        "wirkungsraum",
+        "wirkpfad",
+        "wirkungsrisiko",
+        "netto-wirkung"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -51650,17 +52039,25 @@
       "label": "Wirkmechanismus",
       "slug": "wirkmechanismus",
       "url": "/begriffe/wirkmechanismus/",
-      "hoverDefinition": "Ein Wirkmechanismus beschreibt, wie aus einem Auslöser Wirkung entstehen kann.",
-      "shortDefinition": "Ein Wirkmechanismus beschreibt, wie ein Auslöser über Bedingungen, Akteure und Rückkopplungen Wirkung erzeugen kann.",
+      "hoverDefinition": "Ein Wirkmechanismus erklärt einen plausiblen Weg zur Wirkung, ist aber noch kein Wirkungsnachweis.",
+      "shortDefinition": "Ein Wirkmechanismus beschreibt, wie eine Wirkung entstehen soll oder entstehen kann.",
       "category": "Grundbegriff",
       "synonyms": [
         "Wirkmechanismus",
+        "Wirkungsmechanik",
+        "kausaler Mechanismus",
+        "Mechanismus des Wirkpfads",
         "Wirkungsmechanismus"
       ],
       "relatedTerms": [
+        "ausloeser",
         "wirkstoff",
-        "wirkpfad",
         "wirkungspotenzial",
+        "wirkungsrisiko",
+        "iooi",
+        "wirkungsnachweis",
+        "wirkung",
+        "wirkpfad",
         "wirkungstraeger",
         "kognitive-dissonanz"
       ],
@@ -51801,16 +52198,21 @@
       "label": "Wirkstoff",
       "slug": "wirkstoff",
       "url": "/begriffe/wirkstoff/",
-      "hoverDefinition": "Wirkstoff ist eine didaktische Analogie für einen Auslöser mit Wirkungspotenzial, z. B. Gesetz, Preis, Produkt, Narrativ oder Algorithmus.",
-      "shortDefinition": "Wirkstoff ist in der WÖk eine didaktische Analogie für einen Auslöser mit Wirkungspotenzial.",
-      "category": "Psychologische und systemische Wirkmechanismen",
+      "hoverDefinition": "Wirkstoff ist eine didaktische Analogie für einen Auslöser mit Wirkungspotenzial; er ist nicht selbst Wirkung oder ein Wirkungsnachweis.",
+      "shortDefinition": "Wirkstoff ist in der Wirkungsökonomie eine didaktische Analogie für einen Auslöser mit Wirkungspotenzial.",
+      "category": "Grundbegriff",
       "synonyms": [
         "Wirkstoff",
-        "gesellschaftlicher Wirkstoff"
+        "gesellschaftlicher Wirkstoff",
+        "Wirkstoff als Analogie"
       ],
       "relatedTerms": [
+        "ausloeser",
+        "iooi",
         "wirkungspotenzial",
+        "wirkungsrisiko",
         "wirkmechanismus",
+        "wirkung",
         "wirkpfad",
         "resonanzraum",
         "salienz",
@@ -51896,7 +52298,11 @@
         "responsible-marketing",
         "greenwashing",
         "fuenftes-p-planet",
-        "impact-strategie"
+        "impact-strategie",
+        "output",
+        "outcome",
+        "impact",
+        "referenzrahmen"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -52559,6 +52965,36 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "wirkungsanalyse": {
+      "label": "Wirkungsanalyse",
+      "slug": "wirkungsanalyse",
+      "url": "/begriffe/wirkungsanalyse/",
+      "hoverDefinition": "Wirkungsanalyse verbindet Wirkpfad, Daten, Zurechnung, Nebenfolgen und Unsicherheit; sie ist nicht bloß das Zählen von Outputs.",
+      "shortDefinition": "Wirkungsanalyse untersucht, welche Zustandsveränderungen entstehen oder entstehen können, wen sie betreffen, wodurch sie zustande kommen und wie belastbar die Evidenz ist.",
+      "category": "Messbegriff",
+      "synonyms": [
+        "Wirkungsanalyse",
+        "Impact Analysis",
+        "Wirkungsuntersuchung",
+        "Analyse von Wirkpfaden"
+      ],
+      "relatedTerms": [
+        "wirkpfad",
+        "iooi",
+        "wirkungsnachweis",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "attributionsforschung",
+        "kontribution",
+        "wirkungsbewertung",
+        "datenqualitaet"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "wirkungsanalyse-von-sprache": {
       "label": "Wirkungsanalyse von Sprache",
       "slug": "wirkungsanalyse-von-sprache",
@@ -52658,7 +53094,9 @@
         "wirkungsraum",
         "wirkungsresilienz",
         "demokratische-wirkungsarchitektur",
-        "impact-strategie"
+        "impact-strategie",
+        "iooi",
+        "referenzrahmen"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -53021,7 +53459,9 @@
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
-      "relatedDocuments": [],
+      "relatedDocuments": [
+        "wirkungsbasiertes-value-pricing"
+      ],
       "relatedObjections": []
     },
     "wirkungsbedingte-stranded-assets": {
@@ -53107,7 +53547,8 @@
         "Wirkungsprüfung",
         "Wirkungsanalyse",
         "Bewertung von Wirkung",
-        "Wirkungs-Scoring"
+        "Wirkungs-Scoring",
+        "normative Wirkungseinordnung"
       ],
       "relatedTerms": [
         "wirkung",
@@ -53155,7 +53596,8 @@
         "zielkonflikt",
         "host-wirkungsscore",
         "genossenschaftsblindheit",
-        "gemeineigentum"
+        "gemeineigentum",
+        "referenzrahmen"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -55519,7 +55961,10 @@
       "shortDefinition": "Eine Wirkungskette beschreibt den Zusammenhang von Auslöser, Input, Aktivität, Output, Outcome, Impact, Nebenwirkungen und Rückkopplung. Sie macht sichtbar, wie aus Handlung tatsächliche Zustandsveränderung entstehen soll.",
       "category": "WÖk-Präzisierungsbegriff / Methodenbegriff",
       "synonyms": [
-        "Wirkungskette"
+        "Wirkungskette",
+        "Results Chain",
+        "Impact Chain",
+        "IOOI-Kette"
       ],
       "relatedTerms": [
         "wirkpfad",
@@ -55532,7 +55977,15 @@
         "sdgs",
         "agenda-2030",
         "sdg-plus",
-        "wirkungsoekonomie"
+        "wirkungsoekonomie",
+        "iooi",
+        "theory-of-change",
+        "wirkungstreppe",
+        "input",
+        "output",
+        "outcome",
+        "impact",
+        "wirkungsrad"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -56085,7 +56538,10 @@
       "shortDefinition": "Ein Wirkungsnachweis ist die nachvollziehbare Begründung oder Messung, dass eine Handlung, Ausgabe, Investition oder Regel eine bestimmte Zustandsveränderung erzeugt oder plausibel ermöglicht hat.",
       "category": "WÖk-Präzisierungsbegriff / Prüfbegriff",
       "synonyms": [
-        "Wirkungsnachweis"
+        "Wirkungsnachweis",
+        "Impact Evidence",
+        "Wirksamkeitsnachweis",
+        "Nachweis eingetretener Wirkung"
       ],
       "relatedTerms": [
         "wirkungsaudit",
@@ -56097,7 +56553,15 @@
         "sdgs",
         "agenda-2030",
         "sdg-plus",
-        "wirkungsoekonomie"
+        "wirkungsoekonomie",
+        "wirkungspotenzial",
+        "wirkmechanismus",
+        "wirkungsanalyse",
+        "attributionsforschung",
+        "kontribution",
+        "counterfactual",
+        "baseline",
+        "datenqualitaet"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -57049,7 +57513,11 @@
         "zeitwirkung",
         "frame",
         "framing",
-        "reframing"
+        "reframing",
+        "iooi",
+        "ausloeser",
+        "theory-of-change",
+        "wirkungsanalyse"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -57231,7 +57699,10 @@
         "produktdaten",
         "responsible-marketing",
         "greenwashing",
-        "fuenftes-p-planet"
+        "fuenftes-p-planet",
+        "ausloeser",
+        "iooi",
+        "wirkungsnachweis"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -58486,7 +58957,11 @@
         "zeitwirkung",
         "financial-materiality",
         "impact-management",
-        "impact-controlling"
+        "impact-controlling",
+        "ausloeser",
+        "wirkmechanismus",
+        "iooi",
+        "nebenwirkung"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -59368,6 +59843,35 @@
         "T-SROI-Whitepaper",
         "Leitbild für Mensch, Planet und Demokratie"
       ],
+      "relatedObjections": []
+    },
+    "wirkungstreppe": {
+      "label": "Wirkungstreppe",
+      "slug": "wirkungstreppe",
+      "url": "/begriffe/wirkungstreppe/",
+      "hoverDefinition": "Eine Wirkungstreppe erklärt Wirkungsstufen; sie ist ein didaktisches Modell, kein vollständiges Steuerungsmodell gesellschaftlicher Wirkung.",
+      "shortDefinition": "Die Wirkungstreppe ist eine didaktische Darstellung von Wirkungsstufen. Sie ordnet Aktivitäten, Outputs, Outcomes und gesellschaftliche Wirkung in aufeinander aufbauende Ebenen.",
+      "category": "Grundbegriff",
+      "synonyms": [
+        "Wirkungstreppe",
+        "PHINEO-Wirkungstreppe",
+        "Wirkungsstufen",
+        "Wirkungslogik als Stufenmodell"
+      ],
+      "relatedTerms": [
+        "iooi",
+        "wirkungskette",
+        "wirkpfad",
+        "outcome",
+        "impact",
+        "theory-of-change",
+        "wirkungsrad",
+        "wirkungsbewertung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
       "relatedObjections": []
     },
     "wirkungsumsatzsteuer": {
@@ -60646,6 +61150,36 @@
         "wirkungsdashboard-und-managementcockpit",
         "wirkungsoekonomisches-methodensystem",
         "wirkungsoekonomisches-managementmodell"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
+    "wirkungsrad": {
+      "label": "WÖk-Wirkungsrad",
+      "slug": "wirkungsrad",
+      "url": "/begriffe/wirkungsrad/",
+      "hoverDefinition": "Das WÖk-Wirkungsrad erweitert lineare Wirkungsketten um Bewertung, Schutzregeln, Rückkopplung und Lernen.",
+      "shortDefinition": "Das WÖk-Wirkungsrad ist ein Lernmodell, das Vorwirkung, Wirkungsermittlung, Bewertung, Schutz, Rückkopplung und neue Systemzustände als rekursiven Kreislauf verbindet.",
+      "category": "Architekturbegriff",
+      "synonyms": [
+        "WÖk-Wirkungsrad",
+        "Wirkungsrad",
+        "Wirkungsrad der Wirkungsökonomie",
+        "lernendes Wirkungsrad"
+      ],
+      "relatedTerms": [
+        "iooi",
+        "wirkungstreppe",
+        "wirkungskette",
+        "ausloeser",
+        "wirkungspotenzial",
+        "wirkungsbewertung",
+        "netto-wirkung",
+        "wirkungsrueckkopplung",
+        "wirkungsarchitektur"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],

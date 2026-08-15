@@ -1664,6 +1664,31 @@ function calculationModelBlock(term) {
         </section>`;
 }
 
+function comparisonTableBlock(term) {
+  const rawTable = term.comparisonTable || term.comparison_table || null;
+  if (!rawTable || typeof rawTable !== "object") return "";
+  const title = publicText(rawTable.title || "Vergleich");
+  const caption = publicText(rawTable.caption || rawTable.explanation || "");
+  const headers = asList(rawTable.headers).map((value) => publicText(value)).filter((value) => hasRealText(value));
+  const rows = asList(rawTable.rows)
+    .map((row) => asList(row).map((value) => publicText(value)).filter((value) => hasRealText(value)))
+    .filter((row) => headers.length && row.length === headers.length);
+  const note = publicText(rawTable.note || "");
+  if (!headers.length || !rows.length) return "";
+  return `<section class="term-summary-card" aria-labelledby="comparison-${esc(term.slug)}">
+          <p class="section-eyebrow">Einordnung</p>
+          <h2 id="comparison-${esc(term.slug)}">${esc(title)}</h2>
+          ${caption ? `<p>${esc(caption)}</p>` : ""}
+          <div class="table-wrap" role="region" aria-label="${esc(title)}" tabindex="0">
+            <table class="data-table">
+              <thead><tr>${headers.map((value) => `<th scope="col">${esc(value)}</th>`).join("")}</tr></thead>
+              <tbody>${rows.map((row) => `<tr>${row.map((value) => `<td>${esc(value)}</td>`).join("")}</tr>`).join("")}</tbody>
+            </table>
+          </div>
+          ${note ? `<p>${esc(note)}</p>` : ""}
+        </section>`;
+}
+
 function mythBlock(term) {
   const mythos = !containsForbiddenPublicText(term.mythos) ? publicText(term.mythos) : "";
   const klaerung = !containsForbiddenPublicText(term.woekKlaerung || term.woek_klaerung) ? publicText(term.woekKlaerung || term.woek_klaerung) : "";
@@ -3057,6 +3082,7 @@ for (const term of indexedTerms) {
         ${sectionCards ? `<div class="term-section-grid">${sectionCards}</div>` : ""}
 ${formulaBlock(term)}
 ${calculationModelBlock(term)}
+${comparisonTableBlock(term)}
 ${termExtraBlock(term)}
 ${mythBlock(term)}
 ${learningBlock(term)}

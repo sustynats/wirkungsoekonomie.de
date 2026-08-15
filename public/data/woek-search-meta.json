@@ -15075,6 +15075,7 @@
         "netto-wirkung",
         "transformationswirkung",
         "wirkungsrueckkopplung",
+        "phineo-wirkungslogik",
         "impact-of-investment"
       ],
       "relatedDocuments": [],
@@ -23716,6 +23717,46 @@
       ],
       "sourceFile": "Nachtrag Gesundheit in der Wirkungsökonomie",
       "searchBoost": 140
+    },
+    "/begriffe/phineo-wirkungslogik/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-phineo-wirkungslogik",
+      "documentId": "phineo-wirkungslogik",
+      "relatedTerms": [
+        "iooi",
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkmechanismus",
+        "wirkpfad",
+        "wirkungskette",
+        "theory-of-change",
+        "wirkungstreppe",
+        "wirkungsanalyse",
+        "wirkungsbewertung",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungsgrenze",
+        "reverse-merit-order",
+        "nichtkompensationsprinzip",
+        "wirkungsrueckkopplung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "impact",
+        "wirkungsmanagement",
+        "wirkungscontrolling",
+        "woek-id"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "PHINEO / PHINEO-Wirkungslogik · Glossareinordnung v1.0",
+      "searchBoost": 110
     },
     "/begriffe/photoelektrischer-effekt/": {
       "documentType": "begriff",
@@ -160431,7 +160472,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/index.html",
-      "contentHash": "1abd0be5ed29a9c3",
+      "contentHash": "2ced7d0c251c85e6",
       "sectionId": "woek-page-06c0a37a8592ce92"
     },
     "/quellenarchiv/wok-e-0001/": {
@@ -161938,6 +161979,30 @@
       "contentHash": "bcfdd43b72691816",
       "sectionId": "steckbrief-wok-g-26a9a47a0d5e"
     },
+    "/quellenarchiv/wok-g-26bc531e0328/": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-26bc531e0328/index.html",
+      "contentHash": "4d1f23bd9f71aca8",
+      "sectionId": "woek-page-308b780a40424fbc"
+    },
+    "/quellenarchiv/wok-g-26bc531e0328/#glance-wok-g-26bc531e0328": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-26bc531e0328/index.html",
+      "contentHash": "4d1f23bd9f71aca8",
+      "sectionId": "glance-wok-g-26bc531e0328"
+    },
+    "/quellenarchiv/wok-g-26bc531e0328/#steckbrief-wok-g-26bc531e0328": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-26bc531e0328/index.html",
+      "contentHash": "4d1f23bd9f71aca8",
+      "sectionId": "steckbrief-wok-g-26bc531e0328"
+    },
     "/quellenarchiv/wok-g-27d9a3466aa6/": {
       "documentType": "Referenz",
       "status": "online-reviewed",
@@ -162081,6 +162146,30 @@
       "sourceFile": "quellenarchiv/wok-g-2904309e5431/index.html",
       "contentHash": "af896adb9b6d75a3",
       "sectionId": "steckbrief-wok-g-2904309e5431"
+    },
+    "/quellenarchiv/wok-g-2907c862c38c/": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-2907c862c38c/index.html",
+      "contentHash": "f6c8cc11d1f201a2",
+      "sectionId": "woek-page-8fb433181ce8185c"
+    },
+    "/quellenarchiv/wok-g-2907c862c38c/#glance-wok-g-2907c862c38c": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-2907c862c38c/index.html",
+      "contentHash": "f6c8cc11d1f201a2",
+      "sectionId": "glance-wok-g-2907c862c38c"
+    },
+    "/quellenarchiv/wok-g-2907c862c38c/#steckbrief-wok-g-2907c862c38c": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-2907c862c38c/index.html",
+      "contentHash": "f6c8cc11d1f201a2",
+      "sectionId": "steckbrief-wok-g-2907c862c38c"
     },
     "/quellenarchiv/wok-g-2965c794ee5b/": {
       "documentType": "Referenz",
@@ -162831,7 +162920,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-g-3aee66661e29/index.html",
-      "contentHash": "4c0b41de1f4881c8",
+      "contentHash": "19d3d6fed758f227",
       "sectionId": "woek-page-35c970baa96b0d1d"
     },
     "/quellenarchiv/wok-g-3aee66661e29/#glance-wok-g-3aee66661e29": {
@@ -162839,7 +162928,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-g-3aee66661e29/index.html",
-      "contentHash": "4c0b41de1f4881c8",
+      "contentHash": "19d3d6fed758f227",
       "sectionId": "glance-wok-g-3aee66661e29"
     },
     "/quellenarchiv/wok-g-3aee66661e29/#steckbrief-wok-g-3aee66661e29": {
@@ -162847,7 +162936,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-g-3aee66661e29/index.html",
-      "contentHash": "4c0b41de1f4881c8",
+      "contentHash": "19d3d6fed758f227",
       "sectionId": "steckbrief-wok-g-3aee66661e29"
     },
     "/quellenarchiv/wok-g-3b34cd84f295/": {
@@ -162951,7 +163040,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-g-3dde245df3e2/index.html",
-      "contentHash": "e21292fa7270f3e7",
+      "contentHash": "8b052b4082db8de3",
       "sectionId": "woek-page-86cd64e0529cdd93"
     },
     "/quellenarchiv/wok-g-3dde245df3e2/#glance-wok-g-3dde245df3e2": {
@@ -162959,7 +163048,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-g-3dde245df3e2/index.html",
-      "contentHash": "e21292fa7270f3e7",
+      "contentHash": "8b052b4082db8de3",
       "sectionId": "glance-wok-g-3dde245df3e2"
     },
     "/quellenarchiv/wok-g-3dde245df3e2/#steckbrief-wok-g-3dde245df3e2": {
@@ -162967,7 +163056,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-g-3dde245df3e2/index.html",
-      "contentHash": "e21292fa7270f3e7",
+      "contentHash": "8b052b4082db8de3",
       "sectionId": "steckbrief-wok-g-3dde245df3e2"
     },
     "/quellenarchiv/wok-g-3eb44d5214ab/": {
@@ -164031,7 +164120,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-g-5cdb1d463d15/index.html",
-      "contentHash": "232f26dde824a6ec",
+      "contentHash": "5e5058c00064af75",
       "sectionId": "woek-page-c8400a95daa844b2"
     },
     "/quellenarchiv/wok-g-5cdb1d463d15/#glance-wok-g-5cdb1d463d15": {
@@ -164039,7 +164128,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-g-5cdb1d463d15/index.html",
-      "contentHash": "232f26dde824a6ec",
+      "contentHash": "5e5058c00064af75",
       "sectionId": "glance-wok-g-5cdb1d463d15"
     },
     "/quellenarchiv/wok-g-5cdb1d463d15/#steckbrief-wok-g-5cdb1d463d15": {
@@ -164047,7 +164136,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-g-5cdb1d463d15/index.html",
-      "contentHash": "232f26dde824a6ec",
+      "contentHash": "5e5058c00064af75",
       "sectionId": "steckbrief-wok-g-5cdb1d463d15"
     },
     "/quellenarchiv/wok-g-5dad38014a73/": {
@@ -164151,7 +164240,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-g-5f9a4a116888/index.html",
-      "contentHash": "cdabb78b140841f9",
+      "contentHash": "95aed0d6eaa13988",
       "sectionId": "woek-page-b41ce5d2b72dfa3c"
     },
     "/quellenarchiv/wok-g-5f9a4a116888/#glance-wok-g-5f9a4a116888": {
@@ -164159,7 +164248,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-g-5f9a4a116888/index.html",
-      "contentHash": "cdabb78b140841f9",
+      "contentHash": "95aed0d6eaa13988",
       "sectionId": "glance-wok-g-5f9a4a116888"
     },
     "/quellenarchiv/wok-g-5f9a4a116888/#steckbrief-wok-g-5f9a4a116888": {
@@ -164167,7 +164256,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-g-5f9a4a116888/index.html",
-      "contentHash": "cdabb78b140841f9",
+      "contentHash": "95aed0d6eaa13988",
       "sectionId": "steckbrief-wok-g-5f9a4a116888"
     },
     "/quellenarchiv/wok-g-60c162e389f5/": {
@@ -164578,6 +164667,30 @@
       "contentHash": "112444cb7f7f948a",
       "sectionId": "steckbrief-wok-g-6cb0b186abc9"
     },
+    "/quellenarchiv/wok-g-6cd2f5b87810/": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-6cd2f5b87810/index.html",
+      "contentHash": "de30ed5faeb6592c",
+      "sectionId": "woek-page-7c9f9b2b63787758"
+    },
+    "/quellenarchiv/wok-g-6cd2f5b87810/#glance-wok-g-6cd2f5b87810": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-6cd2f5b87810/index.html",
+      "contentHash": "de30ed5faeb6592c",
+      "sectionId": "glance-wok-g-6cd2f5b87810"
+    },
+    "/quellenarchiv/wok-g-6cd2f5b87810/#steckbrief-wok-g-6cd2f5b87810": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-6cd2f5b87810/index.html",
+      "contentHash": "de30ed5faeb6592c",
+      "sectionId": "steckbrief-wok-g-6cd2f5b87810"
+    },
     "/quellenarchiv/wok-g-6d116c3f805e/": {
       "documentType": "Referenz",
       "status": "online-reviewed",
@@ -164895,7 +165008,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-g-743b762a8b80/index.html",
-      "contentHash": "481723b6e130f15d",
+      "contentHash": "5d29b3907b1b1c4e",
       "sectionId": "woek-page-ad73c22195a2b4d4"
     },
     "/quellenarchiv/wok-g-743b762a8b80/#glance-wok-g-743b762a8b80": {
@@ -164903,7 +165016,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-g-743b762a8b80/index.html",
-      "contentHash": "481723b6e130f15d",
+      "contentHash": "5d29b3907b1b1c4e",
       "sectionId": "glance-wok-g-743b762a8b80"
     },
     "/quellenarchiv/wok-g-743b762a8b80/#steckbrief-wok-g-743b762a8b80": {
@@ -164911,7 +165024,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-g-743b762a8b80/index.html",
-      "contentHash": "481723b6e130f15d",
+      "contentHash": "5d29b3907b1b1c4e",
       "sectionId": "steckbrief-wok-g-743b762a8b80"
     },
     "/quellenarchiv/wok-g-752b4ba359e1/": {
@@ -168537,6 +168650,30 @@
       "sourceFile": "quellenarchiv/wok-g-f28d45801a4c/index.html",
       "contentHash": "35a15388f5e7f0b6",
       "sectionId": "steckbrief-wok-g-f28d45801a4c"
+    },
+    "/quellenarchiv/wok-g-f29e30f1df9a/": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-f29e30f1df9a/index.html",
+      "contentHash": "f6f32b31e5f082f5",
+      "sectionId": "woek-page-ccf244e87bd8def5"
+    },
+    "/quellenarchiv/wok-g-f29e30f1df9a/#glance-wok-g-f29e30f1df9a": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-f29e30f1df9a/index.html",
+      "contentHash": "f6f32b31e5f082f5",
+      "sectionId": "glance-wok-g-f29e30f1df9a"
+    },
+    "/quellenarchiv/wok-g-f29e30f1df9a/#steckbrief-wok-g-f29e30f1df9a": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-f29e30f1df9a/index.html",
+      "contentHash": "f6f32b31e5f082f5",
+      "sectionId": "steckbrief-wok-g-f29e30f1df9a"
     },
     "/quellenarchiv/wok-g-f2cdb6a857fb/": {
       "documentType": "Referenz",
