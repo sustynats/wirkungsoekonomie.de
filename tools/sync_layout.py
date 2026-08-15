@@ -108,11 +108,16 @@ def header_utility_link(item: dict[str, object], base: str) -> str:
 
 
 def header_utility_nav(base: str) -> str:
+    newsletter = (
+        '<button class="site-utility-link site-utility-link--newsletter" type="button" '
+        'data-woek-newsletter-control data-newsletter-label="Newsletter" '
+        'aria-label="Newsletter zur Wirkungsökonomie anmelden">Newsletter</button>'
+    )
     language = (
         f'<a class="site-utility-link site-utility-link--language" href="{escape(base, quote=True)}en/" '
         'hreflang="en" lang="en" data-lang-switch="en" data-utility-label="English">EN</a>'
     )
-    return "\n".join([*(header_utility_link(item, base) for item in header_utility_items()), language])
+    return "\n".join([*(header_utility_link(item, base) for item in header_utility_items()), newsletter, language])
 
 
 def footer_group(group: dict[str, object], base: str) -> str:

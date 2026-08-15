@@ -18181,7 +18181,6 @@ body .audio-transcript-note {
     font-size: 0.94rem;
   }
 }
-
 /* 1) Selbst-gehostete Schriften - DSGVO-konform, kein Google-CDN */
 @font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url("../fonts/inter-400.woff2") format("woff2");}
 @font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url("../fonts/inter-500.woff2") format("woff2");}
@@ -18583,3 +18582,142 @@ h1, h2, h3 {
 .source-authors a:hover, .card-authors a:hover { color: var(--navy, #13335B); }
 .quellenarchiv-author-filter { margin: .8rem 0 0; padding: .6rem .9rem; background: #fff; border: 1px solid var(--line, #e6e2d8); border-radius: 10px; display: flex; align-items: center; gap: .5rem; flex-wrap: wrap; }
 .filter-chip--clear { cursor: pointer; }
+/* General Wirkungsökonomie newsletter: separate tenant, shared only as a
+   compact site shell component. */
+.site-utility-link--newsletter {
+  appearance: none;
+  cursor: pointer;
+  font: inherit;
+}
+
+.site-utility-link--newsletter.is-active {
+  border-color: rgba(47, 125, 92, 0.48);
+  background: rgba(226, 243, 235, 0.9);
+  color: var(--green);
+}
+
+.footer-newsletter {
+  display: grid;
+  gap: 1rem;
+  padding: clamp(1.25rem, 3vw, 1.75rem);
+  border: 1px solid rgba(246, 241, 232, 0.22);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.footer-newsletter-copy h2 {
+  margin: 0;
+  font-size: clamp(1.35rem, 2.4vw, 1.8rem);
+}
+
+.footer-newsletter-copy p:not(.hero-kicker) {
+  margin-bottom: 0;
+}
+
+.footer-newsletter-form {
+  display: grid;
+  gap: 0.7rem;
+  max-width: 48rem;
+}
+
+.footer-newsletter-form > label:first-child {
+  color: var(--ivory);
+  font-weight: 800;
+}
+
+.footer-newsletter-fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.footer-newsletter-fields input {
+  flex: 1 1 16rem;
+  min-height: 2.85rem;
+  padding: 0.68rem 0.8rem;
+  border: 1px solid rgba(246, 241, 232, 0.45);
+  border-radius: 6px;
+  background: #fffdf8;
+  color: var(--navy);
+  font: inherit;
+}
+
+.footer-newsletter-fields .btn {
+  min-height: 2.85rem;
+}
+
+.footer-newsletter-consent {
+  display: flex;
+  gap: 0.55rem;
+  align-items: flex-start;
+  color: rgba(246, 241, 232, 0.82);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.footer-newsletter-consent input {
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.18rem;
+  accent-color: var(--gold);
+}
+
+.footer-newsletter-consent a {
+  color: var(--gold);
+}
+
+.footer-newsletter-note,
+.footer-newsletter-message,
+.footer-newsletter-welcome p {
+  margin: 0;
+  color: rgba(246, 241, 232, 0.76);
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+
+.footer-newsletter-message {
+  min-height: 1.5em;
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.footer-newsletter-message.is-error {
+  color: #ffcf99;
+}
+
+.footer-newsletter-welcome {
+  padding: 0.9rem 1rem;
+  border-left: 3px solid var(--gold);
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.footer-newsletter-welcome strong {
+  color: var(--gold);
+}
+
+.footer-newsletter-honeypot {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+@media (max-width: 720px) {
+  body .site-header .site-utility-nav .site-utility-link--newsletter {
+    width: 2.45rem;
+    min-width: 2.45rem;
+    padding: 0;
+    font-size: 0;
+  }
+
+  body .site-header .site-utility-nav .site-utility-link--newsletter::before {
+    content: "✉";
+    font-size: 1rem;
+  }
+
+  .footer-newsletter-fields .btn {
+    flex: 1 1 100%;
+  }
+}
