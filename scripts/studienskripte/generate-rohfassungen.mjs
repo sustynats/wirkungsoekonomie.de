@@ -8,7 +8,7 @@ const APP = join(ROOT, "woek-akademie-app");
 const MASTER_DIR = join(ROOT, "content", "studienskripte");
 const WORD_DIR = join(ROOT, "docs", "studienskripte", "word-rohfassungen");
 const EXPORTER = join(ROOT, "scripts", "studienskripte", "export-word-rohfassung.py");
-const PYTHON = "/Users/hagen/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3";
+const PYTHON = process.env.PYTHON ?? "python3";
 
 const lectures = [
   ["woek-g-v01", "Grundstudium Wirkungsökonomie", "woek-g", "V01", "Die Maßstabskrise", "G1.1"],
