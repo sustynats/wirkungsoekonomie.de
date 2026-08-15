@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 
-const endpoint = "https://akademie.wirkungsoekonomie.de/api/site-event";
+const endpoint = "https://fganranxrdyewbjpvubx.supabase.co/functions/v1/site-event";
 const sessionKey = "woek-parliament-site-session";
 const visitorKey = "woek-parliament-site-visitor";
 
@@ -37,7 +37,7 @@ function send(eventType: "page_view" | "heartbeat", pathname: string) {
   if (navigator.doNotTrack === "1" || (window as Window & { doNotTrack?: string }).doNotTrack === "1") return;
   const payload = JSON.stringify({
     eventType,
-    path: pathname,
+    path: `${pathname}${window.location.search}`,
     title: document.title,
     referrer: document.referrer,
     sessionId: identifier(sessionKey, sessionStorage),
@@ -46,7 +46,7 @@ function send(eventType: "page_view" | "heartbeat", pathname: string) {
   });
   void fetch(endpoint, {
     method: "POST",
-    headers: { "Content-Type": "text/plain;charset=UTF-8" },
+    headers: { "Content-Type": "application/json" },
     body: payload,
     keepalive: true
   }).catch(() => undefined);
