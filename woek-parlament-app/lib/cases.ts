@@ -1,11 +1,16 @@
 import { parliamentaryCases, type CaseKind, type ParliamentaryCase } from "@/data/cases";
+import { materialityLabel as publicMaterialityLabel } from "@/lib/presentation/labels";
 
 export function listPublishedCases(kind?: CaseKind) {
-  return parliamentaryCases.filter((item) => !kind || item.kind === kind);
+  return parliamentaryCases.filter((item) =>
+    (item.editorialStatus === "PUBLISHED" || item.editorialStatus === "PREPARATION_PUBLISHED" || item.editorialStatus === "WORKING_ACT_PUBLISHED") &&
+    item.statusVerification === "VERIFIED" &&
+    (!kind || item.kind === kind)
+  );
 }
 
 export function getCase(slug: string): ParliamentaryCase | undefined {
-  return parliamentaryCases.find((item) => item.slug === slug);
+  return listPublishedCases().find((item) => item.slug === slug);
 }
 
 export function formatDate(value: string) {
@@ -13,5 +18,5 @@ export function formatDate(value: string) {
 }
 
 export function materialityLabel(value: ParliamentaryCase["materiality"]) {
-  return { VERY_HIGH: "sehr hohe Wirkungsrelevanz", HIGH: "hohe Wirkungsrelevanz", MEDIUM: "mittlere Wirkungsrelevanz", WATCH: "beobachten" }[value];
+  return publicMaterialityLabel(value);
 }

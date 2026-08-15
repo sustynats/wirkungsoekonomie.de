@@ -7,10 +7,14 @@ export type ReviewNotification = {
   attachment: { bytes: Uint8Array; filename: string };
 };
 
+export function reviewNotificationDeliveryReady() {
+  return Boolean(process.env.DISCORD_WEBHOOK_URL && process.env.DISCORD_REVIEW_CHANNEL_PRIVATE === "true");
+}
+
 export async function notifyReviewPackageReady(notification: ReviewNotification) {
   const webhook = process.env.DISCORD_WEBHOOK_URL;
   if (!webhook) return { status: "SKIPPED" as const, reason: "DISCORD_WEBHOOK_URL is not configured" };
-  if (process.env.DISCORD_REVIEW_CHANNEL_PRIVATE !== "true") {
+  if (!reviewNotificationDeliveryReady()) {
     return { status: "SKIPPED" as const, reason: "Discord review channel privacy has not been confirmed." };
   }
 

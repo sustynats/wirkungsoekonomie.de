@@ -16,7 +16,7 @@ export const maxDuration = 300;
 const requestSchema = z.object({
   start_date: z.string().date().default(historicalWoeKBackfillStart),
   end_date: z.string().date().optional(),
-  page_budget: z.number().int().min(1).max(25).default(8)
+  page_budget: z.number().int().min(1).max(100).default(25)
 });
 
 export async function POST(request: Request) {

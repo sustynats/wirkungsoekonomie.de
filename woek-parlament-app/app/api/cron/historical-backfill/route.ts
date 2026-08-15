@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { runHistoricalDipBackfillStep } from "@/lib/editorial/historical-backfill";
+import { purgeUnconfirmedSubscriptions } from "@/lib/wirkungsradar/subscriptions";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -14,8 +15,11 @@ function isAuthorized(request: Request) {
 export async function GET(request: Request) {
   if (!isAuthorized(request)) return NextResponse.json({ error: "Unauthorized." }, { status: 401 });
   try {
-    const result = await runHistoricalDipBackfillStep({ pageBudget: 25 });
-    return NextResponse.json({ status: "completed_step", ...result });
+    const [result, purgedSubscriptions] = await Promise.all([
+      runHistoricalDipBackfillStep({ pageBudget: 100 }),
+      purgeUnconfirmedSubscriptions()
+    ]);
+    return NextResponse.json({ status: "completed_step", purged_unconfirmed_subscriptions: purgedSubscriptions, ...result });
   } catch (error) {
     console.error("Scheduled historical backfill failed", {
       error: error instanceof Error ? error.message : "Unexpected scheduled import error"

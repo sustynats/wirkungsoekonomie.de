@@ -1,6 +1,9 @@
+import generatedWorkingActs from "@/data/public-working-acts.json";
+
 export type CaseKind = "RADAR" | "IMPACT_BRIEF" | "FULL_CHECK" | "RETROSPECTIVE_CASE";
-export type EditorialStatus = "DEMONSTRATOR" | "CONTENT_REQUIRED" | "PUBLISHED";
+export type EditorialStatus = "DEMONSTRATOR" | "CONTENT_REQUIRED" | "PREPARATION_PUBLISHED" | "WORKING_ACT_PUBLISHED" | "PUBLISHED";
 export type Materiality = "VERY_HIGH" | "HIGH" | "MEDIUM" | "WATCH";
+export type PublicMaturityStatus = "PRELIMINARY_REVIEW" | "MONITORING" | "EVIDENCE_REVIEW" | "CALCULATION" | "METHOD_REVIEW" | "REVIEW_COMPLETE";
 
 export type CaseSource = {
   title: string;
@@ -32,6 +35,129 @@ export type PublicAssessment = {
   }>;
   uncertainty: string;
   changeConditions: string[];
+  normativeMapping?: PublicNormativeMapping;
+};
+
+export type NormativeImpactDirection = "POSITIVE_POTENTIAL" | "NEGATIVE_RISK" | "AMBIVALENT" | "EVIDENCE_OPEN" | "OBSERVED_POSITIVE" | "OBSERVED_NEGATIVE";
+export type PublicNormativeFramework = "SDG" | "SDG_PLUS" | "CONSTITUTIONAL_ANCHOR";
+export type PublicConstitutionalAnchorType = "FUNDAMENTAL_RIGHT" | "STATE_STRUCTURE_PRINCIPLE" | "STATE_OBJECTIVE" | "PROTECTION_DUTY" | "EU_PRIMARY_LAW" | "HUMAN_RIGHTS" | "STATE_CONSTITUTION";
+
+/**
+ * A public, source-linked mapping. The tile is never a score: it makes the
+ * affected reference target, direction and evidentiary boundary legible.
+ */
+export type PublicNormativeMappingItem = {
+  id: string;
+  framework: PublicNormativeFramework;
+  code: string;
+  label: string;
+  direction: NormativeImpactDirection;
+  evidenceStatus: string;
+  rationale: string;
+  impactPathRefs: string[];
+  /** A case page links to the portal's source detail page, never directly away. */
+  referenceHref: string;
+  constitutionalAnchorType?: PublicConstitutionalAnchorType;
+  legalReference?: string;
+};
+
+export type PublicNormativeMapping = {
+  status: "PROVISIONAL" | "PUBLISHED" | "EVIDENCE_OPEN";
+  basis: string;
+  sdgItems: PublicNormativeMappingItem[];
+  sdgPlusItems: PublicNormativeMappingItem[];
+  /**
+   * Legal and constitutional anchors are intentionally separate from SDG+.
+   * They can set protection boundaries, but they do not create extra scores.
+   */
+  constitutionalAnchorItems: PublicNormativeMappingItem[];
+};
+
+/**
+ * The public projection preserves the complete, source-bound reasoning from
+ * a review. It intentionally contains no credentials, internal file paths or
+ * reviewer metadata. Every entry is framed as an ex-ante hypothesis unless
+ * the evidence status says otherwise.
+ */
+export type PublicImpactPathDetail = {
+  id: string;
+  lever: string;
+  hypothesis: string;
+  direction: string;
+  affectedDimensions: string[];
+  affectedGroups: string[];
+  prerequisites: string[];
+  risks: string[];
+  evidenceBoundary: string;
+  evidenceStatus: string;
+  changeLever: string;
+};
+
+export type PublicCalculationRequirement = {
+  id: string;
+  name: string;
+  specification: string;
+  requiredInputs: string[];
+  availableInputs: string[];
+  missingInputs: string[];
+  status: string;
+};
+
+export type PublicRiskDetail = {
+  id: string;
+  description: string;
+  status: string;
+  nonCompensationRelevant: boolean;
+};
+
+export type PublicBoundaryDetail = {
+  boundary: string;
+  status: string;
+  reason: string;
+};
+
+export type PublicCounterfactualDetail = {
+  question: string;
+  status: string;
+  causalRule: string;
+};
+
+export type PublicFeedbackDetail = {
+  currentStatus: string;
+  interpretation: string;
+  outputFeedback: string;
+  outcomeFeedback: string;
+  causalReview: string;
+  dataGaps: string[];
+};
+
+export type PublicReviewDetail = {
+  impactPaths: PublicImpactPathDetail[];
+  impactDomains: Array<{ domain: string; relevance: string[]; assessment: string }>;
+  calculations: PublicCalculationRequirement[];
+  risks: PublicRiskDetail[];
+  boundaries: PublicBoundaryDetail[];
+  counterfactuals: PublicCounterfactualDetail[];
+  counterarguments: string[];
+  feedback?: PublicFeedbackDetail;
+};
+
+/**
+ * A public working act is deliberately narrower than a published professional
+ * opinion. It makes the official decision, the provisional impact logic and
+ * remaining work visible without asserting an observed impact or a final
+ * recommendation.
+ */
+export type PublicWorkingAct = {
+  maturity: PublicMaturityStatus;
+  scopeStatement: string;
+  overallPotential: string;
+  changeLevers: string[];
+  risks: string[];
+  dataGaps: string[];
+  counterfactualQuestions: string[];
+  normativeMapping?: PublicNormativeMapping;
+  reviewDetail?: PublicReviewDetail;
 };
 
 export type ParliamentaryCase = {
@@ -55,6 +181,7 @@ export type ParliamentaryCase = {
   sources: CaseSource[];
   versionNote: string;
   retrospective?: boolean;
+  publicWorkingAct?: PublicWorkingAct;
   publicAssessment?: PublicAssessment;
 };
 
@@ -66,7 +193,7 @@ const dipApi: CaseSource = {
   note: "Methode und Datenzugang; noch keine fallbezogene Quelle."
 };
 
-export const parliamentaryCases: ParliamentaryCase[] = [
+export const editorialSeedCases: ParliamentaryCase[] = [
   {
     slug: "musterfall-fassungswechsel",
     title: "Musterfall: Änderung einer Zugangsvoraussetzung",
@@ -99,17 +226,17 @@ export const parliamentaryCases: ParliamentaryCase[] = [
   },
   {
     slug: "radar-befuellung-ausstehend",
-    title: "Wirkungsradar: amtliche Befüllung vorbereiten",
+    title: "Parlamentsradar: amtliche Befüllung vorbereiten",
     plainTitle: "Noch keine freigegebene aktuelle Fallanalyse",
     kind: "RADAR",
     editorialStatus: "CONTENT_REQUIRED",
     materiality: "WATCH",
-    parliamentaryStatus: "STATUS_UNVERIFIED – DIP-Import noch nicht konfiguriert",
+    parliamentaryStatus: "Noch nicht amtlich verifiziert – der DIP-Import wartet auf eine gültige technische Berechtigung",
     statusVerification: "STATUS_UNVERIFIED",
     nextEvent: null,
     lastUpdated: "2026-08-14",
-    summary: "Die technische Radarstrecke ist vorbereitet. Ein aktueller realer Vorgang wird erst nach amtlichem Abruf, Quellenprüfung und redaktioneller Freigabe veröffentlicht.",
-    whatIsDecided: "CONTENT_REQUIRED",
+    summary: "Ein aktueller realer Vorgang erscheint mit amtlichem Stand, geprüften Quellen und klar ausgewiesenem Prüfstatus.",
+    whatIsDecided: "Der konkrete Entscheidungsgegenstand wird nach amtlichem Quellenabruf ergänzt.",
     analysisStatus: "Kein amtlicher Sachverhalt hinterlegt.",
     intendedGoal: "Ein fachlich belastbarer Radarhinweis statt automatisch erzeugter politischer Inhalte.",
     impactPath: ["Amtliche Daten abrufen.", "Vorgang und Fassung prüfen.", "Materialität begründen.", "Erst dann einen Radarhinweis veröffentlichen."],
@@ -119,18 +246,18 @@ export const parliamentaryCases: ParliamentaryCase[] = [
     versionNote: "Keine Version veröffentlicht."
   },
   {
-    slug: "historie-redaktioneller-auftakt",
+    slug: "historie-erster-rueckblick",
     title: "Historische Wirkungschecks: Auftaktfall auswählen",
     plainTitle: "Retrospektiven müssen damaliges und heutiges Wissen trennen",
     kind: "RETROSPECTIVE_CASE",
     editorialStatus: "CONTENT_REQUIRED",
     materiality: "MEDIUM",
-    parliamentaryStatus: "Historischer Fall noch nicht redaktionell festgelegt",
+    parliamentaryStatus: "Historischer Fall wird derzeit quellenbasiert aufgebaut",
     statusVerification: "STATUS_UNVERIFIED",
     nextEvent: null,
     lastUpdated: "2026-08-14",
     summary: "Die Retrospektivlogik ist angelegt. Vor Veröffentlichung wird ein amtlich belegter Fall mit damaliger Quellenlage, späteren Beobachtungen und klaren Kausalitätsgrenzen kuratiert.",
-    whatIsDecided: "CONTENT_REQUIRED",
+    whatIsDecided: "Der konkrete historische Entscheidungsgegenstand wird nach Quellenprüfung ergänzt.",
     analysisStatus: "Kein Rückschauurteil ohne dokumentierte damalige Wissenslage.",
     intendedGoal: "Nachvollziehbar machen, wie Wirkung später gemessen und gelernt werden kann.",
     impactPath: ["damalige Entscheidung und Zielsetzung", "damals verfügbare Evidenz", "spätere Beobachtungen", "klar begrenzte ex-post-Einordnung"],
@@ -141,3 +268,9 @@ export const parliamentaryCases: ParliamentaryCase[] = [
     retrospective: true
   }
 ];
+
+/**
+ * Static, deliberately limited public projection generated from protected
+ * review imports. Raw records and candidate sources are never imported here.
+ */
+export const parliamentaryCases: ParliamentaryCase[] = [...generatedWorkingActs as ParliamentaryCase[], ...editorialSeedCases];

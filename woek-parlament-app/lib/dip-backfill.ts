@@ -30,6 +30,22 @@ export type ImportedDipDocument = {
   raw: DipRecord;
 };
 
+export type ImportedDipDecisionPosition = {
+  externalDecisionId: string;
+  linkedExternalCaseId: string;
+  title: string;
+  decisionDate: string | null;
+  parliamentaryStage: string | null;
+  actualOutcome: string;
+  voteType: string | null;
+  voteResult: Record<string, string>;
+  namedVoteAvailable: boolean;
+  linkedDocumentId: string | null;
+  linkedDocumentKind: string | null;
+  sourceUrl: string;
+  raw: DipRecord;
+};
+
 function firstText(record: DipRecord, keys: string[]) {
   for (const key of keys) {
     const value = record[key];
@@ -37,6 +53,19 @@ function firstText(record: DipRecord, keys: string[]) {
     if (typeof value === "number" && Number.isFinite(value)) return String(value);
   }
   return null;
+}
+
+function nestedRecord(record: DipRecord, key: string) {
+  const value = record[key];
+  return value && typeof value === "object" && !Array.isArray(value) ? value as DipRecord : null;
+}
+
+function officialDocumentUrl(record: DipRecord, fallback: string) {
+  const direct = firstText(record, ["url", "dokument_url", "pdf_url"]);
+  if (direct?.startsWith("https://")) return direct;
+  const citation = nestedRecord(record, "fundstelle");
+  const cited = citation ? firstText(citation, ["pdf_url", "xml_url", "url"]) : null;
+  return cited?.startsWith("https://") ? cited : fallback;
 }
 
 function linkedVorgangId(record: DipRecord) {
@@ -104,9 +133,9 @@ export function normalizeDipDrucksache(value: unknown): ImportedDipDocument | nu
   if (!externalDocumentId) return null;
   const title = firstText(raw, ["titel", "title", "kurzbezeichnung"]) ?? `DIP-Drucksache ${externalDocumentId}`;
   const documentDate = dateOnly(firstText(raw, ["datum", "verteildatum", "aktualisiert"]));
-  const documentCategory = firstText(raw, ["dokumentart", "typ", "art"]) ?? "";
+  const documentCategory = firstText(raw, ["drucksachetyp", "dokumentart", "typ", "art"]) ?? "";
   const linkedExternalCaseId = linkedVorgangId(raw);
-  const sourceUrl = firstText(raw, ["url", "dokument_url", "fundstelle"]) ?? `https://dip.bundestag.de/drucksache/${externalDocumentId}`;
+  const sourceUrl = officialDocumentUrl(raw, `https://dip.bundestag.de/drucksache/${externalDocumentId}`);
   const sourceHash = createHash("sha256").update(JSON.stringify(raw)).digest("hex");
   return {
     externalDocumentId,
@@ -117,6 +146,48 @@ export function normalizeDipDrucksache(value: unknown): ImportedDipDocument | nu
     sourceUrl,
     sourceHash,
     extractedText: extractedDocumentText(raw),
+    raw
+  };
+}
+
+/**
+ * A formal decision is represented in DIP by a Vorgangsposition with a
+ * Beschlussfassung.  The decision wording and vote metadata remain separate
+ * from the linked Drucksache text, so the final document is never guessed
+ * from a title or from a party position.
+ */
+export function normalizeDipDecisionPosition(value: unknown): ImportedDipDecisionPosition | null {
+  if (!value || typeof value !== "object" || Array.isArray(value)) return null;
+  const raw = value as DipRecord;
+  const externalDecisionId = firstText(raw, ["id"]);
+  const linkedExternalCaseId = firstText(raw, ["vorgang_id", "vorgangId"]);
+  const decisions = Array.isArray(raw.beschlussfassung) ? raw.beschlussfassung : [];
+  const firstDecision = decisions.find((entry): entry is DipRecord => Boolean(entry) && typeof entry === "object" && !Array.isArray(entry));
+  const actualOutcome = firstDecision ? firstText(firstDecision, ["beschlusstenor"]) : null;
+  if (!externalDecisionId || !linkedExternalCaseId || !actualOutcome) return null;
+  const voteType = firstDecision ? firstText(firstDecision, ["abstimmungsart"]) : null;
+  const citation = nestedRecord(raw, "fundstelle");
+  const linkedDocumentId = citation ? firstText(citation, ["id"]) : null;
+  const linkedDocumentKind = citation ? firstText(citation, ["dokumentart"]) : null;
+  const voteResult = Object.fromEntries([
+    ["outcome", actualOutcome],
+    ["note", firstDecision ? firstText(firstDecision, ["abstimm_ergebnis_bemerkung"]) : null],
+    ["majority", firstDecision ? firstText(firstDecision, ["mehrheit"]) : null],
+    ["basis", firstDecision ? firstText(firstDecision, ["grundlage"]) : null]
+  ].filter((entry): entry is [string, string] => typeof entry[1] === "string" && entry[1].trim().length > 0));
+  return {
+    externalDecisionId,
+    linkedExternalCaseId,
+    title: firstText(raw, ["vorgangsposition", "titel"]) ?? actualOutcome,
+    decisionDate: dateOnly(firstText(raw, ["datum", "aktualisiert"])),
+    parliamentaryStage: firstText(raw, ["vorgangsposition"]),
+    actualOutcome,
+    voteType,
+    voteResult,
+    namedVoteAvailable: voteType === "Namentliche Abstimmung",
+    linkedDocumentId,
+    linkedDocumentKind,
+    sourceUrl: officialDocumentUrl(raw, `https://dip.bundestag.de/vorgangsposition/${externalDecisionId}`),
     raw
   };
 }
@@ -145,7 +216,25 @@ export async function fetchHistoricalDipDocuments({
     "f.datum.start": startDate
   };
   if (endDate) params["f.datum.end"] = endDate;
-  const response = await fetchAllDipPages("drucksache", params);
+  // The metadata resource alone has no document body. Review packages require
+  // the official text resource so that only the relevant sections are later
+  // selected for a review, rather than sending whole PDFs.
+  const response = await fetchAllDipPages("drucksache-text", params);
   const documents = response.documents.map(normalizeDipDrucksache).filter((item): item is ImportedDipDocument => Boolean(item));
   return { ...response, documents };
+}
+
+export async function fetchHistoricalDipDecisionPositions({
+  startDate = historicalWoeKBackfillStart,
+  endDate
+}: { startDate?: string; endDate?: string } = {}) {
+  const params: Record<string, string> = {
+    "f.wahlperiode": "21",
+    "f.zuordnung": "BT",
+    "f.datum.start": startDate
+  };
+  if (endDate) params["f.datum.end"] = endDate;
+  const response = await fetchAllDipPages("vorgangsposition", params);
+  const positions = response.documents.map(normalizeDipDecisionPosition).filter((item): item is ImportedDipDecisionPosition => Boolean(item));
+  return { ...response, positions };
 }

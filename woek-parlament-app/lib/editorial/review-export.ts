@@ -15,6 +15,12 @@ type BatchRow = {
 
 type BatchCaseRow = { case_id: string; package_payload: unknown };
 
+function isoDateTime(value: string) {
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) throw new Error("Review batch has an invalid creation timestamp.");
+  return date.toISOString();
+}
+
 async function loadBatch(batchId: string) {
   const batches = await supabaseRest<BatchRow[]>(`parliament.review_batches?select=id,batch_code,review_type,package_schema_version,package_hash,created_at,status&id=eq.${encodeURIComponent(batchId)}&limit=1`);
   const batch = batches[0];
@@ -29,11 +35,23 @@ export async function exportReviewBatch(batchId: string) {
     schema_version: batch.package_schema_version,
     batch_code: batch.batch_code,
     review_type: batch.review_type,
-    created_at: batch.created_at,
+    created_at: isoDateTime(batch.created_at),
     cases: batchCases.map((item) => item.package_payload),
     package_hash: batch.package_hash
   });
-  const zip = await createReviewZip(packageForExport);
+  const zip = await createReviewZip(packageForExport, { includeOfficialSourceTexts: true });
+
+  // Delivery is part of a first export.  If notification fails, leave the
+  // batch in READY so the protected export endpoint can be retried instead of
+  // silently losing the editorial alert.
+  const notification = batch.status === "EXPORTED"
+    ? { status: "SKIPPED" as const, reason: "Review batch was already exported." }
+    : await notifyReviewPackageReady({
+      batchCode: batch.batch_code,
+      caseCount: batchCases.length,
+      reviewType: batch.review_type,
+      attachment: { bytes: zip.bytes, filename: zip.filename }
+    });
 
   await supabaseRest(`parliament.review_batches?id=eq.${encodeURIComponent(batchId)}`, {
     method: "PATCH",
@@ -45,13 +63,5 @@ export async function exportReviewBatch(batchId: string) {
       body: JSON.stringify({ review_status: "EXTERNAL_REVIEW_PENDING" })
     });
   }
-  const notification = batch.status === "EXPORTED"
-    ? { status: "SKIPPED" as const, reason: "Review batch was already exported." }
-    : await notifyReviewPackageReady({
-      batchCode: batch.batch_code,
-      caseCount: batchCases.length,
-      reviewType: batch.review_type,
-      attachment: { bytes: zip.bytes, filename: zip.filename }
-    });
   return { zip, batchCode: batch.batch_code, notification };
 }

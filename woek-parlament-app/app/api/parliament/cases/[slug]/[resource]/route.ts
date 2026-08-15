@@ -9,5 +9,5 @@ export async function GET(_: Request, { params }: { params: Promise<{ slug: stri
   const item = getCase(slug);
   if (!item) return NextResponse.json({ error: "not_found" }, { status: 404 });
   const body = resource === "impact" ? publicImpact(item) : resource === "sources" ? publicSources(item) : resource === "versions" ? publicVersions(item) : resource === "monitoring" ? { slug, observations: [], status: "CONTENT_REQUIRED" } : null;
-  return body ? NextResponse.json({ data: body, dataStatus: "editorial_seed_only" }) : NextResponse.json({ error: "not_found" }, { status: 404 });
+  return body ? NextResponse.json({ data: body, dataStatus: "public_preview" }) : NextResponse.json({ error: "not_found" }, { status: 404 });
 }

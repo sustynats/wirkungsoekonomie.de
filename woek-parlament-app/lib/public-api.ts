@@ -1,4 +1,5 @@
 import type { ParliamentaryCase } from "@/data/cases";
+import { sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
 
 export function publicCase(item: ParliamentaryCase) {
   return {
@@ -31,7 +32,13 @@ export function publicImpact(item: ParliamentaryCase) {
 }
 
 export function publicSources(item: ParliamentaryCase) {
-  return { slug: item.slug, sources: item.sources };
+  return {
+    slug: item.slug,
+    sources: item.sources.map(({ url: _originalUrl, ...source }) => ({
+      ...source,
+      detailUrl: sourceDetailHrefForUrl(_originalUrl)
+    }))
+  };
 }
 
 export function publicVersions(item: ParliamentaryCase) {

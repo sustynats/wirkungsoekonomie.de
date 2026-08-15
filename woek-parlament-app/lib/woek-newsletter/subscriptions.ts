@@ -3,9 +3,8 @@ import nodemailer from "nodemailer";
 import { z } from "zod";
 import { supabaseRest, supabaseRpc } from "@/lib/database/supabase-admin";
 import { newsletterDoubleOptInEmail, newsletterUnsubscribeConfirmedEmail, newsletterWelcomeEmail } from "@/lib/woek-newsletter/email-templates";
+import { consentVersion, privacyNoticeVersion } from "@/lib/privacy-notice";
 
-const consentVersion = "2026-08-15.1";
-const privacyNoticeVersion = "2026-08-15.1";
 const confirmationLifetimeHours = 72;
 const unconfirmedRetentionDays = 30;
 

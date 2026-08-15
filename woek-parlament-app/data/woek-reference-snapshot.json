@@ -1,12 +1,12 @@
 {
-  "manifest_version": "2026-08-14",
-  "last_verified": "2026-08-14",
+  "manifest_version": "2026-08-15",
+  "last_verified": "2026-08-15",
   "status": "INCOMPLETE_PENDING_TWO_LEADING_REFERENCES",
   "leading_references": [
     { "reference_id": "WOEK_SYSTEM_LOGIC", "version": null, "authority_scope": ["system_logic", "positive_net_impact", "coupled_system_mensch_planet_demokratie"] },
     { "reference_id": "WOEMM", "version": "2.0", "authority_scope": ["management_architecture", "governance", "operating_model", "impact_realisation"] },
     { "reference_id": "WOEMS", "version": "2.0", "authority_scope": ["methods", "canvas", "workshop_journeys", "quality", "governance", "realisation", "training"] },
-    { "reference_id": "WOEK_GLOSSARY_GUIDE", "version": "1.3", "authority_scope": ["terminology", "public_language", "glossary", "resilience_systematics"] },
+    { "reference_id": "WOEK_GLOSSARY_GUIDE", "version": "1.5", "authority_scope": ["terminology", "public_language", "glossary", "resilience_systematics", "evidence_and_attribution", "radar_naming"] },
     { "reference_id": "WOEK_GLOSSARY_PUBLIC", "version": null, "authority_scope": ["public_short_definitions", "term_navigation"] },
     { "reference_id": "SDG_SDGPLUS_REFERENCE", "version": "0.3", "authority_scope": ["sdgs", "agenda_2030", "sdg_plus", "normative_evaluation"] },
     { "reference_id": "SDG_SDGPLUS_ONLINE", "version": null, "authority_scope": ["sdgs", "agenda_2030", "sdg_plus", "public_reference_orientation"] },

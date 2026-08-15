@@ -9,7 +9,9 @@ export const dynamic = "force-dynamic";
 
 const requestSchema = z.object({
   case_ids: z.array(z.string().uuid()).min(1).max(15),
-  review_type: z.enum(["FULL_REVIEW", "INCREMENTAL_REVIEW", "EXCEPTION_REVIEW"])
+  decision_unit_ids: z.record(z.string().uuid()).default({}),
+  review_type: z.enum(["FULL_REVIEW", "INCREMENTAL_REVIEW", "EXCEPTION_REVIEW"]),
+  review_context: z.enum(["HISTORICAL", "EX_ANTE"]).default("HISTORICAL")
 });
 
 export async function POST(request: Request) {
@@ -17,7 +19,13 @@ export async function POST(request: Request) {
     requireEditorialRequest(request);
     const body = requestSchema.parse(await request.json());
     const createdBy = request.headers.get("x-woek-editorial-actor")?.slice(0, 120) || "editorial-service";
-    const result = await createReviewBatch({ caseIds: body.case_ids, reviewType: body.review_type, createdBy });
+    const result = await createReviewBatch({
+      caseIds: body.case_ids,
+      decisionUnitIds: body.decision_unit_ids,
+      reviewType: body.review_type,
+      reviewContext: body.review_context,
+      createdBy
+    });
     return NextResponse.json({
       batch_id: result.id,
       batch_code: result.batch.batch_code,

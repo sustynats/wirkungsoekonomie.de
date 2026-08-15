@@ -1,4 +1,5 @@
 import type { PublicAssessment } from "@/data/cases";
+import { humanizeSystemValue } from "@/lib/presentation/labels";
 
 export function AssessmentExplainer({ assessment }: { assessment: PublicAssessment }) {
   const coverage = assessment.calculationCoverage;
@@ -8,7 +9,7 @@ export function AssessmentExplainer({ assessment }: { assessment: PublicAssessme
         <p className="eyebrow">WÖk-Einordnung</p>
         <h2 id="assessment-title">{assessment.category}</h2>
         <p>{assessment.summary}</p>
-        <p className="assessment-evidence"><strong>Evidenzstatus:</strong> {assessment.evidenceStatus}</p>
+        <p className="assessment-evidence"><strong>Evidenzstatus:</strong> {humanizeSystemValue(assessment.evidenceStatus)}</p>
       </div>
 
       <div className="assessment-why">

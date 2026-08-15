@@ -3,6 +3,13 @@ import { supabaseRest } from "@/lib/database/supabase-admin";
 
 export const dynamic = "force-dynamic";
 
+function dipImportStatus() {
+  const key = process.env.DIP_API_KEY?.trim();
+  if (!key) return "disabled_missing_key";
+  // This reports only configuration state, never the value or a derived secret.
+  return key.length === 42 ? "configured_not_scheduled" : "disabled_invalid_key_format";
+}
+
 export async function GET() {
   let database = "unavailable";
   try {
@@ -16,7 +23,7 @@ export async function GET() {
     status: "ok",
     service: "woek-parlament-app",
     database,
-    dipImport: process.env.DIP_API_KEY ? "configured_not_scheduled" : "disabled_missing_key",
+    dipImport: dipImportStatus(),
     timestamp: new Date().toISOString()
   });
 }

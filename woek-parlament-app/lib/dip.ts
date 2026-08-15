@@ -9,13 +9,34 @@ const dipEnvelopeSchema = z.object({
 export type DipPage = z.infer<typeof dipEnvelopeSchema>;
 
 const baseUrl = "https://search.dip.bundestag.de/api/v1";
+const permittedResources = new Set([
+  "vorgang",
+  "vorgangsposition",
+  "drucksache",
+  "drucksache-text",
+  "plenarprotokoll",
+  "plenarprotokoll-text",
+  "aktivitaet",
+  "person"
+]);
 
 export class DipConfigurationError extends Error {}
 
-export async function fetchDipResource(resource: string, params: Record<string, string> = {}): Promise<DipPage> {
-  const apiKey = process.env.DIP_API_KEY;
+function getDipApiKey() {
+  const apiKey = process.env.DIP_API_KEY?.trim();
   if (!apiKey) throw new DipConfigurationError("DIP_API_KEY is not configured. Live import remains disabled.");
-  if (!/^[a-z]+$/i.test(resource)) throw new Error("Invalid DIP resource.");
+  // DIP documents the current API-key format as a 42-character token. Failing
+  // before the request makes a misconfigured deployment diagnosable without
+  // ever exposing the secret in logs or a health response.
+  if (apiKey.length !== 42) {
+    throw new DipConfigurationError("DIP_API_KEY has an invalid format. The DIP import remains disabled.");
+  }
+  return apiKey;
+}
+
+export async function fetchDipResource(resource: string, params: Record<string, string> = {}): Promise<DipPage> {
+  const apiKey = getDipApiKey();
+  if (!permittedResources.has(resource)) throw new Error("Invalid DIP resource.");
   const url = new URL(`${baseUrl}/${resource}`);
   url.searchParams.set("format", "json");
   Object.entries(params).forEach(([key, value]) => url.searchParams.set(key, value));
@@ -29,9 +50,8 @@ export async function fetchDipResource(resource: string, params: Record<string, 
 }
 
 export async function fetchDipRecord(resource: string, id: string) {
-  const apiKey = process.env.DIP_API_KEY;
-  if (!apiKey) throw new DipConfigurationError("DIP_API_KEY is not configured. Live import remains disabled.");
-  if (!/^[a-z]+$/i.test(resource) || !/^[A-Za-z0-9._-]+$/.test(id)) throw new Error("Invalid DIP record request.");
+  const apiKey = getDipApiKey();
+  if (!permittedResources.has(resource) || !/^[A-Za-z0-9._-]+$/.test(id)) throw new Error("Invalid DIP record request.");
   const response = await fetch(`${baseUrl}/${resource}/${encodeURIComponent(id)}?format=json`, {
     headers: { Authorization: `ApiKey ${apiKey}`, Accept: "application/json" },
     next: { revalidate: 0 },
