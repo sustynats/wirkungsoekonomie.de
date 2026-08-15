@@ -20,7 +20,8 @@ function pdfRelativePath(url = "") {
 }
 
 function extractMain(html = "") {
-  return html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/i)?.[1] || "";
+  const main = html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/i)?.[1] || "";
+  return main.replace(/<nav\b[^>]*class=["'][^"']*\bjournal-breadcrumb\b[^"']*["'][^>]*>[\s\S]*?<\/nav>/gi, "");
 }
 
 function sourceHash(entry = {}) {

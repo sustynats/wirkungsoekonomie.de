@@ -182,6 +182,48 @@ function relativeUrl(file) {
   return `/${relative}`;
 }
 
+function relativeBase(file) {
+  const parent = path.relative(root, file).split(path.sep).slice(0, -1);
+  return "../".repeat(parent.length);
+}
+
+function isJournalArticle(file, html) {
+  const relative = path.relative(root, file).split(path.sep).join("/");
+  return relative.startsWith("blog/") && relative !== "blog/index.html" && /<main\b/i.test(html);
+}
+
+function journalBreadcrumb(file) {
+  const base = relativeBase(file);
+  return `<nav class="breadcrumb journal-breadcrumb" aria-label="Pfadnavigation"><a href="${base}index.html">Start</a><span aria-hidden="true">/</span><a href="${base}blog.html">Journal</a></nav>`;
+}
+
+function ensureJournalBreadcrumb(file) {
+  const html = fs.readFileSync(file, "utf8");
+  if (!isJournalArticle(file, html)) return false;
+  const normalized = html.replace(
+    /\n[ \t]*(<nav\b[^>]*class=["'][^"']*\bjournal-breadcrumb\b[^"']*["'][^>]*>[\s\S]*?<\/nav>)/gi,
+    "$1"
+  );
+  if (/<nav\s+class=["'][^"']*\bbreadcrumb\b/i.test(normalized)) {
+    if (normalized !== html) fs.writeFileSync(file, normalized, "utf8");
+    return normalized !== html;
+  }
+
+  let next = normalized.replace(
+    /(<(?:article|section)\b[^>]*class=["'][^"']*\bhero\b[^"']*["'][^>]*>[\s\S]*?<div\b[^>]*class=["'][^"']*\bhero-copy\b[^"']*["'][^>]*>)/i,
+    `$1${journalBreadcrumb(file)}`
+  );
+  if (next === html) {
+    next = html.replace(
+      /(<(?:article|section)\b[^>]*class=["'][^"']*\bhero\b[^"']*["'][^>]*>[\s\S]*?<div\b[^>]*class=["'][^"']*\bhero-grid\b[^"']*["'][^>]*>\s*<div\b[^>]*>)/i,
+      `$1${journalBreadcrumb(file)}`
+    );
+  }
+  if (next === html) return false;
+  fs.writeFileSync(file, next, "utf8");
+  return true;
+}
+
 function entryFromHtml(file, existing) {
   const html = fs.readFileSync(file, "utf8");
   const published = firstMatch(html, [
@@ -243,8 +285,10 @@ function entryFromHtml(file, existing) {
   };
 }
 
+const journalFiles = walk(blogDir);
+const breadcrumbUpdates = journalFiles.filter(ensureJournalBreadcrumb);
 const existing = readExistingIndex();
-const entries = walk(blogDir)
+const entries = journalFiles
   .filter((file) => !["blog/index.html", "blog/linkedin-artikel.html"].includes(path.relative(root, file).split(path.sep).join("/")))
   .map((file) => entryFromHtml(file, existing))
   .filter(Boolean)
@@ -436,4 +480,4 @@ function updateLibraryJournal(entries) {
 updateBlogJournal(entries);
 updateHomepageJournal(entries);
 updateLibraryJournal(entries);
-console.log(`Wrote ${entries.length} current blog entries to assets/data/blog-index.json.`);
+console.log(`Wrote ${entries.length} current blog entries to assets/data/blog-index.json; added ${breadcrumbUpdates.length} Journal breadcrumbs.`);

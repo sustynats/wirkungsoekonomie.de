@@ -9,8 +9,8 @@ Das Journal ist ein statischer Inhaltsbereich mit automatischer Übersichtsseite
 3. Codex pflegt in der Artikelseite Veröffentlichungsdatum, Kategorie, Titel, Kurzthese, Lesedauer, Tags und optional Bild-Metadaten.
 4. Falls ein Beitragsbild genutzt wird, legt Codex es unter `assets/img/blog/` ab.
 5. Codex pflegt Meta Title und Meta Description in der Artikelseite.
-6. Codex führt `node scripts/blog/build-blog-index.mjs` aus. Der neue Beitrag wird dadurch automatisch in `assets/data/blog-index.json` aufgenommen.
-7. Codex führt `npm run check:journal` aus. Der Check stellt sicher, dass alle veröffentlichten Journalartikel im Index stehen und neueste Beiträge vorne erscheinen.
+6. Codex führt `node scripts/blog/build-blog-index.mjs` aus. Der neue Beitrag wird dadurch automatisch in `assets/data/blog-index.json` aufgenommen; fehlende obere Breadcrumbs `Start / Journal` werden auf Journal-Seiten ergänzt.
+7. Codex führt `npm run check:journal` aus. Der Check stellt sicher, dass alle veröffentlichten Journalartikel im Index stehen, die oberen Breadcrumbs vorhanden sind und Startseite, Journalübersicht sowie Bibliothek den neuesten Beitrag hervorheben.
 8. Codex führt `npm run build:journal-pdfs` aus. Der Schritt erzeugt nur für neue oder geänderte veröffentlichte Artikel eine druckoptimierte PDF-Lesefassung unter `assets/pdf/journal/`.
 9. Codex führt `python3 tools/sync_layout.py` oder `npm run build:search` aus, damit Header/Footer und Suche aktualisiert werden.
 10. Codex prüft lokal, ob die Journalübersicht, der neue Beitrag, Navigation, Footer, Suche, PDF-Download und mobile Ansicht funktionieren.
