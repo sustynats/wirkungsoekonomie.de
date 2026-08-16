@@ -133,7 +133,11 @@ def site_shell() -> tuple[str, str]:
     header_start = source.index('    <header class="site-header"')
     main_start = source.index("    <main", header_start)
     main_end = source.rindex("</main>")
-    return source[header_start:main_start], source[main_end + len("</main>") :]
+    footer = source[main_end + len("</main>") :]
+    # Der globale Footer-Generator fügt das Newsletter-Skript einmalig ein.
+    # Es darf nicht aus einer bereits normalisierten Quellseite mehrfach geerbt werden.
+    footer = re.sub(r'\s*<script defer src="[^\"]*assets/js/newsletter\.js[^\"]*"></script>', "", footer)
+    return source[header_start:main_start], footer
 
 
 def write_article() -> None:
