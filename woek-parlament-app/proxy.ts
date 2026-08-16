@@ -36,7 +36,7 @@ function staticDossierSecurityPolicy() {
   ].join("; ");
 }
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   // The long-form dossiers are static documents and contain no framework
   // bootstrap or inline code. Their single same-origin enhancement script can
   // therefore use a stricter static policy without a per-request nonce.

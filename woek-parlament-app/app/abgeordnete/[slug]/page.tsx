@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ImpactProfileMatrix, DecisionDomainMatrix } from "@/app/components/ImpactProfileMatrix";
@@ -23,7 +24,7 @@ export default async function MemberProfilePage({ params }: { params: Promise<{ 
   return <div className="shell decision-page member-profile-page">
     <nav className="breadcrumb" aria-label="Brotkrumen"><Link href="/">Startseite</Link><span aria-hidden="true">/</span><Link href="/abgeordnete">Wirkungsprofile der Abgeordneten</Link><span aria-hidden="true">/</span><span>{profile.displayName}</span></nav>
     <header className="member-profile-header">
-      {profile.portrait ? <figure><img src={profile.portrait.sourceUrl} alt={`Porträt von ${profile.displayName}`} /><figcaption>{profile.portrait.credit} · <Link href={`/abgeordnete/${profile.slug}/quelle#bildnachweis`}>Bildnachweis ansehen</Link></figcaption></figure> : <div className="member-monogram" aria-hidden="true">{profile.displayName.split(/\s+/).map((name) => name[0]).filter(Boolean).slice(-2).join("")}</div>}
+      {profile.portrait ? <figure><Image unoptimized src={profile.portrait.sourceUrl} alt={`Porträt von ${profile.displayName}`} width={240} height={240} /><figcaption>{profile.portrait.credit} · <Link href={`/abgeordnete/${profile.slug}/quelle#bildnachweis`}>Bildnachweis ansehen</Link></figcaption></figure> : <div className="member-monogram" aria-hidden="true">{profile.displayName.split(/\s+/).map((name) => name[0]).filter(Boolean).slice(-2).join("")}</div>}
       <div><p className="eyebrow">Wirkungsprofil parlamentarischer Entscheidungen</p><h1>{profile.displayName}</h1><p className="lead">{[profile.parliamentaryGroup, profile.federalState, profile.constituency, profile.mandateType].filter(Boolean).join(" · ")}</p><p>Dieses Profil bewertet nicht die Person. Es zeigt, welche amtlich dokumentierten Entscheidungsoptionen sie unterstützt, abgelehnt oder nicht mitgetragen hat und welches Wirkungsprofil diese Optionen zum damaligen Wissensstand hatten.</p><div className="member-profile-links"><Link className="text-link" href={`/abgeordnete/${profile.slug}/quelle`}>Quellen und Datenstand <span aria-hidden="true">→</span></Link>{profile.parliamentaryGroup && <Link className="text-link" href={factionHref(impact?.member.faction_at_vote ?? profile.parliamentaryGroup)}>Fraktionsprofil ansehen <span aria-hidden="true">→</span></Link>}</div></div>
     </header>
 

@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "prebuild": "npm run check:accessibility",
-    "build": "node scripts/quality/check-privacy-governance.mjs && node scripts/quality/check-release-safety.mjs --scope=repository && node scripts/quality/verify-public-documents.mjs && node scripts/quality/check-public-content-completeness.mjs && node scripts/quality/verify-release-1-fachbasis.mjs && node scripts/quality/verify-release-1-1.mjs && node scripts/quality/verify-impact-profiles.mjs && next build && node scripts/quality/check-release-safety.mjs --scope=release && node scripts/quality/verify-public-documents.mjs && node scripts/quality/check-public-content-completeness.mjs && node scripts/quality/verify-release-1-fachbasis.mjs && node scripts/quality/verify-release-1-1.mjs && node scripts/quality/verify-impact-profiles.mjs",
+    "build": "node scripts/quality/check-privacy-governance.mjs && node scripts/quality/check-release-safety.mjs --scope=repository && node scripts/quality/verify-public-documents.mjs && node scripts/quality/check-public-content-completeness.mjs && node scripts/quality/verify-release-1-fachbasis.mjs && node scripts/quality/verify-release-1-1.mjs && node scripts/quality/verify-impact-profiles.mjs && next build --webpack && node scripts/quality/check-release-safety.mjs --scope=release && node scripts/quality/verify-public-documents.mjs && node scripts/quality/check-public-content-completeness.mjs && node scripts/quality/verify-release-1-fachbasis.mjs && node scripts/quality/verify-release-1-1.mjs && node scripts/quality/verify-impact-profiles.mjs",
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
@@ -58,7 +58,7 @@
   },
   "dependencies": {
     "jszip": "^3.10.1",
-    "next": "15.5.13",
+    "next": "^16.3.1",
     "nodemailer": "^9.0.5",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
@@ -69,8 +69,8 @@
     "@types/nodemailer": "^6.4.17",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
-    "eslint": "9.17.0",
-    "eslint-config-next": "15.5.13",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.3.1",
     "tsx": "^4.20.6",
     "typescript": "5.7.2"
   }
