@@ -1,186 +1,328 @@
-# Warum politische Entscheidungen einen Wirkungscheck brauchen, bevor sie getroffen werden
+# Warum politische Entscheidungen einen Wirkungscheck brauchen - vor und nach der Entscheidung
 
-Politische Entscheidungen entstehen nicht im luftleeren Raum. Gesetze werden nicht aus einer spontanen Idee heraus verabschiedet, ohne dass zuvor über Probleme, Ziele und mögliche Folgen gesprochen worden wäre. Ministerien erarbeiten Vorlagen, Fachressorts werden beteiligt, juristische und finanzielle Auswirkungen werden geprüft, Verbände und andere Akteure angehört, Ausschüsse beraten und Parlamente entscheiden.
+[**parlament.wirkungsoekonomie.de**](https://parlament.wirkungsoekonomie.de/)
 
-Für Gesetzesvorlagen der Bundesregierung ist die Betrachtung der Folgen sogar ausdrücklich geregelt. § 44 der Gemeinsamen Geschäftsordnung der Bundesministerien versteht unter Gesetzesfolgen die wesentlichen Auswirkungen eines Gesetzes und nennt sowohl beabsichtigte Wirkungen als auch unbeabsichtigte Nebenwirkungen. Langfristige Wirkungen und die Vereinbarkeit mit nachhaltiger Entwicklung sollen dargestellt werden. Bei entsprechenden Vorhaben soll außerdem festgelegt werden, ob später geprüft wird, ob die beabsichtigten Wirkungen erreicht, Kosten und Ergebnisse angemessen und welche Nebenwirkungen tatsächlich eingetreten sind.
+Politische Entscheidungen entstehen nicht im luftleeren Raum. Gesetze werden nicht aus einer spontanen Idee heraus verabschiedet, ohne dass zuvor über Probleme, Ziele und mögliche Folgen gesprochen worden wäre. Ministerien erarbeiten Vorlagen, Fachressorts werden beteiligt, juristische und finanzielle Auswirkungen geprüft, Verbände und andere Akteure angehört, Ausschüsse beraten und Parlamente entscheiden.
 
-Seit 2009 gehört darüber hinaus eine Nachhaltigkeitsprüfung zu Gesetzes- und Verordnungsentwürfen der Bundesregierung; seit 2018 steht hierfür das elektronische Verfahren eNAP zur Verfügung. Die Deutsche Nachhaltigkeitsstrategie arbeitet mit Zielen und Indikatoren und wird regelmäßig überwacht. Auch der Bundestag besitzt mit dem Parlamentarischen Beirat für nachhaltige Entwicklung und Zukunftsfragen ein Gremium, das die Nachhaltigkeitsstrategie parlamentarisch begleitet.
+Für Gesetzesvorlagen der Bundesregierung ist die Betrachtung der Folgen ausdrücklich geregelt. § 44 der Gemeinsamen Geschäftsordnung der Bundesministerien versteht unter Gesetzesfolgen die wesentlichen Auswirkungen eines Gesetzes. Dazu gehören beabsichtigte Wirkungen ebenso wie unbeabsichtigte Nebenwirkungen. Auch langfristige Wirkungen und die Frage, ob ein Vorhaben einer nachhaltigen Entwicklung entspricht, sollen betrachtet werden. Außerdem ist gegebenenfalls festzulegen, ob später geprüft wird, ob die beabsichtigten Wirkungen erreicht wurden, ob Kosten und Ergebnisse in einem angemessenen Verhältnis stehen und welche Nebenwirkungen tatsächlich eingetreten sind.
 
-Das Wirkungsportal Parlament beginnt deshalb ausdrücklich nicht mit der Behauptung, Politik würde bislang blind entscheiden.
+Seit 2009 besteht zudem eine verpflichtende Nachhaltigkeitsprüfung für Gesetzes- und Verordnungsentwürfe der Bundesregierung. Seit 2018 steht dafür das elektronische Verfahren eNAP zur Verfügung. Die Deutsche Nachhaltigkeitsstrategie arbeitet mit Zielen und Indikatoren, deren Entwicklung regelmäßig beobachtet wird. Auch der Bundestag besitzt in der 21. Wahlperiode mit dem Parlamentarischen Beirat für nachhaltige Entwicklung und Zukunftsfragen ein eigenes parlamentarisches Gremium für diese Fragen.
 
-Seine Ausgangsthese ist anspruchsvoller:
+Das Wirkungsportal Parlament beginnt deshalb ausdrücklich **nicht** mit der Behauptung, Politik würde bislang blind entscheiden.
 
-Zwischen politischer Problemanalyse, Folgenabschätzung, parlamentarischer Entscheidung, Umsetzung, tatsächlicher Zustandsveränderung und späterem Lernen fehlt häufig eine durchgehende gemeinsame Wirkungslogik.
+Seine Ausgangsthese ist eine andere:
+
+> **Zwischen politischem Versprechen, Problemanalyse, Folgenabschätzung, parlamentarischer Entscheidung, Umsetzung, tatsächlicher Zustandsveränderung und späterem Lernen fehlt häufig eine durchgehende gemeinsame Wirkungslogik.**
 
 Genau diese Verbindung versucht das Wirkungsportal herzustellen.
 
-## Von der Folgenabschätzung zur Wirkungsarchitektur
+## Von der politischen Maßnahme zur Wirkungsarchitektur
+
 Eine klassische politische Entscheidungslogik beginnt mit einem Problem. Ein Zustand wird als unbefriedigend erkannt, ein Ziel formuliert und ein Instrument entwickelt, das dieses Ziel erreichen soll.
 
-Daran ist zunächst nichts auszusetzen. Im Gegenteil: Ohne eine solche Kette wäre rationale Politik kaum denkbar.
+Daran ist zunächst nichts auszusetzen. Ohne eine solche Verbindung wäre rationale Politik kaum denkbar.
 
-Die Wirkungsökonomie setzt jedoch an der Verbindung zwischen Instrument und gewünschtem Zustand an.
+Die Wirkungsökonomie setzt eine Ebene tiefer an. Sie fragt, wie genau das Instrument den gewünschten Zustand verändern soll.
 
-Eine Subvention ist zunächst Geld. Eine Steuer ist zunächst ein Anreiz- und Finanzierungsinstrument. Ein Verbot verändert einen rechtlichen Handlungsspielraum. Ein Infrastrukturprogramm stellt Mittel und Projekte bereit. Keines dieser Instrumente ist bereits identisch mit der gesellschaftlichen Wirkung, für die es geschaffen wurde.
+Eine Subvention ist zunächst Geld. Eine Steuer ist zunächst ein Finanzierungs- und Anreizinstrument. Ein Verbot verändert einen rechtlichen Handlungsspielraum. Ein Infrastrukturprogramm stellt Mittel und Projekte bereit. Ein Gesetz verändert Regeln.
 
-Für mich ist deshalb folgende Frage entscheidend: Über welchen Mechanismus soll das Instrument welchen Zustand bei welchen Wirkungsempfängern verändern?
+Keines dieser Instrumente ist bereits identisch mit der gesellschaftlichen Wirkung, für die es geschaffen wurde.
 
-Diese Frage kann überraschend folgenreich sein. Wenn Unternehmen zu wenig investieren, kann eine finanzielle Förderung sinnvoll sein. Sie wird aber nur dann den gewünschten Zustand verändern, wenn Kapitalmangel tatsächlich der relevante Engpass ist. Liegt der Engpass bei Fachkräften, Planung, Netzinfrastruktur, Genehmigungen oder langfristiger Unsicherheit, kann dasselbe Instrument deutlich weniger zusätzliche Investitionen erzeugen als erwartet.
+Die entscheidende Frage lautet deshalb:
 
-Die Wirkungsökonomie behandelt solche Fälle nicht als Beweis schlechten Regierens. Sie versteht sie als Eigenschaft komplexer Systeme: Zwischen Handlung und Zustandsveränderung liegen Mechanismen, Bedingungen, andere Akteure und Rückkopplungen.
+**Über welchen Mechanismus soll das Instrument welchen Zustand bei welchen Wirkungsempfängern verändern?**
 
-Genau deshalb unterscheidet sie Wirkung, Wirkungspotenzial und Wirkungsrisiko. Wirkung ist eine tatsächlich eingetretene Zustandsveränderung. Vor einer Entscheidung lässt sich dagegen zunächst analysieren, welche Veränderungen möglich oder plausibel sind, welche Bedingungen dafür gelten und welche negativen Pfade entstehen könnten.
+Diese Frage kann überraschend folgenreich sein.
 
-Der Folgencheck wird dadurch breiter. Er betrachtet nicht nur die unmittelbar intendierte Folge, sondern auch Wirkungen erster, zweiter und dritter Ordnung. Er fragt nach Verteilung zwischen Gruppen und Regionen, nach Zeitverzug, Nebenwirkungen, Rebound, Spillover, Verlagerung, Pfadabhängigkeit, Lock-in und Reversibilität.
+Wenn Unternehmen zu wenig investieren, kann eine finanzielle Förderung sinnvoll sein. Sie erzeugt aber nur dann zusätzliche Investitionen, wenn fehlendes Kapital tatsächlich ein wesentlicher Engpass ist. Liegt das Problem hauptsächlich bei Fachkräften, Netzanschlüssen, Planungskapazitäten, Genehmigungen oder langfristiger Unsicherheit, kann dasselbe Förderprogramm erheblich weniger verändern als erwartet.
 
-Gerade die dritte Wirkungsordnung ist politisch bedeutsam. Eine Entscheidung kann kurzfristig einen begrenzten Effekt haben, gleichzeitig aber eine Infrastruktur, einen Standard, eine Erwartung oder einen Investitionspfad schaffen, der zukünftige Entscheidungen über Jahrzehnte prägt.
+Eine neue Straße kann einen Verkehrsengpass reduzieren und gleichzeitig zusätzlichen Verkehr erzeugen. Eine Steuer kann ein bestimmtes Verhalten fördern und an anderer Stelle unerwünschte Anreize schaffen. Ein Förderprogramm kann kurzfristig Nachfrage auslösen und langfristig eine neue Abhängigkeit von Subventionen erzeugen.
 
-## Wirkung messen - und Wirkung bewerten - sind zwei verschiedene Dinge
-Eine der wichtigsten methodischen Unterscheidungen des Portals betrifft eine scheinbar einfache Frage:
+Die Wirkungsökonomie behandelt solche Fälle nicht automatisch als Beleg schlechten Regierens. Sie versteht sie zunächst als Eigenschaft komplexer Systeme: Zwischen Handlung und Zustandsveränderung liegen Mechanismen, Bedingungen, andere Akteure, Zeitverzug und Rückkopplungen.
 
-Woran wird Wirkung eigentlich gemessen?
+Genau deshalb unterscheidet sie **Wirkung, Wirkungspotenzial und Wirkungsrisiko**.
 
-Die präzise Antwort lautet: Zunächst gar nicht an einem politischen Zielkatalog.
+Wirkung ist eine tatsächlich eingetretene Zustandsveränderung. Vor einer Entscheidung lässt sich dagegen zunächst analysieren, welche Veränderungen möglich oder plausibel sind, welche Bedingungen dafür erfüllt sein müssen und welche unerwünschten Pfade entstehen könnten.
 
-Eine Zustandsveränderung wird gegenüber einer Baseline, also einem dokumentierten Ausgangszustand, festgestellt. Für eine kausale Einordnung wird zusätzlich nach dem Gegenfaktum gefragt: Was wäre ohne die betrachtete Entscheidung wahrscheinlich geschehen?
+Der Wirkungscheck wird dadurch breiter als eine reine Betrachtung des gewünschten Primäreffekts. Er untersucht Wirkungen erster, zweiter und dritter Ordnung. Er fragt nach Verteilung zwischen Gruppen und Regionen, nach Zeitverzug, Nebenwirkungen, Rebound, Spillover, Verlagerung, Pfadabhängigkeiten, Lock-ins und Reversibilität.
 
-Wenn Emissionen von 100 auf 80 sinken, ist zunächst eine Veränderung beobachtbar. Wenn die Zahl der Wohnungslosen steigt, die Lebenserwartung zunimmt oder institutionelles Vertrauen zurückgeht, sind dies ebenfalls Veränderungen von Zuständen.
+Gerade die dritte Wirkungsordnung ist politisch bedeutsam. Eine Entscheidung kann kurzfristig einen überschaubaren Effekt besitzen und gleichzeitig Infrastruktur, Standards, Erwartungen, institutionelle Routinen oder Investitionspfade verändern, die zukünftige Entscheidungen über Jahrzehnte prägen.
 
-Erst anschließend folgt die normative Frage:
+## Wirkungsrichtung und Wissenssicherheit sind nicht dasselbe
 
-Wie ist diese Veränderung zu bewerten?
+Aus der bisherigen Arbeit am Portal hat sich eine methodische Unterscheidung als besonders wichtig erwiesen.
+
+Vor einer politischen Entscheidung ist die tatsächliche Wirkung noch nicht eingetreten. Daraus folgt aber **nicht**, dass die Richtung eines plausiblen Wirkpfads automatisch offen wäre.
+
+Ein politischer Vorschlag kann bereits ex ante ein erkennbares positives Wirkungspotenzial besitzen. Ein anderer kann ein deutlich negatives Wirkungspotenzial oder ein erhebliches Wirkungsrisiko aufweisen. Andere Maßnahmen besitzen gleichzeitig positive und negative Wirkungspfade und sind deshalb ambivalent. Bei wieder anderen reicht die Informationslage tatsächlich nicht aus, um eine Richtung seriös zu bestimmen.
+
+Die Wirkungsökonomie unterscheidet deshalb:
+
+**positiv - negativ - neutral - ambivalent - offen.**
+
+Davon getrennt steht die Frage:
+
+**Wie sicher wissen wir das?**
+
+Eine modellierte Wirkungsrichtung kann fachlich plausibel und dennoch mit geringer Evidenz verbunden sein. Umgekehrt können sehr belastbare Daten vorliegen, die einen tatsächlich ambivalenten Zielkonflikt zeigen.
+
+Diese Trennung ist entscheidend.
+
+**Unsicherheit macht eine Richtung nicht automatisch ambivalent. Und fehlende Daten machen eine Wirkung nicht neutral.**
+
+Eine wissenschaftlich vorsichtige Wirkungsanalyse besteht deshalb nicht darin, möglichst oft "offen" zu sagen. Sie besteht darin, Richtung, Evidenz, Annahmen und Unsicherheit getrennt sichtbar zu machen.
+
+## Wirkung messen und Wirkung bewerten sind zwei verschiedene Schritte
+
+Eine weitere zentrale Unterscheidung betrifft eine scheinbar einfache Frage:
+
+**Woran wird Wirkung eigentlich gemessen?**
+
+Die präzise Antwort lautet zunächst: an einer Veränderung gegenüber einem Ausgangszustand.
+
+Eine Zustandsveränderung wird gegenüber einer **Baseline** festgestellt. Für eine kausale Einordnung kommt zusätzlich die Frage nach dem Gegenfaktum hinzu: Was wäre ohne die betrachtete Entscheidung wahrscheinlich geschehen?
+
+Wenn Emissionen von 100 auf 80 sinken, ist zunächst eine Veränderung beobachtbar. Wenn die Zahl der Wohnungslosen steigt, Lebenserwartung zunimmt, Bildungsbeteiligung sinkt oder institutionelles Vertrauen zurückgeht, handelt es sich ebenfalls um Veränderungen von Zuständen.
+
+Damit ist jedoch noch nicht beantwortet, wie diese Veränderungen zu bewerten sind.
+
+Diese Frage folgt erst danach:
+
+**Ist die beobachtete oder modellierte Veränderung positiv, negativ, neutral oder ambivalent?**
 
 Dafür benötigt die Wirkungsökonomie einen transparenten Referenzrahmen.
 
-Eine wesentliche Ebene bilden die 17 Sustainable Development Goals der Vereinten Nationen. Die Agenda 2030 wurde 2015 mit diesen 17 globalen Zielen verabschiedet; auch die Deutsche Nachhaltigkeitsstrategie richtet sich an diesem Zielsystem aus.
+Eine wesentliche Ebene bilden die **17 Sustainable Development Goals der Vereinten Nationen**. Sie reichen von Armut, Gesundheit und Bildung über Geschlechtergerechtigkeit, Wasser, Energie, Arbeit und Ungleichheit bis zu Klima, Biodiversität sowie Frieden, Gerechtigkeit und starken Institutionen.
 
-Die SDGs reichen von Armut, Gesundheit und Bildung über Geschlechtergerechtigkeit, Wasser, Energie, Arbeit und Ungleichheit bis zu Klima, Biodiversität sowie Frieden, Gerechtigkeit und starken Institutionen.
+Die Wirkungsökonomie ergänzt diesen Rahmen um **SDG+**.
 
-Die Wirkungsökonomie erweitert diesen Rahmen um SDG+. Diese Erweiterung ist ausdrücklich keine offizielle Kategorie der Vereinten Nationen. Sie ist eine WÖk-eigene Operationalisierung, mit der insbesondere Demokratie, Rechtsstaatlichkeit, Medien- und Informationsqualität, Diskursfähigkeit, institutionelles Vertrauen, gesellschaftlicher Zusammenhalt, digitale Selbstbestimmung und Schutz vor Manipulation stärker sichtbar werden sollen. Dabei wird nicht behauptet, die SDGs enthielten keinerlei demokratische Dimension; gerade SDG 16 besitzt bereits einen erheblichen institutionellen Bezug.
+SDG+ ist ausdrücklich keine offizielle Kategorie der Vereinten Nationen. Es ist eine WÖk-eigene Erweiterung, mit der insbesondere Demokratie, Rechtsstaatlichkeit, Medien- und Informationsqualität, Diskursfähigkeit, institutionelles Vertrauen, gesellschaftlicher Zusammenhalt, digitale Selbstbestimmung und Schutz vor Manipulation differenzierter operationalisiert werden.
 
-Davon getrennt steht die rechtliche Ebene. Grundrechte, Verfassungsprinzipien, Staatsziele, Schutzpflichten und einschlägiges Fachrecht sind keine Unterkategorie der SDGs und werden im Portal auch nicht als solche behandelt. Artikel 20a des Grundgesetzes verpflichtet den Staat beispielsweise zum Schutz der natürlichen Lebensgrundlagen und der Tiere in Verantwortung für künftige Generationen.
+Dabei behauptet die Wirkungsökonomie nicht, die ursprünglichen SDGs enthielten keinerlei demokratische Dimension. Gerade SDG 16 besitzt bereits einen erheblichen institutionellen und rechtsstaatlichen Bezug.
 
-Für Landespolitik kommen zusätzlich landesspezifische Verfassungsziele, Strategien und Indikatoren hinzu.
+Davon getrennt steht die rechtliche Ebene.
 
-Mensch, Planet und Demokratie bilden schließlich die verständliche systemische Ordnung des WÖk-Modells. Sie sind keine drei beliebig addierbaren Punktetöpfe, sondern miteinander verbundene Wirkungsräume. Demokratie ist dabei nicht nur ein drittes Themenfeld. Sie ist zugleich die Korrekturinfrastruktur, über die ökologische und soziale Fehlentwicklungen überhaupt erkannt, öffentlich diskutiert und politisch verändert werden können.
+Grundrechte, Verfassungsprinzipien, Staatsziele, Schutzpflichten und einschlägiges Fachrecht sind keine Unterkategorie der SDGs. Sie bilden eigene Referenz- und Schutzebenen.
 
-Damit entsteht ein entscheidender Unterschied zu einer versteckten politischen Bewertung: Die WÖk behauptet nicht, wertfrei zu sein. Sie macht ihren Wertmaßstab sichtbar.
+Artikel 20a des Grundgesetzes verpflichtet den Staat beispielsweise zum Schutz der natürlichen Lebensgrundlagen und der Tiere in Verantwortung für künftige Generationen.
+
+Für Landespolitik kommen Landesverfassung, landesrechtliche Zuständigkeiten, Fachrecht und gegebenenfalls landesspezifische Ziele hinzu.
+
+Mensch, Planet und Demokratie bilden schließlich die verständliche systemische Ordnung des WÖk-Modells. Sie sind keine drei beliebig addierbaren Punktetöpfe, sondern miteinander verbundene Wirkungsräume.
+
+Demokratie ist dabei nicht lediglich ein drittes Themenfeld. Sie ist zugleich eine Korrekturinfrastruktur. Rechtsstaat, freie Öffentlichkeit, Wissenschaft, Medien, parlamentarische Kontrolle und gesellschaftlicher Diskurs ermöglichen überhaupt erst, soziale und ökologische Fehlentwicklungen zu erkennen und politisch zu korrigieren.
+
+Damit unterscheidet sich die WÖk bewusst von einer versteckten politischen Bewertung.
+
+Sie behauptet nicht, ohne Wertmaßstab auszukommen.
+
+Sie macht diesen Maßstab **sichtbar und überprüfbar**.
+
+## Rechtliche Umsetzbarkeit gehört zur Wirkungsfrage
+
+Gerade bei Wahlprogrammen reicht es nicht, nur zu fragen, welche Wirkung eine Forderung theoretisch entfalten könnte.
+
+Es muss vorher geklärt werden:
+
+**Kann die politische Ebene diese Forderung überhaupt umsetzen?**
+
+Ein Land kann nicht beliebig Bundesrecht abschaffen. Eine Landesregierung kann keine europäische Kompetenz an sich ziehen. Kommunale, landesrechtliche, bundesrechtliche und europäische Zuständigkeiten unterscheiden sich.
+
+Auch rechtliche Grenzen verändern das Wirkungspotenzial einer politischen Forderung.
+
+Eine Maßnahme kann politisch gewollt sein und dennoch nur durch eine Grundgesetzänderung, eine bundesgesetzliche Änderung oder eine europäische Rechtsänderung umsetzbar werden. Eine andere Forderung kann Grundrechte, Gleichheitsanforderungen, Schutzpflichten oder andere verfassungsrechtliche Grenzen berühren.
+
+Deshalb behandelt das Wirkungsportal bei politischen Programmen künftig mindestens zwei Fragen getrennt:
+
+**Welche Wirkung hätte die Forderung, wenn sie umgesetzt würde?**
+
+und
+
+**Kann der betrachtete politische Akteur sie in dieser Form überhaupt umsetzen?**
+
+Das ist keine juristische Nebensache. Eine politische Zusage, die außerhalb der eigenen Kompetenz liegt, besitzt eine andere Realisierungswahrscheinlichkeit und einen anderen Wirkpfad als eine Maßnahme, die unmittelbar umgesetzt werden kann.
+
+## Nicht jede positive Wirkung darf negative Wirkung kompensieren
+
+Eine weitere Besonderheit der Wirkungsökonomie ist das Nichtkompensationsprinzip.
+
+Politische Entscheidungen besitzen fast immer Zielkonflikte. Eine Maßnahme kann wirtschaftliche Vorteile erzeugen und zugleich ökologische Belastungen erhöhen. Ein Sicherheitsgewinn kann mit Einschränkungen von Freiheit oder Datenschutz verbunden sein. Eine Klimamaßnahme kann Verteilungseffekte erzeugen.
+
+Solche Zielkonflikte müssen sichtbar gemacht und politisch abgewogen werden.
+
+Aber nicht jeder Schaden ist nur ein weiterer Punkt in einer Durchschnittsrechnung.
+
+Schwere Menschenrechtsverletzungen werden nicht dadurch unproblematisch, dass an anderer Stelle ein wirtschaftlicher Nutzen entsteht. Eine erhebliche demokratische Beschädigung kann nicht mit einem guten Bildungsprojekt verrechnet werden. Eine fundamentale ökologische Grenzverletzung verschwindet nicht, weil eine Maßnahme gleichzeitig Arbeitsplätze schafft.
+
+Die Wirkungsökonomie unterscheidet deshalb zwischen **abwägbaren Zielkonflikten und Wirkungsgrenzen**.
+
+Wirkungsgrenzen sind rote Linien, bei denen positive Werte in anderen Feldern eine schwere negative Wirkung nicht einfach neutralisieren dürfen.
+
+Die Reverse Merit Order operationalisiert dieses Prinzip: Das kritischste zentrale Wirkungsfeld oder eine verletzte Schutzgrenze kann die Gesamtbewertung begrenzen.
+
+Damit soll verhindert werden, dass politische Programme oder Entscheidungen durch Durchschnittsbildung besser aussehen, als ihre gravierendsten Folgen es zulassen.
 
 ## Gerade im politischen Streit braucht Wirkung einen sichtbaren Maßstab
+
 Politische Auseinandersetzung ist notwendigerweise von Interessen, Weltbildern und unterschiedlichen Prioritäten geprägt.
 
-Das ist kein Fehler der Demokratie, sondern ein Teil ihres Wesens.
+Das ist kein Fehler der Demokratie. Es gehört zu ihrem Wesen.
 
 Problematisch wird es erst, wenn politische Etiketten die Frage nach den tatsächlichen Folgen ersetzen.
 
-„Wirtschaftsfreundlich“, „sozial“, „sicher“, „ökologisch“, „freiheitlich“, „konservativ“, „progressiv“ oder „bürokratiearm“ sind politische Deutungen. Aus ihnen folgt nicht automatisch, welche Zustandsveränderung eine konkrete Maßnahme erzeugt.
+"Wirtschaftsfreundlich", "sozial", "sicher", "ökologisch", "freiheitlich", "konservativ", "progressiv" oder "bürokratiearm" sind politische Deutungen. Aus ihnen folgt nicht automatisch, welche Zustandsveränderung eine konkrete Maßnahme erzeugt.
 
-Eine als wirtschaftsfreundlich bezeichnete Entscheidung kann kurzfristig Kosten reduzieren und gleichzeitig langfristig Infrastruktur-, Klima- oder Gesundheitsrisiken erhöhen. Eine als sozial bezeichnete Maßnahme kann im Durchschnitt entlasten und bestimmte Gruppen dennoch schlechter stellen. Eine sicherheitspolitische Regel kann einen realen Schutzgewinn erzeugen und gleichzeitig Rechtsstaats- oder Datenschutzrisiken erhöhen.
+Eine als wirtschaftsfreundlich bezeichnete Entscheidung kann kurzfristig Kosten reduzieren und gleichzeitig langfristige Infrastruktur-, Klima- oder Gesundheitsrisiken erhöhen.
 
-Die Wirkungsökonomie versucht deshalb nicht, politische Ideologien zu beseitigen. Das wäre weder möglich noch wünschenswert.
+Eine als sozial bezeichnete Maßnahme kann im Durchschnitt entlasten und bestimmte Gruppen dennoch schlechter stellen.
+
+Eine sicherheitspolitische Regel kann einen realen Schutzgewinn erzeugen und gleichzeitig erhebliche Rechtsstaats- oder Datenschutzrisiken aufweisen.
+
+Die Wirkungsökonomie versucht deshalb nicht, politische Ideologien zu beseitigen. Das wäre weder möglich noch demokratisch wünschenswert.
 
 Sie legt unter den politischen Streit eine zweite Ebene:
 
-Unabhängig davon, welches politische Narrativ eine Entscheidung trägt: Welche Zustände verändert sie tatsächlich, und wie lässt sich diese Veränderung an vorher offengelegten Ziel-, Schutz- und Rechtsrahmen einordnen?
+> **Unabhängig davon, welches politische Narrativ eine Entscheidung trägt: Welche Zustände verändert sie wahrscheinlich oder tatsächlich, und wie lässt sich diese Veränderung an vorher offengelegten Ziel-, Schutz- und Rechtsrahmen einordnen?**
 
-Gerade darin liegt ein wesentlicher demokratischer Nutzen des Portals. Der politische Streit bleibt bestehen. Aber seine Tatsachen-, Wirkungs- und Normebenen können besser voneinander unterschieden werden.
+Der politische Streit bleibt bestehen.
 
-## Deutschland besitzt Wirkungsansätze - aber noch keine durchgängige Wirkungssteuerung
-An diesem Punkt ist eine weitere Abgrenzung wichtig.
+Aber Fakt, Wirkungspotenzial, Wirkungsrisiko, Evidenz, Recht und normative Bewertung können besser voneinander unterschieden werden.
+
+## Deutschland besitzt bereits Wirkungsansätze
+
+An diesem Punkt ist eine faire Abgrenzung wichtig.
 
 Deutschland beginnt nicht bei null.
 
-Die Gesetzesfolgenabschätzung ist ein bestehendes Instrument. Der Nationale Normenkontrollrat prüft unter anderem die Darstellung von Erfüllungsaufwand und praxistauglichere Alternativen; wesentliche Regelungen werden zudem nachgemessen und evaluiert. Die Nachhaltigkeitsstrategie enthält Ziele, Indikatoren und Monitoring. Der Bundeshaushalt wird schrittweise stärker in Richtung Ziel- und Wirkungsorientierung weiterentwickelt.
+Die Gesetzesfolgenabschätzung ist ein bestehendes Instrument. Die Nachhaltigkeitsstrategie enthält Ziele, Indikatoren und Monitoring. Die Bundesregierung nutzt die elektronische Nachhaltigkeitsprüfung. Der Bundestag begleitet Nachhaltigkeit parlamentarisch. Und auch die Haushaltssteuerung entwickelt sich weiter.
 
-Gerade die aktuellen Arbeiten des Bundesfinanzministeriums zeigen aber auch die noch bestehende Lücke.
+Besonders interessant ist die **ziel- und wirkungsorientierte Haushaltsführung des Bundes**, kurz zwoH.
 
-Beim sogenannten SDG-Tagging werden Haushaltstitel mit Nachhaltigkeitszielen verknüpft. Dadurch lässt sich erkennen, wozu öffentliche Mittel programmatisch beitragen sollen. Das BMF weist selbst darauf hin, dass daraus noch keine Aussage darüber folgt, wie effektiv oder effizient diese Mittel tatsächlich zur Zielerreichung beitragen und welche reale Wirkungsintensität sie entfalten.
+Das aktuelle Rahmenkonzept des Bundesfinanzministeriums geht inzwischen deutlich weiter als eine bloße Zuordnung von Haushaltstiteln zu Nachhaltigkeitszielen. Es unterscheidet Signaling, Tagging und Analysing. Beim SDG-Tagging werden Haushaltsansätze Nachhaltigkeitszielen zugeordnet. Das Analysing soll darüber hinaus Wirkzusammenhänge, Ziele und Indikatoren betrachten und vergleichende Wirkungskontrolle ermöglichen. Das BMF beschreibt als Kernfrage einer idealtypischen wirkungsorientierten Haushaltsführung ausdrücklich den Zusammenhang zwischen eingesetzten Haushaltsmitteln und daraus resultierenden Wirkungen.
 
-Genau dort setzt die WÖk-Frage an.
+Das ist eine wichtige Entwicklung.
 
-Nicht nur:
+Und gerade deshalb sollte die Wirkungsökonomie nicht behaupten, der Staat denke Wirkung bislang überhaupt nicht.
 
-Welchem Ziel ist ein Haushaltstitel zugeordnet?
+Ihre Frage ist weiter gefasst.
 
-Sondern:
+Sie lautet nicht nur:
 
-Welcher Zustand verändert sich durch diesen Mitteleinsatz tatsächlich - gegenüber welcher Ausgangslage, für welche Gruppe, über welchen Mechanismus und mit welchen Nebenwirkungen?
+**Wie entsteht aus Geld die gewünschte Wirkung eines Programms?**
 
-Das Gleiche gilt für Steuern.
+Sondern zusätzlich:
 
-Das deutsche Steuerrecht kennt selbstverständlich Lenkungswirkungen und gezielte Anreize. Die Bundesregierung nutzt etwa Steuerbefreiungen, Abschreibungsmöglichkeiten oder CO₂-bezogene Regelungen, um bestimmte Entscheidungen attraktiver oder unattraktiver zu machen.
+**Welche gesamte Netto-Wirkung entsteht für Mensch, Planet und Demokratie, welche Neben- und Folgewirkungen treten auf, welche Schutzgrenzen gelten und wie wird dieses Wissen über mehrere politische Entscheidungen hinweg zurückgekoppelt?**
 
-Diese Einzelinstrumente ergeben jedoch noch keine gemeinsame Architektur, in der das Steuersystem insgesamt nach einer geprüften Netto-Wirkung auf Mensch, Planet und Demokratie rückgekoppelt wird.
+Das ist ein anderer Systemumfang.
 
-Genau hier liegt der weitergehende Anspruch der Wirkungsökonomie.
+Die WÖk verbindet Haushaltswirkung mit politischem Mandat, Recht, parlamentarischer Entscheidung, Kommunikation, Umsetzung, späterer Zustandsbeobachtung, Nichtkompensation und institutionellem Lernen.
 
-Das historische WÖk-Wirkungssteuergesetz entwirft eine solche Rückkopplung als Modell. Es ist ausdrücklich kein geltendes Recht. Seine Grundidee ist jedoch exemplarisch: Nicht nur Geldmenge, Umsatz oder Einkommen sollen steuerlich relevant sein, sondern auch die nachgewiesene Wirkung wirtschaftlicher Aktivität.
+Nicht als Konkurrenz zu bestehenden Instrumenten.
 
-Das Gleiche lässt sich auf öffentliche Haushalte, Förderung, Beschaffung, Kapitalzugang oder Regulierung übertragen.
+Sondern als übergreifende Wirkungsarchitektur.
 
-Damit verändert sich Wirkung von einem Berichtsthema zu einer Steuerungsgröße.
+## Steuern besitzen Lenkungswirkung, aber noch keinen gemeinsamen Wirkungsmaßstab
 
-## Entscheidungsreife ist eine zusätzliche Wirkungsfrage
+Ähnliches gilt für Steuern.
+
+Das deutsche Steuerrecht enthält selbstverständlich Lenkungswirkungen und gezielte Anreize. Steuerbefreiungen, Abschreibungsregeln, Energiesteuern, CO2-bezogene Instrumente und andere Regelungen verändern wirtschaftliche Entscheidungen.
+
+Daraus entsteht jedoch noch keine gemeinsame Architektur, in der das Steuersystem insgesamt auf eine geprüfte Netto-Wirkung für Mensch, Planet und Demokratie rückgekoppelt wird.
+
+Genau hier liegt der weitergehende WÖk-Ansatz.
+
+Das historische Wirkungssteuergesetz der Wirkungsökonomie skizziert eine solche Architektur als Modell. Es ist kein geltendes Recht und darf nicht als solches behandelt werden. Seine Grundidee zeigt aber, wohin die Rückkopplungslogik führen kann: Wirkung wird nicht nur nachträglich berichtet, sondern verändert wirtschaftliche Signale.
+
+Das Prinzip lässt sich auch auf öffentliche Haushalte, Förderung, Beschaffung, Kapitalzugang oder Regulierung übertragen.
+
+Damit wird Wirkung von einer Berichtsinformation zu einer möglichen Steuerungsgröße.
+
+## Wirkungsbezogene Entscheidungsreife ist etwas anderes als parlamentarische Entscheidungsfähigkeit
+
 Ein weiterer Baustein des Portals ist die wirkungsbezogene Entscheidungsreife.
 
-Auch dieser Begriff darf nicht missverstanden werden.
+Auch dieser Begriff muss präzise verstanden werden.
 
-Eine Vorlage kann juristisch zulässig, fachlich ausgearbeitet und parlamentarisch vollständig abstimmungsfähig sein. Nicht wirkungsbezogen entscheidungsreif bedeutet nicht, dass darüber nicht entschieden werden dürfe.
+Eine Vorlage kann juristisch zulässig, fachlich ausgearbeitet und parlamentarisch vollständig abstimmungsfähig sein.
 
-Es bedeutet, dass für die Wirkungsbewertung noch Parameter offen sind, deren Ausgestaltung die erwartete Netto-Wirkung wesentlich verändern kann.
+"Nicht wirkungsbezogen entscheidungsreif" bedeutet nicht, dass das Parlament nicht darüber entscheiden dürfte.
 
-Die Analyse des Wahl-O-Mat Sachsen-Anhalt hat hierfür anschauliche Beispiele geliefert. Die Forderung nach weniger Auflagen in der Nutztierhaltung kann eine unnötige Nachweispflicht oder einen materiellen Schutzstandard meinen. Beide Varianten haben möglicherweise vollkommen unterschiedliche Wirkpfade.
+Es bedeutet, dass für eine belastbare Wirkungsbewertung noch Parameter offen sind, deren konkrete Ausgestaltung die erwartete Netto-Wirkung wesentlich verändern kann.
 
-Ein Wirkungscheck soll diesen Unterschied sichtbar machen, bevor eine scheinbar eindeutige Ja-Nein-Frage aus unterschiedlichen politischen Designs eine einzige Position macht.
+Die Analyse politischer Programme zeigt dafür typische Beispiele.
+
+Die Forderung nach "weniger Auflagen" kann eine unnötige Dokumentationspflicht meinen. Sie kann aber ebenso einen materiellen Schutzstandard betreffen.
+
+"Mehr Sicherheit" kann zusätzliche Polizeipräsenz, bessere Prävention, veränderte Strafrahmen, Überwachung oder ganz andere Instrumente bedeuten.
+
+"Familien stärken" sagt zunächst wenig darüber aus, welche Familien gemeint sind, welche Instrumente eingesetzt werden und welche Gruppen dadurch besser oder schlechter gestellt werden.
+
+Ein Wirkungscheck soll diese Unterschiede sichtbar machen, bevor aus einer sprachlich einfachen Forderung eine scheinbar eindeutige Wirkungsbewertung entsteht.
 
 Die politische Entscheidung bleibt beim demokratisch legitimierten Entscheidungsträger.
 
-Die WÖk erweitert lediglich die Information darüber, welche Ausgestaltung eigentlich bewertet wird.
+Die WÖk erweitert die Information darüber, **was eigentlich beschlossen wird und welche Folgen daraus plausibel entstehen könnten**.
 
-## Vor der Entscheidung und nach der Entscheidung gelten andere Erkenntnisregeln
-Der Kern des Portals besteht deshalb in einer zeitlichen Trennung.
+## Vor und nach der Entscheidung gelten unterschiedliche Erkenntnisregeln
 
-Vor einer Entscheidung können Wirkungspotenziale, Risiken, Mechanismen und Szenarien analysiert werden. Nach einer Entscheidung lassen sich Umsetzung und tatsächliche Zustandsveränderungen beobachten.
+Der Kern des Portals besteht deshalb auch in einer zeitlichen Trennung.
+
+Vor einer Entscheidung können Wirkungspotenziale, Risiken, Mechanismen und Szenarien analysiert werden.
+
+Nach einer Entscheidung lassen sich Umsetzung und tatsächliche Zustandsveränderungen beobachten.
 
 Diese Ebenen dürfen nicht ineinander geschoben werden.
 
-Ein beschlossenes Gesetz ist noch keine Wirkung. Eine ausgezahlte Förderung ist noch keine Wirkung. Ein gebauter Kilometer Schiene ist zunächst Output. Entscheidend ist, ob sich dadurch beispielsweise Erreichbarkeit, Reisezeiten, Verlagerung von Verkehr, Emissionen oder regionale Teilhabe tatsächlich verändern.
+Ein beschlossenes Gesetz ist noch keine Wirkung.
 
-Und selbst eine beobachtete Zustandsveränderung ist noch keine Kausalität.
+Eine ausgezahlte Förderung ist noch keine Wirkung.
 
-Dafür braucht es - soweit methodisch möglich - Baseline, Gegenfaktum, alternative Erklärungen und Zurechnung.
+Ein gebauter Kilometer Schiene ist zunächst Output.
 
-Die WÖk kennt deshalb keine Pflicht zur künstlichen Kausalpräzision. Eine Veränderung kann direkt zurechenbar sein. Eine Maßnahme kann einen plausiblen Beitrag geleistet haben. Sie kann Teil einer systemischen Mitwirkung sein. Oder die Zurechnung kann offenbleiben.
+Entscheidend ist, ob sich dadurch beispielsweise Erreichbarkeit, Reisezeit, Verkehrsverlagerung, Emissionen oder regionale Teilhabe verändern.
 
-Diese Offenheit ist kein Mangel des Portals.
+Und selbst eine beobachtete Zustandsveränderung ist noch kein Kausalnachweis.
+
+Dafür braucht es, soweit methodisch möglich, Baseline, Gegenfaktum, alternative Erklärungen und Zurechnung.
+
+Die WÖk kennt deshalb keine Pflicht zur künstlichen Kausalpräzision.
+
+Eine Veränderung kann direkt zurechenbar sein. Eine Maßnahme kann einen plausiblen Beitrag geleistet haben. Sie kann Teil einer systemischen Mitwirkung sein. Oder die Zurechnung kann offen bleiben.
+
+Diese Offenheit ist kein Mangel.
 
 Sie ist ein Qualitätsmerkmal.
 
-Denn politische Wirkung wird nicht glaubwürdiger, wenn jede Unsicherheit in eine Zahl verwandelt wird.
+Politische Wirkung wird nicht glaubwürdiger, wenn jede Unsicherheit in eine Zahl verwandelt wird.
 
-## Das politische Gedächtnis ist mehr als ein Archiv
-Damit entsteht eine Funktion, die mir für das Projekt besonders wichtig erscheint: ein politisches Wirkungsgedächtnis.
+## Das politische Wirkungsgedächtnis ist mehr als ein Archiv
 
-Parlamente besitzen selbstverständlich Archive. Gesetze, Drucksachen und Abstimmungen verschwinden nicht physisch.
+Damit entsteht eine Funktion, die für mich zu den wichtigsten des Portals gehört:
 
-Aber ein Wirkungsgedächtnis speichert zusätzlich die damaligen Annahmen.
+**ein öffentliches Wirkungsgedächtnis für Politik.**
 
-Welches Problem sollte gelöst werden? Welche Mechanismen wurden erwartet? Welche Risiken waren bekannt? Welche Daten fehlten? Welche Alternativen standen zur Verfügung? Welcher Wissensstand war zum Entscheidungszeitpunkt vorhanden?
+Parlamente besitzen selbstverständlich Archive. Gesetze, Drucksachen, Plenarprotokolle und Abstimmungen verschwinden nicht.
 
-Jahre später lässt sich dieser damalige Wissensstand mit der beobachteten Entwicklung vergleichen.
+Ein Wirkungsgedächtnis speichert aber zusätzlich die damalige Wirkungsannahme.
+
+Welches Problem sollte gelöst werden? Welche Mechanismen wurden erwartet? Welche Risiken waren bekannt? Welche Daten fehlten? Welche Alternativen standen zur Verfügung? Welche Schutzgrenzen waren relevant? Welcher Wissensstand war zum Entscheidungszeitpunkt vorhanden?
+
+Jahre später kann dieser damalige Wissensstand mit der beobachteten Entwicklung verglichen werden.
 
 Das verhindert zwei gegensätzliche Verzerrungen.
 
-Es verhindert die rückblickende Behauptung, eine Entwicklung sei vollkommen unvorhersehbar gewesen, obwohl Risiken dokumentiert waren.
+Es verhindert die rückblickende Behauptung, eine Entwicklung sei vollkommen unvorhersehbar gewesen, obwohl entsprechende Risiken bereits dokumentiert waren.
 
-Es verhindert aber ebenso die nachträgliche Besserwisserei, heutiges Wissen so zu behandeln, als hätte es dem Parlament schon damals zur Verfügung gestanden.
+Es verhindert aber ebenso die nachträgliche Besserwisserei, heutiges Wissen so zu behandeln, als hätte es dem Parlament bereits damals zur Verfügung gestanden.
 
-Politische Verantwortung wird dadurch nicht härter.
+Politische Verantwortung wird dadurch nicht pauschal härter.
 
-Sie wird genauer.
+Sie wird präziser.
 
-## Wahlprogramme werden Teil derselben Wirkungskette
-Das Portal beginnt zudem früher als bei der parlamentarischen Drucksache.
+## Wahlprogramme werden Teil derselben Spur
+
+Das Portal beginnt deshalb früher als bei einer parlamentarischen Drucksache.
 
 Wahlprogramme formulieren politische Ziele und Zusagen. Koalitionsverträge übersetzen einen Teil davon in gemeinsame politische Vereinbarungen. Daraus können konkrete Vorlagen entstehen, die im parlamentarischen Prozess wiederum verändert werden.
 
@@ -188,131 +330,150 @@ Erst danach folgen Beschluss, Umsetzung und mögliche Zustandsveränderung.
 
 Diese Stufen werden im Portal getrennt gehalten.
 
-Dadurch entsteht eine nachvollziehbare Verbindung von Mandat und Praxis, ohne Umsetzung mit Wirkung zu verwechseln.
+Dadurch entsteht eine nachvollziehbare Verbindung von **Mandat und Praxis**, ohne Umsetzung mit Wirkung zu verwechseln.
 
-Für die Bundestagswahlprogramme 2025 und den Koalitionsvertrag wurde dafür ein Bestand von 1.593 strukturierten Zusagen aufgebaut. Die entscheidende Frage lautet dabei nicht, welche Partei insgesamt „besser wirkt“. Eine solche Gesamtbewertung wäre methodisch problematisch.
+Für die Bundestagswahlprogramme 2025 und den Koalitionsvertrag wurde dafür ein strukturierter Bestand von 1.593 Zusagen aufgebaut.
 
-Interessanter ist die einzelne politische Zusage: Welche Problemannahme steckt dahinter? Welches Instrument wird vorgeschlagen? Welche Wirkpfade sind plausibel? Wird die Forderung später übernommen? Wie verändert sie sich im parlamentarischen Prozess? Was wird tatsächlich umgesetzt? Und was lässt sich später beobachten?
+Die entscheidende Frage lautet dabei nicht:
+
+**Welche Partei wirkt insgesamt besser?**
+
+Ein pauschaler Gesamtwert wäre methodisch problematisch und würde die eigentliche Wirkungsfrage wieder verdecken.
+
+Interessanter ist die einzelne politische Zusage.
+
+Welche Problemannahme steckt dahinter? Welches Instrument wird vorgeschlagen? Ist die zuständige politische Ebene überhaupt handlungsfähig? Welche positiven und negativen Wirkpfade sind plausibel? Welche Schutzgrenzen könnten berührt werden? Wird die Forderung später in einen Koalitionsvertrag übernommen? Wie verändert sie sich im parlamentarischen Verfahren? Was wird tatsächlich umgesetzt? Und was lässt sich später beobachten?
 
 Ein eingehaltenes Wahlversprechen kann wirkungsarm oder schädlich sein.
 
-Ein verändertes Wahlversprechen kann durch eine bessere Lösung ersetzt worden sein.
+Ein verändertes Wahlversprechen kann durch eine wirkungsvollere Lösung ersetzt worden sein.
 
-Umsetzungstreue und positive Wirkung sind deshalb zwei unterschiedliche Fragen.
+**Umsetzungstreue und positive Wirkung sind zwei unterschiedliche Fragen.**
 
-## Politik wirkt auch, bevor sie entscheidet
-Politische Programme besitzen zusätzlich einen Wirkungspfad, der in klassischen Umsetzungsanalysen leicht verschwindet.
+## Politik wirkt auch durch ihre Sprache
+
+Politische Programme besitzen noch einen zweiten Wirkungspfad, der in klassischen Umsetzungsanalysen leicht verschwindet.
 
 Sie sind Kommunikation.
 
-Parteien benennen Probleme, wählen Begriffe, setzen Frames, definieren Zugehörigkeit und beschreiben Ursachen. Diese Deutungen können durch Parteikanäle, Unterstützer, Gegner, journalistische Berichterstattung, Faktenchecks, Creator und Plattformalgorithmen weiterverbreitet werden.
+Parteien benennen Probleme, wählen Begriffe, setzen Frames, definieren Zugehörigkeit und beschreiben Ursachen. Sie entscheiden, welche Gruppen als Teil eines Problems erscheinen, welche Institutionen Vertrauen verdienen und welche Entwicklungen als Bedrohung, Chance oder Krise dargestellt werden.
 
-Dadurch kann eine Aussage auch dann gesellschaftlich präsent werden, wenn sie nie in ein Gesetz eingeht.
+Diese Sprache kann über Parteikanäle, Unterstützer, Gegner, journalistische Berichterstattung, Faktenchecks, Creator und Plattformalgorithmen weiterverbreitet werden.
 
-Die WÖk bezeichnet dies als kommunikative Vorwirkung beziehungsweise Wirkungspotenzial im öffentlichen Resonanzraum.
+Eine politische Aussage kann damit gesellschaftlich relevant werden, selbst wenn die dazugehörige Sachforderung niemals Gesetz wird.
 
-Dabei gelten besonders strenge Evidenzregeln. Ein Frame beweist keine Einstellungsänderung. Reichweite ist keine Wirkung. Wiederholung ist noch keine Überzeugung.
+Die WÖk betrachtet dies als **kommunikatives Wirkungspotenzial im öffentlichen Resonanzraum**.
 
-Aber Wiederholung, Verfügbarkeit, Agenda-Setting und algorithmische Verstärkung sind plausible Mechanismen, die für demokratische Wirkungsanalyse relevant sein können. Die WÖk behandelt Demokratie deshalb nicht nur als institutionellen Rahmen, sondern auch als Wirkungsraum von Wahrheit, Vertrauen, Medienqualität, Diskursfähigkeit und Schutz vor Manipulation.
+Dabei gelten besonders strenge Evidenzregeln.
 
-Damit wird auch die Wirkung von Medien und Plattformen weder ignoriert noch pauschal zum Schuldmodell.
+Ein Frame beweist keine Einstellungsänderung.
 
-Gefragt wird vielmehr, welche Rolle die öffentliche Verbreitungsarchitektur innerhalb eines konkreten Wirkungspfads spielt.
+Reichweite ist noch keine Wirkung.
 
-## Abstimmungen werden sichtbar - Menschen werden nicht benotet
+Wiederholung beweist noch keine Überzeugung.
+
+Aber Wiederholung, Verfügbarkeit, Agenda-Setting, soziale Identifikation, Normalisierung und algorithmische Verstärkung sind plausible Wirkmechanismen, die für eine demokratische Wirkungsanalyse relevant sein können.
+
+Deshalb wird nicht die angebliche Absicht einer Partei bewertet.
+
+Analysiert wird der mögliche Wirkpfad ihrer Kommunikation.
+
+Das ist ein wesentlicher Unterschied.
+
+## Abstimmungen können Verantwortung sichtbar machen - ohne Menschen zu benoten
+
 Namentliche Abstimmungen eröffnen eine weitere Verbindung.
 
-Wo der Bundestag das individuelle Abstimmungsverhalten amtlich dokumentiert, kann dieses Verhalten mit der jeweiligen Fachakte verknüpft werden.
+Wo das individuelle Abstimmungsverhalten amtlich dokumentiert, technisch eingelesen und fachlich freigegeben ist, kann es mit der jeweiligen politischen Fachakte verknüpft werden.
 
-Dann lässt sich nachvollziehen, worüber tatsächlich abgestimmt wurde, welche Wirkungspotenziale und Risiken zu dieser Entscheidung dokumentiert sind, wie ein Mandatsträger abgestimmt hat und welche Entwicklungen später beobachtet wurden.
+Dann lässt sich nachvollziehen, worüber tatsächlich abgestimmt wurde, welche Wirkungspotenziale und Risiken dokumentiert waren, wie ein Mandatsträger abgestimmt hat und welche Entwicklungen später beobachtet wurden.
 
-Das ist politische Verantwortlichkeit in einem sehr nüchternen Sinn.
+Das ist politische Verantwortlichkeit in einem nüchternen Sinn.
 
-Es ist keine Personenbewertung.
+Es ist **keine Personenbewertung**.
 
-Die WÖk darf aus einer Stimme keine Motivation erfinden. Sie darf aus einer Fraktionsposition keine individuelle Stimme rekonstruieren. Und sie darf aus einer Reihe von Abstimmungen keinen moralischen Gesamtwert eines Menschen erzeugen. Genau diese Grenze ist für das Parlament-Portal verbindlich.
+Die Wirkungsökonomie darf aus einer Stimme keine Motivation erfinden. Sie darf aus einer Fraktionsposition keine individuelle Stimme rekonstruieren. Und sie darf aus mehreren Abstimmungen keinen moralischen Gesamtwert eines Menschen erzeugen.
+
+Bewertet wird die konkrete Entscheidung und ihr Wirkungszusammenhang.
+
+Nicht der Wert einer Person.
 
 ## Was das Portal tatsächlich besonders macht
+
 Keiner dieser Bausteine ist für sich genommen völlig neu.
 
 Es gibt Gesetzesfolgenabschätzung.
 
-Es gibt Nachhaltigkeitsindikatoren.
+Es gibt Nachhaltigkeitsprüfungen.
 
-Es gibt Wahlprogramme.
+Es gibt wirkungsorientierte Haushaltsansätze.
+
+Es gibt Wahlprogramme und Koalitionsverträge.
 
 Es gibt parlamentarische Dokumente.
 
 Es gibt Abstimmungsdaten.
 
-Es gibt Evaluationen.
+Es gibt wissenschaftliche Evaluationen.
 
-Es gibt wissenschaftliche Studien.
+Es gibt Nachhaltigkeitsziele, Grundrechte, Staatsziele und Fachrecht.
 
-Es gibt Grundrechte, Staatsziele und Nachhaltigkeitsstrategien.
+Das Besondere des Wirkungsportals liegt deshalb nicht in der Behauptung, all diese Dinge erfunden zu haben.
 
-Es gibt Haushaltsdaten und politische Programme.
+Es liegt in ihrer **Verbindung zu einer gemeinsamen, durchgehenden Wirkungsarchitektur**.
 
-Das Besondere des Wirkungsportals liegt deshalb nicht darin, all diese Dinge erfunden zu haben.
+Das Portal versucht, für denselben politischen Gegenstand über die Zeit eine zusammenhängende Spur zu erhalten:
 
-Es liegt in ihrer gemeinsamen Architektur.
+**politisches Problem und Ziel - Wahlversprechen - Zuständigkeit und Recht - Wirkungspotenzial und Wirkungsrisiko - kommunikative Vorwirkung - parlamentarische Entscheidung - Abstimmung - Umsetzung - beobachtete Zustandsveränderung - Evidenz und Zurechnung - normative Bewertung - Schutzgrenzen - Rückkopplung und Lernen.**
 
-Das Portal versucht, für denselben politischen Gegenstand über die Zeit hinweg eine zusammenhängende Spur zu erhalten: Problem und politisches Ziel, programmatische Zusage, konkrete Entscheidung, Ex-ante-Wirkpfade, Entscheidungsreife, amtliches Abstimmungsverhalten, Umsetzung, beobachtete Zustandsveränderungen, Gegenfaktum, Zurechnung, normative Bewertung und schließlich Rückkopplung.
+Dabei kommt ein zweites Integrationsprinzip hinzu.
 
-Dazu kommt ein zweites Integrationsprinzip: dieselbe Entscheidung wird nicht nur nach einem Ressortziel oder einer einzelnen Kennzahl betrachtet, sondern im gekoppelten Wirkungsraum von Mensch, Planet und Demokratie - mit SDGs und WÖk-SDG+ als transparenten Referenzebenen und mit Grundrechten, Staatszielen und Fachrecht als davon getrennten rechtlichen Grenzen.
+Dieselbe Entscheidung wird nicht lediglich nach einem Ressortziel oder einer einzelnen Kennzahl betrachtet. Sie wird im gekoppelten Wirkungsraum von Mensch, Planet und Demokratie betrachtet - mit SDGs und WÖk-SDG+ als transparenten Referenzebenen sowie mit Grundrechten, Staatszielen und Fachrecht als eigenständigen rechtlichen Ebenen.
 
-Und ein drittes Prinzip ist ebenso wichtig: Die Analyse darf ihre Unsicherheit nicht verstecken.
+Ein drittes Prinzip ist ebenso wichtig:
+
+**Schwere Schäden dürfen nicht durch Durchschnittsbildung verschwinden.**
+
+Und ein viertes:
+
+**Die Analyse darf ihre Unsicherheit nicht verstecken.**
 
 Eine Datenlücke bleibt eine Datenlücke.
 
 Eine modellierte Folge bleibt modelliert.
 
+Ein negatives Wirkungspotenzial wird nicht deshalb "offen", weil die Wirkung noch nicht eingetreten ist.
+
 Eine beobachtete Veränderung wird nicht automatisch zur kausal zugerechneten Wirkung.
 
-Eine vollständige Fachanalyse wird nicht durch eine hübsche Kurzkarte ersetzt. Der Veröffentlichungsvertrag des Portals verlangt deshalb eine quellengebundene Fachakte, sichtbare Annahmen, Unsicherheiten, Datenlücken und vollständige Quellen- und Fassungsinformationen.
-
-Diese Verbindung von zeitlicher Kontinuität, systemischer Breite, transparentem Maßstab und wissenschaftlicher Selbstbegrenzung ist der eigentliche Kern des Projekts.
+Diese Verbindung von zeitlicher Kontinuität, systemischer Breite, transparentem Maßstab, Schutzgrenzen und wissenschaftlicher Selbstbegrenzung ist für mich der eigentliche Kern des Projekts.
 
 ## Warum das mehr ist als ein weiteres Transparenzportal
+
 Transparenz allein verändert noch keine Steuerung.
 
-Ein Staat kann hervorragend dokumentieren, was er tut, ohne deshalb konsequent nach dem Ergebnis dieses Handelns zu steuern.
+Ein Staat kann hervorragend dokumentieren, was er tut, ohne deshalb konsequent aus den Ergebnissen seines Handelns zu lernen.
 
 Genau an dieser Stelle beginnt der größere Anspruch der Wirkungsökonomie.
 
 Wenn Wirkung lediglich beobachtet und veröffentlicht wird, bleibt sie Information.
 
-Wenn die Erkenntnisse aber die nächste Budgetentscheidung, Förderbedingung, Steuerregel, Beschaffung, Gesetzesgestaltung oder Evaluation verändern, entsteht Wirkungsrückkopplung.
+Wenn die Erkenntnisse aber die nächste Budgetentscheidung, Förderbedingung, Steuerregel, Beschaffung, Gesetzesgestaltung oder Evaluation verändern, entsteht **Wirkungsrückkopplung**.
 
-Die langfristige WÖk-Frage lautet daher nicht nur, wie Politik ihre Wirkung besser messen kann.
+Die langfristige WÖk-Frage lautet daher:
 
-Sie lautet:
-
-Wie müssen politische und ökonomische Steuerungssysteme gebaut sein, damit positive Netto-Wirkung für Mensch, Planet und Demokratie selbst zu einem entscheidungsrelevanten Signal wird?
+> **Wie müssen politische und ökonomische Steuerungssysteme gebaut sein, damit positive Netto-Wirkung für Mensch, Planet und Demokratie selbst zu einem entscheidungsrelevanten Signal wird?**
 
 Das ist eine wesentlich größere Frage.
 
-Sie betrifft Steuern.
+Sie betrifft Steuern und Haushalte, Förderung und öffentliche Beschaffung, Regulierung und Kapital, Infrastruktur und politische Kommunikation.
 
-Haushalte.
+Das heutige System besitzt hierfür bereits zahlreiche wertvolle Bausteine.
 
-Förderung.
+Die Wirkungsökonomie versucht, sie zu einer lernenden Rückkopplungsarchitektur zu verbinden.
 
-Öffentliche Beschaffung.
+## Politik muss nicht unfehlbar werden - sie muss korrigierbarer werden
 
-Regulierung.
-
-Kapital.
-
-Infrastruktur.
-
-Und politische Kommunikation.
-
-Das heutige System besitzt hierfür bereits viele wertvolle Einzelbausteine. Aber sie bilden noch keine allgemeine Rückkopplungsarchitektur.
-
-Die Wirkungsökonomie versucht, genau diese Architektur zu beschreiben.
-
-## Politik muss nicht unfehlbar werden. Sie muss korrigierbarer werden.
 Politische Systeme werden niemals alle Folgen einer Entscheidung vorhersagen können.
 
 Das ist in komplexen Gesellschaften unmöglich.
@@ -321,51 +482,33 @@ Neue Technologien entstehen. Märkte reagieren. Menschen verändern ihr Verhalte
 
 Deshalb ist das Ziel des Wirkungsportals nicht Vorhersageperfektion.
 
-Ein guter Ex-ante-Folgencheck ist eine dokumentierte, überprüfbare Hypothese über mögliche Wirkpfade.
+Ein guter Ex-ante-Wirkungscheck ist eine dokumentierte, überprüfbare Hypothese über mögliche Wirkpfade.
 
-Sein Wert zeigt sich gerade dann, wenn die Realität anders verläuft.
+Sein Wert zeigt sich gerade dann, wenn die Realität später anders verläuft.
 
-Welche Annahme war falsch?
-
-Welcher Engpass wurde übersehen?
-
-Welche Nebenwirkung trat auf?
-
-Welche Gruppe war anders betroffen als erwartet?
-
-Welche Wirkung war stärker?
-
-Welche Daten fehlen weiterhin?
-
-Und welche Entscheidung sollte deshalb heute anders getroffen werden?
+Welche Annahme war falsch? Welcher Engpass wurde übersehen? Welche Nebenwirkung trat auf? Welche Gruppe war anders betroffen als erwartet? Welche Wirkung war stärker oder schwächer? Welche Daten fehlen weiterhin? Und welche Entscheidung sollte deshalb heute anders getroffen werden?
 
 Genau hier wird aus Analyse Lernen.
 
 Eine Demokratie darf sich irren.
 
-Eine lernfähige Demokratie zeichnet sich nicht dadurch aus, dass sie niemals falsche Entscheidungen trifft.
+Eine lernfähige Demokratie zeichnet sich nicht dadurch aus, dass sie niemals falsche Entscheidungen trifft. Sie zeichnet sich dadurch aus, dass sie ihre Annahmen überprüfen, Abweichungen erkennen und ihre Regeln korrigieren kann.
 
-Sie zeichnet sich dadurch aus, dass sie ihre Annahmen überprüfen, Abweichungen erkennen und ihre Regeln korrigieren kann.
-
-Vielleicht ist deshalb nicht die einzelne Wirkungsanalyse der wichtigste Teil des Wirkungsportals.
+Vielleicht ist deshalb nicht die einzelne Wirkungsanalyse der wichtigste Teil des Portals.
 
 Vielleicht ist es die Verbindung zwischen zwei Entscheidungen.
 
-Die erste Entscheidung erzeugt Erfahrungen.
-
-Diese Erfahrungen verändern die zweite.
+Die erste Entscheidung erzeugt Erfahrungen. Diese Erfahrungen verändern die zweite.
 
 Dann wird Wirkung nicht nur dokumentiert.
 
 Sie wird zur Rückkopplung.
 
-Und genau deshalb läuft auch dieses große Projekt am Ende auf eine sehr einfache Frage hinaus:
+Und am Ende läuft auch dieses große Projekt auf drei sehr einfache Fragen hinaus:
 
-Was wollten wir verändern - was hat sich tatsächlich verändert - und was muss deshalb bei der nächsten Entscheidung anders werden?
+> **Was wollten wir verändern? Was hat sich tatsächlich verändert? Und was muss deshalb bei der nächsten Entscheidung anders werden?**
 
-Das ist keine Alternative zur Demokratie.
-
-Es ist ein Versuch, ihre Korrekturfähigkeit zu stärken.
+Das Wirkungsportal ist der Versuch, genau diese **Korrekturfähigkeit der Demokratie** sichtbar und überprüfbar zu stärken.
 
 ## Quellen zur institutionellen Einordnung
 

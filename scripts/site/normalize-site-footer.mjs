@@ -82,7 +82,7 @@ let changed = 0;
 for (const filePath of footerFiles()) {
   const before = fs.readFileSync(filePath, "utf8");
   const after = before.replace(
-    /<footer class="footer"[\s\S]*?<\/footer>\n*/,
+    /<footer class="footer"[\s\S]*?<\/footer>(?:\s*>?\s*<script defer src="[^"]*assets\/js\/newsletter\.js[^"]*"><\/script>)*\n*/,
     `${renderFooter(prefixFor(filePath)).trimEnd()}\n`,
   );
 

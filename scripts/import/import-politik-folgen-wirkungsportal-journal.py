@@ -17,21 +17,19 @@ ROOT = Path(__file__).resolve().parents[2]
 SOURCE = ROOT / "source-assets/originals/Journal_Politik_an_ihren_Folgen_messen.md"
 ARTICLE = ROOT / "blog/politik-an-ihren-folgen-messen.html"
 SLUG = "politik-an-ihren-folgen-messen"
-TITLE = "Warum politische Entscheidungen einen Wirkungscheck brauchen, bevor sie getroffen werden"
-SUBTITLE = "Wie das Wirkungsportal Parlament bestehende Folgenabschätzung zu einer durchgehenden Wirkungsarchitektur weiterführt"
+TITLE = "Warum politische Entscheidungen einen Wirkungscheck brauchen - vor und nach der Entscheidung"
+SUBTITLE = "Wie das Wirkungsportal Parlament Folgenabschätzung vor und nach Entscheidungen zu einer durchgehenden Wirkungsarchitektur verbindet"
 DESCRIPTION = (
-    "Das Wirkungsportal Parlament verbindet Folgenabschätzung, Entscheidungsreife, "
-    "Beobachtung, Zurechnung und Rückkopplung zu einer durchgehenden Wirkungslogik."
+    "Das Wirkungsportal Parlament verbindet Folgenabschätzung vor dem Beschluss mit "
+    "Umsetzung, Beobachtung, Zurechnung und demokratischer Wirkungsrückkopplung."
 )
 DATE = "15. August 2026"
 DATE_ISO = "2026-08-15T18:00:00+02:00"
+MODIFIED_ISO = "2026-08-16T09:30:00+02:00"
 SECTION = "Politik & Demokratie"
-READING_TIME = "15 Min."
-HERO_IMAGE = "2026-08-15-wirkungscheck-vor-politischen-entscheidungen.png"
-HERO_ALT = (
-    "Wirkungsportal Parlament: Warum politische Entscheidungen vor ihrem Beschluss "
-    "einen Wirkungscheck brauchen."
-)
+READING_TIME = "18 Min."
+HERO_IMAGE = "2026-08-15-wirkungscheck-vor-und-nach-politischen-entscheidungen.png"
+HERO_ALT = "Wirkungsportal Parlament: Wirkungscheck vor und nach politischen Entscheidungen."
 TAGS = [
     "Wirkungsportal Parlament",
     "Politik und Demokratie",
@@ -110,6 +108,11 @@ def render_content(source: str) -> str:
             flush_list()
             output.append(f"          <h2>{inline(line[3:].strip())}</h2>")
             continue
+        if line.startswith("> "):
+            flush_paragraph()
+            flush_list()
+            output.append(f"          <blockquote><p>{inline(line[2:].strip())}</p></blockquote>")
+            continue
         if line.startswith("- "):
             flush_paragraph()
             list_items.append(line[2:].strip())
@@ -154,7 +157,7 @@ def write_article() -> None:
         "url": f"https://wirkungsoekonomie.de/blog/{SLUG}.html",
         "image": f"https://wirkungsoekonomie.de/assets/img/blog/{HERO_IMAGE}",
         "datePublished": DATE_ISO,
-        "dateModified": DATE_ISO,
+        "dateModified": MODIFIED_ISO,
         "inLanguage": "de",
         "author": {
             "@type": "Person",
@@ -200,7 +203,7 @@ def write_article() -> None:
     <meta name="twitter:image" content="https://wirkungsoekonomie.de/assets/img/blog/{HERO_IMAGE}">
     <meta name="twitter:image:alt" content="{esc(HERO_ALT)}">
     <meta property="article:published_time" content="{DATE_ISO}">
-    <meta property="article:modified_time" content="{DATE_ISO}">
+    <meta property="article:modified_time" content="{MODIFIED_ISO}">
     <meta property="article:section" content="{esc(SECTION)}">
 {tags}
     <link rel="alternate" type="application/rss+xml" title="Journal der Wirkungsökonomie" href="https://wirkungsoekonomie.de/feeds/journal.xml">
