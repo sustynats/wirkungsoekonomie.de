@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "prebuild": "npm run check:accessibility",
-    "build": "node scripts/quality/check-privacy-governance.mjs && node scripts/quality/check-release-safety.mjs --scope=repository && node scripts/quality/verify-public-documents.mjs --deep && node scripts/quality/check-public-content-completeness.mjs && node scripts/quality/verify-release-1-fachbasis.mjs && node scripts/quality/verify-release-1-1.mjs && next build && node scripts/quality/check-release-safety.mjs --scope=release && node scripts/quality/verify-public-documents.mjs --deep && node scripts/quality/check-public-content-completeness.mjs && node scripts/quality/verify-release-1-fachbasis.mjs && node scripts/quality/verify-release-1-1.mjs",
+    "build": "node scripts/quality/check-privacy-governance.mjs && node scripts/quality/check-release-safety.mjs --scope=repository && node scripts/quality/verify-public-documents.mjs && node scripts/quality/check-public-content-completeness.mjs && node scripts/quality/verify-release-1-fachbasis.mjs && node scripts/quality/verify-release-1-1.mjs && next build && node scripts/quality/check-release-safety.mjs --scope=release && node scripts/quality/verify-public-documents.mjs && node scripts/quality/check-public-content-completeness.mjs && node scripts/quality/verify-release-1-fachbasis.mjs && node scripts/quality/verify-release-1-1.mjs",
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
