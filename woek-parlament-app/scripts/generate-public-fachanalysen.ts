@@ -18,6 +18,35 @@ function text(value: unknown, fallback = "") {
   return typeof value === "string" && value.trim().length > 0 ? value.trim() : fallback;
 }
 
+function publicStatus(value: unknown) {
+  const normalized = text(value).trim().toUpperCase().replaceAll("_", " ");
+  const labels: Record<string, string> = {
+    "EX ANTE CAUSAL HYPOTHESIS WITH MODEL INPUTS": "Ex-ante-Wirkungshypothese · modellgestützt",
+    "EX ANTE DESIGN POTENTIAL": "Ex-ante-Designpotenzial",
+    "MECHANISM PARTLY TESTED EFFECT LIMITED IN ONE STUDY": "Mechanismus teilweise untersucht · Wirkung nur begrenzt belegt",
+    "FRAME EXISTENCE SUPPORTED CAUSAL BEHAVIOUR UNRESOLVED": "Frame belegt · Verhaltenswirkung kausal offen",
+    "IMPACT POTENTIAL WITH DOCUMENTED MEDIA FRAME": "Wirkungspotenzial mit dokumentiertem Medienframe",
+    "IMPACT POTENTIAL WITH DOCUMENTED FRAME": "Wirkungspotenzial mit dokumentiertem Frame",
+    "DOCUMENTED COMPLEXITY AND LIMITED KNOWLEDGE": "Komplexität dokumentiert · Wissensstand begrenzt",
+    "POLICY DESIGN AND MODELLED PATH": "Politikdesign · modellierter Wirkpfad",
+    "OFFICIAL OBJECTIVE AND MODELLED POTENTIAL": "Amtliches Ziel · modelliertes Wirkungspotenzial",
+    "NOT CAUSALLY ATTRIBUTED": "nicht kausal zugerechnet",
+    "PARTIAL MECHANISM SUPPORTED NO BEHAVIOURAL ATTRIBUTION": "Teilmechanismus gestützt · keine Verhaltenszurechnung",
+    "UNRESOLVED": "offen"
+  };
+  return labels[normalized] ?? text(value).replaceAll("_", " ");
+}
+
+function publicReferenceFields(values: string[]) {
+  const mapped = values.flatMap((value) => {
+    if (value === "SDG+ Diskurskultur") return ["SDG+ Diskursfähigkeit"];
+    if (value === "SDG+ Resilienz") return ["Systemdimension: Wirkungsresilienz"];
+    if (value === "SDG+ Transparenz/Open Data") return ["Kontextbezug: Transparenz und offene Daten"];
+    return [value];
+  });
+  return [...new Set(mapped)];
+}
+
 function safeUrl(value: unknown) {
   try {
     const url = new URL(text(value));
@@ -129,6 +158,10 @@ function toPublicFachanalyse(input: RecordValue) {
       inForce: text(decision.principal_entry_into_force)
     },
     publicationBoundary: text(input.release_boundary),
+    referenceStatus: text(normativeMapping.reference_status),
+    referenceStatusLabel: text(normativeMapping.reference_status).startsWith("PROPOSED_PENDING")
+      ? "Vorgeschlagener Prüfbezug – Referenzabgleich ausstehend"
+      : "Referenzabgleich abgeschlossen",
     exAnte: publicPhase(input.ex_ante),
     exPost: publicPhase(input.ex_post),
     timeline,
@@ -140,16 +173,16 @@ function toPublicFachanalyse(input: RecordValue) {
         label: text(value.pattern),
         period: text(value.period),
         potentialPath: text(value.potential_path),
-        evidenceStatus: text(value.evidence_status).replaceAll("_", " "),
+        evidenceStatus: publicStatus(value.evidence_status),
         alternativeExplanation: text(value.strongest_alternative_explanation),
-        causalStatus: text(value.causal_status).replaceAll("_", " "),
+        causalStatus: publicStatus(value.causal_status),
         affectedGroups: strings(value.affected_groups),
         sources: strings(value.source_refs).map((sourceId) => sourceById.get(sourceId)).filter(Boolean)
       };
     }),
     referenceFields: {
       mpd: strings(normativeMapping.mpd_dimensions),
-      sdgAndPlus: strings(normativeMapping.sdg_sdgplus)
+      sdgAndPlus: publicReferenceFields(strings(normativeMapping.sdg_sdgplus))
     },
     impactPaths: (Array.isArray(input.impact_paths) ? input.impact_paths : []).map((item) => {
       const value = object(item);
@@ -158,7 +191,7 @@ function toPublicFachanalyse(input: RecordValue) {
         hypothesis: text(value.hypothesis),
         prerequisites: strings(value.prerequisites),
         risks: strings(value.risks),
-        evidenceStatus: text(value.evidence_status).replaceAll("_", " "),
+        evidenceStatus: publicStatus(value.evidence_status),
         sources: strings(value.source_refs).map((sourceId) => sourceById.get(sourceId)).filter(Boolean)
       };
     }),

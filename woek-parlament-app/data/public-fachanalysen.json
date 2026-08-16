@@ -641,9 +641,9 @@
         "label": "Kosten, finanzielle Überforderung und Wertverlust",
         "period": "2023",
         "potentialPath": "Kostenframe → wahrgenommenes Risiko/Unsicherheit → Aufschub, Protest oder Wahl einer Übergangstechnologie",
-        "evidenceStatus": "IMPACT POTENTIAL WITH DOCUMENTED MEDIA FRAME",
+        "evidenceStatus": "Wirkungspotenzial mit dokumentiertem Medienframe",
         "alternativeExplanation": "Tatsächliche Energiepreis-, Zins-, Baukosten- und Förderunsicherheit sowie reale Investitionshöhe.",
-        "causalStatus": "NOT CAUSALLY ATTRIBUTED",
+        "causalStatus": "nicht kausal zugerechnet",
         "affectedGroups": [
           "selbstnutzende Eigentümer:innen",
           "Vermieter:innen",
@@ -693,9 +693,9 @@
         "label": "Verbot, Zwang und Verlust von Wahlfreiheit",
         "period": "2023",
         "potentialPath": "Verdichtete Verbotsdeutung → geringere wahrgenommene Handlungsautonomie → Ablehnung/Polarisierung",
-        "evidenceStatus": "IMPACT POTENTIAL WITH DOCUMENTED FRAME",
+        "evidenceStatus": "Wirkungspotenzial mit dokumentiertem Frame",
         "alternativeExplanation": "Der frühe Entwurf enthielt tatsächlich eine verbindliche Vorgabe; die Differenz zwischen bestehender Heizung, Reparatur, Neubau, Bestand und Übergangsfrist war komplex.",
-        "causalStatus": "NOT CAUSALLY ATTRIBUTED",
+        "causalStatus": "nicht kausal zugerechnet",
         "affectedGroups": [
           "Gebäudeeigentümer:innen",
           "Handwerk",
@@ -744,9 +744,9 @@
         "label": "Unklarheit über Pflichten, Ausnahmen, Wärmeplanung und Förderung",
         "period": "Frühjahr bis Herbst 2023",
         "potentialPath": "Mehrere Fassungen und späte materielle Änderungen → Informationsasymmetrie → Planungsunsicherheit und mögliche Fehlentscheidungen",
-        "evidenceStatus": "DOCUMENTED COMPLEXITY AND LIMITED KNOWLEDGE",
+        "evidenceStatus": "Komplexität dokumentiert · Wissensstand begrenzt",
         "alternativeExplanation": "Niedriges Detailwissen und politische Voreinstellungen können unabhängig von Medienframes bestehen.",
-        "causalStatus": "PARTIAL MECHANISM SUPPORTED NO BEHAVIOURAL ATTRIBUTION",
+        "causalStatus": "Teilmechanismus gestützt · keine Verhaltenszurechnung",
         "affectedGroups": [
           "Eigentümer:innen",
           "Mieter:innen",
@@ -796,9 +796,9 @@
         "label": "Technologieoffenheit versus faktische Präferenz",
         "period": "2023",
         "potentialPath": "Unterschiedliche Bewertungen der Erfüllungsoptionen → Investitionswahl, Kapazitätsaufbau oder Lock-in-Risiko",
-        "evidenceStatus": "POLICY DESIGN AND MODELLED PATH",
+        "evidenceStatus": "Politikdesign · modellierter Wirkpfad",
         "alternativeExplanation": "Technische Wirtschaftlichkeit, Infrastrukturverfügbarkeit und Energiepreise prägen Technologieentscheidungen unabhängig von Kommunikation.",
-        "causalStatus": "UNRESOLVED",
+        "causalStatus": "offen",
         "affectedGroups": [
           "Heizungsindustrie",
           "Handwerk",
@@ -860,9 +860,9 @@
         "label": "Klimaschutz, Energiesicherheit und Transformationsnotwendigkeit",
         "period": "2022-2023",
         "potentialPath": "Problem- und Zielklarheit → Akzeptanz und frühere klimafreundliche Investitionen",
-        "evidenceStatus": "OFFICIAL OBJECTIVE AND MODELLED POTENTIAL",
+        "evidenceStatus": "Amtliches Ziel · modelliertes Wirkungspotenzial",
         "alternativeExplanation": "Akzeptanz hängt ebenfalls von Kosten, Fairness, Vertrauen, Infrastruktur und politischer Identität ab.",
-        "causalStatus": "NOT CAUSALLY ATTRIBUTED",
+        "causalStatus": "nicht kausal zugerechnet",
         "affectedGroups": [
           "Gesamtgesellschaft",
           "klimaverwundbare Gruppen",
@@ -922,9 +922,9 @@
         "SDG 12",
         "SDG 13",
         "SDG+ Rechtsstaatlichkeit",
-        "SDG+ Diskurskultur",
-        "SDG+ Resilienz",
-        "SDG+ Transparenz/Open Data"
+        "SDG+ Diskursfähigkeit",
+        "Systemdimension: Wirkungsresilienz",
+        "Kontextbezug: Transparenz und offene Daten"
       ]
     },
     "impactPaths": [
@@ -944,7 +944,7 @@
           "fossile Übergangs-Lock-ins",
           "regressive Belastung"
         ],
-        "evidenceStatus": "EX ANTE CAUSAL HYPOTHESIS WITH MODEL INPUTS",
+        "evidenceStatus": "Ex-ante-Wirkungshypothese · modellgestützt",
         "sources": [
           {
             "slug": "deutscher-bundestag-regierungsentwurf-bt-drs-20-6875",
@@ -999,7 +999,7 @@
           "uneinheitliche Qualität",
           "Fristverdichtung ab 2026/2028"
         ],
-        "evidenceStatus": "EX ANTE DESIGN POTENTIAL",
+        "evidenceStatus": "Ex-ante-Designpotenzial",
         "sources": [
           {
             "slug": "deutscher-bundestag-beschlussempfehlung-und-ausschussfassung-bt-drs-20-7619",
@@ -1043,7 +1043,7 @@
           "Vermieter-Mieter-Dilemma",
           "Förderstopps/Planungsunsicherheit"
         ],
-        "evidenceStatus": "EX ANTE DESIGN POTENTIAL",
+        "evidenceStatus": "Ex-ante-Designpotenzial",
         "sources": [
           {
             "slug": "deutscher-bundestag-beschlussempfehlung-und-ausschussfassung-bt-drs-20-7619",
@@ -1085,7 +1085,7 @@
           "zu späte Klarstellung",
           "Wissen ohne Einstellungs-/Verhaltensänderung"
         ],
-        "evidenceStatus": "MECHANISM PARTLY TESTED EFFECT LIMITED IN ONE STUDY",
+        "evidenceStatus": "Mechanismus teilweise untersucht · Wirkung nur begrenzt belegt",
         "sources": [
           {
             "slug": "deutscher-bundestag-beschlussempfehlung-und-ausschussfassung-bt-drs-20-7619",
@@ -1128,7 +1128,7 @@
           "Vertrauensverlust",
           "Illusory-truth-Effekte"
         ],
-        "evidenceStatus": "FRAME EXISTENCE SUPPORTED CAUSAL BEHAVIOUR UNRESOLVED",
+        "evidenceStatus": "Frame belegt · Verhaltenswirkung kausal offen",
         "sources": [
           {
             "slug": "hochschule-fur-angewandte-wissenschaften-hamburg-der-einsatz-von-frames-in-der-berichterstattung-uber-das-gebaudeenergiegesetz-von-medien-der-axel-springer-se",
@@ -1743,6 +1743,8 @@
         "supports": "Zeigt modellierte Unterschiede zur April-Fassung und die Bedeutung von Wärmeplanung, Wärmenetzen und Wärmepumpen.",
         "doesNotSupport": "Ist keine Ex-post-Evaluation und keine kausale Messung."
       }
-    ]
+    ],
+    "referenceStatus": "PROPOSED_PENDING_REFERENCE_RECONCILIATION",
+    "referenceStatusLabel": "Vorgeschlagener Prüfbezug – Referenzabgleich ausstehend"
   }
 ]

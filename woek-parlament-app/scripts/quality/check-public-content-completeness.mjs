@@ -23,7 +23,12 @@ for (const item of workingActs) {
   for (const group of [mapping?.sdgItems ?? [], mapping?.sdgPlusItems ?? [], mapping?.constitutionalAnchorItems ?? []]) {
     const ids = group.map((entry) => entry.id);
     if (new Set(ids).size !== ids.length) fail(`${item.slug} contains duplicate public mapping tiles.`);
+    for (const entry of group) {
+      if (entry.direction === "EVIDENCE_OPEN") fail(`${item.slug} misuses EVIDENCE_OPEN as a direction.`);
+      if (!["POSITIVE_POTENTIAL", "NEGATIVE_RISK", "NEUTRAL", "AMBIVALENT", "OPEN", "OBSERVED_POSITIVE", "OBSERVED_NEGATIVE"].includes(entry.direction)) fail(`${item.slug} has an invalid public direction: ${entry.direction}.`);
+    }
   }
+  if (!item.fachakteId) fail(`${item.slug} has no reachable full-record identifier.`);
 }
 
 const analyses = loadJson("data/public-fachanalysen.json");

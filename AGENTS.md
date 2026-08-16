@@ -22,6 +22,36 @@ Diese Datei ist die dauerhafte Arbeitsanweisung fuer Codex-Aufgaben in diesem Re
 - Jede veroeffentlichte Fachakte erhaelt ein Production-Integrity-Manifest mit Source-Hash, Pflichtpfaden, gerenderten Pfaden, fehlenden Pfaden, Fallback-Ueberschreibungen und kanonischer Vollquellen-URL.
 - Freigabebedingung: `missing_paths = 0`, `fallback_overwrites = 0` und bestandener externer Produktions-Crawl.
 
+## Gate 12 – Semantische UI-Integritaet
+
+- Farbe, Icon, Pfeil, Reihenfolge und Hervorhebung sind fachliche Aussagen und muessen dem expliziten Datenstatus entsprechen.
+- Ein allgemeines oder offenes Wirkungspotenzial wird neutral dargestellt. Gruen und ein aufwaerts gerichteter Pfeil sind ausschliesslich bei `POSITIVE_POTENTIAL` zulaessig.
+- `OPEN`, `AMBIVALENT`, `MATERIAL`, geringe Evidenz oder ein blosser Zielbezug duerfen niemals wie eine festgestellte positive Wirkung erscheinen.
+
+## Gate 13 – Richtung, Evidenz und Risiko
+
+- Die Richtungsachse akzeptiert ausschliesslich `POSITIVE_POTENTIAL`, `NEGATIVE_RISK`, `NEUTRAL`, `AMBIVALENT` und `OPEN`.
+- `EVIDENCE_OPEN` ist ein Evidenzstatus und darf nicht als Wirkungsrichtung gespeichert oder gerendert werden.
+- Ein positives Potenzial wird nicht allein deshalb ambivalent, weil getrennte Risiken oder Bedingungen bestehen. Trennbare Potenzial- und Risikopfade werden separat modelliert.
+
+## Gate 14 – Schema- und Statusparitaet
+
+- Pending-, bestaetigte und retrospektive Faelle verwenden dasselbe kanonische Fach-View-Model.
+- Ein Statuswechsel darf weder Schutzgrenzen, Verbesserungsoptionen, Gegenargumente, Querverbindungen, Berechnungsanforderungen noch Vote-Layer verlieren.
+- Statusspezifische Texte duerfen die Einleitung aendern, aber keine fachlichen Source-Felder ersetzen.
+
+## Gate 15 – Quellfragment-Integritaet
+
+- Unvollstaendige, abgeschnittene oder zusammengeklebte Primaertextfragmente erhalten keine automatisch erzeugte Wirkungsrichtung.
+- Solche Einheiten bleiben `OPEN`, bis der Primaertext rekonstruiert oder die Luecke sichtbar dokumentiert wurde.
+- Ex-ante-Analysen bezeichnen modellierte Potentiale und Risiken; sie behaupten keine bereits beobachtete Wirkung.
+
+## Gate 16 – Primaerquellenintegritaet
+
+- Parteiforderungen werden aus den Originalprogrammen, Rechtsaussagen aus Primaerrecht und Wirkmechanismen aus geeigneten Fachquellen belegt.
+- Journalistische Quellen koennen Medienresonanz oder oeffentliche Kommunikation belegen, ersetzen aber weder Originalprogramm, amtliche Entscheidung noch Fachquelle.
+- Oeffentliche Vollakten behalten Fundstellen, Aussagegrenzen und zeitlichen Wissensstand nachvollziehbar bei.
+
 ## Inhaltliche Leitlinie Wirkungsökonomie
 
 - Wirkung ist neutral und relational.

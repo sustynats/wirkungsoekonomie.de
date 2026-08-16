@@ -8,8 +8,9 @@ import { humanizeSystemValue } from "@/lib/presentation/labels";
 const directionLabel: Record<PublicNormativeMappingItem["direction"], string> = {
   POSITIVE_POTENTIAL: "überwiegend stärkend",
   NEGATIVE_RISK: "Risiko überwiegt",
+  NEUTRAL: "richtungsneutral",
   AMBIVALENT: "gemischt",
-  EVIDENCE_OPEN: "Richtung offen",
+  OPEN: "Richtung offen",
   OBSERVED_POSITIVE: "beobachtet stärkend",
   OBSERVED_NEGATIVE: "beobachtet belastend"
 };
@@ -78,10 +79,11 @@ function DirectionBars({ item }: { item: PublicNormativeMappingItem }) {
   const positive = item.direction === "POSITIVE_POTENTIAL" || item.direction === "OBSERVED_POSITIVE";
   const negative = item.direction === "NEGATIVE_RISK" || item.direction === "OBSERVED_NEGATIVE";
   const mixed = item.direction === "AMBIVALENT";
+  const open = item.direction === "OPEN" || item.direction === "NEUTRAL";
   return <span className="target-direction">
     <span className="direction-bars" aria-hidden="true">
       <i className={positive || mixed ? "is-positive" : ""} />
-      <i className={mixed ? "is-neutral" : ""} />
+      <i className={mixed || open ? "is-neutral" : ""} />
       <i className={negative || mixed ? "is-negative" : ""} />
     </span>
     <span>{directionLabel[item.direction]}</span>

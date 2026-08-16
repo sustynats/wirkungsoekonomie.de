@@ -1,0 +1,819 @@
+{
+  "schema_version": "1.1.0",
+  "publisher": "Institut für Wirkungsökonomie",
+  "release": "1.1-RC2",
+  "cases": [
+    {
+      "case_id": "05454260-5f17-4ba0-b3df-5c32a4cf36db",
+      "original_path_count": 4,
+      "corrected_path_count": 4,
+      "changed_paths": [
+        "P4"
+      ],
+      "split_paths": [],
+      "mapping_changes": 0,
+      "lost_fields": []
+    },
+    {
+      "case_id": "14867d53-4b63-49d0-9889-73fc60d41a5d",
+      "original_path_count": 5,
+      "corrected_path_count": 5,
+      "changed_paths": [
+        "P5"
+      ],
+      "split_paths": [],
+      "mapping_changes": 12,
+      "lost_fields": []
+    },
+    {
+      "case_id": "1bcb54ff-f064-43a1-bf98-bd45a5a2e212",
+      "original_path_count": 4,
+      "corrected_path_count": 4,
+      "changed_paths": [],
+      "split_paths": [],
+      "mapping_changes": 8,
+      "lost_fields": []
+    },
+    {
+      "case_id": "2c9d8b24-ce03-4784-93b7-cce23829bb68",
+      "original_path_count": 4,
+      "corrected_path_count": 4,
+      "changed_paths": [
+        "P4"
+      ],
+      "split_paths": [],
+      "mapping_changes": 10,
+      "lost_fields": []
+    },
+    {
+      "case_id": "37e5199d-a236-432d-a979-adfe6fcda478",
+      "original_path_count": 4,
+      "corrected_path_count": 16,
+      "changed_paths": [
+        "P1",
+        "P2",
+        "P4"
+      ],
+      "split_paths": [
+        {
+          "old_path_id": "P1",
+          "new_path_ids": [
+            "P1-P",
+            "P1-R1",
+            "P1-R2",
+            "P1-R3",
+            "P1-R4"
+          ]
+        },
+        {
+          "old_path_id": "P2",
+          "new_path_ids": [
+            "P2-P",
+            "P2-R1",
+            "P2-R2",
+            "P2-R3",
+            "P2-R4"
+          ]
+        },
+        {
+          "old_path_id": "P4",
+          "new_path_ids": [
+            "P4-P",
+            "P4-R1",
+            "P4-R2",
+            "P4-R3",
+            "P4-R4"
+          ]
+        }
+      ],
+      "mapping_changes": 0,
+      "lost_fields": []
+    },
+    {
+      "case_id": "43c02ec8-e1f6-42de-93b8-8bd0731a2565",
+      "original_path_count": 5,
+      "corrected_path_count": 5,
+      "changed_paths": [
+        "P5"
+      ],
+      "split_paths": [],
+      "mapping_changes": 0,
+      "lost_fields": []
+    },
+    {
+      "case_id": "47ca9029-a749-4f79-a4e6-8e33f08082cd",
+      "original_path_count": 4,
+      "corrected_path_count": 4,
+      "changed_paths": [],
+      "split_paths": [],
+      "mapping_changes": 14,
+      "lost_fields": []
+    },
+    {
+      "case_id": "4c5f138f-f81e-4b5e-8bc5-4cef1b91a2c1",
+      "original_path_count": 3,
+      "corrected_path_count": 3,
+      "changed_paths": [],
+      "split_paths": [],
+      "mapping_changes": 0,
+      "lost_fields": []
+    },
+    {
+      "case_id": "4c755c57-3b13-4e6c-95c3-4c01a8a08695",
+      "original_path_count": 4,
+      "corrected_path_count": 4,
+      "changed_paths": [
+        "P4"
+      ],
+      "split_paths": [],
+      "mapping_changes": 0,
+      "lost_fields": []
+    },
+    {
+      "case_id": "539ca2eb-04ba-4bb9-b525-d30da6fe2747",
+      "original_path_count": 4,
+      "corrected_path_count": 17,
+      "changed_paths": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "split_paths": [
+        {
+          "old_path_id": "P1",
+          "new_path_ids": [
+            "P1-P",
+            "P1-R1",
+            "P1-R2",
+            "P1-R3",
+            "P1-R4"
+          ]
+        },
+        {
+          "old_path_id": "P2",
+          "new_path_ids": [
+            "P2-P",
+            "P2-R1",
+            "P2-R2",
+            "P2-R3",
+            "P2-R4",
+            "P2-R5"
+          ]
+        },
+        {
+          "old_path_id": "P3",
+          "new_path_ids": [
+            "P3-P",
+            "P3-R1",
+            "P3-R2",
+            "P3-R3",
+            "P3-R4"
+          ]
+        }
+      ],
+      "mapping_changes": 0,
+      "lost_fields": []
+    },
+    {
+      "case_id": "53f11245-34de-4f85-8096-5c2c41d0db30",
+      "original_path_count": 4,
+      "corrected_path_count": 12,
+      "changed_paths": [
+        "P1",
+        "P3"
+      ],
+      "split_paths": [
+        {
+          "old_path_id": "P1",
+          "new_path_ids": [
+            "P1-P",
+            "P1-R1",
+            "P1-R2",
+            "P1-R3",
+            "P1-R4"
+          ]
+        },
+        {
+          "old_path_id": "P3",
+          "new_path_ids": [
+            "P3-P",
+            "P3-R1",
+            "P3-R2",
+            "P3-R3",
+            "P3-R4"
+          ]
+        }
+      ],
+      "mapping_changes": 0,
+      "lost_fields": []
+    },
+    {
+      "case_id": "64892605-37f9-4a8c-a1ab-ff5e86056693",
+      "original_path_count": 3,
+      "corrected_path_count": 3,
+      "changed_paths": [
+        "P3"
+      ],
+      "split_paths": [],
+      "mapping_changes": 8,
+      "lost_fields": []
+    },
+    {
+      "case_id": "6a88c960-c7e9-400c-84bb-aa52039b62e7",
+      "original_path_count": 4,
+      "corrected_path_count": 4,
+      "changed_paths": [
+        "P3",
+        "P4"
+      ],
+      "split_paths": [],
+      "mapping_changes": 0,
+      "lost_fields": []
+    },
+    {
+      "case_id": "79146c82-e8d0-467a-929e-142c72d9d6cd",
+      "original_path_count": 5,
+      "corrected_path_count": 5,
+      "changed_paths": [
+        "P5"
+      ],
+      "split_paths": [],
+      "mapping_changes": 8,
+      "lost_fields": []
+    },
+    {
+      "case_id": "7b3bb327-d7a2-4c77-b46d-535be8590cb6",
+      "original_path_count": 4,
+      "corrected_path_count": 4,
+      "changed_paths": [
+        "P4"
+      ],
+      "split_paths": [],
+      "mapping_changes": 0,
+      "lost_fields": []
+    },
+    {
+      "case_id": "94cdfef9-baca-41aa-91df-4a1dbd6b5d4e",
+      "original_path_count": 4,
+      "corrected_path_count": 4,
+      "changed_paths": [
+        "P3",
+        "P4"
+      ],
+      "split_paths": [],
+      "mapping_changes": 18,
+      "lost_fields": []
+    },
+    {
+      "case_id": "95921553-b404-4db1-aba2-fbdde40ff3de",
+      "original_path_count": 4,
+      "corrected_path_count": 10,
+      "changed_paths": [
+        "P1",
+        "P2"
+      ],
+      "split_paths": [
+        {
+          "old_path_id": "P1",
+          "new_path_ids": [
+            "P1-P",
+            "P1-R1",
+            "P1-R2",
+            "P1-R3"
+          ]
+        },
+        {
+          "old_path_id": "P2",
+          "new_path_ids": [
+            "P2-P",
+            "P2-R1",
+            "P2-R2",
+            "P2-R3"
+          ]
+        }
+      ],
+      "mapping_changes": 0,
+      "lost_fields": []
+    },
+    {
+      "case_id": "a28ad2d7-be12-42b5-8329-4bab34dabada",
+      "original_path_count": 4,
+      "corrected_path_count": 11,
+      "changed_paths": [
+        "P1",
+        "P2"
+      ],
+      "split_paths": [
+        {
+          "old_path_id": "P1",
+          "new_path_ids": [
+            "P1-P",
+            "P1-R1",
+            "P1-R2",
+            "P1-R3",
+            "P1-R4"
+          ]
+        },
+        {
+          "old_path_id": "P2",
+          "new_path_ids": [
+            "P2-P",
+            "P2-R1",
+            "P2-R2",
+            "P2-R3"
+          ]
+        }
+      ],
+      "mapping_changes": 0,
+      "lost_fields": []
+    },
+    {
+      "case_id": "a938dc30-3474-4f7c-a055-67a8cc2007c1",
+      "original_path_count": 5,
+      "corrected_path_count": 15,
+      "changed_paths": [
+        "P1",
+        "P2",
+        "P3"
+      ],
+      "split_paths": [
+        {
+          "old_path_id": "P1",
+          "new_path_ids": [
+            "P1-P",
+            "P1-R1",
+            "P1-R2",
+            "P1-R3",
+            "P1-R4"
+          ]
+        },
+        {
+          "old_path_id": "P2",
+          "new_path_ids": [
+            "P2-P",
+            "P2-R1",
+            "P2-R2",
+            "P2-R3"
+          ]
+        },
+        {
+          "old_path_id": "P3",
+          "new_path_ids": [
+            "P3-P",
+            "P3-R1",
+            "P3-R2",
+            "P3-R3"
+          ]
+        }
+      ],
+      "mapping_changes": 0,
+      "lost_fields": []
+    },
+    {
+      "case_id": "aca79efa-63fe-4eb4-a68b-6930096304f0",
+      "original_path_count": 4,
+      "corrected_path_count": 4,
+      "changed_paths": [],
+      "split_paths": [],
+      "mapping_changes": 10,
+      "lost_fields": []
+    },
+    {
+      "case_id": "aee171b2-57eb-47f7-96b6-60e47cea8422",
+      "original_path_count": 5,
+      "corrected_path_count": 16,
+      "changed_paths": [
+        "P1",
+        "P2",
+        "P4"
+      ],
+      "split_paths": [
+        {
+          "old_path_id": "P1",
+          "new_path_ids": [
+            "P1-P",
+            "P1-R1",
+            "P1-R2",
+            "P1-R3",
+            "P1-R4"
+          ]
+        },
+        {
+          "old_path_id": "P2",
+          "new_path_ids": [
+            "P2-P",
+            "P2-R1",
+            "P2-R2",
+            "P2-R3"
+          ]
+        },
+        {
+          "old_path_id": "P4",
+          "new_path_ids": [
+            "P4-P",
+            "P4-R1",
+            "P4-R2",
+            "P4-R3",
+            "P4-R4"
+          ]
+        }
+      ],
+      "mapping_changes": 0,
+      "lost_fields": []
+    },
+    {
+      "case_id": "c315ec77-da20-4ff4-9ab0-8321030b085c",
+      "original_path_count": 5,
+      "corrected_path_count": 16,
+      "changed_paths": [
+        "P2",
+        "P3",
+        "P4"
+      ],
+      "split_paths": [
+        {
+          "old_path_id": "P2",
+          "new_path_ids": [
+            "P2-P",
+            "P2-R1",
+            "P2-R2",
+            "P2-R3",
+            "P2-R4"
+          ]
+        },
+        {
+          "old_path_id": "P3",
+          "new_path_ids": [
+            "P3-P",
+            "P3-R1",
+            "P3-R2",
+            "P3-R3"
+          ]
+        },
+        {
+          "old_path_id": "P4",
+          "new_path_ids": [
+            "P4-P",
+            "P4-R1",
+            "P4-R2",
+            "P4-R3",
+            "P4-R4"
+          ]
+        }
+      ],
+      "mapping_changes": 0,
+      "lost_fields": []
+    },
+    {
+      "case_id": "c945bb6b-623d-4a70-8041-faa10cf01e70",
+      "original_path_count": 5,
+      "corrected_path_count": 12,
+      "changed_paths": [
+        "P1",
+        "P3"
+      ],
+      "split_paths": [
+        {
+          "old_path_id": "P1",
+          "new_path_ids": [
+            "P1-P",
+            "P1-R1",
+            "P1-R2",
+            "P1-R3",
+            "P1-R4"
+          ]
+        },
+        {
+          "old_path_id": "P3",
+          "new_path_ids": [
+            "P3-P",
+            "P3-R1",
+            "P3-R2",
+            "P3-R3"
+          ]
+        }
+      ],
+      "mapping_changes": 0,
+      "lost_fields": []
+    },
+    {
+      "case_id": "caf988db-91fe-435c-bbe1-4b4c55ccbbf3",
+      "original_path_count": 12,
+      "corrected_path_count": 55,
+      "changed_paths": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6",
+        "P7",
+        "P8",
+        "P9",
+        "P10",
+        "P11"
+      ],
+      "split_paths": [
+        {
+          "old_path_id": "P1",
+          "new_path_ids": [
+            "P1-P",
+            "P1-R1",
+            "P1-R2",
+            "P1-R3"
+          ]
+        },
+        {
+          "old_path_id": "P2",
+          "new_path_ids": [
+            "P2-P",
+            "P2-R1",
+            "P2-R2",
+            "P2-R3",
+            "P2-R4",
+            "P2-R5"
+          ]
+        },
+        {
+          "old_path_id": "P3",
+          "new_path_ids": [
+            "P3-P",
+            "P3-R1",
+            "P3-R2",
+            "P3-R3",
+            "P3-R4"
+          ]
+        },
+        {
+          "old_path_id": "P4",
+          "new_path_ids": [
+            "P4-P",
+            "P4-R1",
+            "P4-R2",
+            "P4-R3",
+            "P4-R4"
+          ]
+        },
+        {
+          "old_path_id": "P5",
+          "new_path_ids": [
+            "P5-P",
+            "P5-R1",
+            "P5-R2",
+            "P5-R3",
+            "P5-R4"
+          ]
+        },
+        {
+          "old_path_id": "P6",
+          "new_path_ids": [
+            "P6-P",
+            "P6-R1",
+            "P6-R2",
+            "P6-R3",
+            "P6-R4"
+          ]
+        },
+        {
+          "old_path_id": "P7",
+          "new_path_ids": [
+            "P7-P",
+            "P7-R1",
+            "P7-R2",
+            "P7-R3",
+            "P7-R4"
+          ]
+        },
+        {
+          "old_path_id": "P8",
+          "new_path_ids": [
+            "P8-P",
+            "P8-R1",
+            "P8-R2",
+            "P8-R3",
+            "P8-R4"
+          ]
+        },
+        {
+          "old_path_id": "P9",
+          "new_path_ids": [
+            "P9-P",
+            "P9-R1",
+            "P9-R2",
+            "P9-R3",
+            "P9-R4"
+          ]
+        },
+        {
+          "old_path_id": "P10",
+          "new_path_ids": [
+            "P10-P",
+            "P10-R1",
+            "P10-R2",
+            "P10-R3"
+          ]
+        },
+        {
+          "old_path_id": "P11",
+          "new_path_ids": [
+            "P11-P",
+            "P11-R1",
+            "P11-R2",
+            "P11-R3",
+            "P11-R4"
+          ]
+        }
+      ],
+      "mapping_changes": 0,
+      "lost_fields": []
+    },
+    {
+      "case_id": "d3b89eb6-b1d3-49b1-b67e-1352541904f0",
+      "original_path_count": 4,
+      "corrected_path_count": 11,
+      "changed_paths": [
+        "P1",
+        "P2"
+      ],
+      "split_paths": [
+        {
+          "old_path_id": "P1",
+          "new_path_ids": [
+            "P1-P",
+            "P1-R1",
+            "P1-R2",
+            "P1-R3",
+            "P1-R4"
+          ]
+        },
+        {
+          "old_path_id": "P2",
+          "new_path_ids": [
+            "P2-P",
+            "P2-R1",
+            "P2-R2",
+            "P2-R3"
+          ]
+        }
+      ],
+      "mapping_changes": 0,
+      "lost_fields": []
+    },
+    {
+      "case_id": "e8fe0be8-69c8-426d-8414-abc8df0549ad",
+      "original_path_count": 4,
+      "corrected_path_count": 12,
+      "changed_paths": [
+        "P1",
+        "P2"
+      ],
+      "split_paths": [
+        {
+          "old_path_id": "P1",
+          "new_path_ids": [
+            "P1-P",
+            "P1-R1",
+            "P1-R2",
+            "P1-R3",
+            "P1-R4"
+          ]
+        },
+        {
+          "old_path_id": "P2",
+          "new_path_ids": [
+            "P2-P",
+            "P2-R1",
+            "P2-R2",
+            "P2-R3",
+            "P2-R4"
+          ]
+        }
+      ],
+      "mapping_changes": 0,
+      "lost_fields": []
+    },
+    {
+      "case_id": "e9bbdd4a-9f5f-47e4-ac5a-bc347d1e659e",
+      "original_path_count": 5,
+      "corrected_path_count": 19,
+      "changed_paths": [
+        "P1",
+        "P2",
+        "P3",
+        "P4"
+      ],
+      "split_paths": [
+        {
+          "old_path_id": "P1",
+          "new_path_ids": [
+            "P1-P",
+            "P1-R1",
+            "P1-R2",
+            "P1-R3"
+          ]
+        },
+        {
+          "old_path_id": "P2",
+          "new_path_ids": [
+            "P2-P",
+            "P2-R1",
+            "P2-R2",
+            "P2-R3",
+            "P2-R4"
+          ]
+        },
+        {
+          "old_path_id": "P3",
+          "new_path_ids": [
+            "P3-P",
+            "P3-R1",
+            "P3-R2",
+            "P3-R3"
+          ]
+        },
+        {
+          "old_path_id": "P4",
+          "new_path_ids": [
+            "P4-P",
+            "P4-R1",
+            "P4-R2",
+            "P4-R3",
+            "P4-R4"
+          ]
+        }
+      ],
+      "mapping_changes": 0,
+      "lost_fields": []
+    },
+    {
+      "case_id": "ec3dd2c3-c21b-4050-830c-d6f5af416d3d",
+      "original_path_count": 6,
+      "corrected_path_count": 24,
+      "changed_paths": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P6"
+      ],
+      "split_paths": [
+        {
+          "old_path_id": "P1",
+          "new_path_ids": [
+            "P1-P",
+            "P1-R1",
+            "P1-R2",
+            "P1-R3",
+            "P1-R4",
+            "P1-R5"
+          ]
+        },
+        {
+          "old_path_id": "P2",
+          "new_path_ids": [
+            "P2-P",
+            "P2-R1",
+            "P2-R2",
+            "P2-R3",
+            "P2-R4"
+          ]
+        },
+        {
+          "old_path_id": "P3",
+          "new_path_ids": [
+            "P3-P",
+            "P3-R1",
+            "P3-R2",
+            "P3-R3",
+            "P3-R4"
+          ]
+        },
+        {
+          "old_path_id": "P4",
+          "new_path_ids": [
+            "P4-P",
+            "P4-R1",
+            "P4-R2",
+            "P4-R3"
+          ]
+        },
+        {
+          "old_path_id": "P6",
+          "new_path_ids": [
+            "P6-P",
+            "P6-R1",
+            "P6-R2"
+          ]
+        }
+      ],
+      "mapping_changes": 0,
+      "lost_fields": []
+    }
+  ],
+  "summary": {
+    "cases": 28,
+    "changed_paths": 59,
+    "split_paths": 47,
+    "lost_fields": 0
+  }
+}

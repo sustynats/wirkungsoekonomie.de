@@ -29,13 +29,28 @@ Diese Datei konkretisiert die Root-Governance fuer das Parlamentsportal. Sie dar
 
 ## Direction und Evidenz
 
-- Zulaessige fachliche Richtungen werden strikt unterschieden: `POSITIVE_POTENTIAL`, `NEGATIVE_RISK`, `NEUTRAL`, `AMBIVALENT` und `OPEN` beziehungsweise `EVIDENCE_OPEN`.
+- Zulaessige fachliche Richtungen werden strikt unterschieden: `POSITIVE_POTENTIAL`, `NEGATIVE_RISK`, `NEUTRAL`, `AMBIVALENT` und `OPEN`.
+- `EVIDENCE_OPEN` ist ausschliesslich Evidenzstatus und in einem Richtungsfeld unzulaessig.
 - Evidenzgrad, Unsicherheit oder das Vorhandensein einer Risikoliste veraendern die Richtung nicht automatisch.
 - Fachliche Richtungswerte duerfen nur aus einer freigegebenen Patchliste geaendert werden. Technische Audits erzeugen Reviewlisten, aber keine heuristischen Umschreibungen.
+
+## Semantische Darstellung
+
+- Farbe, Icon, Pfeil und Hervorhebung folgen dem expliziten Richtungsstatus. Ein generisches Wirkungspotenzial ist richtungsneutral.
+- Gruen und ein aufwaerts gerichteter Pfeil duerfen nur `POSITIVE_POTENTIAL` visualisieren.
+- `OPEN`, `AMBIVALENT`, `MATERIAL` und geringe Evidenz erhalten keine positive visuelle Codierung.
+- Bei trennbaren Potential- und Risikohypothesen werden eigene Pfade mit gemeinsamer Provenienz (`split_from`) erzeugt.
+
+## Quellfragmente und Ex-ante-Status
+
+- Unvollstaendige Primaertextfragmente bleiben `OPEN`; sie werden weder automatisch gerichtet noch als vollstaendige Forderung ausgegeben.
+- Ex-ante bedeutet modelliertes Wirkungspotenzial oder Wirkungsrisiko, nicht beobachtete Wirkung und nicht Eintrittswahrscheinlichkeit.
+- Programmtext, kommunikative Vorwirkung, rechtliche Kompetenz, Schutzgrenzen und spaetere Wirkung bleiben getrennte Achsen.
 
 ## Release-Gates
 
 - Fuer jede Fallakte gilt: `missing_paths = 0` und `fallback_overwrites = 0`.
+- Fuer jede Fallakte gilt zusaetzlich: Vollakte erreichbar, alle Mapping-Referenzen gueltig, `EVIDENCE_OPEN` in Richtungsfeldern = 0 und verlorene Source-Felder = 0.
 - Tests pruefen alle 28 Entscheidungsseiten, alle 28 Vollakten, die 12 Vote-Layer, konkrete Schutzgrenzen, Bund-/Laender-Programme, GEG-Vollquelle und Fachanalyse-Quellen.
 - Nach Deployment folgt ein Crawl gegen die reale Produktionsdomain. HTTP 200 allein ist kein Nachweis; sichtbarer Inhalt, CSP-/Konsolenfehler, Navigation, responsive Darstellung und fachliche Sentinel-Werte werden geprueft.
 - Erst ein bestandener Produktions-Crawl schliesst den Release ab.

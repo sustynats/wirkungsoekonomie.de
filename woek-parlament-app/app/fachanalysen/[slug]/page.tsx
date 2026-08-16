@@ -17,7 +17,37 @@ function formatDate(value: string) {
 
 function humanize(value: string | undefined) {
   if (!value) return "nicht ausgewiesen";
-  return value.replaceAll("_", " ").toLocaleLowerCase("de-DE");
+  const normalized = value.trim().toUpperCase().replaceAll("_", " ");
+  const labels: Record<string, string> = {
+    "EX ANTE CAUSAL HYPOTHESIS WITH MODEL INPUTS": "Ex-ante-Wirkungshypothese · modellgestützt",
+    "EX ANTE DESIGN POTENTIAL": "Ex-ante-Designpotenzial",
+    "MECHANISM PARTLY TESTED EFFECT LIMITED IN ONE STUDY": "Mechanismus teilweise untersucht · Wirkung nur begrenzt belegt",
+    "FRAME EXISTENCE SUPPORTED CAUSAL BEHAVIOUR UNRESOLVED": "Frame belegt · Verhaltenswirkung kausal offen",
+    "IMPACT POTENTIAL WITH DOCUMENTED MEDIA FRAME": "Wirkungspotenzial mit dokumentiertem Medienframe",
+    "IMPACT POTENTIAL WITH DOCUMENTED FRAME": "Wirkungspotenzial mit dokumentiertem Frame",
+    "DOCUMENTED COMPLEXITY AND LIMITED KNOWLEDGE": "Komplexität dokumentiert · Wissensstand begrenzt",
+    "POLICY DESIGN AND MODELLED PATH": "Politikdesign · modellierter Wirkpfad",
+    "OFFICIAL OBJECTIVE AND MODELLED POTENTIAL": "Amtliches Ziel · modelliertes Wirkungspotenzial",
+    "NOT CAUSALLY ATTRIBUTED": "nicht kausal zugerechnet",
+    "PARTIAL MECHANISM SUPPORTED NO BEHAVIOURAL ATTRIBUTION": "Teilmechanismus gestützt · keine Verhaltenszurechnung",
+    "UNRESOLVED": "offen",
+    "MODELLED": "modelliertes Szenario",
+    "STATUS QUO": "Fortführung ohne die beschlossene Änderung",
+    "ALTERNATIVE GESTALTUNG": "alternative Ausgestaltung",
+    "COMMUNICATION IMPLEMENTATION": "Kommunikation und Umsetzung",
+    "OFFICIAL INSTALLATION DATA REQUIRED": "amtliche Installationsdaten erforderlich",
+    "OFFICIAL ENERGY AND BUILDING DATA REQUIRED": "amtliche Energie- und Gebäudedaten erforderlich",
+    "MICRODATA REQUIRED": "Mikrodaten erforderlich",
+    "REPRESENTATIVE PANEL AND EXPOSURE DATA REQUIRED": "repräsentative Panel- und Expositionsdaten erforderlich",
+    "METHOD REVIEW REQUIRED": "Methodenprüfung erforderlich",
+    "MODEL REQUIRED": "Modell erforderlich",
+    "DISTRIBUTION MODEL REQUIRED": "Verteilungsmodell erforderlich",
+    "NO NATIONAL CAUSAL MODEL": "kein nationales Kausalmodell vorhanden",
+    "PARTIAL ONLY": "nur teilweise bestimmbar"
+  };
+  if (labels[normalized]) return labels[normalized];
+  const plain = value.replaceAll("_", " ").trim();
+  return plain.charAt(0).toLocaleUpperCase("de-DE") + plain.slice(1).toLocaleLowerCase("de-DE");
 }
 
 function SourceLinks({ sources }: { sources: FachanalyseSource[] }) {
@@ -68,6 +98,11 @@ export default async function FachanalyseDetailPage({ params }: { params: Promis
       {analysis.publicationBoundary ? <section className="publication-boundary" aria-label="Aussagegrenze">
         <EvidenceIcon aria-hidden="true" />
         <div><strong>Was diese Analyse sagt – und was nicht</strong><p>{analysis.publicationBoundary}</p></div>
+      </section> : null}
+
+      {analysis.referenceStatus?.startsWith("PROPOSED_PENDING") ? <section className="publication-boundary publication-boundary--pending" aria-label="Status des Referenzabgleichs">
+        <EvidenceIcon aria-hidden="true" />
+        <div><strong>{analysis.referenceStatusLabel ?? "Vorgeschlagener Prüfbezug – Referenzabgleich ausstehend"}</strong><p>Die Zuordnung zeigt nachvollziehbare mögliche Bezüge. Sie ist noch kein kanonisch freigegebener Referenzsatz und wird bis zum abgeschlossenen Abgleich nicht als endgültige WÖk-Zuordnung ausgegeben.</p></div>
       </section> : null}
 
       {detailed ? <>

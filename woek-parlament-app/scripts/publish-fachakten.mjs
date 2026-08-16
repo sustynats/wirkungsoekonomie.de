@@ -7,7 +7,7 @@ import crypto from "node:crypto";
 // Static delivery is intentional: some complete records exceed Vercel's 4.5 MB
 // function-response limit and must not disappear or be silently abbreviated.
 const appRoot = process.cwd();
-const sourceRoot = process.env.FACHBASIS_SOURCE_ROOT ?? path.join(appRoot, ".local", "fachbasis-source-20260816");
+const sourceRoot = process.env.FACHBASIS_SOURCE_ROOT ?? path.join(appRoot, ".local", "fachbasis-source-release-1.1");
 const outputRoot = path.join(appRoot, "public", "fachakten", "dossiers");
 const integrityRoot = path.join(appRoot, "public", "fachakten", "integrity");
 const publicIndex = JSON.parse(fs.readFileSync(path.join(appRoot, "data", "fachakten", "public", "index.json"), "utf8"));
@@ -45,6 +45,10 @@ const machineValues = {
   MULTI_LEVEL: "mehrere politische Ebenen",
   CONDITIONAL: "nur unter Bedingungen entscheidungsreif",
   LIMITED: "begrenzt",
+  POSITIVE_POTENTIAL: "positives Wirkungspotenzial",
+  NEGATIVE_RISK: "negatives Wirkungsrisiko",
+  NEUTRAL: "richtungsneutral",
+  AMBIVALENT: "gegenläufige Richtungen im selben Wirkpfad",
   OPEN: "offen",
   MATERIAL: "materiell relevant",
   REVIEW_REQUIRED: "Prüfung erforderlich",
@@ -155,6 +159,16 @@ const labels = {
   sdg_plus: "SDG+",
   id: "Referenz",
   direction: "Richtung",
+  release_1_1_change: "Änderung in Fachrevision 1.1",
+  split_from: "Abgeleitet aus Wirkpfad",
+  v1_1_review: "Fachrevision 1.1",
+  direction_and_evidence: "Richtung und Evidenz",
+  policy_modeled_direction: "Modellierte Richtung des politischen Instruments",
+  communicative_modeled_direction: "Modellierte kommunikative Richtung",
+  combined_display_direction: "Richtung der öffentlichen Darstellung",
+  actual_effect_status: "Status beobachteter Wirkung",
+  source_fragment_quality: "Qualität des Quellfragments",
+  competence_and_legal: "Zuständigkeit und rechtlicher Prüfstatus",
   analysis_time_status: "Zeitbezug der Analyse",
   first_order: "Erste Ordnung",
   second_order: "Zweite Ordnung",

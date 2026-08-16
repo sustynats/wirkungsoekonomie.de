@@ -28,6 +28,8 @@ export type Fachanalyse = {
   focusAreas?: string[];
   decision?: { officialName: string; date: string; promulgation: string; inForce: string };
   publicationBoundary?: string;
+  referenceStatus?: string;
+  referenceStatusLabel?: string;
   exAnte?: { cutoff: string; summary: string; sources: FachanalyseSource[] };
   exPost?: { cutoff: string; summary: string; sources: FachanalyseSource[] };
   timeline?: Array<{ date: string; label: string; status: string; summary: string; change: string; potential: string; sources: FachanalyseSource[] }>;

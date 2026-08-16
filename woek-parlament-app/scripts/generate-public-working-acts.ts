@@ -238,7 +238,7 @@ function publicNormativeMapping(result: JsonRecord): PublicNormativeMapping | un
   const consolidatedAnchors = mergeItems(constitutionalAnchorItems);
   if (consolidatedSdgs.length + consolidatedSdgPlus.length + consolidatedAnchors.length === 0) return undefined;
   const hasOpenEvidence = [...consolidatedSdgs, ...consolidatedSdgPlus, ...consolidatedAnchors]
-    .some((item) => item.direction === "EVIDENCE_OPEN" || /open|lücke|unklar/i.test(item.evidenceStatus));
+    .some((item) => item.direction === "OPEN" || /open|lücke|unklar/i.test(item.evidenceStatus));
   return {
     // A working act is always a published preparation, never a final approval.
     status: hasOpenEvidence ? "EVIDENCE_OPEN" : "PROVISIONAL",
@@ -264,7 +264,7 @@ function publicReviewDetail(result: JsonRecord, impactPaths: JsonRecord[]): Publ
       id: text(path.path_id, `P${index + 1}`),
       lever: text(path.lever, text(path.mechanism, `Wirkpfad ${text(path.path_id, `P${index + 1}`)}`)),
       hypothesis: text(path.hypothesis, "Die dokumentierte Wirkannahme wird mit Quellen und Vergleichsfragen weiter geprüft."),
-      direction: text(path.direction, "EVIDENCE_OPEN"),
+      direction: text(path.direction, "OPEN"),
       affectedDimensions: strings(path.affected_mpd_dimensions, 8),
       affectedGroups: strings(path.affected_groups, 16),
       prerequisites: strings(path.prerequisites, 16),

@@ -7,7 +7,7 @@ const projectionPath = path.join(appRoot, "data/public-working-acts.json");
 // Public pages are built from the curated projection under data/fachakten/public.
 // An explicit environment override keeps this import script usable for a later,
 // separately stored review delivery without ever exposing a workstation path.
-const sourceRoot = process.env.FACHBASIS_SOURCE_ROOT ?? path.join(appRoot, ".local", "fachbasis-source-20260816");
+const sourceRoot = process.env.FACHBASIS_SOURCE_ROOT ?? path.join(appRoot, ".local", "fachbasis-source-release-1.1");
 const casesRoot = path.join(sourceRoot, "02_parlament_28_and_votes", "cases");
 const workingActs = JSON.parse(fs.readFileSync(projectionPath, "utf8"));
 const sourceByDecision = new Map();
@@ -94,7 +94,7 @@ function publicReviewDetail(review) {
         id,
         lever: text(path.lever, text(path.mechanism, `Wirkpfad ${id}`)),
         hypothesis: text(path.hypothesis),
-        direction: text(path.direction, "EVIDENCE_OPEN"),
+        direction: text(path.direction, "OPEN"),
         affectedDimensions: strings(path.affected_mpd_dimensions, 8),
         affectedGroups: strings(path.affected_groups, 16),
         prerequisites: strings(path.prerequisites, 16),
@@ -130,6 +130,63 @@ function publicReviewDetail(review) {
   };
   if (Object.values(feedback).some((value) => Array.isArray(value) ? value.length : Boolean(value))) detail.feedback = feedback;
   return detail;
+}
+
+function publicNormativeMapping(review, current) {
+  const source = object(review.normative_mapping);
+  const rows = objects(source.tile_mappings, "normative_mapping.tile_mappings");
+  const currentItems = [
+    ...(current?.sdgItems ?? []),
+    ...(current?.sdgPlusItems ?? []),
+    ...(current?.constitutionalAnchorItems ?? [])
+  ];
+  const referenceById = new Map(currentItems.map((item) => [item.id, item]));
+  const byFramework = { SDG: [], SDG_PLUS: [], CONSTITUTIONAL_ANCHOR: [] };
+  for (const row of rows) {
+    const reference = referenceById.get(text(row.id));
+    if (!reference) throw new Error(`Normative Referenz ${text(row.id)} fehlt in der öffentlichen Registry-Projektion.`);
+    const direction = text(row.direction, "OPEN");
+    if (!["POSITIVE_POTENTIAL", "NEGATIVE_RISK", "NEUTRAL", "AMBIVALENT", "OPEN"].includes(direction)) {
+      throw new Error(`Ungültige öffentliche Wirkungsrichtung: ${direction}`);
+    }
+    byFramework[reference.framework].push({
+      ...reference,
+      direction,
+      evidenceStatus: text(row.evidence_status, "Evidenzstand offen"),
+      rationale: text(row.rationale),
+      impactPathRefs: strings(row.impact_path_refs, 50)
+    });
+  }
+  const merge = (items) => {
+    const merged = new Map();
+    for (const item of items) {
+      const existing = merged.get(item.id);
+      if (!existing) {
+        merged.set(item.id, item);
+        continue;
+      }
+      const directions = new Set([existing.direction, item.direction]);
+      merged.set(item.id, {
+        ...existing,
+        direction: directions.size === 1 ? existing.direction : "AMBIVALENT",
+        evidenceStatus: existing.evidenceStatus === item.evidenceStatus ? existing.evidenceStatus : "Evidenzstand je Wirkpfad unterschiedlich",
+        rationale: [...new Set([existing.rationale, item.rationale].filter(Boolean))].join("\n\n"),
+        impactPathRefs: [...new Set([...existing.impactPathRefs, ...item.impactPathRefs])]
+      });
+    }
+    return [...merged.values()];
+  };
+  const sdgItems = merge(byFramework.SDG);
+  const sdgPlusItems = merge(byFramework.SDG_PLUS);
+  const constitutionalAnchorItems = merge(byFramework.CONSTITUTIONAL_ANCHOR);
+  const allItems = [...sdgItems, ...sdgPlusItems, ...constitutionalAnchorItems];
+  return {
+    status: allItems.some((item) => item.direction === "OPEN" || /open|lücke|unklar/i.test(item.evidenceStatus)) ? "EVIDENCE_OPEN" : "PROVISIONAL",
+    basis: text(source.reference_frame, current?.basis ?? "Zuordnung zu SDGs, SDG+ sowie Grundrechten, Staatszielen und Schutzaufträgen; keine Gesamtpunktzahl."),
+    sdgItems,
+    sdgPlusItems,
+    constitutionalAnchorItems
+  };
 }
 
 function voteSummary(value) {
@@ -203,6 +260,7 @@ for (const workingAct of workingActs) {
       evidenceBoundary: publicSummary.evidence_boundary ?? release.public_release_boundary ?? null
     },
     reviewDetail: publicReviewDetail(source.review),
+    normativeMapping: publicNormativeMapping(source.review, workingAct.publicWorkingAct?.normativeMapping),
     ...(publicVoteLayer(source.supplement) ? { voteLayer: publicVoteLayer(source.supplement) } : {})
   };
   changed += 1;

@@ -38,7 +38,7 @@ export type PublicAssessment = {
   normativeMapping?: PublicNormativeMapping;
 };
 
-export type NormativeImpactDirection = "POSITIVE_POTENTIAL" | "NEGATIVE_RISK" | "AMBIVALENT" | "EVIDENCE_OPEN" | "OBSERVED_POSITIVE" | "OBSERVED_NEGATIVE";
+export type NormativeImpactDirection = "POSITIVE_POTENTIAL" | "NEGATIVE_RISK" | "NEUTRAL" | "AMBIVALENT" | "OPEN" | "OBSERVED_POSITIVE" | "OBSERVED_NEGATIVE";
 export type PublicNormativeFramework = "SDG" | "SDG_PLUS" | "CONSTITUTIONAL_ANCHOR";
 export type PublicConstitutionalAnchorType = "FUNDAMENTAL_RIGHT" | "STATE_STRUCTURE_PRINCIPLE" | "STATE_OBJECTIVE" | "PROTECTION_DUTY" | "EU_PRIMARY_LAW" | "HUMAN_RIGHTS" | "STATE_CONSTITUTION";
 

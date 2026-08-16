@@ -63,6 +63,9 @@ function deepCheckPdf(file, entry) {
     }
     assertClean(value, `${publicPath(file)} ${field}`);
   }
+  if (metadataValue(info, "Tagged").toLowerCase() !== "yes") {
+    throw new Error(`${publicPath(file)} is not a tagged accessible PDF.`);
+  }
   try {
     const text = execFileSync("pdftotext", [file, "-"], { encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] });
     assertClean(text, publicPath(file));
