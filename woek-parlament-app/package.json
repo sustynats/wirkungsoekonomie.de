@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "prebuild": "npm run check:accessibility",
-    "build": "node scripts/quality/check-privacy-governance.mjs && node scripts/quality/check-release-safety.mjs --scope=repository && node scripts/quality/verify-public-documents.mjs && node scripts/quality/check-public-content-completeness.mjs && node scripts/quality/verify-release-1-fachbasis.mjs && node scripts/quality/verify-release-1-1.mjs && node scripts/quality/verify-impact-profiles.mjs && next build --webpack && node scripts/quality/check-release-safety.mjs --scope=release && node scripts/quality/verify-public-documents.mjs && node scripts/quality/check-public-content-completeness.mjs && node scripts/quality/verify-release-1-fachbasis.mjs && node scripts/quality/verify-release-1-1.mjs && node scripts/quality/verify-impact-profiles.mjs",
+    "build": "node scripts/quality/check-privacy-governance.mjs && node scripts/quality/check-release-safety.mjs --scope=repository && node scripts/quality/verify-public-documents.mjs && node scripts/quality/check-public-content-completeness.mjs && node scripts/quality/verify-release-1-fachbasis.mjs && node scripts/quality/verify-release-1-1.mjs && node scripts/quality/verify-impact-profiles.mjs && node scripts/quality/verify-master-register.mjs && next build --webpack && node scripts/quality/check-release-safety.mjs --scope=release && node scripts/quality/verify-public-documents.mjs && node scripts/quality/check-public-content-completeness.mjs && node scripts/quality/verify-release-1-fachbasis.mjs && node scripts/quality/verify-release-1-1.mjs && node scripts/quality/verify-impact-profiles.mjs && node scripts/quality/verify-master-register.mjs",
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
@@ -39,6 +39,8 @@
     "release:publish-fachakten": "node scripts/publish-fachakten.mjs",
     "release:verify-1.1": "node scripts/quality/verify-release-1-1.mjs",
     "release:verify-impact-profiles": "node scripts/quality/verify-impact-profiles.mjs",
+    "release:verify-master-register": "node scripts/quality/verify-master-register.mjs",
+    "release:generate-master-register": "python3 scripts/generate-public-master-register.py data/master-register/WOeK_Masterregister_v1.4_FINAL_2026-08-16.xlsx --project-root .",
     "review:export-ex-ante-mapping": "tsx scripts/export-ex-ante-mapping-package.ts",
     "review:export-historical-evidence": "tsx scripts/export-historical-evidence-research-package.ts",
     "reviews:materialize-follow-up-tasks": "tsx scripts/materialize-review-follow-up-tasks.ts",

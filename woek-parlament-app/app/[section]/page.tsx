@@ -1,7 +1,9 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { CaseCard } from "@/app/components/CaseCard";
 import { DecisionCaseExplorer } from "@/app/components/DecisionCaseExplorer";
+import { MethodologyPage } from "@/app/components/methodology/MethodologyPage";
 import { listPublishedCases } from "@/lib/cases";
 
 const sectionCopy: Record<string, { eyebrow: string; title: string; lead: string; empty: string }> = {
@@ -15,6 +17,18 @@ const sectionCopy: Record<string, { eyebrow: string; title: string; lead: string
   methodik: { eyebrow: "Entscheidungsstandard", title: "Wirkungen prüfen, ohne Politik zu ersetzen", lead: "Ein Wirkungscheck trennt amtliche Fakten, Annahmen, Wirkungspotenzial, Wirkungsrisiken, Bewertung und spätere Beobachtung. Er kann die Zukunft nicht beweisen und ersetzt keine demokratische Entscheidung.", empty: "Die Methodik ist offen dokumentiert und wird je Veröffentlichung versioniert." },
   transparenz: { eyebrow: "Über das Portal", title: "Vertrauen entsteht durch nachvollziehbare Arbeit", lead: "Wer das Portal herausgibt, was seine Einordnung leisten kann, worauf sie beruht – und wo ihre Grenzen liegen.", empty: "Die Angaben zum Portal werden fortlaufend ergänzt und versioniert." }
 };
+
+export async function generateMetadata({ params }: { params: Promise<{ section: string }> }): Promise<Metadata> {
+  const { section } = await params;
+  const content = sectionCopy[section];
+  if (!content) return {};
+  return {
+    title: section === "methodik" ? "Methodik der Wirkungsbewertung" : content.title,
+    description: section === "methodik"
+      ? "Wie aus Quellen Wirkpfade, Richtungen und prüfbare Bewertungen entstehen - mit Evidenz, Rechenwegen, Nichtkompensation und öffentlichem WÖk-Masterregister."
+      : content.lead
+  };
+}
 
 export default async function SectionPage({ params }: { params: Promise<{ section: string }> }) {
   const { section } = await params;
@@ -31,7 +45,7 @@ export default async function SectionPage({ params }: { params: Promise<{ sectio
   return (
     <div className="shell content-page">
       <header className="page-intro"><p className="eyebrow">{content.eyebrow}</p><h1>{content.title}</h1><p className="lead">{content.lead}</p></header>
-      {section === "methodik" && <Methodology />}
+      {section === "methodik" && <MethodologyPage />}
       {section === "transparenz" && <Transparency />}
       {section === "werkzeuge" && <Toolbox />}
       {section === "monitor" && <Monitor />}
@@ -39,23 +53,6 @@ export default async function SectionPage({ params }: { params: Promise<{ sectio
       <p className="page-return"><Link href="/">← Zur Portalstartseite</Link></p>
     </div>
   );
-}
-
-function Methodology() {
-  return <>
-    <section className="notice notice-neutral" id="grundlagen"><strong>Was ist ein WÖk-Wirkungscheck?</strong><p>Eine Entscheidung regelt, finanziert, erlaubt oder verbietet etwas. Wirkung entsteht erst, wenn sich dadurch ein Zustand für Menschen, natürliche Lebensgrundlagen oder Demokratie tatsächlich verändert. Vor einer Abstimmung prüft das Portal deshalb Potenziale, Risiken und begründete Wirkmechanismen – keine bereits eingetretene Wirkung.</p></section>
-    <section className="method-grid">
-      <article><span>A</span><h2>Vor der Wirkung</h2><p>Was soll entschieden werden? Welche Veränderung könnte möglich sein, welches Risiko besteht – und warum? Der begründete mögliche Weg heißt Wirkmechanismus.</p></article>
-      <article><span>B</span><h2>Umsetzung und Veränderung</h2><p>Was geschieht tatsächlich? Wer setzt die Entscheidung um, was wird unmittelbar erreicht und welche Zustände könnten sich dadurch verändern?</p></article>
-      <article><span>C</span><h2>Evidenz und Zurechnung</h2><p>Woher wissen wir das? Daten, Ausgangswert, Vergleichsfrage, Studien und Unsicherheit zeigen, wie belastbar eine Aussage ist und welchen Beitrag die Entscheidung geleistet haben könnte.</p></article>
-      <article><span>D</span><h2>Wirkungsbewertung</h2><p>Wie wird eine eingetretene oder modellierte Wirkung eingeordnet? Der Maßstab ist offengelegt: Agenda 2030 und SDGs, ergänzt durch SDG+, Mensch, Planet und Demokratie.</p></article>
-      <article><span>E</span><h2>Schutz- und Systemprüfung</h2><p>Welche Neben-, Verteilungs- und Wechselwirkungen sind möglich? Zielkonflikte können abgewogen werden. Wirkungsgrenzen nicht.</p></article>
-      <article><span>F</span><h2>Rückkopplung und Lernen</h2><p>Was folgt daraus? Daten können eine erneute Prüfung auslösen. Dann lassen sich Regeln, Finanzierung, Vollzug oder die Entscheidung selbst gezielt verändern.</p></article>
-    </section>
-    <section className="notice"><strong>Unsicherheit bleibt sichtbar.</strong><p>Eine Ex-ante-Analyse kann die Zukunft nicht beweisen. Sie macht Annahmen, Risiken, mögliche Wirkmechanismen und Datenbedarf sichtbar. Nach einer Entscheidung zeigt eine Beobachtung noch nicht automatisch Ursache und Wirkung. Zurechnung wird nur so genau angegeben, wie die Datenlage es erlaubt.</p></section>
-    <section className="notice notice-neutral"><strong>Keine einfache Gesamtpunktzahl.</strong><p>Unterschiedliche Wirkungen werden nicht blind zusammengerechnet. Zielkonflikte können abgewogen werden. Schwere Schäden an Schutzgütern dürfen jedoch nicht durch Vorteile in anderen Bereichen unsichtbar werden. Methodische Referenzen und Regeln werden je Veröffentlichung mit Versionsstand, Quellen und Geltungsbereich ausgewiesen.</p></section>
-    <section className="notice"><strong>Anschluss an bestehende Wirkungsmodelle.</strong><p>Die Wirkungsökonomie erfindet etablierte Wirkungsinstrumente nicht neu. Sie ordnet sie dort ein, wo sie eine Teilfrage beantworten, und verbindet Wirkungsermittlung, Evidenz, Bewertung, Schutzgrenzen, Systemwirkung und Rückkopplung zu einer gemeinsamen Steuerungsarchitektur.</p></section>
-  </>;
 }
 
 function Transparency() {

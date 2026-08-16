@@ -8,7 +8,7 @@ import { materialityLabel } from "@/lib/cases";
 import { humanizeSystemValue } from "@/lib/presentation/labels";
 import type { FactionImpactProfile } from "@/lib/members/impact-profiles";
 import type { PublicMemberDirectoryProfile } from "@/lib/members/public-profiles";
-import { defaultSearchFilters, searchFachanalysen, searchFactionProfiles, searchMemberProfiles, searchPublicCases, type ParliamentSearchFilters } from "@/lib/search";
+import { defaultSearchFilters, searchFachanalysen, searchFactionProfiles, searchMemberProfiles, searchPortalPages, searchPublicCases, type ParliamentSearchFilters, type PortalSearchPage } from "@/lib/search";
 import { wirkungsraumBookmarkUrl } from "@/lib/wirkungsraum";
 
 const TYPE_LABELS: Record<ParliamentSearchFilters["type"], string> = {
@@ -19,7 +19,8 @@ const TYPE_LABELS: Record<ParliamentSearchFilters["type"], string> = {
   RETROSPECTIVE_CASE: "Historischer Rückblick",
   FACHANALYSE: "WÖk-Fachanalyse",
   MEMBER_PROFILE: "Wirkungsprofil eines Mitglieds",
-  FACTION_PROFILE: "Wirkungsprofil einer Fraktion"
+  FACTION_PROFILE: "Wirkungsprofil einer Fraktion",
+  REFERENCE: "Methodik und Referenzdaten"
 };
 
 const EDITORIAL_LABELS: Record<ParliamentSearchFilters["editorial"], string> = {
@@ -52,7 +53,8 @@ export function ParliamentSearch({ cases, analyses, members, factions }: { cases
     ...searchPublicCases(cases, filters).map((item) => ({ type: "CASE" as const, item })),
     ...searchFachanalysen(analyses, filters).map((item) => ({ type: "FACHANALYSE" as const, item })),
     ...searchMemberProfiles(members, filters).map((item) => ({ type: "MEMBER_PROFILE" as const, item })),
-    ...searchFactionProfiles(factions, filters).map((item) => ({ type: "FACTION_PROFILE" as const, item }))
+    ...searchFactionProfiles(factions, filters).map((item) => ({ type: "FACTION_PROFILE" as const, item })),
+    ...searchPortalPages(filters).map((item) => ({ type: "REFERENCE" as const, item }))
   ], [analyses, cases, factions, filters, members]);
   const update = <Key extends keyof ParliamentSearchFilters>(key: Key, value: ParliamentSearchFilters[Key]) => setFilters((current) => ({ ...current, [key]: value }));
 
@@ -86,7 +88,8 @@ export function ParliamentSearch({ cases, analyses, members, factions }: { cases
             if (result.type === "CASE") return <CaseSearchResult item={result.item} key={`case-${result.item.slug}`} />;
             if (result.type === "FACHANALYSE") return <FachanalyseSearchResult item={result.item} key={`analysis-${result.item.slug}`} />;
             if (result.type === "MEMBER_PROFILE") return <MemberSearchResult item={result.item} key={`member-${result.item.slug}`} />;
-            return <FactionSearchResult slug={result.item.slug} profile={result.item.profile} key={`faction-${result.item.slug}`} />;
+            if (result.type === "FACTION_PROFILE") return <FactionSearchResult slug={result.item.slug} profile={result.item.profile} key={`faction-${result.item.slug}`} />;
+            return <PortalPageSearchResult item={result.item} key={`reference-${result.item.path}`} />;
           })}
         </div>
       ) : (
@@ -97,6 +100,10 @@ export function ParliamentSearch({ cases, analyses, members, factions }: { cases
       )}
     </>
   );
+}
+
+function PortalPageSearchResult({ item }: { item: PortalSearchPage }) {
+  return <article><div><p className="eyebrow">Methodik und Referenzdaten</p><h2><Link href={item.path}>{item.title}</Link></h2><p>{item.description}</p><dl><div><dt>Zugang</dt><dd>Öffentlich und ohne Anmeldung</dd></div><div><dt>Stand</dt><dd>Versioniert und prüfbar</dd></div></dl></div><div className="search-result-actions"><Link className="text-link" href={item.path}>Öffnen <span aria-hidden="true">→</span></Link></div></article>;
 }
 
 function MemberSearchResult({ item }: { item: PublicMemberDirectoryProfile }) {

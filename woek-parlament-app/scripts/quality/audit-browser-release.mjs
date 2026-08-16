@@ -68,7 +68,7 @@ class DevTools {
   close() { this.socket.close(); }
 }
 
-async function auditPage(path, expression) {
+async function auditPage(path, expression, metrics = { width: 375, height: 812, deviceScaleFactor: 1, mobile: true }) {
   const targetResponse = await fetch(`http://127.0.0.1:${port}/json/new?${encodeURIComponent(`${baseUrl}${path}`)}`, { method: "PUT" });
   const target = await targetResponse.json();
   const devtools = new DevTools(target.webSocketDebuggerUrl);
@@ -79,7 +79,7 @@ async function auditPage(path, expression) {
     devtools.send("Log.enable"),
     devtools.send("Network.enable")
   ]);
-  await devtools.send("Emulation.setDeviceMetricsOverride", { width: 375, height: 812, deviceScaleFactor: 1, mobile: true });
+  await devtools.send("Emulation.setDeviceMetricsOverride", metrics);
   await devtools.send("Page.navigate", { url: `${baseUrl}${path}` });
   for (let attempt = 0; attempt < 50; attempt += 1) {
     if (devtools.events.some((event) => event.method === "Page.loadEventFired")) break;
@@ -282,7 +282,75 @@ try {
   assert(!gegAnalysis.overflow, "GEG analysis overflows horizontally at 375 px.");
   assert(gegAnalysis.consoleErrors === 0, "GEG analysis emits browser errors.");
 
-  console.log(JSON.stringify({ result: "PASS", baseUrl, viewport: "375x812", index, decision, programme, programmePeers, federalProgramme, dossier, federalDossier, memberProfile, factionProfile, filteredFaction, gegAnalysis }));
+  const methodology = await auditPage("/methodik", `() => ({
+    bodyText: document.body.innerText.length,
+    modules: document.querySelectorAll('.method-grid > article').length,
+    processSteps: document.querySelectorAll('.method-process li').length,
+    formulae: document.querySelectorAll('.method-formula math').length,
+    calculatorInputs: document.querySelectorAll('.method-calculator input').length,
+    calculatorText: document.querySelector('.method-calculator-result')?.innerText ?? '',
+    registerLinks: document.querySelectorAll('a[href^="/methodik/register"]').length,
+    rawLatex: /\\\\Delta|\\\\begin|\\\\varnothing/.test(document.body.innerText),
+    overflow: document.documentElement.scrollWidth > window.innerWidth
+  })`);
+  assert(methodology.bodyText > 14_000, "Methodology page has too little visible content.");
+  assert(methodology.modules >= 6, "Methodology page omits one of its six modules.");
+  assert(methodology.processSteps === 12, "Methodology process does not expose all twelve steps.");
+  assert(methodology.formulae >= 10, "Methodology formulae are missing or not rendered as MathML.");
+  assert(methodology.calculatorInputs === 3, "Methodology calculator does not expose exactly three labelled inputs.");
+  assert(/(?:−|-)18/.test(methodology.calculatorText) && /(?:−|-)8/.test(methodology.calculatorText) && /(?:−|-)10/.test(methodology.calculatorText), "Methodology calculator default example is incorrect.");
+  assert(methodology.registerLinks >= 3, "Methodology page does not link the public master register consistently.");
+  assert(!methodology.rawLatex, "Methodology page exposes raw LaTeX.");
+  assert(!methodology.overflow, "Methodology page overflows horizontally at 375 px.");
+  assert(methodology.consoleErrors === 0, `Methodology page emits browser errors: ${methodology.consoleErrorDetails.join(" | ")}`);
+
+  const register = await auditPage("/methodik/register", `() => ({
+    bodyText: document.body.innerText.length,
+    results: document.querySelectorAll('.register-result-list > article').length,
+    filters: document.querySelectorAll('.register-filters input, .register-filters select').length,
+    downloads: document.querySelectorAll('.register-downloads a[href]').length,
+    firstDetail: document.querySelector('.register-result-list a[href^="/methodik/register/"]')?.getAttribute('href') ?? '',
+    hasOpenBoundary: document.body.innerText.includes('Eine offene Kalibrierung bleibt sichtbar offen'),
+    overflow: document.documentElement.scrollWidth > window.innerWidth
+  })`);
+  assert(register.bodyText > 4_000, "Master register has too little visible content.");
+  assert(register.results === 40, `Master register renders ${register.results} instead of its first 40 progressive results.`);
+  assert(register.filters === 5, "Master register filters are incomplete.");
+  assert(register.downloads >= 4, "Master register download formats or manifest are missing.");
+  assert(register.firstDetail.startsWith('/methodik/register/WOK-'), "Master register does not expose stable detail links.");
+  assert(register.hasOpenBoundary, "Master register hides its open-calibration boundary.");
+  assert(!register.overflow, "Master register overflows horizontally at 375 px.");
+  assert(register.consoleErrors === 0, `Master register emits browser errors: ${register.consoleErrorDetails.join(" | ")}`);
+
+  const registerDetail = await auditPage(register.firstDetail, `() => ({
+    bodyText: document.body.innerText.length,
+    status: document.querySelector('.register-status-banner')?.innerText ?? '',
+    sections: document.querySelectorAll('.register-detail-section').length,
+    rawEnum: /higher_is_better|lower_is_better|NOT_ASSESSED|SOURCE_/.test(document.body.innerText),
+    localPath: /\\/Users\\/|file:\\/\\//.test(document.body.innerText),
+    overflow: document.documentElement.scrollWidth > window.innerWidth
+  })`, { width: 1440, height: 1000, deviceScaleFactor: 1, mobile: false });
+  assert(registerDetail.bodyText > 3_000, "Master register detail has too little visible content.");
+  assert(registerDetail.status.length > 20, "Master register detail hides its fach status.");
+  assert(registerDetail.sections >= 3, "Master register detail omits its rules, sources or quality section.");
+  assert(!registerDetail.rawEnum, "Master register detail exposes an untranslated public system enum.");
+  assert(!registerDetail.localPath, "Master register detail exposes a local path.");
+  assert(!registerDetail.overflow, "Master register detail overflows at desktop width.");
+  assert(registerDetail.consoleErrors === 0, `Master register detail emits browser errors: ${registerDetail.consoleErrorDetails.join(" | ")}`);
+
+  const registerDownloads = {};
+  for (const path of [
+    "/downloads/woek-masterregister/v1.4/WOeK_Masterregister_v1.4_FINAL_2026-08-16.xlsx",
+    "/downloads/woek-masterregister/v1.4/register-v1.4.csv",
+    "/downloads/woek-masterregister/v1.4/register-v1.4.json",
+    "/downloads/woek-masterregister/v1.4/manifest.json"
+  ]) {
+    const response = await fetch(`${baseUrl}${path}`);
+    assert(response.ok, `Master register download ${path} returns HTTP ${response.status}.`);
+    registerDownloads[path] = Number(response.headers.get("content-length") ?? 0);
+  }
+
+  console.log(JSON.stringify({ result: "PASS", baseUrl, viewport: "375x812", index, decision, programme, programmePeers, federalProgramme, dossier, federalDossier, memberProfile, factionProfile, filteredFaction, gegAnalysis, methodology, register, registerDetail, registerDownloads }));
 } finally {
   chrome.kill("SIGTERM");
   if (chrome.exitCode === null) await Promise.race([once(chrome, "exit"), pause(1_000)]);

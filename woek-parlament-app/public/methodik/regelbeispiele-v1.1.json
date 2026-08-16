@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0.0",
+  "publisher": "Institut für Wirkungsökonomie",
+  "method_version": "1.1",
+  "scope": "Kanonische öffentliche Beispiele aus den geprüften Richtungsregeln Sachsen-Anhalt.",
+  "rules": [
+    {
+      "rule_id": "EDU-FREE-ACCESS-POS",
+      "rule_type": "sachpolitische Regel",
+      "target_directions": {
+        "SDG_04": "positives Wirkungspotenzial",
+        "SDG_10": "positives Wirkungspotenzial"
+      },
+      "review_flags": ["Finanzierung prüfen", "Angebotskapazität prüfen"]
+    },
+    {
+      "rule_id": "EDU-HOME-NEG",
+      "rule_type": "sachpolitische Regel",
+      "target_directions": {
+        "SDG_04": "negatives Wirkungspotenzial",
+        "SDG_10": "negatives Wirkungspotenzial"
+      },
+      "review_flags": ["Artikel 7 Grundgesetz prüfen", "Kindeswohl prüfen"]
+    },
+    {
+      "rule_id": "ROAD-NEW-AMB",
+      "rule_type": "sachpolitische Regel",
+      "target_directions": {
+        "SDG_09": "positives Wirkungspotenzial",
+        "SDG_11": "gegenläufige Potenziale und Risiken",
+        "SDG_13": "negatives Wirkungspotenzial",
+        "SDG_15": "negatives Wirkungspotenzial"
+      },
+      "review_flags": ["Klimapfad prüfen", "Flächen- und Naturwirkung prüfen"]
+    }
+  ]
+}

@@ -92,6 +92,7 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
               <nav aria-label="Transparenz" className="footer-nav">
                 <h2>Transparenz</h2>
                 <Link href="/methodik">Methodik</Link>
+                <Link href="/methodik/register">WÖk-Masterregister</Link>
                 <Link href="/transparenz">Über das Portal</Link>
                 <Link href="/quellen">Quellenarchiv</Link>
                 <Link href="/mandat-und-praxis">Mandat &amp; Praxis</Link>

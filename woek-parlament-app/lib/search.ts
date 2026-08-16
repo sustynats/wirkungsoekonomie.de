@@ -3,7 +3,7 @@ import type { Fachanalyse } from "@/data/fachanalysen";
 import type { FactionImpactProfile } from "@/lib/members/impact-profiles";
 import type { PublicMemberDirectoryProfile } from "@/lib/members/public-profiles";
 
-export type SearchTypeFilter = "ALL" | CaseKind | "FACHANALYSE" | "MEMBER_PROFILE" | "FACTION_PROFILE";
+export type SearchTypeFilter = "ALL" | CaseKind | "FACHANALYSE" | "MEMBER_PROFILE" | "FACTION_PROFILE" | "REFERENCE";
 export type SearchEditorialFilter = "ALL" | EditorialStatus;
 export type SearchMaterialityFilter = "ALL" | Materiality;
 export type SearchSourceFilter = "ALL" | ParliamentaryCase["statusVerification"];
@@ -23,6 +23,36 @@ export const defaultSearchFilters: ParliamentSearchFilters = {
   materiality: "ALL",
   source: "ALL"
 };
+
+export type PortalSearchPage = {
+  path: string;
+  title: string;
+  description: string;
+  keywords: string;
+};
+
+export const portalSearchPages: PortalSearchPage[] = [
+  {
+    path: "/methodik",
+    title: "Wie entsteht eine Wirkungsbewertung?",
+    description: "Vom Originalsatz über Wirkpfad, Referenzziel, Richtung und Evidenz bis zu späterer Beobachtung, Gegenfaktum und Berechnung.",
+    keywords: "Methodik Wirkungsbewertung Wirkpfad SDG SDG+ Evidenz Gegenfaktum Nichtkompensation Reverse Merit Order Formel"
+  },
+  {
+    path: "/methodik/register",
+    title: "WÖk-Masterregister v1.4",
+    description: "Öffentlicher Viewer für 621 WÖk-IDs mit Indikatoren, Regeln, Quellen, Benchmarks, Kalibrierungen und offenem Prüfstatus.",
+    keywords: "Masterregister WÖk-ID Indikator Scoring Regel Benchmark Schwelle Kalibrierung Datenquelle Download XLSX CSV JSON"
+  }
+];
+
+export function searchPortalPages(filters: ParliamentSearchFilters): PortalSearchPage[] {
+  if (filters.type !== "ALL" && filters.type !== "REFERENCE") return [];
+  if (filters.editorial !== "ALL" || filters.materiality !== "ALL" || filters.source !== "ALL") return [];
+  const query = normalize(filters.query);
+  if (!query && filters.type !== "REFERENCE") return [];
+  return portalSearchPages.filter((page) => !query || normalize(`${page.title} ${page.description} ${page.keywords}`).includes(query));
+}
 
 export function searchPublicCases(cases: ParliamentaryCase[], filters: ParliamentSearchFilters): ParliamentaryCase[] {
   const query = normalize(filters.query);

@@ -17,7 +17,9 @@ const ignoredDirectories = new Set(["node_modules", ".git", ".next", ".local", "
 const ignoredExtensions = new Set([".png", ".jpg", ".jpeg", ".gif", ".webp", ".pdf", ".zip", ".docx", ".xlsx", ".pptx", ".woff", ".woff2"]);
 const safetyImplementationFiles = new Set([
   "lib/review/privacy.ts",
+  "scripts/generate-public-master-register.py",
   "scripts/quality/check-release-safety.mjs",
+  "scripts/quality/verify-master-register.mjs",
   "scripts/quality/verify-public-documents.mjs"
 ]);
 const unsafePatterns = [
