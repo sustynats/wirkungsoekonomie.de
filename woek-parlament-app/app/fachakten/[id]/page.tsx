@@ -45,9 +45,10 @@ export default async function FachaktePage({ params }: { params: Promise<{ id: s
       </div>
       {summary.directionalHighlights.length > 0 && <section className="programme-direction-findings" aria-labelledby="programme-direction-title">
         <div><p className="eyebrow">Richtung der Wirkungspotenziale</p><h3 id="programme-direction-title">Was könnte sich in welche Richtung verändern – und warum?</h3></div>
-        <div className="programme-direction-list">{summary.directionalHighlights.map((finding) => <article className={`programme-direction programme-direction--${finding.direction.toLowerCase()}`} key={`${finding.direction}-${finding.title}`}>
-          <p className="programme-direction-label">{finding.direction === "POSITIVE" ? "Mögliches positives Wirkungspotenzial" : finding.direction === "NEGATIVE" ? "Mögliches negatives Wirkungspotenzial" : finding.direction === "AMBIVALENT" ? "Gegenläufige Wirkungspotenziale" : "Wirkungsrichtung noch offen – nicht neutral"}</p>
+        <div className="programme-direction-list">{summary.directionalHighlights.map((finding) => <article className={`programme-direction programme-direction--${finding.direction === "POSITIVE_POTENTIAL" ? "positive" : finding.direction === "NEGATIVE_RISK" ? "negative" : finding.direction.toLowerCase()}`} key={`${finding.direction}-${finding.title}`}>
+          <p className="programme-direction-label">{finding.direction === "POSITIVE_POTENTIAL" ? "Mögliches positives Wirkungspotenzial" : finding.direction === "NEGATIVE_RISK" ? "Mögliches negatives Wirkungspotenzial" : finding.direction === "AMBIVALENT" ? "Gegenläufige Wirkungspotenziale" : "Wirkungsrichtung noch offen – nicht neutral"}</p>
           <h4>{finding.title}</h4>
+          {finding.summary && <p className="programme-direction-summary">{finding.summary}</p>}
           <p><strong>Ausführliche Begründung:</strong> {finding.rationale}</p>
         </article>)}</div>
       </section>}

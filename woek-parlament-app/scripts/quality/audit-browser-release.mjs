@@ -154,6 +154,39 @@ try {
   assert(!programme.overflow, "Programme page overflows horizontally at 375 px.");
   assert(programme.consoleErrors === 0, "Programme page emits browser errors.");
 
+  const programmePeers = {};
+  for (const slug of ["bsw", "cdu", "gruene", "linke", "spd"]) {
+    const peer = await auditPage(`/fachakten/sachsen-anhalt-${slug}`, `() => ({
+      bodyText: document.body.innerText.length,
+      directionFindings: document.querySelectorAll('.programme-direction').length,
+      positiveFindings: document.querySelectorAll('.programme-direction--positive').length,
+      negativeFindings: document.querySelectorAll('.programme-direction--negative').length,
+      openFindings: document.querySelectorAll('.programme-direction--open').length,
+      detailedReasons: [...document.querySelectorAll('.programme-direction p')].filter((node) => node.textContent?.includes('Ausführliche Begründung')).length,
+      overflow: document.documentElement.scrollWidth > window.innerWidth
+    })`);
+    assert(peer.bodyText > 2_000, `Programme page ${slug} has too little visible content.`);
+    assert(peer.directionFindings >= 4, `Programme page ${slug} omits its explicit directional findings.`);
+    assert(peer.positiveFindings > 0 && peer.negativeFindings > 0 && peer.openFindings > 0, `Programme page ${slug} does not separate positive, negative and open directions.`);
+    assert(peer.detailedReasons === peer.directionFindings, `A programme direction on ${slug} lacks its detailed rationale.`);
+    assert(!peer.overflow, `Programme page ${slug} overflows horizontally at 375 px.`);
+    assert(peer.consoleErrors === 0, `Programme page ${slug} emits browser errors.`);
+    programmePeers[slug] = peer;
+  }
+
+  const federalProgramme = await auditPage("/fachakten/bund-btw-2025-afd", `() => ({
+    bodyText: document.body.innerText.length,
+    directionFindings: document.querySelectorAll('.programme-direction').length,
+    openFindings: document.querySelectorAll('.programme-direction--open').length,
+    honestBoundary: document.body.innerText.includes('noch nicht fachlich freigegeben') && document.body.innerText.includes('offen – nicht neutral'),
+    overflow: document.documentElement.scrollWidth > window.innerWidth
+  })`);
+  assert(federalProgramme.bodyText > 1_500, "Federal programme page has too little visible content.");
+  assert(federalProgramme.directionFindings === 1 && federalProgramme.openFindings === 1, "Federal programme page hides its pending directional review.");
+  assert(federalProgramme.honestBoundary, "Federal programme page presents an open review as a finished impact result.");
+  assert(!federalProgramme.overflow, "Federal programme page overflows horizontally at 375 px.");
+  assert(federalProgramme.consoleErrors === 0, "Federal programme page emits browser errors.");
+
   const dossier = await auditPage("/fachakten/dossiers/sachsen-anhalt-afd.html", `() => ({
     bodyText: document.body.innerText.length,
     commitmentRecords: document.querySelectorAll('details.commitment-record').length,
@@ -222,7 +255,7 @@ try {
   assert(!gegAnalysis.overflow, "GEG analysis overflows horizontally at 375 px.");
   assert(gegAnalysis.consoleErrors === 0, "GEG analysis emits browser errors.");
 
-  console.log(JSON.stringify({ result: "PASS", baseUrl, viewport: "375x812", index, decision, programme, dossier, memberProfile, factionProfile, filteredFaction, gegAnalysis }));
+  console.log(JSON.stringify({ result: "PASS", baseUrl, viewport: "375x812", index, decision, programme, programmePeers, federalProgramme, dossier, memberProfile, factionProfile, filteredFaction, gegAnalysis }));
 } finally {
   chrome.kill("SIGTERM");
   if (chrome.exitCode === null) await Promise.race([once(chrome, "exit"), pause(1_000)]);

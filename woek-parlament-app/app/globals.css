@@ -224,6 +224,7 @@ h3 { font-size: var(--groesse-h3); }
 .programme-direction { padding: 1rem 1.1rem; border-left: 6px solid var(--muted); background: #eef1f4; }
 .programme-direction h4 { margin: .3rem 0 .65rem; font-size: 1.08rem; }
 .programme-direction p { margin: 0; }
+.programme-direction .programme-direction-summary { margin-bottom: .7rem; color: var(--ink); font-weight: 750; line-height: 1.5; }
 .programme-direction-label { font-size: .82rem; font-weight: 850; letter-spacing: .03em; text-transform: uppercase; }
 .programme-direction--positive { border-left-color: var(--teal); background: #e7f2ed; }
 .programme-direction--negative { border-left-color: var(--red); background: #f6e9e7; }

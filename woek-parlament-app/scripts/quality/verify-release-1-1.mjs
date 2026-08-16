@@ -117,6 +117,9 @@ if (geg) {
   assert((geg.impactPaths ?? []).every((entry) => allowedDirections.has(entry.direction)), "GEG-Wirkpfad enthält Wirkungspotenzial ohne explizite Richtung.");
   assert((geg.timeline ?? []).every((entry) => String(entry.potential ?? "").trim().length >= 50 && String(entry.evidenceBoundary ?? "").trim().length >= 100), "GEG-Zeitachse enthält keine ausreichend begründete Richtung oder Evidenzgrenze.");
   assert((geg.impactPaths ?? []).every((entry) => String(entry.hypothesis ?? "").trim().length >= 60 && String(entry.evidenceBoundary ?? "").trim().length >= 100), "GEG-Wirkpfad enthält keine ausreichend begründete Richtung oder Evidenzgrenze.");
+  const gegDossier = fs.readFileSync(path.join(ROOT, "public/fachakten/dossiers/gebaeudeenergiegesetz-medienwirkung.html"), "utf8");
+  assert((gegDossier.match(/aria-label="Richtung und Herleitung des Wirkungspotenzials"/g) ?? []).length >= 10, "GEG-Vollakte unterschlägt Richtungen in ihrer Zeitachse.");
+  assert(!/<strong>Erwartetes Wirkungspotenzial:<\/strong>/.test(gegDossier), "GEG-Vollakte zeigt Wirkungspotenziale noch ohne Richtungs- und Evidenzeinordnung.");
 }
 
 const decisionImpactProfiles = readJson("data/wirkungsprofile/decision-impact-profiles.json");
@@ -130,6 +133,16 @@ for (const profile of decisionImpactProfiles) {
 }
 
 const programmeIndex = readJson("data/fachakten/public/index.json").programmes;
+for (const slug of ["afd", "bsw", "cdu", "gruene", "linke", "spd"]) {
+  const programme = programmeIndex[`ltw-2026-st-${slug}`];
+  const directionalHighlights = programme?.directionalHighlights ?? [];
+  assert(directionalHighlights.length >= 4, `Sachsen-Anhalt/${slug}: Die kompakte Fachakte enthält keine vollständige Richtungsübersicht.`);
+  assert(directionalHighlights.every((entry) => allowedDirections.has(entry.direction)), `Sachsen-Anhalt/${slug}: Richtungsübersicht enthält einen unzulässigen Status.`);
+  assert(directionalHighlights.every((entry) => String(entry.rationale ?? "").trim().length >= 250), `Sachsen-Anhalt/${slug}: Richtungsübersicht enthält eine zu knappe oder floskelhafte Begründung.`);
+}
+for (const sourceKey of ["btw-2025-afd", "btw-2025-cdu-csu", "btw-2025-gruene", "btw-2025-linke", "btw-2025-spd", "btw-2025-ssw", "coalition-2025-cdu-csu-spd"]) {
+  assert(programmeIndex[sourceKey]?.directionReviewPending === true, `${sourceKey}: Der noch offene Richtungsreview wird öffentlich nicht eindeutig ausgewiesen.`);
+}
 const programmeDossiers = [
   ...["afd", "bsw", "cdu", "gruene", "linke", "spd"].map((slug) => [`ltw-2026-st-${slug}`, `sachsen-anhalt-${slug}`]),
   ...["afd", "cdu-csu", "gruene", "linke", "spd", "ssw"].map((slug) => [`btw-2025-${slug}`, `bund-btw-2025-${slug}`]),

@@ -543,6 +543,7 @@ const labels = {
   public_title: "Öffentlicher Titel",
   public_key_statement: "Öffentliche Kernaussage",
   key_statement: "Kernaussage",
+  summary: "Zusammenfassung",
   what_is_known: "Was bekannt ist",
   what_is_not_yet_known: "Was noch nicht bekannt ist",
   maturity_label: "Reifegrad",
@@ -827,7 +828,7 @@ const hiddenPublicFieldKeys = new Set([
   ,"programme_commitment_key"
 ]);
 
-function markdownToArticle(markdown, sourceReferences = new Map()) {
+function markdownToArticle(markdown, sourceReferences = new Map(), options = {}) {
   const lines = markdown.split(/\r?\n/).filter((line) => !isInternalLine(line));
   const html = [];
   let listOpen = false;
@@ -836,6 +837,7 @@ function markdownToArticle(markdown, sourceReferences = new Map()) {
   let rootHeading = "";
   let commitmentOpen = false;
   let commitment = null;
+  let currentDate = "";
   const aliases = sourceAliases(markdown);
 
   const closeList = () => {
@@ -924,6 +926,16 @@ function markdownToArticle(markdown, sourceReferences = new Map()) {
     }
     const field = /^\*\*([^*]+):\*\*\s*(.*)$/.exec(line);
     if (field && hiddenPublicFieldKeys.has(field[1])) continue;
+    if (field?.[1] === "date") currentDate = normalizePublicText(field[2]);
+    if (field?.[1] === "expected_impact_potential" && options.timelineDirections?.has(currentDate)) {
+      closeParagraph();
+      const entry = options.timelineDirections.get(currentDate);
+      const direction = String(entry.direction ?? "OPEN").toUpperCase();
+      const directionClass = direction === "POSITIVE_POTENTIAL" ? "positive" : direction === "NEGATIVE_RISK" ? "negative" : direction === "AMBIVALENT" ? "ambivalent" : "open";
+      const directionLabel = direction === "POSITIVE_POTENTIAL" ? "mögliches positives Wirkungspotenzial" : direction === "NEGATIVE_RISK" ? "mögliches negatives Wirkungspotenzial" : direction === "AMBIVALENT" ? "gegenläufige Wirkungspotenziale und Risiken" : "Wirkungsrichtung noch offen – nicht neutral";
+      html.push(`<aside class="commitment-direction commitment-direction--${directionClass}" aria-label="Richtung und Herleitung des Wirkungspotenzials"><p class="commitment-direction-label">${directionLabel}</p><p><strong>Was sich verändern könnte:</strong> ${inline(entry.potential ?? field[2], sourceReferences)}</p><p><strong>Warum diese Richtung:</strong> ${inline(entry.change ? `${entry.change} Die Richtungszuordnung folgt aus den damit verbundenen möglichen Zustandsveränderungen und Gegenwirkungen.` : "Die Richtungszuordnung folgt aus dem dokumentierten Wirkmechanismus und seinen möglichen Gegenwirkungen.", sourceReferences)}</p>${entry.evidenceBoundary ? `<p><strong>Was damit noch nicht belegt ist:</strong> ${inline(entry.evidenceBoundary, sourceReferences)}</p>` : ""}</aside>`);
+      continue;
+    }
     if (commitment && field) {
       const [, key, value] = field;
       if (["decision_or_measure", "measure"].includes(key)) commitment.measure = value;
@@ -1082,7 +1094,10 @@ for (const entry of documents) {
       });
     });
   }
-  const body = markdownToArticle(sourceMarkdown, sourceReferences);
+  const timelineDirections = entry.id === "gebaeudeenergiegesetz-medienwirkung"
+    ? new Map((publicAnalyses.find((item) => item.slug === entry.id)?.timeline ?? []).map((item) => [item.date, item]))
+    : undefined;
+  const body = markdownToArticle(sourceMarkdown, sourceReferences, { timelineDirections });
   fs.writeFileSync(path.join(outputRoot, `${entry.id}.html`), documentHtml({ id: entry.id, title: entry.title, article: body, overviewHref: entry.overviewHref, summary: summaryFor(entry.id) }));
   if (entry.caseId) {
     const required = [
