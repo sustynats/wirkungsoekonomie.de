@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "prebuild": "npm run check:accessibility",
-    "build": "node scripts/quality/check-privacy-governance.mjs && node scripts/quality/check-release-safety.mjs --scope=repository && node scripts/quality/verify-public-documents.mjs && node scripts/quality/check-public-content-completeness.mjs && next build && node scripts/quality/check-release-safety.mjs --scope=release && node scripts/quality/verify-public-documents.mjs && node scripts/quality/check-public-content-completeness.mjs",
+    "build": "node scripts/quality/check-privacy-governance.mjs && node scripts/quality/check-release-safety.mjs --scope=repository && node scripts/quality/verify-public-documents.mjs && node scripts/quality/check-public-content-completeness.mjs && node scripts/quality/verify-release-1-fachbasis.mjs && next build && node scripts/quality/check-release-safety.mjs --scope=release && node scripts/quality/verify-public-documents.mjs && node scripts/quality/check-public-content-completeness.mjs && node scripts/quality/verify-release-1-fachbasis.mjs",
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
@@ -30,6 +30,8 @@
     "review:import-final-release": "tsx scripts/import-final-release-delivery.ts",
     "review:import-final-release:resume": "node scripts/import-final-release-delivery.mjs",
     "review:generate-public-working-acts": "tsx scripts/generate-public-working-acts.ts",
+    "release:sync-fachbasis": "node scripts/sync-release-1-fachbasis.mjs",
+    "release:publish-fachakten": "node scripts/publish-fachakten.mjs",
     "review:export-ex-ante-mapping": "tsx scripts/export-ex-ante-mapping-package.ts",
     "review:export-historical-evidence": "tsx scripts/export-historical-evidence-research-package.ts",
     "reviews:materialize-follow-up-tasks": "tsx scripts/materialize-review-follow-up-tasks.ts",

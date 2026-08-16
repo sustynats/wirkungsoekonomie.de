@@ -8,6 +8,9 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  outputFileTracingIncludes: {
+    "/*": ["./data/fachakten/public/index.json"]
+  },
   async headers() {
     return [{ source: "/(.*)", headers: securityHeaders }];
   }

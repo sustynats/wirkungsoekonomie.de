@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { politicalSourceCatalog } from "@/lib/commitments/source-catalog";
+import { federalProgrammeAnalyses, readProgrammeSummary } from "@/lib/fachbasis";
 
 export const metadata: Metadata = {
   title: "Mandat & Praxis",
@@ -15,10 +16,11 @@ const comparisonSteps = [
   ["05", "Beobachtete Wirkung", "Was sich später verändert hat, was davon belastbar zurechenbar ist und was offenbleibt."]
 ] as const;
 
-export default function MandatUndPraxisPage() {
+export default async function MandatUndPraxisPage() {
   const electionPrograms = politicalSourceCatalog.filter((source) => source.sourceType === "ELECTION_PROGRAM");
   const coalitionAgreement = politicalSourceCatalog.find((source) => source.sourceType === "COALITION_AGREEMENT");
   const commitmentCount = politicalSourceCatalog.reduce((total, source) => total + source.commitmentCount, 0);
+  const programmeSummaries = await Promise.all(federalProgrammeAnalyses.map(async (analysis) => ({ analysis, summary: await readProgrammeSummary(analysis) })));
 
   return (
     <div className="shell content-page mandate-page">
@@ -78,6 +80,19 @@ export default function MandatUndPraxisPage() {
           <article><span>02</span><h3>Mit Entscheidungen verbinden</h3><p>Eine Zusage wird nur mit der tatsächlich relevanten parlamentarischen Fassung verglichen.</p></article>
           <article><span>03</span><h3>Beschluss und Vollzug trennen</h3><p>Ein beschlossenes Gesetz ist nicht automatisch praktisch umgesetzt. Beide Stufen bleiben sichtbar.</p></article>
           <article><span>04</span><h3>Wirkung unabhängig prüfen</h3><p>Wirkpfade, Gegenfaktum, Risiken, Berechnungen und Grenzen folgen getrennt vom Umsetzungsabgleich.</p></article>
+        </div>
+      </section>
+
+      <section className="section section-compact federal-programme-analyses" aria-labelledby="federal-programme-analyses-title">
+        <div className="section-heading"><div><p className="eyebrow">Wahlprogramme und Koalitionsvertrag im Wirkungscheck</p><h2 id="federal-programme-analyses-title">Sieben vollständige Fachakten – nachvollziehbar bis zur einzelnen Zusage.</h2><p className="lead">Die Fachakten enthalten die gelieferten vollständigen Analysen: quellengebundene Zusagen, mögliche Wirkpfade, Wirkungsrisiken, Bedingungen, Datenbedarf und normative Bezüge. Sie ersetzen keine Wahlentscheidung und erstellen kein Parteienranking.</p></div></div>
+        <div className="federal-programme-grid">
+          {programmeSummaries.map(({ analysis, summary }) => <article key={analysis.id}>
+            <p className="eyebrow">{analysis.eyebrow}</p>
+            <h3>{analysis.title}</h3>
+            <p>{summary?.summary}</p>
+            <dl><div><dt>Zusageeinheiten</dt><dd>{summary?.commitments || "–"}</dd></div><div><dt>Wirkpfade</dt><dd>{summary?.impactPaths || "–"}</dd></div><div><dt>Politikfelder</dt><dd>{summary?.domains || "–"}</dd></div></dl>
+            <Link className="text-link" href={`/fachakten/${analysis.id}`}>Vollständige Fachakte öffnen <span aria-hidden="true">→</span></Link>
+          </article>)}
         </div>
       </section>
 

@@ -181,6 +181,7 @@ export type ParliamentaryCase = {
   sources: CaseSource[];
   versionNote: string;
   retrospective?: boolean;
+  fachakteId?: string;
   publicWorkingAct?: PublicWorkingAct;
   publicAssessment?: PublicAssessment;
 };

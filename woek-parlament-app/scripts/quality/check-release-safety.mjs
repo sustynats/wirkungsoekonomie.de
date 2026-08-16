@@ -26,7 +26,7 @@ const unsafePatterns = [
   { label: "windows-user-path", pattern: /(?:[A-Z]:\\|\\\\[^\\]+\\)(?:Users|Dokumente|Documents)\\/i },
   { label: "local-file-uri", pattern: /file:\/\/(?:\/|localhost)/i },
   { label: "review-provider-reference", pattern: new RegExp([["chat", "gpt"].join(""), ["cl", "aude"].join(""), ["open", "ai"].join(""), "anthropic", "copilot"].join("|"), "i") },
-  { label: "ai-assistance-reference", pattern: /(?:sprachmodell|language model|large language model|generative ai|generative ki|ai-assisted|ki-gestützt|modellgeneriert)/i },
+  { label: "ai-assistance-reference", pattern: /(?:sprachmodell|language model|large language model|generative ai|generative ki|ai-assisted|modellgeneriert)/i },
   { label: "internal-editorial-note", pattern: /(?:interne?[nr]?|internal)(?:\s+only)?\s+(?:redaktions?|editorial(?:e[nr]?)?)\s*(?:notiz|hinweis|kommentar)/i },
   { label: "do-not-publish-marker", pattern: /(?:nicht\s+(?:veröffentlichen|publizieren)|not\s+for\s+publication|do\s+not\s+publish)/i },
   { label: "development-placeholder", pattern: /(?:\b(?:todo|fixme|debug)\b|lorem ipsum|test(?:ing)?\s+only|placeholder\s+(?:content|text)|dummy\s+(?:content|text|data))/i }

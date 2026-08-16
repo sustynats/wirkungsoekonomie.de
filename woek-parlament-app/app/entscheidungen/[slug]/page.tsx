@@ -38,6 +38,8 @@ export default async function DecisionPage({ params }: { params: Promise<{ slug:
 
       {item.publicAssessment ? <AssessmentExplainer assessment={item.publicAssessment} /> : item.publicWorkingAct ? <WorkingActExplainer workingAct={item.publicWorkingAct} /> : <section className="decision-section assessment-pending"><p className="eyebrow">WÖk-Einordnung</p><h2>Noch keine fachliche Bewertung veröffentlicht</h2><p>Eine reale Einordnung erscheint erst, wenn Entscheidungsfassung, Quellen, Wirkpfade, Berechnungen und Unsicherheiten geprüft sind. Das Portal unterscheidet dann sichtbar zwischen Ergebnis, Begründung und dem vollständigen Rechenweg.</p></section>}
 
+      {"fachakteId" in item && typeof item.fachakteId === "string" && <section className="decision-section full-dossier-link"><p className="eyebrow">Vollständige Fachakte</p><h2>Die vollständige Analyse einsehen</h2><p>Die ausführliche Fachakte enthält den vollständigen quellengebundenen Prüfbestand für diesen Fall. Die gegliederte Seite oben ist die Leseansicht; die Fachakte bewahrt die vollständige Herleitung.</p><Link className="button button-secondary" href={`/fachakten/${item.fachakteId}`}>Vollständige Fachakte öffnen</Link></section>}
+
       <GlossaryBasics termKeys={item.publicAssessment ? ["wirkung", "wirkungsbewertung", "gegenfaktum", "evidenzgrenze", "zurechnung", "nichtkompensation"] : ["wirkungspotenzial", "wirkungsrisiko", "wirkmechanismus", "wirkpfad", "rueckkopplung"]} />
 
       {!item.publicWorkingAct && <div className="decision-grid">

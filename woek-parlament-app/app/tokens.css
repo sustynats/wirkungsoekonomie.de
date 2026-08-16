@@ -1,0 +1,28 @@
+/* Wirkungsportal Parlament — Design-Tokens · Version 1.0.0 · 2026-08-15 */
+/* Zentrale Produktionsgrundlage: Komponenten verwenden diese Werte oder die
+   Kompatibilitäts-Aliasse, nicht eigene Farb- und Typografie-Skalen. */
+:root {
+  --farbe-flaeche-basis: #F6F1E8; --farbe-flaeche-karte: #FFFFFF; --farbe-flaeche-warm: #FDFBF7; --farbe-flaeche-buehne: #132133; --farbe-flaeche-tief: #0B1020;
+  --farbe-text: #1B2431; --farbe-text-sekundaer: #5B6675; --farbe-text-akzent: #7D5F1E; --farbe-text-link: #175646; --farbe-text-link-hover: #1F6F5C;
+  --farbe-text-invers: #E7EBF0; --farbe-text-invers-weich: #C3CCD8; --farbe-text-invers-akzent: #C8A24A;
+  --farbe-aktion: #C8A24A; --farbe-aktion-text: #20180A; --farbe-aktion-hover: #B8913C; --farbe-aktion-zweit: #175646; --farbe-aktion-zweit-text: #FFFFFF;
+  --farbe-linie: #E4DDD1; --farbe-linie-weich: #EDE8DF; --farbe-linie-invers: #2A3B52;
+  --farbe-status-neutral: #9AA3AE; --farbe-status-positiv: #1F6F5C; --farbe-status-bedingt: #C8A24A; --farbe-status-offen: #7A8798;
+  --farbe-fokus: #1F6F5C; --farbe-fokus-invers: #C8A24A;
+  --schrift-display: "Source Serif 4", "Iowan Old Style", Georgia, serif;
+  --schrift-text: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --groesse-h1: clamp(2rem, 3.4vw, 3rem); --groesse-h1-lang: clamp(1.5rem, 2.4vw, 2.1rem); --groesse-h2: clamp(1.5rem, 2.2vw, 2rem); --groesse-h3: 1.375rem; --groesse-h4: 1.1875rem; --groesse-fliess: 1.1875rem; --groesse-klein: 1rem; --groesse-label: .8125rem;
+  --zeilenhoehe-eng: 1.15; --zeilenhoehe-normal: 1.35; --zeilenhoehe-text: 1.62; --schriftstaerke-normal: 400; --schriftstaerke-halb: 600; --schriftstaerke-fett: 700; --laufweite-display: -.015em; --laufweite-label: .14em;
+  --textbreite-min: 45ch; --textbreite-ideal: 65ch; --textbreite-max: 75ch; --textbreite-lead: 56ch;
+  --abstand-2xs: .25rem; --abstand-xs: .5rem; --abstand-s: .75rem; --abstand-m: 1rem; --abstand-l: 1.5rem; --abstand-xl: 2rem; --abstand-2xl: 3rem; --abstand-3xl: 4rem; --abstand-sektion: clamp(2.75rem, 5vw, 4.5rem); --abstand-raster: 1.25rem;
+  --radius-buehne: 20px; --radius-karte: 12px; --radius-klein: 8px; --radius-pille: 999px; --breite-inhalt: 1180px; --breite-schmal: 860px; --rahmen-staerke: 1px; --rahmen-staerke-kraeftig: 3px;
+  --tippziel-min: 44px; --tippziel-abstand: 8px; --fokus-staerke: 2px; --fokus-abstand: 2px; --spalten-kachel-min: 300px; --spalten-karte-min: 290px; --spalten-max: 3; --stufe-mobil: 640px; --stufe-tablet: 880px; --stufe-desktop: 1180px;
+  /* Wiederverwendete Portal-Komponenten. */
+  --ivory: var(--farbe-flaeche-basis); --paper: var(--farbe-flaeche-karte); --paper-warm: var(--farbe-flaeche-warm); --cream: var(--farbe-flaeche-warm); --navy: var(--farbe-flaeche-buehne); --navy-deep: var(--farbe-flaeche-tief); --navy-ink: var(--farbe-flaeche-tief); --ink: var(--farbe-text); --ink-soft: var(--farbe-text-sekundaer); --muted: var(--farbe-text-sekundaer); --gold: var(--farbe-aktion); --green: var(--farbe-status-positiv); --green-deep: var(--farbe-text-link); --teal: var(--farbe-status-positiv); --line: var(--farbe-linie); --line-soft: var(--farbe-linie-weich); --f-display: var(--schrift-display); --f-text: var(--schrift-text); --serif: var(--schrift-display); --sans: var(--schrift-text); --t-h1: var(--groesse-h1); --t-h2: var(--groesse-h2); --t-body: var(--groesse-fliess); --t-small: var(--groesse-klein); --t-micro: var(--groesse-label); --wrap: var(--breite-inhalt); --measure: var(--textbreite-ideal); --r-stage: var(--radius-buehne); --r-card: var(--radius-karte); --r-btn: var(--radius-klein);
+}
+html { -webkit-text-size-adjust: 100%; }
+body { background: var(--farbe-flaeche-basis); color: var(--farbe-text); font-family: var(--schrift-text); font-size: var(--groesse-fliess); line-height: var(--zeilenhoehe-text); -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4 { color: var(--farbe-flaeche-buehne); font-family: var(--schrift-display); font-weight: var(--schriftstaerke-fett); line-height: var(--zeilenhoehe-eng); letter-spacing: var(--laufweite-display); }
+h1 { font-size: var(--groesse-h1); max-width: 17ch; } h1.ist-langtitel { font-size: var(--groesse-h1-lang); line-height: 1.2; max-width: 26ch; } h2 { font-size: var(--groesse-h2); max-width: 24ch; } h3 { font-size: var(--groesse-h3); line-height: var(--zeilenhoehe-normal); } h4 { font-size: var(--groesse-h4); line-height: var(--zeilenhoehe-normal); }
+p, li, dd { max-width: var(--textbreite-ideal); } a { color: var(--farbe-text-link); text-underline-offset: 3px; } a:hover { color: var(--farbe-text-link-hover); } :focus-visible { outline: var(--fokus-staerke) solid var(--farbe-fokus); outline-offset: var(--fokus-abstand); } button, [role="button"], summary, .btn, input, select { min-height: var(--tippziel-min); }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; } }

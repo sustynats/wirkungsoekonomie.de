@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { jurisdictionById } from "@/lib/parliament/jurisdictions";
+import { readProgrammeSummary, saxonyProgrammeAnalyses } from "@/lib/fachbasis";
 
 const saxonyAnhalt = jurisdictionById("sachsen-anhalt");
 
@@ -8,9 +9,10 @@ export const metadata = {
   description: "Wahlprogramme vor der Landtagswahl Sachsen-Anhalt 2026: Wirkungspotenziale, Risiken, Quellen und offene Fragen verständlich und nachvollziehbar."
 };
 
-export default function SaxonyAnhaltPage() {
+export default async function SaxonyAnhaltPage() {
   if (!saxonyAnhalt?.election) return null;
   const electionDate = new Intl.DateTimeFormat("de-DE", { dateStyle: "long" }).format(new Date(`${saxonyAnhalt.election.date}T12:00:00`));
+  const programmeSummaries = await Promise.all(saxonyProgrammeAnalyses.map(async (analysis) => ({ analysis, summary: await readProgrammeSummary(analysis) })));
 
   return (
     <main>
@@ -64,13 +66,21 @@ export default function SaxonyAnhaltPage() {
         <aside className="state-cross-border-note"><strong>Wirkung endet nicht an der Landesgrenze.</strong> Eine Maßnahme kann Zuständigkeiten, Haushalte, Infrastruktur, ökologische Belastungen oder soziale Folgen in anderen Ländern, beim Bund, in Europa oder darüber hinaus berühren. Diese Zusammenhänge werden als eigene Wirkungspfade sichtbar gemacht – nicht stillschweigend dem Land zugerechnet.</aside>
       </section>
 
-      <section className="shell section section-surface state-publication-status" aria-labelledby="state-status-title">
-        <div><p className="eyebrow">Veröffentlichungsstand</p><h2 id="state-status-title">Die Programme werden erst nach Quellenprüfung verglichen.</h2><p className="lead">Der Wahlbereich ist bewusst vor der ersten Bewertung sichtbar. So ist nachvollziehbar, welche Quellen geprüft werden und nach welchem Maßstab der spätere Vergleich entsteht – ohne eine voreilige Einordnung zu behaupten.</p></div>
-        <ul>
-          <li><strong>1. Primärquelle</strong><span>Jede Programmaussage erhält Fassung, Abrufzeitpunkt und Fundstelle.</span></li>
-          <li><strong>2. Prüfen statt punkten</strong><span>Keine Parteienrangliste und keine Gesamtpunktzahl. Einzelne Zusagen bleiben mit ihren Annahmen sichtbar.</span></li>
-          <li><strong>3. Vollständig machen</strong><span>Nach der Zulassung der Landeslisten wird der Quellenbestand nach derselben öffentlichen Regel vervollständigt.</span></li>
-        </ul>
+      <section className="shell section state-programme-analyses" aria-labelledby="state-status-title">
+        <div className="section-heading"><div><p className="eyebrow">Wahlprogramme im Wirkungscheck</p><h2 id="state-status-title">Sechs vollständige Fachakten – einzeln prüfen, nicht Parteien ranken.</h2><p className="lead">Jede Fachakte erschließt quellengebundene Zusagen mit möglichen Wirkpfaden, Risiken, Umsetzungsbedingungen, Datenbedarf und normativen Bezügen. Die vollständige Darstellung bleibt jeweils zugänglich.</p></div></div>
+        <div className="state-programme-grid">
+          {programmeSummaries.map(({ analysis, summary }) => <article key={analysis.id}>
+            <p className="eyebrow">{analysis.eyebrow}</p>
+            <h3>{analysis.title}</h3>
+            <p>{summary?.summary}</p>
+            <dl>
+              <div><dt>Zusageeinheiten</dt><dd>{summary?.commitments || "–"}</dd></div>
+              <div><dt>Wirkpfade</dt><dd>{summary?.impactPaths || "–"}</dd></div>
+              <div><dt>Politikfelder</dt><dd>{summary?.domains || "–"}</dd></div>
+            </dl>
+            <Link className="text-link" href={`/fachakten/${analysis.id}`}>Vollständige Fachakte öffnen <span aria-hidden="true">→</span></Link>
+          </article>)}
+        </div>
       </section>
 
       <section className="shell section state-next" aria-labelledby="state-next-title">
