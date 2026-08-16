@@ -143,6 +143,7 @@ for (const slug of ["afd", "bsw", "cdu", "gruene", "linke", "spd"]) {
 for (const sourceKey of ["btw-2025-afd", "btw-2025-cdu-csu", "btw-2025-gruene", "btw-2025-linke", "btw-2025-spd", "btw-2025-ssw", "coalition-2025-cdu-csu-spd"]) {
   assert(programmeIndex[sourceKey]?.directionReviewPending === true, `${sourceKey}: Der noch offene Richtungsreview wird öffentlich nicht eindeutig ausgewiesen.`);
 }
+const federalDirectionSummary = readJson("data/fachakten/public/federal-direction-summary.json").programmes;
 const programmeDossiers = [
   ...["afd", "bsw", "cdu", "gruene", "linke", "spd"].map((slug) => [`ltw-2026-st-${slug}`, `sachsen-anhalt-${slug}`]),
   ...["afd", "cdu-csu", "gruene", "linke", "spd", "ssw"].map((slug) => [`btw-2025-${slug}`, `bund-btw-2025-${slug}`]),
@@ -161,6 +162,20 @@ for (const [programmeKey, dossierName] of programmeDossiers) {
     const directionalCallouts = (dossier.match(/class="commitment-direction /g) ?? []).length;
     assert(programmeRecords === expected, `${programmeKey}: ${programmeRecords} statt ${expected} Programmpunkte in der Vollakte.`);
     assert(directionalCallouts === expected, `${programmeKey}: Nicht jeder Programmpunkt besitzt eine richtungsbezogene Kurzeinordnung.`);
+    assert((dossier.match(/<strong>Ausführliche Begründung:<\/strong>/g) ?? []).length === expected, `${programmeKey}: Nicht jede Kurzeinordnung enthält eine ausführliche Begründung.`);
+    if (programmeKey.startsWith("btw-") || programmeKey.startsWith("coalition-")) {
+      const directionSummary = federalDirectionSummary[programmeKey];
+      assert(directionSummary, `${programmeKey}: Die maschinenlesbare Richtungsübersicht fehlt.`);
+      if (directionSummary) {
+        const counts = directionSummary.counts;
+        assert(counts.positive + counts.negative + counts.ambivalent + counts.open === expected, `${programmeKey}: Richtungsübersicht deckt nicht alle Zusagen ab.`);
+        assert(directionSummary.directed === counts.positive + counts.negative + counts.ambivalent, `${programmeKey}: Anzahl gerichteter Zusagen ist inkonsistent.`);
+        assert(directionSummary.directed > 0, `${programmeKey}: Vorhandene gerichtete Zielbezüge werden weiterhin vollständig als offen ausgegeben.`);
+        assert((dossier.match(/class="commitment-direction commitment-direction--negative"/g) ?? []).length === counts.negative, `${programmeKey}: Negative Zielbezüge gehen in der Vollakte verloren.`);
+        assert((dossier.match(/class="commitment-direction commitment-direction--ambivalent"/g) ?? []).length === counts.ambivalent, `${programmeKey}: Gegenläufige Zielbezüge gehen in der Vollakte verloren.`);
+        assert((dossier.match(/class="commitment-direction commitment-direction--open"/g) ?? []).length === counts.open, `${programmeKey}: Offene Richtungen sind in der Vollakte inkonsistent.`);
+      }
+    }
   }
 }
 

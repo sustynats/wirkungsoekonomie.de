@@ -66,6 +66,7 @@ const machineValues = {
   LIMITED: "begrenzt",
   POSITIVE_POTENTIAL: "positives Wirkungspotenzial",
   NEGATIVE_RISK: "negatives Wirkungsrisiko",
+  MIXED: "gegenläufige Wirkungspotenziale",
   NEUTRAL: "richtungsneutral",
   AMBIVALENT: "gegenläufige Richtungen im selben Wirkpfad",
   OPEN: "offen",
@@ -167,6 +168,9 @@ const machineValues = {
 };
 
 const publicPhraseTranslations = new Map([
+  ["Mehrkomponenten-Eintrag aus der Registerextraktion; die Originalquelle enthält getrennte Zusagen. Sie werden unter dem gelieferten Zusageschlüssel transparent als getrennte Source Components analysiert.", "Der Programmpunkt bündelt mehrere Aussagen aus der Originalquelle. Damit ihre unterschiedlichen Wirkungspfade sichtbar bleiben, werden sie in dieser Akte getrennt geprüft."],
+  ["Der gelieferte Zusageschlüssel enthält aufgrund der ursprünglichen PDF-/Spaltenextraktion mehrere getrennte Originalaussagen. Für eine spätere Registermigration sollten diese als eigene Schlüssel versioniert werden; bis dahin bleiben die Source Components getrennt sichtbar.", "Der Programmpunkt bündelt mehrere Originalaussagen. Vor einer abschließenden Bewertung müssen diese Aussagen einzeln gegen ihren jeweiligen Ausgangszustand und ihre Alternative geprüft werden."],
+  ["source components", "einzelne Quellenaussagen"],
   ["decision context source only; analytical causal hypothesis requires validation", "Als Beleg liegt bislang nur die Quelle zum Entscheidungsgegenstand vor; die Wirkungshypothese muss empirisch überprüft werden"],
   ["official proposal source; ex ante causal hypothesis requires validation", "Amtliche Vorlage vorhanden; die Ex-ante-Wirkungshypothese muss empirisch überprüft werden"],
   ["defined not applied", "definiert, aber noch nicht angewendet"],
@@ -266,7 +270,16 @@ function humanizeMachineTokens(value) {
     result = result.replace(new RegExp(source.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "gi"), target);
   }
   result = result
-    .replace(/SDG_PLUS_([A-Z0-9_]+)/g, (_, key) => `SDG+ ${key.toLowerCase().replace(/_/g, " ")}`)
+    .replace(/SDG_PLUS_([A-Z0-9_]+)/g, (_, key) => ({
+      DEMOCRACY: "SDG+ Demokratie",
+      DEMOCRATIC_STABILITY: "SDG+ demokratische Stabilität",
+      DIGITAL_SELF_DETERMINATION: "SDG+ digitale Selbstbestimmung",
+      DISCOURSE_CAPACITY: "SDG+ Diskursfähigkeit",
+      INSTITUTIONAL_TRUST: "SDG+ institutionelles Vertrauen",
+      MEDIA_QUALITY: "SDG+ Medienqualität",
+      RULE_OF_LAW: "SDG+ Rechtsstaatlichkeit",
+      SOCIAL_COHESION: "SDG+ gesellschaftlicher Zusammenhalt"
+    })[key] ?? `SDG+ ${key.toLowerCase().replace(/_/g, " ")}`)
     .replace(/SDG_0?([0-9]{1,2})/g, "SDG $1")
     .replace(/\b[A-Z][A-Z0-9_]{2,}\b/g, (token) => machineValues[token] ?? (token.includes("_") ? token.toLowerCase().replace(/_/g, " ") : token))
     .replace(/\b[a-z][a-z0-9]*(?:_[a-z0-9]+)+\b/g, (token) => publicTaxonomyValues[token] ?? labels[token] ?? token.replace(/_/g, " "))
@@ -277,6 +290,173 @@ function humanizeMachineTokens(value) {
     result = result.replace(new RegExp(source.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "gi"), target);
   }
   return result;
+}
+
+const sdgTargetNames = {
+  SDG_01: "Keine Armut",
+  SDG_02: "Kein Hunger",
+  SDG_03: "Gesundheit und Wohlergehen",
+  SDG_04: "Hochwertige Bildung",
+  SDG_05: "Geschlechtergleichheit",
+  SDG_06: "Sauberes Wasser und Sanitäreinrichtungen",
+  SDG_07: "Bezahlbare und saubere Energie",
+  SDG_08: "Menschenwürdige Arbeit und nachhaltige wirtschaftliche Entwicklung",
+  SDG_09: "Industrie, Innovation und Infrastruktur",
+  SDG_10: "Weniger Ungleichheiten",
+  SDG_11: "Nachhaltige Städte und Gemeinden",
+  SDG_12: "Nachhaltige Konsum- und Produktionsmuster",
+  SDG_13: "Maßnahmen zum Klimaschutz",
+  SDG_14: "Leben unter Wasser",
+  SDG_15: "Leben an Land",
+  SDG_16: "Frieden, Gerechtigkeit und starke Institutionen",
+  SDG_17: "Partnerschaften zur Erreichung der Ziele",
+  SDG_PLUS_RULE_OF_LAW: "SDG+ Rechtsstaatlichkeit",
+  SDG_PLUS_DEMOCRACY: "SDG+ Demokratie",
+  SDG_PLUS_DEMOCRATIC_STABILITY: "SDG+ demokratische Stabilität",
+  SDG_PLUS_INSTITUTIONAL_TRUST: "SDG+ institutionelles Vertrauen",
+  SDG_PLUS_MEDIA_QUALITY: "SDG+ Medienqualität",
+  SDG_PLUS_DISCOURSE_CAPACITY: "SDG+ Diskursfähigkeit",
+  SDG_PLUS_DIGITAL_SELF_DETERMINATION: "SDG+ digitale Selbstbestimmung",
+  SDG_PLUS_SOCIAL_COHESION: "SDG+ gesellschaftlicher Zusammenhalt"
+};
+
+function targetName(value) {
+  const normalized = String(value ?? "").trim().toUpperCase();
+  return sdgTargetNames[normalized] ?? humanizeMachineTokens(normalized);
+}
+
+function uniqueText(values, limit = Number.POSITIVE_INFINITY) {
+  return [...new Set(values.map((value) => normalizePublicText(value)).filter(Boolean))].slice(0, limit);
+}
+
+function sentenceFragments(values, limit = Number.POSITIVE_INFINITY) {
+  return uniqueText(values, limit).map((value) => value.replace(/[.;:\s]+$/g, "").trim()).filter(Boolean);
+}
+
+function normalizedDirection(value) {
+  const normalized = String(value ?? "OPEN").trim().toUpperCase();
+  if (normalized === "MIXED") return "AMBIVALENT";
+  return ["POSITIVE_POTENTIAL", "NEGATIVE_RISK", "AMBIVALENT", "OPEN"].includes(normalized) ? normalized : "OPEN";
+}
+
+function commitmentDirectionPresentation(commitment) {
+  const targets = commitment.normativeTargets.map((entry) => ({ ...entry, direction: normalizedDirection(entry.direction) }));
+  const groups = {
+    positive: targets.filter((entry) => entry.direction === "POSITIVE_POTENTIAL"),
+    negative: targets.filter((entry) => entry.direction === "NEGATIVE_RISK"),
+    ambivalent: targets.filter((entry) => entry.direction === "AMBIVALENT"),
+    open: targets.filter((entry) => entry.direction === "OPEN")
+  };
+  let direction = "OPEN";
+  if (groups.ambivalent.length || (groups.positive.length && groups.negative.length)) direction = "AMBIVALENT";
+  else if (groups.negative.length) direction = "NEGATIVE_RISK";
+  else if (groups.positive.length) direction = "POSITIVE_POTENTIAL";
+
+  const partlyOpen = groups.open.length > 0 && direction !== "OPEN";
+  const labels = {
+    POSITIVE_POTENTIAL: partlyOpen ? "Positives Zielpotenzial dokumentiert – weitere Zielrichtungen offen" : "Mögliches positives Wirkungspotenzial",
+    NEGATIVE_RISK: partlyOpen ? "Negatives Zielpotenzial dokumentiert – weitere Zielrichtungen offen" : "Mögliches negatives Wirkungspotenzial",
+    AMBIVALENT: partlyOpen ? "Gegenläufige Zielpotenziale dokumentiert – weitere Zielrichtungen offen" : "Gegenläufige Wirkungspotenziale",
+    OPEN: "Wirkungsrichtung noch offen – nicht neutral"
+  };
+  const directionClass = direction === "POSITIVE_POTENTIAL" ? "positive" : direction === "NEGATIVE_RISK" ? "negative" : direction === "AMBIVALENT" ? "ambivalent" : "open";
+  const stateChanges = sentenceFragments(commitment.stateChanges.length ? commitment.stateChanges : [commitment.stateChange], 3);
+  const risks = sentenceFragments(commitment.risks, 4);
+  const gaps = sentenceFragments(commitment.gaps, 4);
+  const targetRows = [
+    ["positive", "Positiver Zielbezug"],
+    ["negative", "Negativer Zielbezug"],
+    ["ambivalent", "Gegenläufiger Zielbezug"],
+    ["open", "Richtung noch offen"]
+  ].filter(([key]) => groups[key].length > 0).map(([key, label]) => ({
+    label,
+    values: uniqueText(groups[key].map((entry) => targetName(entry.id)), 8)
+  }));
+
+  const reasonParts = [];
+  if (groups.negative.length) reasonParts.push(`Die Fachquelle kennzeichnet ${uniqueText(groups.negative.map((entry) => targetName(entry.id)), 4).join(", ")} als negative Zielbezüge.`);
+  if (groups.ambivalent.length) reasonParts.push(`Für ${uniqueText(groups.ambivalent.map((entry) => targetName(entry.id)), 4).join(", ")} sind gegenläufige Zielwirkungen dokumentiert.`);
+  if (groups.positive.length) reasonParts.push(`Für ${uniqueText(groups.positive.map((entry) => targetName(entry.id)), 4).join(", ")} ist ein positives Zielpotenzial dokumentiert.`);
+  if (risks.length) reasonParts.push(`Entscheidend sind dabei die dokumentierten Risikopfade: ${risks.join("; ")}.`);
+  if (direction === "OPEN") reasonParts.push("Aus dem politischen Ziel und dem beschriebenen Wirkmechanismus allein folgt noch keine positive, negative oder neutrale Gesamt-Richtung.");
+  if (gaps.length) reasonParts.push(`Vor einer abschließenden Richtungszuordnung fehlen insbesondere: ${gaps.join("; ")}.`);
+  reasonParts.push("Die Einordnung beschreibt ein Ex-ante-Potenzial beziehungsweise -Risiko; sie ist kein Nachweis einer bereits eingetretenen Wirkung.");
+
+  return { direction, directionClass, label: labels[direction], stateChanges, risks, gaps, targetRows, reason: reasonParts.join(" ") };
+}
+
+function renderCommitmentDirection(commitment, sourceReferences) {
+  const presentation = commitmentDirectionPresentation(commitment);
+  const stateChange = presentation.stateChanges.length
+    ? `<ul class="commitment-direction-changes">${presentation.stateChanges.map((item) => `<li>${inline(item, sourceReferences)}</li>`).join("")}</ul>`
+    : `<p>${inline("Der konkrete Zielzustand, die Reichweite und die Verteilungsfolgen sind im vorliegenden Programmpunkt nicht hinreichend bestimmt.", sourceReferences)}</p>`;
+  const targetRows = presentation.targetRows.length
+    ? `<dl class="commitment-direction-targets">${presentation.targetRows.map((row) => `<div><dt>${escapeHtml(row.label)}</dt><dd>${row.values.map((value) => `<span>${escapeHtml(value)}</span>`).join("")}</dd></div>`).join("")}</dl>`
+    : "";
+  return `<aside class="commitment-direction commitment-direction--${presentation.directionClass}" aria-label="Wirkungsökonomische Kurzeinordnung dieses Programmpunkts"><p class="commitment-direction-label">Wirkungsökonomische Kurzeinordnung · ${escapeHtml(presentation.label)}</p>${commitment.measure ? `<p><strong>Programmpunkt:</strong> ${inline(commitment.measure, sourceReferences)}</p>` : ""}<div class="commitment-direction-section"><strong>Was sich verändern könnte:</strong>${stateChange}</div>${targetRows}<p><strong>Ausführliche Begründung:</strong> ${inline(presentation.reason, sourceReferences)}</p></aside>`;
+}
+
+function federalProgrammeSourceKey(id) {
+  return id.startsWith("bund-") ? id.slice("bund-".length) : null;
+}
+
+function federalProgrammeDirectionSummary(sourceKey) {
+  const sourcePath = path.join(sourceRoot, "01_bundesprogramme", "results", sourceKey, "programme-wirkungsakte.json");
+  if (!fs.existsSync(sourcePath)) return null;
+  const source = JSON.parse(fs.readFileSync(sourcePath, "utf8"));
+  const counts = { positive: 0, negative: 0, ambivalent: 0, open: 0 };
+  let impactPaths = 0;
+  let risks = 0;
+  const targetCounts = new Map();
+  for (const assessment of source.commitment_assessments ?? []) {
+    impactPaths += Array.isArray(assessment.impact_potential) ? assessment.impact_potential.length : 0;
+    risks += Array.isArray(assessment.impact_risks) ? assessment.impact_risks.length : 0;
+    const mappings = [...(assessment.normative_mapping?.sdgs ?? []), ...(assessment.normative_mapping?.sdg_plus ?? [])];
+    const directions = mappings.map((entry) => normalizedDirection(entry.direction));
+    if (directions.includes("AMBIVALENT") || (directions.includes("POSITIVE_POTENTIAL") && directions.includes("NEGATIVE_RISK"))) counts.ambivalent += 1;
+    else if (directions.includes("NEGATIVE_RISK")) counts.negative += 1;
+    else if (directions.includes("POSITIVE_POTENTIAL")) counts.positive += 1;
+    else counts.open += 1;
+    for (const mapping of mappings) {
+      const direction = normalizedDirection(mapping.direction);
+      if (direction === "OPEN") continue;
+      const key = `${direction}:${targetName(mapping.id)}`;
+      targetCounts.set(key, (targetCounts.get(key) ?? 0) + 1);
+    }
+  }
+  const commitments = source.commitment_assessments?.length ?? 0;
+  const directed = counts.positive + counts.negative + counts.ambivalent;
+  const strongestTargets = [...targetCounts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 5).map(([key, count]) => {
+    const [direction, ...name] = key.split(":");
+    return { direction, name: name.join(":"), count };
+  });
+  return {
+    sourceKey,
+    commitments,
+    impactPaths,
+    risks,
+    counts,
+    directed,
+    strongestTargets,
+    resultHeadline: directed > 0
+      ? `${directed} von ${commitments} Zusagen enthalten bereits gerichtete Zielbezüge – die übrigen Richtungen bleiben offen.`
+      : `Alle ${commitments} Zusagen benötigen noch eine fachliche Richtungszuordnung.`,
+    resultTeaser: `Die vollständige Fachquelle dokumentiert ${impactPaths} mögliche Wirkpfade und ${risks} Risikohinweise. Auf Ebene der zugeordneten Nachhaltigkeits- und Schutzbereiche sind ${counts.negative} Zusagen mit negativen und ${counts.ambivalent} mit gegenläufigen Zielbezügen gekennzeichnet. Bei ${counts.open} Zusagen reicht die bisherige Analyse noch nicht für eine belastbare positive, negative oder neutrale Gesamtrichtung. Diese Zahlen sind keine Parteienwertung und werden nicht zu einem Score verrechnet.`,
+    potentialHighlights: [
+      `${impactPaths} mögliche Wirkpfade beschreiben, welche Zustände sich durch die Programmpunkte verändern könnten.`,
+      ...(counts.positive ? [`Bei ${counts.positive} Zusagen ist in der Fachquelle mindestens ein positives Zielpotenzial ausdrücklich gerichtet.`] : [])
+    ],
+    riskHighlights: [
+      `${counts.negative} Zusagen enthalten mindestens einen ausdrücklich negativen Zielbezug.`,
+      `${counts.ambivalent} Zusagen enthalten gegenläufige Zielbezüge, die nicht zu einer Durchschnittsrichtung verkürzt werden dürfen.`,
+      `${risks} dokumentierte Risikohinweise zeigen mögliche Neben-, Verteilungs-, Vollzugs- und Schutzfolgen.`
+    ],
+    conditions: [
+      `${counts.open} Zusagen bleiben in ihrer Zielrichtung offen – nicht neutral.`,
+      "Eine abschließende Richtung benötigt je Zusage einen konkret begründeten Zustandsvergleich, betroffene Gruppen, Gegenfaktum, Umsetzungsbedingungen und Evidenzgrenze.",
+      "Einzelne gerichtete SDG- oder SDG+-Bezüge ergeben noch keine positive oder negative Gesamtbewertung des Programms."
+    ]
+  };
 }
 
 const labels = {
@@ -852,11 +1032,9 @@ function markdownToArticle(markdown, sourceReferences = new Map(), options = {})
     closeParagraph();
     closeList();
     if (commitmentOpen && commitment && !commitment.directionRendered) {
-      const measure = normalizePublicText(commitment.measure || "dieser Programmpunkt");
-      const stateChange = normalizePublicText(commitment.stateChange || "Der konkrete Zielzustand, die Reichweite und die Verteilungsfolgen sind im vorliegenden Programmpunkt nicht hinreichend bestimmt.");
-      const sourceReason = normalizePublicText(commitment.reason || "");
-      const detailedReason = sourceReason || `Der Programmpunkt „${measure}“ beschreibt eine politische Absicht. Als mögliche Zustandsveränderung ist dokumentiert: ${stateChange} Ob diese Veränderung den Referenzrahmen stärkt oder schwächt, hängt jedoch von Ausgestaltung, Reichweite, betroffenen Gruppen, Gegenfaktum und Vollzug ab. Ohne diese Angaben wäre eine positive, negative oder neutrale Festlegung fachlich nicht belastbar.`;
-      html.push(`<aside class="commitment-direction commitment-direction--open" aria-label="Wirkungsökonomische Kurzeinordnung dieses Programmpunkts"><p class="commitment-direction-label">Wirkungsökonomische Kurzeinordnung · Wirkungsrichtung offen – nicht neutral</p>${commitment.measure ? `<p><strong>Programmpunkt:</strong> ${inline(commitment.measure, sourceReferences)}</p>` : ""}<p><strong>Was sich verändern könnte:</strong> ${inline(stateChange, sourceReferences)}</p><p><strong>Ausführliche Begründung:</strong> ${inline(detailedReason, sourceReferences)}</p>${commitment.risks.length ? `<p><strong>Besonders zu prüfen:</strong> ${commitment.risks.map((risk) => inline(risk, sourceReferences)).join("; ")}.</p>` : ""}</aside>`);
+      const renderedDirection = renderCommitmentDirection(commitment, sourceReferences);
+      if (Number.isInteger(commitment.directionPlaceholder)) html[commitment.directionPlaceholder] = renderedDirection;
+      else html.push(renderedDirection);
     }
     if (commitmentOpen) html.push("</section>");
     commitmentOpen = false;
@@ -884,7 +1062,7 @@ function markdownToArticle(markdown, sourceReferences = new Map(), options = {})
       } else if (((rootHeading === "material_commitments" && sourceLevel === 3) || (rootHeading === "commitment_assessments" && sourceLevel === 4) || (rootHeading === "Dokumentierte Zusagen" && [3, 4].includes(sourceLevel))) && /^Eintrag\s+\d+$/i.test(rawHeading)) {
         closeCommitment();
         commitmentOpen = true;
-        commitment = { measure: "", stateChange: "", risks: [], reason: "", directionRationale: "", directionPhase: false, directionRendered: false };
+        commitment = { measure: "", stateChange: "", stateChanges: [], risks: [], gaps: [], normativeTargets: [], pendingNormativeTarget: null, reason: "", directionRationale: "", directionPhase: false, directionRendered: false, directionPlaceholder: null };
         html.push('<section class="commitment-analysis">');
       } else if (sourceLevel <= 3) {
         closeCommitment();
@@ -895,12 +1073,19 @@ function markdownToArticle(markdown, sourceReferences = new Map(), options = {})
       const level = Math.min(Math.max(sourceLevel - 1, 2), 5);
       activeHeading = rawHeading;
       html.push(`<h${level}>${inline(labelFor(activeHeading), sourceReferences)}</h${level}>`);
+      if (commitmentOpen && commitment && commitment.directionPlaceholder === null && /^Eintrag\s+\d+$/i.test(rawHeading)) {
+        commitment.directionPlaceholder = html.length;
+        html.push("");
+      }
       continue;
     }
     const bullet = /^[-*]\s+(.+)$/.exec(line);
     if (bullet) {
       closeParagraph();
       if (!listOpen) { html.push("<ul>"); listOpen = true; }
+      if (commitment && ["missing_parameters", "data_gaps", "required_before_binding_decision"].includes(activeHeading) && commitment.gaps.length < 6) {
+        commitment.gaps.push(bullet[1]);
+      }
       const sourceId = new RegExp(`^(${publicSourceTokenPattern})$`, "i").exec(bullet[1])?.[1];
       if (sourceId && ["source_ids", "source_refs", "source_refs_used", "required_sources"].includes(activeHeading)) {
         html.push(`<li>${renderSourceReference(sourceId, sourceReferences, aliases)}</li>`);
@@ -939,9 +1124,19 @@ function markdownToArticle(markdown, sourceReferences = new Map(), options = {})
     if (commitment && field) {
       const [, key, value] = field;
       if (["decision_or_measure", "measure"].includes(key)) commitment.measure = value;
-      if (["expected_state_change", "intended_change"].includes(key) && !commitment.stateChange) commitment.stateChange = value;
+      if (["expected_state_change", "intended_change"].includes(key)) {
+        if (!commitment.stateChange) commitment.stateChange = value;
+        if (commitment.stateChanges.length < 5) commitment.stateChanges.push(value);
+      }
       if (key === "risk" && commitment.risks.length < 3) commitment.risks.push(value);
       if (key === "reason" && !commitment.reason) commitment.reason = value;
+      if (key === "id" && /^(?:SDG_\d+|SDG_PLUS_)/i.test(value)) commitment.pendingNormativeTarget = { id: value, direction: "OPEN", rationale: "" };
+      if (key === "direction" && commitment.pendingNormativeTarget) commitment.pendingNormativeTarget.direction = value;
+      if (key === "rationale" && commitment.pendingNormativeTarget) {
+        commitment.pendingNormativeTarget.rationale = value;
+        commitment.normativeTargets.push(commitment.pendingNormativeTarget);
+        commitment.pendingNormativeTarget = null;
+      }
       if (key === "policy_modeled_direction") commitment.directionPhase = true;
       if (key === "rationale" && commitment.directionPhase) commitment.directionRationale = value;
       if (key === "combined_display_direction") {
@@ -982,7 +1177,9 @@ function summaryFor(id) {
   const sourceKey = id.startsWith("sachsen-anhalt-")
     ? `ltw-2026-st-${id.slice("sachsen-anhalt-".length)}`
     : id.slice("bund-".length);
-  return publicIndex.programmes[sourceKey] ?? null;
+  const summary = publicIndex.programmes[sourceKey] ?? null;
+  const directionSummary = federalProgrammeSourceKey(id) ? federalProgrammeDirectionSummary(sourceKey) : null;
+  return summary && directionSummary ? { ...summary, ...directionSummary } : summary;
 }
 
 function resultOverview(summary) {
@@ -1055,6 +1252,14 @@ fs.rmSync(outputRoot, { recursive: true, force: true });
 fs.rmSync(integrityRoot, { recursive: true, force: true });
 fs.mkdirSync(outputRoot, { recursive: true });
 fs.mkdirSync(integrityRoot, { recursive: true });
+const federalDirectionSummaries = Object.fromEntries(programmeDocuments
+  .map(([id]) => federalProgrammeSourceKey(id))
+  .filter(Boolean)
+  .map((sourceKey) => [sourceKey, federalProgrammeDirectionSummary(sourceKey)]));
+fs.writeFileSync(
+  path.join(appRoot, "data", "fachakten", "public", "federal-direction-summary.json"),
+  `${JSON.stringify({ schemaVersion: "1.0.0", programmes: federalDirectionSummaries }, null, 2)}\n`
+);
 const integrityReports = [];
 
 const publishableReviewFields = ["decision", "ex_ante", "ex_post", "impact_paths", "impact_domains", "calculation_requirements", "risks", "non_compensable_boundaries", "counterarguments", "counterfactuals", "cross_case_links", "data_gaps", "normative_mapping", "source_completeness", "source_conflicts", "release_1_0", "public_summary"];

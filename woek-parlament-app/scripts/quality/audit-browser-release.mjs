@@ -177,12 +177,16 @@ try {
   const federalProgramme = await auditPage("/fachakten/bund-btw-2025-afd", `() => ({
     bodyText: document.body.innerText.length,
     directionFindings: document.querySelectorAll('.programme-direction').length,
+    negativeFindings: document.querySelectorAll('.programme-direction--negative').length,
+    ambivalentFindings: document.querySelectorAll('.programme-direction--ambivalent').length,
     openFindings: document.querySelectorAll('.programme-direction--open').length,
-    honestBoundary: document.body.innerText.includes('noch nicht fachlich freigegeben') && document.body.innerText.includes('offen – nicht neutral'),
+    detailedReasons: [...document.querySelectorAll('.programme-direction p')].filter((node) => node.textContent?.includes('Ausführliche Begründung')).length,
+    honestBoundary: document.body.innerText.includes('offen – nicht neutral') && document.body.innerText.includes('keine Gesamtbewertung'),
     overflow: document.documentElement.scrollWidth > window.innerWidth
   })`);
   assert(federalProgramme.bodyText > 1_500, "Federal programme page has too little visible content.");
-  assert(federalProgramme.directionFindings === 1 && federalProgramme.openFindings === 1, "Federal programme page hides its pending directional review.");
+  assert(federalProgramme.directionFindings >= 3 && federalProgramme.negativeFindings > 0 && federalProgramme.ambivalentFindings > 0 && federalProgramme.openFindings > 0, "Federal programme page hides existing negative, ambivalent or open directional findings.");
+  assert(federalProgramme.detailedReasons === federalProgramme.directionFindings, "A federal programme direction lacks its detailed rationale.");
   assert(federalProgramme.honestBoundary, "Federal programme page presents an open review as a finished impact result.");
   assert(!federalProgramme.overflow, "Federal programme page overflows horizontally at 375 px.");
   assert(federalProgramme.consoleErrors === 0, "Federal programme page emits browser errors.");
@@ -206,6 +210,25 @@ try {
   assert(!dossier.misleadingArrow, "Full dossier still contains a positive-looking arrow.");
   assert(!dossier.overflow, "Full programme dossier overflows horizontally at 375 px.");
   assert(dossier.consoleErrors === 0, "Full programme dossier emits browser errors.");
+
+  const federalDossier = await auditPage("/fachakten/dossiers/bund-coalition-2025-cdu-csu-spd.html", `() => ({
+    bodyText: document.body.innerText.length,
+    commitmentRecords: document.querySelectorAll('.commitment-analysis').length,
+    directionCallouts: document.querySelectorAll('.commitment-direction').length,
+    negativeCallouts: document.querySelectorAll('.commitment-direction--negative').length,
+    ambivalentCallouts: document.querySelectorAll('.commitment-direction--ambivalent').length,
+    openCallouts: document.querySelectorAll('.commitment-direction--open').length,
+    detailedReasons: [...document.querySelectorAll('.commitment-direction')].filter((node) => node.textContent?.includes('Ausführliche Begründung')).length,
+    hasTools: Boolean(document.querySelector('.dossier-tools input[type=search]')),
+    overflow: document.documentElement.scrollWidth > window.innerWidth
+  })`);
+  assert(federalDossier.bodyText > 10_000, "Full federal coalition dossier has too little visible content.");
+  assert(federalDossier.commitmentRecords === 347 && federalDossier.directionCallouts === 347, "Full federal coalition dossier does not render all 347 programme records with directional callouts.");
+  assert(federalDossier.negativeCallouts > 0 && federalDossier.ambivalentCallouts > 0 && federalDossier.openCallouts > 0, "Full federal coalition dossier hides existing negative, ambivalent or open directions.");
+  assert(federalDossier.detailedReasons === 347, "A federal coalition commitment lacks its detailed rationale.");
+  assert(federalDossier.hasTools, "Full federal coalition dossier has no navigation/search tools.");
+  assert(!federalDossier.overflow, "Full federal coalition dossier overflows horizontally at 375 px.");
+  assert(federalDossier.consoleErrors === 0, "Full federal coalition dossier emits browser errors.");
 
   const memberProfile = await auditPage("/abgeordnete/aaron-valent", `() => ({
     bodyText: document.body.innerText.length,
@@ -255,7 +278,7 @@ try {
   assert(!gegAnalysis.overflow, "GEG analysis overflows horizontally at 375 px.");
   assert(gegAnalysis.consoleErrors === 0, "GEG analysis emits browser errors.");
 
-  console.log(JSON.stringify({ result: "PASS", baseUrl, viewport: "375x812", index, decision, programme, programmePeers, federalProgramme, dossier, memberProfile, factionProfile, filteredFaction, gegAnalysis }));
+  console.log(JSON.stringify({ result: "PASS", baseUrl, viewport: "375x812", index, decision, programme, programmePeers, federalProgramme, dossier, federalDossier, memberProfile, factionProfile, filteredFaction, gegAnalysis }));
 } finally {
   chrome.kill("SIGTERM");
   if (chrome.exitCode === null) await Promise.race([once(chrome, "exit"), pause(1_000)]);

@@ -83,11 +83,61 @@ type ReviewShape = {
   directionalHighlights?: Array<{ direction: "POSITIVE_POTENTIAL" | "NEGATIVE_RISK" | "AMBIVALENT" | "OPEN"; title: string; summary?: string; rationale: string }>;
 };
 
+type FederalDirectionSummary = {
+  commitments: number;
+  impactPaths: number;
+  risks: number;
+  directed: number;
+  counts: { positive: number; negative: number; ambivalent: number; open: number };
+  strongestTargets: Array<{ direction: string; name: string; count: number }>;
+  resultHeadline: string;
+  resultTeaser: string;
+  potentialHighlights: string[];
+  riskHighlights: string[];
+  conditions: string[];
+};
+
+function federalDirectionalHighlights(summary: FederalDirectionSummary) {
+  const findings: NonNullable<ReviewShape["directionalHighlights"]> = [];
+  const targetsFor = (direction: string) => summary.strongestTargets.filter((item) => item.direction === direction).map((item) => `${item.name} (${item.count})`).join(", ");
+  if (summary.counts.positive) findings.push({
+    direction: "POSITIVE_POTENTIAL",
+    title: `${summary.counts.positive} Zusagen mit ausdrücklich positivem Zielpotenzial`,
+    summary: targetsFor("POSITIVE_POTENTIAL") || "Positive Zielbezüge sind in der Fachquelle ausdrücklich ausgewiesen.",
+    rationale: "Die Zahl bezeichnet Zusagen, bei denen mindestens ein zugeordneter Zielbereich bereits ausdrücklich als positives Wirkungspotenzial gekennzeichnet ist. Sie belegt weder den Eintritt der Wirkung noch eine positive Netto-Wirkung des gesamten Programms: Risiken, Verteilung, Umsetzbarkeit, Gegenfaktum und Schutzgrenzen bleiben je Zusage gesondert zu prüfen."
+  });
+  if (summary.counts.negative) findings.push({
+    direction: "NEGATIVE_RISK",
+    title: `${summary.counts.negative} Zusagen mit ausdrücklich negativem Zielbezug`,
+    summary: targetsFor("NEGATIVE_RISK") || "Negative Zielbezüge sind in der Fachquelle ausdrücklich ausgewiesen.",
+    rationale: "Die Fachquelle weist bei diesen Zusagen mindestens einen negativen Bezug zu einem Nachhaltigkeits- oder Schutzbereich aus. Gemeint ist ein fachlich begründetes Ex-ante-Risiko, nicht bereits beobachtete Wirkung und keine Gesamtbewertung des Programms. Die vollständige Fachakte zeigt je Programmpunkt, welche Zustandsänderung, Risikopfade, Betroffenen und offenen Bedingungen hinter der Zuordnung stehen."
+  });
+  if (summary.counts.ambivalent) findings.push({
+    direction: "AMBIVALENT",
+    title: `${summary.counts.ambivalent} Zusagen mit gegenläufigen Zielbezügen`,
+    summary: targetsFor("AMBIVALENT") || "Gegenläufige Zielbezüge sind in der Fachquelle ausdrücklich ausgewiesen.",
+    rationale: "Bei diesen Zusagen zeigen die zugeordneten Zielbereiche nicht in dieselbe Richtung. Positive Potenziale und negative Folgen dürfen deshalb weder zu einer Durchschnittsnote verrechnet noch durch ein einziges Farbsignal verdeckt werden. Entscheidend sind konkrete Ausgestaltung, Verteilung, Vollzug, mögliche Schutzgrenzen und die Alternative, mit der die Maßnahme verglichen wird."
+  });
+  if (summary.counts.open) findings.push({
+    direction: "OPEN",
+    title: `${summary.counts.open} Zusagen mit noch offener Gesamt-Richtung`,
+    summary: "Offen bedeutet nicht neutral: Die bisherige Fachquelle reicht noch nicht für eine belastbare positive oder negative Gesamt-Richtung.",
+    rationale: "Für diese Zusagen sind politische Absicht, mögliche Wirkpfade und Risiken dokumentiert, aber mindestens Ausgangszustand, Reichweite, betroffene Gruppen, Gegenfaktum, Finanzierung oder Vollzug bleiben unzureichend bestimmt. Eine Richtung wird deshalb nicht aus Zielworten oder Ausgabenvolumen abgeleitet. Die lange Fachakte benennt pro Programmpunkt, welche Information vor einer belastbaren Richtungszuordnung fehlt."
+  });
+  return findings;
+}
+
 export async function readProgrammeSummary(entry: FachakteDescriptor) {
-  const index = JSON.parse(await readFile(path.join(publicFachakteRoot, "index.json"), "utf8")) as { programmes: Record<string, ReviewShape>; cases: Record<string, ReviewShape> };
+  const [indexText, federalDirectionText] = await Promise.all([
+    readFile(path.join(publicFachakteRoot, "index.json"), "utf8"),
+    readFile(path.join(publicFachakteRoot, "federal-direction-summary.json"), "utf8").catch(() => '{"programmes":{}}')
+  ]);
+  const index = JSON.parse(indexText) as { programmes: Record<string, ReviewShape>; cases: Record<string, ReviewShape> };
+  const federalDirections = (JSON.parse(federalDirectionText) as { programmes?: Record<string, FederalDirectionSummary> }).programmes ?? {};
   const review = entry.caseId ? index.cases[entry.caseId] : index.programmes[entry.sourceKey];
   if (!review) return null;
   const directionReviewPending = review.directionReviewPending === true;
+  const federalDirection = federalDirections[entry.sourceKey];
   const pendingDirection = directionReviewPending ? [{
     direction: "OPEN" as const,
     title: "Fachliche Richtungszuordnung noch nicht freigegeben",
@@ -102,12 +152,12 @@ export async function readProgrammeSummary(entry: FachakteDescriptor) {
     calculations: Array.isArray(review.calculation_requirements) ? review.calculation_requirements.length : review.calculations ?? 0,
     dataGaps: Array.isArray(review.data_gaps) ? review.data_gaps.length : review.dataGaps ?? 0,
     domains: Array.isArray(review.programme_profile?.material_policy_domains) ? review.programme_profile.material_policy_domains.length : review.domains ?? 0,
-    resultHeadline: review.resultHeadline ?? (directionReviewPending ? "Quellenbestand vollständig – Wirkungsrichtungen noch nicht fachlich freigegeben." : undefined),
-    resultTeaser: review.resultTeaser ?? (directionReviewPending ? "Die Akte erschließt alle gelieferten Zusagen und mögliche Wirkpfade. Sie behauptet noch kein fertiges Wirkungsurteil: Jede Richtung muss an der konkreten Zustandsänderung und dem veröffentlichten Referenzrahmen hergeleitet werden." : undefined),
-    potentialHighlights: review.potentialHighlights ?? (directionReviewPending ? ["Mögliche Wirkpfade sind dokumentiert. Ob sie Ziele und Schutzgüter stärken oder schwächen, wird für jede Zusage getrennt geprüft."] : []),
-    riskHighlights: review.riskHighlights ?? (directionReviewPending ? ["Ein politisches Ziel, eine Ausgabe oder eine Reichweitenangabe belegt für sich weder positive Wirkung noch positive Netto-Wirkung."] : []),
-    conditions: review.conditions ?? (directionReviewPending ? ["Benötigt werden je Zusage eine freigegebene Richtungszuordnung, Baseline, Gegenfaktum, Verteilungsprüfung, Evidenzgrenze und gegebenenfalls Berechnungsdaten."] : []),
+    resultHeadline: federalDirection?.resultHeadline ?? review.resultHeadline ?? (directionReviewPending ? "Quellenbestand vollständig – Wirkungsrichtungen noch nicht fachlich freigegeben." : undefined),
+    resultTeaser: federalDirection?.resultTeaser ?? review.resultTeaser ?? (directionReviewPending ? "Die Akte erschließt alle gelieferten Zusagen und mögliche Wirkpfade. Sie behauptet noch kein fertiges Wirkungsurteil: Jede Richtung muss an der konkreten Zustandsänderung und dem veröffentlichten Referenzrahmen hergeleitet werden." : undefined),
+    potentialHighlights: federalDirection?.potentialHighlights ?? review.potentialHighlights ?? (directionReviewPending ? ["Mögliche Wirkpfade sind dokumentiert. Ob sie Ziele und Schutzgüter stärken oder schwächen, wird für jede Zusage getrennt geprüft."] : []),
+    riskHighlights: federalDirection?.riskHighlights ?? review.riskHighlights ?? (directionReviewPending ? ["Ein politisches Ziel, eine Ausgabe oder eine Reichweitenangabe belegt für sich weder positive Wirkung noch positive Netto-Wirkung."] : []),
+    conditions: federalDirection?.conditions ?? review.conditions ?? (directionReviewPending ? ["Benötigt werden je Zusage eine freigegebene Richtungszuordnung, Baseline, Gegenfaktum, Verteilungsprüfung, Evidenzgrenze und gegebenenfalls Berechnungsdaten."] : []),
     communicationNote: review.communicationNote,
-    directionalHighlights: review.directionalHighlights ?? pendingDirection
+    directionalHighlights: federalDirection ? federalDirectionalHighlights(federalDirection) : review.directionalHighlights ?? pendingDirection
   };
 }

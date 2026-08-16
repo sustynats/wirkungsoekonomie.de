@@ -96,6 +96,14 @@ main { width: min(1280px, calc(100% - 2rem)); margin: 0 auto; padding: clamp(1.7
 #dossier-content .commitment-direction { max-width: 100%; margin: 1.25rem 0; padding: 1rem 1.15rem; border-left: 6px solid #667085; background: #eef1f4; }
 #dossier-content .commitment-direction p { max-width: 78ch; }
 #dossier-content .commitment-direction-label { margin-top: 0; font-weight: 850; }
+#dossier-content .commitment-direction-section { display: grid; gap: .45rem; max-width: 82ch; margin: .85rem 0; }
+#dossier-content .commitment-direction-section > strong { color: var(--buehne); }
+#dossier-content .commitment-direction-changes { display: grid; gap: .35rem; margin: 0; padding-left: 1.2rem; }
+#dossier-content .commitment-direction-targets { display: grid; gap: .55rem; max-width: 82ch; margin: .9rem 0; }
+#dossier-content .commitment-direction-targets div { display: grid; grid-template-columns: minmax(150px, .35fr) minmax(0, 1fr); gap: .7rem; align-items: start; }
+#dossier-content .commitment-direction-targets dt { color: var(--buehne); font-weight: 800; }
+#dossier-content .commitment-direction-targets dd { display: flex; flex-wrap: wrap; gap: .35rem; margin: 0; }
+#dossier-content .commitment-direction-targets span { padding: .24rem .5rem; border: 1px solid rgb(19 33 51 / 14%); border-radius: 999px; background: rgb(255 255 255 / 70%); font-size: .82rem; font-weight: 700; line-height: 1.3; }
 #dossier-content .commitment-direction--positive { border-left-color: var(--gruen); background: #e8f3ef; }
 #dossier-content .commitment-direction--negative { border-left-color: var(--rot); background: #f6e9e7; }
 #dossier-content .commitment-direction--ambivalent { border-left-color: var(--gold); background: var(--gold-hell); }
@@ -133,6 +141,7 @@ footer p { margin: 0; }
   .dossier-result-copy h2 { font-size: 1.55rem; }
   #dossier-content { padding: .9rem; }
   #dossier-content > h2 { margin-right: -.9rem; margin-left: -.9rem; padding-right: .9rem; padding-left: .9rem; }
+  #dossier-content .commitment-direction-targets div { grid-template-columns: 1fr; gap: .25rem; }
   footer { align-items: flex-start; flex-direction: column; }
 }
 
