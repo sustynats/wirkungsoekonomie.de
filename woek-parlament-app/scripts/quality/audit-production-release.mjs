@@ -79,7 +79,11 @@ for (const [pathname, sentinels] of [
   ["/laender/sachsen-anhalt", ["2.921 Zusageeinheiten", "28 Ziele im Referenzregister", "Wahlprogramme"]],
   ["/fachanalysen/gebaeudeenergiegesetz-medienwirkung", ["Vollständige Publikationsquelle", "Quellen mit Einordnung"]],
   ["/fachanalysen/sondervermoegen-infrastruktur-klimaneutralitaet", ["Quellen mit Einordnung"]],
-  ["/abgeordnete", ["Abgeordneten", "Menschen nicht bewerten"]]
+  ["/abgeordnete", ["Wirkungsprofile", "Menschen nicht bewerten"]],
+  ["/abgeordnete/aaron-valent", ["Aaron Valent", "Dieses Profil bewertet nicht die Person", "Mensch · Planet · Demokratie"]],
+  ["/fraktionen", ["Wirkungsprofile der Fraktionen", "ohne Ranking"]],
+  ["/fraktionen/cdu-csu", ["CDU/CSU", "Zwölf entschiedene Fälle", "Mensch · Planet · Demokratie"]],
+  ["/abstimmungen/bt21-s15-a1", ["630", "444", "133"]]
 ]) {
   const page = await load(pathname);
   for (const sentinel of sentinels) if (!includesContent(page.body, sentinel)) fail(`${pathname} is missing production sentinel: ${sentinel}`);

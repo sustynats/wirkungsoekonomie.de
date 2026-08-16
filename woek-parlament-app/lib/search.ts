@@ -1,7 +1,9 @@
 import type { CaseKind, EditorialStatus, Materiality, ParliamentaryCase } from "@/data/cases";
 import type { Fachanalyse } from "@/data/fachanalysen";
+import type { FactionImpactProfile } from "@/lib/members/impact-profiles";
+import type { PublicMemberDirectoryProfile } from "@/lib/members/public-profiles";
 
-export type SearchTypeFilter = "ALL" | CaseKind | "FACHANALYSE";
+export type SearchTypeFilter = "ALL" | CaseKind | "FACHANALYSE" | "MEMBER_PROFILE" | "FACTION_PROFILE";
 export type SearchEditorialFilter = "ALL" | EditorialStatus;
 export type SearchMaterialityFilter = "ALL" | Materiality;
 export type SearchSourceFilter = "ALL" | ParliamentaryCase["statusVerification"];
@@ -44,6 +46,27 @@ export function searchFachanalysen(analyses: Fachanalyse[], filters: ParliamentS
     analysis.summary,
     ...(analysis.focusAreas ?? [])
   ].join(" ")).includes(query));
+}
+
+export function searchMemberProfiles(profiles: PublicMemberDirectoryProfile[], filters: ParliamentSearchFilters): PublicMemberDirectoryProfile[] {
+  if (filters.type !== "ALL" && filters.type !== "MEMBER_PROFILE") return [];
+  if (filters.editorial !== "ALL" || filters.materiality !== "ALL" || filters.source !== "ALL") return [];
+  const query = normalize(filters.query);
+  if (!query && filters.type !== "MEMBER_PROFILE") return [];
+  return profiles.filter((profile) => !query || normalize([
+    profile.displayName,
+    profile.parliamentaryGroup,
+    profile.federalState,
+    profile.constituency
+  ].filter(Boolean).join(" ")).includes(query));
+}
+
+export function searchFactionProfiles(profiles: Array<{ slug: string; profile: FactionImpactProfile }>, filters: ParliamentSearchFilters) {
+  if (filters.type !== "ALL" && filters.type !== "FACTION_PROFILE") return [];
+  if (filters.editorial !== "ALL" || filters.materiality !== "ALL" || filters.source !== "ALL") return [];
+  const query = normalize(filters.query);
+  if (!query && filters.type !== "FACTION_PROFILE") return [];
+  return profiles.filter(({ profile }) => !query || normalize(`${profile.faction.name} Deutscher Bundestag Fraktion Wirkungsprofil`).includes(query));
 }
 
 function searchableText(item: ParliamentaryCase): string {

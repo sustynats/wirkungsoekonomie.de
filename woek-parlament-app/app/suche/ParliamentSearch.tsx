@@ -6,7 +6,9 @@ import type { ParliamentaryCase } from "@/data/cases";
 import type { Fachanalyse } from "@/data/fachanalysen";
 import { materialityLabel } from "@/lib/cases";
 import { humanizeSystemValue } from "@/lib/presentation/labels";
-import { defaultSearchFilters, searchFachanalysen, searchPublicCases, type ParliamentSearchFilters } from "@/lib/search";
+import type { FactionImpactProfile } from "@/lib/members/impact-profiles";
+import type { PublicMemberDirectoryProfile } from "@/lib/members/public-profiles";
+import { defaultSearchFilters, searchFachanalysen, searchFactionProfiles, searchMemberProfiles, searchPublicCases, type ParliamentSearchFilters } from "@/lib/search";
 import { wirkungsraumBookmarkUrl } from "@/lib/wirkungsraum";
 
 const TYPE_LABELS: Record<ParliamentSearchFilters["type"], string> = {
@@ -15,7 +17,9 @@ const TYPE_LABELS: Record<ParliamentSearchFilters["type"], string> = {
   IMPACT_BRIEF: "Wirkungsbrief",
   FULL_CHECK: "Wirkungscheck",
   RETROSPECTIVE_CASE: "Historischer Rückblick",
-  FACHANALYSE: "WÖk-Fachanalyse"
+  FACHANALYSE: "WÖk-Fachanalyse",
+  MEMBER_PROFILE: "Wirkungsprofil eines Mitglieds",
+  FACTION_PROFILE: "Wirkungsprofil einer Fraktion"
 };
 
 const EDITORIAL_LABELS: Record<ParliamentSearchFilters["editorial"], string> = {
@@ -42,12 +46,14 @@ const SOURCE_LABELS: Record<ParliamentSearchFilters["source"], string> = {
   STATUS_UNVERIFIED: "Noch ohne veröffentlichte Fallquelle"
 };
 
-export function ParliamentSearch({ cases, analyses }: { cases: ParliamentaryCase[]; analyses: Fachanalyse[] }) {
+export function ParliamentSearch({ cases, analyses, members, factions }: { cases: ParliamentaryCase[]; analyses: Fachanalyse[]; members: PublicMemberDirectoryProfile[]; factions: Array<{ slug: string; profile: FactionImpactProfile }> }) {
   const [filters, setFilters] = useState<ParliamentSearchFilters>(defaultSearchFilters);
   const results = useMemo(() => [
     ...searchPublicCases(cases, filters).map((item) => ({ type: "CASE" as const, item })),
-    ...searchFachanalysen(analyses, filters).map((item) => ({ type: "FACHANALYSE" as const, item }))
-  ], [analyses, cases, filters]);
+    ...searchFachanalysen(analyses, filters).map((item) => ({ type: "FACHANALYSE" as const, item })),
+    ...searchMemberProfiles(members, filters).map((item) => ({ type: "MEMBER_PROFILE" as const, item })),
+    ...searchFactionProfiles(factions, filters).map((item) => ({ type: "FACTION_PROFILE" as const, item }))
+  ], [analyses, cases, factions, filters, members]);
   const update = <Key extends keyof ParliamentSearchFilters>(key: Key, value: ParliamentSearchFilters[Key]) => setFilters((current) => ({ ...current, [key]: value }));
 
   return (
@@ -76,7 +82,12 @@ export function ParliamentSearch({ cases, analyses }: { cases: ParliamentaryCase
 
       {results.length ? (
         <div className="search-result-list" aria-label="Suchtreffer">
-          {results.map((result) => result.type === "CASE" ? <CaseSearchResult item={result.item} key={result.item.slug} /> : <FachanalyseSearchResult item={result.item} key={result.item.slug} />)}
+          {results.map((result) => {
+            if (result.type === "CASE") return <CaseSearchResult item={result.item} key={`case-${result.item.slug}`} />;
+            if (result.type === "FACHANALYSE") return <FachanalyseSearchResult item={result.item} key={`analysis-${result.item.slug}`} />;
+            if (result.type === "MEMBER_PROFILE") return <MemberSearchResult item={result.item} key={`member-${result.item.slug}`} />;
+            return <FactionSearchResult slug={result.item.slug} profile={result.item.profile} key={`faction-${result.item.slug}`} />;
+          })}
         </div>
       ) : (
         <div className="notice">
@@ -86,6 +97,16 @@ export function ParliamentSearch({ cases, analyses }: { cases: ParliamentaryCase
       )}
     </>
   );
+}
+
+function MemberSearchResult({ item }: { item: PublicMemberDirectoryProfile }) {
+  const path = `/abgeordnete/${item.slug}`;
+  return <article><div><p className="eyebrow">Wirkungsprofil · Abgeordnete</p><h2><Link href={path}>{item.displayName}</Link></h2><p>{item.impactProfileAvailable ? `${item.documentedVotes} amtlich dokumentierte namentliche Entscheidung ist mit ihrem Wirkungsprofil verknüpft.` : "Für das aktuelle 28-Fälle-Set liegt noch keine passende namentliche WÖk-Abstimmung vor."}</p><dl><div><dt>Fraktion oder Gruppe</dt><dd>{item.parliamentaryGroup ?? "Nicht ausgewiesen"}</dd></div><div><dt>Datenstatus</dt><dd>{item.impactProfileAvailable ? "Wirkungsprofil vorhanden" : "Noch ohne passende Einzelstimme"}</dd></div></dl></div><div className="search-result-actions"><Link className="text-link" href={path}>Profil öffnen <span aria-hidden="true">→</span></Link></div></article>;
+}
+
+function FactionSearchResult({ slug, profile }: { slug: string; profile: FactionImpactProfile }) {
+  const path = `/fraktionen/${slug}`;
+  return <article><div><p className="eyebrow">Wirkungsprofil · Fraktion</p><h2><Link href={path}>{profile.faction.name}</Link></h2><p>{profile.scope.documented_faction_positions} dokumentierte Positionen werden mit den Wirkungsprofilen der Entscheidungen verbunden – ohne Score oder Ranking.</p><dl><div><dt>Fallset</dt><dd>{profile.scope.case_set}</dd></div><div><dt>Parlament</dt><dd>{profile.scope.parliament}</dd></div></dl></div><div className="search-result-actions"><Link className="text-link" href={path}>Fraktionsprofil öffnen <span aria-hidden="true">→</span></Link></div></article>;
 }
 
 function SelectFilter({ label, value, values, onChange }: { label: string; value: string; values: Record<string, string>; onChange: (value: string) => void }) {

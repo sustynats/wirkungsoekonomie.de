@@ -54,3 +54,11 @@ Diese Datei konkretisiert die Root-Governance fuer das Parlamentsportal. Sie dar
 - Tests pruefen alle 28 Entscheidungsseiten, alle 28 Vollakten, die 12 Vote-Layer, konkrete Schutzgrenzen, Bund-/Laender-Programme, GEG-Vollquelle und Fachanalyse-Quellen.
 - Nach Deployment folgt ein Crawl gegen die reale Produktionsdomain. HTTP 200 allein ist kein Nachweis; sichtbarer Inhalt, CSP-/Konsolenfehler, Navigation, responsive Darstellung und fachliche Sentinel-Werte werden geprueft.
 - Erst ein bestandener Produktions-Crawl schliesst den Release ab.
+
+## Wirkungsprofile fuer Fraktionen und Abgeordnete
+
+- Persoenliche Profile verwenden ausschliesslich amtliche Individualstimmen aus namentlichen Abstimmungen. Nicht namentliche Fraktionspositionen duerfen nie auf einzelne Personen uebertragen werden.
+- Fraktionsprofile duerfen dokumentierte Fraktionsvoten und amtliche Roll-call-Aggregate verwenden. `MAJORITY_YES` und `MAJORITY_NO` bedeuten niemals Einstimmigkeit.
+- Profile bewerten die unterstuetzten und abgelehnten Entscheidungsoptionen, nicht Menschen, Parteien oder Fraktionen. Scores und Rankings sind unzulaessig.
+- Nein-Stimmen werden nicht in das Gegenteil des Wirkungsprofils einer Vorlage umgerechnet.
+- Datenabdeckung, Evidenz, Richtung, Schutzgrenzen und der Abstimmungszeitpunkt bleiben sichtbar und bis zur amtlichen Quelle rueckverfolgbar.

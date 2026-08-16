@@ -157,7 +157,31 @@ try {
   assert(!dossier.overflow, "Full programme dossier overflows horizontally at 375 px.");
   assert(dossier.consoleErrors === 0, "Full programme dossier emits browser errors.");
 
-  console.log(JSON.stringify({ result: "PASS", baseUrl, viewport: "375x812", index, decision, programme, dossier }));
+  const memberProfile = await auditPage("/abgeordnete/aaron-valent", `() => ({
+    bodyText: document.body.innerText.length,
+    matrices: document.querySelectorAll('.impact-profile-matrix').length,
+    decisions: document.querySelectorAll('.profile-decision-list > article').length,
+    overflow: document.documentElement.scrollWidth > window.innerWidth
+  })`);
+  assert(memberProfile.bodyText > 2_000, "Member impact profile has too little visible content.");
+  assert(memberProfile.matrices >= 2, "Member impact profile omits its MPD matrices.");
+  assert(memberProfile.decisions >= 1, "Member impact profile omits its traceable decision.");
+  assert(!memberProfile.overflow, "Member impact profile overflows horizontally at 375 px.");
+  assert(memberProfile.consoleErrors === 0, "Member impact profile emits browser errors.");
+
+  const factionProfile = await auditPage("/fraktionen/cdu-csu", `() => ({
+    bodyText: document.body.innerText.length,
+    matrices: document.querySelectorAll('.impact-profile-matrix').length,
+    decisions: document.querySelectorAll('.profile-decision-list > article').length,
+    overflow: document.documentElement.scrollWidth > window.innerWidth
+  })`);
+  assert(factionProfile.bodyText > 5_000, "Faction impact profile has too little visible content.");
+  assert(factionProfile.matrices >= 2, "Faction impact profile omits its MPD matrices.");
+  assert(factionProfile.decisions === 12, "Faction impact profile does not expose all twelve decisions.");
+  assert(!factionProfile.overflow, "Faction impact profile overflows horizontally at 375 px.");
+  assert(factionProfile.consoleErrors === 0, "Faction impact profile emits browser errors.");
+
+  console.log(JSON.stringify({ result: "PASS", baseUrl, viewport: "375x812", index, decision, programme, dossier, memberProfile, factionProfile }));
 } finally {
   chrome.kill("SIGTERM");
   if (chrome.exitCode === null) await Promise.race([once(chrome, "exit"), pause(1_000)]);

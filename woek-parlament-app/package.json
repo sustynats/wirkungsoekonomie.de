@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "prebuild": "npm run check:accessibility",
-    "build": "node scripts/quality/check-privacy-governance.mjs && node scripts/quality/check-release-safety.mjs --scope=repository && node scripts/quality/verify-public-documents.mjs && node scripts/quality/check-public-content-completeness.mjs && node scripts/quality/verify-release-1-fachbasis.mjs && node scripts/quality/verify-release-1-1.mjs && next build && node scripts/quality/check-release-safety.mjs --scope=release && node scripts/quality/verify-public-documents.mjs && node scripts/quality/check-public-content-completeness.mjs && node scripts/quality/verify-release-1-fachbasis.mjs && node scripts/quality/verify-release-1-1.mjs",
+    "build": "node scripts/quality/check-privacy-governance.mjs && node scripts/quality/check-release-safety.mjs --scope=repository && node scripts/quality/verify-public-documents.mjs && node scripts/quality/check-public-content-completeness.mjs && node scripts/quality/verify-release-1-fachbasis.mjs && node scripts/quality/verify-release-1-1.mjs && node scripts/quality/verify-impact-profiles.mjs && next build && node scripts/quality/check-release-safety.mjs --scope=release && node scripts/quality/verify-public-documents.mjs && node scripts/quality/check-public-content-completeness.mjs && node scripts/quality/verify-release-1-fachbasis.mjs && node scripts/quality/verify-release-1-1.mjs && node scripts/quality/verify-impact-profiles.mjs",
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
@@ -38,6 +38,7 @@
     "release:audit-directions": "node scripts/generate-direction-review.mjs",
     "release:publish-fachakten": "node scripts/publish-fachakten.mjs",
     "release:verify-1.1": "node scripts/quality/verify-release-1-1.mjs",
+    "release:verify-impact-profiles": "node scripts/quality/verify-impact-profiles.mjs",
     "review:export-ex-ante-mapping": "tsx scripts/export-ex-ante-mapping-package.ts",
     "review:export-historical-evidence": "tsx scripts/export-historical-evidence-research-package.ts",
     "reviews:materialize-follow-up-tasks": "tsx scripts/materialize-review-follow-up-tasks.ts",

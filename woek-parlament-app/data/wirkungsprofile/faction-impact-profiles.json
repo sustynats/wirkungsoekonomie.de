@@ -1,0 +1,4365 @@
+[
+  {
+    "schema": "woek.parliament.faction-impact-profile.v1",
+    "faction": {
+      "name": "AfD"
+    },
+    "scope": {
+      "parliament": "Deutscher Bundestag, 21. Wahlperiode",
+      "case_set": "WÖk-Parlament 28 Fälle",
+      "voted_cases_in_case_set": 12,
+      "documented_faction_positions": 12,
+      "data_as_of": "2026-08-16"
+    },
+    "summary": {
+      "decision_relation_counts": {
+        "SUPPORTED": 4,
+        "REJECTED": 6,
+        "ABSTAINED": 2
+      },
+      "supported_decision_impact_profile": {
+        "Mensch": {
+          "decision_classification_counts": {
+            "AMBIVALENT": 4
+          },
+          "direction_incidence_counts": {
+            "POSITIVE_POTENTIAL": 4,
+            "NEGATIVE_RISK": 4,
+            "OPEN": 2
+          }
+        },
+        "Planet": {
+          "decision_classification_counts": {
+            "NOT_APPLICABLE": 3,
+            "NEGATIVE_RISK": 1
+          },
+          "direction_incidence_counts": {
+            "NOT_APPLICABLE": 3,
+            "NEGATIVE_RISK": 1
+          }
+        },
+        "Demokratie": {
+          "decision_classification_counts": {
+            "AMBIVALENT": 3,
+            "NEGATIVE_RISK": 1
+          },
+          "direction_incidence_counts": {
+            "POSITIVE_POTENTIAL": 3,
+            "NEGATIVE_RISK": 4,
+            "OPEN": 2
+          }
+        }
+      },
+      "rejected_decision_impact_profile": {
+        "Mensch": {
+          "decision_classification_counts": {
+            "AMBIVALENT": 5,
+            "POSITIVE_POTENTIAL": 1
+          },
+          "direction_incidence_counts": {
+            "POSITIVE_POTENTIAL": 6,
+            "NEGATIVE_RISK": 5,
+            "OPEN": 2
+          }
+        },
+        "Planet": {
+          "decision_classification_counts": {
+            "POSITIVE_POTENTIAL": 2,
+            "NEGATIVE_RISK": 1,
+            "AMBIVALENT": 3
+          },
+          "direction_incidence_counts": {
+            "POSITIVE_POTENTIAL": 5,
+            "OPEN": 2,
+            "NEGATIVE_RISK": 4
+          }
+        },
+        "Demokratie": {
+          "decision_classification_counts": {
+            "AMBIVALENT": 4,
+            "POSITIVE_POTENTIAL": 2
+          },
+          "direction_incidence_counts": {
+            "POSITIVE_POTENTIAL": 6,
+            "NEGATIVE_RISK": 4,
+            "OPEN": 1
+          }
+        }
+      },
+      "abstained_decision_impact_profile": {
+        "Mensch": {
+          "decision_classification_counts": {
+            "AMBIVALENT": 2
+          },
+          "direction_incidence_counts": {
+            "POSITIVE_POTENTIAL": 2,
+            "NEGATIVE_RISK": 2,
+            "OPEN": 2
+          }
+        },
+        "Planet": {
+          "decision_classification_counts": {
+            "NEGATIVE_RISK": 1,
+            "NOT_APPLICABLE": 1
+          },
+          "direction_incidence_counts": {
+            "NEGATIVE_RISK": 1,
+            "NOT_APPLICABLE": 1
+          }
+        },
+        "Demokratie": {
+          "decision_classification_counts": {
+            "NEGATIVE_RISK": 1,
+            "NOT_APPLICABLE": 1
+          },
+          "direction_incidence_counts": {
+            "NEGATIVE_RISK": 1,
+            "NOT_APPLICABLE": 1
+          }
+        }
+      },
+      "mixed_decision_impact_profile": {
+        "Mensch": {
+          "decision_classification_counts": {},
+          "direction_incidence_counts": {}
+        },
+        "Planet": {
+          "decision_classification_counts": {},
+          "direction_incidence_counts": {}
+        },
+        "Demokratie": {
+          "decision_classification_counts": {},
+          "direction_incidence_counts": {}
+        }
+      }
+    },
+    "decisions": [
+      {
+        "case_id": "1bcb54ff-f064-43a1-bf98-bd45a5a2e212",
+        "decision_object": "Gesetz zur Anpassung der Befugnis zur Datenerhebung bei Kontaktpersonen im Bundeskriminalamtgesetz",
+        "decision_date": "2025-06-26",
+        "collective_position": "YES",
+        "relation": "SUPPORTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "NEGATIVE_RISK": 2
+            },
+            "path_ids": [
+              "P1",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 3
+          },
+          "Planet": {
+            "direction": "NOT_APPLICABLE",
+            "path_direction_counts": {},
+            "path_ids": [],
+            "open_path_count": 0,
+            "material_path_count": 0
+          },
+          "Demokratie": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 2
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 4
+          }
+        },
+        "non_compensable_boundaries": [
+          "Verfassungsrechtliche Grenzen und Verhältnismäßigkeit sind nicht kompensierbare Schutzgates.",
+          "Unzulässige Eingriffe in Grundrechte dürfen nicht mit abstrakten Sicherheitsnutzen verrechnet werden."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw26-de-bundeskriminalamt-1084796",
+        "interpretation": "Die Fraktion unterstützte die konkrete Entscheidungsoption."
+      },
+      {
+        "case_id": "2c9d8b24-ce03-4784-93b7-cce23829bb68",
+        "decision_object": "Gesetz zur Änderung des Allgemeinen Eisenbahngesetzes und weiterer Gesetze zur Spezifizierung der Flächenbedarfe der Eisenbahn",
+        "decision_date": "2025-06-26",
+        "collective_position": "NO",
+        "relation": "REJECTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL_FOR_THIS_EXACT_CASE",
+        "result": "REJECTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 1,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 4
+          },
+          "Planet": {
+            "direction": "POSITIVE_POTENTIAL",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P4"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 3
+          },
+          "Demokratie": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "NEGATIVE_RISK": 1,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 3
+          }
+        },
+        "non_compensable_boundaries": [
+          "Keine pauschale Kompensation erheblicher sozialer Verdrängungs- oder Naturfolgen durch abstrakten Infrastrukturvorteil."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw26-de-eisenbahngesetz-1084790",
+        "interpretation": "Die Fraktion lehnte die konkrete Entscheidungsoption ab. Dies wird nicht als Unterstützung des exakten Gegenteils aller Wirkpfade interpretiert."
+      },
+      {
+        "case_id": "43c02ec8-e1f6-42de-93b8-8bd0731a2565",
+        "decision_object": "Gesetz für ein steuerliches Investitionssofortprogramm zur Stärkung des Wirtschaftsstandorts Deutschland",
+        "decision_date": "2025-06-26",
+        "collective_position": "ABSTAIN",
+        "relation": "ABSTAINED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 2,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4",
+              "P5"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 5
+          },
+          "Planet": {
+            "direction": "NEGATIVE_RISK",
+            "path_direction_counts": {
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P3"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 1
+          },
+          "Demokratie": {
+            "direction": "NEGATIVE_RISK",
+            "path_direction_counts": {
+              "NEGATIVE_RISK": 2
+            },
+            "path_ids": [
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 2
+          }
+        },
+        "non_compensable_boundaries": [
+          "Investitionsförderung darf schwere negative Wirkungen einzelner Investitionen nicht durch aggregiertes Wachstum rechtfertigen."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw23-de-investitionssofortprogramm-1083898",
+        "interpretation": "Die Fraktion enthielt sich. Die Entscheidung wird keiner Wirkungsrichtung zugerechnet."
+      },
+      {
+        "case_id": "64892605-37f9-4a8c-a1ab-ff5e86056693",
+        "decision_object": "Erstes Gesetz zur Änderung des GAP-Direktzahlungen-Gesetzes",
+        "decision_date": "2025-06-26",
+        "collective_position": "NO",
+        "relation": "REJECTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "POSITIVE_POTENTIAL",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P3"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 2
+          },
+          "Planet": {
+            "direction": "NEGATIVE_RISK",
+            "path_direction_counts": {
+              "NEGATIVE_RISK": 1,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P2",
+              "P3"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 2
+          },
+          "Demokratie": {
+            "direction": "POSITIVE_POTENTIAL",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1
+            },
+            "path_ids": [
+              "P1"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 1
+          }
+        },
+        "non_compensable_boundaries": [
+          "Irreversible ökologische Verluste während der Verzögerung dürfen nicht pauschal mit späterer besserer Umsetzung verrechnet werden."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw23-de-gap-1083668",
+        "interpretation": "Die Fraktion lehnte die konkrete Entscheidungsoption ab. Dies wird nicht als Unterstützung des exakten Gegenteils aller Wirkpfade interpretiert."
+      },
+      {
+        "case_id": "7b3bb327-d7a2-4c77-b46d-535be8590cb6",
+        "decision_object": "Gesetz zur Änderung des Telekommunikationsgesetzes und zur Feststellung des überragenden öffentlichen Interesses für den Ausbau von Telekommunikationsnetzen (TKG-Änderungsgesetz 2025)",
+        "decision_date": "2025-06-26",
+        "collective_position": "YES",
+        "relation": "SUPPORTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 1,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 4
+          },
+          "Planet": {
+            "direction": "NEGATIVE_RISK",
+            "path_direction_counts": {
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P3"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 1
+          },
+          "Demokratie": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 1,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 4
+          }
+        },
+        "non_compensable_boundaries": [
+          "Rechtsschutz, Eigentumsrechte und erhebliche Umweltwirkungen bleiben projektbezogene Schutzgates."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw26-de-telekommunikationsgesetz-1084808",
+        "interpretation": "Die Fraktion unterstützte die konkrete Entscheidungsoption."
+      },
+      {
+        "case_id": "94cdfef9-baca-41aa-91df-4a1dbd6b5d4e",
+        "decision_object": "Erstes Gesetz zur Änderung des Tierhaltungskennzeichnungsgesetzes",
+        "decision_date": "2025-06-26",
+        "collective_position": "NO",
+        "relation": "REJECTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 3,
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 4
+          },
+          "Planet": {
+            "direction": "POSITIVE_POTENTIAL",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1
+            },
+            "path_ids": [
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 1
+          },
+          "Demokratie": {
+            "direction": "POSITIVE_POTENTIAL",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2
+            },
+            "path_ids": [
+              "P1",
+              "P3"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 2
+          }
+        },
+        "non_compensable_boundaries": [
+          "Tierwohl darf nicht allein über Kennzeichnungscompliance bewertet werden; direkte Schutz-/Wohlfahrtsindikatoren sind erforderlich."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw23-de-tierhaltungskennzeichnung-1083666",
+        "interpretation": "Die Fraktion lehnte die konkrete Entscheidungsoption ab. Dies wird nicht als Unterstützung des exakten Gegenteils aller Wirkpfade interpretiert."
+      },
+      {
+        "case_id": "aca79efa-63fe-4eb4-a68b-6930096304f0",
+        "decision_object": "Gesetz zur Verlängerung der Fristen im Investitionsprogramm Ganztagsausbau",
+        "decision_date": "2025-06-26",
+        "collective_position": "YES",
+        "relation": "SUPPORTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 2
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 4
+          },
+          "Planet": {
+            "direction": "NOT_APPLICABLE",
+            "path_direction_counts": {},
+            "path_ids": [],
+            "open_path_count": 0,
+            "material_path_count": 0
+          },
+          "Demokratie": {
+            "direction": "NEGATIVE_RISK",
+            "path_direction_counts": {
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P3"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 1
+          }
+        },
+        "non_compensable_boundaries": [
+          "Kindeswohl, Sicherheit und Mindestqualität der Betreuung sind nicht durch zusätzliche Platzanzahl kompensierbar."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw26-de-ganztagsausbau-1084804",
+        "interpretation": "Die Fraktion unterstützte die konkrete Entscheidungsoption."
+      },
+      {
+        "case_id": "6a88c960-c7e9-400c-84bb-aa52039b62e7",
+        "decision_object": "Gesetz zur Aussetzung des Familiennachzugs zu subsidiär Schutzberechtigten",
+        "decision_date": "2025-06-27",
+        "collective_position": "MAJORITY_YES",
+        "relation": "SUPPORTED",
+        "evidence_type": "OFFICIAL_ROLL_CALL_AGGREGATE",
+        "roll_call": "ROLL_CALL_OFFICIAL",
+        "result": "ADOPTED",
+        "members": 151,
+        "yes": 125,
+        "no": 0,
+        "abstention": 0,
+        "did_not_vote": 26,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "NEGATIVE_RISK": 2,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 4
+          },
+          "Planet": {
+            "direction": "NOT_APPLICABLE",
+            "path_direction_counts": {},
+            "path_ids": [],
+            "open_path_count": 0,
+            "material_path_count": 0
+          },
+          "Demokratie": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "NEGATIVE_RISK": 1,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 3
+          }
+        },
+        "non_compensable_boundaries": [
+          "Grund- und Menschenrechte sowie Kindeswohl sind nicht kompensierbare Schutzgates und müssen fallbezogen geprüft werden."
+        ],
+        "source_url": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=957",
+        "interpretation": "Die Fraktion unterstützte die konkrete Entscheidungsoption."
+      },
+      {
+        "case_id": "05454260-5f17-4ba0-b3df-5c32a4cf36db",
+        "decision_object": "Gesetz zur Umsetzung von Vorgaben der Richtlinie (EU) 2023/2413 für Zulassungsverfahren nach dem Bundes-Immissionsschutzgesetz und dem Wasserhaushaltsgesetz sowie für Planverfahren nach dem Baugesetzbuch und dem Raumordnungsgesetz, zur Änderung des Bundeswasserstraßengesetzes und zur Änderung des Windenergieflächenbedarfsgesetzes",
+        "decision_date": "2025-07-10",
+        "collective_position": "NO",
+        "relation": "REJECTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 3
+          },
+          "Planet": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 3,
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 4
+          },
+          "Demokratie": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P2",
+              "P3"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 2
+          }
+        },
+        "non_compensable_boundaries": [
+          "Irreversible erhebliche Natur- oder Wasserschäden dürfen nicht durch Klimanutzen verrechnet werden.",
+          "Gesetzlich gebotener Rechtsschutz und Verfahrensrechte sind Schutzgrenzen."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw28-de-bundesimmissionsschutzgesetz-1097376",
+        "interpretation": "Die Fraktion lehnte die konkrete Entscheidungsoption ab. Dies wird nicht als Unterstützung des exakten Gegenteils aller Wirkpfade interpretiert."
+      },
+      {
+        "case_id": "14867d53-4b63-49d0-9889-73fc60d41a5d",
+        "decision_object": "Gesetz zur Errichtung eines Sondervermögens Infrastruktur und Klimaneutralität (SVIKG)",
+        "decision_date": "2025-09-18",
+        "collective_position": "NO",
+        "relation": "REJECTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 2
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 4
+          },
+          "Planet": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "NEGATIVE_RISK": 2
+            },
+            "path_ids": [
+              "P1",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 3
+          },
+          "Demokratie": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 3,
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P5"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 4
+          }
+        },
+        "non_compensable_boundaries": [
+          "Schwere nicht-kompensierbare Natur-, Gesundheits- oder Grundrechtswirkungen müssen projektbezogen ausschließen oder neu planen lassen.",
+          "Klimaneutralitätslabel darf nicht zur Kompensation negativer Wirkungen anderer Projekte dienen."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw38-de-haushaltsgesetz-2025-zweite-lesung-1104012",
+        "interpretation": "Die Fraktion lehnte die konkrete Entscheidungsoption ab. Dies wird nicht als Unterstützung des exakten Gegenteils aller Wirkpfade interpretiert."
+      },
+      {
+        "case_id": "47ca9029-a749-4f79-a4e6-8e33f08082cd",
+        "decision_object": "Gesetz zur Finanzierung von Infrastrukturinvestitionen von Ländern und Kommunen (Länder-und-Kommunal-Infrastrukturfinanzierungsgesetz - LuKIFG)",
+        "decision_date": "2025-10-09",
+        "collective_position": "NO",
+        "relation": "REJECTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "NEGATIVE_RISK": 2
+            },
+            "path_ids": [
+              "P1",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 3
+          },
+          "Planet": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P1",
+              "P3"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 2
+          },
+          "Demokratie": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 2
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 4
+          }
+        },
+        "non_compensable_boundaries": [
+          "Projektbezogene Schutzgates für Klima/Natur/Gesundheit/Grundrechte bleiben trotz Förderfähigkeit erforderlich."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw41-de-infrastrukturfinanzierung-1111766",
+        "interpretation": "Die Fraktion lehnte die konkrete Entscheidungsoption ab. Dies wird nicht als Unterstützung des exakten Gegenteils aller Wirkpfade interpretiert."
+      },
+      {
+        "case_id": "79146c82-e8d0-467a-929e-142c72d9d6cd",
+        "decision_object": "Gesetz über die Einführung einer bundeseinheitlichen Pflegefachassistenzausbildung und zur Änderung weiterer Gesetze",
+        "decision_date": "2025-10-09",
+        "collective_position": "ABSTAIN",
+        "relation": "ABSTAINED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 3,
+              "NEGATIVE_RISK": 1,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4",
+              "P5"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 5
+          },
+          "Planet": {
+            "direction": "NOT_APPLICABLE",
+            "path_direction_counts": {},
+            "path_ids": [],
+            "open_path_count": 0,
+            "material_path_count": 0
+          },
+          "Demokratie": {
+            "direction": "NOT_APPLICABLE",
+            "path_direction_counts": {},
+            "path_ids": [],
+            "open_path_count": 0,
+            "material_path_count": 0
+          }
+        },
+        "non_compensable_boundaries": [
+          "Patientensicherheit und fachlich erforderliche Kompetenzgrenzen sind nicht kompensierbar."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw41-de-pflegefachassistenz-1111790",
+        "interpretation": "Die Fraktion enthielt sich. Die Entscheidung wird keiner Wirkungsrichtung zugerechnet."
+      }
+    ],
+    "profile_meaning": "Zusammengefasstes Wirkungsprofil der parlamentarisch unterstützten, abgelehnten oder mit Enthaltung beantworteten Entscheidungsoptionen. Keine Bewertung des Werts der Partei, Fraktion oder ihrer Mitglieder.",
+    "no_faction_score": true,
+    "no_ranking": true,
+    "no_individual_vote_inference": true
+  },
+  {
+    "schema": "woek.parliament.faction-impact-profile.v1",
+    "faction": {
+      "name": "CDU/CSU"
+    },
+    "scope": {
+      "parliament": "Deutscher Bundestag, 21. Wahlperiode",
+      "case_set": "WÖk-Parlament 28 Fälle",
+      "voted_cases_in_case_set": 12,
+      "documented_faction_positions": 12,
+      "data_as_of": "2026-08-16"
+    },
+    "summary": {
+      "decision_relation_counts": {
+        "SUPPORTED": 11,
+        "REJECTED": 1
+      },
+      "supported_decision_impact_profile": {
+        "Mensch": {
+          "decision_classification_counts": {
+            "AMBIVALENT": 10,
+            "POSITIVE_POTENTIAL": 1
+          },
+          "direction_incidence_counts": {
+            "POSITIVE_POTENTIAL": 11,
+            "NEGATIVE_RISK": 10,
+            "OPEN": 5
+          }
+        },
+        "Planet": {
+          "decision_classification_counts": {
+            "NOT_APPLICABLE": 4,
+            "NEGATIVE_RISK": 3,
+            "POSITIVE_POTENTIAL": 1,
+            "AMBIVALENT": 3
+          },
+          "direction_incidence_counts": {
+            "NOT_APPLICABLE": 4,
+            "NEGATIVE_RISK": 6,
+            "OPEN": 1,
+            "POSITIVE_POTENTIAL": 4
+          }
+        },
+        "Demokratie": {
+          "decision_classification_counts": {
+            "AMBIVALENT": 6,
+            "NEGATIVE_RISK": 2,
+            "POSITIVE_POTENTIAL": 2,
+            "NOT_APPLICABLE": 1
+          },
+          "direction_incidence_counts": {
+            "POSITIVE_POTENTIAL": 8,
+            "NEGATIVE_RISK": 8,
+            "OPEN": 2,
+            "NOT_APPLICABLE": 1
+          }
+        }
+      },
+      "rejected_decision_impact_profile": {
+        "Mensch": {
+          "decision_classification_counts": {
+            "AMBIVALENT": 1
+          },
+          "direction_incidence_counts": {
+            "POSITIVE_POTENTIAL": 1,
+            "NEGATIVE_RISK": 1,
+            "OPEN": 1
+          }
+        },
+        "Planet": {
+          "decision_classification_counts": {
+            "POSITIVE_POTENTIAL": 1
+          },
+          "direction_incidence_counts": {
+            "POSITIVE_POTENTIAL": 1,
+            "OPEN": 1
+          }
+        },
+        "Demokratie": {
+          "decision_classification_counts": {
+            "AMBIVALENT": 1
+          },
+          "direction_incidence_counts": {
+            "POSITIVE_POTENTIAL": 1,
+            "NEGATIVE_RISK": 1,
+            "OPEN": 1
+          }
+        }
+      },
+      "abstained_decision_impact_profile": {
+        "Mensch": {
+          "decision_classification_counts": {},
+          "direction_incidence_counts": {}
+        },
+        "Planet": {
+          "decision_classification_counts": {},
+          "direction_incidence_counts": {}
+        },
+        "Demokratie": {
+          "decision_classification_counts": {},
+          "direction_incidence_counts": {}
+        }
+      },
+      "mixed_decision_impact_profile": {
+        "Mensch": {
+          "decision_classification_counts": {},
+          "direction_incidence_counts": {}
+        },
+        "Planet": {
+          "decision_classification_counts": {},
+          "direction_incidence_counts": {}
+        },
+        "Demokratie": {
+          "decision_classification_counts": {},
+          "direction_incidence_counts": {}
+        }
+      }
+    },
+    "decisions": [
+      {
+        "case_id": "1bcb54ff-f064-43a1-bf98-bd45a5a2e212",
+        "decision_object": "Gesetz zur Anpassung der Befugnis zur Datenerhebung bei Kontaktpersonen im Bundeskriminalamtgesetz",
+        "decision_date": "2025-06-26",
+        "collective_position": "YES",
+        "relation": "SUPPORTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "NEGATIVE_RISK": 2
+            },
+            "path_ids": [
+              "P1",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 3
+          },
+          "Planet": {
+            "direction": "NOT_APPLICABLE",
+            "path_direction_counts": {},
+            "path_ids": [],
+            "open_path_count": 0,
+            "material_path_count": 0
+          },
+          "Demokratie": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 2
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 4
+          }
+        },
+        "non_compensable_boundaries": [
+          "Verfassungsrechtliche Grenzen und Verhältnismäßigkeit sind nicht kompensierbare Schutzgates.",
+          "Unzulässige Eingriffe in Grundrechte dürfen nicht mit abstrakten Sicherheitsnutzen verrechnet werden."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw26-de-bundeskriminalamt-1084796",
+        "interpretation": "Die Fraktion unterstützte die konkrete Entscheidungsoption."
+      },
+      {
+        "case_id": "2c9d8b24-ce03-4784-93b7-cce23829bb68",
+        "decision_object": "Gesetz zur Änderung des Allgemeinen Eisenbahngesetzes und weiterer Gesetze zur Spezifizierung der Flächenbedarfe der Eisenbahn",
+        "decision_date": "2025-06-26",
+        "collective_position": "NO",
+        "relation": "REJECTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL_FOR_THIS_EXACT_CASE",
+        "result": "REJECTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 1,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 4
+          },
+          "Planet": {
+            "direction": "POSITIVE_POTENTIAL",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P4"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 3
+          },
+          "Demokratie": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "NEGATIVE_RISK": 1,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 3
+          }
+        },
+        "non_compensable_boundaries": [
+          "Keine pauschale Kompensation erheblicher sozialer Verdrängungs- oder Naturfolgen durch abstrakten Infrastrukturvorteil."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw26-de-eisenbahngesetz-1084790",
+        "interpretation": "Die Fraktion lehnte die konkrete Entscheidungsoption ab. Dies wird nicht als Unterstützung des exakten Gegenteils aller Wirkpfade interpretiert."
+      },
+      {
+        "case_id": "43c02ec8-e1f6-42de-93b8-8bd0731a2565",
+        "decision_object": "Gesetz für ein steuerliches Investitionssofortprogramm zur Stärkung des Wirtschaftsstandorts Deutschland",
+        "decision_date": "2025-06-26",
+        "collective_position": "YES",
+        "relation": "SUPPORTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 2,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4",
+              "P5"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 5
+          },
+          "Planet": {
+            "direction": "NEGATIVE_RISK",
+            "path_direction_counts": {
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P3"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 1
+          },
+          "Demokratie": {
+            "direction": "NEGATIVE_RISK",
+            "path_direction_counts": {
+              "NEGATIVE_RISK": 2
+            },
+            "path_ids": [
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 2
+          }
+        },
+        "non_compensable_boundaries": [
+          "Investitionsförderung darf schwere negative Wirkungen einzelner Investitionen nicht durch aggregiertes Wachstum rechtfertigen."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw23-de-investitionssofortprogramm-1083898",
+        "interpretation": "Die Fraktion unterstützte die konkrete Entscheidungsoption."
+      },
+      {
+        "case_id": "64892605-37f9-4a8c-a1ab-ff5e86056693",
+        "decision_object": "Erstes Gesetz zur Änderung des GAP-Direktzahlungen-Gesetzes",
+        "decision_date": "2025-06-26",
+        "collective_position": "YES",
+        "relation": "SUPPORTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "POSITIVE_POTENTIAL",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P3"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 2
+          },
+          "Planet": {
+            "direction": "NEGATIVE_RISK",
+            "path_direction_counts": {
+              "NEGATIVE_RISK": 1,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P2",
+              "P3"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 2
+          },
+          "Demokratie": {
+            "direction": "POSITIVE_POTENTIAL",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1
+            },
+            "path_ids": [
+              "P1"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 1
+          }
+        },
+        "non_compensable_boundaries": [
+          "Irreversible ökologische Verluste während der Verzögerung dürfen nicht pauschal mit späterer besserer Umsetzung verrechnet werden."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw23-de-gap-1083668",
+        "interpretation": "Die Fraktion unterstützte die konkrete Entscheidungsoption."
+      },
+      {
+        "case_id": "7b3bb327-d7a2-4c77-b46d-535be8590cb6",
+        "decision_object": "Gesetz zur Änderung des Telekommunikationsgesetzes und zur Feststellung des überragenden öffentlichen Interesses für den Ausbau von Telekommunikationsnetzen (TKG-Änderungsgesetz 2025)",
+        "decision_date": "2025-06-26",
+        "collective_position": "YES",
+        "relation": "SUPPORTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 1,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 4
+          },
+          "Planet": {
+            "direction": "NEGATIVE_RISK",
+            "path_direction_counts": {
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P3"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 1
+          },
+          "Demokratie": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 1,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 4
+          }
+        },
+        "non_compensable_boundaries": [
+          "Rechtsschutz, Eigentumsrechte und erhebliche Umweltwirkungen bleiben projektbezogene Schutzgates."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw26-de-telekommunikationsgesetz-1084808",
+        "interpretation": "Die Fraktion unterstützte die konkrete Entscheidungsoption."
+      },
+      {
+        "case_id": "94cdfef9-baca-41aa-91df-4a1dbd6b5d4e",
+        "decision_object": "Erstes Gesetz zur Änderung des Tierhaltungskennzeichnungsgesetzes",
+        "decision_date": "2025-06-26",
+        "collective_position": "YES",
+        "relation": "SUPPORTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 3,
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 4
+          },
+          "Planet": {
+            "direction": "POSITIVE_POTENTIAL",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1
+            },
+            "path_ids": [
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 1
+          },
+          "Demokratie": {
+            "direction": "POSITIVE_POTENTIAL",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2
+            },
+            "path_ids": [
+              "P1",
+              "P3"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 2
+          }
+        },
+        "non_compensable_boundaries": [
+          "Tierwohl darf nicht allein über Kennzeichnungscompliance bewertet werden; direkte Schutz-/Wohlfahrtsindikatoren sind erforderlich."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw23-de-tierhaltungskennzeichnung-1083666",
+        "interpretation": "Die Fraktion unterstützte die konkrete Entscheidungsoption."
+      },
+      {
+        "case_id": "aca79efa-63fe-4eb4-a68b-6930096304f0",
+        "decision_object": "Gesetz zur Verlängerung der Fristen im Investitionsprogramm Ganztagsausbau",
+        "decision_date": "2025-06-26",
+        "collective_position": "YES",
+        "relation": "SUPPORTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 2
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 4
+          },
+          "Planet": {
+            "direction": "NOT_APPLICABLE",
+            "path_direction_counts": {},
+            "path_ids": [],
+            "open_path_count": 0,
+            "material_path_count": 0
+          },
+          "Demokratie": {
+            "direction": "NEGATIVE_RISK",
+            "path_direction_counts": {
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P3"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 1
+          }
+        },
+        "non_compensable_boundaries": [
+          "Kindeswohl, Sicherheit und Mindestqualität der Betreuung sind nicht durch zusätzliche Platzanzahl kompensierbar."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw26-de-ganztagsausbau-1084804",
+        "interpretation": "Die Fraktion unterstützte die konkrete Entscheidungsoption."
+      },
+      {
+        "case_id": "6a88c960-c7e9-400c-84bb-aa52039b62e7",
+        "decision_object": "Gesetz zur Aussetzung des Familiennachzugs zu subsidiär Schutzberechtigten",
+        "decision_date": "2025-06-27",
+        "collective_position": "MAJORITY_YES",
+        "relation": "SUPPORTED",
+        "evidence_type": "OFFICIAL_ROLL_CALL_AGGREGATE",
+        "roll_call": "ROLL_CALL_OFFICIAL",
+        "result": "ADOPTED",
+        "members": 208,
+        "yes": 202,
+        "no": 0,
+        "abstention": 0,
+        "did_not_vote": 6,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "NEGATIVE_RISK": 2,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 4
+          },
+          "Planet": {
+            "direction": "NOT_APPLICABLE",
+            "path_direction_counts": {},
+            "path_ids": [],
+            "open_path_count": 0,
+            "material_path_count": 0
+          },
+          "Demokratie": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "NEGATIVE_RISK": 1,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 3
+          }
+        },
+        "non_compensable_boundaries": [
+          "Grund- und Menschenrechte sowie Kindeswohl sind nicht kompensierbare Schutzgates und müssen fallbezogen geprüft werden."
+        ],
+        "source_url": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=957",
+        "interpretation": "Die Fraktion unterstützte die konkrete Entscheidungsoption."
+      },
+      {
+        "case_id": "05454260-5f17-4ba0-b3df-5c32a4cf36db",
+        "decision_object": "Gesetz zur Umsetzung von Vorgaben der Richtlinie (EU) 2023/2413 für Zulassungsverfahren nach dem Bundes-Immissionsschutzgesetz und dem Wasserhaushaltsgesetz sowie für Planverfahren nach dem Baugesetzbuch und dem Raumordnungsgesetz, zur Änderung des Bundeswasserstraßengesetzes und zur Änderung des Windenergieflächenbedarfsgesetzes",
+        "decision_date": "2025-07-10",
+        "collective_position": "YES",
+        "relation": "SUPPORTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 3
+          },
+          "Planet": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 3,
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 4
+          },
+          "Demokratie": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P2",
+              "P3"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 2
+          }
+        },
+        "non_compensable_boundaries": [
+          "Irreversible erhebliche Natur- oder Wasserschäden dürfen nicht durch Klimanutzen verrechnet werden.",
+          "Gesetzlich gebotener Rechtsschutz und Verfahrensrechte sind Schutzgrenzen."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw28-de-bundesimmissionsschutzgesetz-1097376",
+        "interpretation": "Die Fraktion unterstützte die konkrete Entscheidungsoption."
+      },
+      {
+        "case_id": "14867d53-4b63-49d0-9889-73fc60d41a5d",
+        "decision_object": "Gesetz zur Errichtung eines Sondervermögens Infrastruktur und Klimaneutralität (SVIKG)",
+        "decision_date": "2025-09-18",
+        "collective_position": "YES",
+        "relation": "SUPPORTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 2
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 4
+          },
+          "Planet": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "NEGATIVE_RISK": 2
+            },
+            "path_ids": [
+              "P1",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 3
+          },
+          "Demokratie": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 3,
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P5"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 4
+          }
+        },
+        "non_compensable_boundaries": [
+          "Schwere nicht-kompensierbare Natur-, Gesundheits- oder Grundrechtswirkungen müssen projektbezogen ausschließen oder neu planen lassen.",
+          "Klimaneutralitätslabel darf nicht zur Kompensation negativer Wirkungen anderer Projekte dienen."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw38-de-haushaltsgesetz-2025-zweite-lesung-1104012",
+        "interpretation": "Die Fraktion unterstützte die konkrete Entscheidungsoption."
+      },
+      {
+        "case_id": "47ca9029-a749-4f79-a4e6-8e33f08082cd",
+        "decision_object": "Gesetz zur Finanzierung von Infrastrukturinvestitionen von Ländern und Kommunen (Länder-und-Kommunal-Infrastrukturfinanzierungsgesetz - LuKIFG)",
+        "decision_date": "2025-10-09",
+        "collective_position": "YES",
+        "relation": "SUPPORTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "NEGATIVE_RISK": 2
+            },
+            "path_ids": [
+              "P1",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 3
+          },
+          "Planet": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P1",
+              "P3"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 2
+          },
+          "Demokratie": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 2
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 4
+          }
+        },
+        "non_compensable_boundaries": [
+          "Projektbezogene Schutzgates für Klima/Natur/Gesundheit/Grundrechte bleiben trotz Förderfähigkeit erforderlich."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw41-de-infrastrukturfinanzierung-1111766",
+        "interpretation": "Die Fraktion unterstützte die konkrete Entscheidungsoption."
+      },
+      {
+        "case_id": "79146c82-e8d0-467a-929e-142c72d9d6cd",
+        "decision_object": "Gesetz über die Einführung einer bundeseinheitlichen Pflegefachassistenzausbildung und zur Änderung weiterer Gesetze",
+        "decision_date": "2025-10-09",
+        "collective_position": "YES",
+        "relation": "SUPPORTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 3,
+              "NEGATIVE_RISK": 1,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4",
+              "P5"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 5
+          },
+          "Planet": {
+            "direction": "NOT_APPLICABLE",
+            "path_direction_counts": {},
+            "path_ids": [],
+            "open_path_count": 0,
+            "material_path_count": 0
+          },
+          "Demokratie": {
+            "direction": "NOT_APPLICABLE",
+            "path_direction_counts": {},
+            "path_ids": [],
+            "open_path_count": 0,
+            "material_path_count": 0
+          }
+        },
+        "non_compensable_boundaries": [
+          "Patientensicherheit und fachlich erforderliche Kompetenzgrenzen sind nicht kompensierbar."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw41-de-pflegefachassistenz-1111790",
+        "interpretation": "Die Fraktion unterstützte die konkrete Entscheidungsoption."
+      }
+    ],
+    "profile_meaning": "Zusammengefasstes Wirkungsprofil der parlamentarisch unterstützten, abgelehnten oder mit Enthaltung beantworteten Entscheidungsoptionen. Keine Bewertung des Werts der Partei, Fraktion oder ihrer Mitglieder.",
+    "no_faction_score": true,
+    "no_ranking": true,
+    "no_individual_vote_inference": true
+  },
+  {
+    "schema": "woek.parliament.faction-impact-profile.v1",
+    "faction": {
+      "name": "B90/Grüne"
+    },
+    "scope": {
+      "parliament": "Deutscher Bundestag, 21. Wahlperiode",
+      "case_set": "WÖk-Parlament 28 Fälle",
+      "voted_cases_in_case_set": 12,
+      "documented_faction_positions": 12,
+      "data_as_of": "2026-08-16"
+    },
+    "summary": {
+      "decision_relation_counts": {
+        "REJECTED": 7,
+        "SUPPORTED": 3,
+        "ABSTAINED": 2
+      },
+      "supported_decision_impact_profile": {
+        "Mensch": {
+          "decision_classification_counts": {
+            "AMBIVALENT": 3
+          },
+          "direction_incidence_counts": {
+            "POSITIVE_POTENTIAL": 3,
+            "NEGATIVE_RISK": 3,
+            "OPEN": 1
+          }
+        },
+        "Planet": {
+          "decision_classification_counts": {
+            "POSITIVE_POTENTIAL": 1,
+            "NOT_APPLICABLE": 1,
+            "AMBIVALENT": 1
+          },
+          "direction_incidence_counts": {
+            "POSITIVE_POTENTIAL": 2,
+            "OPEN": 1,
+            "NOT_APPLICABLE": 1,
+            "NEGATIVE_RISK": 1
+          }
+        },
+        "Demokratie": {
+          "decision_classification_counts": {
+            "AMBIVALENT": 2,
+            "NEGATIVE_RISK": 1
+          },
+          "direction_incidence_counts": {
+            "POSITIVE_POTENTIAL": 2,
+            "NEGATIVE_RISK": 3,
+            "OPEN": 1
+          }
+        }
+      },
+      "rejected_decision_impact_profile": {
+        "Mensch": {
+          "decision_classification_counts": {
+            "AMBIVALENT": 6,
+            "POSITIVE_POTENTIAL": 1
+          },
+          "direction_incidence_counts": {
+            "POSITIVE_POTENTIAL": 7,
+            "NEGATIVE_RISK": 6,
+            "OPEN": 3
+          }
+        },
+        "Planet": {
+          "decision_classification_counts": {
+            "NOT_APPLICABLE": 2,
+            "NEGATIVE_RISK": 2,
+            "POSITIVE_POTENTIAL": 1,
+            "AMBIVALENT": 2
+          },
+          "direction_incidence_counts": {
+            "NOT_APPLICABLE": 2,
+            "NEGATIVE_RISK": 4,
+            "OPEN": 1,
+            "POSITIVE_POTENTIAL": 3
+          }
+        },
+        "Demokratie": {
+          "decision_classification_counts": {
+            "AMBIVALENT": 4,
+            "NEGATIVE_RISK": 1,
+            "POSITIVE_POTENTIAL": 2
+          },
+          "direction_incidence_counts": {
+            "POSITIVE_POTENTIAL": 6,
+            "NEGATIVE_RISK": 5,
+            "OPEN": 1
+          }
+        }
+      },
+      "abstained_decision_impact_profile": {
+        "Mensch": {
+          "decision_classification_counts": {
+            "AMBIVALENT": 2
+          },
+          "direction_incidence_counts": {
+            "POSITIVE_POTENTIAL": 2,
+            "NEGATIVE_RISK": 2,
+            "OPEN": 2
+          }
+        },
+        "Planet": {
+          "decision_classification_counts": {
+            "NEGATIVE_RISK": 1,
+            "NOT_APPLICABLE": 1
+          },
+          "direction_incidence_counts": {
+            "NEGATIVE_RISK": 1,
+            "NOT_APPLICABLE": 1
+          }
+        },
+        "Demokratie": {
+          "decision_classification_counts": {
+            "AMBIVALENT": 1,
+            "NOT_APPLICABLE": 1
+          },
+          "direction_incidence_counts": {
+            "POSITIVE_POTENTIAL": 1,
+            "NEGATIVE_RISK": 1,
+            "OPEN": 1,
+            "NOT_APPLICABLE": 1
+          }
+        }
+      },
+      "mixed_decision_impact_profile": {
+        "Mensch": {
+          "decision_classification_counts": {},
+          "direction_incidence_counts": {}
+        },
+        "Planet": {
+          "decision_classification_counts": {},
+          "direction_incidence_counts": {}
+        },
+        "Demokratie": {
+          "decision_classification_counts": {},
+          "direction_incidence_counts": {}
+        }
+      }
+    },
+    "decisions": [
+      {
+        "case_id": "1bcb54ff-f064-43a1-bf98-bd45a5a2e212",
+        "decision_object": "Gesetz zur Anpassung der Befugnis zur Datenerhebung bei Kontaktpersonen im Bundeskriminalamtgesetz",
+        "decision_date": "2025-06-26",
+        "collective_position": "NO",
+        "relation": "REJECTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "NEGATIVE_RISK": 2
+            },
+            "path_ids": [
+              "P1",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 3
+          },
+          "Planet": {
+            "direction": "NOT_APPLICABLE",
+            "path_direction_counts": {},
+            "path_ids": [],
+            "open_path_count": 0,
+            "material_path_count": 0
+          },
+          "Demokratie": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 2
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 4
+          }
+        },
+        "non_compensable_boundaries": [
+          "Verfassungsrechtliche Grenzen und Verhältnismäßigkeit sind nicht kompensierbare Schutzgates.",
+          "Unzulässige Eingriffe in Grundrechte dürfen nicht mit abstrakten Sicherheitsnutzen verrechnet werden."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw26-de-bundeskriminalamt-1084796",
+        "interpretation": "Die Fraktion lehnte die konkrete Entscheidungsoption ab. Dies wird nicht als Unterstützung des exakten Gegenteils aller Wirkpfade interpretiert."
+      },
+      {
+        "case_id": "2c9d8b24-ce03-4784-93b7-cce23829bb68",
+        "decision_object": "Gesetz zur Änderung des Allgemeinen Eisenbahngesetzes und weiterer Gesetze zur Spezifizierung der Flächenbedarfe der Eisenbahn",
+        "decision_date": "2025-06-26",
+        "collective_position": "YES",
+        "relation": "SUPPORTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL_FOR_THIS_EXACT_CASE",
+        "result": "REJECTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 1,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 4
+          },
+          "Planet": {
+            "direction": "POSITIVE_POTENTIAL",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P4"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 3
+          },
+          "Demokratie": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "NEGATIVE_RISK": 1,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 3
+          }
+        },
+        "non_compensable_boundaries": [
+          "Keine pauschale Kompensation erheblicher sozialer Verdrängungs- oder Naturfolgen durch abstrakten Infrastrukturvorteil."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw26-de-eisenbahngesetz-1084790",
+        "interpretation": "Die Fraktion unterstützte die konkrete Entscheidungsoption."
+      },
+      {
+        "case_id": "43c02ec8-e1f6-42de-93b8-8bd0731a2565",
+        "decision_object": "Gesetz für ein steuerliches Investitionssofortprogramm zur Stärkung des Wirtschaftsstandorts Deutschland",
+        "decision_date": "2025-06-26",
+        "collective_position": "NO",
+        "relation": "REJECTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 2,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4",
+              "P5"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 5
+          },
+          "Planet": {
+            "direction": "NEGATIVE_RISK",
+            "path_direction_counts": {
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P3"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 1
+          },
+          "Demokratie": {
+            "direction": "NEGATIVE_RISK",
+            "path_direction_counts": {
+              "NEGATIVE_RISK": 2
+            },
+            "path_ids": [
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 2
+          }
+        },
+        "non_compensable_boundaries": [
+          "Investitionsförderung darf schwere negative Wirkungen einzelner Investitionen nicht durch aggregiertes Wachstum rechtfertigen."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw23-de-investitionssofortprogramm-1083898",
+        "interpretation": "Die Fraktion lehnte die konkrete Entscheidungsoption ab. Dies wird nicht als Unterstützung des exakten Gegenteils aller Wirkpfade interpretiert."
+      },
+      {
+        "case_id": "64892605-37f9-4a8c-a1ab-ff5e86056693",
+        "decision_object": "Erstes Gesetz zur Änderung des GAP-Direktzahlungen-Gesetzes",
+        "decision_date": "2025-06-26",
+        "collective_position": "NO",
+        "relation": "REJECTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "POSITIVE_POTENTIAL",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P3"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 2
+          },
+          "Planet": {
+            "direction": "NEGATIVE_RISK",
+            "path_direction_counts": {
+              "NEGATIVE_RISK": 1,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P2",
+              "P3"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 2
+          },
+          "Demokratie": {
+            "direction": "POSITIVE_POTENTIAL",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1
+            },
+            "path_ids": [
+              "P1"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 1
+          }
+        },
+        "non_compensable_boundaries": [
+          "Irreversible ökologische Verluste während der Verzögerung dürfen nicht pauschal mit späterer besserer Umsetzung verrechnet werden."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw23-de-gap-1083668",
+        "interpretation": "Die Fraktion lehnte die konkrete Entscheidungsoption ab. Dies wird nicht als Unterstützung des exakten Gegenteils aller Wirkpfade interpretiert."
+      },
+      {
+        "case_id": "7b3bb327-d7a2-4c77-b46d-535be8590cb6",
+        "decision_object": "Gesetz zur Änderung des Telekommunikationsgesetzes und zur Feststellung des überragenden öffentlichen Interesses für den Ausbau von Telekommunikationsnetzen (TKG-Änderungsgesetz 2025)",
+        "decision_date": "2025-06-26",
+        "collective_position": "ABSTAIN",
+        "relation": "ABSTAINED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 1,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 4
+          },
+          "Planet": {
+            "direction": "NEGATIVE_RISK",
+            "path_direction_counts": {
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P3"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 1
+          },
+          "Demokratie": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 1,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 4
+          }
+        },
+        "non_compensable_boundaries": [
+          "Rechtsschutz, Eigentumsrechte und erhebliche Umweltwirkungen bleiben projektbezogene Schutzgates."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw26-de-telekommunikationsgesetz-1084808",
+        "interpretation": "Die Fraktion enthielt sich. Die Entscheidung wird keiner Wirkungsrichtung zugerechnet."
+      },
+      {
+        "case_id": "94cdfef9-baca-41aa-91df-4a1dbd6b5d4e",
+        "decision_object": "Erstes Gesetz zur Änderung des Tierhaltungskennzeichnungsgesetzes",
+        "decision_date": "2025-06-26",
+        "collective_position": "NO",
+        "relation": "REJECTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 3,
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 4
+          },
+          "Planet": {
+            "direction": "POSITIVE_POTENTIAL",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1
+            },
+            "path_ids": [
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 1
+          },
+          "Demokratie": {
+            "direction": "POSITIVE_POTENTIAL",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2
+            },
+            "path_ids": [
+              "P1",
+              "P3"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 2
+          }
+        },
+        "non_compensable_boundaries": [
+          "Tierwohl darf nicht allein über Kennzeichnungscompliance bewertet werden; direkte Schutz-/Wohlfahrtsindikatoren sind erforderlich."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw23-de-tierhaltungskennzeichnung-1083666",
+        "interpretation": "Die Fraktion lehnte die konkrete Entscheidungsoption ab. Dies wird nicht als Unterstützung des exakten Gegenteils aller Wirkpfade interpretiert."
+      },
+      {
+        "case_id": "aca79efa-63fe-4eb4-a68b-6930096304f0",
+        "decision_object": "Gesetz zur Verlängerung der Fristen im Investitionsprogramm Ganztagsausbau",
+        "decision_date": "2025-06-26",
+        "collective_position": "YES",
+        "relation": "SUPPORTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 2
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 4
+          },
+          "Planet": {
+            "direction": "NOT_APPLICABLE",
+            "path_direction_counts": {},
+            "path_ids": [],
+            "open_path_count": 0,
+            "material_path_count": 0
+          },
+          "Demokratie": {
+            "direction": "NEGATIVE_RISK",
+            "path_direction_counts": {
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P3"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 1
+          }
+        },
+        "non_compensable_boundaries": [
+          "Kindeswohl, Sicherheit und Mindestqualität der Betreuung sind nicht durch zusätzliche Platzanzahl kompensierbar."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw26-de-ganztagsausbau-1084804",
+        "interpretation": "Die Fraktion unterstützte die konkrete Entscheidungsoption."
+      },
+      {
+        "case_id": "6a88c960-c7e9-400c-84bb-aa52039b62e7",
+        "decision_object": "Gesetz zur Aussetzung des Familiennachzugs zu subsidiär Schutzberechtigten",
+        "decision_date": "2025-06-27",
+        "collective_position": "MAJORITY_NO",
+        "relation": "REJECTED",
+        "evidence_type": "OFFICIAL_ROLL_CALL_AGGREGATE",
+        "roll_call": "ROLL_CALL_OFFICIAL",
+        "result": "ADOPTED",
+        "members": 85,
+        "yes": 0,
+        "no": 80,
+        "abstention": 0,
+        "did_not_vote": 5,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "NEGATIVE_RISK": 2,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 4
+          },
+          "Planet": {
+            "direction": "NOT_APPLICABLE",
+            "path_direction_counts": {},
+            "path_ids": [],
+            "open_path_count": 0,
+            "material_path_count": 0
+          },
+          "Demokratie": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "NEGATIVE_RISK": 1,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 3
+          }
+        },
+        "non_compensable_boundaries": [
+          "Grund- und Menschenrechte sowie Kindeswohl sind nicht kompensierbare Schutzgates und müssen fallbezogen geprüft werden."
+        ],
+        "source_url": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=957",
+        "interpretation": "Die Fraktion lehnte die konkrete Entscheidungsoption ab. Dies wird nicht als Unterstützung des exakten Gegenteils aller Wirkpfade interpretiert."
+      },
+      {
+        "case_id": "05454260-5f17-4ba0-b3df-5c32a4cf36db",
+        "decision_object": "Gesetz zur Umsetzung von Vorgaben der Richtlinie (EU) 2023/2413 für Zulassungsverfahren nach dem Bundes-Immissionsschutzgesetz und dem Wasserhaushaltsgesetz sowie für Planverfahren nach dem Baugesetzbuch und dem Raumordnungsgesetz, zur Änderung des Bundeswasserstraßengesetzes und zur Änderung des Windenergieflächenbedarfsgesetzes",
+        "decision_date": "2025-07-10",
+        "collective_position": "NO",
+        "relation": "REJECTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 3
+          },
+          "Planet": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 3,
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 4
+          },
+          "Demokratie": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P2",
+              "P3"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 2
+          }
+        },
+        "non_compensable_boundaries": [
+          "Irreversible erhebliche Natur- oder Wasserschäden dürfen nicht durch Klimanutzen verrechnet werden.",
+          "Gesetzlich gebotener Rechtsschutz und Verfahrensrechte sind Schutzgrenzen."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw28-de-bundesimmissionsschutzgesetz-1097376",
+        "interpretation": "Die Fraktion lehnte die konkrete Entscheidungsoption ab. Dies wird nicht als Unterstützung des exakten Gegenteils aller Wirkpfade interpretiert."
+      },
+      {
+        "case_id": "14867d53-4b63-49d0-9889-73fc60d41a5d",
+        "decision_object": "Gesetz zur Errichtung eines Sondervermögens Infrastruktur und Klimaneutralität (SVIKG)",
+        "decision_date": "2025-09-18",
+        "collective_position": "NO",
+        "relation": "REJECTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 2
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 4
+          },
+          "Planet": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "NEGATIVE_RISK": 2
+            },
+            "path_ids": [
+              "P1",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 3
+          },
+          "Demokratie": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 3,
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P5"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 4
+          }
+        },
+        "non_compensable_boundaries": [
+          "Schwere nicht-kompensierbare Natur-, Gesundheits- oder Grundrechtswirkungen müssen projektbezogen ausschließen oder neu planen lassen.",
+          "Klimaneutralitätslabel darf nicht zur Kompensation negativer Wirkungen anderer Projekte dienen."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw38-de-haushaltsgesetz-2025-zweite-lesung-1104012",
+        "interpretation": "Die Fraktion lehnte die konkrete Entscheidungsoption ab. Dies wird nicht als Unterstützung des exakten Gegenteils aller Wirkpfade interpretiert."
+      },
+      {
+        "case_id": "47ca9029-a749-4f79-a4e6-8e33f08082cd",
+        "decision_object": "Gesetz zur Finanzierung von Infrastrukturinvestitionen von Ländern und Kommunen (Länder-und-Kommunal-Infrastrukturfinanzierungsgesetz - LuKIFG)",
+        "decision_date": "2025-10-09",
+        "collective_position": "YES",
+        "relation": "SUPPORTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "NEGATIVE_RISK": 2
+            },
+            "path_ids": [
+              "P1",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 3
+          },
+          "Planet": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P1",
+              "P3"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 2
+          },
+          "Demokratie": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 2
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 4
+          }
+        },
+        "non_compensable_boundaries": [
+          "Projektbezogene Schutzgates für Klima/Natur/Gesundheit/Grundrechte bleiben trotz Förderfähigkeit erforderlich."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw41-de-infrastrukturfinanzierung-1111766",
+        "interpretation": "Die Fraktion unterstützte die konkrete Entscheidungsoption."
+      },
+      {
+        "case_id": "79146c82-e8d0-467a-929e-142c72d9d6cd",
+        "decision_object": "Gesetz über die Einführung einer bundeseinheitlichen Pflegefachassistenzausbildung und zur Änderung weiterer Gesetze",
+        "decision_date": "2025-10-09",
+        "collective_position": "ABSTAIN",
+        "relation": "ABSTAINED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 3,
+              "NEGATIVE_RISK": 1,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4",
+              "P5"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 5
+          },
+          "Planet": {
+            "direction": "NOT_APPLICABLE",
+            "path_direction_counts": {},
+            "path_ids": [],
+            "open_path_count": 0,
+            "material_path_count": 0
+          },
+          "Demokratie": {
+            "direction": "NOT_APPLICABLE",
+            "path_direction_counts": {},
+            "path_ids": [],
+            "open_path_count": 0,
+            "material_path_count": 0
+          }
+        },
+        "non_compensable_boundaries": [
+          "Patientensicherheit und fachlich erforderliche Kompetenzgrenzen sind nicht kompensierbar."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw41-de-pflegefachassistenz-1111790",
+        "interpretation": "Die Fraktion enthielt sich. Die Entscheidung wird keiner Wirkungsrichtung zugerechnet."
+      }
+    ],
+    "profile_meaning": "Zusammengefasstes Wirkungsprofil der parlamentarisch unterstützten, abgelehnten oder mit Enthaltung beantworteten Entscheidungsoptionen. Keine Bewertung des Werts der Partei, Fraktion oder ihrer Mitglieder.",
+    "no_faction_score": true,
+    "no_ranking": true,
+    "no_individual_vote_inference": true
+  },
+  {
+    "schema": "woek.parliament.faction-impact-profile.v1",
+    "faction": {
+      "name": "Die Linke"
+    },
+    "scope": {
+      "parliament": "Deutscher Bundestag, 21. Wahlperiode",
+      "case_set": "WÖk-Parlament 28 Fälle",
+      "voted_cases_in_case_set": 12,
+      "documented_faction_positions": 12,
+      "data_as_of": "2026-08-16"
+    },
+    "summary": {
+      "decision_relation_counts": {
+        "REJECTED": 8,
+        "ABSTAINED": 3,
+        "SUPPORTED": 1
+      },
+      "supported_decision_impact_profile": {
+        "Mensch": {
+          "decision_classification_counts": {
+            "AMBIVALENT": 1
+          },
+          "direction_incidence_counts": {
+            "POSITIVE_POTENTIAL": 1,
+            "NEGATIVE_RISK": 1
+          }
+        },
+        "Planet": {
+          "decision_classification_counts": {
+            "NOT_APPLICABLE": 1
+          },
+          "direction_incidence_counts": {
+            "NOT_APPLICABLE": 1
+          }
+        },
+        "Demokratie": {
+          "decision_classification_counts": {
+            "NEGATIVE_RISK": 1
+          },
+          "direction_incidence_counts": {
+            "NEGATIVE_RISK": 1
+          }
+        }
+      },
+      "rejected_decision_impact_profile": {
+        "Mensch": {
+          "decision_classification_counts": {
+            "AMBIVALENT": 7,
+            "POSITIVE_POTENTIAL": 1
+          },
+          "direction_incidence_counts": {
+            "POSITIVE_POTENTIAL": 8,
+            "NEGATIVE_RISK": 7,
+            "OPEN": 4
+          }
+        },
+        "Planet": {
+          "decision_classification_counts": {
+            "NOT_APPLICABLE": 2,
+            "NEGATIVE_RISK": 3,
+            "POSITIVE_POTENTIAL": 1,
+            "AMBIVALENT": 2
+          },
+          "direction_incidence_counts": {
+            "NOT_APPLICABLE": 2,
+            "NEGATIVE_RISK": 5,
+            "OPEN": 1,
+            "POSITIVE_POTENTIAL": 3
+          }
+        },
+        "Demokratie": {
+          "decision_classification_counts": {
+            "AMBIVALENT": 5,
+            "NEGATIVE_RISK": 1,
+            "POSITIVE_POTENTIAL": 2
+          },
+          "direction_incidence_counts": {
+            "POSITIVE_POTENTIAL": 7,
+            "NEGATIVE_RISK": 6,
+            "OPEN": 2
+          }
+        }
+      },
+      "abstained_decision_impact_profile": {
+        "Mensch": {
+          "decision_classification_counts": {
+            "AMBIVALENT": 3
+          },
+          "direction_incidence_counts": {
+            "POSITIVE_POTENTIAL": 3,
+            "NEGATIVE_RISK": 3,
+            "OPEN": 2
+          }
+        },
+        "Planet": {
+          "decision_classification_counts": {
+            "POSITIVE_POTENTIAL": 1,
+            "AMBIVALENT": 1,
+            "NOT_APPLICABLE": 1
+          },
+          "direction_incidence_counts": {
+            "POSITIVE_POTENTIAL": 2,
+            "OPEN": 1,
+            "NEGATIVE_RISK": 1,
+            "NOT_APPLICABLE": 1
+          }
+        },
+        "Demokratie": {
+          "decision_classification_counts": {
+            "AMBIVALENT": 2,
+            "NOT_APPLICABLE": 1
+          },
+          "direction_incidence_counts": {
+            "POSITIVE_POTENTIAL": 2,
+            "NEGATIVE_RISK": 2,
+            "OPEN": 1,
+            "NOT_APPLICABLE": 1
+          }
+        }
+      },
+      "mixed_decision_impact_profile": {
+        "Mensch": {
+          "decision_classification_counts": {},
+          "direction_incidence_counts": {}
+        },
+        "Planet": {
+          "decision_classification_counts": {},
+          "direction_incidence_counts": {}
+        },
+        "Demokratie": {
+          "decision_classification_counts": {},
+          "direction_incidence_counts": {}
+        }
+      }
+    },
+    "decisions": [
+      {
+        "case_id": "1bcb54ff-f064-43a1-bf98-bd45a5a2e212",
+        "decision_object": "Gesetz zur Anpassung der Befugnis zur Datenerhebung bei Kontaktpersonen im Bundeskriminalamtgesetz",
+        "decision_date": "2025-06-26",
+        "collective_position": "NO",
+        "relation": "REJECTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "NEGATIVE_RISK": 2
+            },
+            "path_ids": [
+              "P1",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 3
+          },
+          "Planet": {
+            "direction": "NOT_APPLICABLE",
+            "path_direction_counts": {},
+            "path_ids": [],
+            "open_path_count": 0,
+            "material_path_count": 0
+          },
+          "Demokratie": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 2
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 4
+          }
+        },
+        "non_compensable_boundaries": [
+          "Verfassungsrechtliche Grenzen und Verhältnismäßigkeit sind nicht kompensierbare Schutzgates.",
+          "Unzulässige Eingriffe in Grundrechte dürfen nicht mit abstrakten Sicherheitsnutzen verrechnet werden."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw26-de-bundeskriminalamt-1084796",
+        "interpretation": "Die Fraktion lehnte die konkrete Entscheidungsoption ab. Dies wird nicht als Unterstützung des exakten Gegenteils aller Wirkpfade interpretiert."
+      },
+      {
+        "case_id": "2c9d8b24-ce03-4784-93b7-cce23829bb68",
+        "decision_object": "Gesetz zur Änderung des Allgemeinen Eisenbahngesetzes und weiterer Gesetze zur Spezifizierung der Flächenbedarfe der Eisenbahn",
+        "decision_date": "2025-06-26",
+        "collective_position": "ABSTAIN",
+        "relation": "ABSTAINED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL_FOR_THIS_EXACT_CASE",
+        "result": "REJECTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 1,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 4
+          },
+          "Planet": {
+            "direction": "POSITIVE_POTENTIAL",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P4"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 3
+          },
+          "Demokratie": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "NEGATIVE_RISK": 1,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 3
+          }
+        },
+        "non_compensable_boundaries": [
+          "Keine pauschale Kompensation erheblicher sozialer Verdrängungs- oder Naturfolgen durch abstrakten Infrastrukturvorteil."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw26-de-eisenbahngesetz-1084790",
+        "interpretation": "Die Fraktion enthielt sich. Die Entscheidung wird keiner Wirkungsrichtung zugerechnet."
+      },
+      {
+        "case_id": "43c02ec8-e1f6-42de-93b8-8bd0731a2565",
+        "decision_object": "Gesetz für ein steuerliches Investitionssofortprogramm zur Stärkung des Wirtschaftsstandorts Deutschland",
+        "decision_date": "2025-06-26",
+        "collective_position": "NO",
+        "relation": "REJECTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 2,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4",
+              "P5"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 5
+          },
+          "Planet": {
+            "direction": "NEGATIVE_RISK",
+            "path_direction_counts": {
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P3"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 1
+          },
+          "Demokratie": {
+            "direction": "NEGATIVE_RISK",
+            "path_direction_counts": {
+              "NEGATIVE_RISK": 2
+            },
+            "path_ids": [
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 2
+          }
+        },
+        "non_compensable_boundaries": [
+          "Investitionsförderung darf schwere negative Wirkungen einzelner Investitionen nicht durch aggregiertes Wachstum rechtfertigen."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw23-de-investitionssofortprogramm-1083898",
+        "interpretation": "Die Fraktion lehnte die konkrete Entscheidungsoption ab. Dies wird nicht als Unterstützung des exakten Gegenteils aller Wirkpfade interpretiert."
+      },
+      {
+        "case_id": "64892605-37f9-4a8c-a1ab-ff5e86056693",
+        "decision_object": "Erstes Gesetz zur Änderung des GAP-Direktzahlungen-Gesetzes",
+        "decision_date": "2025-06-26",
+        "collective_position": "NO",
+        "relation": "REJECTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "POSITIVE_POTENTIAL",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P3"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 2
+          },
+          "Planet": {
+            "direction": "NEGATIVE_RISK",
+            "path_direction_counts": {
+              "NEGATIVE_RISK": 1,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P2",
+              "P3"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 2
+          },
+          "Demokratie": {
+            "direction": "POSITIVE_POTENTIAL",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1
+            },
+            "path_ids": [
+              "P1"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 1
+          }
+        },
+        "non_compensable_boundaries": [
+          "Irreversible ökologische Verluste während der Verzögerung dürfen nicht pauschal mit späterer besserer Umsetzung verrechnet werden."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw23-de-gap-1083668",
+        "interpretation": "Die Fraktion lehnte die konkrete Entscheidungsoption ab. Dies wird nicht als Unterstützung des exakten Gegenteils aller Wirkpfade interpretiert."
+      },
+      {
+        "case_id": "7b3bb327-d7a2-4c77-b46d-535be8590cb6",
+        "decision_object": "Gesetz zur Änderung des Telekommunikationsgesetzes und zur Feststellung des überragenden öffentlichen Interesses für den Ausbau von Telekommunikationsnetzen (TKG-Änderungsgesetz 2025)",
+        "decision_date": "2025-06-26",
+        "collective_position": "NO",
+        "relation": "REJECTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 1,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 4
+          },
+          "Planet": {
+            "direction": "NEGATIVE_RISK",
+            "path_direction_counts": {
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P3"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 1
+          },
+          "Demokratie": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 1,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 4
+          }
+        },
+        "non_compensable_boundaries": [
+          "Rechtsschutz, Eigentumsrechte und erhebliche Umweltwirkungen bleiben projektbezogene Schutzgates."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw26-de-telekommunikationsgesetz-1084808",
+        "interpretation": "Die Fraktion lehnte die konkrete Entscheidungsoption ab. Dies wird nicht als Unterstützung des exakten Gegenteils aller Wirkpfade interpretiert."
+      },
+      {
+        "case_id": "94cdfef9-baca-41aa-91df-4a1dbd6b5d4e",
+        "decision_object": "Erstes Gesetz zur Änderung des Tierhaltungskennzeichnungsgesetzes",
+        "decision_date": "2025-06-26",
+        "collective_position": "NO",
+        "relation": "REJECTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 3,
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 4
+          },
+          "Planet": {
+            "direction": "POSITIVE_POTENTIAL",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1
+            },
+            "path_ids": [
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 1
+          },
+          "Demokratie": {
+            "direction": "POSITIVE_POTENTIAL",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2
+            },
+            "path_ids": [
+              "P1",
+              "P3"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 2
+          }
+        },
+        "non_compensable_boundaries": [
+          "Tierwohl darf nicht allein über Kennzeichnungscompliance bewertet werden; direkte Schutz-/Wohlfahrtsindikatoren sind erforderlich."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw23-de-tierhaltungskennzeichnung-1083666",
+        "interpretation": "Die Fraktion lehnte die konkrete Entscheidungsoption ab. Dies wird nicht als Unterstützung des exakten Gegenteils aller Wirkpfade interpretiert."
+      },
+      {
+        "case_id": "aca79efa-63fe-4eb4-a68b-6930096304f0",
+        "decision_object": "Gesetz zur Verlängerung der Fristen im Investitionsprogramm Ganztagsausbau",
+        "decision_date": "2025-06-26",
+        "collective_position": "YES",
+        "relation": "SUPPORTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 2
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 4
+          },
+          "Planet": {
+            "direction": "NOT_APPLICABLE",
+            "path_direction_counts": {},
+            "path_ids": [],
+            "open_path_count": 0,
+            "material_path_count": 0
+          },
+          "Demokratie": {
+            "direction": "NEGATIVE_RISK",
+            "path_direction_counts": {
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P3"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 1
+          }
+        },
+        "non_compensable_boundaries": [
+          "Kindeswohl, Sicherheit und Mindestqualität der Betreuung sind nicht durch zusätzliche Platzanzahl kompensierbar."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw26-de-ganztagsausbau-1084804",
+        "interpretation": "Die Fraktion unterstützte die konkrete Entscheidungsoption."
+      },
+      {
+        "case_id": "6a88c960-c7e9-400c-84bb-aa52039b62e7",
+        "decision_object": "Gesetz zur Aussetzung des Familiennachzugs zu subsidiär Schutzberechtigten",
+        "decision_date": "2025-06-27",
+        "collective_position": "MAJORITY_NO",
+        "relation": "REJECTED",
+        "evidence_type": "OFFICIAL_ROLL_CALL_AGGREGATE",
+        "roll_call": "ROLL_CALL_OFFICIAL",
+        "result": "ADOPTED",
+        "members": 64,
+        "yes": 0,
+        "no": 51,
+        "abstention": 0,
+        "did_not_vote": 13,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "NEGATIVE_RISK": 2,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 4
+          },
+          "Planet": {
+            "direction": "NOT_APPLICABLE",
+            "path_direction_counts": {},
+            "path_ids": [],
+            "open_path_count": 0,
+            "material_path_count": 0
+          },
+          "Demokratie": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "NEGATIVE_RISK": 1,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 3
+          }
+        },
+        "non_compensable_boundaries": [
+          "Grund- und Menschenrechte sowie Kindeswohl sind nicht kompensierbare Schutzgates und müssen fallbezogen geprüft werden."
+        ],
+        "source_url": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=957",
+        "interpretation": "Die Fraktion lehnte die konkrete Entscheidungsoption ab. Dies wird nicht als Unterstützung des exakten Gegenteils aller Wirkpfade interpretiert."
+      },
+      {
+        "case_id": "05454260-5f17-4ba0-b3df-5c32a4cf36db",
+        "decision_object": "Gesetz zur Umsetzung von Vorgaben der Richtlinie (EU) 2023/2413 für Zulassungsverfahren nach dem Bundes-Immissionsschutzgesetz und dem Wasserhaushaltsgesetz sowie für Planverfahren nach dem Baugesetzbuch und dem Raumordnungsgesetz, zur Änderung des Bundeswasserstraßengesetzes und zur Änderung des Windenergieflächenbedarfsgesetzes",
+        "decision_date": "2025-07-10",
+        "collective_position": "NO",
+        "relation": "REJECTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 3
+          },
+          "Planet": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 3,
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 4
+          },
+          "Demokratie": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P2",
+              "P3"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 2
+          }
+        },
+        "non_compensable_boundaries": [
+          "Irreversible erhebliche Natur- oder Wasserschäden dürfen nicht durch Klimanutzen verrechnet werden.",
+          "Gesetzlich gebotener Rechtsschutz und Verfahrensrechte sind Schutzgrenzen."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw28-de-bundesimmissionsschutzgesetz-1097376",
+        "interpretation": "Die Fraktion lehnte die konkrete Entscheidungsoption ab. Dies wird nicht als Unterstützung des exakten Gegenteils aller Wirkpfade interpretiert."
+      },
+      {
+        "case_id": "14867d53-4b63-49d0-9889-73fc60d41a5d",
+        "decision_object": "Gesetz zur Errichtung eines Sondervermögens Infrastruktur und Klimaneutralität (SVIKG)",
+        "decision_date": "2025-09-18",
+        "collective_position": "NO",
+        "relation": "REJECTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 2
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 4
+          },
+          "Planet": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "NEGATIVE_RISK": 2
+            },
+            "path_ids": [
+              "P1",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 3
+          },
+          "Demokratie": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 3,
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P5"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 4
+          }
+        },
+        "non_compensable_boundaries": [
+          "Schwere nicht-kompensierbare Natur-, Gesundheits- oder Grundrechtswirkungen müssen projektbezogen ausschließen oder neu planen lassen.",
+          "Klimaneutralitätslabel darf nicht zur Kompensation negativer Wirkungen anderer Projekte dienen."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw38-de-haushaltsgesetz-2025-zweite-lesung-1104012",
+        "interpretation": "Die Fraktion lehnte die konkrete Entscheidungsoption ab. Dies wird nicht als Unterstützung des exakten Gegenteils aller Wirkpfade interpretiert."
+      },
+      {
+        "case_id": "47ca9029-a749-4f79-a4e6-8e33f08082cd",
+        "decision_object": "Gesetz zur Finanzierung von Infrastrukturinvestitionen von Ländern und Kommunen (Länder-und-Kommunal-Infrastrukturfinanzierungsgesetz - LuKIFG)",
+        "decision_date": "2025-10-09",
+        "collective_position": "ABSTAIN",
+        "relation": "ABSTAINED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "NEGATIVE_RISK": 2
+            },
+            "path_ids": [
+              "P1",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 3
+          },
+          "Planet": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P1",
+              "P3"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 2
+          },
+          "Demokratie": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 2
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 4
+          }
+        },
+        "non_compensable_boundaries": [
+          "Projektbezogene Schutzgates für Klima/Natur/Gesundheit/Grundrechte bleiben trotz Förderfähigkeit erforderlich."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw41-de-infrastrukturfinanzierung-1111766",
+        "interpretation": "Die Fraktion enthielt sich. Die Entscheidung wird keiner Wirkungsrichtung zugerechnet."
+      },
+      {
+        "case_id": "79146c82-e8d0-467a-929e-142c72d9d6cd",
+        "decision_object": "Gesetz über die Einführung einer bundeseinheitlichen Pflegefachassistenzausbildung und zur Änderung weiterer Gesetze",
+        "decision_date": "2025-10-09",
+        "collective_position": "ABSTAIN",
+        "relation": "ABSTAINED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 3,
+              "NEGATIVE_RISK": 1,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4",
+              "P5"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 5
+          },
+          "Planet": {
+            "direction": "NOT_APPLICABLE",
+            "path_direction_counts": {},
+            "path_ids": [],
+            "open_path_count": 0,
+            "material_path_count": 0
+          },
+          "Demokratie": {
+            "direction": "NOT_APPLICABLE",
+            "path_direction_counts": {},
+            "path_ids": [],
+            "open_path_count": 0,
+            "material_path_count": 0
+          }
+        },
+        "non_compensable_boundaries": [
+          "Patientensicherheit und fachlich erforderliche Kompetenzgrenzen sind nicht kompensierbar."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw41-de-pflegefachassistenz-1111790",
+        "interpretation": "Die Fraktion enthielt sich. Die Entscheidung wird keiner Wirkungsrichtung zugerechnet."
+      }
+    ],
+    "profile_meaning": "Zusammengefasstes Wirkungsprofil der parlamentarisch unterstützten, abgelehnten oder mit Enthaltung beantworteten Entscheidungsoptionen. Keine Bewertung des Werts der Partei, Fraktion oder ihrer Mitglieder.",
+    "no_faction_score": true,
+    "no_ranking": true,
+    "no_individual_vote_inference": true
+  },
+  {
+    "schema": "woek.parliament.faction-impact-profile.v1",
+    "faction": {
+      "name": "SPD"
+    },
+    "scope": {
+      "parliament": "Deutscher Bundestag, 21. Wahlperiode",
+      "case_set": "WÖk-Parlament 28 Fälle",
+      "voted_cases_in_case_set": 12,
+      "documented_faction_positions": 12,
+      "data_as_of": "2026-08-16"
+    },
+    "summary": {
+      "decision_relation_counts": {
+        "SUPPORTED": 11,
+        "REJECTED": 1
+      },
+      "supported_decision_impact_profile": {
+        "Mensch": {
+          "decision_classification_counts": {
+            "AMBIVALENT": 10,
+            "POSITIVE_POTENTIAL": 1
+          },
+          "direction_incidence_counts": {
+            "POSITIVE_POTENTIAL": 11,
+            "NEGATIVE_RISK": 10,
+            "OPEN": 5
+          }
+        },
+        "Planet": {
+          "decision_classification_counts": {
+            "NOT_APPLICABLE": 4,
+            "NEGATIVE_RISK": 3,
+            "POSITIVE_POTENTIAL": 1,
+            "AMBIVALENT": 3
+          },
+          "direction_incidence_counts": {
+            "NOT_APPLICABLE": 4,
+            "NEGATIVE_RISK": 6,
+            "OPEN": 1,
+            "POSITIVE_POTENTIAL": 4
+          }
+        },
+        "Demokratie": {
+          "decision_classification_counts": {
+            "AMBIVALENT": 6,
+            "NEGATIVE_RISK": 2,
+            "POSITIVE_POTENTIAL": 2,
+            "NOT_APPLICABLE": 1
+          },
+          "direction_incidence_counts": {
+            "POSITIVE_POTENTIAL": 8,
+            "NEGATIVE_RISK": 8,
+            "OPEN": 2,
+            "NOT_APPLICABLE": 1
+          }
+        }
+      },
+      "rejected_decision_impact_profile": {
+        "Mensch": {
+          "decision_classification_counts": {
+            "AMBIVALENT": 1
+          },
+          "direction_incidence_counts": {
+            "POSITIVE_POTENTIAL": 1,
+            "NEGATIVE_RISK": 1,
+            "OPEN": 1
+          }
+        },
+        "Planet": {
+          "decision_classification_counts": {
+            "POSITIVE_POTENTIAL": 1
+          },
+          "direction_incidence_counts": {
+            "POSITIVE_POTENTIAL": 1,
+            "OPEN": 1
+          }
+        },
+        "Demokratie": {
+          "decision_classification_counts": {
+            "AMBIVALENT": 1
+          },
+          "direction_incidence_counts": {
+            "POSITIVE_POTENTIAL": 1,
+            "NEGATIVE_RISK": 1,
+            "OPEN": 1
+          }
+        }
+      },
+      "abstained_decision_impact_profile": {
+        "Mensch": {
+          "decision_classification_counts": {},
+          "direction_incidence_counts": {}
+        },
+        "Planet": {
+          "decision_classification_counts": {},
+          "direction_incidence_counts": {}
+        },
+        "Demokratie": {
+          "decision_classification_counts": {},
+          "direction_incidence_counts": {}
+        }
+      },
+      "mixed_decision_impact_profile": {
+        "Mensch": {
+          "decision_classification_counts": {},
+          "direction_incidence_counts": {}
+        },
+        "Planet": {
+          "decision_classification_counts": {},
+          "direction_incidence_counts": {}
+        },
+        "Demokratie": {
+          "decision_classification_counts": {},
+          "direction_incidence_counts": {}
+        }
+      }
+    },
+    "decisions": [
+      {
+        "case_id": "1bcb54ff-f064-43a1-bf98-bd45a5a2e212",
+        "decision_object": "Gesetz zur Anpassung der Befugnis zur Datenerhebung bei Kontaktpersonen im Bundeskriminalamtgesetz",
+        "decision_date": "2025-06-26",
+        "collective_position": "YES",
+        "relation": "SUPPORTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "NEGATIVE_RISK": 2
+            },
+            "path_ids": [
+              "P1",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 3
+          },
+          "Planet": {
+            "direction": "NOT_APPLICABLE",
+            "path_direction_counts": {},
+            "path_ids": [],
+            "open_path_count": 0,
+            "material_path_count": 0
+          },
+          "Demokratie": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 2
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 4
+          }
+        },
+        "non_compensable_boundaries": [
+          "Verfassungsrechtliche Grenzen und Verhältnismäßigkeit sind nicht kompensierbare Schutzgates.",
+          "Unzulässige Eingriffe in Grundrechte dürfen nicht mit abstrakten Sicherheitsnutzen verrechnet werden."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw26-de-bundeskriminalamt-1084796",
+        "interpretation": "Die Fraktion unterstützte die konkrete Entscheidungsoption."
+      },
+      {
+        "case_id": "2c9d8b24-ce03-4784-93b7-cce23829bb68",
+        "decision_object": "Gesetz zur Änderung des Allgemeinen Eisenbahngesetzes und weiterer Gesetze zur Spezifizierung der Flächenbedarfe der Eisenbahn",
+        "decision_date": "2025-06-26",
+        "collective_position": "NO",
+        "relation": "REJECTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL_FOR_THIS_EXACT_CASE",
+        "result": "REJECTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 1,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 4
+          },
+          "Planet": {
+            "direction": "POSITIVE_POTENTIAL",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P4"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 3
+          },
+          "Demokratie": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "NEGATIVE_RISK": 1,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 3
+          }
+        },
+        "non_compensable_boundaries": [
+          "Keine pauschale Kompensation erheblicher sozialer Verdrängungs- oder Naturfolgen durch abstrakten Infrastrukturvorteil."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw26-de-eisenbahngesetz-1084790",
+        "interpretation": "Die Fraktion lehnte die konkrete Entscheidungsoption ab. Dies wird nicht als Unterstützung des exakten Gegenteils aller Wirkpfade interpretiert."
+      },
+      {
+        "case_id": "43c02ec8-e1f6-42de-93b8-8bd0731a2565",
+        "decision_object": "Gesetz für ein steuerliches Investitionssofortprogramm zur Stärkung des Wirtschaftsstandorts Deutschland",
+        "decision_date": "2025-06-26",
+        "collective_position": "YES",
+        "relation": "SUPPORTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 2,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4",
+              "P5"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 5
+          },
+          "Planet": {
+            "direction": "NEGATIVE_RISK",
+            "path_direction_counts": {
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P3"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 1
+          },
+          "Demokratie": {
+            "direction": "NEGATIVE_RISK",
+            "path_direction_counts": {
+              "NEGATIVE_RISK": 2
+            },
+            "path_ids": [
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 2
+          }
+        },
+        "non_compensable_boundaries": [
+          "Investitionsförderung darf schwere negative Wirkungen einzelner Investitionen nicht durch aggregiertes Wachstum rechtfertigen."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw23-de-investitionssofortprogramm-1083898",
+        "interpretation": "Die Fraktion unterstützte die konkrete Entscheidungsoption."
+      },
+      {
+        "case_id": "64892605-37f9-4a8c-a1ab-ff5e86056693",
+        "decision_object": "Erstes Gesetz zur Änderung des GAP-Direktzahlungen-Gesetzes",
+        "decision_date": "2025-06-26",
+        "collective_position": "YES",
+        "relation": "SUPPORTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "POSITIVE_POTENTIAL",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P3"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 2
+          },
+          "Planet": {
+            "direction": "NEGATIVE_RISK",
+            "path_direction_counts": {
+              "NEGATIVE_RISK": 1,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P2",
+              "P3"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 2
+          },
+          "Demokratie": {
+            "direction": "POSITIVE_POTENTIAL",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1
+            },
+            "path_ids": [
+              "P1"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 1
+          }
+        },
+        "non_compensable_boundaries": [
+          "Irreversible ökologische Verluste während der Verzögerung dürfen nicht pauschal mit späterer besserer Umsetzung verrechnet werden."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw23-de-gap-1083668",
+        "interpretation": "Die Fraktion unterstützte die konkrete Entscheidungsoption."
+      },
+      {
+        "case_id": "7b3bb327-d7a2-4c77-b46d-535be8590cb6",
+        "decision_object": "Gesetz zur Änderung des Telekommunikationsgesetzes und zur Feststellung des überragenden öffentlichen Interesses für den Ausbau von Telekommunikationsnetzen (TKG-Änderungsgesetz 2025)",
+        "decision_date": "2025-06-26",
+        "collective_position": "YES",
+        "relation": "SUPPORTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 1,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 4
+          },
+          "Planet": {
+            "direction": "NEGATIVE_RISK",
+            "path_direction_counts": {
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P3"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 1
+          },
+          "Demokratie": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 1,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 4
+          }
+        },
+        "non_compensable_boundaries": [
+          "Rechtsschutz, Eigentumsrechte und erhebliche Umweltwirkungen bleiben projektbezogene Schutzgates."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw26-de-telekommunikationsgesetz-1084808",
+        "interpretation": "Die Fraktion unterstützte die konkrete Entscheidungsoption."
+      },
+      {
+        "case_id": "94cdfef9-baca-41aa-91df-4a1dbd6b5d4e",
+        "decision_object": "Erstes Gesetz zur Änderung des Tierhaltungskennzeichnungsgesetzes",
+        "decision_date": "2025-06-26",
+        "collective_position": "YES",
+        "relation": "SUPPORTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 3,
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 4
+          },
+          "Planet": {
+            "direction": "POSITIVE_POTENTIAL",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1
+            },
+            "path_ids": [
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 1
+          },
+          "Demokratie": {
+            "direction": "POSITIVE_POTENTIAL",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2
+            },
+            "path_ids": [
+              "P1",
+              "P3"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 2
+          }
+        },
+        "non_compensable_boundaries": [
+          "Tierwohl darf nicht allein über Kennzeichnungscompliance bewertet werden; direkte Schutz-/Wohlfahrtsindikatoren sind erforderlich."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw23-de-tierhaltungskennzeichnung-1083666",
+        "interpretation": "Die Fraktion unterstützte die konkrete Entscheidungsoption."
+      },
+      {
+        "case_id": "aca79efa-63fe-4eb4-a68b-6930096304f0",
+        "decision_object": "Gesetz zur Verlängerung der Fristen im Investitionsprogramm Ganztagsausbau",
+        "decision_date": "2025-06-26",
+        "collective_position": "YES",
+        "relation": "SUPPORTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 2
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 4
+          },
+          "Planet": {
+            "direction": "NOT_APPLICABLE",
+            "path_direction_counts": {},
+            "path_ids": [],
+            "open_path_count": 0,
+            "material_path_count": 0
+          },
+          "Demokratie": {
+            "direction": "NEGATIVE_RISK",
+            "path_direction_counts": {
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P3"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 1
+          }
+        },
+        "non_compensable_boundaries": [
+          "Kindeswohl, Sicherheit und Mindestqualität der Betreuung sind nicht durch zusätzliche Platzanzahl kompensierbar."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw26-de-ganztagsausbau-1084804",
+        "interpretation": "Die Fraktion unterstützte die konkrete Entscheidungsoption."
+      },
+      {
+        "case_id": "6a88c960-c7e9-400c-84bb-aa52039b62e7",
+        "decision_object": "Gesetz zur Aussetzung des Familiennachzugs zu subsidiär Schutzberechtigten",
+        "decision_date": "2025-06-27",
+        "collective_position": "MAJORITY_YES",
+        "relation": "SUPPORTED",
+        "evidence_type": "OFFICIAL_ROLL_CALL_AGGREGATE",
+        "roll_call": "ROLL_CALL_OFFICIAL",
+        "result": "ADOPTED",
+        "members": 120,
+        "yes": 117,
+        "no": 2,
+        "abstention": 0,
+        "did_not_vote": 1,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "NEGATIVE_RISK": 2,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 4
+          },
+          "Planet": {
+            "direction": "NOT_APPLICABLE",
+            "path_direction_counts": {},
+            "path_ids": [],
+            "open_path_count": 0,
+            "material_path_count": 0
+          },
+          "Demokratie": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "NEGATIVE_RISK": 1,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 3
+          }
+        },
+        "non_compensable_boundaries": [
+          "Grund- und Menschenrechte sowie Kindeswohl sind nicht kompensierbare Schutzgates und müssen fallbezogen geprüft werden."
+        ],
+        "source_url": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=957",
+        "interpretation": "Die Fraktion unterstützte die konkrete Entscheidungsoption."
+      },
+      {
+        "case_id": "05454260-5f17-4ba0-b3df-5c32a4cf36db",
+        "decision_object": "Gesetz zur Umsetzung von Vorgaben der Richtlinie (EU) 2023/2413 für Zulassungsverfahren nach dem Bundes-Immissionsschutzgesetz und dem Wasserhaushaltsgesetz sowie für Planverfahren nach dem Baugesetzbuch und dem Raumordnungsgesetz, zur Änderung des Bundeswasserstraßengesetzes und zur Änderung des Windenergieflächenbedarfsgesetzes",
+        "decision_date": "2025-07-10",
+        "collective_position": "YES",
+        "relation": "SUPPORTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 3
+          },
+          "Planet": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 3,
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 4
+          },
+          "Demokratie": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P2",
+              "P3"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 2
+          }
+        },
+        "non_compensable_boundaries": [
+          "Irreversible erhebliche Natur- oder Wasserschäden dürfen nicht durch Klimanutzen verrechnet werden.",
+          "Gesetzlich gebotener Rechtsschutz und Verfahrensrechte sind Schutzgrenzen."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw28-de-bundesimmissionsschutzgesetz-1097376",
+        "interpretation": "Die Fraktion unterstützte die konkrete Entscheidungsoption."
+      },
+      {
+        "case_id": "14867d53-4b63-49d0-9889-73fc60d41a5d",
+        "decision_object": "Gesetz zur Errichtung eines Sondervermögens Infrastruktur und Klimaneutralität (SVIKG)",
+        "decision_date": "2025-09-18",
+        "collective_position": "YES",
+        "relation": "SUPPORTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 2
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 4
+          },
+          "Planet": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "NEGATIVE_RISK": 2
+            },
+            "path_ids": [
+              "P1",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 3
+          },
+          "Demokratie": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 3,
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P5"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 4
+          }
+        },
+        "non_compensable_boundaries": [
+          "Schwere nicht-kompensierbare Natur-, Gesundheits- oder Grundrechtswirkungen müssen projektbezogen ausschließen oder neu planen lassen.",
+          "Klimaneutralitätslabel darf nicht zur Kompensation negativer Wirkungen anderer Projekte dienen."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw38-de-haushaltsgesetz-2025-zweite-lesung-1104012",
+        "interpretation": "Die Fraktion unterstützte die konkrete Entscheidungsoption."
+      },
+      {
+        "case_id": "47ca9029-a749-4f79-a4e6-8e33f08082cd",
+        "decision_object": "Gesetz zur Finanzierung von Infrastrukturinvestitionen von Ländern und Kommunen (Länder-und-Kommunal-Infrastrukturfinanzierungsgesetz - LuKIFG)",
+        "decision_date": "2025-10-09",
+        "collective_position": "YES",
+        "relation": "SUPPORTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "NEGATIVE_RISK": 2
+            },
+            "path_ids": [
+              "P1",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 3
+          },
+          "Planet": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 1,
+              "NEGATIVE_RISK": 1
+            },
+            "path_ids": [
+              "P1",
+              "P3"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 2
+          },
+          "Demokratie": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 2,
+              "NEGATIVE_RISK": 2
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4"
+            ],
+            "open_path_count": 0,
+            "material_path_count": 4
+          }
+        },
+        "non_compensable_boundaries": [
+          "Projektbezogene Schutzgates für Klima/Natur/Gesundheit/Grundrechte bleiben trotz Förderfähigkeit erforderlich."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw41-de-infrastrukturfinanzierung-1111766",
+        "interpretation": "Die Fraktion unterstützte die konkrete Entscheidungsoption."
+      },
+      {
+        "case_id": "79146c82-e8d0-467a-929e-142c72d9d6cd",
+        "decision_object": "Gesetz über die Einführung einer bundeseinheitlichen Pflegefachassistenzausbildung und zur Änderung weiterer Gesetze",
+        "decision_date": "2025-10-09",
+        "collective_position": "YES",
+        "relation": "SUPPORTED",
+        "evidence_type": "REPORTED_PARLIAMENTARY_GROUP_POSITION",
+        "roll_call": "NOT_ROLL_CALL",
+        "result": "ADOPTED",
+        "members": null,
+        "yes": null,
+        "no": null,
+        "abstention": null,
+        "did_not_vote": null,
+        "decision_domain_profile": {
+          "Mensch": {
+            "direction": "AMBIVALENT",
+            "path_direction_counts": {
+              "POSITIVE_POTENTIAL": 3,
+              "NEGATIVE_RISK": 1,
+              "OPEN": 1
+            },
+            "path_ids": [
+              "P1",
+              "P2",
+              "P3",
+              "P4",
+              "P5"
+            ],
+            "open_path_count": 1,
+            "material_path_count": 5
+          },
+          "Planet": {
+            "direction": "NOT_APPLICABLE",
+            "path_direction_counts": {},
+            "path_ids": [],
+            "open_path_count": 0,
+            "material_path_count": 0
+          },
+          "Demokratie": {
+            "direction": "NOT_APPLICABLE",
+            "path_direction_counts": {},
+            "path_ids": [],
+            "open_path_count": 0,
+            "material_path_count": 0
+          }
+        },
+        "non_compensable_boundaries": [
+          "Patientensicherheit und fachlich erforderliche Kompetenzgrenzen sind nicht kompensierbar."
+        ],
+        "source_url": "https://www.bundestag.de/dokumente/textarchiv/2025/kw41-de-pflegefachassistenz-1111790",
+        "interpretation": "Die Fraktion unterstützte die konkrete Entscheidungsoption."
+      }
+    ],
+    "profile_meaning": "Zusammengefasstes Wirkungsprofil der parlamentarisch unterstützten, abgelehnten oder mit Enthaltung beantworteten Entscheidungsoptionen. Keine Bewertung des Werts der Partei, Fraktion oder ihrer Mitglieder.",
+    "no_faction_score": true,
+    "no_ranking": true,
+    "no_individual_vote_inference": true
+  }
+]

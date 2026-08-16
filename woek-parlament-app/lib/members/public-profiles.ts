@@ -1,6 +1,6 @@
 import { supabaseRest } from "@/lib/database/supabase-admin";
-import { fetchOfficialCurrentMembersCached, memberSlug } from "@/lib/bundestag/member-stammdaten";
-import { summarizeVoteLedger, type AgreementStatus, type MemberVote, type PreferredVote } from "@/lib/members/vote-ledger";
+import { fetchOfficialCurrentMembersCached, memberSlug, normalizedMemberName, type OfficialMemberRecord } from "@/lib/bundestag/member-stammdaten";
+import { getMemberImpactProfileByOfficialName, getMemberImpactProfileBySourceKey, listMemberImpactProfiles, type MemberImpactProfile } from "@/lib/members/impact-profiles";
 
 type MemberRow = {
   id: string;
@@ -17,29 +17,7 @@ type MemberRow = {
   portrait_usage_terms_url: string | null;
 };
 
-type VoteRow = {
-  id: string;
-  actual_vote: MemberVote;
-  parliamentary_group_at_vote: string | null;
-  source_url: string;
-  vote_event: {
-    external_vote_id: string;
-    vote_date: string;
-    official_title: string;
-    source_url: string;
-  } | null;
-};
-
-type LedgerRow = {
-  member_vote_id: string;
-  preferred_vote_at_decision_time: PreferredVote;
-  agreement_status: AgreementStatus;
-  materiality_class: "VERY_HIGH" | "HIGH" | "MEDIUM" | "WATCH" | null;
-  ex_post_confirmation_status: string | null;
-  evidence_refs: string[];
-};
-
-export type PublicMemberProfile = {
+export type PublicMemberDirectoryProfile = {
   slug: string;
   displayName: string;
   officialMemberUrl: string;
@@ -48,21 +26,17 @@ export type PublicMemberProfile = {
   constituency: string | null;
   mandateType: string | null;
   portrait: { sourceUrl: string; credit: string; termsUrl: string } | null;
-  summary: ReturnType<typeof summarizeVoteLedger>;
-  votes: Array<{
-    officialVoteId: string;
-    voteDate: string;
-    title: string;
-    sourceUrl: string;
-    actualVote: MemberVote;
-    preferredVote: PreferredVote;
-    agreementStatus: AgreementStatus;
-    materiality: "VERY_HIGH" | "HIGH" | "MEDIUM" | "WATCH" | null;
-    exPostStatus: string | null;
-  }>;
+  currentMandate: boolean;
+  impactProfileAvailable: boolean;
+  documentedVotes: number;
+  coverageStatus: string | null;
 };
 
-function toPublicProfile(row: MemberRow) {
+export type PublicMemberProfile = PublicMemberDirectoryProfile & {
+  impactProfile: MemberImpactProfile | null;
+};
+
+function storedPresentation(row: MemberRow) {
   return {
     slug: row.slug,
     displayName: row.display_name,
@@ -77,8 +51,9 @@ function toPublicProfile(row: MemberRow) {
   };
 }
 
-async function officialRosterProfiles() {
-  return (await fetchOfficialCurrentMembersCached()).map((member) => ({
+function officialPresentation(member: OfficialMemberRecord): PublicMemberDirectoryProfile {
+  const impactProfile = getMemberImpactProfileByOfficialName(member.familyName, member.givenName);
+  return {
     slug: memberSlug(member),
     displayName: member.displayName,
     officialMemberUrl: member.officialMemberUrl,
@@ -86,73 +61,102 @@ async function officialRosterProfiles() {
     federalState: member.federalState,
     constituency: member.constituency,
     mandateType: member.mandateType,
-    portrait: null
-  }));
+    portrait: null,
+    currentMandate: true,
+    impactProfileAvailable: Boolean(impactProfile),
+    documentedVotes: impactProfile?.coverage.official_member_vote_records_ingested ?? 0,
+    coverageStatus: impactProfile?.coverage.coverage_status ?? null
+  };
 }
 
-export async function listPublishedMemberProfiles() {
-  const official = await officialRosterProfiles();
+function historicalPresentation(profile: MemberImpactProfile): PublicMemberDirectoryProfile {
+  return {
+    slug: profile.member.profile_source_key,
+    displayName: profile.member.name,
+    officialMemberUrl: "https://www.bundestag.de/abgeordnete",
+    parliamentaryGroup: profile.member.faction_at_vote,
+    federalState: null,
+    constituency: null,
+    mandateType: "Mandat zum Abstimmungszeitpunkt",
+    portrait: null,
+    currentMandate: false,
+    impactProfileAvailable: true,
+    documentedVotes: profile.coverage.official_member_vote_records_ingested,
+    coverageStatus: profile.coverage.coverage_status
+  };
+}
+
+async function storedMemberRows() {
   try {
-    // The roster is official public source data. Analytical statements stay
-    // protected by the separate public_eligible ledger flag below.
-    const rows = await supabaseRest<MemberRow[]>("parliament.members?status=eq.ACTIVE&select=id,slug,display_name,official_member_url,parliamentary_group,federal_state,constituency,mandate_type,portrait_status,portrait_source_url,portrait_credit,portrait_usage_terms_url&order=display_name.asc&limit=800");
-    const storedBySlug = new Map(rows.map((row) => [row.slug, toPublicProfile(row)]));
-    return official.map((profile) => {
-      const stored = storedBySlug.get(profile.slug);
-      return stored ? {
-        ...profile,
-        ...stored,
-        federalState: stored.federalState ?? profile.federalState,
-        constituency: stored.constituency ?? profile.constituency,
-        mandateType: stored.mandateType ?? profile.mandateType
-      } : profile;
-    });
+    return await supabaseRest<MemberRow[]>("parliament.members?select=id,slug,display_name,official_member_url,parliamentary_group,federal_state,constituency,mandate_type,portrait_status,portrait_source_url,portrait_credit,portrait_usage_terms_url&order=display_name.asc&limit=900");
   } catch {
-    // A database interruption must not erase the official public roster.
+    return [];
   }
-  return official;
+}
+
+async function officialMembers() {
+  try {
+    return await fetchOfficialCurrentMembersCached();
+  } catch {
+    return [];
+  }
+}
+
+export async function listPublishedMemberProfiles(): Promise<PublicMemberDirectoryProfile[]> {
+  const [official, stored] = await Promise.all([officialMembers(), storedMemberRows()]);
+  const storedBySlug = new Map(stored.map((row) => [row.slug, storedPresentation(row)]));
+  const usedImpactKeys = new Set<string>();
+  const currentProfiles = official.map((member) => {
+    const base = officialPresentation(member);
+    const impact = getMemberImpactProfileByOfficialName(member.familyName, member.givenName);
+    if (impact) usedImpactKeys.add(impact.member.profile_source_key);
+    const db = storedBySlug.get(base.slug);
+    return db ? {
+      ...base,
+      ...db,
+      federalState: db.federalState ?? base.federalState,
+      constituency: db.constituency ?? base.constituency,
+      mandateType: db.mandateType ?? base.mandateType,
+      currentMandate: true,
+      impactProfileAvailable: base.impactProfileAvailable,
+      documentedVotes: base.documentedVotes,
+      coverageStatus: base.coverageStatus
+    } : base;
+  });
+  const historicalProfiles = listMemberImpactProfiles().filter((profile) => !usedImpactKeys.has(profile.member.profile_source_key)).map(historicalPresentation);
+  const profiles = currentProfiles.length > 0 ? [...currentProfiles, ...historicalProfiles] : listMemberImpactProfiles().map(historicalPresentation);
+  return profiles.sort((left, right) => left.displayName.localeCompare(right.displayName, "de-DE"));
+}
+
+async function currentProfileForSlug(slug: string) {
+  const official = (await officialMembers()).find((member) => memberSlug(member) === slug);
+  if (!official) return null;
+  const base = officialPresentation(official);
+  const stored = (await storedMemberRows()).find((row) => row.slug === slug);
+  const presentation = stored ? storedPresentation(stored) : null;
+  const impactProfile = getMemberImpactProfileByOfficialName(official.familyName, official.givenName);
+  return {
+    ...base,
+    ...(presentation ?? {}),
+    federalState: presentation?.federalState ?? base.federalState,
+    constituency: presentation?.constituency ?? base.constituency,
+    mandateType: presentation?.mandateType ?? base.mandateType,
+    currentMandate: true,
+    impactProfileAvailable: Boolean(impactProfile),
+    documentedVotes: impactProfile?.coverage.official_member_vote_records_ingested ?? 0,
+    coverageStatus: impactProfile?.coverage.coverage_status ?? null,
+    impactProfile
+  } satisfies PublicMemberProfile;
 }
 
 export async function getPublishedMemberProfile(slug: string): Promise<PublicMemberProfile | null> {
-  const official = (await officialRosterProfiles()).find((profile) => profile.slug === slug);
-  if (!official) return null;
-  let member: MemberRow | undefined;
-  try {
-    const memberRows = await supabaseRest<MemberRow[]>(`parliament.members?slug=eq.${encodeURIComponent(slug)}&status=eq.ACTIVE&select=id,slug,display_name,official_member_url,parliamentary_group,federal_state,constituency,mandate_type,portrait_status,portrait_source_url,portrait_credit,portrait_usage_terms_url&limit=1`);
-    member = memberRows[0];
-  } catch {
-    // Fall back to the cached official source below.
-  }
-  if (!member) {
-    return { ...official, summary: summarizeVoteLedger([]), votes: [] };
-  }
-  const votes = await supabaseRest<VoteRow[]>(`parliament.member_votes?member_id=eq.${encodeURIComponent(member.id)}&select=id,actual_vote,parliamentary_group_at_vote,source_url,vote_event:vote_events(external_vote_id,vote_date,official_title,source_url)&order=imported_at.desc&limit=500`);
-  const stored = toPublicProfile(member);
-  const baseProfile = {
-    ...official,
-    ...stored,
-    federalState: stored.federalState ?? official.federalState,
-    constituency: stored.constituency ?? official.constituency,
-    mandateType: stored.mandateType ?? official.mandateType
-  };
-  if (votes.length === 0) return { ...baseProfile, summary: summarizeVoteLedger([]), votes: [] };
-  const voteIds = votes.map((vote) => vote.id).join(",");
-  const ledgerRows = await supabaseRest<LedgerRow[]>(`parliament.member_vote_impact_ledger?member_vote_id=in.(${encodeURIComponent(voteIds)})&public_eligible=eq.true&select=member_vote_id,preferred_vote_at_decision_time,agreement_status,materiality_class,ex_post_confirmation_status,evidence_refs&limit=500`);
-  const ledgers = new Map(ledgerRows.map((ledger) => [ledger.member_vote_id, ledger]));
-  const publishedVotes = votes.flatMap((vote) => {
-    const ledger = ledgers.get(vote.id);
-    if (!ledger || !vote.vote_event) return [];
-    return [{
-      officialVoteId: vote.vote_event.external_vote_id,
-      voteDate: vote.vote_event.vote_date,
-      title: vote.vote_event.official_title,
-      sourceUrl: vote.vote_event.source_url,
-      actualVote: vote.actual_vote,
-      preferredVote: ledger.preferred_vote_at_decision_time,
-      agreementStatus: ledger.agreement_status,
-      materiality: ledger.materiality_class,
-      exPostStatus: ledger.ex_post_confirmation_status
-    }];
-  });
-  return { ...baseProfile, summary: summarizeVoteLedger(publishedVotes.map((vote) => vote.agreementStatus)), votes: publishedVotes };
+  const current = await currentProfileForSlug(slug);
+  if (current) return current;
+  const impactProfile = getMemberImpactProfileBySourceKey(slug);
+  if (!impactProfile) return null;
+  return { ...historicalPresentation(impactProfile), impactProfile };
+}
+
+export function exactMemberProfileKey(familyName: string, givenName: string) {
+  return normalizedMemberName(familyName, givenName);
 }

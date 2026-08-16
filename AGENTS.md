@@ -70,6 +70,17 @@ Diese Datei ist die dauerhafte Arbeitsanweisung fuer Codex-Aufgaben in diesem Re
 - Modellhafte Inhalte bleiben als Modell, Demo, Entwurf oder Arbeitspapier gekennzeichnet.
 - Seiten sollen auch fuer Menschen verstaendlich sein, die die Wirkungsökonomie noch nie gehoert haben.
 
+## Gate 17 – Profilintegritaet
+
+- Abgeordneten-Wirkungsprofile verwenden ausschliesslich amtliche Individualstimmen aus namentlichen Abstimmungen. Fraktionspositionen werden niemals einzelnen Mitgliedern zugerechnet.
+- Fraktions-Wirkungsprofile duerfen dokumentierte kollektive Positionen verwenden; Mehrheitspositionen werden nicht als Einstimmigkeit dargestellt.
+- Profile zeigen die Wirkungsprofile unterstuetzter und abgelehnter Entscheidungsoptionen, keine Bewertung des Werts einer Person, Partei oder Fraktion.
+- Es gibt keinen Personen- oder Fraktionsscore und kein Ranking. Geringe Datenabdeckung bleibt sichtbar.
+- Eine Nein-Stimme wird nicht zum mathematischen Gegenteil der Wirkpfade einer Vorlage.
+- Pro Fall und Mensch–Planet–Demokratie-Dimension aggregieren, nicht rohe Wirkpfadanzahlen als Gewicht verwenden.
+- Positive Potentiale, negative Risiken, ambivalente und offene Richtungen sowie Schutzgrenzen bleiben getrennt und auf die Entscheidung, Fachakte und Quelle rueckverfolgbar.
+- Fehlende Daten werden nie als Nullwert dargestellt.
+
 ## Umsetzung neuer Erklaerseiten
 
 Wenn keine geeigneten Komponenten vorhanden sind, koennen kleine wiederverwendbare Bausteine angelegt werden:

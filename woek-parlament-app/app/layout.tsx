@@ -95,7 +95,8 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
                 <Link href="/transparenz">Über das Portal</Link>
                 <Link href="/quellen">Quellenarchiv</Link>
                 <Link href="/mandat-und-praxis">Mandat &amp; Praxis</Link>
-                <Link href="/abgeordnete">Abstimmungen im Wirkungscheck</Link>
+                <Link href="/abgeordnete">Wirkungsprofile der Abgeordneten</Link>
+                <Link href="/fraktionen">Wirkungsprofile der Fraktionen</Link>
               </nav>
               <nav aria-label="Kontakt" className="footer-nav">
                 <h2>Kontakt</h2>

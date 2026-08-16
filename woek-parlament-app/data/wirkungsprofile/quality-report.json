@@ -1,0 +1,30 @@
+{
+  "package": "WOEK-PARLAMENT-WIRKUNGSPROFILE-FRAKTIONEN-UND-ABGEORDNETE-1.0-RC2",
+  "decision_profiles": 28,
+  "decided_cases": 12,
+  "faction_profiles": 5,
+  "faction_decision_relations": 60,
+  "source_group_vote_rows": 61,
+  "source_group_vote_rows_fraktionslos": 1,
+  "member_profiles": 630,
+  "individual_vote_counts": {
+    "YES": 444,
+    "NO": 133,
+    "DID_NOT_VOTE": 53
+  },
+  "tests": {
+    "decision_profiles_28": true,
+    "decided_12": true,
+    "factions_5": true,
+    "faction_relations_60": true,
+    "individual_profiles_630": true,
+    "official_vote_totals_match": true,
+    "no_invalid_directions": true,
+    "family_p3_negative": true,
+    "family_p4_open": true,
+    "aaron_valent_no": true,
+    "no_person_scores": true,
+    "no_faction_scores": true
+  },
+  "all_tests_pass": true
+}

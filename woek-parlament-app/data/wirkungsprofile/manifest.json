@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "package_id": "WOEK-PARLAMENT-WIRKUNGSPROFILE-FRAKTIONEN-UND-ABGEORDNETE-1.0-RC2",
+  "source_archive_sha256": "7f46e7547041b18b37a734522fd6291f6846f1797316042486dfc57eba66b9f5",
+  "publisher": "Institut für Wirkungsökonomie",
+  "data_as_of": "2026-08-16",
+  "outputs": [
+    {
+      "file": "member-impact-profiles.json",
+      "bytes": 2475634,
+      "sha256": "6555583bcaee476d8e1164ec77d53298b6a04a13dbd3fdfa17a93a752d9459c4"
+    },
+    {
+      "file": "faction-impact-profiles.json",
+      "bytes": 147820,
+      "sha256": "ff815dc880996f941f2f474856481be6491202cfa11159ebff7aca2e2d2a07ef"
+    },
+    {
+      "file": "decision-impact-profiles.json",
+      "bytes": 561636,
+      "sha256": "da8fd8072694d341a6beb5968fea518a09e84de17ecff0ef751f1f00599cbebe"
+    },
+    {
+      "file": "quality-report.json",
+      "bytes": 808,
+      "sha256": "3bdbb5f84eaf8cc1a6475a2083889c19e6ddd7f309126ca1a7b1814b6c23e4e5"
+    }
+  ]
+}

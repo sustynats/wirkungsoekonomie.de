@@ -8,7 +8,7 @@ const links = [
   ["Länder", "/laender"],
   ["Mandat & Praxis", "/mandat-und-praxis"],
   ["Fachanalysen", "/fachanalysen"],
-  ["Abstimmungsbilanz", "/abgeordnete"],
+  ["Wirkungsprofile", "/abgeordnete"],
   ["Quellen", "/quellen"],
   ["Über das Portal", "/transparenz"],
   ["Methodik", "/methodik"]
