@@ -7,16 +7,16 @@ export default async function HomePage({ searchParams }: { searchParams: Promise
   const heroCopy = parliamentMode
     ? {
         eyebrow: "Unabhängiges Portal des Instituts für Wirkungsökonomie",
-        title: "Entscheidungen mit Blick auf ihre Wirkung vorbereiten.",
-        lead: "Der Parlament-Modus zeigt, was vor einer Abstimmung noch verändert werden kann: Voraussetzungen, Risiken, offene Evidenz und mögliche Stellschrauben. Er unterstützt die fachliche Vorbereitung – die politische Entscheidung bleibt beim Parlament.",
+        title: "Entscheidungen mit Blick auf ihr Wirkungspotenzial vorbereiten.",
+        lead: "Politik prüft Folgen bereits heute. Der Parlament-Modus führt diese Betrachtung systemisch weiter: Welche Zustände sollen sich verändern? Welche Neben-, Verteilungs- und Systemwirkungen sind möglich? Was kann vor der Entscheidung noch robuster ausgestaltet werden?",
         primary: "Anstehende Vorgänge prüfen",
         secondary: "Prüfstandard ansehen",
         directionQuestion: "Bringt diese Maßnahme das Ziel näher – oder entfernt sie sich davon?"
       }
     : {
         eyebrow: "Unabhängiges Portal des Instituts für Wirkungsökonomie",
-        title: "Was soll entschieden werden – und was könnte sich dadurch verändern?",
-        lead: "Das Portal erklärt bevorstehende und beschlossene Entscheidungen des Deutschen Bundestages. Es trennt amtliche Fakten, politische Ziele, mögliche Wirkungen, Risiken und später beobachtete Veränderungen.",
+        title: "Von der politischen Absicht zur tatsächlichen Wirkung.",
+        lead: "Politik prüft Folgen bereits heute. Das Wirkungsportal führt diese Betrachtung systemisch weiter: Welche Zustände sollen sich verändern? Welche Neben-, Verteilungs- und Systemwirkungen sind möglich? Was verändert sich nach der Umsetzung tatsächlich – und was folgt daraus für die nächste Entscheidung?",
         primary: "Bevorstehende Entscheidungen ansehen",
         secondary: "Wirkungscheck verstehen",
         directionQuestion: "Bringt diese Maßnahme das Ziel näher – oder entfernt sie sich davon?"
@@ -43,12 +43,12 @@ export default async function HomePage({ searchParams }: { searchParams: Promise
             <aside className="hero-education" aria-labelledby="hero-education-title">
               <p className="eyebrow">{parliamentMode ? "Für die parlamentarische Vorbereitung" : "Was ist Wirkungsökonomie?"}</p>
               <h2 id="hero-education-title">{parliamentMode ? "Wirkungspotenzial, Risiken und veränderbare Stellschrauben." : "Nicht nur Ziele zählen. Sondern was sich in der Wirklichkeit verändert."}</h2>
-              <p>{parliamentMode ? "Der Modus zeigt, welche Annahmen tragen, welche Daten fehlen und welche Änderung einen möglichen Wirkmechanismus robuster machen könnte." : "Wirkung ist das, was sich tatsächlich verändert. Wirkungsökonomie fragt deshalb nicht nur, was eine Entscheidung verspricht, kostet oder unmittelbar hervorbringt, sondern was sie für Menschen, natürliche Lebensgrundlagen und Demokratie verändern könnte – und später tatsächlich verändert hat."}</p>
+              <p>{parliamentMode ? "Der Modus zeigt, welche Annahmen tragen, welche Daten fehlen und welche Änderung einen möglichen Wirkmechanismus robuster machen könnte." : "Wirkung ist das, was sich tatsächlich verändert. Wirkungsökonomie ergänzt bestehende Folgenprüfungen: Sie verbindet Ausgangslage, Wirkpfad, Zurechnung, Bewertung und Rückkopplung in einem offen nachvollziehbaren Zusammenhang."}</p>
               <div className="hero-direction-test"><span>Die Kernfrage</span><strong>{heroCopy.directionQuestion}</strong></div>
               <ol className="hero-education-steps">
-                <li><span>01</span><div><strong>Ausgangslage verstehen</strong><small>Was ist das Problem – und für wen?</small></div></li>
-                <li><span>02</span><div><strong>Mögliche Wirkmechanismen prüfen</strong><small>Was könnte sich ändern? Welche Risiken bleiben?</small></div></li>
-                <li><span>03</span><div><strong>Später rückkoppeln</strong><small>Was ist tatsächlich eingetreten?</small></div></li>
+                <li><span>01</span><div><strong>Zustandsveränderung bestimmen</strong><small>Was ist die Ausgangslage? Was verändert sich – für wen, wo und wann?</small></div></li>
+                <li><span>02</span><div><strong>Zurechnung prüfen</strong><small>Was lässt sich der Entscheidung zurechnen – und was bleibt unsicher?</small></div></li>
+                <li><span>03</span><div><strong>Bewerten und lernen</strong><small>Wie ist die Veränderung einzuordnen – und was folgt für die nächste Entscheidung?</small></div></li>
               </ol>
               <Link className="hero-education-link" href="/methodik#grundlagen">Wirkungsökonomie verständlich erklärt <span aria-hidden="true">→</span></Link>
             </aside>
@@ -73,9 +73,21 @@ export default async function HomePage({ searchParams }: { searchParams: Promise
         </div>
       </section>
 
+      <section className="shell section impact-architecture" aria-labelledby="impact-architecture-title">
+        <div className="section-heading"><div><p className="eyebrow">Wirkungslogik</p><h2 id="impact-architecture-title">Von der Ausgangslage zur überprüfbaren Rückkopplung.</h2></div></div>
+        <ol>
+          <li><strong>Problem und Zustand</strong><span>Was ist der Ausgangspunkt?</span></li>
+          <li><strong>Politisches Ziel</strong><span>Was soll sich verändern?</span></li>
+          <li><strong>Instrument und Prüfung</strong><span>Was wird vorgeschlagen und bereits geprüft?</span></li>
+          <li><strong>WÖk-Systemcheck</strong><span>Welche Wirkpfade, Risiken und Grenzen sind relevant?</span></li>
+          <li><strong>Beobachtung und Zurechnung</strong><span>Was verändert sich tatsächlich – und wodurch?</span></li>
+          <li><strong>Bewertung und Lernen</strong><span>Was sollte bei der nächsten Entscheidung anders geschehen?</span></li>
+        </ol>
+      </section>
+
       <section className="shell section section-compact mandate-teaser" aria-labelledby="mandate-teaser-title">
         <div className="section-heading"><div><p className="eyebrow">Mandat &amp; Praxis</p><h2 id="mandate-teaser-title">Versprechen, Vereinbarung, Entscheidung – und ihre Wirkung.</h2></div><Link className="text-link" href="/mandat-und-praxis">Bereich öffnen <span aria-hidden="true">→</span></Link></div>
-        <p className="lead">Wahlprogramme und Koalitionsvertrag werden mit konkreten, amtlich belegten Entscheidungen verbunden. Die daraus entstehende Umsetzungsbilanz bleibt getrennt vom WÖk-Wirkungscheck: Eine umgesetzte Zusage ist nicht automatisch eine positive Netto-Wirkung.</p>
+        <p className="lead">Wahlprogramme, Koalitionsvertrag, konkrete Entscheidungen und spätere Beobachtungen werden miteinander verbunden. Die Umsetzungsbilanz bleibt vom WÖk-Wirkungscheck getrennt: Eine umgesetzte Zusage ist nicht automatisch eine positive Netto-Wirkung.</p>
         <p><Link className="text-link" href="/fachanalysen">Auch vertiefende WÖk-Fachanalysen ansehen <span aria-hidden="true">→</span></Link></p>
       </section>
 
@@ -108,11 +120,11 @@ export default async function HomePage({ searchParams }: { searchParams: Promise
       </section>
 
       <section className="shell section trust-section" aria-labelledby="trust-title">
-        <div><p className="eyebrow">Unabhängig und nachvollziehbar</p><h2 id="trust-title">Ein eigener Maßstab – offen statt versteckt.</h2><p className="lead">Das Portal wird vom Institut für Wirkungsökonomie herausgegeben. Es ist kein Angebot des Deutschen Bundestages, keiner Partei und keiner Fraktion. Die Agenda 2030 und ihre 17 SDGs bilden den gemeinsamen Ausgangsrahmen; SDG+ ergänzt ihn als offengelegte Erweiterung der Wirkungsökonomie um prüfbare Voraussetzungen für Demokratie. Partei, Fraktion und Mehrheitsprognose bestimmen keine fachliche Einordnung.</p></div>
+        <div><p className="eyebrow">Unabhängig und nachvollziehbar</p><h2 id="trust-title">Ein offener Referenzrahmen statt einer versteckten Wertung.</h2><p className="lead">Das Portal wird vom Institut für Wirkungsökonomie herausgegeben. Es ist kein Angebot des Deutschen Bundestages, keiner Partei und keiner Fraktion. SDGs, die offengelegte WÖk-Erweiterung SDG+, Mensch–Planet–Demokratie und der jeweilige Rechtsrahmen werden sichtbar getrennt angewandt. Partei, Fraktion und Mehrheitsprognose bestimmen keine fachliche Einordnung.</p></div>
         <ul>
           <li><strong>Amtliche Fakten getrennt</strong><span>Entscheidungsstand, Fassungen und Abstimmungsergebnisse stammen aus gekennzeichneten Originalquellen. Die WÖk-Analyse bleibt davon sichtbar getrennt.</span></li>
           <li><strong>Keine Blackbox</strong><span>Berechnung, Quellen, Annahmen und Grenzen können auf jeder veröffentlichten Seite geöffnet werden.</span></li>
-          <li><strong>Gemeinsamer Maßstab</strong><span>Agenda 2030, SDGs, SDG+ und der Rechtsrahmen machen sichtbar, woran Wirkung eingeordnet wird – nicht nach Parteiprogramm oder Bauchgefühl.</span></li>
+          <li><strong>Getrennte Maßstäbe</strong><span>SDGs, SDG+, Mensch–Planet–Demokratie und Recht werden nicht zu einer verdeckten Durchschnittsnote verrechnet.</span></li>
           <li><strong>Keine Personenbewertung</strong><span>Das Portal bewertet keine Menschen, Gesinnungen oder politischen Nutzerprofile.</span></li>
         </ul>
         <p><Link className="text-link" href="/transparenz#referenzrahmen">Warum dieser Referenzrahmen? <span aria-hidden="true">→</span></Link></p>
