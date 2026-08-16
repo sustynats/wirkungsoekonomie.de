@@ -16,7 +16,8 @@ export const metadata: Metadata = {
   applicationName: "Wirkungsportal Parlament",
   authors: [{ name: "Institut für Wirkungsökonomie", url: "https://wirkungsoekonomie.de" }],
   creator: "Institut für Wirkungsökonomie",
-  publisher: "Institut für Wirkungsökonomie"
+  publisher: "Institut für Wirkungsökonomie",
+  icons: { icon: "/favicon.svg" }
 };
 
 export const dynamic = "force-dynamic";

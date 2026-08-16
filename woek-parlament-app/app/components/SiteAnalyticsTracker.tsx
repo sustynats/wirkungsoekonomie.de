@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 
-const endpoint = "https://fganranxrdyewbjpvubx.supabase.co/functions/v1/site-event";
+const endpoint = "/api/site-analytics";
 const sessionKey = "woek-parliament-site-session";
 const visitorKey = "woek-parliament-site-visitor";
 
@@ -42,6 +42,8 @@ function send(eventType: "page_view" | "heartbeat", pathname: string) {
     referrer: document.referrer,
     sessionId: identifier(sessionKey, sessionStorage),
     visitorId: identifier(visitorKey, localStorage),
+    site: "parlament",
+    hostname: window.location.hostname,
     device: device()
   });
   void fetch(endpoint, {

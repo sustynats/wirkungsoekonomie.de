@@ -1,7 +1,16 @@
 import JSZip from "jszip";
+import { unstable_cache } from "next/cache";
 
 const officialMemberDataUrl = "https://www.bundestag.de/resource/blob/472878/MdB-Stammdaten.zip";
 const officialMembersPage = "https://www.bundestag.de/abgeordnete";
+
+const stateCodes: Record<string, string> = {
+  BB: "Brandenburg", BE: "Berlin", BW: "Baden-Württemberg", BY: "Bayern",
+  HB: "Bremen", HE: "Hessen", HH: "Hamburg", MV: "Mecklenburg-Vorpommern",
+  NI: "Niedersachsen", NW: "Nordrhein-Westfalen", RP: "Rheinland-Pfalz",
+  SH: "Schleswig-Holstein", SL: "Saarland", SN: "Sachsen",
+  ST: "Sachsen-Anhalt", TH: "Thüringen"
+};
 
 export type OfficialMemberRecord = {
   externalMemberId: string;
@@ -9,6 +18,7 @@ export type OfficialMemberRecord = {
   familyName: string;
   displayName: string;
   parliamentaryGroup: string | null;
+  federalState: string | null;
   constituency: string | null;
   mandateType: string | null;
   officialMemberUrl: string;
@@ -24,7 +34,9 @@ function tag(value: string, name: string) {
 }
 
 function currentTerm(value: string) {
-  return [...value.matchAll(/<WAHLPERIODE>([\s\S]*?)<\/WAHLPERIODE>/gi)].map((match) => match[1]).find((term) => tag(term, "WP") === "21") ?? null;
+  return [...value.matchAll(/<WAHLPERIODE>([\s\S]*?)<\/WAHLPERIODE>/gi)]
+    .map((match) => match[1])
+    .find((term) => tag(term, "WP") === "21" && !tag(term, "MDBWP_BIS")) ?? null;
 }
 
 function currentGroup(value: string) {
@@ -32,6 +44,11 @@ function currentGroup(value: string) {
     if (tag(institution[1], "INSART_LANG") === "Fraktion/Gruppe") return tag(institution[1], "INS_LANG") || null;
   }
   return null;
+}
+
+function federalState(term: string) {
+  const raw = tag(term, "WKR_LAND") || tag(term, "LISTE");
+  return stateCodes[raw.replace(/G$/, "").toUpperCase()] ?? null;
 }
 
 function memberName(value: string) {
@@ -69,6 +86,7 @@ export async function fetchOfficialCurrentMembers() {
       familyName: name.familyName,
       displayName: name.displayName,
       parliamentaryGroup: currentGroup(term),
+      federalState: federalState(term),
       constituency: tag(term, "WKR_NAME") || null,
       mandateType: tag(term, "MANDATSART") || null,
       officialMemberUrl: officialMembersPage
@@ -76,6 +94,14 @@ export async function fetchOfficialCurrentMembers() {
   }
   return members.sort((left, right) => left.displayName.localeCompare(right.displayName, "de-DE"));
 }
+
+/** Cache the official public roster so the large XML archive is not fetched
+ * and parsed for every public profile request. */
+export const fetchOfficialCurrentMembersCached = unstable_cache(
+  fetchOfficialCurrentMembers,
+  ["bundestag-current-members-wp21-active-v2"],
+  { revalidate: 86_400, tags: ["bundestag-current-members"] }
+);
 
 export function normalizedMemberName(familyName: string, givenName: string) {
   return `${familyName}|${givenName}`.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^\p{L}\p{N}|]+/gu, "").toLocaleLowerCase("de-DE");

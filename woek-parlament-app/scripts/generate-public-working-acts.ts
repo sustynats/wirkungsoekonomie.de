@@ -75,6 +75,15 @@ function records(value: unknown) {
   return Array.isArray(value) ? value.map(object) : [];
 }
 
+function recordOrStringItems(value: unknown, field: string) {
+  if (!Array.isArray(value)) return [] as Array<JsonRecord | string>;
+  return value.map((item, index) => {
+    if (typeof item === "string" && item.trim()) return item.trim();
+    if (item && typeof item === "object" && !Array.isArray(item)) return item as JsonRecord;
+    throw new Error(`${field}[${index}] has an unsupported public source shape.`);
+  });
+}
+
 function strings(value: unknown, cap = 8) {
   return Array.isArray(value)
     ? [...new Set(value.filter((item): item is string => typeof item === "string" && item.trim().length > 0).map((item) => item.trim()))].slice(0, cap)
@@ -253,7 +262,7 @@ function publicReviewDetail(result: JsonRecord, impactPaths: JsonRecord[]): Publ
   const detail: PublicReviewDetail = {
     impactPaths: impactPaths.map((path, index) => ({
       id: text(path.path_id, `P${index + 1}`),
-      lever: text(path.lever, "Auslöser und Umsetzungsschritt werden weiter präzisiert."),
+      lever: text(path.lever, text(path.mechanism, `Wirkpfad ${text(path.path_id, `P${index + 1}`)}`)),
       hypothesis: text(path.hypothesis, "Die dokumentierte Wirkannahme wird mit Quellen und Vergleichsfragen weiter geprüft."),
       direction: text(path.direction, "EVIDENCE_OPEN"),
       affectedDimensions: strings(path.affected_mpd_dimensions, 8),
@@ -262,13 +271,15 @@ function publicReviewDetail(result: JsonRecord, impactPaths: JsonRecord[]): Publ
       risks: strings(path.risks_and_side_effects, 16),
       evidenceBoundary: text(path.evidence_boundary, text(exAnte.evidence_boundary, "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.")),
       evidenceStatus: text(path.evidence_status, "EVIDENCE_OPEN"),
-      changeLever: text(path.change_lever_for_positive_net_impact, "Noch keine belastbar dokumentierte Stellschraube hinterlegt.")
+      changeLever: text(path.change_lever_for_positive_net_impact)
     })),
-    impactDomains: records(result.impact_domains).map((domain) => ({
-      domain: text(domain.domain, "Wirkungsbereich"),
-      relevance: strings(domain.relevance, 16),
-      assessment: text(domain.assessment, "EVIDENCE_OPEN")
-    })),
+    impactDomains: recordOrStringItems(result.impact_domains, "impact_domains").map((domain) => typeof domain === "string"
+      ? { domain, relevance: [], assessment: "EX_ANTE_ONLY" }
+      : {
+          domain: text(domain.domain),
+          relevance: strings(domain.relevance, 16),
+          assessment: text(domain.assessment, "EVIDENCE_OPEN")
+        }).filter((domain) => domain.domain),
     calculations: records(result.calculation_requirements).map((calculation, index) => ({
       id: text(calculation.calculation_id, `C${index + 1}`),
       name: text(calculation.name, "Berechnungsansatz"),
@@ -284,11 +295,13 @@ function publicReviewDetail(result: JsonRecord, impactPaths: JsonRecord[]): Publ
       status: text(risk.status, "EVIDENCE_OPEN"),
       nonCompensationRelevant: risk.non_compensation_relevance === true
     })),
-    boundaries: records(result.non_compensable_boundaries).map((boundary) => ({
-      boundary: text(boundary.boundary, "Schutzgrenze wird geprüft."),
-      status: text(boundary.gate_status, "MUST_BE_TESTED"),
-      reason: text(boundary.reason, "Die Schutzgrenze wird nicht mit positiven Wirkungen in anderen Bereichen verrechnet.")
-    })),
+    boundaries: recordOrStringItems(result.non_compensable_boundaries, "non_compensable_boundaries").map((boundary) => typeof boundary === "string"
+      ? { boundary, status: "MUST_BE_TESTED" }
+      : {
+          boundary: text(boundary.boundary),
+          status: text(boundary.gate_status, "MUST_BE_TESTED"),
+          reason: text(boundary.reason) || undefined
+        }).filter((boundary) => boundary.boundary),
     counterfactuals: records(result.counterfactuals).map((counterfactual) => ({
       question: text(counterfactual.question, "Welche Entwicklung wäre ohne die Entscheidung plausibel?"),
       status: text(counterfactual.status, "REQUIRED_NOT_ESTABLISHED"),

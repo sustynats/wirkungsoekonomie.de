@@ -46,6 +46,7 @@ export type Fachanalyse = {
   learningPoints?: string[];
   sources: FachanalyseSource[];
   publicDownload?: { href: string; label: string; description: string };
+  fullPublicationSource?: { href: string; label: string; description: string };
 };
 
 const publishedFachanalysen = publicationData as Fachanalyse[];
@@ -65,7 +66,92 @@ const documentedAnalyses: Fachanalyse[] = [
     analysisDate: "2026-08-15",
     scope: "Sondervermögen Infrastruktur und Klimaneutralität",
     summary: "Die Dokumentation ordnet die Investitionsarchitektur nach Wirkungspotenzialen, Wirkungsrisiken und Prüffragen. Sie ersetzt keine Gesamtwertung: zusätzliche Veränderungen, Schutzgrenzen und spätere Beobachtung bleiben getrennt.",
-    sources: [],
+    sources: [
+      {
+        slug: "grundgesetz-artikel-143h",
+        title: "Grundgesetz, Artikel 143h",
+        institution: "Bundesministerium der Justiz / Bundesamt für Justiz",
+        canonicalUrl: "https://www.gesetze-im-internet.de/gg/art_143h.html",
+        documentDate: "2025-03-25",
+        documentType: "RECHTSGRUNDLAGE",
+        temporalClass: "AVAILABLE_AT_DECISION_TIME",
+        location: "Artikel 143h Absatz 1 und 2",
+        supports: "Belegt Volumen, Zusätzlichkeitsanforderung, Laufzeit, KTF-Zuführung und Länderanteil des Sondervermögens.",
+        doesNotSupport: "Belegt nicht, welche einzelnen Investitionen zusätzliche positive Zustandsveränderungen erzeugen."
+      },
+      {
+        slug: "svikg-zweck-sondervermoegen",
+        title: "Gesetz zur Errichtung eines Sondervermögens Infrastruktur und Klimaneutralität – § 2",
+        institution: "Bundesministerium der Justiz / Bundesamt für Justiz",
+        canonicalUrl: "https://www.gesetze-im-internet.de/svikg/__2.html",
+        documentDate: "2025-10-02",
+        documentType: "RECHTSGRUNDLAGE",
+        temporalClass: "CURRENT_REFERENCE",
+        location: "§ 2 Zweck des Sondervermögens",
+        supports: "Belegt den gesetzlichen Zweck und den Rahmen von bis zu 500 Milliarden Euro.",
+        doesNotSupport: "Belegt weder Mittelabfluss noch Zusätzlichkeit oder beobachtete Infrastruktur- und Klimawirkung."
+      },
+      {
+        slug: "lukifg-infrastrukturinvestitionen-laender-kommunen",
+        title: "Länder-und-Kommunal-Infrastrukturfinanzierungsgesetz",
+        institution: "Bundesministerium der Justiz / Bundesamt für Justiz",
+        canonicalUrl: "https://www.gesetze-im-internet.de/lukifg/",
+        documentDate: "2025-10-20",
+        documentType: "RECHTSGRUNDLAGE",
+        temporalClass: "CURRENT_REFERENCE",
+        location: "§§ 1–10",
+        supports: "Belegt Ziel, Verteilung, Förderbereiche, Berichtspflichten und Rückforderungsregeln für die Ländersäule.",
+        doesNotSupport: "Belegt keine projektspezifische Wirkung in Ländern oder Kommunen."
+      },
+      {
+        slug: "bmf-svik-monitoringbericht-2025",
+        title: "Monitoringbericht zum Sondervermögen für Infrastruktur und Klimaneutralität über das Jahr 2025",
+        institution: "Bundesministerium der Finanzen",
+        canonicalUrl: "https://www.bundesfinanzministerium.de/Content/DE/Downloads/Broschueren_Bestellservice/svik-monitoringbericht-2025.html",
+        documentDate: "2026-06-01",
+        documentType: "AMTLICHER_MONITORINGBERICHT",
+        temporalClass: "PUBLISHED_AFTER_DECISION",
+        location: "Gesamtbericht, insbesondere Mittelabfluss, Projektphasen und Monitoringmethodik",
+        supports: "Belegt erste Vollzugs-, Planungs- und Auszahlungsstände des Jahres 2025.",
+        doesNotSupport: "Mittelbindung und Mittelabfluss allein belegen keine kausal zurechenbare Zustandswirkung."
+      },
+      {
+        slug: "uba-treibhausgas-projektionen-2026",
+        title: "Treibhausgas-Projektionen 2026 für Deutschland",
+        institution: "Umweltbundesamt",
+        canonicalUrl: "https://www.umweltbundesamt.de/publikationen/treibhausgas-projektionen-2026-fur-deutschland",
+        documentDate: "2026-06-12",
+        documentType: "AMTLICHE_PROJEKTION",
+        temporalClass: "PUBLISHED_AFTER_DECISION",
+        location: "Projektionsbericht und sektorale Sensitivitätsanalysen",
+        supports: "Belegt modellierte Emissionspfade, sektorale Zielabstände und Sensitivitäten im aktuellen Instrumentenrahmen.",
+        doesNotSupport: "Isoliert nicht den kausalen Beitrag einzelner SVIK-Projekte."
+      },
+      {
+        slug: "kfw-kommunalpanel-2026",
+        title: "KfW-Kommunalpanel 2026",
+        institution: "KfW Bankengruppe",
+        canonicalUrl: "https://www.kfw.de/%C3%9Cber-die-KfW/Service/Download-Center/Konzernthemen/Research/KfW-Kommunalpanel/",
+        documentDate: "2026-05-01",
+        documentType: "REPRAESENTATIVE_BEFRAGUNG",
+        temporalClass: "PUBLISHED_AFTER_DECISION",
+        location: "Bericht und Tabellenband 2026",
+        supports: "Belegt kommunale Investitionsbedarfe, Planungen und Umsetzungshemmnisse aus der repräsentativen Kommunalbefragung.",
+        doesNotSupport: "Belegt keine Wirkung einzelner geförderter Projekte und keine vollständige Kausalität des Sondervermögens."
+      },
+      {
+        slug: "bundestag-sondervermoegen-ueberblick",
+        title: "Die Sondervermögen des Bundes – ein Überblick",
+        institution: "Deutscher Bundestag",
+        canonicalUrl: "https://www.bundestag.de/dokumente/textarchiv/sondervermoegen-doku-1106000",
+        documentDate: "2026-08-01",
+        documentType: "PARLAMENTARISCHER_UEBERBLICK",
+        temporalClass: "CURRENT_REFERENCE",
+        location: "Abschnitt zum Sondervermögen Infrastruktur und Klimaneutralität und verlinkte Drucksachen",
+        supports: "Belegt parlamentarische Einordnung, Beschlussweg, Volumen und zentrale Dokumente.",
+        doesNotSupport: "Belegt keine positive Netto-Wirkung des Portfolios."
+      }
+    ],
     publicDownload: {
       href: "/downloads/fachanalysen/wirkungsoekonomische-analyse-sondervermoegen-infrastruktur-klimaneutralitaet.pdf",
       label: "Fachliche Dokumentation als PDF",

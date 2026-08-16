@@ -113,7 +113,7 @@ export type PublicRiskDetail = {
 export type PublicBoundaryDetail = {
   boundary: string;
   status: string;
-  reason: string;
+  reason?: string;
 };
 
 export type PublicCounterfactualDetail = {
@@ -142,6 +142,27 @@ export type PublicReviewDetail = {
   feedback?: PublicFeedbackDetail;
 };
 
+export type PublicVoteSummary = {
+  members?: number;
+  yes?: number;
+  no?: number;
+  abstain?: number;
+  notVoted?: number;
+};
+
+export type PublicVoteLayer = {
+  status: string;
+  rollCall: string;
+  date?: string;
+  result?: string;
+  overall?: PublicVoteSummary;
+  factions: Array<{ name: string; result?: string; summary?: PublicVoteSummary }>;
+  sourceUrl?: string;
+  note?: string;
+  sourceConflict?: string;
+  individualRecordsStatus?: string;
+};
+
 /**
  * A public working act is deliberately narrower than a published professional
  * opinion. It makes the official decision, the provisional impact logic and
@@ -158,6 +179,7 @@ export type PublicWorkingAct = {
   counterfactualQuestions: string[];
   normativeMapping?: PublicNormativeMapping;
   reviewDetail?: PublicReviewDetail;
+  voteLayer?: PublicVoteLayer;
 };
 
 export type ParliamentaryCase = {

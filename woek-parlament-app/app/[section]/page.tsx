@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { CaseCard } from "@/app/components/CaseCard";
+import { DecisionCaseExplorer } from "@/app/components/DecisionCaseExplorer";
 import { listPublishedCases } from "@/lib/cases";
 
 const sectionCopy: Record<string, { eyebrow: string; title: string; lead: string; empty: string }> = {
@@ -34,7 +35,7 @@ export default async function SectionPage({ params }: { params: Promise<{ sectio
       {section === "transparenz" && <Transparency />}
       {section === "werkzeuge" && <Toolbox />}
       {section === "monitor" && <Monitor />}
-      {cases.length > 0 ? <div className="card-grid">{cases.map((item) => <CaseCard item={item} key={item.slug} />)}</div> : !hasStandaloneContent && <div className="notice"><strong>{content.empty}</strong></div>}
+      {cases.length > 0 ? section === "entscheidungen" || section === "bundestag" ? <DecisionCaseExplorer cases={cases} /> : <div className="card-grid">{cases.map((item) => <CaseCard item={item} key={item.slug} />)}</div> : !hasStandaloneContent && <div className="notice"><strong>{content.empty}</strong></div>}
       <p className="page-return"><Link href="/">← Zur Portalstartseite</Link></p>
     </div>
   );
@@ -144,6 +145,7 @@ function Transparency() {
     <section className="transparency-list" aria-label="Betrieb, Datenschutz und Grenzen">
       <article><h2>Regelmäßigkeit ohne Scheinaktualität</h2><p>Neue Hinweise erscheinen nur bei amtlich bestätigtem Verfahrensstand. Analysen und Updates erscheinen, wenn ihre Quellen, Annahmen und Grenzen nachvollziehbar dokumentiert sind – nicht nach einem künstlichen Takt.</p></article>
       <article><h2>Freiwillige E-Mail-Updates</h2><p>Wirkungschecks per E-Mail gibt es nur nach bestätigter Anmeldung. Keine Öffnungs- oder Klickmessung, keine politischen Nutzerprofile und eine direkte Abmeldung in jeder Nachricht.</p></article>
+      <article><h2>Datensparsame Nutzungsstatistik</h2><p>Das Portal zählt Seitenaufrufe über eine eigene technische Schnittstelle, damit Fehler, Nutzungstiefe und Verbesserungsbedarf erkennbar werden. Es nutzt keine Werbe- oder Fremdtrackingdienste, respektiert „Do Not Track“ und erstellt weder politische noch personenbezogene Interessenprofile. Die Auswertung erscheint ausschließlich zusammengefasst und nach Portalbereich getrennt.</p></article>
       <article><h2>Korrekturen sind Teil des Systems</h2><p>Wenn Quellen, Daten, Berechnungen oder eine Einordnung strittig werden, wird die Prüfung dokumentiert. Eine Korrektur ersetzt nicht stillschweigend die vorherige Version.</p></article>
       <article><h2>Klare Grenzen</h2><p>Das Portal ist kein Rechtsgutachten, keine Wahlhilfe, kein Parteiranking und kein Personen- oder Social-Credit-System. Es ersetzt weder Parlament noch demokratische Entscheidung.</p></article>
     </section>

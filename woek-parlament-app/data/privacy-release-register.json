@@ -1,17 +1,21 @@
 {
-  "privacy_notice_version": "2026-08-15.2",
-  "reviewed_at": "2026-08-15",
+  "privacy_notice_version": "2026-08-16.1",
+  "reviewed_at": "2026-08-16",
   "review_scope": [
     "voluntary email updates with double opt-in",
     "self-service unsubscribe with recipient-record deletion",
     "local browser storage and cross-domain bookmark handoff",
-    "own, privacy-preserving reach measurement"
+    "own, privacy-preserving reach measurement",
+    "portal-specific first-party analytics proxy with Do Not Track support"
   ],
   "tracking": {
     "advertising_networks": false,
     "google_analytics": false,
     "mailchimp": false,
     "email_open_tracking": false,
-    "email_click_tracking": false
+    "email_click_tracking": false,
+    "third_party_advertising_tracking": false,
+    "do_not_track_respected": true,
+    "analytics_site_scope": "parlament"
   }
 }

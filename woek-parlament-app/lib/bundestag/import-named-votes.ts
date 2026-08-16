@@ -15,6 +15,7 @@ async function persistMembers(members: OfficialMemberRecord[]) {
       display_name: member.displayName,
       official_member_url: member.officialMemberUrl,
       parliamentary_group: member.parliamentaryGroup,
+      federal_state: member.federalState,
       constituency: member.constituency,
       mandate_type: member.mandateType,
       status: "ACTIVE",

@@ -13,6 +13,7 @@ export default async function SaxonyAnhaltPage() {
   if (!saxonyAnhalt?.election) return null;
   const electionDate = new Intl.DateTimeFormat("de-DE", { dateStyle: "long" }).format(new Date(`${saxonyAnhalt.election.date}T12:00:00`));
   const programmeSummaries = await Promise.all(saxonyProgrammeAnalyses.map(async (analysis) => ({ analysis, summary: await readProgrammeSummary(analysis) })));
+  const programmeCommitments = programmeSummaries.reduce((sum, entry) => sum + (entry.summary?.commitments ?? 0), 0);
 
   return (
     <main>
@@ -33,6 +34,8 @@ export default async function SaxonyAnhaltPage() {
             <p>Deshalb zeigt der Vergleich Wirkungspotenzial und Wirkungsrisiken klar getrennt von tatsächlich beobachteter Wirkung. Eine Parteizugehörigkeit ist kein Bewertungskriterium.</p>
             <dl>
               <div><dt>Wahltag</dt><dd>{electionDate}</dd></div>
+              <div><dt>Prüfbestand</dt><dd>{programmeCommitments.toLocaleString("de-DE")} Zusageeinheiten</dd></div>
+              <div><dt>Landesziele</dt><dd>28 Ziele im Referenzregister</dd></div>
               <div><dt>Start</dt><dd>Quellen- und Programmprüfung</dd></div>
               <div><dt>Danach</dt><dd>Entscheidungen und Umsetzung verfolgen</dd></div>
             </dl>

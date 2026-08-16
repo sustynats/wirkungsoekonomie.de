@@ -1,0 +1,2391 @@
+{
+  "schema_version": "1.0",
+  "generated_from": "authoritative-release-1.0",
+  "rule": "Technical lint only. No direction value was changed.",
+  "total_paths": 128,
+  "direction_counts": {
+    "POSITIVE_POTENTIAL": 49,
+    "NEGATIVE_RISK": 20,
+    "AMBIVALENT": 59
+  },
+  "flagged_paths": 12,
+  "rows": [
+    {
+      "case_id": "05454260-5f17-4ba0-b3df-5c32a4cf36db",
+      "public_title": "Beschleunigte Zulassungs- und Planungsverfahren",
+      "path_id": "P1",
+      "hypothesis": "Beschleunigte Zulassungsverfahren können die Zeit bis zur Realisierung von Erneuerbare-Energien-Projekten verkürzen und damit zusätzliche bzw. frühere erneuerbare Strom- und Wärmeerzeugung ermöglichen.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [
+        "SDG_07",
+        "SDG_14",
+        "SDG_PLUS_RULE_OF_LAW",
+        "GG_ART_20A_NATURAL_FOUNDATIONS"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "05454260-5f17-4ba0-b3df-5c32a4cf36db",
+      "public_title": "Beschleunigte Zulassungs- und Planungsverfahren",
+      "path_id": "P2",
+      "hypothesis": "Klar ausgewiesene Beschleunigungsgebiete und planungsrechtliche Klarheit können Investitions- und Planungssicherheit erhöhen.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [
+        "SDG_16",
+        "SDG_03",
+        "SDG_08",
+        "SDG_09",
+        "SDG_PLUS_RULE_OF_LAW",
+        "GG_ART_109_2_MACROECONOMIC_BALANCE"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "05454260-5f17-4ba0-b3df-5c32a4cf36db",
+      "public_title": "Beschleunigte Zulassungs- und Planungsverfahren",
+      "path_id": "P3",
+      "hypothesis": "Verfahrensbeschleunigung kann bei unzureichenden Schutzmechanismen Prüf-, Beteiligungs- oder Abwägungstiefe reduzieren und dadurch Natur-, Wasser- oder lokale Akzeptanzrisiken erhöhen.",
+      "current_direction": "NEGATIVE_RISK",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [
+        "SDG_06",
+        "SDG_15",
+        "SDG_PLUS_DEMOCRACY",
+        "SDG_PLUS_DISCOURSE_CAPACITY",
+        "SDG_PLUS_RULE_OF_LAW",
+        "GG_ART_20A_NATURAL_FOUNDATIONS"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "05454260-5f17-4ba0-b3df-5c32a4cf36db",
+      "public_title": "Beschleunigte Zulassungs- und Planungsverfahren",
+      "path_id": "P4",
+      "hypothesis": "Ein schnellerer Ausbau kann fossile Erzeugung verdrängen; ob und in welchem Umfang dies tatsächlich geschieht, hängt von Netz, Speicher, Nachfrage, Standort und realer Inbetriebnahme ab.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [
+        "SDG_07",
+        "SDG_13",
+        "SDG_PLUS_RULE_OF_LAW"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "14867d53-4b63-49d0-9889-73fc60d41a5d",
+      "public_title": "Sondervermögen Infrastruktur und Klimaneutralität",
+      "path_id": "P1",
+      "hypothesis": "Mehrjährige Finanzierungssicherheit kann Investitionen in Verkehr, Energie, Digitalisierung, Krankenhäuser, Bildung, Forschung, Zivil-/Bevölkerungsschutz und Klimaneutralität ermöglichen oder beschleunigen.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "14867d53-4b63-49d0-9889-73fc60d41a5d",
+      "public_title": "Sondervermögen Infrastruktur und Klimaneutralität",
+      "path_id": "P2",
+      "hypothesis": "Modernisierte öffentliche Infrastruktur kann Leistungsfähigkeit, Daseinsvorsorge und Standortproduktivität erhöhen.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "14867d53-4b63-49d0-9889-73fc60d41a5d",
+      "public_title": "Sondervermögen Infrastruktur und Klimaneutralität",
+      "path_id": "P3",
+      "hypothesis": "Ohne harte Zusätzlichkeits- und Wirkungsregeln können Mittel bestehende Haushaltsausgaben ersetzen oder in Projekte mit geringer Netto-Wirkung fließen.",
+      "current_direction": "NEGATIVE_RISK",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "14867d53-4b63-49d0-9889-73fc60d41a5d",
+      "public_title": "Sondervermögen Infrastruktur und Klimaneutralität",
+      "path_id": "P4",
+      "hypothesis": "Bauliche Großinvestitionen können erhebliche Material-, Flächen- und Emissionswirkungen erzeugen und bei falscher Technologiewahl Lock-ins schaffen.",
+      "current_direction": "NEGATIVE_RISK",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "14867d53-4b63-49d0-9889-73fc60d41a5d",
+      "public_title": "Sondervermögen Infrastruktur und Klimaneutralität",
+      "path_id": "P5",
+      "hypothesis": "Transparente Projektwahl und Wirkungsmonitoring können Vertrauen und demokratische Rechenschaft stärken; reine Mittelabflusskontrolle reicht dafür nicht aus.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "1bcb54ff-f064-43a1-bf98-bd45a5a2e212",
+      "public_title": "BKA-Datenerhebung bei Kontaktpersonen",
+      "path_id": "P1",
+      "hypothesis": "Eine rechtssicher ausgestaltete Befugnis kann dem BKA in begründeten Fällen Informationsgewinn zur Verhinderung terroristischer Anschläge ermöglichen.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "1bcb54ff-f064-43a1-bf98-bd45a5a2e212",
+      "public_title": "BKA-Datenerhebung bei Kontaktpersonen",
+      "path_id": "P2",
+      "hypothesis": "Präzisere gesetzliche Voraussetzungen können Rechtsklarheit und gerichtliche Kontrollierbarkeit erhöhen.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "1bcb54ff-f064-43a1-bf98-bd45a5a2e212",
+      "public_title": "BKA-Datenerhebung bei Kontaktpersonen",
+      "path_id": "P3",
+      "hypothesis": "Besondere Datenerhebungsmittel gegenüber Kontaktpersonen können tief in Privatsphäre, informationelle Selbstbestimmung und unbeobachtete Kommunikation eingreifen.",
+      "current_direction": "NEGATIVE_RISK",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "1bcb54ff-f064-43a1-bf98-bd45a5a2e212",
+      "public_title": "BKA-Datenerhebung bei Kontaktpersonen",
+      "path_id": "P4",
+      "hypothesis": "Fehlklassifikationen oder zu weite Kontaktpersonenbegriffe können unbeteiligte Personen erfassen und Vertrauens-/Chilling-Effekte erzeugen.",
+      "current_direction": "NEGATIVE_RISK",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "2c9d8b24-ce03-4784-93b7-cce23829bb68",
+      "public_title": "Flächenbedarfe der Eisenbahninfrastruktur",
+      "path_id": "P1",
+      "hypothesis": "Eine frühzeitige Sicherung künftig benötigter Bahnflächen kann spätere Engpässe, Rückkäufe und teure Neuplanungen vermeiden und den Ausbau des Schienenverkehrs erleichtern.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "2c9d8b24-ce03-4784-93b7-cce23829bb68",
+      "public_title": "Flächenbedarfe der Eisenbahninfrastruktur",
+      "path_id": "P2",
+      "hypothesis": "Die Verknüpfung mit dem Deutschlandtakt kann Flächensicherung stärker an einem langfristigen Verkehrs- und Infrastrukturkonzept ausrichten.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "2c9d8b24-ce03-4784-93b7-cce23829bb68",
+      "public_title": "Flächenbedarfe der Eisenbahninfrastruktur",
+      "path_id": "P3",
+      "hypothesis": "Zu weitgehende Flächensicherung kann Wohnungsbau oder andere kommunale Nutzungen blockieren, obwohl ein späterer Bahnbedarf unsicher bleibt.",
+      "current_direction": "NEGATIVE_RISK",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "2c9d8b24-ce03-4784-93b7-cce23829bb68",
+      "public_title": "Flächenbedarfe der Eisenbahninfrastruktur",
+      "path_id": "P4",
+      "hypothesis": "Da die Vorlage abgelehnt wurde, kann ihre tatsächliche Wirkung nicht ex post beobachtet werden; relevant ist der Vergleich mit der stattdessen gewählten Rechtslage.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "37e5199d-a236-432d-a979-adfe6fcda478",
+      "public_title": "Haftgründe und Ausweisung durch Strafurteil",
+      "path_id": "P1",
+      "hypothesis": "Eine frühere Inhaftierung kann in eng begrenzten Hochrisikofällen Flucht, Verdunkelung oder weitere schwere Taten verhindern.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "Freiheitsentzug ohne klassische Haftgründe",
+        "Überbelegung",
+        "Vorverurteilung",
+        "selektive Anwendung"
+      ],
+      "mapping_targets": [
+        "SDG_16",
+        "SDG_PLUS_RULE_OF_LAW",
+        "GG_FUNDAMENTAL_RIGHTS"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "37e5199d-a236-432d-a979-adfe6fcda478",
+      "public_title": "Haftgründe und Ausweisung durch Strafurteil",
+      "path_id": "P2",
+      "hypothesis": "Die Bündelung kann Verfahren verkürzen und Zuständigkeiten klarer machen.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "schematische Doppelbelastung",
+        "unzureichende Prüfung familiärer Bindungen",
+        "Fehlentscheidungen durch fachfremde Zuständigkeit",
+        "Diskriminierungswirkung"
+      ],
+      "mapping_targets": [
+        "SDG_16",
+        "SDG_PLUS_RULE_OF_LAW",
+        "GG_FUNDAMENTAL_RIGHTS"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "37e5199d-a236-432d-a979-adfe6fcda478",
+      "public_title": "Haftgründe und Ausweisung durch Strafurteil",
+      "path_id": "P3",
+      "hypothesis": "Parallelverfahren könnten reduziert werden.",
+      "current_direction": "NEGATIVE_RISK",
+      "direction_rationale": null,
+      "risks": [
+        "Verkürzung effektiven Rechtsschutzes",
+        "strukturelle Fehlprüfung",
+        "fehlende Kontrolle verwaltungsrechtlicher Spezialfragen"
+      ],
+      "mapping_targets": [
+        "SDG_16",
+        "SDG_PLUS_RULE_OF_LAW",
+        "GG_FUNDAMENTAL_RIGHTS"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "37e5199d-a236-432d-a979-adfe6fcda478",
+      "public_title": "Haftgründe und Ausweisung durch Strafurteil",
+      "path_id": "P4",
+      "hypothesis": "Eine faktenbasierte, problemgenaue Sicherheitsdebatte kann Vertrauen stärken.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "Stigmatisierung",
+        "Scheinkausalität aus Tatverdächtigenstatistik",
+        "Polarisierung",
+        "Vertrauensverlust durch überzogene Wirkversprechen"
+      ],
+      "mapping_targets": [
+        "SDG_16",
+        "SDG_03",
+        "SDG_PLUS_RULE_OF_LAW",
+        "SDG_PLUS_DISCOURSE_CAPACITY",
+        "SDG_PLUS_INSTITUTIONAL_TRUST",
+        "GG_FUNDAMENTAL_RIGHTS"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "43c02ec8-e1f6-42de-93b8-8bd0731a2565",
+      "public_title": "Steuerliches Investitionssofortprogramm",
+      "path_id": "P1",
+      "hypothesis": "Degressive Abschreibung kann Liquidität und Barwert von Investitionen verbessern und Investitionen vorziehen.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [
+        "SDG_08",
+        "SDG_09",
+        "GG_ART_109_2_MACROECONOMIC_BALANCE"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "43c02ec8-e1f6-42de-93b8-8bd0731a2565",
+      "public_title": "Steuerliches Investitionssofortprogramm",
+      "path_id": "P2",
+      "hypothesis": "Eine schrittweise Körperschaftsteuersenkung kann Nachsteuererträge erhöhen und Standort-/Investitionsanreize verändern.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [
+        "SDG_08",
+        "SDG_09",
+        "SDG_PLUS_RULE_OF_LAW",
+        "GG_ART_109_2_MACROECONOMIC_BALANCE",
+        "GG_FUNDAMENTAL_RIGHTS"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "43c02ec8-e1f6-42de-93b8-8bd0731a2565",
+      "public_title": "Steuerliches Investitionssofortprogramm",
+      "path_id": "P3",
+      "hypothesis": "Breite Entlastungen ohne Investitions- oder Wirkungskondition können hohe Mitnahmeeffekte erzeugen und auch Investitionen mit negativer Netto-Wirkung begünstigen.",
+      "current_direction": "NEGATIVE_RISK",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [
+        "SDG_08",
+        "SDG_09",
+        "GG_ART_109_2_MACROECONOMIC_BALANCE"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "43c02ec8-e1f6-42de-93b8-8bd0731a2565",
+      "public_title": "Steuerliches Investitionssofortprogramm",
+      "path_id": "P4",
+      "hypothesis": "Steuermindereinnahmen können die fiskalische Handlungsfähigkeit von Staatsebenen beeinträchtigen; Umfang und Nettoeffekt müssen empirisch ermittelt werden.",
+      "current_direction": "NEGATIVE_RISK",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [
+        "SDG_08",
+        "SDG_09",
+        "SDG_PLUS_INSTITUTIONAL_TRUST",
+        "GG_ART_109_2_MACROECONOMIC_BALANCE"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "43c02ec8-e1f6-42de-93b8-8bd0731a2565",
+      "public_title": "Steuerliches Investitionssofortprogramm",
+      "path_id": "P5",
+      "hypothesis": "Unternehmen mit niedrigen Gewinnen oder Verlusten können von reinen Abschreibungsinstrumenten anders profitieren als profitable Unternehmen; dies kann Verteilung und Innovationsstruktur beeinflussen.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [
+        "SDG_08",
+        "SDG_09",
+        "SDG_10",
+        "GG_ART_109_2_MACROECONOMIC_BALANCE",
+        "AEUV_ART_13_ANIMAL_WELFARE",
+        "GG_ART_20A_ANIMAL_PROTECTION"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "47ca9029-a749-4f79-a4e6-8e33f08082cd",
+      "public_title": "Länder- und Kommunal-Infrastrukturfinanzierung",
+      "path_id": "P1",
+      "hypothesis": "Zusätzliche Infrastrukturmittel können Sanierungs- und Modernisierungsrückstände bei Bildung, Verkehr, Wärme/Energie, Gesundheit/Pflege, Digitalisierung, Wissenschaft/Forschung und Bevölkerungsschutz abbauen.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "47ca9029-a749-4f79-a4e6-8e33f08082cd",
+      "public_title": "Länder- und Kommunal-Infrastrukturfinanzierung",
+      "path_id": "P2",
+      "hypothesis": "Vorgaben zu Verteilung, Bericht und zweckentsprechender Verwendung können Transparenz und Vollzugssicherheit verbessern.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "47ca9029-a749-4f79-a4e6-8e33f08082cd",
+      "public_title": "Länder- und Kommunal-Infrastrukturfinanzierung",
+      "path_id": "P3",
+      "hypothesis": "Breite Förderfähigkeit ohne belastbare Wirkungspriorisierung kann Mittel auf Projekte mit hohem Ausgabevolumen, aber geringer Zustandsverbesserung lenken.",
+      "current_direction": "NEGATIVE_RISK",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "47ca9029-a749-4f79-a4e6-8e33f08082cd",
+      "public_title": "Länder- und Kommunal-Infrastrukturfinanzierung",
+      "path_id": "P4",
+      "hypothesis": "Kommunen mit geringer Planungs-/Vergabekapazität können Mittel langsamer oder schlechter nutzen; dadurch drohen regionale Verteilungsverzerrungen.",
+      "current_direction": "NEGATIVE_RISK",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "4c5f138f-f81e-4b5e-8bc5-4cef1b91a2c1",
+      "public_title": "Schutz vor K.-o.-Tropfen",
+      "path_id": "P1",
+      "hypothesis": "Fälle der Verabreichung narkotisierender Substanzen bei Sexualdelikten können der höheren Qualifikation zugeordnet werden.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [
+        "bloße Strafrahmenverschiebung ohne bessere Aufklärung",
+        "Beweisprobleme bleiben bestehen",
+        "uneinheitliche Auslegung des Mittelbegriffs"
+      ],
+      "mapping_targets": [
+        "SDG_03"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "4c5f138f-f81e-4b5e-8bc5-4cef1b91a2c1",
+      "public_title": "Schutz vor K.-o.-Tropfen",
+      "path_id": "P2",
+      "hypothesis": "Ein vergleichbarer Unrechtsgehalt kann auch im Raubstrafrecht konsistent erfasst werden.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [
+        "Tatbestandsüberschneidungen",
+        "Strafrahmeneffekt ohne Sicherheitswirkung"
+      ],
+      "mapping_targets": [
+        "SDG_16",
+        "SDG_03",
+        "SDG_PLUS_RULE_OF_LAW"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "4c5f138f-f81e-4b5e-8bc5-4cef1b91a2c1",
+      "public_title": "Schutz vor K.-o.-Tropfen",
+      "path_id": "P3",
+      "hypothesis": "Standardisierte toxikologische Sicherung, schnelle Beratung und Prävention können die materielle Schutzwirkung der Norm erhöhen.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [
+        "Norm bleibt symbolisch, wenn Beweise nicht gesichert werden",
+        "Zugangshürden und sekundäre Viktimisierung"
+      ],
+      "mapping_targets": [
+        "SDG_03",
+        "SDG_PLUS_DISCOURSE_CAPACITY"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "4c755c57-3b13-4e6c-95c3-4c01a8a08695",
+      "public_title": "Internationale Rechtshilfe in Strafsachen",
+      "path_id": "P1",
+      "hypothesis": "Klarere, systematischere Vorschriften können Bearbeitung, Rechtssicherheit und internationale Zusammenarbeit verbessern.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [
+        "Komplexitätsverlagerung",
+        "Umsetzungsunterschiede",
+        "Beschleunigung auf Kosten sorgfältiger Prüfung"
+      ],
+      "mapping_targets": [
+        "SDG_16",
+        "SDG_17",
+        "SDG_03",
+        "SDG_08",
+        "SDG_PLUS_RULE_OF_LAW"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "4c755c57-3b13-4e6c-95c3-4c01a8a08695",
+      "public_title": "Internationale Rechtshilfe in Strafsachen",
+      "path_id": "P2",
+      "hypothesis": "Betroffene können Eingriffe besser verstehen, prüfen und anfechten.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [
+        "Rechte bestehen nur formal",
+        "Sprach- und Zugangsbarrieren",
+        "unterschiedliche Standards in Partnerstaaten"
+      ],
+      "mapping_targets": [
+        "SDG_16",
+        "SDG_17",
+        "SDG_PLUS_RULE_OF_LAW"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "4c755c57-3b13-4e6c-95c3-4c01a8a08695",
+      "public_title": "Internationale Rechtshilfe in Strafsachen",
+      "path_id": "P3",
+      "hypothesis": "Rechtskonformität und gegenseitiges Vertrauen können steigen; Vertragsverletzungsrisiken sinken.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [
+        "Übererfüllung oder Unterumsetzung",
+        "automatisiertes Vertrauen trotz systemischer Rechtsstaatsprobleme"
+      ],
+      "mapping_targets": [
+        "SDG_16",
+        "SDG_17",
+        "SDG_PLUS_RULE_OF_LAW",
+        "SDG_PLUS_INSTITUTIONAL_TRUST"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "4c755c57-3b13-4e6c-95c3-4c01a8a08695",
+      "public_title": "Internationale Rechtshilfe in Strafsachen",
+      "path_id": "P4",
+      "hypothesis": "Sichere digitale Übermittlung kann Verfahren beschleunigen und Medienbrüche reduzieren.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "Datenschutzverletzungen",
+        "Cyberangriffe",
+        "Black-Box-Prozesse",
+        "digitale Exklusion"
+      ],
+      "mapping_targets": [
+        "SDG_16",
+        "SDG_17",
+        "SDG_09",
+        "SDG_PLUS_RULE_OF_LAW",
+        "SDG_PLUS_DIGITAL_SELF_DETERMINATION",
+        "SDG_PLUS_MEDIA_QUALITY"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "539ca2eb-04ba-4bb9-b525-d30da6fe2747",
+      "public_title": "Digitale Identität und EUDI-Wallet",
+      "path_id": "P1",
+      "hypothesis": "Bürgerinnen und Bürger können Identitäts- und Attributsnachweise sicherer und mit weniger Medienbrüchen nutzen.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "faktischer Nutzungszwang",
+        "digitale Exklusion",
+        "geringe Akzeptanz",
+        "Lock-in"
+      ],
+      "mapping_targets": [
+        "SDG_09",
+        "SDG_PLUS_DIGITAL_SELF_DETERMINATION",
+        "SDG_PLUS_MEDIA_QUALITY",
+        "GG_ART_23_EUROPEAN_INTEGRATION"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "539ca2eb-04ba-4bb9-b525-d30da6fe2747",
+      "public_title": "Digitale Identität und EUDI-Wallet",
+      "path_id": "P2",
+      "hypothesis": "Selektive Offenlegung und zertifizierte Komponenten können Datensouveränität und Transaktionssicherheit erhöhen.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "Korrelation von Nutzungen",
+        "Identitätsdiebstahl",
+        "zentrale Ausfallpunkte",
+        "Missbrauch durch vertrauende Beteiligte",
+        "Cyberangriffe"
+      ],
+      "mapping_targets": [
+        "SDG_03",
+        "SDG_09",
+        "SDG_16",
+        "SDG_PLUS_DIGITAL_SELF_DETERMINATION",
+        "GG_ART_23_EUROPEAN_INTEGRATION"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "539ca2eb-04ba-4bb9-b525-d30da6fe2747",
+      "public_title": "Digitale Identität und EUDI-Wallet",
+      "path_id": "P3",
+      "hypothesis": "Interoperable Nachweise können Verwaltungs- und Unternehmensprozesse vereinfachen.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "Digitalisierung ineffizienter Prozesse",
+        "Kostenverlagerung",
+        "übermäßige Datenabfrage",
+        "Marktkonzentration"
+      ],
+      "mapping_targets": [
+        "SDG_08",
+        "SDG_09",
+        "SDG_16",
+        "SDG_PLUS_DIGITAL_SELF_DETERMINATION",
+        "SDG_PLUS_INSTITUTIONAL_TRUST",
+        "GG_ART_20_STATE_STRUCTURE",
+        "GG_ART_23_EUROPEAN_INTEGRATION"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "539ca2eb-04ba-4bb9-b525-d30da6fe2747",
+      "public_title": "Digitale Identität und EUDI-Wallet",
+      "path_id": "P4",
+      "hypothesis": "Gestufte Erprobung kann Fehler früh sichtbar machen und Standards lernend verbessern.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [
+        "Evaluation ohne Korrekturfolge",
+        "nur technische statt gesellschaftliche Kriterien",
+        "unklare Zuständigkeit"
+      ],
+      "mapping_targets": [
+        "SDG_04",
+        "SDG_09",
+        "SDG_PLUS_DIGITAL_SELF_DETERMINATION",
+        "GG_ART_23_EUROPEAN_INTEGRATION"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "53f11245-34de-4f85-8096-5c2c41d0db30",
+      "public_title": "Ärztliche Zwangsmaßnahmen im Betreuungsrecht",
+      "path_id": "P1",
+      "hypothesis": "Bei vom Bundesverfassungsgericht beschriebenen Sonderfällen können erhebliche transport- oder krankenhausbedingte Gesundheitsbeeinträchtigungen vermieden werden.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "Normalisierung oder Ausweitung von Zwang",
+        "unzureichende Notfallkapazität",
+        "Interessenkonflikte der Einrichtung",
+        "schwächere externe Kontrolle"
+      ],
+      "mapping_targets": [
+        "SDG_03",
+        "SDG_16",
+        "SDG_PLUS_RULE_OF_LAW",
+        "GG_FUNDAMENTAL_RIGHTS"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "53f11245-34de-4f85-8096-5c2c41d0db30",
+      "public_title": "Ärztliche Zwangsmaßnahmen im Betreuungsrecht",
+      "path_id": "P2",
+      "hypothesis": "Klare Alternativenprüfung, Beachtung früherer Willensäußerungen und Verfahrensschutz können Zwang vermeiden.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [
+        "formelhafte Dokumentation ohne echte Alternativenprüfung",
+        "Zeit- und Personaldruck"
+      ],
+      "mapping_targets": [
+        "SDG_03",
+        "SDG_16",
+        "SDG_PLUS_RULE_OF_LAW",
+        "GG_FUNDAMENTAL_RIGHTS"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "53f11245-34de-4f85-8096-5c2c41d0db30",
+      "public_title": "Ärztliche Zwangsmaßnahmen im Betreuungsrecht",
+      "path_id": "P3",
+      "hypothesis": "Engmaschige Kontrolle kann Rechtsverletzungen verhindern und Behandlungsnotwendigkeit regelmäßig neu prüfen.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "Verfahrensdruck",
+        "wiederholte belastende Anhörungen",
+        "Behandlungslücken",
+        "zu lange Genehmigungen"
+      ],
+      "mapping_targets": [
+        "SDG_03",
+        "SDG_16",
+        "SDG_17",
+        "SDG_PLUS_INSTITUTIONAL_TRUST",
+        "GG_ART_23_EUROPEAN_INTEGRATION",
+        "GG_FUNDAMENTAL_RIGHTS"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "53f11245-34de-4f85-8096-5c2c41d0db30",
+      "public_title": "Ärztliche Zwangsmaßnahmen im Betreuungsrecht",
+      "path_id": "P4",
+      "hypothesis": "Fallbezogene Daten können Ausnahmepraxis, Zwangsvermeidung, Komplikationen und Rechtsqualität sichtbar machen.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [
+        "Untererfassung",
+        "fehlende Vergleichsgruppe",
+        "Datenschutzprobleme"
+      ],
+      "mapping_targets": [
+        "SDG_03",
+        "SDG_16",
+        "SDG_PLUS_DIGITAL_SELF_DETERMINATION",
+        "GG_FUNDAMENTAL_RIGHTS"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "64892605-37f9-4a8c-a1ab-ff5e86056693",
+      "public_title": "GAP-Direktzahlungen und verschobene Öko-Regelungen",
+      "path_id": "P1",
+      "hypothesis": "Mehr Vorlauf kann Verwaltung, Betrieben und IT-/Antragsprozessen eine robustere Einführung ermöglichen und Fehlanwendungen reduzieren.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "64892605-37f9-4a8c-a1ab-ff5e86056693",
+      "public_title": "GAP-Direktzahlungen und verschobene Öko-Regelungen",
+      "path_id": "P2",
+      "hypothesis": "Die Verschiebung verzögert die beabsichtigten ökologischen Anreize der beiden Öko-Regelungen und kann dadurch eine einjährige Wirkungsverzögerung verursachen.",
+      "current_direction": "NEGATIVE_RISK",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "64892605-37f9-4a8c-a1ab-ff5e86056693",
+      "public_title": "GAP-Direktzahlungen und verschobene Öko-Regelungen",
+      "path_id": "P3",
+      "hypothesis": "Wenn bereitgestellte Mittel während der Verschiebung anders verwendet oder nicht wirksam gebunden werden, können zusätzliche Opportunitätswirkungen entstehen.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "6a88c960-c7e9-400c-84bb-aa52039b62e7",
+      "public_title": "Aussetzung des Familiennachzugs",
+      "path_id": "P1",
+      "hypothesis": "Die Aussetzung kann die Zahl der über diesen Nachzugskanal kurzfristig Einreisenden reduzieren und damit bestimmte administrative, Wohnungs- oder Integrationskapazitäten weniger beanspruchen.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [
+        "SDG_10",
+        "SDG_11",
+        "SDG_PLUS_SOCIAL_COHESION",
+        "GG_FUNDAMENTAL_RIGHTS"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "6a88c960-c7e9-400c-84bb-aa52039b62e7",
+      "public_title": "Aussetzung des Familiennachzugs",
+      "path_id": "P2",
+      "hypothesis": "Fortdauernde Familientrennung kann psychosoziale Belastung, Integrationsprobleme und Unsicherheit für Schutzberechtigte und Familien erhöhen.",
+      "current_direction": "NEGATIVE_RISK",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [
+        "SDG_10",
+        "SDG_16",
+        "SDG_03",
+        "SDG_PLUS_SOCIAL_COHESION",
+        "GG_FUNDAMENTAL_RIGHTS"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "6a88c960-c7e9-400c-84bb-aa52039b62e7",
+      "public_title": "Aussetzung des Familiennachzugs",
+      "path_id": "P3",
+      "hypothesis": "Ausnahmen, Härtefälle, Gerichtsverfahren oder alternative Rechtswege können Verwaltungsaufwand verlagern statt reduzieren.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [
+        "SDG_16",
+        "SDG_10",
+        "SDG_PLUS_RULE_OF_LAW",
+        "SDG_PLUS_INSTITUTIONAL_TRUST",
+        "SDG_PLUS_SOCIAL_COHESION",
+        "GG_ART_20_STATE_STRUCTURE",
+        "GG_FUNDAMENTAL_RIGHTS"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "6a88c960-c7e9-400c-84bb-aa52039b62e7",
+      "public_title": "Aussetzung des Familiennachzugs",
+      "path_id": "P4",
+      "hypothesis": "Die Maßnahme kann Vertrauen, Zugehörigkeit und gesellschaftliche Integration beeinflussen; Richtung und Größenordnung sind ohne empirische Daten offen.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [
+        "SDG_10",
+        "SDG_PLUS_SOCIAL_COHESION",
+        "SDG_PLUS_DIGITAL_SELF_DETERMINATION",
+        "SDG_PLUS_INSTITUTIONAL_TRUST",
+        "SDG_PLUS_RULE_OF_LAW",
+        "GG_FUNDAMENTAL_RIGHTS"
+      ],
+      "proposed_issue_flags": [
+        "OPEN_HYPOTHESIS_WITH_AMBIVALENT_CODE"
+      ],
+      "review_status": "METHOD_REVIEW_REQUIRED"
+    },
+    {
+      "case_id": "79146c82-e8d0-467a-929e-142c72d9d6cd",
+      "public_title": "Bundeseinheitliche Pflegefachassistenzausbildung",
+      "path_id": "P1",
+      "hypothesis": "Bundeseinheitliche Standards können Transparenz, Anerkennung und Mobilität der Qualifikation verbessern.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "79146c82-e8d0-467a-929e-142c72d9d6cd",
+      "public_title": "Bundeseinheitliche Pflegefachassistenzausbildung",
+      "path_id": "P2",
+      "hypothesis": "Eine attraktivere und einheitliche Ausbildung kann zusätzliche Pflegeassistenzkräfte hervorbringen und Versorgungskapazität stärken.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "79146c82-e8d0-467a-929e-142c72d9d6cd",
+      "public_title": "Bundeseinheitliche Pflegefachassistenzausbildung",
+      "path_id": "P3",
+      "hypothesis": "Ein besser abgestimmter Skill-Mix kann Pflegefachpersonen von geeigneten Aufgaben entlasten und Versorgungsqualität stabilisieren.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "79146c82-e8d0-467a-929e-142c72d9d6cd",
+      "public_title": "Bundeseinheitliche Pflegefachassistenzausbildung",
+      "path_id": "P4",
+      "hypothesis": "Wenn Assistenzkräfte Fachpersonen aus Kostengründen ersetzen oder Aufgaben-/Kompetenzgrenzen unklar sind, können Qualitäts- und Patientensicherheitsrisiken entstehen.",
+      "current_direction": "NEGATIVE_RISK",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "79146c82-e8d0-467a-929e-142c72d9d6cd",
+      "public_title": "Bundeseinheitliche Pflegefachassistenzausbildung",
+      "path_id": "P5",
+      "hypothesis": "Standardisierung allein behebt keine Ausbildungsplatz-, Lehrpersonal-, Vergütungs- oder Bindungsengpässe.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "7b3bb327-d7a2-4c77-b46d-535be8590cb6",
+      "public_title": "TKG-Änderung 2025",
+      "path_id": "P1",
+      "hypothesis": "Höheres Gewicht des Netzausbaus in Genehmigungen kann Verfahren verkürzen und Ausbau von Glasfaser/Mobilfunk beschleunigen.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [
+        "SDG_09",
+        "SDG_07",
+        "SDG_PLUS_RULE_OF_LAW"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "7b3bb327-d7a2-4c77-b46d-535be8590cb6",
+      "public_title": "TKG-Änderung 2025",
+      "path_id": "P2",
+      "hypothesis": "Bessere Netzabdeckung und -verfügbarkeit kann Daseinsvorsorge, Informationszugang, Verwaltung und wirtschaftliche Aktivität stärken.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [
+        "SDG_07",
+        "SDG_08",
+        "SDG_11",
+        "SDG_16",
+        "SDG_PLUS_DISCOURSE_CAPACITY",
+        "SDG_PLUS_INSTITUTIONAL_TRUST",
+        "SDG_PLUS_MEDIA_QUALITY",
+        "SDG_PLUS_RULE_OF_LAW",
+        "GG_ART_20_STATE_STRUCTURE",
+        "GG_ART_109_2_MACROECONOMIC_BALANCE",
+        "GG_FUNDAMENTAL_RIGHTS"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "7b3bb327-d7a2-4c77-b46d-535be8590cb6",
+      "public_title": "TKG-Änderung 2025",
+      "path_id": "P3",
+      "hypothesis": "Priorisierung kann bei konkreten Vorhaben mit Umwelt-, Flächen-, Eigentums- oder kommunalen Planungsinteressen kollidieren.",
+      "current_direction": "NEGATIVE_RISK",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [
+        "SDG_11",
+        "SDG_15",
+        "GG_ART_20A_NATURAL_FOUNDATIONS",
+        "GG_FUNDAMENTAL_RIGHTS"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "7b3bb327-d7a2-4c77-b46d-535be8590cb6",
+      "public_title": "TKG-Änderung 2025",
+      "path_id": "P4",
+      "hypothesis": "Beschleunigte Genehmigung garantiert weder Ausbau in unterversorgten Gebieten noch Netzsicherheit, Redundanz oder Bezahlbarkeit.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [
+        "SDG_03",
+        "SDG_07",
+        "SDG_09",
+        "SDG_16"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "94cdfef9-baca-41aa-91df-4a1dbd6b5d4e",
+      "public_title": "Tierhaltungskennzeichnung",
+      "path_id": "P1",
+      "hypothesis": "Zusätzliche Vorbereitungszeit kann Länder- und Unternehmensprozesse stabilisieren und fehlerhafte oder inkonsistente Kennzeichnung reduzieren.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "94cdfef9-baca-41aa-91df-4a1dbd6b5d4e",
+      "public_title": "Tierhaltungskennzeichnung",
+      "path_id": "P2",
+      "hypothesis": "Die Verschiebung verzögert Verbrauchertransparenz und damit mögliche nachfrage- und investitionsseitige Tierwohl-Anreize.",
+      "current_direction": "NEGATIVE_RISK",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "94cdfef9-baca-41aa-91df-4a1dbd6b5d4e",
+      "public_title": "Tierhaltungskennzeichnung",
+      "path_id": "P3",
+      "hypothesis": "Ein später, aber funktionsfähiger Start kann wirksamer sein als ein formaler Start ohne Vollzugsinfrastruktur; dies ist empirisch zu prüfen.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "94cdfef9-baca-41aa-91df-4a1dbd6b5d4e",
+      "public_title": "Tierhaltungskennzeichnung",
+      "path_id": "P4",
+      "hypothesis": "Die angekündigte breitere Reform kann die spätere Systemwirkung erhöhen, ist aber zum Entscheidungszeitpunkt noch Zukunftspotenzial und keine eingetretene Wirkung.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "95921553-b404-4db1-aba2-fbdde40ff3de",
+      "public_title": "Handel mit Gegenständen von NS-Opfern",
+      "path_id": "P1",
+      "hypothesis": "Der Marktanreiz zur sensationsorientierten Kommerzialisierung kann reduziert und die Würde der verfolgten Personen geschützt werden.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "Verlagerung in intransparente oder ausländische Märkte",
+        "Vernichtung oder Verbergen von Gegenständen",
+        "unsichere Abgrenzung persönlicher und historischer Objekte"
+      ],
+      "mapping_targets": [
+        "SDG_08"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "95921553-b404-4db1-aba2-fbdde40ff3de",
+      "public_title": "Handel mit Gegenständen von NS-Opfern",
+      "path_id": "P2",
+      "hypothesis": "Rechtsgeschäfte verlieren wirtschaftliche Durchsetzbarkeit; Sanktion kann Vollzug und Abschreckung stärken.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "Kriminalisierung unklarer Grenzfälle",
+        "hoher Ermittlungsaufwand",
+        "Beweisprobleme zur Provenienz"
+      ],
+      "mapping_targets": [
+        "SDG_08",
+        "SDG_16",
+        "SDG_PLUS_RULE_OF_LAW",
+        "GG_ART_109_2_MACROECONOMIC_BALANCE",
+        "GG_FUNDAMENTAL_RIGHTS"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "95921553-b404-4db1-aba2-fbdde40ff3de",
+      "public_title": "Handel mit Gegenständen von NS-Opfern",
+      "path_id": "P3",
+      "hypothesis": "Gegenstände können bewahrt, erschlossen, restituiert und öffentlich zugänglich gemacht werden.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [
+        "Umgehung über behauptete Forschungs- oder Kunstzwecke",
+        "ungleiche Ressourcen der Einrichtungen",
+        "ungeklärte Eigentums- und Rückgaberechte"
+      ],
+      "mapping_targets": [
+        "SDG_08"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "95921553-b404-4db1-aba2-fbdde40ff3de",
+      "public_title": "Handel mit Gegenständen von NS-Opfern",
+      "path_id": "P4",
+      "hypothesis": "Statt bloßer Marktunterdrückung kann ein geregelter Erwerbs-, Schenkungs- oder Sicherungsweg Erinnerungsgüter in geeignete Sammlungen bringen.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [
+        "faktische entschädigungslose Entwertung",
+        "Überforderung öffentlicher Einrichtungen",
+        "Zentralisierung ohne Zugang"
+      ],
+      "mapping_targets": [
+        "SDG_08"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "a28ad2d7-be12-42b5-8329-4bab34dabada",
+      "public_title": "Siebzehnte Änderung des Luftverkehrsgesetzes",
+      "path_id": "P1",
+      "hypothesis": "Preisimpulse können Flotteneinsatz und Betriebsplanung zugunsten leiserer Flugzeuge verändern.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "zu geringe Preissignale",
+        "Kostenweitergabe",
+        "Verlagerung von Verkehr",
+        "Rebound durch mehr Flüge"
+      ],
+      "mapping_targets": [
+        "SDG_11"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "a28ad2d7-be12-42b5-8329-4bab34dabada",
+      "public_title": "Siebzehnte Änderung des Luftverkehrsgesetzes",
+      "path_id": "P2",
+      "hypothesis": "Entgelte können lokale Luftschadstoffe und gegebenenfalls klimaärmere Technik berücksichtigen.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "unverbindliche Soll-Regel",
+        "Greenwashing",
+        "Verschiebung zwischen Schadstoffarten"
+      ],
+      "mapping_targets": [
+        "SDG_03",
+        "SDG_11",
+        "SDG_13",
+        "GG_ART_20A_NATURAL_FOUNDATIONS"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "a28ad2d7-be12-42b5-8329-4bab34dabada",
+      "public_title": "Siebzehnte Änderung des Luftverkehrsgesetzes",
+      "path_id": "P3",
+      "hypothesis": "Direkter Zugriff auf verantwortliche Fluggesellschaften kann Nacht- und Beschränkungsverstöße reduzieren, während notwendige Rettungs- und Sicherheitsflüge möglich bleiben.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [
+        "Ausnahmepraxis weitet sich aus",
+        "fehlende Sanktionierung",
+        "Fehlanreize bei Verspätungen"
+      ],
+      "mapping_targets": [
+        "SDG_03",
+        "SDG_11",
+        "SDG_16",
+        "SDG_PLUS_RULE_OF_LAW",
+        "GG_FUNDAMENTAL_RIGHTS"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "a28ad2d7-be12-42b5-8329-4bab34dabada",
+      "public_title": "Siebzehnte Änderung des Luftverkehrsgesetzes",
+      "path_id": "P4",
+      "hypothesis": "Entscheidungen über Flugverfahren werden nachvollziehbarer; lokale Expertise und Beteiligung können verbessert werden.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [
+        "Informationsmenge ohne Einfluss",
+        "Betriebs-/Sicherheitsgeheimnisse als pauschale Ausnahme",
+        "ungleicher Zugang zu Expertise"
+      ],
+      "mapping_targets": [
+        "SDG_11",
+        "SDG_PLUS_DEMOCRACY",
+        "SDG_PLUS_DISCOURSE_CAPACITY",
+        "SDG_PLUS_RULE_OF_LAW"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "a938dc30-3474-4f7c-a055-67a8cc2007c1",
+      "public_title": "Widerspruchsregelung bei Organspenden",
+      "path_id": "P1",
+      "hypothesis": "Mehr verstorbene Personen können als potenzielle Spender berücksichtigt werden, wenn kein Widerspruch vorliegt.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "fehlende informierte Kenntnis",
+        "ungleiche Widerspruchsmöglichkeiten",
+        "Vertrauensverlust",
+        "Verwechslung von Schweigen und Zustimmung"
+      ],
+      "mapping_targets": [
+        "SDG_03"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "a938dc30-3474-4f7c-a055-67a8cc2007c1",
+      "public_title": "Widerspruchsregelung bei Organspenden",
+      "path_id": "P2",
+      "hypothesis": "Entscheidungen können zuverlässig gefunden und der individuelle Wille umgesetzt werden.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "Fehlende oder veraltete Einträge",
+        "Cyber- und Datenschutzrisiken",
+        "Ausfall im Entscheidungszeitpunkt"
+      ],
+      "mapping_targets": [
+        "SDG_03"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "a938dc30-3474-4f7c-a055-67a8cc2007c1",
+      "public_title": "Widerspruchsregelung bei Organspenden",
+      "path_id": "P3",
+      "hypothesis": "Angehörige werden von einer eigenen Entscheidung entlastet; der bekannte Wille der verstorbenen Person bleibt maßgeblich.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "Konflikte bei unbekanntem oder bestrittenem Willen",
+        "Belastung trotz formaler Entlastung",
+        "Zeitdruck"
+      ],
+      "mapping_targets": [
+        "SDG_03"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "a938dc30-3474-4f7c-a055-67a8cc2007c1",
+      "public_title": "Widerspruchsregelung bei Organspenden",
+      "path_id": "P4",
+      "hypothesis": "Kenntnis, dokumentierte Entscheidung und informierte Auseinandersetzung können steigen.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [
+        "bloße Zustellung ohne Verständnis",
+        "ungleiche Erreichbarkeit",
+        "kommunikativer Druck"
+      ],
+      "mapping_targets": [
+        "SDG_03"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "a938dc30-3474-4f7c-a055-67a8cc2007c1",
+      "public_title": "Widerspruchsregelung bei Organspenden",
+      "path_id": "P5",
+      "hypothesis": "Wenn Identifikations-, Melde-, Koordinations- und Intensivkapazitäten funktionieren, kann ein größeres potenzielles Spenderfeld tatsächlich zu mehr realisierten Spenden führen.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [
+        "rechtliche Reform ohne klinische Umsetzung",
+        "regionale Unterschiede",
+        "Überlastung"
+      ],
+      "mapping_targets": [
+        "SDG_03"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "aca79efa-63fe-4eb4-a68b-6930096304f0",
+      "public_title": "Fristverlängerung beim Ganztagsausbau",
+      "path_id": "P1",
+      "hypothesis": "Die Fristverlängerung kann verhindern, dass begonnene oder geplante Investitionen allein wegen Fristablaufs ausfallen und damit zusätzliche Ganztagsplätze ermöglichen.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "aca79efa-63fe-4eb4-a68b-6930096304f0",
+      "public_title": "Fristverlängerung beim Ganztagsausbau",
+      "path_id": "P2",
+      "hypothesis": "Mehr Ganztagskapazität kann Bildungsteilhabe, Vereinbarkeit von Familie und Beruf und gleichberechtigte Erwerbsteilhabe unterstützen.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "aca79efa-63fe-4eb4-a68b-6930096304f0",
+      "public_title": "Fristverlängerung beim Ganztagsausbau",
+      "path_id": "P3",
+      "hypothesis": "Eine reine Fristverlängerung kann strukturelle Engpässe bei Fachkräften, Planung oder Lieferketten nur verschieben, nicht lösen.",
+      "current_direction": "NEGATIVE_RISK",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "aca79efa-63fe-4eb4-a68b-6930096304f0",
+      "public_title": "Fristverlängerung beim Ganztagsausbau",
+      "path_id": "P4",
+      "hypothesis": "Infrastrukturkapazität ohne ausreichendes pädagogisches Personal und Qualitätsstandards kann Output erhöhen, ohne entsprechende Bildungs-/Betreuungswirkung zu erzeugen.",
+      "current_direction": "NEGATIVE_RISK",
+      "direction_rationale": null,
+      "risks": [],
+      "mapping_targets": [],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "aee171b2-57eb-47f7-96b6-60e47cea8422",
+      "public_title": "Volksabstimmungen auf Bundesebene",
+      "path_id": "P1",
+      "hypothesis": "Bürgerinnen und Bürger können Themen auf die bundespolitische Agenda setzen und verbindlich entscheiden.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "Beteiligungsungleichheit",
+        "Dauerwahlkampf",
+        "Überforderung komplexer Sachfragen",
+        "Instrumentalisierung durch ressourcenstarke Akteure"
+      ],
+      "mapping_targets": [
+        "SDG_08",
+        "SDG_PLUS_DEMOCRACY"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "aee171b2-57eb-47f7-96b6-60e47cea8422",
+      "public_title": "Volksabstimmungen auf Bundesebene",
+      "path_id": "P2",
+      "hypothesis": "Angemessene Schwellen können Repräsentativität sichern und missbräuchliche Dauerverfahren begrenzen.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "zu hohe Quoren blockieren Teilhabe",
+        "zu niedrige Quoren ermöglichen Minderheitenentscheidungen",
+        "strategische Enthaltung"
+      ],
+      "mapping_targets": [
+        "SDG_08",
+        "SDG_PLUS_DEMOCRACY",
+        "SDG_PLUS_RULE_OF_LAW"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "aee171b2-57eb-47f7-96b6-60e47cea8422",
+      "public_title": "Volksabstimmungen auf Bundesebene",
+      "path_id": "P3",
+      "hypothesis": "Unabhängige, pluralistische Informationen und Bürgerforen können Wissensqualität und Abwägung verbessern.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [
+        "Desinformation",
+        "Framing durch Fragestellung",
+        "ungleiche Reichweite",
+        "algorithmische Polarisierung"
+      ],
+      "mapping_targets": [
+        "SDG_08",
+        "SDG_PLUS_DEMOCRACY",
+        "SDG_PLUS_DISCOURSE_CAPACITY",
+        "SDG_PLUS_MEDIA_QUALITY"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "aee171b2-57eb-47f7-96b6-60e47cea8422",
+      "public_title": "Volksabstimmungen auf Bundesebene",
+      "path_id": "P4",
+      "hypothesis": "Transparente und begrenzte Finanzierung kann formale Gleichheit in reale faire Wettbewerbsvoraussetzungen übersetzen.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "Kauf von Reichweite",
+        "Dark Money",
+        "ausländische Einflussnahme",
+        "Astroturfing"
+      ],
+      "mapping_targets": [
+        "SDG_08",
+        "SDG_PLUS_DEMOCRACY",
+        "GG_FUNDAMENTAL_RIGHTS"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "aee171b2-57eb-47f7-96b6-60e47cea8422",
+      "public_title": "Volksabstimmungen auf Bundesebene",
+      "path_id": "P5",
+      "hypothesis": "Vorabprüfung kann direkte Demokratie mit Grundrechten und föderaler Ordnung verbinden.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [
+        "Mehrheitsentscheidungen über unverfügbare Rechte",
+        "Umgehung repräsentativer Checks and Balances"
+      ],
+      "mapping_targets": [
+        "SDG_16",
+        "SDG_PLUS_DEMOCRACY",
+        "SDG_PLUS_RULE_OF_LAW",
+        "GG_ART_20_STATE_STRUCTURE"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "c315ec77-da20-4ff4-9ab0-8321030b085c",
+      "public_title": "Demokratische Willensbildung in Parteien",
+      "path_id": "P1",
+      "hypothesis": "Behörden können Zuständigkeiten, Gefährdungsbewertungen und Schutzmaßnahmen verbindlicher koordinieren; Parteitage werden zuverlässiger durchführbar.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [
+        "ungleiche Schutzintensität",
+        "Überpolizeilichkeit",
+        "Verdrängung legitimen Protests",
+        "unklare Zuständigkeiten bleiben"
+      ],
+      "mapping_targets": [
+        "SDG_16",
+        "SDG_04",
+        "SDG_PLUS_DEMOCRACY",
+        "SDG_PLUS_INSTITUTIONAL_TRUST",
+        "GG_ART_20_STATE_STRUCTURE"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "c315ec77-da20-4ff4-9ab0-8321030b085c",
+      "public_title": "Demokratische Willensbildung in Parteien",
+      "path_id": "P2",
+      "hypothesis": "Parteien können unmittelbar funktionsrelevante Zusatzkosten ersetzt bekommen; staatliche Stellen erhalten einen finanziellen Anreiz zu pflichtgemäßer Planung.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "Moral Hazard",
+        "Beweisvermutung verlagert Risiken",
+        "unbegrenzte Kosten",
+        "strategische Veranstaltungsplanung"
+      ],
+      "mapping_targets": [
+        "SDG_04",
+        "SDG_16",
+        "SDG_PLUS_DEMOCRACY",
+        "SDG_PLUS_INSTITUTIONAL_TRUST",
+        "GG_ART_20_STATE_STRUCTURE"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "c315ec77-da20-4ff4-9ab0-8321030b085c",
+      "public_title": "Demokratische Willensbildung in Parteien",
+      "path_id": "P3",
+      "hypothesis": "Strukturelle Informationsasymmetrie zu internen Einsatzplanungen kann ausgeglichen werden.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "faktische Gefährdungshaftung",
+        "Defensivverwaltung",
+        "Verlagerung von Beweis- und Haushaltsrisiken"
+      ],
+      "mapping_targets": [
+        "SDG_04",
+        "SDG_16",
+        "SDG_PLUS_DEMOCRACY",
+        "SDG_PLUS_DISCOURSE_CAPACITY",
+        "SDG_PLUS_MEDIA_QUALITY",
+        "GG_ART_20_STATE_STRUCTURE"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "c315ec77-da20-4ff4-9ab0-8321030b085c",
+      "public_title": "Demokratische Willensbildung in Parteien",
+      "path_id": "P4",
+      "hypothesis": "Das spezifische institutionelle Unrecht eines Angriffs auf parteiinterne demokratische Willensbildung kann erfasst werden.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "Chilling Effect",
+        "Überlappung mit Nötigung/Versammlungsrecht",
+        "Kriminalisierung von Blockaden und Protest",
+        "selektiver Vollzug"
+      ],
+      "mapping_targets": [
+        "SDG_16",
+        "SDG_04",
+        "SDG_14",
+        "SDG_PLUS_DEMOCRACY",
+        "SDG_PLUS_INSTITUTIONAL_TRUST",
+        "GG_ART_20_STATE_STRUCTURE"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "c315ec77-da20-4ff4-9ab0-8321030b085c",
+      "public_title": "Demokratische Willensbildung in Parteien",
+      "path_id": "P5",
+      "hypothesis": "Parteifunktion und friedlicher Gegenprotest können gleichzeitig geschützt werden.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [
+        "Protest wird formal erlaubt, aber faktisch unsichtbar",
+        "Schutzmaßnahmen eskalieren Konflikte"
+      ],
+      "mapping_targets": [
+        "SDG_04",
+        "SDG_16",
+        "SDG_PLUS_DEMOCRACY",
+        "SDG_PLUS_DISCOURSE_CAPACITY",
+        "GG_ART_20_STATE_STRUCTURE"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "c945bb6b-623d-4a70-8041-faa10cf01e70",
+      "public_title": "Strafverschärfung bei Wiederholungstätern",
+      "path_id": "P1",
+      "hypothesis": "Wiederholung kann konsistenter als Strafzumessungsfaktor berücksichtigt werden; besonders gefährliche Täter können länger inhaftiert werden.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "Doppelverwertung früherer Taten",
+        "starre Strafsprünge",
+        "mehr Haft ohne Rückfallreduktion",
+        "Gefängnisüberbelegung"
+      ],
+      "mapping_targets": [
+        "SDG_16",
+        "SDG_PLUS_RULE_OF_LAW",
+        "GG_FUNDAMENTAL_RIGHTS"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "c945bb6b-623d-4a70-8041-faa10cf01e70",
+      "public_title": "Strafverschärfung bei Wiederholungstätern",
+      "path_id": "P2",
+      "hypothesis": "Kann als deutlicher spezial- und generalpräventiver Normimpuls verstanden werden und Strafzumessungsstreuung verringern.",
+      "current_direction": "NEGATIVE_RISK",
+      "direction_rationale": null,
+      "risks": [
+        "unverhältnismäßige Strafen bei heterogenen Fällen",
+        "Verlagerung richterlichen Ermessens in Anklage/Verfahrensabsprachen",
+        "höhere Vollzugskosten"
+      ],
+      "mapping_targets": [
+        "SDG_16",
+        "SDG_PLUS_RULE_OF_LAW"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "c945bb6b-623d-4a70-8041-faa10cf01e70",
+      "public_title": "Strafverschärfung bei Wiederholungstätern",
+      "path_id": "P3",
+      "hypothesis": "Sehr schwere, gleichartige und fortdauernd gefährliche Tatmuster können mit hohem Schutz- und Sicherungsgewicht behandelt werden.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "Charakterstrafrecht",
+        "unbestimmte Begriffe",
+        "unverhältnismäßige kumulative Freiheitsentziehung"
+      ],
+      "mapping_targets": [
+        "SDG_16",
+        "SDG_PLUS_RULE_OF_LAW"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "c945bb6b-623d-4a70-8041-faa10cf01e70",
+      "public_title": "Strafverschärfung bei Wiederholungstätern",
+      "path_id": "P4",
+      "hypothesis": "Bei wenigen extremen Hochrisikofällen könnte Schutz erhöht werden.",
+      "current_direction": "NEGATIVE_RISK",
+      "direction_rationale": null,
+      "risks": [
+        "Bruch mit Erziehungs- und Resozialisierungsprinzip",
+        "Verfestigung krimineller Karrieren",
+        "unverhältnismäßige Lebenslaufwirkung"
+      ],
+      "mapping_targets": [
+        "SDG_16",
+        "SDG_PLUS_RULE_OF_LAW"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "c945bb6b-623d-4a70-8041-faa10cf01e70",
+      "public_title": "Strafverschärfung bei Wiederholungstätern",
+      "path_id": "P5",
+      "hypothesis": "Gezielte Programme können Ursachen von Rückfall adressieren und Sicherheit nach Haftentlassung verbessern.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [
+        "Strafverschärfung verdrängt Präventionsbudgets",
+        "lange Haft schwächt Reintegration"
+      ],
+      "mapping_targets": [
+        "SDG_16",
+        "SDG_03",
+        "SDG_PLUS_RULE_OF_LAW",
+        "GG_FUNDAMENTAL_RIGHTS"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "caf988db-91fe-435c-bbe1-4b4c55ccbbf3",
+      "public_title": "Bundeshaushalt 2027",
+      "path_id": "P1",
+      "hypothesis": "Die Verteilung von 555,435744 Mrd. Euro kann Daseinsvorsorge, Transformation, Sicherheit und staatliche Handlungsfähigkeit stärken, sofern Titel auf überprüfbare Zustandsziele, klare Verantwortlichkeiten und realistische Umsetzungskapazitäten ausgerichtet werden.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "Mittelansatz wird mit Wirkung verwechselt",
+        "Ressort-Silos und Doppelzählung",
+        "Verdrängung wirksamerer Alternativen"
+      ],
+      "mapping_targets": [
+        "SDG_16",
+        "SDG_03",
+        "SDG_10",
+        "SDG_11",
+        "SDG_PLUS_INSTITUTIONAL_TRUST",
+        "SDG_PLUS_RULE_OF_LAW",
+        "GG_ART_20_STATE_STRUCTURE",
+        "GG_ART_109_2_MACROECONOMIC_BALANCE"
+      ],
+      "proposed_issue_flags": [
+        "DIRECTION_RATIONALE_REQUIRED"
+      ],
+      "review_status": "METHOD_REVIEW_REQUIRED"
+    },
+    {
+      "case_id": "caf988db-91fe-435c-bbe1-4b4c55ccbbf3",
+      "public_title": "Bundeshaushalt 2027",
+      "path_id": "P2",
+      "hypothesis": "Erhöhte Mittel können Verteidigungsfähigkeit, Abschreckung, Bündnisfähigkeit, Cyber- und Bevölkerungsschutz sowie industrielle Resilienz stärken.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "mehrjährige Lock-ins",
+        "Kostensteigerungen und Lieferverzögerungen",
+        "Opportunitätskosten",
+        "ökologische Belastungen",
+        "Sicherheitsausgaben ohne messbaren Fähigkeitszuwachs"
+      ],
+      "mapping_targets": [
+        "SDG_09",
+        "SDG_13",
+        "SDG_PLUS_DIGITAL_SELF_DETERMINATION",
+        "GG_ART_109_2_MACROECONOMIC_BALANCE",
+        "GG_ART_20_STATE_STRUCTURE"
+      ],
+      "proposed_issue_flags": [
+        "DIRECTION_RATIONALE_REQUIRED"
+      ],
+      "review_status": "METHOD_REVIEW_REQUIRED"
+    },
+    {
+      "case_id": "caf988db-91fe-435c-bbe1-4b4c55ccbbf3",
+      "public_title": "Bundeshaushalt 2027",
+      "path_id": "P3",
+      "hypothesis": "Die vorgesehene Mittelausstattung kann Verkehrs-, Energie-, Bildungs-, Digital- und kommunale Infrastruktur modernisieren und Klimaneutralität beschleunigen, wenn sie tatsächlich zusätzliche und transformativ wirksame Investitionen finanziert.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "Umetikettierung regulärer Ausgaben",
+        "Mittelabfluss ohne Outcome",
+        "graue Emissionen und Flächenverbrauch",
+        "Lock-in fossiler oder autozentrierter Infrastruktur"
+      ],
+      "mapping_targets": [
+        "SDG_09",
+        "SDG_11",
+        "SDG_13",
+        "SDG_04",
+        "SDG_PLUS_DIGITAL_SELF_DETERMINATION",
+        "GG_ART_109_2_MACROECONOMIC_BALANCE",
+        "GG_ART_20A_NATURAL_FOUNDATIONS",
+        "GG_ART_20_STATE_STRUCTURE"
+      ],
+      "proposed_issue_flags": [
+        "DIRECTION_RATIONALE_REQUIRED"
+      ],
+      "review_status": "METHOD_REVIEW_REQUIRED"
+    },
+    {
+      "case_id": "caf988db-91fe-435c-bbe1-4b4c55ccbbf3",
+      "public_title": "Bundeshaushalt 2027",
+      "path_id": "P4",
+      "hypothesis": "Förderung kann Emissionen, Energieabhängigkeit und Ressourcenverbrauch senken und klimafreundliche Technologien skalieren.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "Mitnahmeeffekte",
+        "regressive Verteilung",
+        "Verlagerung statt Minderung",
+        "Biodiversitäts- oder Rohstoffkonflikte"
+      ],
+      "mapping_targets": [
+        "SDG_13",
+        "SDG_07",
+        "SDG_09",
+        "SDG_12",
+        "GG_ART_20A_NATURAL_FOUNDATIONS",
+        "GG_ART_109_2_MACROECONOMIC_BALANCE",
+        "GG_ART_20_STATE_STRUCTURE"
+      ],
+      "proposed_issue_flags": [
+        "DIRECTION_RATIONALE_REQUIRED"
+      ],
+      "review_status": "METHOD_REVIEW_REQUIRED"
+    },
+    {
+      "case_id": "caf988db-91fe-435c-bbe1-4b4c55ccbbf3",
+      "public_title": "Bundeshaushalt 2027",
+      "path_id": "P5",
+      "hypothesis": "Der größte Einzelplan kann soziale Sicherheit, Arbeitsmarktintegration, Teilhabe und Krisenfestigkeit stabilisieren.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "reine Transfer-/Ausgabenlogik ohne Zustandsziel",
+        "Nichtinanspruchnahme",
+        "bürokratische Ausschlüsse",
+        "Verfestigung statt Befähigung"
+      ],
+      "mapping_targets": [
+        "SDG_08",
+        "SDG_10",
+        "SDG_03",
+        "SDG_16",
+        "SDG_PLUS_SOCIAL_COHESION",
+        "GG_ART_109_2_MACROECONOMIC_BALANCE",
+        "GG_ART_20_STATE_STRUCTURE"
+      ],
+      "proposed_issue_flags": [
+        "DIRECTION_RATIONALE_REQUIRED"
+      ],
+      "review_status": "METHOD_REVIEW_REQUIRED"
+    },
+    {
+      "case_id": "caf988db-91fe-435c-bbe1-4b4c55ccbbf3",
+      "public_title": "Bundeshaushalt 2027",
+      "path_id": "P6",
+      "hypothesis": "Haushaltsmittel können Versorgungssicherheit, Prävention, Pflegequalität, Digitalisierung und Krisenresilienz stärken.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "Kürzung oder Umschichtung ohne Wirkungsanalyse",
+        "Reparaturfinanzierung statt Prävention",
+        "regionale Unterversorgung",
+        "Überlastung des Personals"
+      ],
+      "mapping_targets": [
+        "SDG_03",
+        "SDG_09",
+        "SDG_13",
+        "SDG_16",
+        "SDG_PLUS_DIGITAL_SELF_DETERMINATION",
+        "GG_ART_109_2_MACROECONOMIC_BALANCE",
+        "GG_ART_20_STATE_STRUCTURE"
+      ],
+      "proposed_issue_flags": [
+        "DIRECTION_RATIONALE_REQUIRED"
+      ],
+      "review_status": "METHOD_REVIEW_REQUIRED"
+    },
+    {
+      "case_id": "caf988db-91fe-435c-bbe1-4b4c55ccbbf3",
+      "public_title": "Bundeshaushalt 2027",
+      "path_id": "P7",
+      "hypothesis": "Investitionen können Kompetenzen, Chancengerechtigkeit, Innovationsfähigkeit und langfristige Produktivität erhöhen.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "kurzfristige Projektlogik",
+        "soziale Selektivität",
+        "Forschung ohne Wirkungs- und Transferbezug",
+        "digitale Exklusion"
+      ],
+      "mapping_targets": [
+        "SDG_09",
+        "SDG_08",
+        "SDG_16",
+        "GG_ART_109_2_MACROECONOMIC_BALANCE",
+        "GG_ART_20_STATE_STRUCTURE"
+      ],
+      "proposed_issue_flags": [
+        "DIRECTION_RATIONALE_REQUIRED"
+      ],
+      "review_status": "METHOD_REVIEW_REQUIRED"
+    },
+    {
+      "case_id": "caf988db-91fe-435c-bbe1-4b4c55ccbbf3",
+      "public_title": "Bundeshaushalt 2027",
+      "path_id": "P8",
+      "hypothesis": "Die Portfolios können Erreichbarkeit, bezahlbaren Wohnraum, regionale Teilhabe, internationale Stabilität und klimaverträgliche Mobilität stärken.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "Instandhaltungsstau",
+        "sozial selektive Investitionen",
+        "fossile/straßenbezogene Lock-ins",
+        "Destabilisierung durch Kürzungen"
+      ],
+      "mapping_targets": [
+        "SDG_10",
+        "SDG_11",
+        "SDG_13",
+        "SDG_17",
+        "SDG_PLUS_SOCIAL_COHESION",
+        "GG_ART_109_2_MACROECONOMIC_BALANCE",
+        "GG_ART_20A_NATURAL_FOUNDATIONS",
+        "GG_ART_20_STATE_STRUCTURE"
+      ],
+      "proposed_issue_flags": [
+        "DIRECTION_RATIONALE_REQUIRED"
+      ],
+      "review_status": "METHOD_REVIEW_REQUIRED"
+    },
+    {
+      "case_id": "caf988db-91fe-435c-bbe1-4b4c55ccbbf3",
+      "public_title": "Bundeshaushalt 2027",
+      "path_id": "P9",
+      "hypothesis": "Digitale Infrastruktur und Verwaltungsmodernisierung können Zugänglichkeit, Geschwindigkeit, Transparenz und Krisenfähigkeit verbessern.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "digitale Exklusion",
+        "Lock-in proprietärer Systeme",
+        "Cyberrisiken",
+        "Automatisierung ineffizienter Prozesse"
+      ],
+      "mapping_targets": [
+        "SDG_09",
+        "SDG_16",
+        "SDG_PLUS_INSTITUTIONAL_TRUST",
+        "SDG_PLUS_DIGITAL_SELF_DETERMINATION",
+        "SDG_PLUS_DISCOURSE_CAPACITY",
+        "GG_ART_20_STATE_STRUCTURE",
+        "GG_ART_109_2_MACROECONOMIC_BALANCE"
+      ],
+      "proposed_issue_flags": [
+        "DIRECTION_RATIONALE_REQUIRED"
+      ],
+      "review_status": "METHOD_REVIEW_REQUIRED"
+    },
+    {
+      "case_id": "caf988db-91fe-435c-bbe1-4b4c55ccbbf3",
+      "public_title": "Bundeshaushalt 2027",
+      "path_id": "P10",
+      "hypothesis": "Kreditfinanzierung kann zeitkritische Zukunftsinvestitionen ermöglichen und Kosten des Unterlassens vermeiden.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "steigende Zinsbindung verdrängt spätere Wirkungsausgaben",
+        "Schulden finanzieren laufende oder nicht zusätzliche Ausgaben",
+        "intergenerationelle Lastverschiebung"
+      ],
+      "mapping_targets": [
+        "SDG_08",
+        "SDG_09",
+        "GG_ART_109_2_MACROECONOMIC_BALANCE",
+        "GG_ART_20_STATE_STRUCTURE"
+      ],
+      "proposed_issue_flags": [
+        "DIRECTION_RATIONALE_REQUIRED"
+      ],
+      "review_status": "METHOD_REVIEW_REQUIRED"
+    },
+    {
+      "case_id": "caf988db-91fe-435c-bbe1-4b4c55ccbbf3",
+      "public_title": "Bundeshaushalt 2027",
+      "path_id": "P11",
+      "hypothesis": "Langfristige Bindungen können Planungssicherheit und Umsetzung großer Programme ermöglichen.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "Pfadabhängigkeit",
+        "Kosten- und Technologie-Lock-in",
+        "Aushöhlung künftiger Budgethoheit",
+        "Fortführung trotz schlechter Wirkung"
+      ],
+      "mapping_targets": [
+        "SDG_03",
+        "SDG_16",
+        "GG_ART_109_2_MACROECONOMIC_BALANCE",
+        "GG_ART_20_STATE_STRUCTURE"
+      ],
+      "proposed_issue_flags": [
+        "DIRECTION_RATIONALE_REQUIRED"
+      ],
+      "review_status": "METHOD_REVIEW_REQUIRED"
+    },
+    {
+      "case_id": "caf988db-91fe-435c-bbe1-4b4c55ccbbf3",
+      "public_title": "Bundeshaushalt 2027",
+      "path_id": "P12",
+      "hypothesis": "Ein ressortübergreifendes Wirkungsmonitoring kann Haushaltsvollzug von der reinen Ausgaben- zur Zustandssteuerung entwickeln.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [
+        "Kennzahlen ohne Entscheidungen",
+        "Mittelabfluss als Erfolgsersatz",
+        "Datenfriedhöfe",
+        "strategische Zielverschiebung"
+      ],
+      "mapping_targets": [
+        "SDG_08",
+        "GG_ART_109_2_MACROECONOMIC_BALANCE",
+        "GG_ART_20_STATE_STRUCTURE"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "d3b89eb6-b1d3-49b1-b67e-1352541904f0",
+      "public_title": "Faire Kostenentscheidungen im Wohnungseigentum",
+      "path_id": "P1",
+      "hypothesis": "Erhebliche Kostenverschiebungen benötigen breitere Legitimation; Minderheiten werden vor kurzfristiger Überstimmung geschützt.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "Blockade notwendiger Sanierung",
+        "strategische Aufteilung von Beschlüssen",
+        "Streit über Prognosen",
+        "ungleiche Belastung kleiner Budgets"
+      ],
+      "mapping_targets": [
+        "SDG_10",
+        "SDG_11",
+        "SDG_PLUS_SOCIAL_COHESION",
+        "GG_FUNDAMENTAL_RIGHTS"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "d3b89eb6-b1d3-49b1-b67e-1352541904f0",
+      "public_title": "Faire Kostenentscheidungen im Wohnungseigentum",
+      "path_id": "P2",
+      "hypothesis": "Entscheidungen werden sowohl nach Köpfen als auch Eigentumsanteilen breit getragen.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "Abwesenheit wird faktisch zum Veto",
+        "große Eigentümer oder Koalitionen blockieren",
+        "Entscheidungsverzögerung"
+      ],
+      "mapping_targets": [
+        "SDG_11",
+        "GG_FUNDAMENTAL_RIGHTS"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "d3b89eb6-b1d3-49b1-b67e-1352541904f0",
+      "public_title": "Faire Kostenentscheidungen im Wohnungseigentum",
+      "path_id": "P3",
+      "hypothesis": "Rechtssicherheit, Planbarkeit und Schutz vor nachträglicher Belastung steigen.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [
+        "Fehler oder ungerechte Altfälle bleiben unberührt",
+        "Streit über Zeitpunkt und Reichweite"
+      ],
+      "mapping_targets": [
+        "SDG_16",
+        "SDG_03",
+        "SDG_11",
+        "GG_FUNDAMENTAL_RIGHTS"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "d3b89eb6-b1d3-49b1-b67e-1352541904f0",
+      "public_title": "Faire Kostenentscheidungen im Wohnungseigentum",
+      "path_id": "P4",
+      "hypothesis": "Investitionen mit höheren Anfangskosten, aber geringeren Betriebs-, Energie-, Gesundheits- oder Schadenskosten können sachgerechter entschieden werden.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [
+        "Schwellen betrachten nur jährliche Kostenverschiebung und nicht Nutzen/vermiedene Kosten"
+      ],
+      "mapping_targets": [
+        "SDG_03",
+        "SDG_07",
+        "SDG_08",
+        "SDG_09",
+        "GG_ART_109_2_MACROECONOMIC_BALANCE",
+        "GG_FUNDAMENTAL_RIGHTS"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "e8fe0be8-69c8-426d-8414-abc8df0549ad",
+      "public_title": "Unerlaubter Umgang mit halbautomatischen Kurzwaffen",
+      "path_id": "P1",
+      "hypothesis": "Der erhöhte Strafrahmen kann Unrechtsbewertung, Ermittlungspriorität und Sanktion bei illegalem Umgang mit besonders missbrauchsgeeigneten Kurzwaffen verstärken.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "starre Mindeststrafe",
+        "mehr Haft ohne weniger Waffen",
+        "Verlagerung des Marktes",
+        "unverhältnismäßige Erfassung randständiger Fälle"
+      ],
+      "mapping_targets": [
+        "SDG_16",
+        "SDG_PLUS_RULE_OF_LAW"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "e8fe0be8-69c8-426d-8414-abc8df0549ad",
+      "public_title": "Unerlaubter Umgang mit halbautomatischen Kurzwaffen",
+      "path_id": "P2",
+      "hypothesis": "Kommunikationsdaten können Waffenverstecke, Lieferketten, Netzwerke und organisierte Händler aufklären.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "tiefer Eingriff in Fernmeldegeheimnis",
+        "Drittbetroffenheit",
+        "Zweckausweitung",
+        "hohe Datenmengen ohne Ermittlungserfolg"
+      ],
+      "mapping_targets": [
+        "SDG_03",
+        "SDG_07",
+        "SDG_12",
+        "SDG_16",
+        "SDG_PLUS_DIGITAL_SELF_DETERMINATION"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "e8fe0be8-69c8-426d-8414-abc8df0549ad",
+      "public_title": "Unerlaubter Umgang mit halbautomatischen Kurzwaffen",
+      "path_id": "P3",
+      "hypothesis": "Gezielte Ermittlungen können Angebot, Waffenflüsse und Zugang für Gewalttäter reduzieren.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [
+        "Strafrahmenänderung ersetzt Markt- und Lieferkettenbekämpfung",
+        "Verlagerung auf andere Waffen"
+      ],
+      "mapping_targets": [
+        "SDG_16",
+        "SDG_03"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "e8fe0be8-69c8-426d-8414-abc8df0549ad",
+      "public_title": "Unerlaubter Umgang mit halbautomatischen Kurzwaffen",
+      "path_id": "P4",
+      "hypothesis": "Instrumente können im Zusammenhang statt isoliert bewertet und unbeabsichtigte Wechselwirkungen erkannt werden.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [
+        "Gesetzgebung läuft Evaluation voraus",
+        "spätere Evaluation ohne Korrektur"
+      ],
+      "mapping_targets": [
+        "SDG_16"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "e9bbdd4a-9f5f-47e4-ac5a-bc347d1e659e",
+      "public_title": "GAP-Verwaltungs- und Kontrollsystem",
+      "path_id": "P1",
+      "hypothesis": "Doppelte Prüfungen können entfallen und Verwaltung/Betriebe entlastet werden, wenn Zertifizierung dieselben Schutzanforderungen verlässlich abdeckt.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "Blindstellen zwischen Öko-Zertifizierung und GLÖZ",
+        "unwiderlegliche Vermutung trotz konkreter Verstöße",
+        "ungleiche Behandlung"
+      ],
+      "mapping_targets": [
+        "SDG_16",
+        "SDG_PLUS_INSTITUTIONAL_TRUST",
+        "GG_ART_20_STATE_STRUCTURE"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "e9bbdd4a-9f5f-47e4-ac5a-bc347d1e659e",
+      "public_title": "GAP-Verwaltungs- und Kontrollsystem",
+      "path_id": "P2",
+      "hypothesis": "Kleine Betriebe und Behörden werden bei Fruchtwechsel-/Diversifizierungsanforderungen entlastet.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "kumulative Boden-/Biodiversitätswirkung",
+        "Wettbewerbsverzerrung",
+        "Umgehung",
+        "fehlende Daten"
+      ],
+      "mapping_targets": [
+        "SDG_16",
+        "SDG_PLUS_INSTITUTIONAL_TRUST",
+        "GG_ART_20_STATE_STRUCTURE"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "e9bbdd4a-9f5f-47e4-ac5a-bc347d1e659e",
+      "public_title": "GAP-Verwaltungs- und Kontrollsystem",
+      "path_id": "P3",
+      "hypothesis": "Betriebe können adaptiv reagieren, Ernteausfälle vermeiden und Resilienz erhöhen.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "dauerhafte Aushöhlung von Standards",
+        "unterschiedliche Länderpraxis",
+        "Fehlanreiz zur Ausnahmebeantragung"
+      ],
+      "mapping_targets": [
+        "SDG_13",
+        "SDG_16",
+        "SDG_PLUS_INSTITUTIONAL_TRUST",
+        "GG_ART_20_STATE_STRUCTURE"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "e9bbdd4a-9f5f-47e4-ac5a-bc347d1e659e",
+      "public_title": "GAP-Verwaltungs- und Kontrollsystem",
+      "path_id": "P4",
+      "hypothesis": "Hinweise auf Umwelt-, Tierwohl-, Lebensmittel- oder Klimaverstöße können zielgerichteter verfolgt und Doppelerhebung reduziert werden.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "Datenschutz-/Zweckänderung",
+        "Fehlmeldungen",
+        "uneinheitlicher Vollzug",
+        "abschreckende Bürokratie trotz Entlastungsziel"
+      ],
+      "mapping_targets": [
+        "SDG_16",
+        "SDG_02",
+        "SDG_13",
+        "SDG_PLUS_INSTITUTIONAL_TRUST",
+        "SDG_PLUS_RULE_OF_LAW",
+        "GG_ART_20A_NATURAL_FOUNDATIONS",
+        "AEUV_ART_13_ANIMAL_WELFARE",
+        "GG_ART_20A_ANIMAL_PROTECTION"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "e9bbdd4a-9f5f-47e4-ac5a-bc347d1e659e",
+      "public_title": "GAP-Verwaltungs- und Kontrollsystem",
+      "path_id": "P5",
+      "hypothesis": "Fehler können leichter korrigiert, Sanktionen vermieden und Verfahren vereinheitlicht werden.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [
+        "IT-/Umstellungsaufwand",
+        "unterschiedliche Länderumsetzung"
+      ],
+      "mapping_targets": [
+        "SDG_16",
+        "SDG_PLUS_INSTITUTIONAL_TRUST",
+        "SDG_PLUS_RULE_OF_LAW",
+        "GG_ART_20_STATE_STRUCTURE"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "ec3dd2c3-c21b-4050-830c-d6f5af416d3d",
+      "public_title": "Reform des Fahrlehrerrechts",
+      "path_id": "P1",
+      "hypothesis": "Fahrschulen können Sachkosten und räumliche Fixkosten reduzieren; Lernangebote werden flexibler und regional zugänglicher.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "Qualitätsverlust",
+        "digitale Exklusion",
+        "Marktkonzentration durch Plattformen",
+        "keine Preisweitergabe",
+        "höherer Energie-/Gerätebedarf"
+      ],
+      "mapping_targets": [
+        "SDG_04",
+        "SDG_10",
+        "SDG_16",
+        "SDG_PLUS_SOCIAL_COHESION"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "ec3dd2c3-c21b-4050-830c-d6f5af416d3d",
+      "public_title": "Reform des Fahrlehrerrechts",
+      "path_id": "P2",
+      "hypothesis": "Vergleichbarkeit und Wettbewerb können steigen; Lernende erhalten bessere Preisinformation.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "Lockpreise",
+        "unvollständige Zusatzkosten",
+        "Plattform wird nicht genutzt",
+        "Preisangleichung nach oben"
+      ],
+      "mapping_targets": [
+        "SDG_04",
+        "SDG_16",
+        "SDG_PLUS_DISCOURSE_CAPACITY",
+        "SDG_PLUS_MEDIA_QUALITY"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "ec3dd2c3-c21b-4050-830c-d6f5af416d3d",
+      "public_title": "Reform des Fahrlehrerrechts",
+      "path_id": "P3",
+      "hypothesis": "Mehr Fahrpraxis außerhalb klassischer Fahrschulstunden kann Kompetenz erhöhen und Kosten senken.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "Unfallrisiko",
+        "ungleiche Zugangschancen zu Fahrzeug/Begleitung",
+        "Länderteppich",
+        "Verlagerung professioneller Ausbildung"
+      ],
+      "mapping_targets": [
+        "SDG_16"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "ec3dd2c3-c21b-4050-830c-d6f5af416d3d",
+      "public_title": "Reform des Fahrlehrerrechts",
+      "path_id": "P4",
+      "hypothesis": "Weniger formale Nachweise und digitale Aufzeichnungen können Zeit sparen, ohne Qualitätskontrolle zu schwächen.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "Kontrollverlust",
+        "uneinheitliche geeignete Form",
+        "Manipulation oder Datenlücken"
+      ],
+      "mapping_targets": [
+        "SDG_09",
+        "SDG_16",
+        "SDG_PLUS_DIGITAL_SELF_DETERMINATION",
+        "SDG_PLUS_INSTITUTIONAL_TRUST"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "ec3dd2c3-c21b-4050-830c-d6f5af416d3d",
+      "public_title": "Reform des Fahrlehrerrechts",
+      "path_id": "P5",
+      "hypothesis": "Berufsmobilität, Fachkräftezugang und EU-Rechtskonformität können steigen.",
+      "current_direction": "POSITIVE_POTENTIAL",
+      "direction_rationale": null,
+      "risks": [
+        "inkonsistente Anerkennung",
+        "unnötige Barrieren oder Qualitätslücken"
+      ],
+      "mapping_targets": [
+        "SDG_08",
+        "SDG_11",
+        "SDG_16",
+        "SDG_17",
+        "GG_ART_23_EUROPEAN_INTEGRATION"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    },
+    {
+      "case_id": "ec3dd2c3-c21b-4050-830c-d6f5af416d3d",
+      "public_title": "Reform des Fahrlehrerrechts",
+      "path_id": "P6",
+      "hypothesis": "Ehrenamtliche Einsatzfähigkeit und grenzüberschreitende Einsatzmobilität können gestärkt werden.",
+      "current_direction": "AMBIVALENT",
+      "direction_rationale": null,
+      "risks": [
+        "Sicherheitsdefizite bei verkürzter Ausbildung",
+        "unterschiedliche Umsetzung"
+      ],
+      "mapping_targets": [
+        "SDG_11",
+        "SDG_16",
+        "SDG_17"
+      ],
+      "proposed_issue_flags": [],
+      "review_status": "NOT_FLAGGED_BY_TECHNICAL_LINT"
+    }
+  ]
+}

@@ -346,7 +346,10 @@
             "causalRule": "No causal attribution or net-impact claim without an explicit counterfactual or justified causal alternative."
           }
         ],
-        "counterarguments": [],
+        "counterarguments": [
+          "Eine höhere Mindeststrafe löst weder geringe Anzeigequote noch kurze Nachweisfenster.",
+          "Rechtsklarheit ist ein eigenständiger Nutzen, darf aber nicht mit Abschreckungswirkung gleichgesetzt werden."
+        ],
         "feedback": {
           "currentStatus": "NOT_YET_OBSERVABLE",
           "interpretation": "Die Rechtsprechung ist eine klare Rückkopplung der Anwendungspraxis: Das bisherige Normdesign erfasst den gesetzgeberisch angenommenen Unrechtsgehalt nicht konsistent. Diese Rückkopplung belegt das rechtliche Wirkungspotenzial der Klarstellung, aber noch keine gesellschaftliche oder präventive Wirkung.",
@@ -828,7 +831,11 @@
             "causalRule": "No causal attribution or net-impact claim without an explicit counterfactual or justified causal alternative."
           }
         ],
-        "counterarguments": [],
+        "counterarguments": [
+          "Ein Anstieg registrierter Schusswaffendelikte beweist nicht, dass der Strafrahmen die Ursache oder der wirksamste Hebel ist.",
+          "TKÜ-Verfügbarkeit folgt formal aus Katalogisierung, ihre tatsächliche zusätzliche Aufklärungswirkung muss empirisch belegt werden.",
+          "Die laufende Gesamtevaluation kann Wechselwirkungen sichtbar machen, die eine isolierte Vorabänderung verfehlt."
+        ],
         "feedback": {
           "currentStatus": "NOT_YET_OBSERVABLE",
           "interpretation": "Es gibt deskriptive Sicherheitsrückkopplung und eine laufende formale Evaluation. Methodisch ist gerade diese Kombination wichtig: Problemdruck kann bestehen, aber bevor Strafrahmen und Überwachung ausgeweitet werden, sollte geklärt werden, welche Hebel die illegale Verfügbarkeit tatsächlich reduzieren. Ohne Evaluationsbefund bleibt die Instrumentenwirkung offen.",
@@ -1000,7 +1007,7 @@
         "impactPaths": [
           {
             "id": "P1",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P1",
             "hypothesis": "Mehr Vorlauf kann Verwaltung, Betrieben und IT-/Antragsprozessen eine robustere Einführung ermöglichen und Fehlanwendungen reduzieren.",
             "direction": "POSITIVE_POTENTIAL",
             "affectedDimensions": [
@@ -1010,13 +1017,13 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           },
           {
             "id": "P2",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P2",
             "hypothesis": "Die Verschiebung verzögert die beabsichtigten ökologischen Anreize der beiden Öko-Regelungen und kann dadurch eine einjährige Wirkungsverzögerung verursachen.",
             "direction": "NEGATIVE_RISK",
             "affectedDimensions": [
@@ -1025,13 +1032,13 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           },
           {
             "id": "P3",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P3",
             "hypothesis": "Wenn bereitgestellte Mittel während der Verschiebung anders verwendet oder nicht wirksam gebunden werden, können zusätzliche Opportunitätswirkungen entstehen.",
             "direction": "AMBIVALENT",
             "affectedDimensions": [
@@ -1041,26 +1048,26 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           }
         ],
         "impactDomains": [
           {
-            "domain": "Wirkungsbereich",
+            "domain": "Mensch",
             "relevance": [],
-            "assessment": "EVIDENCE_OPEN"
+            "assessment": "EX_ANTE_ONLY"
           },
           {
-            "domain": "Wirkungsbereich",
+            "domain": "Demokratie",
             "relevance": [],
-            "assessment": "EVIDENCE_OPEN"
+            "assessment": "EX_ANTE_ONLY"
           },
           {
-            "domain": "Wirkungsbereich",
+            "domain": "Planet",
             "relevance": [],
-            "assessment": "EVIDENCE_OPEN"
+            "assessment": "EX_ANTE_ONLY"
           }
         ],
         "calculations": [
@@ -1146,9 +1153,8 @@
         ],
         "boundaries": [
           {
-            "boundary": "Schutzgrenze wird geprüft.",
-            "status": "MUST_BE_TESTED",
-            "reason": "Die Schutzgrenze wird nicht mit positiven Wirkungen in anderen Bereichen verrechnet."
+            "boundary": "Irreversible ökologische Verluste während der Verzögerung dürfen nicht pauschal mit späterer besserer Umsetzung verrechnet werden.",
+            "status": "MUST_BE_TESTED"
           }
         ],
         "counterfactuals": [
@@ -1168,12 +1174,45 @@
             "causalRule": "No causal attribution or net-impact claim without an explicit counterfactual or justified quasi-experimental/causal alternative."
           }
         ],
-        "counterarguments": []
+        "counterarguments": [
+          "Ein späterer Start kann die Teilnahmequalität erhöhen, aber zugleich unwiederbringliche Umweltwirkung im Übergangsjahr kosten.",
+          "Administrative Schwierigkeiten allein belegen nicht, dass eine vollständige Verschiebung gegenüber Pilot-/Stufenmodellen vorzugswürdig war."
+        ]
       },
       "releaseSummary": {
         "whatIsKnown": "Wirkpfade und Risiken sind aus den vorliegenden amtlichen Quellen strukturiert.",
         "whatIsNotYetKnown": "Eine belastbare Netto-Wirkung ist erst nach Baseline, Beobachtung, Gegenfaktum, Zurechnung, Unsicherheitsangabe und Schutzgate-Prüfung möglich.",
         "evidenceBoundary": "Die Akte ist in der ausgewiesenen Reifestufe öffentlich nutzbar. Sie ist kein Endscore und keine abgeschlossene kausale Netto-Wirkungsbewertung."
+      },
+      "voteLayer": {
+        "status": "VOTED",
+        "rollCall": "NOT_ROLL_CALL",
+        "date": "2025-06-26",
+        "result": "ADOPTED",
+        "factions": [
+          {
+            "name": "CDU/CSU",
+            "result": "YES"
+          },
+          {
+            "name": "SPD",
+            "result": "YES"
+          },
+          {
+            "name": "AfD",
+            "result": "NO"
+          },
+          {
+            "name": "B90/Grüne",
+            "result": "NO"
+          },
+          {
+            "name": "Die Linke",
+            "result": "NO"
+          }
+        ],
+        "sourceUrl": "https://www.bundestag.de/dokumente/textarchiv/2025/kw23-de-gap-1083668",
+        "note": "Bundestag-Seite enthält an einer Stelle offenbar 26. Juni 2026; Drucksachen- und Fallkontext weisen 26. Juni 2025 aus."
       }
     },
     "fachakteId": "case-64892605-37f9-4a8c-a1ab-ff5e86056693"
@@ -1395,7 +1434,7 @@
         "impactPaths": [
           {
             "id": "P1",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P1",
             "hypothesis": "Zusätzliche Vorbereitungszeit kann Länder- und Unternehmensprozesse stabilisieren und fehlerhafte oder inkonsistente Kennzeichnung reduzieren.",
             "direction": "POSITIVE_POTENTIAL",
             "affectedDimensions": [
@@ -1405,13 +1444,13 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           },
           {
             "id": "P2",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P2",
             "hypothesis": "Die Verschiebung verzögert Verbrauchertransparenz und damit mögliche nachfrage- und investitionsseitige Tierwohl-Anreize.",
             "direction": "NEGATIVE_RISK",
             "affectedDimensions": [
@@ -1420,13 +1459,13 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           },
           {
             "id": "P3",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P3",
             "hypothesis": "Ein später, aber funktionsfähiger Start kann wirksamer sein als ein formaler Start ohne Vollzugsinfrastruktur; dies ist empirisch zu prüfen.",
             "direction": "AMBIVALENT",
             "affectedDimensions": [
@@ -1436,13 +1475,13 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           },
           {
             "id": "P4",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P4",
             "hypothesis": "Die angekündigte breitere Reform kann die spätere Systemwirkung erhöhen, ist aber zum Entscheidungszeitpunkt noch Zukunftspotenzial und keine eingetretene Wirkung.",
             "direction": "AMBIVALENT",
             "affectedDimensions": [
@@ -1452,26 +1491,26 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           }
         ],
         "impactDomains": [
           {
-            "domain": "Wirkungsbereich",
+            "domain": "Mensch",
             "relevance": [],
-            "assessment": "EVIDENCE_OPEN"
+            "assessment": "EX_ANTE_ONLY"
           },
           {
-            "domain": "Wirkungsbereich",
+            "domain": "Demokratie",
             "relevance": [],
-            "assessment": "EVIDENCE_OPEN"
+            "assessment": "EX_ANTE_ONLY"
           },
           {
-            "domain": "Wirkungsbereich",
+            "domain": "Planet",
             "relevance": [],
-            "assessment": "EVIDENCE_OPEN"
+            "assessment": "EX_ANTE_ONLY"
           }
         ],
         "calculations": [
@@ -1559,9 +1598,8 @@
         ],
         "boundaries": [
           {
-            "boundary": "Schutzgrenze wird geprüft.",
-            "status": "MUST_BE_TESTED",
-            "reason": "Die Schutzgrenze wird nicht mit positiven Wirkungen in anderen Bereichen verrechnet."
+            "boundary": "Tierwohl darf nicht allein über Kennzeichnungscompliance bewertet werden; direkte Schutz-/Wohlfahrtsindikatoren sind erforderlich.",
+            "status": "MUST_BE_TESTED"
           }
         ],
         "counterfactuals": [
@@ -1581,12 +1619,44 @@
             "causalRule": "No causal attribution or net-impact claim without an explicit counterfactual or justified quasi-experimental/causal alternative."
           }
         ],
-        "counterarguments": []
+        "counterarguments": [
+          "Zusätzliche Vorbereitungszeit kann Vollzug verbessern, doch wiederholte Verschiebung kann Glaubwürdigkeit und Investitionsanreize schwächen.",
+          "Kennzeichnung kann Kaufentscheidungen beeinflussen, ist aber kein direkter Nachweis besserer Tiergesundheit oder Tierwohlzustände."
+        ]
       },
       "releaseSummary": {
         "whatIsKnown": "Wirkpfade und Risiken sind aus den vorliegenden amtlichen Quellen strukturiert.",
         "whatIsNotYetKnown": "Eine belastbare Netto-Wirkung ist erst nach Baseline, Beobachtung, Gegenfaktum, Zurechnung, Unsicherheitsangabe und Schutzgate-Prüfung möglich.",
         "evidenceBoundary": "Die Akte ist in der ausgewiesenen Reifestufe öffentlich nutzbar. Sie ist kein Endscore und keine abgeschlossene kausale Netto-Wirkungsbewertung."
+      },
+      "voteLayer": {
+        "status": "VOTED",
+        "rollCall": "NOT_ROLL_CALL",
+        "date": "2025-06-26",
+        "result": "ADOPTED",
+        "factions": [
+          {
+            "name": "CDU/CSU",
+            "result": "YES"
+          },
+          {
+            "name": "SPD",
+            "result": "YES"
+          },
+          {
+            "name": "AfD",
+            "result": "NO"
+          },
+          {
+            "name": "B90/Grüne",
+            "result": "NO"
+          },
+          {
+            "name": "Die Linke",
+            "result": "NO"
+          }
+        ],
+        "sourceUrl": "https://www.bundestag.de/dokumente/textarchiv/2025/kw23-de-tierhaltungskennzeichnung-1083666"
       }
     },
     "fachakteId": "case-94cdfef9-baca-41aa-91df-4a1dbd6b5d4e"
@@ -1828,7 +1898,7 @@
         "impactPaths": [
           {
             "id": "P1",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P1",
             "hypothesis": "Degressive Abschreibung kann Liquidität und Barwert von Investitionen verbessern und Investitionen vorziehen.",
             "direction": "POSITIVE_POTENTIAL",
             "affectedDimensions": [
@@ -1837,13 +1907,13 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           },
           {
             "id": "P2",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P2",
             "hypothesis": "Eine schrittweise Körperschaftsteuersenkung kann Nachsteuererträge erhöhen und Standort-/Investitionsanreize verändern.",
             "direction": "POSITIVE_POTENTIAL",
             "affectedDimensions": [
@@ -1852,13 +1922,13 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           },
           {
             "id": "P3",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P3",
             "hypothesis": "Breite Entlastungen ohne Investitions- oder Wirkungskondition können hohe Mitnahmeeffekte erzeugen und auch Investitionen mit negativer Netto-Wirkung begünstigen.",
             "direction": "NEGATIVE_RISK",
             "affectedDimensions": [
@@ -1869,13 +1939,13 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           },
           {
             "id": "P4",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P4",
             "hypothesis": "Steuermindereinnahmen können die fiskalische Handlungsfähigkeit von Staatsebenen beeinträchtigen; Umfang und Nettoeffekt müssen empirisch ermittelt werden.",
             "direction": "NEGATIVE_RISK",
             "affectedDimensions": [
@@ -1885,13 +1955,13 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           },
           {
             "id": "P5",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P5",
             "hypothesis": "Unternehmen mit niedrigen Gewinnen oder Verlusten können von reinen Abschreibungsinstrumenten anders profitieren als profitable Unternehmen; dies kann Verteilung und Innovationsstruktur beeinflussen.",
             "direction": "AMBIVALENT",
             "affectedDimensions": [
@@ -1900,26 +1970,26 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           }
         ],
         "impactDomains": [
           {
-            "domain": "Wirkungsbereich",
+            "domain": "Mensch",
             "relevance": [],
-            "assessment": "EVIDENCE_OPEN"
+            "assessment": "EX_ANTE_ONLY"
           },
           {
-            "domain": "Wirkungsbereich",
+            "domain": "Planet",
             "relevance": [],
-            "assessment": "EVIDENCE_OPEN"
+            "assessment": "EX_ANTE_ONLY"
           },
           {
-            "domain": "Wirkungsbereich",
+            "domain": "Demokratie",
             "relevance": [],
-            "assessment": "EVIDENCE_OPEN"
+            "assessment": "EX_ANTE_ONLY"
           }
         ],
         "calculations": [
@@ -2013,9 +2083,8 @@
         ],
         "boundaries": [
           {
-            "boundary": "Schutzgrenze wird geprüft.",
-            "status": "MUST_BE_TESTED",
-            "reason": "Die Schutzgrenze wird nicht mit positiven Wirkungen in anderen Bereichen verrechnet."
+            "boundary": "Investitionsförderung darf schwere negative Wirkungen einzelner Investitionen nicht durch aggregiertes Wachstum rechtfertigen.",
+            "status": "MUST_BE_TESTED"
           }
         ],
         "counterfactuals": [
@@ -2035,12 +2104,44 @@
             "causalRule": "No causal attribution or net-impact claim without an explicit counterfactual or justified quasi-experimental/causal alternative."
           }
         ],
-        "counterarguments": []
+        "counterarguments": [
+          "Makroökonomische Investitionsanstiege beweisen keine Wirkung des Steuerpakets.",
+          "Beschleunigte Abschreibung kann Investitionen zeitlich vorziehen, ohne den langfristigen Kapitalstock entsprechend zu erhöhen."
+        ]
       },
       "releaseSummary": {
         "whatIsKnown": "Wirkpfade und Risiken sind aus den vorliegenden amtlichen Quellen strukturiert.",
         "whatIsNotYetKnown": "Eine belastbare Netto-Wirkung ist erst nach Baseline, Beobachtung, Gegenfaktum, Zurechnung, Unsicherheitsangabe und Schutzgate-Prüfung möglich.",
         "evidenceBoundary": "Die Akte ist in der ausgewiesenen Reifestufe öffentlich nutzbar. Sie ist kein Endscore und keine abgeschlossene kausale Netto-Wirkungsbewertung."
+      },
+      "voteLayer": {
+        "status": "VOTED",
+        "rollCall": "NOT_ROLL_CALL",
+        "date": "2025-06-26",
+        "result": "ADOPTED",
+        "factions": [
+          {
+            "name": "CDU/CSU",
+            "result": "YES"
+          },
+          {
+            "name": "SPD",
+            "result": "YES"
+          },
+          {
+            "name": "B90/Grüne",
+            "result": "NO"
+          },
+          {
+            "name": "Die Linke",
+            "result": "NO"
+          },
+          {
+            "name": "AfD",
+            "result": "ABSTAIN"
+          }
+        ],
+        "sourceUrl": "https://www.bundestag.de/dokumente/textarchiv/2025/kw23-de-investitionssofortprogramm-1083898"
       }
     },
     "fachakteId": "case-43c02ec8-e1f6-42de-93b8-8bd0731a2565"
@@ -2204,7 +2305,7 @@
         "impactPaths": [
           {
             "id": "P1",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P1",
             "hypothesis": "Bundeseinheitliche Standards können Transparenz, Anerkennung und Mobilität der Qualifikation verbessern.",
             "direction": "POSITIVE_POTENTIAL",
             "affectedDimensions": [
@@ -2213,13 +2314,13 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           },
           {
             "id": "P2",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P2",
             "hypothesis": "Eine attraktivere und einheitliche Ausbildung kann zusätzliche Pflegeassistenzkräfte hervorbringen und Versorgungskapazität stärken.",
             "direction": "POSITIVE_POTENTIAL",
             "affectedDimensions": [
@@ -2228,13 +2329,13 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           },
           {
             "id": "P3",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P3",
             "hypothesis": "Ein besser abgestimmter Skill-Mix kann Pflegefachpersonen von geeigneten Aufgaben entlasten und Versorgungsqualität stabilisieren.",
             "direction": "POSITIVE_POTENTIAL",
             "affectedDimensions": [
@@ -2243,13 +2344,13 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           },
           {
             "id": "P4",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P4",
             "hypothesis": "Wenn Assistenzkräfte Fachpersonen aus Kostengründen ersetzen oder Aufgaben-/Kompetenzgrenzen unklar sind, können Qualitäts- und Patientensicherheitsrisiken entstehen.",
             "direction": "NEGATIVE_RISK",
             "affectedDimensions": [
@@ -2258,13 +2359,13 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           },
           {
             "id": "P5",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P5",
             "hypothesis": "Standardisierung allein behebt keine Ausbildungsplatz-, Lehrpersonal-, Vergütungs- oder Bindungsengpässe.",
             "direction": "AMBIVALENT",
             "affectedDimensions": [
@@ -2273,16 +2374,16 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           }
         ],
         "impactDomains": [
           {
-            "domain": "Wirkungsbereich",
+            "domain": "Mensch",
             "relevance": [],
-            "assessment": "EVIDENCE_OPEN"
+            "assessment": "EX_ANTE_ONLY"
           }
         ],
         "calculations": [
@@ -2372,9 +2473,8 @@
         ],
         "boundaries": [
           {
-            "boundary": "Schutzgrenze wird geprüft.",
-            "status": "MUST_BE_TESTED",
-            "reason": "Die Schutzgrenze wird nicht mit positiven Wirkungen in anderen Bereichen verrechnet."
+            "boundary": "Patientensicherheit und fachlich erforderliche Kompetenzgrenzen sind nicht kompensierbar.",
+            "status": "MUST_BE_TESTED"
           }
         ],
         "counterfactuals": [
@@ -2394,12 +2494,44 @@
             "causalRule": "No causal attribution or net-impact claim without an explicit counterfactual or justified quasi-experimental/causal alternative."
           }
         ],
-        "counterarguments": []
+        "counterarguments": [
+          "Mehr Assistenzkräfte können Fachkräfte entlasten, aber bei falschem Skill-Mix auch Qualitäts- und Sicherheitsrisiken erhöhen.",
+          "Bundeseinheitlichkeit erzeugt Mobilitätspotenzial, aber noch keine tatsächliche zusätzliche Ausbildungskapazität."
+        ]
       },
       "releaseSummary": {
         "whatIsKnown": "Wirkpfade und Risiken sind aus den vorliegenden amtlichen Quellen strukturiert.",
         "whatIsNotYetKnown": "Eine belastbare Netto-Wirkung ist erst nach Baseline, Beobachtung, Gegenfaktum, Zurechnung, Unsicherheitsangabe und Schutzgate-Prüfung möglich.",
         "evidenceBoundary": "Die Akte ist in der ausgewiesenen Reifestufe öffentlich nutzbar. Sie ist kein Endscore und keine abgeschlossene kausale Netto-Wirkungsbewertung."
+      },
+      "voteLayer": {
+        "status": "VOTED",
+        "rollCall": "NOT_ROLL_CALL",
+        "date": "2025-10-09",
+        "result": "ADOPTED",
+        "factions": [
+          {
+            "name": "CDU/CSU",
+            "result": "YES"
+          },
+          {
+            "name": "SPD",
+            "result": "YES"
+          },
+          {
+            "name": "AfD",
+            "result": "ABSTAIN"
+          },
+          {
+            "name": "B90/Grüne",
+            "result": "ABSTAIN"
+          },
+          {
+            "name": "Die Linke",
+            "result": "ABSTAIN"
+          }
+        ],
+        "sourceUrl": "https://www.bundestag.de/dokumente/textarchiv/2025/kw41-de-pflegefachassistenz-1111790"
       }
     },
     "fachakteId": "case-79146c82-e8d0-467a-929e-142c72d9d6cd"
@@ -3514,7 +3646,13 @@
             "causalRule": "No causal attribution or net-impact claim without an explicit counterfactual or justified causal alternative."
           }
         ],
-        "counterarguments": [],
+        "counterarguments": [
+          "Ein höherer Haushaltsansatz ist weder automatisch expansiver Realvollzug noch positive Wirkung; Preissteigerungen, Umschichtungen und Umsetzungsengpässe können den realen Effekt mindern.",
+          "Mittelabfluss, Vergabe und Baufortschritt sind wichtige Outputs, aber noch keine Zustandsverbesserung.",
+          "Kreditfinanzierung ist nicht per se gut oder schlecht; entscheidend sind Zusätzlichkeit, Netto-Wirkung, Lebenszyklus- und Opportunitätskosten.",
+          "Ressortkürzungen oder -steigerungen dürfen nicht isoliert bewertet werden, weil Funktionen zwischen Kernhaushalt, Sondervermögen und anderen Einzelplänen verlagert sein können.",
+          "Verteidigungs-, Klima-, Sozial- und Infrastrukturwirkungen sind nicht in einer einfachen Summe verrechenbar; Schutzgates und Mindestversorgung bleiben bindend."
+        ],
         "feedback": {
           "currentStatus": "NOT_YET_OBSERVABLE",
           "interpretation": "Beim Haushalt existiert bereits eine Rückkopplung auf der Ebene von Planung, Vorjahresvergleich und Schuldenregel. Das ist bedeutsam, weil es Prioritätsverschiebungen und künftige Bindungen sichtbar macht. Es fehlt jedoch die entscheidende Wirkungsrückkopplung: konsolidierte Ist-Ausgaben, erreichte Outputs, beobachtete Zustandsänderungen, Zusätzlichkeit und kausale Attribution früherer bzw. laufender Programme.",
@@ -4010,7 +4148,11 @@
             "causalRule": "No causal attribution or net-impact claim without an explicit counterfactual or justified causal alternative."
           }
         ],
-        "counterarguments": [],
+        "counterarguments": [
+          "Die Vermeidung eines Krankenhaustransports ist kein hinreichender Grund für Zwang; alle materiellen Voraussetzungen und milderen Mittel bleiben eigenständig.",
+          "Verwaltungs- oder Kostenentlastung darf den Grundrechtsschutz nicht abschwächen.",
+          "Eine Ausnahme kann ohne enge Daten- und Kontrollarchitektur zur neuen Regel werden."
+        ],
         "feedback": {
           "currentStatus": "NOT_YET_OBSERVABLE",
           "interpretation": "Die Historie liefert hier eine tragfähige Rückkopplung: Verfassungsrecht, Evaluation und Praxis zeigen sowohl gesundheitliche Nachteile des ausnahmslosen Krankenhausgebots als auch hohe Schutzbedürftigkeit bei Zwang. Daraus folgt ein präziser Gestaltungsauftrag, aber noch keine Aussage, dass die konkrete Neuregelung die beste oder netto positive Lösung ist.",
@@ -4207,7 +4349,7 @@
         "impactPaths": [
           {
             "id": "P1",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P1",
             "hypothesis": "Eine frühzeitige Sicherung künftig benötigter Bahnflächen kann spätere Engpässe, Rückkäufe und teure Neuplanungen vermeiden und den Ausbau des Schienenverkehrs erleichtern.",
             "direction": "POSITIVE_POTENTIAL",
             "affectedDimensions": [
@@ -4217,13 +4359,13 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           },
           {
             "id": "P2",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P2",
             "hypothesis": "Die Verknüpfung mit dem Deutschlandtakt kann Flächensicherung stärker an einem langfristigen Verkehrs- und Infrastrukturkonzept ausrichten.",
             "direction": "POSITIVE_POTENTIAL",
             "affectedDimensions": [
@@ -4234,13 +4376,13 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           },
           {
             "id": "P3",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P3",
             "hypothesis": "Zu weitgehende Flächensicherung kann Wohnungsbau oder andere kommunale Nutzungen blockieren, obwohl ein späterer Bahnbedarf unsicher bleibt.",
             "direction": "NEGATIVE_RISK",
             "affectedDimensions": [
@@ -4250,13 +4392,13 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           },
           {
             "id": "P4",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P4",
             "hypothesis": "Da die Vorlage abgelehnt wurde, kann ihre tatsächliche Wirkung nicht ex post beobachtet werden; relevant ist der Vergleich mit der stattdessen gewählten Rechtslage.",
             "direction": "AMBIVALENT",
             "affectedDimensions": [
@@ -4267,26 +4409,26 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           }
         ],
         "impactDomains": [
           {
-            "domain": "Wirkungsbereich",
+            "domain": "Mensch",
             "relevance": [],
-            "assessment": "EVIDENCE_OPEN"
+            "assessment": "EX_ANTE_ONLY"
           },
           {
-            "domain": "Wirkungsbereich",
+            "domain": "Planet",
             "relevance": [],
-            "assessment": "EVIDENCE_OPEN"
+            "assessment": "EX_ANTE_ONLY"
           },
           {
-            "domain": "Wirkungsbereich",
+            "domain": "Demokratie",
             "relevance": [],
-            "assessment": "EVIDENCE_OPEN"
+            "assessment": "EX_ANTE_ONLY"
           }
         ],
         "calculations": [
@@ -4374,9 +4516,8 @@
         ],
         "boundaries": [
           {
-            "boundary": "Schutzgrenze wird geprüft.",
-            "status": "MUST_BE_TESTED",
-            "reason": "Die Schutzgrenze wird nicht mit positiven Wirkungen in anderen Bereichen verrechnet."
+            "boundary": "Keine pauschale Kompensation erheblicher sozialer Verdrängungs- oder Naturfolgen durch abstrakten Infrastrukturvorteil.",
+            "status": "MUST_BE_TESTED"
           }
         ],
         "counterfactuals": [
@@ -4396,12 +4537,45 @@
             "causalRule": "No causal attribution or net-impact claim without an explicit counterfactual or justified quasi-experimental/causal alternative."
           }
         ],
-        "counterarguments": []
+        "counterarguments": [
+          "Langfristiger Flächenbedarf kann überschätzt werden; ungenutzte Sicherung kann lokale Entwicklungskosten verursachen.",
+          "Freistellung kann kurzfristig Nutzen erzeugen, aber spätere Rückgewinnung oder Neutrassierung erheblich teurer sein."
+        ]
       },
       "releaseSummary": {
         "whatIsKnown": "Wirkpfade und Risiken sind aus den vorliegenden amtlichen Quellen strukturiert.",
         "whatIsNotYetKnown": "Eine belastbare Netto-Wirkung ist erst nach Baseline, Beobachtung, Gegenfaktum, Zurechnung, Unsicherheitsangabe und Schutzgate-Prüfung möglich.",
         "evidenceBoundary": "Die Akte ist in der ausgewiesenen Reifestufe öffentlich nutzbar. Sie ist kein Endscore und keine abgeschlossene kausale Netto-Wirkungsbewertung."
+      },
+      "voteLayer": {
+        "status": "VOTED",
+        "rollCall": "NOT_ROLL_CALL_FOR_THIS_EXACT_CASE",
+        "date": "2025-06-26",
+        "result": "REJECTED",
+        "factions": [
+          {
+            "name": "B90/Grüne",
+            "result": "YES"
+          },
+          {
+            "name": "CDU/CSU",
+            "result": "NO"
+          },
+          {
+            "name": "AfD",
+            "result": "NO"
+          },
+          {
+            "name": "SPD",
+            "result": "NO"
+          },
+          {
+            "name": "Die Linke",
+            "result": "ABSTAIN"
+          }
+        ],
+        "sourceUrl": "https://www.bundestag.de/dokumente/textarchiv/2025/kw26-de-eisenbahngesetz-1084790",
+        "note": "Die namentliche Abstimmung (305/172/68) betraf den anderen Gesetzentwurf 21/326; der hier analysierte Entwurf 21/335 wurde nicht namentlich abgestimmt."
       }
     },
     "fachakteId": "case-2c9d8b24-ce03-4784-93b7-cce23829bb68"
@@ -5075,7 +5249,12 @@
             "causalRule": "No causal attribution or net-impact claim without an explicit counterfactual or justified causal alternative."
           }
         ],
-        "counterarguments": [],
+        "counterarguments": [
+          "Gesparte Fahrschulkosten sind nicht automatisch gesparte Kundenausgaben.",
+          "Weniger Pflichtinfrastruktur kann Innovation fördern, aber auch Qualitäts- und Marktkonzentrationsrisiken erzeugen.",
+          "Prüfungserfolg allein misst nicht langfristige Verkehrssicherheit.",
+          "Experimentierklauseln entfalten nur dann positive Wirkung, wenn Daten und Korrekturmechanismen verbindlich sind."
+        ],
         "feedback": {
           "currentStatus": "NOT_YET_OBSERVABLE",
           "interpretation": "Die Reform verfügt bereits über mehrere Rückkopplungen: Vollzugserfahrungen seit 2018, EU-Rechtskontrolle, ein fachliches Evaluationskonzept und detaillierte Erfüllungsaufwandsschätzungen. Das macht den Fall besonders prüfbar. Entscheidend ist, die erwartete Unternehmensentlastung nicht mit günstigeren Führerscheinen oder guter Ausbildung gleichzusetzen, sondern Preisweitergabe, Lernqualität, Prüfungsleistung, Unfallrisiko und Teilhabe separat zu messen.",
@@ -5404,7 +5583,7 @@
         "impactPaths": [
           {
             "id": "P1",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P1",
             "hypothesis": "Höheres Gewicht des Netzausbaus in Genehmigungen kann Verfahren verkürzen und Ausbau von Glasfaser/Mobilfunk beschleunigen.",
             "direction": "POSITIVE_POTENTIAL",
             "affectedDimensions": [
@@ -5414,13 +5593,13 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           },
           {
             "id": "P2",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P2",
             "hypothesis": "Bessere Netzabdeckung und -verfügbarkeit kann Daseinsvorsorge, Informationszugang, Verwaltung und wirtschaftliche Aktivität stärken.",
             "direction": "POSITIVE_POTENTIAL",
             "affectedDimensions": [
@@ -5430,13 +5609,13 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           },
           {
             "id": "P3",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P3",
             "hypothesis": "Priorisierung kann bei konkreten Vorhaben mit Umwelt-, Flächen-, Eigentums- oder kommunalen Planungsinteressen kollidieren.",
             "direction": "NEGATIVE_RISK",
             "affectedDimensions": [
@@ -5447,13 +5626,13 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           },
           {
             "id": "P4",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P4",
             "hypothesis": "Beschleunigte Genehmigung garantiert weder Ausbau in unterversorgten Gebieten noch Netzsicherheit, Redundanz oder Bezahlbarkeit.",
             "direction": "AMBIVALENT",
             "affectedDimensions": [
@@ -5463,26 +5642,26 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           }
         ],
         "impactDomains": [
           {
-            "domain": "Wirkungsbereich",
+            "domain": "Mensch",
             "relevance": [],
-            "assessment": "EVIDENCE_OPEN"
+            "assessment": "EX_ANTE_ONLY"
           },
           {
-            "domain": "Wirkungsbereich",
+            "domain": "Demokratie",
             "relevance": [],
-            "assessment": "EVIDENCE_OPEN"
+            "assessment": "EX_ANTE_ONLY"
           },
           {
-            "domain": "Wirkungsbereich",
+            "domain": "Planet",
             "relevance": [],
-            "assessment": "EVIDENCE_OPEN"
+            "assessment": "EX_ANTE_ONLY"
           }
         ],
         "calculations": [
@@ -5574,9 +5753,8 @@
         ],
         "boundaries": [
           {
-            "boundary": "Schutzgrenze wird geprüft.",
-            "status": "MUST_BE_TESTED",
-            "reason": "Die Schutzgrenze wird nicht mit positiven Wirkungen in anderen Bereichen verrechnet."
+            "boundary": "Rechtsschutz, Eigentumsrechte und erhebliche Umweltwirkungen bleiben projektbezogene Schutzgates.",
+            "status": "MUST_BE_TESTED"
           }
         ],
         "counterfactuals": [
@@ -5596,12 +5774,44 @@
             "causalRule": "No causal attribution or net-impact claim without an explicit counterfactual or justified quasi-experimental/causal alternative."
           }
         ],
-        "counterarguments": []
+        "counterarguments": [
+          "Verbesserte Netzabdeckung kann durch Frequenzauflagen, Investitionszyklen und Förderung entstehen, nicht durch die neue Priorisierung allein.",
+          "Ein schnellerer Ausbau kann Teilhabe verfehlen, wenn unterversorgte Räume, Bezahlbarkeit oder Resilienz nicht verbessert werden."
+        ]
       },
       "releaseSummary": {
         "whatIsKnown": "Wirkpfade und Risiken sind aus den vorliegenden amtlichen Quellen strukturiert.",
         "whatIsNotYetKnown": "Eine belastbare Netto-Wirkung ist erst nach Baseline, Beobachtung, Gegenfaktum, Zurechnung, Unsicherheitsangabe und Schutzgate-Prüfung möglich.",
         "evidenceBoundary": "Die Akte ist in der ausgewiesenen Reifestufe öffentlich nutzbar. Sie ist kein Endscore und keine abgeschlossene kausale Netto-Wirkungsbewertung."
+      },
+      "voteLayer": {
+        "status": "VOTED",
+        "rollCall": "NOT_ROLL_CALL",
+        "date": "2025-06-26",
+        "result": "ADOPTED",
+        "factions": [
+          {
+            "name": "CDU/CSU",
+            "result": "YES"
+          },
+          {
+            "name": "AfD",
+            "result": "YES"
+          },
+          {
+            "name": "SPD",
+            "result": "YES"
+          },
+          {
+            "name": "Die Linke",
+            "result": "NO"
+          },
+          {
+            "name": "B90/Grüne",
+            "result": "ABSTAIN"
+          }
+        ],
+        "sourceUrl": "https://www.bundestag.de/dokumente/textarchiv/2025/kw26-de-telekommunikationsgesetz-1084808"
       }
     },
     "fachakteId": "case-7b3bb327-d7a2-4c77-b46d-535be8590cb6"
@@ -6118,7 +6328,11 @@
             "causalRule": "No causal attribution or net-impact claim without an explicit counterfactual or justified causal alternative."
           }
         ],
-        "counterarguments": [],
+        "counterarguments": [
+          "Mehrheitsschutz und Minderheitenschutz sind beide Wirkungsziele; starre Schwellen können das Gleichgewicht verschieben.",
+          "Jährliche Mehrbelastung ist ohne Lebenszyklusnutzen und vermiedene Kosten unvollständig.",
+          "Kein zusätzlicher Erfüllungsaufwand bedeutet nicht, dass keine realen Entscheidungs-, Streit- oder Investitionskosten entstehen."
+        ],
         "feedback": {
           "currentStatus": "NOT_YET_OBSERVABLE",
           "interpretation": "Die Historie liefert eine Konfliktrückkopplung, aber keine belastbare Wirkungsbilanz des geltenden WEG. Deshalb können die Schwellen nicht als evidenzbasiert gelten. Eine sinnvolle Rückkopplung muss sowohl unfaire individuelle Kostenverschiebungen als auch blockierte Instandhaltung, Klimaschutz, Barrierefreiheit und Sicherheit erfassen.",
@@ -6288,7 +6502,7 @@
         "impactPaths": [
           {
             "id": "P1",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P1",
             "hypothesis": "Eine rechtssicher ausgestaltete Befugnis kann dem BKA in begründeten Fällen Informationsgewinn zur Verhinderung terroristischer Anschläge ermöglichen.",
             "direction": "POSITIVE_POTENTIAL",
             "affectedDimensions": [
@@ -6298,13 +6512,13 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           },
           {
             "id": "P2",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P2",
             "hypothesis": "Präzisere gesetzliche Voraussetzungen können Rechtsklarheit und gerichtliche Kontrollierbarkeit erhöhen.",
             "direction": "POSITIVE_POTENTIAL",
             "affectedDimensions": [
@@ -6313,13 +6527,13 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           },
           {
             "id": "P3",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P3",
             "hypothesis": "Besondere Datenerhebungsmittel gegenüber Kontaktpersonen können tief in Privatsphäre, informationelle Selbstbestimmung und unbeobachtete Kommunikation eingreifen.",
             "direction": "NEGATIVE_RISK",
             "affectedDimensions": [
@@ -6329,13 +6543,13 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           },
           {
             "id": "P4",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P4",
             "hypothesis": "Fehlklassifikationen oder zu weite Kontaktpersonenbegriffe können unbeteiligte Personen erfassen und Vertrauens-/Chilling-Effekte erzeugen.",
             "direction": "NEGATIVE_RISK",
             "affectedDimensions": [
@@ -6345,21 +6559,21 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           }
         ],
         "impactDomains": [
           {
-            "domain": "Wirkungsbereich",
+            "domain": "Mensch",
             "relevance": [],
-            "assessment": "EVIDENCE_OPEN"
+            "assessment": "EX_ANTE_ONLY"
           },
           {
-            "domain": "Wirkungsbereich",
+            "domain": "Demokratie",
             "relevance": [],
-            "assessment": "EVIDENCE_OPEN"
+            "assessment": "EX_ANTE_ONLY"
           }
         ],
         "calculations": [
@@ -6449,14 +6663,12 @@
         ],
         "boundaries": [
           {
-            "boundary": "Schutzgrenze wird geprüft.",
-            "status": "MUST_BE_TESTED",
-            "reason": "Die Schutzgrenze wird nicht mit positiven Wirkungen in anderen Bereichen verrechnet."
+            "boundary": "Verfassungsrechtliche Grenzen und Verhältnismäßigkeit sind nicht kompensierbare Schutzgates.",
+            "status": "MUST_BE_TESTED"
           },
           {
-            "boundary": "Schutzgrenze wird geprüft.",
-            "status": "MUST_BE_TESTED",
-            "reason": "Die Schutzgrenze wird nicht mit positiven Wirkungen in anderen Bereichen verrechnet."
+            "boundary": "Unzulässige Eingriffe in Grundrechte dürfen nicht mit abstrakten Sicherheitsnutzen verrechnet werden.",
+            "status": "MUST_BE_TESTED"
           }
         ],
         "counterfactuals": [
@@ -6476,12 +6688,44 @@
             "causalRule": "No causal attribution or net-impact claim without an explicit counterfactual or justified quasi-experimental/causal alternative."
           }
         ],
-        "counterarguments": []
+        "counterarguments": [
+          "Ein Ermittlungsinstrument kann operativ nützlich sein, ohne dass sein zusätzlicher Nutzen gegenüber weniger eingriffsintensiven Mitteln belegt ist.",
+          "Seltene schwerwiegende Sicherheitsereignisse erschweren ex-post-kausale Erfolgsbewertung und rechtfertigen keine erfundene Erfolgsquote."
+        ]
       },
       "releaseSummary": {
         "whatIsKnown": "Wirkpfade und Risiken sind aus den vorliegenden amtlichen Quellen strukturiert.",
         "whatIsNotYetKnown": "Eine belastbare Netto-Wirkung ist erst nach Baseline, Beobachtung, Gegenfaktum, Zurechnung, Unsicherheitsangabe und Schutzgate-Prüfung möglich.",
         "evidenceBoundary": "Die Akte ist in der ausgewiesenen Reifestufe öffentlich nutzbar. Sie ist kein Endscore und keine abgeschlossene kausale Netto-Wirkungsbewertung."
+      },
+      "voteLayer": {
+        "status": "VOTED",
+        "rollCall": "NOT_ROLL_CALL",
+        "date": "2025-06-26",
+        "result": "ADOPTED",
+        "factions": [
+          {
+            "name": "CDU/CSU",
+            "result": "YES"
+          },
+          {
+            "name": "AfD",
+            "result": "YES"
+          },
+          {
+            "name": "SPD",
+            "result": "YES"
+          },
+          {
+            "name": "B90/Grüne",
+            "result": "NO"
+          },
+          {
+            "name": "Die Linke",
+            "result": "NO"
+          }
+        ],
+        "sourceUrl": "https://www.bundestag.de/dokumente/textarchiv/2025/kw26-de-bundeskriminalamt-1084796"
       }
     },
     "fachakteId": "case-1bcb54ff-f064-43a1-bf98-bd45a5a2e212"
@@ -7042,7 +7286,11 @@
             "causalRule": "No causal attribution or net-impact claim without an explicit counterfactual or justified causal alternative."
           }
         ],
-        "counterarguments": [],
+        "counterarguments": [
+          "Weniger Kontrollen sind nicht automatisch weniger Bürokratie, wenn spätere Fehler, Rückforderungen oder Fachrechtsverfahren steigen.",
+          "Bio-Zertifizierung und GLÖZ verfolgen überlappende, aber nicht zwingend identische Kriterien.",
+          "Kleine Einzelbetriebe können kumulativ große Flächen- und Umweltwirkungen haben."
+        ],
         "feedback": {
           "currentStatus": "NOT_YET_OBSERVABLE",
           "interpretation": "Die Vollzugspraxis hat bereits zurückgemeldet, wo Verfahren vereinfacht werden können. Diese Rückkopplung ist wertvoll, darf aber nicht einseitig als positive Wirkung gewertet werden: Weniger Kontrollen sind Output-/Aufwandsänderungen. Ob Schutzwirkung erhalten bleibt, muss über Boden-, Biodiversitäts-, Umwelt- und Compliance-Outcomes geprüft werden.",
@@ -7314,7 +7562,7 @@
         "impactPaths": [
           {
             "id": "P1",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P1",
             "hypothesis": "Die Aussetzung kann die Zahl der über diesen Nachzugskanal kurzfristig Einreisenden reduzieren und damit bestimmte administrative, Wohnungs- oder Integrationskapazitäten weniger beanspruchen.",
             "direction": "POSITIVE_POTENTIAL",
             "affectedDimensions": [
@@ -7324,13 +7572,13 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           },
           {
             "id": "P2",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P2",
             "hypothesis": "Fortdauernde Familientrennung kann psychosoziale Belastung, Integrationsprobleme und Unsicherheit für Schutzberechtigte und Familien erhöhen.",
             "direction": "NEGATIVE_RISK",
             "affectedDimensions": [
@@ -7339,13 +7587,13 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           },
           {
             "id": "P3",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P3",
             "hypothesis": "Ausnahmen, Härtefälle, Gerichtsverfahren oder alternative Rechtswege können Verwaltungsaufwand verlagern statt reduzieren.",
             "direction": "AMBIVALENT",
             "affectedDimensions": [
@@ -7355,13 +7603,13 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           },
           {
             "id": "P4",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P4",
             "hypothesis": "Die Maßnahme kann Vertrauen, Zugehörigkeit und gesellschaftliche Integration beeinflussen; Richtung und Größenordnung sind ohne empirische Daten offen.",
             "direction": "AMBIVALENT",
             "affectedDimensions": [
@@ -7371,21 +7619,21 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           }
         ],
         "impactDomains": [
           {
-            "domain": "Wirkungsbereich",
+            "domain": "Mensch",
             "relevance": [],
-            "assessment": "EVIDENCE_OPEN"
+            "assessment": "EX_ANTE_ONLY"
           },
           {
-            "domain": "Wirkungsbereich",
+            "domain": "Demokratie",
             "relevance": [],
-            "assessment": "EVIDENCE_OPEN"
+            "assessment": "EX_ANTE_ONLY"
           }
         ],
         "calculations": [
@@ -7481,9 +7729,8 @@
         ],
         "boundaries": [
           {
-            "boundary": "Schutzgrenze wird geprüft.",
-            "status": "MUST_BE_TESTED",
-            "reason": "Die Schutzgrenze wird nicht mit positiven Wirkungen in anderen Bereichen verrechnet."
+            "boundary": "Grund- und Menschenrechte sowie Kindeswohl sind nicht kompensierbare Schutzgates und müssen fallbezogen geprüft werden.",
+            "status": "MUST_BE_TESTED"
           }
         ],
         "counterfactuals": [
@@ -7503,12 +7750,93 @@
             "causalRule": "No causal attribution or net-impact claim without an explicit counterfactual or justified quasi-experimental/causal alternative."
           }
         ],
-        "counterarguments": []
+        "counterarguments": [
+          "Ein Rückgang von Familiennachzugsvisa kann nicht ohne weiteres der Aussetzung allein zugerechnet werden.",
+          "Kommunale Entlastung kann durch höhere Integrations-, Gesundheits- oder Härtefallkosten teilweise oder vollständig aufgehoben werden."
+        ]
       },
       "releaseSummary": {
         "whatIsKnown": "Wirkpfade und Risiken sind aus den vorliegenden amtlichen Quellen strukturiert.",
         "whatIsNotYetKnown": "Eine belastbare Netto-Wirkung ist erst nach Baseline, Beobachtung, Gegenfaktum, Zurechnung, Unsicherheitsangabe und Schutzgate-Prüfung möglich.",
         "evidenceBoundary": "Die Akte ist in der ausgewiesenen Reifestufe öffentlich nutzbar. Sie ist kein Endscore und keine abgeschlossene kausale Netto-Wirkungsbewertung."
+      },
+      "voteLayer": {
+        "status": "VOTED",
+        "rollCall": "ROLL_CALL_OFFICIAL",
+        "date": "2025-06-27",
+        "result": "ADOPTED",
+        "overall": {
+          "members": 630,
+          "yes": 444,
+          "no": 133,
+          "abstain": 0,
+          "notVoted": 53
+        },
+        "factions": [
+          {
+            "name": "CDU/CSU",
+            "summary": {
+              "members": 208,
+              "yes": 202,
+              "no": 0,
+              "abstain": 0,
+              "notVoted": 6
+            }
+          },
+          {
+            "name": "AfD",
+            "summary": {
+              "members": 151,
+              "yes": 125,
+              "no": 0,
+              "abstain": 0,
+              "notVoted": 26
+            }
+          },
+          {
+            "name": "SPD",
+            "summary": {
+              "members": 120,
+              "yes": 117,
+              "no": 2,
+              "abstain": 0,
+              "notVoted": 1
+            }
+          },
+          {
+            "name": "B90/Grüne",
+            "summary": {
+              "members": 85,
+              "yes": 0,
+              "no": 80,
+              "abstain": 0,
+              "notVoted": 5
+            }
+          },
+          {
+            "name": "Die Linke",
+            "summary": {
+              "members": 64,
+              "yes": 0,
+              "no": 51,
+              "abstain": 0,
+              "notVoted": 13
+            }
+          },
+          {
+            "name": "fraktionslos",
+            "summary": {
+              "members": 2,
+              "yes": 0,
+              "no": 0,
+              "abstain": 0,
+              "notVoted": 2
+            }
+          }
+        ],
+        "sourceUrl": "https://www.bundestag.de/parlament/plenum/abstimmung/abstimmung?id=957",
+        "sourceConflict": "Die amtliche Roll-call-Seite weist 444 Ja/133 Nein/53 nicht abgestimmt aus; der Textarchiv-Beschlussblock nennt 444 Ja/135 Nein bei Gesamt 579. Nicht still harmonisieren; Roll-call-Datensatz ist führend für die namentliche Auswertung.",
+        "individualRecordsStatus": "OFFICIAL_TABLE_AVAILABLE_NOT_MACHINE_INGESTED"
       }
     },
     "fachakteId": "case-6a88c960-c7e9-400c-84bb-aa52039b62e7"
@@ -8039,7 +8367,11 @@
             "causalRule": "No causal attribution or net-impact claim without an explicit counterfactual or justified causal alternative."
           }
         ],
-        "counterarguments": [],
+        "counterarguments": [
+          "Ex-ante-Erfüllungsaufwand ist keine realisierte Entlastung.",
+          "Eine technisch sichere Wallet kann gesellschaftlich problematisch sein, wenn Nichtnutzende ausgeschlossen oder Nutzungsdaten verknüpft werden.",
+          "Freiwilligkeit muss in realen Märkten und Verwaltungsprozessen beobachtet werden, nicht nur im Gesetz stehen."
+        ],
         "feedback": {
           "currentStatus": "NOT_YET_OBSERVABLE",
           "interpretation": "Die Rückkopplung besteht bisher aus Ex-ante-Erfüllungsaufwandsschätzungen und einer vorgesehenen Evaluationsarchitektur. Das ist mehr als bloße Absicht, aber noch keine beobachtete Wirkung. Nach Einführung muss geprüft werden, ob Entlastungen realisiert, bei wem sie ankommen und welche Sicherheits- oder Ausschlussfolgen entstehen.",
@@ -8489,7 +8821,11 @@
             "causalRule": "No causal attribution or net-impact claim without an explicit counterfactual or justified causal alternative."
           }
         ],
-        "counterarguments": [],
+        "counterarguments": [
+          "Ein Marktverbot schützt Würde nicht automatisch, wenn Gegenstände anschließend verborgen, vernichtet oder ins Ausland verlagert werden.",
+          "Privater Besitz und Handel können in einzelnen Fällen Bewahrung ermöglichen; entscheidend sind Provenienz, Umgang und Zugang.",
+          "Strafrecht ist nur dann angemessen, wenn Tatbestand und mildere Instrumente präzise geprüft sind."
+        ],
         "feedback": {
           "currentStatus": "NOT_YET_OBSERVABLE",
           "interpretation": "Die Historie zeigt eine wiederkehrende Würde- und Erinnerungskollision sowie eine behauptete Regelungslücke. Sie liefert ein ernstzunehmendes Wirkungspotenzial für Schutz und öffentliche Zugänglichkeit. Es fehlt jedoch eine systematische Rückkopplung zu Marktumfang, Provenienz, Restitution, Verlagerungseffekten und möglichen Verlusten durch ein Verbot.",
@@ -8706,7 +9042,7 @@
         "impactPaths": [
           {
             "id": "P1",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P1",
             "hypothesis": "Mehrjährige Finanzierungssicherheit kann Investitionen in Verkehr, Energie, Digitalisierung, Krankenhäuser, Bildung, Forschung, Zivil-/Bevölkerungsschutz und Klimaneutralität ermöglichen oder beschleunigen.",
             "direction": "POSITIVE_POTENTIAL",
             "affectedDimensions": [
@@ -8717,13 +9053,13 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           },
           {
             "id": "P2",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P2",
             "hypothesis": "Modernisierte öffentliche Infrastruktur kann Leistungsfähigkeit, Daseinsvorsorge und Standortproduktivität erhöhen.",
             "direction": "POSITIVE_POTENTIAL",
             "affectedDimensions": [
@@ -8733,13 +9069,13 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           },
           {
             "id": "P3",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P3",
             "hypothesis": "Ohne harte Zusätzlichkeits- und Wirkungsregeln können Mittel bestehende Haushaltsausgaben ersetzen oder in Projekte mit geringer Netto-Wirkung fließen.",
             "direction": "NEGATIVE_RISK",
             "affectedDimensions": [
@@ -8750,13 +9086,13 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           },
           {
             "id": "P4",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P4",
             "hypothesis": "Bauliche Großinvestitionen können erhebliche Material-, Flächen- und Emissionswirkungen erzeugen und bei falscher Technologiewahl Lock-ins schaffen.",
             "direction": "NEGATIVE_RISK",
             "affectedDimensions": [
@@ -8766,13 +9102,13 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           },
           {
             "id": "P5",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P5",
             "hypothesis": "Transparente Projektwahl und Wirkungsmonitoring können Vertrauen und demokratische Rechenschaft stärken; reine Mittelabflusskontrolle reicht dafür nicht aus.",
             "direction": "AMBIVALENT",
             "affectedDimensions": [
@@ -8781,26 +9117,26 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           }
         ],
         "impactDomains": [
           {
-            "domain": "Wirkungsbereich",
+            "domain": "Mensch",
             "relevance": [],
-            "assessment": "EVIDENCE_OPEN"
+            "assessment": "EX_ANTE_ONLY"
           },
           {
-            "domain": "Wirkungsbereich",
+            "domain": "Planet",
             "relevance": [],
-            "assessment": "EVIDENCE_OPEN"
+            "assessment": "EX_ANTE_ONLY"
           },
           {
-            "domain": "Wirkungsbereich",
+            "domain": "Demokratie",
             "relevance": [],
-            "assessment": "EVIDENCE_OPEN"
+            "assessment": "EX_ANTE_ONLY"
           }
         ],
         "calculations": [
@@ -8898,14 +9234,12 @@
         ],
         "boundaries": [
           {
-            "boundary": "Schutzgrenze wird geprüft.",
-            "status": "MUST_BE_TESTED",
-            "reason": "Die Schutzgrenze wird nicht mit positiven Wirkungen in anderen Bereichen verrechnet."
+            "boundary": "Schwere nicht-kompensierbare Natur-, Gesundheits- oder Grundrechtswirkungen müssen projektbezogen ausschließen oder neu planen lassen.",
+            "status": "MUST_BE_TESTED"
           },
           {
-            "boundary": "Schutzgrenze wird geprüft.",
-            "status": "MUST_BE_TESTED",
-            "reason": "Die Schutzgrenze wird nicht mit positiven Wirkungen in anderen Bereichen verrechnet."
+            "boundary": "Klimaneutralitätslabel darf nicht zur Kompensation negativer Wirkungen anderer Projekte dienen.",
+            "status": "MUST_BE_TESTED"
           }
         ],
         "counterfactuals": [
@@ -8925,12 +9259,45 @@
             "causalRule": "No causal attribution or net-impact claim without an explicit counterfactual or justified quasi-experimental/causal alternative."
           }
         ],
-        "counterarguments": []
+        "counterarguments": [
+          "Höhere Investitionsausgaben können Umschichtungen aus Kernhaushalten statt zusätzlicher Investitionen darstellen.",
+          "Ein positives BIP-Modellergebnis ist keine vollständige MPD-Netto-Wirkungsbewertung."
+        ]
       },
       "releaseSummary": {
         "whatIsKnown": "Wirkpfade und Risiken sind aus den vorliegenden amtlichen Quellen strukturiert.",
         "whatIsNotYetKnown": "Eine belastbare Netto-Wirkung ist erst nach Baseline, Beobachtung, Gegenfaktum, Zurechnung, Unsicherheitsangabe und Schutzgate-Prüfung möglich.",
         "evidenceBoundary": "Die Akte ist in der ausgewiesenen Reifestufe öffentlich nutzbar. Sie ist kein Endscore und keine abgeschlossene kausale Netto-Wirkungsbewertung."
+      },
+      "voteLayer": {
+        "status": "VOTED",
+        "rollCall": "NOT_ROLL_CALL",
+        "date": "2025-09-18",
+        "result": "ADOPTED",
+        "factions": [
+          {
+            "name": "CDU/CSU",
+            "result": "YES"
+          },
+          {
+            "name": "SPD",
+            "result": "YES"
+          },
+          {
+            "name": "AfD",
+            "result": "NO"
+          },
+          {
+            "name": "B90/Grüne",
+            "result": "NO"
+          },
+          {
+            "name": "Die Linke",
+            "result": "NO"
+          }
+        ],
+        "sourceUrl": "https://www.bundestag.de/dokumente/textarchiv/2025/kw38-de-haushaltsgesetz-2025-zweite-lesung-1104012",
+        "note": "Die namentliche Abstimmung an diesem Sitzungstag bezog sich auf das Haushaltsgesetz 2025, nicht auf den exakten SVIKG-Fall."
       }
     },
     "fachakteId": "case-14867d53-4b63-49d0-9889-73fc60d41a5d"
@@ -9396,7 +9763,11 @@
             "causalRule": "No causal attribution or net-impact claim without an explicit counterfactual or justified causal alternative."
           }
         ],
-        "counterarguments": [],
+        "counterarguments": [
+          "Härtere oder frühere Haft ist nicht automatisch präventiv wirksamer; sie kann Freiheitskosten erhöhen, ohne Wiederholungstaten messbar zu senken.",
+          "Strafrechtliche Verurteilung ersetzt nicht automatisch die eigenständige, kontextreiche ausländerrechtliche Verhältnismäßigkeitsprüfung.",
+          "Ausländische Tatverdächtigenanteile sind ohne Alters-, Geschlechts-, Anzeige-, Aufenthalts- und Deliktsstruktur kein Kausalnachweis."
+        ],
         "feedback": {
           "currentStatus": "NOT_YET_OBSERVABLE",
           "interpretation": "Es liegt historische Rückkopplung in Form von Kriminalitätsbehauptungen und Einzelfällen vor. Sie zeigt Wirkungspotenzial des Problems, aber keine belastbare Evaluation der vorgeschlagenen Instrumente. Die zentrale Rückkopplungslücke betrifft Wiederholungsrisiko, Haftentscheidungen, Verfahrensdauer, Fehlentscheidungen und tatsächliche Sicherheitswirkung vergleichbarer Regelungen.",
@@ -9609,7 +9980,7 @@
         "impactPaths": [
           {
             "id": "P1",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P1",
             "hypothesis": "Zusätzliche Infrastrukturmittel können Sanierungs- und Modernisierungsrückstände bei Bildung, Verkehr, Wärme/Energie, Gesundheit/Pflege, Digitalisierung, Wissenschaft/Forschung und Bevölkerungsschutz abbauen.",
             "direction": "POSITIVE_POTENTIAL",
             "affectedDimensions": [
@@ -9620,13 +9991,13 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           },
           {
             "id": "P2",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P2",
             "hypothesis": "Vorgaben zu Verteilung, Bericht und zweckentsprechender Verwendung können Transparenz und Vollzugssicherheit verbessern.",
             "direction": "POSITIVE_POTENTIAL",
             "affectedDimensions": [
@@ -9635,13 +10006,13 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           },
           {
             "id": "P3",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P3",
             "hypothesis": "Breite Förderfähigkeit ohne belastbare Wirkungspriorisierung kann Mittel auf Projekte mit hohem Ausgabevolumen, aber geringer Zustandsverbesserung lenken.",
             "direction": "NEGATIVE_RISK",
             "affectedDimensions": [
@@ -9652,13 +10023,13 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           },
           {
             "id": "P4",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P4",
             "hypothesis": "Kommunen mit geringer Planungs-/Vergabekapazität können Mittel langsamer oder schlechter nutzen; dadurch drohen regionale Verteilungsverzerrungen.",
             "direction": "NEGATIVE_RISK",
             "affectedDimensions": [
@@ -9668,26 +10039,26 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           }
         ],
         "impactDomains": [
           {
-            "domain": "Wirkungsbereich",
+            "domain": "Mensch",
             "relevance": [],
-            "assessment": "EVIDENCE_OPEN"
+            "assessment": "EX_ANTE_ONLY"
           },
           {
-            "domain": "Wirkungsbereich",
+            "domain": "Planet",
             "relevance": [],
-            "assessment": "EVIDENCE_OPEN"
+            "assessment": "EX_ANTE_ONLY"
           },
           {
-            "domain": "Wirkungsbereich",
+            "domain": "Demokratie",
             "relevance": [],
-            "assessment": "EVIDENCE_OPEN"
+            "assessment": "EX_ANTE_ONLY"
           }
         ],
         "calculations": [
@@ -9781,9 +10152,8 @@
         ],
         "boundaries": [
           {
-            "boundary": "Schutzgrenze wird geprüft.",
-            "status": "MUST_BE_TESTED",
-            "reason": "Die Schutzgrenze wird nicht mit positiven Wirkungen in anderen Bereichen verrechnet."
+            "boundary": "Projektbezogene Schutzgates für Klima/Natur/Gesundheit/Grundrechte bleiben trotz Förderfähigkeit erforderlich.",
+            "status": "MUST_BE_TESTED"
           }
         ],
         "counterfactuals": [
@@ -9803,12 +10173,44 @@
             "causalRule": "No causal attribution or net-impact claim without an explicit counterfactual or justified quasi-experimental/causal alternative."
           }
         ],
-        "counterarguments": []
+        "counterarguments": [
+          "Mittelbindung kann vorhandene Landes-/Kommunalmittel substituieren.",
+          "Hohe Abrufquoten können mit schwacher Projektwirkung einhergehen, wenn Auswahl und Outcome-Steuerung fehlen."
+        ]
       },
       "releaseSummary": {
         "whatIsKnown": "Wirkpfade und Risiken sind aus den vorliegenden amtlichen Quellen strukturiert.",
         "whatIsNotYetKnown": "Eine belastbare Netto-Wirkung ist erst nach Baseline, Beobachtung, Gegenfaktum, Zurechnung, Unsicherheitsangabe und Schutzgate-Prüfung möglich.",
         "evidenceBoundary": "Die Akte ist in der ausgewiesenen Reifestufe öffentlich nutzbar. Sie ist kein Endscore und keine abgeschlossene kausale Netto-Wirkungsbewertung."
+      },
+      "voteLayer": {
+        "status": "VOTED",
+        "rollCall": "NOT_ROLL_CALL",
+        "date": "2025-10-09",
+        "result": "ADOPTED",
+        "factions": [
+          {
+            "name": "CDU/CSU",
+            "result": "YES"
+          },
+          {
+            "name": "SPD",
+            "result": "YES"
+          },
+          {
+            "name": "B90/Grüne",
+            "result": "YES"
+          },
+          {
+            "name": "AfD",
+            "result": "NO"
+          },
+          {
+            "name": "Die Linke",
+            "result": "ABSTAIN"
+          }
+        ],
+        "sourceUrl": "https://www.bundestag.de/dokumente/textarchiv/2025/kw41-de-infrastrukturfinanzierung-1111766"
       }
     },
     "fachakteId": "case-47ca9029-a749-4f79-a4e6-8e33f08082cd"
@@ -10278,7 +10680,10 @@
             "causalRule": "No causal attribution or net-impact claim without an explicit counterfactual or justified causal alternative."
           }
         ],
-        "counterarguments": [],
+        "counterarguments": [
+          "Schnellere Rechtshilfe ist nicht automatisch bessere Rechtshilfe; Rechtsqualität und Grundrechtsschutz sind eigenständige Outcomes.",
+          "Gegenseitiges Vertrauen darf keine automatische Vollstreckung bei konkreten Rechtsstaatsrisiken bedeuten."
+        ],
         "feedback": {
           "currentStatus": "NOT_YET_OBSERVABLE",
           "interpretation": "Hier ist die historische Rückkopplung besonders relevant: Rechtsprechung, EU-Rechtsentwicklung und Vertragsverletzungsverfahren zeigen, wo das bisherige System rechtlich oder institutionell nicht genügte. Sie tragen die Ex-ante-Plausibilität der Reform, ersetzen aber keine spätere Vollzugs- und Grundrechtsevaluation.",
@@ -10808,7 +11213,11 @@
             "causalRule": "No causal attribution or net-impact claim without an explicit counterfactual or justified causal alternative."
           }
         ],
-        "counterarguments": [],
+        "counterarguments": [
+          "Ein Koordinationsproblem ist nicht automatisch eine Strafrechtslücke.",
+          "Parteischutz darf legitimen, sichtbaren und friedlichen Protest nicht entwerten.",
+          "Entschädigung kann Rechenschaft stärken, aber auch Fehlanreize setzen, wenn Eigenvorsorge und Kausalität unklar sind."
+        ],
         "feedback": {
           "currentStatus": "NOT_YET_OBSERVABLE",
           "interpretation": "Die historische Rückkopplung zeigt einen institutionellen Schutzbedarf und konkrete Konflikte. Sie muss jedoch instrumentenscharf gelesen werden: Koordinationsversagen spricht zunächst für bessere Planung und Verantwortlichkeit, nicht automatisch für Strafverschärfung; entstandene Mehrkosten sprechen nicht automatisch für eine weitreichende Beweisvermutung.",
@@ -11354,7 +11763,11 @@
             "causalRule": "No causal attribution or net-impact claim without an explicit counterfactual or justified causal alternative."
           }
         ],
-        "counterarguments": [],
+        "counterarguments": [
+          "Mehr Abstimmungen bedeuten nicht automatisch mehr gleichberechtigte Teilhabe.",
+          "Komplexe Entscheidungen können direktdemokratisch legitim sein, benötigen aber Informations-, Deliberations- und Schutzarchitektur.",
+          "Repräsentative und direkte Demokratie sind nicht Gegensätze; Wirkung hängt von ihrer Kopplung ab."
+        ],
         "feedback": {
           "currentStatus": "NOT_YET_OBSERVABLE",
           "interpretation": "Die Historie ist hier noch keine belastbare Wirkungsrückkopplung, sondern überwiegend ein vergleichender Verweis. Für eine wirkungsökonomische Bewertung müssen konkrete Designs und deren beobachtete Folgen getrennt ausgewertet werden. Ohne diese Rückkopplung ist weder „mehr Demokratie“ noch „mehr Polarisierung“ als Ergebnis belegbar.",
@@ -11846,7 +12259,11 @@
             "causalRule": "No causal attribution or net-impact claim without an explicit counterfactual or justified causal alternative."
           }
         ],
-        "counterarguments": [],
+        "counterarguments": [
+          "Hohe Rückfallquoten begründen Problemdruck, aber nicht die Kausalwirkung einer bestimmten Strafhöhe.",
+          "Inhaftierung verhindert Taten während Haft, kann aber nach Entlassung durch Desozialisierung Rückfallrisiken erhöhen; beides muss getrennt gemessen werden.",
+          "Jugendstrafrecht folgt einem eigenständigen Entwicklungs- und Erziehungsprinzip."
+        ],
         "feedback": {
           "currentStatus": "NOT_YET_OBSERVABLE",
           "interpretation": "Die Rückfallstudie ist eine wichtige Wirkungshistorie: Sie zeigt, dass ein Teil der Sanktionierten erneut straffällig wird und dass Risiken differieren. Gerade deshalb reicht die pauschale Schlussfolgerung „härtere Strafe = weniger Rückfall“ nicht. Benötigt wird eine Rückkopplung darüber, welche Sanktionen, Behandlungen und Übergänge bei vergleichbaren Risikoprofilen tatsächlich Rückfälle und schwere Schäden reduzieren.",
@@ -12155,7 +12572,7 @@
         "impactPaths": [
           {
             "id": "P1",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P1",
             "hypothesis": "Beschleunigte Zulassungsverfahren können die Zeit bis zur Realisierung von Erneuerbare-Energien-Projekten verkürzen und damit zusätzliche bzw. frühere erneuerbare Strom- und Wärmeerzeugung ermöglichen.",
             "direction": "POSITIVE_POTENTIAL",
             "affectedDimensions": [
@@ -12165,13 +12582,13 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           },
           {
             "id": "P2",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P2",
             "hypothesis": "Klar ausgewiesene Beschleunigungsgebiete und planungsrechtliche Klarheit können Investitions- und Planungssicherheit erhöhen.",
             "direction": "POSITIVE_POTENTIAL",
             "affectedDimensions": [
@@ -12182,13 +12599,13 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           },
           {
             "id": "P3",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P3",
             "hypothesis": "Verfahrensbeschleunigung kann bei unzureichenden Schutzmechanismen Prüf-, Beteiligungs- oder Abwägungstiefe reduzieren und dadurch Natur-, Wasser- oder lokale Akzeptanzrisiken erhöhen.",
             "direction": "NEGATIVE_RISK",
             "affectedDimensions": [
@@ -12199,13 +12616,13 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           },
           {
             "id": "P4",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P4",
             "hypothesis": "Ein schnellerer Ausbau kann fossile Erzeugung verdrängen; ob und in welchem Umfang dies tatsächlich geschieht, hängt von Netz, Speicher, Nachfrage, Standort und realer Inbetriebnahme ab.",
             "direction": "AMBIVALENT",
             "affectedDimensions": [
@@ -12214,26 +12631,26 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           }
         ],
         "impactDomains": [
           {
-            "domain": "Wirkungsbereich",
+            "domain": "Planet",
             "relevance": [],
-            "assessment": "EVIDENCE_OPEN"
+            "assessment": "EX_ANTE_ONLY"
           },
           {
-            "domain": "Wirkungsbereich",
+            "domain": "Mensch",
             "relevance": [],
-            "assessment": "EVIDENCE_OPEN"
+            "assessment": "EX_ANTE_ONLY"
           },
           {
-            "domain": "Wirkungsbereich",
+            "domain": "Demokratie",
             "relevance": [],
-            "assessment": "EVIDENCE_OPEN"
+            "assessment": "EX_ANTE_ONLY"
           }
         ],
         "calculations": [
@@ -12329,14 +12746,12 @@
         ],
         "boundaries": [
           {
-            "boundary": "Schutzgrenze wird geprüft.",
-            "status": "MUST_BE_TESTED",
-            "reason": "Die Schutzgrenze wird nicht mit positiven Wirkungen in anderen Bereichen verrechnet."
+            "boundary": "Irreversible erhebliche Natur- oder Wasserschäden dürfen nicht durch Klimanutzen verrechnet werden.",
+            "status": "MUST_BE_TESTED"
           },
           {
-            "boundary": "Schutzgrenze wird geprüft.",
-            "status": "MUST_BE_TESTED",
-            "reason": "Die Schutzgrenze wird nicht mit positiven Wirkungen in anderen Bereichen verrechnet."
+            "boundary": "Gesetzlich gebotener Rechtsschutz und Verfahrensrechte sind Schutzgrenzen.",
+            "status": "MUST_BE_TESTED"
           }
         ],
         "counterfactuals": [
@@ -12356,12 +12771,51 @@
             "causalRule": "No causal attribution or net-impact claim without an explicit counterfactual or justified quasi-experimental/causal alternative."
           }
         ],
-        "counterarguments": []
+        "counterarguments": [
+          "Steigende Genehmigungs- oder Zubauzahlen können durch andere Reformen, Projektpipeline, Preise, Ausschreibungen oder Netzanreize verursacht sein.",
+          "Kürzere Verfahren sind nur positiv zu bewerten, wenn Schutz- und Beteiligungsqualität nicht materiell verschlechtert wird."
+        ]
       },
       "releaseSummary": {
         "whatIsKnown": "Wirkpfade und Risiken sind aus den vorliegenden amtlichen Quellen strukturiert.",
         "whatIsNotYetKnown": "Eine belastbare Netto-Wirkung ist erst nach Baseline, Beobachtung, Gegenfaktum, Zurechnung, Unsicherheitsangabe und Schutzgate-Prüfung möglich.",
         "evidenceBoundary": "Die Akte ist in der ausgewiesenen Reifestufe öffentlich nutzbar. Sie ist kein Endscore und keine abgeschlossene kausale Netto-Wirkungsbewertung."
+      },
+      "voteLayer": {
+        "status": "VOTED",
+        "rollCall": "NOT_ROLL_CALL",
+        "date": "2025-07-10",
+        "result": "ADOPTED",
+        "overall": {
+          "members": 577,
+          "yes": 312,
+          "no": 265,
+          "abstain": 0
+        },
+        "factions": [
+          {
+            "name": "CDU/CSU",
+            "result": "YES"
+          },
+          {
+            "name": "SPD",
+            "result": "YES"
+          },
+          {
+            "name": "AfD",
+            "result": "NO"
+          },
+          {
+            "name": "B90/Grüne",
+            "result": "NO"
+          },
+          {
+            "name": "Die Linke",
+            "result": "NO"
+          }
+        ],
+        "sourceUrl": "https://www.bundestag.de/dokumente/textarchiv/2025/kw28-de-bundesimmissionsschutzgesetz-1097376",
+        "note": "Hammelsprung; keine namentliche Individualabstimmung."
       }
     },
     "fachakteId": "case-05454260-5f17-4ba0-b3df-5c32a4cf36db"
@@ -12526,7 +12980,7 @@
         "impactPaths": [
           {
             "id": "P1",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P1",
             "hypothesis": "Die Fristverlängerung kann verhindern, dass begonnene oder geplante Investitionen allein wegen Fristablaufs ausfallen und damit zusätzliche Ganztagsplätze ermöglichen.",
             "direction": "POSITIVE_POTENTIAL",
             "affectedDimensions": [
@@ -12535,13 +12989,13 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           },
           {
             "id": "P2",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P2",
             "hypothesis": "Mehr Ganztagskapazität kann Bildungsteilhabe, Vereinbarkeit von Familie und Beruf und gleichberechtigte Erwerbsteilhabe unterstützen.",
             "direction": "POSITIVE_POTENTIAL",
             "affectedDimensions": [
@@ -12550,13 +13004,13 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           },
           {
             "id": "P3",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P3",
             "hypothesis": "Eine reine Fristverlängerung kann strukturelle Engpässe bei Fachkräften, Planung oder Lieferketten nur verschieben, nicht lösen.",
             "direction": "NEGATIVE_RISK",
             "affectedDimensions": [
@@ -12566,13 +13020,13 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           },
           {
             "id": "P4",
-            "lever": "Auslöser und Umsetzungsschritt werden weiter präzisiert.",
+            "lever": "Wirkpfad P4",
             "hypothesis": "Infrastrukturkapazität ohne ausreichendes pädagogisches Personal und Qualitätsstandards kann Output erhöhen, ohne entsprechende Bildungs-/Betreuungswirkung zu erzeugen.",
             "direction": "NEGATIVE_RISK",
             "affectedDimensions": [
@@ -12581,21 +13035,21 @@
             "affectedGroups": [],
             "prerequisites": [],
             "risks": [],
-            "evidenceBoundary": "Die Evidenzgrenze wird im Quellen- und Rechenweg sichtbar gehalten.",
+            "evidenceBoundary": "",
             "evidenceStatus": "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION",
-            "changeLever": "Noch keine belastbar dokumentierte Stellschraube hinterlegt."
+            "changeLever": ""
           }
         ],
         "impactDomains": [
           {
-            "domain": "Wirkungsbereich",
+            "domain": "Mensch",
             "relevance": [],
-            "assessment": "EVIDENCE_OPEN"
+            "assessment": "EX_ANTE_ONLY"
           },
           {
-            "domain": "Wirkungsbereich",
+            "domain": "Demokratie",
             "relevance": [],
-            "assessment": "EVIDENCE_OPEN"
+            "assessment": "EX_ANTE_ONLY"
           }
         ],
         "calculations": [
@@ -12687,9 +13141,8 @@
         ],
         "boundaries": [
           {
-            "boundary": "Schutzgrenze wird geprüft.",
-            "status": "MUST_BE_TESTED",
-            "reason": "Die Schutzgrenze wird nicht mit positiven Wirkungen in anderen Bereichen verrechnet."
+            "boundary": "Kindeswohl, Sicherheit und Mindestqualität der Betreuung sind nicht durch zusätzliche Platzanzahl kompensierbar.",
+            "status": "MUST_BE_TESTED"
           }
         ],
         "counterfactuals": [
@@ -12709,12 +13162,45 @@
             "causalRule": "No causal attribution or net-impact claim without an explicit counterfactual or justified quasi-experimental/causal alternative."
           }
         ],
-        "counterarguments": []
+        "counterarguments": [
+          "Verlängerte Fristen können Projekte retten, aber auch strukturelle Planungs- und Fachkräfteprobleme lediglich verschieben.",
+          "Neue Räume oder Plätze erzeugen ohne Personal und pädagogische Qualität keine äquivalente Ganztagswirkung."
+        ]
       },
       "releaseSummary": {
         "whatIsKnown": "Wirkpfade und Risiken sind aus den vorliegenden amtlichen Quellen strukturiert.",
         "whatIsNotYetKnown": "Eine belastbare Netto-Wirkung ist erst nach Baseline, Beobachtung, Gegenfaktum, Zurechnung, Unsicherheitsangabe und Schutzgate-Prüfung möglich.",
         "evidenceBoundary": "Die Akte ist in der ausgewiesenen Reifestufe öffentlich nutzbar. Sie ist kein Endscore und keine abgeschlossene kausale Netto-Wirkungsbewertung."
+      },
+      "voteLayer": {
+        "status": "VOTED",
+        "rollCall": "NOT_ROLL_CALL",
+        "date": "2025-06-26",
+        "result": "ADOPTED",
+        "factions": [
+          {
+            "name": "CDU/CSU",
+            "result": "YES"
+          },
+          {
+            "name": "SPD",
+            "result": "YES"
+          },
+          {
+            "name": "AfD",
+            "result": "YES"
+          },
+          {
+            "name": "B90/Grüne",
+            "result": "YES"
+          },
+          {
+            "name": "Die Linke",
+            "result": "YES"
+          }
+        ],
+        "sourceUrl": "https://www.bundestag.de/dokumente/textarchiv/2025/kw26-de-ganztagsausbau-1084804",
+        "note": "Der tatsächlich angenommene gleichlautende Fraktionsentwurf war 21/216; der Regierungsentwurf 21/514 wurde einstimmig für erledigt erklärt. Diese Verfahrensdifferenz bleibt sichtbar."
       }
     },
     "fachakteId": "case-aca79efa-63fe-4eb4-a68b-6930096304f0"
@@ -13212,7 +13698,11 @@
             "causalRule": "No causal attribution or net-impact claim without an explicit counterfactual or justified causal alternative."
           }
         ],
-        "counterarguments": [],
+        "counterarguments": [
+          "Entgeltdifferenzierung wirkt nur bei ausreichender Spreizung und verfügbarer Flottenalternative.",
+          "Leisere Einzelmaschinen können durch mehr Flugbewegungen kompensiert werden.",
+          "Mehr Transparenz ist erst dann Wirkungsrückkopplung, wenn sie Entscheidungen beeinflusst."
+        ],
         "feedback": {
           "currentStatus": "NOT_YET_OBSERVABLE",
           "interpretation": "Die Historie zeigt, dass Lärmentgelte, Betriebsbeschränkungen und Fluglärmkommissionen bereits existieren, die gewünschte Anreiz- und Transparenzwirkung aber offenbar nicht ausreichend abgesichert ist. Diese institutionelle Rückkopplung begründet die Stellschrauben; eine reale Lärm- oder Gesundheitsverbesserung ist noch nicht belegt.",
@@ -13657,7 +14147,11 @@
             "causalRule": "No causal attribution or net-impact claim without an explicit counterfactual or justified causal alternative."
           }
         ],
-        "counterarguments": [],
+        "counterarguments": [
+          "Eine Rechtsvermutung erzeugt kein Organ; klinische Identifikation und Prozessqualität bleiben entscheidend.",
+          "Hohe allgemeine Spendenbereitschaft ersetzt nicht die informierte individuelle Entscheidung.",
+          "Internationale höhere Spenderzahlen können nicht ohne Kontrolle anderer Systemfaktoren der Widerspruchsregel zugerechnet werden."
+        ],
         "feedback": {
           "currentStatus": "NOT_YET_OBSERVABLE",
           "interpretation": "Hier liegt bereits eine relevante Wirkungshistorie vor: Trotz hoher positiver Einstellung und mehrerer Reformen blieb die Spenderzahl gegenüber dem Bedarf niedrig. Das macht die Dokumentations- und Umsetzungsproblematik sichtbar. Die Historie spricht für einen ernsthaften weiteren Hebel, aber gerade wegen des multifaktoriellen Systems nicht für eine automatische Wirkung der Widerspruchsregelung.",

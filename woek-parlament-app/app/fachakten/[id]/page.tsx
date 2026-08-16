@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { fachakteById, readProgrammeSummary } from "@/lib/fachbasis";
+import { PathIcon } from "@/app/components/icons";
 
 export const dynamic = "force-dynamic";
 
@@ -27,7 +28,7 @@ export default async function FachaktePage({ params }: { params: Promise<{ id: s
       <div className="section-heading"><div><p className="eyebrow">Ergebnis der Ex-ante-Prüfung</p><h2 id="programme-result-title">{summary.resultHeadline}</h2><p className="lead">{summary.resultTeaser}</p></div></div>
       <div className="programme-result-grid">
         <article>
-          <p className="programme-result-icon" aria-hidden="true">↗</p>
+          <p className="programme-result-icon programme-result-icon--potential"><PathIcon aria-hidden="true" /></p>
           <h3>Erkennbares Wirkungspotenzial</h3>
           <ul>{summary.potentialHighlights.map((item) => <li key={item}>{item}</li>)}</ul>
         </article>
