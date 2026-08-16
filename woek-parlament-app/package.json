@@ -46,6 +46,7 @@
     "votes:import-official": "tsx scripts/import-official-named-votes.ts",
     "votes:reconcile-official": "tsx scripts/reconcile-official-named-votes.ts",
     "votes:link-decision-units": "tsx scripts/link-named-vote-decision-units.ts",
+    "votes:export-case-package": "tsx scripts/export-member-vote-package.ts",
     "privacy:check": "node scripts/quality/check-privacy-governance.mjs && node scripts/quality/check-release-safety.mjs --scope=repository",
     "privacy:release": "node scripts/quality/check-release-safety.mjs --scope=release",
     "publications:verify": "node scripts/quality/verify-public-documents.mjs",
