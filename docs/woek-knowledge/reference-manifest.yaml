@@ -106,20 +106,21 @@ references:
     title: "WÖk Master Items"
     domain: WÖk-IDs, Regeln, Benchmarks, Governance
     status: leading
-    version: "1.3 (geprüft)"
-    date: "2026-08-13"
+    version: "1.4 FINAL"
+    date: "2026-08-16"
     canonical_url: "https://wirkungsoekonomie.de/bibliothek/woek-master-items-register/"
-    download_asset: WOeK_Master_Items_v1.3_geprueft.xlsx
-    local_repository_copy: assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx
-    checksum: null  # TODO Codex: SHA-256 ergänzen
+    download_asset: WOeK_Masterregister_v1.4_FINAL_2026-08-16.xlsx
+    local_repository_copy: data/master-register/WOeK_Masterregister_v1.4_FINAL_2026-08-16.xlsx
+    checksum: b70ad437dc1ab8d0b4264658346d5c10910d83309a51902e32dfe047e072ebcc
     supersedes:
+      - {version: "1.3 (geprüft)", local: assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx, status: ersetzt}
       - {version: "1.2 (PDF)", local: assets/pdf/woek-master-items-v1-2.pdf, status: ersetzt}
       - {version: "1.2 (final, PDF)", local: public/downloads/originals/WOeK_Master_Items_final_v1.2.pdf, status: aktuell, conflict: "müsste konsequent ersetzt sein → KNOWLEDGE_GAPS.md"}
     related_not_leading:
       - {title: "Public Research Register", version: "2.1", local: assets/downloads/woek-register/WOeK_Master_Items_Public_Research_Register_v2.1.xlsx, status: aktuell, note: "Forschungsvariante, 621 Items, erweiterte Spalten (MPD_Dimension, Core_Field, Archetype, NonCompensation_RedLine …) — NICHT führend"}
     authority_scope: [woek_ids, indicator_registry, benchmark_status, governance_rules, assurance_status]
-    notes: "621 WÖk-IDs, 28 Scoring-Regeln, aktive vs. historische (archivierte) Benchmarks, Prüfstatus + Prüfprotokoll. Die früher genannte Zahl 622 ist nicht mehr kanonisch."
-    last_verified: "2026-08-14 (XLSX im Repo geöffnet und Sheets gezählt)"
+    notes: "621 WÖk-IDs, 28 Scoring-Regeln, 48 Quellen und 11 Tabellenblätter. FINAL bezeichnet die kanonische Registerfassung, nicht die abgeschlossene Validierung jeder Schwelle."
+    last_verified: "2026-08-16 (XLSX geprüft, öffentliche Exporte und Viewer aus derselben Quelle erzeugt)"
 
   - reference_id: T_SROI_RECHENSTANDARD
     title: "T-SROI-Rechenstandard (Impact Controlling · Transformationsmessung, Methodenpapier)"
@@ -178,9 +179,10 @@ machine_readable_import:
   WOEK_MASTER_ITEMS:
     status: FULL
     artefakte:
-      - {pfad: assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx, inhalt: "621 Items, 28 Regeln, 9 Sheets, 50 Quellen"}
-      - {pfad: assets/data/woek-id-register.json, version: v1.3, inhalt: "621 items, 47 sources", source_hash_sha256: fd0af24ce9261633…}
-    offen: "Quellenzahl 47 (JSON) vs. 50 (XLSX Sheet 07) — Delta von Codex klären"
+      - {pfad: data/master-register/WOeK_Masterregister_v1.4_FINAL_2026-08-16.xlsx, inhalt: "621 Items, 28 Regeln, 11 Sheets, 48 Quellen", source_hash_sha256: b70ad437dc1ab8d0b4264658346d5c10910d83309a51902e32dfe047e072ebcc}
+      - {pfad: assets/data/woek-id-register.json, version: v1.4, inhalt: "621 Items, 48 Quellen"}
+      - {pfad: assets/downloads/woek-register/v1.4/register-v1.4.json, version: v1.4, inhalt: "Öffentlicher JSON-Export nach Public-Export-Schema"}
+    offen: "Offene Schwellen, Benchmarks und Fachprüfungen bleiben im Register als Status sichtbar."
   SDG_SDGPLUS_REFERENZRAHMEN:
     status: FULL
     artefakte:

@@ -1747,10 +1747,10 @@
     {
       "id": "woek-master-items-register",
       "slug": "woek-master-items-register",
-      "title": "WÖk Master Items v1.3",
-      "subtitle": "Geprüftes Arbeits- und Governance-Register für WÖk-IDs, Scorecards und Benchmarks",
-      "fileName": "WOeK_Master_Items_v1.3_geprueft.xlsx",
-      "filePath": "assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx",
+      "title": "WÖk-Masterregister v1.4",
+      "subtitle": "Führendes technisches Register für WÖk-IDs, Bewertungsregeln, Quellen und Prüfstatus",
+      "fileName": "WOeK_Masterregister_v1.4_FINAL_2026-08-16.xlsx",
+      "filePath": "assets/downloads/woek-register/v1.4/WOeK_Masterregister_v1.4_FINAL_2026-08-16.xlsx",
       "documentType": "datenregister",
       "status": "führend",
       "visibility": "expert_public",
@@ -1760,8 +1760,8 @@
         "Wissenschaft"
       ],
       "level": "expert",
-      "summaryShort": "Geprüftes Register mit 621 WÖk-IDs, 28 Regeln, getrennten aktiven und historischen Benchmarkwerten sowie Prüfstatus.",
-      "whatToExpect": "Ein technisches Register für Expert:innen: Itemlogik, Regelzuordnung, Quellen, Systemgrenzen, Datenqualität, Assurance und Benchmarkstatus.",
+      "summaryShort": "Führendes Register mit 621 WÖk-IDs, 28 Regeln, getrennten Schwellen- und Benchmarkstatus sowie sichtbaren offenen Prüfbedarfen.",
+      "whatToExpect": "Ein technisches Register für Expert:innen: Itemlogik, Regelzuordnung, Quellenfunktion, Systemgrenzen, Datenqualität, Assurance, Kalibrierungs- und Benchmarkstatus.",
       "keyQuestions": [
         "Welche WÖk-IDs und Prüfpfade sind aktuell geführt?",
         "Wann bleibt ein Messwert bewusst unbewertet?",
@@ -1786,20 +1786,20 @@
       "relatedDocuments": [
         "technische-leitlinien-wustg"
       ],
-      "version": "v1.3",
-      "date": "2026-08-13",
+      "version": "v1.4",
+      "date": "2026-08-16",
       "legalNotice": "Technisches Register. Keine amtliche Klassifikation, keine Rechts-, Steuer-, Förder-, Anlage- oder Unternehmensberatung.",
       "downloadAllowed": true,
       "previewAllowed": true,
       "section": "Register & Daten",
       "order": 324,
       "contentHtmlPath": "content/documents/online/woek-master-items-register.inc",
-      "editorialNote": "Geprüfte Fassung v1.3, Stand 13. August 2026. Leere Eingaben bleiben unbewertet; das Arbeitsmodell ist keine Rechtsnorm und keine automatische Entscheidung.",
+      "editorialNote": "Führende Fassung v1.4, Stand 16. August 2026. FINAL bezeichnet die kanonische Registerfassung, nicht die abgeschlossene Validierung jeder Schwelle. Leere Eingaben bleiben unbewertet.",
       "replaces": [
         "woek-master-items-v1-2"
       ],
       "fileType": "xlsx",
-      "fileSize": "445 KB",
+      "fileSize": "442 KB",
       "pageCount": 221,
       "estimatedReadingTime": "376 Min.",
       "replacedBy": "",

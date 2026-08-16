@@ -16,10 +16,12 @@ const ignoreDirs = new Set([
   "woek-institut-app"
 ]);
 const htmlFiles = [];
-const allowedSpreadsheetPattern = /assets\/downloads\/woek-register\/(?:WOeK_Master_Items_Public_Research_Register_v2\.1|WOeK_Master_Items_v1\.3_geprueft)\.(xlsx|xls)(?:[#?][^"']*)?$/i;
+const allowedSpreadsheetPattern = /assets\/downloads\/woek-register\/(?:WOeK_Master_Items_Public_Research_Register_v2\.1|WOeK_Master_Items_v1\.3_geprueft)\.(xlsx|xls)(?:[#?][^"']*)?$|assets\/downloads\/woek-register\/v1\.4\/WOeK_Masterregister_v1\.4_FINAL_2026-08-16\.xlsx(?:[#?][^"']*)?$/i;
+const allowedRegisterExportPattern = /assets\/downloads\/woek-register\/v1\.4\/(?:register-v1\.4\.(?:csv|json)|manifest\.json)(?:[#?][^"']*)?$/i;
+const allowedPublicDataPattern = /public\/data\/(?:en-document-translation-manifest|en-route-coverage)\.json(?:[#?][^"']*)?$/i;
 const allowedStudyScriptRawPattern = /^docs\/studienskripte\/word-rohfassungen\/[a-z0-9-]+\.docx$/i;
 const publicDownloadDirPattern = /^(assets\/downloads|downloads|public\/downloads)\//i;
-const forbiddenDownloadPattern = /(?:href|src)=["'](?!(?:[^"']*assets\/downloads\/woek-register\/(?:WOeK_Master_Items_Public_Research_Register_v2\.1|WOeK_Master_Items_v1\.3_geprueft)\.(?:xlsx|xls)(?:[#?][^"']*)?["']))[^"']*\.(docx|dotx|pages|key|numbers|zip|wav|csv|json|xlsx|xls)(?:[#?][^"']*)?["']/i;
+const forbiddenDownloadPattern = /(?:href|src)=["'](?!https?:\/\/)(?!(?:[^"']*assets\/downloads\/woek-register\/(?:WOeK_Master_Items_Public_Research_Register_v2\.1|WOeK_Master_Items_v1\.3_geprueft)\.(?:xlsx|xls)(?:[#?][^"']*)?["']))(?!(?:[^"']*assets\/downloads\/woek-register\/v1\.4\/(?:WOeK_Masterregister_v1\.4_FINAL_2026-08-16\.xlsx|register-v1\.4\.(?:csv|json)|manifest\.json)(?:[#?][^"']*)?["']))(?!(?:[^"']*public\/data\/(?:en-document-translation-manifest|en-route-coverage)\.json(?:[#?][^"']*)?["']))[^"']*\.(docx|dotx|pages|key|numbers|zip|wav|csv|json|xlsx|xls)(?:[#?][^"']*)?["']/i;
 const forbiddenAnchorPattern = /<a\b([^>]*?)\bhref=(["'])([^"']*\.(?:docx|dotx|pages|key|numbers|zip|wav|csv|json|xlsx|xls)(?:[#?][^"']*)?)\2([^>]*)>([\s\S]*?)<\/a>/gi;
 const forbiddenSrcPattern = /<source\b([^>]*?)\bsrc=(["'])([^"']*\.(?:docx|dotx|pages|key|numbers|zip|wav|csv|json|xlsx|xls)(?:[#?][^"']*)?)\2([^>]*)>\s*<\/source>/gi;
 const forbiddenFiles = [];
@@ -41,6 +43,7 @@ function walk(dir) {
     }
     if (/\.(csv|json|xlsx|xls)$/i.test(entry.name) && publicDownloadDirPattern.test(rel)) {
       if (allowedSpreadsheetPattern.test(rel)) continue;
+      if (allowedRegisterExportPattern.test(rel)) continue;
       forbiddenFiles.push(path.relative(root, full));
     }
   }
@@ -62,7 +65,7 @@ for (const file of htmlFiles) {
   const html = fs.readFileSync(file, "utf8");
   const sanitized = html
     .replace(forbiddenAnchorPattern, (match, before, _quote, hrefValue, after, inner) => {
-      if (allowedSpreadsheetPattern.test(hrefValue)) return match;
+      if (/^https?:\/\//i.test(hrefValue) || allowedSpreadsheetPattern.test(hrefValue) || allowedRegisterExportPattern.test(hrefValue) || allowedPublicDataPattern.test(hrefValue)) return match;
       const attrs = `${before || ""} ${after || ""}`;
       const classMatch = attrs.match(/\bclass=(["'])([^"']*)\1/i);
       const classAttr = classMatch ? ` class=${classMatch[1]}${classMatch[2]}${classMatch[1]}` : ' class="badge"';

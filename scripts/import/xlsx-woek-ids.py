@@ -17,7 +17,7 @@ from openpyxl import load_workbook
 
 
 ROOT = Path(__file__).resolve().parents[2]
-PUBLIC_WORKBOOK = ROOT / "assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx"
+PUBLIC_WORKBOOK = ROOT / "data/master-register/WOeK_Masterregister_v1.4_FINAL_2026-08-16.xlsx"
 SOURCE = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else PUBLIC_WORKBOOK
 ITEM_SHEET = "01_Item_Register"
 HEADER_ROW = 4
@@ -57,14 +57,14 @@ def main() -> None:
         raise SystemExit(f"Expected 621 WÖk IDs in {ITEM_SHEET}, found {len(items)}")
 
     source_hash = digest(SOURCE)
-    public_url = "/assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx"
+    public_url = "/assets/downloads/woek-register/v1.4/WOeK_Masterregister_v1.4_FINAL_2026-08-16.xlsx"
     payload = {
-        "sourceFile": "assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx",
+        "sourceFile": "data/master-register/WOeK_Masterregister_v1.4_FINAL_2026-08-16.xlsx",
         "originalFileUrl": public_url,
         "sourceHash": source_hash,
-        "sourceVersion": "v1.3",
-        "importVersion": "2026.3-import",
-        "liveReferenceVersion": "2026.3-live-reference",
+        "sourceVersion": "v1.4",
+        "importVersion": "2026.4-import",
+        "liveReferenceVersion": "2026.4-live-reference",
         "reviewStatus": "geprüft",
         "items": items,
     }
@@ -77,20 +77,20 @@ def main() -> None:
     document = f"""<!doctype html>
 <html lang="de"><head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>WÖk Master Items v1.3 | Wirkungsökonomie</title>
+  <title>WÖk-Masterregister v1.4 | Wirkungsökonomie</title>
   <meta name="description" content="Geprüftes Arbeits- und Governance-Register mit 621 WÖk-IDs, 28 Scoring-Regeln und dokumentiertem Prüfstatus.">
-  <link rel="canonical" href="https://wirkungsoekonomie.de/dokumente/woek-master-items-v1-3/">
+  <link rel="canonical" href="https://wirkungsoekonomie.de/bibliothek/woek-master-items-register/">
   <link rel="stylesheet" href="../../assets/css/style.css">
 </head><body><main class="reference-work" data-pagefind-body><article class="article-shell">
-  <nav class="breadcrumb"><a href="../../dokumente/">Dokumente</a> / WÖk Master Items v1.3</nav>
-  <h1>WÖk Master Items v1.3</h1>
-  <p class="lead">Geprüftes Arbeits- und Governance-Register für WÖk-IDs, Scorecards und Benchmarks.</p>
+  <nav class="breadcrumb"><a href="../../bibliothek/">Bibliothek</a> / WÖk-Masterregister v1.4</nav>
+  <h1>WÖk-Masterregister v1.4</h1>
+  <p class="lead">Führendes technisches Register für WÖk-IDs, Bewertungsregeln, Quellen und Prüfstatus.</p>
   <p><a class="button" href="{public_url}">XLSX herunterladen</a> <a class="button secondary" href="../../woek-id-register/">WÖk-ID Register durchsuchen</a></p>
-  <section class="callout"><h2>Einordnung</h2><p>v1.3 führt die Itemdaten, Scoring-Regeln, Benchmarkstatus, Scorecards, Quellen und Prüfprotokolle zusammen. Leere Eingaben bleiben unbewertet. Qualitative und hybride Fälle verlangen den dokumentierten Prüf- und Assurancepfad. Das Arbeitsmodell ist keine Rechtsnorm und löst keine automatische Steuerungs- oder Personenentscheidung aus.</p></section>
-  <section><h2>Registerumfang</h2><dl><dt>WÖk-IDs</dt><dd>{len(items)}</dd><dt>Scoring-Regeln</dt><dd>{rules_count}</dd><dt>Quellenkatalog</dt><dd>{source_count}</dd><dt>Prüfstatus</dt><dd>geprüft, Stand 13. August 2026</dd><dt>Quelldatei</dt><dd>WOeK_Master_Items_v1.3_geprueft.xlsx</dd><dt>SHA-256</dt><dd>{esc(source_hash)}</dd></dl></section>
-  <section><h2>Versionshinweis</h2><p>Die bisherige <a href="../../dokumente/woek-master-items-final-v1-2/">v1.2 bleibt als historische Fassung</a> erhalten. Die aktuelle Referenz ist v1.3.</p></section>
+  <section class="callout"><h2>Einordnung</h2><p>v1.4 führt Itemdaten, Scoring-Regeln, Schwellen- und Benchmarkstatus, Quellenfunktionen und Prüfprotokolle zusammen. Leere Eingaben bleiben unbewertet. FINAL bezeichnet die kanonische Registerfassung, nicht die abgeschlossene Validierung jeder Schwelle.</p></section>
+  <section><h2>Registerumfang</h2><dl><dt>WÖk-IDs</dt><dd>{len(items)}</dd><dt>Scoring-Regeln</dt><dd>{rules_count}</dd><dt>Quellenkatalog</dt><dd>{source_count}</dd><dt>Stand</dt><dd>16. August 2026</dd><dt>Quelldatei</dt><dd>WOeK_Masterregister_v1.4_FINAL_2026-08-16.xlsx</dd><dt>SHA-256</dt><dd>{esc(source_hash)}</dd></dl></section>
+  <section><h2>Versionshinweis</h2><p>v1.4 ersetzt v1.3 als führende technische Registerquelle.</p></section>
 </article></main></body></html>"""
-    output = ROOT / "dokumente/woek-master-items-v1-3/index.html"
+    output = ROOT / "bibliothek/woek-master-items-register/index.html"
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(document, encoding="utf-8")
 
@@ -98,9 +98,9 @@ def main() -> None:
     if imports_path.exists():
         imports = json.loads(imports_path.read_text(encoding="utf-8"))
         documents = imports.setdefault("documents", [])
-        record = next((entry for entry in documents if entry.get("slug") == "woek-master-items-v1-3"), None)
+        record = next((entry for entry in documents if entry.get("slug") == "woek-master-items-register"), None)
         if record is None:
-            record = {"slug": "woek-master-items-v1-3"}
+            record = {"slug": "woek-master-items-register"}
             documents.append(record)
         record.update({
             "source": payload["sourceFile"], "originalName": SOURCE.name, "originalUrl": public_url,
@@ -108,7 +108,7 @@ def main() -> None:
             "blocks": len(items), "issues": [], "updatedAt": datetime.now(timezone.utc).isoformat(),
         })
         imports_path.write_text(json.dumps(imports, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"Wrote {len(items)} WÖk-ID rows from reviewed Master Items v1.3.")
+    print(f"Wrote {len(items)} WÖk-ID rows from leading Master Register v1.4.")
 
 
 if __name__ == "__main__":

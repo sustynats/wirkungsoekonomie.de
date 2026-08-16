@@ -1,0 +1,32 @@
+{
+  "manifest_version": "1.0.0",
+  "register_version": "1.4",
+  "published_at": "2026-08-16",
+  "publisher": "Institut für Wirkungsökonomie",
+  "canonical_source": "WOeK_Masterregister_v1.4_FINAL_2026-08-16.xlsx",
+  "canonical_document_page": "/bibliothek/woek-master-items-register/",
+  "files": [
+    {
+      "filename": "WOeK_Masterregister_v1.4_FINAL_2026-08-16.xlsx",
+      "sha256": "b70ad437dc1ab8d0b4264658346d5c10910d83309a51902e32dfe047e072ebcc",
+      "bytes": 452231
+    },
+    {
+      "filename": "register-v1.4.csv",
+      "sha256": "102d9d4b28cd131e3baeb04338956ec35df07b97241ca4807c5c1257ec67844b",
+      "bytes": 691921
+    },
+    {
+      "filename": "register-v1.4.json",
+      "sha256": "851596b749c90317873975621c47a410c00bc8020f486f1dd44243dcaf72512f",
+      "bytes": 1208794
+    }
+  ],
+  "statistics": {
+    "woek_ids": 621,
+    "indicator_families": 204,
+    "scoring_rules": 28,
+    "sdg_plus_assignments": 162
+  },
+  "changelog": "v1.4 ersetzt v1.3 als führende technische Registerquelle. Offene Kalibrierungen und Benchmarks wurden nicht künstlich geschlossen."
+}

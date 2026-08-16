@@ -18,7 +18,8 @@
     },
     {
       "capability": "INDICATOR_REGISTRY_WOEK_IDS",
-      "implementedBy": ["assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx", "assets/data/woek-id-register.json", "woek-id-register/"],
+      "implementedBy": ["data/master-register/WOeK_Masterregister_v1.4_FINAL_2026-08-16.xlsx", "assets/data/woek-id-register.json", "woek-id-register/"],
+      "leadingSource": "WÖk-Masterregister v1.4 FINAL",
       "rules": "content/methodik/scoring-rules.json (-3..+3, 28 Regeln)",
       "usedBy": ["scorecards", "rechner", "uwp", "parlament(Indikatoren)"]
     },

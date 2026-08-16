@@ -158,5 +158,45 @@
     "Korrektur_v1.3": "Kritische Prüfmarkierung im Register.",
     "Restrisiko/Nächster_Schritt": "Indikatoren fachlich neu entwerfen; keine automatische Freigabe.",
     "Status": "Offen"
+  },
+  {
+    "Audit_ID": "A-017",
+    "Schweregrad": "Hoch",
+    "Bereich": "Terminologie",
+    "Befund": "Der Quellenkatalog verwies noch auf Begriffsleitfaden v1.0 als führende Referenz.",
+    "Betroffene_Zeilen": 1,
+    "Korrektur_v1.3": "Auf v1.5 aktualisiert.",
+    "Restrisiko/Nächster_Schritt": "Bei künftigen Leitfaden-Versionen automatischen Versionsabgleich vorsehen.",
+    "Status": "Behoben"
+  },
+  {
+    "Audit_ID": "A-018",
+    "Schweregrad": "Hoch",
+    "Bereich": "SDG+",
+    "Befund": "WÖk-Erweiterungen waren im Register nur durch '+' gekennzeichnet und konnten wie offizielle SDGs wirken.",
+    "Betroffene_Zeilen": 162,
+    "Korrektur_v1.3": "Explizite Kennzeichnung 'SDG+ – …' in Register und Scorecards.",
+    "Restrisiko/Nächster_Schritt": "Öffentlicher Viewer muss SDG+ als WÖk-Erweiterung erklären.",
+    "Status": "Behoben"
+  },
+  {
+    "Audit_ID": "A-019",
+    "Schweregrad": "Kritisch",
+    "Bereich": "Methodiktransparenz",
+    "Befund": "Kategorische politische Richtungsbewertung und numerische Scorecard konnten ohne Zusatzdokumentation verwechselt werden.",
+    "Betroffene_Zeilen": 621,
+    "Korrektur_v1.3": "Eigenes Transparenzblatt mit Richtung/Evidenz/Scorecard/FinalScore/Nichtkompensation ergänzt.",
+    "Restrisiko/Nächster_Schritt": "Portal muss diese Trennung identisch darstellen.",
+    "Status": "Behoben"
+  },
+  {
+    "Audit_ID": "A-020",
+    "Schweregrad": "Hoch",
+    "Bereich": "Publikation",
+    "Befund": "Für öffentliche Exporte gab es noch kein festes Feld- und Herkunftsschema.",
+    "Betroffene_Zeilen": 621,
+    "Korrektur_v1.3": "Public-Export-Schema ergänzt; kanonische Quelle bleibt 01_Item_Register.",
+    "Restrisiko/Nächster_Schritt": "Viewer und Downloads müssen aus derselben kanonischen Quelle generiert werden.",
+    "Status": "Behoben"
   }
 ]

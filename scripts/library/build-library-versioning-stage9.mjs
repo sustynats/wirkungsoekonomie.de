@@ -176,7 +176,7 @@ const LEADING_REFERENCE_PATHS = new Set([
   "verstehen/sdgs-sdgplus/index.html",
   "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
   "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.5.pdf",
-  "assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx"
+  "assets/downloads/woek-register/v1.4/WOeK_Masterregister_v1.4_FINAL_2026-08-16.xlsx"
 ]);
 
 // Neu erzeugte, öffentliche Rechenstandards werden vor dem Commit bewusst in
@@ -255,20 +255,29 @@ const LEADING_OVERRIDES = new Map([
     status: "archiviert",
     shortDescription: "Zitierfähige historische PDF-Fassung; für den aktuellen Begriffsstand gilt Version 1.5."
   }],
-  ["assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx", {
-    title: "WÖk Master Items v1.3",
+  ["assets/downloads/woek-register/v1.4/WOeK_Masterregister_v1.4_FINAL_2026-08-16.xlsx", {
+    title: "WÖk-Masterregister v1.4",
     type: "Methodik",
     status: "führend",
-    shortDescription: "Geprüftes Arbeits- und Governance-Register mit 621 WÖk-IDs, 28 Regeln, getrennten aktiven und historischen Benchmarkwerten sowie Prüfstatus."
+    shortDescription: "Führendes technisches Register mit 621 WÖk-IDs, 28 Regeln, getrennten Schwellen- und Benchmarkstatus sowie sichtbaren offenen Prüfbedarfen."
+  }],
+  ["assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx", {
+    title: "WÖk Master Items v1.3 (historische Fassung)",
+    type: "Methodik",
+    status: "ersetzt",
+    shortDescription: "Historische Registerfassung. Für den aktuellen technischen Stand gilt das WÖk-Masterregister v1.4.",
+    historicalNotice: "Historische Quellenfassung. Die führende technische Registerquelle ist v1.4.",
+    successorUrl: "bibliothek/woek-master-items-register/",
+    successorLabel: "WÖk-Masterregister v1.4 öffnen"
   }],
   ["assets/pdf/woek-master-items-v1-2.pdf", {
     title: "WÖk Master Items v1.2 (historische Fassung)",
     type: "Methodik",
     status: "ersetzt",
-    shortDescription: "Historische Quellenfassung des WÖk-Master-Items-Registers. Für den aktuellen Stand gilt WÖk Master Items v1.3.",
-    historicalNotice: "Historische Quellenfassung. Aktive validierte Benchmarks, Regelstatus und Prüfprotokoll sind in v1.3 getrennt ausgewiesen.",
+    shortDescription: "Historische Quellenfassung des WÖk-Master-Items-Registers. Für den aktuellen Stand gilt das WÖk-Masterregister v1.4.",
+    historicalNotice: "Historische Quellenfassung. Schwellenstatus, Quellenfunktion und Prüfprotokoll werden in v1.4 getrennt ausgewiesen.",
     successorUrl: "bibliothek/woek-master-items-register/",
-    successorLabel: "WÖk Master Items v1.3 öffnen"
+    successorLabel: "WÖk-Masterregister v1.4 öffnen"
   }],
   ["assets/downloads/23_woek_impact_controlling_t_sroi_transformationsmessung_methodenpapier_v1_1.pdf", {
     title: "T-SROI-Rechenstandard v1.1",

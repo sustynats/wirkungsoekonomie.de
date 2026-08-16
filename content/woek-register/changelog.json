@@ -124,5 +124,50 @@
     "Nachher": "Messwert, Assurance-Score, Nachweis und Datenstand sind separate Eingaben.",
     "Begründung": "Automatik und fachliche Prüfung bleiben nachvollziehbar.",
     "Status": "Umgesetzt"
+  },
+  {
+    "Change_ID": "CH-015",
+    "Bereich": "Terminologie",
+    "Änderungstyp": "Referenzaktualisierung",
+    "Vorher": "Begriffsleitfaden v1.0 war im Quellenkatalog noch als führend eingetragen.",
+    "Nachher": "Führender Begriffsleitfaden v1.5 ist als aktuelle Referenz eingetragen.",
+    "Begründung": "Register und Portale müssen dieselbe führende Terminologie verwenden.",
+    "Status": "Umgesetzt"
+  },
+  {
+    "Change_ID": "CH-016",
+    "Bereich": "SDG+",
+    "Änderungstyp": "Terminologiekorrektur",
+    "Vorher": "SDG+-Bereiche waren nur als führendes '+' gekennzeichnet.",
+    "Nachher": "Alle WÖk-Erweiterungen werden explizit als 'SDG+ – …' bezeichnet.",
+    "Begründung": "Keine Verwechslung mit offiziellen UN-SDGs.",
+    "Status": "Umgesetzt"
+  },
+  {
+    "Change_ID": "CH-017",
+    "Bereich": "Methodik",
+    "Änderungstyp": "Transparenz",
+    "Vorher": "Politische Ex-ante-Richtungsbewertung und technische -3…+3-Scorecard waren im Register nicht ausdrücklich gegeneinander abgegrenzt.",
+    "Nachher": "Eigenes Blatt 09_Methodik_Transparenz dokumentiert beide Ebenen und ihre Formeln.",
+    "Begründung": "Keine versteckte Parteipunktzahl; Richtung und Evidenz bleiben getrennt.",
+    "Status": "Umgesetzt"
+  },
+  {
+    "Change_ID": "CH-018",
+    "Bereich": "Publikation",
+    "Änderungstyp": "Single Source of Truth",
+    "Vorher": "Für einen öffentlichen Register-Viewer fehlte ein verbindliches Exportschema.",
+    "Nachher": "Blatt 10_Public_Export_Schema definiert den öffentlichen Feldsatz aus der kanonischen Quelle.",
+    "Begründung": "Viewer und Downloads sollen aus dem Master generiert, nicht separat gepflegt werden.",
+    "Status": "Umgesetzt"
+  },
+  {
+    "Change_ID": "CH-019",
+    "Bereich": "Version",
+    "Änderungstyp": "Release",
+    "Vorher": "v1.3 war geprüfte Arbeits- und Governance-Fassung.",
+    "Nachher": "v1.4 FINAL ist die führende technische Registerfassung ab 16.08.2026.",
+    "Begründung": "FINAL bezeichnet den führenden Release-Stand, nicht die externe Validierung aller offenen Kalibrierungen.",
+    "Status": "Umgesetzt"
   }
 ]
