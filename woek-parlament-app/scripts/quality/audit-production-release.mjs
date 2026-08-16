@@ -78,7 +78,7 @@ for (const [pathname, sentinels] of [
   ["/mandat-und-praxis", ["1.593", "Wahlprogramme", "Koalitionsvertrag"]],
   ["/laender/sachsen-anhalt", ["2.921 Zusageeinheiten", "28 Ziele im Referenzregister", "Wahlprogramme"]],
   ["/fachakten/sachsen-anhalt-afd", ["überwiegend negative Wirkungspotenziale", "Ausführliche Begründung", "Wirkungsrichtung noch offen – nicht neutral"]],
-  ["/fachanalysen/gebaeudeenergiegesetz-medienwirkung", ["Vollständige Publikationsquelle", "Quellen mit Einordnung"]],
+  ["/fachanalysen/gebaeudeenergiegesetz-medienwirkung", ["Vollständige Fachakte", "Quellen mit Einordnung"]],
   ["/fachanalysen/sondervermoegen-infrastruktur-klimaneutralitaet", ["Quellen mit Einordnung"]],
   ["/abgeordnete", ["Wirkungsprofile", "Menschen nicht bewerten"]],
   ["/abgeordnete/aaron-valent", ["Aaron Valent", "Dieses Profil bewertet nicht die Person", "Mensch · Planet · Demokratie"]],

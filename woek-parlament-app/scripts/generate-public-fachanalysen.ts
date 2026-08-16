@@ -243,7 +243,12 @@ function toPublicFachanalyse(input: RecordValue) {
     counterarguments: (Array.isArray(input.counterarguments) ? input.counterarguments : []).map((item) => object(item)),
     retrospective: object(input.retrospective),
     learningPoints: strings(input.learning_points),
-    sources: sourceList
+    sources: sourceList,
+    fullPublicationSource: {
+      href: "/fachakten/dossiers/gebaeudeenergiegesetz-medienwirkung.html",
+      label: "Vollständige Fachakte öffnen",
+      description: "Die vollständige Fachakte enthält alle veröffentlichten Befunde, Wirkpfade, Quellenbezüge, Annahmen, Gegenargumente und offenen Datenfragen."
+    }
   };
 }
 
