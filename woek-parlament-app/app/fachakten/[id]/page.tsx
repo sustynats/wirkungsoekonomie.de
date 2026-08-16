@@ -23,6 +23,28 @@ export default async function FachaktePage({ params }: { params: Promise<{ id: s
         </dl>
       </div>}
     </section>
+    {!entry.caseId && summary?.resultHeadline && <section className="shell section programme-result" aria-labelledby="programme-result-title">
+      <div className="section-heading"><div><p className="eyebrow">Ergebnis der Ex-ante-Prüfung</p><h2 id="programme-result-title">{summary.resultHeadline}</h2><p className="lead">{summary.resultTeaser}</p></div></div>
+      <div className="programme-result-grid">
+        <article>
+          <p className="programme-result-icon" aria-hidden="true">↗</p>
+          <h3>Erkennbares Wirkungspotenzial</h3>
+          <ul>{summary.potentialHighlights.map((item) => <li key={item}>{item}</li>)}</ul>
+        </article>
+        <article>
+          <p className="programme-result-icon" aria-hidden="true">!</p>
+          <h3>Risiken und Zielkonflikte</h3>
+          <ul>{summary.riskHighlights.map((item) => <li key={item}>{item}</li>)}</ul>
+        </article>
+        <article>
+          <p className="programme-result-icon" aria-hidden="true">?</p>
+          <h3>Was noch geklärt werden muss</h3>
+          <ul>{summary.conditions.map((item) => <li key={item}>{item}</li>)}</ul>
+        </article>
+      </div>
+      {summary.communicationNote && <aside className="programme-communication-note"><strong>Kommunikative Vorwirkung:</strong> {summary.communicationNote}</aside>}
+      <p className="programme-result-boundary"><strong>Einordnung:</strong> Das ist eine Prüfung des Wirkungspotenzials vor einer politischen Entscheidung. Sie bewertet weder Menschen noch Parteien und behauptet keine bereits eingetretene Wirkung.</p>
+    </section>}
     <section className="shell section fachakte-document-wrap" aria-labelledby="fachakte-full-title">
       <div className="section-heading"><div><p className="eyebrow">Vollständige Fachakte</p><h2 id="fachakte-full-title">Quellen, Wirkpfade, Risiken, Bedingungen und Datenlücken</h2></div></div>
       <p className="fachakte-note">Die Kurzansicht oben erleichtert die Orientierung. Die vollständige Fachakte wird ohne Kürzung als eigene, statische Lesefassung ausgeliefert – damit auch umfangreiche Quellenakten zuverlässig erreichbar bleiben.</p>

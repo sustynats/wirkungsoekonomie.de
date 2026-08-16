@@ -169,6 +169,20 @@ h3 { font-size: var(--groesse-h3); }
 .fachakte-note { max-width: var(--measure); color: var(--muted); }
 .fachakte-document { max-width: 78ch; padding: clamp(1rem, 3vw, 2rem); border: 1px solid var(--line); background: #fffdfa; }
 .fachakte-document pre { margin: 0; color: var(--ink); font-family: var(--sans); font-size: .94rem; line-height: 1.58; white-space: pre-wrap; overflow-wrap: anywhere; }
+.programme-result { border-top: 1px solid var(--line); }
+.programme-result .section-heading { max-width: 78ch; }
+.programme-result-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.programme-result-grid article { padding: 1.3rem; border-top: 4px solid var(--teal); background: var(--paper); }
+.programme-result-grid article:nth-child(2) { border-top-color: var(--red); }
+.programme-result-grid article:nth-child(3) { border-top-color: var(--gold); }
+.programme-result-grid h3 { margin: .7rem 0; font-size: 1.25rem; }
+.programme-result-grid ul { margin: 0; padding-left: 1.1rem; color: var(--muted); }
+.programme-result-grid li + li { margin-top: .65rem; }
+.programme-result-icon { display: grid; width: 2rem; height: 2rem; place-items: center; margin: 0; border-radius: 50%; color: var(--paper); background: var(--teal); font-weight: 900; }
+.programme-result-grid article:nth-child(2) .programme-result-icon { background: var(--red); }
+.programme-result-grid article:nth-child(3) .programme-result-icon { color: var(--navy); background: var(--gold); }
+.programme-communication-note, .programme-result-boundary { max-width: 78ch; margin: 1rem 0 0; padding: 1rem 1.1rem; border-left: 4px solid var(--teal); background: var(--cream); }
+.programme-result-boundary { border-left-color: var(--gold); color: var(--muted); }
 .state-programme-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
 .state-programme-grid article { display: grid; align-content: start; gap: .8rem; padding: 1.35rem; border-top: 4px solid var(--teal); background: var(--cream); }
 .state-programme-grid h3, .state-programme-grid p { margin: 0; }
@@ -177,6 +191,10 @@ h3 { font-size: var(--groesse-h3); }
 .state-programme-grid dl { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .6rem; margin: .15rem 0; padding-top: .8rem; border-top: 1px solid var(--line); }
 .state-programme-grid dt { color: var(--muted); font-size: .66rem; font-weight: 850; letter-spacing: .06em; text-transform: uppercase; }
 .state-programme-grid dd { margin: .2rem 0 0; color: var(--navy); font: 700 1.25rem/1 var(--serif); }
+.programme-card-result { display: grid; gap: .45rem; padding: 1rem; border-left: 4px solid var(--gold); background: var(--paper); }
+.programme-card-result .eyebrow { color: var(--teal); }
+.programme-card-result h4 { margin: 0; color: var(--navy); font-size: 1.05rem; line-height: 1.3; }
+.programme-card-result p:last-child { margin: 0; color: var(--muted); }
 .federal-programme-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(var(--spalten-kachel-min), 1fr)); gap: var(--abstand-raster); }
 .federal-programme-grid article { display: grid; align-content: start; gap: var(--abstand-s); padding: var(--abstand-l); border-top: 4px solid var(--gold); background: var(--cream); }
 .federal-programme-grid h3, .federal-programme-grid p { margin: 0; }
@@ -919,7 +937,7 @@ h3 { font-size: var(--groesse-h3); }
   .pillar-list li:last-child { grid-column: auto; }
   .section-heading { align-items: start; flex-direction: column; }
   .section-inline-action { align-items: flex-start; flex-direction: column; }
-  .method-grid, .transparency-list, .impact-architecture ol, .fachakte-summary, .state-programme-grid, .federal-programme-grid { grid-template-columns: 1fr; }
+  .method-grid, .transparency-list, .impact-architecture ol, .fachakte-summary, .state-programme-grid, .federal-programme-grid, .programme-result-grid { grid-template-columns: 1fr; }
   .fachakte-summary dl, .state-programme-grid dl, .federal-programme-grid dl { grid-template-columns: 1fr; }
   .search-filter-grid, .search-result-list > article { grid-template-columns: 1fr; }
   .topic-options { grid-template-columns: 1fr; }

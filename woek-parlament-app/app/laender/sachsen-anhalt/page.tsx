@@ -72,7 +72,7 @@ export default async function SaxonyAnhaltPage() {
           {programmeSummaries.map(({ analysis, summary }) => <article key={analysis.id}>
             <p className="eyebrow">{analysis.eyebrow}</p>
             <h3>{analysis.title}</h3>
-            <p>{summary?.summary}</p>
+            {summary?.resultHeadline ? <div className="programme-card-result"><p className="eyebrow">Kernaussage</p><h4>{summary.resultHeadline}</h4><p>{summary.resultTeaser}</p></div> : <p>{summary?.summary}</p>}
             <dl>
               <div><dt>Zusageeinheiten</dt><dd>{summary?.commitments || "–"}</dd></div>
               <div><dt>Wirkpfade</dt><dd>{summary?.impactPaths || "–"}</dd></div>

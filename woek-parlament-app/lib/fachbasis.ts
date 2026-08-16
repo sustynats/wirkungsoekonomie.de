@@ -73,6 +73,12 @@ type ReviewShape = {
   calculation_requirements?: unknown[];
   data_gaps?: unknown[];
   programme_profile?: { material_policy_domains?: unknown[] };
+  resultHeadline?: string;
+  resultTeaser?: string;
+  potentialHighlights?: string[];
+  riskHighlights?: string[];
+  conditions?: string[];
+  communicationNote?: string;
 };
 
 export async function readProgrammeSummary(entry: FachakteDescriptor) {
@@ -86,6 +92,12 @@ export async function readProgrammeSummary(entry: FachakteDescriptor) {
     impactPaths: Array.isArray(review.central_impact_paths) ? review.central_impact_paths.length : Array.isArray(review.impact_paths) ? review.impact_paths.length : review.impactPaths ?? 0,
     calculations: Array.isArray(review.calculation_requirements) ? review.calculation_requirements.length : review.calculations ?? 0,
     dataGaps: Array.isArray(review.data_gaps) ? review.data_gaps.length : review.dataGaps ?? 0,
-    domains: Array.isArray(review.programme_profile?.material_policy_domains) ? review.programme_profile.material_policy_domains.length : review.domains ?? 0
+    domains: Array.isArray(review.programme_profile?.material_policy_domains) ? review.programme_profile.material_policy_domains.length : review.domains ?? 0,
+    resultHeadline: review.resultHeadline,
+    resultTeaser: review.resultTeaser,
+    potentialHighlights: review.potentialHighlights ?? [],
+    riskHighlights: review.riskHighlights ?? [],
+    conditions: review.conditions ?? [],
+    communicationNote: review.communicationNote
   };
 }

@@ -1,0 +1,112 @@
+:root {
+  --basis: #f6f1e8;
+  --karte: #fffdfa;
+  --buehne: #132133;
+  --text: #1b2431;
+  --weich: #5b6675;
+  --linie: #e4ddd1;
+  --gruen: #175646;
+  --gold: #c8a24a;
+}
+
+* { box-sizing: border-box; }
+
+html { color-scheme: light; }
+
+body {
+  margin: 0;
+  background: var(--basis);
+  color: var(--text);
+  font: 18px/1.62 "Source Sans 3", system-ui, sans-serif;
+}
+
+header {
+  border-top: 4px solid var(--gold);
+  background: var(--buehne);
+  color: #fff;
+  padding: 1.5rem max(1rem, calc((100vw - 1080px) / 2));
+}
+
+header a {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  color: #fff;
+  font-weight: 750;
+  text-underline-offset: .2em;
+}
+
+header p {
+  max-width: 72ch;
+  margin: .7rem 0 0;
+  color: #dbe2ec;
+}
+
+main {
+  width: min(1080px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 3rem 0 5rem;
+}
+
+.eyebrow {
+  color: #8ad0bd;
+  font: 800 .78rem/1.2 "Source Sans 3", system-ui, sans-serif;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--buehne);
+  font-family: "Source Serif 4", Georgia, serif;
+  line-height: 1.17;
+  text-wrap: balance;
+}
+
+header h1 {
+  max-width: 22ch;
+  margin: .45rem 0 0;
+  color: #fff;
+  font-size: clamp(2rem, 3.4vw, 3rem);
+}
+
+h2 { margin-top: 3.2rem; font-size: clamp(1.5rem, 2.2vw, 2rem); }
+h3 { margin-top: 2rem; font-size: 1.38rem; }
+h4 { margin-top: 1.5rem; font-size: 1.18rem; }
+
+article {
+  max-width: 75ch;
+  margin-top: 2.5rem;
+  padding: clamp(1rem, 3vw, 2rem);
+  border: 1px solid var(--linie);
+  border-top: 5px solid var(--gruen);
+  background: var(--karte);
+  box-shadow: 0 18px 50px rgb(19 33 51 / 7%);
+}
+
+p { margin: 0 0 1rem; }
+ul { padding-left: 1.25rem; }
+li { margin: .35rem 0; }
+a { color: var(--gruen); }
+code { padding: .1em .3em; background: #f1ece4; overflow-wrap: anywhere; }
+hr { border: 0; border-top: 1px solid var(--linie); margin: 2rem 0; }
+
+article > p:first-child {
+  margin: 0 0 2rem;
+  padding: 1.1rem 1.2rem;
+  border-left: 4px solid var(--gold);
+  background: #f3ead2;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 640px) {
+  body { font-size: 17px; }
+  main { padding-top: 2rem; }
+  article { padding: 1rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; }
+}

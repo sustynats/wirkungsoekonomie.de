@@ -30,12 +30,56 @@ function escapeHtml(value) {
 }
 
 function inline(value) {
-  const escaped = escapeHtml(value);
+  const escaped = escapeHtml(humanizeMachineTokens(value));
   return escaped
     .replace(/`([^`]+)`/g, "<code>$1</code>")
     .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
-    .replace(/_([^_]+)_/g, "<em>$1</em>")
     .replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, '<a href="$2" rel="noreferrer">$1</a>');
+}
+
+const machineValues = {
+  MULTI_LEVEL: "mehrere politische Ebenen",
+  CONDITIONAL: "nur unter Bedingungen entscheidungsreif",
+  LIMITED: "begrenzt",
+  OPEN: "offen",
+  MATERIAL: "materiell relevant",
+  REVIEW_REQUIRED: "Prüfung erforderlich",
+  NOT_MATERIAL_IDENTIFIED: "keine materielle Relevanz festgestellt",
+  EX_ANTE_PROGRAMME_COMMITMENT: "Ex-ante-Prüfung einer Programmzusage",
+  PLAUSIBLE_PATHS_NOT_OBSERVED_EFFECTS: "plausible Wirkpfade, keine beobachteten Wirkungen",
+  DATA_GAP_UNTIL_IMPLEMENTATION_DESIGN: "Datenlücke bis zur konkreten Ausgestaltung",
+  MATERIAL_GAPS: "wesentliche Informationslücken",
+  PARTLY_REVERSIBLE: "teilweise reversibel",
+  SECURITY_POLICE_JUSTICE: "Sicherheit, Polizei und Justiz",
+  TAX_FISCAL_BUDGET: "Steuern, Finanzen und Haushalt",
+  OTHER: "weitere Querschnittsthemen",
+  EDUCATION: "Bildung",
+  FAMILY_EQUALITY: "Familie und Gleichstellung",
+  WORK_SOCIAL_SECURITY: "Arbeit und soziale Sicherung",
+  HEALTH_CARE: "Gesundheit und Pflege",
+  MIGRATION_ASYL: "Migration und Asyl",
+  DEFENCE_FOREIGN_EU: "Verteidigung, Außenpolitik und Europa",
+  ADMINISTRATION_STATE: "Verwaltung und Staat",
+  MEDIA_COMMUNICATION: "Medien und Kommunikation",
+  MOBILITY_INFRASTRUCTURE: "Mobilität und Infrastruktur",
+  HOUSING: "Wohnen und Bauen",
+  SCIENCE_RESEARCH: "Wissenschaft und Forschung",
+  ENERGY_CLIMATE: "Energie und Klima",
+  ECONOMY_INDUSTRY_TRADE: "Wirtschaft, Industrie und Handel",
+  AGRICULTURE_FOOD_ANIMAL: "Landwirtschaft, Ernährung und Tierwohl",
+  NATURE_WATER_RESOURCES: "Natur, Wasser und Ressourcen",
+  CULTURE_RELIGION_SPORT: "Kultur, Religion und Sport",
+  DIGITAL_AI_DATA: "Digitalisierung, Daten und künstliche Intelligenz",
+  DEMOCRACY_RULE_OF_LAW: "Demokratie und Rechtsstaatlichkeit",
+  HIGHER_IS_BETTER: "höher ist besser",
+  LOWER_IS_BETTER: "niedriger ist besser"
+};
+
+function humanizeMachineTokens(value) {
+  return String(value)
+    .replace(/SDG_PLUS_([A-Z0-9_]+)/g, (_, key) => `SDG+ ${key.toLowerCase().replace(/_/g, " ")}`)
+    .replace(/SDG_0?([0-9]{1,2})/g, "SDG $1")
+    .replace(/\b[A-Z][A-Z0-9_]{2,}\b/g, (token) => machineValues[token] ?? (token.includes("_") ? token.toLowerCase().replace(/_/g, " ") : token));
 }
 
 const labels = {
@@ -75,9 +119,59 @@ const labels = {
   impact_orders: "Wirkungen erster, zweiter und dritter Ordnung",
   distribution_and_time: "Verteilung und Zeitbezug",
   public_summary: "Kernaussage",
+  plain_language_summary: "Kurz erklärt",
   public_release_boundary: "Grenze der Aussage",
   historical_feedback: "Rückblick",
-  sources_and_evidence: "Quellen und Evidenz"
+  sources_and_evidence: "Quellen und Evidenz",
+  commitment_key: "Zusage-ID",
+  location: "Fundstelle",
+  page: "Seite oder Abschnitt",
+  section: "Kapitel",
+  status: "Status",
+  missing_parameters: "Noch fehlende Angaben",
+  path_id: "Wirkpfad-ID",
+  expected_state_change: "Mögliche Zustandsveränderung",
+  mechanism: "Wirkmechanismus",
+  indicators: "Mögliche Indikatoren",
+  risk: "Risiko",
+  trigger_or_condition: "Auslöser oder Bedingung",
+  affected_groups_or_goods: "Betroffene Gruppen oder Schutzgüter",
+  outcome: "Zu prüfende Zustandsveränderung",
+  possible_indicator: "Möglicher Indikator",
+  baseline: "Ausgangswert",
+  counterfactual: "Gegenfaktum",
+  required_operands: "Benötigte Rechengrößen",
+  data_gap: "Datenlücke",
+  concern: "Prüfpunkt",
+  rationale: "Begründung",
+  human: "Mensch",
+  planet: "Planet",
+  democracy: "Demokratie",
+  sdgs: "SDGs",
+  sdg_plus: "SDG+",
+  id: "Referenz",
+  direction: "Richtung",
+  analysis_time_status: "Zeitbezug der Analyse",
+  first_order: "Erste Ordnung",
+  second_order: "Zweite Ordnung",
+  third_order: "Dritte Ordnung",
+  benefit_and_burden_test: "Verteilung von Nutzen und Lasten",
+  short_term: "Kurzfristig",
+  medium_term: "Mittelfristig",
+  long_term: "Langfristig",
+  intergenerational_relevance: "Bedeutung für kommende Generationen",
+  implementation_and_capacity: "Umsetzung und Kapazitäten",
+  requirements: "Voraussetzungen",
+  capacity_status: "Stand der Umsetzungskapazität",
+  note: "Hinweis",
+  reversibility_and_lock_in: "Reversibilität und Pfadbindung",
+  decision_information_gap: "Informationslücken vor einer bindenden Entscheidung",
+  required_before_binding_decision: "Vor einer bindenden Entscheidung erforderlich",
+  monitoring_and_feedback: "Monitoring und Rückkopplung",
+  primary_indicator: "Primärer Indikator",
+  unit: "Einheit",
+  earliest_review: "Frühester Prüfzeitpunkt",
+  correction_trigger: "Korrekturtrigger"
 };
 
 function labelFor(value) {
@@ -150,16 +244,7 @@ function documentHtml({ title, article, overviewHref }) {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index, follow">
   <title>${escapeHtml(title)} – Vollständige Fachakte</title>
-  <style>
-    :root { --basis:#F6F1E8; --karte:#fff; --buehne:#132133; --text:#1B2431; --weich:#5B6675; --linie:#E4DDD1; --gruen:#175646; --gold:#C8A24A; }
-    * { box-sizing:border-box; } body { margin:0; background:var(--basis); color:var(--text); font:19px/1.62 "Source Sans 3",system-ui,sans-serif; }
-    header { border-top:4px solid var(--gold); background:var(--buehne); color:#fff; padding:1.25rem max(1rem,calc((100vw - 1080px)/2)); }
-    header a { color:#fff; text-underline-offset:.2em; } header p { max-width:72ch; color:#dbe2ec; margin:.7rem 0 0; }
-    main { width:min(1080px,calc(100% - 2rem)); margin:0 auto; padding:3rem 0 5rem; } .eyebrow { color:var(--gruen); font:700 .82rem/1.2 system-ui,sans-serif; letter-spacing:.13em; text-transform:uppercase; }
-    h1,h2,h3,h4 { color:var(--buehne); font-family:"Source Serif 4",Georgia,serif; line-height:1.17; } h1 { max-width:22ch; margin:.4rem 0 0; font-size:clamp(2rem,3.4vw,3rem); } h2 { margin-top:3.2rem; font-size:clamp(1.5rem,2.2vw,2rem); } h3 { margin-top:2rem; font-size:1.38rem; } h4 { margin-top:1.5rem; font-size:1.18rem; }
-    article { max-width:75ch; margin-top:2.5rem; padding:clamp(1rem,3vw,2rem); border:1px solid var(--linie); background:var(--karte); } p { margin:0 0 1rem; } li { margin:.35rem 0; } a { color:var(--gruen); } code { padding:.1em .3em; background:#f1ece4; overflow-wrap:anywhere; } hr { border:0; border-top:1px solid var(--linie); margin:2rem 0; }
-    @media (max-width:640px) { body { font-size:17px; } main { padding-top:2rem; } article { padding:1rem; } }
-  </style>
+  <link rel="stylesheet" href="/fachakten/dossiers.css">
 </head>
 <body>
   <header><a href="${overviewHref}">← Zur Fachakte im Wirkungsportal</a><p class="eyebrow">Institut für Wirkungsökonomie · vollständige Fachakte</p><h1>${escapeHtml(title)}</h1><p>Vollständige, veröffentlichte Darstellung mit Quellenbezügen, möglichen Wirkpfaden, Risiken, Bedingungen und Datenlücken. Wirkungspotenzial, Wirkungsrisiko und später beobachtbare Wirkung bleiben getrennt.</p></header>
