@@ -15,7 +15,7 @@ function contentSecurityPolicy(nonce: string) {
     "font-src 'self' data:",
     `style-src 'self' 'nonce-${nonce}'`,
     `script-src 'self' 'nonce-${nonce}' 'strict-dynamic'`,
-    "connect-src 'self' https://search.dip.bundestag.de https://akademie.wirkungsoekonomie.de https://fganranxrdyewbjpvubx.supabase.co",
+    "connect-src 'self'",
     "upgrade-insecure-requests"
   ].join("; ");
 }
