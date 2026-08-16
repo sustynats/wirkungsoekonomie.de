@@ -194,6 +194,7 @@ try {
   const dossier = await auditPage("/fachakten/dossiers/sachsen-anhalt-afd.html", `() => ({
     bodyText: document.body.innerText.length,
     commitmentRecords: document.querySelectorAll('details.commitment-record').length,
+    initiallyOpenRecords: [...document.querySelectorAll('details.commitment-record')].filter((record) => record.open).length,
     directionCallouts: document.querySelectorAll('.commitment-direction').length,
     negativeCallouts: document.querySelectorAll('.commitment-direction--negative').length,
     styledLayout: getComputedStyle(document.querySelector('.dossier-layout')).display === 'grid',
@@ -203,6 +204,7 @@ try {
   })`);
   assert(dossier.bodyText > 10_000, "Full programme dossier has too little visible content.");
   assert(dossier.commitmentRecords === 466, `Full AfD dossier renders ${dossier.commitmentRecords} instead of 466 programme records.`);
+  assert(dossier.initiallyOpenRecords === 0, "Full AfD dossier does not start with all programme records collapsed.");
   assert(dossier.directionCallouts === 466, "Not every programme record has a directional impact callout.");
   assert(dossier.negativeCallouts > 0, "Full AfD dossier omits its documented negative directional findings.");
   assert(dossier.styledLayout, "Full programme dossier stylesheet is not active.");
@@ -213,7 +215,8 @@ try {
 
   const federalDossier = await auditPage("/fachakten/dossiers/bund-coalition-2025-cdu-csu-spd.html", `() => ({
     bodyText: document.body.innerText.length,
-    commitmentRecords: document.querySelectorAll('.commitment-analysis').length,
+    commitmentRecords: document.querySelectorAll('details.commitment-record').length,
+    initiallyOpenRecords: [...document.querySelectorAll('details.commitment-record')].filter((record) => record.open).length,
     directionCallouts: document.querySelectorAll('.commitment-direction').length,
     negativeCallouts: document.querySelectorAll('.commitment-direction--negative').length,
     ambivalentCallouts: document.querySelectorAll('.commitment-direction--ambivalent').length,
@@ -224,6 +227,7 @@ try {
   })`);
   assert(federalDossier.bodyText > 10_000, "Full federal coalition dossier has too little visible content.");
   assert(federalDossier.commitmentRecords === 347 && federalDossier.directionCallouts === 347, "Full federal coalition dossier does not render all 347 programme records with directional callouts.");
+  assert(federalDossier.initiallyOpenRecords === 0, "Full federal coalition dossier does not start with all programme records collapsed.");
   assert(federalDossier.negativeCallouts > 0 && federalDossier.ambivalentCallouts > 0 && federalDossier.openCallouts > 0, "Full federal coalition dossier hides existing negative, ambivalent or open directions.");
   assert(federalDossier.detailedReasons === 347, "A federal coalition commitment lacks its detailed rationale.");
   assert(federalDossier.hasTools, "Full federal coalition dossier has no navigation/search tools.");

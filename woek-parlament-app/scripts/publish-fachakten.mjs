@@ -30,7 +30,17 @@ const programmeDocuments = [
 ];
 
 function normalizePublicText(value) {
-  return String(value).replace(/\s+/g, " ").trim();
+  return String(value)
+    // PDF/OCR extraction may contain invisible control characters or Unicode
+    // replacement glyphs. Neither belongs in a public dossier.
+    .replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F]/g, " ")
+    .replace(/\uFFFD+/g, " ")
+    // Some two-column PDFs are extracted as overlapping one- or two-letter
+    // glyph fragments ("G Gr ro oß ße e"). Publishing that noise would imply
+    // source precision that is not present, so expose the data-quality limit.
+    .replace(/(?:(?:^|[\s•])[\p{L}]{1,2}(?=[\s-]))(?:[\s-]+[\p{L}]{1,2}){8,}/gu, " [Quellpassage in der PDF-Auslese nicht zuverlässig lesbar] ")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function escapeHtml(value) {
@@ -160,6 +170,7 @@ const machineValues = {
   DELIBERATION: "parlamentarische Beratung",
   PROMULGATED: "verkündet",
   IDENTIFIED: "identifiziert"
+  ,UNRESOLVED: "noch ungeklärt"
   ,HIGH: "hoch"
   ,MEDIUM: "mittel"
   ,LOW: "niedrig"
@@ -170,7 +181,77 @@ const machineValues = {
 const publicPhraseTranslations = new Map([
   ["Mehrkomponenten-Eintrag aus der Registerextraktion; die Originalquelle enthält getrennte Zusagen. Sie werden unter dem gelieferten Zusageschlüssel transparent als getrennte Source Components analysiert.", "Der Programmpunkt bündelt mehrere Aussagen aus der Originalquelle. Damit ihre unterschiedlichen Wirkungspfade sichtbar bleiben, werden sie in dieser Akte getrennt geprüft."],
   ["Der gelieferte Zusageschlüssel enthält aufgrund der ursprünglichen PDF-/Spaltenextraktion mehrere getrennte Originalaussagen. Für eine spätere Registermigration sollten diese als eigene Schlüssel versioniert werden; bis dahin bleiben die Source Components getrennt sichtbar.", "Der Programmpunkt bündelt mehrere Originalaussagen. Vor einer abschließenden Bewertung müssen diese Aussagen einzeln gegen ihren jeweiligen Ausgangszustand und ihre Alternative geprüft werden."],
-  ["source components", "einzelne Quellenaussagen"],
+  ["source bound multi component", "quellengebundenes Zusagebündel aus mehreren Aussagen"],
+  ["verified reconstructed multi component", "geprüftes, aus mehreren Quellenaussagen rekonstruiertes Zusagebündel"],
+  ["verified reconstructed limited", "geprüft rekonstruiert; Aussagekraft begrenzt"],
+  ["verified reconstructed manual source", "anhand der Primärquelle manuell geprüft und rekonstruiert"],
+  ["material assessable", "materiell prüfbar"],
+  ["quantifiable with data", "mit geeigneten Daten quantifizierbar"],
+  ["normative demand or proposal", "normative Forderung oder politischer Vorschlag"],
+  ["diagnosis or frame", "Problembeschreibung oder Deutungsrahmen"],
+  ["substantive theme with changed design", "materielles Thema mit geänderter Ausgestaltung"],
+  ["potential non compensable boundary review", "mögliche nicht kompensierbare Schutzgrenze; vertiefte Prüfung erforderlich"],
+  ["superior law and competence review", "Prüfung von höherrangigem Recht und Zuständigkeit erforderlich"],
+  ["wirkungspotenzial wirkungsrisiko and change levers", "Wirkungspotenzial, Wirkungsrisiko und veränderbare Hebel"],
+  ["wirkungspotenzial wirkungsrisiko and causal paths", "Wirkungspotenzial, Wirkungsrisiko und Wirkpfade"],
+  ["federal eu with land admin", "Bundes- und EU-Ebene mit Vollzug durch das Land"],
+  ["official evaluation", "amtliche Evaluation"],
+  ["source components", "Quellenaussagen"],
+  ["Original-source reconstruction for this supplied commitment key is not sufficiently reliable; the source statement must be re-extracted manually before an effect path is published", "Die Rekonstruktion der Originalquelle ist für diesen Programmpunkt nicht hinreichend verlässlich. Vor Veröffentlichung eines Wirkpfads muss die Quellenaussage manuell neu ausgelesen werden"],
+  ["Supplied commitment record is a table-of-contents/layout or generic programme fragment, not a sufficiently autonomous material commitment", "Der gelieferte Programmeintrag ist ein Inhaltsverzeichnis-, Layout- oder allgemeines Fragment und keine hinreichend eigenständige materielle Zusage"],
+  ["Generic political objective without sufficiently specified instrument or autonomous material commitment", "Allgemeines politisches Ziel ohne hinreichend bestimmtes Instrument oder eigenständige materielle Zusage"],
+  ["evidence open ist Evidenzstatus", "„Evidenz offen“ bezeichnet den Evidenzstand"],
+  ["substantive textual match", "inhaltlich belastbarer Textbezug"],
+  ["manual review opportunity effect", "mögliche Wirkung einer zusätzlichen manuellen Prüfung"],
+  ["official installation data required", "amtliche Installationsdaten erforderlich"],
+  ["official energy and building data required", "amtliche Energie- und Gebäudedaten erforderlich"],
+  ["microdata required", "Mikrodaten erforderlich"],
+  ["Chilling Effect", "Abschreckungswirkung"],
+  ["material marked frames", "als materiell gekennzeichnete Deutungsrahmen"],
+  ["material markierte Frames", "als materiell gekennzeichnete Deutungsrahmen"],
+  ["Programmtext/Frame", "Programmtext oder Deutungsrahmen"],
+  ["Frame-Marker", "Merkmal eines Deutungsrahmens"],
+  ["Cross-Bubble- und Illusory-Truth-Risiko", "Risiken einer Verbreitung über verschiedene Öffentlichkeiten und eines Wahrheitseffekts durch Wiederholung"],
+  ["Familiarity-Backfire", "möglicher Gegenwirkungseffekt durch Vertrautheit"],
+  ["WÖK-PROGRAMME-DEEP-REVIEW-1.0", "WÖk-Programmprüfung, Version 1.0"],
+  ["WÖK-SA-PROGRAMME-REVIEW-1.0", "WÖk-Landesprogrammprüfung, Version 1.0"],
+  ["not established ex ante", "ex ante nicht als eingetretene Wirkung belegt"],
+  ["_Leere Liste._", "Keine Einträge."],
+  ["lock in risk", "Risiko langfristiger Pfadbindung"],
+  ["unresolved programme unit", "noch nicht abschließend geklärter Programmpunkt"],
+  ["no material coalition match identified", "kein materiell passender Bezug zum Koalitionsvertrag festgestellt"],
+  ["not included in fachliche relationship mapping", "nicht in den fachlichen Zusammenhangsabgleich einbezogen"],
+  ["incomplete source fragment review required", "unvollständiger Quellenausschnitt; Quellenprüfung erforderlich"],
+  ["source fragment review required", "Quellenausschnitt muss geprüft werden"],
+  ["source review required", "Quellenprüfung erforderlich"],
+  ["federal or multi level", "Bundesebene oder mehrere staatliche Ebenen"],
+  ["eu or multi level", "EU-Ebene oder mehrere staatliche Ebenen"],
+  ["open unresolved multi link", "mehrere mögliche Bezüge; Zuordnung noch offen"],
+  ["no high materiality cluster identified by screen", "in der Vorprüfung kein hochmaterielles Prüfmuster festgestellt"],
+  ["scientific source", "wissenschaftliche Quelle"],
+  ["not causally attributed", "kausal nicht zugerechnet"],
+  ["not robustly established", "nicht belastbar belegt"],
+  ["not established", "nicht belegt"],
+  ["verified in input package", "im bereitgestellten Quellenpaket geprüft"],
+  ["distribution model required", "Verteilungsmodell erforderlich"],
+  ["model required", "Modellierung erforderlich"],
+  ["no national causal model", "kein belastbares bundesweites Kausalmodell vorhanden"],
+  ["material democracy governance review", "vertiefte Prüfung von Demokratie und staatlicher Handlungsfähigkeit erforderlich"],
+  ["material equality review", "vertiefte Gleichheitsprüfung erforderlich"],
+  ["material superior law compatibility review", "vertiefte Prüfung der Vereinbarkeit mit höherrangigem Recht erforderlich"],
+  ["conditional portfolio object", "nur unter Bedingungen als Gesamtportfolio bewertbar"],
+  ["partial mechanism supported no behavioural attribution", "Wirkmechanismus teilweise gestützt; keine Verhaltenswirkung zugerechnet"],
+  ["ex ante causal hypothesis with model inputs", "Ex-ante-Wirkungshypothese mit Modellannahmen"],
+  ["frame existence supported causal behaviour unresolved", "Deutungsrahmen belegt; Verhaltenswirkung kausal ungeklärt"],
+  ["analytical mapping no score", "analytische Zuordnung ohne Gesamtpunktzahl"],
+  ["partial and mixed", "teilweise beobachtet und gegenläufig"],
+  ["official table available not machine ingested", "amtliche Tabelle vorhanden; noch nicht maschinell übernommen"],
+  ["evidence found candidate", "mögliche Evidenz gefunden; fachliche Prüfung ausstehend"],
+  ["open effectiveness risk", "Wirksamkeit und Risikorichtung noch offen"],
+  ["open or move to observation", "Richtung offen oder in die Beobachtung überführen"],
+  ["No effect path is asserted from a corrupted, generic or not source-resolvable register fragment.", "Aus einem beschädigten, allgemeinen oder nicht eindeutig zur Quelle rückverfolgbaren Registerfragment wird kein Wirkpfad abgeleitet."],
+  ["Generic, TOC/layout-corrupted or unreliably reconstructed register fragments are not assigned substantive impact paths.", "Allgemeinen, durch Inhaltsverzeichnis oder Layout beschädigten sowie nicht verlässlich rekonstruierten Registerfragmenten werden keine materiellen Wirkpfade zugeordnet."],
+  ["Included parliamentary PDFs are verified in the input package. All additionally researched sources remain", "Die enthaltenen Parlamentsdokumente wurden im Quellenpaket geprüft. Alle zusätzlich recherchierten Quellen bleiben"],
   ["decision context source only; analytical causal hypothesis requires validation", "Als Beleg liegt bislang nur die Quelle zum Entscheidungsgegenstand vor; die Wirkungshypothese muss empirisch überprüft werden"],
   ["official proposal source; ex ante causal hypothesis requires validation", "Amtliche Vorlage vorhanden; die Ex-ante-Wirkungshypothese muss empirisch überprüft werden"],
   ["defined not applied", "definiert, aber noch nicht angewendet"],
@@ -234,7 +315,6 @@ const publicPhraseTranslations = new Map([
   ,["not rated", "noch nicht eingestuft"]
   ,["modeled ex ante direction", "modellierte Ex-ante-Richtung"]
   ,["source text appears complete", "Quelltext erscheint vollständig"]
-  ,["not established ex ante", "ex ante nicht als eingetretene Wirkung belegt"]
   ,["no high materiality marker identified at commitment level", "kein hochmaterialer kommunikativer Auslöser auf Ebene dieses Programmpunkts festgestellt"]
   ,["no high confidence boundary trigger identified", "kein Schutzgrenzen-Auslöser mit hoher Sicherheit festgestellt"]
   ,["no high confidence mismatch identified", "keine eindeutige fachliche Fehlzuordnung festgestellt"]
@@ -281,7 +361,7 @@ function humanizeMachineTokens(value) {
       SOCIAL_COHESION: "SDG+ gesellschaftlicher Zusammenhalt"
     })[key] ?? `SDG+ ${key.toLowerCase().replace(/_/g, " ")}`)
     .replace(/SDG_0?([0-9]{1,2})/g, "SDG $1")
-    .replace(/\b[A-Z][A-Z0-9_]{2,}\b/g, (token) => machineValues[token] ?? (token.includes("_") ? token.toLowerCase().replace(/_/g, " ") : token))
+    .replace(/\b[A-Z][A-Z0-9_]{1,}\b/g, (token) => machineValues[token] ?? (token.includes("_") ? token.toLowerCase().replace(/_/g, " ") : token))
     .replace(/\b[a-z][a-z0-9]*(?:_[a-z0-9]+)+\b/g, (token) => publicTaxonomyValues[token] ?? labels[token] ?? token.replace(/_/g, " "))
     .replace(/\btrue\b/g, "ja")
     .replace(/\bfalse\b/g, "nein")
@@ -918,6 +998,14 @@ const labels = {
   ,provenance: "Herkunft und Nachvollziehbarkeit"
   ,quality_assurance: "Qualitätssicherung"
   ,research_need: "Weiterer Forschungsbedarf"
+  ,candidate_boundaries: "Mögliche Schutzgrenzen"
+  ,sdg_plus_direction_targets: "Richtungszuordnung zu SDG+"
+  ,modeled_direction_counts: "Anzahl der modellierten Wirkungsrichtungen"
+  ,policy_direction_counts: "Anzahl der Wirkungsrichtungen politischer Instrumente"
+  ,legal_review_flag_counts: "Anzahl rechtlicher Prüfhinweise"
+  ,target_direction_counts: "Anzahl der Zielrichtungen"
+  ,non_compensation_candidate_counts: "Mögliche nicht kompensierbare Schutzgrenzen"
+  ,candidate_woek_ids: "Mögliche Bezüge zum WÖk-Referenzrahmen"
 };
 
 function labelFor(value) {
@@ -1036,7 +1124,15 @@ function markdownToArticle(markdown, sourceReferences = new Map(), options = {})
       if (Number.isInteger(commitment.directionPlaceholder)) html[commitment.directionPlaceholder] = renderedDirection;
       else html.push(renderedDirection);
     }
-    if (commitmentOpen) html.push("</section>");
+    if (commitmentOpen && commitment) {
+      const summarySource = commitment.measure || commitment.stateChange || "Wirkungsökonomischer Prüfeintrag";
+      const normalizedSummary = normalizePublicText(humanizeMachineTokens(summarySource));
+      const shortSummary = normalizedSummary.length > 170 ? `${normalizedSummary.slice(0, 167).trim()}…` : normalizedSummary;
+      if (Number.isInteger(commitment.summaryPlaceholder)) {
+        html[commitment.summaryPlaceholder] = `<summary>${escapeHtml(commitment.entryTitle)}: ${escapeHtml(shortSummary)}</summary>`;
+      }
+      html.push("</div></details>");
+    }
     commitmentOpen = false;
     commitment = null;
   };
@@ -1056,27 +1152,33 @@ function markdownToArticle(markdown, sourceReferences = new Map(), options = {})
       closeParagraph(); closeList();
       const sourceLevel = heading[1].length;
       const rawHeading = heading[2].trim().replace(/:$/, "");
+      const isCommitmentEntry = ((rootHeading === "material_commitments" && sourceLevel === 3) || (rootHeading === "commitment_assessments" && sourceLevel === 4) || (rootHeading === "Dokumentierte Zusagen" && [3, 4].includes(sourceLevel))) && /^Eintrag\s+\d+$/i.test(rawHeading);
       if (["material_commitments", "commitment_assessments", "Dokumentierte Zusagen"].includes(rawHeading)) {
         closeCommitment();
         rootHeading = rawHeading;
-      } else if (((rootHeading === "material_commitments" && sourceLevel === 3) || (rootHeading === "commitment_assessments" && sourceLevel === 4) || (rootHeading === "Dokumentierte Zusagen" && [3, 4].includes(sourceLevel))) && /^Eintrag\s+\d+$/i.test(rawHeading)) {
+      } else if (isCommitmentEntry) {
         closeCommitment();
         commitmentOpen = true;
-        commitment = { measure: "", stateChange: "", stateChanges: [], risks: [], gaps: [], normativeTargets: [], pendingNormativeTarget: null, reason: "", directionRationale: "", directionPhase: false, directionRendered: false, directionPlaceholder: null };
-        html.push('<section class="commitment-analysis">');
+        commitment = { entryTitle: rawHeading, measure: "", stateChange: "", stateChanges: [], risks: [], gaps: [], normativeTargets: [], pendingNormativeTarget: null, reason: "", directionRationale: "", directionPhase: false, directionRendered: false, directionPlaceholder: null, summaryPlaceholder: null };
+        html.push('<details class="dossier-record commitment-record">');
+        commitment.summaryPlaceholder = html.length;
+        html.push("");
+        html.push('<div class="dossier-record-body">');
+        commitment.directionPlaceholder = html.length;
+        html.push("");
       } else if (sourceLevel <= 3) {
         closeCommitment();
         rootHeading = rawHeading;
+      }
+      if (isCommitmentEntry) {
+        activeHeading = rawHeading;
+        continue;
       }
       // The document already has one visible h1. Preserve the source nesting
       // below it so the long record can be navigated and grouped correctly.
       const level = Math.min(Math.max(sourceLevel - 1, 2), 5);
       activeHeading = rawHeading;
       html.push(`<h${level}>${inline(labelFor(activeHeading), sourceReferences)}</h${level}>`);
-      if (commitmentOpen && commitment && commitment.directionPlaceholder === null && /^Eintrag\s+\d+$/i.test(rawHeading)) {
-        commitment.directionPlaceholder = html.length;
-        html.push("");
-      }
       continue;
     }
     const bullet = /^[-*]\s+(.+)$/.exec(line);

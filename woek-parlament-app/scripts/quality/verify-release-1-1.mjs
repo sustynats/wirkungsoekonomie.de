@@ -158,7 +158,7 @@ for (const [programmeKey, dossierName] of programmeDossiers) {
   if (fs.existsSync(dossierPath)) {
     const dossier = fs.readFileSync(dossierPath, "utf8");
     const expected = programmeIndex[programmeKey]?.commitments ?? 0;
-    const programmeRecords = (dossier.match(/class="commitment-analysis"/g) ?? []).length;
+    const programmeRecords = (dossier.match(/class="dossier-record commitment-record"/g) ?? []).length;
     const directionalCallouts = (dossier.match(/class="commitment-direction /g) ?? []).length;
     assert(programmeRecords === expected, `${programmeKey}: ${programmeRecords} statt ${expected} Programmpunkte in der Vollakte.`);
     assert(directionalCallouts === expected, `${programmeKey}: Nicht jeder Programmpunkt besitzt eine richtungsbezogene Kurzeinordnung.`);
@@ -187,6 +187,51 @@ const forbiddenPublicArtifacts = [
   /\baffected mpd dimensions\b/i,
   /\bnormative target areas\b/i,
   /\bsource ids?\b/i,
+  /\bsource bound multi component\b/i,
+  /\bverified reconstructed(?: multi component| limited| manual source)\b/i,
+  /\bmaterial assessable\b/i,
+  /\block in risk\b/i,
+  /\bunresolved programme unit\b/i,
+  /\bno material coalition match identified\b/i,
+  /\bnot included in fachliche relationship mapping\b/i,
+  /\b(?:incomplete )?source fragment review required\b/i,
+  /\bsource review required\b/i,
+  /\b(?:federal|eu) or multi level\b/i,
+  /\bopen unresolved multi link\b/i,
+  /\bno high materiality cluster identified by screen\b/i,
+  /\bscientific source\b/i,
+  /\bnot causally attributed\b/i,
+  /\bnot robustly established\b/i,
+  /\bverified in input package\b/i,
+  /\b(?:distribution )?model required\b/i,
+  /\bno national causal model\b/i,
+  /\bmaterial (?:democracy governance|equality|superior law compatibility) review\b/i,
+  /\bconditional portfolio object\b/i,
+  /\bpartial mechanism supported no behavioural attribution\b/i,
+  /\bex ante causal hypothesis with model inputs\b/i,
+  /\bframe existence supported causal behaviour unresolved\b/i,
+  /\banalytical mapping no score\b/i,
+  /\bpartial and mixed\b/i,
+  /\bofficial table available not machine ingested\b/i,
+  /\bevidence found candidate\b/i,
+  /\bopen effectiveness risk\b/i,
+  /\bopen or move to observation\b/i,
+  /\bquantifiable with data\b/i,
+  /\bnormative demand or proposal\b/i,
+  /\bdiagnosis or frame\b/i,
+  /\bsubstantive theme with changed design\b/i,
+  /\bpotential non compensable boundary review\b/i,
+  /\bsuperior law and competence review\b/i,
+  /\bfederal eu with land admin\b/i,
+  /\bOriginal-source reconstruction\b/i,
+  /\bSupplied commitment record\b/i,
+  /\bGeneric political objective\b/i,
+  /\bevidence open ist\b/i,
+  /\bsubstantive textual match\b/i,
+  /\bmanual review opportunity effect\b/i,
+  /\bofficial (?:installation|energy and building) data required\b/i,
+  /\bmicrodata required\b/i,
+  /\b(?:candidate boundaries|sdg plus direction targets|modeled direction counts|policy direction counts|legal review flag counts|target direction counts|non compensation candidate counts|candidate woek ids)\b/i,
   /\bdata gap\b/i,
   /\bcandidate only\b/i,
   /\bproposed pending reference reconciliation\b/i,
@@ -212,6 +257,7 @@ const forbiddenPublicArtifacts = [
   /vollständige JSON-Inhalte/i,
   /\b[a-z][a-z0-9]*(?:_[a-z0-9]+)+\b/,
   /\b[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\b/i,
+  /[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F\uFFFD]/,
 ];
 for (const file of dossierFiles) {
   const html = fs.readFileSync(path.join(dossierDir, file), "utf8");
@@ -224,6 +270,7 @@ for (const file of dossierFiles) {
   for (const pattern of forbiddenPublicArtifacts) {
     assert(!pattern.test(visibleText), `${file}: öffentliches technisches Artefakt gefunden (${pattern}).`);
   }
+  assert(!/<section class="commitment-analysis">/.test(html), `${file}: Programmpunkte werden noch als offene Langseite statt als aufklappbare Einträge ausgeliefert.`);
 }
 
 const publicPdf = path.join(ROOT, "public/downloads/fachanalysen/wirkungsoekonomische-analyse-sondervermoegen-infrastruktur-klimaneutralitaet.pdf");
