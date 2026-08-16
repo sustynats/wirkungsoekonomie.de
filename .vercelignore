@@ -1,0 +1,14 @@
+.git
+.github
+.vercel
+node_modules
+**/node_modules
+**/.local
+**/.temp
+**/tmp
+**/.next
+**/.env
+**/.env.*
+**/.supabase
+**/supabase/.temp
+*.log
