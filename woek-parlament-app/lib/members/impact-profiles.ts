@@ -3,6 +3,7 @@ import factionProfileData from "@/data/wirkungsprofile/faction-impact-profiles.j
 import memberProfileData from "@/data/wirkungsprofile/member-impact-profiles.json";
 import workingActData from "@/data/public-working-acts.json";
 import { normalizedMemberName } from "@/lib/bundestag/member-stammdaten";
+import type { PublicCalculationRequirement } from "@/data/cases";
 
 export const impactDimensions = ["Mensch", "Planet", "Demokratie"] as const;
 export const impactDirections = ["POSITIVE_POTENTIAL", "NEGATIVE_RISK", "NEUTRAL", "AMBIVALENT", "OPEN", "NOT_APPLICABLE"] as const;
@@ -127,13 +128,23 @@ export type DecisionImpactProfile = {
   decision_domain_profile: DecisionDomainProfile;
   corrected_impact_paths: Array<{
     path_id: string;
+    split_from?: string;
+    lever?: string;
     hypothesis: string;
     direction: ImpactDirection;
     affected_mpd_dimensions: ImpactDimension[];
+    affected_groups?: string[];
+    normative_target_areas?: string[];
+    prerequisites?: string[];
+    risks_and_side_effects?: string[];
+    change_lever_for_positive_net_impact?: string;
+    evidence_boundary?: string;
     evidence_status: string;
   }>;
   non_compensable_boundaries: string[];
 };
+
+type WorkingActIndexEntry = { slug: string; fachakteId?: string; publicWorkingAct?: { reviewDetail?: { calculations?: PublicCalculationRequirement[] } } };
 
 const memberProfiles = memberProfileData as MemberImpactProfile[];
 const factionProfiles = factionProfileData as FactionImpactProfile[];
@@ -144,9 +155,14 @@ const memberByNormalizedName = new Map(memberProfiles.map((profile) => [normaliz
 const factionSlugByName = new Map<string, string>([["CDU/CSU", "cdu-csu"], ["SPD", "spd"], ["AfD", "afd"], ["B90/Grüne", "gruene"], ["Die Linke", "linke"]]);
 const factionBySlug = new Map(factionProfiles.map((profile) => [factionSlugByName.get(profile.faction.name) ?? profile.faction.name.toLocaleLowerCase("de-DE"), profile]));
 const decisionByCaseId = new Map(decisionProfiles.map((profile) => [profile.case_id, profile]));
-const decisionSlugByCaseId = new Map(workingActData.flatMap((item) => {
+const indexedWorkingActs = workingActData as unknown as WorkingActIndexEntry[];
+const decisionSlugByCaseId = new Map(indexedWorkingActs.flatMap((item) => {
   const caseId = item.fachakteId?.replace(/^case-/, "");
   return caseId ? [[caseId, item.slug] as const] : [];
+}));
+const decisionCalculationsByCaseId = new Map(indexedWorkingActs.flatMap((item) => {
+  const caseId = item.fachakteId?.replace(/^case-/, "");
+  return caseId ? [[caseId, item.publicWorkingAct?.reviewDetail?.calculations ?? []] as const] : [];
 }));
 
 export function listMemberImpactProfiles() {
@@ -173,6 +189,10 @@ export function getDecisionImpactProfile(caseId: string) {
   return decisionByCaseId.get(caseId) ?? null;
 }
 
+export function getDecisionCalculations(caseId: string) {
+  return decisionCalculationsByCaseId.get(caseId) ?? [];
+}
+
 export function decisionHref(caseId: string) {
   const slug = decisionSlugByCaseId.get(caseId);
   return slug ? `/entscheidungen/${slug}` : `/fachakten/case-${caseId}`;
@@ -192,4 +212,12 @@ export function impactDirectionLabel(value: ImpactDirection) {
     OPEN: "Richtung offen",
     NOT_APPLICABLE: "kein materieller Bezug"
   } satisfies Record<ImpactDirection, string>)[value];
+}
+
+export function isImpactDimension(value: string | undefined): value is ImpactDimension {
+  return Boolean(value && impactDimensions.includes(value as ImpactDimension));
+}
+
+export function isImpactDirection(value: string | undefined): value is ImpactDirection {
+  return Boolean(value && impactDirections.includes(value as ImpactDirection));
 }

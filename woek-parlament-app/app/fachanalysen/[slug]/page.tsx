@@ -43,11 +43,40 @@ function humanize(value: string | undefined) {
     "MODEL REQUIRED": "Modell erforderlich",
     "DISTRIBUTION MODEL REQUIRED": "Verteilungsmodell erforderlich",
     "NO NATIONAL CAUSAL MODEL": "kein nationales Kausalmodell vorhanden",
-    "PARTIAL ONLY": "nur teilweise bestimmbar"
+    "PARTIAL ONLY": "nur teilweise bestimmbar",
+    "FIRST PUBLIC HEARING": "erste öffentliche Anhörung",
+    "SECOND PUBLIC HEARING": "zweite öffentliche Anhörung",
+    "BUNDESTAG DECISION": "Beschluss des Bundestages",
+    "PROMULGATED LAW": "Verkündung des Gesetzes",
+    "IMPLEMENTATION START": "Beginn der gestuften Umsetzung",
+    "OFFICIAL VERSION AVAILABLE": "amtliche Fassung verfügbar",
+    "GOVERNMENT DRAFT": "Regierungsentwurf",
+    "PARLIAMENTARY GOVERNMENT DRAFT": "Regierungsentwurf im parlamentarischen Verfahren",
+    "DELIBERATION": "parlamentarische Beratung",
+    "DELIBERATION ON CHANGED DESIGN": "Beratung der geänderten Ausgestaltung",
+    "COMMITTEE FINAL PARLIAMENTARY VERSION": "abschließende Ausschussfassung",
+    "DECIDED": "beschlossen",
+    "BUNDESRAT PROCEEDING COMPLETED": "Bundesratsverfahren abgeschlossen",
+    "PROMULGATED": "verkündet",
+    "IN FORCE": "in Kraft",
+    "GESETZ IN FORCE AND STAGED IMPLEMENTATION": "Gesetz in Kraft, Umsetzung erfolgt gestuft",
+    "PARTIAL AND MIXED": "teilweise beobachtbar und gegenläufig",
+    "NOT ROBUSTLY ESTABLISHED": "nicht belastbar kausal belegt",
+    "NOT YET ASSESSABLE": "noch nicht belastbar bewertbar"
   };
   if (labels[normalized]) return labels[normalized];
   const plain = value.replaceAll("_", " ").trim();
   return plain.charAt(0).toLocaleUpperCase("de-DE") + plain.slice(1).toLocaleLowerCase("de-DE");
+}
+
+function directionLabel(value: string | undefined) {
+  return ({
+    POSITIVE_POTENTIAL: "möglicherweise positiv",
+    NEGATIVE_RISK: "möglicherweise negativ",
+    AMBIVALENT: "gegenläufige Potenziale und Risiken",
+    NEUTRAL: "neutral",
+    OPEN: "Richtung noch offen"
+  } as Record<string, string>)[value ?? "OPEN"] ?? "Richtung noch offen";
 }
 
 function SourceLinks({ sources }: { sources: FachanalyseSource[] }) {
@@ -121,7 +150,7 @@ export default async function FachanalyseDetailPage({ params }: { params: Promis
           ]}
         />
 
-        {analysis.referenceFields ? <ReferenceFieldTiles mpd={analysis.referenceFields.mpd} sdgAndPlus={analysis.referenceFields.sdgAndPlus} /> : null}
+        {analysis.referenceFields ? <ReferenceFieldTiles mpd={analysis.referenceFields.mpd} sdgAndPlus={analysis.referenceFields.sdgAndPlus} overallAssessment={analysis.retrospective ? `Beobachtete Entwicklung: ${humanize(analysis.retrospective.observed_state_change)}. Kausale Zurechnung: ${humanize(analysis.retrospective.causal_attribution)}. Netto-Wirkung: ${humanize(analysis.retrospective.net_impact)}.` : undefined} assessments={analysis.referenceFields.assessments} /> : null}
 
         <section className="decision-section" aria-labelledby="observations-title">
           <p className="eyebrow">Was ist beobachtbar?</p><h2 id="observations-title">Fünf Befunde mit ihren Grenzen</h2>
@@ -145,11 +174,11 @@ export default async function FachanalyseDetailPage({ params }: { params: Promis
         </section>
 
         <section className="decision-section" aria-labelledby="timeline-title"><p className="eyebrow">Zeitachse</p><h2 id="timeline-title">Was wann geschah</h2>
-          <ol className="analysis-timeline">{analysis.timeline?.map((entry) => <li key={`${entry.date}-${entry.label}`}><time dateTime={entry.date}>{formatDate(entry.date)}</time><div><h3>{humanize(entry.label)}</h3><p>{entry.summary}</p><details><summary>Änderung und Wirkungspotenzial einordnen</summary><p><strong>Änderung:</strong> {entry.change}</p><p><strong>Wirkungspotenzial:</strong> {entry.potential}</p><SourceLinks sources={entry.sources} /></details></div></li>)}</ol>
+          <ol className="analysis-timeline">{analysis.timeline?.map((entry) => <li key={`${entry.date}-${entry.label}`}><time dateTime={entry.date}>{formatDate(entry.date)}</time><div><h3>{humanize(entry.label)}</h3><p>{entry.summary}</p><details><summary>Änderung und Wirkungspotenzial einordnen</summary><p><strong>Änderung:</strong> {entry.change}</p><p><strong>Richtung:</strong> <span className={`direction-label direction-label--${(entry.direction ?? "OPEN").toLocaleLowerCase("en-US").replaceAll("_", "-")}`}>{directionLabel(entry.direction)}</span></p><p><strong>Ausführliche Begründung:</strong> {entry.potential}</p>{entry.evidenceBoundary && <p><strong>Was diese Einordnung noch nicht belegt:</strong> {entry.evidenceBoundary}</p>}<SourceLinks sources={entry.sources} /></details></div></li>)}</ol>
         </section>
 
         <section className="decision-section" aria-labelledby="paths-title"><p className="eyebrow">Wirkungslogik</p><h2 id="paths-title">Was hätte sich verändern können?</h2>
-          <div className="analysis-detail-list">{analysis.impactPaths?.map((path) => <details key={path.lever}><summary><PathIcon aria-hidden="true" /><span>{path.lever}</span><small>{humanize(path.evidenceStatus)}</small></summary><p>{path.hypothesis}</p><div className="two-column-list"><div><strong>Voraussetzungen</strong><ul>{path.prerequisites.map((item) => <li key={item}>{item}</li>)}</ul></div><div><strong>Risiken</strong><ul>{path.risks.map((item) => <li key={item}>{item}</li>)}</ul></div></div><SourceLinks sources={path.sources} /></details>)}</div>
+          <div className="analysis-detail-list">{analysis.impactPaths?.map((path) => <details key={path.lever}><summary><PathIcon aria-hidden="true" /><span>{path.lever}</span><small>{directionLabel(path.direction)} · {humanize(path.evidenceStatus)}</small></summary><p><strong>Richtung:</strong> <span className={`direction-label direction-label--${(path.direction ?? "OPEN").toLocaleLowerCase("en-US").replaceAll("_", "-")}`}>{directionLabel(path.direction)}</span></p><p><strong>Ausführliche Begründung des Wirkmechanismus:</strong> {path.hypothesis}</p><div className="two-column-list"><div><strong>Voraussetzungen für dieses Potenzial</strong><ul>{path.prerequisites.map((item) => <li key={item}>{item}</li>)}</ul></div><div><strong>Risiken und mögliche Gegenwirkungen</strong><ul>{path.risks.map((item) => <li key={item}>{item}</li>)}</ul></div></div>{path.evidenceBoundary && <p><strong>Evidenzgrenze:</strong> {path.evidenceBoundary}</p>}<SourceLinks sources={path.sources} /></details>)}</div>
         </section>
 
         <section className="decision-section" aria-labelledby="media-title"><p className="eyebrow">Medien und Wahrnehmung</p><h2 id="media-title">Dokumentierte Frames, keine Motiverzählung</h2><p>Die Analyse beschreibt mögliche Resonanzräume. Sie schreibt keine individuellen Motive zu und leitet aus einem Frame keine nationale Verhaltenswirkung ab.</p>

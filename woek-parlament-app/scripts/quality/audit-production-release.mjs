@@ -77,6 +77,7 @@ try {
 for (const [pathname, sentinels] of [
   ["/mandat-und-praxis", ["1.593", "Wahlprogramme", "Koalitionsvertrag"]],
   ["/laender/sachsen-anhalt", ["2.921 Zusageeinheiten", "28 Ziele im Referenzregister", "Wahlprogramme"]],
+  ["/fachakten/sachsen-anhalt-afd", ["überwiegend negative Wirkungspotenziale", "Ausführliche Begründung", "Wirkungsrichtung noch offen – nicht neutral"]],
   ["/fachanalysen/gebaeudeenergiegesetz-medienwirkung", ["Vollständige Publikationsquelle", "Quellen mit Einordnung"]],
   ["/fachanalysen/sondervermoegen-infrastruktur-klimaneutralitaet", ["Quellen mit Einordnung"]],
   ["/abgeordnete", ["Wirkungsprofile", "Menschen nicht bewerten"]],
@@ -90,8 +91,11 @@ for (const [pathname, sentinels] of [
 }
 
 const fullGeg = await load("/fachakten/dossiers/gebaeudeenergiegesetz-medienwirkung.html");
-for (const sentinel of ["GEG-SRC-20", "fachlich complete with causality limits", "ready for public release with evidence boundaries"]) {
+for (const sentinel of ["Die wirkungsökonomische Kernfrage", "Kommunikation als Wirkpfad, nicht als Sündenbock", "Beobachtete Entwicklung erst mit Gegenfaktum"]) {
   if (!fullGeg.body.toLowerCase().includes(sentinel.toLowerCase())) fail(`Complete GEG dossier is missing: ${sentinel}`);
+}
+for (const forbidden of ["GEG-SRC-", "Promulgated Law", "Implementation Start", "source ids", "/Users/"]) {
+  if (fullGeg.body.includes(forbidden)) fail(`Complete GEG dossier exposes a technical or private artifact: ${forbidden}`);
 }
 
 if (failures.length) process.exitCode = 1;

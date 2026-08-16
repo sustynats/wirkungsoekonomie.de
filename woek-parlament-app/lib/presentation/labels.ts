@@ -65,7 +65,13 @@ const systemValueLabels: Record<string, string> = {
   DECISION_CONFIRMED: "Entscheidung bestätigt",
   DECISION_MOSTLY_CONFIRMED: "Entscheidung überwiegend bestätigt",
   JUSTIFIABLE_AT_TIME_NOT_CONFIRMED_EX_POST: "damals vertretbar, heute nicht bestätigt",
-  ALTERNATIVE_PREFERABLE: "Alternative vorzugswürdig"
+  ALTERNATIVE_PREFERABLE: "Alternative vorzugswürdig",
+  ADOPTED: "angenommen",
+  REJECTED: "abgelehnt",
+  ACCEPTED: "angenommen",
+  PENDING: "noch nicht entschieden",
+  NOT_ROLL_CALL: "keine namentliche Abstimmung",
+  NOT_ROLL_CALL_FOR_THIS_EXACT_CASE: "für diesen konkreten Vorgang keine namentliche Abstimmung"
 };
 
 export function caseKindLabel(value: CaseKind) {

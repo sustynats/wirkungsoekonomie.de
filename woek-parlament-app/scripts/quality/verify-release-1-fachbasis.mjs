@@ -96,8 +96,11 @@ const gegDossier = path.join(dossierRoot, "gebaeudeenergiegesetz-medienwirkung.h
 if (!fs.existsSync(gegDossier)) fail("Complete GEG publication source is missing.");
 else {
   const gegHtml = fs.readFileSync(gegDossier, "utf8");
-  for (const sentinel of ["GEG-SRC-20", "fachlich complete with causality limits", "ready for public release with evidence boundaries"]) {
+  for (const sentinel of ["Die wirkungsökonomische Kernfrage", "Kommunikation als Wirkpfad, nicht als Sündenbock", "Beobachtete Entwicklung erst mit Gegenfaktum"]) {
     if (!gegHtml.toLowerCase().includes(sentinel.toLowerCase())) fail(`Complete GEG publication source is missing sentinel: ${sentinel}`);
+  }
+  for (const forbidden of ["GEG-SRC-", "Promulgated Law", "Implementation Start", "source ids", "/Users/"]) {
+    if (gegHtml.includes(forbidden)) fail(`Complete GEG publication source exposes a technical or private artifact: ${forbidden}`);
   }
 }
 

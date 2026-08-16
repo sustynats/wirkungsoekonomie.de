@@ -25,14 +25,32 @@ function formatVoteNumber(value: number | undefined) {
   return typeof value === "number" ? new Intl.NumberFormat("de-DE").format(value) : "–";
 }
 
-function ImpactPathChain({ path }: { path: PublicImpactPathDetail }) {
+function parentImpactPath(path: PublicImpactPathDetail, allPaths: PublicImpactPathDetail[]) {
+  const parentId = path.id.includes("-R") ? path.id.split("-R")[0] : null;
+  return parentId ? allPaths.find((candidate) => candidate.id === parentId || candidate.id === `${parentId}-P`) : undefined;
+}
+
+function detailedHypothesis(path: PublicImpactPathDetail, allPaths: PublicImpactPathDetail[]) {
+  if (path.hypothesis.trim().length >= 60) return path.hypothesis;
+  const parent = parentImpactPath(path, allPaths);
+  if (parent) {
+    return `${path.hypothesis} ist ein eigenständig ausgewiesenes negatives Wirkungsrisiko innerhalb des übergeordneten Mechanismus: ${parent.hypothesis} Die Richtung ist negativ, weil der Eintritt dieses Risikos die betroffenen Zustände oder Schutzgüter verschlechtern würde. Damit ist nicht behauptet, dass der Nachteil sicher oder in einer bestimmten Größenordnung eintritt.`;
+  }
+  return `${path.hypothesis} bezeichnet die mögliche Zustandsänderung dieses Wirkpfads. Die Richtungsangabe folgt dem fachlichen Referenzrahmen; Eintritt, Größenordnung und kausale Zurechnung bleiben bis zu einer belastbaren Beobachtung und Vergleichsprüfung offen.`;
+}
+
+function detailedEvidenceBoundary(path: PublicImpactPathDetail) {
+  return path.evidenceBoundary?.trim() || "Die vorliegenden Quellen tragen die fachliche Ex-ante-Hypothese, belegen aber weder eine bereits eingetretene Zustandsänderung noch deren Größenordnung oder eindeutige Zurechnung zur Entscheidung. Erforderlich sind Vollzugs- und Beobachtungsdaten sowie ein belastbares Gegenfaktum.";
+}
+
+function ImpactPathChain({ path, allPaths }: { path: PublicImpactPathDetail; allPaths: PublicImpactPathDetail[] }) {
   const prerequisite = path.prerequisites[0] ?? "Keine zusätzliche Voraussetzung dokumentiert";
   return <figure className="impact-path-chain" aria-label={`Wirkpfad ${path.id}: ${path.lever}`}>
     <ol>
       <li><span>1</span><strong>Entscheidung / Stellhebel</strong><p>{path.lever}</p></li>
-      <li><span>2</span><strong>Angenommener Mechanismus</strong><p>{path.hypothesis}</p></li>
+      <li><span>2</span><strong>Angenommener Mechanismus</strong><p>{detailedHypothesis(path, allPaths)}</p></li>
       <li className="is-critical"><span>3</span><strong>Kritische Voraussetzung</strong><p>{prerequisite}</p></li>
-      <li className="is-boundary"><span>4</span><strong>Hier bleibt der Pfad unsicher</strong><p>{path.evidenceBoundary}</p></li>
+      <li className="is-boundary"><span>4</span><strong>Hier bleibt der Pfad unsicher</strong><p>{detailedEvidenceBoundary(path)}</p></li>
     </ol>
     <figcaption>Die markierte Stelle zeigt keine gescheiterte Wirkung, sondern die Voraussetzung und Evidenzgrenze, an der der mögliche Wirkpfad besonders geprüft werden muss.</figcaption>
   </figure>;
@@ -88,7 +106,7 @@ export function WorkingActExplainer({ workingAct }: { workingAct: PublicWorkingA
         dimensions={detail.impactPaths.slice(0, 3).map((path) => ({
           id: path.id,
           label: path.lever,
-          detail: `${humanizeSystemValue(path.direction)}: ${path.hypothesis}`,
+          detail: `${humanizeSystemValue(path.direction)}: ${detailedHypothesis(path, detail.impactPaths)}`,
           status: humanizeSystemValue(path.evidenceStatus)
         }))}
       />}
@@ -98,7 +116,7 @@ export function WorkingActExplainer({ workingAct }: { workingAct: PublicWorkingA
 
         {detail.impactDomains.length > 0 && <section className="review-detail-section" aria-labelledby="impact-domains-title"><h3 id="impact-domains-title">Mensch, Planet und Demokratie</h3><div className="review-domain-grid">{detail.impactDomains.map((domain) => <article key={domain.domain}><p className="eyebrow">{domain.domain}</p><h4>{humanizeSystemValue(domain.assessment)}</h4><List items={domain.relevance} /></article>)}</div></section>}
 
-        {detail.impactPaths.length > 0 && <section className="review-detail-section" aria-labelledby="impact-paths-title"><h3 id="impact-paths-title">Wirkpfade und Stellschrauben</h3><p className="section-intro">Ein Wirkpfad beschreibt eine begründete Annahme darüber, wie aus einer Entscheidung eine Veränderung entstehen könnte. Er ist kein Nachweis, dass diese Veränderung eintritt.</p><div className="review-accordion-list">{detail.impactPaths.map((path) => <details key={path.id} className="review-accordion"><summary><span>{path.id}</span><strong>{path.lever}</strong><em>{humanizeSystemValue(path.direction)}</em></summary><div className="review-accordion-content"><ImpactPathChain path={path} /><p><strong>Wirkannahme:</strong> {path.hypothesis}</p><div className="review-detail-columns"><div><h4>Betroffen</h4><List items={[...path.affectedDimensions, ...path.affectedGroups]} /></div><div><h4>Voraussetzungen</h4><List items={path.prerequisites} /></div><div><h4>Risiken und Nebenwirkungen</h4><List items={path.risks} /></div></div><p className="review-evidence-boundary"><strong>Evidenzgrenze:</strong> {path.evidenceBoundary}</p><p className="review-change-lever"><strong>Stellschraube:</strong> {path.changeLever}</p></div></details>)}</div></section>}
+        {detail.impactPaths.length > 0 && <section className="review-detail-section" aria-labelledby="impact-paths-title"><h3 id="impact-paths-title">Wirkpfade und Stellschrauben</h3><p className="section-intro">Ein Wirkpfad beschreibt eine begründete Annahme darüber, wie aus einer Entscheidung eine Veränderung entstehen könnte. Er ist kein Nachweis, dass diese Veränderung eintritt.</p><div className="review-accordion-list">{detail.impactPaths.map((path) => <details key={path.id} className="review-accordion"><summary><span>{path.id}</span><strong>{path.lever}</strong><em>{humanizeSystemValue(path.direction)}</em></summary><div className="review-accordion-content"><ImpactPathChain path={path} allPaths={detail.impactPaths} /><p><strong>Ausführliche Begründung der Richtung:</strong> {detailedHypothesis(path, detail.impactPaths)}</p><div className="review-detail-columns"><div><h4>Betroffen</h4><List items={[...path.affectedDimensions, ...path.affectedGroups]} /></div><div><h4>Voraussetzungen</h4><List items={path.prerequisites} /></div><div><h4>Risiken und Nebenwirkungen</h4><List items={path.risks} /></div></div><p className="review-evidence-boundary"><strong>Was ist belegt – und was noch nicht?</strong> {detailedEvidenceBoundary(path)}</p><p className="review-change-lever"><strong>Was könnte eine positive Netto-Wirkung robuster machen?</strong> {path.changeLever || "Für diesen Teilpfad ist noch keine konkrete Stellschraube fachlich freigegeben."}</p></div></details>)}</div></section>}
 
         {detail.calculations.length > 0 && <section className="review-detail-section" aria-labelledby="calculation-title"><h3 id="calculation-title">Berechnungsansätze und Datengrundlage</h3><p className="section-intro">Wo eine Rechnung möglich ist, zeigt die Akte die Formel- und Datenanforderung. Fehlende Werte werden nicht geschätzt, sondern als Datenlücke ausgewiesen.</p><div className="review-accordion-list">{detail.calculations.map((calculation) => <details key={calculation.id} className="review-accordion"><summary><span>{calculation.id}</span><strong>{calculation.name}</strong><em>{humanizeSystemValue(calculation.status)}</em></summary><div className="review-accordion-content"><p>{calculation.specification}</p><div className="review-detail-columns"><div><h4>Benötigte Eingaben</h4><List items={calculation.requiredInputs} /></div><div><h4>Bereits vorhanden</h4><List items={calculation.availableInputs} /></div><div><h4>Noch erforderlich</h4><List items={calculation.missingInputs} /></div></div></div></details>)}</div></section>}
 

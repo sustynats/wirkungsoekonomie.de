@@ -4,6 +4,7 @@ export type PortalTermKey =
   | "wirkungsrisiko"
   | "wirkmechanismus"
   | "wirkpfad"
+  | "materieller_wirkpfad"
   | "wirkungsbewertung"
   | "gegenfaktum"
   | "evidenzgrenze"
@@ -50,6 +51,10 @@ export const portalTerminology: Record<PortalTermKey, PortalTerm> = {
   wirkpfad: {
     label: "Wirkpfad",
     description: "Eine versionierte, evidenzsensible Darstellung, wie aus einem Auslöser über Mechanismen und Bedingungen mögliche oder beobachtete Veränderungen und Rückkopplungen entstehen können. Sie ist kein Kausalbeweis."
+  },
+  materieller_wirkpfad: {
+    label: "Materieller Wirkpfad",
+    description: "Ein möglicher Veränderungsweg, der für die Entscheidung inhaltlich wesentlich ist. Er beschreibt eine begründete Wirkannahme – nicht den Beweis, dass die Veränderung bereits eingetreten ist."
   },
   wirkungsbewertung: {
     label: "Wirkungsbewertung",

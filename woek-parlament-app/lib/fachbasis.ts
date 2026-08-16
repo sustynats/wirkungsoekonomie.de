@@ -79,6 +79,7 @@ type ReviewShape = {
   riskHighlights?: string[];
   conditions?: string[];
   communicationNote?: string;
+  directionalHighlights?: Array<{ direction: "POSITIVE" | "NEGATIVE" | "AMBIVALENT" | "OPEN"; title: string; rationale: string }>;
 };
 
 export async function readProgrammeSummary(entry: FachakteDescriptor) {
@@ -98,6 +99,7 @@ export async function readProgrammeSummary(entry: FachakteDescriptor) {
     potentialHighlights: review.potentialHighlights ?? [],
     riskHighlights: review.riskHighlights ?? [],
     conditions: review.conditions ?? [],
-    communicationNote: review.communicationNote
+    communicationNote: review.communicationNote,
+    directionalHighlights: review.directionalHighlights ?? []
   };
 }

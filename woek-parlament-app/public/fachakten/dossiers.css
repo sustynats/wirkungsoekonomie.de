@@ -87,8 +87,23 @@ main { width: min(1280px, calc(100% - 2rem)); margin: 0 auto; padding: clamp(1.7
 #dossier-content > h2 { margin: 3rem -2rem 1rem; padding: 1rem 2rem; border-left: 5px solid var(--gold); background: var(--gruen-hell); }
 #dossier-content > h2:first-of-type { margin-top: 0; }
 #dossier-content p, #dossier-content li { max-width: 76ch; }
+#dossier-content .source-reference { display: grid; gap: .12rem; margin: .25rem 0; }
+#dossier-content .source-reference strong { color: var(--buehne); line-height: 1.35; }
+#dossier-content .source-reference small { color: var(--weich); }
+#dossier-content .source-reference a { width: fit-content; min-height: 44px; display: inline-flex; align-items: center; font-weight: 750; }
+#dossier-content .commitment-analysis { max-width: 100%; margin: 1.5rem 0 2rem; padding: clamp(1rem, 2vw, 1.6rem); border: 1px solid var(--linie); border-top: 5px solid var(--buehne); background: #fff; box-shadow: 0 .5rem 1.5rem rgb(18 37 56 / 6%); }
+#dossier-content .commitment-analysis > h2:first-child { margin-top: 0; }
+#dossier-content .commitment-direction { max-width: 100%; margin: 1.25rem 0; padding: 1rem 1.15rem; border-left: 6px solid #667085; background: #eef1f4; }
+#dossier-content .commitment-direction p { max-width: 78ch; }
+#dossier-content .commitment-direction-label { margin-top: 0; font-weight: 850; }
+#dossier-content .commitment-direction--positive { border-left-color: var(--gruen); background: #e8f3ef; }
+#dossier-content .commitment-direction--negative { border-left-color: var(--rot); background: #f6e9e7; }
+#dossier-content .commitment-direction--ambivalent { border-left-color: var(--gold); background: var(--gold-hell); }
+#dossier-content .commitment-direction--open { border-left-color: #667085; background: #eef1f4; }
 #dossier-content details.dossier-record { max-width: 100%; margin: .7rem 0; overflow: hidden; border: 1px solid var(--linie); background: #fff; }
 #dossier-content details.dossier-record[open] { border-top: 3px solid var(--gruen); }
+#dossier-content details.commitment-record { border-top: 5px solid var(--buehne); box-shadow: 0 .5rem 1.5rem rgb(18 37 56 / 6%); }
+#dossier-content details.commitment-record[open] { border-top-color: var(--gold); }
 #dossier-content details.dossier-record > summary { display: flex; min-width: 0; min-height: 50px; align-items: center; justify-content: space-between; gap: .65rem; padding: .75rem 1rem; overflow-wrap: anywhere; color: var(--buehne); cursor: pointer; font-weight: 800; list-style: none; }
 #dossier-content details.dossier-record > summary::-webkit-details-marker { display: none; }
 #dossier-content details.dossier-record > summary::after { content: "+"; display: grid; width: 1.7rem; height: 1.7rem; flex: 0 0 auto; place-items: center; border-radius: 50%; background: var(--gruen-hell); color: var(--gruen); }

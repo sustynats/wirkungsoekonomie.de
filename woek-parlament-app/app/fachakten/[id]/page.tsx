@@ -43,6 +43,14 @@ export default async function FachaktePage({ params }: { params: Promise<{ id: s
           <ul>{summary.conditions.map((item) => <li key={item}>{item}</li>)}</ul>
         </article>
       </div>
+      {summary.directionalHighlights.length > 0 && <section className="programme-direction-findings" aria-labelledby="programme-direction-title">
+        <div><p className="eyebrow">Richtung der Wirkungspotenziale</p><h3 id="programme-direction-title">Was könnte sich in welche Richtung verändern – und warum?</h3></div>
+        <div className="programme-direction-list">{summary.directionalHighlights.map((finding) => <article className={`programme-direction programme-direction--${finding.direction.toLowerCase()}`} key={`${finding.direction}-${finding.title}`}>
+          <p className="programme-direction-label">{finding.direction === "POSITIVE" ? "Mögliches positives Wirkungspotenzial" : finding.direction === "NEGATIVE" ? "Mögliches negatives Wirkungspotenzial" : finding.direction === "AMBIVALENT" ? "Gegenläufige Wirkungspotenziale" : "Wirkungsrichtung noch offen – nicht neutral"}</p>
+          <h4>{finding.title}</h4>
+          <p><strong>Ausführliche Begründung:</strong> {finding.rationale}</p>
+        </article>)}</div>
+      </section>}
       {summary.communicationNote && <aside className="programme-communication-note"><strong>Kommunikative Vorwirkung:</strong> {summary.communicationNote}</aside>}
       <p className="programme-result-boundary"><strong>Einordnung:</strong> Das ist eine Prüfung des Wirkungspotenzials vor einer politischen Entscheidung. Sie bewertet weder Menschen noch Parteien und behauptet keine bereits eingetretene Wirkung.</p>
     </section>}

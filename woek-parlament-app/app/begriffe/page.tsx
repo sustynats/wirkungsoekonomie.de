@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { portalTerminology, type PortalTermKey } from "@/lib/presentation/terminology";
 
-const terms: PortalTermKey[] = ["wirkung", "wirkungspotenzial", "wirkungsrisiko", "wirkmechanismus", "wirkpfad", "wirkungsbewertung", "gegenfaktum", "evidenzgrenze", "zurechnung", "wirkungsgrenze", "nichtkompensation", "rueckkopplung", "wirkungslenkung", "zusaetzlichkeit", "wirkungsradar"];
+const terms: PortalTermKey[] = ["wirkung", "wirkungspotenzial", "wirkungsrisiko", "wirkmechanismus", "wirkpfad", "materieller_wirkpfad", "wirkungsbewertung", "gegenfaktum", "evidenzgrenze", "zurechnung", "wirkungsgrenze", "nichtkompensation", "rueckkopplung", "wirkungslenkung", "zusaetzlichkeit", "wirkungsradar"];
 
 export const metadata = {
   title: "Begriffe verständlich erklärt",
@@ -16,7 +16,7 @@ export default function GlossaryPage() {
       <p className="lead">Diese Begriffe helfen beim Lesen eines Wirkungschecks. Sie ersetzen keine Bewertung – sie machen sichtbar, was genau geprüft wird.</p>
     </header>
     <dl className="glossary-page-list">
-      {terms.map((termKey) => <div key={termKey}><dt>{portalTerminology[termKey].label}</dt><dd>{portalTerminology[termKey].description}</dd></div>)}
+      {terms.map((termKey) => <div key={termKey} id={termKey}><dt>{portalTerminology[termKey].label}</dt><dd>{portalTerminology[termKey].description}</dd></div>)}
     </dl>
     <section className="notice"><strong>Der Zusammenhang ist wichtig.</strong><p>Ein Wirkungscheck trennt Sachverhalt, Wirkungspotenzial, Wirkungsrisiko, beobachtete Wirkung und normative Einordnung. So wird aus einem Zielversprechen keine voreilige Wirkungsaussage.</p></section>
     <p className="page-return"><Link href="/methodik">← Zum Prüfstandard</Link></p>

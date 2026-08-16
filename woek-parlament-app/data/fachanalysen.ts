@@ -32,12 +32,12 @@ export type Fachanalyse = {
   referenceStatusLabel?: string;
   exAnte?: { cutoff: string; summary: string; sources: FachanalyseSource[] };
   exPost?: { cutoff: string; summary: string; sources: FachanalyseSource[] };
-  timeline?: Array<{ date: string; label: string; status: string; summary: string; change: string; potential: string; sources: FachanalyseSource[] }>;
+  timeline?: Array<{ date: string; label: string; status: string; summary: string; change: string; potential: string; direction?: "POSITIVE_POTENTIAL" | "NEGATIVE_RISK" | "AMBIVALENT" | "NEUTRAL" | "OPEN"; evidenceBoundary?: string; sources: FachanalyseSource[] }>;
   comparison?: Array<{ dimension: string; draft: string; final: string; sources: FachanalyseSource[] }>;
   evidenceMap?: Record<string, string[]>;
   mediaPatterns?: Array<{ label: string; period: string; potentialPath: string; evidenceStatus: string; alternativeExplanation: string; causalStatus: string; affectedGroups: string[]; sources: FachanalyseSource[] }>;
-  referenceFields?: { mpd: string[]; sdgAndPlus: string[] };
-  impactPaths?: Array<{ lever: string; hypothesis: string; prerequisites: string[]; risks: string[]; evidenceStatus: string; sources: FachanalyseSource[] }>;
+  referenceFields?: { mpd: string[]; sdgAndPlus: string[]; assessments?: Record<string, { direction: "POSITIVE_POTENTIAL" | "NEGATIVE_RISK" | "AMBIVALENT" | "NEUTRAL" | "OPEN"; rationale?: string; evidenceStatus?: string }> };
+  impactPaths?: Array<{ pathId?: string; lever: string; hypothesis: string; prerequisites: string[]; risks: string[]; direction?: "POSITIVE_POTENTIAL" | "NEGATIVE_RISK" | "AMBIVALENT" | "NEUTRAL" | "OPEN"; evidenceStatus: string; evidenceBoundary?: string; sources: FachanalyseSource[] }>;
   observedOutcomes?: Array<{ outcome_id?: string; classification?: string; observation?: string; value_series?: Array<{ year: number; value: number; unit: string }>; causal_attribution?: string; causal_limit?: string; sources: FachanalyseSource[] }>;
   counterfactuals?: Array<{ scenario_id?: string; status?: string; description?: string; required_inputs?: string[]; not_observed_reason?: string; sources: FachanalyseSource[] }>;
   calculationRequirements?: Array<{ calculation_id?: string; question?: string; baseline?: string; observation?: string; counterfactual?: string; unit?: string; attribution_basis?: string; uncertainty?: string; data_quality?: string; causal_quality?: string; model_quality?: string }>;

@@ -29,6 +29,25 @@
     toc.append(item);
   });
 
+  article.querySelectorAll(":scope > section.commitment-analysis").forEach((section) => {
+    const heading = section.querySelector(":scope > h2:first-child");
+    if (!(heading instanceof HTMLHeadingElement)) return;
+    const details = document.createElement("details");
+    details.className = "dossier-record commitment-record";
+    const summary = document.createElement("summary");
+    const body = document.createElement("div");
+    body.className = "dossier-record-body";
+    const measure = [...section.querySelectorAll("p")].find((paragraph) => /Vorgeschlagene Maßnahme|Programmpunkt/i.test(paragraph.querySelector("strong")?.textContent || ""));
+    const description = measure?.textContent?.replace(/^[^:]+:\s*/, "").trim();
+    const shortDescription = description && description.length > 170 ? `${description.slice(0, 167).trim()}…` : description;
+    summary.textContent = shortDescription ? `${heading.textContent}: ${shortDescription}` : (heading.textContent || "Programmpunkt im Wirkungscheck");
+    [...section.childNodes].forEach((node) => {
+      if (node !== heading) body.append(node);
+    });
+    details.append(summary, body);
+    section.replaceWith(details);
+  });
+
   const entryHeadings = [...article.querySelectorAll(":scope > h3")]
     .filter((heading) => /^Eintrag\s+\d+$/i.test((heading.textContent || "").trim()));
 

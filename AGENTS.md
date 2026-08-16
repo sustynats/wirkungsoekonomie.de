@@ -52,6 +52,20 @@ Diese Datei ist die dauerhafte Arbeitsanweisung fuer Codex-Aufgaben in diesem Re
 - Journalistische Quellen koennen Medienresonanz oder oeffentliche Kommunikation belegen, ersetzen aber weder Originalprogramm, amtliche Entscheidung noch Fachquelle.
 - Oeffentliche Vollakten behalten Fundstellen, Aussagegrenzen und zeitlichen Wissensstand nachvollziehbar bei.
 
+## Gate 17 – Vollstaendige Richtungsaussage
+
+- Kein oeffentliches Wirkungspotenzial ohne expliziten Richtungsstatus, Bezugsziel oder Zustandsbezug, Wirkmechanismus, Begruendung und Evidenzgrenze.
+- Zulaessige Richtungen sind `POSITIVE_POTENTIAL`, `NEGATIVE_RISK`, `NEUTRAL`, `AMBIVALENT` und `OPEN`. `OPEN` wird sichtbar als fachlich offene Richtung ausgegeben und nie wie eine fertige Bewertung gestaltet.
+- Ein blosser SDG-, SDG+- oder Schutzgueterbezug beantwortet nur die Relevanzfrage. Jede Zielzeile zeigt zusaetzlich die Richtung oder transparent, dass die zielgenaue Richtung noch nicht freigegeben ist.
+- Diese Regel gilt fuer Entscheidungen, Programme, Fachanalysen, historische Rueckblicke sowie Fraktions- und Abgeordnetenprofile. Ein Release-Test prueft die strukturierten Potenzial- und Wirkpfadobjekte vollstaendig.
+- Die Richtungsbegruendung nennt Ausgangszustand oder Vergleich, Wirkmechanismus, Betroffene oder Wirkungsraum, Zielrichtung, wesentliche Bedingungen und Evidenzgrenze. Tautologien und allgemeine Floskeln gelten als fehlende Begruendung.
+
+## Gate 18 – Oeffentliche Sprach- und Kennungsintegritaet
+
+- Interne Enum-Werte, englische Systemlabels, `snake_case`, UUIDs, Source-IDs, lokale Pfade und interne Feldnamen duerfen nicht im sichtbaren oeffentlichen Inhalt erscheinen.
+- Interne Quellenkennungen werden vor der Ausgabe in Quellentitel, Institution und erreichbare Quellendetailseite aufgeloest.
+- Der Build scheitert, wenn bekannte technische Artefakte in Fachakten, Fachanalysen, Entscheidungs- oder Profilseiten sichtbar bleiben.
+
 ## Inhaltliche Leitlinie Wirkungsökonomie
 
 - Wirkung ist neutral und relational.
@@ -70,7 +84,7 @@ Diese Datei ist die dauerhafte Arbeitsanweisung fuer Codex-Aufgaben in diesem Re
 - Modellhafte Inhalte bleiben als Modell, Demo, Entwurf oder Arbeitspapier gekennzeichnet.
 - Seiten sollen auch fuer Menschen verstaendlich sein, die die Wirkungsökonomie noch nie gehoert haben.
 
-## Gate 17 – Profilintegritaet
+## Gate 19 – Profilintegritaet
 
 - Abgeordneten-Wirkungsprofile verwenden ausschliesslich amtliche Individualstimmen aus namentlichen Abstimmungen. Fraktionspositionen werden niemals einzelnen Mitgliedern zugerechnet.
 - Fraktions-Wirkungsprofile duerfen dokumentierte kollektive Positionen verwenden; Mehrheitspositionen werden nicht als Einstimmigkeit dargestellt.

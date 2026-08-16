@@ -47,6 +47,37 @@ function publicReferenceFields(values: string[]) {
   return [...new Set(mapped)];
 }
 
+type PublicDirection = "POSITIVE_POTENTIAL" | "NEGATIVE_RISK" | "AMBIVALENT" | "NEUTRAL" | "OPEN";
+
+// Fachlich nachvollziehbare, source-bezogene Zuordnung. Keine Stichwortheuristik:
+// Jede neue Fassung und jeder neue Wirkpfad muss hier bewusst geprüft werden.
+const timelineDirectionByVersion: Record<string, PublicDirection> = {
+  REFERENTENENTWURF: "AMBIVALENT",
+  KABINETTSBESCHLUSS: "AMBIVALENT",
+  "BT-DRS-20-6875": "OPEN",
+  FIRST_PUBLIC_HEARING: "POSITIVE_POTENTIAL",
+  SECOND_PUBLIC_HEARING: "AMBIVALENT",
+  "BT-DRS-20-7619": "AMBIVALENT",
+  BUNDESTAG_DECISION: "POSITIVE_POTENTIAL",
+  BUNDESRAT: "OPEN",
+  PROMULGATED_LAW: "OPEN",
+  IMPLEMENTATION_START: "OPEN",
+};
+
+const impactPathDirectionById: Record<string, PublicDirection> = {
+  "GEG-P1": "AMBIVALENT",
+  "GEG-P2": "AMBIVALENT",
+  "GEG-P3": "AMBIVALENT",
+  "GEG-P4": "AMBIVALENT",
+  "GEG-P5": "OPEN",
+};
+
+function reviewedDirection(mapping: Record<string, PublicDirection>, key: string, context: string) {
+  const direction = mapping[key];
+  if (!direction) throw new Error(`${context}: keine fachlich geprüfte Wirkungsrichtung für ${key}.`);
+  return direction;
+}
+
 function safeUrl(value: unknown) {
   try {
     const url = new URL(text(value));
@@ -129,6 +160,8 @@ function toPublicFachanalyse(input: RecordValue) {
         summary: text(value.core_content),
         change: text(value.change_from_previous),
         potential: text(value.expected_impact_potential),
+        direction: reviewedDirection(timelineDirectionByVersion, text(value.version), "GEG-Zeitachse"),
+        evidenceBoundary: "Die Einordnung beschreibt ein ex ante plausibles Potenzial dieser Fassung. Sie belegt weder, dass die Zustandsänderung bereits eingetreten ist, noch dass sie allein durch diese Fassung verursacht würde. Dafür sind Umsetzungsdaten, ein belastbares Gegenfaktum und eine nachvollziehbare Zurechnung erforderlich.",
         sources: strings(value.source_refs).map((sourceId) => sourceById.get(sourceId)).filter(Boolean)
       };
     });
@@ -174,6 +207,7 @@ function toPublicFachanalyse(input: RecordValue) {
         period: text(value.period),
         potentialPath: text(value.potential_path),
         evidenceStatus: publicStatus(value.evidence_status),
+        direction: "OPEN",
         alternativeExplanation: text(value.strongest_alternative_explanation),
         causalStatus: publicStatus(value.causal_status),
         affectedGroups: strings(value.affected_groups),
@@ -187,11 +221,14 @@ function toPublicFachanalyse(input: RecordValue) {
     impactPaths: (Array.isArray(input.impact_paths) ? input.impact_paths : []).map((item) => {
       const value = object(item);
       return {
+        pathId: text(value.path_id),
         lever: text(value.lever),
         hypothesis: text(value.hypothesis),
         prerequisites: strings(value.prerequisites),
         risks: strings(value.risks),
+        direction: reviewedDirection(impactPathDirectionById, text(value.path_id), "GEG-Wirkpfad"),
         evidenceStatus: publicStatus(value.evidence_status),
+        evidenceBoundary: "Der Wirkmechanismus ist fachlich plausibel, aber seine Größe und kausale Zurechnung sind mit dem derzeitigen Wissensstand nicht abschließend bestimmt. Voraussetzungen und Gegenwirkungen werden deshalb getrennt ausgewiesen; eine beobachtete Netto-Wirkung wird daraus nicht abgeleitet.",
         sources: strings(value.source_refs).map((sourceId) => sourceById.get(sourceId)).filter(Boolean)
       };
     }),
@@ -213,7 +250,7 @@ function toPublicFachanalyse(input: RecordValue) {
 const archive = process.argv[2];
 if (!archive) throw new Error("Usage: tsx scripts/generate-public-fachanalysen.ts <release-archive.zip>");
 const resolvedArchive = resolve(archive);
-const entry = listEntries(resolvedArchive).find((item) => item.endsWith("fachanalysen/gebaeudeenergiegesetz-medienwirkung.json"));
+const entry = listEntries(resolvedArchive).find((item) => item.endsWith("/gebaeudeenergiegesetz-medienwirkung.json"));
 if (!entry) throw new Error("The release archive does not contain the GEG fachanalysis.");
 const geg = toPublicFachanalyse(readEntry(resolvedArchive, entry));
 const output = resolve("data/public-fachanalysen.json");

@@ -95,7 +95,12 @@ async function auditPage(path, expression) {
   );
   devtools.close();
   await fetch(`http://127.0.0.1:${port}/json/close/${target.id}`);
-  return { ...result, consoleErrors: failures.length };
+  const consoleErrorDetails = failures.map((event) => {
+    if (event.method === "Log.entryAdded") return event.params.entry.text;
+    if (event.method === "Runtime.exceptionThrown") return event.params.exceptionDetails?.text ?? "Unbekannte Browser-Ausnahme";
+    return event.params.args?.map((argument) => argument.value ?? argument.description).filter(Boolean).join(" ") ?? "Unbekannter Konsolenfehler";
+  });
+  return { ...result, consoleErrors: failures.length, consoleErrorDetails };
 }
 
 function assert(condition, message) {
@@ -132,12 +137,18 @@ try {
 
   const programme = await auditPage("/fachakten/sachsen-anhalt-afd", `() => ({
     bodyText: document.body.innerText.length,
+    directionFindings: document.querySelectorAll('.programme-direction').length,
+    negativeFindings: document.querySelectorAll('.programme-direction--negative').length,
+    detailedReasons: [...document.querySelectorAll('.programme-direction p')].filter((node) => node.textContent?.includes('Ausführliche Begründung')).length,
     misleadingArrow: [...document.querySelectorAll('.programme-result-icon--potential')].some((icon) => icon.textContent.includes('↗')),
     potentialIconColor: getComputedStyle(document.querySelector('.programme-result-icon--potential')).backgroundColor,
     riskIconColor: getComputedStyle(document.querySelectorAll('.programme-result-icon')[1]).backgroundColor,
     overflow: document.documentElement.scrollWidth > window.innerWidth
   })`);
   assert(programme.bodyText > 2_000, "Programme page has too little visible content.");
+  assert(programme.directionFindings >= 4, "Programme page omits its explicit directional findings.");
+  assert(programme.negativeFindings >= 2, "Programme page understates its documented negative potential.");
+  assert(programme.detailedReasons === programme.directionFindings, "A programme direction lacks its detailed rationale.");
   assert(!programme.misleadingArrow, "Potential card still contains a positive-looking arrow.");
   assert(programme.potentialIconColor !== programme.riskIconColor, "Potential and risk use the same semantic color.");
   assert(!programme.overflow, "Programme page overflows horizontally at 375 px.");
@@ -145,12 +156,18 @@ try {
 
   const dossier = await auditPage("/fachakten/dossiers/sachsen-anhalt-afd.html", `() => ({
     bodyText: document.body.innerText.length,
+    commitmentRecords: document.querySelectorAll('details.commitment-record').length,
+    directionCallouts: document.querySelectorAll('.commitment-direction').length,
+    negativeCallouts: document.querySelectorAll('.commitment-direction--negative').length,
     styledLayout: getComputedStyle(document.querySelector('.dossier-layout')).display === 'grid',
     hasTools: Boolean(document.querySelector('.dossier-tools input[type=search]')),
     misleadingArrow: [...document.querySelectorAll('.dossier-result-grid .dossier-icon')].some((icon) => icon.textContent.includes('↗')),
     overflow: document.documentElement.scrollWidth > window.innerWidth
   })`);
   assert(dossier.bodyText > 10_000, "Full programme dossier has too little visible content.");
+  assert(dossier.commitmentRecords === 466, `Full AfD dossier renders ${dossier.commitmentRecords} instead of 466 programme records.`);
+  assert(dossier.directionCallouts === 466, "Not every programme record has a directional impact callout.");
+  assert(dossier.negativeCallouts > 0, "Full AfD dossier omits its documented negative directional findings.");
   assert(dossier.styledLayout, "Full programme dossier stylesheet is not active.");
   assert(dossier.hasTools, "Full programme dossier has no navigation/search tools.");
   assert(!dossier.misleadingArrow, "Full dossier still contains a positive-looking arrow.");
@@ -167,7 +184,7 @@ try {
   assert(memberProfile.matrices >= 2, "Member impact profile omits its MPD matrices.");
   assert(memberProfile.decisions >= 1, "Member impact profile omits its traceable decision.");
   assert(!memberProfile.overflow, "Member impact profile overflows horizontally at 375 px.");
-  assert(memberProfile.consoleErrors === 0, "Member impact profile emits browser errors.");
+  assert(memberProfile.consoleErrors === 0, `Member impact profile emits browser errors: ${memberProfile.consoleErrorDetails.join(" | ")}`);
 
   const factionProfile = await auditPage("/fraktionen/cdu-csu", `() => ({
     bodyText: document.body.innerText.length,
@@ -181,7 +198,31 @@ try {
   assert(!factionProfile.overflow, "Faction impact profile overflows horizontally at 375 px.");
   assert(factionProfile.consoleErrors === 0, "Faction impact profile emits browser errors.");
 
-  console.log(JSON.stringify({ result: "PASS", baseUrl, viewport: "375x812", index, decision, programme, dossier, memberProfile, factionProfile }));
+  const filteredFaction = await auditPage("/fraktionen/gruene?position=REJECTED&dimension=Mensch&richtung=AMBIVALENT#fallauswahl", `() => ({
+    decisions: document.querySelectorAll('.profile-decision-list > article').length,
+    detailedRationales: document.querySelectorAll('.profile-decision-analysis .path-evidence-boundary').length,
+    inlineStyles: document.querySelectorAll('.impact-path-balance [style]').length,
+    overflow: document.documentElement.scrollWidth > window.innerWidth
+  })`);
+  assert(filteredFaction.decisions === 6, `Filtered Greens profile renders ${filteredFaction.decisions} instead of six matching decisions.`);
+  assert(filteredFaction.detailedRationales >= 6, "Filtered faction cases omit their detailed rationale/evidence boundary.");
+  assert(filteredFaction.inlineStyles === 0, "Filtered faction profile uses CSP-blocked inline styles.");
+  assert(!filteredFaction.overflow, "Filtered faction result overflows horizontally at 375 px.");
+  assert(filteredFaction.consoleErrors === 0, "Filtered faction result emits browser errors.");
+
+  const gegAnalysis = await auditPage("/fachanalysen/gebaeudeenergiegesetz-medienwirkung", `() => ({
+    directionLabels: document.querySelectorAll('.reference-direction, .direction-label').length,
+    detailedReasons: [...document.querySelectorAll('body *')].filter((node) => node.textContent?.includes('Ausführliche Begründung')).length,
+    englishArtifacts: /Promulgated Law|Implementation Start|source ids|data gap/i.test(document.body.innerText),
+    overflow: document.documentElement.scrollWidth > window.innerWidth
+  })`);
+  assert(gegAnalysis.directionLabels >= 10, "GEG analysis omits explicit directions for paths and reference fields.");
+  assert(gegAnalysis.detailedReasons >= 2, "GEG analysis omits detailed direction rationales.");
+  assert(!gegAnalysis.englishArtifacts, "GEG analysis exposes English system artifacts.");
+  assert(!gegAnalysis.overflow, "GEG analysis overflows horizontally at 375 px.");
+  assert(gegAnalysis.consoleErrors === 0, "GEG analysis emits browser errors.");
+
+  console.log(JSON.stringify({ result: "PASS", baseUrl, viewport: "375x812", index, decision, programme, dossier, memberProfile, factionProfile, filteredFaction, gegAnalysis }));
 } finally {
   chrome.kill("SIGTERM");
   if (chrome.exitCode === null) await Promise.race([once(chrome, "exit"), pause(1_000)]);
