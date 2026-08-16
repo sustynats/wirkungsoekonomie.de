@@ -120,7 +120,7 @@ ${renderHeader(BASE)}
         </div>
         <div class="card-grid three">
           <article class="card"><p class="card-kicker">Vorwirkung</p><h3 class="card-title">Auslöser, Wirkstoff, Potenzial und Risiko</h3><p class="card-text">Ein Produkt, eine Regel, ein Preis, ein Kapitalfluss oder ein Narrativ kann etwas auslösen. Der Wirkstoff bleibt dabei eine didaktische Analogie, nicht eine naturwissenschaftliche Behauptung.</p></article>
-          <article class="card"><p class="card-kicker">Wirkpfad</p><h3 class="card-title">IOOI ordnet die Kette</h3><p class="card-text">Input, Aktivität, Output, Outcome und Impact strukturieren Ressourcen, Leistungen und Veränderung. Output ist noch keine Wirkung; Outcome ist eine Wirkungsebene.</p></article>
+          <article class="card"><p class="card-kicker">Wirkpfad</p><h3 class="card-title">IOOI kann einen Abschnitt strukturieren</h3><p class="card-text">IOOI ist eine externe, optionale Results Chain: Input, Aktivität, Output, Outcome und Impact können Ressourcen, Leistungen und Veränderung gliedern. Output ist noch keine Wirkung; Outcome ist eine Wirkungsebene.</p></article>
           <article class="card"><p class="card-kicker">Steuerung</p><h3 class="card-title">Maßstab, Schutz und Rückkopplung</h3><p class="card-text">Die WÖk ergänzt Evidenz, Referenzrahmen, Nichtkompensation, Transformationswirkung und die Rückführung in Preise, Kapital, Beschaffung, Management, Recht und Regulation.</p></article>
         </div>
         <p><a class="text-link" href="../verstehen/iooi-und-wirkungsoekonomie/">IOOI und Wirkungsökonomie im vollständigen Überblick</a></p>
@@ -187,7 +187,7 @@ ${renderHeader(BASE)}
           </article>
           <article class="card">
             <h3 class="card-title">Wirkpfad und Wirkungsarchitektur</h3>
-            <p class="card-text">IOOI, Theory of Change, Evidenz, Bewertung, Schutzregeln und Rückkopplung im Zusammenhang.</p>
+            <p class="card-text">Die eigenständige WÖk-Wirkungsarchitektur – mit optionalen Anschlussmethoden wie IOOI, Theory of Change, Evidenz, Bewertung, Schutzregeln und Rückkopplung.</p>
             <a class="text-link" href="../verstehen/iooi-und-wirkungsoekonomie/">Leitseite öffnen</a>
           </article>
         </div>

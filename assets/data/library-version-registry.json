@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T10:11:15.321Z",
+  "generatedAt": "2026-08-16T05:39:15.182Z",
   "purpose": "Stage 9: kuratiertes Quellen- und Versionssystem der Wirkungsökonomie-Bibliothek.",
   "schema": {
     "type": [
@@ -205,20 +205,20 @@
     }
   ],
   "counts": {
-    "total": 3196,
+    "total": 3202,
     "byStatus": {
-      "archiviert": 1,
+      "archiviert": 2,
       "führend": 11,
-      "aktuell": 2625,
+      "aktuell": 2630,
       "Arbeitsfassung": 277,
       "ältere Fassung": 261,
       "ersetzt": 21
     },
     "byType": {
-      "Glossar": 47,
+      "Glossar": 49,
       "Grundlagenwerk": 68,
       "Methodik": 115,
-      "Arbeitspapier": 2653,
+      "Arbeitspapier": 2657,
       "Gesetzesentwurf": 39,
       "Beispiel": 18,
       "Dossier": 234,
@@ -228,19 +228,19 @@
       "Präsentation": 1
     },
     "bySource": {
-      "download-or-document": 899,
+      "download-or-document": 904,
       "curated-publication": 3,
       "leading-reference": 8,
-      "online-version": 2286
+      "online-version": 2287
     },
-    "downloadFiles": 905,
-    "onlineVersions": 2286
+    "downloadFiles": 910,
+    "onlineVersions": 2287
   },
   "documents": [
     {
       "id": "download-or-document-public-downloads-originals-woek-begriffsleitfaden-fuehrend-v1-0-pdf",
       "title": "WÖk-Begriffsleitfaden führend v1.0",
-      "shortDescription": "Zitierfähige historische PDF-Fassung; für den aktuellen Begriffsstand gilt Version 1.2.",
+      "shortDescription": "Zitierfähige historische PDF-Fassung; für den aktuellen Begriffsstand gilt Version 1.5.",
       "type": "Glossar",
       "status": "archiviert",
       "dateOrStand": "v1.0",
@@ -255,6 +255,31 @@
       "urls": {
         "primary": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.pdf",
         "sourcePath": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false,
+      "historicalNotice": "",
+      "successorUrl": "",
+      "successorLabel": ""
+    },
+    {
+      "id": "download-or-document-public-downloads-originals-woek-begriffsleitfaden-fuehrend-v1-4-pdf",
+      "title": "WÖk-Begriffsleitfaden führend v1.4",
+      "shortDescription": "Zitierfähige historische PDF-Fassung; für den aktuellen Begriffsstand gilt Version 1.5.",
+      "type": "Glossar",
+      "status": "archiviert",
+      "dateOrStand": "v1.4",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.4.pdf",
+        "sourcePath": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.4.pdf"
       },
       "source": "download-or-document",
       "isLeadingReference": false,
@@ -574,8 +599,8 @@
     },
     {
       "id": "leading-reference-bibliothek-woek-begriffsleitfaden-fuehrend-index-html",
-      "title": "WÖk-Begriffsleitfaden führend v1.3",
-      "shortDescription": "Maßgebliche Sprachreferenz für Nachhaltigkeit als langfristig gesicherte Wirkungsresilienz und acht Analysebausteine von Resilienz und Systementwicklung.",
+      "title": "WÖk-Begriffsleitfaden führend v1.5",
+      "shortDescription": "Maßgebliche Sprach- und Methodenreferenz: IOOI ist eine externe, optionale Results Chain; die WÖk-Wirkungsarchitektur verbindet Vorwirkung, Evidenz, Bewertung, Schutz, Rückkopplung und Lernen.",
       "type": "Glossar",
       "status": "führend",
       "dateOrStand": "",
@@ -598,12 +623,12 @@
       "successorLabel": ""
     },
     {
-      "id": "download-or-document-public-downloads-originals-woek-begriffsleitfaden-fuehrend-v1-3-pdf",
-      "title": "WÖk-Begriffsleitfaden führend v1.3",
-      "shortDescription": "PDF-Fassung der maßgeblichen Sprachreferenz für langfristig gesicherte Wirkungsresilienz und acht Analysebausteine von Resilienz und Systementwicklung.",
+      "id": "download-or-document-public-downloads-originals-woek-begriffsleitfaden-fuehrend-v1-5-pdf",
+      "title": "WÖk-Begriffsleitfaden führend v1.5",
+      "shortDescription": "PDF-Fassung der maßgeblichen Sprach- und Methodenreferenz der Wirkungsökonomie, Version 1.5.",
       "type": "Glossar",
       "status": "führend",
-      "dateOrStand": "v1.3",
+      "dateOrStand": "v1.5",
       "topics": [
         "Grundlagen & Orientierung"
       ],
@@ -613,8 +638,8 @@
         "PDF"
       ],
       "urls": {
-        "primary": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.3.pdf",
-        "sourcePath": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.3.pdf"
+        "primary": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.5.pdf",
+        "sourcePath": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.5.pdf"
       },
       "source": "download-or-document",
       "isLeadingReference": true,
@@ -48939,6 +48964,31 @@
       "successorLabel": ""
     },
     {
+      "id": "online-version-verstehen-iooi-und-wirkungsoekonomie-index-html",
+      "title": "Iooi und wirkungsoekonomie",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "HTML"
+      ],
+      "urls": {
+        "primary": "verstehen/iooi-und-wirkungsoekonomie/",
+        "sourcePath": "verstehen/iooi-und-wirkungsoekonomie/index.html"
+      },
+      "source": "online-version",
+      "isLeadingReference": false,
+      "historicalNotice": "",
+      "successorUrl": "",
+      "successorLabel": ""
+    },
+    {
       "id": "online-version-wirkungsfelder-medien-oeffentlichkeit-journalismus-wirkung-statt-klicks-index-htm",
       "title": "Journalismus wirkung statt klicks",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Öffentlichkeit & Wissen.",
@@ -54746,6 +54796,33 @@
         "sourcePath": "portale/digitalisierung-ki-wirkungsdatenraeume/plattformlogik/index.html"
       },
       "source": "online-version",
+      "isLeadingReference": false,
+      "historicalNotice": "",
+      "successorUrl": "",
+      "successorLabel": ""
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-politik-an-ihren-folgen-messen-pdf",
+      "title": "Politik an ihren folgen messen",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Staat & Demokratie.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/politik-an-ihren-folgen-messen.pdf",
+        "sourcePath": "assets/pdf/journal/politik-an-ihren-folgen-messen.pdf"
+      },
+      "source": "download-or-document",
       "isLeadingReference": false,
       "historicalNotice": "",
       "successorUrl": "",
@@ -63394,6 +63471,31 @@
       "successorLabel": ""
     },
     {
+      "id": "download-or-document-assets-pdf-journal-wie-wirksam-ist-das-sondervermoegen-wirklich-pdf",
+      "title": "Wie wirksam ist das sondervermoegen wirklich",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/wie-wirksam-ist-das-sondervermoegen-wirklich.pdf",
+        "sourcePath": "assets/pdf/journal/wie-wirksam-ist-das-sondervermoegen-wirklich.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false,
+      "historicalNotice": "",
+      "successorUrl": "",
+      "successorLabel": ""
+    },
+    {
       "id": "download-or-document-assets-pdf-journal-wir-messen-das-falsche-pdf",
       "title": "Wir messen das falsche",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
@@ -63731,6 +63833,31 @@
         "sourcePath": "portale/internationale-ordnung-globalisierung-geopolitik/wirkungsbasierter-handel-lieferketten/index.html"
       },
       "source": "online-version",
+      "isLeadingReference": false,
+      "historicalNotice": "",
+      "successorUrl": "",
+      "successorLabel": ""
+    },
+    {
+      "id": "download-or-document-public-downloads-originals-wirkungsbasiertes-value-pricing-v1-2-pdf",
+      "title": "Wirkungsbasiertes Value Pricing",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "v1.2",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "public/downloads/originals/Wirkungsbasiertes_Value_Pricing_v1.2.pdf",
+        "sourcePath": "public/downloads/originals/Wirkungsbasiertes_Value_Pricing_v1.2.pdf"
+      },
+      "source": "download-or-document",
       "isLeadingReference": false,
       "historicalNotice": "",
       "successorUrl": "",
@@ -66542,6 +66669,31 @@
       "urls": {
         "primary": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.2.pdf",
         "sourcePath": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.2.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false,
+      "historicalNotice": "",
+      "successorUrl": "",
+      "successorLabel": ""
+    },
+    {
+      "id": "download-or-document-public-downloads-originals-woek-begriffsleitfaden-fuehrend-v1-3-pdf",
+      "title": "WÖk Begriffsleitfaden fuehrend",
+      "shortDescription": "Glossar im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Glossar",
+      "status": "aktuell",
+      "dateOrStand": "v1.3",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.3.pdf",
+        "sourcePath": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.3.pdf"
       },
       "source": "download-or-document",
       "isLeadingReference": false,

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T00:13:42.807Z",
+  "generatedAt": "2026-08-16T06:08:52.448Z",
   "schema": {
     "term": "canonicalLabel",
     "shortDefinition": "shortDefinition",
@@ -22537,8 +22537,8 @@
       "id": "iooi",
       "term": "IOOI",
       "slug": "iooi",
-      "shortDefinition": "IOOI steht für Input, Output, Outcome und Impact. Das etablierte Logikmodell ordnet den Weg von eingesetzten Ressourcen über erbrachte Leistungen zu eingetretenen Veränderungen und höherstufigen Wirkungen.",
-      "longDefinition": "IOOI ist ein verbreitetes Modell aus Evaluation, Wirkungsorientierung und Results-Based Management. Es macht transparent, welche Ressourcen eingesetzt werden, welche Leistungen daraus entstehen, welche Veränderungen tatsächlich eintreten und welche breiteren oder längerfristigen Wirkungen daraus folgen können. Aktivität liegt logisch zwischen Input und Output, ist aber kein eigener Buchstabe des Akronyms.\n\nIOOI strukturiert einen Wirkpfad und die dazugehörigen Annahmen. Aus einer plausiblen Kette folgt jedoch noch kein Nachweis, dass ein Outcome oder Impact tatsächlich eingetreten und der Maßnahme zurechenbar ist. Dafür braucht es mindestens eine Baseline, geeignete Daten, eine Prüfung anderer Ursachen und eine angemessene Aussage über Unsicherheit.",
+      "shortDefinition": "IOOI steht für Input, Output, Outcome und Impact. Es ist eine externe, optionale Results-Chain-Methode zur Strukturierung eines Abschnitts eines Wirkungspfads.",
+      "longDefinition": "IOOI ist ein verbreitetes Modell aus Evaluation, Wirkungsorientierung und Results-Based Management. Es ordnet eingesetzte Ressourcen, erbrachte Leistungen, eingetretene Veränderungen und weiterreichende Wirkungen. Aktivität kann zwischen Input und Output als zusätzliche Prozessstufe dargestellt werden, gehört aber nicht zum Akronym.\n\nIOOI kann einen Abschnitt eines Wirkungspfads strukturieren. Die Methode beweist weder, dass ein Outcome oder Impact tatsächlich eingetreten ist, noch dass er kausal zurechenbar oder normativ positiv ist. Dafür braucht es passende Evidenz, eine transparente Zurechnung und einen offengelegten Referenzrahmen.",
       "synonyms": [
         "IOOI",
         "I-O-O-I",
@@ -22550,26 +22550,27 @@
       ],
       "relatedTerms": [
         "ausloeser",
-        "wirkstoff",
         "wirkungspotenzial",
         "wirkungsrisiko",
         "wirkmechanismus",
+        "wirkpfad",
         "input",
         "aktivitaet",
         "output",
         "outcome",
         "impact",
+        "wirkungsnachweis",
+        "wirkungsbewertung",
+        "wirkungsrueckkopplung",
+        "impact-of-investment",
+        "wirkstoff",
         "wirkung",
-        "wirkpfad",
         "wirkungskette",
         "theory-of-change",
-        "wirkungsbewertung",
         "referenzrahmen",
         "netto-wirkung",
         "transformationswirkung",
-        "wirkungsrueckkopplung",
-        "phineo-wirkungslogik",
-        "impact-of-investment"
+        "phineo-wirkungslogik"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -22578,7 +22579,7 @@
       "relatedObjections": [],
       "category": "Grundbegriff",
       "status": "anschlussbegriff",
-      "version": "1.0"
+      "version": "1.5"
     },
     {
       "id": "ipbes",
@@ -61824,7 +61825,9 @@
         "Wirkpfad",
         "Wirkpfade",
         "Wirkungspfade",
-        "Wirkmechanismus-Pfad"
+        "Wirkmechanismus-Pfad",
+        "Wirkungskette mit Annahmen",
+        "kausaler Wirkungspfad"
       ],
       "relatedTerms": [
         "wirkung",
@@ -61881,7 +61884,9 @@
         "iooi",
         "ausloeser",
         "theory-of-change",
-        "wirkungsanalyse"
+        "wirkungsanalyse",
+        "wirkungsnachweis",
+        "wirkungsrueckkopplung"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -62272,6 +62277,37 @@
       "version": "Glossar-Sanierung v1"
     },
     {
+      "id": "wirkungsprofil-im-radardiagramm",
+      "term": "Wirkungsprofil im Radardiagramm",
+      "slug": "wirkungsprofil-im-radardiagramm",
+      "shortDefinition": "Ein Wirkungsprofil im Radardiagramm ist eine grafische Spinnennetzdarstellung mehrerer Wirkungsfelder oder Potenziale.",
+      "longDefinition": "Ein Wirkungsprofil im Radardiagramm verdichtet mehrere Wirkungsfelder, Potenziale, Risiken oder Messstände in einer Spinnennetzgrafik. Es macht Muster sichtbar, ersetzt aber keine Erklärung der Skala, Datengrundlage, Gewichtung, Unsicherheit oder Wirkungsbewertung.\n\nDie Darstellung heißt nicht Wirkungsradar: Das Wirkungsradar bezeichnet in der WÖk das Orientierungs- und Analyseinstrument beziehungsweise das Website-Portal.",
+      "synonyms": [
+        "Wirkungsprofil im Radardiagramm",
+        "Spinnennetzdiagramm",
+        "Spinnennetzgrafik",
+        "Radarprofil",
+        "Wirkungsprofil",
+        "Radardiagramm"
+      ],
+      "relatedTerms": [
+        "wirkungsradar",
+        "scorecard",
+        "wirkungsbewertung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "datenqualitaet"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Messbegriff",
+      "status": "woek-praegungsbegriff",
+      "version": "1.5"
+    },
+    {
       "id": "wirkungsprototyp-canvas",
       "term": "Wirkungsprototyp-Canvas",
       "slug": "wirkungsprototyp-canvas",
@@ -62534,24 +62570,31 @@
       "id": "wirkungsradar",
       "term": "Wirkungsradar",
       "slug": "wirkungsradar",
-      "shortDefinition": "Ein Wirkungsradar ist ein Orientierungsinstrument, das Wirkungsfelder, Risiken und blinde Flecken sichtbar macht.",
-      "longDefinition": "Das Wirkungsradar unterstützt Analyse, Kommunikation und Priorisierung, ersetzt aber keine vollständige Wirkungsbewertung.",
+      "shortDefinition": "Das Wirkungsradar ist ein WÖk-Orientierungs- und Analyseinstrument, das Wirkungsfelder, Potenziale, Risiken, blinde Flecken, Wirkungspfade und Wissensstände sichtbar macht.",
+      "longDefinition": "Das Wirkungsradar dient der Orientierung, Analyse und Kommunikation. Es kann Wirkungsfelder, Wirkungspotenziale, Wirkungsrisiken, blinde Flecken, Wirkungspfade und den jeweiligen Wissensstand sichtbar machen. Auf der Website bezeichnet es insbesondere das Portal für Fakten, Narrative und öffentliche Wirkungspfade.\n\nDas Wirkungsradar ersetzt keine vollständige Wirkungsbewertung, keine Evidenzprüfung und keine demokratische Entscheidung. Für eine grafische Spinnennetzdarstellung mehrerer Felder gilt der Begriff Wirkungsprofil im Radardiagramm.",
       "synonyms": [
-        "Wirkungsradar"
+        "Wirkungsradar",
+        "WÖk-Wirkungsradar",
+        "Wirkungsradar-Portal"
       ],
       "relatedTerms": [
+        "wirkpfad",
+        "wirkungspotenzial",
         "wirkungsrisiko",
-        "wirkungskompetenz",
-        "wirkungsbewertung"
+        "wirkungsbewertung",
+        "wirkungsprofil-im-radardiagramm",
+        "wirkungsrad",
+        "wirkungsnetz",
+        "wirkungskompetenz"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
       "relatedDemos": [],
       "relatedDocuments": [],
       "relatedObjections": [],
-      "category": "Grundbegriff",
-      "status": "führender-begriff",
-      "version": "1.0"
+      "category": "Architekturbegriff",
+      "status": "woek-praegungsbegriff",
+      "version": "1.5"
     },
     {
       "id": "wirkungsrat",

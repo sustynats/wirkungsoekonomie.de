@@ -74,8 +74,8 @@ function renderFooter(base) {
 const schema = {
   "@context": "https://schema.org",
   "@type": ["Article", "LearningResource"],
-  headline: "IOOI und Wirkungsökonomie: Vom Wirkpfad zur Steuerungsarchitektur",
-  description: "IOOI beschreibt Input, Output, Outcome und Impact. Die Wirkungsökonomie ergänzt Referenzrahmen, Netto-Wirkung, Wirkungsgrenzen, Transformationswirkung und Rückkopplung.",
+  headline: "IOOI als externe Results Chain – und die Wirkungsökonomie",
+  description: "IOOI strukturiert Input, Output, Outcome und Impact als externe Results Chain. Die Wirkungsökonomie kann sie optional nutzen und verbindet Wirkung mit Evidenz, Bewertung, Schutz und Rückkopplung.",
   inLanguage: "de-DE",
   learningResourceType: "Methodenerklärung",
   educationalLevel: "Einführung",
@@ -88,22 +88,22 @@ const html = `<!doctype html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>IOOI erklärt: Input, Output, Outcome, Impact – und was die Wirkungsökonomie ergänzt</title>
-    <meta name="description" content="IOOI beschreibt den Weg von Ressourcen zu Wirkung. Die Wirkungsökonomie ergänzt Referenzrahmen, Netto-Wirkung, Wirkungsgrenzen, Transformationswirkung und Rückkopplung in reale Entscheidungen.">
+    <title>IOOI als externe Results Chain – und die Wirkungsökonomie</title>
+    <meta name="description" content="IOOI strukturiert Input, Output, Outcome und Impact als externe Results Chain. Die Wirkungsökonomie kann sie optional nutzen und verbindet Wirkung mit Evidenz, Bewertung, Schutz und Rückkopplung.">
     <meta name="search_title" content="IOOI und Wirkungsökonomie">
-    <meta name="search_description" content="Input, Output, Outcome und Impact als Wirkpfad – ergänzt um Bewertung, Schutzregeln und Rückkopplung.">
+    <meta name="search_description" content="IOOI als optionale externe Results Chain; die eigenständige WÖk-Wirkungsarchitektur verbindet Wirkungsermittlung, Bewertung, Schutz und Rückkopplung.">
     <meta name="search_section" content="Verstehen">
     <meta name="search_type" content="Methodenerklärung">
     <link rel="canonical" href="https://wirkungsoekonomie.de/verstehen/iooi-und-wirkungsoekonomie/">
     <meta property="og:type" content="article">
     <meta property="og:locale" content="de_DE">
     <meta property="og:site_name" content="Wirkungsökonomie">
-    <meta property="og:title" content="IOOI erklärt: Input, Output, Outcome, Impact – und was die Wirkungsökonomie ergänzt">
-    <meta property="og:description" content="IOOI beschreibt den Weg von Ressourcen zu Wirkung. Die Wirkungsökonomie ergänzt Referenzrahmen, Netto-Wirkung, Wirkungsgrenzen, Transformationswirkung und Rückkopplung.">
+    <meta property="og:title" content="IOOI als externe Results Chain – und die Wirkungsökonomie">
+    <meta property="og:description" content="IOOI strukturiert Input, Output, Outcome und Impact als externe Results Chain. Die Wirkungsökonomie kann sie optional nutzen und verbindet Wirkung mit Evidenz, Bewertung, Schutz und Rückkopplung.">
     <meta property="og:url" content="https://wirkungsoekonomie.de/verstehen/iooi-und-wirkungsoekonomie/">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="IOOI und Wirkungsökonomie">
-    <meta name="twitter:description" content="Vom Wirkpfad zur Steuerungsarchitektur.">
+    <meta name="twitter:title" content="IOOI als externe Results Chain – und die Wirkungsökonomie">
+    <meta name="twitter:description" content="Optionale Anschlussmethode und eigenständige WÖk-Wirkungsarchitektur.">
     <link rel="icon" href="${BASE}assets/img/brand/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="${BASE}assets/css/style.css?v=20260612-mobile-table-fix">
     <script type="application/ld+json">${JSON.stringify(schema)}</script>
@@ -114,8 +114,8 @@ ${renderHeader(BASE)}
       <section class="hero compact-hero" data-no-glossary>
         <nav class="breadcrumb" aria-label="Breadcrumb"><a href="${BASE}index.html">Start</a><span aria-hidden="true">/</span><a href="${BASE}verstehen/">Verstehen</a><span aria-hidden="true">/</span><span>IOOI und Wirkungsökonomie</span></nav>
         <p class="hero-kicker">Methodenarchitektur</p>
-        <h1>IOOI und Wirkungsökonomie: Vom Wirkpfad zur Steuerungsarchitektur</h1>
-        <p class="hero-subtitle">IOOI erklärt, wie aus Ressourcen Leistungen, Veränderungen und breitere Wirkungen entstehen können. Die Wirkungsökonomie verbindet diesen Pfad mit einem transparenten Maßstab, Schutzregeln und Konsequenzen für die nächste Entscheidung.</p>
+        <h1>IOOI als externe Results Chain – und die Wirkungsökonomie</h1>
+        <p class="hero-subtitle">IOOI kann einen Abschnitt eines Wirkungspfads als Results Chain strukturieren. Die Wirkungsökonomie ist eigenständig: Sie beginnt bei Auslösern, Wirkungspotenzialen, Wirkungsrisiken und Wirkmechanismen und verbindet Wirkung mit Evidenz, Maßstab, Schutz und Rückkopplung.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#wirkungsrad">Wirkungsrad verstehen</a>
           <a class="btn btn-secondary" href="#iooi">IOOI erklären</a>
@@ -141,12 +141,12 @@ ${renderHeader(BASE)}
         <figure class="woek-visual-figure">
           <picture>
             <source media="(max-width: 760px)" srcset="${BASE}assets/visuals/model/woek_wirkungskreislauf_iooi_mobile.svg" type="image/svg+xml">
-            <img class="woek-visual" src="${BASE}assets/visuals/model/woek_wirkungskreislauf_iooi.svg" alt="WÖk-Wirkungskreislauf: Vorwirkung mit Auslöser, Wirkungspotenzial und Wirkmechanismus; IOOI-Wirkpfad; Wirkungsermittlung und Folgen; Bewertung am Referenzrahmen; Schutz, Rückkopplung und Lernen." loading="lazy" decoding="async">
+            <img class="woek-visual" src="${BASE}assets/visuals/model/woek_wirkungskreislauf_iooi.svg" alt="WÖk-Wirkungskreislauf: Auslöser, Wirkungspotenzial und Wirkmechanismus; Wirkungspfad mit optionalem IOOI-Abschnitt; Wirkungsermittlung, Bewertung am Referenzrahmen, Schutz, Rückkopplung und Lernen." loading="lazy" decoding="async">
           </picture>
           <figcaption>Die Grafik fasst die Architektur zusammen. Die folgenden Abschnitte sind ihre vollständige Textalternative.</figcaption>
         </figure>
         <div class="card-grid three" aria-label="Drei Kernphasen der Wirkungsökonomie">
-          <article class="card"><p class="card-kicker">1. Wirkung ermitteln</p><h3 class="card-title">Was verändert sich tatsächlich?</h3><p class="card-text">Vorwirkung, IOOI, Wirkungsempfänger, Raum, Reichweite, Dauer, Zurechnung, Nebenfolgen und Datenqualität machen den Wirkpfad prüfbar.</p></article>
+          <article class="card"><p class="card-kicker">1. Wirkung ermitteln</p><h3 class="card-title">Was verändert sich tatsächlich?</h3><p class="card-text">Vorwirkung, Wirkungspfad, Wirkungsempfänger, Raum, Reichweite, Dauer, Zurechnung, Nebenfolgen und Datenqualität machen Veränderung prüfbar. IOOI kann dabei optional einen Abschnitt strukturieren.</p></article>
           <article class="card"><p class="card-kicker">2. Wirkung bewerten</p><h3 class="card-title">Gemessen woran?</h3><p class="card-text">Agenda 2030, SDGs und SDG+ geben die Richtung an. Fachstandards, Recht und wissenschaftliche Schwellen können sie konkretisieren.</p></article>
           <article class="card"><p class="card-kicker">3. Wirkung rückkoppeln</p><h3 class="card-title">Was folgt für die nächste Entscheidung?</h3><p class="card-text">Bewertete Wirkung verändert Preise, Steuern, Kapital, Förderung, Beschaffung, Management, Haushalt und Regulierung.</p></article>
         </div>
@@ -170,9 +170,9 @@ ${renderHeader(BASE)}
 
       <section class="section" id="iooi" aria-labelledby="iooi-title">
         <div class="section-header">
-          <p class="hero-kicker">IOOI-Wirkpfad</p>
-          <h2 id="iooi-title">Input → Output → Outcome → Impact</h2>
-          <p><strong>IOOI steht für Input, Output, Outcome und Impact.</strong> Es beschreibt den Weg von eingesetzten Ressourcen über erbrachte Leistungen zu eingetretenen Veränderungen und höherstufigen Wirkungen. Aktivität gehört logisch zwischen Input und Output, ist aber kein Buchstabe im Akronym.</p>
+          <p class="hero-kicker">Optionale Anschlussmethode</p>
+          <h2 id="iooi-title">Input → [Aktivität] → Output → Outcome → Impact</h2>
+          <p><strong>IOOI steht für Input, Output, Outcome und Impact.</strong> Als externe Results Chain strukturiert es den Weg von eingesetzten Ressourcen über erbrachte Leistungen zu eingetretenen Veränderungen und höherstufigen Wirkungen. Aktivität gehört logisch zwischen Input und Output, ist aber kein Buchstabe im Akronym. IOOI ist weder Grundmodell noch notwendiger Bestandteil der Wirkungsökonomie.</p>
         </div>
         <div class="table-wrap">
           <table>
@@ -193,7 +193,7 @@ ${renderHeader(BASE)}
         <div class="section-header">
           <p class="hero-kicker">Wirkung verstehen</p>
           <h2 id="verstehen-title">Vom Wirkpfad zur belastbaren Analyse</h2>
-          <p>IOOI lässt sich durch etablierte Evaluations- und Impact-Management-Fragen vertiefen. Sie klären, was tatsächlich entstanden ist – für wen, wo, wie stark, wie lange und wodurch.</p>
+          <p>Ein Wirkungspfad lässt sich durch etablierte Evaluations- und Impact-Management-Fragen vertiefen. IOOI kann hierfür einen Abschnitt strukturieren. Die Fragen klären, was tatsächlich entstanden ist – für wen, wo, wie stark, wie lange und wodurch.</p>
         </div>
         <div class="card-grid three">
           <article class="card"><h3 class="card-title">Wer und wo?</h3><p class="card-text">Wirkungsempfänger, unsichtbare Betroffene, Generationen, Ökosysteme, Institutionen, Wirkungsraum und Lieferkette sichtbar machen.</p></article>
@@ -241,7 +241,7 @@ ${renderHeader(BASE)}
           <thead><tr><th scope="col">Frage</th><th scope="col">IOOI / Wirkungstreppe</th><th scope="col">Wirkungsökonomie</th></tr></thead>
           <tbody>
             <tr><th scope="row">Hauptzweck</th><td>Wirkpfad strukturieren.</td><td>Wirkung ermitteln, bewerten und rückkoppeln.</td></tr>
-            <tr><th scope="row">Input, Output, Outcome, Impact</th><td>Ja.</td><td>Ja, als Teil der Wirkungsermittlung.</td></tr>
+            <tr><th scope="row">Input, Output, Outcome, Impact</th><td>Ja.</td><td>Kann für einen optionalen IOOI-Abschnitt verwendet werden.</td></tr>
             <tr><th scope="row">Baseline, Attribution, Kontribution</th><td>Je nach Anwendung ergänzbar.</td><td>Explizite Evidenzfragen.</td></tr>
             <tr><th scope="row">Negative und unbeabsichtigte Wirkung</th><td>Integrierbar.</td><td>Systematisch mitzuerfassen.</td></tr>
             <tr><th scope="row">Normativer Rahmen</th><td>Vom jeweiligen Anwender festzulegen.</td><td>Agenda 2030, SDGs, SDG+ sowie offen ausgewiesene ergänzende Referenzen.</td></tr>
@@ -256,7 +256,7 @@ ${renderHeader(BASE)}
         <div class="card-grid three">
           <article class="card"><p class="card-kicker">Bildungsprojekt</p><h3 class="card-title">Nicht nur Kurse zählen</h3><p class="card-text"><strong>IOOI:</strong> Budget, Team und Lernplattform ermöglichen Kurse und Teilnahmen. Kompetenz- und Teilhabeveränderungen sind Outcome; langfristige Bildungs- und Arbeitsmarktfolgen können Impact sein.</p><p class="card-text"><strong>WÖk:</strong> Wer wurde erreicht, was wäre ohnehin passiert, wie dauerhaft ist der Effekt und welche Bedeutung hat er für SDG 4, SDG 8 und SDG 10? Daraus folgen Budget-, Skalierungs- und Bildungspolitikentscheidungen.</p></article>
           <article class="card"><p class="card-kicker">Produkt: Apfel</p><h3 class="card-title">Ein Kilogramm ist kein Wirkungsurteil</h3><p class="card-text"><strong>IOOI:</strong> Wasser, Fläche, Arbeit, Energie und Material führen zu einem verkaufsfähigen Produkt. Nutzung und Produktion haben Folgen für Einkommen, Ernährung, Ressourcen und Gesundheit.</p><p class="card-text"><strong>WÖk:</strong> Scorecard, WÖk-IDs, Benchmarks und Schutzregeln prüfen Lieferkette, Wasserstress, Biodiversität, Klima und Arbeitsbedingungen. Die Bewertung kann Preis- und Beschaffungsentscheidungen verändern.</p></article>
-          <article class="card"><p class="card-kicker">Desinformation</p><h3 class="card-title">Reichweite ist nicht positive Wirkung</h3><p class="card-text"><strong>Vorwirkung und IOOI:</strong> Budget, Inhalte, Bots und Plattformmechaniken erzeugen Views, Shares und Kommentare. Ob sich Überzeugungen oder Vertrauen verändern, ist eine eigene Evidenzfrage.</p><p class="card-text"><strong>WÖk:</strong> Plausible demokratische Wirkungsrisiken werden am Referenzrahmen geprüft. Erst bei belegter Veränderung wird von eingetretener Wirkung gesprochen; daraus können Transparenz-, Medien- und Plattformregeln folgen.</p></article>
+          <article class="card"><p class="card-kicker">Desinformation</p><h3 class="card-title">Reichweite ist nicht positive Wirkung</h3><p class="card-text"><strong>Vorwirkung und Wirkungspfad:</strong> Budget, Inhalte, Bots und Plattformmechaniken erzeugen Views, Shares und Kommentare. Ob sich Überzeugungen oder Vertrauen verändern, ist eine eigene Evidenzfrage.</p><p class="card-text"><strong>WÖk:</strong> Plausible demokratische Wirkungsrisiken werden am Referenzrahmen geprüft. Erst bei belegter Veränderung wird von eingetretener Wirkung gesprochen; daraus können Transparenz-, Medien- und Plattformregeln folgen.</p></article>
         </div>
       </section>
 

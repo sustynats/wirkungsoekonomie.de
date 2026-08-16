@@ -23,6 +23,8 @@ EDITION = os.environ.get("WOEK_PUBLICATION_EDITION", "Version 1.1 · Stand 30. J
 SHOW_TITLE = os.environ.get("WOEK_PUBLICATION_SHOW_TITLE", "").strip().lower() in {"1", "true", "yes"}
 DOCX_SOURCE_VALUE = os.environ.get("WOEK_PUBLICATION_DOCX", "").strip()
 DOCX_SOURCE = ROOT / DOCX_SOURCE_VALUE if DOCX_SOURCE_VALUE else None
+IMAGE_BASE = os.environ.get("WOEK_PUBLICATION_IMAGE_BASE", "").strip()
+SKIP_PDF = os.environ.get("WOEK_PUBLICATION_SKIP_PDF", "").strip().lower() in {"1", "true", "yes"}
 
 
 def inline(value: str) -> str:
@@ -74,6 +76,14 @@ def blocks(markdown: str):
             yield (f"h{len(heading.group(1))}", heading.group(2).strip())
             index += 1
             continue
+        image = re.match(r"^!\[([^\]]*)\]\(([^)]+)\)\s*$", line)
+        if image:
+            if current:
+                yield ("paragraph", " ".join(current).strip())
+                current = []
+            yield ("image", (image.group(1).strip(), image.group(2).strip()))
+            index += 1
+            continue
         if line.startswith("> "):
             if current:
                 yield ("paragraph", " ".join(current).strip())
@@ -122,6 +132,11 @@ def build_html(items) -> str:
                 for row in rows
             )
             output.append(f'<div class="table-scroll"><table class="data-table"><thead><tr>{head}</tr></thead><tbody>{body}</tbody></table></div>')
+        elif kind == "image":
+            alt, source = value
+            image_source = source if re.match(r"^(?:https?:)?//", source) else f"{IMAGE_BASE}{source}"
+            caption = f"<figcaption>{inline(alt)}</figcaption>" if alt else ""
+            output.append(f'<figure class="publication-figure"><img src="{html.escape(image_source, quote=True)}" alt="{html.escape(alt, quote=True)}" loading="lazy" decoding="async">{caption}</figure>')
         else:
             output.append(f"<p>{inline(value)}</p>")
     return "\n".join(output) + "\n"
@@ -180,7 +195,10 @@ def main() -> None:
     items = list(blocks(SOURCE.read_text(encoding="utf-8")))
     ONLINE.parent.mkdir(parents=True, exist_ok=True)
     ONLINE.write_text(build_html(items), encoding="utf-8")
-    build_pdf(items)
+    if SKIP_PDF:
+        print("PDF-Erstellung übersprungen; eine geprüfte PDF-Fassung wird unverändert ausgeliefert.")
+    else:
+        build_pdf(items)
     print(f"wrote {ONLINE.relative_to(ROOT)}")
     print(f"wrote {PDF.relative_to(ROOT)}")
 

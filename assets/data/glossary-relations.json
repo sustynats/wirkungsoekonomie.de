@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-14T11:19:46.696Z",
-  "count": 2136,
+  "generatedAt": "2026-08-16T06:08:52.339Z",
+  "count": 2138,
   "relations": {
     "fuenftes-p-planet": {
       "related": [
@@ -10390,27 +10390,31 @@
     "iooi": {
       "related": [
         "ausloeser",
-        "wirkstoff",
         "wirkungspotenzial",
         "wirkungsrisiko",
         "wirkmechanismus",
+        "wirkpfad",
         "input",
         "aktivitaet",
         "output",
         "outcome",
         "wirkung",
-        "wirkpfad",
+        "wirkungsnachweis",
+        "wirkungsbewertung",
+        "wirkungsrueckkopplung",
+        "impact-of-investment",
+        "wirkstoff",
         "wirkungskette",
         "theory-of-change",
-        "wirkungsbewertung",
         "sdg-sdgplus-referenzrahmen",
         "netto-wirkung",
         "transformationswirkung",
-        "wirkungsrueckkopplung",
-        "impact-of-investment"
+        "phineo-wirkungslogik"
       ],
       "doNotConfuse": [
         "ioi-impact-of-investment-ein-woek-instrument-nicht-die-abkuerzung-fuer-input-output-outcome-und-impact",
+        "wirkungspfad-eine-evidenzsensible-pfaddarstellung-die-iooi-enthalten-kann-aber-nicht-durch-iooi-definiert-ist",
+        "wirkungsnachweis-iooi-strukturiert-eine-kette-beweist-aber-keine-kausalitaet",
         "output-eine-erbrachte-leistung-nicht-bereits-eine-eingetretene-wirkung",
         "wirkungsnachweis-iooi-strukturiert-annahmen-und-messung-beweist-aber-keine-kausalitaet"
       ]
@@ -16344,6 +16348,42 @@
         "pflegegrad",
         "personenbewertung",
         "reine-kostenerstattung"
+      ]
+    },
+    "phineo-wirkungslogik": {
+      "related": [
+        "iooi",
+        "wirkung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "wirkmechanismus",
+        "wirkpfad",
+        "wirkungskette",
+        "theory-of-change",
+        "wirkungstreppe",
+        "wirkungsbewertung",
+        "netto-wirkung",
+        "positive-netto-wirkung",
+        "transformationswirkung",
+        "wirkungsgrenze",
+        "reverse-merit-order",
+        "wirkungsrueckkopplung",
+        "wirkungslenkung",
+        "wirkungsarchitektur",
+        "sdgs",
+        "agenda-2030",
+        "sdg-plus",
+        "mensch-planet-demokratie",
+        "wirkungsmanagement",
+        "wirkungscontrolling",
+        "woek-id"
+      ],
+      "doNotConfuse": [
+        "iooi-ein-logikmodell-fuer-wirkpfade-phineo-ist-ein-akteur-und-arbeitszusammenhang-der-wirkungsorientierung-nicht-ein-anderes-akronym-fuer-iooi",
+        "output-oder-reichweite-erbrachte-leistungen-und-erreichte-personen-sind-wichtige-daten-belegen-aber-noch-keine-eingetretene-veraenderung",
+        "positive-netto-wirkung-ein-erreichtes-wirkungsziel-oder-eine-positive-teilwirkung-ist-nicht-automatisch-eine-vollstaendige-netto-wirkungsbewertung",
+        "wirkungssteuerung-phineo-arbeitet-selbst-mit-wirkungssteuerung-die-woek-unterscheidet-sich-nicht-durch-den-blossen-steuerungsanspruch-sondern-durch-die-institutionelle-rueckkopplung-in-markt-und-ordnungsmechanismen",
+        "historische-rangfolge-die-funktionale-einordnung-von-iooi-wirkungsmanagement-netto-wirkung-und-rueckkopplung-behauptet-keine-lineare-entwicklung-von-phineo-zur-woek"
       ]
     },
     "photoelektrischer-effekt": {
@@ -29424,7 +29464,9 @@
         "reframing",
         "iooi",
         "ausloeser",
-        "theory-of-change"
+        "theory-of-change",
+        "wirkungsnachweis",
+        "wirkungsrueckkopplung"
       ],
       "doNotConfuse": [
         "wirkung-eine-tatsaechliche-zustandsveraenderung-der-wirkpfad-beschreibt-zunaechst-die-annahme-wie-sie-zustande-kommen-koennte",
@@ -29434,7 +29476,10 @@
         "kausalnachweis-ein-wirkpfad-liefert-eine-pruefbare-hypothese-kausale-zurechnung-verlangt-zusaetzlich-geeignete-evidenz-vergleichsfaelle-und-den-umgang-mit-anderen-einflussfaktoren",
         "output-oder-bericht-erbrachte-leistungen-und-dokumentationen-sind-zwischenschritte-oder-nachweise-nicht-automatisch-wirkung",
         "wirkung",
-        "kausalnachweis"
+        "kausalnachweis",
+        "wirkungskette-bewusst-vereinfachte-lineare-abfolge",
+        "wirkungsnachweis-pruefung-ob-eine-zustandsveraenderung-tatsaechlich-eingetreten-ist",
+        "kausalbeweis-ein-wirkungspfad-kann-hypothesen-und-evidenz-strukturieren-ersetzt-aber-kein-kausaldesign"
       ]
     },
     "wirkungspflicht-des-eigentums": {
@@ -29653,6 +29698,21 @@
         "nicht-als-personenbewertung-moralische-rangliste-oder-social-credit-logik-verwenden"
       ]
     },
+    "wirkungsprofil-im-radardiagramm": {
+      "related": [
+        "wirkungsradar",
+        "scorecard",
+        "wirkungsbewertung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "datenqualitaet"
+      ],
+      "doNotConfuse": [
+        "wirkungsradar-instrument-oder-portal",
+        "scorecard-strukturierte-kennzahlen-und-bewertungsansicht",
+        "wirkungsbewertung-begruendete-einordnung-nicht-die-grafik-selbst"
+      ]
+    },
     "wirkungsprototyp-canvas": {
       "related": [
         "wirkungsversprechen-canvas",
@@ -29821,11 +29881,19 @@
     },
     "wirkungsradar": {
       "related": [
+        "wirkpfad",
+        "wirkungspotenzial",
         "wirkungsrisiko",
-        "wirkungskompetenz",
-        "wirkungsbewertung"
+        "wirkungsbewertung",
+        "wirkungsprofil-im-radardiagramm",
+        "wirkungsrad",
+        "wirkungsnetz",
+        "wirkungskompetenz"
       ],
       "doNotConfuse": [
+        "wirkungsprofil-im-radardiagramm-grafische-spinnennetzdarstellung",
+        "scorecard-strukturierte-kennzahlen-und-bewertungsansicht",
+        "abschliessende-wirkungsbewertung-eine-orientierung-ersetzt-keine-evidenz-und-bewertungspruefung",
         "scorecard",
         "finalscore"
       ]

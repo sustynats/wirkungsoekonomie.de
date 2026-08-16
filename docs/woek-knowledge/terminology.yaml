@@ -1,11 +1,11 @@
-# WÖk Terminology (maschinenlesbar) — Quelle: Begriffsleitfaden führend v1.3 (30.07.2026)
-# Volltext-Erläuterungen: TERMINOLOGY.md · Bei Konflikt gilt v1.3; Glossar nur soweit leitfadenkonform.
+# WÖk Terminology (maschinenlesbar) — Quelle: Begriffsleitfaden führend v1.5 (15.08.2026)
+# Volltext-Erläuterungen: TERMINOLOGY.md · Bei Konflikt gilt v1.5; Glossar nur soweit leitfadenkonform.
 meta:
   leading_source: content/documents/online/woek-begriffsleitfaden-fuehrend.inc
-  leading_pdf: public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.3.pdf
-  version: "1.3"
-  date: "2026-07-30"
-  last_verified: "2026-08-14"
+  leading_pdf: public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.5.pdf
+  version: "1.5"
+  date: "2026-08-15"
+  last_verified: "2026-08-15"
 
 terms:
   - id: wirkung
@@ -37,7 +37,22 @@ terms:
   - id: wirkpfad
     label: Wirkpfad / Wirkungspfad
     definition: "Beschreibt, wie aus Handlung, Produkt, Regel, Narrativ oder Kapitalfluss Wirkung entstehen kann; geeignet, solange kein vollständiger Wirkungsnachweis vorliegt."
-    source: leitfaden_v1_3_p7
+    source: leitfaden_v1_5_10_3
+    note: "Versionierte und evidenzsensible Pfaddarstellung. Kann einen IOOI-kompatiblen Abschnitt enthalten, ist aber nicht durch IOOI definiert und kein Kausalbeweis."
+  - id: iooi
+    label: IOOI
+    definition: "Externe, optionale Results-Chain-Methode für Input, Output, Outcome und Impact; Aktivität kann als zusätzliche Prozessstufe ergänzt werden."
+    source: leitfaden_v1_5_7_1
+    note: "IOOI ist weder Grundmodell noch notwendiger Bestandteil der Wirkungsökonomie."
+  - id: wirkungsradar
+    label: Wirkungsradar
+    definition: "WÖk-Orientierungs- und Analyseinstrument beziehungsweise Portal für Wirkungsfelder, Potenziale, Risiken, blinde Flecken, Wirkungspfade und Wissensstände."
+    source: leitfaden_v1_5_10_3
+    note: "Nicht als Namen einer Spinnennetzgrafik verwenden."
+  - id: wirkungsprofil-im-radardiagramm
+    label: Wirkungsprofil im Radardiagramm
+    definition: "Grafische Spinnennetzdarstellung mehrerer Wirkungsfelder oder Potenziale; größere Ausschläge bedeuten nicht automatisch bessere Wirkung."
+    source: leitfaden_v1_5_10_3
   - id: wirkungsnetz
     label: Wirkungsnetz
     definition: "Verbindung mehrerer Wirkungen, Wirkungspotenziale, Resonanzräume, Rückkopplungen und Systemfolgen."

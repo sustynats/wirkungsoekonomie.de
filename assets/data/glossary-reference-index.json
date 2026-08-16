@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-15T00:13:43.173Z",
-  "count": 2137,
+  "generatedAt": "2026-08-16T06:09:38.849Z",
+  "count": 2138,
   "letters": [
     "#",
     "A",
@@ -2097,6 +2097,7 @@
       "wirkungsproblem-canvas",
       "wirkungsproblem-loesungs-fit",
       "wirkungsprofil",
+      "wirkungsprofil-im-radardiagramm",
       "wirkungsprototyp-canvas",
       "wirkungspruefung",
       "wirkungspruefung-oeffentlicher-mittel",
@@ -11525,7 +11526,7 @@
       "slug": "iooi",
       "url": "/begriffe/iooi/",
       "category": "Grundbegriff",
-      "shortDefinition": "IOOI steht für Input, Output, Outcome und Impact. Das etablierte Logikmodell ordnet den Weg von eingesetzten Ressourcen über erbrachte Leistungen zu eingetretenen Veränderungen und höherstufigen Wirkungen.",
+      "shortDefinition": "IOOI steht für Input, Output, Outcome und Impact. Es ist eine externe, optionale Results-Chain-Methode zur Strukturierung eines Abschnitts eines Wirkungspfads.",
       "aliases": [
         "IOOI",
         "I-O-O-I",
@@ -27024,7 +27025,9 @@
         "Wirkpfad",
         "Wirkpfade",
         "Wirkungspfade",
-        "Wirkmechanismus-Pfad"
+        "Wirkmechanismus-Pfad",
+        "Wirkungskette mit Annahmen",
+        "kausaler Wirkungspfad"
       ]
     },
     {
@@ -27146,6 +27149,22 @@
       ]
     },
     {
+      "id": "wirkungsprofil-im-radardiagramm",
+      "label": "Wirkungsprofil im Radardiagramm",
+      "slug": "wirkungsprofil-im-radardiagramm",
+      "url": "/begriffe/wirkungsprofil-im-radardiagramm/",
+      "category": "Messbegriff",
+      "shortDefinition": "Ein Wirkungsprofil im Radardiagramm ist eine grafische Spinnennetzdarstellung mehrerer Wirkungsfelder oder Potenziale.",
+      "aliases": [
+        "Wirkungsprofil im Radardiagramm",
+        "Spinnennetzdiagramm",
+        "Spinnennetzgrafik",
+        "Radarprofil",
+        "Wirkungsprofil",
+        "Radardiagramm"
+      ]
+    },
+    {
       "id": "wirkungsprototyp-canvas",
       "label": "Wirkungsprototyp-Canvas",
       "slug": "wirkungsprototyp-canvas",
@@ -27224,10 +27243,12 @@
       "label": "Wirkungsradar",
       "slug": "wirkungsradar",
       "url": "/begriffe/wirkungsradar/",
-      "category": "Grundbegriff",
-      "shortDefinition": "Ein Wirkungsradar ist ein Orientierungsinstrument, das Wirkungsfelder, Risiken und blinde Flecken sichtbar macht.",
+      "category": "Architekturbegriff",
+      "shortDefinition": "Das Wirkungsradar ist ein WÖk-Orientierungs- und Analyseinstrument, das Wirkungsfelder, Potenziale, Risiken, blinde Flecken, Wirkungspfade und Wissensstände sichtbar macht.",
       "aliases": [
-        "Wirkungsradar"
+        "Wirkungsradar",
+        "WÖk-Wirkungsradar",
+        "Wirkungsradar-Portal"
       ]
     },
     {

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T00:13:42.968Z",
+  "generatedAt": "2026-08-16T06:09:38.588Z",
   "links": {
     "fuenftes-p-planet": {
       "label": "5. P = Planet",
@@ -20971,8 +20971,8 @@
       "label": "IOOI",
       "slug": "iooi",
       "url": "/begriffe/iooi/",
-      "hoverDefinition": "IOOI ordnet Input, Output, Outcome und Impact als Wirkpfad; es ist allein noch kein Wirkungsnachweis, Bewertungs- oder Steuerungssystem.",
-      "shortDefinition": "IOOI steht für Input, Output, Outcome und Impact. Das etablierte Logikmodell ordnet den Weg von eingesetzten Ressourcen über erbrachte Leistungen zu eingetretenen Veränderungen und höherstufigen Wirkungen.",
+      "hoverDefinition": "IOOI strukturiert Input, Output, Outcome und Impact. Es ist weder das Grundmodell noch ein notwendiger Bestandteil der Wirkungsökonomie.",
+      "shortDefinition": "IOOI steht für Input, Output, Outcome und Impact. Es ist eine externe, optionale Results-Chain-Methode zur Strukturierung eines Abschnitts eines Wirkungspfads.",
       "category": "Grundbegriff",
       "synonyms": [
         "IOOI",
@@ -20985,26 +20985,27 @@
       ],
       "relatedTerms": [
         "ausloeser",
-        "wirkstoff",
         "wirkungspotenzial",
         "wirkungsrisiko",
         "wirkmechanismus",
+        "wirkpfad",
         "input",
         "aktivitaet",
         "output",
         "outcome",
         "impact",
+        "wirkungsnachweis",
+        "wirkungsbewertung",
+        "wirkungsrueckkopplung",
+        "impact-of-investment",
+        "wirkstoff",
         "wirkung",
-        "wirkpfad",
         "wirkungskette",
         "theory-of-change",
-        "wirkungsbewertung",
         "referenzrahmen",
         "netto-wirkung",
         "transformationswirkung",
-        "wirkungsrueckkopplung",
-        "phineo-wirkungslogik",
-        "impact-of-investment"
+        "phineo-wirkungslogik"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -57460,7 +57461,9 @@
         "Wirkpfad",
         "Wirkpfade",
         "Wirkungspfade",
-        "Wirkmechanismus-Pfad"
+        "Wirkmechanismus-Pfad",
+        "Wirkungskette mit Annahmen",
+        "kausaler Wirkungspfad"
       ],
       "relatedTerms": [
         "wirkung",
@@ -57517,7 +57520,9 @@
         "iooi",
         "ausloeser",
         "theory-of-change",
-        "wirkungsanalyse"
+        "wirkungsanalyse",
+        "wirkungsnachweis",
+        "wirkungsrueckkopplung"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -57860,6 +57865,35 @@
       "relatedDocuments": [],
       "relatedObjections": []
     },
+    "wirkungsprofil-im-radardiagramm": {
+      "label": "Wirkungsprofil im Radardiagramm",
+      "slug": "wirkungsprofil-im-radardiagramm",
+      "url": "/begriffe/wirkungsprofil-im-radardiagramm/",
+      "hoverDefinition": "Ein Wirkungsprofil im Radardiagramm zeigt Ausprägungen mehrerer Felder. Ein größerer Ausschlag bedeutet nicht automatisch bessere Wirkung.",
+      "shortDefinition": "Ein Wirkungsprofil im Radardiagramm ist eine grafische Spinnennetzdarstellung mehrerer Wirkungsfelder oder Potenziale.",
+      "category": "Messbegriff",
+      "synonyms": [
+        "Wirkungsprofil im Radardiagramm",
+        "Spinnennetzdiagramm",
+        "Spinnennetzgrafik",
+        "Radarprofil",
+        "Wirkungsprofil",
+        "Radardiagramm"
+      ],
+      "relatedTerms": [
+        "wirkungsradar",
+        "scorecard",
+        "wirkungsbewertung",
+        "wirkungspotenzial",
+        "wirkungsrisiko",
+        "datenqualitaet"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": []
+    },
     "wirkungsprototyp-canvas": {
       "label": "Wirkungsprototyp-Canvas",
       "slug": "wirkungsprototyp-canvas",
@@ -58113,16 +58147,23 @@
       "label": "Wirkungsradar",
       "slug": "wirkungsradar",
       "url": "/begriffe/wirkungsradar/",
-      "hoverDefinition": "Ein Wirkungsradar hilft, Wirkungsfelder, Risiken und Rückkopplungen früh zu erkennen.",
-      "shortDefinition": "Ein Wirkungsradar ist ein Orientierungsinstrument, das Wirkungsfelder, Risiken und blinde Flecken sichtbar macht.",
-      "category": "Grundbegriff",
+      "hoverDefinition": "Das Wirkungsradar ist ein Orientierungs- und Analyseinstrument beziehungsweise Website-Portal, nicht der Name eines Spinnennetzdiagramms.",
+      "shortDefinition": "Das Wirkungsradar ist ein WÖk-Orientierungs- und Analyseinstrument, das Wirkungsfelder, Potenziale, Risiken, blinde Flecken, Wirkungspfade und Wissensstände sichtbar macht.",
+      "category": "Architekturbegriff",
       "synonyms": [
-        "Wirkungsradar"
+        "Wirkungsradar",
+        "WÖk-Wirkungsradar",
+        "Wirkungsradar-Portal"
       ],
       "relatedTerms": [
+        "wirkpfad",
+        "wirkungspotenzial",
         "wirkungsrisiko",
-        "wirkungskompetenz",
-        "wirkungsbewertung"
+        "wirkungsbewertung",
+        "wirkungsprofil-im-radardiagramm",
+        "wirkungsrad",
+        "wirkungsnetz",
+        "wirkungskompetenz"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],

@@ -175,7 +175,7 @@ const LEADING_REFERENCE_PATHS = new Set([
   "glossar.html",
   "verstehen/sdgs-sdgplus/index.html",
   "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-  "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.4.pdf",
+  "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.5.pdf",
   "assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx"
 ]);
 
@@ -232,22 +232,28 @@ const LEADING_OVERRIDES = new Map([
     shortDescription: "Öffentliche Begriffskarte für zentrale WÖk-Begriffe und Abkürzungen."
   }],
   ["bibliothek/woek-begriffsleitfaden-fuehrend/index.html", {
-    title: "WÖk-Begriffsleitfaden führend v1.4",
+    title: "WÖk-Begriffsleitfaden führend v1.5",
     type: "Glossar",
     status: "führend",
-    shortDescription: "Maßgebliche Sprachreferenz für Nachhaltigkeit als langfristige Wirkungsresilienz sowie IOOI als Wirkpfad innerhalb der Wirkungsarchitektur."
+    shortDescription: "Maßgebliche Sprach- und Methodenreferenz: IOOI ist eine externe, optionale Results Chain; die WÖk-Wirkungsarchitektur verbindet Vorwirkung, Evidenz, Bewertung, Schutz, Rückkopplung und Lernen."
+  }],
+  ["public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.5.pdf", {
+    title: "WÖk-Begriffsleitfaden führend v1.5",
+    type: "Glossar",
+    status: "führend",
+    shortDescription: "PDF-Fassung der maßgeblichen Sprach- und Methodenreferenz der Wirkungsökonomie, Version 1.5."
   }],
   ["public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.4.pdf", {
     title: "WÖk-Begriffsleitfaden führend v1.4",
     type: "Glossar",
-    status: "führend",
-    shortDescription: "PDF-Fassung der maßgeblichen Sprachreferenz für langfristige Wirkungsresilienz sowie IOOI als Wirkpfad innerhalb der Wirkungsarchitektur."
+    status: "archiviert",
+    shortDescription: "Zitierfähige historische PDF-Fassung; für den aktuellen Begriffsstand gilt Version 1.5."
   }],
   ["public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.pdf", {
     title: "WÖk-Begriffsleitfaden führend v1.0",
     type: "Glossar",
     status: "archiviert",
-    shortDescription: "Zitierfähige historische PDF-Fassung; für den aktuellen Begriffsstand gilt Version 1.4."
+    shortDescription: "Zitierfähige historische PDF-Fassung; für den aktuellen Begriffsstand gilt Version 1.5."
   }],
   ["assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx", {
     title: "WÖk Master Items v1.3",

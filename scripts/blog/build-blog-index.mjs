@@ -235,20 +235,19 @@ function entryFromHtml(file, existing) {
   const url = relativeUrl(file);
   const previous = existing.get(url) || {};
   const title = cleanTitle(
-    previous.title ||
-      firstMatch(html, [/<meta\s+property=["']og:title["']\s+content=["']([^"']+)["']/i, /<h1[^>]*>([\s\S]*?)<\/h1>/i, /<title>([\s\S]*?)<\/title>/i])
+    firstMatch(html, [/<meta\s+property=["']og:title["']\s+content=["']([^"']+)["']/i, /<h1[^>]*>([\s\S]*?)<\/h1>/i, /<title>([\s\S]*?)<\/title>/i]) || previous.title
   );
   const excerpt =
-    previous.excerpt ||
-    firstMatch(html, [/<meta\s+name=["']description["']\s+content=["']([^"']+)["']/i, /<meta\s+property=["']og:description["']\s+content=["']([^"']+)["']/i]);
+    firstMatch(html, [/<meta\s+name=["']description["']\s+content=["']([^"']+)["']/i, /<meta\s+property=["']og:description["']\s+content=["']([^"']+)["']/i]) || previous.excerpt;
   const heroKicker = stripTags(firstMatch(html, [/<p\s+class=["']hero-kicker["']>([\s\S]*?)<\/p>/i]));
-  const readingTime = previous.readingTime || heroKicker.match(/(\d+\s*Min\.)/)?.[1] || "";
+  const readingTime = heroKicker.match(/(\d+\s*Min\.)/)?.[1] || previous.readingTime || "";
   const category =
-    previous.category ||
     firstMatch(html, [/<meta\s+property=["']article:section["']\s+content=["']([^"']+)["']/i]) ||
     heroKicker.split("·")[0]?.trim() ||
+    previous.category ||
     "Journal";
-  const tags = previous.tags?.length ? previous.tags : allMatches(html, /<meta\s+property=["']article:tag["']\s+content=["']([^"']+)["']/gi);
+  const htmlTags = allMatches(html, /<meta\s+property=["']article:tag["']\s+content=["']([^"']+)["']/gi);
+  const tags = htmlTags.length ? htmlTags : previous.tags || [];
   const imageFromHtml = normalizeAssetUrl(
     firstMatch(html, [
       /<meta\s+property=["']og:image["']\s+content=["']([^"']+)["']/i,

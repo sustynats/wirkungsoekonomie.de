@@ -3,7 +3,7 @@
 Stand: 2026-08-14 · Technisch nutzbar: [`capability-graph.json`](capability-graph.json)
 
 ```
-WÖk-Kernmethodik (Buch · WÖMM 2.0 · WÖMS 2.0 · Begriffsleitfaden v1.3)
+WÖk-Kernmethodik (Buch · WÖMM 2.0 · WÖMS 2.0 · Begriffsleitfaden v1.5)
 │
 ├── Normative Ebene
 │   ├── SDGs/Agenda 2030 ──┐

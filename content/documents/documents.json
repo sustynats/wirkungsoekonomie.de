@@ -1863,10 +1863,10 @@
     {
       "id": "woek-begriffsleitfaden-fuehrend",
       "slug": "woek-begriffsleitfaden-fuehrend",
-      "title": "WÖk-Begriffsleitfaden führend v1.4",
+      "title": "WÖk-Begriffsleitfaden führend v1.5",
       "subtitle": "Maßgebliche Sprachreferenz der Wirkungsökonomie",
-      "fileName": "WOeK_Begriffsleitfaden_fuehrend_v1.4.pdf",
-      "filePath": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.4.pdf",
+      "fileName": "WOeK_Begriffsleitfaden_fuehrend_v1.5.pdf",
+      "filePath": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.5.pdf",
       "contentHtmlPath": "content/documents/online/woek-begriffsleitfaden-fuehrend.inc",
       "documentType": "redaktionsgrundlage",
       "status": "führend",
@@ -1877,12 +1877,12 @@
         "Akademie"
       ],
       "level": "fortgeschritten",
-      "summaryShort": "Führende Sprachreferenz v1.4 mit Nachhaltigkeit als langfristiger Wirkungsresilienz sowie IOOI als Wirkpfad innerhalb der WÖk-Wirkungsarchitektur.",
-      "whatToExpect": "Ein verbindlicher Referenzrahmen für konsistente WÖk-Sprache mit Definitionen, Abgrenzungen, Resilienz, IOOI, Wirkpfad, Evidenz, Wirkungsbewertung, Nichtkompensation, Transformation, Rückkopplung, Quellen und bevorzugten Formulierungen.",
+      "summaryShort": "Führende Sprach- und Methodenreferenz v1.5: IOOI ist eine externe, optionale Results Chain; die WÖk-Wirkungsarchitektur verbindet Vorwirkung, Evidenz, Bewertung, Schutz, Rückkopplung und Lernen.",
+      "whatToExpect": "Ein verbindlicher Referenzrahmen für konsistente WÖk-Sprache mit Systemhierarchie, sechsmoduliger Wirkungsarchitektur, Resilienz, IOOI, Wirkungspfad, Evidenz, Bewertung, Nichtkompensation, Wirkungsradar, Transformation, Rückkopplung, Quellen und Migrationsmatrix.",
       "keyQuestions": [
-        "Welche Begriffe sind maßgeblich?",
-        "Wie werden Auslöser, Wirkungspotenzial, Wirkmechanismus und Wirkungsnachweis unterschieden?",
-        "Wie ordnet die WÖk IOOI, Bewertung, Nichtkompensation und Rückkopplung ein?"
+        "Welche Begriffe und Quellenhierarchien sind maßgeblich?",
+        "Wie werden Auslöser, Wirkungspotenzial, Wirkmechanismus, Wirkungsermittlung, Nachweis und Bewertung unterschieden?",
+        "Wie ordnet die WÖk IOOI, Wirkungspfad, Nichtkompensation, Wirkungsradar und Rückkopplung ein?"
       ],
       "topics": [
         "Begriffe",
@@ -1891,6 +1891,8 @@
         "Wirkungsresilienz",
         "Systemresilienz",
         "IOOI",
+        "Wirkungspfad",
+        "Wirkungsradar",
         "Wirkungsarchitektur"
       ],
       "methods": [
@@ -1905,20 +1907,79 @@
         "grundlagenpapier-wirkungsoekonomie",
         "leitbild-mensch-planet-demokratie"
       ],
-      "version": "v1.4",
-      "date": "2026-08-14",
-      "editorialNote": "Aus der kumulativen Markdown-Quelle und versionierten Resilienz- sowie IOOI-Deltas als öffentliche Onlinefassung und PDF-Exportfassung veröffentlicht. Version 1.0 bis 1.3 bleiben als zitierfähige ältere Fassungen erhalten.",
+      "version": "v1.5",
+      "date": "2026-08-15",
+      "editorialNote": "Vollständige, geprüfte Version 1.5. Sie präzisiert IOOI als externe, optionale Results-Chain-Methode und ordnet die eigenständige WÖk-Wirkungsarchitektur, Wirkungspfade und das Wirkungsradar neu. Version 1.0 bis 1.4 bleiben als zitierfähige ältere Fassungen erhalten.",
       "downloadAllowed": true,
       "previewAllowed": true,
       "isLeadingReference": true,
       "section": "Führende Referenzen",
       "order": 430,
       "fileType": "pdf",
+      "fileSize": "663 KB",
+      "pageCount": 34,
+      "estimatedReadingTime": "58 Min.",
+      "replaces": [],
+      "replacedBy": "",
+      "legalNotice": "",
+      "internalNote": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "woek-begriffsleitfaden-fuehrend-v1-4",
+      "slug": "woek-begriffsleitfaden-fuehrend-v1-4",
+      "title": "WÖk-Begriffsleitfaden führend v1.4",
+      "subtitle": "Zitierfähige Archivfassung der maßgeblichen Sprachreferenz",
+      "fileName": "WOeK_Begriffsleitfaden_fuehrend_v1.4.pdf",
+      "filePath": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.4.pdf",
+      "documentType": "redaktionsgrundlage",
+      "status": "archiviert",
+      "visibility": "archive",
+      "audience": [
+        "Redaktion",
+        "Fachöffentlichkeit",
+        "Akademie"
+      ],
+      "level": "fortgeschritten",
+      "summaryShort": "Archivierte Fassung v1.4 des Begriffsleitfadens; sie dokumentiert den vorherigen IOOI-Stand und bleibt für frühere Zitate unverändert erhalten.",
+      "whatToExpect": "Die frühere, zitierfähige Fassung der WÖk-Sprachreferenz. Für den aktuellen Begriffsstand gilt v1.5.",
+      "keyQuestions": [
+        "Wie lautete der dokumentierte Begriffsstand v1.4?",
+        "Wo ist die aktuelle Fassung v1.5?"
+      ],
+      "topics": [
+        "Begriffe",
+        "Glossar",
+        "Archiv",
+        "IOOI",
+        "Wirkungsarchitektur"
+      ],
+      "methods": [
+        "Begriffliche Orientierung"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "relatedDocuments": [
+        "woek-begriffsleitfaden-fuehrend"
+      ],
+      "version": "v1.4",
+      "date": "2026-08-14",
+      "replacedBy": "woek-begriffsleitfaden-fuehrend",
+      "editorialNote": "Archivierte Originalfassung. Nicht still überschrieben; für den aktuellen Begriffsstand siehe Version 1.5.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Archiv",
+      "order": 431,
+      "fileType": "pdf",
       "fileSize": "417 KB",
       "pageCount": 28,
       "estimatedReadingTime": "48 Min.",
       "replaces": [],
-      "replacedBy": "",
       "legalNotice": "",
       "internalNote": "",
       "author": "",
@@ -1942,10 +2003,10 @@
       ],
       "level": "fortgeschritten",
       "summaryShort": "Archivierte Fassung v1.3 des Begriffsleitfadens mit der damals führenden Resilienzsystematik.",
-      "whatToExpect": "Die frühere, zitierfähige Fassung der WÖk-Sprachreferenz. Für den aktuellen Begriffsstand gilt v1.4.",
+      "whatToExpect": "Die frühere, zitierfähige Fassung der WÖk-Sprachreferenz. Für den aktuellen Begriffsstand gilt v1.5.",
       "keyQuestions": [
         "Wie lautete der dokumentierte Begriffsstand v1.3?",
-        "Wo ist die aktuelle Fassung v1.4?"
+        "Wo ist die aktuelle Fassung v1.5?"
       ],
       "topics": [
         "Begriffe",
@@ -1967,7 +2028,7 @@
       "version": "v1.3",
       "date": "2026-07-30",
       "replacedBy": "woek-begriffsleitfaden-fuehrend",
-      "editorialNote": "Archivierte Originalfassung. Nicht still überschrieben; für den aktuellen Begriffsstand siehe Version 1.4.",
+      "editorialNote": "Archivierte Originalfassung. Nicht still überschrieben; für den aktuellen Begriffsstand siehe Version 1.5.",
       "downloadAllowed": true,
       "previewAllowed": true,
       "section": "Archiv",
@@ -2000,10 +2061,10 @@
       ],
       "level": "fortgeschritten",
       "summaryShort": "Archivierte Fassung v1.2 des Begriffsleitfadens; für frühere Zitate unverändert erhalten.",
-      "whatToExpect": "Die frühere, zitierfähige Fassung der WÖk-Sprachreferenz. Für den aktuellen Begriffsstand gilt v1.4.",
+      "whatToExpect": "Die frühere, zitierfähige Fassung der WÖk-Sprachreferenz. Für den aktuellen Begriffsstand gilt v1.5.",
       "keyQuestions": [
         "Wie lautete der dokumentierte Begriffsstand v1.2?",
-        "Wo ist die aktuelle Fassung v1.4?"
+        "Wo ist die aktuelle Fassung v1.5?"
       ],
       "topics": [
         "Begriffe",
@@ -2024,7 +2085,7 @@
       "version": "v1.2",
       "date": "2026-07-30",
       "replacedBy": "woek-begriffsleitfaden-fuehrend",
-      "editorialNote": "Archivierte Originalfassung. Nicht still überschrieben; für den aktuellen Begriffsstand siehe Version 1.4.",
+      "editorialNote": "Archivierte Originalfassung. Nicht still überschrieben; für den aktuellen Begriffsstand siehe Version 1.5.",
       "downloadAllowed": true,
       "previewAllowed": true,
       "section": "Archiv",
@@ -2057,10 +2118,10 @@
       ],
       "level": "fortgeschritten",
       "summaryShort": "Archivierte Fassung v1.0 des Begriffsleitfadens; für frühere Zitate unverändert erhalten.",
-      "whatToExpect": "Die frühere, zitierfähige Fassung der WÖk-Sprachreferenz. Für den aktuellen Begriffsstand gilt v1.3.",
+      "whatToExpect": "Die frühere, zitierfähige Fassung der WÖk-Sprachreferenz. Für den aktuellen Begriffsstand gilt v1.5.",
       "keyQuestions": [
         "Wie lautete der dokumentierte Begriffsstand v1.0?",
-        "Wo ist die aktuelle Fassung v1.3?"
+        "Wo ist die aktuelle Fassung v1.5?"
       ],
       "topics": [
         "Begriffe",
@@ -2081,7 +2142,7 @@
       "version": "v1.0",
       "date": "2026-05-21",
       "replacedBy": "woek-begriffsleitfaden-fuehrend",
-      "editorialNote": "Archivierte Originalfassung. Nicht still überschrieben; für den aktuellen Begriffsstand siehe Version 1.3.",
+      "editorialNote": "Archivierte Originalfassung. Nicht still überschrieben; für den aktuellen Begriffsstand siehe Version 1.5.",
       "downloadAllowed": true,
       "previewAllowed": true,
       "section": "Archiv",

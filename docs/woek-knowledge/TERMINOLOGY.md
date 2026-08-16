@@ -1,10 +1,10 @@
 # Terminology — Verbindliche WÖk-Begriffe
 
-Stand: 2026-08-14 · Führende Quelle: **WÖk-Begriffsleitfaden führend v1.3** (30.07.2026) — Live-HTML `content/documents/online/woek-begriffsleitfaden-fuehrend.inc`, PDF `public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.3.pdf`.
+Stand: 2026-08-15 · Führende Quelle: **WÖk-Begriffsleitfaden führend v1.5** (15.08.2026) — Live-HTML `content/documents/online/woek-begriffsleitfaden-fuehrend.inc`, PDF `public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.5.pdf`.
 Maschinenlesbar: [`terminology.yaml`](terminology.yaml) · Öffentliches Glossar: `begriffe/` (2281 Seiten, `assets/data/glossary-lookup.json`).
-Regel: Bei Konflikt gilt der Begriffsleitfaden v1.3; das Glossar nur, soweit leitfadenkonform. v1.0/v1.1/v1.2 sind archiviert/aktuell, **nicht** führend.
+Regel: Bei Konflikt gilt der Begriffsleitfaden v1.5; das Glossar nur, soweit leitfadenkonform. v1.0 bis v1.4 sind historische, zitierfähige Fassungen und **nicht** führend.
 
-## Kernbegriffe (Definitionen aus v1.3, §7 — Abweichungen einzeln vermerkt)
+## Kernbegriffe (Definitionen aus v1.5, §10 — Abweichungen einzeln vermerkt)
 
 | Begriff | Definition (wortnah) | Anmerkung |
 |---|---|---|
@@ -14,7 +14,10 @@ Regel: Bei Konflikt gilt der Begriffsleitfaden v1.3; das Glossar nur, soweit lei
 | **Positive Wirkung** | „Liegt vor, wenn eine Veränderung auf die SDGs, die Agenda 2030 und SDG+ einzahlt." | Immer referenzrahmen-relativ. |
 | **Negative Wirkung** | „Liegt vor, wenn eine Veränderung die SDGs, die Agenda 2030 oder SDG+ schwächt, blockiert oder zerstört." | |
 | **Positive Netto-Wirkung** | Zentrale Zielgröße: „liegt vor, wenn eine Aktivität unter Berücksichtigung positiver, negativer, indirekter und nicht-kompensierbarer Wirkungen Mensch, Planet und Demokratie insgesamt stärkt." | Keine einfache Addition; Nichtkompensation beachten. |
-| **Wirkpfad / Wirkungspfad** | „Beschreibt, wie aus einer Handlung, einem Produkt, einer Regel, einem Narrativ oder einem Kapitalfluss Wirkung entstehen kann." | Geeignet, solange kein vollständiger Wirkungsnachweis vorliegt; präziser als „Wirkungskette". |
+| **Wirkpfad / Wirkungspfad** | Versionierte und evidenzsensible Darstellung von Auslösern, Mechanismen, Bedingungen, möglichen oder beobachteten Zustandsveränderungen, Folgen und Rückkopplungen. | Kann einen IOOI-kompatiblen Abschnitt enthalten; ist weder durch IOOI definiert noch ein Kausalbeweis. |
+| **IOOI** | Externe, optionale Results-Chain-Methode: Input, Output, Outcome und Impact. | Aktivität kann zusätzlich zwischen Input und Output stehen; IOOI ist kein Grundmodell der WÖk. |
+| **Wirkungsradar** | WÖk-Orientierungs- und Analyseinstrument beziehungsweise Portal für Wirkungsfelder, Potenziale, Risiken, blinde Flecken, Wirkungspfade und Wissensstände. | Nicht als Bezeichnung eines Spinnennetzdiagramms verwenden. |
+| **Wirkungsprofil im Radardiagramm** | Grafische Spinnennetzdarstellung mehrerer Wirkungsfelder oder Potenziale. | Größere Ausschläge bedeuten nicht automatisch bessere Wirkung. |
 | **Wirkungsnetz** | „Zeigt, wie mehrere Wirkungen, Wirkungspotenziale, Resonanzräume, Rückkopplungen und Systemfolgen miteinander verbunden sind." | |
 | **Wirkungsrückkopplung** | „Erkannte und bewertete Wirkung wird in Preise, Steuern, Kapitalzugang, Förderung, Beschaffung, Regulierung oder Entscheidungen zurückgeführt." | Leitsatz: „Reporting beschreibt. Wirkungsrückkopplung verändert." |
 | **Wirkungsgrenze** | „Rote Linie, ab der negative Wirkung nicht mehr durch positive Wirkungen an anderer Stelle ausgeglichen werden darf." | Beispiele: Kinderarbeit, Zwangsarbeit, irreversible ökologische Schäden. |
@@ -29,12 +32,18 @@ Regel: Bei Konflikt gilt der Begriffsleitfaden v1.3; das Glossar nur, soweit lei
 | **T-SROI** | „Modellhaftes Euro-zu-Euro-Verhältnis: diskontierter, kausal zugerechneter direkter und transformativ belegter Nettonutzen je diskontiertem Ressourceneuro." | Nicht im Leitfaden; Quelle `begriffe/t-sroi/` ≙ **Rechenstandard v1.1** (führend). Multiplikative Alt-Definitionen sind ersetzt. |
 | **WÖk-ID** | „Standardisierte Identifikationsnummer für einen Wirkungsindikator, ein Wirkungsfeld oder eine bewertbare Wirkungseinheit." | Register: Master Items v1.3 (621 IDs) + `assets/data/woek-id-register.json`. |
 
-## Neu in v1.3: Resilienzsystematik & Nachhaltigkeit
+## Präzisierungen in v1.5: eigenständige Wirkungsarchitektur
+
+IOOI ist ab v1.5 eine externe, optionale Results-Chain-Methode. Die WÖk beginnt bereits bei Auslöser, Wirkungspotenzial, Wirkungsrisiko und Wirkmechanismus und verbindet Wirkungsermittlung mit Evidenz und Zurechnung, Bewertung, Schutz und Systemprüfung sowie Rückkopplung und Lernen.
+
+Nichtkompensation ist das Schutzprinzip; Reverse Merit Order ist eine Bewertungslogik, die dieses Prinzip operationalisieren kann. Neutral, ambivalent und offen beziehungsweise nicht ausreichend bewertbar sind getrennte Einordnungen.
+
+## Resilienzsystematik & Nachhaltigkeit
 
 Führende Definition (v1.3, Abschnitt „Führende Definition Nachhaltigkeit"):
 > **„Nachhaltigkeit ist die langfristig gesicherte Wirkungsresilienz des gekoppelten Systems Mensch-Planet-Demokratie."**
 
-Hierarchie: Resilienz → Nachhaltigkeit; 8 Analysebausteine (Delta-Quelle: `source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.3-resilienzpraezisierung.md`). Schreibweisen-Inkonsistenz im Dokument selbst (Bindestrich vs. Halbgeviertstrich bei „Mensch–Planet–Demokratie") — bei Neuveröffentlichungen Halbgeviertstrich verwenden.
+Hierarchie: Resilienz → Nachhaltigkeit; acht Analysebausteine. Bei Neuveröffentlichungen die Schreibweise Mensch–Planet–Demokratie verwenden.
 
 ## Zulässige/problematische Verwendung (aus AGENTS.md + Leitfaden)
 

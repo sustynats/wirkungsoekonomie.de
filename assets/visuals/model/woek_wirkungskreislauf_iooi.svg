@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1110" viewBox="0 0 1800 1110" role="img" aria-labelledby="title desc">
   <title id="title">Der Wirkungskreislauf der Wirkungsökonomie</title>
-  <desc id="desc">Von Auslösern, Wirkungspotenzialen und Wirkmechanismen über den IOOI-Wirkpfad zu Evidenz, Bewertung, Schutzregeln, Rückkopplung und Lernen.</desc>
+  <desc id="desc">Von Auslösern, Wirkungspotenzialen und Wirkmechanismen über einen Wirkungspfad mit optionalem IOOI-Abschnitt zu Evidenz, Bewertung, Schutzregeln, Rückkopplung und Lernen.</desc>
   <defs>
     <style>
       .bg{fill:#F7F4EC}.navy{fill:#0B1B36}.green{fill:#2D7F5F}.gold{fill:#C9932E}.coral{fill:#C95749}.text{fill:#2E333C}
@@ -33,8 +33,8 @@
   <line x1="1285" y1="305" x2="1320" y2="305" class="oline" marker-end="url(#arrow)"/>
 
   <rect x="1335" y="220" width="360" height="170" rx="18" class="softg"/>
-  <text x="1363" y="264" class="num green">4</text><text x="1415" y="264" class="h navy">IOOI-Wirkpfad</text>
-  <text x="1363" y="305" class="body text">Input → Aktivität → Output</text><text x="1363" y="330" class="body text">→ Outcome → Impact.</text>
+  <text x="1363" y="264" class="num green">4</text><text x="1415" y="264" class="h navy">Wirkpfad</text>
+  <text x="1363" y="305" class="body text">optional: IOOI-Abschnitt</text><text x="1363" y="330" class="body text">Input → [Aktivität] → Output → Outcome → Impact.</text>
 
   <rect x="105" y="490" width="360" height="170" rx="18" class="softc"/>
   <text x="133" y="534" class="num coral">5</text><text x="185" y="534" class="h navy">Evidenz und Folgen</text>
@@ -65,5 +65,5 @@
   <path d="M1455 920 C1550 1000 300 1000 345 920" class="oline" marker-end="url(#arrow)"/>
 
   <rect x="145" y="970" width="1510" height="72" rx="18" class="card"/>
-  <text x="190" y="1015" class="body navy">Wirkungspotenzial ist nicht Wirkung. Ein plausibler Wirkmechanismus ist kein Wirkungsnachweis. IOOI erklärt den Wirkpfad; die Wirkungsökonomie ergänzt Maßstab, Schutzregeln und Rückkopplung.</text>
+  <text x="190" y="1015" class="body navy">Wirkungspotenzial ist nicht Wirkung. Ein plausibler Wirkmechanismus ist kein Wirkungsnachweis. IOOI kann einen Abschnitt strukturieren; die Wirkungsökonomie ist eigenständig.</text>
 </svg>

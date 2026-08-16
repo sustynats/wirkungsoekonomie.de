@@ -1,6 +1,6 @@
 # Glossar der Wirkungsökonomie
 
-Stand: 2026-08-02T19:45:36.683Z
+Stand: 2026-08-16T06:09:38.422Z
 
 ## 5. P = Planet
 
@@ -158,6 +158,14 @@ Der Begriff ist wichtig, um wiederaufladbare Speicher von Primärbatterien abzug
 
 Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
+## Aktivität
+
+Aktivität bezeichnet das konkrete Handeln, durch das Inputs mobilisiert werden, um Leistungen oder Veränderungen zu ermöglichen.
+
+Aktivitäten sind die ausgeführten Handlungen einer Intervention: etwa eine Beratung, ein Kurs, eine Produktion, eine Gesetzesänderung, eine Beschaffung, eine Investition oder eine Kommunikationsmaßnahme. Im IOOI-Modell liegt die Aktivität logisch zwischen Input und Output.
+
+Eine Aktivität ist weder mit ihrer Absicht noch mit ihrem Ergebnis gleichzusetzen. Sie kann stattfinden, ohne dass der erwartete Output erreicht wird oder eine Veränderung bei Betroffenen eintritt.
+
 ## Alan Watts / Daoismus
 
 Alan Watts und Daoismus sind als Erinnerung relevant, dass der Mensch nicht außerhalb der Welt steht, die er steuert.
@@ -189,6 +197,22 @@ Allgemeines Gleichgewicht beschreibt ein theoretisches Modell, in dem alle Märk
 Allgemeines Gleichgewicht beschreibt ein theoretisches Modell, in dem alle Märkte gleichzeitig im Gleichgewicht sind.
 
 Nützlich als Modell, aber begrenzt in rückgekoppelten, planetar begrenzten und politisch-medial beeinflussten Systemen.
+
+## Allmende
+
+Eine Allmende ist eine gemeinsame Ressource oder Systemleistung, deren Nutzung mehreren Akteuren offensteht und deren Erhalt gemeinsame Regeln, Verantwortung oder Governance benötigt.
+
+Allmenden können natürliche Ressourcen wie Grundwasser, Fischbestände oder Böden sein. In einer erweiterten systemischen Perspektive können auch gemeinsame Infrastrukturen, Informationsräume oder regenerative Systemleistungen als Allmende betrachtet werden.
+
+Nicht jede Allmende ist tragisch. Zum Problem wird sie, wenn Zugriff, Nutzung und Wirkungstragung nicht wirksam geregelt sind und der gemeinsame Bestand dadurch geschwächt wird.
+
+## Allmendedilemma
+
+Ein Allmendedilemma entsteht, wenn individuell vorteilhafte Nutzung einen gemeinsamen Bestand oder eine gemeinsame Systemleistung schwächt und die Kosten der Schädigung auf viele verteilt werden.
+
+Das Dilemma beschreibt eine Konfliktlage zwischen kurzfristigem Einzelvorteil und dem Erhalt eines gemeinsamen Bestands. Es ist keine Aussage darüber, dass Menschen oder Kooperation zwangsläufig scheitern.
+
+Entscheidend sind Regeln, Beteiligung, nachvollziehbare Zuständigkeiten, Monitoring und die Frage, ob die Folgen der Nutzung dorthin zurückwirken, wo Entscheidungen getroffen werden.
 
 ## Allmendeproblem
 
@@ -358,6 +382,14 @@ Die Anti-SLAPP-Richtlinie schützt Personen, die sich öffentlich beteiligen, vo
 
 Für die WÖk ist sie ein Schutzinstrument für demokratische Rückkopplung. Öffentlichkeit kann nur wirken, wenn Kritik, Journalismus, Wissenschaft und Zivilgesellschaft nicht durch missbräuchliche Klagen eingeschüchtert werden.
 
+## Anticommons
+
+Eine Anticommons-Situation entsteht, wenn zu viele voneinander unabhängige Ausschluss-, Veto- oder Kontrollrechte sinnvolle Nutzung, Kooperation oder Innovation blockieren.
+
+Anticommons beschreibt die Kehrseite eines ungeregelten Zugriffs auf gemeinsame Güter. Zu viele fragmentierte Rechte, Nachweise oder Schnittstellen können verhindern, dass eine sinnvolle Handlung zustande kommt, obwohl sie im Ergebnis positive Wirkung hätte.
+
+Der Begriff richtet sich nicht gegen Rechte, Sicherheit oder demokratische Kontrolle. Er fragt, ob deren Zusammenspiel unverhältnismäßige Blockaden erzeugt und ob es transparente, rechtsstaatliche Koordinationswege gibt.
+
 ## Antidiskriminierung
 
 Antidiskriminierung bezeichnet Regeln, Institutionen, Praktiken und Kulturen, die Benachteiligung verhindern, gleiche Teilhabe ermöglichen und Schutz vor Herabwürdigung, Ausschluss und Gewalt sichern.
@@ -518,6 +550,12 @@ Assurance bezeichnet prüferische Sicherheit über Berichtsinformationen.
 
 Für die WÖk ist Assurance wichtig, weil geprüfte Daten belastbarer sind. Geprüfte Berichtsdaten bleiben aber Berichtsdaten, bis sie in Wirkungsbewertung und Rückkopplung übersetzt werden.
 
+## Assurance Game
+
+Ein Assurance Game beschreibt eine Lage, in der Kooperation für alle vorteilhaft wäre, aber einzelne Akteure wegen unsicherer Mitwirkung anderer beim kleineren sicheren Vorteil bleiben.
+
+Das Problem ist nicht zwingend Defektion oder schlechte Absicht, sondern fehlende Verlässlichkeit über die Beteiligung anderer. Glaubwürdige Pfade, Garantien, gemeinsame Standards, Vorfinanzierung und Koordination können hier geeigneter sein als Strafe.
+
 ## Astroturfing
 
 Astroturfing beschreibt künstlich erzeugte Graswurzelbewegungen, die wie spontane Bürger:innenbewegungen aussehen, tatsächlich aber organisiert oder finanziert gesteuert werden.
@@ -605,6 +643,14 @@ Das Ausland-statt-Inland-Narrativ rahmt öffentliche Ausgaben für international
 Das Ausland-statt-Inland-Narrativ rahmt öffentliche Ausgaben für internationale Verantwortung als Gegensatz zu nationaler Daseinsvorsorge. Wirkungsökonomisch ist diese Gegenüberstellung oft verkürzt, weil Sicherheit, Klima, Lieferketten, Migration und Demokratie grenzüberschreitend wirken.
 
 In der Wirkungsökonomie wird der Begriff verwendet, um Wirkungen als tatsächliche Zustandsveränderungen sichtbar, bewertbar und rückkopplungsfähig zu machen. Positive Wirkung wird am Referenzrahmen SDGs, Agenda 2030 und SDG+ eingeordnet; als Zielgröße dient positive Netto-Wirkung für Mensch, Planet und Demokratie.
+
+## Auslöser
+
+Ein Auslöser ist eine Handlung, ein Unterlassen, ein Produkt, ein Gesetz, ein Preis, ein Narrativ, eine Technologie, ein Kapitalfluss oder ein anderes Ereignis, das Wirkung hervorrufen kann.
+
+Auslöser markieren den Anfang eines möglichen Wirkpfads. Sie können beabsichtigt oder unbeabsichtigt, individuell oder institutionell sein. Ein Auslöser kann erwünschte oder unerwünschte Wirkung, Nebenwirkungen, Wechselwirkungen, Rebound oder auch keine relevante Veränderung auslösen.
+
+Zwischen Auslöser und tatsächlicher Wirkung liegen Bedingungen, Wirkmechanismen, Kontext und Unsicherheit. Der Auslöser ist deshalb keine Kurzform für Kausalität oder Verantwortungszuweisung.
 
 ## Äußere Loops
 
@@ -742,6 +788,14 @@ Gefahren, Ursachen, präventive und reaktive Barrieren sowie Konsequenzen system
 
 P07 gehört zur Kategorie „Qualität, operative Resilienz, Kontrollen und integrierte Assurance“. Verbindlicher Output: Bow-Tie mit Top Event, Ursachen, Folgen, Barrieren, Ownern, Wirksamkeit, Degradation und KII.
 
+## Baseline
+
+Eine Baseline beschreibt die Ausgangsbedingungen vor einer Intervention oder zu Beginn eines Beobachtungszeitraums, gegen die spätere Veränderungen verglichen werden.
+
+Eine Baseline kann aus Messwerten, qualitativen Beobachtungen, Vergleichsdaten oder einer klar dokumentierten Ausgangslage bestehen. Sie ist eine wichtige Grundlage, um Veränderungen über Zeit zu erkennen und nicht eine Momentaufnahme mit einem Ergebnis zu verwechseln.
+
+Eine Baseline ersetzt kein Counterfactual. Sie zeigt, wo ein System oder eine Gruppe startete; die Frage, was ohne die Maßnahme passiert wäre, erfordert zusätzliche Vergleichs- oder Modellannahmen.
+
 ## Baseline-Verschiebung
 
 Baseline-Verschiebung beschreibt die Normalisierung eines neuen Grundzustands, etwa erhöhter Erregung, stärkeren Misstrauens oder dauerhafter Polarisierung.
@@ -877,6 +931,14 @@ Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Liefe
 Bedeutung entsteht nicht nur durch Definition, sondern durch Gebrauch in sozialen Praktiken.
 
 Ein Wort wirkt anders, je nachdem, wo, von wem, mit welchem Ziel und in welchem Sprachspiel es verwendet wird.
+
+## Bedingte Kooperation
+
+Bedingte Kooperation bezeichnet die Bereitschaft, zum gemeinsamen Nutzen beizutragen, wenn andere ebenfalls nachvollziehbar und fair beitragen oder wenn hierfür glaubwürdige institutionelle Sicherungen bestehen.
+
+Bedingte Kooperation liegt zwischen bedingungslosem Vertrauen und pauschaler Verweigerung. Sie kann wachsen, wenn Beiträge sichtbar, Regeln verständlich, Missbrauch begrenzt und Fehler korrigierbar sind. Sie kann schwinden, wenn Ausbeutung folgenlos bleibt oder Verfahren willkürlich erscheinen.
+
+Der Begriff beschreibt ein Beziehungsmuster und keine persönliche Eigenschaft, die bewertet, gespeichert oder zu einem Menschen-Score verdichtet werden dürfte.
 
 ## Bedingungsloses Grundeinkommen
 
@@ -1406,6 +1468,12 @@ Ein CapEx-Plan beschreibt geplante Investitionsausgaben für Anlagen, Infrastruk
 
 Ein CapEx-Plan beschreibt geplante Investitionsausgaben für Anlagen, Infrastruktur, Gebäude, Technik oder andere langfristige Vermögenswerte.
 
+## Capture
+
+Capture bezeichnet die Vereinnahmung von Regeln, Standards, Datenzugängen oder Bewertungsinstitutionen, sodass private Interessen als öffentliche Wirkung erscheinen können.
+
+Capture kann etwa über einseitigen Zugang zu Daten, Interessenkonzentration, Personalwechsel, Einfluss auf Benchmarks oder abhängige Prüfstellen entstehen. Es ist besonders riskant, wenn dieselbe Institution Methoden festlegt und zugleich Einzelfälle sanktioniert oder wirtschaftliche Vorteile verteilt.
+
 ## Capture Price / Marktwert von Strom
 
 Der Capture Price beschreibt den durchschnittlichen Erlös einer Erzeugungstechnologie abhängig von den Zeiten ihrer Einspeisung.
@@ -1534,6 +1602,14 @@ Die Chicago School steht für marktorientierte ökonomische Ansätze, Monetarism
 
 Anschlussfähig bei Anreizen, problematisch bei Wirkungsblindheit und Externalitäten.
 
+## Chicken Game
+
+Ein Chicken Game beschreibt eine Eskalationslage, in der jede Seite möchte, dass die andere nachgibt, während gegenseitiges Festhalten für alle besonders schädlich ist.
+
+Die Lage unterscheidet sich vom Gefangenendilemma: Das einseitige Nachgeben ist hier häufig der ungünstigste individuelle Ausgang, während gegenseitige Eskalation den größten gemeinsamen Schaden auslöst. Dadurch können Drohungen, Gesichtsverlust und unklare Grenzen die Deeskalation erschweren.
+
+Mögliche Auswege sind überprüfbare Informationen, glaubwürdige und verhältnismäßige Grenzen, Verfahren zur Deeskalation sowie gesicherte Rückkehr- und Korrekturpfade.
+
 ## Circular Economy / Regenerative Economy
 
 Circular und Regenerative Economy zielen darauf, Materialien im Kreislauf zu halten und ökologische sowie soziale Systeme zu erhalten oder zu regenerieren.
@@ -1643,6 +1719,14 @@ Corporate Capture beschreibt die Vereinnahmung politischer, regulatorischer oder
 Corporate Capture beschreibt die Vereinnahmung politischer, regulatorischer oder öffentlicher Prozesse durch Unternehmensinteressen.
 
 Wirkungsrisiko, wenn private Macht öffentliche Regeln, Evidenz oder Zugänge systematisch prägt.
+
+## Counterfactual
+
+Ein Counterfactual beschreibt den plausiblen Vergleichsfall, was ohne eine betrachtete Maßnahme, Intervention oder Entscheidung wahrscheinlich passiert wäre.
+
+Counterfactuals sind nötig, weil beobachtete Veränderungen auch durch andere Ursachen, Trends, externe Schocks oder parallele Maßnahmen entstehen können. Je nach Fall werden sie mit Kontrollgruppen, Vorher-Nachher-Vergleichen, Zeitreihen, Vergleichsregionen, Simulationen oder transparenten Gegenhypothesen angenähert.
+
+Ein Counterfactual ist häufig keine unmittelbar beobachtbare Tatsache, sondern eine methodisch begründete Vergleichsannahme. Seine Qualität und Unsicherheit müssen offenliegen.
 
 ## Cradle to Cradle
 
@@ -3284,6 +3368,14 @@ Externalisierung beschreibt die Verlagerung von Kosten, Risiken oder Schäden au
 
 Externalisierung macht Schäden für Verursacher:innen unsichtbar oder billiger, während andere die Folgen tragen.
 
+## Externalisierungslücke
+
+Die Externalisierungslücke ist die Differenz zwischen den zurechenbaren negativen Wirkungen einer Aktivität und dem Anteil, der im Entscheidungs-, Preis-, Haftungs-, Rückstellungs- oder Steuerkonto zurückwirkt.
+
+Die Lücke macht sichtbar, wo Folgen zwar zurechenbar oder zumindest beschreibbar sind, aber noch nicht in der Entscheidungssituation ankommen. Sie kann monetär, physisch oder als Wirkungs- und Risikovektor dargestellt werden.
+
+Eine große Lücke ist kein Beweis für eine einfache monetäre Lösung. Sie kann auf fehlende Daten, unklare Zuständigkeiten, nicht kompensierbare Grenzen oder institutionelle Fehlanreize hinweisen.
+
 ## Externalität
 
 Externalitäten sind Kosten oder Nutzen, die bei Dritten entstehen und nicht im Marktpreis enthalten sind.
@@ -3728,6 +3820,14 @@ Die Wirkungsökonomie beantwortet diese Einwände durch eine klare Abgrenzung:
 
 Was sich ändert, ist die Qualität der Rückkopplung. Preise, Steuern, Beschaffung, Kapitalzugang, Versicherbarkeit und öffentliche Haushalte sollen nicht länger wirkungsblind sein. Wer Schäden externalisiert, soll keinen künstlichen Wettbewerbsvorteil haben. Wer positive Netto-Wirkung erzeugt, soll bessere Bedingungen erhalten.
 
+## Freiwilligendilemma
+
+Ein Freiwilligendilemma liegt vor, wenn eine gemeinsame Leistung nur zustande kommt, wenn mindestens eine Seite handelt, während für jede einzelne Seite Abwarten zunächst günstiger erscheinen kann.
+
+Das Dilemma betrifft etwa Erstinvestitionen, Pflege gemeinsamer Infrastruktur oder das Übernehmen einer notwendigen, aber nicht exklusiv vergüteten Aufgabe. Wenn alle auf andere warten, bleibt die Leistung aus. Wer handelt, kann jedoch unverhältnismäßig belastet werden.
+
+Die Diagnose ersetzt keine Prüfung von Fähigkeit, Zumutbarkeit oder gerechter Lastenteilung. Sie beschreibt eine institutionelle Unterversorgungsgefahr, keine moralische Pflicht einzelner Personen.
+
 ## Fremdenfeindlichkeit / Xenophobie
 
 Fremdenfeindlichkeit bezeichnet ablehnende, ausgrenzende oder feindselige Haltungen gegenüber Personen oder Gruppen, die als „fremd“ markiert werden. Diese Fremdheit ist keine objektive Eigenschaft, sondern eine soziale Zuschreibung.
@@ -3863,6 +3963,12 @@ Gedankenlosigkeit beschreibt bei Arendt fehlendes prüfendes Denken und fehlende
 Gedankenlosigkeit beschreibt bei Arendt fehlendes prüfendes Denken und fehlende Verantwortungsübernahme im Handeln.
 
 Wirkungsrisiko, wenn Verwaltung, Organisationen oder Individuen Regeln ausführen, ohne Folgen für Menschen und Demokratie mitzudenken.
+
+## Gefangenendilemma
+
+Das Gefangenendilemma beschreibt eine Lage, in der Defektion für jeden einzelnen kurzfristig attraktiv sein kann, obwohl gegenseitige Kooperation für alle besser wäre.
+
+Im klassischen Gefangenendilemma bleibt Defektion individuell vorteilhaft, unabhängig vom Verhalten der anderen Seite. Wiederholte Beziehungen, nachvollziehbares Verhalten und glaubwürdige Korrektur können die Auszahlungslage verändern; sie rechtfertigen jedoch weder dauerhafte Stigmatisierung noch automatisierte Sanktionen.
 
 ## Gegenframe
 
@@ -4904,6 +5010,14 @@ Immobilien sind Grundstücke und Gebäude; ihre Wirkung umfasst unter anderem Wo
 
 Immobilien sind Grundstücke und Gebäude; ihre Wirkung umfasst unter anderem Wohnen, Flächenverbrauch, Energie, Infrastruktur, soziale Teilhabe und Vermögensverteilung.
 
+## Impact
+
+Impact ist ein etablierter, je nach Fachfeld unterschiedlich verwendeter Begriff für höherstufige, längerfristige oder breitere Wirkungen.
+
+In Evaluation, Wirkungsorientierung und Impact Management bezeichnet Impact häufig übergeordnete, breitere oder längerfristige Wirkungen: etwa veränderte Lebenslagen, gesellschaftliche Strukturen, Ökosysteme, Märkte oder Institutionen. Die genaue Abgrenzung zu Outcome variiert nach Methode und Anwendungsfeld; deshalb muss sie in jeder Anwendung offengelegt werden.
+
+Impact kann positiv oder negativ, beabsichtigt oder unbeabsichtigt, direkt oder indirekt sein. Der Begriff ist weder methodisch minderwertig noch automatisch ein positiver Qualitätsnachweis.
+
 ## Impact & Benefits Realization
 
 Impact & Benefits Realization verfolgt die Kette von Deliverables über Nutzung, Verhalten und Capabilities zu Benefits, Netto-Wirkung und Verstetigung.
@@ -5096,6 +5210,14 @@ Der innovative Unternehmer ist die Schumpeter-Figur der wirtschaftlichen Entwick
 
 Damit unterscheidet er sich von der bloßen Erfindung oder Invention. Eine Erfindung kann im Labor, im Kopf oder als Prototyp existieren. Innovation entsteht erst, wenn die Neuerung in Markt, Organisation, Infrastruktur oder Gesellschaft wirksam wird. Wirkungsökonomisch reicht auch das noch nicht als Fortschritt: Bewertet wird, ob die neue Kombination positive Netto-Wirkung erzeugt und schwere Schäden nicht verdeckt.
 
+## Input
+
+Input bezeichnet die Ressourcen, die für eine Aktivität, ein Projekt, ein Produkt, eine Organisation oder eine Intervention eingesetzt werden.
+
+Inputs können finanzielle, personelle, materielle, natürliche, digitale oder organisatorische Ressourcen sein: zum Beispiel Budget, Arbeitszeit, Wissen, Daten, Energie, Fläche, Infrastruktur oder Kapital. Ihre Erfassung zeigt, was eingesetzt wurde und welche Voraussetzungen eine Aktivität hatte.
+
+Ein hoher Input belegt weder die Qualität einer Leistung noch eine Veränderung bei Betroffenen. Er ist Aufwand beziehungsweise Voraussetzung, nicht Outcome, Impact oder positive Netto-Wirkung.
+
 ## Insetting
 
 Insetting bezeichnet Minderungs- oder Regenerationsmaßnahmen innerhalb der eigenen Wertschöpfungskette.
@@ -5107,6 +5229,12 @@ Insetting kann wirkungsnäher sein als externe Kompensation, muss aber ebenfalls
 Inside-out beschreibt Wirkungen eines Unternehmens auf Umwelt und Menschen; Outside-in beschreibt Nachhaltigkeitsrisiken für das Unternehmen.
 
 Die WÖk braucht beide Blickrichtungen, übersetzt sie aber in Wirkungsbewertung, Steuerung und Rückkopplung.
+
+## Institutionelle Vertrauenswürdigkeit
+
+Institutionelle Vertrauenswürdigkeit bezeichnet die überprüfbare Qualität von Institutionen, berechenbar, fair, rechtsgebunden, korrigierbar und gegen Vereinnahmung geschützt zu handeln.
+
+Vertrauenswürdigkeit ist nicht bloß hohe Zustimmung oder persönliche Reputation. Sie zeigt sich in fairen Verfahren, begründbaren Entscheidungen, Korrekturmöglichkeiten, Rechtsschutz und einem Schutz gegen Capture. Auch autoritäre oder korrupte Systeme können gruppenintern Vertrauen erzeugen, ohne institutionell vertrauenswürdig zu sein.
 
 ## Institutioneller Rassismus
 
@@ -5202,6 +5330,14 @@ Interessenvertretung bedeutet, Anliegen, Perspektiven oder Betroffenheiten gegen
 
 Legitim, wenn sichtbar, nachvollziehbar und plural rückgekoppelt.
 
+## Intergenerationelles Dilemma
+
+Ein intergenerationelles Dilemma entsteht, wenn heutige Vorteile oder vermiedene Kosten zu Lasten von Menschen in späteren Zeiträumen gehen, die an der gegenwärtigen Entscheidung nicht gleichberechtigt beteiligt sind.
+
+Solche Dilemmata können sich über lange Zeiträume, große Entfernungen und komplexe Wirkpfade entfalten. Betroffen sind etwa ökologische Regenerationsfähigkeit, öffentliche Infrastruktur, Staatsfinanzen oder institutionelle Vertrauensgrundlagen. Kurzfristige Gewinne können deshalb mit langfristigen Risiken verbunden sein, die im aktuellen Preis oder Mandat nicht sichtbar sind.
+
+Der Begriff setzt nicht voraus, alle Zukunft präzise berechnen zu können. Er verlangt, bekannte Unsicherheiten, irreversible Schäden und Schutzgrenzen in Entscheidungen angemessen zu berücksichtigen.
+
 ## Intermittent Reinforcement
 
 Unregelmäßige Belohnung verstärkt Verhalten besonders hartnäckig.
@@ -5259,6 +5395,14 @@ Wirkungsökonomisch ist Invention zunächst Wirkungspotenzial. Sie kann später 
 Rückstand an notwendigen Investitionen in Infrastruktur, Bildung, Klima, Digitalisierung, Gesundheit oder Sicherheit.
 
 Investitionsschuld bezeichnet den Rückstand an notwendigen Investitionen, der entsteht, wenn Infrastruktur, Bildung, Klimaresilienz, Digitalisierung, Gesundheit, Sicherheit oder Verwaltung nicht ausreichend erhalten und modernisiert werden.
+
+## IOOI
+
+IOOI steht für Input, Output, Outcome und Impact. Es ist eine externe, optionale Results-Chain-Methode zur Strukturierung eines Abschnitts eines Wirkungspfads.
+
+IOOI ist ein verbreitetes Modell aus Evaluation, Wirkungsorientierung und Results-Based Management. Es ordnet eingesetzte Ressourcen, erbrachte Leistungen, eingetretene Veränderungen und weiterreichende Wirkungen. Aktivität kann zwischen Input und Output als zusätzliche Prozessstufe dargestellt werden, gehört aber nicht zum Akronym.
+
+IOOI kann einen Abschnitt eines Wirkungspfads strukturieren. Die Methode beweist weder, dass ein Outcome oder Impact tatsächlich eingetreten ist, noch dass er kausal zurechenbar oder normativ positiv ist. Dafür braucht es passende Evidenz, eine transparente Zurechnung und einen offengelegten Referenzrahmen.
 
 ## IPBES
 
@@ -5874,6 +6018,14 @@ Eine Kontraindikation ist ein Umstand, der gegen die Anwendung einer Maßnahme s
 
 Eine Kontraindikation ist ein Umstand, der gegen die Anwendung einer Maßnahme spricht, weil Risiken, Schäden oder ungeeignete Bedingungen überwiegen.
 
+## Kontribution
+
+Kontribution beschreibt den plausiblen Beitrag einer Maßnahme zu einer beobachteten Veränderung, ohne zu behaupten, sie sei deren alleinige Ursache.
+
+In komplexen Systemen entstehen Wirkungen meist durch das Zusammenwirken mehrerer Akteure, Bedingungen und Ereignisse. Kontribution prüft, welchen nachvollziehbaren Beitrag eine Maßnahme zu einer Veränderung leistet, auch wenn eine vollständige kausale Zurechnung nicht möglich oder nicht angemessen ist.
+
+Sie ist besonders wichtig bei langfristigen, systemischen oder gesellschaftlichen Wirkungen. Eine plausible Kontribution muss Daten, Mechanismen, andere Ursachen und Unsicherheit sichtbar machen.
+
 ## Kontrollbedürfnis
 
 Kontrollbedürfnis ist das Bedürfnis nach Vorhersagbarkeit und Steuerbarkeit und kann Entscheidungen, Informationssuche und den Umgang mit Unsicherheit prägen.
@@ -5888,11 +6040,33 @@ Die Konzessionsabgabe ist ein Entgelt für die Nutzung öffentlicher Wege durch 
 
 Ein Strompreisbestandteil mit kommunaler Finanzierungswirkung.
 
+## Kooperationsfähigkeit
+
+Kooperationsfähigkeit bezeichnet die Fähigkeit einer Ordnung, faire Lastenteilung, Reziprozität, Beteiligung, Konfliktlösung, Partnerwahl und Wiedergutmachung praktisch zu ermöglichen.
+
+Kooperationsfähigkeit ist kein Zustimmungswert und keine Pflicht zur Harmonie. Sie hängt von realen Alternativen, Verfahrensfairness, Schutz vor Ausbeutung und der Möglichkeit ab, Fehlverhalten zu korrigieren, ohne Menschen dauerhaft aus gemeinsamer Handlung auszuschließen.
+
 ## Kooperationslogik
 
 Kooperationslogik beschreibt eine Handlungslogik, in der Zusammenarbeit, Beziehung, gegenseitige Stärkung und geteilte Verantwortung im Mittelpunkt stehen.
 
 Kooperationslogik sucht Wirkung über Abstimmung, Vertrauen, Sorge, Rückkopplung und gemeinsame Lernfähigkeit.
+
+## Kooperative Wehrhaftigkeit
+
+Kooperative Wehrhaftigkeit verbindet Kooperation als Ausgangspunkt mit risikobasierter Verifikation, proportionaler Reaktion, Wiedergutmachung, Lernfähigkeit und konsequenter Eskalation bei wiederholtem oder vorsätzlichem Missbrauch.
+
+Die Leitlinie lautet: Vertrauen als Ausgangspunkt, Verifikation nach Risiko, Sanktion nach Evidenz, Rückkehr nach Wiedergutmachung. Sie ordnet Fehler, Lücken, Überforderung, Fahrlässigkeit und Betrug nicht gleich ein.
+
+Kooperative Wehrhaftigkeit soll Kooperation nicht durch naives Vertrauen gefährden, aber auch nicht durch Generalverdacht und drakonische Kontrolle zerstören. Sie braucht Rechtsstaatlichkeit, Verhältnismäßigkeit und überprüfbare Verfahren.
+
+## Koordinationsdilemma
+
+Ein Koordinationsdilemma entsteht, wenn mehrere Beteiligte von einem abgestimmten Vorgehen profitieren könnten, aber wegen unklarer Erwartungen, inkompatibler Standards oder fehlender Verbindlichkeit bei getrennten Lösungen bleiben.
+
+Anders als beim Gefangenendilemma ist Kooperation hier nicht zwingend individuell nachteilig. Das Hindernis ist häufig die Unsicherheit darüber, welcher gemeinsame Pfad gilt, wer zuerst handelt oder ob andere anschlussfähig bleiben. Mehrere Lösungen können grundsätzlich sinnvoll sein, solange sie zuverlässig koordiniert werden.
+
+Verlässliche Standards, offene Schnittstellen, abgestimmte Zeitpläne, Vorleistungen und klare Ausstiegs- oder Korrekturwege können ein Koordinationsdilemma entschärfen.
 
 ## Körperliche Selbstbestimmung
 
@@ -7377,7 +7551,9 @@ Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Liefe
 
 Eine Nebenwirkung ist eine zusätzliche, oft unbeabsichtigte direkte oder indirekte Folge einer Maßnahme, Entscheidung oder Kommunikation.
 
-Eine Nebenwirkung ist eine zusätzliche, oft unbeabsichtigte direkte oder indirekte Folge einer Maßnahme, Entscheidung oder Kommunikation.
+Nebenwirkungen entstehen neben der primär erwarteten Veränderung. Sie können direkt oder indirekt, kurzfristig oder zeitverzögert, bei anderen Gruppen oder in anderen Räumen auftreten. Der Begriff beschreibt zunächst die zusätzliche Folge, nicht automatisch ihre moralische Bewertung.
+
+Wirkungsanalysen müssen Nebenwirkungen sichtbar machen, damit positive Teilwirkungen keine erheblichen Schäden in Lieferketten, Ökosystemen, Gesellschaft oder Zukunft verdecken.
 
 ## Nebenwirkungs-, Wechselwirkungs- und Rebound-Analyse
 
@@ -8251,7 +8427,9 @@ In der Wirkungsökonomie wird der Begriff verwendet, um Wirkungen als tatsächli
 
 Outcome bezeichnet die bei Zielgruppen oder Systemen eingetretene Veränderung und ist von Leistungserbringung und bloßem Output zu unterscheiden.
 
-Outcome bezeichnet die bei Zielgruppen oder Systemen eingetretene Veränderung und ist von Leistungserbringung und bloßem Output zu unterscheiden.
+Outcomes sind Veränderungen, die nach oder durch eine Aktivität bei Betroffenen oder in einem relevanten System eintreten: etwa neues Wissen, verändertes Verhalten, bessere Gesundheit, mehr Teilhabe, höhere Sicherheit, ein veränderter Ressourcenverbrauch oder ein verändertes Vertrauen. Sie können kurzfristig oder mittelfristig sichtbar werden.
+
+Ob eine beobachtete Veränderung tatsächlich der betrachteten Aktivität zuzurechnen ist, bleibt eine eigene Evidenzfrage. Baseline, Counterfactual, Kontribution, Attribution, Datenqualität und Nebenfolgen müssen je nach Anspruch geprüft werden.
 
 ## Outcome- und Empfängerlandkarte
 
@@ -8279,7 +8457,9 @@ Outgroup-Homogenität macht Fremdgruppen leichter stereotypisierbar. Unterschied
 
 Output ist die unmittelbar erbrachte Leistung oder Menge einer Maßnahme, etwa Teilnehmende, Beratungen oder gebaute Einheiten; er belegt noch keine Wirkung.
 
-Output ist die unmittelbar erbrachte Leistung oder Menge einer Maßnahme, etwa Teilnehmende, Beratungen oder gebaute Einheiten; er belegt noch keine Wirkung.
+Output beschreibt, was unmittelbar produziert, bereitgestellt oder durchgeführt wurde. Dazu zählen beispielsweise gefertigte Güter, ausgeführte Beratungen, Kurse, Teilnehmende, erreichte Haushalte, Infrastruktur oder veröffentlichte Inhalte. Outputs lassen sich oft relativ leicht zählen oder dokumentieren.
+
+Output kann eine notwendige Voraussetzung für Wirkung sein, ist aber im engeren WÖk-Sinn noch keine Wirkung. Erst wenn sich ein relevanter Zustand bei Menschen, Organisationen, Ökosystemen oder Systemen verändert, liegt mindestens ein Outcome vor.
 
 ## Overton-Fenster
 
@@ -8474,6 +8654,16 @@ Als normalen menschlichen oder systemischen Verarbeitungsmechanismus beschreiben
 Pflege als Wirkleistung beschreibt Pflege als Beitrag zu Würde, Autonomie, Beziehung, Sicherheit, Angehörigenentlastung und gesellschaftlicher Stabilität.
 
 Pflege als Wirkleistung bedeutet, Pflege nicht nur als Kostenstelle oder private Last zu betrachten. Pflege erzeugt Zustandsveränderungen: Schutz, Würde, Autonomie, Beziehung, Entlastung, Teilhabe, Gesundheitsstabilität und Vertrauen in gesellschaftliche Solidarität.
+
+## PHINEO / PHINEO-Wirkungslogik
+
+PHINEO ist ein etablierter Akteur für Wirkungsorientierung, Wirkungsmanagement und Wirkungsanalyse. Seine Wirkungslogik arbeitet unter anderem mit Wirkungszielen und der IOOI-Abfolge aus Input, Output, Outcome und Impact, um Wirkpfade von Projekten, Organisationen und Investitionen zu strukturieren und zu überprüfen. Die Wirkungsökonomie verwendet solche Ansätze als wichtige methodische Bausteine und ordnet sie in eine systemische Bewertungs- und Steuerungsarchitektur ein.
+
+PHINEO arbeitet daran, gesellschaftliche Wirkung planbar, nachvollziehbar und verbesserbar zu machen. Dazu gehören Wirkungsziele, Wirkungslogiken, Indikatoren, Wirkungsanalyse und lernorientierte Steuerung. Die IOOI-Logik unterscheidet Ressourcen und Leistungen von Veränderungen bei Zielgruppen und breiteren gesellschaftlichen Wirkungen. Sie hilft, Annahmen sichtbar zu machen und nicht schon die Durchführung oder Reichweite mit Wirkung zu verwechseln.
+
+PHINEO und die Wirkungsökonomie verwenden dabei teilweise dieselben Begriffe, jedoch nicht immer in identischer Bedeutung. PHINEO betrachtet Wirkung überwiegend aus der Perspektive einer Intervention und ihrer angestrebten Veränderungen bei Zielgruppen oder auf gesellschaftlicher Ebene. Die WÖk definiert Wirkung allgemeiner als tatsächliche Zustandsveränderung: Sie kann beabsichtigt oder unbeabsichtigt, positiv, negativ oder neutral sein und auch außerhalb eines Projekts auftreten.
+
+Die Arbeit von PHINEO umfasst neben der klassischen Wirkungsorientierung auch Organisationen, öffentliche Hand, Unternehmen, Impact Investing und gesellschaftliche Transformation. PHINEO ist für die Wirkungsökonomie deshalb ein Anschlussbegriff, kein Gegenbegriff: Beide Ansätze teilen das Interesse, Wirkung nicht dem Zufall zu überlassen. Die WÖk ergänzt diese Management- und Entscheidungslogik um eine gemeinsame Systemarchitektur für Referenzrahmen, Bewertung, Schutzgrenzen, Netto-Wirkung und institutionalisierte Rückkopplung.
 
 ## Photoelektrischer Effekt
 
@@ -8846,6 +9036,14 @@ Preise, Gebühren, Boni, Steuern, Vergütung, Defaults und nicht monetäre Signa
 Preise, Gebühren, Boni, Steuern, Vergütung, Defaults und nicht monetäre Signale so gestalten, dass sie Wirkung sichtbar machen und keine schädlichen Nebenanreize erzeugen.
 
 F13 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: Anreizarchitektur mit Zielverhalten, Wirkmechanismus, Verteilung, Gegenanreiz, Schutz und Monitoring.
+
+## Preisvollständigkeit
+
+Preisvollständigkeit bezeichnet die materielle Vollständigkeit der Wirkungsrückkopplung in Preis, Steuer, Haftung, Rückstellung, Versicherung, Marktzugang oder Wirkungsgrenze.
+
+Preisvollständigkeit verlangt nicht, jede Wirkung zu monetarisieren. Je nach Wirkungsart können Preise, Steuern, Haftung, Rückstellungen, Versicherung, Marktzugang oder verbindliche Grenzen die angemessene Form der Rückkopplung sein.
+
+Sie ist damit kein technischer Anspruch auf eine perfekte Zahl, sondern ein Prüfbegriff für die Frage, ob relevante Folgen in der Entscheidung und ihre Verantwortung zurückwirken.
 
 ## Pressefreiheit
 
@@ -9605,6 +9803,14 @@ Besonders relevant für stationäre Speicher; Bewertung über Materialeinsatz, S
 
 Nicht als automatisch positive Energiewende-Technik darstellen; Rohstoffe, Lieferketten, Netze, Kreislauf, Teilhabe und Systemkosten mitprüfen.
 
+## Referenzrahmen
+
+Ein Referenzrahmen legt offen, anhand welcher Ziele, Grenzen, Benchmarks oder gesellschaftlichen Normen eine Wirkung bewertet wird.
+
+Ein Referenzrahmen unterscheidet die empirische Frage, was sich verändert hat, von der normativen Frage, wie diese Veränderung einzuordnen ist. Er kann Ziele, Rechte, Grenzen, Benchmarks, Indikatoren oder fachliche Schwellen enthalten. Ohne Referenzrahmen lässt sich feststellen, dass etwas wirkt, aber nicht transparent begründen, warum diese Wirkung als positiv oder negativ gelten soll.
+
+In der Wirkungsökonomie bilden Agenda 2030, die SDGs und SDG+ den primären Orientierungsrahmen. Je nach Gegenstand können Grund- und Menschenrechte, Staatsziele, gesetzliche Grenzwerte, wissenschaftliche Schwellen und fachliche Benchmarks die Anwendung konkretisieren. Diese ergänzenden Referenzen ersetzen nicht die Offenlegung des übergeordneten Maßstabs.
+
 ## Referenzrahmen- und Standardmapping
 
 Relevante SDGs, SDG+, ESRS, GRI, ISO-, Branchen-, Rechts- und Wissenschaftsreferenzen einem Wirkungsobjekt zuordnen.
@@ -9812,6 +10018,12 @@ Reparatur stellt die Nutzungsfähigkeit eines beschädigten oder defekten Produk
 Reparatur stellt die Nutzungsfähigkeit eines beschädigten oder defekten Produkts wieder her.
 
 Reparatur reduziert Abfall, Rohstoffverbrauch und Ersatzproduktion und stärkt lokale Wertschöpfung sowie Selbstwirksamkeit.
+
+## Reparaturfähigkeit
+
+Reparaturfähigkeit bezeichnet die Fähigkeit eines Systems, Fehler, Schäden und Konflikte nachvollziehbar zu korrigieren, wiedergutzumachen und eine begründete Rückkehr zu ermöglichen.
+
+Reparaturfähigkeit umfasst Korrektur, Wiedergutmachung, Beschwerdewege, Rehabilitationspfade und Lernen aus Fehlern. Sie verlangt weder automatische Vergebung noch eine Verharmlosung von Vorsatz; Maßstab bleiben Evidenz, Verhältnismäßigkeit, Rechtsschutz und der Schutz Betroffener.
 
 ## Reparaturschulden
 
@@ -10024,6 +10236,14 @@ Sie ist die Logistikseite der Kreislaufwirtschaft.
 Die Reverse Merit Order ist das Bewertungsprinzip der Wirkungsökonomie, nach dem das schwächste relevante Wirkungsfeld die Gesamtbewertung begrenzt und schwere negative Wirkungen nicht durch positive Wirkungen überdeckt werden dürfen.
 
 Reverse Merit Order bezeichnet in der Wirkungsökonomie ein Bewertungsprinzip, bei dem die Gesamtbewertung eines Produkts, einer Tätigkeit, eines Unternehmens oder einer Maßnahme durch das schwächste relevante Wirkungsfeld begrenzt wird. Ein schwerer negativer Effekt darf nicht durch positive Effekte in anderen Bereichen neutralisiert oder überdeckt werden.
+
+## Reziprozität
+
+Reziprozität bezeichnet die Erwartung und Praxis, auf Beiträge, Kooperation oder Schädigung anderer in einer nachvollziehbaren Weise zu reagieren.
+
+Positive Reziprozität kann verlässliche Kooperation durch Anerkennung und Erwiderung stärken. Negative Reziprozität kann Regelverletzungen begrenzen, wenn sie evidenzbasiert, verhältnismäßig und rechtsgebunden bleibt. Ohne solche Grenzen kann Gegenseitigkeit in Vergeltung, Ausschluss oder Eskalation kippen.
+
+Reziprozität ist daher weder eine Pflicht zur Gleichbehandlung jeder Situation noch eine Rechtfertigung privater Selbstjustiz.
 
 ## Rezyklatanteil
 
@@ -10491,9 +10711,9 @@ Scope-3-Datenqualität bewertet Vollständigkeit, Primärdatenanteil, Lieferante
 
 ## Scorecard
 
-Eine Scorecard strukturiert Wirkungsfelder, Indikatoren, Datenqualität und Bewertung.
+Eine Scorecard oder Wirkungsscorecard ist ein transparentes Bewertungsraster, das relevante Wirkungsfelder, Indikatoren, Datenquellen, Datenqualität, Grenzen und Einzelergebnisse so verbindet, dass Entscheidungen prüfbar werden.
 
-Eine Scorecard ist die nachvollziehbare Bewertungsstruktur für ein Objekt, etwa ein Produkt, eine Investition, ein Programm oder eine Organisation. Sie ordnet Wirkungsfelder, WÖk-IDs, Indikatoren, Systemgrenzen, Benchmarks, Datenqualität und Regeln für die Bewertung. Eine Scorecard ist keine bloße Checkliste und keine Durchschnittsformel.
+Eine Scorecard bündelt mehrere Wirkungsinformationen in einer nachvollziehbaren Bewertungsarchitektur. Sie übersetzt weder komplexe Wirklichkeit in eine bloße Zahl noch ersetzt sie die fachliche und demokratische Abwägung. Eine belastbare Scorecard zeigt deshalb die einzelnen Wirkungsfelder, Indikatoren, Datenquellen, Annahmen, Zeit- und Systemgrenzen, Datenlücken, Prüfstatus und Version offen. In der Wirkungsökonomie wird eine Wirkungsscorecard an Mensch, Planet und Demokratie ausgerichtet. Sie kann Orientierung und Steuerung ermöglichen, aber schwere negative Wirkungen, rote Linien oder fehlende Evidenz nicht durch gute Werte in anderen Feldern verdecken.
 
 ## SDG+
 
@@ -10626,6 +10846,14 @@ Relevant für Autonomie und Selbstbestimmung, aber nicht ausreichend für sozial
 Erfolg wird eher sich selbst zugeschrieben, Misserfolg eher Umständen oder anderen.
 
 Der Self-Serving Bias beeinflusst Rechenschaft, Organisationslernen und politische Verantwortung. Er erschwert Wirkungsrückkopplung, wenn Akteure positive Wirkung vereinnahmen und negative Wirkung externalisieren.
+
+## Senkenallmende
+
+Eine Senkenallmende ist eine gemeinsame, begrenzte Aufnahme-, Puffer- oder Regenerationsleistung eines natürlichen oder gesellschaftlichen Systems.
+
+Beispiele sind die atmosphärische Aufnahme zusätzlicher Treibhausgase, die Aufnahme von Nähr- oder Schadstoffen in Gewässern und die Regenerationsfähigkeit von Böden. Der Begriff benennt nicht eine beliebige Umweltleistung, sondern eine reale begrenzte Aufnahme- oder Regenerationskapazität.
+
+Wird diese Kapazität überbeansprucht, können die Folgen räumlich, zeitlich und sozial weit über die unmittelbar Handelnden hinausreichen.
 
 ## Sensemaking
 
@@ -10886,6 +11114,12 @@ Soziale Sanktionierung stabilisiert Normen. Sie kann demokratische Regeln schüt
 Soziale Staatsschuld entsteht, wenn Bildung, Pflege, Wohnen, Gesundheit, Teilhabe oder soziale Stabilität so vernachlässigt werden, dass spätere Gesellschaften höhere Lasten tragen.
 
 Soziale Staatsschuld entsteht, wenn Bildung, Pflege, Wohnen, Gesundheit, Teilhabe oder soziale Stabilität so vernachlässigt werden, dass spätere Gesellschaften höhere Lasten tragen.
+
+## Soziales Dilemma
+
+Ein soziales Dilemma liegt vor, wenn individuell nachvollziehbare Handlungsanreize zu einem Ergebnis führen können, das für die Beteiligten gemeinsam schlechter ist.
+
+Soziale Dilemmata sind keine Aussage darüber, dass Menschen egoistisch oder unkooperativ sein müssten. Auch vorsichtige, faire oder kooperationsbereite Menschen können scheitern, wenn Verhalten anderer unsicher bleibt, Ausbeutung droht oder verlässliche Regeln fehlen. Dilemmata können Übernutzung, Unterversorgung, Verteilungs-, Macht- oder Informationsprobleme betreffen.
 
 ## Sozialfinanzierung
 
@@ -11616,11 +11850,25 @@ Interventionspunkte nach Tiefe, Reichweite, Umsetzbarkeit, Risiken und Lernpoten
 
 B10 gehört zur Kategorie „Systemdiagnose und Wirkungszusammenhänge“. Verbindlicher Output: Priorisierte Hebelliste von Parametern über Informationsflüsse und Regeln bis zu Zielen und Paradigmen.
 
+## Systemisch positives Summenspiel
+
+Ein systemisch positives Summenspiel liegt vor, wenn Kooperation die positive Netto-Wirkung für die Beteiligten und das relevante Gesamtsystem erhöht, ohne nicht getragene Schäden auf Dritte, Ökosysteme oder zukünftige Generationen zu verlagern und ohne Wirkungsgrenzen zu verletzen.
+
+Kooperation ist nicht automatisch positiv. Eine Gruppe kann intern gewinnen und zugleich Kosten auf andere verlagern oder demokratische, soziale oder ökologische Grenzen verletzen.
+
+Der systemische Zusatz verlangt deshalb, den relevanten Wirkungsraum und die ausgelagerten Folgen mitzudenken. Positive Netto-Wirkung bleibt die Zielgröße, nicht bloße Gruppensynergie oder Reichweite.
+
 ## Systemische Kohärenz
 
 Systemische Kohärenz beschreibt den Zustand, in dem Regeln, Erfahrungen, Informationen, Institutionen und Handlungsoptionen so zusammenpassen, dass Orientierung und Vertrauen möglich werden.
 
 Systemische Kohärenz entsteht, wenn Menschen nicht nur einzelne Fakten erhalten, sondern den Zusammenhang zwischen Ziel, Verfahren, Entscheidung, Wirkung und Korrekturmöglichkeit nachvollziehen können.
+
+## Systemische Kooperation
+
+Systemische Kooperation bezeichnet Zusammenarbeit, die im relevanten Wirkungsraum positive Netto-Wirkung ermöglicht und dabei Rechte Betroffener, faire Lastenteilung und Schutzgrenzen wahrt.
+
+Kooperation ist nicht automatisch positiv: Gruppen können interne Vorteile erzeugen und zugleich Dritte ausbeuten, Kosten verlagern oder Macht abschotten. Systemische Kooperation verlangt deshalb transparente Regeln, Beteiligung, Konfliktlösung, Korrektur und einen prüfbaren Bezug auf Mensch, Planet und Demokratie.
 
 ## Systemische Risikointelligenz
 
@@ -11898,6 +12146,14 @@ Theokratie beschreibt eine Herrschaftsform, in der religiöse Autorität und sta
 Theokratie beschreibt eine Herrschaftsform, in der religiöse Autorität und staatliche Macht eng verbunden oder religiös legitimiert sind.
 
 Wirkung hängt davon ab, ob Grundrechte, Pluralismus, Gleichwertigkeit und Rechtsschutz gesichert oder eingeschränkt werden.
+
+## Theory of Change
+
+Eine Theory of Change beschreibt, warum und unter welchen Bedingungen eine Intervention zu einer angestrebten Veränderung führen soll.
+
+Eine Theory of Change macht die Annahmen eines Wirkpfads explizit: Welche Aktivität soll über welchen Mechanismus bei welchen Gruppen welche Veränderung auslösen? Welche Voraussetzungen müssen gelten, welche Faktoren im Umfeld beeinflussen den Pfad und welche Risiken oder Wechselwirkungen sind zu beachten?
+
+Sie ist umfassender als eine bloße Abfolge von Input, Output, Outcome und Impact. Zugleich bleibt sie zunächst ein plausibles Erklärungs- und Planungsmodell, bis ihre Annahmen mit Daten geprüft sind.
 
 ## Thermal Runaway
 
@@ -12211,6 +12467,12 @@ Tritium ist ein radioaktives Wasserstoffisotop. In Energie- und Fusionsdebatten 
 
 In der Wirkungsökonomie wird der Begriff verwendet, um Wirkungen als tatsächliche Zustandsveränderungen sichtbar, bewertbar und rückkopplungsfähig zu machen. Positive Wirkung wird am Referenzrahmen SDGs, Agenda 2030 und SDG+ eingeordnet; als Zielgröße dient positive Netto-Wirkung für Mensch, Planet und Demokratie.
 
+## Trittbrettfahren
+
+Trittbrettfahren bedeutet, von einer gemeinsamen Leistung zu profitieren, ohne einen angemessenen Beitrag zu ihrer Bereitstellung oder ihrem Erhalt zu leisten.
+
+Das Muster entsteht besonders bei öffentlichen Gütern, deren Nutzen sich nicht zuverlässig auf Beitragsleistende begrenzen lässt. Es ist keine pauschale Schuldzuweisung: Ob ein Beitrag angemessen ist, hängt von Fähigkeiten, Zugang, Belastungen und institutionellen Regeln ab.
+
 ## Trittbrettfahrerproblem
 
 Das Trittbrettfahrerproblem entsteht, wenn Akteure von einem Gut profitieren, ohne zu dessen Bereitstellung beizutragen.
@@ -12476,6 +12738,14 @@ Die Unternehmertypen nach Jochen Röpke sind eine funktionale Typologie von Unte
 
 Für die Wirkungsökonomie ist diese Unterscheidung wichtig, weil Transformation nicht nur neue Technik braucht. Sie braucht Wirklichkeitsfähigkeit, Rückkopplungsfähigkeit und Transformationsfähigkeit. Ein System kann perfekt verwaltet sein und trotzdem in alten Wirkungspfaden feststecken; es kann Arbitragegewinne erzeugen und trotzdem Wirkung externalisieren; es kann innovativ sein und dennoch Schäden verlagern. Erst die evolutorische Perspektive fragt, ob Akteure und Organisationen ihre Wahrnehmung, Kompetenzen, Routinen und Regeln so weiterentwickeln, dass positive Netto-Wirkung wahrscheinlicher wird.
 
+## Unvollständiger Preis
+
+Ein unvollständiger Preis ist ein Marktpreis, der materiell relevante ökologische, soziale, gesundheitliche, demokratische oder zukünftige Wirkungen nicht ausreichend als Entscheidungssignal enthält.
+
+Ein Preis kann private Kosten korrekt abbilden und gesellschaftlich dennoch irreführend sein. Unvollständigkeit bedeutet deshalb nicht zwingend mathematisch falsch, sondern unzureichend als Signal für die relevante Wirkungs- und Risikolage.
+
+Der Begriff macht keine Aussage darüber, dass jede Wirkung in Geld ausgedrückt werden muss. Manche Wirkungen brauchen andere Formen der Rückkopplung oder klare Grenzen.
+
 ## Upcycling
 
 Upcycling wertet Materialien oder Produkte durch neue Nutzung mit höherem Wert oder höherer Funktion auf.
@@ -12537,6 +12807,14 @@ Das Value Proposition Canvas ist ein strategisches Werkzeug, das Kundensegmente 
 In der WÖk soll das Canvas um eine Wirkungsprüfung erweitert werden: Welche Wirkungsempfänger sind betroffen? Welche externen Kosten entstehen? Welche SDGs/SDG+ werden gestärkt oder geschwächt? Welche roten Linien dürfen nicht kompensiert werden?
 
 WÖk-Erweiterung: Pain Relievers und Gain Creators müssen um Wirkungsrisiken, externe Kosten und Wirkungsempfänger erweitert werden.
+
+## Value-based Pricing
+
+Value-based Pricing ist eine Preisstrategie, bei der sich der Preis vor allem am nachvollziehbaren wirtschaftlichen Nutzen einer Leistung für den jeweiligen Kunden orientiert, nicht allein an Aufwand, Kosten, Marge oder Wettbewerb.
+
+Value-based Pricing fragt zuerst, welche ökonomisch relevante Zustandsveränderung ein Produkt oder eine Dienstleistung beim Kunden ermöglicht: etwa vermiedene Kosten, ein zusätzlicher Deckungsbeitrag, ein reduziertes Risiko, höhere Qualität oder eine kürzere Durchlaufzeit. Der Preis wird anschließend innerhalb eines transparenten, verhandelten Korridors an diesem Kundenwert ausgerichtet. Deshalb kann dieselbe Leistung für verschiedene Kunden unterschiedlich viel wert sein.
+
+Der errechnete Kundenwert ist kein Selbstbeweis. Er braucht einen Ausgangszustand, einen Ziel- oder Vergleichszustand, einen Zeitraum, eine plausible Gegenhypothese und eine nachvollziehbare Zurechnung. Erwartungen oder Vertriebsannahmen sind zunächst Wertpotenzial, nicht bereits realisierter Kundenwert.
 
 ## Varietät
 
@@ -12609,6 +12887,14 @@ In der Wirkungsökonomie ist Verbrenner-Lock-in ein Wirkungsrisiko: Kurzfristige
 Verbrenneraus bezeichnet die politische Debatte um neue Pkw mit Verbrennungsmotor nach 2035; wirkungsökonomisch zählt der Lebenszyklus- und Infrastrukturvergleich.
 
 Die Debatte um das Verbrenneraus wird oft als Freiheit gegen Verbot erzählt. Wirkungsökonomisch geht es um Emissionen, Energieeffizienz, Rohstoffe, Infrastruktur, Industriepfade, Nutzerkosten, Importabhängigkeiten und Transformationsrisiken über den Lebenszyklus.
+
+## Verfahrensgerechtigkeit
+
+Verfahrensgerechtigkeit bezeichnet die Qualität eines Entscheidungs- oder Prüfverfahrens, in dem Regeln nachvollziehbar sind, Betroffene gehört werden, Gründe offengelegt und Fehler wirksam korrigiert werden können.
+
+Ein Ergebnis kann als ungünstig erlebt werden und dennoch verfahrensgerecht zustande kommen, wenn Zuständigkeiten, Maßstäbe, Evidenz, Beteiligung und Beschwerdewege transparent sind. Umgekehrt ersetzt ein beliebtes Ergebnis kein faires Verfahren.
+
+Verfahrensgerechtigkeit umfasst insbesondere angemessene Beteiligung, unabhängige Prüfung, Verhältnismäßigkeit, Begründung, Datenschutz und Rechtsschutz. Sie ergänzt Verteilungs- und Ergebnisfragen, ersetzt sie aber nicht.
 
 ## Verfassung
 
@@ -12796,6 +13082,14 @@ Sie kann durch Machtasymmetrien, Informationsasymmetrien oder existenzielle Abh�
 Vertrauen ist ein sozialer, institutioneller und demokratischer Zustand, in dem Menschen, Gruppen oder Organisationen erwarten können, dass Regeln gelten, Verfahren fair sind, Macht kontrolliert wird, Fehler korrigierbar bleiben und Institutionen nicht nur einzelnen Interessen dienen.
 
 Vertrauen entsteht nicht allein durch richtige Aussagen oder formale Regeln. Es entsteht durch wiederholte Erfahrung von Wahrhaftigkeit, Rechtsstaatlichkeit, Transparenz, Teilhabe, Berechenbarkeit, Fehlerkorrektur und realer Verbesserung von Zuständen. Wirkungsökonomisch ist Vertrauen deshalb eine zentrale Rückkopplungsbedingung. Vertrauen ist relational und nicht automatisch positiv: Es kann demokratische Stabilität stärken, wenn es sich auf überprüfbare Verfahren, Rechtsstaatlichkeit, Wahrhaftigkeit, Transparenz und Korrekturfähigkeit richtet. Vertrauen kann aber destruktiv wirken, wenn es sich als blinde Loyalität an Personen, Gruppen oder Narrative bindet und dadurch Vertrauen in Medien, Wissenschaft, Institutionen oder gemeinsame Wirklichkeit zerstört.
+
+## Vertrauensallmende
+
+Die Vertrauensallmende ist der gemeinsam erzeugte, regenerative Bestand an Verlässlichkeit, Berechenbarkeit und institutioneller Glaubwürdigkeit, der Kooperation und gesellschaftliche Handlungsfähigkeit ermöglicht.
+
+Vertrauen ist keine klassische rivalisierende Common-Pool-Ressource. Der Begriff verwendet Allmende als WÖk-Analogie für eine gemeinsame relationale Infrastruktur, die Kooperation erleichtert und durch Missbrauch, Intransparenz oder pauschalen Verdacht geschwächt werden kann.
+
+Vertrauen kann wachsen, wenn Regeln verständlich, Verfahren fair, Korrekturen möglich und Daten nachvollziehbar sind. Es ersetzt weder Prüfung noch Rechtsschutz.
 
 ## Vertrauensverschiebung
 
@@ -13333,9 +13627,11 @@ Wirklichkeitskonstruktion bedeutet nicht, dass alles beliebig oder nur subjektiv
 
 ## Wirkmechanismus
 
-Ein Wirkmechanismus beschreibt, wie ein Auslöser über Bedingungen, Akteure und Rückkopplungen Wirkung erzeugen kann.
+Ein Wirkmechanismus beschreibt, wie eine Wirkung entstehen soll oder entstehen kann.
 
-Wirkmechanismen verbinden Wirkstoff-Analogie, Wirkungspotenzial, Wirkpfade, Resonanzräume und tatsächliche Zustandsveränderungen.
+Wirkmechanismen beschreiben die vermuteten oder empirisch untersuchten Prozesse zwischen Auslöser und Zustandsveränderung. Eine Preisänderung kann Kaufverhalten verändern, ein Algorithmus bestimmte Inhalte verstärken, eine Steuerdifferenz Lieferantenauswahl beeinflussen oder Desinformation Vertrauen schwächen.
+
+Ein plausibler Mechanismus beweist nicht, dass die Wirkung in der erwarteten Stärke, Richtung oder bei den erwarteten Gruppen eintritt. Für starke Kausalaussagen braucht es passende Evidenz, eine klare Systemgrenze und die Prüfung alternativer Erklärungen.
 
 ## Wirkmechanismus-Canvas
 
@@ -13377,9 +13673,11 @@ In der Wirkungsökonomie wird der Begriff verwendet, um Wirkungen als tatsächli
 
 ## Wirkstoff
 
-Wirkstoff ist in der WÖk eine didaktische Analogie für einen Auslöser mit Wirkungspotenzial.
+Wirkstoff ist in der Wirkungsökonomie eine didaktische Analogie für einen Auslöser mit Wirkungspotenzial.
 
-Der Begriff darf nur als gesellschaftlicher Wirkstoff im Sinne einer Analogie verwendet werden. Er beschreibt Auslöser, die unter bestimmten Bedingungen Wirkungspotenzial entfalten können. Ein Wirkstoff ist nicht selbst Wirkung.
+Der Ausdruck Wirkstoff dient als anschauliche Analogie für einen Auslöser, der in einem bestimmten Kontext Wirkung hervorrufen kann: etwa eine Steuerregel, ein Produktdesign, ein Preis, ein Algorithmus, ein Frame oder ein Medienbeitrag. Die Analogie darf nicht so verstanden werden, als seien gesellschaftliche Wirkungen mechanisch oder zwangsläufig.
+
+Ein gesellschaftlicher Wirkstoff kann erwünschte oder unerwünschte Wirkung, Nebenwirkungen, Wechselwirkungen, Rebound oder keine relevante Veränderung auslösen. Entscheidend bleiben Wirkmechanismus, Kontext, Datenlage und die Trennung zwischen Potenzial und eingetretener Wirkung.
 
 ## Wirkung
 
@@ -13521,6 +13819,14 @@ Wirkungsabwehr beschreibt die psychologische, kommunikative oder institutionelle
 
 In der Wirkungsökonomie bezeichnet Wirkungsabwehr die Blockade zwischen Wirkungswahrheit und Wirkungsrückkopplung. Sie entsteht, wenn Wirkungsdaten Selbstbild, Interessen, Gewohnheiten, Gruppenzugehörigkeit oder Geschäftsmodelle berühren und deshalb relativiert, umgedeutet, verdrängt oder auf andere Akteure verschoben werden. Der Begriff beschreibt keinen Charakterfehler, sondern einen Wirkmechanismus, der Lernfähigkeit und positive Netto-Wirkung blockieren kann.
 
+## Wirkungsanalyse
+
+Wirkungsanalyse untersucht, welche Zustandsveränderungen entstehen oder entstehen können, wen sie betreffen, wodurch sie zustande kommen und wie belastbar die Evidenz ist.
+
+Eine Wirkungsanalyse strukturiert Auslöser, Wirkmechanismen, Wirkungsempfänger, Wirkungsraum, Zeitverlauf, Daten und mögliche Folgen. Sie kann eingetretene Wirkungen untersuchen oder ex ante Wirkungspotenziale und -risiken transparent machen. Je nach Fragestellung prüft sie Baseline, Counterfactual, Attribution, Kontribution, Nebenwirkung, Wechselwirkung, Rebound, Displacement und Datenqualität.
+
+Die Analyse ersetzt nicht die Bewertung. Sie liefert die Grundlage, auf der eine Wirkung am Referenzrahmen eingeordnet und anschließend rückgekoppelt werden kann.
+
 ## Wirkungsanalyse von Sprache
 
 Wirkungsanalyse von Sprache prüft, welche emotionalen, sozialen und demokratischen Folgen sprachliche Muster entfalten.
@@ -13566,6 +13872,14 @@ In der Wirkungsökonomie wird der Begriff verwendet, um Wirkungen als tatsächli
 Wirkungsbasierter Handel ist Handel, der Preise, Marktzugang, Beschaffung, Grenzausgleich und Partnerschaften an der tatsächlichen Wirkung von Waren, Dienstleistungen und Lieferketten auf Mensch, Planet und Demokratie ausrichtet.
 
 Wirkungsbasierter Handel bezeichnet eine Handelslogik, in der Handel als Wirkungsraum verstanden wird. Handel kann Versorgung, Entwicklung, Wissen, Innovation und Kooperation ermöglichen. Er kann aber auch Schäden auslagern, Arbeitsrechte untergraben, Umwelt zerstören, Monopole stabilisieren, Abhängigkeiten erzeugen oder Demokratien destabilisieren.
+
+## Wirkungsbasiertes Value Pricing
+
+Wirkungsbasiertes Value Pricing ist ein WÖk-Arbeitsmodell, das den zurechenbaren ökonomischen Kundenwert einer Leistung und ihre getrennt geprüfte Netto-Wirkung für Mensch, Planet und Demokratie gemeinsam in die Preisentscheidung einordnet.
+
+Wirkungsbasiertes Value Pricing erweitert Value-based Pricing um eine zweite, nicht kompensierbare Bewertungsebene. Auf der ersten Ebene wird der wirtschaftliche Kundenwert einer Leistung aus einer nachvollziehbaren Zustandsveränderung und ihrer Zurechnung bestimmt. Auf der zweiten Ebene wird geprüft, welche Wirkungen und Wirkungsrisiken die Leistung im Referenzrahmen Mensch, Planet und Demokratie auslöst.
+
+Die beiden Ebenen werden bewusst nicht zu einer einzigen Geldsumme verrechnet: Ein hoher Kundenwert kann schwere negative Wirkungen nicht ausgleichen. Die Netto-Wirkung ist daher kein automatischer Preisaufschlag, sondern eine eigenständige Qualitäts-, Schutz- und Lernbedingung. Das Modell ist eine WÖk-Arbeitslogik in Entwicklung, kein allgemeiner Marktstandard und keine automatische Preisformel.
 
 ## Wirkungsbedingte Stranded Assets
 
@@ -13686,6 +14000,14 @@ Design Thinking und Double Diamond um Systemdiagnose, Wirkungsgrenzen, Netto-Wir
 Design Thinking und Double Diamond um Systemdiagnose, Wirkungsgrenzen, Netto-Wirkung, Umsetzung und Lernrückkopplung erweitern.
 
 F04 gehört zur Kategorie „Innovation, Angebote und Geschäftsmodelle“. Verbindlicher Output: Durchgängiger Innovationsprozess von Problemraum über Wirkungsraum und Lösungsraum zur verantwortbaren Erprobung.
+
+## Wirkungsdilemma
+
+Ein Wirkungsdilemma liegt vor, wenn eine im engen oder kurzfristigen Rahmen vorteilhafte Entscheidung im relevanten Wirkungsraum negative Folgen auslöst, verstärkt oder auf andere verlagert.
+
+Wirkungsdilemmata entstehen etwa, wenn ein lokaler Kennwert verbessert wird, während Belastungen für andere Menschen, Ökosysteme oder spätere Zeiträume wachsen. Sie sind keine Behauptung, dass Beteiligte schlecht handeln. Sie beschreiben eine Lage, in der Informationen, Anreize, Zuständigkeiten oder Grenzen nicht ausreichend zusammenwirken.
+
+Ob die Gesamtwirkung positiv oder negativ ist, muss am konkreten Referenzrahmen und an den tatsächlich veränderten Zuständen geprüft werden. Reichweite, Absicht oder ein einzelner Erfolgswert reichen dafür nicht aus.
 
 ## Wirkungsdisziplin
 
@@ -13944,6 +14266,14 @@ Es ist keine Akademie, keine allgemeine Website, kein Verein, keine Mitgliederor
 Wirkungsintegration beschreibt den Prozess, in dem neue Informationen, Risiken oder Veränderungen so aufgenommen werden, dass sie Orientierung, Handlungsfähigkeit und positive Netto-Wirkung stärken.
 
 Wirkungsintegration nimmt Komplexität auf, statt sie wegzuschieben. Sie verbindet neue Informationen mit nachvollziehbaren Zielen, Wirkpfaden, Rückkopplung, Korrektur und Handlungsmöglichkeiten.
+
+## Wirkungsintegrität
+
+Wirkungsintegrität bezeichnet, ob eine behauptete oder gemessene Wirkung einer tatsächlichen, zurechenbaren und hinreichend abgegrenzten Zustandsveränderung entspricht und gegen Manipulation, Auslassung, unzulässige Kompensation und Interessenkonflikte geschützt ist.
+
+Wirkungsintegrität prüft die Gültigkeit einer Wirkungsbehauptung, bevor sie für Steuerung, Förderung, Beschaffung, Berichterstattung oder Kommunikation genutzt wird. Dazu gehören Datenqualität, Abgrenzung, Zurechnung, Umgang mit Unsicherheit, Unabhängigkeit und Schutz vor Wirkungssimulation.
+
+Sie ist kein zusätzlicher Wirkungsbereich und kein Bonuspunkt. Fehlt die Integrität, kann ein hoher Score keine positive Wirkung belegen.
 
 ## Wirkungsinvestition des Staates
 
@@ -14279,11 +14609,9 @@ In der Wirkungsökonomie wird der Begriff verwendet, um Wirkungen als tatsächli
 
 ## Wirkungspfad
 
-Ein Wirkungspfad ordnet Auslöser, Aktivitäten und erbrachte Leistungen den erwarteten Veränderungen bei Wirkungsempfängern, möglichen Zustandsveränderungen und Rückkopplungen in einer prüfbaren Reihenfolge zu.
+Wirkpfade oder Wirkungspfade beschreiben nachvollziehbare Hypothesen darüber, wie eine Handlung, Entscheidung, ein Produkt oder eine Kommunikation unter bestimmten Bedingungen Zustände verändert – einschließlich Wirkmechanismen, Betroffener, Nebenwirkungen und Rückkopplungen.
 
-Ein Wirkungspfad ordnet Auslöser, Aktivitäten und erbrachte Leistungen den erwarteten Veränderungen bei Wirkungsempfängern, möglichen Zustandsveränderungen und Rückkopplungen in einer prüfbaren Reihenfolge zu.
-
-C01 gehört zur Kategorie „Wirkungsmodellierung und Zukunftslogik“. Erwartetes Arbeitsergebnis: ein prüfbarer Wirkungspfad mit Wirkungsempfängern, Annahmen, Kontextbedingungen, möglichen Nebenwirkungen und Evidenz.
+Wirkpfade machen sichtbar, über welche Schritte eine Intervention zu Veränderungen führen könnte: von einer Entscheidung oder Aktivität über Ressourcen, Leistungen und Verhaltens- oder Strukturveränderungen bis zu direkten, indirekten und längerfristigen Wirkungen. Ein belastbarer Wirkpfad hält zugleich fest, für wen diese Veränderungen gelten, unter welchen Bedingungen sie eintreten, welche anderen Ursachen mitwirken, wo Schäden oder Kosten anfallen können und wie Beobachtungen die Annahmen verändern. Gerade in komplexen sozialen, ökologischen und demokratischen Systemen verlaufen Wirkpfade nicht nur vorwärts, sondern über Verzögerungen, Rückkopplungen, Wechselwirkungen und mögliche Externalisierung.
 
 ## Wirkungspflicht des Eigentums
 
@@ -14361,6 +14689,14 @@ Ein Wirkungsprofil beschreibt die Verteilung positiver, neutraler, negativer und
 
 In der Wirkungsökonomie wird der Begriff verwendet, um Wirkungen als tatsächliche Zustandsveränderungen sichtbar, bewertbar und rückkopplungsfähig zu machen. Positive Wirkung wird am Referenzrahmen SDGs, Agenda 2030 und SDG+ eingeordnet; als Zielgröße dient positive Netto-Wirkung für Mensch, Planet und Demokratie.
 
+## Wirkungsprofil im Radardiagramm
+
+Ein Wirkungsprofil im Radardiagramm ist eine grafische Spinnennetzdarstellung mehrerer Wirkungsfelder oder Potenziale.
+
+Ein Wirkungsprofil im Radardiagramm verdichtet mehrere Wirkungsfelder, Potenziale, Risiken oder Messstände in einer Spinnennetzgrafik. Es macht Muster sichtbar, ersetzt aber keine Erklärung der Skala, Datengrundlage, Gewichtung, Unsicherheit oder Wirkungsbewertung.
+
+Die Darstellung heißt nicht Wirkungsradar: Das Wirkungsradar bezeichnet in der WÖk das Orientierungs- und Analyseinstrument beziehungsweise das Website-Portal.
+
 ## Wirkungsprototyp-Canvas
 
 Eine minimale Darstellung oder Intervention bauen, die neben Nutzung auch Mechanismus, Betroffenenwirkung und Risiken lernbar macht.
@@ -14399,9 +14735,11 @@ In der Wirkungsökonomie wird der Begriff verwendet, um Wirkungen als tatsächli
 
 ## Wirkungsradar
 
-Ein Wirkungsradar ist ein Orientierungsinstrument, das Wirkungsfelder, Risiken und blinde Flecken sichtbar macht.
+Das Wirkungsradar ist ein WÖk-Orientierungs- und Analyseinstrument, das Wirkungsfelder, Potenziale, Risiken, blinde Flecken, Wirkungspfade und Wissensstände sichtbar macht.
 
-Das Wirkungsradar unterstützt Analyse, Kommunikation und Priorisierung, ersetzt aber keine vollständige Wirkungsbewertung.
+Das Wirkungsradar dient der Orientierung, Analyse und Kommunikation. Es kann Wirkungsfelder, Wirkungspotenziale, Wirkungsrisiken, blinde Flecken, Wirkungspfade und den jeweiligen Wissensstand sichtbar machen. Auf der Website bezeichnet es insbesondere das Portal für Fakten, Narrative und öffentliche Wirkungspfade.
+
+Das Wirkungsradar ersetzt keine vollständige Wirkungsbewertung, keine Evidenzprüfung und keine demokratische Entscheidung. Für eine grafische Spinnennetzdarstellung mehrerer Felder gilt der Begriff Wirkungsprofil im Radardiagramm.
 
 ## Wirkungsrat
 
@@ -14637,6 +14975,14 @@ Der Begriff macht sichtbar, woran eine Wirkungsprüfung ansetzt. Statt nur allge
 
 Die Wirkungsökonomie versteht Wirkung als tatsächliche Zustandsveränderung. Damit diese Zustandsveränderung bewertet, gemessen oder gesteuert werden kann, muss geklärt werden, wodurch sie vermittelt wird. Genau hier setzt der Begriff Wirkungsträger an - als analytische Brücke zwischen abstrakter Wirkung und konkreter Steuerung.
 
+## Wirkungstragung
+
+Wirkungstragung bezeichnet die institutionelle Zuordnung positiver und negativer Folgen zu den Akteuren, die sie verursachen, von ihnen profitieren, sie kontrollieren oder sie mit vertretbarem Aufwand verändern können.
+
+Die Leitfrage lautet: Wer entscheidet, wer profitiert, wer kontrolliert und wer trägt die Folgen? Wirkungstragung macht diese Fragen nicht zu einer moralischen Rangliste von Menschen, sondern zu einer prüfbaren institutionellen Frage.
+
+Sie kann sich auf Unternehmen, öffentliche Stellen, Eigentums- und Vertragsbeziehungen, Lieferketten oder andere Handlungskontexte beziehen. Ihre konkrete Ausgestaltung braucht Rechtsschutz, Verhältnismäßigkeit und nachvollziehbare Zuständigkeiten.
+
 ## Wirkungstransformations-Bereitschaft
 
 Prüfen, ob Mandat, Fähigkeiten, Daten, Ressourcen, Governance, Kultur und Schutz für eine Transformation ausreichen.
@@ -14666,6 +15012,14 @@ E11 gehört zur Kategorie „Strategie, Portfolio und Governance“. Verbindlich
 Ein Wirkungstransparenzbericht macht öffentlich nachvollziehbar, welche Wirkung öffentliche Mittel, Programme, Beschaffung und Gesetze tatsächlich erzeugt haben.
 
 Der Wirkungstransparenzbericht ist die öffentliche Rechenschaftsschicht des Wirkungshaushalts: Er zeigt Zustandsveränderungen, Unsicherheiten, Nebenwirkungen, Datenqualität und Lernentscheidungen.
+
+## Wirkungstreppe
+
+Die Wirkungstreppe ist eine didaktische Darstellung von Wirkungsstufen. Sie ordnet Aktivitäten, Outputs, Outcomes und gesellschaftliche Wirkung in aufeinander aufbauende Ebenen.
+
+Wirkungstreppen machen anschaulich, dass durchgeführte Aktivitäten und erreichte Zielgruppen noch keine Veränderung belegen. In der verbreiteten PHINEO-Einordnung liegen Aktivitäten, erreichte Zielgruppen und angenommene Angebote auf Output-Ebenen; Veränderungen von Wissen, Verhalten und Lebenslage werden als Wirkungsebenen bis hin zu gesellschaftlicher Veränderung erklärt.
+
+Eine Wirkungstreppe kann bei Planung, Monitoring und Kommunikation helfen. Sie beantwortet aber nicht allein Fragen der Attribution, der Nebenwirkungen, des Referenzrahmens, der Nichtkompensation oder der ökonomischen Rückkopplung.
 
 ## Wirkungsumsatzsteuer
 
@@ -14918,6 +15272,14 @@ Aus Wirkungsmodell und Referenzrahmen ein hierarchisches Set aus Zustands-, Proz
 Aus Wirkungsmodell und Referenzrahmen ein hierarchisches Set aus Zustands-, Prozess-, Früh-, Risiko- und Transformationsindikatoren entwickeln.
 
 D03 gehört zur Kategorie „Messung, Bewertung und Evidenz“. Verbindlicher Output: Indikatorenbaum mit Definition, Einheit, Referenzwert, Quelle, Frequenz, Empfänger, Verantwortlichen und WÖk-ID.
+
+## WÖk-Wirkungsrad
+
+Das WÖk-Wirkungsrad ist ein Lernmodell, das Vorwirkung, Wirkungsermittlung, Bewertung, Schutz, Rückkopplung und neue Systemzustände als rekursiven Kreislauf verbindet.
+
+Das Wirkungsrad zeigt, dass reale Systeme nicht am Ende einer linearen Wirkungskette stehen bleiben. Auslöser, Wirkpotenziale, Interventionen und der IOOI-Wirkpfad erzeugen Zustandsveränderungen, Nebenwirkungen und Rückkopplungen. Diese werden an einem Referenzrahmen bewertet, unter Schutzregeln zur Netto-Wirkung zusammengeführt und in die nächste Entscheidung zurückgeführt.
+
+Der neue Systemzustand wird wiederum zur Ausgangslage für die nächste Analyse. Das Modell ist ein Orientierungsbild, keine additive Rechenformel oder automatisierte Entscheidungsmaschine.
 
 ## WÖMM-Betriebssystem
 

@@ -5,11 +5,11 @@ Stand: 2026-08-14 (Phase 0 „Knowledge Bootstrap", Claude; Codex-Verifikation o
 
 ## Was ist die Wirkungsökonomie?
 
-Ein von Natalie Weber begründetes Gesellschafts- und Wirtschaftsmodell: **Wirkung auf Mensch, Planet und Demokratie wird zentrale Steuerungsgröße** („Wirkung statt Kapital"). Wirkung = tatsächliche Veränderung von Zuständen (neutral, relational); bewertet wird am Referenzrahmen SDGs/Agenda 2030 + SDG+ (WÖk-Erweiterung, keine UN-Kategorie); Kernprinzipien: positive Netto-Wirkung, Nichtkompensation, Reverse Merit Order (`FinalScore = min(Kernfelder)`), Wirkungsrückkopplung; Nachhaltigkeit = langfristig gesicherte Wirkungsresilienz des gekoppelten Systems Mensch-Planet-Demokratie (Begriffsleitfaden v1.3).
+Ein von Natalie Weber begründetes Gesellschafts- und Wirtschaftsmodell: **Wirkung auf Mensch, Planet und Demokratie wird zentrale Steuerungsgröße** („Wirkung statt Kapital"). Wirkung = tatsächliche Veränderung von Zuständen (neutral, relational); bewertet wird am Referenzrahmen SDGs/Agenda 2030 + SDG+ (WÖk-Erweiterung, keine UN-Kategorie); Kernprinzipien: positive Netto-Wirkung, Nichtkompensation, Reverse Merit Order (`FinalScore = min(Kernfelder)`), Wirkungsrückkopplung; Nachhaltigkeit = langfristig gesicherte Wirkungsresilienz des gekoppelten Systems Mensch-Planet-Demokratie (Begriffsleitfaden v1.5).
 
 ## Versionssicherheit (WICHTIG)
 
-Maßgeblich ist der **Status in der Website-Bibliothek** (`assets/data/library-version-registry.json`: führend > aktuell > Arbeitsfassung > historisch > archiviert > ersetzt), nie der lokale Dateiname. Die 8 führenden Referenzen (Buch · WÖMM 2.0 · WÖMS 2.0 · Begriffsleitfaden **v1.3** · Glossar · SDG-/SDG+-Referenzrahmen **v0.3** · Master Items **v1.3** (621 IDs) · T-SROI-Rechenstandard **v1.1**): → [`SOURCE_HIERARCHY.md`](SOURCE_HIERARCHY.md) + [`reference-manifest.yaml`](reference-manifest.yaml). Ersetzte Fassungen (Master Items v1.2, Begriffsleitfaden v1.0, T-SROI-Whitepaper) nie für Neues verwenden.
+Maßgeblich ist der **Status in der Website-Bibliothek** (`assets/data/library-version-registry.json`: führend > aktuell > Arbeitsfassung > historisch > archiviert > ersetzt), nie der lokale Dateiname. Die 8 führenden Referenzen (Buch · WÖMM 2.0 · WÖMS 2.0 · Begriffsleitfaden **v1.5** · Glossar · SDG-/SDG+-Referenzrahmen **v0.3** · Master Items **v1.3** (621 IDs) · T-SROI-Rechenstandard **v1.1**): → [`SOURCE_HIERARCHY.md`](SOURCE_HIERARCHY.md) + [`reference-manifest.yaml`](reference-manifest.yaml). Ersetzte Fassungen (Master Items v1.2, Begriffsleitfaden v1.0 bis v1.4, T-SROI-Whitepaper) nie für Neues verwenden.
 
 ## Wegweiser
 

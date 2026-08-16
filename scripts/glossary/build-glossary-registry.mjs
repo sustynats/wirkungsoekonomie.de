@@ -22,6 +22,7 @@ const supplementSources = [
   // Datei ist kuratiert, nicht aus Kategorien automatisch abgeleitet.
   path.join(root, "content/glossary/imports/curated-crosslinks.json"),
   path.join(root, "content/glossary/imports/gesamtstudie-wirkungsdilemmata-kooperation-sdgplus-crosslinks.json"),
+  path.join(root, "content/glossary/imports/begriffsleitfaden-v1.5.json"),
 ];
 const out = path.join(root, "public/data/glossary.terms.json");
 const modelOut = path.join(root, "assets/data/glossary-model.json");
