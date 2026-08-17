@@ -586,7 +586,8 @@ const termTargetLabels = new Map([
 const relatedContentTargets = new Map([
   ["faktencheck-folgencheck-v1-1", ["Faktencheck und Folgencheck - Methodenseite", "../../werkstatt/arbeitsbibliothek/whitepaper/faktencheck-folgencheck/"]],
   ["folgencheck-wirkungspolitische-sprache-v0-1", ["Folgencheck statt Faktencheck", "../../bibliothek/folgencheck-wirkungspolitische-sprache/"]],
-  ["wstg-oktober-2025", ["Wirkungssteuergesetz WStG", "../../dokumente/wstg-oktober-2025/"]],
+  ["wirkungssteuer-wstg-3-0", ["Wirkungssteuer und WStG 3.0 - Gesamtneufassung", "../../bibliothek/wirkungssteuer-wstg-3-0/"]],
+  ["wstg-oktober-2025", ["Historische Fassung: WStG Oktober 2025", "../../bibliothek/wstg-oktober-2025/"]],
   ["technische-leitlinien-wustg", ["Technische Leitlinien WUStG", "../../dokumente/technische-leitlinien-wustg-v2/"]],
   ["technische-leitlinien-wustg-v2", ["Technische Leitlinien WUStG", "../../dokumente/technische-leitlinien-wustg-v2/"]],
   ["beispiel-apfel-wirkungssteuer-bonusregel", ["Apfelbeispiel Wirkungssteuer", "../../dokumente/beispiel-apfel-wirkungssteuer-bonusregel/"]],
@@ -629,7 +630,7 @@ const relatedContentTargets = new Map([
   ["fuehrender-begriffsleitfaden", ["Führender Begriffsleitfaden der Wirkungsökonomie", "../../bibliothek/woek-begriffsleitfaden-fuehrend/"]],
   ["fuehrender-begriffsleitfaden-der-wirkungsoekonomie", ["Führender Begriffsleitfaden der Wirkungsökonomie", "../../bibliothek/woek-begriffsleitfaden-fuehrend/"]],
   ["t-sroi-whitepaper", ["T-SROI-Whitepaper", "../../dokumente/whitepaper-t-sroi/"]],
-  ["working-paper-wirkungssteuergesetz", ["Wirkungssteuergesetz WStG", "../../dokumente/wstg-oktober-2025/"]],
+  ["working-paper-wirkungssteuergesetz", ["Wirkungssteuer und WStG 3.0 - Gesamtneufassung", "../../bibliothek/wirkungssteuer-wstg-3-0/"]],
   ["wirkungsradar-narrative-sprachmuster-und-emotionalisierung", ["Wirkungsradar: Narrative, Sprachmuster und Emotionalisierung", "../../wirkungsradar/"]],
   ["arbeitspapier-doppelte-wesentlichkeit-impact-controlling", ["Arbeitspapier Doppelte Wesentlichkeit", "../../dokumente/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/"]],
   ["doppelte-wesentlichkeit-impact-controlling", ["Arbeitspapier Doppelte Wesentlichkeit", "../../dokumente/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/"]],

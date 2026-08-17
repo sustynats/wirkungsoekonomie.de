@@ -220,7 +220,7 @@ const stateToolCards = [
 ];
 
 const tools = [
-  ["Wirkungssteuergesetz WStG", "Gesetz / Rahmeninstrument", "Wirkung als steuerliche Bemessungs- und Steuerungslogik.", "werkzeuge/wirkungssteuergesetz/", "werkstatt/gesetze/wirkungssteuergesetz/"],
+  ["Wirkungssteuer und WStG 3.0", "Gesetz / Rahmeninstrument", "Modulare Rückkopplungsarchitektur über bestehende Steuerarten; Scorecards liefern Evidenz, der Gesetzgeber setzt Tarife.", "werkzeuge/wirkungssteuergesetz/", "bibliothek/wirkungssteuer-wstg-3-0/"],
   ["Wirkungsumsatzsteuer", "Steuerlogik", "Produktwirkung wird rechtlich prüfbar in Steuerklassen übersetzt.", "werkzeuge/wirkungsumsatzsteuer/", "werkstatt/leitlinien/wustg/"],
   ["Wirkungseinkommensteuer WEstG", "Konzept / Steuerlogik", "Einkommen wird im Entstehungs- und Wirkungskontext betrachtet.", "werkzeuge/wirkungseinkommensteuer/", "werkstatt/dossiers/staat-recht-demokratie/wirkungseinkommensteuer-westg/"],
   ["Wirkungshaushalt", "Haushaltslogik", "Öffentliche Mittel werden an Zustandsveränderung, Prävention und Resilienz rückgekoppelt.", "werkzeuge/wirkungshaushalt/", "werkstatt/dossiers/staat-recht-demokratie/wirkungshaushalt/"],
@@ -665,7 +665,7 @@ function workshopLibraryPage() {
     <section class="section"><div class="section-header"><p class="hero-kicker">Arbeitsbibliothek</p>${sectionTitle("library", "Online lesen vor Download")}</div>${cardGrid(base, [
       { title: "Portal Staat, Recht & Demokratie", text: "Rang-3-Portal mit Unterbereichen und Werkzeugen.", href: "wirkungsfelder/staat-recht-demokratie/" },
       { title: "Gesamtdossier Staat, Recht & Demokratie", text: "Gesamtdossier online lesbar.", href: "werkstatt/dossiers/staat-recht-demokratie/" },
-      { title: "Wirkungssteuergesetz WStG", text: "LawReader mit Paragrafenankern.", href: "werkstatt/gesetze/wirkungssteuergesetz/" },
+      { title: "Wirkungssteuer und WStG 3.0", text: "Vollständige Gesamtneufassung mit 125 kommentierten Paragrafen.", href: "bibliothek/wirkungssteuer-wstg-3-0/" },
       ...stateDetailConcepts.map((concept) => ({ title: concept.title, text: concept.subtitle, href: `wirkungsfelder/staat-recht-demokratie/${concept.slug}/` })),
       ...dossiers.map((d) => ({ title: d.title, text: d.subtitle, href: `werkstatt/dossiers/staat-recht-demokratie/${d.slug}/` })),
     ])}</section>
@@ -747,7 +747,7 @@ function build() {
   toolPage("werkzeuge/wirkungsrat/index.html", "Wirkungsrat", "Wächterinstitution der Wirkungslogik.", "Der Wirkungsrat pflegt WÖk-IDs, Benchmarks, Archetypen und Evaluationslogik und schützt die Wirkungslogik vor Greenwashing, Lobbyverzerrung und technokratischer Erstarrung.", "werkstatt/dossiers/staat-recht-demokratie/wirkungsrat/");
   toolPage("werkzeuge/wirkungshaushalt/index.html", "Wirkungshaushalt", "Öffentliche Mittel nach realer Zustandsveränderung steuern.", "Der Wirkungshaushalt betrachtet öffentliche Mittel nicht nur nach Ausgabenlogik, sondern nach Prävention, Resilienz, Zielgruppenwirkung und positiver Netto-Wirkung.", "werkstatt/dossiers/staat-recht-demokratie/wirkungshaushalt/");
   toolPage("werkzeuge/politische-wirkungspruefung/index.html", "Politische Wirkungsprüfung", "Programme, Gesetze und Haushalte als Wirkungspotenziale prüfen.", "Politische Wirkungsprüfung macht erwartete Erst-, Zweit- und Drittwirkungen sichtbar, ohne Parteien moralisch zu sortieren oder politische Entscheidung zu automatisieren.", "werkstatt/dossiers/staat-recht-demokratie/politische-wirkungspruefung/");
-  toolPage("werkzeuge/wirkungssteuergesetz/index.html", "Wirkungssteuergesetz WStG", "Rahmengesetzliche Logik für Wirkungssteuerung.", "Das WStG verankert Wirkung auf Mensch, Planet und Demokratie als steuerliche Bemessungs- und Steuerungslogik. Es ist ein Rahmeninstrument, kein einzelnes Wirkungsfeld.", "werkstatt/dossiers/staat-recht-demokratie/wirkungssteuergesetz-wstg/");
+  toolPage("werkzeuge/wirkungssteuergesetz/index.html", "Wirkungssteuer und WStG 3.0", "Modulare Wirkungsrückkopplung über bestehende Steuerarten.", "WStG 3.0 ist keine universelle Supersteuer. Gesetzlich aktivierte Module ergänzen bestehende Steuerarten; Scorecards und WÖk-IDs liefern Evidenz, während Tatbestand, Tarif und Rechtsfolge beim demokratisch legitimierten Gesetzgeber bleiben.", "bibliothek/wirkungssteuer-wstg-3-0/");
   workshopLibraryPage();
   updateSitemap();
 }

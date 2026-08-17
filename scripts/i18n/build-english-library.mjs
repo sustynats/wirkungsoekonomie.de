@@ -44,6 +44,7 @@ const titleEn = new Map([
   ["wp-produkte", "Product Taxation by Impact"],
   ["wp-rente", "Working Paper on Pensions"],
   ["wp-wohnungsmarkt", "Working Paper on the Housing Market"],
+  ["wirkungssteuer-wstg-3-0", "Impact Tax and Impact Tax Act 3.0"],
   ["wstg-oktober-2025", "Impact Tax Act, October 2025"],
 ]);
 

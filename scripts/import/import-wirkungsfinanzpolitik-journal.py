@@ -1046,8 +1046,8 @@ def update_staat_recht_page() -> None:
     )
     if '../../wirkungsfelder/wirkungsfinanzpolitik/' not in text:
         text = text.replace(
-            '<a class="text-link" href="../../dokumente/wirkungsrat-konzept/">Wirkungsrat Konzept</a><a class="text-link" href="../../dokumente/wstg-oktober-2025/">Wirkungssteuergesetz</a>',
-            '<a class="text-link" href="../../dokumente/wirkungsrat-konzept/">Wirkungsrat Konzept</a><a class="text-link" href="../../dokumente/wstg-oktober-2025/">Wirkungssteuergesetz</a><a class="text-link" href="../../wirkungsfelder/wirkungsfinanzpolitik/">Wirkungsfinanzpolitik</a><a class="text-link" href="../../dokumente/wirkungsfinanzpolitik/">Arbeitspapier Wirkungsfinanzpolitik</a>',
+            '<a class="text-link" href="../../dokumente/wirkungsrat-konzept/">Wirkungsrat Konzept</a><a class="text-link" href="../../bibliothek/wirkungssteuer-wstg-3-0/">Wirkungssteuer und WStG 3.0</a>',
+            '<a class="text-link" href="../../dokumente/wirkungsrat-konzept/">Wirkungsrat Konzept</a><a class="text-link" href="../../bibliothek/wirkungssteuer-wstg-3-0/">Wirkungssteuer und WStG 3.0</a><a class="text-link" href="../../wirkungsfelder/wirkungsfinanzpolitik/">Wirkungsfinanzpolitik</a><a class="text-link" href="../../dokumente/wirkungsfinanzpolitik/">Arbeitspapier Wirkungsfinanzpolitik</a>',
             1,
         )
     if 'href="../../blog/{ARTICLE_SLUG}.html"'.format(ARTICLE_SLUG=ARTICLE_SLUG) not in text:

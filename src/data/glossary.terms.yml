@@ -1924,48 +1924,94 @@ terms:
     canonicalLabel: "Wirkungssteuer"
     slug: "wirkungssteuer"
     status: "führender-begriff"
-    version: "1.0"
-    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
-    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
-    sourceSection: "Instrumente"
-    shortDefinition: "Eine Wirkungssteuer koppelt bewertete Wirkung in steuerliche Anreize zurück."
-    hoverDefinition: "Wirkungssteuer macht Wirkung steuerungsrelevant, indem sie Wirkung in Steuersätze oder Anreize rückkoppelt."
-    longDefinition: "Wirkungssteuern sind Instrumente, um positive Netto-Wirkung günstiger und negative Wirkung teurer zu machen."
-    usageNote: "Nicht als Strafsteuer verkürzen."
-    doNotConfuseWith: ["CO2-Steuer", "Pigou-Steuer"]
+    version: "3.0"
+    source: "Wirkungssteuer_WStG_3.0_Gesamtneufassung_2026.docx"
+    sourceDocument: "Wirkungssteuer 3.0 und Wirkungssteuergesetz (WStG) 3.0"
+    sourceSection: "Executive Summary und Teil A"
+    shortDefinition: "Wirkungssteuer bezeichnet eine modulare fiskalische Rückkopplungsarchitektur, die nachgewiesene oder gesetzlich modellierte Wirkung über klar bestimmte Module an bestehende Steuerarten anbindet."
+    hoverDefinition: "Wirkungssteuer 3.0 ergänzt bestehende Steuerarten um gesetzliche Wirkungsmodule; Scorecards liefern Evidenz, der Gesetzgeber bestimmt Tarife und Rechtsfolgen."
+    longDefinition: "Wirkungssteuer 3.0 ist keine universelle Supersteuer. Ausgangspunkt bleibt jede bestehende Steuer mit eigenem Steuergegenstand, eigener Bemessungsgrundlage und Kompetenzordnung. Ein Wirkungsmodul kann nur durch Gesetz aktiviert werden und muss Datengrundlage, Schutzgrenzen, Tariffolge, Übergang, Rechtsschutz und Evaluation bestimmen. Nichtkompensation und Reverse Merit Order schützen vor dem Wegmitteln schwerer Schäden; Personen werden nicht bewertet."
+    usageNote: "Immer modular, rechtsgebunden und als Entwurfsarchitektur beschreiben. Scorecards setzen keine Steuersätze."
+    doNotConfuseWith: ["CO2-Steuer", "Pigou-Steuer", "universelle Supersteuer", "automatische Score-Steuer"]
     synonyms: ["Steuer nach Wirkung"]
-    relatedTerms: ["wstg", "wustg", "wirkungsrueckkopplung"]
-    relatedDocuments: ["wstg-oktober-2025", "technische-leitlinien-wustg"]
-    examples: []
-    preferredUsage: "Als Rückkopplungsinstrument der WÖk verwenden."
-    deprecatedUsage: []
+    relatedTerms: ["wstg", "wirkungssteuergesetz", "wirkungsnachweiskonto", "wustg", "wirkungsrueckkopplung", "scorecard", "nichtkompensationsprinzip", "reverse-merit-order"]
+    relatedDocuments: ["wirkungssteuer-wstg-3-0", "technische-leitlinien-wustg"]
+    examples: ["Energie-, Strom- oder Kfz-Steuer mit einem gesetzlich bestimmten Wirkungsmodul"]
+    preferredUsage: "Als modulare steuerliche Rückkopplungsarchitektur verwenden."
+    deprecatedUsage: ["eine einzige Wirkungs-Supersteuer", "Scorecards bestimmen automatisch den Steuersatz"]
     reviewStatus: "approved"
     glossaryOrderKey: "wirkungssteuer"
     firstApprovedIn: "2026.1"
-    lastUpdated: "2026-05-23"
+    lastUpdated: "2026-08-17"
+  - termId: wirkungsnachweiskonto
+    canonicalLabel: "Wirkungsnachweiskonto"
+    slug: "wirkungsnachweiskonto"
+    status: "führender-begriff"
+    version: "3.0"
+    source: "Wirkungssteuer_WStG_3.0_Gesamtneufassung_2026.docx"
+    sourceDocument: "Wirkungssteuer 3.0 und Wirkungssteuergesetz (WStG) 3.0"
+    sourceSection: "§ 32 und Anhang D"
+    shortDefinition: "Das Wirkungsnachweiskonto ist eine digitale, revisionssichere Nachweis- und Versionsschicht für steuerrelevante Wirkungsdaten je Tatbestand."
+    hoverDefinition: "Das Wirkungsnachweiskonto dokumentiert Nachweise, Datenstände, Benchmarks, Prüfungen und Rechtsfolgen je steuerlichem Tatbestand, ohne eine moralische Gesamtbilanz zu bilden."
+    longDefinition: "Das Wirkungsnachweiskonto speichert für einen steuerlich bestimmten Gegenstand nachvollziehbar, welche Wirkungsdaten, Quellen, Benchmarks, Versionen, Prüfungen und Rechtsfolgen verwendet wurden. Es dient Nachweis, Korrektur, Rechtsschutz und Evaluation. Es bildet weder einen steuerartenübergreifenden Saldo guter und schlechter Wirkung noch ein Personenrating und ermöglicht keine freie Verrechnung zwischen unterschiedlichen Steuerzwecken oder Wirkungsfeldern."
+    usageNote: "Nur als Nachweis- und Versionsschicht je Tatbestand verwenden; offene Daten bleiben offen und werden nicht als neutral behandelt."
+    doNotConfuseWith: ["Wirkungssteuerkonto als moralische Gesamtbilanz", "Steuerkonto", "Social Credit", "Personenbewertung"]
+    synonyms: ["Wirkungsnachweis-Konto"]
+    relatedTerms: ["wirkungssteuer", "wirkungssteuergesetz", "wstg", "woek-id", "produkt-id", "datenqualitaet", "nichtkompensationsprinzip"]
+    relatedDocuments: ["wirkungssteuer-wstg-3-0"]
+    examples: ["Versionierter Nachweis eines gesetzlich aktivierten Wirkungsmoduls bei einer bestimmten Steuerart"]
+    preferredUsage: "Wirkungsnachweiskonto als revisionssichere Nachweisschicht bezeichnen."
+    deprecatedUsage: ["steuerartenübergreifendes Wirkungssteuerkonto", "moralisches Gesamtkonto"]
+    reviewStatus: "approved"
+    glossaryOrderKey: "wirkungsnachweiskonto"
+    firstApprovedIn: "WStG 3.0"
+    lastUpdated: "2026-08-17"
+  - termId: produkt-id
+    canonicalLabel: "Produkt-ID"
+    slug: "produkt-id"
+    status: "führender-begriff"
+    version: "3.0"
+    source: "Wirkungssteuer_WStG_3.0_Gesamtneufassung_2026.docx"
+    sourceDocument: "Wirkungssteuer 3.0 und Wirkungssteuergesetz (WStG) 3.0"
+    sourceSection: "Identitätslogik und Anhang D"
+    shortDefinition: "Eine Produkt-ID identifiziert das konkrete Produkt, Modell oder andere Steuerobjekt, auf das Wirkungsdaten und Rechtsfolgen bezogen werden."
+    hoverDefinition: "Die Produkt-ID beantwortet, welches konkrete Produkt oder Objekt gemeint ist; eine WÖk-ID bezeichnet dagegen den gemessenen Wirkungsindikator."
+    longDefinition: "Produkt-ID ist im WStG 3.0 der Sammelbegriff für eine eindeutige Produkt- oder Objektkennung, etwa eine DPP-, Register-, Steuer-, EAN-/GTIN- oder sonstige Objektkennung. Sie verbindet einen konkreten Gegenstand mit Datenpunkten und Nachweisen. Die Produkt-ID sagt nicht, welche Wirkung gemessen wird, und ist weder eine Personen-ID noch selbst eine Bewertung."
+    usageNote: "Konkreten Identifikationsstandard nennen, wenn er feststeht. Produkt-ID nicht als Wirkungswert oder WÖk-ID verwenden."
+    doNotConfuseWith: ["WÖk-ID", "Wirkungswert", "Personen-ID", "Score"]
+    synonyms: ["Produktidentität", "Objekt-ID", "Produkt-/Objekt-ID"]
+    relatedTerms: ["woek-id", "digitaler-produktpass", "produktdaten", "wirkungsnachweiskonto", "wirkungsindikator", "datenqualitaet"]
+    relatedDocuments: ["wirkungssteuer-wstg-3-0"]
+    examples: ["Eine GTIN oder DPP-Kennung identifiziert das Produkt; eine WÖk-ID identifiziert den dazu erhobenen Wirkungsindikator."]
+    preferredUsage: "Als Kennung des konkreten Produkts oder Objekts verwenden und vom Wirkungsindikator trennen."
+    deprecatedUsage: []
+    reviewStatus: "approved"
+    glossaryOrderKey: "produkt-id"
+    firstApprovedIn: "WStG 3.0"
+    lastUpdated: "2026-08-17"
   - termId: wirkungssteuergesetz
     canonicalLabel: "Wirkungssteuergesetz"
     slug: "wirkungssteuergesetz"
     status: "führender-begriff"
-    version: "1.0"
-    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
-    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
-    sourceSection: "Instrumente"
-    shortDefinition: "Das Wirkungssteuergesetz ist ein Rahmengesetz-Konzept für steuerliche Wirkungsrückkopplung."
-    hoverDefinition: "Das Wirkungssteuergesetz beschreibt den rechtlichen Rahmen für Steuern nach Wirkung."
-    longDefinition: "Das WStG bildet den Rahmen, in dem Wirkungsklassen, Daten, Governance und Steuerungslogiken rechtlich strukturiert werden können."
-    usageNote: "Als Entwurf oder Konzept kennzeichnen, solange nicht geltendes Recht."
+    version: "3.0"
+    source: "Wirkungssteuer_WStG_3.0_Gesamtneufassung_2026.docx"
+    sourceDocument: "Wirkungssteuer 3.0 und Wirkungssteuergesetz (WStG) 3.0"
+    sourceSection: "Teil B, §§ 1-125"
+    shortDefinition: "Das Wirkungssteuergesetz (WStG) 3.0 ist der vollständige Rahmengesetzentwurf für eine modulare, rechtsgebundene Wirkungsrückkopplung über bestehende Steuerarten."
+    hoverDefinition: "WStG 3.0 verbindet gemeinsame Begriffe, Schutzregeln, Daten, Governance, Rechtsschutz und Evaluation; konkrete Tarife entstehen erst in gesetzlich aktivierten Einzelmodulen."
+    longDefinition: "Das WStG 3.0 enthält 125 kommentierte Paragrafen. Es ordnet Wirkung, Evidenz und Zurechnung, Nichtkompensation und Reverse Merit Order, Daten- und Registerarchitektur, getrennte WÖk- und Produkt-IDs, das Wirkungsnachweiskonto, Wirkungsrat, Datenschutz, Rechtsschutz, KI, Haushaltsneutralität, Pilotierung und EU-Pfad. Das WStG ist ein Referenz- und Diskussionsentwurf, kein geltendes Recht."
+    usageNote: "Als Gesamtneufassung 3.0 und Referenz-/Diskussionsentwurf kennzeichnen."
     doNotConfuseWith: ["WUStG", "geltendes Steuerrecht"]
     synonyms: ["WStG", "Wirkungssteuer-Rahmengesetz"]
-    relatedTerms: ["wirkungssteuer", "wstg", "wustg"]
-    relatedDocuments: ["wstg-oktober-2025"]
-    examples: []
-    preferredUsage: "Als Gesetzesentwurf/Konzept bezeichnen."
+    relatedTerms: ["wirkungssteuer", "wstg", "wirkungsnachweiskonto", "wustg", "scorecard", "woek-id", "produkt-id", "wirkungsrat"]
+    relatedDocuments: ["wirkungssteuer-wstg-3-0", "wstg-oktober-2025"]
+    examples: ["Rahmengesetz plus gesetzlich aktivierte Einzelmodule je Steuerart"]
+    preferredUsage: "Als modularen Rahmengesetzentwurf WStG 3.0 bezeichnen."
     deprecatedUsage: []
     reviewStatus: "approved"
     glossaryOrderKey: "wirkungssteuergesetz"
     firstApprovedIn: "2026.1"
-    lastUpdated: "2026-05-23"
+    lastUpdated: "2026-08-17"
   - termId: wirkungstraeger
     canonicalLabel: "Wirkungsträger"
     slug: "wirkungstraeger"
@@ -2085,25 +2131,25 @@ terms:
     canonicalLabel: "WStG"
     slug: "wstg"
     status: "führender-begriff"
-    version: "1.0"
-    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
-    sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
-    sourceSection: "Instrumente"
-    shortDefinition: "WStG steht für Wirkungssteuergesetz, den Rahmengesetz-Entwurf für steuerliche Wirkungsrückkopplung."
-    hoverDefinition: "WStG ist das Wirkungssteuerrahmengesetz: der Entwurfsrahmen für Begriffe, Governance, Daten, Rechtsschutz und Steuerungsmodule."
-    longDefinition: "Das WStG strukturiert die rechtliche Rahmung von Wirkungssteuerung und Wirkungsrückkopplung."
-    usageNote: "Als Entwurf/Konzept kennzeichnen."
+    version: "3.0"
+    source: "Wirkungssteuer_WStG_3.0_Gesamtneufassung_2026.docx"
+    sourceDocument: "Wirkungssteuer 3.0 und Wirkungssteuergesetz (WStG) 3.0"
+    sourceSection: "Teil B, §§ 1-125"
+    shortDefinition: "WStG steht für Wirkungssteuergesetz; die führende Fassung 3.0 ist ein modularer Rahmengesetzentwurf für steuerliche Wirkungsrückkopplung."
+    hoverDefinition: "WStG 3.0 ist der Entwurfsrahmen für Wirkung, Evidenz, Daten, Schutzregeln, Governance, Rechtsschutz und gesetzlich aktivierte Steuerartenmodule."
+    longDefinition: "WStG 3.0 ersetzt die Vorstellung einer universellen Wirkungs-Supersteuer durch eine rechtsgebundene Modularchitektur. Scorecards und WÖk-IDs stellen Evidenz bereit; der Gesetzgeber bestimmt Tatbestand, Tarif und Rechtsfolge. Die Gesamtneufassung umfasst 125 kommentierte Paragrafen und bleibt ein Referenz- und Diskussionsentwurf, kein geltendes Recht."
+    usageNote: "Aktuelle Fassung immer als WStG 3.0 oder Gesamtneufassung 2026 kennzeichnen."
     doNotConfuseWith: ["WUStG"]
     synonyms: ["Wirkungssteuergesetz"]
-    relatedTerms: ["wirkungssteuergesetz", "wirkungssteuer", "wustg"]
-    relatedDocuments: ["wstg-oktober-2025"]
-    examples: []
-    preferredUsage: "WStG für den Rahmen verwenden."
-    deprecatedUsage: []
+    relatedTerms: ["wirkungssteuergesetz", "wirkungssteuer", "wirkungsnachweiskonto", "wustg", "scorecard", "wirkungsrat"]
+    relatedDocuments: ["wirkungssteuer-wstg-3-0", "wstg-oktober-2025"]
+    examples: ["WStG 3.0 als Rahmen; materielle Steuerfolge erst durch ein aktiviertes Einzelmodul"]
+    preferredUsage: "WStG 3.0 für die aktuelle Entwurfsarchitektur verwenden."
+    deprecatedUsage: ["WStG als automatische universelle Steuerformel"]
     reviewStatus: "approved"
     glossaryOrderKey: "wstg"
     firstApprovedIn: "2026.1"
-    lastUpdated: "2026-05-23"
+    lastUpdated: "2026-08-17"
   - termId: wustg
     canonicalLabel: "WUStG"
     slug: "wustg"

@@ -146,7 +146,7 @@ const fields = [
     status: "Live",
     tools: [["Wirkungshaushalt", "werkzeuge/wirkungshaushalt/"], ["Wirkungsrat", "werkzeuge/wirkungsrat/"], ["Wirkungsaudit", "werkzeuge/wirkungsaudit/"]],
     demos: [["Erleben", "erleben/"], ["WÖk-Kompass", "kompass.html"]],
-    docs: [["Wirkungsrat Konzept", "dokumente/wirkungsrat-konzept/"], ["Wirkungssteuergesetz", "dokumente/wstg-oktober-2025/"]],
+    docs: [["Wirkungsrat Konzept", "dokumente/wirkungsrat-konzept/"], ["Wirkungssteuer und WStG 3.0", "bibliothek/wirkungssteuer-wstg-3-0/"]],
     problem: "Staatliche Steuerung misst oft Ausgaben, Zuständigkeiten und Verfahren, aber nicht ausreichend reale Zustandsveränderungen, Nebenwirkungen und Korrekturfähigkeit.",
     visible: "Sichtbar werden öffentliche Wirkung, demokratische Legitimation, Rechtsschutz, Haushaltseffekte, Zielkonflikte und institutionelle Lernfähigkeit.",
     pilot: "Wirkungshaushalte, Wirkungsrat, öffentliche Beschaffung, Register, Audits und rechtsstaatliche Pilotklauseln.",

@@ -17,6 +17,7 @@ const supplementSources = [
   path.join(root, "content/glossary/imports/value-pricing-und-wirkungsbasiertes-value-pricing.json"),
   path.join(root, "content/glossary/imports/iooi-wirkungsarchitektur.json"),
   path.join(root, "content/glossary/imports/phineo-wirkungslogik.json"),
+  path.join(root, "content/glossary/imports/wirkungssteuer-wstg-v3.json"),
   path.join(root, "content/glossary/imports/gesamtstudie-wirkungsdilemmata-kooperation-sdgplus-term-definitions.json"),
   // Fachlich begründete Verbindungen für zuvor isolierte Begriffe. Diese
   // Datei ist kuratiert, nicht aus Kategorien automatisch abgeleitet.
@@ -599,6 +600,7 @@ function termCompletenessScore(term) {
     term.woekRelation,
   ].filter(Boolean).length
     + (term.version === "2.0" ? 5 : 0)
+    + (term.version === "3.0" ? 12 : 0)
     + (term.status === "approved" ? 3 : 0)
     + (Array.isArray(term.deepGlossarySections) ? Math.min(term.deepGlossarySections.length, 6) : 0)
     + (Array.isArray(term.officialSources) ? Math.min(term.officialSources.length, 6) : 0)

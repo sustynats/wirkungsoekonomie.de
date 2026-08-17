@@ -537,7 +537,7 @@ const debateSourceDirectory = {
   },
   "I-WSTG": {
     title: "Wirkungssteuergesetz",
-    url: "/dokumente/wstg-oktober-2025/",
+    url: "/bibliothek/wirkungssteuer-wstg-3-0/",
     type: "Interne WÖk-Quelle",
     limitation: "Belegt den WÖk-Vorschlag, nicht geltendes Steuerrecht.",
   },

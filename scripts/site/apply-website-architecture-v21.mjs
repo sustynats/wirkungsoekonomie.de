@@ -323,7 +323,7 @@ const steuerungDetails = {
     },
     sources: [
       ["Technische Leitlinien WUStG", "bibliothek/technische-leitlinien-wustg/", "Anschluss an Wirkungsklassen, Schutzlinien und Pilotlogik"],
-      ["WStG Oktober 2025", "bibliothek/wstg-oktober-2025/", "rechtlicher Rahmen und demokratische Zuständigkeit"],
+      ["Wirkungssteuer und WStG 3.0", "bibliothek/wirkungssteuer-wstg-3-0/", "modularer Rechtsrahmen und demokratische Tarifhoheit"],
       ["Produktpreise", "wirkungssteuerung/produktpreise/", "Preislogik und ausgelagerte Folgekosten"],
       ["Begriff: Wirkungssteuer", "begriffe/wirkungssteuer/", "Definition und Begriffsabgrenzung"],
     ],
@@ -839,7 +839,7 @@ Object.assign(steuerungDetails, {
       Demokratie: "Das Gesetz muss Macht begrenzen: Öffentlichkeit, Parlament, Gerichte und Widerspruch bleiben zentral.",
     },
     sources: [
-      ["WStG Oktober 2025", "bibliothek/wstg-oktober-2025/", "Gesetzesentwurf und Schutzlinien"],
+      ["Wirkungssteuer und WStG 3.0", "bibliothek/wirkungssteuer-wstg-3-0/", "Gesamtneufassung, Gesetzesentwurf und Schutzlinien"],
       ["Wirkungsrat", "wirkungssteuerung/wirkungsrat/", "Prüfinstanz für Datenqualität und Zielkonflikte"],
       ["Wirkungshaushalt", "wirkungssteuerung/wirkungshaushalt/", "öffentliche Mittel und demokratische Priorisierung"],
       ["Staat, Recht & Demokratie", "wirkungsfelder/staat-recht-demokratie/", "politische und rechtliche Anschlussfähigkeit"],

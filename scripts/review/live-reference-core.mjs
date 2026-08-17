@@ -762,7 +762,7 @@ export function buildLogicFindings() {
 
 export function buildCrossDocumentFindings() {
   const docs = [
-    ["WStG Oktober 2025", "/dokumente/wstg-oktober-2025/"],
+    ["Wirkungssteuer und WStG 3.0", "/bibliothek/wirkungssteuer-wstg-3-0/"],
     ["Technische Leitlinien WUStG", "/dokumente/technische-leitlinien-wustg-v2/"],
     ["Apfelbeispiel", "/dokumente/beispiel-apfel-wirkungssteuer-bonusregel/"],
     ["WÖk-Masterregister v1.4", "/bibliothek/woek-master-items-register/"],

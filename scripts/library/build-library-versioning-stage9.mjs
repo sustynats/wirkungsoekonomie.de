@@ -176,6 +176,7 @@ const LEADING_REFERENCE_PATHS = new Set([
   "verstehen/sdgs-sdgplus/index.html",
   "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
   "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.5.pdf",
+  "public/downloads/originals/Wirkungssteuer_WStG_3.0_Gesamtneufassung_2026.pdf",
   "assets/downloads/woek-register/v1.4/WOeK_Masterregister_v1.4_FINAL_2026-08-16.xlsx"
 ]);
 
@@ -201,6 +202,49 @@ const LEADING_REFERENCE_PATTERNS = [
 ];
 
 const LEADING_OVERRIDES = new Map([
+  ["public/downloads/originals/Wirkungssteuer_WStG_3.0_Gesamtneufassung_2026.pdf", {
+    title: "Wirkungssteuer 3.0 und Wirkungssteuergesetz (WStG) 3.0",
+    type: "Gesetzesentwurf",
+    status: "führend",
+    dateOrStand: "2026-08-17 · Version 3.0",
+    shortDescription: "Führende Gesamtneufassung der steuerlichen Säule: modulare Rückkopplung über bestehende Steuerarten, parlamentarische Tarifhoheit, Wirkungsnachweiskonto, Schutzregeln, Rechtsschutz und EU-Pfad."
+  }],
+  ["docs/gesetze/WStG_2.0_Wirkungssteuerrahmengesetz_Entwurf.pdf", {
+    title: "WStG 2.0 - historische Zwischenfassung",
+    type: "Gesetzesentwurf",
+    status: "ersetzt",
+    shortDescription: "Zitierfähige historische Zwischenfassung. Für den aktuellen fachlichen Stand gilt die Gesamtneufassung WStG 3.0.",
+    historicalNotice: "Historische Quellenfassung; ersetzt durch die Gesamtneufassung 3.0 vom 17. August 2026.",
+    successorUrl: "bibliothek/wirkungssteuer-wstg-3-0/",
+    successorLabel: "WStG 3.0 öffnen"
+  }],
+  ["public/downloads/originals/WStG_Oktober2025.pdf", {
+    title: "WStG Oktober 2025 - historische Fassung",
+    type: "Gesetzesentwurf",
+    status: "ersetzt",
+    shortDescription: "Zitierfähiger historischer Entwicklungsstand. Für den aktuellen fachlichen Stand gilt die Gesamtneufassung WStG 3.0.",
+    historicalNotice: "Historische Quellenfassung; nicht still überschrieben und durch WStG 3.0 ersetzt.",
+    successorUrl: "bibliothek/wirkungssteuer-wstg-3-0/",
+    successorLabel: "WStG 3.0 öffnen"
+  }],
+  ["assets/pdf/wirkungssteuergesetz-wstg-oktober-2025.pdf", {
+    title: "WStG Oktober 2025 - historische Fassung",
+    type: "Gesetzesentwurf",
+    status: "ersetzt",
+    shortDescription: "Historische PDF-Fassung; für den aktuellen fachlichen Stand gilt WStG 3.0.",
+    historicalNotice: "Historische Quellenfassung; ersetzt durch die Gesamtneufassung 3.0.",
+    successorUrl: "bibliothek/wirkungssteuer-wstg-3-0/",
+    successorLabel: "WStG 3.0 öffnen"
+  }],
+  ["dokumente/wstg-oktober-2025/index.html", {
+    title: "WStG Oktober 2025 - historische Onlinefassung",
+    type: "Gesetzesentwurf",
+    status: "ersetzt",
+    shortDescription: "Historische Onlinefassung; für den aktuellen fachlichen Stand gilt WStG 3.0.",
+    historicalNotice: "Historische Quellenfassung; ersetzt durch die Gesamtneufassung 3.0.",
+    successorUrl: "bibliothek/wirkungssteuer-wstg-3-0/",
+    successorLabel: "WStG 3.0 öffnen"
+  }],
   ["dokumente/dossier-wirkungswissenschaften-wirkungsforschung-wirkungsoekonomie/index.html", {
     title: "Wirkungswissenschaften, Wirkungsforschung und Wirkungsökonomie",
     shortDescription: "Grundlagendossier von Natalie Weber: systemische Einordnung der Disziplinen, Begriffsarchitektur der Wirkung und Glossarbasis für Wirkungswissenschaften, Wirkungsforschung und Wirkungsökonomie.",
