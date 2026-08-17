@@ -59,7 +59,7 @@ export default async function HistoricalBackfillPage() {
         <p>{batch.case_count} Fälle · {batch.cases_ready} exportbereit · {batch.cases_imported} Review(s) in die Aufgabenstrecke überführt.</p>
         <dl><div><dt>Referenzsnapshot</dt><dd>{batch.woek_reference_snapshot}</dd></div><div><dt>Exporte</dt><dd>{batch.export_count}</dd></div></dl>
         <form action={`/api/internal/editorial/historical-review/batches/${batch.id}/export`} method="post">
-          <button className="button" type="submit">ZIP für ChatGPT herunterladen</button>
+          <button className="button" type="submit">ZIP für externes Fachreview herunterladen</button>
         </form>
       </article>)}</div> : <div className="editorial-empty"><h3>Noch kein Review-Batch</h3><p>Der Button wird erst einen Batch erzeugen, wenn der DIP-Bestand mindestens ein amtlich abgegrenztes Detailpaket enthält.</p></div>}
       {batches.length ? <div className="editorial-empty">

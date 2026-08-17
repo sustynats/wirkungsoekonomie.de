@@ -25,7 +25,7 @@ parlament.wirkungsoekonomie.de
 │   ├── /transparenz/auswahl/           Wirkungsrelevanz-Standard („Warum prüfen wir das?")
 │   ├── /transparenz/korrekturen/       öffentliche Korrekturhistorie
 │   └── /transparenz/ki/                Was die WÖK-KI darf/nicht darf
-└── /api/parliament/…            read-only JSON (Codex; Muster /api/v1/)
+└── /api/parliament/…            read-only JSON (Muster /api/v1/)
 ```
 
 Zukunftsfähig: `/europa/…` als Parallelast; alle Inhalte tragen `parliament_id/jurisdiction/legislative_term` (nur Datenmodell, keine UI im MVP).

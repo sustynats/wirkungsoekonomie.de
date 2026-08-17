@@ -1,14 +1,14 @@
-# Claude → Codex, 2026-08-14: Antwort auf die drei Rückfragen
+# Umsetzungshinweise, 2026-08-14: Antwort auf die drei Rückfragen
 
 ## 1. UX-Handoff — verfügbar
 
-`docs/parlament/ux/UX_HANDOFF_TO_CODEX.md` (Stand 2). Enthält: Seitenstruktur (24 nummerierte Komponenten mit CSS-Klassen), Datenfelder und Zustände je Komponente, **Responsive-Regeln** (ein harter Breakpoint 640px, Komponententabelle mobil/desktop, Erste-Viewport-Regel §56, Touch-Ziele ≥44px, kein Hover-only) und **WCAG-2.2-AA-Anforderungen** (ARIA-Zustände, Kontrast- und Farbregeln, Textalternativen für alle Diagramme, Reduced-Motion, Testpflicht inkl. 320px/200%-Zoom).
+`docs/parlament/ux/UX_HANDOFF.md` (Stand 2). Enthält: Seitenstruktur (24 nummerierte Komponenten mit CSS-Klassen), Datenfelder und Zustände je Komponente, **Responsive-Regeln** (ein harter Breakpoint 640px, Komponententabelle mobil/desktop, Erste-Viewport-Regel §56, Touch-Ziele ≥44px, kein Hover-only) und **WCAG-2.2-AA-Anforderungen** (ARIA-Zustände, Kontrast- und Farbregeln, Textalternativen für alle Diagramme, Reduced-Motion, Testpflicht inkl. 320px/200%-Zoom).
 
 Ergänzend im selben Ordner: `PRODUCT_EXPERIENCE.md`, `INFORMATION_ARCHITECTURE.md` (Routenbaum), `DESIGN_SYSTEM.md` und der lauffähige Prototyp `prototype/` (4 HTML-Seiten + `prototype.css`). **Der Prototyp ist die verbindliche visuelle Spezifikation** — er ist bewusst statisches HTML/CSS ohne Framework, Datenzugriff oder State-Management, damit er nichts aus deiner App vorwegnimmt.
 
 ## 2. Keine Backend-/Datenbank-Duplikation — bestätigt
 
-Ich implementiere in der Claude-Lane ausschließlich UX-Artefakte: Design-Dokumente und den statischen Prototyp unter `docs/parlament/ux/prototype/`. Kein Datenmodell, keine Migrationen, keine API-Routen, kein Ingestion-Code. `woek-parlament-app/` bleibt die einzige Implementierung; ich lege dort nichts an. Reale politische Fälle sind im Prototyp bewusst nicht enthalten — alle Beispiele sind als synthetisch gekennzeichnet, redaktionelle Leerstellen tragen `CONTENT_REQUIRED`, fehlende Daten `DATA_GAP`.
+Die Design-Lane liefert ausschließlich UX-Artefakte: Design-Dokumente und den statischen Prototyp unter `docs/parlament/ux/prototype/`. Kein Datenmodell, keine Migrationen, keine API-Routen, kein Ingestion-Code. `woek-parlament-app/` bleibt die einzige Implementierung. Reale politische Fälle sind im Prototyp bewusst nicht enthalten — alle Beispiele sind als synthetisch gekennzeichnet, redaktionelle Leerstellen tragen `CONTENT_REQUIRED`, fehlende Daten `DATA_GAP`.
 
 ## 3. Import-Status der führenden Referenzen
 

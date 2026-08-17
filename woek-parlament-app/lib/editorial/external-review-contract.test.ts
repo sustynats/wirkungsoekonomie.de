@@ -58,7 +58,7 @@ function reviewResult(): Record<string, any> {
       exported_package_hash: "package-hash-1",
       review_generated_at: "2026-08-14T10:00:00.000Z",
       source_refs_used: ["source-1"],
-      review_system: "ChatGPT"
+      review_system: "EXTERNAL_REVIEW"
     }
   };
 }

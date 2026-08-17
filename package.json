@@ -10,6 +10,7 @@
     "quellenarchiv:build": "node scripts/quellenarchiv/build-quellenarchiv-pages.mjs && node scripts/quellenarchiv/check-quellenarchiv-quality.mjs && node scripts/glossary/check-legal-source-coverage.mjs && node scripts/sources/check-evidence-source-archive-links.mjs",
     "check:bibliography": "node scripts/sources/build-bibliography-exports.mjs --check",
     "check:evidence-source-archive": "node scripts/sources/check-evidence-source-archive-links.mjs",
+    "check:private-paths": "node scripts/quality/check-private-path-leaks.mjs",
     "publications:grundlagen": "node scripts/publications/build-grundlagenpublikationen-pages.mjs",
     "podcast:build": "node scripts/podcast/build-podcast-pages.mjs",
     "build:certificates": "node scripts/academy/build-certificates.mjs",

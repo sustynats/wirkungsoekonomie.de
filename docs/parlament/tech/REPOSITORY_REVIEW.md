@@ -1,8 +1,8 @@
 # Repository Review
 
-Stand: 2026-08-14 · Tech-Lane Codex
+Stand: 2026-08-14 · technische Umsetzung
 
-`woek-parlament-app/` ist die alleinige Implementierung des Portals. Die Claude-Lane liefert unter `docs/parlament/ux/` ausschließlich Spezifikation und statischen Prototyp; sie dupliziert weder App noch Datenmodell.
+`woek-parlament-app/` ist die alleinige Implementierung des Portals. Die Design-Lane liefert unter `docs/parlament/ux/` ausschließlich Spezifikation und statischen Prototyp; sie dupliziert weder App noch Datenmodell.
 
 | Bereich | Entscheidung | Begründung |
 |---|---|---|

@@ -1,4 +1,4 @@
-# UX-Handoff an Codex — Wirkungsportal Parlament (Stand 1)
+# UX-Handoff — Wirkungsportal Parlament (Stand 1)
 
 Stand: 2026-08-14 · Referenz: `prototype/` (index.html, entscheidung-beispiel.html, prototype.css) — **der Prototyp ist die verbindliche visuelle Spezifikation**; dieses Dokument listet Zustände und Datenfelder, die im Prototyp nur als ein Beispielzustand sichtbar sind. Abweichungen nur aus Technik-/Security-/A11y-Gründen, dokumentiert.
 
@@ -70,7 +70,7 @@ Portal erbt Site-Tokens (`--navy #0B1020`, `--ivory`, `--gold`, `--green`, `--co
 23. **Umfrage-Ergebnisbalken** (`.balken`): Parlament (Navy) vs. Öffentlichkeit (Gold) je Frage; Pflicht-Metazeile darunter: `n je Gruppe, zeitraum, auswahlverfahren, repraesentativitaets_hinweis, mindestkohorte (n>=10, kleinere unterdrücken)`. Vergleich nur bei methodisch identischer Frage rendern — sonst Gruppen getrennt ausgeben.
 24. **Dialog-Prozesskette** (4 Karten): Eingang (anonymisiert, keine Verknüpfung Person↔Antwort↔Analyse) → redaktionelle Prüfung gegen Wirkungsrelevanz-Standard → Aufnahme ins Radar mit ausgewiesener Herkunft → Grenze (Votum bleibt analysebasiert).
 
-## Noch offen (nächste Claude-Iterationen)
+## Noch offen (nächste Design-Iterationen)
 
 Werkzeugkasten-Seite, Methodik-/Trust-Center-Langform, Parlament-Modus-Zusatzblöcke (Drucksachenliste, Prüffragen, Kurzbrief-Kopierblock), Wirkungsnetz (Komplexfälle), Fassungs-Detailseite, Radar-Listenansichten mit Filtern. Folgen als Stand 3; die Komponentensprache oben gilt für sie unverändert.
 
