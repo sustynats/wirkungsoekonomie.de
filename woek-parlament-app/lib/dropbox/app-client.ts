@@ -1,4 +1,5 @@
 const dropboxApi = "https://api.dropboxapi.com/2";
+const dropboxAuthApi = "https://api.dropboxapi.com";
 const dropboxContentApi = "https://content.dropboxapi.com/2";
 
 export type DropboxFileEntry = {
@@ -53,7 +54,7 @@ async function accessToken() {
     throw new Error("Dropbox application credentials are not configured.");
   }
   const body = new URLSearchParams({ grant_type: "refresh_token", refresh_token: value.refreshToken });
-  const response = await fetch(`${dropboxApi}/oauth2/token`, {
+  const response = await fetch(`${dropboxAuthApi}/oauth2/token`, {
     method: "POST",
     headers: {
       authorization: `Basic ${Buffer.from(`${value.appKey}:${value.appSecret}`).toString("base64")}`,

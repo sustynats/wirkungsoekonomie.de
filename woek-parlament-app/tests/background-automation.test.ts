@@ -26,7 +26,8 @@ test("political updates and the end-of-day digest use a computer-independent clo
 test("scheduled runtime uses remote Dropbox OAuth and never a local Dropbox mount", () => {
   const client = text("lib/dropbox/app-client.ts");
   assert.match(client, /https:\/\/api\.dropboxapi\.com\/2/);
-  assert.match(client, /\$\{dropboxApi\}\/oauth2\/token/);
+  assert.match(client, /https:\/\/api\.dropboxapi\.com/);
+  assert.match(client, /\$\{dropboxAuthApi\}\/oauth2\/token/);
   assert.match(client, /https:\/\/content\.dropboxapi\.com\/2/);
   assert.match(client, /DROPBOX_REFRESH_TOKEN/);
   const runtime = [
