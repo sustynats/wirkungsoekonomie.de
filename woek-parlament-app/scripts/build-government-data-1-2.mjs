@@ -10,7 +10,7 @@ const inputRoot = process.env.WOEK_GOVERNMENT_1_1_ROOT
 const deliverableRoot = process.env.WOEK_GOVERNMENT_1_2_ROOT
   ?? path.join(projectRoot, "deliverables", "WOEK-GOVERNMENT-DATA-2025-2026-INGEST-1.2");
 const appRoot = path.join(projectRoot, "data", "government");
-const generatedAt = "2026-08-18T12:00:00Z";
+const generatedAt = process.env.WOEK_DATA_1_2_GENERATED_AT ?? new Date().toISOString();
 
 const knownOvermerges = [
   "govaction:dip:321575",
@@ -484,6 +484,24 @@ const publicActions = canonical12
   .sort((a, b) => (b.decision_date ?? "").localeCompare(a.decision_date ?? "") || a.government_action_id.localeCompare(b.government_action_id));
 
 const publicSourceIndex = Object.fromEntries(publicActions.map((action) => [action.government_action_id, action.source_refs]));
+const externalActorEvents = [{
+  external_actor_event_id: "external:sefe:ksi-lisims-lng-loi:2026-05-27",
+  title: "SEFE und Ksi Lisims LNG unterzeichnen eine Absichtserklärung über mögliche LNG-Lieferungen",
+  actor_names: ["SEFE Securing Energy for Europe GmbH", "Ksi Lisims LNG"],
+  event_date: "2026-05-27",
+  source_event_ids: [],
+  government_action_status: "NOT_A_GOVERNMENT_ACTION",
+  schema_version: "1.0",
+}];
+const externalActorRegression = {
+  case: "SEFE_KSI_LISIMS_LNG",
+  external_actor_event_present: externalActorEvents.length === 1,
+  government_action_match_count: canonical12.filter((action) => /SEFE|Ksi Lisims/i.test(`${action.title_canonical} ${action.title_official_preferred}`)).length,
+  ministerial_attribution_created: canonical12.some((action) => /Katherina Reiche.*(schließt|unterzeichnet).*LNG/i.test(`${action.title_canonical} ${action.title_official_preferred}`)),
+};
+externalActorRegression.result = externalActorRegression.external_actor_event_present
+  && externalActorRegression.government_action_match_count === 0
+  && !externalActorRegression.ministerial_attribution_created ? "PASS" : "FAIL";
 const dipIds = canonical12.flatMap((action) => action.official_identifiers?.dip_ids ?? []);
 const duplicateDipIds = [...new Set(dipIds.filter((id, index) => dipIds.indexOf(id) !== index))];
 const multiDipRemaining = canonical12.filter((action) => (action.official_identifiers?.dip_ids ?? []).length > 1);
@@ -517,6 +535,7 @@ const validation = {
     DATA_1_2_VALIDATION: multiDipRemaining.length === 0 && duplicateDipIds.length === 0 ? "PASS" : "FAIL",
     KNOWN_OVERMERGE_REGRESSIONS: knownRegressionResults.every((item) => item.result === "PASS") ? "PASS" : "FAIL",
     PUBLIC_EXPORT: publicActions.every((action) => action.source_refs.length > 0 && action.identity_status === "VERIFIED") ? "PASS" : "FAIL",
+    EXTERNAL_ACTOR_SEPARATION: externalActorRegression.result,
   },
 };
 
@@ -536,19 +555,21 @@ for (const dir of ["canonical", "public", "review", "audit", "normalized", "cont
 writeJsonl(path.join(deliverableRoot, "canonical", "government-actions.jsonl"), canonical12);
 writeJsonl(path.join(deliverableRoot, "canonical", "relationships.jsonl"), relations12);
 writeJsonl(path.join(deliverableRoot, "canonical", "superseded_id_map.jsonl"), superseded);
+writeJsonl(path.join(deliverableRoot, "canonical", "external-actor-events.jsonl"), externalActorEvents);
 writeJsonl(path.join(deliverableRoot, "review", "government-actions.jsonl"), review12);
 writeJsonl(path.join(deliverableRoot, "public", "government-actions.jsonl"), publicActions);
 writeJson(path.join(deliverableRoot, "public", "source-index.json"), publicSourceIndex);
 writeJson(path.join(deliverableRoot, "audit", "VALIDATION-RESULT.json"), validation);
 writeJson(path.join(deliverableRoot, "audit", "KNOWN-OVERMERGE-REGRESSION.json"), knownRegressionResults);
+writeJson(path.join(deliverableRoot, "audit", "EXTERNAL-ACTOR-SEPARATION.json"), externalActorRegression);
 writeCsv(path.join(deliverableRoot, "audit", "MULTI-DIP-IDENTITY-REVIEW.csv"), multiDipReview);
 writeCsv(path.join(deliverableRoot, "audit", "OVERMERGE-REVIEW.csv"), overmergeReview);
 copyFileSync(path.join(inputRoot, "normalized", "source-events.jsonl"), path.join(deliverableRoot, "normalized", "source-events.jsonl"));
-for (const name of ["source-event.schema.json", "government-action.schema.json", "relationship.schema.json", "enums.json"]) {
+for (const name of ["source-event.schema.json", "government-action.schema.json", "relationship.schema.json", "external-actor-event.schema.json", "enums.json"]) {
   const source = path.join(inputRoot, "contracts", name);
   copyFileSync(source, path.join(deliverableRoot, "contracts", name));
 }
-for (const name of ["executive-institutions.json", "external-actor-events.jsonl", "government-term.json", "cabinet-sessions.jsonl", "parliamentary-cases.jsonl", "promulgated-legal-acts.jsonl"]) {
+for (const name of ["executive-institutions.json", "government-term.json", "cabinet-sessions.jsonl", "parliamentary-cases.jsonl", "promulgated-legal-acts.jsonl"]) {
   const source = path.join(inputRoot, "canonical", name);
   try { copyFileSync(source, path.join(deliverableRoot, "canonical", name)); } catch { /* optional 1.1 file */ }
 }
@@ -573,12 +594,14 @@ const generatedFiles = [
   "canonical/government-actions.jsonl",
   "canonical/relationships.jsonl",
   "canonical/superseded_id_map.jsonl",
+  "canonical/external-actor-events.jsonl",
   "public/government-actions.jsonl",
   "public/source-index.json",
   "public/coverage.json",
   "review/government-actions.jsonl",
   "audit/VALIDATION-RESULT.json",
   "audit/KNOWN-OVERMERGE-REGRESSION.json",
+  "audit/EXTERNAL-ACTOR-SEPARATION.json",
   "audit/MULTI-DIP-IDENTITY-REVIEW.csv",
   "audit/OVERMERGE-REVIEW.csv",
 ];
@@ -586,7 +609,7 @@ const manifest = {
   package: "WOEK-GOVERNMENT-DATA-2025-2026-INGEST-1.2",
   generated_at: generatedAt,
   input: {
-    package: inputRoot,
+    package: path.basename(inputRoot),
     government_actions_sha256: fileSha256(path.join(inputRoot, "canonical", "government-actions.jsonl")),
     source_events_sha256: fileSha256(path.join(inputRoot, "normalized", "source-events.jsonl")),
   },
@@ -601,7 +624,7 @@ rmSync(path.join(appRoot, "review"), { recursive: true, force: true });
 ensureDir(path.join(appRoot, "canonical"));
 ensureDir(path.join(appRoot, "review"));
 ensureDir(path.join(appRoot, "public"));
-for (const name of ["government-actions.jsonl", "relationships.jsonl", "superseded_id_map.jsonl"]) {
+for (const name of ["government-actions.jsonl", "relationships.jsonl", "superseded_id_map.jsonl", "external-actor-events.jsonl"]) {
   copyFileSync(path.join(deliverableRoot, "canonical", name), path.join(appRoot, "canonical", name));
 }
 copyFileSync(path.join(deliverableRoot, "review", "government-actions.jsonl"), path.join(appRoot, "review", "government-actions.jsonl"));
@@ -609,7 +632,7 @@ for (const name of ["government-actions.jsonl", "source-index.json", "coverage.j
   copyFileSync(path.join(deliverableRoot, "public", name), path.join(appRoot, "public", name));
 }
 ensureDir(path.join(appRoot, "audit"));
-for (const name of ["VALIDATION-RESULT.json", "KNOWN-OVERMERGE-REGRESSION.json", "MULTI-DIP-IDENTITY-REVIEW.csv", "OVERMERGE-REVIEW.csv"]) {
+for (const name of ["VALIDATION-RESULT.json", "KNOWN-OVERMERGE-REGRESSION.json", "EXTERNAL-ACTOR-SEPARATION.json", "MULTI-DIP-IDENTITY-REVIEW.csv", "OVERMERGE-REVIEW.csv"]) {
   copyFileSync(path.join(deliverableRoot, "audit", name), path.join(appRoot, "audit", name));
 }
 

@@ -12,7 +12,7 @@ const fachRoot = process.env.WOEK_GOVERNMENT_FACHRELEASE_ROOT
   ?? path.join(projectRoot, "government-data", "fachrelease", "WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0");
 const analysisRoot = path.join(fachRoot, "analysis");
 const outputRoot = path.join(projectRoot, "data", "government", "impact-cases");
-const importedAt = "2026-08-18T12:30:00Z";
+const importedAt = process.env.WOEK_IMPORT_TIMESTAMP ?? new Date().toISOString();
 
 const waves = ["1", "2", "3", "4", "5", "6", "7A", "7B", "8", "9", "10", "11"];
 const editorialManifestName = "GOVERNMENT-EDITORIAL-LAYER-MANIFEST-2.0-2026-08-18.json";
@@ -98,11 +98,30 @@ function stringValue(value) {
 
 function mapDirection(value) {
   const direction = String(value ?? "OPEN").toUpperCase();
-  if (direction.includes("AMBIVALENT") || direction.includes("MIXED") || direction.includes("TRADEOFF")) return "AMBIVALENT";
-  if (direction.includes("NEGATIVE") || direction.includes("RISK")) return "NEGATIVE";
-  if (direction.includes("POSITIVE")) return "POSITIVE";
+  if (direction.includes("NO_SINGLE_DIRECTION") || direction.includes("PORTFOLIO_DEPENDENT")) return "OPEN";
+  if (direction.startsWith("AMBIVALENT") || direction.startsWith("MIXED") || direction.startsWith("TRADEOFF")) return "AMBIVALENT";
+  if (direction.startsWith("PREDOMINANTLY_POSITIVE") || direction.startsWith("STRONG_POSITIVE") || direction.startsWith("POSITIVE")) return "POSITIVE";
+  if (direction.startsWith("PREDOMINANTLY_NEGATIVE") || direction.startsWith("STRONG_NEGATIVE") || direction.startsWith("NEGATIVE")) return "NEGATIVE";
   if (direction.includes("NEUTRAL")) return "NEUTRAL";
   return "OPEN";
+}
+
+function overviewAssessmentLabel(direction, overallCharacter) {
+  const overall = String(overallCharacter ?? "").toUpperCase();
+  if (overall.includes("NO_SINGLE_DIRECTION")) return "Keine belastbare Gesamtrichtung ohne Portfolio-Aufschlüsselung";
+  return {
+    POSITIVE: "Überwiegend positives Wirkungspotenzial mit separat sichtbaren Risiken",
+    NEGATIVE: "Überwiegend negatives Wirkungspotenzial",
+    AMBIVALENT: "Gegenläufige Wirkungspotenziale und Risiken",
+    NEUTRAL: "Begründet ohne materielle Richtungsänderung",
+    OPEN: "Wirkungsrichtung fachlich offen",
+  }[direction] ?? "Wirkungsrichtung fachlich offen";
+}
+
+function embeddedImpactCaseIds(markdown) {
+  return [...markdown.matchAll(/(?:ImpactCase(?:\/Container)?|ImpactCase-ID):?\*{0,2}\s*`([^`]+)`/g)]
+    .map((match) => match[1])
+    .filter(Boolean);
 }
 
 function mapEvidence(value) {
@@ -187,6 +206,7 @@ const editorialLayer = loadEditorialLayer();
 const records = [];
 const importAudit = [];
 const seenIds = new Set();
+const aliases = [];
 
 for (const wave of waves) {
   const jsonName = `GOVERNMENT-IMPACT-CASES-WAVE-${wave}.jsonl`;
@@ -235,6 +255,28 @@ for (const wave of waves) {
     const editorial = editorialLayer.byId.get(raw.impact_case_id);
     if (!editorial) throw new Error(`Fuehrender Editorial-Layer fehlt: ${raw.impact_case_id}`);
 
+    const embeddedIds = [...new Set(embeddedImpactCaseIds(fullAnalysisMarkdown))];
+    for (const embeddedId of embeddedIds) {
+      if (embeddedId !== raw.impact_case_id) aliases.push({
+        alias_id: embeddedId,
+        canonical_impact_case_id: raw.impact_case_id,
+        relationship: "SAME_FACH_CASE_ID_ALIAS",
+        source_file: markdownName,
+        reason: "Die menschenlesbare Fachakte und die maschinenlesbare Wellenübergabe verwenden unterschiedliche IDs für denselben ausdrücklich bezeichneten ImpactCase.",
+      });
+    }
+    const missingStructuredFields = fullSchemaValid
+      ? [raw.scope?.competence_note ? null : "competence_review"].filter(Boolean)
+      : ["competence_review", "legal_and_rights_review", "mpd_mapping", "sdg_mapping", "sdg_plus_mapping", "structured_boundary_review", "structured_data_needs", "structured_evidence_summary"];
+    const competenceReviewStatus = raw.scope?.competence_note ? "REVIEWED_CONCRETE" : "NOT_STRUCTURED";
+    const publicAnalysisDepth = missingStructuredFields.length === 0 ? "FULL_STRUCTURED" : "LIMITED_FACH_RECORD";
+    const realitySummary = fullSchemaValid
+      ? `${mapReality(raw.reality_check)}. ${raw.reality_check?.attribution ?? "Eine Zurechnung ist nicht als belegt ausgewiesen."}`
+      : `${mapReality(raw.reality_check)}. Der kompakte Fachdatensatz enthält noch keine vollständig strukturierte Reality-Check- und Zurechnungsebene.`;
+    const evidenceSummaryText = fullSchemaValid
+      ? [raw.evidence_summary.fact_evidence, raw.evidence_summary.mechanism_evidence, raw.evidence_summary.effect_evidence, raw.evidence_summary.uncertainty].join(" ")
+      : `Fachlicher Evidenzcode: ${String(raw.evidence ?? "NOT_ASSESSABLE")}. Die vollständige strukturierte Trennung von Fakt-, Mechanismus- und Wirkungsevidenz ist in dieser kompakten Übergabe nicht enthalten.`;
+
     const normalizedRecord = {
       record_profile: profile,
       schema_id: fullSchemaValid ? schema.$id : null,
@@ -249,7 +291,9 @@ for (const wave of waves) {
       materiality: typeof raw.materiality === "object" ? raw.materiality.level : raw.materiality,
       overall_character: String(overallCharacter),
       primary_direction: primaryDirection,
+      overview_assessment_label: overviewAssessmentLabel(primaryDirection, overallCharacter),
       evidence_level: evidence,
+      evidence_summary_text: evidenceSummaryText,
       implementation_status: raw.scope?.implementation_state ?? raw.implementation_state ?? raw.status ?? "OPEN",
       impact_summary: {
         public_summary: publicSummary,
@@ -262,9 +306,14 @@ for (const wave of waves) {
       impact_core_summary: editorial.impact_core_summary,
       editorial_summary: editorial.editorial_summary,
       key_finding: editorial.key_finding,
-      competence_status: fullSchemaValid ? (raw.scope?.competence_note ?? "OPEN") : "OPEN",
+      public_analysis_depth: publicAnalysisDepth,
+      missing_structured_fields: missingStructuredFields,
+      competence_review_status: competenceReviewStatus,
+      competence_status: raw.scope?.competence_note ?? "In der Fachübergabe nicht strukturiert geprüft",
       boundary_status: mapBoundary(raw.boundary_review ?? { status: raw.boundaries?.length ? "WATCH" : "OPEN" }),
       reality_check_status: mapReality(raw.reality_check_status ?? raw.reality_check),
+      reality_check_summary: realitySummary,
+      recommendation_status: "BACKFILL_REQUIRED",
       linked_government_action_ids: linkedActionIds(raw),
       official_fact_sources: officialSources,
       mechanism_sources: mechanismSources,
@@ -331,6 +380,7 @@ const meta = {
 
 writeJsonl(path.join(outputRoot, "public-impact-records.jsonl"), publicRecords);
 writeJsonl(path.join(outputRoot, "review-impact-records.jsonl"), reviewRecords);
+writeJsonl(path.join(outputRoot, "impact-case-aliases.jsonl"), aliases);
 writeJson(path.join(outputRoot, "public-impact-records-meta.json"), meta);
 writeJson(path.join(outputRoot, "fachrelease-import-audit.json"), importAudit);
 writeJson(path.join(outputRoot, "editorial-pattern-review.json"), genericEditorialPatterns);

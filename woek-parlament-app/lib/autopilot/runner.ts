@@ -77,13 +77,14 @@ function reconciledRegistry(registry: JurisdictionRegistry, electionCycles: Elec
 }
 
 function statusForStateAdapters(registry: JurisdictionRegistry, sources: SourceRegistry): DomainHealth {
-  const activeStates = registry.jurisdictions.filter((entry) => entry.jurisdiction_type === "STATE" && entry.monitoring_enabled);
+  const states = registry.jurisdictions.filter((entry) => entry.jurisdiction_type === "STATE");
+  const activeStates = states.filter((entry) => entry.monitoring_enabled);
   const activeAdapterStates = new Set(sources.sources.filter((entry) => entry.adapter_status === "ACTIVE").map((entry) => entry.jurisdiction_id));
   const active = activeStates.filter((entry) => activeAdapterStates.has(entry.jurisdiction_id)).length;
   return {
-    status: active === activeStates.length ? "OK" : "DEGRADED",
+    status: active > 0 && active === states.length ? "OK" : active > 0 ? "DEGRADED" : "BLOCKED",
     last_run_at: new Date().toISOString(),
-    detail: `${active} von ${activeStates.length} Länderquellen sind als automatisierte amtliche Adapter freigegeben. Nicht freigegebene Länder bleiben sichtbar eingeschränkt.`,
+    detail: `${active} von ${states.length} Länderjurisdiktionen besitzen einen vollständig freigegebenen amtlichen Adapter. Der statische Initialbestand ist kein operatives Monitoring.`,
   };
 }
 

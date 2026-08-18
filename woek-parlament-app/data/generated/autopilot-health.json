@@ -1,16 +1,36 @@
 {
   "schema_version": "1.0",
-  "generated_at": null,
-  "overall_status": "DEGRADED",
+  "generated_at": "2026-08-18T09:58:08.538Z",
+  "overall_status": "BLOCKED",
   "domains": {
-    "federal": { "status": "DEGRADED", "last_run_at": null, "detail": "Noch kein bestätigter gemeinsamer Autopilot-Lauf." },
-    "parliament": { "status": "DEGRADED", "last_run_at": null, "detail": "Noch kein bestätigter gemeinsamer Autopilot-Lauf." },
-    "states": { "status": "DEGRADED", "last_run_at": null, "detail": "Länderadapter werden quellenweise freigeschaltet." },
-    "eu": { "status": "DEGRADED", "last_run_at": null, "detail": "EU-Adapter befinden sich in der Quellenprüfung." },
-    "observatory": { "status": "DEGRADED", "last_run_at": null, "detail": "Amtliche Veröffentlichungsquellen werden cloudbasiert beobachtet; fachliche EvidenceEvents entstehen nur nach Freigabe." }
+    "federal": {
+      "status": "DEGRADED",
+      "last_run_at": null,
+      "detail": "Noch kein bestätigter gemeinsamer Autopilot-Lauf."
+    },
+    "parliament": {
+      "status": "DEGRADED",
+      "last_run_at": null,
+      "detail": "Noch kein bestätigter gemeinsamer Autopilot-Lauf."
+    },
+    "states": {
+      "status": "BLOCKED",
+      "last_run_at": "2026-08-18T09:58:08.538Z",
+      "detail": "0 von 16 Länderjurisdiktionen besitzen einen vollständig freigegebenen amtlichen Adapter. Sichtbar ist ausschließlich ein statischer Initialbestand."
+    },
+    "eu": {
+      "status": "DEGRADED",
+      "last_run_at": null,
+      "detail": "EU-Adapter befinden sich in der Quellenprüfung."
+    },
+    "observatory": {
+      "status": "DEGRADED",
+      "last_run_at": null,
+      "detail": "Amtliche Veröffentlichungsquellen werden cloudbasiert beobachtet; fachliche EvidenceEvents entstehen nur nach Freigabe."
+    }
   },
   "last_verified_deployment_at": null,
-  "open_data_issues": 0,
+  "open_data_issues": 1,
   "open_fach_reviews": 0,
   "next_election_triggers": [],
   "next_reality_checks": [],

@@ -27,6 +27,7 @@
     "data_quality": { "oneOf": [{ "enum": ["HIGH", "MEDIUM", "LOW", "NOT_ASSESSABLE"] }, { "type": "object", "additionalProperties": { "type": "string" }, "required": ["measurement", "historical_comparison", "record_classification", "causal_attribution"] }] },
     "attribution_status": { "enum": ["EXTERNAL_CONTEXT", "NO_ATTRIBUTION", "POSSIBLE_CONTRIBUTION", "PLAUSIBLE_CONTRIBUTION", "PARTIAL_ATTRIBUTION", "DIRECT_ATTRIBUTION", "OPEN"] },
     "linked_impact_case_ids": { "type": "array", "uniqueItems": true, "items": { "type": "string" } },
+    "state_observation_ids": { "type": "array", "uniqueItems": true, "items": { "type": "string" } },
     "relation_to_impact_case": { "oneOf": [{ "enum": ["SUPPORTS_MECHANISM", "CONTRADICTS_MECHANISM", "CHANGES_BASELINE", "CHANGES_CONTEXT", "MATERIALIZES_RISK", "MATERIALIZES_POSITIVE_POTENTIAL", "TRIGGERS_REALITY_CHECK", "AFFECTS_COUNTERFACTUAL", "AFFECTS_DISTRIBUTION", "AFFECTS_RESILIENCE", "CONTEXT_ONLY"] }, { "type": "array", "minItems": 1, "items": { "enum": ["SUPPORTS_MECHANISM", "CONTRADICTS_MECHANISM", "CHANGES_BASELINE", "CHANGES_CONTEXT", "MATERIALIZES_RISK", "MATERIALIZES_POSITIVE_POTENTIAL", "TRIGGERS_REALITY_CHECK", "AFFECTS_COUNTERFACTUAL", "AFFECTS_DISTRIBUTION", "AFFECTS_RESILIENCE", "CONTEXT_ONLY"] } }] },
     "materiality": { "enum": ["ROUTINE_OBSERVATION", "MATERIAL", "MATERIAL_EARLY_WARNING", "HIGH", "VERY_HIGH"] },
     "what_changed_or_may_change": { "type": "string", "minLength": 1 },

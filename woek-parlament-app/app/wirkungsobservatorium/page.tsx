@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { listPublicEvidenceEvents, listPublicRealityCheckCandidates } from "@/lib/observatory/public-data";
+import { listExternalShocks, listOutcomeSeries, listPublicEvidenceEvents, listPublicRealityCheckCandidates, listStateObservations } from "@/lib/observatory/public-data";
 import { getPublicImpactCases } from "@/lib/government/impact-cases";
 import { sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
 
@@ -16,6 +16,9 @@ function qualityLabel(value: string | Record<string, string>) {
 export default function ImpactObservatoryPage() {
   const events = listPublicEvidenceEvents();
   const candidates = listPublicRealityCheckCandidates();
+  const observations = listStateObservations();
+  const series = listOutcomeSeries();
+  const shocks = listExternalShocks();
   const publicImpactIds = new Set(getPublicImpactCases().map((item) => item.impact_case_id));
   return <main className="shell content-page">
     <header className="page-intro">
@@ -23,6 +26,24 @@ export default function ImpactObservatoryPage() {
       <h1>Was verändert sich tatsächlich?</h1>
       <p className="lead">Das Observatorium sammelt freigegebene Zustandsbeobachtungen, Evaluationen und materielle Ereignisse. Ein neuer Datenpunkt ist noch keine Regierungswirkung. Er kann aber zeigen, wann eine frühere Wirkungshypothese erneut geprüft werden muss.</p>
     </header>
+    <section className="section section-compact" aria-labelledby="state-observations">
+      <p className="eyebrow">Messwert vor Deutung</p>
+      <h2 id="state-observations">Amtliche Zustandsbeobachtungen</h2>
+      <p>Messwert, außergewöhnliches Ereignis, Wirkungsfall und politische Zurechnung bleiben unterschiedliche Objekte.</p>
+      <div className="source-register">{observations.map((observation) => {
+        const outcome = series.find((item) => item.observation_ids.includes(observation.observation_id));
+        const shock = shocks.find((item) => item.source_refs.includes(observation.source_ref));
+        return <article key={observation.observation_id}>
+          <p className="source-register-label">{observation.revision_status} · Datenqualität {observation.data_quality}</p>
+          <h3>{observation.definition}</h3>
+          <p><strong>Messwert:</strong> {observation.value ?? "fehlend"} {observation.unit} · <strong>Zeitraum:</strong> {observation.observation_period}</p>
+          <p><strong>Referenz:</strong> {observation.reference ?? "nicht ausgewiesen"}</p>
+          <p><strong>Serie:</strong> {outcome ? `${outcome.outcome_series_id} · ${outcome.status}` : "keine Serie verknüpft"}</p>
+          <p><strong>ExternalShock:</strong> {shock ? `${shock.title} · ${shock.attribution_status}` : "kein außergewöhnliches Ereignis verknüpft"}</p>
+          <Link href={sourceDetailHrefForUrl(observation.source_ref)}>Amtliche Messquelle in der Quellenakte öffnen</Link>
+        </article>;
+      })}</div>
+    </section>
     <section className="section section-compact" aria-labelledby="evidence-events">
       <p className="eyebrow">Öffentliche Evidenzspur</p>
       <h2 id="evidence-events">Neue EvidenceEvents</h2>
@@ -32,6 +53,7 @@ export default function ImpactObservatoryPage() {
         <p>{event.concise_public_summary}</p>
         <p><strong>Was sich für die Prüfung ändert:</strong> {event.what_changed_or_may_change}</p>
         <p><strong>Zurechnung:</strong> {event.attribution_status} · <strong>Datenqualität:</strong> {qualityLabel(event.data_quality)}</p>
+        {!!event.state_observation_ids?.length && <p><strong>Zugrunde liegende Beobachtung:</strong> {event.state_observation_ids.join(", ")}</p>}
         {event.notes_public && <p>{event.notes_public}</p>}
         <ul>{event.official_source_refs.map((source) => { const url = typeof source === "string" ? source : source.url; const label = typeof source === "string" ? "Quellenakte" : source.source; return <li key={url}><Link href={sourceDetailHrefForUrl(url)}>{label} - Quellenakte öffnen</Link></li>; })}</ul>
         {event.linked_impact_case_ids.map((id) => publicImpactIds.has(id) ? <p key={id}><Link className="text-link" href={`/wirkungsfaelle/${encodeURIComponent(id)}`}>Verknüpften Wirkungsfall öffnen →</Link></p> : <p key={id}><strong>Fachbezug:</strong> {id} - Wirkungsanalyse ist noch nicht redaktionell publikationsreif.</p>)}

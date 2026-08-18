@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { GovernmentImpactCase } from "@/app/components/government/GovernmentImpactCase";
-import { RecommendationSection } from "@/app/components/recommendations/RecommendationSection";
 import { historyClassificationLabels, impactCaseById, impactCaseVersions } from "@/lib/government/impact-cases";
+import { analysisUpdatesForImpactCase, evidenceEventsForImpactCase } from "@/lib/observatory/public-data";
 
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
   const { id } = await params;
@@ -15,6 +15,8 @@ export default async function GovernmentImpactCasePage({ params }: { params: Pro
   const record = impactCaseById(decodeURIComponent(id));
   if (!record) notFound();
   const versions = impactCaseVersions(record.impact_case_id);
+  const evidenceEvents = evidenceEventsForImpactCase(record.impact_case_id);
+  const analysisUpdates = analysisUpdatesForImpactCase(record.impact_case_id);
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "AnalysisNewsArticle",
@@ -27,7 +29,11 @@ export default async function GovernmentImpactCasePage({ params }: { params: Pro
     <main className="section shell">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
       <GovernmentImpactCase record={record} />
-      <RecommendationSection impactCaseId={record.impact_case_id} />
+      <section className="government-version-history" aria-labelledby="evidence-history-title">
+        <h2 id="evidence-history-title">Was hat diese Bewertung verändert?</h2>
+        {evidenceEvents.length ? <ol>{evidenceEvents.map((event) => <li key={event.evidence_event_id}><strong>{event.title}</strong><span>{event.observation_date} · {event.attribution_status} · {event.what_changed_or_may_change}</span></li>)}</ol> : <p>Für diese Fassung ist kein fachlich freigegebenes EvidenceEvent als bewertungsändernder Auslöser registriert.</p>}
+        {analysisUpdates.length > 0 && <ul>{analysisUpdates.map((update) => <li key={update.analysis_version}><strong>Analyse {update.supersedes_analysis_version} → {update.analysis_version}:</strong> {update.public_change_summary}</li>)}</ul>}
+      </section>
       <section className="government-version-history" aria-labelledby="version-history-title">
         <h2 id="version-history-title">Versions- und Prüfverlauf</h2>
         <p>Frühere Ex-ante-Analysen bleiben erhalten. Spätere Beobachtungen überschreiben sie nicht.</p>

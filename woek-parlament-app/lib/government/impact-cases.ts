@@ -21,7 +21,9 @@ export type PublicGovernmentImpactRecord = {
   materiality: string;
   overall_character: string;
   primary_direction: "POSITIVE" | "NEGATIVE" | "NEUTRAL" | "AMBIVALENT" | "OPEN";
+  overview_assessment_label: string;
   evidence_level: "HIGH" | "MEDIUM" | "LOW" | "NOT_ASSESSABLE";
+  evidence_summary_text: string;
   implementation_status: string;
   impact_summary: {
     public_summary: string;
@@ -34,10 +36,15 @@ export type PublicGovernmentImpactRecord = {
   impact_core_summary: string;
   editorial_summary: string;
   key_finding: string;
+  public_analysis_depth: "FULL_STRUCTURED" | "LIMITED_FACH_RECORD";
+  missing_structured_fields: string[];
+  competence_review_status: "REVIEWED_CONCRETE" | "REVIEWED_OPEN" | "NOT_STRUCTURED";
   competence_status: string;
   editorial_quality: EditorialAssessment;
   boundary_status: "PASS" | "WATCH" | "BLOCK" | "OPEN";
   reality_check_status: string;
+  reality_check_summary: string;
+  recommendation_status: "APPROVED" | "BACKFILL_REQUIRED";
   linked_government_action_ids: string[];
   official_fact_sources: string[];
   mechanism_sources: string[];
@@ -109,8 +116,24 @@ export const getPublicImpactCaseHistory = cache(() => {
   }
 });
 
+type ImpactCaseAlias = {
+  alias_id: string;
+  canonical_impact_case_id: string;
+  relationship: "SAME_FACH_CASE_ID_ALIAS";
+};
+
+export const getImpactCaseAliases = cache(() => {
+  try {
+    return readJsonl<ImpactCaseAlias>("impact-case-aliases.jsonl");
+  } catch {
+    return [];
+  }
+});
+
 export function impactCaseById(id: string) {
-  return getPublicImpactCases().find((record) => record.impact_case_id === id);
+  const alias = getImpactCaseAliases().find((entry) => entry.alias_id === id);
+  const canonicalId = alias?.canonical_impact_case_id ?? id;
+  return getPublicImpactCases().find((record) => record.impact_case_id === canonicalId);
 }
 
 export function impactCasesForGovernmentAction(actionId: string) {
@@ -147,7 +170,9 @@ export function publicRecordFromFullSchema(record: WoeKImpactCase): PublicGovern
     materiality: record.materiality.level,
     overall_character: String(record.impact_summary.overall_character),
     primary_direction: primaryDirection,
+    overview_assessment_label: primaryDirection === "OPEN" ? "Wirkungsrichtung fachlich offen" : directionLabels[primaryDirection],
     evidence_level: evidence as PublicGovernmentImpactRecord["evidence_level"],
+    evidence_summary_text: [record.evidence_summary.fact_evidence, record.evidence_summary.mechanism_evidence, record.evidence_summary.effect_evidence, record.evidence_summary.uncertainty].join(" "),
     implementation_status: String(record.scope.implementation_state),
     impact_summary: {
       public_summary: String(record.impact_summary.public_summary),
@@ -160,9 +185,14 @@ export function publicRecordFromFullSchema(record: WoeKImpactCase): PublicGovern
     impact_core_summary: String(record.impact_summary.central_lever),
     editorial_summary: String(record.impact_summary.public_summary),
     key_finding: String((record as WoeKImpactCase & { key_finding?: string }).key_finding ?? ""),
-    competence_status: String(record.scope.competence_note ?? "OPEN"),
+    public_analysis_depth: record.scope.competence_note ? "FULL_STRUCTURED" : "LIMITED_FACH_RECORD",
+    missing_structured_fields: record.scope.competence_note ? [] : ["competence_review"],
+    competence_review_status: record.scope.competence_note ? "REVIEWED_CONCRETE" : "NOT_STRUCTURED",
+    competence_status: String(record.scope.competence_note ?? "In der Fachübergabe nicht strukturiert geprüft"),
     boundary_status: boundaryStatus,
     reality_check_status: String(record.reality_check.status),
+    reality_check_summary: `${record.reality_check.status}. ${record.reality_check.attribution ?? "Eine Zurechnung ist nicht als belegt ausgewiesen."}`,
+    recommendation_status: "BACKFILL_REQUIRED",
     linked_government_action_ids: record.linked_objects.government_action_ids,
     official_fact_sources: record.references.official_fact_sources,
     mechanism_sources: record.references.mechanism_sources,

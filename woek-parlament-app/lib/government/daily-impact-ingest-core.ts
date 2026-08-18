@@ -24,8 +24,19 @@ export type WoeKImpactCase = {
     programme_ids: string[];
     source_event_ids: string[];
   };
-  scope: { analysis_as_of: string; implementation_state: string; [key: string]: unknown };
-  materiality: { level: "HIGH" | "MEDIUM" | "LOW" | "OPEN"; [key: string]: unknown };
+  scope: {
+    intervention: string;
+    policy_object: string;
+    affected_groups: string[];
+    affected_systems: string[];
+    decision_knowledge_cutoff: string | null;
+    analysis_as_of: string;
+    competence_note?: string | null;
+    implementation_state: string;
+    effect_start_expected?: string | null;
+    effect_maturity_expected?: string | null;
+  };
+  materiality: { level: "HIGH" | "MEDIUM" | "LOW" | "OPEN"; rationale: string; drivers: string[] };
   impact_summary: {
     overall_character: string;
     central_lever: string;
@@ -34,7 +45,6 @@ export type WoeKImpactCase = {
     direction_dependencies: string;
     measurement_priority: string;
     public_summary: string;
-    [key: string]: unknown;
   };
   evidence_summary: {
     fact_evidence: string;
@@ -52,11 +62,60 @@ export type WoeKImpactCase = {
     sdg_refs?: string[];
     sdg_plus_refs?: string[];
     legal_refs?: string[];
-    [key: string]: unknown;
+    impact_order: "FIRST" | "SECOND" | "THIRD" | "SYSTEMIC";
+    trigger: string;
+    mechanism: string;
+    state_variable: string;
+    baseline?: string | number | null;
+    state_change: string;
+    reference: string[];
+    affected_groups: string[];
+    time_horizon: "IMMEDIATE" | "SHORT" | "MEDIUM" | "LONG" | "INTERGENERATIONAL" | "NOT_YET_OBSERVABLE";
+    conditions: string[];
+    risks: string[];
+    uncertainties: string[];
+    distributional_effects?: string[];
+    indicators: Array<{
+      indicator: string;
+      function: "BASELINE" | "IMPLEMENTATION" | "OUTPUT" | "OUTCOME" | "COUNTERFACTUAL" | "DISTRIBUTION" | "BOUNDARY" | "ATTRIBUTION";
+      unit?: string | null;
+      preferred_source?: string | null;
+      woek_id?: string | null;
+      woek_id_status?: "CONFIRMED" | "PENDING_REGISTER_LINK" | "NOT_APPLICABLE";
+    }>;
+    evidence_basis: string[];
   }>;
-  boundary_review: Array<{ boundary_id: string; status: "PASS" | "WATCH" | "BLOCK" | "OPEN"; [key: string]: unknown }>;
-  data_needs: Array<{ priority: "P0" | "P1" | "P2"; [key: string]: unknown }>;
-  reality_check: { status: string; [key: string]: unknown };
+  boundary_review: Array<{ boundary_id: string; boundary: string; status: "PASS" | "WATCH" | "BLOCK" | "OPEN"; reason: string; evidence_basis: string[] }>;
+  data_needs: Array<{
+    data_id: string;
+    question: string;
+    data: string;
+    function: "BASELINE" | "IMPLEMENTATION" | "OUTPUT" | "OUTCOME" | "COUNTERFACTUAL" | "DISTRIBUTION" | "BOUNDARY" | "ATTRIBUTION";
+    priority: "P0" | "P1" | "P2";
+    preferred_source: string | null;
+  }>;
+  counterfactual: {
+    primary_question: string;
+    plausible_without_measure: string;
+    alternative_designs: string[];
+    identification_strategy: string[];
+    limitations: string[];
+  };
+  implementation_tracking: {
+    implementation_questions: string[];
+    implementation_indicators: string[];
+    known_status: string;
+    implementation_sources?: string[];
+  };
+  reality_check: {
+    status: string;
+    as_of: string | null;
+    observation_window: string | null;
+    observations: Array<{ indicator: string; observation: string; source: string; interpretation_limit: string }>;
+    attribution: string | null;
+    original_potentials_status: Array<{ path_id: string; status: string; reason: string }>;
+    next_check: string | null;
+  };
   references: { official_fact_sources: string[]; mechanism_sources: string[]; post_decision_sources: string[] };
   fach_review: { status: FachReviewStatus; reviewer: string; reviewed_at: string; open_questions: string[]; [key: string]: unknown };
   method_version: string;

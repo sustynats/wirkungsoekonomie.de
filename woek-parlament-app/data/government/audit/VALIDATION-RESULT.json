@@ -1,6 +1,6 @@
 {
   "data_version": "1.2",
-  "generated_at": "2026-08-18T12:00:00Z",
+  "generated_at": "2026-08-18T09:54:03.293Z",
   "canonical_objects": 1931,
   "public_objects": 1931,
   "review_objects": 223,
@@ -172,6 +172,7 @@
   "gates": {
     "DATA_1_2_VALIDATION": "PASS",
     "KNOWN_OVERMERGE_REGRESSIONS": "PASS",
-    "PUBLIC_EXPORT": "PASS"
+    "PUBLIC_EXPORT": "PASS",
+    "EXTERNAL_ACTOR_SEPARATION": "PASS"
   }
 }
