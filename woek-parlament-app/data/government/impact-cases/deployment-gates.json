@@ -9,6 +9,10 @@
   "build": "PASS",
   "privacy": "PASS",
   "background_automation": "PASS",
-  "updated_at": "2026-08-18T15:30:00+02:00",
-  "note": "Government Data 1.2, 63 fachlich freigegebene ImpactCases, vollständiger Source-vs-View-Test und serverseitiger Vercel-/Dropbox-/Newsletter-Betrieb haben die Release-Gates bestanden. Nicht verifizierte Identitätsfälle bleiben im Review-Store ausgeschlossen."
+  "operational_connectivity": "DEGRADED",
+  "dropbox_oauth": "FAIL_INVALID_CLIENT",
+  "discord_direct_messages": "NOT_CONFIGURED",
+  "daily_newsletter": "CONFIGURED_BLOCKED_BY_DROPBOX",
+  "updated_at": "2026-08-18T09:38:00+02:00",
+  "note": "Government Data 1.2, die technische Cloud-Automation, der Fachimport und die öffentlichen Release-Gates sind bestanden. Die laufende Übergabekette ist operativ noch eingeschränkt: Dropbox lehnt die hinterlegte App-Key-/Secret-Kombination als invalid_client ab; Discord-Direktnachrichten sind nicht konfiguriert. Der Tagesnewsletter ist serverseitig eingerichtet, kann neue Deployments aber erst nach erfolgreicher Dropbox-Anbindung beziehen. Nicht verifizierte Identitätsfälle bleiben im Review-Store ausgeschlossen."
 }
