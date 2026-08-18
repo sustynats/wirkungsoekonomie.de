@@ -1,7 +1,7 @@
 {
   "schema_version": "2.3-preview-ui-contract-p0",
-  "generated_at": "2026-08-18T13:20:44.898Z",
-  "base_url": null,
+  "generated_at": "2026-08-18T18:01:41.262Z",
+  "base_url": "http://127.0.0.1:3200",
   "status": "PASS",
   "counts": {
     "government_fach_total": 63,
@@ -11,7 +11,7 @@
     "eu_public": 16,
     "eu_review": 5,
     "parliament_public_analyses": 15,
-    "routes_checked": 0
+    "routes_checked": 109
   },
   "gates": {
     "OVERVIEW_CARD_HAS_VISIBLE_WOEK_ASSESSMENT": "PASS",
@@ -22,6 +22,7 @@
     "ASSESSMENT_AND_IMPACT_CORE_HAVE_DISTINCT_FUNCTION": "PASS",
     "NO_GENERIC_PUBLIC_EDITORIAL_TEXT": "PASS",
     "NO_RAW_INTERNAL_ENUMS_IN_PUBLIC_UI": "PASS",
+    "NO_MACHINE_VALUES_IN_NORMAL_PUBLIC_UI": "PASS",
     "KEY_FINDING_VISIBLE_AND_SPECIFIC": "PASS",
     "BUDGET_2027_PORTFOLIO_NOT_FORCED_TO_FAKE_SCORE": "PASS",
     "DETAIL_PAGE_IMPACT_SECTION_PRECEDES_PROCESS": "PASS",
@@ -39,5 +40,987 @@
   "field_failures": [],
   "similarity_failures": [],
   "route_failures": [],
-  "route_checks": []
+  "route_checks": [
+    {
+      "route": "/",
+      "http_status": 200,
+      "preview_cards": 9,
+      "preview_assessments": 9,
+      "assessment_icons": 9,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/bevorstehend",
+      "http_status": 200,
+      "preview_cards": 16,
+      "preview_assessments": 16,
+      "assessment_icons": 16,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/entscheidungen",
+      "http_status": 200,
+      "preview_cards": 28,
+      "preview_assessments": 28,
+      "assessment_icons": 28,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/wirkungsfaelle",
+      "http_status": 200,
+      "preview_cards": 69,
+      "preview_assessments": 69,
+      "assessment_icons": 69,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung",
+      "http_status": 200,
+      "preview_cards": 15,
+      "preview_assessments": 15,
+      "assessment_icons": 15,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen",
+      "http_status": 200,
+      "preview_cards": 53,
+      "preview_assessments": 53,
+      "assessment_icons": 53,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/eu",
+      "http_status": 200,
+      "preview_cards": 3,
+      "preview_assessments": 3,
+      "assessment_icons": 3,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/eu/wirkungsfaelle",
+      "http_status": 200,
+      "preview_cards": 16,
+      "preview_assessments": 16,
+      "assessment_icons": 16,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/laender",
+      "http_status": 200,
+      "preview_cards": 0,
+      "preview_assessments": 0,
+      "assessment_icons": 0,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/laender/sachsen-anhalt",
+      "http_status": 200,
+      "preview_cards": 6,
+      "preview_assessments": 6,
+      "assessment_icons": 6,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/fachanalysen",
+      "http_status": 200,
+      "preview_cards": 2,
+      "preview_assessments": 2,
+      "assessment_icons": 2,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/mandat-und-praxis",
+      "http_status": 200,
+      "preview_cards": 7,
+      "preview_assessments": 7,
+      "assessment_icons": 7,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/suche",
+      "http_status": 200,
+      "preview_cards": 83,
+      "preview_assessments": 83,
+      "assessment_icons": 83,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-GMODG-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-EEG-NETZPAKET-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-STROMVKG-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-NOTFALLREFORM-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-KHAG-2025-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-ALTERSVORSORGE-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-GRUNDSICHERUNG-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-TARIFTREUE-2025-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-SAFE-COUNTRY-REGULATION-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-ABSCHIEBEHAFT-RECHTSBEISTAND-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-GEAS-DE-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-BHH-2027",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-GANZTAG-IMPLEMENTATION-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-KINDERGELD-ONCE-ONLY-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-BGG-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-MEDIZINREGISTER-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-HIGHTECH-AGENDA-2025-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-STAATSMODERNISIERUNG-2025-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-RECHENZENTREN-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-INDUSTRIESTROMPREIS-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-NL-GAS-UNITISIERUNG-2025",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-SEFE-KSI-LISIMS-LNG-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-CCFD-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-STOFFSTROMBILANZ-AUFHEBUNG-2025",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-BIOMASSEV-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-THG-QUOTE-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-CCS-KSPTG-2025",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-NIS2-2025",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-IP-SPEICHERUNG-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-WOHNGELD-2027",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-MIETRECHT-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-RENTE-48-2031",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-MUETTERRENTE-III",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-AKTIVRENTE-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-GKV-FINANZ-2027",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-SINTI-ROMA-AUFARBEITUNG-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-SFVV-EIGENSTAENDIGKEIT-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-EPA-AFRIKA-RATIFIZIERUNG-2025-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-SVA-KOLUMBIEN-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-KI-VO-DURCHFUEHRUNG-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-OK-LATEINAMERIKA-KARIBIK-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-YAD-VASHEM-PROTOKOLL-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-TIERSCHUTZ-SCHLACHTVIDEO-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-DUENGEGESETZ-MONITORING-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-OPFERBEAUFTRAGTER-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-AFBG-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-ARBEITSFOERDERUNG-DIGITAL-JOB2JOB-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-GEDIG-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-STARTUP-SCALEUP-STRATEGIE-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-GENOSSENSCHAFTSRECHT-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-NAP-TARIFVERHANDLUNGEN-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-MEDIEN-INVESTITIONSPFLICHT-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-CYBERGOVSECURE-2026",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/eu/wirkungsfaelle/EU-IMPACT-2026-002",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/eu/wirkungsfaelle/EU-IMPACT-2026-004",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/eu/wirkungsfaelle/EU-IMPACT-2026-006",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/eu/wirkungsfaelle/EU-IMPACT-2026-007",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/eu/wirkungsfaelle/EU-IMPACT-2026-008",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/eu/wirkungsfaelle/EU-IMPACT-2026-009",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/eu/wirkungsfaelle/EU-IMPACT-2026-010",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/eu/wirkungsfaelle/EU-IMPACT-2026-011",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/eu/wirkungsfaelle/EU-IMPACT-2026-012",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/eu/wirkungsfaelle/EU-IMPACT-2026-013",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/eu/wirkungsfaelle/EU-IMPACT-2026-014",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/eu/wirkungsfaelle/EU-IMPACT-2026-015",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/eu/wirkungsfaelle/EU-IMPACT-2026-016",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/eu/wirkungsfaelle/EU-IMPACT-2026-017",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/eu/wirkungsfaelle/EU-IMPACT-2026-018",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/eu/wirkungsfaelle/EU-IMPACT-2026-021",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/entscheidungen/bt21-dip-907488f49a72",
+      "http_status": 200,
+      "preview_cards": 0,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/entscheidungen/bt21-dip-a5035b912cc6",
+      "http_status": 200,
+      "preview_cards": 0,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/entscheidungen/bt21-dip-c262bf7797f8",
+      "http_status": 200,
+      "preview_cards": 0,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/entscheidungen/bt21-dip-ab9fa96b9b29",
+      "http_status": 200,
+      "preview_cards": 0,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/entscheidungen/bt21-dip-e89615651d49",
+      "http_status": 200,
+      "preview_cards": 0,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/entscheidungen/bt21-dip-0b72759f3d8c",
+      "http_status": 200,
+      "preview_cards": 0,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/entscheidungen/bt21-dip-3cc228c09318",
+      "http_status": 200,
+      "preview_cards": 0,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/entscheidungen/bt21-dip-600030b3ca76",
+      "http_status": 200,
+      "preview_cards": 0,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/entscheidungen/bt21-dip-ae2d0359b4d8",
+      "http_status": 200,
+      "preview_cards": 0,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/entscheidungen/bt21-dip-158ce85a452b",
+      "http_status": 200,
+      "preview_cards": 0,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/entscheidungen/bt21-dip-2b92dd162163",
+      "http_status": 200,
+      "preview_cards": 0,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/entscheidungen/bt21-dip-8e8e98113680",
+      "http_status": 200,
+      "preview_cards": 0,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/entscheidungen/bt21-dip-6345cfda82c0",
+      "http_status": 200,
+      "preview_cards": 0,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/entscheidungen/bt21-dip-1babdefe909e",
+      "http_status": 200,
+      "preview_cards": 0,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/entscheidungen/bt21-dip-6b88223a6365",
+      "http_status": 200,
+      "preview_cards": 0,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/quellen/quelle-3225f31089a72a6b",
+      "http_status": 200,
+      "preview_cards": 2,
+      "preview_assessments": 2,
+      "assessment_icons": 2,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/quellen/quelle-73eb1d215e087b37",
+      "http_status": 200,
+      "preview_cards": 2,
+      "preview_assessments": 2,
+      "assessment_icons": 2,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/quellen/quelle-67e7503c08f2d265",
+      "http_status": 200,
+      "preview_cards": 2,
+      "preview_assessments": 2,
+      "assessment_icons": 2,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/quellen/quelle-2a88b4b579afc905",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/quellen/quelle-28c1c628b4ed12e5",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/quellen/quelle-82f8d490c590e967",
+      "http_status": 200,
+      "preview_cards": 2,
+      "preview_assessments": 2,
+      "assessment_icons": 2,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/quellen/quelle-5a9f6fb05e925f0a",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/quellen/quelle-b7128dc7080d2cf9",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/quellen/quelle-eba43e35bb5c1ca0",
+      "http_status": 200,
+      "preview_cards": 2,
+      "preview_assessments": 2,
+      "assessment_icons": 2,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/quellen/quelle-ebf7086cd8644c0f",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/quellen/quelle-85dda1b06017d343",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    },
+    {
+      "route": "/quellen/quelle-dc985a39942eb64d",
+      "http_status": 200,
+      "preview_cards": 1,
+      "preview_assessments": 1,
+      "assessment_icons": 1,
+      "status": "PASS",
+      "failures": []
+    }
+  ]
 }
