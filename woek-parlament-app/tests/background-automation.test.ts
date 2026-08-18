@@ -4,10 +4,16 @@ import test from "node:test";
 
 const text = (file: string) => readFileSync(file, "utf8");
 
-test("political updates and the end-of-day digest are scheduled on Vercel", () => {
+test("political updates and the end-of-day digest use a computer-independent cloud scheduler", () => {
   const vercel = JSON.parse(text("vercel.json"));
-  assert.equal(vercel.crons.some((cron: { path: string; schedule: string }) => cron.path === "/api/cron/political-autopilot" && cron.schedule === "0 4,5,14,15 * * *"), true);
-  assert.equal(vercel.crons.some((cron: { path: string; schedule: string }) => cron.path === "/api/cron/political-daily-digest" && cron.schedule === "0 20,21,22 * * *"), true);
+  assert.equal("crons" in vercel, false, "The Hobby Vercel project must not contain unsupported multi-daily cron definitions.");
+  const autopilotWorkflow = text("../.github/workflows/political-autopilot.yml");
+  const digestWorkflow = text("../.github/workflows/political-daily-digest.yml");
+  assert.match(autopilotWorkflow, /0 4,5,14,15 \* \* \*/);
+  assert.match(autopilotWorkflow, /api\/cron\/political-autopilot/);
+  assert.match(digestWorkflow, /0 20,21,22 \* \* \*/);
+  assert.match(digestWorkflow, /api\/cron\/political-daily-digest/);
+  assert.match(`${autopilotWorkflow}\n${digestWorkflow}`, /secrets\.CRON_SECRET/);
   for (const route of ["app/api/cron/political-autopilot/route.ts", "app/api/cron/political-daily-digest/route.ts"]) {
     const source = text(route);
     assert.match(source, /runtime = "nodejs"/);

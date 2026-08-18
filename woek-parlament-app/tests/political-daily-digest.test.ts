@@ -9,8 +9,10 @@ test("daily digest runs at the end of the Berlin day with a retry window", () =>
   assert.equal(politicalDigestWindow(new Date("2026-08-18T19:00:00Z")).due, false);
 });
 
-test("Vercel invokes both the autopilot and separate daily digest", () => {
-  const config = JSON.parse(readFileSync("vercel.json", "utf8")) as { crons: Array<{ path: string; schedule: string }> };
-  assert.equal(config.crons.some((entry) => entry.path === "/api/cron/political-autopilot"), true);
-  assert.equal(config.crons.some((entry) => entry.path === "/api/cron/political-daily-digest" && entry.schedule === "0 20,21,22 * * *"), true);
+test("GitHub invokes the autopilot and separate daily digest in the cloud", () => {
+  const autopilot = readFileSync("../.github/workflows/political-autopilot.yml", "utf8");
+  const digest = readFileSync("../.github/workflows/political-daily-digest.yml", "utf8");
+  assert.match(autopilot, /api\/cron\/political-autopilot/);
+  assert.match(digest, /api\/cron\/political-daily-digest/);
+  assert.match(digest, /0 20,21,22 \* \* \*/);
 });
