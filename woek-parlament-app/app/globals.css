@@ -1314,6 +1314,7 @@ h1, h2, h3, h4 { text-wrap: balance; }
   background: linear-gradient(135deg, var(--farbe-flaeche-warm), var(--farbe-flaeche-karte));
 }
 .overview-assessment-heading { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: var(--abstand-s); align-items: start; }
+.overview-assessment-heading > div, .overview-assessment-label, .overview-assessment-label strong { min-width: 0; overflow-wrap: anywhere; word-break: break-word; hyphens: auto; }
 .overview-assessment-heading .eyebrow { margin: 0 0 var(--abstand-2xs); color: var(--farbe-text-link); }
 .overview-assessment-icon {
   display: inline-grid;

@@ -88,6 +88,16 @@ const technicalValueLabels = {
   VERIFIED_FACH_RELEASE_COMPACT: "verifizierte kompakte Fachübergabe",
   COMPACT_SOURCE_PRESERVED_NO_SCHEMA_REPAIR: "kompakte Quelle unverändert erhalten; keine stillschweigende Schema-Reparatur",
 };
+const structuredFieldLabels = {
+  competence_review: "Kompetenzprüfung",
+  legal_and_rights_review: "Rechts- und Grundrechtsprüfung",
+  mpd_mapping: "MPD-Zuordnung",
+  sdg_mapping: "SDG-Zuordnung",
+  sdg_plus_mapping: "SDG+-Zuordnung",
+  structured_boundary_review: "Prüfung von Schutz- und Wirkungsgrenzen",
+  structured_data_needs: "strukturierter Datenbedarf",
+  structured_evidence_summary: "strukturierte Evidenzzusammenfassung",
+};
 
 function publicTechnicalValue(value) {
   return technicalValueLabels[value] ?? humanizeSystemValue(value);
@@ -162,7 +172,10 @@ function publicFields(record) {
     ["/editorial_evidence_overlay/source_file", record.editorial_evidence_overlay?.source_file],
     ["/editorial_evidence_overlay/source_sha256", record.editorial_evidence_overlay?.source_sha256],
   ];
-  for (const [index, value] of record.missing_structured_fields.entries()) fields.push([`/missing_structured_fields/${index}`, humanizeSystemValue(value)]);
+  for (const [index, value] of record.missing_structured_fields.entries()) {
+    const label = structuredFieldLabels[value];
+    if (label) fields.push([`/missing_structured_fields/${index}`, label]);
+  }
   for (const [index, value] of record.linked_government_action_ids.entries()) fields.push([`/linked_government_action_ids/${index}`, value]);
   return fields.filter(([, value]) => value !== null && value !== undefined && comparable(value).length > 0);
 }

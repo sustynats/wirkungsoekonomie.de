@@ -120,7 +120,22 @@ const systemValueLabels: Record<string, string> = {
   EU_COLEGISLATION: "Ordentliches Gesetzgebungsverfahren",
   MEMBER_STATE_PROCUREMENT_AND_PERMITTING: "Umsetzung durch die Mitgliedstaaten - insbesondere Beschaffung und Genehmigung",
   REQUIRES_COLEGISLATION: "Ordentliches Gesetzgebungsverfahren erforderlich",
-  PASS_WITH_WATCH: "ohne festgestellte Grenzverletzung, weiter beobachten"
+  PASS_WITH_WATCH: "ohne festgestellte Grenzverletzung, weiter beobachten",
+  "Analysis Mode": "Analysemodus",
+  "Boundary Review": "Prüfung von Schutz- und Wirkungsgrenzen",
+  BOUNDARY_STATUS: "Prüfung von Schutz- und Wirkungsgrenzen",
+  BOUNDARY_REVIEW: "Prüfung der Schutz- und Wirkungsgrenzen",
+};
+
+const structuredFieldLabels: Record<string, string> = {
+  competence_review: "Kompetenzprüfung",
+  legal_and_rights_review: "Rechts- und Grundrechtsprüfung",
+  mpd_mapping: "MPD-Zuordnung",
+  sdg_mapping: "SDG-Zuordnung",
+  sdg_plus_mapping: "SDG+-Zuordnung",
+  structured_boundary_review: "Prüfung von Schutz- und Wirkungsgrenzen",
+  structured_data_needs: "strukturierter Datenbedarf",
+  structured_evidence_summary: "strukturierte Evidenzzusammenfassung",
 };
 
 const indicatorLabels: Record<string, string> = {
@@ -174,6 +189,19 @@ export function humanizeSystemValue(value: string) {
 
 export function publicIndicatorLabel(value: string) {
   return indicatorLabels[value] ?? humanizeSystemValue(value);
+}
+
+/** Internal schema keys may only reach public copy through an explicit,
+ * reviewed label. Unknown keys stay suppressed instead of being title-cased. */
+export function publicStructuredFieldLabel(value: string) {
+  return structuredFieldLabels[value] ?? null;
+}
+
+/** Backtick spans in a released Markdown source are presentation syntax, not
+ * public control-language. The source value remains unchanged; the renderer
+ * only exposes a readable label/value clause. */
+export function publicControlText(value: string) {
+  return humanizeSystemValue(value).replace(/\s*=\s*/g, ": ");
 }
 
 export function isMarkdownSeparatorOnly(value: string) {

@@ -15,7 +15,7 @@ import {
   type WoeKImpactCase,
 } from "@/lib/government/impact-cases";
 import { sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
-import { humanizeSystemValue } from "@/lib/presentation/labels";
+import { humanizeSystemValue, publicStructuredFieldLabel } from "@/lib/presentation/labels";
 
 function referenceSet(record: WoeKImpactCase, key: "sdg_refs" | "sdg_plus_refs" | "legal_refs") {
   return [...new Set(record.impact_paths.flatMap((path) => path[key] ?? []))];
@@ -154,6 +154,9 @@ export function GovernmentImpactCase({ record, compact = false }: { record: Publ
   const fullRecord = fullSchemaRecord(record);
   const summary = record.impact_summary;
   const editorial = governmentEditorialProjection(record);
+  const missingStructuredLabels = record.missing_structured_fields
+    .map(publicStructuredFieldLabel)
+    .filter((label): label is string => Boolean(label));
   if (editorial.status !== "PASS") return null;
   return (
     <article className="government-impact-case" aria-labelledby={`impact-${record.impact_case_id}`} data-woek-preview-card="published">
@@ -172,7 +175,7 @@ export function GovernmentImpactCase({ record, compact = false }: { record: Publ
         {record.public_evidence_explanation && <p><strong>Öffentliche Evidenzeinordnung:</strong> {humanizeSystemValue(record.public_evidence_explanation)}</p>}
         {record.boundary_review_note && <p><strong>Schutz- und Wirkungsgrenzen:</strong> {humanizeSystemValue(record.boundary_review_note)}</p>}
         {record.impact_summary.public_summary && record.impact_summary.public_summary !== record.editorial_summary && <p><strong>Fachliche Original-Kurzfassung:</strong> {humanizeSystemValue(record.impact_summary.public_summary)}</p>}
-        {record.public_analysis_depth === "LIMITED_FACH_RECORD" && <div className="open-state"><span aria-hidden="true">i</span><div><strong>Begrenzte Fachübergabe - keine strukturierte Vollanalyse.</strong><p>Die vollständige Fachakte bleibt unverändert zugänglich. Noch nicht maschinenlesbar strukturiert: {record.missing_structured_fields.map(publicValue).join(", ")}.</p></div></div>}
+        {record.public_analysis_depth === "LIMITED_FACH_RECORD" && <div className="open-state"><span aria-hidden="true">i</span><div><strong>Begrenzte Fachübergabe - keine strukturierte Vollanalyse.</strong><p>Die vollständige Fachakte bleibt unverändert zugänglich.{missingStructuredLabels.length ? ` Folgende Bereiche liegen noch nicht als strukturierte Datenfelder vor: ${missingStructuredLabels.join("; ")}.` : " Weitere strukturierte Prüfbereiche werden erst nach fachlicher Freigabe öffentlich benannt."}</p></div></div>}
         <dl className="government-impact-summary">
           <div><dt>Wirkungskern</dt><dd>{editorial.fields.impact_core_summary}</dd></div>
           {summary.strongest_positive_potential && <div><dt>Stärkstes positives Potenzial</dt><dd>{humanizeSystemValue(summary.strongest_positive_potential)}</dd></div>}

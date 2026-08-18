@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element -- Fachanalyse-Abbildungen sind statische Quellenbestandteile und werden nicht über einen externen Bilddienst verarbeitet. */
 import Link from "next/link";
 import { sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
-import { humanizeSystemValue, isMarkdownSeparatorOnly } from "@/lib/presentation/labels";
+import { humanizeSystemValue, isMarkdownSeparatorOnly, publicControlText } from "@/lib/presentation/labels";
 
 type Block =
   | { kind: "paragraph"; text: string }
@@ -65,9 +65,11 @@ function toBlocks(markdown: string): Block[] {
 }
 
 function InlineText({ value }: { value: string }) {
-  const parts = value.split(/(https:\/\/[^\s]+|\*\*[^*]+\*\*)/g);
+  const parts = value.split(/(https:\/\/[^\s]+|\*\*[^*]+\*\*|`[^`]+`)/g);
   return <>{parts.map((part, index) => {
     if (/^https:\/\//.test(part)) return <Link key={`${part}-${index}`} href={sourceDetailHrefForUrl(part)}>{part}</Link>;
+    const controlValue = part.match(/^`([^`]+)`$/);
+    if (controlValue) return <span key={`${part}-${index}`}>{publicControlText(controlValue[1])}</span>;
     const emphasis = part.match(/^\*\*(.+)\*\*$/);
     return emphasis
       ? <strong key={`${part}-${index}`}>{humanizeSystemValue(emphasis[1])}</strong>
@@ -83,7 +85,7 @@ export function FullAnalysisText({ source }: { source: FullAnalysisSource }) {
       <div><p className="eyebrow">Vollständige Fachanalyse</p><h2 id="full-analysis-title">Der freigegebene Ausgangstext – vollständig dokumentiert</h2><p>Die Kapitel unten entsprechen dem veröffentlichten Fachtext. Diese Darstellung ordnet ihn nur für die Webansicht; sie ersetzt oder verkürzt ihn nicht.</p></div>
       <p className="full-analysis-hash"><strong>Quellfassung:</strong> {new Intl.DateTimeFormat("de-DE", { dateStyle: "long" }).format(new Date(`${source.releasedAt}T12:00:00Z`))}<br /><span>Prüfhash: {source.sourceHash.slice(0, 16)}…</span></p>
     </header>
-    <nav className="full-analysis-toc" aria-label="Inhaltsverzeichnis der vollständigen Fachanalyse"><strong>Direkt zu einem Kapitel</strong><ol>{chapters.map((chapter) => <li key={chapter.id}><a href={`#${chapter.id}`}>{chapter.text}</a></li>)}</ol></nav>
+    <nav className="full-analysis-toc" aria-label="Inhaltsverzeichnis der vollständigen Fachanalyse"><strong>Direkt zu einem Kapitel</strong><ol>{chapters.map((chapter) => <li key={chapter.id}><a href={`#${chapter.id}`}>{humanizeSystemValue(chapter.text)}</a></li>)}</ol></nav>
     <div className="full-analysis-body">{blocks.map((block, index) => {
       if (block.kind === "heading") {
         const Heading = block.depth === 2 ? "h3" : "h4";

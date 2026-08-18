@@ -16,6 +16,10 @@ const mandateIndex = source("app/mandat-und-praxis/page.tsx");
 const stateProgrammes = source("app/laender/sachsen-anhalt/page.tsx");
 const decisionDetail = source("app/entscheidungen/[slug]/page.tsx");
 const euSourceVsView = source("scripts/quality/check-eu-source-vs-view.mjs");
+const governmentSourceVsView = source("scripts/quality/check-government-source-vs-view.mjs");
+const fullAnalysisText = source("app/components/FullAnalysisText.tsx");
+const presentationLabels = source("lib/presentation/labels.ts");
+const genericPublicScan = source("scripts/quality/generic-public-editorial-scan.mjs");
 const overviewOverrides = JSON.parse(source("data/presentation/overview-assessment-overrides.json"));
 
 test("OVERVIEW_CARD_HAS_VISIBLE_WOEK_ASSESSMENT", () => {
@@ -128,4 +132,39 @@ test("PREVIEW_CARD_NO_GENERIC_SUMMARY", () => {
 test("PREVIEW_CARD_NO_RAW_INTERNAL_ENUMS", () => {
   assert.doesNotMatch(overviewComponent, />POSITIVE_POTENTIAL<|>NEGATIVE_RISK<|>AMBIVALENT<|>PORTFOLIO_DISAGGREGATION_REQUIRED</);
   assert.match(source("scripts/quality/generic-public-editorial-scan.mjs"), /PREVIEW_CARD_NO_RAW_INTERNAL_ENUMS/);
+});
+
+test("NO_GENERIC_INTERNAL_SCHEMA_FIELD_LABELS_IN_PUBLIC_UI", () => {
+  for (const label of [
+    "Kompetenzprüfung",
+    "Rechts- und Grundrechtsprüfung",
+    "MPD-Zuordnung",
+    "SDG-Zuordnung",
+    "SDG+-Zuordnung",
+    "Prüfung von Schutz- und Wirkungsgrenzen",
+    "strukturierter Datenbedarf",
+    "strukturierte Evidenzzusammenfassung",
+  ]) {
+    assert.match(presentationLabels, new RegExp(label.replace(/[+]/g, "\\+")));
+    assert.match(governmentSourceVsView, new RegExp(label.replace(/[+]/g, "\\+")));
+  }
+  assert.match(governmentCard, /publicStructuredFieldLabel/);
+  assert.doesNotMatch(governmentCard, /missing_structured_fields\.map\(publicValue\)/);
+  assert.match(genericPublicScan, /GENERIC_INTERNAL_SCHEMA_FIELD_LABEL_VISIBLE/);
+  assert.match(genericPublicScan, /NO_GENERIC_INTERNAL_SCHEMA_FIELD_LABELS_IN_PUBLIC_UI/);
+});
+
+test("NO_CONTROL_STYLE_BACKTICK_ENUM_STATUS_PRESENTATION", () => {
+  assert.match(fullAnalysisText, /publicControlText/);
+  assert.match(fullAnalysisText, /`\[\^`\]\+`/);
+  assert.match(presentationLabels, /replace\(\/\\s\*=\\s\*\/g, ": "\)/);
+  assert.match(presentationLabels, /"Analysis Mode": "Analysemodus"/);
+  assert.match(presentationLabels, /"Boundary Review": "Prüfung von Schutz- und Wirkungsgrenzen"/);
+  assert.match(presentationLabels, /BOUNDARY_REVIEW: "Prüfung der Schutz- und Wirkungsgrenzen"/);
+  assert.match(fullAnalysisText, /humanizeSystemValue\(chapter\.text\)/);
+  assert.match(genericPublicScan, /CONTROL_STYLE_PRESENTATION_VISIBLE/);
+  assert.match(genericPublicScan, /FULL_RECORD_DETAILS_INCLUDED_IN_SCAN/);
+  assert.match(genericPublicScan, /PUBLIC_OPEN_STATE_COPY_INCLUDED_IN_SCAN/);
+  assert.match(genericPublicScan, /EU_IMPACT_2026_002_EXTERNAL_RENDER/);
+  assert.match(genericPublicScan, /WOEK_IMPACT_BUND_BHH_2027_EXTERNAL_RENDER/);
 });

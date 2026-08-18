@@ -60,6 +60,12 @@ const machineResidue = [
   /\b[a-z]+_[a-z0-9_]+\b/,
   /(?:^|\s)---(?:\s|$)/,
 ];
+const internalSchemaProjection = /\b(?:Competence review|Legal and rights review|Mpd mapping|Sdg mapping|Sdg plus mapping|Structured boundary review|Structured data needs|Structured evidence summary)\b/i;
+const controlStylePresentation = [
+  /`[^`]+`/,
+  /\b(?:Analysis Mode|Boundary Review)\b/i,
+  /\b(?:Status|Analysemodus|Gesamtcharakter|Reality-?Check(?:-Status)?|Boundary Status|Prüfung von Schutz- und Wirkungsgrenzen)\s*=\s*/i,
+];
 const fieldFailures = [];
 for (const entry of projections) {
   for (const [field, value] of Object.entries(entry.fields)) {
@@ -114,6 +120,8 @@ if (baseUrl) {
     if (knownFallbacks.some((pattern) => pattern.test(auditableText))) failures.push("GENERIC_FALLBACK_VISIBLE");
     if (rawEnum.test(auditableText)) failures.push("RAW_ENUM_VISIBLE");
     if (machineResidue.some((pattern) => pattern.test(auditableText))) failures.push("MACHINE_VALUE_VISIBLE");
+    if (internalSchemaProjection.test(auditableText)) failures.push("GENERIC_INTERNAL_SCHEMA_FIELD_LABEL_VISIBLE");
+    if (controlStylePresentation.some((pattern) => pattern.test(auditableText))) failures.push("CONTROL_STYLE_PRESENTATION_VISIBLE");
     const previewCards = (html.match(/data-woek-preview-card=/g) ?? []).length;
     const previewAssessments = (html.match(/data-woek-preview-assessment=/g) ?? []).length;
     const assessmentIcons = (html.match(/data-woek-assessment-icon=/g) ?? []).length;
@@ -122,7 +130,17 @@ if (baseUrl) {
     if (previewCards > previewAssessments) failures.push("PREVIEW_WITHOUT_ASSESSMENT");
     if (previewAssessments > assessmentIcons) failures.push("ASSESSMENT_WITHOUT_ICON");
     if (previewCards > 0 && firstProcess >= 0 && (firstAssessment < 0 || firstAssessment > firstProcess)) failures.push("PROCESS_PRECEDES_ASSESSMENT");
-    routeChecks.push({ route, http_status: response.status, preview_cards: previewCards, preview_assessments: previewAssessments, assessment_icons: assessmentIcons, status: failures.length ? "FAIL" : "PASS", failures });
+    routeChecks.push({
+      route,
+      http_status: response.status,
+      preview_cards: previewCards,
+      preview_assessments: previewAssessments,
+      assessment_icons: assessmentIcons,
+      full_record_details: (html.match(/government-full-record/g) ?? []).length,
+      public_open_states: (html.match(/class="open-state"/g) ?? []).length,
+      status: failures.length ? "FAIL" : "PASS",
+      failures,
+    });
   }
 }
 
@@ -138,12 +156,16 @@ const components = {
   mandateIndex: source("app/mandat-und-praxis/page.tsx"),
   stateProgrammes: source("app/laender/sachsen-anhalt/page.tsx"),
   decisionDetail: source("app/entscheidungen/[slug]/page.tsx"),
+  fullAnalysisText: source("app/components/FullAnalysisText.tsx"),
 };
 const budget = overrides["bt21-dip-c262bf7797f8"];
 const liveFailures = routeChecks.filter((entry) => entry.status !== "PASS");
 const noGeneric = fieldFailures.length === 0 && similarityFailures.length === 0 && liveFailures.length === 0;
 const previewComponents = [components.caseCard, components.governmentCard, components.governmentActionCard, components.euCard, components.search, components.sourceDetail, components.specialistIndex, components.mandateIndex, components.stateProgrammes];
 const livePreviewFailures = liveFailures.filter((entry) => entry.failures.some((failure) => /PREVIEW|ASSESSMENT|PROCESS_PRECEDES/.test(failure)));
+const governmentRegression = routeChecks.find((entry) => entry.route === "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-BHH-2027");
+const euRegression = routeChecks.find((entry) => entry.route === "/eu/wirkungsfaelle/EU-IMPACT-2026-002");
+const liveGate = (value) => baseUrl ? Boolean(value) : true;
 const gates = {
   OVERVIEW_CARD_HAS_VISIBLE_WOEK_ASSESSMENT: /Zusammenfassende WÖk-Bewertung/.test(components.overview) && [components.caseCard, components.governmentCard, components.euCard].every((value) => /<OverviewAssessment/.test(value)),
   PROCESS_BADGE_IS_NOT_USED_AS_ASSESSMENT: !/Vor der Entscheidung geprüft|Beobachtung und Rückkopplung|hohe Prüfrelevanz/i.test(components.overview),
@@ -154,6 +176,12 @@ const gates = {
   NO_GENERIC_PUBLIC_EDITORIAL_TEXT: noGeneric,
   NO_RAW_INTERNAL_ENUMS_IN_PUBLIC_UI: fieldFailures.every((value) => !value.includes("RAW_ENUM")) && liveFailures.every((value) => !value.failures.includes("RAW_ENUM_VISIBLE")),
   NO_MACHINE_VALUES_IN_NORMAL_PUBLIC_UI: liveFailures.every((value) => !value.failures.includes("MACHINE_VALUE_VISIBLE")),
+  NO_GENERIC_INTERNAL_SCHEMA_FIELD_LABELS_IN_PUBLIC_UI: liveFailures.every((value) => !value.failures.includes("GENERIC_INTERNAL_SCHEMA_FIELD_LABEL_VISIBLE")),
+  NO_CONTROL_STYLE_BACKTICK_ENUM_STATUS_PRESENTATION: liveFailures.every((value) => !value.failures.includes("CONTROL_STYLE_PRESENTATION_VISIBLE")) && /publicControlText/.test(components.fullAnalysisText),
+  FULL_RECORD_DETAILS_INCLUDED_IN_SCAN: liveGate(governmentRegression?.full_record_details > 0 && euRegression?.full_record_details > 0),
+  PUBLIC_OPEN_STATE_COPY_INCLUDED_IN_SCAN: liveGate(governmentRegression?.public_open_states > 0 && !governmentRegression?.failures.includes("GENERIC_INTERNAL_SCHEMA_FIELD_LABEL_VISIBLE")),
+  EU_IMPACT_2026_002_EXTERNAL_RENDER: liveGate(euRegression?.status === "PASS"),
+  WOEK_IMPACT_BUND_BHH_2027_EXTERNAL_RENDER: liveGate(governmentRegression?.status === "PASS"),
   KEY_FINDING_VISIBLE_AND_SPECIFIC: /Key Finding:/.test(components.overview) && fieldFailures.every((value) => !value.includes("key_finding")),
   BUDGET_2027_PORTFOLIO_NOT_FORCED_TO_FAKE_SCORE: budget?.overview_assessment_label === "Keine belastbare einheitliche Wirkungsrichtung ohne Disaggregation." && /heterogene Allokationsarchitektur/.test(budget?.impact_core_summary ?? "") && !/[+-]\d|Gesamtwert|Gesamtnote/.test(JSON.stringify(budget)),
   DETAIL_PAGE_IMPACT_SECTION_PRECEDES_PROCESS: components.decisionDetail.indexOf("<OverviewAssessment") < components.decisionDetail.indexOf("decision-process-meta") && components.governmentCard.indexOf("<OverviewAssessment") < components.governmentCard.indexOf("<FullSchemaDetails"),
