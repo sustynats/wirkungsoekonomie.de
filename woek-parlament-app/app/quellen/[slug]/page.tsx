@@ -31,7 +31,9 @@ export default async function SourceDetailPage({ params }: { params: Promise<{ s
       </header>
       <div className="source-detail-grid">
         <section className="decision-section">
-          <h2>Quellensteckbrief</h2>
+          <h2>Kurz zusammengefasst</h2>
+          <p>{source.abstract ?? "Für diese Quelle liegt noch keine fachlich geprüfte Inhaltszusammenfassung vor. Sie bleibt deshalb nur als Quellensteckbrief sichtbar und trägt keine eigenständige Bewertung."}</p>
+          <h3>Quellensteckbrief</h3>
           <dl className="source-facts">
             <div><dt>Herausgebende Stelle</dt><dd>{source.institution}</dd></div>
             <div><dt>Dokumenttyp</dt><dd>{source.documentType}</dd></div>
@@ -55,11 +57,13 @@ export default async function SourceDetailPage({ params }: { params: Promise<{ s
         {source.usages.length > 0 ? <div className="source-usage-list">{source.usages.map((usage) => <article key={`${usage.caseSlug}-${usage.sourceRole}`}>
           <div>
             <p className="source-register-label">{sourceRoleLabel[usage.sourceRole]}{usage.decisionDate ? ` · Entscheidung ${dateLabel(usage.decisionDate)}` : ""}</p>
-            <h3><Link href={`/entscheidungen/${usage.caseSlug}`}>{usage.caseTitle}</Link></h3>
+            <h3><Link href={usage.caseHref ?? `/entscheidungen/${usage.caseSlug}`}>{usage.caseTitle}</Link></h3>
+            {usage.analysisSummary && <p><strong>Kurzbewertung:</strong> {usage.analysisSummary}</p>}
+            {(usage.analysisDirection || usage.evidenceLevel) && <p className="source-locations">{usage.analysisDirection && <><strong>Einordnung:</strong> {usage.analysisDirection}</>}{usage.analysisDirection && usage.evidenceLevel ? " · " : ""}{usage.evidenceLevel && <><strong>Evidenz:</strong> {usage.evidenceLevel}</>}</p>}
             {usage.note && <p>{usage.note}</p>}
             {usage.locations.length > 0 && <p className="source-locations"><strong>Relevante Fundstellen:</strong> {usage.locations.join(" · ")}</p>}
           </div>
-          <Link className="text-link" href={`/entscheidungen/${usage.caseSlug}`}>Check ansehen →</Link>
+          <Link className="text-link" href={usage.caseHref ?? `/entscheidungen/${usage.caseSlug}`}>Analyse ansehen →</Link>
         </article>)}</div> : <p>Diese Quelle ist veröffentlicht, aber derzeit keinem veröffentlichten Wirkungscheck zugeordnet.</p>}
       </section>
     </div>

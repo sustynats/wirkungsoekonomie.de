@@ -5,6 +5,7 @@ import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import Ajv2020 from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
+import { assessEditorialQuality, findGenericEditorialPatterns } from "../lib/publication/editorial-quality.mjs";
 
 const projectRoot = process.cwd();
 const fachRoot = process.env.WOEK_GOVERNMENT_FACHRELEASE_ROOT
@@ -185,7 +186,7 @@ for (const wave of waves) {
     const analysisVersion = raw.analysis_version ?? `2.0-W${wave}`;
     const profile = fullSchemaValid ? "FULL_SCHEMA_2_0_1" : "VERIFIED_FACH_RELEASE_COMPACT";
 
-    records.push({
+    const normalizedRecord = {
       record_profile: profile,
       schema_id: fullSchemaValid ? schema.$id : null,
       schema_validation: fullSchemaValid ? "PASS" : "COMPACT_SOURCE_PRESERVED_NO_SCHEMA_REPAIR",
@@ -209,6 +210,9 @@ for (const wave of waves) {
         direction_dependencies: fullSummary.direction_dependencies ?? "",
         measurement_priority: fullSummary.measurement_priority ?? stringValue(raw.measurement_priority ?? raw.monitoring),
       },
+      impact_core_summary: centralLever,
+      editorial_summary: publicSummary,
+      competence_status: fullSchemaValid ? (raw.scope?.competence_note ?? "OPEN") : "OPEN",
       boundary_status: mapBoundary(raw.boundary_review ?? { status: raw.boundaries?.length ? "WATCH" : "OPEN" }),
       reality_check_status: mapReality(raw.reality_check_status ?? raw.reality_check),
       linked_government_action_ids: linkedActionIds(raw),
@@ -225,6 +229,12 @@ for (const wave of waves) {
         imported_at: importedAt,
       },
       raw_record: raw,
+    };
+    const editorialQuality = assessEditorialQuality(normalizedRecord);
+    records.push({
+      ...normalizedRecord,
+      publication_status: editorialQuality.status === "PASS" ? "APPROVED" : "BLOCKED_EDITORIAL_QUALITY",
+      editorial_quality: editorialQuality,
     });
     importAudit.push({
       impact_case_id: raw.impact_case_id,
@@ -233,7 +243,8 @@ for (const wave of waves) {
       full_schema_valid: fullSchemaValid,
       markdown_section_found: true,
       fach_content_preserved: true,
-      publication_status: "APPROVED",
+      publication_status: editorialQuality.status === "PASS" ? "APPROVED" : "BLOCKED_EDITORIAL_QUALITY",
+      editorial_quality: editorialQuality,
       source_file: jsonName,
     });
   }
@@ -241,18 +252,27 @@ for (const wave of waves) {
 
 const fullCount = records.filter((record) => record.record_profile === "FULL_SCHEMA_2_0_1").length;
 const compactCount = records.length - fullCount;
+const publicRecords = records.filter((record) => record.publication_status === "APPROVED");
+const reviewRecords = records.filter((record) => record.publication_status !== "APPROVED");
+const genericEditorialPatterns = findGenericEditorialPatterns(publicRecords);
+if (genericEditorialPatterns.length > 0) {
+  throw new Error(`GENERIC_EDITORIAL_PATTERN_DETECTED: ${JSON.stringify(genericEditorialPatterns)}`);
+}
 const meta = {
   fachrelease: "WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0",
   imported_at: importedAt,
   impact_cases_total: records.length,
   impact_cases_full_schema_2_0_1: fullCount,
   impact_cases_compact_source_preserved: compactCount,
-  impact_cases_published: records.length,
+  impact_cases_published: publicRecords.length,
+  impact_cases_blocked_editorial_quality: reviewRecords.length,
   fach_content_loss: 0,
-  note: "Sechs Datensätze entsprechen dem Vollschema 2.0.1. Die übrigen freigegebenen Fachwellen liegen als kompakte Fachübergaben vor und werden ohne stillschweigende Schema-Reparatur zusammen mit ihrem vollständigen Fachtext veröffentlicht.",
+  note: "Alle 63 Fachdatensätze bleiben verlustfrei erhalten. Öffentlich als fertige WÖk-Analyse erscheinen nur Fälle, die zusätzlich das redaktionelle P0-Gate bestehen. Nicht bestandene Fälle verbleiben mit vollständigem Fachtext im Review-Store; CodeX erzeugt keine Ersatztexte.",
 };
 
-writeJsonl(path.join(outputRoot, "public-impact-records.jsonl"), records);
+writeJsonl(path.join(outputRoot, "public-impact-records.jsonl"), publicRecords);
+writeJsonl(path.join(outputRoot, "review-impact-records.jsonl"), reviewRecords);
 writeJson(path.join(outputRoot, "public-impact-records-meta.json"), meta);
 writeJson(path.join(outputRoot, "fachrelease-import-audit.json"), importAudit);
+writeJson(path.join(outputRoot, "editorial-pattern-review.json"), genericEditorialPatterns);
 console.log(JSON.stringify(meta, null, 2));

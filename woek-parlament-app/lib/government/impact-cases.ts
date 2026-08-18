@@ -4,6 +4,7 @@ import { cache } from "react";
 import { readFileSync } from "node:fs";
 import path from "node:path";
 import type { ImpactCaseHistoryEntry, WoeKImpactCase } from "@/lib/government/daily-impact-ingest-core";
+import { assessEditorialQuality, type EditorialAssessment } from "@/lib/publication/editorial-quality.mjs";
 export type { WoeKImpactCase } from "@/lib/government/daily-impact-ingest-core";
 
 export type PublicGovernmentImpactRecord = {
@@ -30,6 +31,10 @@ export type PublicGovernmentImpactRecord = {
     direction_dependencies: string;
     measurement_priority: string;
   };
+  impact_core_summary: string;
+  editorial_summary: string;
+  competence_status: string;
+  editorial_quality: EditorialAssessment;
   boundary_status: "PASS" | "WATCH" | "BLOCK" | "OPEN";
   reality_check_status: string;
   linked_government_action_ids: string[];
@@ -55,6 +60,7 @@ export type ImpactImportMeta = {
   impact_cases_full_schema_2_0_1: number;
   impact_cases_compact_source_preserved: number;
   impact_cases_published: number;
+  impact_cases_blocked_editorial_quality: number;
   fach_content_loss: number;
   note: string;
 };
@@ -75,7 +81,9 @@ export const getPublicImpactCases = cache(() => {
   try {
     const daily = readJsonl<WoeKImpactCase>("public-impact-cases.jsonl").map(publicRecordFromFullSchema);
     const byId = new Map(records.map((record) => [record.impact_case_id, record]));
-    for (const record of daily) byId.set(record.impact_case_id, record);
+    for (const record of daily) {
+      if (record.editorial_quality.status === "PASS") byId.set(record.impact_case_id, record);
+    }
     return [...byId.values()];
   } catch {
     return records;
@@ -115,7 +123,7 @@ export function publicRecordFromFullSchema(record: WoeKImpactCase): PublicGovern
   const evidence = record.impact_paths.map((path) => String(path.evidence)).find((value) => ["HIGH", "MEDIUM", "LOW"].includes(value)) ?? "NOT_ASSESSABLE";
   const boundaryStatuses = record.boundary_review.map((item) => item.status);
   const boundaryStatus = boundaryStatuses.includes("BLOCK") ? "BLOCK" : boundaryStatuses.includes("WATCH") ? "WATCH" : boundaryStatuses.includes("OPEN") ? "OPEN" : "PASS";
-  return {
+  const normalized = {
     record_profile: "FULL_SCHEMA_2_0_1",
     schema_id: "https://wirkungsoekonomie.de/contracts/woek-impact-case-2.0.1.schema.json",
     schema_validation: "PASS",
@@ -139,6 +147,9 @@ export function publicRecordFromFullSchema(record: WoeKImpactCase): PublicGovern
       direction_dependencies: String(record.impact_summary.direction_dependencies),
       measurement_priority: String(record.impact_summary.measurement_priority),
     },
+    impact_core_summary: String(record.impact_summary.central_lever),
+    editorial_summary: String(record.impact_summary.public_summary),
+    competence_status: String(record.scope.competence_note ?? "OPEN"),
     boundary_status: boundaryStatus,
     reality_check_status: String(record.reality_check.status),
     linked_government_action_ids: record.linked_objects.government_action_ids,
@@ -149,6 +160,8 @@ export function publicRecordFromFullSchema(record: WoeKImpactCase): PublicGovern
     source_release: { jsonl_file: "approved-public-state.json", jsonl_sha256: "", markdown_file: "", markdown_sha256: "", case_markdown_sha256: "", imported_at: record.fach_review.reviewed_at },
     raw_record: record,
   };
+  const editorialQuality = assessEditorialQuality(normalized as unknown as Record<string, unknown>);
+  return { ...normalized, editorial_quality: editorialQuality } as PublicGovernmentImpactRecord;
 }
 
 export const directionLabels: Record<string, string> = {

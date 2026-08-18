@@ -38,6 +38,17 @@ test("an analysis version cannot change without a public evidence event", () => 
   assert.equal(requiresPublicEvidenceForAnalysisChange({ analysis_version: "2", supersedes_analysis_version: "1", triggering_evidence_event_ids: ["evidence-1"], public_change_summary: "Neue Evidenz verändert die Einordnung." }), true);
 });
 
+test("the approved Kaub evidence and its reality-check candidate validate unchanged", () => {
+  const eventValidate = compile("evidence-event.schema.json");
+  const candidateValidate = compile("reality-check-candidate.schema.json");
+  const event = JSON.parse(readFileSync(path.join(process.cwd(), "data", "observatory", "public", "evidence-events.jsonl"), "utf8").trim());
+  const candidate = JSON.parse(readFileSync(path.join(process.cwd(), "data", "observatory", "public", "reality-check-candidates.jsonl"), "utf8").trim());
+  assert.equal(eventValidate(event), true, JSON.stringify(eventValidate.errors));
+  assert.equal(candidateValidate(candidate), true, JSON.stringify(candidateValidate.errors));
+  assert.equal(event.attribution_status, "EXTERNAL_CONTEXT");
+  assert.equal(candidate.attribution_status, "EXTERNAL_CONTEXT");
+});
+
 test("observation revisions preserve the old observation", () => {
   assert.deepEqual(nextObservationRevision({ observation_id: "obs-v1", revision: 1 }, "obs-v2"), {
     observation_id: "obs-v2", revision: 2, supersedes_observation_id: "obs-v1", revision_status: "REVISED",

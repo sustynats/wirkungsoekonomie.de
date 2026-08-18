@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wirkungsoekonomie.de/contracts/competence-legal-review-2.0.schema.json",
+  "description": "Fachlich freigegebene Kompetenz- und Rechtsachse. Sie ist weder Wirkungsrichtung noch SDG-Zuordnung.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "competence_scope",
+    "competence_basis",
+    "competence_sources",
+    "required_external_actor",
+    "available_land_route",
+    "implementation_route",
+    "legal_feasibility_status",
+    "legal_basis",
+    "higher_law_constraints",
+    "rights_affected",
+    "legal_uncertainty",
+    "milder_or_alternative_route",
+    "fach_review_status"
+  ],
+  "properties": {
+    "competence_scope": {
+      "enum": ["LAND_FULL", "LAND_PARTIAL_SHARED", "MUNICIPAL", "FEDERAL", "EU", "EU_EXCLUSIVE", "EU_SHARED", "EU_SUPPORTING", "MIXED", "OTHER", "OPEN"]
+    },
+    "competence_basis": { "type": ["string", "null"] },
+    "competence_sources": { "type": "array", "items": { "type": "string", "format": "uri" } },
+    "required_external_actor": { "type": ["string", "null"] },
+    "available_land_route": { "type": ["string", "null"] },
+    "implementation_route": {
+      "enum": [
+        "LAND_LEGISLATION",
+        "LAND_REGULATION",
+        "LAND_ADMINISTRATION",
+        "LAND_FUNDING",
+        "LAND_PROCUREMENT",
+        "LAND_OWNERSHIP_OR_PARTICIPATION",
+        "LAND_PLANNING",
+        "MUNICIPAL_IMPLEMENTATION_WITH_LAND_FRAMEWORK",
+        "BUNDESRAT_INITIATIVE",
+        "FEDERAL_LEGISLATION_REQUIRED",
+        "EU_LEGISLATION_OR_ENFORCEMENT_REQUIRED",
+        "INTERSTATE_TREATY_OR_LAENDER_COORDINATION",
+        "POLITICAL_ADVOCACY_ONLY",
+        "OPEN"
+      ]
+    },
+    "legal_feasibility_status": {
+      "enum": [
+        "CLEAR_LAND_ROUTE",
+        "LAND_ROUTE_WITH_CONSTRAINTS",
+        "REQUIRES_MUNICIPAL_ACTION",
+        "REQUIRES_FEDERAL_ACTION",
+        "REQUIRES_EU_ACTION",
+        "REQUIRES_INTERSTATE_COORDINATION",
+        "FEDERAL_PREEMPTION_RISK",
+        "HIGHER_LAW_CONFLICT_RISK",
+        "LIKELY_NOT_IMPLEMENTABLE_AS_STATED",
+        "OPEN"
+      ]
+    },
+    "legal_basis": { "type": "array", "items": { "type": "string" } },
+    "higher_law_constraints": { "type": "array", "items": { "type": "string" } },
+    "rights_affected": { "type": "array", "items": { "type": "string" } },
+    "legal_uncertainty": { "type": ["string", "null"] },
+    "milder_or_alternative_route": { "type": ["string", "null"] },
+    "fach_review_status": { "enum": ["OPEN", "REVIEW_REQUIRED", "APPROVED", "BLOCKED"] },
+    "reviewed_at": { "type": ["string", "null"], "format": "date-time" },
+    "review_source_refs": { "type": "array", "items": { "type": "string", "format": "uri" } }
+  }
+}

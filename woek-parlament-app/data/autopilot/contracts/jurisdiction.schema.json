@@ -3,15 +3,20 @@
   "$id": "https://wirkungsoekonomie.de/contracts/political-jurisdiction-1.0.schema.json",
   "type": "object",
   "additionalProperties": true,
-  "required": ["jurisdiction_id", "jurisdiction_type", "name", "active_term_id", "government_lifecycle_state", "election_cycle_state", "next_election_date", "monitoring_enabled"],
+  "required": ["jurisdiction_id", "jurisdiction_type", "name", "active_term_id", "active_government_term_id", "government_lifecycle_state", "government_monitoring_scope_start", "election_cycle_state", "active_election_cycle_id", "next_election_date", "date_precision", "source_health", "monitoring_enabled"],
   "properties": {
     "jurisdiction_id": { "type": "string", "minLength": 2 },
     "jurisdiction_type": { "enum": ["FEDERAL", "STATE", "EU"] },
     "name": { "type": "string", "minLength": 2 },
     "active_term_id": { "type": "string", "minLength": 2 },
-    "government_lifecycle_state": { "enum": ["DORMANT", "GOVERNMENT_FORMED", "GOVERNMENT_MONITORING", "TRANSITION_TO_NEXT_TERM"] },
+    "active_government_term_id": { "type": "string", "minLength": 2 },
+    "government_lifecycle_state": { "enum": ["OUT_OF_INITIAL_SCOPE", "LEGACY_TERM_NOT_BACKFILLED", "GOVERNMENT_FORMATION", "GOVERNMENT_MONITORING", "TRANSITION_TO_NEXT_TERM", "CLOSED"] },
+    "government_monitoring_scope_start": { "type": ["string", "null"], "format": "date" },
     "election_cycle_state": { "enum": ["DORMANT", "PRE_ELECTION_WATCH", "PROGRAMME_ANALYSIS", "ELECTION_RESULT", "COALITION_FORMATION", "GOVERNMENT_FORMED", "CLOSED"] },
-    "next_election_date": { "type": ["string", "null"], "format": "date" },
+    "active_election_cycle_id": { "type": ["string", "null"] },
+    "next_election_date": { "type": ["string", "null"], "pattern": "^(?:[0-9]{4}-[0-9]{2}-[0-9]{2}|[0-9]{4}-(?:SPRING|SUMMER|AUTUMN|WINTER))$" },
+    "date_precision": { "enum": ["EXACT", "SEASON_ONLY", "OPEN"] },
+    "source_health": { "enum": ["OK", "DEGRADED", "BLOCKED", "NOT_CONFIGURED"] },
     "monitoring_enabled": { "type": "boolean" }
   }
 }

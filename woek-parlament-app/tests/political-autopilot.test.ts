@@ -17,12 +17,12 @@ const registry = JSON.parse(readFileSync("data/political-jurisdictions.json", "u
 
 test("the shared registry contains Bund, all 16 states and EU", () => {
   assert.equal(registry.jurisdictions.filter((entry: { jurisdiction_type: string }) => entry.jurisdiction_type === "STATE").length, 16);
-  assert.equal(registry.jurisdictions.some((entry: { jurisdiction_id: string }) => entry.jurisdiction_id === "de-bund"), true);
-  assert.equal(registry.jurisdictions.some((entry: { jurisdiction_id: string }) => entry.jurisdiction_id === "eu"), true);
+  assert.equal(registry.jurisdictions.some((entry: { jurisdiction_id: string }) => entry.jurisdiction_id === "DE"), true);
+  assert.equal(registry.jurisdictions.some((entry: { jurisdiction_id: string }) => entry.jurisdiction_id === "EU"), true);
 });
 
 test("EU Parliament and Commission terms remain separate", () => {
-  const eu = registry.jurisdictions.find((entry: { jurisdiction_id: string }) => entry.jurisdiction_id === "eu");
+  const eu = registry.jurisdictions.find((entry: { jurisdiction_id: string }) => entry.jurisdiction_id === "EU");
   assert.equal(eu.institutional_terms.european_parliament_term_start, "2024-07-16");
   assert.equal(eu.institutional_terms.european_commission_term_start, "2024-12-01");
   assert.notEqual(eu.institutional_terms.european_parliament_term_id, eu.institutional_terms.european_commission_term_id);

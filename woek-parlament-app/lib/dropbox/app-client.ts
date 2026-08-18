@@ -150,6 +150,10 @@ export async function ensureDropboxFolders(folderPaths: string[]) {
 }
 
 export async function uploadDropboxText(filePath: string, content: string) {
+  return uploadDropboxBytes(filePath, new TextEncoder().encode(content));
+}
+
+export async function uploadDropboxBytes(filePath: string, content: Uint8Array) {
   const token = await accessToken();
   const path = normalizeDropboxPath(filePath);
   await ensureDropboxFolder(token, path.slice(0, path.lastIndexOf("/")));
@@ -160,7 +164,7 @@ export async function uploadDropboxText(filePath: string, content: string) {
       "content-type": "application/octet-stream",
       "dropbox-api-arg": JSON.stringify({ path, mode: "overwrite", autorename: false, mute: true, strict_conflict: false }),
     },
-    body: content,
+    body: Buffer.from(content),
     signal: AbortSignal.timeout(30_000),
   });
   if (!response.ok) {

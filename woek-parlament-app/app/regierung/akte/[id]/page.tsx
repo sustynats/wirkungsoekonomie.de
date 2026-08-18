@@ -12,6 +12,7 @@ import {
   sourceFunctionLabels,
 } from "@/lib/government/public-data";
 import { impactCasesForGovernmentAction } from "@/lib/government/impact-cases";
+import { sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
 
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
   const { id } = await params;
@@ -92,7 +93,7 @@ export default async function GovernmentActionDetailPage({ params }: { params: P
 
         <section id="quellen">
           <p className="eyebrow">7 · Quellen &amp; Changelog</p><h2>Amtliche Belege</h2>
-          <ul className="government-source-list">{action.source_refs.map((source) => <li key={source.source_event_id}><div><strong>{source.title}</strong><span>{sourceFunctionLabels[source.source_function] ?? source.source_function} · veröffentlicht {formatDate(source.published_at)} · geprüft {formatDate(source.retrieved_at)}</span></div><a href={source.url} rel="noreferrer">Amtliche Quelle öffnen <span aria-hidden="true">↗</span></a></li>)}</ul>
+          <ul className="government-source-list">{action.source_refs.map((source) => <li key={source.source_event_id}><div><strong>{source.title}</strong><span>{sourceFunctionLabels[source.source_function] ?? source.source_function} · veröffentlicht {formatDate(source.published_at)} · geprüft {formatDate(source.retrieved_at)}</span></div><Link href={sourceDetailHrefForUrl(source.url)}>Quellenakte öffnen <span aria-hidden="true">→</span></Link></li>)}</ul>
           <dl className="government-changelog"><div><dt>Datenversion</dt><dd>{action.data_version}</dd></div><div><dt>Zuletzt geprüft</dt><dd>{formatDate(action.last_verified_at)}</dd></div><div><dt>Veröffentlichungsstufe</dt><dd>Faktenschicht</dd></div></dl>
         </section>
       </div>

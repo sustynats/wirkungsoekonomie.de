@@ -1,8 +1,8 @@
 const stateIds: Record<string, string> = {
-  "Baden-Württemberg": "de-bw", Bayern: "de-by", Berlin: "de-be", Brandenburg: "de-bb",
-  Bremen: "de-hb", Hamburg: "de-hh", Hessen: "de-he", "Mecklenburg-Vorpommern": "de-mv",
-  Niedersachsen: "de-ni", "Nordrhein-Westfalen": "de-nw", "Rheinland-Pfalz": "de-rp", Saarland: "de-sl",
-  Sachsen: "de-sn", "Sachsen-Anhalt": "de-st", "Schleswig-Holstein": "de-sh", Thüringen: "de-th",
+  "Baden-Württemberg": "DE-BW", Bayern: "DE-BY", Berlin: "DE-BE", Brandenburg: "DE-BB",
+  Bremen: "DE-HB", Hamburg: "DE-HH", Hessen: "DE-HE", "Mecklenburg-Vorpommern": "DE-MV",
+  Niedersachsen: "DE-NI", "Nordrhein-Westfalen": "DE-NW", "Rheinland-Pfalz": "DE-RP", Saarland: "DE-SL",
+  Sachsen: "DE-SN", "Sachsen-Anhalt": "DE-ST", "Schleswig-Holstein": "DE-SH", Thüringen: "DE-TH",
 };
 
 function textCells(html: string) {

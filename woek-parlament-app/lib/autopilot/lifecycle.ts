@@ -4,10 +4,12 @@
  * next election is already in PRE_ELECTION_WATCH or PROGRAMME_ANALYSIS.
  */
 export type GovernmentLifecycleState =
-  | "DORMANT"
-  | "GOVERNMENT_FORMED"
+  | "OUT_OF_INITIAL_SCOPE"
+  | "LEGACY_TERM_NOT_BACKFILLED"
+  | "GOVERNMENT_FORMATION"
   | "GOVERNMENT_MONITORING"
-  | "TRANSITION_TO_NEXT_TERM";
+  | "TRANSITION_TO_NEXT_TERM"
+  | "CLOSED";
 
 export type ElectionCycleState =
   | "DORMANT"
@@ -54,7 +56,7 @@ export function requiresProgrammeCollection(state: ElectionCycleState) {
 }
 
 export function requiresGovernmentMonitoring(state: GovernmentLifecycleState) {
-  return state === "GOVERNMENT_FORMED" || state === "GOVERNMENT_MONITORING";
+  return state === "GOVERNMENT_MONITORING";
 }
 
 export function closeTermOnlyAfterOfficialFormation(event: PoliticalLifecycleEvent) {

@@ -1,7 +1,7 @@
 import registryData from "@/data/political-jurisdictions.json";
 
 export type JurisdictionType = "FEDERAL" | "STATE" | "EU";
-export type GovernmentLifecycle = "DORMANT" | "GOVERNMENT_FORMED" | "GOVERNMENT_MONITORING" | "TRANSITION_TO_NEXT_TERM";
+export type GovernmentLifecycle = "OUT_OF_INITIAL_SCOPE" | "LEGACY_TERM_NOT_BACKFILLED" | "GOVERNMENT_FORMATION" | "GOVERNMENT_MONITORING" | "TRANSITION_TO_NEXT_TERM" | "CLOSED";
 export type ElectionLifecycle = "DORMANT" | "PRE_ELECTION_WATCH" | "PROGRAMME_ANALYSIS" | "ELECTION_RESULT" | "COALITION_FORMATION" | "GOVERNMENT_FORMED" | "CLOSED";
 
 export type PoliticalJurisdiction = {
@@ -9,10 +9,15 @@ export type PoliticalJurisdiction = {
   jurisdiction_type: JurisdictionType;
   name: string;
   active_term_id: string;
+  active_government_term_id: string;
   government_lifecycle_state: GovernmentLifecycle | string;
+  government_monitoring_scope_start: string | null;
   election_cycle_state: ElectionLifecycle | string;
   next_election_date: string | null;
-  last_checked_at: string | null;
+  last_election_check: string | null;
+  last_government_sync: string | null;
+  last_fachreview: string | null;
+  last_deploy: string | null;
   source_status: string;
   monitoring_enabled: boolean;
   institutional_terms?: {
@@ -24,17 +29,17 @@ export type PoliticalJurisdiction = {
 };
 
 const slugById: Record<string, string> = {
-  "de-bw": "baden-wuerttemberg", "de-by": "bayern", "de-be": "berlin", "de-bb": "brandenburg",
-  "de-hb": "bremen", "de-hh": "hamburg", "de-he": "hessen", "de-mv": "mecklenburg-vorpommern",
-  "de-ni": "niedersachsen", "de-nw": "nordrhein-westfalen", "de-rp": "rheinland-pfalz", "de-sl": "saarland",
-  "de-sn": "sachsen", "de-st": "sachsen-anhalt", "de-sh": "schleswig-holstein", "de-th": "thueringen",
+  "DE-BW": "baden-wuerttemberg", "DE-BY": "bayern", "DE-BE": "berlin", "DE-BB": "brandenburg",
+  "DE-HB": "bremen", "DE-HH": "hamburg", "DE-HE": "hessen", "DE-MV": "mecklenburg-vorpommern",
+  "DE-NI": "niedersachsen", "DE-NW": "nordrhein-westfalen", "DE-RP": "rheinland-pfalz", "DE-SL": "saarland",
+  "DE-SN": "sachsen", "DE-ST": "sachsen-anhalt", "DE-SH": "schleswig-holstein", "DE-TH": "thueringen",
 };
 
 export const politicalJurisdictions = registryData.jurisdictions as PoliticalJurisdiction[];
 export const stateJurisdictions = politicalJurisdictions.filter((entry) => entry.jurisdiction_type === "STATE");
 
 export function stateSlug(jurisdictionId: string) {
-  return slugById[jurisdictionId] ?? jurisdictionId.replace(/^de-/, "");
+  return slugById[jurisdictionId] ?? jurisdictionId.replace(/^DE-/, "").toLowerCase();
 }
 
 export function stateJurisdictionBySlug(slug: string) {
@@ -57,8 +62,9 @@ export function lifecycleLabel(state: string) {
 
 export function governmentLifecycleLabel(state: string) {
   const labels: Record<string, string> = {
-    DORMANT: "Regierungsmonitor noch nicht aktiv",
-    GOVERNMENT_FORMED: "Neue Regierung gebildet",
+    OUT_OF_INITIAL_SCOPE: "Regierungsbestand noch nicht im Initialscope",
+    LEGACY_TERM_NOT_BACKFILLED: "Laufender Regierungsterm noch nicht rückwirkend erschlossen",
+    GOVERNMENT_FORMATION: "Regierungsbildung",
     GOVERNMENT_MONITORING: "Regierungsmonitor aktiv",
     TRANSITION_TO_NEXT_TERM: "Regierungsübergang",
   };

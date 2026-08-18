@@ -11,13 +11,14 @@ import {
   type PublicGovernmentImpactRecord,
   type WoeKImpactCase,
 } from "@/lib/government/impact-cases";
+import { sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
 
 function referenceSet(record: WoeKImpactCase, key: "sdg_refs" | "sdg_plus_refs" | "legal_refs") {
   return [...new Set(record.impact_paths.flatMap((path) => path[key] ?? []))];
 }
 
 function SourceList({ title, sources, empty }: { title: string; sources: string[]; empty: string }) {
-  return <div><h4>{title}</h4>{sources.length ? <ul>{sources.map((source) => <li key={source}><a href={source} target="_blank" rel="noreferrer">Amtliche oder fachliche Quelle öffnen</a></li>)}</ul> : <p>{empty}</p>}</div>;
+  return <div><h4>{title}</h4>{sources.length ? <ul>{sources.map((source) => <li key={source}><Link href={sourceDetailHrefForUrl(source)}>Quellenakte öffnen</Link></li>)}</ul> : <p>{empty}</p>}</div>;
 }
 
 function FullSchemaDetails({ record }: { record: WoeKImpactCase }) {
@@ -86,21 +87,20 @@ function FullSchemaDetails({ record }: { record: WoeKImpactCase }) {
 export function GovernmentImpactCase({ record, compact = false }: { record: PublicGovernmentImpactRecord; compact?: boolean }) {
   const fullRecord = fullSchemaRecord(record);
   const summary = record.impact_summary;
-  const lead = summary.public_summary || summary.central_lever || summary.strongest_positive_potential || summary.main_risk_or_tradeoff
-    || "Die kompakte Fachübergabe enthält keine gesonderte Kurzfassung. Die vollständige, fachlich freigegebene Analyse ist auf der Detailseite unverändert erreichbar.";
+  const lead = record.editorial_summary;
   return (
     <article className="government-impact-case" aria-labelledby={`impact-${record.impact_case_id}`}>
       <header>
         <p className="eyebrow">WÖk-Wirkungsanalyse · {record.analysis_mode === "IMPACT_REALITY_CHECK" ? "mit Reality-Check-Stufe" : "Ex ante"}</p>
         <h2 id={`impact-${record.impact_case_id}`}>{record.title}</h2>
-        {lead && <p className="lead">{lead}</p>}
+        <p className="lead">{lead}</p>
         <div className="government-impact-axis" aria-label="Wirkungsrichtung und Evidenz">
           <span className={`impact-direction impact-direction--${record.primary_direction.toLowerCase()}`}><strong>Richtung:</strong> {directionLabels[record.primary_direction]}</span>
           <span><strong>Evidenz:</strong> {evidenceLabels[record.evidence_level]}</span>
           <span><strong>Reality-Check:</strong> {realityCheckLabels[record.reality_check_status] ?? record.reality_check_status}</span>
         </div>
         <dl className="government-impact-summary">
-          {summary.central_lever && <div><dt>Wirkungskern</dt><dd>{summary.central_lever}</dd></div>}
+          <div><dt>Wirkungskern</dt><dd>{record.impact_core_summary}</dd></div>
           {summary.strongest_positive_potential && <div><dt>Stärkstes positives Potenzial</dt><dd>{summary.strongest_positive_potential}</dd></div>}
           {summary.main_risk_or_tradeoff && <div><dt>Wichtigstes Risiko oder Zielkonflikt</dt><dd>{summary.main_risk_or_tradeoff}</dd></div>}
           {summary.direction_dependencies && <div><dt>Entscheidende Bedingungen</dt><dd>{summary.direction_dependencies}</dd></div>}
@@ -108,7 +108,7 @@ export function GovernmentImpactCase({ record, compact = false }: { record: Publ
       </header>
 
       {!compact && <>
-        {fullRecord ? <FullSchemaDetails record={fullRecord} /> : <section className="notice" aria-label="Datenprofil der Fachübergabe"><strong>Fachlich freigegebene kompakte Übergabe</strong><p>Dieser Fall liegt im Fachrelease als kompakter Datensatz mit vollständiger Fachakte vor. CodeX hat ihn nicht still in ein anderes Schema umgedeutet. Der freigegebene Fachtext ist unten vollständig und unverändert erreichbar.</p></section>}
+        {fullRecord ? <FullSchemaDetails record={fullRecord} /> : null}
 
         <section aria-labelledby={`sources-${record.impact_case_id}`}>
           <h3 id={`sources-${record.impact_case_id}`}>Quellen nach Funktion</h3>

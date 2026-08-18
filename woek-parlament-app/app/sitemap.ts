@@ -24,6 +24,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entry("/monitor", undefined, .8),
     entry("/fachanalysen", undefined, .8),
     entry("/wirkungsfaelle", undefined, .9),
+    entry("/wirkungsobservatorium", undefined, .8),
     entry("/regierung", undefined, .9),
     entry("/mandat-und-praxis", undefined, .8),
     entry("/laender", undefined, .8),

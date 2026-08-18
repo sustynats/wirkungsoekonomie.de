@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { isSafePublicSourceUrl, sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
+import { isSafePublicSourceUrl, sourceDetailHrefForUrl } from "@/lib/sources/url";
 
 test("the public source archive rejects local, credentialed and non-HTTPS source URLs", () => {
   assert.equal(isSafePublicSourceUrl("https://dip.bundestag.de/vorgang/123"), "https://dip.bundestag.de/vorgang/123");

@@ -9,28 +9,33 @@ import jurisdictionRegistryJson from "@/data/political-jurisdictions.json";
 import sourceRegistryJson from "@/data/autopilot/source-registry.json";
 import { processObservatorySourceMonitor } from "@/lib/observatory/source-monitor";
 import { processStateElectionCalendar } from "@/lib/autopilot/state-election-monitor";
+import { writeStateDailyDeliveries } from "@/lib/autopilot/state-daily-delivery";
+import { processStateProgrammeMonitor } from "@/lib/autopilot/state-programme-monitor";
 
 type DomainStatus = "OK" | "DEGRADED" | "BLOCKED";
 type DomainHealth = { status: DomainStatus; last_run_at: string; detail: string };
 
 type JurisdictionRegistry = {
   schema_version: string;
-  updated_at: string;
+  as_of: string;
   jurisdictions: Array<{
     jurisdiction_id: string;
     jurisdiction_type: "FEDERAL" | "STATE" | "EU";
     name: string;
     active_term_id: string;
+    active_government_term_id: string;
     government_lifecycle_state: string;
+    government_monitoring_scope_start: string | null;
     election_cycle_state: string;
     next_election_date: string | null;
     source_status: string;
+    source_health: string;
     monitoring_enabled: boolean;
   }>;
 };
 
 type SourceRegistry = {
-  sources: Array<{ jurisdiction_id: string; adapter_status: string }>;
+  sources: Array<{ source_id: string; jurisdiction_id: string; institutional_role: string; name: string; base_url: string; access_type: string; adapter_status: string }>;
 };
 
 const root = "/WÖK/WOEK-AUTOPILOT";
@@ -39,9 +44,17 @@ const euDailyRoot = "/WÖK/WOEK-EU-DAILY";
 
 type ElectionCycleRegistry = {
   cycles: Array<{
+    election_cycle_id: string;
     jurisdiction_id: string;
     election_date: string;
     status: ElectionCycleStatus;
+    election_cycle_state?: string;
+    official_source_refs: string[];
+    programme_collection_status: string;
+    programme_analysis_status?: string;
+    result_status: string;
+    coalition_formation_status?: string;
+    new_government_status?: string;
   }>;
 };
 
@@ -49,7 +62,7 @@ function reconciledRegistry(registry: JurisdictionRegistry, electionCycles: Elec
   const cycles = new Map(electionCycles.cycles.map((entry) => [entry.jurisdiction_id, entry]));
   return {
     ...registry,
-    updated_at: checkedAt.slice(0, 10),
+    as_of: checkedAt.slice(0, 10),
     jurisdictions: registry.jurisdictions.map((entry) => {
       const cycle = cycles.get(entry.jurisdiction_id);
       if (!cycle) return entry;
@@ -57,7 +70,7 @@ function reconciledRegistry(registry: JurisdictionRegistry, electionCycles: Elec
         ...entry,
         election_cycle_state: lifecycleStateForElectionCycle(cycle.status),
         next_election_date: cycle.election_date,
-        last_checked_at: checkedAt,
+        last_election_check: checkedAt,
       };
     }),
   };
@@ -75,7 +88,7 @@ function statusForStateAdapters(registry: JurisdictionRegistry, sources: SourceR
 }
 
 function statusForEuAdapters(sources: SourceRegistry): DomainHealth {
-  const eu = sources.sources.filter((entry) => entry.jurisdiction_id === "eu");
+  const eu = sources.sources.filter((entry) => entry.jurisdiction_id === "EU");
   const active = eu.filter((entry) => entry.adapter_status === "ACTIVE").length;
   return {
     status: eu.length > 0 && active === eu.length ? "OK" : "DEGRADED",
@@ -165,13 +178,24 @@ export async function processPoliticalAutopilot(now = new Date(), forceSlot: "AM
       stale_indicators: 0
     },
   };
+  const programmeMonitor = await processStateProgrammeMonitor({ now, date: berlin.date, slot: berlin.slot });
+  const stateDeliveries = await writeStateDailyDeliveries({
+    jurisdictions: registry.jurisdictions,
+    cycles: electionCalendar.cycles as ElectionCycleRegistry["cycles"],
+    sources: sourceRegistry.sources,
+    date: berlin.date,
+    slot: berlin.slot,
+    createdAt: runAt,
+    programmeDeltas: programmeMonitor.deltas,
+    programmeIssues: programmeMonitor.issues,
+  });
   await Promise.all([
     uploadDropboxText(`${root}/REGISTRIES/political-jurisdictions.json`, `${JSON.stringify(registry, null, 2)}\n`),
     uploadDropboxText(`${root}/REGISTRIES/source-registry.json`, `${JSON.stringify(sourceRegistry, null, 2)}\n`),
     uploadDropboxText(`${root}/CONTROL/health.json`, `${JSON.stringify(health, null, 2)}\n`),
     uploadDropboxText(`${stateDailyRoot}/CONTROL/health.json`, `${JSON.stringify({ generated_at: runAt, domain: "STATES", ...domains.states }, null, 2)}\n`),
     uploadDropboxText(`${euDailyRoot}/CONTROL/health.json`, `${JSON.stringify({ generated_at: runAt, domain: "EU", ...domains.eu }, null, 2)}\n`),
-    uploadDropboxText(`${root}/LEDGERS/AUTOPILOT-RUN-${runId}.json`, `${JSON.stringify({ run_id: runId, run_at: runAt, election_calendar: electionCalendar, government: governmentResult, parliament: parliamentResult, observatory: observatoryResult, daily_digest: { status: "SCHEDULED_SEPARATELY_AT_DAY_END" }, overall_status: overallStatus }, null, 2)}\n`),
+    uploadDropboxText(`${root}/LEDGERS/AUTOPILOT-RUN-${runId}.json`, `${JSON.stringify({ run_id: runId, run_at: runAt, election_calendar: electionCalendar, government: governmentResult, parliament: parliamentResult, observatory: observatoryResult, programme_monitor: programmeMonitor, state_deliveries: stateDeliveries, daily_digest: { status: "SCHEDULED_SEPARATELY_AT_DAY_END" }, overall_status: overallStatus }, null, 2)}\n`),
   ]);
-  return { status: overallStatus, run_id: runId, election_calendar: electionCalendar, domains, government: governmentResult, parliament: parliamentResult, observatory: observatoryResult, daily_digest: { status: "SCHEDULED_SEPARATELY_AT_DAY_END" as const } };
+  return { status: overallStatus, run_id: runId, election_calendar: electionCalendar, domains, government: governmentResult, parliament: parliamentResult, observatory: observatoryResult, programme_monitor: programmeMonitor, state_deliveries: stateDeliveries, daily_digest: { status: "SCHEDULED_SEPARATELY_AT_DAY_END" as const } };
 }

@@ -1,4 +1,3 @@
-import { createHash } from "node:crypto";
 import { supabaseRest } from "@/lib/database/supabase-admin";
 import { parliamentaryCases, type CaseSource } from "@/data/cases";
 import { politicalSourceCatalog } from "@/lib/commitments/source-catalog";
@@ -6,6 +5,12 @@ import { fachanalyseSources } from "@/data/fachanalysen";
 import { stateTargetRegisters } from "@/data/state-target-registers";
 import { saxonyAnhaltElectionProgrammes } from "@/data/sachsen-anhalt-election-programmes";
 import releasePublicationSourceLinks from "@/data/generated/release-1/publication-source-links.json";
+import { directionLabels, evidenceLabels, getPublicImpactCases } from "@/lib/government/impact-cases";
+import { getGovernmentPublicData, sourceFunctionLabels } from "@/lib/government/public-data";
+import { listPublicEvidenceEvents } from "@/lib/observatory/public-data";
+import { isSafePublicSourceUrl, sourceDetailHrefForUrl, sourceSlugForCanonicalUrl } from "@/lib/sources/url";
+
+export { isSafePublicSourceUrl, sourceDetailHrefForUrl, sourceSlugForCanonicalUrl } from "@/lib/sources/url";
 
 export const sourceCategories = [
   "PARLIAMENTARY_RECORD",
@@ -72,6 +77,10 @@ export type PublicSourceUsage = {
   sourceRole: SourceRole;
   locations: string[];
   note: string | null;
+  caseHref?: string;
+  analysisSummary?: string | null;
+  analysisDirection?: string | null;
+  evidenceLevel?: string | null;
 };
 
 export type PublicSource = {
@@ -112,28 +121,6 @@ type ReleasedPublicationSourceLink = {
  * stable route key lets a reader see provenance first and deliberately choose
  * whether to leave the portal for the original publication.
  */
-export function sourceSlugForCanonicalUrl(value: string) {
-  const safeUrl = isSafePublicSourceUrl(value);
-  if (!safeUrl) return null;
-  return `quelle-${createHash("sha256").update(safeUrl).digest("hex").slice(0, 16)}`;
-}
-
-export function sourceDetailHrefForUrl(value: string) {
-  const slug = sourceSlugForCanonicalUrl(value);
-  return slug ? `/quellen/${slug}` : "/quellen";
-}
-
-export function isSafePublicSourceUrl(value: string) {
-  try {
-    const url = new URL(value);
-    if (url.protocol !== "https:" || url.username || url.password) return null;
-    if (["localhost", "127.0.0.1", "::1"].includes(url.hostname)) return null;
-    return url.toString();
-  } catch {
-    return null;
-  }
-}
-
 function readLocations(value: unknown) {
   if (!Array.isArray(value)) return [];
   return value.filter((entry): entry is string => typeof entry === "string" && entry.trim().length > 0).slice(0, 12);
@@ -206,7 +193,11 @@ function publishedStaticCaseSources(): StaticPublicSource[] {
         decisionDate: null,
         sourceRole: sourceRoleForCaseSource(source),
         locations: [],
-        note: source.note || null
+        note: source.note || null,
+        caseHref: `/entscheidungen/${item.slug}`,
+        analysisSummary: item.publicWorkingAct?.editorialSummary?.keyStatement ?? item.summary,
+        analysisDirection: item.publicWorkingAct?.overallPotential ?? null,
+        evidenceLevel: item.publicWorkingAct?.editorialSummary?.evidenceBoundary ?? item.analysisStatus,
       });
       grouped.set(slug, entry);
     }
@@ -369,6 +360,266 @@ function releasedFachakteSources(): StaticPublicSource[] {
   });
 }
 
+function institutionForUrl(value: string) {
+  const hostname = new URL(value).hostname.replace(/^www\./, "");
+  const known: Record<string, string> = {
+    "bundeswirtschaftsministerium.de": "Bundesministerium für Wirtschaft und Energie",
+    "bundesgesundheitsministerium.de": "Bundesministerium für Gesundheit",
+    "bundesfinanzministerium.de": "Bundesministerium der Finanzen",
+    "bundestag.de": "Deutscher Bundestag",
+    "search.dip.bundestag.de": "Deutscher Bundestag - DIP",
+    "bundesnetzagentur.de": "Bundesnetzagentur",
+    "bundesbank.de": "Deutsche Bundesbank",
+    "pubmed.ncbi.nlm.nih.gov": "PubMed / U.S. National Library of Medicine",
+  };
+  return known[hostname] ?? hostname;
+}
+
+const curatedSourceSummaries: Record<string, { title: string; summary: string }> = {
+  "https://www.bundeswirtschaftsministerium.de/Redaktion/DE/Pressemitteilungen/2026/05/20260513-gemeinsame-pressemitteilung-neue-weichenstellung-fuer-den-gebaeudebereich-bundeskabinett-beschliesst-gebaeudemodernisierungsgesetz.html": {
+    title: "Bundeskabinett beschließt Gebäudemodernisierungsgesetz",
+    summary: "Die gemeinsame amtliche Pressemitteilung dokumentiert den Kabinettsbeschluss zum Gebäudemodernisierungsgesetz und die von der Bundesregierung veröffentlichten Eckpunkte. Sie belegt Entscheidung und Regierungsbegründung, nicht den späteren Gebäudebestand oder eine eingetretene Emissionswirkung.",
+  },
+  "https://www.bundeswirtschaftsministerium.de/Redaktion/DE/Artikel/Service/Gesetzesvorhaben/20260513-entwurf-eines-gesetzes-zur-aenderung-des-gebaeudeenergiegesetzes.html": {
+    title: "Entwurf zur Änderung des Gebäudeenergiegesetzes",
+    summary: "Die amtliche Gesetzesvorhabenseite stellt den Regierungsentwurf zur Änderung des Gebäudeenergiegesetzes und dessen Dokumentfassung bereit. Sie trägt den Wortlaut des vorgeschlagenen Instruments; tatsächliche Investitionen, Wärmepfade und Emissionen müssen später getrennt beobachtet werden.",
+  },
+  "https://www.bundeswirtschaftsministerium.de/Redaktion/DE/Pressemitteilungen/2026/07/20260729-eeg-novelle-und-netzanschlusspaket.html": {
+    title: "EEG-Novelle und Netzanschlusspaket",
+    summary: "Die amtliche Mitteilung beschreibt das von der Bundesregierung veröffentlichte EEG- und Netzanschlusspaket. Sie dokumentiert Maßnahmen und Zielsetzung, liefert aber noch keinen Nachweis für schnellere Netzanschlüsse, zusätzlichen Ausbau oder vermiedene Engpässe.",
+  },
+  "https://search.dip.bundestag.de/api/v1/vorgang/338361?format=json": {
+    title: "DIP-Vorgang 338361",
+    summary: "Der maschinenlesbare DIP-Datensatz dokumentiert den parlamentarischen Vorgang 338361 mit amtlichen Identifikatoren, Dokumentbezügen und Verfahrensstand. Er ist eine Verfahrensquelle und kein Wirkungsnachweis.",
+  },
+  "https://search.dip.bundestag.de/api/v1/vorgang/338371?format=json": {
+    title: "DIP-Vorgang 338371",
+    summary: "Der maschinenlesbare DIP-Datensatz dokumentiert den eigenständigen parlamentarischen Vorgang 338371 mit amtlichen Identifikatoren, Dokumentbezügen und Verfahrensstand. Die getrennte Vorgangsnummer bleibt erhalten; ein gemeinsamer Themenkontext ist kein Identitätsbeweis.",
+  },
+  "https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/DE/2025/20250903_Versorgungsmonitoring.html": {
+    title: "Versorgungssicherheitsmonitoring Strom 2025",
+    summary: "Die Bundesnetzagentur fasst ihr Monitoring bis 2035 zusammen. Es untersucht ein Zielszenario und ein Szenario mit verzögerter Energiewende und beschreibt den Bedarf an steuerbarer Kapazität, Flexibilität, Speichern und Netzausbau. Die Ergebnisse sind szenarioabhängig und keine Prognose einer bereits eingetretenen Wirkung.",
+  },
+  "https://www.bundeswirtschaftsministerium.de/Redaktion/DE/Pressemitteilungen/2026/07/20260710-meilenstein-fuer-versorgungssicherheit.html": {
+    title: "Amtliche Mitteilung zum Strom-Versorgungssicherheits- und Kapazitätengesetz",
+    summary: "Die amtliche Mitteilung dokumentiert den von der Bundesregierung veröffentlichten gesetzlichen Rahmen für zusätzliche gesicherte Kapazität. Sie belegt Instrument und Regierungsziel, nicht den späteren Anlagenzubau oder eine schon nachgewiesene Versorgungssicherheitswirkung.",
+  },
+  "https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/Versorgungssicherheit/Monitoring_Strom/artikel.html": {
+    title: "Monitoring der Versorgungssicherheit Strom",
+    summary: "Die Fachseite der Bundesnetzagentur erläutert Auftrag und Ergebnisse des Versorgungssicherheitsmonitorings. Sie dient als institutionelle Grundlage für Szenarien zu Erzeugung, steuerbarer Leistung, Nachfrageflexibilität, Speichern und Netzen; ihre Annahmen bleiben für die Wirkungsanalyse sichtbar.",
+  },
+  "https://www.bundesgesundheitsministerium.de/ministerium/meldungen/bundeskabinett-beschliesst-notfallreform-22-04-2026": {
+    title: "Bundeskabinett beschließt Notfallreform",
+    summary: "Die amtliche Mitteilung dokumentiert den Kabinettsbeschluss und das Ziel einer bedarfsgerechten, qualitativ hochwertigen und wirtschaftlichen Notfallversorgung. Sie beschreibt die beabsichtigte Steuerung, belegt aber noch keine veränderten Wartezeiten, Behandlungsqualität oder Auslastung.",
+  },
+  "https://www.bundesgesundheitsministerium.de/service/gesetze-und-verordnungen/guv-21-lp/notfallreform/faq-notfallreform": {
+    title: "Fragen und Antworten zur Reform der Notfallversorgung",
+    summary: "Die FAQ des Bundesgesundheitsministeriums erläutern die vorgesehenen Zugangs- und Steuerungswege der Notfallreform. Sie sind eine amtliche Erläuterung des Instruments, keine unabhängige Evaluation seiner späteren Versorgungswirkung.",
+  },
+  "https://pubmed.ncbi.nlm.nih.gov/41645205/": {
+    title: "Systematischer Review zu weniger dringlicher Notfallnutzung",
+    summary: "Der systematische Review untersucht, wie Interventionen in Primärversorgung oder Notaufnahmen die Nutzung von Notfallversorgung durch weniger dringliche Patientengruppen beeinflussen. Er dient als Mechanismusbeleg; Übertragbarkeit und konkrete Ausgestaltung der deutschen Reform sind gesondert zu prüfen.",
+  },
+  "https://pubmed.ncbi.nlm.nih.gov/41793896/": {
+    title: "Systematischer Review zu Notaufnahme und integrierter Akut-Primärversorgung",
+    summary: "Der systematische Review vergleicht klinische Nutzen und Risiken von Notaufnahmen mit oder ohne räumlich angebundene, primärversorgungsgeführte Akutzentren. Er trägt die Mechanismusprüfung, ersetzt aber keine Evaluation der konkreten deutschen Umsetzung.",
+  },
+  "https://pubmed.ncbi.nlm.nih.gov/40739617/": {
+    title: "Studie zur Umsteuerung niedrig dringlicher Rettungsdienstfälle in Berlin",
+    summary: "Die multizentrische Berliner Befragungsstudie untersucht, ob niedrig dringliche Rettungsdienstpatientinnen und -patienten in die Primärversorgung umgesteuert werden könnten. Sie beleuchtet einen Teilmechanismus; beobachtete Eignung ist nicht mit realer Systemwirkung gleichzusetzen.",
+  },
+  "https://pubmed.ncbi.nlm.nih.gov/41351990/": {
+    title: "Umbrella Review zu Überbelegung von Notaufnahmen",
+    summary: "Der Umbrella Review bündelt Reviews zu Maßnahmen gegen Überbelegung in Notaufnahmen. Er hebt unter anderem Triage, Patientenfluss und Fast-Track-Strukturen hervor. Die zusammengefasste Evidenz stützt mögliche Mechanismen, nicht automatisch die Wirksamkeit eines einzelnen Gesetzes.",
+  },
+  "https://www.bundesgesundheitsministerium.de/ministerium/meldungen/warken-khag-bundesrat-27-03-2026": {
+    title: "Bundesrat billigt Krankenhausreformanpassungsgesetz",
+    summary: "Die amtliche Mitteilung dokumentiert die Billigung des Krankenhausreformanpassungsgesetzes durch den Bundesrat und die Regierungsbegründung der Anpassungen. Sie belegt den Rechts- und Verfahrensstand, nicht spätere Versorgungsqualität oder Standortwirkungen.",
+  },
+  "https://www.bundesgesundheitsministerium.de/presse/reden/krankenhausreformanpassungsgesetz-bundestag-06-03-26": {
+    title: "Regierungsrede zum Krankenhausreformanpassungsgesetz",
+    summary: "Die Rede dokumentiert die politische Begründung des Krankenhausreformanpassungsgesetzes im Bundestag. Sie ist eine amtliche Kommunikations- und Zielquelle, aber weder neutraler Mechanismusbeleg noch Evaluation.",
+  },
+  "https://pubmed.ncbi.nlm.nih.gov/28379871/": {
+    title: "Krankenhausfallzahl und Ergebnisse nach Pankreaschirurgie in Deutschland",
+    summary: "Die Studie untersucht den Zusammenhang zwischen Krankenhausfallzahl und innerklinischer Morbidität beziehungsweise Mortalität nach Pankreaschirurgie in Deutschland. Sie trägt die Evidenz zu Konzentrationsmechanismen, beweist aber nicht die Wirkung des KHAG als Gesamtinstrument.",
+  },
+  "https://pubmed.ncbi.nlm.nih.gov/40134472/": {
+    title: "Fallzahl, Patientenauswahl und Mortalität nach Pankreasresektion",
+    summary: "Die Studie analysiert neben Fallzahlen auch die Patientenauswahl als Prädiktor der Mortalität nach Pankreasresektion. Sie relativiert eine reine Mengendeutung und macht zusätzliche Struktur- und Selektionsfaktoren sichtbar.",
+  },
+  "https://pubmed.ncbi.nlm.nih.gov/30636674/": {
+    title: "Krankenhausfallzahl, Mortalität und Failure-to-rescue in der Ösophaguschirurgie",
+    summary: "Die Studie untersucht bei Ösophaguschirurgie den Zusammenhang von Krankenhausfallzahl, innerklinischer Mortalität und Failure-to-rescue. Sie stützt die Prüfung eines Volumen- und Strukturmechanismus; die Übertragung auf die gesamte Krankenhausreform bleibt begrenzt.",
+  },
+  "https://www.bundesfinanzministerium.de/Content/DE/FAQ/reform-der-privaten-altersvorsorge.html": {
+    title: "Fragen und Antworten zur Reform der geförderten privaten Altersvorsorge",
+    summary: "Die amtlichen FAQ erläutern vorgesehene Förderung, Produktlogik und Folgen der Reform für Bürgerinnen und Bürger. Sie dokumentieren Instrument und Regierungsdarstellung, nicht spätere Teilnahme, Kosten, Renditen oder Verteilungswirkungen.",
+  },
+  "https://www.bundestag.de/dokumente/textarchiv/2026/kw13-de-altersvorsorge-1156798": {
+    title: "Bundestag beschließt das Altersvorsorgedepot",
+    summary: "Die Bundestagsseite dokumentiert Beschluss, Abstimmungszeitpunkt und parlamentarische Dokumente zur Reform der privaten Altersvorsorge. Sie ist eine Verfahrens- und Entscheidungsquelle, keine Wirkungsbeobachtung.",
+  },
+  "https://www.bundesbank.de/de/presse/stellungnahmen/stellungnahme-der-deutschen-bundesbank-zur-alterssicherungskommission-vom-12-maerz-2026-991388": {
+    title: "Bundesbank-Stellungnahme zur Alterssicherungskommission",
+    summary: "Die Bundesbank legt Problemlagen, Wechselwirkungen und Reformoptionen der Alterssicherung dar. Die Stellungnahme wird für Mechanismen und Systemzusammenhänge herangezogen; sie ist keine Ex-post-Evaluation des Altersvorsorgereformgesetzes.",
+  },
+};
+
+function governmentImpactSources(): StaticPublicSource[] {
+  const grouped = new Map<string, StaticPublicSource>();
+  const roles = [
+    { key: "official_fact_sources", role: "DECISION_FACT", category: "GOVERNMENT_RECORD", label: "Amtliche Faktenquelle", summary: "Die Quelle dokumentiert den amtlichen Gegenstand, seinen Stand oder eine veröffentlichte Entscheidung. Sie ist für sich allein kein Wirkungsnachweis." },
+    { key: "mechanism_sources", role: "EX_ANTE_EVIDENCE", category: "SCIENTIFIC_SOURCE", label: "Quelle zum Wirkmechanismus", summary: "Die Quelle wird zur fachlichen Herleitung eines möglichen Wirkmechanismus herangezogen. Sie ersetzt weder die amtliche Faktenquelle noch eine spätere Kausalprüfung." },
+    { key: "post_decision_sources", role: "EX_POST_EVIDENCE", category: "OFFICIAL_EVALUATION", label: "Quelle nach der Entscheidung", summary: "Die Quelle dokumentiert eine spätere Beobachtung oder Evaluation. Beobachtung und kausale Zurechnung bleiben getrennt." },
+  ] as const;
+  for (const impact of getPublicImpactCases()) {
+    for (const role of roles) {
+      for (const url of impact[role.key]) {
+        const canonicalUrl = isSafePublicSourceUrl(url);
+        const slug = canonicalUrl ? sourceSlugForCanonicalUrl(canonicalUrl) : null;
+        if (!canonicalUrl || !slug) continue;
+        const institution = institutionForUrl(canonicalUrl);
+        const curated = curatedSourceSummaries[canonicalUrl];
+        const usage: PublicSourceUsage = {
+          caseSlug: impact.impact_case_id,
+          caseTitle: impact.title,
+          caseKind: "GOVERNMENT_IMPACT_CASE",
+          decisionDate: impact.analysis_as_of,
+          sourceRole: role.role,
+          locations: [],
+          note: role.summary,
+          caseHref: `/regierung/wirkungsanalysen/${encodeURIComponent(impact.impact_case_id)}`,
+          analysisSummary: impact.editorial_summary,
+          analysisDirection: directionLabels[impact.primary_direction] ?? impact.primary_direction,
+          evidenceLevel: evidenceLabels[impact.evidence_level] ?? impact.evidence_level,
+        };
+        const existing = grouped.get(slug);
+        if (existing) {
+          existing.usages.push(usage);
+          continue;
+        }
+        grouped.set(slug, {
+          id: `government-impact-${slug}`,
+          slug,
+          title: curated?.title ?? `${role.label}: ${institution}`,
+          institution,
+          category: role.category,
+          role: role.role,
+          documentType: /\.pdf(?:$|\?)/i.test(canonicalUrl) ? "Dokument (PDF)" : "Webseite, Datensatz oder Dokument",
+          canonicalUrl,
+          documentDate: null,
+          retrievedAt: `${impact.analysis_as_of}T12:00:00Z`,
+          versionLabel: `In Analyseversion ${impact.analysis_version} dokumentiert`,
+          sourceHash: null,
+          temporalClass: role.role === "EX_POST_EVIDENCE" ? "PUBLISHED_AFTER_DECISION" : "AVAILABLE_AT_DECISION_TIME",
+          abstract: curated?.summary ?? `${role.summary} Eine verifizierte inhaltliche Quellenzusammenfassung liegt für diese URL noch nicht vor; die Quelle bleibt deshalb nur mit ihrer nachgewiesenen Funktion sichtbar.`,
+          usages: [usage],
+        });
+      }
+    }
+  }
+  return [...grouped.values()];
+}
+
+function governmentFactSources(): StaticPublicSource[] {
+  const grouped = new Map<string, StaticPublicSource>();
+  for (const action of getGovernmentPublicData().actions) {
+    for (const source of action.source_refs) {
+      const canonicalUrl = isSafePublicSourceUrl(source.url);
+      const slug = canonicalUrl ? sourceSlugForCanonicalUrl(canonicalUrl) : null;
+      if (!canonicalUrl || !slug) continue;
+      const sourceFunction = sourceFunctionLabels[source.source_function] ?? source.source_function;
+      const usage: PublicSourceUsage = {
+        caseSlug: action.government_action_id,
+        caseTitle: action.title,
+        caseKind: "GOVERNMENT_FACT_RECORD",
+        decisionDate: action.decision_date,
+        sourceRole: "DECISION_FACT",
+        locations: [],
+        note: `Die Quelle trägt in der Faktenakte die Funktion „${sourceFunction}“. Aus ihr wird keine Wirkungsrichtung abgeleitet.`,
+        caseHref: `/regierung/akte/${encodeURIComponent(action.government_action_id)}`,
+        analysisSummary: action.has_woek_analysis ? "Für den verknüpften Wirkungsgegenstand liegt eine separat freigegebene WÖk-Analyse vor." : "Faktenakte. WÖk-Wirkungsanalyse noch nicht veröffentlicht.",
+        analysisDirection: null,
+        evidenceLevel: null,
+      };
+      const existing = grouped.get(slug);
+      if (existing) {
+        existing.usages.push(usage);
+        continue;
+      }
+      grouped.set(slug, {
+        id: `government-fact-${slug}`,
+        slug,
+        title: source.title,
+        institution: institutionForUrl(canonicalUrl),
+        category: /LEGAL|CONSOLIDATED/i.test(source.source_function) ? "OTHER_PRIMARY_SOURCE" : "GOVERNMENT_RECORD",
+        role: "DECISION_FACT",
+        documentType: sourceFunction,
+        canonicalUrl,
+        documentDate: source.published_at?.slice(0, 10) ?? null,
+        retrievedAt: source.retrieved_at,
+        versionLabel: `In Government Data ${action.data_version} geprüft`,
+        sourceHash: null,
+        temporalClass: "CURRENT_REFERENCE",
+        abstract: `Diese Originalquelle dokumentiert „${source.title}“ als ${sourceFunction.toLowerCase()}. Sie belegt den amtlichen Sachverhalt; eine eingetretene Wirkung oder WÖk-Richtung belegt sie nicht automatisch.`,
+        usages: [usage],
+      });
+    }
+  }
+  return [...grouped.values()];
+}
+
+function observatorySources(): StaticPublicSource[] {
+  const grouped = new Map<string, StaticPublicSource>();
+  for (const event of listPublicEvidenceEvents()) {
+    for (const reference of event.official_source_refs) {
+      const url = typeof reference === "string" ? reference : reference.url;
+      const canonicalUrl = isSafePublicSourceUrl(url);
+      const slug = canonicalUrl ? sourceSlugForCanonicalUrl(canonicalUrl) : null;
+      if (!canonicalUrl || !slug) continue;
+      const claim = typeof reference === "string" ? "Die Quelle trägt die veröffentlichte Beobachtung mit der im EvidenceEvent dokumentierten Quellenfunktion." : reference.claim;
+      const sourceName = typeof reference === "string" ? institutionForUrl(canonicalUrl) : reference.source;
+      const usage: PublicSourceUsage = {
+        caseSlug: event.evidence_event_id,
+        caseTitle: event.title,
+        caseKind: "EVIDENCE_EVENT",
+        decisionDate: event.observation_date.slice(0, 10),
+        sourceRole: "EX_POST_EVIDENCE",
+        locations: [],
+        note: `Zurechnung: ${event.attribution_status}. Der Datenpunkt verändert die WÖk-Bewertung nicht automatisch.`,
+        caseHref: `/wirkungsobservatorium#${encodeURIComponent(event.evidence_event_id)}`,
+        analysisSummary: event.what_changed_or_may_change,
+        analysisDirection: null,
+        evidenceLevel: typeof event.data_quality === "string" ? event.data_quality : `Messung: ${event.data_quality.measurement ?? "offen"}; Zurechnung: ${event.data_quality.causal_attribution ?? "offen"}`,
+      };
+      const existing = grouped.get(slug);
+      if (existing) {
+        existing.usages.push(usage);
+        continue;
+      }
+      grouped.set(slug, {
+        id: `observatory-${slug}`,
+        slug,
+        title: sourceName,
+        institution: sourceName,
+        category: /JRC|Copernicus|Drought Observatory/i.test(sourceName) ? "OTHER_PRIMARY_SOURCE" : "OFFICIAL_STATISTICS",
+        role: "EX_POST_EVIDENCE",
+        documentType: "Amtliche Mess-, Referenz- oder Kontextquelle",
+        canonicalUrl,
+        documentDate: event.publication_date.slice(0, 10),
+        retrievedAt: event.publication_date,
+        versionLabel: `EvidenceEvent ${event.evidence_event_id}`,
+        sourceHash: null,
+        temporalClass: "PUBLISHED_AFTER_DECISION",
+        abstract: `${claim} Die Quelle wird als Beobachtung bzw. Kontext geführt; aus zeitlicher Nähe allein folgt keine politische Zurechnung.`,
+        usages: [usage],
+      });
+    }
+  }
+  return [...grouped.values()];
+}
+
 function foundationalReferenceSources(): StaticPublicSource[] {
   return [
     {
@@ -502,9 +753,19 @@ function staticPublicSources() {
     ...stateTargetCatalogSources(),
     ...saxonyAnhaltProgrammeCatalogSources(),
     ...foundationalReferenceSources(),
-    ...releasedFachakteSources()
+    ...releasedFachakteSources(),
+    ...governmentFactSources(),
+    ...governmentImpactSources(),
+    ...observatorySources()
   ]) {
-    if (!deduplicated.has(source.slug)) deduplicated.set(source.slug, source);
+    const existing = deduplicated.get(source.slug);
+    if (!existing) {
+      deduplicated.set(source.slug, source);
+    } else {
+      existing.usages = [...existing.usages, ...source.usages].filter((usage, index, usages) =>
+        usages.findIndex((candidate) => (candidate.caseHref ?? candidate.caseSlug) === (usage.caseHref ?? usage.caseSlug) && candidate.sourceRole === usage.sourceRole) === index
+      );
+    }
   }
   return [...deduplicated.values()];
 }
@@ -533,7 +794,11 @@ async function usagesForSources(sourceIds: string[]) {
       decisionDate: item.decision_date,
       sourceRole: usage.source_role,
       locations: readLocations(usage.relevant_locations),
-      note: usage.use_note
+      note: usage.use_note,
+      caseHref: `/entscheidungen/${item.slug}`,
+      analysisSummary: null,
+      analysisDirection: null,
+      evidenceLevel: null,
     };
     result.set(usage.public_source_id, [...(result.get(usage.public_source_id) ?? []), publicUsage]);
   }
