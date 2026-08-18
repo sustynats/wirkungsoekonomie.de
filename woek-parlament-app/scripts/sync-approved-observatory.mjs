@@ -4,6 +4,11 @@ import path from "node:path";
 import Ajv2020 from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
 
+if (process.env.WOEK_AUTOPILOT_RUNTIME_MODE !== "NORMAL") {
+  console.log("Observatory sync: bootstrap/remediation mode; the audited repository snapshot is preserved and Dropbox is not read.");
+  process.exit(0);
+}
+
 const appKey = process.env.DROPBOX_APP_KEY;
 const appSecret = process.env.DROPBOX_APP_SECRET;
 const refreshToken = process.env.DROPBOX_REFRESH_TOKEN;

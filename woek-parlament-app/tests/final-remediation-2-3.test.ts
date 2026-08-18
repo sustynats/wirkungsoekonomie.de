@@ -111,3 +111,15 @@ test("the complete Recommendation 2.3 schema is represented by the public UI", (
     "fallback_option", "knowledge_cutoff_date", "hindsight_limitations", "recommendation_version",
   ]) assert.match(source, new RegExp(field), field);
 });
+
+test("bootstrap and remediation builds never read mutable Dropbox handoffs", () => {
+  for (const file of [
+    "scripts/sync-approved-government-impact-cases.mjs",
+    "scripts/sync-approved-parliament-daily.mjs",
+    "scripts/sync-approved-observatory.mjs",
+  ]) {
+    const source = readFileSync(file, "utf8");
+    assert.match(source, /WOEK_AUTOPILOT_RUNTIME_MODE !== "NORMAL"/, file);
+    assert.ok(source.indexOf("WOEK_AUTOPILOT_RUNTIME_MODE") < source.indexOf("DROPBOX_APP_KEY"), file);
+  }
+});

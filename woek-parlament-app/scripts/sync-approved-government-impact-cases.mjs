@@ -3,6 +3,11 @@ import path from "node:path";
 import Ajv2020 from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
 
+if (process.env.WOEK_AUTOPILOT_RUNTIME_MODE !== "NORMAL") {
+  console.log("Government impact sync: bootstrap/remediation mode; the audited repository snapshot is preserved and Dropbox is not read.");
+  process.exit(0);
+}
+
 const root = process.cwd();
 const dataRoot = path.join(root, "data", "government", "impact-cases");
 const gates = JSON.parse(await readFile(path.join(dataRoot, "deployment-gates.json"), "utf8"));
