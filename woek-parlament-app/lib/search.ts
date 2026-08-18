@@ -1,5 +1,6 @@
 import type { CaseKind, EditorialStatus, Materiality, ParliamentaryCase } from "@/data/cases";
 import type { Fachanalyse } from "@/data/fachanalysen";
+import type { OverviewAssessmentData } from "@/lib/presentation/overview-assessment";
 
 export type SearchTypeFilter = "ALL" | CaseKind | "FACHANALYSE" | "REGIERUNGSANALYSE";
 export type SearchEditorialFilter = "ALL" | EditorialStatus;
@@ -23,7 +24,7 @@ export type SearchableCase = Pick<ParliamentaryCase,
   "slug" | "title" | "plainTitle" | "kind" | "editorialStatus" | "materiality" |
   "parliamentaryStatus" | "statusVerification" | "summary" | "whatIsDecided" |
   "intendedGoal" | "analysisStatus" | "impactPath" | "affectedGroups" | "questions" | "sources"
->;
+> & { assessment?: OverviewAssessmentData | null };
 
 export type SearchableFachanalyse = Pick<Fachanalyse, "slug" | "title" | "subtitle" | "type" | "status" | "scope" | "summary" | "focusAreas">;
 export type SearchableGovernmentImpact = {
@@ -32,6 +33,7 @@ export type SearchableGovernmentImpact = {
   summary: string;
   analysisMode: "IMPACT_POTENTIAL_EX_ANTE" | "IMPACT_REALITY_CHECK";
   materiality: string;
+  assessment: OverviewAssessmentData;
   terms: string[];
 };
 

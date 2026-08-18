@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FullAnalysisText } from "@/app/components/FullAnalysisText";
+import { OverviewAssessment } from "@/app/components/OverviewAssessment";
 import { directionLabels, evidenceLabels, realityCheckLabels } from "@/lib/government/impact-cases";
 import type { EuImpactRecord } from "@/lib/eu/impact-cases";
 import { sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
@@ -9,13 +10,15 @@ export function EuImpactCase({ record, compact = false }: { record: EuImpactReco
     <header>
       <p className="eyebrow">EU-WÖk-Wirkungsanalyse · {record.analysis_mode.includes("REALITY") ? "mit Beobachtungsstufe" : "Ex ante"}</p>
       <h2 id={`eu-impact-${record.impact_case_id}`}>{record.title}</h2>
-      <p className="lead">{record.editorial_summary}</p>
-      <p className="government-key-finding"><strong>Wichtigster Befund:</strong> {record.key_finding}</p>
-      <div className="government-impact-axis" aria-label="Wirkungsrichtung und Evidenz">
-        <span className={`impact-direction impact-direction--${record.primary_direction.toLowerCase()}`}><strong>Richtung:</strong> {directionLabels[record.primary_direction]}</span>
-        <span><strong>Evidenz:</strong> {evidenceLabels[record.evidence_level]}</span>
-        <span><strong>Reality-Check:</strong> {realityCheckLabels[record.reality_check_status] ?? record.reality_check_status}</span>
-      </div>
+      <OverviewAssessment compact={compact} assessment={{
+        assessmentLabel: record.key_finding,
+        impactCoreSummary: record.impact_core_summary,
+        editorialSummary: record.editorial_summary,
+        keyFinding: record.key_finding,
+        directionLabel: directionLabels[record.primary_direction],
+        evidenceSummary: evidenceLabels[record.evidence_level],
+        realityCheckSummary: realityCheckLabels[record.reality_check_status] ?? record.reality_check_status,
+      }} />
       <dl className="government-impact-summary">
         <div><dt>Wirkungskern</dt><dd>{record.impact_core_summary}</dd></div>
         <div><dt>Kompetenz</dt><dd>{record.competence_scope}</dd></div>

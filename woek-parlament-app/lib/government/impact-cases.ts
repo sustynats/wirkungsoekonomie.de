@@ -184,7 +184,7 @@ export function publicRecordFromFullSchema(record: WoeKImpactCase): PublicGovern
     },
     impact_core_summary: String(record.impact_summary.central_lever),
     editorial_summary: String(record.impact_summary.public_summary),
-    key_finding: String((record as WoeKImpactCase & { key_finding?: string }).key_finding ?? ""),
+    key_finding: String((record as WoeKImpactCase & { key_finding?: string }).key_finding ?? record.impact_summary.main_risk_or_tradeoff),
     public_analysis_depth: record.scope.competence_note ? "FULL_STRUCTURED" : "LIMITED_FACH_RECORD",
     missing_structured_fields: record.scope.competence_note ? [] : ["competence_review"],
     competence_review_status: record.scope.competence_note ? "REVIEWED_CONCRETE" : "NOT_STRUCTURED",

@@ -31,7 +31,7 @@ function publicFields(record) {
     ["/schema_validation", record.schema_validation], ["/schema_id", record.schema_id], ["/analysis_mode", record.analysis_mode],
     ["/publication_analysis_status", record.publication_analysis_status], ["/publication_status", record.publication_status],
     ["/analysis_version", record.analysis_version], ["/analysis_as_of", record.analysis_as_of], ["/materiality", record.materiality],
-    ["/overall_character", record.overall_character], ["/primary_direction", record.primary_direction], ["/evidence_level", record.evidence_level],
+    ["/overall_character", record.overall_character], ["/primary_direction", record.primary_direction], ["/overview_assessment_label", record.overview_assessment_label], ["/evidence_level", record.evidence_level],
     ["/evidence_summary_text", record.evidence_summary_text], ["/implementation_status", record.implementation_status],
     ["/impact_summary/public_summary", record.impact_summary.public_summary], ["/impact_summary/central_lever", record.impact_summary.central_lever],
     ["/impact_summary/strongest_positive_potential", record.impact_summary.strongest_positive_potential],

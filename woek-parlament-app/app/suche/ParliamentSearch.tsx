@@ -5,6 +5,7 @@ import { useMemo, useState } from "react";
 import { humanizeSystemValue, materialityLabel } from "@/lib/presentation/labels";
 import { defaultSearchFilters, searchFachanalysen, searchGovernmentImpacts, searchPublicCases, type ParliamentSearchFilters, type SearchableCase, type SearchableFachanalyse, type SearchableGovernmentImpact } from "@/lib/search";
 import { wirkungsraumBookmarkUrl } from "@/lib/wirkungsraum";
+import { OverviewAssessment } from "@/app/components/OverviewAssessment";
 
 const TYPE_LABELS: Record<ParliamentSearchFilters["type"], string> = {
   ALL: "Alle Inhaltstypen",
@@ -96,10 +97,10 @@ function GovernmentImpactSearchResult({ item }: { item: SearchableGovernmentImpa
   return (
     <article>
       <div>
-        <p className="eyebrow">Regierungs-Wirkungsanalyse · {item.analysisMode === "IMPACT_REALITY_CHECK" ? "Reality-Check" : "Ex ante"}</p>
+        <p className="eyebrow">Regierungs-Wirkungsanalyse</p>
         <h2><Link href={path}>{item.title}</Link></h2>
-        <p>{item.summary}</p>
-        <dl><div><dt>Prüfstand</dt><dd>Fachlich freigegebener WÖkImpactCase</dd></div><div><dt>Materialität</dt><dd>{item.materiality}</dd></div></dl>
+        <OverviewAssessment assessment={item.assessment} compact />
+        <dl><div><dt>Analysephase</dt><dd>{item.analysisMode === "IMPACT_REALITY_CHECK" ? "Reality-Check" : "Ex ante"}</dd></div><div><dt>Prüfstand</dt><dd>Fachlich freigegebener WÖkImpactCase</dd></div><div><dt>Materialität</dt><dd>{item.materiality}</dd></div></dl>
       </div>
       <div className="search-result-actions">
         <Link className="text-link" href={path}>Wirkungsanalyse öffnen <span aria-hidden="true">→</span></Link>
@@ -118,10 +119,10 @@ function CaseSearchResult({ item }: { item: SearchableCase }) {
   return (
     <article>
       <div>
-        <p className="eyebrow">{TYPE_LABELS[item.kind]} · {materialityLabel(item.materiality)}</p>
+        <p className="eyebrow">{TYPE_LABELS[item.kind]}</p>
         <h2><Link href={path}>{item.title}</Link></h2>
-        <p>{item.summary}</p>
-        <dl><div><dt>Parlamentarischer Status</dt><dd>{humanizeSystemValue(item.parliamentaryStatus)}</dd></div><div><dt>Stand der WÖk-Analyse</dt><dd>{EDITORIAL_LABELS[item.editorialStatus]}</dd></div><div><dt>Quellenstatus</dt><dd>{SOURCE_LABELS[item.statusVerification]}</dd></div></dl>
+        {item.assessment ? <OverviewAssessment assessment={item.assessment} compact /> : <p>{item.summary}</p>}
+        <dl><div><dt>Parlamentarischer Status</dt><dd>{humanizeSystemValue(item.parliamentaryStatus)}</dd></div><div><dt>Stand der WÖk-Analyse</dt><dd>{EDITORIAL_LABELS[item.editorialStatus]}</dd></div><div><dt>Prüfrelevanz</dt><dd>{materialityLabel(item.materiality)}</dd></div><div><dt>Quellenstatus</dt><dd>{SOURCE_LABELS[item.statusVerification]}</dd></div></dl>
       </div>
       <div className="search-result-actions">
         <Link className="text-link" href={path}>Öffnen <span aria-hidden="true">→</span></Link>

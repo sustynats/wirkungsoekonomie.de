@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FullAnalysisText } from "@/app/components/FullAnalysisText";
+import { OverviewAssessment } from "@/app/components/OverviewAssessment";
 import { RecommendationSection } from "@/app/components/recommendations/RecommendationSection";
 import {
   boundaryLabels,
@@ -146,23 +147,21 @@ function FullSchemaDetails({ record }: { record: WoeKImpactCase }) {
 export function GovernmentImpactCase({ record, compact = false }: { record: PublicGovernmentImpactRecord; compact?: boolean }) {
   const fullRecord = fullSchemaRecord(record);
   const summary = record.impact_summary;
-  const lead = record.editorial_summary;
   return (
     <article className="government-impact-case" aria-labelledby={`impact-${record.impact_case_id}`}>
       <header>
         <p className="eyebrow">WÖk-Wirkungsanalyse · {record.analysis_mode === "IMPACT_REALITY_CHECK" ? "mit Reality-Check-Stufe" : "Ex ante"}</p>
         <h2 id={`impact-${record.impact_case_id}`}>{record.title}</h2>
-        <p className="government-overview-assessment"><strong>Zusammenfassende Einordnung:</strong> {record.overview_assessment_label}</p>
-        <p className="lead">{lead}</p>
-        {record.impact_summary.public_summary && record.impact_summary.public_summary !== lead && <p><strong>Fachliche Original-Kurzfassung:</strong> {record.impact_summary.public_summary}</p>}
-        {record.key_finding && <p className="government-key-finding"><strong>Wichtigster Befund:</strong> {record.key_finding}</p>}
-        <div className="government-impact-axis" aria-label="Wirkungsrichtung und Evidenz">
-          <span className={`impact-direction impact-direction--${record.primary_direction.toLowerCase()}`}><strong>Richtung:</strong> {directionLabels[record.primary_direction]}</span>
-          <span><strong>Evidenz:</strong> {evidenceLabels[record.evidence_level]}</span>
-          <span><strong>Reality-Check:</strong> {realityCheckLabels[record.reality_check_status] ?? record.reality_check_status}</span>
-        </div>
-        <p><strong>Evidenz kurz erklärt:</strong> {record.evidence_summary_text}</p>
-        <p><strong>Reality-Check kurz erklärt:</strong> {record.reality_check_summary}</p>
+        <OverviewAssessment compact={compact} assessment={{
+          assessmentLabel: record.overview_assessment_label,
+          impactCoreSummary: record.impact_core_summary,
+          editorialSummary: record.editorial_summary,
+          keyFinding: record.key_finding,
+          directionLabel: directionLabels[record.primary_direction],
+          evidenceSummary: `${evidenceLabels[record.evidence_level]}. ${record.evidence_summary_text}`,
+          realityCheckSummary: `${realityCheckLabels[record.reality_check_status] ?? record.reality_check_status}. ${record.reality_check_summary}`,
+        }} />
+        {record.impact_summary.public_summary && record.impact_summary.public_summary !== record.editorial_summary && <p><strong>Fachliche Original-Kurzfassung:</strong> {record.impact_summary.public_summary}</p>}
         {record.public_analysis_depth === "LIMITED_FACH_RECORD" && <div className="open-state"><span aria-hidden="true">i</span><div><strong>Begrenzte Fachübergabe - keine strukturierte Vollanalyse.</strong><p>Die vollständige Fachakte bleibt unverändert zugänglich. Noch nicht maschinenlesbar strukturiert: {record.missing_structured_fields.join(", ")}.</p></div></div>}
         <dl className="government-impact-summary">
           <div><dt>Wirkungskern</dt><dd>{record.impact_core_summary}</dd></div>

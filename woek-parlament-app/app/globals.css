@@ -449,10 +449,10 @@ h1, h2, h3, h4 { text-wrap: balance; }
 .section-inline-action .button { background: var(--paper); }
 .card-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
 .case-card { display: flex; flex-direction: column; padding: 1.3rem; border: 1px solid var(--line); border-radius: var(--r-card); background: var(--paper); box-shadow: 0 .5rem 1.25rem rgba(16, 27, 45, .04); }
-.case-card h3 { margin: 1rem 0 .75rem; }
+.case-card h3 { margin: 0 0 .75rem; }
 .case-card h3 a { text-decoration: none; }
 .case-card > p { color: var(--muted); }
-.case-card-topline { display: flex; align-items: baseline; justify-content: space-between; gap: .5rem; }
+.case-card-topline { display: flex; align-items: baseline; justify-content: space-between; gap: .5rem; margin-top: 1rem; padding-top: .85rem; border-top: 1px solid var(--line); }
 .status-pill { display: inline-block; padding: .25rem .55rem; border: 1px solid #d6c79f; border-radius: 999px; color: #654f1d; background: #fbf5e5; font-size: var(--t-micro); font-weight: 700; letter-spacing: .025em; }
 .chip { display: inline-flex; align-items: center; min-height: 1.8rem; padding: .25rem .55rem; border-radius: 999px; font-size: var(--t-micro); font-weight: 700; letter-spacing: .025em; line-height: 1.2; }
 .chip--depth { border: 1px solid #d6c79f; color: #654f1d; background: #fbf5e5; }
@@ -839,7 +839,7 @@ h1, h2, h3, h4 { text-wrap: balance; }
 .member-vote-list dd { margin: .15rem 0 0; font-size: .85rem; line-height: 1.35; }
 
 .breadcrumb { display: flex; gap: .5rem; margin-bottom: 1.8rem; color: var(--muted); font-size: .9rem; }
-.decision-header { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(250px, .65fr); gap: 2rem; align-items: end; padding-bottom: 2.5rem; border-bottom: 1px solid var(--line); }
+.decision-header { display: grid; grid-template-columns: 1fr; gap: 2rem; align-items: end; padding-bottom: 2.5rem; border-bottom: 1px solid var(--line); }
 .decision-header h1 { max-width: 19ch; margin-bottom: .8rem; font-size: var(--t-h1); }
 .official-title { max-width: 76ch; margin: 0 0 1rem; color: var(--muted); font-size: .92rem; line-height: 1.45; }
 .case-type-mark { display: inline-flex; width: fit-content; align-items: center; gap: .42rem; min-height: 1.85rem; margin: 0 0 .85rem; padding: .27rem .55rem; border: 1px solid var(--status-border); border-radius: 999px; color: var(--status-text); background: var(--status-bg); font-size: .76rem; font-weight: 800; letter-spacing: .025em; line-height: 1; }
@@ -1296,6 +1296,52 @@ h1, h2, h3, h4 { text-wrap: balance; }
 .source-overview-links .inline-source-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem 1rem; margin-top: 1rem; }
 .source-overview-links .inline-source-links li { padding: .7rem 0; border-top: 1px solid var(--line); }
 
+/* P0: Die zusammenfassende WÖk-Bewertung ist eine eigene, vor den
+   Prozessmetadaten liegende Informationsebene. Richtung, Evidenz und
+   Reality-Check bleiben dabei bewusst getrennte Achsen. */
+.overview-assessment {
+  display: grid;
+  gap: var(--abstand-s);
+  width: 100%;
+  margin: var(--abstand-l) 0;
+  padding: clamp(1.15rem, 2.5vw, 1.75rem);
+  border: var(--rahmen-staerke) solid var(--farbe-linie);
+  border-left: .35rem solid var(--farbe-aktion-zweit);
+  border-radius: var(--radius-klein);
+  background: linear-gradient(135deg, var(--farbe-flaeche-warm), var(--farbe-flaeche-karte));
+}
+.overview-assessment > .eyebrow { margin: 0; color: var(--farbe-text-link); }
+.overview-assessment .overview-assessment-label {
+  max-width: 52ch;
+  margin: 0;
+  color: var(--farbe-flaeche-buehne);
+  font: var(--schriftstaerke-fett) clamp(1.25rem, 2vw, 1.65rem)/1.28 var(--schrift-display);
+}
+.overview-assessment .overview-assessment-core,
+.overview-assessment .overview-assessment-summary,
+.overview-assessment .overview-assessment-finding { max-width: 74ch; margin: 0; color: var(--farbe-text); line-height: 1.55; }
+.overview-assessment .overview-assessment-summary { color: var(--farbe-text-sekundaer); }
+.overview-assessment .overview-assessment-finding { padding: var(--abstand-s) var(--abstand-m); border-left: .2rem solid var(--farbe-aktion); background: var(--farbe-flaeche-karte); }
+.overview-assessment-axis { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; margin: var(--abstand-xs) 0 0; border: 1px solid var(--farbe-linie); background: var(--farbe-linie); }
+.overview-assessment-axis > div { padding: var(--abstand-s) var(--abstand-m); background: var(--farbe-flaeche-karte); }
+.overview-assessment-axis dt { color: var(--farbe-text-sekundaer); font-size: var(--groesse-label); font-weight: var(--schriftstaerke-fett); letter-spacing: .06em; text-transform: uppercase; }
+.overview-assessment-axis dd { margin: var(--abstand-2xs) 0 0; color: var(--farbe-text); font-size: var(--groesse-klein); line-height: 1.45; }
+.overview-assessment--compact { gap: var(--abstand-xs); margin: 0; padding: var(--abstand-m); }
+.overview-assessment--compact .overview-assessment-label { font-size: 1.15rem; }
+.overview-assessment--compact .overview-assessment-core,
+.overview-assessment--compact .overview-assessment-summary,
+.overview-assessment--compact .overview-assessment-finding,
+.overview-assessment--compact .overview-assessment-axis dd { font-size: .9rem; }
+.overview-assessment--compact .overview-assessment-axis { grid-template-columns: 1fr; }
+.decision-page > .overview-assessment { margin-block: 2rem; }
+.decision-process-meta { display: grid; grid-template-columns: minmax(12rem, .35fr) minmax(0, 1fr); gap: 1.25rem; align-items: start; margin: 2rem 0; padding-top: 1.25rem; border-top: 1px solid var(--line); }
+.decision-process-meta > div > p { margin: .6rem 0 0; color: var(--muted); font-size: .85rem; font-weight: 750; }
+.decision-process-meta .decision-status { width: 100%; }
+.search-result-list .overview-assessment { margin: .85rem 0 0; }
+.source-register .overview-assessment { margin-bottom: .85rem; }
+.source-register .overview-assessment p { color: var(--farbe-text); }
+.source-register .overview-assessment .overview-assessment-summary { color: var(--farbe-text-sekundaer); }
+
 .site-footer { margin-top: clamp(2rem, 7vw, 6rem); padding: clamp(2.75rem, 6vw, 4.5rem) 0; color: #e7edf5; background: var(--navy-deep); }
 .footer-signup { display: grid; grid-template-columns: minmax(250px, .9fr) minmax(320px, .8fr); gap: clamp(1.25rem, 5vw, 4rem); align-items: center; margin-bottom: clamp(2rem, 4vw, 3.25rem); padding-bottom: clamp(2rem, 4vw, 3.25rem); border-bottom: 1px solid rgba(231, 237, 245, .24); }
 .footer-signup .eyebrow { margin-bottom: .4rem; }
@@ -1345,7 +1391,7 @@ h1, h2, h3, h4 { text-wrap: balance; }
   .portal-nav--mobile > details > div { position: absolute; z-index: 30; display: grid; width: min(20rem, calc(100vw - 1.25rem)); margin-top: .35rem; padding: .45rem; border: 1px solid var(--line); border-radius: var(--r-card); background: var(--paper); box-shadow: 0 .8rem 2rem rgba(11, 16, 32, .16); }
   .portal-nav--mobile > details > div a { display: flex; min-height: 44px; align-items: center; padding: .55rem .65rem; color: var(--navy); font-weight: 750; text-decoration: none; }
   .portal-nav--mobile > details > div a:hover, .portal-nav--mobile > details > div a:focus-visible { background: var(--gold-soft); }
-  .quick-orientation, .impact-architecture, .decision-header, .sixty-second, .decision-view-nav, .assessment-explainer, .working-act, .decision-grid, .footer-grid, .footer-signup, .trust-section, .trust-statement, .trust-workflow, .reference-framework-intro, .mandate-principle, .mandate-overview, .mandate-reference, .member-rules, .source-detail-header, .source-detail-grid, .radar-signup, .subscription-boundary, .updates-section, .analysis-stage, .impact-review-map, .impact-profile-radar, .glossary-basics, .glossary-page-list, .review-domain-grid, .review-protection-grid, .review-detail-columns, .commitment-register-overview, .commitment-list article, .plain-language-callout, .two-perspective-grid, .observation-grid, .evidence-map-grid, .two-column-list, .learning-points, .analysis-facts, .source-overview-links .inline-source-links, .reference-field-grid, .full-analysis-text > header, .full-review > header, .complete-publication-source > header, .state-programme-evidence, .state-programme-at-a-glance, .decision-readiness-gate > header { grid-template-columns: 1fr; }
+  .quick-orientation, .impact-architecture, .decision-header, .decision-process-meta, .sixty-second, .decision-view-nav, .assessment-explainer, .working-act, .decision-grid, .footer-grid, .footer-signup, .trust-section, .trust-statement, .trust-workflow, .reference-framework-intro, .mandate-principle, .mandate-overview, .mandate-reference, .member-rules, .source-detail-header, .source-detail-grid, .radar-signup, .subscription-boundary, .updates-section, .analysis-stage, .impact-review-map, .impact-profile-radar, .glossary-basics, .glossary-page-list, .review-domain-grid, .review-protection-grid, .review-detail-columns, .commitment-register-overview, .commitment-list article, .plain-language-callout, .two-perspective-grid, .observation-grid, .evidence-map-grid, .two-column-list, .learning-points, .analysis-facts, .source-overview-links .inline-source-links, .reference-field-grid, .full-analysis-text > header, .full-review > header, .complete-publication-source > header, .state-programme-evidence, .state-programme-at-a-glance, .decision-readiness-gate > header { grid-template-columns: 1fr; }
   .hero-shell { width: min(var(--wrap), calc(100% - 1.25rem)); margin-top: .65rem; }
   .hero-inner { padding: clamp(1.35rem, 6vw, 2rem); }
   .hero-copy, .hero-copy h1, .hero .lead, .hero-education { width: 100%; max-width: 100%; }
@@ -1386,6 +1432,7 @@ h1, h2, h3, h4 { text-wrap: balance; }
   .analysis-detail-list summary small { grid-column: 2; text-align: left; }
   .calculation-requirements div { grid-template-columns: 1fr; gap: .25rem; }
   .government-impact-summary, .government-impact-grid, .government-reference-groups, .government-source-groups, .government-impact-axis { grid-template-columns: 1fr; }
+  .overview-assessment-axis { grid-template-columns: 1fr; }
   .government-impact-paths summary { grid-template-columns: 1fr; }
   .government-impact-path-detail dl > div { grid-template-columns: 1fr; gap: var(--abstand-2xs); }
 }

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { jurisdictionById } from "@/lib/parliament/jurisdictions";
 import { saxonyAnhaltElectionProgrammes } from "@/data/sachsen-anhalt-election-programmes";
 import { allPublicationSourceRecords } from "@/lib/publication/fachakten";
+import { OverviewAssessment } from "@/app/components/OverviewAssessment";
 
 const saxonyAnhalt = jurisdictionById("sachsen-anhalt");
 
@@ -86,9 +87,17 @@ export default function SaxonyAnhaltPage() {
             const count = typeof overview.commitment_count === "number" ? overview.commitment_count : null;
             const summary = typeof overview.summary === "string" ? overview.summary : "Die vollständige Wirkungsakte weist Wirkungspotenziale, Risiken, Bedingungen, Schutzfragen und Datenlücken der dokumentierten Zusagen aus.";
             return <article key={programme.sourceKey}>
-              <p className="source-register-label">{programme.party} · Originalprogramm</p>
               <h3>{programme.title}</h3>
-              <p>{summary}</p>
+              {review ? <OverviewAssessment compact assessment={{
+                assessmentLabel: "Keine Programm-Gesamtnote - Bewertung auf Ebene der einzelnen Zusage.",
+                impactCoreSummary: `${programme.party}: ${count?.toLocaleString("de-DE") ?? "die dokumentierten"} Zusageeinheiten werden als getrennte Wirkungsgegenstände mit ihren jeweiligen Zuständigkeiten und Wirkpfaden geprüft.`,
+                editorialSummary: summary,
+                keyFinding: `Das Programm von ${programme.party} wird nicht zu einer Einheitsrichtung oder Parteipunktzahl verdichtet.`,
+                directionLabel: "Keine einheitliche Programmrichtung ausgewiesen; Richtungen bleiben an einzelne Zusagen gebunden.",
+                evidenceSummary: "Originalprogramm und quellengestützte Wirkungsakte; Evidenzgrenzen werden je Zusage ausgewiesen.",
+                realityCheckSummary: "Ex-ante-Programmanalyse; beobachtete Wirkung ist auf dieser Übersicht noch nicht Gegenstand der Bewertung.",
+              }} /> : <div className="open-state"><span aria-hidden="true">i</span><div><strong>Faktenakte</strong><p>WÖk-Wirkungsanalyse noch nicht veröffentlicht.</p></div></div>}
+              <p className="source-register-label">{programme.party} · Originalprogramm</p>
               <p className="commitment-count"><strong>{count?.toLocaleString("de-DE") ?? "–"} Zusageeinheiten</strong> · vollständige Fachakte und Zusageregister</p>
               <Link className="text-link" href={`/laender/sachsen-anhalt/wahlprogramme/${programme.sourceKey}`}>Wirkungsakte ansehen <span aria-hidden="true">→</span></Link>
             </article>;

@@ -10,8 +10,10 @@ import { CaseTypeMark } from "@/app/components/CaseTypeMark";
 import { FullReviewRecord } from "@/app/components/FullReviewRecord";
 import { CompletePublicationSource } from "@/app/components/CompletePublicationSource";
 import { DecisionReadinessGate } from "@/app/components/DecisionReadinessGate";
+import { OverviewAssessment } from "@/app/components/OverviewAssessment";
 import { getCase, formatDate, materialityLabel } from "@/lib/cases";
 import { caseKindLabel, humanizeSystemValue, verificationLabel } from "@/lib/presentation/labels";
+import { parliamentaryOverviewAssessment } from "@/lib/presentation/overview-assessment";
 import { sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
 import { getCasePublicationSource } from "@/lib/publication/fachakten";
 
@@ -75,17 +77,24 @@ export default async function DecisionPage({ params, searchParams }: { params: P
   const workingActView = activeView === "wirkprofil" || activeView === "wirkpfade" || activeView === "berechnungen" ? activeView : "ueberblick";
   const normativeMapping = item.publicAssessment?.normativeMapping ?? item.publicWorkingAct?.normativeMapping;
   const statuses = reviewStatuses(item);
+  const overviewAssessment = parliamentaryOverviewAssessment(item);
   const publicationCaseId = typeof item.publicWorkingAct?.fullReview?.result.case_id === "string" ? item.publicWorkingAct.fullReview.result.case_id : "";
   const completePublication = activeView === "fachakte" && publicationCaseId ? await getCasePublicationSource(publicationCaseId) : null;
   return (
     <div className="shell decision-page">
       <nav className="breadcrumb" aria-label="Pfad"><Link href="/entscheidungen">Wirkungschecks</Link><span aria-hidden="true">/</span><span>{caseKindLabel(item.kind)}</span></nav>
       <header className="decision-header">
-        <div><CaseTypeMark kind={item.kind} maturity={item.publicWorkingAct?.maturity} /><h1>{item.plainTitle}</h1>{item.title !== item.plainTitle && <p className="official-title"><strong>Amtlicher Titel:</strong> {item.title}</p>}<p className="lead">{item.summary}</p><BookmarkLink title={item.plainTitle} path={`/entscheidungen/${item.slug}`} /></div>
-        <aside className="decision-status"><p>Status dieser Wirkungsakte</p><strong>{humanizeSystemValue(item.parliamentaryStatus)}</strong><dl><div><dt>WÖk-Reifestufe</dt><dd>{statuses.maturity}</dd></div><div><dt>Evidenzstatus</dt><dd>{statuses.evidence}</dd></div><div><dt>Attributionsstatus</dt><dd>{statuses.attribution}</dd></div><div><dt>Prüfrelevanz</dt><dd>{materialityLabel(item.materiality)}</dd></div><div><dt>Quellenstatus</dt><dd>{verificationLabel(item.statusVerification)}</dd></div><div><dt>Letzte Aktualisierung</dt><dd>{formatDate(item.lastUpdated)}</dd></div></dl></aside>
+        <div><h1>{item.plainTitle}</h1>{item.title !== item.plainTitle && <p className="official-title"><strong>Amtlicher Titel:</strong> {item.title}</p>}<p className="lead">{item.summary}</p><BookmarkLink title={item.plainTitle} path={`/entscheidungen/${item.slug}`} /></div>
       </header>
 
-      <section className="sixty-second" aria-labelledby="sixty-second-title"><div><p className="eyebrow">60 Sekunden</p><h2 id="sixty-second-title">Worum geht es?</h2></div><dl><div className="sixty-second-summary"><dt>Kurz erklärt</dt><dd>{item.summary}</dd></div><div><dt>Was wird entschieden?</dt><dd>{humanizeSystemValue(item.whatIsDecided)}</dd></div><div><dt>Welche Veränderung steht im Mittelpunkt?</dt><dd>{decisionFocus(item)}</dd></div><div><dt>Stand der WÖk-Analyse</dt><dd>{humanizeSystemValue(item.analysisStatus)}</dd></div></dl></section>
+      {overviewAssessment && <OverviewAssessment assessment={overviewAssessment} />}
+
+      <section className="sixty-second" aria-labelledby="sixty-second-title"><div><p className="eyebrow">60 Sekunden</p><h2 id="sixty-second-title">Worum geht es?</h2></div><dl><div className="sixty-second-summary"><dt>Kurz erklärt</dt><dd>{item.summary}</dd></div><div><dt>Was wird entschieden?</dt><dd>{humanizeSystemValue(item.whatIsDecided)}</dd></div><div><dt>Welche Veränderung steht im Mittelpunkt?</dt><dd>{decisionFocus(item)}</dd></div></dl></section>
+
+      <section className="decision-process-meta" aria-label="Politischer Prozess und Prüfstatus">
+        <div><CaseTypeMark kind={item.kind} maturity={item.publicWorkingAct?.maturity} /><p>Prozess- und Prüfinformationen</p></div>
+        <aside className="decision-status"><p>Status dieser Wirkungsakte</p><strong>{humanizeSystemValue(item.parliamentaryStatus)}</strong><dl><div><dt>WÖk-Reifestufe</dt><dd>{statuses.maturity}</dd></div><div><dt>Evidenzstatus</dt><dd>{statuses.evidence}</dd></div><div><dt>Attributionsstatus</dt><dd>{statuses.attribution}</dd></div><div><dt>Prüfrelevanz</dt><dd>{materialityLabel(item.materiality)}</dd></div><div><dt>Quellenstatus</dt><dd>{verificationLabel(item.statusVerification)}</dd></div><div><dt>Letzte Aktualisierung</dt><dd>{formatDate(item.lastUpdated)}</dd></div></dl></aside>
+      </section>
 
       {activeView === "ueberblick" && <DecisionReadinessGate decisionBasis={statuses.decisionBasis} />}
 

@@ -4,16 +4,19 @@ import { formatDate, materialityLabel } from "@/lib/cases";
 import { humanizeSystemValue, verificationLabel } from "@/lib/presentation/labels";
 import { BookmarkLink } from "@/app/components/BookmarkLink";
 import { CaseTypeMark } from "@/app/components/CaseTypeMark";
+import { OverviewAssessment } from "@/app/components/OverviewAssessment";
+import { parliamentaryOverviewAssessment } from "@/lib/presentation/overview-assessment";
 
 export function CaseCard({ item }: { item: ParliamentaryCase }) {
+  const assessment = parliamentaryOverviewAssessment(item);
   return (
     <article className="case-card">
-      <div className="case-card-topline">
+      <h3><Link href={`/entscheidungen/${item.slug}`}>{item.plainTitle}</Link></h3>
+      {assessment ? <OverviewAssessment assessment={assessment} compact /> : <p>{item.summary}</p>}
+      <div className="case-card-topline" aria-label="Prozess- und Prüfinformationen">
         <CaseTypeMark kind={item.kind} maturity={item.publicWorkingAct?.maturity} compact />
         <span className="chip chip--phase">{materialityLabel(item.materiality)}</span>
       </div>
-      <h3><Link href={`/entscheidungen/${item.slug}`}>{item.plainTitle}</Link></h3>
-      <p>{item.summary}</p>
       <dl className="case-meta">
         <div><dt>Parlamentarischer Status</dt><dd>{humanizeSystemValue(item.parliamentaryStatus)}</dd></div>
         <div><dt>Stand der WÖk-Analyse</dt><dd>{humanizeSystemValue(item.analysisStatus)}</dd></div>
