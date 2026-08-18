@@ -188,6 +188,31 @@ for (const record of records) {
   cases.push(result);
 }
 
+const recommendationSourcePages = [];
+for (const recommendation of recommendations.values()) {
+  for (const sourceUrl of recommendation.source_refs.filter((source) => /^https:\/\//.test(source))) {
+    const slug = recommendationSourceSlug(sourceUrl);
+    const url = `${baseUrl}/quellen/${slug}`;
+    const response = await fetch(url, { redirect: "manual", headers: requestHeaders });
+    const html = response.status === 200 ? await response.text() : "";
+    const text = comparable(decodeHtml(html));
+    const sourcePage = {
+      recommendation_id: recommendation.recommendation_id,
+      source_slug: slug,
+      url,
+      http_status: response.status,
+      original_source_link_visible: html.includes("Originalquelle öffnen"),
+      recommendation_summary_visible: text.includes(comparable(recommendation.recommendation_core_summary)),
+      status: "PASS",
+    };
+    if (sourcePage.http_status !== 200 || !sourcePage.original_source_link_visible || !sourcePage.recommendation_summary_visible) {
+      sourcePage.status = "FAIL";
+      failures.push(`${recommendation.recommendation_id}: Recommendation-Quellenakte ${slug} unvollständig`);
+    }
+    recommendationSourcePages.push(sourcePage);
+  }
+}
+
 const aliasResults = [];
 for (const alias of aliases) {
   const response = await fetch(`${baseUrl}/regierung/wirkungsanalysen/${encodeURIComponent(alias.alias_id)}`, { redirect: "manual", headers: requestHeaders });
@@ -214,9 +239,12 @@ const report = {
   recommendation_records_passed: cases.filter((entry) => entry.recommendation?.status === "PASS").length,
   recommendation_fields_checked: cases.reduce((sum, entry) => sum + (entry.recommendation?.fields_checked ?? 0), 0),
   recommendation_source_links_checked: cases.reduce((sum, entry) => sum + (entry.recommendation?.source_links_expected ?? 0), 0),
+  recommendation_source_pages_checked: recommendationSourcePages.length,
+  recommendation_source_pages_passed: recommendationSourcePages.filter((entry) => entry.status === "PASS").length,
   methodology: "Jedes nichtleere normalisierte Public-Feld wird gegen die gerenderte Detailseite geprüft. Für Recommendations wird die Kette Fachrecord -> kanonischer RecommendationRecord -> Public Store -> gerenderte Recommendation UI vollständig geprüft, einschließlich Hindsight Guard und interner Quellenakten. Die vollständige unveränderte Fachakte bleibt zusätzlich mit ihrem Fall-SHA-256 im Public Store erhalten.",
   failures,
   cases,
+  recommendation_source_pages: recommendationSourcePages,
   aliases: aliasResults,
 };
 writeFileSync(outputFile, `${JSON.stringify(report, null, 2)}\n`);

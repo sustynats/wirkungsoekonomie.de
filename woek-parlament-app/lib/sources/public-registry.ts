@@ -547,6 +547,16 @@ function recommendationSources(): StaticPublicSource[] {
   const impacts = new Map(getPublicImpactCases().map((impact) => [impact.impact_case_id, impact]));
   for (const recommendation of getPublicRecommendations()) {
     const impact = impacts.get(recommendation.impact_case_id);
+    const editorial = impact ? governmentEditorialProjection(impact) : null;
+    const assessment = impact && editorial?.status === "PASS" ? {
+      assessmentLabel: editorial.fields.overview_assessment_label,
+      impactCoreSummary: editorial.fields.impact_core_summary,
+      editorialSummary: editorial.fields.editorial_summary,
+      keyFinding: editorial.fields.key_finding,
+      directionLabel: directionLabels[impact.primary_direction] ?? impact.primary_direction,
+      evidenceSummary: `${evidenceLabels[impact.evidence_level] ?? impact.evidence_level}. ${editorial.fields.evidence_summary}`,
+      realityCheckSummary: editorial.fields.reality_check_summary,
+    } : null;
     for (const source of recommendation.source_refs) {
       const canonicalUrl = isSafePublicSourceUrl(source);
       const slug = canonicalUrl ? sourceSlugForCanonicalUrl(canonicalUrl) : null;
@@ -565,6 +575,7 @@ function recommendationSources(): StaticPublicSource[] {
         analysisSummary: recommendation.recommendation_core_summary,
         analysisDirection: recommendationStatusLabels[recommendation.recommendation_status],
         evidenceLevel: evidenceLabels[recommendation.evidence_grade] ?? recommendation.evidence_grade,
+        assessment,
       };
       const existing = grouped.get(slug);
       if (existing) {

@@ -68,6 +68,9 @@ export default async function SourceDetailPage({ params }: { params: Promise<{ s
             {usage.assessment ? <OverviewAssessment assessment={usage.assessment} compact />
               : isPoliticalCaseUsage(usage.caseKind) ? <EditorialReviewAssessment subject={usage.caseTitle} />
                 : usage.analysisSummary ? <p><strong>Beobachtete Entwicklung:</strong> {usage.analysisSummary}</p> : null}
+            {usage.caseKind === "GOVERNMENT_RECOMMENDATION" && usage.analysisSummary
+              ? <p><strong>Fachlich freigegebene WÖk-Handlungsoption:</strong> {usage.analysisSummary}</p>
+              : null}
             <div data-woek-process-metadata>
               <p className="source-register-label">{sourceRoleLabel[usage.sourceRole]}{usage.decisionDate ? ` · Entscheidung ${dateLabel(usage.decisionDate)}` : ""}</p>
               {!usage.assessment && (usage.analysisDirection || usage.evidenceLevel) && <p className="source-locations">{usage.analysisDirection && <><strong>Einordnung:</strong> {usage.analysisDirection}</>}{usage.analysisDirection && usage.evidenceLevel ? " · " : ""}{usage.evidenceLevel && <><strong>Evidenz:</strong> {usage.evidenceLevel}</>}</p>}
