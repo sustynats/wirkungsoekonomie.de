@@ -9,20 +9,32 @@ const checks = [
   {
     file: "app/page.tsx",
     required: [
-      "Von der politischen Absicht zur tatsächlichen Wirkung.",
-      "Politik prüft Folgen bereits heute.",
+      "title: portalUsp.lead",
+      "lead: portalUsp.context",
       "WÖk-Systemcheck",
-      "Zustandsveränderungen festgestellt und – soweit möglich – zugerechnet"
+      "Was verändert sich? Was wäre ohne die Entscheidung geschehen?"
     ]
   },
   {
     file: "app/[section]/page.tsx",
     required: [
-      "Die WÖk beginnt nicht dort, wo bestehende Folgenabschätzung endet",
+      "Was WÖk zusätzlich verbindet",
+      "GFA, Nachhaltigkeitsprüfung, eNAP, DNS-Indikatoren und Destatis-Monitoring",
+      "portalUsp.pathFormula",
+      "portalUsp.causalEffect",
       "Zustandsveränderung feststellen",
       "SDG+ ist keine UN-Kategorie.",
       "Was die WÖk nicht behauptet",
       "Was die WÖk zusätzlich leistet"
+    ]
+  },
+  {
+    file: "lib/content/portal-usp.ts",
+    required: [
+      "Folgen prüfen reicht nicht. Entscheidend ist, welche Zustandsveränderung eine Entscheidung auslöst - und ob eine realistische Alternative voraussichtlich wirksamer wäre.",
+      "Deutschland prüft Gesetzesfolgen und Nachhaltigkeitswirkungen bereits heute.",
+      "A -> M -> ΔZ -> R",
+      "ΔW = Z_beobachtet - Z_gegenfaktisch"
     ]
   },
   {

@@ -12,6 +12,7 @@ import { euEditorialProjection, getEuImpactCases } from "@/lib/eu/impact-cases";
 import { getPublicRecommendations, recommendationStatusLabels } from "@/lib/recommendations";
 import { parliamentaryOverviewAssessment, type OverviewAssessmentData } from "@/lib/presentation/overview-assessment";
 import { isSafePublicSourceUrl, sourceDetailHrefForUrl, sourceSlugForCanonicalUrl } from "@/lib/sources/url";
+import { portalMethodSourceUrls } from "@/lib/content/portal-usp";
 
 export { isSafePublicSourceUrl, sourceDetailHrefForUrl, sourceSlugForCanonicalUrl } from "@/lib/sources/url";
 
@@ -760,6 +761,91 @@ function observatorySources(): StaticPublicSource[] {
 
 function foundationalReferenceSources(): StaticPublicSource[] {
   return [
+    {
+      id: "method-ggo-43-44",
+      slug: sourceSlugForCanonicalUrl(portalMethodSourceUrls.ggo)!,
+      title: "Gemeinsame Geschäftsordnung der Bundesministerien - §§ 43 und 44",
+      institution: "Bundesregierung der Bundesrepublik Deutschland",
+      category: "GOVERNMENT_RECORD",
+      role: "METHODOLOGY_REFERENCE",
+      documentType: "Amtliche Verfahrens- und Rechtsquelle",
+      canonicalUrl: portalMethodSourceUrls.ggo,
+      documentDate: null,
+      retrievedAt: "2026-08-18",
+      versionLabel: "Geltende amtliche Fassung",
+      sourceHash: null,
+      temporalClass: "CURRENT_REFERENCE",
+      abstract: "Die GGO beschreibt die bestehende Gesetzesfolgenabschätzung des Bundes. § 44 umfasst beabsichtigte Wirkungen und unbeabsichtigte Nebenwirkungen; § 43 verlangt in der Begründung auch andere Lösungsmöglichkeiten und die Gründe für ihre Ablehnung.",
+      usages: [{ caseSlug: "woek-methodik", caseTitle: "WÖk-Wirkungscheck und Optionsvergleich", caseKind: "WOEK_METHOD_REFERENCE", decisionDate: null, sourceRole: "METHODOLOGY_REFERENCE", locations: ["§§ 43 und 44"], note: "Belegt die bereits bestehende staatliche Folgen- und Alternativenprüfung. Die WÖk ersetzt sie nicht.", caseHref: "/methodik", analysisSummary: "Die WÖk ergänzt die bestehende Folgenprüfung um objektspezifische Wirkpfade, Datenfunktionen, Gegenfaktum, Systemkaskaden, Optionsvergleich und einen versionierten Reality Check.", analysisDirection: null, evidenceLevel: "Amtliche Verfahrensquelle" }]
+    },
+    {
+      id: "method-dns-governance",
+      slug: sourceSlugForCanonicalUrl(portalMethodSourceUrls.dnsGovernance)!,
+      title: "Steuerung der Deutschen Nachhaltigkeitsstrategie",
+      institution: "Bundesregierung der Bundesrepublik Deutschland",
+      category: "GOVERNMENT_RECORD",
+      role: "METHODOLOGY_REFERENCE",
+      documentType: "Amtliche Governance- und Prozessquelle",
+      canonicalUrl: portalMethodSourceUrls.dnsGovernance,
+      documentDate: null,
+      retrievedAt: "2026-08-18",
+      versionLabel: "Aktuelle amtliche Information",
+      sourceHash: null,
+      temporalClass: "CURRENT_REFERENCE",
+      abstract: "Die Quelle dokumentiert die verpflichtende Nachhaltigkeitsprüfung seit 2009, eNAP als elektronisches Hilfsmittel seit 2018 sowie die Indikatoren- und Zielarchitektur der Deutschen Nachhaltigkeitsstrategie.",
+      usages: [{ caseSlug: "woek-methodik", caseTitle: "WÖk-Wirkungscheck und Optionsvergleich", caseKind: "WOEK_METHOD_REFERENCE", decisionDate: null, sourceRole: "METHODOLOGY_REFERENCE", locations: [], note: "Belegt die bestehende Nachhaltigkeitsprüfung und DNS-Steuerungslogik.", caseHref: "/methodik", analysisSummary: "Ein Zielbezug oder eine Indikatorbewegung ist wichtig, beweist für sich allein aber noch keine kausale Wirkung eines einzelnen Gesetzes.", analysisDirection: null, evidenceLevel: "Amtliche Governancequelle" }]
+    },
+    {
+      id: "method-enap-review-2023",
+      slug: sourceSlugForCanonicalUrl(portalMethodSourceUrls.enapReview)!,
+      title: "Erfahrungsbericht zur Einbeziehung von Nachhaltigkeitszielen bei der Gesetzgebung",
+      institution: "Staatssekretärsausschuss für nachhaltige Entwicklung",
+      category: "GOVERNMENT_RECORD",
+      role: "METHODOLOGY_REFERENCE",
+      documentType: "Amtlicher Erfahrungsbericht",
+      canonicalUrl: portalMethodSourceUrls.enapReview,
+      documentDate: "2023-11-27",
+      retrievedAt: "2026-08-18",
+      versionLabel: "Beschluss vom 27. November 2023",
+      sourceHash: null,
+      temporalClass: "CURRENT_REFERENCE",
+      abstract: "Der Bericht gibt differenzierte Rückmeldungen aus den Ressorts wieder. Er nennt positive Erfahrungen mit eNAP und zugleich Verbesserungsbedarfe, unter anderem bei Ergebnisorientierung, Zielkonflikten, Wechselwirkungen, Wirkungsgrad und Spillover-Effekten.",
+      usages: [{ caseSlug: "woek-methodik", caseTitle: "WÖk-Wirkungscheck und Optionsvergleich", caseKind: "WOEK_METHOD_REFERENCE", decisionDate: null, sourceRole: "METHODOLOGY_REFERENCE", locations: ["Abschnitte III.1, IV.1 und IV.3"], note: "Wird ausgewogen als amtlicher Erfahrungsbericht verwendet, nicht als pauschale Kritik an eNAP.", caseHref: "/methodik", analysisSummary: "Die WÖk nimmt Systemkaskaden, Zielkonflikte und Spillover verbindlich in ihre eigene Wirkungslogik auf, ohne bestehende staatliche Verfahren abzuwerten.", analysisDirection: null, evidenceLevel: "Amtlicher Erfahrungsbericht" }]
+    },
+    {
+      id: "method-destatis-indicators",
+      slug: sourceSlugForCanonicalUrl(portalMethodSourceUrls.destatisIndicators)!,
+      title: "Nachhaltigkeitsindikatoren",
+      institution: "Statistisches Bundesamt",
+      category: "OFFICIAL_STATISTICS",
+      role: "METHODOLOGY_REFERENCE",
+      documentType: "Amtliche Monitoring- und Indikatorenquelle",
+      canonicalUrl: portalMethodSourceUrls.destatisIndicators,
+      documentDate: null,
+      retrievedAt: "2026-08-18",
+      versionLabel: "Aktuelle amtliche Übersicht",
+      sourceHash: null,
+      temporalClass: "CURRENT_REFERENCE",
+      abstract: "Destatis beobachtet die Entwicklung und Zielerreichung der Nachhaltigkeitsindikatoren. Eine veränderte Kennzahl zeigt eine Zustandsentwicklung, ist für sich allein aber kein kausaler Nachweis der Wirkung eines einzelnen Gesetzes.",
+      usages: [{ caseSlug: "woek-methodik", caseTitle: "WÖk-Wirkungscheck und Optionsvergleich", caseKind: "WOEK_METHOD_REFERENCE", decisionDate: null, sourceRole: "METHODOLOGY_REFERENCE", locations: [], note: "Dient zur Abgrenzung von Zustandsmonitoring und kausaler Zurechnung.", caseHref: "/methodik", analysisSummary: "WÖk weist für Indikatoren ihre konkrete Funktion aus: Baseline, Umsetzung, Output, Outcome, Gegenfaktum, Verteilung, Schutzgrenze oder Zurechnung.", analysisDirection: null, evidenceLevel: "Amtliche Monitoringquelle" }]
+    },
+    {
+      id: "method-sustainability-action-plan-2026",
+      slug: sourceSlugForCanonicalUrl(portalMethodSourceUrls.sustainabilityActionPlan)!,
+      title: "Aktionsplan Nachhaltigkeit - Beteiligungsstand Juli 2026",
+      institution: "Bundesregierung der Bundesrepublik Deutschland",
+      category: "GOVERNMENT_RECORD",
+      role: "METHODOLOGY_REFERENCE",
+      documentType: "Aktuelle amtliche Politikquelle",
+      canonicalUrl: portalMethodSourceUrls.sustainabilityActionPlan,
+      documentDate: "2026-07-16",
+      retrievedAt: "2026-08-18",
+      versionLabel: "Beteiligungsstand Juli 2026",
+      sourceHash: null,
+      temporalClass: "CURRENT_REFERENCE",
+      abstract: "Die Bundesregierung entwickelt ihre Nachhaltigkeitssteuerung selbst weiter. Der Beteiligungsstand vom Juli 2026 richtet den Aktionsplan stärker auf Wirkung, Handeln und konkrete Ergebnisse aus.",
+      usages: [{ caseSlug: "woek-methodik", caseTitle: "WÖk-Wirkungscheck und Optionsvergleich", caseKind: "WOEK_METHOD_REFERENCE", decisionDate: "2026-07-16", sourceRole: "CONTEXT", locations: [], note: "Belegt, dass sich auch die staatliche Praxis in Richtung stärkerer Wirkungs- und Ergebnisorientierung weiterentwickelt.", caseHref: "/methodik", analysisSummary: "Der WÖk-USP wird als ergänzende durchgängige Architektur beschrieben, nicht als Behauptung, der Staat prüfe bislang keine Folgen.", analysisDirection: null, evidenceLevel: "Aktuelle amtliche Politikquelle" }]
+    },
     {
       id: "foundation-agenda-2030",
       slug: "agenda-2030-sdgs",

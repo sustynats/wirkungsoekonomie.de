@@ -4,22 +4,24 @@ import { EditorialVisual } from "@/app/components/EditorialVisual";
 import { GovernmentActionCard } from "@/app/components/government/GovernmentActionCard";
 import { listPublishedCases } from "@/lib/cases";
 import { getGovernmentPublicData } from "@/lib/government/public-data";
+import { portalMethodSourceUrls, portalUsp } from "@/lib/content/portal-usp";
+import { sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
 
 export default async function HomePage({ searchParams }: { searchParams: Promise<{ modus?: string }> }) {
   const parliamentMode = (await searchParams).modus === "parlament";
   const heroCopy = parliamentMode
     ? {
         eyebrow: "Unabhängiges Portal des Instituts für Wirkungsökonomie",
-        title: "Von der politischen Absicht zur tatsächlichen Wirkung.",
-        lead: "Politik prüft Folgen bereits heute. Der Parlament-Modus führt diese Betrachtung systemisch weiter: Was lässt sich vor einer Abstimmung noch verbessern? Welche Bedingungen, Risiken und offenen Fragen verändern das Wirkungspotenzial? Die politische Entscheidung bleibt beim Parlament.",
+        title: portalUsp.lead,
+        lead: `${portalUsp.context} Im Parlament-Modus bleibt sichtbar, was sich vor einer Abstimmung noch verbessern lässt - die politische Entscheidung bleibt beim Parlament.`,
         primary: "Anstehende Vorgänge prüfen",
         secondary: "Prüfstandard ansehen",
         directionQuestion: "Bringt diese Maßnahme das Ziel näher – oder entfernt sie sich davon?"
       }
     : {
         eyebrow: "Unabhängiges Portal des Instituts für Wirkungsökonomie",
-        title: "Von der politischen Absicht zur tatsächlichen Wirkung.",
-        lead: "Politik prüft Folgen bereits heute. Das Wirkungsportal führt diese Betrachtung systemisch weiter: Welche Zustände sollen sich verändern? Welche Neben-, Verteilungs- und Systemwirkungen sind möglich? Was verändert sich nach der Umsetzung tatsächlich – und was folgt daraus für die nächste Entscheidung?",
+        title: portalUsp.lead,
+        lead: portalUsp.context,
         primary: "Bevorstehende Entscheidungen ansehen",
         secondary: "Wirkungscheck verstehen",
         directionQuestion: "Bringt diese Maßnahme das Ziel näher – oder entfernt sie sich davon?"
@@ -40,6 +42,7 @@ export default async function HomePage({ searchParams }: { searchParams: Promise
               <p className="eyebrow">{heroCopy.eyebrow}</p>
               <h1>{heroCopy.title}</h1>
               <p className="lead">{heroCopy.lead}</p>
+              <p className="small-meta">Grundlage dieser Einordnung: <Link href={sourceDetailHrefForUrl(portalMethodSourceUrls.ggo)}>GGO §§ 43 und 44</Link>, <Link href={sourceDetailHrefForUrl(portalMethodSourceUrls.dnsGovernance)}>Steuerung der Deutschen Nachhaltigkeitsstrategie</Link> und der <Link href={sourceDetailHrefForUrl(portalMethodSourceUrls.enapReview)}>amtliche eNAP-Erfahrungsbericht</Link>.</p>
               <p className="hero-independence">Kein Angebot des Deutschen Bundestages, keiner Partei oder Fraktion. Folgen weiterdenken. Wirkung überprüfen. Besser nachsteuern.</p>
               <div className="hero-actions">
                 <Link className="button button-primary" href="/bevorstehend">{heroCopy.primary}</Link>
@@ -48,13 +51,13 @@ export default async function HomePage({ searchParams }: { searchParams: Promise
             </div>
             <aside className="hero-education" aria-labelledby="hero-education-title">
               <p className="eyebrow">{parliamentMode ? "Für die parlamentarische Vorbereitung" : "Was ist Wirkungsökonomie?"}</p>
-              <h2 id="hero-education-title">{parliamentMode ? "Wirkungspotenzial, Risiken und veränderbare Stellschrauben." : "Die WÖk ergänzt vorhandene Prüfung – und führt sie weiter."}</h2>
-              <p>{parliamentMode ? "Der Modus zeigt, welche Annahmen tragen, welche Daten fehlen und welche Änderung einen möglichen Wirkmechanismus robuster machen könnte." : "Wirkung ist zunächst eine tatsächliche Zustandsveränderung. Die WÖk verbindet bestehende Fach- und Folgenprüfungen über Zeit und Systemgrenzen hinweg: von der Ausgangslage über mögliche Wirkpfade bis zu Beobachtung, Zurechnung und Lernen."}</p>
+              <h2 id="hero-education-title">{parliamentMode ? "Wirkungspotenzial, Risiken und veränderbare Stellschrauben." : "Vom Zielbezug zur überprüfbaren Wirkungshypothese."}</h2>
+              <p>{parliamentMode ? "Der Modus zeigt, welche Annahmen tragen, welche Daten fehlen und welche Änderung einen möglichen Wirkmechanismus robuster machen könnte." : "Wirkung ist eine tatsächliche Zustandsveränderung. Die WÖk beschreibt deshalb je materiellem Pfad Auslöser, Mechanismus, Zustandsänderung und Referenz - und hält fest, welche Daten die Annahme später bestätigen oder widerlegen können."}</p>
               <div className="hero-direction-test"><span>Die Kernfrage</span><strong>{heroCopy.directionQuestion}</strong></div>
               <ol className="hero-education-steps">
                 <li><span>01</span><div><strong>Bestehende Prüfung einordnen</strong><small>Problem, Ziel, Instrument und fachlicher Kontext.</small></div></li>
-                <li><span>02</span><div><strong>Zustände und Wirkpfade prüfen</strong><small>Was könnte sich für wen verändern? Was bleibt offen?</small></div></li>
-                <li><span>03</span><div><strong>Später rückkoppeln</strong><small>Was ist beobachtbar – und welcher Beitrag ist belegbar?</small></div></li>
+                <li><span>02</span><div><strong>Wirkpfade und Optionen vergleichen</strong><small>Was könnte sich für wen verändern - und welche realistische Ausgestaltung wäre robuster?</small></div></li>
+                <li><span>03</span><div><strong>Später rückkoppeln</strong><small>Was ist beobachtbar - und welcher Beitrag ist belegbar?</small></div></li>
               </ol>
               <Link className="hero-education-link" href="/methodik#grundlagen">Wirkungsökonomie verständlich erklärt <span aria-hidden="true">→</span></Link>
             </aside>
@@ -109,17 +112,26 @@ export default async function HomePage({ searchParams }: { searchParams: Promise
       <section className="shell impact-architecture" aria-labelledby="impact-architecture-title">
         <header>
           <p className="eyebrow">Die gemeinsame Wirkungsarchitektur</p>
-          <h2 id="impact-architecture-title">Von der Frage zur nächsten, besser prüfbaren Entscheidung.</h2>
-          <p>Die WÖk ersetzt keine ministerielle Facharbeit, Gesetzesfolgenabschätzung, Rechtsprüfung, parlamentarische Beratung oder Evaluation. Sie verbindet diese Perspektiven über einen gemeinsamen Wirkungsbegriff und erweitert den Blick auf Systemfolgen und spätere Rückkopplung.</p>
+          <h2 id="impact-architecture-title">Von der Frage zur nächsten, besser informierten Entscheidung.</h2>
+          <p>Die WÖk ersetzt keine ministerielle Facharbeit, Gesetzesfolgenabschätzung, Rechtsprüfung, parlamentarische Beratung oder Evaluation. Sie verbindet konkrete Wirkpfade, Datenfunktionen, Gegenfaktum, Systemfolgen, realistische Handlungsoptionen und spätere Rückkopplung in einer öffentlich nachvollziehbaren Architektur.</p>
         </header>
         <ol>
           <li><span>01</span><strong>Problem und Ziel</strong><small>Welcher Zustand soll sich verändern?</small></li>
           <li><span>02</span><strong>Instrument und Prüfung</strong><small>Was wird vorgeschlagen, und was ist bereits fachlich oder rechtlich geprüft?</small></li>
-          <li><span>03</span><strong>WÖk-Systemcheck</strong><small>Wirkpfade, Betroffene, Verteilung, Grenzen und Alternativen.</small></li>
+          <li><span>03</span><strong>WÖk-Systemcheck</strong><small>Wirkpfade, Betroffene, Verteilung, Kaskaden und Grenzen.</small></li>
           <li><span>04</span><strong>Entscheidung und Umsetzung</strong><small>Welche Fassung wurde beschlossen – und was geschieht im Vollzug?</small></li>
           <li><span>05</span><strong>Beobachtung und Zurechnung</strong><small>Was verändert sich? Was wäre ohne die Entscheidung geschehen?</small></li>
-          <li><span>06</span><strong>Bewertung und Lernen</strong><small>Wie ist dies am offenen Referenz- und Rechtsrahmen einzuordnen?</small></li>
+          <li><span>06</span><strong>Optionen und Lernen</strong><small>Welche realistische Ausgestaltung ist robuster - und was folgt aus neuer Evidenz?</small></li>
         </ol>
+      </section>
+
+      <section className="shell quick-orientation" aria-labelledby="method-snapshot-title">
+        <div><p className="eyebrow">Der Prüfweg in drei Schritten</p><h2 id="method-snapshot-title">Zustandsänderung beschreiben. Zurechnung prüfen. Bessere Option suchen.</h2><p className="orientation-intro">Ein Zielbezug ist wichtig, aber noch kein Wirkungsnachweis. Die WÖk macht Annahmen so konkret, dass sie später überprüft werden können - ohne eine politische Gesamtnote zu berechnen.</p></div>
+        <div className="orientation-grid">
+          <article><p className="example-label">Wirkpfad</p><h3><code>{portalUsp.pathFormula}</code></h3><p>Auslöser, Mechanismus, Zustandsänderung und Referenz werden für jeden materiellen Pfad getrennt benannt.</p></article>
+          <article><p className="example-label">Beobachtung</p><h3><code>{portalUsp.observedChange}</code></h3><p>Eine beobachtete Veränderung ist noch keine kausal zugerechnete Wirkung. Dafür braucht es ein tragfähiges Gegenfaktum.</p></article>
+          <article><p className="example-label">Handlungsoption</p><h3>Realistische Alternativen vergleichen</h3><p>Engpass, Kaskaden, Verteilung, Resilienz, Recht, Schutzgrenzen, Umsetzbarkeit und Monitoring bestimmen die fachliche Empfehlung - nicht ein Score.</p></article>
+        </div>
       </section>
 
       <EditorialVisual

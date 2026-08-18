@@ -4,6 +4,8 @@ import { CaseCard } from "@/app/components/CaseCard";
 import { EditorialVisual } from "@/app/components/EditorialVisual";
 import { DecisionReadinessGate } from "@/app/components/DecisionReadinessGate";
 import { listPublishedCases } from "@/lib/cases";
+import { indicatorFunctions, portalMethodSourceUrls, portalUsp } from "@/lib/content/portal-usp";
+import { sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
 
 const sectionCopy: Record<string, { eyebrow: string; title: string; lead: string; empty: string }> = {
   bundestag: { eyebrow: "Deutscher Bundestag", title: "Entscheidungen des Bundestages verständlich prüfen", lead: "Ein unabhängiges Portal des Instituts für Wirkungsökonomie zu Entscheidungen des Deutschen Bundestages. Amtliche Tatsachen und eigene fachliche Einordnung bleiben dabei klar getrennt.", empty: "Sobald ein Vorgang die Veröffentlichungsprüfung erfüllt, erscheint er hier mit Quellen und nachvollziehbarem Status." },
@@ -13,8 +15,8 @@ const sectionCopy: Record<string, { eyebrow: string; title: string; lead: string
   historie: { eyebrow: "Historische Wirkungschecks", title: "Damals entscheiden. Heute lernen.", lead: "Historische Checks stellen zwei Perspektiven nebeneinander: Was war zum Zeitpunkt der Entscheidung bekannt? Und was lässt sich heute beobachten und der Entscheidung belastbar zurechnen? Späteres Wissen wird nicht als damaliges Wissen ausgegeben.", empty: "Der historische Bereich erläutert die Rückschau-Methode. Veröffentlichte Fälle ergänzen den Zeitstrahl mit Quellen, Beobachtungen und Lernpunkten." },
   monitor: { eyebrow: "Wirkungsmonitor", title: "Nach einer Entscheidung beobachten und lernen", lead: "Monitoring sammelt fortlaufend Daten. Eine spätere Evaluation prüft zusätzlich, warum sich etwas verändert hat und welchen Beitrag eine Entscheidung dazu geleistet hat. Eine einzelne Kennzahl ist deshalb noch kein Wirkungsnachweis.", empty: "Monitorfälle erscheinen mit Ausgangswert, Datenquelle, erwarteter Veränderung, Beobachtungszeitraum und einem Anlass für die erneute Prüfung." },
   werkzeuge: { eyebrow: "Werkzeugkasten", title: "WÖk-Werkzeuge für die parlamentarische Prüfung", lead: "Das Portal verlinkt auf bestehende Methoden und zeigt ihren Reifegrad. Eine Demo ist keine automatische Fachentscheidung.", empty: "Die verbindliche Zuordnung zum führenden WÖMS 2.0 wird kontrolliert importiert." },
-  methodik: { eyebrow: "Entscheidungsstandard", title: "Wirkungen prüfen, ohne Politik zu ersetzen", lead: "Politik prüft Folgen bereits heute. Die Wirkungsökonomie verbindet und erweitert diese Arbeit: Sie trennt Fakten, Wirkungspotenzial, beobachtete Zustandsveränderung, Zurechnung, Bewertung und spätere Rückkopplung.", empty: "Die Methodik ist offen dokumentiert und wird je Veröffentlichung versioniert." },
-  transparenz: { eyebrow: "Über das Portal", title: "Vertrauen entsteht durch nachvollziehbare Arbeit", lead: "Wer das Portal herausgibt, was seine Einordnung leisten kann, worauf sie beruht – und wo ihre Grenzen liegen.", empty: "Die Angaben zum Portal werden fortlaufend ergänzt und versioniert." }
+  methodik: { eyebrow: "Entscheidungsstandard", title: "Wirkungspfade, Optionen und Reality Check", lead: portalUsp.lead, empty: "Die Methodik ist offen dokumentiert und wird je Veröffentlichung versioniert." },
+  transparenz: { eyebrow: "Über das Portal", title: "Vertrauen entsteht durch nachvollziehbare Arbeit", lead: "Wer das Portal herausgibt, wie es bestehende staatliche Prüfungen einordnet, was die WÖk zusätzlich leistet - und wo ihre Grenzen liegen.", empty: "Die Angaben zum Portal werden fortlaufend ergänzt und versioniert." }
 };
 
 export default async function SectionPage({ params }: { params: Promise<{ section: string }> }) {
@@ -44,7 +46,28 @@ export default async function SectionPage({ params }: { params: Promise<{ sectio
 
 function Methodology() {
   return <>
-    <section className="notice notice-neutral" id="grundlagen"><strong>Was ist ein WÖk-Wirkungscheck?</strong><p>Die WÖk beginnt nicht dort, wo bestehende Folgenabschätzung endet, weil diese „falsch“ wäre. Sie ergänzt ministerielle Facharbeit, Gesetzesfolgenabschätzung, Rechtsprüfung, parlamentarische Beratung und Evaluation um eine gemeinsame Wirkungsarchitektur, die vor der Entscheidung beginnt und nach der Umsetzung weiterläuft.</p></section>
+    <section className="notice notice-neutral" id="grundlagen"><strong>{portalUsp.lead}</strong><p>{portalUsp.context}</p></section>
+    <section className="transparency-list" aria-label="Bestehende staatliche Prüfung und zusätzlicher WÖk-Beitrag">
+      <article><h2>Was der Staat bereits prüft</h2><p>Die Gesetzesfolgenabschätzung des Bundes betrachtet beabsichtigte Wirkungen und unbeabsichtigte Nebenwirkungen. Andere Lösungsmöglichkeiten gehören ebenfalls in die Begründung. Die Nachhaltigkeitsprüfung untersucht zudem, welche Ziele und Prinzipien der Deutschen Nachhaltigkeitsstrategie berührt werden.</p><p><Link href={sourceDetailHrefForUrl(portalMethodSourceUrls.ggo)}>GGO §§ 43 und 44 in der Quellenakte</Link> · <Link href={sourceDetailHrefForUrl(portalMethodSourceUrls.dnsGovernance)}>DNS-Steuerung in der Quellenakte</Link></p></article>
+      <article><h2>Was WÖk zusätzlich verbindet</h2><p>{portalUsp.safeUsp}</p><p>Das ist eine methodische WÖk-Synthese aus den offengelegten amtlichen Quellen - kein Zitat einer Behörde und kein Angriff auf bestehende Verfahren.</p></article>
+    </section>
+    <section className="notice"><strong>Was ist ein WÖk-Wirkungscheck?</strong><p>Ein WÖk-Wirkungscheck fragt nicht nur, welche Ziele ein Vorhaben berührt. Er fragt, <strong>was sich wodurch verändern soll</strong>. Vor der Umsetzung sind das überprüfbare Wirkungspotenziale und Wirkungsrisiken - keine behaupteten Erfolge. Nach der Umsetzung werden dieselben Annahmen mit realen Daten, Gegenfaktum und Evidenz erneut geprüft.</p></section>
+    <section className="method-grid" aria-label="WÖk-Wirkpfad A M Delta Z R">
+      <article><span>A</span><h2>Auslöser</h2><p>Was ändert die Entscheidung konkret an Regeln, Ressourcen, Preisen, Rechten, Risiken oder Kapazitäten?</p></article>
+      <article><span>M</span><h2>Mechanismus</h2><p>Warum kann die Änderung Verhalten, Institutionen, Märkte oder ökologische Systeme beeinflussen?</p></article>
+      <article><span>ΔZ</span><h2>Zustandsänderung</h2><p>Welcher reale und möglichst beobachtbare Zustand könnte sich für wen, wo und wann verändern?</p></article>
+      <article><span>R</span><h2>Referenz</h2><p>Gegen welches Ziel, Schutzgut oder welche Grenze wird diese Veränderung eingeordnet?</p></article>
+    </section>
+    <section className="notice notice-neutral" aria-label="Formeln zur Beobachtung und Zurechnung"><strong><code>{portalUsp.pathFormula}</code></strong><p>Fehlt ein Glied, entsteht keine scheinpräzise Wirkungsbehauptung. Eine beobachtete Veränderung ist zunächst <code>{portalUsp.observedChange}</code>. Erst ein tragfähiges Gegenfaktum erlaubt vereinfacht <code>{portalUsp.causalEffect}</code>. Wo kausale Identifikation nicht seriös möglich ist, bleibt die Zurechnung offen oder wird als plausible Contribution ausgewiesen.</p></section>
+    <section className="trust-principles" aria-label="Datenfunktionen im WÖk-Wirkungscheck">
+      {indicatorFunctions.map(([code, description], index) => <article key={code}><span>{String(index + 1).padStart(2, "0")}</span><h2><code>{code}</code></h2><p>{description}</p></article>)}
+    </section>
+    <section className="notice"><strong>Output ist noch kein Outcome.</strong><p>Ein Fördervolumen zeigt Input oder Umsetzung. Die Zahl geförderter Anlagen ist ein Output. Erst eine relevante Zustandsänderung und ihre belastbare Zurechnung beantworten die Wirkungsfrage. Deshalb erhält jeder Indikator eine sichtbare Funktion.</p></section>
+    <section className="transparency-list" aria-label="Konkretes Messbeispiel Netzanschluss">
+      <article><h2>Beispiel: schnellere Netzanschlüsse</h2><p><strong>A:</strong> Verfahren werden standardisiert und Anschlussfristen verkürzt. <strong>M:</strong> Wartezeiten und Planungsunsicherheit sinken. <strong>ΔZ:</strong> Bereits geplante erneuerbare Anlagen können früher tatsächlich einspeisen. <strong>R:</strong> Stromsystem, Klima, Versorgung und Resilienz.</p></article>
+      <article><h2>Was der Reality Check messen müsste</h2><p>Bearbeitungszeiten bilden die Baseline. Fristgerecht bearbeitete Anträge zeigen Umsetzung. Angeschlossene Leistung ist Output. Tatsächlich zusätzlich eingespeister erneuerbarer Strom ist Outcome. Vergleichsregionen und Vortrends helfen beim Gegenfaktum; Netzengpässe und Systemstabilität bleiben Schutz- und Systemindikatoren.</p></article>
+    </section>
+    <section className="notice notice-neutral"><strong>WÖk-Handlungsoption</strong><p>Die Analyse fragt - soweit die Evidenz reicht - auch, welche realistische Entscheidung oder Ausgestaltung voraussichtlich wirksamer wäre. Ausgangspunkt ist nicht ein Score, sondern der Problemzustand und sein bindender Engpass. Verglichen werden Wirkmechanismen, Kaskaden, Verteilung, Resilienz, Reversibilität, Recht, Kompetenz, Umsetzbarkeit und Schutzgrenzen. Wenn keine robuste Präferenz möglich ist, bleibt genau das sichtbar.</p><p>Bei rückblickenden Entscheidungen gilt der damalige Wissensstand. Spätere Evidenz darf den Reality Check und eine heutige RecommendationVersion verändern, aber nicht rückwirkend als damals bekannt erscheinen.</p></section>
     <section className="method-grid method-grid--three" aria-label="Wirkung feststellen, zurechnen und bewerten">
       <article><span>01</span><h2>Zustandsveränderung feststellen</h2><p>Welche Baseline gilt? Was verändert sich bei wem, wo, wann und in welchem Umfang? Eine beobachtete Veränderung ist zunächst noch keine kausal belegte Wirkung.</p></article>
       <article><span>02</span><h2>Zurechnung prüfen</h2><p>Was wäre ohne die Entscheidung wahrscheinlich geschehen? Das Portal unterscheidet direkte Zurechnung, plausiblen Beitrag, systemische Mitwirkung und derzeit unklare Zusammenhänge.</p></article>
@@ -69,6 +92,10 @@ function Methodology() {
     <section className="notice"><strong>Unsicherheit bleibt sichtbar.</strong><p>Eine Ex-ante-Analyse kann die Zukunft nicht beweisen. Sie macht Annahmen, Risiken, mögliche Wirkmechanismen und Datenbedarf sichtbar. Nach einer Entscheidung zeigt eine Beobachtung noch nicht automatisch Ursache und Wirkung. Zurechnung wird nur so genau angegeben, wie die Datenlage es erlaubt.</p></section>
     <section className="notice notice-neutral"><strong>Keine einfache Gesamtpunktzahl.</strong><p>Unterschiedliche Wirkungen werden nicht blind zusammengerechnet. Zielkonflikte können abgewogen werden. Schwere Schäden an Schutzgütern dürfen jedoch nicht durch Vorteile in anderen Bereichen unsichtbar werden. Methodische Referenzen und Regeln werden je Veröffentlichung mit Versionsstand, Quellen und Geltungsbereich ausgewiesen.</p></section>
     <section className="notice"><strong>Anschluss an bestehende Wirkungsmodelle.</strong><p>Die Wirkungsökonomie erfindet etablierte Wirkungsinstrumente nicht neu. Sie ordnet sie dort ein, wo sie eine Teilfrage beantworten, und verbindet Wirkungsermittlung, Evidenz, Bewertung, Schutzgrenzen, Systemwirkung und Rückkopplung zu einer gemeinsamen Steuerungsarchitektur.</p></section>
+    <section className="transparency-list" aria-label="Amtliche Quellen zur Methodikabgrenzung">
+      <article><h2>Amtliche Grundlagen</h2><ul><li><Link href={sourceDetailHrefForUrl(portalMethodSourceUrls.ggo)}>GGO §§ 43 und 44</Link></li><li><Link href={sourceDetailHrefForUrl(portalMethodSourceUrls.dnsGovernance)}>Steuerung der Deutschen Nachhaltigkeitsstrategie</Link></li><li><Link href={sourceDetailHrefForUrl(portalMethodSourceUrls.enapReview)}>Amtlicher eNAP-Erfahrungsbericht 2023</Link></li></ul></article>
+      <article><h2>Monitoring und Weiterentwicklung</h2><ul><li><Link href={sourceDetailHrefForUrl(portalMethodSourceUrls.destatisIndicators)}>Destatis-Nachhaltigkeitsindikatoren</Link></li><li><Link href={sourceDetailHrefForUrl(portalMethodSourceUrls.sustainabilityActionPlan)}>Aktionsplan Nachhaltigkeit - Stand Juli 2026</Link></li></ul><p>Die staatliche Praxis entwickelt sich selbst weiter. Der Beteiligungsstand vom Juli 2026 richtet den Aktionsplan stärker auf Wirkung, Handeln und konkrete Ergebnisse aus.</p></article>
+    </section>
   </>;
 }
 
@@ -76,7 +103,12 @@ function Transparency() {
   return <div className="trust-center">
     <section className="trust-statement" aria-labelledby="trust-statement-title">
       <div><p className="eyebrow">Der Anspruch</p><h2 id="trust-statement-title">Unabhängig einordnen. Selbst prüfen können.</h2></div>
-      <p>Das Wirkungsportal Parlament wird vom Institut für Wirkungsökonomie herausgegeben. Es ist kein Angebot des Deutschen Bundestages, keiner Partei und keiner Fraktion. Politik prüft Folgen bereits heute. Die WÖk ersetzt diese Arbeit nicht – sie verbindet und erweitert sie: vor einer Abstimmung beim Wirkungspotenzial, später bei beobachteten Zustandsveränderungen, Zurechnung und Lernen. Grundlage sind offengelegte Quellen, Annahmen und Grenzen.</p>
+      <p>Das Wirkungsportal Parlament wird vom Institut für Wirkungsökonomie herausgegeben. Es ist kein Angebot des Deutschen Bundestages, keiner Partei und keiner Fraktion. {portalUsp.context} Grundlage sind offengelegte Quellen, Annahmen, Wissensstände und Grenzen.</p>
+    </section>
+
+    <section className="transparency-list" aria-label="Einordnung staatlicher Verfahren und WÖk-USP">
+      <article><h2>Bestehende Verfahren anerkennen</h2><p>GFA, Nachhaltigkeitsprüfung, eNAP, DNS-Indikatoren und Destatis-Monitoring sind wichtige staatliche Bausteine. Ein Zielbezug oder ein veränderter Indikator zeigt jedoch für sich allein noch keine kausale Wirkung eines einzelnen Gesetzes.</p><p><Link href={sourceDetailHrefForUrl(portalMethodSourceUrls.ggo)}>GGO-Quellenakte</Link> · <Link href={sourceDetailHrefForUrl(portalMethodSourceUrls.destatisIndicators)}>Destatis-Quellenakte</Link></p></article>
+      <article><h2>Zusätzliche WÖk-Architektur</h2><p>{portalUsp.safeUsp}</p><p>WÖk informiert demokratische Entscheidung. Sie ersetzt sie nicht und erzeugt weder eine automatische Gesamtnote noch eine Empfehlung aus der Zahl positiver und negativer Pfade.</p></article>
     </section>
 
     <section className="trust-principles" aria-label="Grundsätze des Wirkungsportals">
@@ -94,7 +126,7 @@ function Transparency() {
       </div>
       <section className="trust-principles" aria-label="Vier getrennte Ebenen des Referenzrahmens">
         <article><span>01</span><h2>SDGs</h2><p>Die 17 Ziele der Vereinten Nationen sind ein international anschlussfähiger politischer Ziel- und Referenzrahmen. Sie sind keine vollständige Wirkungsmethode und keine Rechtsnorm.</p></article>
-        <article><span>02</span><h2>SDG+</h2><p>SDG+ ist eine transparente Erweiterung der Wirkungsökonomie, keine offizielle UN-Kategorie. Sie macht etwa Medien- und Informationsqualität, Rechtsstaatlichkeit und Diskursfähigkeit genauer sichtbar.</p></article>
+        <article><span>02</span><h2>SDG+</h2><p>SDG+ ist eine transparente Erweiterung der Wirkungsökonomie, keine offizielle UN-Kategorie. Demokratie und Rechtsstaatlichkeit fehlen in den SDGs nicht: SDG 16 erfasst wichtige institutionelle Dimensionen. SDG+ macht weitere WÖk-Prüffelder sichtbar.</p></article>
         <article><span>03</span><h2>Mensch – Planet – Demokratie</h2><p>Diese Ordnung strukturiert Wirkungsräume; sie ist keine Summe aus drei frei verrechenbaren Säulen. Demokratie ist auch Schutz- und Korrekturraum.</p></article>
         <article><span>04</span><h2>Recht</h2><p>Grundrechte, Verfassungsprinzipien, Staatsziele, Schutzpflichten und Fachrecht bleiben als eigene rechtliche Ebene sichtbar. Das Portal erstellt kein Rechtsgutachten.</p></article>
       </section>
@@ -181,7 +213,7 @@ function Transparency() {
 
     <section className="transparency-list" aria-label="Was die Wirkungsökonomie leistet und nicht behauptet">
       <article><h2>Was die WÖk nicht behauptet</h2><ul><li>Politik entscheide ohne Folgenprüfung.</li><li>Jede Wirkung lasse sich vorhersagen oder einer Entscheidung sicher zurechnen.</li><li>Die SDGs seien eine vollständige Wirkungsmethode.</li><li>SDG+ sei eine UN-Kategorie.</li><li>Ein Score ersetze demokratische Entscheidung.</li><li>WÖk-Modelle seien automatisch geltendes Recht.</li></ul></article>
-      <article><h2>Was die WÖk zusätzlich leistet</h2><ul><li>Eine gemeinsame Sprache für Wirkung, Wirkungspotenzial und Wirkungsrisiko.</li><li>Die zeitliche Verbindung von Ex ante und Ex post.</li><li>System-, Verteilungs- und Schutzfragen, die sichtbar bleiben.</li><li>Eine offene Referenz, Zurechnung und Rückkopplung für die nächste Entscheidung.</li></ul></article>
+      <article><h2>Was die WÖk zusätzlich leistet</h2><ul><li>Objektspezifische Wirkpfade nach <code>{portalUsp.pathFormula}</code>.</li><li>Explizite Datenfunktionen, Baseline, Gegenfaktum, Evidenz und Unsicherheit.</li><li>Wirkungen erster bis dritter Ordnung, Systemkaskaden, Verteilung und Resilienz.</li><li>Nichtkompensation bei schweren Schutzgrenzen.</li><li>Vergleich realistischer Handlungsoptionen ohne automatischen Score.</li><li>Versionierte Reality Checks und ein öffentliches politisches Wirkungsgedächtnis.</li></ul></article>
     </section>
 
     <section className="trust-links" aria-label="Weiterführende Informationen">
