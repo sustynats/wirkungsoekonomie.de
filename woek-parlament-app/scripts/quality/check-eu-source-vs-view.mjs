@@ -1,20 +1,33 @@
 #!/usr/bin/env node
 
-import { readFileSync } from "node:fs";
+import { readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 
 const baseUrl = (process.env.WOEK_SOURCE_VS_VIEW_BASE_URL ?? "http://localhost:3000").replace(/\/$/, "");
+const outputFile = process.env.WOEK_EU_SOURCE_VS_VIEW_REPORT ?? null;
+const requestHeaders = process.env.WOEK_SOURCE_VS_VIEW_COOKIE ? { cookie: process.env.WOEK_SOURCE_VS_VIEW_COOKIE } : {};
 const records = readFileSync(path.join(process.cwd(), "data", "eu", "impact-cases", "public-impact-records.jsonl"), "utf8").split(/\r?\n/).filter(Boolean).map((line) => JSON.parse(line));
 function visible(value) { return String(value).replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, " ").replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, " ").replace(/<[^>]+>/g, " ").replace(/&amp;/g, "&").replace(/&quot;/g, '"').replace(/&#x27;|&#39;/g, "'").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&nbsp;/g, " ").replace(/[–—]/g, "-").replace(/\s+/g, " ").trim(); }
 const failures = [];
+const cases = [];
 for (const record of records) {
-  const response = await fetch(`${baseUrl}/eu/wirkungsfaelle/${encodeURIComponent(record.impact_case_id)}`, { redirect: "manual" });
-  if (response.status !== 200) { failures.push(`${record.impact_case_id}: HTTP ${response.status}`); continue; }
+  const url = `${baseUrl}/eu/wirkungsfaelle/${encodeURIComponent(record.impact_case_id)}`;
+  const response = await fetch(url, { redirect: "manual", headers: requestHeaders });
+  const result = { impact_case_id: record.impact_case_id, url, http_status: response.status, fields_checked: 0, failures: [], status: "PASS" };
+  if (response.status !== 200) { failures.push(`${record.impact_case_id}: HTTP ${response.status}`); result.failures.push("HTTP_200"); result.status = "FAIL"; cases.push(result); continue; }
   const text = visible(await response.text());
   for (const value of [record.title, record.impact_core_summary, record.editorial_summary, record.key_finding, record.competence_scope, record.evidence_level === "NOT_ASSESSABLE" ? "Evidenz nicht bewertbar" : null].filter(Boolean)) {
-    if (!text.includes(visible(value))) failures.push(`${record.impact_case_id}: Feld fehlt: ${visible(value).slice(0, 80)}`);
+    result.fields_checked += 1;
+    if (!text.includes(visible(value))) { const message = `Feld fehlt: ${visible(value).slice(0, 80)}`; failures.push(`${record.impact_case_id}: ${message}`); result.failures.push(message); }
   }
-  for (const label of ["Richtung:", "Evidenz:", "Reality-Check:", "WÖk-Handlungsoption wird fachlich ergänzt.", "Vollständige EU-Fachakte"]) if (!text.includes(label)) failures.push(`${record.impact_case_id}: UI-Semantik fehlt: ${label}`);
+  for (const label of ["Richtung:", "Evidenz:", "Reality-Check:", "WÖk-Handlungsoption wird fachlich ergänzt.", "Vollständige EU-Fachakte"]) {
+    result.fields_checked += 1;
+    if (!text.includes(label)) { const message = `UI-Semantik fehlt: ${label}`; failures.push(`${record.impact_case_id}: ${message}`); result.failures.push(message); }
+  }
+  if (result.failures.length) result.status = "FAIL";
+  cases.push(result);
 }
-if (failures.length) { console.error(JSON.stringify({ status: "FAIL", checked: records.length, failures }, null, 2)); process.exit(1); }
-console.log(JSON.stringify({ status: "PASS", checked: records.length, fach_fields_lost: 0 }, null, 2));
+const report = { schema_version: "2.3-eu-live", generated_at: new Date().toISOString(), base_url: baseUrl, status: failures.length ? "FAIL" : "PASS", records_checked: records.length, records_passed: cases.filter((entry) => entry.status === "PASS").length, normalized_public_fields_checked: cases.reduce((sum, entry) => sum + entry.fields_checked, 0), fach_fields_lost: 0, failures, cases };
+if (outputFile) writeFileSync(outputFile, `${JSON.stringify(report, null, 2)}\n`);
+if (failures.length) { console.error(JSON.stringify(report, null, 2)); process.exit(1); }
+console.log(JSON.stringify(report, null, 2));
