@@ -161,6 +161,9 @@ export async function uploadDropboxText(filePath: string, content: string) {
     body: content,
     signal: AbortSignal.timeout(30_000),
   });
-  if (!response.ok) throw new Error(`Dropbox state upload failed (${response.status}).`);
+  if (!response.ok) {
+    const detail = (await response.text()).slice(0, 500).replace(/\s+/g, " ").trim();
+    throw new Error(`Dropbox state upload failed (${response.status})${detail ? `: ${detail}` : "."}`);
+  }
   return response.json() as Promise<{ id: string; path_display: string; rev: string }>;
 }
