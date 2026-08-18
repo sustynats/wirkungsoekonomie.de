@@ -16,7 +16,7 @@ type ProgrammeLedgerEntry = {
 };
 type ProgrammeLedger = { schema_version: string; updated_at: string; entries: ProgrammeLedgerEntry[] };
 
-const root = "/WÖK/WOEK-LAENDER-DAILY";
+const root = "/WOEK/WOEK-LAENDER-DAILY";
 const ledgerPath = `${root}/ledgers/programme-source-ledger.json`;
 
 function hash(bytes: Uint8Array) {

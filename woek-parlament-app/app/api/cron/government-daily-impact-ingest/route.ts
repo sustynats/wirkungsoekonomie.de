@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { processGovernmentDailyImpactIngest } from "@/lib/government/daily-impact-ingest";
+import { bootstrapDisabledResponse, recurringWritersEnabled } from "@/lib/autopilot/runtime-mode";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -12,6 +13,7 @@ function isAuthorized(request: Request) {
 
 export async function GET(request: Request) {
   if (!isAuthorized(request)) return NextResponse.json({ error: "Unauthorized." }, { status: 401 });
+  if (!recurringWritersEnabled()) return NextResponse.json(bootstrapDisabledResponse(), { status: 503 });
   try {
     return NextResponse.json(await processGovernmentDailyImpactIngest());
   } catch (error) {

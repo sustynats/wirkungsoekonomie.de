@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { GovernmentImpactCase } from "@/app/components/government/GovernmentImpactCase";
+import { RecommendationSection } from "@/app/components/recommendations/RecommendationSection";
 import { historyClassificationLabels, impactCaseById, impactCaseVersions } from "@/lib/government/impact-cases";
 
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
@@ -26,6 +27,7 @@ export default async function GovernmentImpactCasePage({ params }: { params: Pro
     <main className="section shell">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
       <GovernmentImpactCase record={record} />
+      <RecommendationSection impactCaseId={record.impact_case_id} />
       <section className="government-version-history" aria-labelledby="version-history-title">
         <h2 id="version-history-title">Versions- und Prüfverlauf</h2>
         <p>Frühere Ex-ante-Analysen bleiben erhalten. Spätere Beobachtungen überschreiben sie nicht.</p>

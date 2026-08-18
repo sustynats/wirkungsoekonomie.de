@@ -6,7 +6,7 @@ Der Prozess liest fachlich freigegebene Tagesübergaben aus Dropbox, validiert s
 
 Standardordner:
 
-`/WÖK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/analysis/`
+`/WOEK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/analysis/`
 
 Je Datum müssen gemeinsam vorliegen:
 
@@ -31,7 +31,7 @@ Die JSONL-Datei ist die maschinenlesbare Fachquelle. Die Markdown-Dateien bleibe
 
 Standardordner:
 
-`/WÖK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/technical-ingest/`
+`/WOEK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/technical-ingest/`
 
 Dort entstehen:
 

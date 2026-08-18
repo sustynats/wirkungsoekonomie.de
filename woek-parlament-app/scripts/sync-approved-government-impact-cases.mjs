@@ -19,7 +19,7 @@ if (!gateKeys.every((key) => gates[key] === "PASS")) {
 const appKey = process.env.DROPBOX_APP_KEY;
 const appSecret = process.env.DROPBOX_APP_SECRET;
 const refreshToken = process.env.DROPBOX_REFRESH_TOKEN;
-const statePath = (process.env.DROPBOX_GOVERNMENT_INGEST_STATE_PATH ?? "/WÖK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/technical-ingest").replace(/\/+$/, "");
+const statePath = (process.env.DROPBOX_GOVERNMENT_INGEST_STATE_PATH ?? "/WOEK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/technical-ingest").replace(/\/+$/, "");
 if (!appKey || !appSecret || !refreshToken) {
   if (process.env.VERCEL_ENV === "production") throw new Error("Government impact sync: Dropbox credentials are missing in Production while publication gates are green.");
   console.log("Government impact sync: no local Dropbox credentials; the fach-approved repository snapshot is preserved.");

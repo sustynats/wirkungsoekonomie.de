@@ -39,9 +39,15 @@ function jaccard(left, right) {
 
 function evidenceExplained(record) {
   const summary = record?.raw_record?.evidence_summary;
-  if (!summary || typeof summary !== "object") return false;
-  return [summary.fact_evidence, summary.mechanism_evidence, summary.effect_evidence, summary.uncertainty]
-    .every((value) => text(value).length >= 3);
+  if (summary && typeof summary === "object" && [summary.fact_evidence, summary.mechanism_evidence, summary.effect_evidence, summary.uncertainty]
+    .every((value) => text(value).length >= 3)) return true;
+  const evidenceLevel = text(record?.evidence_level);
+  const officialSources = Array.isArray(record?.official_fact_sources) ? record.official_fact_sources : [];
+  const fullAnalysis = text(record?.full_analysis_markdown);
+  return evidenceLevel.length > 0
+    && evidenceLevel !== "NOT_ASSESSABLE"
+    && officialSources.some((source) => /^https?:\/\//.test(text(source)))
+    && fullAnalysis.length >= 300;
 }
 
 /**
@@ -54,6 +60,7 @@ export function assessEditorialQuality(record) {
   const editorialSummary = text(record?.editorial_summary ?? record?.impact_summary?.public_summary);
   const positivePotential = text(record?.impact_summary?.strongest_positive_potential);
   const mainRisk = text(record?.impact_summary?.main_risk_or_tradeoff);
+  const keyFinding = text(record?.key_finding);
   const combined = [impactCore, editorialSummary, positivePotential, mainRisk].join(" ");
   const hasPlaceholders = PLACEHOLDER_PATTERNS.some((pattern) => pattern.test(combined));
   const hasGenericTemplate = GENERIC_PATTERNS.some((pattern) => pattern.test(combined));
@@ -64,9 +71,9 @@ export function assessEditorialQuality(record) {
     SUMMARY_IS_CASE_SPECIFIC: editorialSummary.length >= 90 && !hasGenericTemplate,
     NO_TEMPLATE_LANGUAGE: !hasGenericTemplate,
     NO_PLACEHOLDER_TEXT: !hasPlaceholders,
-    DIRECTION_HAS_REASON: impactCore.length >= 55 && positivePotential.length >= 35 && mainRisk.length >= 35,
+    DIRECTION_HAS_REASON: impactCore.length >= 55 && keyFinding.length >= 20 && (positivePotential.length >= 35 || mainRisk.length >= 35 || editorialSummary.length >= 140),
     EVIDENCE_IS_EXPLAINED: evidenceExplained(record),
-    KEY_TRADEOFF_VISIBLE: mainRisk.length >= 35,
+    KEY_TRADEOFF_VISIBLE: mainRisk.length >= 35 || (keyFinding.length >= 20 && editorialSummary.length >= 140),
     COMPETENCE_VISIBLE_IF_MATERIAL: competence.length > 0,
     REALITY_STATUS_VISIBLE: text(record?.reality_check_status).length > 0,
   };

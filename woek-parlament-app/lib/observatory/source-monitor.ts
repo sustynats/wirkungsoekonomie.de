@@ -10,7 +10,7 @@ import {
   uploadDropboxText,
 } from "@/lib/dropbox/app-client";
 
-const observatoryRoot = "/WÖK/WOEK-WIRKUNGSOBSERVATORIUM";
+const observatoryRoot = "/WOEK/WOEK-WIRKUNGSOBSERVATORIUM";
 
 type Source = {
   source_id: string;

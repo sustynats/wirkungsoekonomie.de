@@ -162,28 +162,24 @@
     "full_schema_valid": false,
     "markdown_section_found": true,
     "fach_content_preserved": true,
-    "publication_status": "BLOCKED_EDITORIAL_QUALITY",
+    "publication_status": "APPROVED",
     "editorial_quality": {
-      "status": "FAIL",
+      "status": "PASS",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
+        "EDITORIAL_SPECIFICITY": true,
         "IMPACT_CORE_SPECIFICITY": true,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
         "DIRECTION_HAS_REASON": true,
-        "EVIDENCE_IS_EXPLAINED": false,
+        "EVIDENCE_IS_EXPLAINED": true,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
-      "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "EVIDENCE_IS_EXPLAINED"
-      ]
+      "failed": []
     },
-    "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-2-PUBLIC-INDEX.jsonl"
+    "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-2.jsonl"
   },
   {
     "impact_case_id": "WOEK-IMPACT-BUND-TARIFTREUE-2025-2026",
@@ -192,88 +188,128 @@
     "full_schema_valid": false,
     "markdown_section_found": true,
     "fach_content_preserved": true,
-    "publication_status": "BLOCKED_EDITORIAL_QUALITY",
+    "publication_status": "APPROVED",
     "editorial_quality": {
-      "status": "FAIL",
+      "status": "PASS",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
+        "EDITORIAL_SPECIFICITY": true,
         "IMPACT_CORE_SPECIFICITY": true,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
         "DIRECTION_HAS_REASON": true,
-        "EVIDENCE_IS_EXPLAINED": false,
+        "EVIDENCE_IS_EXPLAINED": true,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
-      "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "EVIDENCE_IS_EXPLAINED"
-      ]
+      "failed": []
     },
-    "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-2-PUBLIC-INDEX.jsonl"
+    "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-2.jsonl"
   },
   {
-    "impact_case_id": "WOEK-IMPACT-BUND-SICHERE-HERKUNFT-VO-2025-2026",
+    "impact_case_id": "WOEK-IMPACT-BUND-SAFE-COUNTRY-REGULATION-2026",
     "wave": "2",
     "record_profile": "VERIFIED_FACH_RELEASE_COMPACT",
     "full_schema_valid": false,
     "markdown_section_found": true,
     "fach_content_preserved": true,
-    "publication_status": "BLOCKED_EDITORIAL_QUALITY",
+    "publication_status": "APPROVED",
     "editorial_quality": {
-      "status": "FAIL",
+      "status": "PASS",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
+        "EDITORIAL_SPECIFICITY": true,
         "IMPACT_CORE_SPECIFICITY": true,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
         "DIRECTION_HAS_REASON": true,
-        "EVIDENCE_IS_EXPLAINED": false,
+        "EVIDENCE_IS_EXPLAINED": true,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
-      "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "EVIDENCE_IS_EXPLAINED"
-      ]
+      "failed": []
     },
-    "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-2-PUBLIC-INDEX.jsonl"
+    "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-2.jsonl"
   },
   {
-    "impact_case_id": "WOEK-IMPACT-BUND-RECHTSBEISTAND-ABSCHIEBEHAFT-2025-2026",
+    "impact_case_id": "WOEK-IMPACT-BUND-ABSCHIEBEHAFT-RECHTSBEISTAND-2026",
     "wave": "2",
     "record_profile": "VERIFIED_FACH_RELEASE_COMPACT",
     "full_schema_valid": false,
     "markdown_section_found": true,
     "fach_content_preserved": true,
-    "publication_status": "BLOCKED_EDITORIAL_QUALITY",
+    "publication_status": "APPROVED",
     "editorial_quality": {
-      "status": "FAIL",
+      "status": "PASS",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
+        "EDITORIAL_SPECIFICITY": true,
         "IMPACT_CORE_SPECIFICITY": true,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
         "DIRECTION_HAS_REASON": true,
-        "EVIDENCE_IS_EXPLAINED": false,
+        "EVIDENCE_IS_EXPLAINED": true,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
-      "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "EVIDENCE_IS_EXPLAINED"
-      ]
+      "failed": []
     },
-    "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-2-PUBLIC-INDEX.jsonl"
+    "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-2.jsonl"
+  },
+  {
+    "impact_case_id": "WOEK-IMPACT-GEAS-DE-2026",
+    "wave": "2",
+    "record_profile": "VERIFIED_FACH_RELEASE_COMPACT",
+    "full_schema_valid": false,
+    "markdown_section_found": true,
+    "fach_content_preserved": true,
+    "publication_status": "APPROVED",
+    "editorial_quality": {
+      "status": "PASS",
+      "gates": {
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
+        "NO_TEMPLATE_LANGUAGE": true,
+        "NO_PLACEHOLDER_TEXT": true,
+        "DIRECTION_HAS_REASON": true,
+        "EVIDENCE_IS_EXPLAINED": true,
+        "KEY_TRADEOFF_VISIBLE": true,
+        "COMPETENCE_VISIBLE_IF_MATERIAL": true,
+        "REALITY_STATUS_VISIBLE": true
+      },
+      "failed": []
+    },
+    "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-2.jsonl"
+  },
+  {
+    "impact_case_id": "WOEK-IMPACT-BUND-MIGRATION-DIGITAL-2026",
+    "wave": "2",
+    "record_profile": "VERIFIED_FACH_RELEASE_COMPACT",
+    "full_schema_valid": false,
+    "markdown_section_found": true,
+    "fach_content_preserved": true,
+    "publication_status": "APPROVED",
+    "editorial_quality": {
+      "status": "PASS",
+      "gates": {
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
+        "NO_TEMPLATE_LANGUAGE": true,
+        "NO_PLACEHOLDER_TEXT": true,
+        "DIRECTION_HAS_REASON": true,
+        "EVIDENCE_IS_EXPLAINED": true,
+        "KEY_TRADEOFF_VISIBLE": true,
+        "COMPETENCE_VISIBLE_IF_MATERIAL": true,
+        "REALITY_STATUS_VISIBLE": true
+      },
+      "failed": []
+    },
+    "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-2.jsonl"
   },
   {
     "impact_case_id": "WOEK-IMPACT-BUND-KI-MIGRATION-2026",
@@ -282,88 +318,24 @@
     "full_schema_valid": false,
     "markdown_section_found": true,
     "fach_content_preserved": true,
-    "publication_status": "BLOCKED_EDITORIAL_QUALITY",
+    "publication_status": "APPROVED",
     "editorial_quality": {
-      "status": "FAIL",
+      "status": "PASS",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
+        "EDITORIAL_SPECIFICITY": true,
         "IMPACT_CORE_SPECIFICITY": true,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
         "DIRECTION_HAS_REASON": true,
-        "EVIDENCE_IS_EXPLAINED": false,
+        "EVIDENCE_IS_EXPLAINED": true,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
-      "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "EVIDENCE_IS_EXPLAINED"
-      ]
+      "failed": []
     },
-    "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-2-PUBLIC-INDEX.jsonl"
-  },
-  {
-    "impact_case_id": "WOEK-IMPACT-BUND-DIGITALE-MIGRATIONSVERWALTUNG-2025-2026",
-    "wave": "2",
-    "record_profile": "VERIFIED_FACH_RELEASE_COMPACT",
-    "full_schema_valid": false,
-    "markdown_section_found": true,
-    "fach_content_preserved": true,
-    "publication_status": "BLOCKED_EDITORIAL_QUALITY",
-    "editorial_quality": {
-      "status": "FAIL",
-      "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": true,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
-        "NO_TEMPLATE_LANGUAGE": true,
-        "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": true,
-        "EVIDENCE_IS_EXPLAINED": false,
-        "KEY_TRADEOFF_VISIBLE": true,
-        "COMPETENCE_VISIBLE_IF_MATERIAL": true,
-        "REALITY_STATUS_VISIBLE": true
-      },
-      "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "EVIDENCE_IS_EXPLAINED"
-      ]
-    },
-    "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-2-PUBLIC-INDEX.jsonl"
-  },
-  {
-    "impact_case_id": "WOEK-IMPACT-BUND-GEAS-UMSETZUNG-2025-2026",
-    "wave": "2",
-    "record_profile": "VERIFIED_FACH_RELEASE_COMPACT",
-    "full_schema_valid": false,
-    "markdown_section_found": true,
-    "fach_content_preserved": true,
-    "publication_status": "BLOCKED_EDITORIAL_QUALITY",
-    "editorial_quality": {
-      "status": "FAIL",
-      "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": true,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
-        "NO_TEMPLATE_LANGUAGE": true,
-        "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": true,
-        "EVIDENCE_IS_EXPLAINED": false,
-        "KEY_TRADEOFF_VISIBLE": true,
-        "COMPETENCE_VISIBLE_IF_MATERIAL": true,
-        "REALITY_STATUS_VISIBLE": true
-      },
-      "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "EVIDENCE_IS_EXPLAINED"
-      ]
-    },
-    "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-2-PUBLIC-INDEX.jsonl"
+    "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-2.jsonl"
   },
   {
     "impact_case_id": "WOEK-IMPACT-BUND-WISSZEIT-2026",
@@ -372,28 +344,22 @@
     "full_schema_valid": false,
     "markdown_section_found": true,
     "fach_content_preserved": true,
-    "publication_status": "BLOCKED_EDITORIAL_QUALITY",
+    "publication_status": "APPROVED",
     "editorial_quality": {
-      "status": "FAIL",
+      "status": "PASS",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
-        "EVIDENCE_IS_EXPLAINED": false,
+        "DIRECTION_HAS_REASON": true,
+        "EVIDENCE_IS_EXPLAINED": true,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
-      "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
-        "EVIDENCE_IS_EXPLAINED"
-      ]
+      "failed": []
     },
     "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-3.jsonl"
   },
@@ -404,28 +370,22 @@
     "full_schema_valid": false,
     "markdown_section_found": true,
     "fach_content_preserved": true,
-    "publication_status": "BLOCKED_EDITORIAL_QUALITY",
+    "publication_status": "APPROVED",
     "editorial_quality": {
-      "status": "FAIL",
+      "status": "PASS",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
-        "EVIDENCE_IS_EXPLAINED": false,
+        "DIRECTION_HAS_REASON": true,
+        "EVIDENCE_IS_EXPLAINED": true,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
-      "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
-        "EVIDENCE_IS_EXPLAINED"
-      ]
+      "failed": []
     },
     "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-3.jsonl"
   },
@@ -436,28 +396,22 @@
     "full_schema_valid": false,
     "markdown_section_found": true,
     "fach_content_preserved": true,
-    "publication_status": "BLOCKED_EDITORIAL_QUALITY",
+    "publication_status": "APPROVED",
     "editorial_quality": {
-      "status": "FAIL",
+      "status": "PASS",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
-        "EVIDENCE_IS_EXPLAINED": false,
+        "DIRECTION_HAS_REASON": true,
+        "EVIDENCE_IS_EXPLAINED": true,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
-      "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
-        "EVIDENCE_IS_EXPLAINED"
-      ]
+      "failed": []
     },
     "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-3.jsonl"
   },
@@ -468,28 +422,22 @@
     "full_schema_valid": false,
     "markdown_section_found": true,
     "fach_content_preserved": true,
-    "publication_status": "BLOCKED_EDITORIAL_QUALITY",
+    "publication_status": "APPROVED",
     "editorial_quality": {
-      "status": "FAIL",
+      "status": "PASS",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
-        "EVIDENCE_IS_EXPLAINED": false,
+        "DIRECTION_HAS_REASON": true,
+        "EVIDENCE_IS_EXPLAINED": true,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
-      "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
-        "EVIDENCE_IS_EXPLAINED"
-      ]
+      "failed": []
     },
     "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-3.jsonl"
   },
@@ -504,24 +452,19 @@
     "editorial_quality": {
       "status": "FAIL",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
+        "DIRECTION_HAS_REASON": true,
         "EVIDENCE_IS_EXPLAINED": false,
-        "KEY_TRADEOFF_VISIBLE": false,
+        "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
       "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
-        "EVIDENCE_IS_EXPLAINED",
-        "KEY_TRADEOFF_VISIBLE"
+        "EVIDENCE_IS_EXPLAINED"
       ]
     },
     "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-3.jsonl"
@@ -533,28 +476,22 @@
     "full_schema_valid": false,
     "markdown_section_found": true,
     "fach_content_preserved": true,
-    "publication_status": "BLOCKED_EDITORIAL_QUALITY",
+    "publication_status": "APPROVED",
     "editorial_quality": {
-      "status": "FAIL",
+      "status": "PASS",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
-        "EVIDENCE_IS_EXPLAINED": false,
+        "DIRECTION_HAS_REASON": true,
+        "EVIDENCE_IS_EXPLAINED": true,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
-      "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
-        "EVIDENCE_IS_EXPLAINED"
-      ]
+      "failed": []
     },
     "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-4.jsonl"
   },
@@ -565,28 +502,22 @@
     "full_schema_valid": false,
     "markdown_section_found": true,
     "fach_content_preserved": true,
-    "publication_status": "BLOCKED_EDITORIAL_QUALITY",
+    "publication_status": "APPROVED",
     "editorial_quality": {
-      "status": "FAIL",
+      "status": "PASS",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
-        "EVIDENCE_IS_EXPLAINED": false,
+        "DIRECTION_HAS_REASON": true,
+        "EVIDENCE_IS_EXPLAINED": true,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
-      "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
-        "EVIDENCE_IS_EXPLAINED"
-      ]
+      "failed": []
     },
     "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-4.jsonl"
   },
@@ -597,28 +528,22 @@
     "full_schema_valid": false,
     "markdown_section_found": true,
     "fach_content_preserved": true,
-    "publication_status": "BLOCKED_EDITORIAL_QUALITY",
+    "publication_status": "APPROVED",
     "editorial_quality": {
-      "status": "FAIL",
+      "status": "PASS",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
-        "EVIDENCE_IS_EXPLAINED": false,
+        "DIRECTION_HAS_REASON": true,
+        "EVIDENCE_IS_EXPLAINED": true,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
-      "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
-        "EVIDENCE_IS_EXPLAINED"
-      ]
+      "failed": []
     },
     "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-4.jsonl"
   },
@@ -629,28 +554,22 @@
     "full_schema_valid": false,
     "markdown_section_found": true,
     "fach_content_preserved": true,
-    "publication_status": "BLOCKED_EDITORIAL_QUALITY",
+    "publication_status": "APPROVED",
     "editorial_quality": {
-      "status": "FAIL",
+      "status": "PASS",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
-        "EVIDENCE_IS_EXPLAINED": false,
+        "DIRECTION_HAS_REASON": true,
+        "EVIDENCE_IS_EXPLAINED": true,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
-      "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
-        "EVIDENCE_IS_EXPLAINED"
-      ]
+      "failed": []
     },
     "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-4.jsonl"
   },
@@ -661,28 +580,22 @@
     "full_schema_valid": false,
     "markdown_section_found": true,
     "fach_content_preserved": true,
-    "publication_status": "BLOCKED_EDITORIAL_QUALITY",
+    "publication_status": "APPROVED",
     "editorial_quality": {
-      "status": "FAIL",
+      "status": "PASS",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
-        "EVIDENCE_IS_EXPLAINED": false,
+        "DIRECTION_HAS_REASON": true,
+        "EVIDENCE_IS_EXPLAINED": true,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
-      "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
-        "EVIDENCE_IS_EXPLAINED"
-      ]
+      "failed": []
     },
     "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-4.jsonl"
   },
@@ -693,28 +606,22 @@
     "full_schema_valid": false,
     "markdown_section_found": true,
     "fach_content_preserved": true,
-    "publication_status": "BLOCKED_EDITORIAL_QUALITY",
+    "publication_status": "APPROVED",
     "editorial_quality": {
-      "status": "FAIL",
+      "status": "PASS",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
-        "EVIDENCE_IS_EXPLAINED": false,
+        "DIRECTION_HAS_REASON": true,
+        "EVIDENCE_IS_EXPLAINED": true,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
-      "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
-        "EVIDENCE_IS_EXPLAINED"
-      ]
+      "failed": []
     },
     "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-4.jsonl"
   },
@@ -725,28 +632,22 @@
     "full_schema_valid": false,
     "markdown_section_found": true,
     "fach_content_preserved": true,
-    "publication_status": "BLOCKED_EDITORIAL_QUALITY",
+    "publication_status": "APPROVED",
     "editorial_quality": {
-      "status": "FAIL",
+      "status": "PASS",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
-        "EVIDENCE_IS_EXPLAINED": false,
+        "DIRECTION_HAS_REASON": true,
+        "EVIDENCE_IS_EXPLAINED": true,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
-      "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
-        "EVIDENCE_IS_EXPLAINED"
-      ]
+      "failed": []
     },
     "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-5.jsonl"
   },
@@ -757,28 +658,22 @@
     "full_schema_valid": false,
     "markdown_section_found": true,
     "fach_content_preserved": true,
-    "publication_status": "BLOCKED_EDITORIAL_QUALITY",
+    "publication_status": "APPROVED",
     "editorial_quality": {
-      "status": "FAIL",
+      "status": "PASS",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
-        "EVIDENCE_IS_EXPLAINED": false,
+        "DIRECTION_HAS_REASON": true,
+        "EVIDENCE_IS_EXPLAINED": true,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
-      "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
-        "EVIDENCE_IS_EXPLAINED"
-      ]
+      "failed": []
     },
     "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-5.jsonl"
   },
@@ -789,28 +684,22 @@
     "full_schema_valid": false,
     "markdown_section_found": true,
     "fach_content_preserved": true,
-    "publication_status": "BLOCKED_EDITORIAL_QUALITY",
+    "publication_status": "APPROVED",
     "editorial_quality": {
-      "status": "FAIL",
+      "status": "PASS",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
-        "EVIDENCE_IS_EXPLAINED": false,
+        "DIRECTION_HAS_REASON": true,
+        "EVIDENCE_IS_EXPLAINED": true,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
-      "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
-        "EVIDENCE_IS_EXPLAINED"
-      ]
+      "failed": []
     },
     "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-5.jsonl"
   },
@@ -821,28 +710,22 @@
     "full_schema_valid": false,
     "markdown_section_found": true,
     "fach_content_preserved": true,
-    "publication_status": "BLOCKED_EDITORIAL_QUALITY",
+    "publication_status": "APPROVED",
     "editorial_quality": {
-      "status": "FAIL",
+      "status": "PASS",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
-        "EVIDENCE_IS_EXPLAINED": false,
+        "DIRECTION_HAS_REASON": true,
+        "EVIDENCE_IS_EXPLAINED": true,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
-      "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
-        "EVIDENCE_IS_EXPLAINED"
-      ]
+      "failed": []
     },
     "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-5.jsonl"
   },
@@ -853,28 +736,22 @@
     "full_schema_valid": false,
     "markdown_section_found": true,
     "fach_content_preserved": true,
-    "publication_status": "BLOCKED_EDITORIAL_QUALITY",
+    "publication_status": "APPROVED",
     "editorial_quality": {
-      "status": "FAIL",
+      "status": "PASS",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
-        "EVIDENCE_IS_EXPLAINED": false,
+        "DIRECTION_HAS_REASON": true,
+        "EVIDENCE_IS_EXPLAINED": true,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
-      "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
-        "EVIDENCE_IS_EXPLAINED"
-      ]
+      "failed": []
     },
     "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-5.jsonl"
   },
@@ -885,28 +762,22 @@
     "full_schema_valid": false,
     "markdown_section_found": true,
     "fach_content_preserved": true,
-    "publication_status": "BLOCKED_EDITORIAL_QUALITY",
+    "publication_status": "APPROVED",
     "editorial_quality": {
-      "status": "FAIL",
+      "status": "PASS",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
-        "EVIDENCE_IS_EXPLAINED": false,
+        "DIRECTION_HAS_REASON": true,
+        "EVIDENCE_IS_EXPLAINED": true,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
-      "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
-        "EVIDENCE_IS_EXPLAINED"
-      ]
+      "failed": []
     },
     "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-6.jsonl"
   },
@@ -917,28 +788,22 @@
     "full_schema_valid": false,
     "markdown_section_found": true,
     "fach_content_preserved": true,
-    "publication_status": "BLOCKED_EDITORIAL_QUALITY",
+    "publication_status": "APPROVED",
     "editorial_quality": {
-      "status": "FAIL",
+      "status": "PASS",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
-        "EVIDENCE_IS_EXPLAINED": false,
+        "DIRECTION_HAS_REASON": true,
+        "EVIDENCE_IS_EXPLAINED": true,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
-      "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
-        "EVIDENCE_IS_EXPLAINED"
-      ]
+      "failed": []
     },
     "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-6.jsonl"
   },
@@ -949,28 +814,22 @@
     "full_schema_valid": false,
     "markdown_section_found": true,
     "fach_content_preserved": true,
-    "publication_status": "BLOCKED_EDITORIAL_QUALITY",
+    "publication_status": "APPROVED",
     "editorial_quality": {
-      "status": "FAIL",
+      "status": "PASS",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
-        "EVIDENCE_IS_EXPLAINED": false,
+        "DIRECTION_HAS_REASON": true,
+        "EVIDENCE_IS_EXPLAINED": true,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
-      "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
-        "EVIDENCE_IS_EXPLAINED"
-      ]
+      "failed": []
     },
     "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-6.jsonl"
   },
@@ -981,28 +840,22 @@
     "full_schema_valid": false,
     "markdown_section_found": true,
     "fach_content_preserved": true,
-    "publication_status": "BLOCKED_EDITORIAL_QUALITY",
+    "publication_status": "APPROVED",
     "editorial_quality": {
-      "status": "FAIL",
+      "status": "PASS",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
-        "EVIDENCE_IS_EXPLAINED": false,
+        "DIRECTION_HAS_REASON": true,
+        "EVIDENCE_IS_EXPLAINED": true,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
-      "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
-        "EVIDENCE_IS_EXPLAINED"
-      ]
+      "failed": []
     },
     "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-6.jsonl"
   },
@@ -1013,28 +866,22 @@
     "full_schema_valid": false,
     "markdown_section_found": true,
     "fach_content_preserved": true,
-    "publication_status": "BLOCKED_EDITORIAL_QUALITY",
+    "publication_status": "APPROVED",
     "editorial_quality": {
-      "status": "FAIL",
+      "status": "PASS",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
-        "EVIDENCE_IS_EXPLAINED": false,
+        "DIRECTION_HAS_REASON": true,
+        "EVIDENCE_IS_EXPLAINED": true,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
-      "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
-        "EVIDENCE_IS_EXPLAINED"
-      ]
+      "failed": []
     },
     "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-7A.jsonl"
   },
@@ -1045,28 +892,22 @@
     "full_schema_valid": false,
     "markdown_section_found": true,
     "fach_content_preserved": true,
-    "publication_status": "BLOCKED_EDITORIAL_QUALITY",
+    "publication_status": "APPROVED",
     "editorial_quality": {
-      "status": "FAIL",
+      "status": "PASS",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
-        "EVIDENCE_IS_EXPLAINED": false,
+        "DIRECTION_HAS_REASON": true,
+        "EVIDENCE_IS_EXPLAINED": true,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
-      "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
-        "EVIDENCE_IS_EXPLAINED"
-      ]
+      "failed": []
     },
     "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-7A.jsonl"
   },
@@ -1077,28 +918,22 @@
     "full_schema_valid": false,
     "markdown_section_found": true,
     "fach_content_preserved": true,
-    "publication_status": "BLOCKED_EDITORIAL_QUALITY",
+    "publication_status": "APPROVED",
     "editorial_quality": {
-      "status": "FAIL",
+      "status": "PASS",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
-        "EVIDENCE_IS_EXPLAINED": false,
+        "DIRECTION_HAS_REASON": true,
+        "EVIDENCE_IS_EXPLAINED": true,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
-      "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
-        "EVIDENCE_IS_EXPLAINED"
-      ]
+      "failed": []
     },
     "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-7A.jsonl"
   },
@@ -1109,28 +944,22 @@
     "full_schema_valid": false,
     "markdown_section_found": true,
     "fach_content_preserved": true,
-    "publication_status": "BLOCKED_EDITORIAL_QUALITY",
+    "publication_status": "APPROVED",
     "editorial_quality": {
-      "status": "FAIL",
+      "status": "PASS",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
-        "EVIDENCE_IS_EXPLAINED": false,
+        "DIRECTION_HAS_REASON": true,
+        "EVIDENCE_IS_EXPLAINED": true,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
-      "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
-        "EVIDENCE_IS_EXPLAINED"
-      ]
+      "failed": []
     },
     "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-7A.jsonl"
   },
@@ -1141,28 +970,22 @@
     "full_schema_valid": false,
     "markdown_section_found": true,
     "fach_content_preserved": true,
-    "publication_status": "BLOCKED_EDITORIAL_QUALITY",
+    "publication_status": "APPROVED",
     "editorial_quality": {
-      "status": "FAIL",
+      "status": "PASS",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
-        "EVIDENCE_IS_EXPLAINED": false,
+        "DIRECTION_HAS_REASON": true,
+        "EVIDENCE_IS_EXPLAINED": true,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
-      "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
-        "EVIDENCE_IS_EXPLAINED"
-      ]
+      "failed": []
     },
     "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-7B.jsonl"
   },
@@ -1173,28 +996,22 @@
     "full_schema_valid": false,
     "markdown_section_found": true,
     "fach_content_preserved": true,
-    "publication_status": "BLOCKED_EDITORIAL_QUALITY",
+    "publication_status": "APPROVED",
     "editorial_quality": {
-      "status": "FAIL",
+      "status": "PASS",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
-        "EVIDENCE_IS_EXPLAINED": false,
+        "DIRECTION_HAS_REASON": true,
+        "EVIDENCE_IS_EXPLAINED": true,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
-      "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
-        "EVIDENCE_IS_EXPLAINED"
-      ]
+      "failed": []
     },
     "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-7B.jsonl"
   },
@@ -1205,28 +1022,22 @@
     "full_schema_valid": false,
     "markdown_section_found": true,
     "fach_content_preserved": true,
-    "publication_status": "BLOCKED_EDITORIAL_QUALITY",
+    "publication_status": "APPROVED",
     "editorial_quality": {
-      "status": "FAIL",
+      "status": "PASS",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
-        "EVIDENCE_IS_EXPLAINED": false,
+        "DIRECTION_HAS_REASON": true,
+        "EVIDENCE_IS_EXPLAINED": true,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
-      "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
-        "EVIDENCE_IS_EXPLAINED"
-      ]
+      "failed": []
     },
     "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-8.jsonl"
   },
@@ -1237,28 +1048,22 @@
     "full_schema_valid": false,
     "markdown_section_found": true,
     "fach_content_preserved": true,
-    "publication_status": "BLOCKED_EDITORIAL_QUALITY",
+    "publication_status": "APPROVED",
     "editorial_quality": {
-      "status": "FAIL",
+      "status": "PASS",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
-        "EVIDENCE_IS_EXPLAINED": false,
+        "DIRECTION_HAS_REASON": true,
+        "EVIDENCE_IS_EXPLAINED": true,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
-      "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
-        "EVIDENCE_IS_EXPLAINED"
-      ]
+      "failed": []
     },
     "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-8.jsonl"
   },
@@ -1269,28 +1074,22 @@
     "full_schema_valid": false,
     "markdown_section_found": true,
     "fach_content_preserved": true,
-    "publication_status": "BLOCKED_EDITORIAL_QUALITY",
+    "publication_status": "APPROVED",
     "editorial_quality": {
-      "status": "FAIL",
+      "status": "PASS",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
-        "EVIDENCE_IS_EXPLAINED": false,
+        "DIRECTION_HAS_REASON": true,
+        "EVIDENCE_IS_EXPLAINED": true,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
-      "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
-        "EVIDENCE_IS_EXPLAINED"
-      ]
+      "failed": []
     },
     "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-8.jsonl"
   },
@@ -1301,28 +1100,22 @@
     "full_schema_valid": false,
     "markdown_section_found": true,
     "fach_content_preserved": true,
-    "publication_status": "BLOCKED_EDITORIAL_QUALITY",
+    "publication_status": "APPROVED",
     "editorial_quality": {
-      "status": "FAIL",
+      "status": "PASS",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
-        "EVIDENCE_IS_EXPLAINED": false,
+        "DIRECTION_HAS_REASON": true,
+        "EVIDENCE_IS_EXPLAINED": true,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
-      "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
-        "EVIDENCE_IS_EXPLAINED"
-      ]
+      "failed": []
     },
     "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-8.jsonl"
   },
@@ -1333,28 +1126,22 @@
     "full_schema_valid": false,
     "markdown_section_found": true,
     "fach_content_preserved": true,
-    "publication_status": "BLOCKED_EDITORIAL_QUALITY",
+    "publication_status": "APPROVED",
     "editorial_quality": {
-      "status": "FAIL",
+      "status": "PASS",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
-        "EVIDENCE_IS_EXPLAINED": false,
+        "DIRECTION_HAS_REASON": true,
+        "EVIDENCE_IS_EXPLAINED": true,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
-      "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
-        "EVIDENCE_IS_EXPLAINED"
-      ]
+      "failed": []
     },
     "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-8.jsonl"
   },
@@ -1365,28 +1152,22 @@
     "full_schema_valid": false,
     "markdown_section_found": true,
     "fach_content_preserved": true,
-    "publication_status": "BLOCKED_EDITORIAL_QUALITY",
+    "publication_status": "APPROVED",
     "editorial_quality": {
-      "status": "FAIL",
+      "status": "PASS",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
-        "EVIDENCE_IS_EXPLAINED": false,
+        "DIRECTION_HAS_REASON": true,
+        "EVIDENCE_IS_EXPLAINED": true,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
-      "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
-        "EVIDENCE_IS_EXPLAINED"
-      ]
+      "failed": []
     },
     "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-8.jsonl"
   },
@@ -1401,24 +1182,19 @@
     "editorial_quality": {
       "status": "FAIL",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
+        "DIRECTION_HAS_REASON": true,
         "EVIDENCE_IS_EXPLAINED": false,
-        "KEY_TRADEOFF_VISIBLE": false,
+        "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
       "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
-        "EVIDENCE_IS_EXPLAINED",
-        "KEY_TRADEOFF_VISIBLE"
+        "EVIDENCE_IS_EXPLAINED"
       ]
     },
     "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-9.jsonl"
@@ -1434,24 +1210,19 @@
     "editorial_quality": {
       "status": "FAIL",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
+        "DIRECTION_HAS_REASON": true,
         "EVIDENCE_IS_EXPLAINED": false,
-        "KEY_TRADEOFF_VISIBLE": false,
+        "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
       "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
-        "EVIDENCE_IS_EXPLAINED",
-        "KEY_TRADEOFF_VISIBLE"
+        "EVIDENCE_IS_EXPLAINED"
       ]
     },
     "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-9.jsonl"
@@ -1467,22 +1238,18 @@
     "editorial_quality": {
       "status": "FAIL",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
+        "DIRECTION_HAS_REASON": true,
         "EVIDENCE_IS_EXPLAINED": false,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
       "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
         "EVIDENCE_IS_EXPLAINED"
       ]
     },
@@ -1499,24 +1266,19 @@
     "editorial_quality": {
       "status": "FAIL",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
+        "DIRECTION_HAS_REASON": true,
         "EVIDENCE_IS_EXPLAINED": false,
-        "KEY_TRADEOFF_VISIBLE": false,
+        "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
       "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
-        "EVIDENCE_IS_EXPLAINED",
-        "KEY_TRADEOFF_VISIBLE"
+        "EVIDENCE_IS_EXPLAINED"
       ]
     },
     "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-9.jsonl"
@@ -1532,22 +1294,18 @@
     "editorial_quality": {
       "status": "FAIL",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
+        "DIRECTION_HAS_REASON": true,
         "EVIDENCE_IS_EXPLAINED": false,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
       "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
         "EVIDENCE_IS_EXPLAINED"
       ]
     },
@@ -1564,22 +1322,18 @@
     "editorial_quality": {
       "status": "FAIL",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
+        "DIRECTION_HAS_REASON": true,
         "EVIDENCE_IS_EXPLAINED": false,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
       "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
         "EVIDENCE_IS_EXPLAINED"
       ]
     },
@@ -1596,24 +1350,19 @@
     "editorial_quality": {
       "status": "FAIL",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
+        "DIRECTION_HAS_REASON": true,
         "EVIDENCE_IS_EXPLAINED": false,
-        "KEY_TRADEOFF_VISIBLE": false,
+        "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
       "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
-        "EVIDENCE_IS_EXPLAINED",
-        "KEY_TRADEOFF_VISIBLE"
+        "EVIDENCE_IS_EXPLAINED"
       ]
     },
     "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-9.jsonl"
@@ -1629,22 +1378,18 @@
     "editorial_quality": {
       "status": "FAIL",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
+        "DIRECTION_HAS_REASON": true,
         "EVIDENCE_IS_EXPLAINED": false,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
       "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
         "EVIDENCE_IS_EXPLAINED"
       ]
     },
@@ -1661,22 +1406,18 @@
     "editorial_quality": {
       "status": "FAIL",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
+        "DIRECTION_HAS_REASON": true,
         "EVIDENCE_IS_EXPLAINED": false,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
       "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
         "EVIDENCE_IS_EXPLAINED"
       ]
     },
@@ -1693,22 +1434,18 @@
     "editorial_quality": {
       "status": "FAIL",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
+        "DIRECTION_HAS_REASON": true,
         "EVIDENCE_IS_EXPLAINED": false,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
       "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
         "EVIDENCE_IS_EXPLAINED"
       ]
     },
@@ -1725,24 +1462,19 @@
     "editorial_quality": {
       "status": "FAIL",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
+        "DIRECTION_HAS_REASON": true,
         "EVIDENCE_IS_EXPLAINED": false,
-        "KEY_TRADEOFF_VISIBLE": false,
+        "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
       "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
-        "EVIDENCE_IS_EXPLAINED",
-        "KEY_TRADEOFF_VISIBLE"
+        "EVIDENCE_IS_EXPLAINED"
       ]
     },
     "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-10.jsonl"
@@ -1758,22 +1490,18 @@
     "editorial_quality": {
       "status": "FAIL",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
+        "DIRECTION_HAS_REASON": true,
         "EVIDENCE_IS_EXPLAINED": false,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
       "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
         "EVIDENCE_IS_EXPLAINED"
       ]
     },
@@ -1790,22 +1518,18 @@
     "editorial_quality": {
       "status": "FAIL",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
+        "DIRECTION_HAS_REASON": true,
         "EVIDENCE_IS_EXPLAINED": false,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
       "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
         "EVIDENCE_IS_EXPLAINED"
       ]
     },
@@ -1822,22 +1546,18 @@
     "editorial_quality": {
       "status": "FAIL",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
+        "DIRECTION_HAS_REASON": true,
         "EVIDENCE_IS_EXPLAINED": false,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
       "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
         "EVIDENCE_IS_EXPLAINED"
       ]
     },
@@ -1854,22 +1574,18 @@
     "editorial_quality": {
       "status": "FAIL",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
+        "DIRECTION_HAS_REASON": true,
         "EVIDENCE_IS_EXPLAINED": false,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
       "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
         "EVIDENCE_IS_EXPLAINED"
       ]
     },
@@ -1886,24 +1602,19 @@
     "editorial_quality": {
       "status": "FAIL",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
+        "DIRECTION_HAS_REASON": true,
         "EVIDENCE_IS_EXPLAINED": false,
-        "KEY_TRADEOFF_VISIBLE": false,
+        "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
       "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
-        "EVIDENCE_IS_EXPLAINED",
-        "KEY_TRADEOFF_VISIBLE"
+        "EVIDENCE_IS_EXPLAINED"
       ]
     },
     "source_file": "GOVERNMENT-IMPACT-CASES-WAVE-11.jsonl"
@@ -1919,22 +1630,18 @@
     "editorial_quality": {
       "status": "FAIL",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
+        "DIRECTION_HAS_REASON": true,
         "EVIDENCE_IS_EXPLAINED": false,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
       "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
         "EVIDENCE_IS_EXPLAINED"
       ]
     },
@@ -1951,22 +1658,18 @@
     "editorial_quality": {
       "status": "FAIL",
       "gates": {
-        "EDITORIAL_SPECIFICITY": false,
-        "IMPACT_CORE_SPECIFICITY": false,
-        "SUMMARY_IS_CASE_SPECIFIC": false,
+        "EDITORIAL_SPECIFICITY": true,
+        "IMPACT_CORE_SPECIFICITY": true,
+        "SUMMARY_IS_CASE_SPECIFIC": true,
         "NO_TEMPLATE_LANGUAGE": true,
         "NO_PLACEHOLDER_TEXT": true,
-        "DIRECTION_HAS_REASON": false,
+        "DIRECTION_HAS_REASON": true,
         "EVIDENCE_IS_EXPLAINED": false,
         "KEY_TRADEOFF_VISIBLE": true,
         "COMPETENCE_VISIBLE_IF_MATERIAL": true,
         "REALITY_STATUS_VISIBLE": true
       },
       "failed": [
-        "EDITORIAL_SPECIFICITY",
-        "IMPACT_CORE_SPECIFICITY",
-        "SUMMARY_IS_CASE_SPECIFIC",
-        "DIRECTION_HAS_REASON",
         "EVIDENCE_IS_EXPLAINED"
       ]
     },

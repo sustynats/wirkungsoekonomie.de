@@ -18,7 +18,7 @@ test("Dropbox inbox stays inactive until all authenticated connection fields exi
     process.env.DROPBOX_APP_KEY = "app-key";
     process.env.DROPBOX_APP_SECRET = "app-secret";
     process.env.DROPBOX_REFRESH_TOKEN = "refresh-token";
-    process.env.DROPBOX_REVIEW_RESULTS_PATH = "/WÖK/Review-Ergebnisse";
+    process.env.DROPBOX_REVIEW_RESULTS_PATH = "/WOEK/Review-Ergebnisse";
     assert.equal(dropboxReviewInboxReady(), true);
   } finally {
     for (const key of keys) {

@@ -6,6 +6,8 @@ import path from "node:path";
 const baseUrl = (process.env.WOEK_SOURCE_VS_VIEW_BASE_URL ?? "http://localhost:3000").replace(/\/$/, "");
 const file = path.join(process.cwd(), "data", "government", "impact-cases", "public-impact-records.jsonl");
 const records = readFileSync(file, "utf8").split(/\r?\n/).filter(Boolean).map((line) => JSON.parse(line));
+const recommendationFile = path.join(process.cwd(), "data", "recommendations", "public", "recommendations.jsonl");
+const recommendations = new Map(readFileSync(recommendationFile, "utf8").split(/\r?\n/).filter(Boolean).map((line) => JSON.parse(line)).map((record) => [record.impact_case_id, record]));
 
 function decodeHtml(value) {
   return value
@@ -32,7 +34,9 @@ for (const record of records) {
   const text = comparable(decodeHtml(await response.text()));
   const required = [
     record.title,
-    record.impact_summary.central_lever,
+    record.impact_core_summary,
+    record.editorial_summary,
+    record.key_finding,
     record.impact_summary.strongest_positive_potential,
     record.impact_summary.main_risk_or_tradeoff,
   ].filter((value) => comparable(value).length > 0);
@@ -41,6 +45,14 @@ for (const record of records) {
   }
   for (const label of ["Richtung:", "Evidenz:", "Reality-Check:", "Vollständige Fachakte"]) {
     if (!text.includes(label)) failures.push(`${record.impact_case_id}: UI-Semantik fehlt: ${label}`);
+  }
+  const recommendation = recommendations.get(record.impact_case_id);
+  if (recommendation) {
+    for (const value of [recommendation.recommendation_core_summary, recommendation.root_cause_or_binding_bottleneck, recommendation.system_leverage]) {
+      if (!text.includes(comparable(value))) failures.push(`${record.impact_case_id}: freigegebenes Recommendation-Feld fehlt in der View`);
+    }
+  } else if (!text.includes("WÖk-Handlungsoption wird fachlich ergänzt.")) {
+    failures.push(`${record.impact_case_id}: zulässiger Recommendation-Backfill-Hinweis fehlt`);
   }
 }
 

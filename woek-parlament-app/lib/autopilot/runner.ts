@@ -38,9 +38,9 @@ type SourceRegistry = {
   sources: Array<{ source_id: string; jurisdiction_id: string; institutional_role: string; name: string; base_url: string; access_type: string; adapter_status: string }>;
 };
 
-const root = "/WÖK/WOEK-AUTOPILOT";
-const stateDailyRoot = "/WÖK/WOEK-LAENDER-DAILY";
-const euDailyRoot = "/WÖK/WOEK-EU-DAILY";
+const root = "/WOEK/WOEK-AUTOPILOT";
+const stateDailyRoot = "/WOEK/WOEK-LAENDER-DAILY";
+const euDailyRoot = "/WOEK/WOEK-EU-DAILY";
 
 type ElectionCycleRegistry = {
   cycles: Array<{

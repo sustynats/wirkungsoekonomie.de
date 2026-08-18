@@ -15,6 +15,7 @@ const outputRoot = path.join(projectRoot, "data", "government", "impact-cases");
 const importedAt = "2026-08-18T12:30:00Z";
 
 const waves = ["1", "2", "3", "4", "5", "6", "7A", "7B", "8", "9", "10", "11"];
+const editorialManifestName = "GOVERNMENT-EDITORIAL-LAYER-MANIFEST-2.0-2026-08-18.json";
 
 function sha256(value) {
   return createHash("sha256").update(value).digest("hex");
@@ -49,7 +50,17 @@ function extractCaseMarkdown(markdown, title, impactCaseId) {
   const titleTokens = titleNeedle.split(" ").filter((token) => token.length >= 3 && !["und", "oder", "mit", "zur", "zum", "der", "die", "das"].includes(token));
   const idTokens = normalize(impactCaseId).split(" ").filter((token) => token.length >= 3);
   let start = -1;
+  const exactIdLine = lines.findIndex((line) => line.includes(`\`${impactCaseId}\``));
+  if (exactIdLine >= 0) {
+    for (let index = exactIdLine; index >= 0; index -= 1) {
+      if (/^#\s+/.test(lines[index])) {
+        start = index;
+        break;
+      }
+    }
+  }
   for (let index = 0; index < lines.length; index += 1) {
+    if (start >= 0) break;
     if (!/^#\s+/.test(lines[index])) continue;
     const heading = normalize(lines[index].replace(/^#\s+/, ""));
     if (heading.includes(titleNeedle) || titleNeedle.includes(heading.replace(/^\d+\s+/, ""))) {
@@ -132,17 +143,53 @@ function linkedActionIds(record) {
   return [];
 }
 
+function loadEditorialLayer() {
+  const manifestPath = path.join(analysisRoot, editorialManifestName);
+  const manifest = JSON.parse(readFileSync(manifestPath, "utf8"));
+  if (manifest.status !== "LEADING_PUBLIC_EDITORIAL_LAYER") {
+    throw new Error(`Ungueltiger Editorial-Layer-Status: ${manifest.status}`);
+  }
+  const byId = new Map();
+  const sourceHashes = {};
+  for (const part of manifest.parts) {
+    const file = path.join(analysisRoot, part.file);
+    const content = readFileSync(file, "utf8");
+    sourceHashes[part.file] = sha256(content);
+    for (const record of readJsonl(file)) {
+      if (byId.has(record.impact_case_id)) throw new Error(`Doppelte Editorial-ID: ${record.impact_case_id}`);
+      for (const field of manifest.required_fields) {
+        if (!String(record[field] ?? "").trim()) throw new Error(`Editorial-Pflichtfeld fehlt: ${record.impact_case_id} / ${field}`);
+      }
+      byId.set(record.impact_case_id, record);
+    }
+  }
+  const correctionsPath = path.join(analysisRoot, manifest.corrections_overlay);
+  const correctionsContent = readFileSync(correctionsPath, "utf8");
+  sourceHashes[manifest.corrections_overlay] = sha256(correctionsContent);
+  for (const correction of readJsonl(correctionsPath)) {
+    const current = byId.get(correction.impact_case_id);
+    if (!current) throw new Error(`Editorial-Korrektur ohne Basisdatensatz: ${correction.impact_case_id}`);
+    if (!manifest.required_fields.includes(correction.field)) throw new Error(`Nicht erlaubtes Editorial-Korrekturfeld: ${correction.field}`);
+    byId.set(correction.impact_case_id, { ...current, [correction.field]: correction.replacement });
+  }
+  if (byId.size !== manifest.validation.expected_unique_impact_case_ids) {
+    throw new Error(`Editorial-Coverage ${byId.size} statt ${manifest.validation.expected_unique_impact_case_ids}`);
+  }
+  return { byId, manifest, sourceHashes, manifestHash: sha256(readFileSync(manifestPath, "utf8")) };
+}
+
 const schema = JSON.parse(readFileSync(path.join(outputRoot, "WOEK-IMPACT-CASE-SCHEMA-2.0.1.json"), "utf8"));
 const ajv = new Ajv2020({ allErrors: true, strict: false });
 addFormats(ajv);
 const validateFull = ajv.compile(schema);
+const editorialLayer = loadEditorialLayer();
 
 const records = [];
 const importAudit = [];
 const seenIds = new Set();
 
 for (const wave of waves) {
-  const jsonName = wave === "2" ? "GOVERNMENT-IMPACT-CASES-WAVE-2-PUBLIC-INDEX.jsonl" : `GOVERNMENT-IMPACT-CASES-WAVE-${wave}.jsonl`;
+  const jsonName = `GOVERNMENT-IMPACT-CASES-WAVE-${wave}.jsonl`;
   const markdownName = `GOVERNMENT-IMPACT-CASES-WAVE-${wave}.md`;
   const jsonPath = path.join(analysisRoot, jsonName);
   const markdownPath = path.join(analysisRoot, markdownName);
@@ -185,6 +232,8 @@ for (const wave of waves) {
     const analysisAsOf = raw.scope?.analysis_as_of ?? raw.analysis_as_of ?? "2026-08-17";
     const analysisVersion = raw.analysis_version ?? `2.0-W${wave}`;
     const profile = fullSchemaValid ? "FULL_SCHEMA_2_0_1" : "VERIFIED_FACH_RELEASE_COMPACT";
+    const editorial = editorialLayer.byId.get(raw.impact_case_id);
+    if (!editorial) throw new Error(`Fuehrender Editorial-Layer fehlt: ${raw.impact_case_id}`);
 
     const normalizedRecord = {
       record_profile: profile,
@@ -210,8 +259,9 @@ for (const wave of waves) {
         direction_dependencies: fullSummary.direction_dependencies ?? "",
         measurement_priority: fullSummary.measurement_priority ?? stringValue(raw.measurement_priority ?? raw.monitoring),
       },
-      impact_core_summary: centralLever,
-      editorial_summary: publicSummary,
+      impact_core_summary: editorial.impact_core_summary,
+      editorial_summary: editorial.editorial_summary,
+      key_finding: editorial.key_finding,
       competence_status: fullSchemaValid ? (raw.scope?.competence_note ?? "OPEN") : "OPEN",
       boundary_status: mapBoundary(raw.boundary_review ?? { status: raw.boundaries?.length ? "WATCH" : "OPEN" }),
       reality_check_status: mapReality(raw.reality_check_status ?? raw.reality_check),
@@ -220,6 +270,11 @@ for (const wave of waves) {
       mechanism_sources: mechanismSources,
       post_decision_sources: postDecisionSources,
       full_analysis_markdown: fullAnalysisMarkdown,
+      editorial_source: {
+        manifest_file: editorialManifestName,
+        manifest_sha256: editorialLayer.manifestHash,
+        layer_status: editorialLayer.manifest.status,
+      },
       source_release: {
         jsonl_file: jsonName,
         jsonl_sha256: sha256(jsonContent),
@@ -267,6 +322,10 @@ const meta = {
   impact_cases_published: publicRecords.length,
   impact_cases_blocked_editorial_quality: reviewRecords.length,
   fach_content_loss: 0,
+  editorial_layer_status: editorialLayer.manifest.status,
+  editorial_layer_coverage: editorialLayer.byId.size,
+  editorial_layer_manifest: editorialManifestName,
+  editorial_layer_source_hashes: editorialLayer.sourceHashes,
   note: "Alle 63 Fachdatensätze bleiben verlustfrei erhalten. Öffentlich als fertige WÖk-Analyse erscheinen nur Fälle, die zusätzlich das redaktionelle P0-Gate bestehen. Nicht bestandene Fälle verbleiben mit vollständigem Fachtext im Review-Store; CodeX erzeugt keine Ersatztexte.",
 };
 

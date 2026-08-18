@@ -17,6 +17,7 @@
     "check:government-staging": "tsx --test tests/government-public-data.test.ts",
     "check:government-daily-ingest": "tsx --test tests/government-daily-ingest.test.ts",
     "check:government-source-vs-view": "node scripts/quality/check-government-source-vs-view.mjs",
+    "check:eu-source-vs-view": "node scripts/quality/check-eu-source-vs-view.mjs",
     "government:sync-approved": "node scripts/sync-approved-government-impact-cases.mjs",
     "parliament:sync-approved": "node scripts/sync-approved-parliament-daily.mjs",
     "observatory:sync-approved": "node scripts/sync-approved-observatory.mjs",

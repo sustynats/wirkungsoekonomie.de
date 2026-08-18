@@ -8,6 +8,7 @@ import releasePublicationSourceLinks from "@/data/generated/release-1/publicatio
 import { directionLabels, evidenceLabels, getPublicImpactCases } from "@/lib/government/impact-cases";
 import { getGovernmentPublicData, sourceFunctionLabels } from "@/lib/government/public-data";
 import { listPublicEvidenceEvents } from "@/lib/observatory/public-data";
+import { getEuImpactCases } from "@/lib/eu/impact-cases";
 import { isSafePublicSourceUrl, sourceDetailHrefForUrl, sourceSlugForCanonicalUrl } from "@/lib/sources/url";
 
 export { isSafePublicSourceUrl, sourceDetailHrefForUrl, sourceSlugForCanonicalUrl } from "@/lib/sources/url";
@@ -371,6 +372,9 @@ function institutionForUrl(value: string) {
     "bundesnetzagentur.de": "Bundesnetzagentur",
     "bundesbank.de": "Deutsche Bundesbank",
     "pubmed.ncbi.nlm.nih.gov": "PubMed / U.S. National Library of Medicine",
+    "commission.europa.eu": "Europäische Kommission",
+    "eur-lex.europa.eu": "EUR-Lex",
+    "consilium.europa.eu": "Rat der Europäischen Union",
   };
   return known[hostname] ?? hostname;
 }
@@ -517,6 +521,51 @@ function governmentImpactSources(): StaticPublicSource[] {
           usages: [usage],
         });
       }
+    }
+  }
+  return [...grouped.values()];
+}
+
+function euImpactSources(): StaticPublicSource[] {
+  const grouped = new Map<string, StaticPublicSource>();
+  for (const impact of getEuImpactCases()) {
+    for (const url of impact.official_sources) {
+      const canonicalUrl = isSafePublicSourceUrl(url);
+      const slug = canonicalUrl ? sourceSlugForCanonicalUrl(canonicalUrl) : null;
+      if (!canonicalUrl || !slug) continue;
+      const usage: PublicSourceUsage = {
+        caseSlug: impact.impact_case_id,
+        caseTitle: impact.title,
+        caseKind: "EU_IMPACT_CASE",
+        decisionDate: impact.analysis_as_of,
+        sourceRole: "DECISION_FACT",
+        locations: [],
+        note: "Die Quelle dokumentiert den amtlichen EU-Gegenstand oder seinen Verfahrensstand. Sie ist kein eigenständiger Nachweis einer eingetretenen Wirkung.",
+        caseHref: `/eu/wirkungsfaelle/${encodeURIComponent(impact.impact_case_id)}`,
+        analysisSummary: impact.editorial_summary,
+        analysisDirection: directionLabels[impact.primary_direction] ?? impact.primary_direction,
+        evidenceLevel: evidenceLabels[impact.evidence_level] ?? impact.evidence_level,
+      };
+      const existing = grouped.get(slug);
+      if (existing) { existing.usages.push(usage); continue; }
+      const institution = institutionForUrl(canonicalUrl);
+      grouped.set(slug, {
+        id: `eu-impact-${slug}`,
+        slug,
+        title: `Amtliche EU-Quelle zu „${impact.title}“`,
+        institution,
+        category: /eur-lex/i.test(canonicalUrl) ? "OTHER_PRIMARY_SOURCE" : "GOVERNMENT_RECORD",
+        role: "DECISION_FACT",
+        documentType: /eur-lex/i.test(canonicalUrl) ? "EU-Rechts- oder Verfahrensdokument" : "Amtliche EU-Veröffentlichung",
+        canonicalUrl,
+        documentDate: null,
+        retrievedAt: `${impact.analysis_as_of}T12:00:00Z`,
+        versionLabel: `In EU-Initialanalyse ${impact.analysis_version} dokumentiert`,
+        sourceHash: null,
+        temporalClass: "AVAILABLE_AT_DECISION_TIME",
+        abstract: `Die amtliche Veröffentlichung dokumentiert den Gegenstand „${impact.title}“ oder seinen institutionellen beziehungsweise rechtlichen Stand. Sie trägt die Faktenbasis der WÖk-Analyse; Wirkungspotenziale, Risiken und spätere Zustandsänderungen werden davon getrennt geprüft.`,
+        usages: [usage],
+      });
     }
   }
   return [...grouped.values()];
@@ -756,6 +805,7 @@ function staticPublicSources() {
     ...releasedFachakteSources(),
     ...governmentFactSources(),
     ...governmentImpactSources(),
+    ...euImpactSources(),
     ...observatorySources()
   ]) {
     const existing = deduplicated.get(source.slug);

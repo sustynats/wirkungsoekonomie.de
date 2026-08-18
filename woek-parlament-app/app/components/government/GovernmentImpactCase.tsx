@@ -94,6 +94,7 @@ export function GovernmentImpactCase({ record, compact = false }: { record: Publ
         <p className="eyebrow">WÖk-Wirkungsanalyse · {record.analysis_mode === "IMPACT_REALITY_CHECK" ? "mit Reality-Check-Stufe" : "Ex ante"}</p>
         <h2 id={`impact-${record.impact_case_id}`}>{record.title}</h2>
         <p className="lead">{lead}</p>
+        {record.key_finding && <p className="government-key-finding"><strong>Wichtigster Befund:</strong> {record.key_finding}</p>}
         <div className="government-impact-axis" aria-label="Wirkungsrichtung und Evidenz">
           <span className={`impact-direction impact-direction--${record.primary_direction.toLowerCase()}`}><strong>Richtung:</strong> {directionLabels[record.primary_direction]}</span>
           <span><strong>Evidenz:</strong> {evidenceLabels[record.evidence_level]}</span>

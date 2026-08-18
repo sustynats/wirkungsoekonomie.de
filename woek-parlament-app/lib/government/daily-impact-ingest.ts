@@ -25,8 +25,8 @@ import {
   type DeploymentGates,
 } from "@/lib/government/daily-impact-ingest-core";
 
-const defaultAnalysisPath = "/WÖK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/analysis";
-const defaultStatePath = "/WÖK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/technical-ingest";
+const defaultAnalysisPath = "/WOEK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/analysis";
+const defaultStatePath = "/WOEK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/technical-ingest";
 const productionBaseUrl = "https://parlament.wirkungsoekonomie.de";
 
 type DailyGroup = {

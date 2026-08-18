@@ -7,7 +7,7 @@ import addFormats from "ajv-formats";
 const appKey = process.env.DROPBOX_APP_KEY;
 const appSecret = process.env.DROPBOX_APP_SECRET;
 const refreshToken = process.env.DROPBOX_REFRESH_TOKEN;
-const root = "/WÖK/WOEK-WIRKUNGSOBSERVATORIUM";
+const root = "/WOEK/WOEK-WIRKUNGSOBSERVATORIUM";
 const outputRoot = path.join(process.cwd(), "data", "observatory", "public");
 
 if (!appKey || !appSecret || !refreshToken) {

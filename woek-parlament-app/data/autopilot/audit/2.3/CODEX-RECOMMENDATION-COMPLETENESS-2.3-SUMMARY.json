@@ -1,0 +1,18 @@
+{
+  "schema_version": "2.3",
+  "generated_at": "2026-08-18T08:32:40.385Z",
+  "audited_fach_records": 135,
+  "canonical_recommendation_subjects": 133,
+  "recommendation_complete": 0,
+  "recommendation_partial": 0,
+  "recommendation_required": 133,
+  "no_recommendation_required": 2,
+  "recommendation_blocked": 0,
+  "recommendation_review_required": 0,
+  "queue_count": 133,
+  "recommendation_content_created_by_codex": 0,
+  "completeness_gate": "PASS",
+  "backfill_status": "REQUIRED_133",
+  "public_staging_rule": "WÖk-Handlungsoption wird fachlich ergänzt.",
+  "production_rule": "DISABLED_UNTIL_WOEK_EXTERNAL_END_AUDIT"
+}

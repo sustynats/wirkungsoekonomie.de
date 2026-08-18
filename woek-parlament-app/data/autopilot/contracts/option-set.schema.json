@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wirkungsoekonomie.de/contracts/woek-option-set-2.3.schema.json",
+  "title": "WÖk OptionSet 2.3",
+  "type": "array",
+  "minItems": 2,
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["option_id", "label", "description", "status_quo", "dimensions"],
+    "properties": {
+      "option_id": { "type": "string", "minLength": 1 },
+      "label": { "type": "string", "minLength": 3 },
+      "description": { "type": "string", "minLength": 20 },
+      "status_quo": { "type": "boolean" },
+      "dimensions": {
+        "type": "object",
+        "minProperties": 1,
+        "additionalProperties": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}

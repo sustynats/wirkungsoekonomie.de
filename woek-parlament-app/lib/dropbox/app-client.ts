@@ -1,3 +1,5 @@
+import { validateManagedPath } from "@/lib/dropbox/managed-paths";
+
 const dropboxApi = "https://api.dropboxapi.com/2";
 const dropboxAuthApi = "https://api.dropboxapi.com";
 const dropboxContentApi = "https://content.dropboxapi.com/2";
@@ -42,11 +44,7 @@ export function dropboxAppReady() {
 }
 
 export function normalizeDropboxPath(value: string) {
-  const normalized = value.trim().replace(/\/+$/, "");
-  if (!normalized.startsWith("/") || normalized.includes("..") || normalized.includes("//")) {
-    throw new Error("Dropbox path must be absolute and normalized.");
-  }
-  return normalized;
+  return validateManagedPath(value);
 }
 
 async function accessToken() {

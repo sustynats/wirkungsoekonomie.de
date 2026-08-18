@@ -5,7 +5,7 @@ import { downloadDropboxTextIfPresent, uploadDropboxText } from "@/lib/dropbox/a
 import { parseOfficialStateElectionDates } from "@/lib/autopilot/election-calendar-core";
 
 const calendarUrl = "https://www.bundeswahlleiterin.de/service/wahltermine.html";
-const registryPath = "/WÖK/WOEK-AUTOPILOT/REGISTRIES/election-cycles.json";
+const registryPath = "/WOEK/WOEK-AUTOPILOT/REGISTRIES/election-cycles.json";
 type Cycle = (typeof staticCycles.cycles)[number] & { election_cycle_state?: string; programme_analysis_status?: string; coalition_formation_status?: string; new_government_status?: string };
 type Registry = { schema_version: string; generated_at: string; cycles: Cycle[] };
 

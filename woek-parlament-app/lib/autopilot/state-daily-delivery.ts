@@ -41,7 +41,7 @@ type StateSource = {
   adapter_status: string;
 };
 
-const deliveryRoot = "/WÖK/WOEK-LAENDER-DAILY/DELIVERIES";
+const deliveryRoot = "/WOEK/WOEK-LAENDER-DAILY/DELIVERIES";
 
 function sha256(content: string) {
   return createHash("sha256").update(content).digest("hex");

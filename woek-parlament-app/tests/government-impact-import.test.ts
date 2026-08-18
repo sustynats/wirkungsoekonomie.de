@@ -11,15 +11,17 @@ const meta = JSON.parse(readFileSync("data/government/impact-cases/public-impact
 const hash = (value: string) => createHash("sha256").update(value).digest("hex");
 
 test("all 63 fachliche government ImpactCases are preserved across public and review stores", () => {
-  assert.equal(records.length, 6);
-  assert.equal(reviewRecords.length, 57);
+  assert.equal(records.length, meta.impact_cases_published);
+  assert.equal(reviewRecords.length, meta.impact_cases_blocked_editorial_quality);
   assert.equal(records.length + reviewRecords.length, 63);
   assert.equal(meta.impact_cases_total, 63);
-  assert.equal(meta.impact_cases_published, 6);
-  assert.equal(meta.impact_cases_blocked_editorial_quality, 57);
+  assert.equal(meta.impact_cases_published, 44);
+  assert.equal(meta.impact_cases_blocked_editorial_quality, 19);
   assert.equal(meta.impact_cases_full_schema_2_0_1, 6);
   assert.equal(meta.impact_cases_compact_source_preserved, 57);
   assert.equal(meta.fach_content_loss, 0);
+  assert.equal(meta.editorial_layer_status, "LEADING_PUBLIC_EDITORIAL_LAYER");
+  assert.equal(meta.editorial_layer_coverage, 63);
   assert.equal(new Set([...records, ...reviewRecords].map((record) => record.impact_case_id)).size, 63);
 });
 
@@ -29,6 +31,7 @@ test("each public ImpactCase retains raw data, full Fachtext and release hashes"
     assert.equal(record.editorial_quality.status, "PASS");
     assert.ok(record.impact_core_summary.length > 50);
     assert.ok(record.editorial_summary.length > 80);
+    assert.ok(record.key_finding.length > 20);
     assert.ok(record.impact_case_id);
     assert.ok(record.title);
     assert.ok(Object.values(record.impact_summary).some((value) => typeof value === "string" && value.trim().length > 0), record.impact_case_id);

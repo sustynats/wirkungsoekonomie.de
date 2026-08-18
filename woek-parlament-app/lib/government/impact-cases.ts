@@ -33,6 +33,7 @@ export type PublicGovernmentImpactRecord = {
   };
   impact_core_summary: string;
   editorial_summary: string;
+  key_finding: string;
   competence_status: string;
   editorial_quality: EditorialAssessment;
   boundary_status: "PASS" | "WATCH" | "BLOCK" | "OPEN";
@@ -50,6 +51,11 @@ export type PublicGovernmentImpactRecord = {
     case_markdown_sha256: string;
     imported_at: string;
   };
+  editorial_source?: {
+    manifest_file: string;
+    manifest_sha256: string;
+    layer_status: string;
+  };
   raw_record: WoeKImpactCase | Record<string, unknown>;
 };
 
@@ -62,6 +68,10 @@ export type ImpactImportMeta = {
   impact_cases_published: number;
   impact_cases_blocked_editorial_quality: number;
   fach_content_loss: number;
+  editorial_layer_status: string;
+  editorial_layer_coverage: number;
+  editorial_layer_manifest: string;
+  editorial_layer_source_hashes: Record<string, string>;
   note: string;
 };
 
@@ -149,6 +159,7 @@ export function publicRecordFromFullSchema(record: WoeKImpactCase): PublicGovern
     },
     impact_core_summary: String(record.impact_summary.central_lever),
     editorial_summary: String(record.impact_summary.public_summary),
+    key_finding: String((record as WoeKImpactCase & { key_finding?: string }).key_finding ?? ""),
     competence_status: String(record.scope.competence_note ?? "OPEN"),
     boundary_status: boundaryStatus,
     reality_check_status: String(record.reality_check.status),

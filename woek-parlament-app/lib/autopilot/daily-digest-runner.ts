@@ -12,7 +12,7 @@ import {
 import { politicalDigestWindow } from "@/lib/autopilot/digest-window";
 import { sendWirkungsradarDailyDigest } from "@/lib/wirkungsradar/daily-digest";
 
-const reportRoot = "/WÖK/WOEK-AUTOPILOT/LEDGERS";
+const reportRoot = "/WOEK/WOEK-AUTOPILOT/LEDGERS";
 
 export async function processPoliticalDailyDigest(now = new Date()) {
   const berlin = politicalDigestWindow(now);

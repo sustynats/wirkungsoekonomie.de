@@ -6,8 +6,8 @@ import addFormats from "ajv-formats";
 const appKey = process.env.DROPBOX_APP_KEY;
 const appSecret = process.env.DROPBOX_APP_SECRET;
 const refreshToken = process.env.DROPBOX_REFRESH_TOKEN;
-const dailyRoot = (process.env.DROPBOX_PARLIAMENT_DAILY_PATH ?? "/WÖK/WOEK-PARLAMENT-DAILY").replace(/\/+$/, "");
-const autopilotRoot = "/WÖK/WOEK-AUTOPILOT";
+const dailyRoot = (process.env.DROPBOX_PARLIAMENT_DAILY_PATH ?? "/WOEK/WOEK-PARLAMENT-DAILY").replace(/\/+$/, "");
+const autopilotRoot = "/WOEK/WOEK-AUTOPILOT";
 const outputRoot = path.join(process.cwd(), "data", "generated");
 
 if (!appKey || !appSecret || !refreshToken) {

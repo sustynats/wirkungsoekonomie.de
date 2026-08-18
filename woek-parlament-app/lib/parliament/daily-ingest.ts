@@ -41,7 +41,7 @@ import {
   type VerifiedPublicChange,
 } from "@/lib/parliament/daily-ingest-core";
 
-const defaultRoot = "/WÖK/WOEK-PARLAMENT-DAILY";
+const defaultRoot = "/WOEK/WOEK-PARLAMENT-DAILY";
 const initialCursor = "2025-03-25T00:00:00.000Z";
 const productionBaseUrl = "https://parlament.wirkungsoekonomie.de";
 
