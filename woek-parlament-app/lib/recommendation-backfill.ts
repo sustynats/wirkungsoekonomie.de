@@ -1,4 +1,5 @@
 export const CODEX_MUST_NOT_GENERATE_RECOMMENDATIONS = true as const;
+export const ZIP_IS_NOT_CANONICAL_SOURCE = true as const;
 
 export const allowedRecommendationStatuses = [
   "PREFERRED_OPTION",
@@ -23,6 +24,7 @@ export type RecommendationLedgerRecord = {
   impact_case_id: string;
   recommendation_id?: string | null;
   recommendation_version?: string | null;
+  recommendation_content_sha256?: string | null;
   status: RecommendationLedgerStatus;
 };
 
@@ -30,6 +32,8 @@ export type RecommendationIdentity = {
   impact_case_id: string;
   recommendation_id: string;
   recommendation_version: string;
+  recommendation_content_sha256?: string | null;
+  supersedes_recommendation_version?: string | null;
 };
 
 export type RecommendationQueueEntry = {
@@ -41,8 +45,10 @@ export type RecommendationBackfillDisposition =
   | "PROCESS"
   | "SKIP_COMPLETED_APPROVED"
   | "IDEMPOTENT_ALREADY_CANONICAL"
+  | "PROCESS_NEW_APPROVED_VERSION"
   | "CONFLICT_WITH_COMPLETED_APPROVED"
-  | "CONFLICTING_CANONICAL_VERSION";
+  | "CONFLICTING_CANONICAL_VERSION"
+  | "CONFLICTING_CANONICAL_CONTENT";
 
 export function shouldSkipRecommendationQueueEntry(
   impactCaseId: string,
@@ -74,18 +80,42 @@ export function recommendationBackfillDisposition(input: {
   if (completed) {
     const exactCompletedIdentity = completed.recommendation_id === input.incoming.recommendation_id
       && completed.recommendation_version === input.incoming.recommendation_version;
-    return exactCompletedIdentity ? "SKIP_COMPLETED_APPROVED" : "CONFLICT_WITH_COMPLETED_APPROVED";
+    if (exactCompletedIdentity) {
+      const contentConflict = Boolean(
+        completed.recommendation_content_sha256
+        && input.incoming.recommendation_content_sha256
+        && completed.recommendation_content_sha256 !== input.incoming.recommendation_content_sha256,
+      );
+      return contentConflict ? "CONFLICTING_CANONICAL_CONTENT" : "SKIP_COMPLETED_APPROVED";
+    }
+    if (input.incoming.supersedes_recommendation_version === completed.recommendation_version) {
+      return "PROCESS_NEW_APPROVED_VERSION";
+    }
+    return "CONFLICT_WITH_COMPLETED_APPROVED";
   }
 
-  const canonicalForImpactCase = input.canonicalRecommendations.find((record) =>
+  const canonicalForImpactCase = input.canonicalRecommendations.filter((record) =>
     record.impact_case_id === input.incoming.impact_case_id);
 
-  if (!canonicalForImpactCase) return "PROCESS";
+  if (!canonicalForImpactCase.length) return "PROCESS";
 
-  const exactCanonicalIdentity = canonicalForImpactCase.recommendation_id === input.incoming.recommendation_id
-    && canonicalForImpactCase.recommendation_version === input.incoming.recommendation_version;
+  const exactCanonicalIdentity = canonicalForImpactCase.find((record) =>
+    record.recommendation_id === input.incoming.recommendation_id
+    && record.recommendation_version === input.incoming.recommendation_version);
 
-  return exactCanonicalIdentity ? "IDEMPOTENT_ALREADY_CANONICAL" : "CONFLICTING_CANONICAL_VERSION";
+  if (exactCanonicalIdentity) {
+    const contentConflict = Boolean(
+      exactCanonicalIdentity.recommendation_content_sha256
+      && input.incoming.recommendation_content_sha256
+      && exactCanonicalIdentity.recommendation_content_sha256 !== input.incoming.recommendation_content_sha256,
+    );
+    return contentConflict ? "CONFLICTING_CANONICAL_CONTENT" : "IDEMPOTENT_ALREADY_CANONICAL";
+  }
+
+  const supersededCanonicalVersion = canonicalForImpactCase.some((record) =>
+    record.recommendation_version === input.incoming.supersedes_recommendation_version);
+
+  return supersededCanonicalVersion ? "PROCESS_NEW_APPROVED_VERSION" : "CONFLICTING_CANONICAL_VERSION";
 }
 
 const forbiddenTechnicalDerivationFields = new Set([
@@ -99,7 +129,10 @@ const forbiddenTechnicalDerivationFields = new Set([
   "score_winner",
 ]);
 
-export function assertRecommendationIsFachApprovedRecord(record: Record<string, unknown>) {
+export function assertRecommendationIsFachApprovedRecord(
+  record: Record<string, unknown>,
+  options: { requiredFachStatus?: "APPROVED" } = {},
+) {
   if (!allowedRecommendationStatuses.includes(record.recommendation_status as AllowedRecommendationStatus)) {
     throw new Error(`Unsupported recommendation_status: ${String(record.recommendation_status)}`);
   }
@@ -111,8 +144,70 @@ export function assertRecommendationIsFachApprovedRecord(record: Record<string, 
   }
 
   const fachStatus = String(record.fach_status ?? "");
-  if (!["APPROVED", "APPROVED_WITH_OPEN_DATA", "APPROVED_FOR_CODEX_INTEGRATION"].includes(fachStatus)) {
+  const allowedFachStatuses = options.requiredFachStatus
+    ? [options.requiredFachStatus]
+    : ["APPROVED", "APPROVED_WITH_OPEN_DATA", "APPROVED_FOR_CODEX_INTEGRATION"];
+  if (!allowedFachStatuses.includes(fachStatus)) {
     throw new Error(`Recommendation record is not fach-approved: ${fachStatus || "MISSING"}`);
+  }
+
+  return true;
+}
+
+const requiredRecommendationScalars = [
+  "recommendation_id",
+  "impact_case_id",
+  "recommendation_version",
+  "knowledge_cutoff_date",
+  "root_cause_or_binding_bottleneck",
+  "system_leverage",
+  "competence_scope",
+  "implementation_route",
+  "evidence_grade",
+  "uncertainty",
+  "hindsight_limitations",
+] as const;
+
+const requiredRecommendationArrays = [
+  "source_refs",
+  "option_set",
+  "cascade_effects",
+  "safeguards",
+  "monitoring_indicators",
+  "evidence_available_at_decision_time",
+  "evidence_only_available_later",
+  "legal_constraints",
+] as const;
+
+export function assertRecommendationHandoffRecord(record: Record<string, unknown>) {
+  assertRecommendationIsFachApprovedRecord(record, { requiredFachStatus: "APPROVED" });
+
+  for (const field of requiredRecommendationScalars) {
+    if (typeof record[field] !== "string" || !String(record[field]).trim()) {
+      throw new Error(`Recommendation handoff is missing required field: ${field}`);
+    }
+  }
+
+  for (const field of requiredRecommendationArrays) {
+    if (!Array.isArray(record[field])) {
+      throw new Error(`Recommendation handoff field must be an array: ${field}`);
+    }
+  }
+
+  for (const field of ["source_refs", "option_set", "cascade_effects", "safeguards", "monitoring_indicators"] as const) {
+    if ((record[field] as unknown[]).length === 0) {
+      throw new Error(`Recommendation handoff field must not be empty: ${field}`);
+    }
+  }
+
+  if (!Object.hasOwn(record, "woek_preferred_option")) {
+    throw new Error("Recommendation handoff is missing preferred option / decision corridor.");
+  }
+  if (!Object.hasOwn(record, "fallback_option")) {
+    throw new Error("Recommendation handoff is missing fallback_option.");
+  }
+  if (!Object.hasOwn(record, "supersedes_recommendation_version")) {
+    throw new Error("Recommendation handoff is missing supersession metadata.");
   }
 
   return true;

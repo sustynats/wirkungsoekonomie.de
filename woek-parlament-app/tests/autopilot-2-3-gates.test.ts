@@ -8,11 +8,13 @@ import { bootstrapDisabledResponse, recurringWritersEnabled } from "@/lib/autopi
 import { managedDropboxPath, validateManagedPath, woekDropboxRoot } from "@/lib/dropbox/managed-paths";
 import { recommendationReviewCandidate, recommendationVersionCanFollow } from "@/lib/recommendation-versioning";
 import {
+  assertRecommendationHandoffRecord,
   assertRecommendationIsFachApprovedRecord,
   CODEX_MUST_NOT_GENERATE_RECOMMENDATIONS,
   nextOpenRecommendationQueueEntries,
   recommendationBackfillDisposition,
   shouldSkipRecommendationQueueEntry,
+  ZIP_IS_NOT_CANONICAL_SOURCE,
 } from "@/lib/recommendation-backfill";
 
 const contracts = path.resolve("data/autopilot/contracts");
@@ -180,6 +182,8 @@ test("same RecommendationVersion is idempotent and conflicting identities fail c
     impact_case_id: "WOEK-IMPACT-TEST-1",
     recommendation_id: "WOEK-REC-TEST-1-R1",
     recommendation_version: "2.3-R1",
+    recommendation_content_sha256: "a".repeat(64),
+    supersedes_recommendation_version: null,
   };
 
   assert.equal(recommendationBackfillDisposition({
@@ -205,10 +209,23 @@ test("same RecommendationVersion is idempotent and conflicting identities fail c
     ledgerRecords: [],
     canonicalRecommendations: [{ ...incoming, recommendation_version: "2.3-R2" }],
   }), "CONFLICTING_CANONICAL_VERSION");
+
+  assert.equal(recommendationBackfillDisposition({
+    incoming,
+    ledgerRecords: [],
+    canonicalRecommendations: [{ ...incoming, recommendation_content_sha256: "b".repeat(64) }],
+  }), "CONFLICTING_CANONICAL_CONTENT");
+
+  assert.equal(recommendationBackfillDisposition({
+    incoming: { ...incoming, recommendation_id: "WOEK-REC-TEST-1-R2", recommendation_version: "2.3-R2", supersedes_recommendation_version: "2.3-R1" },
+    ledgerRecords: [{ ...incoming, status: "COMPLETED_APPROVED" }],
+    canonicalRecommendations: [incoming],
+  }), "PROCESS_NEW_APPROVED_VERSION");
 });
 
 test("recommendation gate accepts only fach-approved records and forbids score derivation", () => {
   assert.equal(CODEX_MUST_NOT_GENERATE_RECOMMENDATIONS, true);
+  assert.equal(ZIP_IS_NOT_CANONICAL_SOURCE, true);
   assert.equal(assertRecommendationIsFachApprovedRecord({
     recommendation_status: "PREFERRED_DESIGN",
     fach_status: "APPROVED_FOR_CODEX_INTEGRATION",
@@ -226,4 +243,14 @@ test("recommendation gate accepts only fach-approved records and forbids score d
     recommendation_status: "PREFERRED_DESIGN",
     fach_status: "OPEN",
   }), /not fach-approved/);
+
+  assert.throws(() => assertRecommendationIsFachApprovedRecord({
+    recommendation_status: "PREFERRED_DESIGN",
+    fach_status: "APPROVED_FOR_CODEX_INTEGRATION",
+  }, { requiredFachStatus: "APPROVED" }), /not fach-approved/);
+
+  assert.equal(assertRecommendationHandoffRecord(recommendation()), true);
+  const missingFallback = { ...recommendation() };
+  delete (missingFallback as Partial<typeof missingFallback>).fallback_option;
+  assert.throws(() => assertRecommendationHandoffRecord(missingFallback), /fallback_option/);
 });

@@ -1,40 +1,32 @@
 #!/usr/bin/env node
 
 import { createHash } from "node:crypto";
-import {
-  existsSync,
-  readFileSync,
-  readdirSync,
-  renameSync,
-  writeFileSync,
-} from "node:fs";
+import { existsSync, readFileSync, readdirSync, renameSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import JSZip from "jszip";
+import Ajv2020 from "ajv/dist/2020";
+import addFormats from "ajv-formats";
 import {
-  assertRecommendationIsFachApprovedRecord,
+  assertRecommendationHandoffRecord,
   CODEX_MUST_NOT_GENERATE_RECOMMENDATIONS,
   nextOpenRecommendationQueueEntries,
   recommendationBackfillDisposition,
+  ZIP_IS_NOT_CANONICAL_SOURCE,
   type RecommendationIdentity,
   type RecommendationLedgerRecord,
   type RecommendationQueueEntry,
 } from "../lib/recommendation-backfill";
 
 const BATCH_ID = "2026-08-18-PM-B01";
-const EXPECTED_IDS = new Set([
-  "WOEK-REC-BUND-STROMVKG-2026-R1",
-  "WOEK-REC-BUND-KHAG-2025-2026-R1",
-  "WOEK-REC-BUND-ALTERSVORSORGE-2026-R1",
-]);
 const EXPECTED_IMPACT_CASES = new Set([
   "WOEK-IMPACT-BUND-STROMVKG-2026",
   "WOEK-IMPACT-BUND-KHAG-2025-2026",
   "WOEK-IMPACT-BUND-ALTERSVORSORGE-2026",
 ]);
-const SOURCE_JSONL = `GOVERNMENT-RECOMMENDATIONS-${BATCH_ID}-PROPOSED.jsonl`;
-const SOURCE_MARKDOWN = `GOVERNMENT-RECOMMENDATIONS-${BATCH_ID}-PROPOSED.md`;
 const TARGET_JSONL = `GOVERNMENT-RECOMMENDATIONS-${BATCH_ID}.jsonl`;
 const TARGET_MARKDOWN = `GOVERNMENT-RECOMMENDATIONS-${BATCH_ID}.md`;
+const FACH_HANDOFF = `RECOMMENDATION-BACKFILL-HANDOFF-${BATCH_ID}.json`;
+const CODEX_IMPORT_STATUS = `CODEX-RECOMMENDATION-IMPORT-STATUS-${BATCH_ID}.json`;
 
 type JsonObject = Record<string, unknown>;
 type Ledger = {
@@ -42,7 +34,16 @@ type Ledger = {
   canonical_root: string;
   updated_at: string;
   processing_rule: string;
-  records: RecommendationLedgerRecord[] & JsonObject[];
+  records: Array<RecommendationLedgerRecord & JsonObject>;
+};
+type PackageContent = {
+  transportMode: "CANONICAL_DIRECT_FILES" | "OPTIONAL_ZIP_CONTAINER";
+  jsonl: Buffer;
+  markdown: Buffer;
+  handoff: Buffer;
+  hashes: Record<string, string>;
+  packageSha256?: string;
+  manifestSha256?: string;
 };
 
 function fail(message: string): never {
@@ -53,25 +54,23 @@ function sha256(value: Buffer | string) {
   return createHash("sha256").update(value).digest("hex");
 }
 
+function recordSha256(record: JsonObject) {
+  return sha256(JSON.stringify(record));
+}
+
 function lines<T>(value: Buffer | string): T[] {
   return value.toString().split(/\r?\n/).filter(Boolean).map((line) => JSON.parse(line) as T);
 }
 
 function berlinTimestamp() {
+  const now = new Date();
   const parts = new Intl.DateTimeFormat("sv-SE", {
-    timeZone: "Europe/Berlin",
-    year: "numeric",
-    month: "2-digit",
-    day: "2-digit",
-    hour: "2-digit",
-    minute: "2-digit",
-    second: "2-digit",
-    hourCycle: "h23",
-  }).format(new Date()).replace(" ", "T");
+    timeZone: "Europe/Berlin", year: "numeric", month: "2-digit", day: "2-digit",
+    hour: "2-digit", minute: "2-digit", second: "2-digit", hourCycle: "h23",
+  }).format(now).replace(" ", "T");
   const offsetName = new Intl.DateTimeFormat("en", {
-    timeZone: "Europe/Berlin",
-    timeZoneName: "longOffset",
-  }).formatToParts(new Date()).find((part) => part.type === "timeZoneName")?.value ?? "GMT+00:00";
+    timeZone: "Europe/Berlin", timeZoneName: "longOffset",
+  }).formatToParts(now).find((part) => part.type === "timeZoneName")?.value ?? "GMT+00:00";
   return `${parts}${offsetName.replace("GMT", "")}`;
 }
 
@@ -87,6 +86,41 @@ function assertBelowRoot(candidate: string, root: string) {
     fail(`Managed recommendation path must stay below canonical /WOEK mirror: ${resolved}`);
   }
   return resolved;
+}
+
+function assertNoLocalPath(value: unknown, context = "record") {
+  if (typeof value === "string" && (/^\/tmp\//.test(value) || /^\/Users\//.test(value) || /^file:\/\//.test(value))) {
+    fail(`Local path is forbidden in canonical/public recommendation ${context}: ${value}`);
+  }
+  if (Array.isArray(value)) value.forEach((item, index) => assertNoLocalPath(item, `${context}[${index}]`));
+  else if (value && typeof value === "object") {
+    Object.entries(value as JsonObject).forEach(([key, item]) => assertNoLocalPath(item, `${context}.${key}`));
+  }
+}
+
+function atomicWrite(file: string, content: Buffer | string) {
+  if (existsSync(file)) {
+    const existing = readFileSync(file);
+    const incoming = Buffer.isBuffer(content) ? content : Buffer.from(content);
+    if (existing.equals(incoming)) return "IDEMPOTENT";
+    fail(`Refusing to overwrite existing history: ${file}`);
+  }
+  const temporary = `${file}.tmp-${process.pid}`;
+  writeFileSync(temporary, content);
+  renameSync(temporary, file);
+  return "WRITTEN";
+}
+
+function replaceJsonAtomically(file: string, value: unknown) {
+  const temporary = `${file}.tmp-${process.pid}`;
+  writeFileSync(temporary, `${JSON.stringify(value, null, 2)}\n`);
+  renameSync(temporary, file);
+}
+
+function replaceJsonlAtomically(file: string, records: JsonObject[]) {
+  const temporary = `${file}.tmp-${process.pid}`;
+  writeFileSync(temporary, records.length ? `${records.map((record) => JSON.stringify(record)).join("\n")}\n` : "");
+  renameSync(temporary, file);
 }
 
 function manifestEntries(raw: Buffer) {
@@ -111,62 +145,122 @@ function manifestEntries(raw: Buffer) {
   });
 }
 
-async function readPackage(zipPath: string) {
+function waitingStatus(missing: string[]) {
+  process.stdout.write(`${JSON.stringify({
+    status: "WAITING_FOR_FACH_RECOMMENDATION_HANDOFF",
+    batch_id: BATCH_ID,
+    canonical_root: "/WOEK",
+    missing,
+    transport_zip_required: false,
+    ZIP_IS_NOT_CANONICAL_SOURCE,
+    p0_blocker: false,
+    importer_error: false,
+    production_impact: "NONE",
+    independent_ui_work_may_continue: true,
+    CODEX_MUST_NOT_GENERATE_RECOMMENDATIONS,
+    NO_HISTORY_OVERWRITTEN: true,
+  }, null, 2)}\n`);
+}
+
+function readDirectPackage(paths: { jsonl: string; markdown: string; handoff: string }): PackageContent | null {
+  const canonicalPaths: Record<keyof typeof paths, string> = {
+    jsonl: `/WOEK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/analysis/${TARGET_JSONL}`,
+    markdown: `/WOEK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/analysis/${TARGET_MARKDOWN}`,
+    handoff: `/WOEK/WOEK-AUTOPILOT/CONTROL/${FACH_HANDOFF}`,
+  };
+  const missing = (Object.keys(paths) as Array<keyof typeof paths>)
+    .filter((name) => !existsSync(paths[name]))
+    .map((name) => canonicalPaths[name]);
+  if (missing.length) {
+    waitingStatus(missing);
+    return null;
+  }
+  const jsonl = readFileSync(paths.jsonl);
+  const markdown = readFileSync(paths.markdown);
+  const handoff = readFileSync(paths.handoff);
+  return {
+    transportMode: "CANONICAL_DIRECT_FILES",
+    jsonl, markdown, handoff,
+    hashes: {
+      recommendation_jsonl_sha256: sha256(jsonl),
+      recommendation_markdown_sha256: sha256(markdown),
+      fach_handoff_sha256: sha256(handoff),
+    },
+  };
+}
+
+async function readOptionalZipPackage(zipPath: string): Promise<PackageContent> {
   const packageBytes = readFileSync(zipPath);
   const zip = await JSZip.loadAsync(packageBytes);
   const entries = Object.values(zip.files).filter((entry) => !entry.dir);
   const byBaseName = new Map(entries.map((entry) => [path.basename(entry.name), entry]));
-  const jsonlEntry = byBaseName.get(SOURCE_JSONL) ?? fail(`Package is missing ${SOURCE_JSONL}`);
-  const markdownEntry = byBaseName.get(SOURCE_MARKDOWN) ?? fail(`Package is missing ${SOURCE_MARKDOWN}`);
+  const pick = (names: string[]) => names.map((name) => byBaseName.get(name)).find(Boolean);
+  const jsonlEntry = pick([TARGET_JSONL, `GOVERNMENT-RECOMMENDATIONS-${BATCH_ID}-PROPOSED.jsonl`])
+    ?? fail(`Optional ZIP is missing ${TARGET_JSONL}`);
+  const markdownEntry = pick([TARGET_MARKDOWN, `GOVERNMENT-RECOMMENDATIONS-${BATCH_ID}-PROPOSED.md`])
+    ?? fail(`Optional ZIP is missing ${TARGET_MARKDOWN}`);
+  const handoffEntry = byBaseName.get(FACH_HANDOFF) ?? fail(`Optional ZIP is missing ${FACH_HANDOFF}`);
   const manifestEntry = entries.find((entry) => /(?:manifest|sha256)/i.test(path.basename(entry.name)))
-    ?? fail("Package is missing its SHA-256 manifest.");
-  const [jsonl, markdown, manifest] = await Promise.all([
-    jsonlEntry.async("nodebuffer"),
-    markdownEntry.async("nodebuffer"),
-    manifestEntry.async("nodebuffer"),
+    ?? fail("Optional ZIP is missing its SHA-256 manifest.");
+  const [jsonl, markdown, handoff, manifest] = await Promise.all([
+    jsonlEntry.async("nodebuffer"), markdownEntry.async("nodebuffer"),
+    handoffEntry.async("nodebuffer"), manifestEntry.async("nodebuffer"),
   ]);
   const expected = manifestEntries(manifest);
-  for (const [name, bytes] of [[SOURCE_JSONL, jsonl], [SOURCE_MARKDOWN, markdown]] as const) {
-    const manifestItem = expected.find((entry) => path.basename(entry.name) === name)
-      ?? fail(`SHA-256 manifest has no entry for ${name}`);
-    if (manifestItem.hash !== sha256(bytes)) fail(`SHA-256 mismatch for ${name}`);
+  for (const [entry, bytes] of [[jsonlEntry, jsonl], [markdownEntry, markdown], [handoffEntry, handoff]] as const) {
+    const manifestItem = expected.find((item) => path.basename(item.name) === path.basename(entry.name))
+      ?? fail(`SHA-256 manifest has no entry for ${path.basename(entry.name)}`);
+    if (manifestItem.hash !== sha256(bytes)) fail(`SHA-256 mismatch for ${path.basename(entry.name)}`);
   }
   return {
-    jsonl,
-    markdown,
+    transportMode: "OPTIONAL_ZIP_CONTAINER",
+    jsonl, markdown, handoff,
     packageSha256: sha256(packageBytes),
     manifestSha256: sha256(manifest),
-    manifestName: path.basename(manifestEntry.name),
+    hashes: {
+      recommendation_jsonl_sha256: sha256(jsonl),
+      recommendation_markdown_sha256: sha256(markdown),
+      fach_handoff_sha256: sha256(handoff),
+    },
   };
 }
 
-function atomicWrite(file: string, content: Buffer | string) {
-  if (existsSync(file)) {
-    const existing = readFileSync(file);
-    const incoming = Buffer.isBuffer(content) ? content : Buffer.from(content);
-    if (existing.equals(incoming)) return "IDEMPOTENT";
-    fail(`Refusing to overwrite existing history: ${file}`);
-  }
-  const temporary = `${file}.tmp-${process.pid}`;
-  writeFileSync(temporary, content);
-  renameSync(temporary, file);
-  return "WRITTEN";
+function approvedIdsFromHandoff(handoff: JsonObject) {
+  if (Array.isArray(handoff.approved_recommendation_ids)) return handoff.approved_recommendation_ids.map(String);
+  if (Array.isArray(handoff.APPROVED_RECOMMENDATIONS)) return handoff.APPROVED_RECOMMENDATIONS.map(String);
+  return [];
 }
 
-function replaceJsonAtomically(file: string, value: unknown) {
-  const temporary = `${file}.tmp-${process.pid}`;
-  writeFileSync(temporary, `${JSON.stringify(value, null, 2)}\n`);
-  renameSync(temporary, file);
+function approvedImpactCasesFromHandoff(handoff: JsonObject) {
+  return Array.isArray(handoff.approved_impact_case_ids) ? handoff.approved_impact_case_ids.map(String) : [];
+}
+
+function assertRecommendationSchema(records: JsonObject[]) {
+  const contractsRoot = path.resolve(process.cwd(), "data/autopilot/contracts");
+  const optionSetSchema = JSON.parse(readFileSync(path.join(contractsRoot, "option-set.schema.json"), "utf8"));
+  const recommendationSchema = JSON.parse(readFileSync(path.join(contractsRoot, "recommendation-record.schema.json"), "utf8"));
+  const ajv = new Ajv2020({ allErrors: true, strict: false });
+  addFormats(ajv);
+  ajv.addSchema(optionSetSchema);
+  const validate = ajv.compile(recommendationSchema);
+  for (const record of records) {
+    const recommendationId = String(record.recommendation_id);
+    if (!validate(record)) {
+      fail(`Recommendation schema validation failed for ${recommendationId}: ${JSON.stringify(validate.errors)}`);
+    }
+  }
 }
 
 function canonicalRecommendationIdentities(analysisRoot: string) {
   return readdirSync(analysisRoot)
     .filter((name) => /^GOVERNMENT-RECOMMENDATIONS-.+\.jsonl$/.test(name) && !/(?:PROPOSED|BLOCKED|PENDING)/.test(name))
     .flatMap((name) => lines<JsonObject>(readFileSync(path.join(analysisRoot, name))))
-    .map((record) => ({
+    .map((record): RecommendationIdentity => ({
       impact_case_id: String(record.impact_case_id),
       recommendation_id: String(record.recommendation_id),
       recommendation_version: String(record.recommendation_version),
+      recommendation_content_sha256: recordSha256(record),
+      supersedes_recommendation_version: record.supersedes_recommendation_version == null ? null : String(record.supersedes_recommendation_version),
     }));
 }
 
@@ -194,79 +288,137 @@ function nestedObject(record: JsonObject | null, key: string) {
   return value && typeof value === "object" && !Array.isArray(value) ? value as JsonObject : null;
 }
 
+function updatePublicStore(records: JsonObject[]) {
+  const publicPath = path.resolve(process.cwd(), "data/recommendations/public/recommendations.jsonl");
+  const historyPath = path.resolve(process.cwd(), "data/recommendations/history/recommendations.jsonl");
+  const current = lines<JsonObject>(readFileSync(publicPath));
+  const history = lines<JsonObject>(readFileSync(historyPath));
+  const next = [...current];
+  const nextHistory = [...history];
+  for (const record of records) {
+    const sameIdentity = next.find((candidate) => candidate.recommendation_id === record.recommendation_id
+      && candidate.recommendation_version === record.recommendation_version);
+    if (sameIdentity) {
+      if (recordSha256(sameIdentity) !== recordSha256(record)) fail(`Public RecommendationVersion content conflict: ${String(record.recommendation_id)}`);
+      continue;
+    }
+    const currentIndex = next.findIndex((candidate) => candidate.impact_case_id === record.impact_case_id);
+    if (currentIndex >= 0) {
+      const previous = next[currentIndex];
+      if (record.supersedes_recommendation_version !== previous.recommendation_version) {
+        fail(`New public RecommendationVersion does not supersede current version: ${String(record.impact_case_id)}`);
+      }
+      if (!nextHistory.some((candidate) => candidate.recommendation_id === previous.recommendation_id
+        && candidate.recommendation_version === previous.recommendation_version)) nextHistory.push(previous);
+      next[currentIndex] = record;
+    } else next.push(record);
+  }
+  replaceJsonlAtomically(publicPath, next);
+  replaceJsonlAtomically(historyPath, nextHistory);
+  return { public_count: next.length, history_count: nextHistory.length };
+}
+
 async function main() {
   if (!CODEX_MUST_NOT_GENERATE_RECOMMENDATIONS) fail("Recommendation generation invariant is disabled.");
+  if (!ZIP_IS_NOT_CANONICAL_SOURCE) fail("ZIP canonical-source invariant is disabled.");
   if ((process.env.WOEK_DROPBOX_ROOT ?? "/WOEK") !== "/WOEK") fail("WOEK_DROPBOX_ROOT must be exactly /WOEK.");
   const localRoot = path.resolve(process.env.WOEK_CANONICAL_LOCAL_ROOT ?? "");
   if (!localRoot || path.basename(localRoot) !== "WOEK") fail("WOEK_CANONICAL_LOCAL_ROOT must point to the local mirror of /WOEK.");
-  const packagePath = assertBelowRoot(arg("--package") ?? fail("Usage: --package /path/below/WOEK/package.zip"), localRoot);
+
   const analysisRoot = assertBelowRoot(path.join(localRoot, "WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0", "analysis"), localRoot);
   const controlRoot = assertBelowRoot(path.join(localRoot, "WOEK-AUTOPILOT", "CONTROL"), localRoot);
   const ledgerPath = assertBelowRoot(path.join(localRoot, "WOEK-AUTOPILOT", "LEDGERS", "RECOMMENDATION-BACKFILL-LEDGER.json"), localRoot);
   const queuePath = assertBelowRoot(path.join(controlRoot, "RECOMMENDATION-BACKFILL-QUEUE-2.3.jsonl"), localRoot);
   const targetJsonl = assertBelowRoot(path.join(analysisRoot, TARGET_JSONL), localRoot);
   const targetMarkdown = assertBelowRoot(path.join(analysisRoot, TARGET_MARKDOWN), localRoot);
-  const handoffPath = assertBelowRoot(path.join(controlRoot, `RECOMMENDATION-BACKFILL-HANDOFF-${BATCH_ID}.json`), localRoot);
+  const fachHandoffPath = assertBelowRoot(path.join(controlRoot, FACH_HANDOFF), localRoot);
+  const codexStatusPath = assertBelowRoot(path.join(controlRoot, CODEX_IMPORT_STATUS), localRoot);
   const nextBatchPath = assertBelowRoot(path.join(controlRoot, "RECOMMENDATION-NEXT-BATCH-HANDOFF-2026-08-18-PM-B02.json"), localRoot);
-  const packageContent = await readPackage(packagePath);
+
+  const optionalZipArg = arg("--package");
+  const packageContent = optionalZipArg
+    ? await readOptionalZipPackage(assertBelowRoot(optionalZipArg, localRoot))
+    : readDirectPackage({ jsonl: targetJsonl, markdown: targetMarkdown, handoff: fachHandoffPath });
+  if (!packageContent) return;
+
   const records = lines<JsonObject>(packageContent.jsonl);
   if (records.length !== 3) fail(`Expected exactly 3 RecommendationRecords, received ${records.length}`);
   const ids = records.map((record) => String(record.recommendation_id));
   const impactCases = records.map((record) => String(record.impact_case_id));
   if (new Set(ids).size !== 3 || new Set(impactCases).size !== 3) fail("Recommendation and ImpactCase IDs must be unique within PM-B01.");
-  if (ids.some((id) => !EXPECTED_IDS.has(id)) || impactCases.some((id) => !EXPECTED_IMPACT_CASES.has(id))) {
-    fail("PM-B01 does not contain the exact three approved RecommendationRecords.");
+  if (impactCases.some((id) => !EXPECTED_IMPACT_CASES.has(id)) || EXPECTED_IMPACT_CASES.size !== new Set(impactCases).size) {
+    fail("PM-B01 does not contain the exact three expected ImpactCases.");
   }
-  records.forEach(assertRecommendationIsFachApprovedRecord);
+  records.forEach((record) => {
+    assertRecommendationHandoffRecord(record);
+    assertNoLocalPath(record);
+  });
+  assertRecommendationSchema(records);
+
+  const fachHandoff = JSON.parse(packageContent.handoff.toString("utf8")) as JsonObject;
+  assertNoLocalPath(fachHandoff, "fach_handoff");
+  if (fachHandoff.canonical_root !== "/WOEK") fail("Fach handoff does not use canonical root /WOEK.");
+  const handoffIds = approvedIdsFromHandoff(fachHandoff);
+  if (!handoffIds.length || handoffIds.length !== ids.length || ids.some((id) => !handoffIds.includes(id))) {
+    fail("Fach handoff approval IDs do not match the Recommendation JSONL.");
+  }
+  const handoffImpacts = approvedImpactCasesFromHandoff(fachHandoff);
+  if (handoffImpacts.length && (handoffImpacts.length !== impactCases.length || impactCases.some((id) => !handoffImpacts.includes(id)))) {
+    fail("Fach handoff ImpactCase IDs do not match the Recommendation JSONL.");
+  }
+
   const ledger = JSON.parse(readFileSync(ledgerPath, "utf8")) as Ledger;
   if (ledger.canonical_root !== "/WOEK") fail("Recommendation ledger does not use canonical root /WOEK.");
   const canonical = canonicalRecommendationIdentities(analysisRoot);
   const identities = records.map((record): RecommendationIdentity => ({
-    impact_case_id: String(record.impact_case_id),
-    recommendation_id: String(record.recommendation_id),
-    recommendation_version: String(record.recommendation_version),
+    impact_case_id: String(record.impact_case_id), recommendation_id: String(record.recommendation_id),
+    recommendation_version: String(record.recommendation_version), recommendation_content_sha256: recordSha256(record),
+    supersedes_recommendation_version: record.supersedes_recommendation_version == null ? null : String(record.supersedes_recommendation_version),
   }));
   const dispositions = identities.map((incoming) => ({
     incoming,
     disposition: recommendationBackfillDisposition({ incoming, ledgerRecords: ledger.records, canonicalRecommendations: canonical }),
   }));
   const conflicts = dispositions.filter((item) => item.disposition.startsWith("CONFLICT"));
-  if (conflicts.length) fail(`Recommendation identity/version conflict: ${JSON.stringify(conflicts)}`);
-  const sourceHash = sha256(packageContent.jsonl);
+  if (conflicts.length) fail(`Recommendation identity/version/content conflict: ${JSON.stringify(conflicts)}`);
+
   const now = berlinTimestamp();
   const queue = lines<RecommendationQueueEntry & JsonObject>(readFileSync(queuePath));
   const queueById = new Map(queue.map((entry) => [entry.impact_case_id, entry]));
-  for (const identity of identities) {
-    if (!queueById.has(identity.impact_case_id)) fail(`ImpactCase is absent from central queue: ${identity.impact_case_id}`);
-  }
+  if (queueById.size !== queue.length) fail("Central recommendation queue contains duplicate impact_case_id values.");
+  for (const identity of identities) if (!queueById.has(identity.impact_case_id)) fail(`ImpactCase is absent from central queue: ${identity.impact_case_id}`);
+
   const completedBefore = new Set(ledger.records.filter((record) => record.status === "COMPLETED_APPROVED").map((record) => record.impact_case_id));
   const updatedRecords = [...ledger.records];
   for (const identity of identities) {
+    const exact = updatedRecords.find((record) => record.impact_case_id === identity.impact_case_id
+      && record.recommendation_id === identity.recommendation_id && record.recommendation_version === identity.recommendation_version);
+    if (exact) continue;
     const queueEntry = queueById.get(identity.impact_case_id)!;
-    const index = updatedRecords.findIndex((record) => record.impact_case_id === identity.impact_case_id);
-    const updated = {
+    updatedRecords.push({
       impact_case_id: identity.impact_case_id,
       recommendation_id: identity.recommendation_id,
       input_analysis_version: String(queueEntry.current_analysis_version ?? "UNKNOWN"),
       recommendation_version: identity.recommendation_version,
+      recommendation_content_sha256: identity.recommendation_content_sha256,
       status: "COMPLETED_APPROVED",
       completed_at: now,
       canonical_output_reference: `/WOEK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/analysis/${TARGET_JSONL}#${identity.recommendation_id}`,
       handoff_batch_id: BATCH_ID,
       source_hashes: {
-        package_sha256: packageContent.packageSha256,
-        package_manifest_sha256: packageContent.manifestSha256,
-        recommendation_output_sha256: sourceHash,
+        ...packageContent.hashes,
+        ...(packageContent.packageSha256 ? { optional_transport_zip_sha256: packageContent.packageSha256 } : {}),
+        ...(packageContent.manifestSha256 ? { optional_transport_manifest_sha256: packageContent.manifestSha256 } : {}),
       },
-    };
-    if (index >= 0) updatedRecords[index] = updated;
-    else updatedRecords.push(updated);
+    });
   }
   const completedAfter = new Set(updatedRecords.filter((record) => record.status === "COMPLETED_APPROVED").map((record) => record.impact_case_id));
   const remaining = queue.filter((entry) => !completedAfter.has(entry.impact_case_id));
-  if (queue.length !== 133 || completedAfter.size !== 6 || remaining.length !== 127) {
-    fail(`Backlog reconciliation mismatch: queue=${queue.length}, completed=${completedAfter.size}, remaining=${remaining.length}`);
-  }
+  const expectedRemaining = 127;
+  const backlogPlausibility = remaining.length === expectedRemaining
+    ? "MATCHES_EXPECTED_PM_B01_BASELINE"
+    : `DIFFERS_FROM_2026-08-18_BASELINE_BY_${remaining.length - expectedRemaining}`;
+
   const nextBatch = nextOpenRecommendationQueueEntries(queue, updatedRecords, 3).map((entry) => {
     const analysis = sourceAnalysisRecord(analysisRoot, entry);
     const scope = nestedObject(analysis, "scope");
@@ -291,65 +443,61 @@ async function main() {
       canonical_source_paths: sourcePaths,
     };
   });
-  const handoff = {
-    schema_version: "2.3",
-    batch_id: BATCH_ID,
-    created_at: now,
-    timezone: "Europe/Berlin",
-    canonical_root: "/WOEK",
-    APPROVED_RECOMMENDATIONS: identities.map((item) => item.recommendation_id),
-    REVIEW_REQUIRED: [],
-    BLOCKED: [],
-    remaining_backlog_count: remaining.length,
-    impact_case_ids: identities.map((item) => item.impact_case_id),
+
+  const codexImportStatus = {
+    schema_version: "2.3", status: "IMPORTED_OR_IDEMPOTENT", batch_id: BATCH_ID,
+    created_at: now, timezone: "Europe/Berlin", canonical_root: "/WOEK",
+    transport_mode: packageContent.transportMode, transport_zip_required: false, ZIP_IS_NOT_CANONICAL_SOURCE,
+    APPROVED_RECOMMENDATIONS: ids, REVIEW_REQUIRED: [], BLOCKED: [], impact_case_ids: impactCases,
     recommendation_versions: Object.fromEntries(identities.map((item) => [item.recommendation_id, item.recommendation_version])),
-    output_files: [
+    canonical_input_files: [
       `/WOEK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/analysis/${TARGET_JSONL}`,
       `/WOEK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/analysis/${TARGET_MARKDOWN}`,
+      `/WOEK/WOEK-AUTOPILOT/CONTROL/${FACH_HANDOFF}`,
+      "/WOEK/WOEK-AUTOPILOT/LEDGERS/RECOMMENDATION-BACKFILL-LEDGER.json",
     ],
-    ledger_status: "6_COMPLETED_APPROVED_127_REMAINING",
+    completed_before: completedBefore.size, completed_after: completedAfter.size,
+    recommendation_subjects_total: queue.length, remaining_backlog_count: remaining.length,
+    expected_remaining_backlog_count_for_pm_b01_baseline: expectedRemaining, backlog_plausibility: backlogPlausibility,
     integrity: {
-      package_sha256: packageContent.packageSha256,
-      manifest_file: packageContent.manifestName,
-      manifest_sha256: packageContent.manifestSha256,
-      recommendation_jsonl_sha256: sourceHash,
-      records: records.length,
-      recommendation_ids_unique: true,
-      impact_case_ids_unique: true,
+      ...packageContent.hashes, records: records.length, recommendation_ids_unique: true,
+      impact_case_ids_unique: true, fach_handoff_matches_jsonl: true, local_paths_absent: true,
     },
     hindsight_guard_status: "PRESERVED_FROM_FACH_APPROVED_RECORDS",
-    CODEX_MUST_NOT_GENERATE_RECOMMENDATIONS: true,
+    source_vs_view_status: "PENDING_STAGING_RENDER_AFTER_IMPORT",
+    staging_recommendation_ui_status: "DATA_IMPORTED_AWAITING_STAGING_BUILD",
+    production_impact: "NONE",
+    CODEX_MUST_NOT_GENERATE_RECOMMENDATIONS,
+    NO_HISTORY_OVERWRITTEN: true,
   };
   const nextHandoff = {
-    schema_version: "2.3",
-    handoff_id: "RECOMMENDATION-NEXT-BATCH-2026-08-18-PM-B02",
-    created_at: now,
-    timezone: "Europe/Berlin",
-    canonical_root: "/WOEK",
+    schema_version: "2.3", handoff_id: "RECOMMENDATION-NEXT-BATCH-2026-08-18-PM-B02",
+    created_at: now, timezone: "Europe/Berlin", canonical_root: "/WOEK",
     source_queue: "/WOEK/WOEK-AUTOPILOT/CONTROL/RECOMMENDATION-BACKFILL-QUEUE-2.3.jsonl",
     source_ledger: "/WOEK/WOEK-AUTOPILOT/LEDGERS/RECOMMENDATION-BACKFILL-LEDGER.json",
     selection_rule: "Original queue order after skipping only COMPLETED_APPROVED impact_case_id values.",
-    remaining_backlog_count: remaining.length,
-    next_batch: nextBatch,
-    CODEX_MUST_NOT_GENERATE_RECOMMENDATIONS: true,
+    remaining_backlog_count: remaining.length, next_batch: nextBatch,
+    CODEX_MUST_NOT_GENERATE_RECOMMENDATIONS,
   };
-  const targetStates = {
-    jsonl: atomicWrite(targetJsonl, packageContent.jsonl),
-    markdown: atomicWrite(targetMarkdown, packageContent.markdown),
-    handoff: atomicWrite(handoffPath, `${JSON.stringify(handoff, null, 2)}\n`),
-    next_batch: atomicWrite(nextBatchPath, `${JSON.stringify(nextHandoff, null, 2)}\n`),
-  };
+  assertNoLocalPath(codexImportStatus, "codex_import_status");
+  assertNoLocalPath(nextHandoff, "next_batch_handoff");
+
+  const targetStates = packageContent.transportMode === "OPTIONAL_ZIP_CONTAINER"
+    ? {
+        jsonl: atomicWrite(targetJsonl, packageContent.jsonl),
+        markdown: atomicWrite(targetMarkdown, packageContent.markdown),
+        fach_handoff: atomicWrite(fachHandoffPath, packageContent.handoff),
+      }
+    : { jsonl: "CANONICAL_INPUT_PRESERVED", markdown: "CANONICAL_INPUT_PRESERVED", fach_handoff: "CANONICAL_INPUT_PRESERVED" };
+  const publicStore = updatePublicStore(records);
   replaceJsonAtomically(ledgerPath, { ...ledger, updated_at: now, records: updatedRecords });
+  const statusState = atomicWrite(codexStatusPath, `${JSON.stringify(codexImportStatus, null, 2)}\n`);
+  const nextBatchState = atomicWrite(nextBatchPath, `${JSON.stringify(nextHandoff, null, 2)}\n`);
   process.stdout.write(`${JSON.stringify({
-    status: "IMPORTED_OR_IDEMPOTENT",
-    batch_id: BATCH_ID,
-    completed_before: completedBefore.size,
-    completed_after: completedAfter.size,
-    remaining_backlog_count: remaining.length,
-    target_states: targetStates,
+    ...codexImportStatus,
+    target_states: { ...targetStates, codex_import_status: statusState, next_batch: nextBatchState },
+    public_store: publicStore,
     next_batch: nextBatch.map((entry) => entry.impact_case_id),
-    CODEX_MUST_NOT_GENERATE_RECOMMENDATIONS: true,
-    NO_HISTORY_OVERWRITTEN: true,
   }, null, 2)}\n`);
 }
 
