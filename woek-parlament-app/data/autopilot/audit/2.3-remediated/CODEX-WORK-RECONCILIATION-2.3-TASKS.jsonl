@@ -1,0 +1,12 @@
+{"task_id":"WR23-P0-01","area":"STAGING_ACCESS","status":"PASS","evidence":"Zeitlich begrenzter Vercel Shareable Link auf dem Branch-Alias; Production-Alias unverändert."}
+{"task_id":"WR23-P0-02","area":"GOVERNMENT_DIRECTION","status":"PASS","evidence":"Alle 63 Fachfälle neu importiert; Migration Digital, WissZeit und CCFD bleiben POSITIVE; Haushaltsportfolio bleibt OPEN."}
+{"task_id":"WR23-P0-03","area":"COMPACT_PUBLICATION","status":"PASS_EXPLICIT_LIMITATION","evidence":"Alle 63 Fälle als LIMITED_FACH_RECORD markiert; Kompetenz NOT_STRUCTURED ist sichtbar und nicht als fachlich OPEN ausgegeben; 19 redaktionell unvollständige Fälle bleiben gesperrt."}
+{"task_id":"WR23-P0-04","area":"IMPACTCASE_IDENTITY","status":"PASS","evidence":"Vier explizite Aliasrelationen; bekannte Migrationsverwaltungs-ID wird auf die kanonische ID aufgelöst."}
+{"task_id":"WR23-P0-05","area":"GOVERNMENT_DATA_1_2","status":"PASS","evidence":"1931 kanonische und 1931 öffentliche Faktenobjekte, 223 Reviewobjekte, 7/7 bekannte Overmerge-Regressionen, 0 Multi-DIP-Reste."}
+{"task_id":"WR23-P0-06","area":"SOURCE_VS_VIEW","status":"PASS","evidence":"44/44 Government-Public-ImpactCases, 1798 nichtleere Felder, 4/4 Aliasrouten, 0 Abweichungen."}
+{"task_id":"WR23-P0-07","area":"LEGACY_28","status":"PASS_EXCLUDED","evidence":"28 Legacyfälle bleiben außerhalb der 2.3-Zählung, bis ihre vollständigen kanonischen Quellen vorliegen."}
+{"task_id":"WR23-P0-08","area":"PARLIAMENT_DAILY_AND_VOTES","status":"PASS_FAIL_CLOSED","evidence":"Vollständiges gehashtes Deliverypaket; verifizierte VoteEvents=0 und IndividualVotes=0; keine Fraktionsrekonstruktion."}
+{"task_id":"WR23-P0-09","area":"STATE_AUTOPILOT","status":"PASS_EXPLICIT_LIMITATION","evidence":"16/16 Länder registriert, 0/16 operationale amtliche Adapter; alle Monitoringclaims blockiert und Source Health BLOCKED."}
+{"task_id":"WR23-P0-10","area":"DROPBOX_CLOUD_WRITER","status":"PASS","evidence":"Kontrollierte Datei ausschließlich unter /WOEK erstellt, aus der Cloud zurückgelesen und erfolgreich gelöscht."}
+{"task_id":"WR23-P0-11","area":"WRITER_FREEZE","status":"PASS","evidence":"GitHub Workflows 336712886 und 336712887 administrativ disabled_manually; Bootstrap-Prebuild liest Dropbox nicht."}
+{"task_id":"WR23-P0-12","area":"BUILD_AND_UI","status":"PASS","evidence":"131/131 Tests, Typecheck, Build, Accessibility-Baseline, Privacy, Release Safety, Design Tokens und Editorial Gates bestanden."}

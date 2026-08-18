@@ -123,3 +123,16 @@ test("bootstrap and remediation builds never read mutable Dropbox handoffs", () 
     assert.ok(source.indexOf("WOEK_AUTOPILOT_RUNTIME_MODE") < source.indexOf("DROPBOX_APP_KEY"), file);
   }
 });
+
+test("the remediated Work Reconciliation artifacts share one PASS state and exact hashes", () => {
+  const root = "data/autopilot/audit/2.3-remediated";
+  const manifest = JSON.parse(readFileSync(`${root}/RECONCILIATION-ARTIFACT-MANIFEST-2.3-REMEDIATED.json`, "utf8"));
+  const summary = JSON.parse(readFileSync(`${root}/CODEX-WORK-RECONCILIATION-2.3-SUMMARY.json`, "utf8"));
+  assert.equal(manifest.status, "PASS");
+  assert.equal(summary.status, "PASS");
+  assert.equal(manifest.reconciliation_id, summary.reconciliation_id);
+  for (const artifact of manifest.artifacts) {
+    const digest = createHash("sha256").update(readFileSync(`${root}/${artifact.name}`)).digest("hex");
+    assert.equal(digest, artifact.sha256, artifact.name);
+  }
+});
