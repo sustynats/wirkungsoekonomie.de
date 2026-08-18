@@ -12,6 +12,14 @@ export const allowedRecommendationStatuses = [
   "OPEN",
 ] as const;
 
+export const recommendationFachStatusEnum = [
+  "APPROVED",
+  "APPROVED_WITH_OPEN_DATA",
+  "OPEN",
+  "SUPERSEDED",
+  "BLOCKED",
+] as const;
+
 export type AllowedRecommendationStatus = (typeof allowedRecommendationStatuses)[number];
 
 export type RecommendationLedgerStatus =
@@ -46,6 +54,7 @@ export type RecommendationBackfillDisposition =
   | "SKIP_COMPLETED_APPROVED"
   | "IDEMPOTENT_ALREADY_CANONICAL"
   | "PROCESS_NEW_APPROVED_VERSION"
+  | "PROCESS_RECONCILED_COMPLETED_APPROVED"
   | "CONFLICT_WITH_COMPLETED_APPROVED"
   | "CONFLICTING_CANONICAL_VERSION"
   | "CONFLICTING_CANONICAL_CONTENT";
@@ -118,6 +127,18 @@ export function recommendationBackfillDisposition(input: {
   return supersededCanonicalVersion ? "PROCESS_NEW_APPROVED_VERSION" : "CONFLICTING_CANONICAL_VERSION";
 }
 
+export function recommendationBackfillDispositionWithReconciliation(input: {
+  incoming: RecommendationIdentity;
+  ledgerRecords: RecommendationLedgerRecord[];
+  canonicalRecommendations: RecommendationIdentity[];
+  reconcileCompletedApproved: boolean;
+}): RecommendationBackfillDisposition {
+  const disposition = recommendationBackfillDisposition(input);
+  return input.reconcileCompletedApproved && disposition === "SKIP_COMPLETED_APPROVED"
+    ? "PROCESS_RECONCILED_COMPLETED_APPROVED"
+    : disposition;
+}
+
 const forbiddenTechnicalDerivationFields = new Set([
   "auto_generated_recommendation",
   "generated_by_codex",
@@ -144,9 +165,9 @@ export function assertRecommendationIsFachApprovedRecord(
   }
 
   const fachStatus = String(record.fach_status ?? "");
-  const allowedFachStatuses = options.requiredFachStatus
+  const allowedFachStatuses: readonly string[] = options.requiredFachStatus
     ? [options.requiredFachStatus]
-    : ["APPROVED", "APPROVED_WITH_OPEN_DATA", "APPROVED_FOR_CODEX_INTEGRATION"];
+    : recommendationFachStatusEnum.filter((status) => status === "APPROVED" || status === "APPROVED_WITH_OPEN_DATA");
   if (!allowedFachStatuses.includes(fachStatus)) {
     throw new Error(`Recommendation record is not fach-approved: ${fachStatus || "MISSING"}`);
   }

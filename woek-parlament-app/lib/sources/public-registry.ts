@@ -9,6 +9,7 @@ import { directionLabels, evidenceLabels, getPublicImpactCases, governmentEditor
 import { getGovernmentPublicData, sourceFunctionLabels } from "@/lib/government/public-data";
 import { listPublicEvidenceEvents } from "@/lib/observatory/public-data";
 import { euEditorialProjection, getEuImpactCases } from "@/lib/eu/impact-cases";
+import { getPublicRecommendations, recommendationStatusLabels } from "@/lib/recommendations";
 import { parliamentaryOverviewAssessment, type OverviewAssessmentData } from "@/lib/presentation/overview-assessment";
 import { isSafePublicSourceUrl, sourceDetailHrefForUrl, sourceSlugForCanonicalUrl } from "@/lib/sources/url";
 
@@ -541,6 +542,57 @@ function governmentImpactSources(): StaticPublicSource[] {
   return [...grouped.values()];
 }
 
+function recommendationSources(): StaticPublicSource[] {
+  const grouped = new Map<string, StaticPublicSource>();
+  const impacts = new Map(getPublicImpactCases().map((impact) => [impact.impact_case_id, impact]));
+  for (const recommendation of getPublicRecommendations()) {
+    const impact = impacts.get(recommendation.impact_case_id);
+    for (const source of recommendation.source_refs) {
+      const canonicalUrl = isSafePublicSourceUrl(source);
+      const slug = canonicalUrl ? sourceSlugForCanonicalUrl(canonicalUrl) : null;
+      if (!canonicalUrl || !slug) continue;
+      const institution = institutionForUrl(canonicalUrl);
+      const curated = curatedSourceSummaries[canonicalUrl];
+      const usage: PublicSourceUsage = {
+        caseSlug: recommendation.impact_case_id,
+        caseTitle: impact?.title ?? recommendation.impact_case_id,
+        caseKind: "GOVERNMENT_RECOMMENDATION",
+        decisionDate: recommendation.decision_date ?? null,
+        sourceRole: "CONTEXT",
+        locations: [],
+        note: "Die Quelle gehört zur fachlich freigegebenen WÖk-Handlungsoption. Ihr Aussageumfang, der damalige Wissensstand und später verfügbare Evidenz bleiben im Hindsight Guard getrennt.",
+        caseHref: `/regierung/wirkungsanalysen/${encodeURIComponent(recommendation.impact_case_id)}`,
+        analysisSummary: recommendation.recommendation_core_summary,
+        analysisDirection: recommendationStatusLabels[recommendation.recommendation_status],
+        evidenceLevel: evidenceLabels[recommendation.evidence_grade] ?? recommendation.evidence_grade,
+      };
+      const existing = grouped.get(slug);
+      if (existing) {
+        existing.usages.push(usage);
+        continue;
+      }
+      grouped.set(slug, {
+        id: `government-recommendation-${slug}`,
+        slug,
+        title: curated?.title ?? `Quelle zur WÖk-Handlungsoption: ${institution}`,
+        institution,
+        category: /pubmed|bundesbank/i.test(canonicalUrl) ? "SCIENTIFIC_SOURCE" : "GOVERNMENT_RECORD",
+        role: "CONTEXT",
+        documentType: /\.pdf(?:$|\?)/i.test(canonicalUrl) ? "Dokument (PDF)" : "Webseite, Datensatz oder Dokument",
+        canonicalUrl,
+        documentDate: null,
+        retrievedAt: "2026-08-18T12:00:00Z",
+        versionLabel: `In RecommendationVersion ${recommendation.recommendation_version} dokumentiert`,
+        sourceHash: null,
+        temporalClass: "AVAILABLE_AT_DECISION_TIME",
+        abstract: curated?.summary ?? "Diese Quelle gehört zur Fakten- oder Evidenzbasis der fachlich freigegebenen WÖk-Handlungsoption. Sie wird nicht automatisch als Wirkungs- oder Kausalitätsnachweis behandelt.",
+        usages: [usage],
+      });
+    }
+  }
+  return [...grouped.values()];
+}
+
 function euImpactSources(): StaticPublicSource[] {
   const grouped = new Map<string, StaticPublicSource>();
   for (const impact of getEuImpactCases()) {
@@ -831,6 +883,7 @@ function staticPublicSources() {
     ...releasedFachakteSources(),
     ...governmentFactSources(),
     ...governmentImpactSources(),
+    ...recommendationSources(),
     ...euImpactSources(),
     ...observatorySources()
   ]) {

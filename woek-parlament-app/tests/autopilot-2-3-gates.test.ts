@@ -13,6 +13,8 @@ import {
   CODEX_MUST_NOT_GENERATE_RECOMMENDATIONS,
   nextOpenRecommendationQueueEntries,
   recommendationBackfillDisposition,
+  recommendationBackfillDispositionWithReconciliation,
+  recommendationFachStatusEnum,
   shouldSkipRecommendationQueueEntry,
   ZIP_IS_NOT_CANONICAL_SOURCE,
 } from "@/lib/recommendation-backfill";
@@ -148,7 +150,12 @@ test("backfill inventory is complete without CodeX-authored recommendations", ()
   assert.equal(summary.recommendation_required, 133);
   assert.equal(summary.recommendation_content_created_by_codex, 0);
   assert.equal(queue.length, 133);
-  assert.equal(publicRecommendations.length, 0);
+  assert.equal(publicRecommendations.length, 3);
+  assert.deepEqual(publicRecommendations.map((line) => JSON.parse(line).recommendation_id).sort(), [
+    "WOEK-REC-BUND-ALTERSVORSORGE-2026-R1",
+    "WOEK-REC-BUND-KHAG-2025-2026-R1",
+    "WOEK-REC-BUND-STROMVKG-2026-R1",
+  ]);
 });
 
 test("recommendation backfill skips only COMPLETED_APPROVED ledger entries", () => {
@@ -221,15 +228,30 @@ test("same RecommendationVersion is idempotent and conflicting identities fail c
     ledgerRecords: [{ ...incoming, status: "COMPLETED_APPROVED" }],
     canonicalRecommendations: [incoming],
   }), "PROCESS_NEW_APPROVED_VERSION");
+
+  assert.equal(recommendationBackfillDispositionWithReconciliation({
+    incoming,
+    ledgerRecords: [{ ...incoming, status: "COMPLETED_APPROVED" }],
+    canonicalRecommendations: [incoming],
+    reconcileCompletedApproved: true,
+  }), "PROCESS_RECONCILED_COMPLETED_APPROVED");
+
+  assert.equal(recommendationBackfillDispositionWithReconciliation({
+    incoming,
+    ledgerRecords: [{ ...incoming, status: "COMPLETED_APPROVED" }],
+    canonicalRecommendations: [incoming],
+    reconcileCompletedApproved: false,
+  }), "SKIP_COMPLETED_APPROVED");
 });
 
 test("recommendation gate accepts only fach-approved records and forbids score derivation", () => {
   assert.equal(CODEX_MUST_NOT_GENERATE_RECOMMENDATIONS, true);
   assert.equal(ZIP_IS_NOT_CANONICAL_SOURCE, true);
-  assert.equal(assertRecommendationIsFachApprovedRecord({
+  assert.throws(() => assertRecommendationIsFachApprovedRecord({
     recommendation_status: "PREFERRED_DESIGN",
     fach_status: "APPROVED_FOR_CODEX_INTEGRATION",
-  }), true);
+  }), /not fach-approved/);
+  assert.deepEqual(recommendationFachStatusEnum, recommendationSchema.properties.fach_status.enum);
   assert.throws(() => assertRecommendationIsFachApprovedRecord({
     recommendation_status: "AUTO_SCORE_WINNER",
     fach_status: "APPROVED",

@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+import { createHash } from "node:crypto";
 import { readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { projectGovernmentEditorial, publicEnumLabel } from "../../lib/publication/public-editorial-projection.mjs";
@@ -11,6 +12,27 @@ const readJsonl = (file) => readFileSync(file, "utf8").split(/\r?\n/).filter(Boo
 const records = readJsonl(path.join(process.cwd(), "data", "government", "impact-cases", "public-impact-records.jsonl"));
 const recommendations = new Map(readJsonl(path.join(process.cwd(), "data", "recommendations", "public", "recommendations.jsonl")).map((record) => [record.impact_case_id, record]));
 const aliases = readJsonl(path.join(process.cwd(), "data", "government", "impact-cases", "impact-case-aliases.jsonl"));
+
+const recommendationStatusLabels = {
+  PREFERRED_OPTION: "bevorzugte Option",
+  PREFERRED_DESIGN: "bevorzugte Ausgestaltung",
+  DECISION_CORRIDOR: "wirkungstragfähiger Entscheidungskorridor",
+  PILOT_AND_LEARN: "begrenzen, erproben und lernen",
+  KEEP_CURRENT_WITH_MODIFICATIONS: "mit Änderungen fortführen",
+  STOP_OR_REVERSE: "stoppen oder zurücknehmen",
+  NO_ROBUST_RECOMMENDATION: "keine belastbare Präferenz",
+  OPEN: "fachlich offen",
+};
+const recommendationEvidenceLabels = { HIGH: "hoch", MEDIUM: "mittel", LOW: "gering", NOT_ASSESSABLE: "nicht bewertbar" };
+const recommendationAnalysisModeLabels = {
+  IMPACT_POTENTIAL_EX_ANTE: "Wirkungspotenzial vor der Entscheidung",
+  RETROSPECTIVE_DECISION_REVIEW: "Rückschau mit damaligem Wissensstand",
+  CURRENT_RECOMMENDATION_AFTER_REALITY_CHECK: "Heutige Handlungsoption nach Reality-Check",
+};
+const recommendationFachStatusLabels = {
+  APPROVED: "fachlich freigegeben",
+  APPROVED_WITH_OPEN_DATA: "fachlich freigegeben; offene Daten sind ausgewiesen",
+};
 
 function decodeHtml(value) {
   return value
@@ -24,6 +46,58 @@ function decodeHtml(value) {
 
 function comparable(value) {
   return String(value).replace(/[–—]/g, "-").replace(/\s+/g, " ").trim();
+}
+
+function humanizeSystemValue(value) {
+  return String(value).replace(/\b[A-Z][A-Z0-9]*(?:_[A-Z0-9]+)+\b/g, (systemValue) => {
+    const words = systemValue.toLocaleLowerCase("de-DE").replaceAll("_", " ");
+    return `${words.charAt(0).toLocaleUpperCase("de-DE")}${words.slice(1)}`;
+  });
+}
+
+function recommendationSourceSlug(url) {
+  return `quelle-${createHash("sha256").update(new URL(url).toString()).digest("hex").slice(0, 16)}`;
+}
+
+function recommendationPublicFields(record) {
+  const fields = [
+    ["/recommendation_status", recommendationStatusLabels[record.recommendation_status]],
+    ["/recommendation_core_summary", record.recommendation_core_summary],
+    ["/problem_state", record.problem_state], ["/target_state", record.target_state],
+    ["/root_cause_or_binding_bottleneck", record.root_cause_or_binding_bottleneck],
+    ["/system_leverage", record.system_leverage],
+    ["/competence_scope", humanizeSystemValue(record.competence_scope)],
+    ["/implementation_route", humanizeSystemValue(record.implementation_route)],
+    ["/reversibility", record.reversibility], ["/evidence_grade", recommendationEvidenceLabels[record.evidence_grade]],
+    ["/uncertainty", record.uncertainty], ["/reality_check_plan", record.reality_check_plan],
+    ["/woek_preferred_option", record.woek_preferred_option], ["/non_compensation_check", humanizeSystemValue(record.non_compensation_check)],
+    ["/fallback_option", record.fallback_option], ["/recommendation_version", record.recommendation_version],
+    ["/public_change_summary", record.public_change_summary], ["/recommendation_id", record.recommendation_id],
+    ["/impact_case_id", record.impact_case_id], ["/jurisdiction_id", record.jurisdiction_id],
+    ["/analysis_mode", recommendationAnalysisModeLabels[record.analysis_mode]],
+    ["/fach_status", recommendationFachStatusLabels[record.fach_status]],
+  ];
+  for (const [index, option] of record.option_set.entries()) {
+    fields.push([`/option_set/${index}/label`, option.label], [`/option_set/${index}/description`, option.description]);
+    for (const [key, value] of Object.entries(option.dimensions)) {
+      fields.push([`/option_set/${index}/dimensions/${key}/key`, humanizeSystemValue(key)]);
+      fields.push([`/option_set/${index}/dimensions/${key}/value`, humanizeSystemValue(value)]);
+    }
+  }
+  for (const arrayField of [
+    "why_preferred", "key_tradeoffs", "cascade_effects", "first_order_effects", "second_order_effects",
+    "third_order_effects", "rebound_spillover_leakage", "affected_groups", "distributional_effects",
+    "time_and_generation_effects", "resilience_effects", "transformation_effects", "legal_constraints",
+    "rights_and_boundary_conditions", "resource_and_capacity_constraints", "safeguards", "monitoring_indicators",
+    "evidence_available_at_decision_time", "evidence_only_available_later",
+  ]) {
+    for (const [index, value] of (record[arrayField] ?? []).entries()) fields.push([`/${arrayField}/${index}`, value]);
+  }
+  if (record.analysis_mode === "RETROSPECTIVE_DECISION_REVIEW") {
+    fields.push(["/decision_date", record.decision_date], ["/knowledge_cutoff_date", record.knowledge_cutoff_date], ["/hindsight_limitations", record.hindsight_limitations]);
+  }
+  if (record.supersedes_recommendation_version) fields.push(["/supersedes_recommendation_version", record.supersedes_recommendation_version]);
+  return fields.filter(([, value]) => value !== null && value !== undefined && comparable(value).length > 0);
 }
 
 function publicFields(record) {
@@ -60,7 +134,7 @@ const cases = [];
 for (const record of records) {
   const url = `${baseUrl}/regierung/wirkungsanalysen/${encodeURIComponent(record.impact_case_id)}`;
   const response = await fetch(url, { redirect: "manual", headers: requestHeaders });
-  const result = { impact_case_id: record.impact_case_id, url, http_status: response.status, fields_checked: 0, fields_missing: [], source_links_expected: 0, source_links_rendered: 0, full_fachtext_hash: record.source_release.case_markdown_sha256, full_fachtext_visible: false, raw_record_preserved: Boolean(record.raw_record), status: "PASS" };
+  const result = { impact_case_id: record.impact_case_id, url, http_status: response.status, fields_checked: 0, fields_missing: [], source_links_expected: 0, source_links_rendered: 0, full_fachtext_hash: record.source_release.case_markdown_sha256, full_fachtext_visible: false, raw_record_preserved: Boolean(record.raw_record), recommendation: null, status: "PASS" };
   if (response.status !== 200) {
     result.status = "FAIL";
     result.fields_missing.push("HTTP_200");
@@ -81,15 +155,29 @@ for (const record of records) {
   if (!result.full_fachtext_visible) result.fields_missing.push("/full_analysis_markdown");
   const recommendation = recommendations.get(record.impact_case_id);
   if (recommendation) {
-    for (const [pointer, value] of Object.entries({
-      recommendation_core_summary: recommendation.recommendation_core_summary,
-      root_cause_or_binding_bottleneck: recommendation.root_cause_or_binding_bottleneck,
-      system_leverage: recommendation.system_leverage,
-      public_change_summary: recommendation.public_change_summary,
-    })) {
+    const recommendationResult = { recommendation_id: recommendation.recommendation_id, fields_checked: 0, fields_missing: [], source_links_expected: 0, source_links_rendered: 0, canonical_fach_refs_expected: 0, canonical_fach_refs_rendered: 0, status: "PASS" };
+    for (const [pointer, value] of recommendationPublicFields(recommendation)) {
       result.fields_checked += 1;
-      if (!text.includes(comparable(value))) result.fields_missing.push(`/recommendation/${pointer}`);
+      recommendationResult.fields_checked += 1;
+      if (!text.includes(comparable(value))) recommendationResult.fields_missing.push(pointer);
     }
+    const recommendationSourceUrls = recommendation.source_refs.filter((source) => /^https:\/\//.test(source));
+    recommendationResult.source_links_expected = recommendationSourceUrls.length;
+    recommendationResult.source_links_rendered = (html.match(/data-recommendation-source=/g) ?? []).length;
+    if (recommendationResult.source_links_rendered !== recommendationResult.source_links_expected) recommendationResult.fields_missing.push("/source_refs/https");
+    for (const sourceUrl of recommendationSourceUrls) {
+      const expectedHref = `/quellen/${recommendationSourceSlug(sourceUrl)}`;
+      if (!html.includes(expectedHref)) recommendationResult.fields_missing.push(`/source_refs/${expectedHref}`);
+    }
+    recommendationResult.canonical_fach_refs_expected = recommendation.source_refs.filter((source) => source.startsWith("/WOEK/")).length;
+    recommendationResult.canonical_fach_refs_rendered = (text.match(/Kanonische WÖk-Fachakte im freigegebenen Release/g) ?? []).length;
+    if (recommendationResult.canonical_fach_refs_rendered < recommendationResult.canonical_fach_refs_expected) recommendationResult.fields_missing.push("/source_refs/canonical_fachakte");
+    if (text.includes("/WOEK/") || text.includes("/tmp/")) recommendationResult.fields_missing.push("/source_refs/no_local_paths");
+    if (recommendationResult.fields_missing.length) {
+      recommendationResult.status = "FAIL";
+      result.fields_missing.push(...recommendationResult.fields_missing.map((pointer) => `/recommendation${pointer}`));
+    }
+    result.recommendation = recommendationResult;
   } else if (!text.includes("WÖk-Handlungsoption wird fachlich ergänzt.")) {
     result.fields_missing.push("/recommendation_backfill_notice");
   }
@@ -122,7 +210,11 @@ const report = {
   normalized_public_fields_checked: cases.reduce((sum, entry) => sum + entry.fields_checked, 0),
   fach_records_lost: 0,
   aliases_checked: aliasResults.length,
-  methodology: "Jedes nichtleere normalisierte Public-Feld wird gegen die gerenderte Detailseite geprüft. Die vollständige unveränderte Fachakte bleibt zusätzlich mit ihrem Fall-SHA-256 im Public Store erhalten. Quellen werden ausschließlich über interne Quellenakten verlinkt.",
+  recommendation_records_checked: cases.filter((entry) => entry.recommendation).length,
+  recommendation_records_passed: cases.filter((entry) => entry.recommendation?.status === "PASS").length,
+  recommendation_fields_checked: cases.reduce((sum, entry) => sum + (entry.recommendation?.fields_checked ?? 0), 0),
+  recommendation_source_links_checked: cases.reduce((sum, entry) => sum + (entry.recommendation?.source_links_expected ?? 0), 0),
+  methodology: "Jedes nichtleere normalisierte Public-Feld wird gegen die gerenderte Detailseite geprüft. Für Recommendations wird die Kette Fachrecord -> kanonischer RecommendationRecord -> Public Store -> gerenderte Recommendation UI vollständig geprüft, einschließlich Hindsight Guard und interner Quellenakten. Die vollständige unveränderte Fachakte bleibt zusätzlich mit ihrem Fall-SHA-256 im Public Store erhalten.",
   failures,
   cases,
   aliases: aliasResults,
