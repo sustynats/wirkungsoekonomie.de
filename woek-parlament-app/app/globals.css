@@ -754,8 +754,12 @@ h1, h2, h3, h4 { text-wrap: balance; }
 .source-archive-list dl div { display: grid; gap: .1rem; }
 .source-archive-list dt, .source-facts dt { color: var(--muted); font-size: .7rem; font-weight: 850; letter-spacing: .06em; text-transform: uppercase; }
 .source-archive-list dd, .source-facts dd { margin: 0; font-size: .88rem; }
+.source-detail-page, .source-detail-header, .source-detail-header > *, .source-detail-grid, .source-detail-grid > *, .source-usage-list article, .source-usage-list article > * { min-width: 0; max-width: 100%; }
 .source-detail-header { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2rem; align-items: end; padding-bottom: 2.5rem; border-bottom: 1px solid var(--line); }
-.source-detail-header h1 { margin-bottom: 1.2rem; }
+.source-detail-header h1 { max-inline-size: 100%; margin-bottom: 1.2rem; overflow-wrap: anywhere; word-break: normal; hyphens: auto; }
+.source-detail-page :is(h2, h3, p, li, dt, dd, a, .eyebrow, .source-register-label, .source-locations) { max-inline-size: 100%; overflow-wrap: anywhere; word-break: normal; }
+.source-detail-page :is(h2, h3, p, li, dt, dd) { hyphens: auto; }
+.source-detail-page :is(code, pre) { max-inline-size: 100%; overflow-wrap: anywhere; word-break: break-word; white-space: pre-wrap; }
 .source-detail-grid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(280px, .75fr); gap: 1.2rem; }
 .source-facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 1.5rem; margin: 0; }
 .source-facts div { padding: .85rem 0; border-top: 1px solid var(--line); }
