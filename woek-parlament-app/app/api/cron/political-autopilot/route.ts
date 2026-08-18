@@ -13,7 +13,8 @@ function isAuthorized(request: Request) {
 export async function GET(request: Request) {
   if (!isAuthorized(request)) return NextResponse.json({ error: "Unauthorized." }, { status: 401 });
   try {
-    return NextResponse.json(await processPoliticalAutopilot());
+    const force = new URL(request.url).searchParams.get("force");
+    return NextResponse.json(await processPoliticalAutopilot(new Date(), force === "AM" || force === "PM" ? force : null));
   } catch (error) {
     console.error("Political impact autopilot failed closed", { error: error instanceof Error ? error.message : "Unexpected autopilot failure" });
     return NextResponse.json({ error: "Political impact autopilot failed closed." }, { status: 500 });

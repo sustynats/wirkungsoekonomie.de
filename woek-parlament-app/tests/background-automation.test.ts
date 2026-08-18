@@ -11,6 +11,7 @@ test("political updates and the end-of-day digest use a computer-independent clo
   const digestWorkflow = text("../.github/workflows/political-daily-digest.yml");
   assert.match(autopilotWorkflow, /0 4,5,14,15 \* \* \*/);
   assert.match(autopilotWorkflow, /api\/cron\/political-autopilot/);
+  assert.match(autopilotWorkflow, /workflow_dispatch[\s\S]*force=AM|FORCE_SLOT/);
   assert.match(digestWorkflow, /0 20,21,22 \* \* \*/);
   assert.match(digestWorkflow, /api\/cron\/political-daily-digest/);
   assert.match(`${autopilotWorkflow}\n${digestWorkflow}`, /secrets\.CRON_SECRET/);

@@ -97,8 +97,9 @@ function resultDetail(label: string, result: unknown) {
   return `${label}: ${status}`;
 }
 
-export async function processPoliticalAutopilot(now = new Date()) {
-  const berlin = berlinDateSlot(now);
+export async function processPoliticalAutopilot(now = new Date(), forceSlot: "AM" | "PM" | null = null) {
+  const scheduled = berlinDateSlot(now);
+  const berlin = forceSlot ? { ...scheduled, slot: forceSlot } : scheduled;
   if (!berlin.slot) return { status: "SKIPPED_OUTSIDE_SCHEDULE" as const, berlin_hour: berlin.hour };
 
   const electionCalendar = await processStateElectionCalendar(now);
