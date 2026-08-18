@@ -42,6 +42,7 @@
     "i18n:coverage": "node scripts/i18n/build-english-route-coverage.mjs",
     "build:so-wirkt": "node scripts/site/build-so-wirkt-wirkungsoekonomie.mjs",
     "build:iooi": "node scripts/site/build-iooi-wirkungsarchitektur.mjs",
+    "build:parlament-info": "node scripts/site/build-parlament-info.mjs && node scripts/site/build-institut-teaser.mjs && node scripts/search/build-woek-search-index.mjs",
     "build:factcheck-bot-guides": "node scripts/site/build-faktencheck-bot-guides.mjs",
     "check:search": "node scripts/quality/check-search-integration.mjs",
     "check:method-version-indexability": "node scripts/quality/check-method-version-indexability.mjs",

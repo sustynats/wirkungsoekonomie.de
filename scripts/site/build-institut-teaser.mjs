@@ -19,6 +19,8 @@ const WIRKUNGSMODELL_URL = "https://institut.wirkungsoekonomie.de/wirkungsmodell
 const WIRKUNGSGESELLSCHAFT_URL = "https://institut.wirkungsoekonomie.de/wirkungsgesellschaft";
 const UNABHAENGIGKEIT_URL = "https://institut.wirkungsoekonomie.de/unabhaengigkeit";
 const FAQ_URL = "https://institut.wirkungsoekonomie.de/faq";
+const PARLAMENT_URL = "https://parlament.wirkungsoekonomie.de/";
+const PARLAMENT_PROJECT_URL = "https://institut.wirkungsoekonomie.de/projekte/wirkungsportal-parlament";
 const headerUtilityLabels = new Set(["Suche", "WÖk-KI", "Mein Wirkungsraum"]);
 
 function esc(value) {
@@ -276,6 +278,20 @@ ${renderHeader(BASE)}
         </div>
         <div class="section-header compact">
           <p><strong>Die Akademie vermittelt Wirkungskompetenz. Das Institut entwickelt Wirkungswissen. Die Plattform macht beides zugänglich.</strong></p>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="institut-parlament-title">
+        <div class="section-header">
+          <p class="hero-kicker">Aus dem Institut</p>
+          <h2 id="institut-parlament-title">Das Wirkungsportal Parlament macht politische Wirkung prüfbar</h2>
+          <p>Das Institut hat die fachliche Architektur entwickelt, mit der politische Entscheidungen von der Originalquelle über den Wirkpfad bis zum späteren Reality Check nachvollziehbar werden. Amtlicher Sachverhalt, Wirkungspotenzial, Wirkungsrisiko, Evidenz, Recht und beobachtete Zustandsveränderung bleiben getrennt.</p>
+          <p>Das Portal ist eine unabhängige Institutsarbeit. Es ist weder Partei- noch Regierungsangebot und erstellt keine Personen-, Parteien- oder Regierungsranglisten.</p>
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="${PARLAMENT_URL}">Wirkungsportal öffnen</a>
+          <a class="btn btn-secondary" href="${PARLAMENT_PROJECT_URL}">Institutsprojekt nachvollziehen</a>
+          <a class="btn btn-secondary" href="../parlament/">Portal erklärt</a>
         </div>
       </section>
 
