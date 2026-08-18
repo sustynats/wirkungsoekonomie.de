@@ -1,6 +1,9 @@
 import { NextResponse } from "next/server";
-import { publicCases } from "@/lib/public-api";
+import { listPublishedCases } from "@/lib/cases";
+import { publicCase } from "@/lib/public-api";
 
-export async function GET() {
-  return NextResponse.json({ data: await publicCases(), meta: { publicReadOnly: true, containsPublishedPoliticalVerdicts: false } });
+export const dynamic = "force-dynamic";
+
+export function GET() {
+  return NextResponse.json({ data: listPublishedCases().map(publicCase), dataStatus: "published_only" });
 }

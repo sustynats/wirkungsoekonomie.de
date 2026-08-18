@@ -1,63 +1,57 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 
-const endpoint = "https://fganranxrdyewbjpvubx.supabase.co/functions/v1/site-event";
-const sessionKey = "woek-parliament-site-session";
-const visitorKey = "woek-parliament-site-visitor";
+const endpoint = "https://akademie.wirkungsoekonomie.de/api/site-event";
 
-function identifier(key: string, storage: Storage) {
+function sessionIdentifier() {
+  return window.crypto?.randomUUID?.() ?? `${Date.now()}-${Math.random().toString(16).slice(2)}`;
+}
+
+function deviceType() {
+  const width = Math.max(window.innerWidth || 0, document.documentElement.clientWidth || 0);
+  const coarsePointer = window.matchMedia?.("(pointer: coarse)")?.matches === true;
+  return coarsePointer && width < 720 ? "mobile" : coarsePointer ? "tablet" : "desktop";
+}
+
+function referrerDomain() {
+  if (!document.referrer) return null;
   try {
-    const existing = storage.getItem(key);
-    if (existing) return existing;
-    const value = window.crypto?.randomUUID?.() ?? `${Date.now()}-${Math.random().toString(16).slice(2)}`;
-    storage.setItem(key, value);
-    return value;
+    return new URL(document.referrer).hostname.replace(/^www\./, "");
   } catch {
-    return `${Date.now()}-${Math.random().toString(16).slice(2)}`;
+    return null;
   }
 }
 
-function device() {
-  const width = Math.max(window.innerWidth || 0, document.documentElement.clientWidth || 0);
-  const coarsePointer = window.matchMedia?.("(pointer: coarse)")?.matches === true;
-  return {
-    deviceType: coarsePointer && width < 720 ? "mobile" : coarsePointer ? "tablet" : "desktop",
-    viewportWidth: width || null,
-    viewportHeight: Math.max(window.innerHeight || 0, document.documentElement.clientHeight || 0) || null,
-    screenWidth: window.screen?.width || null,
-    screenHeight: window.screen?.height || null,
-    language: navigator.language || null,
-    timezone: Intl.DateTimeFormat().resolvedOptions().timeZone || null
-  };
-}
-
-function send(eventType: "page_view" | "heartbeat", pathname: string) {
+function send(eventType: "page_view" | "heartbeat", pathname: string, sessionId: string) {
   if (navigator.doNotTrack === "1" || (window as Window & { doNotTrack?: string }).doNotTrack === "1") return;
   const payload = JSON.stringify({
     eventType,
-    path: `${pathname}${window.location.search}`,
-    title: document.title,
-    referrer: document.referrer,
-    sessionId: identifier(sessionKey, sessionStorage),
-    visitorId: identifier(visitorKey, localStorage),
-    device: device()
+    // Search parameters, full referrer URLs, persistent visitor IDs and browser
+    // fingerprints are deliberately excluded from public-site reach measurement.
+    path: pathname,
+    referrerDomain: referrerDomain(),
+    sessionId,
+    device: { deviceType: deviceType() }
   });
   void fetch(endpoint, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: payload,
-    keepalive: true
+    keepalive: true,
+    referrerPolicy: "no-referrer"
   }).catch(() => undefined);
 }
 
 export function SiteAnalyticsTracker() {
   const pathname = usePathname();
+  const sessionId = useRef<string | null>(null);
 
   useEffect(() => {
-    send("page_view", pathname);
-    const heartbeat = window.setInterval(() => send("heartbeat", pathname), 60_000);
+    sessionId.current ??= sessionIdentifier();
+    send("page_view", pathname, sessionId.current);
+    const heartbeat = window.setInterval(() => send("heartbeat", pathname, sessionId.current as string), 60_000);
     return () => window.clearInterval(heartbeat);
   }, [pathname]);
 

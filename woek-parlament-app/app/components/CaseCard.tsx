@@ -1,18 +1,29 @@
 import Link from "next/link";
 import type { ParliamentaryCase } from "@/data/cases";
-import { editorialLabel, materialityLabel } from "@/lib/cases";
+import { formatDate, materialityLabel } from "@/lib/cases";
+import { humanizeSystemValue, verificationLabel } from "@/lib/presentation/labels";
+import { BookmarkLink } from "@/app/components/BookmarkLink";
+import { CaseTypeMark } from "@/app/components/CaseTypeMark";
 
 export function CaseCard({ item }: { item: ParliamentaryCase }) {
-  return <article className="decision-card">
-    <div className="card-meta"><span className={`chip chip--${item.statusVerification.toLowerCase()}`}>{editorialLabel(item.editorialStatus)}</span><span>Wirkungsrelevanz: {materialityLabel(item.materiality)}</span></div>
-    <p className="original-title">{item.title}</p>
-    <h2><Link href={`/entscheidungen/${item.slug}`}>{item.plainTitle}</Link></h2>
-    <dl className="card-details">
-      <div><dt>Phase</dt><dd>{item.phaseLabel}</dd></div>
-      <div><dt>Termin</dt><dd>{item.termLabel}</dd></div>
-      <div><dt>Analyse</dt><dd>{item.analysisStatus}</dd></div>
-    </dl>
-    {item.changedSinceLastAnalysis ? <p className="changed-marker">Seit letzter Analyse geändert</p> : null}
-    <div className="card-actions"><Link href={`/entscheidungen/${item.slug}#60-sekunden`}>60 Sekunden</Link><Link href={`/entscheidungen/${item.slug}#interaktiv`}>Interaktiv prüfen</Link><Link href={`/entscheidungen/${item.slug}#dossier`}>Fachdossier</Link></div>
-  </article>;
+  return (
+    <article className="case-card">
+      <div className="case-card-topline">
+        <CaseTypeMark kind={item.kind} maturity={item.publicWorkingAct?.maturity} compact />
+        <span className="chip chip--phase">{materialityLabel(item.materiality)}</span>
+      </div>
+      <h3><Link href={`/entscheidungen/${item.slug}`}>{item.plainTitle}</Link></h3>
+      <p>{item.summary}</p>
+      <dl className="case-meta">
+        <div><dt>Parlamentarischer Status</dt><dd>{humanizeSystemValue(item.parliamentaryStatus)}</dd></div>
+        <div><dt>Stand der WÖk-Analyse</dt><dd>{humanizeSystemValue(item.analysisStatus)}</dd></div>
+        <div><dt>Quellenstatus</dt><dd>{verificationLabel(item.statusVerification)}</dd></div>
+        <div><dt>Aktualisiert</dt><dd>{formatDate(item.lastUpdated)}</dd></div>
+      </dl>
+      <div className="case-card-actions">
+        <Link className="text-link" href={`/entscheidungen/${item.slug}`}>Transparenzansicht öffnen <span aria-hidden="true">→</span></Link>
+        <BookmarkLink title={item.title} path={`/entscheidungen/${item.slug}`} compact />
+      </div>
+    </article>
+  );
 }

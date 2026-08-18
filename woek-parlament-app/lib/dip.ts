@@ -1,69 +1,84 @@
-const DIP_BASE_URL = "https://search.dip.bundestag.de/api/v1";
+import { z } from "zod";
 
-export type DipResource = "vorgang" | "vorgangsposition" | "drucksache" | "aktivitaet" | "plenarprotokoll";
+const dipEnvelopeSchema = z.object({
+  documents: z.array(z.unknown()).default([]),
+  cursor: z.string().optional(),
+  numFound: z.number().optional()
+}).passthrough();
 
-export type DipRequest = {
-  resource: DipResource;
-  params?: Record<string, string | number | boolean | undefined>;
-};
+export type DipPage = z.infer<typeof dipEnvelopeSchema>;
 
-export type DipListResponse<T> = {
-  cursor?: string;
-  numFound?: number;
-  documents?: T[];
-};
+const baseUrl = "https://search.dip.bundestag.de/api/v1";
+const permittedResources = new Set([
+  "vorgang",
+  "vorgangsposition",
+  "drucksache",
+  "drucksache-text",
+  "plenarprotokoll",
+  "plenarprotokoll-text",
+  "aktivitaet",
+  "person"
+]);
 
-export type DipImportWindow = {
-  mode: "BOOTSTRAP" | "LOOKAHEAD";
-  from: string;
-  to: string;
-  reviewState: "IMPORTED_UNREVIEWED";
-};
+export class DipConfigurationError extends Error {}
 
-function toIsoDate(value: Date) {
-  return value.toISOString().slice(0, 10);
+function getDipApiKey() {
+  const apiKey = process.env.DIP_API_KEY?.trim();
+  if (!apiKey) throw new DipConfigurationError("DIP_API_KEY is not configured. Live import remains disabled.");
+  // DIP documents the current API-key format as a 42-character token. Failing
+  // before the request makes a misconfigured deployment diagnosable without
+  // ever exposing the secret in logs or a health response.
+  if (apiKey.length !== 42) {
+    throw new DipConfigurationError("DIP_API_KEY has an invalid format. The DIP import remains disabled.");
+  }
+  return apiKey;
 }
 
-/**
- * Builds work windows only. Filtering fields are deliberately not hard-coded:
- * the current DIP OpenAPI contract is the source of truth and lives in the
- * adapter configuration in the production import worker.
- */
-export function buildImportWindows(now = new Date(), leadDays = 10, historicalBackfillStart = "2025-05-06"): DipImportWindow[] {
-  const safeLeadDays = Math.min(14, Math.max(7, leadDays));
-  const safeHistoricalStart = /^\d{4}-\d{2}-\d{2}$/.test(historicalBackfillStart) ? historicalBackfillStart : "2025-05-06";
-  const lookaheadEnd = new Date(now);
-  lookaheadEnd.setUTCDate(lookaheadEnd.getUTCDate() + safeLeadDays);
-  return [
-    { mode: "BOOTSTRAP", from: safeHistoricalStart, to: toIsoDate(now), reviewState: "IMPORTED_UNREVIEWED" },
-    { mode: "LOOKAHEAD", from: toIsoDate(now), to: toIsoDate(lookaheadEnd), reviewState: "IMPORTED_UNREVIEWED" }
-  ];
-}
-
-export function getDipConfiguration() {
-  return {
-    configured: Boolean(process.env.DIP_API_KEY),
-    baseUrl: DIP_BASE_URL,
-    requestedLeadDays: Math.min(14, Math.max(7, Number(process.env.DIP_LOOKAHEAD_DAYS ?? 10))),
-    historicalBackfillStart: /^\d{4}-\d{2}-\d{2}$/.test(process.env.HISTORICAL_WOEK_BACKFILL_START ?? "") ? process.env.HISTORICAL_WOEK_BACKFILL_START! : "2025-05-06",
-    legislativeTerm: Math.max(1, Number(process.env.DIP_WAHLPERIODE ?? 21)),
-    // This limit applies to one invocation only. The import cursor is stored
-    // after every fetched page, so it can never silently define the coverage
-    // of the historical register.
-    importPagesPerInvocation: Math.min(3, Math.max(1, Number(process.env.DIP_IMPORT_PAGES_PER_INVOCATION ?? 3)))
-  };
-}
-
-export async function requestDip<T>({ resource, params = {} }: DipRequest): Promise<T> {
-  const apiKey = process.env.DIP_API_KEY;
-  if (!apiKey) throw new Error("DIP_API_KEY_MISSING");
-  const url = new URL(`${DIP_BASE_URL}/${resource}`);
-  for (const [key, value] of Object.entries(params)) if (value !== undefined) url.searchParams.set(key, String(value));
+export async function fetchDipResource(resource: string, params: Record<string, string> = {}): Promise<DipPage> {
+  const apiKey = getDipApiKey();
+  if (!permittedResources.has(resource)) throw new Error("Invalid DIP resource.");
+  const url = new URL(`${baseUrl}/${resource}`);
+  url.searchParams.set("format", "json");
+  Object.entries(params).forEach(([key, value]) => url.searchParams.set(key, value));
   const response = await fetch(url, {
     headers: { Authorization: `ApiKey ${apiKey}`, Accept: "application/json" },
-    cache: "no-store",
-    signal: AbortSignal.timeout(15_000)
+    next: { revalidate: 0 },
+    signal: AbortSignal.timeout(10_000)
   });
-  if (!response.ok) throw new Error(`DIP_REQUEST_FAILED_${response.status}`);
-  return response.json() as Promise<T>;
+  if (!response.ok) throw new Error(`DIP request failed with ${response.status}.`);
+  return dipEnvelopeSchema.parse(await response.json());
+}
+
+export async function fetchDipRecord(resource: string, id: string) {
+  const apiKey = getDipApiKey();
+  if (!permittedResources.has(resource) || !/^[A-Za-z0-9._-]+$/.test(id)) throw new Error("Invalid DIP record request.");
+  const response = await fetch(`${baseUrl}/${resource}/${encodeURIComponent(id)}?format=json`, {
+    headers: { Authorization: `ApiKey ${apiKey}`, Accept: "application/json" },
+    next: { revalidate: 0 },
+    signal: AbortSignal.timeout(10_000)
+  });
+  if (!response.ok) throw new Error(`DIP record request failed with ${response.status}.`);
+  return response.json() as Promise<unknown>;
+}
+
+/** Cursor pagination is mandatory: a partial result set must never be silently
+ * treated as a completed parliamentary import. DIP signals the last page by
+ * returning the same cursor value as in the preceding response. */
+export async function fetchAllDipPages(resource: string, params: Record<string, string> = {}, maxPages = 1_000) {
+  const documents: unknown[] = [];
+  let cursor: string | undefined;
+  let previousCursor: string | undefined;
+  let pageCount = 0;
+
+  do {
+    if (pageCount >= maxPages) throw new Error(`DIP pagination exceeded ${maxPages} pages.`);
+    const page = await fetchDipResource(resource, cursor ? { ...params, cursor } : params);
+    documents.push(...page.documents);
+    previousCursor = cursor;
+    cursor = page.cursor;
+    pageCount += 1;
+    if (cursor && cursor === previousCursor) break;
+  } while (cursor);
+
+  return { documents, pageCount };
 }

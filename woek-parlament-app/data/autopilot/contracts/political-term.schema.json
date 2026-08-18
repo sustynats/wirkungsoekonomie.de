@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wirkungsoekonomie.de/contracts/political-term-1.0.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["term_id", "term_type", "jurisdiction_id", "term_start", "term_end", "official_source_refs"],
+  "properties": {
+    "term_id": { "type": "string" },
+    "term_type": { "enum": ["FEDERAL_GOVERNMENT", "STATE_GOVERNMENT", "EU_COMMISSION", "EU_PARLIAMENT"] },
+    "jurisdiction_id": { "type": "string" },
+    "government_head": { "type": ["string", "null"] },
+    "term_start": { "type": "string", "format": "date" },
+    "term_end": { "type": ["string", "null"], "format": "date" },
+    "coalition": { "type": "array", "items": { "type": "string" } },
+    "formation_reason": { "enum": ["ELECTION", "PM_CHANGE", "COALITION_CHANGE", "EARLY_ELECTION", "GOVERNMENT_REFORMATION", "OTHER"] },
+    "mandate_document_refs": { "type": "array", "items": { "type": "string" } },
+    "official_source_refs": { "type": "array", "minItems": 1, "items": { "type": "string", "format": "uri" } }
+  }
+}

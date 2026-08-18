@@ -10,9 +10,6 @@ export type NewsletterAnalyticsRow = {
   unsubscribed: number;
   delivery_failures: number;
   welcome_sends: number;
-  issue_sends: number;
-  unique_opens: number;
-  unique_clicks: number;
 };
 
 export function validAnalyticsRange(value: string | null) {

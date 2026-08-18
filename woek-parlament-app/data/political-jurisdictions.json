@@ -1,0 +1,210 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-08-18",
+  "jurisdictions": [
+    {
+      "jurisdiction_id": "de-bund",
+      "jurisdiction_type": "FEDERAL",
+      "name": "Bundesrepublik Deutschland",
+      "active_term_id": "bund-2025",
+      "lifecycle_state": "GOVERNMENT_MONITORING",
+      "next_election_date": null,
+      "last_checked_at": null,
+      "source_status": "ACTIVE_OFFICIAL_ADAPTERS",
+      "monitoring_enabled": true
+    },
+    {
+      "jurisdiction_id": "de-bw",
+      "jurisdiction_type": "STATE",
+      "name": "Baden-Württemberg",
+      "active_term_id": "bw-2026",
+      "lifecycle_state": "GOVERNMENT_MONITORING",
+      "next_election_date": null,
+      "last_checked_at": null,
+      "source_status": "DEFINED_SOURCE_SCOPE",
+      "monitoring_enabled": true
+    },
+    {
+      "jurisdiction_id": "de-by",
+      "jurisdiction_type": "STATE",
+      "name": "Bayern",
+      "active_term_id": "by-current",
+      "lifecycle_state": "DORMANT",
+      "next_election_date": null,
+      "last_checked_at": null,
+      "source_status": "ELECTION_SOURCE_RECONNAISSANCE",
+      "monitoring_enabled": true
+    },
+    {
+      "jurisdiction_id": "de-be",
+      "jurisdiction_type": "STATE",
+      "name": "Berlin",
+      "active_term_id": "be-current",
+      "lifecycle_state": "PRE_ELECTION_WATCH",
+      "next_election_date": "2026-09-20",
+      "last_checked_at": null,
+      "source_status": "OFFICIAL_ELECTION_DATE_CONFIRMED",
+      "monitoring_enabled": true
+    },
+    {
+      "jurisdiction_id": "de-bb",
+      "jurisdiction_type": "STATE",
+      "name": "Brandenburg",
+      "active_term_id": "bb-current",
+      "lifecycle_state": "DORMANT",
+      "next_election_date": null,
+      "last_checked_at": null,
+      "source_status": "ELECTION_SOURCE_RECONNAISSANCE",
+      "monitoring_enabled": true
+    },
+    {
+      "jurisdiction_id": "de-hb",
+      "jurisdiction_type": "STATE",
+      "name": "Bremen",
+      "active_term_id": "hb-current",
+      "lifecycle_state": "DORMANT",
+      "next_election_date": null,
+      "last_checked_at": null,
+      "source_status": "ELECTION_SOURCE_RECONNAISSANCE",
+      "monitoring_enabled": true
+    },
+    {
+      "jurisdiction_id": "de-hh",
+      "jurisdiction_type": "STATE",
+      "name": "Hamburg",
+      "active_term_id": "hh-2025",
+      "lifecycle_state": "GOVERNMENT_MONITORING",
+      "next_election_date": null,
+      "last_checked_at": null,
+      "source_status": "DEFINED_SOURCE_SCOPE",
+      "monitoring_enabled": true
+    },
+    {
+      "jurisdiction_id": "de-he",
+      "jurisdiction_type": "STATE",
+      "name": "Hessen",
+      "active_term_id": "he-current",
+      "lifecycle_state": "DORMANT",
+      "next_election_date": null,
+      "last_checked_at": null,
+      "source_status": "ELECTION_SOURCE_RECONNAISSANCE",
+      "monitoring_enabled": true
+    },
+    {
+      "jurisdiction_id": "de-mv",
+      "jurisdiction_type": "STATE",
+      "name": "Mecklenburg-Vorpommern",
+      "active_term_id": "mv-current",
+      "lifecycle_state": "PRE_ELECTION_WATCH",
+      "next_election_date": "2026-09-20",
+      "last_checked_at": null,
+      "source_status": "OFFICIAL_ELECTION_DATE_CONFIRMED",
+      "monitoring_enabled": true
+    },
+    {
+      "jurisdiction_id": "de-ni",
+      "jurisdiction_type": "STATE",
+      "name": "Niedersachsen",
+      "active_term_id": "ni-current",
+      "lifecycle_state": "DORMANT",
+      "next_election_date": null,
+      "last_checked_at": null,
+      "source_status": "ELECTION_SOURCE_RECONNAISSANCE",
+      "monitoring_enabled": true
+    },
+    {
+      "jurisdiction_id": "de-nw",
+      "jurisdiction_type": "STATE",
+      "name": "Nordrhein-Westfalen",
+      "active_term_id": "nw-current",
+      "lifecycle_state": "DORMANT",
+      "next_election_date": null,
+      "last_checked_at": null,
+      "source_status": "ELECTION_SOURCE_RECONNAISSANCE",
+      "monitoring_enabled": true
+    },
+    {
+      "jurisdiction_id": "de-rp",
+      "jurisdiction_type": "STATE",
+      "name": "Rheinland-Pfalz",
+      "active_term_id": "rp-2026",
+      "lifecycle_state": "GOVERNMENT_MONITORING",
+      "next_election_date": null,
+      "last_checked_at": null,
+      "source_status": "DEFINED_SOURCE_SCOPE",
+      "monitoring_enabled": true
+    },
+    {
+      "jurisdiction_id": "de-sl",
+      "jurisdiction_type": "STATE",
+      "name": "Saarland",
+      "active_term_id": "sl-current",
+      "lifecycle_state": "DORMANT",
+      "next_election_date": null,
+      "last_checked_at": null,
+      "source_status": "ELECTION_SOURCE_RECONNAISSANCE",
+      "monitoring_enabled": true
+    },
+    {
+      "jurisdiction_id": "de-sn",
+      "jurisdiction_type": "STATE",
+      "name": "Sachsen",
+      "active_term_id": "sn-current",
+      "lifecycle_state": "DORMANT",
+      "next_election_date": null,
+      "last_checked_at": null,
+      "source_status": "ELECTION_SOURCE_RECONNAISSANCE",
+      "monitoring_enabled": true
+    },
+    {
+      "jurisdiction_id": "de-st",
+      "jurisdiction_type": "STATE",
+      "name": "Sachsen-Anhalt",
+      "active_term_id": "st-current",
+      "lifecycle_state": "PRE_ELECTION_WATCH",
+      "next_election_date": "2026-09-06",
+      "last_checked_at": null,
+      "source_status": "OFFICIAL_ELECTION_DATE_CONFIRMED",
+      "monitoring_enabled": true
+    },
+    {
+      "jurisdiction_id": "de-sh",
+      "jurisdiction_type": "STATE",
+      "name": "Schleswig-Holstein",
+      "active_term_id": "sh-current",
+      "lifecycle_state": "DORMANT",
+      "next_election_date": null,
+      "last_checked_at": null,
+      "source_status": "ELECTION_SOURCE_RECONNAISSANCE",
+      "monitoring_enabled": true
+    },
+    {
+      "jurisdiction_id": "de-th",
+      "jurisdiction_type": "STATE",
+      "name": "Thüringen",
+      "active_term_id": "th-current",
+      "lifecycle_state": "DORMANT",
+      "next_election_date": null,
+      "last_checked_at": null,
+      "source_status": "ELECTION_SOURCE_RECONNAISSANCE",
+      "monitoring_enabled": true
+    },
+    {
+      "jurisdiction_id": "eu",
+      "jurisdiction_type": "EU",
+      "name": "Europäische Union",
+      "active_term_id": "eu-commission-2024-2029",
+      "lifecycle_state": "GOVERNMENT_MONITORING",
+      "next_election_date": null,
+      "last_checked_at": null,
+      "source_status": "EU_ADAPTER_RECONNAISSANCE",
+      "monitoring_enabled": true,
+      "institutional_terms": {
+        "european_parliament_term_id": "ep-10",
+        "european_parliament_term_start": "2024-07-16",
+        "european_commission_term_id": "commission-2024-2029",
+        "european_commission_term_start": "2024-12-01"
+      }
+    }
+  ]
+}

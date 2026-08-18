@@ -1,0 +1,177 @@
+{
+  "data_version": "1.2",
+  "generated_at": "2026-08-18T12:00:00Z",
+  "canonical_objects": 1931,
+  "public_objects": 1931,
+  "review_objects": 223,
+  "relationships": 6235,
+  "source_events": 7252,
+  "multi_dip_clusters_reviewed": 29,
+  "overmerge_guard_objects_scanned": 1938,
+  "semantic_entity_review_required": 7,
+  "multi_dip_remaining": 0,
+  "duplicate_dip_ids": [],
+  "known_overmerge_regressions": [
+    {
+      "old_id": "govaction:dip:321575",
+      "superseded": true,
+      "new_ids": [
+        "govaction:dip:321575",
+        "govaction:dip:321278",
+        "govaction:dip:321234",
+        "govaction:dip:321722",
+        "govaction:dip:321361",
+        "govaction:dip:321188",
+        "govaction:dip:322919",
+        "govaction:dip:321994",
+        "govaction:dip:325546",
+        "govaction:dip:325542",
+        "govaction:dip:325540",
+        "govaction:dip:325537",
+        "govaction:dip:325536",
+        "govaction:dip:325534",
+        "govaction:dip:325532",
+        "govaction:dip:325531",
+        "govaction:dip:325530",
+        "govaction:dip:325526",
+        "govaction:dip:325525",
+        "govaction:dip:325524",
+        "govaction:dip:325523",
+        "govaction:dip:325520",
+        "govaction:dip:325518",
+        "govaction:dip:325517",
+        "govaction:dip:325515",
+        "govaction:dip:325509",
+        "govaction:dip:325508",
+        "govaction:dip:325507",
+        "govaction:dip:325506",
+        "govaction:dip:325505",
+        "govaction:dip:325502",
+        "govaction:dip:325499",
+        "govaction:dip:325497",
+        "govaction:dip:325494",
+        "govaction:dip:325492",
+        "govaction:dip:325491",
+        "govaction:dip:325490",
+        "govaction:dip:325488",
+        "govaction:dip:325487",
+        "govaction:dip:325486",
+        "govaction:dip:325484",
+        "govaction:dip:325482",
+        "govaction:dip:325481",
+        "govaction:dip:325480",
+        "govaction:dip:325479",
+        "govaction:dip:325478",
+        "govaction:dip:325457",
+        "govaction:dip:325455",
+        "govaction:dip:325451",
+        "govaction:dip:325447",
+        "govaction:dip:326602",
+        "govaction:dip:326601",
+        "govaction:dip:324545"
+      ],
+      "replacements_exist": true,
+      "result": "PASS"
+    },
+    {
+      "old_id": "govaction:dip:328503",
+      "superseded": true,
+      "new_ids": [
+        "govaction:dip:328503",
+        "govaction:dip:328601",
+        "govaction:dip:328550",
+        "govaction:dip:328549"
+      ],
+      "replacements_exist": true,
+      "result": "PASS"
+    },
+    {
+      "old_id": "govaction:dip:325255",
+      "superseded": true,
+      "new_ids": [
+        "govaction:dip:325255",
+        "govaction:dip:325252",
+        "govaction:dip:325251",
+        "govaction:dip:325228",
+        "govaction:dip:325224",
+        "govaction:dip:325223",
+        "govaction:dip:325219",
+        "govaction:dip:325217",
+        "govaction:dip:325215",
+        "govaction:dip:325213",
+        "govaction:dip:325212",
+        "govaction:dip:325211",
+        "govaction:dip:325210",
+        "govaction:dip:325207",
+        "govaction:dip:325202",
+        "govaction:dip:325201",
+        "govaction:dip:325196",
+        "govaction:dip:325195",
+        "govaction:dip:325193",
+        "govaction:dip:325192",
+        "govaction:dip:325191",
+        "govaction:dip:325190",
+        "govaction:dip:325189",
+        "govaction:dip:325188",
+        "govaction:dip:325185",
+        "govaction:dip:325182",
+        "govaction:dip:325181",
+        "govaction:dip:325180",
+        "govaction:dip:325179",
+        "govaction:dip:325176",
+        "govaction:dip:325174",
+        "govaction:dip:325183"
+      ],
+      "replacements_exist": true,
+      "result": "PASS"
+    },
+    {
+      "old_id": "govaction:dip:328937",
+      "superseded": true,
+      "new_ids": [
+        "govaction:dip:328937",
+        "govaction:dip:328855",
+        "govaction:dip:328820"
+      ],
+      "replacements_exist": true,
+      "result": "PASS"
+    },
+    {
+      "old_id": "govaction:dip:336982",
+      "superseded": true,
+      "new_ids": [
+        "govaction:dip:336982",
+        "govaction:dip:336840",
+        "govaction:dip:336796",
+        "govaction:dip:336540"
+      ],
+      "replacements_exist": true,
+      "result": "PASS"
+    },
+    {
+      "old_id": "govaction:dip:333505",
+      "superseded": true,
+      "new_ids": [
+        "govaction:dip:333505",
+        "govaction:dip:333510"
+      ],
+      "replacements_exist": true,
+      "result": "PASS"
+    },
+    {
+      "old_id": "govaction:breg-cabinet:2445448:top:4",
+      "superseded": true,
+      "new_ids": [
+        "govaction:breg-cabinet:2445448:top:4:bundeswehr-infrastruktur",
+        "govaction:breg-cabinet:2445448:top:4:sicherstellung-vorsorge"
+      ],
+      "replacements_exist": true,
+      "result": "PASS"
+    }
+  ],
+  "gates": {
+    "DATA_1_2_VALIDATION": "PASS",
+    "KNOWN_OVERMERGE_REGRESSIONS": "PASS",
+    "PUBLIC_EXPORT": "PASS"
+  }
+}

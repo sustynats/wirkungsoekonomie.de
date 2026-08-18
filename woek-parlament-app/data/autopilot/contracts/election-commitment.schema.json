@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wirkungsoekonomie.de/contracts/election-commitment-1.0.schema.json",
+  "description": "Quellengebundene Extraktion einer programmatischen Zusage. Keine Wirkungsbewertung.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["commitment_id", "election_cycle_id", "party_id", "source_document_id", "source_locator", "promise_text", "problem_assumption", "proposed_instrument", "competence_scope", "status"],
+  "properties": {
+    "commitment_id": { "type": "string", "minLength": 3 },
+    "election_cycle_id": { "type": "string", "minLength": 3 },
+    "party_id": { "type": "string", "minLength": 1 },
+    "source_document_id": { "type": "string", "minLength": 3 },
+    "source_locator": { "type": "string", "minLength": 1 },
+    "promise_text": { "type": "string", "minLength": 1 },
+    "problem_assumption": { "type": ["string", "null"] },
+    "proposed_instrument": { "type": ["string", "null"] },
+    "competence_scope": { "enum": ["FEDERAL", "LAND_FULL", "LAND_PARTIAL_SHARED", "MUNICIPAL", "EU_EXCLUSIVE", "EU_SHARED", "EU_SUPPORTING", "MIXED", "OTHER", "OPEN"] },
+    "competence_basis": { "type": ["string", "null"] },
+    "legal_basis": { "type": "array", "items": { "type": "string" } },
+    "required_external_actor": { "type": ["string", "null"] },
+    "competence_notes": { "type": ["string", "null"] },
+    "status": { "const": "EXTRACTED_NOT_ANALYSED" },
+    "source_fragment_status": { "enum": ["COMPLETE", "SOURCE_FRAGMENT_REVIEW_REQUIRED"] }
+  }
+}

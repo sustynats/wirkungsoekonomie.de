@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wirkungsoekonomie.de/contracts/election-cycle-1.0.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["election_cycle_id", "jurisdiction_id", "election_date", "status", "official_source_refs", "programme_collection_status", "result_status", "government_formation_status"],
+  "properties": {
+    "election_cycle_id": { "type": "string" },
+    "jurisdiction_id": { "type": "string" },
+    "election_date": { "type": "string", "format": "date" },
+    "status": { "enum": ["ANNOUNCED", "PROGRAMMES_COLLECTING", "PROGRAMMES_REVIEW", "ELECTION_COMPLETE", "COALITION_FORMATION", "GOVERNMENT_FORMED", "CLOSED"] },
+    "official_source_refs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "format": "uri" } },
+    "programme_collection_status": { "enum": ["NOT_STARTED", "IN_PROGRESS", "COMPLETE_DEFINED_SCOPE", "OPEN"] },
+    "result_status": { "enum": ["NOT_AVAILABLE", "PRELIMINARY", "FINAL_OFFICIAL"] },
+    "government_formation_status": { "enum": ["NOT_STARTED", "NEGOTIATING", "FORMED", "OPEN"] }
+  }
+}

@@ -3,9 +3,8 @@ import nodemailer from "nodemailer";
 import { z } from "zod";
 import { supabaseRest, supabaseRpc } from "@/lib/database/supabase-admin";
 import { newsletterDoubleOptInEmail, newsletterUnsubscribeConfirmedEmail, newsletterWelcomeEmail } from "@/lib/woek-newsletter/email-templates";
+import { consentVersion, privacyNoticeVersion } from "@/lib/privacy-notice";
 
-const consentVersion = "2026-08-15.1";
-const privacyNoticeVersion = "2026-08-15.1";
 const confirmationLifetimeHours = 72;
 const unconfirmedRetentionDays = 30;
 
@@ -65,6 +64,13 @@ function websiteUrl() {
   return parsed.toString().replace(/\/$/, "");
 }
 
+function portalUrl() {
+  const configured = process.env.NEXT_PUBLIC_PORTAL_URL ?? "https://parlament.wirkungsoekonomie.de";
+  const parsed = new URL(configured);
+  if (parsed.protocol !== "https:") throw new NewsletterDeliveryConfigurationError("The public portal URL must use HTTPS.");
+  return parsed.toString().replace(/\/$/, "");
+}
+
 function configuredDelivery(): DeliveryConfiguration | null {
   // The recipient data is a separate newsletter tenant. The established
   // sending mailbox and SMTP transport are intentionally shared.
@@ -115,43 +121,6 @@ function createIonosTransport(delivery: SmtpDelivery) {
   });
 }
 
-function senderAddress(value: string) {
-  return value.match(/<([^>]+)>/)?.[1] ?? value.trim();
-}
-
-/**
- * Used by the authenticated campaign endpoint as well as the DOI lifecycle.
- * The transport remains the established shared sender mailbox; only the
- * recipient tenant differs between Wirkungsradar and Wirkungsbrief.
- */
-export async function sendNewsletterMail(input: {
-  to: string;
-  subject: string;
-  text: string;
-  html: string;
-  fromName?: string;
-  listUnsubscribeUrl?: string;
-}) {
-  const delivery = configuredDelivery();
-  if (!delivery || delivery.type !== "ionos_smtp") {
-    throw new NewsletterDeliveryConfigurationError("Campaign delivery requires the configured SMTP transport.");
-  }
-  const headers: Record<string, string> = { "X-Auto-Response-Suppress": "All" };
-  if (input.listUnsubscribeUrl) {
-    headers["List-Unsubscribe"] = `<${input.listUnsubscribeUrl}>`;
-    headers["List-Unsubscribe-Post"] = "List-Unsubscribe=One-Click";
-  }
-  await createIonosTransport(delivery).sendMail({
-    from: input.fromName ? `${input.fromName} <${senderAddress(delivery.from)}>` : delivery.from,
-    replyTo: delivery.replyTo,
-    to: input.to,
-    subject: input.subject,
-    text: input.text,
-    html: input.html,
-    headers
-  });
-}
-
 function links(unsubscribeUrl: string, confirmationUrl: string, replyTo: string) {
   const website = websiteUrl();
   return {
@@ -190,12 +159,20 @@ async function recordMetric(metricKey: NewsletterMetricKey) {
 async function sendDoubleOptIn(subscription: SubscriptionRow, confirmationToken: string, unsubscribeToken: string): Promise<DeliveryChannel | false> {
   const delivery = configuredDelivery();
   if (!delivery) return false;
-  const baseUrl = websiteUrl();
-  const confirmationUrl = `${baseUrl}/newsletter/bestaetigen.html?subscription=${encodeURIComponent(subscription.id)}&token=${encodeURIComponent(confirmationToken)}&unsubscribe_token=${encodeURIComponent(unsubscribeToken)}`;
-  const unsubscribeUrl = `${baseUrl}/newsletter/abmelden.html?subscription=${encodeURIComponent(subscription.id)}&token=${encodeURIComponent(unsubscribeToken)}`;
+  const baseUrl = portalUrl();
+  const confirmationUrl = `${baseUrl}/woek-newsletter/bestaetigen?subscription=${encodeURIComponent(subscription.id)}&token=${encodeURIComponent(confirmationToken)}&unsubscribe_token=${encodeURIComponent(unsubscribeToken)}`;
+  const unsubscribeUrl = `${baseUrl}/woek-newsletter/abmelden?subscription=${encodeURIComponent(subscription.id)}&token=${encodeURIComponent(unsubscribeToken)}`;
   if (delivery.type === "ionos_smtp") {
     const message = newsletterDoubleOptInEmail(links(unsubscribeUrl, confirmationUrl, delivery.replyTo));
-    await sendNewsletterMail({ to: subscription.email, ...message, fromName: "Institut für Wirkungsökonomie" });
+    await createIonosTransport(delivery).sendMail({
+      from: delivery.from,
+      replyTo: delivery.replyTo,
+      to: subscription.email,
+      subject: message.subject,
+      text: message.text,
+      html: message.html,
+      headers: { "X-Auto-Response-Suppress": "All" }
+    });
     return delivery.type;
   }
   const response = await fetch(delivery.url, {
@@ -220,9 +197,17 @@ async function sendDoubleOptIn(subscription: SubscriptionRow, confirmationToken:
 async function sendWelcome(subscription: SubscriptionRow, unsubscribeToken: string) {
   const delivery = configuredDelivery();
   if (!delivery || delivery.type !== "ionos_smtp") return false;
-  const unsubscribeUrl = `${websiteUrl()}/newsletter/abmelden.html?subscription=${encodeURIComponent(subscription.id)}&token=${encodeURIComponent(unsubscribeToken)}`;
+  const unsubscribeUrl = `${portalUrl()}/woek-newsletter/abmelden?subscription=${encodeURIComponent(subscription.id)}&token=${encodeURIComponent(unsubscribeToken)}`;
   const message = newsletterWelcomeEmail(links(unsubscribeUrl, "", delivery.replyTo));
-  await sendNewsletterMail({ to: subscription.email, ...message, fromName: "Institut für Wirkungsökonomie" });
+  await createIonosTransport(delivery).sendMail({
+    from: delivery.from,
+    replyTo: delivery.replyTo,
+    to: subscription.email,
+    subject: message.subject,
+    text: message.text,
+    html: message.html,
+    headers: { "X-Auto-Response-Suppress": "All" }
+  });
   return true;
 }
 
@@ -230,7 +215,15 @@ async function sendUnsubscribeConfirmation(subscription: SubscriptionRow) {
   const delivery = configuredDelivery();
   if (!delivery || delivery.type !== "ionos_smtp") return false;
   const message = newsletterUnsubscribeConfirmedEmail(links("", "", delivery.replyTo));
-  await sendNewsletterMail({ to: subscription.email, ...message, fromName: "Institut für Wirkungsökonomie" });
+  await createIonosTransport(delivery).sendMail({
+    from: delivery.from,
+    replyTo: delivery.replyTo,
+    to: subscription.email,
+    subject: message.subject,
+    text: message.text,
+    html: message.html,
+    headers: { "X-Auto-Response-Suppress": "All" }
+  });
   return true;
 }
 

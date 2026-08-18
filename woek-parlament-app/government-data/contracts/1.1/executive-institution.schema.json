@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wirkungsoekonomie.de/contracts/executive-institution-1.1.schema.json",
+  "title": "WÖk ExecutiveInstitution 1.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "institution_id",
+    "official_name",
+    "institution_type",
+    "government_term_id",
+    "valid_from",
+    "valid_to",
+    "parent_institution_id",
+    "official_site",
+    "source_event_ids",
+    "coverage_scope_status",
+    "schema_version"
+  ],
+  "properties": {
+    "institution_id": {"type": "string", "minLength": 1},
+    "official_name": {"type": "string", "minLength": 1},
+    "short_name": {"type": ["string", "null"]},
+    "institution_type": {
+      "enum": ["FEDERAL_GOVERNMENT", "FEDERAL_MINISTRY", "FEDERAL_CHANCELLERY", "CABINET_COMMITTEE", "EXECUTIVE_BODY"]
+    },
+    "government_term_id": {"const": "bund-2025"},
+    "valid_from": {"type": "string"},
+    "valid_to": {"type": ["string", "null"]},
+    "parent_institution_id": {"type": ["string", "null"]},
+    "official_site": {"type": ["string", "null"]},
+    "source_event_ids": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "coverage_scope_status": {
+      "enum": ["COMPLETE_ENUMERATED_SOURCE", "BEST_EFFORT_DEFINED_SOURCE_SCOPE", "PARTIAL", "SOURCE_UNAVAILABLE", "UNKNOWN"]
+    },
+    "notes": {"type": "array", "items": {"type": "string"}},
+    "schema_version": {"const": "1.1"}
+  }
+}

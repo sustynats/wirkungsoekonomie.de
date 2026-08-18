@@ -1,0 +1,618 @@
+{
+  "as_of": "2026-08-17",
+  "data_version": "1.1",
+  "institutions": [
+    {
+      "coverage_scope_status": "COMPLETE_ENUMERATED_SOURCE",
+      "government_term_id": "bund-2025",
+      "institution_id": "BREG",
+      "institution_type": "FEDERAL_GOVERNMENT",
+      "notes": [
+        "Institutionelle Faktenschicht; keine Regierungs- oder Personenbewertung."
+      ],
+      "official_name": "Bundesregierung",
+      "official_site": "https://www.bundesregierung.de/",
+      "parent_institution_id": null,
+      "schema_version": "1.1",
+      "short_name": "Bundesregierung",
+      "source_event_ids": [
+        "source-event:60ace062ffc85280bce9a0d2"
+      ],
+      "valid_from": "2025-05-06",
+      "valid_to": null
+    },
+    {
+      "coverage_scope_status": "BEST_EFFORT_DEFINED_SOURCE_SCOPE",
+      "government_term_id": "bund-2025",
+      "institution_id": "BMF",
+      "institution_type": "FEDERAL_MINISTRY",
+      "notes": [],
+      "official_name": "Bundesministerium der Finanzen",
+      "official_site": "https://www.bundesfinanzministerium.de/Web/DE/Home/home.html",
+      "parent_institution_id": "BREG",
+      "schema_version": "1.1",
+      "short_name": "BMF",
+      "source_event_ids": [
+        "source-event:b861493c2610608f11e94b20"
+      ],
+      "valid_from": "2025-05-06",
+      "valid_to": null
+    },
+    {
+      "coverage_scope_status": "BEST_EFFORT_DEFINED_SOURCE_SCOPE",
+      "government_term_id": "bund-2025",
+      "institution_id": "BMI",
+      "institution_type": "FEDERAL_MINISTRY",
+      "notes": [],
+      "official_name": "Bundesministerium des Innern",
+      "official_site": "https://www.bmi.bund.de/DE/startseite/startseite-node.html",
+      "parent_institution_id": "BREG",
+      "schema_version": "1.1",
+      "short_name": "BMI",
+      "source_event_ids": [
+        "source-event:b861493c2610608f11e94b20"
+      ],
+      "valid_from": "2025-05-06",
+      "valid_to": null
+    },
+    {
+      "coverage_scope_status": "BEST_EFFORT_DEFINED_SOURCE_SCOPE",
+      "government_term_id": "bund-2025",
+      "institution_id": "AA",
+      "institution_type": "FEDERAL_MINISTRY",
+      "notes": [],
+      "official_name": "Auswärtiges Amt",
+      "official_site": "https://www.auswaertiges-amt.de/de",
+      "parent_institution_id": "BREG",
+      "schema_version": "1.1",
+      "short_name": "AA",
+      "source_event_ids": [
+        "source-event:b861493c2610608f11e94b20"
+      ],
+      "valid_from": "2025-05-06",
+      "valid_to": null
+    },
+    {
+      "coverage_scope_status": "BEST_EFFORT_DEFINED_SOURCE_SCOPE",
+      "government_term_id": "bund-2025",
+      "institution_id": "BMVg",
+      "institution_type": "FEDERAL_MINISTRY",
+      "notes": [],
+      "official_name": "Bundesministerium der Verteidigung",
+      "official_site": "https://www.bmvg.de/de",
+      "parent_institution_id": "BREG",
+      "schema_version": "1.1",
+      "short_name": "BMVg",
+      "source_event_ids": [
+        "source-event:b861493c2610608f11e94b20"
+      ],
+      "valid_from": "2025-05-06",
+      "valid_to": null
+    },
+    {
+      "coverage_scope_status": "BEST_EFFORT_DEFINED_SOURCE_SCOPE",
+      "government_term_id": "bund-2025",
+      "institution_id": "BMWE",
+      "institution_type": "FEDERAL_MINISTRY",
+      "notes": [],
+      "official_name": "Bundesministerium für Wirtschaft und Energie",
+      "official_site": "https://www.bundeswirtschaftsministerium.de/Navigation/DE/Home/home.html",
+      "parent_institution_id": "BREG",
+      "schema_version": "1.1",
+      "short_name": "BMWE",
+      "source_event_ids": [
+        "source-event:b861493c2610608f11e94b20"
+      ],
+      "valid_from": "2025-05-06",
+      "valid_to": null
+    },
+    {
+      "coverage_scope_status": "BEST_EFFORT_DEFINED_SOURCE_SCOPE",
+      "government_term_id": "bund-2025",
+      "institution_id": "BMFTR",
+      "institution_type": "FEDERAL_MINISTRY",
+      "notes": [],
+      "official_name": "Bundesministerium für Forschung, Technologie und Raumfahrt",
+      "official_site": "https://www.bmbf.de/DE/Home/home_node.html",
+      "parent_institution_id": "BREG",
+      "schema_version": "1.1",
+      "short_name": "BMFTR",
+      "source_event_ids": [
+        "source-event:b861493c2610608f11e94b20"
+      ],
+      "valid_from": "2025-05-06",
+      "valid_to": null
+    },
+    {
+      "coverage_scope_status": "BEST_EFFORT_DEFINED_SOURCE_SCOPE",
+      "government_term_id": "bund-2025",
+      "institution_id": "BMJV",
+      "institution_type": "FEDERAL_MINISTRY",
+      "notes": [],
+      "official_name": "Bundesministerium der Justiz und für Verbraucherschutz",
+      "official_site": "https://www.bmjv.de/DE/Startseite/Startseite_node.html",
+      "parent_institution_id": "BREG",
+      "schema_version": "1.1",
+      "short_name": "BMJV",
+      "source_event_ids": [
+        "source-event:b861493c2610608f11e94b20"
+      ],
+      "valid_from": "2025-05-06",
+      "valid_to": null
+    },
+    {
+      "coverage_scope_status": "BEST_EFFORT_DEFINED_SOURCE_SCOPE",
+      "government_term_id": "bund-2025",
+      "institution_id": "BMBFSFJ",
+      "institution_type": "FEDERAL_MINISTRY",
+      "notes": [],
+      "official_name": "Bundesministerium für Bildung, Familie, Senioren, Frauen und Jugend",
+      "official_site": "https://www.bmbfsfj.bund.de",
+      "parent_institution_id": "BREG",
+      "schema_version": "1.1",
+      "short_name": "BMBFSFJ",
+      "source_event_ids": [
+        "source-event:b861493c2610608f11e94b20"
+      ],
+      "valid_from": "2025-05-06",
+      "valid_to": null
+    },
+    {
+      "coverage_scope_status": "BEST_EFFORT_DEFINED_SOURCE_SCOPE",
+      "government_term_id": "bund-2025",
+      "institution_id": "BMAS",
+      "institution_type": "FEDERAL_MINISTRY",
+      "notes": [],
+      "official_name": "Bundesministerium für Arbeit und Soziales",
+      "official_site": "https://www.bmas.de/DE/Startseite/start.html",
+      "parent_institution_id": "BREG",
+      "schema_version": "1.1",
+      "short_name": "BMAS",
+      "source_event_ids": [
+        "source-event:b861493c2610608f11e94b20"
+      ],
+      "valid_from": "2025-05-06",
+      "valid_to": null
+    },
+    {
+      "coverage_scope_status": "BEST_EFFORT_DEFINED_SOURCE_SCOPE",
+      "government_term_id": "bund-2025",
+      "institution_id": "BMDS",
+      "institution_type": "FEDERAL_MINISTRY",
+      "notes": [],
+      "official_name": "Bundesministerium für Digitales und Staatsmodernisierung",
+      "official_site": "https://bmds.bund.de/",
+      "parent_institution_id": "BREG",
+      "schema_version": "1.1",
+      "short_name": "BMDS",
+      "source_event_ids": [
+        "source-event:b861493c2610608f11e94b20"
+      ],
+      "valid_from": "2025-05-06",
+      "valid_to": null
+    },
+    {
+      "coverage_scope_status": "BEST_EFFORT_DEFINED_SOURCE_SCOPE",
+      "government_term_id": "bund-2025",
+      "institution_id": "BMV",
+      "institution_type": "FEDERAL_MINISTRY",
+      "notes": [],
+      "official_name": "Bundesministerium für Verkehr",
+      "official_site": "https://www.bmv.de/DE/Home/home.html",
+      "parent_institution_id": "BREG",
+      "schema_version": "1.1",
+      "short_name": "BMV",
+      "source_event_ids": [
+        "source-event:b861493c2610608f11e94b20"
+      ],
+      "valid_from": "2025-05-06",
+      "valid_to": null
+    },
+    {
+      "coverage_scope_status": "BEST_EFFORT_DEFINED_SOURCE_SCOPE",
+      "government_term_id": "bund-2025",
+      "institution_id": "BMUKN",
+      "institution_type": "FEDERAL_MINISTRY",
+      "notes": [],
+      "official_name": "Bundesministerium für Umwelt, Klimaschutz, Naturschutz und nukleare Sicherheit",
+      "official_site": "https://www.bundesumweltministerium.de/",
+      "parent_institution_id": "BREG",
+      "schema_version": "1.1",
+      "short_name": "BMUKN",
+      "source_event_ids": [
+        "source-event:b861493c2610608f11e94b20"
+      ],
+      "valid_from": "2025-05-06",
+      "valid_to": null
+    },
+    {
+      "coverage_scope_status": "BEST_EFFORT_DEFINED_SOURCE_SCOPE",
+      "government_term_id": "bund-2025",
+      "institution_id": "BMG",
+      "institution_type": "FEDERAL_MINISTRY",
+      "notes": [],
+      "official_name": "Bundesministerium für Gesundheit",
+      "official_site": "https://www.bundesgesundheitsministerium.de/",
+      "parent_institution_id": "BREG",
+      "schema_version": "1.1",
+      "short_name": "BMG",
+      "source_event_ids": [
+        "source-event:b861493c2610608f11e94b20"
+      ],
+      "valid_from": "2025-05-06",
+      "valid_to": null
+    },
+    {
+      "coverage_scope_status": "BEST_EFFORT_DEFINED_SOURCE_SCOPE",
+      "government_term_id": "bund-2025",
+      "institution_id": "BMLEH",
+      "institution_type": "FEDERAL_MINISTRY",
+      "notes": [],
+      "official_name": "Bundesministerium für Landwirtschaft, Ernährung und Heimat",
+      "official_site": "https://www.bmleh.de/DE/Home/home_node.html",
+      "parent_institution_id": "BREG",
+      "schema_version": "1.1",
+      "short_name": "BMLEH",
+      "source_event_ids": [
+        "source-event:b861493c2610608f11e94b20"
+      ],
+      "valid_from": "2025-05-06",
+      "valid_to": null
+    },
+    {
+      "coverage_scope_status": "BEST_EFFORT_DEFINED_SOURCE_SCOPE",
+      "government_term_id": "bund-2025",
+      "institution_id": "BMZ",
+      "institution_type": "FEDERAL_MINISTRY",
+      "notes": [],
+      "official_name": "Bundesministerium für wirtschaftliche Zusammenarbeit und Entwicklung",
+      "official_site": "https://www.bmz.de/de",
+      "parent_institution_id": "BREG",
+      "schema_version": "1.1",
+      "short_name": "BMZ",
+      "source_event_ids": [
+        "source-event:b861493c2610608f11e94b20"
+      ],
+      "valid_from": "2025-05-06",
+      "valid_to": null
+    },
+    {
+      "coverage_scope_status": "BEST_EFFORT_DEFINED_SOURCE_SCOPE",
+      "government_term_id": "bund-2025",
+      "institution_id": "BMWSB",
+      "institution_type": "FEDERAL_MINISTRY",
+      "notes": [],
+      "official_name": "Bundesministerium für Wohnen, Stadtentwicklung und Bauwesen",
+      "official_site": "https://www.bmwsb.bund.de/DE/home/home_node.html",
+      "parent_institution_id": "BREG",
+      "schema_version": "1.1",
+      "short_name": "BMWSB",
+      "source_event_ids": [
+        "source-event:b861493c2610608f11e94b20"
+      ],
+      "valid_from": "2025-05-06",
+      "valid_to": null
+    },
+    {
+      "coverage_scope_status": "BEST_EFFORT_DEFINED_SOURCE_SCOPE",
+      "government_term_id": "bund-2025",
+      "institution_id": "BKAmt",
+      "institution_type": "FEDERAL_CHANCELLERY",
+      "notes": [
+        "Eigene Executive Institution; kein 17. Fachministerium."
+      ],
+      "official_name": "Bundeskanzleramt",
+      "official_site": "https://www.bundesregierung.de/breg-de/bundesregierung/bundeskanzleramt",
+      "parent_institution_id": "BREG",
+      "schema_version": "1.1",
+      "short_name": "BKAmt",
+      "source_event_ids": [
+        "source-event:7be341ec72a9194a8d6ce38b"
+      ],
+      "valid_from": "2025-05-06",
+      "valid_to": null
+    },
+    {
+      "coverage_scope_status": "BEST_EFFORT_DEFINED_SOURCE_SCOPE",
+      "government_term_id": "bund-2025",
+      "institution_id": "NSR",
+      "institution_type": "CABINET_COMMITTEE",
+      "notes": [
+        "Kabinettausschuss und Executive Body; kein Bundesministerium."
+      ],
+      "official_name": "Nationaler Sicherheitsrat",
+      "official_site": "https://www.bundesregierung.de/breg-de/bundesregierung/nationaler-sicherheitsrat",
+      "parent_institution_id": "BREG",
+      "schema_version": "1.1",
+      "short_name": "NSR",
+      "source_event_ids": [
+        "source-event:40db1183cdfcb97c96d6c808"
+      ],
+      "valid_from": "2025-08-27",
+      "valid_to": null
+    }
+  ],
+  "office_holder_assignments": [
+    {
+      "assignment_id": "office-assignment:23a1d7eecd4fd173afb44a8b",
+      "institution_id": "BMF",
+      "office_holder_name": "Lars Klingbeil",
+      "persons_used_for_assignment_only": true,
+      "role_id": "role:BMF:minister",
+      "role_label": "Bundesministerin/Bundesminister",
+      "schema_version": "1.1",
+      "source_event_ids": [
+        "source-event:7d9aac4e6c30d58df854eb96"
+      ],
+      "valid_from": "2025-05-06",
+      "valid_to": null
+    },
+    {
+      "assignment_id": "office-assignment:68f8cc6b4838ffd8ab95cfeb",
+      "institution_id": "BMI",
+      "office_holder_name": "Alexander Dobrindt",
+      "persons_used_for_assignment_only": true,
+      "role_id": "role:BMI:minister",
+      "role_label": "Bundesministerin/Bundesminister",
+      "schema_version": "1.1",
+      "source_event_ids": [
+        "source-event:7d9aac4e6c30d58df854eb96"
+      ],
+      "valid_from": "2025-05-06",
+      "valid_to": null
+    },
+    {
+      "assignment_id": "office-assignment:f60c36e9c00c930e4352aa3a",
+      "institution_id": "AA",
+      "office_holder_name": "Johann Wadephul",
+      "persons_used_for_assignment_only": true,
+      "role_id": "role:AA:minister",
+      "role_label": "Bundesministerin/Bundesminister",
+      "schema_version": "1.1",
+      "source_event_ids": [
+        "source-event:7d9aac4e6c30d58df854eb96"
+      ],
+      "valid_from": "2025-05-06",
+      "valid_to": null
+    },
+    {
+      "assignment_id": "office-assignment:211a932b5fe65f8bd9067cb3",
+      "institution_id": "BMVg",
+      "office_holder_name": "Boris Pistorius",
+      "persons_used_for_assignment_only": true,
+      "role_id": "role:BMVg:minister",
+      "role_label": "Bundesministerin/Bundesminister",
+      "schema_version": "1.1",
+      "source_event_ids": [
+        "source-event:7d9aac4e6c30d58df854eb96"
+      ],
+      "valid_from": "2025-05-06",
+      "valid_to": null
+    },
+    {
+      "assignment_id": "office-assignment:3c94147cabd0086b6cff71d6",
+      "institution_id": "BMWE",
+      "office_holder_name": "Katherina Reiche",
+      "persons_used_for_assignment_only": true,
+      "role_id": "role:BMWE:minister",
+      "role_label": "Bundesministerin/Bundesminister",
+      "schema_version": "1.1",
+      "source_event_ids": [
+        "source-event:7d9aac4e6c30d58df854eb96"
+      ],
+      "valid_from": "2025-05-06",
+      "valid_to": null
+    },
+    {
+      "assignment_id": "office-assignment:20227b131d9ea3740d370502",
+      "institution_id": "BMFTR",
+      "office_holder_name": "Dorothee Bär",
+      "persons_used_for_assignment_only": true,
+      "role_id": "role:BMFTR:minister",
+      "role_label": "Bundesministerin/Bundesminister",
+      "schema_version": "1.1",
+      "source_event_ids": [
+        "source-event:7d9aac4e6c30d58df854eb96"
+      ],
+      "valid_from": "2025-05-06",
+      "valid_to": null
+    },
+    {
+      "assignment_id": "office-assignment:14cd491e8d09cfba7ffe8f05",
+      "institution_id": "BMJV",
+      "office_holder_name": "Stefanie Hubig",
+      "persons_used_for_assignment_only": true,
+      "role_id": "role:BMJV:minister",
+      "role_label": "Bundesministerin/Bundesminister",
+      "schema_version": "1.1",
+      "source_event_ids": [
+        "source-event:7d9aac4e6c30d58df854eb96"
+      ],
+      "valid_from": "2025-05-06",
+      "valid_to": null
+    },
+    {
+      "assignment_id": "office-assignment:f3561a546396f1a061060f0e",
+      "institution_id": "BMBFSFJ",
+      "office_holder_name": "Karin Prien",
+      "persons_used_for_assignment_only": true,
+      "role_id": "role:BMBFSFJ:minister",
+      "role_label": "Bundesministerin/Bundesminister",
+      "schema_version": "1.1",
+      "source_event_ids": [
+        "source-event:7d9aac4e6c30d58df854eb96"
+      ],
+      "valid_from": "2025-05-06",
+      "valid_to": null
+    },
+    {
+      "assignment_id": "office-assignment:d612d8907e88c46bc327af40",
+      "institution_id": "BMAS",
+      "office_holder_name": "Bärbel Bas",
+      "persons_used_for_assignment_only": true,
+      "role_id": "role:BMAS:minister",
+      "role_label": "Bundesministerin/Bundesminister",
+      "schema_version": "1.1",
+      "source_event_ids": [
+        "source-event:7d9aac4e6c30d58df854eb96"
+      ],
+      "valid_from": "2025-05-06",
+      "valid_to": null
+    },
+    {
+      "assignment_id": "office-assignment:20d3d8e4dbd2ff1a62154414",
+      "institution_id": "BMDS",
+      "office_holder_name": "Karsten Wildberger",
+      "persons_used_for_assignment_only": true,
+      "role_id": "role:BMDS:minister",
+      "role_label": "Bundesministerin/Bundesminister",
+      "schema_version": "1.1",
+      "source_event_ids": [
+        "source-event:7d9aac4e6c30d58df854eb96"
+      ],
+      "valid_from": "2025-05-06",
+      "valid_to": null
+    },
+    {
+      "assignment_id": "office-assignment:e3340d2b7ff6a29e26d409c5",
+      "institution_id": "BMV",
+      "office_holder_name": "Patrick Schnieder",
+      "persons_used_for_assignment_only": true,
+      "role_id": "role:BMV:minister",
+      "role_label": "Bundesministerin/Bundesminister",
+      "schema_version": "1.1",
+      "source_event_ids": [
+        "source-event:7d9aac4e6c30d58df854eb96"
+      ],
+      "valid_from": "2025-05-06",
+      "valid_to": "2026-07-28"
+    },
+    {
+      "assignment_id": "office-assignment:b6ed552486114c99afc3a648",
+      "institution_id": "BMUKN",
+      "office_holder_name": "Carsten Schneider",
+      "persons_used_for_assignment_only": true,
+      "role_id": "role:BMUKN:minister",
+      "role_label": "Bundesministerin/Bundesminister",
+      "schema_version": "1.1",
+      "source_event_ids": [
+        "source-event:7d9aac4e6c30d58df854eb96"
+      ],
+      "valid_from": "2025-05-06",
+      "valid_to": null
+    },
+    {
+      "assignment_id": "office-assignment:c43ce21079a402b64d5b085c",
+      "institution_id": "BMG",
+      "office_holder_name": "Nina Warken",
+      "persons_used_for_assignment_only": true,
+      "role_id": "role:BMG:minister",
+      "role_label": "Bundesministerin/Bundesminister",
+      "schema_version": "1.1",
+      "source_event_ids": [
+        "source-event:7d9aac4e6c30d58df854eb96"
+      ],
+      "valid_from": "2025-05-06",
+      "valid_to": "2026-07-28"
+    },
+    {
+      "assignment_id": "office-assignment:40a5b8ba2e3cdfd1159417c1",
+      "institution_id": "BMLEH",
+      "office_holder_name": "Alois Rainer",
+      "persons_used_for_assignment_only": true,
+      "role_id": "role:BMLEH:minister",
+      "role_label": "Bundesministerin/Bundesminister",
+      "schema_version": "1.1",
+      "source_event_ids": [
+        "source-event:7d9aac4e6c30d58df854eb96"
+      ],
+      "valid_from": "2025-05-06",
+      "valid_to": null
+    },
+    {
+      "assignment_id": "office-assignment:260a24c2c10e432bca2f5398",
+      "institution_id": "BMZ",
+      "office_holder_name": "Reem Alabali-Radovan",
+      "persons_used_for_assignment_only": true,
+      "role_id": "role:BMZ:minister",
+      "role_label": "Bundesministerin/Bundesminister",
+      "schema_version": "1.1",
+      "source_event_ids": [
+        "source-event:7d9aac4e6c30d58df854eb96"
+      ],
+      "valid_from": "2025-05-06",
+      "valid_to": null
+    },
+    {
+      "assignment_id": "office-assignment:5ffe795e2b5f9caaf99eb9ea",
+      "institution_id": "BMWSB",
+      "office_holder_name": "Verena Hubertz",
+      "persons_used_for_assignment_only": true,
+      "role_id": "role:BMWSB:minister",
+      "role_label": "Bundesministerin/Bundesminister",
+      "schema_version": "1.1",
+      "source_event_ids": [
+        "source-event:7d9aac4e6c30d58df854eb96"
+      ],
+      "valid_from": "2025-05-06",
+      "valid_to": null
+    },
+    {
+      "assignment_id": "office-assignment:e534fc084c5b628f203d7391",
+      "institution_id": "BKAmt",
+      "office_holder_name": "Thorsten Frei",
+      "persons_used_for_assignment_only": true,
+      "role_id": "role:BKAmt:chief-special-affairs",
+      "role_label": "Chef des Bundeskanzleramtes und Bundesminister für besondere Aufgaben",
+      "schema_version": "1.1",
+      "source_event_ids": [
+        "source-event:2305660765fd2ef001c33359"
+      ],
+      "valid_from": "2025-05-06",
+      "valid_to": "2026-07-28"
+    },
+    {
+      "assignment_id": "office-assignment:61a4b7164303ee7eed6ec23f",
+      "institution_id": "BKAmt",
+      "office_holder_name": "Nina Warken",
+      "persons_used_for_assignment_only": true,
+      "role_id": "role:BKAmt:chief-special-affairs",
+      "role_label": "Chefin des Bundeskanzleramtes und Bundesministerin für besondere Aufgaben",
+      "schema_version": "1.1",
+      "source_event_ids": [
+        "source-event:2305660765fd2ef001c33359",
+        "source-event:8149f8cad978b7b5d0e99129"
+      ],
+      "valid_from": "2026-07-29",
+      "valid_to": null
+    },
+    {
+      "assignment_id": "office-assignment:e763a32cf047da9e598c7d55",
+      "institution_id": "BMG",
+      "office_holder_name": "Carsten Linnemann",
+      "persons_used_for_assignment_only": true,
+      "role_id": "role:BMG:minister",
+      "role_label": "Bundesminister für Gesundheit",
+      "schema_version": "1.1",
+      "source_event_ids": [
+        "source-event:2305660765fd2ef001c33359"
+      ],
+      "valid_from": "2026-07-29",
+      "valid_to": null
+    },
+    {
+      "assignment_id": "office-assignment:dbd84e4518e6b31b870d200c",
+      "institution_id": "BMV",
+      "office_holder_name": "Steffen Bilger",
+      "persons_used_for_assignment_only": true,
+      "role_id": "role:BMV:minister",
+      "role_label": "Bundesminister für Verkehr",
+      "schema_version": "1.1",
+      "source_event_ids": [
+        "source-event:2305660765fd2ef001c33359"
+      ],
+      "valid_from": "2026-07-29",
+      "valid_to": null
+    }
+  ]
+}

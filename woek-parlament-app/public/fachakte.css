@@ -1,0 +1,39 @@
+:root { --ink: #14253b; --paper: #fffdfa; --ground: #f6f1e9; --line: #d9d0c3; --teal: #126b60; --gold: #bc8b21; --muted: #586575; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; color: var(--ink); background: var(--ground); font-family: "Source Sans 3", Arial, sans-serif; font-size: 18px; line-height: 1.62; }
+a { color: #075f55; text-underline-offset: .16em; overflow-wrap: anywhere; word-break: break-word; }
+.shell { width: min(1120px, calc(100% - 2.5rem)); margin: 0 auto; }
+.skip-link { position: fixed; top: 0; left: 1rem; transform: translateY(-200%); }
+.skip-link:focus { z-index: 20; transform: translateY(1rem); padding: .7rem 1rem; color: white; background: var(--ink); }
+.document-header { border-top: 4px solid #9f1920; border-bottom: 1px solid var(--line); background: var(--paper); }
+.document-header .shell { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; padding: 1rem 0; }
+.brand { color: var(--ink); font-family: Georgia, serif; font-weight: 800; text-decoration: none; }
+.back-link { font-weight: 700; }
+main { padding: 3rem 0 5rem; }
+.eyebrow { margin: 0 0 .6rem; color: var(--teal); font-size: .78rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+h1, h2 { color: var(--ink); font-family: Georgia, serif; line-height: 1.14; }
+h1 { max-width: 23ch; margin: 0 0 1rem; font-size: clamp(2rem, 5vw, 3.4rem); }
+.lead { max-width: 68ch; color: #35445a; font-size: 1.15rem; }
+.provenance { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; margin: 2rem 0; border: 1px solid var(--line); background: var(--line); }
+.provenance div { padding: 1rem; background: var(--paper); }
+dt { color: var(--muted); font-size: .78rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+dd { margin: .25rem 0 0; font-weight: 650; }
+.toc { margin: 2rem 0 2.5rem; padding: 1.25rem; border-left: 4px solid var(--gold); background: #fbf0d0; }
+.toc ol { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .45rem 1.5rem; margin: .8rem 0 0; padding-left: 1.25rem; }
+.toc .nested { margin-left: .75rem; }
+.publication-source-body { max-width: 76ch; }
+.publication-source-body h2 { margin: 2.4rem 0 .85rem; padding-top: .8rem; border-top: 1px solid var(--line); font-size: clamp(1.55rem, 3vw, 2.2rem); scroll-margin-top: 2rem; }
+.publication-source-body h3 { margin: 1.75rem 0 .6rem; font: 800 1.22rem/1.35 "Source Sans 3", Arial, sans-serif; scroll-margin-top: 2rem; }
+.publication-source-body h4, .publication-source-body h5, .publication-source-body h6 { margin: 1.25rem 0 .5rem; font: 800 1rem/1.35 "Source Sans 3", Arial, sans-serif; }
+.publication-source-body p, .publication-source-body li { overflow-wrap: anywhere; word-break: break-word; }
+.publication-source-body p { margin: 0 0 1.1rem; }
+.publication-source-body ul, .publication-source-body ol { display: grid; gap: .7rem; margin: 1rem 0 1.4rem; padding-left: 1.45rem; }
+.publication-source-body blockquote { margin: 1.4rem 0; padding: 1rem 1.1rem; border-left: 4px solid var(--teal); background: var(--paper); font-weight: 650; }
+.publication-source-body code { overflow-wrap: anywhere; word-break: break-word; }
+.publication-source-body pre { overflow-x: auto; padding: 1rem; color: #eef3f7; background: var(--ink); }
+.complete-publication-table { overflow-x: auto; margin: 1.5rem 0; border: 1px solid var(--line); background: var(--paper); }
+table { width: 100%; min-width: 44rem; border-collapse: collapse; }
+th, td { padding: .8rem .9rem; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); vertical-align: top; text-align: left; line-height: 1.45; }
+.source-footer { max-width: 76ch; margin-top: 3rem; padding: 1.25rem; border-top: 3px solid var(--teal); background: var(--paper); font-size: .92rem; overflow-wrap: anywhere; word-break: break-word; }
+@media (max-width: 640px) { body { font-size: 16px; } .shell { width: min(100% - 2rem, 1120px); } main { padding-top: 2rem; } .provenance, .toc ol { grid-template-columns: 1fr; } .toc .nested { margin-left: .5rem; } }

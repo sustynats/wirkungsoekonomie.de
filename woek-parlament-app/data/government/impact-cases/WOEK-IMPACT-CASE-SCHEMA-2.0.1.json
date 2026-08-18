@@ -1,0 +1,283 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wirkungsoekonomie.de/contracts/woek-impact-case-2.0.1.schema.json",
+  "title": "WÖkImpactCase 2.0.1",
+  "description": "Fachlicher Wirkungsgegenstand für politische Maßnahmen. GovernmentAction, ParliamentaryCase, LegalAct und SourceEvent bleiben getrennte Lebenszyklusobjekte.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "impact_case_id",
+    "title",
+    "analysis_mode",
+    "publication_analysis_status",
+    "analysis_version",
+    "linked_objects",
+    "scope",
+    "materiality",
+    "impact_summary",
+    "impact_paths",
+    "counterfactual",
+    "implementation_tracking",
+    "evidence_summary",
+    "boundary_review",
+    "data_needs",
+    "reality_check",
+    "references",
+    "fach_review",
+    "method_version"
+  ],
+  "properties": {
+    "impact_case_id": {"type": "string", "pattern": "^WOEK-IMPACT-[A-Z0-9-]+$"},
+    "title": {"type": "string", "minLength": 1},
+    "analysis_mode": {"enum": ["IMPACT_POTENTIAL_EX_ANTE", "IMPACT_REALITY_CHECK"]},
+    "publication_analysis_status": {"enum": ["FULL_WOEK_ANALYSIS", "STANDARD_WOEK_ANALYSIS", "REALITY_CHECK", "BOUNDARY_REVIEW", "NO_INDEPENDENT_EFFECT_OBJECT", "OPEN_ANALYSIS"]},
+    "analysis_version": {"type": "string"},
+    "supersedes_analysis_version": {"type": ["string", "null"]},
+    "linked_objects": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["government_action_ids", "parliament_case_ids", "legal_act_ids", "implementation_object_ids", "programme_ids", "source_event_ids"],
+      "properties": {
+        "government_action_ids": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "parliament_case_ids": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "legal_act_ids": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "implementation_object_ids": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "programme_ids": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+        "source_event_ids": {"type": "array", "items": {"type": "string"}, "uniqueItems": true}
+      }
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["intervention", "policy_object", "affected_groups", "affected_systems", "decision_knowledge_cutoff", "analysis_as_of", "implementation_state"],
+      "properties": {
+        "intervention": {"type": "string"},
+        "policy_object": {"type": "string"},
+        "affected_groups": {"type": "array", "items": {"type": "string"}},
+        "affected_systems": {"type": "array", "items": {"type": "string"}},
+        "decision_knowledge_cutoff": {"type": ["string", "null"], "format": "date"},
+        "analysis_as_of": {"type": "string", "format": "date"},
+        "competence_note": {"type": ["string", "null"]},
+        "implementation_state": {"enum": ["ANNOUNCED", "DRAFT", "CABINET_DECIDED", "PARLIAMENTARY_PROCESS", "ADOPTED", "PROMULGATED", "IN_FORCE", "IMPLEMENTING", "MATURE_IMPLEMENTATION", "EVALUATED", "SUPERSEDED", "MIXED", "UNKNOWN"]},
+        "effect_start_expected": {"type": ["string", "null"]},
+        "effect_maturity_expected": {"type": ["string", "null"]}
+      }
+    },
+    "materiality": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["level", "rationale", "drivers"],
+      "properties": {
+        "level": {"enum": ["HIGH", "MEDIUM", "LOW", "OPEN"]},
+        "rationale": {"type": "string"},
+        "drivers": {
+          "type": "array",
+          "items": {"enum": ["RIGHTS_RULE_OF_LAW", "POPULATION_SCALE", "FINANCIAL_SCALE", "CLIMATE_RESOURCE", "HEALTH_SAFETY", "DISTRIBUTION", "STRUCTURAL_CHANGE", "PATH_DEPENDENCE", "IRREVERSIBILITY", "DEMOCRACY", "INTERGENERATIONAL", "HIGH_UNCERTAINTY_HIGH_HARM", "SYSTEM_RESILIENCE", "OTHER"]},
+          "uniqueItems": true
+        }
+      }
+    },
+    "impact_summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["central_lever", "strongest_positive_potential", "main_risk_or_tradeoff", "direction_dependencies", "measurement_priority", "public_summary", "overall_character"],
+      "properties": {
+        "central_lever": {"type": "string"},
+        "strongest_positive_potential": {"type": "string"},
+        "main_risk_or_tradeoff": {"type": "string"},
+        "direction_dependencies": {"type": "string"},
+        "measurement_priority": {"type": "string"},
+        "public_summary": {"type": "string"},
+        "overall_character": {"enum": ["PREDOMINANTLY_POSITIVE_POTENTIAL", "PREDOMINANTLY_NEGATIVE_RISK", "AMBIVALENT", "OPEN", "BOUNDARY_DOMINATED"]}
+      }
+    },
+    "impact_paths": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path_id", "impact_order", "trigger", "mechanism", "state_variable", "state_change", "reference", "direction", "evidence", "data_status", "affected_groups", "mpd", "time_horizon", "conditions", "risks", "uncertainties", "indicators", "evidence_basis"],
+        "properties": {
+          "path_id": {"type": "string"},
+          "impact_order": {"enum": ["FIRST", "SECOND", "THIRD", "SYSTEMIC"]},
+          "trigger": {"type": "string"},
+          "mechanism": {"type": "string"},
+          "state_variable": {"type": "string"},
+          "baseline": {"type": ["string", "number", "null"]},
+          "state_change": {"type": "string"},
+          "reference": {"type": "array", "items": {"type": "string"}},
+          "direction": {"enum": ["POSITIVE", "NEGATIVE", "NEUTRAL", "AMBIVALENT", "OPEN"]},
+          "evidence": {"enum": ["HIGH", "MEDIUM", "LOW", "INSUFFICIENT", "NOT_APPLICABLE"]},
+          "data_status": {"enum": ["MEASURED", "OBSERVED", "MODELLED", "ESTIMATED", "SECONDARY", "MISSING", "MIXED"]},
+          "affected_groups": {"type": "array", "items": {"type": "string"}},
+          "mpd": {"type": "array", "items": {"enum": ["MENSCH", "PLANET", "DEMOKRATIE"]}, "uniqueItems": true},
+          "time_horizon": {"enum": ["IMMEDIATE", "SHORT", "MEDIUM", "LONG", "INTERGENERATIONAL", "NOT_YET_OBSERVABLE"]},
+          "conditions": {"type": "array", "items": {"type": "string"}},
+          "risks": {"type": "array", "items": {"type": "string"}},
+          "uncertainties": {"type": "array", "items": {"type": "string"}},
+          "distributional_effects": {"type": "array", "items": {"type": "string"}},
+          "indicators": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["indicator", "function"],
+              "properties": {
+                "indicator": {"type": "string"},
+                "function": {"enum": ["BASELINE", "IMPLEMENTATION", "OUTPUT", "OUTCOME", "COUNTERFACTUAL", "DISTRIBUTION", "BOUNDARY", "ATTRIBUTION"]},
+                "unit": {"type": ["string", "null"]},
+                "preferred_source": {"type": ["string", "null"]},
+                "woek_id": {"type": ["string", "null"]},
+                "woek_id_status": {"enum": ["CONFIRMED", "PENDING_REGISTER_LINK", "NOT_APPLICABLE"]}
+              }
+            }
+          },
+          "sdg_refs": {"type": "array", "items": {"type": "string"}},
+          "sdg_plus_refs": {"type": "array", "items": {"type": "string"}},
+          "legal_refs": {"type": "array", "items": {"type": "string"}},
+          "evidence_basis": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "counterfactual": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["primary_question", "plausible_without_measure", "alternative_designs", "identification_strategy", "limitations"],
+      "properties": {
+        "primary_question": {"type": "string"},
+        "plausible_without_measure": {"type": "string"},
+        "alternative_designs": {"type": "array", "items": {"type": "string"}},
+        "identification_strategy": {"type": "array", "items": {"type": "string"}},
+        "limitations": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "implementation_tracking": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["implementation_questions", "implementation_indicators", "known_status"],
+      "properties": {
+        "implementation_questions": {"type": "array", "items": {"type": "string"}},
+        "implementation_indicators": {"type": "array", "items": {"type": "string"}},
+        "known_status": {"type": "string"},
+        "implementation_sources": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "evidence_summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["fact_evidence", "mechanism_evidence", "effect_evidence", "uncertainty", "decision_time_evidence_boundary"],
+      "properties": {
+        "fact_evidence": {"type": "string"},
+        "mechanism_evidence": {"type": "string"},
+        "effect_evidence": {"type": "string"},
+        "uncertainty": {"type": "string"},
+        "decision_time_evidence_boundary": {"type": "string"}
+      }
+    },
+    "boundary_review": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["boundary_id", "boundary", "status", "reason", "evidence_basis"],
+        "properties": {
+          "boundary_id": {"type": "string"},
+          "boundary": {"type": "string"},
+          "status": {"enum": ["PASS", "WATCH", "BLOCK", "OPEN"]},
+          "reason": {"type": "string"},
+          "evidence_basis": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "data_needs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["data_id", "question", "data", "function", "priority", "preferred_source"],
+        "properties": {
+          "data_id": {"type": "string"},
+          "question": {"type": "string"},
+          "data": {"type": "string"},
+          "function": {"enum": ["BASELINE", "IMPLEMENTATION", "OUTPUT", "OUTCOME", "COUNTERFACTUAL", "DISTRIBUTION", "BOUNDARY", "ATTRIBUTION"]},
+          "priority": {"enum": ["P0", "P1", "P2"]},
+          "preferred_source": {"type": ["string", "null"]}
+        }
+      }
+    },
+    "reality_check": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "as_of", "observation_window", "observations", "attribution", "original_potentials_status", "next_check"],
+      "properties": {
+        "status": {"enum": ["NOT_YET_OBSERVABLE", "OBSERVATION_ONLY", "PLAUSIBLE_CONTRIBUTION", "PARTIAL_ATTRIBUTION", "CAUSAL_EVIDENCE", "CONFLICTING_EVIDENCE", "NOT_APPLICABLE"]},
+        "as_of": {"type": ["string", "null"], "format": "date"},
+        "observation_window": {"type": ["string", "null"]},
+        "observations": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["indicator", "observation", "source", "interpretation_limit"],
+            "properties": {
+              "indicator": {"type": "string"},
+              "observation": {"type": "string"},
+              "source": {"type": "string"},
+              "interpretation_limit": {"type": "string"}
+            }
+          }
+        },
+        "attribution": {"type": ["string", "null"]},
+        "original_potentials_status": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["path_id", "status", "reason"],
+            "properties": {
+              "path_id": {"type": "string"},
+              "status": {"enum": ["SUPPORTED", "NOT_SUPPORTED", "PARTIALLY_SUPPORTED", "CONTRADICTED", "OPEN", "NOT_YET_TESTABLE"]},
+              "reason": {"type": "string"}
+            }
+          }
+        },
+        "next_check": {"type": ["string", "null"]}
+      }
+    },
+    "references": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["official_fact_sources", "mechanism_sources", "post_decision_sources"],
+      "properties": {
+        "official_fact_sources": {"type": "array", "items": {"type": "string"}},
+        "mechanism_sources": {"type": "array", "items": {"type": "string"}},
+        "post_decision_sources": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "fach_review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "reviewer", "reviewed_at", "override_ids", "open_questions"],
+      "properties": {
+        "status": {"enum": ["APPROVED", "APPROVED_WITH_OPEN_DATA", "OPEN", "SUPERSEDED"]},
+        "reviewer": {"const": "Institut für Wirkungsökonomie"},
+        "reviewed_at": {"type": "string"},
+        "override_ids": {"type": "array", "items": {"type": "string"}},
+        "open_questions": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "change_log": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["date", "change", "reason"],
+        "properties": {
+          "date": {"type": "string"},
+          "change": {"type": "string"},
+          "reason": {"type": "string"}
+        }
+      }
+    },
+    "method_version": {"const": "WOEK-POLITICAL-IMPACT-2.0"}
+  }
+}
+
+

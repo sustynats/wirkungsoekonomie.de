@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wirkungsoekonomie.de/contracts/parliament-individual-vote-1.0.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["vote_event_id", "mp_id", "vote", "source_ref"],
+  "properties": {
+    "vote_event_id": { "type": "string", "minLength": 4 },
+    "mp_id": { "type": "string", "minLength": 1 },
+    "vote": {
+      "enum": ["JA", "NEIN", "ENTHALTUNG", "NICHT_TEILGENOMMEN", "NICHT_ABGEGEBEN", "SONSTIGER_AMTLICHER_STATUS"]
+    },
+    "source_ref": { "type": "string", "format": "uri" }
+  }
+}

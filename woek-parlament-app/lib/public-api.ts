@@ -1,43 +1,46 @@
-import { getCase, listCases } from "@/lib/cases";
-import { listPublishedPortalCases, type PublishedPortalCase } from "@/lib/published-cases";
+import type { ParliamentaryCase } from "@/data/cases";
+import { sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
 
-export function toPublicCase(item: NonNullable<ReturnType<typeof getCase>>) {
+export function publicCase(item: ParliamentaryCase) {
   return {
-    id: item.slug,
-    type: item.kind,
-    title: item.plainTitle,
-    originalTitle: item.title,
-    status: item.statusVerification,
-    editorialStatus: item.editorialStatus,
-    phase: item.phaseLabel,
-    term: item.termLabel,
-    materiality: item.materiality,
-    updatedAt: item.lastUpdated,
-    publishedConclusion: item.publishedConclusion,
-    links: { html: `/entscheidungen/${item.slug}`, dossier: `/entscheidungen/${item.slug}#dossier` }
-  };
-}
-
-function toPublicDatabaseCase(item: PublishedPortalCase) {
-  return {
-    id: item.slug,
-    type: item.kind,
+    slug: item.slug,
     title: item.title,
-    originalTitle: item.originalTitle,
-    status: "VERIFIED",
-    editorialStatus: "PUBLISHED",
-    phase: item.nextEvent ? "Anstehend" : "Veröffentlicht",
-    term: item.nextEvent ?? item.decisionDate ?? item.lastActivityOn,
-    materiality: null,
-    updatedAt: item.lastUpdated,
-    links: { html: `/entscheidungen/${item.slug}`, dossier: `/entscheidungen/${item.slug}#dossier` }
+    plainTitle: item.plainTitle,
+    kind: item.kind,
+    editorialStatus: item.editorialStatus,
+    materiality: item.materiality,
+    parliamentaryStatus: item.parliamentaryStatus,
+    statusVerification: item.statusVerification,
+    nextEvent: item.nextEvent,
+    lastUpdated: item.lastUpdated,
+    summary: item.summary,
+    analysisStatus: item.analysisStatus,
+    versionNote: item.versionNote
   };
 }
 
-export async function publicCases() {
-  const [databaseCases, demonstrators] = await Promise.all([
-    listPublishedPortalCases(),
-    Promise.resolve(listCases().filter((item) => item.editorialStatus === "DEMONSTRATOR"))
-  ]);
-  return [...databaseCases.map(toPublicDatabaseCase), ...demonstrators.map(toPublicCase)];
+export function publicImpact(item: ParliamentaryCase) {
+  return {
+    slug: item.slug,
+    whatIsDecided: item.whatIsDecided,
+    intendedGoal: item.intendedGoal,
+    impactPath: item.impactPath,
+    affectedGroups: item.affectedGroups,
+    questions: item.questions,
+    editorialStatus: item.editorialStatus
+  };
+}
+
+export function publicSources(item: ParliamentaryCase) {
+  return {
+    slug: item.slug,
+    sources: item.sources.map(({ url: _originalUrl, ...source }) => ({
+      ...source,
+      detailUrl: sourceDetailHrefForUrl(_originalUrl)
+    }))
+  };
+}
+
+export function publicVersions(item: ParliamentaryCase) {
+  return { slug: item.slug, currentVersion: item.versionNote, status: item.editorialStatus };
 }

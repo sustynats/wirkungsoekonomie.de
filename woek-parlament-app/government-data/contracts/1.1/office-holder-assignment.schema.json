@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wirkungsoekonomie.de/contracts/office-holder-assignment-1.1.schema.json",
+  "title": "WÖk OfficeHolderAssignment 1.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "assignment_id",
+    "institution_id",
+    "role_id",
+    "role_label",
+    "office_holder_name",
+    "valid_from",
+    "valid_to",
+    "source_event_ids",
+    "persons_used_for_assignment_only",
+    "schema_version"
+  ],
+  "properties": {
+    "assignment_id": {"type": "string", "minLength": 1},
+    "institution_id": {"type": "string", "minLength": 1},
+    "role_id": {"type": "string", "minLength": 1},
+    "role_label": {"type": "string", "minLength": 1},
+    "office_holder_name": {"type": "string", "minLength": 1},
+    "valid_from": {"type": "string"},
+    "valid_to": {"type": ["string", "null"]},
+    "source_event_ids": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "persons_used_for_assignment_only": {"const": true},
+    "schema_version": {"const": "1.1"}
+  }
+}

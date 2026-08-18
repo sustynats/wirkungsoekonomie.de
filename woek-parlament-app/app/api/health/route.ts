@@ -1,16 +1,31 @@
 import { NextResponse } from "next/server";
-import { getDipConfiguration } from "@/lib/dip";
-import { getSupabaseConfiguration } from "@/lib/supabase-rest";
+import { supabaseRest } from "@/lib/database/supabase-admin";
+import { governmentDailyIngestReady } from "@/lib/government/daily-impact-ingest";
 
 export const dynamic = "force-dynamic";
 
-export function GET() {
-  const dip = getDipConfiguration();
-  const supabase = getSupabaseConfiguration();
+function dipImportStatus() {
+  const key = process.env.DIP_API_KEY?.trim();
+  if (!key) return "disabled_missing_key";
+  // This reports only configuration state, never the value or a derived secret.
+  return key.length === 42 ? "configured_not_scheduled" : "disabled_invalid_key_format";
+}
+
+export async function GET() {
+  let database = "unavailable";
+  try {
+    await supabaseRest<unknown[]>("parliament.parliaments?select=id&limit=1");
+    database = "ready";
+  } catch {
+    // A health response must never disclose database URLs, provider details,
+    // credentials, or internal error strings.
+  }
   return NextResponse.json({
     status: "ok",
     service: "woek-parlament-app",
-    dip: { status: dip.configured ? "configured" : "disabled_missing_key", leadDays: dip.requestedLeadDays },
-    supabase: { status: supabase.configured ? "configured" : "disabled_missing_server_credentials" }
+    database,
+    dipImport: dipImportStatus(),
+    governmentImpactDaily: governmentDailyIngestReady() ? "configured_fail_closed" : "disabled_missing_configuration",
+    timestamp: new Date().toISOString()
   });
 }

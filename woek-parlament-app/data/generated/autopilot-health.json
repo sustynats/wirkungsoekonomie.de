@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "generated_at": null,
+  "overall_status": "DEGRADED",
+  "domains": {
+    "federal": { "status": "DEGRADED", "last_run_at": null, "detail": "Noch kein bestätigter gemeinsamer Autopilot-Lauf." },
+    "parliament": { "status": "DEGRADED", "last_run_at": null, "detail": "Noch kein bestätigter gemeinsamer Autopilot-Lauf." },
+    "states": { "status": "DEGRADED", "last_run_at": null, "detail": "Länderadapter werden quellenweise freigeschaltet." },
+    "eu": { "status": "DEGRADED", "last_run_at": null, "detail": "EU-Adapter befinden sich in der Quellenprüfung." }
+  },
+  "last_verified_deployment_at": null,
+  "open_data_issues": 0,
+  "open_fach_reviews": 0,
+  "next_election_triggers": [],
+  "next_reality_checks": []
+}
