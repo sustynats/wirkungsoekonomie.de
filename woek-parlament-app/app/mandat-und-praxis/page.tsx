@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { EditorialReviewAssessment } from "@/app/components/OverviewAssessment";
 import { politicalSourceCatalog } from "@/lib/commitments/source-catalog";
 
 export const metadata: Metadata = {
@@ -85,10 +86,11 @@ export default function MandatUndPraxisPage() {
       <section className="section section-compact" aria-labelledby="programmes-title">
         <div className="section-heading"><div><p className="eyebrow">Quellenregister</p><h2 id="programmes-title">Wahlprogramme 2025</h2></div></div>
         <div className="source-register">
-          {electionPrograms.map((source) => <article key={source.sourceKey}>
-            <p className="source-register-label">Originalquelle der Partei · {source.actor}</p>
+          {electionPrograms.map((source) => <article key={source.sourceKey} data-woek-preview-card="review-required">
             <h3>{source.title}</h3>
-            <p>{source.note}</p><p className="commitment-count"><strong>{source.commitmentCount.toLocaleString("de-DE")} strukturierte Zusagen</strong> · mit Quellenfingerabdruck dokumentiert</p>
+            <EditorialReviewAssessment subject={source.title} />
+            <div data-woek-process-metadata><p className="source-register-label">Originalquelle der Partei · {source.actor}</p>
+            <p>{source.note}</p><p className="commitment-count"><strong>{source.commitmentCount.toLocaleString("de-DE")} strukturierte Zusagen</strong> · mit Quellenfingerabdruck dokumentiert</p></div>
             <Link className="text-link" href={`/mandat-und-praxis/${source.sourceKey}`}>Zusagen und Fundstellen ansehen <span aria-hidden="true">→</span></Link>
           </article>)}
         </div>
@@ -96,10 +98,11 @@ export default function MandatUndPraxisPage() {
 
       {coalitionAgreement && <section className="section section-compact coalition-source" aria-labelledby="coalition-title">
         <div className="section-heading"><div><p className="eyebrow">Gemeinsame Vereinbarung</p><h2 id="coalition-title">Koalitionsvertrag 2025</h2></div></div>
-        <article>
-          <p className="source-register-label">Originaldokument der Koalitionsparteien · {coalitionAgreement.actor}</p>
+        <article data-woek-preview-card="review-required">
           <h3>{coalitionAgreement.title}</h3>
-          <p>{coalitionAgreement.note} Jede spätere Zuordnung wird die konkrete Vertragsstelle, die dazugehörige parlamentarische Entscheidung und ihren Quellenstand zeigen.</p><p className="commitment-count"><strong>{coalitionAgreement.commitmentCount.toLocaleString("de-DE")} strukturierte Zusagen</strong> · mit Quellenfingerabdruck dokumentiert</p>
+          <EditorialReviewAssessment subject={coalitionAgreement.title} />
+          <div data-woek-process-metadata><p className="source-register-label">Originaldokument der Koalitionsparteien · {coalitionAgreement.actor}</p>
+          <p>{coalitionAgreement.note} Jede spätere Zuordnung wird die konkrete Vertragsstelle, die dazugehörige parlamentarische Entscheidung und ihren Quellenstand zeigen.</p><p className="commitment-count"><strong>{coalitionAgreement.commitmentCount.toLocaleString("de-DE")} strukturierte Zusagen</strong> · mit Quellenfingerabdruck dokumentiert</p></div>
           <Link className="text-link" href={`/mandat-und-praxis/${coalitionAgreement.sourceKey}`}>Zusagen und Fundstellen ansehen <span aria-hidden="true">→</span></Link>
         </article>
       </section>}

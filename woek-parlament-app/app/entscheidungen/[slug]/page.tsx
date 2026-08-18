@@ -10,7 +10,7 @@ import { CaseTypeMark } from "@/app/components/CaseTypeMark";
 import { FullReviewRecord } from "@/app/components/FullReviewRecord";
 import { CompletePublicationSource } from "@/app/components/CompletePublicationSource";
 import { DecisionReadinessGate } from "@/app/components/DecisionReadinessGate";
-import { OverviewAssessment } from "@/app/components/OverviewAssessment";
+import { EditorialReviewAssessment, OverviewAssessment } from "@/app/components/OverviewAssessment";
 import { getCase, formatDate, materialityLabel } from "@/lib/cases";
 import { caseKindLabel, humanizeSystemValue, verificationLabel } from "@/lib/presentation/labels";
 import { parliamentaryOverviewAssessment } from "@/lib/presentation/overview-assessment";
@@ -91,11 +91,11 @@ export default async function DecisionPage({ params, searchParams }: { params: P
         <div><h1>{item.plainTitle}</h1>{item.title !== item.plainTitle && <p className="official-title"><strong>Amtlicher Titel:</strong> {item.title}</p>}<p className="lead">{publicLead}</p><BookmarkLink title={item.plainTitle} path={`/entscheidungen/${item.slug}`} /></div>
       </header>
 
-      {overviewAssessment ? <OverviewAssessment assessment={overviewAssessment} /> : <section className="decision-section assessment-pending"><p className="eyebrow">Faktenakte</p><h2>WÖk-Analyse noch nicht redaktionell veröffentlicht.</h2><p>Der amtliche Gegenstand und seine Quellen bleiben sichtbar. Eine fertige WÖk-Einordnung wird erst nach einem objektspezifischen Editorial- und Evidenz-Gate veröffentlicht.</p></section>}
+      {overviewAssessment ? <OverviewAssessment assessment={overviewAssessment} /> : <EditorialReviewAssessment subject={item.plainTitle} compact={false} />}
 
       <section className="sixty-second" aria-labelledby="sixty-second-title"><div><p className="eyebrow">60 Sekunden</p><h2 id="sixty-second-title">Worum geht es?</h2></div><dl><div className="sixty-second-summary"><dt>Kurz erklärt</dt><dd>{publicLead}</dd></div><div><dt>Was wird entschieden?</dt><dd>{humanizeSystemValue(item.whatIsDecided)}</dd></div><div><dt>Welche Veränderung steht im Mittelpunkt?</dt><dd>{editoriallyPublished ? decisionFocus(item) : "WÖk-Analyse noch nicht redaktionell veröffentlicht."}</dd></div></dl></section>
 
-      <section className="decision-process-meta" aria-label="Politischer Prozess und Prüfstatus">
+      <section className="decision-process-meta" aria-label="Politischer Prozess und Prüfstatus" data-woek-process-metadata>
         <div><CaseTypeMark kind={item.kind} maturity={item.publicWorkingAct?.maturity} /><p>Prozess- und Prüfinformationen</p></div>
         <aside className="decision-status"><p>Status dieser Wirkungsakte</p><strong>{humanizeSystemValue(item.parliamentaryStatus)}</strong><dl><div><dt>WÖk-Reifestufe</dt><dd>{statuses.maturity}</dd></div><div><dt>Evidenzstatus</dt><dd>{statuses.evidence}</dd></div><div><dt>Attributionsstatus</dt><dd>{statuses.attribution}</dd></div><div><dt>Prüfrelevanz</dt><dd>{materialityLabel(item.materiality)}</dd></div><div><dt>Quellenstatus</dt><dd>{verificationLabel(item.statusVerification)}</dd></div><div><dt>Letzte Aktualisierung</dt><dd>{formatDate(item.lastUpdated)}</dd></div></dl></aside>
       </section>

@@ -7,6 +7,7 @@ import { GlossaryBasics } from "@/app/components/GlossaryBasics";
 import { ReferenceFieldTiles } from "@/app/components/ReferenceFieldTiles";
 import { FullAnalysisText } from "@/app/components/FullAnalysisText";
 import { CompletePublicationSource } from "@/app/components/CompletePublicationSource";
+import { EditorialReviewAssessment } from "@/app/components/OverviewAssessment";
 import type { FachanalyseSource } from "@/data/fachanalysen";
 import { fullAnalysisBySlug } from "@/data/fachanalysen-full";
 import { getFachanalyse } from "@/lib/fachanalysen";
@@ -67,7 +68,9 @@ export default async function FachanalyseDetailPage({ params }: { params: Promis
         <p>{analysis.summary}</p>
       </header>
 
-      {analysis.decision ? <section className="analysis-facts" aria-label="Entscheidungsdaten">
+      <EditorialReviewAssessment subject={analysis.title} compact={false} />
+
+      {analysis.decision ? <section className="analysis-facts" aria-label="Entscheidungsdaten" data-woek-process-metadata>
         <div><span>Beschluss</span><strong>{formatDate(analysis.decision.date)}</strong></div>
         <div><span>Verkündung</span><strong>{analysis.decision.promulgation}</strong></div>
         <div><span>In Kraft</span><strong>{formatDate(analysis.decision.inForce)}</strong></div>

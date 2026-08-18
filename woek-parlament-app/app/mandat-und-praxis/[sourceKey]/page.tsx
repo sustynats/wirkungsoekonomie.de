@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CompleteSourceRecord } from "@/app/components/CompleteSourceRecord";
 import { CompletePublicationSource } from "@/app/components/CompletePublicationSource";
+import { EditorialReviewAssessment } from "@/app/components/OverviewAssessment";
 import { getPublicCommitmentRegister } from "@/lib/commitments/public-register";
 import { getFederalPublicationSource } from "@/lib/publication/fachakten";
 
@@ -48,11 +49,12 @@ export default async function CommitmentRegisterPage({ params }: { params: Promi
 
     {Object.entries(grouped).map(([domain, commitments]) => <section className="commitment-domain" id={encodeURIComponent(domain)} key={domain} aria-labelledby={`domain-${encodeURIComponent(domain)}`}>
       <header><p className="eyebrow">Themenfeld</p><h2 id={`domain-${encodeURIComponent(domain)}`}>{domain}</h2><p>{commitments.length.toLocaleString("de-DE")} dokumentierte Zusagen</p></header>
-      <div className="commitment-list">{commitments.map((commitment, index) => <article id={commitment.key} key={commitment.key}>
-        <p className="source-register-label">Zusage {index + 1} · {commitment.policyDomain}</p>
+      <div className="commitment-list">{commitments.map((commitment, index) => <article id={commitment.key} key={commitment.key} data-woek-preview-card="review-required">
         <h3>{commitment.title}</h3>
+        <EditorialReviewAssessment subject={commitment.title} />
+        <p className="source-register-label" data-woek-process-metadata>Zusage {index + 1} · {commitment.policyDomain}</p>
         <p className="commitment-full-text">{commitment.text}</p>
-        <dl><div><dt>Fundstelle</dt><dd>{commitment.location ?? "Im gelieferten Fachbestand nicht genauer ausgewiesen"}</dd></div>{commitment.temporalScope && <div><dt>Zeitraum</dt><dd>{commitment.temporalScope}</dd></div>}</dl>
+        <dl data-woek-process-metadata><div><dt>Fundstelle</dt><dd>{commitment.location ?? "Im gelieferten Fachbestand nicht genauer ausgewiesen"}</dd></div>{commitment.temporalScope && <div><dt>Zeitraum</dt><dd>{commitment.temporalScope}</dd></div>}</dl>
         {commitment.relationships.length > 0 && <section className="commitment-relationships" aria-label={`Dokumentierte Verbindungen für Zusage ${index + 1}`}><h4>{sourceKind === "Koalitionsvertrag" ? "Von der Vereinbarung zur parlamentarischen Praxis" : "Vom Wahlprogramm zur Vereinbarung"}</h4>{commitment.relationships.map((relationship, relationshipIndex) => <article key={`${relationship.stage}-${relationshipIndex}`}><dl>
           <div><dt>Status des Quellenabgleichs</dt><dd>{relationship.status}</dd></div>
           {relationship.rationale && <div><dt>Begründung des Abgleichs</dt><dd>{relationship.rationale}</dd></div>}

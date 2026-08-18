@@ -7,18 +7,36 @@ import {
   readableInstitution,
   type GovernmentAction,
 } from "@/lib/government/public-data";
-import { impactCasesForGovernmentAction } from "@/lib/government/impact-cases";
+import { directionLabels, evidenceLabels, governmentEditorialProjection, impactCasesForGovernmentAction } from "@/lib/government/impact-cases";
+import { EditorialReviewAssessment, OverviewAssessment } from "@/app/components/OverviewAssessment";
 
 export function GovernmentActionCard({ action }: { action: GovernmentAction }) {
   const impactCases = impactCasesForGovernmentAction(action.government_action_id);
+  const assessments = impactCases.flatMap((record) => {
+    const editorial = governmentEditorialProjection(record);
+    if (editorial.status !== "PASS") return [];
+    return [{ record, assessment: {
+      assessmentLabel: editorial.fields.overview_assessment_label,
+      impactCoreSummary: editorial.fields.impact_core_summary,
+      editorialSummary: editorial.fields.editorial_summary,
+      keyFinding: editorial.fields.key_finding,
+      directionLabel: directionLabels[record.primary_direction],
+      evidenceSummary: `${evidenceLabels[record.evidence_level]}. ${editorial.fields.evidence_summary}`,
+      realityCheckSummary: editorial.fields.reality_check_summary,
+    } }];
+  });
   return (
-    <article className="government-action-card">
-      <div className="government-card-meta">
+    <article className="government-action-card" data-woek-preview-card={assessments.length ? "published" : "review-required"}>
+      <h2><Link href={`/regierung/akte/${encodeURIComponent(action.government_action_id)}`}>{action.title}</Link></h2>
+      {assessments.length ? <div className="government-action-assessments">{assessments.map(({ record, assessment }) => <div key={record.impact_case_id}>
+        {assessments.length > 1 && <p className="source-register-label">Wirkungsgegenstand: {record.title}</p>}
+        <OverviewAssessment assessment={assessment} compact />
+      </div>)}</div> : <EditorialReviewAssessment subject={action.title} />}
+      <div className="government-card-meta" data-woek-process-metadata>
         <span className="chip chip--depth">{actionTypeLabels[action.action_type] ?? action.action_type}</span>
         <time dateTime={action.decision_date ?? undefined}>{formatDate(action.decision_date)}</time>
       </div>
-      <h2><Link href={`/regierung/akte/${encodeURIComponent(action.government_action_id)}`}>{action.title}</Link></h2>
-      <dl className="government-card-facts">
+      <dl className="government-card-facts" data-woek-process-metadata>
         <div><dt>Verfahrensstand</dt><dd>{lifecycleLabels[action.lifecycle_status] ?? action.lifecycle_status}</dd></div>
         <div><dt>Zuständig</dt><dd>{action.responsible_institutions.map(readableInstitution).join(", ") || "Institution noch nicht öffentlich zugeordnet"}</dd></div>
       </dl>

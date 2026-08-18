@@ -152,9 +152,8 @@ export function GovernmentImpactCase({ record, compact = false }: { record: Publ
   const editorial = governmentEditorialProjection(record);
   if (editorial.status !== "PASS") return null;
   return (
-    <article className="government-impact-case" aria-labelledby={`impact-${record.impact_case_id}`}>
+    <article className="government-impact-case" aria-labelledby={`impact-${record.impact_case_id}`} data-woek-preview-card="published">
       <header>
-        <p className="eyebrow">WÖk-Wirkungsanalyse · {record.analysis_mode === "IMPACT_REALITY_CHECK" ? "mit Reality-Check-Stufe" : "Ex ante"}</p>
         <h2 id={`impact-${record.impact_case_id}`}>{record.title}</h2>
         <OverviewAssessment compact={compact} assessment={{
           assessmentLabel: editorial.fields.overview_assessment_label,
@@ -165,6 +164,7 @@ export function GovernmentImpactCase({ record, compact = false }: { record: Publ
           evidenceSummary: `${evidenceLabels[record.evidence_level]}. ${editorial.fields.evidence_summary}`,
           realityCheckSummary: editorial.fields.reality_check_summary,
         }} />
+        <p className="eyebrow" data-woek-process-metadata>Analysephase · {record.analysis_mode === "IMPACT_REALITY_CHECK" ? "mit Reality-Check-Stufe" : "Ex ante"}</p>
         {record.public_evidence_explanation && <p><strong>Öffentliche Evidenzeinordnung:</strong> {humanizeSystemValue(record.public_evidence_explanation)}</p>}
         {record.boundary_review_note && <p><strong>Schutz- und Wirkungsgrenzen:</strong> {humanizeSystemValue(record.boundary_review_note)}</p>}
         {record.impact_summary.public_summary && record.impact_summary.public_summary !== record.editorial_summary && <p><strong>Fachliche Original-Kurzfassung:</strong> {humanizeSystemValue(record.impact_summary.public_summary)}</p>}

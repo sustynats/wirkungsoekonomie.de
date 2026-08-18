@@ -5,11 +5,11 @@ import { fachanalyseSources } from "@/data/fachanalysen";
 import { stateTargetRegisters } from "@/data/state-target-registers";
 import { saxonyAnhaltElectionProgrammes } from "@/data/sachsen-anhalt-election-programmes";
 import releasePublicationSourceLinks from "@/data/generated/release-1/publication-source-links.json";
-import { directionLabels, evidenceLabels, getPublicImpactCases } from "@/lib/government/impact-cases";
+import { directionLabels, evidenceLabels, getPublicImpactCases, governmentEditorialProjection } from "@/lib/government/impact-cases";
 import { getGovernmentPublicData, sourceFunctionLabels } from "@/lib/government/public-data";
 import { listPublicEvidenceEvents } from "@/lib/observatory/public-data";
-import { getEuImpactCases } from "@/lib/eu/impact-cases";
-import { parliamentaryOverviewAssessment } from "@/lib/presentation/overview-assessment";
+import { euEditorialProjection, getEuImpactCases } from "@/lib/eu/impact-cases";
+import { parliamentaryOverviewAssessment, type OverviewAssessmentData } from "@/lib/presentation/overview-assessment";
 import { isSafePublicSourceUrl, sourceDetailHrefForUrl, sourceSlugForCanonicalUrl } from "@/lib/sources/url";
 
 export { isSafePublicSourceUrl, sourceDetailHrefForUrl, sourceSlugForCanonicalUrl } from "@/lib/sources/url";
@@ -83,6 +83,7 @@ export type PublicSourceUsage = {
   analysisSummary?: string | null;
   analysisDirection?: string | null;
   evidenceLevel?: string | null;
+  assessment?: OverviewAssessmentData | null;
 };
 
 export type PublicSource = {
@@ -201,6 +202,7 @@ function publishedStaticCaseSources(): StaticPublicSource[] {
         analysisSummary: editorialAssessment?.editorialSummary ?? "WÖk-Analyse noch nicht redaktionell veröffentlicht.",
         analysisDirection: editorialAssessment?.assessmentLabel ?? null,
         evidenceLevel: editorialAssessment?.evidenceSummary ?? null,
+        assessment: editorialAssessment,
       });
       grouped.set(slug, entry);
     }
@@ -480,6 +482,7 @@ function governmentImpactSources(): StaticPublicSource[] {
     { key: "post_decision_sources", role: "EX_POST_EVIDENCE", category: "OFFICIAL_EVALUATION", label: "Quelle nach der Entscheidung", summary: "Die Quelle dokumentiert eine spätere Beobachtung oder Evaluation. Beobachtung und kausale Zurechnung bleiben getrennt." },
   ] as const;
   for (const impact of getPublicImpactCases()) {
+    const editorial = governmentEditorialProjection(impact);
     for (const role of roles) {
       for (const url of impact[role.key]) {
         const canonicalUrl = isSafePublicSourceUrl(url);
@@ -487,6 +490,15 @@ function governmentImpactSources(): StaticPublicSource[] {
         if (!canonicalUrl || !slug) continue;
         const institution = institutionForUrl(canonicalUrl);
         const curated = curatedSourceSummaries[canonicalUrl];
+        const assessment = editorial.status === "PASS" ? {
+          assessmentLabel: editorial.fields.overview_assessment_label,
+          impactCoreSummary: editorial.fields.impact_core_summary,
+          editorialSummary: editorial.fields.editorial_summary,
+          keyFinding: editorial.fields.key_finding,
+          directionLabel: directionLabels[impact.primary_direction] ?? impact.primary_direction,
+          evidenceSummary: `${evidenceLabels[impact.evidence_level] ?? impact.evidence_level}. ${editorial.fields.evidence_summary}`,
+          realityCheckSummary: editorial.fields.reality_check_summary,
+        } : null;
         const usage: PublicSourceUsage = {
           caseSlug: impact.impact_case_id,
           caseTitle: impact.title,
@@ -499,6 +511,7 @@ function governmentImpactSources(): StaticPublicSource[] {
           analysisSummary: impact.editorial_summary,
           analysisDirection: directionLabels[impact.primary_direction] ?? impact.primary_direction,
           evidenceLevel: evidenceLabels[impact.evidence_level] ?? impact.evidence_level,
+          assessment,
         };
         const existing = grouped.get(slug);
         if (existing) {
@@ -531,10 +544,20 @@ function governmentImpactSources(): StaticPublicSource[] {
 function euImpactSources(): StaticPublicSource[] {
   const grouped = new Map<string, StaticPublicSource>();
   for (const impact of getEuImpactCases()) {
+    const editorial = euEditorialProjection(impact);
     for (const url of impact.official_sources) {
       const canonicalUrl = isSafePublicSourceUrl(url);
       const slug = canonicalUrl ? sourceSlugForCanonicalUrl(canonicalUrl) : null;
       if (!canonicalUrl || !slug) continue;
+      const assessment = editorial.status === "PASS" ? {
+        assessmentLabel: editorial.fields.overview_assessment_label,
+        impactCoreSummary: editorial.fields.impact_core_summary,
+        editorialSummary: editorial.fields.editorial_summary,
+        keyFinding: editorial.fields.key_finding,
+        directionLabel: directionLabels[impact.primary_direction] ?? impact.primary_direction,
+        evidenceSummary: `${evidenceLabels[impact.evidence_level] ?? impact.evidence_level}. ${editorial.fields.evidence_summary}`,
+        realityCheckSummary: editorial.fields.reality_check_summary,
+      } : null;
       const usage: PublicSourceUsage = {
         caseSlug: impact.impact_case_id,
         caseTitle: impact.title,
@@ -547,6 +570,7 @@ function euImpactSources(): StaticPublicSource[] {
         analysisSummary: impact.editorial_summary,
         analysisDirection: directionLabels[impact.primary_direction] ?? impact.primary_direction,
         evidenceLevel: evidenceLabels[impact.evidence_level] ?? impact.evidence_level,
+        assessment,
       };
       const existing = grouped.get(slug);
       if (existing) { existing.usages.push(usage); continue; }

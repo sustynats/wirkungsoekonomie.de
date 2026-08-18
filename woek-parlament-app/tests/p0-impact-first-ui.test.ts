@@ -7,8 +7,13 @@ const source = (file: string) => readFileSync(file, "utf8");
 const overviewComponent = source("app/components/OverviewAssessment.tsx");
 const caseCard = source("app/components/CaseCard.tsx");
 const governmentCard = source("app/components/government/GovernmentImpactCase.tsx");
+const governmentActionCard = source("app/components/government/GovernmentActionCard.tsx");
 const euCard = source("app/components/eu/EuImpactCase.tsx");
 const searchResults = source("app/suche/ParliamentSearch.tsx");
+const sourceDetail = source("app/quellen/[slug]/page.tsx");
+const specialistIndex = source("app/fachanalysen/page.tsx");
+const mandateIndex = source("app/mandat-und-praxis/page.tsx");
+const stateProgrammes = source("app/laender/sachsen-anhalt/page.tsx");
 const decisionDetail = source("app/entscheidungen/[slug]/page.tsx");
 const overviewOverrides = JSON.parse(source("data/presentation/overview-assessment-overrides.json"));
 
@@ -78,4 +83,46 @@ test("IMPACT_ANALYSIS_IS_PRIMARY_CONTENT", () => {
   assert.match(governmentCard, /impactCoreSummary: editorial\.fields\.impact_core_summary/);
   assert.match(euCard, /impactCoreSummary: editorial\.fields\.impact_core_summary/);
   assert.ok(decisionDetail.indexOf("<OverviewAssessment") < decisionDetail.indexOf("Status dieser Wirkungsakte"));
+});
+
+test("PREVIEW_CARD_HAS_VISIBLE_WOEK_ASSESSMENT", () => {
+  assert.match(overviewComponent, /WÖk-Kurzbewertung/);
+  for (const [file, content] of Object.entries({ caseCard, governmentCard, governmentActionCard, euCard, searchResults, sourceDetail, specialistIndex, mandateIndex, stateProgrammes })) {
+    assert.match(content, /<(?:OverviewAssessment|EditorialReviewAssessment)/, file);
+  }
+});
+
+test("PREVIEW_CARD_HAS_ICONIC_ASSESSMENT", () => {
+  assert.match(overviewComponent, /data-woek-assessment-icon/);
+  assert.match(overviewComponent, /role="img"/);
+  assert.match(overviewComponent, /aria-label=\{iconLabel\}/);
+});
+
+test("PREVIEW_CARD_HAS_CASE_SPECIFIC_IMPACT_SUMMARY", () => {
+  assert.match(overviewComponent, /Wirkungspotenzial kompakt:/);
+  assert.match(overviewComponent, /assessment\.editorialSummary/);
+  assert.match(overviewComponent, /EditorialReviewAssessment/);
+  assert.match(overviewComponent, /fachlich freigegebene, strukturierte WÖk-Kurzbewertung/);
+});
+
+test("PREVIEW_CARD_IMPACT_PRECEDES_PROCESS", () => {
+  assert.ok(caseCard.indexOf("<OverviewAssessment") < caseCard.indexOf("data-woek-process-metadata"));
+  assert.ok(governmentActionCard.indexOf("<OverviewAssessment") < governmentActionCard.indexOf("data-woek-process-metadata"));
+  assert.ok(searchResults.indexOf("<OverviewAssessment") < searchResults.indexOf("data-woek-process-metadata"));
+  assert.ok(sourceDetail.indexOf("<OverviewAssessment") < sourceDetail.indexOf("data-woek-process-metadata"));
+});
+
+test("PREVIEW_CARD_PROCESS_IS_NOT_MAIN_ASSESSMENT", () => {
+  assert.doesNotMatch(overviewComponent, /Vor der Entscheidung geprüft|Beobachtung und Rückkopplung|hohe Prüfrelevanz/i);
+  assert.match(overviewComponent, /Wirkungspotenzial kompakt/);
+});
+
+test("PREVIEW_CARD_NO_GENERIC_SUMMARY", () => {
+  assert.doesNotMatch(overviewComponent, /Die Maßnahme kann Wirkungen entfalten|Es bestehen Chancen und Risiken|Dies muss weiter beobachtet werden/);
+  assert.match(source("scripts/quality/generic-public-editorial-scan.mjs"), /PREVIEW_CARD_NO_GENERIC_SUMMARY/);
+});
+
+test("PREVIEW_CARD_NO_RAW_INTERNAL_ENUMS", () => {
+  assert.doesNotMatch(overviewComponent, />POSITIVE_POTENTIAL<|>NEGATIVE_RISK<|>AMBIVALENT<|>PORTFOLIO_DISAGGREGATION_REQUIRED</);
+  assert.match(source("scripts/quality/generic-public-editorial-scan.mjs"), /PREVIEW_CARD_NO_RAW_INTERNAL_ENUMS/);
 });

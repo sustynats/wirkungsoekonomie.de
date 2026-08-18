@@ -9,9 +9,8 @@ import { humanizeSystemValue } from "@/lib/presentation/labels";
 export function EuImpactCase({ record, compact = false }: { record: EuImpactRecord; compact?: boolean }) {
   const editorial = euEditorialProjection(record);
   if (editorial.status !== "PASS") return null;
-  return <article className="government-impact-case" aria-labelledby={`eu-impact-${record.impact_case_id}`}>
+  return <article className="government-impact-case" aria-labelledby={`eu-impact-${record.impact_case_id}`} data-woek-preview-card="published">
     <header>
-      <p className="eyebrow">EU-WÖk-Wirkungsanalyse · {record.analysis_mode.includes("REALITY") ? "mit Beobachtungsstufe" : "Ex ante"}</p>
       <h2 id={`eu-impact-${record.impact_case_id}`}>{record.title}</h2>
       <OverviewAssessment compact={compact} assessment={{
         assessmentLabel: editorial.fields.overview_assessment_label,
@@ -22,7 +21,8 @@ export function EuImpactCase({ record, compact = false }: { record: EuImpactReco
         evidenceSummary: `${evidenceLabels[record.evidence_level]}. ${editorial.fields.evidence_summary}`,
         realityCheckSummary: editorial.fields.reality_check_summary,
       }} />
-      <dl className="government-impact-summary">
+      <p className="eyebrow" data-woek-process-metadata>EU-WÖk-Wirkungsanalyse · {record.analysis_mode.includes("REALITY") ? "mit Beobachtungsstufe" : "Ex ante"}</p>
+      <dl className="government-impact-summary" data-woek-process-metadata>
         <div><dt>Wirkungskern</dt><dd>{record.impact_core_summary}</dd></div>
         <div><dt>Kompetenz</dt><dd>{humanizeSystemValue(record.competence_scope)}</dd></div>
         <div><dt>Rechts- und Umsetzungsweg</dt><dd>{humanizeSystemValue(record.legal_feasibility_status)}{record.implementation_route.length ? ` · ${record.implementation_route.map(humanizeSystemValue).join(", ")}` : ""}</dd></div>

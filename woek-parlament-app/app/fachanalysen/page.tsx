@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CaseTypeMark } from "@/app/components/CaseTypeMark";
+import { EditorialReviewAssessment } from "@/app/components/OverviewAssessment";
 import { listFachanalysen } from "@/lib/fachanalysen";
 
 export const metadata: Metadata = {
@@ -32,12 +33,13 @@ export default function FachanalysenPage() {
       </section>
       <div className="fachanalyse-list">
         {analyses.map((analysis) => (
-          <article className="fachanalyse-card" key={analysis.slug}>
-            <div className="case-card-topline"><CaseTypeMark kind="FACHANALYSE" compact /><span className="materiality">{typeLabels[analysis.type]}</span></div>
+          <article className="fachanalyse-card" key={analysis.slug} data-woek-preview-card="review-required">
             <h2><Link href={`/fachanalysen/${analysis.slug}`}>{analysis.title}</Link></h2>
+            <EditorialReviewAssessment subject={analysis.title} />
             <p className="fachanalyse-subtitle">{analysis.subtitle}</p>
             <p>{analysis.summary}</p>
-            <dl className="fachanalyse-meta"><div><dt>Gegenstand</dt><dd>{analysis.scope}</dd></div><div><dt>Analyse-Stand</dt><dd>{new Intl.DateTimeFormat("de-DE", { dateStyle: "long", timeZone: "Europe/Berlin" }).format(new Date(`${analysis.analysisDate}T12:00:00Z`))}</dd></div></dl>
+            <div className="case-card-topline" data-woek-process-metadata><CaseTypeMark kind="FACHANALYSE" compact /><span className="materiality">{typeLabels[analysis.type]}</span></div>
+            <dl className="fachanalyse-meta" data-woek-process-metadata><div><dt>Gegenstand</dt><dd>{analysis.scope}</dd></div><div><dt>Analyse-Stand</dt><dd>{new Intl.DateTimeFormat("de-DE", { dateStyle: "long", timeZone: "Europe/Berlin" }).format(new Date(`${analysis.analysisDate}T12:00:00Z`))}</dd></div></dl>
             <Link className="text-link" href={`/fachanalysen/${analysis.slug}`}>Dossier ansehen <span aria-hidden="true">→</span></Link>
           </article>
         ))}

@@ -205,8 +205,11 @@ h1, h2, h3, h4 { text-wrap: balance; }
 .government-action-card h2 { margin: .9rem 0 .7rem; overflow-wrap: anywhere; hyphens: auto; font-size: clamp(1.25rem, 2.2vw, 1.65rem); line-height: 1.18; }
 .government-action-card h2 a { color: var(--navy); text-decoration: none; }
 .government-action-card h2 a:hover { color: var(--teal); text-decoration: underline; }
-.government-card-meta { display: flex; justify-content: space-between; gap: .5rem; align-items: center; }
+.government-card-meta { display: flex; justify-content: space-between; gap: .5rem; align-items: center; margin-top: .9rem; }
 .government-card-meta time { color: var(--muted); font-size: .76rem; }
+.government-action-assessments { display: grid; gap: .75rem; }
+.government-action-assessments > div { display: grid; gap: .4rem; }
+.government-action-assessments .source-register-label { margin: 0; }
 .government-card-facts { display: grid; gap: .55rem; margin: 0 0 .85rem; }
 .government-card-facts div { display: grid; gap: .08rem; }
 .government-card-facts dt { color: var(--muted); font-size: .68rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
@@ -1310,13 +1313,34 @@ h1, h2, h3, h4 { text-wrap: balance; }
   border-radius: var(--radius-klein);
   background: linear-gradient(135deg, var(--farbe-flaeche-warm), var(--farbe-flaeche-karte));
 }
-.overview-assessment > .eyebrow { margin: 0; color: var(--farbe-text-link); }
+.overview-assessment-heading { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: var(--abstand-s); align-items: start; }
+.overview-assessment-heading .eyebrow { margin: 0 0 var(--abstand-2xs); color: var(--farbe-text-link); }
+.overview-assessment-icon {
+  display: inline-grid;
+  width: 2.65rem;
+  height: 2.65rem;
+  place-items: center;
+  flex: 0 0 auto;
+  color: var(--farbe-flaeche-karte);
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  background: var(--farbe-text-link);
+}
+.overview-assessment-icon svg { width: 1.35rem; height: 1.35rem; }
+.overview-assessment-icon--risk,
+.overview-assessment-icon--protection { background: var(--farbe-text); }
+.overview-assessment-icon--ambivalent,
+.overview-assessment-icon--conditional { background: var(--farbe-aktion-zweit); }
+.overview-assessment-icon--portfolio { background: var(--farbe-flaeche-buehne); }
+.overview-assessment-icon--open { color: var(--farbe-text); border-color: var(--farbe-linie); background: var(--farbe-flaeche-karte); }
 .overview-assessment .overview-assessment-label {
   max-width: 52ch;
   margin: 0;
   color: var(--farbe-flaeche-buehne);
   font: var(--schriftstaerke-fett) clamp(1.25rem, 2vw, 1.65rem)/1.28 var(--schrift-display);
 }
+.overview-assessment--review { border-left-color: var(--farbe-text-sekundaer); background: var(--farbe-flaeche-warm); }
+.overview-assessment--review .overview-assessment-label { color: var(--farbe-text); }
 .overview-assessment .overview-assessment-core,
 .overview-assessment .overview-assessment-summary,
 .overview-assessment .overview-assessment-finding { max-width: 74ch; margin: 0; color: var(--farbe-text); line-height: 1.55; }
@@ -1328,6 +1352,8 @@ h1, h2, h3, h4 { text-wrap: balance; }
 .overview-assessment-axis dd { margin: var(--abstand-2xs) 0 0; color: var(--farbe-text); font-size: var(--groesse-klein); line-height: 1.45; }
 .overview-assessment--compact { gap: var(--abstand-xs); margin: 0; padding: var(--abstand-m); }
 .overview-assessment--compact .overview-assessment-label { font-size: 1.15rem; }
+.overview-assessment--compact .overview-assessment-icon { width: 2.2rem; height: 2.2rem; }
+.overview-assessment--compact .overview-assessment-icon svg { width: 1.15rem; height: 1.15rem; }
 .overview-assessment--compact .overview-assessment-core,
 .overview-assessment--compact .overview-assessment-summary,
 .overview-assessment--compact .overview-assessment-finding,

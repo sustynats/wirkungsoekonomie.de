@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { GovernmentImpactCase } from "@/app/components/government/GovernmentImpactCase";
+import { EditorialReviewAssessment } from "@/app/components/OverviewAssessment";
 import {
   actionById,
   actionTypeLabels,
@@ -34,14 +35,15 @@ export default async function GovernmentActionDetailPage({ params }: { params: P
   return (
     <article className="government-detail">
       <header className="shell government-detail-hero">
-        <p className="eyebrow">Regierungsakte · Faktenschicht</p>
         <h1>{action.title}</h1>
-        <div className="government-detail-badges">
+        {impactCases.length ? <div className="government-linked-impact-cases">{impactCases.map((record) => <GovernmentImpactCase key={record.impact_case_id} record={record} compact />)}</div> : <EditorialReviewAssessment subject={action.title} compact={false} />}
+        <p className="eyebrow" data-woek-process-metadata>Regierungsakte · Faktenschicht</p>
+        <div className="government-detail-badges" data-woek-process-metadata>
           <span className="chip chip--depth">{actionTypeLabels[action.action_type] ?? action.action_type}</span>
           <span className="chip chip--phase">{lifecycleLabels[action.lifecycle_status] ?? action.lifecycle_status}</span>
           <span className="chip chip--phase">Fakten geprüft</span>
         </div>
-        <dl className="government-key-facts">
+        <dl className="government-key-facts" data-woek-process-metadata>
           <div><dt>Entscheidungs-/Veröffentlichungsdatum</dt><dd>{formatDate(action.decision_date)}</dd></div>
           <div><dt>Institutionell zuständig</dt><dd>{action.responsible_institutions.map(readableInstitution).join(", ") || "Öffentliche Zuordnung offen"}</dd></div>
           <div><dt>Datenabdeckung</dt><dd>{coverageLabels[action.coverage_scope_status] ?? action.coverage_scope_status}</dd></div>
@@ -71,7 +73,7 @@ export default async function GovernmentActionDetailPage({ params }: { params: P
         <section id="voranalyse">
           <p className="eyebrow">3 · WÖk-Voranalyse</p><h2>Was war vor dem Handeln über mögliche Wirkungen bekannt?</h2>
           <p>Die Ex-ante-Prüfung hält den damaligen Wissensstand fest: Welche positiven oder negativen Wirkungspotenziale und Risiken waren vor der Entscheidung aus amtlichen Angaben, Forschung, Evaluationen und anderen zeitlich verfügbaren Belegen erkennbar? Spätere Erkenntnisse dürfen nicht rückwirkend als damaliges Wissen erscheinen.</p>
-          {impactCases.length ? <div className="government-linked-impact-cases">{impactCases.map((record) => <GovernmentImpactCase key={record.impact_case_id} record={record} compact />)}</div> : <div className="open-state"><span aria-hidden="true">?</span><div><strong>Noch keine fachliche Ex-ante-Einordnung freigegeben.</strong><p>Das bedeutet weder neutrale Wirkung noch fehlende Wirkung. Wirkungsempfänger, Mechanismen, Wirkungsrichtung, Evidenz, SDGs/SDG+, Mensch-Planet-Demokratie, Risiken und Schutzgrenzen werden erst nach dem Materialitäts-Gate in einer versionierten Fachakte ergänzt.</p></div></div>}
+          {impactCases.length ? <p>Die verknüpften, fachlich freigegebenen WÖk-Kurzbewertungen stehen am Anfang dieser Akte. Von dort führen die Links in die vollständigen Wirkungsanalysen.</p> : <div className="open-state"><span aria-hidden="true">?</span><div><strong>Noch keine fachliche Ex-ante-Einordnung freigegeben.</strong><p>Das bedeutet weder neutrale Wirkung noch fehlende Wirkung. Wirkungsempfänger, Mechanismen, Wirkungsrichtung, Evidenz, SDGs/SDG+, Mensch-Planet-Demokratie, Risiken und Schutzgrenzen werden erst nach dem Materialitäts-Gate in einer versionierten Fachakte ergänzt.</p></div></div>}
           <div className="notice notice-neutral"><strong>Rolle der Kommunikation</strong><p>Amtliche Kommunikation kann zeigen, welche Ziele, Annahmen oder erwarteten Wirkungen die Regierung vor der Entscheidung benannt hat. Sie ist eine zeitlich einzuordnende Quelle - aber noch kein Nachweis, dass die behauptete Wirkung tatsächlich eintritt.</p></div>
           <Link className="text-link" href="/regierung/methodik">So entsteht eine WÖk-Analyse</Link>
         </section>

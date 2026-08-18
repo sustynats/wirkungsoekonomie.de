@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { EditorialReviewAssessment, OverviewAssessment } from "@/app/components/OverviewAssessment";
 import { getPublicSource, sourceCategoryLabel, sourceRoleLabel, temporalClassLabel } from "@/lib/sources/public-registry";
 
 export const dynamic = "force-dynamic";
@@ -8,6 +9,10 @@ export const dynamic = "force-dynamic";
 function dateLabel(value: string | null) {
   if (!value) return "nicht angegeben";
   return new Intl.DateTimeFormat("de-DE", { dateStyle: "long" }).format(new Date(`${value}T12:00:00Z`));
+}
+
+function isPoliticalCaseUsage(caseKind: string) {
+  return caseKind !== "EVIDENCE_EVENT";
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
@@ -52,16 +57,23 @@ export default async function SourceDetailPage({ params }: { params: Promise<{ s
         </aside>
       </div>
       <section className="decision-section source-usage-section">
-        <p className="eyebrow">Verwendung im Portal</p>
+        <p className="eyebrow">WÖk-Kurzbewertung · Verwendung im Portal</p>
         <h2>Für diese Analysen verwendet</h2>
-        {source.usages.length > 0 ? <div className="source-usage-list">{source.usages.map((usage) => <article key={`${usage.caseSlug}-${usage.sourceRole}`}>
+        {source.usages.length > 0 ? <div className="source-usage-list">{source.usages.map((usage) => <article
+          key={`${usage.caseSlug}-${usage.sourceRole}`}
+          data-woek-preview-card={isPoliticalCaseUsage(usage.caseKind) ? usage.assessment ? "published" : "review-required" : undefined}
+        >
           <div>
-            <p className="source-register-label">{sourceRoleLabel[usage.sourceRole]}{usage.decisionDate ? ` · Entscheidung ${dateLabel(usage.decisionDate)}` : ""}</p>
             <h3><Link href={usage.caseHref ?? `/entscheidungen/${usage.caseSlug}`}>{usage.caseTitle}</Link></h3>
-            {usage.analysisSummary && <p><strong>Kurzbewertung:</strong> {usage.analysisSummary}</p>}
-            {(usage.analysisDirection || usage.evidenceLevel) && <p className="source-locations">{usage.analysisDirection && <><strong>Einordnung:</strong> {usage.analysisDirection}</>}{usage.analysisDirection && usage.evidenceLevel ? " · " : ""}{usage.evidenceLevel && <><strong>Evidenz:</strong> {usage.evidenceLevel}</>}</p>}
-            {usage.note && <p>{usage.note}</p>}
-            {usage.locations.length > 0 && <p className="source-locations"><strong>Relevante Fundstellen:</strong> {usage.locations.join(" · ")}</p>}
+            {usage.assessment ? <OverviewAssessment assessment={usage.assessment} compact />
+              : isPoliticalCaseUsage(usage.caseKind) ? <EditorialReviewAssessment subject={usage.caseTitle} />
+                : usage.analysisSummary ? <p><strong>Beobachtete Entwicklung:</strong> {usage.analysisSummary}</p> : null}
+            <div data-woek-process-metadata>
+              <p className="source-register-label">{sourceRoleLabel[usage.sourceRole]}{usage.decisionDate ? ` · Entscheidung ${dateLabel(usage.decisionDate)}` : ""}</p>
+              {!usage.assessment && (usage.analysisDirection || usage.evidenceLevel) && <p className="source-locations">{usage.analysisDirection && <><strong>Einordnung:</strong> {usage.analysisDirection}</>}{usage.analysisDirection && usage.evidenceLevel ? " · " : ""}{usage.evidenceLevel && <><strong>Evidenz:</strong> {usage.evidenceLevel}</>}</p>}
+              {usage.note && <p>{usage.note}</p>}
+              {usage.locations.length > 0 && <p className="source-locations"><strong>Relevante Fundstellen:</strong> {usage.locations.join(" · ")}</p>}
+            </div>
           </div>
           <Link className="text-link" href={usage.caseHref ?? `/entscheidungen/${usage.caseSlug}`}>Analyse ansehen →</Link>
         </article>)}</div> : <p>Diese Quelle ist veröffentlicht, aber derzeit keinem veröffentlichten Wirkungscheck zugeordnet.</p>}
