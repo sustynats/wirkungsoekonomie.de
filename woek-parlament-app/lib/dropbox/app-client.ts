@@ -1,6 +1,7 @@
 const dropboxApi = "https://api.dropboxapi.com/2";
 const dropboxAuthApi = "https://api.dropboxapi.com";
 const dropboxContentApi = "https://content.dropboxapi.com/2";
+let lastGrantedScopes = "not reported";
 
 export type DropboxFileEntry = {
   ".tag": "file";
@@ -64,8 +65,9 @@ async function accessToken() {
     signal: AbortSignal.timeout(10_000),
   });
   if (!response.ok) throw new Error(`Dropbox token refresh failed (${response.status}).`);
-  const result = await response.json() as { access_token?: string };
+  const result = await response.json() as { access_token?: string; scope?: string };
   if (!result.access_token) throw new Error("Dropbox returned no access token.");
+  lastGrantedScopes = result.scope?.trim() || "not reported";
   return result.access_token;
 }
 
@@ -163,7 +165,9 @@ export async function uploadDropboxText(filePath: string, content: string) {
   });
   if (!response.ok) {
     const detail = (await response.text()).slice(0, 500).replace(/\s+/g, " ").trim();
-    throw new Error(`Dropbox state upload failed (${response.status})${detail ? `: ${detail}` : "."}`);
+    throw new Error(
+      `Dropbox state upload failed (${response.status})${detail ? `: ${detail}` : "."} Granted scopes: ${lastGrantedScopes}.`,
+    );
   }
   return response.json() as Promise<{ id: string; path_display: string; rev: string }>;
 }
