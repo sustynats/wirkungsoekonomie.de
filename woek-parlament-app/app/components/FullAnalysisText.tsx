@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element -- Fachanalyse-Abbildungen sind statische Quellenbestandteile und werden nicht über einen externen Bilddienst verarbeitet. */
 import Link from "next/link";
 import { sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
+import { humanizeSystemValue, isMarkdownSeparatorOnly } from "@/lib/presentation/labels";
 
 type Block =
   | { kind: "paragraph"; text: string }
@@ -53,7 +54,7 @@ function toBlocks(markdown: string): Block[] {
       const orderedList = Boolean(ordered);
       if (!list || list.ordered !== orderedList) { flushList(); list = { ordered: orderedList, items: [] }; }
       list.items.push((ordered ?? unordered)![1]);
-    } else if (!line) {
+    } else if (!line || isMarkdownSeparatorOnly(line)) {
       flushParagraph(); flushList();
     } else {
       flushList(); paragraph.push(line);
@@ -68,7 +69,9 @@ function InlineText({ value }: { value: string }) {
   return <>{parts.map((part, index) => {
     if (/^https:\/\//.test(part)) return <Link key={`${part}-${index}`} href={sourceDetailHrefForUrl(part)}>{part}</Link>;
     const emphasis = part.match(/^\*\*(.+)\*\*$/);
-    return emphasis ? <strong key={`${part}-${index}`}>{emphasis[1]}</strong> : part;
+    return emphasis
+      ? <strong key={`${part}-${index}`}>{humanizeSystemValue(emphasis[1])}</strong>
+      : humanizeSystemValue(part);
   })}</>;
 }
 
@@ -84,7 +87,7 @@ export function FullAnalysisText({ source }: { source: FullAnalysisSource }) {
     <div className="full-analysis-body">{blocks.map((block, index) => {
       if (block.kind === "heading") {
         const Heading = block.depth === 2 ? "h3" : "h4";
-        return <Heading id={block.id} key={`${block.id}-${index}`}>{block.text}</Heading>;
+        return <Heading id={block.id} key={`${block.id}-${index}`}>{humanizeSystemValue(block.text)}</Heading>;
       }
       if (block.kind === "quote") return <blockquote key={`quote-${index}`}><InlineText value={block.text} /></blockquote>;
       if (block.kind === "list") {
@@ -95,7 +98,8 @@ export function FullAnalysisText({ source }: { source: FullAnalysisSource }) {
         if (block.headers.length === 1 && block.rows.length === 0) return <blockquote key={`table-callout-${index}`}><InlineText value={block.headers[0]} /></blockquote>;
         return <div className="full-analysis-table" role="region" aria-label="Tabelle aus der vollständigen Fachanalyse" tabIndex={0} key={`table-${index}`}><table><thead><tr>{block.headers.map((header, headerIndex) => <th key={`${header}-${headerIndex}`} scope="col"><InlineText value={header} /></th>)}</tr></thead><tbody>{block.rows.map((row, rowIndex) => <tr key={`row-${rowIndex}`}>{row.map((cell, cellIndex) => cellIndex === 0 ? <th key={`${cell}-${cellIndex}`} scope="row"><InlineText value={cell} /></th> : <td key={`${cell}-${cellIndex}`}><InlineText value={cell} /></td>)}</tr>)}</tbody></table></div>;
       }
-      if (block.kind === "figure") return <figure className="full-analysis-figure" key={`figure-${index}`}><img src={block.src} alt={block.alt} />{block.caption ? <figcaption>{block.caption}</figcaption> : null}</figure>;
+      if (block.kind === "figure") return <figure className="full-analysis-figure" key={`figure-${index}`}><img src={block.src} alt={humanizeSystemValue(block.alt)} />{block.caption ? <figcaption>{humanizeSystemValue(block.caption)}</figcaption> : null}</figure>;
+      if (isMarkdownSeparatorOnly(block.text)) return null;
       return <p key={`paragraph-${index}`}><InlineText value={block.text} /></p>;
     })}</div>
   </section>;

@@ -53,7 +53,7 @@ const knownFallbacks = [
   /Die Akte ist in der ausgewiesenen Reifestufe öffentlich nutzbar/i,
   /\b(?:\x6c\x6f\x72\x65\x6d \x69\x70\x73\x75\x6d|\x74\x62\x64|\x74\x6f\x64\x6f|\x63\x6f\x6d\x69\x6e\x67 \x73\x6f\x6f\x6e)\b/i,
 ];
-const rawEnum = /\b(?:POSITIVE_POTENTIAL|NEGATIVE_RISK|AMBIVALENT|OPEN|PORTFOLIO_DISAGGREGATION_REQUIRED|NO_ROBUST_OVERALL_DIRECTION|NOT_YET_OBSERVABLE|OBSERVATION_ONLY|PLAUSIBLE_CONTRIBUTION|PARTIAL_ATTRIBUTION|CAUSAL_EVIDENCE|CONFLICTING_EVIDENCE|NOT_ASSESSABLE)\b/;
+const rawEnum = /\b(?:POSITIVE_POTENTIAL|NEGATIVE_RISK|POSITIVE|NEGATIVE|NEUTRAL|AMBIVALENT|OPEN|HIGH|MEDIUM|LOW|PASS|APPROVED|PORTFOLIO_DISAGGREGATION_REQUIRED|NO_ROBUST_OVERALL_DIRECTION|NOT_YET_OBSERVABLE|OBSERVATION_ONLY|PLAUSIBLE_CONTRIBUTION|PARTIAL_ATTRIBUTION|CAUSAL_EVIDENCE|CONFLICTING_EVIDENCE|NOT_ASSESSABLE|IMPACT_POTENTIAL_EX_ANTE|PORTFOLIO_EX_ANTE|GOVERNMENT_DRAFT|NO_SINGLE_DIRECTION_ALLOWED|VERY_HIGH|STANDARD_WOEK_ANALYSIS|NOT_APPLICABLE|BACKFILL_REQUIRED|LIMITED_FACH_RECORD|NOT_STRUCTURED|WATCH)\b/;
 const machineResidue = [
   /realitycheckstatus\s*=/i,
   /\b[A-Z][A-Z0-9]*(?:_[A-Z0-9]+)+\b/,
@@ -77,7 +77,6 @@ const similarityFailures = findGenericProjectionPatterns(projections);
 
 function visibleText(html) {
   return html
-    .replace(/<details[^>]*class="[^"]*government-technical-proof[^"]*"[^>]*>[\s\S]*?<\/details>/gi, " ")
     .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, " ")
     .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, " ")
     .replace(/<[^>]+>/g, " ")
@@ -109,11 +108,12 @@ if (baseUrl) {
     const response = await fetch(`${baseUrl}${route}`, { headers, redirect: "manual" });
     const html = response.status === 200 ? await response.text() : "";
     const text = visibleText(html);
+    const auditableText = text.replace(/https:\/\/\S+/g, " ");
     const failures = [];
     if (response.status !== 200) failures.push(`HTTP_${response.status}`);
-    if (knownFallbacks.some((pattern) => pattern.test(text))) failures.push("GENERIC_FALLBACK_VISIBLE");
-    if (rawEnum.test(text)) failures.push("RAW_ENUM_VISIBLE_OUTSIDE_TECHNICAL_PROOF");
-    if (machineResidue.some((pattern) => pattern.test(text))) failures.push("MACHINE_VALUE_VISIBLE_OUTSIDE_TECHNICAL_PROOF");
+    if (knownFallbacks.some((pattern) => pattern.test(auditableText))) failures.push("GENERIC_FALLBACK_VISIBLE");
+    if (rawEnum.test(auditableText)) failures.push("RAW_ENUM_VISIBLE");
+    if (machineResidue.some((pattern) => pattern.test(auditableText))) failures.push("MACHINE_VALUE_VISIBLE");
     const previewCards = (html.match(/data-woek-preview-card=/g) ?? []).length;
     const previewAssessments = (html.match(/data-woek-preview-assessment=/g) ?? []).length;
     const assessmentIcons = (html.match(/data-woek-assessment-icon=/g) ?? []).length;
@@ -152,8 +152,8 @@ const gates = {
   EVIDENCE_SUMMARY_IS_CASE_SPECIFIC: fieldFailures.every((value) => !value.includes("evidence_summary")) && similarityFailures.every((value) => value.field !== "evidence_summary"),
   ASSESSMENT_AND_IMPACT_CORE_HAVE_DISTINCT_FUNCTION: fieldFailures.every((value) => !value.includes("ASSESSMENT_EQUALS_IMPACT_CORE")),
   NO_GENERIC_PUBLIC_EDITORIAL_TEXT: noGeneric,
-  NO_RAW_INTERNAL_ENUMS_IN_PUBLIC_UI: fieldFailures.every((value) => !value.includes("RAW_ENUM")) && liveFailures.every((value) => !value.failures.includes("RAW_ENUM_VISIBLE_OUTSIDE_TECHNICAL_PROOF")),
-  NO_MACHINE_VALUES_IN_NORMAL_PUBLIC_UI: liveFailures.every((value) => !value.failures.includes("MACHINE_VALUE_VISIBLE_OUTSIDE_TECHNICAL_PROOF")),
+  NO_RAW_INTERNAL_ENUMS_IN_PUBLIC_UI: fieldFailures.every((value) => !value.includes("RAW_ENUM")) && liveFailures.every((value) => !value.failures.includes("RAW_ENUM_VISIBLE")),
+  NO_MACHINE_VALUES_IN_NORMAL_PUBLIC_UI: liveFailures.every((value) => !value.failures.includes("MACHINE_VALUE_VISIBLE")),
   KEY_FINDING_VISIBLE_AND_SPECIFIC: /Key Finding:/.test(components.overview) && fieldFailures.every((value) => !value.includes("key_finding")),
   BUDGET_2027_PORTFOLIO_NOT_FORCED_TO_FAKE_SCORE: budget?.overview_assessment_label === "Keine belastbare einheitliche Wirkungsrichtung ohne Disaggregation." && /heterogene Allokationsarchitektur/.test(budget?.impact_core_summary ?? "") && !/[+-]\d|Gesamtwert|Gesamtnote/.test(JSON.stringify(budget)),
   DETAIL_PAGE_IMPACT_SECTION_PRECEDES_PROCESS: components.decisionDetail.indexOf("<OverviewAssessment") < components.decisionDetail.indexOf("decision-process-meta") && components.governmentCard.indexOf("<OverviewAssessment") < components.governmentCard.indexOf("<FullSchemaDetails"),
@@ -165,7 +165,7 @@ const gates = {
   PREVIEW_CARD_IMPACT_PRECEDES_PROCESS: components.caseCard.indexOf("<OverviewAssessment") < components.caseCard.indexOf("data-woek-process-metadata") && components.governmentActionCard.indexOf("<OverviewAssessment") < components.governmentActionCard.indexOf("data-woek-process-metadata") && livePreviewFailures.every((entry) => !entry.failures.includes("PROCESS_PRECEDES_ASSESSMENT")),
   PREVIEW_CARD_PROCESS_IS_NOT_MAIN_ASSESSMENT: !/Vor der Entscheidung geprüft|Beobachtung und Rückkopplung|hohe Prüfrelevanz/i.test(components.overview),
   PREVIEW_CARD_NO_GENERIC_SUMMARY: noGeneric,
-  PREVIEW_CARD_NO_RAW_INTERNAL_ENUMS: fieldFailures.every((value) => !value.includes("RAW_ENUM")) && liveFailures.every((entry) => !entry.failures.includes("RAW_ENUM_VISIBLE_OUTSIDE_TECHNICAL_PROOF")),
+  PREVIEW_CARD_NO_RAW_INTERNAL_ENUMS: fieldFailures.every((value) => !value.includes("RAW_ENUM")) && liveFailures.every((entry) => !entry.failures.includes("RAW_ENUM_VISIBLE")),
 };
 const failedGates = Object.entries(gates).filter(([, passed]) => !passed).map(([name]) => name);
 const report = {

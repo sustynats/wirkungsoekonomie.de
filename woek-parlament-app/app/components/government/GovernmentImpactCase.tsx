@@ -211,26 +211,26 @@ export function GovernmentImpactCase({ record, compact = false }: { record: Publ
           <summary>Technischen Publikationsnachweis ansehen</summary>
           <dl className="government-impact-summary">
             <div><dt>ImpactCase-ID</dt><dd>{record.impact_case_id}</dd></div>
-            <div><dt>Datensatzprofil</dt><dd>{record.record_profile} · {record.schema_validation}{record.schema_id ? ` · ${record.schema_id}` : ""}</dd></div>
-            <div><dt>Analysemodus</dt><dd>{record.analysis_mode}</dd></div>
-            <div><dt>Fachstatus</dt><dd>{record.publication_analysis_status}</dd></div>
-            <div><dt>Publikationsstatus</dt><dd>{record.publication_status}</dd></div>
-            <div><dt>Materialität</dt><dd>{record.materiality}</dd></div>
-            <div><dt>Fachliche Charakterisierung</dt><dd>{record.overall_character}</dd></div>
-            <div><dt>Richtungscode</dt><dd>{record.primary_direction}</dd></div>
-            <div><dt>Evidenzcode</dt><dd>{record.evidence_level}</dd></div>
-            <div><dt>Umsetzungsstatus</dt><dd>{record.implementation_status}</dd></div>
-            <div><dt>Schutzprüfung</dt><dd>{record.boundary_status}</dd></div>
-            <div><dt>Reality-Check-Code</dt><dd>{record.reality_check_status}</dd></div>
-            <div><dt>Empfehlungsstatus</dt><dd>{record.recommendation_status}</dd></div>
-            <div><dt>Strukturierungsgrad</dt><dd>{record.public_analysis_depth}</dd></div>
-            <div><dt>Kompetenzprüfung</dt><dd>{record.competence_review_status}: {record.competence_status}</dd></div>
+            <div><dt>Datensatzprofil</dt><dd>{publicValue(record.record_profile)} · {publicValue(record.schema_validation)}{record.schema_id ? ` · ${record.schema_id}` : ""}</dd></div>
+            <div><dt>Analysemodus</dt><dd>{publicValue(record.analysis_mode)}</dd></div>
+            <div><dt>Fachstatus</dt><dd>{publicValue(record.publication_analysis_status)}</dd></div>
+            <div><dt>Publikationsstatus</dt><dd>{publicValue(record.publication_status)}</dd></div>
+            <div><dt>Materialität</dt><dd>{publicValue(record.materiality)}</dd></div>
+            <div><dt>Fachliche Charakterisierung</dt><dd>{publicValue(record.overall_character)}</dd></div>
+            <div><dt>Richtungscode</dt><dd>{publicValue(record.primary_direction)}</dd></div>
+            <div><dt>Evidenzcode</dt><dd>{publicValue(record.evidence_level)}</dd></div>
+            <div><dt>Umsetzungsstatus</dt><dd>{publicValue(record.implementation_status)}</dd></div>
+            <div><dt>Schutzprüfung</dt><dd>{publicValue(record.boundary_status)}</dd></div>
+            <div><dt>Reality-Check-Code</dt><dd>{publicValue(record.reality_check_status)}</dd></div>
+            <div><dt>Empfehlungsstatus</dt><dd>{publicValue(record.recommendation_status)}</dd></div>
+            <div><dt>Strukturierungsgrad</dt><dd>{publicValue(record.public_analysis_depth)}</dd></div>
+            <div><dt>Kompetenzprüfung</dt><dd>{publicValue(record.competence_review_status)}: {publicValue(record.competence_status)}</dd></div>
             <div><dt>Zentraler Hebel</dt><dd>{record.impact_summary.central_lever || "im kompakten Datensatz nicht separat strukturiert"}</dd></div>
             <div><dt>Messpriorität</dt><dd>{record.impact_summary.measurement_priority || "im kompakten Datensatz nicht separat strukturiert"}</dd></div>
             <div><dt>Fachquelle</dt><dd>{record.source_release.jsonl_file} · SHA-256 {record.source_release.jsonl_sha256}</dd></div>
             <div><dt>Menschenlesbare Fachakte</dt><dd>{record.source_release.markdown_file} · SHA-256 {record.source_release.markdown_sha256}</dd></div>
             <div><dt>Fallauszug</dt><dd>SHA-256 {record.source_release.case_markdown_sha256}</dd></div>
-            {record.editorial_evidence_overlay && <div><dt>Editorial-/Evidenz-Overlay</dt><dd>{record.editorial_evidence_overlay.source_file} · {record.editorial_evidence_overlay.fach_status} · SHA-256 {record.editorial_evidence_overlay.source_sha256}</dd></div>}
+            {record.editorial_evidence_overlay && <div><dt>Editorial-/Evidenz-Overlay</dt><dd>{record.editorial_evidence_overlay.source_file} · {publicValue(record.editorial_evidence_overlay.fach_status)} · SHA-256 {record.editorial_evidence_overlay.source_sha256}</dd></div>}
           </dl>
           {record.linked_government_action_ids.length ? <div><h4>Verknüpfte GovernmentActions</h4><ul>{record.linked_government_action_ids.map((id) => <li key={id}>{id}</li>)}</ul></div> : <p>Keine belastbar aufgelöste GovernmentAction-Verknüpfung veröffentlicht.</p>}
         </details>

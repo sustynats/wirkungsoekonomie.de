@@ -52,6 +52,42 @@ const systemValueLabels: Record<string, string> = {
   MIXED: "gemischte Entwicklung",
   OFF_TRACK: "Weicht ab",
   NOT_YET_OBSERVABLE: "Noch nicht beobachtbar",
+  OBSERVATION_ONLY: "Beobachtung ohne Zurechnung",
+  PLAUSIBLE_CONTRIBUTION: "plausibler Beitrag",
+  PARTIAL_ATTRIBUTION: "teilweise Zurechnung",
+  CAUSAL_EVIDENCE: "kausale Evidenz",
+  CONFLICTING_EVIDENCE: "widersprüchliche Evidenz",
+  IMPACT_POTENTIAL_EX_ANTE: "Wirkungspotenzial vor der Entscheidung",
+  IMPACT_REALITY_CHECK: "Wirkungsprüfung anhand beobachteter Entwicklung",
+  PORTFOLIO_EX_ANTE: "Portfolioanalyse vor der Entscheidung",
+  GOVERNMENT_DRAFT: "Regierungsentwurf",
+  NO_SINGLE_DIRECTION_ALLOWED: "Keine einheitliche Wirkungsrichtung zulässig",
+  VERY_HIGH: "sehr hohe Prüfrelevanz",
+  STANDARD_WOEK_ANALYSIS: "WÖk-Standardanalyse",
+  NOT_ASSESSABLE: "nicht belastbar bewertbar",
+  NOT_APPLICABLE: "nicht anwendbar",
+  BACKFILL_REQUIRED: "fachliche Ergänzung erforderlich",
+  LIMITED_FACH_RECORD: "begrenzte Fachakte",
+  NOT_STRUCTURED: "nicht strukturiert",
+  WATCH: "Beobachtung erforderlich",
+  POSITIVE: "positives Wirkungspotenzial",
+  NEGATIVE: "negatives Wirkungspotenzial",
+  NEUTRAL: "begründet ohne materielle Richtungsänderung",
+  HIGH: "hohe Evidenz",
+  MEDIUM: "mittlere Evidenz",
+  LOW: "geringe Evidenz",
+  PASS: "bestanden",
+  APPROVED: "freigegeben",
+  FULL_SCHEMA_2_0_1: "WÖk-Vollschema 2.0.1",
+  VERIFIED_FACH_RELEASE_COMPACT: "verifizierte kompakte Fachübergabe",
+  COMPACT_SOURCE_PRESERVED_NO_SCHEMA_REPAIR: "kompakte Quelle unverändert erhalten; keine stillschweigende Schema-Reparatur",
+  FULL_WOEK_ANALYSIS: "vollständige WÖk-Analyse",
+  REALITY_CHECK: "Reality Check",
+  APPROVED_FOR_PUBLIC_IMPORT: "für die öffentliche Integration fachlich freigegeben",
+  reality_check_status: "Reality-Check-Status",
+  record_profile: "Datensatzprofil",
+  analysis_mode: "Analysemodus",
+  publication_status: "Publikationsstatus",
   BOUNDARY_RISK: "Grenzwertrisiko",
   STATUS_UNVERIFIED: "noch nicht amtlich verifiziert",
   CONTENT_REQUIRED: "fachliche Befüllung erforderlich",
@@ -138,4 +174,8 @@ export function humanizeSystemValue(value: string) {
 
 export function publicIndicatorLabel(value: string) {
   return indicatorLabels[value] ?? humanizeSystemValue(value);
+}
+
+export function isMarkdownSeparatorOnly(value: string) {
+  return /^(?:---|\*\*\*|___)$/.test(value.trim());
 }

@@ -58,6 +58,41 @@ function humanizeSystemValue(value) {
   });
 }
 
+const technicalValueLabels = {
+  POSITIVE: "positives Wirkungspotenzial",
+  NEGATIVE: "negatives Wirkungspotenzial",
+  NEUTRAL: "begründet ohne materielle Richtungsänderung",
+  AMBIVALENT: "Gegenläufige Wirkungsrichtungen",
+  OPEN: "Wirkungseinordnung noch offen",
+  HIGH: "hohe Evidenz",
+  MEDIUM: "mittlere Evidenz",
+  LOW: "geringe Evidenz",
+  PASS: "bestanden",
+  APPROVED: "freigegeben",
+  IMPACT_POTENTIAL_EX_ANTE: "Wirkungspotenzial vor der Entscheidung",
+  IMPACT_REALITY_CHECK: "Wirkungsprüfung anhand beobachteter Entwicklung",
+  NOT_YET_OBSERVABLE: "Noch nicht beobachtbar",
+  OBSERVATION_ONLY: "Beobachtung ohne Zurechnung",
+  PLAUSIBLE_CONTRIBUTION: "plausibler Beitrag",
+  PARTIAL_ATTRIBUTION: "teilweise Zurechnung",
+  CAUSAL_EVIDENCE: "kausale Evidenz",
+  CONFLICTING_EVIDENCE: "widersprüchliche Evidenz",
+  NOT_APPLICABLE: "nicht anwendbar",
+  NOT_ASSESSABLE: "nicht belastbar bewertbar",
+  BACKFILL_REQUIRED: "fachliche Ergänzung erforderlich",
+  LIMITED_FACH_RECORD: "begrenzte Fachakte",
+  NOT_STRUCTURED: "nicht strukturiert",
+  WATCH: "Beobachtung erforderlich",
+  VERY_HIGH: "sehr hohe Prüfrelevanz",
+  FULL_SCHEMA_2_0_1: "WÖk-Vollschema 2.0.1",
+  VERIFIED_FACH_RELEASE_COMPACT: "verifizierte kompakte Fachübergabe",
+  COMPACT_SOURCE_PRESERVED_NO_SCHEMA_REPAIR: "kompakte Quelle unverändert erhalten; keine stillschweigende Schema-Reparatur",
+};
+
+function publicTechnicalValue(value) {
+  return technicalValueLabels[value] ?? humanizeSystemValue(value);
+}
+
 function recommendationSourceSlug(url) {
   return `quelle-${createHash("sha256").update(new URL(url).toString()).digest("hex").slice(0, 16)}`;
 }
@@ -107,9 +142,9 @@ function publicFields(record) {
   const editorial = projectGovernmentEditorial(record);
   if (editorial.status !== "PASS") return [["/public_editorial_projection", "PUBLICATION_REVIEW_REQUIRED"]];
   const fields = [
-    ["/impact_case_id", record.impact_case_id], ["/title", record.title], ["/record_profile", record.record_profile],
-    ["/schema_validation", record.schema_validation], ["/analysis_version", record.analysis_version], ["/analysis_as_of", record.analysis_as_of],
-    ["/materiality", record.materiality], ["/primary_direction", record.primary_direction], ["/evidence_level", record.evidence_level],
+    ["/impact_case_id", record.impact_case_id], ["/title", record.title], ["/record_profile", publicTechnicalValue(record.record_profile)],
+    ["/schema_validation", publicTechnicalValue(record.schema_validation)], ["/analysis_version", record.analysis_version], ["/analysis_as_of", record.analysis_as_of],
+    ["/materiality", publicTechnicalValue(record.materiality)], ["/primary_direction", publicTechnicalValue(record.primary_direction)], ["/evidence_level", publicTechnicalValue(record.evidence_level)],
     ["/impact_summary/strongest_positive_potential", record.impact_summary.strongest_positive_potential],
     ["/impact_summary/main_risk_or_tradeoff", record.impact_summary.main_risk_or_tradeoff],
     ["/impact_summary/direction_dependencies", record.impact_summary.direction_dependencies],
@@ -119,9 +154,9 @@ function publicFields(record) {
     ["/evidence_summary", editorial.fields.evidence_summary], ["/key_finding", editorial.fields.key_finding],
     ["/reality_check_summary", editorial.fields.reality_check_summary],
     ["/public_evidence_explanation", record.public_evidence_explanation ? publicEnumLabel(record.public_evidence_explanation) : null], ["/boundary_review_note", record.boundary_review_note ? publicEnumLabel(record.boundary_review_note) : null],
-    ["/public_analysis_depth", record.public_analysis_depth], ["/competence_review_status", record.competence_review_status],
-    ["/competence_status", record.competence_status], ["/boundary_status", record.boundary_status],
-    ["/reality_check_status", record.reality_check_status], ["/recommendation_status", record.recommendation_status], ["/source_release/jsonl_file", record.source_release.jsonl_file],
+    ["/public_analysis_depth", publicTechnicalValue(record.public_analysis_depth)], ["/competence_review_status", publicTechnicalValue(record.competence_review_status)],
+    ["/competence_status", record.competence_status], ["/boundary_status", publicTechnicalValue(record.boundary_status)],
+    ["/reality_check_status", publicTechnicalValue(record.reality_check_status)], ["/recommendation_status", publicTechnicalValue(record.recommendation_status)], ["/source_release/jsonl_file", record.source_release.jsonl_file],
     ["/source_release/jsonl_sha256", record.source_release.jsonl_sha256], ["/source_release/markdown_file", record.source_release.markdown_file],
     ["/source_release/markdown_sha256", record.source_release.markdown_sha256], ["/source_release/case_markdown_sha256", record.source_release.case_markdown_sha256],
     ["/editorial_evidence_overlay/source_file", record.editorial_evidence_overlay?.source_file],

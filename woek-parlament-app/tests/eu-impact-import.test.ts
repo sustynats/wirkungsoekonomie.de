@@ -3,7 +3,7 @@ import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import test from "node:test";
 import { projectEuEditorial } from "@/lib/publication/public-editorial-projection.mjs";
-import { humanizeSystemValue, publicIndicatorLabel } from "@/lib/presentation/labels";
+import { humanizeSystemValue, isMarkdownSeparatorOnly, publicIndicatorLabel } from "@/lib/presentation/labels";
 
 const records = readFileSync("data/eu/impact-cases/public-impact-records.jsonl", "utf8").split(/\r?\n/).filter(Boolean).map((line) => JSON.parse(line));
 const meta = JSON.parse(readFileSync("data/eu/impact-cases/public-impact-records-meta.json", "utf8"));
@@ -63,4 +63,28 @@ test("EU public renderer removes machine values without changing Fach records", 
     projectEuEditorial(industrialAct).fields.reality_check_summary,
   ].join(" ");
   assert.doesNotMatch(renderedValues, /realitycheckstatus\s*=|_[A-Z][A-Z0-9_]{3,}|\b[a-z]+_[a-z0-9_]+\b|---/i);
+});
+
+test("public full-record renderer humanizes audit enums and suppresses Markdown separator residue", () => {
+  const auditedValues = [
+    "IMPACT_POTENTIAL_EX_ANTE",
+    "PORTFOLIO_EX_ANTE",
+    "GOVERNMENT_DRAFT",
+    "NO_SINGLE_DIRECTION_ALLOWED",
+    "VERY_HIGH",
+    "STANDARD_WOEK_ANALYSIS",
+    "NOT_ASSESSABLE",
+    "NOT_APPLICABLE",
+    "BACKFILL_REQUIRED",
+    "LIMITED_FACH_RECORD",
+    "NOT_STRUCTURED",
+    "WATCH",
+    "reality_check_status = NOT_YET_OBSERVABLE",
+  ];
+  const renderedValues = auditedValues.map(humanizeSystemValue).join(" ");
+  assert.doesNotMatch(renderedValues, /\b[A-Z][A-Z0-9]*(?:_[A-Z0-9]+)+\b|\b[a-z][a-z0-9]*(?:_[a-z0-9]+)+\b/);
+  assert.equal(isMarkdownSeparatorOnly("---"), true);
+  assert.equal(isMarkdownSeparatorOnly("***"), true);
+  assert.equal(isMarkdownSeparatorOnly("___"), true);
+  assert.equal(isMarkdownSeparatorOnly("inhaltlich relevanter Bindestrich"), false);
 });
