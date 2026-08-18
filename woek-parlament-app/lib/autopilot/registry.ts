@@ -14,6 +14,7 @@ export type PoliticalJurisdiction = {
   government_monitoring_scope_start: string | null;
   election_cycle_state: ElectionLifecycle | string;
   next_election_date: string | null;
+  date_precision?: "EXACT" | "SEASON_ONLY" | string;
   last_election_check: string | null;
   last_government_sync: string | null;
   last_fachreview: string | null;
@@ -69,4 +70,27 @@ export function governmentLifecycleLabel(state: string) {
     TRANSITION_TO_NEXT_TERM: "Regierungsübergang",
   };
   return labels[state] ?? "Regierungsstatus offen";
+}
+
+export function formatElectionDate(value: string | null | undefined) {
+  if (!value) return null;
+
+  const exact = /^\d{4}-\d{2}-\d{2}$/.test(value);
+  if (exact) {
+    const date = new Date(`${value}T12:00:00Z`);
+    return new Intl.DateTimeFormat("de-DE", { dateStyle: "long", timeZone: "Europe/Berlin" }).format(date);
+  }
+
+  const seasonal = value.match(/^(\d{4})-(SPRING|SUMMER|AUTUMN|WINTER)$/);
+  if (seasonal) {
+    const labels: Record<string, string> = {
+      SPRING: "Frühjahr",
+      SUMMER: "Sommer",
+      AUTUMN: "Herbst",
+      WINTER: "Winter",
+    };
+    return `${labels[seasonal[2]]} ${seasonal[1]}`;
+  }
+
+  return null;
 }

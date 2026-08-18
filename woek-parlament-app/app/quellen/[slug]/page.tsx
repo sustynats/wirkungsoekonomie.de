@@ -53,7 +53,7 @@ export default async function SourceDetailPage({ params }: { params: Promise<{ s
       </div>
       <section className="decision-section source-usage-section">
         <p className="eyebrow">Verwendung im Portal</p>
-        <h2>Verknüpfte Wirkungschecks</h2>
+        <h2>Für diese Analysen verwendet</h2>
         {source.usages.length > 0 ? <div className="source-usage-list">{source.usages.map((usage) => <article key={`${usage.caseSlug}-${usage.sourceRole}`}>
           <div>
             <p className="source-register-label">{sourceRoleLabel[usage.sourceRole]}{usage.decisionDate ? ` · Entscheidung ${dateLabel(usage.decisionDate)}` : ""}</p>

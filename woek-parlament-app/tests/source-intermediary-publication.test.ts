@@ -21,7 +21,7 @@ test("a source detail explains the source and reverse-links its analyses with re
   const detail = read("app/quellen/[slug]/page.tsx");
   assert.match(detail, /Kurz zusammengefasst/);
   assert.match(detail, /source\.abstract/);
-  assert.match(detail, /Verknüpfte Wirkungschecks/);
+  assert.match(detail, /Für diese Analysen verwendet/);
   assert.match(detail, /Kurzbewertung/);
   assert.match(detail, /analysisDirection/);
   assert.match(detail, /evidenceLevel/);

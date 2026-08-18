@@ -12,6 +12,7 @@ import {
   validateIndividualVotes,
   validateVoteEvents,
 } from "../lib/parliament/daily-ingest-core";
+import { formatElectionDate } from "../lib/autopilot/registry";
 
 const registry = JSON.parse(readFileSync("data/political-jurisdictions.json", "utf8"));
 
@@ -26,6 +27,12 @@ test("EU Parliament and Commission terms remain separate", () => {
   assert.equal(eu.institutional_terms.european_parliament_term_start, "2024-07-16");
   assert.equal(eu.institutional_terms.european_commission_term_start, "2024-12-01");
   assert.notEqual(eu.institutional_terms.european_parliament_term_id, eu.institutional_terms.european_commission_term_id);
+});
+
+test("exact and season-only election dates remain renderable", () => {
+  assert.equal(formatElectionDate("2026-09-20"), "20. September 2026");
+  assert.equal(formatElectionDate("2027-AUTUMN"), "Herbst 2027");
+  assert.equal(formatElectionDate("not-a-date"), null);
 });
 
 test("Berlin scheduling executes only the intended local slots", () => {
