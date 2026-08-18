@@ -22,6 +22,7 @@
     "government:sync-approved": "node scripts/sync-approved-government-impact-cases.mjs",
     "parliament:sync-approved": "node scripts/sync-approved-parliament-daily.mjs",
     "observatory:sync-approved": "node scripts/sync-approved-observatory.mjs",
+    "recommendations:import-approved-batch": "tsx scripts/import-approved-recommendation-batch.ts",
     "db:migrate": "node scripts/run-parliament-migrations.mjs",
     "db:verify": "node scripts/verify-parliament-db.mjs",
     "storage:report": "node scripts/storage-report.mjs",

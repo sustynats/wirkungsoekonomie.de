@@ -7,6 +7,13 @@ import addFormats from "ajv-formats";
 import { bootstrapDisabledResponse, recurringWritersEnabled } from "@/lib/autopilot/runtime-mode";
 import { managedDropboxPath, validateManagedPath, woekDropboxRoot } from "@/lib/dropbox/managed-paths";
 import { recommendationReviewCandidate, recommendationVersionCanFollow } from "@/lib/recommendation-versioning";
+import {
+  assertRecommendationIsFachApprovedRecord,
+  CODEX_MUST_NOT_GENERATE_RECOMMENDATIONS,
+  nextOpenRecommendationQueueEntries,
+  recommendationBackfillDisposition,
+  shouldSkipRecommendationQueueEntry,
+} from "@/lib/recommendation-backfill";
 
 const contracts = path.resolve("data/autopilot/contracts");
 const optionSetSchema = JSON.parse(readFileSync(path.join(contracts, "option-set.schema.json"), "utf8"));
@@ -140,4 +147,83 @@ test("backfill inventory is complete without CodeX-authored recommendations", ()
   assert.equal(summary.recommendation_content_created_by_codex, 0);
   assert.equal(queue.length, 133);
   assert.equal(publicRecommendations.length, 0);
+});
+
+test("recommendation backfill skips only COMPLETED_APPROVED ledger entries", () => {
+  const completed = [{
+    impact_case_id: "WOEK-IMPACT-TEST-1",
+    recommendation_id: "WOEK-REC-TEST-1-R1",
+    recommendation_version: "2.3-R1",
+    status: "COMPLETED_APPROVED",
+  }];
+  const review = [{ impact_case_id: "WOEK-IMPACT-TEST-1", status: "REVIEW_REQUIRED" }];
+  const blocked = [{ impact_case_id: "WOEK-IMPACT-TEST-1", status: "BLOCKED" }];
+
+  assert.equal(shouldSkipRecommendationQueueEntry("WOEK-IMPACT-TEST-1", completed), true);
+  assert.equal(shouldSkipRecommendationQueueEntry("WOEK-IMPACT-TEST-1", review), false);
+  assert.equal(shouldSkipRecommendationQueueEntry("WOEK-IMPACT-TEST-1", blocked), false);
+  assert.equal(shouldSkipRecommendationQueueEntry("WOEK-IMPACT-UNKNOWN", completed), false);
+
+  const queue = [
+    { impact_case_id: "WOEK-IMPACT-TEST-1", priority: "P1" },
+    { impact_case_id: "WOEK-IMPACT-TEST-2", priority: "P1" },
+    { impact_case_id: "WOEK-IMPACT-TEST-3", priority: "P1" },
+  ];
+  assert.deepEqual(
+    nextOpenRecommendationQueueEntries(queue, completed, 2).map((entry) => entry.impact_case_id),
+    ["WOEK-IMPACT-TEST-2", "WOEK-IMPACT-TEST-3"],
+  );
+});
+
+test("same RecommendationVersion is idempotent and conflicting identities fail closed", () => {
+  const incoming = {
+    impact_case_id: "WOEK-IMPACT-TEST-1",
+    recommendation_id: "WOEK-REC-TEST-1-R1",
+    recommendation_version: "2.3-R1",
+  };
+
+  assert.equal(recommendationBackfillDisposition({
+    incoming,
+    ledgerRecords: [],
+    canonicalRecommendations: [incoming],
+  }), "IDEMPOTENT_ALREADY_CANONICAL");
+
+  assert.equal(recommendationBackfillDisposition({
+    incoming,
+    ledgerRecords: [{ ...incoming, status: "COMPLETED_APPROVED" }],
+    canonicalRecommendations: [incoming],
+  }), "SKIP_COMPLETED_APPROVED");
+
+  assert.equal(recommendationBackfillDisposition({
+    incoming,
+    ledgerRecords: [{ ...incoming, recommendation_version: "2.3-R2", status: "COMPLETED_APPROVED" }],
+    canonicalRecommendations: [],
+  }), "CONFLICT_WITH_COMPLETED_APPROVED");
+
+  assert.equal(recommendationBackfillDisposition({
+    incoming,
+    ledgerRecords: [],
+    canonicalRecommendations: [{ ...incoming, recommendation_version: "2.3-R2" }],
+  }), "CONFLICTING_CANONICAL_VERSION");
+});
+
+test("recommendation gate accepts only fach-approved records and forbids score derivation", () => {
+  assert.equal(CODEX_MUST_NOT_GENERATE_RECOMMENDATIONS, true);
+  assert.equal(assertRecommendationIsFachApprovedRecord({
+    recommendation_status: "PREFERRED_DESIGN",
+    fach_status: "APPROVED_FOR_CODEX_INTEGRATION",
+  }), true);
+  assert.throws(() => assertRecommendationIsFachApprovedRecord({
+    recommendation_status: "AUTO_SCORE_WINNER",
+    fach_status: "APPROVED",
+  }), /Unsupported recommendation_status/);
+  assert.throws(() => assertRecommendationIsFachApprovedRecord({
+    recommendation_status: "PREFERRED_DESIGN",
+    fach_status: "APPROVED",
+    net_score: 3,
+  }), /forbidden/);
+  assert.throws(() => assertRecommendationIsFachApprovedRecord({
+    recommendation_status: "PREFERRED_DESIGN",
+    fach_status: "OPEN",
+  }), /not fach-approved/);
 });
