@@ -5,6 +5,7 @@ import path from "node:path";
 
 const baseUrl = (process.env.WOEK_SOURCE_VS_VIEW_BASE_URL ?? "http://localhost:3000").replace(/\/$/, "");
 const outputFile = process.env.WOEK_SOURCE_VS_VIEW_REPORT ?? path.join(process.cwd(), "data", "autopilot", "audit", "2.3-remediated", "SOURCE-VS-VIEW-2.3-FULL.json");
+const requestHeaders = process.env.WOEK_SOURCE_VS_VIEW_COOKIE ? { cookie: process.env.WOEK_SOURCE_VS_VIEW_COOKIE } : {};
 const readJsonl = (file) => readFileSync(file, "utf8").split(/\r?\n/).filter(Boolean).map((line) => JSON.parse(line));
 const records = readJsonl(path.join(process.cwd(), "data", "government", "impact-cases", "public-impact-records.jsonl"));
 const recommendations = new Map(readJsonl(path.join(process.cwd(), "data", "recommendations", "public", "recommendations.jsonl")).map((record) => [record.impact_case_id, record]));
@@ -54,7 +55,7 @@ const failures = [];
 const cases = [];
 for (const record of records) {
   const url = `${baseUrl}/regierung/wirkungsanalysen/${encodeURIComponent(record.impact_case_id)}`;
-  const response = await fetch(url, { redirect: "manual" });
+  const response = await fetch(url, { redirect: "manual", headers: requestHeaders });
   const result = { impact_case_id: record.impact_case_id, url, http_status: response.status, fields_checked: 0, fields_missing: [], source_links_expected: 0, source_links_rendered: 0, full_fachtext_hash: record.source_release.case_markdown_sha256, full_fachtext_visible: false, raw_record_preserved: Boolean(record.raw_record), status: "PASS" };
   if (response.status !== 200) {
     result.status = "FAIL";
@@ -97,7 +98,7 @@ for (const record of records) {
 
 const aliasResults = [];
 for (const alias of aliases) {
-  const response = await fetch(`${baseUrl}/regierung/wirkungsanalysen/${encodeURIComponent(alias.alias_id)}`, { redirect: "manual" });
+  const response = await fetch(`${baseUrl}/regierung/wirkungsanalysen/${encodeURIComponent(alias.alias_id)}`, { redirect: "manual", headers: requestHeaders });
   const text = response.status === 200 ? comparable(decodeHtml(await response.text())) : "";
   const canonical = records.find((record) => record.impact_case_id === alias.canonical_impact_case_id);
   const status = response.status === 200 && canonical && text.includes(comparable(canonical.title)) ? "PASS" : "FAIL";
