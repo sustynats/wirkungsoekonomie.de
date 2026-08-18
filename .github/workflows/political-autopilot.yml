@@ -1,0 +1,31 @@
+name: WÖk Political Autopilot
+
+on:
+  schedule:
+    # Berlin 06:00 and 16:00, with adjacent UTC hours for daylight-saving time.
+    # The server route accepts only the matching Europe/Berlin time slot.
+    - cron: "0 4,5,14,15 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: woek-political-autopilot
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Process approvals and create new political deltas
+        env:
+          CRON_SECRET: ${{ secrets.CRON_SECRET }}
+        run: |
+          test -n "$CRON_SECRET"
+          curl --fail-with-body --silent --show-error \
+            --retry 3 --retry-all-errors --max-time 600 \
+            -H "Authorization: Bearer $CRON_SECRET" \
+            https://parlament.wirkungsoekonomie.de/api/cron/political-autopilot
+
