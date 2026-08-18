@@ -5,10 +5,11 @@ Stand: 18. August 2026
 ## Ergebnis
 
 Die gemeinsame technische Zielarchitektur für Bundesregierung, Bundestag,
-alle 16 Länder und die Europäische Union ist im Portal umgesetzt und baut
-fehlerfrei. Nicht fachlich freigegebene Inhalte werden nicht veröffentlicht.
-Der Stand ist deshalb technisch vorbereitet, aber bewusst noch kein
-vollständiger produktiver Länder-/EU-Autopilot.
+alle 16 Länder, die Europäische Union und das WÖk-Wirkungsobservatorium ist im
+Portal umgesetzt und baut fehlerfrei. Nicht fachlich freigegebene Inhalte
+werden nicht veröffentlicht. Der Bundeszweig ist produktiv; Länder- und
+EU-Quellen werden weiterhin adapterweise und ohne falsche Vollständigkeit
+freigeschaltet.
 
 ## Umgesetzt
 
@@ -34,13 +35,23 @@ vollständiger produktiver Länder-/EU-Autopilot.
   Öffnungs- oder Klicktracking;
 - Design-Token-, Privacy-, Accessibility-, Source-vs-View- und
   Publication-Gates.
+- zwei unabhängige Achsen für laufende Landesregierung und nächsten Wahlzyklus;
+- tägliche, amtliche Wahlterminerkennung über die Bundeswahlleiterin;
+- versionierte Wahlprogramm- und Kompetenzverträge ohne automatisches
+  Wirkungsurteil;
+- WÖk-Wirkungsobservatorium mit StateObservation, EvidenceEvent,
+  ExternalShock, OutcomeSeries, RealityCheckCandidate und versionierten
+  AnalysisUpdates;
+- cloudbasierte Release-Monitore für 15 amtliche Datenquellenfamilien;
+- öffentlich nachvollziehbare EvidenceEvent- und Versionsvergleichsbereiche,
+  sobald freigegebene Fachupdates vorliegen.
 
 ## Geprüft
 
-- 74 automatisierte Tests: bestanden;
+- 96 automatisierte Tests: bestanden;
 - TypeScript: bestanden;
 - ESLint: bestanden;
-- automatisierte WCAG-2.2-AA-Quellbaseline: 79 Dateien, 0 Befunde;
+- automatisierte WCAG-2.2-AA-Quellbaseline: 82 Dateien, 0 Befunde;
 - Design-Token-Prüfung: bestanden;
 - Positionierungsprüfung: bestanden;
 - Privacy-Governance: bestanden;
@@ -54,28 +65,18 @@ vollständiger produktiver Länder-/EU-Autopilot.
 
 ### Bundesregierung
 
-Government Data 1.1 ist nicht produktionsfreigegeben. Bestätigte
-P0-Overmerges betreffen mindestens:
-
-- `govaction:dip:321575`
-- `govaction:dip:328503`
-- `govaction:dip:325255`
-- `govaction:dip:328937`
-- `govaction:dip:333505`
-- `govaction:breg-cabinet:2445448:top:4`
-
-Alle sieben Government-Gates stehen auf `FAIL`. Der Build bewahrt deshalb den
-letzten freigegebenen Snapshot und veröffentlicht Data 1.1 nicht. Erforderlich
-sind Government Data 1.2, bestandene Canonicalization-Regressionen und ein
-erneuter externer Audit.
+Government Data 1.1 wurde nicht veröffentlicht. Data 1.2 trennt die bekannten
+Overmerges, hält unklare Objekte im Review Store und veröffentlicht nur den
+objektweise geprüften Public Store. Die dokumentierten P0-Regressionsfälle und
+der systemweite Cluster-Guard bestehen.
 
 ### Länder
 
-Die Architektur, alle 16 Registry-Einträge, Wahlzyklen und Verträge sind
-vorhanden. Die amtlichen Wahlquellen für Berlin, Mecklenburg-Vorpommern und
-Sachsen-Anhalt sind definiert, aber noch nicht automatisiert. Es existiert
-noch kein produktiv freigegebener allgemeiner Landesregierungsadapter. Der
-Health-Status bleibt daher `DEGRADED`.
+Die Architektur, alle 16 Registry-Einträge, zwei unabhängige Lifecycle-Achsen,
+Wahlzyklen und Verträge sind vorhanden. Amtliche präzise Wahltermine werden
+automatisch erkannt. Die vollständige Programmextraktion und die
+Landesregierungsadapter werden quellenweise freigeschaltet; nicht automatisierte
+Quellen bleiben im Health-Status `DEGRADED`.
 
 ### Europäische Union
 
@@ -92,27 +93,25 @@ keine Richtungen, Scores oder fachlichen Ersatztexte erzeugt.
 
 ### Tagesnewsletter
 
-Der Versand bleibt bis zur ausgeführten Datenbankmigration, produktiv
-verifizierter SMTP-Absenderkonfiguration und mindestens einer bestätigten
-Double-Opt-in-Anmeldung geschlossen. Government-, Länder- und EU-Neuerungen
-werden erst in den Digest aufgenommen, wenn ihr jeweiliger verifizierter
-Deployment-Feed angeschlossen ist. Bis dahin weist der technische Bericht
-`NO_VERIFIED_FEED_CONNECTED` aus.
+Der Versand läuft serverseitig und computerunabhängig. Er versendet nur bei
+verifizierten öffentlichen Änderungen an aktive Double-Opt-in-Abonnements und
+enthält Absender, Verantwortlichkeit, Impressum, Datenschutz und signierte
+Ein-Klick-Abmeldung. Ohne Neuerungen wird keine leere Mail erzeugt.
 
 ## Deploymentstatus
 
-Es wurde kein Production-Deployment fachlich ungeprüfter ImpactCases
-durchgeführt. Die technische Architektur kann erst nach dem vorgesehenen
-technischen Review veröffentlicht werden; gesperrte Datenobjekte bleiben auch
-dann unsichtbar.
+Der freigegebene Government-Data-1.2-Public-Store und die 63 fachlich
+übergebenen ImpactCases sind produktiv unter
+`https://parlament.wirkungsoekonomie.de/regierung` veröffentlicht. Gesperrte
+oder ungeprüfte Objekte bleiben unsichtbar beziehungsweise im Review Store.
 
 ## Nächste Freigabeschritte
 
-1. Government Data 1.2 und externen Re-Audit abwarten.
-2. Amtliche Länderadapter einzeln implementieren und Coverage-Nenner belegen.
-3. EU-Adapter gegen amtliche Dokumentation implementieren und Backfill auditieren.
-4. Fachlich freigegebene `WÖkImpactCase`-Übergaben integrieren.
-5. SMTP-Absender, Migration und Double-Opt-in-Ende-zu-Ende testen.
-6. Staging Source-vs-View und responsive Browser-QA wiederholen.
-7. Nur die grün geprüften technischen und fachlichen Objekte deployen.
-
+1. Amtliche Länderprogramm- und Regierungsadapter einzeln fertigstellen und
+   Coverage-Nenner belegen.
+2. EU-Adapter gegen amtliche Dokumentation implementieren und Backfill auditieren.
+3. Fachlich freigegebene Länder-, EU- und Observatorium-Handoffs integrieren.
+4. Discord-Direktnachrichten aktivieren, sobald Bot-Token und Empfänger-ID im
+   Vercel-Projekt gesetzt sind.
+5. Manuelle Browser-/Screenreader-QA ergänzend zur automatisierten Baseline
+   durchführen.

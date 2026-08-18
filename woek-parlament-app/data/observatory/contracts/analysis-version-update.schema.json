@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wirkungsoekonomie.de/contracts/analysis-version-update-1.0.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["impact_case_id", "analysis_version", "supersedes_analysis_version", "triggering_evidence_event_ids", "change_reason", "public_change_summary", "changed_fields", "fach_approval"],
+  "properties": {
+    "impact_case_id": { "type": "string" },
+    "analysis_version": { "type": "string" },
+    "supersedes_analysis_version": { "type": "string" },
+    "triggering_evidence_event_ids": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string" } },
+    "change_reason": { "type": "string", "minLength": 1 },
+    "public_change_summary": { "type": "string", "minLength": 1 },
+    "changed_fields": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string" } },
+    "fach_approval": { "enum": ["APPROVED_ANALYSIS_UPDATE", "BLOCKED", "OPEN"] }
+  }
+}

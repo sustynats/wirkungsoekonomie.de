@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wirkungsoekonomie.de/contracts/reality-check-candidate-1.0.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["reality_check_candidate_id", "impact_case_id", "trigger_type", "trigger_object_ids", "created_at", "review_status"],
+  "properties": {
+    "reality_check_candidate_id": { "type": "string" },
+    "impact_case_id": { "type": "string" },
+    "trigger_type": { "enum": ["NEW_EVALUATION", "OUTCOME_VALUE", "REVIEW_DATE", "RISK_MATERIALIZED", "POSITIVE_POTENTIAL_MATERIALIZED", "BASELINE_CHANGE", "CONTEXT_CHANGE", "EXTERNAL_SHOCK"] },
+    "trigger_object_ids": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+    "created_at": { "type": "string", "format": "date-time" },
+    "review_status": { "enum": ["OPEN", "FACH_REVIEW_REQUIRED", "APPROVED", "BLOCKED"] }
+  }
+}

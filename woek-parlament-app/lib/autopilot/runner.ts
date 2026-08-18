@@ -7,7 +7,8 @@ import { berlinDateSlot } from "@/lib/parliament/daily-ingest-core";
 import { lifecycleStateForElectionCycle, type ElectionCycleStatus } from "@/lib/autopilot/lifecycle";
 import jurisdictionRegistryJson from "@/data/political-jurisdictions.json";
 import sourceRegistryJson from "@/data/autopilot/source-registry.json";
-import electionCyclesJson from "@/data/autopilot/election-cycles.json";
+import { processObservatorySourceMonitor } from "@/lib/observatory/source-monitor";
+import { processStateElectionCalendar } from "@/lib/autopilot/state-election-monitor";
 
 type DomainStatus = "OK" | "DEGRADED" | "BLOCKED";
 type DomainHealth = { status: DomainStatus; last_run_at: string; detail: string };
@@ -20,7 +21,8 @@ type JurisdictionRegistry = {
     jurisdiction_type: "FEDERAL" | "STATE" | "EU";
     name: string;
     active_term_id: string;
-    lifecycle_state: string;
+    government_lifecycle_state: string;
+    election_cycle_state: string;
     next_election_date: string | null;
     source_status: string;
     monitoring_enabled: boolean;
@@ -53,7 +55,7 @@ function reconciledRegistry(registry: JurisdictionRegistry, electionCycles: Elec
       if (!cycle) return entry;
       return {
         ...entry,
-        lifecycle_state: lifecycleStateForElectionCycle(cycle.status),
+        election_cycle_state: lifecycleStateForElectionCycle(cycle.status),
         next_election_date: cycle.election_date,
         last_checked_at: checkedAt,
       };
@@ -85,7 +87,7 @@ function statusForEuAdapters(sources: SourceRegistry): DomainHealth {
 function normalizedDomainStatus(result: unknown): DomainStatus {
   if (!result || typeof result !== "object") return "BLOCKED";
   const status = String((result as { status?: unknown }).status ?? "");
-  if (/^(COMPLETED|ALREADY_PROCESSED)$/.test(status)) return "OK";
+  if (/^(OK|COMPLETED|ALREADY_PROCESSED)$/.test(status)) return "OK";
   if (/^(NOT_CONFIGURED|BLOCKED|FAILED)$/.test(status)) return "BLOCKED";
   return "DEGRADED";
 }
@@ -99,9 +101,10 @@ export async function processPoliticalAutopilot(now = new Date()) {
   const berlin = berlinDateSlot(now);
   if (!berlin.slot) return { status: "SKIPPED_OUTSIDE_SCHEDULE" as const, berlin_hour: berlin.hour };
 
+  const electionCalendar = await processStateElectionCalendar(now);
   const registry = reconciledRegistry(
     jurisdictionRegistryJson as JurisdictionRegistry,
-    electionCyclesJson as ElectionCycleRegistry,
+    { cycles: electionCalendar.cycles } as ElectionCycleRegistry,
     now.toISOString(),
   );
   const sourceRegistry = sourceRegistryJson as SourceRegistry;
@@ -113,24 +116,33 @@ export async function processPoliticalAutopilot(now = new Date()) {
 
   const runId = `${berlin.date}-${berlin.slot}`;
   const runAt = now.toISOString();
-  const [government, parliament] = await Promise.allSettled([
+  const [government, parliament, observatory] = await Promise.allSettled([
     processGovernmentDailyImpactIngest(),
     processParliamentDaily({ slot: berlin.slot, now }),
+    processObservatorySourceMonitor(now),
   ]);
   const governmentResult = government.status === "fulfilled" ? government.value : { status: "FAILED", reason: government.reason instanceof Error ? government.reason.message : "Unbekannter Fehler" };
   const parliamentResult = parliament.status === "fulfilled" ? parliament.value : { status: "FAILED", reason: parliament.reason instanceof Error ? parliament.reason.message : "Unbekannter Fehler" };
+  const observatoryResult = observatory.status === "fulfilled" ? observatory.value : { status: "FAILED", reason: observatory.reason instanceof Error ? observatory.reason.message : "Unbekannter Fehler" };
   const domains = {
     federal: { status: normalizedDomainStatus(governmentResult), last_run_at: runAt, detail: resultDetail("Bund", governmentResult) },
     parliament: { status: normalizedDomainStatus(parliamentResult), last_run_at: runAt, detail: resultDetail("Parlament", parliamentResult) },
     states: statusForStateAdapters(registry, sourceRegistry),
     eu: statusForEuAdapters(sourceRegistry),
+    observatory: { status: normalizedDomainStatus(observatoryResult), last_run_at: runAt, detail: resultDetail("Wirkungsobservatorium", observatoryResult) },
   } satisfies Record<string, DomainHealth>;
   const values = Object.values(domains).map((entry) => entry.status);
   const overallStatus: DomainStatus = values.includes("BLOCKED") ? "BLOCKED" : values.includes("DEGRADED") ? "DEGRADED" : "OK";
   const nextElectionTriggers = registry.jurisdictions
     .filter((entry) => entry.next_election_date)
     .sort((a, b) => String(a.next_election_date).localeCompare(String(b.next_election_date)))
-    .map((entry) => ({ jurisdiction_id: entry.jurisdiction_id, name: entry.name, date: entry.next_election_date, lifecycle_state: entry.lifecycle_state }));
+    .map((entry) => ({
+      jurisdiction_id: entry.jurisdiction_id,
+      name: entry.name,
+      date: entry.next_election_date,
+      government_lifecycle_state: entry.government_lifecycle_state,
+      election_cycle_state: entry.election_cycle_state,
+    }));
   const health = {
     schema_version: "1.0",
     run_id: runId,
@@ -142,6 +154,15 @@ export async function processPoliticalAutopilot(now = new Date()) {
     open_fach_reviews: 0,
     next_election_triggers: nextElectionTriggers,
     next_reality_checks: [],
+    observatory: {
+      last_observation_sync: runAt,
+      last_evidence_review: null,
+      last_reality_check_trigger: observatoryResult && typeof observatoryResult === "object" && Number((observatoryResult as { changes_detected?: unknown }).changes_detected ?? 0) > 0 ? runAt : null,
+      open_reality_candidates: observatoryResult && typeof observatoryResult === "object" ? Number((observatoryResult as { changes_detected?: unknown }).changes_detected ?? 0) : 0,
+      blocked_attributions: 0,
+      source_failures: observatoryResult && typeof observatoryResult === "object" && Array.isArray((observatoryResult as { failures?: unknown }).failures) ? (observatoryResult as { failures: unknown[] }).failures.length : 1,
+      stale_indicators: 0
+    },
   };
   await Promise.all([
     uploadDropboxText(`${root}/REGISTRIES/political-jurisdictions.json`, `${JSON.stringify(registry, null, 2)}\n`),
@@ -149,7 +170,7 @@ export async function processPoliticalAutopilot(now = new Date()) {
     uploadDropboxText(`${root}/CONTROL/health.json`, `${JSON.stringify(health, null, 2)}\n`),
     uploadDropboxText(`${stateDailyRoot}/CONTROL/health.json`, `${JSON.stringify({ generated_at: runAt, domain: "STATES", ...domains.states }, null, 2)}\n`),
     uploadDropboxText(`${euDailyRoot}/CONTROL/health.json`, `${JSON.stringify({ generated_at: runAt, domain: "EU", ...domains.eu }, null, 2)}\n`),
-    uploadDropboxText(`${root}/LEDGERS/AUTOPILOT-RUN-${runId}.json`, `${JSON.stringify({ run_id: runId, run_at: runAt, government: governmentResult, parliament: parliamentResult, daily_digest: { status: "SCHEDULED_SEPARATELY_AT_DAY_END" }, overall_status: overallStatus }, null, 2)}\n`),
+    uploadDropboxText(`${root}/LEDGERS/AUTOPILOT-RUN-${runId}.json`, `${JSON.stringify({ run_id: runId, run_at: runAt, election_calendar: electionCalendar, government: governmentResult, parliament: parliamentResult, observatory: observatoryResult, daily_digest: { status: "SCHEDULED_SEPARATELY_AT_DAY_END" }, overall_status: overallStatus }, null, 2)}\n`),
   ]);
-  return { status: overallStatus, run_id: runId, domains, government: governmentResult, parliament: parliamentResult, daily_digest: { status: "SCHEDULED_SEPARATELY_AT_DAY_END" as const } };
+  return { status: overallStatus, run_id: runId, election_calendar: electionCalendar, domains, government: governmentResult, parliament: parliamentResult, observatory: observatoryResult, daily_digest: { status: "SCHEDULED_SEPARATELY_AT_DAY_END" as const } };
 }

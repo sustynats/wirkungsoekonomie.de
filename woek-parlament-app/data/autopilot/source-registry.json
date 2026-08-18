@@ -3,6 +3,15 @@
   "updated_at": "2026-08-18",
   "sources": [
     {
+      "source_id": "bundeswahlleiterin-wahltermine",
+      "jurisdiction_id": "de-all-states",
+      "institutional_role": "ELECTION_CALENDAR",
+      "name": "Die Bundeswahlleiterin - künftige Wahltermine",
+      "base_url": "https://www.bundeswahlleiterin.de/service/wahltermine.html",
+      "access_type": "HTML",
+      "adapter_status": "ACTIVE"
+    },
+    {
       "source_id": "bund-dip",
       "jurisdiction_id": "de-bund",
       "institutional_role": "LEGISLATIVE_DEPENDENCY_LAYER",

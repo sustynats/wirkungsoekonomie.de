@@ -6,31 +6,40 @@
       "election_cycle_id": "de-st-landtag-2026",
       "jurisdiction_id": "de-st",
       "election_date": "2026-09-06",
+      "election_cycle_state": "PROGRAMME_ANALYSIS",
       "status": "PROGRAMMES_REVIEW",
       "official_source_refs": ["https://wahlen.sachsen-anhalt.de/"],
       "programme_collection_status": "IN_PROGRESS",
+      "programme_analysis_status": "IN_REVIEW",
       "result_status": "NOT_AVAILABLE",
-      "government_formation_status": "NOT_STARTED"
+      "coalition_formation_status": "NOT_STARTED",
+      "new_government_status": "NOT_FORMED"
     },
     {
       "election_cycle_id": "de-be-agh-2026",
       "jurisdiction_id": "de-be",
       "election_date": "2026-09-20",
+      "election_cycle_state": "PROGRAMME_ANALYSIS",
       "status": "PROGRAMMES_COLLECTING",
       "official_source_refs": ["https://www.berlin.de/wahlen/wahlen/berliner-wahlen-2026/"],
       "programme_collection_status": "IN_PROGRESS",
+      "programme_analysis_status": "NOT_STARTED",
       "result_status": "NOT_AVAILABLE",
-      "government_formation_status": "NOT_STARTED"
+      "coalition_formation_status": "NOT_STARTED",
+      "new_government_status": "NOT_FORMED"
     },
     {
       "election_cycle_id": "de-mv-landtag-2026",
       "jurisdiction_id": "de-mv",
       "election_date": "2026-09-20",
+      "election_cycle_state": "PROGRAMME_ANALYSIS",
       "status": "PROGRAMMES_COLLECTING",
       "official_source_refs": ["https://www.laiv-mv.de/Wahlen/Landtagswahlen/2026/"],
       "programme_collection_status": "IN_PROGRESS",
+      "programme_analysis_status": "NOT_STARTED",
       "result_status": "NOT_AVAILABLE",
-      "government_formation_status": "NOT_STARTED"
+      "coalition_formation_status": "NOT_STARTED",
+      "new_government_status": "NOT_FORMED"
     }
   ]
 }

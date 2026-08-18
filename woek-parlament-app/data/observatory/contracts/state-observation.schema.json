@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://wirkungsoekonomie.de/contracts/state-observation-1.0.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["observation_id", "indicator_id", "definition", "unit", "geography", "observation_period", "observation_date", "publication_date", "value", "previous_value", "baseline", "reference", "source_ref", "source_function", "data_quality", "revision_status", "revision", "valid_from", "supersedes_observation_id"],
+  "properties": {
+    "observation_id": { "type": "string", "minLength": 3 },
+    "indicator_id": { "type": "string", "minLength": 2 },
+    "definition": { "type": "string", "minLength": 1 },
+    "unit": { "type": "string", "minLength": 1 },
+    "geography": { "type": "string", "minLength": 1 },
+    "observation_period": { "type": "string", "minLength": 1 },
+    "observation_date": { "type": "string", "format": "date" },
+    "publication_date": { "type": "string", "format": "date" },
+    "value": { "type": ["number", "string", "null"] },
+    "previous_value": { "type": ["number", "string", "null"] },
+    "baseline": { "type": ["number", "string", "null"] },
+    "reference": { "type": ["string", "null"] },
+    "source_ref": { "type": "string", "format": "uri" },
+    "source_function": { "enum": ["OUTCOME_DATA", "EVALUATION", "OFFICIAL_FACT", "CONTEXT"] },
+    "data_quality": { "enum": ["HIGH", "MEDIUM", "LOW", "NOT_ASSESSABLE"] },
+    "revision_status": { "enum": ["INITIAL", "REVISED", "PROVISIONAL", "FINAL"] },
+    "revision": { "type": "integer", "minimum": 1 },
+    "valid_from": { "type": "string", "format": "date-time" },
+    "supersedes_observation_id": { "type": ["string", "null"] }
+  }
+}

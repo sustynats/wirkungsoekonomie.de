@@ -1,14 +1,16 @@
 import registryData from "@/data/political-jurisdictions.json";
 
 export type JurisdictionType = "FEDERAL" | "STATE" | "EU";
-export type StateLifecycle = "DORMANT" | "PRE_ELECTION_WATCH" | "PROGRAMME_ANALYSIS" | "ELECTION_RESULT" | "COALITION_FORMATION" | "GOVERNMENT_FORMED" | "GOVERNMENT_MONITORING" | "TRANSITION_TO_NEXT_TERM";
+export type GovernmentLifecycle = "DORMANT" | "GOVERNMENT_FORMED" | "GOVERNMENT_MONITORING" | "TRANSITION_TO_NEXT_TERM";
+export type ElectionLifecycle = "DORMANT" | "PRE_ELECTION_WATCH" | "PROGRAMME_ANALYSIS" | "ELECTION_RESULT" | "COALITION_FORMATION" | "GOVERNMENT_FORMED" | "CLOSED";
 
 export type PoliticalJurisdiction = {
   jurisdiction_id: string;
   jurisdiction_type: JurisdictionType;
   name: string;
   active_term_id: string;
-  lifecycle_state: StateLifecycle | string;
+  government_lifecycle_state: GovernmentLifecycle | string;
+  election_cycle_state: ElectionLifecycle | string;
   next_election_date: string | null;
   last_checked_at: string | null;
   source_status: string;
@@ -51,4 +53,14 @@ export function lifecycleLabel(state: string) {
     TRANSITION_TO_NEXT_TERM: "Übergang zur nächsten Wahlperiode",
   };
   return labels[state] ?? "Status offen";
+}
+
+export function governmentLifecycleLabel(state: string) {
+  const labels: Record<string, string> = {
+    DORMANT: "Regierungsmonitor noch nicht aktiv",
+    GOVERNMENT_FORMED: "Neue Regierung gebildet",
+    GOVERNMENT_MONITORING: "Regierungsmonitor aktiv",
+    TRANSITION_TO_NEXT_TERM: "Regierungsübergang",
+  };
+  return labels[state] ?? "Regierungsstatus offen";
 }

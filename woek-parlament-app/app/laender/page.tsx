@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { lifecycleLabel, stateJurisdictions, stateSlug } from "@/lib/autopilot/registry";
+import { governmentLifecycleLabel, lifecycleLabel, stateJurisdictions, stateSlug } from "@/lib/autopilot/registry";
 
 export const metadata = {
   title: "Länder | Wirkungsportal Parlament",
@@ -26,9 +26,10 @@ export default function StatesPage() {
         <div className="state-card-grid">
           {stateJurisdictions.map((jurisdiction) => (
             <article className="state-card" key={jurisdiction.jurisdiction_id}>
-              <p className="status-pill">{lifecycleLabel(jurisdiction.lifecycle_state)}</p>
+              <p className="status-pill">{lifecycleLabel(jurisdiction.election_cycle_state)}</p>
               <h3>{jurisdiction.name}</h3>
-              <p>{jurisdiction.lifecycle_state === "DORMANT" ? "Der Autopilot beobachtet amtliche Wahl- und Regierungsquellen. Ein öffentlicher Wirkungsbestand erscheint erst nach Quellen- und Fachfreigabe." : "Wahl-, Regierungs- und Umsetzungsdaten werden als getrennte Lebenszyklusobjekte aufgebaut und fachlich zu Wirkungsgegenständen verknüpft."}</p>
+              <p>{jurisdiction.election_cycle_state === "DORMANT" ? "Der Autopilot beobachtet amtliche Wahlquellen. Ein öffentlicher Wirkungsbestand erscheint erst nach Quellen- und Fachfreigabe." : "Wahl-, Regierungs- und Umsetzungsdaten werden als getrennte Lebenszyklusobjekte aufgebaut und fachlich zu Wirkungsgegenständen verknüpft."}</p>
+              <p><strong>Regierung:</strong> {governmentLifecycleLabel(jurisdiction.government_lifecycle_state)}</p>
               {jurisdiction.next_election_date ? <p className="state-card-date"><strong>Nächster amtlicher Wahltermin</strong><span>{new Intl.DateTimeFormat("de-DE", { dateStyle: "long" }).format(new Date(`${jurisdiction.next_election_date}T12:00:00`))}</span></p> : <p className="state-card-date"><strong>Wahltermin</strong><span>im Register noch nicht amtlich bestätigt</span></p>}
               <Link className="text-link" href={`/laender/${stateSlug(jurisdiction.jurisdiction_id)}`}>Länderbereich öffnen <span aria-hidden="true">→</span></Link>
             </article>

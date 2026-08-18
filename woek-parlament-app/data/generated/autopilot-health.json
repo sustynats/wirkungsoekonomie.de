@@ -6,11 +6,21 @@
     "federal": { "status": "DEGRADED", "last_run_at": null, "detail": "Noch kein bestätigter gemeinsamer Autopilot-Lauf." },
     "parliament": { "status": "DEGRADED", "last_run_at": null, "detail": "Noch kein bestätigter gemeinsamer Autopilot-Lauf." },
     "states": { "status": "DEGRADED", "last_run_at": null, "detail": "Länderadapter werden quellenweise freigeschaltet." },
-    "eu": { "status": "DEGRADED", "last_run_at": null, "detail": "EU-Adapter befinden sich in der Quellenprüfung." }
+    "eu": { "status": "DEGRADED", "last_run_at": null, "detail": "EU-Adapter befinden sich in der Quellenprüfung." },
+    "observatory": { "status": "DEGRADED", "last_run_at": null, "detail": "Amtliche Veröffentlichungsquellen werden cloudbasiert beobachtet; fachliche EvidenceEvents entstehen nur nach Freigabe." }
   },
   "last_verified_deployment_at": null,
   "open_data_issues": 0,
   "open_fach_reviews": 0,
   "next_election_triggers": [],
-  "next_reality_checks": []
+  "next_reality_checks": [],
+  "observatory": {
+    "last_observation_sync": null,
+    "last_evidence_review": null,
+    "last_reality_check_trigger": null,
+    "open_reality_candidates": 0,
+    "blocked_attributions": 0,
+    "source_failures": 0,
+    "stale_indicators": 0
+  }
 }

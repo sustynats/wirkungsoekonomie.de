@@ -7,9 +7,11 @@ import addFormats from "ajv-formats";
 import {
   nextPoliticalLifecycleState,
   lifecycleStateForElectionCycle,
+  closeTermOnlyAfterOfficialFormation,
   requiresGovernmentMonitoring,
   requiresProgrammeCollection,
 } from "@/lib/autopilot/lifecycle";
+import { parseOfficialStateElectionDates } from "@/lib/autopilot/election-calendar-core";
 
 function compile(name: string) {
   const schema = JSON.parse(readFileSync(path.join(process.cwd(), "data", "autopilot", "contracts", name), "utf8"));
@@ -28,6 +30,50 @@ test("state lifecycle advances only through documented official events", () => {
   assert.equal(requiresGovernmentMonitoring("GOVERNMENT_FORMED"), true);
   assert.equal(lifecycleStateForElectionCycle("PROGRAMMES_REVIEW"), "PROGRAMME_ANALYSIS");
   assert.equal(lifecycleStateForElectionCycle("ELECTION_COMPLETE"), "ELECTION_RESULT");
+  assert.equal(closeTermOnlyAfterOfficialFormation("OFFICIAL_ELECTION_RESULT_FINAL"), false);
+  assert.equal(closeTermOnlyAfterOfficialFormation("NEW_GOVERNMENT_FORMED"), true);
+});
+
+test("government monitoring and election analysis remain independent state axes", () => {
+  const validate = compile("jurisdiction.schema.json");
+  assert.equal(validate({
+    jurisdiction_id: "de-st",
+    jurisdiction_type: "STATE",
+    name: "Sachsen-Anhalt",
+    active_term_id: "st-current",
+    government_lifecycle_state: "GOVERNMENT_MONITORING",
+    election_cycle_state: "PROGRAMME_ANALYSIS",
+    next_election_date: "2026-09-06",
+    monitoring_enabled: true,
+  }), true, JSON.stringify(validate.errors));
+});
+
+test("election documents preserve programme versions and official source hashes", () => {
+  const validate = compile("election-document.schema.json");
+  const record = {
+    document_id: "programme-de-st-party-1-v1",
+    election_cycle_id: "de-st-landtag-2026",
+    jurisdiction_id: "de-st",
+    party_id: "party-1",
+    title: "Wahlprogramm 2026",
+    source_url: "https://example.org/wahlprogramm.pdf",
+    publication_date: "2026-04-01",
+    retrieved_at: "2026-08-18T12:00:00Z",
+    content_hash: "a".repeat(64),
+    version: "1",
+    supersedes_document_id: null,
+    status: "FINAL",
+  };
+  assert.equal(validate(record), true, JSON.stringify(validate.errors));
+  assert.equal(validate({ ...record, party_score: 2 }), false);
+});
+
+test("the official election calendar automatically triggers precisely dated state cycles", () => {
+  const html = `<table><tr><td>2026</td><td>06.09.</td><td>Sachsen-Anhalt</td><td>Landtagswahl</td></tr><tr><td>20.09.</td><td>Berlin</td><td>Wahl zum Abgeordnetenhaus</td></tr></table>`;
+  assert.deepEqual(parseOfficialStateElectionDates(html), [
+    { jurisdiction_id: "de-st", election_date: "2026-09-06", election_type: "Landtagswahl" },
+    { jurisdiction_id: "de-be", election_date: "2026-09-20", election_type: "Wahl zum Abgeordnetenhaus" },
+  ]);
 });
 
 test("election commitments remain source extractions without impact scores", () => {
