@@ -78,9 +78,23 @@ const systemValueLabels: Record<string, string> = {
   AMBIVALENTES_WIRKUNGSPOTENZIAL: "Gegenläufige Wirkungspotenziale und Risiken",
   EU_EXCLUSIVE: "ausschließliche EU-Zuständigkeit",
   EU_SHARED: "geteilte EU-Zuständigkeit",
+  EU_SHARED_INTERNAL_MARKET_ENVIRONMENT_INDUSTRY: "Geteilte EU-Zuständigkeit - Binnenmarkt, Umwelt und Industrie",
   EU_SUPPORTING: "unterstützende EU-Zuständigkeit",
   MEMBER_STATE: "Zuständigkeit der Mitgliedstaaten",
+  EU_COLEGISLATION: "Ordentliches Gesetzgebungsverfahren",
+  MEMBER_STATE_PROCUREMENT_AND_PERMITTING: "Umsetzung durch die Mitgliedstaaten - insbesondere Beschaffung und Genehmigung",
+  REQUIRES_COLEGISLATION: "Ordentliches Gesetzgebungsverfahren erforderlich",
   PASS_WITH_WATCH: "ohne festgestellte Grenzverletzung, weiter beobachten"
+};
+
+const indicatorLabels: Record<string, string> = {
+  low_carbon_material_share: "Anteil CO2-armer Materialien in der betroffenen Beschaffung",
+  material_carbon_intensity: "Reale CO2-Intensität der eingesetzten Materialien",
+  public_procurement_cost: "Kosten der öffentlichen Beschaffung / Total Cost of Ownership",
+  eu_manufacturing_capacity: "Zusätzliche industrielle Produktionskapazität in der EU",
+  supply_concentration: "Importkonzentration und Lieferkettenabhängigkeit",
+  fdi_quality: "Qualität ausländischer Direktinvestitionen, einschließlich Wissens- und Technologietransfer",
+  permit_duration_with_protection: "Genehmigungsdauer bei gleichbleibenden Schutzstandards"
 };
 
 export function caseKindLabel(value: CaseKind) {
@@ -105,12 +119,23 @@ export function verificationLabel(value: ParliamentaryCase["statusVerification"]
  * explanatory sentence received from an import.
  */
 export function humanizeSystemValue(value: string) {
-  const translated = Object.entries(systemValueLabels).reduce(
-    (label, [systemValue, publicLabel]) => label.replaceAll(systemValue, publicLabel),
-    value
-  );
+  const exact = systemValueLabels[value];
+  if (exact) return exact;
+  const translated = Object.entries(systemValueLabels)
+    .sort(([left], [right]) => right.length - left.length)
+    .reduce(
+      (label, [systemValue, publicLabel]) => label.replace(new RegExp(`\\b${systemValue}\\b`, "g"), publicLabel),
+      value
+    );
   return translated.replace(/\b[A-Z][A-Z0-9]*(?:_[A-Z0-9]+)+\b/g, (systemValue) => {
     const words = systemValue.toLocaleLowerCase("de-DE").replaceAll("_", " ");
     return `${words.charAt(0).toLocaleUpperCase("de-DE")}${words.slice(1)}`;
+  }).replace(/\b[a-z][a-z0-9]*(?:_[a-z0-9]+)+\b/g, (systemValue) => {
+    const words = systemValue.replaceAll("_", " ");
+    return `${words.charAt(0).toLocaleUpperCase("de-DE")}${words.slice(1)}`;
   });
+}
+
+export function publicIndicatorLabel(value: string) {
+  return indicatorLabels[value] ?? humanizeSystemValue(value);
 }

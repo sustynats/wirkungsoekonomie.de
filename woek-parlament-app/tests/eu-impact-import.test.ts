@@ -2,6 +2,8 @@ import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import test from "node:test";
+import { projectEuEditorial } from "@/lib/publication/public-editorial-projection.mjs";
+import { humanizeSystemValue, publicIndicatorLabel } from "@/lib/presentation/labels";
 
 const records = readFileSync("data/eu/impact-cases/public-impact-records.jsonl", "utf8").split(/\r?\n/).filter(Boolean).map((line) => JSON.parse(line));
 const meta = JSON.parse(readFileSync("data/eu/impact-cases/public-impact-records-meta.json", "utf8"));
@@ -40,4 +42,25 @@ test("EU public links route through source intermediary pages", () => {
   const component = readFileSync("app/components/eu/EuImpactCase.tsx", "utf8");
   assert.match(component, /sourceDetailHrefForUrl/);
   assert.doesNotMatch(component, /<a[^>]+href=\{source\}/);
+});
+
+test("EU public renderer removes machine values without changing Fach records", () => {
+  const industrialAct = records.find((record) => record.impact_case_id === "EU-IMPACT-2026-002");
+  assert.ok(industrialAct);
+  assert.equal(humanizeSystemValue(industrialAct.competence_scope), "Geteilte EU-Zuständigkeit - Binnenmarkt, Umwelt und Industrie");
+  assert.equal(humanizeSystemValue(industrialAct.implementation_route[0]), "Ordentliches Gesetzgebungsverfahren");
+  assert.equal(humanizeSystemValue(industrialAct.implementation_route[1]), "Umsetzung durch die Mitgliedstaaten - insbesondere Beschaffung und Genehmigung");
+  assert.equal(publicIndicatorLabel("low_carbon_material_share"), "Anteil CO2-armer Materialien in der betroffenen Beschaffung");
+  assert.equal(
+    projectEuEditorial(industrialAct).fields.reality_check_summary,
+    "Noch nicht beobachtbar. Der Reality Check beobachtet dafür den Anteil CO2-armer Materialien in der betroffenen Beschaffung und die reale CO2-Intensität der eingesetzten Materialien.",
+  );
+
+  const renderedValues = [
+    humanizeSystemValue(industrialAct.competence_scope),
+    ...industrialAct.implementation_route.map(humanizeSystemValue),
+    ...industrialAct.key_indicators.map(publicIndicatorLabel),
+    projectEuEditorial(industrialAct).fields.reality_check_summary,
+  ].join(" ");
+  assert.doesNotMatch(renderedValues, /realitycheckstatus\s*=|_[A-Z][A-Z0-9_]{3,}|\b[a-z]+_[a-z0-9_]+\b|---/i);
 });

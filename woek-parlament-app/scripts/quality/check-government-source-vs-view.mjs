@@ -52,6 +52,9 @@ function humanizeSystemValue(value) {
   return String(value).replace(/\b[A-Z][A-Z0-9]*(?:_[A-Z0-9]+)+\b/g, (systemValue) => {
     const words = systemValue.toLocaleLowerCase("de-DE").replaceAll("_", " ");
     return `${words.charAt(0).toLocaleUpperCase("de-DE")}${words.slice(1)}`;
+  }).replace(/\b[a-z][a-z0-9]*(?:_[a-z0-9]+)+\b/g, (systemValue) => {
+    const words = systemValue.replaceAll("_", " ");
+    return `${words.charAt(0).toLocaleUpperCase("de-DE")}${words.slice(1)}`;
   });
 }
 
@@ -124,7 +127,7 @@ function publicFields(record) {
     ["/editorial_evidence_overlay/source_file", record.editorial_evidence_overlay?.source_file],
     ["/editorial_evidence_overlay/source_sha256", record.editorial_evidence_overlay?.source_sha256],
   ];
-  for (const [index, value] of record.missing_structured_fields.entries()) fields.push([`/missing_structured_fields/${index}`, value]);
+  for (const [index, value] of record.missing_structured_fields.entries()) fields.push([`/missing_structured_fields/${index}`, humanizeSystemValue(value)]);
   for (const [index, value] of record.linked_government_action_ids.entries()) fields.push([`/linked_government_action_ids/${index}`, value]);
   return fields.filter(([, value]) => value !== null && value !== undefined && comparable(value).length > 0);
 }

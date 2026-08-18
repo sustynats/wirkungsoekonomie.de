@@ -100,7 +100,7 @@ function GovernmentImpactSearchResult({ item }: { item: SearchableGovernmentImpa
         <h2><Link href={path}>{item.title}</Link></h2>
         <OverviewAssessment assessment={item.assessment} compact />
         <p className="eyebrow" data-woek-process-metadata>Regierungs-Wirkungsanalyse</p>
-        <dl data-woek-process-metadata><div><dt>Analysephase</dt><dd>{item.analysisMode === "IMPACT_REALITY_CHECK" ? "Reality-Check" : "Ex ante"}</dd></div><div><dt>Prüfstand</dt><dd>Fachlich freigegebener WÖkImpactCase</dd></div><div><dt>Materialität</dt><dd>{item.materiality}</dd></div></dl>
+        <dl data-woek-process-metadata><div><dt>Analysephase</dt><dd>{item.analysisMode === "IMPACT_REALITY_CHECK" ? "Reality-Check" : "Ex ante"}</dd></div><div><dt>Prüfstand</dt><dd>Fachlich freigegebener WÖkImpactCase</dd></div><div><dt>Materialität</dt><dd>{humanizeSystemValue(item.materiality)}</dd></div></dl>
       </div>
       <div className="search-result-actions">
         <Link className="text-link" href={path}>Wirkungsanalyse öffnen <span aria-hidden="true">→</span></Link>

@@ -45,6 +45,16 @@ const PUBLIC_ENUM_LABELS = {
   NOT_ASSESSABLE: "Evidenz noch nicht bewertbar",
 };
 
+const PUBLIC_INDICATOR_LABELS = {
+  low_carbon_material_share: "den Anteil CO2-armer Materialien in der betroffenen Beschaffung",
+  material_carbon_intensity: "die reale CO2-Intensität der eingesetzten Materialien",
+  public_procurement_cost: "die Kosten der öffentlichen Beschaffung",
+  eu_manufacturing_capacity: "zusätzliche industrielle Produktionskapazität in der EU",
+  supply_concentration: "Importkonzentration und Lieferkettenabhängigkeit",
+  fdi_quality: "die Qualität ausländischer Direktinvestitionen",
+  permit_duration_with_protection: "die Genehmigungsdauer bei gleichbleibenden Schutzstandards",
+};
+
 const REQUIRED_EDITORIAL_FIELDS = [
   "impact_core_summary",
   "editorial_summary",
@@ -89,7 +99,18 @@ function humanizeSystemValue(value) {
   return replaceEnums(value).replace(/\b[A-Z][A-Z0-9]*(?:_[A-Z0-9]+)+\b/g, (systemValue) => {
     const words = systemValue.toLocaleLowerCase("de-DE").replaceAll("_", " ");
     return `${words.charAt(0).toLocaleUpperCase("de-DE")}${words.slice(1)}`;
+  }).replace(/\b[a-z][a-z0-9]*(?:_[a-z0-9]+)+\b/g, (systemValue) => {
+    const words = systemValue.replaceAll("_", " ");
+    return `${words.charAt(0).toLocaleUpperCase("de-DE")}${words.slice(1)}`;
   });
+}
+
+function cleanRealitySummary(value) {
+  return text(value)
+    .replace(/\s+Quellen\b[\s\S]*$/i, "")
+    .replace(/(?:^|\s)---(?:\s|$)/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function markdownToPlain(value) {
@@ -173,8 +194,8 @@ export function projectGovernmentEditorial(record) {
   const evidenceSummary = text(record?.evidence_summary) || (isFullSchema
     ? firstSentences(record?.evidence_summary_text, 3)
     : sectionSummary(markdown, /(?:^|\s)Evidenz(?:grad|basis)?(?:\s|$)/i) || inlineEvidenceSummary(markdown));
-  const realitySummary = text(record?.editorial_evidence_overlay ? record?.reality_check_summary : "")
-    || sectionSummary(markdown, /Reality.Check|Wirkungsprüfung/i);
+  const realitySummary = cleanRealitySummary(text(record?.editorial_evidence_overlay ? record?.reality_check_summary : "")
+    || sectionSummary(markdown, /Reality.Check|Wirkungsprüfung/i));
   return projectionResult({
     overview_assessment_label: publicEnumLabel(record?.overview_assessment_label),
     impact_core_summary: text(record?.impact_core_summary),
@@ -188,7 +209,13 @@ export function projectGovernmentEditorial(record) {
 export function projectEuEditorial(record) {
   const markdown = text(record?.full_analysis_markdown);
   const evidenceSummary = sectionSummary(markdown, /(?:^|\s)Evidenzgrad(?:\s|$)/i) || inlineEvidenceSummary(markdown);
-  const realitySummary = sectionSummary(markdown, /Reality.Check/i);
+  const indicators = (record?.key_indicators ?? []).slice(0, 2)
+    .map((indicator) => PUBLIC_INDICATOR_LABELS[indicator] ?? humanizeSystemValue(indicator))
+    .filter(Boolean);
+  const realityStatus = publicEnumLabel(record?.reality_check_status);
+  const realitySummary = indicators.length
+    ? `${realityStatus}. Der Reality Check beobachtet dafür ${indicators.join(" und ")}.`
+    : realityStatus;
   return projectionResult({
     overview_assessment_label: publicEnumLabel(record?.overview_assessment_label ?? record?.key_finding),
     impact_core_summary: text(record?.impact_core_summary),

@@ -4,7 +4,7 @@ import { OverviewAssessment } from "@/app/components/OverviewAssessment";
 import { directionLabels, evidenceLabels } from "@/lib/government/impact-cases";
 import { euEditorialProjection, type EuImpactRecord } from "@/lib/eu/impact-cases";
 import { sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
-import { humanizeSystemValue } from "@/lib/presentation/labels";
+import { humanizeSystemValue, publicIndicatorLabel } from "@/lib/presentation/labels";
 
 export function EuImpactCase({ record, compact = false }: { record: EuImpactRecord; compact?: boolean }) {
   const editorial = euEditorialProjection(record);
@@ -30,7 +30,7 @@ export function EuImpactCase({ record, compact = false }: { record: EuImpactReco
     </header>
     {compact ? <Link className="text-link" href={`/eu/wirkungsfaelle/${encodeURIComponent(record.impact_case_id)}`}>Vollständige EU-Wirkungsanalyse öffnen</Link> : <>
       {record.inherited_legislative_file && <div className="notice"><strong>Geerbtes EU-Verfahren</strong><p>Dieser Vorgang stammt aus einer früheren Kommissionsphase und wird der aktuellen Kommission nicht rückwirkend zugerechnet.</p></div>}
-      <section><h3>Datenbedarf für den Reality Check</h3><ul>{record.key_indicators.map((indicator) => <li key={indicator}>{indicator}</li>)}</ul></section>
+      <section><h3>Datenbedarf für den Reality Check</h3><ul>{record.key_indicators.map((indicator) => <li key={indicator}>{publicIndicatorLabel(indicator)}</li>)}</ul></section>
       <section><h3>Quellen</h3><ul>{record.official_sources.map((source) => <li key={source}><Link href={sourceDetailHrefForUrl(source)}>Quellenakte öffnen</Link></li>)}</ul></section>
       <details className="government-full-record government-technical-proof"><summary>Vollständige EU-Fachakte aufklappen</summary><FullAnalysisText source={{ title: record.title, releasedAt: record.analysis_as_of, sourceHash: record.source_release.case_markdown_sha256 ?? "", sourceDocumentHash: record.source_release.markdown_sha256 ?? "", markdown: record.full_analysis_markdown }} /></details>
     </>}
