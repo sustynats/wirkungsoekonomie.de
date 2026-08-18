@@ -136,3 +136,8 @@ test("the remediated Work Reconciliation artifacts share one PASS state and exac
     assert.equal(digest, artifact.sha256, artifact.name);
   }
 });
+
+test("long case-specific German terms cannot widen 320px impact cards", () => {
+  const css = readFileSync("app/globals.css", "utf8");
+  assert.match(css, /\.government-impact-case h2[\s\S]*?overflow-wrap: anywhere;[\s\S]*?hyphens: auto;/);
+});

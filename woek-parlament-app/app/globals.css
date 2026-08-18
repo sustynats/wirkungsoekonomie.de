@@ -312,6 +312,7 @@ h1, h2, h3, h4 { text-wrap: balance; }
 
 .government-impact-list, .government-linked-impact-cases { display: grid; gap: var(--abstand-xl); }
 .government-impact-case { display: grid; gap: var(--abstand-xl); padding: clamp(1.2rem, 3vw, 2rem); border: 1px solid var(--farbe-linie); border-top: 4px solid var(--farbe-aktion); border-radius: var(--radius-karte); background: var(--farbe-flaeche-karte); }
+.government-impact-case h2, .government-impact-case h3, .government-impact-case p, .government-impact-case dd, .government-impact-case li, .open-state, .open-state * { overflow-wrap: anywhere; hyphens: auto; }
 .government-impact-case > header { display: grid; gap: var(--abstand-m); }
 .government-impact-axis { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; border: 1px solid var(--farbe-linie); background: var(--farbe-linie); }
 .government-impact-axis > span { display: flex; min-height: 3.25rem; align-items: center; gap: var(--abstand-xs); padding: var(--abstand-s) var(--abstand-m); background: var(--farbe-flaeche-karte); }
@@ -1318,6 +1319,7 @@ h1, h2, h3, h4 { text-wrap: balance; }
 .footer-nav { display: grid; align-content: start; gap: .52rem; }
 .footer-nav h2 { margin: 0 0 .5rem; color: #f0d28d; font: 700 .78rem/1.3 var(--sans); letter-spacing: .1em; text-transform: uppercase; }
 .footer-nav a { color: #e7edf5; font-weight: 450; text-decoration: none; }
+.footer-nav a { overflow-wrap: anywhere; }
 .footer-nav a:hover, .footer-nav a:focus-visible { color: var(--paper); text-decoration: underline; }
 
 @media (max-width: 880px) {
