@@ -38,6 +38,12 @@ function jaccard(left, right) {
 }
 
 function evidenceExplained(record) {
+  const publicSummary = text(record?.evidence_summary ?? record?.evidence_summary_text);
+  const publicExplanation = text(record?.public_evidence_explanation);
+  if (publicSummary.length >= 60
+    && !GENERIC_PATTERNS.some((pattern) => pattern.test(publicSummary))
+    && !PLACEHOLDER_PATTERNS.some((pattern) => pattern.test(publicSummary))
+    && (publicExplanation.length === 0 || publicExplanation.length >= 60)) return true;
   const summary = record?.raw_record?.evidence_summary;
   if (summary && typeof summary === "object" && [summary.fact_evidence, summary.mechanism_evidence, summary.effect_evidence, summary.uncertainty]
     .every((value) => text(value).length >= 3)) return true;

@@ -42,7 +42,7 @@ function profileAxes(workingAct: PublicWorkingAct): ImpactProfileAxis[] {
  * Every validated review is presented with the same progressive disclosure:
  * an understandable summary first, then its complete public reasoning.
  */
-export function WorkingActExplainer({ workingAct, view = "ueberblick" }: { workingAct: PublicWorkingAct; view?: WorkingActView }) {
+export function WorkingActExplainer({ workingAct, view = "ueberblick", publicEvidenceSummary }: { workingAct: PublicWorkingAct; view?: WorkingActView; publicEvidenceSummary: string }) {
   const detail = workingAct.reviewDetail;
   const editorial = workingAct.editorialSummary;
   const hasDetails = workingAct.changeLevers.length > 0 || workingAct.risks.length > 0 || workingAct.dataGaps.length > 0 || workingAct.counterfactualQuestions.length > 0;
@@ -59,7 +59,7 @@ export function WorkingActExplainer({ workingAct, view = "ueberblick" }: { worki
         <div className="working-act-summary">
           <p className="eyebrow">Prüfstand · {workingActMaturityLabel(workingAct.maturity)}</p>
           <h2 id="working-act-title">Was diese Analyse vor der Entscheidung zeigt</h2>
-          <p>{editorial?.whatIsKnown || workingAct.scopeStatement}</p>
+          <p><strong>Fallbezogene Evidenz:</strong> {publicEvidenceSummary}</p>
           <p className="working-act-potential"><strong>Wirkungspotenzial und Grenze der Aussage:</strong> {workingAct.overallPotential}</p>
           <p className="working-act-boundary"><strong>Noch offen:</strong> {editorial?.whatIsNotYetKnown || editorial?.evidenceBoundary || "Die Akte unterscheidet Wirkungspotenziale, Risiken und beobachtete Wirkung. Eine belastbare Aussage folgt nur, soweit Quellen, Vergleichsfrage und Zurechnung dies tragen."}</p>
         </div>

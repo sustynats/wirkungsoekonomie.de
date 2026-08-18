@@ -1,6 +1,7 @@
 import overrides from "@/data/presentation/overview-assessment-overrides.json";
 import type { ParliamentaryCase } from "@/data/cases";
 import { humanizeSystemValue } from "@/lib/presentation/labels";
+import { isGenericPublicEditorialText, projectParliamentEditorial } from "@/lib/publication/public-editorial-projection.mjs";
 
 export type OverviewAssessmentData = {
   assessmentLabel: string;
@@ -28,6 +29,10 @@ function compact(values: Array<string | undefined>) {
   return values.filter((value): value is string => Boolean(value?.trim())).join(" ");
 }
 
+function normalized(value: string) {
+  return value.toLocaleLowerCase("de-DE").replace(/[^a-z0-9äöüß]+/gi, " ").replace(/\s+/g, " ").trim();
+}
+
 export function parliamentaryOverviewAssessment(item: ParliamentaryCase): OverviewAssessmentData | null {
   const override = assessmentOverrides[item.slug];
   if (override) {
@@ -44,7 +49,7 @@ export function parliamentaryOverviewAssessment(item: ParliamentaryCase): Overvi
 
   if (item.publicAssessment) {
     const assessment = item.publicAssessment;
-    return {
+    const result = {
       assessmentLabel: assessment.category,
       impactCoreSummary: assessment.summary,
       editorialSummary: assessment.rationale.join(" "),
@@ -53,20 +58,21 @@ export function parliamentaryOverviewAssessment(item: ParliamentaryCase): Overvi
       evidenceSummary: compact([assessment.evidenceStatus, assessment.uncertainty]),
       realityCheckSummary: "Ein getrennter Reality-Check ist in dieser Fassung nicht ausgewiesen.",
     };
+    return normalized(result.assessmentLabel) === normalized(result.impactCoreSummary) || [result.impactCoreSummary, result.editorialSummary, result.keyFinding].some(isGenericPublicEditorialText) ? null : result;
   }
 
   const workingAct = item.publicWorkingAct;
   if (!workingAct) return null;
-  const editorial = workingAct.editorialSummary;
+  const projection = projectParliamentEditorial(item as unknown as Record<string, unknown>);
+  if (projection.status !== "PASS") return null;
   const pathDirections = [...new Set((workingAct.reviewDetail?.impactPaths ?? []).map((path) => humanizeSystemValue(path.direction)))];
-  const feedback = workingAct.reviewDetail?.feedback;
   return {
-    assessmentLabel: editorial?.keyStatement ?? workingAct.overallPotential,
-    impactCoreSummary: editorial?.keyStatement ?? workingAct.scopeStatement,
-    editorialSummary: workingAct.overallPotential,
-    keyFinding: workingAct.risks[0] ?? workingAct.changeLevers[0] ?? editorial?.whatIsNotYetKnown ?? workingAct.scopeStatement,
+    assessmentLabel: projection.fields.overview_assessment_label,
+    impactCoreSummary: projection.fields.impact_core_summary,
+    editorialSummary: projection.fields.editorial_summary,
+    keyFinding: projection.fields.key_finding,
     directionLabel: pathDirections.length ? `Getrennte Wirkpfade: ${pathDirections.join(", ")}` : "Keine Einheitsrichtung ausgewiesen; die Wirkpfade bleiben getrennt.",
-    evidenceSummary: compact([editorial?.whatIsKnown, editorial?.evidenceBoundary, editorial?.whatIsNotYetKnown]) || "Evidenzgrenze in der Fachakte ausgewiesen.",
-    realityCheckSummary: feedback?.interpretation || feedback?.currentStatus || "Noch kein getrennt fachlich freigegebener Reality-Check.",
+    evidenceSummary: projection.fields.evidence_summary,
+    realityCheckSummary: projection.fields.reality_check_summary,
   };
 }

@@ -6,6 +6,7 @@ import path from "node:path";
 import Ajv2020 from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
 import { assessEditorialQuality, findGenericEditorialPatterns } from "../lib/publication/editorial-quality.mjs";
+import { projectGovernmentEditorial } from "../lib/publication/public-editorial-projection.mjs";
 
 const projectRoot = process.cwd();
 const fachRoot = process.env.WOEK_GOVERNMENT_FACHRELEASE_ROOT
@@ -16,6 +17,10 @@ const importedAt = process.env.WOEK_IMPORT_TIMESTAMP ?? new Date().toISOString()
 
 const waves = ["1", "2", "3", "4", "5", "6", "7A", "7B", "8", "9", "10", "11"];
 const editorialManifestName = "GOVERNMENT-EDITORIAL-LAYER-MANIFEST-2.0-2026-08-18.json";
+const editorialBackfillFiles = [
+  "GOVERNMENT-EDITORIAL-EVIDENCE-BACKFILL-2026-08-18-14H-B01.jsonl",
+  "GOVERNMENT-EDITORIAL-EVIDENCE-BACKFILL-2026-08-18-14H-B02.jsonl",
+];
 
 function sha256(value) {
   return createHash("sha256").update(value).digest("hex");
@@ -197,11 +202,43 @@ function loadEditorialLayer() {
   return { byId, manifest, sourceHashes, manifestHash: sha256(readFileSync(manifestPath, "utf8")) };
 }
 
+function loadEditorialBackfill() {
+  const byId = new Map();
+  const sourceHashes = {};
+  for (const fileName of editorialBackfillFiles) {
+    const file = path.join(analysisRoot, fileName);
+    const content = readFileSync(file, "utf8");
+    sourceHashes[fileName] = sha256(content);
+    for (const record of readJsonl(file)) {
+      if (record.fach_status !== "APPROVED_FOR_PUBLIC_IMPORT") {
+        throw new Error(`Nicht freigegebener Editorial-Backfill: ${record.impact_case_id}`);
+      }
+      if (record.editorial_quality_gate !== "PASS") {
+        throw new Error(`Editorial-Gate des Backfills nicht gruen: ${record.impact_case_id}`);
+      }
+      if (record.recommendation_record_created !== false) {
+        throw new Error(`Editorial-Backfill darf keine Recommendation erzeugen: ${record.impact_case_id}`);
+      }
+      for (const field of [
+        "overview_assessment_label", "impact_core_summary", "editorial_summary", "key_finding",
+        "evidence_summary", "reality_check_summary", "public_evidence_explanation",
+      ]) {
+        if (!String(record[field] ?? "").trim()) throw new Error(`Backfill-Pflichtfeld fehlt: ${record.impact_case_id} / ${field}`);
+      }
+      if (byId.has(record.impact_case_id)) throw new Error(`Doppelte Backfill-ID: ${record.impact_case_id}`);
+      byId.set(record.impact_case_id, { ...record, source_file: fileName, source_sha256: sourceHashes[fileName] });
+    }
+  }
+  if (byId.size !== 19) throw new Error(`Editorial-Backfill-Coverage ${byId.size} statt 19`);
+  return { byId, sourceHashes };
+}
+
 const schema = JSON.parse(readFileSync(path.join(outputRoot, "WOEK-IMPACT-CASE-SCHEMA-2.0.1.json"), "utf8"));
 const ajv = new Ajv2020({ allErrors: true, strict: false });
 addFormats(ajv);
 const validateFull = ajv.compile(schema);
 const editorialLayer = loadEditorialLayer();
+const editorialBackfill = loadEditorialBackfill();
 
 const records = [];
 const importAudit = [];
@@ -254,6 +291,7 @@ for (const wave of waves) {
     const profile = fullSchemaValid ? "FULL_SCHEMA_2_0_1" : "VERIFIED_FACH_RELEASE_COMPACT";
     const editorial = editorialLayer.byId.get(raw.impact_case_id);
     if (!editorial) throw new Error(`Fuehrender Editorial-Layer fehlt: ${raw.impact_case_id}`);
+    const backfill = editorialBackfill.byId.get(raw.impact_case_id);
 
     const embeddedIds = [...new Set(embeddedImpactCaseIds(fullAnalysisMarkdown))];
     for (const embeddedId of embeddedIds) {
@@ -270,12 +308,12 @@ for (const wave of waves) {
       : ["competence_review", "legal_and_rights_review", "mpd_mapping", "sdg_mapping", "sdg_plus_mapping", "structured_boundary_review", "structured_data_needs", "structured_evidence_summary"];
     const competenceReviewStatus = raw.scope?.competence_note ? "REVIEWED_CONCRETE" : "NOT_STRUCTURED";
     const publicAnalysisDepth = missingStructuredFields.length === 0 ? "FULL_STRUCTURED" : "LIMITED_FACH_RECORD";
-    const realitySummary = fullSchemaValid
+    const realitySummary = backfill?.reality_check_summary ?? (fullSchemaValid
       ? `${mapReality(raw.reality_check)}. ${raw.reality_check?.attribution ?? "Eine Zurechnung ist nicht als belegt ausgewiesen."}`
-      : `${mapReality(raw.reality_check)}. Der kompakte Fachdatensatz enthält noch keine vollständig strukturierte Reality-Check- und Zurechnungsebene.`;
-    const evidenceSummaryText = fullSchemaValid
+      : `${mapReality(raw.reality_check)}. Der kompakte Fachdatensatz enthält noch keine vollständig strukturierte Reality-Check- und Zurechnungsebene.`);
+    const evidenceSummaryText = backfill?.evidence_summary ?? (fullSchemaValid
       ? [raw.evidence_summary.fact_evidence, raw.evidence_summary.mechanism_evidence, raw.evidence_summary.effect_evidence, raw.evidence_summary.uncertainty].join(" ")
-      : `Fachlicher Evidenzcode: ${String(raw.evidence ?? "NOT_ASSESSABLE")}. Die vollständige strukturierte Trennung von Fakt-, Mechanismus- und Wirkungsevidenz ist in dieser kompakten Übergabe nicht enthalten.`;
+      : `Fachlicher Evidenzcode: ${String(raw.evidence ?? "NOT_ASSESSABLE")}. Die vollständige strukturierte Trennung von Fakt-, Mechanismus- und Wirkungsevidenz ist in dieser kompakten Übergabe nicht enthalten.`);
 
     const normalizedRecord = {
       record_profile: profile,
@@ -291,7 +329,7 @@ for (const wave of waves) {
       materiality: typeof raw.materiality === "object" ? raw.materiality.level : raw.materiality,
       overall_character: String(overallCharacter),
       primary_direction: primaryDirection,
-      overview_assessment_label: overviewAssessmentLabel(primaryDirection, overallCharacter),
+      overview_assessment_label: backfill?.overview_assessment_label ?? overviewAssessmentLabel(primaryDirection, overallCharacter),
       evidence_level: evidence,
       evidence_summary_text: evidenceSummaryText,
       implementation_status: raw.scope?.implementation_state ?? raw.implementation_state ?? raw.status ?? "OPEN",
@@ -303,9 +341,12 @@ for (const wave of waves) {
         direction_dependencies: fullSummary.direction_dependencies ?? "",
         measurement_priority: fullSummary.measurement_priority ?? stringValue(raw.measurement_priority ?? raw.monitoring),
       },
-      impact_core_summary: editorial.impact_core_summary,
-      editorial_summary: editorial.editorial_summary,
-      key_finding: editorial.key_finding,
+      impact_core_summary: backfill?.impact_core_summary ?? editorial.impact_core_summary,
+      editorial_summary: backfill?.editorial_summary ?? editorial.editorial_summary,
+      key_finding: backfill?.key_finding ?? editorial.key_finding,
+      evidence_summary: backfill?.evidence_summary ?? null,
+      public_evidence_explanation: backfill?.public_evidence_explanation ?? null,
+      boundary_review_note: backfill?.boundary_review_note ?? null,
       public_analysis_depth: publicAnalysisDepth,
       missing_structured_fields: missingStructuredFields,
       competence_review_status: competenceReviewStatus,
@@ -324,6 +365,14 @@ for (const wave of waves) {
         manifest_sha256: editorialLayer.manifestHash,
         layer_status: editorialLayer.manifest.status,
       },
+      editorial_evidence_overlay: backfill ? {
+        source_file: backfill.source_file,
+        source_sha256: backfill.source_sha256,
+        editorial_backfill_version: backfill.editorial_backfill_version,
+        fach_status: backfill.fach_status,
+        source_record_ref: backfill.source_record_ref,
+        editorial_source_ref: backfill.editorial_source_ref,
+      } : null,
       source_release: {
         jsonl_file: jsonName,
         jsonl_sha256: sha256(jsonContent),
@@ -335,10 +384,13 @@ for (const wave of waves) {
       raw_record: raw,
     };
     const editorialQuality = assessEditorialQuality(normalizedRecord);
+    const publicEditorialProjection = projectGovernmentEditorial(normalizedRecord);
+    const publicationApproved = editorialQuality.status === "PASS" && publicEditorialProjection.status === "PASS";
     records.push({
       ...normalizedRecord,
-      publication_status: editorialQuality.status === "PASS" ? "APPROVED" : "BLOCKED_EDITORIAL_QUALITY",
+      publication_status: publicationApproved ? "APPROVED" : "BLOCKED_PUBLIC_EDITORIAL_QUALITY",
       editorial_quality: editorialQuality,
+      public_editorial_projection: publicEditorialProjection,
     });
     importAudit.push({
       impact_case_id: raw.impact_case_id,
@@ -347,8 +399,9 @@ for (const wave of waves) {
       full_schema_valid: fullSchemaValid,
       markdown_section_found: true,
       fach_content_preserved: true,
-      publication_status: editorialQuality.status === "PASS" ? "APPROVED" : "BLOCKED_EDITORIAL_QUALITY",
+      publication_status: publicationApproved ? "APPROVED" : "BLOCKED_PUBLIC_EDITORIAL_QUALITY",
       editorial_quality: editorialQuality,
+      public_editorial_projection: publicEditorialProjection,
       source_file: jsonName,
     });
   }
@@ -375,7 +428,9 @@ const meta = {
   editorial_layer_coverage: editorialLayer.byId.size,
   editorial_layer_manifest: editorialManifestName,
   editorial_layer_source_hashes: editorialLayer.sourceHashes,
-  note: "Alle 63 Fachdatensätze bleiben verlustfrei erhalten. Öffentlich als fertige WÖk-Analyse erscheinen nur Fälle, die zusätzlich das redaktionelle P0-Gate bestehen. Nicht bestandene Fälle verbleiben mit vollständigem Fachtext im Review-Store; CodeX erzeugt keine Ersatztexte.",
+  editorial_evidence_backfill_count: editorialBackfill.byId.size,
+  editorial_evidence_backfill_source_hashes: editorialBackfill.sourceHashes,
+  note: "Alle 63 Fachdatensätze bleiben verlustfrei erhalten. Öffentlich als fertige WÖk-Analyse erscheinen nur Fälle, die zusätzlich das fachliche und das gerenderte redaktionelle P0-Gate bestehen. Nicht bestandene Fälle verbleiben mit vollständigem Fachtext im Review-Store; CodeX erzeugt keine Ersatztexte.",
 };
 
 writeJsonl(path.join(outputRoot, "public-impact-records.jsonl"), publicRecords);

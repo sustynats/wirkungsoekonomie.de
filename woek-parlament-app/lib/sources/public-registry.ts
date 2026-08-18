@@ -9,6 +9,7 @@ import { directionLabels, evidenceLabels, getPublicImpactCases } from "@/lib/gov
 import { getGovernmentPublicData, sourceFunctionLabels } from "@/lib/government/public-data";
 import { listPublicEvidenceEvents } from "@/lib/observatory/public-data";
 import { getEuImpactCases } from "@/lib/eu/impact-cases";
+import { parliamentaryOverviewAssessment } from "@/lib/presentation/overview-assessment";
 import { isSafePublicSourceUrl, sourceDetailHrefForUrl, sourceSlugForCanonicalUrl } from "@/lib/sources/url";
 
 export { isSafePublicSourceUrl, sourceDetailHrefForUrl, sourceSlugForCanonicalUrl } from "@/lib/sources/url";
@@ -166,6 +167,7 @@ function publishedStaticCaseSources(): StaticPublicSource[] {
   );
 
   for (const item of publicCases) {
+    const editorialAssessment = parliamentaryOverviewAssessment(item);
     const completeSourceManifest = item.publicWorkingAct?.fullReview?.sourceManifest ?? [];
     const sources = [
       ...item.sources,
@@ -196,9 +198,9 @@ function publishedStaticCaseSources(): StaticPublicSource[] {
         locations: [],
         note: source.note || null,
         caseHref: `/entscheidungen/${item.slug}`,
-        analysisSummary: item.publicWorkingAct?.editorialSummary?.keyStatement ?? item.summary,
-        analysisDirection: item.publicWorkingAct?.overallPotential ?? null,
-        evidenceLevel: item.publicWorkingAct?.editorialSummary?.evidenceBoundary ?? item.analysisStatus,
+        analysisSummary: editorialAssessment?.editorialSummary ?? "WÖk-Analyse noch nicht redaktionell veröffentlicht.",
+        analysisDirection: editorialAssessment?.assessmentLabel ?? null,
+        evidenceLevel: editorialAssessment?.evidenceSummary ?? null,
       });
       grouped.set(slug, entry);
     }
@@ -218,7 +220,7 @@ function publishedStaticCaseSources(): StaticPublicSource[] {
     versionLabel: null,
     sourceHash: null,
     temporalClass: "CURRENT_REFERENCE",
-    abstract: "Amtliche Primärquelle, die in einem veröffentlichten Wirkungscheck als Sachverhalt oder Dokumentfassung nachgewiesen wird.",
+    abstract: null,
     usages: entry.usages
   }));
 }
@@ -517,7 +519,7 @@ function governmentImpactSources(): StaticPublicSource[] {
           versionLabel: `In Analyseversion ${impact.analysis_version} dokumentiert`,
           sourceHash: null,
           temporalClass: role.role === "EX_POST_EVIDENCE" ? "PUBLISHED_AFTER_DECISION" : "AVAILABLE_AT_DECISION_TIME",
-          abstract: curated?.summary ?? `${role.summary} Eine verifizierte inhaltliche Quellenzusammenfassung liegt für diese URL noch nicht vor; die Quelle bleibt deshalb nur mit ihrer nachgewiesenen Funktion sichtbar.`,
+          abstract: curated?.summary ?? null,
           usages: [usage],
         });
       }

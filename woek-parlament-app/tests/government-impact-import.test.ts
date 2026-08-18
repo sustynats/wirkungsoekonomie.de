@@ -15,8 +15,9 @@ test("all 63 fachliche government ImpactCases are preserved across public and re
   assert.equal(reviewRecords.length, meta.impact_cases_blocked_editorial_quality);
   assert.equal(records.length + reviewRecords.length, 63);
   assert.equal(meta.impact_cases_total, 63);
-  assert.equal(meta.impact_cases_published, 44);
-  assert.equal(meta.impact_cases_blocked_editorial_quality, 19);
+  assert.equal(meta.impact_cases_published, 53);
+  assert.equal(meta.impact_cases_blocked_editorial_quality, 10);
+  assert.equal(meta.editorial_evidence_backfill_count, 19);
   assert.equal(meta.impact_cases_full_schema_2_0_1, 6);
   assert.equal(meta.impact_cases_compact_source_preserved, 57);
   assert.equal(meta.fach_content_loss, 0);
@@ -43,14 +44,22 @@ test("each public ImpactCase retains raw data, full Fachtext and release hashes"
   }
 });
 
-test("editorially incomplete Fachrecords remain lossless but cannot enter the public analysis store", () => {
+test("records without a case-specific public evidence projection remain lossless and fail closed", () => {
   for (const record of reviewRecords) {
-    assert.equal(record.publication_status, "BLOCKED_EDITORIAL_QUALITY");
-    assert.equal(record.editorial_quality.status, "FAIL");
-    assert.ok(record.editorial_quality.failed.length > 0);
+    assert.equal(record.publication_status, "BLOCKED_PUBLIC_EDITORIAL_QUALITY");
+    assert.equal(record.public_editorial_projection.status, "PUBLICATION_REVIEW_REQUIRED");
+    assert.ok(record.public_editorial_projection.failed.length > 0);
     assert.ok(record.full_analysis_markdown.length > 100);
     assert.equal(hash(record.full_analysis_markdown), record.source_release.case_markdown_sha256);
   }
+});
+
+test("all 19 approved backfill overlays are exact, additive and public", () => {
+  const overlays = records.filter((record) => record.editorial_evidence_overlay);
+  assert.equal(overlays.length, 19);
+  assert.ok(overlays.every((record) => record.editorial_evidence_overlay.fach_status === "APPROVED_FOR_PUBLIC_IMPORT"));
+  assert.ok(overlays.every((record) => record.evidence_summary.length >= 60));
+  assert.ok(overlays.every((record) => record.public_evidence_explanation.length >= 60));
 });
 
 test("full-schema cases are exact projections and compact cases are not silently upgraded", () => {

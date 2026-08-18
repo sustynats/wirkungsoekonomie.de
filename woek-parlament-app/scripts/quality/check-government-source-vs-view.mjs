@@ -2,6 +2,7 @@
 
 import { readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
+import { projectGovernmentEditorial, publicEnumLabel } from "../../lib/publication/public-editorial-projection.mjs";
 
 const baseUrl = (process.env.WOEK_SOURCE_VS_VIEW_BASE_URL ?? "http://localhost:3000").replace(/\/$/, "");
 const outputFile = process.env.WOEK_SOURCE_VS_VIEW_REPORT ?? path.join(process.cwd(), "data", "autopilot", "audit", "2.3-remediated", "SOURCE-VS-VIEW-2.3-FULL.json");
@@ -26,25 +27,28 @@ function comparable(value) {
 }
 
 function publicFields(record) {
+  const editorial = projectGovernmentEditorial(record);
+  if (editorial.status !== "PASS") return [["/public_editorial_projection", "PUBLICATION_REVIEW_REQUIRED"]];
   const fields = [
     ["/impact_case_id", record.impact_case_id], ["/title", record.title], ["/record_profile", record.record_profile],
-    ["/schema_validation", record.schema_validation], ["/schema_id", record.schema_id], ["/analysis_mode", record.analysis_mode],
-    ["/publication_analysis_status", record.publication_analysis_status], ["/publication_status", record.publication_status],
-    ["/analysis_version", record.analysis_version], ["/analysis_as_of", record.analysis_as_of], ["/materiality", record.materiality],
-    ["/overall_character", record.overall_character], ["/primary_direction", record.primary_direction], ["/overview_assessment_label", record.overview_assessment_label], ["/evidence_level", record.evidence_level],
-    ["/evidence_summary_text", record.evidence_summary_text], ["/implementation_status", record.implementation_status],
-    ["/impact_summary/public_summary", record.impact_summary.public_summary], ["/impact_summary/central_lever", record.impact_summary.central_lever],
+    ["/schema_validation", record.schema_validation], ["/analysis_version", record.analysis_version], ["/analysis_as_of", record.analysis_as_of],
+    ["/materiality", record.materiality], ["/primary_direction", record.primary_direction], ["/evidence_level", record.evidence_level],
     ["/impact_summary/strongest_positive_potential", record.impact_summary.strongest_positive_potential],
     ["/impact_summary/main_risk_or_tradeoff", record.impact_summary.main_risk_or_tradeoff],
     ["/impact_summary/direction_dependencies", record.impact_summary.direction_dependencies],
     ["/impact_summary/measurement_priority", record.impact_summary.measurement_priority],
-    ["/impact_core_summary", record.impact_core_summary], ["/editorial_summary", record.editorial_summary], ["/key_finding", record.key_finding],
+    ["/overview_assessment_label", editorial.fields.overview_assessment_label],
+    ["/impact_core_summary", editorial.fields.impact_core_summary], ["/editorial_summary", editorial.fields.editorial_summary],
+    ["/evidence_summary", editorial.fields.evidence_summary], ["/key_finding", editorial.fields.key_finding],
+    ["/reality_check_summary", editorial.fields.reality_check_summary],
+    ["/public_evidence_explanation", record.public_evidence_explanation ? publicEnumLabel(record.public_evidence_explanation) : null], ["/boundary_review_note", record.boundary_review_note ? publicEnumLabel(record.boundary_review_note) : null],
     ["/public_analysis_depth", record.public_analysis_depth], ["/competence_review_status", record.competence_review_status],
     ["/competence_status", record.competence_status], ["/boundary_status", record.boundary_status],
-    ["/reality_check_status", record.reality_check_status], ["/reality_check_summary", record.reality_check_summary],
-    ["/recommendation_status", record.recommendation_status], ["/source_release/jsonl_file", record.source_release.jsonl_file],
+    ["/reality_check_status", record.reality_check_status], ["/recommendation_status", record.recommendation_status], ["/source_release/jsonl_file", record.source_release.jsonl_file],
     ["/source_release/jsonl_sha256", record.source_release.jsonl_sha256], ["/source_release/markdown_file", record.source_release.markdown_file],
     ["/source_release/markdown_sha256", record.source_release.markdown_sha256], ["/source_release/case_markdown_sha256", record.source_release.case_markdown_sha256],
+    ["/editorial_evidence_overlay/source_file", record.editorial_evidence_overlay?.source_file],
+    ["/editorial_evidence_overlay/source_sha256", record.editorial_evidence_overlay?.source_sha256],
   ];
   for (const [index, value] of record.missing_structured_fields.entries()) fields.push([`/missing_structured_fields/${index}`, value]);
   for (const [index, value] of record.linked_government_action_ids.entries()) fields.push([`/linked_government_action_ids/${index}`, value]);
@@ -101,7 +105,9 @@ for (const alias of aliases) {
   const response = await fetch(`${baseUrl}/regierung/wirkungsanalysen/${encodeURIComponent(alias.alias_id)}`, { redirect: "manual", headers: requestHeaders });
   const text = response.status === 200 ? comparable(decodeHtml(await response.text())) : "";
   const canonical = records.find((record) => record.impact_case_id === alias.canonical_impact_case_id);
-  const status = response.status === 200 && canonical && text.includes(comparable(canonical.title)) ? "PASS" : "FAIL";
+  const status = canonical
+    ? (response.status === 200 && text.includes(comparable(canonical.title)) ? "PASS" : "FAIL")
+    : (response.status === 404 ? "EXCLUDED_CANONICAL_NOT_PUBLIC" : "FAIL");
   if (status === "FAIL") failures.push(`${alias.alias_id}: Aliasauflösung fehlgeschlagen`);
   aliasResults.push({ alias_id: alias.alias_id, canonical_impact_case_id: alias.canonical_impact_case_id, http_status: response.status, status });
 }

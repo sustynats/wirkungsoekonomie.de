@@ -65,7 +65,22 @@ const systemValueLabels: Record<string, string> = {
   DECISION_CONFIRMED: "Entscheidung bestätigt",
   DECISION_MOSTLY_CONFIRMED: "Entscheidung überwiegend bestätigt",
   JUSTIFIABLE_AT_TIME_NOT_CONFIRMED_EX_POST: "damals vertretbar, heute nicht bestätigt",
-  ALTERNATIVE_PREFERABLE: "Alternative vorzugswürdig"
+  ALTERNATIVE_PREFERABLE: "Alternative vorzugswürdig",
+  POSITIVE_POTENTIAL: "Positives Wirkungspotenzial",
+  NEGATIVE_RISK: "Materielles Wirkungsrisiko",
+  AMBIVALENT: "Gegenläufige Wirkungsrichtungen",
+  "OPEN-not-neutral": "Offen ist nicht neutral",
+  OPEN: "Wirkungseinordnung noch offen",
+  PORTFOLIO_DISAGGREGATION_REQUIRED: "Wirkung nur auf Ebene der Einzelmaßnahmen belastbar bewertbar",
+  NO_ROBUST_OVERALL_DIRECTION: "Keine belastbare einheitliche Wirkungsrichtung",
+  POSITIVES_WIRKUNGSPOTENZIAL: "Positives Wirkungspotenzial",
+  UEBERWIEGEND_POSITIVES_WIRKUNGSPOTENZIAL: "Überwiegend positives Wirkungspotenzial",
+  AMBIVALENTES_WIRKUNGSPOTENZIAL: "Gegenläufige Wirkungspotenziale und Risiken",
+  EU_EXCLUSIVE: "ausschließliche EU-Zuständigkeit",
+  EU_SHARED: "geteilte EU-Zuständigkeit",
+  EU_SUPPORTING: "unterstützende EU-Zuständigkeit",
+  MEMBER_STATE: "Zuständigkeit der Mitgliedstaaten",
+  PASS_WITH_WATCH: "ohne festgestellte Grenzverletzung, weiter beobachten"
 };
 
 export function caseKindLabel(value: CaseKind) {
@@ -90,8 +105,12 @@ export function verificationLabel(value: ParliamentaryCase["statusVerification"]
  * explanatory sentence received from an import.
  */
 export function humanizeSystemValue(value: string) {
-  return Object.entries(systemValueLabels).reduce(
+  const translated = Object.entries(systemValueLabels).reduce(
     (label, [systemValue, publicLabel]) => label.replaceAll(systemValue, publicLabel),
     value
   );
+  return translated.replace(/\b[A-Z][A-Z0-9]*(?:_[A-Z0-9]+)+\b/g, (systemValue) => {
+    const words = systemValue.toLocaleLowerCase("de-DE").replaceAll("_", " ");
+    return `${words.charAt(0).toLocaleUpperCase("de-DE")}${words.slice(1)}`;
+  });
 }

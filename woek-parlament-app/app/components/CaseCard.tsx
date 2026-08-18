@@ -12,7 +12,7 @@ export function CaseCard({ item }: { item: ParliamentaryCase }) {
   return (
     <article className="case-card">
       <h3><Link href={`/entscheidungen/${item.slug}`}>{item.plainTitle}</Link></h3>
-      {assessment ? <OverviewAssessment assessment={assessment} compact /> : <p>{item.summary}</p>}
+      {assessment ? <OverviewAssessment assessment={assessment} compact /> : <div className="fact-only-state"><p className="eyebrow">Faktenakte</p><p>{item.whatIsDecided}</p><p><strong>WÖk-Analyse noch nicht redaktionell veröffentlicht.</strong></p></div>}
       <div className="case-card-topline" aria-label="Prozess- und Prüfinformationen">
         <CaseTypeMark kind={item.kind} maturity={item.publicWorkingAct?.maturity} compact />
         <span className="chip chip--phase">{materialityLabel(item.materiality)}</span>

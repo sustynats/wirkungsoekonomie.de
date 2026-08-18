@@ -25,14 +25,14 @@ export default async function SourceDetailPage({ params }: { params: Promise<{ s
         <div>
           <p className="eyebrow">{sourceCategoryLabel[source.category]}</p>
           <h1>{source.title}</h1>
-          <p className="lead">{source.abstract ?? "Diese Seite dokumentiert die veröffentlichte Quelle und ihre nachvollziehbare Verwendung im Wirkungsportal."}</p>
+          <p className="lead">{source.abstract ?? "Noch keine fachlich geprüfte Inhaltszusammenfassung veröffentlicht."}</p>
         </div>
         <a className="button button-primary" href={source.canonicalUrl} target="_blank" rel="noreferrer">Originalquelle öffnen ↗</a>
       </header>
       <div className="source-detail-grid">
         <section className="decision-section">
           <h2>Kurz zusammengefasst</h2>
-          <p>{source.abstract ?? "Für diese Quelle liegt noch keine fachlich geprüfte Inhaltszusammenfassung vor. Sie bleibt deshalb nur als Quellensteckbrief sichtbar und trägt keine eigenständige Bewertung."}</p>
+          <p>{source.abstract ?? "Noch keine fachlich geprüfte Inhaltszusammenfassung veröffentlicht. Der Quellensteckbrief dokumentiert bis dahin ausschließlich Herkunft, Fassung und Verwendung."}</p>
           <h3>Quellensteckbrief</h3>
           <dl className="source-facts">
             <div><dt>Herausgebende Stelle</dt><dd>{source.institution}</dd></div>

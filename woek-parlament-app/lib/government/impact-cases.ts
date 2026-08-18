@@ -5,6 +5,7 @@ import { readFileSync } from "node:fs";
 import path from "node:path";
 import type { ImpactCaseHistoryEntry, WoeKImpactCase } from "@/lib/government/daily-impact-ingest-core";
 import { assessEditorialQuality, type EditorialAssessment } from "@/lib/publication/editorial-quality.mjs";
+import { projectGovernmentEditorial, type PublicEditorialProjection } from "@/lib/publication/public-editorial-projection.mjs";
 export type { WoeKImpactCase } from "@/lib/government/daily-impact-ingest-core";
 
 export type PublicGovernmentImpactRecord = {
@@ -24,6 +25,9 @@ export type PublicGovernmentImpactRecord = {
   overview_assessment_label: string;
   evidence_level: "HIGH" | "MEDIUM" | "LOW" | "NOT_ASSESSABLE";
   evidence_summary_text: string;
+  evidence_summary?: string | null;
+  public_evidence_explanation?: string | null;
+  boundary_review_note?: string | null;
   implementation_status: string;
   impact_summary: {
     public_summary: string;
@@ -63,6 +67,14 @@ export type PublicGovernmentImpactRecord = {
     manifest_sha256: string;
     layer_status: string;
   };
+  editorial_evidence_overlay?: {
+    source_file: string;
+    source_sha256: string;
+    editorial_backfill_version: string;
+    fach_status: "APPROVED_FOR_PUBLIC_IMPORT";
+    source_record_ref: string;
+    editorial_source_ref: string;
+  } | null;
   raw_record: WoeKImpactCase | Record<string, unknown>;
 };
 
@@ -79,6 +91,8 @@ export type ImpactImportMeta = {
   editorial_layer_coverage: number;
   editorial_layer_manifest: string;
   editorial_layer_source_hashes: Record<string, string>;
+  editorial_evidence_backfill_count: number;
+  editorial_evidence_backfill_source_hashes: Record<string, string>;
   note: string;
 };
 
@@ -101,11 +115,19 @@ export const getPublicImpactCases = cache(() => {
     for (const record of daily) {
       if (record.editorial_quality.status === "PASS") byId.set(record.impact_case_id, record);
     }
-    return [...byId.values()];
+    return [...byId.values()].filter((record) => projectGovernmentEditorial(record as unknown as Record<string, unknown>).status === "PASS");
   } catch {
-    return records;
+    return records.filter((record) => projectGovernmentEditorial(record as unknown as Record<string, unknown>).status === "PASS");
   }
 });
+
+export const getGovernmentEditorialExclusions = cache(() => readJsonl<PublicGovernmentImpactRecord>("public-impact-records.jsonl")
+  .map((record) => ({ record, projection: projectGovernmentEditorial(record as unknown as Record<string, unknown>) }))
+  .filter(({ projection }) => projection.status !== "PASS"));
+
+export function governmentEditorialProjection(record: PublicGovernmentImpactRecord): PublicEditorialProjection {
+  return projectGovernmentEditorial(record as unknown as Record<string, unknown>);
+}
 export const getImpactImportMeta = cache(() => readJson<ImpactImportMeta>("public-impact-records-meta.json"));
 
 export const getPublicImpactCaseHistory = cache(() => {

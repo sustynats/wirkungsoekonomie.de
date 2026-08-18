@@ -121,7 +121,7 @@ function CaseSearchResult({ item }: { item: SearchableCase }) {
       <div>
         <p className="eyebrow">{TYPE_LABELS[item.kind]}</p>
         <h2><Link href={path}>{item.title}</Link></h2>
-        {item.assessment ? <OverviewAssessment assessment={item.assessment} compact /> : <p>{item.summary}</p>}
+        {item.assessment ? <OverviewAssessment assessment={item.assessment} compact /> : <div className="fact-only-state"><p className="eyebrow">Faktenakte</p><p>{item.whatIsDecided}</p><p><strong>WÖk-Analyse noch nicht redaktionell veröffentlicht.</strong></p></div>}
         <dl><div><dt>Parlamentarischer Status</dt><dd>{humanizeSystemValue(item.parliamentaryStatus)}</dd></div><div><dt>Stand der WÖk-Analyse</dt><dd>{EDITORIAL_LABELS[item.editorialStatus]}</dd></div><div><dt>Prüfrelevanz</dt><dd>{materialityLabel(item.materiality)}</dd></div><div><dt>Quellenstatus</dt><dd>{SOURCE_LABELS[item.statusVerification]}</dd></div></dl>
       </div>
       <div className="search-result-actions">

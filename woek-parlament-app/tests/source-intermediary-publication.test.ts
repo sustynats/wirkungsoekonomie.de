@@ -33,5 +33,6 @@ test("the source registry retains source summaries and analysis reverse usage", 
   assert.match(registry, /curatedSourceSummaries/);
   assert.match(registry, /analysisSummary/);
   assert.match(registry, /caseHref/);
-  assert.match(registry, /Eine verifizierte inhaltliche Quellenzusammenfassung liegt/);
+  assert.match(registry, /curated\?\.summary \?\? null/);
+  assert.match(read("app/quellen/[slug]/page.tsx"), /Noch keine fachlich geprüfte Inhaltszusammenfassung veröffentlicht/);
 });

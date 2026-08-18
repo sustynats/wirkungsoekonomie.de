@@ -40,8 +40,8 @@ test("ASSESSMENT_PRECEDES_PROCESS_METADATA", () => {
 });
 
 test("EDITORIAL_SUMMARY_IS_CASE_SPECIFIC", () => {
-  assert.match(governmentCard, /editorialSummary: record\.editorial_summary/);
-  assert.match(euCard, /editorialSummary: record\.editorial_summary/);
+  assert.match(governmentCard, /editorialSummary: editorial\.fields\.editorial_summary/);
+  assert.match(euCard, /editorialSummary: editorial\.fields\.editorial_summary/);
   const budget = overviewOverrides.records["bt21-dip-c262bf7797f8"];
   assert.match(budget.editorial_summary, /Additionalität|Lebenszyklus|Titelgruppen/);
   assert.doesNotMatch(budget.editorial_summary, /Chancen und (Risiken|Herausforderungen)|Auswirkungen sind vielfältig/i);
@@ -49,8 +49,8 @@ test("EDITORIAL_SUMMARY_IS_CASE_SPECIFIC", () => {
 
 test("KEY_FINDING_VISIBLE", () => {
   assert.match(overviewComponent, /<strong>Key Finding:<\/strong> \{assessment\.keyFinding\}/);
-  assert.match(governmentCard, /keyFinding: record\.key_finding/);
-  assert.match(euCard, /keyFinding: record\.key_finding/);
+  assert.match(governmentCard, /keyFinding: editorial\.fields\.key_finding/);
+  assert.match(euCard, /keyFinding: editorial\.fields\.key_finding/);
 });
 
 test("EVIDENCE_SEPARATE_FROM_DIRECTION", () => {
@@ -75,7 +75,7 @@ test("DETAIL_PAGE_IMPACT_SECTION_PRECEDES_PROCESS", () => {
 
 test("IMPACT_ANALYSIS_IS_PRIMARY_CONTENT", () => {
   assert.match(decisionDetail, /aria-label="Zusammenfassende WÖk-Bewertung"|<OverviewAssessment/);
-  assert.match(governmentCard, /impactCoreSummary: record\.impact_core_summary/);
-  assert.match(euCard, /impactCoreSummary: record\.impact_core_summary/);
+  assert.match(governmentCard, /impactCoreSummary: editorial\.fields\.impact_core_summary/);
+  assert.match(euCard, /impactCoreSummary: editorial\.fields\.impact_core_summary/);
   assert.ok(decisionDetail.indexOf("<OverviewAssessment") < decisionDetail.indexOf("Status dieser Wirkungsakte"));
 });

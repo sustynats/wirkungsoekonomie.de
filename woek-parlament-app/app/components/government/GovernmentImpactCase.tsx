@@ -8,12 +8,14 @@ import {
   directionLabels,
   evidenceLabels,
   fullSchemaRecord,
+  governmentEditorialProjection,
   mpdLabels,
   realityCheckLabels,
   type PublicGovernmentImpactRecord,
   type WoeKImpactCase,
 } from "@/lib/government/impact-cases";
 import { sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
+import { humanizeSystemValue } from "@/lib/presentation/labels";
 
 function referenceSet(record: WoeKImpactCase, key: "sdg_refs" | "sdg_plus_refs" | "legal_refs") {
   return [...new Set(record.impact_paths.flatMap((path) => path[key] ?? []))];
@@ -147,27 +149,31 @@ function FullSchemaDetails({ record }: { record: WoeKImpactCase }) {
 export function GovernmentImpactCase({ record, compact = false }: { record: PublicGovernmentImpactRecord; compact?: boolean }) {
   const fullRecord = fullSchemaRecord(record);
   const summary = record.impact_summary;
+  const editorial = governmentEditorialProjection(record);
+  if (editorial.status !== "PASS") return null;
   return (
     <article className="government-impact-case" aria-labelledby={`impact-${record.impact_case_id}`}>
       <header>
         <p className="eyebrow">WÖk-Wirkungsanalyse · {record.analysis_mode === "IMPACT_REALITY_CHECK" ? "mit Reality-Check-Stufe" : "Ex ante"}</p>
         <h2 id={`impact-${record.impact_case_id}`}>{record.title}</h2>
         <OverviewAssessment compact={compact} assessment={{
-          assessmentLabel: record.overview_assessment_label,
-          impactCoreSummary: record.impact_core_summary,
-          editorialSummary: record.editorial_summary,
-          keyFinding: record.key_finding,
+          assessmentLabel: editorial.fields.overview_assessment_label,
+          impactCoreSummary: editorial.fields.impact_core_summary,
+          editorialSummary: editorial.fields.editorial_summary,
+          keyFinding: editorial.fields.key_finding,
           directionLabel: directionLabels[record.primary_direction],
-          evidenceSummary: `${evidenceLabels[record.evidence_level]}. ${record.evidence_summary_text}`,
-          realityCheckSummary: `${realityCheckLabels[record.reality_check_status] ?? record.reality_check_status}. ${record.reality_check_summary}`,
+          evidenceSummary: `${evidenceLabels[record.evidence_level]}. ${editorial.fields.evidence_summary}`,
+          realityCheckSummary: editorial.fields.reality_check_summary,
         }} />
-        {record.impact_summary.public_summary && record.impact_summary.public_summary !== record.editorial_summary && <p><strong>Fachliche Original-Kurzfassung:</strong> {record.impact_summary.public_summary}</p>}
+        {record.public_evidence_explanation && <p><strong>Öffentliche Evidenzeinordnung:</strong> {humanizeSystemValue(record.public_evidence_explanation)}</p>}
+        {record.boundary_review_note && <p><strong>Schutz- und Wirkungsgrenzen:</strong> {humanizeSystemValue(record.boundary_review_note)}</p>}
+        {record.impact_summary.public_summary && record.impact_summary.public_summary !== record.editorial_summary && <p><strong>Fachliche Original-Kurzfassung:</strong> {humanizeSystemValue(record.impact_summary.public_summary)}</p>}
         {record.public_analysis_depth === "LIMITED_FACH_RECORD" && <div className="open-state"><span aria-hidden="true">i</span><div><strong>Begrenzte Fachübergabe - keine strukturierte Vollanalyse.</strong><p>Die vollständige Fachakte bleibt unverändert zugänglich. Noch nicht maschinenlesbar strukturiert: {record.missing_structured_fields.join(", ")}.</p></div></div>}
         <dl className="government-impact-summary">
-          <div><dt>Wirkungskern</dt><dd>{record.impact_core_summary}</dd></div>
-          {summary.strongest_positive_potential && <div><dt>Stärkstes positives Potenzial</dt><dd>{summary.strongest_positive_potential}</dd></div>}
-          {summary.main_risk_or_tradeoff && <div><dt>Wichtigstes Risiko oder Zielkonflikt</dt><dd>{summary.main_risk_or_tradeoff}</dd></div>}
-          {summary.direction_dependencies && <div><dt>Entscheidende Bedingungen</dt><dd>{summary.direction_dependencies}</dd></div>}
+          <div><dt>Wirkungskern</dt><dd>{editorial.fields.impact_core_summary}</dd></div>
+          {summary.strongest_positive_potential && <div><dt>Stärkstes positives Potenzial</dt><dd>{humanizeSystemValue(summary.strongest_positive_potential)}</dd></div>}
+          {summary.main_risk_or_tradeoff && <div><dt>Wichtigstes Risiko oder Zielkonflikt</dt><dd>{humanizeSystemValue(summary.main_risk_or_tradeoff)}</dd></div>}
+          {summary.direction_dependencies && <div><dt>Entscheidende Bedingungen</dt><dd>{humanizeSystemValue(summary.direction_dependencies)}</dd></div>}
         </dl>
       </header>
 
@@ -176,7 +182,7 @@ export function GovernmentImpactCase({ record, compact = false }: { record: Publ
 
         <RecommendationSection impactCaseId={record.impact_case_id} />
 
-        {record.full_analysis_markdown && <details className="government-full-record">
+        {record.full_analysis_markdown && <details className="government-full-record government-technical-proof">
           <summary>Vollständige, unveränderte Fachakte aufklappen</summary>
           <FullAnalysisText source={{
             title: record.title,
@@ -220,6 +226,7 @@ export function GovernmentImpactCase({ record, compact = false }: { record: Publ
             <div><dt>Fachquelle</dt><dd>{record.source_release.jsonl_file} · SHA-256 {record.source_release.jsonl_sha256}</dd></div>
             <div><dt>Menschenlesbare Fachakte</dt><dd>{record.source_release.markdown_file} · SHA-256 {record.source_release.markdown_sha256}</dd></div>
             <div><dt>Fallauszug</dt><dd>SHA-256 {record.source_release.case_markdown_sha256}</dd></div>
+            {record.editorial_evidence_overlay && <div><dt>Editorial-/Evidenz-Overlay</dt><dd>{record.editorial_evidence_overlay.source_file} · {record.editorial_evidence_overlay.fach_status} · SHA-256 {record.editorial_evidence_overlay.source_sha256}</dd></div>}
           </dl>
           {record.linked_government_action_ids.length ? <div><h4>Verknüpfte GovernmentActions</h4><ul>{record.linked_government_action_ids.map((id) => <li key={id}>{id}</li>)}</ul></div> : <p>Keine belastbar aufgelöste GovernmentAction-Verknüpfung veröffentlicht.</p>}
         </details>

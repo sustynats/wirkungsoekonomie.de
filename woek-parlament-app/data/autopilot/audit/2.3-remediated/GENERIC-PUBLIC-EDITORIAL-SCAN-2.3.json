@@ -1,0 +1,36 @@
+{
+  "schema_version": "2.3-final-editorial-p0",
+  "generated_at": "2026-08-18T12:47:48.494Z",
+  "base_url": null,
+  "status": "PASS",
+  "counts": {
+    "government_fach_total": 63,
+    "government_public": 53,
+    "government_review": 10,
+    "eu_fach_total": 21,
+    "eu_public": 16,
+    "eu_review": 5,
+    "parliament_public_analyses": 15,
+    "routes_checked": 0
+  },
+  "gates": {
+    "OVERVIEW_CARD_HAS_VISIBLE_WOEK_ASSESSMENT": "PASS",
+    "PROCESS_BADGE_IS_NOT_USED_AS_ASSESSMENT": "PASS",
+    "ASSESSMENT_PRECEDES_PROCESS_METADATA": "PASS",
+    "EDITORIAL_SUMMARY_IS_CASE_SPECIFIC": "PASS",
+    "EVIDENCE_SUMMARY_IS_CASE_SPECIFIC": "PASS",
+    "ASSESSMENT_AND_IMPACT_CORE_HAVE_DISTINCT_FUNCTION": "PASS",
+    "NO_GENERIC_PUBLIC_EDITORIAL_TEXT": "PASS",
+    "NO_RAW_INTERNAL_ENUMS_IN_PUBLIC_UI": "PASS",
+    "KEY_FINDING_VISIBLE_AND_SPECIFIC": "PASS",
+    "BUDGET_2027_PORTFOLIO_NOT_FORCED_TO_FAKE_SCORE": "PASS",
+    "DETAIL_PAGE_IMPACT_SECTION_PRECEDES_PROCESS": "PASS",
+    "IMPACT_ANALYSIS_IS_PRIMARY_CONTENT": "PASS",
+    "GENERIC_PUBLIC_EDITORIAL_SCAN": "PASS"
+  },
+  "failed_gates": [],
+  "field_failures": [],
+  "similarity_failures": [],
+  "route_failures": [],
+  "route_checks": []
+}

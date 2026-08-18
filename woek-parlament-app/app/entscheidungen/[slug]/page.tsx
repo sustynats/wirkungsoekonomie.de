@@ -63,8 +63,8 @@ function reviewStatuses(item: NonNullable<ReturnType<typeof getCase>>) {
   return {
     maturity: humanizeSystemValue(item.publicWorkingAct?.maturity ?? item.analysisStatus),
     decisionBasis: firstStatus(record(sourceCompleteness.decision_basis).status, "OPEN"),
-    evidence: firstStatus(exAnte.evidence_status ?? exAnte.evidence_boundary ?? sourceCompleteness.status, "Evidenzgrenze in Fachakte ausgewiesen"),
-    attribution: firstStatus(exPost.attribution_status ?? exPost.causal_evidence_status ?? exPost.attribution, "Keine kausale Aussage ohne Gegenfaktum")
+    evidence: humanizeSystemValue(firstStatus(exAnte.evidence_status ?? exAnte.evidence_boundary ?? sourceCompleteness.status, "Evidenzgrenze in Fachakte ausgewiesen")),
+    attribution: humanizeSystemValue(firstStatus(exPost.attribution_status ?? exPost.causal_evidence_status ?? exPost.attribution, "Keine kausale Aussage ohne Gegenfaktum"))
   };
 }
 
@@ -73,45 +73,49 @@ export default async function DecisionPage({ params, searchParams }: { params: P
   const { ansicht } = await searchParams;
   const item = getCase(slug);
   if (!item) notFound();
-  const activeView: DecisionView = decisionViews.some((view) => view.id === ansicht) ? ansicht as DecisionView : "ueberblick";
-  const workingActView = activeView === "wirkprofil" || activeView === "wirkpfade" || activeView === "berechnungen" ? activeView : "ueberblick";
   const normativeMapping = item.publicAssessment?.normativeMapping ?? item.publicWorkingAct?.normativeMapping;
   const statuses = reviewStatuses(item);
   const overviewAssessment = parliamentaryOverviewAssessment(item);
+  const editoriallyPublished = Boolean(overviewAssessment);
+  const requestedView: DecisionView = decisionViews.some((view) => view.id === ansicht) ? ansicht as DecisionView : "ueberblick";
+  const activeView: DecisionView = editoriallyPublished || requestedView === "quellen" ? requestedView : "ueberblick";
+  const workingActView = activeView === "wirkprofil" || activeView === "wirkpfade" || activeView === "berechnungen" ? activeView : "ueberblick";
+  const visibleDecisionViews = editoriallyPublished ? decisionViews : decisionViews.filter((view) => view.id === "ueberblick" || view.id === "quellen");
+  const publicLead = editoriallyPublished ? item.summary : item.whatIsDecided;
   const publicationCaseId = typeof item.publicWorkingAct?.fullReview?.result.case_id === "string" ? item.publicWorkingAct.fullReview.result.case_id : "";
   const completePublication = activeView === "fachakte" && publicationCaseId ? await getCasePublicationSource(publicationCaseId) : null;
   return (
     <div className="shell decision-page">
       <nav className="breadcrumb" aria-label="Pfad"><Link href="/entscheidungen">Wirkungschecks</Link><span aria-hidden="true">/</span><span>{caseKindLabel(item.kind)}</span></nav>
       <header className="decision-header">
-        <div><h1>{item.plainTitle}</h1>{item.title !== item.plainTitle && <p className="official-title"><strong>Amtlicher Titel:</strong> {item.title}</p>}<p className="lead">{item.summary}</p><BookmarkLink title={item.plainTitle} path={`/entscheidungen/${item.slug}`} /></div>
+        <div><h1>{item.plainTitle}</h1>{item.title !== item.plainTitle && <p className="official-title"><strong>Amtlicher Titel:</strong> {item.title}</p>}<p className="lead">{publicLead}</p><BookmarkLink title={item.plainTitle} path={`/entscheidungen/${item.slug}`} /></div>
       </header>
 
-      {overviewAssessment && <OverviewAssessment assessment={overviewAssessment} />}
+      {overviewAssessment ? <OverviewAssessment assessment={overviewAssessment} /> : <section className="decision-section assessment-pending"><p className="eyebrow">Faktenakte</p><h2>WÖk-Analyse noch nicht redaktionell veröffentlicht.</h2><p>Der amtliche Gegenstand und seine Quellen bleiben sichtbar. Eine fertige WÖk-Einordnung wird erst nach einem objektspezifischen Editorial- und Evidenz-Gate veröffentlicht.</p></section>}
 
-      <section className="sixty-second" aria-labelledby="sixty-second-title"><div><p className="eyebrow">60 Sekunden</p><h2 id="sixty-second-title">Worum geht es?</h2></div><dl><div className="sixty-second-summary"><dt>Kurz erklärt</dt><dd>{item.summary}</dd></div><div><dt>Was wird entschieden?</dt><dd>{humanizeSystemValue(item.whatIsDecided)}</dd></div><div><dt>Welche Veränderung steht im Mittelpunkt?</dt><dd>{decisionFocus(item)}</dd></div></dl></section>
+      <section className="sixty-second" aria-labelledby="sixty-second-title"><div><p className="eyebrow">60 Sekunden</p><h2 id="sixty-second-title">Worum geht es?</h2></div><dl><div className="sixty-second-summary"><dt>Kurz erklärt</dt><dd>{publicLead}</dd></div><div><dt>Was wird entschieden?</dt><dd>{humanizeSystemValue(item.whatIsDecided)}</dd></div><div><dt>Welche Veränderung steht im Mittelpunkt?</dt><dd>{editoriallyPublished ? decisionFocus(item) : "WÖk-Analyse noch nicht redaktionell veröffentlicht."}</dd></div></dl></section>
 
       <section className="decision-process-meta" aria-label="Politischer Prozess und Prüfstatus">
         <div><CaseTypeMark kind={item.kind} maturity={item.publicWorkingAct?.maturity} /><p>Prozess- und Prüfinformationen</p></div>
         <aside className="decision-status"><p>Status dieser Wirkungsakte</p><strong>{humanizeSystemValue(item.parliamentaryStatus)}</strong><dl><div><dt>WÖk-Reifestufe</dt><dd>{statuses.maturity}</dd></div><div><dt>Evidenzstatus</dt><dd>{statuses.evidence}</dd></div><div><dt>Attributionsstatus</dt><dd>{statuses.attribution}</dd></div><div><dt>Prüfrelevanz</dt><dd>{materialityLabel(item.materiality)}</dd></div><div><dt>Quellenstatus</dt><dd>{verificationLabel(item.statusVerification)}</dd></div><div><dt>Letzte Aktualisierung</dt><dd>{formatDate(item.lastUpdated)}</dd></div></dl></aside>
       </section>
 
-      {activeView === "ueberblick" && <DecisionReadinessGate decisionBasis={statuses.decisionBasis} />}
+      {activeView === "ueberblick" && editoriallyPublished && <DecisionReadinessGate decisionBasis={statuses.decisionBasis} />}
 
       <nav className="decision-view-nav" aria-label="Ansichten dieser Wirkungsakte">
         <p><strong>Wirkungsakte</strong><span>60 Sekunden zuerst, Details gezielt öffnen.</span></p>
-        <div>{decisionViews.map((view) => <Link key={view.id} href={view.id === "ueberblick" ? `/entscheidungen/${item.slug}` : `/entscheidungen/${item.slug}?ansicht=${view.id}`} aria-current={activeView === view.id ? "page" : undefined}>{view.label}</Link>)}</div>
+        <div>{visibleDecisionViews.map((view) => <Link key={view.id} href={view.id === "ueberblick" ? `/entscheidungen/${item.slug}` : `/entscheidungen/${item.slug}?ansicht=${view.id}`} aria-current={activeView === view.id ? "page" : undefined}>{view.label}</Link>)}</div>
       </nav>
 
-      {activeView === "normen" && normativeMapping && <NormativeImpactTiles mapping={normativeMapping} />}
+      {activeView === "normen" && editoriallyPublished && normativeMapping && <NormativeImpactTiles mapping={normativeMapping} />}
 
-      {activeView === "fachakte" && (completePublication
+      {activeView === "fachakte" && editoriallyPublished && (completePublication
         ? <CompletePublicationSource source={completePublication} idPrefix="vollstaendige-fachakte" />
         : item.publicWorkingAct?.fullReview ? <FullReviewRecord review={item.publicWorkingAct.fullReview} /> : null)}
 
-      {item.publicAssessment && activeView === "ueberblick" ? <AssessmentExplainer assessment={item.publicAssessment} /> : item.publicWorkingAct && activeView !== "normen" && activeView !== "quellen" && activeView !== "fachakte" ? <WorkingActExplainer workingAct={item.publicWorkingAct} view={workingActView} /> : !item.publicWorkingAct && activeView === "ueberblick" ? <section className="decision-section assessment-pending"><p className="eyebrow">WÖk-Einordnung</p><h2>Noch keine fachliche Bewertung veröffentlicht</h2><p>Eine reale Einordnung erscheint erst, wenn Entscheidungsfassung, Quellen, Wirkpfade, Berechnungen und Unsicherheiten geprüft sind. Das Portal unterscheidet dann sichtbar zwischen Ergebnis, Begründung und dem vollständigen Rechenweg.</p></section> : null}
+      {editoriallyPublished && item.publicAssessment && activeView === "ueberblick" ? <AssessmentExplainer assessment={item.publicAssessment} /> : editoriallyPublished && item.publicWorkingAct && overviewAssessment && activeView !== "normen" && activeView !== "quellen" && activeView !== "fachakte" ? <WorkingActExplainer workingAct={item.publicWorkingAct} view={workingActView} publicEvidenceSummary={overviewAssessment.evidenceSummary} /> : !item.publicWorkingAct && activeView === "ueberblick" ? <section className="decision-section assessment-pending"><p className="eyebrow">WÖk-Einordnung</p><h2>Noch keine fachliche Bewertung veröffentlicht</h2><p>Eine reale Einordnung erscheint erst, wenn Entscheidungsfassung, Quellen, Wirkpfade, Berechnungen und Unsicherheiten geprüft sind. Das Portal unterscheidet dann sichtbar zwischen Ergebnis, Begründung und dem vollständigen Rechenweg.</p></section> : null}
 
-      {activeView === "ueberblick" && <GlossaryBasics termKeys={item.publicAssessment ? ["wirkung", "wirkungsbewertung", "gegenfaktum", "evidenzgrenze", "zurechnung", "nichtkompensation"] : ["wirkungspotenzial", "wirkungsrisiko", "wirkmechanismus", "wirkpfad", "rueckkopplung"]} />}
+      {activeView === "ueberblick" && editoriallyPublished && <GlossaryBasics termKeys={item.publicAssessment ? ["wirkung", "wirkungsbewertung", "gegenfaktum", "evidenzgrenze", "zurechnung", "nichtkompensation"] : ["wirkungspotenzial", "wirkungsrisiko", "wirkmechanismus", "wirkpfad", "rueckkopplung"]} />}
 
       {!item.publicWorkingAct && <div className="decision-grid">
         <section className="decision-section"><p className="eyebrow">Möglicher Weg zur Veränderung</p><h2>Wie könnte aus der Entscheidung eine Veränderung entstehen?</h2><p className="section-intro">Die folgende Darstellung beschreibt mögliche Schritte von der Entscheidung über ihre Umsetzung bis zu einer Veränderung. Fachlich heißt diese begründete Annahme Wirkmechanismus; die Abfolge wird als Wirkpfad dargestellt. Sie ist noch kein Wirkungsnachweis.</p><ol className="impact-path">{item.impactPath.map((step, index) => <li key={step}><span>{index + 1}</span><p>{step}</p></li>)}</ol></section>

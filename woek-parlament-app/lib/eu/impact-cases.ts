@@ -3,6 +3,7 @@ import "server-only";
 import { cache } from "react";
 import { readFileSync } from "node:fs";
 import path from "node:path";
+import { projectEuEditorial, type PublicEditorialProjection } from "@/lib/publication/public-editorial-projection.mjs";
 
 export type EuImpactRecord = {
   impact_case_id: string;
@@ -32,5 +33,10 @@ export type EuImpactRecord = {
 };
 
 const file = path.join(process.cwd(), "data", "eu", "impact-cases", "public-impact-records.jsonl");
-export const getEuImpactCases = cache(() => readFileSync(file, "utf8").split(/\r?\n/).filter(Boolean).map((line) => JSON.parse(line) as EuImpactRecord));
+function allEuImpactCases() { return readFileSync(file, "utf8").split(/\r?\n/).filter(Boolean).map((line) => JSON.parse(line) as EuImpactRecord); }
+export const getEuImpactCases = cache(() => allEuImpactCases().filter((record) => projectEuEditorial(record as unknown as Record<string, unknown>).status === "PASS"));
+export const getEuEditorialExclusions = cache(() => allEuImpactCases()
+  .map((record) => ({ record, projection: projectEuEditorial(record as unknown as Record<string, unknown>) }))
+  .filter(({ projection }) => projection.status !== "PASS"));
+export function euEditorialProjection(record: EuImpactRecord): PublicEditorialProjection { return projectEuEditorial(record as unknown as Record<string, unknown>); }
 export function euImpactCaseById(id: string) { return getEuImpactCases().find((record) => record.impact_case_id === id) ?? null; }

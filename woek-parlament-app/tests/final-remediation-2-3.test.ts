@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
 import { readFileSync, statSync } from "node:fs";
 import test from "node:test";
+import { projectGovernmentEditorial } from "../lib/publication/public-editorial-projection.mjs";
 
 const readJsonl = (file: string) => readFileSync(file, "utf8").split(/\r?\n/).filter(Boolean).map((line) => JSON.parse(line));
 const allImpactCases = [
@@ -22,7 +23,8 @@ test("the federal budget retains no single direction and OPEN is not neutral", (
   const record = allImpactCases.find((entry) => entry.impact_case_id === "WOEK-IMPACT-BUND-BHH-2027");
   assert.ok(record);
   assert.equal(record.primary_direction, "OPEN");
-  assert.equal(record.overview_assessment_label, "Keine belastbare Gesamtrichtung ohne Portfolio-Aufschlüsselung");
+  assert.equal(record.overview_assessment_label, "PORTFOLIO_DISAGGREGATION_REQUIRED");
+  assert.equal(projectGovernmentEditorial(record).fields.overview_assessment_label, "Wirkung nur auf Ebene der Einzelmaßnahmen belastbar bewertbar");
   assert.notEqual(record.primary_direction, "NEUTRAL");
 });
 
