@@ -15,6 +15,7 @@ const specialistIndex = source("app/fachanalysen/page.tsx");
 const mandateIndex = source("app/mandat-und-praxis/page.tsx");
 const stateProgrammes = source("app/laender/sachsen-anhalt/page.tsx");
 const decisionDetail = source("app/entscheidungen/[slug]/page.tsx");
+const euSourceVsView = source("scripts/quality/check-eu-source-vs-view.mjs");
 const overviewOverrides = JSON.parse(source("data/presentation/overview-assessment-overrides.json"));
 
 test("OVERVIEW_CARD_HAS_VISIBLE_WOEK_ASSESSMENT", () => {
@@ -87,6 +88,8 @@ test("IMPACT_ANALYSIS_IS_PRIMARY_CONTENT", () => {
 
 test("PREVIEW_CARD_HAS_VISIBLE_WOEK_ASSESSMENT", () => {
   assert.match(overviewComponent, /WÖk-Kurzbewertung/);
+  assert.match(euSourceVsView, /WÖk-Kurzbewertung/);
+  assert.match(euSourceVsView, /Wirkungspotenzial kompakt/);
   for (const [file, content] of Object.entries({ caseCard, governmentCard, governmentActionCard, euCard, searchResults, sourceDetail, specialistIndex, mandateIndex, stateProgrammes })) {
     assert.match(content, /<(?:OverviewAssessment|EditorialReviewAssessment)/, file);
   }

@@ -23,7 +23,7 @@ for (const { record, editorial } of records) {
     result.fields_checked += 1;
     if (!text.includes(visible(value))) { const message = `Feld fehlt: ${visible(value).slice(0, 80)}`; failures.push(`${record.impact_case_id}: ${message}`); result.failures.push(message); }
   }
-  for (const label of ["Zusammenfassende WÖk-Bewertung", "Wirkungsrichtung", "Evidenzstatus", "Reality-Check", "WÖk-Handlungsoption wird fachlich ergänzt.", "Vollständige EU-Fachakte"]) {
+  for (const label of ["WÖk-Kurzbewertung", "Wirkungspotenzial kompakt", "Wirkungsrichtung", "Evidenzstatus", "Reality-Check", "WÖk-Handlungsoption wird fachlich ergänzt.", "Vollständige EU-Fachakte"]) {
     result.fields_checked += 1;
     if (!text.includes(label)) { const message = `UI-Semantik fehlt: ${label}`; failures.push(`${record.impact_case_id}: ${message}`); result.failures.push(message); }
   }
