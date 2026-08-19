@@ -1353,9 +1353,6 @@ h1, h2, h3, h4 { text-wrap: balance; }
   line-height: 1.45;
   letter-spacing: -.006em;
 }
-@media (min-width: 48rem) {
-  .overview-assessment:not(.overview-assessment--compact) .overview-assessment-label { font-size: 1.25rem; }
-}
 .overview-assessment .overview-assessment-core,
 .overview-assessment .overview-assessment-summary,
 .overview-assessment .overview-assessment-finding { max-width: 74ch; margin: 0; color: var(--farbe-text); line-height: 1.55; }
@@ -1366,7 +1363,7 @@ h1, h2, h3, h4 { text-wrap: balance; }
 .overview-assessment-axis dt { color: var(--farbe-text-sekundaer); font-size: var(--groesse-label); font-weight: var(--schriftstaerke-fett); letter-spacing: .06em; text-transform: uppercase; }
 .overview-assessment-axis dd { min-width: 0; margin: var(--abstand-2xs) 0 0; overflow-wrap: anywhere; word-break: break-word; hyphens: auto; color: var(--farbe-text); font-size: var(--groesse-klein); line-height: 1.45; }
 .overview-assessment--compact { gap: var(--abstand-xs); margin: 0; padding: var(--abstand-m); }
-.overview-assessment--compact .overview-assessment-label { font-size: 1.125rem; line-height: 1.45; }
+.overview-assessment--compact .overview-assessment-label { line-height: 1.45; }
 .overview-assessment--compact .overview-assessment-icon { width: 2.2rem; height: 2.2rem; }
 .overview-assessment--compact .overview-assessment-icon svg { width: 1.15rem; height: 1.15rem; }
 .overview-assessment--compact .overview-assessment-core,
@@ -1374,6 +1371,9 @@ h1, h2, h3, h4 { text-wrap: balance; }
 .overview-assessment--compact .overview-assessment-finding,
 .overview-assessment--compact .overview-assessment-axis dd { font-size: .9rem; }
 .overview-assessment--compact .overview-assessment-axis { grid-template-columns: 1fr; }
+@media (min-width: 48rem) {
+  .overview-assessment .overview-assessment-label { font-size: 1.25rem; }
+}
 .decision-page > .overview-assessment { margin-block: 2rem; }
 .decision-process-meta { display: grid; grid-template-columns: minmax(12rem, .35fr) minmax(0, 1fr); gap: 1.25rem; align-items: start; margin: 2rem 0; padding-top: 1.25rem; border-top: 1px solid var(--line); }
 .decision-process-meta > div > p { margin: .6rem 0 0; color: var(--muted); font-size: .85rem; font-weight: 750; }

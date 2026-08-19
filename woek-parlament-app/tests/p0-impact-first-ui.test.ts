@@ -194,7 +194,7 @@ test("PUBLIC_SCHEMA_TERMS_ARE_MAPPED_TO_PLAIN_GERMAN", () => {
 
 test("WOEK_ASSESSMENT_LABEL_USES_COMPACT_SANS_SERIF_LEAD_TYPOGRAPHY", () => {
   assert.match(globalStyles, /\.overview-assessment-label\s*\{[\s\S]*?font-family:\s*var\(--schrift-text\)[\s\S]*?font-size:\s*1\.125rem[\s\S]*?font-weight:\s*600[\s\S]*?line-height:\s*1\.45/);
-  assert.match(globalStyles, /@media \(min-width:\s*48rem\)[\s\S]*?\.overview-assessment:not\(\.overview-assessment--compact\) \.overview-assessment-label\s*\{\s*font-size:\s*1\.25rem/);
+  assert.match(globalStyles, /@media \(min-width:\s*48rem\)[\s\S]*?\.overview-assessment \.overview-assessment-label\s*\{\s*font-size:\s*1\.25rem/);
   assert.match(overviewComponent, /<p className="overview-assessment-label">\{assessment\.assessmentLabel\}<\/p>/);
   assert.doesNotMatch(overviewComponent, /<h[1-6][^>]*className="overview-assessment-label"/);
 });
