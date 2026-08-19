@@ -1,0 +1,123 @@
+name: P0 promote Sachsen-Anhalt production
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/p0-promote-sachsen-anhalt-main.yml
+
+permissions:
+  contents: write
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    env:
+      VERCEL_TOKEN_PRIMARY: ${{ secrets.VERCEL_TOKEN }}
+      VERCEL_TOKEN_ALT1: ${{ secrets.VERCEL_ACCESS_TOKEN }}
+      VERCEL_TOKEN_ALT2: ${{ secrets.VERCEL_API_TOKEN }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Promote and smoke exact approved deployment
+        shell: bash
+        run: |
+          set -uo pipefail
+          report() {
+            STATUS="$1"
+            DETAIL="$2"
+            TS=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+            JSON=$(python - "$STATUS" "$DETAIL" "$TS" <<'PY'
+import json,sys
+print(json.dumps({"status":sys.argv[1],"detail":sys.argv[2],"timestamp":sys.argv[3]}, ensure_ascii=True))
+PY
+)
+            B64=$(printf '%s' "$JSON" | base64 -w0)
+            PAYLOAD=$(python - "$B64" <<'PY'
+import json,sys
+print(json.dumps({"message":"ci(p0): record Sachsen-Anhalt promotion status","content":sys.argv[1],"branch":"main"}))
+PY
+)
+            curl -fsS -X PUT \
+              -H "Authorization: Bearer ${GH_TOKEN}" \
+              -H "Accept: application/vnd.github+json" \
+              -H "X-GitHub-Api-Version: 2022-11-28" \
+              -H "Content-Type: application/json" \
+              --data "$PAYLOAD" \
+              "https://api.github.com/repos/${GITHUB_REPOSITORY}/contents/WOEK-P0-SACHSEN-ANHALT-PROMOTION-STATUS.json" >/dev/null || true
+          }
+
+          TOKEN="${VERCEL_TOKEN_PRIMARY:-}"
+          if [ -z "$TOKEN" ]; then TOKEN="${VERCEL_TOKEN_ALT1:-}"; fi
+          if [ -z "$TOKEN" ]; then TOKEN="${VERCEL_TOKEN_ALT2:-}"; fi
+          if [ -z "$TOKEN" ]; then
+            echo "WOEK_P0_VERCEL_TOKEN_NOT_CONFIGURED"
+            report "BLOCKED" "VERCEL_TOKEN_NOT_CONFIGURED_IN_GITHUB_ACTIONS"
+            exit 2
+          fi
+
+          PROJECT_ID="prj_h1X7GuXOVo1bdnOfoYXzTfP8ygBK"
+          TEAM_ID="team_sOR1voJPyc1jY5VsMdQRyFWz"
+          DEPLOYMENT_ID="dpl_97u3zvKqcswrtowjLjAicoEmHqX1"
+          URL="https://api.vercel.com/v10/projects/${PROJECT_ID}/promote/${DEPLOYMENT_ID}?teamId=${TEAM_ID}"
+          HTTP=$(curl --silent --show-error --output /tmp/vercel-promote-response.json --write-out '%{http_code}' \
+            --request POST \
+            --header "Authorization: Bearer ${TOKEN}" \
+            --header 'Content-Type: application/json' \
+            "$URL")
+          echo "WOEK_P0_PROMOTE_HTTP=${HTTP}"
+          if [ "$HTTP" -lt 200 ] || [ "$HTTP" -ge 300 ]; then
+            report "BLOCKED" "VERCEL_PROMOTE_HTTP_${HTTP}"
+            exit 3
+          fi
+          report "PROMOTE_ACCEPTED" "${DEPLOYMENT_ID}"
+
+          BASE="https://parlament.wirkungsoekonomie.de"
+          for attempt in $(seq 1 36); do
+            code=$(curl -L -sS -o /tmp/afd.html -w '%{http_code}' "$BASE/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-afd")
+            if [ "$code" = "200" ] && grep -q 'vollstaendige-wirkungsakte' /tmp/afd.html && grep -q 'vollstaendiges-zusageregister' /tmp/afd.html; then
+              echo "WOEK_P0_PRODUCTION_SWITCH_VISIBLE_ATTEMPT=${attempt}"
+              break
+            fi
+            if [ "$attempt" = "36" ]; then
+              report "POST_DEPLOY_BLOCKED" "PRODUCTION_SWITCH_TIMEOUT_LAST_HTTP_${code}"
+              exit 4
+            fi
+            sleep 10
+          done
+
+          routes=(
+            "/laender/sachsen-anhalt"
+            "/laender/sachsen-anhalt/quellen"
+            "/laender/sachsen-anhalt/ziele"
+            "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-cdu"
+            "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-spd"
+            "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-gruene"
+            "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-linke"
+            "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-bsw"
+            "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-afd"
+          )
+          for route in "${routes[@]}"; do
+            code=$(curl -L -sS -o /tmp/page.html -w '%{http_code}' "$BASE$route")
+            echo "WOEK_P0_ROUTE ${route} ${code}"
+            if [ "$code" != "200" ]; then
+              report "POST_DEPLOY_BLOCKED" "ROUTE_${route}_HTTP_${code}"
+              exit 5
+            fi
+            case "$route" in
+              */wahlprogramme/*)
+                if ! grep -q 'vollstaendige-wirkungsakte' /tmp/page.html || ! grep -q 'vollstaendiges-zusageregister' /tmp/page.html; then
+                  report "POST_DEPLOY_BLOCKED" "ROUTE_${route}_MISSING_CANONICAL_BLOCK"
+                  exit 6
+                fi
+                ;;
+            esac
+          done
+          unknown=$(curl -L -sS -o /dev/null -w '%{http_code}' "$BASE/laender/sachsen-anhalt/wahlprogramme/not-a-real-programme")
+          if [ "$unknown" != "404" ]; then
+            report "POST_DEPLOY_BLOCKED" "UNKNOWN_SOURCE_EXPECTED_404_GOT_${unknown}"
+            exit 7
+          fi
+          report "SACHSEN_ANHALT_WAHLPROGRAMME_HOTFIX_COMPLETED_LIVE" "${DEPLOYMENT_ID};9_OF_9_HTTP_200;UNKNOWN_404"
+          echo "SACHSEN_ANHALT_WAHLPROGRAMME_HOTFIX_COMPLETED_LIVE"
