@@ -1342,10 +1342,8 @@ h1, h2, h3, h4 { text-wrap: balance; }
   max-width: 52ch;
   margin: 0;
   color: var(--farbe-flaeche-buehne);
-  font: var(--schriftstaerke-fett) clamp(1.25rem, 2vw, 1.65rem)/1.28 var(--schrift-display);
+  font: 600 clamp(1.125rem, 1.45vw, 1.25rem)/1.45 var(--schrift-text);
 }
-.overview-assessment--review { border-left-color: var(--farbe-text-sekundaer); background: var(--farbe-flaeche-warm); }
-.overview-assessment--review .overview-assessment-label { color: var(--farbe-text); }
 .overview-assessment .overview-assessment-core,
 .overview-assessment .overview-assessment-summary,
 .overview-assessment .overview-assessment-finding { max-width: 74ch; margin: 0; color: var(--farbe-text); line-height: 1.55; }
@@ -1356,7 +1354,7 @@ h1, h2, h3, h4 { text-wrap: balance; }
 .overview-assessment-axis dt { color: var(--farbe-text-sekundaer); font-size: var(--groesse-label); font-weight: var(--schriftstaerke-fett); letter-spacing: .06em; text-transform: uppercase; }
 .overview-assessment-axis dd { margin: var(--abstand-2xs) 0 0; color: var(--farbe-text); font-size: var(--groesse-klein); line-height: 1.45; }
 .overview-assessment--compact { gap: var(--abstand-xs); margin: 0; padding: var(--abstand-m); }
-.overview-assessment--compact .overview-assessment-label { font-size: 1.15rem; }
+.overview-assessment--compact .overview-assessment-label { font-size: 1.125rem; }
 .overview-assessment--compact .overview-assessment-icon { width: 2.2rem; height: 2.2rem; }
 .overview-assessment--compact .overview-assessment-icon svg { width: 1.15rem; height: 1.15rem; }
 .overview-assessment--compact .overview-assessment-core,
@@ -1396,6 +1394,8 @@ h1, h2, h3, h4 { text-wrap: balance; }
 .public-maturity--compact .public-maturity-icon { width: 1.9rem; height: 1.9rem; }
 .public-maturity--compact .public-maturity-icon svg { width: 1rem; height: 1rem; }
 .public-maturity--compact .public-maturity-label { font-size: .95rem; }
+.public-maturity--fact-only { border-left: .2rem solid var(--farbe-text-sekundaer); background: var(--farbe-flaeche-karte); }
+.public-maturity--fact-only .public-maturity-icon { color: var(--farbe-text-sekundaer); }
 
 .site-footer { margin-top: clamp(2rem, 7vw, 6rem); padding: clamp(2.75rem, 6vw, 4.5rem) 0; color: #e7edf5; background: var(--navy-deep); }
 .footer-signup { display: grid; grid-template-columns: minmax(250px, .9fr) minmax(320px, .8fr); gap: clamp(1.25rem, 5vw, 4rem); align-items: center; margin-bottom: clamp(2rem, 4vw, 3.25rem); padding-bottom: clamp(2rem, 4vw, 3.25rem); border-bottom: 1px solid rgba(231, 237, 245, .24); }

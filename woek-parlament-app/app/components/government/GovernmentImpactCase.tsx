@@ -275,7 +275,7 @@ export function GovernmentImpactCase({ record, compact = false }: { record: Publ
           <p className="government-method-meta">Analyseversion {record.analysis_version} · Analysestand {record.analysis_as_of} · {record.record_profile === "FULL_SCHEMA_2_0_1" ? "Vollschema 2.0.1" : "kompakte Fachübergabe, inhaltlich unverändert"}</p>
         </section>
 
-        <details className="government-technical-proof">
+        <details className="government-technical-proof" data-woek-raw-schema-proof="allowed">
           <summary>Technischen Publikationsnachweis ansehen</summary>
           <dl className="government-impact-summary">
             <div><dt>ImpactCase-ID</dt><dd>{record.impact_case_id}</dd></div>

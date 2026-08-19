@@ -7,7 +7,6 @@ import { GlossaryBasics } from "@/app/components/GlossaryBasics";
 import { ReferenceFieldTiles } from "@/app/components/ReferenceFieldTiles";
 import { FullAnalysisText } from "@/app/components/FullAnalysisText";
 import { CompletePublicationSource } from "@/app/components/CompletePublicationSource";
-import { EditorialReviewAssessment } from "@/app/components/OverviewAssessment";
 import { PublicMaturity } from "@/app/components/PublicMaturity";
 import type { FachanalyseSource } from "@/data/fachanalysen";
 import { fullAnalysisBySlug } from "@/data/fachanalysen-full";
@@ -70,7 +69,6 @@ export default async function FachanalyseDetailPage({ params }: { params: Promis
         <p>{analysis.summary}</p>
       </header>
 
-      <EditorialReviewAssessment subject={analysis.title} compact={false} />
       <PublicMaturity maturity={publishedDossierPublicMaturity(analysis.title, `Das Dossier „${analysis.title}“ ist mit seinem veröffentlichten Quellen-, Evidenz- und Arbeitsstand zugänglich.`)} />
 
       {analysis.publicationBoundary ? <section className="publication-boundary" aria-label="Aussagegrenze">

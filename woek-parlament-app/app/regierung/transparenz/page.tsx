@@ -19,7 +19,7 @@ export default function GovernmentTransparencyPage() {
 
     <h2>Wirkungsabdeckung - Fachrelease 2.0</h2>
     <div className="government-stat-band"><div><strong>{impactCases.length}</strong><span>fachlich freigegebene Wirkungsfälle</span></div><div><strong>{highMateriality}</strong><span>davon mit hoher Materialität</span></div><div><strong>{realityChecks}</strong><span>mit vorgesehener Reality-Check-Stufe</span></div><div><strong>{impactMeta.fach_content_loss}</strong><span>verlorene Fachinhalte beim Import</span></div></div>
-    <p><strong>Faktenabdeckung ist nicht Wirkungsabdeckung.</strong> {actions.length.toLocaleString("de-DE")} veröffentlichte GovernmentActions bedeuten nicht {actions.length.toLocaleString("de-DE")} bewertete Maßnahmen. Ein WÖkImpactCase kann mehrere Prozessobjekte verbinden; ein Omnibusvorhaben kann umgekehrt mehrere Wirkungsgegenstände enthalten.</p>
+    <p><strong>Faktenabdeckung ist nicht Wirkungsabdeckung.</strong> {actions.length.toLocaleString("de-DE")} veröffentlichte amtliche Regierungshandlungen bedeuten nicht {actions.length.toLocaleString("de-DE")} bewertete Maßnahmen. Ein WÖk-Wirkungsfall kann mehrere Prozessobjekte verbinden; ein Omnibusvorhaben kann umgekehrt mehrere Wirkungsgegenstände enthalten.</p>
     <p>{impactMeta.note}</p>
 
     <h2>Abdeckung nach amtlichem Quellenraum</h2>

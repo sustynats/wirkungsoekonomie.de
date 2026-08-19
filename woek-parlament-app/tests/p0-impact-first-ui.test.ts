@@ -23,6 +23,9 @@ const genericPublicScan = source("scripts/quality/generic-public-editorial-scan.
 const publicMaturity = source("app/components/PublicMaturity.tsx");
 const publicMaturityProjection = source("lib/presentation/public-maturity.ts");
 const overviewOverrides = JSON.parse(source("data/presentation/overview-assessment-overrides.json"));
+const publicApi = source("lib/public-api.ts");
+const searchPage = source("app/suche/page.tsx");
+const globalStyles = source("app/globals.css");
 
 test("OVERVIEW_CARD_HAS_VISIBLE_WOEK_ASSESSMENT", () => {
   assert.match(overviewComponent, /Zusammenfassende WÖk-Bewertung/);
@@ -108,8 +111,8 @@ test("PREVIEW_CARD_HAS_VISIBLE_WOEK_ASSESSMENT", () => {
   assert.match(overviewComponent, /WÖk-Kurzbewertung/);
   assert.match(euSourceVsView, /Executive-WÖk-Zusammenfassung/);
   assert.match(euSourceVsView, /Wirkungspotenzial kompakt/);
-  for (const [file, content] of Object.entries({ caseCard, governmentCard, governmentActionCard, euCard, searchResults, sourceDetail, specialistIndex, mandateIndex, stateProgrammes })) {
-    assert.match(content, /<(?:OverviewAssessment|EditorialReviewAssessment)/, file);
+  for (const [file, content] of Object.entries({ caseCard, governmentCard, governmentActionCard, euCard, searchResults, sourceDetail })) {
+    assert.match(content, /<OverviewAssessment/, file);
   }
 });
 
@@ -122,8 +125,9 @@ test("PREVIEW_CARD_HAS_ICONIC_ASSESSMENT", () => {
 test("PREVIEW_CARD_HAS_CASE_SPECIFIC_IMPACT_SUMMARY", () => {
   assert.match(overviewComponent, /Wirkungspotenzial kompakt:/);
   assert.match(overviewComponent, /assessment\.editorialSummary/);
-  assert.match(overviewComponent, /EditorialReviewAssessment/);
-  assert.match(overviewComponent, /fachlich freigegebene, strukturierte WÖk-Kurzbewertung/);
+  assert.doesNotMatch(overviewComponent, /EditorialReviewAssessment/);
+  assert.match(publicMaturity, /WÖk-Wirkungsanalyse noch nicht veröffentlicht/);
+  assert.match(publicMaturity, /data-woek-fact-only-status="published"/);
 });
 
 test("PREVIEW_CARD_IMPACT_PRECEDES_PROCESS", () => {
@@ -146,6 +150,44 @@ test("PREVIEW_CARD_NO_GENERIC_SUMMARY", () => {
 test("PREVIEW_CARD_NO_RAW_INTERNAL_ENUMS", () => {
   assert.doesNotMatch(overviewComponent, />POSITIVE_POTENTIAL<|>NEGATIVE_RISK<|>AMBIVALENT<|>PORTFOLIO_DISAGGREGATION_REQUIRED</);
   assert.match(source("scripts/quality/generic-public-editorial-scan.mjs"), /PREVIEW_CARD_NO_RAW_INTERNAL_ENUMS/);
+});
+
+test("FACT_ONLY_FAILS_CLOSED_WITHOUT_AN_ASSESSMENT_SURFACE", () => {
+  for (const [file, content] of Object.entries({ caseCard, governmentActionCard, searchResults, sourceDetail, specialistIndex, mandateIndex, stateProgrammes })) {
+    assert.doesNotMatch(content, /EditorialReviewAssessment/, file);
+  }
+  assert.match(caseCard, /data-woek-preview-card=\{assessment \? "published" : "fact-only"\}/);
+  assert.match(governmentActionCard, /assessments\.length \? "published" : "fact-only"/);
+  assert.match(publicMaturity, /Faktenakte ohne veröffentlichte WÖk-Wirkungsanalyse/);
+});
+
+test("FACT_ONLY_METADATA_AND_CLIENT_PROJECTIONS_FAIL_CLOSED", () => {
+  assert.match(decisionDetail, /description: publicParliamentSummary\(item\)/);
+  assert.match(publicApi, /publicationStatus: "FACT_ONLY"/);
+  assert.match(publicApi, /woekAnalysisPublished: false/);
+  assert.match(publicApi, /Eine WÖk-Wirkungsanalyse ist noch nicht veröffentlicht/);
+  assert.doesNotMatch(searchPage, /return \{ \.\.\.item, assessment/);
+  assert.match(searchPage, /intendedGoal: analysisPublished \? item\.intendedGoal : ""/);
+  assert.match(searchPage, /impactPath: analysisPublished \? item\.impactPath : \[\]/);
+});
+
+test("PUBLIC_SCHEMA_TERMS_ARE_MAPPED_TO_PLAIN_GERMAN", () => {
+  for (const term of ["RecommendationVersion", "EvidenceEvent", "ExternalShock", "WÖkImpactCase", "GovernmentAction", "ParliamentaryCase", "LegalAct", "SourceEvent", "VoteEvent", "IndividualVote", "Climate resource", "BLOCK"]) {
+    assert.match(presentationLabels, new RegExp(term.replace(/[+]/g, "\\+")));
+  }
+  assert.match(source("app/components/FullReviewRecord.tsx"), /humanizeSystemValue\(part\)/);
+  assert.match(source("app/components/CompletePublicationSource.tsx"), /humanizeSystemValue\(output\)/);
+  assert.doesNotMatch(source("app/components/recommendations/RecommendationSection.tsx"), />RecommendationVersion /);
+  assert.doesNotMatch(source("app/regierung/wirkungsanalysen/[id]/page.tsx"), /kein fachlich freigegebenes EvidenceEvent/);
+  for (const driver of ["CLIMATE_RESOURCE", "FINANCIAL_SCALE", "HEALTH_SAFETY", "HIGH_UNCERTAINTY_HIGH_HARM", "POPULATION_SCALE"]) {
+    assert.match(presentationLabels, new RegExp(`${driver}:`));
+  }
+  assert.doesNotMatch(stateProgrammes, /Wahlprogramme vor der Landtagswahl Sachsen-Anhalt 2026: Wirkungspotenziale/);
+  assert.match(stateProgrammes, /WÖk-Wirkungsanalysen sind noch nicht redaktionell veröffentlicht/);
+});
+
+test("WOEK_ASSESSMENT_LABEL_USES_COMPACT_SANS_SERIF_LEAD_TYPOGRAPHY", () => {
+  assert.match(globalStyles, /\.overview-assessment-label\s*\{[\s\S]*?font:\s*600\s+clamp\(1\.125rem,\s*1\.45vw,\s*1\.25rem\)\/1\.45\s+var\(--schrift-text\)/);
 });
 
 test("NO_GENERIC_INTERNAL_SCHEMA_FIELD_LABELS_IN_PUBLIC_UI", () => {
@@ -181,4 +223,9 @@ test("NO_CONTROL_STYLE_BACKTICK_ENUM_STATUS_PRESENTATION", () => {
   assert.match(genericPublicScan, /PUBLIC_OPEN_STATE_COPY_INCLUDED_IN_SCAN/);
   assert.match(genericPublicScan, /EU_IMPACT_2026_002_EXTERNAL_RENDER/);
   assert.match(genericPublicScan, /WOEK_IMPACT_BUND_BHH_2027_EXTERNAL_RENDER/);
+  assert.match(genericPublicScan, /FACT_ONLY_HEAD_METADATA_FAILS_CLOSED/);
+  assert.match(genericPublicScan, /FACT_ONLY_SEARCH_AND_API_FAIL_CLOSED/);
+  assert.match(genericPublicScan, /publicHeadDescriptions/);
+  assert.match(governmentCard, /data-woek-raw-schema-proof="allowed"/);
+  assert.match(genericPublicScan, /RAW_SCHEMA_TERMS_ONLY_IN_EXPLICIT_TECHNICAL_PROOF/);
 });

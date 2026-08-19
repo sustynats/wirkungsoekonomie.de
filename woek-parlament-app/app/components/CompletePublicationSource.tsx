@@ -1,5 +1,6 @@
 import { sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
 import type { CompletePublicationSource as PublicationSource } from "@/lib/publication/fachakten";
+import { humanizeSystemValue } from "@/lib/presentation/labels";
 
 type TocEntry = { id: string; level: number; text: string };
 
@@ -43,7 +44,7 @@ function inline(value: string) {
   };
   let output = value.replace(/\[([^\]]+)\]\((https:\/\/[^\s)]+)\)/g, (_, label: string, url: string) => keep(safeLink(url, label)));
   output = output.replace(/https:\/\/[^\s<]+/g, (url) => keep(safeLink(url, url)));
-  output = escapeHtml(output)
+  output = escapeHtml(humanizeSystemValue(output))
     .replace(/`([^`]+)`/g, "<code>$1</code>")
     .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
     .replace(/(^|[^*])\*([^*]+)\*/g, "$1<em>$2</em>");
@@ -88,7 +89,7 @@ function renderMarkdown(markdown: string) {
     const trimmed = raw.trim();
     if (code) {
       if (/^```/.test(trimmed)) {
-        output.push(`<pre><code>${escapeHtml(code.join("\n"))}</code></pre>`);
+        output.push(`<pre><code>${escapeHtml(humanizeSystemValue(code.join("\n")))}</code></pre>`);
         code = null;
       } else {
         code.push(raw);
@@ -140,7 +141,7 @@ function renderMarkdown(markdown: string) {
     flushList(); flushQuote();
     paragraph.push(trimmed);
   }
-  if (code) output.push(`<pre><code>${escapeHtml(code.join("\n"))}</code></pre>`);
+  if (code) output.push(`<pre><code>${escapeHtml(humanizeSystemValue(code.join("\n")))}</code></pre>`);
   flush();
   return { html: output.join("\n"), toc };
 }
@@ -169,11 +170,11 @@ export function CompletePublicationSource({ source, idPrefix = "vollstaendige-fa
         <div><dt>Inhaltspfad-Abdeckung</dt><dd>{source.suppliedContentPathsCount.toLocaleString("de-DE")} von {source.suppliedContentPathsCount.toLocaleString("de-DE")}</dd></div>
       </dl>
     </header>
-    {rendered.toc.length > 0 && <nav className="complete-publication-toc" aria-label="Inhaltsverzeichnis der vollständigen Fachakte"><strong>Direkt zu einem Kapitel</strong><ol>{rendered.toc.map((entry) => <li key={entry.id} className={entry.level === 3 ? "complete-publication-toc--nested" : undefined}><a href={`#${entry.id}`}>{entry.text}</a></li>)}</ol></nav>}
+    {rendered.toc.length > 0 && <nav className="complete-publication-toc" aria-label="Inhaltsverzeichnis der vollständigen Fachakte"><strong>Direkt zu einem Kapitel</strong><ol>{rendered.toc.map((entry) => <li key={entry.id} className={entry.level === 3 ? "complete-publication-toc--nested" : undefined}><a href={`#${entry.id}`}>{humanizeSystemValue(entry.text)}</a></li>)}</ol></nav>}
     <div className="complete-publication-body" suppressHydrationWarning dangerouslySetInnerHTML={{ __html: rendered.html }} />
     <footer className="complete-publication-footer">
       <p><strong>Nachweis der Fassung:</strong> SHA-256 {source.markdownSha256}</p>
-      <ul>{source.sourceRecords.map((record) => <li key={`${record.kind}-${record.sha256}`}><strong>{record.kind}</strong>: {record.sha256}</li>)}</ul>
+      <ul>{source.sourceRecords.map((record) => <li key={`${record.kind}-${record.sha256}`}><strong>{humanizeSystemValue(record.kind)}</strong>: {record.sha256}</li>)}</ul>
     </footer>
   </section>;
 }

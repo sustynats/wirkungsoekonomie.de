@@ -8,6 +8,7 @@ import { parliamentaryOverviewAssessment } from "@/lib/presentation/overview-ass
 import { governmentPublicMaturity, parliamentPublicMaturity } from "@/lib/presentation/public-maturity";
 import { recommendationForImpactCase } from "@/lib/recommendations";
 import type { SearchableCase, SearchableFachanalyse, SearchableGovernmentImpact } from "@/lib/search";
+import { publicParliamentSummary } from "@/lib/public-api";
 
 export const metadata: Metadata = {
   title: "Suche",
@@ -17,7 +18,27 @@ export const metadata: Metadata = {
 export default function SearchPage() {
   const cases: SearchableCase[] = listPublishedCases().map((item) => {
     const assessment = parliamentaryOverviewAssessment(item);
-    return { ...item, assessment, maturity: parliamentPublicMaturity(item, assessment) };
+    const analysisPublished = Boolean(assessment);
+    return {
+      slug: item.slug,
+      title: item.title,
+      plainTitle: item.plainTitle,
+      kind: item.kind,
+      editorialStatus: item.editorialStatus,
+      materiality: item.materiality,
+      parliamentaryStatus: item.parliamentaryStatus,
+      statusVerification: item.statusVerification,
+      summary: publicParliamentSummary(item),
+      whatIsDecided: item.whatIsDecided,
+      intendedGoal: analysisPublished ? item.intendedGoal : "",
+      analysisStatus: analysisPublished ? item.analysisStatus : "FACT_ONLY",
+      impactPath: analysisPublished ? item.impactPath : [],
+      affectedGroups: analysisPublished ? item.affectedGroups : [],
+      questions: analysisPublished ? item.questions : [],
+      sources: item.sources,
+      assessment,
+      maturity: parliamentPublicMaturity(item, assessment),
+    };
   });
   const analyses: SearchableFachanalyse[] = listFachanalysen().map(({ slug, title, subtitle, type, status, scope, summary, focusAreas }) => ({ slug, title, subtitle, type, status, scope, summary, focusAreas }));
   const governmentImpacts: SearchableGovernmentImpact[] = getPublicImpactCases().map((record) => {

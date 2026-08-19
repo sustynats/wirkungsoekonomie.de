@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { GovernmentImpactCase } from "@/app/components/government/GovernmentImpactCase";
 import { historyClassificationLabels, impactCaseById, impactCaseVersions } from "@/lib/government/impact-cases";
 import { analysisUpdatesForImpactCase, evidenceEventsForImpactCase } from "@/lib/observatory/public-data";
+import { humanizeSystemValue } from "@/lib/presentation/labels";
 
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
   const { id } = await params;
@@ -31,7 +32,7 @@ export default async function GovernmentImpactCasePage({ params }: { params: Pro
       <GovernmentImpactCase record={record} />
       <section className="government-version-history" aria-labelledby="evidence-history-title">
         <h2 id="evidence-history-title">Was hat diese Bewertung verändert?</h2>
-        {evidenceEvents.length ? <ol>{evidenceEvents.map((event) => <li key={event.evidence_event_id}><strong>{event.title}</strong><span>{event.observation_date} · {event.attribution_status} · {event.what_changed_or_may_change}</span></li>)}</ol> : <p>Für diese Fassung ist kein fachlich freigegebenes EvidenceEvent als bewertungsändernder Auslöser registriert.</p>}
+        {evidenceEvents.length ? <ol>{evidenceEvents.map((event) => <li key={event.evidence_event_id}><strong>{event.title}</strong><span>{event.observation_date} · {humanizeSystemValue(event.attribution_status)} · {event.what_changed_or_may_change}</span></li>)}</ol> : <p>Für diese Fassung ist kein fachlich freigegebenes Evidenzereignis als Auslöser einer Bewertungsänderung registriert.</p>}
         {analysisUpdates.length > 0 && <ul>{analysisUpdates.map((update) => <li key={update.analysis_version}><strong>Analyse {update.supersedes_analysis_version} → {update.analysis_version}:</strong> {update.public_change_summary}</li>)}</ul>}
       </section>
       <section className="government-version-history" aria-labelledby="version-history-title">

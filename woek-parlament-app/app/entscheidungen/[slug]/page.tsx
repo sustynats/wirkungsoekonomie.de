@@ -10,7 +10,7 @@ import { CaseTypeMark } from "@/app/components/CaseTypeMark";
 import { FullReviewRecord } from "@/app/components/FullReviewRecord";
 import { CompletePublicationSource } from "@/app/components/CompletePublicationSource";
 import { DecisionReadinessGate } from "@/app/components/DecisionReadinessGate";
-import { EditorialReviewAssessment, OverviewAssessment } from "@/app/components/OverviewAssessment";
+import { OverviewAssessment } from "@/app/components/OverviewAssessment";
 import { PublicMaturity } from "@/app/components/PublicMaturity";
 import { getCase, formatDate, materialityLabel } from "@/lib/cases";
 import { caseKindLabel, humanizeSystemValue, verificationLabel } from "@/lib/presentation/labels";
@@ -18,13 +18,19 @@ import { parliamentaryOverviewAssessment } from "@/lib/presentation/overview-ass
 import { parliamentPublicMaturity } from "@/lib/presentation/public-maturity";
 import { sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
 import { getCasePublicationSource } from "@/lib/publication/fachakten";
+import { publicParliamentSummary } from "@/lib/public-api";
 
 export const dynamic = "force-dynamic";
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const item = getCase(slug);
-  return item ? { title: item.plainTitle, description: item.summary } : {};
+  if (!item) return {};
+  const assessment = parliamentaryOverviewAssessment(item);
+  return {
+    title: item.plainTitle,
+    description: publicParliamentSummary(item),
+  };
 }
 
 type DecisionView = "ueberblick" | "wirkprofil" | "wirkpfade" | "berechnungen" | "normen" | "fachakte" | "quellen";
@@ -94,7 +100,7 @@ export default async function DecisionPage({ params, searchParams }: { params: P
         <div><h1>{item.plainTitle}</h1>{item.title !== item.plainTitle && <p className="official-title"><strong>Amtlicher Titel:</strong> {item.title}</p>}<p className="lead">{publicLead}</p><BookmarkLink title={item.plainTitle} path={`/entscheidungen/${item.slug}`} /></div>
       </header>
 
-      {overviewAssessment ? <OverviewAssessment assessment={overviewAssessment} /> : <EditorialReviewAssessment subject={item.plainTitle} compact={false} />}
+      {overviewAssessment ? <OverviewAssessment assessment={overviewAssessment} /> : null}
       <PublicMaturity maturity={publicMaturity} />
 
       <section className="sixty-second" aria-labelledby="sixty-second-title"><div><p className="eyebrow">60 Sekunden</p><h2 id="sixty-second-title">Worum geht es?</h2></div><dl><div className="sixty-second-summary"><dt>Kurz erklärt</dt><dd>{publicLead}</dd></div><div><dt>Was wird entschieden?</dt><dd>{humanizeSystemValue(item.whatIsDecided)}</dd></div><div><dt>Welche Veränderung steht im Mittelpunkt?</dt><dd>{editoriallyPublished ? decisionFocus(item) : "WÖk-Analyse noch nicht redaktionell veröffentlicht."}</dd></div></dl></section>

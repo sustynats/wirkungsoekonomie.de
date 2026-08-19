@@ -2,7 +2,6 @@ import Link from "next/link";
 import { jurisdictionById } from "@/lib/parliament/jurisdictions";
 import { saxonyAnhaltElectionProgrammes } from "@/data/sachsen-anhalt-election-programmes";
 import { allPublicationSourceRecords } from "@/lib/publication/fachakten";
-import { EditorialReviewAssessment } from "@/app/components/OverviewAssessment";
 import { PublicMaturity } from "@/app/components/PublicMaturity";
 import { factOnlyPublicMaturity } from "@/lib/presentation/public-maturity";
 
@@ -10,7 +9,7 @@ const saxonyAnhalt = jurisdictionById("sachsen-anhalt");
 
 export const metadata = {
   title: "Landtagswahl Sachsen-Anhalt 2026 | Wirkungsportal Parlament",
-  description: "Wahlprogramme vor der Landtagswahl Sachsen-Anhalt 2026: Wirkungspotenziale, Risiken, Quellen und offene Fragen verständlich und nachvollziehbar."
+  description: "Originalprogramme und strukturierte Faktenakten zur Landtagswahl Sachsen-Anhalt 2026. WÖk-Wirkungsanalysen sind noch nicht redaktionell veröffentlicht."
 };
 
 export default function SaxonyAnhaltPage() {
@@ -26,17 +25,17 @@ export default function SaxonyAnhaltPage() {
         <div className="state-hero">
           <div>
             <p className="eyebrow">Wirkungsportal Länder · Sachsen-Anhalt</p>
-            <h1>Was könnten die Programme für Sachsen-Anhalt bewirken?</h1>
-            <p className="lead">Zur Landtagswahl am {electionDate} bereitet das Portal die Wahlprogramme verständlich auf: Welche Veränderung wird jeweils angestrebt? Für wen? Über welchen Wirkpfad? Wo liegen Risiken, Grenzen und offene Datenfragen?</p>
+            <h1>Welche Vorschläge machen die Programme für Sachsen-Anhalt?</h1>
+            <p className="lead">Zur Landtagswahl am {electionDate} dokumentiert das Portal die Wahlprogramme mit Originalquelle, Fassung und strukturierten Zusagen. Die WÖk-Wirkungsanalysen dieser Programme sind noch nicht redaktionell veröffentlicht.</p>
             <div className="hero-actions">
-          <Link className="button button-primary" href="#wahlprogramme">6 Wahlprogramme im Wirkungscheck</Link>
+          <Link className="button button-primary" href="#wahlprogramme">6 Wahlprogramme und Quellen</Link>
               <Link className="button button-secondary" href="/laender/sachsen-anhalt/quellen">Quellen und Programme</Link>
             </div>
           </div>
           <aside className="state-hero-fact" aria-label="Einordnung des Wahlbereichs">
             <p className="eyebrow">Vor der Wahl</p>
             <h2>Programme sind Versprechen, noch keine Wirkung.</h2>
-            <p>Deshalb zeigt der Vergleich Wirkungspotenzial und Wirkungsrisiken klar getrennt von tatsächlich beobachteter Wirkung. Eine Parteizugehörigkeit ist kein Bewertungskriterium.</p>
+            <p>Die veröffentlichten Faktenakten halten zunächst fest, was vorgeschlagen wird. Wirkungspotenziale und Wirkungsrisiken erscheinen erst nach fachlicher und redaktioneller Freigabe. Eine Parteizugehörigkeit ist kein Bewertungskriterium.</p>
             <dl>
               <div><dt>Wahltag</dt><dd>{electionDate}</dd></div>
               <div><dt>28 Landesziele</dt><dd>mit Fundstelle und SDG-Bezug</dd></div>
@@ -72,30 +71,29 @@ export default function SaxonyAnhaltPage() {
       </section>
 
       <section className="shell section section-surface state-publication-status" aria-labelledby="state-status-title">
-        <div><p className="eyebrow">Referenzrahmen und Programme</p><h2 id="state-status-title">Landesziele und Programme bleiben getrennt nachvollziehbar.</h2><p className="lead">Die landeseigenen Nachhaltigkeitsziele sind mit ihren Fundstellen veröffentlicht. Jedes der sechs vorliegenden Wahlprogramme hat eine eigene, quellengestützte Wirkungsakte – nicht eine aus Wahlkampftexten abgeleitete Gesamtwertung.</p></div>
+        <div><p className="eyebrow">Referenzrahmen und Programme</p><h2 id="state-status-title">Landesziele und Programme bleiben getrennt nachvollziehbar.</h2><p className="lead">Die landeseigenen Nachhaltigkeitsziele sind mit ihren Fundstellen veröffentlicht. Für jedes der sechs vorliegenden Wahlprogramme gibt es eine eigene Quellen- und Faktenakte – ohne aus Wahlkampftexten eine Gesamtwertung abzuleiten.</p></div>
         <ul>
           <li><strong>1. Landesziele</strong><span>28 Zieltexte der Nachhaltigkeitsstrategie sind mit Fundstelle, Indikatorbezug, SDG-Bezug und Wirkungsräumen dokumentiert.</span></li>
-          <li><strong>2. Programme</strong><span>Die sechs vorhandenen Programme liegen mit Fassung, Fundstelle, Wirkpfaden, Zuständigkeit, Bedingungen und Datenlücken vor – ohne Parteipunktzahl.</span></li>
+          <li><strong>2. Programme</strong><span>Die sechs vorhandenen Programme liegen mit Fassung, Fundstellen und strukturierten Zusagen vor. WÖk-Wirkungsanalysen sind noch nicht redaktionell veröffentlicht.</span></li>
           <li><strong>3. Entscheidungen</strong><span>Nach der Wahl werden Koalitionsvereinbarung, Landtagsentscheidungen, Umsetzung und spätere Beobachtung als getrennte Stationen verbunden.</span></li>
         </ul>
       </section>
 
       <section className="shell section" id="wahlprogramme" aria-labelledby="state-programmes-title">
-        <div className="section-heading"><div><p className="eyebrow">Wahlprogramme im Wirkungscheck</p><h2 id="state-programmes-title">Sechs Programme. Sechs vollständige Wirkungsakten.</h2><p className="lead">Die Akten prüfen mögliche Zustandsveränderungen, Risiken, Umsetzungsbedingungen und offene Datenfragen. Sie bewerten keine Parteien oder Personen und geben keine Wahlempfehlung.</p></div></div>
+        <div className="section-heading"><div><p className="eyebrow">Wahlprogramme im Quellencheck</p><h2 id="state-programmes-title">Sechs Programme. Sechs nachvollziehbare Faktenakten.</h2><p className="lead">Die Akten dokumentieren Programmfassung, Originalfundstellen und strukturierte Zusagen. Sie enthalten noch keine veröffentlichte WÖk-Wirkungsanalyse, bewerten keine Parteien oder Personen und geben keine Wahlempfehlung.</p></div></div>
         <div className="source-register state-programme-register">
           {saxonyAnhaltElectionProgrammes.map((programme) => {
             const review = reviewBySource.get(programme.sourceKey);
             const overview = review?.overview && typeof review.overview === "object" && !Array.isArray(review.overview) ? review.overview as Record<string, unknown> : {};
             const count = typeof overview.commitment_count === "number" ? overview.commitment_count : null;
-            return <article key={programme.sourceKey} data-woek-preview-card="review-required">
+            return <article key={programme.sourceKey} data-woek-preview-card="fact-only">
               <h3>{programme.title}</h3>
-              <EditorialReviewAssessment subject={programme.title} />
-              <PublicMaturity maturity={factOnlyPublicMaturity(programme.title, `Das offizielle Wahlprogramm „${programme.title}“ ist mit seinem veröffentlichten Zusagenregister dokumentiert.`)} compact />
+              <PublicMaturity maturity={factOnlyPublicMaturity(programme.title)} compact />
               <div data-woek-process-metadata>
                 <p className="source-register-label">{programme.party} · Originalprogramm</p>
                 <p className="commitment-count"><strong>{count?.toLocaleString("de-DE") ?? "–"} Zusageeinheiten</strong> · vollständige Fachakte und Zusageregister</p>
               </div>
-              <Link className="text-link" href={`/laender/sachsen-anhalt/wahlprogramme/${programme.sourceKey}`}>Wirkungsakte ansehen <span aria-hidden="true">→</span></Link>
+              <Link className="text-link" href={`/laender/sachsen-anhalt/wahlprogramme/${programme.sourceKey}`}>Faktenakte ansehen <span aria-hidden="true">→</span></Link>
             </article>;
           })}
         </div>
@@ -104,7 +102,7 @@ export default function SaxonyAnhaltPage() {
       <section className="shell section state-next" aria-labelledby="state-next-title">
         <div><p className="eyebrow">Was als Nächstes kommt</p><h2 id="state-next-title">Vom Programm zur überprüfbaren politischen Praxis.</h2></div>
         <ol>
-          <li><span>01</span><div><h3>Wahlprogramme</h3><p>Welche Vorschläge stehen in den Originalfassungen – und welche Wirkungspotenziale, Risiken und Bedingungen sind daran gebunden?</p></div></li>
+          <li><span>01</span><div><h3>Wahlprogramme</h3><p>Welche Vorschläge stehen in den Originalfassungen? Wirkungspotenziale, Risiken und Bedingungen werden erst nach fachlicher Freigabe ergänzt.</p></div></li>
           <li><span>02</span><div><h3>Koalitionsvereinbarung</h3><p>Welche Zusagen werden übernommen, verändert oder nicht vereinbart?</p></div></li>
           <li><span>03</span><div><h3>Landtagsentscheidungen</h3><p>Was steht konkret zur Entscheidung – und was könnte vor dem Beschluss noch verbessert werden?</p></div></li>
           <li><span>04</span><div><h3>Wirkungsmonitor</h3><p>Was lässt sich später tatsächlich beobachten und begründet zurückkoppeln?</p></div></li>

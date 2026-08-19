@@ -593,7 +593,7 @@ function recommendationSources(): StaticPublicSource[] {
         canonicalUrl,
         documentDate: null,
         retrievedAt: "2026-08-18T12:00:00Z",
-        versionLabel: `In RecommendationVersion ${recommendation.recommendation_version} dokumentiert`,
+        versionLabel: `In Fassung ${recommendation.recommendation_version} der WÖk-Handlungsoption dokumentiert`,
         sourceHash: null,
         temporalClass: "AVAILABLE_AT_DECISION_TIME",
         abstract: curated?.summary ?? "Diese Quelle gehört zur Fakten- oder Evidenzbasis der fachlich freigegebenen WÖk-Handlungsoption. Sie wird nicht automatisch als Wirkungs- oder Kausalitätsnachweis behandelt.",
@@ -716,7 +716,7 @@ function observatorySources(): StaticPublicSource[] {
       const canonicalUrl = isSafePublicSourceUrl(url);
       const slug = canonicalUrl ? sourceSlugForCanonicalUrl(canonicalUrl) : null;
       if (!canonicalUrl || !slug) continue;
-      const claim = typeof reference === "string" ? "Die Quelle trägt die veröffentlichte Beobachtung mit der im EvidenceEvent dokumentierten Quellenfunktion." : reference.claim;
+      const claim = typeof reference === "string" ? "Die Quelle trägt die veröffentlichte Beobachtung mit der im Evidenzereignis dokumentierten Quellenfunktion." : reference.claim;
       const sourceName = typeof reference === "string" ? institutionForUrl(canonicalUrl) : reference.source;
       const usage: PublicSourceUsage = {
         caseSlug: event.evidence_event_id,
@@ -747,7 +747,7 @@ function observatorySources(): StaticPublicSource[] {
         canonicalUrl,
         documentDate: event.publication_date.slice(0, 10),
         retrievedAt: event.publication_date,
-        versionLabel: `EvidenceEvent ${event.evidence_event_id}`,
+        versionLabel: `Evidenzereignis ${event.evidence_event_id}`,
         sourceHash: null,
         temporalClass: "PUBLISHED_AFTER_DECISION",
         abstract: `${claim} Die Quelle wird als Beobachtung bzw. Kontext geführt; aus zeitlicher Nähe allein folgt keine politische Zurechnung.`,

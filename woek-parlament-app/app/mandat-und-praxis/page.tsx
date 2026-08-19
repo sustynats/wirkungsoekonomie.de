@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { EditorialReviewAssessment } from "@/app/components/OverviewAssessment";
 import { PublicMaturity } from "@/app/components/PublicMaturity";
 import { politicalSourceCatalog } from "@/lib/commitments/source-catalog";
 import { factOnlyPublicMaturity } from "@/lib/presentation/public-maturity";
@@ -88,10 +87,9 @@ export default function MandatUndPraxisPage() {
       <section className="section section-compact" aria-labelledby="programmes-title">
         <div className="section-heading"><div><p className="eyebrow">Quellenregister</p><h2 id="programmes-title">Wahlprogramme 2025</h2></div></div>
         <div className="source-register">
-          {electionPrograms.map((source) => <article key={source.sourceKey} data-woek-preview-card="review-required">
+          {electionPrograms.map((source) => <article key={source.sourceKey} data-woek-preview-card="fact-only">
             <h3>{source.title}</h3>
-            <EditorialReviewAssessment subject={source.title} />
-            <PublicMaturity maturity={factOnlyPublicMaturity(source.title, `Das offizielle Wahlprogramm „${source.title}“ ist mit seinen Zusagen und Fundstellen dokumentiert.`)} compact />
+            <PublicMaturity maturity={factOnlyPublicMaturity(source.title)} compact />
             <div data-woek-process-metadata><p className="source-register-label">Originalquelle der Partei · {source.actor}</p>
             <p>{source.note}</p><p className="commitment-count"><strong>{source.commitmentCount.toLocaleString("de-DE")} strukturierte Zusagen</strong> · mit Quellenfingerabdruck dokumentiert</p></div>
             <Link className="text-link" href={`/mandat-und-praxis/${source.sourceKey}`}>Zusagen und Fundstellen ansehen <span aria-hidden="true">→</span></Link>
@@ -101,10 +99,9 @@ export default function MandatUndPraxisPage() {
 
       {coalitionAgreement && <section className="section section-compact coalition-source" aria-labelledby="coalition-title">
         <div className="section-heading"><div><p className="eyebrow">Gemeinsame Vereinbarung</p><h2 id="coalition-title">Koalitionsvertrag 2025</h2></div></div>
-        <article data-woek-preview-card="review-required">
+        <article data-woek-preview-card="fact-only">
           <h3>{coalitionAgreement.title}</h3>
-          <EditorialReviewAssessment subject={coalitionAgreement.title} />
-          <PublicMaturity maturity={factOnlyPublicMaturity(coalitionAgreement.title, `Die Mandatsquelle „${coalitionAgreement.title}“ ist mit ihren Zusagen und Fundstellen dokumentiert.`)} compact />
+          <PublicMaturity maturity={factOnlyPublicMaturity(coalitionAgreement.title)} compact />
           <div data-woek-process-metadata><p className="source-register-label">Originaldokument der Koalitionsparteien · {coalitionAgreement.actor}</p>
           <p>{coalitionAgreement.note} Jede spätere Zuordnung wird die konkrete Vertragsstelle, die dazugehörige parlamentarische Entscheidung und ihren Quellenstand zeigen.</p><p className="commitment-count"><strong>{coalitionAgreement.commitmentCount.toLocaleString("de-DE")} strukturierte Zusagen</strong> · mit Quellenfingerabdruck dokumentiert</p></div>
           <Link className="text-link" href={`/mandat-und-praxis/${coalitionAgreement.sourceKey}`}>Zusagen und Fundstellen ansehen <span aria-hidden="true">→</span></Link>

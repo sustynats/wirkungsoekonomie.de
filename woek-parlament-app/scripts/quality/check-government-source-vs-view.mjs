@@ -49,7 +49,10 @@ function comparable(value) {
 }
 
 function humanizeSystemValue(value) {
-  return String(value).replace(/\b[A-Z][A-Z0-9]*(?:_[A-Z0-9]+)+\b/g, (systemValue) => {
+  return String(value)
+    .replaceAll("RecommendationVersion", "Fassung der WÖk-Handlungsoption")
+    .replaceAll("EvidenceEvent", "Evidenzereignis")
+    .replace(/\b[A-Z][A-Z0-9]*(?:_[A-Z0-9]+)+\b/g, (systemValue) => {
     const words = systemValue.toLocaleLowerCase("de-DE").replaceAll("_", " ");
     return `${words.charAt(0).toLocaleUpperCase("de-DE")}${words.slice(1)}`;
   }).replace(/\b[a-z][a-z0-9]*(?:_[a-z0-9]+)+\b/g, (systemValue) => {
@@ -142,7 +145,7 @@ function recommendationPublicFields(record) {
     for (const [index, value] of (record[arrayField] ?? []).entries()) fields.push([`/${arrayField}/${index}`, value]);
   }
   if (record.analysis_mode === "RETROSPECTIVE_DECISION_REVIEW") {
-    fields.push(["/decision_date", record.decision_date], ["/knowledge_cutoff_date", record.knowledge_cutoff_date], ["/hindsight_limitations", record.hindsight_limitations]);
+    fields.push(["/decision_date", record.decision_date], ["/knowledge_cutoff_date", record.knowledge_cutoff_date], ["/hindsight_limitations", humanizeSystemValue(record.hindsight_limitations)]);
   }
   if (record.supersedes_recommendation_version) fields.push(["/supersedes_recommendation_version", record.supersedes_recommendation_version]);
   return fields.filter(([, value]) => value !== null && value !== undefined && comparable(value).length > 0);

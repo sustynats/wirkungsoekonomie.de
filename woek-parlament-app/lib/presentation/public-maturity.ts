@@ -228,7 +228,7 @@ export function governmentPublicMaturity(
       layer("goal", "WÖk-Zielprüfung und Zielhierarchie", goalAvailable ? "AVAILABLE" : "PENDING", goalAvailable ? "Fachlich freigegeben." : `Für „${item.title}“ noch nicht als eigener Fachlayer freigegeben.`),
       layer("impact", "Wirkungspotenzial und Wirkungsrisiken", "AVAILABLE", assessment.assessmentLabel),
       layer("reality", "Beobachtung und Reality Check", realityPending ? "PENDING" : "AVAILABLE", assessment.realityCheckSummary || item.reality_check_summary),
-      layer("recommendation", "WÖk-Handlungsoption", recommendationAvailable ? "AVAILABLE" : "PENDING", recommendationAvailable ? "Fachlich freigegebene RecommendationVersion vorhanden." : `Für „${item.title}“ noch nicht fachlich freigegeben.`),
+      layer("recommendation", "WÖk-Handlungsoption", recommendationAvailable ? "AVAILABLE" : "PENDING", recommendationAvailable ? "Fachlich freigegebene Fassung der WÖk-Handlungsoption vorhanden." : `Für „${item.title}“ noch nicht fachlich freigegeben.`),
       layer("operationalization", "WÖk-Inspirations- und Operationalisierungsmodell", operationalizationAvailable ? "AVAILABLE" : "PENDING", operationalizationAvailable ? "Fachlich freigegebenes Modell verknüpft." : `Für „${item.title}“ ist kein freigegebenes Modell verknüpft.`),
     ],
   };
@@ -305,7 +305,7 @@ export function parliamentPublicMaturity(
     workingAct.counterfactualQuestions[0] ? `Die Zurechnung bleibt offen, bis diese Vergleichsfrage beantwortet ist: ${workingAct.counterfactualQuestions[0]}` : undefined,
     `Eine eigenständige WÖk-Problemprüfung für „${item.plainTitle}“ ist noch nicht als freigegebener Layer veröffentlicht.`,
     `Eine eigenständige WÖk-Zielprüfung mit Zielhierarchie für „${item.plainTitle}“ ist noch nicht als freigegebener Layer veröffentlicht.`,
-    `Eine WÖk-Handlungsoption für „${item.plainTitle}“ ist noch nicht als freigegebene RecommendationVersion veröffentlicht.`,
+    `Eine WÖk-Handlungsoption für „${item.plainTitle}“ ist noch nicht als freigegebene Fassung veröffentlicht.`,
     `Ein WÖk-Inspirations- oder Operationalisierungsmodell ist mit „${item.plainTitle}“ noch nicht fachlich freigegeben verknüpft.`,
   ]);
   const flags = unique([
@@ -335,7 +335,7 @@ export function parliamentPublicMaturity(
       layer("goal", "WÖk-Zielprüfung und Zielhierarchie", "PENDING", `Für „${item.plainTitle}“ noch nicht als eigener Fachlayer freigegeben.`),
       layer("impact", "Wirkungspotenzial und Wirkungsrisiken", "AVAILABLE", assessment.assessmentLabel),
       layer("reality", "Beobachtung und Reality Check", realityAvailable ? "AVAILABLE" : "PENDING", assessment.realityCheckSummary || labels.REALITY_CHECK_PENDING),
-      layer("recommendation", "WÖk-Handlungsoption", "PENDING", `Für „${item.plainTitle}“ noch nicht als RecommendationVersion freigegeben.`),
+      layer("recommendation", "WÖk-Handlungsoption", "PENDING", `Für „${item.plainTitle}“ noch nicht als eigene Fassung freigegeben.`),
       layer("operationalization", "WÖk-Inspirations- und Operationalisierungsmodell", "PENDING", `Für „${item.plainTitle}“ ist kein freigegebenes Modell verknüpft.`),
     ],
   };

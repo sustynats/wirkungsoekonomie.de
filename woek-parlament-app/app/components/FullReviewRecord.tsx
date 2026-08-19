@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
 import type { PublicFullReview } from "@/data/cases";
+import { humanizeSystemValue } from "@/lib/presentation/labels";
 
 const sectionLabels: Record<string, string> = {
   decision: "Entscheidungsgegenstand und amtliche Grundlage",
@@ -79,7 +80,7 @@ function InlineValue({ value }: { value: string }) {
   const parts = value.split(/(https:\/\/[^\s]+)/g);
   return <>{parts.map((part, index) => /^https:\/\//.test(part)
     ? <Link key={`${part}-${index}`} href={sourceDetailHrefForUrl(part)}>{part}</Link>
-    : part)}</>;
+    : humanizeSystemValue(part))}</>;
 }
 
 function ContentValue({ value, level = 0 }: { value: unknown; level?: number }): ReactNode {

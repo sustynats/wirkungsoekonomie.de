@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { EditorialReviewAssessment, OverviewAssessment } from "@/app/components/OverviewAssessment";
+import { OverviewAssessment } from "@/app/components/OverviewAssessment";
 import { PublicMaturity } from "@/app/components/PublicMaturity";
 import { assessmentOnlyPublicMaturity, factOnlyPublicMaturity } from "@/lib/presentation/public-maturity";
 import { getPublicSource, sourceCategoryLabel, sourceRoleLabel, temporalClassLabel } from "@/lib/sources/public-registry";
@@ -59,26 +59,24 @@ export default async function SourceDetailPage({ params }: { params: Promise<{ s
         </aside>
       </div>
       <section className="decision-section source-usage-section">
-        <p className="eyebrow">WÖk-Kurzbewertung · Verwendung im Portal</p>
+        <p className="eyebrow">Verwendung im Portal</p>
         <h2>Für diese Analysen verwendet</h2>
         {source.usages.length > 0 ? <div className="source-usage-list">{source.usages.map((usage) => <article
           key={`${usage.caseSlug}-${usage.sourceRole}`}
-          data-woek-preview-card={isPoliticalCaseUsage(usage.caseKind) ? usage.assessment ? "published" : "review-required" : undefined}
+          data-woek-preview-card={isPoliticalCaseUsage(usage.caseKind) ? usage.assessment ? "published" : "fact-only" : undefined}
         >
           <div>
             <h3><Link href={usage.caseHref ?? `/entscheidungen/${usage.caseSlug}`}>{usage.caseTitle}</Link></h3>
             {usage.assessment ? <OverviewAssessment assessment={usage.assessment} compact />
-              : isPoliticalCaseUsage(usage.caseKind) ? <EditorialReviewAssessment subject={usage.caseTitle} />
-                : usage.analysisSummary ? <p><strong>Beobachtete Entwicklung:</strong> {usage.analysisSummary}</p> : null}
+              : !isPoliticalCaseUsage(usage.caseKind) && usage.analysisSummary ? <p><strong>Beobachtete Entwicklung:</strong> {usage.analysisSummary}</p> : null}
             {isPoliticalCaseUsage(usage.caseKind) ? <PublicMaturity maturity={usage.assessment
               ? assessmentOnlyPublicMaturity(usage.caseTitle, usage.assessment)
-              : factOnlyPublicMaturity(usage.caseTitle, `Die Verwendung der Quelle für „${usage.caseTitle}“ ist dokumentiert; eine fehlende strukturierte Kurzbewertung wird nicht ersetzt.`)} compact /> : null}
+              : factOnlyPublicMaturity(usage.caseTitle)} compact /> : null}
             {usage.caseKind === "GOVERNMENT_RECOMMENDATION" && usage.analysisSummary
               ? <p><strong>Fachlich freigegebene WÖk-Handlungsoption:</strong> {usage.analysisSummary}</p>
               : null}
             <div data-woek-process-metadata>
               <p className="source-register-label">{sourceRoleLabel[usage.sourceRole]}{usage.decisionDate ? ` · Entscheidung ${dateLabel(usage.decisionDate)}` : ""}</p>
-              {!usage.assessment && (usage.analysisDirection || usage.evidenceLevel) && <p className="source-locations">{usage.analysisDirection && <><strong>Einordnung:</strong> {usage.analysisDirection}</>}{usage.analysisDirection && usage.evidenceLevel ? " · " : ""}{usage.evidenceLevel && <><strong>Evidenz:</strong> {usage.evidenceLevel}</>}</p>}
               {usage.note && <p>{usage.note}</p>}
               {usage.locations.length > 0 && <p className="source-locations"><strong>Relevante Fundstellen:</strong> {usage.locations.join(" · ")}</p>}
             </div>

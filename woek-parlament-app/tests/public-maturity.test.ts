@@ -96,6 +96,15 @@ test("public maturity is rendered before process metadata on every preview famil
   }
 });
 
+test("fact-only presentation is a publication status, never a WÖk assessment", () => {
+  const source = readFileSync("app/components/PublicMaturity.tsx", "utf8");
+  const assessmentSource = readFileSync("app/components/OverviewAssessment.tsx", "utf8");
+  assert.match(source, /maturity\.primary === "FACT_ONLY"/);
+  assert.match(source, /data-woek-fact-only-status="published"/);
+  assert.match(source, /WÖk-Wirkungsanalyse noch nicht veröffentlicht/);
+  assert.doesNotMatch(assessmentSource, /EditorialReviewAssessment/);
+});
+
 test("public glossary links to the canonical central glossary", () => {
   const source = readFileSync("app/components/GlossaryBasics.tsx", "utf8");
   assert.match(source, /https:\/\/wirkungsoekonomie\.de\/begriffe\//);

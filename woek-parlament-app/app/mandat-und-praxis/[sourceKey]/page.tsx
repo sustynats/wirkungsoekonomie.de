@@ -3,7 +3,6 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CompleteSourceRecord } from "@/app/components/CompleteSourceRecord";
 import { CompletePublicationSource } from "@/app/components/CompletePublicationSource";
-import { EditorialReviewAssessment } from "@/app/components/OverviewAssessment";
 import { PublicMaturity } from "@/app/components/PublicMaturity";
 import { getPublicCommitmentRegister } from "@/lib/commitments/public-register";
 import { getFederalPublicationSource } from "@/lib/publication/fachakten";
@@ -51,10 +50,9 @@ export default async function CommitmentRegisterPage({ params }: { params: Promi
 
     {Object.entries(grouped).map(([domain, commitments]) => <section className="commitment-domain" id={encodeURIComponent(domain)} key={domain} aria-labelledby={`domain-${encodeURIComponent(domain)}`}>
       <header><p className="eyebrow">Themenfeld</p><h2 id={`domain-${encodeURIComponent(domain)}`}>{domain}</h2><p>{commitments.length.toLocaleString("de-DE")} dokumentierte Zusagen</p></header>
-      <div className="commitment-list">{commitments.map((commitment, index) => <article id={commitment.key} key={commitment.key} data-woek-preview-card="review-required">
+      <div className="commitment-list">{commitments.map((commitment, index) => <article id={commitment.key} key={commitment.key} data-woek-preview-card="fact-only">
         <h3>{commitment.title}</h3>
-        <EditorialReviewAssessment subject={commitment.title} />
-        <PublicMaturity maturity={factOnlyPublicMaturity(commitment.title, `Die Zusage „${commitment.title}“ ist mit ihrem Originalwortlaut und ihrer Fundstelle dokumentiert.`)} compact />
+        <PublicMaturity maturity={factOnlyPublicMaturity(commitment.title)} compact />
         <p className="source-register-label" data-woek-process-metadata>Zusage {index + 1} · {commitment.policyDomain}</p>
         <p className="commitment-full-text">{commitment.text}</p>
         <dl data-woek-process-metadata><div><dt>Fundstelle</dt><dd>{commitment.location ?? "Im gelieferten Fachbestand nicht genauer ausgewiesen"}</dd></div>{commitment.temporalScope && <div><dt>Zeitraum</dt><dd>{commitment.temporalScope}</dd></div>}</dl>

@@ -55,24 +55,3 @@ export function OverviewAssessment({ assessment, compact = false }: { assessment
     </section>
   );
 }
-
-export function EditorialReviewAssessment({ subject, compact = true }: { subject: string; compact?: boolean }) {
-  const label = "WÖk-Kurzbewertung noch nicht redaktionell veröffentlicht";
-  return (
-    <section
-      className={`overview-assessment overview-assessment--review${compact ? " overview-assessment--compact" : ""}`}
-      aria-label="WÖk-Kurzbewertung: redaktionelle Prüfung offen"
-      data-woek-preview-assessment="review-required"
-      data-woek-assessment-surface={compact ? "preview" : "detail"}
-    >
-      <div className="overview-assessment-heading">
-        <AssessmentIcon label="Wirkungseinordnung noch offen" />
-        <div>
-          <p className="eyebrow">WÖk-Kurzbewertung</p>
-          <p className="overview-assessment-label"><strong>{label}</strong></p>
-        </div>
-      </div>
-      <p className="overview-assessment-summary">Für <strong>{subject}</strong> liegt in dieser Ansicht noch keine fachlich freigegebene, strukturierte WÖk-Kurzbewertung vor. Vorhandene Fakten- und Fachakteninhalte bleiben zugänglich; eine fehlende Kurzbewertung ist weder neutral noch ein Wirkungsurteil.</p>
-    </section>
-  );
-}

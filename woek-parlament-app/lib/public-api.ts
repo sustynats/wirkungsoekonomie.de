@@ -1,5 +1,12 @@
 import type { ParliamentaryCase } from "@/data/cases";
 import { sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
+import { parliamentaryOverviewAssessment } from "@/lib/presentation/overview-assessment";
+
+export function publicParliamentSummary(item: ParliamentaryCase) {
+  return parliamentaryOverviewAssessment(item)
+    ? item.summary
+    : `Amtlich dokumentierter parlamentarischer Vorgang: ${item.plainTitle}. Eine WÖk-Wirkungsanalyse ist noch nicht veröffentlicht.`;
+}
 
 export function publicCase(item: ParliamentaryCase) {
   return {
@@ -13,21 +20,33 @@ export function publicCase(item: ParliamentaryCase) {
     statusVerification: item.statusVerification,
     nextEvent: item.nextEvent,
     lastUpdated: item.lastUpdated,
-    summary: item.summary,
+    summary: publicParliamentSummary(item),
     analysisStatus: item.analysisStatus,
     versionNote: item.versionNote
   };
 }
 
 export function publicImpact(item: ParliamentaryCase) {
+  const assessment = parliamentaryOverviewAssessment(item);
+  if (!assessment) {
+    return {
+      slug: item.slug,
+      publicationStatus: "FACT_ONLY" as const,
+      whatIsDecided: item.whatIsDecided,
+      editorialStatus: item.editorialStatus,
+      woekAnalysisPublished: false,
+    };
+  }
   return {
     slug: item.slug,
+    publicationStatus: "WOEK_ANALYSIS_PUBLISHED" as const,
     whatIsDecided: item.whatIsDecided,
     intendedGoal: item.intendedGoal,
     impactPath: item.impactPath,
     affectedGroups: item.affectedGroups,
     questions: item.questions,
-    editorialStatus: item.editorialStatus
+    editorialStatus: item.editorialStatus,
+    woekAnalysisPublished: true,
   };
 }
 

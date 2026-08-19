@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { GovernmentImpactCase } from "@/app/components/government/GovernmentImpactCase";
-import { EditorialReviewAssessment } from "@/app/components/OverviewAssessment";
 import { PublicMaturity } from "@/app/components/PublicMaturity";
 import {
   actionById,
@@ -38,7 +37,7 @@ export default async function GovernmentActionDetailPage({ params }: { params: P
     <article className="government-detail">
       <header className="shell government-detail-hero">
         <h1>{action.title}</h1>
-        {impactCases.length ? <div className="government-linked-impact-cases">{impactCases.map((record) => <GovernmentImpactCase key={record.impact_case_id} record={record} compact />)}</div> : <><EditorialReviewAssessment subject={action.title} compact={false} /><PublicMaturity maturity={factOnlyPublicMaturity(action.title, `Die amtlich belegte Regierungsakte „${action.title}“ ist als Sachverhalt veröffentlicht.`)} /></>}
+        {impactCases.length ? <div className="government-linked-impact-cases">{impactCases.map((record) => <GovernmentImpactCase key={record.impact_case_id} record={record} compact />)}</div> : <PublicMaturity maturity={factOnlyPublicMaturity(action.title)} />}
         <p className="eyebrow" data-woek-process-metadata>Regierungsakte · Faktenschicht</p>
         <div className="government-detail-badges" data-woek-process-metadata>
           <span className="chip chip--depth">{actionTypeLabels[action.action_type] ?? action.action_type}</span>

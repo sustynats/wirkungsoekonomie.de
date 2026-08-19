@@ -5,7 +5,7 @@ import { useMemo, useState } from "react";
 import { humanizeSystemValue, materialityLabel } from "@/lib/presentation/labels";
 import { defaultSearchFilters, searchFachanalysen, searchGovernmentImpacts, searchPublicCases, type ParliamentSearchFilters, type SearchableCase, type SearchableFachanalyse, type SearchableGovernmentImpact } from "@/lib/search";
 import { wirkungsraumBookmarkUrl } from "@/lib/wirkungsraum";
-import { EditorialReviewAssessment, OverviewAssessment } from "@/app/components/OverviewAssessment";
+import { OverviewAssessment } from "@/app/components/OverviewAssessment";
 import { PublicMaturity } from "@/app/components/PublicMaturity";
 import { publishedDossierPublicMaturity } from "@/lib/presentation/public-maturity";
 
@@ -103,7 +103,7 @@ function GovernmentImpactSearchResult({ item }: { item: SearchableGovernmentImpa
         <OverviewAssessment assessment={item.assessment} compact />
         <PublicMaturity maturity={item.maturity} compact />
         <p className="eyebrow" data-woek-process-metadata>Regierungs-Wirkungsanalyse</p>
-        <dl data-woek-process-metadata><div><dt>Analysephase</dt><dd>{item.analysisMode === "IMPACT_REALITY_CHECK" ? "Reality-Check" : "Ex ante"}</dd></div><div><dt>Prüfstand</dt><dd>Fachlich freigegebener WÖkImpactCase</dd></div><div><dt>Materialität</dt><dd>{humanizeSystemValue(item.materiality)}</dd></div></dl>
+        <dl data-woek-process-metadata><div><dt>Analysephase</dt><dd>{item.analysisMode === "IMPACT_REALITY_CHECK" ? "Reality-Check" : "Ex ante"}</dd></div><div><dt>Prüfstand</dt><dd>Fachlich freigegebener WÖk-Wirkungsfall</dd></div><div><dt>Materialität</dt><dd>{humanizeSystemValue(item.materiality)}</dd></div></dl>
       </div>
       <div className="search-result-actions">
         <Link className="text-link" href={path}>Wirkungsanalyse öffnen <span aria-hidden="true">→</span></Link>
@@ -120,10 +120,10 @@ function SelectFilter({ label, value, values, onChange }: { label: string; value
 function CaseSearchResult({ item }: { item: SearchableCase }) {
   const path = `/entscheidungen/${item.slug}`;
   return (
-    <article data-woek-preview-card={item.assessment ? "published" : "review-required"}>
+    <article data-woek-preview-card={item.assessment ? "published" : "fact-only"}>
       <div>
         <h2><Link href={path}>{item.title}</Link></h2>
-        {item.assessment ? <OverviewAssessment assessment={item.assessment} compact /> : <EditorialReviewAssessment subject={item.title} />}
+        {item.assessment ? <OverviewAssessment assessment={item.assessment} compact /> : null}
         <PublicMaturity maturity={item.maturity} compact />
         <p className="eyebrow" data-woek-process-metadata>{TYPE_LABELS[item.kind]}</p>
         <dl data-woek-process-metadata><div><dt>Parlamentarischer Status</dt><dd>{humanizeSystemValue(item.parliamentaryStatus)}</dd></div><div><dt>Stand der WÖk-Analyse</dt><dd>{EDITORIAL_LABELS[item.editorialStatus]}</dd></div><div><dt>Prüfrelevanz</dt><dd>{materialityLabel(item.materiality)}</dd></div><div><dt>Quellenstatus</dt><dd>{SOURCE_LABELS[item.statusVerification]}</dd></div></dl>
@@ -139,10 +139,9 @@ function CaseSearchResult({ item }: { item: SearchableCase }) {
 function FachanalyseSearchResult({ item }: { item: SearchableFachanalyse }) {
   const path = `/fachanalysen/${item.slug}`;
   return (
-    <article data-woek-preview-card="review-required">
+    <article data-woek-preview-card="dossier">
       <div>
         <h2><Link href={path}>{item.title}</Link></h2>
-        <EditorialReviewAssessment subject={item.title} />
         <PublicMaturity maturity={publishedDossierPublicMaturity(item.title, `Das veröffentlichte Dossier „${item.title}“ bleibt als fachlicher Arbeits- und Quellenstand zugänglich.`)} compact />
         <p>{item.summary}</p>
         <p className="eyebrow" data-woek-process-metadata>WÖk-Fachanalyse · {item.scope}</p>

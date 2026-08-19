@@ -8,7 +8,7 @@ import {
   type GovernmentAction,
 } from "@/lib/government/public-data";
 import { directionLabels, evidenceLabels, governmentEditorialProjection, impactCasesForGovernmentAction } from "@/lib/government/impact-cases";
-import { EditorialReviewAssessment, OverviewAssessment } from "@/app/components/OverviewAssessment";
+import { OverviewAssessment } from "@/app/components/OverviewAssessment";
 import { PublicMaturity } from "@/app/components/PublicMaturity";
 import { factOnlyPublicMaturity, governmentPublicMaturity } from "@/lib/presentation/public-maturity";
 import { recommendationForImpactCase } from "@/lib/recommendations";
@@ -36,13 +36,13 @@ export function GovernmentActionCard({ action }: { action: GovernmentAction }) {
     }];
   });
   return (
-    <article className="government-action-card" data-woek-preview-card={assessments.length ? "published" : "review-required"}>
+    <article className="government-action-card" data-woek-preview-card={assessments.length ? "published" : "fact-only"}>
       <h2><Link href={`/regierung/akte/${encodeURIComponent(action.government_action_id)}`}>{action.title}</Link></h2>
       {assessments.length ? <div className="government-action-assessments">{assessments.map(({ record, assessment, maturity }) => <div key={record.impact_case_id}>
         {assessments.length > 1 && <p className="source-register-label">Wirkungsgegenstand: {record.title}</p>}
         <OverviewAssessment assessment={assessment} compact />
         <PublicMaturity maturity={maturity} compact />
-      </div>)}</div> : <><EditorialReviewAssessment subject={action.title} /><PublicMaturity maturity={factOnlyPublicMaturity(action.title, `Die amtlich belegte Regierungsakte „${action.title}“ ist als Sachverhalt veröffentlicht.`)} compact /></>}
+      </div>)}</div> : <PublicMaturity maturity={factOnlyPublicMaturity(action.title)} compact />}
       <div className="government-card-meta" data-woek-process-metadata>
         <span className="chip chip--depth">{actionTypeLabels[action.action_type] ?? action.action_type}</span>
         <time dateTime={action.decision_date ?? undefined}>{formatDate(action.decision_date)}</time>

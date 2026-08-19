@@ -22,9 +22,9 @@ test("a source detail explains the source and reverse-links its analyses with re
   assert.match(detail, /Kurz zusammengefasst/);
   assert.match(detail, /source\.abstract/);
   assert.match(detail, /Für diese Analysen verwendet/);
-  assert.match(detail, /Kurzbewertung/);
-  assert.match(detail, /analysisDirection/);
-  assert.match(detail, /evidenceLevel/);
+  assert.match(detail, /<OverviewAssessment/);
+  assert.match(detail, /factOnlyPublicMaturity/);
+  assert.doesNotMatch(detail, /!usage\.assessment && \(usage\.analysisDirection \|\| usage\.evidenceLevel\)/);
   assert.match(detail, /Originalquelle öffnen/);
 });
 
