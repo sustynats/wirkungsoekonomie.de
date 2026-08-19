@@ -12,6 +12,14 @@ const readJsonl = (file) => readFileSync(file, "utf8").trim().split(/\r?\n/).fil
 const reviews = readJsonl("data/method/public-decision-reviews.jsonl");
 const targets = readJsonl("data/method/public-common-target-reviews.jsonl");
 const b05DeltaIds = new Set(["bt21-dip-f562f80bc03c", "bt21-dip-a035653fbebc", "bt21-dip-8d2a11d412de", "bt21-dip-c262bf7797f8", "bt21-dip-e89615651d49", "bt21-dip-0b72759f3d8c"]);
+const b06DeltaIds = new Set([
+  "WOEK-IMPACT-BUND-WOHNGELD-2027", "WOEK-IMPACT-BUND-SFVV-EIGENSTAENDIGKEIT-2026",
+  "WOEK-IMPACT-BUND-EPA-AFRIKA-RATIFIZIERUNG-2025-2026", "WOEK-IMPACT-BUND-OPFERBEAUFTRAGTER-2026",
+  "WOEK-IMPACT-BUND-ARBEITSFOERDERUNG-DIGITAL-JOB2JOB-2026", "WOEK-IMPACT-BUND-GENOSSENSCHAFTSRECHT-2026",
+  "WOEK-IMPACT-BUND-MEDIEN-INVESTITIONSPFLICHT-2026", "EU-IMPACT-2026-009", "EU-IMPACT-2026-010",
+  "EU-IMPACT-2026-011", "EU-IMPACT-2026-012", "EU-IMPACT-2026-015", "EU-IMPACT-2026-016",
+  "EU-IMPACT-2026-017", "EU-IMPACT-2026-018", "bt21-dip-a5035b912cc6", "bt21-dip-ab9fa96b9b29",
+]);
 const governmentPublic = new Set(readJsonl("data/government/impact-cases/public-impact-records.jsonl").map((record) => record.impact_case_id));
 const euEditorialExclusions = new Set(readJsonl("data/eu/impact-cases/public-impact-records.jsonl")
   .filter((record) => projectEuEditorial(record).status !== "PASS")
@@ -145,6 +153,11 @@ const report = {
     expected: b05DeltaIds.size,
     checked: results.filter((result) => b05DeltaIds.has(result.impact_case_id)).length,
     passed: results.filter((result) => b05DeltaIds.has(result.impact_case_id) && result.pass).length,
+  },
+  b06_delta: {
+    expected: b06DeltaIds.size,
+    checked: results.filter((result) => b06DeltaIds.has(result.impact_case_id)).length,
+    passed: results.filter((result) => b06DeltaIds.has(result.impact_case_id) && result.pass).length,
   },
   no_contradictory_open_state_for_published_common_target_layer: results
     .filter((result) => result.expected === "PUBLIC_COMMON_TARGETS")

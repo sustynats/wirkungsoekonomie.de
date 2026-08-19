@@ -8,18 +8,18 @@ const sha256 = (file: string) => createHash("sha256").update(readFileSync(file))
 
 const reviews = readJsonl("data/method/public-decision-reviews.jsonl");
 const commonTargets = readJsonl("data/method/public-common-target-reviews.jsonl");
-const manifest = JSON.parse(readFileSync("data/method/fachvollstaendigkeit-b05-manifest.json", "utf8"));
+const manifest = JSON.parse(readFileSync("data/method/fachvollstaendigkeit-b06-manifest.json", "utf8"));
 
-test("B05 materialization preserves the centrally approved record counts and identities", () => {
-  assert.equal(reviews.length, 82);
-  assert.equal(new Set(reviews.map((record) => record.impact_case_id)).size, 82);
+test("B06 materialization preserves the centrally approved record counts and identities", () => {
+  assert.equal(reviews.length, 99);
+  assert.equal(new Set(reviews.map((record) => record.impact_case_id)).size, 99);
   assert.equal(commonTargets.length, 9);
   assert.equal(new Set(commonTargets.map((record) => record.impact_case_id)).size, 9);
   assert.equal(new Set(commonTargets.map((record) => record.recommendation_id)).size, 9);
-  assert.equal(manifest.problem_goal.problem_review_approved, 79);
-  assert.equal(manifest.problem_goal.problem_review_not_assessable, 3);
-  assert.equal(manifest.problem_goal.goal_review_approved, 68);
-  assert.equal(manifest.problem_goal.goal_review_not_assessable, 14);
+  assert.equal(manifest.problem_goal.problem_review_approved, 95);
+  assert.equal(manifest.problem_goal.problem_review_not_assessable, 4);
+  assert.equal(manifest.problem_goal.goal_review_approved, 83);
+  assert.equal(manifest.problem_goal.goal_review_not_assessable, 16);
 });
 
 test("the exact six B05 parliamentary reviews are present without inferred goals", () => {
@@ -37,6 +37,37 @@ test("the exact six B05 parliamentary reviews are present without inferred goals
   assert.ok(records.every((record) => record.goal_review.stated_goal === null));
   assert.ok(records.every((record) => record.guards?.recommendation_untouched === true));
   assert.ok(records.every((record) => record.guards?.machine_mapping_created === false));
+});
+
+test("the exact seventeen B06 full-scope reviews are present without technical Fach inference", () => {
+  const expected = new Set([
+    "WOEK-IMPACT-BUND-WOHNGELD-2027",
+    "WOEK-IMPACT-BUND-SFVV-EIGENSTAENDIGKEIT-2026",
+    "WOEK-IMPACT-BUND-EPA-AFRIKA-RATIFIZIERUNG-2025-2026",
+    "WOEK-IMPACT-BUND-OPFERBEAUFTRAGTER-2026",
+    "WOEK-IMPACT-BUND-ARBEITSFOERDERUNG-DIGITAL-JOB2JOB-2026",
+    "WOEK-IMPACT-BUND-GENOSSENSCHAFTSRECHT-2026",
+    "WOEK-IMPACT-BUND-MEDIEN-INVESTITIONSPFLICHT-2026",
+    "EU-IMPACT-2026-009",
+    "EU-IMPACT-2026-010",
+    "EU-IMPACT-2026-011",
+    "EU-IMPACT-2026-012",
+    "EU-IMPACT-2026-015",
+    "EU-IMPACT-2026-016",
+    "EU-IMPACT-2026-017",
+    "EU-IMPACT-2026-018",
+    "bt21-dip-a5035b912cc6",
+    "bt21-dip-ab9fa96b9b29",
+  ]);
+  const records = reviews.filter((record) => expected.has(record.impact_case_id));
+  assert.equal(records.length, 17);
+  assert.ok(records.every((record) => ["APPROVED", "APPROVED_WITH_OPEN_DATA", "REVIEWED_NOT_ASSESSABLE"].includes(record.fach_status ?? record.review_status)));
+  assert.ok(records.every((record) => record.recommendation_untouched === true
+    || record.recommendation_mutation?.performed === false
+    || record.recommendation_scope === "NOT_IN_SCOPE_SHARD"));
+  assert.ok(records.every((record) => record.machine_mapping_created === false
+    || record.common_targets_review?.machine_mapping_public_allowed === false
+    || record.common_targets_scope === "NOT_IN_SCOPE_SHARD"));
 });
 
 test("Parliamentary goal reviews fail closed where no robust goal can be reconstructed", () => {
@@ -71,7 +102,7 @@ test("Common-target reviews are Fach-approved, non-causal and never machine-publ
   }
 });
 
-test("B05 does not mutate or generate RecommendationRecords", () => {
+test("B06 does not mutate or generate RecommendationRecords", () => {
   assert.equal(sha256("data/recommendations/public/recommendations.jsonl"), "5bdbf3f9698d1df492dd5339899608aaa24d114b507700f9ade2701d3f997ed1");
   assert.equal(manifest.gates.no_recommendation_mutation, true);
   assert.equal(manifest.gates.no_machine_mapping, true);

@@ -1,15 +1,15 @@
 {
   "schema_version": "woek-fachvollstaendigkeit-public-materialization-1.0",
-  "merge_id": "FACHVOLLSTAENDIGKEIT-MERGE-20260819T1605CEST",
-  "generated_at": "2026-08-19T16:05:00+02:00",
+  "merge_id": "FACHVOLLSTAENDIGKEIT-MERGE-20260819T1700CEST",
+  "generated_at": "2026-08-19T17:00:00+02:00",
   "canonical_root": "/WOEK",
   "problem_goal": {
-    "records": 82,
-    "unique_impact_case_ids": 82,
-    "problem_review_approved": 79,
-    "problem_review_not_assessable": 3,
-    "goal_review_approved": 68,
-    "goal_review_not_assessable": 14,
+    "records": 99,
+    "unique_impact_case_ids": 99,
+    "problem_review_approved": 95,
+    "problem_review_not_assessable": 4,
+    "goal_review_approved": 83,
+    "goal_review_not_assessable": 16,
     "sources": [
       {
         "source": "/WOEK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/analysis/FACHVOLLSTAENDIGKEIT-PROBLEM-GOAL-REVIEW-2026-08-19-B01.jsonl",
@@ -133,6 +133,29 @@
             "impact_case_id": "bt21-dip-0b72759f3d8c"
           }
         ]
+      },
+      {
+        "source": "/WOEK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/analysis/FACHVOLLSTAENDIGKEIT-SHARD-0-OF-4-20260819T1427CEST.jsonl",
+        "sha256": "36d6e6865b54955837b886a905446491eb7507f80e0ac37ff42c3a5cf91c36c5",
+        "source_records": 7,
+        "records": 7,
+        "detail_artifacts": []
+      },
+      {
+        "source": "/WOEK/WOEK-EU-DAILY/FACHREVIEW/FACHVOLLSTAENDIGKEIT-SHARD-3-OF-4-20260819T1359CEST.jsonl",
+        "sha256": "7f8f0a041673ceb326ad51ba9c14066021b5213dac785271d1da22300a0c2733",
+        "dropbox_content_hash": "c2b3f5dee3eb0f717955cf79abd10dd0fd0427808c30dcba01b77aef38d89245",
+        "source_records": 8,
+        "records": 8,
+        "detail_artifacts": []
+      },
+      {
+        "source": "/WOEK/WOEK-PARLAMENT-DAILY/FACHREVIEW/FACHVOLLSTAENDIGKEIT-SHARD-3-OF-4-20260819T1630CEST.jsonl",
+        "sha256": "541b8c1b61a273c2b49fc6afa9c262b258fc72d0a3aa657e52ad6d2e6f5cf031",
+        "dropbox_content_hash": "8d40c5ff93024b1269c06f23a3914c583ea116ddde70cc24727019678fef9c3d",
+        "source_records": 2,
+        "records": 2,
+        "detail_artifacts": []
       }
     ]
   },

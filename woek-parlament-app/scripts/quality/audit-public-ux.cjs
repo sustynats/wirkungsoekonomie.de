@@ -19,7 +19,9 @@ const screenshotDir = process.env.WOEK_AUDIT_SCREENSHOTS || path.join(os.tmpdir(
 const browserCandidates = [
   process.env.WOEK_AUDIT_CHROMIUM,
 ].filter(Boolean);
-const widths = [320, 360, 375, 390, 428, 768, 1024, 1280, 1440];
+const widths = process.env.WOEK_AUDIT_WIDTHS
+  ? process.env.WOEK_AUDIT_WIDTHS.split(",").map(Number)
+  : [320, 360, 375, 390, 428, 768, 1024, 1280, 1440];
 const routes = [
   "/",
   "/entscheidungen/schutz-vor-k-o-tropfen",
@@ -29,6 +31,7 @@ const routes = [
   "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-GRUNDSICHERUNG-2026",
   "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-SAFE-COUNTRY-REGULATION-2026",
   "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-BHH-2027",
+  "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-WOHNGELD-2027",
   "/regierung/akte/govaction%3Adip%3A325252",
   "/regierung/akte/govaction%3Abreg-cabinet%3A2435812%3Atop%3A5",
   "/wirkungsfaelle",
@@ -36,8 +39,10 @@ const routes = [
   "/eu/wirkungsfaelle",
   "/eu/wirkungsfaelle/EU-IMPACT-2026-001",
   "/eu/wirkungsfaelle/EU-IMPACT-2026-004",
+  "/eu/wirkungsfaelle/EU-IMPACT-2026-009",
   "/entscheidungen/bt21-dip-f562f80bc03c",
   "/entscheidungen/bt21-dip-c262bf7797f8",
+  "/entscheidungen/bt21-dip-a5035b912cc6",
   "/laender",
   "/begriffe",
   "/entscheidungen/bt21-dip-907488f49a72",
@@ -63,8 +68,10 @@ function slug(value) {
   const results = [];
 
   for (const width of widths) {
-    const context = await browser.newContext({ viewport: { width, height: width < 600 ? 844 : 960 }, deviceScaleFactor: 1 });
     for (const route of routes) {
+      // A fresh context per route prevents renderer processes from retaining
+      // large full-page layouts across the full cross-product audit.
+      const context = await browser.newContext({ viewport: { width, height: width < 600 ? 844 : 960 }, deviceScaleFactor: 1 });
       const page = await context.newPage();
       const consoleErrors = [];
       const pageErrors = [];
@@ -235,8 +242,8 @@ function slug(value) {
         axeViolations: axe.violations.map((violation) => ({ id: violation.id, impact: violation.impact, description: violation.description, nodes: violation.nodes.length })),
       });
       await page.close();
+      await context.close();
     }
-    await context.close();
   }
   await browser.close();
 

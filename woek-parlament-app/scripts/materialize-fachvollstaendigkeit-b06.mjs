@@ -24,6 +24,9 @@ const problemGoalSources = [
   ["/WOEK/WOEK-EU-DAILY/FACHREVIEW/FACHVOLLSTAENDIGKEIT-SHARD-0-OF-4-20260819T1427CEST.jsonl", 5, "7ef4668ebcfae589bc4e9a43956004dc6fb350ee0cc64531722d6ad55e9f53c9"],
   ["/WOEK/WOEK-PARLAMENT-DAILY/FACHREVIEW/FACHVOLLSTAENDIGKEIT-SHARD-1-OF-4-20260819T1423CEST.jsonl", 3, "357af127701f677254f5b706414bf7d5207b8ce7306649d002c9d9eb52f2777a"],
   ["/WOEK/WOEK-PARLAMENT-DAILY/FACHREVIEW/FACHVOLLSTAENDIGKEIT-SHARD-0-OF-4-20260819T1500CEST.jsonl", 6, "7ccb3589a284af08820ebf0ebd35c6edf423a3f54e72d4378f8116babd003512", "96deb2629fee05847e700e967c7a25bd26b62af5048bdcb669b181a65416cb26"],
+  ["/WOEK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/analysis/FACHVOLLSTAENDIGKEIT-SHARD-0-OF-4-20260819T1427CEST.jsonl", 7, "36d6e6865b54955837b886a905446491eb7507f80e0ac37ff42c3a5cf91c36c5"],
+  ["/WOEK/WOEK-EU-DAILY/FACHREVIEW/FACHVOLLSTAENDIGKEIT-SHARD-3-OF-4-20260819T1359CEST.jsonl", 8, "7f8f0a041673ceb326ad51ba9c14066021b5213dac785271d1da22300a0c2733", "c2b3f5dee3eb0f717955cf79abd10dd0fd0427808c30dcba01b77aef38d89245"],
+  ["/WOEK/WOEK-PARLAMENT-DAILY/FACHREVIEW/FACHVOLLSTAENDIGKEIT-SHARD-3-OF-4-20260819T1630CEST.jsonl", 2, "541b8c1b61a273c2b49fc6afa9c262b258fc72d0a3aa657e52ad6d2e6f5cf031", "8d40c5ff93024b1269c06f23a3914c583ea116ddde70cc24727019678fef9c3d"],
 ];
 
 const commonTargetSources = [
@@ -90,7 +93,7 @@ const commonTargetRecords = commonTargetInputs.flatMap((entry) => entry.records)
 const problemIds = new Set(problemRecords.map((record) => record.impact_case_id));
 const commonTargetImpactIds = new Set(commonTargetRecords.map((record) => record.impact_case_id));
 const recommendationIds = new Set(commonTargetRecords.map((record) => record.recommendation_id));
-if (problemRecords.length !== 82 || problemIds.size !== 82) throw new Error(`Problem/Goal identity gate failed: ${problemRecords.length}/${problemIds.size}`);
+if (problemRecords.length !== 99 || problemIds.size !== 99) throw new Error(`Problem/Goal identity gate failed: ${problemRecords.length}/${problemIds.size}`);
 if (commonTargetRecords.length !== 9 || commonTargetImpactIds.size !== 9 || recommendationIds.size !== 9) throw new Error("Common-Targets identity gate failed");
 if (!problemRecords.every((record) => ["APPROVED", "APPROVED_WITH_OPEN_DATA", "REVIEWED_NOT_ASSESSABLE"].includes(record.fach_status ?? record.review_status))) throw new Error("Unapproved Problem/Goal record");
 if (!commonTargetRecords.every((record) => ["APPROVED", "APPROVED_WITH_OPEN_DATA"].includes(record.fach_status))) throw new Error("Unapproved Common-Targets record");
@@ -98,7 +101,7 @@ if (!commonTargetRecords.every((record) => record.machine_mapping_public_allowed
 
 const problemNotAssessable = problemRecords.filter((record) => (record.fach_status ?? record.review_status) === "REVIEWED_NOT_ASSESSABLE").length;
 const goalNotAssessable = problemRecords.filter((record) => record.goal_review?.review_disposition === "REVIEWED_NOT_ASSESSABLE" || record.goal_review?.goal_adequacy_status === "NO_ROBUST_GOAL_JUDGMENT").length;
-if (problemNotAssessable !== 3 || goalNotAssessable !== 14) throw new Error(`Review disposition gate failed: problem=${problemNotAssessable}, goal=${goalNotAssessable}`);
+if (problemNotAssessable !== 4 || goalNotAssessable !== 16) throw new Error(`Review disposition gate failed: problem=${problemNotAssessable}, goal=${goalNotAssessable}`);
 
 const outputDir = path.join(process.cwd(), "data", "method");
 mkdirSync(outputDir, { recursive: true });
@@ -107,15 +110,15 @@ writeFileSync(path.join(outputDir, "public-common-target-reviews.jsonl"), `${com
 
 const manifest = {
   schema_version: "woek-fachvollstaendigkeit-public-materialization-1.0",
-  merge_id: "FACHVOLLSTAENDIGKEIT-MERGE-20260819T1605CEST",
-  generated_at: "2026-08-19T16:05:00+02:00",
+  merge_id: "FACHVOLLSTAENDIGKEIT-MERGE-20260819T1700CEST",
+  generated_at: "2026-08-19T17:00:00+02:00",
   canonical_root: canonicalRoot,
   problem_goal: {
     records: problemRecords.length,
     unique_impact_case_ids: problemIds.size,
-    problem_review_approved: 79,
+    problem_review_approved: 95,
     problem_review_not_assessable: problemNotAssessable,
-    goal_review_approved: 68,
+    goal_review_approved: 83,
     goal_review_not_assessable: goalNotAssessable,
     sources: problemInputs.map(({ source, expected_sha256, expected_dropbox_content_hash, source_records, detail_artifacts, records }) => ({
       source,
@@ -140,5 +143,5 @@ const manifest = {
     budget_2027_non_aggregable: true,
   },
 };
-writeFileSync(path.join(outputDir, "fachvollstaendigkeit-b05-manifest.json"), `${JSON.stringify(manifest, null, 2)}\n`);
-console.log(JSON.stringify({ status: "PASS", problem_goal_records: 82, common_target_records: 9, manifest: "data/method/fachvollstaendigkeit-b05-manifest.json" }, null, 2));
+writeFileSync(path.join(outputDir, "fachvollstaendigkeit-b06-manifest.json"), `${JSON.stringify(manifest, null, 2)}\n`);
+console.log(JSON.stringify({ status: "PASS", problem_goal_records: 99, common_target_records: 9, manifest: "data/method/fachvollstaendigkeit-b06-manifest.json" }, null, 2));
