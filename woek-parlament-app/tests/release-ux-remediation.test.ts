@@ -17,7 +17,8 @@ test("assessment lead remains a compact paragraph with no display heading semant
   const styles = source("app/globals.css");
   assert.match(component, /<p className="overview-assessment-label">\{assessment\.assessmentLabel\}<\/p>/);
   assert.doesNotMatch(component, /<h[1-6][^>]*overview-assessment-label/);
-  assert.match(styles, /font-size:\s*clamp\(1\.125rem,\s*1\.25vw,\s*1\.25rem\)/);
+  assert.match(styles, /font-size:\s*1\.125rem/);
+  assert.match(styles, /@media \(min-width:\s*48rem\)[\s\S]*?\.overview-assessment:not\(\.overview-assessment--compact\) \.overview-assessment-label\s*\{\s*font-size:\s*1\.25rem/);
   assert.match(styles, /font-weight:\s*600/);
   assert.match(styles, /line-height:\s*1\.45/);
 });
