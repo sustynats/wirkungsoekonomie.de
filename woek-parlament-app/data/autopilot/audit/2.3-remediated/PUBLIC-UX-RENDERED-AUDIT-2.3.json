@@ -1,7 +1,7 @@
 {
   "schema_version": "woek-public-ux-rendered-audit-1.0",
-  "generated_at": "2026-08-19T08:25:32.865Z",
-  "base_url": "http://127.0.0.1:8787",
+  "generated_at": "2026-08-19T09:03:17.163Z",
+  "base_url": "http://127.0.0.1:8791",
   "status": "PASS",
   "breakpoints": [
     320,
@@ -32,6 +32,7 @@
     "/laender",
     "/begriffe",
     "/entscheidungen/bt21-dip-907488f49a72",
+    "/methodik",
     "/regierung/methodik",
     "/regierung/transparenz",
     "/quellen",
@@ -40,8 +41,8 @@
     "/methodik/wirkindikatoren",
     "/methodik/wirkindikatoren/DNS-2025-1-1-A"
   ],
-  "measurements": 216,
-  "screenshots": "/tmp/woek-common-target-screenshots-final",
+  "measurements": 225,
+  "screenshots": "/tmp/woek-method-remediation-screenshots",
   "failures": [],
   "results": [
     {
@@ -230,6 +231,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -410,6 +414,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -683,6 +690,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -1272,6 +1282,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -1813,6 +1826,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -2126,6 +2142,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -2427,6 +2446,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -2668,6 +2690,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -2830,6 +2855,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -2992,6 +3020,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -3700,6 +3731,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -3806,6 +3840,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -4025,6 +4062,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -4201,6 +4241,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -4348,6 +4391,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -4415,6 +4461,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -4595,6 +4644,172 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
+        "smallTargets": [],
+        "rawTokens": [],
+        "focus": {
+          "tag": "A",
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineOffset": "2px"
+        },
+        "objectDumpVisible": false
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/methodik",
+      "width": 320,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 320,
+        "viewportWidth": 320,
+        "overflow": [],
+        "h1Count": 1,
+        "headings": [
+          {
+            "level": 1,
+            "text": "Wirkungen prüfen, ohne Politik zu ersetzen"
+          },
+          {
+            "level": 2,
+            "text": "Erst Problem und Ziel klären. Dann Wirkung und bessere Ausgestaltung prüfen."
+          },
+          {
+            "level": 3,
+            "text": "Amtlichen Sachverhalt und Entscheidungsobjekt sichern"
+          },
+          {
+            "level": 3,
+            "text": "WÖk-Problemprüfung"
+          },
+          {
+            "level": 3,
+            "text": "WÖk-Zielprüfung"
+          },
+          {
+            "level": 3,
+            "text": "Wirkungsanalyse: A → M → ΔZ → R"
+          },
+          {
+            "level": 3,
+            "text": "Fachlich freigegebene WÖk-Handlungsoption"
+          },
+          {
+            "level": 3,
+            "text": "Vergleich an gemeinsamen Zielen"
+          },
+          {
+            "level": 3,
+            "text": "Reality Check"
+          },
+          {
+            "level": 3,
+            "text": "Optionales Inspirations- und Operationalisierungsmodell"
+          },
+          {
+            "level": 2,
+            "text": "Was wichtig ist, bleibt von seiner Beobachtung getrennt."
+          },
+          {
+            "level": 3,
+            "text": "Amtliche DNS-Indikatoren"
+          },
+          {
+            "level": 3,
+            "text": "Output ist noch kein Outcome"
+          },
+          {
+            "level": 3,
+            "text": "Richtung ist nicht Evidenz"
+          },
+          {
+            "level": 3,
+            "text": "Keine Durchschnittsschönrechnung"
+          },
+          {
+            "level": 2,
+            "text": "Ist diese Entscheidung wirkungsbezogen entscheidungsreif?"
+          },
+          {
+            "level": 3,
+            "text": "Entscheidungsgegenstand"
+          },
+          {
+            "level": 3,
+            "text": "Zuständigkeit"
+          },
+          {
+            "level": 3,
+            "text": "Wirkmechanismus"
+          },
+          {
+            "level": 3,
+            "text": "Wirkungsentscheidende Bedingungen"
+          },
+          {
+            "level": 3,
+            "text": "Alternativen"
+          },
+          {
+            "level": 2,
+            "text": "Ein Beschluss ist der Anfang eines Wirkpfads – nicht sein Ergebnis."
+          },
+          {
+            "level": 2,
+            "text": "Parlamentsradar-Updates per E-Mail"
+          },
+          {
+            "level": 2,
+            "text": "Vorher verstehen. Danach prüfen, was sich verändert."
+          },
+          {
+            "level": 2,
+            "text": "Analyse"
+          },
+          {
+            "level": 2,
+            "text": "Transparenz"
+          },
+          {
+            "level": 2,
+            "text": "Kontakt"
+          }
+        ],
+        "headingSkips": [],
+        "landmarks": {
+          "header": 4,
+          "nav": 7,
+          "main": 1,
+          "footer": 1
+        },
+        "assessment": null,
+        "assessmentBeforeProcess": true,
+        "assessmentIconPairs": [],
+        "assessmentIconAgreement": true,
+        "duplicateAssessmentCopies": [],
+        "substantiveBeforeProcess": true,
+        "sourceBeforeProcess": true,
+        "recommendationBeforeProcess": true,
+        "methodOrderPresent": false,
+        "methodOrderPass": false,
+        "canonicalMethodStages": [
+          "fact",
+          "problem",
+          "goal",
+          "impact",
+          "recommendation",
+          "common-targets",
+          "reality-check",
+          "inspiration"
+        ],
+        "canonicalMethodOrderPass": true,
+        "measurementChainPass": true,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -4659,7 +4874,63 @@
         "headings": [
           {
             "level": 1,
-            "text": "Vom amtlichen Handeln zur beobachteten Wirkung"
+            "text": "Regierungshandeln nach derselben Wirkungslogik prüfen"
+          },
+          {
+            "level": 2,
+            "text": "Erst Problem und Ziel klären. Dann Wirkung und bessere Ausgestaltung prüfen."
+          },
+          {
+            "level": 3,
+            "text": "Amtlichen Sachverhalt und Entscheidungsobjekt sichern"
+          },
+          {
+            "level": 3,
+            "text": "WÖk-Problemprüfung"
+          },
+          {
+            "level": 3,
+            "text": "WÖk-Zielprüfung"
+          },
+          {
+            "level": 3,
+            "text": "Wirkungsanalyse: A → M → ΔZ → R"
+          },
+          {
+            "level": 3,
+            "text": "Fachlich freigegebene WÖk-Handlungsoption"
+          },
+          {
+            "level": 3,
+            "text": "Vergleich an gemeinsamen Zielen"
+          },
+          {
+            "level": 3,
+            "text": "Reality Check"
+          },
+          {
+            "level": 3,
+            "text": "Optionales Inspirations- und Operationalisierungsmodell"
+          },
+          {
+            "level": 2,
+            "text": "Was wichtig ist, bleibt von seiner Beobachtung getrennt."
+          },
+          {
+            "level": 3,
+            "text": "Amtliche DNS-Indikatoren"
+          },
+          {
+            "level": 3,
+            "text": "Output ist noch kein Outcome"
+          },
+          {
+            "level": 3,
+            "text": "Richtung ist nicht Evidenz"
+          },
+          {
+            "level": 3,
+            "text": "Keine Durchschnittsschönrechnung"
           },
           {
             "level": 2,
@@ -4667,42 +4938,14 @@
           },
           {
             "level": 2,
-            "text": "Die sechs Module der Wirkungsprüfung"
+            "text": "Regierungsakte bleiben eine eigene Faktenschicht"
           },
           {
             "level": 3,
-            "text": "Vor der Wirkung"
-          },
-          {
-            "level": 3,
-            "text": "Umsetzung und Veränderung"
-          },
-          {
-            "level": 3,
-            "text": "Evidenz und Zurechnung"
-          },
-          {
-            "level": 3,
-            "text": "Wirkungsbewertung"
-          },
-          {
-            "level": 3,
-            "text": "Schutz- und Systemprüfung"
-          },
-          {
-            "level": 3,
-            "text": "Rückkopplung und Lernen"
-          },
-          {
-            "level": 2,
-            "text": "Die vollständige Spur"
-          },
-          {
-            "level": 2,
             "text": "Was ist geschehen?"
           },
           {
-            "level": 2,
+            "level": 3,
             "text": "Was könnte oder hat sich verändert?"
           },
           {
@@ -4756,7 +4999,7 @@
         ],
         "headingSkips": [],
         "landmarks": {
-          "header": 1,
+          "header": 2,
           "nav": 8,
           "main": 1,
           "footer": 1
@@ -4771,6 +5014,18 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [
+          "fact",
+          "problem",
+          "goal",
+          "impact",
+          "recommendation",
+          "common-targets",
+          "reality-check",
+          "inspiration"
+        ],
+        "canonicalMethodOrderPass": true,
+        "measurementChainPass": true,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -4979,6 +5234,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -5238,6 +5496,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -5351,6 +5612,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -6098,6 +6362,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -6493,6 +6760,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -6564,6 +6834,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -6762,6 +7035,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -6942,6 +7218,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -7209,6 +7488,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -7792,6 +8074,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -8327,6 +8612,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -8634,6 +8922,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -8929,6 +9220,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -9164,6 +9458,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -9320,6 +9617,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -9476,6 +9776,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -10184,6 +10487,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -10290,6 +10596,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -10509,6 +10818,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -10685,6 +10997,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -10832,6 +11147,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -10899,6 +11217,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -11079,6 +11400,172 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
+        "smallTargets": [],
+        "rawTokens": [],
+        "focus": {
+          "tag": "A",
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineOffset": "2px"
+        },
+        "objectDumpVisible": false
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/methodik",
+      "width": 360,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 360,
+        "viewportWidth": 360,
+        "overflow": [],
+        "h1Count": 1,
+        "headings": [
+          {
+            "level": 1,
+            "text": "Wirkungen prüfen, ohne Politik zu ersetzen"
+          },
+          {
+            "level": 2,
+            "text": "Erst Problem und Ziel klären. Dann Wirkung und bessere Ausgestaltung prüfen."
+          },
+          {
+            "level": 3,
+            "text": "Amtlichen Sachverhalt und Entscheidungsobjekt sichern"
+          },
+          {
+            "level": 3,
+            "text": "WÖk-Problemprüfung"
+          },
+          {
+            "level": 3,
+            "text": "WÖk-Zielprüfung"
+          },
+          {
+            "level": 3,
+            "text": "Wirkungsanalyse: A → M → ΔZ → R"
+          },
+          {
+            "level": 3,
+            "text": "Fachlich freigegebene WÖk-Handlungsoption"
+          },
+          {
+            "level": 3,
+            "text": "Vergleich an gemeinsamen Zielen"
+          },
+          {
+            "level": 3,
+            "text": "Reality Check"
+          },
+          {
+            "level": 3,
+            "text": "Optionales Inspirations- und Operationalisierungsmodell"
+          },
+          {
+            "level": 2,
+            "text": "Was wichtig ist, bleibt von seiner Beobachtung getrennt."
+          },
+          {
+            "level": 3,
+            "text": "Amtliche DNS-Indikatoren"
+          },
+          {
+            "level": 3,
+            "text": "Output ist noch kein Outcome"
+          },
+          {
+            "level": 3,
+            "text": "Richtung ist nicht Evidenz"
+          },
+          {
+            "level": 3,
+            "text": "Keine Durchschnittsschönrechnung"
+          },
+          {
+            "level": 2,
+            "text": "Ist diese Entscheidung wirkungsbezogen entscheidungsreif?"
+          },
+          {
+            "level": 3,
+            "text": "Entscheidungsgegenstand"
+          },
+          {
+            "level": 3,
+            "text": "Zuständigkeit"
+          },
+          {
+            "level": 3,
+            "text": "Wirkmechanismus"
+          },
+          {
+            "level": 3,
+            "text": "Wirkungsentscheidende Bedingungen"
+          },
+          {
+            "level": 3,
+            "text": "Alternativen"
+          },
+          {
+            "level": 2,
+            "text": "Ein Beschluss ist der Anfang eines Wirkpfads – nicht sein Ergebnis."
+          },
+          {
+            "level": 2,
+            "text": "Parlamentsradar-Updates per E-Mail"
+          },
+          {
+            "level": 2,
+            "text": "Vorher verstehen. Danach prüfen, was sich verändert."
+          },
+          {
+            "level": 2,
+            "text": "Analyse"
+          },
+          {
+            "level": 2,
+            "text": "Transparenz"
+          },
+          {
+            "level": 2,
+            "text": "Kontakt"
+          }
+        ],
+        "headingSkips": [],
+        "landmarks": {
+          "header": 4,
+          "nav": 7,
+          "main": 1,
+          "footer": 1
+        },
+        "assessment": null,
+        "assessmentBeforeProcess": true,
+        "assessmentIconPairs": [],
+        "assessmentIconAgreement": true,
+        "duplicateAssessmentCopies": [],
+        "substantiveBeforeProcess": true,
+        "sourceBeforeProcess": true,
+        "recommendationBeforeProcess": true,
+        "methodOrderPresent": false,
+        "methodOrderPass": false,
+        "canonicalMethodStages": [
+          "fact",
+          "problem",
+          "goal",
+          "impact",
+          "recommendation",
+          "common-targets",
+          "reality-check",
+          "inspiration"
+        ],
+        "canonicalMethodOrderPass": true,
+        "measurementChainPass": true,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -11137,7 +11624,63 @@
         "headings": [
           {
             "level": 1,
-            "text": "Vom amtlichen Handeln zur beobachteten Wirkung"
+            "text": "Regierungshandeln nach derselben Wirkungslogik prüfen"
+          },
+          {
+            "level": 2,
+            "text": "Erst Problem und Ziel klären. Dann Wirkung und bessere Ausgestaltung prüfen."
+          },
+          {
+            "level": 3,
+            "text": "Amtlichen Sachverhalt und Entscheidungsobjekt sichern"
+          },
+          {
+            "level": 3,
+            "text": "WÖk-Problemprüfung"
+          },
+          {
+            "level": 3,
+            "text": "WÖk-Zielprüfung"
+          },
+          {
+            "level": 3,
+            "text": "Wirkungsanalyse: A → M → ΔZ → R"
+          },
+          {
+            "level": 3,
+            "text": "Fachlich freigegebene WÖk-Handlungsoption"
+          },
+          {
+            "level": 3,
+            "text": "Vergleich an gemeinsamen Zielen"
+          },
+          {
+            "level": 3,
+            "text": "Reality Check"
+          },
+          {
+            "level": 3,
+            "text": "Optionales Inspirations- und Operationalisierungsmodell"
+          },
+          {
+            "level": 2,
+            "text": "Was wichtig ist, bleibt von seiner Beobachtung getrennt."
+          },
+          {
+            "level": 3,
+            "text": "Amtliche DNS-Indikatoren"
+          },
+          {
+            "level": 3,
+            "text": "Output ist noch kein Outcome"
+          },
+          {
+            "level": 3,
+            "text": "Richtung ist nicht Evidenz"
+          },
+          {
+            "level": 3,
+            "text": "Keine Durchschnittsschönrechnung"
           },
           {
             "level": 2,
@@ -11145,42 +11688,14 @@
           },
           {
             "level": 2,
-            "text": "Die sechs Module der Wirkungsprüfung"
+            "text": "Regierungsakte bleiben eine eigene Faktenschicht"
           },
           {
             "level": 3,
-            "text": "Vor der Wirkung"
-          },
-          {
-            "level": 3,
-            "text": "Umsetzung und Veränderung"
-          },
-          {
-            "level": 3,
-            "text": "Evidenz und Zurechnung"
-          },
-          {
-            "level": 3,
-            "text": "Wirkungsbewertung"
-          },
-          {
-            "level": 3,
-            "text": "Schutz- und Systemprüfung"
-          },
-          {
-            "level": 3,
-            "text": "Rückkopplung und Lernen"
-          },
-          {
-            "level": 2,
-            "text": "Die vollständige Spur"
-          },
-          {
-            "level": 2,
             "text": "Was ist geschehen?"
           },
           {
-            "level": 2,
+            "level": 3,
             "text": "Was könnte oder hat sich verändert?"
           },
           {
@@ -11234,7 +11749,7 @@
         ],
         "headingSkips": [],
         "landmarks": {
-          "header": 1,
+          "header": 2,
           "nav": 8,
           "main": 1,
           "footer": 1
@@ -11249,6 +11764,18 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [
+          "fact",
+          "problem",
+          "goal",
+          "impact",
+          "recommendation",
+          "common-targets",
+          "reality-check",
+          "inspiration"
+        ],
+        "canonicalMethodOrderPass": true,
+        "measurementChainPass": true,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -11457,6 +11984,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -11716,6 +12246,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -11829,6 +12362,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -12576,6 +13112,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -12971,6 +13510,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -13042,6 +13584,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -13240,6 +13785,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -13420,6 +13968,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -13687,6 +14238,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -14270,6 +14824,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -14805,6 +15362,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -15112,6 +15672,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -15407,6 +15970,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -15642,6 +16208,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -15798,6 +16367,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -15954,6 +16526,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -16662,6 +17237,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -16768,6 +17346,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -16987,6 +17568,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -17163,6 +17747,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -17310,6 +17897,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -17377,6 +17967,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -17557,6 +18150,172 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
+        "smallTargets": [],
+        "rawTokens": [],
+        "focus": {
+          "tag": "A",
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineOffset": "2px"
+        },
+        "objectDumpVisible": false
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/methodik",
+      "width": 375,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 375,
+        "viewportWidth": 375,
+        "overflow": [],
+        "h1Count": 1,
+        "headings": [
+          {
+            "level": 1,
+            "text": "Wirkungen prüfen, ohne Politik zu ersetzen"
+          },
+          {
+            "level": 2,
+            "text": "Erst Problem und Ziel klären. Dann Wirkung und bessere Ausgestaltung prüfen."
+          },
+          {
+            "level": 3,
+            "text": "Amtlichen Sachverhalt und Entscheidungsobjekt sichern"
+          },
+          {
+            "level": 3,
+            "text": "WÖk-Problemprüfung"
+          },
+          {
+            "level": 3,
+            "text": "WÖk-Zielprüfung"
+          },
+          {
+            "level": 3,
+            "text": "Wirkungsanalyse: A → M → ΔZ → R"
+          },
+          {
+            "level": 3,
+            "text": "Fachlich freigegebene WÖk-Handlungsoption"
+          },
+          {
+            "level": 3,
+            "text": "Vergleich an gemeinsamen Zielen"
+          },
+          {
+            "level": 3,
+            "text": "Reality Check"
+          },
+          {
+            "level": 3,
+            "text": "Optionales Inspirations- und Operationalisierungsmodell"
+          },
+          {
+            "level": 2,
+            "text": "Was wichtig ist, bleibt von seiner Beobachtung getrennt."
+          },
+          {
+            "level": 3,
+            "text": "Amtliche DNS-Indikatoren"
+          },
+          {
+            "level": 3,
+            "text": "Output ist noch kein Outcome"
+          },
+          {
+            "level": 3,
+            "text": "Richtung ist nicht Evidenz"
+          },
+          {
+            "level": 3,
+            "text": "Keine Durchschnittsschönrechnung"
+          },
+          {
+            "level": 2,
+            "text": "Ist diese Entscheidung wirkungsbezogen entscheidungsreif?"
+          },
+          {
+            "level": 3,
+            "text": "Entscheidungsgegenstand"
+          },
+          {
+            "level": 3,
+            "text": "Zuständigkeit"
+          },
+          {
+            "level": 3,
+            "text": "Wirkmechanismus"
+          },
+          {
+            "level": 3,
+            "text": "Wirkungsentscheidende Bedingungen"
+          },
+          {
+            "level": 3,
+            "text": "Alternativen"
+          },
+          {
+            "level": 2,
+            "text": "Ein Beschluss ist der Anfang eines Wirkpfads – nicht sein Ergebnis."
+          },
+          {
+            "level": 2,
+            "text": "Parlamentsradar-Updates per E-Mail"
+          },
+          {
+            "level": 2,
+            "text": "Vorher verstehen. Danach prüfen, was sich verändert."
+          },
+          {
+            "level": 2,
+            "text": "Analyse"
+          },
+          {
+            "level": 2,
+            "text": "Transparenz"
+          },
+          {
+            "level": 2,
+            "text": "Kontakt"
+          }
+        ],
+        "headingSkips": [],
+        "landmarks": {
+          "header": 4,
+          "nav": 7,
+          "main": 1,
+          "footer": 1
+        },
+        "assessment": null,
+        "assessmentBeforeProcess": true,
+        "assessmentIconPairs": [],
+        "assessmentIconAgreement": true,
+        "duplicateAssessmentCopies": [],
+        "substantiveBeforeProcess": true,
+        "sourceBeforeProcess": true,
+        "recommendationBeforeProcess": true,
+        "methodOrderPresent": false,
+        "methodOrderPass": false,
+        "canonicalMethodStages": [
+          "fact",
+          "problem",
+          "goal",
+          "impact",
+          "recommendation",
+          "common-targets",
+          "reality-check",
+          "inspiration"
+        ],
+        "canonicalMethodOrderPass": true,
+        "measurementChainPass": true,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -17615,7 +18374,63 @@
         "headings": [
           {
             "level": 1,
-            "text": "Vom amtlichen Handeln zur beobachteten Wirkung"
+            "text": "Regierungshandeln nach derselben Wirkungslogik prüfen"
+          },
+          {
+            "level": 2,
+            "text": "Erst Problem und Ziel klären. Dann Wirkung und bessere Ausgestaltung prüfen."
+          },
+          {
+            "level": 3,
+            "text": "Amtlichen Sachverhalt und Entscheidungsobjekt sichern"
+          },
+          {
+            "level": 3,
+            "text": "WÖk-Problemprüfung"
+          },
+          {
+            "level": 3,
+            "text": "WÖk-Zielprüfung"
+          },
+          {
+            "level": 3,
+            "text": "Wirkungsanalyse: A → M → ΔZ → R"
+          },
+          {
+            "level": 3,
+            "text": "Fachlich freigegebene WÖk-Handlungsoption"
+          },
+          {
+            "level": 3,
+            "text": "Vergleich an gemeinsamen Zielen"
+          },
+          {
+            "level": 3,
+            "text": "Reality Check"
+          },
+          {
+            "level": 3,
+            "text": "Optionales Inspirations- und Operationalisierungsmodell"
+          },
+          {
+            "level": 2,
+            "text": "Was wichtig ist, bleibt von seiner Beobachtung getrennt."
+          },
+          {
+            "level": 3,
+            "text": "Amtliche DNS-Indikatoren"
+          },
+          {
+            "level": 3,
+            "text": "Output ist noch kein Outcome"
+          },
+          {
+            "level": 3,
+            "text": "Richtung ist nicht Evidenz"
+          },
+          {
+            "level": 3,
+            "text": "Keine Durchschnittsschönrechnung"
           },
           {
             "level": 2,
@@ -17623,42 +18438,14 @@
           },
           {
             "level": 2,
-            "text": "Die sechs Module der Wirkungsprüfung"
+            "text": "Regierungsakte bleiben eine eigene Faktenschicht"
           },
           {
             "level": 3,
-            "text": "Vor der Wirkung"
-          },
-          {
-            "level": 3,
-            "text": "Umsetzung und Veränderung"
-          },
-          {
-            "level": 3,
-            "text": "Evidenz und Zurechnung"
-          },
-          {
-            "level": 3,
-            "text": "Wirkungsbewertung"
-          },
-          {
-            "level": 3,
-            "text": "Schutz- und Systemprüfung"
-          },
-          {
-            "level": 3,
-            "text": "Rückkopplung und Lernen"
-          },
-          {
-            "level": 2,
-            "text": "Die vollständige Spur"
-          },
-          {
-            "level": 2,
             "text": "Was ist geschehen?"
           },
           {
-            "level": 2,
+            "level": 3,
             "text": "Was könnte oder hat sich verändert?"
           },
           {
@@ -17712,7 +18499,7 @@
         ],
         "headingSkips": [],
         "landmarks": {
-          "header": 1,
+          "header": 2,
           "nav": 8,
           "main": 1,
           "footer": 1
@@ -17727,6 +18514,18 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [
+          "fact",
+          "problem",
+          "goal",
+          "impact",
+          "recommendation",
+          "common-targets",
+          "reality-check",
+          "inspiration"
+        ],
+        "canonicalMethodOrderPass": true,
+        "measurementChainPass": true,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -17935,6 +18734,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -18194,6 +18996,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -18307,6 +19112,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -19054,6 +19862,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -19449,6 +20260,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -19520,6 +20334,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -19718,6 +20535,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -19898,6 +20718,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -20165,6 +20988,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -20748,6 +21574,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -21283,6 +22112,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -21590,6 +22422,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -21885,6 +22720,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -22120,6 +22958,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -22276,6 +23117,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -22432,6 +23276,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -23140,6 +23987,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -23246,6 +24096,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -23465,6 +24318,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -23641,6 +24497,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -23788,6 +24647,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -23855,6 +24717,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -24035,6 +24900,172 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
+        "smallTargets": [],
+        "rawTokens": [],
+        "focus": {
+          "tag": "A",
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineOffset": "2px"
+        },
+        "objectDumpVisible": false
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/methodik",
+      "width": 390,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "overflow": [],
+        "h1Count": 1,
+        "headings": [
+          {
+            "level": 1,
+            "text": "Wirkungen prüfen, ohne Politik zu ersetzen"
+          },
+          {
+            "level": 2,
+            "text": "Erst Problem und Ziel klären. Dann Wirkung und bessere Ausgestaltung prüfen."
+          },
+          {
+            "level": 3,
+            "text": "Amtlichen Sachverhalt und Entscheidungsobjekt sichern"
+          },
+          {
+            "level": 3,
+            "text": "WÖk-Problemprüfung"
+          },
+          {
+            "level": 3,
+            "text": "WÖk-Zielprüfung"
+          },
+          {
+            "level": 3,
+            "text": "Wirkungsanalyse: A → M → ΔZ → R"
+          },
+          {
+            "level": 3,
+            "text": "Fachlich freigegebene WÖk-Handlungsoption"
+          },
+          {
+            "level": 3,
+            "text": "Vergleich an gemeinsamen Zielen"
+          },
+          {
+            "level": 3,
+            "text": "Reality Check"
+          },
+          {
+            "level": 3,
+            "text": "Optionales Inspirations- und Operationalisierungsmodell"
+          },
+          {
+            "level": 2,
+            "text": "Was wichtig ist, bleibt von seiner Beobachtung getrennt."
+          },
+          {
+            "level": 3,
+            "text": "Amtliche DNS-Indikatoren"
+          },
+          {
+            "level": 3,
+            "text": "Output ist noch kein Outcome"
+          },
+          {
+            "level": 3,
+            "text": "Richtung ist nicht Evidenz"
+          },
+          {
+            "level": 3,
+            "text": "Keine Durchschnittsschönrechnung"
+          },
+          {
+            "level": 2,
+            "text": "Ist diese Entscheidung wirkungsbezogen entscheidungsreif?"
+          },
+          {
+            "level": 3,
+            "text": "Entscheidungsgegenstand"
+          },
+          {
+            "level": 3,
+            "text": "Zuständigkeit"
+          },
+          {
+            "level": 3,
+            "text": "Wirkmechanismus"
+          },
+          {
+            "level": 3,
+            "text": "Wirkungsentscheidende Bedingungen"
+          },
+          {
+            "level": 3,
+            "text": "Alternativen"
+          },
+          {
+            "level": 2,
+            "text": "Ein Beschluss ist der Anfang eines Wirkpfads – nicht sein Ergebnis."
+          },
+          {
+            "level": 2,
+            "text": "Parlamentsradar-Updates per E-Mail"
+          },
+          {
+            "level": 2,
+            "text": "Vorher verstehen. Danach prüfen, was sich verändert."
+          },
+          {
+            "level": 2,
+            "text": "Analyse"
+          },
+          {
+            "level": 2,
+            "text": "Transparenz"
+          },
+          {
+            "level": 2,
+            "text": "Kontakt"
+          }
+        ],
+        "headingSkips": [],
+        "landmarks": {
+          "header": 4,
+          "nav": 7,
+          "main": 1,
+          "footer": 1
+        },
+        "assessment": null,
+        "assessmentBeforeProcess": true,
+        "assessmentIconPairs": [],
+        "assessmentIconAgreement": true,
+        "duplicateAssessmentCopies": [],
+        "substantiveBeforeProcess": true,
+        "sourceBeforeProcess": true,
+        "recommendationBeforeProcess": true,
+        "methodOrderPresent": false,
+        "methodOrderPass": false,
+        "canonicalMethodStages": [
+          "fact",
+          "problem",
+          "goal",
+          "impact",
+          "recommendation",
+          "common-targets",
+          "reality-check",
+          "inspiration"
+        ],
+        "canonicalMethodOrderPass": true,
+        "measurementChainPass": true,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -24093,7 +25124,63 @@
         "headings": [
           {
             "level": 1,
-            "text": "Vom amtlichen Handeln zur beobachteten Wirkung"
+            "text": "Regierungshandeln nach derselben Wirkungslogik prüfen"
+          },
+          {
+            "level": 2,
+            "text": "Erst Problem und Ziel klären. Dann Wirkung und bessere Ausgestaltung prüfen."
+          },
+          {
+            "level": 3,
+            "text": "Amtlichen Sachverhalt und Entscheidungsobjekt sichern"
+          },
+          {
+            "level": 3,
+            "text": "WÖk-Problemprüfung"
+          },
+          {
+            "level": 3,
+            "text": "WÖk-Zielprüfung"
+          },
+          {
+            "level": 3,
+            "text": "Wirkungsanalyse: A → M → ΔZ → R"
+          },
+          {
+            "level": 3,
+            "text": "Fachlich freigegebene WÖk-Handlungsoption"
+          },
+          {
+            "level": 3,
+            "text": "Vergleich an gemeinsamen Zielen"
+          },
+          {
+            "level": 3,
+            "text": "Reality Check"
+          },
+          {
+            "level": 3,
+            "text": "Optionales Inspirations- und Operationalisierungsmodell"
+          },
+          {
+            "level": 2,
+            "text": "Was wichtig ist, bleibt von seiner Beobachtung getrennt."
+          },
+          {
+            "level": 3,
+            "text": "Amtliche DNS-Indikatoren"
+          },
+          {
+            "level": 3,
+            "text": "Output ist noch kein Outcome"
+          },
+          {
+            "level": 3,
+            "text": "Richtung ist nicht Evidenz"
+          },
+          {
+            "level": 3,
+            "text": "Keine Durchschnittsschönrechnung"
           },
           {
             "level": 2,
@@ -24101,42 +25188,14 @@
           },
           {
             "level": 2,
-            "text": "Die sechs Module der Wirkungsprüfung"
+            "text": "Regierungsakte bleiben eine eigene Faktenschicht"
           },
           {
             "level": 3,
-            "text": "Vor der Wirkung"
-          },
-          {
-            "level": 3,
-            "text": "Umsetzung und Veränderung"
-          },
-          {
-            "level": 3,
-            "text": "Evidenz und Zurechnung"
-          },
-          {
-            "level": 3,
-            "text": "Wirkungsbewertung"
-          },
-          {
-            "level": 3,
-            "text": "Schutz- und Systemprüfung"
-          },
-          {
-            "level": 3,
-            "text": "Rückkopplung und Lernen"
-          },
-          {
-            "level": 2,
-            "text": "Die vollständige Spur"
-          },
-          {
-            "level": 2,
             "text": "Was ist geschehen?"
           },
           {
-            "level": 2,
+            "level": 3,
             "text": "Was könnte oder hat sich verändert?"
           },
           {
@@ -24190,7 +25249,7 @@
         ],
         "headingSkips": [],
         "landmarks": {
-          "header": 1,
+          "header": 2,
           "nav": 8,
           "main": 1,
           "footer": 1
@@ -24205,6 +25264,18 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [
+          "fact",
+          "problem",
+          "goal",
+          "impact",
+          "recommendation",
+          "common-targets",
+          "reality-check",
+          "inspiration"
+        ],
+        "canonicalMethodOrderPass": true,
+        "measurementChainPass": true,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -24413,6 +25484,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -24672,6 +25746,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -24785,6 +25862,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -25532,6 +26612,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -25927,6 +27010,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -25998,6 +27084,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -26196,6 +27285,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -26376,6 +27468,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -26637,6 +27732,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -27214,6 +28312,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -27743,6 +28844,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -28044,6 +29148,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -28333,6 +29440,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -28562,6 +29672,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -28706,6 +29819,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -28850,6 +29966,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -29558,6 +30677,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -29664,6 +30786,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -29883,6 +31008,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -30059,6 +31187,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -30206,6 +31337,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -30273,6 +31407,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -30453,6 +31590,172 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
+        "smallTargets": [],
+        "rawTokens": [],
+        "focus": {
+          "tag": "A",
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineOffset": "2px"
+        },
+        "objectDumpVisible": false
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/methodik",
+      "width": 428,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 428,
+        "viewportWidth": 428,
+        "overflow": [],
+        "h1Count": 1,
+        "headings": [
+          {
+            "level": 1,
+            "text": "Wirkungen prüfen, ohne Politik zu ersetzen"
+          },
+          {
+            "level": 2,
+            "text": "Erst Problem und Ziel klären. Dann Wirkung und bessere Ausgestaltung prüfen."
+          },
+          {
+            "level": 3,
+            "text": "Amtlichen Sachverhalt und Entscheidungsobjekt sichern"
+          },
+          {
+            "level": 3,
+            "text": "WÖk-Problemprüfung"
+          },
+          {
+            "level": 3,
+            "text": "WÖk-Zielprüfung"
+          },
+          {
+            "level": 3,
+            "text": "Wirkungsanalyse: A → M → ΔZ → R"
+          },
+          {
+            "level": 3,
+            "text": "Fachlich freigegebene WÖk-Handlungsoption"
+          },
+          {
+            "level": 3,
+            "text": "Vergleich an gemeinsamen Zielen"
+          },
+          {
+            "level": 3,
+            "text": "Reality Check"
+          },
+          {
+            "level": 3,
+            "text": "Optionales Inspirations- und Operationalisierungsmodell"
+          },
+          {
+            "level": 2,
+            "text": "Was wichtig ist, bleibt von seiner Beobachtung getrennt."
+          },
+          {
+            "level": 3,
+            "text": "Amtliche DNS-Indikatoren"
+          },
+          {
+            "level": 3,
+            "text": "Output ist noch kein Outcome"
+          },
+          {
+            "level": 3,
+            "text": "Richtung ist nicht Evidenz"
+          },
+          {
+            "level": 3,
+            "text": "Keine Durchschnittsschönrechnung"
+          },
+          {
+            "level": 2,
+            "text": "Ist diese Entscheidung wirkungsbezogen entscheidungsreif?"
+          },
+          {
+            "level": 3,
+            "text": "Entscheidungsgegenstand"
+          },
+          {
+            "level": 3,
+            "text": "Zuständigkeit"
+          },
+          {
+            "level": 3,
+            "text": "Wirkmechanismus"
+          },
+          {
+            "level": 3,
+            "text": "Wirkungsentscheidende Bedingungen"
+          },
+          {
+            "level": 3,
+            "text": "Alternativen"
+          },
+          {
+            "level": 2,
+            "text": "Ein Beschluss ist der Anfang eines Wirkpfads – nicht sein Ergebnis."
+          },
+          {
+            "level": 2,
+            "text": "Parlamentsradar-Updates per E-Mail"
+          },
+          {
+            "level": 2,
+            "text": "Vorher verstehen. Danach prüfen, was sich verändert."
+          },
+          {
+            "level": 2,
+            "text": "Analyse"
+          },
+          {
+            "level": 2,
+            "text": "Transparenz"
+          },
+          {
+            "level": 2,
+            "text": "Kontakt"
+          }
+        ],
+        "headingSkips": [],
+        "landmarks": {
+          "header": 4,
+          "nav": 7,
+          "main": 1,
+          "footer": 1
+        },
+        "assessment": null,
+        "assessmentBeforeProcess": true,
+        "assessmentIconPairs": [],
+        "assessmentIconAgreement": true,
+        "duplicateAssessmentCopies": [],
+        "substantiveBeforeProcess": true,
+        "sourceBeforeProcess": true,
+        "recommendationBeforeProcess": true,
+        "methodOrderPresent": false,
+        "methodOrderPass": false,
+        "canonicalMethodStages": [
+          "fact",
+          "problem",
+          "goal",
+          "impact",
+          "recommendation",
+          "common-targets",
+          "reality-check",
+          "inspiration"
+        ],
+        "canonicalMethodOrderPass": true,
+        "measurementChainPass": true,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -30505,7 +31808,63 @@
         "headings": [
           {
             "level": 1,
-            "text": "Vom amtlichen Handeln zur beobachteten Wirkung"
+            "text": "Regierungshandeln nach derselben Wirkungslogik prüfen"
+          },
+          {
+            "level": 2,
+            "text": "Erst Problem und Ziel klären. Dann Wirkung und bessere Ausgestaltung prüfen."
+          },
+          {
+            "level": 3,
+            "text": "Amtlichen Sachverhalt und Entscheidungsobjekt sichern"
+          },
+          {
+            "level": 3,
+            "text": "WÖk-Problemprüfung"
+          },
+          {
+            "level": 3,
+            "text": "WÖk-Zielprüfung"
+          },
+          {
+            "level": 3,
+            "text": "Wirkungsanalyse: A → M → ΔZ → R"
+          },
+          {
+            "level": 3,
+            "text": "Fachlich freigegebene WÖk-Handlungsoption"
+          },
+          {
+            "level": 3,
+            "text": "Vergleich an gemeinsamen Zielen"
+          },
+          {
+            "level": 3,
+            "text": "Reality Check"
+          },
+          {
+            "level": 3,
+            "text": "Optionales Inspirations- und Operationalisierungsmodell"
+          },
+          {
+            "level": 2,
+            "text": "Was wichtig ist, bleibt von seiner Beobachtung getrennt."
+          },
+          {
+            "level": 3,
+            "text": "Amtliche DNS-Indikatoren"
+          },
+          {
+            "level": 3,
+            "text": "Output ist noch kein Outcome"
+          },
+          {
+            "level": 3,
+            "text": "Richtung ist nicht Evidenz"
+          },
+          {
+            "level": 3,
+            "text": "Keine Durchschnittsschönrechnung"
           },
           {
             "level": 2,
@@ -30513,42 +31872,14 @@
           },
           {
             "level": 2,
-            "text": "Die sechs Module der Wirkungsprüfung"
+            "text": "Regierungsakte bleiben eine eigene Faktenschicht"
           },
           {
             "level": 3,
-            "text": "Vor der Wirkung"
-          },
-          {
-            "level": 3,
-            "text": "Umsetzung und Veränderung"
-          },
-          {
-            "level": 3,
-            "text": "Evidenz und Zurechnung"
-          },
-          {
-            "level": 3,
-            "text": "Wirkungsbewertung"
-          },
-          {
-            "level": 3,
-            "text": "Schutz- und Systemprüfung"
-          },
-          {
-            "level": 3,
-            "text": "Rückkopplung und Lernen"
-          },
-          {
-            "level": 2,
-            "text": "Die vollständige Spur"
-          },
-          {
-            "level": 2,
             "text": "Was ist geschehen?"
           },
           {
-            "level": 2,
+            "level": 3,
             "text": "Was könnte oder hat sich verändert?"
           },
           {
@@ -30602,7 +31933,7 @@
         ],
         "headingSkips": [],
         "landmarks": {
-          "header": 1,
+          "header": 2,
           "nav": 8,
           "main": 1,
           "footer": 1
@@ -30617,6 +31948,18 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [
+          "fact",
+          "problem",
+          "goal",
+          "impact",
+          "recommendation",
+          "common-targets",
+          "reality-check",
+          "inspiration"
+        ],
+        "canonicalMethodOrderPass": true,
+        "measurementChainPass": true,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -30825,6 +32168,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -31084,6 +32430,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -31197,6 +32546,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -31944,6 +33296,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -32339,6 +33694,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -32410,6 +33768,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -32608,6 +33969,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -32788,6 +34152,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -33031,6 +34398,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -33590,6 +34960,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -34101,6 +35474,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -34384,6 +35760,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -34655,6 +36034,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -34866,6 +36248,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -34974,6 +36359,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -35082,6 +36470,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -35790,6 +37181,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -35896,6 +37290,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -36115,6 +37512,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -36291,6 +37691,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -36438,6 +37841,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -36505,6 +37911,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -36685,6 +38094,172 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
+        "smallTargets": [],
+        "rawTokens": [],
+        "focus": {
+          "tag": "A",
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineOffset": "2px"
+        },
+        "objectDumpVisible": false
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/methodik",
+      "width": 768,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 768,
+        "viewportWidth": 768,
+        "overflow": [],
+        "h1Count": 1,
+        "headings": [
+          {
+            "level": 1,
+            "text": "Wirkungen prüfen, ohne Politik zu ersetzen"
+          },
+          {
+            "level": 2,
+            "text": "Erst Problem und Ziel klären. Dann Wirkung und bessere Ausgestaltung prüfen."
+          },
+          {
+            "level": 3,
+            "text": "Amtlichen Sachverhalt und Entscheidungsobjekt sichern"
+          },
+          {
+            "level": 3,
+            "text": "WÖk-Problemprüfung"
+          },
+          {
+            "level": 3,
+            "text": "WÖk-Zielprüfung"
+          },
+          {
+            "level": 3,
+            "text": "Wirkungsanalyse: A → M → ΔZ → R"
+          },
+          {
+            "level": 3,
+            "text": "Fachlich freigegebene WÖk-Handlungsoption"
+          },
+          {
+            "level": 3,
+            "text": "Vergleich an gemeinsamen Zielen"
+          },
+          {
+            "level": 3,
+            "text": "Reality Check"
+          },
+          {
+            "level": 3,
+            "text": "Optionales Inspirations- und Operationalisierungsmodell"
+          },
+          {
+            "level": 2,
+            "text": "Was wichtig ist, bleibt von seiner Beobachtung getrennt."
+          },
+          {
+            "level": 3,
+            "text": "Amtliche DNS-Indikatoren"
+          },
+          {
+            "level": 3,
+            "text": "Output ist noch kein Outcome"
+          },
+          {
+            "level": 3,
+            "text": "Richtung ist nicht Evidenz"
+          },
+          {
+            "level": 3,
+            "text": "Keine Durchschnittsschönrechnung"
+          },
+          {
+            "level": 2,
+            "text": "Ist diese Entscheidung wirkungsbezogen entscheidungsreif?"
+          },
+          {
+            "level": 3,
+            "text": "Entscheidungsgegenstand"
+          },
+          {
+            "level": 3,
+            "text": "Zuständigkeit"
+          },
+          {
+            "level": 3,
+            "text": "Wirkmechanismus"
+          },
+          {
+            "level": 3,
+            "text": "Wirkungsentscheidende Bedingungen"
+          },
+          {
+            "level": 3,
+            "text": "Alternativen"
+          },
+          {
+            "level": 2,
+            "text": "Ein Beschluss ist der Anfang eines Wirkpfads – nicht sein Ergebnis."
+          },
+          {
+            "level": 2,
+            "text": "Parlamentsradar-Updates per E-Mail"
+          },
+          {
+            "level": 2,
+            "text": "Vorher verstehen. Danach prüfen, was sich verändert."
+          },
+          {
+            "level": 2,
+            "text": "Analyse"
+          },
+          {
+            "level": 2,
+            "text": "Transparenz"
+          },
+          {
+            "level": 2,
+            "text": "Kontakt"
+          }
+        ],
+        "headingSkips": [],
+        "landmarks": {
+          "header": 4,
+          "nav": 7,
+          "main": 1,
+          "footer": 1
+        },
+        "assessment": null,
+        "assessmentBeforeProcess": true,
+        "assessmentIconPairs": [],
+        "assessmentIconAgreement": true,
+        "duplicateAssessmentCopies": [],
+        "substantiveBeforeProcess": true,
+        "sourceBeforeProcess": true,
+        "recommendationBeforeProcess": true,
+        "methodOrderPresent": false,
+        "methodOrderPass": false,
+        "canonicalMethodStages": [
+          "fact",
+          "problem",
+          "goal",
+          "impact",
+          "recommendation",
+          "common-targets",
+          "reality-check",
+          "inspiration"
+        ],
+        "canonicalMethodOrderPass": true,
+        "measurementChainPass": true,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -36719,7 +38294,63 @@
         "headings": [
           {
             "level": 1,
-            "text": "Vom amtlichen Handeln zur beobachteten Wirkung"
+            "text": "Regierungshandeln nach derselben Wirkungslogik prüfen"
+          },
+          {
+            "level": 2,
+            "text": "Erst Problem und Ziel klären. Dann Wirkung und bessere Ausgestaltung prüfen."
+          },
+          {
+            "level": 3,
+            "text": "Amtlichen Sachverhalt und Entscheidungsobjekt sichern"
+          },
+          {
+            "level": 3,
+            "text": "WÖk-Problemprüfung"
+          },
+          {
+            "level": 3,
+            "text": "WÖk-Zielprüfung"
+          },
+          {
+            "level": 3,
+            "text": "Wirkungsanalyse: A → M → ΔZ → R"
+          },
+          {
+            "level": 3,
+            "text": "Fachlich freigegebene WÖk-Handlungsoption"
+          },
+          {
+            "level": 3,
+            "text": "Vergleich an gemeinsamen Zielen"
+          },
+          {
+            "level": 3,
+            "text": "Reality Check"
+          },
+          {
+            "level": 3,
+            "text": "Optionales Inspirations- und Operationalisierungsmodell"
+          },
+          {
+            "level": 2,
+            "text": "Was wichtig ist, bleibt von seiner Beobachtung getrennt."
+          },
+          {
+            "level": 3,
+            "text": "Amtliche DNS-Indikatoren"
+          },
+          {
+            "level": 3,
+            "text": "Output ist noch kein Outcome"
+          },
+          {
+            "level": 3,
+            "text": "Richtung ist nicht Evidenz"
+          },
+          {
+            "level": 3,
+            "text": "Keine Durchschnittsschönrechnung"
           },
           {
             "level": 2,
@@ -36727,42 +38358,14 @@
           },
           {
             "level": 2,
-            "text": "Die sechs Module der Wirkungsprüfung"
+            "text": "Regierungsakte bleiben eine eigene Faktenschicht"
           },
           {
             "level": 3,
-            "text": "Vor der Wirkung"
-          },
-          {
-            "level": 3,
-            "text": "Umsetzung und Veränderung"
-          },
-          {
-            "level": 3,
-            "text": "Evidenz und Zurechnung"
-          },
-          {
-            "level": 3,
-            "text": "Wirkungsbewertung"
-          },
-          {
-            "level": 3,
-            "text": "Schutz- und Systemprüfung"
-          },
-          {
-            "level": 3,
-            "text": "Rückkopplung und Lernen"
-          },
-          {
-            "level": 2,
-            "text": "Die vollständige Spur"
-          },
-          {
-            "level": 2,
             "text": "Was ist geschehen?"
           },
           {
-            "level": 2,
+            "level": 3,
             "text": "Was könnte oder hat sich verändert?"
           },
           {
@@ -36816,7 +38419,7 @@
         ],
         "headingSkips": [],
         "landmarks": {
-          "header": 1,
+          "header": 2,
           "nav": 8,
           "main": 1,
           "footer": 1
@@ -36831,6 +38434,18 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [
+          "fact",
+          "problem",
+          "goal",
+          "impact",
+          "recommendation",
+          "common-targets",
+          "reality-check",
+          "inspiration"
+        ],
+        "canonicalMethodOrderPass": true,
+        "measurementChainPass": true,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -37039,6 +38654,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -37298,6 +38916,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -37411,6 +39032,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -38158,6 +39782,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -38553,6 +40180,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -38624,6 +40254,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -38822,6 +40455,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -39002,6 +40638,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -39238,6 +40877,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -39790,6 +41432,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -40294,6 +41939,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -40570,6 +42218,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -40834,6 +42485,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -41038,6 +42692,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -41133,6 +42790,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -41228,6 +42888,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -41936,6 +43599,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -42042,6 +43708,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -42261,6 +43930,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -42437,6 +44109,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -42584,6 +44259,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -42651,6 +44329,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -42831,6 +44512,172 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
+        "smallTargets": [],
+        "rawTokens": [],
+        "focus": {
+          "tag": "A",
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineOffset": "2px"
+        },
+        "objectDumpVisible": false
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/methodik",
+      "width": 1024,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1024,
+        "viewportWidth": 1024,
+        "overflow": [],
+        "h1Count": 1,
+        "headings": [
+          {
+            "level": 1,
+            "text": "Wirkungen prüfen, ohne Politik zu ersetzen"
+          },
+          {
+            "level": 2,
+            "text": "Erst Problem und Ziel klären. Dann Wirkung und bessere Ausgestaltung prüfen."
+          },
+          {
+            "level": 3,
+            "text": "Amtlichen Sachverhalt und Entscheidungsobjekt sichern"
+          },
+          {
+            "level": 3,
+            "text": "WÖk-Problemprüfung"
+          },
+          {
+            "level": 3,
+            "text": "WÖk-Zielprüfung"
+          },
+          {
+            "level": 3,
+            "text": "Wirkungsanalyse: A → M → ΔZ → R"
+          },
+          {
+            "level": 3,
+            "text": "Fachlich freigegebene WÖk-Handlungsoption"
+          },
+          {
+            "level": 3,
+            "text": "Vergleich an gemeinsamen Zielen"
+          },
+          {
+            "level": 3,
+            "text": "Reality Check"
+          },
+          {
+            "level": 3,
+            "text": "Optionales Inspirations- und Operationalisierungsmodell"
+          },
+          {
+            "level": 2,
+            "text": "Was wichtig ist, bleibt von seiner Beobachtung getrennt."
+          },
+          {
+            "level": 3,
+            "text": "Amtliche DNS-Indikatoren"
+          },
+          {
+            "level": 3,
+            "text": "Output ist noch kein Outcome"
+          },
+          {
+            "level": 3,
+            "text": "Richtung ist nicht Evidenz"
+          },
+          {
+            "level": 3,
+            "text": "Keine Durchschnittsschönrechnung"
+          },
+          {
+            "level": 2,
+            "text": "Ist diese Entscheidung wirkungsbezogen entscheidungsreif?"
+          },
+          {
+            "level": 3,
+            "text": "Entscheidungsgegenstand"
+          },
+          {
+            "level": 3,
+            "text": "Zuständigkeit"
+          },
+          {
+            "level": 3,
+            "text": "Wirkmechanismus"
+          },
+          {
+            "level": 3,
+            "text": "Wirkungsentscheidende Bedingungen"
+          },
+          {
+            "level": 3,
+            "text": "Alternativen"
+          },
+          {
+            "level": 2,
+            "text": "Ein Beschluss ist der Anfang eines Wirkpfads – nicht sein Ergebnis."
+          },
+          {
+            "level": 2,
+            "text": "Parlamentsradar-Updates per E-Mail"
+          },
+          {
+            "level": 2,
+            "text": "Vorher verstehen. Danach prüfen, was sich verändert."
+          },
+          {
+            "level": 2,
+            "text": "Analyse"
+          },
+          {
+            "level": 2,
+            "text": "Transparenz"
+          },
+          {
+            "level": 2,
+            "text": "Kontakt"
+          }
+        ],
+        "headingSkips": [],
+        "landmarks": {
+          "header": 4,
+          "nav": 7,
+          "main": 1,
+          "footer": 1
+        },
+        "assessment": null,
+        "assessmentBeforeProcess": true,
+        "assessmentIconPairs": [],
+        "assessmentIconAgreement": true,
+        "duplicateAssessmentCopies": [],
+        "substantiveBeforeProcess": true,
+        "sourceBeforeProcess": true,
+        "recommendationBeforeProcess": true,
+        "methodOrderPresent": false,
+        "methodOrderPass": false,
+        "canonicalMethodStages": [
+          "fact",
+          "problem",
+          "goal",
+          "impact",
+          "recommendation",
+          "common-targets",
+          "reality-check",
+          "inspiration"
+        ],
+        "canonicalMethodOrderPass": true,
+        "measurementChainPass": true,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -42858,7 +44705,63 @@
         "headings": [
           {
             "level": 1,
-            "text": "Vom amtlichen Handeln zur beobachteten Wirkung"
+            "text": "Regierungshandeln nach derselben Wirkungslogik prüfen"
+          },
+          {
+            "level": 2,
+            "text": "Erst Problem und Ziel klären. Dann Wirkung und bessere Ausgestaltung prüfen."
+          },
+          {
+            "level": 3,
+            "text": "Amtlichen Sachverhalt und Entscheidungsobjekt sichern"
+          },
+          {
+            "level": 3,
+            "text": "WÖk-Problemprüfung"
+          },
+          {
+            "level": 3,
+            "text": "WÖk-Zielprüfung"
+          },
+          {
+            "level": 3,
+            "text": "Wirkungsanalyse: A → M → ΔZ → R"
+          },
+          {
+            "level": 3,
+            "text": "Fachlich freigegebene WÖk-Handlungsoption"
+          },
+          {
+            "level": 3,
+            "text": "Vergleich an gemeinsamen Zielen"
+          },
+          {
+            "level": 3,
+            "text": "Reality Check"
+          },
+          {
+            "level": 3,
+            "text": "Optionales Inspirations- und Operationalisierungsmodell"
+          },
+          {
+            "level": 2,
+            "text": "Was wichtig ist, bleibt von seiner Beobachtung getrennt."
+          },
+          {
+            "level": 3,
+            "text": "Amtliche DNS-Indikatoren"
+          },
+          {
+            "level": 3,
+            "text": "Output ist noch kein Outcome"
+          },
+          {
+            "level": 3,
+            "text": "Richtung ist nicht Evidenz"
+          },
+          {
+            "level": 3,
+            "text": "Keine Durchschnittsschönrechnung"
           },
           {
             "level": 2,
@@ -42866,42 +44769,14 @@
           },
           {
             "level": 2,
-            "text": "Die sechs Module der Wirkungsprüfung"
+            "text": "Regierungsakte bleiben eine eigene Faktenschicht"
           },
           {
             "level": 3,
-            "text": "Vor der Wirkung"
-          },
-          {
-            "level": 3,
-            "text": "Umsetzung und Veränderung"
-          },
-          {
-            "level": 3,
-            "text": "Evidenz und Zurechnung"
-          },
-          {
-            "level": 3,
-            "text": "Wirkungsbewertung"
-          },
-          {
-            "level": 3,
-            "text": "Schutz- und Systemprüfung"
-          },
-          {
-            "level": 3,
-            "text": "Rückkopplung und Lernen"
-          },
-          {
-            "level": 2,
-            "text": "Die vollständige Spur"
-          },
-          {
-            "level": 2,
             "text": "Was ist geschehen?"
           },
           {
-            "level": 2,
+            "level": 3,
             "text": "Was könnte oder hat sich verändert?"
           },
           {
@@ -42955,7 +44830,7 @@
         ],
         "headingSkips": [],
         "landmarks": {
-          "header": 1,
+          "header": 2,
           "nav": 8,
           "main": 1,
           "footer": 1
@@ -42970,6 +44845,18 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [
+          "fact",
+          "problem",
+          "goal",
+          "impact",
+          "recommendation",
+          "common-targets",
+          "reality-check",
+          "inspiration"
+        ],
+        "canonicalMethodOrderPass": true,
+        "measurementChainPass": true,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -43057,6 +44944,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -43316,6 +45206,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -43429,6 +45322,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -44176,6 +46072,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -44571,6 +46470,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -44642,6 +46544,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -44840,6 +46745,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -45020,6 +46928,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -45256,6 +47167,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -45808,6 +47722,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -46312,6 +48229,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -46588,6 +48508,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -46852,6 +48775,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -47056,6 +48982,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -47151,6 +49080,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -47246,6 +49178,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -47954,6 +49889,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -48060,6 +49998,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -48279,6 +50220,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -48455,6 +50399,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -48602,6 +50549,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -48669,6 +50619,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -48849,6 +50802,172 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
+        "smallTargets": [],
+        "rawTokens": [],
+        "focus": {
+          "tag": "A",
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineOffset": "2px"
+        },
+        "objectDumpVisible": false
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/methodik",
+      "width": 1280,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1280,
+        "viewportWidth": 1280,
+        "overflow": [],
+        "h1Count": 1,
+        "headings": [
+          {
+            "level": 1,
+            "text": "Wirkungen prüfen, ohne Politik zu ersetzen"
+          },
+          {
+            "level": 2,
+            "text": "Erst Problem und Ziel klären. Dann Wirkung und bessere Ausgestaltung prüfen."
+          },
+          {
+            "level": 3,
+            "text": "Amtlichen Sachverhalt und Entscheidungsobjekt sichern"
+          },
+          {
+            "level": 3,
+            "text": "WÖk-Problemprüfung"
+          },
+          {
+            "level": 3,
+            "text": "WÖk-Zielprüfung"
+          },
+          {
+            "level": 3,
+            "text": "Wirkungsanalyse: A → M → ΔZ → R"
+          },
+          {
+            "level": 3,
+            "text": "Fachlich freigegebene WÖk-Handlungsoption"
+          },
+          {
+            "level": 3,
+            "text": "Vergleich an gemeinsamen Zielen"
+          },
+          {
+            "level": 3,
+            "text": "Reality Check"
+          },
+          {
+            "level": 3,
+            "text": "Optionales Inspirations- und Operationalisierungsmodell"
+          },
+          {
+            "level": 2,
+            "text": "Was wichtig ist, bleibt von seiner Beobachtung getrennt."
+          },
+          {
+            "level": 3,
+            "text": "Amtliche DNS-Indikatoren"
+          },
+          {
+            "level": 3,
+            "text": "Output ist noch kein Outcome"
+          },
+          {
+            "level": 3,
+            "text": "Richtung ist nicht Evidenz"
+          },
+          {
+            "level": 3,
+            "text": "Keine Durchschnittsschönrechnung"
+          },
+          {
+            "level": 2,
+            "text": "Ist diese Entscheidung wirkungsbezogen entscheidungsreif?"
+          },
+          {
+            "level": 3,
+            "text": "Entscheidungsgegenstand"
+          },
+          {
+            "level": 3,
+            "text": "Zuständigkeit"
+          },
+          {
+            "level": 3,
+            "text": "Wirkmechanismus"
+          },
+          {
+            "level": 3,
+            "text": "Wirkungsentscheidende Bedingungen"
+          },
+          {
+            "level": 3,
+            "text": "Alternativen"
+          },
+          {
+            "level": 2,
+            "text": "Ein Beschluss ist der Anfang eines Wirkpfads – nicht sein Ergebnis."
+          },
+          {
+            "level": 2,
+            "text": "Parlamentsradar-Updates per E-Mail"
+          },
+          {
+            "level": 2,
+            "text": "Vorher verstehen. Danach prüfen, was sich verändert."
+          },
+          {
+            "level": 2,
+            "text": "Analyse"
+          },
+          {
+            "level": 2,
+            "text": "Transparenz"
+          },
+          {
+            "level": 2,
+            "text": "Kontakt"
+          }
+        ],
+        "headingSkips": [],
+        "landmarks": {
+          "header": 4,
+          "nav": 7,
+          "main": 1,
+          "footer": 1
+        },
+        "assessment": null,
+        "assessmentBeforeProcess": true,
+        "assessmentIconPairs": [],
+        "assessmentIconAgreement": true,
+        "duplicateAssessmentCopies": [],
+        "substantiveBeforeProcess": true,
+        "sourceBeforeProcess": true,
+        "recommendationBeforeProcess": true,
+        "methodOrderPresent": false,
+        "methodOrderPass": false,
+        "canonicalMethodStages": [
+          "fact",
+          "problem",
+          "goal",
+          "impact",
+          "recommendation",
+          "common-targets",
+          "reality-check",
+          "inspiration"
+        ],
+        "canonicalMethodOrderPass": true,
+        "measurementChainPass": true,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -48876,7 +50995,63 @@
         "headings": [
           {
             "level": 1,
-            "text": "Vom amtlichen Handeln zur beobachteten Wirkung"
+            "text": "Regierungshandeln nach derselben Wirkungslogik prüfen"
+          },
+          {
+            "level": 2,
+            "text": "Erst Problem und Ziel klären. Dann Wirkung und bessere Ausgestaltung prüfen."
+          },
+          {
+            "level": 3,
+            "text": "Amtlichen Sachverhalt und Entscheidungsobjekt sichern"
+          },
+          {
+            "level": 3,
+            "text": "WÖk-Problemprüfung"
+          },
+          {
+            "level": 3,
+            "text": "WÖk-Zielprüfung"
+          },
+          {
+            "level": 3,
+            "text": "Wirkungsanalyse: A → M → ΔZ → R"
+          },
+          {
+            "level": 3,
+            "text": "Fachlich freigegebene WÖk-Handlungsoption"
+          },
+          {
+            "level": 3,
+            "text": "Vergleich an gemeinsamen Zielen"
+          },
+          {
+            "level": 3,
+            "text": "Reality Check"
+          },
+          {
+            "level": 3,
+            "text": "Optionales Inspirations- und Operationalisierungsmodell"
+          },
+          {
+            "level": 2,
+            "text": "Was wichtig ist, bleibt von seiner Beobachtung getrennt."
+          },
+          {
+            "level": 3,
+            "text": "Amtliche DNS-Indikatoren"
+          },
+          {
+            "level": 3,
+            "text": "Output ist noch kein Outcome"
+          },
+          {
+            "level": 3,
+            "text": "Richtung ist nicht Evidenz"
+          },
+          {
+            "level": 3,
+            "text": "Keine Durchschnittsschönrechnung"
           },
           {
             "level": 2,
@@ -48884,42 +51059,14 @@
           },
           {
             "level": 2,
-            "text": "Die sechs Module der Wirkungsprüfung"
+            "text": "Regierungsakte bleiben eine eigene Faktenschicht"
           },
           {
             "level": 3,
-            "text": "Vor der Wirkung"
-          },
-          {
-            "level": 3,
-            "text": "Umsetzung und Veränderung"
-          },
-          {
-            "level": 3,
-            "text": "Evidenz und Zurechnung"
-          },
-          {
-            "level": 3,
-            "text": "Wirkungsbewertung"
-          },
-          {
-            "level": 3,
-            "text": "Schutz- und Systemprüfung"
-          },
-          {
-            "level": 3,
-            "text": "Rückkopplung und Lernen"
-          },
-          {
-            "level": 2,
-            "text": "Die vollständige Spur"
-          },
-          {
-            "level": 2,
             "text": "Was ist geschehen?"
           },
           {
-            "level": 2,
+            "level": 3,
             "text": "Was könnte oder hat sich verändert?"
           },
           {
@@ -48973,7 +51120,7 @@
         ],
         "headingSkips": [],
         "landmarks": {
-          "header": 1,
+          "header": 2,
           "nav": 8,
           "main": 1,
           "footer": 1
@@ -48988,6 +51135,18 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [
+          "fact",
+          "problem",
+          "goal",
+          "impact",
+          "recommendation",
+          "common-targets",
+          "reality-check",
+          "inspiration"
+        ],
+        "canonicalMethodOrderPass": true,
+        "measurementChainPass": true,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -49075,6 +51234,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -49334,6 +51496,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -49447,6 +51612,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -50194,6 +52362,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -50589,6 +52760,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -50660,6 +52834,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -50858,6 +53035,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -51038,6 +53218,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -51274,6 +53457,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -51826,6 +54012,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -52330,6 +54519,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -52606,6 +54798,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -52870,6 +55065,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -53074,6 +55272,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -53169,6 +55370,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -53264,6 +55468,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -53972,6 +56179,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -54078,6 +56288,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -54297,6 +56510,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -54473,6 +56689,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -54620,6 +56839,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -54687,6 +56909,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -54867,6 +57092,172 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": true,
         "methodOrderPass": true,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
+        "smallTargets": [],
+        "rawTokens": [],
+        "focus": {
+          "tag": "A",
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineOffset": "2px"
+        },
+        "objectDumpVisible": false
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/methodik",
+      "width": 1440,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1440,
+        "viewportWidth": 1440,
+        "overflow": [],
+        "h1Count": 1,
+        "headings": [
+          {
+            "level": 1,
+            "text": "Wirkungen prüfen, ohne Politik zu ersetzen"
+          },
+          {
+            "level": 2,
+            "text": "Erst Problem und Ziel klären. Dann Wirkung und bessere Ausgestaltung prüfen."
+          },
+          {
+            "level": 3,
+            "text": "Amtlichen Sachverhalt und Entscheidungsobjekt sichern"
+          },
+          {
+            "level": 3,
+            "text": "WÖk-Problemprüfung"
+          },
+          {
+            "level": 3,
+            "text": "WÖk-Zielprüfung"
+          },
+          {
+            "level": 3,
+            "text": "Wirkungsanalyse: A → M → ΔZ → R"
+          },
+          {
+            "level": 3,
+            "text": "Fachlich freigegebene WÖk-Handlungsoption"
+          },
+          {
+            "level": 3,
+            "text": "Vergleich an gemeinsamen Zielen"
+          },
+          {
+            "level": 3,
+            "text": "Reality Check"
+          },
+          {
+            "level": 3,
+            "text": "Optionales Inspirations- und Operationalisierungsmodell"
+          },
+          {
+            "level": 2,
+            "text": "Was wichtig ist, bleibt von seiner Beobachtung getrennt."
+          },
+          {
+            "level": 3,
+            "text": "Amtliche DNS-Indikatoren"
+          },
+          {
+            "level": 3,
+            "text": "Output ist noch kein Outcome"
+          },
+          {
+            "level": 3,
+            "text": "Richtung ist nicht Evidenz"
+          },
+          {
+            "level": 3,
+            "text": "Keine Durchschnittsschönrechnung"
+          },
+          {
+            "level": 2,
+            "text": "Ist diese Entscheidung wirkungsbezogen entscheidungsreif?"
+          },
+          {
+            "level": 3,
+            "text": "Entscheidungsgegenstand"
+          },
+          {
+            "level": 3,
+            "text": "Zuständigkeit"
+          },
+          {
+            "level": 3,
+            "text": "Wirkmechanismus"
+          },
+          {
+            "level": 3,
+            "text": "Wirkungsentscheidende Bedingungen"
+          },
+          {
+            "level": 3,
+            "text": "Alternativen"
+          },
+          {
+            "level": 2,
+            "text": "Ein Beschluss ist der Anfang eines Wirkpfads – nicht sein Ergebnis."
+          },
+          {
+            "level": 2,
+            "text": "Parlamentsradar-Updates per E-Mail"
+          },
+          {
+            "level": 2,
+            "text": "Vorher verstehen. Danach prüfen, was sich verändert."
+          },
+          {
+            "level": 2,
+            "text": "Analyse"
+          },
+          {
+            "level": 2,
+            "text": "Transparenz"
+          },
+          {
+            "level": 2,
+            "text": "Kontakt"
+          }
+        ],
+        "headingSkips": [],
+        "landmarks": {
+          "header": 4,
+          "nav": 7,
+          "main": 1,
+          "footer": 1
+        },
+        "assessment": null,
+        "assessmentBeforeProcess": true,
+        "assessmentIconPairs": [],
+        "assessmentIconAgreement": true,
+        "duplicateAssessmentCopies": [],
+        "substantiveBeforeProcess": true,
+        "sourceBeforeProcess": true,
+        "recommendationBeforeProcess": true,
+        "methodOrderPresent": false,
+        "methodOrderPass": false,
+        "canonicalMethodStages": [
+          "fact",
+          "problem",
+          "goal",
+          "impact",
+          "recommendation",
+          "common-targets",
+          "reality-check",
+          "inspiration"
+        ],
+        "canonicalMethodOrderPass": true,
+        "measurementChainPass": true,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -54894,7 +57285,63 @@
         "headings": [
           {
             "level": 1,
-            "text": "Vom amtlichen Handeln zur beobachteten Wirkung"
+            "text": "Regierungshandeln nach derselben Wirkungslogik prüfen"
+          },
+          {
+            "level": 2,
+            "text": "Erst Problem und Ziel klären. Dann Wirkung und bessere Ausgestaltung prüfen."
+          },
+          {
+            "level": 3,
+            "text": "Amtlichen Sachverhalt und Entscheidungsobjekt sichern"
+          },
+          {
+            "level": 3,
+            "text": "WÖk-Problemprüfung"
+          },
+          {
+            "level": 3,
+            "text": "WÖk-Zielprüfung"
+          },
+          {
+            "level": 3,
+            "text": "Wirkungsanalyse: A → M → ΔZ → R"
+          },
+          {
+            "level": 3,
+            "text": "Fachlich freigegebene WÖk-Handlungsoption"
+          },
+          {
+            "level": 3,
+            "text": "Vergleich an gemeinsamen Zielen"
+          },
+          {
+            "level": 3,
+            "text": "Reality Check"
+          },
+          {
+            "level": 3,
+            "text": "Optionales Inspirations- und Operationalisierungsmodell"
+          },
+          {
+            "level": 2,
+            "text": "Was wichtig ist, bleibt von seiner Beobachtung getrennt."
+          },
+          {
+            "level": 3,
+            "text": "Amtliche DNS-Indikatoren"
+          },
+          {
+            "level": 3,
+            "text": "Output ist noch kein Outcome"
+          },
+          {
+            "level": 3,
+            "text": "Richtung ist nicht Evidenz"
+          },
+          {
+            "level": 3,
+            "text": "Keine Durchschnittsschönrechnung"
           },
           {
             "level": 2,
@@ -54902,42 +57349,14 @@
           },
           {
             "level": 2,
-            "text": "Die sechs Module der Wirkungsprüfung"
+            "text": "Regierungsakte bleiben eine eigene Faktenschicht"
           },
           {
             "level": 3,
-            "text": "Vor der Wirkung"
-          },
-          {
-            "level": 3,
-            "text": "Umsetzung und Veränderung"
-          },
-          {
-            "level": 3,
-            "text": "Evidenz und Zurechnung"
-          },
-          {
-            "level": 3,
-            "text": "Wirkungsbewertung"
-          },
-          {
-            "level": 3,
-            "text": "Schutz- und Systemprüfung"
-          },
-          {
-            "level": 3,
-            "text": "Rückkopplung und Lernen"
-          },
-          {
-            "level": 2,
-            "text": "Die vollständige Spur"
-          },
-          {
-            "level": 2,
             "text": "Was ist geschehen?"
           },
           {
-            "level": 2,
+            "level": 3,
             "text": "Was könnte oder hat sich verändert?"
           },
           {
@@ -54991,7 +57410,7 @@
         ],
         "headingSkips": [],
         "landmarks": {
-          "header": 1,
+          "header": 2,
           "nav": 8,
           "main": 1,
           "footer": 1
@@ -55006,6 +57425,18 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [
+          "fact",
+          "problem",
+          "goal",
+          "impact",
+          "recommendation",
+          "common-targets",
+          "reality-check",
+          "inspiration"
+        ],
+        "canonicalMethodOrderPass": true,
+        "measurementChainPass": true,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -55093,6 +57524,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -55352,6 +57786,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -55465,6 +57902,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -56212,6 +58652,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -56607,6 +59050,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {
@@ -56678,6 +59124,9 @@
         "recommendationBeforeProcess": true,
         "methodOrderPresent": false,
         "methodOrderPass": false,
+        "canonicalMethodStages": [],
+        "canonicalMethodOrderPass": false,
+        "measurementChainPass": false,
         "smallTargets": [],
         "rawTokens": [],
         "focus": {

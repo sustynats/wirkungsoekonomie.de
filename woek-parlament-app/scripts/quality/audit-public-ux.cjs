@@ -38,6 +38,7 @@ const routes = [
   "/laender",
   "/begriffe",
   "/entscheidungen/bt21-dip-907488f49a72",
+  "/methodik",
   "/regierung/methodik",
   "/regierung/transparenz",
   "/quellen",
@@ -86,6 +87,9 @@ function slug(value) {
         const methodLayers = ["problem", "goal", "impact"].map((id) => document.querySelector(`[data-woek-method-layer="${id}"]`));
         const commonTargets = document.querySelector("[data-woek-common-targets]");
         const realityLayer = document.querySelector('[data-woek-method-layer="reality"]');
+        const canonicalMethodStages = [...document.querySelectorAll("[data-method-stage]")].map((element) => element.getAttribute("data-method-stage"));
+        const canonicalMethodExpected = ["fact", "problem", "goal", "impact", "recommendation", "common-targets", "reality-check", "inspiration"];
+        const measurementChainText = (document.querySelector(".measurement-chain")?.textContent || "").replace(/\s+/g, " ").trim();
         const headings = [...document.querySelectorAll("h1,h2,h3,h4,h5,h6")].map((element) => ({
           level: Number(element.tagName.slice(1)),
           text: (element.textContent || "").trim().slice(0, 160),
@@ -192,6 +196,9 @@ function slug(value) {
           recommendationBeforeProcess: !recommendation || !process || Boolean(recommendation.compareDocumentPosition(process) & Node.DOCUMENT_POSITION_FOLLOWING),
           methodOrderPresent: methodLayers.every(Boolean) && Boolean(recommendation) && Boolean(commonTargets) && Boolean(realityLayer),
           methodOrderPass: methodLayers.every(Boolean) && Boolean(recommendation) && Boolean(commonTargets) && Boolean(realityLayer) && [methodLayers[0], methodLayers[1], methodLayers[2], recommendation, commonTargets].every((node, index, nodes) => Boolean(node.compareDocumentPosition(nodes[index + 1] ?? realityLayer) & Node.DOCUMENT_POSITION_FOLLOWING)),
+          canonicalMethodStages,
+          canonicalMethodOrderPass: canonicalMethodStages.length === canonicalMethodExpected.length && canonicalMethodStages.every((stage, index) => stage === canonicalMethodExpected[index]),
+          measurementChainPass: ["MasterItem", "StateVariable", "Indicator", "Observation", "Analysis / RealityCheck"].every((token, index, tokens) => measurementChainText.indexOf(token) >= 0 && (index === 0 || measurementChainText.indexOf(tokens[index - 1]) < measurementChainText.indexOf(token))),
           smallTargets,
           rawTokens,
           focus: focusCandidate ? {
@@ -211,7 +218,7 @@ function slug(value) {
           runOnly: { type: "tag", values: ["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"] },
         }));
       }
-      if (!navigationError && [320, 390, 1440].includes(width) && ["/", "/entscheidungen/schutz-vor-k-o-tropfen", "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-GMODG-2026", "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-BHH-2027", "/regierung/akte/govaction%3Adip%3A325252", "/eu/wirkungsfaelle/EU-IMPACT-2026-004", "/quellen", "/suche?q=Klima"].includes(route)) {
+      if (!navigationError && [320, 390, 1440].includes(width) && ["/", "/entscheidungen/schutz-vor-k-o-tropfen", "/methodik", "/regierung/methodik", "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-GMODG-2026", "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-BHH-2027", "/regierung/akte/govaction%3Adip%3A325252", "/eu/wirkungsfaelle/EU-IMPACT-2026-004", "/quellen", "/suche?q=Klima"].includes(route)) {
         await page.screenshot({ path: path.join(screenshotDir, `${width}-${slug(route)}.png`), fullPage: true });
       }
       results.push({
@@ -243,6 +250,8 @@ function slug(value) {
     if (result.metrics?.headingSkips.length) issues.push("HEADING_LEVEL_SKIP");
     if (result.metrics && (!result.metrics.assessmentBeforeProcess || !result.metrics.substantiveBeforeProcess || !result.metrics.sourceBeforeProcess || !result.metrics.recommendationBeforeProcess)) issues.push("PROCESS_PRECEDES_IMPACT");
     if (result.metrics?.methodOrderPresent && !result.metrics.methodOrderPass) issues.push("METHOD_DOM_ORDER");
+    if (["/methodik", "/regierung/methodik"].includes(result.route) && !result.metrics?.canonicalMethodOrderPass) issues.push("CANONICAL_METHOD_DOM_ORDER");
+    if (["/methodik", "/regierung/methodik"].includes(result.route) && !result.metrics?.measurementChainPass) issues.push("MEASUREMENT_ARCHITECTURE_MISSING");
     if (result.metrics?.assessment) {
       const fontSize = Number.parseFloat(result.metrics.assessment.fontSize);
       if (result.metrics.assessment.tag !== "P" || fontSize < 18 || fontSize > 20.5 || !/sans/i.test(result.metrics.assessment.fontFamily)) issues.push("ASSESSMENT_TYPOGRAPHY");

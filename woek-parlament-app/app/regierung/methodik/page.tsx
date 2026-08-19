@@ -1,33 +1,22 @@
 import Link from "next/link";
-
-const modules = [
-  ["A", "Vor der Wirkung", "Auslöser, Ziel, Empfänger, Wirkungsräume, Potenziale, Risiken, Bedingungen und Wirkungsordnungen werden modelliert."],
-  ["B", "Umsetzung und Veränderung", "Beschluss, Inkrafttreten, Mittelabfluss, Verwaltungsumsetzung, Output und reale Zustandsveränderung bleiben getrennt."],
-  ["C", "Evidenz und Zurechnung", "Beobachtungen, Baseline, Gegenfaktum, Alternativerklärungen und der mögliche Beitrag des Regierungsakts werden geprüft."],
-  ["D", "Wirkungsbewertung", "Richtung und Evidenz werden getrennt gegen Mensch, Planet, Demokratie, SDGs, SDG+ und weitere offengelegte Referenzen eingeordnet."],
-  ["E", "Schutz- und Systemprüfung", "Grundrechte, Nichtkompensation, Reverse Merit Order, Verteilung, Rebound, Resilienz und Pfadabhängigkeit begrenzen die Verdichtung."],
-  ["F", "Rückkopplung und Lernen", "Datenlücken, nächste Prüftermine und notwendige Anpassungen werden als Teil der Analyse dokumentiert."],
-] as const;
+import { CanonicalMethodExplainer } from "@/app/components/CanonicalMethodExplainer";
 
 export default function GovernmentMethodPage() {
   return <section className="section shell government-method-page">
-    <p className="eyebrow">Prüfbare Methodik</p><h1>Vom amtlichen Handeln zur beobachteten Wirkung</h1>
-    <p className="lead">Erst klären wir, was tatsächlich beschlossen oder getan wurde. Dann modellieren wir mögliche Wirkpfade. Danach prüfen wir Umsetzung und beobachtbare Zustandsveränderungen. Erst anschließend folgen Evidenz, Zurechnung und normative Bewertung.</p>
+    <p className="eyebrow">Prüfbare Methodik · Bundesregierung</p><h1>Regierungshandeln nach derselben Wirkungslogik prüfen</h1>
+    <p className="lead">Für Regierungsakte gilt keine eigene Abkürzung: Erst werden amtlicher Sachverhalt, Problem und Ziel geprüft. Danach folgen Wirkungsanalyse, eine ausschließlich fachlich freigegebene WÖk-Handlungsoption, der getrennte Vergleich an gemeinsamen Zielen und später der Reality Check.</p>
     <blockquote>Eine Wirkungsbewertung soll nicht geglaubt werden müssen. Sie soll geprüft werden können.</blockquote>
 
     <div className="notice"><strong>Wirkungspotenzial ist noch keine Wirkung</strong><p>Eine Ex-ante-Analyse kann eine fachlich begründete positive, negative, ambivalente oder offene Richtung besitzen, obwohl noch keine Wirkung eingetreten ist. „Ex ante“ bedeutet deshalb nicht „offen“. Fehlende Daten bedeuten nicht neutral und erzeugen keinen Nullwert.</p></div>
+
+    <CanonicalMethodExplainer context="government" />
 
     <h2>Der damalige Wissensstand bleibt sichtbar</h2>
     <p>Für jede Ex-ante-Analyse gilt ein dokumentierter Wissensstichtag. Geprüft wird, welche Wirkungspotenziale, Risiken, Alternativen und Unsicherheiten vor der Entscheidung erkennbar waren. Amtliche Kommunikation kann Ziele und damalige Annahmen belegen. Sie ersetzt weder unabhängige Evidenz noch die spätere Beobachtung tatsächlicher Wirkung.</p>
     <div className="government-process-line government-process-line--wrap" aria-label="Zeitliche Trennung der Wirkungsanalyse"><span>Vorher verfügbare Quellen</span><b aria-hidden="true">→</b><span>Ex-ante-Wirkungspotenziale</span><b aria-hidden="true">→</b><span>Entscheidung</span><b aria-hidden="true">→</b><span>Umsetzung</span><b aria-hidden="true">→</b><span>Beobachtete Veränderung</span><b aria-hidden="true">→</b><span>Ex-post-Prüfung</span></div>
 
-    <h2>Die sechs Module der Wirkungsprüfung</h2>
-    <div className="government-method-grid">{modules.map(([letter, title, text]) => <article key={letter}><span aria-hidden="true">{letter}</span><h3>{title}</h3><p>{text}</p></article>)}</div>
-
-    <h2>Die vollständige Spur</h2>
-    <div className="government-process-line government-process-line--wrap" aria-label="Methodische Prüfkette"><span>Amtliche Quelle</span><b aria-hidden="true">→</b><span>Regierungsakt</span><b aria-hidden="true">→</b><span>Umsetzung</span><b aria-hidden="true">→</b><span>Output</span><b aria-hidden="true">→</b><span>Zustandsveränderung</span><b aria-hidden="true">→</b><span>Evidenz und Zurechnung</span><b aria-hidden="true">→</b><span>Bewertung</span><b aria-hidden="true">→</b><span>Lernen</span></div>
-
-    <div className="government-method-split"><article><p className="eyebrow">Faktenschicht</p><h2>Was ist geschehen?</h2><p>SourceEvent und Regierungsakt werden getrennt. Eine Pressemitteilung kann einen staatlichen Handlungsgegenstand belegen, ist aber nicht automatisch selbst ein neuer Regierungsakt. Regierung und Parlament bleiben ebenfalls getrennte Objekte.</p></article><article><p className="eyebrow">Fachanalyse</p><h2>Was könnte oder hat sich verändert?</h2><p>Wirkungsmechanismus, Empfänger, Zustandsvariable, Richtung, Evidenz, Datenstatus und Zurechnung werden in einer versionierten Analyse dokumentiert. Data 1.1 erzeugt diese Analyse ausdrücklich noch nicht automatisch.</p></article></div>
+    <h2>Regierungsakte bleiben eine eigene Faktenschicht</h2>
+    <div className="government-method-split"><article><p className="eyebrow">Amtlicher Sachverhalt</p><h3>Was ist geschehen?</h3><p>SourceEvent und Regierungsakt werden getrennt. Eine Pressemitteilung kann einen staatlichen Handlungsgegenstand belegen, ist aber nicht automatisch selbst ein neuer Regierungsakt. Regierung, Parlament, Rechtsakt und Umsetzung bleiben ebenfalls getrennte Objekte.</p></article><article><p className="eyebrow">WÖk-Fachanalyse</p><h3>Was könnte oder hat sich verändert?</h3><p>Wirkungsmechanismus, Empfänger, Zustandsvariable, Richtung, Evidenz, Datenstatus und Zurechnung werden in einer versionierten Analyse dokumentiert. Technische Daten erzeugen diese fachliche Bewertung ausdrücklich nicht automatisch.</p></article></div>
 
     <h2>Beobachtung ist noch keine Zurechnung</h2>
     <div className="government-formula-card"><p className="formula" aria-label="Beobachtete Veränderung ist der Wert danach minus dem Wert davor">ΔY<sub>beobachtet</sub> = Y<sub>nachher</sub> - Y<sub>vorher</sub></p><p>Diese Differenz zeigt eine Zustandsveränderung. Sie beweist noch nicht, dass der Regierungsakt sie verursacht hat.</p></div>

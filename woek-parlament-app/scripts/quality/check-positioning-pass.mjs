@@ -19,10 +19,22 @@ const checks = [
     file: "app/[section]/page.tsx",
     required: [
       "Die WÖk beginnt nicht dort, wo bestehende Folgenabschätzung endet",
-      "Zustandsveränderung feststellen",
+      "CanonicalMethodExplainer",
       "SDG+ ist keine UN-Kategorie.",
       "Was die WÖk nicht behauptet",
       "Was die WÖk zusätzlich leistet"
+    ]
+  },
+  {
+    file: "app/components/CanonicalMethodExplainer.tsx",
+    required: [
+      "Gibt es das behauptete Problem wirklich - und was genau ist es?",
+      "Wirkungsanalyse: A → M → ΔZ → R",
+      "RecommendationRecord 2.3",
+      "MasterItem",
+      "StateVariable",
+      "Analysis / RealityCheck",
+      "Nichtkompensation"
     ]
   },
   {

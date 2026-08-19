@@ -613,6 +613,24 @@ h1, h2, h3, h4 { text-wrap: balance; }
 .method-grid h2, .transparency-list h2 { margin: .5rem 0; font-size: 1.55rem; }
 .method-grid .notice { grid-column: 1 / -1; margin: 0; }
 .method-grid--three { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-block: 1.5rem; }
+.canonical-method { margin-block: clamp(2rem, 5vw, 4rem); }
+.canonical-method-intro { display: grid; max-width: 52rem; gap: .45rem; margin-bottom: 1.5rem; }
+.canonical-method-intro .eyebrow, .canonical-method-intro h2, .canonical-method-intro p { margin: 0; }
+.canonical-method-intro p:last-child { color: var(--muted); line-height: 1.6; }
+.canonical-method-steps { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; margin: 0; padding: 1px; border: 1px solid var(--line); background: var(--line); list-style: none; }
+.canonical-method-steps li { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 1rem; min-width: 0; padding: clamp(1.1rem, 2.5vw, 1.55rem); background: var(--paper); }
+.canonical-method-number { display: grid; width: 2.4rem; height: 2.4rem; place-items: center; border-radius: 50%; color: var(--paper); background: var(--navy); font-size: .78rem; font-weight: 850; letter-spacing: .04em; }
+.canonical-method-steps h3 { margin: .15rem 0 .45rem; font-size: clamp(1.08rem, 2vw, 1.32rem); }
+.canonical-method-steps p { margin: 0; color: var(--muted); line-height: 1.58; }
+.measurement-architecture { display: grid; gap: 1.25rem; margin-block: clamp(2rem, 5vw, 4rem); padding: clamp(1.25rem, 3vw, 2rem); border: 1px solid var(--line); border-top: .25rem solid var(--gold); background: var(--paper); }
+.measurement-architecture > div:first-child { max-width: 54rem; }
+.measurement-architecture > div:first-child .eyebrow, .measurement-architecture > div:first-child h2 { margin-top: 0; }
+.measurement-chain { display: flex; flex-wrap: wrap; align-items: center; gap: .55rem; padding: 1rem; background: var(--gold-soft); }
+.measurement-chain span { min-width: 0; padding: .55rem .7rem; border: 1px solid var(--line); border-radius: var(--r-btn); background: var(--paper); font-weight: 800; overflow-wrap: anywhere; }
+.measurement-principles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; border: 1px solid var(--line); background: var(--line); }
+.measurement-principles article { padding: 1rem; background: var(--paper); }
+.measurement-principles h3 { margin: 0 0 .35rem; font-size: 1.05rem; }
+.measurement-principles p { margin: 0; color: var(--muted); line-height: 1.55; }
 .glossary-basics { display: grid; grid-template-columns: minmax(180px, .45fr) minmax(0, 1.55fr) auto; gap: 1.25rem; align-items: start; margin: clamp(1.5rem, 4vw, 2.5rem) 0; padding: 1.1rem 1.25rem; border: 1px solid var(--line); border-left: 4px solid var(--teal); background: var(--cream); }
 .glossary-basics .eyebrow { margin-bottom: .35rem; }
 .glossary-basics h2 { margin: 0; font-size: 1.2rem; }
@@ -1498,7 +1516,11 @@ h1, h2, h3, h4 { text-wrap: balance; }
   .pillar-list li:last-child { grid-column: auto; }
   .section-heading { align-items: start; flex-direction: column; }
   .section-inline-action { align-items: flex-start; flex-direction: column; }
-  .method-grid, .method-grid--three, .transparency-list, .impact-architecture ol { grid-template-columns: 1fr; }
+  .method-grid, .method-grid--three, .transparency-list, .impact-architecture ol, .canonical-method-steps, .measurement-principles { grid-template-columns: 1fr; }
+  .canonical-method-steps li { grid-template-columns: 2.2rem minmax(0, 1fr); gap: .75rem; padding: 1rem; }
+  .canonical-method-number { width: 2.2rem; height: 2.2rem; }
+  .measurement-chain { align-items: stretch; flex-direction: column; }
+  .measurement-chain b { display: none; }
   .working-act-index, .portfolio-path-grid, .normative-tile-grid { grid-template-columns: 1fr; }
   .normative-path-list li { grid-template-columns: 2.1rem minmax(0, 1fr); }
   .search-filter-grid, .search-result-list > article { grid-template-columns: 1fr; }
