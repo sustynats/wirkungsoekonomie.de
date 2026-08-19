@@ -40,8 +40,14 @@ const server = spawn(process.execPath, ["node_modules/next/dist/bin/next", "star
 
 try {
   await waitReady();
-  await run(process.execPath, ["scripts/quality/check-government-source-vs-view.mjs", `--base-url=${baseUrl}`, `--report=${path.join(auditRoot, "SOURCE-VS-VIEW-B07.json")}`]);
-  await run(process.execPath, ["scripts/quality/check-fachvollstaendigkeit-source-vs-view.mjs", `--base-url=${baseUrl}`, `--report=${path.join(auditRoot, "FACHVOLLSTAENDIGKEIT-SOURCE-VS-VIEW-B07.json")}`]);
+  await run(process.execPath, ["scripts/quality/check-government-source-vs-view.mjs"], {
+    WOEK_SOURCE_VS_VIEW_BASE_URL: baseUrl,
+    WOEK_SOURCE_VS_VIEW_REPORT: path.join(auditRoot, "SOURCE-VS-VIEW-B07.json"),
+  });
+  await run(process.execPath, ["scripts/quality/check-fachvollstaendigkeit-source-vs-view.mjs"], {
+    WOEK_SOURCE_VS_VIEW_BASE_URL: baseUrl,
+    WOEK_FACHVOLLSTAENDIGKEIT_SOURCE_VS_VIEW_REPORT: path.join(auditRoot, "FACHVOLLSTAENDIGKEIT-SOURCE-VS-VIEW-B07.json"),
+  });
   await run(process.execPath, ["scripts/quality/check-eu-source-vs-view.mjs"], {
     WOEK_SOURCE_VS_VIEW_BASE_URL: baseUrl,
     WOEK_EU_SOURCE_VS_VIEW_REPORT: path.join(auditRoot, "EU-SOURCE-VS-VIEW-B07.json"),
