@@ -83,3 +83,10 @@ test("autopilot status is protected and public impact routes are not", () => {
   assert.match(nav, /Wirkungsfälle/);
   assert.match(nav, /Europäische Union/);
 });
+
+test("each primary navigation surface exposes every destination exactly once", () => {
+  const nav = readFileSync("app/components/PortalNav.tsx", "utf8");
+  const destinations = [...nav.matchAll(/\["[^"]+",\s*"([^"]+)"\]/g)].map((match) => match[1]);
+  assert.equal(destinations.filter((href) => href === "/laender").length, 1);
+  assert.equal(new Set(destinations).size, destinations.length);
+});

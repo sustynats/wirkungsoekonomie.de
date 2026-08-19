@@ -13,7 +13,6 @@ const links = [
 
 const moreLinks = [
   ["Wirkungsobservatorium", "/wirkungsobservatorium"],
-  ["Länder", "/laender"],
   ["Mandat & Praxis", "/mandat-und-praxis"],
   ["Fachanalysen", "/fachanalysen"],
   ["Abstimmungsbilanz", "/abgeordnete"],
