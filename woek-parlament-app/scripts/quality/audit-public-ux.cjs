@@ -107,6 +107,11 @@ function slug(value) {
         const publicTextWithoutUrls = publicText.replace(/https?:\/\/[^\s<>()\]"']+/gi, " ");
         const rawTokens = [...new Set(publicTextWithoutUrls.match(/\b[A-Z][A-Z0-9]*(?:_[A-Z0-9]+)+\b|\b[a-z][a-z0-9]*(?:_[a-z0-9]+)+\b/g) || [])].slice(0, 30);
         const assessmentStyle = assessment ? getComputedStyle(assessment) : null;
+        const assessmentIconPairs = [...document.querySelectorAll(".overview-assessment")].map((section) => ({
+          expected: section.getAttribute("data-woek-assessment-direction"),
+          rendered: section.querySelector("[data-woek-assessment-icon]")?.getAttribute("data-woek-assessment-icon") ?? null,
+          label: (section.querySelector(".overview-assessment-label")?.textContent || "").trim(),
+        }));
         const focusCandidate = document.querySelector("a[href],button,input,select,textarea,summary");
         if (focusCandidate instanceof HTMLElement) focusCandidate.focus();
         const focusStyle = focusCandidate ? getComputedStyle(focusCandidate) : null;
@@ -136,6 +141,8 @@ function slug(value) {
             const cardProcess = card.querySelector("[data-woek-process-metadata]");
             return !cardAssessment || !cardProcess || Boolean(cardAssessment.compareDocumentPosition(cardProcess) & Node.DOCUMENT_POSITION_FOLLOWING);
           }),
+          assessmentIconPairs,
+          assessmentIconAgreement: assessmentIconPairs.every((pair) => pair.expected && pair.expected === pair.rendered && pair.expected !== "unknown"),
           substantiveBeforeProcess: !substantive || !process || Boolean(substantive.compareDocumentPosition(process) & Node.DOCUMENT_POSITION_FOLLOWING),
           sourceBeforeProcess: !source || !process || Boolean(source.compareDocumentPosition(process) & Node.DOCUMENT_POSITION_FOLLOWING),
           recommendationBeforeProcess: !recommendation || !process || Boolean(recommendation.compareDocumentPosition(process) & Node.DOCUMENT_POSITION_FOLLOWING),
@@ -193,6 +200,7 @@ function slug(value) {
       const fontSize = Number.parseFloat(result.metrics.assessment.fontSize);
       if (result.metrics.assessment.tag !== "P" || fontSize < 18 || fontSize > 20.5 || !/sans/i.test(result.metrics.assessment.fontFamily)) issues.push("ASSESSMENT_TYPOGRAPHY");
     }
+    if (result.metrics?.assessmentIconPairs.length && !result.metrics.assessmentIconAgreement) issues.push("ASSESSMENT_ICON_DIRECTION_MISMATCH");
     if (result.axeViolations.some((violation) => violation.impact === "critical" || violation.impact === "serious")) issues.push("AXE_SERIOUS_OR_CRITICAL");
     return issues.length ? [{ route: result.route, width: result.width, issues }] : [];
   });

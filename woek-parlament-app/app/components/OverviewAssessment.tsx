@@ -1,28 +1,14 @@
-import type { OverviewAssessmentData } from "@/lib/presentation/overview-assessment";
+import type { AssessmentIconKind, OverviewAssessmentData } from "@/lib/presentation/overview-assessment";
 import { BoundaryIcon, CalculationIcon, CheckCircleIcon, EvidenceIcon, MonitorIcon, PathIcon } from "@/app/components/icons";
 
-type AssessmentIconKind = "positive" | "risk" | "ambivalent" | "open" | "portfolio" | "conditional" | "protection";
-
-function assessmentIconKind(label: string): AssessmentIconKind {
-  const normalized = label.toLocaleLowerCase("de-DE");
-  if (/portfolio|einzelma(?:ß|ss)nahmen|disaggreg|einheitsrichtung/.test(normalized)) return "portfolio";
-  if (/schutz/.test(normalized) && /risik|freiheit|recht|nebenwirkung/.test(normalized)) return "protection";
-  if (/gegenläufig|ambivalent|zielkonflikt/.test(normalized)) return "ambivalent";
-  if (/risiko|negativ|schaden/.test(normalized)) return "risk";
-  if (/offen|unklar|nicht bewertbar/.test(normalized)) return "open";
-  if (/bedingt|voraussetzung|umsetzung|abhängig/.test(normalized)) return "conditional";
-  return "positive";
-}
-
-function AssessmentIcon({ label }: { label: string }) {
-  const kind = assessmentIconKind(label);
-  const iconLabel = `Symbol für die WÖk-Kurzbewertung: ${label}`;
+function AssessmentIcon({ directionLabel, kind }: { directionLabel: string; kind: AssessmentIconKind }) {
+  const iconLabel = `Symbol für Wirkungsrichtung: ${directionLabel}`;
   return (
     <span className={`overview-assessment-icon overview-assessment-icon--${kind}`} role="img" aria-label={iconLabel} data-woek-assessment-icon={kind}>
       {kind === "portfolio" ? <CalculationIcon aria-hidden="true" />
         : kind === "protection" || kind === "risk" ? <BoundaryIcon aria-hidden="true" />
           : kind === "ambivalent" ? <PathIcon aria-hidden="true" />
-            : kind === "open" ? <EvidenceIcon aria-hidden="true" />
+            : kind === "open" || kind === "neutral" || kind === "unknown" ? <EvidenceIcon aria-hidden="true" />
               : kind === "conditional" ? <MonitorIcon aria-hidden="true" />
                 : <CheckCircleIcon aria-hidden="true" />}
     </span>
@@ -36,9 +22,10 @@ export function OverviewAssessment({ assessment, compact = false }: { assessment
       aria-label="Zusammenfassende WÖk-Bewertung"
       data-woek-preview-assessment="published"
       data-woek-assessment-surface={compact ? "preview" : "detail"}
+      data-woek-assessment-direction={assessment.directionKind}
     >
       <div className="overview-assessment-heading">
-        <AssessmentIcon label={assessment.assessmentLabel} />
+        <AssessmentIcon directionLabel={assessment.directionLabel} kind={assessment.directionKind} />
         <div>
           <p className="eyebrow">{compact ? "WÖk-Kurzbewertung" : "Executive-WÖk-Zusammenfassung"}</p>
           <p className="overview-assessment-label">{assessment.assessmentLabel}</p>

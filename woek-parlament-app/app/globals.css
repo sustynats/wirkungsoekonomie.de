@@ -1342,7 +1342,9 @@ h1, h2, h3, h4 { text-wrap: balance; }
 .overview-assessment-icon--ambivalent,
 .overview-assessment-icon--conditional { background: var(--farbe-aktion-zweit); }
 .overview-assessment-icon--portfolio { background: var(--farbe-flaeche-buehne); }
-.overview-assessment-icon--open { color: var(--farbe-text); border-color: var(--farbe-linie); background: var(--farbe-flaeche-karte); }
+.overview-assessment-icon--open,
+.overview-assessment-icon--neutral,
+.overview-assessment-icon--unknown { color: var(--farbe-text); border-color: var(--farbe-linie); background: var(--farbe-flaeche-karte); }
 .overview-assessment .overview-assessment-label {
   max-width: 52ch;
   margin: 0;

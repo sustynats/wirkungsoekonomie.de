@@ -4,7 +4,7 @@ import { ParliamentSearch } from "@/app/suche/ParliamentSearch";
 import { listPublishedCases } from "@/lib/cases";
 import { listFachanalysen } from "@/lib/fachanalysen";
 import { directionLabels, evidenceLabels, getPublicImpactCases, governmentEditorialProjection } from "@/lib/government/impact-cases";
-import { parliamentaryOverviewAssessment } from "@/lib/presentation/overview-assessment";
+import { impactRecordAssessmentIconKind, parliamentaryOverviewAssessment } from "@/lib/presentation/overview-assessment";
 import { governmentPublicMaturity, parliamentPublicMaturity } from "@/lib/presentation/public-maturity";
 import { recommendationForImpactCase } from "@/lib/recommendations";
 import type { SearchableCase, SearchableFachanalyse, SearchableGovernmentImpact } from "@/lib/search";
@@ -49,6 +49,7 @@ export default function SearchPage() {
       editorialSummary: editorial.fields.editorial_summary,
       keyFinding: editorial.fields.key_finding,
       directionLabel: directionLabels[record.primary_direction],
+      directionKind: impactRecordAssessmentIconKind(record),
       evidenceSummary: `${evidenceLabels[record.evidence_level]}. ${editorial.fields.evidence_summary}`,
       realityCheckSummary: editorial.fields.reality_check_summary,
     };

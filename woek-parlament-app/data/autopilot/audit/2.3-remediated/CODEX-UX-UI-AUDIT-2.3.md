@@ -33,6 +33,7 @@ Routenfamilien:
 - zu kleine interaktive Ziele unter 24 px: 0
 - schwere oder kritische axe-Verstöße: 0
 - geprüfte WÖk-Bewertungsblöcke: 108
+- Abweichungen zwischen strukturiertem Richtungswert und gerendertem Bewertungsicon: 0
 
 ## Accessibility
 
@@ -40,6 +41,7 @@ Routenfamilien:
 - Gerenderte axe-Prüfung erfolgte für alle 19 Routen bei 390 und 1.440 px: keine schweren oder kritischen Verstöße.
 - Fokuszustände, Landmarken, genau eine H1 je Seite, Heading-Reihenfolge, Tabellensemantik und textliche Statusäquivalente wurden geprüft.
 - Farbe oder Icon sind an keiner geprüften Bewertungsfläche allein bedeutungstragend.
+- Icon, CSS-Zustand, Auditmarker und Screenreader-Text verwenden denselben strukturierten Richtungswert; unbekannte Werte fallen nicht auf „positiv“ zurück.
 
 ## Orientierung und Vertrauen
 
@@ -66,6 +68,13 @@ Geprüfte Regressionen:
 
 Alle liefern HTTP 200; der Browser-Audit meldet weder White Screen noch React-Object-Render-Fehler.
 
+## Icon-Richtungsregression
+
+- `EU-IMPACT-2026-004`: freigegebene Richtung `AMBIVALENT` → gerendert `data-woek-assessment-icon="ambivalent"` – PASS.
+- Positive, negative, ambivalente, offene, neutrale, bedingte, Schutz- und Portfoliozustände besitzen explizite technische Zuordnungen.
+- Unbekannte Richtung → `unknown` mit nicht-direktionaler Evidenzdarstellung; niemals positiver Default.
+- Die Browsermatrix vergleicht für jede gerenderte Bewertungsfläche `data-woek-assessment-direction` mit `data-woek-assessment-icon`.
+
 ## Source-vs.-View und Redaktion
 
 - Government: 53/53 Public ImpactCases, 1.622 öffentliche Felder – PASS
@@ -80,4 +89,3 @@ Der geänderte TSX-Umfang wurde gegen die React-Best-Practices geprüft: keine n
 ## Restrisiko und Freigabe
 
 Keine bekannten P0-/P1-Restmängel in der geprüften öffentlichen Projektion. Empfehlung: `READY_FOR_EXTERNAL_WOEK_AUDIT`. Production bleibt bis zur externen Freigabe unverändert.
-

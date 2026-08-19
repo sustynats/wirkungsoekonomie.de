@@ -25,6 +25,8 @@ Der öffentliche Portalstand ist technisch und gestalterisch für den externen W
 
 ## UX-/UI-Verbesserungen
 
+- Bewertungsicons werden ausschließlich aus strukturierten, freigegebenen Richtungswerten und expliziten Präsentationsmodi abgeleitet. Freitext-Heuristiken und ein Positiv-Standardfall wurden entfernt; unbekannte Werte bleiben nicht-direktional.
+- `EU-IMPACT-2026-004` zeigt für seine gegenläufigen Potenziale und Risiken nun konsistent die ambivalente Pfad-Darstellung statt eines positiven Häkchens.
 - Wirkungsanalyse, Quellen und – sofern vorhanden – Handlungsoption stehen auf Government- und EU-Detailseiten vor dem politischen Prozess.
 - Detailseiten besitzen genau eine fachliche Hauptüberschrift; eingebettete Fachakten vermeiden Heading-Sprünge.
 - Öffentliche Systemwerte werden nur mit freigegebenen Klartextzuordnungen gezeigt; unbekannte Werte bleiben ausgeblendet bzw. werden als offen markiert.
@@ -43,5 +45,4 @@ WÖk-Richtung, Evidenz, Quellen, Fachtexte und Bewertungslogik wurden nicht neu 
 
 `READY_FOR_EXTERNAL_WOEK_AUDIT`
 
-Es bestehen keine bekannten P0- oder P1-Darstellungsfehler im geprüften Public Store. Zehn Government- und fünf EU-Fälle verbleiben entsprechend ihren bestehenden Objektgates außerhalb des fertigen öffentlichen Analysebestands; dies ist kein technischer Release-Blocker und wird nicht als Vollständigkeit ausgegeben.
-
+Es bestehen keine bekannten P0- oder P1-Darstellungsfehler im geprüften Public Store. Zehn Government- und fünf EU-Fälle verbleiben entsprechend ihren bestehenden Objektgates außerhalb des fertigen öffentlichen Analysebestands; dies ist kein technischer Release-Blocker und wird nicht als Vollständigkeit ausgegeben. Der nachträgliche externe P0 zur Icon-Richtungssemantik wurde im neuen Kandidaten technisch behoben und in der vollständigen Browsermatrix regressionsgeprüft.

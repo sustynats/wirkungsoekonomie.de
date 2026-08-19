@@ -10,7 +10,7 @@ import { getGovernmentPublicData, sourceFunctionLabels } from "@/lib/government/
 import { listPublicEvidenceEvents } from "@/lib/observatory/public-data";
 import { euEditorialProjection, getEuImpactCases } from "@/lib/eu/impact-cases";
 import { getPublicRecommendations, recommendationStatusLabels } from "@/lib/recommendations";
-import { parliamentaryOverviewAssessment, type OverviewAssessmentData } from "@/lib/presentation/overview-assessment";
+import { impactRecordAssessmentIconKind, parliamentaryOverviewAssessment, type OverviewAssessmentData } from "@/lib/presentation/overview-assessment";
 import { isSafePublicSourceUrl, sourceDetailHrefForUrl, sourceSlugForCanonicalUrl } from "@/lib/sources/url";
 
 export { isSafePublicSourceUrl, sourceDetailHrefForUrl, sourceSlugForCanonicalUrl } from "@/lib/sources/url";
@@ -497,6 +497,7 @@ function governmentImpactSources(): StaticPublicSource[] {
           editorialSummary: editorial.fields.editorial_summary,
           keyFinding: editorial.fields.key_finding,
           directionLabel: directionLabels[impact.primary_direction] ?? impact.primary_direction,
+          directionKind: impactRecordAssessmentIconKind(impact),
           evidenceSummary: `${evidenceLabels[impact.evidence_level] ?? impact.evidence_level}. ${editorial.fields.evidence_summary}`,
           realityCheckSummary: editorial.fields.reality_check_summary,
         } : null;
@@ -554,6 +555,7 @@ function recommendationSources(): StaticPublicSource[] {
       editorialSummary: editorial.fields.editorial_summary,
       keyFinding: editorial.fields.key_finding,
       directionLabel: directionLabels[impact.primary_direction] ?? impact.primary_direction,
+      directionKind: impactRecordAssessmentIconKind(impact),
       evidenceSummary: `${evidenceLabels[impact.evidence_level] ?? impact.evidence_level}. ${editorial.fields.evidence_summary}`,
       realityCheckSummary: editorial.fields.reality_check_summary,
     } : null;
@@ -618,6 +620,7 @@ function euImpactSources(): StaticPublicSource[] {
         editorialSummary: editorial.fields.editorial_summary,
         keyFinding: editorial.fields.key_finding,
         directionLabel: directionLabels[impact.primary_direction] ?? impact.primary_direction,
+        directionKind: impactRecordAssessmentIconKind(impact),
         evidenceSummary: `${evidenceLabels[impact.evidence_level] ?? impact.evidence_level}. ${editorial.fields.evidence_summary}`,
         realityCheckSummary: editorial.fields.reality_check_summary,
       } : null;

@@ -8,6 +8,7 @@ import { euEditorialProjection, type EuImpactRecord } from "@/lib/eu/impact-case
 import { sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
 import { publicIndicatorLabel, publicSystemValueLabel } from "@/lib/presentation/labels";
 import { euPublicMaturity } from "@/lib/presentation/public-maturity";
+import { impactRecordAssessmentIconKind } from "@/lib/presentation/overview-assessment";
 
 export function EuImpactCase({ record, compact = false }: { record: EuImpactRecord; compact?: boolean }) {
   const editorial = euEditorialProjection(record);
@@ -18,6 +19,7 @@ export function EuImpactCase({ record, compact = false }: { record: EuImpactReco
     editorialSummary: editorial.fields.editorial_summary,
     keyFinding: editorial.fields.key_finding,
     directionLabel: directionLabels[record.primary_direction],
+    directionKind: impactRecordAssessmentIconKind(record),
     evidenceSummary: `${evidenceLabels[record.evidence_level]}. ${editorial.fields.evidence_summary}`,
     realityCheckSummary: editorial.fields.reality_check_summary,
   };

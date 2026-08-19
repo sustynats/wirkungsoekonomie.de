@@ -12,6 +12,7 @@ import { OverviewAssessment } from "@/app/components/OverviewAssessment";
 import { PublicMaturity } from "@/app/components/PublicMaturity";
 import { factOnlyPublicMaturity, governmentPublicMaturity } from "@/lib/presentation/public-maturity";
 import { recommendationForImpactCase } from "@/lib/recommendations";
+import { impactRecordAssessmentIconKind } from "@/lib/presentation/overview-assessment";
 
 export function GovernmentActionCard({ action }: { action: GovernmentAction }) {
   const impactCases = impactCasesForGovernmentAction(action.government_action_id);
@@ -24,6 +25,7 @@ export function GovernmentActionCard({ action }: { action: GovernmentAction }) {
       editorialSummary: editorial.fields.editorial_summary,
       keyFinding: editorial.fields.key_finding,
       directionLabel: directionLabels[record.primary_direction],
+      directionKind: impactRecordAssessmentIconKind(record),
       evidenceSummary: `${evidenceLabels[record.evidence_level]}. ${editorial.fields.evidence_summary}`,
       realityCheckSummary: editorial.fields.reality_check_summary,
     };

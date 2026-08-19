@@ -19,6 +19,7 @@ import { sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
 import { humanizeSystemValue, publicNarrativeText, publicStructuredFieldLabel, publicSystemLabel } from "@/lib/presentation/labels";
 import { governmentPublicMaturity } from "@/lib/presentation/public-maturity";
 import { recommendationForImpactCase } from "@/lib/recommendations";
+import { impactRecordAssessmentIconKind } from "@/lib/presentation/overview-assessment";
 
 function referenceSet(record: WoeKImpactCase, key: "sdg_refs" | "sdg_plus_refs" | "legal_refs") {
   return [...new Set(record.impact_paths.flatMap((path) => path[key] ?? []))];
@@ -227,6 +228,7 @@ export function GovernmentImpactCase({ record, compact = false, includeProcess =
     editorialSummary: editorial.fields.editorial_summary,
     keyFinding: editorial.fields.key_finding,
     directionLabel: directionLabels[record.primary_direction],
+    directionKind: impactRecordAssessmentIconKind(record),
     evidenceSummary: `${evidenceLabels[record.evidence_level]}. ${editorial.fields.evidence_summary}`,
     realityCheckSummary: editorial.fields.reality_check_summary,
   };
