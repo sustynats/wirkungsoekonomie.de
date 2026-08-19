@@ -48,7 +48,7 @@ export default function SaxonyAnhaltPage() {
         <div className="state-purpose-grid">
           <article><span aria-hidden="true">A</span><h3>Was wird vorgeschlagen?</h3><p>Konkrete Zusagen werden mit ihrer Originalfundstelle und ihren Bedingungen dokumentiert.</p></article>
           <article><span aria-hidden="true">B</span><h3>Was könnte sich verändern?</h3><p>Der Check zeigt die freigegebenen Wirkpfade für Menschen, Umwelt und demokratisches Zusammenleben - einschließlich Risiken, Bedingungen und Datenlücken.</p></article>
-          <article><span aria-hidden="true">C</span><h3>Was wird festgestellt - was bewertet?</h3><p>Zuerst geht es um Zustände, Veränderungen und - soweit möglich - Zurechnung. Erst danach folgt die Einordnung an SDGs, SDG+, Mensch - Planet - Demokratie, Recht und Landeszielen.</p></article>
+          <article><span aria-hidden="true">C</span><h3>Was wird festgestellt - was bewertet?</h3><p>Zuerst geht es um Zustände, Veränderungen und - soweit möglich - Zurechnung. Erst danach folgt die Einordnung an SDGs, SDG+, Mensch – Planet – Demokratie, Recht und Landeszielen.</p></article>
           <article><span aria-hidden="true">D</span><h3>Was passiert nach der Wahl?</h3><p>Programm, Koalitionsvereinbarung, konkrete Entscheidung, Umsetzung und spätere Beobachtung werden Schritt für Schritt verbunden.</p></article>
         </div>
       </section>
