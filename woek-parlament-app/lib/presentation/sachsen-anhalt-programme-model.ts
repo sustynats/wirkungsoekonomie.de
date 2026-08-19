@@ -127,6 +127,16 @@ function descendants(node: Node | null | undefined): Node[] {
   return node.children.flatMap((child) => [child, ...descendants(child)]);
 }
 
+function findNode(node: Node | null | undefined, title: string): Node | null {
+  if (!node) return null;
+  if (node.title === title) return node;
+  for (const child of node.children) {
+    const found = findNode(child, title);
+    if (found) return found;
+  }
+  return null;
+}
+
 function field(node: Node | null | undefined, label: string): string | null {
   if (!node) return null;
   const prefix = `**${label}:**`;
@@ -231,7 +241,7 @@ function headline(value: string) {
 
 function parseRegister(registerMarkdown: string) {
   const root = parseTree(registerMarkdown);
-  const commitments = root.children.find((node) => node.title === "commitments");
+  const commitments = findNode(root, "commitments");
   const map = new Map<string, {
     title: string | null;
     text: string | null;
@@ -370,17 +380,17 @@ export function buildSaxonyAnhaltProgrammeModel(reviewMarkdown: string, register
   const overview = saxonyAnhaltProgrammeOverview(reviewMarkdown);
   const reviewRoot = parseTree(reviewMarkdown);
   const register = parseRegister(registerMarkdown);
-  const materialCommitments = reviewRoot.children.find((node) => node.title === "material_commitments");
+  const materialCommitments = findNode(reviewRoot, "material_commitments");
   const commitments = (materialCommitments?.children.filter((node) => /^Eintrag\s+\d+$/i.test(node.title)) ?? [])
     .map((entry, index) => parseCommitment(entry, index + 1, register))
     .filter((entry): entry is ProgrammeCommitment => Boolean(entry));
 
-  const central = reviewRoot.children.find((node) => node.title === "central_impact_paths");
+  const central = findNode(reviewRoot, "central_impact_paths");
   const centralImpactCommitmentKeys = list(central)
     .map((pathId) => pathId.replace(/-WP\d+$/i, ""))
     .filter((key) => commitments.some((commitment) => commitment.key === key));
 
-  const crossCutting = reviewRoot.children.find((node) => node.title === "cross_cutting_patterns");
+  const crossCutting = findNode(reviewRoot, "cross_cutting_patterns");
   const crossCuttingPatterns = (crossCutting?.children.filter((node) => /^Eintrag\s+\d+$/i.test(node.title)) ?? [])
     .map((entry) => ({
       title: fieldDeep(entry, "pattern") ?? "Querschnittsmuster",
@@ -388,7 +398,7 @@ export function buildSaxonyAnhaltProgrammeModel(reviewMarkdown: string, register
       affectedKeys: list(direct(entry, "affected_commitment_keys")),
     }));
 
-  const communication = reviewRoot.children.find((node) => node.title === "programme_level_communicative_pre_effect");
+  const communication = findNode(reviewRoot, "programme_level_communicative_pre_effect");
 
   return {
     summary: overview.summary,
