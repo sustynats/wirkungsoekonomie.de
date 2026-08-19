@@ -78,7 +78,7 @@ export default async function GovernmentActionDetailPage({ params }: { params: P
 
         <section id="umsetzung">
           <p className="eyebrow">4 · Umsetzung</p><h2>Umsetzungsdaten noch nicht vollständig angebunden</h2>
-          <p>Diese Regierungsakte ist amtlich dokumentiert. Für Haushaltsvollzug, Förderung, Beschaffung oder administrative Umsetzung liegen in diesem Staging derzeit noch keine vollständigen verknüpften Daten vor. Das ist eine Datenlücke - kein Hinweis auf fehlende Umsetzung.</p>
+          <p>Diese Regierungsakte ist amtlich dokumentiert. Für Haushaltsvollzug, Förderung, Beschaffung oder administrative Umsetzung liegen im Portal derzeit noch keine vollständigen verknüpften Daten vor. Das ist eine Datenlücke - kein Hinweis auf fehlende Umsetzung.</p>
         </section>
 
         <section id="wirkung">
