@@ -5,6 +5,7 @@ import { CompletePublicationSource } from "@/app/components/CompletePublicationS
 import { saxonyAnhaltElectionProgrammes } from "@/data/sachsen-anhalt-election-programmes";
 import { getSaxonyAnhaltPublicationSources } from "@/lib/publication/fachakten";
 import {
+  presentSaxonyAnhaltMarkdown,
   presentSaxonyAnhaltSource,
   saxonyAnhaltProgrammeOverview
 } from "@/lib/presentation/sachsen-anhalt-programmes";
@@ -101,7 +102,7 @@ export default async function SaxonyAnhaltProgrammePage({ params }: { params: Pr
           <h2 id="programme-scope-title">Wirkung endet nicht an Ressort- oder Landesgrenzen.</h2>
         </div>
       </div>
-      {overview.implementationBoundary && <aside className="state-cross-border-note"><strong>Zuständigkeit und Umsetzung:</strong> {overview.implementationBoundary}</aside>}
+      {overview.implementationBoundary && <aside className="state-cross-border-note"><strong>Zuständigkeit und Umsetzung:</strong> {presentSaxonyAnhaltMarkdown(overview.implementationBoundary)}</aside>}
       {overview.policyDomains.length > 0 && <div className="state-reference-grid">
         {overview.policyDomains.map((domain) => <article key={domain}><p className="reference-kind">materielles Politikfeld</p><h3>{domain}</h3><p>Für dieses Feld enthält die Fachakte mindestens einen quellengebundenen Prüfpfad. Die konkrete Wirkungsrichtung wird auf Ebene der jeweiligen Zusage geprüft.</p></article>)}
       </div>}
