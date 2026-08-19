@@ -34,5 +34,7 @@ test("the source registry retains source summaries and analysis reverse usage", 
   assert.match(registry, /analysisSummary/);
   assert.match(registry, /caseHref/);
   assert.match(registry, /curated\?\.summary \?\? null/);
+  assert.match(registry, /publicOfficialIdentifierRows\(action\.official_identifiers\)/);
+  assert.match(registry, /government-identifier-/);
   assert.match(read("app/quellen/[slug]/page.tsx"), /Noch keine fachlich geprüfte Inhaltszusammenfassung veröffentlicht/);
 });

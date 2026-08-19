@@ -7,6 +7,7 @@ import { saxonyAnhaltElectionProgrammes } from "@/data/sachsen-anhalt-election-p
 import releasePublicationSourceLinks from "@/data/generated/release-1/publication-source-links.json";
 import { directionLabels, evidenceLabels, getPublicImpactCases, governmentEditorialProjection } from "@/lib/government/impact-cases";
 import { getGovernmentPublicData, sourceFunctionLabels } from "@/lib/government/public-data";
+import { publicOfficialIdentifierRows } from "@/lib/government/official-identifiers";
 import { listPublicEvidenceEvents } from "@/lib/observatory/public-data";
 import { euEditorialProjection, getEuImpactCases } from "@/lib/eu/impact-cases";
 import { getPublicRecommendations, recommendationStatusLabels } from "@/lib/recommendations";
@@ -704,6 +705,48 @@ function governmentFactSources(): StaticPublicSource[] {
         sourceHash: null,
         temporalClass: "CURRENT_REFERENCE",
         abstract: `Diese Originalquelle dokumentiert „${source.title}“ als ${sourceFunction.toLowerCase()}. Sie belegt den amtlichen Sachverhalt; eine eingetretene Wirkung oder WÖk-Richtung belegt sie nicht automatisch.`,
+        usages: [usage],
+      });
+    }
+
+    for (const identifier of publicOfficialIdentifierRows(action.official_identifiers)) {
+      if (!identifier.sourceUrl) continue;
+      const canonicalUrl = isSafePublicSourceUrl(identifier.sourceUrl);
+      const slug = canonicalUrl ? sourceSlugForCanonicalUrl(canonicalUrl) : null;
+      if (!canonicalUrl || !slug) continue;
+      const usage: PublicSourceUsage = {
+        caseSlug: action.government_action_id,
+        caseTitle: action.title,
+        caseKind: "GOVERNMENT_FACT_RECORD",
+        decisionDate: action.decision_date,
+        sourceRole: "DECISION_FACT",
+        locations: [],
+        note: `Das amtliche Dokument ist über die ${identifier.label} ${identifier.value} mit dieser Faktenakte verknüpft. Daraus wird keine Wirkungsrichtung abgeleitet.`,
+        caseHref: `/regierung/akte/${encodeURIComponent(action.government_action_id)}`,
+        analysisSummary: action.has_woek_analysis ? "Für den verknüpften Wirkungsgegenstand liegt eine separat freigegebene WÖk-Analyse vor." : "Faktenakte. WÖk-Wirkungsanalyse noch nicht veröffentlicht.",
+        analysisDirection: null,
+        evidenceLevel: null,
+      };
+      const existing = grouped.get(slug);
+      if (existing) {
+        existing.usages.push(usage);
+        continue;
+      }
+      grouped.set(slug, {
+        id: `government-identifier-${slug}`,
+        slug,
+        title: `Amtliches Dokument zu „${action.title}“`,
+        institution: institutionForUrl(canonicalUrl),
+        category: "PARLIAMENTARY_RECORD",
+        role: "DECISION_FACT",
+        documentType: "Amtliches Dokument aus dem parlamentarischen Informationssystem",
+        canonicalUrl,
+        documentDate: action.decision_date,
+        retrievedAt: action.last_verified_at,
+        versionLabel: `${identifier.label} ${identifier.value}`,
+        sourceHash: null,
+        temporalClass: "CURRENT_REFERENCE",
+        abstract: `Das amtliche Dokument ist über die ${identifier.label} ${identifier.value} mit der Faktenakte „${action.title}“ verknüpft. Es belegt Dokumentbezug und veröffentlichten Wortlaut; eine eingetretene Wirkung oder WÖk-Richtung belegt es nicht.`,
         usages: [usage],
       });
     }
