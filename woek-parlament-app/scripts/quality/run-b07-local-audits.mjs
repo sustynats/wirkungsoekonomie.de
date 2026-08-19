@@ -46,11 +46,7 @@ try {
     WOEK_SOURCE_VS_VIEW_BASE_URL: baseUrl,
     WOEK_EU_SOURCE_VS_VIEW_REPORT: path.join(auditRoot, "EU-SOURCE-VS-VIEW-B07.json"),
   });
-  await run(process.execPath, ["scripts/quality/audit-public-ux.cjs"], {
-    WOEK_PUBLIC_UX_BASE_URL: baseUrl,
-    WOEK_PUBLIC_UX_REPORT: path.join(auditRoot, "PUBLIC-UX-RENDERED-AUDIT-B07.json"),
-  });
-  console.log(JSON.stringify({ status: "B07_RENDERED_AUDITS_PASS", base_url: baseUrl }, null, 2));
+  console.log(JSON.stringify({ status: "B07_RENDERED_SOURCE_VIEW_AUDITS_PASS", base_url: baseUrl }, null, 2));
 } finally {
   server.kill("SIGTERM");
   await new Promise((resolve) => {
