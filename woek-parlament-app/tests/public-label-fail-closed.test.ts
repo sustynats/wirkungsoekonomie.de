@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
-import { humanizeSystemValue, publicControlText, publicIndicatorLabel, publicNarrativeText, publicSystemLabel, publicSystemValueLabel } from "@/lib/presentation/labels";
+import { humanizeSystemValue, publicControlText, publicIndicatorLabel, publicNarrativeText, publicObservatoryQualityFieldLabel, publicObservatoryValueLabel, publicSystemLabel, publicSystemValueLabel } from "@/lib/presentation/labels";
 import { euPublicMaturity } from "@/lib/presentation/public-maturity";
 
 test("unknown technical values fail closed instead of becoming title-cased public copy", () => {
@@ -37,6 +37,32 @@ test("reviewed labels remain available without exposing their control values", (
   for (const indicator of ["network_diffusion_after_response", "false_classification_appeals", "independent_oversight", "media_pluralism", "civil_society_operability", "fundamental_rights_cases"]) {
     assert.ok(publicIndicatorLabel(indicator));
   }
+});
+
+test("observatory values use reviewed context labels and unknown tokens fail closed", () => {
+  assert.equal(publicObservatoryValueLabel("ACTIVE"), "aktiv");
+  assert.equal(publicObservatoryValueLabel("EXTERNAL_CONTEXT"), "externer Kontext");
+  assert.equal(publicObservatoryValueLabel("PROVISIONAL_UNTIL_OFFICIAL_VALIDATION"), "vorläufig bis zur amtlichen Validierung");
+  assert.equal(publicObservatoryValueLabel("NOT_ESTABLISHED"), "nicht nachgewiesen");
+  assert.equal(publicObservatoryValueLabel("HIGH"), "hoch");
+  assert.equal(publicObservatoryValueLabel("P1"), null);
+  assert.equal(publicObservatoryValueLabel("UNREVIEWED_OBSERVATORY_STATUS"), null);
+  assert.equal(publicObservatoryQualityFieldLabel("record_classification"), "Einordnung des Rekordstatus");
+  assert.equal(publicObservatoryQualityFieldLabel("unknown_quality_field"), null);
+});
+
+test("observatory presentation keeps machine identifiers and internal priority out of editorial copy", () => {
+  const page = readFileSync("app/wirkungsobservatorium/page.tsx", "utf8");
+  const states = readFileSync("app/laender/page.tsx", "utf8");
+  assert.doesNotMatch(states, /im aktuellen Staging bereits/);
+  assert.match(states, /im aktuellen Portalstand bereits/);
+  assert.doesNotMatch(page, /\{outcome\.outcome_series_id\}/);
+  assert.doesNotMatch(page, /state_observation_ids\.join/);
+  assert.doesNotMatch(page, /\{candidate\.linked_impact_case_id\}/);
+  assert.doesNotMatch(page, /humanizeSystemValue\(candidate\.priority\)/);
+  assert.match(page, /publicObservatoryValueLabel/);
+  assert.match(page, /Betroffene Zustandsvariablen/);
+  assert.match(page, /keine freigegebene öffentliche Bezeichnung/);
 });
 
 test("EU public projection uses strict label lookups and suppresses missing labels", () => {

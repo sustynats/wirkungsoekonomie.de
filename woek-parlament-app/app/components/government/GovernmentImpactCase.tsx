@@ -277,8 +277,8 @@ export function GovernmentImpactCase({ record, compact = false, includeProcess =
 
         {fullRecord ? <GovernmentRealityCheck record={fullRecord} /> : <section data-woek-method-layer="reality"><p className="eyebrow">6 · Reality Check</p><h2>Was hat sich tatsächlich verändert?</h2><p>Noch keine fachlich freigegebene strukturierte Beobachtung. Offen bedeutet weder neutral noch wirkungslos.</p></section>}
 
-        {record.full_analysis_markdown && <details className="government-full-record government-technical-proof" data-woek-substantive-impact="published">
-          <summary>Vollständige, unveränderte Fachakte aufklappen</summary>
+        {record.full_analysis_markdown && <details className="government-full-record government-technical-proof" data-woek-substantive-impact="published" data-woek-technical-proof="full-fach-record">
+          <summary>Vollständige, unveränderte Fachakte mit technischen Nachweisen aufklappen</summary>
           <FullAnalysisText source={{
             title: record.title,
             releasedAt: record.analysis_as_of,

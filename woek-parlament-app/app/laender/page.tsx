@@ -17,7 +17,7 @@ export default function StatesPage() {
 
       <section className="notice" aria-labelledby="states-coverage-status">
         <strong id="states-coverage-status">Statischer Initialbestand - noch kein operativer Länder-Crawler</strong>
-        <p>Alle 16 Länder sind als Jurisdiktionen registriert. Für 0 von 16 Ländern ist im aktuellen Staging bereits ein vollständig operationalisierter amtlicher Quellenadapter nachgewiesen. Wahltermine und Programme in dieser Ansicht stammen aus dem fachlich vorbereiteten Initialbestand; eine automatische Vollständigkeit wird ausdrücklich nicht behauptet.</p>
+        <p>Alle 16 Länder sind als Jurisdiktionen registriert. Für 0 von 16 Ländern ist im aktuellen Portalstand bereits ein vollständig operationalisierter amtlicher Quellenadapter nachgewiesen. Wahltermine und Programme in dieser Ansicht stammen aus dem fachlich vorbereiteten Initialbestand; eine automatische Vollständigkeit wird ausdrücklich nicht behauptet.</p>
       </section>
 
       <section className="states-principles" aria-label="So arbeitet das Länderportal">

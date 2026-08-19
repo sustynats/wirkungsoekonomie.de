@@ -124,6 +124,7 @@ const systemValueLabels: Record<string, string> = {
   EvidenceEvents: "Evidenzereignisse",
   ExternalShock: "außergewöhnliches externes Ereignis",
   StateObservation: "amtliche Zustandsbeobachtung",
+  "State Variables": "Zustandsvariablen",
   RealityCheckCandidate: "Anlass für eine spätere Wirkungsprüfung",
   AnalysisVersion: "Analysefassung",
   WÖkImpactCase: "WÖk-Wirkungsfall",
@@ -240,6 +241,25 @@ const systemValueLabels: Record<string, string> = {
   WOEK_PRAEFERIERTE_AUSGESTALTUNG: "von der WÖk fachlich bevorzugte Ausgestaltung",
 };
 
+const observatoryValueLabels: Record<string, string> = {
+  ACTIVE: "aktiv",
+  PROVISIONAL: "vorläufig",
+  EXTERNAL_CONTEXT: "externer Kontext",
+  PROVISIONAL_UNTIL_OFFICIAL_VALIDATION: "vorläufig bis zur amtlichen Validierung",
+  NOT_ESTABLISHED: "nicht nachgewiesen",
+  HIGH: "hoch",
+  MEDIUM: "mittel",
+  LOW: "gering",
+  VERY_HIGH: "sehr hohe Relevanz",
+};
+
+const observatoryQualityFieldLabels: Record<string, string> = {
+  measurement: "Messwert",
+  historical_comparison: "historischer Vergleich",
+  record_classification: "Einordnung des Rekordstatus",
+  causal_attribution: "kausale Zurechnung",
+};
+
 const structuredFieldLabels: Record<string, string> = {
   competence_scope: "Kompetenz",
   implementation_route: "Umsetzungsweg",
@@ -326,6 +346,16 @@ export function publicSystemValueLabel(value: string) {
 
 export function publicIndicatorLabel(value: string) {
   return indicatorLabels[value] ?? null;
+}
+
+/** The observatory has context-specific labels: HIGH describes data quality,
+ * not evidence strength. Unknown values and keys fail closed. */
+export function publicObservatoryValueLabel(value: string) {
+  return observatoryValueLabels[value] ?? null;
+}
+
+export function publicObservatoryQualityFieldLabel(value: string) {
+  return observatoryQualityFieldLabels[value] ?? null;
 }
 
 /** Internal schema keys may only reach public copy through an explicit,

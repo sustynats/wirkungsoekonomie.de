@@ -53,14 +53,16 @@ const knownFallbacks = [
   /Die Akte ist in der ausgewiesenen Reifestufe öffentlich nutzbar/i,
   /\b(?:\x6c\x6f\x72\x65\x6d \x69\x70\x73\x75\x6d|\x74\x62\x64|\x74\x6f\x64\x6f|\x63\x6f\x6d\x69\x6e\x67 \x73\x6f\x6f\x6e)\b/i,
 ];
-const rawEnum = /\b(?:POSITIVE_POTENTIAL|NEGATIVE_RISK|POSITIVE|NEGATIVE|NEUTRAL|AMBIVALENT|OPEN|HIGH|MEDIUM|LOW|PASS|BLOCK|APPROVED|PORTFOLIO_DISAGGREGATION_REQUIRED|NO_ROBUST_OVERALL_DIRECTION|NOT_YET_OBSERVABLE|OBSERVATION_ONLY|PLAUSIBLE_CONTRIBUTION|PARTIAL_ATTRIBUTION|CAUSAL_EVIDENCE|CONFLICTING_EVIDENCE|NOT_ASSESSABLE|IMPACT_POTENTIAL_EX_ANTE|PORTFOLIO_EX_ANTE|GOVERNMENT_DRAFT|NO_SINGLE_DIRECTION_ALLOWED|VERY_HIGH|STANDARD_WOEK_ANALYSIS|NOT_APPLICABLE|BACKFILL_REQUIRED|LIMITED_FACH_RECORD|NOT_STRUCTURED|WATCH)\b/;
-const rawPublicTerm = /\b(?:RecommendationVersions?|EvidenceEvents?|ExternalShock|StateObservation|RealityCheckCandidate|AnalysisVersion|WÖkImpactCase|ImpactCase|GovernmentActions?|ParliamentaryCases?|LegalActs?|SourceEvents?|VoteEvents?|IndividualVotes?|Climate resource)\b/;
+const rawEnum = /\b(?:POSITIVE_POTENTIAL|NEGATIVE_RISK|POSITIVE|NEGATIVE|NEUTRAL|AMBIVALENT|OPEN|HIGH|MEDIUM|LOW|PASS|BLOCK|APPROVED|ACTIVE|EXTERNAL_CONTEXT|PROVISIONAL_UNTIL_OFFICIAL_VALIDATION|NOT_ESTABLISHED|PORTFOLIO_DISAGGREGATION_REQUIRED|NO_ROBUST_OVERALL_DIRECTION|NOT_YET_OBSERVABLE|OBSERVATION_ONLY|PLAUSIBLE_CONTRIBUTION|PARTIAL_ATTRIBUTION|CAUSAL_EVIDENCE|CONFLICTING_EVIDENCE|NOT_ASSESSABLE|IMPACT_POTENTIAL_EX_ANTE|PORTFOLIO_EX_ANTE|GOVERNMENT_DRAFT|NO_SINGLE_DIRECTION_ALLOWED|VERY_HIGH|STANDARD_WOEK_ANALYSIS|NOT_APPLICABLE|BACKFILL_REQUIRED|LIMITED_FACH_RECORD|NOT_STRUCTURED|WATCH)\b/;
+const rawPublicTerm = /\b(?:RecommendationVersions?|EvidenceEvents?|ExternalShock|StateObservation|State Variables|RealityCheckCandidate|AnalysisVersion|WÖkImpactCase|ImpactCase|GovernmentActions?|ParliamentaryCases?|LegalActs?|SourceEvents?|VoteEvents?|IndividualVotes?|Climate resource)\b/;
 const machineResidue = [
   /realitycheckstatus\s*=/i,
   /\b[A-Z][A-Z0-9]*(?:_[A-Z0-9]+)+\b/,
   /\b[a-z]+_[a-z0-9_]+\b/,
   /(?:^|\s)---(?:\s|$)/,
+  /\b(?:SERIES|OBS|EVID|RC|SHOCK|WOEK-IMPACT)-[A-Z0-9-]+\b/,
 ];
+const productionInappropriateCopy = /\b(?:im aktuellen Staging|im Staging|Preview build|staging build|test deployment)\b/i;
 const internalSchemaProjection = /\b(?:Competence review|Legal and rights review|Mpd mapping|Sdg mapping|Sdg plus mapping|Structured boundary review|Structured data needs|Structured evidence summary)\b/i;
 const controlStylePresentation = [
   /`[^`]+`/,
@@ -110,6 +112,10 @@ function visibleText(html) {
     .replace(/\s+/g, " ").trim();
 }
 
+function normalEditorialHtml(html) {
+  return html.replace(/<([a-z][\w:-]*)\b[^>]*data-woek-technical-proof="[^"]+"[^>]*>[\s\S]*?<\/\1>/gi, " ");
+}
+
 function publicHeadDescriptions(html) {
   return [...html.matchAll(/<meta\b[^>]*>/gi)].flatMap(([tag]) => {
     const key = tag.match(/(?:name|property)="([^"]+)"/i)?.[1]?.toLocaleLowerCase("en-US") ?? "";
@@ -138,7 +144,7 @@ if (baseUrl) {
   ].filter((url, index, all) => /^https:\/\//.test(url) && all.indexOf(url) === index).slice(0, 12);
   const routes = [...new Set([
     "/", "/bevorstehend", "/entscheidungen", "/wirkungsfaelle", "/regierung", "/regierung/wirkungsanalysen",
-    "/eu", "/eu/wirkungsfaelle", "/laender", "/laender/sachsen-anhalt", "/fachanalysen", "/mandat-und-praxis", "/suche", ...projections.map((entry) => entry.route),
+    "/eu", "/eu/wirkungsfaelle", "/laender", "/laender/sachsen-anhalt", "/wirkungsobservatorium", "/methodik", "/regierung/methodik", "/quellen", "/transparenz", "/fachanalysen", "/mandat-und-praxis", "/suche", ...projections.map((entry) => entry.route),
     ...sampleSources.map((url) => `/quellen/${sourceSlug(url)}`),
     `/regierung/akte/${encodeURIComponent("govaction:dip:325252")}`,
     `/regierung/akte/${encodeURIComponent("govaction:breg-cabinet:2435812:top:5")}`,
@@ -148,7 +154,7 @@ if (baseUrl) {
   for (const route of routes) {
     const response = await fetch(`${baseUrl}${route}`, { headers, redirect: "manual" });
     const html = response.status === 200 ? await response.text() : "";
-    const text = visibleText(html);
+    const text = visibleText(normalEditorialHtml(html));
     const auditableText = text.replace(/https:\/\/\S+/g, " ");
     const failures = [];
     if (response.status !== 200) failures.push(`HTTP_${response.status}`);
@@ -159,6 +165,7 @@ if (baseUrl) {
     if (controlStylePresentation.some((pattern) => pattern.test(auditableText))) failures.push("CONTROL_STYLE_PRESENTATION_VISIBLE");
     if (unreviewedPublicLabels.some((pattern) => pattern.test(auditableText))) failures.push("UNREVIEWED_PUBLIC_LABEL_VISIBLE");
     if (/\[object Object\]/.test(auditableText)) failures.push("OBJECT_STRING_VISIBLE");
+    if (productionInappropriateCopy.test(auditableText)) failures.push("PRODUCTION_INAPPROPRIATE_ENVIRONMENT_COPY");
     const previewCards = (html.match(/data-woek-preview-card=/g) ?? []).length;
     const publishedPreviewCards = (html.match(/data-woek-preview-card="published"/g) ?? []).length;
     const factOnlyPreviewCards = (html.match(/data-woek-preview-card="fact-only"/g) ?? []).length;
@@ -245,6 +252,7 @@ const gates = {
   NO_GENERIC_PUBLIC_EDITORIAL_TEXT: noGeneric,
   NO_RAW_INTERNAL_ENUMS_IN_PUBLIC_UI: fieldFailures.every((value) => !value.includes("RAW_ENUM")) && liveFailures.every((value) => !value.failures.includes("RAW_ENUM_VISIBLE") && !value.failures.includes("UNREVIEWED_PUBLIC_LABEL_VISIBLE")),
   NO_MACHINE_VALUES_IN_NORMAL_PUBLIC_UI: liveFailures.every((value) => !value.failures.includes("MACHINE_VALUE_VISIBLE")),
+  NO_PRODUCTION_INAPPROPRIATE_ENVIRONMENT_COPY: liveFailures.every((value) => !value.failures.includes("PRODUCTION_INAPPROPRIATE_ENVIRONMENT_COPY")),
   NO_GENERIC_INTERNAL_SCHEMA_FIELD_LABELS_IN_PUBLIC_UI: liveFailures.every((value) => !value.failures.includes("GENERIC_INTERNAL_SCHEMA_FIELD_LABEL_VISIBLE")),
   NO_CONTROL_STYLE_BACKTICK_ENUM_STATUS_PRESENTATION: liveFailures.every((value) => !value.failures.includes("CONTROL_STYLE_PRESENTATION_VISIBLE")) && /publicControlText/.test(components.fullAnalysisText),
   FULL_RECORD_DETAILS_INCLUDED_IN_SCAN: liveGate(governmentRegression?.full_record_details > 0 && euRegression?.full_record_details > 0),

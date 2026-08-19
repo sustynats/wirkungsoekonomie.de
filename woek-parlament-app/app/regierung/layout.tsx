@@ -17,7 +17,7 @@ export default function GovernmentLayout({ children }: Readonly<{ children: Reac
   return (
     <>
       {staging && <div className="government-stage-banner" role="status">
-        <div className="shell"><strong>Staging:</strong> Fakten- und Darstellungsprüfung. Keine Production-Veröffentlichung.</div>
+        <div className="shell" data-woek-technical-proof="environment"><strong>Staging:</strong> Fakten- und Darstellungsprüfung. Keine Production-Veröffentlichung.</div>
       </div>}
       <div className="shell"><GovernmentSubnav /></div>
       {children}
