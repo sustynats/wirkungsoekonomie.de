@@ -111,16 +111,20 @@ export const statePublicContent: Record<string, StatePublicContent> = {
   },
 };
 
+const approvedReviewMarkdownBySlug: Record<string, string> = {
+  "baden-wuerttemberg": readFileSync(resolve(process.cwd(), "data/states/baden-wuerttemberg/approved-review-2026-08-18.md"), "utf8"),
+  "rheinland-pfalz": readFileSync(resolve(process.cwd(), "data/states/rheinland-pfalz/approved-review-2026-08-18.md"), "utf8"),
+  berlin: readFileSync(resolve(process.cwd(), "data/states/berlin/approved-review-2026-08-18.md"), "utf8"),
+  "mecklenburg-vorpommern": readFileSync(resolve(process.cwd(), "data/states/mecklenburg-vorpommern/approved-review-2026-08-18.md"), "utf8"),
+};
+
 export function statePublicContentBySlug(slug: string) {
   return statePublicContent[slug];
 }
 
 export function loadApprovedStateReview(slug: string) {
   const review = statePublicContent[slug]?.review;
-  if (!review) return null;
-  const absolutePath = resolve(process.cwd(), review.repoPath);
-  return {
-    meta: review,
-    markdown: readFileSync(absolutePath, "utf8"),
-  };
+  const markdown = approvedReviewMarkdownBySlug[slug];
+  if (!review || !markdown) return null;
+  return { meta: review, markdown };
 }
