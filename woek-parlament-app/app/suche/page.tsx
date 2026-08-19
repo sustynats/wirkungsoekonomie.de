@@ -9,6 +9,7 @@ import { governmentPublicMaturity, parliamentPublicMaturity } from "@/lib/presen
 import { recommendationForImpactCase } from "@/lib/recommendations";
 import type { SearchableCase, SearchableFachanalyse, SearchableGovernmentImpact } from "@/lib/search";
 import { publicParliamentSummary } from "@/lib/public-api";
+import { decisionReviewForImpactCase } from "@/lib/decision-method";
 
 export const metadata: Metadata = {
   title: "Suche",
@@ -43,6 +44,7 @@ export default function SearchPage() {
   const analyses: SearchableFachanalyse[] = listFachanalysen().map(({ slug, title, subtitle, type, status, scope, summary, focusAreas }) => ({ slug, title, subtitle, type, status, scope, summary, focusAreas }));
   const governmentImpacts: SearchableGovernmentImpact[] = getPublicImpactCases().map((record) => {
     const editorial = governmentEditorialProjection(record);
+    const decisionReview = decisionReviewForImpactCase(record.impact_case_id);
     const assessment = {
       assessmentLabel: editorial.fields.overview_assessment_label,
       impactCoreSummary: editorial.fields.impact_core_summary,
@@ -62,6 +64,8 @@ export default function SearchPage() {
     assessment,
     maturity: governmentPublicMaturity(record, assessment, {
       recommendationAvailable: Boolean(recommendationForImpactCase(record.impact_case_id)),
+      problemReviewAvailable: Boolean(decisionReview?.problem_review),
+      goalReviewAvailable: Boolean(decisionReview?.goal_review),
     }),
     terms: [record.impact_summary.central_lever, record.impact_summary.strongest_positive_potential, record.impact_summary.main_risk_or_tradeoff, record.full_analysis_markdown],
     });

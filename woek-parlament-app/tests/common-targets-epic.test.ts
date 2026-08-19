@@ -36,9 +36,9 @@ test("reference layers stay separated and open values never become scores", () =
   assert.match(component, /fachlich noch offen/);
   assert.match(component, /weder eine arithmetische Gesamtnote noch einen automatisch erzeugten Zielbezug/);
   assert.doesNotMatch(component, /CANDIDATE_MACHINE|net_score|party_score|person_score/);
-  assert.match(component, /relation_or_expected_direction/);
-  assert.match(component, /mechanism_link_or_reason/);
-  assert.match(component, /evidence_or_review_status/);
+  assert.match(component, /direction_actual/);
+  assert.match(component, /direction_woek/);
+  assert.match(component, /mechanism_rationale/);
   assert.match(component, /sourceDetailHrefForUrl/);
 });
 
@@ -70,7 +70,12 @@ test("both method pages use the complete canonical sequence and measurement arch
   assert.doesNotMatch(governmentPage, /Die sechs Module der Wirkungsprüfung/);
 });
 
-test("reviewed method stores remain transparently empty instead of being inferred", () => {
-  const records = source("data/method/public-decision-reviews.jsonl").trim();
-  assert.equal(records, "");
+test("reviewed method stores contain only the centrally approved B04 records", () => {
+  const records = source("data/method/public-decision-reviews.jsonl").trim().split("\n").map((line) => JSON.parse(line));
+  const targets = source("data/method/public-common-target-reviews.jsonl").trim().split("\n").map((line) => JSON.parse(line));
+  assert.equal(records.length, 76);
+  assert.equal(new Set(records.map((record) => record.impact_case_id)).size, 76);
+  assert.equal(targets.length, 9);
+  assert.equal(new Set(targets.map((record) => record.impact_case_id)).size, 9);
+  assert.ok(targets.every((record) => record.machine_mapping_public_allowed === false));
 });

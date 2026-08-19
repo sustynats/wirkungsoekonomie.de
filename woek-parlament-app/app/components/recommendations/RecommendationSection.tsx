@@ -60,9 +60,9 @@ export function RecommendationSection({ impactCaseId }: { impactCaseId: string }
       <p className="government-method-meta">Fassung der WÖk-Handlungsoption {recommendation.recommendation_version}{recommendation.supersedes_recommendation_version ? ` · ersetzt ${recommendation.supersedes_recommendation_version}` : ""} · fachlich freigegeben · nicht aus Punktwerten berechnet</p>
       <p>{recommendation.public_change_summary}</p>
       <h3>Quellenbasis der Handlungsoption</h3>
-      <ul>{recommendation.source_refs.map((source) => source.startsWith("https://")
-        ? <li key={source}><Link data-recommendation-source href={sourceDetailHrefForUrl(source)}>Quellenakte der Handlungsoption öffnen</Link></li>
-        : <li key={source}>Kanonische WÖk-Fachakte im freigegebenen Release</li>)}</ul>
+      <ul>{recommendation.source_refs.map((source, index) => source.startsWith("https://")
+        ? <li key={sourceDetailHrefForUrl(source)}><Link data-recommendation-source href={sourceDetailHrefForUrl(source)}>Quellenakte der Handlungsoption öffnen</Link></li>
+        : <li key={`fachakte-${index}`}>Kanonische WÖk-Fachakte im freigegebenen Release</li>)}</ul>
     </> : <p><strong>WÖk-Handlungsoption wird fachlich ergänzt.</strong></p>}
   </section>;
 }

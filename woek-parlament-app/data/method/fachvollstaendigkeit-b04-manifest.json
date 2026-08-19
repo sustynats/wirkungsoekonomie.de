@@ -1,0 +1,105 @@
+{
+  "schema_version": "woek-fachvollstaendigkeit-public-materialization-1.0",
+  "merge_id": "FACHVOLLSTAENDIGKEIT-MERGE-20260819T1455CEST",
+  "generated_at": "2026-08-19T14:55:00+02:00",
+  "canonical_root": "/WOEK",
+  "problem_goal": {
+    "records": 76,
+    "unique_impact_case_ids": 76,
+    "problem_review_approved": 75,
+    "problem_review_not_assessable": 1,
+    "goal_review_approved": 68,
+    "goal_review_not_assessable": 8,
+    "sources": [
+      {
+        "source": "/WOEK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/analysis/FACHVOLLSTAENDIGKEIT-PROBLEM-GOAL-REVIEW-2026-08-19-B01.jsonl",
+        "sha256": "518bfd722e7c2d6f240f45dcd845cc90d4157ee5163c72eac82a44575207cb29",
+        "records": 3
+      },
+      {
+        "source": "/WOEK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/analysis/FACHVOLLSTAENDIGKEIT-SHARD-0-OF-4-20260819T1241CEST.jsonl",
+        "sha256": "9e167889e53996ee7a3a99c85529b7d688a4d76bbfa83d62767a38dcb38f0e3c",
+        "records": 4
+      },
+      {
+        "source": "/WOEK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/analysis/FACHVOLLSTAENDIGKEIT-SHARD-1-OF-4-20260819T1238CEST.jsonl",
+        "sha256": "d64b968606b5d5bb9a0befa3eb11de0fc213ac5258a3acde376b77d635c39fdb",
+        "records": 17
+      },
+      {
+        "source": "/WOEK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/analysis/FACHVOLLSTAENDIGKEIT-SHARD-2-OF-4-20260819T1227CEST.jsonl",
+        "sha256": "6a74083ccf08f48fda6ab03e1b5188f9cccbb8f4d661abf61a186a155f435e49",
+        "records": 10
+      },
+      {
+        "source": "/WOEK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/analysis/FACHVOLLSTAENDIGKEIT-SHARD-2-OF-4-20260819T1242CEST.jsonl",
+        "sha256": "2c52b7c9e8618c298ad99f0046108ddf1d6c46cbb8829ec7aa5999ca8072c325",
+        "records": 6
+      },
+      {
+        "source": "/WOEK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/analysis/FACHVOLLSTAENDIGKEIT-SHARD-3-OF-4-20260819T123140CEST.jsonl",
+        "sha256": "2bcadf3730933b936b4edc63d77581aa4f7968ead65a1b7896302d2273ee8d4b",
+        "records": 9
+      },
+      {
+        "source": "/WOEK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/analysis/FACHVOLLSTAENDIGKEIT-SHARD-0-OF-4-20260819T1322CEST.jsonl",
+        "sha256": "d972c3910b8da1ebcd3dc989ac9a4932a8a0f593a1b8505783c08089bf6e85f1",
+        "records": 7
+      },
+      {
+        "source": "/WOEK/WOEK-EU-DAILY/FACHREVIEW/FACHVOLLSTAENDIGKEIT-SHARD-1-OF-4-20260819T1334CEST.jsonl",
+        "sha256": "ee3fa04e6b4a9d3afdcf561138ffa2ad5c6af40941bb826914ee0243c6dfbadd",
+        "records": 3
+      },
+      {
+        "source": "/WOEK/WOEK-EU-DAILY/FACHREVIEW/FACHVOLLSTAENDIGKEIT-SHARD-2-OF-4-20260819T1328CEST.jsonl",
+        "sha256": "b9cb5d49887a56a180636c61979ec36dd77a89f54880917feadca221d28722a9",
+        "records": 5
+      },
+      {
+        "source": "/WOEK/WOEK-PARLAMENT-DAILY/FACHREVIEW/FACHVOLLSTAENDIGKEIT-SHARD-2-OF-4-20260819T1345CEST.jsonl",
+        "sha256": "ebd3a901f24eb32917ac25df5b61ba0cbd361a4cb9293eaebcb781156897895a",
+        "records": 4
+      },
+      {
+        "source": "/WOEK/WOEK-EU-DAILY/FACHREVIEW/FACHVOLLSTAENDIGKEIT-SHARD-0-OF-4-20260819T1427CEST.jsonl",
+        "sha256": "7ef4668ebcfae589bc4e9a43956004dc6fb350ee0cc64531722d6ad55e9f53c9",
+        "records": 5
+      },
+      {
+        "source": "/WOEK/WOEK-PARLAMENT-DAILY/FACHREVIEW/FACHVOLLSTAENDIGKEIT-SHARD-1-OF-4-20260819T1423CEST.jsonl",
+        "sha256": "357af127701f677254f5b706414bf7d5207b8ce7306649d002c9d9eb52f2777a",
+        "records": 3
+      }
+    ]
+  },
+  "common_targets": {
+    "records": 9,
+    "unique_impact_case_ids": 9,
+    "unique_recommendation_ids": 9,
+    "sources": [
+      {
+        "source": "/WOEK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/analysis/COMMON-TARGETS-REVIEW-20260819T1229CEST.jsonl",
+        "sha256": "f46a6abfec8f73f6a88edf74f32b6abd41df992a076f20473b0265f43bf0fc57",
+        "records": 3
+      },
+      {
+        "source": "/WOEK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/analysis/COMMON-TARGETS-REVIEW-20260819T1252CEST.jsonl",
+        "sha256": "5f94f6c83d061194b916a05dec7957a81746dcb6683c57dcf04cc562f65781cf",
+        "records": 4
+      },
+      {
+        "source": "/WOEK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/analysis/COMMON-TARGETS-REVIEW-20260819T1432CEST.jsonl",
+        "sha256": "00dc34c956a037e9ce930086063981a1e9de93944ba97f06a0ab2b3125750790",
+        "records": 2
+      }
+    ]
+  },
+  "gates": {
+    "no_fach_rewrite": true,
+    "no_recommendation_mutation": true,
+    "no_machine_mapping": true,
+    "open_is_not_neutral": true,
+    "budget_2027_non_aggregable": true
+  }
+}

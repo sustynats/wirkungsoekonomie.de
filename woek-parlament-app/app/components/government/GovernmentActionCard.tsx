@@ -13,6 +13,7 @@ import { PublicMaturity } from "@/app/components/PublicMaturity";
 import { factOnlyPublicMaturity, governmentPublicMaturity } from "@/lib/presentation/public-maturity";
 import { recommendationForImpactCase } from "@/lib/recommendations";
 import { impactRecordAssessmentIconKind } from "@/lib/presentation/overview-assessment";
+import { decisionReviewForImpactCase } from "@/lib/decision-method";
 
 export function GovernmentActionCard({ action }: { action: GovernmentAction }) {
   const impactCases = impactCasesForGovernmentAction(action.government_action_id);
@@ -29,11 +30,14 @@ export function GovernmentActionCard({ action }: { action: GovernmentAction }) {
       evidenceSummary: `${evidenceLabels[record.evidence_level]}. ${editorial.fields.evidence_summary}`,
       realityCheckSummary: editorial.fields.reality_check_summary,
     };
+    const decisionReview = decisionReviewForImpactCase(record.impact_case_id);
     return [{
       record,
       assessment,
       maturity: governmentPublicMaturity(record, assessment, {
         recommendationAvailable: Boolean(recommendationForImpactCase(record.impact_case_id)),
+        problemReviewAvailable: Boolean(decisionReview?.problem_review),
+        goalReviewAvailable: Boolean(decisionReview?.goal_review),
       }),
     }];
   });

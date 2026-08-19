@@ -11,6 +11,7 @@ import { publicIndicatorLabel, publicSystemValueLabel } from "@/lib/presentation
 import { euPublicMaturity } from "@/lib/presentation/public-maturity";
 import { impactRecordAssessmentIconKind } from "@/lib/presentation/overview-assessment";
 import { recommendationForImpactCase } from "@/lib/recommendations";
+import { decisionReviewForImpactCase } from "@/lib/decision-method";
 
 export function EuImpactCase({ record, compact = false }: { record: EuImpactRecord; compact?: boolean }) {
   const editorial = euEditorialProjection(record);
@@ -25,7 +26,12 @@ export function EuImpactCase({ record, compact = false }: { record: EuImpactReco
     evidenceSummary: `${evidenceLabels[record.evidence_level]}. ${editorial.fields.evidence_summary}`,
     realityCheckSummary: editorial.fields.reality_check_summary,
   };
-  const maturity = euPublicMaturity(record, assessment, { recommendationAvailable: Boolean(recommendationForImpactCase(record.impact_case_id)) });
+  const decisionReview = decisionReviewForImpactCase(record.impact_case_id);
+  const maturity = euPublicMaturity(record, assessment, {
+    recommendationAvailable: Boolean(recommendationForImpactCase(record.impact_case_id)),
+    problemReviewAvailable: Boolean(decisionReview?.problem_review),
+    goalReviewAvailable: Boolean(decisionReview?.goal_review),
+  });
   const competence = publicSystemValueLabel(record.competence_scope);
   const legalFeasibility = publicSystemValueLabel(record.legal_feasibility_status);
   const implementationRoutes = record.implementation_route.map(publicSystemValueLabel).filter((label): label is string => Boolean(label));

@@ -20,6 +20,7 @@ import { sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
 import { humanizeSystemValue, publicNarrativeText, publicStructuredFieldLabel, publicSystemLabel } from "@/lib/presentation/labels";
 import { governmentPublicMaturity } from "@/lib/presentation/public-maturity";
 import { recommendationForImpactCase } from "@/lib/recommendations";
+import { decisionReviewForImpactCase } from "@/lib/decision-method";
 import { assessmentPublicCopyContains, impactRecordAssessmentIconKind } from "@/lib/presentation/overview-assessment";
 
 function referenceSet(record: WoeKImpactCase, key: "sdg_refs" | "sdg_plus_refs" | "legal_refs") {
@@ -235,8 +236,11 @@ export function GovernmentImpactCase({ record, compact = false, includeProcess =
     evidenceSummary: `${evidenceLabels[record.evidence_level]}. ${editorial.fields.evidence_summary}`,
     realityCheckSummary: editorial.fields.reality_check_summary,
   };
+  const decisionReview = decisionReviewForImpactCase(record.impact_case_id);
   const maturity = governmentPublicMaturity(record, assessment, {
     recommendationAvailable: Boolean(recommendationForImpactCase(record.impact_case_id)),
+    problemReviewAvailable: Boolean(decisionReview?.problem_review),
+    goalReviewAvailable: Boolean(decisionReview?.goal_review),
   });
   const additionalPositivePotential = summary.strongest_positive_potential && !assessmentPublicCopyContains(assessment, summary.strongest_positive_potential)
     ? summary.strongest_positive_potential

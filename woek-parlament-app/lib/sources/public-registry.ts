@@ -12,6 +12,7 @@ import { listPublicEvidenceEvents } from "@/lib/observatory/public-data";
 import { euEditorialProjection, getEuImpactCases } from "@/lib/eu/impact-cases";
 import { getPublicRecommendations, recommendationStatusLabels } from "@/lib/recommendations";
 import { impactRecordAssessmentIconKind, parliamentaryOverviewAssessment, type OverviewAssessmentData } from "@/lib/presentation/overview-assessment";
+import { publicDecisionReviews, publicReviewSystemLabel, reviewSourceRefs, reviewText } from "@/lib/decision-method";
 import dnsRegistry from "@/data/indicators/dns-official-registry.json";
 import { isSafePublicSourceUrl, sourceDetailHrefForUrl, sourceSlugForCanonicalUrl } from "@/lib/sources/url";
 
@@ -378,6 +379,9 @@ function institutionForUrl(value: string) {
     "search.dip.bundestag.de": "Deutscher Bundestag - DIP",
     "bundesnetzagentur.de": "Bundesnetzagentur",
     "bundesbank.de": "Deutsche Bundesbank",
+    "bmas.de": "Bundesministerium für Arbeit und Soziales",
+    "bundesregierung.de": "Bundesregierung",
+    "iab.de": "Institut für Arbeitsmarkt- und Berufsforschung",
     "pubmed.ncbi.nlm.nih.gov": "PubMed / U.S. National Library of Medicine",
     "commission.europa.eu": "Europäische Kommission",
     "eur-lex.europa.eu": "EUR-Lex",
@@ -540,6 +544,84 @@ function governmentImpactSources(): StaticPublicSource[] {
           usages: [usage],
         });
       }
+    }
+  }
+  return [...grouped.values()];
+}
+
+function decisionReviewSources(): StaticPublicSource[] {
+  const grouped = new Map<string, StaticPublicSource>();
+  const governmentImpacts = new Map(getPublicImpactCases().map((impact) => [impact.impact_case_id, impact]));
+  const euImpacts = new Map(getEuImpactCases().map((impact) => [impact.impact_case_id, impact]));
+  const parliamentCases = new Map(parliamentaryCases.map((item) => [item.slug, item]));
+  for (const review of publicDecisionReviews()) {
+    const governmentImpact = governmentImpacts.get(review.impact_case_id);
+    const euImpact = euImpacts.get(review.impact_case_id);
+    const parliamentCase = parliamentCases.get(review.impact_case_id);
+    if (!governmentImpact && !euImpact && !parliamentCase) continue;
+    const editorial = governmentImpact ? governmentEditorialProjection(governmentImpact) : null;
+    const assessment = governmentImpact && editorial?.status === "PASS" ? {
+      assessmentLabel: editorial.fields.overview_assessment_label,
+      impactCoreSummary: editorial.fields.impact_core_summary,
+      editorialSummary: editorial.fields.editorial_summary,
+      keyFinding: editorial.fields.key_finding,
+      directionLabel: directionLabels[governmentImpact.primary_direction] ?? governmentImpact.primary_direction,
+      directionKind: impactRecordAssessmentIconKind(governmentImpact),
+      evidenceSummary: `${evidenceLabels[governmentImpact.evidence_level] ?? governmentImpact.evidence_level}. ${editorial.fields.evidence_summary}`,
+      realityCheckSummary: editorial.fields.reality_check_summary,
+    } : null;
+    const title = review.title ?? governmentImpact?.title ?? euImpact?.title ?? parliamentCase?.title ?? "Geprüfter politischer Wirkungsfall";
+    const caseHref = governmentImpact
+      ? `/regierung/wirkungsanalysen/${encodeURIComponent(review.impact_case_id)}`
+      : euImpact
+        ? `/eu/wirkungsfaelle/${encodeURIComponent(review.impact_case_id)}`
+        : `/entscheidungen/${encodeURIComponent(review.impact_case_id)}`;
+    const caseKind = governmentImpact ? "GOVERNMENT_PROBLEM_GOAL_REVIEW" : euImpact ? "EU_PROBLEM_GOAL_REVIEW" : "PARLIAMENT_PROBLEM_GOAL_REVIEW";
+    const rationale = [reviewText(review.problem_review.rationale), reviewText(review.goal_review.rationale)].filter(Boolean).join(" ");
+    const evidence = publicReviewSystemLabel(review.problem_review.evidence_grade);
+    const sources = reviewSourceRefs(review);
+    for (const source of sources) {
+      const canonicalUrl = isSafePublicSourceUrl(source);
+      const slug = canonicalUrl ? sourceSlugForCanonicalUrl(canonicalUrl) : null;
+      if (!canonicalUrl || !slug) continue;
+      const institution = institutionForUrl(canonicalUrl);
+      const curated = curatedSourceSummaries[canonicalUrl];
+      const usage: PublicSourceUsage = {
+        caseSlug: review.impact_case_id,
+        caseTitle: title,
+        caseKind,
+        decisionDate: review.knowledge_cutoff_date ?? review.reviewed_at.slice(0, 10),
+        sourceRole: "EX_ANTE_EVIDENCE",
+        locations: [],
+        note: "Die Quelle wird in der fachlich freigegebenen Problem- und Zielprüfung verwendet. Politische Problembehauptung, beobachteter Ausgangszustand und WÖk-Einordnung bleiben getrennt.",
+        caseHref,
+        analysisSummary: rationale || null,
+        analysisDirection: "Problem- und Zielprüfung fachlich freigegeben",
+        evidenceLevel: evidence,
+        assessment,
+      };
+      const existing = grouped.get(slug);
+      if (existing) {
+        existing.usages.push(usage);
+        continue;
+      }
+      grouped.set(slug, {
+        id: `decision-review-${slug}`,
+        slug,
+        title: curated?.title ?? `Quelle zur Problem- und Zielprüfung: ${institution}`,
+        institution,
+        category: /iab\.de|bundesbank\.de|pubmed/i.test(canonicalUrl) ? "SCIENTIFIC_SOURCE" : "GOVERNMENT_RECORD",
+        role: "EX_ANTE_EVIDENCE",
+        documentType: /\.pdf(?:$|\?)/i.test(canonicalUrl) ? "Dokument (PDF)" : "Webseite, Datensatz oder Dokument",
+        canonicalUrl,
+        documentDate: null,
+        retrievedAt: review.reviewed_at,
+        versionLabel: review.review_version ? `Problem- und Zielprüfung ${review.review_version}` : "Fachlich freigegebene Problem- und Zielprüfung",
+        sourceHash: null,
+        temporalClass: "AVAILABLE_AT_DECISION_TIME",
+        abstract: curated?.summary ?? "Die Quelle gehört zur geprüften Fakten- oder Evidenzbasis der Problem- und Zielprüfung. Sie wird weder als automatische Problemdefinition noch als Beleg einer bereits eingetretenen Wirkung behandelt.",
+        usages: [usage],
+      });
     }
   }
   return [...grouped.values()];
@@ -941,6 +1023,7 @@ function staticPublicSources() {
     ...releasedFachakteSources(),
     ...governmentFactSources(),
     ...governmentImpactSources(),
+    ...decisionReviewSources(),
     ...recommendationSources(),
     ...euImpactSources(),
     ...observatorySources(),
