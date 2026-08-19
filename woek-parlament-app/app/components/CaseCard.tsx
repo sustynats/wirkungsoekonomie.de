@@ -5,14 +5,18 @@ import { humanizeSystemValue, verificationLabel } from "@/lib/presentation/label
 import { BookmarkLink } from "@/app/components/BookmarkLink";
 import { CaseTypeMark } from "@/app/components/CaseTypeMark";
 import { EditorialReviewAssessment, OverviewAssessment } from "@/app/components/OverviewAssessment";
+import { PublicMaturity } from "@/app/components/PublicMaturity";
 import { parliamentaryOverviewAssessment } from "@/lib/presentation/overview-assessment";
+import { parliamentPublicMaturity } from "@/lib/presentation/public-maturity";
 
 export function CaseCard({ item }: { item: ParliamentaryCase }) {
   const assessment = parliamentaryOverviewAssessment(item);
+  const maturity = parliamentPublicMaturity(item, assessment);
   return (
     <article className="case-card" data-woek-preview-card={assessment ? "published" : "review-required"}>
       <h3><Link href={`/entscheidungen/${item.slug}`}>{item.plainTitle}</Link></h3>
       {assessment ? <OverviewAssessment assessment={assessment} compact /> : <EditorialReviewAssessment subject={item.plainTitle} />}
+      <PublicMaturity maturity={maturity} compact />
       <div className="case-card-topline" aria-label="Prozess- und Prüfinformationen" data-woek-process-metadata>
         <CaseTypeMark kind={item.kind} maturity={item.publicWorkingAct?.maturity} compact />
         <span className="chip chip--phase">{materialityLabel(item.materiality)}</span>

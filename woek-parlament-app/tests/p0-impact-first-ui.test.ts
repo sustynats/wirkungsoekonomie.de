@@ -20,6 +20,8 @@ const governmentSourceVsView = source("scripts/quality/check-government-source-v
 const fullAnalysisText = source("app/components/FullAnalysisText.tsx");
 const presentationLabels = source("lib/presentation/labels.ts");
 const genericPublicScan = source("scripts/quality/generic-public-editorial-scan.mjs");
+const publicMaturity = source("app/components/PublicMaturity.tsx");
+const publicMaturityProjection = source("lib/presentation/public-maturity.ts");
 const overviewOverrides = JSON.parse(source("data/presentation/overview-assessment-overrides.json"));
 
 test("OVERVIEW_CARD_HAS_VISIBLE_WOEK_ASSESSMENT", () => {
@@ -88,6 +90,18 @@ test("IMPACT_ANALYSIS_IS_PRIMARY_CONTENT", () => {
   assert.match(governmentCard, /impactCoreSummary: editorial\.fields\.impact_core_summary/);
   assert.match(euCard, /impactCoreSummary: editorial\.fields\.impact_core_summary/);
   assert.ok(decisionDetail.indexOf("<OverviewAssessment") < decisionDetail.indexOf("Status dieser Wirkungsakte"));
+});
+
+test("PUBLIC_MATURITY_MAKES_ASSESSABLE_AND_OPEN CLAIMS VISIBLE", () => {
+  assert.match(publicMaturity, /Was wir bereits beurteilen können/);
+  assert.match(publicMaturity, /Was noch offen ist oder beobachtet werden muss/);
+  assert.match(publicMaturity, /Offen bedeutet weder neutral noch null/);
+  assert.match(publicMaturity, /Getrennte Prüfebenen/);
+  assert.match(publicMaturityProjection, /WÖk-Problemprüfung/);
+  assert.match(publicMaturityProjection, /WÖk-Zielprüfung und Zielhierarchie/);
+  assert.match(publicMaturityProjection, /Wirkungspotenzial und Wirkungsrisiken/);
+  assert.match(publicMaturityProjection, /WÖk-Handlungsoption/);
+  assert.match(publicMaturityProjection, /WÖk-Inspirations- und Operationalisierungsmodell/);
 });
 
 test("PREVIEW_CARD_HAS_VISIBLE_WOEK_ASSESSMENT", () => {

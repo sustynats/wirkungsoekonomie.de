@@ -11,8 +11,7 @@ export function GlossaryBasics({ termKeys, title = "Begriffe im Check" }: { term
       <dl>
         {uniqueTerms.map((term) => <div key={term.label}><dt>{term.label}</dt><dd>{term.description}</dd></div>)}
       </dl>
-      <Link href="/begriffe">Alle Begriffe der Wirkungsökonomie <span aria-hidden="true">→</span></Link>
+      <a href="https://wirkungsoekonomie.de/begriffe/">Alle Begriffe der Wirkungsökonomie <span aria-hidden="true">→</span></a>
     </aside>
   );
 }
-import Link from "next/link";

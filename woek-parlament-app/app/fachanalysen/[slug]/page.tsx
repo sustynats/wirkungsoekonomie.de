@@ -8,11 +8,13 @@ import { ReferenceFieldTiles } from "@/app/components/ReferenceFieldTiles";
 import { FullAnalysisText } from "@/app/components/FullAnalysisText";
 import { CompletePublicationSource } from "@/app/components/CompletePublicationSource";
 import { EditorialReviewAssessment } from "@/app/components/OverviewAssessment";
+import { PublicMaturity } from "@/app/components/PublicMaturity";
 import type { FachanalyseSource } from "@/data/fachanalysen";
 import { fullAnalysisBySlug } from "@/data/fachanalysen-full";
 import { getFachanalyse } from "@/lib/fachanalysen";
 import { sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
 import { getSpecialistPublicationSource } from "@/lib/publication/fachakten";
+import { publishedDossierPublicMaturity } from "@/lib/presentation/public-maturity";
 
 export const dynamic = "force-dynamic";
 
@@ -69,13 +71,7 @@ export default async function FachanalyseDetailPage({ params }: { params: Promis
       </header>
 
       <EditorialReviewAssessment subject={analysis.title} compact={false} />
-
-      {analysis.decision ? <section className="analysis-facts" aria-label="Entscheidungsdaten" data-woek-process-metadata>
-        <div><span>Beschluss</span><strong>{formatDate(analysis.decision.date)}</strong></div>
-        <div><span>Verkündung</span><strong>{analysis.decision.promulgation}</strong></div>
-        <div><span>In Kraft</span><strong>{formatDate(analysis.decision.inForce)}</strong></div>
-        <div><span>Analyse-Stand</span><strong>{formatDate(analysis.analysisDate)}</strong></div>
-      </section> : null}
+      <PublicMaturity maturity={publishedDossierPublicMaturity(analysis.title, `Das Dossier „${analysis.title}“ ist mit seinem veröffentlichten Quellen-, Evidenz- und Arbeitsstand zugänglich.`)} />
 
       {analysis.publicationBoundary ? <section className="publication-boundary" aria-label="Aussagegrenze">
         <EvidenceIcon aria-hidden="true" />
@@ -158,6 +154,13 @@ export default async function FachanalyseDetailPage({ params }: { params: Promis
         />
         <GlossaryBasics title="Grundbegriffe dieser Dokumentation" termKeys={["wirkungspotenzial", "wirkungsrisiko", "zusaetzlichkeit", "nichtkompensation", "rueckkopplung"]} />
       </>}
+
+      {analysis.decision ? <section className="analysis-facts" aria-label="Entscheidungsdaten" data-woek-process-metadata>
+        <div><span>Beschluss</span><strong>{formatDate(analysis.decision.date)}</strong></div>
+        <div><span>Verkündung</span><strong>{analysis.decision.promulgation}</strong></div>
+        <div><span>In Kraft</span><strong>{formatDate(analysis.decision.inForce)}</strong></div>
+        <div><span>Analyse-Stand</span><strong>{formatDate(analysis.analysisDate)}</strong></div>
+      </section> : null}
 
       {analysis.publicDownload ? <section className="decision-section download-section" aria-labelledby="download-title"><p className="eyebrow">Dokumentation</p><h2 id="download-title">Dossier als PDF</h2><p>{analysis.publicDownload.description}</p><a className="button button-primary" href={analysis.publicDownload.href} download>{analysis.publicDownload.label}</a></section> : null}
       {completePublication ? <CompletePublicationSource source={completePublication} idPrefix="vollstaendige-fachakte" /> : fullSource ? <FullAnalysisText source={fullSource} /> : null}

@@ -40,7 +40,7 @@ export function OverviewAssessment({ assessment, compact = false }: { assessment
       <div className="overview-assessment-heading">
         <AssessmentIcon label={assessment.assessmentLabel} />
         <div>
-          <p className="eyebrow">WÖk-Kurzbewertung</p>
+          <p className="eyebrow">{compact ? "WÖk-Kurzbewertung" : "Executive-WÖk-Zusammenfassung"}</p>
           <p className="overview-assessment-label"><strong>{assessment.assessmentLabel}</strong></p>
         </div>
       </div>

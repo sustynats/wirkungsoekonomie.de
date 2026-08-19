@@ -1,6 +1,7 @@
 import type { CaseKind, EditorialStatus, Materiality, ParliamentaryCase } from "@/data/cases";
 import type { Fachanalyse } from "@/data/fachanalysen";
 import type { OverviewAssessmentData } from "@/lib/presentation/overview-assessment";
+import type { PublicMaturityProjection } from "@/lib/presentation/public-maturity";
 
 export type SearchTypeFilter = "ALL" | CaseKind | "FACHANALYSE" | "REGIERUNGSANALYSE";
 export type SearchEditorialFilter = "ALL" | EditorialStatus;
@@ -20,11 +21,12 @@ export type ParliamentSearchFilters = {
  * Full source records remain on their respective detail pages, where they are
  * needed for inspection, instead of being shipped with every search visit.
  */
-export type SearchableCase = Pick<ParliamentaryCase,
+export type SearchableCaseBase = Pick<ParliamentaryCase,
   "slug" | "title" | "plainTitle" | "kind" | "editorialStatus" | "materiality" |
   "parliamentaryStatus" | "statusVerification" | "summary" | "whatIsDecided" |
   "intendedGoal" | "analysisStatus" | "impactPath" | "affectedGroups" | "questions" | "sources"
-> & { assessment?: OverviewAssessmentData | null };
+>;
+export type SearchableCase = SearchableCaseBase & { assessment?: OverviewAssessmentData | null; maturity: PublicMaturityProjection };
 
 export type SearchableFachanalyse = Pick<Fachanalyse, "slug" | "title" | "subtitle" | "type" | "status" | "scope" | "summary" | "focusAreas">;
 export type SearchableGovernmentImpact = {
@@ -34,6 +36,7 @@ export type SearchableGovernmentImpact = {
   analysisMode: "IMPACT_POTENTIAL_EX_ANTE" | "IMPACT_REALITY_CHECK";
   materiality: string;
   assessment: OverviewAssessmentData;
+  maturity: PublicMaturityProjection;
   terms: string[];
 };
 
@@ -45,7 +48,7 @@ export const defaultSearchFilters: ParliamentSearchFilters = {
   source: "ALL"
 };
 
-export function searchPublicCases<T extends SearchableCase>(cases: T[], filters: ParliamentSearchFilters): T[] {
+export function searchPublicCases<T extends SearchableCaseBase>(cases: T[], filters: ParliamentSearchFilters): T[] {
   const query = normalize(filters.query);
   return cases.filter((item) => {
     if (filters.type !== "ALL" && filters.type !== "FACHANALYSE" && item.kind !== filters.type) return false;
@@ -76,7 +79,7 @@ export function searchGovernmentImpacts<T extends SearchableGovernmentImpact>(it
   return items.filter((item) => !query || normalize([item.title, item.summary, item.analysisMode, item.materiality, ...item.terms].join(" ")).includes(query));
 }
 
-function searchableText(item: SearchableCase): string {
+function searchableText(item: SearchableCaseBase): string {
   return normalize([
     item.title,
     item.plainTitle,

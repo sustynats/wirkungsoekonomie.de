@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { CaseTypeMark } from "@/app/components/CaseTypeMark";
 import { EditorialReviewAssessment } from "@/app/components/OverviewAssessment";
+import { PublicMaturity } from "@/app/components/PublicMaturity";
 import { listFachanalysen } from "@/lib/fachanalysen";
+import { publishedDossierPublicMaturity } from "@/lib/presentation/public-maturity";
 
 export const metadata: Metadata = {
   title: "WÖk-Fachanalysen",
@@ -36,6 +38,7 @@ export default function FachanalysenPage() {
           <article className="fachanalyse-card" key={analysis.slug} data-woek-preview-card="review-required">
             <h2><Link href={`/fachanalysen/${analysis.slug}`}>{analysis.title}</Link></h2>
             <EditorialReviewAssessment subject={analysis.title} />
+            <PublicMaturity maturity={publishedDossierPublicMaturity(analysis.title, `Das Dossier „${analysis.title}“ ist mit seinem veröffentlichten Quellen-, Evidenz- und Arbeitsstand zugänglich.`)} compact />
             <p className="fachanalyse-subtitle">{analysis.subtitle}</p>
             <p>{analysis.summary}</p>
             <div className="case-card-topline" data-woek-process-metadata><CaseTypeMark kind="FACHANALYSE" compact /><span className="materiality">{typeLabels[analysis.type]}</span></div>

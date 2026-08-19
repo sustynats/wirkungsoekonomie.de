@@ -1,7 +1,7 @@
 {
   "schema_version": "2.3-preview-ui-contract-p0",
-  "generated_at": "2026-08-18T18:33:58.167Z",
-  "base_url": "http://127.0.0.1:3200",
+  "generated_at": "2026-08-19T00:09:14.157Z",
+  "base_url": "http://127.0.0.1:3117",
   "status": "PASS",
   "counts": {
     "government_fach_total": 63,
@@ -23,6 +23,12 @@
     "NO_GENERIC_PUBLIC_EDITORIAL_TEXT": "PASS",
     "NO_RAW_INTERNAL_ENUMS_IN_PUBLIC_UI": "PASS",
     "NO_MACHINE_VALUES_IN_NORMAL_PUBLIC_UI": "PASS",
+    "NO_GENERIC_INTERNAL_SCHEMA_FIELD_LABELS_IN_PUBLIC_UI": "PASS",
+    "NO_CONTROL_STYLE_BACKTICK_ENUM_STATUS_PRESENTATION": "PASS",
+    "FULL_RECORD_DETAILS_INCLUDED_IN_SCAN": "PASS",
+    "PUBLIC_OPEN_STATE_COPY_INCLUDED_IN_SCAN": "PASS",
+    "EU_IMPACT_2026_002_EXTERNAL_RENDER": "PASS",
+    "WOEK_IMPACT_BUND_BHH_2027_EXTERNAL_RENDER": "PASS",
     "KEY_FINDING_VISIBLE_AND_SPECIFIC": "PASS",
     "BUDGET_2027_PORTFOLIO_NOT_FORCED_TO_FAKE_SCORE": "PASS",
     "DETAIL_PAGE_IMPACT_SECTION_PRECEDES_PROCESS": "PASS",
@@ -47,6 +53,8 @@
       "preview_cards": 6,
       "preview_assessments": 6,
       "assessment_icons": 6,
+      "full_record_details": 0,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -56,6 +64,8 @@
       "preview_cards": 16,
       "preview_assessments": 16,
       "assessment_icons": 16,
+      "full_record_details": 0,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -65,6 +75,8 @@
       "preview_cards": 28,
       "preview_assessments": 28,
       "assessment_icons": 28,
+      "full_record_details": 0,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -74,6 +86,8 @@
       "preview_cards": 69,
       "preview_assessments": 69,
       "assessment_icons": 69,
+      "full_record_details": 0,
+      "public_open_states": 53,
       "status": "PASS",
       "failures": []
     },
@@ -83,6 +97,8 @@
       "preview_cards": 15,
       "preview_assessments": 15,
       "assessment_icons": 15,
+      "full_record_details": 0,
+      "public_open_states": 9,
       "status": "PASS",
       "failures": []
     },
@@ -92,6 +108,8 @@
       "preview_cards": 53,
       "preview_assessments": 53,
       "assessment_icons": 53,
+      "full_record_details": 0,
+      "public_open_states": 53,
       "status": "PASS",
       "failures": []
     },
@@ -101,6 +119,8 @@
       "preview_cards": 3,
       "preview_assessments": 3,
       "assessment_icons": 3,
+      "full_record_details": 0,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -110,6 +130,8 @@
       "preview_cards": 16,
       "preview_assessments": 16,
       "assessment_icons": 16,
+      "full_record_details": 0,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -119,6 +141,8 @@
       "preview_cards": 0,
       "preview_assessments": 0,
       "assessment_icons": 0,
+      "full_record_details": 0,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -128,6 +152,8 @@
       "preview_cards": 6,
       "preview_assessments": 6,
       "assessment_icons": 6,
+      "full_record_details": 0,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -137,6 +163,8 @@
       "preview_cards": 2,
       "preview_assessments": 2,
       "assessment_icons": 2,
+      "full_record_details": 0,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -146,6 +174,8 @@
       "preview_cards": 7,
       "preview_assessments": 7,
       "assessment_icons": 7,
+      "full_record_details": 0,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -155,6 +185,8 @@
       "preview_cards": 83,
       "preview_assessments": 83,
       "assessment_icons": 83,
+      "full_record_details": 0,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -164,6 +196,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -173,6 +207,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -182,6 +218,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -191,6 +229,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -200,6 +240,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -209,6 +251,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -218,6 +262,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -227,6 +273,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -236,6 +284,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -245,6 +295,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -254,6 +306,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -263,6 +317,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -272,6 +328,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -281,6 +339,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -290,6 +350,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -299,6 +361,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -308,6 +372,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -317,6 +383,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -326,6 +394,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -335,6 +405,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -344,6 +416,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -353,6 +427,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -362,6 +438,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -371,6 +449,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -380,6 +460,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -389,6 +471,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -398,6 +482,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -407,6 +493,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -416,6 +504,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -425,6 +515,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -434,6 +526,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -443,6 +537,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -452,6 +548,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -461,6 +559,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -470,6 +570,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -479,6 +581,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -488,6 +592,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -497,6 +603,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -506,6 +614,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -515,6 +625,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -524,6 +636,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -533,6 +647,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -542,6 +658,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -551,6 +669,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -560,6 +680,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -569,6 +691,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -578,6 +702,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -587,6 +713,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -596,6 +724,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -605,6 +735,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -614,6 +746,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -623,6 +757,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -632,6 +768,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 1,
       "status": "PASS",
       "failures": []
     },
@@ -641,6 +779,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -650,6 +790,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -659,6 +801,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -668,6 +812,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -677,6 +823,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -686,6 +834,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -695,6 +845,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -704,6 +856,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -713,6 +867,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -722,6 +878,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -731,6 +889,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -740,6 +900,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -749,6 +911,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -758,6 +922,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -767,6 +933,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -776,6 +944,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 2,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -785,6 +955,8 @@
       "preview_cards": 0,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 0,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -794,6 +966,8 @@
       "preview_cards": 0,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 0,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -803,6 +977,8 @@
       "preview_cards": 0,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 0,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -812,6 +988,8 @@
       "preview_cards": 0,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 0,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -821,6 +999,8 @@
       "preview_cards": 0,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 0,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -830,6 +1010,8 @@
       "preview_cards": 0,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 0,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -839,6 +1021,8 @@
       "preview_cards": 0,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 0,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -848,6 +1032,8 @@
       "preview_cards": 0,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 0,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -857,6 +1043,8 @@
       "preview_cards": 0,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 0,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -866,6 +1054,8 @@
       "preview_cards": 0,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 0,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -875,6 +1065,8 @@
       "preview_cards": 0,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 0,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -884,6 +1076,8 @@
       "preview_cards": 0,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 0,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -893,6 +1087,8 @@
       "preview_cards": 0,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 0,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -902,6 +1098,8 @@
       "preview_cards": 0,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 0,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -911,6 +1109,8 @@
       "preview_cards": 0,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 0,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -920,6 +1120,8 @@
       "preview_cards": 2,
       "preview_assessments": 2,
       "assessment_icons": 2,
+      "full_record_details": 0,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -929,6 +1131,8 @@
       "preview_cards": 2,
       "preview_assessments": 2,
       "assessment_icons": 2,
+      "full_record_details": 0,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -938,6 +1142,8 @@
       "preview_cards": 2,
       "preview_assessments": 2,
       "assessment_icons": 2,
+      "full_record_details": 0,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -947,6 +1153,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 0,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -956,6 +1164,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 0,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -965,6 +1175,8 @@
       "preview_cards": 2,
       "preview_assessments": 2,
       "assessment_icons": 2,
+      "full_record_details": 0,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -974,6 +1186,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 0,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -983,6 +1197,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 0,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -992,6 +1208,8 @@
       "preview_cards": 2,
       "preview_assessments": 2,
       "assessment_icons": 2,
+      "full_record_details": 0,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -1001,6 +1219,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 0,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -1010,6 +1230,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 0,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     },
@@ -1019,6 +1241,8 @@
       "preview_cards": 1,
       "preview_assessments": 1,
       "assessment_icons": 1,
+      "full_record_details": 0,
+      "public_open_states": 0,
       "status": "PASS",
       "failures": []
     }

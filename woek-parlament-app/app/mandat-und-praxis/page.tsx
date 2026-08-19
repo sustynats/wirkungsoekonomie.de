@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { EditorialReviewAssessment } from "@/app/components/OverviewAssessment";
+import { PublicMaturity } from "@/app/components/PublicMaturity";
 import { politicalSourceCatalog } from "@/lib/commitments/source-catalog";
+import { factOnlyPublicMaturity } from "@/lib/presentation/public-maturity";
 
 export const metadata: Metadata = {
   title: "Mandat & Praxis",
@@ -89,6 +91,7 @@ export default function MandatUndPraxisPage() {
           {electionPrograms.map((source) => <article key={source.sourceKey} data-woek-preview-card="review-required">
             <h3>{source.title}</h3>
             <EditorialReviewAssessment subject={source.title} />
+            <PublicMaturity maturity={factOnlyPublicMaturity(source.title, `Das offizielle Wahlprogramm „${source.title}“ ist mit seinen Zusagen und Fundstellen dokumentiert.`)} compact />
             <div data-woek-process-metadata><p className="source-register-label">Originalquelle der Partei · {source.actor}</p>
             <p>{source.note}</p><p className="commitment-count"><strong>{source.commitmentCount.toLocaleString("de-DE")} strukturierte Zusagen</strong> · mit Quellenfingerabdruck dokumentiert</p></div>
             <Link className="text-link" href={`/mandat-und-praxis/${source.sourceKey}`}>Zusagen und Fundstellen ansehen <span aria-hidden="true">→</span></Link>
@@ -101,6 +104,7 @@ export default function MandatUndPraxisPage() {
         <article data-woek-preview-card="review-required">
           <h3>{coalitionAgreement.title}</h3>
           <EditorialReviewAssessment subject={coalitionAgreement.title} />
+          <PublicMaturity maturity={factOnlyPublicMaturity(coalitionAgreement.title, `Die Mandatsquelle „${coalitionAgreement.title}“ ist mit ihren Zusagen und Fundstellen dokumentiert.`)} compact />
           <div data-woek-process-metadata><p className="source-register-label">Originaldokument der Koalitionsparteien · {coalitionAgreement.actor}</p>
           <p>{coalitionAgreement.note} Jede spätere Zuordnung wird die konkrete Vertragsstelle, die dazugehörige parlamentarische Entscheidung und ihren Quellenstand zeigen.</p><p className="commitment-count"><strong>{coalitionAgreement.commitmentCount.toLocaleString("de-DE")} strukturierte Zusagen</strong> · mit Quellenfingerabdruck dokumentiert</p></div>
           <Link className="text-link" href={`/mandat-und-praxis/${coalitionAgreement.sourceKey}`}>Zusagen und Fundstellen ansehen <span aria-hidden="true">→</span></Link>

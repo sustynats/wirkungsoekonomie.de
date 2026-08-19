@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { EditorialReviewAssessment, OverviewAssessment } from "@/app/components/OverviewAssessment";
+import { PublicMaturity } from "@/app/components/PublicMaturity";
+import { assessmentOnlyPublicMaturity, factOnlyPublicMaturity } from "@/lib/presentation/public-maturity";
 import { getPublicSource, sourceCategoryLabel, sourceRoleLabel, temporalClassLabel } from "@/lib/sources/public-registry";
 
 export const dynamic = "force-dynamic";
@@ -68,6 +70,9 @@ export default async function SourceDetailPage({ params }: { params: Promise<{ s
             {usage.assessment ? <OverviewAssessment assessment={usage.assessment} compact />
               : isPoliticalCaseUsage(usage.caseKind) ? <EditorialReviewAssessment subject={usage.caseTitle} />
                 : usage.analysisSummary ? <p><strong>Beobachtete Entwicklung:</strong> {usage.analysisSummary}</p> : null}
+            {isPoliticalCaseUsage(usage.caseKind) ? <PublicMaturity maturity={usage.assessment
+              ? assessmentOnlyPublicMaturity(usage.caseTitle, usage.assessment)
+              : factOnlyPublicMaturity(usage.caseTitle, `Die Verwendung der Quelle für „${usage.caseTitle}“ ist dokumentiert; eine fehlende strukturierte Kurzbewertung wird nicht ersetzt.`)} compact /> : null}
             {usage.caseKind === "GOVERNMENT_RECOMMENDATION" && usage.analysisSummary
               ? <p><strong>Fachlich freigegebene WÖk-Handlungsoption:</strong> {usage.analysisSummary}</p>
               : null}

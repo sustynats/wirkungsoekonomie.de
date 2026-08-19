@@ -9,13 +9,16 @@ import {
 } from "@/lib/government/public-data";
 import { directionLabels, evidenceLabels, governmentEditorialProjection, impactCasesForGovernmentAction } from "@/lib/government/impact-cases";
 import { EditorialReviewAssessment, OverviewAssessment } from "@/app/components/OverviewAssessment";
+import { PublicMaturity } from "@/app/components/PublicMaturity";
+import { factOnlyPublicMaturity, governmentPublicMaturity } from "@/lib/presentation/public-maturity";
+import { recommendationForImpactCase } from "@/lib/recommendations";
 
 export function GovernmentActionCard({ action }: { action: GovernmentAction }) {
   const impactCases = impactCasesForGovernmentAction(action.government_action_id);
   const assessments = impactCases.flatMap((record) => {
     const editorial = governmentEditorialProjection(record);
     if (editorial.status !== "PASS") return [];
-    return [{ record, assessment: {
+    const assessment = {
       assessmentLabel: editorial.fields.overview_assessment_label,
       impactCoreSummary: editorial.fields.impact_core_summary,
       editorialSummary: editorial.fields.editorial_summary,
@@ -23,15 +26,23 @@ export function GovernmentActionCard({ action }: { action: GovernmentAction }) {
       directionLabel: directionLabels[record.primary_direction],
       evidenceSummary: `${evidenceLabels[record.evidence_level]}. ${editorial.fields.evidence_summary}`,
       realityCheckSummary: editorial.fields.reality_check_summary,
-    } }];
+    };
+    return [{
+      record,
+      assessment,
+      maturity: governmentPublicMaturity(record, assessment, {
+        recommendationAvailable: Boolean(recommendationForImpactCase(record.impact_case_id)),
+      }),
+    }];
   });
   return (
     <article className="government-action-card" data-woek-preview-card={assessments.length ? "published" : "review-required"}>
       <h2><Link href={`/regierung/akte/${encodeURIComponent(action.government_action_id)}`}>{action.title}</Link></h2>
-      {assessments.length ? <div className="government-action-assessments">{assessments.map(({ record, assessment }) => <div key={record.impact_case_id}>
+      {assessments.length ? <div className="government-action-assessments">{assessments.map(({ record, assessment, maturity }) => <div key={record.impact_case_id}>
         {assessments.length > 1 && <p className="source-register-label">Wirkungsgegenstand: {record.title}</p>}
         <OverviewAssessment assessment={assessment} compact />
-      </div>)}</div> : <EditorialReviewAssessment subject={action.title} />}
+        <PublicMaturity maturity={maturity} compact />
+      </div>)}</div> : <><EditorialReviewAssessment subject={action.title} /><PublicMaturity maturity={factOnlyPublicMaturity(action.title, `Die amtlich belegte Regierungsakte „${action.title}“ ist als Sachverhalt veröffentlicht.`)} compact /></>}
       <div className="government-card-meta" data-woek-process-metadata>
         <span className="chip chip--depth">{actionTypeLabels[action.action_type] ?? action.action_type}</span>
         <time dateTime={action.decision_date ?? undefined}>{formatDate(action.decision_date)}</time>

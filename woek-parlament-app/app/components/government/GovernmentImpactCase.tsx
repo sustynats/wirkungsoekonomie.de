@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { FullAnalysisText } from "@/app/components/FullAnalysisText";
 import { OverviewAssessment } from "@/app/components/OverviewAssessment";
+import { PublicMaturity } from "@/app/components/PublicMaturity";
 import { RecommendationSection } from "@/app/components/recommendations/RecommendationSection";
 import {
   boundaryLabels,
@@ -16,6 +17,8 @@ import {
 } from "@/lib/government/impact-cases";
 import { sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
 import { humanizeSystemValue, publicStructuredFieldLabel } from "@/lib/presentation/labels";
+import { governmentPublicMaturity } from "@/lib/presentation/public-maturity";
+import { recommendationForImpactCase } from "@/lib/recommendations";
 
 function referenceSet(record: WoeKImpactCase, key: "sdg_refs" | "sdg_plus_refs" | "legal_refs") {
   return [...new Set(record.impact_paths.flatMap((path) => path[key] ?? []))];
@@ -23,6 +26,48 @@ function referenceSet(record: WoeKImpactCase, key: "sdg_refs" | "sdg_plus_refs" 
 
 function publicValue(value: unknown) {
   return humanizeSystemValue(String(value));
+}
+
+const impactOrderLabels: Record<string, string> = {
+  FIRST: "erste Ordnung",
+  SECOND: "zweite Ordnung",
+  THIRD: "dritte Ordnung",
+  SYSTEMIC: "systemische Wirkung",
+};
+
+const timeHorizonLabels: Record<string, string> = {
+  IMMEDIATE: "unmittelbar",
+  SHORT: "kurzfristig",
+  MEDIUM: "mittelfristig",
+  LONG: "langfristig",
+  INTERGENERATIONAL: "generationenübergreifend",
+  NOT_YET_OBSERVABLE: "noch nicht beobachtbar",
+};
+
+const indicatorFunctionLabels: Record<string, string> = {
+  BASELINE: "Ausgangszustand",
+  IMPLEMENTATION: "Umsetzung und Vollzug",
+  OUTPUT: "unmittelbares Ergebnis",
+  OUTCOME: "beobachtete Zustandsveränderung",
+  COUNTERFACTUAL: "Gegenfaktum",
+  DISTRIBUTION: "Verteilung",
+  BOUNDARY: "Schutzgrenze",
+  ATTRIBUTION: "Zurechnung",
+};
+
+const materialityLevelLabels: Record<string, string> = {
+  HIGH: "hohe Materialität",
+  MEDIUM: "mittlere Materialität",
+  LOW: "geringe Materialität",
+  OPEN: "Materialität noch offen",
+};
+
+function stateObjectiveReference(value: string) {
+  return /staatsziel|art\.?\s*20a\s*(?:gg|grundgesetz)/i.test(value);
+}
+
+function constitutionalReference(value: string) {
+  return !stateObjectiveReference(value) && /grundrecht|menschenrecht|grundgesetz|\bgg\b|verfassungsprinzip|schutzpflicht/i.test(value);
 }
 
 function SourceList({ title, sources, empty }: { title: string; sources: string[]; empty: string }) {
@@ -33,7 +78,12 @@ function FullSchemaDetails({ record }: { record: WoeKImpactCase }) {
   const sdgs = referenceSet(record, "sdg_refs");
   const sdgPlus = referenceSet(record, "sdg_plus_refs");
   const legal = referenceSet(record, "legal_refs");
+  const stateObjectives = legal.filter(stateObjectiveReference);
+  const constitutional = legal.filter(constitutionalReference);
+  const otherLaw = legal.filter((value) => !stateObjectiveReference(value) && !constitutionalReference(value));
   const mpd = [...new Set(record.impact_paths.flatMap((path) => path.mpd))];
+  const resilienceAndGeneration = [...new Set(record.impact_paths.flatMap((path) => path.reference as string[])
+    .filter((value) => /resilien|generation|schwelle|planetare grenze|intergeneration/i.test(value)))];
   return <>
     <section aria-labelledby={`decision-${record.impact_case_id}`}>
       <h3 id={`decision-${record.impact_case_id}`}>Was wird entschieden?</h3>
@@ -58,13 +108,13 @@ function FullSchemaDetails({ record }: { record: WoeKImpactCase }) {
           <div className="government-impact-path-detail">
             <dl>
               <div><dt>Auslöser</dt><dd>{publicValue(path.trigger)}</dd></div>
-              <div><dt>Wirkungsordnung</dt><dd>{publicValue(path.impact_order)}</dd></div>
+              <div><dt>Wirkungsordnung</dt><dd>{impactOrderLabels[path.impact_order] ?? publicValue(path.impact_order)}</dd></div>
               <div><dt>Mechanismus</dt><dd>{publicValue(path.mechanism)}</dd></div>
               <div><dt>Zustandsvariable</dt><dd>{publicValue(path.state_variable)}</dd></div>
               <div><dt>Baseline</dt><dd>{path.baseline === null || path.baseline === undefined ? "nicht ausgewiesen" : publicValue(path.baseline)}</dd></div>
               <div><dt>Mögliche Veränderung</dt><dd>{publicValue(path.state_change)}</dd></div>
               <div><dt>Referenz</dt><dd>{(path.reference as string[]).map(publicValue).join(", ")}</dd></div>
-              <div><dt>Zeithorizont</dt><dd>{publicValue(path.time_horizon)}</dd></div>
+              <div><dt>Zeithorizont</dt><dd>{timeHorizonLabels[path.time_horizon] ?? publicValue(path.time_horizon)}</dd></div>
               <div><dt>Datenstatus</dt><dd>{dataStatusLabels[path.data_status] ?? "offen dokumentiert"}</dd></div>
             </dl>
             {!!(path.affected_groups as string[])?.length && <div><h4>Wer ist betroffen?</h4><ul>{(path.affected_groups as string[]).map((item) => <li key={item}>{publicValue(item)}</li>)}</ul></div>}
@@ -72,7 +122,7 @@ function FullSchemaDetails({ record }: { record: WoeKImpactCase }) {
             {!!(path.conditions as string[])?.length && <div><h4>Bedingungen</h4><ul>{(path.conditions as string[]).map((item) => <li key={item}>{publicValue(item)}</li>)}</ul></div>}
             {!!(path.risks as string[])?.length && <div><h4>Gegenmechanismen und Risiken</h4><ul>{(path.risks as string[]).map((item) => <li key={item}>{publicValue(item)}</li>)}</ul></div>}
             {!!(path.uncertainties as string[])?.length && <div><h4>Unsicherheiten</h4><ul>{(path.uncertainties as string[]).map((item) => <li key={item}>{publicValue(item)}</li>)}</ul></div>}
-            {!!(path.indicators as WoeKImpactCase["impact_paths"][number]["indicators"])?.length && <div><h4>Indikatoren</h4><ul>{path.indicators.map((item) => <li key={`${item.indicator}-${item.function}`}><strong>{publicValue(item.indicator)}</strong> - {publicValue(item.function)}{item.unit ? ` · ${publicValue(item.unit)}` : ""}{item.preferred_source ? ` · ${publicValue(item.preferred_source)}` : ""}{item.woek_id ? ` · ${item.woek_id} (${publicValue(item.woek_id_status)})` : ""}</li>)}</ul></div>}
+            {!!(path.indicators as WoeKImpactCase["impact_paths"][number]["indicators"])?.length && <div><h4>Indikatoren</h4><ul>{path.indicators.map((item) => <li key={`${item.indicator}-${item.function}`}><strong>{publicValue(item.indicator)}</strong> - {indicatorFunctionLabels[item.function] ?? publicValue(item.function)}{item.unit ? ` · ${publicValue(item.unit)}` : ""}{item.preferred_source ? ` · ${publicValue(item.preferred_source)}` : ""}{item.woek_id ? ` · ${item.woek_id} (${publicValue(item.woek_id_status)})` : ""}</li>)}</ul></div>}
             {!!(path.evidence_basis as string[])?.length && <div><h4>Evidenzbasis des Pfads</h4><ul>{path.evidence_basis.map((item) => <li key={item}>{publicValue(item)}</li>)}</ul></div>}
           </div>
         </details>)}
@@ -84,7 +134,7 @@ function FullSchemaDetails({ record }: { record: WoeKImpactCase }) {
       <div className="government-impact-grid">
         <article><h4>Wirkungsempfänger</h4><ul>{record.scope.affected_groups.map((item) => <li key={item}>{publicValue(item)}</li>)}</ul></article>
         <article><h4>Betroffene Systeme</h4><ul>{record.scope.affected_systems.map((item) => <li key={item}>{publicValue(item)}</li>)}</ul></article>
-        <article><h4>Materialität</h4><p>{publicValue(record.materiality.level)}: {publicValue(record.materiality.rationale)}</p><p>{record.materiality.drivers.map(publicValue).join(", ")}</p></article>
+        <article><h4>Materialität</h4><p>{materialityLevelLabels[record.materiality.level] ?? publicValue(record.materiality.level)}: {publicValue(record.materiality.rationale)}</p><p>{record.materiality.drivers.map(publicValue).join(", ")}</p></article>
         <article><h4>Kompetenzprüfung</h4><p>{record.scope.competence_note ? publicValue(record.scope.competence_note) : "In dieser Fachübergabe nicht strukturiert geprüft."}</p></article>
       </div>
     </section>
@@ -105,10 +155,14 @@ function FullSchemaDetails({ record }: { record: WoeKImpactCase }) {
     <section aria-labelledby={`assessment-${record.impact_case_id}`}>
       <h3 id={`assessment-${record.impact_case_id}`}>Referenzrahmen und Schutzprüfung</h3>
       <div className="government-reference-groups">
-        <div><h4>Mensch - Planet - Demokratie</h4><p>{mpd.map((value) => mpdLabels[value] ?? value).join(", ") || "Kein Bezug ausgewiesen"}</p></div>
-        <div><h4>SDGs</h4><p>{sdgs.join(", ") || "Kein Bezug ausgewiesen"}</p></div>
+        <div><h4>Recht und Grundrechte · Verfassungsprinzipien</h4><p>{constitutional.join(", ") || "Nicht als eigener Referenzlayer ausgewiesen"}</p></div>
+        <div><h4>Staatsziele und weitere rechtlich relevante Vorgaben</h4><p>{stateObjectives.join(", ") || "Nicht als eigener Referenzlayer ausgewiesen"}</p></div>
+        <div><h4>EU-, Fach- und Völkerrecht</h4><p>{otherLaw.join(", ") || "Nicht als eigener Referenzlayer ausgewiesen"}</p></div>
+        <div><h4>17 UN-SDGs</h4><p>{sdgs.join(", ") || "Kein Bezug ausgewiesen"}</p></div>
         <div><h4>SDG+ - WÖk-Erweiterung</h4><p>{sdgPlus.join(", ") || "Kein Bezug ausgewiesen"}</p></div>
-        <div><h4>Recht und Grundrechte</h4><p>{legal.join(", ") || "Kein Bezug ausgewiesen"}</p></div>
+        <div><h4>Mensch - Planet - Demokratie</h4><p>{mpd.map((value) => mpdLabels[value] ?? value).join(", ") || "Kein Bezug ausgewiesen"}</p></div>
+        <div><h4>WÖk-Schutzgrenzen und Nichtkompensation</h4><p>{record.boundary_review.map((item) => `${publicValue(item.boundary)}: ${boundaryLabels[item.status] ?? item.status}`).join("; ") || "Keine strukturierte Schutzprüfung ausgewiesen"}</p></div>
+        <div><h4>Wissenschaftliche Schwellen, Resilienz und Generationen</h4><p>{resilienceAndGeneration.map(publicValue).join(", ") || "Nicht als eigener Referenzlayer ausgewiesen"}</p></div>
       </div>
       <div className="government-boundaries">{record.boundary_review.map((boundary) => <article key={boundary.boundary_id} className={`boundary boundary--${boundary.status.toLowerCase()}`}>
         <strong>{publicValue(boundary.boundary)}</strong>
@@ -135,7 +189,7 @@ function FullSchemaDetails({ record }: { record: WoeKImpactCase }) {
       <div className="government-impact-grid">
         <article><h4>Umsetzungsfragen</h4><ul>{record.implementation_tracking.implementation_questions.map((item) => <li key={item}>{publicValue(item)}</li>)}</ul></article>
         <article><h4>Umsetzungsindikatoren</h4><ul>{record.implementation_tracking.implementation_indicators.map((item) => <li key={item}>{publicValue(item)}</li>)}</ul></article>
-        <article><h4>Konkrete Datenbedarfe</h4><ul>{record.data_needs.map((item) => <li key={item.data_id}><strong>{publicValue(item.priority)} · {publicValue(item.function)}:</strong> {publicValue(item.question)} - {publicValue(item.data)}{item.preferred_source ? ` · ${publicValue(item.preferred_source)}` : ""}</li>)}</ul></article>
+        <article><h4>Konkrete Datenbedarfe</h4><ul>{record.data_needs.map((item) => <li key={item.data_id}><strong>{publicValue(item.priority)} · {indicatorFunctionLabels[item.function] ?? publicValue(item.function)}:</strong> {publicValue(item.question)} - {publicValue(item.data)}{item.preferred_source ? ` · ${publicValue(item.preferred_source)}` : ""}</li>)}</ul></article>
       </div>
     </section>
 
@@ -158,20 +212,25 @@ export function GovernmentImpactCase({ record, compact = false }: { record: Publ
     .map(publicStructuredFieldLabel)
     .filter((label): label is string => Boolean(label));
   if (editorial.status !== "PASS") return null;
+  const assessment = {
+    assessmentLabel: editorial.fields.overview_assessment_label,
+    impactCoreSummary: editorial.fields.impact_core_summary,
+    editorialSummary: editorial.fields.editorial_summary,
+    keyFinding: editorial.fields.key_finding,
+    directionLabel: directionLabels[record.primary_direction],
+    evidenceSummary: `${evidenceLabels[record.evidence_level]}. ${editorial.fields.evidence_summary}`,
+    realityCheckSummary: editorial.fields.reality_check_summary,
+  };
+  const maturity = governmentPublicMaturity(record, assessment, {
+    recommendationAvailable: Boolean(recommendationForImpactCase(record.impact_case_id)),
+  });
   return (
     <article className="government-impact-case" aria-labelledby={`impact-${record.impact_case_id}`} data-woek-preview-card="published">
       <header>
         <h2 id={`impact-${record.impact_case_id}`}>{record.title}</h2>
-        <OverviewAssessment compact={compact} assessment={{
-          assessmentLabel: editorial.fields.overview_assessment_label,
-          impactCoreSummary: editorial.fields.impact_core_summary,
-          editorialSummary: editorial.fields.editorial_summary,
-          keyFinding: editorial.fields.key_finding,
-          directionLabel: directionLabels[record.primary_direction],
-          evidenceSummary: `${evidenceLabels[record.evidence_level]}. ${editorial.fields.evidence_summary}`,
-          realityCheckSummary: editorial.fields.reality_check_summary,
-        }} />
-        <p className="eyebrow" data-woek-process-metadata>Analysephase · {record.analysis_mode === "IMPACT_REALITY_CHECK" ? "mit Reality-Check-Stufe" : "Ex ante"}</p>
+        <OverviewAssessment compact={compact} assessment={assessment} />
+        <PublicMaturity maturity={maturity} compact={compact} />
+        {compact && <p className="eyebrow" data-woek-process-metadata>Analysephase · {record.analysis_mode === "IMPACT_REALITY_CHECK" ? "mit Reality-Check-Stufe" : "Ex ante"}</p>}
         {record.public_evidence_explanation && <p><strong>Öffentliche Evidenzeinordnung:</strong> {humanizeSystemValue(record.public_evidence_explanation)}</p>}
         {record.boundary_review_note && <p><strong>Schutz- und Wirkungsgrenzen:</strong> {humanizeSystemValue(record.boundary_review_note)}</p>}
         {record.impact_summary.public_summary && record.impact_summary.public_summary !== record.editorial_summary && <p><strong>Fachliche Original-Kurzfassung:</strong> {humanizeSystemValue(record.impact_summary.public_summary)}</p>}
@@ -188,6 +247,12 @@ export function GovernmentImpactCase({ record, compact = false }: { record: Publ
         {fullRecord ? <FullSchemaDetails record={fullRecord} /> : null}
 
         <RecommendationSection impactCaseId={record.impact_case_id} />
+
+        <section className="government-process-meta" aria-label="Politischer und administrativer Verfahrensstand" data-woek-process-metadata>
+          <h3>Politischer und administrativer Prozess</h3>
+          <p><strong>Analysephase:</strong> {record.analysis_mode === "IMPACT_REALITY_CHECK" ? "mit Reality-Check-Stufe" : "Ex ante"}</p>
+          <p><strong>Bekannter Umsetzungsstand:</strong> {publicValue(record.implementation_status)}</p>
+        </section>
 
         {record.full_analysis_markdown && <details className="government-full-record government-technical-proof">
           <summary>Vollständige, unveränderte Fachakte aufklappen</summary>

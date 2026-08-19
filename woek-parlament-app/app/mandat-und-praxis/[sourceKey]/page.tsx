@@ -4,8 +4,10 @@ import { notFound } from "next/navigation";
 import { CompleteSourceRecord } from "@/app/components/CompleteSourceRecord";
 import { CompletePublicationSource } from "@/app/components/CompletePublicationSource";
 import { EditorialReviewAssessment } from "@/app/components/OverviewAssessment";
+import { PublicMaturity } from "@/app/components/PublicMaturity";
 import { getPublicCommitmentRegister } from "@/lib/commitments/public-register";
 import { getFederalPublicationSource } from "@/lib/publication/fachakten";
+import { factOnlyPublicMaturity } from "@/lib/presentation/public-maturity";
 
 export const dynamic = "force-dynamic";
 
@@ -52,6 +54,7 @@ export default async function CommitmentRegisterPage({ params }: { params: Promi
       <div className="commitment-list">{commitments.map((commitment, index) => <article id={commitment.key} key={commitment.key} data-woek-preview-card="review-required">
         <h3>{commitment.title}</h3>
         <EditorialReviewAssessment subject={commitment.title} />
+        <PublicMaturity maturity={factOnlyPublicMaturity(commitment.title, `Die Zusage „${commitment.title}“ ist mit ihrem Originalwortlaut und ihrer Fundstelle dokumentiert.`)} compact />
         <p className="source-register-label" data-woek-process-metadata>Zusage {index + 1} · {commitment.policyDomain}</p>
         <p className="commitment-full-text">{commitment.text}</p>
         <dl data-woek-process-metadata><div><dt>Fundstelle</dt><dd>{commitment.location ?? "Im gelieferten Fachbestand nicht genauer ausgewiesen"}</dd></div>{commitment.temporalScope && <div><dt>Zeitraum</dt><dd>{commitment.temporalScope}</dd></div>}</dl>

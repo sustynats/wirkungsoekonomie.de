@@ -3,6 +3,8 @@ import { jurisdictionById } from "@/lib/parliament/jurisdictions";
 import { saxonyAnhaltElectionProgrammes } from "@/data/sachsen-anhalt-election-programmes";
 import { allPublicationSourceRecords } from "@/lib/publication/fachakten";
 import { EditorialReviewAssessment } from "@/app/components/OverviewAssessment";
+import { PublicMaturity } from "@/app/components/PublicMaturity";
+import { factOnlyPublicMaturity } from "@/lib/presentation/public-maturity";
 
 const saxonyAnhalt = jurisdictionById("sachsen-anhalt");
 
@@ -88,6 +90,7 @@ export default function SaxonyAnhaltPage() {
             return <article key={programme.sourceKey} data-woek-preview-card="review-required">
               <h3>{programme.title}</h3>
               <EditorialReviewAssessment subject={programme.title} />
+              <PublicMaturity maturity={factOnlyPublicMaturity(programme.title, `Das offizielle Wahlprogramm „${programme.title}“ ist mit seinem veröffentlichten Zusagenregister dokumentiert.`)} compact />
               <div data-woek-process-metadata>
                 <p className="source-register-label">{programme.party} · Originalprogramm</p>
                 <p className="commitment-count"><strong>{count?.toLocaleString("de-DE") ?? "–"} Zusageeinheiten</strong> · vollständige Fachakte und Zusageregister</p>
