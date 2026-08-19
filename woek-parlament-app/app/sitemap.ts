@@ -4,6 +4,7 @@ import { listFachanalysen } from "@/lib/fachanalysen";
 import { saxonyAnhaltElectionProgrammes } from "@/data/sachsen-anhalt-election-programmes";
 import { getPublicImpactCases } from "@/lib/government/impact-cases";
 import { getEuImpactCases } from "@/lib/eu/impact-cases";
+import { listDnsIndicators } from "@/lib/indicators";
 
 const siteUrl = "https://parlament.wirkungsoekonomie.de";
 
@@ -36,6 +37,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entry("/eu/gesetzgebung", undefined, .7),
     entry("/eu/mandat", undefined, .7),
     entry("/methodik", undefined, .8),
+    entry("/methodik/wirkindikatoren", undefined, .8),
     entry("/transparenz", undefined, .8),
     entry("/quellen", undefined, .7),
     entry("/begriffe", undefined, .7),
@@ -48,5 +50,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const euImpacts = getEuImpactCases();
   const governmentEntries = governmentImpacts.length ? [entry("/regierung/wirkungsanalysen", undefined, .9), ...governmentImpacts.map((record) => entry(`/regierung/wirkungsanalysen/${encodeURIComponent(record.impact_case_id)}`, record.analysis_as_of, .8))] : [];
   const euEntries = euImpacts.map((record) => entry(`/eu/wirkungsfaelle/${encodeURIComponent(record.impact_case_id)}`, record.analysis_as_of, .8));
-  return [...staticEntries, ...cases, ...analyses, ...saxonyAnhaltProgrammes, ...governmentEntries, ...euEntries];
+  const indicatorEntries = listDnsIndicators().map((item) => entry(`/methodik/wirkindikatoren/${item.indicator_id}`, undefined, .5));
+  return [...staticEntries, ...cases, ...analyses, ...saxonyAnhaltProgrammes, ...governmentEntries, ...euEntries, ...indicatorEntries];
 }

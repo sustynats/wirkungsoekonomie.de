@@ -44,6 +44,7 @@ export default async function SectionPage({ params }: { params: Promise<{ sectio
 
 function Methodology() {
   return <>
+    <section className="notice notice-neutral"><strong>Die vollständige Entscheidungsfolge</strong><p>Jeder fachlich reife Fall folgt derselben Ordnung: Problemprüfung → Zielprüfung → Wirkungsanalyse → freigegebene WÖk-Handlungsoption → Vergleich an getrennten gemeinsamen Zielen → Reality Check. Fehlende Stufen bleiben sichtbar offen; sie werden nicht aus Schlagworten oder Scores ergänzt.</p><p><Link href="/methodik/wirkindikatoren">Die 82 amtlichen DNS-Indikatoren und ihre Messgrenzen ansehen →</Link></p></section>
     <section className="notice notice-neutral" id="grundlagen"><strong>Was ist ein WÖk-Wirkungscheck?</strong><p>Die WÖk beginnt nicht dort, wo bestehende Folgenabschätzung endet, weil diese „falsch“ wäre. Sie ergänzt ministerielle Facharbeit, Gesetzesfolgenabschätzung, Rechtsprüfung, parlamentarische Beratung und Evaluation um eine gemeinsame Wirkungsarchitektur, die vor der Entscheidung beginnt und nach der Umsetzung weiterläuft.</p></section>
     <section className="method-grid method-grid--three" aria-label="Wirkung feststellen, zurechnen und bewerten">
       <article><span>01</span><h2>Zustandsveränderung feststellen</h2><p>Welche Baseline gilt? Was verändert sich bei wem, wo, wann und in welchem Umfang? Eine beobachtete Veränderung ist zunächst noch keine kausal belegte Wirkung.</p></article>

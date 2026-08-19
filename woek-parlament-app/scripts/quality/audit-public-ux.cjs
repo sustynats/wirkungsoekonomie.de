@@ -26,6 +26,9 @@ const routes = [
   "/regierung",
   "/regierung/wirkungsanalysen",
   "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-GMODG-2026",
+  "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-GRUNDSICHERUNG-2026",
+  "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-SAFE-COUNTRY-REGULATION-2026",
+  "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-BHH-2027",
   "/regierung/akte/govaction%3Adip%3A325252",
   "/regierung/akte/govaction%3Abreg-cabinet%3A2435812%3Atop%3A5",
   "/wirkungsfaelle",
@@ -40,6 +43,8 @@ const routes = [
   "/quellen",
   "/quellen/quelle-3225f31089a72a6b",
   "/suche?q=Klima",
+  "/methodik/wirkindikatoren",
+  "/methodik/wirkindikatoren/DNS-2025-1-1-A",
 ];
 
 function slug(value) {
@@ -78,6 +83,9 @@ function slug(value) {
         const substantive = document.querySelector("[data-woek-substantive-impact]");
         const source = document.querySelector("[data-woek-source-layer]");
         const recommendation = document.querySelector("[data-woek-recommendation-layer]");
+        const methodLayers = ["problem", "goal", "impact"].map((id) => document.querySelector(`[data-woek-method-layer="${id}"]`));
+        const commonTargets = document.querySelector("[data-woek-common-targets]");
+        const realityLayer = document.querySelector('[data-woek-method-layer="reality"]');
         const headings = [...document.querySelectorAll("h1,h2,h3,h4,h5,h6")].map((element) => ({
           level: Number(element.tagName.slice(1)),
           text: (element.textContent || "").trim().slice(0, 160),
@@ -182,6 +190,8 @@ function slug(value) {
           substantiveBeforeProcess: !substantive || !process || Boolean(substantive.compareDocumentPosition(process) & Node.DOCUMENT_POSITION_FOLLOWING),
           sourceBeforeProcess: !source || !process || Boolean(source.compareDocumentPosition(process) & Node.DOCUMENT_POSITION_FOLLOWING),
           recommendationBeforeProcess: !recommendation || !process || Boolean(recommendation.compareDocumentPosition(process) & Node.DOCUMENT_POSITION_FOLLOWING),
+          methodOrderPresent: methodLayers.every(Boolean) && Boolean(recommendation) && Boolean(commonTargets) && Boolean(realityLayer),
+          methodOrderPass: methodLayers.every(Boolean) && Boolean(recommendation) && Boolean(commonTargets) && Boolean(realityLayer) && [methodLayers[0], methodLayers[1], methodLayers[2], recommendation, commonTargets].every((node, index, nodes) => Boolean(node.compareDocumentPosition(nodes[index + 1] ?? realityLayer) & Node.DOCUMENT_POSITION_FOLLOWING)),
           smallTargets,
           rawTokens,
           focus: focusCandidate ? {
@@ -201,7 +211,7 @@ function slug(value) {
           runOnly: { type: "tag", values: ["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"] },
         }));
       }
-      if (!navigationError && [320, 390, 1440].includes(width) && ["/", "/entscheidungen/schutz-vor-k-o-tropfen", "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-GMODG-2026", "/regierung/akte/govaction%3Adip%3A325252", "/eu/wirkungsfaelle/EU-IMPACT-2026-004", "/quellen", "/suche?q=Klima"].includes(route)) {
+      if (!navigationError && [320, 390, 1440].includes(width) && ["/", "/entscheidungen/schutz-vor-k-o-tropfen", "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-GMODG-2026", "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-BHH-2027", "/regierung/akte/govaction%3Adip%3A325252", "/eu/wirkungsfaelle/EU-IMPACT-2026-004", "/quellen", "/suche?q=Klima"].includes(route)) {
         await page.screenshot({ path: path.join(screenshotDir, `${width}-${slug(route)}.png`), fullPage: true });
       }
       results.push({
@@ -232,6 +242,7 @@ function slug(value) {
     if (result.metrics && result.metrics.h1Count !== 1) issues.push("H1_COUNT");
     if (result.metrics?.headingSkips.length) issues.push("HEADING_LEVEL_SKIP");
     if (result.metrics && (!result.metrics.assessmentBeforeProcess || !result.metrics.substantiveBeforeProcess || !result.metrics.sourceBeforeProcess || !result.metrics.recommendationBeforeProcess)) issues.push("PROCESS_PRECEDES_IMPACT");
+    if (result.metrics?.methodOrderPresent && !result.metrics.methodOrderPass) issues.push("METHOD_DOM_ORDER");
     if (result.metrics?.assessment) {
       const fontSize = Number.parseFloat(result.metrics.assessment.fontSize);
       if (result.metrics.assessment.tag !== "P" || fontSize < 18 || fontSize > 20.5 || !/sans/i.test(result.metrics.assessment.fontFamily)) issues.push("ASSESSMENT_TYPOGRAPHY");

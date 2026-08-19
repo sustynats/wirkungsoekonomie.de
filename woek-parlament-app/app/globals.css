@@ -341,6 +341,19 @@ h1, h2, h3, h4 { text-wrap: balance; }
 .impact-direction--neutral, .impact-direction--open { color: var(--farbe-status-offen); }
 .impact-direction--open::before { border-style: dashed; }
 .government-impact-grid, .government-reference-groups, .government-source-groups { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--abstand-raster); }
+.decision-method-sequence, .common-targets { display: grid; gap: var(--abstand-m); margin-top: clamp(2rem, 5vw, 4rem); padding-top: clamp(1.5rem, 3vw, 2.5rem); border-top: 1px solid var(--farbe-linie); }
+.decision-method-heading { max-width: 52rem; }
+.decision-method-heading h2, .common-targets h2 { margin-top: var(--abstand-xs); }
+.decision-method-open { max-width: 58rem; padding: var(--abstand-m); border: 1px solid var(--farbe-linie); border-left: .2rem solid var(--farbe-text-sekundaer); border-radius: var(--radius-karte); background: var(--farbe-flaeche-warm); }
+.decision-method-open h3 { margin: var(--abstand-xs) 0; font-size: clamp(1.05rem, 2vw, 1.3rem); }
+.decision-method-sources { display: flex; flex-wrap: wrap; gap: var(--abstand-xs); }
+.common-targets-table { display: grid; gap: 1px; overflow: hidden; border: 1px solid var(--farbe-linie); border-radius: var(--radius-karte); background: var(--farbe-linie); }
+.common-targets-row { display: grid; grid-template-columns: minmax(12rem, .8fr) repeat(2, minmax(0, 1fr)); gap: 1px; background: var(--farbe-linie); }
+.common-targets-row > * { min-width: 0; padding: var(--abstand-s) var(--abstand-m); overflow-wrap: anywhere; background: var(--farbe-flaeche-karte); }
+.common-targets-head > * { font-weight: var(--schriftstaerke-fett); color: var(--farbe-text-sekundaer); background: var(--farbe-flaeche-warm); }
+.common-targets-row > strong small, .common-targets-effect > span { display: block; margin-top: var(--abstand-xs); color: var(--farbe-text-sekundaer); font-weight: var(--schriftstaerke-normal); }
+.common-targets-effect > strong { display: block; }
+.common-targets-sources { display: flex !important; flex-wrap: wrap; gap: var(--abstand-xs); }
 .government-impact-grid article, .government-reference-groups > div, .government-source-groups > div { padding: var(--abstand-m); border: 1px solid var(--farbe-linie); border-radius: var(--radius-klein); background: var(--farbe-flaeche-warm); }
 .government-boundaries { display: grid; gap: var(--abstand-s); margin-top: var(--abstand-l); }
 .government-boundaries .boundary { padding: var(--abstand-m); border-left: 4px solid var(--farbe-status-offen); background: var(--farbe-flaeche-warm); }
@@ -367,6 +380,11 @@ h1, h2, h3, h4 { text-wrap: balance; }
 }
 
 @media (max-width: 640px) {
+  .common-targets-head { display: none; }
+  .common-targets-row { grid-template-columns: 1fr; }
+  .common-targets-row > span::before { display: block; margin-bottom: .2rem; color: var(--farbe-text-sekundaer); font-size: var(--groesse-klein); font-weight: var(--schriftstaerke-fett); }
+  .common-targets-row > span:nth-child(2)::before { content: "Beschlossene Entscheidung"; }
+  .common-targets-row > span:nth-child(3)::before { content: "WÖk-Handlungsoption"; }
   .government-action-grid, .government-domain-grid, .government-ministry-grid, .government-method-grid, .government-stat-band, .government-key-facts, .government-method-split { grid-template-columns: 1fr; }
   .government-explanation { grid-template-columns: 1fr; }
   .government-filter { grid-template-columns: 1fr; }
@@ -969,6 +987,7 @@ h1, h2, h3, h4 { text-wrap: balance; }
 .commitment-domain > header > p:last-child { margin: 0 0 0 auto; color: var(--muted); font-size: .9rem; }
 .commitment-list { display: grid; gap: 0; border-top: 1px solid var(--line); }
 .commitment-list article { display: grid; grid-template-columns: minmax(0, 1fr) minmax(170px, .28fr); gap: .9rem 2rem; padding: 1.25rem 0; border-bottom: 1px solid var(--line); }
+.commitment-list article > *, .commitment-list h2, .commitment-list h2 a { min-width: 0; max-inline-size: 100%; overflow-wrap: anywhere; hyphens: auto; }
 .commitment-list h3 { grid-column: 1 / -1; margin: 0; font-size: 1.22rem; }
 .commitment-list article > p { max-width: 72ch; margin: 0; }
 .commitment-list dl { display: grid; align-content: start; gap: .65rem; margin: 0; }

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { FullAnalysisText } from "@/app/components/FullAnalysisText";
 import { OverviewAssessment } from "@/app/components/OverviewAssessment";
 import { PublicMaturity } from "@/app/components/PublicMaturity";
+import { CommonTargetsComparison, ProblemGoalReview } from "@/app/components/DecisionMethodLayers";
 import { RecommendationSection } from "@/app/components/recommendations/RecommendationSection";
 import {
   boundaryLabels,
@@ -150,7 +151,6 @@ function FullSchemaDetails({ record }: { record: WoeKImpactCase }) {
         <article><h4>Beobachtete Wirkung</h4><p>{String(record.evidence_summary.effect_evidence)}</p></article>
         <article><h4>Unsicherheit</h4><p>{String(record.evidence_summary.uncertainty)}</p></article>
       </div>
-      <p><strong>Reality-Check:</strong> {realityCheckLabels[record.reality_check.status] ?? record.reality_check.status}. Beobachtung und kausale Zurechnung bleiben getrennt.</p>
       <p><strong>Wissensgrenze:</strong> {record.evidence_summary.decision_time_evidence_boundary}</p>
     </section>
 
@@ -195,15 +195,18 @@ function FullSchemaDetails({ record }: { record: WoeKImpactCase }) {
       </div>
     </section>
 
-    <section aria-labelledby={`reality-${record.impact_case_id}`}>
-      <h3 id={`reality-${record.impact_case_id}`}>Reality Check</h3>
-      <p><strong>Status:</strong> {realityCheckLabels[record.reality_check.status] ?? record.reality_check.status}</p>
-      <p><strong>Beobachtungsfenster:</strong> {record.reality_check.observation_window ?? "noch nicht festgelegt"}</p>
-      <p><strong>Zurechnung:</strong> {record.reality_check.attribution ?? "nicht belegt"}</p>
-      {record.reality_check.observations.length ? <ul>{record.reality_check.observations.map((item) => <li key={`${item.indicator}-${item.source}`}><strong>{publicValue(item.indicator)}:</strong> {publicValue(item.observation)} · Quelle: {publicValue(item.source)} · Grenze: {publicValue(item.interpretation_limit)}</li>)}</ul> : <p>Noch keine fachlich freigegebene Beobachtung.</p>}
-      <p><strong>Nächste Prüfung:</strong> {record.reality_check.next_check ?? "noch nicht terminiert"}</p>
-    </section>
   </>;
+}
+
+function GovernmentRealityCheck({ record }: { record: WoeKImpactCase }) {
+  return <section aria-labelledby={`reality-${record.impact_case_id}`} data-woek-method-layer="reality">
+    <p className="eyebrow">6 · Reality Check</p><h2 id={`reality-${record.impact_case_id}`}>Was hat sich tatsächlich verändert?</h2>
+    <p><strong>Status:</strong> {realityCheckLabels[record.reality_check.status] ?? publicValue(record.reality_check.status)}</p>
+    <p><strong>Beobachtungsfenster:</strong> {record.reality_check.observation_window ?? "noch nicht festgelegt"}</p>
+    <p><strong>Zurechnung:</strong> {record.reality_check.attribution ?? "nicht belegt"}</p>
+    {record.reality_check.observations.length ? <ul>{record.reality_check.observations.map((item) => <li key={`${item.indicator}-${item.source}`}><strong>{publicValue(item.indicator)}:</strong> {publicValue(item.observation)} · Quelle: {publicValue(item.source)} · Grenze: {publicValue(item.interpretation_limit)}</li>)}</ul> : <p>Noch keine fachlich freigegebene Beobachtung. Aus dem Verfahrensstand wird keine Wirkung abgeleitet.</p>}
+    <p><strong>Nächste Prüfung:</strong> {record.reality_check.next_check ?? "noch nicht terminiert"}</p>
+  </section>;
 }
 
 export function GovernmentProcessSection({ record }: { record: PublicGovernmentImpactRecord }) {
@@ -264,9 +267,15 @@ export function GovernmentImpactCase({ record, compact = false, includeProcess =
       </header>
 
       {!compact && <>
-        {fullRecord ? <FullSchemaDetails record={fullRecord} /> : null}
+        <ProblemGoalReview impactCaseId={record.impact_case_id} />
+
+        <div data-woek-method-layer="impact"><p className="eyebrow">3 · Wirkungsanalyse</p><h2>Wirkungsanalyse der tatsächlichen Maßnahme</h2>{fullRecord ? <FullSchemaDetails record={fullRecord} /> : <p>Die strukturierte Detailanalyse ist fachlich noch nicht veröffentlicht.</p>}</div>
 
         <RecommendationSection impactCaseId={record.impact_case_id} />
+
+        <CommonTargetsComparison impactCaseId={record.impact_case_id} />
+
+        {fullRecord ? <GovernmentRealityCheck record={fullRecord} /> : <section data-woek-method-layer="reality"><p className="eyebrow">6 · Reality Check</p><h2>Was hat sich tatsächlich verändert?</h2><p>Noch keine fachlich freigegebene strukturierte Beobachtung. Offen bedeutet weder neutral noch wirkungslos.</p></section>}
 
         {record.full_analysis_markdown && <details className="government-full-record government-technical-proof" data-woek-substantive-impact="published">
           <summary>Vollständige, unveränderte Fachakte aufklappen</summary>

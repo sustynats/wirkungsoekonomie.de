@@ -12,6 +12,8 @@ import { CompletePublicationSource } from "@/app/components/CompletePublicationS
 import { DecisionReadinessGate } from "@/app/components/DecisionReadinessGate";
 import { OverviewAssessment } from "@/app/components/OverviewAssessment";
 import { PublicMaturity } from "@/app/components/PublicMaturity";
+import { CommonTargetsComparison, ProblemGoalReview } from "@/app/components/DecisionMethodLayers";
+import { RecommendationSection } from "@/app/components/recommendations/RecommendationSection";
 import { getCase, formatDate, materialityLabel } from "@/lib/cases";
 import { caseKindLabel, humanizeSystemValue, verificationLabel } from "@/lib/presentation/labels";
 import { parliamentaryOverviewAssessment } from "@/lib/presentation/overview-assessment";
@@ -91,6 +93,7 @@ export default async function DecisionPage({ params, searchParams }: { params: P
   const workingActView = activeView === "wirkprofil" || activeView === "wirkpfade" || activeView === "berechnungen" ? activeView : "ueberblick";
   const visibleDecisionViews = editoriallyPublished ? decisionViews : decisionViews.filter((view) => view.id === "ueberblick" || view.id === "quellen");
   const publicationCaseId = typeof item.publicWorkingAct?.fullReview?.result.case_id === "string" ? item.publicWorkingAct.fullReview.result.case_id : "";
+  const methodCaseId = publicationCaseId || item.slug;
   const completePublication = activeView === "fachakte" && publicationCaseId ? await getCasePublicationSource(publicationCaseId) : null;
   return (
     <div className="shell decision-page">
@@ -111,13 +114,17 @@ export default async function DecisionPage({ params, searchParams }: { params: P
         <div>{visibleDecisionViews.map((view) => <Link key={view.id} href={view.id === "ueberblick" ? `/entscheidungen/${item.slug}` : `/entscheidungen/${item.slug}?ansicht=${view.id}`} aria-current={activeView === view.id ? "page" : undefined}>{view.label}</Link>)}</div>
       </nav>
 
+      {activeView === "ueberblick" && editoriallyPublished && <ProblemGoalReview impactCaseId={methodCaseId} />}
+
       {activeView === "normen" && editoriallyPublished && normativeMapping && <NormativeImpactTiles mapping={normativeMapping} />}
 
       {activeView === "fachakte" && editoriallyPublished && (completePublication
         ? <CompletePublicationSource source={completePublication} idPrefix="vollstaendige-fachakte" />
         : item.publicWorkingAct?.fullReview ? <FullReviewRecord review={item.publicWorkingAct.fullReview} /> : null)}
 
-      {editoriallyPublished && item.publicAssessment && activeView === "ueberblick" ? <AssessmentExplainer assessment={item.publicAssessment} /> : editoriallyPublished && item.publicWorkingAct && overviewAssessment && activeView !== "normen" && activeView !== "quellen" && activeView !== "fachakte" ? <WorkingActExplainer workingAct={item.publicWorkingAct} view={workingActView} publicEvidenceSummary={overviewAssessment.evidenceSummary} /> : !item.publicWorkingAct && activeView === "ueberblick" ? <section className="decision-section assessment-pending"><p className="eyebrow">WÖk-Einordnung</p><h2>Noch keine fachliche Bewertung veröffentlicht</h2><p>Eine reale Einordnung erscheint erst, wenn Entscheidungsfassung, Quellen, Wirkpfade, Berechnungen und Unsicherheiten geprüft sind. Das Portal unterscheidet dann sichtbar zwischen Ergebnis, Begründung und dem vollständigen Rechenweg.</p></section> : null}
+      <div data-woek-method-layer={activeView === "ueberblick" && editoriallyPublished ? "impact" : undefined}>{editoriallyPublished && item.publicAssessment && activeView === "ueberblick" ? <AssessmentExplainer assessment={item.publicAssessment} /> : editoriallyPublished && item.publicWorkingAct && overviewAssessment && activeView !== "normen" && activeView !== "quellen" && activeView !== "fachakte" ? <WorkingActExplainer workingAct={item.publicWorkingAct} view={workingActView} publicEvidenceSummary={overviewAssessment.evidenceSummary} /> : !item.publicWorkingAct && activeView === "ueberblick" ? <section className="decision-section assessment-pending"><p className="eyebrow">WÖk-Einordnung</p><h2>Noch keine fachliche Bewertung veröffentlicht</h2><p>Eine reale Einordnung erscheint erst, wenn Entscheidungsfassung, Quellen, Wirkpfade, Berechnungen und Unsicherheiten geprüft sind. Das Portal unterscheidet dann sichtbar zwischen Ergebnis, Begründung und dem vollständigen Rechenweg.</p></section> : null}</div>
+
+      {activeView === "ueberblick" && editoriallyPublished && <><RecommendationSection impactCaseId={methodCaseId} /><CommonTargetsComparison impactCaseId={methodCaseId} /><section data-woek-method-layer="reality"><p className="eyebrow">6 · Reality Check</p><h2>Was hat sich tatsächlich verändert?</h2><p>{item.publicWorkingAct?.reviewDetail?.feedback?.interpretation || "Noch keine fachlich freigegebene ex-post Wirkungsbeobachtung veröffentlicht. Aus dem parlamentarischen Status wird keine Wirkung abgeleitet."}</p></section></>}
 
       {activeView === "ueberblick" && editoriallyPublished && <GlossaryBasics termKeys={item.publicAssessment ? ["wirkung", "wirkungsbewertung", "gegenfaktum", "evidenzgrenze", "zurechnung", "nichtkompensation"] : ["wirkungspotenzial", "wirkungsrisiko", "wirkmechanismus", "wirkpfad", "rueckkopplung"]} />}
 

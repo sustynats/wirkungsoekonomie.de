@@ -12,6 +12,7 @@ import { listPublicEvidenceEvents } from "@/lib/observatory/public-data";
 import { euEditorialProjection, getEuImpactCases } from "@/lib/eu/impact-cases";
 import { getPublicRecommendations, recommendationStatusLabels } from "@/lib/recommendations";
 import { impactRecordAssessmentIconKind, parliamentaryOverviewAssessment, type OverviewAssessmentData } from "@/lib/presentation/overview-assessment";
+import dnsRegistry from "@/data/indicators/dns-official-registry.json";
 import { isSafePublicSourceUrl, sourceDetailHrefForUrl, sourceSlugForCanonicalUrl } from "@/lib/sources/url";
 
 export { isSafePublicSourceUrl, sourceDetailHrefForUrl, sourceSlugForCanonicalUrl } from "@/lib/sources/url";
@@ -942,7 +943,8 @@ function staticPublicSources() {
     ...governmentImpactSources(),
     ...recommendationSources(),
     ...euImpactSources(),
-    ...observatorySources()
+    ...observatorySources(),
+    ...dnsIndicatorSources(),
   ]) {
     const existing = deduplicated.get(source.slug);
     if (!existing) {
@@ -954,6 +956,39 @@ function staticPublicSources() {
     }
   }
   return [...deduplicated.values()];
+}
+
+function dnsIndicatorSources(): StaticPublicSource[] {
+  return dnsRegistry.records.map((indicator) => ({
+    id: `dns-indicator-${indicator.indicator_id.toLowerCase()}`,
+    slug: sourceSlugForCanonicalUrl(indicator.source_page_url) ?? `dns-${indicator.indicator_id.toLowerCase()}`,
+    title: `${indicator.indicator_id}: ${indicator.official_name_2025}`,
+    institution: "Statistisches Bundesamt / Deutsche Nachhaltigkeitsstrategie",
+    category: "OFFICIAL_STATISTICS" as const,
+    role: "CALCULATION_INPUT" as const,
+    documentType: "Amtlicher DNS-Indikator",
+    canonicalUrl: indicator.source_page_url,
+    documentDate: indicator.national_metadata_updated_date || null,
+    retrievedAt: "2026-08-19",
+    versionLabel: `Amtlicher Repository-Stand ${dnsRegistry.official_repository_commit.slice(0, 12)}`,
+    sourceHash: null,
+    temporalClass: "CURRENT_REFERENCE" as const,
+    abstract: indicator.official_definition || "Amtliche Indikatorseite der Deutschen Nachhaltigkeitsstrategie.",
+    usages: [{
+      caseSlug: indicator.indicator_id,
+      caseTitle: indicator.official_name_2025,
+      caseKind: "Wirkindikator",
+      decisionDate: null,
+      sourceRole: "CALCULATION_INPUT" as const,
+      locations: ["Definition", "Ziel", "Datenstand", "Vergleichbarkeit"],
+      note: "Der Indikator dokumentiert einen Zustand. Wirkung, Zurechnung und Empfehlung werden daraus nicht automatisch abgeleitet.",
+      caseHref: `/methodik/wirkindikatoren/${indicator.indicator_id}`,
+      analysisSummary: "Amtliche Messgröße; fachliche WÖk-Zuordnung noch offen.",
+      analysisDirection: null,
+      evidenceLevel: null,
+      assessment: null,
+    }],
+  }));
 }
 
 async function usagesForSources(sourceIds: string[]) {
