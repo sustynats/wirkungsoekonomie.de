@@ -1,0 +1,96 @@
+.document {
+  display: grid;
+  gap: var(--abstand-m);
+  max-width: var(--textbreite-ideal);
+  margin: var(--abstand-2xl) 0;
+}
+
+.title,
+.heading,
+.subheading,
+.minorHeading {
+  color: var(--farbe-flaeche-buehne);
+  font-family: var(--schrift-display);
+  line-height: 1.18;
+}
+
+.title {
+  margin-top: var(--abstand-xl);
+  font-size: var(--groesse-h2);
+}
+
+.heading {
+  margin-top: var(--abstand-l);
+  font-size: var(--groesse-h3);
+}
+
+.subheading,
+.minorHeading {
+  margin-top: var(--abstand-m);
+  font-size: var(--groesse-fliess-gross);
+}
+
+.paragraph,
+.list {
+  margin: 0;
+  color: var(--farbe-text);
+  font-family: var(--schrift-text);
+  font-size: var(--groesse-fliess);
+  line-height: 1.65;
+}
+
+.list {
+  display: grid;
+  gap: var(--abstand-xs);
+  padding-left: 1.4rem;
+}
+
+.rule {
+  width: 100%;
+  margin: var(--abstand-l) 0;
+  border: 0;
+  border-top: var(--rahmen-staerke) solid var(--farbe-linie);
+}
+
+.code {
+  overflow-wrap: anywhere;
+  padding: 0.08em 0.3em;
+  border-radius: var(--radius-klein);
+  background: var(--farbe-flaeche-warm);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.9em;
+}
+
+.link {
+  overflow-wrap: anywhere;
+  color: var(--farbe-text-link);
+  text-underline-offset: 0.14em;
+}
+
+.link:hover {
+  color: var(--farbe-text-link-hover);
+}
+
+.sourceBox {
+  display: grid;
+  gap: var(--abstand-xs);
+  margin: var(--abstand-xl) 0 0;
+  padding: var(--abstand-l);
+  border: var(--rahmen-staerke) solid var(--farbe-linie);
+  border-radius: var(--radius-karte);
+  background: var(--farbe-flaeche-karte);
+}
+
+.sourceBox p {
+  margin: 0;
+  overflow-wrap: anywhere;
+  color: var(--farbe-text-sekundaer);
+  font-size: var(--groesse-klein);
+  line-height: 1.5;
+}
+
+@media (max-width: 640px) {
+  .document {
+    max-width: 100%;
+  }
+}
