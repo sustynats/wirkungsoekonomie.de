@@ -383,11 +383,11 @@ h1, h2, h3, h4 { text-wrap: balance; }
 .hero-independence { margin: 1rem 0 0; color: #dfe4ef; font-size: .88rem; font-weight: 650; }
 .lead { max-width: var(--measure); color: var(--ink-soft); font-size: var(--t-body); line-height: 1.58; }
 .hero .lead { max-width: var(--measure); color: #e1e7ee; }
-.hero-direction-test { display: grid; gap: .3rem; margin: 1rem 0 .15rem; padding: .85rem .95rem; border-left: 3px solid var(--gold); background: rgba(7, 16, 39, .5); }
-.hero-direction-test span { color: #efd38e; font-size: .72rem; font-weight: 850; letter-spacing: .09em; text-transform: uppercase; }
+.hero-direction-test { display: grid; gap: .3rem; margin: 1rem 0 .15rem; padding: .85rem .95rem; border-left: 3px solid var(--gold); background: var(--farbe-flaeche-tief); }
+.hero-direction-test span { color: var(--farbe-text-invers-akzent); font-size: .72rem; font-weight: 850; letter-spacing: .09em; text-transform: uppercase; }
 .hero-direction-test strong { color: var(--paper); font-size: .98rem; line-height: 1.4; }
 .hero-education { display: grid; align-content: start; gap: 1rem; padding: clamp(1.25rem, 2.5vw, 1.75rem); border: 0; border-top: 4px solid var(--teal); border-radius: var(--r-card); background: var(--paper); color: var(--ink); box-shadow: 0 .8rem 1.8rem rgba(7, 15, 31, .2); }
-.hero-education .eyebrow { margin: 0; }
+.hero .hero-education .eyebrow { margin: 0; color: var(--farbe-text-akzent); }
 .hero-education h2 { margin: 0; color: var(--navy); font-size: clamp(1.38rem, 2.4vw, 1.85rem); line-height: 1.15; }
 .hero-education > p:not(.eyebrow) { margin: 0; color: var(--ink-soft); font-size: .96rem; line-height: 1.55; }
 .hero-education-steps { display: grid; gap: .1rem; padding: 0; margin: .1rem 0 0; list-style: none; border-block: 1px solid var(--line); }
@@ -489,7 +489,7 @@ h1, h2, h3, h4 { text-wrap: balance; }
 .pillars { padding-top: clamp(4rem, 8vw, 7rem); }
 .pillar-list { display: grid; grid-template-columns: repeat(5, 1fr); gap: .8rem; padding: 0; margin: 0; list-style: none; counter-reset: pillars; }
 .pillar-list li { padding: 1.2rem 1rem; border-top: 2px solid var(--navy); }
-.pillar-list span { display: block; margin-bottom: 2rem; color: var(--gold); font-weight: 850; }
+.pillar-list span { display: block; margin-bottom: 2rem; color: var(--farbe-text-akzent); font-weight: 850; }
 .pillar-list h3 { margin-bottom: .5rem; }
 .pillar-list p { margin: 0; color: var(--muted); font-size: .9rem; }
 .example-section { padding-top: 0; }

@@ -17,7 +17,7 @@ export function CaseCard({ item }: { item: ParliamentaryCase }) {
       <h3><Link href={`/entscheidungen/${item.slug}`}>{item.plainTitle}</Link></h3>
       {assessment ? <OverviewAssessment assessment={assessment} compact /> : null}
       <PublicMaturity maturity={maturity} compact />
-      <div className="case-card-topline" aria-label="Prozess- und Prüfinformationen" data-woek-process-metadata>
+      <div className="case-card-topline" role="group" aria-label="Prozess- und Prüfinformationen" data-woek-process-metadata>
         <CaseTypeMark kind={item.kind} maturity={item.publicWorkingAct?.maturity} compact />
         <span className="chip chip--phase">{materialityLabel(item.materiality)}</span>
       </div>
