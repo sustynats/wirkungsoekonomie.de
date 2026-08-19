@@ -213,6 +213,7 @@ export function publicProgrammeStatus(value: string | null | undefined, fallback
   if (!value) return fallback;
   const mapped = statusLabels[value] ?? publicSaxonyAnhaltLabel(value);
   if (mapped !== value) return mapped;
+  if (/[a-zäöüß]/.test(value) && !value.includes("_")) return value;
   return value
     .toLowerCase()
     .replaceAll("_", " ")
@@ -419,7 +420,7 @@ export function summarizeStatuses(commitments: ProgrammeCommitment[]) {
   return {
     readiness: count((entry) => entry.readiness),
     evidence: count((entry) => entry.impactPotentials.find((item) => item.evidence)?.evidence ?? null),
-    boundaries: commitments.filter((entry) => entry.boundaryConcerns.length > 0 || entry.boundaryStatus === "REVIEW_REQUIRED").length,
-    communication: commitments.filter((entry) => entry.communicativeStatus && entry.communicativeStatus !== "NOT_MATERIAL_IDENTIFIED").length,
+    boundaries: commitments.filter((entry) => entry.boundaryConcerns.length > 0 || Boolean(entry.boundaryStatus)).length,
+    communication: commitments.filter((entry) => entry.communicativeStatus && !entry.communicativeStatus.toLocaleLowerCase("de-DE").includes("keine eigenständige materielle vorwirkung")).length,
   };
 }
