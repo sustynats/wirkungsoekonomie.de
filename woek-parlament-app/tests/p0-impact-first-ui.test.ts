@@ -106,7 +106,7 @@ test("PUBLIC_MATURITY_MAKES_ASSESSABLE_AND_OPEN CLAIMS VISIBLE", () => {
 
 test("PREVIEW_CARD_HAS_VISIBLE_WOEK_ASSESSMENT", () => {
   assert.match(overviewComponent, /WÖk-Kurzbewertung/);
-  assert.match(euSourceVsView, /WÖk-Kurzbewertung/);
+  assert.match(euSourceVsView, /Executive-WÖk-Zusammenfassung/);
   assert.match(euSourceVsView, /Wirkungspotenzial kompakt/);
   for (const [file, content] of Object.entries({ caseCard, governmentCard, governmentActionCard, euCard, searchResults, sourceDetail, specialistIndex, mandateIndex, stateProgrammes })) {
     assert.match(content, /<(?:OverviewAssessment|EditorialReviewAssessment)/, file);
