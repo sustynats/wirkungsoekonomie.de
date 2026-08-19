@@ -43,10 +43,10 @@ export function PublicMaturity({ maturity, compact = false }: { maturity: Public
 
       {!compact && <>
         <div className="public-maturity-columns">
-          <article>
+          {maturity.assessableNow.length > 0 ? <article>
             <h2>Was wir bereits beurteilen können</h2>
             <ul>{maturity.assessableNow.map((item) => <li key={item}>{item}</li>)}</ul>
-          </article>
+          </article> : null}
           <article>
             <h2>Was noch offen ist oder beobachtet werden muss</h2>
             <ul>{maturity.openPoints.map((item) => <li key={item}>{item}</li>)}</ul>

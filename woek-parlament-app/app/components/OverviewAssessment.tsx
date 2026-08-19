@@ -1,4 +1,4 @@
-import type { AssessmentIconKind, OverviewAssessmentData } from "@/lib/presentation/overview-assessment";
+import { overviewAssessmentPublicCopy, type AssessmentIconKind, type OverviewAssessmentData } from "@/lib/presentation/overview-assessment";
 import { BoundaryIcon, CalculationIcon, CheckCircleIcon, EvidenceIcon, MonitorIcon, PathIcon } from "@/app/components/icons";
 
 function AssessmentIcon({ directionLabel, kind }: { directionLabel: string; kind: AssessmentIconKind }) {
@@ -16,6 +16,7 @@ function AssessmentIcon({ directionLabel, kind }: { directionLabel: string; kind
 }
 
 export function OverviewAssessment({ assessment, compact = false }: { assessment: OverviewAssessmentData; compact?: boolean }) {
+  const publicCopy = overviewAssessmentPublicCopy(assessment);
   return (
     <section
       className={`overview-assessment${compact ? " overview-assessment--compact" : ""}`}
@@ -31,9 +32,9 @@ export function OverviewAssessment({ assessment, compact = false }: { assessment
           <p className="overview-assessment-label">{assessment.assessmentLabel}</p>
         </div>
       </div>
-      <p className="overview-assessment-summary"><strong>Wirkungspotenzial kompakt:</strong> {assessment.editorialSummary}</p>
-      <p className="overview-assessment-core"><strong>Wirkungskern:</strong> {assessment.impactCoreSummary}</p>
-      <p className="overview-assessment-finding"><strong>Key Finding:</strong> {assessment.keyFinding}</p>
+      <p className="overview-assessment-summary"><strong>Wirkungspotenzial kompakt:</strong> {publicCopy.summary}</p>
+      {publicCopy.impactCore ? <p className="overview-assessment-core"><strong>Wirkungskern:</strong> {publicCopy.impactCore}</p> : null}
+      {publicCopy.keyFinding ? <p className="overview-assessment-finding"><strong>Key Finding:</strong> {publicCopy.keyFinding}</p> : null}
       <dl className="overview-assessment-axis">
         <div><dt>Wirkungsrichtung</dt><dd>{assessment.directionLabel}</dd></div>
         <div><dt>Evidenzstatus</dt><dd>{assessment.evidenceSummary}</dd></div>

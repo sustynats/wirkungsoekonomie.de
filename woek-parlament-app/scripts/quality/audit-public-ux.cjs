@@ -112,6 +112,41 @@ function slug(value) {
           rendered: section.querySelector("[data-woek-assessment-icon]")?.getAttribute("data-woek-assessment-icon") ?? null,
           label: (section.querySelector(".overview-assessment-label")?.textContent || "").trim(),
         }));
+        const normalizeAssessmentCopy = (value) => String(value || "")
+          .toLocaleLowerCase("de-DE")
+          .replace(/[^a-z0-9äöüß]+/gi, " ")
+          .replace(/\s+/g, " ")
+          .trim();
+        const substantiveCopyOverlap = (left, right) => {
+          const normalizedLeft = normalizeAssessmentCopy(left);
+          const normalizedRight = normalizeAssessmentCopy(right);
+          if (!normalizedLeft || !normalizedRight) return false;
+          if (normalizedLeft === normalizedRight) return true;
+          const shorter = normalizedLeft.length <= normalizedRight.length ? normalizedLeft : normalizedRight;
+          const longer = normalizedLeft.length > normalizedRight.length ? normalizedLeft : normalizedRight;
+          return shorter.length >= 40 && longer.includes(shorter);
+        };
+        const duplicateAssessmentCopies = [...document.querySelectorAll(".overview-assessment")].flatMap((section, sectionIndex) => {
+          const publicTextOf = (selector, prefix) => (section.querySelector(selector)?.textContent || "").trim().replace(prefix, "").trim();
+          const copies = [
+            { field: "assessment", value: publicTextOf(".overview-assessment-label", /^/) },
+            { field: "summary", value: publicTextOf(".overview-assessment-summary", /^Wirkungspotenzial kompakt:\s*/i) },
+            { field: "core", value: publicTextOf(".overview-assessment-core", /^Wirkungskern:\s*/i) },
+            { field: "finding", value: publicTextOf(".overview-assessment-finding", /^Key Finding:\s*/i) },
+          ].filter((entry) => entry.value);
+          const withinAssessment = copies.flatMap((left, leftIndex) => copies.slice(leftIndex + 1).flatMap((right) => substantiveCopyOverlap(left.value, right.value)
+            ? [{ sectionIndex, left: left.field, right: right.field, copy: right.value.slice(0, 180) }]
+            : []));
+          const surface = section.closest("[data-woek-preview-card],.decision-page,.government-impact-case,.source-usage-list article");
+          const maturityCopies = surface ? [...surface.querySelectorAll(".public-maturity-columns li")].map((element) => {
+            const value = (element.textContent || "").trim();
+            return value.replace(/^[^:]{1,80}:\s*/, "");
+          }).filter(Boolean) : [];
+          const maturityDuplicates = copies.flatMap((copy) => maturityCopies.flatMap((maturityCopy) => substantiveCopyOverlap(copy.value, maturityCopy)
+            ? [{ sectionIndex, left: copy.field, right: "public-maturity", copy: maturityCopy.slice(0, 180) }]
+            : []));
+          return [...withinAssessment, ...maturityDuplicates];
+        });
         const focusCandidate = document.querySelector("a[href],button,input,select,textarea,summary");
         if (focusCandidate instanceof HTMLElement) focusCandidate.focus();
         const focusStyle = focusCandidate ? getComputedStyle(focusCandidate) : null;
@@ -143,6 +178,7 @@ function slug(value) {
           }),
           assessmentIconPairs,
           assessmentIconAgreement: assessmentIconPairs.every((pair) => pair.expected && pair.expected === pair.rendered && pair.expected !== "unknown"),
+          duplicateAssessmentCopies,
           substantiveBeforeProcess: !substantive || !process || Boolean(substantive.compareDocumentPosition(process) & Node.DOCUMENT_POSITION_FOLLOWING),
           sourceBeforeProcess: !source || !process || Boolean(source.compareDocumentPosition(process) & Node.DOCUMENT_POSITION_FOLLOWING),
           recommendationBeforeProcess: !recommendation || !process || Boolean(recommendation.compareDocumentPosition(process) & Node.DOCUMENT_POSITION_FOLLOWING),
@@ -201,6 +237,7 @@ function slug(value) {
       if (result.metrics.assessment.tag !== "P" || fontSize < 18 || fontSize > 20.5 || !/sans/i.test(result.metrics.assessment.fontFamily)) issues.push("ASSESSMENT_TYPOGRAPHY");
     }
     if (result.metrics?.assessmentIconPairs.length && !result.metrics.assessmentIconAgreement) issues.push("ASSESSMENT_ICON_DIRECTION_MISMATCH");
+    if (result.metrics?.duplicateAssessmentCopies.length) issues.push("DUPLICATE_ASSESSMENT_COPY");
     if (result.axeViolations.some((violation) => violation.impact === "critical" || violation.impact === "serious")) issues.push("AXE_SERIOUS_OR_CRITICAL");
     return issues.length ? [{ route: result.route, width: result.width, issues }] : [];
   });

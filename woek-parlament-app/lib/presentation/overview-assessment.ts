@@ -94,6 +94,53 @@ function normalized(value: string) {
   return value.toLocaleLowerCase("de-DE").replace(/[^a-z0-9äöüß]+/gi, " ").replace(/\s+/g, " ").trim();
 }
 
+function containsSubstantiveCopy(left: string, right: string) {
+  const normalizedLeft = normalized(left);
+  const normalizedRight = normalized(right);
+  if (!normalizedLeft || !normalizedRight) return false;
+  if (normalizedLeft === normalizedRight) return true;
+  const shorter = normalizedLeft.length <= normalizedRight.length ? normalizedLeft : normalizedRight;
+  const longer = normalizedLeft.length > normalizedRight.length ? normalizedLeft : normalizedRight;
+  return shorter.length >= 40 && longer.includes(shorter);
+}
+
+type AssessmentCopyFields = Pick<OverviewAssessmentData,
+  "assessmentLabel" | "impactCoreSummary" | "editorialSummary" | "keyFinding" | "evidenceSummary" | "realityCheckSummary">;
+
+export function assessmentPublicCopyContains(assessment: AssessmentCopyFields, candidate: string | undefined) {
+  if (!candidate?.trim()) return false;
+  return [
+    assessment.assessmentLabel,
+    assessment.impactCoreSummary,
+    assessment.editorialSummary,
+    assessment.keyFinding,
+    assessment.evidenceSummary,
+    assessment.realityCheckSummary,
+  ].filter((value): value is string => Boolean(value)).some((value) => containsSubstantiveCopy(candidate, value));
+}
+
+/**
+ * Selects only already approved copy and suppresses verbatim duplication.
+ * It deliberately never rewrites or synthesizes subject-matter content.
+ */
+export function overviewAssessmentPublicCopy(assessment: OverviewAssessmentData) {
+  const editorialRepeatsExistingCopy = containsSubstantiveCopy(assessment.editorialSummary, assessment.assessmentLabel)
+    || containsSubstantiveCopy(assessment.editorialSummary, assessment.impactCoreSummary);
+  const summary = editorialRepeatsExistingCopy && !containsSubstantiveCopy(assessment.impactCoreSummary, assessment.assessmentLabel)
+    ? assessment.impactCoreSummary
+    : assessment.editorialSummary;
+  const impactCore = containsSubstantiveCopy(assessment.impactCoreSummary, assessment.assessmentLabel)
+    || containsSubstantiveCopy(assessment.impactCoreSummary, summary)
+    ? undefined
+    : assessment.impactCoreSummary;
+  const keyFinding = [assessment.assessmentLabel, summary, impactCore]
+    .filter((value): value is string => Boolean(value))
+    .some((value) => containsSubstantiveCopy(assessment.keyFinding, value))
+    ? undefined
+    : assessment.keyFinding;
+  return { summary, impactCore, keyFinding };
+}
+
 export function parliamentaryOverviewAssessment(item: ParliamentaryCase): OverviewAssessmentData | null {
   const override = assessmentOverrides[item.slug];
   if (override) {

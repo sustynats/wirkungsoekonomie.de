@@ -42,6 +42,8 @@ test("the rendered browser audit covers every contracted breakpoint and the runt
   assert.match(audit, /govaction%3Adip%3A325252/);
   assert.match(audit, /govaction%3Abreg-cabinet%3A2435812%3Atop%3A5/);
   assert.match(audit, /objectDumpVisible/);
+  assert.match(audit, /duplicateAssessmentCopies/);
+  assert.match(audit, /DUPLICATE_ASSESSMENT_COPY/);
 });
 
 test("the public K.-o.-Tropfen audit route resolves to its canonical parliamentary case", () => {

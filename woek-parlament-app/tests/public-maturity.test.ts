@@ -40,7 +40,8 @@ test("an assessment remains public while separate layers stay open", () => {
   }, assessment);
 
   assert.equal(maturity.primary, "ASSESSMENT_AVAILABLE_WITH_OPEN_POINTS");
-  assert.ok(maturity.assessableNow.some((entry) => entry.includes("präziser Mechanismus")));
+  assert.ok(maturity.assessableNow.some((entry) => entry.includes("Zielzustand kann sich verbessern")));
+  assert.ok(maturity.assessableNow.every((entry) => !entry.includes(assessment.impactCoreSummary)));
   assert.ok(maturity.openPoints.every((entry) => entry.includes("Konkreter Testfall") || entry.startsWith("Noch nicht beobachtbar")));
   assert.equal(maturity.layers.find((entry) => entry.id === "impact")?.status, "AVAILABLE");
   assert.equal(maturity.layers.find((entry) => entry.id === "goal")?.status, "PENDING");

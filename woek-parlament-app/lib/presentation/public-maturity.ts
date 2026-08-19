@@ -1,4 +1,5 @@
 import { publicIndicatorLabel, publicSystemValueLabel } from "@/lib/presentation/labels";
+import { assessmentPublicCopyContains } from "@/lib/presentation/overview-assessment";
 
 export type PublicMaturityStatus =
   | "ASSESSMENT_AVAILABLE_WITH_OPEN_POINTS"
@@ -203,11 +204,12 @@ export function governmentPublicMaturity(
   ]);
 
   const assessableNow = unique([
-    `Wirkungsökonomische Einordnung: ${assessment.assessmentLabel}`,
-    `Zentraler Wirkmechanismus: ${assessment.impactCoreSummary}`,
-    item.impact_summary.strongest_positive_potential ? `Wichtigstes positives Potenzial: ${item.impact_summary.strongest_positive_potential}` : undefined,
-    item.impact_summary.main_risk_or_tradeoff ? `Wichtigstes materielles Risiko oder Zielkonflikt: ${item.impact_summary.main_risk_or_tradeoff}` : undefined,
-    `Evidenz für die veröffentlichte Einordnung: ${assessment.evidenceSummary}`,
+    item.impact_summary.strongest_positive_potential && !assessmentPublicCopyContains(assessment, item.impact_summary.strongest_positive_potential)
+      ? `Wichtigstes positives Potenzial: ${item.impact_summary.strongest_positive_potential}`
+      : undefined,
+    item.impact_summary.main_risk_or_tradeoff && !assessmentPublicCopyContains(assessment, item.impact_summary.main_risk_or_tradeoff)
+      ? `Wichtigstes materielles Risiko oder Zielkonflikt: ${item.impact_summary.main_risk_or_tradeoff}`
+      : undefined,
   ]);
   const primary: PublicMaturityStatus = openPoints.length ? "ASSESSMENT_AVAILABLE_WITH_OPEN_POINTS" : "FULL_ANALYSIS";
 
@@ -221,7 +223,7 @@ export function governmentPublicMaturity(
     layers: [
       layer("problem", "WÖk-Problemprüfung", problemAvailable ? "AVAILABLE" : "PENDING", problemAvailable ? "Fachlich freigegeben." : `Für „${item.title}“ noch nicht als eigener Fachlayer freigegeben.`),
       layer("goal", "WÖk-Zielprüfung und Zielhierarchie", goalAvailable ? "AVAILABLE" : "PENDING", goalAvailable ? "Fachlich freigegeben." : `Für „${item.title}“ noch nicht als eigener Fachlayer freigegeben.`),
-      layer("impact", "Wirkungspotenzial und Wirkungsrisiken", "AVAILABLE", assessment.assessmentLabel),
+      layer("impact", "Wirkungspotenzial und Wirkungsrisiken", "AVAILABLE", "Fachlich freigegebene, fallbezogene Einordnung vorhanden."),
       layer("reality", "Beobachtung und Reality Check", realityPending ? "PENDING" : "AVAILABLE", assessment.realityCheckSummary || item.reality_check_summary),
       layer("recommendation", "WÖk-Handlungsoption", recommendationAvailable ? "AVAILABLE" : "PENDING", recommendationAvailable ? "Fachlich freigegebene Fassung der WÖk-Handlungsoption vorhanden." : `Für „${item.title}“ noch nicht fachlich freigegeben.`),
       layer("operationalization", "WÖk-Inspirations- und Operationalisierungsmodell", operationalizationAvailable ? "AVAILABLE" : "PENDING", operationalizationAvailable ? "Fachlich freigegebenes Modell verknüpft." : `Für „${item.title}“ ist kein freigegebenes Modell verknüpft.`),
@@ -276,17 +278,13 @@ export function euPublicMaturity(
     label: labels[primary],
     compactHint: openCountHint(primary, openPoints.length),
     assessableNow: unique([
-      `Wirkungsökonomische Einordnung: ${assessment.assessmentLabel}`,
-      `Zentraler Wirkmechanismus: ${assessment.impactCoreSummary}`,
-      `Fallbezogene Kurzbewertung: ${assessment.editorialSummary}`,
-      `Evidenz für die veröffentlichte Einordnung: ${assessment.evidenceSummary}`,
       competenceSummary,
     ]),
     openPoints,
     layers: [
       layer("problem", "WÖk-Problemprüfung", "PENDING", `Für „${item.title}“ noch nicht als eigener Fachlayer freigegeben.`),
       layer("goal", "WÖk-Zielprüfung und Zielhierarchie", "PENDING", `Für „${item.title}“ noch nicht als eigener Fachlayer freigegeben.`),
-      layer("impact", "Wirkungspotenzial und Wirkungsrisiken", "AVAILABLE", assessment.assessmentLabel),
+      layer("impact", "Wirkungspotenzial und Wirkungsrisiken", "AVAILABLE", "Fachlich freigegebene, fallbezogene Einordnung vorhanden."),
       layer("reality", "Beobachtung und Reality Check", realityPending ? "PENDING" : "AVAILABLE", assessment.realityCheckSummary || labels.REALITY_CHECK_PENDING),
       layer("recommendation", "WÖk-Handlungsoption", recommendationAvailable ? "AVAILABLE" : "PENDING", recommendationAvailable ? "Fachlich freigegeben." : `Für „${item.title}“ noch nicht fachlich freigegeben.`),
       layer("operationalization", "WÖk-Inspirations- und Operationalisierungsmodell", operationalizationAvailable ? "AVAILABLE" : "PENDING", operationalizationAvailable ? "Fachlich freigegebenes Modell verknüpft." : `Für „${item.title}“ ist kein freigegebenes Modell verknüpft.`),
@@ -331,16 +329,15 @@ export function parliamentPublicMaturity(
     label: labels[primary],
     compactHint: openCountHint(primary, openPoints.length),
     assessableNow: unique([
-      `Wirkungsökonomische Einordnung: ${assessment.assessmentLabel}`,
-      `Zentraler Wirkmechanismus: ${assessment.impactCoreSummary}`,
-      workingAct.editorialSummary?.whatIsKnown && !isGenericMaturitySentence(workingAct.editorialSummary.whatIsKnown) ? `Bereits beurteilt: ${workingAct.editorialSummary.whatIsKnown}` : `Fallbezogene Kurzbewertung: ${assessment.editorialSummary}`,
-      `Evidenz für die veröffentlichte Einordnung: ${assessment.evidenceSummary}`,
+      workingAct.editorialSummary?.whatIsKnown && !isGenericMaturitySentence(workingAct.editorialSummary.whatIsKnown) && !assessmentPublicCopyContains(assessment, workingAct.editorialSummary.whatIsKnown)
+        ? `Bereits beurteilt: ${workingAct.editorialSummary.whatIsKnown}`
+        : undefined,
     ]),
     openPoints,
     layers: [
       layer("problem", "WÖk-Problemprüfung", "PENDING", `Für „${item.plainTitle}“ noch nicht als eigener Fachlayer freigegeben.`),
       layer("goal", "WÖk-Zielprüfung und Zielhierarchie", "PENDING", `Für „${item.plainTitle}“ noch nicht als eigener Fachlayer freigegeben.`),
-      layer("impact", "Wirkungspotenzial und Wirkungsrisiken", "AVAILABLE", assessment.assessmentLabel),
+      layer("impact", "Wirkungspotenzial und Wirkungsrisiken", "AVAILABLE", "Fachlich freigegebene, fallbezogene Einordnung vorhanden."),
       layer("reality", "Beobachtung und Reality Check", realityAvailable ? "AVAILABLE" : "PENDING", assessment.realityCheckSummary || labels.REALITY_CHECK_PENDING),
       layer("recommendation", "WÖk-Handlungsoption", "PENDING", `Für „${item.plainTitle}“ noch nicht als eigene Fassung freigegeben.`),
       layer("operationalization", "WÖk-Inspirations- und Operationalisierungsmodell", "PENDING", `Für „${item.plainTitle}“ ist kein freigegebenes Modell verknüpft.`),
@@ -402,17 +399,12 @@ export function assessmentOnlyPublicMaturity(subject: string, assessment: Assess
     flags: ["REALITY_CHECK_PENDING", "ATTRIBUTION_OPEN", "GOAL_REVIEW_PENDING", "RECOMMENDATION_PENDING", "OPERATIONALIZATION_PENDING"],
     label: labels[primary],
     compactHint: openCountHint(primary, openPoints.length),
-    assessableNow: [
-      `Wirkungsökonomische Einordnung: ${assessment.assessmentLabel}`,
-      `Zentraler Wirkmechanismus: ${assessment.impactCoreSummary}`,
-      `Fallbezogene Kurzbewertung: ${assessment.editorialSummary}`,
-      `Evidenz für die veröffentlichte Einordnung: ${assessment.evidenceSummary}`,
-    ],
+    assessableNow: [],
     openPoints,
     layers: [
       layer("problem", "WÖk-Problemprüfung", "PENDING", `Für „${subject}“ in dieser Vorschau nicht als eigener Fachlayer ausgewiesen.`),
       layer("goal", "WÖk-Zielprüfung und Zielhierarchie", "PENDING", `Für „${subject}“ in dieser Vorschau nicht als eigener Fachlayer ausgewiesen.`),
-      layer("impact", "Wirkungspotenzial und Wirkungsrisiken", "AVAILABLE", assessment.assessmentLabel),
+      layer("impact", "Wirkungspotenzial und Wirkungsrisiken", "AVAILABLE", "Fachlich freigegebene, fallbezogene Einordnung vorhanden."),
       layer("reality", "Beobachtung und Reality Check", "PENDING", assessment.realityCheckSummary || `Für „${subject}“ in dieser Vorschau noch nicht ausgewiesen.`),
       layer("recommendation", "WÖk-Handlungsoption", "PENDING", `Für „${subject}“ in dieser Vorschau noch nicht freigegeben.`),
       layer("operationalization", "WÖk-Inspirations- und Operationalisierungsmodell", "PENDING", `Für „${subject}“ in dieser Vorschau noch nicht freigegeben.`),

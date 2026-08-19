@@ -37,11 +37,10 @@ export function EuImpactCase({ record, compact = false }: { record: EuImpactReco
       <OverviewAssessment compact={compact} assessment={assessment} />
       <PublicMaturity maturity={maturity} compact={compact} />
       {compact && <p className="eyebrow" data-woek-process-metadata>EU-WÖk-Wirkungsanalyse · {record.analysis_mode.includes("REALITY") ? "mit Beobachtungsstufe" : "Ex ante"}</p>}
-      <dl className="government-impact-summary">
-        <div><dt>Wirkungskern</dt><dd>{record.impact_core_summary}</dd></div>
+      {(competence || legalFeasibility || implementationRoutes.length > 0) && <dl className="government-impact-summary">
         {competence && <div><dt>Kompetenz</dt><dd>{competence}</dd></div>}
         {(legalFeasibility || implementationRoutes.length > 0) && <div><dt>Rechts- und Umsetzungsweg</dt><dd>{[legalFeasibility, ...implementationRoutes].filter(Boolean).join(" · ")}</dd></div>}
-      </dl>
+      </dl>}
     </header>
     {compact ? <Link className="text-link" href={`/eu/wirkungsfaelle/${encodeURIComponent(record.impact_case_id)}`}>Vollständige EU-Wirkungsanalyse öffnen</Link> : <>
       {indicators.length > 0 && <section><h3>Datenbedarf für den Reality Check</h3><ul>{indicators.map((indicator) => <li key={indicator}>{indicator}</li>)}</ul></section>}

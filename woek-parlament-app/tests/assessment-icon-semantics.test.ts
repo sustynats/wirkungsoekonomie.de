@@ -5,6 +5,7 @@ import {
   assessmentIconKindFromStructuredSignal,
   assessmentPresentationModeForOverallCharacter,
   impactRecordAssessmentIconKind,
+  overviewAssessmentPublicCopy,
 } from "@/lib/presentation/overview-assessment";
 
 test("reviewed structured directions drive assessment icons without prose inference", () => {
@@ -38,4 +39,23 @@ test("component binds SVG, class, accessible label and audit marker to the struc
   assert.match(component, /Symbol für Wirkungsrichtung:/);
   assert.doesNotMatch(component, /assessmentIconKind\(label/);
   assert.doesNotMatch(component, /return "positive";/);
+});
+
+test("approved assessment copy is never rendered twice when an editorial field contains its impact core", () => {
+  const impactCore = "Eine präzise strafrechtliche Erfassung kann eine Schutzlücke schließen, wenn der praktische Vollzug gesichert ist.";
+  const assessmentLabel = "Positives Schutzpotenzial; die reale Präventionswirkung bleibt offen und muss getrennt beobachtet werden.";
+  const publicCopy = overviewAssessmentPublicCopy({
+    assessmentLabel,
+    impactCoreSummary: impactCore,
+    editorialSummary: `${impactCore} ${assessmentLabel}`,
+    keyFinding: "TOXIKOLOGISCHE BEWEISSICHERUNG BLEIBT ENTSCHEIDEND",
+    directionLabel: "Positives Wirkungspotenzial",
+    directionKind: "protection",
+    evidenceSummary: "Die amtliche Vorlage trägt den Regelungsmechanismus, nicht aber eine bereits eingetretene Schutzwirkung.",
+    realityCheckSummary: "Noch nicht beobachtbar.",
+  });
+
+  assert.equal(publicCopy.summary, impactCore);
+  assert.equal(publicCopy.impactCore, undefined);
+  assert.equal(publicCopy.keyFinding, "TOXIKOLOGISCHE BEWEISSICHERUNG BLEIBT ENTSCHEIDEND");
 });

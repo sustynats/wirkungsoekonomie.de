@@ -63,7 +63,7 @@ test("EDITORIAL_SUMMARY_IS_CASE_SPECIFIC", () => {
 });
 
 test("KEY_FINDING_VISIBLE", () => {
-  assert.match(overviewComponent, /<strong>Key Finding:<\/strong> \{assessment\.keyFinding\}/);
+  assert.match(overviewComponent, /<strong>Key Finding:<\/strong> \{publicCopy\.keyFinding\}/);
   assert.match(governmentCard, /keyFinding: editorial\.fields\.key_finding/);
   assert.match(euCard, /keyFinding: editorial\.fields\.key_finding/);
 });
@@ -130,7 +130,7 @@ test("PREVIEW_CARD_HAS_ICONIC_ASSESSMENT", () => {
 
 test("PREVIEW_CARD_HAS_CASE_SPECIFIC_IMPACT_SUMMARY", () => {
   assert.match(overviewComponent, /Wirkungspotenzial kompakt:/);
-  assert.match(overviewComponent, /assessment\.editorialSummary/);
+  assert.match(overviewComponent, /publicCopy\.summary/);
   assert.doesNotMatch(overviewComponent, /EditorialReviewAssessment/);
   assert.match(publicMaturity, /WÖk-Wirkungsanalyse noch nicht veröffentlicht/);
   assert.match(publicMaturity, /data-woek-fact-only-status="published"/);

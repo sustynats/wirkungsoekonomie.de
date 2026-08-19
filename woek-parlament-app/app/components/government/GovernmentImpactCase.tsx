@@ -19,7 +19,7 @@ import { sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
 import { humanizeSystemValue, publicNarrativeText, publicStructuredFieldLabel, publicSystemLabel } from "@/lib/presentation/labels";
 import { governmentPublicMaturity } from "@/lib/presentation/public-maturity";
 import { recommendationForImpactCase } from "@/lib/recommendations";
-import { impactRecordAssessmentIconKind } from "@/lib/presentation/overview-assessment";
+import { assessmentPublicCopyContains, impactRecordAssessmentIconKind } from "@/lib/presentation/overview-assessment";
 
 function referenceSet(record: WoeKImpactCase, key: "sdg_refs" | "sdg_plus_refs" | "legal_refs") {
   return [...new Set(record.impact_paths.flatMap((path) => path[key] ?? []))];
@@ -235,6 +235,15 @@ export function GovernmentImpactCase({ record, compact = false, includeProcess =
   const maturity = governmentPublicMaturity(record, assessment, {
     recommendationAvailable: Boolean(recommendationForImpactCase(record.impact_case_id)),
   });
+  const additionalPositivePotential = summary.strongest_positive_potential && !assessmentPublicCopyContains(assessment, summary.strongest_positive_potential)
+    ? summary.strongest_positive_potential
+    : undefined;
+  const additionalRisk = summary.main_risk_or_tradeoff && !assessmentPublicCopyContains(assessment, summary.main_risk_or_tradeoff)
+    ? summary.main_risk_or_tradeoff
+    : undefined;
+  const additionalConditions = summary.direction_dependencies && !assessmentPublicCopyContains(assessment, summary.direction_dependencies)
+    ? summary.direction_dependencies
+    : undefined;
   const Title = compact ? "h2" : "h1";
   return (
     <article className="government-impact-case" aria-labelledby={`impact-${record.impact_case_id}`} data-woek-preview-card="published">
@@ -243,16 +252,15 @@ export function GovernmentImpactCase({ record, compact = false, includeProcess =
         <OverviewAssessment compact={compact} assessment={assessment} />
         <PublicMaturity maturity={maturity} compact={compact} />
         {compact && <p className="eyebrow" data-woek-process-metadata>Analysephase · {record.analysis_mode === "IMPACT_REALITY_CHECK" ? "mit Reality-Check-Stufe" : "Ex ante"}</p>}
-        {record.public_evidence_explanation && <p><strong>Öffentliche Evidenzeinordnung:</strong> {humanizeSystemValue(record.public_evidence_explanation)}</p>}
+        {record.public_evidence_explanation && !assessmentPublicCopyContains(assessment, record.public_evidence_explanation) && <p><strong>Öffentliche Evidenzeinordnung:</strong> {humanizeSystemValue(record.public_evidence_explanation)}</p>}
         {record.boundary_review_note && <p><strong>Schutz- und Wirkungsgrenzen:</strong> {humanizeSystemValue(record.boundary_review_note)}</p>}
-        {record.impact_summary.public_summary && record.impact_summary.public_summary !== record.editorial_summary && <p><strong>Fachliche Original-Kurzfassung:</strong> {humanizeSystemValue(record.impact_summary.public_summary)}</p>}
+        {record.impact_summary.public_summary && !assessmentPublicCopyContains(assessment, record.impact_summary.public_summary) && <p><strong>Fachliche Original-Kurzfassung:</strong> {humanizeSystemValue(record.impact_summary.public_summary)}</p>}
         {record.public_analysis_depth === "LIMITED_FACH_RECORD" && <div className="open-state"><span aria-hidden="true">i</span><div><strong>Begrenzte Fachübergabe - keine strukturierte Vollanalyse.</strong><p>Die vollständige Fachakte bleibt unverändert zugänglich.{missingStructuredLabels.length ? ` Folgende Bereiche liegen noch nicht als strukturierte Datenfelder vor: ${missingStructuredLabels.join("; ")}.` : " Weitere strukturierte Prüfbereiche werden erst nach fachlicher Freigabe öffentlich benannt."}</p></div></div>}
-        <dl className="government-impact-summary">
-          <div><dt>Wirkungskern</dt><dd>{editorial.fields.impact_core_summary}</dd></div>
-          {summary.strongest_positive_potential && <div><dt>Stärkstes positives Potenzial</dt><dd>{humanizeSystemValue(summary.strongest_positive_potential)}</dd></div>}
-          {summary.main_risk_or_tradeoff && <div><dt>Wichtigstes Risiko oder Zielkonflikt</dt><dd>{humanizeSystemValue(summary.main_risk_or_tradeoff)}</dd></div>}
-          {summary.direction_dependencies && <div><dt>Entscheidende Bedingungen</dt><dd>{humanizeSystemValue(summary.direction_dependencies)}</dd></div>}
-        </dl>
+        {(additionalPositivePotential || additionalRisk || additionalConditions) && <dl className="government-impact-summary">
+          {additionalPositivePotential && <div><dt>Stärkstes positives Potenzial</dt><dd>{humanizeSystemValue(additionalPositivePotential)}</dd></div>}
+          {additionalRisk && <div><dt>Wichtigstes Risiko oder Zielkonflikt</dt><dd>{humanizeSystemValue(additionalRisk)}</dd></div>}
+          {additionalConditions && <div><dt>Entscheidende Bedingungen</dt><dd>{humanizeSystemValue(additionalConditions)}</dd></div>}
+        </dl>}
       </header>
 
       {!compact && <>
