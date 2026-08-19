@@ -2,6 +2,7 @@ import { existsSync, readFileSync, statSync } from "node:fs";
 import path from "node:path";
 import publicationSources from "../../data/generated/release-1/publication-sources.json";
 import { saxonyAnhaltElectionProgrammes } from "../../data/sachsen-anhalt-election-programmes";
+import { buildSaxonyAnhaltProgrammeModel } from "../../lib/presentation/sachsen-anhalt-programme-model";
 import { presentSaxonyAnhaltMarkdown } from "../../lib/presentation/sachsen-anhalt-programmes";
 
 type PublicationRecord = {
@@ -17,15 +18,29 @@ function fail(message: string): never {
 
 const root = process.cwd();
 const routePath = path.join(root, "app/laender/sachsen-anhalt/wahlprogramme/[sourceKey]/page.tsx");
-if (!existsSync(routePath)) fail("public programme detail route is missing");
+const componentPath = path.join(root, "app/components/SaxonyAnhaltProgrammeAnalysis.tsx");
+const modelPath = path.join(root, "lib/presentation/sachsen-anhalt-programme-model.ts");
+for (const requiredPath of [routePath, componentPath, modelPath]) {
+  if (!existsSync(requiredPath)) fail(`required public presentation file is missing: ${path.relative(root, requiredPath)}`);
+}
+
 const routeSource = readFileSync(routePath, "utf8");
-for (const requiredToken of [
-  "getSaxonyAnhaltPublicationSources",
-  "presentSaxonyAnhaltSource",
-  "vollstaendige-wirkungsakte",
-  "vollstaendiges-zusageregister"
-]) {
+for (const requiredToken of ["getSaxonyAnhaltPublicationSources", "SaxonyAnhaltProgrammeAnalysis"]) {
   if (!routeSource.includes(requiredToken)) fail(`detail route does not contain ${requiredToken}`);
+}
+if (routeSource.includes("CompletePublicationSource")) fail("raw complete-publication renderer must not be the primary route renderer");
+
+const componentSource = readFileSync(componentPath, "utf8");
+for (const requiredToken of [
+  "data-woek-sachsen-anhalt-public=\"structured-accordion-v2\"",
+  "WÖk-Kurzbewertung",
+  "vollstaendige-wirkungsakte",
+  "vollstaendiges-zusageregister",
+  "<details",
+  "Zusammenfassende WÖk-Bewertung",
+  "Fachlicher Vollnachweis und technische Prüfinformationen"
+]) {
+  if (!componentSource.includes(requiredToken)) fail(`public accordion component does not contain ${requiredToken}`);
 }
 
 const programmes = saxonyAnhaltElectionProgrammes;
@@ -37,6 +52,7 @@ const documents = Array.isArray((publicationSources as { documents?: unknown }).
   ? ((publicationSources as { documents: PublicationRecord[] }).documents)
   : fail("publication-sources.json has no documents array");
 
+const sourceFiles = new Map<string, { review: string; commitments: string }>();
 for (const sourceKey of sourceKeys) {
   const records = documents.filter((record) => record.source_key === sourceKey);
   const review = records.filter((record) => record.kind === "SAXONY_ANHALT_ELECTION_PROGRAMME_REVIEW");
@@ -45,6 +61,7 @@ for (const sourceKey of sourceKeys) {
   if (commitments.length !== 1) fail(`${sourceKey}: expected exactly one commitment register, found ${commitments.length}`);
 
   const expectedRoute = `/laender/sachsen-anhalt/wahlprogramme/${sourceKey}`;
+  const resolved: Partial<{ review: string; commitments: string }> = {};
   for (const [label, record] of [["review", review[0]], ["commitments", commitments[0]]] as const) {
     const renderedRoute = typeof record.rendered_route === "string" ? record.rendered_route : "";
     if (!renderedRoute.startsWith(expectedRoute)) fail(`${sourceKey}: ${label} rendered_route does not point to ${expectedRoute}`);
@@ -53,8 +70,20 @@ for (const sourceKey of sourceKeys) {
     const markdownPath = path.join(root, "data/fachakten/release-1", markdownFile);
     if (!existsSync(markdownPath)) fail(`${sourceKey}: ${label} markdown file is missing`);
     if (statSync(markdownPath).size === 0) fail(`${sourceKey}: ${label} markdown file is empty`);
+    resolved[label] = markdownPath;
   }
+  sourceFiles.set(sourceKey, resolved as { review: string; commitments: string });
 }
+
+const linkeFiles = sourceFiles.get("ltw-2026-st-linke");
+if (!linkeFiles) fail("Linke regression fixture is missing");
+const linkeModel = buildSaxonyAnhaltProgrammeModel(
+  readFileSync(linkeFiles.review, "utf8"),
+  readFileSync(linkeFiles.commitments, "utf8")
+);
+if (linkeModel.commitments.length < 100) fail(`Linke accordion model unexpectedly contains only ${linkeModel.commitments.length} commitments`);
+if (!linkeModel.summary || !linkeModel.policyDomains.length) fail("Linke public summary or programme structure is empty");
+if (!linkeModel.commitments[0]?.impactPotentials.length) fail("Linke first commitment has no public impact-potential summary");
 
 const technicalFixture = [
   "### programme_profile",
@@ -84,5 +113,7 @@ console.log(JSON.stringify({
   programmes: sourceKeys.length,
   publicationObjects: sourceKeys.length * 2,
   route: "/laender/sachsen-anhalt/wahlprogramme/[sourceKey]",
+  accordionUx: "pass",
+  linkeCommitmentsParsed: linkeModel.commitments.length,
   publicPresentationGate: "pass"
 }));
