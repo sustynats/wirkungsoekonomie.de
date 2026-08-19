@@ -103,7 +103,7 @@ export default async function DecisionPage({ params, searchParams }: { params: P
       {overviewAssessment ? <OverviewAssessment assessment={overviewAssessment} /> : null}
       <PublicMaturity maturity={publicMaturity} />
 
-      <section className="sixty-second" aria-labelledby="sixty-second-title"><div><p className="eyebrow">60 Sekunden</p><h2 id="sixty-second-title">Worum geht es?</h2></div><dl><div className="sixty-second-summary"><dt>Kurz erklärt</dt><dd>{publicLead}</dd></div><div><dt>Was wird entschieden?</dt><dd>{humanizeSystemValue(item.whatIsDecided)}</dd></div><div><dt>Welche Veränderung steht im Mittelpunkt?</dt><dd>{editoriallyPublished ? decisionFocus(item) : "WÖk-Analyse noch nicht redaktionell veröffentlicht."}</dd></div></dl></section>
+      <section className="sixty-second" aria-labelledby="sixty-second-title" data-woek-substantive-impact={editoriallyPublished ? "published" : undefined}><div><p className="eyebrow">60 Sekunden</p><h2 id="sixty-second-title">Worum geht es?</h2></div><dl><div className="sixty-second-summary"><dt>Kurz erklärt</dt><dd>{publicLead}</dd></div><div><dt>Was wird entschieden?</dt><dd>{humanizeSystemValue(item.whatIsDecided)}</dd></div><div><dt>Welche Veränderung steht im Mittelpunkt?</dt><dd>{editoriallyPublished ? decisionFocus(item) : "WÖk-Analyse noch nicht redaktionell veröffentlicht."}</dd></div></dl></section>
 
       {activeView === "ueberblick" && editoriallyPublished && <DecisionReadinessGate decisionBasis={statuses.decisionBasis} />}
 
@@ -129,16 +129,15 @@ export default async function DecisionPage({ params, searchParams }: { params: P
 
       {!item.publicWorkingAct && <section className="decision-section question-section"><p className="eyebrow">Prüffragen</p><h2>Was muss vor einer Bewertung geklärt werden?</h2><ol>{item.questions.map((question) => <li key={question}>{question}</li>)}</ol></section>}
 
+      {activeView === "quellen" && <section className="decision-section"><p className="eyebrow">Fassung und Änderung</p><h2>Welche Version wurde betrachtet?</h2><p>{item.versionNote}</p><details className="notice"><summary><strong>Technische Nachvollziehbarkeit der Fassung</strong></summary><p>Ein Dokumentvergleich hält Originalquelle, Abrufzeit und die nachvollziehbaren Folgen für die WÖk-Analyse fest.</p></details></section>}
+
+      {activeView === "quellen" && <section id="quellen" className="decision-section" data-woek-source-layer="published"><p className="eyebrow">Quellen und Grenzen</p><h2>Worauf stützt sich diese Seite?</h2><p className="section-intro">Jede Quelle wird zuerst im Quellenarchiv eingeordnet – mit Herausgeber, Fassung, zeitlicher Rolle und ihrer Verwendung in diesem Check.</p><div className="source-list">{item.sources.map((source) => <article key={source.url}><h3><Link href={sourceDetailHrefForUrl(source.url)}>{source.title}</Link></h3><p>{source.publisher} · abgerufen {formatDate(source.retrievedAt)}</p><p>{source.note}</p><Link className="text-link" href={sourceDetailHrefForUrl(source.url)}>Quellendetail ansehen →</Link></article>)}</div></section>}
+
+      {!item.publicWorkingAct && <section className="decision-section recommendation-block"><p className="eyebrow">WÖk-Facheinordnung</p><h2>Noch nicht veröffentlicht</h2><p>Eine WÖk-Facheinordnung folgt nur aus einer dokumentierten Fallprüfung, Evidenz, Gegenargumenten und nachvollziehbaren Grenzen. Diese Seite ersetzt kein Rechtsgutachten und keine parlamentarische Entscheidung.</p></section>}
       <section className="decision-process-meta" aria-label="Politischer Prozess und Prüfstatus" data-woek-process-metadata>
         <div><CaseTypeMark kind={item.kind} maturity={item.publicWorkingAct?.maturity} /><p>Prozess- und Prüfinformationen</p></div>
         <aside className="decision-status"><p>Status dieser Wirkungsakte</p><strong>{humanizeSystemValue(item.parliamentaryStatus)}</strong><dl><div><dt>Bisherige WÖk-Prozessstufe</dt><dd>{statuses.maturity}</dd></div><div><dt>Evidenzstatus</dt><dd>{statuses.evidence}</dd></div><div><dt>Attributionsstatus</dt><dd>{statuses.attribution}</dd></div><div><dt>Prüfrelevanz</dt><dd>{materialityLabel(item.materiality)}</dd></div><div><dt>Quellenstatus</dt><dd>{verificationLabel(item.statusVerification)}</dd></div><div><dt>Letzte Aktualisierung</dt><dd>{formatDate(item.lastUpdated)}</dd></div></dl></aside>
       </section>
-
-      {activeView === "quellen" && <section className="decision-section"><p className="eyebrow">Fassung und Änderung</p><h2>Welche Version wurde betrachtet?</h2><p>{item.versionNote}</p><details className="notice"><summary><strong>Technische Nachvollziehbarkeit der Fassung</strong></summary><p>Ein Dokumentvergleich hält Originalquelle, Abrufzeit und die nachvollziehbaren Folgen für die WÖk-Analyse fest.</p></details></section>}
-
-      {activeView === "quellen" && <section id="quellen" className="decision-section"><p className="eyebrow">Quellen und Grenzen</p><h2>Worauf stützt sich diese Seite?</h2><p className="section-intro">Jede Quelle wird zuerst im Quellenarchiv eingeordnet – mit Herausgeber, Fassung, zeitlicher Rolle und ihrer Verwendung in diesem Check.</p><div className="source-list">{item.sources.map((source) => <article key={source.url}><h3><Link href={sourceDetailHrefForUrl(source.url)}>{source.title}</Link></h3><p>{source.publisher} · abgerufen {formatDate(source.retrievedAt)}</p><p>{source.note}</p><Link className="text-link" href={sourceDetailHrefForUrl(source.url)}>Quellendetail ansehen →</Link></article>)}</div></section>}
-
-      {!item.publicWorkingAct && <section className="decision-section recommendation-block"><p className="eyebrow">WÖk-Facheinordnung</p><h2>Noch nicht veröffentlicht</h2><p>Eine WÖk-Facheinordnung folgt nur aus einer dokumentierten Fallprüfung, Evidenz, Gegenargumenten und nachvollziehbaren Grenzen. Diese Seite ersetzt kein Rechtsgutachten und keine parlamentarische Entscheidung.</p></section>}
       <p className="page-return"><Link href="/entscheidungen">← Alle Wirkungschecks</Link></p>
     </div>
   );

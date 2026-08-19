@@ -15,6 +15,7 @@ import {
 import { impactCasesForGovernmentAction } from "@/lib/government/impact-cases";
 import { sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
 import { factOnlyPublicMaturity } from "@/lib/presentation/public-maturity";
+import { publicOfficialIdentifierRows } from "@/lib/government/official-identifiers";
 
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
   const { id } = await params;
@@ -22,15 +23,11 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   return { title: action?.title ?? "Regierungsakte", robots: { index: false, follow: false } };
 }
 
-function identifierRows(identifiers: Record<string, string[]>) {
-  return Object.entries(identifiers).flatMap(([kind, values]) => values.map((value) => ({ kind, value })));
-}
-
 export default async function GovernmentActionDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   const action = actionById(decodeURIComponent(id));
   if (!action) notFound();
-  const identifiers = identifierRows(action.official_identifiers);
+  const identifiers = publicOfficialIdentifierRows(action.official_identifiers);
   const impactCases = impactCasesForGovernmentAction(action.government_action_id);
 
   return (
@@ -61,7 +58,7 @@ export default async function GovernmentActionDetailPage({ params }: { params: P
         <section id="sachverhalt">
           <p className="eyebrow">1 · Amtlicher Sachverhalt</p><h2>Was ist belegt?</h2>
           <p>Die amtliche Quelle dokumentiert einen Regierungsakt vom Typ <strong>{actionTypeLabels[action.action_type] ?? action.action_type}</strong>. Sein belegter Verfahrensstand lautet <strong>{lifecycleLabels[action.lifecycle_status] ?? action.lifecycle_status}</strong>. Eine darüber hinausgehende Ziel-, Umsetzungs- oder Wirkungsaussage wird hier nicht aus dem Titel abgeleitet.</p>
-          {identifiers.length > 0 && <dl className="government-identifier-list">{identifiers.map(({ kind, value }) => <div key={`${kind}-${value}`}><dt>{kind.toUpperCase()}</dt><dd>{value}</dd></div>)}</dl>}
+          {identifiers.length > 0 && <dl className="government-identifier-list">{identifiers.map((identifier) => <div key={identifier.key}><dt>{identifier.label}</dt><dd>{identifier.value}{identifier.sourceUrl ? <> · <Link href={sourceDetailHrefForUrl(identifier.sourceUrl)}>Quellenakte öffnen</Link></> : null}</dd></div>)}</dl>}
           {action.parliamentary_case_refs.length > 0 && <p><strong>Parlamentarische Verknüpfung:</strong> {action.parliamentary_case_refs.join(", ")}. Die Regierungshandlung und der parlamentarische Fall bleiben getrennte Objekte.</p>}
         </section>
 

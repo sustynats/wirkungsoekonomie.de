@@ -1,6 +1,36 @@
 import { coverageLabels, getGovernmentPublicData } from "@/lib/government/public-data";
 import { getImpactImportMeta, getPublicImpactCases } from "@/lib/government/impact-cases";
 
+const sourceLabels: Record<string, string> = {
+  BREG_CABINET_ARCHIVE: "Bundesregierung · Kabinett",
+  MINISTRY_BMF: "Bundesministerium der Finanzen",
+  MINISTRY_BMI: "Bundesministerium des Innern",
+  MINISTRY_AA: "Auswärtiges Amt",
+  MINISTRY_BMVg: "Bundesministerium der Verteidigung",
+  MINISTRY_BMWE: "Bundesministerium für Wirtschaft und Energie",
+  MINISTRY_BMFTR: "Bundesministerium für Forschung, Technologie und Raumfahrt",
+  MINISTRY_BMJV: "Bundesministerium der Justiz und für Verbraucherschutz",
+  MINISTRY_BMBFSFJ: "Bundesministerium für Bildung, Familie, Senioren, Frauen und Jugend",
+  MINISTRY_BMAS: "Bundesministerium für Arbeit und Soziales",
+  MINISTRY_BMDS: "Bundesministerium für Digitales und Staatsmodernisierung",
+  MINISTRY_BMV: "Bundesministerium für Verkehr",
+  MINISTRY_BMUKN: "Bundesministerium für Umwelt, Klimaschutz, Naturschutz und nukleare Sicherheit",
+  MINISTRY_BMG: "Bundesministerium für Gesundheit",
+  MINISTRY_BMLEH: "Bundesministerium für Landwirtschaft, Ernährung und Heimat",
+  MINISTRY_BMZ: "Bundesministerium für wirtschaftliche Zusammenarbeit und Entwicklung",
+  MINISTRY_BMWSB: "Bundesministerium für Wohnen, Stadtentwicklung und Bauwesen",
+  DIP_API: "Dokumentations- und Informationssystem für Parlamentsmaterialien",
+  RECHT_BUND_AND_GII: "Bundesrecht und amtliche Verkündungsinformationen",
+  BKAmt: "Bundeskanzleramt",
+};
+
+function publicScopeLabel(scope: string) {
+  const urls = scope.split(";").map((value) => value.trim()).filter((value) => value.startsWith("https://"));
+  if (!urls.length) return scope;
+  const hosts = [...new Set(urls.flatMap((value) => { try { return [new URL(value).hostname.replace(/^www\./, "")]; } catch { return []; } }))];
+  return hosts.length ? `Amtlicher Web- oder Datenzugang: ${hosts.join(", ")}` : "Amtlicher Web- oder Datenzugang";
+}
+
 export default function GovernmentTransparencyPage() {
   const { actions, coverage } = getGovernmentPublicData();
   const impactCases = getPublicImpactCases();
@@ -23,7 +53,7 @@ export default function GovernmentTransparencyPage() {
     <p>{impactMeta.note}</p>
 
     <h2>Abdeckung nach amtlichem Quellenraum</h2>
-    <div className="government-table-wrap"><table><thead><tr><th>Quelle</th><th>Zeitraum</th><th>Gefunden / verarbeitet</th><th>Ungeklärt</th><th>Status</th></tr></thead><tbody>{coverage.sources.map((source) => <tr key={source.source_id}><th scope="row">{source.source_id}<small>{source.scope}</small></th><td>{source.period_start} bis {source.period_end}</td><td>{source.found_records} / {source.processed_records}</td><td>{source.unexplained_items}</td><td>{coverageLabels[source.coverage_status] ?? source.coverage_status}{source.note && <small>{source.note}</small>}</td></tr>)}</tbody></table></div>
+    <div className="government-table-wrap" role="region" aria-label="Abdeckung der amtlichen Regierungsquellen" tabIndex={0}><table><thead><tr><th>Quelle</th><th>Zeitraum</th><th>Gefunden / verarbeitet</th><th>Ungeklärt</th><th>Status</th></tr></thead><tbody>{coverage.sources.map((source) => <tr key={source.source_id}><th scope="row">{sourceLabels[source.source_id] ?? "Amtlicher Quellenraum"}<small>{publicScopeLabel(source.scope)}</small></th><td>{source.period_start} bis {source.period_end}</td><td>{source.found_records} / {source.processed_records}</td><td>{source.unexplained_items}</td><td>{coverageLabels[source.coverage_status] ?? "Status noch nicht öffentlich bezeichnet"}{source.note && <small>{source.note}</small>}</td></tr>)}</tbody></table></div>
 
     <h2>Was nicht öffentlich ausgespielt wird</h2>
     <ul className="government-principle-list"><li><strong>Ungeprüfte Kandidaten</strong><span>Der kanonische Arbeitsbestand ist kein Public Store.</span></li><li><strong>Offene Identitätsfragen</strong><span>Gemeinsame Drucksachen, Sitzungen oder ähnliche Titel führen nicht zu einem stillen Merge.</span></li><li><strong>Unbelegte Statusfortschreibung</strong><span>Eine Quelle wird nicht stärker formuliert, als sie selbst belegt.</span></li><li><strong>Automatische Wirkung</strong><span>Government Data erzeugt keine WÖk-Richtungen, Scores oder Personennoten.</span></li></ul>

@@ -61,8 +61,33 @@ const systemValueLabels: Record<string, string> = {
   IMPACT_REALITY_CHECK: "Wirkungsprüfung anhand beobachteter Entwicklung",
   PORTFOLIO_EX_ANTE: "Portfolioanalyse vor der Entscheidung",
   GOVERNMENT_DRAFT: "Regierungsentwurf",
-  PROMULGATED: "verkündet",
+  PARLIAMENTARY_PROCESS: "parlamentarisches Verfahren",
+  AUCTION_OPEN: "Ausschreibung geöffnet",
+  BUNDESTAG_ADOPTED: "vom Bundestag beschlossen",
+  BUNDESTAG_ADOPTED_ROLLOUT_PLANNED_2027: "vom Bundestag beschlossen; Einführung für 2027 vorgesehen",
+  BUNDESTAG_AND_BUNDESRAT_PASSED_EFFECTS_MAINLY_FROM_2027: "von Bundestag und Bundesrat beschlossen; wesentliche Änderungen ab 2027",
+  CABINET_CONSENT_TO_SIGNATURE: "Bundeskabinett hat der Unterzeichnung zugestimmt",
+  CABINET_DECIDED: "vom Bundeskabinett beschlossen",
+  "CABINET_DECIDED / COMMISSION_SETUP": "vom Bundeskabinett beschlossen; Kommission wird eingerichtet",
+  "CABINET_DECIDED / IMPLEMENTATION_PORTFOLIO": "vom Bundeskabinett beschlossen; Umsetzung über mehrere Maßnahmen",
+  "CABINET_DECIDED / IMPLEMENTING_PROGRAMME": "vom Bundeskabinett beschlossen; Umsetzung über ein Programm",
+  "CABINET_DECIDED / PARLIAMENTARY_PROCESS": "vom Bundeskabinett beschlossen; parlamentarisches Verfahren läuft",
+  "CABINET_FRAMEWORK_DECIDED / IMPLEMENTATION_PENDING": "Rahmen vom Bundeskabinett beschlossen; Umsetzung steht aus",
+  IMPLEMENTING: "in Umsetzung",
+  INTERNATIONAL_AGREEMENT_LEGAL_IMPLEMENTATION: "internationale Vereinbarung in rechtlicher Umsetzung",
   IN_FORCE: "in Kraft",
+  IN_FORCE_IMPLEMENTATION_DEPENDENT: "in Kraft; Wirkung hängt vom Vollzug ab",
+  IN_FORCE_IMPLEMENTING: "in Kraft und in Umsetzung",
+  IN_FORCE_PAYOUT_FROM_2027: "in Kraft; Auszahlung ab 2027",
+  "IN_FORCE_SINCE_2025-12-06": "seit 6. Dezember 2025 in Kraft",
+  "IN_FORCE_SINCE_2026-01-01": "seit 1. Januar 2026 in Kraft",
+  LAW_IN_FORCE_BENEFIT_FROM_2027_RETROACTIVE_PAYOUT_2028: "Gesetz in Kraft; Leistung ab 2027 mit rückwirkender Auszahlung 2028",
+  LETTER_OF_INTENT_NOT_FINAL_SUPPLY_CONTRACT: "Absichtserklärung; noch kein endgültiger Liefervertrag",
+  PARLIAMENTARY_APPROVAL_REQUIRED: "parlamentarische Zustimmung erforderlich",
+  "PARLIAMENTARY_PROCESS / IMPLEMENTATION_ORDINANCE_PENDING": "parlamentarisches Verfahren; Umsetzungsverordnung steht aus",
+  RATIFICATION_PROCESS: "Ratifikationsverfahren",
+  "SIGNED / RATIFICATION_AND_ENTRY_INTO_FORCE_PENDING": "unterzeichnet; Ratifikation und Inkrafttreten stehen aus",
+  PROMULGATED: "verkündet",
   PROPOSAL: "Vorschlag",
   SYSTEMIC: "systemische Wirkung",
   FIRST: "erste Ordnung",
@@ -117,6 +142,15 @@ const systemValueLabels: Record<string, string> = {
   IndividualVotes: "amtlich dokumentierte Einzelstimmen",
   NO_SINGLE_DIRECTION_ALLOWED: "Keine einheitliche Wirkungsrichtung zulässig",
   VERY_HIGH: "sehr hohe Prüfrelevanz",
+  HIGH_MEDIUM: "hohe bis mittlere Prüfrelevanz",
+  MEDIUM_HIGH: "mittlere bis hohe Prüfrelevanz",
+  HIGH_PROTECTION: "hohe Schutzrelevanz",
+  HIGH_SYSTEMIC: "hohe systemische Prüfrelevanz",
+  VERY_HIGH_CLIMATE_NATURE: "sehr hohe Klima- und Naturrelevanz",
+  VERY_HIGH_HEALTH_SOCIAL_FINANCE: "sehr hohe Relevanz für Gesundheit, Soziales und Finanzierung",
+  VERY_HIGH_INTERGENERATIONAL: "sehr hohe generationenübergreifende Relevanz",
+  VERY_HIGH_RIGHTS_SECURITY: "sehr hohe Grundrechts- und Sicherheitsrelevanz",
+  VERY_HIGH_SOCIAL: "sehr hohe soziale Relevanz",
   STANDARD_WOEK_ANALYSIS: "WÖk-Standardanalyse",
   NOT_ASSESSABLE: "nicht belastbar bewertbar",
   NOT_APPLICABLE: "nicht anwendbar",
@@ -169,6 +203,20 @@ const systemValueLabels: Record<string, string> = {
   EU_EXCLUSIVE: "ausschließliche EU-Zuständigkeit",
   EU_SHARED: "geteilte EU-Zuständigkeit",
   EU_SHARED_INTERNAL_MARKET_ENVIRONMENT_INDUSTRY: "Geteilte EU-Zuständigkeit - Binnenmarkt, Umwelt und Industrie",
+  MIXED_EU_SUPPORTING_EXISTING_DIGITAL_INTERNAL_MARKET_RULES: "Gemischte EU-Zuständigkeit mit unterstützender Rolle auf Grundlage bestehender Binnenmarkt- und Digitalregeln",
+  EU_ROUTE_WITH_HIGH_FUNDAMENTAL_RIGHTS_CONSTRAINTS: "EU-Umsetzungsweg mit hohen grundrechtlichen Anforderungen",
+  COMMISSION_STRATEGY: "Strategie der Europäischen Kommission",
+  DSA_EXISTING_ENFORCEMENT: "Vollzug des bestehenden Digital Services Act",
+  MEMBER_STATE_AND_CIVIL_SOCIETY_COORDINATION: "Koordination mit Mitgliedstaaten und Zivilgesellschaft",
+  EU_SHARED_MIXED: "Gemischte geteilte EU-Zuständigkeit",
+  EU_ROUTE_WITH_CONSTRAINTS: "EU-Umsetzungsweg mit rechtlichen und administrativen Anforderungen",
+  MEMBER_STATE_ADMINISTRATION_REQUIRED: "Umsetzung durch Verwaltungen der Mitgliedstaaten erforderlich",
+  REGIONAL_LOCAL_IMPLEMENTATION: "Regionale und lokale Umsetzung",
+  EU_BUDGET_OR_FUNDING: "EU-Haushalt oder EU-Förderung",
+  STRATEGY_AND_COMMUNICATION: "Strategie und Mitteilung der Europäischen Kommission",
+  COMMISSION_EXECUTIVE_STRATEGIC: "strategische Exekutivrolle der Europäischen Kommission",
+  IMPACT_POTENTIAL_WITH_IMPLEMENTATION_OBSERVATION: "Wirkungspotenzial mit Beobachtung der Umsetzung",
+  WATCH_HIGH: "hohe Schutz- und Beobachtungsrelevanz",
   EU_SUPPORTING: "unterstützende EU-Zuständigkeit",
   MEMBER_STATE: "Zuständigkeit der Mitgliedstaaten",
   EU_COLEGISLATION: "Ordentliches Gesetzgebungsverfahren",
@@ -179,9 +227,28 @@ const systemValueLabels: Record<string, string> = {
   "Boundary Review": "Prüfung von Schutz- und Wirkungsgrenzen",
   BOUNDARY_STATUS: "Prüfung von Schutz- und Wirkungsgrenzen",
   BOUNDARY_REVIEW: "Prüfung der Schutz- und Wirkungsgrenzen",
+  BUND_WITH_EU_STATE_AID_AND_ELECTRICITY_MARKET_CONSTRAINTS: "Bundeskompetenz unter EU-beihilfe- und strommarktrechtlichen Anforderungen",
+  BUND_FINANCING_QUALITY_FRAMEWORK_WITH_LAENDER_HOSPITAL_PLANNING: "Bundesrahmen für Finanzierung und Qualität; Krankenhausplanung der Länder",
+  BUND_WITH_EU_FINANCIAL_MARKET_AND_TAX_CONSTRAINTS: "Bundeskompetenz unter EU-finanzmarkt- und steuerrechtlichen Anforderungen",
+  BUND_SGB_II_WITH_FEDERAL_IMPLEMENTATION_BY_BA_AND_MUNICIPAL_JOBCENTERS: "Bundesrecht im SGB II; Vollzug durch Bundesagentur und kommunale Jobcenter",
+  BUND_PUBLIC_PROCUREMENT_AND_LABOUR_CONDITIONS_WITH_EU_PROCUREMENT_CONSTRAINTS: "Bundeskompetenz für Vergabe- und Arbeitsbedingungen unter EU-Vergaberecht",
+  BUND_ASYL_PROCEDURE_WITH_BINDING_EU_ASYL_PROCEDURE_AND_FUNDAMENTAL_RIGHTS_CONSTRAINTS: "Bundeskompetenz im Asylverfahren unter bindendem EU- und Grundrechtsschutz",
+  ALTERNATIVE: "Alternative",
+  AUSGANGSSTATUS: "Ausgangsstatus",
+  BESCHLOSSENE_OPTION: "beschlossene Option",
+  REFERENZOPTION: "Referenzoption",
+  WOEK_PRAEFERIERTE_AUSGESTALTUNG: "von der WÖk fachlich bevorzugte Ausgestaltung",
 };
 
 const structuredFieldLabels: Record<string, string> = {
+  competence_scope: "Kompetenz",
+  implementation_route: "Umsetzungsweg",
+  legal_feasibility_status: "Rechtliche Umsetzbarkeit",
+  institutional_actor_role: "Institutionelle Rolle",
+  current_commission_role: "Rolle der aktuellen Kommission",
+  inherited_legislative_file: "Geerbtes Gesetzgebungsverfahren",
+  reality_check_status: "Reality-Check-Status",
+  boundary_status: "Prüfung der Schutz- und Wirkungsgrenzen",
   competence_review: "Kompetenzprüfung",
   legal_and_rights_review: "Rechts- und Grundrechtsprüfung",
   mpd_mapping: "MPD-Zuordnung",
@@ -190,6 +257,7 @@ const structuredFieldLabels: Record<string, string> = {
   structured_boundary_review: "Prüfung von Schutz- und Wirkungsgrenzen",
   structured_data_needs: "strukturierter Datenbedarf",
   structured_evidence_summary: "strukturierte Evidenzzusammenfassung",
+  comparison_role: "Rolle im Variantenvergleich",
 };
 
 const indicatorLabels: Record<string, string> = {
@@ -199,7 +267,14 @@ const indicatorLabels: Record<string, string> = {
   eu_manufacturing_capacity: "Zusätzliche industrielle Produktionskapazität in der EU",
   supply_concentration: "Importkonzentration und Lieferkettenabhängigkeit",
   fdi_quality: "Qualität ausländischer Direktinvestitionen, einschließlich Wissens- und Technologietransfer",
-  permit_duration_with_protection: "Genehmigungsdauer bei gleichbleibenden Schutzstandards"
+  permit_duration_with_protection: "Genehmigungsdauer bei gleichbleibenden Schutzstandards",
+  fimi_detection_time: "Zeit bis zur Erkennung koordinierter Informationsmanipulation",
+  network_diffusion_after_response: "Ausbreitung eines Manipulationsnetzwerks nach einer Reaktion",
+  false_classification_appeals: "Einsprüche gegen Fehlklassifikationen",
+  independent_oversight: "Unabhängige Aufsicht",
+  media_pluralism: "Medienpluralismus",
+  civil_society_operability: "Handlungsfähigkeit der Zivilgesellschaft",
+  fundamental_rights_cases: "Grundrechtsbeschwerden und -verfahren",
 };
 
 export function caseKindLabel(value: CaseKind) {
@@ -232,17 +307,25 @@ export function humanizeSystemValue(value: string) {
       (label, [systemValue, publicLabel]) => label.replace(new RegExp(`\\b${systemValue}\\b`, "g"), publicLabel),
       value
     );
-  return translated.replace(/\b[A-Z][A-Z0-9]*(?:_[A-Z0-9]+)+\b/g, (systemValue) => {
-    const words = systemValue.toLocaleLowerCase("de-DE").replaceAll("_", " ");
-    return `${words.charAt(0).toLocaleUpperCase("de-DE")}${words.slice(1)}`;
-  }).replace(/\b[a-z][a-z0-9]*(?:_[a-z0-9]+)+\b/g, (systemValue) => {
-    const words = systemValue.replaceAll("_", " ");
-    return `${words.charAt(0).toLocaleUpperCase("de-DE")}${words.slice(1)}`;
-  });
+  return translated;
+}
+
+/** Technical control values may appear in normal public UI only through an
+ * exact reviewed mapping. Unknown codes are suppressed by the caller instead
+ * of being cosmetically title-cased. */
+export function publicSystemLabel(value: string) {
+  return systemValueLabels[value] ?? null;
+}
+
+/** Name used by the cross-system publication contract. Kept as an alias so
+ * existing callers remain stable while the strict fail-closed semantics are
+ * explicit at new public projection boundaries. */
+export function publicSystemValueLabel(value: string) {
+  return publicSystemLabel(value);
 }
 
 export function publicIndicatorLabel(value: string) {
-  return indicatorLabels[value] ?? humanizeSystemValue(value);
+  return indicatorLabels[value] ?? null;
 }
 
 /** Internal schema keys may only reach public copy through an explicit,
@@ -255,7 +338,28 @@ export function publicStructuredFieldLabel(value: string) {
  * public control-language. The source value remains unchanged; the renderer
  * only exposes a readable label/value clause. */
 export function publicControlText(value: string) {
+  const exact = publicSystemLabel(value);
+  if (exact) return exact;
+  const assignment = value.match(/^\s*([A-Za-z][A-Za-z0-9_]*)\s*=\s*(.+?)\s*$/);
+  if (assignment) {
+    const key = publicStructuredFieldLabel(assignment[1]) ?? publicSystemLabel(assignment[1]);
+    const label = publicSystemLabel(assignment[2]);
+    return key && label ? `${key}: ${label}` : null;
+  }
+  if (/\b[A-Z][A-Z0-9]*(?:_[A-Z0-9]+)+\b|\b[a-z][a-z0-9]*(?:_[a-z0-9]+)+\b/.test(value)) return null;
   return humanizeSystemValue(value).replace(/\s*=\s*/g, ": ");
+}
+
+/** Fachlich freigegebene narrative copy is preserved verbatim. A leading
+ * control-code prefix may be omitted for public prose; any other embedded
+ * machine token fails closed instead of being cosmetically translated. */
+export function publicNarrativeText(value: string) {
+  const trimmed = value.trim();
+  if (!trimmed) return null;
+  const prefixed = trimmed.match(/^[A-Z][A-Z0-9]*(?:_[A-Z0-9]+)+:\s*([\s\S]+)$/);
+  if (prefixed) return /\b[A-Z][A-Z0-9]*(?:_[A-Z0-9]+)+\b/.test(prefixed[1]) ? null : humanizeSystemValue(prefixed[1].trim());
+  if (/\b[A-Z][A-Z0-9]*(?:_[A-Z0-9]+)+\b|\b[a-z]+_[a-z0-9_]+\b/.test(trimmed)) return null;
+  return humanizeSystemValue(trimmed);
 }
 
 export function isMarkdownSeparatorOnly(value: string) {

@@ -28,7 +28,7 @@ export type GovernmentAction = {
   source_provenance: "PASS";
   no_open_p0_overmerge: true;
   coverage_scope_status: string;
-  official_identifiers: Record<string, string[]>;
+  official_identifiers: Record<string, unknown>;
   source_refs: SourceRef[];
   parliamentary_case_refs: string[];
   related_actions: string[];

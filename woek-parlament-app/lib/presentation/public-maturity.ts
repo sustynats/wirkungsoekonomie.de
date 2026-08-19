@@ -1,4 +1,4 @@
-import { humanizeSystemValue } from "@/lib/presentation/labels";
+import { publicIndicatorLabel, publicSystemValueLabel } from "@/lib/presentation/labels";
 
 export type PublicMaturityStatus =
   | "ASSESSMENT_AVAILABLE_WITH_OPEN_POINTS"
@@ -140,11 +140,6 @@ function openCountHint(primary: PublicMaturityStatus, count: number) {
   return `Bewertung möglich · ${count} konkrete ${count === 1 ? "Prüffrage" : "Prüffragen"} offen.`;
 }
 
-function readableIndicator(value: string) {
-  const normalized = value.replace(/[_-]+/g, " ").trim().toLocaleLowerCase("de-DE");
-  return normalized ? normalized.charAt(0).toLocaleUpperCase("de-DE") + normalized.slice(1) : value;
-}
-
 function isGenericMaturitySentence(value: string | undefined) {
   return /Wirkpfade und Risiken sind aus den vorliegenden amtlichen Quellen strukturiert|Die Akte ist in der ausgewiesenen Reifestufe öffentlich nutzbar/i.test(value ?? "");
 }
@@ -244,6 +239,14 @@ export function euPublicMaturity(
   const partialEvidence = item.evidence_level === "LOW" || item.evidence_level === "NOT_ASSESSABLE";
   const recommendationAvailable = Boolean(options.recommendationAvailable);
   const operationalizationAvailable = Boolean(options.operationalizationAvailable);
+  const publicIndicators = item.key_indicators.map(publicIndicatorLabel).filter((value): value is string => Boolean(value));
+  const missingIndicatorLabels = item.key_indicators.length - publicIndicators.length;
+  const publicCompetence = publicSystemValueLabel(item.competence_scope);
+  const publicImplementationRoutes = item.implementation_route.map(publicSystemValueLabel).filter((value): value is string => Boolean(value));
+  const competenceLabelsComplete = Boolean(publicCompetence) && publicImplementationRoutes.length === item.implementation_route.length;
+  const competenceSummary = competenceLabelsComplete
+    ? `Kompetenz- und Umsetzungsrahmen: ${[publicCompetence, ...publicImplementationRoutes].filter(Boolean).join("; ")}`
+    : undefined;
   const flags = unique([
     partialEvidence ? "PARTIAL_EVIDENCE" : undefined,
     isExAnte ? "EX_ANTE_POTENTIAL_ONLY" : undefined,
@@ -256,7 +259,11 @@ export function euPublicMaturity(
   const openPoints = unique([
     realityPending ? `${assessment.realityCheckSummary} Für „${item.title}“ liegt damit noch keine beobachtete Netto-Wirkung vor.` : undefined,
     realityPending ? `Eine spätere Zustandsänderung kann „${item.title}“ derzeit nicht kausal zugerechnet werden.` : undefined,
-    partialEvidence ? `Die Evidenz für „${item.title}“ ist teilweise oder noch nicht belastbar bewertbar; insbesondere fehlen reife Werte zu ${item.key_indicators.slice(0, 3).map(readableIndicator).join(", ")}.` : undefined,
+    partialEvidence && publicIndicators.length
+      ? `Die Evidenz für „${item.title}“ ist teilweise oder noch nicht belastbar bewertbar; insbesondere fehlen reife Werte zu ${publicIndicators.slice(0, 3).join(", ")}.`
+      : partialEvidence ? `Die Evidenz für „${item.title}“ ist teilweise oder noch nicht belastbar bewertbar; fallbezogene Messgrößen bleiben fachlich zu prüfen.` : undefined,
+    missingIndicatorLabels > 0 ? `Für ${missingIndicatorLabels} fachlich benannte ${missingIndicatorLabels === 1 ? "Messgröße fehlt" : "Messgrößen fehlen"} noch eine freigegebene öffentliche Bezeichnung.` : undefined,
+    !competenceLabelsComplete ? "Für mindestens einen Wert des Kompetenz- und Umsetzungsrahmens fehlt noch eine freigegebene öffentliche Bezeichnung." : undefined,
     `Eine eigenständige fachlich freigegebene WÖk-Problemprüfung für „${item.title}“ ist noch nicht veröffentlicht.`,
     `Eine eigenständige WÖk-Zielprüfung mit Zielhierarchie für „${item.title}“ ist noch nicht veröffentlicht.`,
     !recommendationAvailable ? `Eine WÖk-Handlungsoption für „${item.title}“ ist noch nicht fachlich freigegeben.` : undefined,
@@ -273,7 +280,7 @@ export function euPublicMaturity(
       `Zentraler Wirkmechanismus: ${assessment.impactCoreSummary}`,
       `Fallbezogene Kurzbewertung: ${assessment.editorialSummary}`,
       `Evidenz für die veröffentlichte Einordnung: ${assessment.evidenceSummary}`,
-      `Kompetenz- und Umsetzungsrahmen: ${humanizeSystemValue(item.competence_scope)}; ${item.implementation_route.map(humanizeSystemValue).join(", ")}`,
+      competenceSummary,
     ]),
     openPoints,
     layers: [

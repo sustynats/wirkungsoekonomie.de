@@ -33,6 +33,28 @@ const recommendationFachStatusLabels = {
   APPROVED: "fachlich freigegeben",
   APPROVED_WITH_OPEN_DATA: "fachlich freigegeben; offene Daten sind ausgewiesen",
 };
+const recommendationCompetenceLabels = {
+  BUND_WITH_EU_STATE_AID_AND_ELECTRICITY_MARKET_CONSTRAINTS: "Bundeskompetenz unter EU-beihilfe- und strommarktrechtlichen Anforderungen",
+  BUND_FINANCING_QUALITY_FRAMEWORK_WITH_LAENDER_HOSPITAL_PLANNING: "Bundesrahmen für Finanzierung und Qualität; Krankenhausplanung der Länder",
+  BUND_WITH_EU_FINANCIAL_MARKET_AND_TAX_CONSTRAINTS: "Bundeskompetenz unter EU-finanzmarkt- und steuerrechtlichen Anforderungen",
+  BUND_SGB_II_WITH_FEDERAL_IMPLEMENTATION_BY_BA_AND_MUNICIPAL_JOBCENTERS: "Bundesrecht im SGB II; Vollzug durch Bundesagentur und kommunale Jobcenter",
+  BUND_PUBLIC_PROCUREMENT_AND_LABOUR_CONDITIONS_WITH_EU_PROCUREMENT_CONSTRAINTS: "Bundeskompetenz für Vergabe- und Arbeitsbedingungen unter EU-Vergaberecht",
+  BUND_ASYL_PROCEDURE_WITH_BINDING_EU_ASYL_PROCEDURE_AND_FUNDAMENTAL_RIGHTS_CONSTRAINTS: "Bundeskompetenz im Asylverfahren unter bindendem EU- und Grundrechtsschutz",
+};
+const recommendationDimensionLabels = { comparison_role: "Rolle im Variantenvergleich" };
+const recommendationDimensionValueLabels = {
+  ALTERNATIVE: "Alternative",
+  AUSGANGSSTATUS: "Ausgangsstatus",
+  BESCHLOSSENE_OPTION: "beschlossene Option",
+  REFERENZOPTION: "Referenzoption",
+  WOEK_PRAEFERIERTE_AUSGESTALTUNG: "von der WÖk fachlich bevorzugte Ausgestaltung",
+};
+
+function publicNarrativeText(value) {
+  const trimmed = String(value ?? "").trim();
+  const withoutControlPrefix = trimmed.replace(/^[A-Z][A-Z0-9]*(?:_[A-Z0-9]+)+:\s*/, "");
+  return withoutControlPrefix.replaceAll("RecommendationVersion", "Fassung der WÖk-Handlungsoption");
+}
 
 function decodeHtml(value) {
   return value
@@ -87,6 +109,15 @@ const technicalValueLabels = {
   NOT_STRUCTURED: "nicht strukturiert",
   WATCH: "Beobachtung erforderlich",
   VERY_HIGH: "sehr hohe Prüfrelevanz",
+  HIGH_MEDIUM: "hohe bis mittlere Prüfrelevanz",
+  MEDIUM_HIGH: "mittlere bis hohe Prüfrelevanz",
+  HIGH_PROTECTION: "hohe Schutzrelevanz",
+  HIGH_SYSTEMIC: "hohe systemische Prüfrelevanz",
+  VERY_HIGH_CLIMATE_NATURE: "sehr hohe Klima- und Naturrelevanz",
+  VERY_HIGH_HEALTH_SOCIAL_FINANCE: "sehr hohe Relevanz für Gesundheit, Soziales und Finanzierung",
+  VERY_HIGH_INTERGENERATIONAL: "sehr hohe generationenübergreifende Relevanz",
+  VERY_HIGH_RIGHTS_SECURITY: "sehr hohe Grundrechts- und Sicherheitsrelevanz",
+  VERY_HIGH_SOCIAL: "sehr hohe soziale Relevanz",
   FULL_SCHEMA_2_0_1: "WÖk-Vollschema 2.0.1",
   VERIFIED_FACH_RELEASE_COMPACT: "verifizierte kompakte Fachübergabe",
   COMPACT_SOURCE_PRESERVED_NO_SCHEMA_REPAIR: "kompakte Quelle unverändert erhalten; keine stillschweigende Schema-Reparatur",
@@ -117,22 +148,19 @@ function recommendationPublicFields(record) {
     ["/problem_state", record.problem_state], ["/target_state", record.target_state],
     ["/root_cause_or_binding_bottleneck", record.root_cause_or_binding_bottleneck],
     ["/system_leverage", record.system_leverage],
-    ["/competence_scope", humanizeSystemValue(record.competence_scope)],
+    ["/competence_scope", recommendationCompetenceLabels[record.competence_scope]],
     ["/implementation_route", humanizeSystemValue(record.implementation_route)],
     ["/reversibility", record.reversibility], ["/evidence_grade", recommendationEvidenceLabels[record.evidence_grade]],
     ["/uncertainty", record.uncertainty], ["/reality_check_plan", record.reality_check_plan],
-    ["/woek_preferred_option", record.woek_preferred_option], ["/non_compensation_check", humanizeSystemValue(record.non_compensation_check)],
+    ["/woek_preferred_option", record.woek_preferred_option], ["/non_compensation_check", publicNarrativeText(record.non_compensation_check)],
     ["/fallback_option", record.fallback_option], ["/recommendation_version", record.recommendation_version],
-    ["/public_change_summary", record.public_change_summary], ["/recommendation_id", record.recommendation_id],
-    ["/impact_case_id", record.impact_case_id], ["/jurisdiction_id", record.jurisdiction_id],
-    ["/analysis_mode", recommendationAnalysisModeLabels[record.analysis_mode]],
-    ["/fach_status", recommendationFachStatusLabels[record.fach_status]],
+    ["/public_change_summary", record.public_change_summary],
   ];
   for (const [index, option] of record.option_set.entries()) {
     fields.push([`/option_set/${index}/label`, option.label], [`/option_set/${index}/description`, option.description]);
     for (const [key, value] of Object.entries(option.dimensions)) {
-      fields.push([`/option_set/${index}/dimensions/${key}/key`, humanizeSystemValue(key)]);
-      fields.push([`/option_set/${index}/dimensions/${key}/value`, humanizeSystemValue(value)]);
+      fields.push([`/option_set/${index}/dimensions/${key}/key`, recommendationDimensionLabels[key]]);
+      fields.push([`/option_set/${index}/dimensions/${key}/value`, recommendationDimensionValueLabels[value]]);
     }
   }
   for (const arrayField of [
@@ -145,7 +173,7 @@ function recommendationPublicFields(record) {
     for (const [index, value] of (record[arrayField] ?? []).entries()) fields.push([`/${arrayField}/${index}`, value]);
   }
   if (record.analysis_mode === "RETROSPECTIVE_DECISION_REVIEW") {
-    fields.push(["/decision_date", record.decision_date], ["/knowledge_cutoff_date", record.knowledge_cutoff_date], ["/hindsight_limitations", humanizeSystemValue(record.hindsight_limitations)]);
+    fields.push(["/decision_date", record.decision_date], ["/knowledge_cutoff_date", record.knowledge_cutoff_date], ["/hindsight_limitations", publicNarrativeText(record.hindsight_limitations)]);
   }
   if (record.supersedes_recommendation_version) fields.push(["/supersedes_recommendation_version", record.supersedes_recommendation_version]);
   return fields.filter(([, value]) => value !== null && value !== undefined && comparable(value).length > 0);
@@ -155,31 +183,20 @@ function publicFields(record) {
   const editorial = projectGovernmentEditorial(record);
   if (editorial.status !== "PASS") return [["/public_editorial_projection", "PUBLICATION_REVIEW_REQUIRED"]];
   const fields = [
-    ["/impact_case_id", record.impact_case_id], ["/title", record.title], ["/record_profile", publicTechnicalValue(record.record_profile)],
-    ["/schema_validation", publicTechnicalValue(record.schema_validation)], ["/analysis_version", record.analysis_version], ["/analysis_as_of", record.analysis_as_of],
-    ["/materiality", publicTechnicalValue(record.materiality)], ["/primary_direction", publicTechnicalValue(record.primary_direction)], ["/evidence_level", publicTechnicalValue(record.evidence_level)],
+    ["/title", record.title], ["/analysis_version", record.analysis_version], ["/analysis_as_of", record.analysis_as_of],
     ["/impact_summary/strongest_positive_potential", record.impact_summary.strongest_positive_potential],
     ["/impact_summary/main_risk_or_tradeoff", record.impact_summary.main_risk_or_tradeoff],
     ["/impact_summary/direction_dependencies", record.impact_summary.direction_dependencies],
-    ["/impact_summary/measurement_priority", record.impact_summary.measurement_priority],
     ["/overview_assessment_label", editorial.fields.overview_assessment_label],
     ["/impact_core_summary", editorial.fields.impact_core_summary], ["/editorial_summary", editorial.fields.editorial_summary],
     ["/evidence_summary", editorial.fields.evidence_summary], ["/key_finding", editorial.fields.key_finding],
     ["/reality_check_summary", editorial.fields.reality_check_summary],
     ["/public_evidence_explanation", record.public_evidence_explanation ? publicEnumLabel(record.public_evidence_explanation) : null], ["/boundary_review_note", record.boundary_review_note ? publicEnumLabel(record.boundary_review_note) : null],
-    ["/public_analysis_depth", publicTechnicalValue(record.public_analysis_depth)], ["/competence_review_status", publicTechnicalValue(record.competence_review_status)],
-    ["/competence_status", record.competence_status], ["/boundary_status", publicTechnicalValue(record.boundary_status)],
-    ["/reality_check_status", publicTechnicalValue(record.reality_check_status)], ["/recommendation_status", publicTechnicalValue(record.recommendation_status)], ["/source_release/jsonl_file", record.source_release.jsonl_file],
-    ["/source_release/jsonl_sha256", record.source_release.jsonl_sha256], ["/source_release/markdown_file", record.source_release.markdown_file],
-    ["/source_release/markdown_sha256", record.source_release.markdown_sha256], ["/source_release/case_markdown_sha256", record.source_release.case_markdown_sha256],
-    ["/editorial_evidence_overlay/source_file", record.editorial_evidence_overlay?.source_file],
-    ["/editorial_evidence_overlay/source_sha256", record.editorial_evidence_overlay?.source_sha256],
   ];
   for (const [index, value] of record.missing_structured_fields.entries()) {
     const label = structuredFieldLabels[value];
     if (label) fields.push([`/missing_structured_fields/${index}`, label]);
   }
-  for (const [index, value] of record.linked_government_action_ids.entries()) fields.push([`/linked_government_action_ids/${index}`, value]);
   return fields.filter(([, value]) => value !== null && value !== undefined && comparable(value).length > 0);
 }
 
@@ -295,7 +312,7 @@ const report = {
   recommendation_source_links_checked: cases.reduce((sum, entry) => sum + (entry.recommendation?.source_links_expected ?? 0), 0),
   recommendation_source_pages_checked: recommendationSourcePages.length,
   recommendation_source_pages_passed: recommendationSourcePages.filter((entry) => entry.status === "PASS").length,
-  methodology: "Jedes nichtleere normalisierte Public-Feld wird gegen die gerenderte Detailseite geprüft. Für Recommendations wird die Kette Fachrecord -> kanonischer RecommendationRecord -> Public Store -> gerenderte Recommendation UI vollständig geprüft, einschließlich Hindsight Guard und interner Quellenakten. Die vollständige unveränderte Fachakte bleibt zusätzlich mit ihrem Fall-SHA-256 im Public Store erhalten.",
+  methodology: "Jedes fachlich oder redaktionell öffentliche Inhaltsfeld wird gegen die gerenderte Detailseite geprüft; interne IDs, Dateinamen, Hashes und Schema-Codes bleiben bewusst aus der Nutzeroberfläche ausgeschlossen. Für Recommendations wird die Kette Fachrecord -> kanonischer RecommendationRecord -> Public Store -> gerenderte Recommendation UI vollständig geprüft, einschließlich Hindsight Guard und interner Quellenakten. Die vollständige Fachakte bleibt im Public Store hashgesichert erhalten.",
   failures,
   cases,
   recommendation_source_pages: recommendationSourcePages,

@@ -1,0 +1,177 @@
+{
+  "schema_version": "2.3-eu-live",
+  "generated_at": "2026-08-19T03:46:41.363Z",
+  "base_url": "http://127.0.0.1:8787",
+  "status": "PASS",
+  "fach_records_total": 21,
+  "records_checked": 16,
+  "records_excluded_editorial": [
+    {
+      "impact_case_id": "EU-IMPACT-2026-001",
+      "reasons": [
+        "evidence_summary:EMPTY",
+        "evidence_summary:TOO_SHORT"
+      ]
+    },
+    {
+      "impact_case_id": "EU-IMPACT-2026-003",
+      "reasons": [
+        "evidence_summary:EMPTY",
+        "evidence_summary:TOO_SHORT"
+      ]
+    },
+    {
+      "impact_case_id": "EU-IMPACT-2026-005",
+      "reasons": [
+        "evidence_summary:EMPTY",
+        "evidence_summary:TOO_SHORT"
+      ]
+    },
+    {
+      "impact_case_id": "EU-IMPACT-2026-019",
+      "reasons": [
+        "evidence_summary:TOO_SHORT"
+      ]
+    },
+    {
+      "impact_case_id": "EU-IMPACT-2026-020",
+      "reasons": [
+        "evidence_summary:TOO_SHORT"
+      ]
+    }
+  ],
+  "records_passed": 16,
+  "normalized_public_fields_checked": 224,
+  "fach_fields_lost": 0,
+  "failures": [],
+  "cases": [
+    {
+      "impact_case_id": "EU-IMPACT-2026-002",
+      "url": "http://127.0.0.1:8787/eu/wirkungsfaelle/EU-IMPACT-2026-002",
+      "http_status": 200,
+      "fields_checked": 14,
+      "failures": [],
+      "status": "PASS"
+    },
+    {
+      "impact_case_id": "EU-IMPACT-2026-004",
+      "url": "http://127.0.0.1:8787/eu/wirkungsfaelle/EU-IMPACT-2026-004",
+      "http_status": 200,
+      "fields_checked": 14,
+      "failures": [],
+      "status": "PASS"
+    },
+    {
+      "impact_case_id": "EU-IMPACT-2026-006",
+      "url": "http://127.0.0.1:8787/eu/wirkungsfaelle/EU-IMPACT-2026-006",
+      "http_status": 200,
+      "fields_checked": 14,
+      "failures": [],
+      "status": "PASS"
+    },
+    {
+      "impact_case_id": "EU-IMPACT-2026-007",
+      "url": "http://127.0.0.1:8787/eu/wirkungsfaelle/EU-IMPACT-2026-007",
+      "http_status": 200,
+      "fields_checked": 14,
+      "failures": [],
+      "status": "PASS"
+    },
+    {
+      "impact_case_id": "EU-IMPACT-2026-008",
+      "url": "http://127.0.0.1:8787/eu/wirkungsfaelle/EU-IMPACT-2026-008",
+      "http_status": 200,
+      "fields_checked": 14,
+      "failures": [],
+      "status": "PASS"
+    },
+    {
+      "impact_case_id": "EU-IMPACT-2026-009",
+      "url": "http://127.0.0.1:8787/eu/wirkungsfaelle/EU-IMPACT-2026-009",
+      "http_status": 200,
+      "fields_checked": 14,
+      "failures": [],
+      "status": "PASS"
+    },
+    {
+      "impact_case_id": "EU-IMPACT-2026-010",
+      "url": "http://127.0.0.1:8787/eu/wirkungsfaelle/EU-IMPACT-2026-010",
+      "http_status": 200,
+      "fields_checked": 14,
+      "failures": [],
+      "status": "PASS"
+    },
+    {
+      "impact_case_id": "EU-IMPACT-2026-011",
+      "url": "http://127.0.0.1:8787/eu/wirkungsfaelle/EU-IMPACT-2026-011",
+      "http_status": 200,
+      "fields_checked": 14,
+      "failures": [],
+      "status": "PASS"
+    },
+    {
+      "impact_case_id": "EU-IMPACT-2026-012",
+      "url": "http://127.0.0.1:8787/eu/wirkungsfaelle/EU-IMPACT-2026-012",
+      "http_status": 200,
+      "fields_checked": 14,
+      "failures": [],
+      "status": "PASS"
+    },
+    {
+      "impact_case_id": "EU-IMPACT-2026-013",
+      "url": "http://127.0.0.1:8787/eu/wirkungsfaelle/EU-IMPACT-2026-013",
+      "http_status": 200,
+      "fields_checked": 14,
+      "failures": [],
+      "status": "PASS"
+    },
+    {
+      "impact_case_id": "EU-IMPACT-2026-014",
+      "url": "http://127.0.0.1:8787/eu/wirkungsfaelle/EU-IMPACT-2026-014",
+      "http_status": 200,
+      "fields_checked": 14,
+      "failures": [],
+      "status": "PASS"
+    },
+    {
+      "impact_case_id": "EU-IMPACT-2026-015",
+      "url": "http://127.0.0.1:8787/eu/wirkungsfaelle/EU-IMPACT-2026-015",
+      "http_status": 200,
+      "fields_checked": 14,
+      "failures": [],
+      "status": "PASS"
+    },
+    {
+      "impact_case_id": "EU-IMPACT-2026-016",
+      "url": "http://127.0.0.1:8787/eu/wirkungsfaelle/EU-IMPACT-2026-016",
+      "http_status": 200,
+      "fields_checked": 14,
+      "failures": [],
+      "status": "PASS"
+    },
+    {
+      "impact_case_id": "EU-IMPACT-2026-017",
+      "url": "http://127.0.0.1:8787/eu/wirkungsfaelle/EU-IMPACT-2026-017",
+      "http_status": 200,
+      "fields_checked": 14,
+      "failures": [],
+      "status": "PASS"
+    },
+    {
+      "impact_case_id": "EU-IMPACT-2026-018",
+      "url": "http://127.0.0.1:8787/eu/wirkungsfaelle/EU-IMPACT-2026-018",
+      "http_status": 200,
+      "fields_checked": 14,
+      "failures": [],
+      "status": "PASS"
+    },
+    {
+      "impact_case_id": "EU-IMPACT-2026-021",
+      "url": "http://127.0.0.1:8787/eu/wirkungsfaelle/EU-IMPACT-2026-021",
+      "http_status": 200,
+      "fields_checked": 14,
+      "failures": [],
+      "status": "PASS"
+    }
+  ]
+}

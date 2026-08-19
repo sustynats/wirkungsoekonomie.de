@@ -10,7 +10,11 @@ export function listPublishedCases(kind?: CaseKind) {
 }
 
 export function getCase(slug: string): ParliamentaryCase | undefined {
-  return listPublishedCases().find((item) => item.slug === slug);
+  const publicRouteAliases: Record<string, string> = {
+    "schutz-vor-k-o-tropfen": "bt21-dip-907488f49a72",
+  };
+  const canonicalSlug = publicRouteAliases[slug] ?? slug;
+  return listPublishedCases().find((item) => item.slug === canonicalSlug);
 }
 
 export function formatDate(value: string) {

@@ -25,6 +25,10 @@ function referrerDomain() {
 }
 
 function send(eventType: "page_view" | "heartbeat", pathname: string, sessionId: string) {
+  // The analytics endpoint permits the production portal origin. Preview,
+  // local and audit hosts stay intentionally silent instead of producing a
+  // failed cross-origin request in public browser consoles.
+  if (window.location.hostname !== "parlament.wirkungsoekonomie.de") return;
   if (navigator.doNotTrack === "1" || (window as Window & { doNotTrack?: string }).doNotTrack === "1") return;
   const payload = JSON.stringify({
     eventType,

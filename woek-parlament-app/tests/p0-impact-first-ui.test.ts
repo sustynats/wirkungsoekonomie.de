@@ -86,6 +86,12 @@ test("DETAIL_PAGE_IMPACT_SECTION_PRECEDES_PROCESS", () => {
   assert.ok(decisionDetail.indexOf("<OverviewAssessment") < decisionDetail.indexOf("decision-process-meta"));
   assert.ok(governmentCard.indexOf("<OverviewAssessment") < governmentCard.indexOf("<FullSchemaDetails"));
   assert.ok(euCard.indexOf("<OverviewAssessment") < euCard.indexOf("Geerbtes EU-Verfahren"));
+  assert.ok(governmentCard.indexOf("data-woek-substantive-impact") < governmentCard.indexOf("{includeProcess && <GovernmentProcessSection"));
+  assert.ok(governmentCard.indexOf("data-woek-source-layer") < governmentCard.indexOf("{includeProcess && <GovernmentProcessSection"));
+  const euDetailProcess = euCard.lastIndexOf("data-woek-process-metadata");
+  assert.ok(euCard.indexOf("data-woek-substantive-impact") < euDetailProcess);
+  assert.ok(euCard.indexOf("<RecommendationSection") < euDetailProcess);
+  assert.ok(euCard.indexOf("data-woek-source-layer") < euDetailProcess);
 });
 
 test("IMPACT_ANALYSIS_IS_PRIMARY_CONTENT", () => {
@@ -187,7 +193,9 @@ test("PUBLIC_SCHEMA_TERMS_ARE_MAPPED_TO_PLAIN_GERMAN", () => {
 });
 
 test("WOEK_ASSESSMENT_LABEL_USES_COMPACT_SANS_SERIF_LEAD_TYPOGRAPHY", () => {
-  assert.match(globalStyles, /\.overview-assessment-label\s*\{[\s\S]*?font:\s*600\s+clamp\(1\.125rem,\s*1\.45vw,\s*1\.25rem\)\/1\.45\s+var\(--schrift-text\)/);
+  assert.match(globalStyles, /\.overview-assessment-label\s*\{[\s\S]*?font-family:\s*var\(--schrift-text\)[\s\S]*?font-size:\s*clamp\(1\.125rem,\s*1\.25vw,\s*1\.25rem\)[\s\S]*?font-weight:\s*600[\s\S]*?line-height:\s*1\.45/);
+  assert.match(overviewComponent, /<p className="overview-assessment-label">\{assessment\.assessmentLabel\}<\/p>/);
+  assert.doesNotMatch(overviewComponent, /<h[1-6][^>]*className="overview-assessment-label"/);
 });
 
 test("NO_GENERIC_INTERNAL_SCHEMA_FIELD_LABELS_IN_PUBLIC_UI", () => {
@@ -226,6 +234,16 @@ test("NO_CONTROL_STYLE_BACKTICK_ENUM_STATUS_PRESENTATION", () => {
   assert.match(genericPublicScan, /FACT_ONLY_HEAD_METADATA_FAILS_CLOSED/);
   assert.match(genericPublicScan, /FACT_ONLY_SEARCH_AND_API_FAIL_CLOSED/);
   assert.match(genericPublicScan, /publicHeadDescriptions/);
-  assert.match(governmentCard, /data-woek-raw-schema-proof="allowed"/);
+  assert.doesNotMatch(governmentCard, /data-woek-raw-schema-proof="allowed"/);
+  assert.doesNotMatch(source("app/components/recommendations/RecommendationSection.tsx"), /data-woek-raw-schema-proof="allowed"/);
   assert.match(genericPublicScan, /RAW_SCHEMA_TERMS_ONLY_IN_EXPLICIT_TECHNICAL_PROOF/);
+});
+
+test("UNKNOWN_PUBLIC_SYSTEM_VALUES_FAIL_CLOSED", () => {
+  assert.match(presentationLabels, /export function publicSystemLabel/);
+  assert.match(presentationLabels, /export function publicSystemValueLabel/);
+  assert.match(presentationLabels, /return systemValueLabels\[value\] \?\? null/);
+  assert.match(euCard, /publicSystemValueLabel\(record\.competence_scope\)/);
+  assert.match(euCard, /map\(publicIndicatorLabel\)/);
+  assert.doesNotMatch(euCard, /humanizeSystemValue\(record\.(?:competence_scope|legal_feasibility_status|legal_status|institutional_actor_role)\)/);
 });

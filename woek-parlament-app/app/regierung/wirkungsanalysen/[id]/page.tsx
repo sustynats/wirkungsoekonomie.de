@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { GovernmentImpactCase } from "@/app/components/government/GovernmentImpactCase";
+import { GovernmentImpactCase, GovernmentProcessSection } from "@/app/components/government/GovernmentImpactCase";
 import { historyClassificationLabels, impactCaseById, impactCaseVersions } from "@/lib/government/impact-cases";
 import { analysisUpdatesForImpactCase, evidenceEventsForImpactCase } from "@/lib/observatory/public-data";
-import { humanizeSystemValue } from "@/lib/presentation/labels";
+import { publicSystemLabel } from "@/lib/presentation/labels";
 
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
   const { id } = await params;
@@ -29,17 +29,18 @@ export default async function GovernmentImpactCasePage({ params }: { params: Pro
   return (
     <main className="section shell">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
-      <GovernmentImpactCase record={record} />
-      <section className="government-version-history" aria-labelledby="evidence-history-title">
+      <GovernmentImpactCase record={record} includeProcess={false} />
+      <section className="government-version-history" aria-labelledby="evidence-history-title" data-woek-evidence-history="published">
         <h2 id="evidence-history-title">Was hat diese Bewertung verändert?</h2>
-        {evidenceEvents.length ? <ol>{evidenceEvents.map((event) => <li key={event.evidence_event_id}><strong>{event.title}</strong><span>{event.observation_date} · {humanizeSystemValue(event.attribution_status)} · {event.what_changed_or_may_change}</span></li>)}</ol> : <p>Für diese Fassung ist kein fachlich freigegebenes Evidenzereignis als Auslöser einer Bewertungsänderung registriert.</p>}
+        {evidenceEvents.length ? <ol>{evidenceEvents.map((event) => { const attribution = publicSystemLabel(event.attribution_status); return <li key={event.evidence_event_id}><strong>{event.title}</strong><span>{event.observation_date}{attribution ? ` · ${attribution}` : ""} · {event.what_changed_or_may_change}</span></li>; })}</ol> : <p>Für diese Fassung ist kein fachlich freigegebenes Evidenzereignis als Auslöser einer Bewertungsänderung registriert.</p>}
         {analysisUpdates.length > 0 && <ul>{analysisUpdates.map((update) => <li key={update.analysis_version}><strong>Analyse {update.supersedes_analysis_version} → {update.analysis_version}:</strong> {update.public_change_summary}</li>)}</ul>}
       </section>
-      <section className="government-version-history" aria-labelledby="version-history-title">
+      <section className="government-version-history" aria-labelledby="version-history-title" data-woek-evidence-history="published">
         <h2 id="version-history-title">Versions- und Prüfverlauf</h2>
         <p>Frühere Ex-ante-Analysen bleiben erhalten. Spätere Beobachtungen überschreiben sie nicht.</p>
         {versions.length ? <ol>{versions.map((version) => <li key={`${version.analysis_version}-${version.source_hash}`}><strong>Fassung {version.analysis_version}</strong><span>{historyClassificationLabels[version.classification] ?? "fachlich dokumentierte Änderung"} · übernommen {new Intl.DateTimeFormat("de-DE", { dateStyle: "medium", timeStyle: "short" }).format(new Date(version.ingested_at))}</span></li>)}</ol> : <p><strong>Fassung {record.analysis_version}</strong> · Fachrelease {record.source_release.markdown_file} · Analysestand {new Intl.DateTimeFormat("de-DE", { dateStyle: "long" }).format(new Date(`${record.analysis_as_of}T12:00:00Z`))}</p>}
       </section>
+      <GovernmentProcessSection record={record} />
     </main>
   );
 }

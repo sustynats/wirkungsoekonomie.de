@@ -80,6 +80,7 @@ function InlineText({ value }: { value: string }) {
 export function FullAnalysisText({ source }: { source: FullAnalysisSource }) {
   const blocks = source.blocks ?? toBlocks(source.markdown ?? "");
   const chapters = blocks.filter((block): block is Extract<Block, { kind: "heading" }> => block.kind === "heading" && block.depth === 2);
+  const firstChapterIndex = blocks.findIndex((block) => block.kind === "heading" && block.depth === 2);
   return <section className="full-analysis-text" aria-labelledby="full-analysis-title">
     <header>
       <div><p className="eyebrow">Vollständige Fachanalyse</p><h2 id="full-analysis-title">Der freigegebene Ausgangstext – vollständig dokumentiert</h2><p>Die Kapitel unten entsprechen dem veröffentlichten Fachtext. Diese Darstellung ordnet ihn nur für die Webansicht; sie ersetzt oder verkürzt ihn nicht.</p></div>
@@ -88,7 +89,11 @@ export function FullAnalysisText({ source }: { source: FullAnalysisSource }) {
     <nav className="full-analysis-toc" aria-label="Inhaltsverzeichnis der vollständigen Fachanalyse"><strong>Direkt zu einem Kapitel</strong><ol>{chapters.map((chapter) => <li key={chapter.id}><a href={`#${chapter.id}`}>{humanizeSystemValue(chapter.text)}</a></li>)}</ol></nav>
     <div className="full-analysis-body">{blocks.map((block, index) => {
       if (block.kind === "heading") {
-        const Heading = block.depth === 2 ? "h3" : "h4";
+        // Some released Fachakten start with an H3 metadata section before
+        // their first H2 chapter. In the embedded web document that opening
+        // section is promoted by one visual level to avoid a semantic jump;
+        // wording and source order remain unchanged.
+        const Heading = block.depth === 2 || (block.depth === 3 && (firstChapterIndex === -1 || index < firstChapterIndex)) ? "h3" : "h4";
         return <Heading id={block.id} key={`${block.id}-${index}`}>{humanizeSystemValue(block.text)}</Heading>;
       }
       if (block.kind === "quote") return <blockquote key={`quote-${index}`}><InlineText value={block.text} /></blockquote>;
@@ -102,6 +107,8 @@ export function FullAnalysisText({ source }: { source: FullAnalysisSource }) {
       }
       if (block.kind === "figure") return <figure className="full-analysis-figure" key={`figure-${index}`}><img src={block.src} alt={humanizeSystemValue(block.alt)} />{block.caption ? <figcaption>{humanizeSystemValue(block.caption)}</figcaption> : null}</figure>;
       if (isMarkdownSeparatorOnly(block.text)) return null;
+      const technicalControl = block.text.match(/^`([^`]+)`$/);
+      if (technicalControl && !publicControlText(technicalControl[1])) return null;
       return <p key={`paragraph-${index}`}><InlineText value={block.text} /></p>;
     })}</div>
   </section>;

@@ -91,8 +91,12 @@ test("public maturity is rendered before process metadata on every preview famil
     "app/fachanalysen/page.tsx",
   ]) {
     const source = readFileSync(file, "utf8");
-    assert.match(source, /<PublicMaturity/, file);
-    assert.ok(source.indexOf("<PublicMaturity") < source.indexOf("data-woek-process-metadata"), file);
+    const renderedSource = file.endsWith("GovernmentImpactCase.tsx")
+      ? source.slice(source.indexOf("export function GovernmentImpactCase"))
+      : source;
+    const processMarker = file.endsWith("GovernmentImpactCase.tsx") ? "<GovernmentProcessSection" : "data-woek-process-metadata";
+    assert.match(renderedSource, /<PublicMaturity/, file);
+    assert.ok(renderedSource.indexOf("<PublicMaturity") < renderedSource.indexOf(processMarker), file);
   }
 });
 

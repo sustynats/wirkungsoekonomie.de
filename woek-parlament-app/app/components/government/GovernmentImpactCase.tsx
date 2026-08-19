@@ -16,7 +16,7 @@ import {
   type WoeKImpactCase,
 } from "@/lib/government/impact-cases";
 import { sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
-import { humanizeSystemValue, publicStructuredFieldLabel } from "@/lib/presentation/labels";
+import { humanizeSystemValue, publicNarrativeText, publicStructuredFieldLabel, publicSystemLabel } from "@/lib/presentation/labels";
 import { governmentPublicMaturity } from "@/lib/presentation/public-maturity";
 import { recommendationForImpactCase } from "@/lib/recommendations";
 
@@ -25,7 +25,8 @@ function referenceSet(record: WoeKImpactCase, key: "sdg_refs" | "sdg_plus_refs" 
 }
 
 function publicValue(value: unknown) {
-  return humanizeSystemValue(String(value));
+  const text = String(value);
+  return publicSystemLabel(text) ?? publicNarrativeText(text) ?? "Öffentliche Klartextzuordnung offen";
 }
 
 const impactOrderLabels: Record<string, string> = {
@@ -204,7 +205,15 @@ function FullSchemaDetails({ record }: { record: WoeKImpactCase }) {
   </>;
 }
 
-export function GovernmentImpactCase({ record, compact = false }: { record: PublicGovernmentImpactRecord; compact?: boolean }) {
+export function GovernmentProcessSection({ record }: { record: PublicGovernmentImpactRecord }) {
+  return <section className="government-process-meta" aria-label="Politischer und administrativer Verfahrensstand" data-woek-process-metadata>
+    <h3>Politischer und administrativer Prozess</h3>
+    <p><strong>Analysephase:</strong> {record.analysis_mode === "IMPACT_REALITY_CHECK" ? "mit Reality-Check-Stufe" : "Ex ante"}</p>
+    <p><strong>Bekannter Umsetzungsstand:</strong> {publicValue(record.implementation_status)}</p>
+  </section>;
+}
+
+export function GovernmentImpactCase({ record, compact = false, includeProcess = true }: { record: PublicGovernmentImpactRecord; compact?: boolean; includeProcess?: boolean }) {
   const fullRecord = fullSchemaRecord(record);
   const summary = record.impact_summary;
   const editorial = governmentEditorialProjection(record);
@@ -224,10 +233,11 @@ export function GovernmentImpactCase({ record, compact = false }: { record: Publ
   const maturity = governmentPublicMaturity(record, assessment, {
     recommendationAvailable: Boolean(recommendationForImpactCase(record.impact_case_id)),
   });
+  const Title = compact ? "h2" : "h1";
   return (
     <article className="government-impact-case" aria-labelledby={`impact-${record.impact_case_id}`} data-woek-preview-card="published">
       <header>
-        <h2 id={`impact-${record.impact_case_id}`}>{record.title}</h2>
+        <Title id={`impact-${record.impact_case_id}`}>{record.title}</Title>
         <OverviewAssessment compact={compact} assessment={assessment} />
         <PublicMaturity maturity={maturity} compact={compact} />
         {compact && <p className="eyebrow" data-woek-process-metadata>Analysephase · {record.analysis_mode === "IMPACT_REALITY_CHECK" ? "mit Reality-Check-Stufe" : "Ex ante"}</p>}
@@ -248,13 +258,7 @@ export function GovernmentImpactCase({ record, compact = false }: { record: Publ
 
         <RecommendationSection impactCaseId={record.impact_case_id} />
 
-        <section className="government-process-meta" aria-label="Politischer und administrativer Verfahrensstand" data-woek-process-metadata>
-          <h3>Politischer und administrativer Prozess</h3>
-          <p><strong>Analysephase:</strong> {record.analysis_mode === "IMPACT_REALITY_CHECK" ? "mit Reality-Check-Stufe" : "Ex ante"}</p>
-          <p><strong>Bekannter Umsetzungsstand:</strong> {publicValue(record.implementation_status)}</p>
-        </section>
-
-        {record.full_analysis_markdown && <details className="government-full-record government-technical-proof">
+        {record.full_analysis_markdown && <details className="government-full-record government-technical-proof" data-woek-substantive-impact="published">
           <summary>Vollständige, unveränderte Fachakte aufklappen</summary>
           <FullAnalysisText source={{
             title: record.title,
@@ -265,7 +269,7 @@ export function GovernmentImpactCase({ record, compact = false }: { record: Publ
           }} />
         </details>}
 
-        <section aria-labelledby={`sources-${record.impact_case_id}`}>
+        <section aria-labelledby={`sources-${record.impact_case_id}`} data-woek-source-layer="published">
           <h3 id={`sources-${record.impact_case_id}`}>Quellen nach Funktion</h3>
           <div className="government-source-groups">
             <SourceList title="Amtliche Faktenquellen" sources={record.official_fact_sources} empty="Keine separate URL im kompakten Datensatz; die vollständige Fachakte dokumentiert die Quellenbasis." />
@@ -275,33 +279,8 @@ export function GovernmentImpactCase({ record, compact = false }: { record: Publ
           <p className="government-method-meta">Analyseversion {record.analysis_version} · Analysestand {record.analysis_as_of} · {record.record_profile === "FULL_SCHEMA_2_0_1" ? "Vollschema 2.0.1" : "kompakte Fachübergabe, inhaltlich unverändert"}</p>
         </section>
 
-        <details className="government-technical-proof" data-woek-raw-schema-proof="allowed">
-          <summary>Technischen Publikationsnachweis ansehen</summary>
-          <dl className="government-impact-summary">
-            <div><dt>ImpactCase-ID</dt><dd>{record.impact_case_id}</dd></div>
-            <div><dt>Datensatzprofil</dt><dd>{publicValue(record.record_profile)} · {publicValue(record.schema_validation)}{record.schema_id ? ` · ${record.schema_id}` : ""}</dd></div>
-            <div><dt>Analysemodus</dt><dd>{publicValue(record.analysis_mode)}</dd></div>
-            <div><dt>Fachstatus</dt><dd>{publicValue(record.publication_analysis_status)}</dd></div>
-            <div><dt>Publikationsstatus</dt><dd>{publicValue(record.publication_status)}</dd></div>
-            <div><dt>Materialität</dt><dd>{publicValue(record.materiality)}</dd></div>
-            <div><dt>Fachliche Charakterisierung</dt><dd>{publicValue(record.overall_character)}</dd></div>
-            <div><dt>Richtungscode</dt><dd>{publicValue(record.primary_direction)}</dd></div>
-            <div><dt>Evidenzcode</dt><dd>{publicValue(record.evidence_level)}</dd></div>
-            <div><dt>Umsetzungsstatus</dt><dd>{publicValue(record.implementation_status)}</dd></div>
-            <div><dt>Schutzprüfung</dt><dd>{publicValue(record.boundary_status)}</dd></div>
-            <div><dt>Reality-Check-Code</dt><dd>{publicValue(record.reality_check_status)}</dd></div>
-            <div><dt>Empfehlungsstatus</dt><dd>{publicValue(record.recommendation_status)}</dd></div>
-            <div><dt>Strukturierungsgrad</dt><dd>{publicValue(record.public_analysis_depth)}</dd></div>
-            <div><dt>Kompetenzprüfung</dt><dd>{publicValue(record.competence_review_status)}: {publicValue(record.competence_status)}</dd></div>
-            <div><dt>Zentraler Hebel</dt><dd>{record.impact_summary.central_lever || "im kompakten Datensatz nicht separat strukturiert"}</dd></div>
-            <div><dt>Messpriorität</dt><dd>{record.impact_summary.measurement_priority || "im kompakten Datensatz nicht separat strukturiert"}</dd></div>
-            <div><dt>Fachquelle</dt><dd>{record.source_release.jsonl_file} · SHA-256 {record.source_release.jsonl_sha256}</dd></div>
-            <div><dt>Menschenlesbare Fachakte</dt><dd>{record.source_release.markdown_file} · SHA-256 {record.source_release.markdown_sha256}</dd></div>
-            <div><dt>Fallauszug</dt><dd>SHA-256 {record.source_release.case_markdown_sha256}</dd></div>
-            {record.editorial_evidence_overlay && <div><dt>Editorial-/Evidenz-Overlay</dt><dd>{record.editorial_evidence_overlay.source_file} · {publicValue(record.editorial_evidence_overlay.fach_status)} · SHA-256 {record.editorial_evidence_overlay.source_sha256}</dd></div>}
-          </dl>
-          {record.linked_government_action_ids.length ? <div><h4>Verknüpfte GovernmentActions</h4><ul>{record.linked_government_action_ids.map((id) => <li key={id}>{id}</li>)}</ul></div> : <p>Keine belastbar aufgelöste GovernmentAction-Verknüpfung veröffentlicht.</p>}
-        </details>
+        {includeProcess && <GovernmentProcessSection record={record} />}
+
 
       </>}
       {compact && <Link className="text-link" href={`/regierung/wirkungsanalysen/${encodeURIComponent(record.impact_case_id)}`}>Wirkungspfade, Begründung und vollständige Fachakte öffnen</Link>}

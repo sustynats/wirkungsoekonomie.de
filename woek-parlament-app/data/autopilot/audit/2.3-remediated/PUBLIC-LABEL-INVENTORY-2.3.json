@@ -1,0 +1,1373 @@
+{
+  "schema_version": "woek-public-label-inventory-1.0",
+  "generated_at": "2026-08-19T03:56:07.781Z",
+  "status": "PASS_WITH_FIELD_LEVEL_FAIL_CLOSED",
+  "reviewed_public_label_count": 40,
+  "missing_mapping_count": 232,
+  "missing_mapping_behavior": "FIELD_SUPPRESSED_REVIEW_REQUIRED",
+  "code_must_not_translate_unknown_fach_values": true,
+  "mapped": [
+    {
+      "field": "analysis_mode",
+      "value": "IMPACT_POTENTIAL_EX_ANTE",
+      "label": "Wirkungspotenzial vor der Entscheidung"
+    },
+    {
+      "field": "analysis_mode",
+      "value": "IMPACT_POTENTIAL_WITH_IMPLEMENTATION_OBSERVATION",
+      "label": "Wirkungspotenzial mit Beobachtung der Umsetzung"
+    },
+    {
+      "field": "boundary_status",
+      "value": "PASS",
+      "label": "bestanden"
+    },
+    {
+      "field": "boundary_status",
+      "value": "PASS_WITH_WATCH",
+      "label": "ohne festgestellte Grenzverletzung, weiter beobachten"
+    },
+    {
+      "field": "boundary_status",
+      "value": "WATCH",
+      "label": "Beobachtung erforderlich"
+    },
+    {
+      "field": "boundary_status",
+      "value": "WATCH_HIGH",
+      "label": "hohe Schutz- und Beobachtungsrelevanz"
+    },
+    {
+      "field": "competence_scope",
+      "value": "EU_SHARED",
+      "label": "geteilte EU-Zuständigkeit"
+    },
+    {
+      "field": "competence_scope",
+      "value": "EU_SHARED_INTERNAL_MARKET_ENVIRONMENT_INDUSTRY",
+      "label": "Geteilte EU-Zuständigkeit - Binnenmarkt, Umwelt und Industrie"
+    },
+    {
+      "field": "competence_scope",
+      "value": "EU_SHARED_MIXED",
+      "label": "Gemischte geteilte EU-Zuständigkeit"
+    },
+    {
+      "field": "competence_scope",
+      "value": "MIXED_EU_SUPPORTING_EXISTING_DIGITAL_INTERNAL_MARKET_RULES",
+      "label": "Gemischte EU-Zuständigkeit mit unterstützender Rolle auf Grundlage bestehender Binnenmarkt- und Digitalregeln"
+    },
+    {
+      "field": "implementation_route",
+      "value": "COMMISSION_STRATEGY",
+      "label": "Strategie der Europäischen Kommission"
+    },
+    {
+      "field": "implementation_route",
+      "value": "DSA_EXISTING_ENFORCEMENT",
+      "label": "Vollzug des bestehenden Digital Services Act"
+    },
+    {
+      "field": "implementation_route",
+      "value": "EU_BUDGET_OR_FUNDING",
+      "label": "EU-Haushalt oder EU-Förderung"
+    },
+    {
+      "field": "implementation_route",
+      "value": "EU_COLEGISLATION",
+      "label": "Ordentliches Gesetzgebungsverfahren"
+    },
+    {
+      "field": "implementation_route",
+      "value": "MEMBER_STATE_ADMINISTRATION_REQUIRED",
+      "label": "Umsetzung durch Verwaltungen der Mitgliedstaaten erforderlich"
+    },
+    {
+      "field": "implementation_route",
+      "value": "MEMBER_STATE_AND_CIVIL_SOCIETY_COORDINATION",
+      "label": "Koordination mit Mitgliedstaaten und Zivilgesellschaft"
+    },
+    {
+      "field": "implementation_route",
+      "value": "MEMBER_STATE_PROCUREMENT_AND_PERMITTING",
+      "label": "Umsetzung durch die Mitgliedstaaten - insbesondere Beschaffung und Genehmigung"
+    },
+    {
+      "field": "implementation_route",
+      "value": "REGIONAL_LOCAL_IMPLEMENTATION",
+      "label": "Regionale und lokale Umsetzung"
+    },
+    {
+      "field": "institutional_actor_role",
+      "value": "COMMISSION_EXECUTIVE_STRATEGIC",
+      "label": "strategische Exekutivrolle der Europäischen Kommission"
+    },
+    {
+      "field": "institutional_actor_role",
+      "value": "OPEN",
+      "label": "Wirkungseinordnung noch offen"
+    },
+    {
+      "field": "key_indicators",
+      "value": "civil_society_operability",
+      "label": "Handlungsfähigkeit der Zivilgesellschaft"
+    },
+    {
+      "field": "key_indicators",
+      "value": "eu_manufacturing_capacity",
+      "label": "Zusätzliche industrielle Produktionskapazität in der EU"
+    },
+    {
+      "field": "key_indicators",
+      "value": "false_classification_appeals",
+      "label": "Einsprüche gegen Fehlklassifikationen"
+    },
+    {
+      "field": "key_indicators",
+      "value": "fdi_quality",
+      "label": "Qualität ausländischer Direktinvestitionen, einschließlich Wissens- und Technologietransfer"
+    },
+    {
+      "field": "key_indicators",
+      "value": "fimi_detection_time",
+      "label": "Zeit bis zur Erkennung koordinierter Informationsmanipulation"
+    },
+    {
+      "field": "key_indicators",
+      "value": "fundamental_rights_cases",
+      "label": "Grundrechtsbeschwerden und -verfahren"
+    },
+    {
+      "field": "key_indicators",
+      "value": "independent_oversight",
+      "label": "Unabhängige Aufsicht"
+    },
+    {
+      "field": "key_indicators",
+      "value": "low_carbon_material_share",
+      "label": "Anteil CO2-armer Materialien in der betroffenen Beschaffung"
+    },
+    {
+      "field": "key_indicators",
+      "value": "material_carbon_intensity",
+      "label": "Reale CO2-Intensität der eingesetzten Materialien"
+    },
+    {
+      "field": "key_indicators",
+      "value": "media_pluralism",
+      "label": "Medienpluralismus"
+    },
+    {
+      "field": "key_indicators",
+      "value": "network_diffusion_after_response",
+      "label": "Ausbreitung eines Manipulationsnetzwerks nach einer Reaktion"
+    },
+    {
+      "field": "key_indicators",
+      "value": "permit_duration_with_protection",
+      "label": "Genehmigungsdauer bei gleichbleibenden Schutzstandards"
+    },
+    {
+      "field": "key_indicators",
+      "value": "public_procurement_cost",
+      "label": "Kosten der öffentlichen Beschaffung / Total Cost of Ownership"
+    },
+    {
+      "field": "key_indicators",
+      "value": "supply_concentration",
+      "label": "Importkonzentration und Lieferkettenabhängigkeit"
+    },
+    {
+      "field": "legal_feasibility_status",
+      "value": "EU_ROUTE_WITH_CONSTRAINTS",
+      "label": "EU-Umsetzungsweg mit rechtlichen und administrativen Anforderungen"
+    },
+    {
+      "field": "legal_feasibility_status",
+      "value": "EU_ROUTE_WITH_HIGH_FUNDAMENTAL_RIGHTS_CONSTRAINTS",
+      "label": "EU-Umsetzungsweg mit hohen grundrechtlichen Anforderungen"
+    },
+    {
+      "field": "legal_feasibility_status",
+      "value": "REQUIRES_COLEGISLATION",
+      "label": "Ordentliches Gesetzgebungsverfahren erforderlich"
+    },
+    {
+      "field": "legal_status",
+      "value": "STRATEGY_AND_COMMUNICATION",
+      "label": "Strategie und Mitteilung der Europäischen Kommission"
+    },
+    {
+      "field": "reality_check_status",
+      "value": "NOT_YET_OBSERVABLE",
+      "label": "Noch nicht beobachtbar"
+    },
+    {
+      "field": "reality_check_status",
+      "value": "OBSERVATION_ONLY",
+      "label": "Beobachtung ohne Zurechnung"
+    }
+  ],
+  "missing": [
+    {
+      "field": "analysis_mode",
+      "value": "EFFECT_AND_REALITY_CHECK_EARLY",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "analysis_mode",
+      "value": "IMPACT_POTENTIAL_EX_ANTE_GOVERNANCE",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "analysis_mode",
+      "value": "IMPACT_POTENTIAL_EX_ANTE_PORTFOLIO",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "analysis_mode",
+      "value": "IMPACT_POTENTIAL_EX_ANTE_STRATEGY",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "analysis_mode",
+      "value": "IMPACT_POTENTIAL_EX_ANTE_WITH_IMPLEMENTATION_BASELINE",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "analysis_mode",
+      "value": "IMPACT_POTENTIAL_EX_ANTE_WITH_POLICY_IMPLEMENTATION",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "analysis_mode",
+      "value": "IMPACT_POTENTIAL_WITH_EARLY_IMPLEMENTATION",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "analysis_mode",
+      "value": "IMPACT_POTENTIAL_WITH_EARLY_IMPLEMENTATION_OBSERVATION",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "analysis_mode",
+      "value": "IMPACT_POTENTIAL_WITH_IMPLEMENTATION_PREPARATION",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "boundary_status",
+      "value": "METHOD_WATCH",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "boundary_status",
+      "value": "OPEN_PORTFOLIO",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "boundary_status",
+      "value": "PASS_WITH_COST_WATCH",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "boundary_status",
+      "value": "PASS_WITH_PRIVACY_WATCH",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "boundary_status",
+      "value": "WATCH_CONSUMER_PROTECTION",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "boundary_status",
+      "value": "WATCH_HIGH_POSSIBLE_BLOCK",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "competence_scope",
+      "value": "EU_BUDGET_SPECIAL_PROCEDURE",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "competence_scope",
+      "value": "EU_COORDINATING_SUPPORTING_CROSS_CUTTING",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "competence_scope",
+      "value": "EU_SHARED_AFSJ_MEMBER_STATE_SECURITY_CORE",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "competence_scope",
+      "value": "EU_SHARED_CAP_STRONG_EU_ROLE_MEMBER_STATE_IMPLEMENTATION",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "competence_scope",
+      "value": "EU_SHARED_ENERGY_INTERNAL_MARKET",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "competence_scope",
+      "value": "EU_SHARED_INTERNAL_MARKET",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "competence_scope",
+      "value": "EU_SHARED_INTERNAL_MARKET_ENVIRONMENT_TRADE_RESEARCH_MEMBER_STATE_INTERFACES",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "competence_scope",
+      "value": "EU_SHARED_INTERNAL_MARKET_FINANCIAL_SERVICES",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "competence_scope",
+      "value": "EU_SHARED_INTERNAL_MARKET_PUBLIC_HEALTH_SUPPORT",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "competence_scope",
+      "value": "EU_SUPPORTING_COORDINATING_MEMBER_STATE_CORE",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "competence_scope",
+      "value": "EU_SUPPORTING_DIGITAL_SINGLE_MARKET_INTERSECTION_MEMBER_STATE_SERVICES",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "competence_scope",
+      "value": "EU_SUPPORTING_SHARED_COMPONENTS_MEMBER_STATE_REGIONAL_LOCAL_CORE",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "competence_scope",
+      "value": "MIXED_EU_SUPPORTING_CIVIL_PROTECTION_SHARED_COMPONENTS",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "implementation_route",
+      "value": "AGENCY_COOPERATION",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "implementation_route",
+      "value": "CAP_BUDGET",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "implementation_route",
+      "value": "COMMISSION_ACTION_PLAN",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "implementation_route",
+      "value": "DIRECTIVE_REQUIRING_TRANSPOSITION",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "implementation_route",
+      "value": "DIRECTLY_APPLICABLE_EU_RULES",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "implementation_route",
+      "value": "EU_CIVIL_PROTECTION_COORDINATION",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "implementation_route",
+      "value": "EU_ENERGY_MARKET_ACTIONS",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "implementation_route",
+      "value": "EU_FUNDING",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "implementation_route",
+      "value": "EU_LEGISLATION",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "implementation_route",
+      "value": "EU_POLICY_MAINSTREAMING",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "implementation_route",
+      "value": "GRID_AND_INTERCONNECTOR_INVESTMENT",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "implementation_route",
+      "value": "INFRASTRUCTURE",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "implementation_route",
+      "value": "MEMBER_STATE_ADAPTATION",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "implementation_route",
+      "value": "MEMBER_STATE_HEALTH_SYSTEMS",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "implementation_route",
+      "value": "MEMBER_STATE_IMPLEMENTATION",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "implementation_route",
+      "value": "MEMBER_STATE_INCENTIVES",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "implementation_route",
+      "value": "MEMBER_STATE_LAW_ENFORCEMENT",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "implementation_route",
+      "value": "MEMBER_STATE_LEGISLATION_REQUIRED",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "implementation_route",
+      "value": "MEMBER_STATE_PREPAREDNESS",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "implementation_route",
+      "value": "MEMBER_STATE_REGIONAL_LOCAL_IMPLEMENTATION",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "implementation_route",
+      "value": "MEMBER_STATE_REGULATORY_IMPLEMENTATION",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "implementation_route",
+      "value": "MEMBER_STATE_SOCIAL_POLICY",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "implementation_route",
+      "value": "MEMBER_STATE_STRATEGIC_IMPLEMENTATION",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "implementation_route",
+      "value": "MEMBER_STATE_TAX_PENSION_INTERFACES",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "implementation_route",
+      "value": "MEMBER_STATE_VOLUNTARY_COORDINATION",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "implementation_route",
+      "value": "MFF_SPECIAL_PROCEDURE",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "implementation_route",
+      "value": "PROCUREMENT",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "implementation_route",
+      "value": "PUBLIC_PROCUREMENT_AND_OPEN_SOURCE",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "implementation_route",
+      "value": "RECOMMENDATION_OR_SOFT_LAW",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "implementation_route",
+      "value": "RESCEU_CAPACITY",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "implementation_route",
+      "value": "SECTORAL_COLEGISLATION",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "implementation_route",
+      "value": "SOFT_LAW",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "implementation_route",
+      "value": "STATE_AID_RULES",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "implementation_route",
+      "value": "STRATEGIC_PROJECTS",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "implementation_route",
+      "value": "STRATEGY",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "implementation_route",
+      "value": "SUPERVISORY_COORDINATION",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "institutional_actor_role",
+      "value": "COMMISSION_EXECUTIVE_AND_INITIATOR",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "institutional_actor_role",
+      "value": "COMMISSION_EXECUTIVE_STRATEGIC + MEMBER_STATE_IMPLEMENTATION",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "institutional_actor_role",
+      "value": "COMMISSION_INITIATOR",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "institutional_actor_role",
+      "value": "COMMISSION_INITIATOR_THEN_EU_COLEGISLATION",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "additional_capacity",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "additional_investment",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "additionality",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "administrative_cost",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "affordable_housing_units",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "ai_adoption_outcomes",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "ai_incidents",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "appeal_reversal_rate",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "arope",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "bilateral_data_requests",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "capital_to_transition",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "charging_access",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "child_poverty",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "construction_cost",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "consumer_harm",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "copper_switch_off_without_equivalent_access",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "cost_per_completed_case",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "crisis_response_time",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "critical_import_dependency",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "critical_service_downtime",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "critical_service_outages",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "critical_shortages",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "cross_border_investigation_time",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "cross_border_investment",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "cyber_outages",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "data_misuse",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "datacentre_energy_intensity",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "datacentre_water_intensity",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "decisions_changed_by_long_term_review",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "detention_duration",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "digital_exclusion",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "dimension_weight_transparency",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "displacement",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "distributional_savings",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "dpa_findings",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "duration_cost",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "ecological_minimum_flows",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "employment_reskilling",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "end_user_prices",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "energy_intensity",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "energy_poverty",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "energy_water_footprint",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "equity_financing",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "eu_battery_software_value_added",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "eurodac_errors",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "exercise_gap_closure",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "exit_costs",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "external_method_evaluation",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "false_positives",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "farm_exit_entry",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "farm_real_income",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "fees",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "final_allocations",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "final_return_orders",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "fleet_emissions",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "fossil_import_dependency",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "fundamental_rights_incidents",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "funding_additionality",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "geographic_diversification",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "ghg_nutrient_intensity",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "gigabit_coverage",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "grid_costs",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "groundwater_status",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "help_access",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "homelessness",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "household_energy_prices",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "household_participation_distribution",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "household_preparedness_by_group",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "housing_cost_burden",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "industrial_energy_prices",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "interconnector_use",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "investment_share",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "judicial_reversals",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "lifecycle_resource_impact",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "long_term_operating_costs",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "long_term_poverty",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "low_flow_duration",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "mandatory_and_voluntary_reporting_coverage",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "market_concentration",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "material_deprivation",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "member_state_adoption",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "mental_health_school_participation",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "national_liability_fragmentation",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "network_downtime",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "network_losses",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "open_source_adoption",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "outcomes_by_programme",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "oversight_quality",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "permit_duration",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "platform_response_time",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "pollutant_concentrations",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "prevention_effectiveness",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "privacy_incidents",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "procedure_duration",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "procurement_cost_vs_outage_cost",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "producer_price_share",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "project_delays",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "raw_material_dependency",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "real_business_investment",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "real_compliance_costs",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "reception_conditions",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "regional_distribution",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "regional_investment",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "reintegration_stability",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "renewable_share",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "repeat_bullying",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "resceu_capacity",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "rights_and_privacy_findings",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "scaleup_finance",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "secondary_movements",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "service_access",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "skills_distribution",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "sme_compute_access",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "soil_water_biodiversity_status",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "solidarity_distribution",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "stock_rotation_waste",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "stockpile_availability",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "subsidy_additionality",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "supplier_concentration",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "supply_chain_incidents",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "time_to_support",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "treatment_interruptions",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "use_in_impact_assessments",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "vacancy",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "vehicle_battery_cost",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "voluntary_forced_return",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "voluntary_standard_uptake",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "vulnerable_group_protection",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "warm_rent_after_renovation",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "warning_coverage",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "water_affordability",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "water_withdrawal_by_basin",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "wholesale_volatility",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "yield_resilience",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "youth_recommendation_uptake",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "key_indicators",
+      "value": "zev_share",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "legal_feasibility_status",
+      "value": "CLEAR_EU_ROUTE_WITH_FUNDAMENTAL_RIGHTS_CONSTRAINTS",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "legal_feasibility_status",
+      "value": "CLEAR_EU_ROUTE_WITH_LIMITED_DIRECT_BINDING_POWER",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "legal_feasibility_status",
+      "value": "CLEAR_EU_ROUTE_WITH_MEMBER_STATE_DEPENDENCY",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "legal_feasibility_status",
+      "value": "CLEAR_EU_SUPPORTING_ROUTE_WITH_MEMBER_STATE_DEPENDENCY",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "legal_feasibility_status",
+      "value": "CLEAR_SUPPORTING_ROUTE_WITH_DATA_PROTECTION_CONSTRAINTS",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "legal_feasibility_status",
+      "value": "EU_ROUTE_WITH_FUNDAMENTAL_RIGHTS_AND_NATIONAL_SECURITY_CONSTRAINTS",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "legal_feasibility_status",
+      "value": "EU_ROUTE_WITH_LIMITED_DIRECT_HOUSING_COMPETENCE",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "legal_feasibility_status",
+      "value": "EU_ROUTE_WITH_MEMBER_STATE_AND_EMERGENCY_GOVERNANCE_CONSTRAINTS",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "legal_feasibility_status",
+      "value": "EU_ROUTE_WITH_MEMBER_STATE_DEPENDENCY",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "legal_feasibility_status",
+      "value": "FORMALLY_ADOPTED_WITH_MEMBER_STATE_TRANSPOSITION",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "legal_feasibility_status",
+      "value": "REQUIRES_COLEGISLATION_AND_FUNDAMENTAL_RIGHTS_REVIEW",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "legal_feasibility_status",
+      "value": "REQUIRES_UNANIMITY_OR_SPECIAL_PROCEDURE",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "legal_status",
+      "value": "ADOPTED_DIRECTIVE_EU_2026_470",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "legal_status",
+      "value": "COMMISSION_ACTION_PLAN_ADOPTED",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "legal_status",
+      "value": "COMMISSION_ACTION_PLAN_IMPLEMENTATION",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "legal_status",
+      "value": "COMMISSION_PLAN_IMPLEMENTATION",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "legal_status",
+      "value": "COMMISSION_PROPOSAL_NEGOTIATION",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "legal_status",
+      "value": "COMMISSION_PROPOSAL_ONGOING",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "legal_status",
+      "value": "COMMISSION_STRATEGY_ADOPTED",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "legal_status",
+      "value": "COMMISSION_STRATEGY_IMPLEMENTATION",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "legal_status",
+      "value": "COMMISSION_VISION_ADOPTED",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "legal_status",
+      "value": "IN_FORCE_AND_APPLICABLE_FROM_JUNE_2026",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "legal_status",
+      "value": "MIXED_ACTION_PLAN_AND_FOLLOWUP_MEASURES",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "legal_status",
+      "value": "MIXED_PACKAGE_STRATEGIES_AND_PROPOSALS",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "legal_status",
+      "value": "PROPOSAL_2026_0068_COD_ONGOING",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "reality_check_status",
+      "value": "EARLY_IMPLEMENTATION",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "reality_check_status",
+      "value": "EARLY_IMPLEMENTATION_NOT_YET_ATTRIBUTABLE",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    },
+    {
+      "field": "reality_check_status",
+      "value": "EARLY_OBSERVATION",
+      "publication_status": "FIELD_SUPPRESSED_REVIEW_REQUIRED"
+    }
+  ]
+}

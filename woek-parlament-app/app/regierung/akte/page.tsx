@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { GovernmentActionCard } from "@/app/components/government/GovernmentActionCard";
 import { actionTypeLabels, getGovernmentPublicData } from "@/lib/government/public-data";
+import { searchableOfficialIdentifierText } from "@/lib/government/official-identifiers";
 
 export const metadata: Metadata = { title: "Regierungsakte" };
 
@@ -15,7 +16,7 @@ export default async function GovernmentActionsPage({ searchParams }: { searchPa
   const theme = String(params.thema ?? "");
   const { actions } = getGovernmentPublicData();
   const filtered = actions.filter((action) => {
-    const haystack = [action.title, ...action.responsible_institutions, ...Object.values(action.official_identifiers).flat()].join(" ").toLocaleLowerCase("de");
+    const haystack = [action.title, ...action.responsible_institutions, searchableOfficialIdentifierText(action.official_identifiers)].join(" ").toLocaleLowerCase("de");
     const themeMatch = !theme || (themeTerms[theme] ?? []).some((term) => haystack.includes(term));
     return (!query || haystack.includes(query)) && (!type || action.action_type === type) && themeMatch;
   });

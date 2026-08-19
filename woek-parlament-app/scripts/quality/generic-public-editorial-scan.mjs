@@ -67,6 +67,24 @@ const controlStylePresentation = [
   /\b(?:Analysis Mode|Boundary Review)\b/i,
   /\b(?:Status|Analysemodus|Gesamtcharakter|Reality-?Check(?:-Status)?|Boundary Status|Prüfung von Schutz- und Wirkungsgrenzen)\s*=\s*/i,
 ];
+const unreviewedPublicLabels = [
+  /Official proposal source; Ex ante causal hypothesis requires validation/i,
+  /Decision context source only; Analytical causal hypothesis requires validation/i,
+  /Mixed eu supporting existing digital internal market rules/i,
+  /Eu shared mixed/i,
+  /Eu route with high fundamental rights constraints/i,
+  /Commission executive strategic/i,
+  /Strategy and communication/i,
+  /Fimi detection time/i,
+  /Network diffusion after response/i,
+  /False classification appeals/i,
+  /Independent oversight/i,
+  /Media pluralism/i,
+  /Civil society operability/i,
+  /Fundamental rights cases/i,
+  /Impact potential with implementation observation/i,
+  /Watch high/i,
+];
 const fieldFailures = [];
 for (const entry of projections) {
   for (const [field, value] of Object.entries(entry.fields)) {
@@ -100,6 +118,10 @@ function publicHeadDescriptions(html) {
   });
 }
 
+function publicStructuredScripts(html) {
+  return [...html.matchAll(/<script\b[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/gi)].map((match) => match[1]);
+}
+
 function sourceSlug(url) {
   return `quelle-${createHash("sha256").update(new URL(url).toString()).digest("hex").slice(0, 16)}`;
 }
@@ -118,12 +140,15 @@ if (baseUrl) {
     "/", "/bevorstehend", "/entscheidungen", "/wirkungsfaelle", "/regierung", "/regierung/wirkungsanalysen",
     "/eu", "/eu/wirkungsfaelle", "/laender", "/laender/sachsen-anhalt", "/fachanalysen", "/mandat-und-praxis", "/suche", ...projections.map((entry) => entry.route),
     ...sampleSources.map((url) => `/quellen/${sourceSlug(url)}`),
+    `/regierung/akte/${encodeURIComponent("govaction:dip:325252")}`,
+    `/regierung/akte/${encodeURIComponent("govaction:breg-cabinet:2435812:top:5")}`,
+    `/regierung/akte/${encodeURIComponent("govaction:breg-cabinet:2404212:top:7")}`,
+    `/regierung/akte/${encodeURIComponent("govaction:dip:329388")}`,
   ])];
   for (const route of routes) {
     const response = await fetch(`${baseUrl}${route}`, { headers, redirect: "manual" });
     const html = response.status === 200 ? await response.text() : "";
-    const publicLanguageHtml = html.replace(/<details\b[^>]*data-woek-raw-schema-proof="allowed"[^>]*>[\s\S]*?<\/details>/gi, " ");
-    const text = visibleText(publicLanguageHtml);
+    const text = visibleText(html);
     const auditableText = text.replace(/https:\/\/\S+/g, " ");
     const failures = [];
     if (response.status !== 200) failures.push(`HTTP_${response.status}`);
@@ -132,6 +157,8 @@ if (baseUrl) {
     if (machineResidue.some((pattern) => pattern.test(auditableText))) failures.push("MACHINE_VALUE_VISIBLE");
     if (internalSchemaProjection.test(auditableText)) failures.push("GENERIC_INTERNAL_SCHEMA_FIELD_LABEL_VISIBLE");
     if (controlStylePresentation.some((pattern) => pattern.test(auditableText))) failures.push("CONTROL_STYLE_PRESENTATION_VISIBLE");
+    if (unreviewedPublicLabels.some((pattern) => pattern.test(auditableText))) failures.push("UNREVIEWED_PUBLIC_LABEL_VISIBLE");
+    if (/\[object Object\]/.test(auditableText)) failures.push("OBJECT_STRING_VISIBLE");
     const previewCards = (html.match(/data-woek-preview-card=/g) ?? []).length;
     const publishedPreviewCards = (html.match(/data-woek-preview-card="published"/g) ?? []).length;
     const factOnlyPreviewCards = (html.match(/data-woek-preview-card="fact-only"/g) ?? []).length;
@@ -142,13 +169,30 @@ if (baseUrl) {
     const firstFactOnlyStatus = html.indexOf("data-woek-fact-only-status=");
     const firstMaturity = html.indexOf("data-woek-public-maturity=");
     const firstProcess = html.indexOf("data-woek-process-metadata");
+    const substantiveLayers = [
+      html.indexOf("data-woek-substantive-impact=\"published\""),
+      html.indexOf("data-woek-recommendation-layer=\"published\""),
+      html.indexOf("data-woek-source-layer=\"published\""),
+      html.indexOf("data-woek-evidence-history=\"published\""),
+    ].filter((value) => value >= 0);
     const firstPublicLead = [firstAssessment, firstFactOnlyStatus, firstMaturity].filter((value) => value >= 0).sort((left, right) => left - right)[0] ?? -1;
     if (publishedPreviewCards > previewAssessments) failures.push("PREVIEW_WITHOUT_ASSESSMENT");
     if (factOnlyPreviewCards > factOnlyStatuses) failures.push("FACT_ONLY_WITHOUT_CLEAR_STATUS");
     if (previewAssessments > assessmentIcons) failures.push("ASSESSMENT_WITHOUT_ICON");
     if (previewCards > 0 && firstProcess >= 0 && (firstPublicLead < 0 || firstPublicLead > firstProcess)) failures.push("PROCESS_PRECEDES_PUBLICATION_STATUS");
+    if (/^\/(?:regierung\/wirkungsanalysen|eu\/wirkungsfaelle|wirkungsfaelle|entscheidungen)\//.test(route)
+      && firstProcess >= 0
+      && substantiveLayers.some((index) => index > firstProcess)) failures.push("PROCESS_PRECEDES_SUBSTANTIVE_IMPACT_LAYER");
     const headDescriptions = publicHeadDescriptions(html);
+    const headText = headDescriptions.join(" ");
+    if (rawEnum.test(headText) || rawPublicTerm.test(headText)) failures.push("RAW_ENUM_IN_METADATA");
+    if (machineResidue.some((pattern) => pattern.test(headText))) failures.push("MACHINE_VALUE_IN_METADATA");
+    if (unreviewedPublicLabels.some((pattern) => pattern.test(headText))) failures.push("UNREVIEWED_PUBLIC_LABEL_IN_METADATA");
     if (factOnlyStatuses > 0 && previewAssessments === 0 && headDescriptions.some((description) => /Wirkungspotenzial|Wirkungsrisiko|Zielkonflikt|Resilienz stärkt|schwächt/i.test(description))) failures.push("UNSUPPORTED_FACH_METADATA");
+    const structuredDataText = publicStructuredScripts(html).join(" ");
+    if (rawEnum.test(structuredDataText) || rawPublicTerm.test(structuredDataText)) failures.push("RAW_ENUM_IN_STRUCTURED_DATA");
+    if (machineResidue.some((pattern) => pattern.test(structuredDataText))) failures.push("MACHINE_VALUE_IN_STRUCTURED_DATA");
+    if (unreviewedPublicLabels.some((pattern) => pattern.test(structuredDataText))) failures.push("UNREVIEWED_PUBLIC_LABEL_IN_STRUCTURED_DATA");
     routeChecks.push({
       route,
       http_status: response.status,
@@ -161,6 +205,7 @@ if (baseUrl) {
       public_open_states: (html.match(/class="open-state"/g) ?? []).length,
       explicit_technical_proofs_excluded_from_language_scan: (html.match(/data-woek-raw-schema-proof="allowed"/g) ?? []).length,
       head_descriptions_checked: headDescriptions.length,
+      structured_data_blocks_checked: publicStructuredScripts(html).length,
       status: failures.length ? "FAIL" : "PASS",
       failures,
     });
@@ -198,7 +243,7 @@ const gates = {
   EVIDENCE_SUMMARY_IS_CASE_SPECIFIC: fieldFailures.every((value) => !value.includes("evidence_summary")) && similarityFailures.every((value) => value.field !== "evidence_summary"),
   ASSESSMENT_AND_IMPACT_CORE_HAVE_DISTINCT_FUNCTION: fieldFailures.every((value) => !value.includes("ASSESSMENT_EQUALS_IMPACT_CORE")),
   NO_GENERIC_PUBLIC_EDITORIAL_TEXT: noGeneric,
-  NO_RAW_INTERNAL_ENUMS_IN_PUBLIC_UI: fieldFailures.every((value) => !value.includes("RAW_ENUM")) && liveFailures.every((value) => !value.failures.includes("RAW_ENUM_VISIBLE")),
+  NO_RAW_INTERNAL_ENUMS_IN_PUBLIC_UI: fieldFailures.every((value) => !value.includes("RAW_ENUM")) && liveFailures.every((value) => !value.failures.includes("RAW_ENUM_VISIBLE") && !value.failures.includes("UNREVIEWED_PUBLIC_LABEL_VISIBLE")),
   NO_MACHINE_VALUES_IN_NORMAL_PUBLIC_UI: liveFailures.every((value) => !value.failures.includes("MACHINE_VALUE_VISIBLE")),
   NO_GENERIC_INTERNAL_SCHEMA_FIELD_LABELS_IN_PUBLIC_UI: liveFailures.every((value) => !value.failures.includes("GENERIC_INTERNAL_SCHEMA_FIELD_LABEL_VISIBLE")),
   NO_CONTROL_STYLE_BACKTICK_ENUM_STATUS_PRESENTATION: liveFailures.every((value) => !value.failures.includes("CONTROL_STYLE_PRESENTATION_VISIBLE")) && /publicControlText/.test(components.fullAnalysisText),
@@ -208,7 +253,10 @@ const gates = {
   WOEK_IMPACT_BUND_BHH_2027_EXTERNAL_RENDER: liveGate(governmentRegression?.status === "PASS"),
   KEY_FINDING_VISIBLE_AND_SPECIFIC: /Key Finding:/.test(components.overview) && fieldFailures.every((value) => !value.includes("key_finding")),
   BUDGET_2027_PORTFOLIO_NOT_FORCED_TO_FAKE_SCORE: budget?.overview_assessment_label === "Keine belastbare einheitliche Wirkungsrichtung ohne Disaggregation." && /heterogene Allokationsarchitektur/.test(budget?.impact_core_summary ?? "") && !/[+-]\d|Gesamtwert|Gesamtnote/.test(JSON.stringify(budget)),
-  DETAIL_PAGE_IMPACT_SECTION_PRECEDES_PROCESS: components.decisionDetail.indexOf("<OverviewAssessment") < components.decisionDetail.indexOf("decision-process-meta") && components.governmentCard.indexOf("<OverviewAssessment") < components.governmentCard.indexOf("<FullSchemaDetails"),
+  DETAIL_PAGE_IMPACT_SECTION_PRECEDES_PROCESS: components.decisionDetail.indexOf("<OverviewAssessment") < components.decisionDetail.indexOf("decision-process-meta")
+    && components.governmentCard.indexOf("data-woek-substantive-impact") < components.governmentCard.indexOf("{includeProcess && <GovernmentProcessSection")
+    && components.euCard.indexOf("data-woek-substantive-impact") < components.euCard.lastIndexOf("data-woek-process-metadata")
+    && liveFailures.every((entry) => !entry.failures.includes("PROCESS_PRECEDES_SUBSTANTIVE_IMPACT_LAYER")),
   IMPACT_ANALYSIS_IS_PRIMARY_CONTENT: /impactCoreSummary: editorial\.fields\.impact_core_summary/.test(components.governmentCard) && /impactCoreSummary: editorial\.fields\.impact_core_summary/.test(components.euCard),
   GENERIC_PUBLIC_EDITORIAL_SCAN: noGeneric,
   PREVIEW_CARD_HAS_VISIBLE_WOEK_ASSESSMENT: /WÖk-Kurzbewertung/.test(components.overview) && [components.caseCard, components.governmentCard, components.governmentActionCard, components.euCard, components.search, components.sourceDetail].every((value) => /<OverviewAssessment/.test(value)) && livePreviewFailures.every((entry) => !entry.failures.includes("PREVIEW_WITHOUT_ASSESSMENT")),
@@ -217,13 +265,13 @@ const gates = {
   PREVIEW_CARD_IMPACT_PRECEDES_PROCESS: components.caseCard.indexOf("<OverviewAssessment") < components.caseCard.indexOf("data-woek-process-metadata") && components.governmentActionCard.indexOf("<OverviewAssessment") < components.governmentActionCard.indexOf("data-woek-process-metadata") && livePreviewFailures.every((entry) => !entry.failures.includes("PROCESS_PRECEDES_PUBLICATION_STATUS")),
   PREVIEW_CARD_PROCESS_IS_NOT_MAIN_ASSESSMENT: !/Vor der Entscheidung geprüft|Beobachtung und Rückkopplung|hohe Prüfrelevanz/i.test(components.overview),
   PREVIEW_CARD_NO_GENERIC_SUMMARY: noGeneric,
-  PREVIEW_CARD_NO_RAW_INTERNAL_ENUMS: fieldFailures.every((value) => !value.includes("RAW_ENUM")) && liveFailures.every((entry) => !entry.failures.includes("RAW_ENUM_VISIBLE")),
+  PREVIEW_CARD_NO_RAW_INTERNAL_ENUMS: fieldFailures.every((value) => !value.includes("RAW_ENUM")) && liveFailures.every((entry) => !entry.failures.includes("RAW_ENUM_VISIBLE") && !entry.failures.includes("UNREVIEWED_PUBLIC_LABEL_VISIBLE")),
   FACT_ONLY_HAS_NO_ASSESSMENT_SURFACE: !/EditorialReviewAssessment/.test(components.overview) && previewComponents.every((value) => !/EditorialReviewAssessment/.test(value)),
   FACT_ONLY_STATUS_IS_EXPLICIT: /data-woek-fact-only-status/.test(components.publicMaturity),
   UNSUPPORTED_FACH_CONTENT_FAILS_CLOSED: liveFailures.every((entry) => !entry.failures.includes("UNSUPPORTED_FACH_METADATA")),
   FACT_ONLY_HEAD_METADATA_FAILS_CLOSED: liveFailures.every((entry) => !entry.failures.includes("UNSUPPORTED_FACH_METADATA")),
   FACT_ONLY_SEARCH_AND_API_FAIL_CLOSED: /analysisPublished \? item\.intendedGoal : ""/.test(source("app/suche/page.tsx")) && /woekAnalysisPublished: false/.test(source("lib/public-api.ts")),
-  RAW_SCHEMA_TERMS_ONLY_IN_EXPLICIT_TECHNICAL_PROOF: /data-woek-raw-schema-proof="allowed"/.test(components.governmentCard),
+  RAW_SCHEMA_TERMS_ONLY_IN_EXPLICIT_TECHNICAL_PROOF: !/data-woek-raw-schema-proof="allowed"/.test(components.governmentCard) && !/data-woek-raw-schema-proof="allowed"/.test(source("app/components/recommendations/RecommendationSection.tsx")),
 };
 const failedGates = Object.entries(gates).filter(([, passed]) => !passed).map(([name]) => name);
 const report = {

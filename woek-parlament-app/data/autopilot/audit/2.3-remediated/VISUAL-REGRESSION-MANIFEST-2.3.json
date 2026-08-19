@@ -1,0 +1,44 @@
+{
+  "schema_version": "woek-visual-regression-manifest-1.0",
+  "generated_at": "2026-08-19T03:49:31.056Z",
+  "base_commit": "23129c81d8da8bcaf21923684571bdd0ca2a0c72",
+  "candidate_commit": "RECORDED_IN_BRIDGE_HANDOFF_AFTER_COMMIT",
+  "production_changed": false,
+  "before_findings": [
+    "Structured official identifier objects could reach React children on GovernmentAction detail pages.",
+    "The WÖk short assessment visually competed with the page title.",
+    "Selected detail pages placed process or technical material before substantive impact content.",
+    "Long specialist/source strings could exceed narrow public surfaces."
+  ],
+  "after_status": "PASS",
+  "rendered_matrix": {
+    "routes": 19,
+    "breakpoints": [320, 360, 375, 390, 428, 768, 1024, 1280, 1440],
+    "measurements": 171,
+    "failures": 0
+  },
+  "screenshots_are_internal_audit_artifacts": true,
+  "screenshots": [
+    {"file":"320-home.png","sha256":"35133efc6a13ac2600c3072eb0945351fb85de5db679c9bbdf4fa256cf4bfe6c"},
+    {"file":"390-home.png","sha256":"c1dea4d17da07826809fbe594976da611b0999699e1627f45315e0d019c4fd55"},
+    {"file":"1440-home.png","sha256":"f8a8469c5b912b9d8af4be3a74d1290a5493d65904950174772d12f6a504a7b4"},
+    {"file":"320-home-entscheidungen-schutz-vor-k-o-tropfen.png","sha256":"b297db3e4533339c7b03ab02db2073d81c7c2790743014da702bae273b7c5226"},
+    {"file":"390-home-entscheidungen-schutz-vor-k-o-tropfen.png","sha256":"513c766ad4e76421b043000ac46bb75678eaa6277a5fe7e945404799451b64d4"},
+    {"file":"1440-home-entscheidungen-schutz-vor-k-o-tropfen.png","sha256":"47e6f85ea4b9503ae9e155202fbf70bc5c99b8b8535c2c51a03172ced12196a2"},
+    {"file":"320-home-regierung-akte-govaction-3Adip-3A325252.png","sha256":"8d0581f294b5b303444b96d876edea2e28e691b61ce30effee28612ab3fb1297"},
+    {"file":"390-home-regierung-akte-govaction-3Adip-3A325252.png","sha256":"d709b4afdc71013644f82e401e3c14489b42705bdd73e98ef7a89fe9356c8a65"},
+    {"file":"1440-home-regierung-akte-govaction-3Adip-3A325252.png","sha256":"4beac7aea8ac50af06add5520bb68f18b8d8a9e7d2cd0847721dafe4a3c19a0d"},
+    {"file":"320-home-regierung-wirkungsanalysen-WOEK-IMPACT-BUND-GMODG-2026.png","sha256":"73e77000eab1eb196a174e2370c87968f94c1698b2a2ed0dca997f990b973957"},
+    {"file":"390-home-regierung-wirkungsanalysen-WOEK-IMPACT-BUND-GMODG-2026.png","sha256":"98629eb353908fd8f898aaa60eff48298e707ba73f74334453816e9b9a2f9e0a"},
+    {"file":"1440-home-regierung-wirkungsanalysen-WOEK-IMPACT-BUND-GMODG-2026.png","sha256":"ee39c0be93fb389dc9580f889fcb4d67a6793d0462d4fab87f358c5cb0cb1721"},
+    {"file":"320-home-eu-wirkungsfaelle-EU-IMPACT-2026-004.png","sha256":"82f009dd0bfbbf6beae77d8d5af8ed05a2a273fbb98768acc1f732f16da50d6c"},
+    {"file":"390-home-eu-wirkungsfaelle-EU-IMPACT-2026-004.png","sha256":"b60c8e1ea039d33f59c212a15552bcaf14198790b9ccb9f47651812dc6020e2b"},
+    {"file":"1440-home-eu-wirkungsfaelle-EU-IMPACT-2026-004.png","sha256":"50713a8c85ac3548bc3eca00707ebb80c66ab84775c33e93a349f5e5a27845b5"},
+    {"file":"320-home-quellen.png","sha256":"33b4d0594bc0ba7a8e080043dd4c534f2ca98065eae029392a4d9014a8e6df98"},
+    {"file":"390-home-quellen.png","sha256":"1f3ec3ecbb975be0ed988c2784abce6faebdefad62c84682f28d92e1c75d6b0b"},
+    {"file":"1440-home-quellen.png","sha256":"6137f354a70b17699f37df84f84e861ac95778f707fcf8699bc69efe3ce9c00a"},
+    {"file":"320-home-suche-q-Klima.png","sha256":"f48e94b5ccff4ac32aca7b1e2c6b560daaa2c3794068a00af5518700ac705bb9"},
+    {"file":"390-home-suche-q-Klima.png","sha256":"06345b45e48ca78f99b0b0d77c8cbacede9cbaefaf817d7338b18a7e4ff7f0bd"},
+    {"file":"1440-home-suche-q-Klima.png","sha256":"901b237b4128dd59650931a4b9d03221f11499401d064a95ed381a1d77eb00e0"}
+  ]
+}

@@ -20,6 +20,8 @@ const PLACEHOLDER_PATTERNS = [
 ];
 
 const PUBLIC_ENUM_LABELS = {
+  "DECISION_CONTEXT_SOURCE_ONLY; ANALYTICAL_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION": "Amtliche Ausgangslage belegt; Wirkannahme muss noch geprüft werden",
+  "OFFICIAL_PROPOSAL_SOURCE; EX_ANTE_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION": "Amtliche Vorlage belegt; Wirkannahme muss noch geprüft werden",
   POSITIVES_WIRKUNGSPOTENZIAL: "Positives Wirkungspotenzial",
   UEBERWIEGEND_POSITIVES_WIRKUNGSPOTENZIAL: "Überwiegend positives Wirkungspotenzial",
   AMBIVALENTES_WIRKUNGSPOTENZIAL: "Gegenläufige Wirkungspotenziale und Risiken",
@@ -210,12 +212,14 @@ export function projectEuEditorial(record) {
   const markdown = text(record?.full_analysis_markdown);
   const evidenceSummary = sectionSummary(markdown, /(?:^|\s)Evidenzgrad(?:\s|$)/i) || inlineEvidenceSummary(markdown);
   const indicators = (record?.key_indicators ?? []).slice(0, 2)
-    .map((indicator) => PUBLIC_INDICATOR_LABELS[indicator] ?? humanizeSystemValue(indicator))
+    .map((indicator) => PUBLIC_INDICATOR_LABELS[indicator])
     .filter(Boolean);
-  const realityStatus = publicEnumLabel(record?.reality_check_status);
-  const realitySummary = indicators.length
+  const realityStatus = PUBLIC_ENUM_LABELS[text(record?.reality_check_status)] ?? "";
+  const realitySummary = realityStatus && indicators.length
     ? `${realityStatus}. Der Reality Check beobachtet dafür ${indicators.join(" und ")}.`
-    : realityStatus;
+    : realityStatus
+      ? `${realityStatus}. Für „${text(record?.title)}“ sind noch keine Messgrößen mit freigegebener öffentlicher Klartextbezeichnung hinterlegt.`
+      : `Für „${text(record?.title)}“ liegt noch keine freigegebene öffentliche Reality-Check-Kurzfassung vor.`;
   return projectionResult({
     overview_assessment_label: publicEnumLabel(record?.overview_assessment_label ?? record?.key_finding),
     impact_core_summary: text(record?.impact_core_summary),
