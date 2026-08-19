@@ -18,6 +18,8 @@ import { getCase, formatDate, materialityLabel } from "@/lib/cases";
 import { caseKindLabel, humanizeSystemValue, verificationLabel } from "@/lib/presentation/labels";
 import { parliamentaryOverviewAssessment } from "@/lib/presentation/overview-assessment";
 import { parliamentPublicMaturity } from "@/lib/presentation/public-maturity";
+import { decisionReviewForImpactCase } from "@/lib/decision-method";
+import { recommendationForImpactCase } from "@/lib/recommendations";
 import { sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
 import { getCasePublicationSource } from "@/lib/publication/fachakten";
 import { publicParliamentSummary } from "@/lib/public-api";
@@ -86,7 +88,6 @@ export default async function DecisionPage({ params, searchParams }: { params: P
   const normativeMapping = item.publicAssessment?.normativeMapping ?? item.publicWorkingAct?.normativeMapping;
   const statuses = reviewStatuses(item);
   const overviewAssessment = parliamentaryOverviewAssessment(item);
-  const publicMaturity = parliamentPublicMaturity(item, overviewAssessment);
   const editoriallyPublished = Boolean(overviewAssessment);
   const requestedView: DecisionView = decisionViews.some((view) => view.id === ansicht) ? ansicht as DecisionView : "ueberblick";
   const activeView: DecisionView = editoriallyPublished || requestedView === "quellen" ? requestedView : "ueberblick";
@@ -94,6 +95,13 @@ export default async function DecisionPage({ params, searchParams }: { params: P
   const visibleDecisionViews = editoriallyPublished ? decisionViews : decisionViews.filter((view) => view.id === "ueberblick" || view.id === "quellen");
   const publicationCaseId = typeof item.publicWorkingAct?.fullReview?.result.case_id === "string" ? item.publicWorkingAct.fullReview.result.case_id : "";
   const methodCaseId = publicationCaseId || item.slug;
+  const decisionReview = decisionReviewForImpactCase(methodCaseId) ?? decisionReviewForImpactCase(item.slug);
+  const reviewCaseId = decisionReview?.impact_case_id ?? methodCaseId;
+  const publicMaturity = parliamentPublicMaturity(item, overviewAssessment, {
+    problemReviewAvailable: Boolean(decisionReview?.problem_review),
+    goalReviewAvailable: Boolean(decisionReview?.goal_review),
+    recommendationAvailable: Boolean(recommendationForImpactCase(methodCaseId)),
+  });
   const completePublication = activeView === "fachakte" && publicationCaseId ? await getCasePublicationSource(publicationCaseId) : null;
   return (
     <div className="shell decision-page">
@@ -114,7 +122,7 @@ export default async function DecisionPage({ params, searchParams }: { params: P
         <div>{visibleDecisionViews.map((view) => <Link key={view.id} href={view.id === "ueberblick" ? `/entscheidungen/${item.slug}` : `/entscheidungen/${item.slug}?ansicht=${view.id}`} aria-current={activeView === view.id ? "page" : undefined}>{view.label}</Link>)}</div>
       </nav>
 
-      {activeView === "ueberblick" && editoriallyPublished && <ProblemGoalReview impactCaseId={methodCaseId} />}
+      {activeView === "ueberblick" && decisionReview && <ProblemGoalReview impactCaseId={reviewCaseId} />}
 
       {activeView === "normen" && editoriallyPublished && normativeMapping && <NormativeImpactTiles mapping={normativeMapping} />}
 
@@ -122,7 +130,7 @@ export default async function DecisionPage({ params, searchParams }: { params: P
         ? <CompletePublicationSource source={completePublication} idPrefix="vollstaendige-fachakte" />
         : item.publicWorkingAct?.fullReview ? <FullReviewRecord review={item.publicWorkingAct.fullReview} /> : null)}
 
-      <div data-woek-method-layer={activeView === "ueberblick" && editoriallyPublished ? "impact" : undefined}>{editoriallyPublished && item.publicAssessment && activeView === "ueberblick" ? <AssessmentExplainer assessment={item.publicAssessment} /> : editoriallyPublished && item.publicWorkingAct && overviewAssessment && activeView !== "normen" && activeView !== "quellen" && activeView !== "fachakte" ? <WorkingActExplainer workingAct={item.publicWorkingAct} view={workingActView} publicEvidenceSummary={overviewAssessment.evidenceSummary} /> : !item.publicWorkingAct && activeView === "ueberblick" ? <section className="decision-section assessment-pending"><p className="eyebrow">WÖk-Einordnung</p><h2>Noch keine fachliche Bewertung veröffentlicht</h2><p>Eine reale Einordnung erscheint erst, wenn Entscheidungsfassung, Quellen, Wirkpfade, Berechnungen und Unsicherheiten geprüft sind. Das Portal unterscheidet dann sichtbar zwischen Ergebnis, Begründung und dem vollständigen Rechenweg.</p></section> : null}</div>
+      <div data-woek-method-layer={activeView === "ueberblick" && (editoriallyPublished || decisionReview) ? "impact" : undefined}>{editoriallyPublished && item.publicAssessment && activeView === "ueberblick" ? <AssessmentExplainer assessment={item.publicAssessment} /> : editoriallyPublished && item.publicWorkingAct && overviewAssessment && activeView !== "normen" && activeView !== "quellen" && activeView !== "fachakte" ? <WorkingActExplainer workingAct={item.publicWorkingAct} view={workingActView} publicEvidenceSummary={overviewAssessment.evidenceSummary} /> : decisionReview && activeView === "ueberblick" ? <section className="decision-section assessment-pending"><p className="eyebrow">3 · Wirkungsanalyse</p><h2>WÖk-Wirkungsanalyse noch nicht redaktionell veröffentlicht</h2><p>Die Problem- und Zielprüfung ist fachlich dokumentiert. Eine Wirkungsrichtung, Neutralität oder Wirkungslosigkeit wird daraus nicht abgeleitet.</p></section> : !item.publicWorkingAct && activeView === "ueberblick" ? <section className="decision-section assessment-pending"><p className="eyebrow">WÖk-Einordnung</p><h2>Noch keine fachliche Bewertung veröffentlicht</h2><p>Eine reale Einordnung erscheint erst, wenn Entscheidungsfassung, Quellen, Wirkpfade, Berechnungen und Unsicherheiten geprüft sind. Das Portal unterscheidet dann sichtbar zwischen Ergebnis, Begründung und dem vollständigen Rechenweg.</p></section> : null}</div>
 
       {activeView === "ueberblick" && editoriallyPublished && <><RecommendationSection impactCaseId={methodCaseId} /><CommonTargetsComparison impactCaseId={methodCaseId} /><section data-woek-method-layer="reality"><p className="eyebrow">6 · Reality Check</p><h2>Was hat sich tatsächlich verändert?</h2><p>{item.publicWorkingAct?.reviewDetail?.feedback?.interpretation || "Noch keine fachlich freigegebene ex-post Wirkungsbeobachtung veröffentlicht. Aus dem parlamentarischen Status wird keine Wirkung abgeleitet."}</p></section></>}
 

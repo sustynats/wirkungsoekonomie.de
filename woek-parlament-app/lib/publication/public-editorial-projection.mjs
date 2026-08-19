@@ -210,16 +210,18 @@ export function projectGovernmentEditorial(record) {
 
 export function projectEuEditorial(record) {
   const markdown = text(record?.full_analysis_markdown);
-  const evidenceSummary = sectionSummary(markdown, /(?:^|\s)Evidenzgrad(?:\s|$)/i) || inlineEvidenceSummary(markdown);
+  const evidenceSummary = text(record?.evidence_summary)
+    || sectionSummary(markdown, /(?:^|\s)Evidenzgrad(?:\s|$)/i)
+    || inlineEvidenceSummary(markdown);
   const indicators = (record?.key_indicators ?? []).slice(0, 2)
     .map((indicator) => PUBLIC_INDICATOR_LABELS[indicator])
     .filter(Boolean);
   const realityStatus = PUBLIC_ENUM_LABELS[text(record?.reality_check_status)] ?? "";
-  const realitySummary = realityStatus && indicators.length
+  const realitySummary = text(record?.reality_check_summary) || (realityStatus && indicators.length
     ? `${realityStatus}. Der Reality Check beobachtet dafür ${indicators.join(" und ")}.`
     : realityStatus
       ? `${realityStatus}. Für „${text(record?.title)}“ sind noch keine Messgrößen mit freigegebener öffentlicher Klartextbezeichnung hinterlegt.`
-      : `Für „${text(record?.title)}“ liegt noch keine freigegebene öffentliche Reality-Check-Kurzfassung vor.`;
+      : `Für „${text(record?.title)}“ liegt noch keine freigegebene öffentliche Reality-Check-Kurzfassung vor.`);
   return projectionResult({
     overview_assessment_label: publicEnumLabel(record?.overview_assessment_label ?? record?.key_finding),
     impact_core_summary: text(record?.impact_core_summary),

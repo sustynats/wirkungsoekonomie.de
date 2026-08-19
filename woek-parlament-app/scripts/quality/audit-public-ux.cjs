@@ -34,7 +34,10 @@ const routes = [
   "/wirkungsfaelle",
   "/eu",
   "/eu/wirkungsfaelle",
+  "/eu/wirkungsfaelle/EU-IMPACT-2026-001",
   "/eu/wirkungsfaelle/EU-IMPACT-2026-004",
+  "/entscheidungen/bt21-dip-f562f80bc03c",
+  "/entscheidungen/bt21-dip-c262bf7797f8",
   "/laender",
   "/begriffe",
   "/entscheidungen/bt21-dip-907488f49a72",
@@ -218,7 +221,7 @@ function slug(value) {
           runOnly: { type: "tag", values: ["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"] },
         }));
       }
-      if (!navigationError && [320, 390, 1440].includes(width) && ["/", "/entscheidungen/schutz-vor-k-o-tropfen", "/methodik", "/regierung/methodik", "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-GMODG-2026", "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-BHH-2027", "/regierung/akte/govaction%3Adip%3A325252", "/eu/wirkungsfaelle/EU-IMPACT-2026-004", "/quellen", "/suche?q=Klima"].includes(route)) {
+      if (!navigationError && [320, 390, 1440].includes(width) && ["/", "/entscheidungen/schutz-vor-k-o-tropfen", "/methodik", "/regierung/methodik", "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-GMODG-2026", "/regierung/wirkungsanalysen/WOEK-IMPACT-BUND-BHH-2027", "/regierung/akte/govaction%3Adip%3A325252", "/eu/wirkungsfaelle/EU-IMPACT-2026-001", "/eu/wirkungsfaelle/EU-IMPACT-2026-004", "/entscheidungen/bt21-dip-f562f80bc03c", "/entscheidungen/bt21-dip-c262bf7797f8", "/quellen", "/suche?q=Klima"].includes(route)) {
         await page.screenshot({ path: path.join(screenshotDir, `${width}-${slug(route)}.png`), fullPage: true });
       }
       results.push({

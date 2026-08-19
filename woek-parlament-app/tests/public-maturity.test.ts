@@ -48,6 +48,36 @@ test("an assessment remains public while separate layers stay open", () => {
   assert.equal(maturity.layers.find((entry) => entry.id === "recommendation")?.status, "PENDING");
 });
 
+test("reviewed Common-Targets layers do not remain contradictory public open points", () => {
+  const maturity = governmentPublicMaturity({
+    impact_case_id: "WOEK-IMPACT-BUND-GRUNDSICHERUNG-2026",
+    title: "Neue Grundsicherung",
+    analysis_mode: "IMPACT_REALITY_CHECK",
+    publication_analysis_status: "STANDARD_WOEK_ANALYSIS",
+    evidence_level: "MEDIUM",
+    impact_core_summary: assessment.impactCoreSummary,
+    impact_summary: { measurement_priority: "Zustandsänderungen getrennt messen." },
+    missing_structured_fields: ["mpd_mapping", "sdg_mapping", "sdg_plus_mapping", "structured_data_needs"],
+    competence_review_status: "REVIEWED_CONCRETE",
+    reality_check_status: "NOT_YET_OBSERVABLE",
+    reality_check_summary: assessment.realityCheckSummary,
+    recommendation_status: "APPROVED",
+    implementation_status: "IN_FORCE",
+    raw_record: {},
+  }, assessment, {
+    recommendationAvailable: true,
+    problemReviewAvailable: true,
+    goalReviewAvailable: true,
+    reviewedCommonTargetLayers: ["WOEK_MPD", "UN_SDG", "GERMAN_SUSTAINABLE_DEVELOPMENT_STRATEGY_2025"],
+  });
+
+  assert.ok(!maturity.openPoints.some((entry) => /Mensch, Planet und Demokratie|SDG-Zuordnung/.test(entry)));
+  assert.ok(maturity.openPoints.some((entry) => entry.includes("SDG+-Zuordnung")));
+  assert.ok(maturity.openPoints.some((entry) => entry.includes("Prüfung des Datenbedarfs")));
+  assert.ok(maturity.openPoints.some((entry) => /ex post belegt|Zustandsänderung/.test(entry)));
+  assert.ok(!maturity.openPoints.some((entry) => entry.includes("die strukturierter Datenbedarf")));
+});
+
 test("an ex-ante parliamentary assessment is not presented as observed impact", () => {
   const maturity = parliamentPublicMaturity({
     slug: "case-2",
@@ -64,6 +94,29 @@ test("an ex-ante parliamentary assessment is not presented as observed impact", 
   assert.ok(maturity.flags.includes("REALITY_CHECK_PENDING"));
   assert.ok(maturity.flags.includes("ATTRIBUTION_OPEN"));
   assert.ok(maturity.openPoints.some((entry) => entry.includes("noch keine fachlich freigegebene ex-post Wirkungsbeobachtung")));
+});
+
+test("a published problem and goal review remains visible when the impact analysis is not editorially published", () => {
+  const maturity = parliamentPublicMaturity({
+    slug: "case-review-only",
+    plainTitle: "Parlamentarischer Prüfgegenstand",
+  }, null, {
+    problemReviewAvailable: true,
+    goalReviewAvailable: true,
+  });
+
+  assert.equal(maturity.primary, "PROBLEM_GOAL_REVIEW_AVAILABLE");
+  assert.equal(maturity.layers.find((entry) => entry.id === "problem")?.status, "AVAILABLE");
+  assert.equal(maturity.layers.find((entry) => entry.id === "goal")?.status, "AVAILABLE");
+  assert.equal(maturity.layers.find((entry) => entry.id === "impact")?.status, "OPEN");
+  assert.ok(maturity.openPoints.some((entry) => /weder Neutralität noch Wirkungslosigkeit/.test(entry)));
+});
+
+test("portfolio review tokens are translated for public presentation", () => {
+  const labelSource = readFileSync("lib/decision-method.ts", "utf8");
+  assert.match(labelSource, /PORTFOLIO_HAS_NO_SINGLE_SEPARATELY_VERIFIED_PROBLEM_CLAIM: "für das Gesamtportfolio liegt keine einzelne, separat verifizierte Problembehauptung vor"/);
+  const source = readFileSync("app/components/DecisionMethodLayers.tsx", "utf8");
+  assert.doesNotMatch(source, /Politische Problemquelle:<\/strong> \{reviewText\(problem\.problem_claim_source\)\}/);
 });
 
 test("fact-only and assessment-only projections fail closed without inventing a direction", () => {

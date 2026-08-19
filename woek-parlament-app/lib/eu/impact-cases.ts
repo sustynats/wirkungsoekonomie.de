@@ -25,6 +25,12 @@ export type EuImpactRecord = {
   inherited_legislative_file: boolean;
   key_indicators: string[];
   official_sources: string[];
+  evidence_summary?: string | null;
+  reality_check_summary?: string | null;
+  source_function?: string[];
+  source_refs?: string[];
+  limitations?: string[];
+  editorial_evidence_overlay?: boolean;
   full_analysis_markdown: string;
   publication_status: "APPROVED_INITIAL_FACHREVIEW";
   analysis_version: string;

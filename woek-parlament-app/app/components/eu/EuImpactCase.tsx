@@ -11,6 +11,7 @@ import { publicIndicatorLabel, publicSystemValueLabel } from "@/lib/presentation
 import { euPublicMaturity } from "@/lib/presentation/public-maturity";
 import { impactRecordAssessmentIconKind } from "@/lib/presentation/overview-assessment";
 import { recommendationForImpactCase } from "@/lib/recommendations";
+import { decisionReviewForImpactCase } from "@/lib/decision-method";
 
 export function EuImpactCase({ record, compact = false }: { record: EuImpactRecord; compact?: boolean }) {
   const editorial = euEditorialProjection(record);
@@ -25,11 +26,18 @@ export function EuImpactCase({ record, compact = false }: { record: EuImpactReco
     evidenceSummary: `${evidenceLabels[record.evidence_level]}. ${editorial.fields.evidence_summary}`,
     realityCheckSummary: editorial.fields.reality_check_summary,
   };
-  const maturity = euPublicMaturity(record, assessment, { recommendationAvailable: Boolean(recommendationForImpactCase(record.impact_case_id)) });
+  const decisionReview = decisionReviewForImpactCase(record.impact_case_id);
+  const maturity = euPublicMaturity(record, assessment, {
+    recommendationAvailable: Boolean(recommendationForImpactCase(record.impact_case_id)),
+    problemReviewAvailable: Boolean(decisionReview?.problem_review),
+    goalReviewAvailable: Boolean(decisionReview?.goal_review),
+  });
   const competence = publicSystemValueLabel(record.competence_scope);
   const legalFeasibility = publicSystemValueLabel(record.legal_feasibility_status);
   const implementationRoutes = record.implementation_route.map(publicSystemValueLabel).filter((label): label is string => Boolean(label));
   const indicators = record.key_indicators.map(publicIndicatorLabel).filter((label): label is string => Boolean(label));
+  const sourceFunctions = (record.source_function ?? []).map(publicSystemValueLabel).filter((label): label is string => Boolean(label));
+  const publicSources = [...new Set([...(record.official_sources ?? []), ...(record.source_refs ?? [])])];
   const legalStatus = publicSystemValueLabel(record.legal_status);
   const actorRole = publicSystemValueLabel(record.institutional_actor_role);
   const Title = compact ? "h2" : "h1";
@@ -47,11 +55,12 @@ export function EuImpactCase({ record, compact = false }: { record: EuImpactReco
     {compact ? <Link className="text-link" href={`/eu/wirkungsfaelle/${encodeURIComponent(record.impact_case_id)}`}>Vollständige EU-Wirkungsanalyse öffnen</Link> : <>
       <ProblemGoalReview impactCaseId={record.impact_case_id} />
       <section data-woek-method-layer="impact"><p className="eyebrow">3 · Wirkungsanalyse</p><h2>Welche Wirkungspotenziale und Risiken sind fachlich geprüft?</h2><p>{assessment.editorialSummary}</p>{indicators.length > 0 && <><h3>Datenbedarf für die spätere Beobachtung</h3><ul>{indicators.map((indicator) => <li key={indicator}>{indicator}</li>)}</ul></>}{indicators.length < record.key_indicators.length && <p className="open-state">Für {record.key_indicators.length - indicators.length} fachlich benannte Messgrößen liegt noch keine freigegebene öffentliche Klartextbezeichnung vor. Sie bleiben bis zur Freigabe in dieser Ansicht ausgeblendet.</p>}</section>
+      {record.editorial_evidence_overlay && <section data-woek-evidence-layer="reviewed"><p className="eyebrow">Fachlich geprüfte Evidenz</p><h2>Was tragen die Quellen – und was nicht?</h2><p>{record.evidence_summary}</p>{sourceFunctions.length > 0 && <><h3>Funktion der Quellen</h3><ul>{sourceFunctions.map((value) => <li key={value}>{value}</li>)}</ul></>}{(record.limitations ?? []).length > 0 && <><h3>Aussagegrenzen</h3><ul>{record.limitations?.map((value) => <li key={value}>{value}</li>)}</ul></>}</section>}
       <details className="government-full-record government-technical-proof" data-woek-substantive-impact="published" data-woek-technical-proof="full-fach-record"><summary>Vollständige EU-Fachakte mit technischen Nachweisen aufklappen</summary><FullAnalysisText source={{ title: record.title, releasedAt: record.analysis_as_of, sourceHash: record.source_release.case_markdown_sha256 ?? "", sourceDocumentHash: record.source_release.markdown_sha256 ?? "", markdown: record.full_analysis_markdown }} /></details>
       <RecommendationSection impactCaseId={record.impact_case_id} />
       <CommonTargetsComparison impactCaseId={record.impact_case_id} />
-      <section data-woek-method-layer="reality"><p className="eyebrow">6 · Reality Check</p><h2>Was hat sich tatsächlich verändert?</h2><p><strong>Status:</strong> {publicSystemValueLabel(record.reality_check_status) ?? "fachlich noch offen"}</p><p>Beobachtung und kausale Zurechnung bleiben getrennt. Ein Verfahrensfortschritt ist kein Wirkungsnachweis.</p></section>
-      <section data-woek-source-layer="published"><h3>Quellen</h3><ul>{record.official_sources.map((source) => <li key={source}><Link href={sourceDetailHrefForUrl(source)}>Quellenakte öffnen</Link></li>)}</ul></section>
+      <section data-woek-method-layer="reality"><p className="eyebrow">6 · Reality Check</p><h2>Was hat sich tatsächlich verändert?</h2><p><strong>Status:</strong> {publicSystemValueLabel(record.reality_check_status) ?? "fachlich noch offen"}</p><p>{record.reality_check_summary ?? "Beobachtung und kausale Zurechnung bleiben getrennt. Ein Verfahrensfortschritt ist kein Wirkungsnachweis."}</p></section>
+      <section data-woek-source-layer="published"><h3>Quellen</h3><ul>{publicSources.map((source) => <li key={source}><Link href={sourceDetailHrefForUrl(source)}>Quellenakte öffnen</Link></li>)}</ul></section>
       <section className="government-process-meta" aria-label="Institutioneller und rechtlicher Lebenslauf" data-woek-process-metadata>
         <h3>Institutioneller und rechtlicher Lebenslauf</h3>
         <p><strong>Analysephase:</strong> {record.analysis_mode.includes("REALITY") ? "mit Beobachtungsstufe" : "Ex ante"}</p>

@@ -3,6 +3,7 @@ import { assessmentPublicCopyContains } from "@/lib/presentation/overview-assess
 
 export type PublicMaturityStatus =
   | "ASSESSMENT_AVAILABLE_WITH_OPEN_POINTS"
+  | "PROBLEM_GOAL_REVIEW_AVAILABLE"
   | "PARTIAL_EVIDENCE"
   | "EX_ANTE_POTENTIAL_ONLY"
   | "REALITY_CHECK_PENDING"
@@ -94,6 +95,7 @@ type ParliamentMaturityInput = {
 
 const labels: Record<PublicMaturityStatus, string> = {
   ASSESSMENT_AVAILABLE_WITH_OPEN_POINTS: "WÖk-Einordnung vorhanden – offene Prüfpunkte bleiben sichtbar",
+  PROBLEM_GOAL_REVIEW_AVAILABLE: "WÖk-Problem- und Zielprüfung vorhanden – Wirkungsanalyse noch nicht veröffentlicht",
   PARTIAL_EVIDENCE: "Einordnung mit noch unvollständiger Evidenz",
   EX_ANTE_POTENTIAL_ONLY: "Ex-ante-Einordnung – Wirkung noch nicht beobachtbar",
   REALITY_CHECK_PENDING: "Reality Check steht noch aus",
@@ -112,7 +114,7 @@ const structuredFieldLabels: Record<string, string> = {
   sdg_mapping: "SDG-Zuordnung",
   sdg_plus_mapping: "SDG+-Zuordnung",
   structured_boundary_review: "Prüfung der Schutz- und Wirkungsgrenzen",
-  structured_data_needs: "strukturierter Datenbedarf",
+  structured_data_needs: "strukturierte Prüfung des Datenbedarfs",
   structured_evidence_summary: "strukturierte Evidenzzusammenfassung",
 };
 
@@ -152,7 +154,13 @@ function layer(id: PublicMaturityLayer["id"], label: string, status: PublicMatur
 export function governmentPublicMaturity(
   item: GovernmentMaturityInput,
   assessment: AssessmentText,
-  options: { recommendationAvailable: boolean; operationalizationAvailable?: boolean } = { recommendationAvailable: false },
+  options: {
+    recommendationAvailable: boolean;
+    operationalizationAvailable?: boolean;
+    problemReviewAvailable?: boolean;
+    goalReviewAvailable?: boolean;
+    reviewedCommonTargetLayers?: string[];
+  } = { recommendationAvailable: false },
 ): PublicMaturityProjection {
   if (item.publication_analysis_status === "NO_INDEPENDENT_EFFECT_OBJECT") {
     return factOnlyPublicMaturity(item.title, `Der veröffentlichte Sachverhalt zu „${item.title}“ ist als Lebenszyklus- oder Faktenobjekt dokumentiert.`);
@@ -160,8 +168,8 @@ export function governmentPublicMaturity(
 
   const raw = record(item.raw_record);
   const dataNeeds = Array.isArray(raw.data_needs) ? raw.data_needs.map(record) : [];
-  const goalAvailable = approvedLayer(raw, "goal_review");
-  const problemAvailable = approvedLayer(raw, "problem_review");
+  const goalAvailable = options.goalReviewAvailable ?? approvedLayer(raw, "goal_review");
+  const problemAvailable = options.problemReviewAvailable ?? approvedLayer(raw, "problem_review");
   const realityPending = item.reality_check_status === "NOT_YET_OBSERVABLE" || item.reality_check_status === "OPEN" || !item.reality_check_status;
   const attribution = text(record(raw.reality_check).attribution);
   const attributionOpen = realityPending || !attribution || /offen|nicht belegt|keine zurechnung/i.test(attribution);
@@ -179,7 +187,10 @@ export function governmentPublicMaturity(
     !operationalizationAvailable ? "OPERATIONALIZATION_PENDING" : undefined,
   ]) as PublicMaturityStatus[];
 
+  const reviewedCommonTargetLayers = new Set(options.reviewedCommonTargetLayers ?? []);
   const missingFields = item.missing_structured_fields
+    .filter((field) => !(field === "mpd_mapping" && reviewedCommonTargetLayers.has("WOEK_MPD")))
+    .filter((field) => !(field === "sdg_mapping" && reviewedCommonTargetLayers.has("UN_SDG")))
     .map((field) => structuredFieldLabels[field])
     .filter((value): value is string => Boolean(value));
   const openPoints = unique([
@@ -234,13 +245,15 @@ export function governmentPublicMaturity(
 export function euPublicMaturity(
   item: EuMaturityInput,
   assessment: AssessmentText,
-  options: { recommendationAvailable?: boolean; operationalizationAvailable?: boolean } = {},
+  options: { recommendationAvailable?: boolean; operationalizationAvailable?: boolean; problemReviewAvailable?: boolean; goalReviewAvailable?: boolean } = {},
 ): PublicMaturityProjection {
   const isExAnte = item.analysis_mode.includes("EX_ANTE");
   const realityPending = item.reality_check_status === "NOT_YET_OBSERVABLE" || item.reality_check_status === "OPEN";
   const partialEvidence = item.evidence_level === "LOW" || item.evidence_level === "NOT_ASSESSABLE";
   const recommendationAvailable = Boolean(options.recommendationAvailable);
   const operationalizationAvailable = Boolean(options.operationalizationAvailable);
+  const problemReviewAvailable = Boolean(options.problemReviewAvailable);
+  const goalReviewAvailable = Boolean(options.goalReviewAvailable);
   const publicIndicators = item.key_indicators.map(publicIndicatorLabel).filter((value): value is string => Boolean(value));
   const missingIndicatorLabels = item.key_indicators.length - publicIndicators.length;
   const publicCompetence = publicSystemValueLabel(item.competence_scope);
@@ -254,7 +267,7 @@ export function euPublicMaturity(
     isExAnte ? "EX_ANTE_POTENTIAL_ONLY" : undefined,
     realityPending ? "REALITY_CHECK_PENDING" : undefined,
     realityPending ? "ATTRIBUTION_OPEN" : undefined,
-    "GOAL_REVIEW_PENDING",
+    !goalReviewAvailable ? "GOAL_REVIEW_PENDING" : undefined,
     !recommendationAvailable ? "RECOMMENDATION_PENDING" : undefined,
     !operationalizationAvailable ? "OPERATIONALIZATION_PENDING" : undefined,
   ]) as PublicMaturityStatus[];
@@ -266,8 +279,8 @@ export function euPublicMaturity(
       : partialEvidence ? `Die Evidenz für „${item.title}“ ist teilweise oder noch nicht belastbar bewertbar; fallbezogene Messgrößen bleiben fachlich zu prüfen.` : undefined,
     missingIndicatorLabels > 0 ? `Für ${missingIndicatorLabels} fachlich benannte ${missingIndicatorLabels === 1 ? "Messgröße fehlt" : "Messgrößen fehlen"} noch eine freigegebene öffentliche Bezeichnung.` : undefined,
     !competenceLabelsComplete ? "Für mindestens einen Wert des Kompetenz- und Umsetzungsrahmens fehlt noch eine freigegebene öffentliche Bezeichnung." : undefined,
-    `Eine eigenständige fachlich freigegebene WÖk-Problemprüfung für „${item.title}“ ist noch nicht veröffentlicht.`,
-    `Eine eigenständige WÖk-Zielprüfung mit Zielhierarchie für „${item.title}“ ist noch nicht veröffentlicht.`,
+    !problemReviewAvailable ? `Eine eigenständige fachlich freigegebene WÖk-Problemprüfung für „${item.title}“ ist noch nicht veröffentlicht.` : undefined,
+    !goalReviewAvailable ? `Eine eigenständige WÖk-Zielprüfung mit Zielhierarchie für „${item.title}“ ist noch nicht veröffentlicht.` : undefined,
     !recommendationAvailable ? `Eine WÖk-Handlungsoption für „${item.title}“ ist noch nicht fachlich freigegeben.` : undefined,
     !operationalizationAvailable ? `Ein fachlich freigegebenes WÖk-Inspirations- oder Operationalisierungsmodell ist mit „${item.title}“ noch nicht verknüpft.` : undefined,
   ]);
@@ -282,8 +295,8 @@ export function euPublicMaturity(
     ]),
     openPoints,
     layers: [
-      layer("problem", "WÖk-Problemprüfung", "PENDING", `Für „${item.title}“ noch nicht als eigener Fachlayer freigegeben.`),
-      layer("goal", "WÖk-Zielprüfung und Zielhierarchie", "PENDING", `Für „${item.title}“ noch nicht als eigener Fachlayer freigegeben.`),
+      layer("problem", "WÖk-Problemprüfung", problemReviewAvailable ? "AVAILABLE" : "PENDING", problemReviewAvailable ? "Fachlich geprüft; offene Beurteilungen bleiben ausdrücklich sichtbar." : `Für „${item.title}“ noch nicht als eigener Fachlayer freigegeben.`),
+      layer("goal", "WÖk-Zielprüfung und Zielhierarchie", goalReviewAvailable ? "AVAILABLE" : "PENDING", goalReviewAvailable ? "Fachlich geprüft; offene Beurteilungen bleiben ausdrücklich sichtbar." : `Für „${item.title}“ noch nicht als eigener Fachlayer freigegeben.`),
       layer("impact", "Wirkungspotenzial und Wirkungsrisiken", "AVAILABLE", "Fachlich freigegebene, fallbezogene Einordnung vorhanden."),
       layer("reality", "Beobachtung und Reality Check", realityPending ? "PENDING" : "AVAILABLE", assessment.realityCheckSummary || labels.REALITY_CHECK_PENDING),
       layer("recommendation", "WÖk-Handlungsoption", recommendationAvailable ? "AVAILABLE" : "PENDING", recommendationAvailable ? "Fachlich freigegeben." : `Für „${item.title}“ noch nicht fachlich freigegeben.`),
@@ -295,8 +308,41 @@ export function euPublicMaturity(
 export function parliamentPublicMaturity(
   item: ParliamentMaturityInput,
   assessment: AssessmentText | null,
+  options: { problemReviewAvailable?: boolean; goalReviewAvailable?: boolean; recommendationAvailable?: boolean } = {},
 ): PublicMaturityProjection {
+  const problemReviewAvailable = Boolean(options.problemReviewAvailable);
+  const goalReviewAvailable = Boolean(options.goalReviewAvailable);
+  const recommendationAvailable = Boolean(options.recommendationAvailable);
   if (!assessment || !item.publicWorkingAct) {
+    if (problemReviewAvailable || goalReviewAvailable) {
+      const primary: PublicMaturityStatus = "PROBLEM_GOAL_REVIEW_AVAILABLE";
+      const openPoints = unique([
+        !problemReviewAvailable ? `Eine eigenständige WÖk-Problemprüfung für „${item.plainTitle}“ ist noch nicht als freigegebener Layer veröffentlicht.` : undefined,
+        !goalReviewAvailable ? `Eine eigenständige WÖk-Zielprüfung für „${item.plainTitle}“ ist noch nicht als freigegebener Layer veröffentlicht.` : undefined,
+        `Die fallbezogene WÖk-Wirkungsanalyse für „${item.plainTitle}“ ist noch nicht redaktionell veröffentlicht; daraus folgt weder Neutralität noch Wirkungslosigkeit.`,
+        !recommendationAvailable ? `Eine WÖk-Handlungsoption für „${item.plainTitle}“ ist noch nicht als freigegebene Fassung veröffentlicht.` : undefined,
+        `Ein Reality Check zu „${item.plainTitle}“ setzt eine veröffentlichte Wirkungshypothese und beobachtbare Zustandsdaten voraus.`,
+      ]);
+      return {
+        primary,
+        flags: [primary, "PARTIAL_EVIDENCE", "REALITY_CHECK_PENDING", ...(recommendationAvailable ? [] : ["RECOMMENDATION_PENDING" as const])],
+        label: labels[primary],
+        compactHint: `Problem- und Zielprüfung sind getrennt dokumentiert; ${openPoints.length} weitere ${openPoints.length === 1 ? "Prüfebene ist" : "Prüfebenen sind"} offen.`,
+        assessableNow: unique([
+          problemReviewAvailable ? `Der behauptete Problemzustand von „${item.plainTitle}“ wurde fachlich geprüft.` : undefined,
+          goalReviewAvailable ? `Der politische Zielzustand von „${item.plainTitle}“ wurde fachlich geprüft; ein nicht belastbares Ergebnis bleibt ausdrücklich offen.` : undefined,
+        ]),
+        openPoints,
+        layers: [
+          layer("problem", "WÖk-Problemprüfung", problemReviewAvailable ? "AVAILABLE" : "PENDING", problemReviewAvailable ? "Fachlich geprüft; offene Beurteilungen bleiben ausdrücklich sichtbar." : `Für „${item.plainTitle}“ noch nicht fachlich freigegeben.`),
+          layer("goal", "WÖk-Zielprüfung und Zielhierarchie", goalReviewAvailable ? "AVAILABLE" : "PENDING", goalReviewAvailable ? "Fachlich geprüft; offene Beurteilungen bleiben ausdrücklich sichtbar." : `Für „${item.plainTitle}“ noch nicht fachlich freigegeben.`),
+          layer("impact", "Wirkungspotenzial und Wirkungsrisiken", "OPEN", `Für „${item.plainTitle}“ noch nicht redaktionell veröffentlicht.`),
+          layer("reality", "Beobachtung und Reality Check", "PENDING", `Für „${item.plainTitle}“ noch nicht möglich.`),
+          layer("recommendation", "WÖk-Handlungsoption", recommendationAvailable ? "AVAILABLE" : "PENDING", recommendationAvailable ? "Fachlich freigegeben." : `Für „${item.plainTitle}“ noch nicht fachlich freigegeben.`),
+          layer("operationalization", "WÖk-Inspirations- und Operationalisierungsmodell", "PENDING", `Für „${item.plainTitle}“ ist kein freigegebenes Modell verknüpft.`),
+        ],
+      };
+    }
     return factOnlyPublicMaturity(item.plainTitle, `Der veröffentlichte parlamentarische Sachverhalt zu „${item.plainTitle}“ bleibt als Faktenakte zugänglich.`);
   }
   const workingAct = item.publicWorkingAct;
@@ -308,17 +354,17 @@ export function parliamentPublicMaturity(
     ...workingAct.dataGaps.slice(0, 4).map((gap) => `Offener Datenbedarf für „${item.plainTitle}“: ${gap}`),
     !realityAvailable ? `Für „${item.plainTitle}“ ist noch keine fachlich freigegebene ex-post Wirkungsbeobachtung veröffentlicht.` : undefined,
     workingAct.counterfactualQuestions[0] ? `Die Zurechnung bleibt offen, bis diese Vergleichsfrage beantwortet ist: ${workingAct.counterfactualQuestions[0]}` : undefined,
-    `Eine eigenständige WÖk-Problemprüfung für „${item.plainTitle}“ ist noch nicht als freigegebener Layer veröffentlicht.`,
-    `Eine eigenständige WÖk-Zielprüfung mit Zielhierarchie für „${item.plainTitle}“ ist noch nicht als freigegebener Layer veröffentlicht.`,
-    `Eine WÖk-Handlungsoption für „${item.plainTitle}“ ist noch nicht als freigegebene Fassung veröffentlicht.`,
+    !problemReviewAvailable ? `Eine eigenständige WÖk-Problemprüfung für „${item.plainTitle}“ ist noch nicht als freigegebener Layer veröffentlicht.` : undefined,
+    !goalReviewAvailable ? `Eine eigenständige WÖk-Zielprüfung mit Zielhierarchie für „${item.plainTitle}“ ist noch nicht als freigegebener Layer veröffentlicht.` : undefined,
+    !recommendationAvailable ? `Eine WÖk-Handlungsoption für „${item.plainTitle}“ ist noch nicht als freigegebene Fassung veröffentlicht.` : undefined,
     `Ein WÖk-Inspirations- oder Operationalisierungsmodell ist mit „${item.plainTitle}“ noch nicht fachlich freigegeben verknüpft.`,
   ]);
   const flags = unique([
     "EX_ANTE_POTENTIAL_ONLY",
     !realityAvailable ? "REALITY_CHECK_PENDING" : undefined,
     !realityAvailable ? "ATTRIBUTION_OPEN" : undefined,
-    "GOAL_REVIEW_PENDING",
-    "RECOMMENDATION_PENDING",
+    !goalReviewAvailable ? "GOAL_REVIEW_PENDING" : undefined,
+    !recommendationAvailable ? "RECOMMENDATION_PENDING" : undefined,
     "OPERATIONALIZATION_PENDING",
     workingAct.dataGaps.length ? "PARTIAL_EVIDENCE" : undefined,
   ]) as PublicMaturityStatus[];
@@ -335,11 +381,11 @@ export function parliamentPublicMaturity(
     ]),
     openPoints,
     layers: [
-      layer("problem", "WÖk-Problemprüfung", "PENDING", `Für „${item.plainTitle}“ noch nicht als eigener Fachlayer freigegeben.`),
-      layer("goal", "WÖk-Zielprüfung und Zielhierarchie", "PENDING", `Für „${item.plainTitle}“ noch nicht als eigener Fachlayer freigegeben.`),
+      layer("problem", "WÖk-Problemprüfung", problemReviewAvailable ? "AVAILABLE" : "PENDING", problemReviewAvailable ? "Fachlich geprüft; offene Beurteilungen bleiben ausdrücklich sichtbar." : `Für „${item.plainTitle}“ noch nicht als eigener Fachlayer freigegeben.`),
+      layer("goal", "WÖk-Zielprüfung und Zielhierarchie", goalReviewAvailable ? "AVAILABLE" : "PENDING", goalReviewAvailable ? "Fachlich geprüft; offene Beurteilungen bleiben ausdrücklich sichtbar." : `Für „${item.plainTitle}“ noch nicht als eigener Fachlayer freigegeben.`),
       layer("impact", "Wirkungspotenzial und Wirkungsrisiken", "AVAILABLE", "Fachlich freigegebene, fallbezogene Einordnung vorhanden."),
       layer("reality", "Beobachtung und Reality Check", realityAvailable ? "AVAILABLE" : "PENDING", assessment.realityCheckSummary || labels.REALITY_CHECK_PENDING),
-      layer("recommendation", "WÖk-Handlungsoption", "PENDING", `Für „${item.plainTitle}“ noch nicht als eigene Fassung freigegeben.`),
+      layer("recommendation", "WÖk-Handlungsoption", recommendationAvailable ? "AVAILABLE" : "PENDING", recommendationAvailable ? "Fachlich freigegeben." : `Für „${item.plainTitle}“ noch nicht als eigene Fassung freigegeben.`),
       layer("operationalization", "WÖk-Inspirations- und Operationalisierungsmodell", "PENDING", `Für „${item.plainTitle}“ ist kein freigegebenes Modell verknüpft.`),
     ],
   };

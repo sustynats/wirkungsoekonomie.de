@@ -13,8 +13,35 @@ test("EU initial handoff preserves all 21 fach-approved cases without a complete
   assert.equal(records.length, 21);
   assert.equal(new Set(records.map((record) => record.impact_case_id)).size, 21);
   assert.equal(meta.count, 21);
+  assert.equal(meta.editorial_public_count, 21);
+  assert.equal(meta.editorial_review_count, 0);
+  assert.equal(meta.evidence_overlay_count, 5);
   assert.equal(meta.full_eu_coverage_claimed, false);
   assert.equal(meta.fact_coverage_is_not_impact_coverage, true);
+});
+
+test("five reviewed EU evidence overlays are projected exactly without changing Fach directions", () => {
+  const expected = new Set(["EU-IMPACT-2026-001", "EU-IMPACT-2026-003", "EU-IMPACT-2026-005", "EU-IMPACT-2026-019", "EU-IMPACT-2026-020"]);
+  const expectedDirections: Record<string, string> = {
+    "EU-IMPACT-2026-001": "AMBIVALENT",
+    "EU-IMPACT-2026-003": "POSITIVE",
+    "EU-IMPACT-2026-005": "POSITIVE",
+    "EU-IMPACT-2026-019": "POSITIVE",
+    "EU-IMPACT-2026-020": "AMBIVALENT",
+  };
+  const overlays = records.filter((record) => record.editorial_evidence_overlay);
+  assert.equal(overlays.length, 5);
+  assert.deepEqual(new Set(overlays.map((record) => record.impact_case_id)), expected);
+  for (const record of overlays) {
+    assert.ok(record.evidence_summary.length >= 180, record.impact_case_id);
+    assert.ok(record.reality_check_summary.length >= 120, record.impact_case_id);
+    assert.ok(record.source_function.length >= 2, record.impact_case_id);
+    assert.ok(record.source_refs.every((url: string) => url.startsWith("https://")), record.impact_case_id);
+    assert.ok(record.limitations.length >= 2, record.impact_case_id);
+    assert.equal(record.primary_direction, expectedDirections[record.impact_case_id]);
+    assert.equal(projectEuEditorial(record).fields.evidence_summary, record.evidence_summary);
+    assert.equal(projectEuEditorial(record).fields.reality_check_summary, record.reality_check_summary);
+  }
 });
 
 test("EU cases retain editorial, competence, evidence and exact Fachtext fields", () => {

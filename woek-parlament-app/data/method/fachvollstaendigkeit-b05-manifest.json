@@ -1,0 +1,168 @@
+{
+  "schema_version": "woek-fachvollstaendigkeit-public-materialization-1.0",
+  "merge_id": "FACHVOLLSTAENDIGKEIT-MERGE-20260819T1605CEST",
+  "generated_at": "2026-08-19T16:05:00+02:00",
+  "canonical_root": "/WOEK",
+  "problem_goal": {
+    "records": 82,
+    "unique_impact_case_ids": 82,
+    "problem_review_approved": 79,
+    "problem_review_not_assessable": 3,
+    "goal_review_approved": 68,
+    "goal_review_not_assessable": 14,
+    "sources": [
+      {
+        "source": "/WOEK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/analysis/FACHVOLLSTAENDIGKEIT-PROBLEM-GOAL-REVIEW-2026-08-19-B01.jsonl",
+        "sha256": "518bfd722e7c2d6f240f45dcd845cc90d4157ee5163c72eac82a44575207cb29",
+        "source_records": 3,
+        "records": 3,
+        "detail_artifacts": []
+      },
+      {
+        "source": "/WOEK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/analysis/FACHVOLLSTAENDIGKEIT-SHARD-0-OF-4-20260819T1241CEST.jsonl",
+        "sha256": "9e167889e53996ee7a3a99c85529b7d688a4d76bbfa83d62767a38dcb38f0e3c",
+        "source_records": 4,
+        "records": 4,
+        "detail_artifacts": []
+      },
+      {
+        "source": "/WOEK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/analysis/FACHVOLLSTAENDIGKEIT-SHARD-1-OF-4-20260819T1238CEST.jsonl",
+        "sha256": "d64b968606b5d5bb9a0befa3eb11de0fc213ac5258a3acde376b77d635c39fdb",
+        "source_records": 17,
+        "records": 17,
+        "detail_artifacts": []
+      },
+      {
+        "source": "/WOEK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/analysis/FACHVOLLSTAENDIGKEIT-SHARD-2-OF-4-20260819T1227CEST.jsonl",
+        "sha256": "6a74083ccf08f48fda6ab03e1b5188f9cccbb8f4d661abf61a186a155f435e49",
+        "source_records": 10,
+        "records": 10,
+        "detail_artifacts": []
+      },
+      {
+        "source": "/WOEK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/analysis/FACHVOLLSTAENDIGKEIT-SHARD-2-OF-4-20260819T1242CEST.jsonl",
+        "sha256": "2c52b7c9e8618c298ad99f0046108ddf1d6c46cbb8829ec7aa5999ca8072c325",
+        "source_records": 6,
+        "records": 6,
+        "detail_artifacts": []
+      },
+      {
+        "source": "/WOEK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/analysis/FACHVOLLSTAENDIGKEIT-SHARD-3-OF-4-20260819T123140CEST.jsonl",
+        "sha256": "2bcadf3730933b936b4edc63d77581aa4f7968ead65a1b7896302d2273ee8d4b",
+        "source_records": 9,
+        "records": 9,
+        "detail_artifacts": []
+      },
+      {
+        "source": "/WOEK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/analysis/FACHVOLLSTAENDIGKEIT-SHARD-0-OF-4-20260819T1322CEST.jsonl",
+        "sha256": "d972c3910b8da1ebcd3dc989ac9a4932a8a0f593a1b8505783c08089bf6e85f1",
+        "source_records": 7,
+        "records": 7,
+        "detail_artifacts": []
+      },
+      {
+        "source": "/WOEK/WOEK-EU-DAILY/FACHREVIEW/FACHVOLLSTAENDIGKEIT-SHARD-1-OF-4-20260819T1334CEST.jsonl",
+        "sha256": "ee3fa04e6b4a9d3afdcf561138ffa2ad5c6af40941bb826914ee0243c6dfbadd",
+        "source_records": 3,
+        "records": 3,
+        "detail_artifacts": []
+      },
+      {
+        "source": "/WOEK/WOEK-EU-DAILY/FACHREVIEW/FACHVOLLSTAENDIGKEIT-SHARD-2-OF-4-20260819T1328CEST.jsonl",
+        "sha256": "b9cb5d49887a56a180636c61979ec36dd77a89f54880917feadca221d28722a9",
+        "source_records": 5,
+        "records": 5,
+        "detail_artifacts": []
+      },
+      {
+        "source": "/WOEK/WOEK-PARLAMENT-DAILY/FACHREVIEW/FACHVOLLSTAENDIGKEIT-SHARD-2-OF-4-20260819T1345CEST.jsonl",
+        "sha256": "ebd3a901f24eb32917ac25df5b61ba0cbd361a4cb9293eaebcb781156897895a",
+        "source_records": 4,
+        "records": 4,
+        "detail_artifacts": []
+      },
+      {
+        "source": "/WOEK/WOEK-EU-DAILY/FACHREVIEW/FACHVOLLSTAENDIGKEIT-SHARD-0-OF-4-20260819T1427CEST.jsonl",
+        "sha256": "7ef4668ebcfae589bc4e9a43956004dc6fb350ee0cc64531722d6ad55e9f53c9",
+        "source_records": 5,
+        "records": 5,
+        "detail_artifacts": []
+      },
+      {
+        "source": "/WOEK/WOEK-PARLAMENT-DAILY/FACHREVIEW/FACHVOLLSTAENDIGKEIT-SHARD-1-OF-4-20260819T1423CEST.jsonl",
+        "sha256": "357af127701f677254f5b706414bf7d5207b8ce7306649d002c9d9eb52f2777a",
+        "source_records": 3,
+        "records": 3,
+        "detail_artifacts": []
+      },
+      {
+        "source": "/WOEK/WOEK-PARLAMENT-DAILY/FACHREVIEW/FACHVOLLSTAENDIGKEIT-SHARD-0-OF-4-20260819T1500CEST.jsonl",
+        "sha256": "7ccb3589a284af08820ebf0ebd35c6edf423a3f54e72d4378f8116babd003512",
+        "dropbox_content_hash": "96deb2629fee05847e700e967c7a25bd26b62af5048bdcb669b181a65416cb26",
+        "source_records": 6,
+        "records": 6,
+        "detail_artifacts": [
+          {
+            "path": "/WOEK/WOEK-PARLAMENT-DAILY/FACHREVIEW/FACHVOLLSTAENDIGKEIT-SHARD-0-OF-4-20260819T1500CEST-bt21-dip-f562f80bc03c.json",
+            "sha256": "6740d2e3d734524272c155f75cb997a1d14938232c80e080c522b9a1d4f1bc89",
+            "impact_case_id": "bt21-dip-f562f80bc03c"
+          },
+          {
+            "path": "/WOEK/WOEK-PARLAMENT-DAILY/FACHREVIEW/FACHVOLLSTAENDIGKEIT-SHARD-0-OF-4-20260819T1500CEST-bt21-dip-a035653fbebc.json",
+            "sha256": "f979278050a606f0893ddcbe8fb4aa61f14e1a1d30fd4adf7f374c85f2c73a03",
+            "impact_case_id": "bt21-dip-a035653fbebc"
+          },
+          {
+            "path": "/WOEK/WOEK-PARLAMENT-DAILY/FACHREVIEW/FACHVOLLSTAENDIGKEIT-SHARD-0-OF-4-20260819T1500CEST-bt21-dip-8d2a11d412de.json",
+            "sha256": "193b5c0b3dda6cf7e58d668a1cd1a43621b7fd6c50c25ca16b8e37b0fb6e5c8e",
+            "impact_case_id": "bt21-dip-8d2a11d412de"
+          },
+          {
+            "path": "/WOEK/WOEK-PARLAMENT-DAILY/FACHREVIEW/FACHVOLLSTAENDIGKEIT-SHARD-0-OF-4-20260819T1500CEST-bt21-dip-c262bf7797f8.json",
+            "sha256": "497094051787f68d4ac70e587f0ab32ce4690660bc5f58a20fd40c17dcd32fdf",
+            "impact_case_id": "bt21-dip-c262bf7797f8"
+          },
+          {
+            "path": "/WOEK/WOEK-PARLAMENT-DAILY/FACHREVIEW/FACHVOLLSTAENDIGKEIT-SHARD-0-OF-4-20260819T1500CEST-bt21-dip-e89615651d49.json",
+            "sha256": "bc2e66c6694d183b5c8f8da68fbea3b74fa7ee14fe2d548bd03de169b9da969f",
+            "impact_case_id": "bt21-dip-e89615651d49"
+          },
+          {
+            "path": "/WOEK/WOEK-PARLAMENT-DAILY/FACHREVIEW/FACHVOLLSTAENDIGKEIT-SHARD-0-OF-4-20260819T1500CEST-bt21-dip-0b72759f3d8c.json",
+            "sha256": "9154d9a3348e80507abc00b43352ea7fabf1a88d24c742a5d7206164715a34eb",
+            "impact_case_id": "bt21-dip-0b72759f3d8c"
+          }
+        ]
+      }
+    ]
+  },
+  "common_targets": {
+    "records": 9,
+    "unique_impact_case_ids": 9,
+    "unique_recommendation_ids": 9,
+    "sources": [
+      {
+        "source": "/WOEK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/analysis/COMMON-TARGETS-REVIEW-20260819T1229CEST.jsonl",
+        "sha256": "f46a6abfec8f73f6a88edf74f32b6abd41df992a076f20473b0265f43bf0fc57",
+        "records": 3
+      },
+      {
+        "source": "/WOEK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/analysis/COMMON-TARGETS-REVIEW-20260819T1252CEST.jsonl",
+        "sha256": "5f94f6c83d061194b916a05dec7957a81746dcb6683c57dcf04cc562f65781cf",
+        "records": 4
+      },
+      {
+        "source": "/WOEK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/analysis/COMMON-TARGETS-REVIEW-20260819T1432CEST.jsonl",
+        "sha256": "00dc34c956a037e9ce930086063981a1e9de93944ba97f06a0ab2b3125750790",
+        "records": 2
+      }
+    ]
+  },
+  "gates": {
+    "no_fach_rewrite": true,
+    "no_recommendation_mutation": true,
+    "no_machine_mapping": true,
+    "open_is_not_neutral": true,
+    "budget_2027_non_aggregable": true
+  }
+}

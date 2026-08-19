@@ -57,4 +57,6 @@ test("long public content wraps inside assessment, source, search and impact sur
   assert.match(styles, /\.source-archive-list h2[^}]+overflow-wrap: anywhere/);
   assert.match(styles, /\.overview-assessment-axis dd[^}]+overflow-wrap: anywhere/);
   assert.match(styles, /\.page-intro h1[^}]+overflow-wrap: anywhere/);
+  assert.match(styles, /\.breadcrumb \{[^}]*flex-wrap: wrap/);
+  assert.match(styles, /\.breadcrumb > \* \{[^}]*overflow-wrap: anywhere/);
 });

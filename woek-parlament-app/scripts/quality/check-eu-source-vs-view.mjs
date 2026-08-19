@@ -4,6 +4,26 @@ import { readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { projectEuEditorial } from "../../lib/publication/public-editorial-projection.mjs";
 
+const sourceFunctionLabels = {
+  LEGAL_ACT_AND_POLICY_DESIGN: "Rechtsakt und politische Ausgestaltung",
+  MECHANISM_AND_SCOPE_BASELINE: "Ausgangslage für Wirkmechanismus und Regelungsumfang",
+  NOT_OUTCOME_ATTRIBUTION: "kein Nachweis beobachteter oder zurechenbarer Wirkung",
+  POLICY_DESIGN: "politische Ausgestaltung",
+  MARKET_MECHANISM_REFERENCE: "Referenz für den Marktmechanismus",
+  EARLY_CONTEXT_OBSERVATION: "frühe Kontextbeobachtung",
+  NOT_CAUSAL_ATTRIBUTION: "keine kausale Zurechnung",
+  STRATEGY_AND_IMPLEMENTATION_DESIGN: "Strategie und Umsetzungsarchitektur",
+  CAPACITY_MECHANISM_BASELINE: "Ausgangslage für den Kapazitätsmechanismus",
+  NOT_AVOIDED_DAMAGE_PROOF: "kein Nachweis vermiedener Schäden",
+  LEGISLATIVE_PROPOSAL_AND_POLICY_DESIGN: "Gesetzgebungsvorschlag und politische Ausgestaltung",
+  SUPPLY_RESILIENCE_MECHANISM: "Mechanismus der Versorgungsresilienz",
+  NOT_SHORTAGE_OUTCOME_PROOF: "kein Nachweis verringerter Versorgungsengpässe",
+  SECURITY_STRATEGY_AND_GOVERNANCE_DESIGN: "Sicherheitsstrategie und Governance-Architektur",
+  COORDINATION_MECHANISM: "Koordinationsmechanismus",
+  FUNDAMENTAL_RIGHTS_RISK_REFERENCE: "Referenz für Grundrechtsrisiken",
+  NOT_SECURITY_OUTCOME_ATTRIBUTION: "keine Zurechnung einer beobachteten Sicherheitswirkung",
+};
+
 const baseUrl = (process.env.WOEK_SOURCE_VS_VIEW_BASE_URL ?? "http://localhost:3000").replace(/\/$/, "");
 const outputFile = process.env.WOEK_EU_SOURCE_VS_VIEW_REPORT ?? null;
 const requestHeaders = process.env.WOEK_SOURCE_VS_VIEW_COOKIE ? { cookie: process.env.WOEK_SOURCE_VS_VIEW_COOKIE } : {};
@@ -22,6 +42,16 @@ for (const { record, editorial } of records) {
   for (const value of [record.title, editorial.fields.overview_assessment_label, editorial.fields.impact_core_summary, editorial.fields.editorial_summary, editorial.fields.evidence_summary, editorial.fields.key_finding, editorial.fields.reality_check_summary].filter(Boolean)) {
     result.fields_checked += 1;
     if (!text.includes(visible(value))) { const message = `Feld fehlt: ${visible(value).slice(0, 80)}`; failures.push(`${record.impact_case_id}: ${message}`); result.failures.push(message); }
+  }
+  if (record.editorial_evidence_overlay) {
+    for (const value of [...(record.source_function ?? []).map((entry) => sourceFunctionLabels[entry]).filter(Boolean), ...(record.limitations ?? [])]) {
+      result.fields_checked += 1;
+      if (!text.includes(visible(value))) { const message = `Evidenz-Overlay-Feld fehlt: ${visible(value).slice(0, 80)}`; failures.push(`${record.impact_case_id}: ${message}`); result.failures.push(message); }
+    }
+    const sourceCount = new Set([...(record.official_sources ?? []), ...(record.source_refs ?? [])]).size;
+    result.fields_checked += 1;
+    const renderedSourceCount = (text.match(/Quellenakte öffnen/g) ?? []).length;
+    if (renderedSourceCount < sourceCount) { const message = `Evidenzquellen unvollständig: ${renderedSourceCount}/${sourceCount}`; failures.push(`${record.impact_case_id}: ${message}`); result.failures.push(message); }
   }
   for (const label of ["Executive-WÖk-Zusammenfassung", "Wirkungspotenzial kompakt", "Wirkungsrichtung", "Evidenzstatus", "Reality-Check", "WÖk-Handlungsoption wird fachlich ergänzt.", "Vollständige EU-Fachakte"]) {
     result.fields_checked += 1;

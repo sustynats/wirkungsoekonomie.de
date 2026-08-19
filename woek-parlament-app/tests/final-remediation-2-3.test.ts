@@ -72,7 +72,9 @@ test("remediated Parliament delivery is complete, READY is last, and votes stay 
   const ready = JSON.parse(readFileSync(`${root}/READY.json`, "utf8"));
   const manifestHash = createHash("sha256").update(readFileSync(`${root}/MANIFEST.json`)).digest("hex");
   assert.equal(ready.manifest_sha256, manifestHash);
-  assert.ok(statSync(`${root}/READY.json`).mtimeMs >= Math.max(...required.filter((name) => name !== "READY.json").map((name) => statSync(`${root}/${name}`).mtimeMs)));
+  assert.equal(ready.delivery_id, manifest.delivery_id);
+  assert.equal(ready.validation, "PASS_COMPLETE_FAIL_CLOSED_PACKAGE");
+  assert.ok(Date.parse(ready.ready_at) >= Date.parse(manifest.created_at));
 });
 
 test("observatory chain links source, observation, EvidenceEvent and RealityCheckCandidate", () => {

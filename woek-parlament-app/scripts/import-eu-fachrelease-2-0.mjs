@@ -3,6 +3,7 @@
 import { createHash } from "node:crypto";
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
+import { projectEuEditorial } from "../lib/publication/public-editorial-projection.mjs";
 
 const projectRoot = process.cwd();
 const sourceRoot = process.env.WOEK_EU_FACHRELEASE_ROOT;
@@ -54,6 +55,21 @@ const byIndex = new Map(readJsonl(indexFile).map((record) => [record.impact_case
 const addendumFile = path.join(fachRoot, "EU-WAVE-1-EDITORIAL-COMPETENCE-ADDENDUM-2.0-2026-08-18.jsonl");
 const addendumContent = readFileSync(addendumFile, "utf8");
 const addenda = new Map(readJsonl(addendumFile).map((record) => [record.extends_impact_case_id, record]));
+const evidenceBackfillFile = path.join(fachRoot, "EU-EDITORIAL-EVIDENCE-BACKFILL-20260819T1620CEST.jsonl");
+const evidenceBackfillValidationFile = path.join(fachRoot, "EU-EDITORIAL-EVIDENCE-BACKFILL-20260819T1620CEST-VALIDATION.json");
+const evidenceBackfillContent = readFileSync(evidenceBackfillFile, "utf8");
+const evidenceBackfillValidationContent = readFileSync(evidenceBackfillValidationFile, "utf8");
+const evidenceBackfillValidation = JSON.parse(evidenceBackfillValidationContent);
+const evidenceBackfillRecords = readJsonl(evidenceBackfillFile);
+const expectedEvidenceBackfillIds = ["EU-IMPACT-2026-001", "EU-IMPACT-2026-003", "EU-IMPACT-2026-005", "EU-IMPACT-2026-019", "EU-IMPACT-2026-020"];
+if (evidenceBackfillValidation.status !== "PASS_5_OF_5" || evidenceBackfillRecords.length !== expectedEvidenceBackfillIds.length) {
+  throw new Error("EU evidence backfill validation did not pass 5/5.");
+}
+if (new Set(evidenceBackfillRecords.map((record) => record.impact_case_id)).size !== expectedEvidenceBackfillIds.length
+  || expectedEvidenceBackfillIds.some((id) => !evidenceBackfillRecords.some((record) => record.impact_case_id === id))) {
+  throw new Error("EU evidence backfill identities do not match the approved five-case handoff.");
+}
+const evidenceBackfills = new Map(evidenceBackfillRecords.map((record) => [record.impact_case_id, record]));
 const records = [];
 const audit = [];
 
@@ -64,6 +80,7 @@ for (const wave of [1, 2, 3]) {
   const markdownContent = readFileSync(path.join(fachRoot, markdownName), "utf8");
   for (const raw of readJsonl(path.join(fachRoot, jsonName))) {
     const merged = { ...raw, ...(addenda.get(raw.impact_case_id) ?? {}) };
+    const evidenceBackfill = evidenceBackfills.get(raw.impact_case_id) ?? null;
     const indexed = byIndex.get(raw.impact_case_id);
     if (!indexed) throw new Error(`EU-Index fehlt: ${raw.impact_case_id}`);
     const fullAnalysisMarkdown = sectionFor(markdownContent, raw.impact_case_id);
@@ -87,6 +104,12 @@ for (const wave of [1, 2, 3]) {
       inherited_legislative_file: Boolean(raw.inherited_legislative_file),
       key_indicators: raw.key_indicators ?? [],
       official_sources: raw.official_sources ?? [],
+      evidence_summary: evidenceBackfill?.evidence_summary ?? null,
+      reality_check_summary: evidenceBackfill?.reality_check_summary ?? null,
+      source_function: evidenceBackfill?.source_function ?? [],
+      source_refs: evidenceBackfill?.source_refs ?? [],
+      limitations: evidenceBackfill?.limitations ?? [],
+      editorial_evidence_overlay: Boolean(evidenceBackfill),
       full_analysis_markdown: fullAnalysisMarkdown,
       publication_status: "APPROVED_INITIAL_FACHREVIEW",
       analysis_version: "2.0-initial",
@@ -98,7 +121,9 @@ for (const wave of [1, 2, 3]) {
         markdown_sha256: sha256(markdownContent),
         case_markdown_sha256: sha256(fullAnalysisMarkdown),
         initial_index_sha256: sha256(indexContent),
-        wave_1_addendum_sha256: wave === 1 ? sha256(addendumContent) : null
+        wave_1_addendum_sha256: wave === 1 ? sha256(addendumContent) : null,
+        editorial_evidence_backfill_sha256: evidenceBackfill ? sha256(evidenceBackfillContent) : null,
+        editorial_evidence_validation_sha256: evidenceBackfill ? sha256(evidenceBackfillValidationContent) : null
       },
       raw_record: raw
     };
@@ -122,7 +147,17 @@ for (const wave of [1, 2, 3]) {
 }
 
 if (records.length !== 21 || new Set(records.map((record) => record.impact_case_id)).size !== 21) throw new Error("EU initial coverage must be 21 unique cases.");
+for (const id of expectedEvidenceBackfillIds) {
+  const record = records.find((entry) => entry.impact_case_id === id);
+  const approved = evidenceBackfills.get(id);
+  if (!record || !approved) throw new Error(`${id}: approved evidence overlay is missing.`);
+  for (const field of ["evidence_summary", "reality_check_summary", "source_function", "source_refs", "limitations"]) {
+    if (JSON.stringify(record[field]) !== JSON.stringify(approved[field])) throw new Error(`${id}: ${field} is not an exact Fach projection.`);
+  }
+  if (projectEuEditorial(record).status !== "PASS") throw new Error(`${id}: reviewed evidence overlay did not pass the public editorial gate.`);
+}
 writeJsonl("public-impact-records.jsonl", records);
-writeJson("public-impact-records-meta.json", { status: "INITIALBASELINE_READY_FOR_STAGING", as_of: "2026-08-18", count: records.length, fact_coverage_is_not_impact_coverage: true, full_eu_coverage_claimed: false, recommendation_backfill_required: records.length });
+const editorialPublicCount = records.filter((record) => projectEuEditorial(record).status === "PASS").length;
+writeJson("public-impact-records-meta.json", { status: "INITIALBASELINE_READY_FOR_STAGING", as_of: "2026-08-19", count: records.length, editorial_public_count: editorialPublicCount, editorial_review_count: records.length - editorialPublicCount, evidence_overlay_count: evidenceBackfillRecords.length, fact_coverage_is_not_impact_coverage: true, full_eu_coverage_claimed: false, recommendation_backfill_required: records.length });
 writeJson("fachrelease-import-audit.json", audit);
 console.log(JSON.stringify({ status: "PASS", count: records.length }, null, 2));
