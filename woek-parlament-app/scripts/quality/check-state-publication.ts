@@ -1,0 +1,55 @@
+import assert from "node:assert/strict";
+import { readFileSync, statSync } from "node:fs";
+import { resolve } from "node:path";
+import { statePublicContent } from "../../lib/states/public-content";
+
+const reviews = [
+  {
+    slug: "baden-wuerttemberg",
+    path: "data/states/baden-wuerttemberg/approved-review-2026-08-18.md",
+    bytes: 9308,
+    ids: ["BW-IMPACT-2026-01", "BW-IMPACT-2026-02", "BW-IMPACT-2026-03", "BW-IMPACT-2026-04", "BW-IMPACT-2026-05"],
+  },
+  {
+    slug: "rheinland-pfalz",
+    path: "data/states/rheinland-pfalz/approved-review-2026-08-18.md",
+    bytes: 7199,
+    ids: ["RP-IMPACT-2026-01", "RP-IMPACT-2026-02", "RP-IMPACT-2026-03", "RP-IMPACT-2026-04"],
+  },
+  {
+    slug: "berlin",
+    path: "data/states/berlin/approved-review-2026-08-18.md",
+    bytes: 12016,
+    ids: ["BE-IMPACT-2026-01", "BE-IMPACT-2026-02", "BE-IMPACT-2026-03", "BE-IMPACT-2026-04", "BE-IMPACT-2026-05", "BE-IMPACT-2026-06"],
+  },
+  {
+    slug: "mecklenburg-vorpommern",
+    path: "data/states/mecklenburg-vorpommern/approved-review-2026-08-18.md",
+    bytes: 11801,
+    ids: ["MV-IMPACT-2026-01", "MV-IMPACT-2026-02", "MV-IMPACT-2026-03", "MV-IMPACT-2026-04", "MV-IMPACT-2026-05", "MV-IMPACT-2026-06", "MV-IMPACT-2026-07", "MV-IMPACT-2026-08"],
+  },
+] as const;
+
+for (const review of reviews) {
+  const absolutePath = resolve(process.cwd(), review.path);
+  assert.equal(statSync(absolutePath).size, review.bytes, `${review.slug}: canonical byte length changed`);
+  const markdown = readFileSync(absolutePath, "utf8");
+  for (const id of review.ids) assert.ok(markdown.includes(id), `${review.slug}: missing ${id}`);
+  assert.equal(statePublicContent[review.slug]?.review?.caseCount, review.ids.length, `${review.slug}: registry count mismatch`);
+}
+
+const mandate = statePublicContent["baden-wuerttemberg"]?.mandate;
+assert.ok(mandate, "Baden-Württemberg mandate missing");
+assert.equal(mandate.period, "2026-2031");
+assert.equal(mandate.governmentStart, "13.05.2026");
+assert.match(mandate.title, /Aus Verantwortung fürs Land/);
+assert.match(statePublicContent.berlin.electionField?.officialFieldLabel ?? "", /17 Parteien/);
+assert.match(statePublicContent["mecklenburg-vorpommern"].electionField?.officialFieldLabel ?? "", /19 Landeslisten/);
+
+console.log(JSON.stringify({
+  status: "pass",
+  sourceFidelity: "byte_length_and_canonical_impact_ids",
+  reviews: reviews.length,
+  impactCases: reviews.reduce((sum, review) => sum + review.ids.length, 0),
+  coalitionMandate: "baden-wuerttemberg-2026-2031",
+}));
