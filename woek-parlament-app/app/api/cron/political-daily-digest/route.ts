@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { processPoliticalDailyDigest } from "@/lib/autopilot/daily-digest-runner";
-import { bootstrapDisabledResponse, recurringWritersEnabled } from "@/lib/autopilot/runtime-mode";
+import { wirkungsradarDigestDelivery } from "@/lib/wirkungsradar/subscriptions";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -11,9 +11,17 @@ function isAuthorized(request: Request) {
   return Boolean(secret && request.headers.get("authorization") === `Bearer ${secret}`);
 }
 
+function digestReady() {
+  try {
+    return Boolean(wirkungsradarDigestDelivery());
+  } catch {
+    return false;
+  }
+}
+
 export async function GET(request: Request) {
   if (!isAuthorized(request)) return NextResponse.json({ error: "Unauthorized." }, { status: 401 });
-  if (!recurringWritersEnabled()) return NextResponse.json(bootstrapDisabledResponse(), { status: 503 });
+  if (!digestReady()) return NextResponse.json({ status: "NOT_CONFIGURED", reason: "Wirkungsradar daily digest delivery is not configured." }, { status: 503 });
   try {
     return NextResponse.json(await processPoliticalDailyDigest());
   } catch (error) {
