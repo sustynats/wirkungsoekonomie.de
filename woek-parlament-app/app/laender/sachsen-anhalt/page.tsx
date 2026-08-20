@@ -101,7 +101,7 @@ export default function SaxonyAnhaltPage() {
 
       <section className="shell section state-reference-framework" aria-labelledby="state-reference-title">
         <div className="section-heading"><div><p className="eyebrow">Referenzrahmen</p><h2 id="state-reference-title">Woran wird eine Veränderung bewertet?</h2></div><Link className="text-link" href="/laender/sachsen-anhalt/quellen#referenzrahmen">Grundlagen und Quellen <span aria-hidden="true">→</span></Link></div>
-        <p className="lead">SDGs, WÖk-SDG+, Mensch - Planet - Demokratie, Recht und die Nachhaltigkeitsstrategie Sachsen-Anhalts bilden getrennte Referenzebenen. Sie werden nicht zu einer verdeckten Gesamtpunktzahl verrechnet.</p>
+        <p className="lead">Der bestehende Referenzmix aus SDGs, SDG+, Mensch – Planet – Demokratie, Recht und Landeszielen bleibt unverändert. Diese Ebenen bilden getrennte Prüfanker und werden nicht zu einer verdeckten Gesamtpunktzahl verrechnet.</p>
         <div className="state-reference-grid">
           {saxonyAnhalt.referenceFramework?.map((reference) => <article key={reference.id}>
             <p className="reference-kind">{reference.id.includes("sdg-plus") ? "WÖk-Erweiterung" : reference.id.endsWith("-mpd") ? "Systemische Wirkungsordnung" : reference.authority === "GLOBAL" ? "Gemeinsamer Referenzrahmen" : reference.authority === "CONSTITUTIONAL" ? "Landesrechtlicher Prüfanker" : reference.authority === "STATE_STRATEGY" ? "Landesspezifische Ziele" : "Wirkungsraum"}</p>
