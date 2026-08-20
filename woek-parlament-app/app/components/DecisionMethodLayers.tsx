@@ -249,7 +249,7 @@ export function CommonTargetsComparison({ impactCaseId }: { impactCaseId: string
     {review && recommendation && <>
       <div className="common-target-options"><p><strong>Beschlossene Entscheidung:</strong> {review.actual_option.label}</p>{review.woek_option
         ? <p><strong>WÖk-Handlungsoption:</strong> {review.woek_option.label}</p>
-        : <p><strong>Keine robuste WÖk-Handlungsoption freigegeben.</strong> {review.not_applicable_reason}</p>}</div>
+        : <p><strong>Keine robuste WÖk-Handlungsoption freigegeben.</strong> {publicReviewProse(review.not_applicable_reason ?? "")}</p>}</div>
       {review.woek_option ? <>
       <div className="common-targets-table" role="table" aria-label="Vergleich nach getrennten Referenzebenen">
         <div className="common-targets-row common-targets-head" role="row"><span role="columnheader">Referenzebene</span><span role="columnheader">Beschlossene Entscheidung</span><span role="columnheader">WÖk-Handlungsoption</span></div>

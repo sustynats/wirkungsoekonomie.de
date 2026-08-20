@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function StatesPage() {
   return (
-    <main className="shell content-page states-page">
+    <div className="shell content-page states-page">
       <header className="page-intro">
         <p className="eyebrow">Länder</p>
         <h1>Gleicher Wirkungscheck. Eigene Zuständigkeiten.</h1>
@@ -44,6 +44,6 @@ export default function StatesPage() {
           })}
         </div>
       </section>
-    </main>
+    </div>
   );
 }

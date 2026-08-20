@@ -20,7 +20,7 @@ export default function SaxonyAnhaltPage() {
     .map((record) => [record.sourceKey as string, record]));
 
   return (
-    <main>
+    <div>
       <section className="shell state-hero-shell">
         <div className="state-hero">
           <div>
@@ -112,6 +112,6 @@ export default function SaxonyAnhaltPage() {
           <li><span>04</span><div><h3>Wirkungsmonitor</h3><p>Was lässt sich später tatsächlich beobachten und begründet zurückkoppeln?</p></div></li>
         </ol>
       </section>
-    </main>
+    </div>
   );
 }
