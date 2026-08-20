@@ -5,6 +5,8 @@ import publicationSources from "../../data/generated/release-1/publication-sourc
 import { politicalSourceCatalog } from "../../lib/commitments/source-catalog";
 import { saxonyAnhaltElectionProgrammes } from "../../data/sachsen-anhalt-election-programmes";
 import { saxonyAnhaltProgrammeEditorialV2 } from "../../data/presentation/sachsen-anhalt-programme-editorial-v2";
+import { saxonyAnhaltReviewedCommitmentCounts } from "../../data/presentation/sachsen-anhalt-programme-counts";
+import { buildSaxonyAnhaltProgrammeModel } from "../../lib/presentation/sachsen-anhalt-programme-model";
 import { statePublicContent } from "../../lib/states/public-content";
 import { stateJurisdictions, stateSlug } from "../../lib/autopilot/registry";
 
@@ -59,7 +61,9 @@ assert.match(federalDetailSource, /Vollständige Ex-ante-Fachakte vorhanden/, "f
 assert.match(federalDetailSource, /Generische oder nicht materiell beurteilbare Fragmente/, "federal detail must fail closed on low-quality fragments");
 
 let stateProgrammeObjects = 0;
-let stateProgrammeCommitments = 0;
+let stateProgrammeRegisterMetadataCommitments = 0;
+let stateProgrammeAnalysedCommitments = 0;
+let reviewMetadataVsAnalysedMismatches = 0;
 for (const programme of saxonyAnhaltElectionProgrammes) {
   const review = documents.filter((item) => item.source_key === programme.sourceKey && item.kind === "SAXONY_ANHALT_ELECTION_PROGRAMME_REVIEW");
   const commitments = documents.filter((item) => item.source_key === programme.sourceKey && item.kind === "SAXONY_ANHALT_COMMITMENT_REGISTER");
@@ -68,12 +72,19 @@ for (const programme of saxonyAnhaltElectionProgrammes) {
   const reviewCount = number(record(review[0].overview).commitment_count);
   const commitmentCount = number(record(commitments[0].overview).commitment_count);
   assert.ok(reviewCount && commitmentCount, `${programme.sourceKey}: commitment count missing`);
-  assert.equal(reviewCount, commitmentCount, `${programme.sourceKey}: review/register count mismatch`);
-  stateProgrammeCommitments += reviewCount;
+  assert.equal(reviewCount, commitmentCount, `${programme.sourceKey}: release metadata review/register count mismatch`);
+  stateProgrammeRegisterMetadataCommitments += commitmentCount;
   stateProgrammeObjects += 2;
+
   const editorial = saxonyAnhaltProgrammeEditorialV2[programme.sourceKey];
   assert.ok(editorial, `${programme.sourceKey}: editorial v2 missing`);
   const reviewMarkdown = readFileSync(path.join(root, "data/fachakten/release-1", string(review[0].markdown_file)), "utf8");
+  const registerMarkdown = readFileSync(path.join(root, "data/fachakten/release-1", string(commitments[0].markdown_file)), "utf8");
+  const model = buildSaxonyAnhaltProgrammeModel(reviewMarkdown, registerMarkdown);
+  const expectedAnalysedCount = saxonyAnhaltReviewedCommitmentCounts[programme.sourceKey];
+  assert.equal(model.commitments.length, expectedAnalysedCount, `${programme.sourceKey}: material review count changed; inspect source extraction before publishing`);
+  stateProgrammeAnalysedCommitments += model.commitments.length;
+  if (reviewCount !== model.commitments.length) reviewMetadataVsAnalysedMismatches += 1;
   for (const key of Object.keys(editorial.centralAssessments)) assert.ok(reviewMarkdown.includes(key), `${programme.sourceKey}: reviewed key absent from source review: ${key}`);
 }
 
@@ -83,6 +94,10 @@ const blueprintSource = readFileSync(path.join(root, "app/components/SaxonyAnhal
 assert.match(blueprintSource, /nicht mehr als aktuelle Kurzbewertung verwendet/, "legacy generic paths must not be current short assessments");
 assert.match(blueprintSource, /Wirkungsrichtung/, "direction must be visible");
 assert.match(blueprintSource, /Evidenz/, "evidence must be visible separately");
+
+const stateOverviewSource = readFileSync(path.join(root, "app/laender/sachsen-anhalt/page.tsx"), "utf8");
+assert.match(stateOverviewSource, /saxonyAnhaltReviewedCommitmentCounts/, "Sachsen-Anhalt overview must use material analysed counts, not ambiguous release metadata");
+assert.doesNotMatch(stateOverviewSource, /overview\.commitment_count/, "Sachsen-Anhalt overview must not expose ambiguous release metadata as analysed count");
 
 assert.equal(stateJurisdictions.length, 16, `expected 16 state jurisdictions, got ${stateJurisdictions.length}`);
 const stateSlugs = stateJurisdictions.map((item) => stateSlug(item.jurisdiction_id));
@@ -107,7 +122,9 @@ console.log(JSON.stringify({
   federalGenericPotentialMentions,
   federalEditorialReauditVisible: true,
   saxonyAnhaltProgrammeObjects: stateProgrammeObjects,
-  saxonyAnhaltCommitments: stateProgrammeCommitments,
+  saxonyAnhaltReleaseMetadataCommitments: stateProgrammeRegisterMetadataCommitments,
+  saxonyAnhaltAnalysedCommitments: stateProgrammeAnalysedCommitments,
+  saxonyAnhaltMetadataVsAnalysedCountMismatches: reviewMetadataVsAnalysedMismatches,
   saxonyAnhaltBlueprint: "v3",
   stateJurisdictions: stateJurisdictions.length,
   statePublicReviews: Object.values(statePublicContent).filter((item) => item.review).length,
