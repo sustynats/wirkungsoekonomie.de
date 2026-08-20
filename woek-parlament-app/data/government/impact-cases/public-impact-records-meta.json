@@ -4,8 +4,8 @@
   "impact_cases_total": 63,
   "impact_cases_full_schema_2_0_1": 6,
   "impact_cases_compact_source_preserved": 57,
-  "impact_cases_published": 53,
-  "impact_cases_blocked_editorial_quality": 10,
+  "impact_cases_published": 63,
+  "impact_cases_blocked_editorial_quality": 0,
   "fach_content_loss": 0,
   "editorial_layer_status": "LEADING_PUBLIC_EDITORIAL_LAYER",
   "editorial_layer_coverage": 63,
@@ -21,5 +21,6 @@
     "GOVERNMENT-EDITORIAL-EVIDENCE-BACKFILL-2026-08-18-14H-B01.jsonl": "031a7e67d2eba4ff3ad4b2758c317b4a4baf64cb4acc064646baa572186f7560",
     "GOVERNMENT-EDITORIAL-EVIDENCE-BACKFILL-2026-08-18-14H-B02.jsonl": "491df1f67f0d595337c3f9be7b58930345ec28a28880d8f00e843e67dbc32d0b"
   },
-  "note": "Alle 63 Fachdatensätze bleiben verlustfrei erhalten. Öffentlich als fertige WÖk-Analyse erscheinen nur Fälle, die zusätzlich das fachliche und das gerenderte redaktionelle P0-Gate bestehen. Nicht bestandene Fälle verbleiben mit vollständigem Fachtext im Review-Store; CodeX erzeugt keine Ersatztexte."
+  "note": "Alle 63 Fachdatensätze bleiben verlustfrei erhalten. Nach dem fachlich freigegebenen B07-Reconciliation-Handoff bestehen alle 63 Fälle das fachliche und gerenderte redaktionelle P0-Gate. CodeX hat keine Ersatztexte oder Empfehlungen erzeugt.",
+  "b07_reconciliation_status": "ALL_10_REVIEW_CASES_APPROVED_AND_PROMOTED"
 }

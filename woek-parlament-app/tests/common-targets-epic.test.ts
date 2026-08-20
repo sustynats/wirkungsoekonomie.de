@@ -72,12 +72,12 @@ test("both method pages use the complete canonical sequence and measurement arch
   assert.doesNotMatch(governmentPage, /Die sechs Module der Wirkungsprüfung/);
 });
 
-test("reviewed method stores contain only the centrally approved B06 records", () => {
+test("reviewed method stores contain the centrally approved B07 records", () => {
   const records = source("data/method/public-decision-reviews.jsonl").trim().split("\n").map((line) => JSON.parse(line));
   const targets = source("data/method/public-common-target-reviews.jsonl").trim().split("\n").map((line) => JSON.parse(line));
   assert.equal(records.length, 99);
   assert.equal(new Set(records.map((record) => record.impact_case_id)).size, 99);
-  assert.equal(targets.length, 9);
-  assert.equal(new Set(targets.map((record) => record.impact_case_id)).size, 9);
+  assert.equal(targets.length, 13);
+  assert.equal(new Set(targets.map((record) => record.impact_case_id)).size, 13);
   assert.ok(targets.every((record) => record.machine_mapping_public_allowed === false));
 });

@@ -52,6 +52,10 @@ try {
     WOEK_SOURCE_VS_VIEW_BASE_URL: baseUrl,
     WOEK_EU_SOURCE_VS_VIEW_REPORT: path.join(auditRoot, "EU-SOURCE-VS-VIEW-B07.json"),
   });
+  await run(process.execPath, ["scripts/quality/check-b07-golden-state.mjs"], {
+    WOEK_GOLDEN_STATE_BASE_URL: baseUrl,
+    WOEK_GOLDEN_STATE_REPORT: path.join(auditRoot, "GOLDEN-STATE-B07.json"),
+  });
   console.log(JSON.stringify({ status: "B07_RENDERED_SOURCE_VIEW_AUDITS_PASS", base_url: baseUrl }, null, 2));
 } finally {
   server.kill("SIGTERM");

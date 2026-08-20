@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { createHash } from "node:crypto";
-import { readFileSync, writeFileSync } from "node:fs";
+import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import Ajv2020 from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
@@ -20,6 +20,14 @@ const CT_JSONL = `${ANALYSIS_ROOT}/COMMON-TARGETS-REVIEW-20260819T1857CEST.jsonl
 const CT_VALIDATION = `${ANALYSIS_ROOT}/COMMON-TARGETS-REVIEW-20260819T1857CEST-VALIDATION.json`;
 const EDITORIAL_HANDOFF = `${CONTROL_ROOT}/BRIDGE/WOEK-GOVERNMENT-EDITORIAL-EVIDENCE-B03-20260819-FINAL.json`;
 const EDITORIAL_JSONL = `${ANALYSIS_ROOT}/GOVERNMENT-EDITORIAL-EVIDENCE-BACKFILL-2026-08-19-FINAL-B03.jsonl`;
+const LOCAL_CANONICAL_ROOT = process.env.WOEK_LOCAL_ROOT?.trim() || null;
+const recommendationsFile = path.join(process.cwd(), "data", "recommendations", "public", "recommendations.jsonl");
+const commonTargetsFile = path.join(process.cwd(), "data", "method", "public-common-target-reviews.jsonl");
+const publicGovernmentFile = path.join(process.cwd(), "data", "government", "impact-cases", "public-impact-records.jsonl");
+const reviewGovernmentFile = path.join(process.cwd(), "data", "government", "impact-cases", "review-impact-records.jsonl");
+const governmentMetaFile = path.join(process.cwd(), "data", "government", "impact-cases", "public-impact-records-meta.json");
+const exclusionsFile = path.join(process.cwd(), "data", "method", "publication-exclusions-b07.json");
+const materializedManifestFile = path.join(process.cwd(), "data", "method", "fachvollstaendigkeit-b07-manifest.json");
 
 const expectedNewRecommendationIds = new Set([
   "WOEK-REC-BUND-ABSCHIEBEHAFT-RECHTSBEISTAND-2026-R1",
@@ -52,6 +60,14 @@ const terminalRecommendationStatuses = new Set([
 ]);
 
 function sha256(value) { return createHash("sha256").update(value).digest("hex"); }
+function dropboxContentHash(bytes) {
+  const blockSize = 4 * 1024 * 1024;
+  const blockHashes = [];
+  for (let offset = 0; offset < bytes.length; offset += blockSize) {
+    blockHashes.push(createHash("sha256").update(bytes.subarray(offset, offset + blockSize)).digest());
+  }
+  return sha256(Buffer.concat(blockHashes));
+}
 function readJsonlText(text) { return text.split(/\r?\n/).map((line) => line.trim()).filter(Boolean).map((line) => JSON.parse(line)); }
 function readJsonlFile(file) { return readJsonlText(readFileSync(file, "utf8")); }
 function writeJsonlFile(file, records) { writeFileSync(file, `${records.map((record) => JSON.stringify(record)).join("\n")}\n`); }
@@ -79,6 +95,19 @@ async function dropboxAccessToken() {
 }
 async function download(token, target) {
   assertManagedPath(target);
+  if (LOCAL_CANONICAL_ROOT) {
+    const localRoot = path.resolve(LOCAL_CANONICAL_ROOT);
+    const localTarget = path.resolve(localRoot, target.slice(`${ROOT}/`.length));
+    if (!localTarget.startsWith(`${localRoot}${path.sep}`)) throw new Error(`B07_LOCAL_SOURCE_PATH_ESCAPE:${target}`);
+    const bytes = readFileSync(localTarget);
+    return {
+      bytes,
+      metadata: {
+        content_hash: dropboxContentHash(bytes),
+        path_display: target,
+      },
+    };
+  }
   const response = await fetch("https://content.dropboxapi.com/2/files/download", {
     method: "POST",
     headers: { authorization: `Bearer ${token}`, "dropbox-api-arg": JSON.stringify({ path: target }) },
@@ -132,7 +161,34 @@ function validateEditorialOverlay(record) {
   for (const key of ["overview_assessment_label", "impact_core_summary", "editorial_summary", "key_finding", "evidence_summary", "reality_check_summary", "public_evidence_explanation", "boundary_review_note"]) if (typeof record[key] !== "string" || record[key].trim().length < 30) throw new Error(`B07_EDITORIAL_FIELD:${record.impact_case_id}:${key}`);
 }
 
-const token = await dropboxAccessToken();
+if (existsSync(materializedManifestFile) && process.env.WOEK_FORCE_B07_MATERIALIZE !== "1") {
+  const existing = JSON.parse(readFileSync(materializedManifestFile, "utf8"));
+  const outputs = {
+    recommendations: recommendationsFile,
+    common_targets: commonTargetsFile,
+    government_public: publicGovernmentFile,
+    government_review: reviewGovernmentFile,
+    government_meta: governmentMetaFile,
+    publication_exclusions: exclusionsFile,
+  };
+  const counts = {
+    recommendations: readJsonlFile(recommendationsFile).length,
+    common_targets: readJsonlFile(commonTargetsFile).length,
+    government_public: readJsonlFile(publicGovernmentFile).length,
+    government_review: readJsonlFile(reviewGovernmentFile).length,
+  };
+  const hashesPass = Object.entries(outputs).every(([key, file]) => existing.public_output_hashes?.[key]?.sha256 === sha256(readFileSync(file)));
+  const gatesPass = existing.merge_id === "FACHVOLLSTAENDIGKEIT-B07-20260819T1935CEST"
+    && Object.values(existing.gates ?? {}).every(Boolean)
+    && counts.recommendations === 13 && counts.common_targets === 13
+    && counts.government_public === 63 && counts.government_review === 0
+    && hashesPass;
+  if (!gatesPass) throw new Error(`B07_COMMITTED_PUBLIC_STORE_VALIDATION_FAIL:${JSON.stringify(counts)}:${hashesPass}`);
+  console.log(JSON.stringify({ status: "B07_COMMITTED_PUBLIC_STORE_PASS", ...counts, canonical_source_hashes_preserved: true }, null, 2));
+  process.exit(0);
+}
+
+const token = LOCAL_CANONICAL_ROOT ? null : await dropboxAccessToken();
 const [recHandoffRead, recRead, ledgerRead, b07HandoffRead, reconciliationRead, ctHandoffRead, ctRead, ctValidationRead, editorialHandoffRead, editorialRead] = await Promise.all([
   download(token, REC_HANDOFF), download(token, REC_JSONL), download(token, LEDGER_CURRENT),
   download(token, B07_HANDOFF), download(token, RECONCILIATION_JSONL),
@@ -185,10 +241,12 @@ const reconciliationOverlays = readJsonlText(reconciliationRead.bytes.toString("
 if (reconciliationOverlays.length !== 10 || new Set(reconciliationOverlays.map((record) => record.impact_case_id)).size !== 10) throw new Error("B07_RECONCILIATION_COUNT_FAIL");
 reconciliationOverlays.forEach(validateReconciliationOverlay);
 
-const recommendationsFile = path.join(process.cwd(), "data", "recommendations", "public", "recommendations.jsonl");
-const commonTargetsFile = path.join(process.cwd(), "data", "method", "public-common-target-reviews.jsonl");
-const publicGovernmentFile = path.join(process.cwd(), "data", "government", "impact-cases", "public-impact-records.jsonl");
-const reviewGovernmentFile = path.join(process.cwd(), "data", "government", "impact-cases", "review-impact-records.jsonl");
+const baseline = {
+  recommendation_ids: readJsonlFile(recommendationsFile).map((record) => record.recommendation_id).sort(),
+  common_target_review_ids: readJsonlFile(commonTargetsFile).map((record) => record.common_targets_review_id).sort(),
+  government_public_ids: readJsonlFile(publicGovernmentFile).map((record) => record.impact_case_id).sort(),
+  government_review_ids: readJsonlFile(reviewGovernmentFile).map((record) => record.impact_case_id).sort(),
+};
 const publicRecommendations = mergeUnique(readJsonlFile(recommendationsFile), newRecommendations, "recommendation_id", "RECOMMENDATION");
 const publicCommonTargets = mergeUnique(readJsonlFile(commonTargetsFile), newCommonTargets, "common_targets_review_id", "COMMON_TARGET");
 if (publicRecommendations.length !== 13 || publicCommonTargets.length !== 13) throw new Error(`B07_PUBLIC_COUNTS_FAIL:${publicRecommendations.length}:${publicCommonTargets.length}`);
@@ -248,6 +306,14 @@ if (new Set(publicGovernment.map((record) => record.impact_case_id)).size !== pu
 if (publicGovernment.length !== 63 || reviewGovernment.length !== 0 || promoted.length !== 10) throw new Error(`B07_GOVERNMENT_TARGET_FAIL:${publicGovernment.length}:${reviewGovernment.length}:${promoted.length}`);
 writeJsonlFile(publicGovernmentFile, publicGovernment);
 writeJsonlFile(reviewGovernmentFile, reviewGovernment);
+const governmentMeta = JSON.parse(readFileSync(governmentMetaFile, "utf8"));
+writeFileSync(governmentMetaFile, `${JSON.stringify({
+  ...governmentMeta,
+  impact_cases_published: publicGovernment.length,
+  impact_cases_blocked_editorial_quality: reviewGovernment.length,
+  b07_reconciliation_status: "ALL_10_REVIEW_CASES_APPROVED_AND_PROMOTED",
+  note: "Alle 63 Fachdatensätze bleiben verlustfrei erhalten. Nach dem fachlich freigegebenen B07-Reconciliation-Handoff bestehen alle 63 Fälle das fachliche und gerenderte redaktionelle P0-Gate. CodeX hat keine Ersatztexte oder Empfehlungen erzeugt.",
+}, null, 2)}\n`);
 
 const queueIds = new Set((recHandoff.newly_terminal_classifications ?? []).map((entry) => entry.impact_case_id));
 const ledgerById = new Map((ledger.records ?? []).map((entry) => [entry.impact_case_id, entry]));
@@ -276,7 +342,7 @@ const exclusionReport = {
   eu_editorial_exclusion_count: remainingEuExclusions.length,
   semantics: "Exclusion is an explicit fail-closed publication state, not a neutral or negative impact judgment and not an unreviewed queue item.",
 };
-writeFileSync(path.join(process.cwd(), "data", "method", "publication-exclusions-b07.json"), `${JSON.stringify(exclusionReport, null, 2)}\n`);
+writeFileSync(exclusionsFile, `${JSON.stringify(exclusionReport, null, 2)}\n`);
 
 const manifest = {
   schema_version: "woek-fachvollstaendigkeit-public-materialization-1.1",
@@ -318,6 +384,30 @@ const manifest = {
     eu: remainingEuExclusions.length,
     exact_report: "data/method/publication-exclusions-b07.json",
   },
+  public_output_hashes: {
+    recommendations: { path: "data/recommendations/public/recommendations.jsonl", sha256: sha256(readFileSync(recommendationsFile)) },
+    common_targets: { path: "data/method/public-common-target-reviews.jsonl", sha256: sha256(readFileSync(commonTargetsFile)) },
+    government_public: { path: "data/government/impact-cases/public-impact-records.jsonl", sha256: sha256(readFileSync(publicGovernmentFile)) },
+    government_review: { path: "data/government/impact-cases/review-impact-records.jsonl", sha256: sha256(readFileSync(reviewGovernmentFile)) },
+    government_meta: { path: "data/government/impact-cases/public-impact-records-meta.json", sha256: sha256(readFileSync(governmentMetaFile)) },
+    publication_exclusions: { path: "data/method/publication-exclusions-b07.json", sha256: sha256(readFileSync(exclusionsFile)) },
+  },
+  semantic_diff_against_accepted_production: {
+    accepted_production_baseline: "pre-B07 source state on reconciled post-235 main",
+    government_public_ids_before: baseline.government_public_ids,
+    government_public_ids_after: publicGovernment.map((record) => record.impact_case_id).sort(),
+    government_public_ids_added: publicGovernment.map((record) => record.impact_case_id).filter((id) => !baseline.government_public_ids.includes(id)).sort(),
+    government_public_ids_lost: baseline.government_public_ids.filter((id) => !publicGovernment.some((record) => record.impact_case_id === id)),
+    government_review_ids_before: baseline.government_review_ids,
+    government_review_ids_after: reviewGovernment.map((record) => record.impact_case_id).sort(),
+    recommendation_ids_before: baseline.recommendation_ids,
+    recommendation_ids_after: publicRecommendations.map((record) => record.recommendation_id).sort(),
+    recommendation_ids_lost: baseline.recommendation_ids.filter((id) => !publicRecommendations.some((record) => record.recommendation_id === id)),
+    common_target_review_ids_before: baseline.common_target_review_ids,
+    common_target_review_ids_after: publicCommonTargets.map((record) => record.common_targets_review_id).sort(),
+    common_target_review_ids_lost: baseline.common_target_review_ids.filter((id) => !publicCommonTargets.some((record) => record.common_targets_review_id === id)),
+    fach_content_degraded_to_fact_only_or_open: [],
+  },
   gates: {
     no_recommendation_generated_by_code: true,
     no_machine_common_target_mapping: true,
@@ -328,10 +418,14 @@ const manifest = {
     exclusion_reconciliation_projection_pass: promoted.length === 10,
     editorial_b03_projection_pass: promotedByB03.length === 2,
     open_is_not_neutral: true,
+    no_previously_public_government_case_lost: baseline.government_public_ids.every((id) => publicGovernment.some((record) => record.impact_case_id === id)),
+    no_previously_public_recommendation_lost: baseline.recommendation_ids.every((id) => publicRecommendations.some((record) => record.recommendation_id === id)),
+    no_previously_public_common_target_review_lost: baseline.common_target_review_ids.every((id) => publicCommonTargets.some((record) => record.common_targets_review_id === id)),
   },
 };
 if (!manifest.gates.common_targets_coverage_for_public_recommendations) throw new Error("B07_COMMON_TARGET_COVERAGE_FAIL");
-writeFileSync(path.join(process.cwd(), "data", "method", "fachvollstaendigkeit-b07-manifest.json"), `${JSON.stringify(manifest, null, 2)}\n`);
+if (!manifest.gates.no_previously_public_government_case_lost || !manifest.gates.no_previously_public_recommendation_lost || !manifest.gates.no_previously_public_common_target_review_lost) throw new Error("B07_GOLDEN_STATE_SEMANTIC_LOSS");
+writeFileSync(materializedManifestFile, `${JSON.stringify(manifest, null, 2)}\n`);
 
 console.log(JSON.stringify({
   status: "B07_MATERIALIZATION_PASS",

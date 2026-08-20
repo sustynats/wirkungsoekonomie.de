@@ -4,9 +4,9 @@ import { readFileSync } from "node:fs";
 import test from "node:test";
 
 const records = readFileSync("data/government/impact-cases/public-impact-records.jsonl", "utf8")
-  .trim().split("\n").map((line) => JSON.parse(line));
+  .split("\n").filter(Boolean).map((line) => JSON.parse(line));
 const reviewRecords = readFileSync("data/government/impact-cases/review-impact-records.jsonl", "utf8")
-  .trim().split("\n").map((line) => JSON.parse(line));
+  .split("\n").filter(Boolean).map((line) => JSON.parse(line));
 const meta = JSON.parse(readFileSync("data/government/impact-cases/public-impact-records-meta.json", "utf8"));
 const hash = (value: string) => createHash("sha256").update(value).digest("hex");
 
@@ -15,8 +15,8 @@ test("all 63 fachliche government ImpactCases are preserved across public and re
   assert.equal(reviewRecords.length, meta.impact_cases_blocked_editorial_quality);
   assert.equal(records.length + reviewRecords.length, 63);
   assert.equal(meta.impact_cases_total, 63);
-  assert.equal(meta.impact_cases_published, 53);
-  assert.equal(meta.impact_cases_blocked_editorial_quality, 10);
+  assert.equal(meta.impact_cases_published, 63);
+  assert.equal(meta.impact_cases_blocked_editorial_quality, 0);
   assert.equal(meta.editorial_evidence_backfill_count, 19);
   assert.equal(meta.impact_cases_full_schema_2_0_1, 6);
   assert.equal(meta.impact_cases_compact_source_preserved, 57);
@@ -54,9 +54,15 @@ test("records without a case-specific public evidence projection remain lossless
   }
 });
 
-test("all 19 approved backfill overlays are exact, additive and public", () => {
+test("the original 19 and all B07-approved editorial overlays are exact, additive and public", () => {
   const overlays = records.filter((record) => record.editorial_evidence_overlay);
-  assert.equal(overlays.length, 19);
+  const originalBackfillSources = new Set([
+    "GOVERNMENT-EDITORIAL-EVIDENCE-BACKFILL-2026-08-18-14H-B01.jsonl",
+    "GOVERNMENT-EDITORIAL-EVIDENCE-BACKFILL-2026-08-18-14H-B02.jsonl",
+  ]);
+  const originalBackfills = overlays.filter((record) => originalBackfillSources.has(record.editorial_evidence_overlay.source_file));
+  assert.equal(originalBackfills.length, 19);
+  assert.equal(overlays.length, 29);
   assert.ok(overlays.every((record) => record.editorial_evidence_overlay.fach_status === "APPROVED_FOR_PUBLIC_IMPORT"));
   assert.ok(overlays.every((record) => record.evidence_summary.length >= 60));
   assert.ok(overlays.every((record) => record.public_evidence_explanation.length >= 60));
