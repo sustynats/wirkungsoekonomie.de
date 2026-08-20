@@ -5,6 +5,7 @@ const links = [
   ["Wirkungsfälle", "/wirkungsfaelle"],
   ["Bundesregierung", "/regierung"],
   ["Bundestag", "/entscheidungen"],
+  ["Wahlprogramme & Koalition", "/mandat-und-praxis"],
   ["Bundesländer", "/laender"],
   ["Europäische Union", "/eu"],
   ["Methodik", "/methodik"],
@@ -13,7 +14,6 @@ const links = [
 
 const moreLinks = [
   ["Wirkungsobservatorium", "/wirkungsobservatorium"],
-  ["Mandat & Praxis", "/mandat-und-praxis"],
   ["Fachanalysen", "/fachanalysen"],
   ["Abstimmungsbilanz", "/abgeordnete"],
   ["Quellenarchiv", "/quellen"]
