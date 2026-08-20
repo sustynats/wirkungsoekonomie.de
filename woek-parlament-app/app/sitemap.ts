@@ -9,6 +9,7 @@ import { stateJurisdictions, stateSlug } from "@/lib/autopilot/registry";
 import { politicalSourceCatalog } from "@/lib/commitments/source-catalog";
 import { getAllCommunicationMediaImpactRecords } from "@/lib/state-programmes/communication-media-impact";
 import { sourceSlugForCanonicalUrl } from "@/lib/sources/url";
+import { actionPlanRequiredRoutes, actionPlanSources } from "@/lib/government/strategy-impact";
 
 const siteUrl = "https://parlament.wirkungsoekonomie.de";
 
@@ -56,6 +57,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     record.fach_source.url,
   ]).map(sourceSlugForCanonicalUrl).filter((slug): slug is string => Boolean(slug)))]
     .map((slug) => entry(`/quellen/${slug}`, "2026-08-20", .6));
+  const strategyEntries = actionPlanRequiredRoutes().map((path) => entry(path, "2026-08-18", .8));
+  const strategySourceRoutes = [...new Set(actionPlanSources.map((source) => sourceSlugForCanonicalUrl(source.url)).filter((slug): slug is string => Boolean(slug)))]
+    .map((slug) => entry(`/quellen/${slug}`, "2026-08-18", .6));
   const governmentImpacts = getPublicImpactCases();
   const euImpacts = getEuImpactCases();
   const governmentEntries = governmentImpacts.length ? [entry("/regierung/wirkungsanalysen", undefined, .9), ...governmentImpacts.map((record) => entry(`/regierung/wirkungsanalysen/${encodeURIComponent(record.impact_case_id)}`, record.analysis_as_of, .8))] : [];
@@ -63,5 +67,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const indicatorEntries = listDnsIndicators().map((item) => entry(`/methodik/wirkindikatoren/${item.indicator_id}`, undefined, .5));
   const stateEntries = stateJurisdictions.filter((item) => item.jurisdiction_id !== "DE-ST").map((item) => entry(`/laender/${stateSlug(item.jurisdiction_id)}`, undefined, .6));
   const mandateEntries = politicalSourceCatalog.map((item) => entry(`/mandat-und-praxis/${item.sourceKey}`, undefined, .7));
-  return [...staticEntries, ...cases, ...analyses, ...saxonyAnhaltProgrammes, ...communicationSourceRoutes, ...governmentEntries, ...euEntries, ...indicatorEntries, ...stateEntries, ...mandateEntries];
+  return [...staticEntries, ...cases, ...analyses, ...saxonyAnhaltProgrammes, ...communicationSourceRoutes, ...strategyEntries, ...strategySourceRoutes, ...governmentEntries, ...euEntries, ...indicatorEntries, ...stateEntries, ...mandateEntries];
 }

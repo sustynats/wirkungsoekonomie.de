@@ -3,6 +3,7 @@ import { GovernmentActionCard } from "@/app/components/government/GovernmentActi
 import { getGovernmentPublicData } from "@/lib/government/public-data";
 import { getPublicImpactCases } from "@/lib/government/impact-cases";
 import { GovernmentImpactCase } from "@/app/components/government/GovernmentImpactCase";
+import { ActionPlanMetaPreview } from "@/app/components/government/StrategyImpactCase";
 
 export default function GovernmentLandingPage() {
   const { actions } = getGovernmentPublicData();
@@ -46,7 +47,7 @@ export default function GovernmentLandingPage() {
       <section className="section shell">
         <div className="section-heading"><div><p className="eyebrow">Wirkung zuerst</p><h2>Was war vor dem Handeln über mögliche Folgen bekannt?</h2></div><Link className="text-link" href="/regierung/wirkungsanalysen">Alle Wirkungsanalysen</Link></div>
         <p className="lead">Prozessdaten zeigen, was beschlossen wurde. Die WÖk-Fachakten zeigen zusätzlich, welche Zustände sich über welche Mechanismen verändern können, in welcher Richtung und mit welcher Evidenz.</p>
-        <div className="government-impact-list">{impactCases.slice(0, 3).map((record) => <GovernmentImpactCase key={record.impact_case_id} record={record} compact />)}</div>
+        <div className="government-impact-list"><ActionPlanMetaPreview />{impactCases.slice(0, 2).map((record) => <GovernmentImpactCase key={record.impact_case_id} record={record} compact />)}</div>
       </section>
 
       <section className="section shell">

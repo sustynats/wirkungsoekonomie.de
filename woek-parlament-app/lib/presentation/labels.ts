@@ -167,6 +167,7 @@ const systemValueLabels: Record<string, string> = {
   VERY_HIGH_CLIMATE_NATURE: "sehr hohe Klima- und Naturrelevanz",
   VERY_HIGH_HEALTH_SOCIAL_FINANCE: "sehr hohe Relevanz für Gesundheit, Soziales und Finanzierung",
   VERY_HIGH_INTERGENERATIONAL: "sehr hohe generationenübergreifende Relevanz",
+  VERY_HIGH_RIGHTS_GOVERNANCE: "sehr hohe Rechts- und Governancerelevanz",
   VERY_HIGH_RIGHTS_SECURITY: "sehr hohe Grundrechts- und Sicherheitsrelevanz",
   VERY_HIGH_SOCIAL: "sehr hohe soziale Relevanz",
   STANDARD_WOEK_ANALYSIS: "WÖk-Standardanalyse",

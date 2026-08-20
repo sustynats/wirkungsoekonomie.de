@@ -374,6 +374,21 @@ h1, h2, h3, h4 { text-wrap: balance; }
 .common-targets-effect > strong { display: block; }
 .common-targets-sources { display: flex !important; flex-wrap: wrap; gap: var(--abstand-xs); }
 .government-impact-grid article, .government-reference-groups > div, .government-source-groups > div { padding: var(--abstand-m); border: 1px solid var(--farbe-linie); border-radius: var(--radius-klein); background: var(--farbe-flaeche-warm); }
+.strategy-detail > section { display: grid; gap: var(--abstand-m); scroll-margin-top: 6rem; }
+.strategy-path-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--abstand-raster); }
+.strategy-path-grid > div, .strategy-impact-path { min-width: 0; padding: var(--abstand-m); border: 1px solid var(--farbe-linie); border-radius: var(--radius-klein); background: var(--farbe-flaeche-warm); }
+.strategy-path-grid .strategy-impact-path { padding: 0; border: 0; background: transparent; }
+.strategy-impact-path dl { display: grid; gap: var(--abstand-xs); margin: 0; }
+.strategy-impact-path dl > div { display: grid; grid-template-columns: minmax(8rem, .3fr) minmax(0, 1fr); gap: var(--abstand-m); padding-top: var(--abstand-xs); border-top: 1px solid var(--farbe-linie); }
+.strategy-impact-path dt { color: var(--farbe-text-sekundaer); font-size: var(--groesse-label); font-weight: var(--schriftstaerke-fett); }
+.strategy-impact-path dd { margin: 0; }
+.strategy-quality-layers { display: grid; gap: var(--abstand-xs); }
+.strategy-quality-layers details { border: 1px solid var(--farbe-linie); border-radius: var(--radius-klein); background: var(--farbe-flaeche-karte); }
+.strategy-quality-layers summary { min-height: 44px; padding: var(--abstand-m); cursor: pointer; font-weight: var(--schriftstaerke-fett); }
+.strategy-quality-layers details p { margin: 0; padding: 0 var(--abstand-m) var(--abstand-m); }
+.technical-transparency { border: 1px dashed var(--farbe-linie); border-radius: var(--radius-klein); background: var(--farbe-flaeche-warm); }
+.technical-transparency > summary { min-height: 44px; padding: var(--abstand-m); cursor: pointer; font-weight: var(--schriftstaerke-fett); }
+.technical-transparency > .full-analysis-text { margin: 0 var(--abstand-m) var(--abstand-m); }
 .government-boundaries { display: grid; gap: var(--abstand-s); margin-top: var(--abstand-l); }
 .government-boundaries .boundary { padding: var(--abstand-m); border-left: 4px solid var(--farbe-status-offen); background: var(--farbe-flaeche-warm); }
 .government-boundaries .boundary--pass { border-left-color: var(--farbe-status-positiv); }
@@ -1571,6 +1586,8 @@ h1, h2, h3, h4 { text-wrap: balance; }
   .overview-assessment-axis { grid-template-columns: 1fr; }
   .government-impact-paths summary { grid-template-columns: 1fr; }
   .government-impact-path-detail dl > div { grid-template-columns: 1fr; gap: var(--abstand-2xs); }
+  .strategy-path-grid { grid-template-columns: 1fr; }
+  .strategy-impact-path dl > div { grid-template-columns: 1fr; gap: var(--abstand-2xs); }
 }
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

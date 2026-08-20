@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { PublicMaturity } from "@/app/components/PublicMaturity";
+import { OverviewAssessment } from "@/app/components/OverviewAssessment";
 import { jurisdictionById } from "@/lib/parliament/jurisdictions";
 import { saxonyAnhaltElectionProgrammes } from "@/data/sachsen-anhalt-election-programmes";
 import { saxonyAnhaltProgrammeEditorial, type ProgrammeDirection } from "@/data/presentation/sachsen-anhalt-programme-editorial-v2";
@@ -16,6 +17,12 @@ export const metadata = {
 
 function directionLabel(direction: ProgrammeDirection) {
   return { POSITIVE: "positiv", NEGATIVE: "negativ", AMBIVALENT: "ambivalent", OPEN: "offen" }[direction];
+}
+
+function programmeDirectionProfile(overallCharacter: "NO_SINGLE_DIRECTION" | "AMBIVALENT" | "OPEN") {
+  if (overallCharacter === "AMBIVALENT") return { directionLabel: "Gegenläufige Wirkungsrichtungen", directionKind: "ambivalent" as const };
+  if (overallCharacter === "OPEN") return { directionLabel: "Wirkungseinordnung noch offen", directionKind: "open" as const };
+  return { directionLabel: "Keine belastbare einheitliche Wirkungsrichtung", directionKind: "portfolio" as const };
 }
 
 export default function SaxonyAnhaltPage() {
@@ -84,10 +91,15 @@ export default function SaxonyAnhaltPage() {
             return <article key={programme.sourceKey} data-woek-preview-card={editorial ? "published" : "fact-only"}>
               <p className="source-register-label">{programme.party} · WÖk-Wahlprogrammanalyse</p>
               <h3>{programme.title}</h3>
-              {editorial ? <div data-woek-preview-assessment="published" data-woek-programme-potential="published">
-                <p className="status-pill">Wirkungspotenzial</p>
-                <p><strong>{editorial.overallLabel}</strong></p>
-                <p>{editorial.impactCoreSummary}</p>
+              {editorial ? <div data-woek-programme-potential="published">
+                <OverviewAssessment compact assessment={{
+                  assessmentLabel: editorial.overallLabel,
+                  impactCoreSummary: editorial.impactCoreSummary,
+                  editorialSummary: editorial.editorialSummary,
+                  keyFinding: editorial.keyFindings[0]?.text ?? "",
+                  evidenceSummary: editorial.readingGuide,
+                  ...programmeDirectionProfile(editorial.overallCharacter),
+                }} />
                 <p><strong>Key Findings</strong></p>
                 <ul>
                   {editorial.keyFindings.map((finding) => <li key={finding.label}><strong>{finding.label}:</strong> {finding.text}</li>)}

@@ -10,6 +10,7 @@ import { recommendationForImpactCase } from "@/lib/recommendations";
 import type { SearchableCase, SearchableFachanalyse, SearchableGovernmentImpact } from "@/lib/search";
 import { publicParliamentSummary } from "@/lib/public-api";
 import { approvedCommonTargetLayerIdsForImpactCase, decisionReviewForImpactCase } from "@/lib/decision-method";
+import { ACTION_PLAN_META_ID, actionPlanMetaAssessment, actionPlanPublicMaturity, getActionPlanMissions, actionPlanAssessmentForMission } from "@/lib/government/strategy-impact";
 
 export const metadata: Metadata = {
   title: "Suche",
@@ -42,7 +43,7 @@ export default function SearchPage() {
     };
   });
   const analyses: SearchableFachanalyse[] = listFachanalysen().map(({ slug, title, subtitle, type, status, scope, summary, focusAreas }) => ({ slug, title, subtitle, type, status, scope, summary, focusAreas }));
-  const governmentImpacts: SearchableGovernmentImpact[] = getPublicImpactCases().map((record) => {
+  const standardGovernmentImpacts: SearchableGovernmentImpact[] = getPublicImpactCases().map((record) => {
     const editorial = governmentEditorialProjection(record);
     const decisionReview = decisionReviewForImpactCase(record.impact_case_id);
     const assessment = {
@@ -71,6 +72,30 @@ export default function SearchPage() {
     terms: [record.impact_summary.central_lever, record.impact_summary.strongest_positive_potential, record.impact_summary.main_risk_or_tradeoff, record.full_analysis_markdown],
     });
   });
+  const actionPlanMissions = getActionPlanMissions();
+  const governmentImpacts: SearchableGovernmentImpact[] = [
+    {
+      impactCaseId: ACTION_PLAN_META_ID,
+      title: "Aktionsplan Nachhaltigkeit 2026",
+      summary: actionPlanMetaAssessment.editorialSummary,
+      analysisMode: "IMPACT_POTENTIAL_EX_ANTE",
+      materiality: "hoch",
+      assessment: actionPlanMetaAssessment,
+      maturity: actionPlanPublicMaturity("Aktionsplan Nachhaltigkeit 2026", true),
+      terms: ["Deutsche Nachhaltigkeitsstrategie 2025", "DNS 2025", "19 Missionen", "Governance", "Wirkungsorientierung"],
+    },
+    ...actionPlanMissions.map((mission) => ({
+      impactCaseId: mission.id,
+      title: `Mission ${mission.mission}: ${mission.title}`,
+      summary: mission.target,
+      analysisMode: "IMPACT_POTENTIAL_EX_ANTE" as const,
+      materiality: "missionsspezifisch",
+      assessment: actionPlanAssessmentForMission(mission),
+      maturity: actionPlanPublicMaturity(mission.title, Boolean(["WOEK-AKN-2026-M02", "WOEK-AKN-2026-M04"].includes(mission.id))),
+      terms: [mission.lead, mission.path.A, mission.path.M, mission.path.delta_Z, mission.path.R, mission.risk, ...mission.monitor],
+    })),
+    ...standardGovernmentImpacts,
+  ];
   return (
     <div className="shell content-page">
       <header className="page-intro">

@@ -1,0 +1,36 @@
+{
+  "schema_version": "restore-first-audit-1.0",
+  "audit_date": "2026-08-20",
+  "issue": 237,
+  "canonical_source_root": "/WOEK",
+  "result": "PRESENT_AND_RENDERED",
+  "before": {
+    "classification": "PRESENT_BUT_ROUTE_OR_NAV_LOST",
+    "finding": "Der fachlich freigegebene Meta-ImpactCase und 19 Missions-Subcases lagen im kanonischen /WOEK-Fachbestand, waren im Portal jedoch nicht als eigenständige Wirkungsakten erreichbar."
+  },
+  "after": {
+    "classification": "PRESENT_AND_RENDERED",
+    "meta_impact_cases": 1,
+    "mission_subcases": 19,
+    "full_deep_dives": [
+      "WOEK-AKN-2026-M02",
+      "WOEK-AKN-2026-M04"
+    ],
+    "initial_ex_ante_cases": 17,
+    "public_routes": 20,
+    "source_intermediary_routes": 6
+  },
+  "guardrails": {
+    "dns_2025_is_reference_not_causality_proof": true,
+    "no_aggregate_score": true,
+    "no_codex_generated_recommendation": true,
+    "partial_cases_fail_closed": true,
+    "fach_sources_preserved_verbatim": true
+  },
+  "canonical_sources": [
+    "/WOEK/WOEK-AUTOPILOT/CONTROL/FACHREVIEW-WIRKUNGSORIENTIERUNG-DNS-AKTIONSPLAN-2026-20260820T0559Z.md",
+    "/WOEK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/analysis/GOVERNMENT-STRATEGY-IMPACT-AKTIONSPLAN-NACHHALTIGKEIT-2026-META.md",
+    "/WOEK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/analysis/GOVERNMENT-STRATEGY-IMPACT-AKTIONSPLAN-NACHHALTIGKEIT-2026-MISSIONS-01-10.jsonl",
+    "/WOEK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/analysis/GOVERNMENT-STRATEGY-IMPACT-AKTIONSPLAN-NACHHALTIGKEIT-2026-MISSIONS-11-19.jsonl"
+  ]
+}

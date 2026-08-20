@@ -4,16 +4,24 @@ import { GovernmentImpactCase, GovernmentProcessSection } from "@/app/components
 import { historyClassificationLabels, impactCaseById, impactCaseVersions } from "@/lib/government/impact-cases";
 import { analysisUpdatesForImpactCase, evidenceEventsForImpactCase } from "@/lib/observatory/public-data";
 import { publicSystemLabel } from "@/lib/presentation/labels";
+import { ActionPlanMetaDetail, ActionPlanMissionDetail } from "@/app/components/government/StrategyImpactCase";
+import { ACTION_PLAN_META_ID, getActionPlanMission } from "@/lib/government/strategy-impact";
 
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
   const { id } = await params;
-  const record = impactCaseById(decodeURIComponent(id));
-  return { title: record?.title ?? "Regierungs-Wirkungsanalyse" };
+  const decodedId = decodeURIComponent(id);
+  const record = impactCaseById(decodedId);
+  const mission = getActionPlanMission(decodedId);
+  return { title: decodedId === ACTION_PLAN_META_ID ? "Aktionsplan Nachhaltigkeit 2026" : mission ? `Mission ${mission.mission}: ${mission.title}` : record?.title ?? "Regierungs-Wirkungsanalyse" };
 }
 
 export default async function GovernmentImpactCasePage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
-  const record = impactCaseById(decodeURIComponent(id));
+  const decodedId = decodeURIComponent(id);
+  if (decodedId === ACTION_PLAN_META_ID) return <div className="section shell"><ActionPlanMetaDetail /></div>;
+  const mission = getActionPlanMission(decodedId);
+  if (mission) return <div className="section shell"><ActionPlanMissionDetail mission={mission} /></div>;
+  const record = impactCaseById(decodedId);
   if (!record) notFound();
   const versions = impactCaseVersions(record.impact_case_id);
   const evidenceEvents = evidenceEventsForImpactCase(record.impact_case_id);
