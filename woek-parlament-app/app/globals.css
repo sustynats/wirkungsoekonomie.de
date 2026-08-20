@@ -632,7 +632,7 @@ h1, h2, h3, h4 { text-wrap: balance; }
 .page-intro h1 { min-width: 0; margin-bottom: 1.2rem; overflow-wrap: anywhere; word-break: break-word; hyphens: auto; text-wrap: wrap; }
 .method-grid, .transparency-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); }
 .method-grid article, .transparency-list article { padding: 1.5rem; background: var(--paper); }
-.method-grid article span { color: var(--gold); font-weight: 850; }
+.method-grid article span { color: var(--gold-deep); font-weight: 850; }
 .method-grid h2, .transparency-list h2 { margin: .5rem 0; font-size: 1.55rem; }
 .method-grid .notice { grid-column: 1 / -1; margin: 0; }
 .method-grid--three { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-block: 1.5rem; }
