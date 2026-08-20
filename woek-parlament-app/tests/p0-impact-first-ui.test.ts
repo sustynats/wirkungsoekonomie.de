@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
+import { publicEnumLabel } from "../lib/publication/public-editorial-projection.mjs";
 
 const source = (file: string) => readFileSync(file, "utf8");
 
@@ -156,6 +157,8 @@ test("PREVIEW_CARD_NO_GENERIC_SUMMARY", () => {
 test("PREVIEW_CARD_NO_RAW_INTERNAL_ENUMS", () => {
   assert.doesNotMatch(overviewComponent, />POSITIVE_POTENTIAL<|>NEGATIVE_RISK<|>AMBIVALENT<|>PORTFOLIO_DISAGGREGATION_REQUIRED</);
   assert.match(source("scripts/quality/generic-public-editorial-scan.mjs"), /PREVIEW_CARD_NO_RAW_INTERNAL_ENUMS/);
+  assert.equal(publicEnumLabel("UEBERWIEGEND_POSITIVES_WIRKUNGSPOTENZIAL_MIT_SEPARAT_SICHTBAREN_RISIKEN"), "Überwiegend positives Wirkungspotenzial mit separat sichtbaren Risiken");
+  assert.equal(publicEnumLabel("UNREVIEWED_MIXED_CASE_LABEL"), "");
 });
 
 test("FACT_ONLY_FAILS_CLOSED_WITHOUT_AN_ASSESSMENT_SURFACE", () => {
