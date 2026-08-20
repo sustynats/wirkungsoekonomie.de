@@ -1,19 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { PublicMaturity } from "@/app/components/PublicMaturity";
 import { politicalSourceCatalog } from "@/lib/commitments/source-catalog";
-import { factOnlyPublicMaturity } from "@/lib/presentation/public-maturity";
+import { allPublicationSourceRecords } from "@/lib/publication/fachakten";
 
 export const metadata: Metadata = {
-  title: "Mandat & Praxis",
-  description: "Wahlprogramme, Koalitionsvertrag und parlamentarische Umsetzung werden quellenbasiert mit einem unabhängigen Wirkungscheck verbunden."
+  title: "Wahlprogramme & Koalitionsvertrag 2025",
+  description: "Bundestagswahlprogramme 2025, Koalitionsvertrag und ihre quellengebundenen WÖk-Fachakten - von der Zusage bis zur parlamentarischen Praxis."
 };
 
 const comparisonSteps = [
-  ["01", "Problem und Ausgangslage", "Welcher Zustand soll sich verändern – und welche Baseline, Zielgruppe und Schutzgüter sind betroffen?"],
+  ["01", "Problem und Ausgangslage", "Welcher Zustand soll sich verändern - und welche Baseline, Zielgruppe und Schutzgüter sind betroffen?"],
   ["02", "Zusage oder Option", "Eine konkrete Passage aus Wahlprogramm oder Koalitionsvertrag mit Fundstelle, Fassung und Bedingungen."],
   ["03", "Folgencheck vor der Entscheidung", "Ist der Gegenstand klar genug? Wer entscheidet? Über welchen Mechanismus könnte sich etwas verändern und welche Alternative wird verdrängt?"],
-  ["04", "Beschluss und Umsetzung", "Die tatsächlich beschlossene Fassung, ihr Status und der Vollzug – nicht bloß eine Ankündigung."],
+  ["04", "Beschluss und Umsetzung", "Die tatsächlich beschlossene Fassung, ihr Status und der Vollzug - nicht bloß eine Ankündigung."],
   ["05", "Beobachtung, Zurechnung und Rückkopplung", "Was sich später verändert, was davon belastbar zurechenbar ist und was eine künftige Entscheidung robuster machen würde."]
 ] as const;
 
@@ -21,22 +20,32 @@ export default function MandatUndPraxisPage() {
   const electionPrograms = politicalSourceCatalog.filter((source) => source.sourceType === "ELECTION_PROGRAM");
   const coalitionAgreement = politicalSourceCatalog.find((source) => source.sourceType === "COALITION_AGREEMENT");
   const commitmentCount = politicalSourceCatalog.reduce((total, source) => total + source.commitmentCount, 0);
+  const publicationRecords = allPublicationSourceRecords();
+  const fullAnalysisKeys = new Set(publicationRecords
+    .filter((record) => ["FEDERAL_ELECTION_PROGRAMME", "COALITION_AGREEMENT"].includes(record.kind))
+    .map((record) => record.sourceKey)
+    .filter((key): key is string => Boolean(key)));
 
   return (
     <div className="shell content-page mandate-page">
       <header className="page-intro mandate-intro">
-        <p className="eyebrow">Mandat &amp; Praxis · 21. Wahlperiode</p>
-        <h1>Was wurde versprochen, vereinbart und tatsächlich entschieden?</h1>
-        <p className="lead">Dieser Bereich macht politische Zusagen, den Koalitionsvertrag und die parlamentarische Praxis vergleichbar – ohne daraus eine Partei- oder Personenbewertung zu machen. Geprüft wird, wie sich konkrete politische Wege zum bereits bestehenden öffentlichen Referenzrahmen der Bundesrepublik verhalten. Für jede belastbar zuordenbare Verbindung folgt ein eigener Wirkungscheck.</p>
+        <p className="eyebrow">Bundestagswahl 2025 · Koalitionsvertrag 2025</p>
+        <h1>Wahlprogramme und Koalitionsvertrag im Wirkungscheck</h1>
+        <p className="lead">Hier liegen die vollständigen quellengebundenen Fachbestände zu den Bundestagswahlprogrammen und zum Koalitionsvertrag. Sie waren nicht verschwunden - die Navigation und der Reifehinweis hatten sie zuletzt wie reine Faktenakten erscheinen lassen. Das wird getrennt korrigiert: Quellen- und Ex-ante-Fachakten bleiben vollständig zugänglich; eine aktuelle redaktionelle Richtungsbewertung wird nur dort als fertige WÖk-Kurzbewertung gezeigt, wo sie den neuen Spezifitäts- und Qualitätsstandard erfüllt.</p>
       </header>
 
+      <section className="notice notice-neutral" aria-label="Qualitätsstatus der Bundes-Wahlprogrammanalysen">
+        <strong>Vollständige Fachakten vorhanden - aktuelle Kurzbewertung im Qualitäts-Re-Audit.</strong>
+        <p>Alle sechs Wahlprogramme und der Koalitionsvertrag besitzen im freigegebenen Release-1-Bestand vollständige Ex-ante-Fachakten. Der Re-Audit prüft zusätzlich, ob Kurztexte, Wirkungsrichtungen und Extraktionen objektspezifisch genug sind. Generische Politikfeld-Templates oder zusammengezogene Quellenfragmente werden nicht als fertige Wirkungsaussage ausgegeben.</p>
+      </section>
+
       <section className="mandate-overview" aria-labelledby="mandate-overview-title">
-        <div><p className="eyebrow">Wahl 2025 · Koalition 2025</p><h2 id="mandate-overview-title">{commitmentCount.toLocaleString("de-DE")} Zusagen – vollständig von der Quelle bis zur prüfbaren Beziehung erschlossen.</h2><p>Jede Zusage bleibt mit Fundstelle, möglichem Wirkpfad, Referenzbezug, Daten- und Methodenlücken zugänglich. Die dokumentierten Beziehungen zu Koalitionsvertrag und parlamentarischer Praxis sind ein Quellenabgleich, kein Wirkungsurteil und keine Partei- oder Personenwertung.</p></div>
+        <div><p className="eyebrow">Quelle → Vereinbarung → Praxis</p><h2 id="mandate-overview-title">{commitmentCount.toLocaleString("de-DE")} Zusagen aus sieben Primärquellen sind strukturiert erschlossen.</h2><p>Die Verbindung zwischen Wahlprogramm, Koalitionsvertrag und parlamentarischer Praxis bleibt ein Quellenabgleich. Ob ein Vorhaben ein positives, negatives, ambivalentes oder offenes Wirkungspotenzial besitzt, ist eine davon getrennte Fachfrage.</p></div>
         <dl>
-          <div><dt>Wahlprogramme</dt><dd>{electionPrograms.length}</dd><small>mit {electionPrograms.reduce((total, source) => total + source.commitmentCount, 0).toLocaleString("de-DE")} strukturierten Zusagen</small></div>
-          <div><dt>Koalitionsvertrag</dt><dd>{coalitionAgreement?.commitmentCount.toLocaleString("de-DE") ?? "–"}</dd><small>strukturierte Zusagen</small></div>
-          <div><dt>Programm → Koalition</dt><dd>1.246</dd><small>quellengebundene Beziehungen, einschließlich offener und veränderter Bezüge</small></div>
-          <div><dt>Koalition → Parlament</dt><dd>347</dd><small>dokumentierte Umsetzungsbezüge zu den vorliegenden Fällen</small></div>
+          <div><dt>Wahlprogramme</dt><dd>{electionPrograms.length}</dd><small>{electionPrograms.reduce((total, source) => total + source.commitmentCount, 0).toLocaleString("de-DE")} strukturierte Zusagen</small></div>
+          <div><dt>Koalitionsvertrag</dt><dd>{coalitionAgreement?.commitmentCount.toLocaleString("de-DE") ?? "-"}</dd><small>strukturierte Zusagen</small></div>
+          <div><dt>Vollständige Fachakten</dt><dd>{fullAnalysisKeys.size}</dd><small>Release-1-Ex-ante-Fachbestände</small></div>
+          <div><dt>Bewertungsregel</dt><dd>4</dd><small>positiv · negativ · ambivalent · offen - Evidenz separat</small></div>
         </dl>
       </section>
 
@@ -44,81 +53,64 @@ export default function MandatUndPraxisPage() {
         <div>
           <p className="eyebrow">Übergeordneter Maßstab</p>
           <h2 id="mandate-reference-title">Ein Wahlprogramm setzt nicht den Maßstab. Es schlägt einen Weg vor.</h2>
-          <p>Die Agenda 2030 und ihre SDGs wurden von 193 Staaten vereinbart. Die Bundesrepublik Deutschland hat sich zu ihrer Umsetzung verpflichtet. Deshalb prüft das Portal Wahlprogramme, Koalitionsvereinbarungen und konkrete Entscheidungen nicht im luftleeren Raum: Es fragt, ob sie den bereits öffentlich vereinbarten Zielen, Schutzgütern und Grenzen dienen, sie schwächen oder Zielkonflikte auslösen könnten.</p>
+          <p>Geprüft wird zuerst, welches Problem tatsächlich vorliegt und welcher Zielzustand erreicht werden soll. Danach folgt der Wirkpfad: Was verändert ein konkretes Instrument für Menschen, natürliche Lebensgrundlagen und demokratische Funktionsfähigkeit - und welche Schutzgrenzen dürfen nicht verrechnet werden?</p>
         </div>
         <ol>
-          <li><strong>Nicht:</strong><span>„Passt die Entscheidung zu einer Partei?“</span></li>
-          <li><strong>Sondern:</strong><span>„Welches Wirkungspotenzial hat sie im Verhältnis zu den gemeinsamen Verpflichtungen und Schutzgütern?“</span></li>
-          <li><strong>Und:</strong><span>„Welche Daten, Wirkpfade und Annahmen tragen diese Einordnung – und was bleibt offen?“</span></li>
+          <li><strong>Problem:</strong><span>Welcher reale Zustand soll sich verändern?</span></li>
+          <li><strong>Option:</strong><span>Welcher konkrete politische Hebel wird vorgeschlagen?</span></li>
+          <li><strong>Wirkung:</strong><span>Welche Zustandsänderung ist plausibel, mit welcher Evidenz und welchen Gegenwirkungen?</span></li>
         </ol>
-        <Link className="text-link" href="/transparenz#referenzrahmen">Referenzrahmen vollständig erklärt <span aria-hidden="true">→</span></Link>
+        <Link className="text-link" href="/methodik">Methodik vollständig erklärt <span aria-hidden="true">→</span></Link>
       </section>
 
-      <section className="mandate-principle" aria-labelledby="principle-title">
-        <div>
-          <p className="eyebrow">Wichtige Trennung</p>
-          <h2 id="principle-title">Vertragstreue ist nicht automatisch positive Wirkung.</h2>
-          <p>Ob eine Entscheidung eine Zusage voranbringt, ist eine belegbare Vergleichsaussage. Ob diese Entscheidung eine positive Netto-Wirkung erwarten lässt oder entfaltet, wird getrennt anhand von Quellen, Wirkpfaden, WÖk-Referenzen, Grenzen und – wo möglich – nachvollziehbaren Berechnungen geprüft.</p>
+      <section className="section section-compact comparison-status" aria-labelledby="status-title">
+        <div className="section-heading"><div><p className="eyebrow">So lesen Sie den Bestand</p><h2 id="status-title">Vier Ebenen, die nicht miteinander verwechselt werden.</h2></div></div>
+        <div className="mandate-status-flow" aria-label="Prüfablauf Wahlprogramme und Koalitionsvertrag">
+          <article><span>01</span><h3>Originalquelle</h3><p>Wortlaut, Fundstelle, Dokumentfassung und Quellenfingerabdruck.</p></article>
+          <article><span>02</span><h3>Ex-ante-Fachakte</h3><p>Wirkpfade, Risiken, Schutzgrenzen, Gegenfaktum und Datenbedarf - ohne behauptete Ist-Wirkung.</p></article>
+          <article><span>03</span><h3>Redaktionelle Kurzbewertung</h3><p>Nur objektspezifische Richtung, Begründung, Key Finding und Evidenz. Generische Templates fallen durch.</p></article>
+          <article><span>04</span><h3>Praxis & Reality Check</h3><p>Später: Beschluss, Vollzug, beobachtete Zustandsänderung und belastbare Zurechnung.</p></article>
         </div>
-        <dl>
-          <div><dt>Fakt</dt><dd>Quelle, Zusage, finale Fassung und Beschlussstatus</dd></div>
-          <div><dt>Umsetzungsabgleich</dt><dd>noch nicht aufgegriffen · eingebracht · beschlossen · in Umsetzung · praktisch umgesetzt · offen</dd></div>
-          <div><dt>Wirkungscheck</dt><dd>eigenständig, parteiunabhängig und nie aus dem Abgleich abgeleitet</dd></div>
-        </dl>
       </section>
+
+      <section className="section section-compact" aria-labelledby="programmes-title">
+        <div className="section-heading"><div><p className="eyebrow">Bundestagswahl 2025</p><h2 id="programmes-title">Wahlprogramme</h2><p>Die vollständigen Ex-ante-Fachakten bleiben auf den jeweiligen Dokumentseiten erreichbar. Der neue Sachsen-Anhalt-Aufbau dient als Blaupause für die redaktionelle Neudarstellung auf Bundesebene.</p></div></div>
+        <div className="source-register">
+          {electionPrograms.map((source) => {
+            const hasFullAnalysis = fullAnalysisKeys.has(source.sourceKey);
+            return <article key={source.sourceKey}>
+              <p className="source-register-label">{source.actor}</p>
+              <h3>{source.title}</h3>
+              <section className="notice notice-neutral" aria-label={`Fachstatus ${source.actor}`}>
+                <strong>{hasFullAnalysis ? "Vollständige Ex-ante-Fachakte vorhanden" : "Quellenregister vorhanden"}</strong>
+                <p>{hasFullAnalysis ? "Der Release-1-Fachbestand ist vollständig abrufbar. Die aktuelle Richtungs- und Kurzbewertung wird nach dem neuen Editorial-Gate neu geprüft." : "Eine fertige Wirkungsanalyse wird nicht behauptet."}</p>
+              </section>
+              <p className="commitment-count"><strong>{source.commitmentCount.toLocaleString("de-DE")} strukturierte Zusagen</strong> · mit Fundstellen und Quellenfingerabdruck</p>
+              <Link className="text-link" href={`/mandat-und-praxis/${source.sourceKey}`}>Fachakte und Zusagen öffnen <span aria-hidden="true">→</span></Link>
+            </article>;
+          })}
+        </div>
+      </section>
+
+      {coalitionAgreement && <section className="section section-compact coalition-source" aria-labelledby="coalition-title">
+        <div className="section-heading"><div><p className="eyebrow">Regierungsmandat 2025</p><h2 id="coalition-title">Koalitionsvertrag</h2></div></div>
+        <article>
+          <p className="source-register-label">{coalitionAgreement.actor}</p>
+          <h3>{coalitionAgreement.title}</h3>
+          <section className="notice notice-neutral"><strong>Vollständige Ex-ante-Fachakte vorhanden</strong><p>Der Vertrag ist weder Gesetz noch Wirkungsnachweis. Seine Zusagen werden getrennt mit parlamentarischen Entscheidungen und späterem Vollzug verknüpft.</p></section>
+          <p className="commitment-count"><strong>{coalitionAgreement.commitmentCount.toLocaleString("de-DE")} strukturierte Zusagen</strong> · mit Quellenfingerabdruck dokumentiert</p>
+          <Link className="text-link" href={`/mandat-und-praxis/${coalitionAgreement.sourceKey}`}>Koalitionsvertragsakte öffnen <span aria-hidden="true">→</span></Link>
+        </article>
+      </section>}
 
       <section className="section section-compact" aria-labelledby="chain-title">
-        <div className="section-heading"><div><p className="eyebrow">So wird die Lücke prüfbar</p><h2 id="chain-title">Von der Zusage bis zur Wirkung</h2></div></div>
+        <div className="section-heading"><div><p className="eyebrow">Vom Versprechen zur Realität</p><h2 id="chain-title">Die Wirkungskette bleibt nachvollziehbar.</h2></div></div>
         <ol className="comparison-chain">
           {comparisonSteps.map(([number, title, text]) => <li key={number}><span>{number}</span><div><h3>{title}</h3><p>{text}</p></div></li>)}
         </ol>
       </section>
 
-      <section className="section section-compact comparison-status" aria-labelledby="status-title">
-        <div className="section-heading"><div><p className="eyebrow">Prüfstatus</p><h2 id="status-title">Von der Quelle zur belastbaren Einordnung</h2></div></div>
-        <div className="mandate-status-flow" aria-label="Prüfablauf Mandat und Praxis">
-          <article><span>01</span><h3>Zusagen dokumentieren</h3><p>{commitmentCount.toLocaleString("de-DE")} Fundstellen aus sieben Primärquellen sind vollständig mit ihrem Fachdatensatz erschlossen.</p></article>
-          <article><span>02</span><h3>Optionen und Bedingungen sichtbar machen</h3><p>Instrument, Ziel, Zuständigkeit, Bedingungen, Risiken und fehlende Daten werden vor einem Wirkungsurteil getrennt ausgewiesen.</p></article>
-          <article><span>03</span><h3>Beschluss und Vollzug trennen</h3><p>Ein beschlossenes Gesetz ist nicht automatisch praktisch umgesetzt. Beide Stufen bleiben sichtbar.</p></article>
-          <article><span>04</span><h3>Wirkung unabhängig prüfen</h3><p>Wirkpfade, Gegenfaktum, Risiken, Berechnungen und Grenzen folgen getrennt vom Umsetzungsabgleich.</p></article>
-        </div>
-      </section>
-
-      <section className="section section-compact" aria-labelledby="programmes-title">
-        <div className="section-heading"><div><p className="eyebrow">Quellenregister</p><h2 id="programmes-title">Wahlprogramme 2025</h2></div></div>
-        <div className="source-register">
-          {electionPrograms.map((source) => <article key={source.sourceKey} data-woek-preview-card="fact-only">
-            <h3>{source.title}</h3>
-            <PublicMaturity maturity={factOnlyPublicMaturity(source.title)} compact />
-            <div data-woek-process-metadata><p className="source-register-label">Originalquelle der Partei · {source.actor}</p>
-            <p>{source.note}</p><p className="commitment-count"><strong>{source.commitmentCount.toLocaleString("de-DE")} strukturierte Zusagen</strong> · mit Quellenfingerabdruck dokumentiert</p></div>
-            <Link className="text-link" href={`/mandat-und-praxis/${source.sourceKey}`}>Zusagen und Fundstellen ansehen <span aria-hidden="true">→</span></Link>
-          </article>)}
-        </div>
-      </section>
-
-      {coalitionAgreement && <section className="section section-compact coalition-source" aria-labelledby="coalition-title">
-        <div className="section-heading"><div><p className="eyebrow">Gemeinsame Vereinbarung</p><h2 id="coalition-title">Koalitionsvertrag 2025</h2></div></div>
-        <article data-woek-preview-card="fact-only">
-          <h3>{coalitionAgreement.title}</h3>
-          <PublicMaturity maturity={factOnlyPublicMaturity(coalitionAgreement.title)} compact />
-          <div data-woek-process-metadata><p className="source-register-label">Originaldokument der Koalitionsparteien · {coalitionAgreement.actor}</p>
-          <p>{coalitionAgreement.note} Jede spätere Zuordnung wird die konkrete Vertragsstelle, die dazugehörige parlamentarische Entscheidung und ihren Quellenstand zeigen.</p><p className="commitment-count"><strong>{coalitionAgreement.commitmentCount.toLocaleString("de-DE")} strukturierte Zusagen</strong> · mit Quellenfingerabdruck dokumentiert</p></div>
-          <Link className="text-link" href={`/mandat-und-praxis/${coalitionAgreement.sourceKey}`}>Zusagen und Fundstellen ansehen <span aria-hidden="true">→</span></Link>
-        </article>
-      </section>}
-
-      <section className="section section-compact" aria-labelledby="outcomes-title">
-        <div className="section-heading"><div><p className="eyebrow">Später pro Zusage sichtbar</p><h2 id="outcomes-title">Vier Ergebnisse – niemals eine bloße Punktzahl</h2></div></div>
-        <div className="outcome-grid">
-          <article><h3>Umsetzung</h3><p>Ob eine konkrete Entscheidung eine Zusage nachweisbar voranbringt, nur teilweise erfüllt, von ihr abweicht oder noch nicht vergleichbar ist.</p></article>
-          <article><h3>Wirkungspotenzial</h3><p>Welche Veränderung mit welchen Annahmen erwartet werden kann – nicht als bereits eingetretene Wirkung formuliert.</p></article>
-          <article><h3>Beobachtete Wirkung</h3><p>Was sich nach Beschluss tatsächlich entwickelt hat und was sich davon belastbar zurechnen lässt.</p></article>
-          <article><h3>Lernschleife</h3><p>Welche Annahme sich bestätigt hat, welche Evidenz fehlt und was eine künftige Entscheidung robuster machen würde.</p></article>
-        </div>
-      </section>
-
-      <section className="notice mandate-next"><strong>Wie Beziehungen zu lesen sind</strong><p>Eine dokumentierte Übernahme, Änderung oder Nichtübernahme belegt nur den Bezug zwischen zwei Texten oder einem Text und einem parlamentarischen Vorgang. Ob daraus positive Netto-Wirkung entsteht, wird ausschließlich im konkreten Folgencheck mit Wirkpfad, Gegenfaktum, Evidenz, Schutzgrenzen und Rückkopplung geprüft.</p><Link className="text-link" href="/entscheidungen">Zu den Wirkungsakten <span aria-hidden="true">→</span></Link></section>
+      <section className="notice mandate-next"><strong>Keine automatische Erfüllungs- oder Parteiwertung</strong><p>Eine dokumentierte Übernahme, Änderung oder Nichtübernahme belegt nur die Beziehung zwischen Texten und Entscheidungen. Wirkung wird getrennt anhand von Problem, Zielzustand, Wirkpfad, Gegenfaktum, Evidenz, Schutzgrenzen und Reality Check geprüft.</p><Link className="text-link" href="/entscheidungen">Zu den parlamentarischen Wirkungsakten <span aria-hidden="true">→</span></Link></section>
       <p className="page-return"><Link href="/">← Zur Portalstartseite</Link></p>
     </div>
   );
