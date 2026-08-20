@@ -289,3 +289,13 @@ export function publicEnumLabel(value) {
   if (reviewedLabel) return reviewedLabel;
   return /\b[\p{L}0-9]+(?:_[\p{L}0-9]+)+\b/u.test(candidate) ? "" : candidate;
 }
+
+/**
+ * Projects reviewed control vocabulary that occurs inside an otherwise
+ * narrative Fachtext. Unknown machine tokens fail closed instead of being
+ * cosmetically title-cased for the public UI.
+ */
+export function publicNarrativeEnumText(value) {
+  const candidate = replaceEnums(value);
+  return hasRawInternalEnum(candidate) ? "" : candidate;
+}

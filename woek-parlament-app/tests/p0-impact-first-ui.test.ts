@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
-import { publicEnumLabel } from "../lib/publication/public-editorial-projection.mjs";
+import { publicEnumLabel, publicNarrativeEnumText } from "../lib/publication/public-editorial-projection.mjs";
 
 const source = (file: string) => readFileSync(file, "utf8");
 
@@ -159,6 +159,11 @@ test("PREVIEW_CARD_NO_RAW_INTERNAL_ENUMS", () => {
   assert.match(source("scripts/quality/generic-public-editorial-scan.mjs"), /PREVIEW_CARD_NO_RAW_INTERNAL_ENUMS/);
   assert.equal(publicEnumLabel("UEBERWIEGEND_POSITIVES_WIRKUNGSPOTENZIAL_MIT_SEPARAT_SICHTBAREN_RISIKEN"), "Überwiegend positives Wirkungspotenzial mit separat sichtbaren Risiken");
   assert.equal(publicEnumLabel("UNREVIEWED_MIXED_CASE_LABEL"), "");
+  assert.equal(
+    publicNarrativeEnumText("Attribution und OPEN-not-neutral bleiben bindend."),
+    "Attribution und Offen ist nicht neutral bleiben bindend.",
+  );
+  assert.equal(publicNarrativeEnumText("Attribution und UNREVIEWED_CONTROL_TOKEN bleiben bindend."), "");
 });
 
 test("FACT_ONLY_FAILS_CLOSED_WITHOUT_AN_ASSESSMENT_SURFACE", () => {
