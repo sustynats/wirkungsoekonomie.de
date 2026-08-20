@@ -1,46 +1,72 @@
 import Link from "next/link";
 import { formatElectionDate, governmentLifecycleLabel, lifecycleLabel, stateJurisdictions, stateSlug } from "@/lib/autopilot/registry";
+import { statePublicContent } from "@/lib/states/public-content";
 
 export const metadata = {
-  title: "Länder | Wirkungsportal Parlament",
-  description: "Wirkungschecks für Landespolitik: Wahlprogramme, Entscheidungen, Monitoring und nachvollziehbare Quellen."
+  title: "Bundesländer · Wirkungsportal Parlament",
+  description: "Transparenter Fachstatus für alle 16 Länder: Wahlprogramme, Regierungshandeln, Wirkungsanalysen, Vollständigkeit und offene Lücken."
 };
 
+const substantiveStateSlugs = new Set([...Object.keys(statePublicContent), "sachsen-anhalt"]);
+const electionReviewSlugs = new Set(["berlin", "mecklenburg-vorpommern", "sachsen-anhalt"]);
+
+function governmentStatus(jurisdiction: (typeof stateJurisdictions)[number]) {
+  if (jurisdiction.government_lifecycle_state === "GOVERNMENT_MONITORING" && !jurisdiction.monitoring_enabled) {
+    return "Fachmonitor angelegt - automatische Quellenaktualisierung noch nicht aktiv";
+  }
+  return governmentLifecycleLabel(jurisdiction.government_lifecycle_state);
+}
+
 export default function StatesPage() {
+  const openStateCount = stateJurisdictions.length - substantiveStateSlugs.size;
   return (
     <main className="shell content-page states-page">
       <header className="page-intro">
-        <p className="eyebrow">Länder</p>
-        <h1>Gleicher Wirkungscheck. Eigene Zuständigkeiten.</h1>
-        <p className="lead">Landespolitik wird nicht unter Bundespolitik eingeordnet. Jede Ebene erhält ihre eigenen amtlichen Quellen, Programme, Verfahren und später ihre eigene Rückkopplung – nach demselben offen gelegten Prüfstandard.</p>
+        <p className="eyebrow">Bundesländer</p>
+        <h1>16 Länder. Ein Prüfstandard. Unterschiedlicher Fachstand.</h1>
+        <p className="lead">Die Übersichtsseite zeigt nicht nur, was vorhanden ist, sondern ebenso klar, was noch fehlt. Eine registrierte Jurisdiktion ist keine fertige Wirkungsanalyse - und ein initialer Materialitätsreview ist keine vollständige Wahlprogrammanalyse.</p>
       </header>
 
       <section className="notice" aria-labelledby="states-coverage-status">
-        <strong id="states-coverage-status">Statischer Initialbestand - noch kein operativer Länder-Crawler</strong>
-        <p>Alle 16 Länder sind als Jurisdiktionen registriert. Für 0 von 16 Ländern ist im aktuellen Portalstand bereits ein vollständig operationalisierter amtlicher Quellenadapter nachgewiesen. Wahltermine und Programme in dieser Ansicht stammen aus dem fachlich vorbereiteten Initialbestand; eine automatische Vollständigkeit wird ausdrücklich nicht behauptet.</p>
+        <strong id="states-coverage-status">{substantiveStateSlugs.size} Länder mit substanziellem öffentlichem Fachstand · {openStateCount} Länder ausdrücklich noch offen.</strong>
+        <p>Sachsen-Anhalt ist die Blaupause für Wahlprogrammanalysen und erhält die neue Editorial-Schicht mit Gesamtzusammenfassung, Key Findings, Richtung und Evidenz. Baden-Württemberg und Rheinland-Pfalz besitzen initiale Regierungsfachreviews. Berlin und Mecklenburg-Vorpommern besitzen materialitätsorientierte Wahlprogrammreviews, aber noch keine vollständige Auswertung aller zugelassenen Programme. Für die übrigen Länder wird kein generischer Ersatztext als Analyse ausgegeben.</p>
       </section>
 
-      <section className="states-principles" aria-label="So arbeitet das Länderportal">
-        <article><span aria-hidden="true">01</span><h2>Vor der Wahl</h2><p>Wahlprogramme werden als Quellen erschlossen. Geprüft wird ihr Wirkungspotenzial, nicht die Person oder Partei.</p></article>
-        <article><span aria-hidden="true">02</span><h2>Im Verfahren</h2><p>Gesetzesvorhaben werden mit Fassung, Termin, möglichen Wirkpfaden, Risiken und veränderbaren Hebeln vorbereitet.</p></article>
-        <article><span aria-hidden="true">03</span><h2>Danach</h2><p>Zusagen, Entscheidungen, Umsetzung und beobachtbare Entwicklung bleiben getrennt und nachvollziehbar verbunden.</p></article>
+      <section className="states-principles" aria-label="Qualitätsregeln des Länderportals">
+        <article><span aria-hidden="true">01</span><h2>Vollständigkeit sichtbar</h2><p>Quelle registriert, initial geprüft und vollständig analysiert sind unterschiedliche Reifestufen. Sie werden nicht mehr sprachlich vermischt.</p></article>
+        <article><span aria-hidden="true">02</span><h2>Richtung braucht Begründung</h2><p>Positiv, negativ, ambivalent oder offen wird nur mit objektspezifischem Wirkpfad gezeigt. Evidenz bleibt davon getrennt.</p></article>
+        <article><span aria-hidden="true">03</span><h2>Fehler fallen geschlossen</h2><p>Bei Quellkollision, falscher Zuordnung oder generischem Template bleibt die Kurzbewertung offen, bis die Fachprüfung korrigiert ist.</p></article>
       </section>
 
       <section className="section section-compact" aria-labelledby="states-active-title">
-        <div className="section-heading"><div><p className="eyebrow">Im Aufbau</p><h2 id="states-active-title">Wahlen und junge Wahlperioden</h2></div></div>
+        <div className="section-heading"><div><p className="eyebrow">Fach- und Lebenszyklusstatus</p><h2 id="states-active-title">Jedes Land mit ehrlichem Reifestand</h2></div></div>
         <div className="state-card-grid">
           {stateJurisdictions.map((jurisdiction) => {
+            const slug = stateSlug(jurisdiction.jurisdiction_id);
             const electionDate = formatElectionDate(jurisdiction.next_election_date);
-            return (
-            <article className="state-card" key={jurisdiction.jurisdiction_id}>
-              <p className="status-pill">{lifecycleLabel(jurisdiction.election_cycle_state)}</p>
+            const publicContent = statePublicContent[slug];
+            const isSachsenAnhalt = slug === "sachsen-anhalt";
+            const hasSubstantiveContent = substantiveStateSlugs.has(slug);
+            const hasElectionReview = electionReviewSlugs.has(slug);
+            const status = isSachsenAnhalt
+              ? "WAHLPROGRAMM-BLAUPAUSE IM EDITORIAL-RE-AUDIT"
+              : publicContent?.review?.statusLabel ?? "KEIN ÖFFENTLICHER FACHREVIEW";
+            const description = isSachsenAnhalt
+              ? "Sechs Landtagswahlprogramme sind quellengebunden erschlossen. Die neue Lesefassung zeigt Gesamtbefund und redaktionell nachgeprüfte Schlüsselpfade; nicht verifizierte Alt-Templates bleiben fail-closed."
+              : publicContent?.review?.shortLabel
+                ? `${publicContent.review.shortLabel}. ${hasElectionReview ? "Der Bestand ist ausdrücklich noch keine vollständige Analyse aller zugelassenen Wahlprogramme." : "Es handelt sich um einen initialen freigegebenen Regierungsfachstand, nicht um eine vollständige Rückschau des Regierungsterms."}`
+                : "Jurisdiktion und politischer Lebenszyklus sind registriert. Solange keine freigegebene Fachanalyse vorliegt, wird keine neutrale oder generische Ersatzbewertung erzeugt.";
+
+            return <article className="state-card" key={jurisdiction.jurisdiction_id}>
+              <p className="status-pill">{status}</p>
               <h3>{jurisdiction.name}</h3>
-              <p>{jurisdiction.election_cycle_state === "DORMANT" ? "Für dieses Land ist ein statischer Initialstand registriert. Ein operativer amtlicher Quellenadapter ist noch nicht nachgewiesen." : "Wahl-, Regierungs- und Umsetzungsdaten sind als getrennte Lebenszyklusobjekte vorbereitet. Automatische Aktualität wird erst nach einem bestandenen Adapter-Audit ausgewiesen."}</p>
-              <p><strong>Regierung:</strong> {governmentLifecycleLabel(jurisdiction.government_lifecycle_state)}</p>
+              <p>{description}</p>
+              <p><strong>Regierungsachse:</strong> {governmentStatus(jurisdiction)}</p>
+              <p><strong>Wahlachse:</strong> {lifecycleLabel(jurisdiction.election_cycle_state)}</p>
+              <p><strong>Automatisierung:</strong> {jurisdiction.monitoring_enabled ? "laufende Quellenaktualisierung aktiv" : "noch nicht als operativer Adapter aktiviert"}</p>
               {electionDate ? <p className="state-card-date"><strong>{jurisdiction.date_precision === "SEASON_ONLY" ? "Nächstes amtliches Wahlzeitfenster" : "Nächster amtlicher Wahltermin"}</strong><span>{electionDate}</span></p> : <p className="state-card-date"><strong>Wahltermin</strong><span>im Register noch nicht amtlich bestätigt</span></p>}
-              <Link className="text-link" href={`/laender/${stateSlug(jurisdiction.jurisdiction_id)}`}>Länderbereich öffnen <span aria-hidden="true">→</span></Link>
-            </article>
-            );
+              <Link className="text-link" href={`/laender/${slug}`}>{hasSubstantiveContent ? "Fachstand und offene Lücken öffnen" : "Länderstatus öffnen"} <span aria-hidden="true">→</span></Link>
+            </article>;
           })}
         </div>
       </section>
