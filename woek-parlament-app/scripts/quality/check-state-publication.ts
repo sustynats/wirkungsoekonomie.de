@@ -1,3 +1,4 @@
+import "./check-programme-state-integrity";
 import assert from "node:assert/strict";
 import { readFileSync, statSync } from "node:fs";
 import { resolve } from "node:path";
