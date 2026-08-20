@@ -55,7 +55,7 @@ export function PublicMaturity({ maturity, compact = false }: { maturity: Public
             <p><strong>Offen bedeutet weder neutral noch null und auch nicht: kein Effekt oder kein Risiko.</strong></p>
           </article>
         </div>
-        <div className="public-maturity-layers" aria-label="Getrennte WÖk-Prüfebenen">
+        <div className="public-maturity-layers" role="group" aria-label="Getrennte WÖk-Prüfebenen">
           <h2>Getrennte Prüfebenen</h2>
           <dl>{maturity.layers.map((item) => <div key={item.id}>
             <dt>{item.label}</dt>

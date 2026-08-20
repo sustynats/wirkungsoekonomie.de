@@ -571,8 +571,11 @@ h1, h2, h3, h4 { text-wrap: balance; }
 
 .state-hero-shell { margin-top: clamp(1rem, 2.6vw, 2rem); }
 .state-hero { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(280px, .65fr); gap: clamp(1.5rem, 5vw, 4rem); padding: clamp(2rem, 5vw, 4rem); color: var(--paper); border-radius: var(--r-stage); background: var(--navy); }
+.state-hero > div > .eyebrow { color: #f2d497; }
 .state-hero h1 { max-width: 16ch; color: var(--paper); font-size: var(--t-h1); }
 .state-hero .lead { color: #e1e7ee; }
+.state-hero .button-secondary { border-color: rgba(255,255,255,.68); color: var(--paper); }
+.state-hero .button-secondary:hover { border-color: var(--paper); color: var(--paper); background: var(--navy-soft); }
 .state-hero-fact { align-self: start; padding: 1.35rem; border-top: 4px solid var(--teal); border-radius: var(--r-card); background: var(--paper); box-shadow: 0 .7rem 2rem rgba(7, 15, 31, .22); }
 .state-hero-fact .eyebrow { color: var(--teal); }
 .state-hero-fact h2 { color: var(--navy); font-size: 1.55rem; }
