@@ -135,7 +135,7 @@ function SummaryProfile({ assessments }: { assessments: CommitmentEditorialAsses
     <div className={styles.barList}>
       {directions.map((direction) => <div className={styles.barRow} key={direction}>
         <span>{directionLabel(direction)}</span>
-        <span className={styles.barTrack} aria-hidden="true"><span className={styles.barFill} style={{ width: `${(counts[direction] / total) * 100}%` }} /></span>
+        <progress className={styles.barTrack} aria-hidden="true" value={counts[direction]} max={total} />
         <strong>{counts[direction]}</strong>
       </div>)}
     </div>
