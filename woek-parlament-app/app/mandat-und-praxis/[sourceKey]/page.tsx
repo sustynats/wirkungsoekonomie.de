@@ -3,8 +3,10 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CompleteSourceRecord } from "@/app/components/CompleteSourceRecord";
 import { CompletePublicationSource } from "@/app/components/CompletePublicationSource";
+import { PublicMaturity } from "@/app/components/PublicMaturity";
 import { getPublicCommitmentRegister } from "@/lib/commitments/public-register";
 import { getFederalPublicationSource } from "@/lib/publication/fachakten";
+import { factOnlyPublicMaturity, publishedDossierPublicMaturity } from "@/lib/presentation/public-maturity";
 
 export const dynamic = "force-dynamic";
 
@@ -34,6 +36,9 @@ export default async function CommitmentRegisterPage({ params }: { params: Promi
   const sourceKind = register.source.sourceType === "COALITION_AGREEMENT" ? "Koalitionsvertrag" : "Wahlprogramm";
   const overview = (completePublication?.overview ?? {}) as Overview;
   const overviewSummary = text(overview.summary);
+  const maturity = completePublication
+    ? publishedDossierPublicMaturity(register.source.title, `Die vollständige quellengebundene Ex-ante-Fachakte zu „${register.source.title}“ ist veröffentlicht.`)
+    : factOnlyPublicMaturity(register.source.title);
 
   return <div className="shell content-page commitment-register-page">
     <nav className="breadcrumb" aria-label="Pfad"><Link href="/mandat-und-praxis">Wahlprogramme &amp; Koalition</Link><span aria-hidden="true">/</span><span>{sourceKind}</span></nav>
@@ -44,6 +49,8 @@ export default async function CommitmentRegisterPage({ params }: { params: Promi
       <p>{overviewSummary ?? `Dieses Register erschließt ${register.commitments.length.toLocaleString("de-DE")} konkrete Zusagen mit Fundstelle aus der Originalquelle.`}</p>
       <div className="hero-actions"><a className="button button-primary" href="#themen">Zu den Zusagen</a>{completePublication && <a className="button button-secondary" href="#vollstaendige-fachakte">Vollständige Fachakte</a>}<Link className="button button-secondary" href={`/quellen/${register.source.sourceKey}`}>Quellensteckbrief</Link></div>
     </header>
+
+    <PublicMaturity maturity={maturity} />
 
     <section className="notice notice-neutral" id="fachstatus" aria-label="Fachstatus der Dokumentanalyse">
       <strong>{completePublication ? "Vollständige Ex-ante-Fachakte vorhanden" : "Quellenregister vorhanden"}</strong>

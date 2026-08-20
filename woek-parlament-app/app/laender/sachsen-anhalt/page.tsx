@@ -1,9 +1,11 @@
 import Link from "next/link";
+import { PublicMaturity } from "@/app/components/PublicMaturity";
 import { jurisdictionById } from "@/lib/parliament/jurisdictions";
 import { saxonyAnhaltElectionProgrammes } from "@/data/sachsen-anhalt-election-programmes";
 import { saxonyAnhaltProgrammeEditorial, type ProgrammeDirection } from "@/data/presentation/sachsen-anhalt-programme-editorial-v2";
 import { saxonyAnhaltReviewedCommitmentCounts } from "@/data/presentation/sachsen-anhalt-programme-counts";
 import { allPublicationSourceRecords } from "@/lib/publication/fachakten";
+import { assessmentOnlyPublicMaturity, factOnlyPublicMaturity } from "@/lib/presentation/public-maturity";
 
 const saxonyAnhalt = jurisdictionById("sachsen-anhalt");
 
@@ -31,7 +33,7 @@ export default function SaxonyAnhaltPage() {
           <div>
             <p className="eyebrow">Wirkungsportal Länder · Sachsen-Anhalt</p>
             <h1>Was würden die Wahlprogramme tatsächlich verändern?</h1>
-            <p className="lead">Zur Landtagswahl am {electionDate} verbindet das Portal Originalprogramme mit einer wirkungsökonomischen Gesamtzusammenfassung, Key Findings und Einzelprüfungen. Die wichtigste Neuerung: Wirkungsrichtung und Evidenz stehen bereits im Überblick - und bleiben offen, wenn die alte Fachquelle noch nicht objektspezifisch genug ist.</p>
+            <p className="lead">Zur Landtagswahl am {electionDate} verbindet das Portal Originalprogramme mit einer wirkungsökonomischen Gesamtzusammenfassung, Key Findings und Einzelprüfungen. Die wichtigste Neuerung: Das qualitative Wirkungspotenzial steht bereits auf jeder Programmkarte; Wirkungsrichtung und Evidenz folgen für die redaktionell nachgeprüften Schlüsselpfade - und bleiben offen, wenn die Fachquelle noch nicht objektspezifisch genug ist.</p>
             <div className="hero-actions">
               <Link className="button button-primary" href="#wahlprogramme">6 Wahlprogrammanalysen</Link>
               <Link className="button button-secondary" href="/laender/sachsen-anhalt/quellen">Originalquellen</Link>
@@ -39,8 +41,8 @@ export default function SaxonyAnhaltPage() {
           </div>
           <aside className="state-hero-fact" aria-label="Fachstatus des Wahlbereichs">
             <p className="eyebrow">Blaupause für Wahlprogrammanalysen</p>
-            <h2>Gesamtbild zuerst. Dann die einzelne Zusage.</h2>
-            <p>Jede Programmseite beginnt mit Gesamtbefund, Key Findings und einem Richtungsprofil der redaktionell nachgeprüften Schlüsselpfade. Erst danach folgen die Detailakten.</p>
+            <h2>Wirkungspotenzial zuerst. Dann die einzelne Zusage.</h2>
+            <p>Jede Programmseite beginnt mit einem qualitativen Potenzialbefund, Gesamtzusammenfassung, Key Findings und einem Richtungsprofil der redaktionell nachgeprüften Schlüsselpfade. Erst danach folgen die Detailakten.</p>
             <dl>
               <div><dt>Wahltag</dt><dd>{electionDate}</dd></div>
               <div><dt>Programme</dt><dd>6 quellengebunden erschlossen</dd></div>
@@ -64,14 +66,14 @@ export default function SaxonyAnhaltPage() {
       <section className="shell section section-surface state-publication-status" aria-labelledby="state-status-title">
         <div><p className="eyebrow">Qualitäts-Re-Audit</p><h2 id="state-status-title">Die alte Fachbasis bleibt erhalten - die öffentliche Bewertung wird strenger.</h2><p className="lead">Der Release-1-Bestand enthält vollständige Quellen- und Fachdatensätze, aber auch generische Politikfeld-Templates und einzelne Fehlzuordnungen oder Quellkollisionen. Die neue Lesefassung übernimmt solche Felder nicht mehr ungeprüft in die Kurzbewertung.</p></div>
         <ul>
-          <li><strong>1. Gesamtzusammenfassung</strong><span>Jedes Programm erhält einen objektspezifischen Gesamtbefund und Key Findings statt einer bloßen Zusagenstatistik.</span></li>
+          <li><strong>1. Potenzialbefund + Gesamtzusammenfassung</strong><span>Jedes Programm erhält einen explizit bezeichneten qualitativen WÖk-Potenzialbefund und alle freigegebenen Key Findings statt einer bloßen Zusagenstatistik.</span></li>
           <li><strong>2. Richtung + Evidenz</strong><span>Redaktionell nachgeprüfte Schlüsselpfade zeigen Richtung, Begründung und Evidenz getrennt. Nicht nachgeprüfte Details bleiben ausdrücklich offen.</span></li>
           <li><strong>3. Source Fidelity</strong><span>Historische Fachquellen und Originaltexte werden nicht überschrieben. Korrekturen liegen als neue Editorial-Schicht darüber.</span></li>
         </ul>
       </section>
 
       <section className="shell section" id="wahlprogramme" aria-labelledby="state-programmes-title">
-        <div className="section-heading"><div><p className="eyebrow">Wahlprogramme im Wirkungscheck</p><h2 id="state-programmes-title">Sechs Programme - sechs unterschiedliche Wirkungsprofile.</h2><p className="lead">Die Karten zeigen den programmweiten WÖk-Befund und ausgewählte Key Findings. Sie sind keine Wahlempfehlung und kein Ranking.</p></div></div>
+        <div className="section-heading"><div><p className="eyebrow">Wahlprogramme im Wirkungscheck</p><h2 id="state-programmes-title">Sechs Programme - sechs unterschiedliche Wirkungsprofile.</h2><p className="lead">Die Karten zeigen zuerst den qualitativen WÖk-Potenzialbefund, danach die vollständigen freigegebenen Key Findings und das Richtungsprofil der nachgeprüften Schlüsselpfade. Das ist keine Wahlempfehlung und kein Parteienranking.</p></div></div>
         <div className="source-register state-programme-register">
           {saxonyAnhaltElectionProgrammes.map((programme) => {
             const review = reviewBySource.get(programme.sourceKey);
@@ -82,14 +84,24 @@ export default function SaxonyAnhaltPage() {
             return <article key={programme.sourceKey} data-woek-preview-card={editorial ? "published" : "fact-only"}>
               <p className="source-register-label">{programme.party} · WÖk-Wahlprogrammanalyse</p>
               <h3>{programme.title}</h3>
-              {editorial ? <div data-woek-preview-assessment="published">
-                <p className="status-pill">{editorial.overallLabel}</p>
+              {editorial ? <div data-woek-preview-assessment="published" data-woek-programme-potential="published">
+                <p className="status-pill">Wirkungspotenzial</p>
+                <p><strong>{editorial.overallLabel}</strong></p>
                 <p>{editorial.impactCoreSummary}</p>
+                <p><strong>Key Findings</strong></p>
                 <ul>
-                  {editorial.keyFindings.slice(0, 2).map((finding) => <li key={finding.label}><strong>{finding.label}:</strong> {finding.text}</li>)}
+                  {editorial.keyFindings.map((finding) => <li key={finding.label}><strong>{finding.label}:</strong> {finding.text}</li>)}
                 </ul>
-                <p><strong>Nachgeprüfte Schlüsselpfade:</strong> {(Object.keys(editorial.centralAssessments).length).toLocaleString("de-DE")} · {(["POSITIVE", "NEGATIVE", "AMBIVALENT", "OPEN"] as ProgrammeDirection[]).filter((direction) => directionCounts[direction] > 0).map((direction) => `${directionCounts[direction]} ${directionLabel(direction)}`).join(" · ")}</p>
-              </div> : <p><strong>Redaktionelle Gesamtbewertung noch nicht freigegeben.</strong></p>}
+                <p><strong>Richtungsprofil der nachgeprüften Schlüsselpfade:</strong> {(Object.keys(editorial.centralAssessments).length).toLocaleString("de-DE")} · {(["POSITIVE", "NEGATIVE", "AMBIVALENT", "OPEN"] as ProgrammeDirection[]).filter((direction) => directionCounts[direction] > 0).map((direction) => `${directionCounts[direction]} ${directionLabel(direction)}`).join(" · ")}</p>
+                <p><small>Der Potenzialbefund ist eine qualitative Einordnung der fachlich belastbaren Muster - keine aggregierte Parteigesamtnote. Nicht kompensierbare Schutzgüter werden nicht gegen positive Einzelpfade verrechnet.</small></p>
+              </div> : <p><strong>WÖk-Wirkungsanalysen sind noch nicht redaktionell veröffentlicht.</strong></p>}
+              <PublicMaturity maturity={editorial ? assessmentOnlyPublicMaturity(programme.title, {
+                assessmentLabel: editorial.overallLabel,
+                impactCoreSummary: editorial.impactCoreSummary,
+                editorialSummary: editorial.editorialSummary,
+                keyFinding: editorial.keyFindings[0]?.text ?? "",
+                evidenceSummary: editorial.readingGuide,
+              }) : factOnlyPublicMaturity(programme.title)} compact />
               <div data-woek-process-metadata>
                 <p className="commitment-count"><strong>{analysedCount?.toLocaleString("de-DE") ?? "-"} fachlich analysierte Zusageeinheiten</strong> · Quellenregister und historische Fachquelle bleiben separat vollständig abrufbar</p>
               </div>

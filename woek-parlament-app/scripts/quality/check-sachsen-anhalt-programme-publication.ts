@@ -17,12 +17,28 @@ function fail(message: string): never {
 }
 
 const root = process.cwd();
+const overviewPath = path.join(root, "app/laender/sachsen-anhalt/page.tsx");
 const routePath = path.join(root, "app/laender/sachsen-anhalt/wahlprogramme/[sourceKey]/page.tsx");
 const componentPath = path.join(root, "app/components/SaxonyAnhaltProgrammeAnalysisV3.tsx");
 const editorialPath = path.join(root, "data/presentation/sachsen-anhalt-programme-editorial-v2.ts");
 const modelPath = path.join(root, "lib/presentation/sachsen-anhalt-programme-model.ts");
-for (const requiredPath of [routePath, componentPath, editorialPath, modelPath]) {
+for (const requiredPath of [overviewPath, routePath, componentPath, editorialPath, modelPath]) {
   if (!existsSync(requiredPath)) fail(`required public presentation file is missing: ${path.relative(root, requiredPath)}`);
+}
+
+const overviewSource = readFileSync(overviewPath, "utf8");
+for (const requiredToken of [
+  "data-woek-programme-potential=\"published\"",
+  "Wirkungspotenzial",
+  "Key Findings",
+  "Richtungsprofil der nachgeprüften Schlüsselpfade",
+  "editorial.keyFindings.map",
+  "Nicht kompensierbare Schutzgüter",
+]) {
+  if (!overviewSource.includes(requiredToken)) fail(`Sachsen-Anhalt overview does not contain ${requiredToken}`);
+}
+if (overviewSource.includes("editorial.keyFindings.slice(0, 2)")) {
+  fail("programme overview must not hide approved material key findings behind a two-item preview");
 }
 
 const routeSource = readFileSync(routePath, "utf8");
@@ -38,6 +54,7 @@ for (const requiredToken of [
   "Key Finding",
   "Richtungsprofil",
   "Wirkungsrichtung",
+  "Wirkungspotenzial",
   "Evidenz",
   "vollstaendige-wirkungsakte",
   "vollstaendiges-zusageregister",
@@ -58,6 +75,9 @@ for (const sourceKey of sourceKeys) {
   const editorial = saxonyAnhaltProgrammeEditorialV2[sourceKey];
   if (!editorial) fail(`${sourceKey}: missing programme editorial v2`);
   if (editorial.version !== "2.0") fail(`${sourceKey}: unexpected editorial version`);
+  if (!editorial.overallLabel.trim() || !editorial.impactCoreSummary.trim() || !editorial.editorialSummary.trim() || !editorial.readingGuide.trim()) {
+    fail(`${sourceKey}: incomplete programme-level qualitative potential assessment`);
+  }
   if (editorial.keyFindings.length < 4) fail(`${sourceKey}: fewer than four programme-level key findings`);
   const central = Object.values(editorial.centralAssessments);
   if (central.length < 4) fail(`${sourceKey}: fewer than four reviewed central assessments`);
@@ -134,6 +154,8 @@ console.log(JSON.stringify({
   publicationObjects: sourceKeys.length * 2,
   route: "/laender/sachsen-anhalt/wahlprogramme/[sourceKey]",
   blueprint: "programme-blueprint-v3",
+  programmePotentialSummaryVisibleInOverview: true,
+  allApprovedProgrammeKeyFindingsVisibleInOverview: true,
   reviewedCentralAssessments: sourceKeys.reduce((sum, sourceKey) => sum + Object.keys(saxonyAnhaltProgrammeEditorialV2[sourceKey].centralAssessments).length, 0),
   legacyDuplicateTemplateClustersDetected: legacyDuplicateClusters,
   legacyTemplatesUsedAsCurrentShortAssessment: false,
