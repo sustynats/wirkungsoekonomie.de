@@ -10,8 +10,9 @@ const layerStatusLabels = {
 export function PublicMaturity({ maturity, compact = false }: { maturity: PublicMaturityProjection; compact?: boolean }) {
   if (maturity.primary === "FACT_ONLY") {
     return (
-      <section
+      <div
         className={`public-maturity public-maturity--fact-only${compact ? " public-maturity--compact" : ""}`}
+        role="group"
         aria-label="Faktenakte ohne veröffentlichte WÖk-Wirkungsanalyse"
         data-woek-fact-only-status="published"
       >
@@ -23,12 +24,13 @@ export function PublicMaturity({ maturity, compact = false }: { maturity: Public
           </div>
         </header>
         <p className="public-maturity-hint">Der amtlich dokumentierte Sachverhalt bleibt zugänglich. Eine Wirkungsrichtung, Neutralität oder Wirkungslosigkeit wird daraus nicht abgeleitet.</p>
-      </section>
+      </div>
     );
   }
   return (
-    <section
+    <div
       className={`public-maturity${compact ? " public-maturity--compact" : ""}`}
+      role="group"
       aria-label={`Öffentlicher WÖk-Einordnungsstand: ${maturity.label}`}
       data-woek-public-maturity={maturity.primary}
     >
@@ -61,6 +63,6 @@ export function PublicMaturity({ maturity, compact = false }: { maturity: Public
           </div>)}</dl>
         </div>
       </>}
-    </section>
+    </div>
   );
 }
