@@ -1,9 +1,11 @@
 import Link from "next/link";
+import { PublicMaturity } from "@/app/components/PublicMaturity";
 import { jurisdictionById } from "@/lib/parliament/jurisdictions";
 import { saxonyAnhaltElectionProgrammes } from "@/data/sachsen-anhalt-election-programmes";
 import { saxonyAnhaltProgrammeEditorial, type ProgrammeDirection } from "@/data/presentation/sachsen-anhalt-programme-editorial-v2";
 import { saxonyAnhaltReviewedCommitmentCounts } from "@/data/presentation/sachsen-anhalt-programme-counts";
 import { allPublicationSourceRecords } from "@/lib/publication/fachakten";
+import { assessmentOnlyPublicMaturity, factOnlyPublicMaturity } from "@/lib/presentation/public-maturity";
 
 const saxonyAnhalt = jurisdictionById("sachsen-anhalt");
 
@@ -92,7 +94,14 @@ export default function SaxonyAnhaltPage() {
                 </ul>
                 <p><strong>Richtungsprofil der nachgeprüften Schlüsselpfade:</strong> {(Object.keys(editorial.centralAssessments).length).toLocaleString("de-DE")} · {(["POSITIVE", "NEGATIVE", "AMBIVALENT", "OPEN"] as ProgrammeDirection[]).filter((direction) => directionCounts[direction] > 0).map((direction) => `${directionCounts[direction]} ${directionLabel(direction)}`).join(" · ")}</p>
                 <p><small>Der Potenzialbefund ist eine qualitative Einordnung der fachlich belastbaren Muster - keine aggregierte Parteigesamtnote. Nicht kompensierbare Schutzgüter werden nicht gegen positive Einzelpfade verrechnet.</small></p>
-              </div> : <p><strong>Redaktionelle Gesamtbewertung noch nicht freigegeben.</strong></p>}
+              </div> : <p><strong>WÖk-Wirkungsanalysen sind noch nicht redaktionell veröffentlicht.</strong></p>}
+              <PublicMaturity maturity={editorial ? assessmentOnlyPublicMaturity(programme.title, {
+                assessmentLabel: editorial.overallLabel,
+                impactCoreSummary: editorial.impactCoreSummary,
+                editorialSummary: editorial.editorialSummary,
+                keyFinding: editorial.keyFindings[0]?.text ?? "",
+                evidenceSummary: editorial.readingGuide,
+              }) : factOnlyPublicMaturity(programme.title)} compact />
               <div data-woek-process-metadata>
                 <p className="commitment-count"><strong>{analysedCount?.toLocaleString("de-DE") ?? "-"} fachlich analysierte Zusageeinheiten</strong> · Quellenregister und historische Fachquelle bleiben separat vollständig abrufbar</p>
               </div>

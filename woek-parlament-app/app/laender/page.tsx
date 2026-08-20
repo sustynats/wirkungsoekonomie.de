@@ -19,6 +19,7 @@ function governmentStatus(jurisdiction: (typeof stateJurisdictions)[number]) {
 
 export default function StatesPage() {
   const openStateCount = stateJurisdictions.length - substantiveStateSlugs.size;
+  const operationalAdapterCount = stateJurisdictions.filter((jurisdiction) => jurisdiction.monitoring_enabled).length;
   return (
     <main className="shell content-page states-page">
       <header className="page-intro">
@@ -30,6 +31,7 @@ export default function StatesPage() {
       <section className="notice" aria-labelledby="states-coverage-status">
         <strong id="states-coverage-status">{substantiveStateSlugs.size} Länder mit substanziellem öffentlichem Fachstand · {openStateCount} Länder ausdrücklich noch offen.</strong>
         <p>Sachsen-Anhalt ist die Blaupause für Wahlprogrammanalysen und erhält die neue Editorial-Schicht mit Gesamtzusammenfassung, Key Findings, Richtung und Evidenz. Baden-Württemberg und Rheinland-Pfalz besitzen initiale Regierungsfachreviews. Berlin und Mecklenburg-Vorpommern besitzen materialitätsorientierte Wahlprogrammreviews, aber noch keine vollständige Auswertung aller zugelassenen Programme. Für die übrigen Länder wird kein generischer Ersatztext als Analyse ausgegeben.</p>
+        <p>Für {operationalAdapterCount} von {stateJurisdictions.length} Ländern ist im aktuellen Portalstand bereits ein vollständig operationalisierter amtlicher Quellenadapter nachgewiesen. Vorbereitete Wahl- und Fachbestände werden davon getrennt ausgewiesen.</p>
       </section>
 
       <section className="states-principles" aria-label="Qualitätsregeln des Länderportals">

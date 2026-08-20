@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { PublicMaturity } from "@/app/components/PublicMaturity";
 import { politicalSourceCatalog } from "@/lib/commitments/source-catalog";
 import { allPublicationSourceRecords } from "@/lib/publication/fachakten";
+import { factOnlyPublicMaturity, publishedDossierPublicMaturity } from "@/lib/presentation/public-maturity";
 
 export const metadata: Metadata = {
   title: "Wahlprogramme & Koalitionsvertrag 2025",
@@ -78,14 +80,20 @@ export default function MandatUndPraxisPage() {
         <div className="source-register">
           {electionPrograms.map((source) => {
             const hasFullAnalysis = fullAnalysisKeys.has(source.sourceKey);
-            return <article key={source.sourceKey}>
-              <p className="source-register-label">{source.actor}</p>
+            const maturity = hasFullAnalysis
+              ? publishedDossierPublicMaturity(source.title, `Die vollständige quellengebundene Ex-ante-Fachakte zu „${source.title}“ ist veröffentlicht.`)
+              : factOnlyPublicMaturity(source.title);
+            return <article key={source.sourceKey} data-woek-preview-card={hasFullAnalysis ? "dossier" : "fact-only"}>
               <h3>{source.title}</h3>
-              <section className="notice notice-neutral" aria-label={`Fachstatus ${source.actor}`}>
-                <strong>{hasFullAnalysis ? "Vollständige Ex-ante-Fachakte vorhanden" : "Quellenregister vorhanden"}</strong>
-                <p>{hasFullAnalysis ? "Der Release-1-Fachbestand ist vollständig abrufbar. Die aktuelle Richtungs- und Kurzbewertung wird nach dem neuen Editorial-Gate neu geprüft." : "Eine fertige Wirkungsanalyse wird nicht behauptet."}</p>
-              </section>
-              <p className="commitment-count"><strong>{source.commitmentCount.toLocaleString("de-DE")} strukturierte Zusagen</strong> · mit Fundstellen und Quellenfingerabdruck</p>
+              <PublicMaturity maturity={maturity} compact />
+              <div data-woek-process-metadata>
+                <p className="source-register-label">{source.actor}</p>
+                <section className="notice notice-neutral" aria-label={`Fachstatus ${source.actor}`}>
+                  <strong>{hasFullAnalysis ? "Vollständige Ex-ante-Fachakte vorhanden" : "Quellenregister vorhanden"}</strong>
+                  <p>{hasFullAnalysis ? "Der Release-1-Fachbestand ist vollständig abrufbar. Die aktuelle Richtungs- und Kurzbewertung wird nach dem neuen Editorial-Gate neu geprüft." : "Eine fertige Wirkungsanalyse wird nicht behauptet."}</p>
+                </section>
+                <p className="commitment-count"><strong>{source.commitmentCount.toLocaleString("de-DE")} strukturierte Zusagen</strong> · mit Fundstellen und Quellenfingerabdruck</p>
+              </div>
               <Link className="text-link" href={`/mandat-und-praxis/${source.sourceKey}`}>Fachakte und Zusagen öffnen <span aria-hidden="true">→</span></Link>
             </article>;
           })}
@@ -94,11 +102,14 @@ export default function MandatUndPraxisPage() {
 
       {coalitionAgreement && <section className="section section-compact coalition-source" aria-labelledby="coalition-title">
         <div className="section-heading"><div><p className="eyebrow">Regierungsmandat 2025</p><h2 id="coalition-title">Koalitionsvertrag</h2></div></div>
-        <article>
-          <p className="source-register-label">{coalitionAgreement.actor}</p>
+        <article data-woek-preview-card="dossier">
           <h3>{coalitionAgreement.title}</h3>
-          <section className="notice notice-neutral"><strong>Vollständige Ex-ante-Fachakte vorhanden</strong><p>Der Vertrag ist weder Gesetz noch Wirkungsnachweis. Seine Zusagen werden getrennt mit parlamentarischen Entscheidungen und späterem Vollzug verknüpft.</p></section>
-          <p className="commitment-count"><strong>{coalitionAgreement.commitmentCount.toLocaleString("de-DE")} strukturierte Zusagen</strong> · mit Quellenfingerabdruck dokumentiert</p>
+          <PublicMaturity maturity={publishedDossierPublicMaturity(coalitionAgreement.title, `Die vollständige quellengebundene Ex-ante-Fachakte zu „${coalitionAgreement.title}“ ist veröffentlicht.`)} compact />
+          <div data-woek-process-metadata>
+            <p className="source-register-label">{coalitionAgreement.actor}</p>
+            <section className="notice notice-neutral"><strong>Vollständige Ex-ante-Fachakte vorhanden</strong><p>Der Vertrag ist weder Gesetz noch Wirkungsnachweis. Seine Zusagen werden getrennt mit parlamentarischen Entscheidungen und späterem Vollzug verknüpft.</p></section>
+            <p className="commitment-count"><strong>{coalitionAgreement.commitmentCount.toLocaleString("de-DE")} strukturierte Zusagen</strong> · mit Quellenfingerabdruck dokumentiert</p>
+          </div>
           <Link className="text-link" href={`/mandat-und-praxis/${coalitionAgreement.sourceKey}`}>Koalitionsvertragsakte öffnen <span aria-hidden="true">→</span></Link>
         </article>
       </section>}
