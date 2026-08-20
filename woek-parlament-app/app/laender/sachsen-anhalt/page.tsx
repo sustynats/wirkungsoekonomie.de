@@ -1,7 +1,9 @@
 import Link from "next/link";
+import { PublicMaturity } from "@/app/components/PublicMaturity";
 import { jurisdictionById } from "@/lib/parliament/jurisdictions";
 import { saxonyAnhaltElectionProgrammes } from "@/data/sachsen-anhalt-election-programmes";
 import { allPublicationSourceRecords } from "@/lib/publication/fachakten";
+import { factOnlyPublicMaturity, publishedDossierPublicMaturity } from "@/lib/presentation/public-maturity";
 
 const saxonyAnhalt = jurisdictionById("sachsen-anhalt");
 
@@ -85,8 +87,12 @@ export default function SaxonyAnhaltPage() {
             const review = reviewBySource.get(programme.sourceKey);
             const overview = review?.overview && typeof review.overview === "object" && !Array.isArray(review.overview) ? review.overview as Record<string, unknown> : {};
             const count = typeof overview.commitment_count === "number" ? overview.commitment_count : null;
+            const publishedScope = typeof overview.summary === "string" ? overview.summary.trim() : "";
             return <article key={programme.sourceKey} data-woek-preview-card={review ? "published" : "fact-only"}>
               <h3>{programme.title}</h3>
+              <PublicMaturity maturity={review && publishedScope
+                ? publishedDossierPublicMaturity(programme.title, publishedScope)
+                : factOnlyPublicMaturity(programme.title)} compact />
               <div data-woek-process-metadata>
                 <p className="source-register-label">{programme.party} · {review ? "vollständige WÖk-Wirkungsakte" : "Originalprogramm"}</p>
                 <p className="commitment-count"><strong>{count?.toLocaleString("de-DE") ?? "-"} Zusageeinheiten</strong> · vollständige Fachakte und Zusageregister</p>
