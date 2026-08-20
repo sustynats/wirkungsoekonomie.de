@@ -13,6 +13,12 @@ test("unknown technical values fail closed instead of becoming title-cased publi
 
 test("reviewed labels remain available without exposing their control values", () => {
   assert.equal(publicSystemLabel("EU_SHARED"), "geteilte EU-Zuständigkeit");
+  assert.equal(publicSystemLabel("SCHNELLER_ROLLOUT"), "schneller Rollout");
+  assert.equal(
+    publicSystemLabel("WOEK_PRAEFERIERTER_NAECHSTER_SCHRITT"),
+    "von der WÖk fachlich bevorzugter nächster Schritt",
+  );
+  assert.equal(publicSystemLabel("KONSERVATIVE_REFERENZ"), "konservative Referenz");
   assert.equal(publicSystemValueLabel("MIXED_EU_SUPPORTING_EXISTING_DIGITAL_INTERNAL_MARKET_RULES"), "Gemischte EU-Zuständigkeit mit unterstützender Rolle auf Grundlage bestehender Binnenmarkt- und Digitalregeln");
   assert.equal(publicSystemValueLabel("STRATEGY_AND_COMMUNICATION"), "Strategie und Mitteilung der Europäischen Kommission");
   assert.equal(publicIndicatorLabel("low_carbon_material_share"), "Anteil CO2-armer Materialien in der betroffenen Beschaffung");

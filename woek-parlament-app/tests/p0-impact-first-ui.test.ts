@@ -189,7 +189,7 @@ test("PUBLIC_SCHEMA_TERMS_ARE_MAPPED_TO_PLAIN_GERMAN", () => {
     assert.match(presentationLabels, new RegExp(`${driver}:`));
   }
   assert.doesNotMatch(stateProgrammes, /Wahlprogramme vor der Landtagswahl Sachsen-Anhalt 2026: Wirkungspotenziale/);
-  assert.match(stateProgrammes, /WÖk-Wirkungsanalysen sind noch nicht redaktionell veröffentlicht/);
+  assert.match(stateProgrammes, /vollständige WÖk-Wirkungsakte/);
 });
 
 test("WOEK_ASSESSMENT_LABEL_USES_COMPACT_SANS_SERIF_LEAD_TYPOGRAPHY", () => {

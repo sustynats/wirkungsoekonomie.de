@@ -1,13 +1,3 @@
 {
-  "buildCommand": "npm run build",
-  "crons": [
-    {
-      "path": "/api/cron/political-daily-digest",
-      "schedule": "5 20 * * *"
-    },
-    {
-      "path": "/api/cron/political-daily-digest",
-      "schedule": "5 21 * * *"
-    }
-  ]
+  "buildCommand": "npm run build"
 }

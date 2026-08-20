@@ -48,6 +48,12 @@ const recommendationDimensionValueLabels = {
   BESCHLOSSENE_OPTION: "beschlossene Option",
   REFERENZOPTION: "Referenzoption",
   WOEK_PRAEFERIERTE_AUSGESTALTUNG: "von der WÖk fachlich bevorzugte Ausgestaltung",
+  SCHUTZMAXIMIERENDE_OPTION: "schutzmaximierende Option",
+  GEZIELTE_SCHUTZOPTION: "gezielte Schutzoption",
+  DATENSPARSAME_ALTERNATIVE: "datensparsame Alternative",
+  SCHNELLER_ROLLOUT: "schneller Rollout",
+  WOEK_PRAEFERIERTER_NAECHSTER_SCHRITT: "von der WÖk fachlich bevorzugter nächster Schritt",
+  KONSERVATIVE_REFERENZ: "konservative Referenz",
 };
 
 function publicNarrativeText(value) {
