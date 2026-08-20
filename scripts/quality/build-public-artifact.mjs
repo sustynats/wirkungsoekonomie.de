@@ -38,6 +38,7 @@ const excludedTopLevelDirs = new Set([
   "tools",
   "woek-akademie-app",
   "woek-institut-app",
+  "woek-parlament-app",
 ]);
 
 const excludedTopLevelFiles = new Set([
