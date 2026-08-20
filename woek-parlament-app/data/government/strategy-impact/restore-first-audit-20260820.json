@@ -14,9 +14,19 @@
     "mission_subcases": 19,
     "full_deep_dives": [
       "WOEK-AKN-2026-M02",
-      "WOEK-AKN-2026-M04"
+      "WOEK-AKN-2026-M04",
+      "WOEK-AKN-2026-M05",
+      "WOEK-AKN-2026-M06",
+      "WOEK-AKN-2026-M09",
+      "WOEK-AKN-2026-M10",
+      "WOEK-AKN-2026-M11",
+      "WOEK-AKN-2026-M12",
+      "WOEK-AKN-2026-M13",
+      "WOEK-AKN-2026-M14",
+      "WOEK-AKN-2026-M15",
+      "WOEK-AKN-2026-M16"
     ],
-    "initial_ex_ante_cases": 17,
+    "initial_ex_ante_cases": 7,
     "public_routes": 20,
     "source_intermediary_routes": 6
   },
@@ -25,8 +35,13 @@
     "no_aggregate_score": true,
     "no_codex_generated_recommendation": true,
     "partial_cases_fail_closed": true,
-    "fach_sources_preserved_verbatim": true
+    "fach_sources_preserved_verbatim": true,
+    "newest_review_overlays_projected": true
   },
+  "review_overlay_sources": [
+    "https://github.com/sustynats/wirkungsoekonomie.de/issues/237#issuecomment-5361235455",
+    "https://github.com/sustynats/wirkungsoekonomie.de/issues/237#issuecomment-5361257729"
+  ],
   "canonical_sources": [
     "/WOEK/WOEK-AUTOPILOT/CONTROL/FACHREVIEW-WIRKUNGSORIENTIERUNG-DNS-AKTIONSPLAN-2026-20260820T0559Z.md",
     "/WOEK/WOEK-REGIERUNG-WIRKUNG-FACHRELEASE-2.0/analysis/GOVERNMENT-STRATEGY-IMPACT-AKTIONSPLAN-NACHHALTIGKEIT-2026-META.md",

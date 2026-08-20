@@ -67,6 +67,25 @@ function StrategyStatus({ full = false }: { full?: boolean }) {
   </div>;
 }
 
+const initialMissionOpenLayers = [
+  "Problem- und Zielprüfung",
+  "materielle Auslassungen und Policy-Kohärenz",
+  "Delivery, Ressourcen und Finanzierung",
+  "räumliche Verteilung und internationale Verlagerung",
+  "Robustheit, Reversibilität und Lock-in",
+  "Falsifikationskriterien, Lebenslauf und Versionsdelta",
+];
+
+function InitialMissionCoverage() {
+  return <section aria-labelledby="mission-initial-coverage">
+    <p className="eyebrow">Reife und Abdeckung</p>
+    <h2 id="mission-initial-coverage">Vertiefung noch nicht fachlich veröffentlicht</h2>
+    <p>Für diese Mission liegt im führenden Fachbestand bislang nur der freigegebene Ex-ante-Kern aus Ziel, Wirkpfad, Risiko und Beobachtungsbedarf vor. Eine objektspezifische Fachprüfung der folgenden Ebenen ist noch nicht freigegeben:</p>
+    <ul>{initialMissionOpenLayers.map((layer) => <li key={layer}>{layer}</li>)}</ul>
+    <p>Diese offenen Ebenen werden weder automatisch ergänzt noch als neutral bewertet.</p>
+  </section>;
+}
+
 export function ActionPlanMetaPreview() {
   return <article className="government-impact-case strategy-impact-case" data-woek-preview-card="published">
     <header>
@@ -169,7 +188,7 @@ export function ActionPlanMissionDetail({ mission }: { mission: ActionPlanMissio
         <p className="eyebrow">Problem- und Zielprüfung</p>
         <h2 id={`mission-review-${mission.mission}`}>Sind Problem und Ziel tragfähig gefasst?</h2>
         <div className="government-impact-grid">
-          <article><h3>{deepDive.problemReview.status}</h3><p>{deepDive.problemReview.text}</p><p><strong>Tatsächlicher Engpass:</strong> {deepDive.problemReview.bottleneck}</p></article>
+          <article><h3>{deepDive.problemReview.status}</h3><p>{deepDive.problemReview.text}</p>{deepDive.problemReview.bottleneck ? <p><strong>Tatsächlicher Engpass:</strong> {deepDive.problemReview.bottleneck}</p> : null}</article>
           <article><h3>{deepDive.goalReview.status}</h3><p>{deepDive.goalReview.text}</p></article>
         </div>
       </section>
@@ -183,7 +202,7 @@ export function ActionPlanMissionDetail({ mission }: { mission: ActionPlanMissio
         <h2 id={`mission-deep-path-${mission.mission}`}>Präzisierter Wirkpfad der vertieften Prüfung</h2>
         <ImpactPath path={deepDive.path} />
       </section>
-    </> : null}
+    </> : <InitialMissionCoverage />}
 
     <section aria-labelledby={`mission-path-${mission.mission}`}>
       <p className="eyebrow">Deep Dive · Wirkpfad</p>
@@ -194,6 +213,7 @@ export function ActionPlanMissionDetail({ mission }: { mission: ActionPlanMissio
 
     <section aria-labelledby={`mission-evidence-${mission.mission}`}>
       <h2 id={`mission-evidence-${mission.mission}`}>Evidenz, Monitoring und offene Punkte</h2>
+      {deepDive?.officialAnchor ? <p><strong>Amtlicher Draft-Anker:</strong> {deepDive.officialAnchor}</p> : null}
       <p>{deepDive?.evidenceMaturity ?? assessment.evidenceSummary}</p>
       <ul>{mission.monitor.map((item) => <li key={item}>{item}</li>)}</ul>
       <p><strong>Datenfunktion:</strong> Die benannten Größen dienen als Ausgangswert, Umsetzungs-, Output-, Outcome-, Verteilungs- oder Zurechnungsinformation. Ihre genaue Funktion muss vor einer kausalen Interpretation explizit bestimmt werden.</p>

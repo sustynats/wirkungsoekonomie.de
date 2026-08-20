@@ -49,7 +49,7 @@ export type MissionDeepDive = {
   overview: OverviewAssessmentData;
   officialAnchor: string;
   evidenceMaturity: string;
-  problemReview: { status: string; text: string; bottleneck: string };
+  problemReview: { status: string; text: string; bottleneck?: string };
   goalReview: { status: string; text: string };
   path: { A: string; M: string; deltaZ: string; R: string };
   qualityLayers: StrategyQualityLayer[];
@@ -82,6 +82,7 @@ export function strategySourceHashes() {
     "aktionsplan-nachhaltigkeit-2026-meta.md",
     "aktionsplan-nachhaltigkeit-2026-missions-01-10.jsonl",
     "aktionsplan-nachhaltigkeit-2026-missions-11-19.jsonl",
+    "reviewed-deep-dives-20260820.json",
   ];
   return Object.fromEntries(names.map((name) => [name, createHash("sha256").update(readFileSync(path.join(root, name))).digest("hex")]));
 }
@@ -303,7 +304,13 @@ const m04: MissionDeepDive = {
   recommendationStatus: "Es wird keine WÖk-Handlungsoption aus diesem Review erzeugt. Die beschriebenen Mindeststandards sind Analyse- und Prüfkriterien, kein automatisch freigegebener RecommendationRecord.",
 };
 
-export const missionDeepDives: Readonly<Record<string, MissionDeepDive>> = { [m02.missionId]: m02, [m04.missionId]: m04 };
+const reviewedDeepDiveOverlays = JSON.parse(readFileSync(path.join(root, "reviewed-deep-dives-20260820.json"), "utf8")) as { records: MissionDeepDive[] };
+
+export const missionDeepDives: Readonly<Record<string, MissionDeepDive>> = {
+  [m02.missionId]: m02,
+  [m04.missionId]: m04,
+  ...Object.fromEntries(reviewedDeepDiveOverlays.records.map((record) => [record.missionId, record])),
+};
 
 export function actionPlanAssessmentForMission(mission: ActionPlanMission) {
   return missionDeepDives[mission.id]?.overview ?? missionOpenAssessment(mission);
