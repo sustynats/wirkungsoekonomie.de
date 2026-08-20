@@ -247,7 +247,10 @@ export function CommonTargetsComparison({ impactCaseId }: { impactCaseId: string
     {!review && <div className="open-state"><strong>Vergleich mit gemeinsamen Zielen fachlich noch offen.</strong><p>Aus Schlagworten, Wirkungspfaden oder vorhandenen Scores wird keine Zielrichtung abgeleitet. Offen bedeutet weder neutral noch wirkungslos.</p></div>}
     {review && !recommendation && <div className="open-state"><strong>WÖk-Handlungsoption im öffentlichen Bestand nicht verfügbar.</strong><p>Der Vergleich bleibt geschlossen, bis die zugehörige kanonisch freigegebene RecommendationRecord-Fassung öffentlich verknüpft ist.</p></div>}
     {review && recommendation && <>
-      <div className="common-target-options"><p><strong>Beschlossene Entscheidung:</strong> {review.actual_option.label}</p><p><strong>WÖk-Handlungsoption:</strong> {review.woek_option.label}</p></div>
+      <div className="common-target-options"><p><strong>Beschlossene Entscheidung:</strong> {review.actual_option.label}</p>{review.woek_option
+        ? <p><strong>WÖk-Handlungsoption:</strong> {review.woek_option.label}</p>
+        : <p><strong>Keine robuste WÖk-Handlungsoption freigegeben.</strong> {review.not_applicable_reason}</p>}</div>
+      {review.woek_option ? <>
       <div className="common-targets-table" role="table" aria-label="Vergleich nach getrennten Referenzebenen">
         <div className="common-targets-row common-targets-head" role="row"><span role="columnheader">Referenzebene</span><span role="columnheader">Beschlossene Entscheidung</span><span role="columnheader">WÖk-Handlungsoption</span></div>
         {referenceLayerIds.map((layer) => {
@@ -260,6 +263,7 @@ export function CommonTargetsComparison({ impactCaseId }: { impactCaseId: string
           </div>);
         })}
       </div>
+      </> : null}
       <div className="common-target-guard"><p><strong>Schutz vor Rückschaufehlern:</strong> {publicReviewProse(review.hindsight_guard)}</p><p><strong>Zurechnungsgrenze:</strong> {publicReviewProse(review.causal_attribution_disclaimer)}</p><p><strong>Nichtkompensation:</strong> {publicReviewProse(review.aggregation_rule)}</p></div>
     </>}
     <p className="government-method-meta">Maschinelle Kandidaten, lokale Dateipfade oder bloße Schlagworttreffer werden nicht öffentlich als WÖk-Mapping ausgegeben.</p>
