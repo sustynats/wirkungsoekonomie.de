@@ -1,4 +1,5 @@
 import { sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
+import { publicArchiveText } from "@/lib/presentation/labels";
 
 export type PublicationTocEntry = { id: string; level: number; text: string };
 
@@ -45,7 +46,7 @@ function presentationHeading(value: string) {
   const normalized = value.trim();
   if (/\s[–-]\s(?:programme-review|commitment-register)\s[–-]\svollständige Darstellung$/i.test(normalized)) return "Vollständige Fachakte";
   if (/^Vollständige Fachakte\s[–-]\s/.test(normalized)) return "Vollständige Fachakte";
-  return presentationHeadingLabels[normalized] ?? normalized;
+  return publicArchiveText(presentationHeadingLabels[normalized] ?? normalized);
 }
 
 const escapeHtml = (value: string) => value
@@ -83,7 +84,7 @@ function inline(value: string) {
   };
   let output = value.replace(/\[([^\]]+)\]\((https:\/\/[^\s)]+)\)/g, (_, label: string, url: string) => keep(safeLink(url, label)));
   output = output.replace(/https:\/\/[^\s<]+/g, (url) => keep(safeLink(url, url)));
-  output = escapeHtml(output)
+  output = escapeHtml(publicArchiveText(output))
     .replace(/`([^`]+)`/g, "<code>$1</code>")
     .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
     .replace(/(^|[^*])\*([^*]+)\*/g, "$1<em>$2</em>");
@@ -132,7 +133,7 @@ export function renderPublicationMarkdown(markdown: string) {
     const trimmed = raw.trim();
     if (code) {
       if (/^```/.test(trimmed)) {
-        output.push(`<pre><code>${escapeHtml(code.join("\n"))}</code></pre>`);
+        output.push(`<pre><code>${escapeHtml(publicArchiveText(code.join("\n")))}</code></pre>`);
         code = null;
       } else {
         code.push(raw);
@@ -190,7 +191,7 @@ export function renderPublicationMarkdown(markdown: string) {
     flushList(); flushQuote();
     paragraph.push(trimmed);
   }
-  if (code) output.push(`<pre><code>${escapeHtml(code.join("\n"))}</code></pre>`);
+  if (code) output.push(`<pre><code>${escapeHtml(publicArchiveText(code.join("\n")))}</code></pre>`);
   flush();
   return { html: output.join("\n"), toc };
 }

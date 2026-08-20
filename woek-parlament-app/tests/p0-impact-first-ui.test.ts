@@ -190,7 +190,7 @@ test("PUBLIC_SCHEMA_TERMS_ARE_MAPPED_TO_PLAIN_GERMAN", () => {
     assert.match(presentationLabels, new RegExp(term.replace(/[+]/g, "\\+")));
   }
   assert.match(source("app/components/FullReviewRecord.tsx"), /humanizeSystemValue\(part\)/);
-  assert.match(source("app/components/CompletePublicationSource.tsx"), /humanizeSystemValue\(output\)/);
+  assert.match(source("app/components/CompletePublicationSource.tsx"), /publicArchiveText\(output\)/);
   assert.doesNotMatch(source("app/components/recommendations/RecommendationSection.tsx"), />RecommendationVersion /);
   assert.doesNotMatch(source("app/regierung/wirkungsanalysen/[id]/page.tsx"), /kein fachlich freigegebenes EvidenceEvent/);
   for (const driver of ["CLIMATE_RESOURCE", "FINANCIAL_SCALE", "HEALTH_SAFETY", "HIGH_UNCERTAINTY_HIGH_HARM", "POPULATION_SCALE"]) {

@@ -354,6 +354,121 @@ export function humanizeSystemValue(value: string) {
   return translated;
 }
 
+const publicationArchiveTokenLabels: Record<string, string> = {
+  programme_profile: "Programmprofil",
+  material_commitments: "Materielle Programmaussagen",
+  central_impact_paths: "Zentrale Wirkungspfade",
+  cross_cutting_patterns: "Themenübergreifende Muster",
+  programme_level_communicative_pre_effect: "Kommunikative Vorwirkung auf Programmebene",
+  methodology_extension: "Methodische Ergänzung",
+  schema_version: "Schemaversion",
+  source_key: "Quellenkennung",
+  source_hash: "Quellenprüfsumme",
+  review_status: "Prüfstatus",
+  plain_language_summary: "Verständliche Zusammenfassung",
+  declared_objectives: "Benannte Ziele",
+  implementation_boundary: "Umsetzungsgrenze",
+  material_policy_domains: "Materielle Politikfelder",
+  commitment_key: "Kennung der Programmaussage",
+  source_refs: "Quellenverweise",
+  source_text: "Quelltext",
+  decision_or_measure: "Entscheidung oder Maßnahme",
+  intended_change: "Beabsichtigte Veränderung",
+  decision_readiness: "Entscheidungsreife",
+  missing_parameters: "Fehlende Parameter",
+  responsible_actors: "Zuständige Akteure",
+  affected_groups: "Betroffene Gruppen",
+  impact_potential: "Wirkungspotenzial",
+  path_id: "Wirkpfadkennung",
+  expected_state_change: "Erwartete Zustandsveränderung",
+  implementation_conditions: "Umsetzungsbedingungen",
+  baseline_required: "Baseline erforderlich",
+  counterfactual_required: "Gegenfaktum erforderlich",
+  evidence_status: "Evidenzstatus",
+  impact_risks: "Wirkungsrisiken",
+  trigger_or_condition: "Auslöser oder Bedingung",
+  affected_groups_or_goods: "Betroffene Gruppen oder Schutzgüter",
+  communicative_pre_effect: "Kommunikative Vorwirkung",
+  frame_markers: "Rahmungsmerkmale",
+  evidence_boundary: "Evidenzgrenze",
+  calculation_requirements: "Rechenanforderungen",
+  possible_indicator: "Möglicher Indikator",
+  required_operands: "Erforderliche Operanden",
+  data_gap: "Datenlücke",
+  non_compensable_boundaries: "Nicht kompensierbare Grenzen",
+  normative_mapping: "Normative Zuordnung",
+  sdg_plus: "SDG+",
+  state_target_ids: "Kennungen der Landesziele",
+  data_gaps: "Datenlücken",
+  analysis_time_status: "Zeitstatus der Analyse",
+  impact_orders: "Wirkungsordnungen",
+  first_order: "Erste Ordnung",
+  second_order: "Zweite Ordnung",
+  third_order: "Dritte Ordnung",
+  distribution_and_time: "Verteilung und Zeit",
+  benefit_and_burden_test: "Nutzen- und Belastungsprüfung",
+  short_term: "Kurzfristig",
+  medium_term: "Mittelfristig",
+  long_term: "Langfristig",
+  intergenerational_relevance: "Generationenübergreifende Relevanz",
+  implementation_and_capacity: "Umsetzung und Kapazität",
+  capacity_status: "Kapazitätsstatus",
+  reversibility_and_lock_in: "Reversibilität und Lock-in",
+  decision_information_gap: "Informationslücke für die Entscheidung",
+  required_before_binding_decision: "Vor bindender Entscheidung erforderlich",
+  monitoring_and_feedback: "Monitoring und Rückkopplung",
+  primary_indicator: "Leitindikator",
+  earliest_review: "Frühester Review",
+  correction_trigger: "Korrekturauslöser",
+  MULTI_LEVEL: "mehrere Zuständigkeitsebenen",
+  NONE_IDENTIFIED: "keine benannt",
+  EX_ANTE_PROGRAMME_COMMITMENT: "Ex-ante-Prüfung einer Programmaussage",
+  PLAUSIBLE_PATHS_NOT_OBSERVED_EFFECTS: "plausible Wirkungspfade, keine beobachteten Wirkungen",
+  CONTEXT_DEPENDENT: "kontextabhängig",
+  DATA_GAP_UNTIL_IMPLEMENTATION_DESIGN: "Datenlücke bis zur Festlegung der Umsetzung",
+  PARTLY_REVERSIBLE: "teilweise reversibel",
+  MATERIAL_GAPS: "materielle Informationslücken",
+  NOT_DECISION_READY: "noch nicht entscheidungsreif",
+  REVIEW_REQUIRED: "Prüfung erforderlich",
+  LOCK_IN_RISK: "Lock-in-Risiko",
+  ECONOMY_INDUSTRY_TRADE: "Wirtschaft, Industrie und Handel",
+  SECURITY_POLICE_JUSTICE: "Sicherheit, Polizei und Justiz",
+  WORK_SOCIAL_SECURITY: "Arbeit und soziale Sicherung",
+  NATURE_WATER_RESOURCES: "Natur, Wasser und Ressourcen",
+  CULTURE_RELIGION_SPORT: "Kultur, Religion und Sport",
+  SCIENCE_RESEARCH: "Wissenschaft und Forschung",
+  ENERGY_CLIMATE: "Energie und Klima",
+  FAMILY_EQUALITY: "Familie und Gleichstellung",
+  MOBILITY_INFRASTRUCTURE: "Mobilität und Infrastruktur",
+  HEALTH_CARE: "Gesundheit und Pflege",
+  ADMINISTRATION_STATE: "Verwaltung und Staat",
+  MEDIA_COMMUNICATION: "Medien und Kommunikation",
+  DIGITAL_AI_DATA: "Digitales, KI und Daten",
+  DEFENCE_FOREIGN_EU: "Verteidigung, Außenpolitik und EU",
+  TAX_FISCAL_BUDGET: "Steuern, Finanzen und Haushalt",
+  MIGRATION_ASYL: "Migration und Asyl",
+  AGRICULTURE_FOOD_ANIMAL: "Landwirtschaft, Ernährung und Tierwohl",
+};
+
+/**
+ * The immutable publication archive contains technical source notation. This
+ * presentation-only projection preserves every token while replacing machine
+ * separators with readable text. It is deliberately separate from the strict
+ * publicSystemLabel gate used for substantive UI assertions.
+ */
+export function publicArchiveText(value: string) {
+  const reviewed = humanizeSystemValue(value);
+  return reviewed.replace(/\b[\p{L}0-9]+(?:_[\p{L}0-9]+)+\b/gu, (token) => {
+    const exact = publicationArchiveTokenLabels[token];
+    if (exact) return exact;
+    const sdg = token.match(/^SDG_(\d+)$/);
+    if (sdg) return `SDG ${Number(sdg[1])}`;
+    const words = token.replaceAll("_", " ");
+    const readable = token === token.toLocaleUpperCase("de-DE") ? words.toLocaleLowerCase("de-DE") : words;
+    return `${readable.charAt(0).toLocaleUpperCase("de-DE")}${readable.slice(1)}`;
+  });
+}
+
 /** Technical control values may appear in normal public UI only through an
  * exact reviewed mapping. Unknown codes are suppressed by the caller instead
  * of being cosmetically title-cased. */

@@ -2,6 +2,7 @@ import { getPublicationSource } from "@/lib/publication/fachakten";
 import { escapeHtml, renderPublicationMarkdown } from "@/lib/publication/markdown-renderer";
 import { saxonyAnhaltElectionProgrammes } from "@/data/sachsen-anhalt-election-programmes";
 import { politicalSourceCatalog } from "@/lib/commitments/source-catalog";
+import { publicArchiveText } from "@/lib/presentation/labels";
 
 export const dynamic = "force-dynamic";
 
@@ -38,7 +39,7 @@ export async function GET(_request: Request, { params }: { params: Promise<{ id:
 
   const rendered = renderPublicationMarkdown(source.markdown);
   const toc = rendered.toc.length ? `<nav class="toc" aria-label="Inhaltsverzeichnis"><strong>Direkt zu einem Kapitel</strong><ol>${rendered.toc.map((entry) => `<li class="${entry.level > 2 ? "nested" : ""}"><a href="#${escapeHtml(entry.id)}">${escapeHtml(entry.text)}</a></li>`).join("")}</ol></nav>` : "";
-  const sourceRecords = source.sourceRecords.map((record) => `<li><strong>${escapeHtml(record.kind)}</strong>: ${escapeHtml(record.sha256)}</li>`).join("");
+  const sourceRecords = source.sourceRecords.map((record) => `<li><strong>${escapeHtml(publicArchiveText(record.kind))}</strong>: ${escapeHtml(record.sha256)}</li>`).join("");
   const title = escapeHtml(publicTitle(source));
   const summary = overviewSummary(source.overview);
   const back = escapeHtml(localReturnPath(source.renderedRoute));
