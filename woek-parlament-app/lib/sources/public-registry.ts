@@ -4,6 +4,7 @@ import { politicalSourceCatalog } from "@/lib/commitments/source-catalog";
 import { fachanalyseSources } from "@/data/fachanalysen";
 import { stateTargetRegisters } from "@/data/state-target-registers";
 import { saxonyAnhaltElectionProgrammes } from "@/data/sachsen-anhalt-election-programmes";
+import { getAllCommunicationMediaImpactRecords } from "@/lib/state-programmes/communication-media-impact";
 import releasePublicationSourceLinks from "@/data/generated/release-1/publication-source-links.json";
 import { directionLabels, evidenceLabels, getPublicImpactCases, governmentEditorialProjection } from "@/lib/government/impact-cases";
 import { getGovernmentPublicData, sourceFunctionLabels } from "@/lib/government/public-data";
@@ -337,6 +338,67 @@ function saxonyAnhaltProgrammeCatalogSources(): StaticPublicSource[] {
       abstract: "Politische Originalquelle für die Wirkungsakte zur Landtagswahl Sachsen-Anhalt 2026. Sie belegt den Programmwortlaut, keine eingetretene Wirkung.",
       usages: []
     } satisfies StaticPublicSource];
+  });
+}
+
+function communicationMediaImpactSources(): StaticPublicSource[] {
+  const programmeByKey = new Map(saxonyAnhaltElectionProgrammes.map((programme) => [programme.sourceKey, programme]));
+  return getAllCommunicationMediaImpactRecords().flatMap((record) => {
+    const programme = programmeByKey.get(record.programme_source_key);
+    if (!programme) return [];
+    const sources = [...record.source_refs, {
+      title: `WÖk-Fachreview Kommunikationswirkung – ${programme.party}`,
+      url: record.fach_source.url,
+      locator: `Fachreview ${record.communication_review_version}`,
+    }];
+    return sources.flatMap((source) => {
+      const canonicalUrl = isSafePublicSourceUrl(source.url);
+      const slug = canonicalUrl ? sourceSlugForCanonicalUrl(canonicalUrl) : null;
+      if (!canonicalUrl || !slug) return [];
+      const hostname = new URL(canonicalUrl).hostname;
+      const woekReference = hostname === "wirkungsoekonomie.de" || (hostname === "github.com" && canonicalUrl.includes("/sustynats/wirkungsoekonomie.de/"));
+      return [{
+        id: `communication-media-${record.communication_review_id}-${slug}`,
+        slug,
+        title: source.title,
+        institution: woekReference ? "Institut für Wirkungsökonomie" : programme.party,
+        category: woekReference ? "WOEK_METHOD_REFERENCE" : "OTHER_PRIMARY_SOURCE",
+        role: woekReference ? "METHODOLOGY_REFERENCE" : "CONTEXT",
+        documentType: woekReference ? "WÖk-Fach- oder Methodenquelle" : "Offizielle Programm- oder Kampagnenquelle",
+        canonicalUrl,
+        documentDate: programme.decisionDate,
+        retrievedAt: "2026-08-20",
+        versionLabel: source.locator,
+        sourceHash: null,
+        temporalClass: "CURRENT_REFERENCE",
+        abstract: woekReference
+          ? `Der Fachreview ${record.communication_review_version} dokumentiert die freigegebene, von der Maßnahmenwirkung getrennte Kommunikationswirkungsanalyse zum ${programme.title}. Er legt Befund, Evidenzgrenzen und offene Prüfungen offen.`
+          : `„${source.title}“ dokumentiert ${source.locator}. Die politische Originalquelle belegt den geprüften Wortlaut; eine eingetretene gesellschaftliche Wirkung folgt daraus nicht automatisch.`,
+        usages: [{
+          caseSlug: record.programme_source_key,
+          caseTitle: `${programme.party}: Kommunikationswirkung des Wahlprogramms`,
+          caseKind: "STATE_PROGRAMME_COMMUNICATION_MEDIA_IMPACT",
+          decisionDate: programme.decisionDate,
+          sourceRole: woekReference ? "METHODOLOGY_REFERENCE" : "CONTEXT",
+          locations: [source.locator],
+          note: "Maßnahmenwirkung und Kommunikationswirkung werden als getrennte Achsen veröffentlicht.",
+          caseHref: `/laender/sachsen-anhalt/wahlprogramme/${record.programme_source_key}#kommunikationswirkung`,
+          analysisSummary: record.public_summary,
+          analysisDirection: record.overview_assessment_label,
+          evidenceLevel: `Text-Evidenz ${record.evidence.text}; beobachtete Wirkung ${record.evidence.observed_outcome}`,
+          assessment: {
+            assessmentLabel: record.overview_assessment_label,
+            impactCoreSummary: record.public_summary,
+            editorialSummary: record.noncompensation,
+            keyFinding: `${record.positive_potentials[0]} ${record.material_risks[0]}`,
+            directionLabel: record.overview_assessment_label,
+            directionKind: record.assessment_icon_kind,
+            evidenceSummary: `Text-Evidenz ${record.evidence.text}; Mechanismus ${record.evidence.mechanism}; beobachtete Wirkung ${record.evidence.observed_outcome}.`,
+            realityCheckSummary: `Reichweite und Resonanz: ${record.evidence.reach_resonance}; Zurechnung: ${record.evidence.attribution}.`,
+          },
+        }],
+      } satisfies StaticPublicSource];
+    });
   });
 }
 
@@ -1021,6 +1083,7 @@ function staticPublicSources() {
     ...fachanalyseCatalogSources(),
     ...stateTargetCatalogSources(),
     ...saxonyAnhaltProgrammeCatalogSources(),
+    ...communicationMediaImpactSources(),
     ...foundationalReferenceSources(),
     ...releasedFachakteSources(),
     ...governmentFactSources(),

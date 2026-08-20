@@ -7,6 +7,8 @@ import { getEuImpactCases } from "@/lib/eu/impact-cases";
 import { listDnsIndicators } from "@/lib/indicators";
 import { stateJurisdictions, stateSlug } from "@/lib/autopilot/registry";
 import { politicalSourceCatalog } from "@/lib/commitments/source-catalog";
+import { getAllCommunicationMediaImpactRecords } from "@/lib/state-programmes/communication-media-impact";
+import { sourceSlugForCanonicalUrl } from "@/lib/sources/url";
 
 const siteUrl = "https://parlament.wirkungsoekonomie.de";
 
@@ -49,6 +51,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const cases = listPublishedCases().map((item) => entry(`/entscheidungen/${item.slug}`, item.lastUpdated, .8));
   const analyses = listFachanalysen().map((analysis) => entry(`/fachanalysen/${analysis.slug}`, analysis.analysisDate, .8));
   const saxonyAnhaltProgrammes = saxonyAnhaltElectionProgrammes.map((programme) => entry(`/laender/sachsen-anhalt/wahlprogramme/${programme.sourceKey}`, "2026-08-16", .8));
+  const communicationSourceRoutes = [...new Set(getAllCommunicationMediaImpactRecords().flatMap((record) => [
+    ...record.source_refs.map((source) => source.url),
+    record.fach_source.url,
+  ]).map(sourceSlugForCanonicalUrl).filter((slug): slug is string => Boolean(slug)))]
+    .map((slug) => entry(`/quellen/${slug}`, "2026-08-20", .6));
   const governmentImpacts = getPublicImpactCases();
   const euImpacts = getEuImpactCases();
   const governmentEntries = governmentImpacts.length ? [entry("/regierung/wirkungsanalysen", undefined, .9), ...governmentImpacts.map((record) => entry(`/regierung/wirkungsanalysen/${encodeURIComponent(record.impact_case_id)}`, record.analysis_as_of, .8))] : [];
@@ -56,5 +63,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const indicatorEntries = listDnsIndicators().map((item) => entry(`/methodik/wirkindikatoren/${item.indicator_id}`, undefined, .5));
   const stateEntries = stateJurisdictions.filter((item) => item.jurisdiction_id !== "DE-ST").map((item) => entry(`/laender/${stateSlug(item.jurisdiction_id)}`, undefined, .6));
   const mandateEntries = politicalSourceCatalog.map((item) => entry(`/mandat-und-praxis/${item.sourceKey}`, undefined, .7));
-  return [...staticEntries, ...cases, ...analyses, ...saxonyAnhaltProgrammes, ...governmentEntries, ...euEntries, ...indicatorEntries, ...stateEntries, ...mandateEntries];
+  return [...staticEntries, ...cases, ...analyses, ...saxonyAnhaltProgrammes, ...communicationSourceRoutes, ...governmentEntries, ...euEntries, ...indicatorEntries, ...stateEntries, ...mandateEntries];
 }
