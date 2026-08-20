@@ -35,9 +35,24 @@ function allPublicStrings(record) {
   for (const source of record.source_refs) values.push(source.title, source.locator);
   return values.filter((value) => typeof value === "string" && value.trim());
 }
+const pageCache = new Map();
 async function fetchPage(route) {
-  const response = await fetch(`${baseUrl}${route}`, { redirect: "manual", signal: AbortSignal.timeout(20_000) });
-  return { route, status: response.status, html: await response.text() };
+  if (!pageCache.has(route)) {
+    pageCache.set(route, (async () => {
+      let lastError = null;
+      for (let attempt = 1; attempt <= 2; attempt += 1) {
+        try {
+          const response = await fetch(`${baseUrl}${route}`, { redirect: "manual", signal: AbortSignal.timeout(60_000) });
+          return { route, status: response.status, html: await response.text() };
+        } catch (error) {
+          lastError = error;
+          if (attempt < 2) await new Promise((resolve) => setTimeout(resolve, 250));
+        }
+      }
+      throw new Error(`Source-vs-View route ${route} failed after 2 attempts: ${lastError instanceof Error ? lastError.message : String(lastError)}`);
+    })());
+  }
+  return pageCache.get(route);
 }
 
 const records = sourceFiles.map((file) => ({ file, record: JSON.parse(readFileSync(path.join(dataDir, file), "utf8")) }));
