@@ -56,8 +56,10 @@ export type PublicCommonTargetReview = ReviewObject & {
   reviewed_at: string;
   knowledge_cutoff_date: string;
   fach_status: string;
+  common_targets_status?: string;
+  not_applicable_reason?: string;
   actual_option: { option_id: string; label: string };
-  woek_option: { option_id: string; label: string };
+  woek_option: { option_id: string; label: string } | null;
   source_catalog: Record<string, string>;
   mappings: PublicCommonTargetMapping[];
   hindsight_guard: string;
@@ -78,6 +80,8 @@ export function reviewText(value: unknown): string | null {
 
 export function publicReviewProse(value: string): string {
   return value
+    .replace(/\bNO_ROBUST_RECOMMENDATION\b/g, "keine robuste WÖk-Handlungsoption")
+    .replace(/\bwoek_preferred_option=null\b/g, "keine fachlich freigegebene WÖk-Präferenz")
     .replace(/\bReality Check oder neue RecommendationVersion\b/g, "den Reality Check oder eine neue Fassung der WÖk-Handlungsoption")
     .replace(/\bRecommendationVersion\b/g, "Fassung der WÖk-Handlungsoption");
 }
@@ -118,13 +122,16 @@ function isCommonTargetReview(value: unknown): value is PublicCommonTargetReview
   const record = reviewObject(value);
   const actual = reviewObject(record?.actual_option);
   const preferred = reviewObject(record?.woek_option);
+  const notApplicable = record?.common_targets_status === "NOT_APPLICABLE";
   return Boolean(record
     && [record.common_targets_review_id, record.recommendation_id, record.impact_case_id, record.review_version, record.reviewed_at, record.knowledge_cutoff_date].every(reviewText)
     && approvedReviewStatuses.has(String(record.fach_status))
     && actual && reviewText(actual.option_id) && reviewText(actual.label)
-    && preferred && reviewText(preferred.option_id) && reviewText(preferred.label)
+    && (notApplicable
+      ? record.woek_option === null && reviewText(record.not_applicable_reason)
+      : preferred && reviewText(preferred.option_id) && reviewText(preferred.label))
     && reviewObject(record.source_catalog)
-    && Array.isArray(record.mappings) && record.mappings.length > 0 && record.mappings.every(isCommonTargetMapping)
+    && Array.isArray(record.mappings) && (notApplicable ? record.mappings.length === 0 : record.mappings.length > 0 && record.mappings.every(isCommonTargetMapping))
     && reviewText(record.hindsight_guard)
     && reviewText(record.causal_attribution_disclaimer)
     && reviewText(record.aggregation_rule)

@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
+import { publicEnumLabel, publicNarrativeEnumText } from "../lib/publication/public-editorial-projection.mjs";
 
 const source = (file: string) => readFileSync(file, "utf8");
 
@@ -156,6 +157,13 @@ test("PREVIEW_CARD_NO_GENERIC_SUMMARY", () => {
 test("PREVIEW_CARD_NO_RAW_INTERNAL_ENUMS", () => {
   assert.doesNotMatch(overviewComponent, />POSITIVE_POTENTIAL<|>NEGATIVE_RISK<|>AMBIVALENT<|>PORTFOLIO_DISAGGREGATION_REQUIRED</);
   assert.match(source("scripts/quality/generic-public-editorial-scan.mjs"), /PREVIEW_CARD_NO_RAW_INTERNAL_ENUMS/);
+  assert.equal(publicEnumLabel("UEBERWIEGEND_POSITIVES_WIRKUNGSPOTENZIAL_MIT_SEPARAT_SICHTBAREN_RISIKEN"), "Überwiegend positives Wirkungspotenzial mit separat sichtbaren Risiken");
+  assert.equal(publicEnumLabel("UNREVIEWED_MIXED_CASE_LABEL"), "");
+  assert.equal(
+    publicNarrativeEnumText("Attribution und OPEN-not-neutral bleiben bindend."),
+    "Attribution und Offen ist nicht neutral bleiben bindend.",
+  );
+  assert.equal(publicNarrativeEnumText("Attribution und UNREVIEWED_CONTROL_TOKEN bleiben bindend."), "");
 });
 
 test("FACT_ONLY_FAILS_CLOSED_WITHOUT_AN_ASSESSMENT_SURFACE", () => {
@@ -182,14 +190,14 @@ test("PUBLIC_SCHEMA_TERMS_ARE_MAPPED_TO_PLAIN_GERMAN", () => {
     assert.match(presentationLabels, new RegExp(term.replace(/[+]/g, "\\+")));
   }
   assert.match(source("app/components/FullReviewRecord.tsx"), /humanizeSystemValue\(part\)/);
-  assert.match(source("app/components/CompletePublicationSource.tsx"), /humanizeSystemValue\(output\)/);
+  assert.match(source("app/components/CompletePublicationSource.tsx"), /publicArchiveText\(output\)/);
   assert.doesNotMatch(source("app/components/recommendations/RecommendationSection.tsx"), />RecommendationVersion /);
   assert.doesNotMatch(source("app/regierung/wirkungsanalysen/[id]/page.tsx"), /kein fachlich freigegebenes EvidenceEvent/);
   for (const driver of ["CLIMATE_RESOURCE", "FINANCIAL_SCALE", "HEALTH_SAFETY", "HIGH_UNCERTAINTY_HIGH_HARM", "POPULATION_SCALE"]) {
     assert.match(presentationLabels, new RegExp(`${driver}:`));
   }
   assert.doesNotMatch(stateProgrammes, /Wahlprogramme vor der Landtagswahl Sachsen-Anhalt 2026: Wirkungspotenziale/);
-  assert.match(stateProgrammes, /WÖk-Wirkungsanalysen sind noch nicht redaktionell veröffentlicht/);
+  assert.match(stateProgrammes, /vollständige WÖk-Wirkungsakte/);
 });
 
 test("WOEK_ASSESSMENT_LABEL_USES_COMPACT_SANS_SERIF_LEAD_TYPOGRAPHY", () => {

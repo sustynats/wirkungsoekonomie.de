@@ -27,7 +27,7 @@ export default function SaxonyAnhaltPage() {
   const reviewedKeyPaths = saxonyAnhaltElectionProgrammes.reduce((sum, programme) => sum + Object.keys(saxonyAnhaltProgrammeEditorial(programme.sourceKey)?.centralAssessments ?? {}).length, 0);
 
   return (
-    <main>
+    <div>
       <section className="shell state-hero-shell">
         <div className="state-hero">
           <div>
@@ -105,7 +105,7 @@ export default function SaxonyAnhaltPage() {
               <div data-woek-process-metadata>
                 <p className="commitment-count"><strong>{analysedCount?.toLocaleString("de-DE") ?? "-"} fachlich analysierte Zusageeinheiten</strong> · Quellenregister und historische Fachquelle bleiben separat vollständig abrufbar</p>
               </div>
-              {review ? <Link className="text-link" href={`/laender/sachsen-anhalt/wahlprogramme/${programme.sourceKey}`}>Gesamtbefund &amp; Einzelanalysen öffnen <span aria-hidden="true">→</span></Link> : <p><strong>Fachakte derzeit nicht verfügbar.</strong></p>}
+              {review ? <Link className="text-link" href={`/laender/sachsen-anhalt/wahlprogramme/${programme.sourceKey}`}>Die vollständige WÖk-Wirkungsakte öffnen <span aria-hidden="true">→</span></Link> : <p><strong>Fachakte derzeit nicht verfügbar.</strong></p>}
             </article>;
           })}
         </div>
@@ -133,6 +133,6 @@ export default function SaxonyAnhaltPage() {
           <li><span>04</span><div><h3>Reality Check</h3><p>Was verändert sich real, was ist zurechenbar und was muss korrigiert werden?</p></div></li>
         </ol>
       </section>
-    </main>
+    </div>
   );
 }

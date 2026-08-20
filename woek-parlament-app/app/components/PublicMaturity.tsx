@@ -10,8 +10,9 @@ const layerStatusLabels = {
 export function PublicMaturity({ maturity, compact = false }: { maturity: PublicMaturityProjection; compact?: boolean }) {
   if (maturity.primary === "FACT_ONLY") {
     return (
-      <section
+      <div
         className={`public-maturity public-maturity--fact-only${compact ? " public-maturity--compact" : ""}`}
+        role="group"
         aria-label="Faktenakte ohne veröffentlichte WÖk-Wirkungsanalyse"
         data-woek-fact-only-status="published"
       >
@@ -23,12 +24,13 @@ export function PublicMaturity({ maturity, compact = false }: { maturity: Public
           </div>
         </header>
         <p className="public-maturity-hint">Der amtlich dokumentierte Sachverhalt bleibt zugänglich. Eine Wirkungsrichtung, Neutralität oder Wirkungslosigkeit wird daraus nicht abgeleitet.</p>
-      </section>
+      </div>
     );
   }
   return (
-    <section
+    <div
       className={`public-maturity${compact ? " public-maturity--compact" : ""}`}
+      role="group"
       aria-label={`Öffentlicher WÖk-Einordnungsstand: ${maturity.label}`}
       data-woek-public-maturity={maturity.primary}
     >
@@ -53,7 +55,7 @@ export function PublicMaturity({ maturity, compact = false }: { maturity: Public
             <p><strong>Offen bedeutet weder neutral noch null und auch nicht: kein Effekt oder kein Risiko.</strong></p>
           </article>
         </div>
-        <div className="public-maturity-layers" aria-label="Getrennte WÖk-Prüfebenen">
+        <div className="public-maturity-layers" role="group" aria-label="Getrennte WÖk-Prüfebenen">
           <h2>Getrennte Prüfebenen</h2>
           <dl>{maturity.layers.map((item) => <div key={item.id}>
             <dt>{item.label}</dt>
@@ -61,6 +63,6 @@ export function PublicMaturity({ maturity, compact = false }: { maturity: Public
           </div>)}</dl>
         </div>
       </>}
-    </section>
+    </div>
   );
 }

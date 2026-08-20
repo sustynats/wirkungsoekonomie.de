@@ -18,8 +18,9 @@ function AssessmentIcon({ directionLabel, kind }: { directionLabel: string; kind
 export function OverviewAssessment({ assessment, compact = false }: { assessment: OverviewAssessmentData; compact?: boolean }) {
   const publicCopy = overviewAssessmentPublicCopy(assessment);
   return (
-    <section
+    <div
       className={`overview-assessment${compact ? " overview-assessment--compact" : ""}`}
+      role="group"
       aria-label="Zusammenfassende WÖk-Bewertung"
       data-woek-preview-assessment="published"
       data-woek-assessment-surface={compact ? "preview" : "detail"}
@@ -40,6 +41,6 @@ export function OverviewAssessment({ assessment, compact = false }: { assessment
         <div><dt>Evidenzstatus</dt><dd>{assessment.evidenceSummary}</dd></div>
         {assessment.realityCheckSummary && <div><dt>Reality-Check</dt><dd>{assessment.realityCheckSummary}</dd></div>}
       </dl>
-    </section>
+    </div>
   );
 }

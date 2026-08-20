@@ -150,17 +150,21 @@ test("backfill inventory is complete without CodeX-authored recommendations", ()
   assert.equal(summary.recommendation_required, 133);
   assert.equal(summary.recommendation_content_created_by_codex, 0);
   assert.equal(queue.length, 133);
-  assert.equal(publicRecommendations.length, 9);
+  assert.equal(publicRecommendations.length, 13);
   assert.deepEqual(publicRecommendations.map((line) => JSON.parse(line).recommendation_id).sort(), [
+    "WOEK-REC-BUND-ABSCHIEBEHAFT-RECHTSBEISTAND-2026-R1",
     "WOEK-REC-BUND-ALTERSVORSORGE-2026-R1",
     "WOEK-REC-BUND-EEG-NETZPAKET-2026-R1",
     "WOEK-REC-BUND-GMODG-2026-R1",
     "WOEK-REC-BUND-GRUNDSICHERUNG-2026-R1",
     "WOEK-REC-BUND-KHAG-2025-2026-R1",
+    "WOEK-REC-BUND-KI-MIGRATION-2026-R1",
+    "WOEK-REC-BUND-MIGRATION-DIGITAL-2026-R1",
     "WOEK-REC-BUND-NOTFALLREFORM-2026-R1",
     "WOEK-REC-BUND-SAFE-COUNTRY-REGULATION-2026-R1",
     "WOEK-REC-BUND-STROMVKG-2026-R1",
     "WOEK-REC-BUND-TARIFTREUE-2025-2026-R1",
+    "WOEK-REC-GEAS-DE-2026-R1",
   ]);
 });
 

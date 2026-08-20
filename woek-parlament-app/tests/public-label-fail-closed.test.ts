@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
-import { humanizeSystemValue, publicControlText, publicIndicatorLabel, publicNarrativeText, publicObservatoryQualityFieldLabel, publicObservatoryValueLabel, publicSystemLabel, publicSystemValueLabel } from "@/lib/presentation/labels";
+import { humanizeSystemValue, publicArchiveText, publicControlText, publicIndicatorLabel, publicNarrativeText, publicObservatoryQualityFieldLabel, publicObservatoryValueLabel, publicSystemLabel, publicSystemValueLabel } from "@/lib/presentation/labels";
 import { euPublicMaturity } from "@/lib/presentation/public-maturity";
 
 test("unknown technical values fail closed instead of becoming title-cased public copy", () => {
@@ -11,8 +11,21 @@ test("unknown technical values fail closed instead of becoming title-cased publi
   assert.equal(humanizeSystemValue("UNREVIEWED_SYSTEM_VALUE"), "UNREVIEWED_SYSTEM_VALUE");
 });
 
+test("the immutable Fach archive removes machine separators without changing the strict UI gate", () => {
+  assert.equal(publicArchiveText("programme_profile"), "Programmprofil");
+  assert.equal(publicArchiveText("SDG_16"), "SDG 16");
+  assert.equal(publicArchiveText("UNREVIEWED_SYSTEM_VALUE"), "Unreviewed system value");
+  assert.equal(publicSystemLabel("UNREVIEWED_SYSTEM_VALUE"), null);
+});
+
 test("reviewed labels remain available without exposing their control values", () => {
   assert.equal(publicSystemLabel("EU_SHARED"), "geteilte EU-Zuständigkeit");
+  assert.equal(publicSystemLabel("SCHNELLER_ROLLOUT"), "schneller Rollout");
+  assert.equal(
+    publicSystemLabel("WOEK_PRAEFERIERTER_NAECHSTER_SCHRITT"),
+    "von der WÖk fachlich bevorzugter nächster Schritt",
+  );
+  assert.equal(publicSystemLabel("KONSERVATIVE_REFERENZ"), "konservative Referenz");
   assert.equal(publicSystemValueLabel("MIXED_EU_SUPPORTING_EXISTING_DIGITAL_INTERNAL_MARKET_RULES"), "Gemischte EU-Zuständigkeit mit unterstützender Rolle auf Grundlage bestehender Binnenmarkt- und Digitalregeln");
   assert.equal(publicSystemValueLabel("STRATEGY_AND_COMMUNICATION"), "Strategie und Mitteilung der Europäischen Kommission");
   assert.equal(publicIndicatorLabel("low_carbon_material_share"), "Anteil CO2-armer Materialien in der betroffenen Beschaffung");

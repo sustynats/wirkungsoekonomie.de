@@ -4,8 +4,10 @@ import { createHash } from "node:crypto";
 import { readFileSync, writeFileSync } from "node:fs";
 import { projectEuEditorial } from "../../lib/publication/public-editorial-projection.mjs";
 
-const baseUrl = process.argv.find((value) => value.startsWith("--base-url="))?.slice("--base-url=".length)?.replace(/\/$/, "");
-const reportPath = process.argv.find((value) => value.startsWith("--report="))?.slice("--report=".length);
+const baseUrl = (process.env.WOEK_SOURCE_VS_VIEW_BASE_URL
+  ?? process.argv.find((value) => value.startsWith("--base-url="))?.slice("--base-url=".length))?.replace(/\/$/, "");
+const reportPath = process.env.WOEK_FACHVOLLSTAENDIGKEIT_SOURCE_VS_VIEW_REPORT
+  ?? process.argv.find((value) => value.startsWith("--report="))?.slice("--report=".length);
 if (!baseUrl) throw new Error("Usage: check-fachvollstaendigkeit-source-vs-view.mjs --base-url=https://… [--report=…]");
 
 const readJsonl = (file) => readFileSync(file, "utf8").trim().split(/\r?\n/).filter(Boolean).map((line) => JSON.parse(line));
@@ -61,6 +63,8 @@ function normalized(value) {
 
 function publicReviewProse(value) {
   return value
+    .replace(/\bNO_ROBUST_RECOMMENDATION\b/g, "keine robuste WÖk-Handlungsoption")
+    .replace(/\bwoek_preferred_option=null\b/g, "keine fachlich freigegebene WÖk-Präferenz")
     .replace(/\bReality Check oder neue RecommendationVersion\b/g, "den Reality Check oder eine neue Fassung der WÖk-Handlungsoption")
     .replace(/\bRecommendationVersion\b/g, "Fassung der WÖk-Handlungsoption");
 }
@@ -126,7 +130,7 @@ for (const review of targets) {
   const html = await response.text();
   const text = normalized(plainHtml(html));
   const publicMappingProse = review.mappings.flatMap((mapping) => [mapping.target_label, mapping.mechanism_rationale, mapping.limitations]);
-  const missingProse = [...new Set(fachProse([review.actual_option.label, review.woek_option.label, publicMappingProse, review.hindsight_guard, review.causal_attribution_disclaimer, review.aggregation_rule]).map(publicReviewProse))].filter((entry) => !text.includes(entry));
+  const missingProse = [...new Set(fachProse([review.actual_option.label, review.woek_option?.label, review.not_applicable_reason, publicMappingProse, review.hindsight_guard, review.causal_attribution_disclaimer, review.aggregation_rule]).map(publicReviewProse))].filter((entry) => !text.includes(entry));
   const rawIds = [review.common_targets_review_id, review.recommendation_id, ...review.mappings.map((mapping) => mapping.target_reference_id)].filter((id) => text.includes(id));
   const rawEnums = [...new Set(JSON.stringify(review.mappings).match(/\b[A-Z][A-Z0-9]*(?:_[A-Z0-9]+)+\b/g) ?? [])].filter((token) => text.includes(token));
   const hasMpd = review.mappings.some((mapping) => /^MPD-/.test(mapping.target_reference_id));
@@ -136,8 +140,9 @@ for (const review of targets) {
     hasUnSdg && /SDG-Zuordnung[^.]{0,120}(?:noch nicht|nicht fachlich freigegeben)/i.test(text) ? "UN_SDG" : null,
     /die strukturierter Datenbedarf/i.test(text) ? "GRAMMAR" : null,
   ].filter(Boolean);
-  const pass = response.status === 200 && missingProse.length === 0 && rawIds.length === 0 && rawEnums.length === 0 && contradictoryOpenPoints.length === 0 && !html.includes("/WOEK/");
-  results.push({ recommendation_id: review.recommendation_id, impact_case_id: review.impact_case_id, route, expected: "PUBLIC_COMMON_TARGETS", status: response.status, missing_prose: missingProse, raw_ids: rawIds, raw_enums: rawEnums, contradictory_open_points: contradictoryOpenPoints, pass });
+  const noFakePreference = review.common_targets_status !== "NOT_APPLICABLE" || (review.woek_option === null && review.mappings.length === 0 && text.includes("Keine robuste WÖk-Handlungsoption freigegeben"));
+  const pass = response.status === 200 && missingProse.length === 0 && rawIds.length === 0 && rawEnums.length === 0 && contradictoryOpenPoints.length === 0 && noFakePreference && !html.includes("/WOEK/");
+  results.push({ recommendation_id: review.recommendation_id, impact_case_id: review.impact_case_id, route, expected: "PUBLIC_COMMON_TARGETS", status: response.status, missing_prose: missingProse, raw_ids: rawIds, raw_enums: rawEnums, contradictory_open_points: contradictoryOpenPoints, no_fake_preference: noFakePreference, pass });
   if (!pass) failures.push(`${review.recommendation_id}: Common-Targets source-vs-view failed`);
 }
 

@@ -21,7 +21,7 @@ export default function StatesPage() {
   const openStateCount = stateJurisdictions.length - substantiveStateSlugs.size;
   const operationalAdapterCount = stateJurisdictions.filter((jurisdiction) => jurisdiction.monitoring_enabled).length;
   return (
-    <main className="shell content-page states-page">
+    <div className="shell content-page states-page">
       <header className="page-intro">
         <p className="eyebrow">Bundesländer</p>
         <h1>16 Länder. Ein Prüfstandard. Unterschiedlicher Fachstand.</h1>
@@ -72,6 +72,6 @@ export default function StatesPage() {
           })}
         </div>
       </section>
-    </main>
+    </div>
   );
 }

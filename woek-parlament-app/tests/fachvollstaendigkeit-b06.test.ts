@@ -9,13 +9,15 @@ const sha256 = (file: string) => createHash("sha256").update(readFileSync(file))
 const reviews = readJsonl("data/method/public-decision-reviews.jsonl");
 const commonTargets = readJsonl("data/method/public-common-target-reviews.jsonl");
 const manifest = JSON.parse(readFileSync("data/method/fachvollstaendigkeit-b06-manifest.json", "utf8"));
+const b07Manifest = JSON.parse(readFileSync("data/method/fachvollstaendigkeit-b07-manifest.json", "utf8"));
 
-test("B06 materialization preserves the centrally approved record counts and identities", () => {
+test("B07 materialization preserves B06 and adds only centrally approved records", () => {
   assert.equal(reviews.length, 99);
   assert.equal(new Set(reviews.map((record) => record.impact_case_id)).size, 99);
-  assert.equal(commonTargets.length, 9);
-  assert.equal(new Set(commonTargets.map((record) => record.impact_case_id)).size, 9);
-  assert.equal(new Set(commonTargets.map((record) => record.recommendation_id)).size, 9);
+  assert.equal(commonTargets.length, 13);
+  assert.equal(new Set(commonTargets.map((record) => record.impact_case_id)).size, 13);
+  assert.equal(new Set(commonTargets.map((record) => record.recommendation_id)).size, 13);
+  assert.equal(b07Manifest.common_targets.new_records, 4);
   assert.equal(manifest.problem_goal.problem_review_approved, 95);
   assert.equal(manifest.problem_goal.problem_review_not_assessable, 4);
   assert.equal(manifest.problem_goal.goal_review_approved, 83);
@@ -95,18 +97,27 @@ test("Common-target reviews are Fach-approved, non-causal and never machine-publ
   for (const record of commonTargets) {
     assert.ok(["APPROVED", "APPROVED_WITH_OPEN_DATA"].includes(record.fach_status));
     assert.equal(record.machine_mapping_public_allowed, false);
-    assert.match(record.causal_attribution_disclaimer, /Kausal|Zurechnung|Korrelation|kein Beweis|verursacht/i);
     assert.match(record.aggregation_rule, /keine|nicht|Nichtkompensation/i);
-    assert.ok(record.mappings.length > 0);
-    assert.ok(record.mappings.every((mapping: { source_refs: string[] }) => mapping.source_refs.length > 0));
+    if (record.common_targets_status === "NOT_APPLICABLE") {
+      assert.equal(record.woek_option, null);
+      assert.equal(record.mappings.length, 0);
+      assert.match(record.causal_attribution_disclaimer, /keine Zielrichtungen|keine.*Präferenz/i);
+      assert.match(record.not_applicable_reason, /keine WÖk-Präferenz|keine robuste WÖk-Option/i);
+    } else {
+      assert.match(record.causal_attribution_disclaimer, /Kausal|Zurechnung|zurechenbar|Korrelation|kein Beweis|verursacht/i);
+      assert.ok(record.mappings.length > 0);
+      assert.ok(record.mappings.every((mapping: { source_refs: string[] }) => mapping.source_refs.length > 0));
+    }
   }
 });
 
-test("B06 does not mutate or generate RecommendationRecords", () => {
-  assert.equal(sha256("data/recommendations/public/recommendations.jsonl"), "5bdbf3f9698d1df492dd5339899608aaa24d114b507700f9ade2701d3f997ed1");
+test("B07 does not generate RecommendationRecords and preserves approved source hashes", () => {
+  assert.equal(sha256("data/recommendations/public/recommendations.jsonl"), b07Manifest.public_output_hashes.recommendations.sha256);
   assert.equal(manifest.gates.no_recommendation_mutation, true);
   assert.equal(manifest.gates.no_machine_mapping, true);
   assert.equal(manifest.gates.no_fach_rewrite, true);
+  assert.equal(b07Manifest.gates.no_recommendation_generated_by_code, true);
+  assert.equal(b07Manifest.gates.no_fach_rewrite, true);
 });
 
 test("DNS and master indicator registries remain stable", () => {
@@ -125,5 +136,14 @@ test("public component keeps Problem before Goal before Impact and hides canonic
   assert.doesNotMatch(component, /JSON\.stringify/);
   assert.match(component, /Offen bedeutet weder neutral noch wirkungslos/);
   assert.match(component, /publicReviewProse\(review\.hindsight_guard\)/);
+  assert.match(component, /publicReviewProse\(review\.not_applicable_reason \?\? ""\)/);
   assert.doesNotMatch(component, />Hindsight Guard:</);
+});
+
+test("public decision prose translates internal recommendation controls without changing Fach data", () => {
+  const presentation = readFileSync("lib/decision-method.ts", "utf8");
+  assert.match(presentation, /NO_ROBUST_RECOMMENDATION/);
+  assert.match(presentation, /keine robuste WÖk-Handlungsoption/);
+  assert.match(presentation, /woek_preferred_option=null/);
+  assert.match(presentation, /keine fachlich freigegebene WÖk-Präferenz/);
 });

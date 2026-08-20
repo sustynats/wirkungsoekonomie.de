@@ -3,7 +3,7 @@
 import { createHash } from "node:crypto";
 import { readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
-import { projectGovernmentEditorial, publicEnumLabel } from "../../lib/publication/public-editorial-projection.mjs";
+import { projectGovernmentEditorial, publicNarrativeEnumText } from "../../lib/publication/public-editorial-projection.mjs";
 
 const baseUrl = (process.env.WOEK_SOURCE_VS_VIEW_BASE_URL ?? "http://localhost:3000").replace(/\/$/, "");
 const outputFile = process.env.WOEK_SOURCE_VS_VIEW_REPORT ?? path.join(process.cwd(), "data", "autopilot", "audit", "2.3-remediated", "SOURCE-VS-VIEW-2.3-FULL.json");
@@ -48,6 +48,12 @@ const recommendationDimensionValueLabels = {
   BESCHLOSSENE_OPTION: "beschlossene Option",
   REFERENZOPTION: "Referenzoption",
   WOEK_PRAEFERIERTE_AUSGESTALTUNG: "von der WÖk fachlich bevorzugte Ausgestaltung",
+  SCHUTZMAXIMIERENDE_OPTION: "schutzmaximierende Option",
+  GEZIELTE_SCHUTZOPTION: "gezielte Schutzoption",
+  DATENSPARSAME_ALTERNATIVE: "datensparsame Alternative",
+  SCHNELLER_ROLLOUT: "schneller Rollout",
+  WOEK_PRAEFERIERTER_NAECHSTER_SCHRITT: "von der WÖk fachlich bevorzugter nächster Schritt",
+  KONSERVATIVE_REFERENZ: "konservative Referenz",
 };
 
 function publicNarrativeText(value) {
@@ -191,7 +197,7 @@ function publicFields(record) {
     ["/impact_core_summary", editorial.fields.impact_core_summary], ["/editorial_summary", editorial.fields.editorial_summary],
     ["/evidence_summary", editorial.fields.evidence_summary], ["/key_finding", editorial.fields.key_finding],
     ["/reality_check_summary", editorial.fields.reality_check_summary],
-    ["/public_evidence_explanation", record.public_evidence_explanation ? publicEnumLabel(record.public_evidence_explanation) : null], ["/boundary_review_note", record.boundary_review_note ? publicEnumLabel(record.boundary_review_note) : null],
+    ["/public_evidence_explanation", record.public_evidence_explanation ? publicNarrativeEnumText(record.public_evidence_explanation) : null], ["/boundary_review_note", record.boundary_review_note ? publicNarrativeEnumText(record.boundary_review_note) : null],
   ];
   for (const [index, value] of record.missing_structured_fields.entries()) {
     const label = structuredFieldLabels[value];

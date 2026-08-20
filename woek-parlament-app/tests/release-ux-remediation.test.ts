@@ -60,3 +60,9 @@ test("long public content wraps inside assessment, source, search and impact sur
   assert.match(styles, /\.breadcrumb \{[^}]*flex-wrap: wrap/);
   assert.match(styles, /\.breadcrumb > \* \{[^}]*overflow-wrap: anywhere/);
 });
+
+test("transparency method-step numbers use the AA-safe text accent on white", () => {
+  const styles = source("app/globals.css");
+  assert.match(styles, /\.method-grid article span \{ color: var\(--gold-deep\); font-weight: 850; \}/);
+  assert.doesNotMatch(styles, /\.method-grid article span \{ color: var\(--gold\);/);
+});
