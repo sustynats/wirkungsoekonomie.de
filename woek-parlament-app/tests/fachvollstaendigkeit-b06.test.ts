@@ -125,5 +125,14 @@ test("public component keeps Problem before Goal before Impact and hides canonic
   assert.doesNotMatch(component, /JSON\.stringify/);
   assert.match(component, /Offen bedeutet weder neutral noch wirkungslos/);
   assert.match(component, /publicReviewProse\(review\.hindsight_guard\)/);
+  assert.match(component, /publicReviewProse\(review\.not_applicable_reason \?\? ""\)/);
   assert.doesNotMatch(component, />Hindsight Guard:</);
+});
+
+test("public decision prose translates internal recommendation controls without changing Fach data", () => {
+  const presentation = readFileSync("lib/decision-method.ts", "utf8");
+  assert.match(presentation, /NO_ROBUST_RECOMMENDATION/);
+  assert.match(presentation, /keine robuste WÖk-Handlungsoption/);
+  assert.match(presentation, /woek_preferred_option=null/);
+  assert.match(presentation, /keine fachlich freigegebene WÖk-Präferenz/);
 });

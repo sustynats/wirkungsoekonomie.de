@@ -14,7 +14,7 @@ export default function ImpactCasesPage() {
   const government = getPublicImpactCases();
   const parliamentDaily = getApprovedParliamentDailyImpactCases();
   const eu = getEuImpactCases();
-  return <main className="shell content-page impact-case-index">
+  return <div className="shell content-page impact-case-index">
     <header className="page-intro">
       <p className="eyebrow">Wirkung zuerst</p>
       <h1>Politische Entscheidungen nach ihrem Wirkungsgegenstand verstehen.</h1>
@@ -30,5 +30,5 @@ export default function ImpactCasesPage() {
       {government.length + parliamentDaily.length ? <div className="government-impact-list">{government.map((record) => <GovernmentImpactCase key={`${record.impact_case_id}-${record.analysis_version}`} record={record} compact />)}{parliamentDaily.map((record) => <GovernmentImpactCase key={`${record.impact_case_id}-${record.analysis_version}`} record={publicRecordFromFullSchema(record)} compact />)}</div> : <div className="open-state"><span aria-hidden="true">!</span><div><strong>Noch keine gemeinsame Fachfreigabe veröffentlicht.</strong><p>Faktenakten und bestehende Fachakten bleiben erreichbar. Neue ImpactCases erscheinen erst nach technischer Validierung und fachlicher Freigabe.</p></div></div>}
     </section>
     <section className="section section-compact" aria-labelledby="legacy-files"><p className="eyebrow">Historischer Bestand</p><h2 id="legacy-files">Bestehende Parlamentsakten bleiben vorerst getrennt.</h2><p>Die 28 älteren Parlamentsakten werden erst dann als Wirkungsfälle nach dem Fachstandard 2.3 geführt, wenn ihre vollständigen Fachquellen und der Nachweis vom Ausgangsdatensatz bis zur sichtbaren Seite vorliegen. Bis dahin sind sie bewusst nicht in diese gemeinsame Wirkungsfall-Zahl eingerechnet.</p><Link className="text-link" href="/entscheidungen">Historische Parlamentsakten separat öffnen <span aria-hidden="true">→</span></Link></section>
-  </main>;
+  </div>;
 }

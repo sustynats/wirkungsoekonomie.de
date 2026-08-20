@@ -10,7 +10,7 @@ export const metadata = {
 
 export default function SaxonyAnhaltSourcesPage() {
   return (
-    <main className="shell content-page source-directory-page">
+    <div className="shell content-page source-directory-page">
       <header className="page-intro">
         <p className="eyebrow">Sachsen-Anhalt · Quellen</p>
         <h1>Woher die Angaben kommen.</h1>
@@ -43,6 +43,6 @@ export default function SaxonyAnhaltSourcesPage() {
         </div>
       </section>
       <p><Link className="text-link" href="/laender/sachsen-anhalt">Zurück zum Wahlbereich <span aria-hidden="true">→</span></Link></p>
-    </main>
+    </div>
   );
 }

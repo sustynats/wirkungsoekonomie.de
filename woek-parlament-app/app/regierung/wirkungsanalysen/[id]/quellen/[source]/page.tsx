@@ -34,7 +34,7 @@ export default async function GovernmentImpactSourcePage({ params }: { params: P
   if (!resolved) notFound();
   let host = "Amtliche oder fachliche Quelle";
   try { host = new URL(resolved.url).hostname.replace(/^www\./, ""); } catch { /* URL was schema-validated before publication. */ }
-  return <main className="shell content-page source-detail-page">
+  return <div className="shell content-page source-detail-page">
     <header className="source-detail-header"><div><p className="eyebrow">Quellensteckbrief · Regierungs-Wirkungsanalyse</p><h1>{resolved.title}</h1><p className="lead">{resolved.record.title}</p></div></header>
     <div className="source-detail-grid">
       <section><h2>Kurz zusammengefasst</h2><p>{resolved.purpose}</p><dl><div><dt>Herausgebende Stelle oder Domain</dt><dd>{host}</dd></div><div><dt>Quellenfunktion</dt><dd>{resolved.title}</dd></div><div><dt>Stand der Analyse</dt><dd>{resolved.record.analysis_as_of}</dd></div></dl></section>
@@ -42,5 +42,5 @@ export default async function GovernmentImpactSourcePage({ params }: { params: P
     </div>
     <section className="decision-section"><p className="eyebrow">Verwendung in der Analyse</p><h2>{resolved.record.title}</h2><p><strong>Kurzbewertung:</strong> {resolved.record.editorial_summary}</p><p><strong>Wirkungskern:</strong> {resolved.record.impact_core_summary}</p></section>
     <p className="page-return"><Link href={`/regierung/wirkungsanalysen/${encodeURIComponent(resolved.record.impact_case_id)}`}>← Zur Wirkungsanalyse</Link></p>
-  </main>;
+  </div>;
 }

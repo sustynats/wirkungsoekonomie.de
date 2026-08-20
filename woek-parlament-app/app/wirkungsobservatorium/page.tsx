@@ -32,7 +32,7 @@ export default function ImpactObservatoryPage() {
   const shocks = listExternalShocks();
   const publicImpacts = getPublicImpactCases();
   const publicImpactById = new Map(publicImpacts.map((item) => [item.impact_case_id, item]));
-  return <main className="shell content-page">
+  return <div className="shell content-page">
     <header className="page-intro">
       <p className="eyebrow">Wirkungsobservatorium</p>
       <h1>Was verändert sich tatsächlich?</h1>
@@ -89,5 +89,5 @@ export default function ImpactObservatoryPage() {
         {impact && <p><Link className="text-link" href={`/wirkungsfaelle/${encodeURIComponent(impact.impact_case_id)}`}>Verknüpften Wirkungsfall öffnen →</Link></p>}
       </article>; })}</div> : <p>Derzeit ist kein freigegebener Reality-Check-Kandidat registriert.</p>}
     </section>
-  </main>;
+  </div>;
 }
