@@ -13,10 +13,14 @@
     "meta_impact_cases": 1,
     "mission_subcases": 19,
     "full_deep_dives": [
+      "WOEK-AKN-2026-M01",
       "WOEK-AKN-2026-M02",
+      "WOEK-AKN-2026-M03",
       "WOEK-AKN-2026-M04",
       "WOEK-AKN-2026-M05",
       "WOEK-AKN-2026-M06",
+      "WOEK-AKN-2026-M07",
+      "WOEK-AKN-2026-M08",
       "WOEK-AKN-2026-M09",
       "WOEK-AKN-2026-M10",
       "WOEK-AKN-2026-M11",
@@ -24,11 +28,14 @@
       "WOEK-AKN-2026-M13",
       "WOEK-AKN-2026-M14",
       "WOEK-AKN-2026-M15",
-      "WOEK-AKN-2026-M16"
+      "WOEK-AKN-2026-M16",
+      "WOEK-AKN-2026-M17",
+      "WOEK-AKN-2026-M18",
+      "WOEK-AKN-2026-M19"
     ],
-    "initial_ex_ante_cases": 7,
+    "initial_ex_ante_cases": 0,
     "public_routes": 20,
-    "source_intermediary_routes": 6
+    "source_intermediary_routes": 8
   },
   "guardrails": {
     "dns_2025_is_reference_not_causality_proof": true,
@@ -40,7 +47,8 @@
   },
   "review_overlay_sources": [
     "https://github.com/sustynats/wirkungsoekonomie.de/issues/237#issuecomment-5361235455",
-    "https://github.com/sustynats/wirkungsoekonomie.de/issues/237#issuecomment-5361257729"
+    "https://github.com/sustynats/wirkungsoekonomie.de/issues/237#issuecomment-5361257729",
+    "https://github.com/sustynats/wirkungsoekonomie.de/issues/237#issuecomment-5361814559"
   ],
   "canonical_sources": [
     "/WOEK/WOEK-AUTOPILOT/CONTROL/FACHREVIEW-WIRKUNGSORIENTIERUNG-DNS-AKTIONSPLAN-2026-20260820T0559Z.md",

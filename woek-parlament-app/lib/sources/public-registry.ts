@@ -409,12 +409,14 @@ function strategyActionPlanSources(): StaticPublicSource[] {
     const canonicalUrl = isSafePublicSourceUrl(source.url);
     const slug = canonicalUrl ? sourceSlugForCanonicalUrl(canonicalUrl) : null;
     if (!canonicalUrl || !slug) return [];
-    const includeMeta = source.usedBy !== "ALL" || source.usedBy === "ALL";
+    const includeMeta = source.usedBy === "ALL" || source.usedBy === "META" || source.usedBy === "META_AND_M04";
     const includedMissions = source.usedBy === "ALL"
       ? missions
       : source.usedBy === "META_AND_M04"
         ? missions.filter((mission) => mission.id === "WOEK-AKN-2026-M04")
-        : [];
+        : Array.isArray(source.usedBy)
+          ? missions.filter((mission) => source.usedBy.includes(mission.id))
+          : [];
     const usages: PublicSourceUsage[] = [
       ...(includeMeta ? [{
         caseSlug: ACTION_PLAN_META_ID,

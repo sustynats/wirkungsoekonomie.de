@@ -35,7 +35,7 @@ export type StrategySource = {
   temporalClass: "AVAILABLE_AT_DECISION_TIME" | "CURRENT_REFERENCE";
   abstract: string;
   locations: string[];
-  usedBy: "ALL" | "META_AND_M04" | "META";
+  usedBy: "ALL" | "META_AND_M04" | "META" | string[];
 };
 
 export type StrategyQualityLayer = {
@@ -83,6 +83,7 @@ export function strategySourceHashes() {
     "aktionsplan-nachhaltigkeit-2026-missions-01-10.jsonl",
     "aktionsplan-nachhaltigkeit-2026-missions-11-19.jsonl",
     "reviewed-deep-dives-20260820.json",
+    "reviewed-deep-dives-20260820-batch5.json",
   ];
   return Object.fromEntries(names.map((name) => [name, createHash("sha256").update(readFileSync(path.join(root, name))).digest("hex")]));
 }
@@ -210,6 +211,30 @@ export const actionPlanSources: StrategySource[] = [
     usedBy: "META_AND_M04",
   },
   {
+    title: "Datenbank Umweltkriterien für die öffentliche Beschaffung",
+    institution: "Umweltbundesamt",
+    url: "https://www.umweltbundesamt.de/themen/wirtschaft-konsum/umweltfreundliche-beschaffung/datenbank-umweltbezogene-beschaffungskriterien",
+    documentType: "Amtliche Fach- und Kriterienseite",
+    documentDate: null,
+    role: "EX_ANTE_EVIDENCE",
+    temporalClass: "CURRENT_REFERENCE",
+    abstract: "Das Umweltbundesamt stellt bereits Kriterien und Leitfäden für zahlreiche Produktgruppen bereit. Diese bestehende Infrastruktur ist für die Prüfung maßgeblich, ob Mission 7 Wissen konsolidiert oder eine weitere parallele Wissensschicht erzeugt.",
+    locations: ["Datenbank umweltbezogener Beschaffungskriterien", "Produktgruppen und Leitfäden"],
+    usedBy: ["WOEK-AKN-2026-M07"],
+  },
+  {
+    title: "Lebenszykluskosten in der umweltfreundlichen Beschaffung",
+    institution: "Umweltbundesamt",
+    url: "https://www.umweltbundesamt.de/themen/wirtschaft-konsum/umweltfreundliche-beschaffung/lebenszykluskosten",
+    documentType: "Amtliche Fachseite",
+    documentDate: null,
+    role: "EX_ANTE_EVIDENCE",
+    temporalClass: "CURRENT_REFERENCE",
+    abstract: "Das Umweltbundesamt beschreibt Lebenszykluskosten über Anschaffung hinaus einschließlich Nutzung, Wartung, Entsorgung und teils externer Umweltkosten. Dieser Maßstab trägt die Prüfung, ob Plattformkriterien in Mission 8 über formale Filter hinausreichen.",
+    locations: ["Lebenszykluskosten", "Nutzung, Wartung und Entsorgung"],
+    usedBy: ["WOEK-AKN-2026-M08"],
+  },
+  {
     title: "Amtliches Monitoring der Deutschen Nachhaltigkeitsstrategie",
     institution: "Statistisches Bundesamt",
     url: "https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Nachhaltigkeitsindikatoren/Deutsche-Nachhaltigkeit/_inhalt.html",
@@ -305,11 +330,13 @@ const m04: MissionDeepDive = {
 };
 
 const reviewedDeepDiveOverlays = JSON.parse(readFileSync(path.join(root, "reviewed-deep-dives-20260820.json"), "utf8")) as { records: MissionDeepDive[] };
+const reviewedDeepDiveBatch5 = JSON.parse(readFileSync(path.join(root, "reviewed-deep-dives-20260820-batch5.json"), "utf8")) as { records: MissionDeepDive[] };
 
 export const missionDeepDives: Readonly<Record<string, MissionDeepDive>> = {
   [m02.missionId]: m02,
   [m04.missionId]: m04,
   ...Object.fromEntries(reviewedDeepDiveOverlays.records.map((record) => [record.missionId, record])),
+  ...Object.fromEntries(reviewedDeepDiveBatch5.records.map((record) => [record.missionId, record])),
 };
 
 export function actionPlanAssessmentForMission(mission: ActionPlanMission) {

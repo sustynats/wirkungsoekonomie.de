@@ -11,7 +11,13 @@ const baseUrl = (process.env.WOEK_STRATEGY_BROWSER_BASE_URL ?? "http://127.0.0.1
 const output = process.env.WOEK_STRATEGY_BROWSER_REPORT ?? path.resolve("data/autopilot/audit/2.3-remediated/STRATEGY-ACTION-PLAN-RESPONSIVE-A11Y.json");
 const chrome = process.env.WOEK_AUDIT_CHROMIUM;
 const widths = [320, 360, 375, 390, 428, 768, 1024, 1280, 1440];
-const routes = ["/regierung", "/regierung/wirkungsanalysen", "/regierung/wirkungsanalysen/WOEK-META-BUND-AKTIONSPLAN-NACHHALTIGKEIT-2026", "/regierung/wirkungsanalysen/WOEK-AKN-2026-M02", "/regierung/wirkungsanalysen/WOEK-AKN-2026-M04", "/regierung/wirkungsanalysen/WOEK-AKN-2026-M05", "/regierung/wirkungsanalysen/WOEK-AKN-2026-M09", "/regierung/wirkungsanalysen/WOEK-AKN-2026-M11", "/regierung/wirkungsanalysen/WOEK-AKN-2026-M13", "/regierung/wirkungsanalysen/WOEK-AKN-2026-M16", "/regierung/wirkungsanalysen/WOEK-AKN-2026-M19", "/suche"];
+const routes = [
+  "/regierung",
+  "/regierung/wirkungsanalysen",
+  "/regierung/wirkungsanalysen/WOEK-META-BUND-AKTIONSPLAN-NACHHALTIGKEIT-2026",
+  ...Array.from({ length: 19 }, (_, index) => `/regierung/wirkungsanalysen/WOEK-AKN-2026-M${String(index + 1).padStart(2, "0")}`),
+  "/suche",
+];
 
 (async () => {
   const browser = await chromium.launch({ headless: true, ...(chrome ? { executablePath: chrome } : {}) });
