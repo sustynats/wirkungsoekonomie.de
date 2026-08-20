@@ -16,6 +16,7 @@ import { impactRecordAssessmentIconKind, parliamentaryOverviewAssessment, type O
 import { publicDecisionReviews, publicReviewSystemLabel, reviewSourceRefs, reviewText } from "@/lib/decision-method";
 import dnsRegistry from "@/data/indicators/dns-official-registry.json";
 import { isSafePublicSourceUrl, sourceDetailHrefForUrl, sourceSlugForCanonicalUrl } from "@/lib/sources/url";
+import { ACTION_PLAN_META_ID, actionPlanAssessmentForMission, actionPlanMetaAssessment, actionPlanRouteFor, actionPlanSources, getActionPlanMissions } from "@/lib/government/strategy-impact";
 
 export { isSafePublicSourceUrl, sourceDetailHrefForUrl, sourceSlugForCanonicalUrl } from "@/lib/sources/url";
 
@@ -399,6 +400,71 @@ function communicationMediaImpactSources(): StaticPublicSource[] {
         }],
       } satisfies StaticPublicSource];
     });
+  });
+}
+
+function strategyActionPlanSources(): StaticPublicSource[] {
+  const missions = getActionPlanMissions();
+  return actionPlanSources.flatMap((source) => {
+    const canonicalUrl = isSafePublicSourceUrl(source.url);
+    const slug = canonicalUrl ? sourceSlugForCanonicalUrl(canonicalUrl) : null;
+    if (!canonicalUrl || !slug) return [];
+    const includeMeta = source.usedBy !== "ALL" || source.usedBy === "ALL";
+    const includedMissions = source.usedBy === "ALL"
+      ? missions
+      : source.usedBy === "META_AND_M04"
+        ? missions.filter((mission) => mission.id === "WOEK-AKN-2026-M04")
+        : [];
+    const usages: PublicSourceUsage[] = [
+      ...(includeMeta ? [{
+        caseSlug: ACTION_PLAN_META_ID,
+        caseTitle: "Aktionsplan Nachhaltigkeit 2026",
+        caseKind: "GOVERNMENT_STRATEGY_IMPACT",
+        decisionDate: "2026-07-16",
+        sourceRole: source.role,
+        locations: source.locations,
+        note: "Beteiligungsfassung, DNS-Referenz, Verfahren und spätere Zustandsbeobachtung bleiben getrennte Quellenfunktionen.",
+        caseHref: actionPlanRouteFor(ACTION_PLAN_META_ID),
+        analysisSummary: actionPlanMetaAssessment.editorialSummary,
+        analysisDirection: actionPlanMetaAssessment.directionLabel,
+        evidenceLevel: actionPlanMetaAssessment.evidenceSummary,
+        assessment: actionPlanMetaAssessment,
+      } satisfies PublicSourceUsage] : []),
+      ...includedMissions.map((mission) => {
+        const assessment = actionPlanAssessmentForMission(mission);
+        return {
+          caseSlug: mission.id,
+          caseTitle: `Mission ${mission.mission}: ${mission.title}`,
+          caseKind: "GOVERNMENT_STRATEGY_MISSION",
+          decisionDate: "2026-07-16",
+          sourceRole: source.role,
+          locations: source.locations,
+          note: "Die Quelle belegt Ziel, Instrument oder Referenzrahmen der Mission; beobachtete Wirkung und Zurechnung folgen daraus nicht automatisch.",
+          caseHref: actionPlanRouteFor(mission.id),
+          analysisSummary: assessment.editorialSummary,
+          analysisDirection: assessment.directionLabel,
+          evidenceLevel: assessment.evidenceSummary,
+          assessment,
+        } satisfies PublicSourceUsage;
+      }),
+    ];
+    return [{
+      id: `strategy-action-plan-${slug}`,
+      slug,
+      title: source.title,
+      institution: source.institution,
+      category: source.role === "CALCULATION_INPUT" ? "OFFICIAL_STATISTICS" : "GOVERNMENT_RECORD",
+      role: source.role,
+      documentType: source.documentType,
+      canonicalUrl,
+      documentDate: source.documentDate,
+      retrievedAt: "2026-08-18",
+      versionLabel: source.documentDate ? `Fassung vom ${source.documentDate}` : "Aktueller amtlicher Referenzstand",
+      sourceHash: null,
+      temporalClass: source.temporalClass,
+      abstract: source.abstract,
+      usages,
+    } satisfies StaticPublicSource];
   });
 }
 
@@ -1084,6 +1150,7 @@ function staticPublicSources() {
     ...stateTargetCatalogSources(),
     ...saxonyAnhaltProgrammeCatalogSources(),
     ...communicationMediaImpactSources(),
+    ...strategyActionPlanSources(),
     ...foundationalReferenceSources(),
     ...releasedFachakteSources(),
     ...governmentFactSources(),

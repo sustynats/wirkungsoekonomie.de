@@ -56,6 +56,10 @@ try {
     WOEK_COMMUNICATION_SOURCE_VS_VIEW_BASE_URL: baseUrl,
     WOEK_COMMUNICATION_SOURCE_VS_VIEW_REPORT: path.join(auditRoot, "SOURCE-VS-VIEW-COMMUNICATION-MEDIA-IMPACT.json"),
   });
+  await run(process.execPath, ["scripts/quality/check-strategy-action-plan-source-vs-view.mjs"], {
+    WOEK_STRATEGY_BASE_URL: baseUrl,
+    WOEK_STRATEGY_SOURCE_VS_VIEW_REPORT: path.join(auditRoot, "SOURCE-VS-VIEW-STRATEGY-ACTION-PLAN.json"),
+  });
   await run(process.execPath, ["scripts/quality/check-b07-golden-state.mjs"], {
     WOEK_GOLDEN_STATE_BASE_URL: baseUrl,
     WOEK_GOLDEN_STATE_REPORT: path.join(auditRoot, "GOLDEN-STATE-B07.json"),

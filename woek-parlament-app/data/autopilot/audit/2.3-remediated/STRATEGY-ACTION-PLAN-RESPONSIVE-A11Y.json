@@ -1,0 +1,1870 @@
+{
+  "schema_version": "woek-strategy-action-plan-responsive-1.0",
+  "status": "PASS",
+  "base_url": "http://127.0.0.1:3018",
+  "routes": [
+    "/regierung",
+    "/regierung/wirkungsanalysen",
+    "/regierung/wirkungsanalysen/WOEK-META-BUND-AKTIONSPLAN-NACHHALTIGKEIT-2026",
+    "/regierung/wirkungsanalysen/WOEK-AKN-2026-M02",
+    "/regierung/wirkungsanalysen/WOEK-AKN-2026-M04",
+    "/regierung/wirkungsanalysen/WOEK-AKN-2026-M05",
+    "/regierung/wirkungsanalysen/WOEK-AKN-2026-M09",
+    "/regierung/wirkungsanalysen/WOEK-AKN-2026-M11",
+    "/regierung/wirkungsanalysen/WOEK-AKN-2026-M13",
+    "/regierung/wirkungsanalysen/WOEK-AKN-2026-M16",
+    "/regierung/wirkungsanalysen/WOEK-AKN-2026-M19",
+    "/suche"
+  ],
+  "breakpoints": [
+    320,
+    360,
+    375,
+    390,
+    428,
+    768,
+    1024,
+    1280,
+    1440
+  ],
+  "checks": 108,
+  "results": [
+    {
+      "route": "/regierung",
+      "width": 320,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 320,
+        "viewportWidth": 320,
+        "h1Count": 1,
+        "assessmentCount": 9,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung",
+      "width": 360,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 360,
+        "viewportWidth": 360,
+        "h1Count": 1,
+        "assessmentCount": 9,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung",
+      "width": 375,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 375,
+        "viewportWidth": 375,
+        "h1Count": 1,
+        "assessmentCount": 9,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung",
+      "width": 390,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "h1Count": 1,
+        "assessmentCount": 9,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung",
+      "width": 428,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 428,
+        "viewportWidth": 428,
+        "h1Count": 1,
+        "assessmentCount": 9,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung",
+      "width": 768,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 768,
+        "viewportWidth": 768,
+        "h1Count": 1,
+        "assessmentCount": 9,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung",
+      "width": 1024,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1024,
+        "viewportWidth": 1024,
+        "h1Count": 1,
+        "assessmentCount": 9,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung",
+      "width": 1280,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1280,
+        "viewportWidth": 1280,
+        "h1Count": 1,
+        "assessmentCount": 9,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung",
+      "width": 1440,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1440,
+        "viewportWidth": 1440,
+        "h1Count": 1,
+        "assessmentCount": 9,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen",
+      "width": 320,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 320,
+        "viewportWidth": 320,
+        "h1Count": 1,
+        "assessmentCount": 83,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen",
+      "width": 360,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 360,
+        "viewportWidth": 360,
+        "h1Count": 1,
+        "assessmentCount": 83,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen",
+      "width": 375,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 375,
+        "viewportWidth": 375,
+        "h1Count": 1,
+        "assessmentCount": 83,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen",
+      "width": 390,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "h1Count": 1,
+        "assessmentCount": 83,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen",
+      "width": 428,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 428,
+        "viewportWidth": 428,
+        "h1Count": 1,
+        "assessmentCount": 83,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen",
+      "width": 768,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 768,
+        "viewportWidth": 768,
+        "h1Count": 1,
+        "assessmentCount": 83,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen",
+      "width": 1024,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1024,
+        "viewportWidth": 1024,
+        "h1Count": 1,
+        "assessmentCount": 83,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen",
+      "width": 1280,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1280,
+        "viewportWidth": 1280,
+        "h1Count": 1,
+        "assessmentCount": 83,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen",
+      "width": 1440,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1440,
+        "viewportWidth": 1440,
+        "h1Count": 1,
+        "assessmentCount": 83,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-META-BUND-AKTIONSPLAN-NACHHALTIGKEIT-2026",
+      "width": 320,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 320,
+        "viewportWidth": 320,
+        "h1Count": 1,
+        "assessmentCount": 20,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-META-BUND-AKTIONSPLAN-NACHHALTIGKEIT-2026",
+      "width": 360,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 360,
+        "viewportWidth": 360,
+        "h1Count": 1,
+        "assessmentCount": 20,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-META-BUND-AKTIONSPLAN-NACHHALTIGKEIT-2026",
+      "width": 375,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 375,
+        "viewportWidth": 375,
+        "h1Count": 1,
+        "assessmentCount": 20,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-META-BUND-AKTIONSPLAN-NACHHALTIGKEIT-2026",
+      "width": 390,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "h1Count": 1,
+        "assessmentCount": 20,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-META-BUND-AKTIONSPLAN-NACHHALTIGKEIT-2026",
+      "width": 428,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 428,
+        "viewportWidth": 428,
+        "h1Count": 1,
+        "assessmentCount": 20,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-META-BUND-AKTIONSPLAN-NACHHALTIGKEIT-2026",
+      "width": 768,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 768,
+        "viewportWidth": 768,
+        "h1Count": 1,
+        "assessmentCount": 20,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-META-BUND-AKTIONSPLAN-NACHHALTIGKEIT-2026",
+      "width": 1024,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1024,
+        "viewportWidth": 1024,
+        "h1Count": 1,
+        "assessmentCount": 20,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-META-BUND-AKTIONSPLAN-NACHHALTIGKEIT-2026",
+      "width": 1280,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1280,
+        "viewportWidth": 1280,
+        "h1Count": 1,
+        "assessmentCount": 20,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-META-BUND-AKTIONSPLAN-NACHHALTIGKEIT-2026",
+      "width": 1440,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1440,
+        "viewportWidth": 1440,
+        "h1Count": 1,
+        "assessmentCount": 20,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M02",
+      "width": 320,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 320,
+        "viewportWidth": 320,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M02",
+      "width": 360,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 360,
+        "viewportWidth": 360,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M02",
+      "width": 375,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 375,
+        "viewportWidth": 375,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M02",
+      "width": 390,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M02",
+      "width": 428,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 428,
+        "viewportWidth": 428,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M02",
+      "width": 768,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 768,
+        "viewportWidth": 768,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M02",
+      "width": 1024,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1024,
+        "viewportWidth": 1024,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M02",
+      "width": 1280,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1280,
+        "viewportWidth": 1280,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M02",
+      "width": 1440,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1440,
+        "viewportWidth": 1440,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M04",
+      "width": 320,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 320,
+        "viewportWidth": 320,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M04",
+      "width": 360,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 360,
+        "viewportWidth": 360,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M04",
+      "width": 375,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 375,
+        "viewportWidth": 375,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M04",
+      "width": 390,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M04",
+      "width": 428,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 428,
+        "viewportWidth": 428,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M04",
+      "width": 768,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 768,
+        "viewportWidth": 768,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M04",
+      "width": 1024,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1024,
+        "viewportWidth": 1024,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M04",
+      "width": 1280,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1280,
+        "viewportWidth": 1280,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M04",
+      "width": 1440,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1440,
+        "viewportWidth": 1440,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M05",
+      "width": 320,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 320,
+        "viewportWidth": 320,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M05",
+      "width": 360,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 360,
+        "viewportWidth": 360,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M05",
+      "width": 375,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 375,
+        "viewportWidth": 375,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M05",
+      "width": 390,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M05",
+      "width": 428,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 428,
+        "viewportWidth": 428,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M05",
+      "width": 768,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 768,
+        "viewportWidth": 768,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M05",
+      "width": 1024,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1024,
+        "viewportWidth": 1024,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M05",
+      "width": 1280,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1280,
+        "viewportWidth": 1280,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M05",
+      "width": 1440,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1440,
+        "viewportWidth": 1440,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M09",
+      "width": 320,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 320,
+        "viewportWidth": 320,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M09",
+      "width": 360,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 360,
+        "viewportWidth": 360,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M09",
+      "width": 375,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 375,
+        "viewportWidth": 375,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M09",
+      "width": 390,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M09",
+      "width": 428,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 428,
+        "viewportWidth": 428,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M09",
+      "width": 768,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 768,
+        "viewportWidth": 768,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M09",
+      "width": 1024,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1024,
+        "viewportWidth": 1024,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M09",
+      "width": 1280,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1280,
+        "viewportWidth": 1280,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M09",
+      "width": 1440,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1440,
+        "viewportWidth": 1440,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M11",
+      "width": 320,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 320,
+        "viewportWidth": 320,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M11",
+      "width": 360,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 360,
+        "viewportWidth": 360,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M11",
+      "width": 375,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 375,
+        "viewportWidth": 375,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M11",
+      "width": 390,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M11",
+      "width": 428,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 428,
+        "viewportWidth": 428,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M11",
+      "width": 768,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 768,
+        "viewportWidth": 768,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M11",
+      "width": 1024,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1024,
+        "viewportWidth": 1024,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M11",
+      "width": 1280,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1280,
+        "viewportWidth": 1280,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M11",
+      "width": 1440,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1440,
+        "viewportWidth": 1440,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M13",
+      "width": 320,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 320,
+        "viewportWidth": 320,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M13",
+      "width": 360,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 360,
+        "viewportWidth": 360,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M13",
+      "width": 375,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 375,
+        "viewportWidth": 375,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M13",
+      "width": 390,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M13",
+      "width": 428,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 428,
+        "viewportWidth": 428,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M13",
+      "width": 768,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 768,
+        "viewportWidth": 768,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M13",
+      "width": 1024,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1024,
+        "viewportWidth": 1024,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M13",
+      "width": 1280,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1280,
+        "viewportWidth": 1280,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M13",
+      "width": 1440,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1440,
+        "viewportWidth": 1440,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M16",
+      "width": 320,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 320,
+        "viewportWidth": 320,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M16",
+      "width": 360,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 360,
+        "viewportWidth": 360,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M16",
+      "width": 375,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 375,
+        "viewportWidth": 375,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M16",
+      "width": 390,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M16",
+      "width": 428,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 428,
+        "viewportWidth": 428,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M16",
+      "width": 768,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 768,
+        "viewportWidth": 768,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M16",
+      "width": 1024,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1024,
+        "viewportWidth": 1024,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M16",
+      "width": 1280,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1280,
+        "viewportWidth": 1280,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M16",
+      "width": 1440,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1440,
+        "viewportWidth": 1440,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M19",
+      "width": 320,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 320,
+        "viewportWidth": 320,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M19",
+      "width": 360,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 360,
+        "viewportWidth": 360,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M19",
+      "width": 375,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 375,
+        "viewportWidth": 375,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M19",
+      "width": 390,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M19",
+      "width": 428,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 428,
+        "viewportWidth": 428,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M19",
+      "width": 768,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 768,
+        "viewportWidth": 768,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M19",
+      "width": 1024,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1024,
+        "viewportWidth": 1024,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M19",
+      "width": 1280,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1280,
+        "viewportWidth": 1280,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/regierung/wirkungsanalysen/WOEK-AKN-2026-M19",
+      "width": 1440,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1440,
+        "viewportWidth": 1440,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/suche",
+      "width": 320,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 320,
+        "viewportWidth": 320,
+        "h1Count": 1,
+        "assessmentCount": 98,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/suche",
+      "width": 360,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 360,
+        "viewportWidth": 360,
+        "h1Count": 1,
+        "assessmentCount": 98,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/suche",
+      "width": 375,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 375,
+        "viewportWidth": 375,
+        "h1Count": 1,
+        "assessmentCount": 98,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/suche",
+      "width": 390,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "h1Count": 1,
+        "assessmentCount": 98,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/suche",
+      "width": 428,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 428,
+        "viewportWidth": 428,
+        "h1Count": 1,
+        "assessmentCount": 98,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/suche",
+      "width": 768,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 768,
+        "viewportWidth": 768,
+        "h1Count": 1,
+        "assessmentCount": 98,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/suche",
+      "width": 1024,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1024,
+        "viewportWidth": 1024,
+        "h1Count": 1,
+        "assessmentCount": 98,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/suche",
+      "width": 1280,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1280,
+        "viewportWidth": 1280,
+        "h1Count": 1,
+        "assessmentCount": 98,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/suche",
+      "width": 1440,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1440,
+        "viewportWidth": 1440,
+        "h1Count": 1,
+        "assessmentCount": 98,
+        "objectLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    }
+  ],
+  "failures": []
+}
