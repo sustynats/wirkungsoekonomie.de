@@ -2,6 +2,7 @@ import Link from "next/link";
 import { jurisdictionById } from "@/lib/parliament/jurisdictions";
 import { saxonyAnhaltElectionProgrammes } from "@/data/sachsen-anhalt-election-programmes";
 import { saxonyAnhaltProgrammeEditorial, type ProgrammeDirection } from "@/data/presentation/sachsen-anhalt-programme-editorial-v2";
+import { saxonyAnhaltReviewedCommitmentCounts } from "@/data/presentation/sachsen-anhalt-programme-counts";
 import { allPublicationSourceRecords } from "@/lib/publication/fachakten";
 
 const saxonyAnhalt = jurisdictionById("sachsen-anhalt");
@@ -74,8 +75,7 @@ export default function SaxonyAnhaltPage() {
         <div className="source-register state-programme-register">
           {saxonyAnhaltElectionProgrammes.map((programme) => {
             const review = reviewBySource.get(programme.sourceKey);
-            const overview = review?.overview && typeof review.overview === "object" && !Array.isArray(review.overview) ? review.overview as Record<string, unknown> : {};
-            const count = typeof overview.commitment_count === "number" ? overview.commitment_count : null;
+            const analysedCount = saxonyAnhaltReviewedCommitmentCounts[programme.sourceKey];
             const editorial = saxonyAnhaltProgrammeEditorial(programme.sourceKey);
             const directionCounts: Record<ProgrammeDirection, number> = { POSITIVE: 0, NEGATIVE: 0, AMBIVALENT: 0, OPEN: 0 };
             for (const assessment of Object.values(editorial?.centralAssessments ?? {})) directionCounts[assessment.direction] += 1;
@@ -91,7 +91,7 @@ export default function SaxonyAnhaltPage() {
                 <p><strong>Nachgeprüfte Schlüsselpfade:</strong> {(Object.keys(editorial.centralAssessments).length).toLocaleString("de-DE")} · {(["POSITIVE", "NEGATIVE", "AMBIVALENT", "OPEN"] as ProgrammeDirection[]).filter((direction) => directionCounts[direction] > 0).map((direction) => `${directionCounts[direction]} ${directionLabel(direction)}`).join(" · ")}</p>
               </div> : <p><strong>Redaktionelle Gesamtbewertung noch nicht freigegeben.</strong></p>}
               <div data-woek-process-metadata>
-                <p className="commitment-count"><strong>{count?.toLocaleString("de-DE") ?? "-"} quellengebundene Zusageeinheiten</strong> · vollständiger historischer Fachbestand bleibt abrufbar</p>
+                <p className="commitment-count"><strong>{analysedCount?.toLocaleString("de-DE") ?? "-"} fachlich analysierte Zusageeinheiten</strong> · Quellenregister und historische Fachquelle bleiben separat vollständig abrufbar</p>
               </div>
               {review ? <Link className="text-link" href={`/laender/sachsen-anhalt/wahlprogramme/${programme.sourceKey}`}>Gesamtbefund &amp; Einzelanalysen öffnen <span aria-hidden="true">→</span></Link> : <p><strong>Fachakte derzeit nicht verfügbar.</strong></p>}
             </article>;
