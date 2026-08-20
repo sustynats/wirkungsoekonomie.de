@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { SaxonyAnhaltProgrammeAnalysis } from "@/app/components/SaxonyAnhaltProgrammeAnalysis";
+import { SaxonyAnhaltProgrammeAnalysisV3 } from "@/app/components/SaxonyAnhaltProgrammeAnalysisV3";
 import { saxonyAnhaltElectionProgrammes } from "@/data/sachsen-anhalt-election-programmes";
 import { getSaxonyAnhaltPublicationSources } from "@/lib/publication/fachakten";
 
@@ -16,8 +16,8 @@ export async function generateMetadata({ params }: { params: Promise<{ sourceKey
   const programme = programmeFor(sourceKey);
   if (!programme) return { title: "Wahlprogramm nicht gefunden" };
   return {
-    title: `${programme.party} · Wirkungsanalyse Landtagswahl Sachsen-Anhalt 2026`,
-    description: `Verständlich aufbereitete, vollständige WÖk-Wirkungsanalyse und Zusageregister zum Wahlprogramm von ${programme.party} für die Landtagswahl Sachsen-Anhalt 2026.`
+    title: `${programme.party} · WÖk-Wahlprogrammanalyse Sachsen-Anhalt 2026`,
+    description: `Wirkungsökonomische Gesamtzusammenfassung, Key Findings, Richtungs- und Evidenzbewertung sowie quellengebundene Einzelanalysen zum Wahlprogramm von ${programme.party}.`
   };
 }
 
@@ -33,8 +33,8 @@ export default async function SaxonyAnhaltProgrammePage({ params }: { params: Pr
     <nav className="breadcrumb" aria-label="Pfad">
       <Link href="/laender">Bundesländer</Link><span aria-hidden="true">/</span>
       <Link href="/laender/sachsen-anhalt">Sachsen-Anhalt</Link><span aria-hidden="true">/</span>
-      <span>Wahlprogramm</span>
+      <span>Wahlprogrammanalyse</span>
     </nav>
-    <SaxonyAnhaltProgrammeAnalysis programme={programme} review={review} commitments={commitments} />
+    <SaxonyAnhaltProgrammeAnalysisV3 programme={programme} review={review} commitments={commitments} />
   </main>;
 }
