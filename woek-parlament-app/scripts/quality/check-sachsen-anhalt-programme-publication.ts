@@ -66,6 +66,8 @@ for (const requiredToken of [
 }
 if (componentSource.includes("firstPotential(")) fail("programme blueprint must not use the legacy firstPotential shortcut");
 if (!componentSource.includes("saxonyAnhaltCommitmentEditorial")) fail("programme blueprint must use reviewed editorial commitment overlays");
+if (componentSource.includes("style={{")) fail("programme blueprint must not violate the production CSP with inline styles");
+if (!componentSource.includes("<progress className={styles.barTrack}")) fail("direction profile must retain a CSP-safe proportional visual");
 
 const programmes = saxonyAnhaltElectionProgrammes;
 if (programmes.length !== 6) fail(`expected 6 programme source records, found ${programmes.length}`);
