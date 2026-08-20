@@ -10,7 +10,7 @@ const expectedLayers = [
   "MATERIAL_OMISSIONS", "POLICY_COHERENCE", "DELIVERY_FEASIBILITY", "RESOURCE_FINANCING",
   "SPATIAL_DISTRIBUTION", "INTERNATIONAL_LEAKAGE", "ROBUSTNESS_STRESS_TEST",
   "REVERSIBILITY_LOCKIN", "FALSIFICATION_TRIGGERS", "LIFECYCLE_TRACEABILITY",
-  "VERSION_DELTA", "COVERAGE_SCOPE", "COMMUNICATION_MEDIA_EFFECTS", "REALITY_CHECK",
+  "VERSION_DELTA", "COVERAGE_SCOPE", "COMMUNICATION_MEDIA_EFFECTS", "COMMUNICATION_MEDIA_IMPACT", "REALITY_CHECK",
 ];
 const coreRoutes = [
   "/", "/wirkungsfaelle", "/entscheidungen", "/regierung", "/regierung/wirkungsanalysen",
@@ -51,6 +51,7 @@ function contentLayerStatus(record, layer) {
     VERSION_DELTA: ["version_delta", "versionDelta", "public_change_summary"],
     COVERAGE_SCOPE: ["coverage_scope", "coverageScope", "analysis_scope"],
     COMMUNICATION_MEDIA_EFFECTS: ["communication_media_effects", "communicationMediaEffects", "mediaPatterns"],
+    COMMUNICATION_MEDIA_IMPACT: ["communication_media_impact", "communicationMediaImpact", "communication_review_id"],
     REALITY_CHECK: ["reality_check", "realityCheck", "reality_check_status", "reality_check_summary"],
   };
   return findField(record, new Set(aliases[layer])) ? "PRESENT_IN_APPROVED_FACH_RECORD" : "CONTENT_GAP_REQUIRES_FACH_REVIEW";
@@ -89,6 +90,8 @@ const files = {
   common_targets: "data/method/public-common-target-reviews.jsonl",
   parliament: "data/public-working-acts.json",
   jurisdictions: "data/political-jurisdictions.json",
+  communication_source_vs_view: "data/autopilot/audit/2.3-remediated/SOURCE-VS-VIEW-COMMUNICATION-MEDIA-IMPACT.json",
+  communication_restore_audit: "data/state-programmes/communication-media-impact/restore-first-audit-20260820.json",
 };
 const publicationSources = json(files.publication_sources).documents;
 const integrityCases = json(files.content_integrity).cases;
@@ -99,6 +102,8 @@ const recommendations = jsonl(files.recommendations);
 const commonTargets = jsonl(files.common_targets);
 const parliament = json(files.parliament);
 const jurisdictions = json(files.jurisdictions).jurisdictions.filter((entry) => entry.jurisdiction_type === "STATE");
+const communicationSourceVsView = json(files.communication_source_vs_view);
+const communicationRecords = ["afd", "bsw", "cdu", "spd", "gruene", "linke"].map((party) => json(`data/state-programmes/communication-media-impact/ltw-2026-st-${party}.json`));
 const stateSlug = new Map([
   ["DE-BW", "baden-wuerttemberg"], ["DE-BY", "bayern"], ["DE-BE", "berlin"], ["DE-BB", "brandenburg"],
   ["DE-HB", "bremen"], ["DE-HH", "hamburg"], ["DE-HE", "hessen"], ["DE-MV", "mecklenburg-vorpommern"],
@@ -112,6 +117,7 @@ const requiredRoutes = unique([
   ...government.map((record) => `/regierung/wirkungsanalysen/${encodeURIComponent(record.impact_case_id)}`),
   ...eu.map((record) => `/eu/wirkungsfaelle/${encodeURIComponent(record.impact_case_id)}`),
   ...jurisdictions.map((entry) => `/laender/${stateSlug.get(entry.jurisdiction_id)}`),
+  ...communicationSourceVsView.required_routes,
 ]);
 const auditRoutes = ["/", "/suche", "/sitemap.xml"];
 const routeResults = await mapLimit(auditRoutes, 1, fetchRoute);
@@ -141,10 +147,12 @@ const missingRequiredRoutes = requiredRoutes.filter((route) => !renderedRoutes.i
 const requiredContentPaths = unique([
   ...publicationSources.flatMap((source) => source.required_content_paths.map((pointer) => `${source.id}:${pointer}`)),
   ...integrityCases.flatMap((record) => record.required_content_paths.map((pointer) => `${record.case_id}:${pointer}`)),
+  ...communicationSourceVsView.required_content_paths,
 ]);
 const renderedContentPaths = unique([
   ...publicationSources.flatMap((source) => source.rendered_content_paths.map((pointer) => `${source.id}:${pointer}`)),
   ...integrityCases.flatMap((record) => record.rendered_content_paths.map((pointer) => `${record.case_id}:${pointer}`)),
+  ...communicationSourceVsView.rendered_content_paths,
 ]);
 const unrenderedContentPaths = unique(requiredContentPaths.filter((pointer) => !renderedContentPaths.includes(pointer)));
 const recommendationIds = new Set(recommendations.map((record) => record.impact_case_id));
@@ -153,11 +161,19 @@ const analysisLayersByObject = [
   ...government.map((record) => ({ subsystem: "GOVERNMENT", object_id: record.impact_case_id, DNS_COMMON_TARGETS: commonTargetIds.has(record.impact_case_id) ? "PRESENT_IN_APPROVED_FACH_RECORD" : "CONTENT_GAP_REQUIRES_FACH_REVIEW", BETTER_WOEK_OPTION: recommendationIds.has(record.impact_case_id) ? "PRESENT_IN_APPROVED_FACH_RECORD" : "CONTENT_GAP_REQUIRES_FACH_REVIEW", ...Object.fromEntries(expectedLayers.map((layer) => [layer, contentLayerStatus(record, layer)])) })),
   ...eu.map((record) => ({ subsystem: "EU", object_id: record.impact_case_id, DNS_COMMON_TARGETS: "CONTENT_GAP_REQUIRES_FACH_REVIEW", BETTER_WOEK_OPTION: "CONTENT_GAP_REQUIRES_FACH_REVIEW", ...Object.fromEntries(expectedLayers.map((layer) => [layer, contentLayerStatus(record, layer)])) })),
   ...parliament.map((record) => ({ subsystem: "PARLIAMENT", object_id: record.publicWorkingAct?.fullReview?.result?.case_id ?? record.slug, DNS_COMMON_TARGETS: "CONTENT_GAP_REQUIRES_FACH_REVIEW", BETTER_WOEK_OPTION: "CONTENT_GAP_REQUIRES_FACH_REVIEW", ...Object.fromEntries(expectedLayers.map((layer) => [layer, contentLayerStatus(record, layer)])) })),
+  ...communicationRecords.map((record) => ({
+    subsystem: "STATE_PROGRAMME",
+    object_id: record.programme_source_key,
+    DNS_COMMON_TARGETS: "PRESENT_IN_APPROVED_PROGRAMME_ANALYSIS",
+    BETTER_WOEK_OPTION: "CONTENT_GAP_REQUIRES_FACH_REVIEW",
+    ...Object.fromEntries(expectedLayers.map((layer) => [layer, layer === "COMMUNICATION_MEDIA_IMPACT" ? "PRESENT_IN_APPROVED_FACH_RECORD" : contentLayerStatus(record, layer)])),
+  })),
 ];
 const semanticDiff = b07Manifest.semantic_diff_against_accepted_production;
 const failures = [
   ...(unrenderedContentPaths.length ? [`unrendered_content_paths:${unrenderedContentPaths.length}`] : []),
   ...(missingRequiredRoutes.length ? [`missing_required_routes:${missingRequiredRoutes.length}`] : []),
+  ...(communicationSourceVsView.status === "PASS" ? [] : ["communication_media_source_vs_view"]),
   ...navigationTargets.filter((entry) => !entry.present).map((entry) => `navigation:${entry.route}`),
   ...searchTargets.filter((entry) => !entry.title_present_in_search_payload).map((entry) => `search:${entry.object_id}`),
   ...sitemapTargets.filter((entry) => !entry.present).map((entry) => `sitemap:${entry.route}`),
@@ -183,7 +199,7 @@ const report = {
   fach_version: b07Manifest.merge_id,
   renderer_version: "B07_RECONCILED_RENDERER_20260820",
   semantic_diff_against_last_accepted_production: semanticDiff,
-  coverage: { government: government.length, eu: eu.length, parliament: parliament.length, recommendations: recommendations.length, common_targets: commonTargets.length, states: jurisdictions.length },
+  coverage: { government: government.length, eu: eu.length, parliament: parliament.length, recommendations: recommendations.length, common_targets: commonTargets.length, states: jurisdictions.length, communication_media_impact: communicationRecords.length },
   failures,
 };
 const publicPayload = JSON.stringify(report);

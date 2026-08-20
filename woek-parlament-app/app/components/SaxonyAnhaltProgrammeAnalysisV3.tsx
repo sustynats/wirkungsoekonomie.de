@@ -16,6 +16,8 @@ import {
   summarizeStatuses,
   type ProgrammeCommitment,
 } from "@/lib/presentation/sachsen-anhalt-programme-model";
+import { getCommunicationMediaImpact, type CommunicationMediaImpactRecord, type CommunicationPattern } from "@/lib/state-programmes/communication-media-impact";
+import { sourceDetailHrefForUrl } from "@/lib/sources/url";
 import styles from "./ProgrammeAnalysisBlueprint.module.css";
 
 function formatDate(value: string | null) {
@@ -81,6 +83,108 @@ function FindingIcon({ kind }: { kind: ProgrammeFindingKind }) {
         ? "M4 8h6l4 8h6M4 16h6l4-8h6"
         : "M9.4 8.5a3.1 3.1 0 1 1 4.9 2.5c-1.4 1-2.3 1.5-2.3 3M12 18h.01";
   return <span className={styles.signalIcon} aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d={path} /></svg></span>;
+}
+
+function CommunicationIcon() {
+  return <span className={styles.communicationIcon} aria-hidden="true"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><path d="M4 6.5h16v10H9l-5 4v-14Z" /><path d="M8 10h8M8 13h5" /></svg></span>;
+}
+
+function OptionalFinding({ label, value }: { label: string; value?: string }) {
+  return value ? <p><strong>{label}:</strong> {value}</p> : null;
+}
+
+function CommunicationPatternDetail({ pattern }: { pattern: CommunicationPattern }) {
+  return <details className={styles.communicationPattern} data-woek-communication-pattern={pattern.pattern_id}>
+    <summary>
+      <span><strong>{pattern.title}</strong><span className={styles.summaryTeaser}>{pattern.source_locator}</span></span>
+    </summary>
+    <div className={styles.communicationPatternBody}>
+      <blockquote className={styles.quote}><strong>Geprüfte Fundstelle:</strong> {pattern.source_locator}</blockquote>
+      <div className={styles.detailGrid}>
+        <article className={styles.detailCard}><h4>Kommunikationseinheit</h4><p>{pattern.communication_unit}</p></article>
+        <article className={styles.detailCard}><h4>Adressierter Gegenstand</h4><p>{pattern.target_or_referent}</p></article>
+      </div>
+      <OptionalFinding label="Problemdeutung und Ursachenzuschreibung" value={pattern.problem_definition_and_causal_attribution} />
+      <OptionalFinding label="Ingroup/Outgroup" value={pattern.ingroup_outgroup_structure} />
+      <OptionalFinding label="Aufmerksamkeit und Agenda" value={pattern.attention_or_agenda_effect} />
+      <OptionalFinding label="Emotionale Aktivierung" value={pattern.emotional_activation} />
+      <OptionalFinding label="Interpretationswirkung" value={pattern.interpretation_effect} />
+      <OptionalFinding label="Resonanz und Verstärkung" value={pattern.resonance_or_amplification} />
+      <OptionalFinding label="Normalisierung und Sagbarkeit" value={pattern.normalization_or_sayability_shift} />
+      <OptionalFinding label="Stigmatisierungs-/Entmenschlichungsprüfung" value={pattern.stigmatization_or_dehumanization_review} />
+      <div className={styles.orderFlow} aria-label="Mögliche Kommunikationswirkungen erster bis dritter Ordnung">
+        <article><span>1</span><h4>Erste Ordnung</h4><p>{pattern.first_order}</p></article>
+        <article><span>2</span><h4>Zweite Ordnung</h4><p>{pattern.second_order}</p></article>
+        <article><span>3</span><h4>Dritte Ordnung</h4><p>{pattern.third_order}</p></article>
+      </div>
+      <p><strong>Bezug zur demokratischen Resilienz:</strong> {pattern.democratic_resilience_effect}</p>
+      <p><strong>Betroffene Schutz- und Resilienzräume:</strong></p><List values={pattern.protected_interests} />
+      <OptionalFinding label="Gegenfaktum" value={pattern.counterfactual} />
+      <p><strong>Falsifikations-/Reality-Check-Trigger:</strong> {pattern.falsification_recheck_trigger}</p>
+      <p><Link href={sourceDetailHrefForUrl(pattern.source_url)}>Quellensteckbrief und Verwendungen ansehen →</Link></p>
+    </div>
+  </details>;
+}
+
+function CommunicationImpactSection({ record }: { record: CommunicationMediaImpactRecord }) {
+  return <section id="kommunikationswirkung" aria-labelledby="kommunikationswirkung-title" data-woek-analysis-layer="COMMUNICATION_MEDIA_IMPACT">
+    <div className={styles.sectionHeader}>
+      <p className={styles.eyebrow}>Eigenständige Analyseachse</p>
+      <h2 id="kommunikationswirkung-title">Kommunikationswirkung – Wirkungspotenzial</h2>
+      <p className={styles.lead}>Was kann die Sprache des Programms mit Aufmerksamkeit, Deutung, Zugehörigkeit und demokratischer Resilienz machen?</p>
+    </div>
+    <article className={styles.communicationOverview}>
+      <div className={styles.communicationAssessment}>
+        <CommunicationIcon />
+        <div>
+          <p className={styles.eyebrow}>WÖk-Kurzbefund Kommunikationswirkung</p>
+          <h3>{record.overview_assessment_label}</h3>
+          <p>{record.public_summary}</p>
+        </div>
+      </div>
+      <div className={styles.communicationAxes}>
+        <article><p className={styles.eyebrow}>Positive Potenziale</p><List values={record.positive_potentials} /></article>
+        <article><p className={styles.eyebrow}>Materielle Risiken</p><List values={record.material_risks} /></article>
+      </div>
+      <div className={styles.noncompensation}><strong>Nichtkompensation:</strong> {record.noncompensation}</div>
+      <p className={styles.axisBoundary}><strong>Zwei getrennte Achsen:</strong> Dieser Befund betrifft die Wirkung politischer Kommunikation. Er bewertet nicht automatisch die Wirkung der vorgeschlagenen Maßnahmen und wird weder mit der Maßnahmenanalyse noch mit einer Parteigesamtnote verrechnet.</p>
+    </article>
+
+    <div className={styles.evidenceGrid} aria-label="Evidenzprofil der Kommunikationswirkungsanalyse">
+      <article><span aria-hidden="true">Aa</span><h3>Text-Evidenz</h3><p>{record.evidence.text}</p></article>
+      <article><span aria-hidden="true">↝</span><h3>Mechanismus</h3><p>{record.evidence.mechanism}</p></article>
+      <article><span aria-hidden="true">◌</span><h3>Reichweite / Resonanz</h3><p>{record.evidence.reach_resonance}</p></article>
+      <article><span aria-hidden="true">◎</span><h3>Beobachtete Wirkung</h3><p>{record.evidence.observed_outcome}</p></article>
+      <article><span aria-hidden="true">≠</span><h3>Zurechnung</h3><p>{record.evidence.attribution}</p></article>
+    </div>
+
+    <div className={styles.communicationMeta}>
+      <div><strong>Geprüfter Umfang:</strong><p>{record.coverage_scope}</p></div>
+      <div><strong>Reifegrad:</strong><p>{record.assessment_maturity}</p></div>
+      <div><strong>Offene Prüfungen:</strong><List values={record.open_points} /></div>
+    </div>
+
+    <div className={styles.sectionHeader}>
+      <p className={styles.eyebrow}>Passagegebundener Deep Dive</p>
+      <h3>Vom Wortlaut über den Mechanismus zur prüfbaren Wirkungskaskade.</h3>
+      <p>{record.cascade_summary}</p>
+    </div>
+    <div className={styles.communicationPatternList}>{record.patterns.map((pattern) => <CommunicationPatternDetail key={pattern.pattern_id} pattern={pattern} />)}</div>
+
+    <details className={styles.proof}>
+      <summary>Quellen, Fachversion und vollständige Transparenz <span className={styles.summaryTeaser}>{record.source_refs.length} dokumentierte Quellen</span></summary>
+      <div className={styles.proofBody}>
+        <dl className={styles.metaGrid}>
+          <div><dt>Fachversion</dt><dd>{record.communication_review_version}</dd></div>
+          <div><dt>Fachstatus</dt><dd>{record.assessment_maturity}</dd></div>
+          <div><dt>Coverage</dt><dd>{record.coverage_scope}</dd></div>
+          <div><dt>Restore-Status</dt><dd>{record.restore_classification === "HISTORICAL_APPROVED_RESTORE_REQUIRED" ? "Historisch freigegebener Bestand wiederhergestellt" : "Erster materialitätsorientierter Review; Vollscan offen"}</dd></div>
+        </dl>
+        <ul className={styles.sourceList}>{record.source_refs.map((source) => <li key={`${source.url}-${source.locator}`}><Link href={sourceDetailHrefForUrl(source.url)}>{source.title}</Link><span>{source.locator}</span></li>)}</ul>
+        <p><Link href={sourceDetailHrefForUrl(record.fach_source.url)}>Fachhandoff, Quellensteckbrief und Verwendungen ansehen →</Link></p>
+      </div>
+    </details>
+  </section>;
 }
 
 function DirectionBadge({ direction }: { direction: ProgrammeDirection }) {
@@ -257,6 +361,8 @@ export function SaxonyAnhaltProgrammeAnalysisV3({ programme, review, commitments
   const model = buildSaxonyAnhaltProgrammeModel(review.markdown, commitments.markdown);
   const editorial = saxonyAnhaltProgrammeEditorial(programme.sourceKey);
   if (!editorial) throw new Error(`Missing Sachsen-Anhalt programme editorial v2 for ${programme.sourceKey}`);
+  const communicationImpact = getCommunicationMediaImpact(programme.sourceKey);
+  if (!communicationImpact) throw new Error(`Missing Sachsen-Anhalt communication-media impact for ${programme.sourceKey}`);
   const counts = summarizeStatuses(model.commitments);
   const decisionDate = formatDate(programme.decisionDate);
   const centralAssessments = Object.values(editorial.centralAssessments);
@@ -299,6 +405,7 @@ export function SaxonyAnhaltProgrammeAnalysisV3({ programme, review, commitments
     <nav className={styles.jumpNav} aria-label="Sprungnavigation der Wahlprogrammanalyse">
       <a href="#gesamtbefund">Gesamtzusammenfassung</a>
       <a href="#schluesselpfade">Key Findings</a>
+      <a href="#kommunikationswirkung">Kommunikationswirkung</a>
       <a href="#vollstaendige-wirkungsakte">Alle Einzelanalysen</a>
       <a href="#vollstaendiges-zusageregister">Originalzusagen</a>
       <a href="#quellenstatus">Quellen & Fachstand</a>
@@ -348,6 +455,8 @@ export function SaxonyAnhaltProgrammeAnalysisV3({ programme, review, commitments
         })}
       </div>
     </section>
+
+    <CommunicationImpactSection record={communicationImpact} />
 
     <section id="woek-kurzbewertung" aria-labelledby="kurzstatus-title">
       <div className={styles.sectionHeader}><p className={styles.eyebrow}>Analyseumfang</p><h2 id="kurzstatus-title">Was ist geprüft - und was bleibt offen?</h2></div>
