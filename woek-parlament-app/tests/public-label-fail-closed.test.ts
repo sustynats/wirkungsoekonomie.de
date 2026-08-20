@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
-import { humanizeSystemValue, publicControlText, publicIndicatorLabel, publicNarrativeText, publicObservatoryQualityFieldLabel, publicObservatoryValueLabel, publicSystemLabel, publicSystemValueLabel } from "@/lib/presentation/labels";
+import { humanizeSystemValue, publicArchiveText, publicControlText, publicIndicatorLabel, publicNarrativeText, publicObservatoryQualityFieldLabel, publicObservatoryValueLabel, publicSystemLabel, publicSystemValueLabel } from "@/lib/presentation/labels";
 import { euPublicMaturity } from "@/lib/presentation/public-maturity";
 
 test("unknown technical values fail closed instead of becoming title-cased public copy", () => {
@@ -9,6 +9,13 @@ test("unknown technical values fail closed instead of becoming title-cased publi
   assert.equal(publicIndicatorLabel("unreviewed_indicator"), null);
   assert.equal(publicControlText("WATCH_HIGH / POSSIBLE_BLOCK depending final design"), null);
   assert.equal(humanizeSystemValue("UNREVIEWED_SYSTEM_VALUE"), "UNREVIEWED_SYSTEM_VALUE");
+});
+
+test("the immutable Fach archive removes machine separators without changing the strict UI gate", () => {
+  assert.equal(publicArchiveText("programme_profile"), "Programmprofil");
+  assert.equal(publicArchiveText("SDG_16"), "SDG 16");
+  assert.equal(publicArchiveText("UNREVIEWED_SYSTEM_VALUE"), "Unreviewed system value");
+  assert.equal(publicSystemLabel("UNREVIEWED_SYSTEM_VALUE"), null);
 });
 
 test("reviewed labels remain available without exposing their control values", () => {
