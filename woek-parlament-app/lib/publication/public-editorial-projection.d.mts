@@ -21,3 +21,4 @@ export function projectEuEditorial(record: Record<string, unknown>): PublicEdito
 export function projectParliamentEditorial(record: Record<string, unknown>): PublicEditorialProjection;
 export function findGenericProjectionPatterns(records: Array<{ id: string; fields: PublicEditorialFields }>, threshold?: number): Array<{ code: "GENERIC_PUBLIC_EDITORIAL_PATTERN_DETECTED"; field: string; ids: string[]; similarity: number }>;
 export function publicEnumLabel(value: unknown): string;
+export function publicNarrativeEnumText(value: unknown): string;
