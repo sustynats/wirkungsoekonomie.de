@@ -57,6 +57,7 @@ const rawEnum = /\b(?:POSITIVE_POTENTIAL|NEGATIVE_RISK|POSITIVE|NEGATIVE|NEUTRAL
 const rawPublicTerm = /\b(?:RecommendationVersions?|EvidenceEvents?|ExternalShock|StateObservation|State Variables|RealityCheckCandidate|AnalysisVersion|WÖkImpactCase|ImpactCase|GovernmentActions?|ParliamentaryCases?|LegalActs?|SourceEvents?|VoteEvents?|IndividualVotes?|Climate resource)\b/;
 const machineResidue = [
   /realitycheckstatus\s*=/i,
+  /\b[\p{L}0-9]+(?:_[\p{L}0-9]+)+\b/u,
   /\b[A-Z][A-Z0-9]*(?:_[A-Z0-9]+)+\b/,
   /\b[a-z]+_[a-z0-9_]+\b/,
   /(?:^|\s)---(?:\s|$)/,

@@ -217,6 +217,7 @@ const systemValueLabels: Record<string, string> = {
   NO_ROBUST_OVERALL_DIRECTION: "Keine belastbare einheitliche Wirkungsrichtung",
   POSITIVES_WIRKUNGSPOTENZIAL: "Positives Wirkungspotenzial",
   UEBERWIEGEND_POSITIVES_WIRKUNGSPOTENZIAL: "Überwiegend positives Wirkungspotenzial",
+  UEBERWIEGEND_POSITIVES_WIRKUNGSPOTENZIAL_MIT_SEPARAT_SICHTBAREN_RISIKEN: "Überwiegend positives Wirkungspotenzial mit separat sichtbaren Risiken",
   AMBIVALENTES_WIRKUNGSPOTENZIAL: "Gegenläufige Wirkungspotenziale und Risiken",
   EU_EXCLUSIVE: "ausschließliche EU-Zuständigkeit",
   EU_SHARED: "geteilte EU-Zuständigkeit",

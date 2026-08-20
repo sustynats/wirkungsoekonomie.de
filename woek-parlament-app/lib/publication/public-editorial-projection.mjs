@@ -24,6 +24,7 @@ const PUBLIC_ENUM_LABELS = {
   "OFFICIAL_PROPOSAL_SOURCE; EX_ANTE_CAUSAL_HYPOTHESIS_REQUIRES_VALIDATION": "Amtliche Vorlage belegt; Wirkannahme muss noch geprüft werden",
   POSITIVES_WIRKUNGSPOTENZIAL: "Positives Wirkungspotenzial",
   UEBERWIEGEND_POSITIVES_WIRKUNGSPOTENZIAL: "Überwiegend positives Wirkungspotenzial",
+  UEBERWIEGEND_POSITIVES_WIRKUNGSPOTENZIAL_MIT_SEPARAT_SICHTBAREN_RISIKEN: "Überwiegend positives Wirkungspotenzial mit separat sichtbaren Risiken",
   AMBIVALENTES_WIRKUNGSPOTENZIAL: "Gegenläufige Wirkungspotenziale und Risiken",
   POSITIVE_POTENTIAL: "Positives Wirkungspotenzial",
   NEGATIVE_RISK: "Materielles Wirkungsrisiko",
@@ -91,7 +92,7 @@ function jaccard(left, right) {
 }
 
 function replaceEnums(value) {
-  return Object.entries(PUBLIC_ENUM_LABELS).reduce(
+  return Object.entries(PUBLIC_ENUM_LABELS).sort(([left], [right]) => right.length - left.length).reduce(
     (result, [systemValue, label]) => result.replaceAll(systemValue, label),
     text(value),
   );
@@ -159,7 +160,8 @@ function inlineEvidenceSummary(markdown) {
 
 function hasRawInternalEnum(value) {
   const withoutAllowedLabels = text(value);
-  return /\b(?:POSITIVE_POTENTIAL|NEGATIVE_RISK|PORTFOLIO_DISAGGREGATION_REQUIRED|NO_ROBUST_OVERALL_DIRECTION|NOT_YET_OBSERVABLE|OBSERVATION_ONLY|PLAUSIBLE_CONTRIBUTION|PARTIAL_ATTRIBUTION|CAUSAL_EVIDENCE|CONFLICTING_EVIDENCE|NOT_APPLICABLE|NOT_ASSESSABLE)\b/.test(withoutAllowedLabels);
+  return /\b(?:POSITIVE_POTENTIAL|NEGATIVE_RISK|PORTFOLIO_DISAGGREGATION_REQUIRED|NO_ROBUST_OVERALL_DIRECTION|NOT_YET_OBSERVABLE|OBSERVATION_ONLY|PLAUSIBLE_CONTRIBUTION|PARTIAL_ATTRIBUTION|CAUSAL_EVIDENCE|CONFLICTING_EVIDENCE|NOT_APPLICABLE|NOT_ASSESSABLE)\b/.test(withoutAllowedLabels)
+    || /\b[\p{L}0-9]+(?:_[\p{L}0-9]+)+\b/u.test(withoutAllowedLabels);
 }
 
 export function isGenericPublicEditorialText(value) {
@@ -282,5 +284,8 @@ export function findGenericProjectionPatterns(records, threshold = 0.9) {
 }
 
 export function publicEnumLabel(value) {
-  return PUBLIC_ENUM_LABELS[text(value)] ?? humanizeSystemValue(value);
+  const candidate = text(value);
+  const reviewedLabel = PUBLIC_ENUM_LABELS[candidate];
+  if (reviewedLabel) return reviewedLabel;
+  return /\b[\p{L}0-9]+(?:_[\p{L}0-9]+)+\b/u.test(candidate) ? "" : candidate;
 }
