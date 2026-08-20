@@ -8,12 +8,13 @@ const baseUrl = (process.env.WOEK_STRATEGY_BASE_URL ?? "http://127.0.0.1:3018").
 const output = process.env.WOEK_STRATEGY_SOURCE_VS_VIEW_REPORT ?? path.resolve("data/autopilot/audit/2.3-remediated/SOURCE-VS-VIEW-STRATEGY-ACTION-PLAN.json");
 const dataDir = path.resolve("data/government/strategy-impact");
 const missionFiles = ["aktionsplan-nachhaltigkeit-2026-missions-01-10.jsonl", "aktionsplan-nachhaltigkeit-2026-missions-11-19.jsonl"];
-const overlayFile = "reviewed-deep-dives-20260820.json";
-const files = ["aktionsplan-nachhaltigkeit-2026-meta.md", ...missionFiles, overlayFile];
+const overlayFiles = ["reviewed-deep-dives-20260820.json", "reviewed-deep-dives-20260820-batch5.json"];
+const files = ["aktionsplan-nachhaltigkeit-2026-meta.md", ...missionFiles, ...overlayFiles];
 const metaId = "WOEK-META-BUND-AKTIONSPLAN-NACHHALTIGKEIT-2026";
 const missions = missionFiles.flatMap((file) => readFileSync(path.join(dataDir, file), "utf8").split(/\r?\n/).filter(Boolean).map(JSON.parse));
-const reviewedOverlays = JSON.parse(readFileSync(path.join(dataDir, overlayFile), "utf8")).records;
+const reviewedOverlays = overlayFiles.flatMap((file) => JSON.parse(readFileSync(path.join(dataDir, file), "utf8")).records);
 const reviewedDeepDiveIds = new Set(["WOEK-AKN-2026-M02", "WOEK-AKN-2026-M04", ...reviewedOverlays.map((record) => record.missionId)]);
+const expectedExpandedDeepDiveIds = new Set(Array.from({ length: 19 }, (_, index) => `WOEK-AKN-2026-M${String(index + 1).padStart(2, "0")}`));
 const routes = [`/regierung/wirkungsanalysen/${encodeURIComponent(metaId)}`, ...missions.map((mission) => `/regierung/wirkungsanalysen/${encodeURIComponent(mission.id)}`)];
 const sourceUrls = [
   "https://www.bundesregierung.de/resource/blob/992814/2447318/ce245dd460c58c39c04a87878f68608a/2026-07-16-aktionsplan-nachhaltigkeit-data.pdf?download=1",
@@ -22,6 +23,8 @@ const sourceUrls = [
   "https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm",
   "https://www.bundesregierung.de/resource/blob/2196306/2253682/2d019561674ad7af4f11e19d4aa4fc71/2024-01-18-sta-nhk-beschluss-vom-27-november-2023-data.pdf?download=1",
   "https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Nachhaltigkeitsindikatoren/Deutsche-Nachhaltigkeit/_inhalt.html",
+  "https://www.umweltbundesamt.de/themen/wirtschaft-konsum/umweltfreundliche-beschaffung/datenbank-umweltbezogene-beschaffungskriterien",
+  "https://www.umweltbundesamt.de/themen/wirtschaft-konsum/umweltfreundliche-beschaffung/lebenszykluskosten",
 ];
 const sourceRoutes = sourceUrls.map((url) => `/quellen/quelle-${createHash("sha256").update(new URL(url).toString()).digest("hex").slice(0, 16)}`);
 
@@ -98,6 +101,13 @@ for (const required of ["Überwiegend positives strukturelles Wirkungspotenzial"
 const invariants = {
   DNS_REFERENCE_IS_NOT_CAUSALITY: !metaText.includes("DNS-Ziel erreicht durch"),
   NO_AGGREGATE_SCORE: metaText.includes("nicht zu einem Netto-Gesamtscore addiert") && metaText.includes("Keine Gesamtnote"),
+  ACTION_PLAN_19_OF_19_EXPANDED_FACHREVIEWS: reviewedDeepDiveIds.size === 19
+    && [...expectedExpandedDeepDiveIds].every((id) => reviewedDeepDiveIds.has(id))
+    && missions.every((mission) => {
+      const text = visible(pages.get(`/regierung/wirkungsanalysen/${encodeURIComponent(mission.id)}`).html);
+      return !text.includes("Vertiefung noch nicht fachlich veröffentlicht")
+        && !text.includes("Initiale Ex-ante-Missionsakte");
+    }),
   NO_CODEX_RECOMMENDATION: [...reviewedDeepDiveIds].every((id) => {
     const deepDive = reviewedOverlays.find((record) => record.missionId === id);
     const expected = deepDive?.recommendationStatus ?? (id === "WOEK-AKN-2026-M02" ? "Es wird keine neue WÖk-Handlungsoption aus diesem Review erzeugt." : "Es wird keine WÖk-Handlungsoption aus diesem Review erzeugt.");

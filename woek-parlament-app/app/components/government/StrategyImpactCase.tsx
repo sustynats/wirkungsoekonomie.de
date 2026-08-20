@@ -21,7 +21,8 @@ import { sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
 function StrategySources({ mission }: { mission?: ActionPlanMission }) {
   const sources = actionPlanSources.filter((source) => source.usedBy === "ALL"
     || (!mission && source.usedBy === "META")
-    || ((!mission || mission.id === "WOEK-AKN-2026-M04") && source.usedBy === "META_AND_M04"));
+    || ((!mission || mission.id === "WOEK-AKN-2026-M04") && source.usedBy === "META_AND_M04")
+    || (mission && Array.isArray(source.usedBy) && source.usedBy.includes(mission.id)));
   return <section aria-labelledby={`strategy-sources-${mission?.mission ?? "meta"}`}>
     <p className="eyebrow">Vollakte · Originalquellen</p>
     <h2 id={`strategy-sources-${mission?.mission ?? "meta"}`}>Welche Quellen tragen diese Einordnung?</h2>

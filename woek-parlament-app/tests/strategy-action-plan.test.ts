@@ -25,12 +25,15 @@ test("approved action-plan meta case and all 19 mission records are restored wit
   assert.doesNotMatch(JSON.stringify({ assessment: actionPlanMetaAssessment, missions }), /Gesamtnote|Durchschnittsscore|Wahlempfehlung/);
 });
 
-test("only approved deep dives are projected and no recommendation is generated", () => {
+test("ACTION_PLAN_19_OF_19_EXPANDED_FACHREVIEWS", () => {
   assert.deepEqual(Object.keys(missionDeepDives).sort(), [
-    "WOEK-AKN-2026-M02", "WOEK-AKN-2026-M04", "WOEK-AKN-2026-M05", "WOEK-AKN-2026-M06",
-    "WOEK-AKN-2026-M09", "WOEK-AKN-2026-M10", "WOEK-AKN-2026-M11", "WOEK-AKN-2026-M12",
-    "WOEK-AKN-2026-M13", "WOEK-AKN-2026-M14", "WOEK-AKN-2026-M15", "WOEK-AKN-2026-M16",
+    ...Array.from({ length: 19 }, (_, index) => `WOEK-AKN-2026-M${String(index + 1).padStart(2, "0")}`),
   ]);
+  for (const deepDive of Object.values(missionDeepDives)) {
+    assert.ok(deepDive.problemReview.text);
+    assert.ok(deepDive.goalReview.text);
+    assert.equal(deepDive.qualityLayers.length, 12);
+  }
   for (const mission of missions) {
     assert.equal(mission.direction, "OPEN_TO_CONTEXT");
     assert.equal(mission.evidence, "INITIAL_DRAFT; add mechanism evidence");
@@ -41,7 +44,7 @@ test("only approved deep dives are projected and no recommendation is generated"
 });
 
 test("DNS stays a reference framework and every public source has intermediary metadata", () => {
-  assert.equal(actionPlanSources.length, 6);
+  assert.equal(actionPlanSources.length, 8);
   assert.ok(actionPlanSources.some((source) => source.title === "Deutsche Nachhaltigkeitsstrategie 2025" && source.role === "NORMATIVE_REFERENCE"));
   for (const source of actionPlanSources) {
     assert.doesNotThrow(() => new URL(source.url));
@@ -67,8 +70,8 @@ test("restore-first audit records the recovered canonical Fachbestand", () => {
   assert.equal(audit.before.classification, "PRESENT_BUT_ROUTE_OR_NAV_LOST");
   assert.equal(audit.after.meta_impact_cases, 1);
   assert.equal(audit.after.mission_subcases, 19);
-  assert.equal(audit.after.full_deep_dives.length, 12);
-  assert.equal(audit.after.initial_ex_ante_cases, 7);
+  assert.equal(audit.after.full_deep_dives.length, 19);
+  assert.equal(audit.after.initial_ex_ante_cases, 0);
   assert.equal(audit.guardrails.no_codex_generated_recommendation, true);
   assert.equal(audit.guardrails.dns_2025_is_reference_not_causality_proof, true);
 });
