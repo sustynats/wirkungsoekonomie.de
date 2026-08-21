@@ -10,6 +10,7 @@ on:
       - 'tools/apply_state_sustainability_sources.py'
       - 'tools/apply_state_sustainability_precision.py'
       - 'tools/apply_state_sustainability_public_precision.py'
+      - 'tools/apply_state_sustainability_wiwi_generator.py'
       - 'tools/apply_state_sustainability_wiwi_scope.py'
       - 'tools/apply_state_sustainability_build_integration.py'
       - 'tools/audit_state_sustainability_architecture.py'
@@ -55,6 +56,7 @@ jobs:
       - name: Apply approved #253 deterministic projections
         run: |
           python tools/apply_state_sustainability_architecture.py
+          python tools/apply_state_sustainability_wiwi_generator.py
           python tools/apply_state_sustainability_wiwi_scope.py
           python tools/apply_state_sustainability_sources.py
           python tools/apply_state_sustainability_precision.py
@@ -98,6 +100,7 @@ jobs:
       - name: Verify projections and committed matrix are idempotent
         run: |
           python tools/apply_state_sustainability_architecture.py
+          python tools/apply_state_sustainability_wiwi_generator.py
           python tools/apply_state_sustainability_wiwi_scope.py
           python tools/apply_state_sustainability_sources.py
           python tools/apply_state_sustainability_precision.py
