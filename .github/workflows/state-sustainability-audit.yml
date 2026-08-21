@@ -7,6 +7,7 @@ on:
       - 'content/**'
       - 'tools/apply_state_sustainability_architecture.py'
       - 'tools/apply_state_sustainability_sources.py'
+      - 'tools/apply_state_sustainability_precision.py'
       - 'tools/audit_state_sustainability_architecture.py'
       - 'tools/audit_state_sustainability_architecture_fast.py'
       - 'sitemap.xml'
@@ -40,6 +41,7 @@ jobs:
         run: |
           python tools/apply_state_sustainability_architecture.py
           python tools/apply_state_sustainability_sources.py
+          python tools/apply_state_sustainability_precision.py
           npm run build:search
           npm run taxonomy:build
       - name: Commit deterministic projection outputs when needed
@@ -60,6 +62,7 @@ jobs:
         run: |
           python tools/apply_state_sustainability_architecture.py
           python tools/apply_state_sustainability_sources.py
+          python tools/apply_state_sustainability_precision.py
           npm run build:search
           npm run taxonomy:build
           git diff --exit-code
