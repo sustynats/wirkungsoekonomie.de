@@ -91,7 +91,7 @@ def role(rel: str) -> str:
     if rel.startswith("bibliothek/"): return "library_source"
     if rel.startswith("tools/"): return "quality_or_projection_tool"
     if rel.startswith("scripts/"): return "site_generator_or_quality_tool"
-    if rel.startswith("public/data/") or rel.startswith("assets/data/")): return "structured_data_or_manifest"
+    if rel.startswith("public/data/") or rel.startswith("assets/data/"): return "structured_data_or_manifest"
     return "support_text"
 
 
