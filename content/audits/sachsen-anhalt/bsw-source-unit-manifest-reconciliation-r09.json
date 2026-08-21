@@ -1,0 +1,83 @@
+{
+  "manifest_id": "ST-BSW-SOURCE-UNIT-MANIFEST-RECONCILIATION-R09",
+  "manifest_status": "IN_PROGRESS_NOT_AUTHORITATIVE",
+  "scope": "Sachsen-Anhalt 2026 BSW Wahlprogramm only",
+  "source_key": "ltw-2026-st-bsw",
+  "supersedes_working_manifest": "ST-BSW-SOURCE-UNIT-MANIFEST-RECONCILIATION-R08",
+  "primary_source": {
+    "title": "BSW Sachsen-Anhalt – Wahlprogramm zur Landtagswahl 2026",
+    "decision_date": "2026-03-07",
+    "url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf",
+    "physical_pages": 90
+  },
+  "inherited_closed_gates": {
+    "frontmatter_p0_p6": "PASS_FRONTMATTER_RECONCILED",
+    "p7_p89": "PASS_SEGMENT_COVERAGE",
+    "p87_p89_prior_gap": "CLOSED_FOR_THIS_SOURCE_SPAN",
+    "known_parent_edge_queue_unresolved": 0,
+    "a07_record_set": "PASS_42_UNIQUE",
+    "a04_a05_p37_boundary": "PASS_DISTINCT_EFFECT_OBJECTS",
+    "final_page_context": "PASS_CLASSIFIED_NO_NEW_EFFECT_OBJECTS"
+  },
+  "explicit_psr_duplicate_relation_reconciliation": {
+    "status": "PASS_NO_UNRESOLVED_EXPLICIT_PSR_DUPLICATE_RELATION",
+    "relation": {
+      "left_source_unit_id": "ltw-2026-st-bsw-psr-a04-p30-19-typengenehmigung-seriell-modular",
+      "left_source_anchor": "printed P30 lines 828-830",
+      "left_trigger": "regulatory/approval mechanism: reusable Typengenehmigungen for serial and modular construction",
+      "left_lifecycle_stage": "REGULATORY_APPROVAL_STANDARD",
+      "right_source_unit_id": "ltw-2026-st-bsw-psr-a04-p33-37-seriell-modular-bevorzugen",
+      "right_source_anchor": "printed P33 lines 907-910",
+      "right_trigger": "project/procurement/planning mechanism: recurring Land/municipal construction standardized and serial/modular methods preferred where suitable",
+      "right_lifecycle_stage": "PROJECT_PROCUREMENT_AND_DELIVERY_PREFERENCE",
+      "prior_relation_label": "DUPLICATE_RELATION",
+      "final_relation_type": "RELATED_DISTINCT_MECHANISMS",
+      "same_effect_object": false,
+      "left_active_effect_leaf": true,
+      "right_active_effect_leaf": true,
+      "shared_outcome_space": "construction time/cost and serial/modular delivery",
+      "reason": "The source statements operate at different policy lifecycle stages and can vary independently: a Typengenehmigung changes approval reuse even without public project preference; a procurement/project preference can choose serial/modular delivery even where the approval regime is unchanged. Counting only one would drop a source-bound mechanism; counting both does not duplicate the same intervention."
+    },
+    "frontmatter_duplicate_handling": {
+      "p4_p5": "CONTEXT_PARENT_DUPLICATE_RELATIONS_TO_BODY_NOT_ACTIVE_LEAVES",
+      "p6_co2": "DUPLICATE_RELATION_RESOLVED_TO_LTW_2026_ST_BSW_PSR_A03_0020"
+    },
+    "unresolved_explicit_psr_duplicate_relation_count": 0
+  },
+  "cross_batch_dedup": {
+    "frontmatter_body_duplicate_co2": "RESOLVED_TO_A03_0020",
+    "known_current_parent_edge_queue": "RESOLVED_ZERO",
+    "a07_38_vs_42": "RESOLVED_ENUMERATED_SET_42",
+    "a04_a05_p37_boundary": "PASS_DISTINCT_EFFECT_OBJECTS",
+    "final_page_context": "PASS_CLASSIFIED_NO_NEW_EFFECT_OBJECTS",
+    "explicit_psr_duplicate_relation_queue": "RESOLVED_ZERO_KNOWN_EXPLICIT",
+    "semantic_cross_batch_dedup": "IN_PROGRESS_UNION_SET_STILL_REQUIRED",
+    "required_before_freeze": [
+      "enumerate every psr-a01-a06/a08-a09 and psr-front record as a concrete stable ID in one union manifest",
+      "materialize final role row for all 311 historical current IDs, including the 220 fach-terminal default rows",
+      "validate parent/child/SAME/supersedes graph is acyclic",
+      "perform union-wide semantic collision scan after complete ID materialization",
+      "prove 0 unresolved ABSENT/PARTIAL_PARENT/OVERMERGED/TRUNCATED/RESTORE_GAP records corpus-wide",
+      "prove every active final leaf has terminal fach status and required object-specific #241 layers"
+    ]
+  },
+  "completion_state": {
+    "ST_BSW_PRIMARY_SOURCE_PARITY_FULL_PROGRAM": "READY_FOR_UNION_MANIFEST_AND_FINAL_ROLE_MATRIX",
+    "ST_BSW_AUTHORITATIVE_DENOMINATOR": null,
+    "BSW_FULL_PROGRAM_FACH_COMPLETE": false,
+    "source_restore_overmerge_truncation_gaps": "NOT_YET_PROVEN_ZERO_CORPUS_WIDE",
+    "do_not_arithmetically_add_311_and_batch_counts": true
+  },
+  "provenance": {
+    "github_issue": "sustynats/wirkungsoekonomie.de#234",
+    "umbrella_issue": "sustynats/wirkungsoekonomie.de#241",
+    "official_source_lines_checked": "P30 828-830; P33 907-910",
+    "rules": [
+      "historical IDs and source text immutable",
+      "no fach judgement from templates, keywords, scores or party identity",
+      "no Recommendation synthesis",
+      "no DNS keyword mapping",
+      "source-bound restore before judgement"
+    ]
+  }
+}
