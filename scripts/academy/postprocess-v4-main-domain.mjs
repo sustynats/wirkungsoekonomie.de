@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 // CI retrigger anchor after deterministic audit-matrix projection; no fach change.
+// This user-authored touch forces the exact stable branch head through all required PR gates.
 const ROOT = process.cwd();
 const GENERATED_ROUTES = [
   "akademie.html",
