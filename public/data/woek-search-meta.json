@@ -5981,6 +5981,23 @@
       "sourceFile": "Warum Fakten nicht reichen - und was stattdessen gesellschaftliche Stabilität erzeugt",
       "searchBoost": 110
     },
+    "/begriffe/deutsche-nachhaltigkeitsstrategie/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-deutsche-nachhaltigkeitsstrategie",
+      "documentId": "deutsche-nachhaltigkeitsstrategie",
+      "relatedTerms": [
+        "sdg-plus",
+        "dns-indikator",
+        "referenzrahmen",
+        "gesetzesfolgenabschaetzung",
+        "nachhaltigkeitspruefung-bund",
+        "staatliche-nachhaltigkeitsarchitektur"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 110
+    },
     "/begriffe/dezentralisierung-von-macht/": {
       "documentType": "begriff",
       "status": "woek-praezisierungsbegriff",
@@ -6498,6 +6515,22 @@
       "sourceFile": "Warum Fakten nicht reichen - und was stattdessen gesellschaftliche Stabilität erzeugt",
       "searchBoost": 110
     },
+    "/begriffe/dns-indikator/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-dns-indikator",
+      "documentId": "dns-indikator",
+      "relatedTerms": [
+        "deutsche-nachhaltigkeitsstrategie",
+        "wirkungsindikator",
+        "zielbezug-vs-wirkung",
+        "baseline",
+        "wirkungsmonitoring"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 110
+    },
     "/begriffe/dnsh-do-no-significant-harm/": {
       "documentType": "begriff",
       "status": "approved",
@@ -6888,6 +6921,20 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Definitionsmaster WÖk v1",
+      "searchBoost": 110
+    },
+    "/begriffe/e-gesetzgebung/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-e-gesetzgebung",
+      "documentId": "egesetzgebung-egfa",
+      "relatedTerms": [
+        "enap",
+        "gesetzesfolgenabschaetzung",
+        "nachhaltigkeitspruefung-bund"
+      ],
+      "relatedDocuments": [],
       "searchBoost": 110
     },
     "/begriffe/eba-leitlinien-esg-risiken/": {
@@ -7424,6 +7471,22 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
+      "searchBoost": 110
+    },
+    "/begriffe/elektronische-nachhaltigkeitspruefung/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-elektronische-nachhaltigkeitspruefung",
+      "documentId": "enap",
+      "relatedTerms": [
+        "egesetzgebung-egfa",
+        "nachhaltigkeitspruefung-bund",
+        "gesetzesfolgenabschaetzung",
+        "deutsche-nachhaltigkeitsstrategie",
+        "state-gfa-enap-benchmark"
+      ],
+      "relatedDocuments": [],
       "searchBoost": 110
     },
     "/begriffe/elinor-ostrom/": {
@@ -9198,6 +9261,21 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "",
+      "searchBoost": 110
+    },
+    "/begriffe/ex-ante-folgenpruefung-und-reality-check/": {
+      "documentType": "begriff",
+      "status": "praezisierungsbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-ex-ante-folgenpruefung-und-reality-check",
+      "documentId": "ex-ante-folgenpruefung-reality-check",
+      "relatedTerms": [
+        "gesetzesfolgenabschaetzung",
+        "wirkungsmonitoring",
+        "wirkungsrueckkopplung",
+        "attributionsforschung"
+      ],
+      "relatedDocuments": [],
       "searchBoost": 110
     },
     "/begriffe/exergie/": {
@@ -11553,6 +11631,23 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
+      "searchBoost": 110
+    },
+    "/begriffe/gesetzesfolgenabschaetzung/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-gesetzesfolgenabschaetzung",
+      "documentId": "gesetzesfolgenabschaetzung",
+      "relatedTerms": [
+        "nachhaltigkeitspruefung-bund",
+        "enap",
+        "egesetzgebung-egfa",
+        "deutsche-nachhaltigkeitsstrategie",
+        "ex-ante-folgenpruefung-reality-check",
+        "staatliche-nachhaltigkeitsarchitektur"
+      ],
+      "relatedDocuments": [],
       "searchBoost": 110
     },
     "/begriffe/gesicherte-leistung/": {
@@ -20626,6 +20721,22 @@
       "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.3.md",
       "searchBoost": 110
     },
+    "/begriffe/nachhaltigkeitspruefung-des-bundes/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-nachhaltigkeitspruefung-des-bundes",
+      "documentId": "nachhaltigkeitspruefung-bund",
+      "relatedTerms": [
+        "gesetzesfolgenabschaetzung",
+        "enap",
+        "deutsche-nachhaltigkeitsstrategie",
+        "dns-indikator",
+        "zielbezug-vs-wirkung"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 110
+    },
     "/begriffe/nachtwaechterstaat/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -23361,6 +23472,21 @@
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
       "searchBoost": 110
     },
+    "/begriffe/parlamentarischer-beirat-fuer-nachhaltige-entwicklung-und-zukunftsfragen/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-parlamentarischer-beirat-fuer-nachhaltige-entwicklung-und-zukunftsfragen",
+      "documentId": "parlamentarischer-beirat-nachhaltige-entwicklung",
+      "relatedTerms": [
+        "staatliche-nachhaltigkeitsarchitektur",
+        "wirkungsrat",
+        "deutsche-nachhaltigkeitsstrategie",
+        "gesetzesfolgenabschaetzung"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 110
+    },
     "/begriffe/parteistaat/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -25278,6 +25404,26 @@
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
       "searchBoost": 110
+    },
+    "/begriffe/produkt-id/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "3.0",
+      "sectionId": "begriff-produkt-id",
+      "documentId": "produkt-id",
+      "relatedTerms": [
+        "woek-id",
+        "digitaler-produktpass",
+        "produktdaten",
+        "wirkungsnachweiskonto",
+        "wirkungsindikator",
+        "datenqualitaet"
+      ],
+      "relatedDocuments": [
+        "wirkungssteuer-wstg-3-0"
+      ],
+      "sourceFile": "Wirkungssteuer 3.0 und Wirkungssteuergesetz (WStG) 3.0 · Gesamtneufassung 2026",
+      "searchBoost": 140
     },
     "/begriffe/produkt-labels/": {
       "documentType": "begriff",
@@ -31299,6 +31445,40 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
+      "searchBoost": 110
+    },
+    "/begriffe/staatliche-nachhaltigkeitsarchitektur/": {
+      "documentType": "begriff",
+      "status": "praezisierungsbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-staatliche-nachhaltigkeitsarchitektur",
+      "documentId": "staatliche-nachhaltigkeitsarchitektur",
+      "relatedTerms": [
+        "deutsche-nachhaltigkeitsstrategie",
+        "gesetzesfolgenabschaetzung",
+        "nachhaltigkeitspruefung-bund",
+        "enap",
+        "egesetzgebung-egfa",
+        "dns-indikator",
+        "parlamentarischer-beirat-nachhaltige-entwicklung"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 110
+    },
+    "/begriffe/staatlicher-gfa/": {
+      "documentType": "begriff",
+      "status": "woek-instrument",
+      "version": "1.0",
+      "sectionId": "begriff-staatlicher-gfa",
+      "documentId": "state-gfa-enap-benchmark",
+      "relatedTerms": [
+        "gesetzesfolgenabschaetzung",
+        "nachhaltigkeitspruefung-bund",
+        "enap",
+        "zielbezug-vs-wirkung",
+        "wirkungsanalyse"
+      ],
+      "relatedDocuments": [],
       "searchBoost": 110
     },
     "/begriffe/staatsdelegitimierung/": {
@@ -38933,7 +39113,10 @@
         "informelles-wissen",
         "tacit-knowledge",
         "streisand-effekt",
-        "rebound-effekt"
+        "rebound-effekt",
+        "gesetzesfolgenabschaetzung",
+        "staatliche-nachhaltigkeitsarchitektur",
+        "attributionsforschung"
       ],
       "relatedDocuments": [
         "bibliothek/die-neue-ordnung-des-wohlstands/",
@@ -41052,6 +41235,27 @@
       "relatedDocuments": [],
       "sourceFile": "Definitionsmaster WÖk v1",
       "searchBoost": 110
+    },
+    "/begriffe/wirkungsnachweiskonto/": {
+      "documentType": "begriff",
+      "status": "führender-begriff",
+      "version": "3.0",
+      "sectionId": "begriff-wirkungsnachweiskonto",
+      "documentId": "wirkungsnachweiskonto",
+      "relatedTerms": [
+        "wirkungssteuer",
+        "wirkungssteuergesetz",
+        "wstg",
+        "woek-id",
+        "produkt-id",
+        "datenqualitaet",
+        "nichtkompensationsprinzip"
+      ],
+      "relatedDocuments": [
+        "wirkungssteuer-wstg-3-0"
+      ],
+      "sourceFile": "Wirkungssteuer 3.0 und Wirkungssteuergesetz (WStG) 3.0 · Gesamtneufassung 2026",
+      "searchBoost": 140
     },
     "/begriffe/wirkungsnetz/": {
       "documentType": "begriff",
@@ -43176,20 +43380,24 @@
     "/begriffe/wirkungssteuer/": {
       "documentType": "begriff",
       "status": "führender-begriff",
-      "version": "1.1",
+      "version": "3.0",
       "sectionId": "begriff-wirkungssteuer",
       "documentId": "wirkungssteuer",
       "relatedTerms": [
         "wstg",
+        "wirkungssteuergesetz",
+        "wirkungsnachweiskonto",
         "wustg",
         "wirkungsrueckkopplung",
+        "scorecard",
+        "nichtkompensationsprinzip",
+        "reverse-merit-order",
         "haushaltsneutralitaet",
         "energiearmut",
         "mobilitaetsarmut",
         "klimagerechtigkeit",
         "cbam",
         "hebelpunkt",
-        "wirkungssteuergesetz",
         "wirkungsumsatzsteuer",
         "karl-polanyi",
         "john-maynard-keynes",
@@ -43208,7 +43416,6 @@
         "wirkungsgutschrift",
         "wirkungslenkung",
         "finalscore",
-        "reverse-merit-order",
         "produktscorecard",
         "wirkungsregister",
         "wirkungsgrenze",
@@ -43225,7 +43432,6 @@
         "wirkungsindikator",
         "benchmark",
         "archetyp",
-        "nichtkompensationsprinzip",
         "wirkungsaudit",
         "wirkungsassurance",
         "datenqualitaet",
@@ -43250,8 +43456,9 @@
         "rechtsschutz"
       ],
       "relatedDocuments": [
-        "wstg-oktober-2025",
+        "wirkungssteuer-wstg-3-0",
         "technische-leitlinien-wustg",
+        "wstg-oktober-2025",
         "Führender Begriffsleitfaden der Wirkungsökonomie",
         "Working-Paper Wirkungssteuergesetz",
         "Technische Leitlinien WUStG",
@@ -43263,23 +43470,27 @@
         "Wirkungsrat-Konzept",
         "Leitbild für Mensch, Planet und Demokratie"
       ],
-      "sourceFile": "Glossar-Pack 007: Steuer- und Preislogik",
+      "sourceFile": "Wirkungssteuer 3.0 und Wirkungssteuergesetz (WStG) 3.0 · Gesamtneufassung 2026",
       "searchBoost": 140
     },
     "/begriffe/wirkungssteuergesetz/": {
       "documentType": "begriff",
       "status": "führender-begriff",
-      "version": "1.1",
+      "version": "3.0",
       "sectionId": "begriff-wirkungssteuergesetz",
       "documentId": "wirkungssteuergesetz",
       "relatedTerms": [
         "wirkungssteuer",
         "wstg",
+        "wirkungsnachweiskonto",
         "wustg",
+        "scorecard",
+        "woek-id",
+        "produkt-id",
+        "wirkungsrat",
         "wirkungsumsatzsteuer",
         "wirkungseinkommensteuer",
         "wirkungshaushalt",
-        "wirkungsrat",
         "wirkungsregister",
         "wirkungsaudit",
         "wirkungsassurance",
@@ -43304,7 +43515,6 @@
         "produktscorecard",
         "produktdaten",
         "digitaler-produktpass",
-        "woek-id",
         "wirkungsindikator",
         "benchmark",
         "archetyp",
@@ -43327,6 +43537,7 @@
         "fuenftes-p-planet"
       ],
       "relatedDocuments": [
+        "wirkungssteuer-wstg-3-0",
         "wstg-oktober-2025",
         "Führender Begriffsleitfaden der Wirkungsökonomie",
         "Working-Paper Wirkungssteuergesetz",
@@ -43339,7 +43550,7 @@
         "Wirkungsrat-Konzept",
         "Leitbild für Mensch, Planet und Demokratie"
       ],
-      "sourceFile": "Glossar-Pack 007: Steuer- und Preislogik",
+      "sourceFile": "Wirkungssteuer 3.0 und Wirkungssteuergesetz (WStG) 3.0 · Gesamtneufassung 2026",
       "searchBoost": 140
     },
     "/begriffe/wirkungssteuerkonto/": {
@@ -44765,19 +44976,23 @@
     "/begriffe/wstg/": {
       "documentType": "begriff",
       "status": "führender-begriff",
-      "version": "1.0",
+      "version": "3.0",
       "sectionId": "begriff-wstg",
       "documentId": "wstg",
       "relatedTerms": [
         "wirkungssteuergesetz",
         "wirkungssteuer",
+        "wirkungsnachweiskonto",
         "wustg",
+        "scorecard",
+        "wirkungsrat",
         "soziale-marktwirtschaft"
       ],
       "relatedDocuments": [
+        "wirkungssteuer-wstg-3-0",
         "wstg-oktober-2025"
       ],
-      "sourceFile": "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+      "sourceFile": "Wirkungssteuer 3.0 und Wirkungssteuergesetz (WStG) 3.0 · Gesamtneufassung 2026",
       "searchBoost": 140
     },
     "/begriffe/wu-wei-wirksames-nicht-erzwingen/": {
@@ -45059,6 +45274,22 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "WÖMS 2.0 und WÖMM 2.0",
+      "searchBoost": 110
+    },
+    "/begriffe/zielbezug-und-wirkung/": {
+      "documentType": "begriff",
+      "status": "praezisierungsbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-zielbezug-und-wirkung",
+      "documentId": "zielbezug-vs-wirkung",
+      "relatedTerms": [
+        "deutsche-nachhaltigkeitsstrategie",
+        "dns-indikator",
+        "wirkung",
+        "attributionsforschung",
+        "referenzrahmen"
+      ],
+      "relatedDocuments": [],
       "searchBoost": 110
     },
     "/begriffe/zielkonflikt/": {

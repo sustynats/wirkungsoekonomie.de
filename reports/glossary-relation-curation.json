@@ -1,6 +1,36 @@
 {
-  "generatedAt": "2026-08-13T22:14:40.860Z",
-  "unresolvedRelations": [],
+  "generatedAt": "2026-08-21T13:34:15.503Z",
+  "unresolvedRelations": [
+    {
+      "termId": "deutsche-nachhaltigkeitsstrategie",
+      "canonicalLabel": "Deutsche Nachhaltigkeitsstrategie (DNS)",
+      "unresolved": [
+        "sdg"
+      ]
+    },
+    {
+      "termId": "ex-ante-folgenpruefung-reality-check",
+      "canonicalLabel": "Ex-ante-Folgenprüfung und Reality Check",
+      "unresolved": [
+        "evidenz",
+        "wirkungslernen"
+      ]
+    },
+    {
+      "termId": "wirkungsblindheit",
+      "canonicalLabel": "Wirkungsblindheit",
+      "unresolved": [
+        "evidenz"
+      ]
+    },
+    {
+      "termId": "zielbezug-vs-wirkung",
+      "canonicalLabel": "Zielbezug und Wirkung",
+      "unresolved": [
+        "evidenz"
+      ]
+    }
+  ],
   "ambiguousAliasKeys": [
     "Accountability",
     "Algorithmische Verstärkung",
@@ -33,6 +63,7 @@
     "Engpasslogik",
     "Erwerbsarbeitslogik",
     "Europäisches Klimagesetz",
+    "Ex-ante-Folgenprüfung",
     "Externalitaeten",
     "Fake News",
     "Feindbildlogik",
@@ -45,6 +76,7 @@
     "Grundeinkommen",
     "HCS",
     "HCV",
+    "Handlung",
     "Haushaltsenergie",
     "Hebelpunkte",
     "Heizenergie",
@@ -58,6 +90,7 @@
     "High Conservation Value",
     "Homo oeconomicus",
     "Host-Verantwortung",
+    "Impact",
     "Impact Assessment",
     "Impact Controlling",
     "Impact Marketing",
@@ -107,11 +140,13 @@
     "Rebound-Effekt",
     "Recht auf Reparatur",
     "Rechtsschutz",
+    "Referenzrahmen",
     "Reframing",
     "Rekombination",
     "Rentenbeiträge",
     "Rentenfinanzierung",
     "Reparierbarkeit",
+    "Results Chain",
     "Right to Repair",
     "Risikoregister",
     "Roboteroekonomie",
@@ -143,6 +178,7 @@
     "Wiederaufbereitung",
     "Wiederverwendung",
     "Wirkung als Rechtsprinzip",
+    "Wirkungsanalyse",
     "Wirkungsbeschaffung",
     "Wirkungsbonus",
     "Wirkungsbudget",
@@ -155,7 +191,9 @@
     "Wirkungsguthaben",
     "Wirkungskapital",
     "Wirkungskennzahl",
+    "Wirkungskette",
     "Wirkungskommunikation",
+    "Wirkungsprofil",
     "Wirkungsprüfung",
     "Wirkungspunkte",
     "Wirkungsrat",
@@ -230,6 +268,8 @@
     "erwerbsarbeitslogik",
     "europaeisches klimagesetz",
     "europaeisches-klimagesetz",
+    "ex ante folgenpruefung",
+    "ex-ante-folgenpruefung",
     "externalitaeten",
     "externe Kosten",
     "externe kosten",
@@ -252,6 +292,7 @@
     "gruener wasserstoff",
     "gruener-wasserstoff",
     "grundeinkommen",
+    "handlung",
     "haushaltsenergie",
     "hcs",
     "hcv",
@@ -270,6 +311,7 @@
     "homo-oeconomicus",
     "host verantwortung",
     "host-verantwortung",
+    "impact",
     "impact assessment",
     "impact controlling",
     "impact marketing",
@@ -333,6 +375,9 @@
     "nichtkompensationsprinzip",
     "nichttriviale systeme",
     "nichttriviale-systeme",
+    "normativer Referenzrahmen",
+    "normativer referenzrahmen",
+    "normativer-referenzrahmen",
     "oef",
     "oeffentliche gueter",
     "oeffentliche wahrheit",
@@ -365,6 +410,7 @@
     "recht auf reparatur",
     "recht-auf-reparatur",
     "rechtsschutz",
+    "referenzrahmen",
     "reframing",
     "refurbishment",
     "regenerative Energien",
@@ -374,6 +420,8 @@
     "rentenbeitraege",
     "rentenfinanzierung",
     "reparierbarkeit",
+    "results chain",
+    "results-chain",
     "right to repair",
     "right-to-repair",
     "risikoregister",
@@ -425,6 +473,7 @@
     "wiederverwendung",
     "wirkung als rechtsprinzip",
     "wirkung-als-rechtsprinzip",
+    "wirkungsanalyse",
     "wirkungsbedingte stranded assets",
     "wirkungsbedingte-stranded-assets",
     "wirkungsbeschaffung",
@@ -440,8 +489,10 @@
     "wirkungshebel",
     "wirkungskapital",
     "wirkungskennzahl",
+    "wirkungskette",
     "wirkungskommunikation",
     "wirkungsoekonomie",
+    "wirkungsprofil",
     "wirkungspruefung",
     "wirkungspunkte",
     "wirkungsrat",

@@ -24,7 +24,10 @@
       "dataQuality": "amtlich",
       "summary": "Artikel 2 EUV benennt die Werte, auf denen die Europäische Union beruht, darunter Menschenwürde, Freiheit, Demokratie, Gleichheit, Rechtsstaatlichkeit und Menschenrechte.",
       "einordnung": "Amtliche Primärquelle für die im Glossar wiedergegebenen Unionswerte. Der Artikel ist ein verfassungsrechtlicher Orientierungsrahmen, keine WÖk-Kennzahl und keine automatische Rechtsfolge für eine einzelne Wirkungsbewertung.",
-      "impactFields": ["Mensch", "Demokratie"],
+      "impactFields": [
+        "Mensch",
+        "Demokratie"
+      ],
       "sdg": "SDG 16",
       "domain": "eur-lex.europa.eu"
     },
@@ -44,7 +47,10 @@
       "dataQuality": "amtlich",
       "summary": "Artikel 191 AEUV enthält Ziele und Grundsätze der Umweltpolitik der Union, darunter Vorsorge, Vorbeugung, Bekämpfung von Umweltbeeinträchtigungen an ihrem Ursprung und das Verursacherprinzip.",
       "einordnung": "Amtliche Primärquelle für die Rechtsbegriffe Vorsorge-, Präventions- und Verursacherprinzip. Sie begründet keine frei wählbare Geldformel: Bilanzgrenzen, Kausalität, Verhältnismäßigkeit und die jeweils geltenden Fachnormen bleiben getrennt zu prüfen.",
-      "impactFields": ["Planet", "Mensch"],
+      "impactFields": [
+        "Planet",
+        "Mensch"
+      ],
       "sdg": "SDG 3; SDG 12; SDG 13; SDG 15",
       "domain": "eur-lex.europa.eu"
     },
@@ -64,7 +70,10 @@
       "dataQuality": "amtlich",
       "summary": "Die Richtlinie (EU) 2024/1069 schützt Personen, die sich öffentlich beteiligen, in Zivilsachen mit grenzüberschreitendem Bezug vor offensichtlich unbegründeten oder missbräuchlichen Gerichtsverfahren.",
       "einordnung": "Amtliche Primärquelle für den begrenzten Anwendungsbereich der Anti-SLAPP-Richtlinie. Sie ist kein allgemeiner Schutzartikel für jede Kritik oder jedes Verfahren, sondern enthält verfahrensrechtliche Schutzmechanismen für ihren geregelten Bereich.",
-      "impactFields": ["Demokratie", "Mensch"],
+      "impactFields": [
+        "Demokratie",
+        "Mensch"
+      ],
       "sdg": "SDG 16",
       "domain": "eur-lex.europa.eu"
     },
@@ -84,7 +93,12 @@
       "dataQuality": "amtlich",
       "summary": "Artikel 20a GG verpflichtet den Staat, die natürlichen Lebensgrundlagen und die Tiere auch in Verantwortung für künftige Generationen im Rahmen der verfassungsmäßigen Ordnung zu schützen.",
       "einordnung": "Amtliche Primärquelle für den Staatszielauftrag aus Art. 20a GG. Er steht neben Grundrechten, Demokratie, Rechtsstaatlichkeit und Verhältnismäßigkeit; er rechtfertigt keine pauschale Personenbewertung oder automatische WÖk-Steuerung.",
-      "impactFields": ["Planet", "Mensch", "Tierschutz", "Demokratie"],
+      "impactFields": [
+        "Planet",
+        "Mensch",
+        "Tierschutz",
+        "Demokratie"
+      ],
       "sdg": "SDG 13; SDG 15; SDG 16",
       "domain": "www.gesetze-im-internet.de"
     },
@@ -104,7 +118,11 @@
       "dataQuality": "amtlich",
       "summary": "§ 43 GGO verlangt für Gesetzesbegründungen unter anderem Zielsetzung und Notwendigkeit, Sachverhalt und Erkenntnisquellen sowie andere Lösungsmöglichkeiten. § 44 definiert Gesetzesfolgen als wesentliche Auswirkungen einschließlich beabsichtigter Wirkungen und unbeabsichtigter Nebenwirkungen, verlangt den Nachhaltigkeitsbezug und enthält Vorgaben zur späteren Überprüfung.",
       "einordnung": "Kanonische Verfahrensquelle für die staatliche Gesetzesfolgenabschätzung des Bundes. Sie belegt, dass Folgen-, Alternativen- und spätere Überprüfungslogik bereits institutionell angelegt sind. Die WÖk ergänzt diese Architektur objektspezifisch und systemisch; sie ersetzt die GFA nicht.",
-      "impactFields": ["Mensch", "Planet", "Demokratie"],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
       "sdg": "SDG 16; Agenda 2030 / DNS",
       "domain": "www.verwaltungsvorschriften-im-internet.de"
     },
@@ -124,7 +142,11 @@
       "dataQuality": "amtlich",
       "summary": "Das BMJV erläutert die seit 2009 in der GGO verankerte Nachhaltigkeitsprüfung, die Prüfung betroffener SDGs und Zielvorgaben sowie von Zielen und Indikatoren der Deutschen Nachhaltigkeitsstrategie und das webbasierte Werkzeug eNAP.",
       "einordnung": "Amtliche Primärquelle für die praktische Einordnung von Nachhaltigkeitsprüfung und eNAP in der Rechtsetzung. Zielbezug oder eNAP-Nutzung ist kein Kausalitätsnachweis für die tatsächliche Wirkung eines Vorhabens.",
-      "impactFields": ["Mensch", "Planet", "Demokratie"],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
       "sdg": "Agenda 2030 / DNS",
       "domain": "www.bmj.de"
     },
@@ -144,14 +166,18 @@
       "dataQuality": "amtlich",
       "summary": "Die Bundesregierung beschreibt die DNS als Managementsystem mit Institutionen, Prinzipien, Zielen und Indikatoren sowie Monitoring. Die Seite nennt die Nachhaltigkeitsprüfung bei Gesetzes- und Verordnungsentwürfen seit 2009 und eNAP seit 2018.",
       "einordnung": "Referenz für Governance, Zielsystem und Monitoring der DNS. Die DNS-Indikatoren liefern Ziel-, Baseline- und Monitoringinformation, aber nicht automatisch Attribution für einzelne Maßnahmen.",
-      "impactFields": ["Mensch", "Planet", "Demokratie"],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
       "sdg": "Alle 17 SDGs / DNS",
       "domain": "www.bundesregierung.de"
     },
     {
       "code": "WÖK-Q-9032",
       "title": "Deutsche Nachhaltigkeitsstrategie – Weiterentwicklung 2025",
-      "url": "https://www.bundesregierung.de/breg-de/bundesregierung/bundeskanzleramt/deutsche-nachhaltigkeitsstrategie-2025-2332540",
+      "url": "https://www.bundesregierung.de/breg-de/aktuelles/deutsche-nachhaltigkeitsstrategie-2025-2332540",
       "doi": null,
       "author": "Bundesregierung",
       "year": 2025,
@@ -164,7 +190,11 @@
       "dataQuality": "amtlich",
       "summary": "Die Weiterentwicklung 2025 operationalisiert die Agenda 2030 für Deutschland, fokussiert sechs Transformationsbereiche und beschreibt Governance- und Instrumentenfelder der deutschen Nachhaltigkeitspolitik.",
       "einordnung": "Kanonische nationale Ziel- und Referenzebene für WÖk-Analysen mit Deutschlandbezug. DNS-Zielzuordnung ist Referenz- und Monitoringinformation, kein Kausalitätsbeweis.",
-      "impactFields": ["Mensch", "Planet", "Demokratie"],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
       "sdg": "Alle 17 SDGs / DNS",
       "domain": "www.bundesregierung.de"
     },
@@ -184,7 +214,11 @@
       "dataQuality": "amtlich",
       "summary": "Destatis dokumentiert und bewertet die Entwicklung der Indikatoren der Deutschen Nachhaltigkeitsstrategie und veröffentlicht regelmäßig Indikatorenberichte.",
       "einordnung": "Primärquelle für DNS-Baselines, Zielstände und Monitoring. Ein Indikator beschreibt einen Zustand oder Trend; er ist nicht mit der Wirkung oder der Zurechnung einer einzelnen politischen Maßnahme gleichzusetzen.",
-      "impactFields": ["Mensch", "Planet", "Demokratie"],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
       "sdg": "Alle 17 SDGs / DNS",
       "domain": "www.destatis.de"
     },
@@ -204,7 +238,11 @@
       "dataQuality": "amtlich",
       "summary": "Die E-Gesetzgebungsplattform stellt die elektronische Gesetzesfolgenabschätzung bereit; die elektronische Nachhaltigkeitsprüfung eNAP ist in diese digitale Arbeitsumgebung eingebettet.",
       "einordnung": "Tool- und Verfahrensreferenz. Eine öffentlich sichtbare Nachhaltigkeitsdarstellung oder GFA ist nicht automatisch ein öffentlich nachgewiesener, wort- oder byteidentischer eNAP-Export.",
-      "impactFields": ["Demokratie", "Mensch", "Planet"],
+      "impactFields": [
+        "Demokratie",
+        "Mensch",
+        "Planet"
+      ],
       "sdg": "Agenda 2030 / DNS",
       "domain": "plattform.egesetzgebung.bund.de"
     },
@@ -224,7 +262,11 @@
       "dataQuality": "amtlich",
       "summary": "Die Beteiligungsfassung vom 16. Juli 2026 entwickelt die deutsche Nachhaltigkeitspolitik in Richtung eines handlungs- und wirkungsorientierteren Aktionsplans mit ressortübergreifenden Missionen weiter.",
       "einordnung": "Aktueller Weiterentwicklungs- und Governance-Kontext. Die Beteiligungsfassung ist als Beteiligungsstand zu kennzeichnen und nicht als bereits endgültig beschlossener Gesamtplan auszugeben.",
-      "impactFields": ["Mensch", "Planet", "Demokratie"],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
       "sdg": "Agenda 2030 / DNS",
       "domain": "www.bundesregierung.de"
     }
