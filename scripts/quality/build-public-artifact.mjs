@@ -27,12 +27,14 @@ const excludedTopLevelDirs = new Set([
   "manifest",
   "node_modules",
   "outputs",
+  "ops",
   "public",
   "reports",
   "scripts",
   "source-assets",
   "src",
   "templates",
+  "tests",
   "tiktok_archive",
   "tiktok_library",
   "tools",
@@ -82,6 +84,13 @@ const legacyRedirectFiles = [
 ];
 const LEGACY_TOOLS_ROUTE = "tools/index.html";
 const CANONICAL_TOOLS_ROUTE = "/werkzeuge/";
+const excludedArtifactRelativeFiles = new Set([
+  "api/kwi.py",
+  "api/v1/production.json",
+  "assets/data/production-workflow-manifest.json",
+  "assets/data/public-release-assets.json",
+  "assets/data/term-registry.json",
+]);
 
 function removeArtifact() {
   fs.rmSync(artifactDir, { recursive: true, force: true });
@@ -166,7 +175,14 @@ function copyEntry(entry) {
 
   if (entry.isDirectory()) {
     if (excludedTopLevelDirs.has(entry.name)) return false;
-    fs.cpSync(source, destination, { recursive: true, preserveTimestamps: true });
+    fs.cpSync(source, destination, {
+      recursive: true,
+      preserveTimestamps: true,
+      filter: (candidate) => {
+        const relative = path.relative(root, candidate).split(path.sep).join("/");
+        return !excludedArtifactRelativeFiles.has(relative);
+      },
+    });
     return true;
   }
 

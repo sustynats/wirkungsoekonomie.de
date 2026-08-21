@@ -98,6 +98,14 @@ def blocks(markdown: str):
             yield ("li", re.sub(r"^[-*]\s+", "", line).strip())
             index += 1
             continue
+        ordered = re.match(r"^(\d+)\.\s+(.+)$", line)
+        if ordered:
+            if current:
+                yield ("paragraph", " ".join(current).strip())
+                current = []
+            yield ("oli", (int(ordered.group(1)), ordered.group(2).strip()))
+            index += 1
+            continue
         current.append(line.strip())
         index += 1
     if current:
@@ -124,6 +132,9 @@ def build_html(items) -> str:
             output.append(f"<blockquote><p>{inline(value)}</p></blockquote>")
         elif kind == "li":
             output.append(f"<ul><li>{inline(value)}</li></ul>")
+        elif kind == "oli":
+            number, text = value
+            output.append(f'<ol start="{number}"><li>{inline(text)}</li></ol>')
         elif kind == "table":
             headers, rows = value
             head = "".join(f"<th scope=\"col\">{inline(cell)}</th>" for cell in headers)
@@ -154,7 +165,7 @@ def build_pdf_from_docx(soffice: Path) -> None:
     with tempfile.TemporaryDirectory(prefix="woek-publication-docx-") as temp:
         temp_path = Path(temp)
         subprocess.run(
-            [str(soffice), "--headless", "--convert-to", "pdf", "--outdir", str(temp_path), str(DOCX_SOURCE)],
+            [str(soffice), f"-env:UserInstallation={temp_path.as_uri()}/profile", "--headless", "--convert-to", "pdf", "--outdir", str(temp_path), str(DOCX_SOURCE)],
             check=True,
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
@@ -184,7 +195,7 @@ def build_pdf(items) -> None:
         temp_path = Path(temp)
         html_path = temp_path / "Nachhaltigkeit-Systemarchitektur-v1.1.html"
         html_path.write_text(document, encoding="utf-8")
-        subprocess.run([str(soffice), "--headless", "--convert-to", "pdf", "--outdir", str(temp_path), str(html_path)], check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        subprocess.run([str(soffice), f"-env:UserInstallation={temp_path.as_uri()}/profile", "--headless", "--convert-to", "pdf", "--outdir", str(temp_path), str(html_path)], check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
         exported = temp_path / "Nachhaltigkeit-Systemarchitektur-v1.1.pdf"
         if not exported.exists():
             raise RuntimeError("LibreOffice hat keine PDF-Datei erzeugt.")

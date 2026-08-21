@@ -5,8 +5,8 @@ import crypto from "node:crypto";
 export const SOURCE_VERSION = "2026.0";
 export const IMPORT_VERSION = "2026.1-import";
 export const LIVE_REFERENCE_VERSION = "2026.2-live-reference";
-export const TERMINOLOGY_BASE = "WOeK_Begriffsleitfaden_fuehrend_v1.0.md";
-export const TERMINOLOGY_BASE_DATE = "2026-05-21";
+export const TERMINOLOGY_BASE = "WOeK_Begriffsleitfaden_fuehrend_v1.6.md";
+export const TERMINOLOGY_BASE_DATE = "2026-08-21";
 
 const htmlRoots = ["referenz", "dokumente"];
 
@@ -33,31 +33,31 @@ const priorityChapters = new Map([
   [10, {
     cluster: "Begriffssystem",
     terms: ["Wirkung", "positive Netto-Wirkung", "Wirkungspotenzial"],
-    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.6.md",
     text: "Wirkung ist in der Wirkungsökonomie neutral und relational: die tatsächliche Veränderung von Zuständen. Wenn eine Zielgröße gemeint ist, lautet sie positive Netto-Wirkung für Mensch, Planet und Demokratie. Eine Absicht, ein Output, ein Bericht oder ein Image ist noch keine Wirkung."
   }],
   [11, {
     cluster: "Begriffssystem",
     terms: ["Wirkungspotenzial", "Wirkstoff", "Wirkmechanismus", "Wirkungspfad"],
-    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.6.md",
     text: "Wirkungspotenzial bezeichnet die Möglichkeit, dass Wirkung eintreten kann. Es ist noch keine eingetretene Wirkung. Der Begriff Wirkstoff wird nur als didaktische Analogie verwendet: Ein gesellschaftlicher Wirkstoff kann etwas auslösen, muss aber über Wirkmechanismus, Wirkungspfad, Kontext, Dosis, Nebenwirkung und Wechselwirkung geprüft werden."
   }],
   [12, {
     cluster: "Begriffssystem",
     terms: ["Wirkungsrückkopplung", "Wirkungslenkung", "Wirkungsrisiko"],
-    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.6.md",
     text: "Wirkungslenkung und Wirkungsrückkopplung sind verschiedene Dinge. Wirkungslenkung legt Richtung, Ziele, Schutzgrenzen, Prioritäten und Instrumentregeln fest. Wirkungsrückkopplung führt beobachtete Zustandsveränderungen, Evidenz und Unsicherheit in spätere Entscheidungen zurück. Erst die Rückkopplung zeigt, ob die Lenkung beibehalten, verändert oder beendet werden muss."
   }],
   [13, {
     cluster: "Begriffssystem",
     terms: ["Wirkungsträger", "Wirkungsempfänger", "Wirkungsraum", "Resonanzraum"],
-    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.6.md",
     text: "Wirkungsraum, Resonanzraum, Wirkungsträger und Wirkungsempfänger werden getrennt geführt. Ein Wirkungsraum ist der Bereich, in dem Zustände verändert werden; ein Resonanzraum ist ein sozialer oder kultureller Raum, in dem Deutungen, Zugehörigkeit und Reaktionen entstehen können."
   }],
   [16, {
     cluster: "Begriffssystem",
     terms: ["Wirkungsarchitektur", "Wirkungsgrenze", "Wirkungswahrheit", "Wirkungsnetz"],
-    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.6.md",
     text: "Wirkungsarchitektur meint nicht eine Website oder ein Diagramm, sondern das Gesamtsystem aus Daten, Regeln, Institutionen, Anreizen, Preisen, Steuern, Governance, Kontrolle, Lernen und Rückkopplung. Wirkungswahrheit meint Wirkungsnähe und Transparenz über Folgen, kein Wahrheitsmonopol."
   }],
   [20, {
@@ -69,31 +69,31 @@ const priorityChapters = new Map([
   [22, {
     cluster: "Begriffssystem",
     terms: ["Wirkungslenkung", "Wirkungsrückkopplung"],
-    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.6.md",
     text: "Wirkungslenkung beschreibt die bewusste Ausrichtung von Anreizen und Entscheidungen: Ziele, Schutzgrenzen, Prioritäten und Instrumente. Wirkungsrückkopplung ist der Lernmechanismus: Beobachtungen über tatsächliche Zustandsveränderungen, Datenqualität und Unsicherheit fließen in die nächste Entscheidung ein. Eine Preis-, Steuer- oder Förderregel kann ein Instrument der Lenkung sein; sie ist nicht mit der Rückkopplung selbst gleichzusetzen."
   }],
   [23, {
     cluster: "Begriffssystem",
     terms: ["Wirkungsrisiko", "Wirkungsresilienz", "Resilienz"],
-    source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md",
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.6.md",
     text: "Wirkungsresilienz wird als positive, normativ gebundene Resilienz verstanden: Ein System bleibt unter Stress handlungsfähig, lernt und stärkt tragende Lebens-, Sozial- und Demokratiefunktionen. Robustheit allein reicht nicht; auch destruktive Systeme können robust sein."
   }],
   [30, {
     cluster: "Mess- und Bewertungslogik",
     terms: ["Wirkungsbewertung", "Datenqualität", "Wirkungsindikator"],
-    source: "Technische Leitlinien WUStG / WÖk-Masterregister v1.4",
+    source: "Technische Leitlinien WUStG / WÖk-Masterregister v1.5",
     text: "Die Messlogik der lebenden Referenz unterscheidet Berichtsdaten, Steuerungsdaten und Wirkungsdaten. Daten werden erst dann wirkungsökonomisch relevant, wenn sie auf Zustandsveränderungen, Datenqualität, Systemgrenzen und Rückkopplung bezogen werden."
   }],
   [31, {
     cluster: "Mess- und Bewertungslogik",
     terms: ["WÖk-ID", "Wirkungsindikator", "WÖk Master Items"],
-    source: "WOeK_Masterregister_v1.4_FINAL_2026-08-16.xlsx",
+    source: "WOeK_Masterregister_v1.5_2026-08-21.xlsx",
     text: "Die WÖk-ID ist ein technischer und fachlicher Anker für Indikatoren, SDG/SDG+-Zuordnung, Regelzuweisung, Systemgrenze, Datenqualität, Assurance und Scorecards. Sie kennzeichnet Gegenstände, Prozesse oder Indikatoren - keine Menschen und keine persönliche Wertigkeit. Leere Eingaben bleiben unbewertet; eine ID ersetzt weder eine Wirkungsgrenze noch eine begründete Bewertung."
   }],
   [32, {
     cluster: "Mess- und Bewertungslogik",
     terms: ["Scorecard", "Benchmark", "Archetyp", "FinalScore"],
-    source: "Technische Leitlinien WUStG / WÖk-Masterregister v1.4",
+    source: "Technische Leitlinien WUStG / WÖk-Masterregister v1.5",
     text: "Scorecards bleiben Bewertungsinstrumente, nicht die Wirkung selbst. Benchmarks, Regeln und FinalScores müssen mit Datenqualität, Wirkungsgrenzen, Assurance und Nichtkompensation verbunden werden. Nicht aktiv validierte Benchmarks werden nicht als aktive Bewertungsgrundlage ausgegeben."
   }],
   [33, {
@@ -141,7 +141,7 @@ const priorityChapters = new Map([
   [50, {
     cluster: "Produkt- und Lieferkettenlogik",
     terms: ["Scorecard", "Reverse Merit Order", "Datenqualität"],
-    source: "Technische Leitlinien WUStG / WÖk-Masterregister v1.4",
+    source: "Technische Leitlinien WUStG / WÖk-Masterregister v1.5",
     text: "Produktscorecards werden mit WÖk-IDs, Datenqualität, Benchmarkstatus, Assurance und Reverse Merit Order verbunden. Sie sind Beispiel- und Steuerungsinstrumente, keine endgültige Rechtsanwendung und keine automatische Entscheidung ohne geprüfte Datenbasis."
   }],
   [51, {
@@ -183,7 +183,7 @@ const priorityChapters = new Map([
   [85, {
     cluster: "Produkt- und Lieferkettenlogik",
     terms: ["Digitaler Produktpass", "DPP", "WÖk-ID", "NACE"],
-    source: "WP_Produkte / technische Leitlinien / WÖk-Masterregister v1.4",
+    source: "WP_Produkte / technische Leitlinien / WÖk-Masterregister v1.5",
     text: "Der digitale Produktpass wird als technische Brücke zwischen Produktdaten, WÖk-ID, Scorecards, Lieferkette und Rückkopplung verstanden. Er ersetzt keine Bewertung, sondern transportiert prüfbare Daten und Versionen."
   }],
   [104, {
@@ -508,7 +508,7 @@ Diese Dokumente werden als mögliche Aktualisierungsquellen der lebenden Referen
 - WStG_Oktober2025
 - Technische_Leitlinien_WUStG_Vollversion_Extended_v2
 - Beispiel_Apfel_Wirkungssteuer_Bonusregel
-- WOeK_Masterregister_v1.4_FINAL_2026-08-16.xlsx
+- WOeK_Masterregister_v1.5_2026-08-21.xlsx
 - WOeK_Master_Items_final_v1.2.pdf (historische Fassung)
 - Wirkungsrat_Konzept
 - Whitepaper-T-SROI
@@ -765,7 +765,7 @@ export function buildCrossDocumentFindings() {
     ["Wirkungssteuer und WStG 3.0", "/bibliothek/wirkungssteuer-wstg-3-0/"],
     ["Technische Leitlinien WUStG", "/dokumente/technische-leitlinien-wustg-v2/"],
     ["Apfelbeispiel", "/dokumente/beispiel-apfel-wirkungssteuer-bonusregel/"],
-    ["WÖk-Masterregister v1.4", "/bibliothek/woek-master-items-register/"],
+    ["WÖk-Masterregister v1.5", "/bibliothek/woek-master-items-register/"],
     ["Wirkungsrat", "/dokumente/wirkungsrat-konzept/"],
     ["Whitepaper T-SROI", "/dokumente/whitepaper-t-sroi/"],
     ["Lieferkette", "/dokumente/wirkungsoekonomie-in-der-lieferkette/"],
@@ -955,7 +955,7 @@ export function checkSourceHierarchy() {
   const errors = [];
   if (!fs.existsSync("docs/LIVE_REFERENCE_SOURCE_HIERARCHY.md")) errors.push("Missing LIVE_REFERENCE_SOURCE_HIERARCHY.md");
   const hierarchy = fs.existsSync("docs/LIVE_REFERENCE_SOURCE_HIERARCHY.md") ? fs.readFileSync("docs/LIVE_REFERENCE_SOURCE_HIERARCHY.md", "utf8") : "";
-  for (const needle of ["Ebene 1", "Ebene 2", "Ebene 3", "Ebene 4", TERMINOLOGY_BASE, "WOeK_Masterregister_v1.4_FINAL_2026-08-16.xlsx"]) {
+  for (const needle of ["Ebene 1", "Ebene 2", "Ebene 3", "Ebene 4", TERMINOLOGY_BASE, "WOeK_Masterregister_v1.5_2026-08-21.xlsx"]) {
     if (!hierarchy.includes(needle)) errors.push(`Source hierarchy missing ${needle}`);
   }
   return errors;

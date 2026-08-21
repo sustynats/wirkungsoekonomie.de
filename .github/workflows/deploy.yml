@@ -1,4 +1,7 @@
-name: Deploy static site
+name: Deploy static site.
+
+env:
+  SOURCE_DATE_EPOCH: '1787270400'
 
 on:
   push:
@@ -13,7 +16,7 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -31,6 +34,18 @@ jobs:
           python-version: "3.12"
       - name: Install Python build dependencies
         run: python -m pip install --upgrade pip openpyxl pymupdf pypdf python-docx reportlab
+      - name: Verify committed #253 Wirkungswissenschaften generator source
+        run: |
+          python tools/apply_state_sustainability_wiwi_generator.py
+          git diff --exit-code -- scripts/wirkungswissenschaften/build-wirkungswissenschaften-hub.mjs
+      - name: Verify #253 state sustainability architecture
+        run: |
+          python tools/audit_state_sustainability_architecture_fast.py --root . --output content/audits/state-sustainability-architecture-url-matrix.json --markdown content/audits/state-sustainability-architecture-url-matrix.md
+          python tools/audit_state_sustainability_support_files.py --root . --matrix content/audits/state-sustainability-architecture-url-matrix.json --markdown content/audits/state-sustainability-architecture-url-matrix.md
+          python tools/finalize_state_sustainability_matrix.py --root . --matrix content/audits/state-sustainability-architecture-url-matrix.json --markdown content/audits/state-sustainability-architecture-url-matrix.md
+          python tools/check_state_sustainability_architecture.py
+          python tools/check_state_sustainability_wiwi_scope.py
+          git diff --exit-code -- content/audits/state-sustainability-architecture-url-matrix.json content/audits/state-sustainability-architecture-url-matrix.md
       - name: Build static reference data and search
         run: WOEK_PDF_BUILD_MODE=verify npm run build
       - name: Build Parliament and Institute information pages
@@ -46,8 +61,53 @@ jobs:
         with:
           path: _site
 
-  deploy:
+  release-assets:
     needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Publish immutable v1.5/v1.6 release assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          release_tag='woek-public-assets-v2'
+          if ! gh release view "$release_tag" >/dev/null 2>&1; then
+            gh release create "$release_tag" --target "$GITHUB_SHA" --title 'WÖk public release assets v2' --notes 'Versionierte öffentliche Download-Artefakte der Wirkungsökonomie.'
+          fi
+
+          publish_immutable_asset() {
+            local source_path="$1"
+            local asset_name="$2"
+            local verify_dir="$RUNNER_TEMP/woek-release-assets/$asset_name"
+            test -s "$source_path"
+            if gh release view "$release_tag" --json assets --jq '.assets[].name' | grep -Fxq "$asset_name"; then
+              mkdir -p "$verify_dir"
+              gh release download "$release_tag" --pattern "$asset_name" --dir "$verify_dir"
+              cmp --silent "$source_path" "$verify_dir/$asset_name" || {
+                echo "Release asset $asset_name exists with different bytes; refusing to overwrite an immutable version."
+                exit 1
+              }
+              echo "Verified existing immutable release asset: $asset_name"
+            else
+              gh release upload "$release_tag" "$source_path#$asset_name"
+              echo "Published immutable release asset: $asset_name"
+            fi
+          }
+
+          publish_immutable_asset \
+            'assets/downloads/woek-register/v1.5/WOeK_Masterregister_v1.5_2026-08-21.xlsx' \
+            'WOeK_Masterregister_v1.5_2026-08-21.xlsx'
+          publish_immutable_asset \
+            'public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.6.pdf' \
+            'WOeK_Begriffsleitfaden_fuehrend_v1.6.pdf'
+
+  deploy:
+    needs: [build, release-assets]
     runs-on: ubuntu-latest
     environment:
       name: github-pages

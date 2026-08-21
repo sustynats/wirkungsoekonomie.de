@@ -1,0 +1,130 @@
+name: State sustainability architecture audit
+
+env:
+  SOURCE_DATE_EPOCH: '1787270400'
+
+on:
+  pull_request:
+    paths:
+      - '**/*.html'
+      - 'content/**'
+      - 'scripts/**'
+      - 'tools/apply_state_sustainability_architecture.py'
+      - 'tools/apply_state_sustainability_sources.py'
+      - 'tools/apply_state_sustainability_precision.py'
+      - 'tools/apply_state_sustainability_public_precision.py'
+      - 'tools/apply_state_sustainability_wiwi_generator.py'
+      - 'tools/apply_state_sustainability_wiwi_scope.py'
+      - 'tools/apply_state_sustainability_build_integration.py'
+      - 'tools/audit_state_sustainability_architecture.py'
+      - 'tools/audit_state_sustainability_architecture_fast.py'
+      - 'tools/audit_state_sustainability_support_files.py'
+      - 'tools/finalize_state_sustainability_matrix.py'
+      - 'tools/check_state_sustainability_architecture.py'
+      - 'tools/check_state_sustainability_wiwi_scope.py'
+      - '.github/workflows/deploy.yml'
+      - 'sitemap.xml'
+      - 'assets/search/**'
+      - 'public/data/woek-search-meta.json'
+      - 'llms.txt'
+      - '.github/workflows/state-sustainability-audit.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: state-sustainability-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout PR head
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref || github.ref }}
+          fetch-depth: 100
+      - name: Fetch exact main baseline for historical-diff guards
+        run: git fetch origin main:refs/remotes/origin/main --depth=1
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Apply approved #253 deterministic projections
+        run: |
+          python tools/apply_state_sustainability_architecture.py
+          python tools/apply_state_sustainability_wiwi_generator.py
+          python tools/apply_state_sustainability_wiwi_scope.py
+          python tools/apply_state_sustainability_sources.py
+          python tools/apply_state_sustainability_precision.py
+          python tools/apply_state_sustainability_public_precision.py
+          python tools/apply_state_sustainability_build_integration.py
+          node scripts/glossary/build-glossary-registry.mjs
+          node scripts/glossary/build-glossary-pages.mjs
+          node scripts/glossary/build-glossary-lookup.mjs
+          node scripts/quality/sync-sitemap-indexability.mjs
+          npm run build:search
+          npm run taxonomy:build
+      - name: Generate committed exhaustive #253 URL/file matrix
+        run: |
+          python tools/audit_state_sustainability_architecture_fast.py --root . --output content/audits/state-sustainability-architecture-url-matrix.json --markdown content/audits/state-sustainability-architecture-url-matrix.md
+          python tools/audit_state_sustainability_support_files.py --root . --matrix content/audits/state-sustainability-architecture-url-matrix.json --markdown content/audits/state-sustainability-architecture-url-matrix.md
+          python tools/finalize_state_sustainability_matrix.py --root . --matrix content/audits/state-sustainability-architecture-url-matrix.json --markdown content/audits/state-sustainability-architecture-url-matrix.md
+      - name: Run hard #253 semantic gates
+        run: |
+          python tools/check_state_sustainability_architecture.py
+          python tools/check_state_sustainability_wiwi_scope.py
+      - name: Commit deterministic projections and audit matrix when needed
+        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git diff --quiet; then
+            echo 'All approved #253 projections and the release-blocking matrix are already committed.'
+          else
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add -A
+            git reset -- .github/workflows/ || true
+            if git diff --cached --quiet; then
+              echo 'Only workflow-file drift remains; do not self-commit it.'
+            else
+              git commit -m 'fix: materialize approved #253 projections and committed audit matrix'
+              git pull --rebase origin ${{ github.event.pull_request.head.ref }}
+              git push origin HEAD:${{ github.event.pull_request.head.ref }}
+            fi
+          fi
+      - name: Verify projections and committed matrix are idempotent
+        run: |
+          python tools/apply_state_sustainability_architecture.py
+          python tools/apply_state_sustainability_wiwi_generator.py
+          python tools/apply_state_sustainability_wiwi_scope.py
+          python tools/apply_state_sustainability_sources.py
+          python tools/apply_state_sustainability_precision.py
+          python tools/apply_state_sustainability_public_precision.py
+          python tools/apply_state_sustainability_build_integration.py
+          node scripts/glossary/build-glossary-registry.mjs
+          node scripts/glossary/build-glossary-pages.mjs
+          node scripts/glossary/build-glossary-lookup.mjs
+          node scripts/quality/sync-sitemap-indexability.mjs
+          npm run build:search
+          npm run taxonomy:build
+          python tools/audit_state_sustainability_architecture_fast.py --root . --output content/audits/state-sustainability-architecture-url-matrix.json --markdown content/audits/state-sustainability-architecture-url-matrix.md
+          python tools/audit_state_sustainability_support_files.py --root . --matrix content/audits/state-sustainability-architecture-url-matrix.json --markdown content/audits/state-sustainability-architecture-url-matrix.md
+          python tools/finalize_state_sustainability_matrix.py --root . --matrix content/audits/state-sustainability-architecture-url-matrix.json --markdown content/audits/state-sustainability-architecture-url-matrix.md
+          python tools/check_state_sustainability_architecture.py
+          python tools/check_state_sustainability_wiwi_scope.py
+          git diff --exit-code
+      - name: Upload #253 audit matrix
+        uses: actions/upload-artifact@v4
+        with:
+          name: state-sustainability-architecture-audit
+          path: |
+            content/audits/state-sustainability-architecture-url-matrix.json
+            content/audits/state-sustainability-architecture-url-matrix.md

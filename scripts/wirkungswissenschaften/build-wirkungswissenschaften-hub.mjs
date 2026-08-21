@@ -55,6 +55,17 @@ function page({ rel, title, metaTitle, description, section, base, body }) {
 ${renderHeader(base)}
     <main data-pagefind-body>
 ${body}
+      <!-- state-sustainability-architecture-20260821 -->
+      <section class="section section-muted" id="staatliche-nachhaltigkeitsarchitektur" aria-labelledby="staatliche-nachhaltigkeitsarchitektur-title">
+        <div class="section-header">
+          <p class="hero-kicker">Bestehende Staatsarchitektur und WÖk-Ergänzung</p>
+          <h2 id="staatliche-nachhaltigkeitsarchitektur-title">Deutschland prüft Folgen bereits. Die WÖk führt die Ebenen systematisch zusammen.</h2>
+          <p>Für Bundesregelungsvorhaben existiert bereits eine institutionalisierte Prüfarchitektur: Deutsche Nachhaltigkeitsstrategie, GGO/Gesetzesfolgenabschätzung, Nachhaltigkeitsprüfung und eNAP/eGFA sowie Monitoring. § 43 GGO umfasst unter anderem Ziel, Sachverhalt und Alternativen; § 44 beabsichtigte und unbeabsichtigte Folgen, Nachhaltigkeitsbezug und Vorgaben zur späteren Überprüfung.</p>
+          <p><strong>Die Wirkungsökonomie ersetzt diese Architektur nicht.</strong> Sie ergänzt sie um eine durchgängig objektspezifische Verbindung von Problemprüfung, Zielprüfung, expliziten Wirkpfaden (A→M→ΔZ→R), Wirkungen erster bis dritter Ordnung und Kaskaden, Verteilung und Resilienz, Gegenfaktum und Zurechnung, Omissions-/Delivery-/Kohärenzprüfung, strukturiertem Optionsvergleich, Nichtkompensation und wiederholbarem Reality Check.</p>
+          <p>Ein Bezug zu DNS, SDGs oder Indikatoren ist Ziel- und Referenzinformation - kein automatischer Kausalitätsnachweis. Indikator ist nicht Wirkung, Output ist nicht Outcome und Beobachtung ist nicht Zurechnung.</p>
+          <p><a class="text-link" href="${base}methodik/">Zur WÖk-Methodik</a> · <a class="text-link" href="${base}methodik/datenbasis.html">Zu Daten- und Quellenfunktionen</a> · <a class="text-link" href="${base}blog/enap-woek-benchmark-fuenf-bundesvorhaben.html">Zum Fünf-Fälle-Benchmark</a></p>
+        </div>
+      </section>
     </main>
 ${renderFooter(base)}
     <script src="${base}assets/js/main.js?v=${CSS_VERSION}"></script>
@@ -266,7 +277,7 @@ function buildSubPages() {
         inner: cardGrid("three", [
           { kicker: "Abgrenzung", title: "Nicht nur Wirkungsforschung", text: "Wirkungsforschung ist die methodische Teildisziplin. Die Wirkungswissenschaften sind der übergreifende Rahmen, der Erkenntnis, Bewertung und Rückkopplung verbindet." },
           { kicker: "Abgrenzung", title: "Mehr als Impact Measurement", text: "Impact Measurement misst einzelne Wirkungen. Die Wirkungswissenschaften fragen zusätzlich, wie Wirkung bewertet, gewichtet und in Entscheidungen zurückgeführt wird." },
-          { kicker: "Referenzrahmen", title: "Mensch, Planet, Demokratie", text: "Positive Wirkung wird an Mensch, Planet und Demokratie sowie an SDGs und SDG+ eingeordnet - nicht an Kapitalrendite allein." },
+          { kicker: "Referenzrahmen", title: "Mensch, Planet, Demokratie", text: "Wirkung wird an Mensch, Planet und Demokratie sowie an relevanten Referenz- und Schutzräumen eingeordnet. Global gehören SDGs dazu, bei deutschen öffentlichen Fällen zusätzlich die DNS; SDG+ ist WÖk-eigen. Zielbezug allein ist kein Wirkungsnachweis." },
         ]) }),
       section({ kicker: "Disziplinenordnung", heading: "Der Oberrahmen und seine Spezialbereiche", inner: `        ${SVG_DISCIPLINES}` }),
     ],
@@ -276,18 +287,18 @@ function buildSubPages() {
     slug: "wirkungsforschung", title: "Wirkungsforschung",
     metaTitle: "Wirkungsforschung | Wirkungswissenschaften", kicker: "Wirkungswissenschaften · Methodische Teildisziplin",
     subtitle: "Von der Evaluation zur systemischen Wirkungsforschung.",
-    description: "Wirkungsforschung ist innerhalb der Wirkungswissenschaften die methodische Teildisziplin - von Natalie Weber von einer nachträglichen Evaluationspraxis zur voraus-, begleit- und rückkoppelnden systemischen Wirkungsforschung erweitert.",
+    description: "Wirkungsforschung ist innerhalb der Wirkungswissenschaften die methodische Teildisziplin. Der WÖk-Rahmen verbindet etablierte ex-ante-, begleitende und ex-post-Methoden mit einer expliziten systemischen Rückkopplungslogik.",
     intro: "",
     bodySections: (base) => [
       section({ kicker: "Kerndefinition", heading: "Was Wirkungsforschung untersucht",
         inner: prose([
           "Wirkungsforschung ist innerhalb der Wirkungswissenschaften die methodische Teildisziplin, die Wirkungen, Wirkungspotenziale, Wirkmechanismen, Nebenwirkungen, Wechselwirkungen, Wirkungsrisiken und Transformationsbeiträge empirisch, theoretisch und systemisch untersucht.",
-          "In der Weiterentwicklung durch Natalie Weber wird Wirkungsforschung von einer überwiegend nachträglichen Evaluationspraxis zu einer voraus-, begleit- und rückkoppelnden Forschungsform erweitert.",
+          "Im WÖk-Rahmen werden etablierte ex-ante-, begleitende und ex-post-Ansätze ausdrücklich mit systemischer Wirkmodellierung, Gegenfaktum/Zurechnung und wiederholbarer Rückkopplung verbunden.",
         ]) }),
       section({ soft: true, kicker: "Vom Befund zum System", heading: "Alte und neue Wirkungsforschung",
         inner: cardGrid("three", [
-          { kicker: "Vorher", title: "Klassische Wirkungsforschung", text: "Evaluation, Impact Assessment und Wirkungsmessung liefern wichtige Methoden - überwiegend als nachträgliche Bewertung einzelner Programme." },
-          { kicker: "Grenze", title: "Zu punktuell, zu spät", text: "Einzelbefunde bleiben oft ohne systemischen Rahmen, ohne Rückkopplung und ohne Schutz vor Scheinkausalität und Wirkungssimulation." },
+          { kicker: "Bestehender Kanon", title: "Evaluation und Impact Assessment", text: "Evaluation, Impact Assessment und Folgenabschätzung liefern wichtige ex-ante-, begleitende und ex-post-Methoden. Die WÖk baut darauf auf, statt sie als Leerstelle zu behandeln." },
+          { kicker: "Integrationsfrage", title: "Wie wird aus Befunden Steuerungslernen?", text: "Der WÖk-Zusatz liegt in der durchgängigen Verbindung von Problem, Ziel, Kausalhypothese, Verteilung, Optionen, Attribution und wiederholbarer Rückkopplung - nicht in der Behauptung, Folgenprüfung habe zuvor gefehlt." },
           { kicker: "Neu", title: "Systemische Wirkungsforschung", text: "Voraus-, begleit- und rückkoppelnd: Sie fragt, wie Wirkung entsteht, wie sie plausibel nachgewiesen, begrenzt, bewertet und in künftige Entscheidungen zurückgeführt wird." },
         ]) }),
       section({ kicker: "Methodischer Anschluss", heading: "Werkzeuge der Wirkungsforschung",
@@ -299,11 +310,11 @@ function buildSubPages() {
     slug: "wirkungsoekonomie", title: "Wirkungsökonomie als Steuerungsdisziplin",
     metaTitle: "Wirkungsökonomie | Wirkungswissenschaften", kicker: "Wirkungswissenschaften · Steuerungsdisziplin",
     subtitle: "Wie Wirkung in Preise, Steuern, Kapital und Governance übergeht.",
-    description: "Die Wirkungsökonomie ist die von Natalie Weber begründete erste ausgearbeitete Steuerungs- und Ordnungsdisziplin der Wirkungswissenschaften - sie überführt Wirkung in Preise, Steuern, Kapital und Governance.",
+    description: "Die Wirkungsökonomie ist eine von Natalie Weber ausgearbeitete Steuerungs- und Ordnungsdisziplin im Rahmen der Wirkungswissenschaften - sie untersucht die Rückkopplung von Wirkung in Preise, Steuern, Kapital und Governance.",
     intro: "",
     bodySections: (base) => [
-      section({ kicker: "Kerndefinition", heading: "Die erste ausgearbeitete Steuerungsdisziplin",
-        inner: prose(["Die Wirkungsökonomie ist die von Natalie Weber begründete erste ausgearbeitete Steuerungs- und Ordnungsdisziplin der Wirkungswissenschaften. Sie untersucht nicht nur, welche Wirkungen wirtschaftliche Aktivitäten erzeugen, sondern wie Märkte, Preise, Steuern, Kapital, Unternehmen und öffentliche Entscheidungen so gestaltet werden können, dass positive Netto-Wirkung für Mensch, Planet und Demokratie entscheidungsrelevant wird."]) }),
+      section({ kicker: "Kerndefinition", heading: "Eine ausgearbeitete Steuerungsdisziplin",
+        inner: prose(["Die Wirkungsökonomie ist eine von Natalie Weber ausgearbeitete Steuerungs- und Ordnungsdisziplin im Rahmen der Wirkungswissenschaften. Sie untersucht nicht nur, welche Wirkungen wirtschaftliche Aktivitäten erzeugen, sondern wie Märkte, Preise, Steuern, Kapital, Unternehmen und öffentliche Entscheidungen so gestaltet werden können, dass positive Netto-Wirkung für Mensch, Planet und Demokratie entscheidungsrelevant wird. Bei staatlichen Entscheidungen schließt sie ausdrücklich an bestehende Folgen-, Nachhaltigkeits- und Evaluationsarchitekturen an."]) }),
       section({ soft: true, kicker: "Vom Prinzip zum Werkzeug", heading: "Wirkung statt Kapital",
         inner: cardGrid("three", [
           { kicker: "Prinzip", title: "Wirkung statt Kapital", text: "Kapital bleibt Werkzeug, Wirkung wird Kompass. Wirtschaft wird als Wirkungssystem verstanden.", href: `${base}verstehen/`, link: "Modell verstehen" },
