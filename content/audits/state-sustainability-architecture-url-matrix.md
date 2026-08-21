@@ -1,9 +1,9 @@
 # #253 State sustainability architecture URL/file audit
 
-- Sitemap routes: **2052**
+- Sitemap routes: **2056**
 - Sitemap routes without directly resolved source HTML: **0**
 - Extra tracked source HTML not in sitemap: **14202**
-- Routes with non-default #253 action: **1428**
+- Routes with non-default #253 action: **1432**
 - Routes with Wirkungsblindheit/novelty/absence claim signals: **75**
 
 Contract fields on every matrix item: `source_path`, `public_url`, `historical_publication`, `relevance`, `classification`, `required_action`, `source_refs`, `status`.
@@ -129,6 +129,10 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/parlamentarischer-beirat-fuer-nachhaltige-entwicklung-und-zukunftsfragen/ | `begriffe/parlamentarischer-beirat-fuer-nachhaltige-entwicklung-und-zukunftsfragen/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, dns |
 | https://wirkungsoekonomie.de/begriffe/state-gfa-enap-benchmark/ | `begriffe/state-gfa-enap-benchmark/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, dns |
 | https://wirkungsoekonomie.de/begriffe/wirkungsblindheit/ | `begriffe/wirkungsblindheit/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, dns, evaluation |
+| https://wirkungsoekonomie.de/begriffe/7-bundeshaushaltsordnung/ | `begriffe/7-bundeshaushaltsordnung/index.html` | ADD_GLOSSARY_CROSSLINKS | nachhaltigkeitspruefung, enap, dns |
+| https://wirkungsoekonomie.de/begriffe/vv-bho-wirtschaftlichkeitsuntersuchung-und-erfolgskontrolle/ | `begriffe/vv-bho-wirtschaftlichkeitsuntersuchung-und-erfolgskontrolle/index.html` | ADD_GLOSSARY_CROSSLINKS | nachhaltigkeitspruefung, enap, evaluation |
+| https://wirkungsoekonomie.de/begriffe/objektspezifische-staatliche-pruefarchitektur/ | `begriffe/objektspezifische-staatliche-pruefarchitektur/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, evaluation |
+| https://wirkungsoekonomie.de/begriffe/wirkungsrelevanz-statt-rechtsform/ | `begriffe/wirkungsrelevanz-statt-rechtsform/index.html` | ADD_GLOSSARY_CROSSLINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/ | `quellenarchiv/index.html` | ADD_SOURCE_LINKS | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-e-0001/ | `quellenarchiv/wok-e-0001/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-e-0002/ | `quellenarchiv/wok-e-0002/index.html` | ADD_SOURCE_LINKS | — |
@@ -1524,7 +1528,7 @@ Signals are review candidates, not automatic errors.
 ## Recursive non-HTML publication/support surfaces
 
 - Tracked support text files inventoried: **757**
-- Combined matrix items (routes + extra HTML + support): **17011**
+- Combined matrix items (routes + extra HTML + support): **17015**
 - Every matrix item exposes the #253 contract fields: source_path, public_url, historical_publication, relevance, classification, required_action, source_refs and status.
 - Includes llms.txt, sitemap/search metadata, structured-data registries, glossary/source archive, library/journal/reference inputs and generators/workflows.
 
@@ -1846,7 +1850,7 @@ Signals are review candidates, not automatic errors.
 
 ## Review/action closure
 
-- Combined reviewed items: **17012**
+- Combined reviewed items: **17016**
 - Open semantic/action reviews after deterministic projection: **0**
 - Broad novelty/Wirkungsblindheit hits were dispositioned by a second-pass contextual state-absence review; isolated words are not treated as absence claims.
 - `AGENTS.md` is explicitly inventoried as a corrected current guardrail.
