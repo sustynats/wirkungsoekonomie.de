@@ -858,6 +858,29 @@ function sourceLabelForArchive(value) {
   return clean || "WÖk-Glossarquelle";
 }
 
+const CURRENT_TERMINOLOGY_GUIDE = {
+  version: "1.6",
+  title: "WÖk-Begriffsleitfaden führend v1.6",
+  url: "https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/",
+};
+const HISTORICAL_TERMINOLOGY_GUIDE_VERSIONS = new Set(["1.0", "1.2", "1.3", "1.4", "1.5"]);
+
+function terminologyGuideVersion(label) {
+  if (!/begriffsleitfaden/i.test(String(label || ""))) return "";
+  const match = String(label || "").match(/\bv\s*1[.\s_-]?([0-9]+)\b/i);
+  return match ? `1.${match[1]}` : "";
+}
+
+function terminologyGuideUrl(label) {
+  if (!/begriffsleitfaden/i.test(String(label || ""))) return "";
+  const version = terminologyGuideVersion(label);
+  if (!version || version === CURRENT_TERMINOLOGY_GUIDE.version) return CURRENT_TERMINOLOGY_GUIDE.url;
+  if (HISTORICAL_TERMINOLOGY_GUIDE_VERSIONS.has(version)) {
+    return `https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend-v1-${version.split(".")[1]}/`;
+  }
+  return CURRENT_TERMINOLOGY_GUIDE.url;
+}
+
 function sourceUrlForArchive(label, originalUrl = "") {
   // Alte interne Routen dürfen nicht als Quellenanker fortgeschrieben werden.
   // Die Archiv-ID bleibt stabil, der Locator verweist aber auf die kanonische
@@ -865,12 +888,13 @@ function sourceUrlForArchive(label, originalUrl = "") {
   const canonicalInternalRoutes = new Map([
     ["https://wirkungsoekonomie.de/dokumente/wp-rente/", "https://wirkungsoekonomie.de/bibliothek/wp-rente/"],
   ]);
+  const guideUrl = terminologyGuideUrl(label);
+  if (guideUrl) return guideUrl;
   if (originalUrl) return canonicalInternalRoutes.get(originalUrl) || originalUrl;
   const normalized = normalizeKey(label);
   if (normalized === "die wirkungsoekonomie als kooperative lernende und wehrhafte wirkungsordnung") {
     return "https://wirkungsoekonomie.de/bibliothek/wirkungsdilemmata-kooperation-sdgplus-gesamtstudie/";
   }
-  if (/begriffsleitfaden/.test(normalized)) return "https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/";
   if (/woems|woemm|methodensystem|managementmodell/.test(normalized)) return "https://wirkungsoekonomie.de/methodenraum/gesamtbild/";
   if (/impact controlling|doppelte wesent/.test(normalized)) return "https://wirkungsoekonomie.de/werkzeuge/impact-controlling/";
   if (/wirkungsfinanzpolitik|schuldenfrage/.test(normalized)) return "https://wirkungsoekonomie.de/wirkungsfelder/finanzsystem-kapital/";
@@ -913,6 +937,9 @@ function attachGlossarySourceArchive(terms) {
     const key = sourceRecordKey(sourceLabel, sourceUrl);
     if (!records.has(key)) {
       const internal = isWoeKPrimarySource(sourceLabel, sourceUrl);
+      const guideVersion = terminologyGuideVersion(sourceLabel);
+      const isTerminologyGuide = Boolean(terminologyGuideUrl(sourceLabel));
+      const isHistoricalTerminologyGuide = Boolean(guideVersion && guideVersion !== CURRENT_TERMINOLOGY_GUIDE.version);
       const isCatalogLocator = /^https:\/\/search\.worldcat\.org\/search\?/i.test(sourceUrl);
       const isLiteratureSearch = /^https:\/\/api\.openalex\.org\/works\?search=/i.test(sourceUrl);
       records.set(key, {
@@ -927,20 +954,32 @@ function attachGlossarySourceArchive(terms) {
         cluster: "M",
         clusterLabel: "Glossar-Quellen und Primärmaterial",
         origin: internal ? "intern" : "extern",
-        reviewStatus: "referenziert",
+        reviewStatus: isTerminologyGuide ? (isHistoricalTerminologyGuide ? "historisch" : "fuehrend") : "referenziert",
         dataQuality: internal ? "graue-literatur" : (isCatalogLocator || isLiteratureSearch ? "bibliografischer-nachweis" : "quellenverweis"),
         locatorType: isCatalogLocator ? "katalog" : (isLiteratureSearch ? "literatursuche" : "direkt"),
-        locatorNote: isCatalogLocator
-          ? "Der Link führt zu einer bibliografischen Katalogsuche mit dem angegebenen Titel. Er ersetzt weder den Volltext noch eine eigene Evidenzprüfung."
-          : (isLiteratureSearch
-            ? "Der Link führt zu einer Literatursuche zum angegebenen Themenfeld. Er ersetzt weder eine systematische Recherche noch eine eigene Evidenzprüfung."
-            : ""),
-        summary: internal
-          ? "Dokumentiert die begriffliche Verwendung innerhalb der Wirkungsökonomie. Für empirische, rechtliche oder naturwissenschaftliche Aussagen ist eine zusätzliche passende externe Quelle erforderlich."
-          : "Bibliografischer Quellenverweis aus der Glossar-Terminologie. Die Detailseite bewahrt Titel und gegebenenfalls die originale Fundstelle.",
-        einordnung: internal
-          ? "Diese WÖk-Primärquelle belegt die modellinterne Begriffsverwendung. Sie ist transparent von unabhängiger empirischer Evidenz und von geltendem Recht zu unterscheiden."
-          : "Diese Quelle wurde in der Glossar-Terminologie als Referenz genannt. Ihre fachliche Aussagekraft ergibt sich aus der Originalquelle, nicht aus der bloßen Aufnahme in das Archiv.",
+        locatorNote: isHistoricalTerminologyGuide
+          ? `Historische, zitierfähige Fassung v${guideVersion}. Für neue Inhalte gilt die führende Fassung v${CURRENT_TERMINOLOGY_GUIDE.version}.`
+          : (isTerminologyGuide
+            ? `Aktuelle führende Sprach- und Methodenreferenz v${CURRENT_TERMINOLOGY_GUIDE.version}. Historische Fassungen bleiben über ihre eigenen Versionsseiten zitierfähig.`
+            : (isCatalogLocator
+              ? "Der Link führt zu einer bibliografischen Katalogsuche mit dem angegebenen Titel. Er ersetzt weder den Volltext noch eine eigene Evidenzprüfung."
+              : (isLiteratureSearch
+                ? "Der Link führt zu einer Literatursuche zum angegebenen Themenfeld. Er ersetzt weder eine systematische Recherche noch eine eigene Evidenzprüfung."
+                : ""))),
+        summary: isHistoricalTerminologyGuide
+          ? `Dokumentiert den damaligen Begriffsstand v${guideVersion}. Der historische Nachweis wird nicht still auf die aktuelle Fassung umgebogen.`
+          : (isTerminologyGuide
+            ? `Führende WÖk-Sprach- und Methodenreferenz v${CURRENT_TERMINOLOGY_GUIDE.version}, einschließlich staatlicher Nachhaltigkeitsarchitektur und Zwei-Ebenen-Registerlogik.`
+            : (internal
+              ? "Dokumentiert die begriffliche Verwendung innerhalb der Wirkungsökonomie. Für empirische, rechtliche oder naturwissenschaftliche Aussagen ist eine zusätzliche passende externe Quelle erforderlich."
+              : "Bibliografischer Quellenverweis aus der Glossar-Terminologie. Die Detailseite bewahrt Titel und gegebenenfalls die originale Fundstelle.")),
+        einordnung: isTerminologyGuide
+          ? (isHistoricalTerminologyGuide
+            ? `Diese Fassung bleibt als historische WÖk-Primärquelle erhalten. Sie ist nicht die führende Terminologiefassung; aktuell gilt v${CURRENT_TERMINOLOGY_GUIDE.version}.`
+            : "Diese WÖk-Primärquelle führt die aktuelle modellinterne Begriffsverwendung. Amtliche, rechtliche und empirische Aussagen benötigen weiterhin die jeweils einschlägigen externen Primärquellen.")
+          : (internal
+            ? "Diese WÖk-Primärquelle belegt die modellinterne Begriffsverwendung. Sie ist transparent von unabhängiger empirischer Evidenz und von geltendem Recht zu unterscheiden."
+            : "Diese Quelle wurde in der Glossar-Terminologie als Referenz genannt. Ihre fachliche Aussagekraft ergibt sich aus der Originalquelle, nicht aus der bloßen Aufnahme in das Archiv."),
         impactFields: [],
         sdg: null,
         domain: sourceUrl ? (() => {
@@ -951,6 +990,11 @@ function attachGlossarySourceArchive(terms) {
     return records.get(key);
   };
 
+  // Die führende Fassung erhält immer einen eigenen Quellenarchiv-Eintrag.
+  // So bleibt die bisherige URL-ID für die kanonische Publikation stabil,
+  // während historische Zitate auf ihre jeweilige Versionsseite zeigen.
+  recordFor({ label: CURRENT_TERMINOLOGY_GUIDE.title, url: CURRENT_TERMINOLOGY_GUIDE.url, term: {} });
+
   for (const term of terms) {
     const sourceCollections = ["curatedSources", "sourceLinks", "officialSources"];
     for (const field of sourceCollections) {
@@ -958,7 +1002,7 @@ function attachGlossarySourceArchive(terms) {
       term[field] = uniqueEntries(values.map((value) => {
         const parsed = sourceParts(value);
         if (!parsed.label && !parsed.url) return value;
-        if (isArchiveUrl(parsed.url)) return value;
+        if (isArchiveUrl(parsed.url) && !terminologyGuideVersion(parsed.label)) return value;
         const record = recordFor({ ...parsed, term });
         return `${parsed.label || record.title}|/quellenarchiv/${sourceArchiveSlug(record.code)}/`;
       }));
