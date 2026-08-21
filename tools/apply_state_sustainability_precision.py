@@ -22,13 +22,19 @@ def write(rel: str, text: str) -> None:
 
 
 def replace_once(rel: str, old: str, new: str) -> bool:
+    """Replace every identical approved anchor in a page.
+
+    Some SEO strings intentionally occur in description/OG/Twitter metadata. The Fach
+    correction is the same for each occurrence, so repeated identical anchors are valid;
+    absence is still fail-closed.
+    """
     text = read(rel)
-    if new in text:
+    if new in text and old not in text:
         return False
     n = text.count(old)
-    if n != 1:
-        raise RuntimeError(f"{rel}: expected one anchor, got {n}: {old[:120]!r}")
-    write(rel, text.replace(old, new, 1))
+    if n == 0:
+        raise RuntimeError(f"{rel}: approved anchor not found: {old[:120]!r}")
+    write(rel, text.replace(old, new))
     return True
 
 
