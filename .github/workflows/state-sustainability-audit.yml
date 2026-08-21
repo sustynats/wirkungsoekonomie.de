@@ -6,7 +6,9 @@ on:
       - '**/*.html'
       - 'content/**'
       - 'tools/apply_state_sustainability_architecture.py'
+      - 'tools/apply_state_sustainability_sources.py'
       - 'tools/audit_state_sustainability_architecture.py'
+      - 'tools/audit_state_sustainability_architecture_fast.py'
       - 'sitemap.xml'
       - 'assets/search/**'
       - 'public/data/woek-search-meta.json'
@@ -31,16 +33,17 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Verify approved #253 projection is idempotent
+      - name: Verify approved #253 projections are idempotent
         run: |
           python tools/apply_state_sustainability_architecture.py
-          git diff --exit-code -- '*.html' llms.txt
+          python tools/apply_state_sustainability_sources.py
+          git diff --exit-code -- '*.html' llms.txt content/glossary/imports/staatliche-nachhaltigkeitsarchitektur.json
       - name: Verify deterministic search artifacts are committed
         run: |
           npm run build:search
           git diff --exit-code -- assets/search/search-index.json public/data/woek-search-meta.json
       - name: Generate exhaustive #253 URL/file matrix
-        run: python tools/audit_state_sustainability_architecture.py --root . --output artifacts/state-sustainability-architecture-url-matrix.json --markdown artifacts/state-sustainability-architecture-url-matrix.md
+        run: python tools/audit_state_sustainability_architecture_fast.py --root . --output artifacts/state-sustainability-architecture-url-matrix.json --markdown artifacts/state-sustainability-architecture-url-matrix.md
       - name: Upload #253 audit matrix
         uses: actions/upload-artifact@v4
         with:
