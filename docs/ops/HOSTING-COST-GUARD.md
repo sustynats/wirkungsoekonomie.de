@@ -21,6 +21,20 @@ Vercel darf brutto hoechstens 25 EUR pro Monat kosten. Eine hoehere Obergrenze b
 6. Deploy Hooks duerfen nur nach ausdruecklicher Release-Autorisierung aufgerufen werden.
 7. Vor jeder Production-Aktion werden Kostenstatus, Buildumfang, Commit, Gates und Smoke-Test dokumentiert.
 
+## Zulässige Vercel-Laufzeit fuer natsalexandre.com
+
+`natsalexandre.com` bleibt bewusst als kleines dynamisches Projekt auf Vercel. Zulässig und erforderlich sind:
+
+- Hosting und CDN fuer die Next.js-Oberflaeche,
+- Serverfunktionen fuer Login-/Freigabepruefung, Mitglieder- und Adminbereiche, Chat, Buchungen, Feedback, Analytics und Benachrichtigungen,
+- die geschuetzte Vermittlung privater Oracle-Medien nach erfolgreicher Zugriffspruefung,
+- die beiden geplanten Aufgaben fuer Verfuegbarkeit und Feedback-Bereinigung,
+- verschluesselte Production-Umgebungsvariablen fuer die angebundenen Dienste.
+
+Die Systemgrenzen bleiben dabei verbindlich: Supabase fuehrt Datenbank und Login-Identitaeten, Oracle Object Storage fuehrt Bild-, Video- und sonstige Mediendateien, GitHub fuehrt das private Repository. Vercel speichert diese Bestaende nicht kanonisch. Nach Codeaenderungen wird nur ein bewusst ausgeloestes, geprueftes Production-Deployment gebaut; automatische Git- und Pull-Request-Previews bleiben aus.
+
+Fuer dieses Projekt werden insbesondere Function-Ausfuehrung, CDN-/Transferverbrauch, die geschuetzten Medienrouten und Cron-Ausfuehrungen beobachtet. Sie duerfen innerhalb des gemeinsamen 25-EUR-Bruttobudgets laufen.
+
 ## Release-Ablauf
 
 1. Tests und Build laufen lokal oder in GitHub Actions.
@@ -33,6 +47,7 @@ Vercel darf brutto hoechstens 25 EUR pro Monat kosten. Eine hoehere Obergrenze b
 
 - Das Vercel-Dashboard erhaelt zum Beginn eines neuen Abrechnungszeitraums eine harte Ausgabenaktion fuer Zusatzverbrauch. Eine Grenze darf nie unter den bereits im laufenden Zeitraum angefallenen Betrag gesetzt werden, weil dies die laufenden Production-Projekte sofort pausieren koennte.
 - `npm run check:hosting-cost` ist vor jeder Aenderung der Hostingkonfiguration auszufuehren.
+- `npm run check:hosting-cost:vercel` gleicht bei bestehender Vercel-Anmeldung alle tatsaechlichen Projekteinstellungen mit `ops/vercel-project-baseline.json` ab.
 - Jede Reaktivierung automatischer Vercel-Deployments oder einer groesseren Buildmaschine ist ein Gate-FAIL.
 
 ## Wiederherstellung

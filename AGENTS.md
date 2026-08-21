@@ -20,7 +20,7 @@ Diese Datei ist die dauerhafte Arbeitsanweisung fuer Codex-Aufgaben in diesem Re
 - Oeffentliche grosse Dateien und unveraenderliche Publikationsartefakte gehoeren in GitHub Releases. Vercel ist weder primaerer Artefaktspeicher noch kanonischer Datenbestand.
 - Private Nutzerdaten werden nicht neu in Vercel-Speicher geschrieben. Der Zielbestand liegt in Oracle/OCI; bestehende Altsysteme werden nur backup-first und ohne stillen Datenverlust migriert.
 - Vercel-Builds verwenden die Standardmaschine, feste Auswahl, keine elastische Parallelitaet und eine serielle Queue. Preview-Builds werden nicht fuer normale Fach-, Daten- oder Bot-Commits erzeugt.
-- Vor Aenderungen an `vercel.json`, Vercel-Projekteinstellungen oder Deployment-Workflows ist `npm run check:hosting-cost` auszufuehren. Die ausfuehrliche Regel steht in `docs/ops/HOSTING-COST-GUARD.md`.
+- Vor Aenderungen an `vercel.json`, Vercel-Projekteinstellungen oder Deployment-Workflows sind `npm run check:hosting-cost` und bei bestehender Vercel-Anmeldung `npm run check:hosting-cost:vercel` auszufuehren. Die ausfuehrliche Regel steht in `docs/ops/HOSTING-COST-GUARD.md`.
 
 ## Inhaltliche Leitlinie Wirkungsökonomie
 
