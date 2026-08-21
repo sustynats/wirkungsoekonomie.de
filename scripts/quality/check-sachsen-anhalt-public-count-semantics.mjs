@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 
-const pagePath = path.join(
+const landingPagePath = path.join(
   process.cwd(),
   "woek-parlament-app",
   "app",
@@ -9,30 +9,42 @@ const pagePath = path.join(
   "sachsen-anhalt",
   "page.tsx",
 );
+const programmeRendererPath = path.join(
+  process.cwd(),
+  "woek-parlament-app",
+  "app",
+  "components",
+  "SaxonyAnhaltProgrammeAnalysisV3.tsx",
+);
 
-const source = fs.readFileSync(pagePath, "utf8");
+const landingSource = fs.readFileSync(landingPagePath, "utf8");
+const programmeSource = fs.readFileSync(programmeRendererPath, "utf8");
+const allPublicSources = `${landingSource}\n${programmeSource}`;
 
 const forbiddenWhileDenominatorOpen = [
   "fachlich analysierte Zusageeinheiten",
   "vollständige Quellen- und Fachdatensätze",
+  "Das vollständige Register bleibt erhalten",
+  "Vollständiges Zusageregister öffnen",
 ];
 
 const requiredWhileDenominatorOpen = [
   "Zusageeinheiten im aktuellen Quellenregister",
   "Primärquellen-Paritätsabgleich und Editorial-v2+-Vollreaudit laufen",
   "der finale Nenner ist noch nicht eingefroren",
+  "finale Source-Unit-Manifest",
 ];
 
 const failures = [];
 
 for (const phrase of forbiddenWhileDenominatorOpen) {
-  if (source.includes(phrase)) {
+  if (allPublicSources.includes(phrase)) {
     failures.push(`forbidden unresolved-parity completion wording: ${phrase}`);
   }
 }
 
 for (const phrase of requiredWhileDenominatorOpen) {
-  if (!source.includes(phrase)) {
+  if (!allPublicSources.includes(phrase)) {
     failures.push(`missing unresolved-parity public wording: ${phrase}`);
   }
 }
@@ -44,5 +56,5 @@ if (failures.length > 0) {
 }
 
 console.log(
-  "Sachsen-Anhalt public count semantics gate PASS: working register counts are not presented as terminal fach completion while primary-source parity/final denominator remain unresolved.",
+  "Sachsen-Anhalt public count semantics gate PASS: working-register counts and programme source lists are not presented as final Fach/source-corpus completeness while primary-source parity/final manifest remain unresolved.",
 );
