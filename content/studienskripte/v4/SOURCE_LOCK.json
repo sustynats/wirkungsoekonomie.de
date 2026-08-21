@@ -3,9 +3,7 @@
   "status": "PRE_CUTOVER_SOURCE_LOCK",
   "curriculum_version": "4.0",
   "source_repo": "sustynats/woek-akademie-app",
-  "source_sha": "d164a6ceb95b9f90e473fec0dc06d8e1d0ba7516",
-  "source_repo_main_observed_sha": "534d7cf401816fbf0c51d226a2ade32c9124cfce",
-  "source_pin_note": "Der öffentliche Fachcorpus bleibt absichtlich auf d164a6c... gepinnt; die aktuell beobachtete App-main-SHA enthält denselben festgeschriebenen Curriculum- und State-Sustainability-Manifest-Blob plus spätere Runtime-/Privacy-Integration.",
+  "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
   "source_root": "content/lehrgaenge/akademie/curriculum-v4",
   "source_manifest": "content/lehrgaenge/akademie/curriculum-v4/CURRICULUM_V4_MANIFEST.json",
   "source_endcontent_status": "content/lehrgaenge/akademie/curriculum-v4/ENDCONTENT_STATUS.json",
@@ -57,5 +55,13 @@
     "Die 120 Studienlektionen und 58 Lektionen der sechs aktiven Weiterbildungsfamilien werden ausschließlich aus fachgeprüften v4-Artefakten projiziert.",
     "Geschützte Assessment-/Lösungsabschnitte sind kein Bestandteil des öffentlichen Public-Masters.",
     "v3.2 bleibt historische Version und wird durch diesen Lock nicht überschrieben."
-  ]
+  ],
+  "source_repo_main_observed_sha": "861a4f24ac97e386a55b5037913c5ad46545a022",
+  "source_pin_note": "Public-Master materialized from sanitized hash-verified transport artifact generated on exact private App source SHA ecee82cce60612332b4dc909b2fecfcb380b1a24; fach manifest blobs remain pinned and no assessment secrets are projected.",
+  "transport": {
+    "type": "SANITIZED_HASH_VERIFIED_GITHUB_ACTIONS_ARTIFACT",
+    "archive_sha256": "418137a171a07c50a8dbd2019f7bdcd19be127915f1fb9edabd1bbc763f95976",
+    "source_repo": "sustynats/woek-akademie-app",
+    "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24"
+  }
 }
