@@ -15,6 +15,7 @@ on:
       - 'tools/audit_state_sustainability_architecture.py'
       - 'tools/audit_state_sustainability_architecture_fast.py'
       - 'tools/audit_state_sustainability_support_files.py'
+      - 'tools/finalize_state_sustainability_matrix.py'
       - 'tools/check_state_sustainability_architecture.py'
       - 'tools/check_state_sustainability_wiwi_scope.py'
       - '.github/workflows/deploy.yml'
@@ -40,7 +41,9 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.head.ref || github.ref }}
-          fetch-depth: 0
+          fetch-depth: 100
+      - name: Fetch exact main baseline for historical-diff guards
+        run: git fetch origin main:refs/remotes/origin/main --depth=1
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
@@ -67,6 +70,7 @@ jobs:
         run: |
           python tools/audit_state_sustainability_architecture_fast.py --root . --output content/audits/state-sustainability-architecture-url-matrix.json --markdown content/audits/state-sustainability-architecture-url-matrix.md
           python tools/audit_state_sustainability_support_files.py --root . --matrix content/audits/state-sustainability-architecture-url-matrix.json --markdown content/audits/state-sustainability-architecture-url-matrix.md
+          python tools/finalize_state_sustainability_matrix.py --root . --matrix content/audits/state-sustainability-architecture-url-matrix.json --markdown content/audits/state-sustainability-architecture-url-matrix.md
       - name: Run hard #253 semantic gates
         run: |
           python tools/check_state_sustainability_architecture.py
@@ -107,6 +111,7 @@ jobs:
           npm run taxonomy:build
           python tools/audit_state_sustainability_architecture_fast.py --root . --output content/audits/state-sustainability-architecture-url-matrix.json --markdown content/audits/state-sustainability-architecture-url-matrix.md
           python tools/audit_state_sustainability_support_files.py --root . --matrix content/audits/state-sustainability-architecture-url-matrix.json --markdown content/audits/state-sustainability-architecture-url-matrix.md
+          python tools/finalize_state_sustainability_matrix.py --root . --matrix content/audits/state-sustainability-architecture-url-matrix.json --markdown content/audits/state-sustainability-architecture-url-matrix.md
           python tools/check_state_sustainability_architecture.py
           python tools/check_state_sustainability_wiwi_scope.py
           git diff --exit-code
