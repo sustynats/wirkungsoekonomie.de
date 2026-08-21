@@ -17,7 +17,7 @@ jobs:
       SOURCE_REPO: sustynats/woek-akademie-app
       SOURCE_SHA: ecee82cce60612332b4dc909b2fecfcb380b1a24
       EXPECTED_ARCHIVE_SHA256: 418137a171a07c50a8dbd2019f7bdcd19be127915f1fb9edabd1bbc763f95976
-      ARTIFACT_URL: 'https://sdmntprwestus.oaiusercontent.com/files/00000000-ed74-8230-82f8-35b760fe8d29/raw?se=2026-08-21T19%3A06%3A35Z&sp=r&sv=2026-02-06&sr=b&scid=4730b1dc-2817-5653-abdb-8f349ffb1777&skoid=ea1de0bc-0467-43d6-873a-9a5cf0a9f835&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-08-20T22%3A06%3A09Z&ske=2026-08-21T22%3A06%3A09Z&sks=b&skv=2026-02-06&sig=qSNoYqU3lYDGQsxvELvZI%2BNQPr3xu8GdqNzX6qImLjc%3D'
+      ARTIFACT_URL: 'https://sdmntprwestus.oaiusercontent.com/files/00000000-f2e8-8230-9748-c18fa39156bc/raw?se=2026-08-21T19%3A07%3A31Z&sp=r&sv=2026-02-06&sr=b&scid=964a847b-2787-509c-80f3-c0172804a4e7&skoid=ea1de0bc-0467-43d6-873a-9a5cf0a9f835&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-08-20T22%3A15%3A11Z&ske=2026-08-21T22%3A15%3A11Z&sks=b&skv=2026-02-06&sig=JmtTopCpufq%2BJPevOCCcU7IEHAcRPvbxnjdXWPcyz3w%3D'
     steps:
       - name: Checkout exact transport branch sparsely
         uses: actions/checkout@v4
@@ -53,7 +53,8 @@ jobs:
           const c = m.counts || {};
           const checks = [
             [m.curriculum_version === '4.0','version'],
-            [m.generated_from?.sha === process.env.SOURCE_SHA,'source'],
+            [m.source_repo === process.env.SOURCE_REPO,'source-repo'],
+            [m.source_sha === process.env.SOURCE_SHA,'source-sha'],
             [c.study_lectures === 120,'study'],
             [c.base === 108,'base'],
             [c.state_architecture === 12,'gov'],
