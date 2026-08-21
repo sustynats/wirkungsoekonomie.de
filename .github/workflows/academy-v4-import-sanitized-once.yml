@@ -1,14 +1,8 @@
 name: Academy v4 import sanitized public master once
 
 on:
-  push:
-    branches:
-      - codex/academy-v4-public-master-transport-20260821
-    paths:
-      - .github/workflows/academy-v4-import-sanitized-once.yml
   pull_request:
-    branches:
-      - main
+    branches: [main]
     paths:
       - .github/workflows/academy-v4-import-sanitized-once.yml
   workflow_dispatch:
@@ -23,20 +17,22 @@ jobs:
       SOURCE_REPO: sustynats/woek-akademie-app
       SOURCE_SHA: ecee82cce60612332b4dc909b2fecfcb380b1a24
       EXPECTED_ARCHIVE_SHA256: 418137a171a07c50a8dbd2019f7bdcd19be127915f1fb9edabd1bbc763f95976
-      ARTIFACT_URL: 'https://sdmntprwestus.oaiusercontent.com/files/00000000-3e18-8230-b21b-cd9709fa873f/raw?se=2026-08-21T19%3A05%3A16Z&sp=r&sv=2026-02-06&sr=b&scid=a5407b82-b521-5e98-b13e-a8d46e3a89b3&skoid=ea1de0bc-0467-43d6-873a-9a5cf0a9f835&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-08-20T22%3A09%3A45Z&ske=2026-08-21T22%3A09%3A45Z&sks=b&skv=2026-02-06&sig=Wp61aiOuC7BLvN4GlGQHUDlqFMAtUlOsS5vgtECI8s8%3D'
+      ARTIFACT_URL: 'https://sdmntprwestus.oaiusercontent.com/files/00000000-ed74-8230-82f8-35b760fe8d29/raw?se=2026-08-21T19%3A06%3A35Z&sp=r&sv=2026-02-06&sr=b&scid=4730b1dc-2817-5653-abdb-8f349ffb1777&skoid=ea1de0bc-0467-43d6-873a-9a5cf0a9f835&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-08-20T22%3A06%3A09Z&ske=2026-08-21T22%3A06%3A09Z&sks=b&skv=2026-02-06&sig=qSNoYqU3lYDGQsxvELvZI%2BNQPr3xu8GdqNzX6qImLjc%3D'
     steps:
-      - name: Checkout exact transport branch
+      - name: Checkout exact transport branch sparsely
         uses: actions/checkout@v4
         with:
           ref: codex/academy-v4-public-master-transport-20260821
-          fetch-depth: 0
+          fetch-depth: 1
+          sparse-checkout: |
+            .github/workflows
+            content/studienskripte/v4
 
-      - name: Download sanitized transport artifact
+      - name: Download and verify sanitized artifact
         shell: bash
         run: |
           set -euo pipefail
           curl --fail --location --retry 3 --retry-delay 1 "$ARTIFACT_URL" -o /tmp/academy-v4-sanitized.zip
-          unzip -l /tmp/academy-v4-sanitized.zip
           rm -rf /tmp/academy-v4-artifact /tmp/academy-v4-public
           mkdir -p /tmp/academy-v4-artifact /tmp/academy-v4-public
           unzip -q /tmp/academy-v4-sanitized.zip -d /tmp/academy-v4-artifact
@@ -45,33 +41,33 @@ jobs:
           actual="$(sha256sum "$archive" | awk '{print $1}')"
           test "$actual" = "$EXPECTED_ARCHIVE_SHA256"
           tar -xzf "$archive" -C /tmp/academy-v4-public
+          test -f /tmp/academy-v4-public/public-master/PUBLIC_MASTER_MANIFEST.json
 
       - name: Verify sanitized bundle contract
         shell: bash
         run: |
           set -euo pipefail
-          test -f /tmp/academy-v4-public/public-master/PUBLIC_MASTER_MANIFEST.json
           node <<'NODE'
           const fs = require('fs');
           const m = JSON.parse(fs.readFileSync('/tmp/academy-v4-public/public-master/PUBLIC_MASTER_MANIFEST.json','utf8'));
-          if (m.curriculum_version !== '4.0') throw new Error(`version=${m.curriculum_version}`);
-          if (m.generated_from?.sha !== process.env.SOURCE_SHA) throw new Error(`source=${m.generated_from?.sha}`);
-          if (m.counts?.study_lectures !== 120) throw new Error(`study=${m.counts?.study_lectures}`);
-          if (m.counts?.base !== 108) throw new Error(`base=${m.counts?.base}`);
-          if (m.counts?.state_architecture !== 12) throw new Error(`gov=${m.counts?.state_architecture}`);
-          if (m.counts?.active_offering_lectures !== 58) throw new Error(`offerings=${m.counts?.active_offering_lectures}`);
-          if (m.counts?.total_public_lectures !== 178) throw new Error(`total=${m.counts?.total_public_lectures}`);
-          if (m.security?.assessment_secrets_included !== false) throw new Error('assessment secrets flag');
-          if (m.lectures?.length !== 178) throw new Error(`manifest lectures=${m.lectures?.length}`);
-          const ids = new Set(m.lectures.map(x => x.lecture_id));
-          if (ids.size !== 178) throw new Error('duplicate lecture ids');
+          const c = m.counts || {};
+          const checks = [
+            [m.curriculum_version === '4.0','version'],
+            [m.generated_from?.sha === process.env.SOURCE_SHA,'source'],
+            [c.study_lectures === 120,'study'],
+            [c.base === 108,'base'],
+            [c.state_architecture === 12,'gov'],
+            [c.active_offering_lectures === 58,'offerings'],
+            [c.total_public_lectures === 178,'total'],
+            [m.security?.assessment_secrets_included === false,'security'],
+            [m.lectures?.length === 178,'manifest-count'],
+            [new Set(m.lectures.map(x=>x.lecture_id)).size === 178,'stable-ids']
+          ];
+          for (const [ok,label] of checks) if (!ok) throw new Error(`contract ${label}`);
           for (const x of m.lectures) if (x.source_sha !== process.env.SOURCE_SHA || x.curriculum_version !== '4.0') throw new Error(`provenance ${x.lecture_id}`);
           console.log('ACADEMY_V4_SANITIZED_BUNDLE_CONTRACT_PASS 120+58=178');
           NODE
-          if grep -RInE '\*\*Lösung(en)?:\*\*|CorrectAnswer|correct_answer|answer_key|Musterlösung|Lösungsschlüssel|instructor[_ -]?(answer|solution|rubric)|passing[_ -]?score[_ -]?key' /tmp/academy-v4-public/public-master; then
-            echo 'Protected assessment content detected' >&2
-            exit 1
-          fi
+          if grep -RInE '\*\*Lösung(en)?:\*\*|CorrectAnswer|correct_answer|answer_key|Musterlösung|Lösungsschlüssel|instructor[_ -]?(answer|solution|rubric)|passing[_ -]?score[_ -]?key' /tmp/academy-v4-public/public-master; then exit 1; fi
 
       - name: Materialize public master without touching legacy
         shell: bash
@@ -85,18 +81,13 @@ jobs:
           cp /tmp/academy-v4-public/public-master/PUBLIC_MASTER_MANIFEST.json content/studienskripte/v4/PUBLIC_MASTER_MANIFEST.json
           node <<'NODE'
           const fs = require('fs');
-          const p = 'content/studienskripte/v4/SOURCE_LOCK.json';
-          const lock = JSON.parse(fs.readFileSync(p,'utf8'));
-          lock.source_sha = process.env.SOURCE_SHA;
-          lock.source_repo_main_observed_sha = '861a4f24ac97e386a55b5037913c5ad46545a022';
-          lock.source_pin_note = 'Public-Master materialized from a sanitized, hash-verified transport artifact generated on exact private App source SHA ecee82cce60612332b4dc909b2fecfcb380b1a24. Fach manifests remain blob-pinned; no assessment secrets are projected.';
-          lock.transport = {
-            type: 'SANITIZED_HASH_VERIFIED_GITHUB_ACTIONS_ARTIFACT',
-            archive_sha256: process.env.EXPECTED_ARCHIVE_SHA256,
-            source_repo: process.env.SOURCE_REPO,
-            source_sha: process.env.SOURCE_SHA
-          };
-          fs.writeFileSync(p, JSON.stringify(lock,null,2)+'\n');
+          const p='content/studienskripte/v4/SOURCE_LOCK.json';
+          const lock=JSON.parse(fs.readFileSync(p,'utf8'));
+          lock.source_sha=process.env.SOURCE_SHA;
+          lock.source_repo_main_observed_sha='861a4f24ac97e386a55b5037913c5ad46545a022';
+          lock.source_pin_note='Public-Master materialized from sanitized hash-verified transport artifact generated on exact private App source SHA ecee82cce60612332b4dc909b2fecfcb380b1a24; fach manifest blobs remain pinned and no assessment secrets are projected.';
+          lock.transport={type:'SANITIZED_HASH_VERIFIED_GITHUB_ACTIONS_ARTIFACT',archive_sha256:process.env.EXPECTED_ARCHIVE_SHA256,source_repo:process.env.SOURCE_REPO,source_sha:process.env.SOURCE_SHA};
+          fs.writeFileSync(p,JSON.stringify(lock,null,2)+'\n');
           NODE
 
       - name: Verify local public-master parity and privacy
@@ -104,39 +95,29 @@ jobs:
         run: |
           set -euo pipefail
           node <<'NODE'
-          const fs = require('fs');
-          const path = require('path');
-          const crypto = require('crypto');
-          const m = JSON.parse(fs.readFileSync('content/studienskripte/v4/PUBLIC_MASTER_MANIFEST.json','utf8'));
-          for (const x of m.lectures) {
-            const p = path.join('content/studienskripte/v4', x.public_path.replace(/^content\/studienskripte\/v4\//,''));
-            if (!fs.existsSync(p)) throw new Error(`missing ${p}`);
-            const data = fs.readFileSync(p,'utf8');
-            const h = crypto.createHash('sha256').update(data).digest('hex');
-            if (h !== x.public_sha256) throw new Error(`hash drift ${x.lecture_id}`);
-            if (!data.includes(`source=${process.env.SOURCE_REPO}@${process.env.SOURCE_SHA}`)) throw new Error(`provenance missing ${x.lecture_id}`);
+          const fs=require('fs'), path=require('path'), crypto=require('crypto');
+          const m=JSON.parse(fs.readFileSync('content/studienskripte/v4/PUBLIC_MASTER_MANIFEST.json','utf8'));
+          for(const x of m.lectures){
+            const p=path.join('content/studienskripte/v4',x.public_path.replace(/^content\/studienskripte\/v4\//,''));
+            if(!fs.existsSync(p)) throw new Error(`missing ${p}`);
+            const data=fs.readFileSync(p,'utf8');
+            if(crypto.createHash('sha256').update(data).digest('hex')!==x.public_sha256) throw new Error(`hash ${x.lecture_id}`);
+            if(!data.includes(`source=${process.env.SOURCE_REPO}@${process.env.SOURCE_SHA}`)) throw new Error(`provenance ${x.lecture_id}`);
           }
           console.log('ACADEMY_SCRIPT_MASTER_MIRROR_PARITY PASS');
           console.log('PUBLIC_MASTER_SOURCE_PROVENANCE_PRESENT PASS');
           console.log('NO_APP_ONLY_PUBLIC_SCRIPT_PARALLEL_TRUTH PASS');
           NODE
-          if grep -RInE '\*\*Lösung(en)?:\*\*|CorrectAnswer|correct_answer|answer_key|Musterlösung|Lösungsschlüssel|instructor[_ -]?(answer|solution|rubric)|passing[_ -]?score[_ -]?key' content/studienskripte/v4/grundstudium content/studienskripte/v4/angebote; then
-            echo 'NO_ASSESSMENT_SECRET_LEAK FAIL' >&2
-            exit 1
-          fi
+          if grep -RInE '\*\*Lösung(en)?:\*\*|CorrectAnswer|correct_answer|answer_key|Musterlösung|Lösungsschlüssel|instructor[_ -]?(answer|solution|rubric)|passing[_ -]?score[_ -]?key' content/studienskripte/v4/grundstudium content/studienskripte/v4/angebote; then exit 1; fi
           echo 'NO_ASSESSMENT_SECRET_LEAK PASS'
 
       - name: Commit materialized public master
         shell: bash
         run: |
           set -euo pipefail
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add content/studienskripte/v4
-          if git diff --cached --quiet; then
-            echo 'No materialized diff.'
-            exit 0
-          fi
-          git commit -m "feat(academy-v4): materialize sanitized public master 120+58"
-          git pull --rebase origin codex/academy-v4-public-master-transport-20260821
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'feat(academy-v4): materialize sanitized public master 120+58'
           git push origin HEAD:codex/academy-v4-public-master-transport-20260821
