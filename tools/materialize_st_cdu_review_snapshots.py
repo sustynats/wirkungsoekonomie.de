@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Materialize exact #234 CDU source-bound review comments for convergence.
+"""Materialize exact canonical #234 CDU source-bound review comments.
 
 Mechanical provenance helper only. It does not create, alter or infer Fach semantics.
-It selects already-existing source-bound #234 comments by their canonical checkpoint
-and writes byte-stable Markdown snapshots plus an index for PR #257 reconciliation.
+Selection requires the shard's own PASS checkpoint *and* its own zero-gap marker,
+so a later continuation comment cannot be mistaken for the reviewed shard it cites.
 """
 from __future__ import annotations
 
@@ -22,18 +22,18 @@ OUT_DIR = pathlib.Path(
 )
 
 SHARDS = [
-    ("p23-p24", "ST_CDU_PRIMARY_PARITY_P23_P24 = PASS_SEGMENT", None),
-    ("p25-p28", "ST_CDU_PRIMARY_PARITY_P25_P28 = PASS_SEGMENT", None),
-    ("p29-p32", "ST_CDU_PRIMARY_PARITY_P29_P32 = PASS_SEGMENT", None),
-    ("p33-p36", "ST_CDU_PRIMARY_PARITY_P33_P36 = PASS_SEGMENT", None),
-    ("p37-p39", "ST_CDU_PRIMARY_PARITY_P37_P39 = PASS_SEGMENT", None),
-    ("p40-p42", "ST_CDU_PRIMARY_PARITY_P40_P42 = PASS_SEGMENT", None),
-    ("p43-p46", "ST_CDU_PRIMARY_PARITY_P43_P46 = PASS_SEGMENT", "ST_CDU_P43_P46_NEW_OR_SPLIT_TERMINAL = PASS_36"),
-    ("p47-p49", "ST_CDU_PRIMARY_PARITY_P47_P49 = PASS_SEGMENT", "ST_CDU_P47_P49_NEW_OR_SPLIT_TERMINAL = PASS_16"),
-    ("p50-p53", "ST_CDU_PRIMARY_PARITY_P50_P53 = PASS_SEGMENT", None),
-    ("p54-p56", "ST_CDU_PRIMARY_PARITY_P54_P56 = PASS_SEGMENT", None),
-    ("p57-p59", "ST_CDU_PRIMARY_PARITY_P57_P59 = PASS_SEGMENT", None),
-    ("p63-p64", "ST_CDU_PRIMARY_PARITY_P63_P64 = PASS_SEGMENT", None),
+    ("p23-p24", "ST_CDU_PRIMARY_PARITY_P23_P24 = PASS_SEGMENT", "ST_CDU_P23_P24_UNRESOLVED_SOURCE_GAPS = 0", None),
+    ("p25-p28", "ST_CDU_PRIMARY_PARITY_P25_P28 = PASS_SEGMENT", "ST_CDU_P25_P28_UNRESOLVED_SOURCE_GAPS = 0", None),
+    ("p29-p32", "ST_CDU_PRIMARY_PARITY_P29_P32 = PASS_SEGMENT", "ST_CDU_P29_P32_UNRESOLVED_SOURCE_GAPS = 0", None),
+    ("p33-p36", "ST_CDU_PRIMARY_PARITY_P33_P36 = PASS_SEGMENT", "ST_CDU_P33_P36_UNRESOLVED_SOURCE_GAPS = 0", None),
+    ("p37-p39", "ST_CDU_PRIMARY_PARITY_P37_P39 = PASS_SEGMENT", "ST_CDU_P37_P39_UNRESOLVED_SOURCE_GAPS = 0", None),
+    ("p40-p42", "ST_CDU_PRIMARY_PARITY_P40_P42 = PASS_SEGMENT", "ST_CDU_P40_P42_UNRESOLVED_SOURCE_GAPS = 0", None),
+    ("p43-p46", "ST_CDU_PRIMARY_PARITY_P43_P46 = PASS_SEGMENT", "ST_CDU_P43_P46_UNRESOLVED_SOURCE_GAPS = 0", "ST_CDU_P43_P46_NEW_OR_SPLIT_TERMINAL = PASS_36"),
+    ("p47-p49", "ST_CDU_PRIMARY_PARITY_P47_P49 = PASS_SEGMENT", "ST_CDU_P47_P49_UNRESOLVED_SOURCE_GAPS = 0", "ST_CDU_P47_P49_NEW_OR_SPLIT_TERMINAL = PASS_16"),
+    ("p50-p53", "ST_CDU_PRIMARY_PARITY_P50_P53 = PASS_SEGMENT", "ST_CDU_P50_P53_UNRESOLVED_SOURCE_GAPS = 0", None),
+    ("p54-p56", "ST_CDU_PRIMARY_PARITY_P54_P56 = PASS_SEGMENT", "ST_CDU_P54_P56_UNRESOLVED_SOURCE_GAPS = 0", None),
+    ("p57-p59", "ST_CDU_PRIMARY_PARITY_P57_P59 = PASS_SEGMENT", "ST_CDU_P57_P59_UNRESOLVED_SOURCE_GAPS = 0", None),
+    ("p63-p64", "ST_CDU_PRIMARY_PARITY_P63_P64 = PASS_SEGMENT", "ST_CDU_P63_P64_UNRESOLVED_SOURCE_GAPS = 0", None),
 ]
 
 
@@ -69,33 +69,38 @@ def fetch_all_comments():
     return comments
 
 
-def choose(comments, checkpoint: str, canonical_token: str | None):
-    candidates = [c for c in comments if checkpoint in (c.get("body") or "")]
-    if canonical_token:
-        candidates = [c for c in candidates if canonical_token in (c.get("body") or "")]
+def choose(comments, checkpoint: str, zero_gap_token: str, canonical_token: str | None):
+    candidates = []
+    for c in comments:
+        body = c.get("body") or ""
+        if checkpoint not in body or zero_gap_token not in body:
+            continue
+        if canonical_token and canonical_token not in body:
+            continue
+        candidates.append(c)
     if not candidates:
         raise RuntimeError(
-            f"No #234 comment matches checkpoint={checkpoint!r}, canonical_token={canonical_token!r}"
+            f"No #234 comment matches checkpoint={checkpoint!r}, zero_gap={zero_gap_token!r}, canonical_token={canonical_token!r}"
         )
-    # Later source-bound reconciliation wins for duplicate/overlapping reviews.
     candidates.sort(key=lambda c: (c.get("created_at") or "", int(c["id"])))
-    return candidates[-1]
+    return candidates[-1], [int(c["id"]) for c in candidates]
 
 
 def main() -> int:
     comments = fetch_all_comments()
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     index = {
-        "schema_version": "1.0",
+        "schema_version": "1.1",
         "programme_key": "ltw-2026-st-cdu",
         "issue": 234,
         "purpose": "MECHANICAL_SOURCE_BOUND_REVIEW_PROVENANCE_FOR_GLOBAL_LEAF_RECONCILIATION",
+        "selection_rule": "OWN_PASS_CHECKPOINT_AND_OWN_ZERO_GAP_MARKER_PLUS_CANONICAL_TOKEN_WHERE_REQUIRED",
         "fach_semantics_created": False,
         "entries": [],
     }
 
-    for slug, checkpoint, canonical_token in SHARDS:
-        c = choose(comments, checkpoint, canonical_token)
+    for slug, checkpoint, zero_gap_token, canonical_token in SHARDS:
+        c, candidate_ids = choose(comments, checkpoint, zero_gap_token, canonical_token)
         body = (c.get("body") or "").replace("\r\n", "\n").rstrip() + "\n"
         sha = hashlib.sha256(body.encode("utf-8")).hexdigest()
         out = OUT_DIR / f"ltw-2026-st-cdu-primary-parity-{slug}-review.md"
@@ -104,7 +109,9 @@ def main() -> int:
             {
                 "shard": slug,
                 "checkpoint": checkpoint,
+                "zero_gap_token": zero_gap_token,
                 "canonical_token": canonical_token,
+                "matching_candidate_ids": candidate_ids,
                 "issue_comment_id": int(c["id"]),
                 "issue_comment_url": c["html_url"],
                 "created_at": c.get("created_at"),
