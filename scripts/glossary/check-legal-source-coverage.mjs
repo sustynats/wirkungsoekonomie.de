@@ -65,6 +65,84 @@ const requiredCoverage = [
     url: "https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng",
     host: "eur-lex.europa.eu",
   },
+  {
+    termId: "deutsche-nachhaltigkeitsstrategie",
+    archiveCode: "WÖK-Q-9032",
+    url: "https://www.bundesregierung.de/breg-de/aktuelles/deutsche-nachhaltigkeitsstrategie-2025-2332540",
+    host: "www.bundesregierung.de",
+  },
+  {
+    termId: "gemeinsame-geschaeftsordnung-bundesministerien",
+    archiveCode: "WÖK-Q-9029",
+    url: "https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm",
+    host: "www.verwaltungsvorschriften-im-internet.de",
+  },
+  {
+    termId: "gesetzesfolgenabschaetzung",
+    archiveCode: "WÖK-Q-9029",
+    url: "https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm",
+    host: "www.verwaltungsvorschriften-im-internet.de",
+  },
+  {
+    termId: "nachhaltigkeitspruefung-bund",
+    archiveCode: "WÖK-Q-9030",
+    url: "https://www.bmj.de/DE/ministerium/nachhaltigkeit/gesetzgebung/gesetzgebung_artikel.html",
+    host: "www.bmj.de",
+  },
+  {
+    termId: "enap",
+    archiveCode: "WÖK-Q-9034",
+    url: "https://plattform.egesetzgebung.bund.de/cockpit/#/egfa",
+    host: "plattform.egesetzgebung.bund.de",
+  },
+  {
+    termId: "egesetzgebung-egfa",
+    archiveCode: "WÖK-Q-9034",
+    url: "https://plattform.egesetzgebung.bund.de/cockpit/#/egfa",
+    host: "plattform.egesetzgebung.bund.de",
+  },
+  {
+    termId: "dns-indikator",
+    archiveCode: "WÖK-Q-9033",
+    url: "https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Nachhaltigkeitsindikatoren/_inhalt.html",
+    host: "www.destatis.de",
+  },
+  {
+    termId: "zielbezug-vs-wirkung",
+    archiveCode: "WÖK-Q-9031",
+    url: "https://www.bundesregierung.de/breg-de/schwerpunkte/wirksam-regieren/steuerung-nachhaltigkeitsstrategie-419776",
+    host: "www.bundesregierung.de",
+  },
+  {
+    termId: "ex-ante-folgenpruefung-reality-check",
+    archiveCode: "WÖK-Q-9029",
+    url: "https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm",
+    host: "www.verwaltungsvorschriften-im-internet.de",
+  },
+  {
+    termId: "staatliche-nachhaltigkeitsarchitektur",
+    archiveCode: "WÖK-Q-9031",
+    url: "https://www.bundesregierung.de/breg-de/schwerpunkte/wirksam-regieren/steuerung-nachhaltigkeitsstrategie-419776",
+    host: "www.bundesregierung.de",
+  },
+  {
+    termId: "parlamentarischer-beirat-nachhaltige-entwicklung",
+    archiveCode: "WÖK-Q-9036",
+    url: "https://www.bundestag.de/ausschuesse/weitere_gremien/pbnez",
+    host: "www.bundestag.de",
+  },
+  {
+    termId: "state-gfa-enap-benchmark",
+    archiveCode: "WÖK-Q-9029",
+    url: "https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm",
+    host: "www.verwaltungsvorschriften-im-internet.de",
+  },
+  {
+    termId: "wirkungsblindheit",
+    archiveCode: "WÖK-Q-9029",
+    url: "https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm",
+    host: "www.verwaltungsvorschriften-im-internet.de",
+  },
 ];
 
 function readJson(file) {

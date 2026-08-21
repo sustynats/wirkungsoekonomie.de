@@ -482,6 +482,8 @@ function detailBody(source, clusterLabels) {
     ["Herkunft", esc(originLabel(source.origin))],
     ["Prüfstatus", esc(reviewLabel(source.reviewStatus))],
     ["Datenqualität", source.dataQuality ? esc(qualityLabel(source.dataQuality)) : ""],
+    ["Quellenfunktion", source.sourceFunction ? esc(source.sourceFunction) : ""],
+    ["Zulässige Datenfunktion", source.dataFunction ? esc(source.dataFunction) : ""],
     ["Wirkungsfelder", (source.impactFields || []).length ? esc((source.impactFields || []).join(", ")) : ""],
     ["SDG-Bezug", source.sdg ? esc(source.sdg) : ""],
     ["Jahr", source.year ? esc(String(source.year)) : ""],

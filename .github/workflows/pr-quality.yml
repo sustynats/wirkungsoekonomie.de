@@ -1,5 +1,8 @@
 name: PR quality gate
 
+env:
+  SOURCE_DATE_EPOCH: '1787270400'
+
 on:
   pull_request:
   workflow_dispatch:

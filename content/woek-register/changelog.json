@@ -169,5 +169,59 @@
     "Nachher": "v1.4 FINAL ist die führende technische Registerfassung ab 16.08.2026.",
     "Begründung": "FINAL bezeichnet den führenden Release-Stand, nicht die externe Validierung aller offenen Kalibrierungen.",
     "Status": "Umgesetzt"
+  },
+  {
+    "Change_ID": "CH-020",
+    "Bereich": "Registerarchitektur",
+    "Änderungstyp": "Methodenkorrektur",
+    "Vorher": "v1.4 vermischte Wirkungsgegenstand, Messgröße und Scoring teilweise in einem hybriden Register.",
+    "Nachher": "Masterregister/MasterItems (WAS) und Wirkindikatorenregister (WOMIT) sind als getrennte Ebenen ausgewiesen.",
+    "Begründung": "Indikator ist nicht Wirkung; Messontologie und Wirkungsontologie müssen getrennt bleiben.",
+    "Status": "Umgesetzt"
+  },
+  {
+    "Change_ID": "CH-021",
+    "Bereich": "WÖk-IDs",
+    "Änderungstyp": "Kompatibilität",
+    "Vorher": "621 IDs in v1.4.",
+    "Nachher": "Dieselben 621 IDs in v1.5; keine ID ergänzt, entfernt oder umbenannt.",
+    "Begründung": "Stabile Referenzen und transparente Versionierung.",
+    "Status": "Umgesetzt"
+  },
+  {
+    "Change_ID": "CH-022",
+    "Bereich": "Zuordnungen",
+    "Änderungstyp": "Governance",
+    "Vorher": "StateVariable- und Indicator-Mapping waren nicht als eigene Prüfstatus sichtbar.",
+    "Nachher": "Alle itembezogenen Zuordnungen starten als OPEN_REVIEW_REQUIRED.",
+    "Begründung": "Keine fachliche Zuordnung ohne Quellen-, Mechanismus- und Datenprüfung erfinden.",
+    "Status": "Umgesetzt"
+  },
+  {
+    "Change_ID": "CH-023",
+    "Bereich": "Staatsarchitektur",
+    "Änderungstyp": "Quellenerweiterung",
+    "Vorher": "DNS, GGO/GFA, Nachhaltigkeitsprüfung, eNAP/eGFA und parlamentarische Governance fehlten als zusammenhängender Referenzstrang.",
+    "Nachher": "Amtliche Quellen WÖK-Q-9029 bis WÖK-Q-9037 sind mit Datenfunktion und internem Quellenpfad dokumentiert.",
+    "Begründung": "WÖk ersetzt die bestehende staatliche Architektur nicht, sondern ergänzt sie.",
+    "Status": "Umgesetzt"
+  },
+  {
+    "Change_ID": "CH-024",
+    "Bereich": "Terminologie",
+    "Änderungstyp": "Referenzaktualisierung",
+    "Vorher": "Begriffsleitfaden v1.5.",
+    "Nachher": "Begriffsleitfaden v1.6 mit staatlicher Nachhaltigkeitsarchitektur und Zwei-Ebenen-Registerlogik.",
+    "Begründung": "Glossar, Leitfaden, Register und Portale müssen dieselbe führende Terminologie verwenden.",
+    "Status": "Umgesetzt"
+  },
+  {
+    "Change_ID": "CH-025",
+    "Bereich": "Releasegrenze",
+    "Änderungstyp": "Transparenz",
+    "Vorher": "FINAL konnte als Abschluss aller Fachprüfungen missverstanden werden.",
+    "Nachher": "v1.5 ist die führende Architektur- und MasterItems-Fassung; NACE, Benchmarks, Schwellen und itembezogene Mappings bleiben entsprechend ihrem Prüfstatus offen.",
+    "Begründung": "Versionierung darf offene Wissenschafts- und Datenarbeit nicht verdecken.",
+    "Status": "Umgesetzt"
   }
 ]

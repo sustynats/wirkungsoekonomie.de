@@ -2,11 +2,11 @@
   {
     "Source_ID": "INT-WOEK-GLS",
     "Organisation": "Natalie Weber / Wirkungsökonomie",
-    "Titel/Standard": "Führender Begriffsleitfaden der Wirkungsökonomie v1.5",
-    "Funktion": "Führende Begriffs-, Methoden- und Redaktionsreferenz",
-    "Version/Stand": "15.08.2026",
+    "Titel/Standard": "Führender Begriffsleitfaden der Wirkungsökonomie v1.6",
+    "Funktion": "Führende Begriffs-, Methoden- und Redaktionsreferenz einschließlich staatlicher Nachhaltigkeitsarchitektur",
+    "Version/Stand": "21.08.2026",
     "URL": null,
-    "Hinweise": "Für neue Inhalte verbindlich; Wirkung neutral; SDG+ als WÖk-Erweiterung; Richtung und Evidenz strikt getrennt."
+    "Hinweise": "Für neue Inhalte verbindlich; DNS/GGO/GFA/eNAP/eGFA werden als bestehende staatliche Architektur behandelt; WÖk ergänzt sie spezifisch."
   },
   {
     "Source_ID": "INT-WOEK-TL",
@@ -20,11 +20,11 @@
   {
     "Source_ID": "INT-WOEK-MASTER",
     "Organisation": "Natalie Weber / Wirkungsökonomie",
-    "Titel/Standard": "WÖk Master Items v1.4 FINAL",
-    "Funktion": "Kanonisches WÖk-ID-, Scoring-, Quellen- und Governance-Register",
-    "Version/Stand": "v1.4 · 16.08.2026",
+    "Titel/Standard": "WÖk Master Items v1.5",
+    "Funktion": "Kanonisches WÖk-MasterItem-, Scoring-, Quellen- und Governance-Register",
+    "Version/Stand": "v1.5 · 21.08.2026",
     "URL": null,
-    "Hinweise": "Führende technische Registerfassung. Offene Schwellen, Benchmarks und Fachprüfungen bleiben als offen markiert."
+    "Hinweise": "Führende MasterItems-Fassung mit expliziter Zwei-Ebenen-Architektur; 621 IDs unverändert, offene Zuordnungen ausdrücklich offen."
   },
   {
     "Source_ID": "INT-WOEK-SC",
@@ -430,5 +430,86 @@
     "Version/Stand": "v1.0 · 16.08.2026",
     "URL": null,
     "Hinweise": "Verbindliche Betriebsanweisung; u. a. Fakt/Potenzial/Risiko/Wirkung/Norm trennen, keine Daten = keine Bewertung, Primärquellen bevorzugen."
+  },
+  {
+    "Source_ID": "WÖK-Q-9029",
+    "Organisation": "Bundesregierung / Bundesministerien",
+    "Titel/Standard": "Gemeinsame Geschäftsordnung der Bundesministerien (GGO) – §§ 43 und 44",
+    "Funktion": "Verfahrens- und Rechtsgrundlage der Gesetzesbegründung und Gesetzesfolgenabschätzung; Datenfunktion: REFERENCE | PROCEDURE | EX_ANTE_ASSESSMENT | REVIEW_DESIGN",
+    "Version/Stand": "2026",
+    "URL": "https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm",
+    "Hinweise": "Kanonische Verfahrensquelle für die staatliche Gesetzesfolgenabschätzung des Bundes. Sie belegt, dass Folgen-, Alternativen- und spätere Überprüfungslogik bereits institutionell angelegt sind. Die WÖk ergänzt diese Architektur objektspezifisch und systemisch; sie ersetzt die GFA nicht."
+  },
+  {
+    "Source_ID": "WÖK-Q-9030",
+    "Organisation": "Bundesministerium der Justiz und für Verbraucherschutz",
+    "Titel/Standard": "BMJV – Nachhaltige Gesetzgebung",
+    "Funktion": "Amtliche Verfahrensinformation zur Nachhaltigkeitsprüfung und zu eNAP; Datenfunktion: REFERENCE | PROCEDURE | EX_ANTE_ASSESSMENT",
+    "Version/Stand": "2026",
+    "URL": "https://www.bmj.de/DE/ministerium/nachhaltigkeit/gesetzgebung/gesetzgebung_artikel.html",
+    "Hinweise": "Amtliche Primärquelle für die praktische Einordnung von Nachhaltigkeitsprüfung und eNAP in der Rechtsetzung. Zielbezug oder eNAP-Nutzung ist kein Kausalitätsnachweis für die tatsächliche Wirkung eines Vorhabens."
+  },
+  {
+    "Source_ID": "WÖK-Q-9031",
+    "Organisation": "Bundesregierung",
+    "Titel/Standard": "Bundesregierung – Steuerung der Deutschen Nachhaltigkeitsstrategie",
+    "Funktion": "Governance-, Ziel- und Monitoringreferenz der Deutschen Nachhaltigkeitsstrategie; Datenfunktion: REFERENCE | TARGET | GOVERNANCE | MONITORING | CONTEXT",
+    "Version/Stand": "2025",
+    "URL": "https://www.bundesregierung.de/breg-de/schwerpunkte/wirksam-regieren/steuerung-nachhaltigkeitsstrategie-419776",
+    "Hinweise": "Referenz für Governance, Zielsystem und Monitoring der DNS. Die DNS-Indikatoren liefern Ziel-, Baseline- und Monitoringinformation, aber nicht automatisch Attribution für einzelne Maßnahmen."
+  },
+  {
+    "Source_ID": "WÖK-Q-9032",
+    "Organisation": "Bundesregierung",
+    "Titel/Standard": "Deutsche Nachhaltigkeitsstrategie – Weiterentwicklung 2025",
+    "Funktion": "Nationale Ziel-, Governance- und Referenzarchitektur zur Agenda 2030; Datenfunktion: REFERENCE | TARGET | GOVERNANCE | CONTEXT",
+    "Version/Stand": "2025",
+    "URL": "https://www.bundesregierung.de/breg-de/bundesregierung/bundeskanzleramt/deutsche-nachhaltigkeitsstrategie-2025-2332540",
+    "Hinweise": "Kanonische nationale Ziel- und Referenzebene für WÖk-Analysen mit Deutschlandbezug. DNS-Zielzuordnung ist Referenz- und Monitoringinformation, kein Kausalitätsbeweis."
+  },
+  {
+    "Source_ID": "WÖK-Q-9033",
+    "Organisation": "Statistisches Bundesamt (Destatis)",
+    "Titel/Standard": "Statistisches Bundesamt – Indikatoren der Deutschen Nachhaltigkeitsstrategie",
+    "Funktion": "Amtliche Zustands-, Zeitreihen- und Zielerreichungsbeobachtung; Datenfunktion: BASELINE | TARGET | OUTCOME | DISTRIBUTION | CONTEXT | REALITY_CHECK",
+    "Version/Stand": "2025",
+    "URL": "https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Nachhaltigkeitsindikatoren/_inhalt.html",
+    "Hinweise": "Primärquelle für DNS-Baselines, Zielstände und Monitoring. Ein Indikator beschreibt einen Zustand oder Trend; er ist nicht mit der Wirkung oder der Zurechnung einer einzelnen politischen Maßnahme gleichzusetzen."
+  },
+  {
+    "Source_ID": "WÖK-Q-9034",
+    "Organisation": "Bundesregierung / E-Gesetzgebung",
+    "Titel/Standard": "E-Gesetzgebung – elektronische Gesetzesfolgenabschätzung (eGFA) und eNAP",
+    "Funktion": "Digitale Verfahrens- und Werkzeugreferenz für eGFA und eNAP; Datenfunktion: PROCEDURE | EX_ANTE_ASSESSMENT | DOCUMENTATION",
+    "Version/Stand": "2026",
+    "URL": "https://plattform.egesetzgebung.bund.de/cockpit/#/egfa",
+    "Hinweise": "Tool- und Verfahrensreferenz. Eine öffentlich sichtbare Nachhaltigkeitsdarstellung oder GFA ist nicht automatisch ein öffentlich nachgewiesener, wort- oder byteidentischer eNAP-Export."
+  },
+  {
+    "Source_ID": "WÖK-Q-9035",
+    "Organisation": "Bundesregierung",
+    "Titel/Standard": "Aktionsplan Nachhaltigkeit 2026 – Beteiligungsfassung",
+    "Funktion": "Versionierter politischer Beteiligungs- und Missionsrahmen; Datenfunktion: REFERENCE | TARGET | GOVERNANCE | IMPLEMENTATION_CONTEXT",
+    "Version/Stand": "2026",
+    "URL": "https://www.bundesregierung.de/breg-de/aktuelles/aktionsplan-nachhaltigkeit-2392096",
+    "Hinweise": "Aktueller Weiterentwicklungs- und Governance-Kontext. Die Beteiligungsfassung ist als Beteiligungsstand zu kennzeichnen und nicht als bereits endgültig beschlossener Gesamtplan auszugeben."
+  },
+  {
+    "Source_ID": "WÖK-Q-9036",
+    "Organisation": "Deutscher Bundestag",
+    "Titel/Standard": "Deutscher Bundestag – Parlamentarischer Beirat für nachhaltige Entwicklung und Zukunftsfragen",
+    "Funktion": "Amtliche Institutions- und Aufgabenreferenz der parlamentarischen Nachhaltigkeitsgovernance; Datenfunktion: REFERENCE | GOVERNANCE | PARLIAMENTARY_SCRUTINY",
+    "Version/Stand": "2026",
+    "URL": "https://www.bundestag.de/ausschuesse/weitere_gremien/pbnez",
+    "Hinweise": "Primärquelle für Bezeichnung, Aufgaben und parlamentarische Funktion des PBnEZ. Die parlamentarische Begleitung ist von der exekutiven GFA und Nachhaltigkeitsprüfung sowie von unabhängigen WÖk-Analysen zu trennen."
+  },
+  {
+    "Source_ID": "WÖK-Q-9037",
+    "Organisation": "Bundeskanzleramt / Bundesministerium der Justiz / E-Gesetzgebung",
+    "Titel/Standard": "E-Gesetzgebung – Arbeitshilfe zur frühen Einbeziehung von Nachhaltigkeitszielen und eNAP",
+    "Funktion": "Verfahrens- und Anwendungshinweis für die frühe Nachhaltigkeitsprüfung mit eNAP; Datenfunktion: PROCEDURE | EX_ANTE_ASSESSMENT | DOCUMENTATION | IMPLEMENTATION",
+    "Version/Stand": "2026",
+    "URL": "https://plattform.egesetzgebung.bund.de/egesetzgebung-platform-backend/arbeitshilfen/download/37",
+    "Hinweise": "Primärquelle für die praktische Nutzung und Dokumentationslogik von eNAP. Sie erlaubt nicht den Schluss, jede öffentliche Nachhaltigkeitsdarstellung sei ein wort- oder byteidentischer öffentlicher eNAP-Export."
   }
 ]
