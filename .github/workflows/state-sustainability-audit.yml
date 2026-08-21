@@ -1,0 +1,37 @@
+name: State sustainability architecture audit
+
+on:
+  pull_request:
+    paths:
+      - '**/*.html'
+      - 'content/**'
+      - 'tools/audit_state_sustainability_architecture.py'
+      - 'sitemap.xml'
+      - 'assets/search/**'
+      - 'public/data/woek-search-meta.json'
+      - 'llms.txt'
+      - '.github/workflows/state-sustainability-audit.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Generate exhaustive #253 URL/file matrix
+        run: python tools/audit_state_sustainability_architecture.py --root . --output artifacts/state-sustainability-architecture-url-matrix.json --markdown artifacts/state-sustainability-architecture-url-matrix.md
+      - name: Upload #253 audit matrix
+        uses: actions/upload-artifact@v4
+        with:
+          name: state-sustainability-architecture-audit
+          path: |
+            artifacts/state-sustainability-architecture-url-matrix.json
+            artifacts/state-sustainability-architecture-url-matrix.md
