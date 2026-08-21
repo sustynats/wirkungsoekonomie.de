@@ -1,6 +1,6 @@
 # Content-Reference-Report
 
-Erzeugt: 2026-08-21T19:46:06.782Z
+Erzeugt: 2026-08-21T00:00:00.000Z
 Resolved references: 1006
 Warnings: 0
 
