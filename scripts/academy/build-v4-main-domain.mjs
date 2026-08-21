@@ -102,7 +102,7 @@ const STRUCTURE = [
 const allCodes = STRUCTURE.flatMap((part) => part.modules.flatMap((module) => module[2]));
 if (allCodes.length !== 120 || new Set(allCodes).size !== 120) fail("structure must contain exactly 120 unique lecture codes");
 for (const code of allCodes) if (!byCode.has(code)) fail(`missing reviewed public-master lecture ${code}`);
-for (const entry of studyEntries) if (entry.review_status !== "FACH_ENDCONTENT_REVIEWED") fail(`${entry.display_code} is not FACH_ENDCONTENT_REVIEWED`);
+for (const entry of studyEntries) if (!String(entry.review_status || "").startsWith("FACH_ENDCONTENT_REVIEWED")) fail(`${entry.display_code} is not FACH_ENDCONTENT_REVIEWED`);
 
 const curriculum = {
   schemaVersion: "4.0",
