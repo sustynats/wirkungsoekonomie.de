@@ -156,6 +156,29 @@ def audit_matrix_contract() -> None:
         raise AssertionError("matrix omits required machine-readable support surfaces")
 
 
+def living_route_precision() -> None:
+    """Fail closed on living routes that the complete #253 matrix classifies for explicit action."""
+    require("wirkungsoekonomie.html", [
+        "Deutsche Nachhaltigkeitsstrategie (DNS)",
+        "nicht automatisch Wirkung oder Kausalität",
+        "SDG+ ist eine WÖk-eigene Erweiterung",
+    ])
+    require("verstehen.html", [
+        "Deutsche Nachhaltigkeitsstrategie",
+        "kein Wirkungs- oder Kausalitätsnachweis",
+        "SDG+ ist eine WÖk-eigene Erweiterung",
+    ])
+    require("workflow.html", [
+        "GGO/GFA",
+        "eNAP/eGFA",
+        "nicht automatisch Kausalitätsnachweise",
+    ])
+    require("kompass.html", [
+        "Frühe Folgen- und Nachhaltigkeitsprüfung existiert im Bund bereits",
+        "staatliche Prüf- und Quellenarchitektur",
+    ])
+
+
 def main() -> int:
     checks: list[tuple[str, callable]] = []
 
@@ -170,6 +193,7 @@ def main() -> int:
     checks.append(("STATE_TARGET_ALIGNMENT_NOT_CAUSALITY", lambda: require("index.html", ["kein automatischer Kausalitätsnachweis"])))
     checks.append(("PUBLIC_DOCUMENTATION_ABSENCE_NOT_EQUATED_WITH_NO_ASSESSMENT", lambda: require("methodik/externe-quellen.html", ["Daraus folgt nicht, dass keine Prüfung stattgefunden hat"])))
     checks.append(("WOEK_USP_IS_ADDITIVE_AND_SPECIFIC", lambda: require("fuer/politik.html", ["Problemprüfung", "Zielprüfung", "Gegenfaktum", "Optionsvergleich", "Reality Check"])))
+    checks.append(("LIVING_ROUTE_PRECISION_COMPLETE", living_route_precision))
     checks.append(("GLOSSARY_AND_SOURCE_CROSSLINKS_PASS", glossary_and_sources))
     checks.append(("HISTORICAL_PUBLICATIONS_NOT_SILENTLY_REWRITTEN", historical_additions_only))
     checks.append(("NO_FALSE_ABSENCE_OF_ALTERNATIVES_CLAIM", lambda: require("index.html", ["andere Lösungsmöglichkeiten"])))
