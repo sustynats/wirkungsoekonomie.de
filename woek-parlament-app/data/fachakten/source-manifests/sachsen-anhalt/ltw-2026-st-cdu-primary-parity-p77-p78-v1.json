@@ -1,0 +1,43 @@
+{
+  "schema_version":"1.0",
+  "shard_version":"2026-08-21-p77-p78-v1",
+  "programme_key":"ltw-2026-st-cdu",
+  "primary_source_url":"https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf",
+  "primary_pdf_pages":[77,78],
+  "legacy_register":"woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-cdu-zusagen.md",
+  "historical_ids_immutable":true,
+  "fach_review_issue":234,
+  "fach_review_comment_id":5375517174,
+  "authoritative_source_unit_count":null,
+  "authoritative_effect_mechanism_count":null,
+  "denominator_status":"NOT_FROZEN_PENDING_FULL_PRIMARY_SOURCE_PARITY",
+  "primary_source_diff":[
+    ["0290","CONTEXT_ONLY","KEEP_GOAL_PARENT_NO_INDEPENDENT_EFFECT_COUNT"],
+    ["0291","TRUNCATED_PARTIAL_PARENT","KEEP_ID; VERSIONED_TAX_AND_DEBT_CHILDREN"],
+    ["0292","PARTIAL_PARENT","KEEP_ID; CONTINUATION_OF_0291_DEBT_PATH"],
+    ["0293","OVERMERGED","VERSIONED_3_CHILD_SPLIT"],
+    ["0294","SAME","KEEP_ID"],
+    ["0295","OVERMERGED","VERSIONED_5_CHILD_SPLIT"],
+    ["0296","OVERMERGED","VERSIONED_2_CHILD_SPLIT"],
+    ["0297","SAME","KEEP_ID"]
+  ],
+  "terminal_source_objects":[
+    ["ST-CDU-PRIMARY-SPLIT-0291-NO-TAX-INCREASES","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","MEDIUM"],
+    ["ST-CDU-PRIMARY-SPLIT-0291-0292-DEBT-BRAKE-DEBT-NONINCREASE","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","MEDIUM"],
+    ["ST-CDU-PRIMARY-SPLIT-0293-HETEROGENEOUS-INVESTMENT-PORTFOLIO","REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON","OPEN","NOT_ASSESSABLE"],
+    ["ST-CDU-PRIMARY-SPLIT-0293-HIGH-INVESTMENT-FUTURE-PRIORITY","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","LOW"],
+    ["ST-CDU-PRIMARY-SPLIT-0293-INVESTMENT-BANK-STRENGTHEN","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","LOW"],
+    ["ltw-2026-st-cdu-0294-vorsorge-fuer-kommende-generationen-treffen-gute-zeiten-nu","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","MEDIUM"],
+    ["ST-CDU-PRIMARY-SPLIT-0295-PERMIT-ACCELERATION","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","MEDIUM"],
+    ["ST-CDU-PRIMARY-SPLIT-0295-PROCESS-AUTOMATION","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","LOW"],
+    ["ST-CDU-PRIMARY-SPLIT-0295-TASK-STRUCTURE-REVIEW","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","LOW"],
+    ["ST-CDU-PRIMARY-SPLIT-0295-INSTITUTIONAL-GRANT-REVIEW","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","MEDIUM"],
+    ["ST-CDU-PRIMARY-SPLIT-0295-DIGITAL-PUBLIC-SERVICES","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","MEDIUM"],
+    ["ST-CDU-PRIMARY-SPLIT-0296-MUNICIPAL-EQUALISATION-REFORM-2027","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","MEDIUM"],
+    ["ST-CDU-PRIMARY-SPLIT-0296-MINIMUM-FUNDING-STRUCTURAL-WEAKNESS","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","MEDIUM"],
+    ["ltw-2026-st-cdu-0297-strukturwandel-als-chance-nutzen-der-strukturwandel-entsch","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","MEDIUM"]
+  ],
+  "tuple_schema":["source_unit_id","terminal_fach_status","impact_direction","evidence_level"],
+  "segment_checks":{"primary_source_parity":"PASS_SEGMENT","terminal_source_objects":14,"unresolved_source_gaps":0,"historical_ids_mutated":false},
+  "completion_guard":{"st_cdu_primary_source_parity":"NOT_YET_FULL_PROGRAMME","st_cdu_terminal_complete":false}
+}
