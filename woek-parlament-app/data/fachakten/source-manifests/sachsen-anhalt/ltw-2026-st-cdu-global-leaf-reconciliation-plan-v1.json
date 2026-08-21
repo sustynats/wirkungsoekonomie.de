@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0",
+  "manifest_type": "PRIMARY_SOURCE_GLOBAL_LEAF_RECONCILIATION_PLAN",
+  "programme_id": "ltw-2026-st-cdu",
+  "created_from": {
+    "fach_issue": "https://github.com/sustynats/wirkungsoekonomie.de/issues/234",
+    "umbrella_issue": "https://github.com/sustynats/wirkungsoekonomie.de/issues/241",
+    "source_manifest_pr": "https://github.com/sustynats/wirkungsoekonomie.de/pull/257",
+    "final_primary_source_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf",
+    "final_primary_source_adopted": "2026-06-13",
+    "final_primary_source_page_count": 91,
+    "release1_working_baseline_count": 344,
+    "release1_working_baseline_is_authoritative_denominator": false
+  },
+  "current_fach_state": {
+    "ST_CDU_PRIMARY_SOURCE_PARITY": "PASS_FULL_PROGRAMME",
+    "source_bound_checkpoint": "#234 issuecomment 5375565181 and preceding segment reviews",
+    "ST_CDU_FINAL_VERSIONED_MANIFEST": "PENDING_GLOBAL_LEAF_RECONCILIATION",
+    "authoritative_source_unit_count": null,
+    "authoritative_effect_mechanism_count": null,
+    "denominator_status": "NOT_FROZEN_PENDING_GLOBAL_LEAF_RECONCILIATION",
+    "terminal_complete": false
+  },
+  "canonical_non_overlapping_segment_partition": [
+    {"pages": [5, 9], "expected_shard": "ltw-2026-st-cdu-primary-parity-p5-p9-v1.json", "materialized_on_pr257": true},
+    {"pages": [10, 14], "expected_shard": "ltw-2026-st-cdu-primary-parity-p10-p14-v1.json", "materialized_on_pr257": true},
+    {"pages": [15, 17], "expected_shard": "ltw-2026-st-cdu-primary-parity-p15-p17-v1.json", "materialized_on_pr257": true},
+    {"pages": [18, 22], "expected_shard": "ltw-2026-st-cdu-primary-parity-p18-p22-v1.json", "materialized_on_pr257": true},
+    {"pages": [23, 24], "expected_shard": "ltw-2026-st-cdu-primary-parity-p23-p24-v1.json", "materialized_on_pr257": false, "fach_checkpoint": "ST_CDU_PRIMARY_PARITY_P23_P24 = PASS_SEGMENT"},
+    {"pages": [25, 28], "expected_shard": "ltw-2026-st-cdu-primary-parity-p25-p28-v1.json", "materialized_on_pr257": false, "fach_checkpoint": "ST_CDU_PRIMARY_PARITY_P25_P28 = PASS_SEGMENT"},
+    {"pages": [29, 32], "expected_shard": "ltw-2026-st-cdu-primary-parity-p29-p32-v1.json", "materialized_on_pr257": false, "fach_checkpoint": "ST_CDU_PRIMARY_PARITY_P29_P32 = PASS_SEGMENT"},
+    {"pages": [33, 36], "expected_shard": "ltw-2026-st-cdu-primary-parity-p33-p36-v1.json", "materialized_on_pr257": false, "fach_checkpoint": "ST_CDU_PRIMARY_PARITY_P33_P36 = PASS_SEGMENT", "issue_comment": 5374248114},
+    {"pages": [37, 39], "expected_shard": "ltw-2026-st-cdu-primary-parity-p37-p39-v1.json", "materialized_on_pr257": false, "fach_checkpoint": "ST_CDU_PRIMARY_PARITY_P37_P39 = PASS_SEGMENT", "issue_comment": 5374339903},
+    {"pages": [40, 42], "expected_shard": "ltw-2026-st-cdu-primary-parity-p40-p42-v1.json", "materialized_on_pr257": false, "fach_checkpoint": "ST_CDU_PRIMARY_PARITY_P40_P42 = PASS_SEGMENT", "issue_comment": 5374363536},
+    {"pages": [43, 46], "expected_shard": "ltw-2026-st-cdu-primary-parity-p43-p46-v1.json", "materialized_on_pr257": false, "fach_checkpoint": "ST_CDU_PRIMARY_PARITY_P43_P46 = PASS_SEGMENT", "canonical_review_note": "Use the later source-bound P43-P46 reconciliation reporting PASS_36 and 0 unresolved gaps; do not aggregate duplicate overlapping review counts."},
+    {"pages": [47, 49], "expected_shard": "ltw-2026-st-cdu-primary-parity-p47-p49-v1.json", "materialized_on_pr257": false, "fach_checkpoint": "ST_CDU_PRIMARY_PARITY_P47_P49 = PASS_SEGMENT", "canonical_review_note": "Use the later full semantic reconciliation reporting PASS_16 and 0 unresolved gaps; an earlier overlapping review reported PASS_25 and must not be arithmetically combined."},
+    {"pages": [50, 53], "expected_shard": "ltw-2026-st-cdu-primary-parity-p50-p53-v1.json", "materialized_on_pr257": false, "fach_checkpoint": "ST_CDU_PRIMARY_PARITY_P50_P53 = PASS_SEGMENT", "issue_comment": 5374639617},
+    {"pages": [54, 56], "expected_shard": "ltw-2026-st-cdu-primary-parity-p54-p56-v1.json", "materialized_on_pr257": false, "fach_checkpoint": "ST_CDU_PRIMARY_PARITY_P54_P56 = PASS_SEGMENT", "issue_comment": 5374669067},
+    {"pages": [57, 59], "expected_shard": "ltw-2026-st-cdu-primary-parity-p57-p59-v1.json", "materialized_on_pr257": false, "fach_checkpoint": "ST_CDU_PRIMARY_PARITY_P57_P59 = PASS_SEGMENT", "issue_comment": 5374692973, "restore_guard": "legacy 0222 restored from final primary source and terminal"},
+    {"pages": [60, 62], "expected_shard": "ltw-2026-st-cdu-primary-parity-p60-p62-v1.json", "materialized_on_pr257": true},
+    {"pages": [63, 64], "expected_shard": "ltw-2026-st-cdu-primary-parity-p63-p64-v1.json", "materialized_on_pr257": false, "fach_checkpoint": "ST_CDU_PRIMARY_PARITY_P63_P64 = PASS_SEGMENT"},
+    {"pages": [65, 68], "expected_shard": "ltw-2026-st-cdu-primary-parity-p65-p68-v1.json", "materialized_on_pr257": true},
+    {"pages": [69, 73], "expected_shard": "ltw-2026-st-cdu-primary-parity-p69-p73-v1.json", "materialized_on_pr257": true},
+    {"pages": [74, 76], "expected_shard": "ltw-2026-st-cdu-primary-parity-p74-p76-v1.json", "materialized_on_pr257": true},
+    {"pages": [77, 78], "expected_shard": "ltw-2026-st-cdu-primary-parity-p77-p78-v1.json", "materialized_on_pr257": true},
+    {"pages": [79, 83], "expected_shard": "ltw-2026-st-cdu-primary-parity-p79-p83-v1.json", "materialized_on_pr257": true},
+    {"pages": [84, 86], "expected_shard": "ltw-2026-st-cdu-primary-parity-p84-p86-v1.json", "materialized_on_pr257": true},
+    {"pages": [87, 90], "expected_shard": "ltw-2026-st-cdu-primary-parity-p87-p90-v1.json", "materialized_on_pr257": true, "fach_checkpoint": "ST_CDU_PRIMARY_PARITY_P87_P90 = PASS_SEGMENT", "issue_comment": 5375565181}
+  ],
+  "overlapping_alternative_reviews_not_to_be_summed": [
+    {"pages": [43, 46], "examples": ["PASS_38", "PASS_36"], "rule": "select the later source-bound canonical reconciliation; never add both"},
+    {"pages": [47, 49], "examples": ["PASS_25", "PASS_16"], "rule": "select the later full semantic reconciliation; never add both"},
+    {"pages": [50, 52], "rule": "superseded for global non-overlapping partition by P50-P53"},
+    {"pages": [53, 55], "rule": "overlaps P50-P53/P54-P56 and is not used as an independent global counting shard"},
+    {"pages": [56, 59], "rule": "overlaps P54-P56/P57-P59 and is not used as an independent global counting shard"}
+  ],
+  "global_leaf_reconciliation_rule": {
+    "principle": "count semantic effect leaves, preserve every historical/source provenance node, and never count the same mechanism twice",
+    "source_role_required_per_object": ["COUNTABLE_CANONICAL_SOURCE", "PROVENANCE_PARENT_ONLY", "CONTEXT_ONLY"],
+    "effect_role_required_per_object": ["COUNTABLE_EFFECT_LEAF", "NONLEAF_PARENT", "CONTEXT_ONLY"],
+    "rules": [
+      "Historical Release-1 IDs and text are immutable provenance and may never be renumbered or silently rewritten.",
+      "A SAME unit with no versioned effect children may count once when terminally fach-reviewed.",
+      "A PARTIAL_PARENT, OVERMERGED or TRUNCATED parent with versioned terminal children is provenance/nonleaf for effect counting; its countable effect children count individually.",
+      "An ABSENT effect-bearing passage restored with a stable additive ID counts once only at its final effect-leaf level; if represented by a parent plus children, the parent is nonleaf.",
+      "CONTEXT_ONLY, headings, transitions, historical achievement/baseline narration, and pure restatements without an independent future effect mechanism do not count as effect leaves, but remain in the source-coverage map.",
+      "Continuation fragments are relation edges unless they add a distinct independent mechanism; they must not become duplicate effect leaves merely because they cross a page/source boundary.",
+      "Stable source_unit_id is the first global dedupe key. If the same ID appears in multiple/overlapping shard versions, identical terminal payloads dedupe; conflicting terminal status/direction/evidence is a hard reconciliation blocker.",
+      "No object may be countable simultaneously as a nonleaf parent and as one of its countable children.",
+      "Every countable final effect leaf must have one terminal fach status: EDITORIAL_V2_PLUS_APPROVED, REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON, or SOURCE_UNIT_RECLASSIFIED_VERSIONED.",
+      "No authoritative denominator is frozen while any expected canonical shard is unmaterialized, any restore/overmerge gap is unresolved, any duplicate conflict remains, or any final leaf is nonterminal.",
+      "authoritative_source_unit_count and authoritative_effect_mechanism_count are derived separately from explicit source_role/effect_role flags; equality must not be assumed or forced."
+    ]
+  },
+  "pr257_materialization_gate": {
+    "current_expected_missing_canonical_shards": [
+      "ltw-2026-st-cdu-primary-parity-p23-p24-v1.json",
+      "ltw-2026-st-cdu-primary-parity-p25-p28-v1.json",
+      "ltw-2026-st-cdu-primary-parity-p29-p32-v1.json",
+      "ltw-2026-st-cdu-primary-parity-p33-p36-v1.json",
+      "ltw-2026-st-cdu-primary-parity-p37-p39-v1.json",
+      "ltw-2026-st-cdu-primary-parity-p40-p42-v1.json",
+      "ltw-2026-st-cdu-primary-parity-p43-p46-v1.json",
+      "ltw-2026-st-cdu-primary-parity-p47-p49-v1.json",
+      "ltw-2026-st-cdu-primary-parity-p50-p53-v1.json",
+      "ltw-2026-st-cdu-primary-parity-p54-p56-v1.json",
+      "ltw-2026-st-cdu-primary-parity-p57-p59-v1.json",
+      "ltw-2026-st-cdu-primary-parity-p63-p64-v1.json"
+    ],
+    "next_required_steps": [
+      "Materialize each missing canonical shard only from its already source-bound #234 Fachreview; do not synthesize new Fach content.",
+      "Validate the canonical non-overlapping partition covers the complete effect-bearing programme scope without arithmetic use of overlapping alternative reviews.",
+      "Perform corpus-wide stable-ID / parent-child / continuation / context dedupe under the global leaf rule.",
+      "Emit a final versioned manifest with explicit source_role/effect_role for every object and zero conflicts/gaps.",
+      "Freeze authoritative_source_unit_count and authoritative_effect_mechanism_count only after all preceding gates pass.",
+      "Keep PR #257 draft until exact-head CI is green and the final manifest is internally consistent."
+    ]
+  },
+  "completion_guard": {
+    "ST_CDU_344_FACH_COMPLETE_is_completion_trigger": false,
+    "required_terminal_conditions": [
+      "ST_CDU_PRIMARY_SOURCE_PARITY = PASS_FULL_PROGRAMME",
+      "ST_CDU_FINAL_VERSIONED_MANIFEST = PASS",
+      "authoritative_source_unit_count != null",
+      "authoritative_effect_mechanism_count != null",
+      "all final canonical units terminal fach-reviewed",
+      "source_restore_overmerge_gaps = 0",
+      "global_duplicate_conflicts = 0"
+    ]
+  }
+}
