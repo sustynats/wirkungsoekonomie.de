@@ -1,0 +1,134 @@
+{
+  "manifest_id": "ST-BSW-SOURCE-UNIT-MANIFEST-RECONCILIATION-R10",
+  "manifest_status": "IN_PROGRESS_NOT_AUTHORITATIVE",
+  "scope": "Sachsen-Anhalt 2026 BSW Wahlprogramm only",
+  "source_key": "ltw-2026-st-bsw",
+  "supersedes_working_manifest": "ST-BSW-SOURCE-UNIT-MANIFEST-RECONCILIATION-R09",
+  "primary_source": {
+    "title": "BSW Sachsen-Anhalt – Wahlprogramm zur Landtagswahl 2026",
+    "decision_date": "2026-03-07",
+    "url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf",
+    "physical_pages": 90
+  },
+  "historical_register": {
+    "path": "woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-bsw-zusagen.md",
+    "git_blob": "43536bd8b59408b989681841ca334c8206b7d5dd",
+    "source_hash": "ee2f8bb5ab2f123db74c53190e207627d504ae69382c653db71945161d833e8c",
+    "rows": 311,
+    "fach_review_status": "311_OF_311_TERMINAL_WORKING_BASELINE_ONLY",
+    "authoritative_denominator": false
+  },
+  "inherited_closed_gates": {
+    "frontmatter_p0_p6": "PASS_FRONTMATTER_RECONCILED",
+    "p7_p89": "PASS_SEGMENT_COVERAGE",
+    "p87_p89_prior_gap": "CLOSED_FOR_THIS_SOURCE_SPAN",
+    "final_page_context": "PASS_CLASSIFIED_NO_NEW_EFFECT_OBJECTS",
+    "known_parent_edge_queue_unresolved": 0,
+    "a07_record_set": "PASS_42_UNIQUE",
+    "a04_a05_p37_boundary": "PASS_DISTINCT_EFFECT_OBJECTS",
+    "known_explicit_psr_duplicate_relation_queue": 0
+  },
+  "current_register_final_role_matrix": {
+    "row_count": 311,
+    "role_code_legend": {
+      "KA": "KEEP_ATOMIC / active leaf",
+      "KAC": "KEEP_ATOMIC_PLUS_CHILDREN / current residual active leaf plus distinct source-bound child leaves",
+      "SNL": "SUPERSEDED_NONLEAF / historical record preserved, inactive for denominator",
+      "CTX": "CONTEXT_ONLY / historical record preserved, inactive for denominator",
+      "PEND": "PENDING_EXPLICIT_ROLE_ASSERTION / deliberately not counted until union set-check"
+    },
+    "role_by_historical_ordinal": {
+      "0001": "KA", "0002": "KA", "0003": "KA", "0004": "KA", "0005": "KA", "0006": "SNL", "0007": "PEND", "0008": "KA", "0009": "KA", "0010": "KA",
+      "0011": "KA", "0012": "KA", "0013": "KA", "0014": "KA", "0015": "KA", "0016": "KA", "0017": "KA", "0018": "KA", "0019": "KA", "0020": "KA",
+      "0021": "PEND", "0022": "PEND", "0023": "PEND", "0024": "KA", "0025": "KA", "0026": "PEND", "0027": "PEND", "0028": "PEND", "0029": "KA", "0030": "KA",
+      "0031": "KA", "0032": "PEND", "0033": "PEND", "0034": "PEND", "0035": "PEND", "0036": "PEND", "0037": "KA", "0038": "SNL", "0039": "SNL", "0040": "SNL",
+      "0041": "KA", "0042": "KA", "0043": "KA", "0044": "KA", "0045": "KA", "0046": "PEND", "0047": "PEND", "0048": "PEND", "0049": "PEND", "0050": "PEND",
+      "0051": "PEND", "0052": "PEND", "0053": "PEND", "0054": "KA", "0055": "PEND", "0056": "KA", "0057": "PEND", "0058": "PEND", "0059": "PEND", "0060": "PEND",
+      "0061": "PEND", "0062": "PEND", "0063": "PEND", "0064": "PEND", "0065": "PEND", "0066": "PEND", "0067": "PEND", "0068": "PEND", "0069": "PEND", "0070": "PEND",
+      "0071": "PEND", "0072": "PEND", "0073": "PEND", "0074": "PEND", "0075": "PEND", "0076": "PEND", "0077": "PEND", "0078": "PEND", "0079": "PEND", "0080": "PEND",
+      "0081": "PEND", "0082": "PEND", "0083": "PEND", "0084": "SNL", "0085": "PEND", "0086": "CTX", "0087": "SNL", "0088": "PEND", "0089": "PEND", "0090": "PEND",
+      "0091": "SNL", "0092": "PEND", "0093": "PEND", "0094": "PEND", "0095": "PEND", "0096": "PEND", "0097": "SNL", "0098": "PEND", "0099": "PEND", "0100": "PEND",
+      "0101": "PEND", "0102": "PEND", "0103": "PEND", "0104": "PEND", "0105": "CTX", "0106": "PEND", "0107": "SNL", "0108": "PEND", "0109": "SNL", "0110": "PEND",
+      "0111": "PEND", "0112": "CTX", "0113": "SNL", "0114": "PEND", "0115": "SNL", "0116": "PEND", "0117": "PEND", "0118": "PEND", "0119": "PEND", "0120": "PEND",
+      "0121": "PEND", "0122": "PEND", "0123": "SNL", "0124": "PEND", "0125": "PEND", "0126": "PEND", "0127": "PEND", "0128": "PEND", "0129": "PEND", "0130": "PEND",
+      "0131": "PEND", "0132": "PEND", "0133": "PEND", "0134": "PEND", "0135": "PEND", "0136": "PEND", "0137": "PEND", "0138": "SNL", "0139": "SNL", "0140": "PEND",
+      "0141": "PEND", "0142": "PEND", "0143": "CTX", "0144": "PEND", "0145": "PEND", "0146": "PEND", "0147": "PEND", "0148": "PEND", "0149": "KAC", "0150": "PEND",
+      "0151": "PEND", "0152": "PEND", "0153": "KAC", "0154": "CTX", "0155": "KA", "0156": "KAC", "0157": "KAC", "0158": "SNL", "0159": "KAC", "0160": "PEND",
+      "0161": "PEND", "0162": "SNL", "0163": "PEND", "0164": "PEND", "0165": "PEND", "0166": "PEND", "0167": "PEND", "0168": "PEND", "0169": "PEND", "0170": "PEND",
+      "0171": "PEND", "0172": "PEND", "0173": "SNL", "0174": "SNL", "0175": "PEND", "0176": "PEND", "0177": "PEND", "0178": "CTX", "0179": "PEND", "0180": "PEND",
+      "0181": "PEND", "0182": "PEND", "0183": "PEND", "0184": "KAC", "0185": "SNL", "0186": "PEND", "0187": "SNL", "0188": "PEND", "0189": "PEND", "0190": "PEND",
+      "0191": "PEND", "0192": "PEND", "0193": "PEND", "0194": "PEND", "0195": "PEND", "0196": "PEND", "0197": "PEND", "0198": "PEND", "0199": "PEND", "0200": "SNL",
+      "0201": "KAC", "0202": "PEND", "0203": "PEND", "0204": "SNL", "0205": "PEND", "0206": "PEND", "0207": "PEND", "0208": "PEND", "0209": "KA", "0210": "PEND",
+      "0211": "KA", "0212": "SNL", "0213": "PEND", "0214": "SNL", "0215": "PEND", "0216": "PEND", "0217": "PEND", "0218": "PEND", "0219": "PEND", "0220": "PEND",
+      "0221": "PEND", "0222": "KA", "0223": "PEND", "0224": "PEND", "0225": "PEND", "0226": "PEND", "0227": "PEND", "0228": "PEND", "0229": "KA", "0230": "PEND",
+      "0231": "PEND", "0232": "PEND", "0233": "PEND", "0234": "KA", "0235": "PEND", "0236": "PEND", "0237": "PEND", "0238": "PEND", "0239": "PEND", "0240": "PEND",
+      "0241": "PEND", "0242": "PEND", "0243": "PEND", "0244": "KA", "0245": "PEND", "0246": "PEND", "0247": "PEND", "0248": "KA", "0249": "PEND", "0250": "PEND",
+      "0251": "PEND", "0252": "PEND", "0253": "PEND", "0254": "KA", "0255": "PEND", "0256": "KA", "0257": "PEND", "0258": "PEND", "0259": "PEND", "0260": "PEND",
+      "0261": "PEND", "0262": "KA", "0263": "PEND", "0264": "KA", "0265": "PEND", "0266": "PEND", "0267": "PEND", "0268": "KA", "0269": "PEND", "0270": "PEND",
+      "0271": "PEND", "0272": "PEND", "0273": "PEND", "0274": "KA", "0275": "KA", "0276": "PEND", "0277": "PEND", "0278": "SNL", "0279": "PEND", "0280": "PEND",
+      "0281": "PEND", "0282": "PEND", "0283": "PEND", "0284": "PEND", "0285": "PEND", "0286": "PEND", "0287": "KA", "0288": "PEND", "0289": "PEND", "0290": "PEND",
+      "0291": "KA", "0292": "PEND", "0293": "PEND", "0294": "SNL", "0295": "PEND", "0296": "PEND", "0297": "PEND", "0298": "PEND", "0299": "PEND", "0300": "PEND",
+      "0301": "PEND", "0302": "PEND", "0303": "PEND", "0304": "PEND", "0305": "PEND", "0306": "KA", "0307": "PEND", "0308": "KA", "0309": "PEND", "0310": "PEND",
+      "0311": "KA"
+    },
+    "resolved_role_detail": {
+      "0001": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0002": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0003": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0004": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0005": {"role":"KEEP_ATOMIC","active":true,"source":"R01"},
+      "0006": {"role":"SUPERSEDED_NONLEAF","active":false,"source":"R01","detail":"TRUNCATED_RESTORE"},
+      "0008": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0009": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0010": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0011": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0012": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0013": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0014": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0015": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0016": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0017": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0018": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0019": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0020": {"role":"KEEP_ATOMIC","active":true,"source":"R01"},
+      "0024": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0025": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0029": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0030": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0031": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0037": {"role":"KEEP_ATOMIC","active":true,"source":"R01"},
+      "0038": {"role":"SUPERSEDED_NONLEAF","active":false,"source":"R01","detail":"OVERMERGED_COMMUNAL_DEBT_KONNEXITY"}, "0039": {"role":"SUPERSEDED_NONLEAF","active":false,"source":"R01","detail":"OVERMERGED_INVESTMENT_KFA_CAPACITY"}, "0040": {"role":"SUPERSEDED_NONLEAF","active":false,"source":"R01","detail":"OVERMERGED_AGRICULTURE_PROCUREMENT"},
+      "0041": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0042": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0043": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0044": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0045": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0054": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0056": {"role":"KEEP_ATOMIC","active":true,"source":"R01"},
+      "0084": {"role":"SUPERSEDED_NONLEAF","active":false,"source":"R02","detail":"GOAL_PARENT_MIENTENDECKEL_CHILD"}, "0086": {"role":"CONTEXT_ONLY","active":false,"source":"R02","detail":"CLIMATE_ADAPTATION_TARGET_CONTEXT"}, "0087": {"role":"SUPERSEDED_NONLEAF","active":false,"source":"R02","detail":"OVERMERGED_BUILDING_SUPPORT_QNG"}, "0091": {"role":"SUPERSEDED_NONLEAF","active":false,"source":"R02","detail":"OVERMERGED_TRUNCATED_MOBILITY"}, "0097": {"role":"SUPERSEDED_NONLEAF","active":false,"source":"R02","detail":"OVERMERGED_CHAPTER_INTERMODAL_CENTRAL_PLACES"}, "0105": {"role":"CONTEXT_ONLY","active":false,"source":"R02","detail":"GOAL_PARENT_WEALTH_TAX"}, "0107": {"role":"SUPERSEDED_NONLEAF","active":false,"source":"R02","detail":"POLICY_PARENT_PENSION_REFORM"}, "0109": {"role":"SUPERSEDED_NONLEAF","active":false,"source":"R02","detail":"FEDERAL_ADVOCACY_PARENT_CITIZEN_INSURANCE"}, "0112": {"role":"CONTEXT_ONLY","active":false,"source":"R02","detail":"GOAL_PARENT_FAMILY_CHOICE"}, "0113": {"role":"SUPERSEDED_NONLEAF","active":false,"source":"R02","detail":"TRUNCATED_GENDERED_VIOLENCE_PROTECTION"}, "0115": {"role":"SUPERSEDED_NONLEAF","active":false,"source":"R02","detail":"MULTI_COMPETENCE_SPLIT_PARENT_218_ACCESS"},
+      "0123": {"role":"SUPERSEDED_NONLEAF","active":false,"source":"R01","detail":"OVERMERGED_TRUNCATED_CHAPTER_BOUNDARY"}, "0138": {"role":"SUPERSEDED_NONLEAF","active":false,"source":"R03","detail":"OVERMERGED_TRUNCATED_CULTURE_SPORT_PARENT"}, "0139": {"role":"SUPERSEDED_NONLEAF","active":false,"source":"R03","detail":"MULTI_MECHANISM_VOLUNTEERING_PARENT"}, "0143": {"role":"CONTEXT_ONLY","active":false,"source":"R03","detail":"PROBLEM_STATEMENT_SPECIAL_EDUCATION_LOAD"}, "0149": {"role":"KEEP_ATOMIC_PLUS_CHILDREN","active":true,"source":"R03","detail":"SMARTPHONE_SCHOOLDAY_RESIDUAL"}, "0153": {"role":"KEEP_ATOMIC_PLUS_CHILDREN","active":true,"source":"R03","detail":"SPECIAL_EDUCATION_OFFERS_RESIDUAL"}, "0154": {"role":"CONTEXT_ONLY","active":false,"source":"R03","detail":"QUALITY_BOUNDARY_INCLUSION"}, "0155": {"role":"KEEP_ATOMIC","active":true,"source":"R03","detail":"RURAL_MIN_CLASS_SIZE"}, "0156": {"role":"KEEP_ATOMIC_PLUS_CHILDREN","active":true,"source":"R03","detail":"SCHOOL_SOCIAL_WORK_MINIMUM_RESIDUAL"}, "0157": {"role":"KEEP_ATOMIC_PLUS_CHILDREN","active":true,"source":"R03","detail":"SCHOOL_PSYCHOLOGY_ACCESS_RESIDUAL"}, "0158": {"role":"SUPERSEDED_NONLEAF","active":false,"source":"R03","detail":"MULTI_MECHANISM_ENGAGEMENT_PARENT"}, "0159": {"role":"KEEP_ATOMIC_PLUS_CHILDREN","active":true,"source":"R03","detail":"EDUCATOR_QUALIFICATION_RESIDUAL"}, "0162": {"role":"SUPERSEDED_NONLEAF","active":false,"source":"R01","detail":"TRUNCATED_QUALIFICATION_POSITIONS"},
+      "0173": {"role":"SUPERSEDED_NONLEAF","active":false,"source":"R04","detail":"OVERMERGED_CHAPTER_STUDENT_SERVICES_TEACHING"}, "0174": {"role":"SUPERSEDED_NONLEAF","active":false,"source":"R04","detail":"MULTI_MECHANISM_STUDY_CAPACITY_PRACTICE_QUALIFICATION"}, "0178": {"role":"CONTEXT_ONLY","active":false,"source":"R04","detail":"DISTRIBUTION_QUALITY_BOUNDARY_QUALIFICATION"}, "0184": {"role":"KEEP_ATOMIC_PLUS_CHILDREN","active":true,"source":"R04","detail":"LEOPOLDINA_COOPERATION_RESIDUAL"}, "0185": {"role":"SUPERSEDED_NONLEAF","active":false,"source":"R04","detail":"OVERMERGED_TRUNCATED_HIGHER_EDUCATION_EMPLOYMENT_FREEDOM"}, "0187": {"role":"SUPERSEDED_NONLEAF","active":false,"source":"R04","detail":"CHAPTER_CONTEXT_PARENT_HEALTH"}, "0200": {"role":"SUPERSEDED_NONLEAF","active":false,"source":"R04","detail":"MASSIVE_OVERMERGE_SOCIAL_HEALTH_INCLUSION"}, "0201": {"role":"KEEP_ATOMIC_PLUS_CHILDREN","active":true,"source":"R04","detail":"SOCIAL_ASSISTANCE_ONE_STOP_RESIDUAL"}, "0204": {"role":"SUPERSEDED_NONLEAF","active":false,"source":"R04","detail":"FUNDING_GOAL_PARENT_SOCIAL_SERVICES"},
+      "0209": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0211": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0212": {"role":"SUPERSEDED_NONLEAF","active":false,"source":"R01","detail":"OVERMERGED_TELEMEDICINE_HEBAMMEN"}, "0214": {"role":"SUPERSEDED_NONLEAF","active":false,"source":"R01","detail":"OVERMERGED_HEBAMMEN_MULTI_MECHANISM"}, "0222": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0229": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0234": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0244": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0248": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0254": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0256": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0262": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0264": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0268": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0274": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0275": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0278": {"role":"SUPERSEDED_NONLEAF","active":false,"source":"R01","detail":"OVERMERGED_AGRI_RESEARCH_FORESTRY_MOOR"}, "0287": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0291": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0294": {"role":"SUPERSEDED_NONLEAF","active":false,"source":"R01","detail":"OVERMERGED_ENERGY_BRUECHAU"}, "0306": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0308": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}, "0311": {"role":"KEEP_ATOMIC","active":true,"source":"R01"}
+    },
+    "resolved_rows": 91,
+    "resolved_active_leaf_rows": 58,
+    "resolved_nonleaf_or_context_rows": 33,
+    "pending_rows": 220,
+    "pending_ordinals": ["0007","0021","0022","0023","0026","0027","0028","0032","0033","0034","0035","0036","0046","0047","0048","0049","0050","0051","0052","0053","0055","0057","0058","0059","0060","0061","0062","0063","0064","0065","0066","0067","0068","0069","0070","0071","0072","0073","0074","0075","0076","0077","0078","0079","0080","0081","0082","0083","0085","0088","0089","0090","0092","0093","0094","0095","0096","0098","0099","0100","0101","0102","0103","0104","0106","0108","0110","0111","0114","0116","0117","0118","0119","0120","0121","0122","0124","0125","0126","0127","0128","0129","0130","0131","0132","0133","0134","0135","0136","0137","0140","0141","0142","0144","0145","0146","0147","0148","0150","0151","0152","0160","0161","0163","0164","0165","0166","0167","0168","0169","0170","0171","0172","0175","0176","0177","0179","0180","0181","0182","0183","0186","0188","0189","0190","0191","0192","0193","0194","0195","0196","0197","0198","0199","0202","0203","0205","0206","0207","0208","0210","0213","0215","0216","0217","0218","0219","0220","0221","0223","0224","0225","0226","0227","0228","0230","0231","0232","0233","0235","0236","0237","0238","0239","0240","0241","0242","0243","0245","0246","0247","0249","0250","0251","0252","0253","0255","0257","0258","0259","0260","0261","0263","0265","0266","0267","0269","0270","0271","0272","0273","0276","0277","0279","0280","0281","0282","0283","0284","0285","0286","0288","0289","0290","0292","0293","0295","0296","0297","0298","0299","0300","0301","0302","0303","0304","0305","0307","0309","0310"],
+    "safety_rule": "Ordinal is the immutable unique four-digit key in the historical ltw-2026-st-bsw register. R10 does not synthesize or alter full source-unit IDs/text. PEND is deliberately non-counting until union/source-role reconciliation."
+  },
+  "psr_union_inventory": {
+    "front": {"declared_records":2,"set_status":"EXACT_IDS_KNOWN_IN_R05","active_leaf_records":2},
+    "A01": {"declared_records":31,"set_status":"EXACT_ID_MATERIALIZATION_REQUIRED"},
+    "A02": {"declared_records":37,"set_status":"EXACT_ID_MATERIALIZATION_REQUIRED"},
+    "A03": {"declared_records":40,"set_status":"EXACT_ID_MATERIALIZATION_REQUIRED"},
+    "A04": {"declared_records":58,"set_status":"EXACT_ID_MATERIALIZATION_REQUIRED"},
+    "A05_1": {"declared_records":30,"set_status":"EXACT_ID_MATERIALIZATION_REQUIRED"},
+    "A05_2": {"declared_records":31,"set_status":"EXACT_ID_MATERIALIZATION_REQUIRED"},
+    "A06": {"declared_records":41,"set_status":"EXACT_ID_MATERIALIZATION_REQUIRED"},
+    "A07": {"declared_records":42,"set_status":"PASS_42_UNIQUE_EXACT_IDS_IN_R06"},
+    "A08": {"declared_records":28,"set_status":"EXACT_ID_MATERIALIZATION_REQUIRED"},
+    "A09": {"declared_records":40,"set_status":"EXACT_ID_MATERIALIZATION_REQUIRED"}
+  },
+  "graph_validation": {
+    "known_current_parent_edge_queue": "RESOLVED_ZERO_R04",
+    "resolved_current_role_rows_graph": "PASS_NO_ROLE_CONTRADICTIONS_91_ROWS",
+    "full_parent_child_same_supersedes_graph": "PENDING_UNION_ID_MATERIALIZATION",
+    "acyclic_full_graph": "NOT_YET_PROVEN"
+  },
+  "remaining_blockers_exact": [
+    "Materialize every A01-A06/A08-A09 and front psr stable ID exactly once in the union set (A07 exact 42 already materialized; front exact 2 known).",
+    "Resolve the 220 explicit pending historical ordinals to KEEP_ATOMIC/KEEP_ATOMIC_PLUS_CHILDREN/SUPERSEDED_NONLEAF/CONTEXT_ONLY/DUPLICATE_RELATION by set-check against the complete psr union; do not infer active status from fach-terminal alone.",
+    "Validate the complete Parent/Child/SAME/supersedes graph is acyclic.",
+    "Run union-wide semantic collision scan after all IDs are materialized.",
+    "Prove corpus-wide unresolved ABSENT/PARTIAL_PARENT/OVERMERGED/TRUNCATED/RESTORE_GAP = 0.",
+    "Set-check every final active leaf has terminal fach status plus object-specific applicable #241 layers."
+  ],
+  "completion_state": {
+    "ST_BSW_PRIMARY_SOURCE_PARITY_FULL_PROGRAM": "READY_FOR_UNION_MANIFEST_AND_FINAL_ROLE_MATRIX",
+    "ST_BSW_AUTHORITATIVE_DENOMINATOR": null,
+    "BSW_FULL_PROGRAM_FACH_COMPLETE": false,
+    "source_restore_overmerge_truncation_gaps": "NOT_YET_PROVEN_ZERO_CORPUS_WIDE",
+    "do_not_arithmetically_add_311_and_batch_counts": true
+  },
+  "provenance": {
+    "github_issue": "sustynats/wirkungsoekonomie.de#234",
+    "umbrella_issue": "sustynats/wirkungsoekonomie.de#241",
+    "reconciliation_comments": {"R01":5374138103,"R02":5374163676,"R03":5374183131,"R04":5374207608},
+    "branch_head_before_r10": "e261d5b8f77b0d3324539e2810b6a09d61e46193",
+    "rules": ["historical IDs and source text immutable","no fach judgement from templates, keywords, scores or party identity","no Recommendation synthesis","no DNS keyword mapping","source-bound restore before judgement","pending current roles remain non-counting until set-resolved"]
+  }
+}
