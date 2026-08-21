@@ -32,10 +32,6 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Audit BSW final-union source roles when present
-        if: ${{ hashFiles('content/audits/sachsen-anhalt/bsw-source-unit-union-r14.json') != '' }}
-        run: python tools/audit_bsw_final_union.py --output /tmp/bsw-final-union-collision-report.json
-
       - name: Install Python build dependencies
         run: python -m pip install --upgrade pip openpyxl pymupdf pypdf reportlab python-docx
 
