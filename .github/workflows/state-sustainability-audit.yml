@@ -56,6 +56,7 @@ jobs:
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
             git add -A
             git commit -m 'fix: materialize approved #253 state architecture projections'
+            git pull --rebase origin ${{ github.event.pull_request.head.ref }}
             git push origin HEAD:${{ github.event.pull_request.head.ref }}
           fi
       - name: Verify projections are idempotent after materialization
