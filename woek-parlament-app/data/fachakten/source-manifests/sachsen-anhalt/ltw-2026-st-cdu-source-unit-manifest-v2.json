@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "manifest_version": "2026-08-21-p89-restore-1",
-  "manifest_status": "CANDIDATE_PENDING_CANONICAL_MERGE",
+  "manifest_version": "2026-08-21-p89-restore-2",
+  "manifest_status": "PARTIAL_PRIMARY_SOURCE_RECONCILIATION_CONTINUE_FULL_PROGRAMME_PARITY",
   "composition_mode": "IMMUTABLE_RELEASE1_BASE_PLUS_ADDITIVE_VERSIONED_SOURCE_UNITS",
   "programme_key": "ltw-2026-st-cdu",
   "party": "CDU",
@@ -19,7 +19,9 @@
     "source_unit_count": 344,
     "immutable_historical_baseline": true
   },
-  "canonical_source_unit_count": 345,
+  "working_source_unit_count": 345,
+  "authoritative_source_unit_count": null,
+  "denominator_status": "NOT_FROZEN_PENDING_FULL_PRIMARY_SOURCE_PARITY",
   "historical_release1_ids_renumbered": false,
   "additive_source_units": [
     {
@@ -47,13 +49,24 @@
       "state_gfa_enap_benchmark": "NOT_APPLICABLE"
     }
   ],
-  "parity": {
+  "primary_source_parity": {
+    "required_passage_classifications": [
+      "SAME",
+      "ABSENT",
+      "PARTIAL_PARENT",
+      "OVERMERGED",
+      "TRUNCATED",
+      "CONTEXT_ONLY"
+    ],
     "release1_rows_terminal": 344,
     "additive_source_units_terminal": 1,
-    "total_primary_source_units_terminal": 345,
-    "source_restore_gaps": 0,
-    "primary_source_parity_status": "PASS_AFTER_VERSIONED_RESTORE",
+    "known_working_source_units_terminal": 345,
+    "known_material_omissions_restored": 1,
+    "known_source_restore_gaps": 0,
+    "full_programme_semantic_reconciliation_complete": false,
+    "primary_source_parity_status": "PENDING_FULL_PROGRAMME_SEMANTIC_RECONCILIATION",
+    "authoritative_denominator_frozen": false,
     "public_projection_count_status": "SEPARATE_TECHNICAL_GATE_PENDING",
-    "note": "Canonical composition is the immutable 344-row Release-1 base plus this additive source unit. The historical Release-1 register remains unchanged. Public projection/count changes require the separate technical Golden-State gates."
+    "note": "The immutable 344-row Release-1 base plus the restored page-89 unit is the current working corpus only. Do not claim 345 as the authoritative final CDU denominator until every effect-bearing passage in the final official programme has been semantically reconciled against the versioned manifest and all ABSENT/PARTIAL_PARENT/OVERMERGED/TRUNCATED findings are versioned and terminally reviewed."
   }
 }
