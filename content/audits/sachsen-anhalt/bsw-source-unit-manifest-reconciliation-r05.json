@@ -1,0 +1,197 @@
+{
+  "manifest_id": "ST-BSW-SOURCE-UNIT-MANIFEST-RECONCILIATION-R05",
+  "manifest_status": "IN_PROGRESS_NOT_AUTHORITATIVE",
+  "generated_at": "2026-08-21T20:00:36Z",
+  "scope": "Sachsen-Anhalt 2026 BSW Wahlprogramm only",
+  "source_key": "ltw-2026-st-bsw",
+  "primary_source": {
+    "title": "BSW Sachsen-Anhalt – Wahlprogramm zur Landtagswahl 2026",
+    "decision_date": "2026-03-07",
+    "url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf",
+    "physical_pages": 90
+  },
+  "historical_register": {
+    "path": "woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-bsw-zusagen.md",
+    "git_blob": "43536bd8b59408b989681841ca334c8206b7d5dd",
+    "source_hash": "ee2f8bb5ab2f123db74c53190e207627d504ae69382c653db71945161d833e8c",
+    "rows": 311,
+    "fach_review_status": "311_OF_311_TERMINAL_WORKING_BASELINE_ONLY",
+    "authoritative_denominator": false
+  },
+  "primary_source_page_coverage": {
+    "p0_p3": "CONTEXT_ONLY_NAVIGATION",
+    "p4_p6": "PASS_FRONTMATTER_RECONCILED",
+    "p7_p15": "PASS_SEGMENT",
+    "p16_p22": "PASS_SEGMENT",
+    "p23_p28": "PASS_SEGMENT_WITH_VERSIONED_RESTORE_DELTA",
+    "p29_p37": "PASS_WITH_VERSIONED_RESTORE_DELTA",
+    "p37_p43": "PASS_WITH_VERSIONED_RESTORE_DELTA",
+    "p44_p48": "PASS_WITH_VERSIONED_RESTORE_DELTA",
+    "p49_p58": "PASS_WITH_VERSIONED_RESTORE_DELTA",
+    "p59_p69": "PASS_SEGMENT_COUNT_RECONCILIATION_REQUIRED",
+    "p70_p79": "PASS_SEGMENT",
+    "p80_p89": "PASS_SEGMENT",
+    "p87_p89_prior_gap": "CLOSED_FOR_THIS_SOURCE_SPAN",
+    "full_physical_page_coverage": "PASS_PAGE_WIDE_CLASSIFICATION",
+    "full_programme_active_leaf_manifest": "NOT_YET_PASS"
+  },
+  "frontmatter_reconciliation": {
+    "p0_p3": {
+      "role": "CONTEXT_ONLY_NAVIGATION",
+      "active_effect_leaf": false
+    },
+    "p4_p5": {
+      "role": "CONTEXT_PARENT_WITH_DUPLICATE_RELATIONS_TO_BODY",
+      "active_effect_leaf": false,
+      "note": "Repeated material positions are represented by body/current or primary-restore records; no double count."
+    },
+    "p6_duplicate_relation": {
+      "statement": "CO2-Abgabe abschaffen",
+      "canonical_body_unit": "ltw-2026-st-bsw-psr-a03-0020",
+      "role": "DUPLICATE_RELATION",
+      "active_effect_leaf": false
+    },
+    "new_terminal_frontmatter_effect_leaves": [
+      {
+        "source_unit_id": "ltw-2026-st-bsw-psr-front-0001-energiesteuern-senken",
+        "final_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+        "impact_direction": "OPEN",
+        "evidence_level": "NOT_ASSESSABLE",
+        "active_effect_leaf": true
+      },
+      {
+        "source_unit_id": "ltw-2026-st-bsw-psr-front-0002-kraftstoffpreis-max-150-bundesratsinitiative",
+        "final_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+        "impact_direction": "OPEN",
+        "evidence_level": "NOT_ASSESSABLE",
+        "active_effect_leaf": true
+      }
+    ]
+  },
+  "parity_batch_ledger": [
+    {
+      "batch": "A01",
+      "pages": "P7-P15",
+      "declared_versioned_mechanism_records": 31,
+      "status": "PASS_SEGMENT",
+      "count_semantics": "requires final set-based active-leaf reconciliation"
+    },
+    {
+      "batch": "A02",
+      "pages": "P16-P22",
+      "declared_versioned_mechanism_records": 37,
+      "status": "PASS_SEGMENT",
+      "count_semantics": "requires final set-based active-leaf reconciliation"
+    },
+    {
+      "batch": "A03",
+      "pages": "P23-P28",
+      "declared_versioned_restore_split_records": 40,
+      "status": "PASS_WITH_VERSIONED_RESTORE_DELTA",
+      "count_semantics": "requires final set-based active-leaf reconciliation"
+    },
+    {
+      "batch": "A04",
+      "pages": "P29-P37",
+      "declared_versioned_restore_split_records": 58,
+      "status": "PASS_WITH_VERSIONED_RESTORE_DELTA",
+      "contains_relation_types": [
+        "ABSENT_FROM_REGISTER",
+        "PARTIAL_PARENT",
+        "OVERMERGED_PARENT_CHILD",
+        "TRUNCATED_PARENT",
+        "FEDERAL_ADVOCACY_CHILD",
+        "DUPLICATE_RELATION"
+      ],
+      "count_semantics": "not all declared records may be final active leaves; DUPLICATE_RELATION must be removed set-wise"
+    },
+    {
+      "batch": "A05.1",
+      "pages": "P37-P43",
+      "declared_versioned_restore_split_records": 30,
+      "status": "PASS_WITH_VERSIONED_RESTORE_DELTA",
+      "boundary_with_a04": "P37 overlap requires source-anchor set check; listed A04 P37 units and A05.1 P37 start are distinct mechanisms, but final manifest must prove this for every record"
+    },
+    {
+      "batch": "A05.2",
+      "pages": "P44-P48",
+      "declared_versioned_restore_split_records": 31,
+      "status": "PASS_WITH_VERSIONED_RESTORE_DELTA"
+    },
+    {
+      "batch": "A06",
+      "pages": "P49-P58",
+      "declared_versioned_restore_split_records": 41,
+      "status": "PASS_WITH_VERSIONED_RESTORE_DELTA"
+    },
+    {
+      "batch": "A07",
+      "pages": "P59-P69",
+      "status": "PASS_SEGMENT_COUNT_CONFLICT_REQUIRES_SET_ENUMERATION",
+      "declared_header_additive_split_records": 38,
+      "declared_footer_terminal_marker": "PASS_42",
+      "authoritative_record_count": null,
+      "blocker": "The same #234 batch declares 38 additive/splitting units in its title but ST_BSW_PSR_A07_TERMINAL=PASS_42 in its completion marker. Final denominator must use enumerated IDs and relations, not either scalar."
+    },
+    {
+      "batch": "A08",
+      "pages": "P70-P79",
+      "declared_terminal_records": 28,
+      "status": "PASS_SEGMENT"
+    },
+    {
+      "batch": "A09",
+      "pages": "P80-P89",
+      "declared_terminal_records": 40,
+      "status": "PASS_SEGMENT",
+      "p87_p89_gap": "CLOSED_FOR_THIS_SOURCE_SPAN"
+    }
+  ],
+  "current_register_graph_reconciliation": {
+    "r01": "PASS_PARTIAL_GRAPH",
+    "r02": "PASS_A04_PARENT_EDGES",
+    "r03": "PASS_A05_PARENT_EDGES",
+    "r04": "PASS_ALL_KNOWN_PARENT_EDGES",
+    "known_parent_edge_queue_unresolved": 0,
+    "explicit_keep_or_residual_active_current_ids_count": 58,
+    "explicit_hard_nonleaf_or_context_current_ids_count": 33,
+    "remaining_current_ids_without_explicit_materialized_role_row": 220,
+    "remaining_current_ids_state": "FACH_TERMINAL_BUT_FINAL_ROLE_MATRIX_ROW_NOT_YET_MATERIALIZED",
+    "note": "The 220 are not fach-unreviewed. They require explicit KEEP_ATOMIC/SAME/other final role rows before an authoritative manifest can be frozen."
+  },
+  "cross_batch_dedup": {
+    "exact_id_namespace_collision_check": "PASS_BY_BATCH_NAMESPACE_FOR_KNOWN_CANONICAL_PREFIXES",
+    "frontmatter_body_duplicate_co2": "RESOLVED_TO_A03_0020",
+    "known_current_parent_edge_queue": "RESOLVED_ZERO",
+    "semantic_cross_batch_dedup": "IN_PROGRESS",
+    "required_before_freeze": [
+      "enumerate every psr/front record as a concrete stable ID",
+      "resolve every DUPLICATE_RELATION to exactly one canonical active leaf",
+      "resolve A07 38-versus-42 scalar conflict by ID-set enumeration",
+      "prove the P37 A04/A05.1 boundary has no duplicate effect object",
+      "materialize final role row for all 311 historical current IDs",
+      "validate parent/child/supersedes graph is acyclic",
+      "prove 0 unresolved ABSENT/PARTIAL_PARENT/OVERMERGED/TRUNCATED/RESTORE_GAP records",
+      "prove every active final leaf has terminal fach status and required object-specific #241 layers"
+    ]
+  },
+  "completion_state": {
+    "ST_BSW_PRIMARY_SOURCE_PARITY_FULL_PROGRAM": "READY_FOR_CROSS_BATCH_DEDUP_AND_FINAL_MANIFEST",
+    "ST_BSW_AUTHORITATIVE_DENOMINATOR": null,
+    "BSW_FULL_PROGRAM_FACH_COMPLETE": false,
+    "source_restore_overmerge_truncation_gaps": "NOT_YET_PROVEN_ZERO_CORPUS_WIDE",
+    "do_not_arithmetically_add_311_and_batch_counts": true
+  },
+  "provenance": {
+    "github_issue": "sustynats/wirkungsoekonomie.de#234",
+    "umbrella_issue": "sustynats/wirkungsoekonomie.de#241",
+    "latest_reconciliation_checkpoint": "ST-BSW-CORPUS-RECONCILIATION-R04",
+    "rules": [
+      "historical IDs and source text immutable",
+      "no fach judgement from templates, keywords, scores or party identity",
+      "no Recommendation synthesis",
+      "no DNS keyword mapping",
+      "source-bound restore before judgement"
+    ]
+  }
+}
