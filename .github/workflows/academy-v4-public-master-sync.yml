@@ -1,0 +1,86 @@
+name: Academy v4 locked public-master sync
+
+on:
+  push:
+    branches:
+      - codex/academy-v4-public-master-20260821
+    paths:
+      - .github/workflows/academy-v4-public-master-sync.yml
+      - scripts/academy/sync-v4-public-master.mjs
+      - content/studienskripte/v4/SOURCE_LOCK.json
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: academy-v4-public-master-sync
+  cancel-in-progress: false
+
+jobs:
+  sync-and-verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout exact public-master branch
+        uses: actions/checkout@v4
+        with:
+          ref: codex/academy-v4-public-master-20260821
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Generate sanitized public masters from locked source SHA
+        run: node scripts/academy/sync-v4-public-master.mjs
+
+      - name: Verify generated corpus against locked source
+        run: node scripts/academy/sync-v4-public-master.mjs --check
+
+      - name: Guard protected assessment material
+        shell: bash
+        run: |
+          set -euo pipefail
+          if find content/studienskripte/v4 -type f \( -name '*QUESTION_BANK*' -o -name '*assessment-final*' -o -name '*RUBRIC*' \) | grep -q .; then
+            echo 'Protected assessment artifact leaked into public master' >&2
+            exit 1
+          fi
+          if grep -RInE '\*\*Lösung(en)?:\*\*|CorrectAnswer|correct_answer|answer_key|Musterlösung|Lösungsschlüssel|instructor[_ -]?(answer|solution|rubric)' content/studienskripte/v4/grundstudium content/studienskripte/v4/angebote; then
+            echo 'Protected solution/assessment content leaked into public master' >&2
+            exit 1
+          fi
+
+      - name: Verify exact corpus cardinality
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const m = JSON.parse(fs.readFileSync('content/studienskripte/v4/PUBLIC_MASTER_MANIFEST.json', 'utf8'));
+          const expected = {grundlagen:7,wirkungsmanagement:10,wirkungscontrolling:10,multiplikatoren:8,'demokratie-buerger':11,'demokratie-medien':12};
+          if (m.counts.study_lectures !== 120) throw new Error(`study=${m.counts.study_lectures}`);
+          if (m.counts.base !== 108) throw new Error(`base=${m.counts.base}`);
+          if (m.counts.state_architecture !== 12) throw new Error(`gov=${m.counts.state_architecture}`);
+          if (m.counts.active_offering_lectures !== 58) throw new Error(`offerings=${m.counts.active_offering_lectures}`);
+          if (m.counts.total_public_lectures !== 178) throw new Error(`total=${m.counts.total_public_lectures}`);
+          for (const [slug,count] of Object.entries(expected)) {
+            if (m.counts.offering_lectures_by_slug?.[slug] !== count) throw new Error(`${slug}=${m.counts.offering_lectures_by_slug?.[slug]}`);
+          }
+          if (m.security.assessment_secrets_included !== false) throw new Error('assessment secrets flag is not false');
+          console.log('ACADEMY_V4_PUBLIC_MASTER_CARDINALITY_PASS 120 + 58 = 178');
+          NODE
+
+      - name: Commit generated locked corpus
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -z "$(git status --porcelain content/studienskripte/v4)" ]; then
+            echo 'No public-master diff.'
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/studienskripte/v4
+          git commit -m "feat(academy-v4): materialize locked sanitized public masters"
+          git pull --rebase origin codex/academy-v4-public-master-20260821
+          git push origin HEAD:codex/academy-v4-public-master-20260821
