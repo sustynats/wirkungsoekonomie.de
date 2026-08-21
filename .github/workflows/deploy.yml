@@ -36,8 +36,9 @@ jobs:
       - name: Verify #253 state sustainability architecture
         run: |
           python tools/check_state_sustainability_architecture.py
-          python tools/audit_state_sustainability_architecture_fast.py --root . --output artifacts/state-sustainability-architecture-url-matrix.json --markdown artifacts/state-sustainability-architecture-url-matrix.md
-          python tools/audit_state_sustainability_support_files.py --root . --matrix artifacts/state-sustainability-architecture-url-matrix.json --markdown artifacts/state-sustainability-architecture-url-matrix.md
+          python tools/audit_state_sustainability_architecture_fast.py --root . --output content/audits/state-sustainability-architecture-url-matrix.json --markdown content/audits/state-sustainability-architecture-url-matrix.md
+          python tools/audit_state_sustainability_support_files.py --root . --matrix content/audits/state-sustainability-architecture-url-matrix.json --markdown content/audits/state-sustainability-architecture-url-matrix.md
+          git diff --exit-code -- content/audits/state-sustainability-architecture-url-matrix.json content/audits/state-sustainability-architecture-url-matrix.md
       - name: Build Parliament and Institute information pages
         run: npm run build:parlament-info
       - name: Build public deploy artifact
