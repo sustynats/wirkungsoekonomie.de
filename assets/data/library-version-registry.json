@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T05:39:15.182Z",
+  "generatedAt": "2026-08-21T19:11:51.810Z",
   "purpose": "Stage 9: kuratiertes Quellen- und Versionssystem der Wirkungsökonomie-Bibliothek.",
   "schema": {
     "type": [
@@ -205,21 +205,21 @@
     }
   ],
   "counts": {
-    "total": 3202,
+    "total": 3212,
     "byStatus": {
-      "archiviert": 2,
-      "führend": 11,
+      "archiviert": 4,
+      "führend": 12,
       "aktuell": 2630,
-      "Arbeitsfassung": 277,
-      "ältere Fassung": 261,
-      "ersetzt": 21
+      "Arbeitsfassung": 276,
+      "ältere Fassung": 263,
+      "ersetzt": 27
     },
     "byType": {
-      "Glossar": 49,
-      "Grundlagenwerk": 68,
-      "Methodik": 115,
-      "Arbeitspapier": 2657,
-      "Gesetzesentwurf": 39,
+      "Glossar": 51,
+      "Grundlagenwerk": 69,
+      "Methodik": 117,
+      "Gesetzesentwurf": 40,
+      "Arbeitspapier": 2661,
       "Beispiel": 18,
       "Dossier": 234,
       "Leitbild": 7,
@@ -228,19 +228,19 @@
       "Präsentation": 1
     },
     "bySource": {
-      "download-or-document": 904,
+      "download-or-document": 914,
       "curated-publication": 3,
       "leading-reference": 8,
       "online-version": 2287
     },
-    "downloadFiles": 910,
+    "downloadFiles": 920,
     "onlineVersions": 2287
   },
   "documents": [
     {
       "id": "download-or-document-public-downloads-originals-woek-begriffsleitfaden-fuehrend-v1-0-pdf",
       "title": "WÖk-Begriffsleitfaden führend v1.0",
-      "shortDescription": "Zitierfähige historische PDF-Fassung; für den aktuellen Begriffsstand gilt Version 1.5.",
+      "shortDescription": "Zitierfähige historische PDF-Fassung; für den aktuellen Begriffsstand gilt Version 1.7.",
       "type": "Glossar",
       "status": "archiviert",
       "dateOrStand": "v1.0",
@@ -265,7 +265,7 @@
     {
       "id": "download-or-document-public-downloads-originals-woek-begriffsleitfaden-fuehrend-v1-4-pdf",
       "title": "WÖk-Begriffsleitfaden führend v1.4",
-      "shortDescription": "Zitierfähige historische PDF-Fassung; für den aktuellen Begriffsstand gilt Version 1.5.",
+      "shortDescription": "Zitierfähige historische PDF-Fassung; für den aktuellen Begriffsstand gilt Version 1.7.",
       "type": "Glossar",
       "status": "archiviert",
       "dateOrStand": "v1.4",
@@ -280,6 +280,56 @@
       "urls": {
         "primary": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.4.pdf",
         "sourcePath": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.4.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false,
+      "historicalNotice": "",
+      "successorUrl": "",
+      "successorLabel": ""
+    },
+    {
+      "id": "download-or-document-public-downloads-originals-woek-begriffsleitfaden-fuehrend-v1-5-pdf",
+      "title": "WÖk-Begriffsleitfaden führend v1.5",
+      "shortDescription": "Zitierfähige historische PDF-Fassung; für den aktuellen Begriffsstand gilt Version 1.7.",
+      "type": "Glossar",
+      "status": "archiviert",
+      "dateOrStand": "v1.5",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.5.pdf",
+        "sourcePath": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.5.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false,
+      "historicalNotice": "",
+      "successorUrl": "",
+      "successorLabel": ""
+    },
+    {
+      "id": "download-or-document-public-downloads-originals-woek-begriffsleitfaden-fuehrend-v1-6-pdf",
+      "title": "WÖk-Begriffsleitfaden führend v1.6",
+      "shortDescription": "Zitierfähige historische PDF-Fassung; für den aktuellen Begriffsstand gilt Version 1.7.",
+      "type": "Glossar",
+      "status": "archiviert",
+      "dateOrStand": "v1.6",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.6.pdf",
+        "sourcePath": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.6.pdf"
       },
       "source": "download-or-document",
       "isLeadingReference": false,
@@ -571,25 +621,27 @@
       "successorLabel": ""
     },
     {
-      "id": "download-or-document-assets-downloads-woek-register-woek-master-items-v1-3-geprueft-xlsx",
-      "title": "WÖk Master Items v1.3",
-      "shortDescription": "Geprüftes Arbeits- und Governance-Register mit 621 WÖk-IDs, 28 Regeln, getrennten aktiven und historischen Benchmarkwerten sowie Prüfstatus.",
-      "type": "Methodik",
+      "id": "download-or-document-public-downloads-originals-wirkungssteuer-wstg-3-0-gesamtneufassung-2026-pd",
+      "title": "Wirkungssteuer 3.0 und Wirkungssteuergesetz (WStG) 3.0",
+      "shortDescription": "Führende Gesamtneufassung der steuerlichen Säule: modulare Rückkopplung über bestehende Steuerarten, parlamentarische Tarifhoheit, Wirkungsnachweiskonto, Schutzregeln, Rechtsschutz und EU-Pfad.",
+      "type": "Gesetzesentwurf",
       "status": "führend",
-      "dateOrStand": "v1.3",
+      "dateOrStand": "2026",
       "topics": [
-        "Daten & Infrastruktur"
+        "Staat & Demokratie"
       ],
       "relatedMethods": [
-        "Datenqualität & Assurance"
+        "Wirkungssteuerung"
       ],
-      "relatedImpactFields": [],
+      "relatedImpactFields": [
+        "Staat & Demokratie"
+      ],
       "formats": [
-        "XLSX"
+        "PDF"
       ],
       "urls": {
-        "primary": "assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx",
-        "sourcePath": "assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx"
+        "primary": "public/downloads/originals/Wirkungssteuer_WStG_3.0_Gesamtneufassung_2026.pdf",
+        "sourcePath": "public/downloads/originals/Wirkungssteuer_WStG_3.0_Gesamtneufassung_2026.pdf"
       },
       "source": "download-or-document",
       "isLeadingReference": true,
@@ -599,8 +651,8 @@
     },
     {
       "id": "leading-reference-bibliothek-woek-begriffsleitfaden-fuehrend-index-html",
-      "title": "WÖk-Begriffsleitfaden führend v1.5",
-      "shortDescription": "Maßgebliche Sprach- und Methodenreferenz: IOOI ist eine externe, optionale Results Chain; die WÖk-Wirkungsarchitektur verbindet Vorwirkung, Evidenz, Bewertung, Schutz, Rückkopplung und Lernen.",
+      "title": "WÖk-Begriffsleitfaden führend v1.7",
+      "shortDescription": "Maßgebliche Sprach- und Methodenreferenz: staatliche Prüfrahmen objektspezifisch einordnen, Wirkungsrelevanz statt Rechtsform prüfen, Problem und Ziel vor Empfehlungen klären und MasterItems von Indikatoren trennen.",
       "type": "Glossar",
       "status": "führend",
       "dateOrStand": "",
@@ -623,12 +675,12 @@
       "successorLabel": ""
     },
     {
-      "id": "download-or-document-public-downloads-originals-woek-begriffsleitfaden-fuehrend-v1-5-pdf",
-      "title": "WÖk-Begriffsleitfaden führend v1.5",
-      "shortDescription": "PDF-Fassung der maßgeblichen Sprach- und Methodenreferenz der Wirkungsökonomie, Version 1.5.",
+      "id": "download-or-document-public-downloads-originals-woek-begriffsleitfaden-fuehrend-v1-7-pdf",
+      "title": "WÖk-Begriffsleitfaden führend v1.7",
+      "shortDescription": "PDF-Fassung der maßgeblichen Sprach- und Methodenreferenz der Wirkungsökonomie, Version 1.7.",
       "type": "Glossar",
       "status": "führend",
-      "dateOrStand": "v1.5",
+      "dateOrStand": "v1.7",
       "topics": [
         "Grundlagen & Orientierung"
       ],
@@ -638,8 +690,35 @@
         "PDF"
       ],
       "urls": {
-        "primary": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.5.pdf",
-        "sourcePath": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.5.pdf"
+        "primary": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.7.pdf",
+        "sourcePath": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.7.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": true,
+      "historicalNotice": "",
+      "successorUrl": "",
+      "successorLabel": ""
+    },
+    {
+      "id": "download-or-document-assets-downloads-woek-register-v1-5-woek-masterregister-v1-5-2026-08-21-xls",
+      "title": "WÖk-Masterregister v1.5",
+      "shortDescription": "Führendes MasterItems-Register mit 621 stabilen WÖk-IDs, expliziter Zwei-Ebenen-Architektur, amtlichen Bundesreferenzen und sichtbaren offenen Mappingstatus.",
+      "type": "Methodik",
+      "status": "führend",
+      "dateOrStand": "2026-08-21",
+      "topics": [
+        "Daten & Infrastruktur"
+      ],
+      "relatedMethods": [
+        "Datenqualität & Assurance"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "XLSX"
+      ],
+      "urls": {
+        "primary": "assets/downloads/woek-register/v1.5/WOeK_Masterregister_v1.5_2026-08-21.xlsx",
+        "sourcePath": "assets/downloads/woek-register/v1.5/WOeK_Masterregister_v1.5_2026-08-21.xlsx"
       },
       "source": "download-or-document",
       "isLeadingReference": true,
@@ -3243,6 +3322,31 @@
         "sourcePath": "werkstatt/arbeitsbibliothek/architektur/index.html"
       },
       "source": "online-version",
+      "isLeadingReference": false,
+      "historicalNotice": "",
+      "successorUrl": "",
+      "successorLabel": ""
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-atomkraft-wetterabhaengigkeit-hinter-beton-pdf",
+      "title": "Atomkraft wetterabhaengigkeit hinter beton",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/atomkraft-wetterabhaengigkeit-hinter-beton.pdf",
+        "sourcePath": "assets/pdf/journal/atomkraft-wetterabhaengigkeit-hinter-beton.pdf"
+      },
+      "source": "download-or-document",
       "isLeadingReference": false,
       "historicalNotice": "",
       "successorUrl": "",
@@ -24964,6 +25068,31 @@
       "urls": {
         "primary": "assets/downloads/woek_gesundheit_pflege_einzeldossier_set_v0_3.pdf",
         "sourcePath": "assets/downloads/woek_gesundheit_pflege_einzeldossier_set_v0_3.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false,
+      "historicalNotice": "",
+      "successorUrl": "",
+      "successorLabel": ""
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-enap-woek-benchmark-fuenf-bundesvorhaben-pdf",
+      "title": "Enap WÖk benchmark fuenf bundesvorhaben",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/enap-woek-benchmark-fuenf-bundesvorhaben.pdf",
+        "sourcePath": "assets/pdf/journal/enap-woek-benchmark-fuenf-bundesvorhaben.pdf"
       },
       "source": "download-or-document",
       "isLeadingReference": false,
@@ -65790,35 +65919,6 @@
       "successorLabel": ""
     },
     {
-      "id": "download-or-document-assets-pdf-wirkungssteuergesetz-wstg-oktober-2025-pdf",
-      "title": "Wirkungssteuergesetz WStG oktober",
-      "shortDescription": "Gesetzesentwurf im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Staat & Demokratie.",
-      "type": "Gesetzesentwurf",
-      "status": "aktuell",
-      "dateOrStand": "2025",
-      "topics": [
-        "Staat & Demokratie"
-      ],
-      "relatedMethods": [
-        "Wirkungssteuerung"
-      ],
-      "relatedImpactFields": [
-        "Staat & Demokratie"
-      ],
-      "formats": [
-        "PDF"
-      ],
-      "urls": {
-        "primary": "assets/pdf/wirkungssteuergesetz-wstg-oktober-2025.pdf",
-        "sourcePath": "assets/pdf/wirkungssteuergesetz-wstg-oktober-2025.pdf"
-      },
-      "source": "download-or-document",
-      "isLeadingReference": false,
-      "historicalNotice": "",
-      "successorUrl": "",
-      "successorLabel": ""
-    },
-    {
       "id": "online-version-wirkungsfelder-produkte-konsum-detailkonzepte-wirkungsumsatzsteuer-index-html",
       "title": "Wirkungsumsatzsteuer",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Produkte, Konsum & Beschaffung, Staat & Demokratie.",
@@ -66428,6 +66528,35 @@
       "urls": {
         "primary": "assets/downloads/woemm-woems-praesentation-2.0.pdf",
         "sourcePath": "assets/downloads/woemm-woems-praesentation-2.0.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false,
+      "historicalNotice": "",
+      "successorUrl": "",
+      "successorLabel": ""
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-wohlstandsverlust-preise-klimakrise-pdf",
+      "title": "Wohlstandsverlust preise klimakrise",
+      "shortDescription": "Grundlagenwerk im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Planet & Resilienz.",
+      "type": "Grundlagenwerk",
+      "status": "aktuell",
+      "dateOrStand": "",
+      "topics": [
+        "Planet & Resilienz"
+      ],
+      "relatedMethods": [
+        "Wirkungssteuerung"
+      ],
+      "relatedImpactFields": [
+        "Planet & Resilienz"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/wohlstandsverlust-preise-klimakrise.pdf",
+        "sourcePath": "assets/pdf/journal/wohlstandsverlust-preise-klimakrise.pdf"
       },
       "source": "download-or-document",
       "isLeadingReference": false,
@@ -68466,60 +68595,6 @@
         "sourcePath": "dokumente/wp-wohnungsmarkt/index.html"
       },
       "source": "online-version",
-      "isLeadingReference": false,
-      "historicalNotice": "",
-      "successorUrl": "",
-      "successorLabel": ""
-    },
-    {
-      "id": "online-version-dokumente-wstg-oktober-2025-index-html",
-      "title": "WStG oktober",
-      "shortDescription": "Gesetzesentwurf im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Staat & Demokratie.",
-      "type": "Gesetzesentwurf",
-      "status": "aktuell",
-      "dateOrStand": "2025",
-      "topics": [
-        "Staat & Demokratie"
-      ],
-      "relatedMethods": [
-        "Wirkungssteuerung"
-      ],
-      "relatedImpactFields": [],
-      "formats": [
-        "HTML"
-      ],
-      "urls": {
-        "primary": "dokumente/wstg-oktober-2025/",
-        "sourcePath": "dokumente/wstg-oktober-2025/index.html"
-      },
-      "source": "online-version",
-      "isLeadingReference": false,
-      "historicalNotice": "",
-      "successorUrl": "",
-      "successorLabel": ""
-    },
-    {
-      "id": "download-or-document-public-downloads-originals-wstg-oktober2025-pdf",
-      "title": "WStG Oktober2025",
-      "shortDescription": "Gesetzesentwurf im Bibliotheks- und Versionssystem; Status: aktuell; Themen: Staat & Demokratie.",
-      "type": "Gesetzesentwurf",
-      "status": "aktuell",
-      "dateOrStand": "2025",
-      "topics": [
-        "Staat & Demokratie"
-      ],
-      "relatedMethods": [
-        "Wirkungssteuerung"
-      ],
-      "relatedImpactFields": [],
-      "formats": [
-        "PDF"
-      ],
-      "urls": {
-        "primary": "public/downloads/originals/WStG_Oktober2025.pdf",
-        "sourcePath": "public/downloads/originals/WStG_Oktober2025.pdf"
-      },
-      "source": "download-or-document",
       "isLeadingReference": false,
       "historicalNotice": "",
       "successorUrl": "",
@@ -75997,35 +76072,6 @@
       "successorLabel": ""
     },
     {
-      "id": "download-or-document-docs-gesetze-wstg-2-0-wirkungssteuerrahmengesetz-entwurf-pdf",
-      "title": "WStG 2.0 Wirkungssteuerrahmengesetz Entwurf",
-      "shortDescription": "Gesetzesentwurf im Bibliotheks- und Versionssystem; Status: Arbeitsfassung; Themen: Staat & Demokratie.",
-      "type": "Gesetzesentwurf",
-      "status": "Arbeitsfassung",
-      "dateOrStand": "",
-      "topics": [
-        "Staat & Demokratie"
-      ],
-      "relatedMethods": [
-        "Wirkungssteuerung"
-      ],
-      "relatedImpactFields": [
-        "Staat & Demokratie"
-      ],
-      "formats": [
-        "PDF"
-      ],
-      "urls": {
-        "primary": "docs/gesetze/WStG_2.0_Wirkungssteuerrahmengesetz_Entwurf.pdf",
-        "sourcePath": "docs/gesetze/WStG_2.0_Wirkungssteuerrahmengesetz_Entwurf.pdf"
-      },
-      "source": "download-or-document",
-      "isLeadingReference": false,
-      "historicalNotice": "",
-      "successorUrl": "",
-      "successorLabel": ""
-    },
-    {
       "id": "download-or-document-docs-gesetze-wustg-technische-leitlinien-v2-1-entwurf-pdf",
       "title": "WUStG Technische Leitlinien Entwurf",
       "shortDescription": "Gesetzesentwurf im Bibliotheks- und Versionssystem; Status: Arbeitsfassung; Themen: Staat & Demokratie.",
@@ -79018,6 +79064,37 @@
       "successorLabel": ""
     },
     {
+      "id": "download-or-document-assets-pdf-journal-nachhaltige-betriebswirtschaft-wirkungssteuerung-pdf",
+      "title": "Nachhaltige betriebswirtschaft wirkungssteuerung",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Wirtschaft & Unternehmen, Staat & Demokratie.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Wirtschaft & Unternehmen",
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [
+        "Wirkungssteuerung"
+      ],
+      "relatedImpactFields": [
+        "Wirtschaft & Kapital",
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/nachhaltige-betriebswirtschaft-wirkungssteuerung.pdf",
+        "sourcePath": "assets/pdf/journal/nachhaltige-betriebswirtschaft-wirkungssteuerung.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false,
+      "historicalNotice": "",
+      "successorUrl": "",
+      "successorLabel": ""
+    },
+    {
       "id": "download-or-document-public-downloads-originals-nachhaltigkeit-als-systemresilienz-definition-un",
       "title": "Nachhaltigkeit als Systemresilienz Definition und Klimamodell",
       "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Planet & Resilienz.",
@@ -79037,6 +79114,31 @@
       "urls": {
         "primary": "public/downloads/originals/Nachhaltigkeit_als_Systemresilienz_Definition_und_Klimamodell_v1.0.pdf",
         "sourcePath": "public/downloads/originals/Nachhaltigkeit_als_Systemresilienz_Definition_und_Klimamodell_v1.0.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false,
+      "historicalNotice": "",
+      "successorUrl": "",
+      "successorLabel": ""
+    },
+    {
+      "id": "download-or-document-assets-pdf-journal-nachhaltigkeit-ist-keine-parteifarbe-pdf",
+      "title": "Nachhaltigkeit ist keine parteifarbe",
+      "shortDescription": "Arbeitspapier im Bibliotheks- und Versionssystem; Status: ältere Fassung; Themen: Grundlagen & Orientierung.",
+      "type": "Arbeitspapier",
+      "status": "ältere Fassung",
+      "dateOrStand": "",
+      "topics": [
+        "Grundlagen & Orientierung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/journal/nachhaltigkeit-ist-keine-parteifarbe.pdf",
+        "sourcePath": "assets/pdf/journal/nachhaltigkeit-ist-keine-parteifarbe.pdf"
       },
       "source": "download-or-document",
       "isLeadingReference": false,
@@ -83406,7 +83508,7 @@
     {
       "id": "download-or-document-assets-pdf-woek-master-items-v1-2-pdf",
       "title": "WÖk Master Items v1.2 (historische Fassung)",
-      "shortDescription": "Historische Quellenfassung des WÖk-Master-Items-Registers. Für den aktuellen Stand gilt WÖk Master Items v1.3.",
+      "shortDescription": "Historische Quellenfassung des WÖk-Master-Items-Registers. Für den aktuellen Stand gilt das WÖk-Masterregister v1.5.",
       "type": "Methodik",
       "status": "ersetzt",
       "dateOrStand": "v1-2",
@@ -83424,9 +83526,63 @@
       },
       "source": "download-or-document",
       "isLeadingReference": false,
-      "historicalNotice": "Historische Quellenfassung. Aktive validierte Benchmarks, Regelstatus und Prüfprotokoll sind in v1.3 getrennt ausgewiesen.",
+      "historicalNotice": "Historische Quellenfassung. MasterItems, Indikatoren, Quellenfunktion und Prüfstatus werden in v1.5 getrennt ausgewiesen.",
       "successorUrl": "bibliothek/woek-master-items-register/",
-      "successorLabel": "WÖk Master Items v1.3 öffnen"
+      "successorLabel": "WÖk-Masterregister v1.5 öffnen"
+    },
+    {
+      "id": "download-or-document-assets-downloads-woek-register-woek-master-items-v1-3-geprueft-xlsx",
+      "title": "WÖk Master Items v1.3 (historische Fassung)",
+      "shortDescription": "Historische Registerfassung. Für den aktuellen technischen Stand gilt das WÖk-Masterregister v1.5.",
+      "type": "Methodik",
+      "status": "ersetzt",
+      "dateOrStand": "v1.3",
+      "topics": [
+        "Daten & Infrastruktur"
+      ],
+      "relatedMethods": [
+        "Datenqualität & Assurance"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "XLSX"
+      ],
+      "urls": {
+        "primary": "assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx",
+        "sourcePath": "assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false,
+      "historicalNotice": "Historische Quellenfassung. Die führende technische Registerquelle ist v1.5.",
+      "successorUrl": "bibliothek/woek-master-items-register/",
+      "successorLabel": "WÖk-Masterregister v1.5 öffnen"
+    },
+    {
+      "id": "download-or-document-assets-downloads-woek-register-v1-4-woek-masterregister-v1-4-final-2026-08-",
+      "title": "WÖk-Masterregister v1.4 (historische Fassung)",
+      "shortDescription": "Historische Registerfassung. Für den aktuellen MasterItems- und Architekturstand gilt v1.5.",
+      "type": "Methodik",
+      "status": "ersetzt",
+      "dateOrStand": "2026-08-16",
+      "topics": [
+        "Daten & Infrastruktur"
+      ],
+      "relatedMethods": [
+        "Datenqualität & Assurance"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "XLSX"
+      ],
+      "urls": {
+        "primary": "assets/downloads/woek-register/v1.4/WOeK_Masterregister_v1.4_FINAL_2026-08-16.xlsx",
+        "sourcePath": "assets/downloads/woek-register/v1.4/WOeK_Masterregister_v1.4_FINAL_2026-08-16.xlsx"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false,
+      "historicalNotice": "Unveränderte historische Quellenfassung. Die führende MasterItems-Fassung ist v1.5.",
+      "successorUrl": "bibliothek/woek-master-items-register/",
+      "successorLabel": "WÖk-Masterregister v1.5 öffnen"
     },
     {
       "id": "download-or-document-assets-pdf-working-paper-wohnungsmarkt-pdf",
@@ -83531,6 +83687,118 @@
       "historicalNotice": "Historische Quellenfassung: Die Verrechnung persönlicher Biografien, Wirkungsfaktoren und Rentenhöhen ist verworfen. Die WÖk bewertet keine Personen und automatisiert keine individuellen Leistungsansprüche.",
       "successorUrl": "wirkungsfelder/rente-soziale-sicherung/",
       "successorLabel": "Aktuelle Einordnung zu Rente & sozialer Sicherung öffnen"
+    },
+    {
+      "id": "download-or-document-docs-gesetze-wstg-2-0-wirkungssteuerrahmengesetz-entwurf-pdf",
+      "title": "WStG 2.0 - historische Zwischenfassung",
+      "shortDescription": "Zitierfähige historische Zwischenfassung. Für den aktuellen fachlichen Stand gilt die Gesamtneufassung WStG 3.0.",
+      "type": "Gesetzesentwurf",
+      "status": "ersetzt",
+      "dateOrStand": "",
+      "topics": [
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [
+        "Wirkungssteuerung"
+      ],
+      "relatedImpactFields": [
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "docs/gesetze/WStG_2.0_Wirkungssteuerrahmengesetz_Entwurf.pdf",
+        "sourcePath": "docs/gesetze/WStG_2.0_Wirkungssteuerrahmengesetz_Entwurf.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false,
+      "historicalNotice": "Historische Quellenfassung; ersetzt durch die Gesamtneufassung 3.0 vom 17. August 2026.",
+      "successorUrl": "bibliothek/wirkungssteuer-wstg-3-0/",
+      "successorLabel": "WStG 3.0 öffnen"
+    },
+    {
+      "id": "download-or-document-assets-pdf-wirkungssteuergesetz-wstg-oktober-2025-pdf",
+      "title": "WStG Oktober 2025 - historische Fassung",
+      "shortDescription": "Historische PDF-Fassung; für den aktuellen fachlichen Stand gilt WStG 3.0.",
+      "type": "Gesetzesentwurf",
+      "status": "ersetzt",
+      "dateOrStand": "2025",
+      "topics": [
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [
+        "Wirkungssteuerung"
+      ],
+      "relatedImpactFields": [
+        "Staat & Demokratie"
+      ],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "assets/pdf/wirkungssteuergesetz-wstg-oktober-2025.pdf",
+        "sourcePath": "assets/pdf/wirkungssteuergesetz-wstg-oktober-2025.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false,
+      "historicalNotice": "Historische Quellenfassung; ersetzt durch die Gesamtneufassung 3.0.",
+      "successorUrl": "bibliothek/wirkungssteuer-wstg-3-0/",
+      "successorLabel": "WStG 3.0 öffnen"
+    },
+    {
+      "id": "download-or-document-public-downloads-originals-wstg-oktober2025-pdf",
+      "title": "WStG Oktober 2025 - historische Fassung",
+      "shortDescription": "Zitierfähiger historischer Entwicklungsstand. Für den aktuellen fachlichen Stand gilt die Gesamtneufassung WStG 3.0.",
+      "type": "Gesetzesentwurf",
+      "status": "ersetzt",
+      "dateOrStand": "2025",
+      "topics": [
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [
+        "Wirkungssteuerung"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "PDF"
+      ],
+      "urls": {
+        "primary": "public/downloads/originals/WStG_Oktober2025.pdf",
+        "sourcePath": "public/downloads/originals/WStG_Oktober2025.pdf"
+      },
+      "source": "download-or-document",
+      "isLeadingReference": false,
+      "historicalNotice": "Historische Quellenfassung; nicht still überschrieben und durch WStG 3.0 ersetzt.",
+      "successorUrl": "bibliothek/wirkungssteuer-wstg-3-0/",
+      "successorLabel": "WStG 3.0 öffnen"
+    },
+    {
+      "id": "online-version-dokumente-wstg-oktober-2025-index-html",
+      "title": "WStG Oktober 2025 - historische Onlinefassung",
+      "shortDescription": "Historische Onlinefassung; für den aktuellen fachlichen Stand gilt WStG 3.0.",
+      "type": "Gesetzesentwurf",
+      "status": "ersetzt",
+      "dateOrStand": "2025",
+      "topics": [
+        "Staat & Demokratie"
+      ],
+      "relatedMethods": [
+        "Wirkungssteuerung"
+      ],
+      "relatedImpactFields": [],
+      "formats": [
+        "HTML"
+      ],
+      "urls": {
+        "primary": "dokumente/wstg-oktober-2025/",
+        "sourcePath": "dokumente/wstg-oktober-2025/index.html"
+      },
+      "source": "online-version",
+      "isLeadingReference": false,
+      "historicalNotice": "Historische Quellenfassung; ersetzt durch die Gesamtneufassung 3.0.",
+      "successorUrl": "bibliothek/wirkungssteuer-wstg-3-0/",
+      "successorLabel": "WStG 3.0 öffnen"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T14:52:29.473Z",
+  "generatedAt": "2026-08-21T19:12:37.933Z",
   "documents": [
     {
       "id": "nachhaltigkeit-als-systemresilienz-definition-und-klimamodell-v1-0",
@@ -1171,8 +1171,8 @@
     {
       "id": "woek-master-items-register",
       "slug": "woek-master-items-register",
-      "title": "WÖk-Masterregister v1.4",
-      "subtitle": "Führendes technisches Register für WÖk-IDs, Bewertungsregeln, Quellen und Prüfstatus",
+      "title": "WÖk-Masterregister v1.5",
+      "subtitle": "Führendes MasterItems-Register mit Zwei-Ebenen-, Quellen- und Prüfarchitektur",
       "author": "",
       "publicationLabel": "",
       "documentType": "datenregister",
@@ -1184,16 +1184,15 @@
         "Wissenschaft"
       ],
       "level": "expert",
-      "summaryShort": "Führendes Register mit 621 WÖk-IDs, 28 Regeln, getrennten Schwellen- und Benchmarkstatus sowie sichtbaren offenen Prüfbedarfen.",
+      "summaryShort": "Führendes Register mit 621 stabilen MasterItems, expliziter Trennung vom Wirkindikatorenregister sowie sichtbaren offenen Mapping- und Prüfstatus.",
       "topics": [
         "WÖk-ID",
-        "Datenregister",
-        "Scorecards",
-        "Benchmarks"
+        "MasterItems",
+        "Wirkindikatorenregister",
+        "Staatliche Nachhaltigkeitsarchitektur"
       ],
       "methods": [
-        "WÖk-ID",
-        "Scorecards",
+        "MasterItem → StateVariable → Indicator → Observation",
         "Datenqualität & Assurance"
       ],
       "impactFields": [
@@ -1203,16 +1202,53 @@
       ],
       "pageCount": 221,
       "estimatedReadingTime": "376 Min.",
-      "version": "v1.4",
-      "date": "2026-08-16",
+      "version": "v1.5",
+      "date": "2026-08-21",
       "downloadAllowed": true,
       "includeInFullKnowledgeLibrary": false,
       "url": "/bibliothek/woek-master-items-register/"
     },
     {
+      "id": "woek-master-items-register-v1-4",
+      "slug": "woek-master-items-register-v1-4",
+      "title": "WÖk-Masterregister v1.4 (historische Fassung)",
+      "subtitle": "Ersetzte technische Registerfassung vom 16. August 2026",
+      "author": "",
+      "publicationLabel": "",
+      "documentType": "datenregister",
+      "status": "ersetzt",
+      "visibility": "expert_public",
+      "audience": [
+        "Methodik",
+        "Daten",
+        "Wissenschaft"
+      ],
+      "level": "technisch",
+      "summaryShort": "Historische v1.4-Fassung mit 621 WÖk-IDs; für aktuelle Anwendungen gilt v1.5.",
+      "topics": [
+        "WÖk-IDs",
+        "Register",
+        "Versionierung"
+      ],
+      "methods": [
+        "WÖk-IDs",
+        "Datenqualität & Assurance"
+      ],
+      "impactFields": [
+        "Daten & Infrastruktur"
+      ],
+      "pageCount": null,
+      "estimatedReadingTime": "technisches Register",
+      "version": "v1.4",
+      "date": "2026-08-16",
+      "downloadAllowed": true,
+      "includeInFullKnowledgeLibrary": false,
+      "url": "/bibliothek/woek-master-items-register-v1-4/"
+    },
+    {
       "id": "woek-begriffsleitfaden-fuehrend",
       "slug": "woek-begriffsleitfaden-fuehrend",
-      "title": "WÖk-Begriffsleitfaden führend v1.5",
+      "title": "WÖk-Begriffsleitfaden führend v1.7",
       "subtitle": "Maßgebliche Sprachreferenz der Wirkungsökonomie",
       "author": "",
       "publicationLabel": "",
@@ -1225,16 +1261,105 @@
         "Akademie"
       ],
       "level": "fortgeschritten",
-      "summaryShort": "Führende Sprach- und Methodenreferenz v1.5: IOOI ist eine externe, optionale Results Chain; die WÖk-Wirkungsarchitektur verbindet Vorwirkung, Evidenz, Bewertung, Schutz, Rückkopplung und Lernen.",
+      "summaryShort": "Führende Sprach- und Methodenreferenz v1.7: staatliche Prüfrahmen objektspezifisch einordnen, Wirkungsrelevanz statt Rechtsform anwenden und den WÖk-Zusatznutzen additiv bestimmen.",
       "topics": [
         "Begriffe",
         "Glossar",
         "Sprachregelwerk",
-        "Wirkungsresilienz",
-        "Systemresilienz",
+        "DNS",
+        "GFA",
+        "eNAP",
+        "BHO",
+        "VV-BHO",
+        "Wirkungsrelevanz",
+        "Objektspezifische Prüfarchitektur",
+        "Problem Review",
+        "Goal Review",
+        "Masterregister",
+        "Wirkindikatorenregister",
+        "Reality Check"
+      ],
+      "methods": [
+        "Begriffliche Orientierung"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "pageCount": 52,
+      "estimatedReadingTime": "88 Min.",
+      "version": "v1.7",
+      "date": "2026-08-21",
+      "downloadAllowed": true,
+      "includeInFullKnowledgeLibrary": false,
+      "url": "/bibliothek/woek-begriffsleitfaden-fuehrend/"
+    },
+    {
+      "id": "woek-begriffsleitfaden-fuehrend-v1-6",
+      "slug": "woek-begriffsleitfaden-fuehrend-v1-6",
+      "title": "WÖk-Begriffsleitfaden führend v1.6",
+      "subtitle": "Zitierfähige Archivfassung der maßgeblichen Sprachreferenz",
+      "author": "",
+      "publicationLabel": "",
+      "documentType": "redaktionsgrundlage",
+      "status": "archiviert",
+      "visibility": "archive",
+      "audience": [
+        "Redaktion",
+        "Fachöffentlichkeit",
+        "Akademie"
+      ],
+      "level": "fortgeschritten",
+      "summaryShort": "Archivierte Fassung v1.6 mit der staatlichen Nachhaltigkeits- und Folgenprüfungsarchitektur sowie der Zwei-Ebenen-Registerlogik.",
+      "topics": [
+        "Begriffe",
+        "Glossar",
+        "Archiv",
+        "DNS",
+        "GFA",
+        "eNAP",
+        "Masterregister",
+        "Wirkindikatorenregister"
+      ],
+      "methods": [
+        "Begriffliche Orientierung"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "pageCount": 47,
+      "estimatedReadingTime": "80 Min.",
+      "version": "v1.6",
+      "date": "2026-08-21",
+      "downloadAllowed": true,
+      "includeInFullKnowledgeLibrary": false,
+      "url": "/bibliothek/woek-begriffsleitfaden-fuehrend-v1-6/"
+    },
+    {
+      "id": "woek-begriffsleitfaden-fuehrend-v1-5",
+      "slug": "woek-begriffsleitfaden-fuehrend-v1-5",
+      "title": "WÖk-Begriffsleitfaden führend v1.5",
+      "subtitle": "Zitierfähige Archivfassung der maßgeblichen Sprachreferenz",
+      "author": "",
+      "publicationLabel": "",
+      "documentType": "redaktionsgrundlage",
+      "status": "archiviert",
+      "visibility": "archive",
+      "audience": [
+        "Redaktion",
+        "Fachöffentlichkeit",
+        "Akademie"
+      ],
+      "level": "fortgeschritten",
+      "summaryShort": "Archivierte Fassung v1.5 des Begriffsleitfadens mit der IOOI- und Wirkungsarchitektur-Präzisierung vom 15. August 2026.",
+      "topics": [
+        "Begriffe",
+        "Glossar",
+        "Archiv",
         "IOOI",
-        "Wirkungspfad",
-        "Wirkungsradar",
         "Wirkungsarchitektur"
       ],
       "methods": [
@@ -1251,7 +1376,7 @@
       "date": "2026-08-15",
       "downloadAllowed": true,
       "includeInFullKnowledgeLibrary": false,
-      "url": "/bibliothek/woek-begriffsleitfaden-fuehrend/"
+      "url": "/bibliothek/woek-begriffsleitfaden-fuehrend-v1-5/"
     },
     {
       "id": "woek-begriffsleitfaden-fuehrend-v1-4",

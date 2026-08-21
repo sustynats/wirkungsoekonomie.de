@@ -1831,10 +1831,10 @@
     {
       "id": "woek-master-items-register",
       "slug": "woek-master-items-register",
-      "title": "WÖk-Masterregister v1.4",
-      "subtitle": "Führendes technisches Register für WÖk-IDs, Bewertungsregeln, Quellen und Prüfstatus",
-      "fileName": "WOeK_Masterregister_v1.4_FINAL_2026-08-16.xlsx",
-      "filePath": "assets/downloads/woek-register/v1.4/WOeK_Masterregister_v1.4_FINAL_2026-08-16.xlsx",
+      "title": "WÖk-Masterregister v1.5",
+      "subtitle": "Führendes MasterItems-Register mit Zwei-Ebenen-, Quellen- und Prüfarchitektur",
+      "fileName": "WOeK_Masterregister_v1.5_2026-08-21.xlsx",
+      "filePath": "assets/downloads/woek-register/v1.5/WOeK_Masterregister_v1.5_2026-08-21.xlsx",
       "documentType": "datenregister",
       "status": "führend",
       "visibility": "expert_public",
@@ -1844,22 +1844,21 @@
         "Wissenschaft"
       ],
       "level": "expert",
-      "summaryShort": "Führendes Register mit 621 WÖk-IDs, 28 Regeln, getrennten Schwellen- und Benchmarkstatus sowie sichtbaren offenen Prüfbedarfen.",
-      "whatToExpect": "Ein technisches Register für Expert:innen: Itemlogik, Regelzuordnung, Quellenfunktion, Systemgrenzen, Datenqualität, Assurance, Kalibrierungs- und Benchmarkstatus.",
+      "summaryShort": "Führendes Register mit 621 stabilen MasterItems, expliziter Trennung vom Wirkindikatorenregister sowie sichtbaren offenen Mapping- und Prüfstatus.",
+      "whatToExpect": "Ein technisches Register für Expert:innen: Wirkungsobjekt, StateVariable- und Indicator-Mappingstatus, Regeln, Quellenfunktion, Systemgrenzen, Datenqualität und Assurance.",
       "keyQuestions": [
-        "Welche WÖk-IDs und Prüfpfade sind aktuell geführt?",
-        "Wann bleibt ein Messwert bewusst unbewertet?",
-        "Welche Benchmarks sind aktiv validiert und welche noch offen?"
+        "Welche MasterItems und Prüfpfade sind aktuell geführt?",
+        "Welche Zuordnungen bleiben OPEN_REVIEW_REQUIRED?",
+        "Wie bleiben MasterItem, Indikator, Beobachtung und Wirkung getrennt?"
       ],
       "topics": [
         "WÖk-ID",
-        "Datenregister",
-        "Scorecards",
-        "Benchmarks"
+        "MasterItems",
+        "Wirkindikatorenregister",
+        "Staatliche Nachhaltigkeitsarchitektur"
       ],
       "methods": [
-        "WÖk-ID",
-        "Scorecards",
+        "MasterItem → StateVariable → Indicator → Observation",
         "Datenqualität & Assurance"
       ],
       "impactFields": [
@@ -1870,23 +1869,78 @@
       "relatedDocuments": [
         "technische-leitlinien-wustg"
       ],
-      "version": "v1.4",
-      "date": "2026-08-16",
+      "version": "v1.5",
+      "date": "2026-08-21",
       "legalNotice": "Technisches Register. Keine amtliche Klassifikation, keine Rechts-, Steuer-, Förder-, Anlage- oder Unternehmensberatung.",
       "downloadAllowed": true,
       "previewAllowed": true,
       "section": "Register & Daten",
       "order": 324,
       "contentHtmlPath": "content/documents/online/woek-master-items-register.inc",
-      "editorialNote": "Führende Fassung v1.4, Stand 16. August 2026. FINAL bezeichnet die kanonische Registerfassung, nicht die abgeschlossene Validierung jeder Schwelle. Leere Eingaben bleiben unbewertet.",
+      "editorialNote": "Führende Fassung v1.5, Stand 21. August 2026. Alle 621 IDs aus v1.4 bleiben unverändert. Offene Mappings, Kalibrierungen und Benchmarks bleiben offen; leere Eingaben bleiben unbewertet.",
       "replaces": [
         "woek-master-items-v1-2"
       ],
       "fileType": "xlsx",
-      "fileSize": "442 KB",
+      "fileSize": "377 KB",
       "pageCount": 221,
       "estimatedReadingTime": "376 Min.",
       "replacedBy": "",
+      "internalNote": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "woek-master-items-register-v1-4",
+      "slug": "woek-master-items-register-v1-4",
+      "title": "WÖk-Masterregister v1.4 (historische Fassung)",
+      "subtitle": "Ersetzte technische Registerfassung vom 16. August 2026",
+      "fileName": "WOeK_Masterregister_v1.4_FINAL_2026-08-16.xlsx",
+      "filePath": "assets/downloads/woek-register/v1.4/WOeK_Masterregister_v1.4_FINAL_2026-08-16.xlsx",
+      "documentType": "datenregister",
+      "status": "ersetzt",
+      "visibility": "expert_public",
+      "audience": [
+        "Methodik",
+        "Daten",
+        "Wissenschaft"
+      ],
+      "level": "technisch",
+      "summaryShort": "Historische v1.4-Fassung mit 621 WÖk-IDs; für aktuelle Anwendungen gilt v1.5.",
+      "whatToExpect": "Unveränderte historische Registerdatei zur Nachvollziehbarkeit des v1.4-Standes.",
+      "keyQuestions": [
+        "Wie sah das Register vor der expliziten Zwei-Ebenen-Architektur aus?"
+      ],
+      "topics": [
+        "WÖk-IDs",
+        "Register",
+        "Versionierung"
+      ],
+      "methods": [
+        "WÖk-IDs",
+        "Datenqualität & Assurance"
+      ],
+      "impactFields": [
+        "Daten & Infrastruktur"
+      ],
+      "relatedDocuments": [
+        "woek-master-items-register"
+      ],
+      "version": "v1.4",
+      "date": "2026-08-16",
+      "legalNotice": "Historische Arbeits- und Governance-Fassung. Keine amtliche Klassifikation und keine automatische Entscheidung.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Archiv",
+      "order": 421,
+      "fileType": "xlsx",
+      "fileSize": "442 KB",
+      "pageCount": null,
+      "estimatedReadingTime": "technisches Register",
+      "replaces": [],
+      "replacedBy": "",
+      "editorialNote": "",
       "internalNote": "",
       "author": "",
       "publicationLabel": "",
@@ -1947,10 +2001,10 @@
     {
       "id": "woek-begriffsleitfaden-fuehrend",
       "slug": "woek-begriffsleitfaden-fuehrend",
-      "title": "WÖk-Begriffsleitfaden führend v1.5",
+      "title": "WÖk-Begriffsleitfaden führend v1.7",
       "subtitle": "Maßgebliche Sprachreferenz der Wirkungsökonomie",
-      "fileName": "WOeK_Begriffsleitfaden_fuehrend_v1.5.pdf",
-      "filePath": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.5.pdf",
+      "fileName": "WOeK_Begriffsleitfaden_fuehrend_v1.7.pdf",
+      "filePath": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.7.pdf",
       "contentHtmlPath": "content/documents/online/woek-begriffsleitfaden-fuehrend.inc",
       "documentType": "redaktionsgrundlage",
       "status": "führend",
@@ -1961,23 +2015,30 @@
         "Akademie"
       ],
       "level": "fortgeschritten",
-      "summaryShort": "Führende Sprach- und Methodenreferenz v1.5: IOOI ist eine externe, optionale Results Chain; die WÖk-Wirkungsarchitektur verbindet Vorwirkung, Evidenz, Bewertung, Schutz, Rückkopplung und Lernen.",
-      "whatToExpect": "Ein verbindlicher Referenzrahmen für konsistente WÖk-Sprache mit Systemhierarchie, sechsmoduliger Wirkungsarchitektur, Resilienz, IOOI, Wirkungspfad, Evidenz, Bewertung, Nichtkompensation, Wirkungsradar, Transformation, Rückkopplung, Quellen und Migrationsmatrix.",
+      "summaryShort": "Führende Sprach- und Methodenreferenz v1.7: staatliche Prüfrahmen objektspezifisch einordnen, Wirkungsrelevanz statt Rechtsform anwenden und den WÖk-Zusatznutzen additiv bestimmen.",
+      "whatToExpect": "Ein verbindlicher Referenzrahmen für konsistente WÖk-Sprache mit DNS/GGO/GFA/eNAP, § 7 BHO/VV-BHO, anwendbaren Fachrahmen, Problem Review, Goal Review, Wirkpfad, Gegenfaktum, Attribution, Zwei-Ebenen-Registerarchitektur, Nichtkompensation und Reality Check.",
       "keyQuestions": [
-        "Welche Begriffe und Quellenhierarchien sind maßgeblich?",
-        "Wie werden Auslöser, Wirkungspotenzial, Wirkmechanismus, Wirkungsermittlung, Nachweis und Bewertung unterschieden?",
-        "Wie ordnet die WÖk IOOI, Wirkungspfad, Nichtkompensation, Wirkungsradar und Rückkopplung ein?"
+        "Welcher staatliche Prüfrahmen gilt für welchen Gegenstand?",
+        "Was leisten DNS, GGO/GFA/eNAP und BHO/VV-BHO bereits?",
+        "Was ergänzt die WÖk spezifisch?",
+        "Wie werden MasterItem, Indikator, Beobachtung, Wirkung und Attribution getrennt?"
       ],
       "topics": [
         "Begriffe",
         "Glossar",
         "Sprachregelwerk",
-        "Wirkungsresilienz",
-        "Systemresilienz",
-        "IOOI",
-        "Wirkungspfad",
-        "Wirkungsradar",
-        "Wirkungsarchitektur"
+        "DNS",
+        "GFA",
+        "eNAP",
+        "BHO",
+        "VV-BHO",
+        "Wirkungsrelevanz",
+        "Objektspezifische Prüfarchitektur",
+        "Problem Review",
+        "Goal Review",
+        "Masterregister",
+        "Wirkindikatorenregister",
+        "Reality Check"
       ],
       "methods": [
         "Begriffliche Orientierung"
@@ -1991,20 +2052,141 @@
         "grundlagenpapier-wirkungsoekonomie",
         "leitbild-mensch-planet-demokratie"
       ],
-      "version": "v1.5",
-      "date": "2026-08-15",
-      "editorialNote": "Vollständige, geprüfte Version 1.5. Sie präzisiert IOOI als externe, optionale Results-Chain-Methode und ordnet die eigenständige WÖk-Wirkungsarchitektur, Wirkungspfade und das Wirkungsradar neu. Version 1.0 bis 1.4 bleiben als zitierfähige ältere Fassungen erhalten.",
+      "version": "v1.7",
+      "date": "2026-08-21",
+      "editorialNote": "Vollständige, geprüfte Version 1.7. Sie ergänzt v1.6 um Wirkungsrelevanz statt Rechtsform sowie § 7 BHO/VV-BHO und objektspezifische Prüfrahmen. Version 1.0 bis 1.6 bleiben zitierfähig erhalten.",
       "downloadAllowed": true,
       "previewAllowed": true,
       "isLeadingReference": true,
       "section": "Führende Referenzen",
       "order": 430,
       "fileType": "pdf",
+      "fileSize": "807 KB",
+      "pageCount": 52,
+      "estimatedReadingTime": "88 Min.",
+      "replaces": [],
+      "replacedBy": "",
+      "legalNotice": "",
+      "internalNote": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "woek-begriffsleitfaden-fuehrend-v1-6",
+      "slug": "woek-begriffsleitfaden-fuehrend-v1-6",
+      "title": "WÖk-Begriffsleitfaden führend v1.6",
+      "subtitle": "Zitierfähige Archivfassung der maßgeblichen Sprachreferenz",
+      "fileName": "WOeK_Begriffsleitfaden_fuehrend_v1.6.pdf",
+      "filePath": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.6.pdf",
+      "documentType": "redaktionsgrundlage",
+      "status": "archiviert",
+      "visibility": "archive",
+      "audience": [
+        "Redaktion",
+        "Fachöffentlichkeit",
+        "Akademie"
+      ],
+      "level": "fortgeschritten",
+      "summaryShort": "Archivierte Fassung v1.6 mit der staatlichen Nachhaltigkeits- und Folgenprüfungsarchitektur sowie der Zwei-Ebenen-Registerlogik.",
+      "whatToExpect": "Die frühere, zitierfähige Fassung. Für Wirkungsrelevanz, § 7 BHO/VV-BHO und die objektspezifische staatliche Prüfarchitektur gilt v1.7.",
+      "keyQuestions": [
+        "Wie lautete der dokumentierte Begriffsstand v1.6?",
+        "Wo ist die aktuelle Fassung v1.7?"
+      ],
+      "topics": [
+        "Begriffe",
+        "Glossar",
+        "Archiv",
+        "DNS",
+        "GFA",
+        "eNAP",
+        "Masterregister",
+        "Wirkindikatorenregister"
+      ],
+      "methods": [
+        "Begriffliche Orientierung"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "relatedDocuments": [
+        "woek-begriffsleitfaden-fuehrend"
+      ],
+      "version": "v1.6",
+      "date": "2026-08-21",
+      "replacedBy": "woek-begriffsleitfaden-fuehrend",
+      "editorialNote": "Archivierte Originalfassung. Nicht still überschrieben; für den aktuellen Begriffsstand siehe Version 1.7.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Archiv",
+      "order": 434,
+      "fileType": "pdf",
+      "fileSize": "731 KB",
+      "pageCount": 47,
+      "estimatedReadingTime": "80 Min.",
+      "replaces": [],
+      "legalNotice": "",
+      "internalNote": "",
+      "author": "",
+      "publicationLabel": "",
+      "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "woek-begriffsleitfaden-fuehrend-v1-5",
+      "slug": "woek-begriffsleitfaden-fuehrend-v1-5",
+      "title": "WÖk-Begriffsleitfaden führend v1.5",
+      "subtitle": "Zitierfähige Archivfassung der maßgeblichen Sprachreferenz",
+      "fileName": "WOeK_Begriffsleitfaden_fuehrend_v1.5.pdf",
+      "filePath": "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.5.pdf",
+      "documentType": "redaktionsgrundlage",
+      "status": "archiviert",
+      "visibility": "archive",
+      "audience": [
+        "Redaktion",
+        "Fachöffentlichkeit",
+        "Akademie"
+      ],
+      "level": "fortgeschritten",
+      "summaryShort": "Archivierte Fassung v1.5 des Begriffsleitfadens mit der IOOI- und Wirkungsarchitektur-Präzisierung vom 15. August 2026.",
+      "whatToExpect": "Die frühere, zitierfähige Fassung. Für den aktuellen Begriffsstand gilt v1.7.",
+      "keyQuestions": [
+        "Wie lautete der dokumentierte Begriffsstand v1.5?",
+        "Wo ist die aktuelle Fassung v1.7?"
+      ],
+      "topics": [
+        "Begriffe",
+        "Glossar",
+        "Archiv",
+        "IOOI",
+        "Wirkungsarchitektur"
+      ],
+      "methods": [
+        "Begriffliche Orientierung"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "relatedDocuments": [
+        "woek-begriffsleitfaden-fuehrend"
+      ],
+      "version": "v1.5",
+      "date": "2026-08-15",
+      "replacedBy": "woek-begriffsleitfaden-fuehrend",
+      "editorialNote": "Archivierte Originalfassung. Nicht still überschrieben; für den aktuellen Begriffsstand siehe Version 1.7.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "section": "Archiv",
+      "order": 432,
+      "fileType": "pdf",
       "fileSize": "663 KB",
       "pageCount": 34,
       "estimatedReadingTime": "58 Min.",
       "replaces": [],
-      "replacedBy": "",
       "legalNotice": "",
       "internalNote": "",
       "author": "",
@@ -2028,10 +2210,10 @@
       ],
       "level": "fortgeschritten",
       "summaryShort": "Archivierte Fassung v1.4 des Begriffsleitfadens; sie dokumentiert den vorherigen IOOI-Stand und bleibt für frühere Zitate unverändert erhalten.",
-      "whatToExpect": "Die frühere, zitierfähige Fassung der WÖk-Sprachreferenz. Für den aktuellen Begriffsstand gilt v1.5.",
+      "whatToExpect": "Die frühere, zitierfähige Fassung der WÖk-Sprachreferenz. Für den aktuellen Begriffsstand gilt v1.7.",
       "keyQuestions": [
         "Wie lautete der dokumentierte Begriffsstand v1.4?",
-        "Wo ist die aktuelle Fassung v1.5?"
+        "Wo ist die aktuelle Fassung v1.7?"
       ],
       "topics": [
         "Begriffe",
@@ -2054,11 +2236,11 @@
       "version": "v1.4",
       "date": "2026-08-14",
       "replacedBy": "woek-begriffsleitfaden-fuehrend",
-      "editorialNote": "Archivierte Originalfassung. Nicht still überschrieben; für den aktuellen Begriffsstand siehe Version 1.5.",
+      "editorialNote": "Archivierte Originalfassung. Nicht still überschrieben; für den aktuellen Begriffsstand siehe Version 1.7.",
       "downloadAllowed": true,
       "previewAllowed": true,
       "section": "Archiv",
-      "order": 431,
+      "order": 433,
       "fileType": "pdf",
       "fileSize": "417 KB",
       "pageCount": 28,
@@ -2087,10 +2269,10 @@
       ],
       "level": "fortgeschritten",
       "summaryShort": "Archivierte Fassung v1.3 des Begriffsleitfadens mit der damals führenden Resilienzsystematik.",
-      "whatToExpect": "Die frühere, zitierfähige Fassung der WÖk-Sprachreferenz. Für den aktuellen Begriffsstand gilt v1.5.",
+      "whatToExpect": "Die frühere, zitierfähige Fassung der WÖk-Sprachreferenz. Für den aktuellen Begriffsstand gilt v1.7.",
       "keyQuestions": [
         "Wie lautete der dokumentierte Begriffsstand v1.3?",
-        "Wo ist die aktuelle Fassung v1.5?"
+        "Wo ist die aktuelle Fassung v1.7?"
       ],
       "topics": [
         "Begriffe",
@@ -2112,11 +2294,11 @@
       "version": "v1.3",
       "date": "2026-07-30",
       "replacedBy": "woek-begriffsleitfaden-fuehrend",
-      "editorialNote": "Archivierte Originalfassung. Nicht still überschrieben; für den aktuellen Begriffsstand siehe Version 1.5.",
+      "editorialNote": "Archivierte Originalfassung. Nicht still überschrieben; für den aktuellen Begriffsstand siehe Version 1.7.",
       "downloadAllowed": true,
       "previewAllowed": true,
       "section": "Archiv",
-      "order": 431,
+      "order": 435,
       "fileType": "pdf",
       "fileSize": "371 KB",
       "pageCount": 25,
@@ -2145,10 +2327,10 @@
       ],
       "level": "fortgeschritten",
       "summaryShort": "Archivierte Fassung v1.2 des Begriffsleitfadens; für frühere Zitate unverändert erhalten.",
-      "whatToExpect": "Die frühere, zitierfähige Fassung der WÖk-Sprachreferenz. Für den aktuellen Begriffsstand gilt v1.5.",
+      "whatToExpect": "Die frühere, zitierfähige Fassung der WÖk-Sprachreferenz. Für den aktuellen Begriffsstand gilt v1.7.",
       "keyQuestions": [
         "Wie lautete der dokumentierte Begriffsstand v1.2?",
-        "Wo ist die aktuelle Fassung v1.5?"
+        "Wo ist die aktuelle Fassung v1.7?"
       ],
       "topics": [
         "Begriffe",
@@ -2169,11 +2351,11 @@
       "version": "v1.2",
       "date": "2026-07-30",
       "replacedBy": "woek-begriffsleitfaden-fuehrend",
-      "editorialNote": "Archivierte Originalfassung. Nicht still überschrieben; für den aktuellen Begriffsstand siehe Version 1.5.",
+      "editorialNote": "Archivierte Originalfassung. Nicht still überschrieben; für den aktuellen Begriffsstand siehe Version 1.7.",
       "downloadAllowed": true,
       "previewAllowed": true,
       "section": "Archiv",
-      "order": 431,
+      "order": 436,
       "fileType": "pdf",
       "fileSize": "340 KB",
       "pageCount": 23,
@@ -2202,10 +2384,10 @@
       ],
       "level": "fortgeschritten",
       "summaryShort": "Archivierte Fassung v1.0 des Begriffsleitfadens; für frühere Zitate unverändert erhalten.",
-      "whatToExpect": "Die frühere, zitierfähige Fassung der WÖk-Sprachreferenz. Für den aktuellen Begriffsstand gilt v1.5.",
+      "whatToExpect": "Die frühere, zitierfähige Fassung der WÖk-Sprachreferenz. Für den aktuellen Begriffsstand gilt v1.7.",
       "keyQuestions": [
         "Wie lautete der dokumentierte Begriffsstand v1.0?",
-        "Wo ist die aktuelle Fassung v1.5?"
+        "Wo ist die aktuelle Fassung v1.7?"
       ],
       "topics": [
         "Begriffe",
@@ -2226,7 +2408,7 @@
       "version": "v1.0",
       "date": "2026-05-21",
       "replacedBy": "woek-begriffsleitfaden-fuehrend",
-      "editorialNote": "Archivierte Originalfassung. Nicht still überschrieben; für den aktuellen Begriffsstand siehe Version 1.5.",
+      "editorialNote": "Archivierte Originalfassung. Nicht still überschrieben; für den aktuellen Begriffsstand siehe Version 1.7.",
       "downloadAllowed": true,
       "previewAllowed": true,
       "section": "Archiv",

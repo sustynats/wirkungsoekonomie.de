@@ -402,21 +402,21 @@
       "origin": "extern",
       "reviewStatus": "fuehrend",
       "dataQuality": "amtlich",
-      "sourceFunction": "Objektspezifischer staatlicher Prüfrahmen für alle finanzwirksamen Maßnahmen des Bundes",
-      "dataFunction": "LEGAL_FRAMEWORK | EX_ANTE_ASSESSMENT | RESOURCE | IMPLEMENTATION_CONTEXT",
-      "summary": "§ 7 Absatz 2 BHO verlangt für alle finanzwirksamen Maßnahmen angemessene Wirtschaftlichkeitsuntersuchungen und die Berücksichtigung der Risikoverteilung.",
-      "einordnung": "Primärquelle gegen die falsche Behauptung einer allgemeinen Prüfleere bei nichtlegislativen finanzwirksamen Maßnahmen. Reichweite, Methode und spätere Kontrolle werden objektspezifisch zusammen mit den VV-BHO bestimmt; daraus folgt keine universelle eNAP-Pflicht.",
+      "sourceFunction": "Haushaltsrechtlicher, objektspezifischer Prüfrahmen für alle finanzwirksamen Maßnahmen des Bundes",
+      "dataFunction": "LEGAL_FRAMEWORK | PROCEDURE | EX_ANTE_ASSESSMENT | RISK_DISTRIBUTION | RESOURCE | IMPLEMENTATION_CONTEXT",
+      "summary": "§ 7 Absatz 2 BHO verlangt für alle finanzwirksamen Maßnahmen angemessene Wirtschaftlichkeitsuntersuchungen und die Berücksichtigung der mit den Maßnahmen verbundenen Risikoverteilung.",
+      "einordnung": "Primärquelle gegen die falsche Behauptung einer allgemeinen Prüfleere bei nichtlegislativen finanzwirksamen Maßnahmen. Reichweite, Methode und spätere Kontrolle werden objektspezifisch zusammen mit den VV-BHO bestimmt; daraus folgt weder eine universelle eNAP-Pflicht noch der Ersatz einer unabhängigen WÖk-Wirkungsanalyse.",
       "impactFields": [
         "Demokratie",
         "Mensch",
         "Planet"
       ],
-      "sdg": "SDG 16 / öffentliche Ressourcen",
+      "sdg": "SDG 16 / DNS / öffentliche Ressourcen",
       "domain": "www.gesetze-im-internet.de"
     },
     {
       "code": "WÖK-Q-9049",
-      "title": "Allgemeine Verwaltungsvorschriften zur BHO – VV zu § 7",
+      "title": "VV-BHO zu § 7 – Wirtschaftlichkeitsuntersuchungen und Erfolgskontrolle",
       "url": "https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_14032001_DokNr20110981762.htm",
       "doi": null,
       "author": "Bundesministerium der Finanzen",
@@ -428,17 +428,43 @@
       "origin": "extern",
       "reviewStatus": "fuehrend",
       "dataQuality": "amtlich",
-      "sourceFunction": "Verfahrensrahmen für Wirtschaftlichkeitsuntersuchung und Erfolgskontrolle finanzwirksamer Maßnahmen",
-      "dataFunction": "PROCEDURE | EX_ANTE_ASSESSMENT | OUTCOME | ATTRIBUTION | REALITY_CHECK",
-      "summary": "Die VV zu § 7 BHO konkretisieren die Wirtschaftlichkeitsuntersuchung in der Planungsphase sowie begleitende und abschließende Erfolgskontrollen mit Zielerreichungs-, Wirkungs- und Wirtschaftlichkeitskontrolle.",
-      "einordnung": "Die Wirkungskontrolle fragt amtlich danach, ob die finanzwirksame Maßnahme für die Zielerreichung ursächlich war, und erfasst beabsichtigte sowie unbeabsichtigte Wirkungen. WÖk erkennt diese bestehende Architektur an und beschreibt den eigenen Zusatznutzen additiv und objektspezifisch.",
+      "sourceFunction": "Verfahrensrahmen für Planung, begleitende Kontrolle und abschließende Erfolgskontrolle finanzwirksamer Maßnahmen",
+      "dataFunction": "PROCEDURE | EX_ANTE_ASSESSMENT | OPTIONS | OUTCOME | OUTCOME_CONTROL | ATTRIBUTION | REALITY_CHECK",
+      "summary": "Die VV-BHO zu § 7 konkretisiert Wirtschaftlichkeitsuntersuchungen von der Planung bis zur Erfolgskontrolle. Sie verlangt unter anderem Ausgangslage und Bedarf, konkrete Ziele und Zielkonflikte, Lösungsvergleich sowie Zielerreichungs-, Wirkungs- und Wirtschaftlichkeitskontrolle; die Wirkungskontrolle fragt nach dem ursächlichen Beitrag und bezieht beabsichtigte und unbeabsichtigte Wirkungen sowie Risiken ein.",
+      "einordnung": "Primärquelle für die staatliche Planungs-, Options- und Kontrollarchitektur finanzwirksamer Maßnahmen. WÖk erkennt diese bestehende Architektur an, dokumentiert sie objektspezifisch und beschreibt den eigenen Zusatznutzen additiv, ohne sie mit einer vollständigen WÖk-System-, Verteilungs- oder Schutzgrenzenanalyse gleichzusetzen.",
       "impactFields": [
         "Demokratie",
         "Mensch",
         "Planet"
       ],
-      "sdg": "SDG 16 / öffentliche Ressourcen",
+      "sdg": "SDG 16 / DNS / öffentliche Ressourcen",
       "domain": "www.verwaltungsvorschriften-im-internet.de"
+    },
+    {
+      "code": "WÖK-Q-9050",
+      "title": "BMF - Ziel- und wirkungsorientierte Haushaltsführung (zwoH)",
+      "url": "https://www.bundesfinanzministerium.de/Web/DE/Themen/Oeffentliche_Finanzen/Bundeshaushalt/Spending-Reviews/ZwoH/ziel-und-wirkungsorientierte-haushaltsfuehrung.html",
+      "doi": null,
+      "author": "Bundesministerium der Finanzen",
+      "year": 2025,
+      "type": "webseite",
+      "typeLabel": "Amtliche Fachinformation",
+      "cluster": "I",
+      "clusterLabel": "Staat / Recht / Steuern / Verwaltung",
+      "origin": "extern",
+      "reviewStatus": "fuehrend",
+      "dataQuality": "amtlich",
+      "sourceFunction": "Aktueller amtlicher Entwicklungs- und Anwendungsrahmen für die Ziel- und Wirkungsorientierung des Bundeshaushalts",
+      "dataFunction": "GOVERNANCE | TARGETS | INDICATORS | MONITORING | EVALUATION",
+      "summary": "Das BMF beschreibt zwoH als Weiterentwicklung der Haushaltsführung, bei der Ziele und tatsächliche Wirkungen finanzwirksamer Maßnahmen stärker zur Grundlage haushaltspolitischer Entscheidungen werden. Genannt werden einheitliche Ziele und Indikatoren, empirische Beobachtungen, Controlling sowie begleitende und abschließende Erfolgskontrollen.",
+      "einordnung": "Primärquelle für den aktuellen Entwicklungsstand ziel- und wirkungsorientierter Haushaltsführung. Der Rahmen belegt eine bestehende staatliche Wirkungsorientierung und wird von der unabhängigen WÖk-Bewertung getrennt gehalten.",
+      "impactFields": [
+        "Demokratie",
+        "Mensch",
+        "Planet"
+      ],
+      "sdg": "Agenda 2030 / DNS / SDG 16",
+      "domain": "www.bundesfinanzministerium.de"
     }
   ]
 }

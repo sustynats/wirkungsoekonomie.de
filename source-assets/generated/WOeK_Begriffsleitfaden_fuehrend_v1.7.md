@@ -47,9 +47,11 @@ Diese Version ersetzt Version 1.6 als führende begriffliche Arbeitsgrundlage. �
 
 - Wirkungsrelevanz statt Rechtsform wird als WÖk-Scope-Prinzip eingeführt, ohne staatliche Anwendungsbereiche zu verwischen.
 
-- § 7 BHO und die VV-BHO werden als bestehender Ex-ante-/Ex-post-Rahmen für finanzwirksame Maßnahmen anerkannt.
+- § 7 BHO und die VV-BHO werden als bestehender Ex-ante-/Ex-post-Rahmen für finanzwirksame Maßnahmen anerkannt; zwoH wird als aktuelle Weiterentwicklung eingeordnet.
 
 - GGO/GFA/eNAP, BHO/VV-BHO sowie KSG/KAnG werden objektspezifisch getrennt.
+
+- Der `STATE_ASSESSMENT_BENCHMARK` wird als generische Transparenzschicht eingeführt; `STATE_GFA_ENAP_BENCHMARK` bleibt der Regelungsvorhaben-Untertyp.
 
 - Staatliches Eigentum, Steuerung, Mandat und Attribution werden bei öffentlichen Unternehmen getrennt belegt.
 
@@ -140,7 +142,9 @@ Version 1.7 schließt die nach v1.6 sichtbar gewordene Lücke zwischen Rechtsetz
 - GGO/GFA/Nachhaltigkeitsprüfung/eNAP sind besonders für Bundesregelungsvorhaben relevant und werden nicht pauschal auf jede staatliche Handlung übertragen.
 - § 7 Absatz 2 BHO verlangt für alle finanzwirksamen Maßnahmen angemessene Wirtschaftlichkeitsuntersuchungen.
 - Die VV-BHO konkretisiert Wirtschaftlichkeitsuntersuchung und Erfolgskontrolle. Sie unterscheidet Zielerreichungs-, Wirkungs- und Wirtschaftlichkeitskontrolle; die Wirkungskontrolle fragt nach Ursächlichkeit und beabsichtigten wie unbeabsichtigten Wirkungen.
+- Die ziel- und wirkungsorientierte Haushaltsführung des Bundes (zwoH) entwickelt die Haushaltsarchitektur mit einheitlichen Zielen, Indikatoren, Controlling und Erfolgskontrollen weiter.
 - § 13 KSG und § 8 KAnG bilden weitere Prüf- und Berücksichtigungsrahmen, soweit ihr jeweiliger Anwendungsbereich eröffnet ist.
+- Der `STATE_ASSESSMENT_BENCHMARK` dokumentiert je Entscheidungsobjekt den anwendbaren staatlichen Rahmen und den öffentlich belegten Prüfstand. Der bestehende GFA-/eNAP-Benchmark bleibt sein Regelungsvorhaben-Untertyp.
 - Die Existenz einer Regel ist nicht automatisch der öffentliche Nachweis ihrer Anwendung im Einzelfall.
 - Öffentliches Eigentum allein macht eine Unternehmensentscheidung nicht zur Regierungsentscheidung.
 
@@ -173,6 +177,24 @@ Die Erfolgskontrolle ist ein systematisches Prüfverfahren während oder nach ei
 ### Wirkungskontrolle nach VV-BHO
 
 Die Wirkungskontrolle prüft, ob die finanzwirksame Maßnahme für die Zielerreichung ursächlich war. Sie erfasst beabsichtigte und unbeabsichtigte Wirkungen einschließlich eingetretener Risiken. Zielerreichung allein bleibt deshalb auch innerhalb dieses staatlichen Rahmens von der Zurechnung getrennt.
+
+### Objektspezifischer staatlicher Prüfbenchmark (`STATE_ASSESSMENT_BENCHMARK`)
+
+Der objektspezifische staatliche Prüfbenchmark ist eine WÖk-Transparenzschicht, kein amtliches Einheitsverfahren und keine Bewertungsmaschine. Für eine konkrete staatliche Entscheidung dokumentiert er getrennt:
+
+1. anwendbare staatliche Prüfrahmen (`applicable_state_frameworks`),
+2. staatliche Problem- oder Bedarfsprüfung (`state_problem_or_need_assessment`),
+3. staatlichen Optionsvergleich (`state_option_comparison`),
+4. staatliche Ex-ante-Folgenprüfung (`state_ex_ante_effect_assessment`),
+5. staatliche Erfolgs- oder Wirkungskontrolle (`state_success_or_effect_control`),
+6. staatliche Zurechnungsmethode (`state_attribution_method`) und
+7. öffentlichen Dokumentationsstand (`public_documentation_status`).
+
+Erst danach werden die amtlich dokumentierte Prüfung und die unabhängige WÖk-Vollkette verglichen. Konvergenz, zusätzliche WÖk-Befunde und begründete Abweichungen bleiben getrennt. Fehlende öffentliche Unterlagen werden als öffentlich nicht belegt ausgewiesen und niemals automatisch als nicht geprüft behandelt.
+
+### GFA-/eNAP-Benchmark als Regelungsvorhaben-Untertyp
+
+Der bestehende `STATE_GFA_ENAP_BENCHMARK` bleibt für geeignete Bundesregelungsvorhaben erhalten. Er ist der spezialisierte Untertyp des objektspezifischen staatlichen Prüfbenchmarks und dokumentiert insbesondere GFA, Nachhaltigkeitsprüfung, DNS-/SDG-Bezüge sowie den öffentlich belegbaren eNAP-/eGFA-Stand. Aus ihm werden weder WÖk-Wirkungsrichtung noch DNS-Mapping oder Empfehlung automatisch erzeugt.
 
 ## Zuordnung nach Gegenstand
 
@@ -211,6 +233,7 @@ Der WÖk-Zusatznutzen beruht auf dieser durchgängigen Verbindung über untersch
 - WÖK-Q-9047: Bundes-Klimaanpassungsgesetz, § 8.
 - WÖK-Q-9048: Bundeshaushaltsordnung, § 7.
 - WÖK-Q-9049: Allgemeine Verwaltungsvorschriften zur BHO, VV zu § 7.
+- WÖK-Q-9050: Bundesministerium der Finanzen, ziel- und wirkungsorientierte Haushaltsführung (zwoH).
 
 ## Redaktions- und Qualitätsregeln ab v1.7
 
@@ -218,6 +241,7 @@ Der WÖk-Zusatznutzen beruht auf dieser durchgängigen Verbindung über untersch
 - Den anwendbaren staatlichen Prüfrahmen je Objekttyp und Rechtsraum bestimmen und belegen.
 - GGO/GFA/eNAP, BHO/VV-BHO und Fachgesetze nicht zu einem universellen Einheitsverfahren verschmelzen.
 - Staatliche Ex-ante-Prüfung, Monitoring, Erfolgskontrolle, Wirkungskontrolle und unabhängigen WÖk-Reality-Check getrennt ausweisen.
+- Für geeignete Gegenstände zuerst den `STATE_ASSESSMENT_BENCHMARK` füllen; den `STATE_GFA_ENAP_BENCHMARK` nur als Regelungsvorhaben-Untertyp verwenden.
 - Die Existenz einer Prüfpflicht nicht automatisch als Nachweis ihrer Anwendung oder öffentlichen Dokumentation behandeln.
 - Eigentum, politische Flankierung, Steuerung, Mandat, Entscheidung und Attribution bei öffentlichen Unternehmen getrennt belegen.
 - Glossar, Quellenarchiv, Hauptwebsite, Parlament-Portal, Akademie und künftige Publikationen müssen diese Begriffe und Trennungen konsistent verwenden.
@@ -1319,8 +1343,6 @@ Die Prüfung war websiteweit strukturell und terminologisch. Historische Blog- u
 ## 15.2 Historische Migrationsmatrix aus Version 1.5 und v1.6
 
 Die folgende Matrix dokumentiert den damaligen v1.5-Migrationsauftrag. Sie ist kein offener v1.7-Release-Tracker. Für neue Inhalte gelten die Ergänzungen v1.6 und v1.7 sowie die aktuellen maschinenlesbaren Qualitätsgates.
-
-Die folgende Matrix dokumentiert den damaligen v1.5-Migrationsauftrag. Sie ist kein offener v1.6-Release-Tracker. Für neue Inhalte gelten die Ergänzung v1.6, die dort genannten amtlichen Quellen und die aktuellen maschinenlesbaren Qualitätsgates.
 
 
 | Priorität | Bereich | Erforderliche Anpassung |

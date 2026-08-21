@@ -4,11 +4,11 @@ Stand: automatisch erzeugt durch `scripts/audit-documents-for-publication.mjs`
 
 ## Ergebnis
 
-- Kuratierte Metadatenkarten: 50
-- Öffentliche / fachöffentliche Dokumente in normaler Bibliothek: 33
-- Archivdokumente nur im Archiv: 14
+- Kuratierte Metadatenkarten: 53
+- Öffentliche / fachöffentliche Dokumente in normaler Bibliothek: 34
+- Archivdokumente nur im Archiv: 16
 - Review/interne/hidden Dokumente nicht als Kachel und nicht als Download: 3
-- Red-Flag-Treffer: 44
+- Red-Flag-Treffer: 47
 - Sanitized HTML-Dateien mit entfernten direkten Non-Public-Downloadlinks: 0
 
 ## Red-Flag-Treffer
@@ -42,7 +42,10 @@ Stand: automatisch erzeugt durch `scripts/audit-documents-for-publication.mjs`
 | Working-Paper Wohnungsmarkt | public/downloads/originals/WP_Wohnungsmarkt.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Wenn Maschinen arbeiten | public/downloads/originals/Wenn-Maschinen-arbeiten.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Von Kapital zu Wirkung | public/downloads/originals/NATS_WOeK_allgemein.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
-| WÖk-Masterregister v1.4 | assets/downloads/woek-register/v1.4/WOeK_Masterregister_v1.4_FINAL_2026-08-16.xlsx | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
+| WÖk-Masterregister v1.5 | assets/downloads/woek-register/v1.5/WOeK_Masterregister_v1.5_2026-08-21.xlsx | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
+| WÖk-Masterregister v1.4 (historische Fassung) | assets/downloads/woek-register/v1.4/WOeK_Masterregister_v1.4_FINAL_2026-08-16.xlsx | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
+| WÖk-Begriffsleitfaden führend v1.7 | public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.7.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
+| WÖk-Begriffsleitfaden führend v1.6 | public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.6.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | WÖk-Begriffsleitfaden führend v1.4 | public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.4.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | WÖk-Begriffsleitfaden führend v1.3 | public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.3.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | WÖk-Begriffsleitfaden führend v1.2 | public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.2.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |

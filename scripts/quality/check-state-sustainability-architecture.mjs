@@ -17,6 +17,7 @@ const requiredTerms = [
   "ex-ante-folgenpruefung-reality-check",
   "staatliche-nachhaltigkeitsarchitektur",
   "parlamentarischer-beirat-nachhaltige-entwicklung",
+  "state-assessment-benchmark",
   "state-gfa-enap-benchmark",
   "wirkungsblindheit",
   "bundeshaushaltsordnung-paragraf-7",
@@ -31,6 +32,7 @@ const requiredSources = [
   "WÖK-Q-9047",
   "WÖK-Q-9048",
   "WÖK-Q-9049",
+  "WÖK-Q-9050",
 ];
 
 const architecturePages = new Map([
@@ -205,7 +207,20 @@ for (const needle of ["DNS", "Wirkindikatorenregister", "Reality Check"]) {
 }
 
 const sitemap = fs.existsSync(path.join(root, "sitemap.xml")) ? fs.readFileSync(path.join(root, "sitemap.xml"), "utf8") : "";
+const uniqueDiscoveryRoutes = [
+  "/wirkungswissenschaften/",
+  "/begriffe/nwi/",
+  "/begriffe/nationaler-wohlfahrtsindex/",
+];
+const requiredDiscoveryRoutes = [
+  ...uniqueDiscoveryRoutes,
+  "/begriffe/state-assessment-benchmark/",
+  "/quellenarchiv/wok-q-9048/",
+  "/quellenarchiv/wok-q-9049/",
+  "/quellenarchiv/wok-q-9050/",
+];
 const requiredSitemapRoutes = [
+  ...requiredDiscoveryRoutes,
   "/begriffe/gemeinsame-geschaeftsordnung-der-bundesministerien/",
   "/begriffe/7-bundeshaushaltsordnung/",
   "/begriffe/vv-bho-wirtschaftlichkeitsuntersuchung-und-erfolgskontrolle/",
@@ -227,8 +242,16 @@ if (!fs.existsSync(searchIndexPath)) {
   errors.push("Suchindex fehlt: assets/search/search-index.json");
 } else {
   const searchIndex = fs.readFileSync(searchIndexPath, "utf8");
+  const searchEntries = JSON.parse(searchIndex);
   for (const needle of ["Gemeinsame Geschäftsordnung der Bundesministerien", "WÖk-Masterregister v1.5", "Elektronische Nachhaltigkeitsprüfung"] ) {
     if (!searchIndex.includes(needle)) errors.push(`Suchindex enthält Pflichtbegriff nicht: ${needle}`);
+  }
+  for (const route of requiredDiscoveryRoutes) {
+    const directHits = searchEntries.filter((entry) => String(entry.url || "").replace(/[?#].*$/u, "") === route);
+    if (!directHits.length) errors.push(`Suchindex enthält Pflicht-Route nicht: ${route}`);
+    if (uniqueDiscoveryRoutes.includes(route) && directHits.length !== 1) {
+      errors.push(`Suchindex muss kanonischen Einstieg genau einmal enthalten (${directHits.length}): ${route}`);
+    }
   }
 }
 

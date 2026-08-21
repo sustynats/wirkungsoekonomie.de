@@ -146,7 +146,7 @@ def glossary_and_sources() -> None:
     for code in (
         "WÖK-Q-9029", "WÖK-Q-9030", "WÖK-Q-9031", "WÖK-Q-9032", "WÖK-Q-9033",
         "WÖK-Q-9034", "WÖK-Q-9035", "WÖK-Q-9036", "WÖK-Q-9037",
-        "WÖK-Q-9046", "WÖK-Q-9047", "WÖK-Q-9048", "WÖK-Q-9049",
+        "WÖK-Q-9046", "WÖK-Q-9047", "WÖK-Q-9048", "WÖK-Q-9049", "WÖK-Q-9050",
     ):
         if code not in source_text:
             raise AssertionError(f"missing canonical federal architecture source {code}")
@@ -159,7 +159,8 @@ def glossary_and_sources() -> None:
         "gesetzesfolgenabschaetzung", "nachhaltigkeitspruefung-bund",
         "enap", "egesetzgebung-egfa", "dns-indikator", "zielbezug-vs-wirkung",
         "ex-ante-folgenpruefung-reality-check", "staatliche-nachhaltigkeitsarchitektur",
-        "parlamentarischer-beirat-nachhaltige-entwicklung", "state-gfa-enap-benchmark", "wirkungsblindheit",
+        "parlamentarischer-beirat-nachhaltige-entwicklung", "state-assessment-benchmark",
+        "state-gfa-enap-benchmark", "wirkungsblindheit",
         "bundeshaushaltsordnung-paragraf-7", "vv-bho-wirtschaftlichkeitsuntersuchung-erfolgskontrolle",
         "objektspezifische-staatliche-pruefarchitektur", "wirkungsrelevanz-statt-rechtsform",
     }
@@ -282,7 +283,10 @@ def materiality_scope_precision() -> None:
     required_copy = [
         "Materialität statt Rechtsform",
         "Weil Wirkung nicht an der Rechtsform hängt.",
-        "kein einheitliches eNAP-ähnliches Pflichtverfahren",
+        "Deutschland prüft Folgen bereits - aber mit unterschiedlichen Verfahren je nach Entscheidungstyp.",
+        "Für alle finanzwirksamen Maßnahmen verlangt § 7 BHO",
+        "Zielerreichungs-, Wirkungs- und Wirtschaftlichkeitskontrolle",
+        "Eine fehlende öffentliche Dokumentation beweist weder fehlende Prüfung",
         "Staatliches Eigentum allein",
         "§ 7 Absatz 2 BHO",
         "Wirkungs- und Wirtschaftlichkeitskontrolle",
@@ -300,7 +304,8 @@ def materiality_scope_precision() -> None:
     for token in (
         "LAW, REGULATION, STRATEGY, PROGRAMME, SUBSIDY, GUARANTEE, PROCUREMENT",
         "PUBLIC_OWNERSHIP_ACTION",
-        "Bundes-GGO/eNAP wird nicht auf andere Objekttypen oder Jurisdiktionen übertragen",
+        "GGO/eNAP ist der Regelungsvorhaben-Untertyp",
+        "BHO/VV-BHO ist der Rahmen für finanzwirksame Maßnahmen",
     ):
         if token not in llms:
             raise AssertionError(f"llms materiality/object contract missing: {token}")
@@ -315,9 +320,32 @@ def materiality_scope_precision() -> None:
         "https://www.gesetze-im-internet.de/bho/__7.html",
         "WÖK-Q-9049",
         "https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_14032001_DokNr20110981762.htm",
+        "WÖK-Q-9050",
+        "ziel-und-wirkungsorientierte-haushaltsfuehrung.html",
     ):
         if token not in sources:
             raise AssertionError(f"object-specific governance source missing: {token}")
+
+    glossary = json.loads(read("content/glossary/imports/staatliche-nachhaltigkeitsarchitektur.json"))
+    benchmark = next((term for term in glossary.get("terms", []) if term.get("termId") == "state-assessment-benchmark"), None)
+    if not benchmark:
+        raise AssertionError("object-generic state assessment benchmark is missing")
+    required_fields = {
+        "applicable_state_frameworks", "state_problem_or_need_assessment",
+        "state_option_comparison", "state_ex_ante_effect_assessment",
+        "state_success_or_effect_control", "state_attribution_method",
+        "public_documentation_status",
+    }
+    if set(benchmark.get("schemaFields") or []) != required_fields:
+        raise AssertionError("state assessment benchmark schema fields are incomplete")
+    gfa_subtype = next((term for term in glossary.get("terms", []) if term.get("termId") == "state-gfa-enap-benchmark"), None)
+    if not gfa_subtype or "Regelungsvorhaben-Untertyp" not in gfa_subtype.get("woekRelation", ""):
+        raise AssertionError("GFA/eNAP benchmark is not preserved as the rulemaking subtype")
+    for code in ("9048", "9049", "9050"):
+        require(
+            f"quellenarchiv/wok-q-{code}/index.html",
+            ["Quelle öffnen", "Wirkungsökonomische Einordnung", "Verwendet in", "Objektspezifischer staatlicher Prüfbenchmark"],
+        )
 
 
 def nwi_acronym_disambiguated() -> None:
@@ -409,7 +437,7 @@ def main() -> int:
     checks.append(("TERMINOLOGY_GUIDE_V17_PROVENANCE_PASS", terminology_guide_provenance))
     checks.append(("HISTORICAL_PUBLICATIONS_NOT_SILENTLY_REWRITTEN", historical_additions_only))
     checks.append(("NO_FALSE_ABSENCE_OF_ALTERNATIVES_CLAIM", lambda: require("index.html", ["andere Lösungsmöglichkeiten"])))
-    checks.append(("NO_FALSE_ABSENCE_OF_EXPOST_REVIEW_CLAIM", lambda: require("index.html", ["spätere Überprüfung"])))
+    checks.append(("NO_FALSE_ABSENCE_OF_EXPOST_REVIEW_CLAIM", lambda: require("index.html", ["zur späteren Überprüfung"])))
     checks.append(("GGO_43_44_FULL_SCOPE_ACKNOWLEDGED", lambda: require("methodik/datenbasis.html", ["Ziel/Notwendigkeit", "Alternativen", "beabsichtigte Wirkungen", "unbeabsichtigte Nebenwirkungen", "späteren Überprüfung"])))
     checks.append(("PUBLIC_GFA_NOT_MISLABELED_AS_PUBLIC_ENAP_EXPORT", lambda: require("methodik/datenbasis.html", ["Öffentliche GFA-Dokumentation ist nicht automatisch ein veröffentlichter eNAP-Rohexport"])))
     checks.append(("STATE_ARCHITECTURE_NOT_APPLIED_OUTSIDE_SCOPE", state_architecture_scope_guard))
@@ -423,6 +451,10 @@ def main() -> int:
     checks.append(("NO_ENAP_REQUIREMENT_INVENTED_OUTSIDE_SCOPE", materiality_scope_precision))
     checks.append(("PUBLIC_OWNERSHIP_ACTION_SEPARATE_FROM_GOVERNMENT_ATTRIBUTION", materiality_scope_precision))
     checks.append(("GOVERNANCE_COVERAGE_GAP_PRECISE_NOT_ABSOLUTE", materiality_scope_precision))
+    checks.append(("NO_FALSE_NONLEGISLATIVE_ASSESSMENT_ABSENCE_CLAIM", materiality_scope_precision))
+    checks.append(("BHO_VVBHO_FRAMEWORK_ACKNOWLEDGED_FOR_FINANCIALLY_EFFECTIVE_MEASURES", materiality_scope_precision))
+    checks.append(("APPLICABLE_STATE_ASSESSMENT_IDENTIFIED_BY_OBJECT_TYPE", materiality_scope_precision))
+    checks.append(("WOEK_SCOPE_MATERIALITY_NOT_STATE_PROCEDURE_ABSENCE", materiality_scope_precision))
 
     passed = []
     for name, fn in checks:

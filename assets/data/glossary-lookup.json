@@ -1,22 +1,7 @@
 {
   "generatedAt": "2026-08-21T00:00:00.000Z",
-  "count": 2157,
+  "count": 2154,
   "terms": [
-    {
-      "id": "bundeshaushaltsordnung-paragraf-7",
-      "label": "§ 7 Bundeshaushaltsordnung (BHO)",
-      "canonicalLabel": "§ 7 Bundeshaushaltsordnung (BHO)",
-      "slug": "7-bundeshaushaltsordnung",
-      "url": "/begriffe/7-bundeshaushaltsordnung/",
-      "aliases": [
-        "§ 7 Bundeshaushaltsordnung (BHO)",
-        "BHO § 7",
-        "§ 7 BHO",
-        "Wirtschaftlichkeitsgebot der BHO"
-      ],
-      "shortDefinition": "§ 7 BHO verpflichtet den Bund zu Wirtschaftlichkeit und Sparsamkeit; für alle finanzwirksamen Maßnahmen sind angemessene Wirtschaftlichkeitsuntersuchungen durchzuführen.",
-      "definition": "§ 7 der Bundeshaushaltsordnung verankert die Grundsätze der Wirtschaftlichkeit und Sparsamkeit. Absatz 2 verlangt für alle finanzwirksamen Maßnahmen angemessene Wirtschaftlichkeitsuntersuchungen und die Berücksichtigung der Risikoverteilung. Die konkreten Anforderungen an Planung und spätere Erfolgskontrolle werden durch die Allgemeinen Verwaltungsvorschriften zur BHO ergänzt.\n\nDie BHO ist weder GGO noch DNS oder eNAP. Sie belegt zugleich, dass nichtlegislative finanzwirksame Maßnahmen nicht pauschal als staatliche Prüfleere beschrieben werden dürfen."
-    },
     {
       "id": "fuenftes-p-planet",
       "label": "5. P = Planet",
@@ -14940,19 +14925,19 @@
       "definition": "Oberschwingungen sind Frequenzanteile in elektrischen Netzen, die von der Grundfrequenz abweichen und Netzqualität beeinflussen können."
     },
     {
-      "id": "objektspezifische-staatliche-pruefarchitektur",
-      "label": "Objektspezifische staatliche Prüfarchitektur",
-      "canonicalLabel": "Objektspezifische staatliche Prüfarchitektur",
-      "slug": "objektspezifische-staatliche-pruefarchitektur",
-      "url": "/begriffe/objektspezifische-staatliche-pruefarchitektur/",
+      "id": "state-assessment-benchmark",
+      "label": "Objektspezifischer staatlicher Prüfbenchmark",
+      "canonicalLabel": "Objektspezifischer staatlicher Prüfbenchmark",
+      "slug": "state-assessment-benchmark",
+      "url": "/begriffe/state-assessment-benchmark/",
       "aliases": [
-        "Objektspezifische staatliche Prüfarchitektur",
-        "objektspezifischer staatlicher Prüfrahmen",
-        "staatliche Prüfrahmen nach Objekttyp",
-        "anwendbarer staatlicher Prüfrahmen"
+        "Objektspezifischer staatlicher Prüfbenchmark",
+        "staatlicher Prüfbenchmark",
+        "State Assessment Benchmark",
+        "STATE_ASSESSMENT_BENCHMARK"
       ],
-      "shortDefinition": "Staatliche Folgen-, Nachhaltigkeits-, Wirtschaftlichkeits- und Berücksichtigungsprüfungen folgen unterschiedlichen Rechts- und Verfahrensrahmen je nach Entscheidungsobjekt.",
-      "definition": "Deutschland verfügt nicht über nur ein einziges Prüfverfahren für jedes staatliche Handeln. Für Bundesregelungsvorhaben sind unter anderem GGO, GFA, Nachhaltigkeitsprüfung und eNAP/eGFA relevant. Für finanzwirksame Maßnahmen gelten § 7 BHO und die VV-BHO. Je nach Gegenstand können Fachgesetze wie § 13 KSG oder § 8 KAnG, Vergabe-, Beteiligungs-, Förder- oder weitere Vorschriften hinzutreten.\n\nObjektspezifisch bedeutet deshalb: Zuerst werden Handlungsform, Zuständigkeit, Rechtsraum und materieller Gegenstand bestimmt; erst dann wird der wirklich anwendbare staatliche Prüf- und Kontrollrahmen belegt. Die Existenz einer Regel darf nicht mit ihrer Anwendung im Einzelfall verwechselt werden."
+      "shortDefinition": "Der objektspezifische staatliche Prüfbenchmark dokumentiert für eine konkrete staatliche Entscheidung, welche amtlichen Prüf-, Bewertungs- und Kontrollrahmen gelten und was daraus öffentlich belegt ist.",
+      "definition": "Staatliche Prüfung ist nicht auf ein einheitliches Verfahren reduziert. Der Benchmark erfasst je Objekt die anwendbaren staatlichen Rahmen: für Regelungsvorhaben insbesondere GGO, GFA, Nachhaltigkeitsprüfung und eNAP/eGFA; für finanzwirksame Maßnahmen § 7 BHO und die VV-BHO; KSG § 13, KAnG § 8, DNS-Governance und sektorale Evaluationsregime nur bei sachlicher Anwendbarkeit. Dokumentiert werden staatliche Problem- oder Bedarfsprüfung, Optionsvergleich, Ex-ante-Folgenprüfung, Erfolgs- oder Wirkungskontrolle, Zurechnungsmethode und öffentlicher Dokumentationsstand.\n\nFehlende öffentliche Unterlagen bedeuten nicht automatisch, dass keine Prüfung stattfand. Der Benchmark bleibt von der unabhängigen WÖk-Analyse getrennt und erzeugt weder Wirkungsrichtung noch DNS-Zuordnung noch Empfehlung."
     },
     {
       "id": "ocpp",
@@ -20875,8 +20860,8 @@
         "staatliche Nachhaltigkeitsarchitektur des Bundes",
         "Nachhaltigkeitsgovernance des Bundes"
       ],
-      "shortDefinition": "Die staatliche Nachhaltigkeitsarchitektur des Bundes verbindet DNS, Ziele und Indikatoren, ressortübergreifende Governance, Gesetzesfolgen- und Nachhaltigkeitsprüfung, eNAP/eGFA und Monitoring.",
-      "definition": "Deutschland verfügt über eine mehrschichtige Nachhaltigkeits- und Folgenprüfungsarchitektur. Dazu gehören die Deutsche Nachhaltigkeitsstrategie als nationaler Ziel- und Managementrahmen, der Staatssekretärsausschuss und weitere Governance-Akteure, DNS-Indikatoren und Destatis-Monitoring sowie die Gesetzesfolgen- und Nachhaltigkeitsprüfung nach GGO mit eNAP/eGFA als digitaler Unterstützung.\n\nDiese Architektur ist weder bloß Kommunikation noch identisch mit einer vollständigen Kausal- oder Wirkungsanalyse jedes Einzelvorhabens. Sie muss bei jeder fairen Abgrenzung der Wirkungsökonomie als bestehendes institutionelles System anerkannt werden."
+      "shortDefinition": "Die staatliche Nachhaltigkeits- und Folgenprüfungsarchitektur des Bundes ist nach Entscheidungstyp verteilt: GGO/GFA/eNAP für Regelungsvorhaben, BHO/VV-BHO für finanzwirksame Maßnahmen sowie weitere objekt- und fachrechtliche Regime, soweit anwendbar.",
+      "definition": "Deutschland verfügt über eine mehrschichtige, objektspezifische Nachhaltigkeits- und Folgenprüfungsarchitektur. Dazu gehören die Deutsche Nachhaltigkeitsstrategie mit Zielen, Governance und Monitoring, die Gesetzesfolgen- und Nachhaltigkeitsprüfung nach GGO mit eNAP/eGFA für Regelungsvorhaben sowie § 7 BHO und die VV-BHO für finanzwirksame Maßnahmen. Die VV-BHO konkretisiert Planung und Erfolgskontrolle mit Zielerreichungs-, Wirkungs- und Wirtschaftlichkeitskontrolle. KSG, KAnG und sektorale Evaluationsregime kommen nur bei sachlicher Anwendbarkeit hinzu.\n\nDiese Architektur ist weder bloß Kommunikation noch identisch mit einer vollständigen Kausal- oder Wirkungsanalyse jedes Einzelvorhabens. Fehlende öffentliche Dokumentation beweist nicht, dass keine Prüfung stattgefunden hat. Die jeweils anwendbaren staatlichen Rahmen müssen bei einer fairen WÖk-Abgrenzung zuerst objektspezifisch ausgewiesen werden."
     },
     {
       "id": "state-gfa-enap-benchmark",
@@ -24248,22 +24233,6 @@
       "definition": "Sie hängt von Sensitivität, Exposition und Anpassungskapazität ab."
     },
     {
-      "id": "vv-bho-wirtschaftlichkeitsuntersuchung-erfolgskontrolle",
-      "label": "VV-BHO: Wirtschaftlichkeitsuntersuchung und Erfolgskontrolle",
-      "canonicalLabel": "VV-BHO: Wirtschaftlichkeitsuntersuchung und Erfolgskontrolle",
-      "slug": "vv-bho-wirtschaftlichkeitsuntersuchung-und-erfolgskontrolle",
-      "url": "/begriffe/vv-bho-wirtschaftlichkeitsuntersuchung-und-erfolgskontrolle/",
-      "aliases": [
-        "VV-BHO: Wirtschaftlichkeitsuntersuchung und Erfolgskontrolle",
-        "VV-BHO zu § 7",
-        "Wirtschaftlichkeitsuntersuchung des Bundes",
-        "Erfolgskontrolle nach VV-BHO",
-        "Wirkungskontrolle nach VV-BHO"
-      ],
-      "shortDefinition": "Die VV zu § 7 BHO konkretisieren für finanzwirksame Maßnahmen die Wirtschaftlichkeitsuntersuchung in der Planungsphase und die begleitende oder abschließende Erfolgskontrolle.",
-      "definition": "Die Allgemeinen Verwaltungsvorschriften zu § 7 BHO konkretisieren Wirtschaftlichkeitsuntersuchungen und Erfolgskontrollen für finanzwirksame Maßnahmen des Bundes. Erfolgskontrolle ist ein systematisches Prüfverfahren und wird vom laufenden Monitoring unterschieden. Sie umfasst grundsätzlich Zielerreichungskontrolle, Wirkungskontrolle und Wirtschaftlichkeitskontrolle. Die Wirkungskontrolle untersucht, ob die Maßnahme für die Zielerreichung ursächlich war, und bezieht beabsichtigte sowie unbeabsichtigte Wirkungen und eingetretene Risiken ein.\n\nDas Verfahren ist ein wichtiger bestehender Ex-ante-/Ex-post-Rahmen. Seine öffentliche Dokumentation, Prüftiefe und Anwendung sind für den konkreten Gegenstand zu belegen und nicht aus der bloßen Existenz der Vorschrift abzuleiten."
-    },
-    {
       "id": "w-bip",
       "label": "W-BIP",
       "canonicalLabel": "W-BIP",
@@ -27352,21 +27321,6 @@
       ],
       "shortDefinition": "Ein Wirkungsregister ist eine geprüfte Daten- und Zuordnungsstruktur für Wirkungsindikatoren, WÖk-IDs, Scorecards, Benchmarks, Versionen und Bewertungen.",
       "definition": "Ein Wirkungsregister ist eine geprüfte Daten- und Zuordnungsstruktur für Wirkungsindikatoren, WÖk-IDs, Scorecards, Benchmarks, Versionen und Bewertungen."
-    },
-    {
-      "id": "wirkungsrelevanz-statt-rechtsform",
-      "label": "Wirkungsrelevanz statt Rechtsform",
-      "canonicalLabel": "Wirkungsrelevanz statt Rechtsform",
-      "slug": "wirkungsrelevanz-statt-rechtsform",
-      "url": "/begriffe/wirkungsrelevanz-statt-rechtsform/",
-      "aliases": [
-        "Wirkungsrelevanz statt Rechtsform",
-        "Materialität statt Rechtsform",
-        "wirkungsrelevanter Prüfgegenstand",
-        "materialitätsgetriebener Prüfumfang"
-      ],
-      "shortDefinition": "Wirkungsrelevanz statt Rechtsform ist das WÖk-Prinzip, Prüfgegenstände nach möglicher materieller Zustandsveränderung und nicht allein nach ihrer rechtlichen Handlungsform auszuwählen.",
-      "definition": "Das Prinzip erweitert den möglichen WÖk-Prüfumfang über Rechtsetzung hinaus. Ein Gegenstand wird relevant, wenn er einen materiell bedeutsamen Zustand von Mensch, Planet oder Demokratie verändern kann. Die Rechtsform bleibt dennoch wichtig, weil sie Zuständigkeit, Verfahren, Rechtsfolgen und den anwendbaren staatlichen Prüfrahmen bestimmt.\n\nDas Prinzip behauptet keine staatliche Prüfleere. Es verbindet vielmehr unterschiedliche Objekttypen mit einer gemeinsamen WÖk-Analysekette, nachdem die objektspezifischen staatlichen Verfahren festgestellt wurden."
     },
     {
       "id": "wirkungsrelevanz-und-materialitaetsanalyse",

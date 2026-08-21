@@ -73,21 +73,6 @@
       "contentHash": "92fcbe93091cb2cc",
       "sectionId": "tool-orientierung-title"
     },
-    "/begriffe/7-bundeshaushaltsordnung/": {
-      "documentType": "begriff",
-      "status": "anschlussbegriff",
-      "version": "1.0",
-      "sectionId": "begriff-7-bundeshaushaltsordnung",
-      "documentId": "bundeshaushaltsordnung-paragraf-7",
-      "relatedTerms": [
-        "vv-bho-wirtschaftlichkeitsuntersuchung-erfolgskontrolle",
-        "objektspezifische-staatliche-pruefarchitektur",
-        "wirkungsrelevanz-statt-rechtsform",
-        "staatliche-nachhaltigkeitsarchitektur"
-      ],
-      "relatedDocuments": [],
-      "searchBoost": 110
-    },
     "/begriffe/abfallhierarchie/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -22312,22 +22297,6 @@
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
       "searchBoost": 110
     },
-    "/begriffe/objektspezifische-staatliche-pruefarchitektur/": {
-      "documentType": "begriff",
-      "status": "anschlussbegriff",
-      "version": "1.0",
-      "sectionId": "begriff-objektspezifische-staatliche-pruefarchitektur",
-      "documentId": "objektspezifische-staatliche-pruefarchitektur",
-      "relatedTerms": [
-        "staatliche-nachhaltigkeitsarchitektur",
-        "gesetzesfolgenabschaetzung",
-        "bundeshaushaltsordnung-paragraf-7",
-        "vv-bho-wirtschaftlichkeitsuntersuchung-erfolgskontrolle",
-        "wirkungsrelevanz-statt-rechtsform"
-      ],
-      "relatedDocuments": [],
-      "searchBoost": 110
-    },
     "/begriffe/ocpp/": {
       "documentType": "begriff",
       "status": "methodenbegriff",
@@ -31515,7 +31484,8 @@
         "enap",
         "egesetzgebung-egfa",
         "dns-indikator",
-        "parlamentarischer-beirat-nachhaltige-entwicklung"
+        "parlamentarischer-beirat-nachhaltige-entwicklung",
+        "state-assessment-benchmark"
       ],
       "relatedDocuments": [],
       "searchBoost": 110
@@ -31920,6 +31890,22 @@
       "relatedDocuments": [],
       "searchBoost": 110
     },
+    "/begriffe/state-assessment-benchmark/": {
+      "documentType": "begriff",
+      "status": "woek-instrument",
+      "version": "1.0",
+      "sectionId": "begriff-state-assessment-benchmark",
+      "documentId": "state-assessment-benchmark",
+      "relatedTerms": [
+        "staatliche-nachhaltigkeitsarchitektur",
+        "state-gfa-enap-benchmark",
+        "gesetzesfolgenabschaetzung",
+        "ex-ante-folgenpruefung-reality-check",
+        "zielbezug-vs-wirkung"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 110
+    },
     "/begriffe/state-capture/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -31944,6 +31930,7 @@
       "sectionId": "begriff-state-gfa-enap-benchmark",
       "documentId": "state-gfa-enap-benchmark",
       "relatedTerms": [
+        "state-assessment-benchmark",
         "gesetzesfolgenabschaetzung",
         "nachhaltigkeitspruefung-bund",
         "enap",
@@ -36698,22 +36685,6 @@
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
-      "searchBoost": 110
-    },
-    "/begriffe/vv-bho-wirtschaftlichkeitsuntersuchung-und-erfolgskontrolle/": {
-      "documentType": "begriff",
-      "status": "anschlussbegriff",
-      "version": "1.0",
-      "sectionId": "begriff-vv-bho-wirtschaftlichkeitsuntersuchung-und-erfolgskontrolle",
-      "documentId": "vv-bho-wirtschaftlichkeitsuntersuchung-erfolgskontrolle",
-      "relatedTerms": [
-        "bundeshaushaltsordnung-paragraf-7",
-        "ex-ante-folgenpruefung-reality-check",
-        "attributionsforschung",
-        "wirkungsmonitoring",
-        "objektspezifische-staatliche-pruefarchitektur"
-      ],
-      "relatedDocuments": [],
       "searchBoost": 110
     },
     "/begriffe/w-bip/": {
@@ -42777,22 +42748,6 @@
         "WÖk-Master-Items"
       ],
       "sourceFile": "Glossar-Pack 005: Institutionelle Sicherung & Prüfarchitektur",
-      "searchBoost": 110
-    },
-    "/begriffe/wirkungsrelevanz-statt-rechtsform/": {
-      "documentType": "begriff",
-      "status": "woek-prinzip",
-      "version": "1.0",
-      "sectionId": "begriff-wirkungsrelevanz-statt-rechtsform",
-      "documentId": "wirkungsrelevanz-statt-rechtsform",
-      "relatedTerms": [
-        "objektspezifische-staatliche-pruefarchitektur",
-        "wirkungsrelevanz-und-materialitaetsanalyse",
-        "wirkungsanalyse",
-        "attributionsforschung",
-        "staatliche-nachhaltigkeitsarchitektur"
-      ],
-      "relatedDocuments": [],
       "searchBoost": 110
     },
     "/begriffe/wirkungsrelevanz-und-materialitaetsanalyse/": {
@@ -154146,7 +154101,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "blog/enap-woek-benchmark-fuenf-bundesvorhaben.html",
-      "contentHash": "4c095e2730264484",
+      "contentHash": "f4c9014c7cda8f8a",
       "sectionId": "woek-page-26bf309c6a5748a8"
     },
     "/blog/enap-woek-benchmark-fuenf-bundesvorhaben.html#footer-newsletter-title": {
@@ -154154,7 +154109,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "blog/enap-woek-benchmark-fuenf-bundesvorhaben.html",
-      "contentHash": "4c095e2730264484",
+      "contentHash": "f4c9014c7cda8f8a",
       "sectionId": "footer-newsletter-title"
     },
     "/blog/geg-wirkungscheck-ioi-t-sroi.html": {
@@ -165506,7 +165461,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "index.html",
-      "contentHash": "9454cffa9e82a0ee",
+      "contentHash": "edcdcb4e4cdd7308",
       "sectionId": "woek-page-0eb547304658805a"
     },
     "/index.html#aktuell-journal-title": {
@@ -165514,7 +165469,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "index.html",
-      "contentHash": "9454cffa9e82a0ee",
+      "contentHash": "edcdcb4e4cdd7308",
       "sectionId": "aktuell-journal-title"
     },
     "/index.html#ausgangslage-title": {
@@ -165522,7 +165477,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "index.html",
-      "contentHash": "9454cffa9e82a0ee",
+      "contentHash": "edcdcb4e4cdd7308",
       "sectionId": "ausgangslage-title"
     },
     "/index.html#footer-newsletter-title": {
@@ -165530,7 +165485,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "index.html",
-      "contentHash": "9454cffa9e82a0ee",
+      "contentHash": "edcdcb4e4cdd7308",
       "sectionId": "footer-newsletter-title"
     },
     "/index.html#in-5-minuten-title": {
@@ -165538,7 +165493,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "index.html",
-      "contentHash": "9454cffa9e82a0ee",
+      "contentHash": "edcdcb4e4cdd7308",
       "sectionId": "in-5-minuten-title"
     },
     "/index.html#journey-title": {
@@ -165546,7 +165501,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "index.html",
-      "contentHash": "9454cffa9e82a0ee",
+      "contentHash": "edcdcb4e4cdd7308",
       "sectionId": "journey-title"
     },
     "/index.html#materialitaet-statt-rechtsform-title": {
@@ -165554,7 +165509,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "index.html",
-      "contentHash": "9454cffa9e82a0ee",
+      "contentHash": "edcdcb4e4cdd7308",
       "sectionId": "materialitaet-statt-rechtsform-title"
     },
     "/index.html#parlament-info-home-title": {
@@ -165562,7 +165517,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "index.html",
-      "contentHash": "9454cffa9e82a0ee",
+      "contentHash": "edcdcb4e4cdd7308",
       "sectionId": "parlament-info-home-title"
     },
     "/index.html#related-questions-title-seite": {
@@ -165570,7 +165525,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "index.html",
-      "contentHash": "9454cffa9e82a0ee",
+      "contentHash": "edcdcb4e4cdd7308",
       "sectionId": "related-questions-title-seite"
     },
     "/index.html#staatliche-nachhaltigkeitsarchitektur-title": {
@@ -165578,7 +165533,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "index.html",
-      "contentHash": "9454cffa9e82a0ee",
+      "contentHash": "edcdcb4e4cdd7308",
       "sectionId": "staatliche-nachhaltigkeitsarchitektur-title"
     },
     "/index.html#startvideo-title": {
@@ -165586,7 +165541,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "index.html",
-      "contentHash": "9454cffa9e82a0ee",
+      "contentHash": "edcdcb4e4cdd7308",
       "sectionId": "startvideo-title"
     },
     "/index.html#ueberblickvideo-title": {
@@ -165594,7 +165549,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "index.html",
-      "contentHash": "9454cffa9e82a0ee",
+      "contentHash": "edcdcb4e4cdd7308",
       "sectionId": "ueberblickvideo-title"
     },
     "/index.html#vertrauen-title": {
@@ -165602,7 +165557,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "index.html",
-      "contentHash": "9454cffa9e82a0ee",
+      "contentHash": "edcdcb4e4cdd7308",
       "sectionId": "vertrauen-title"
     },
     "/index.html#weitere-einstiege-title": {
@@ -165610,7 +165565,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "index.html",
-      "contentHash": "9454cffa9e82a0ee",
+      "contentHash": "edcdcb4e4cdd7308",
       "sectionId": "weitere-einstiege-title"
     },
     "/journal/gesundheit-erzeugen-statt-krankheit-verwalten/": {
@@ -165786,7 +165741,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/index.html",
-      "contentHash": "68cb5992f38b1c7a",
+      "contentHash": "73200db52b7cc220",
       "sectionId": "woek-page-06c0a37a8592ce92"
     },
     "/quellenarchiv/#footer-newsletter-title": {
@@ -165794,7 +165749,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/index.html",
-      "contentHash": "68cb5992f38b1c7a",
+      "contentHash": "73200db52b7cc220",
       "sectionId": "footer-newsletter-title"
     },
     "/quellenarchiv/wok-e-0001/": {
@@ -168226,7 +168181,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-g-333439f9e599/index.html",
-      "contentHash": "3c75fe9eb5e4e2ba",
+      "contentHash": "421e61a26de193b8",
       "sectionId": "woek-page-b3667c3a3046dbbe"
     },
     "/quellenarchiv/wok-g-333439f9e599/#footer-newsletter-title": {
@@ -168234,7 +168189,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-g-333439f9e599/index.html",
-      "contentHash": "3c75fe9eb5e4e2ba",
+      "contentHash": "421e61a26de193b8",
       "sectionId": "footer-newsletter-title"
     },
     "/quellenarchiv/wok-g-333439f9e599/#glance-wok-g-333439f9e599": {
@@ -168242,7 +168197,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-g-333439f9e599/index.html",
-      "contentHash": "3c75fe9eb5e4e2ba",
+      "contentHash": "421e61a26de193b8",
       "sectionId": "glance-wok-g-333439f9e599"
     },
     "/quellenarchiv/wok-g-333439f9e599/#steckbrief-wok-g-333439f9e599": {
@@ -168250,7 +168205,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-g-333439f9e599/index.html",
-      "contentHash": "3c75fe9eb5e4e2ba",
+      "contentHash": "421e61a26de193b8",
       "sectionId": "steckbrief-wok-g-333439f9e599"
     },
     "/quellenarchiv/wok-g-3458ef28a2ae/": {
@@ -169122,7 +169077,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-g-40a9d42ab436/index.html",
-      "contentHash": "ecee2d5b19eddf57",
+      "contentHash": "527c98f28db91ada",
       "sectionId": "woek-page-2cf02abb507cc5ba"
     },
     "/quellenarchiv/wok-g-40a9d42ab436/#footer-newsletter-title": {
@@ -169130,7 +169085,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-g-40a9d42ab436/index.html",
-      "contentHash": "ecee2d5b19eddf57",
+      "contentHash": "527c98f28db91ada",
       "sectionId": "footer-newsletter-title"
     },
     "/quellenarchiv/wok-g-40a9d42ab436/#glance-wok-g-40a9d42ab436": {
@@ -169138,7 +169093,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-g-40a9d42ab436/index.html",
-      "contentHash": "ecee2d5b19eddf57",
+      "contentHash": "527c98f28db91ada",
       "sectionId": "glance-wok-g-40a9d42ab436"
     },
     "/quellenarchiv/wok-g-40a9d42ab436/#steckbrief-wok-g-40a9d42ab436": {
@@ -169146,7 +169101,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-g-40a9d42ab436/index.html",
-      "contentHash": "ecee2d5b19eddf57",
+      "contentHash": "527c98f28db91ada",
       "sectionId": "steckbrief-wok-g-40a9d42ab436"
     },
     "/quellenarchiv/wok-g-40f672fd1135/": {
@@ -170148,38 +170103,6 @@
       "sourceFile": "quellenarchiv/wok-g-5a91bfdcebb4/index.html",
       "contentHash": "0c08635cd32b948d",
       "sectionId": "steckbrief-wok-g-5a91bfdcebb4"
-    },
-    "/quellenarchiv/wok-g-5ae09458064a/": {
-      "documentType": "Referenz",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "quellenarchiv/wok-g-5ae09458064a/index.html",
-      "contentHash": "76d57cc4a1686c28",
-      "sectionId": "woek-page-b55b8d81f3495275"
-    },
-    "/quellenarchiv/wok-g-5ae09458064a/#footer-newsletter-title": {
-      "documentType": "Referenz",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "quellenarchiv/wok-g-5ae09458064a/index.html",
-      "contentHash": "76d57cc4a1686c28",
-      "sectionId": "footer-newsletter-title"
-    },
-    "/quellenarchiv/wok-g-5ae09458064a/#glance-wok-g-5ae09458064a": {
-      "documentType": "Referenz",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "quellenarchiv/wok-g-5ae09458064a/index.html",
-      "contentHash": "76d57cc4a1686c28",
-      "sectionId": "glance-wok-g-5ae09458064a"
-    },
-    "/quellenarchiv/wok-g-5ae09458064a/#steckbrief-wok-g-5ae09458064a": {
-      "documentType": "Referenz",
-      "status": "online-reviewed",
-      "version": "2026.1",
-      "sourceFile": "quellenarchiv/wok-g-5ae09458064a/index.html",
-      "contentHash": "76d57cc4a1686c28",
-      "sectionId": "steckbrief-wok-g-5ae09458064a"
     },
     "/quellenarchiv/wok-g-5ae9f5e51f92/": {
       "documentType": "Referenz",
@@ -175210,7 +175133,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-g-e6ede1ac4941/index.html",
-      "contentHash": "aaacf3a7c803fe5a",
+      "contentHash": "cbf769377826fd92",
       "sectionId": "woek-page-40d72118e627e06f"
     },
     "/quellenarchiv/wok-g-e6ede1ac4941/#footer-newsletter-title": {
@@ -175218,7 +175141,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-g-e6ede1ac4941/index.html",
-      "contentHash": "aaacf3a7c803fe5a",
+      "contentHash": "cbf769377826fd92",
       "sectionId": "footer-newsletter-title"
     },
     "/quellenarchiv/wok-g-e6ede1ac4941/#glance-wok-g-e6ede1ac4941": {
@@ -175226,7 +175149,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-g-e6ede1ac4941/index.html",
-      "contentHash": "aaacf3a7c803fe5a",
+      "contentHash": "cbf769377826fd92",
       "sectionId": "glance-wok-g-e6ede1ac4941"
     },
     "/quellenarchiv/wok-g-e6ede1ac4941/#steckbrief-wok-g-e6ede1ac4941": {
@@ -175234,7 +175157,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-g-e6ede1ac4941/index.html",
-      "contentHash": "aaacf3a7c803fe5a",
+      "contentHash": "cbf769377826fd92",
       "sectionId": "steckbrief-wok-g-e6ede1ac4941"
     },
     "/quellenarchiv/wok-g-e8cfb8158795/": {
@@ -220314,7 +220237,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-q-9029/index.html",
-      "contentHash": "373482861c8fa2b8",
+      "contentHash": "17bd62c959e645b7",
       "sectionId": "woek-page-f6eaa2281c515348"
     },
     "/quellenarchiv/wok-q-9029/#fields-wok-q-9029": {
@@ -220322,7 +220245,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-q-9029/index.html",
-      "contentHash": "373482861c8fa2b8",
+      "contentHash": "17bd62c959e645b7",
       "sectionId": "fields-wok-q-9029"
     },
     "/quellenarchiv/wok-q-9029/#footer-newsletter-title": {
@@ -220330,7 +220253,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-q-9029/index.html",
-      "contentHash": "373482861c8fa2b8",
+      "contentHash": "17bd62c959e645b7",
       "sectionId": "footer-newsletter-title"
     },
     "/quellenarchiv/wok-q-9029/#glance-wok-q-9029": {
@@ -220338,7 +220261,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-q-9029/index.html",
-      "contentHash": "373482861c8fa2b8",
+      "contentHash": "17bd62c959e645b7",
       "sectionId": "glance-wok-q-9029"
     },
     "/quellenarchiv/wok-q-9029/#steckbrief-wok-q-9029": {
@@ -220346,7 +220269,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-q-9029/index.html",
-      "contentHash": "373482861c8fa2b8",
+      "contentHash": "17bd62c959e645b7",
       "sectionId": "steckbrief-wok-q-9029"
     },
     "/quellenarchiv/wok-q-9030/": {
@@ -220794,7 +220717,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-q-9048/index.html",
-      "contentHash": "93b5885b87bc199c",
+      "contentHash": "f77a61a4ba83f1bb",
       "sectionId": "woek-page-3aaf042581e2dbc0"
     },
     "/quellenarchiv/wok-q-9048/#fields-wok-q-9048": {
@@ -220802,7 +220725,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-q-9048/index.html",
-      "contentHash": "93b5885b87bc199c",
+      "contentHash": "f77a61a4ba83f1bb",
       "sectionId": "fields-wok-q-9048"
     },
     "/quellenarchiv/wok-q-9048/#footer-newsletter-title": {
@@ -220810,7 +220733,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-q-9048/index.html",
-      "contentHash": "93b5885b87bc199c",
+      "contentHash": "f77a61a4ba83f1bb",
       "sectionId": "footer-newsletter-title"
     },
     "/quellenarchiv/wok-q-9048/#glance-wok-q-9048": {
@@ -220818,7 +220741,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-q-9048/index.html",
-      "contentHash": "93b5885b87bc199c",
+      "contentHash": "f77a61a4ba83f1bb",
       "sectionId": "glance-wok-q-9048"
     },
     "/quellenarchiv/wok-q-9048/#steckbrief-wok-q-9048": {
@@ -220826,15 +220749,23 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-q-9048/index.html",
-      "contentHash": "93b5885b87bc199c",
+      "contentHash": "f77a61a4ba83f1bb",
       "sectionId": "steckbrief-wok-q-9048"
+    },
+    "/quellenarchiv/wok-q-9048/#used-in-wok-q-9048": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-q-9048/index.html",
+      "contentHash": "f77a61a4ba83f1bb",
+      "sectionId": "used-in-wok-q-9048"
     },
     "/quellenarchiv/wok-q-9049/": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-q-9049/index.html",
-      "contentHash": "8ae797a36699ff16",
+      "contentHash": "0dd961f10cb129dc",
       "sectionId": "woek-page-e148b4c1aa131b4e"
     },
     "/quellenarchiv/wok-q-9049/#fields-wok-q-9049": {
@@ -220842,7 +220773,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-q-9049/index.html",
-      "contentHash": "8ae797a36699ff16",
+      "contentHash": "0dd961f10cb129dc",
       "sectionId": "fields-wok-q-9049"
     },
     "/quellenarchiv/wok-q-9049/#footer-newsletter-title": {
@@ -220850,7 +220781,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-q-9049/index.html",
-      "contentHash": "8ae797a36699ff16",
+      "contentHash": "0dd961f10cb129dc",
       "sectionId": "footer-newsletter-title"
     },
     "/quellenarchiv/wok-q-9049/#glance-wok-q-9049": {
@@ -220858,7 +220789,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-q-9049/index.html",
-      "contentHash": "8ae797a36699ff16",
+      "contentHash": "0dd961f10cb129dc",
       "sectionId": "glance-wok-q-9049"
     },
     "/quellenarchiv/wok-q-9049/#steckbrief-wok-q-9049": {
@@ -220866,8 +220797,64 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-q-9049/index.html",
-      "contentHash": "8ae797a36699ff16",
+      "contentHash": "0dd961f10cb129dc",
       "sectionId": "steckbrief-wok-q-9049"
+    },
+    "/quellenarchiv/wok-q-9049/#used-in-wok-q-9049": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-q-9049/index.html",
+      "contentHash": "0dd961f10cb129dc",
+      "sectionId": "used-in-wok-q-9049"
+    },
+    "/quellenarchiv/wok-q-9050/": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-q-9050/index.html",
+      "contentHash": "5104bde75473d16b",
+      "sectionId": "woek-page-4d796cd1b23735cc"
+    },
+    "/quellenarchiv/wok-q-9050/#fields-wok-q-9050": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-q-9050/index.html",
+      "contentHash": "5104bde75473d16b",
+      "sectionId": "fields-wok-q-9050"
+    },
+    "/quellenarchiv/wok-q-9050/#footer-newsletter-title": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-q-9050/index.html",
+      "contentHash": "5104bde75473d16b",
+      "sectionId": "footer-newsletter-title"
+    },
+    "/quellenarchiv/wok-q-9050/#glance-wok-q-9050": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-q-9050/index.html",
+      "contentHash": "5104bde75473d16b",
+      "sectionId": "glance-wok-q-9050"
+    },
+    "/quellenarchiv/wok-q-9050/#steckbrief-wok-q-9050": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-q-9050/index.html",
+      "contentHash": "5104bde75473d16b",
+      "sectionId": "steckbrief-wok-q-9050"
+    },
+    "/quellenarchiv/wok-q-9050/#used-in-wok-q-9050": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-q-9050/index.html",
+      "contentHash": "5104bde75473d16b",
+      "sectionId": "used-in-wok-q-9050"
     },
     "/referenz/": {
       "documentType": "Referenz",
@@ -243985,7 +243972,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/index.html",
-      "contentHash": "dd46288f51e2a18e",
+      "contentHash": "e41147f7a8aa962b",
       "sectionId": "woek-page-3513b68e976194bb"
     },
     "/verstehen/#footer-newsletter-title": {
@@ -243993,7 +243980,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/index.html",
-      "contentHash": "dd46288f51e2a18e",
+      "contentHash": "e41147f7a8aa962b",
       "sectionId": "footer-newsletter-title"
     },
     "/verstehen/#staatliche-nachhaltigkeitsarchitektur-title": {
@@ -244001,7 +243988,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "verstehen/index.html",
-      "contentHash": "dd46288f51e2a18e",
+      "contentHash": "e41147f7a8aa962b",
       "sectionId": "staatliche-nachhaltigkeitsarchitektur-title"
     },
     "/verstehen/ausgangslage/": {
