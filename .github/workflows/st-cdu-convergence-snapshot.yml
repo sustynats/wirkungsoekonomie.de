@@ -1,0 +1,45 @@
+name: ST CDU convergence review snapshots
+
+on:
+  push:
+    branches:
+      - woek/st-cdu-source-manifest-p89-20260821
+    paths:
+      - tools/materialize_st_cdu_review_snapshots.py
+      - .github/workflows/st-cdu-convergence-snapshot.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: read
+
+concurrency:
+  group: st-cdu-convergence-snapshot-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  materialize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: woek/st-cdu-source-manifest-p89-20260821
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Snapshot canonical source-bound #234 reviews
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python tools/materialize_st_cdu_review_snapshots.py
+      - name: Commit snapshots when changed
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots
+          if git diff --cached --quiet; then
+            echo 'No snapshot changes.'
+          else
+            git commit -m 'chore(cdu): materialize canonical #234 review snapshots [skip ci]'
+            git push origin HEAD:woek/st-cdu-source-manifest-p89-20260821
+          fi
