@@ -132,6 +132,12 @@ const requiredCoverage = [
     host: "www.bundestag.de",
   },
   {
+    termId: "state-assessment-benchmark",
+    archiveCode: "WÖK-Q-9048",
+    url: "https://www.gesetze-im-internet.de/bho/__7.html",
+    host: "www.gesetze-im-internet.de",
+  },
+  {
     termId: "state-gfa-enap-benchmark",
     archiveCode: "WÖK-Q-9029",
     url: "https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm",
