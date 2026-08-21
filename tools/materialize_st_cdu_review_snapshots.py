@@ -7,6 +7,7 @@ so a later continuation comment cannot be mistaken for the reviewed shard it cit
 """
 from __future__ import annotations
 
+# Convergence-phase trigger marker: functional behavior remains unchanged.
 import hashlib
 import json
 import os
