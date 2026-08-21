@@ -1,0 +1,43 @@
+name: Regenerate #253 generated artifacts
+
+on:
+  push:
+    branches:
+      - codex/state-sustainability-architecture-sitewide-20260821
+    paths:
+      - '.github/workflows/state-sustainability-regenerate.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          ref: codex/state-sustainability-architecture-sitewide-20260821
+          fetch-depth: 0
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Regenerate deterministic search and taxonomy artifacts
+        run: |
+          npm run build:search
+          npm run taxonomy:build
+      - name: Commit deterministic artifacts when changed
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- assets/search/search-index.json public/data/woek-search-meta.json content/taxonomy/site-map.json; then
+            echo 'Generated artifacts already deterministic.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/search/search-index.json public/data/woek-search-meta.json content/taxonomy/site-map.json
+          git commit -m 'chore: regenerate #253 search and taxonomy artifacts'
+          git push origin HEAD:codex/state-sustainability-architecture-sitewide-20260821
