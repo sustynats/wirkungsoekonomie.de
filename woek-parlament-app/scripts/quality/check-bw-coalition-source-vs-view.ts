@@ -69,6 +69,7 @@ const mainPage = pages.get(BW_COALITION_ROUTE)!;
 const mainText = visible(mainPage.html);
 
 if (mainPage.status !== 200) failures.push(`${BW_COALITION_ROUTE}:HTTP_${mainPage.status}`);
+if (mainText.includes("GovernmentTerm")) failures.push(`${BW_COALITION_ROUTE}:RAW_PUBLIC_TOKEN:GovernmentTerm`);
 
 function verify(pointer: string, value: string | null | undefined) {
   if (!value?.trim()) return;
@@ -154,7 +155,7 @@ const invariants = {
 };
 for (const [name, passed] of Object.entries(invariants)) if (!passed) failures.push(`invariant:${name}`);
 
-const rawPublicTokens = ["DEEP_REVIEW", "HIGH_MATERIALITY_REVIEW", "PARTIAL_ANALYSIS_NEEDS_COMPLETION", "OFFICIAL_CURRENTLY_LINKED_CONTRACT_TEXT_WITH_DRAFT_LABEL", "RecommendationRecord", "Child-ImpactCase", "funding_status"];
+const rawPublicTokens = ["DEEP_REVIEW", "HIGH_MATERIALITY_REVIEW", "PARTIAL_ANALYSIS_NEEDS_COMPLETION", "OFFICIAL_CURRENTLY_LINKED_CONTRACT_TEXT_WITH_DRAFT_LABEL", "RecommendationRecord", "GovernmentTerm", "Child-ImpactCase", "funding_status"];
 for (const token of rawPublicTokens) if (mainText.includes(token)) failures.push(`RAW_PUBLIC_TOKEN:${token}`);
 
 const unrenderedContentPaths = requiredContentPaths.filter((pointer) => !renderedContentPaths.includes(pointer));

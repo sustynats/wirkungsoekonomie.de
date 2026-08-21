@@ -29,7 +29,7 @@ export function StateCoalitionCommitmentInventory({ records, chapters, copy = de
   }), [chapter, normalizedQuery, records]);
   const grouped = chapters.map((item) => ({ ...item, records: filtered.filter((record) => record.chapter === item.chapter) })).filter((item) => item.records.length > 0);
 
-  return <section className="coalition-commitment-inventory" id="commitment-register" aria-labelledby="commitment-register-title">
+  return <section className="coalition-commitment-inventory" id="commitment-register" aria-labelledby="commitment-register-title" data-woek-source-extract="verbatim">
     <p className="eyebrow">Vollakte · fundstellengebundenes Zusagenregister</p>
     <h2 id="commitment-register-title">{copy.title}</h2>
     <p>{copy.intro}</p>
@@ -54,7 +54,7 @@ export function StateCoalitionCommitmentInventory({ records, chapters, copy = de
           {item.records.map((record) => <li key={record.commitment_id} className={record.atomic_count ? "" : "coalition-inventory-container"}>
             <p>{record.commitment_text}</p>
             <p className="coalition-inventory-source"><strong>Fundstelle:</strong> {record.source_locator}</p>
-            <details className="coalition-inventory-technical" data-woek-technical-proof>
+            <details className="coalition-inventory-technical" data-woek-technical-proof="source-id">
               <summary>Technische Quellenkennung</summary>
               <p><code>{record.commitment_id}</code></p>
               {!record.atomic_count ? <p>Quellen-Container; nicht als atomare Zusage gezählt. {record.container_children?.length ?? 0} atomare Unterobjekte sind verknüpft.</p> : null}

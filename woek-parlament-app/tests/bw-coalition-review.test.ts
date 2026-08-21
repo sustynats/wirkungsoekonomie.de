@@ -10,6 +10,7 @@ import {
   badenWuerttembergCoalitionCommitments,
   badenWuerttembergCoalitionExistingImpactCases,
   badenWuerttembergCoalitionGovernanceReview,
+  badenWuerttembergCoalitionLifecycle,
   badenWuerttembergCoalitionQualityLayers,
   badenWuerttembergCoalitionRelationshipModel,
   badenWuerttembergCoalitionSources,
@@ -58,6 +59,11 @@ test("coalition relationship model fails closed on identity, competence, funding
   assert.match(badenWuerttembergCoalitionRelationshipModel.maturity, /nur dort ein eigenes Wirkungsurteil/i);
 });
 
+test("coalition lifecycle uses public language instead of internal entity names", () => {
+  assert.ok(badenWuerttembergCoalitionLifecycle.some((step) => step.includes("Beginn des neuen Regierungszeitraums")));
+  assert.ok(badenWuerttembergCoalitionLifecycle.every((step) => !step.includes("GovernmentTerm")));
+});
+
 test("coalition review publishes all cross-cutting #241 quality layers without an invented option", () => {
   assert.deepEqual(badenWuerttembergCoalitionQualityLayers.map((layer) => layer.title), [
     "Materielle Auslassungen",
@@ -98,4 +104,7 @@ test("state mandate route renders the reviewed coalition component and source in
   assert.doesNotMatch(component, /href=\{source\.url\}/);
   assert.match(component, /Umsetzung ist nicht Wirkung/);
   assert.match(component, /StateCoalitionCommitmentInventory/);
+  const inventory = readFileSync(resolve(process.cwd(), "app/components/states/StateCoalitionCommitmentInventory.tsx"), "utf8");
+  assert.match(inventory, /data-woek-source-extract="verbatim"/);
+  assert.match(inventory, /data-woek-technical-proof="source-id"/);
 });
