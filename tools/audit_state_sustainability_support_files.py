@@ -12,10 +12,10 @@ from __future__ import annotations
 
 import argparse
 import json
-import os
 import re
 import subprocess
 from pathlib import Path
+from urllib.parse import urlparse
 
 from audit_state_sustainability_architecture import (
     OFFICIAL_DOMAINS,
@@ -62,11 +62,6 @@ RELEVANT_PREFIXES = (
     "wirkungsfelder/", "wirkungswissenschaften/", "fuer/", "blog/", "begriffe/", "quellen/",
     "quellenarchiv/", "evidenz/", "sdg-plus/", "referenzrahmen/",
 )
-SEMANTIC = re.compile(
-    r"wirkungsblind|gesetzesfolgenabsch|wirkungsfolgenabsch|nachhaltigkeitspr[uü]fung|\benap\b|\begfa\b|"
-    r"deutsche nachhaltigkeitsstrategie|\bDNS\b|reality check|evaluation|alternativ|l[oö]sungsm[oö]glichkeit",
-    re.I,
-)
 
 
 def git_files(root: Path) -> list[str]:
@@ -98,6 +93,16 @@ def role(rel: str) -> str:
     if rel.startswith("scripts/"): return "site_generator_or_quality_tool"
     if rel.startswith("public/data/") or rel.startswith("assets/data/"): return "structured_data_or_manifest"
     return "support_text"
+
+
+def official_source_refs(text: str) -> list[str]:
+    refs = set()
+    for raw in re.findall(r"https?://[^\"'<>\s)]+", text or ""):
+        url = raw.rstrip(".,;:")
+        host = urlparse(url).netloc.lower()
+        if any(host == domain or host.endswith("." + domain) for domain in OFFICIAL_DOMAINS):
+            refs.add(url)
+    return sorted(refs)
 
 
 def classify_support(rel: str, text: str, signals: list[str]) -> tuple[list[str], str]:
@@ -135,8 +140,8 @@ def classify_support(rel: str, text: str, signals: list[str]) -> tuple[list[str]
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--root", default=".")
-    ap.add_argument("--matrix", default="artifacts/state-sustainability-architecture-url-matrix.json")
-    ap.add_argument("--markdown", default="artifacts/state-sustainability-architecture-url-matrix.md")
+    ap.add_argument("--matrix", default="content/audits/state-sustainability-architecture-url-matrix.json")
+    ap.add_argument("--markdown", default="content/audits/state-sustainability-architecture-url-matrix.md")
     args = ap.parse_args()
     root = Path(args.root).resolve()
     matrix_path = root / args.matrix
@@ -163,9 +168,16 @@ def main() -> int:
             verification = "TRACKED_TEXT_INVENTORIED_SIZE_LIMIT"
         signals = scan_claims(scan_text) if scan_text else []
         classes, action = classify_support(rel, scan_text, signals)
+        refs = official_source_refs(scan_text)
+        relevance = (
+            "MATERIAL_253_ACTION" if classes != ["NO_CHANGE_REQUIRED"]
+            else "SEMANTIC_253_REVIEW" if signals
+            else "NO_MATERIAL_253_CHANGE"
+        )
+        purl = public_url(rel)
         support.append({
             "file_path": rel,
-            "canonical_url": public_url(rel),
+            "canonical_url": purl,
             "sitemap_status": None,
             "search_index_status": None,
             "content_type": role(rel),
@@ -177,12 +189,27 @@ def main() -> int:
             "owner_source": role(rel),
             "verification_status": verification,
             "bytes": size,
+            "source_path": rel,
+            "public_url": purl,
+            "historical_publication": False,
+            "relevance": relevance,
+            "source_refs": refs,
+            "status": verification,
         })
 
-    matrix["schema_version"] = "2.0"
+    matrix["schema_version"] = "2.1"
     matrix["support_file_count"] = len(support)
     matrix["support_files"] = support
     all_items = list(matrix.get("routes", [])) + list(matrix.get("extra_tracked_html_not_in_sitemap", [])) + support
+    required = matrix.get("required_contract_fields", [
+        "source_path", "public_url", "historical_publication", "relevance",
+        "classification", "required_action", "source_refs", "status",
+    ])
+    for idx, item in enumerate(all_items):
+        missing = [field for field in required if field not in item]
+        if missing:
+            raise AssertionError(f"matrix item {idx} missing #253 contract fields: {missing}")
+    matrix["required_contract_fields"] = required
     matrix["all_item_count"] = len(all_items)
     matrix["classification_vocabulary"] = sorted(ALLOWED_CLASSIFICATIONS)
     matrix["all_items"] = all_items
@@ -193,6 +220,7 @@ def main() -> int:
         fh.write("\n## Recursive non-HTML publication/support surfaces\n\n")
         fh.write(f"- Tracked support text files inventoried: **{len(support)}**\n")
         fh.write(f"- Combined matrix items (routes + extra HTML + support): **{len(all_items)}**\n")
+        fh.write("- Every matrix item exposes the #253 contract fields: source_path, public_url, historical_publication, relevance, classification, required_action, source_refs and status.\n")
         fh.write("- Includes llms.txt, sitemap/search metadata, structured-data registries, glossary/source archive, library/journal/reference inputs and generators/workflows.\n\n")
         fh.write("| File | Role | Classification | Signals |\n|---|---|---|---|\n")
         for row in support:
