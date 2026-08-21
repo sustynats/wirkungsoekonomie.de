@@ -59,7 +59,7 @@ test("renderer keeps impact first and internal states out of normal public secti
   const processIndex = component.indexOf("Politischer Lebenslauf und technische Transparenz");
   assert.ok(assessmentIndex >= 0 && processIndex > assessmentIndex);
   assert.match(component, /DNS 2025 ist Referenzrahmen – nicht Regierungswirkung/);
-  assert.match(component, /kein fachlich freigegebener RecommendationRecord/);
+  assert.match(component, /keine fachlich freigegebene WÖk-Handlungsoption/);
   assert.doesNotMatch(component, /mission\.direction/);
   assert.doesNotMatch(component, /mission\.evidence/);
 });

@@ -18,7 +18,7 @@ import dnsRegistry from "@/data/indicators/dns-official-registry.json";
 import { isSafePublicSourceUrl, sourceDetailHrefForUrl, sourceSlugForCanonicalUrl } from "@/lib/sources/url";
 import { ACTION_PLAN_META_ID, actionPlanAssessmentForMission, actionPlanMetaAssessment, actionPlanRouteFor, actionPlanSources, getActionPlanMissions } from "@/lib/government/strategy-impact";
 import { BW_COALITION_ROUTE, badenWuerttembergCoalitionAssessment, badenWuerttembergCoalitionChapters, badenWuerttembergCoalitionSources } from "@/lib/states/baden-wuerttemberg-coalition";
-import { RLP_COALITION_ROUTE, rheinlandPfalzCoalitionAssessment, rheinlandPfalzCoalitionSources } from "@/lib/states/rheinland-pfalz-coalition";
+import { RLP_COALITION_ROUTE, rheinlandPfalzCoalitionAssessment, rheinlandPfalzCoalitionSources, rheinlandPfalzHitzeschutzAssessment, rheinlandPfalzHitzeschutzSources } from "@/lib/states/rheinland-pfalz-coalition";
 
 export { isSafePublicSourceUrl, sourceDetailHrefForUrl, sourceSlugForCanonicalUrl } from "@/lib/sources/url";
 
@@ -399,7 +399,42 @@ function stateCoalitionReviewSources(): StaticPublicSource[] {
       }],
     } satisfies StaticPublicSource];
   });
-  return [...badenWuerttembergSources, ...rheinlandPfalzSources];
+  const rheinlandPfalzHitzeschutz = rheinlandPfalzHitzeschutzSources.flatMap((source) => {
+    const canonicalUrl = isSafePublicSourceUrl(source.url);
+    const slug = canonicalUrl ? sourceSlugForCanonicalUrl(canonicalUrl) : null;
+    if (!canonicalUrl || !slug) return [];
+    return [{
+      id: `state-impact-rlp-hitzeschutz-${slug}`,
+      slug,
+      title: source.title,
+      institution: source.institution,
+      category: source.category,
+      role: source.role,
+      documentType: source.documentType,
+      canonicalUrl,
+      documentDate: source.documentDate,
+      retrievedAt: "2026-08-20",
+      versionLabel: "Im freigegebenen WÖk-Fachreview zum Hitzeaktionspfad dokumentiert",
+      sourceHash: null,
+      temporalClass: "CURRENT_REFERENCE",
+      abstract: source.abstract,
+      usages: [{
+        caseSlug: "RP-IMPACT-2026-05-HITZESCHUTZ",
+        caseTitle: "Hitzeaktionsplan: geerbter Politikpfad und aktuelle Verstetigung",
+        caseKind: "STATE_GOVERNMENT_IMPACT_CASE",
+        decisionDate: "2026-06-24",
+        sourceRole: source.role,
+        locations: [],
+        note: "Die Quelle trägt Sachverhalt, Planhistorie oder fachliche Evidenz. Übernommener Politikpfad, aktuelle Verstetigung und beobachtete Wirkung bleiben getrennt.",
+        caseHref: "/laender/rheinland-pfalz/regierung",
+        analysisSummary: rheinlandPfalzHitzeschutzAssessment.editorialSummary,
+        analysisDirection: rheinlandPfalzHitzeschutzAssessment.directionLabel,
+        evidenceLevel: rheinlandPfalzHitzeschutzAssessment.evidenceSummary,
+        assessment: rheinlandPfalzHitzeschutzAssessment,
+      }],
+    } satisfies StaticPublicSource];
+  });
+  return [...badenWuerttembergSources, ...rheinlandPfalzSources, ...rheinlandPfalzHitzeschutz];
 }
 
 function saxonyAnhaltProgrammeCatalogSources(): StaticPublicSource[] {

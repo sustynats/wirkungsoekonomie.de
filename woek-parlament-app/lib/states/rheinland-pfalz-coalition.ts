@@ -56,26 +56,79 @@ export const rheinlandPfalzCoalitionAssessment: OverviewAssessmentData = {
   assessmentLabel: "Mehrzielportfolio – keine belastbare einheitliche Wirkungsrichtung",
   impactCoreSummary: "Der Koalitionsvertrag verbindet neun Kapitel mit getrennten Problemen, Zielen, Zuständigkeiten und Wirkpfaden. Wirkung kann deshalb nur auf Ebene konkreter Zusagen, späterer Regierungshandlungen und beobachtbarer Zustandsänderungen belastbar geprüft werden.",
   editorialSummary: "Frühe Bildung, integrierte Versorgung, Klima- und Wasserresilienz, staatliche und kommunale Handlungsfähigkeit, Integration, Gewaltschutz und demokratische Teilhabe besitzen substanzielle positive Potenziale. Zugleich entstehen materielle Zielkonflikte bei Flächen- und Infrastrukturausbau, Überwachungs- und Datenarchitekturen, Rückführungsdesign, Finanzierung, Fachkräfteverteilung und natürlichen Schutzgrenzen. Entscheidend sind reale Engpässe, Delivery-Kapazität, Rechte, Verteilung und spätere Outcome-Daten.",
-  keyFinding: "Ein Koalitionsversprechen ist weder GovernmentAction noch Umsetzung oder Wirkung; Mittel, Stellen, Programme, digitale Produkte und Verfahrensbeschleunigung bleiben zunächst Input oder Output.",
+  keyFinding: "Ein Koalitionsversprechen ist weder Regierungshandlung noch Umsetzung oder Wirkung; Mittel, Stellen, Programme, digitale Produkte und Verfahrensbeschleunigung bleiben zunächst Input oder Output.",
   directionLabel: "Keine belastbare einheitliche Wirkungsrichtung",
   directionKind: "portfolio",
-  evidenceSummary: "Alle neun Kapitel sind hochmaterial fachlich geprüft. 302 explizit ausformulierte, fundstellengebundene Zusagen aus Kapitel 1 und 2 sind technisch übernommen; neun im Fachhandoff deklarierte IDs fehlen dort als Einzelrecords und bleiben fail-closed offen. Die atomare Zerlegung der Kapitel 3 bis 9 ist noch nicht fachlich übergeben.",
+  evidenceSummary: "Alle neun Kapitel sind hochmaterial fachlich geprüft. 1.254 explizit ausformulierte, fundstellengebundene Zusagen aus allen neun Kapiteln sind technisch vollständig und kollisionsfrei übernommen. Die verwendete Parteiorganisations-PDF ist direkt zugänglich; ihre kryptographische Identität mit einer signierten Endfassung bleibt unbewiesen.",
   realityCheckSummary: exAnteReality,
 };
+
+export const rheinlandPfalzHitzeschutzAssessment: OverviewAssessmentData = {
+  assessmentLabel: "Klares positives Gesundheits- und Resilienzpotenzial mit offenem Umsetzungsnachweis",
+  impactCoreSummary: "Der übernommene Hitzeaktionspfad kann Exposition und Vulnerabilität senken, wenn ressortübergreifende Koordination zu wirksamen lokalen Warn-, Präventions-, Pflege-, Gesundheits- und Gebäudeschutzketten führt.",
+  editorialSummary: "Frühwarnung, Prävention, Pflege- und Gesundheitsvorsorge, Gebäudeschutz, kommunale Koordination und zielgruppenspezifische Maßnahmen können vermeidbare gesundheitliche Schäden vor und während Hitzeperioden reduzieren. Der Rahmen kann jedoch wirkungsarm bleiben, wenn kommunale Personal-, Finanzierungs- und Datenkapazitäten, Auslöseschwellen, Zielgruppenabdeckung und Outcome-Monitoring nicht verbindlich genug sind. Plan- und Netzwerkexistenz sind Output, nicht Gesundheitswirkung.",
+  keyFinding: "Der zentrale offene Punkt ist, ob der strategische Landesrahmen lokal zu messbar geringerer Exposition, Vulnerabilität, Erkrankung und hitzebedingter Sterblichkeit führt.",
+  directionLabel: "Positives Gesundheits- und Resilienzpotenzial unter kommunalen Umsetzungsbedingungen",
+  directionKind: "conditional",
+  evidenceSummary: "Problem und Wirkmechanismus sind hoch belegt; die Umsetzung des landesweiten Koordinationspfads ist mittel belegt. Ein beobachteter Outcome speziell aus der Verstetigung der Regierung 2026 ist noch nicht bewertbar.",
+  realityCheckSummary: "Zu prüfen ist, ob bei vergleichbarer Hitzeexposition vulnerable Gruppen besser erreicht, Einrichtungen früher aktiviert und hitzebedingte Morbiditäts- und Mortalitätsrisiken reduziert werden.",
+};
+
+export const rheinlandPfalzHitzeschutzSources = [
+  {
+    title: "Hitzeschutz ist Gesundheitsschutz",
+    institution: "Land Rheinland-Pfalz",
+    url: "https://www.rlp.de/service/pressemitteilungen/detail/hitzeschutz-ist-gesundheitsschutz",
+    category: "GOVERNMENT_RECORD" as const,
+    role: "DECISION_FACT" as const,
+    documentType: "Amtliche Mitteilung zur Ministerratsbefassung",
+    documentDate: "2026-06-24",
+    abstract: "Die amtliche Quelle dokumentiert die erneute Befassung des Ministerrats, ressortübergreifende Zusammenarbeit und Vernetzung mit Kommunen und weiteren Akteuren. Sie belegt die aktuelle Verstetigung, nicht die ursprüngliche Schaffung des Hitzeaktionsplans und nicht dessen Gesundheitswirkung.",
+  },
+  {
+    title: "Hitzeaktionsplan Rheinland-Pfalz",
+    institution: "Land Rheinland-Pfalz",
+    url: "https://hitze.rlp.de/hitzeaktionsplan",
+    category: "GOVERNMENT_RECORD" as const,
+    role: "CONTEXT" as const,
+    documentType: "Amtliches Fachportal und Planhistorie",
+    documentDate: null,
+    abstract: "Das Fachportal dokumentiert Planhistorie und Handlungsrahmen seit 2023. Es trägt die Attributionstrennung zwischen übernommenem Politikpfad und dem Beitrag der aktuellen Regierung.",
+  },
+  {
+    title: "Gesundheitsrisiken durch Hitze",
+    institution: "Umweltbundesamt",
+    url: "https://www.umweltbundesamt.de/daten/umweltzustand-trends/umwelt-gesundheit/gesundheitsrisiken-durch-hitze",
+    category: "OFFICIAL_STATISTICS" as const,
+    role: "EX_ANTE_EVIDENCE" as const,
+    documentType: "Amtliche Fach- und Zustandsinformation",
+    documentDate: null,
+    abstract: "Die Bundesfachquelle stützt Problem und Mechanismus gesundheitlicher Hitzebelastung. Sie belegt nicht automatisch die Wirkung des rheinland-pfälzischen Maßnahmenpfads.",
+  },
+  {
+    title: "Hitzefolgekrankheiten",
+    institution: "Robert Koch-Institut",
+    url: "https://www.rki.de/DE/Themen/Gesundheit-und-Gesellschaft/Gesundheitliche-Einflussfaktoren-A-Z/H/Hitze/Hitzefolgekrankheiten_inhalt.html",
+    category: "SCIENTIFIC_SOURCE" as const,
+    role: "EX_ANTE_EVIDENCE" as const,
+    documentType: "Amtliche Gesundheitsfachinformation",
+    documentDate: null,
+    abstract: "Die Fachinformation stützt Morbiditäts- und Mortalitätsmechanismen von Hitze. Ein kausaler Outcome der Landespolitik folgt daraus nicht.",
+  },
+];
 
 export const rheinlandPfalzCoalitionPublicMaturity: PublicMaturityProjection = {
   primary: "EX_ANTE_POTENTIAL_ONLY",
   flags: ["EX_ANTE_POTENTIAL_ONLY", "REALITY_CHECK_PENDING", "ATTRIBUTION_OPEN", "RECOMMENDATION_PENDING"],
   label: "Ex-ante-Mandatsanalyse – Wirkung noch nicht beobachtbar",
-  compactHint: "Alle neun Kapitel sind hochmaterial geprüft. Die explizit gelieferten Source-Commitments aus Kapitel 1 und 2 sind sichtbar; fehlende Einzelrecords und die Kapitel 3 bis 9 werden nicht technisch erfunden.",
+  compactHint: "Alle neun Kapitel sind hochmaterial geprüft und 1.254 explizit gelieferte Koalitionszusagen sind vollständig fundstellengebunden sichtbar.",
   assessableNow: [
     "Problem, Ziel, Wirkungspotenziale und Risiken sind für alle neun Kapitel auf hochmaterialer Ebene veröffentlicht.",
     "Delivery, Finanzierung, Verteilung, Kohärenz, Rechte, Schutzgrenzen, Robustheit und spätere Falsifikation sind dokumentweit ausgewiesen.",
-    "302 explizit fachlich übergebene CoalitionCommitments besitzen stabile Kennung und Fundstelle.",
+    "1.254 explizit fachlich übergebene Koalitionszusagen aus allen neun Kapiteln besitzen stabile Kennung und Fundstelle.",
   ],
   openPoints: [
-    "Neun deklarierte Kapitel-2-IDs fehlen im Fachhandoff als ausformulierte Einzelrecords und werden nicht rekonstruiert.",
-    "Die atomare Source-Zerlegung der Kapitel 3 bis 9 ist noch nicht fachlich übergeben.",
+    "Die atomare Quellenzerlegung aller neun Kapitel ist vollständig fachlich übergeben; daraus folgt keine automatische Einzelbewertung.",
     "Tatsächliche Umsetzung, Zustandsänderung und Zurechnung sind noch nicht beobachtbar.",
     "Eine fachlich freigegebene WÖk-Handlungsoption für das Vertragsportfolio liegt nicht vor.",
   ],
@@ -85,19 +138,29 @@ export const rheinlandPfalzCoalitionPublicMaturity: PublicMaturityProjection = {
     { id: "impact", label: "Wirkungspotenziale und Risiken", status: "AVAILABLE", detail: "Ex-ante-Kapitelreviews mit Delivery-, Verteilungs-, Rechts-, Schutz- und Falsifikationsebenen sind veröffentlicht." },
     { id: "reality", label: "Beobachtung und Reality Check", status: "OPEN", detail: "Erst nach konkreter Regierungshandlung, Umsetzung und beobachtbarer Zustandsänderung belastbar." },
     { id: "recommendation", label: "WÖk-Handlungsoption", status: "PENDING", detail: "Keine fachlich freigegebene Handlungsoption vorhanden." },
-    { id: "operationalization", label: "Quellen- und Lifecycle-Operationalisierung", status: "OPEN", detail: "302 explizite Source-Commitments aus Kapitel 1 und 2 sind übernommen; neun deklarierte Einzelrecords sowie Kapitel 3 bis 9 bleiben fachlich nachzuliefern." },
+    { id: "operationalization", label: "Quellen- und Lifecycle-Operationalisierung", status: "AVAILABLE", detail: "1.254 explizite Koalitionszusagen aus allen neun Kapiteln sind mit stabiler Kennung und Fundstelle übernommen; spätere Regierungshandlung, Umsetzung und Wirkung bleiben getrennt." },
   ],
 };
 
 export const rheinlandPfalzCoalitionSources: CoalitionSource[] = [
   {
     title: "Gemeinsame Verantwortung für ein starkes Rheinland-Pfalz",
-    institution: "SPD Rheinland-Pfalz, parteioffiziell wiederveröffentlicht",
-    url: "https://www.spd-bad-hoenningen.de/dl/Koalitionsvertrag_CDU-SPD_Rheinland-Pfalz_2026-2031.pdf",
-    documentType: "Parteioffiziell wiederveröffentlichter Vertragstext (PDF)",
+    institution: "SPD Rheinland-Pfalz, Landesorganisation",
+    url: "https://www.spd-rlp.de/wp-content/uploads/sites/1649/2026/04/KoaV_2026-2031.pdf",
+    documentType: "Parteiorganisations-Primärquelle (PDF)",
     documentDate: null,
-    abstract: "Der öffentlich zugängliche 101-seitige Text trägt die vollständige Mandatsgrundlage. Eine byte-identische signierte Endfassung ist nicht nachgewiesen; die Fassung wird deshalb nicht still als signiertes amtliches Original ausgegeben.",
+    abstract: "Die direkte PDF der SPD-Landesorganisation trägt den vollständigen 101-seitigen Vertragstext. Eine kryptographisch nachgewiesene Byte-Identität mit einer signierten Endfassung liegt nicht vor; die Quelle wird deshalb nicht still als signiertes amtliches Original ausgegeben.",
     locations: ["gesamtes Dokument", "Kapitel 1 bis 9", "PDF S. 7–100"],
+    usage: "DOCUMENT",
+  },
+  {
+    title: "Koalitionsvertrag CDU–SPD Rheinland-Pfalz 2026–2031 – Referenzfassung",
+    institution: "SPD-Ortsverein Bad Hönningen, parteioffiziell wiederveröffentlicht",
+    url: "https://www.spd-bad-hoenningen.de/dl/Koalitionsvertrag_CDU-SPD_Rheinland-Pfalz_2026-2031.pdf",
+    documentType: "Parteioffizielle Replik-/Referenzfassung (PDF)",
+    documentDate: null,
+    abstract: "Die frühere parteioffizielle Referenzfassung bleibt für Versions- und Provenienznachvollziehbarkeit erhalten. Sie wird nicht als kryptographisch identisch mit einer signierten Endfassung behauptet.",
+    locations: ["gesamtes Dokument", "Kapitel 1 bis 9"],
     usage: "DOCUMENT",
   },
   {
@@ -116,7 +179,7 @@ export const rheinlandPfalzCoalitionSources: CoalitionSource[] = [
     url: "https://www.rlp.de/ministerpraesident",
     documentType: "Amtliche Lifecycle-Quelle",
     documentDate: "2026-05-18",
-    abstract: "Die amtliche Seite belegt Regierungsspitze und GovernmentTerm seit 18. Mai 2026. Der Regierungsbeginn ist keine Wirkung des Koalitionsvertrags.",
+    abstract: "Die amtliche Seite belegt Regierungsspitze und Regierungszeitraum seit 18. Mai 2026. Der Regierungsbeginn ist keine Wirkung des Koalitionsvertrags.",
     locations: ["Amtsbeginn 18. Mai 2026"],
     usage: "DOCUMENT",
   },
@@ -154,7 +217,7 @@ export const rheinlandPfalzCoalitionSources: CoalitionSource[] = [
     title: "Staatsvertrag zur elektronischen Aufenthaltsüberwachung",
     institution: "Ministerium der Justiz Rheinland-Pfalz",
     url: "https://mjv.rlp.de/service/presse/detail/besserer-schutz-vor-haeuslicher-gewalt-rheinland-pfalz-schafft-die-grundlage-fuer-die-elektronische-fussfessel",
-    documentType: "Amtliche GovernmentAction-Quelle",
+    documentType: "Amtliche Quelle zu einer Regierungshandlung",
     documentDate: "2026-07-28",
     abstract: "Die Zustimmung zum Staatsvertragsentwurf ist ein konkreter Lifecycle-Schritt im Gewaltschutz. Sie ist noch kein Nachweis einer realen Schutzwirkung.",
     locations: ["Ministerratsentscheidung 28. Juli 2026"],
@@ -164,7 +227,7 @@ export const rheinlandPfalzCoalitionSources: CoalitionSource[] = [
     title: "Rheinland-Pfalz modernisiert den Staat",
     institution: "Ministerium der Finanzen Rheinland-Pfalz",
     url: "https://fm.rlp.de/service/presse/detail/rheinland-pfalz-modernisiert-den-staat-entlastungen-fuer-buergerinnen-buerger-und-wirtschaft-im-blick",
-    documentType: "Amtliche GovernmentAction-Quelle",
+    documentType: "Amtliche Quelle zu einer Regierungshandlung",
     documentDate: "2026-08-11",
     abstract: "Die Quelle belegt konkrete Beschlüsse zur Staatsmodernisierung nach der Sommerpause. Einzelne Maßnahmen und Zustandswirkungen bleiben separat zu prüfen.",
     locations: ["Ministerratsbeschluss 11. August 2026"],
@@ -186,7 +249,7 @@ export const rheinlandPfalzCoalitionSources: CoalitionSource[] = [
     url: "https://mkbwk.rlp.de/themen/bauen-und-wohnen/rheinland-pfaelzische-mieterschutzregelungen",
     documentType: "Amtliche geerbte Baseline",
     documentDate: "2025-10-08",
-    abstract: "Die Mietpreisbegrenzungsverordnung besteht bereits seit 2025 und ist bis Ende 2029 befristet. Sie darf nicht als neue Wirkung des GovernmentTerm 2026 zugerechnet werden.",
+    abstract: "Die Mietpreisbegrenzungsverordnung besteht bereits seit 2025 und ist bis Ende 2029 befristet. Sie darf nicht als neue Wirkung des Regierungszeitraums ab 2026 zugerechnet werden.",
     locations: ["Verordnung 16. September 2025", "Geltung 8. Oktober 2025 bis 31. Dezember 2029"],
     usage: "DOCUMENT",
   },
@@ -225,7 +288,7 @@ export const rheinlandPfalzCoalitionChapters: CoalitionChapterReview[] = [
     title: "Wirtschaft, Energie, Digitalisierung und Medien",
     pages: "PDF S. 18–32",
     maturity: "HIGH_MATERIALITY_REVIEW",
-    maturityLabel: "Hochmaterialer Fachreview; 151 von 160 deklarierten Einzelrecords explizit übergeben",
+    maturityLabel: "Hochmaterialer Fachreview und 151 Source-Commitments veröffentlicht",
     assessment: {
       assessmentLabel: "Erhebliches positives Potenzial mit Delivery-, Lock-in- und Schutzbedingungen",
       impactCoreSummary: "Ansiedlung und Transfer, Erneuerbare und Systemintegration, digitale Souveränität sowie pluralistische Medien können Investitions-, Energie-, Verwaltungs- und Informationsengpässe adressieren.",
@@ -233,7 +296,7 @@ export const rheinlandPfalzCoalitionChapters: CoalitionChapterReview[] = [
       keyFinding: "Installierte Leistung, ausgewiesene Fläche und digitale Architektur sind Output; Wirkung entsteht erst durch reale Investition, fossile Verdrängung, Zugänglichkeit, Resilienz und unabhängige Informationsversorgung.",
       directionLabel: "Heterogene positive Potenziale unter materiellen Systembedingungen",
       directionKind: "conditional",
-      evidenceSummary: "Kapitelreview und 151 explizite Source-Commitments sind veröffentlicht. Das Fachhandoff deklariert 160 Records, enthält aber keine ausformulierten Einzelrecords für die IDs 152 bis 160; diese Lücke bleibt fail-closed sichtbar. Outcome und Attribution sind offen.",
+      evidenceSummary: "Kapitelreview und 151 explizite Source-Commitments sind veröffentlicht. Der korrigierte Source-Reaudit bestätigt diesen belastbaren Umfang; Outcome und Attribution sind offen.",
       realityCheckSummary: exAnteReality,
     },
     problemReview: "Transformations-, Wettbewerbs-, Investitions-, Energie-, Digital-, Medien- und Fachkräftedruck sind mehrere Ursachencluster. Genehmigungsdauer oder Bürokratie sind nicht automatisch der jeweilige bindende Engpass.",
@@ -252,7 +315,7 @@ export const rheinlandPfalzCoalitionChapters: CoalitionChapterReview[] = [
     title: "Arbeit, Sozialstaat, Gesundheit und Pflege",
     pages: "PDF S. 33–49",
     maturity: "HIGH_MATERIALITY_REVIEW",
-    maturityLabel: "Hochmaterialer Fachreview veröffentlicht; atomare Source-Zerlegung offen",
+    maturityLabel: "Hochmaterialer Fachreview und 263 Source-Commitments veröffentlicht",
     assessment: {
       assessmentLabel: "Substanzielles Teilhabe-, Versorgungs- und Resilienzpotenzial",
       impactCoreSummary: "Qualifizierung, Armuts- und Wohnungslosigkeitsprävention, integrierte Gesundheitsversorgung, Public Health und quartiersnahe Pflege können frühere Zugänge, Kontinuität und Schutz stärken.",
@@ -279,7 +342,7 @@ export const rheinlandPfalzCoalitionChapters: CoalitionChapterReview[] = [
     title: "Landwirtschaft, Weinbau, Natur, Umwelt und Klima",
     pages: "PDF S. 50–59",
     maturity: "HIGH_MATERIALITY_REVIEW",
-    maturityLabel: "Hochmaterialer Fachreview veröffentlicht; atomare Source-Zerlegung offen",
+    maturityLabel: "Hochmaterialer Fachreview und 135 Source-Commitments veröffentlicht",
     assessment: {
       assessmentLabel: "Hohes Resilienz- und Transformationspotenzial mit harten Ressourcengrenzen",
       impactCoreSummary: "Klimaangepasste Landwirtschaft, Waldumbau, Flächenrecycling, Biodiversität, Wasser- und Hochwassermanagement, Erneuerbare und kommunale Anpassung können natürliche und wirtschaftliche Resilienz stärken.",
@@ -306,7 +369,7 @@ export const rheinlandPfalzCoalitionChapters: CoalitionChapterReview[] = [
     title: "Sicherheit, Rechtsstaat, Infrastruktur, Kommunen und Wohnen",
     pages: "PDF S. 60–75",
     maturity: "HIGH_MATERIALITY_REVIEW",
-    maturityLabel: "Hochmaterialer Fachreview veröffentlicht; atomare Source-Zerlegung offen",
+    maturityLabel: "Hochmaterialer Fachreview und 246 Source-Commitments veröffentlicht",
     assessment: {
       assessmentLabel: "Erhebliches Funktions- und Resilienzpotenzial mit hoher Schutzgrenzen-Sensitivität",
       impactCoreSummary: "Kapazität in Polizei, Justiz und Katastrophenschutz, multimodale Infrastruktur, kommunale Handlungsfähigkeit und sozial gebundener Wohnraum können Sicherheit, Zugang und staatliche Funktionsfähigkeit verbessern.",
@@ -334,7 +397,7 @@ export const rheinlandPfalzCoalitionChapters: CoalitionChapterReview[] = [
     title: "Finanzen, Haushalt und Staatsmodernisierung",
     pages: "PDF S. 76–83",
     maturity: "HIGH_MATERIALITY_REVIEW",
-    maturityLabel: "Hochmaterialer Fachreview veröffentlicht; atomare Source-Zerlegung offen",
+    maturityLabel: "Hochmaterialer Fachreview und 88 Source-Commitments veröffentlicht",
     assessment: {
       assessmentLabel: "Investitions- und Staatsfähigkeitspotenzial – reale Kapazität und Priorisierung entscheiden",
       impactCoreSummary: "Finanzierungsspielraum, kommunale Stabilisierung, investive Priorisierung und vereinfachte Verwaltung können Infrastruktur- und Staatsfähigkeitsengpässe adressieren.",
@@ -362,7 +425,7 @@ export const rheinlandPfalzCoalitionChapters: CoalitionChapterReview[] = [
     title: "Migration, Integration, Familien, Frauen und Kinder",
     pages: "PDF S. 84–91",
     maturity: "HIGH_MATERIALITY_REVIEW",
-    maturityLabel: "Hochmaterialer Fachreview veröffentlicht; atomare Source-Zerlegung offen",
+    maturityLabel: "Hochmaterialer Fachreview und 86 Source-Commitments veröffentlicht",
     assessment: {
       assessmentLabel: "Getrennte Schutz- und Teilhabepotenziale – keine Migrations-Gesamtrichtung",
       impactCoreSummary: "Sprache, Beratung, Arbeits- und Qualifikationszugang, Gewaltschutz, Kinderschutz und Beteiligung können Capability und Sicherheit stärken; Aufnahme-, Verteil- und Rückführungsdesign bleiben rechts-, kompetenz- und fehlerabhängig.",
@@ -389,7 +452,7 @@ export const rheinlandPfalzCoalitionChapters: CoalitionChapterReview[] = [
     title: "Europa, Internationales und Demokratie",
     pages: "PDF S. 92–98",
     maturity: "HIGH_MATERIALITY_REVIEW",
-    maturityLabel: "Hochmaterialer Fachreview veröffentlicht; atomare Source-Zerlegung offen",
+    maturityLabel: "Hochmaterialer Fachreview und 103 Source-Commitments veröffentlicht",
     assessment: {
       assessmentLabel: "Positives Kooperations- und Demokratiepotenzial mit Rechts- und Evidenzbedingungen",
       impactCoreSummary: "Grenzüberschreitender Zugang, Austausch, Ehrenamt, Begegnung, politische und Medienbildung sowie Antidiskriminierung können Mobilität, Selbstwirksamkeit, Vertrauen und demokratische Resilienz stärken.",
@@ -416,7 +479,7 @@ export const rheinlandPfalzCoalitionChapters: CoalitionChapterReview[] = [
     title: "Koalitionszusammenarbeit",
     pages: "PDF S. 99–100",
     maturity: "HIGH_MATERIALITY_REVIEW",
-    maturityLabel: "Governance- und Lifecycle-Review veröffentlicht; atomare Source-Zerlegung offen",
+    maturityLabel: "Governance- und Lifecycle-Review und 31 Source-Commitments veröffentlicht",
     assessment: {
       assessmentLabel: "Governance- und Lifecycle-Ebene – kein eigenständiger Wirkungsfall",
       impactCoreSummary: "Koalitionsausschuss, Abstimmungsregeln, Klausuren und Ressortzuschnitt strukturieren politische Entscheidungsprozesse. Erst konkrete Prioritäts-, Ressourcen- oder Delivery-Änderungen erzeugen eigenständige Wirkungsgegenstände.",
@@ -425,14 +488,14 @@ export const rheinlandPfalzCoalitionChapters: CoalitionChapterReview[] = [
       directionLabel: "Keine eigenständige Wirkungsrichtung auf Dokumentebene",
       directionKind: "open",
       evidenceSummary: chapterEvidence,
-      realityCheckSummary: "Zu prüfen sind dokumentierte Prioritäts- und Versionsänderungen, Transparenz, Delivery-Entscheidungen und konkrete GovernmentActions – nicht die Zahl der Koalitionssitzungen.",
+      realityCheckSummary: "Zu prüfen sind dokumentierte Prioritäts- und Versionsänderungen, Transparenz, Delivery-Entscheidungen und konkrete Regierungshandlungen – nicht die Zahl der Koalitionssitzungen.",
     },
     problemReview: "Das Kapitel beschreibt Koordinations- und Entscheidungsprozesse, keinen eigenständigen gesellschaftlichen Problemzustand.",
     goalReview: "Stabilität, Koordination und regelmäßige Überprüfung können problemadäquate Governance-Ziele sein. Sie werden erst durch transparente Lern- und Umsetzungsschleifen wirkungsrelevant.",
     findings: [
       { title: "Jährlicher Review", text: "Ziel- und Maßnahmenprüfung kann Priorisierung und Anpassung fördern. Ohne Baseline, Outcome, Falsifikationskriterium und nachvollziehbare Revision bleibt sie Reporting." },
       { title: "Konsens und Koalitionsausschuss", text: "Konsens kann Entscheidungsstabilität erhöhen und zugleich Flexibilität oder öffentliche Nachvollziehbarkeit reduzieren. Das ist Governance-Spannung, keine Netto-Wirkung." },
-      { title: "Ressorts und Bundesrat", text: "Ressortzuschnitt ist GovernmentTerm-Fakt. Bundesratsposition und Enthaltung sind politische Lifecycle-Objekte, keine Landesumsetzung oder Personenbewertung." },
+      { title: "Ressorts und Bundesrat", text: "Der Ressortzuschnitt ist ein Fakt des Regierungszeitraums. Bundesratsposition und Enthaltung sind Stationen des politischen Lebenslaufs, keine Landesumsetzung oder Personenbewertung." },
       { title: "WÖk-Handlungsoption", text: noRecommendation },
     ],
   },
@@ -450,11 +513,11 @@ export const rheinlandPfalzCoalitionQualityLayers = [
 ];
 
 export const rheinlandPfalzCoalitionRelationshipModel = {
-  sourceDeduplication: "Gemeinsame Kapitel, Seiten, Titel, Akteure oder Themen sind kein Identitätsbeweis. Die expliziten Source-Commitments bleiben getrennt; neun deklarierte, aber nicht ausformulierte IDs werden nicht rekonstruiert.",
-  parentChild: "CoalitionCommitment, GovernmentAction, LegalAct, Programm, Budget, Implementation, Observation, Reality Check und Revision sind getrennte Lifecycle-Objekte. Ein Versprechen wird nicht durch Textähnlichkeit als umgesetzt markiert.",
+  sourceDeduplication: "Gemeinsame Kapitel, Seiten, Titel, Akteure oder Themen sind kein Identitätsbeweis. Alle 1.254 expliziten Koalitionszusagen bleiben getrennt; die früher fälschlich erwarteten IDs C02-152 bis C02-160 werden nicht erzeugt.",
+  parentChild: "Koalitionszusage, Regierungshandlung, Rechtsakt, Programm, Budget, Umsetzung, Beobachtung, Reality Check und Revision sind getrennte Lebenslaufobjekte. Ein Versprechen wird nicht durch Textähnlichkeit als umgesetzt markiert.",
   competence: "Landes-, kommunale, Bundes-, EU- und gemeinsame Zuständigkeit werden auf dem späteren Maßnahmenobjekt geprüft. Ein Bundesrats- oder Positionscommitment ist keine Umsetzung des angestrebten Bundes- oder EU-Rechts.",
   budgetReservation: "Finanzierungsvorbehalt, Priorisierung und Nichtumsetzung sind selbst wirkungsrelevant. Nominale Finanzierung erzeugt keine Wirkung; reale Kapazität, Additionalität, Verteilung und Lebenszyklus entscheiden.",
-  maturity: "Kapitelreviews tragen keine automatische Einzelrichtung auf Source-Commitments. Erst fachlich freigegebene Einzelreviews oder konkrete GovernmentActions dürfen eine eigene Wirkungsbewertung erhalten.",
+  maturity: "Kapitelreviews tragen keine automatische Einzelrichtung auf Quellenzusagen. Erst fachlich freigegebene Einzelreviews oder konkrete Regierungshandlungen dürfen eine eigene Wirkungsbewertung erhalten.",
 };
 
 export const rheinlandPfalzCoalitionExistingImpactCases = [
@@ -462,6 +525,7 @@ export const rheinlandPfalzCoalitionExistingImpactCases = [
   { id: "RP-IMPACT-2026-02", title: "Wiederaufbau Ahrtal: vom Reparatur- zum Resilienzpfad" },
   { id: "RP-IMPACT-2026-03", title: "Besoldungs- und Versorgungsanpassung 2026–2028" },
   { id: "RP-IMPACT-2026-04", title: "Bundesratspositionen als Landesregierungshandeln" },
+  { id: "RP-IMPACT-2026-05-HITZESCHUTZ", title: "Hitzeaktionsplan: geerbter Politikpfad und aktuelle Verstetigung" },
 ];
 
 export const rheinlandPfalzCoalitionLifecycle = commitmentRegister.lifecycle_chain;

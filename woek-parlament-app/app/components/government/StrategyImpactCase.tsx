@@ -125,7 +125,7 @@ export function ActionPlanMetaDetail() {
       <p className="eyebrow">Executive Overview</p>
       <h2 id="strategy-reference">DNS 2025 ist Referenzrahmen – nicht Regierungswirkung</h2>
       <p>Die Deutsche Nachhaltigkeitsstrategie 2025 liefert Ziele und Indikatoren, gegen die Maßnahmen und spätere Zustandsentwicklungen beobachtet werden können. Ein Zielbezug und selbst eine spätere Zielannäherung beweisen jedoch weder Kausalität noch Zurechnung zu diesem Aktionsplan.</p>
-      <div className="notice"><strong>Keine Gesamtnote und keine automatische Empfehlung</strong><p>Die 19 heterogenen Missionen werden nicht verrechnet. Der frühere Vorschlag für standardisierte Wirkungssheets bleibt als historische Designanregung sichtbar; er ist kein fachlich freigegebener RecommendationRecord.</p></div>
+      <div className="notice"><strong>Keine Gesamtnote und keine automatische Empfehlung</strong><p>Die 19 heterogenen Missionen werden nicht verrechnet. Der frühere Vorschlag für standardisierte Wirkungssheets bleibt als historische Designanregung sichtbar; er ist keine fachlich freigegebene WÖk-Handlungsoption.</p></div>
     </section>
 
     <section aria-labelledby="strategy-paths">
@@ -222,7 +222,7 @@ export function ActionPlanMissionDetail({ mission }: { mission: ActionPlanMissio
 
     <section aria-labelledby={`mission-option-${mission.mission}`}>
       <h2 id={`mission-option-${mission.mission}`}>WÖk-Handlungsoption</h2>
-      <p>{deepDive?.recommendationStatus ?? "Für diese Mission liegt noch kein fachlich freigegebener RecommendationRecord vor. CodeX erzeugt daraus keine Empfehlung."}</p>
+      <p>{deepDive?.recommendationStatus ?? "Für diese Mission liegt noch keine fachlich freigegebene WÖk-Handlungsoption vor. CodeX erzeugt daraus keine Empfehlung."}</p>
     </section>
 
     <section aria-labelledby={`mission-reality-${mission.mission}`}>

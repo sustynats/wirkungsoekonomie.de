@@ -112,7 +112,7 @@ export const badenWuerttembergCoalitionPublicMaturity: PublicMaturityProjection 
   assessableNow: [
     "Problem, Ziel, Wirkungspotenziale und Risiken sind auf Kapitel- und hochmaterialer Cluster-Ebene veröffentlicht.",
     "Die dokumentweiten Delivery-, Finanzierungs-, Kohärenz- und Schutzbedingungen sind fachlich ausgewiesen.",
-    "1.577 atomare CoalitionCommitments sind mit stabiler Kennung und Fundstelle vollständig inventarisiert.",
+    "1.577 atomare Koalitionszusagen sind mit stabiler Kennung und Fundstelle vollständig inventarisiert.",
   ],
   openPoints: [
     "Tatsächliche Umsetzung, Zustandsänderung und Zurechnung sind noch nicht beobachtbar.",
