@@ -8,12 +8,16 @@ const sources = [
     href: "https://www.bundesregierung.de/resource/blob/975228/2335292/3962877378d74837d4f4c611749b6172/2025-05-13-dns-2025-data.pdf?download=1",
   },
   {
-    label: "GGO – insbesondere §§ 44 und 62",
+    label: "GGO – insbesondere §§ 43, 44 und 62",
     href: "https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm",
   },
   {
     label: "§ 13 Bundes-Klimaschutzgesetz",
     href: "https://www.gesetze-im-internet.de/ksg/__13.html",
+  },
+  {
+    label: "§ 8 Bundes-Klimaanpassungsgesetz",
+    href: "https://www.gesetze-im-internet.de/kang/__8.html",
   },
   {
     label: "Aktionsplan Nachhaltigkeit 2026",
@@ -29,17 +33,18 @@ export function GovernmentActionScopeExplainer({ compact = false }: GovernmentAc
       <p>
         Die WÖk prüft politisches Handeln nicht nur dort, wo ein Gesetz entsteht. Die Leitfrage lautet:
         <strong> Kann ein Vorhaben oder eine Maßnahme einen materiell bedeutenden Zustand verändern?</strong> Deshalb können neben
-        Gesetzen und Rechtsverordnungen auch Strategien, Programme, Förder-, Investitions- und Beschaffungsentscheidungen,
-        Infrastrukturvorhaben und andere politisch verantwortete Maßnahmen zu einem Wirkungsfall werden.
+        Gesetzen und Rechtsverordnungen auch Strategien, Programme, Förderungen und Garantien, Investitions- und
+        Beschaffungsentscheidungen, Infrastrukturvorhaben, Verwaltungsentscheidungen und andere politisch verantwortete Maßnahmen
+        zu einem Wirkungsfall werden.
       </p>
       <p>
         Das ist keine Behauptung, dass für alle diese Gegenstände dieselbe staatliche Prüfpflicht gilt. Die Deutsche
         Nachhaltigkeitsstrategie 2025 reicht in ihrem Anspruch über Rechtsetzung hinaus: Ressorts sollen auch ihre
         Verwaltungspraxis nachhaltig ausrichten, Ressortstrategien einbeziehen, bei besonders relevanten Strategien und Programmen
         Nachhaltigkeitswirkungen benennen und bestehende Vorhaben regelmäßig an den Nachhaltigkeitszielen spiegeln. Besonders
-        formalisiert ist die Nachhaltigkeitsprüfung aber in der Rechtsetzung; der Aktionsplan Nachhaltigkeit 2026 sieht für jeden
-        Gesetzentwurf eine vollständige Nachhaltigkeitsprüfung vor. § 13 KSG enthält daneben eigene Klimaschutzanforderungen für
-        Planungen und Entscheidungen öffentlicher Aufgabenträger sowie für Investitionen und Beschaffung des Bundes.
+        formalisiert ist die Nachhaltigkeitsprüfung in der Rechtsetzung. Daneben enthalten etwa § 13 KSG und § 8 KAnG eigene
+        Berücksichtigungsgebote für Planungen und Entscheidungen öffentlicher Aufgabenträger; für Investitionen und Beschaffung des
+        Bundes enthält § 13 KSG zusätzliche Klima-, CO₂-Preis- und Lebenszyklusanforderungen.
       </p>
 
       {!compact && (
@@ -49,18 +54,20 @@ export function GovernmentActionScopeExplainer({ compact = false }: GovernmentAc
             <h3>Nicht jede Maßnahme läuft durch dasselbe Verfahren</h3>
             <p>
               Gesetze und Rechtsverordnungen, Strategien und Programme, Beschaffung, Investitionen und sonstiges Verwaltungshandeln
-              können unterschiedlichen Regeln und Prüftiefen unterliegen. Die genannten Regelwerke bilden deshalb keine einheitliche,
-              identische eNAP-Pflicht für jede materiell relevante Einzelmaßnahme.
+              können unterschiedlichen Regeln und Prüftiefen unterliegen. Es gibt also keine Nachhaltigkeitsprüfungs-Leere außerhalb
+              der Rechtsetzung. Nach dem derzeit belegten Rahmen gibt es aber auch kein einheitliches eNAP-ähnliches Pflichtverfahren,
+              das jede materiell relevante Einzelentscheidung unabhängig von ihrer Handlungsform gleichartig prüft und öffentlich
+              dokumentiert.
             </p>
           </article>
           <article>
             <p className="eyebrow">WÖk-Prüfarchitektur</p>
             <h3>Die Analyse folgt der möglichen Wirkungsmacht</h3>
             <p>
-              WÖk erweitert nicht den Rechtsrahmen, sondern den Analyseumfang. Ein Gegenstand wird nur dann geprüft und veröffentlicht,
-              wenn Entscheidungsgegenstand, verantwortlicher Akteur, Quellenlage und fachliche Abgrenzung nachvollziehbar sind. Auf
-              anderen staatlichen Ebenen gilt dasselbe Auswahlprinzip; der jeweils geltende Rechts- und Nachhaltigkeitsrahmen wird
-              objektspezifisch belegt und nicht vom Bund übertragen.
+              WÖk erweitert nicht den Rechtsrahmen, sondern den Analyseumfang. Für jeden Gegenstand wird zuerst geklärt, welcher
+              staatliche Prüf- und Nachhaltigkeitsrahmen tatsächlich gilt. Danach folgt dieselbe wirkungsökonomische Kernlogik für
+              Problem, Ziel, Wirkpfade, Verteilung, Schutzräume, Alternativen und Reality Check. Auf anderen staatlichen Ebenen wird
+              der dort geltende Rahmen objektspezifisch belegt und nicht vom Bund übertragen.
             </p>
           </article>
         </div>
