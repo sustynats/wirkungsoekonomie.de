@@ -50,6 +50,10 @@ jobs:
           python tools/apply_state_sustainability_precision.py
           python tools/apply_state_sustainability_public_precision.py
           python tools/apply_state_sustainability_build_integration.py
+          node scripts/glossary/build-glossary-registry.mjs
+          node scripts/glossary/build-glossary-pages.mjs
+          node scripts/glossary/build-glossary-lookup.mjs
+          node scripts/quality/sync-sitemap-indexability.mjs
           npm run build:search
           npm run taxonomy:build
       - name: Generate committed exhaustive #253 URL/file matrix
@@ -69,9 +73,6 @@ jobs:
             git config user.name 'github-actions[bot]'
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
             git add -A
-            # The GITHUB_TOKEN may not self-push workflow changes. Those are
-            # materialized explicitly by the orchestrator; keep them as a hard
-            # idempotence failure rather than silently dropping the gate.
             git reset -- .github/workflows/ || true
             if git diff --cached --quiet; then
               echo 'Only workflow-file drift remains; do not self-commit it.'
@@ -88,6 +89,10 @@ jobs:
           python tools/apply_state_sustainability_precision.py
           python tools/apply_state_sustainability_public_precision.py
           python tools/apply_state_sustainability_build_integration.py
+          node scripts/glossary/build-glossary-registry.mjs
+          node scripts/glossary/build-glossary-pages.mjs
+          node scripts/glossary/build-glossary-lookup.mjs
+          node scripts/quality/sync-sitemap-indexability.mjs
           npm run build:search
           npm run taxonomy:build
           python tools/audit_state_sustainability_architecture_fast.py --root . --output content/audits/state-sustainability-architecture-url-matrix.json --markdown content/audits/state-sustainability-architecture-url-matrix.md
