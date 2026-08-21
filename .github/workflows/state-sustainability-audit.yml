@@ -63,9 +63,18 @@ jobs:
             git config user.name 'github-actions[bot]'
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
             git add -A
-            git commit -m 'fix: materialize approved #253 state architecture projections'
-            git pull --rebase origin ${{ github.event.pull_request.head.ref }}
-            git push origin HEAD:${{ github.event.pull_request.head.ref }}
+            # GITHUB_TOKEN may update repository contents but must not self-push
+            # workflow files without workflows permission. Workflow changes are
+            # materialized explicitly by the orchestrator and remain an
+            # idempotence failure below if a projection still tries to alter one.
+            git reset -- .github/workflows/ || true
+            if git diff --cached --quiet; then
+              echo 'Only workflow-file drift remains; do not self-commit it.'
+            else
+              git commit -m 'fix: materialize approved #253 state architecture projections'
+              git pull --rebase origin ${{ github.event.pull_request.head.ref }}
+              git push origin HEAD:${{ github.event.pull_request.head.ref }}
+            fi
           fi
       - name: Verify projections are idempotent after materialization
         run: |
