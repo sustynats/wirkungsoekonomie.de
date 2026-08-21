@@ -14,6 +14,7 @@ import { ACTION_PLAN_META_ID, actionPlanMetaAssessment, actionPlanPublicMaturity
 import {
   BW_COALITION_ROUTE,
   badenWuerttembergCoalitionAssessment,
+  badenWuerttembergCoalitionAtomicCommitments,
   badenWuerttembergCoalitionChapters,
   badenWuerttembergCoalitionPublicMaturity,
   badenWuerttembergCoalitionQualityLayers,
@@ -93,6 +94,7 @@ export default function SearchPage() {
       terms: [
         ...badenWuerttembergCoalitionChapters.flatMap((chapter) => [chapter.title, chapter.assessment.assessmentLabel, chapter.assessment.keyFinding, chapter.problemReview, chapter.goalReview]),
         ...badenWuerttembergCoalitionQualityLayers.flatMap((layer) => [layer.title, layer.text]),
+        ...badenWuerttembergCoalitionAtomicCommitments.flatMap((record) => [record.commitment_text, record.source_locator]),
       ],
     },
     {

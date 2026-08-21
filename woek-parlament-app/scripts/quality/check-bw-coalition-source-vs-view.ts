@@ -6,11 +6,15 @@ import path from "node:path";
 import {
   BW_COALITION_ROUTE,
   badenWuerttembergCoalitionAssessment,
+  badenWuerttembergCoalitionAtomicCommitments,
   badenWuerttembergCoalitionChapters,
+  badenWuerttembergCoalitionCommitmentRegister,
+  badenWuerttembergCoalitionCommitments,
   badenWuerttembergCoalitionExistingImpactCases,
   badenWuerttembergCoalitionGovernanceReview,
   badenWuerttembergCoalitionLifecycle,
   badenWuerttembergCoalitionQualityLayers,
+  badenWuerttembergCoalitionRelationshipModel,
   badenWuerttembergCoalitionSources,
 } from "../../lib/states/baden-wuerttemberg-coalition";
 
@@ -18,8 +22,10 @@ const baseUrl = (process.env.WOEK_BW_COALITION_BASE_URL ?? "http://127.0.0.1:301
 const output = process.env.WOEK_BW_COALITION_SOURCE_VS_VIEW_REPORT
   ?? path.resolve("data/autopilot/audit/2.3-remediated/SOURCE-VS-VIEW-BW-COALITION-2026-2031.json");
 const sourceFiles = [
+  "data/states/baden-wuerttemberg-coalition-commitments.json",
   "lib/states/baden-wuerttemberg-coalition.ts",
   "app/components/states/StateCoalitionReview.tsx",
+  "app/components/states/StateCoalitionCommitmentInventory.tsx",
   "app/laender/[slug]/mandat-und-praxis/page.tsx",
 ];
 
@@ -38,6 +44,8 @@ function visible(html: string) {
     .replace(/&nbsp;/g, " ")
     .replace(/&ndash;/g, "–")
     .replace(/&rarr;/g, "→")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
     .replace(/\s+/g, " ")
     .trim()
     .normalize("NFKC");
@@ -98,6 +106,12 @@ for (const [index, layer] of badenWuerttembergCoalitionQualityLayers.entries()) 
   verify(`/quality_layers/${index}/title`, layer.title);
   verify(`/quality_layers/${index}/text`, layer.text);
 }
+for (const [field, value] of Object.entries(badenWuerttembergCoalitionRelationshipModel)) verify(`/relationship_model/${field}`, value);
+for (const record of badenWuerttembergCoalitionCommitments) {
+  verify(`/commitments/${record.commitment_id}/id`, record.commitment_id);
+  verify(`/commitments/${record.commitment_id}/text`, record.commitment_text);
+  verify(`/commitments/${record.commitment_id}/source_locator`, record.source_locator);
+}
 for (const [index, step] of badenWuerttembergCoalitionLifecycle.entries()) verify(`/lifecycle/${index}`, step);
 for (const impactCase of badenWuerttembergCoalitionExistingImpactCases) {
   verify(`/existing_impact_cases/${impactCase.id}/title`, impactCase.title);
@@ -115,6 +129,11 @@ for (const route of sourceRoutes) {
 const deepChapters = badenWuerttembergCoalitionChapters.filter((chapter) => chapter.maturity === "DEEP_REVIEW").map((chapter) => chapter.chapter);
 const invariants = {
   ALL_15_CHAPTERS_HIGH_MATERIALITY_REVIEWED: badenWuerttembergCoalitionChapters.length === 15,
+  FULL_STRICT_SOURCE_BOUND_ATOMIC_COVERAGE: badenWuerttembergCoalitionCommitments.length === 1583
+    && badenWuerttembergCoalitionAtomicCommitments.length === 1577
+    && badenWuerttembergCoalitionCommitmentRegister.atomic_commitment_count === 1577,
+  EXPLICIT_DEEP_SPLIT_FLAGS_REMAINING_ZERO: badenWuerttembergCoalitionCommitmentRegister.explicit_deep_split_flags_remaining === 0,
+  SIX_PARENT_CONTAINERS_NON_COUNTING: badenWuerttembergCoalitionCommitments.filter((record) => !record.atomic_count).length === 6,
   LATEST_DEEP_REVIEW_SCOPE_IS_1_TO_3: JSON.stringify(deepChapters) === JSON.stringify([1, 2, 3]),
   NO_ARTIFICIAL_OVERALL_DIRECTION: mainText.includes("keine künstliche Gesamtrichtung") && mainText.includes("nicht zu einem Durchschnitt, einer Ampel oder einer Koalitionsnote verrechnet"),
   OFFICIAL_LINKED_DRAFT_LABEL_VISIBLE: mainText.includes("internem Entwurfsvermerk") && mainText.includes("keine byte-identische signierte Endfassung behauptet"),
@@ -126,6 +145,12 @@ const invariants = {
   NO_CODEX_RECOMMENDATION: mainText.includes("Eine Empfehlung wird nicht technisch erzeugt") && mainText.includes("nicht automatisch zu einer Empfehlung zusammengesetzt"),
   SOURCE_INTERMEDIARY_REQUIRED: badenWuerttembergCoalitionSources.every((source) => mainPage.html.includes(`/quellen/${sourceSlug(source.url)}`)) && !badenWuerttembergCoalitionSources.some((source) => mainPage.html.includes(`href=\"${source.url}`)),
   IMPLEMENTATION_IS_NOT_IMPACT: mainText.includes("Umsetzung ist nicht Wirkung"),
+  PROBLEM_REVIEW_BEFORE_GOAL_REVIEW: mainText.indexOf("Problemportfolio") < mainText.indexOf("Zielportfolio"),
+  GOAL_REVIEW_BEFORE_IMPACT_RECOMMENDATION: mainText.indexOf("Zielportfolio") < mainText.indexOf("WÖk-Wirkungsprüfung des Mandatsportfolios")
+    && mainText.indexOf("WÖk-Wirkungsprüfung des Mandatsportfolios") < mainText.indexOf("Keine fachlich freigegebene Gesamtportfolio-Empfehlung"),
+  DNS_REFERENCE_SEPARATE_FROM_WOEK_IMPACT_JUDGMENT: mainText.includes("DNS und gemeinsame Ziele") && mainText.includes("weder Richtungs- noch Kausalitätsnachweis"),
+  SOURCE_COMMITMENT_NOT_GOVERNMENT_ACTION_OR_OUTCOME: mainText.includes("Eine Koalitionszusage ist noch keine Regierungshandlung, keine Umsetzung und kein Wirkungsnachweis"),
+  BUDGET_RESERVATION_IS_NEITHER_FUNDED_NOR_BLOCKED: mainText.includes("Das bedeutet weder finanziert noch blockiert"),
 };
 for (const [name, passed] of Object.entries(invariants)) if (!passed) failures.push(`invariant:${name}`);
 
@@ -134,7 +159,8 @@ for (const token of rawPublicTokens) if (mainText.includes(token)) failures.push
 
 const unrenderedContentPaths = requiredContentPaths.filter((pointer) => !renderedContentPaths.includes(pointer));
 const fullLayers = [
-  "PROBLEM_REVIEW", "GOAL_REVIEW", "ACTUAL_IMPACT_ANALYSIS", "MATERIAL_OMISSIONS", "POLICY_COHERENCE",
+  "DNS_REFERENCE", "PROBLEM_REVIEW", "GOAL_REVIEW", "ACTUAL_IMPACT_ANALYSIS", "RECOMMENDATION",
+  "COMMON_TARGETS_COMPARISON", "COMMUNICATION_MEDIA_IMPACT", "MATERIAL_OMISSIONS", "POLICY_COHERENCE",
   "DELIVERY_FEASIBILITY", "RESOURCE_FINANCING", "SPATIAL_DISTRIBUTION", "INTERNATIONAL_LEAKAGE",
   "ROBUSTNESS_STRESS_TEST", "REVERSIBILITY_LOCKIN", "FALSIFICATION_TRIGGERS", "LIFECYCLE_TRACEABILITY",
   "VERSION_DELTA", "COVERAGE_SCOPE", "REALITY_CHECK",
@@ -144,9 +170,9 @@ const report = {
   status: failures.length ? "FAIL" : "PASS",
   source_files: sourceFiles,
   source_hashes: Object.fromEntries(sourceFiles.map((file) => [file, createHash("sha256").update(readFileSync(path.resolve(file))).digest("hex")])),
-  fach_version: "BW_COALITION_2026_2031_ISSUE_239_BATCHES_1_TO_4_WITH_DEEP_REVIEWS_1_TO_3",
-  renderer_version: "STATE_COALITION_REVIEW_20260821",
-  records: { documents: 1, chapters: badenWuerttembergCoalitionChapters.length, deep_chapters: deepChapters.length, existing_linked_impact_cases: badenWuerttembergCoalitionExistingImpactCases.length },
+  fach_version: "BW_COALITION_2026_2031_ISSUE_239_BATCH_5Q_FACH_GAP_CLOSURE_COMPLETE",
+  renderer_version: "STATE_COALITION_FULL_ATOMIC_REVIEW_20260821",
+  records: { documents: 1, chapters: badenWuerttembergCoalitionChapters.length, deep_chapters: deepChapters.length, source_records: badenWuerttembergCoalitionCommitments.length, atomic_commitments: badenWuerttembergCoalitionAtomicCommitments.length, non_counting_parent_containers: badenWuerttembergCoalitionCommitments.filter((record) => !record.atomic_count).length, existing_linked_impact_cases: badenWuerttembergCoalitionExistingImpactCases.length },
   required_routes: requiredRoutes,
   rendered_routes: [...pages.values()].filter((page) => page.status === 200).map((page) => page.route),
   missing_required_routes: [...pages.values()].filter((page) => page.status !== 200).map((page) => page.route),
@@ -155,7 +181,8 @@ const report = {
   sitemap_targets: requiredRoutes,
   analysis_layers_by_object: {
     "BW-COALITION-2026-2031": fullLayers,
-    ...Object.fromEntries(badenWuerttembergCoalitionChapters.map((chapter) => [`BW-COALITION-2026-2031-CH${String(chapter.chapter).padStart(2, "0")}`, chapter.maturity === "DEEP_REVIEW" ? fullLayers : ["PROBLEM_REVIEW", "GOAL_REVIEW", "ACTUAL_IMPACT_ANALYSIS", "COVERAGE_SCOPE", "REALITY_CHECK"]])),
+    ...Object.fromEntries(badenWuerttembergCoalitionChapters.map((chapter) => [`BW-COALITION-2026-2031-CH${String(chapter.chapter).padStart(2, "0")}`, fullLayers])),
+    ...Object.fromEntries(badenWuerttembergCoalitionCommitments.map((record) => [record.commitment_id, ["SOURCE_COVERAGE", "LIFECYCLE_TRACEABILITY", "COVERAGE_SCOPE", ...(record.atomic_count ? [] : ["PARENT_CONTAINER_NON_COUNTING"])]])),
   },
   required_content_paths: requiredContentPaths,
   rendered_content_paths: renderedContentPaths,

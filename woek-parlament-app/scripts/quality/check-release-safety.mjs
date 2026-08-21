@@ -51,7 +51,11 @@ function contentForRule(file, content, ruleLabel) {
     || [
       `data${path.sep}generated${path.sep}release-1${path.sep}commitment-registers.json`,
       `data${path.sep}generated${path.sep}release-1${path.sep}sachsen-anhalt-commitment-registers.json`,
-      `data${path.sep}generated${path.sep}release-1${path.sep}sachsen-anhalt-programme-reviews.json`
+      `data${path.sep}generated${path.sep}release-1${path.sep}sachsen-anhalt-programme-reviews.json`,
+      // Exact source-bound commitments can legitimately concern AI instruments;
+      // this exemption applies only to the AI-assistance wording rule. Provider,
+      // path, placeholder and every other public-safety rule remain active.
+      `data${path.sep}states${path.sep}baden-wuerttemberg-coalition-commitments.json`
     ].includes(file);
   if (sourceFaithfulCorpus) return "";
 

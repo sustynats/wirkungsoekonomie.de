@@ -1,5 +1,7 @@
 import type { OverviewAssessmentData } from "@/lib/presentation/overview-assessment";
 import type { PublicMaturityProjection } from "@/lib/presentation/public-maturity";
+import { readFileSync } from "node:fs";
+import path from "node:path";
 
 export const BW_COALITION_ROUTE = "/laender/baden-wuerttemberg/mandat-und-praxis";
 
@@ -41,6 +43,56 @@ export type CoalitionChapterReview = {
   relatedImpactCase?: string;
 };
 
+export type CoalitionCommitmentRecord = {
+  commitment_id: string;
+  chapter: number;
+  commitment_text: string;
+  source_locator: string;
+  source_classification: string;
+  fach_comment_id: number;
+  atomic_count: boolean;
+  container_children?: string[];
+  parent_container_id?: string;
+};
+
+type CoalitionCommitmentRegister = {
+  schema_version: string;
+  fach_status: string;
+  publication_status: string;
+  jurisdiction_id: string;
+  document_id: string;
+  document_title: string;
+  source_url: string;
+  provenance_status: string;
+  lifecycle_status: string;
+  signed_final_byte_identity: string;
+  coverage_scope: string;
+  source_record_count: number;
+  atomic_commitment_count: number;
+  explicit_deep_split_flags_remaining: number;
+  source_record_semantics: string;
+  competence_projection: string;
+  resource_financing_guard: { source_commitment_id: string; status: string; public_meaning: string };
+  lifecycle_chain: string[];
+  non_counting_parent_containers: Array<{ commitment_id: string; children: string[] }>;
+  chapter_counts: Array<{ chapter: number; source_records: number; atomic_commitments: number; non_counting_containers: number }>;
+  fach_comment_ids: number[];
+  global_crosswalk_fach_comment_id: number;
+  records: CoalitionCommitmentRecord[];
+};
+
+// Reading the approved register as data avoids turning 1,583 source records into
+// a gigantic TypeScript literal union while preserving the exact canonical JSON.
+const commitmentRegister = JSON.parse(readFileSync(
+  path.join(process.cwd(), "data/states/baden-wuerttemberg-coalition-commitments.json"),
+  "utf8",
+)) as CoalitionCommitmentRegister;
+
+export const badenWuerttembergCoalitionCommitmentRegister = commitmentRegister;
+export const badenWuerttembergCoalitionCommitments = commitmentRegister.records;
+export const badenWuerttembergCoalitionAtomicCommitments = badenWuerttembergCoalitionCommitments.filter((record) => record.atomic_count);
+export const badenWuerttembergCoalitionChapterCounts = commitmentRegister.chapter_counts;
+
 export const badenWuerttembergCoalitionAssessment: OverviewAssessmentData = {
   assessmentLabel: "Heterogenes Mandatsportfolio – keine künstliche Gesamtrichtung",
   impactCoreSummary: "Der Koalitionsvertrag bündelt 15 Kapitel mit unterschiedlichen Problemen, Zielen, Instrumenten, Zuständigkeiten und Wirkpfaden. Seine Wirkung kann deshalb nur auf Ebene konkreter Zusagen, späterer Regierungshandlungen und beobachtbarer Zustandsänderungen belastbar geprüft werden.",
@@ -48,21 +100,21 @@ export const badenWuerttembergCoalitionAssessment: OverviewAssessmentData = {
   keyFinding: "Ein erfülltes Koalitionsversprechen ist weder automatisch umgesetzt noch wirkungspositiv; alle zusätzlichen finanzwirksamen Maßnahmen stehen zudem unter einem dokumentweiten Haushaltsvorbehalt.",
   directionLabel: "Keine belastbare einheitliche Wirkungsrichtung",
   directionKind: "portfolio",
-  evidenceSummary: "Vertragstext, Kapitelstruktur und Instrumentdesign sind amtlich belegt. Die Kapitel 1 bis 3 sind vertieft geprüft; Kapitel 4 bis 15 liegen als hochmateriale Kapitelprüfung vor. Atomare Commitment-Zerlegung, Umsetzung, Outcome und Attribution bleiben offen.",
+  evidenceSummary: "Vertragstext, Kapitelstruktur und Instrumentdesign sind amtlich belegt. Alle 15 Kapitel sind hochmaterial geprüft; Kapitel 1 bis 3 liegen vertieft vor. Die 1.577 atomaren Zusagen sind vollständig fundstellengebunden inventarisiert. Umsetzung, Outcome und Attribution bleiben davon getrennte, künftige Prüfstufen.",
   realityCheckSummary: "Ex-ante-Mandatsanalyse. Eingetretene Wirkung ist noch nicht beobachtbar; spätere Regierungshandlungen, Umsetzung und Zustandsdaten werden getrennt verknüpft.",
 };
 
 export const badenWuerttembergCoalitionPublicMaturity: PublicMaturityProjection = {
   primary: "EX_ANTE_POTENTIAL_ONLY",
-  flags: ["EX_ANTE_POTENTIAL_ONLY", "REALITY_CHECK_PENDING", "ATTRIBUTION_OPEN", "RECOMMENDATION_PENDING", "OPERATIONALIZATION_PENDING"],
+  flags: ["EX_ANTE_POTENTIAL_ONLY", "REALITY_CHECK_PENDING", "ATTRIBUTION_OPEN", "RECOMMENDATION_PENDING"],
   label: "Ex-ante-Mandatsanalyse – Wirkung noch nicht beobachtbar",
-  compactHint: "Alle 15 Kapitel sind hochmaterial geprüft; Kapitel 1 bis 3 liegen vertieft vor. Umsetzung, Zustandswirkung und Zurechnung bleiben spätere Prüfstufen.",
+  compactHint: "Alle 15 Kapitel und 1.577 atomaren Zusagen sind fundstellengebunden erfasst; Kapitel 1 bis 3 liegen vertieft vor. Umsetzung, Zustandswirkung und Zurechnung bleiben spätere Prüfstufen.",
   assessableNow: [
     "Problem, Ziel, Wirkungspotenziale und Risiken sind auf Kapitel- und hochmaterialer Cluster-Ebene veröffentlicht.",
     "Die dokumentweiten Delivery-, Finanzierungs-, Kohärenz- und Schutzbedingungen sind fachlich ausgewiesen.",
+    "1.577 atomare CoalitionCommitments sind mit stabiler Kennung und Fundstelle vollständig inventarisiert.",
   ],
   openPoints: [
-    "Die vollständige atomare Zerlegung der einzelnen Koalitionszusagen und der Source-ID-Crosswalk sind noch offen.",
     "Tatsächliche Umsetzung, Zustandsänderung und Zurechnung sind noch nicht beobachtbar.",
     "Eine fachlich freigegebene WÖk-Handlungsoption liegt für das Mandatsportfolio nicht vor.",
   ],
@@ -72,7 +124,7 @@ export const badenWuerttembergCoalitionPublicMaturity: PublicMaturityProjection 
     { id: "impact", label: "Wirkungspotenziale und Risiken", status: "AVAILABLE", detail: "Ex-ante-Mandatsanalyse mit Querschnittsebenen veröffentlicht." },
     { id: "reality", label: "Beobachtung und Reality Check", status: "OPEN", detail: "Erst nach Regierungshandlung, Umsetzung und beobachtbarer Zustandsänderung belastbar." },
     { id: "recommendation", label: "WÖk-Handlungsoption", status: "PENDING", detail: "Keine fachlich freigegebene Handlungsoption vorhanden." },
-    { id: "operationalization", label: "Operationalisierung", status: "PENDING", detail: "Atomare Zusagen und spätere Regierungshandlungen werden versioniert ergänzt." },
+    { id: "operationalization", label: "Quellen- und Lifecycle-Operationalisierung", status: "AVAILABLE", detail: "1.577 atomare Zusagen sind vollständig fundstellengebunden; echte Regierungshandlungen werden erst bei amtlichem Nachweis verknüpft." },
   ],
 };
 
@@ -161,7 +213,7 @@ export const badenWuerttembergCoalitionSources: CoalitionSource[] = [
 const openRecommendation = "Für dieses Kapitel liegt noch keine fachlich freigegebene WÖk-Handlungsoption vor. Eine Empfehlung wird nicht technisch erzeugt.";
 const exAnteReality = "Ex-ante-Prüfung des Mandatsdokuments; tatsächliche Zustandsänderung und Zurechnung sind noch nicht beobachtbar.";
 const deepEvidence = "Vertragstext und Instrumentdesign sind hoch belegt. Outcome und Impact sind ex ante; Baselines, Umsetzung und Attribution müssen später getrennt nachgewiesen werden.";
-const initialEvidence = "Hochmateriale Kapitel- und Clusterprüfung ist veröffentlicht. Die vollständige atomare Commitment-Zerlegung und vertiefte Einzelfallprüfung bleiben offen.";
+const initialEvidence = "Hochmateriale Kapitel- und Clusterprüfung sowie die vollständige atomare Quelleninventarisierung sind veröffentlicht. Ein eigener vertiefter Wirkungsreview entsteht nur für materielle, fachlich ausdrücklich geprüfte oder später umgesetzte Einzelgegenstände.";
 
 export const badenWuerttembergCoalitionChapters: CoalitionChapterReview[] = [
   {
@@ -569,8 +621,16 @@ export const badenWuerttembergCoalitionQualityLayers: CoalitionFinding[] = [
   { title: "Falsifikation und Recheck", text: "Jeder später konkretisierte Wirkungsfall braucht mindestens eine zentrale Zustandsgröße, einen Gegen- oder Schadensindikator, einen Umsetzungs- beziehungsweise Engpassindikator, eine relevante Schutzgrenze, einen Zeitpunkt oder ein Ereignis für die erneute Prüfung sowie eine getrennte Zurechnungsprüfung." },
   { title: "Politischer Lebenslauf", text: "Wahlzusage, Koalitionszusage, Regierungshandlung, Rechtsakt, Programm oder Haushalt, Umsetzung, Zustandsbeobachtung, öffentliches Evidenzereignis, Reality Check und neue Analyseversion bleiben getrennte Stationen. Kein Koalitionssatz wird automatisch zur umgesetzten Maßnahme oder Wirkung." },
   { title: "Versionsvergleich", text: "Die aktuell amtlich verlinkte Fassung mit internem Entwurfsvermerk bleibt eine eigene Dokumentversion. Eine später nachgewiesene signierte oder abweichende Fassung wird additiv mit Datei- und Inhaltsvergleich geführt; Zusagen werden nicht still ersetzt." },
-  { title: "Abdeckung und Reife", text: "Alle 15 Kapitel sind auf Dokument-, Kapitel- und hochmaterialer Cluster-Ebene geprüft. Kapitel 1 bis 3 liegen vertieft vor. Die vollständige atomare Commitment-Zerlegung und der Source-ID-Crosswalk bleiben offen; reale Wirkung und Reality Check sind noch nicht reif." },
+  { title: "Abdeckung und Reife", text: "Alle 15 Kapitel sind auf Dokument-, Kapitel- und hochmaterialer Cluster-Ebene geprüft. Kapitel 1 bis 3 liegen vertieft vor. Die vollständige atomare Quellenzerlegung umfasst 1.577 Zusagen; sechs Parent-Container bleiben für Provenienz und Navigation erhalten, zählen aber nicht atomar. Reale Wirkung und Reality Check sind noch nicht reif." },
 ];
+
+export const badenWuerttembergCoalitionRelationshipModel = {
+  sourceDeduplication: "Alle Fundstellen bleiben erhalten; identische spätere Policy-, Regierungs- oder Wirkungsobjekte werden über explizite Beziehungen statt Themenähnlichkeit zusammengeführt.",
+  parentChild: "Dokumentversion → fundstellengebundene Koalitionszusage → kanonischer Politikgegenstand → Regierungshandlung oder Initiative → Rechtsakt, Förderprogramm oder Umsetzung → WÖk-Wirkungsfall → Beobachtung oder Evidenzereignis → Reality Check → Revision.",
+  competence: "Zuständigkeit und notwendige externe Akteure werden nur aus dem Fach-Crosswalk übernommen. Wo die konkrete Umsetzungsroute fehlt, bleibt sie bis zur Ausgestaltung ausdrücklich offen.",
+  budgetReservation: "Für zusätzliche finanzwirksame Zusagen gilt der dokumentweite Haushaltsvorbehalt. Das bedeutet weder finanziert noch blockiert; Finanzierung, Additionalität, Personal, IT, Beschaffung, Lebenszyklus- und Opportunitätskosten werden erst am konkreten Umsetzungsobjekt geprüft.",
+  maturity: "Die 1.577 Zusagen sind Source- und Lifecycle-Objekte. Sie erhalten nur dort ein eigenes Wirkungsurteil, wo ein ausdrücklicher Fachreview oder ein freigegebener bestehender Wirkungsfall vorliegt.",
+};
 
 export const badenWuerttembergCoalitionLifecycle = [
   "6. Mai 2026: Vertrag vorgestellt und amtlich verlinkter Text veröffentlicht",

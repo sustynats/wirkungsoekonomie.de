@@ -7,6 +7,8 @@ import path from "node:path";
 const baseUrl = (process.env.WOEK_GOLDEN_STATE_BASE_URL ?? "http://127.0.0.1:3018").replace(/\/$/, "");
 const outputFile = process.env.WOEK_GOLDEN_STATE_REPORT ?? path.join(process.cwd(), "data", "autopilot", "audit", "2.3-remediated", "GOLDEN-STATE-B07.json");
 const expectedLayers = [
+  "DNS_REFERENCE", "PROBLEM_REVIEW", "GOAL_REVIEW", "ACTUAL_IMPACT_ANALYSIS", "RECOMMENDATION",
+  "COMMON_TARGETS_COMPARISON",
   "MATERIAL_OMISSIONS", "POLICY_COHERENCE", "DELIVERY_FEASIBILITY", "RESOURCE_FINANCING",
   "SPATIAL_DISTRIBUTION", "INTERNATIONAL_LEAKAGE", "ROBUSTNESS_STRESS_TEST",
   "REVERSIBILITY_LOCKIN", "FALSIFICATION_TRIGGERS", "LIFECYCLE_TRACEABILITY",
@@ -39,6 +41,12 @@ function findField(value, names) {
 function contentLayerStatus(record, layer) {
   const aliases = {
     MATERIAL_OMISSIONS: ["material_omissions", "materialOmissions"],
+    DNS_REFERENCE: ["dns_reference", "dnsReference", "dns_common_targets"],
+    PROBLEM_REVIEW: ["problem_review", "problemReview", "root_cause_or_binding_bottleneck"],
+    GOAL_REVIEW: ["goal_review", "goalReview"],
+    ACTUAL_IMPACT_ANALYSIS: ["impact_analysis", "impactAnalysis", "impact_paths", "impactPaths", "positive_paths", "negative_paths"],
+    RECOMMENDATION: ["recommendation_id", "recommendation_status", "recommendation_core_summary"],
+    COMMON_TARGETS_COMPARISON: ["common_targets", "commonTargets", "common_target_review_id"],
     POLICY_COHERENCE: ["policy_coherence", "policyCoherence"],
     DELIVERY_FEASIBILITY: ["delivery_feasibility", "deliveryFeasibility"],
     RESOURCE_FINANCING: ["resource_financing", "resourceFinancing", "resource_and_capacity_constraints"],
@@ -94,6 +102,7 @@ const files = {
   communication_restore_audit: "data/state-programmes/communication-media-impact/restore-first-audit-20260820.json",
   strategy_action_plan_source_vs_view: "data/autopilot/audit/2.3-remediated/SOURCE-VS-VIEW-STRATEGY-ACTION-PLAN.json",
   state_coalition_bw_source_vs_view: "data/autopilot/audit/2.3-remediated/SOURCE-VS-VIEW-BW-COALITION-2026-2031.json",
+  state_coalition_bw_commitments: "data/states/baden-wuerttemberg-coalition-commitments.json",
 };
 const publicationSources = json(files.publication_sources).documents;
 const integrityCases = json(files.content_integrity).cases;
@@ -107,6 +116,7 @@ const jurisdictions = json(files.jurisdictions).jurisdictions.filter((entry) => 
 const communicationSourceVsView = json(files.communication_source_vs_view);
 const strategySourceVsView = json(files.strategy_action_plan_source_vs_view);
 const stateCoalitionBwSourceVsView = json(files.state_coalition_bw_source_vs_view);
+const stateCoalitionBwCommitments = json(files.state_coalition_bw_commitments);
 const communicationRecords = ["afd", "bsw", "cdu", "spd", "gruene", "linke"].map((party) => json(`data/state-programmes/communication-media-impact/ltw-2026-st-${party}.json`));
 const stateSlug = new Map([
   ["DE-BW", "baden-wuerttemberg"], ["DE-BY", "bayern"], ["DE-BE", "berlin"], ["DE-BB", "brandenburg"],
@@ -202,6 +212,10 @@ const failures = [
   ...(communicationSourceVsView.status === "PASS" ? [] : ["communication_media_source_vs_view"]),
   ...(strategySourceVsView.status === "PASS" ? [] : ["strategy_action_plan_source_vs_view"]),
   ...(stateCoalitionBwSourceVsView.status === "PASS" ? [] : ["state_coalition_bw_source_vs_view"]),
+  ...(stateCoalitionBwCommitments.source_record_count === 1583 ? [] : [`state_coalition_bw_source_records:${stateCoalitionBwCommitments.source_record_count}`]),
+  ...(stateCoalitionBwCommitments.atomic_commitment_count === 1577 ? [] : [`state_coalition_bw_atomic_commitments:${stateCoalitionBwCommitments.atomic_commitment_count}`]),
+  ...(stateCoalitionBwCommitments.non_counting_parent_containers?.length === 6 ? [] : [`state_coalition_bw_parent_containers:${stateCoalitionBwCommitments.non_counting_parent_containers?.length ?? 0}`]),
+  ...(stateCoalitionBwCommitments.explicit_deep_split_flags_remaining === 0 ? [] : [`state_coalition_bw_deep_split_flags:${stateCoalitionBwCommitments.explicit_deep_split_flags_remaining}`]),
   ...navigationTargets.filter((entry) => !entry.present).map((entry) => `navigation:${entry.route}`),
   ...searchTargets.filter((entry) => !entry.title_present_in_search_payload).map((entry) => `search:${entry.object_id}`),
   ...sitemapTargets.filter((entry) => !entry.present).map((entry) => `sitemap:${entry.route}`),
@@ -225,9 +239,9 @@ const report = {
   analysis_layers_by_object: analysisLayersByObject,
   source_hashes: Object.fromEntries(Object.entries(files).map(([name, file]) => [name, sha256(file)])),
   fach_version: b07Manifest.merge_id,
-  renderer_version: "B07_RECONCILED_RENDERER_20260820",
+  renderer_version: "B07_RECONCILED_BW_FULL_GOLDEN_STATE_RENDERER_20260821",
   semantic_diff_against_last_accepted_production: semanticDiff,
-  coverage: { government: government.length, government_strategy_meta: strategySourceVsView.records.meta, government_strategy_missions: strategySourceVsView.records.missions, eu: eu.length, parliament: parliament.length, recommendations: recommendations.length, common_targets: commonTargets.length, states: jurisdictions.length, state_coalition_documents: stateCoalitionBwSourceVsView.records.documents, state_coalition_chapters: stateCoalitionBwSourceVsView.records.chapters, communication_media_impact: communicationRecords.length },
+  coverage: { government: government.length, government_strategy_meta: strategySourceVsView.records.meta, government_strategy_missions: strategySourceVsView.records.missions, eu: eu.length, parliament: parliament.length, recommendations: recommendations.length, common_targets: commonTargets.length, states: jurisdictions.length, state_coalition_documents: stateCoalitionBwSourceVsView.records.documents, state_coalition_chapters: stateCoalitionBwSourceVsView.records.chapters, state_coalition_source_records: stateCoalitionBwCommitments.source_record_count, state_coalition_atomic_commitments: stateCoalitionBwCommitments.atomic_commitment_count, state_coalition_parent_containers: stateCoalitionBwCommitments.non_counting_parent_containers.length, communication_media_impact: communicationRecords.length },
   failures,
 };
 const publicPayload = JSON.stringify(report);

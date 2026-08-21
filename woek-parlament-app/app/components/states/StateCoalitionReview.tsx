@@ -1,12 +1,16 @@
 import Link from "next/link";
 import { OverviewAssessment } from "@/app/components/OverviewAssessment";
+import { StateCoalitionCommitmentInventory } from "@/app/components/states/StateCoalitionCommitmentInventory";
 import {
   badenWuerttembergCoalitionAssessment,
+  badenWuerttembergCoalitionCommitmentRegister,
+  badenWuerttembergCoalitionCommitments,
   badenWuerttembergCoalitionChapters,
   badenWuerttembergCoalitionExistingImpactCases,
   badenWuerttembergCoalitionGovernanceReview,
   badenWuerttembergCoalitionLifecycle,
   badenWuerttembergCoalitionQualityLayers,
+  badenWuerttembergCoalitionRelationshipModel,
   badenWuerttembergCoalitionSources,
 } from "@/lib/states/baden-wuerttemberg-coalition";
 import { sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
@@ -56,12 +60,12 @@ export function BadenWuerttembergCoalitionReview() {
     <header>
       <p className="eyebrow">Baden-Württemberg · Mandatsanalyse 2026–2031</p>
       <h1 id="bw-coalition-title">Aus Verantwortung fürs Land – Gemeinsam stark in stürmischen Zeiten</h1>
-      <OverviewAssessment assessment={badenWuerttembergCoalitionAssessment} />
+      <p className="lead">Der Vertrag ist vollständig als fundstellengebundenes Mandatsinventar erschlossen. Die WÖk-Prüfung trennt politische Zusage, Problem und Ziel, Wirkungspotenzial, spätere Regierungshandlung, Umsetzung und beobachtete Wirkung.</p>
       <div className="open-state" role="note">
         <span aria-hidden="true">i</span>
         <div>
-          <strong>Laufende, klar abgegrenzte Ex-ante-Analyse</strong>
-          <p>Alle 15 Kapitel sind auf hochmaterialer Kapitel- und Clusterebene geprüft. Kapitel 1 bis 3 liegen vertieft vor. Die atomare Zerlegung jeder einzelnen Zusage bleibt offen und wird weder durch Standardtexte noch durch technische Ableitungen ersetzt.</p>
+          <strong>Fach-Gap-Closure vollständig – Wirkung bleibt ex ante</strong>
+          <p>Alle 15 Kapitel sind hochmaterial geprüft und 1.577 atomare Zusagen vollständig mit Fundstellen erfasst. Kapitel 1 bis 3 liegen vertieft vor. Die Vollständigkeit des Quelleninventars ist keine Behauptung, dass jede Zusage bereits umgesetzt oder als eigener Wirkungsfall bewertet wurde.</p>
         </div>
       </div>
     </header>
@@ -94,6 +98,12 @@ export function BadenWuerttembergCoalitionReview() {
       <div className="notice"><strong>Umsetzung ist nicht Wirkung.</strong><p>Koalitionszusage, Regierungshandlung, Rechtsakt, Budget, Vollzug, Zustandsbeobachtung und Reality Check bleiben getrennte Stufen. Eine Erfüllungsquote wird nicht als Regierungswirkungsnote verwendet.</p></div>
     </section>
 
+    <section aria-labelledby="bw-impact-overview">
+      <p className="eyebrow">WÖk-Wirkungsprüfung des Mandatsportfolios</p>
+      <h2 id="bw-impact-overview">Wirkungspotenziale, Risiken und entscheidende Bedingungen</h2>
+      <OverviewAssessment assessment={badenWuerttembergCoalitionAssessment} />
+    </section>
+
     <section aria-labelledby="bw-governance-review">
       <p className="eyebrow">Dokumentweite Wirkungssteuerung</p>
       <h2 id="bw-governance-review">Vom Mitteleinsatz zum beobachtbaren Zielzustand</h2>
@@ -122,7 +132,8 @@ export function BadenWuerttembergCoalitionReview() {
       <dl className="government-impact-summary">
         <div><dt>Kapitel erfasst</dt><dd>15 von 15 auf hochmaterialer Kapitel- und Clusterebene</dd></div>
         <div><dt>Vertiefte Kapitelreviews</dt><dd>{deepReviews.length} von 15: Staatsmodernisierung, Wirtschaft sowie Wissenschaft, Kultur und Medien</dd></div>
-        <div><dt>Weitere Kapitelprüfungen</dt><dd>{highMaterialityReviews.length} von 15; atomare Vertiefung bleibt offen</dd></div>
+        <div><dt>Weitere Kapitelprüfungen</dt><dd>{highMaterialityReviews.length} von 15 auf hochmaterialer Ebene</dd></div>
+        <div><dt>Atomare Quellenabdeckung</dt><dd>{badenWuerttembergCoalitionCommitmentRegister.atomic_commitment_count.toLocaleString("de-DE")} Zusagen vollständig fundstellengebunden; sechs Parent-Container zählen nicht atomar</dd></div>
         <div><dt>Abdeckung der Handlungsoptionen</dt><dd>Keine neue Kapitel- oder Dokumentempfehlung freigegeben</dd></div>
         <div><dt>Reality Check</dt><dd>Noch nicht reif; Ex-ante-Mandat bleibt historisch erhalten</dd></div>
         <div><dt>Finanzierung</dt><dd>Zusätzliche finanzwirksame Zusagen stehen unter Haushaltsvorbehalt</dd></div>
@@ -130,6 +141,16 @@ export function BadenWuerttembergCoalitionReview() {
       <nav className="coalition-chapter-nav" aria-label="Kapitel der Koalitionsvertragsanalyse">
         {badenWuerttembergCoalitionChapters.map((chapter) => <a key={chapter.chapter} href={`#kapitel-${chapter.chapter}`}>{chapter.chapter}. {chapter.title}</a>)}
       </nav>
+    </section>
+
+    <section aria-labelledby="bw-triple-assessment">
+      <p className="eyebrow">Drei getrennte Bewertungsebenen</p>
+      <h2 id="bw-triple-assessment">Wirkungsprüfung, Zielreferenz und WÖk-Handlungsoption nicht vermischen</h2>
+      <div className="government-impact-grid">
+        <article><h3>Tatsächliche WÖk-Wirkungsprüfung</h3><p>Die Kapitelreviews prüfen die dokumentierten Instrumente und Zusagen auf Problemadäquanz, Mechanismen, Wirkungspotenziale, Risiken, Delivery, Verteilung, Schutzgrenzen und spätere Falsifikation. Atomare Quellenobjekte erben daraus nicht automatisch ein eigenes Wirkungsurteil.</p></article>
+        <article><h3>DNS und gemeinsame Ziele</h3><p>Für das Vertragsportfolio liegt kein vollständiger, fachlich freigegebener Crosswalk aller 1.577 Zusagen auf konkrete DNS-Indikatoren vor. Ziel- und Datenreferenzen bleiben deshalb getrennt und offen; eine thematische Nähe wäre weder Richtungs- noch Kausalitätsnachweis.</p></article>
+        <article><h3>Bessere WÖk-Handlungsoption</h3><p>Für den Koalitionsvertrag als Gesamtportfolio liegt keine fachlich freigegebene Handlungsoption vor. Bedingungen und Zielkonflikte werden nicht technisch zu einer Recommendation zusammengesetzt.</p></article>
+      </div>
     </section>
 
     <section aria-labelledby="bw-chapter-reviews">
@@ -153,6 +174,18 @@ export function BadenWuerttembergCoalitionReview() {
       </div>
     </section>
 
+    <section aria-labelledby="bw-relationship-model">
+      <p className="eyebrow">De-Dupe, Kompetenz und Lifecycle</p>
+      <h2 id="bw-relationship-model">Quellen vollständig erhalten, politische Objekte nicht doppelt zählen</h2>
+      <div className="strategy-quality-layers">
+        <details><summary>Quellen- und De-Dupe-Regel</summary><p>{badenWuerttembergCoalitionRelationshipModel.sourceDeduplication}</p></details>
+        <details><summary>Parent-Child-Lifecycle</summary><p>{badenWuerttembergCoalitionRelationshipModel.parentChild}</p></details>
+        <details><summary>Zuständigkeit und externe Akteure</summary><p>{badenWuerttembergCoalitionRelationshipModel.competence}</p></details>
+        <details><summary>Haushaltsvorbehalt und Ressourcen</summary><p>{badenWuerttembergCoalitionRelationshipModel.budgetReservation}</p></details>
+        <details><summary>Reife der Einzelobjekte</summary><p>{badenWuerttembergCoalitionRelationshipModel.maturity}</p></details>
+      </div>
+    </section>
+
     <section aria-labelledby="bw-existing-cases">
       <p className="eyebrow">Bereits vorhandene Wirkungsfälle</p>
       <h2 id="bw-existing-cases">Vorhandenen Fachbestand verknüpfen statt duplizieren</h2>
@@ -166,9 +199,26 @@ export function BadenWuerttembergCoalitionReview() {
       </div>
     </section>
 
+    <StateCoalitionCommitmentInventory
+      records={badenWuerttembergCoalitionCommitments.map((record) => ({
+        commitment_id: record.commitment_id,
+        chapter: record.chapter,
+        commitment_text: record.commitment_text,
+        source_locator: record.source_locator,
+        atomic_count: record.atomic_count,
+        container_children: record.container_children,
+        parent_container_id: record.parent_container_id,
+      }))}
+      chapters={badenWuerttembergCoalitionChapters.map((chapter) => ({
+        chapter: chapter.chapter,
+        title: chapter.title,
+        atomicCommitments: badenWuerttembergCoalitionCommitmentRegister.chapter_counts.find((count) => count.chapter === chapter.chapter)?.atomic_commitments ?? 0,
+      }))}
+    />
+
     <section aria-labelledby="bw-option">
       <p className="eyebrow">WÖk-Handlungsoption</p>
-      <h2 id="bw-option">Keine Empfehlung technisch erzeugt</h2>
+      <h2 id="bw-option">Keine fachlich freigegebene Gesamtportfolio-Empfehlung</h2>
       <p>Für die Kapitel- und Dokumentebene liegt noch keine fachlich freigegebene WÖk-Handlungsoption vor. Die ausgewiesenen Wirkbedingungen, Zielkonflikte und Prüfgrenzen werden nicht automatisch zu einer Empfehlung zusammengesetzt.</p>
     </section>
 
