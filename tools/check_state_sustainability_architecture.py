@@ -40,6 +40,24 @@ MATRIX_REQUIRED_FIELDS = {
 }
 CANONICAL_BENCHMARK = "blog/enap-woek-benchmark-fuenf-bundesvorhaben.html"
 NWI_AUDIT = "content/audits/nwi-acronym-disambiguation.json"
+CURRENT_GUIDE_LABEL = "WÖk-Begriffsleitfaden führend v1.6"
+CURRENT_GUIDE_URL = "/bibliothek/woek-begriffsleitfaden-fuehrend/"
+CURRENT_GUIDE_SURFACES = [
+    "fuer/akademie.html",
+    "fuer/buergerinnen.html",
+    "fuer/gesundheit.html",
+    "fuer/investoren.html",
+    "fuer/journalismus.html",
+    "fuer/kommunen.html",
+    "fuer/kommunen/kommunaler-wirkungsindex.html",
+    "fuer/mieter.html",
+    "fuer/politik.html",
+    "fuer/rente.html",
+    "fuer/unternehmen.html",
+    "fuer/wirkungseinkommen.html",
+    "fuer/wissenschaft-forschung.html",
+    "sdg-plus/medien-demokratie/wirkung-politischer-sprache.html",
+]
 
 
 def read(rel: str) -> str:
@@ -155,6 +173,26 @@ def glossary_and_sources() -> None:
         blind = terms.get("wirkungsblindheit") or {}
         if blind.get("version") != "2.0" or "keinerlei Folgen prüft oder misst" not in blind.get("shortDefinition", ""):
             raise AssertionError("approved #253 Wirkungsblindheit v2.0 precision did not win the canonical glossary merge")
+
+
+def terminology_guide_provenance() -> None:
+    for rel in CURRENT_GUIDE_SURFACES:
+        text = read(rel)
+        if CURRENT_GUIDE_LABEL not in text or "woek-begriffsleitfaden-fuehrend/" not in text:
+            raise AssertionError(f"{rel}: living source surface does not point to the leading terminology guide v1.6")
+        if "Führender Begriffsleitfaden der Wirkungsökonomie v1.0" in text or "Führender Begriffsleitfaden der Wirkungsökonomie v1.2" in text:
+            raise AssertionError(f"{rel}: obsolete guide is still presented as a current source")
+
+    require(CANONICAL_BENCHMARK, ["WÖk-Masterregister v1.5", CURRENT_GUIDE_LABEL])
+    require("woek-id-register/quellen/index.html", ["Quellenkatalog v1.5", "Begriffsleitfaden der Wirkungsökonomie v1.6", "WÖk Master Items v1.5"])
+
+    records = json.loads(read("content/quellenarchiv/glossary-source-records.json")).get("sources", [])
+    current = next((source for source in records if source.get("title") == CURRENT_GUIDE_LABEL), None)
+    if not current or current.get("reviewStatus") != "fuehrend" or not str(current.get("url", "")).endswith(CURRENT_GUIDE_URL):
+        raise AssertionError("leading terminology guide v1.6 has no correct source-archive record")
+    historical_v10 = next((source for source in records if "Begriffsleitfaden" in source.get("title", "") and "v1.0" in source.get("title", "")), None)
+    if not historical_v10 or historical_v10.get("reviewStatus") != "historisch" or not str(historical_v10.get("url", "")).endswith("/woek-begriffsleitfaden-fuehrend-v1-0/"):
+        raise AssertionError("historical terminology guide v1.0 was silently redirected to the current publication")
 
 
 def state_architecture_scope_guard() -> None:
@@ -354,6 +392,7 @@ def main() -> int:
     checks.append(("WOEK_USP_IS_ADDITIVE_AND_SPECIFIC", lambda: require("fuer/politik.html", ["Problemprüfung", "Zielprüfung", "Gegenfaktum", "Optionsvergleich", "Reality Check"])))
     checks.append(("LIVING_ROUTE_PRECISION_COMPLETE", living_route_precision))
     checks.append(("GLOSSARY_AND_SOURCE_CROSSLINKS_PASS", glossary_and_sources))
+    checks.append(("TERMINOLOGY_GUIDE_V16_PROVENANCE_PASS", terminology_guide_provenance))
     checks.append(("HISTORICAL_PUBLICATIONS_NOT_SILENTLY_REWRITTEN", historical_additions_only))
     checks.append(("NO_FALSE_ABSENCE_OF_ALTERNATIVES_CLAIM", lambda: require("index.html", ["andere Lösungsmöglichkeiten"])))
     checks.append(("NO_FALSE_ABSENCE_OF_EXPOST_REVIEW_CLAIM", lambda: require("index.html", ["spätere Überprüfung"])))

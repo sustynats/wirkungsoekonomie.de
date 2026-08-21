@@ -4,7 +4,7 @@
     {
       "key": "M",
       "label": "Glossar-Quellen und Primärmaterial",
-      "count": 198
+      "count": 199
     }
   ],
   "sources": [
@@ -912,7 +912,7 @@
     },
     {
       "code": "WÖK-G-333439F9E599",
-      "title": "Führender Begriffsleitfaden der Wirkungsökonomie v1.0, Stand 21. Mai 2026",
+      "title": "WÖk-Begriffsleitfaden führend v1.6",
       "url": "https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/",
       "doi": null,
       "author": "Wirkungsökonomie",
@@ -922,12 +922,12 @@
       "cluster": "M",
       "clusterLabel": "Glossar-Quellen und Primärmaterial",
       "origin": "intern",
-      "reviewStatus": "referenziert",
+      "reviewStatus": "fuehrend",
       "dataQuality": "graue-literatur",
       "locatorType": "direkt",
-      "locatorNote": "",
-      "summary": "Dokumentiert die begriffliche Verwendung innerhalb der Wirkungsökonomie. Für empirische, rechtliche oder naturwissenschaftliche Aussagen ist eine zusätzliche passende externe Quelle erforderlich.",
-      "einordnung": "Diese WÖk-Primärquelle belegt die modellinterne Begriffsverwendung. Sie ist transparent von unabhängiger empirischer Evidenz und von geltendem Recht zu unterscheiden.",
+      "locatorNote": "Aktuelle führende Sprach- und Methodenreferenz v1.6. Historische Fassungen bleiben über ihre eigenen Versionsseiten zitierfähig.",
+      "summary": "Führende WÖk-Sprach- und Methodenreferenz v1.6, einschließlich staatlicher Nachhaltigkeitsarchitektur und Zwei-Ebenen-Registerlogik.",
+      "einordnung": "Diese WÖk-Primärquelle führt die aktuelle modellinterne Begriffsverwendung. Amtliche, rechtliche und empirische Aussagen benötigen weiterhin die jeweils einschlägigen externen Primärquellen.",
       "impactFields": [],
       "sdg": null,
       "domain": "wirkungsoekonomie.de"
@@ -1393,6 +1393,28 @@
       "impactFields": [],
       "sdg": null,
       "domain": "www.go-fair.org"
+    },
+    {
+      "code": "WÖK-G-40A9D42AB436",
+      "title": "Führender Begriffsleitfaden der Wirkungsökonomie v1.0, Stand 21. Mai 2026",
+      "url": "https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend-v1-0/",
+      "doi": null,
+      "author": "Wirkungsökonomie",
+      "year": null,
+      "type": "glossarquelle",
+      "typeLabel": "WÖk-Primärquelle",
+      "cluster": "M",
+      "clusterLabel": "Glossar-Quellen und Primärmaterial",
+      "origin": "intern",
+      "reviewStatus": "historisch",
+      "dataQuality": "graue-literatur",
+      "locatorType": "direkt",
+      "locatorNote": "Historische, zitierfähige Fassung v1.0. Für neue Inhalte gilt die führende Fassung v1.6.",
+      "summary": "Dokumentiert den damaligen Begriffsstand v1.0. Der historische Nachweis wird nicht still auf die aktuelle Fassung umgebogen.",
+      "einordnung": "Diese Fassung bleibt als historische WÖk-Primärquelle erhalten. Sie ist nicht die führende Terminologiefassung; aktuell gilt v1.6.",
+      "impactFields": [],
+      "sdg": null,
+      "domain": "wirkungsoekonomie.de"
     },
     {
       "code": "WÖK-G-4118041F814F",
@@ -3287,28 +3309,6 @@
       "domain": "commission.europa.eu"
     },
     {
-      "code": "WÖK-G-AF2352EC7A3E",
-      "title": "Führender Begriffsleitfaden der Wirkungsökonomie",
-      "url": "https://wirkungsoekonomie.de/referenz/",
-      "doi": null,
-      "author": "Wirkungsökonomie",
-      "year": null,
-      "type": "glossarquelle",
-      "typeLabel": "WÖk-Primärquelle",
-      "cluster": "M",
-      "clusterLabel": "Glossar-Quellen und Primärmaterial",
-      "origin": "intern",
-      "reviewStatus": "referenziert",
-      "dataQuality": "graue-literatur",
-      "locatorType": "direkt",
-      "locatorNote": "",
-      "summary": "Dokumentiert die begriffliche Verwendung innerhalb der Wirkungsökonomie. Für empirische, rechtliche oder naturwissenschaftliche Aussagen ist eine zusätzliche passende externe Quelle erforderlich.",
-      "einordnung": "Diese WÖk-Primärquelle belegt die modellinterne Begriffsverwendung. Sie ist transparent von unabhängiger empirischer Evidenz und von geltendem Recht zu unterscheiden.",
-      "impactFields": [],
-      "sdg": null,
-      "domain": "wirkungsoekonomie.de"
-    },
-    {
       "code": "WÖK-G-B0395FF10CE2",
       "title": "United Nations Evaluation Group",
       "url": "https://www.unevaluation.org/",
@@ -3945,6 +3945,28 @@
       "impactFields": [],
       "sdg": null,
       "domain": "www.britannica.com"
+    },
+    {
+      "code": "WÖK-G-E6EDE1AC4941",
+      "title": "WOeK Begriffsleitfaden fuehrend v1.5",
+      "url": "https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend-v1-5/",
+      "doi": null,
+      "author": "Wirkungsökonomie",
+      "year": null,
+      "type": "glossarquelle",
+      "typeLabel": "WÖk-Primärquelle",
+      "cluster": "M",
+      "clusterLabel": "Glossar-Quellen und Primärmaterial",
+      "origin": "intern",
+      "reviewStatus": "historisch",
+      "dataQuality": "graue-literatur",
+      "locatorType": "direkt",
+      "locatorNote": "Historische, zitierfähige Fassung v1.5. Für neue Inhalte gilt die führende Fassung v1.6.",
+      "summary": "Dokumentiert den damaligen Begriffsstand v1.5. Der historische Nachweis wird nicht still auf die aktuelle Fassung umgebogen.",
+      "einordnung": "Diese Fassung bleibt als historische WÖk-Primärquelle erhalten. Sie ist nicht die führende Terminologiefassung; aktuell gilt v1.6.",
+      "impactFields": [],
+      "sdg": null,
+      "domain": "wirkungsoekonomie.de"
     },
     {
       "code": "WÖK-G-E8CFB8158795",

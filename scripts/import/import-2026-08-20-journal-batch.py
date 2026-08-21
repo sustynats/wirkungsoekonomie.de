@@ -409,8 +409,8 @@ def render_enap(body: ET.Element, links: dict[str, str]) -> str:
         ("BRUBEG - Bundestagsdrucksache 21/3058", "https://dserver.bundestag.de/btd/21/030/2103058.pdf"),
         ("Pflegegesetz - Bundestagsdrucksache 21/1511", "https://dserver.bundestag.de/btd/21/015/2101511.pdf"),
         ("Änderung des UWG - Bundestagsdrucksache 21/1855", "https://dserver.bundestag.de/btd/21/018/2101855.pdf"),
-        ("WÖk-Masterregister v1.4", "https://wirkungsoekonomie.de/bibliothek/eintraege/download-or-document-assets-downloads-woek-register-v1-4-woek-masterregister-v1-4-final-2026-08/"),
-        ("Führender Begriffsleitfaden der Wirkungsökonomie v1.5", "https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/"),
+        ("WÖk-Masterregister v1.5", "https://wirkungsoekonomie.de/bibliothek/woek-master-items-register/"),
+        ("WÖk-Begriffsleitfaden führend v1.6", "https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/"),
     )
     output.append("          <ul>")
     output.extend(f"            <li>{external_link(href, esc(label))}</li>" for label, href in sources)

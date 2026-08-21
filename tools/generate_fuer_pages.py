@@ -14,7 +14,7 @@ FUER = ROOT / "fuer"
 VERSION = "20260522-zielgruppen-master-v1"
 
 COMMON_SOURCES = [
-    "Führender Begriffsleitfaden der Wirkungsökonomie v1.0",
+    "WÖk-Begriffsleitfaden führend v1.6",
     "Natalie Weber: Die neue Ordnung des Wohlstands, aktueller Buchstand 2026",
     "Systemmodell der Wirkungsökonomie",
     "Nachhaltigkeit ist keine Strategie. Sie ist eine Systemarchitektur",
@@ -132,8 +132,8 @@ def source_anchor(label: str, href: str) -> str:
 
 
 SOURCE_LINKS: dict[str, str] = {
-    "Führender Begriffsleitfaden der Wirkungsökonomie v1.0": source_anchor("Führender Begriffsleitfaden der Wirkungsökonomie v1.0", "../begriffe/"),
-    "Führender Begriffsleitfaden": source_anchor("Führender Begriffsleitfaden", "../begriffe/"),
+    "WÖk-Begriffsleitfaden führend v1.6": source_anchor("WÖk-Begriffsleitfaden führend v1.6", "../bibliothek/woek-begriffsleitfaden-fuehrend/"),
+    "Führender Begriffsleitfaden": source_anchor("WÖk-Begriffsleitfaden führend v1.6", "../bibliothek/woek-begriffsleitfaden-fuehrend/"),
     "Natalie Weber: Die neue Ordnung des Wohlstands, aktueller Buchstand 2026": source_anchor("Natalie Weber: Die neue Ordnung des Wohlstands, aktueller Buchstand 2026", "../referenz/"),
     "Systemmodell der Wirkungsökonomie": source_anchor("Systemmodell der Wirkungsökonomie", "../dokumente/systemmodell-der-wirkungsoekonomie/"),
     "Nachhaltigkeit ist keine Strategie. Sie ist eine Systemarchitektur": source_anchor("Nachhaltigkeit ist keine Strategie. Sie ist eine Systemarchitektur", "../referenz/kapitel-006-nachhaltigkeit-ist-keine-strategie/"),
@@ -575,7 +575,7 @@ PAGES: dict[str, dict[str, object]] = {
         "path": ["Politisches Ziel", "Maßnahme / Gesetz / Haushalt", "betroffene Wirkungsräume", "Daten und Indikatoren", "Zielkonflikte und Nebenwirkungen", "Wirkungsbewertung", "Haushalt / Recht / Steuer / Beschaffung", "Rückkopplung", "Evaluation", "Anpassung"],
         "example": "Wohnen, Klima und soziale Stabilität werden heute häufig getrennt bearbeitet: Mietrecht hier, Sanierungsförderung dort, Baukosten an anderer Stelle. Die WÖk fragt anders: Welche Wohnmodelle erzeugen positive Netto-Wirkung auf Bezahlbarkeit, Energie, Gesundheit, Quartier, Flächenverbrauch und demokratische Stabilität?",
         "visual": {"title": "Vom Reparaturstaat zur Wirkungsarchitektur", "text": "Links: Problem entsteht -> Schaden -> Sonderregel -> Bürokratie. Rechts: Daten -> Wirkungsprüfung -> Anreiz -> Prävention -> weniger Reparatur. Ruhig, keine Parteifarben."},
-        "sources": ["Die neue Ordnung des Wohlstands, Teile VI und X: Recht, Staat, Institutionen, Wirkungshaushalt, Wirkungsrat, Politik als Wirkungsraum", "WStG", "Führender Begriffsleitfaden"],
+        "sources": ["Die neue Ordnung des Wohlstands, Teile VI und X: Recht, Staat, Institutionen, Wirkungshaushalt, Wirkungsrat, Politik als Wirkungsraum", "WStG"],
         "links": [("Wirkungshaushalt verstehen", "kommunen.html"), ("Wirkungssteuergesetz ansehen", "../ordnung/"), ("Wahlprogramm-Scanner", "../scanner.html"), ("Evidenzraum", "../evidenz/")],
     },
     "buergerinnen.html": {
