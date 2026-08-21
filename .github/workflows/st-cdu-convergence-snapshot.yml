@@ -6,14 +6,18 @@ on:
       - woek/st-cdu-source-manifest-p89-20260821
     paths:
       - tools/materialize_st_cdu_review_snapshots.py
+      - tools/normalize_st_cdu_convergence_shards.py
       - tools/build_st_cdu_global_convergence.py
+      - tools/validate_st_cdu_global_convergence.py
       - woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-global-leaf-reconciliation-plan-v1.json
       - .github/workflows/st-cdu-convergence-snapshot.yml
   pull_request:
     types: [opened, reopened, synchronize]
     paths:
       - tools/materialize_st_cdu_review_snapshots.py
+      - tools/normalize_st_cdu_convergence_shards.py
       - tools/build_st_cdu_global_convergence.py
+      - tools/validate_st_cdu_global_convergence.py
       - woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-global-leaf-reconciliation-plan-v1.json
       - .github/workflows/st-cdu-convergence-snapshot.yml
   workflow_dispatch:
@@ -42,10 +46,14 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: python tools/materialize_st_cdu_review_snapshots.py
+      - name: Normalize legacy parity shard schema mechanically
+        run: python tools/normalize_st_cdu_convergence_shards.py
       - name: Materialize missing canonical shards and global explicit-role union
         env:
           GH_TOKEN: ${{ github.token }}
         run: python tools/build_st_cdu_global_convergence.py
+      - name: Validate relation graph and exactly-one-count invariants
+        run: python tools/validate_st_cdu_global_convergence.py
       - name: Validate generated JSON
         run: |
           python - <<'PY'
