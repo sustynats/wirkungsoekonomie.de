@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import json
 import subprocess
+from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -67,6 +68,15 @@ def no_raw_public_enums() -> None:
 
 
 def historical_additions_only() -> None:
+    """Require historical pages to remain content-preserving plus an explicit addendum.
+
+    An addendum often has to be inserted immediately before ``</main>``. Git represents that
+    as one removed ``</main>`` line and the same line re-added after the new section. That is a
+    relocation, not a historical content deletion. We therefore cancel byte-equivalent (after
+    outer whitespace) removed/added lines as a multiset and fail closed on every remaining
+    removed non-empty line. This permits wrapper relocation but still rejects any historical
+    prose deletion or rewrite.
+    """
     for rel in HISTORICAL_ADDENDA:
         require(rel, ["Fachaddendum", "21.08.2026"])
         proc = subprocess.run(
@@ -75,9 +85,29 @@ def historical_additions_only() -> None:
         )
         if proc.returncode not in (0, 1):
             raise AssertionError(f"could not compare historical page {rel}: {proc.stderr}")
-        removed = [ln for ln in proc.stdout.splitlines() if ln.startswith("-") and not ln.startswith("---")]
-        if removed:
-            raise AssertionError(f"historical publication silently changed/deleted content: {rel}: {removed[:5]}")
+
+        removed = [
+            ln[1:].strip()
+            for ln in proc.stdout.splitlines()
+            if ln.startswith("-") and not ln.startswith("---") and ln[1:].strip()
+        ]
+        added = [
+            ln[1:].strip()
+            for ln in proc.stdout.splitlines()
+            if ln.startswith("+") and not ln.startswith("+++") and ln[1:].strip()
+        ]
+
+        added_counts = Counter(added)
+        unmatched_removed = []
+        for line in removed:
+            if added_counts[line] > 0:
+                added_counts[line] -= 1
+            else:
+                unmatched_removed.append(line)
+        if unmatched_removed:
+            raise AssertionError(
+                f"historical publication silently changed/deleted content: {rel}: {unmatched_removed[:5]}"
+            )
 
 
 def glossary_and_sources() -> None:
