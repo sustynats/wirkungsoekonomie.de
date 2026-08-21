@@ -8,6 +8,12 @@ on:
       - tools/materialize_st_cdu_review_snapshots.py
       - tools/build_st_cdu_global_convergence.py
       - .github/workflows/st-cdu-convergence-snapshot.yml
+  pull_request:
+    types: [opened, reopened, synchronize]
+    paths:
+      - tools/materialize_st_cdu_review_snapshots.py
+      - tools/build_st_cdu_global_convergence.py
+      - .github/workflows/st-cdu-convergence-snapshot.yml
   workflow_dispatch:
 
 permissions:
@@ -15,11 +21,12 @@ permissions:
   issues: read
 
 concurrency:
-  group: st-cdu-global-convergence-${{ github.ref }}
+  group: st-cdu-global-convergence-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
 
 jobs:
   materialize:
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
