@@ -1320,6 +1320,8 @@ Die Prüfung war websiteweit strukturell und terminologisch. Historische Blog- u
 
 Die folgende Matrix dokumentiert den damaligen v1.5-Migrationsauftrag. Sie ist kein offener v1.7-Release-Tracker. Für neue Inhalte gelten die Ergänzungen v1.6 und v1.7 sowie die aktuellen maschinenlesbaren Qualitätsgates.
 
+Die folgende Matrix dokumentiert den damaligen v1.5-Migrationsauftrag. Sie ist kein offener v1.6-Release-Tracker. Für neue Inhalte gelten die Ergänzung v1.6, die dort genannten amtlichen Quellen und die aktuellen maschinenlesbaren Qualitätsgates.
+
 
 | Priorität | Bereich | Erforderliche Anpassung |
 | --- | --- | --- |
