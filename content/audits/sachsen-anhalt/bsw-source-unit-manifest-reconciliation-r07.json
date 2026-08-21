@@ -1,0 +1,103 @@
+{
+  "manifest_id": "ST-BSW-SOURCE-UNIT-MANIFEST-RECONCILIATION-R07",
+  "manifest_status": "IN_PROGRESS_NOT_AUTHORITATIVE",
+  "scope": "Sachsen-Anhalt 2026 BSW Wahlprogramm only",
+  "source_key": "ltw-2026-st-bsw",
+  "supersedes_working_manifest": "ST-BSW-SOURCE-UNIT-MANIFEST-RECONCILIATION-R06",
+  "primary_source": {
+    "title": "BSW Sachsen-Anhalt – Wahlprogramm zur Landtagswahl 2026",
+    "decision_date": "2026-03-07",
+    "url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf",
+    "physical_pages": 90
+  },
+  "historical_register": {
+    "path": "woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-bsw-zusagen.md",
+    "git_blob": "43536bd8b59408b989681841ca334c8206b7d5dd",
+    "source_hash": "ee2f8bb5ab2f123db74c53190e207627d504ae69382c653db71945161d833e8c",
+    "rows": 311,
+    "fach_review_status": "311_OF_311_TERMINAL_WORKING_BASELINE_ONLY",
+    "authoritative_denominator": false
+  },
+  "inherited_closed_gates": {
+    "full_physical_page_coverage": "PASS_PAGE_WIDE_CLASSIFICATION",
+    "frontmatter_p0_p6": "PASS_FRONTMATTER_RECONCILED",
+    "p7_p89": "PASS_SEGMENT_COVERAGE",
+    "p87_p89_prior_gap": "CLOSED_FOR_THIS_SOURCE_SPAN",
+    "known_parent_edge_queue_unresolved": 0,
+    "a07_record_set": "PASS_42_UNIQUE"
+  },
+  "a04_a05_p37_boundary_reconciliation": {
+    "status": "PASS_DISTINCT_EFFECT_OBJECTS",
+    "source_anchor": {
+      "printed_page_37": {
+        "a04_tail": [
+          {
+            "source_lines": "P37 1020-1023",
+            "effect_object": "Gewaltambulanzen/Femizid-Monitoring/Istanbul-Konvention governance",
+            "relation": "A04_OR_CURRENT_SOURCE_OBJECTS"
+          },
+          {
+            "source_lines": "P37 1031-1034",
+            "effect_object": "Leihmutterschaft-Veranstaltungsverbot plus Bundes-Advocacy",
+            "relation": "A04_P37_57_58"
+          },
+          {
+            "source_lines": "P37 1035-1041",
+            "effect_object": "Pflege-/Gleichstellungsbeauftragten mechanisms",
+            "relation": "CURRENT_REGISTER_0118_0120_AND_RELATED_TERMINAL_ROWS"
+          },
+          {
+            "source_lines": "P37 1042-1046",
+            "effect_object": "equal-rights/minority protection framing",
+            "relation": "CONTEXT_PARENT_NOT_INDEPENDENT_EFFECT_LEAF"
+          }
+        ],
+        "a05_start": {
+          "source_lines": "P37-38 1047-1048",
+          "source_unit_id": "ltw-2026-st-bsw-psr-a05-p37-01-sensibilisierung-staatliche-institutionen",
+          "effect_object": "Fortbildungsmaßnahmen zur Sensibilisierung in staatlichen Institutionen",
+          "relation": "ACTIVE_LEAF",
+          "final_status": "EDITORIAL_V2_PLUS_APPROVED"
+        }
+      }
+    },
+    "source_semantic_finding": "A04 tail mechanisms and the A05.1 P37 start are not duplicate effect objects. The A05 training mechanism begins only in the final sentence on printed P37 and continues on P38; it follows, but does not duplicate, the preceding care/equality and surrogacy/violence mechanisms. Lines 1042-1046 are a rights-protection context parent for the training sentence, not a separate counted intervention.",
+    "duplicate_effect_object_count_across_boundary": 0,
+    "cross_batch_active_leaf_collision_count": 0,
+    "denominator_effect": "NONE_UNTIL_FINAL_UNION_MANIFEST"
+  },
+  "cross_batch_dedup": {
+    "frontmatter_body_duplicate_co2": "RESOLVED_TO_A03_0020",
+    "known_current_parent_edge_queue": "RESOLVED_ZERO",
+    "a07_38_vs_42": "RESOLVED_ENUMERATED_SET_42",
+    "a04_a05_p37_boundary": "PASS_DISTINCT_EFFECT_OBJECTS",
+    "semantic_cross_batch_dedup": "IN_PROGRESS",
+    "required_before_freeze": [
+      "enumerate every psr-a01-a06/a08-a09 and psr-front record as a concrete stable ID in one union manifest",
+      "resolve every remaining DUPLICATE_RELATION to exactly one canonical active leaf",
+      "materialize final role row for all 311 historical current IDs, including the 220 fach-terminal default rows",
+      "validate parent/child/SAME/supersedes graph is acyclic",
+      "prove 0 unresolved ABSENT/PARTIAL_PARENT/OVERMERGED/TRUNCATED/RESTORE_GAP records corpus-wide",
+      "prove every active final leaf has terminal fach status and required object-specific #241 layers"
+    ]
+  },
+  "completion_state": {
+    "ST_BSW_PRIMARY_SOURCE_PARITY_FULL_PROGRAM": "READY_FOR_CROSS_BATCH_DEDUP_AND_FINAL_MANIFEST",
+    "ST_BSW_AUTHORITATIVE_DENOMINATOR": null,
+    "BSW_FULL_PROGRAM_FACH_COMPLETE": false,
+    "source_restore_overmerge_truncation_gaps": "NOT_YET_PROVEN_ZERO_CORPUS_WIDE",
+    "do_not_arithmetically_add_311_and_batch_counts": true
+  },
+  "provenance": {
+    "github_issue": "sustynats/wirkungsoekonomie.de#234",
+    "umbrella_issue": "sustynats/wirkungsoekonomie.de#241",
+    "official_pdf_visual_check": "printed pages 36-38 inspected; printed P37/P38 boundary confirmed",
+    "rules": [
+      "historical IDs and source text immutable",
+      "no fach judgement from templates, keywords, scores or party identity",
+      "no Recommendation synthesis",
+      "no DNS keyword mapping",
+      "source-bound restore before judgement"
+    ]
+  }
+}
