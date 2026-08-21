@@ -1,9 +1,9 @@
 # #253 State sustainability architecture URL/file audit
 
-- Sitemap routes: **2056**
+- Sitemap routes: **2061**
 - Sitemap routes without directly resolved source HTML: **0**
-- Extra tracked source HTML not in sitemap: **14198**
-- Routes with non-default #253 action: **1432**
+- Extra tracked source HTML not in sitemap: **14199**
+- Routes with non-default #253 action: **1437**
 - Routes with Wirkungsblindheit/novelty/absence claim signals: **75**
 
 Contract fields on every matrix item: `source_path`, `public_url`, `historical_publication`, `relevance`, `classification`, `required_action`, `source_refs`, `status`.
@@ -115,7 +115,7 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/blog/nachhaltigkeit-ist-keine-parteifarbe.html | `blog/nachhaltigkeit-ist-keine-parteifarbe.html` | NO_CHANGE_REQUIRED, CURRENT_REFERENCE | folgenabschaetzung, nachhaltigkeitspruefung, enap, dns, alternativen, evaluation, novelty_or_absence |
 | https://wirkungsoekonomie.de/blog/enap-woek-benchmark-fuenf-bundesvorhaben.html | `blog/enap-woek-benchmark-fuenf-bundesvorhaben.html` | BENCHMARK_REFERENCE, ADD_BENCHMARK_COMPARISON | folgenabschaetzung, nachhaltigkeitspruefung, enap, dns, alternativen, evaluation, novelty_or_absence |
 | https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/ | `bibliothek/woek-begriffsleitfaden-fuehrend/index.html` | REVIEW_REQUIRED | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation, novelty_or_absence |
-| https://wirkungsoekonomie.de/bibliothek/woek-master-items-register/ | `bibliothek/woek-master-items-register/index.html` | REVIEW_REQUIRED | nachhaltigkeitspruefung, enap, egfa, dns |
+| https://wirkungsoekonomie.de/bibliothek/woek-master-items-register/ | `bibliothek/woek-master-items-register/index.html` | REVIEW_REQUIRED | — |
 | https://wirkungsoekonomie.de/begriffe/deutsche-nachhaltigkeitsstrategie/ | `begriffe/deutsche-nachhaltigkeitsstrategie/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, dns |
 | https://wirkungsoekonomie.de/begriffe/gemeinsame-geschaeftsordnung-der-bundesministerien/ | `begriffe/gemeinsame-geschaeftsordnung-der-bundesministerien/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | https://wirkungsoekonomie.de/begriffe/gesetzesfolgenabschaetzung/ | `begriffe/gesetzesfolgenabschaetzung/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
@@ -133,6 +133,10 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/begriffe/nwi/ | `begriffe/nwi/index.html` | ADD_GLOSSARY_CROSSLINKS | — |
 | https://wirkungsoekonomie.de/begriffe/nationaler-wohlfahrtsindex/ | `begriffe/nationaler-wohlfahrtsindex/index.html` | ADD_GLOSSARY_CROSSLINKS | — |
 | https://wirkungsoekonomie.de/begriffe/state-assessment-benchmark/ | `begriffe/state-assessment-benchmark/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, evaluation |
+| https://wirkungsoekonomie.de/begriffe/7-bundeshaushaltsordnung/ | `begriffe/7-bundeshaushaltsordnung/index.html` | ADD_GLOSSARY_CROSSLINKS | nachhaltigkeitspruefung, enap, dns |
+| https://wirkungsoekonomie.de/begriffe/vv-bho-wirtschaftlichkeitsuntersuchung-und-erfolgskontrolle/ | `begriffe/vv-bho-wirtschaftlichkeitsuntersuchung-und-erfolgskontrolle/index.html` | ADD_GLOSSARY_CROSSLINKS | nachhaltigkeitspruefung, enap, evaluation |
+| https://wirkungsoekonomie.de/begriffe/objektspezifische-staatliche-pruefarchitektur/ | `begriffe/objektspezifische-staatliche-pruefarchitektur/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, evaluation |
+| https://wirkungsoekonomie.de/begriffe/wirkungsrelevanz-statt-rechtsform/ | `begriffe/wirkungsrelevanz-statt-rechtsform/index.html` | ADD_GLOSSARY_CROSSLINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/ | `quellenarchiv/index.html` | ADD_SOURCE_LINKS | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-e-0001/ | `quellenarchiv/wok-e-0001/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-e-0002/ | `quellenarchiv/wok-e-0002/index.html` | ADD_SOURCE_LINKS | — |
@@ -223,6 +227,7 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-58f617ae8ee4/ | `quellenarchiv/wok-g-58f617ae8ee4/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-59a5f127fca8/ | `quellenarchiv/wok-g-59a5f127fca8/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-5a91bfdcebb4/ | `quellenarchiv/wok-g-5a91bfdcebb4/index.html` | ADD_SOURCE_LINKS | — |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-g-5ae09458064a/ | `quellenarchiv/wok-g-5ae09458064a/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-5cdb1d463d15/ | `quellenarchiv/wok-g-5cdb1d463d15/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-5dad38014a73/ | `quellenarchiv/wok-g-5dad38014a73/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-5f3db7ef4c8a/ | `quellenarchiv/wok-g-5f3db7ef4c8a/index.html` | ADD_SOURCE_LINKS | — |
@@ -1441,7 +1446,7 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/quellenarchiv/wok-q-9045/ | `quellenarchiv/wok-q-9045/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-q-9046/ | `quellenarchiv/wok-q-9046/index.html` | ADD_SOURCE_LINKS | enap, dns, alternativen |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-q-9047/ | `quellenarchiv/wok-q-9047/index.html` | ADD_SOURCE_LINKS | enap, dns |
-| https://wirkungsoekonomie.de/quellenarchiv/wok-q-9048/ | `quellenarchiv/wok-q-9048/index.html` | ADD_SOURCE_LINKS | dns |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-q-9048/ | `quellenarchiv/wok-q-9048/index.html` | ADD_SOURCE_LINKS | enap, dns |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-q-9049/ | `quellenarchiv/wok-q-9049/index.html` | ADD_SOURCE_LINKS | dns |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-q-9050/ | `quellenarchiv/wok-q-9050/index.html` | ADD_SOURCE_LINKS | dns, evaluation |
 
@@ -1527,8 +1532,8 @@ Signals are review candidates, not automatic errors.
 
 ## Recursive non-HTML publication/support surfaces
 
-- Tracked support text files inventoried: **757**
-- Combined matrix items (routes + extra HTML + support): **17011**
+- Tracked support text files inventoried: **758**
+- Combined matrix items (routes + extra HTML + support): **17018**
 - Every matrix item exposes the #253 contract fields: source_path, public_url, historical_publication, relevance, classification, required_action, source_refs and status.
 - Includes llms.txt, sitemap/search metadata, structured-data registries, glossary/source archive, library/journal/reference inputs and generators/workflows.
 
@@ -1536,7 +1541,7 @@ Signals are review candidates, not automatic errors.
 |---|---|---|---|
 | `.github/workflows/deploy.yml` | github_pages_deployment_workflow | NO_CHANGE_REQUIRED | — |
 | `assets/data/blog-index.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, dns, evaluation |
-| `assets/data/document-library.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | folgenabschaetzung, evaluation |
+| `assets/data/document-library.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | folgenabschaetzung, enap, dns, evaluation |
 | `assets/data/document-registry 2.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | wirkungsblind, evaluation |
 | `assets/data/glossar-bestand-definitionsmaster.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | alternativen, evaluation |
 | `assets/data/glossary-lookup.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation, novelty_or_absence |
@@ -1545,7 +1550,7 @@ Signals are review candidates, not automatic errors.
 | `assets/data/glossary-relations.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | wirkungsblind, alternativen, evaluation |
 | `assets/data/journal-pdf-manifest.json` | journal_source_or_manifest | NO_CHANGE_REQUIRED | enap |
 | `assets/data/library-source-details.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | evaluation |
-| `assets/data/library-version-registry.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | evaluation |
+| `assets/data/library-version-registry.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | enap, evaluation |
 | `assets/data/podcast-index.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | wirkungsblind |
 | `assets/data/public-pdf-downloads.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | evaluation |
 | `assets/data/public-release-assets.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | evaluation |
@@ -1565,10 +1570,11 @@ Signals are review candidates, not automatic errors.
 | `assets/search/search-curated-entrypoints.json` | search_index_or_generator | NO_CHANGE_REQUIRED | wirkungsblind |
 | `assets/search/search-dictionary.json` | search_index_or_generator | NO_CHANGE_REQUIRED | wirkungsblind, alternativen |
 | `assets/search/search-index.json` | search_index_or_generator | NO_CHANGE_REQUIRED | — |
+| `content/assistant/approved-corpus.json` | support_text | ADD_SOURCE_LINKS | enap |
 | `content/audits/nwi-acronym-disambiguation.json` | support_text | ADD_SOURCE_LINKS | folgenabschaetzung |
 | `content/audits/state-sustainability-architecture-audit-contract.md` | support_text | ADD_SOURCE_LINKS | enap, egfa, dns, alternativen, evaluation |
 | `content/dashboards/dashboardModels.json` | support_text | NO_CHANGE_REQUIRED | evaluation |
-| `content/documents/documents.json` | support_text | ADD_SOURCE_LINKS | folgenabschaetzung, evaluation |
+| `content/documents/documents.json` | support_text | ADD_SOURCE_LINKS | folgenabschaetzung, enap, dns, evaluation |
 | `content/glossar/glossary-registry.ts` | support_text | NO_CHANGE_REQUIRED | alternativen |
 | `content/glossary/imports/begriffsleitfaden-v1.5.json` | glossary_source_or_generator | ADD_GLOSSARY_CROSSLINKS, ADD_SOURCE_LINKS | evaluation |
 | `content/glossary/imports/curated-crosslinks.json` | glossary_source_or_generator | ADD_GLOSSARY_CROSSLINKS, ADD_SOURCE_LINKS | wirkungsblind, alternativen |
@@ -1745,7 +1751,7 @@ Signals are review candidates, not automatic errors.
 | `public/data/woems-canvas.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | folgenabschaetzung, alternativen, evaluation |
 | `public/data/woems-methoden.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | folgenabschaetzung, evaluation |
 | `scripts/api/build-core-api-manifest.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
-| `scripts/audit-documents-for-publication.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, evaluation |
+| `scripts/audit-documents-for-publication.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | folgenabschaetzung, enap, dns, evaluation |
 | `scripts/audit-tool-dashboards.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
 | `scripts/content/apply-maiwald-principle.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | wirkungsblind |
 | `scripts/feeds/build-rss-feeds.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
@@ -1769,7 +1775,6 @@ Signals are review candidates, not automatic errors.
 | `scripts/journal/publish-lohnkosten-besser-werden.mjs` | journal_source_or_manifest | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/journal/publish-wirkstoff-narrative.mjs` | journal_source_or_manifest | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/lib/method-version-indexability.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | wirkungsblind, enap, dns |
-| `scripts/library/build-library-versioning-stage9.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | nachhaltigkeitspruefung |
 | `scripts/methods/import-woems-source.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | folgenabschaetzung |
 | `scripts/natalie/build-natalie-pages.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
 | `scripts/podcast/build-podcast-pages.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | wirkungsblind |
@@ -1798,6 +1803,7 @@ Signals are review candidates, not automatic errors.
 | `scripts/portal/build-state-law-democracy.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | `scripts/portal/build-work-income-automation.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
 | `scripts/publications/build-begriffsleitfaden-v1.6.py` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | nachhaltigkeitspruefung, dns, evaluation |
+| `scripts/publications/build-begriffsleitfaden-v1.7.py` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | nachhaltigkeitspruefung, enap, dns, evaluation |
 | `scripts/quality/apply-stage13-usability-a11y-seo.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | wirkungsblind |
 | `scripts/quality/check-state-sustainability-architecture.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, evaluation |
 | `scripts/quellenarchiv/check-quellenarchiv-quality.mjs` | source_archive_source_or_generator | NO_CHANGE_REQUIRED | novelty_or_absence |
@@ -1849,7 +1855,7 @@ Signals are review candidates, not automatic errors.
 
 ## Review/action closure
 
-- Combined reviewed items: **17012**
+- Combined reviewed items: **17019**
 - Open semantic/action reviews after deterministic projection: **0**
 - Broad novelty/Wirkungsblindheit hits were dispositioned by a second-pass contextual state-absence review; isolated words are not treated as absence claims.
 - `AGENTS.md` is explicitly inventoried as a corrected current guardrail.

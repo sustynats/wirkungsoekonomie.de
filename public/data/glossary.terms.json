@@ -2,6 +2,77 @@
   "generatedAt": "2026-08-21T00:00:00.000Z",
   "terms": [
     {
+      "termId": "bundeshaushaltsordnung-paragraf-7",
+      "canonicalLabel": "§ 7 Bundeshaushaltsordnung (BHO)",
+      "aliases": [
+        "§ 7 Bundeshaushaltsordnung (BHO)",
+        "BHO § 7",
+        "§ 7 BHO",
+        "Wirtschaftlichkeitsgebot der BHO"
+      ],
+      "shortDefinition": "§ 7 BHO verpflichtet den Bund zu Wirtschaftlichkeit und Sparsamkeit; für alle finanzwirksamen Maßnahmen sind angemessene Wirtschaftlichkeitsuntersuchungen durchzuführen.",
+      "hoverDefinition": "§ 7 Absatz 2 BHO verlangt für alle finanzwirksamen Maßnahmen angemessene Wirtschaftlichkeitsuntersuchungen. Das ist ein objektspezifischer staatlicher Prüfrahmen außerhalb einer pauschalen eNAP-Logik.",
+      "longDefinition": "§ 7 der Bundeshaushaltsordnung verankert die Grundsätze der Wirtschaftlichkeit und Sparsamkeit. Absatz 2 verlangt für alle finanzwirksamen Maßnahmen angemessene Wirtschaftlichkeitsuntersuchungen und die Berücksichtigung der Risikoverteilung. Die konkreten Anforderungen an Planung und spätere Erfolgskontrolle werden durch die Allgemeinen Verwaltungsvorschriften zur BHO ergänzt.\n\nDie BHO ist weder GGO noch DNS oder eNAP. Sie belegt zugleich, dass nichtlegislative finanzwirksame Maßnahmen nicht pauschal als staatliche Prüfleere beschrieben werden dürfen.",
+      "woekRelation": "WÖk stellt vor der eigenen Analyse fest, ob § 7 BHO/VV-BHO auf den Gegenstand anwendbar ist, dokumentiert den staatlichen Befund getrennt und ergänzt ihn um die gemeinsame materialitätsgetriebene Problem-, Ziel-, Wirkungs-, Options- und Lernarchitektur.",
+      "usageNote": "Nur auf finanzwirksame Maßnahmen im Anwendungsbereich beziehen. Aus § 7 BHO weder eine allgemeine eNAP-Pflicht noch einen vollständigen WÖk-Wirkungsnachweis ableiten.",
+      "status": "anschlussbegriff",
+      "type": "Rechtsbegriff",
+      "category": "Rechtsbegriff",
+      "version": "1.0",
+      "reviewStatus": "fachlich konsolidiert",
+      "source": "Bundeshaushaltsordnung § 7",
+      "sourceSection": "Wirtschaftlichkeit und Sparsamkeit",
+      "sourceProvenance": "Amtliche Rechtsquelle; aktuelle Fassung über Gesetze im Internet.",
+      "officialSources": [
+        "Bundeshaushaltsordnung – § 7 Wirtschaftlichkeit und Sparsamkeit|/quellenarchiv/wok-q-9048/",
+        "Allgemeine Verwaltungsvorschriften zur BHO – VV zu § 7|/quellenarchiv/wok-q-9049/"
+      ],
+      "relatedTerms": [
+        "vv-bho-wirtschaftlichkeitsuntersuchung-erfolgskontrolle",
+        "objektspezifische-staatliche-pruefarchitektur",
+        "wirkungsrelevanz-statt-rechtsform",
+        "staatliche-nachhaltigkeitsarchitektur"
+      ],
+      "doNotConfuseWith": [
+        "GGO/GFA: Folgenprüfung für Bundesregelungsvorhaben.",
+        "eNAP: digitales Werkzeug der Nachhaltigkeitsprüfung, keine universelle Prüfpflicht.",
+        "WÖk: unabhängige Ergänzungsarchitektur, keine haushaltsrechtliche Prüfung."
+      ],
+      "classicGlossary": true,
+      "autoLinkAllowed": true,
+      "pageUrl": "/begriffe/7-bundeshaushaltsordnung/",
+      "id": "bundeshaushaltsordnung-paragraf-7",
+      "label": "§ 7 Bundeshaushaltsordnung (BHO)",
+      "slug": "7-bundeshaushaltsordnung",
+      "synonyms": [
+        "§ 7 Bundeshaushaltsordnung (BHO)",
+        "BHO § 7",
+        "§ 7 BHO",
+        "Wirtschaftlichkeitsgebot der BHO"
+      ],
+      "definition": "§ 7 der Bundeshaushaltsordnung verankert die Grundsätze der Wirtschaftlichkeit und Sparsamkeit. Absatz 2 verlangt für alle finanzwirksamen Maßnahmen angemessene Wirtschaftlichkeitsuntersuchungen und die Berücksichtigung der Risikoverteilung. Die konkreten Anforderungen an Planung und spätere Erfolgskontrolle werden durch die Allgemeinen Verwaltungsvorschriften zur BHO ergänzt.\n\nDie BHO ist weder GGO noch DNS oder eNAP. Sie belegt zugleich, dass nichtlegislative finanzwirksame Maßnahmen nicht pauschal als staatliche Prüfleere beschrieben werden dürfen.",
+      "definitionDetailStatus": "vertieft",
+      "definitionDetailBasis": "explizite-langdefinition",
+      "statusNote": "",
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "glossaryOrderKey": "§ 7 Bundeshaushaltsordnung (BHO)",
+      "priority": 2214,
+      "curatedSources": [],
+      "sourceLinks": [],
+      "relatedDocuments": [],
+      "deprecatedUsage": [],
+      "categories": [
+        "rechtsbegriff"
+      ],
+      "related_terms": [
+        "vv-bho-wirtschaftlichkeitsuntersuchung-erfolgskontrolle",
+        "objektspezifische-staatliche-pruefarchitektur",
+        "wirkungsrelevanz-statt-rechtsform",
+        "staatliche-nachhaltigkeitsarchitektur"
+      ]
+    },
+    {
       "id": "fuenftes-p-planet",
       "termId": "fuenftes-p-planet",
       "label": "5. P = Planet",
@@ -5845,7 +5916,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Allmende",
-      "priority": 2222,
+      "priority": 2226,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -5919,7 +5990,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Allmendedilemma",
-      "priority": 2223,
+      "priority": 2227,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -11372,7 +11443,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Anticommons",
-      "priority": 2234,
+      "priority": 2238,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -15128,7 +15199,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Assurance Game",
-      "priority": 2239,
+      "priority": 2243,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -27009,7 +27080,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Bedingte Kooperation",
-      "priority": 2250,
+      "priority": 2254,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -29453,7 +29524,7 @@
       "glossaryOrderKey": "Benchmarks",
       "priority": 1948,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -30855,7 +30926,7 @@
       "glossaryOrderKey": "Bestandsimmobilie",
       "priority": 1949,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -32087,7 +32158,7 @@
       "glossaryOrderKey": "Bilanzgrenze",
       "priority": 1950,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -32567,7 +32638,7 @@
       "glossaryOrderKey": "Biodiversität",
       "priority": 1951,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -34026,7 +34097,7 @@
       "glossaryOrderKey": "BIP",
       "priority": 1952,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -35729,7 +35800,7 @@
       "glossaryOrderKey": "BNE",
       "priority": 1953,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -36271,7 +36342,7 @@
       "glossaryOrderKey": "Brutblanket",
       "priority": 1954,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -36337,7 +36408,7 @@
       "glossaryOrderKey": "Bruttokreditaufnahme",
       "priority": 1955,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -40462,7 +40533,7 @@
       "glossaryOrderKey": "CapEx-Plan",
       "priority": 1956,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -40533,7 +40604,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Capture",
-      "priority": 2240,
+      "priority": 2244,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -41595,7 +41666,7 @@
       "glossaryOrderKey": "Care Economy / Feministische Ökonomie",
       "priority": 1957,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -44468,7 +44539,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Chicken Game",
-      "priority": 2248,
+      "priority": 2252,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -44538,7 +44609,7 @@
       "glossaryOrderKey": "Circular Economy / Regenerative Economy",
       "priority": 1958,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -49954,7 +50025,7 @@
       "glossaryOrderKey": "CRREM / Carbon Risk Real Estate Monitor",
       "priority": 1959,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -50749,7 +50820,7 @@
       "glossaryOrderKey": "Cyberresilienz",
       "priority": 1960,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -50815,7 +50886,7 @@
       "glossaryOrderKey": "D&O",
       "priority": 1961,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -53673,7 +53744,7 @@
       "glossaryOrderKey": "Datenstandard / Standardisierung von Risikomanagement",
       "priority": 1962,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -54101,7 +54172,7 @@
       "glossaryOrderKey": "DEAL",
       "priority": 1963,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -54874,7 +54945,7 @@
       "glossaryOrderKey": "Degrowth / Postwachstum",
       "priority": 1964,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -55062,7 +55133,7 @@
       "glossaryOrderKey": "Deindustrialisierungsnarrativ",
       "priority": 1965,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -64802,7 +64873,7 @@
       "glossaryOrderKey": "Digital-, KI- und Plattformstandards",
       "priority": 1966,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -64928,7 +64999,7 @@
       "relatedAcademyModules": [],
       "relatedDataRegisters": [],
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "sourceLinks": [],
       "source_links": [],
@@ -65522,7 +65593,7 @@
       "relatedAcademyModules": [],
       "relatedDataRegisters": [],
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "sourceLinks": [],
       "source_links": [],
@@ -70232,7 +70303,7 @@
       "glossaryOrderKey": "Donut-Ökonomie / Doughnut Economics Action Lab",
       "priority": 1967,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -76135,7 +76206,7 @@
       "glossaryOrderKey": "Eigentumsangst",
       "priority": 1969,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -78182,7 +78253,7 @@
       "glossaryOrderKey": "EIOPA",
       "priority": 1970,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -78619,7 +78690,7 @@
       "glossaryOrderKey": "Elektrolyse",
       "priority": 1971,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -81663,7 +81734,7 @@
       "glossaryOrderKey": "Energetische Sanierung",
       "priority": 1972,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -83648,7 +83719,7 @@
       "metaDescription": "Eine Energiegenossenschaft ist eine genossenschaftliche Organisationsform, in der Mitglieder Energieprojekte gemeinschaftlich finanzieren, betreiben, nutzen oder steuern.",
       "glossaryOrderKey": "Energiegenossenschaft",
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "definitionDetailStatus": "vertieft",
       "definitionDetailBasis": "explizite-langdefinition",
@@ -85919,7 +85990,7 @@
       "metaDescription": "Energy Sharing ist die gemeinschaftliche Nutzung von Strom aus erneuerbaren Energien durch mehrere Beteiligte, in Deutschland seit § 42c EnWG auch über das öffentliche Netz.",
       "glossaryOrderKey": "Energy Sharing",
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "definitionDetailStatus": "vertieft",
       "definitionDetailBasis": "explizite-langdefinition",
@@ -87352,7 +87423,7 @@
       "glossaryOrderKey": "Entmenschlichender Kampfbegriff",
       "priority": 1973,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -88392,7 +88463,7 @@
       "glossaryOrderKey": "Entwicklungskredit",
       "priority": 1974,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -88690,7 +88761,7 @@
       "glossaryOrderKey": "EPBD / Energy Performance of Buildings Directive",
       "priority": 1975,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -90095,7 +90166,7 @@
       "glossaryOrderKey": "ERM",
       "priority": 1976,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -91409,7 +91480,7 @@
       "glossaryOrderKey": "Erwünschte Wirkung",
       "priority": 1977,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -91819,7 +91890,7 @@
       "glossaryOrderKey": "ESG-Beratung / Nachhaltigkeitsberatung",
       "priority": 1978,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -91885,7 +91956,7 @@
       "glossaryOrderKey": "ESG-Rating",
       "priority": 1979,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -91951,7 +92022,7 @@
       "glossaryOrderKey": "ESMA",
       "priority": 1980,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -92377,7 +92448,7 @@
       "glossaryOrderKey": "ETS",
       "priority": 1981,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -92443,7 +92514,7 @@
       "glossaryOrderKey": "EU",
       "priority": 1982,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -93072,7 +93143,7 @@
       "glossaryOrderKey": "EU-Taxonomie bei Immobilien",
       "priority": 1983,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -96176,7 +96247,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Externalisierungslücke",
-      "priority": 2226,
+      "priority": 2230,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -97835,7 +97906,7 @@
       "glossaryOrderKey": "Fach Zukunft",
       "priority": 1984,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -105751,7 +105822,7 @@
       "glossaryOrderKey": "Fledermausabschaltung",
       "priority": 1985,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -106531,7 +106602,7 @@
       "glossaryOrderKey": "Folgekosten",
       "priority": 1988,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -107223,7 +107294,7 @@
       "glossaryOrderKey": "Fördercontrolling",
       "priority": 1986,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -107289,7 +107360,7 @@
       "glossaryOrderKey": "Förderlogik",
       "priority": 1987,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -107355,7 +107426,7 @@
       "glossaryOrderKey": "Fossile Alternative",
       "priority": 1989,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -110486,7 +110557,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Freiwilligendilemma",
-      "priority": 2247,
+      "priority": 2251,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -112785,7 +112856,7 @@
       "glossaryOrderKey": "Fusion",
       "priority": 1990,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -112851,7 +112922,7 @@
       "glossaryOrderKey": "Garantie",
       "priority": 1991,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -113208,7 +113279,7 @@
       "glossaryOrderKey": "Gebäude- und Immobilienstandards",
       "priority": 1993,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -113371,7 +113442,7 @@
       "glossaryOrderKey": "Gebäudeenergieperformance",
       "priority": 1992,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -114473,7 +114544,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Gefangenendilemma",
-      "priority": 2236,
+      "priority": 2240,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -115970,7 +116041,7 @@
       "glossaryOrderKey": "Gemeinwohlökonomie / Gemeinwohl-Bilanz",
       "priority": 1994,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -121914,7 +121985,7 @@
       "relatedAcademyModules": [],
       "relatedDataRegisters": [],
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "sourceLinks": [],
       "source_links": [],
@@ -129179,7 +129250,7 @@
       "glossaryOrderKey": "Globale öffentliche Güter",
       "priority": 1995,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -130700,7 +130771,7 @@
       "glossaryOrderKey": "Globale Wirkungsordnung",
       "priority": 1996,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -136588,7 +136659,7 @@
       "glossaryOrderKey": "GSBP",
       "priority": 1997,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -140987,7 +141058,7 @@
       "glossaryOrderKey": "Heizhammer",
       "priority": 1998,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -141053,7 +141124,7 @@
       "glossaryOrderKey": "Heizkostenrisiko",
       "priority": 1999,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -147337,7 +147408,7 @@
       "glossaryOrderKey": "Identitätsschutz-Kognition",
       "priority": 2000,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -147522,7 +147593,7 @@
       "glossaryOrderKey": "IEA",
       "priority": 2001,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -148580,7 +148651,7 @@
       "glossaryOrderKey": "Immobilien",
       "priority": 2002,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -149010,7 +149081,7 @@
       "glossaryOrderKey": "Impact Investing",
       "priority": 2004,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -149567,7 +149638,7 @@
       "glossaryOrderKey": "Impact-Controlling",
       "priority": 2124,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -150812,7 +150883,7 @@
       "glossaryOrderKey": "Industriestrom",
       "priority": 2005,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -152578,7 +152649,7 @@
       "glossaryOrderKey": "Infraschall",
       "priority": 2006,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -153943,7 +154014,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Institutionelle Vertrauenswürdigkeit",
-      "priority": 2241,
+      "priority": 2245,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -155605,7 +155676,7 @@
       "glossaryOrderKey": "Integration als Infrastruktur",
       "priority": 2007,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -157013,7 +157084,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Intergenerationelles Dilemma",
-      "priority": 2249,
+      "priority": 2253,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -157935,7 +158006,7 @@
       "glossaryOrderKey": "Internationale Zusammenarbeit",
       "priority": 2008,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -159103,7 +159174,7 @@
       "definitionDetailBasis": "explizite-langdefinition",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2479,
+      "priority": 2483,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -159524,7 +159595,7 @@
       "glossaryOrderKey": "ISO / DIN / EN",
       "priority": 2009,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -163977,7 +164048,7 @@
       "glossaryOrderKey": "Kapitalzugang",
       "priority": 2010,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -164702,7 +164773,7 @@
       "glossaryOrderKey": "Kausalität und Zurechnung",
       "priority": 2011,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -165308,7 +165379,7 @@
       "glossaryOrderKey": "Key Impact Indicator / KII",
       "priority": 2125,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -167057,7 +167128,7 @@
       "glossaryOrderKey": "Kinderarbeit / Zwangsarbeit",
       "priority": 2012,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -168368,7 +168439,7 @@
       "glossaryOrderKey": "Klima- und Emissionsstandards",
       "priority": 2013,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -171696,7 +171767,7 @@
       "glossaryOrderKey": "Kommunale Integrationskapazität",
       "priority": 2014,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -171762,7 +171833,7 @@
       "glossaryOrderKey": "Kommunale Wärmeplanung",
       "priority": 2015,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -174553,7 +174624,7 @@
       "glossaryOrderKey": "Konsumbilanz",
       "priority": 2016,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -175379,7 +175450,7 @@
       "glossaryOrderKey": "Kontraindikation",
       "priority": 2017,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -175516,7 +175587,7 @@
       "glossaryOrderKey": "Kontrollbedürfnis",
       "priority": 2018,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -175875,7 +175946,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Kooperationsfähigkeit",
-      "priority": 2244,
+      "priority": 2248,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -176273,7 +176344,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Kooperative Wehrhaftigkeit",
-      "priority": 2231,
+      "priority": 2235,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -176349,7 +176420,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Koordinationsdilemma",
-      "priority": 2246,
+      "priority": 2250,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -176935,7 +177006,7 @@
       "glossaryOrderKey": "KPI",
       "priority": 2019,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -177296,7 +177367,7 @@
       "glossaryOrderKey": "Kraftwerks-Nettoleistung",
       "priority": 2020,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -181481,7 +181552,7 @@
       "relatedAcademyModules": [],
       "relatedDataRegisters": [],
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "sourceLinks": [],
       "source_links": [],
@@ -182265,7 +182336,7 @@
       "glossaryOrderKey": "Label / Siegel",
       "priority": 2021,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -182331,7 +182402,7 @@
       "glossaryOrderKey": "Labelwashing",
       "priority": 2022,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -182397,7 +182468,7 @@
       "glossaryOrderKey": "Lächerlichkeitsframe",
       "priority": 2025,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -182463,7 +182534,7 @@
       "glossaryOrderKey": "Ladeangst",
       "priority": 2023,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -182885,7 +182956,7 @@
       "glossaryOrderKey": "Ladefenster",
       "priority": 2024,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -190296,7 +190367,7 @@
         "wirkungsoekonomischer-wirkungsgrad"
       ],
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -194702,7 +194773,7 @@
       "glossaryOrderKey": "Lieferkettenrisiko",
       "priority": 2027,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -197529,7 +197600,7 @@
       "glossaryOrderKey": "Living Wage / existenzsichernder Lohn",
       "priority": 2028,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -198612,7 +198683,7 @@
       "glossaryOrderKey": "Lock-in-Effekt",
       "priority": 2029,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -198678,7 +198749,7 @@
       "glossaryOrderKey": "Lohnabstand",
       "priority": 2030,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -198861,7 +198932,7 @@
       "metaDescription": "Lokale Energie als Wirkungsinfrastruktur beschreibt erneuerbare, dezentrale und gemeinschaftlich organisierte Energieversorgung als Teil gesellschaftlicher Grundversorgung.",
       "glossaryOrderKey": "Lokale Energie als Wirkungsinfrastruktur",
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "definitionDetailStatus": "vertieft",
       "definitionDetailBasis": "explizite-langdefinition",
@@ -201500,7 +201571,7 @@
       "glossaryOrderKey": "Managementsystemstandards",
       "priority": 2031,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -204365,7 +204436,7 @@
       "dataStandardsGroup": "",
       "priority": 1667,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -206624,7 +206695,7 @@
       "glossaryOrderKey": "Megawattladen",
       "priority": 2032,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -207829,7 +207900,7 @@
       "glossaryOrderKey": "Menschenrechte in der Lieferkette",
       "priority": 2033,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -213157,7 +213228,7 @@
       "glossaryOrderKey": "Misalignment Year",
       "priority": 2034,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -216305,7 +216376,7 @@
       "glossaryOrderKey": "Molekül-Hierarchie",
       "priority": 2035,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -218620,7 +218691,7 @@
       "glossaryOrderKey": "MSCI ESG Ratings",
       "priority": 2036,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -219209,7 +219280,7 @@
       "metaDescription": "Nachbarschaftsstrom ist ein alltagsnaher Begriff für lokal oder regional erzeugten erneuerbaren Strom, der von einem benachbarten Erzeuger oder einer lokalen Gemeinschaft bezogen wird.",
       "glossaryOrderKey": "Nachbarschaftsstrom / Strom vom Nachbarn",
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "definitionDetailStatus": "vertieft",
       "definitionDetailBasis": "explizite-langdefinition",
@@ -221094,7 +221165,7 @@
       "statusNote": "",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2215,
+      "priority": 2219,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -221640,7 +221711,7 @@
       "glossaryOrderKey": "Natur-, Landwirtschafts- und Biodiversitätsstandards",
       "priority": 2037,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -224390,7 +224461,7 @@
       "glossaryOrderKey": "Neoklassische Förderlogik",
       "priority": 2039,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -225477,7 +225548,7 @@
       "glossaryOrderKey": "Nettokreditaufnahme",
       "priority": 2040,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -234343,7 +234414,7 @@
       "glossaryOrderKey": "Nie-eingezahlt-Narrativ",
       "priority": 2041,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -235981,7 +236052,7 @@
       "glossaryOrderKey": "No-Regret-Anwendung",
       "priority": 2042,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -237439,7 +237510,7 @@
       "glossaryOrderKey": "Normativer Maßstab",
       "priority": 2043,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -238250,7 +238321,7 @@
       "glossaryOrderKey": "Nullsummenfehler",
       "priority": 2044,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -239605,6 +239676,78 @@
       "sourceProvenance": "Die Quellenverweise führen auf Detailseiten des Quellenarchivs; WÖk-Primärquellen dokumentieren Modellbegriffe und ersetzen keine externe Evidenz für empirische oder rechtliche Aussagen."
     },
     {
+      "termId": "objektspezifische-staatliche-pruefarchitektur",
+      "canonicalLabel": "Objektspezifische staatliche Prüfarchitektur",
+      "aliases": [
+        "Objektspezifische staatliche Prüfarchitektur",
+        "objektspezifischer staatlicher Prüfrahmen",
+        "staatliche Prüfrahmen nach Objekttyp",
+        "anwendbarer staatlicher Prüfrahmen"
+      ],
+      "shortDefinition": "Staatliche Folgen-, Nachhaltigkeits-, Wirtschaftlichkeits- und Berücksichtigungsprüfungen folgen unterschiedlichen Rechts- und Verfahrensrahmen je nach Entscheidungsobjekt.",
+      "hoverDefinition": "GGO/GFA/eNAP, BHO/VV-BHO sowie Fachgesetze gelten nicht pauschal für dasselbe. Vor jeder WÖk-Analyse wird der tatsächlich anwendbare staatliche Prüfrahmen bestimmt.",
+      "longDefinition": "Deutschland verfügt nicht über nur ein einziges Prüfverfahren für jedes staatliche Handeln. Für Bundesregelungsvorhaben sind unter anderem GGO, GFA, Nachhaltigkeitsprüfung und eNAP/eGFA relevant. Für finanzwirksame Maßnahmen gelten § 7 BHO und die VV-BHO. Je nach Gegenstand können Fachgesetze wie § 13 KSG oder § 8 KAnG, Vergabe-, Beteiligungs-, Förder- oder weitere Vorschriften hinzutreten.\n\nObjektspezifisch bedeutet deshalb: Zuerst werden Handlungsform, Zuständigkeit, Rechtsraum und materieller Gegenstand bestimmt; erst dann wird der wirklich anwendbare staatliche Prüf- und Kontrollrahmen belegt. Die Existenz einer Regel darf nicht mit ihrer Anwendung im Einzelfall verwechselt werden.",
+      "woekRelation": "WÖk führt diese heterogenen staatlichen Befunde als getrennte Referenzschicht und verwendet darüber hinaus eine gemeinsame materialitätsgetriebene Kette für Problem, Ziel, Wirkpfad, Gegenfaktum, Optionen, Verteilung, Resilienz, Umsetzung, Reality Check und Lernen.",
+      "usageNote": "Bundes-GGO/eNAP nicht auf Länder, EU oder andere Handlungsformen übertragen. Ebenso wenig aus einem nicht auffindbaren öffentlichen Dokument auf eine unterbliebene Prüfung schließen.",
+      "status": "anschlussbegriff",
+      "type": "Architekturbegriff",
+      "category": "Architekturbegriff",
+      "version": "1.0",
+      "reviewStatus": "fachlich konsolidiert",
+      "source": "GGO, BHO/VV-BHO, KSG, KAnG und DNS",
+      "sourceSection": "Objekttyp, Anwendungsbereich und Prüfverfahren",
+      "sourceProvenance": "Amtliche Rechts- und Verwaltungsquellen; WÖk-Verbindung als explizit additive Methodenpräzisierung.",
+      "officialSources": [
+        "GGO §§ 43 und 44|/quellenarchiv/wok-q-9029/",
+        "Bundeshaushaltsordnung – § 7|/quellenarchiv/wok-q-9048/",
+        "VV-BHO zu § 7|/quellenarchiv/wok-q-9049/",
+        "Bundes-Klimaschutzgesetz – § 13|/quellenarchiv/wok-q-9046/",
+        "Bundes-Klimaanpassungsgesetz – § 8|/quellenarchiv/wok-q-9047/"
+      ],
+      "relatedTerms": [
+        "staatliche-nachhaltigkeitsarchitektur",
+        "gesetzesfolgenabschaetzung",
+        "bundeshaushaltsordnung-paragraf-7",
+        "vv-bho-wirtschaftlichkeitsuntersuchung-erfolgskontrolle",
+        "wirkungsrelevanz-statt-rechtsform"
+      ],
+      "classicGlossary": true,
+      "autoLinkAllowed": true,
+      "pageUrl": "/begriffe/objektspezifische-staatliche-pruefarchitektur/",
+      "id": "objektspezifische-staatliche-pruefarchitektur",
+      "label": "Objektspezifische staatliche Prüfarchitektur",
+      "slug": "objektspezifische-staatliche-pruefarchitektur",
+      "synonyms": [
+        "Objektspezifische staatliche Prüfarchitektur",
+        "objektspezifischer staatlicher Prüfrahmen",
+        "staatliche Prüfrahmen nach Objekttyp",
+        "anwendbarer staatlicher Prüfrahmen"
+      ],
+      "definition": "Deutschland verfügt nicht über nur ein einziges Prüfverfahren für jedes staatliche Handeln. Für Bundesregelungsvorhaben sind unter anderem GGO, GFA, Nachhaltigkeitsprüfung und eNAP/eGFA relevant. Für finanzwirksame Maßnahmen gelten § 7 BHO und die VV-BHO. Je nach Gegenstand können Fachgesetze wie § 13 KSG oder § 8 KAnG, Vergabe-, Beteiligungs-, Förder- oder weitere Vorschriften hinzutreten.\n\nObjektspezifisch bedeutet deshalb: Zuerst werden Handlungsform, Zuständigkeit, Rechtsraum und materieller Gegenstand bestimmt; erst dann wird der wirklich anwendbare staatliche Prüf- und Kontrollrahmen belegt. Die Existenz einer Regel darf nicht mit ihrer Anwendung im Einzelfall verwechselt werden.",
+      "definitionDetailStatus": "vertieft",
+      "definitionDetailBasis": "explizite-langdefinition",
+      "statusNote": "",
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "glossaryOrderKey": "Objektspezifische staatliche Prüfarchitektur",
+      "priority": 2216,
+      "curatedSources": [],
+      "sourceLinks": [],
+      "relatedDocuments": [],
+      "doNotConfuseWith": [],
+      "deprecatedUsage": [],
+      "categories": [
+        "architekturbegriff"
+      ],
+      "related_terms": [
+        "staatliche-nachhaltigkeitsarchitektur",
+        "gesetzesfolgenabschaetzung",
+        "bundeshaushaltsordnung-paragraf-7",
+        "vv-bho-wirtschaftlichkeitsuntersuchung-erfolgskontrolle",
+        "wirkungsrelevanz-statt-rechtsform"
+      ]
+    },
+    {
       "termId": "state-assessment-benchmark",
       "slug": "state-assessment-benchmark",
       "canonicalLabel": "Objektspezifischer staatlicher Prüfbenchmark",
@@ -240090,7 +240233,7 @@
       "glossaryOrderKey": "OECD",
       "priority": 2045,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -240896,7 +241039,7 @@
       "glossaryOrderKey": "Öffentliche Finanzen, Schulden und Wirkung",
       "priority": 2046,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -255575,7 +255718,7 @@
       "definitionDetailBasis": "explizite-langdefinition",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2216,
+      "priority": 2220,
       "curatedSources": [],
       "sourceLinks": [],
       "relatedDocuments": [],
@@ -256301,7 +256444,7 @@
       "glossaryOrderKey": "Physikalischer Wirkungsgrad",
       "priority": 2120,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -257623,7 +257766,7 @@
       "glossaryOrderKey": "Planet",
       "priority": 2049,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -258169,7 +258312,7 @@
       "glossaryOrderKey": "Platform on Sustainable Finance",
       "priority": 2050,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -268947,7 +269090,7 @@
       "glossaryOrderKey": "Prävention als Wirkleistung",
       "priority": 2051,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -269668,7 +269811,7 @@
       "category": "Bewertungsbegriff",
       "sourceSection": "Vertiefung J · Vorschläge für Glossartexte",
       "glossaryOrderKey": "Preisvollständigkeit",
-      "priority": 2228,
+      "priority": 2232,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -271638,7 +271781,7 @@
       "glossaryOrderKey": "Privatkredit-Frame",
       "priority": 2052,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -273118,7 +273261,7 @@
       "glossaryOrderKey": "Produkt-, Umwelt- und Kreislauflabels",
       "priority": 2053,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -273196,7 +273339,7 @@
       "statusNote": "",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2219,
+      "priority": 2223,
       "officialSources": [
         "McDonough Braungart: Cradle to Cradle|/quellenarchiv/wok-g-6e118186568b/"
       ],
@@ -277364,7 +277507,7 @@
       "glossaryOrderKey": "PtL-Kraftstoff",
       "priority": 2054,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -279516,7 +279659,7 @@
       "glossaryOrderKey": "Qualifikationsverlust",
       "priority": 2055,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -284312,7 +284455,7 @@
       "glossaryOrderKey": "REACH",
       "priority": 2056,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -291739,7 +291882,7 @@
       "glossaryOrderKey": "Refinanzierung",
       "priority": 2057,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -293051,7 +293194,7 @@
       "glossaryOrderKey": "Regelbasierte Ordnung",
       "priority": 2058,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -298441,7 +298584,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Reparaturfähigkeit",
-      "priority": 2242,
+      "priority": 2246,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -298609,7 +298752,7 @@
       "glossaryOrderKey": "Reparaturwohlstand",
       "priority": 2059,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -303743,7 +303886,7 @@
       "glossaryOrderKey": "Resonanzprofil",
       "priority": 2062,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -305305,7 +305448,7 @@
       "metaDescription": "Reststrom ist die Strommenge, die ein Sharing-Abnehmer zusätzlich benötigt, wenn die lokale Energy-Sharing-Anlage den Bedarf nicht zeitgleich deckt.",
       "glossaryOrderKey": "Reststrom",
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "definitionDetailStatus": "vertieft",
       "definitionDetailBasis": "explizite-langdefinition",
@@ -306217,7 +306360,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Reziprozität",
-      "priority": 2251,
+      "priority": 2255,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -307235,7 +307378,7 @@
       "glossaryOrderKey": "Risikomanagement",
       "priority": 2063,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -307747,7 +307890,7 @@
       "glossaryOrderKey": "RMO",
       "priority": 2064,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -309098,7 +309241,7 @@
       "glossaryOrderKey": "ROI",
       "priority": 2065,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -309164,7 +309307,7 @@
       "glossaryOrderKey": "Rote Linien",
       "priority": 2066,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -310242,7 +310385,7 @@
       "glossaryOrderKey": "Rückbaupflicht",
       "priority": 2067,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -312788,7 +312931,7 @@
       "glossaryOrderKey": "Sachleistung",
       "priority": 2068,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -313192,7 +313335,7 @@
       "glossaryOrderKey": "Sanierungsfahrplan",
       "priority": 2069,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -314818,7 +314961,7 @@
       "glossaryOrderKey": "Scheinwohlstand",
       "priority": 2070,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -315238,7 +315381,7 @@
       "glossaryOrderKey": "Schnellladepark",
       "priority": 2071,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -317287,7 +317430,7 @@
       "glossaryOrderKey": "Schwarze Null",
       "priority": 2072,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -324018,7 +324161,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Senkenallmende",
-      "priority": 2224,
+      "priority": 2228,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -325382,7 +325525,7 @@
       "glossaryOrderKey": "Sicherheits-T-SROI",
       "priority": 2073,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -325517,7 +325660,7 @@
       "glossaryOrderKey": "Sicherheitsresilienz",
       "priority": 2074,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -327615,7 +327758,7 @@
       "glossaryOrderKey": "Social Economy / Solidarity Economy",
       "priority": 2075,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -328896,7 +329039,7 @@
       "glossaryOrderKey": "Sozial-, Arbeits- und Menschenrechtsstandards",
       "priority": 2077,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -330586,7 +330729,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Soziales Dilemma",
-      "priority": 2235,
+      "priority": 2239,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -332221,7 +332364,7 @@
       "glossaryOrderKey": "Sozialstaats-Sündenbock",
       "priority": 2076,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -332672,7 +332815,7 @@
       "glossaryOrderKey": "Sozialtourismus-Frame",
       "priority": 2078,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -334265,7 +334408,7 @@
       "glossaryOrderKey": "SROI",
       "priority": 2079,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -341237,7 +341380,7 @@
       "glossaryOrderKey": "Standortscorecard",
       "priority": 2080,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -341303,7 +341446,7 @@
       "glossaryOrderKey": "Standortwirkung",
       "priority": 2081,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -342846,7 +342989,7 @@
       "glossaryOrderKey": "Status Threat",
       "priority": 2082,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -343082,7 +343225,7 @@
       "glossaryOrderKey": "Steuergeld-Frame",
       "priority": 2083,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -343627,7 +343770,7 @@
       "glossaryOrderKey": "Steward Ownership / Verantwortungseigentum",
       "priority": 2084,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -351976,7 +352119,7 @@
       "glossaryOrderKey": "Sustainability Benchmarking / ESG-Rating-Methodik",
       "priority": 2085,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -352373,7 +352516,7 @@
       "glossaryOrderKey": "Sustainalytics",
       "priority": 2086,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -352439,7 +352582,7 @@
       "glossaryOrderKey": "Symbolausgabe",
       "priority": 2087,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -353393,7 +353536,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Systemisch positives Summenspiel",
-      "priority": 2233,
+      "priority": 2237,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -353613,7 +353756,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Systemische Kooperation",
-      "priority": 2243,
+      "priority": 2247,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -356605,7 +356748,7 @@
       "glossaryOrderKey": "Tankstellenlogik",
       "priority": 2088,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -357029,7 +357172,7 @@
       "glossaryOrderKey": "Target Gain",
       "priority": 2089,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -357618,7 +357761,7 @@
       "glossaryOrderKey": "Taxonomy Compass / EU Taxonomy Compass",
       "priority": 2090,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -359735,7 +359878,7 @@
       "glossaryOrderKey": "Technologiereifegrad",
       "priority": 2091,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -360289,7 +360432,7 @@
       "glossaryOrderKey": "Territorialbilanz",
       "priority": 2092,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -361265,7 +361408,7 @@
       "glossaryOrderKey": "Thermischer Strompfad",
       "priority": 2093,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -361628,7 +361771,7 @@
       "glossaryOrderKey": "THG",
       "priority": 2094,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -363001,7 +363144,7 @@
       "glossaryOrderKey": "Tiere / nicht-menschliches Leben",
       "priority": 2095,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -369544,7 +369687,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Trittbrettfahren",
-      "priority": 2238,
+      "priority": 2242,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -370709,7 +370852,7 @@
       "glossaryOrderKey": "Übergabestation",
       "priority": 2096,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -370775,7 +370918,7 @@
       "glossaryOrderKey": "Übergangstätigkeit",
       "priority": 2097,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -370841,7 +370984,7 @@
       "glossaryOrderKey": "Übertragungsnetz",
       "priority": 2098,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -370907,7 +371050,7 @@
       "glossaryOrderKey": "Überwachungskapitalismus",
       "priority": 2099,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -375737,7 +375880,7 @@
       "glossaryOrderKey": "Unternehmens-, Impact- und Governance-Frameworks",
       "priority": 2003,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -376550,7 +376693,7 @@
       "category": "Bewertungsbegriff",
       "sourceSection": "Vertiefung J · Vorschläge für Glossartexte",
       "glossaryOrderKey": "Unvollständiger Preis",
-      "priority": 2227,
+      "priority": 2231,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -380347,7 +380490,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Verfahrensgerechtigkeit",
-      "priority": 2252,
+      "priority": 2256,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -385942,7 +386085,7 @@
       "glossaryOrderKey": "Verteidigungsfähigkeit",
       "priority": 2100,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -386883,7 +387026,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Vertrauensallmende",
-      "priority": 2230,
+      "priority": 2234,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -388473,7 +388616,7 @@
       "glossaryOrderKey": "VLOP",
       "priority": 2101,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -389252,7 +389395,7 @@
       "glossaryOrderKey": "Vorgriffswohlstand",
       "priority": 2102,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -389694,6 +389837,81 @@
       "sourceProvenance": "Die Quellenverweise führen auf Detailseiten des Quellenarchivs; WÖk-Primärquellen dokumentieren Modellbegriffe und ersetzen keine externe Evidenz für empirische oder rechtliche Aussagen."
     },
     {
+      "termId": "vv-bho-wirtschaftlichkeitsuntersuchung-erfolgskontrolle",
+      "canonicalLabel": "VV-BHO: Wirtschaftlichkeitsuntersuchung und Erfolgskontrolle",
+      "aliases": [
+        "VV-BHO: Wirtschaftlichkeitsuntersuchung und Erfolgskontrolle",
+        "VV-BHO zu § 7",
+        "Wirtschaftlichkeitsuntersuchung des Bundes",
+        "Erfolgskontrolle nach VV-BHO",
+        "Wirkungskontrolle nach VV-BHO"
+      ],
+      "shortDefinition": "Die VV zu § 7 BHO konkretisieren für finanzwirksame Maßnahmen die Wirtschaftlichkeitsuntersuchung in der Planungsphase und die begleitende oder abschließende Erfolgskontrolle.",
+      "hoverDefinition": "Die VV-BHO unterscheiden Zielerreichungs-, Wirkungs- und Wirtschaftlichkeitskontrolle. Die Wirkungskontrolle fragt nach Ursächlichkeit und beabsichtigten wie unbeabsichtigten Wirkungen.",
+      "longDefinition": "Die Allgemeinen Verwaltungsvorschriften zu § 7 BHO konkretisieren Wirtschaftlichkeitsuntersuchungen und Erfolgskontrollen für finanzwirksame Maßnahmen des Bundes. Erfolgskontrolle ist ein systematisches Prüfverfahren und wird vom laufenden Monitoring unterschieden. Sie umfasst grundsätzlich Zielerreichungskontrolle, Wirkungskontrolle und Wirtschaftlichkeitskontrolle. Die Wirkungskontrolle untersucht, ob die Maßnahme für die Zielerreichung ursächlich war, und bezieht beabsichtigte sowie unbeabsichtigte Wirkungen und eingetretene Risiken ein.\n\nDas Verfahren ist ein wichtiger bestehender Ex-ante-/Ex-post-Rahmen. Seine öffentliche Dokumentation, Prüftiefe und Anwendung sind für den konkreten Gegenstand zu belegen und nicht aus der bloßen Existenz der Vorschrift abzuleiten.",
+      "woekRelation": "WÖk erkennt Wirtschaftlichkeits- und Erfolgskontrolle als bestehende staatliche Architektur an. Sie ergänzt fallbezogen insbesondere eine gemeinsame Referenz- und Schutzarchitektur, System- und Verteilungswirkungen, symmetrischen Optionsvergleich, offene Evidenzereignisse und versionierte Rückkopplung über unterschiedliche Objekttypen hinweg.",
+      "usageNote": "Monitoring nicht mit Erfolgskontrolle und Zielerreichung nicht mit Attribution gleichsetzen. Anwendung und öffentlicher Nachweis bleiben fallbezogen.",
+      "status": "anschlussbegriff",
+      "type": "Amtliches Prüfverfahren",
+      "category": "Steuerungsbegriff",
+      "version": "1.0",
+      "reviewStatus": "fachlich konsolidiert",
+      "source": "Allgemeine Verwaltungsvorschriften zur BHO",
+      "sourceSection": "VV zu § 7 – Wirtschaftlichkeitsuntersuchungen und Erfolgskontrollen",
+      "sourceProvenance": "Amtliche Verwaltungsvorschrift des Bundes; WÖk-Einordnung trennt staatliches Verfahren und unabhängige Analyse.",
+      "officialSources": [
+        "Allgemeine Verwaltungsvorschriften zur BHO – VV zu § 7|/quellenarchiv/wok-q-9049/",
+        "Bundeshaushaltsordnung – § 7 Wirtschaftlichkeit und Sparsamkeit|/quellenarchiv/wok-q-9048/"
+      ],
+      "relatedTerms": [
+        "bundeshaushaltsordnung-paragraf-7",
+        "ex-ante-folgenpruefung-reality-check",
+        "attributionsforschung",
+        "wirkungsmonitoring",
+        "objektspezifische-staatliche-pruefarchitektur"
+      ],
+      "doNotConfuseWith": [
+        "Monitoring: fortlaufende Beobachtung, nicht automatisch systematische Erfolgskontrolle.",
+        "eNAP: Werkzeug der Nachhaltigkeitsprüfung für Regelungsvorhaben.",
+        "WÖk-Reality Check: unabhängige, versionierte Rückkopplung innerhalb der WÖk-Architektur."
+      ],
+      "classicGlossary": true,
+      "autoLinkAllowed": true,
+      "pageUrl": "/begriffe/vv-bho-wirtschaftlichkeitsuntersuchung-und-erfolgskontrolle/",
+      "id": "vv-bho-wirtschaftlichkeitsuntersuchung-erfolgskontrolle",
+      "label": "VV-BHO: Wirtschaftlichkeitsuntersuchung und Erfolgskontrolle",
+      "slug": "vv-bho-wirtschaftlichkeitsuntersuchung-und-erfolgskontrolle",
+      "synonyms": [
+        "VV-BHO: Wirtschaftlichkeitsuntersuchung und Erfolgskontrolle",
+        "VV-BHO zu § 7",
+        "Wirtschaftlichkeitsuntersuchung des Bundes",
+        "Erfolgskontrolle nach VV-BHO",
+        "Wirkungskontrolle nach VV-BHO"
+      ],
+      "definition": "Die Allgemeinen Verwaltungsvorschriften zu § 7 BHO konkretisieren Wirtschaftlichkeitsuntersuchungen und Erfolgskontrollen für finanzwirksame Maßnahmen des Bundes. Erfolgskontrolle ist ein systematisches Prüfverfahren und wird vom laufenden Monitoring unterschieden. Sie umfasst grundsätzlich Zielerreichungskontrolle, Wirkungskontrolle und Wirtschaftlichkeitskontrolle. Die Wirkungskontrolle untersucht, ob die Maßnahme für die Zielerreichung ursächlich war, und bezieht beabsichtigte sowie unbeabsichtigte Wirkungen und eingetretene Risiken ein.\n\nDas Verfahren ist ein wichtiger bestehender Ex-ante-/Ex-post-Rahmen. Seine öffentliche Dokumentation, Prüftiefe und Anwendung sind für den konkreten Gegenstand zu belegen und nicht aus der bloßen Existenz der Vorschrift abzuleiten.",
+      "definitionDetailStatus": "vertieft",
+      "definitionDetailBasis": "explizite-langdefinition",
+      "statusNote": "",
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "glossaryOrderKey": "VV-BHO: Wirtschaftlichkeitsuntersuchung und Erfolgskontrolle",
+      "priority": 2215,
+      "curatedSources": [],
+      "sourceLinks": [],
+      "relatedDocuments": [],
+      "deprecatedUsage": [],
+      "categories": [
+        "steuerungsbegriff"
+      ],
+      "related_terms": [
+        "bundeshaushaltsordnung-paragraf-7",
+        "ex-ante-folgenpruefung-reality-check",
+        "attributionsforschung",
+        "wirkungsmonitoring",
+        "objektspezifische-staatliche-pruefarchitektur"
+      ]
+    },
+    {
       "termId": "w-bip",
       "canonicalLabel": "W-BIP",
       "relatedTerms": [
@@ -389743,7 +389961,7 @@
       "glossaryOrderKey": "W-BIP",
       "priority": 2103,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -396584,7 +396802,7 @@
       "glossaryOrderKey": "Wellbeing Economy / Beyond GDP",
       "priority": 2104,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -396720,7 +396938,7 @@
       "glossaryOrderKey": "Weltfähig",
       "priority": 2105,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -402440,7 +402658,7 @@
       "glossaryOrderKey": "Wirksame Arbeit",
       "priority": 2106,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -409847,7 +410065,7 @@
         "OECD DAC Criteria, Impact|/quellenarchiv/wok-q-0329/"
       ],
       "pageUrl": "/begriffe/wirkungsblindheit/",
-      "priority": 2214,
+      "priority": 2218,
       "status": "approved",
       "version": "2.0",
       "category": "Grundbegriff",
@@ -412829,7 +413047,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Wirkungsdilemma",
-      "priority": 2245,
+      "priority": 2249,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -413093,7 +413311,7 @@
       "glossaryOrderKey": "Wirkungsebene 1",
       "priority": 2107,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -413159,7 +413377,7 @@
       "glossaryOrderKey": "Wirkungsebene 2",
       "priority": 2108,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -413225,7 +413443,7 @@
       "glossaryOrderKey": "Wirkungsebene 3",
       "priority": 2109,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -414329,7 +414547,7 @@
       "glossaryOrderKey": "Wirkungsfeld",
       "priority": 2110,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -418389,7 +418607,7 @@
       "glossaryOrderKey": "Wirkungshaushalt für Auslandsprojekte",
       "priority": 2111,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -418455,7 +418673,7 @@
       "glossaryOrderKey": "Wirkungshebel / Systemhebel",
       "priority": 2112,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -420046,7 +420264,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Wirkungsintegrität",
-      "priority": 2232,
+      "priority": 2236,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -420912,7 +421130,7 @@
       "glossaryOrderKey": "Wirkungsklasse",
       "priority": 2113,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -422874,7 +423092,7 @@
         "United Nations: Sustainable Development Goals|/quellenarchiv/wok-q-0024/"
       ],
       "pageUrl": "/begriffe/wirkungslenkung/",
-      "priority": 2469,
+      "priority": 2473,
       "status": "approved",
       "version": "1.0",
       "category": "Steuerungsbegriff",
@@ -423660,7 +423878,7 @@
       "statusNote": "",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2218,
+      "priority": 2222,
       "officialSources": [
         "McDonough Braungart: Cradle to Cradle|/quellenarchiv/wok-g-6e118186568b/"
       ],
@@ -425404,7 +425622,7 @@
       "glossaryOrderKey": "Wirkungsökonomischer Wirkungsgrad",
       "priority": 2121,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -429321,7 +429539,7 @@
       "statusNote": "",
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
-      "priority": 2482,
+      "priority": 2486,
       "officialSources": [
         "WOeK Begriffsleitfaden fuehrend v1.5|/quellenarchiv/wok-g-e6ede1ac4941/"
       ],
@@ -430769,7 +430987,7 @@
         "WOeK Begriffsleitfaden fuehrend v1.5|/quellenarchiv/wok-g-e6ede1ac4941/"
       ],
       "pageUrl": "/begriffe/wirkungsradar/",
-      "priority": 2481,
+      "priority": 2485,
       "status": "woek-praegungsbegriff",
       "version": "1.5",
       "category": "Architekturbegriff",
@@ -432623,6 +432841,79 @@
       "definitionDetailBasis": "explizite-langdefinition",
       "curatedSources": [],
       "sourceProvenance": "Die Quellenverweise führen auf Detailseiten des Quellenarchivs; WÖk-Primärquellen dokumentieren Modellbegriffe und ersetzen keine externe Evidenz für empirische oder rechtliche Aussagen."
+    },
+    {
+      "termId": "wirkungsrelevanz-statt-rechtsform",
+      "canonicalLabel": "Wirkungsrelevanz statt Rechtsform",
+      "aliases": [
+        "Wirkungsrelevanz statt Rechtsform",
+        "Materialität statt Rechtsform",
+        "wirkungsrelevanter Prüfgegenstand",
+        "materialitätsgetriebener Prüfumfang"
+      ],
+      "shortDefinition": "Wirkungsrelevanz statt Rechtsform ist das WÖk-Prinzip, Prüfgegenstände nach möglicher materieller Zustandsveränderung und nicht allein nach ihrer rechtlichen Handlungsform auszuwählen.",
+      "hoverDefinition": "WÖk prüft materiell relevante Gesetze, Strategien, Programme, Förderungen, Investitionen, Beschaffung und andere Handlungen - jeweils zusätzlich zum tatsächlich geltenden staatlichen Rahmen.",
+      "longDefinition": "Das Prinzip erweitert den möglichen WÖk-Prüfumfang über Rechtsetzung hinaus. Ein Gegenstand wird relevant, wenn er einen materiell bedeutsamen Zustand von Mensch, Planet oder Demokratie verändern kann. Die Rechtsform bleibt dennoch wichtig, weil sie Zuständigkeit, Verfahren, Rechtsfolgen und den anwendbaren staatlichen Prüfrahmen bestimmt.\n\nDas Prinzip behauptet keine staatliche Prüfleere. Es verbindet vielmehr unterschiedliche Objekttypen mit einer gemeinsamen WÖk-Analysekette, nachdem die objektspezifischen staatlichen Verfahren festgestellt wurden.",
+      "woekRelation": "Das Prinzip bestimmt den WÖk-Scope; es ersetzt weder Rechtsgrundlagen noch staatliche Verfahren. Öffentliche Unternehmensbeteiligung allein begründet keine automatische Zurechnung einer Unternehmensentscheidung zur Regierung.",
+      "usageNote": "Materialität nicht mit Beliebigkeit verwechseln. Handlungsobjekt, Zuständigkeit, Quelle, staatlicher Prüfrahmen und Attribution bleiben explizit.",
+      "status": "woek-prinzip",
+      "type": "WÖk-Methodenprinzip",
+      "category": "Steuerungsbegriff",
+      "version": "1.0",
+      "reviewStatus": "fachlich konsolidiert",
+      "source": "WÖk-Methodenpräzisierung v1.7",
+      "sourceSection": "Prüfumfang und objektspezifische staatliche Referenzarchitektur",
+      "sourceProvenance": "WÖk-eigenes Methodenprinzip; amtliche Verfahren werden als vorgelagerte Referenzschicht belegt.",
+      "officialSources": [
+        "GGO §§ 43 und 44|/quellenarchiv/wok-q-9029/",
+        "Bundeshaushaltsordnung – § 7|/quellenarchiv/wok-q-9048/",
+        "VV-BHO zu § 7|/quellenarchiv/wok-q-9049/"
+      ],
+      "relatedTerms": [
+        "objektspezifische-staatliche-pruefarchitektur",
+        "wirkungsrelevanz-und-materialitaetsanalyse",
+        "wirkungsanalyse",
+        "attributionsforschung",
+        "staatliche-nachhaltigkeitsarchitektur"
+      ],
+      "doNotConfuseWith": [
+        "Universelle Rechts- oder Prüfpflicht: WÖk-Scope und staatlicher Anwendungsbereich sind getrennt.",
+        "Staatliche Attribution: politischer Kontext oder öffentliches Eigentum allein genügt nicht für Zurechnung."
+      ],
+      "classicGlossary": true,
+      "autoLinkAllowed": true,
+      "pageUrl": "/begriffe/wirkungsrelevanz-statt-rechtsform/",
+      "id": "wirkungsrelevanz-statt-rechtsform",
+      "label": "Wirkungsrelevanz statt Rechtsform",
+      "slug": "wirkungsrelevanz-statt-rechtsform",
+      "synonyms": [
+        "Wirkungsrelevanz statt Rechtsform",
+        "Materialität statt Rechtsform",
+        "wirkungsrelevanter Prüfgegenstand",
+        "materialitätsgetriebener Prüfumfang"
+      ],
+      "definition": "Das Prinzip erweitert den möglichen WÖk-Prüfumfang über Rechtsetzung hinaus. Ein Gegenstand wird relevant, wenn er einen materiell bedeutsamen Zustand von Mensch, Planet oder Demokratie verändern kann. Die Rechtsform bleibt dennoch wichtig, weil sie Zuständigkeit, Verfahren, Rechtsfolgen und den anwendbaren staatlichen Prüfrahmen bestimmt.\n\nDas Prinzip behauptet keine staatliche Prüfleere. Es verbindet vielmehr unterschiedliche Objekttypen mit einer gemeinsamen WÖk-Analysekette, nachdem die objektspezifischen staatlichen Verfahren festgestellt wurden.",
+      "definitionDetailStatus": "vertieft",
+      "definitionDetailBasis": "explizite-langdefinition",
+      "statusNote": "",
+      "showInCategoryGlossary": false,
+      "dataStandardsGroup": "",
+      "glossaryOrderKey": "Wirkungsrelevanz statt Rechtsform",
+      "priority": 2217,
+      "curatedSources": [],
+      "sourceLinks": [],
+      "relatedDocuments": [],
+      "deprecatedUsage": [],
+      "categories": [
+        "steuerungsbegriff"
+      ],
+      "related_terms": [
+        "objektspezifische-staatliche-pruefarchitektur",
+        "wirkungsrelevanz-und-materialitaetsanalyse",
+        "wirkungsanalyse",
+        "attributionsforschung",
+        "staatliche-nachhaltigkeitsarchitektur"
+      ]
     },
     {
       "id": "wirkungsrelevanz-und-materialitaetsanalyse",
@@ -435429,7 +435720,7 @@
       "glossaryOrderKey": "Wirkungsrisikomanagement",
       "priority": 2114,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -435729,7 +436020,7 @@
         "Die Wirkungsökonomie als lernendes Kreislaufsystem|/quellenarchiv/wok-q-0729/"
       ],
       "pageUrl": "/begriffe/wirkungsrueckkopplung/",
-      "priority": 2460,
+      "priority": 2464,
       "status": "approved",
       "version": "1.0",
       "category": "Grundbegriff",
@@ -437044,7 +437335,7 @@
         "Product Environmental Footprint|/quellenarchiv/wok-q-0302/"
       ],
       "pageUrl": "/begriffe/wirkungssteuer/",
-      "priority": 2217,
+      "priority": 2221,
       "status": "führender-begriff",
       "version": "3.0",
       "category": "Steuern, Preise & Rückkopplung",
@@ -437583,7 +437874,7 @@
         "Product Environmental Footprint|/quellenarchiv/wok-q-0302/"
       ],
       "pageUrl": "/begriffe/wirkungssteuergesetz/",
-      "priority": 2220,
+      "priority": 2224,
       "status": "führender-begriff",
       "version": "3.0",
       "category": "Recht, Steuern & Wirkungsarchitektur",
@@ -438023,7 +438314,7 @@
       "glossaryOrderKey": "Wirkungssteuerkonto",
       "priority": 2115,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -438539,7 +438830,7 @@
       "showInCategoryGlossary": false,
       "dataStandardsGroup": "",
       "glossaryOrderKey": "Wirkungstragung",
-      "priority": 2229,
+      "priority": 2233,
       "officialSources": [
         "Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung|/quellenarchiv/wok-g-7be4676ca8cc/"
       ],
@@ -440396,7 +440687,7 @@
       "glossaryOrderKey": "Wirkungswashing",
       "priority": 2116,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -444268,7 +444559,7 @@
       "glossaryOrderKey": "WKG",
       "priority": 2117,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
@@ -447233,7 +447524,7 @@
         "McDonough Braungart: Cradle to Cradle|/quellenarchiv/wok-g-6e118186568b/"
       ],
       "pageUrl": "/begriffe/wstg/",
-      "priority": 2221,
+      "priority": 2225,
       "status": "führender-begriff",
       "version": "3.0",
       "category": "Recht, Steuern & Wirkungsarchitektur",
@@ -452763,7 +453054,7 @@
       "glossaryOrderKey": "Zuschuss",
       "priority": 2118,
       "officialSources": [
-        "WÖk-Begriffsleitfaden führend v1.6|/quellenarchiv/wok-g-333439f9e599/"
+        "WÖk-Begriffsleitfaden führend v1.7|/quellenarchiv/wok-g-333439f9e599/"
       ],
       "curatedSources": [],
       "sourceLinks": [],
