@@ -1,0 +1,41 @@
+{
+  "policy_version": "1.0.0",
+  "effective_date": "2026-08-22",
+  "monthly_budget": {
+    "currency": "EUR",
+    "gross_max": 25,
+    "increase_requires_project_owner_approval": true
+  },
+  "vercel": {
+    "automatic_git_deployments": false,
+    "automatic_preview_deployments": false,
+    "production_release_mode": "MANUAL_COMMIT_BOUND_PROMOTION",
+    "build_machine_type": "standard",
+    "build_machine_selection": "fixed",
+    "elastic_concurrency_enabled": false,
+    "build_queue": "WAIT_FOR_NAMESPACE_QUEUE",
+    "permitted_roles": [
+      "PRODUCTION_WEB_RUNTIME",
+      "EXPLICIT_RELEASE_CANDIDATE"
+    ],
+    "forbidden_roles": [
+      "CANONICAL_DATA_STORE",
+      "PRIMARY_PUBLIC_ARTIFACT_STORE",
+      "GIT_PUSH_PREVIEW_CI"
+    ]
+  },
+  "storage": {
+    "public_artifacts": "GITHUB_RELEASES",
+    "public_source_and_history": "GITHUB",
+    "private_user_data_target": "ORACLE_OCI",
+    "legacy_store_migration": "BACKUP_FIRST_NO_SILENT_DELETE",
+    "new_private_user_data_in_vercel_storage": false
+  },
+  "release": {
+    "preview_default": "DISABLED",
+    "production_requires_exact_commit": true,
+    "production_requires_quality_gates": true,
+    "production_requires_smoke_test": true,
+    "deploy_hooks_require_explicit_release_authorization": true
+  }
+}

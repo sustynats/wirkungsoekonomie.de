@@ -13,6 +13,15 @@ Diese Datei ist die dauerhafte Arbeitsanweisung fuer Codex-Aufgaben in diesem Re
 - Fuehre vor Abschluss Build- und Qualitaetspruefungen aus und stelle beauftragte Website-Aenderungen live.
 - Pruefe nach dem Deployment die Live-URL und relevante Such-/Navigationspfade.
 
+## Hosting- und Kostenschutz
+
+- Das verbindliche Bruttobudget fuer Vercel betraegt hoechstens 25 EUR pro Monat. Eine Erhoehung braucht eine ausdrueckliche Entscheidung der Projektinhaberin.
+- Automatische Vercel-Deployments aus Git-Pushes und Pull Requests bleiben deaktiviert. Vercel-Production wird nur manuell aus einem geprueften, commitgebundenen Release-Artefakt aktualisiert.
+- Oeffentliche grosse Dateien und unveraenderliche Publikationsartefakte gehoeren in GitHub Releases. Vercel ist weder primaerer Artefaktspeicher noch kanonischer Datenbestand.
+- Private Nutzerdaten werden nicht neu in Vercel-Speicher geschrieben. Der Zielbestand liegt in Oracle/OCI; bestehende Altsysteme werden nur backup-first und ohne stillen Datenverlust migriert.
+- Vercel-Builds verwenden die Standardmaschine, feste Auswahl, keine elastische Parallelitaet und eine serielle Queue. Preview-Builds werden nicht fuer normale Fach-, Daten- oder Bot-Commits erzeugt.
+- Vor Aenderungen an `vercel.json`, Vercel-Projekteinstellungen oder Deployment-Workflows ist `npm run check:hosting-cost` auszufuehren. Die ausfuehrliche Regel steht in `docs/ops/HOSTING-COST-GUARD.md`.
+
 ## Inhaltliche Leitlinie Wirkungsökonomie
 
 - Wirkung ist neutral und relational.
