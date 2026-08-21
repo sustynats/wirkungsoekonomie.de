@@ -1,20 +1,18 @@
 #!/usr/bin/env python3
-"""Hard semantic release gates for issue #253.
+"""Hard semantic and audit-contract release gates for issue #253.
 
 The checks are deliberately fail-closed on the living public surfaces and provenance records.
 They do not infer political judgements; they verify that the approved state-vs-WÖk distinction
-survives generation and that historical publications were not silently rewritten.
+survives generation, that historical publications were not silently rewritten, and that the
+complete sitewide matrix required by #253 is committed/reproducible.
 """
 from __future__ import annotations
 
 import json
-import re
 import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-MARKER = "state-sustainability-architecture-20260821"
-PRECISION_MARKER = "state-sustainability-precision-20260821"
 REQUIRED_LIVING = [
     "index.html",
     "modell.html",
@@ -31,6 +29,13 @@ HISTORICAL_ADDENDA = [
     "werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/politische-wirkungspruefung/index.html",
 ]
 PUBLIC_ENUMS = ("NOT_PUBLICLY_ESTABLISHED", "NOT_ASSESSED")
+MATRIX_JSON = "content/audits/state-sustainability-architecture-url-matrix.json"
+MATRIX_MD = "content/audits/state-sustainability-architecture-url-matrix.md"
+MATRIX_REQUIRED_FIELDS = {
+    "source_path", "public_url", "historical_publication", "relevance",
+    "classification", "required_action", "source_refs", "status",
+}
+CANONICAL_BENCHMARK = "blog/enap-woek-benchmark-fuenf-bundesvorhaben.html"
 
 
 def read(rel: str) -> str:
@@ -62,7 +67,6 @@ def no_raw_public_enums() -> None:
 
 
 def historical_additions_only() -> None:
-    # Historical bodies may receive transparent addenda, never silent deletion/rewording.
     for rel in HISTORICAL_ADDENDA:
         require(rel, ["Fachaddendum", "21.08.2026"])
         proc = subprocess.run(
@@ -78,12 +82,11 @@ def historical_additions_only() -> None:
 
 def glossary_and_sources() -> None:
     source_text = read("content/quellenarchiv/legal-source-records.json")
-    for code in ("WÖK-Q-1029", "WÖK-Q-1030", "WÖK-Q-1031", "WÖK-Q-1032", "WÖK-Q-1033", "WÖK-Q-1034"):
+    for code in ("WÖK-Q-1029", "WÖK-Q-1030", "WÖK-Q-1031", "WÖK-Q-1032", "WÖK-Q-1033", "WÖK-Q-1034", "WÖK-Q-1035"):
         if code not in source_text:
             raise AssertionError(f"missing canonical federal architecture source {code}")
-    correct_dns = "https://www.bundesregierung.de/breg-de/aktuelles/deutsche-nachhaltigkeitsstrategie-2025-2332540"
-    if correct_dns not in source_text:
-        raise AssertionError("canonical DNS 2025 source URL missing")
+    if "bundesregierung.de" not in source_text or "deutsche-nachhaltigkeitsstrategie-2025-2332540" not in source_text:
+        raise AssertionError("canonical DNS 2025 Bundesregierung source missing")
     glossary_source = json.loads(read("content/glossary/imports/staatliche-nachhaltigkeitsarchitektur.json"))
     ids = {t.get("termId") for t in glossary_source.get("terms", [])}
     required = {
@@ -94,7 +97,6 @@ def glossary_and_sources() -> None:
     }
     if missing := sorted(required - ids):
         raise AssertionError(f"missing #253 glossary terms: {missing}")
-    # If the site has already run its glossary build, generated registry must contain the terms too.
     generated = ROOT / "public/data/glossary.terms.json"
     if generated.exists():
         data = json.loads(generated.read_text(encoding="utf-8"))
@@ -102,6 +104,54 @@ def glossary_and_sources() -> None:
         for tid in required:
             if tid not in text:
                 raise AssertionError(f"generated glossary registry missing {tid}")
+
+
+def state_architecture_scope_guard() -> None:
+    kommunal = read("fuer/kommunen.html")
+    forbidden = [
+        "state-sustainability-architecture-20260821",
+        "§ 43 GGO",
+        "§ 44 GGO",
+        "STATE_GFA_ENAP_BENCHMARK",
+    ]
+    hits = [needle for needle in forbidden if needle in kommunal]
+    if hits:
+        raise AssertionError(f"federal #253 architecture leaked into municipal scope: {hits}")
+
+
+def benchmark_single_source_of_truth() -> None:
+    require(CANONICAL_BENCHMARK, ["21/6279", "21/2999", "21/3058", "21/1511", "21/1855"])
+    proc = subprocess.run(
+        ["git", "ls-files", "blog/*enap*benchmark*.html"],
+        cwd=ROOT, check=True, text=True, stdout=subprocess.PIPE,
+    )
+    candidates = [line.strip() for line in proc.stdout.splitlines() if line.strip()]
+    if candidates != [CANONICAL_BENCHMARK]:
+        raise AssertionError(f"competing eNAP/WÖk benchmark corpus detected: {candidates}")
+
+
+def audit_matrix_contract() -> None:
+    matrix_path = ROOT / MATRIX_JSON
+    md_path = ROOT / MATRIX_MD
+    if not matrix_path.exists() or not md_path.exists():
+        raise AssertionError("release-blocking #253 URL/file matrix is missing")
+    data = json.loads(matrix_path.read_text(encoding="utf-8"))
+    if data.get("issue") != 253:
+        raise AssertionError("matrix issue binding is not #253")
+    if int(data.get("sitemap_route_count", 0)) <= 0:
+        raise AssertionError("matrix has no sitemap routes")
+    items = data.get("all_items") or []
+    if not items:
+        raise AssertionError("matrix does not contain recursive all_items")
+    for idx, item in enumerate(items):
+        missing = sorted(MATRIX_REQUIRED_FIELDS - set(item))
+        if missing:
+            raise AssertionError(f"matrix item {idx} missing contract fields: {missing}")
+    route_paths = {item.get("source_path") for item in items}
+    if CANONICAL_BENCHMARK not in route_paths:
+        raise AssertionError("canonical five-case benchmark missing from complete #253 matrix")
+    if "llms.txt" not in route_paths or "sitemap.xml" not in route_paths:
+        raise AssertionError("matrix omits required machine-readable support surfaces")
 
 
 def main() -> int:
@@ -124,6 +174,9 @@ def main() -> int:
     checks.append(("NO_FALSE_ABSENCE_OF_EXPOST_REVIEW_CLAIM", lambda: require("index.html", ["spätere Überprüfung"])))
     checks.append(("GGO_43_44_FULL_SCOPE_ACKNOWLEDGED", lambda: require("methodik/datenbasis.html", ["Ziel/Notwendigkeit", "Alternativen", "beabsichtigte Wirkungen", "unbeabsichtigte Nebenwirkungen", "späteren Überprüfung"])))
     checks.append(("PUBLIC_GFA_NOT_MISLABELED_AS_PUBLIC_ENAP_EXPORT", lambda: require("methodik/datenbasis.html", ["Öffentliche GFA-Dokumentation ist nicht automatisch ein veröffentlichter eNAP-Rohexport"])))
+    checks.append(("STATE_ARCHITECTURE_NOT_APPLIED_OUTSIDE_SCOPE", state_architecture_scope_guard))
+    checks.append(("BENCHMARK_CORPUS_SINGLE_SOURCE_OF_TRUTH_5_CASES", benchmark_single_source_of_truth))
+    checks.append(("AUDIT_MATRIX_CONTRACT_PASS", audit_matrix_contract))
     checks.append(("NO_PUBLIC_RAW_STATUS_ENUMS", no_raw_public_enums))
 
     passed = []
@@ -131,7 +184,7 @@ def main() -> int:
         fn()
         passed.append(name)
         print(f"PASS {name}")
-    print(f"#253 semantic gates PASS: {len(passed)}/{len(checks)}")
+    print(f"#253 semantic/audit gates PASS: {len(passed)}/{len(checks)}")
     return 0
 
 
