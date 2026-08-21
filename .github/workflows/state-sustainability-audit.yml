@@ -52,31 +52,36 @@ jobs:
           python tools/apply_state_sustainability_build_integration.py
           npm run build:search
           npm run taxonomy:build
-      - name: Commit deterministic projection outputs when needed
+      - name: Generate committed exhaustive #253 URL/file matrix
+        run: |
+          python tools/audit_state_sustainability_architecture_fast.py --root . --output content/audits/state-sustainability-architecture-url-matrix.json --markdown content/audits/state-sustainability-architecture-url-matrix.md
+          python tools/audit_state_sustainability_support_files.py --root . --matrix content/audits/state-sustainability-architecture-url-matrix.json --markdown content/audits/state-sustainability-architecture-url-matrix.md
+      - name: Run hard #253 semantic gates
+        run: python tools/check_state_sustainability_architecture.py
+      - name: Commit deterministic projections and audit matrix when needed
         if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
         shell: bash
         run: |
           set -euo pipefail
           if git diff --quiet; then
-            echo 'All approved #253 projections are already committed.'
+            echo 'All approved #253 projections and the release-blocking matrix are already committed.'
           else
             git config user.name 'github-actions[bot]'
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
             git add -A
-            # GITHUB_TOKEN may update repository contents but must not self-push
-            # workflow files without workflows permission. Workflow changes are
-            # materialized explicitly by the orchestrator and remain an
-            # idempotence failure below if a projection still tries to alter one.
+            # The GITHUB_TOKEN may not self-push workflow changes. Those are
+            # materialized explicitly by the orchestrator; keep them as a hard
+            # idempotence failure rather than silently dropping the gate.
             git reset -- .github/workflows/ || true
             if git diff --cached --quiet; then
               echo 'Only workflow-file drift remains; do not self-commit it.'
             else
-              git commit -m 'fix: materialize approved #253 state architecture projections'
+              git commit -m 'fix: materialize approved #253 projections and committed audit matrix'
               git pull --rebase origin ${{ github.event.pull_request.head.ref }}
               git push origin HEAD:${{ github.event.pull_request.head.ref }}
             fi
           fi
-      - name: Verify projections are idempotent after materialization
+      - name: Verify projections and committed matrix are idempotent
         run: |
           python tools/apply_state_sustainability_architecture.py
           python tools/apply_state_sustainability_sources.py
@@ -85,17 +90,14 @@ jobs:
           python tools/apply_state_sustainability_build_integration.py
           npm run build:search
           npm run taxonomy:build
+          python tools/audit_state_sustainability_architecture_fast.py --root . --output content/audits/state-sustainability-architecture-url-matrix.json --markdown content/audits/state-sustainability-architecture-url-matrix.md
+          python tools/audit_state_sustainability_support_files.py --root . --matrix content/audits/state-sustainability-architecture-url-matrix.json --markdown content/audits/state-sustainability-architecture-url-matrix.md
+          python tools/check_state_sustainability_architecture.py
           git diff --exit-code
-      - name: Generate exhaustive #253 URL/file matrix
-        run: |
-          python tools/audit_state_sustainability_architecture_fast.py --root . --output artifacts/state-sustainability-architecture-url-matrix.json --markdown artifacts/state-sustainability-architecture-url-matrix.md
-          python tools/audit_state_sustainability_support_files.py --root . --matrix artifacts/state-sustainability-architecture-url-matrix.json --markdown artifacts/state-sustainability-architecture-url-matrix.md
-      - name: Run hard #253 semantic gates
-        run: python tools/check_state_sustainability_architecture.py
       - name: Upload #253 audit matrix
         uses: actions/upload-artifact@v4
         with:
           name: state-sustainability-architecture-audit
           path: |
-            artifacts/state-sustainability-architecture-url-matrix.json
-            artifacts/state-sustainability-architecture-url-matrix.md
+            content/audits/state-sustainability-architecture-url-matrix.json
+            content/audits/state-sustainability-architecture-url-matrix.md
