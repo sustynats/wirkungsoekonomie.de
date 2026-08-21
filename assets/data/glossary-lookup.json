@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-08-21T00:00:00.000Z",
-  "count": 2153,
+  "count": 2154,
   "terms": [
     {
       "id": "fuenftes-p-planet",
@@ -14925,6 +14925,21 @@
       "definition": "Oberschwingungen sind Frequenzanteile in elektrischen Netzen, die von der Grundfrequenz abweichen und Netzqualität beeinflussen können."
     },
     {
+      "id": "state-assessment-benchmark",
+      "label": "Objektspezifischer staatlicher Prüfbenchmark",
+      "canonicalLabel": "Objektspezifischer staatlicher Prüfbenchmark",
+      "slug": "state-assessment-benchmark",
+      "url": "/begriffe/state-assessment-benchmark/",
+      "aliases": [
+        "Objektspezifischer staatlicher Prüfbenchmark",
+        "staatlicher Prüfbenchmark",
+        "State Assessment Benchmark",
+        "STATE_ASSESSMENT_BENCHMARK"
+      ],
+      "shortDefinition": "Der objektspezifische staatliche Prüfbenchmark dokumentiert für eine konkrete staatliche Entscheidung, welche amtlichen Prüf-, Bewertungs- und Kontrollrahmen gelten und was daraus öffentlich belegt ist.",
+      "definition": "Staatliche Prüfung ist nicht auf ein einheitliches Verfahren reduziert. Der Benchmark erfasst je Objekt die anwendbaren staatlichen Rahmen: für Regelungsvorhaben insbesondere GGO, GFA, Nachhaltigkeitsprüfung und eNAP/eGFA; für finanzwirksame Maßnahmen § 7 BHO und die VV-BHO; KSG § 13, KAnG § 8, DNS-Governance und sektorale Evaluationsregime nur bei sachlicher Anwendbarkeit. Dokumentiert werden staatliche Problem- oder Bedarfsprüfung, Optionsvergleich, Ex-ante-Folgenprüfung, Erfolgs- oder Wirkungskontrolle, Zurechnungsmethode und öffentlicher Dokumentationsstand.\n\nFehlende öffentliche Unterlagen bedeuten nicht automatisch, dass keine Prüfung stattfand. Der Benchmark bleibt von der unabhängigen WÖk-Analyse getrennt und erzeugt weder Wirkungsrichtung noch DNS-Zuordnung noch Empfehlung."
+    },
+    {
       "id": "ocpp",
       "label": "OCPP",
       "canonicalLabel": "OCPP",
@@ -20845,8 +20860,8 @@
         "staatliche Nachhaltigkeitsarchitektur des Bundes",
         "Nachhaltigkeitsgovernance des Bundes"
       ],
-      "shortDefinition": "Die staatliche Nachhaltigkeitsarchitektur des Bundes verbindet DNS, Ziele und Indikatoren, ressortübergreifende Governance, Gesetzesfolgen- und Nachhaltigkeitsprüfung, eNAP/eGFA und Monitoring.",
-      "definition": "Deutschland verfügt über eine mehrschichtige Nachhaltigkeits- und Folgenprüfungsarchitektur. Dazu gehören die Deutsche Nachhaltigkeitsstrategie als nationaler Ziel- und Managementrahmen, der Staatssekretärsausschuss und weitere Governance-Akteure, DNS-Indikatoren und Destatis-Monitoring sowie die Gesetzesfolgen- und Nachhaltigkeitsprüfung nach GGO mit eNAP/eGFA als digitaler Unterstützung.\n\nDiese Architektur ist weder bloß Kommunikation noch identisch mit einer vollständigen Kausal- oder Wirkungsanalyse jedes Einzelvorhabens. Sie muss bei jeder fairen Abgrenzung der Wirkungsökonomie als bestehendes institutionelles System anerkannt werden."
+      "shortDefinition": "Die staatliche Nachhaltigkeits- und Folgenprüfungsarchitektur des Bundes ist nach Entscheidungstyp verteilt: GGO/GFA/eNAP für Regelungsvorhaben, BHO/VV-BHO für finanzwirksame Maßnahmen sowie weitere objekt- und fachrechtliche Regime, soweit anwendbar.",
+      "definition": "Deutschland verfügt über eine mehrschichtige, objektspezifische Nachhaltigkeits- und Folgenprüfungsarchitektur. Dazu gehören die Deutsche Nachhaltigkeitsstrategie mit Zielen, Governance und Monitoring, die Gesetzesfolgen- und Nachhaltigkeitsprüfung nach GGO mit eNAP/eGFA für Regelungsvorhaben sowie § 7 BHO und die VV-BHO für finanzwirksame Maßnahmen. Die VV-BHO konkretisiert Planung und Erfolgskontrolle mit Zielerreichungs-, Wirkungs- und Wirtschaftlichkeitskontrolle. KSG, KAnG und sektorale Evaluationsregime kommen nur bei sachlicher Anwendbarkeit hinzu.\n\nDiese Architektur ist weder bloß Kommunikation noch identisch mit einer vollständigen Kausal- oder Wirkungsanalyse jedes Einzelvorhabens. Fehlende öffentliche Dokumentation beweist nicht, dass keine Prüfung stattgefunden hat. Die jeweils anwendbaren staatlichen Rahmen müssen bei einer fairen WÖk-Abgrenzung zuerst objektspezifisch ausgewiesen werden."
     },
     {
       "id": "state-gfa-enap-benchmark",

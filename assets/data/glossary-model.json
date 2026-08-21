@@ -33317,6 +33317,34 @@
       "version": "1.0"
     },
     {
+      "id": "state-assessment-benchmark",
+      "term": "Objektspezifischer staatlicher Prüfbenchmark",
+      "slug": "state-assessment-benchmark",
+      "shortDefinition": "Der objektspezifische staatliche Prüfbenchmark dokumentiert für eine konkrete staatliche Entscheidung, welche amtlichen Prüf-, Bewertungs- und Kontrollrahmen gelten und was daraus öffentlich belegt ist.",
+      "longDefinition": "Staatliche Prüfung ist nicht auf ein einheitliches Verfahren reduziert. Der Benchmark erfasst je Objekt die anwendbaren staatlichen Rahmen: für Regelungsvorhaben insbesondere GGO, GFA, Nachhaltigkeitsprüfung und eNAP/eGFA; für finanzwirksame Maßnahmen § 7 BHO und die VV-BHO; KSG § 13, KAnG § 8, DNS-Governance und sektorale Evaluationsregime nur bei sachlicher Anwendbarkeit. Dokumentiert werden staatliche Problem- oder Bedarfsprüfung, Optionsvergleich, Ex-ante-Folgenprüfung, Erfolgs- oder Wirkungskontrolle, Zurechnungsmethode und öffentlicher Dokumentationsstand.\n\nFehlende öffentliche Unterlagen bedeuten nicht automatisch, dass keine Prüfung stattfand. Der Benchmark bleibt von der unabhängigen WÖk-Analyse getrennt und erzeugt weder Wirkungsrichtung noch DNS-Zuordnung noch Empfehlung.",
+      "synonyms": [
+        "Objektspezifischer staatlicher Prüfbenchmark",
+        "staatlicher Prüfbenchmark",
+        "State Assessment Benchmark",
+        "STATE_ASSESSMENT_BENCHMARK"
+      ],
+      "relatedTerms": [
+        "staatliche-nachhaltigkeitsarchitektur",
+        "state-gfa-enap-benchmark",
+        "gesetzesfolgenabschaetzung",
+        "ex-ante-folgenpruefung-reality-check",
+        "zielbezug-vs-wirkung"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Messbegriff",
+      "status": "woek-instrument",
+      "version": "1.0"
+    },
+    {
       "id": "ocpp",
       "term": "OCPP",
       "slug": "ocpp",
@@ -47042,8 +47070,8 @@
       "id": "staatliche-nachhaltigkeitsarchitektur",
       "term": "Staatliche Nachhaltigkeitsarchitektur",
       "slug": "staatliche-nachhaltigkeitsarchitektur",
-      "shortDefinition": "Die staatliche Nachhaltigkeitsarchitektur des Bundes verbindet DNS, Ziele und Indikatoren, ressortübergreifende Governance, Gesetzesfolgen- und Nachhaltigkeitsprüfung, eNAP/eGFA und Monitoring.",
-      "longDefinition": "Deutschland verfügt über eine mehrschichtige Nachhaltigkeits- und Folgenprüfungsarchitektur. Dazu gehören die Deutsche Nachhaltigkeitsstrategie als nationaler Ziel- und Managementrahmen, der Staatssekretärsausschuss und weitere Governance-Akteure, DNS-Indikatoren und Destatis-Monitoring sowie die Gesetzesfolgen- und Nachhaltigkeitsprüfung nach GGO mit eNAP/eGFA als digitaler Unterstützung.\n\nDiese Architektur ist weder bloß Kommunikation noch identisch mit einer vollständigen Kausal- oder Wirkungsanalyse jedes Einzelvorhabens. Sie muss bei jeder fairen Abgrenzung der Wirkungsökonomie als bestehendes institutionelles System anerkannt werden.",
+      "shortDefinition": "Die staatliche Nachhaltigkeits- und Folgenprüfungsarchitektur des Bundes ist nach Entscheidungstyp verteilt: GGO/GFA/eNAP für Regelungsvorhaben, BHO/VV-BHO für finanzwirksame Maßnahmen sowie weitere objekt- und fachrechtliche Regime, soweit anwendbar.",
+      "longDefinition": "Deutschland verfügt über eine mehrschichtige, objektspezifische Nachhaltigkeits- und Folgenprüfungsarchitektur. Dazu gehören die Deutsche Nachhaltigkeitsstrategie mit Zielen, Governance und Monitoring, die Gesetzesfolgen- und Nachhaltigkeitsprüfung nach GGO mit eNAP/eGFA für Regelungsvorhaben sowie § 7 BHO und die VV-BHO für finanzwirksame Maßnahmen. Die VV-BHO konkretisiert Planung und Erfolgskontrolle mit Zielerreichungs-, Wirkungs- und Wirtschaftlichkeitskontrolle. KSG, KAnG und sektorale Evaluationsregime kommen nur bei sachlicher Anwendbarkeit hinzu.\n\nDiese Architektur ist weder bloß Kommunikation noch identisch mit einer vollständigen Kausal- oder Wirkungsanalyse jedes Einzelvorhabens. Fehlende öffentliche Dokumentation beweist nicht, dass keine Prüfung stattgefunden hat. Die jeweils anwendbaren staatlichen Rahmen müssen bei einer fairen WÖk-Abgrenzung zuerst objektspezifisch ausgewiesen werden.",
       "synonyms": [
         "Staatliche Nachhaltigkeitsarchitektur",
         "staatliche Nachhaltigkeits- und Folgenprüfungsarchitektur",
@@ -47057,7 +47085,8 @@
         "enap",
         "egesetzgebung-egfa",
         "dns-indikator",
-        "parlamentarischer-beirat-nachhaltige-entwicklung"
+        "parlamentarischer-beirat-nachhaltige-entwicklung",
+        "state-assessment-benchmark"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -47081,6 +47110,7 @@
         "STATE_GFA_ENAP_BENCHMARK"
       ],
       "relatedTerms": [
+        "state-assessment-benchmark",
         "gesetzesfolgenabschaetzung",
         "nachhaltigkeitspruefung-bund",
         "enap",
