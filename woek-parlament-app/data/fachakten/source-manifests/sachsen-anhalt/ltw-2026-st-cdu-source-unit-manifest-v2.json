@@ -1,6 +1,6 @@
 {
   "schema_version": "1.1",
-  "manifest_version": "2026-08-21-p89-restore-3",
+  "manifest_version": "2026-08-21-primary-parity-4",
   "manifest_status": "PARTIAL_PRIMARY_SOURCE_RECONCILIATION_CONTINUE_FULL_PROGRAMME_PARITY",
   "composition_mode": "IMMUTABLE_RELEASE1_BASE_PLUS_ADDITIVE_VERSIONED_SOURCE_UNITS",
   "programme_key": "ltw-2026-st-cdu",
@@ -143,226 +143,236 @@
         "Bekenntnis zu Freiheit, Demokratie, Rechtsstaatlichkeit und Subsidiarität",
         "wirtschaftlich wettbewerbsfähig bleibt als behaupteter Ziel-/Outcome-Satz"
       ]
+    },
+    {
+      "legacy_source_unit": "ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa",
+      "classification": "TRUNCATED_OVERMERGED_MULTI_MECHANISM_PARENT",
+      "parent_terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "children": [
+        {
+          "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0250-BIOTOPE-CONNECTIVITY",
+          "parent_legacy_source_unit": "ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa",
+          "mechanism": "Rückzugsgebiete durch bessere Biotopvernetzung sichern und Biodiversitätsstrategie überarbeiten",
+          "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED",
+          "impact_direction": "POSITIVE",
+          "evidence_level": "MEDIUM",
+          "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE"
+        },
+        {
+          "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0250-INVASIVE-SPECIES",
+          "parent_legacy_source_unit": "ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa",
+          "mechanism": "besonderes Augenmerk auf invasive Arten",
+          "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED",
+          "impact_direction": "AMBIVALENT",
+          "evidence_level": "LOW",
+          "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE"
+        },
+        {
+          "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0250-SPECIES-STATUS",
+          "parent_legacy_source_unit": "ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa",
+          "mechanism": "Schutzstatus von Arten überprüfbar machen",
+          "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED",
+          "impact_direction": "AMBIVALENT",
+          "evidence_level": "LOW",
+          "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE"
+        },
+        {
+          "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0250-WILDLIFE-DAMAGE",
+          "parent_legacy_source_unit": "ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa",
+          "mechanism": "Wildschadensausgleich zur Stärkung der Akzeptanz des Artenschutzes",
+          "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED",
+          "impact_direction": "AMBIVALENT",
+          "evidence_level": "LOW",
+          "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE"
+        },
+        {
+          "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0250-VOLUNTEER-CONSERVATION",
+          "parent_legacy_source_unit": "ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa",
+          "mechanism": "ehrenamtlichen Naturschutz stärken und in Fachgremien beteiligen",
+          "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED",
+          "impact_direction": "POSITIVE",
+          "evidence_level": "LOW",
+          "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE"
+        },
+        {
+          "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0250-BNE",
+          "parent_legacy_source_unit": "ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa",
+          "mechanism": "Bildung für nachhaltige Entwicklung ressortübergreifend stärken",
+          "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED",
+          "impact_direction": "POSITIVE",
+          "evidence_level": "LOW",
+          "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE"
+        }
+      ]
+    },
+    {
+      "legacy_source_unit": "ltw-2026-st-cdu-0319-neue-wege-fuer-einen-zukunftsfaehigen-tourismus-der-touris",
+      "classification": "OVERMERGED_MULTI_MECHANISM_PARENT",
+      "parent_terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "children": [
+        {
+          "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0319-TREND-DIGITAL",
+          "parent_legacy_source_unit": "ltw-2026-st-cdu-0319-neue-wege-fuer-einen-zukunftsfaehigen-tourismus-der-touris",
+          "mechanism": "touristische Trends erkennen und Digitalisierung als Entwicklungshebel nutzen",
+          "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "impact_direction": "OPEN",
+          "evidence_level": "NOT_ASSESSABLE",
+          "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE"
+        },
+        {
+          "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0319-NATURE-EXPERIENCE",
+          "parent_legacy_source_unit": "ltw-2026-st-cdu-0319-neue-wege-fuer-einen-zukunftsfaehigen-tourismus-der-touris",
+          "mechanism": "naturnahe Erlebniskonzepte mit Kultur, Landschaftspflege und nachhaltigen Nutzflächen verbinden",
+          "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED",
+          "impact_direction": "AMBIVALENT",
+          "evidence_level": "LOW",
+          "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE"
+        },
+        {
+          "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0319-MUNICIPAL-PRIORITY",
+          "parent_legacy_source_unit": "ltw-2026-st-cdu-0319-neue-wege-fuer-einen-zukunftsfaehigen-tourismus-der-touris",
+          "mechanism": "höhere Priorisierung in tourismusrelevanten Kommunen",
+          "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "impact_direction": "OPEN",
+          "evidence_level": "NOT_ASSESSABLE",
+          "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE"
+        }
+      ],
+      "context_only_elements": [
+        "Tourismus als ökonomischen Wachstumsmotor weiter befördern ist Ziel-/Outcome-Frame, kein eigener Maßnahmenmechanismus."
+      ]
+    },
+    {
+      "legacy_source_unit": "ltw-2026-st-cdu-0323-landesweit-in-die-touristische-infrastruktur-investieren-o",
+      "classification": "OVERMERGED_MULTI_MECHANISM_PARENT",
+      "parent_terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "children": [
+        {
+          "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0323-ACTIVE-PT-ACCESS",
+          "parent_legacy_source_unit": "ltw-2026-st-cdu-0323-landesweit-in-die-touristische-infrastruktur-investieren-o",
+          "mechanism": "Radwege und ÖPNV-Zugang zu touristischen Hotspots verbessern",
+          "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED",
+          "impact_direction": "POSITIVE",
+          "evidence_level": "LOW",
+          "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE"
+        },
+        {
+          "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0323-DIGITAL-VISITOR-STEERING",
+          "parent_legacy_source_unit": "ltw-2026-st-cdu-0323-landesweit-in-die-touristische-infrastruktur-investieren-o",
+          "mechanism": "digitale Infrastruktur und Besucherlenkungssysteme ausbauen",
+          "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED",
+          "impact_direction": "POSITIVE",
+          "evidence_level": "LOW",
+          "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE"
+        },
+        {
+          "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0323-ENV-EDUCATION-NATURE",
+          "parent_legacy_source_unit": "ltw-2026-st-cdu-0323-landesweit-in-die-touristische-infrastruktur-investieren-o",
+          "mechanism": "Umweltbildung sowie naturnahe Nutz- und Erlebnisflächen fördern",
+          "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED",
+          "impact_direction": "AMBIVALENT",
+          "evidence_level": "LOW",
+          "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE"
+        },
+        {
+          "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0323-RESOURCE-EFFICIENT-MODEL-PROJECTS",
+          "parent_legacy_source_unit": "ltw-2026-st-cdu-0323-landesweit-in-die-touristische-infrastruktur-investieren-o",
+          "mechanism": "ressourcenschonende touristische Infrastruktur stärker fördern und in Modellprojekten erproben",
+          "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED",
+          "impact_direction": "POSITIVE",
+          "evidence_level": "LOW",
+          "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE"
+        }
+      ],
+      "context_only_elements": [
+        "bequem, barrierearm und sicher erleben als Zielzustand; Barrierefreiheit/Sicherheit sind Schutz- und Qualitätsbedingungen."
+      ]
     }
   ],
   "primary_source_diff": {
     "reconciled_segments": [
       {
         "segment_id": "CDU-P87-P89-EU-BUND",
-        "pdf_pages": [
-          87,
-          88,
-          89
-        ],
+        "pdf_pages": [87,88,89],
         "section": "Sachsen-Anhalt in Bund und Europa",
         "status": "SEMANTIC_RECONCILIATION_COMPLETE_FOR_SEGMENT",
         "items": [
-          {
-            "legacy_unit": "0334",
-            "classification": "CONTEXT_ONLY",
-            "action": "KEEP_VERSIONED_CONTEXT_NO_INDEPENDENT_EFFECT_COUNT"
-          },
-          {
-            "legacy_unit": "0335",
-            "classification": "SAME_WITH_BOUNDARY_ARTIFACT",
-            "action": "KEEP_ID; REMOVE_TRAILING_NEXT_BULLET_BRIDGE_ONLY_IN_VERSIONED_VIEW"
-          },
-          {
-            "legacy_unit": "0336",
-            "classification": "TRUNCATED",
-            "action": "SOURCE_TEXT_RESTORED_FROM_PRIMARY_PDF; KEEP_ID"
-          },
-          {
-            "legacy_unit": "0337",
-            "classification": "PARTIAL_PARENT",
-            "action": "CONTINUATION_CHILD_OF_0336; KEEP_ID; NO_SILENT_DELETE"
-          },
-          {
-            "legacy_unit": "0338",
-            "classification": "SAME",
-            "action": "KEEP_ID"
-          },
-          {
-            "legacy_unit": "0339",
-            "classification": "SAME",
-            "action": "KEEP_ID"
-          },
-          {
-            "legacy_unit": "0340",
-            "classification": "SAME",
-            "action": "KEEP_ID"
-          },
-          {
-            "legacy_unit": "0341",
-            "classification": "OVERMERGED",
-            "action": "VERSIONED_CHILD_SPLIT_ADDED; KEEP_PARENT_ID"
-          },
-          {
-            "legacy_unit": null,
-            "classification": "ABSENT",
-            "primary_source_unit": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001",
-            "action": "ADDITIVE_PARENT_RESTORED_AND_CHILD_SPLIT_ADDED"
-          },
-          {
-            "legacy_unit": "0342",
-            "classification": "SAME",
-            "action": "KEEP_ID"
-          },
-          {
-            "legacy_unit": "0343",
-            "classification": "SAME",
-            "action": "KEEP_ID"
-          },
-          {
-            "legacy_unit": "0344",
-            "classification": "SAME",
-            "action": "KEEP_ID"
-          }
+          {"legacy_unit":"0334","classification":"CONTEXT_ONLY","action":"KEEP_VERSIONED_CONTEXT_NO_INDEPENDENT_EFFECT_COUNT"},
+          {"legacy_unit":"0335","classification":"SAME_WITH_BOUNDARY_ARTIFACT","action":"KEEP_ID; REMOVE_TRAILING_NEXT_BULLET_BRIDGE_ONLY_IN_VERSIONED_VIEW"},
+          {"legacy_unit":"0336","classification":"TRUNCATED","action":"SOURCE_TEXT_RESTORED_FROM_PRIMARY_PDF; KEEP_ID"},
+          {"legacy_unit":"0337","classification":"PARTIAL_PARENT","action":"CONTINUATION_CHILD_OF_0336; KEEP_ID; NO_SILENT_DELETE"},
+          {"legacy_unit":"0338","classification":"SAME","action":"KEEP_ID"},
+          {"legacy_unit":"0339","classification":"SAME","action":"KEEP_ID"},
+          {"legacy_unit":"0340","classification":"SAME","action":"KEEP_ID"},
+          {"legacy_unit":"0341","classification":"OVERMERGED","action":"VERSIONED_CHILD_SPLIT_ADDED; KEEP_PARENT_ID"},
+          {"legacy_unit":null,"classification":"ABSENT","primary_source_unit":"ST-CDU-PRIMARY-GAP-EU-CLIMATE-001","action":"ADDITIVE_PARENT_RESTORED_AND_CHILD_SPLIT_ADDED"},
+          {"legacy_unit":"0342","classification":"SAME","action":"KEEP_ID"},
+          {"legacy_unit":"0343","classification":"SAME","action":"KEEP_ID"},
+          {"legacy_unit":"0344","classification":"SAME","action":"KEEP_ID"}
+        ]
+      },
+      {
+        "segment_id": "CDU-P66-P67-NATURE-0250",
+        "pdf_pages": [66,67],
+        "section": "Die Natur – Unsere Heimat",
+        "status": "TARGETED_SEMANTIC_RECONCILIATION_COMPLETE_FOR_0250",
+        "items": [
+          {"legacy_unit":"0250","classification":"TRUNCATED_AND_OVERMERGED","action":"SOURCE_TEXT_RESTORED; VERSIONED_6_CHILD_SPLIT_ADDED; KEEP_PARENT_ID"}
+        ]
+      },
+      {
+        "segment_id": "CDU-P84-P85-TOURISM-0319-0323",
+        "pdf_pages": [84,85],
+        "section": "Sachsen-Anhalt – Immer eine Reise wert",
+        "status": "TARGETED_SEMANTIC_RECONCILIATION_COMPLETE_FOR_0319_0323",
+        "items": [
+          {"legacy_unit":"0319","classification":"OVERMERGED","action":"VERSIONED_3_CHILD_SPLIT_ADDED; KEEP_PARENT_ID"},
+          {"legacy_unit":"0320","classification":"SAME","action":"KEEP_ID"},
+          {"legacy_unit":"0321","classification":"TRUNCATED_PARTIAL_PARENT","action":"SOURCE_TEXT_RESTORED; STRATEGY_PARENT_KEEP_ID"},
+          {"legacy_unit":"0322","classification":"PARTIAL_PARENT","action":"STREET_ANHALT_CONTINUATION_CHILD_OF_0321; KEEP_ID; NO_SILENT_DELETE"},
+          {"legacy_unit":"0323","classification":"OVERMERGED","action":"VERSIONED_4_CHILD_SPLIT_ADDED; KEEP_PARENT_ID"}
         ]
       }
     ],
     "known_full_programme_findings_requiring_manifest_reconciliation": [
-      {
-        "legacy_unit": "0002",
-        "classification": "TRUNCATED",
-        "status": "FACH_REVIEW_ALREADY_SOURCE_RESTORED"
-      },
-      {
-        "legacy_unit": "0003",
-        "classification": "TRUNCATED",
-        "status": "FACH_REVIEW_ALREADY_SOURCE_RESTORED"
-      },
-      {
-        "legacy_unit": "0008",
-        "classification": "TRUNCATED",
-        "status": "FACH_REVIEW_ALREADY_SOURCE_RESTORED"
-      },
-      {
-        "legacy_unit": "0049",
-        "classification": "TRUNCATED",
-        "status": "FACH_REVIEW_ALREADY_SOURCE_RESTORED"
-      },
-      {
-        "legacy_unit": "0054",
-        "classification": "TRUNCATED",
-        "status": "FACH_REVIEW_ALREADY_SOURCE_RESTORED"
-      },
-      {
-        "legacy_unit": "0062",
-        "classification": "TRUNCATED",
-        "status": "FACH_REVIEW_ALREADY_SOURCE_RESTORED"
-      },
-      {
-        "legacy_unit": "0068",
-        "classification": "TRUNCATED",
-        "status": "FACH_REVIEW_ALREADY_SOURCE_RESTORED"
-      },
-      {
-        "legacy_unit": "0090",
-        "classification": "TRUNCATED",
-        "status": "FACH_REVIEW_ALREADY_SOURCE_RESTORED"
-      },
-      {
-        "legacy_unit": "0095",
-        "classification": "TRUNCATED",
-        "status": "FACH_REVIEW_ALREADY_SOURCE_RESTORED"
-      },
-      {
-        "legacy_unit": "0108",
-        "classification": "TRUNCATED",
-        "status": "FACH_REVIEW_ALREADY_SOURCE_RESTORED"
-      },
-      {
-        "legacy_unit": "0124",
-        "classification": "TRUNCATED",
-        "status": "FACH_REVIEW_ALREADY_SOURCE_RESTORED"
-      },
-      {
-        "legacy_unit": "0142",
-        "classification": "TRUNCATED",
-        "status": "FACH_REVIEW_ALREADY_SOURCE_RESTORED"
-      },
-      {
-        "legacy_unit": "0222",
-        "classification": "TRUNCATED",
-        "status": "FACH_REVIEW_ALREADY_SOURCE_RESTORED"
-      },
-      {
-        "legacy_unit": "0228",
-        "classification": "TRUNCATED_PARENT_GOAL",
-        "status": "FACH_REVIEW_ALREADY_SOURCE_RESTORED_AND_TERMINAL"
-      },
-      {
-        "legacy_unit": "0250",
-        "classification": "OVERMERGED",
-        "status": "PARENT_TERMINAL_CHILD_MANIFEST_RECONCILIATION_PENDING"
-      },
-      {
-        "legacy_unit": "0263",
-        "classification": "TRUNCATED",
-        "status": "FACH_REVIEW_ALREADY_SOURCE_RESTORED"
-      },
-      {
-        "legacy_unit": "0278",
-        "classification": "TRUNCATED",
-        "status": "FACH_REVIEW_ALREADY_SOURCE_RESTORED"
-      },
-      {
-        "legacy_unit": "0283",
-        "classification": "TRUNCATED",
-        "status": "FACH_REVIEW_ALREADY_SOURCE_RESTORED"
-      },
-      {
-        "legacy_unit": "0291",
-        "classification": "TRUNCATED_PARENT",
-        "status": "FACH_REVIEW_ALREADY_SOURCE_RESTORED_AND_VERSIONED_PARENT"
-      },
-      {
-        "legacy_unit": "0319",
-        "classification": "OVERMERGED",
-        "status": "PARENT_TERMINAL_CHILD_MANIFEST_RECONCILIATION_PENDING"
-      },
-      {
-        "legacy_unit": "0321",
-        "classification": "TRUNCATED",
-        "status": "FACH_REVIEW_ALREADY_SOURCE_RESTORED"
-      },
-      {
-        "legacy_unit": "0323",
-        "classification": "OVERMERGED",
-        "status": "PARENT_TERMINAL_CHILD_MANIFEST_RECONCILIATION_PENDING"
-      },
-      {
-        "legacy_unit": "0336",
-        "classification": "TRUNCATED",
-        "status": "RECONCILED_IN_CDU-P87-P89-EU-BUND"
-      },
-      {
-        "legacy_unit": "0341",
-        "classification": "OVERMERGED",
-        "status": "RECONCILED_IN_CDU-P87-P89-EU-BUND"
-      }
+      {"legacy_unit":"0002","classification":"TRUNCATED","status":"FACH_REVIEW_ALREADY_SOURCE_RESTORED"},
+      {"legacy_unit":"0003","classification":"TRUNCATED","status":"FACH_REVIEW_ALREADY_SOURCE_RESTORED"},
+      {"legacy_unit":"0008","classification":"TRUNCATED","status":"FACH_REVIEW_ALREADY_SOURCE_RESTORED"},
+      {"legacy_unit":"0049","classification":"TRUNCATED","status":"FACH_REVIEW_ALREADY_SOURCE_RESTORED"},
+      {"legacy_unit":"0054","classification":"TRUNCATED","status":"FACH_REVIEW_ALREADY_SOURCE_RESTORED"},
+      {"legacy_unit":"0062","classification":"TRUNCATED","status":"FACH_REVIEW_ALREADY_SOURCE_RESTORED"},
+      {"legacy_unit":"0068","classification":"TRUNCATED","status":"FACH_REVIEW_ALREADY_SOURCE_RESTORED"},
+      {"legacy_unit":"0090","classification":"TRUNCATED","status":"FACH_REVIEW_ALREADY_SOURCE_RESTORED"},
+      {"legacy_unit":"0095","classification":"TRUNCATED","status":"FACH_REVIEW_ALREADY_SOURCE_RESTORED"},
+      {"legacy_unit":"0108","classification":"TRUNCATED","status":"FACH_REVIEW_ALREADY_SOURCE_RESTORED"},
+      {"legacy_unit":"0124","classification":"TRUNCATED","status":"FACH_REVIEW_ALREADY_SOURCE_RESTORED"},
+      {"legacy_unit":"0142","classification":"TRUNCATED","status":"FACH_REVIEW_ALREADY_SOURCE_RESTORED"},
+      {"legacy_unit":"0222","classification":"TRUNCATED","status":"FACH_REVIEW_ALREADY_SOURCE_RESTORED"},
+      {"legacy_unit":"0228","classification":"TRUNCATED_PARENT_GOAL","status":"FACH_REVIEW_ALREADY_SOURCE_RESTORED_AND_TERMINAL"},
+      {"legacy_unit":"0250","classification":"OVERMERGED","status":"CHILD_SPLIT_RECONCILED_AND_TERMINAL"},
+      {"legacy_unit":"0263","classification":"TRUNCATED","status":"FACH_REVIEW_ALREADY_SOURCE_RESTORED"},
+      {"legacy_unit":"0278","classification":"TRUNCATED","status":"FACH_REVIEW_ALREADY_SOURCE_RESTORED"},
+      {"legacy_unit":"0283","classification":"TRUNCATED","status":"FACH_REVIEW_ALREADY_SOURCE_RESTORED"},
+      {"legacy_unit":"0291","classification":"TRUNCATED_PARENT","status":"FACH_REVIEW_ALREADY_SOURCE_RESTORED_AND_VERSIONED_PARENT"},
+      {"legacy_unit":"0319","classification":"OVERMERGED","status":"CHILD_SPLIT_RECONCILED_AND_TERMINAL"},
+      {"legacy_unit":"0321","classification":"TRUNCATED","status":"FACH_REVIEW_ALREADY_SOURCE_RESTORED"},
+      {"legacy_unit":"0323","classification":"OVERMERGED","status":"CHILD_SPLIT_RECONCILED_AND_TERMINAL"},
+      {"legacy_unit":"0336","classification":"TRUNCATED","status":"RECONCILED_IN_CDU-P87-P89-EU-BUND"},
+      {"legacy_unit":"0341","classification":"OVERMERGED","status":"RECONCILED_IN_CDU-P87-P89-EU-BUND"}
     ],
     "complete_pdf_vs_manifest_pass": false
   },
   "primary_source_parity": {
-    "required_passage_classifications": [
-      "SAME",
-      "ABSENT",
-      "PARTIAL_PARENT",
-      "OVERMERGED",
-      "TRUNCATED",
-      "CONTEXT_ONLY"
-    ],
+    "required_passage_classifications": ["SAME","ABSENT","PARTIAL_PARENT","OVERMERGED","TRUNCATED","CONTEXT_ONLY"],
     "release1_rows_terminal": 344,
     "additive_primary_passages_terminal": 1,
-    "versioned_mechanism_children_terminal_this_manifest": 8,
+    "versioned_mechanism_children_terminal_this_manifest": 21,
     "known_material_omissions_restored": 1,
     "known_source_restore_gaps": 0,
     "full_programme_semantic_reconciliation_complete": false,
     "primary_source_parity_status": "PENDING_FULL_PROGRAMME_SEMANTIC_RECONCILIATION",
     "authoritative_denominator_frozen": false,
     "public_projection_count_status": "SEPARATE_TECHNICAL_GATE_PENDING",
-    "note": "The immutable 344-row Release-1 base plus the restored page-89 passage and versioned mechanism children are not an authoritative final CDU denominator. Freeze only after every effect-bearing passage in the final official programme has been semantically reconciled and every ABSENT/PARTIAL_PARENT/OVERMERGED/TRUNCATED finding is versioned and terminally reviewed."
+    "note": "The immutable 344-row Release-1 base plus the restored page-89 passage and 21 versioned mechanism children are not an authoritative final CDU denominator. Freeze only after every effect-bearing passage in the final official programme has been semantically reconciled and every ABSENT/PARTIAL_PARENT/OVERMERGED/TRUNCATED finding is versioned and terminally reviewed."
   }
 }
