@@ -33,6 +33,11 @@ jobs:
         run: python -m pip install --upgrade pip openpyxl pymupdf pypdf python-docx reportlab
       - name: Build static reference data and search
         run: WOEK_PDF_BUILD_MODE=verify npm run build
+      - name: Verify #253 state sustainability architecture
+        run: |
+          python tools/check_state_sustainability_architecture.py
+          python tools/audit_state_sustainability_architecture_fast.py --root . --output artifacts/state-sustainability-architecture-url-matrix.json --markdown artifacts/state-sustainability-architecture-url-matrix.md
+          python tools/audit_state_sustainability_support_files.py --root . --matrix artifacts/state-sustainability-architecture-url-matrix.json --markdown artifacts/state-sustainability-architecture-url-matrix.md
       - name: Build Parliament and Institute information pages
         run: npm run build:parlament-info
       - name: Build public deploy artifact
