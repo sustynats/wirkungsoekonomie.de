@@ -27,7 +27,7 @@ function addJsonLd(html) {
   if (html.includes('application/ld+json')) return html;
   const title = (html.match(/<title>([^<]+)<\/title>/) || [,"Akademie für Wirkungsökonomie"])[1];
   const canonical = (html.match(/<link rel="canonical" href="([^"]+)"/) || [,"https://wirkungsoekonomie.de/akademie.html"])[1];
-  const description = (html.match(/<meta name="description" content="([^"]*)"/) || [,""])[1];
+  const description = (html.match(/<meta name="description" content="([^"]*)"/) || [,{ }])[1] || "";
   const payload = {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -62,6 +62,15 @@ for (const rel of GENERATED_ROUTES) {
     .replaceAll("Modus: auto.", "Automatisiert.")
     .replaceAll("Modus: mixed_auto_manual.", "Kombiniert: automatisierte und manuell geprüfte Bestandteile.")
     .replaceAll("Modus: manual_rubric.", "Manuell anhand einer transparenten Bewertungsrubric geprüft.");
+
+  // Public privacy copy may explain the separation without echoing the
+  // secret-bearing key labels that the fail-closed scanner intentionally bans.
+  if (rel === "akademie/pruefungen.html") {
+    html = html.replace(
+      "Lösungsschlüssel, Correct Answers und Instructor-Rubrics sind nicht Bestandteil des öffentlichen Public-Masters.",
+      "Interne Prüfungsantworten und Bewertungsrubrics sind nicht Bestandteil des öffentlichen Public-Masters."
+    );
+  }
 
   // Active offering cards link to the canonical Academy application.
   if (rel === "akademie/weiterbildung.html") {
