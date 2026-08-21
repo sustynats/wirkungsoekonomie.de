@@ -394,7 +394,7 @@ export function SaxonyAnhaltProgrammeAnalysisV3({ programme, review, commitments
         <h2>Keine Wahlempfehlung. Keine Partei-Gesamtnote.</h2>
         <p>Bewertet werden konkrete Vorschläge, Wirkpfade, Risiken und Schutzgrenzen. Breite Programme haben regelmäßig mehrere Richtungen zugleich.</p>
         <dl>
-          <div><dt>Quellengebundene Zusagen</dt><dd>{model.commitmentCount.toLocaleString("de-DE")}</dd></div>
+          <div><dt>Zusageeinheiten im aktuellen Quellenregister</dt><dd>{model.commitmentCount.toLocaleString("de-DE")}</dd></div>
           <div><dt>Redaktionell nachgeprüfte Schlüsselpfade</dt><dd>{reviewedCount}</dd></div>
           <div><dt>Analyseperspektive</dt><dd>Ex ante - Wirkungspotenzial, keine behauptete Ist-Wirkung</dd></div>
           {decisionDate && <div><dt>Programmbeschluss</dt><dd>{decisionDate}</dd></div>}
@@ -461,7 +461,7 @@ export function SaxonyAnhaltProgrammeAnalysisV3({ programme, review, commitments
     <section id="woek-kurzbewertung" aria-labelledby="kurzstatus-title">
       <div className={styles.sectionHeader}><p className={styles.eyebrow}>Analyseumfang</p><h2 id="kurzstatus-title">Was ist geprüft - und was bleibt offen?</h2></div>
       <div className={styles.detailGrid}>
-        <article className={styles.detailCard}><h4>Zusagen</h4><p><strong>{model.commitmentCount.toLocaleString("de-DE")}</strong> quellengebundene Einheiten</p></article>
+        <article className={styles.detailCard}><h4>Aktuelles Quellenregister</h4><p><strong>{model.commitmentCount.toLocaleString("de-DE")}</strong> Einträge im versionierten Arbeitsregister; finale Source-Unit-Parität offen</p></article>
         <article className={styles.detailCard}><h4>Entscheidungsreife</h4><p>{counts.readiness.slice(0, 2).map(([status, count]) => `${count} ${publicProgrammeStatus(status)}`).join(" · ") || "offen"}</p></article>
         <article className={styles.detailCard}><h4>Schutzgrenzen</h4><p><strong>{counts.boundaries.toLocaleString("de-DE")}</strong> Zusagen mit ausgewiesener Schutzprüfung im Altbestand</p></article>
         <article className={styles.detailCard}><h4>Editorial v2.0</h4><p><strong>{reviewedCount}</strong> Schlüsselpfade objektspezifisch nachgeprüft; übrige Richtungen fail-closed</p></article>
@@ -486,8 +486,8 @@ export function SaxonyAnhaltProgrammeAnalysisV3({ programme, review, commitments
     </section>
 
     <section id="vollstaendiges-zusageregister" aria-labelledby="register-title">
-      <div className={styles.sectionHeader}><p className={styles.eyebrow}>Originalzusagen</p><h2 id="register-title">Quelle vor Interpretation.</h2><p>Das vollständige Register bleibt erhalten. Es trennt den Wortlaut des Programms von der WÖk-Einordnung.</p></div>
-      <details className={styles.proof}><summary>Vollständiges Zusageregister öffnen <span className={styles.summaryTeaser}>{model.commitments.length.toLocaleString("de-DE")} Einträge</span></summary><div className={styles.proofBody}>
+      <div className={styles.sectionHeader}><p className={styles.eyebrow}>Originalzusagen</p><h2 id="register-title">Quelle vor Interpretation.</h2><p>Das aktuell versionierte Arbeitsregister bleibt nachvollziehbar erhalten. Primary-Source-Parity und Editorial-v2+-Re-Audit können zusätzliche oder gesplittete Source-Units ergänzen; das finale Source-Unit-Manifest und der endgültige Nenner sind noch nicht eingefroren.</p></div>
+      <details className={styles.proof}><summary>Versioniertes Arbeitsregister öffnen <span className={styles.summaryTeaser}>{model.commitments.length.toLocaleString("de-DE")} Einträge im aktuellen Register</span></summary><div className={styles.proofBody}>
         {model.commitments.map((commitment) => <p key={`register-${commitment.key}`}><strong>{commitment.index}.</strong> {commitment.sourceText}{commitment.page ? ` · Seite ${commitment.page}` : ""}</p>)}
       </div></details>
     </section>

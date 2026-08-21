@@ -12,7 +12,7 @@ const saxonyAnhalt = jurisdictionById("sachsen-anhalt");
 
 export const metadata = {
   title: "Landtagswahl Sachsen-Anhalt 2026 · WÖk-Wahlprogrammanalysen",
-  description: "Sechs Wahlprogramme mit Gesamtzusammenfassung, Key Findings, redaktionell nachgeprüften Schlüsselpfaden, Quellen und vollständigem Zusageregister."
+  description: "Sechs Wahlprogramme mit Gesamtzusammenfassung, Key Findings, redaktionell nachgeprüften Schlüsselpfaden, Quellen und versioniertem Zusageregister."
 };
 
 function directionLabel(direction: ProgrammeDirection) {
@@ -71,7 +71,7 @@ export default function SaxonyAnhaltPage() {
       </section>
 
       <section className="shell section section-surface state-publication-status" aria-labelledby="state-status-title">
-        <div><p className="eyebrow">Qualitäts-Re-Audit</p><h2 id="state-status-title">Die alte Fachbasis bleibt erhalten - die öffentliche Bewertung wird strenger.</h2><p className="lead">Der Release-1-Bestand enthält vollständige Quellen- und Fachdatensätze, aber auch generische Politikfeld-Templates und einzelne Fehlzuordnungen oder Quellkollisionen. Die neue Lesefassung übernimmt solche Felder nicht mehr ungeprüft in die Kurzbewertung.</p></div>
+        <div><p className="eyebrow">Qualitäts-Re-Audit</p><h2 id="state-status-title">Die alte Fachbasis bleibt erhalten - die öffentliche Bewertung wird strenger.</h2><p className="lead">Der Release-1-Bestand enthält umfangreiche versionierte Quellen- und Fachdatensätze, aber auch generische Politikfeld-Templates und einzelne Fehlzuordnungen oder Quellkollisionen. Die neue Lesefassung übernimmt solche Felder nicht mehr ungeprüft in die Kurzbewertung.</p></div>
         <ul>
           <li><strong>1. Potenzialbefund + Gesamtzusammenfassung</strong><span>Jedes Programm erhält einen explizit bezeichneten qualitativen WÖk-Potenzialbefund und alle freigegebenen Key Findings statt einer bloßen Zusagenstatistik.</span></li>
           <li><strong>2. Richtung + Evidenz</strong><span>Redaktionell nachgeprüfte Schlüsselpfade zeigen Richtung, Begründung und Evidenz getrennt. Nicht nachgeprüfte Details bleiben ausdrücklich offen.</span></li>
@@ -84,7 +84,7 @@ export default function SaxonyAnhaltPage() {
         <div className="source-register state-programme-register">
           {saxonyAnhaltElectionProgrammes.map((programme) => {
             const review = reviewBySource.get(programme.sourceKey);
-            const analysedCount = saxonyAnhaltReviewedCommitmentCounts[programme.sourceKey];
+            const workingRegisterCount = saxonyAnhaltReviewedCommitmentCounts[programme.sourceKey];
             const editorial = saxonyAnhaltProgrammeEditorial(programme.sourceKey);
             const directionCounts: Record<ProgrammeDirection, number> = { POSITIVE: 0, NEGATIVE: 0, AMBIVALENT: 0, OPEN: 0 };
             for (const assessment of Object.values(editorial?.centralAssessments ?? {})) directionCounts[assessment.direction] += 1;
@@ -115,9 +115,9 @@ export default function SaxonyAnhaltPage() {
                 evidenceSummary: editorial.readingGuide,
               }) : factOnlyPublicMaturity(programme.title)} compact />
               <div data-woek-process-metadata>
-                <p className="commitment-count"><strong>{analysedCount?.toLocaleString("de-DE") ?? "-"} fachlich analysierte Zusageeinheiten</strong> · Quellenregister und historische Fachquelle bleiben separat vollständig abrufbar</p>
+                <p className="commitment-count"><strong>{workingRegisterCount?.toLocaleString("de-DE") ?? "-"} Zusageeinheiten im aktuellen Quellenregister</strong> · Primärquellen-Paritätsabgleich und Editorial-v2+-Vollreaudit laufen; der finale Nenner ist noch nicht eingefroren</p>
               </div>
-              {review ? <Link className="text-link" href={`/laender/sachsen-anhalt/wahlprogramme/${programme.sourceKey}`}>Die vollständige WÖk-Wirkungsakte öffnen <span aria-hidden="true">→</span></Link> : <p><strong>Fachakte derzeit nicht verfügbar.</strong></p>}
+              {review ? <Link className="text-link" href={`/laender/sachsen-anhalt/wahlprogramme/${programme.sourceKey}`}>Die versionierte WÖk-Wirkungsakte öffnen <span aria-hidden="true">→</span></Link> : <p><strong>Fachakte derzeit nicht verfügbar.</strong></p>}
             </article>;
           })}
         </div>
