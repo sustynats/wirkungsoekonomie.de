@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T14:59:38.910Z",
+  "generatedAt": "2026-08-21T00:00:00.000Z",
   "schema": {
     "term": "canonicalLabel",
     "shortDefinition": "shortDefinition",
@@ -8872,6 +8872,7 @@
         "Nachhaltigkeitsstrategie des Bundes"
       ],
       "relatedTerms": [
+        "sdg-sdgplus-referenzrahmen",
         "sdg-plus",
         "dns-indikator",
         "referenzrahmen",
@@ -13765,7 +13766,9 @@
         "gesetzesfolgenabschaetzung",
         "wirkungsmonitoring",
         "wirkungsrueckkopplung",
-        "attributionsforschung"
+        "evidenz-und-annahmenregister",
+        "attributionsforschung",
+        "lern-und-rueckkopplungsarchitektur"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -16510,6 +16513,36 @@
       "relatedObjections": [],
       "category": "Wirtschaftssysteme, Kapitalmythen und Verteilungslogiken",
       "status": "wirtschaftssystem-gesellschaftsmodell",
+      "version": "1.0"
+    },
+    {
+      "id": "gemeinsame-geschaeftsordnung-bundesministerien",
+      "term": "Gemeinsame Geschäftsordnung der Bundesministerien (GGO)",
+      "slug": "gemeinsame-geschaeftsordnung-der-bundesministerien",
+      "shortDefinition": "Die GGO ist die gemeinsame Verwaltungsvorschrift für die Arbeit der Bundesministerien; §§ 43 und 44 regeln zentrale Anforderungen an Gesetzesbegründung und Gesetzesfolgenabschätzung.",
+      "longDefinition": "Die Gemeinsame Geschäftsordnung der Bundesministerien strukturiert die Vorbereitung und Zusammenarbeit der Bundesministerien. Für die Folgen- und Nachhaltigkeitsprüfung sind besonders §§ 43 und 44 wichtig. § 43 nennt Anforderungen an die Begründung von Gesetzentwürfen, darunter Zielsetzung und Notwendigkeit, Sachverhalt und Erkenntnisquellen sowie andere Lösungsmöglichkeiten. § 44 definiert Gesetzesfolgen als wesentliche Auswirkungen einschließlich beabsichtigter Wirkungen und unbeabsichtigter Nebenwirkungen, verlangt die Darstellung des Nachhaltigkeitsbezugs und enthält Vorgaben zur späteren Überprüfung.\n\nDie GGO ist eine amtliche Verwaltungsvorschrift und nicht mit der Deutschen Nachhaltigkeitsstrategie, eNAP oder der unabhängigen WÖk-Methodik gleichzusetzen.",
+      "synonyms": [
+        "Gemeinsame Geschäftsordnung der Bundesministerien (GGO)",
+        "GGO",
+        "Gemeinsame Geschäftsordnung der Bundesministerien",
+        "§ 43 GGO",
+        "§ 44 GGO"
+      ],
+      "relatedTerms": [
+        "gesetzesfolgenabschaetzung",
+        "nachhaltigkeitspruefung-bund",
+        "enap",
+        "egesetzgebung-egfa",
+        "deutsche-nachhaltigkeitsstrategie",
+        "ex-ante-folgenpruefung-reality-check"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Rechtsbegriff",
+      "status": "anschlussbegriff",
       "version": "1.0"
     },
     {
@@ -47095,7 +47128,7 @@
     {
       "id": "state-gfa-enap-benchmark",
       "term": "Staatlicher GFA-/eNAP-Benchmark",
-      "slug": "staatlicher-gfa",
+      "slug": "state-gfa-enap-benchmark",
       "shortDefinition": "staatlicher GFA-/eNAP-Benchmark ist der WÖk-Datenlayer, der bei geeigneten Bundesregelungsvorhaben die öffentlich belegbare staatliche GFA-/Nachhaltigkeitseinschätzung getrennt von der unabhängigen WÖk-Analyse dokumentiert.",
       "longDefinition": "Der Layer erfasst nur, was aus amtlichen Quellen für ein konkretes Bundesregelungsvorhaben öffentlich festgestellt werden kann: Umfang der GFA/Nachhaltigkeitsprüfung, DNS-/SDG-Bezüge, positive und negative Aspekte, Zielkonflikte, Langfrist- und Drittstaatenbezüge sowie den Dokumentationsstatus. Anschließend werden Konvergenz, zusätzliche WÖk-Befunde und echte Widersprüche getrennt ausgewiesen.\n\nEine öffentliche Nachhaltigkeitsdarstellung ist nicht automatisch ein öffentlicher eNAP-Rohexport. Fehlt ein solcher Nachweis, bleibt der eNAP-Dokumentationsstatus offen beziehungsweise öffentlich nicht belegt; er wird niemals automatisch zu nicht geprüft.",
       "synonyms": [
@@ -58097,8 +58130,8 @@
       "id": "wirkungsblindheit",
       "term": "Wirkungsblindheit",
       "slug": "wirkungsblindheit",
-      "shortDefinition": "Wirkungsblindheit beschreibt Systeme, Kennzahlen oder Entscheidungen, die Aktivität, Kapital, Gewinn, Reichweite oder Output messen, aber tatsächliche Folgen für Mensch, Planet und Demokratie nicht erkennen.",
-      "longDefinition": "Wirkungsblindheit ist die strukturelle Unfähigkeit eines Systems, tatsächliche Folgen zu erkennen oder zurückzukoppeln, obwohl es Aktivität, Kapital, Output, Gewinn, Wachstum, Beschäftigung oder Reichweite präzise misst.",
+      "shortDefinition": "Wirkungsblindheit bedeutet in der WÖk nicht, dass ein System keinerlei Folgen prüft oder misst. Gemeint ist eine strukturelle Lücke, wenn relevante Zustandsveränderungen, Wirkpfade oder Unsicherheiten nicht vollständig erkannt, nicht kausal zugeordnet oder nicht wirksam in Entscheidungen, Anreize und spätere Korrektur zurückgeführt werden.",
+      "longDefinition": "Ein System kann viele Daten erheben, Folgen abschätzen, Ziele prüfen und trotzdem wirkungsblind bleiben, wenn entscheidungsrelevante Zustandsveränderungen, Nebenfolgen, Zurechnung oder Lernschleifen nicht ausreichend verbunden sind. Wirkungsblindheit ist deshalb ein gradueller Diagnosebegriff und keine Behauptung vollständiger Abwesenheit von Folgenprüfung.\n\nDeutschland ist ein wichtiges Gegenbeispiel zur Totalblindheit: DNS und Destatis-Monitoring sowie GGO/GFA/Nachhaltigkeitsprüfung und eNAP zeigen, dass institutionalisierte Prüf- und Messstrukturen existieren. Die WÖk-Kritik richtet sich auf die noch nicht vollständig geschlossene, objektspezifische Rückkopplungskette und darf diese vorhandene Architektur nicht ausblenden.",
       "synonyms": [
         "Wirkungsblindheit",
         "wirkungsblind",
@@ -58111,6 +58144,12 @@
         "Aktivitätsblindheit"
       ],
       "relatedTerms": [
+        "wirkung",
+        "wirkungsrueckkopplung",
+        "gesetzesfolgenabschaetzung",
+        "staatliche-nachhaltigkeitsarchitektur",
+        "evidenz-und-annahmenregister",
+        "attributionsforschung",
         "wirkungswahrheit",
         "wirkungsbewertung",
         "wirkungslenkung",
@@ -58122,13 +58161,11 @@
         "wirkungssimulation",
         "scheinleistung",
         "blindleistung",
-        "wirkung",
         "wirkungspotenzial",
         "wirkungsrisiko",
         "netto-wirkung",
         "positive-netto-wirkung",
         "transformationswirkung",
-        "wirkungsrueckkopplung",
         "wirkungsgrenze",
         "wirkpfad",
         "wirkungsnetz",
@@ -58169,10 +58206,7 @@
         "informelles-wissen",
         "tacit-knowledge",
         "streisand-effekt",
-        "rebound-effekt",
-        "gesetzesfolgenabschaetzung",
-        "staatliche-nachhaltigkeitsarchitektur",
-        "attributionsforschung"
+        "rebound-effekt"
       ],
       "relatedMethods": [],
       "relatedImpactFields": [],
@@ -58184,9 +58218,9 @@
         "werkstatt/whitepaper/produktbesteuerung-durch-wirkung/"
       ],
       "relatedObjections": [],
-      "category": "Wirkungssprache & Systemkritik",
-      "status": "führender-begriff",
-      "version": "1.1"
+      "category": "Grundbegriff",
+      "status": "approved",
+      "version": "2.0"
     },
     {
       "id": "wirkungsbonus",
@@ -66994,6 +67028,7 @@
         "deutsche-nachhaltigkeitsstrategie",
         "dns-indikator",
         "wirkung",
+        "evidenz-und-annahmenregister",
         "attributionsforschung",
         "referenzrahmen"
       ],

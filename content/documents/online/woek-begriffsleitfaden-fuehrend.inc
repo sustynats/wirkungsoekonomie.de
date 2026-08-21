@@ -1,14 +1,14 @@
 <h2 id="fuehrender-begriffsleitfaden-der-wirkungsoekonomie">Führender Begriffsleitfaden der Wirkungsökonomie</h2>
-<p><b>Version 1.5 · Stand 15. August 2026 · Führendes Referenzdokument</b></p>
+<p><b>Version 1.6 · Stand 21. August 2026 · Führendes Referenzdokument</b></p>
 <p>Autorin: Natalie Weber</p>
 <p>Geltung: für künftige Website-, Portal-, Akademie-, Instituts-, Buch-, Blog-, Social-Media-, Tool-, Daten- und Projektinhalte der Wirkungsökonomie.</p>
 <blockquote><p><b>Leitformel</b></p></blockquote>
 <blockquote><p>Wirkung ist die tatsächliche Veränderung von Zuständen. Sie ist neutral und relational. Die Wirkungsökonomie ermittelt, bewertet und koppelt Wirkung so zurück, dass positive Netto-Wirkung für Mensch, Planet und Demokratie entscheidungsrelevant wird.</p></blockquote>
-<p>Diese Version ersetzt Version 1.4 als führende begriffliche Arbeitsgrundlage. Ältere Fassungen bleiben als historische, zitierfähige Entwicklungsstände erhalten. Im Widerspruchsfall gilt für neue Inhalte Version 1.5.</p>
-<p><b>Direkte Basis dieser Fassung ist Version 1.4 vom 14. August 2026.</b> Version 1.5 ist kein Neuaufbau aus Version 1.0, sondern ein Delta auf Version 1.4. Alle Festlegungen aus Version 1.4 bleiben erhalten, soweit sie in der nachfolgenden Supersessionsliste nicht ausdrücklich präzisiert oder ersetzt werden.</p>
+<p>Diese Version ersetzt Version 1.5 als führende begriffliche Arbeitsgrundlage. Ältere Fassungen bleiben als historische, zitierfähige Entwicklungsstände erhalten. Im Widerspruchsfall gilt für neue Inhalte Version 1.6.</p>
+<p><b>Direkte Basis dieser Fassung ist Version 1.5 vom 15. August 2026.</b> Version 1.6 ist kein Neuaufbau, sondern ein geprüftes Delta auf Version 1.5. Alle Festlegungen aus Version 1.4 bleiben erhalten, soweit sie in der nachfolgenden Supersessionsliste nicht ausdrücklich präzisiert oder ersetzt werden.</p>
 <h2 id="dokumentenstatus-und-aenderungskern">Dokumentenstatus und Änderungskern</h2>
 <h2 id="status">Status</h2>
-<div class="table-scroll"><table class="data-table"><thead><tr><th scope="col">Feld</th><th scope="col">Festlegung</th></tr></thead><tbody><tr><td>Dokumenttyp</td><td>Führender Begriffs-, Methoden- und Redaktionsleitfaden</td></tr><tr><td>Version</td><td>1.5</td></tr><tr><td>Stand</td><td>15. August 2026</td></tr><tr><td>Autorin</td><td>Natalie Weber</td></tr><tr><td>Geltungsbereich</td><td>Wirkungsoekonomie.de einschließlich öffentlicher Portale, Akademie, Institut, Apps, Glossar, Bibliothek, Methoden- und Toolseiten sowie neue Veröffentlichungen</td></tr><tr><td>Vorrang</td><td>Bei neuen Inhalten vor älteren Begriffsverwendungen. Historische Quellen werden nicht rückwirkend umgeschrieben, aber als älterer Stand gekennzeichnet.</td></tr></tbody></table></div>
+<div class="table-scroll"><table class="data-table"><thead><tr><th scope="col">Feld</th><th scope="col">Festlegung</th></tr></thead><tbody><tr><td>Dokumenttyp</td><td>Führender Begriffs-, Methoden- und Redaktionsleitfaden</td></tr><tr><td>Version</td><td>1.6</td></tr><tr><td>Stand</td><td>21. August 2026</td></tr><tr><td>Autorin</td><td>Natalie Weber</td></tr><tr><td>Geltungsbereich</td><td>Wirkungsoekonomie.de einschließlich öffentlicher Portale, Akademie, Institut, Apps, Glossar, Bibliothek, Methoden- und Toolseiten sowie neue Veröffentlichungen</td></tr><tr><td>Vorrang</td><td>Bei neuen Inhalten vor älteren Begriffsverwendungen. Historische Quellen werden nicht rückwirkend umgeschrieben, aber als älterer Stand gekennzeichnet.</td></tr></tbody></table></div>
 <h2 id="entwicklungslinie-bis-version-1-4">Entwicklungslinie bis Version 1.4</h2>
 <ul><li><b>Version 1.1:</b> Nachhaltigkeit als langfristige Wirkungsresilienz des gekoppelten Systems Mensch-Planet-Demokratie präzisiert; Resilienz, Systemresilienz, Wirkungsresilienz, Regimeresilienz sowie Rückstell- und Regenerationsmechanismen geordnet.</li></ul>
 <ul><li><b>Version 1.2:</b> Resilienzsystematik geschärft; Stabilitätslandschaft, Rückstellfähigkeit und Dämpfungsfähigkeit getrennt; Latitude, Resistance, Precariousness, Panarchy, Adaptability und Transformability fachlich eingeordnet.</li></ul>
@@ -30,6 +30,7 @@
 <blockquote><p><b>Korrektur gegenüber Version 1.4</b></p></blockquote>
 <blockquote><p>Die Wirkungsökonomie wird nicht mehr als Erweiterung von IOOI dargestellt. IOOI kann eine begrenzte Teilfrage innerhalb der Wirkungsermittlung strukturieren. Die WÖk selbst beginnt früher, reicht weiter und schließt Bewertung, Schutzregeln, Systemwirkung, Transformation, Governance und Rückkopplung ein.</p></blockquote>
 <h2 id="inhalt">Inhalt</h2>
+<ul><li>0. Ergänzung v1.6: Staatliche Nachhaltigkeits- und Folgenprüfungsarchitektur</li></ul>
 <ul><li>1. Zweck, Geltung und Quellenhierarchie</li></ul>
 <ul><li>2. Kurzformeln und Grundregeln</li></ul>
 <ul><li>3. System- und Begriffshierarchie</li></ul>
@@ -46,6 +47,76 @@
 <ul><li>14. Prüfcheckliste</li></ul>
 <ul><li>15. Website-Audit und Migrationsmatrix</li></ul>
 <ul><li>16. Quellen- und Prüfgrundlage</li></ul>
+<h2 id="ergaenzung-v1-6-staatliche-nachhaltigkeits-und-folgenpruefungsarchitektur">Ergänzung v1.6: Staatliche Nachhaltigkeits- und Folgenprüfungsarchitektur</h2>
+<h2 id="aenderungskern">Änderungskern</h2>
+<p>Version 1.6 korrigiert die Einordnung staatlicher Nachhaltigkeits- und Folgenprüfung und trennt die Wirkungsontologie von der Mess- und Beobachtungsontologie. Sie führt keine neue Behauptung ein, der Staat prüfe bislang keine Wirkungen. Sie macht den zusätzlichen Beitrag der Wirkungsökonomie präzise und überprüfbar.</p>
+<ul><li>Deutschland verfügt bereits über eine institutionalisierte Architektur aus Deutscher Nachhaltigkeitsstrategie, Zielen und Indikatoren, ressortübergreifender Governance, Gesetzesfolgenabschätzung, Nachhaltigkeitsprüfung, eNAP/eGFA, Monitoring, Evaluation und parlamentarischer Begleitung.</li></ul>
+<ul><li>Die Wirkungsökonomie ersetzt diese Architektur nicht. Sie ergänzt sie um eine durchgängige objektspezifische Problem-, Ziel-, Wirkpfad-, Gegenfaktum-, Options-, Reality-Check- und Lernarchitektur.</li></ul>
+<ul><li>Problem Review steht vor Goal Review. Goal Review steht vor Empfehlung.</li></ul>
+<ul><li>Zielbezug ist kein Kausalitätsnachweis. Indikator ist nicht Wirkung. Output ist nicht Outcome. Beobachtung ist nicht Attribution.</li></ul>
+<ul><li>Fehlende öffentlich zugängliche eNAP-Dokumentation bedeutet „öffentlich nicht belegt“ und niemals automatisch „nicht geprüft“.</li></ul>
+<ul><li>Masterregister und Wirkindikatorenregister werden als zwei verbundene, aber getrennte Registerebenen geführt.</li></ul>
+<h2 id="20-sekunden-erklaerung">20-Sekunden-Erklärung</h2>
+<p>Der Bund prüft bereits, warum eine Regelung nötig sein soll, welche Folgen und Nebenwirkungen sie haben kann und wie sie zur Nachhaltigkeitsstrategie passt. eNAP hilft bei der Nachhaltigkeitsprüfung. Die WÖk setzt nicht an die Stelle dieser Verfahren. Sie verbindet deren Befunde mit einer strengeren Kette: Problem prüfen, Ziel prüfen, Wirkmechanismus erklären, echte Optionen vergleichen, tatsächliche Veränderung beobachten, Zurechnung prüfen und bei falschen Annahmen nachsteuern.</p>
+<h2 id="verbindliche-begriffe">Verbindliche Begriffe</h2>
+<h3 id="deutsche-nachhaltigkeitsstrategie-dns">Deutsche Nachhaltigkeitsstrategie (DNS)</h3>
+<p>Die DNS ist der nationale Ziel-, Management-, Governance- und Monitoringrahmen zur Umsetzung der Agenda 2030 in Deutschland. Sie ist kein Gesetz. DNS-Ziel, DNS-Indikator, politische Maßnahme, Wirkungsanalyse und Kausalitätsnachweis sind unterschiedliche Dinge.</p>
+<h3 id="gemeinsame-geschaeftsordnung-der-bundesministerien-ggo">Gemeinsame Geschäftsordnung der Bundesministerien (GGO)</h3>
+<p>Die GGO ist die gemeinsame Verwaltungsvorschrift für die Arbeit der Bundesministerien. Für die Folgen- und Nachhaltigkeitsprüfung sind besonders §§ 43 und 44 wichtig: § 43 strukturiert die Gesetzesbegründung einschließlich Ziel, Notwendigkeit, Sachverhalt, Erkenntnisquellen und Alternativen; § 44 regelt Gesetzesfolgen, beabsichtigte Wirkungen, unbeabsichtigte Nebenwirkungen, Nachhaltigkeitsbezug und spätere Überprüfung. Die GGO ist weder die DNS noch eNAP und auch keine WÖk-Methode.</p>
+<h3 id="gesetzesfolgenabschaetzung-gfa">Gesetzesfolgenabschätzung (GFA)</h3>
+<p>Die Gesetzesfolgenabschätzung des Bundes ist in der Gemeinsamen Geschäftsordnung der Bundesministerien verankert. §§ 43 und 44 GGO verlangen unter anderem Zielsetzung und Notwendigkeit, Sachverhalt und Erkenntnisquellen, andere Lösungsmöglichkeiten, wesentliche Auswirkungen, beabsichtigte Wirkungen, unbeabsichtigte Nebenwirkungen, Nachhaltigkeitsbezug und Angaben zur späteren Überprüfung. Eine faire WÖk-Einordnung erkennt diese Leistungen ausdrücklich an.</p>
+<h3 id="nachhaltigkeitspruefung-des-bundes">Nachhaltigkeitsprüfung des Bundes</h3>
+<p>Die Nachhaltigkeitsprüfung ist Bestandteil der Gesetzesfolgenabschätzung. Sie prüft Bezüge eines Regelungsvorhabens zu Zielen und Indikatoren der DNS sowie zu den SDGs, einschließlich positiver und negativer Auswirkungen, Zielkonflikten und längerfristiger Bezüge. Sie ist eine Ex-ante-Prüfung und nicht automatisch eine spätere Evaluation oder ein Kausalitätsnachweis.</p>
+<h3 id="enap">eNAP</h3>
+<p>eNAP ist die elektronische Nachhaltigkeitsprüfung. Sie ist ein digitales Prüfwerkzeug und nicht die Rechtsgrundlage der Nachhaltigkeitsprüfung. eNAP ist in die E-Gesetzgebung und die elektronische Gesetzesfolgenabschätzung eingebettet.</p>
+<h3 id="egfa-und-e-gesetzgebung">eGFA und E-Gesetzgebung</h3>
+<p>eGFA bezeichnet die elektronische Unterstützung der Gesetzesfolgenabschätzung innerhalb der E-Gesetzgebung. Die öffentliche Oberfläche kann von internen Prozess- und Dokumentationsfunktionen abweichen. Aus einer öffentlich sichtbaren Nachhaltigkeitsdarstellung darf nicht ohne Quelle auf einen wort- oder byteidentischen öffentlichen eNAP-Export geschlossen werden.</p>
+<h3 id="dns-indikator">DNS-Indikator</h3>
+<p>Ein DNS-Indikator beschreibt einen beobachtbaren Zustand, Trend oder Zielabstand im amtlichen Monitoring. Er kann je nach Fall als Baseline, Target, Outcome, Distribution, Boundary, Context oder Reality Check dienen. Er ist weder selbst die Wirkung noch der Nachweis, dass eine einzelne Maßnahme die Veränderung verursacht hat.</p>
+<h3 id="staatliche-nachhaltigkeitsarchitektur">Staatliche Nachhaltigkeitsarchitektur</h3>
+<p>Dieser Sammelbegriff bezeichnet die miteinander verbundenen Ziel-, Governance-, Prüf-, Monitoring-, Evaluations- und parlamentarischen Strukturen des Bundes. Die Ebenen bleiben rechtlich und methodisch getrennt: Agenda 2030/SDGs, DNS, Grundrechte, Verfassungsprinzipien, Staatsziele, Fachrecht, EU-Recht, Völkerrecht und wissenschaftliche Schutzgrenzen dürfen nicht in eine einzige Zielkategorie aufgelöst werden.</p>
+<h3 id="wirkungsblindheit">Wirkungsblindheit</h3>
+<p>Wirkungsblindheit bedeutet nicht die vollständige Abwesenheit von Daten, Statistik, Folgenprüfung oder Evaluation. Gemeint ist eine graduelle Lücke, wenn relevante Zustandsveränderungen, Nebenfolgen, Unsicherheiten oder Zurechnung nicht vollständig erkannt oder nicht wirksam in Entscheidungen und spätere Korrektur zurückgeführt werden.</p>
+<h2 id="verbindliche-woek-pruefreihenfolge">Verbindliche WÖk-Prüfreihenfolge</h2>
+<ol start="1"><li>Fact / Source: Was wurde tatsächlich entschieden, vorgeschlagen oder beobachtet?</li></ol>
+<ol start="2"><li>Problem Review: Existiert das behauptete Problem, wie groß ist es, wen betrifft es, was ist Ursache oder bindender Engpass, und was wäre ohne Eingriff zu erwarten?</li></ol>
+<ol start="3"><li>Goal Review: Welches End-, Zwischen- oder Instrumentenziel wird verfolgt, passt es zum belegten Problem, welche Rechte, Zielkonflikte, Generationen- und Resilienzfragen sind berührt?</li></ol>
+<ol start="4"><li>Actual Impact Analysis: Auslöser → Mechanismus → Zustandsänderung → Referenz; einschließlich erster bis dritter Ordnung, Kaskaden, Verteilung, Raum, Zeit, Resilienz, Lock-in und Schutzgrenzen.</li></ol>
+<ol start="5"><li>Evidenz: Wirkungsrichtung und Evidenzstärke getrennt ausweisen.</li></ol>
+<ol start="6"><li>Gegenfaktum und Attribution: Was wäre ohne die Maßnahme wahrscheinlich geschehen und welcher Anteil der beobachteten Veränderung ist plausibel zurechenbar?</li></ol>
+<ol start="7"><li>Referenzarchitektur: Mensch, Planet und Demokratie; SDGs; WÖk-SDG+; Recht; DNS; wissenschaftliche Schwellen; Resilienz; Generationengerechtigkeit und Nichtkompensation getrennt behandeln.</li></ol>
+<ol start="8"><li>Handlungsoption: Mehrere echte Optionen, Umsetzung, Ressourcen, Schutzbedingungen, Monitoring und Fallback vergleichen. Ohne robuste Präferenz gilt NO_ROBUST_RECOMMENDATION.</li></ol>
+<ol start="9"><li>Actual versus WÖk Option: Tatsächliche und vorgeschlagene Option gegen dieselben Referenzen vergleichen.</li></ol>
+<ol start="10"><li>Reality Check: Nach Umsetzung Output, Outcome, Beobachtung und Zurechnung trennen.</li></ol>
+<ol start="11"><li>Lernschleife: Annahmen revidieren, wenn Falsifikations- oder Recheck-Kriterien eintreten.</li></ol>
+<h2 id="zwei-ebenen-registerarchitektur">Zwei-Ebenen-Registerarchitektur</h2>
+<div class="table-scroll"><table class="data-table"><thead><tr><th scope="col">Ebene</th><th scope="col">Leitfrage</th><th scope="col">Inhalt</th><th scope="col">Methodische Grenze</th></tr></thead><tbody><tr><td>WÖk-Masterregister / MasterItems</td><td>Was betrachten wir?</td><td>Wirkungsobjekte, Empfänger, Zustandsbezüge, Schutz- und Systemdimensionen</td><td>MasterItem ist kein Messwert und kein Score.</td></tr><tr><td>WÖk-Wirkindikatorenregister</td><td>Womit beobachten wir reale Zustände?</td><td>Indikatoren, Einheiten, Datenfunktionen, Quellen, Beobachtungen und Qualitätsstatus</td><td>Indikator ist nicht Wirkung und Directionality ist kein Score.</td></tr></tbody></table></div>
+<p>Die verbindliche Kette lautet:</p>
+<blockquote><p>MasterItem → StateVariable → Indicator → Observation → Analysis / Reality Check</p></blockquote>
+<p>Die 621 kanonischen WÖk-IDs bleiben bei der Weiterentwicklung von Masterregister v1.4 auf v1.5 erhalten. Neue Architekturfelder und Zuordnungsstatus dürfen offene Fachprüfungen sichtbar machen, aber keine ungeprüften DNS-Mappings, Kausalitätsurteile oder Scores erfinden. Das DNS-Indikatorenset ist ein wichtiger amtlicher Beobachtungsraum und ersetzt nicht die größere WÖk-Wirkungsontologie.</p>
+<h2 id="staatlicher-befund-und-unabhaengiger-woek-befund">Staatlicher Befund und unabhängiger WÖk-Befund</h2>
+<p>Bei geeigneten Bundesregelungsvorhaben werden zwei Befundschichten geführt:</p>
+<ol start="1"><li>öffentlich belegbarer staatlicher Befund aus GFA, Nachhaltigkeitsdarstellung, DNS-/SDG-Bezug und Dokumentationsstatus;</li></ol>
+<ol start="2"><li>unabhängiger WÖk-Befund aus Problem Review, Goal Review, Wirkpfaden, Gegenfaktum, Attribution, Omissions, Policy Coherence, Delivery, Optionsvergleich und Reality Check.</li></ol>
+<p>Übereinstimmung ist ein valides Ergebnis. Die WÖk muss nicht zwanghaft zu einem anderen Urteil gelangen. Der Zusatznutzen liegt in zusätzlichen Fragen, expliziten Mechanismen und einer durchgängigen Lernkette, nicht in rhetorischer Abwertung bestehender Institutionen.</p>
+<h2 id="amtliche-primaerquellen-fuer-diese-ergaenzung">Amtliche Primärquellen für diese Ergänzung</h2>
+<ul><li>WÖK-Q-9029: Gemeinsame Geschäftsordnung der Bundesministerien, §§ 43 und 44.</li></ul>
+<ul><li>WÖK-Q-9030: Bundesministerium der Justiz, Nachhaltige Gesetzgebung.</li></ul>
+<ul><li>WÖK-Q-9031: Bundesregierung, Steuerung der Deutschen Nachhaltigkeitsstrategie.</li></ul>
+<ul><li>WÖK-Q-9032: Deutsche Nachhaltigkeitsstrategie, Weiterentwicklung 2025.</li></ul>
+<ul><li>WÖK-Q-9033: Statistisches Bundesamt, Indikatoren der Deutschen Nachhaltigkeitsstrategie.</li></ul>
+<ul><li>WÖK-Q-9034: E-Gesetzgebung, eGFA und eNAP.</li></ul>
+<ul><li>WÖK-Q-9035: Aktionsplan Nachhaltigkeit 2026, Beteiligungsfassung; nicht als Finalfassung ausgeben.</li></ul>
+<ul><li>WÖK-Q-9036: Deutscher Bundestag, Parlamentarischer Beirat für nachhaltige Entwicklung und Zukunftsfragen.</li></ul>
+<ul><li>WÖK-Q-9037: E-Gesetzgebung, Arbeitshilfe zur frühen Einbeziehung von Nachhaltigkeitszielen und eNAP.</li></ul>
+<h2 id="redaktions-und-qualitaetsregeln-ab-v1-6">Redaktions- und Qualitätsregeln ab v1.6</h2>
+<ul><li>Keine Behauptung, Deutschland verfüge über keine institutionalisierte Wirkungs-, Folgen- oder Nachhaltigkeitsprüfung.</li></ul>
+<ul><li>Keine Behauptung, die WÖk habe Wirkungsanalyse, Folgenabschätzung, Evaluation oder Indikatoren erfunden.</li></ul>
+<ul><li>Staatliche Institutionen und WÖk-eigene Vorschläge sichtbar trennen.</li></ul>
+<ul><li>DNS-Ziel, DNS-Indikator, Maßnahme, Output, Outcome, Beobachtung und Attribution nicht gleichsetzen.</li></ul>
+<ul><li>Historische Veröffentlichungen nicht still umschreiben; bei materiellem Bedarf Standhinweis, Addendum oder Erratum verwenden.</li></ul>
+<ul><li>Neue Glossarbegriffe über interne Quellenarchiv-Seiten zu amtlichen Primärquellen führen.</li></ul>
+<ul><li>Begriffsleitfaden, Glossar, Quellenarchiv, Masterregister, Wirkindikatorenregister, Akademie und Parlament-Portal müssen denselben Versions- und Methodenstand ausweisen.</li></ul>
 <h2 id="1-zweck-geltung-und-quellenhierarchie">1. Zweck, Geltung und Quellenhierarchie</h2>
 <p>Der Leitfaden hält die Wirkungsökonomie begrifflich zusammen. Er ist kein Marketingtext und kein vollständiges Fachlexikon.</p>
 <p>Die Website verfügt inzwischen über eine sehr große semantische Infrastruktur mit Glossar-Hub, Detailseiten, Hover-Erklärungen, Suche, Querverweisen, Methodenkarten, WÖMM- und WÖMS-Begriffen sowie sektoralen Fachbegriffen. Dieser Leitfaden definiert deshalb nicht jeden einzelnen Websitebegriff neu. Er legt die führenden Kernbegriffe, Abgrenzungen, Hierarchien und Redaktionsregeln fest, an denen alle Detailbegriffe ausgerichtet werden.</p>
@@ -267,29 +338,29 @@
 <h2 id="13-fuehrende-mini-definitionen-fuer-hover-suche-und-karten">13. Führende Mini-Definitionen für Hover, Suche und Karten</h2>
 <div class="table-scroll"><table class="data-table"><thead><tr><th scope="col">Begriff</th><th scope="col">Mini-Definition</th></tr></thead><tbody><tr><td>Wirkungsökonomie</td><td>Gesellschafts-, Wirtschafts- und Steuerungsmodell, das Wirkung sichtbar macht, bewertet und in Entscheidungen zurückführt.</td></tr><tr><td>Wirkung</td><td>Tatsächliche Zustandsveränderung bei jemandem oder etwas, in Raum und Zeit.</td></tr><tr><td>Wirkungspotenzial</td><td>Möglichkeit, dass unter bestimmten Bedingungen Wirkung entsteht.</td></tr><tr><td>Wirkungsrisiko</td><td>Möglichkeit negativer oder destabilisierender Wirkung.</td></tr><tr><td>Wirkmechanismus</td><td>Begründete Annahme, wie eine Veränderung entstehen kann.</td></tr><tr><td>Wirkungspfad</td><td>Plausibler oder beobachteter Weg von Auslösern zu Veränderungen und Rückkopplungen.</td></tr><tr><td>Wirkungsnetz</td><td>Darstellung verbundener Wirkungen, Nebenfolgen und Rückkopplungen.</td></tr><tr><td>Wirkungsbewertung</td><td>Einordnung einer eingetretenen oder modellierten Veränderung am offengelegten Referenzrahmen.</td></tr><tr><td>Netto-Wirkung</td><td>Mehrdimensionale Gesamtbewertung ohne freie Kompensation schwerer Schäden.</td></tr><tr><td>Positive Netto-Wirkung</td><td>Zielgröße: Mensch, Planet und Demokratie werden insgesamt gestärkt, ohne rote Linien zu verletzen.</td></tr><tr><td>Wirkungsgrenze</td><td>Rote Linie, ab der negative Wirkung nicht ausgeglichen werden darf.</td></tr><tr><td>Reverse Merit Order</td><td>Das kritischste zentrale Wirkungsfeld begrenzt die Gesamtbewertung.</td></tr><tr><td>Transformationswirkung</td><td>Veränderung von Regeln, Anreizen, Infrastrukturen oder Handlungspfaden.</td></tr><tr><td>Wirkungsrückkopplung</td><td>Mechanismus, durch den bewertete Wirkung Entscheidungen und Anreize verändert.</td></tr><tr><td>Wirkungsarchitektur</td><td>Gesamtsystem aus Daten, Regeln, Institutionen, Schutz, Anreizen und Lernen.</td></tr><tr><td>Wirkungsresilienz</td><td>Lernfähige, an Mensch, Planet und Demokratie gebundene Systemresilienz ohne Schadensverlagerung.</td></tr><tr><td>Nachhaltigkeit</td><td>Langfristig gesicherte Wirkungsresilienz des gekoppelten Systems Mensch - Planet - Demokratie.</td></tr><tr><td>Wirkungsrad</td><td>Zyklisches WÖk-Modell von Auslöser, Veränderung, Bewertung, Rückkopplung und Lernen.</td></tr><tr><td>Wirkungsradar</td><td>Orientierungs- und Analyseinstrument für Wirkungsfelder, Risiken, blinde Flecken und Wirkungspfade.</td></tr><tr><td>IOOI</td><td>Externe Results Chain aus Input, Output, Outcome und Impact; optionale Teilmethode der Wirkungsermittlung.</td></tr><tr><td>WÖMM</td><td>Wirkungsökonomisches Managementmodell für Organisationen als lernende Wirkungssysteme.</td></tr><tr><td>WÖMS</td><td>Wirkungsökonomisches Methodensystem zur Operationalisierung von Diagnose, Gestaltung, Entscheidung und Lernen.</td></tr><tr><td>Wirkungswissenschaften</td><td>Von der WÖk vorgeschlagener inter- und transdisziplinärer Bezugsrahmen für Wirkung.</td></tr><tr><td>Wirkungsforschung</td><td>Empirische und theoretische Untersuchung von Wirkungen, Mechanismen, Potenzialen und Risiken.</td></tr><tr><td>WÖk-ID</td><td>Standardisierte Kennziffer für Wirkungsindikatoren oder bewertbare Wirkungseinheiten; keine Personen-ID.</td></tr><tr><td>NWI</td><td>Operative Verdichtung von Netto-Wirkung unter Datenqualitäts- und Schutzregeln.</td></tr><tr><td>IOI</td><td>Investitionsbezogene Wirkungskennzahl; nicht mit IOOI verwechseln.</td></tr><tr><td>T-SROI</td><td>Bewertungsrahmen für Transformations- und systemische Hebelwirkung auf Basis geprüfter Netto-Wirkung.</td></tr></tbody></table></div>
 <h2 id="14-pruefcheckliste-fuer-neue-inhalte">14. Prüfcheckliste für neue Inhalte</h2>
-<p>1. Ist klar, ob von Wirkung, Wirkungspotenzial, Wirkungsrisiko oder Wirkmechanismus die Rede ist?</p>
-<p>1. Wird Wirkung als tatsächliche Zustandsveränderung und nicht als Absicht, Aktivität, Output, Reichweite oder Image verwendet?</p>
-<p>1. Sind Wirkungsempfänger, Wirkungsraum, Zeitraum und Ausgangslage erkennbar?</p>
-<p>1. Wird positive Bewertung am offengelegten Referenzrahmen begründet?</p>
-<p>1. Ist SDG+ als WÖk-Erweiterung und nicht als offizielle UN-Kategorie gekennzeichnet?</p>
-<p>1. Bleiben Rechtsrahmen, Staatsziele und technische Standards als eigene Kontextebenen sichtbar?</p>
-<p>1. Sind empirische Feststellung, Modellannahme, normative Bewertung und politische Folgerung getrennt?</p>
-<p>1. Werden neutral, ambivalent und offen unterschieden?</p>
-<p>1. Sind Datenqualität, Evidenzgrad, Gegenfaktum und Zurechnung angemessen benannt?</p>
-<p>1. Wird Kausalität nur so stark formuliert, wie die Evidenz trägt?</p>
-<p>1. Werden Nebenwirkungen, Wechselwirkungen, Rebound, Spillover und Verlagerung geprüft?</p>
-<p>1. Sind Verteilungs- und Zeitwirkungen sichtbar?</p>
-<p>1. Werden Wirkungsgrenzen und Nichtkompensation korrekt angewandt?</p>
-<p>1. Wird Transformationswirkung gesondert von Netto-Wirkung geprüft?</p>
-<p>1. Ist erklärt, welche Rückkopplung oder Lernfolge aus der Analyse entsteht?</p>
-<p>1. Wird IOOI nur als optionale Anschlussmethode und nicht als WÖk-Grundmodell dargestellt?</p>
-<p>1. Werden IOOI und IOI eindeutig getrennt?</p>
-<p>1. Werden Wirkungsrad, Wirkungsradar und Radardiagramm korrekt unterschieden?</p>
-<p>1. Sind WÖMM, WÖMS, Methoden und Werkzeuge hierarchisch richtig eingeordnet?</p>
-<p>1. Werden keine Menschen als Personen bewertet oder gerankt?</p>
-<p>1. Sind Modell-, Demo-, Entwurfs- und Rechtsstatus sichtbar?</p>
-<p>1. Verwendet der Text die zentrale Kurzdefinition statt einer neuen Parallelformulierung?</p>
-<p>1. Versteht ein Mensch ohne WÖk-Vorwissen in den ersten Sätzen, worum es geht?</p>
+<ol start="1"><li>Ist klar, ob von Wirkung, Wirkungspotenzial, Wirkungsrisiko oder Wirkmechanismus die Rede ist?</li></ol>
+<ol start="1"><li>Wird Wirkung als tatsächliche Zustandsveränderung und nicht als Absicht, Aktivität, Output, Reichweite oder Image verwendet?</li></ol>
+<ol start="1"><li>Sind Wirkungsempfänger, Wirkungsraum, Zeitraum und Ausgangslage erkennbar?</li></ol>
+<ol start="1"><li>Wird positive Bewertung am offengelegten Referenzrahmen begründet?</li></ol>
+<ol start="1"><li>Ist SDG+ als WÖk-Erweiterung und nicht als offizielle UN-Kategorie gekennzeichnet?</li></ol>
+<ol start="1"><li>Bleiben Rechtsrahmen, Staatsziele und technische Standards als eigene Kontextebenen sichtbar?</li></ol>
+<ol start="1"><li>Sind empirische Feststellung, Modellannahme, normative Bewertung und politische Folgerung getrennt?</li></ol>
+<ol start="1"><li>Werden neutral, ambivalent und offen unterschieden?</li></ol>
+<ol start="1"><li>Sind Datenqualität, Evidenzgrad, Gegenfaktum und Zurechnung angemessen benannt?</li></ol>
+<ol start="1"><li>Wird Kausalität nur so stark formuliert, wie die Evidenz trägt?</li></ol>
+<ol start="1"><li>Werden Nebenwirkungen, Wechselwirkungen, Rebound, Spillover und Verlagerung geprüft?</li></ol>
+<ol start="1"><li>Sind Verteilungs- und Zeitwirkungen sichtbar?</li></ol>
+<ol start="1"><li>Werden Wirkungsgrenzen und Nichtkompensation korrekt angewandt?</li></ol>
+<ol start="1"><li>Wird Transformationswirkung gesondert von Netto-Wirkung geprüft?</li></ol>
+<ol start="1"><li>Ist erklärt, welche Rückkopplung oder Lernfolge aus der Analyse entsteht?</li></ol>
+<ol start="1"><li>Wird IOOI nur als optionale Anschlussmethode und nicht als WÖk-Grundmodell dargestellt?</li></ol>
+<ol start="1"><li>Werden IOOI und IOI eindeutig getrennt?</li></ol>
+<ol start="1"><li>Werden Wirkungsrad, Wirkungsradar und Radardiagramm korrekt unterschieden?</li></ol>
+<ol start="1"><li>Sind WÖMM, WÖMS, Methoden und Werkzeuge hierarchisch richtig eingeordnet?</li></ol>
+<ol start="1"><li>Werden keine Menschen als Personen bewertet oder gerankt?</li></ol>
+<ol start="1"><li>Sind Modell-, Demo-, Entwurfs- und Rechtsstatus sichtbar?</li></ol>
+<ol start="1"><li>Verwendet der Text die zentrale Kurzdefinition statt einer neuen Parallelformulierung?</li></ol>
+<ol start="1"><li>Versteht ein Mensch ohne WÖk-Vorwissen in den ersten Sätzen, worum es geht?</li></ol>
 <h2 id="15-website-audit-und-migrationsmatrix">15. Website-Audit und Migrationsmatrix</h2>
 <p>Für Version 1.5 wurde die öffentliche Website als Gesamtsystem geprüft: Seiteninventar und Sitemap, zentrale Einstiegsseiten, Glossar-Hub und Begriffsdaten, Methoden- und Werkzeugseiten, WÖMM/WÖMS, Wirkungswissenschaften, Wirkungsradar, Wirkungsfelder, Akademie, Bibliothek, Metadaten sowie das Textredaktionspaket des Parlament-Portals.</p>
 <p>Die Prüfung war websiteweit strukturell und terminologisch. Historische Blog- und LinkedIn-Archive bleiben als frühere Veröffentlichungsstände erhalten; sie werden nicht automatisch rückwirkend umgeschrieben. Sobald solche Texte als aktuelle Definition oder Suchantwort dienen, gilt jedoch Version 1.5.</p>
@@ -337,4 +408,4 @@
 <p>Der Leitfaden macht die WÖk sprachlich konsistent und wissenschaftlich anschlussfähig. Er beweist nicht jede WÖk-These empirisch und ersetzt keine Fachmethodik. Wo Begriffe aus anderen Disziplinen übernommen werden, bleibt deren Quellenbedeutung sichtbar. Wo die WÖk eigene Begriffe prägt oder bestehende Begriffe erweitert, wird dies kenntlich gemacht.</p>
 <h2 id="schlussformel">Schlussformel</h2>
 <blockquote><p>Wirkung ist neutral. Wirkung ist relational. Wirkung braucht Empfänger, Raum, Zeit, Evidenz und Referenzrahmen. Wirkungspotenzial ist noch keine Wirkung. Ein Wirkmechanismus ist noch kein Nachweis. Bewertung ist nicht Messung. Netto-Wirkung ist keine freie Addition. Zielkonflikte können abgewogen werden; Wirkungsgrenzen nicht. Erkenntnis wird erst durch Rückkopplung steuerungsrelevant. Positive Netto-Wirkung für Mensch, Planet und Demokratie ist die Zielgröße der Wirkungsökonomie.</p></blockquote>
-<p>Version 1.5 stellt die Eigenständigkeit der Wirkungsökonomie klar: Sie nutzt etablierte Methoden dort, wo diese eine Teilfrage gut beantworten, geht aber nicht in einer Results Chain, einer Kennzahl oder einem Bericht auf. Ihre besondere Leistung ist die Verbindung von Vorwirkung, Wirkungsermittlung, Evidenz, Bewertung, Schutz, Systemwirkung, Transformation, Governance, Rückkopplung und Lernen.</p>
+<p>Version 1.6 erkennt die bestehende staatliche Folgen- und Nachhaltigkeitsarchitektur ausdrücklich an und präzisiert den WÖk-Zusatznutzen: die Verbindung von Problem Review, Goal Review, Wirkpfad, Evidenz, Gegenfaktum und Attribution, Bewertung, Schutz, Systemwirkung, Optionsvergleich, Umsetzung, Reality Check, Rückkopplung und Lernen. Die WÖk ersetzt weder GFA und Nachhaltigkeitsprüfung noch DNS-Monitoring und Evaluation.</p>

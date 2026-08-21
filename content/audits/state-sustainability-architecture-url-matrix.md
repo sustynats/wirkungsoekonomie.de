@@ -1,10 +1,10 @@
 # #253 State sustainability architecture URL/file audit
 
-- Sitemap routes: **2007**
-- Sitemap routes without directly resolved source HTML: **1**
-- Extra tracked source HTML not in sitemap: **14214**
-- Routes with non-default #253 action: **1385**
-- Routes with Wirkungsblindheit/novelty/absence claim signals: **73**
+- Sitemap routes: **2045**
+- Sitemap routes without directly resolved source HTML: **0**
+- Extra tracked source HTML not in sitemap: **14199**
+- Routes with non-default #253 action: **1421**
+- Routes with Wirkungsblindheit/novelty/absence claim signals: **75**
 
 Contract fields on every matrix item: `source_path`, `public_url`, `historical_publication`, `relevance`, `classification`, `required_action`, `source_refs`, `status`.
 
@@ -79,13 +79,42 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/bibliothek/wirkungsdilemmata-kooperation-sdgplus-gesamtstudie/ | `bibliothek/wirkungsdilemmata-kooperation-sdgplus-gesamtstudie/index.html` | REVIEW_REQUIRED | wirkungsblind, folgenabschaetzung, alternativen, evaluation |
 | https://wirkungsoekonomie.de/begriffe/value-based-pricing/ | `begriffe/value-based-pricing/index.html` | ADD_GLOSSARY_CROSSLINKS | — |
 | https://wirkungsoekonomie.de/begriffe/wirkungsbasiertes-value-pricing/ | `begriffe/wirkungsbasiertes-value-pricing/index.html` | ADD_GLOSSARY_CROSSLINKS | — |
-| https://wirkungsoekonomie.de/bibliothek/wirkungssteuer-wstg-3-0/ | `bibliothek/wirkungssteuer-wstg-3-0/index.html` | REVIEW_REQUIRED | — |
+| https://wirkungsoekonomie.de/bibliothek/wirkungssteuer-wstg-3-0/ | `bibliothek/wirkungssteuer-wstg-3-0/index.html` | REVIEW_REQUIRED | alternativen, evaluation |
 | https://wirkungsoekonomie.de/begriffe/wirkungssteuer/ | `begriffe/wirkungssteuer/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind, evaluation |
 | https://wirkungsoekonomie.de/begriffe/wirkungssteuergesetz/ | `begriffe/wirkungssteuergesetz/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind |
 | https://wirkungsoekonomie.de/begriffe/wstg/ | `begriffe/wstg/index.html` | ADD_GLOSSARY_CROSSLINKS | — |
 | https://wirkungsoekonomie.de/begriffe/wirkungsnachweiskonto/ | `begriffe/wirkungsnachweiskonto/index.html` | ADD_GLOSSARY_CROSSLINKS | evaluation |
 | https://wirkungsoekonomie.de/begriffe/produkt-id/ | `begriffe/produkt-id/index.html` | ADD_GLOSSARY_CROSSLINKS | — |
-| https://wirkungsoekonomie.de/quellenarchiv/ | `quellenarchiv/index.html` | ADD_SOURCE_LINKS | wirkungsblind, folgenabschaetzung, dns, alternativen, evaluation |
+| https://wirkungsoekonomie.de/wirkungsfelder/staat-recht-demokratie/ | `wirkungsfelder/staat-recht-demokratie/index.html` | CORRECT_OVERCLAIM, ADD_STATE_SUSTAINABILITY_ARCHITECTURE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| https://wirkungsoekonomie.de/wirkungsfelder/staat-recht-demokratie/wirkung-als-rechtsprinzip-wstg/ | `wirkungsfelder/staat-recht-demokratie/wirkung-als-rechtsprinzip-wstg/index.html` | ADD_GGO_GFA_REFERENCE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| https://wirkungsoekonomie.de/wirkungsfelder/staat-recht-demokratie/wirkungshaushalt/ | `wirkungsfelder/staat-recht-demokratie/wirkungshaushalt/index.html` | ADDENDUM_REQUIRED | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| https://wirkungsoekonomie.de/wirkungsfelder/staat-recht-demokratie/wirkungsrat-governance/ | `wirkungsfelder/staat-recht-demokratie/wirkungsrat-governance/index.html` | ADD_STATE_SUSTAINABILITY_ARCHITECTURE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| https://wirkungsoekonomie.de/wirkungsfelder/staat-recht-demokratie/staat-als-wirkungsarchitektur-resilienzstaat/ | `wirkungsfelder/staat-recht-demokratie/staat-als-wirkungsarchitektur-resilienzstaat/index.html` | ADD_STATE_SUSTAINABILITY_ARCHITECTURE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/ | `werkstatt/dossiers/staat-recht-demokratie/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkung-als-rechtsprinzip/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkung-als-rechtsprinzip/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/wirkung-als-rechtsprinzip/ | `werkstatt/dossiers/staat-recht-demokratie/wirkung-als-rechtsprinzip/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungssteuergesetz-wstg/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungssteuergesetz-wstg/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/wirkungssteuergesetz-wstg/ | `werkstatt/dossiers/staat-recht-demokratie/wirkungssteuergesetz-wstg/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungsumsatzsteuer-rechtsrahmen/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungsumsatzsteuer-rechtsrahmen/index.html` | REVIEW_REQUIRED | evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/wirkungsumsatzsteuer-rechtsrahmen/ | `werkstatt/dossiers/staat-recht-demokratie/wirkungsumsatzsteuer-rechtsrahmen/index.html` | REVIEW_REQUIRED | evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungseinkommensteuer-westg/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungseinkommensteuer-westg/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/wirkungseinkommensteuer-westg/ | `werkstatt/dossiers/staat-recht-demokratie/wirkungseinkommensteuer-westg/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungshaushalt/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungshaushalt/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/wirkungshaushalt/ | `werkstatt/dossiers/staat-recht-demokratie/wirkungshaushalt/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungsrat/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungsrat/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/wirkungsrat/ | `werkstatt/dossiers/staat-recht-demokratie/wirkungsrat/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/verwaltung-rechtsschutz-korrektur/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/verwaltung-rechtsschutz-korrektur/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/verwaltung-rechtsschutz-korrektur/ | `werkstatt/dossiers/staat-recht-demokratie/verwaltung-rechtsschutz-korrektur/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/politische-wirkungspruefung/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/politische-wirkungspruefung/index.html` | REVIEW_REQUIRED | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/politische-wirkungspruefung/ | `werkstatt/dossiers/staat-recht-demokratie/politische-wirkungspruefung/index.html` | REWRITE_OR_ADDENDUM_REQUIRED, ADD_GGO_GFA_REFERENCE, ADD_ENAP_REFERENCE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/lobbyismus-machtkonzentration/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/lobbyismus-machtkonzentration/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/lobbyismus-machtkonzentration/ | `werkstatt/dossiers/staat-recht-demokratie/lobbyismus-machtkonzentration/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/buergerbeteiligung-wirkungsdemokratie/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/buergerbeteiligung-wirkungsdemokratie/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
+| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/buergerbeteiligung-wirkungsdemokratie/ | `werkstatt/dossiers/staat-recht-demokratie/buergerbeteiligung-wirkungsdemokratie/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
+| https://wirkungsoekonomie.de/blog/nachhaltigkeit-ist-keine-parteifarbe.html | `blog/nachhaltigkeit-ist-keine-parteifarbe.html` | NO_CHANGE_REQUIRED, CURRENT_REFERENCE | folgenabschaetzung, nachhaltigkeitspruefung, enap, dns, alternativen, evaluation, novelty_or_absence |
+| https://wirkungsoekonomie.de/blog/enap-woek-benchmark-fuenf-bundesvorhaben.html | `blog/enap-woek-benchmark-fuenf-bundesvorhaben.html` | BENCHMARK_REFERENCE, ADD_BENCHMARK_COMPARISON | folgenabschaetzung, nachhaltigkeitspruefung, enap, dns, alternativen, evaluation, novelty_or_absence |
+| https://wirkungsoekonomie.de/quellenarchiv/ | `quellenarchiv/index.html` | ADD_SOURCE_LINKS | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-e-0001/ | `quellenarchiv/wok-e-0001/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-e-0002/ | `quellenarchiv/wok-e-0002/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-e-0003/ | `quellenarchiv/wok-e-0003/index.html` | ADD_SOURCE_LINKS | — |
@@ -126,13 +155,16 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-2531b08385d9/ | `quellenarchiv/wok-g-2531b08385d9/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-2624e05439ab/ | `quellenarchiv/wok-g-2624e05439ab/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-26a9a47a0d5e/ | `quellenarchiv/wok-g-26a9a47a0d5e/index.html` | ADD_SOURCE_LINKS | evaluation |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-g-26bc531e0328/ | `quellenarchiv/wok-g-26bc531e0328/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-27d9a3466aa6/ | `quellenarchiv/wok-g-27d9a3466aa6/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-2819704f1478/ | `quellenarchiv/wok-g-2819704f1478/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-2853dd58190f/ | `quellenarchiv/wok-g-2853dd58190f/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-2904309e5431/ | `quellenarchiv/wok-g-2904309e5431/index.html` | ADD_SOURCE_LINKS | — |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-g-2907c862c38c/ | `quellenarchiv/wok-g-2907c862c38c/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-2c454a5225c7/ | `quellenarchiv/wok-g-2c454a5225c7/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-2e1669f619cd/ | `quellenarchiv/wok-g-2e1669f619cd/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-3058367e6f81/ | `quellenarchiv/wok-g-3058367e6f81/index.html` | ADD_SOURCE_LINKS | — |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-g-333439f9e599/ | `quellenarchiv/wok-g-333439f9e599/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-3458ef28a2ae/ | `quellenarchiv/wok-g-3458ef28a2ae/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-35ad338226fe/ | `quellenarchiv/wok-g-35ad338226fe/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-361ca96e7b6d/ | `quellenarchiv/wok-g-361ca96e7b6d/index.html` | ADD_SOURCE_LINKS | — |
@@ -183,6 +215,7 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-659eef7580f7/ | `quellenarchiv/wok-g-659eef7580f7/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-66ca4d2324be/ | `quellenarchiv/wok-g-66ca4d2324be/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-67538bc81f92/ | `quellenarchiv/wok-g-67538bc81f92/index.html` | ADD_SOURCE_LINKS | — |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-g-6cd2f5b87810/ | `quellenarchiv/wok-g-6cd2f5b87810/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-6d116c3f805e/ | `quellenarchiv/wok-g-6d116c3f805e/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-6e118186568b/ | `quellenarchiv/wok-g-6e118186568b/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-6e227c92afb7/ | `quellenarchiv/wok-g-6e227c92afb7/index.html` | ADD_SOURCE_LINKS | — |
@@ -190,8 +223,8 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-71052ba46bdc/ | `quellenarchiv/wok-g-71052ba46bdc/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-713d480f4bb4/ | `quellenarchiv/wok-g-713d480f4bb4/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-7144c6926887/ | `quellenarchiv/wok-g-7144c6926887/index.html` | ADD_SOURCE_LINKS | — |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-g-716fa1e45532/ | `quellenarchiv/wok-g-716fa1e45532/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-72d37d5c96d7/ | `quellenarchiv/wok-g-72d37d5c96d7/index.html` | ADD_SOURCE_LINKS | — |
-| https://wirkungsoekonomie.de/quellenarchiv/wok-g-743b762a8b80/ | `quellenarchiv/wok-g-743b762a8b80/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-76b71f16d4d4/ | `quellenarchiv/wok-g-76b71f16d4d4/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-7745e10a13a7/ | `quellenarchiv/wok-g-7745e10a13a7/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-78cc21e2c8f8/ | `quellenarchiv/wok-g-78cc21e2c8f8/index.html` | ADD_SOURCE_LINKS | — |
@@ -276,6 +309,7 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-f0c9937cf43c/ | `quellenarchiv/wok-g-f0c9937cf43c/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-f25439efcf81/ | `quellenarchiv/wok-g-f25439efcf81/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-f28d45801a4c/ | `quellenarchiv/wok-g-f28d45801a4c/index.html` | ADD_SOURCE_LINKS | — |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-g-f29e30f1df9a/ | `quellenarchiv/wok-g-f29e30f1df9a/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-f3f9c13582c1/ | `quellenarchiv/wok-g-f3f9c13582c1/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-f4a0ebf7cc0b/ | `quellenarchiv/wok-g-f4a0ebf7cc0b/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-f5e9e97927e0/ | `quellenarchiv/wok-g-f5e9e97927e0/index.html` | ADD_SOURCE_LINKS | — |
@@ -1368,35 +1402,37 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/quellenarchiv/wok-q-1088/ | `quellenarchiv/wok-q-1088/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-q-1089/ | `quellenarchiv/wok-q-1089/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-q-1090/ | `quellenarchiv/wok-q-1090/index.html` | ADD_SOURCE_LINKS | — |
-| https://wirkungsoekonomie.de/wirkungsfelder/staat-recht-demokratie/ | `wirkungsfelder/staat-recht-demokratie/index.html` | CORRECT_OVERCLAIM, ADD_STATE_SUSTAINABILITY_ARCHITECTURE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
-| https://wirkungsoekonomie.de/wirkungsfelder/staat-recht-demokratie/wirkung-als-rechtsprinzip-wstg/ | `wirkungsfelder/staat-recht-demokratie/wirkung-als-rechtsprinzip-wstg/index.html` | ADD_GGO_GFA_REFERENCE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
-| https://wirkungsoekonomie.de/wirkungsfelder/staat-recht-demokratie/wirkungshaushalt/ | `wirkungsfelder/staat-recht-demokratie/wirkungshaushalt/index.html` | ADDENDUM_REQUIRED | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
-| https://wirkungsoekonomie.de/wirkungsfelder/staat-recht-demokratie/wirkungsrat-governance/ | `wirkungsfelder/staat-recht-demokratie/wirkungsrat-governance/index.html` | ADD_STATE_SUSTAINABILITY_ARCHITECTURE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
-| https://wirkungsoekonomie.de/wirkungsfelder/staat-recht-demokratie/staat-als-wirkungsarchitektur-resilienzstaat/ | `wirkungsfelder/staat-recht-demokratie/staat-als-wirkungsarchitektur-resilienzstaat/index.html` | ADD_STATE_SUSTAINABILITY_ARCHITECTURE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/ | `werkstatt/dossiers/staat-recht-demokratie/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkung-als-rechtsprinzip/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkung-als-rechtsprinzip/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/wirkung-als-rechtsprinzip/ | `werkstatt/dossiers/staat-recht-demokratie/wirkung-als-rechtsprinzip/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungssteuergesetz-wstg/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungssteuergesetz-wstg/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/wirkungssteuergesetz-wstg/ | `werkstatt/dossiers/staat-recht-demokratie/wirkungssteuergesetz-wstg/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungsumsatzsteuer-rechtsrahmen/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungsumsatzsteuer-rechtsrahmen/index.html` | REVIEW_REQUIRED | evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/wirkungsumsatzsteuer-rechtsrahmen/ | `werkstatt/dossiers/staat-recht-demokratie/wirkungsumsatzsteuer-rechtsrahmen/index.html` | REVIEW_REQUIRED | evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungseinkommensteuer-westg/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungseinkommensteuer-westg/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/wirkungseinkommensteuer-westg/ | `werkstatt/dossiers/staat-recht-demokratie/wirkungseinkommensteuer-westg/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungshaushalt/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungshaushalt/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/wirkungshaushalt/ | `werkstatt/dossiers/staat-recht-demokratie/wirkungshaushalt/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungsrat/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/wirkungsrat/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/wirkungsrat/ | `werkstatt/dossiers/staat-recht-demokratie/wirkungsrat/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/verwaltung-rechtsschutz-korrektur/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/verwaltung-rechtsschutz-korrektur/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/verwaltung-rechtsschutz-korrektur/ | `werkstatt/dossiers/staat-recht-demokratie/verwaltung-rechtsschutz-korrektur/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/politische-wirkungspruefung/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/politische-wirkungspruefung/index.html` | REVIEW_REQUIRED | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/politische-wirkungspruefung/ | `werkstatt/dossiers/staat-recht-demokratie/politische-wirkungspruefung/index.html` | REWRITE_OR_ADDENDUM_REQUIRED, ADD_GGO_GFA_REFERENCE, ADD_ENAP_REFERENCE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/lobbyismus-machtkonzentration/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/lobbyismus-machtkonzentration/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/lobbyismus-machtkonzentration/ | `werkstatt/dossiers/staat-recht-demokratie/lobbyismus-machtkonzentration/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/buergerbeteiligung-wirkungsdemokratie/ | `werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/buergerbeteiligung-wirkungsdemokratie/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
-| https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/buergerbeteiligung-wirkungsdemokratie/ | `werkstatt/dossiers/staat-recht-demokratie/buergerbeteiligung-wirkungsdemokratie/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
-| https://wirkungsoekonomie.de/blog/nachhaltigkeit-ist-keine-parteifarbe.html | `blog/nachhaltigkeit-ist-keine-parteifarbe.html` | NO_CHANGE_REQUIRED, CURRENT_REFERENCE | folgenabschaetzung, nachhaltigkeitspruefung, enap, dns, alternativen, evaluation, novelty_or_absence |
-| https://wirkungsoekonomie.de/blog/enap-woek-benchmark-fuenf-bundesvorhaben.html | `blog/enap-woek-benchmark-fuenf-bundesvorhaben.html` | BENCHMARK_REFERENCE, ADD_BENCHMARK_COMPARISON | folgenabschaetzung, nachhaltigkeitspruefung, enap, dns, alternativen, evaluation, novelty_or_absence |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-q-1091/ | `quellenarchiv/wok-q-1091/index.html` | ADD_SOURCE_LINKS | — |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-q-1092/ | `quellenarchiv/wok-q-1092/index.html` | ADD_SOURCE_LINKS | — |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-q-1093/ | `quellenarchiv/wok-q-1093/index.html` | ADD_SOURCE_LINKS | — |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-q-1094/ | `quellenarchiv/wok-q-1094/index.html` | ADD_SOURCE_LINKS | — |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-q-1095/ | `quellenarchiv/wok-q-1095/index.html` | ADD_SOURCE_LINKS | — |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-q-1096/ | `quellenarchiv/wok-q-1096/index.html` | ADD_SOURCE_LINKS | evaluation |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-q-1097/ | `quellenarchiv/wok-q-1097/index.html` | ADD_SOURCE_LINKS | — |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-q-9029/ | `quellenarchiv/wok-q-9029/index.html` | ADD_SOURCE_LINKS | folgenabschaetzung, dns, alternativen |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-q-9030/ | `quellenarchiv/wok-q-9030/index.html` | ADD_SOURCE_LINKS | nachhaltigkeitspruefung, enap, dns |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-q-9031/ | `quellenarchiv/wok-q-9031/index.html` | ADD_SOURCE_LINKS | nachhaltigkeitspruefung, enap, dns |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-q-9032/ | `quellenarchiv/wok-q-9032/index.html` | ADD_SOURCE_LINKS | dns |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-q-9033/ | `quellenarchiv/wok-q-9033/index.html` | ADD_SOURCE_LINKS | dns |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-q-9034/ | `quellenarchiv/wok-q-9034/index.html` | ADD_SOURCE_LINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-q-9035/ | `quellenarchiv/wok-q-9035/index.html` | ADD_SOURCE_LINKS | dns |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-q-9036/ | `quellenarchiv/wok-q-9036/index.html` | ADD_SOURCE_LINKS | nachhaltigkeitspruefung, dns |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-q-9037/ | `quellenarchiv/wok-q-9037/index.html` | ADD_SOURCE_LINKS | nachhaltigkeitspruefung, enap, dns |
+| https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/ | `bibliothek/woek-begriffsleitfaden-fuehrend/index.html` | REVIEW_REQUIRED | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation, novelty_or_absence |
+| https://wirkungsoekonomie.de/bibliothek/woek-master-items-register/ | `bibliothek/woek-master-items-register/index.html` | REVIEW_REQUIRED | nachhaltigkeitspruefung, enap, egfa, dns |
+| https://wirkungsoekonomie.de/begriffe/deutsche-nachhaltigkeitsstrategie/ | `begriffe/deutsche-nachhaltigkeitsstrategie/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, dns |
+| https://wirkungsoekonomie.de/begriffe/gemeinsame-geschaeftsordnung-der-bundesministerien/ | `begriffe/gemeinsame-geschaeftsordnung-der-bundesministerien/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| https://wirkungsoekonomie.de/begriffe/gesetzesfolgenabschaetzung/ | `begriffe/gesetzesfolgenabschaetzung/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| https://wirkungsoekonomie.de/begriffe/nachhaltigkeitspruefung-des-bundes/ | `begriffe/nachhaltigkeitspruefung-des-bundes/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, dns, evaluation |
+| https://wirkungsoekonomie.de/begriffe/elektronische-nachhaltigkeitspruefung/ | `begriffe/elektronische-nachhaltigkeitspruefung/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns |
+| https://wirkungsoekonomie.de/begriffe/e-gesetzgebung/ | `begriffe/e-gesetzgebung/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa |
+| https://wirkungsoekonomie.de/begriffe/dns-indikator/ | `begriffe/dns-indikator/index.html` | ADD_GLOSSARY_CROSSLINKS | dns |
+| https://wirkungsoekonomie.de/begriffe/zielbezug-und-wirkung/ | `begriffe/zielbezug-und-wirkung/index.html` | ADD_GLOSSARY_CROSSLINKS | dns |
+| https://wirkungsoekonomie.de/begriffe/ex-ante-folgenpruefung-und-reality-check/ | `begriffe/ex-ante-folgenpruefung-und-reality-check/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, evaluation |
+| https://wirkungsoekonomie.de/begriffe/staatliche-nachhaltigkeitsarchitektur/ | `begriffe/staatliche-nachhaltigkeitsarchitektur/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, evaluation |
+| https://wirkungsoekonomie.de/begriffe/parlamentarischer-beirat-fuer-nachhaltige-entwicklung-und-zukunftsfragen/ | `begriffe/parlamentarischer-beirat-fuer-nachhaltige-entwicklung-und-zukunftsfragen/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, dns |
+| https://wirkungsoekonomie.de/begriffe/state-gfa-enap-benchmark/ | `begriffe/state-gfa-enap-benchmark/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, dns |
+| https://wirkungsoekonomie.de/begriffe/wirkungsblindheit/ | `begriffe/wirkungsblindheit/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, dns, evaluation |
 
 ## Claim-signal review
 
@@ -1464,9 +1500,6 @@ Signals are review candidates, not automatic errors.
 - `bibliothek/wirkungsdilemmata-kooperation-sdgplus-gesamtstudie/index.html` — wirkungsblind, folgenabschaetzung, alternativen, evaluation — Review published artefacts; add visible current-method note/erratum when materially required; never silently rewrite historical files.
 - `begriffe/wirkungssteuer/index.html` — wirkungsblind, evaluation — Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 - `begriffe/wirkungssteuergesetz/index.html` — wirkungsblind — Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
-- `quellenarchiv/index.html` — wirkungsblind, folgenabschaetzung, dns, alternativen, evaluation — Add official primary sources with function/version/status; separate public GFA documentation from public eNAP-export provenance.
-- `quellenarchiv/wok-q-0465/index.html` — novelty_or_absence — Add official primary sources with function/version/status; separate public GFA documentation from public eNAP-export provenance.
-- `quellenarchiv/wok-q-0843/index.html` — wirkungsblind — Add official primary sources with function/version/status; separate public GFA documentation from public eNAP-export provenance.
 - `wirkungsfelder/produkte-konsum/wirkungsumsatzsteuer-produktwirkungssteuer/index.html` — wirkungsblind, alternativen, evaluation — No material #253 change identified by path rule; semantic scan still applies.
 - `wirkungsfelder/produkte-konsum/lieferketten-importlogik-wirkungsvorsteuer/index.html` — wirkungsblind, evaluation — No material #253 change identified by path rule; semantic scan still applies.
 - `werkzeuge/impact-controlling/methodenpapiere/woek-ids-indikatorenarchitektur/index.html` — wirkungsblind, evaluation — No material #253 change identified by path rule; semantic scan still applies.
@@ -1475,15 +1508,16 @@ Signals are review candidates, not automatic errors.
 - `blog/wie-wirksam-ist-das-sondervermoegen-wirklich.html` — wirkungsblind, alternativen, evaluation, novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
 - `blog/nachhaltigkeit-ist-keine-parteifarbe.html` — folgenabschaetzung, nachhaltigkeitspruefung, enap, dns, alternativen, evaluation, novelty_or_absence — Preserve as current source-bound reference; crosslink from relevant current pages.
 - `blog/enap-woek-benchmark-fuenf-bundesvorhaben.html` — folgenabschaetzung, nachhaltigkeitspruefung, enap, dns, alternativen, evaluation, novelty_or_absence — Use as canonical five-case calibration corpus; recheck GGO §§43/44 claims and keep public-GFA vs public-eNAP provenance explicit.
-
-## Sitemap routes with unresolved source mapping
-
-- https://wirkungsoekonomie.de/bibliothek/wirkungssteuer-wstg-3-0/ → `bibliothek/wirkungssteuer-wstg-3-0/index.html`
+- `quellenarchiv/index.html` — wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation — Add official primary sources with function/version/status; separate public GFA documentation from public eNAP-export provenance.
+- `quellenarchiv/wok-q-0465/index.html` — novelty_or_absence — Add official primary sources with function/version/status; separate public GFA documentation from public eNAP-export provenance.
+- `quellenarchiv/wok-q-0843/index.html` — wirkungsblind — Add official primary sources with function/version/status; separate public GFA documentation from public eNAP-export provenance.
+- `bibliothek/woek-begriffsleitfaden-fuehrend/index.html` — wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation, novelty_or_absence — Review published artefacts; add visible current-method note/erratum when materially required; never silently rewrite historical files.
+- `begriffe/wirkungsblindheit/index.html` — wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, dns, evaluation — Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 
 ## Recursive non-HTML publication/support surfaces
 
-- Tracked support text files inventoried: **746**
-- Combined matrix items (routes + extra HTML + support): **16967**
+- Tracked support text files inventoried: **749**
+- Combined matrix items (routes + extra HTML + support): **16993**
 - Every matrix item exposes the #253 contract fields: source_path, public_url, historical_publication, relevance, classification, required_action, source_refs and status.
 - Includes llms.txt, sitemap/search metadata, structured-data registries, glossary/source archive, library/journal/reference inputs and generators/workflows.
 
@@ -1515,6 +1549,7 @@ Signals are review candidates, not automatic errors.
 | `assets/data/wirkungsradar-resonance-cards.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | alternativen |
 | `assets/data/wirkungsradar-source-packs.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | alternativen |
 | `assets/data/wirkungsradar-source-registry.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | alternativen, novelty_or_absence |
+| `assets/data/woek-id-register.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen |
 | `assets/search/search-associations.json` | search_index_or_generator | ADD_SOURCE_LINKS | wirkungsblind, folgenabschaetzung |
 | `assets/search/search-curated-entrypoints.json` | search_index_or_generator | NO_CHANGE_REQUIRED | wirkungsblind |
 | `assets/search/search-dictionary.json` | search_index_or_generator | NO_CHANGE_REQUIRED | wirkungsblind, alternativen |
@@ -1555,7 +1590,7 @@ Signals are review candidates, not automatic errors.
 | `content/podcast/wie-misst-man-etwas-das-man-nicht-sieht.txt` | support_text | CORRECT_OVERCLAIM | novelty_or_absence |
 | `content/podcast/wirkung-ist-nicht-absicht.txt` | support_text | NO_CHANGE_REQUIRED | evaluation |
 | `content/podcast/zwei-aepfel-ein-preis.txt` | support_text | NO_CHANGE_REQUIRED | wirkungsblind, alternativen |
-| `content/quellenarchiv/glossary-source-records.json` | source_archive_source_or_generator | ADD_SOURCE_LINKS | enap, egfa, dns, evaluation |
+| `content/quellenarchiv/glossary-source-records.json` | source_archive_source_or_generator | NO_CHANGE_REQUIRED | evaluation |
 | `content/quellenarchiv/legal-source-records.json` | source_archive_source_or_generator | ADD_DNS_REFERENCE, ADD_GGO_GFA_REFERENCE, ADD_ENAP_REFERENCE, ADD_SOURCE_LINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen |
 | `content/quellenarchiv/publication-supplements/gesamtstudie-wirkungsdilemmata-kooperation-sdgplus.json` | source_archive_source_or_generator | NO_CHANGE_REQUIRED | alternativen |
 | `content/quellenarchiv/publication-supplements/wirkungsbasiertes-value-pricing-v1.2.json` | source_archive_source_or_generator | NO_CHANGE_REQUIRED | evaluation |
@@ -1678,6 +1713,8 @@ Signals are review candidates, not automatic errors.
 | `content/wirkungswissenschaften/journal.md` | journal_source_or_manifest | CORRECT_OVERCLAIM | wirkungsblind, folgenabschaetzung, alternativen, evaluation, novelty_or_absence |
 | `content/wissen/wissenskarten.json` | support_text | NO_CHANGE_REQUIRED | alternativen, evaluation |
 | `content/wissen/wissensseite-template.md` | support_text | NO_CHANGE_REQUIRED | wirkungsblind |
+| `content/woek-register/changelog.json` | support_text | ADD_SOURCE_LINKS | nachhaltigkeitspruefung, enap, egfa, dns |
+| `content/woek-register/sources.json` | support_text | ADD_SOURCE_LINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen |
 | `llms.txt` | machine_readable_reference | ADD_STATE_SUSTAINABILITY_ARCHITECTURE, ADD_SOURCE_LINKS | nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | `package.json` | support_text | NO_CHANGE_REQUIRED | — |
 | `public/data/en-asset-text-inventory.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | evaluation |
@@ -1695,12 +1732,14 @@ Signals are review candidates, not automatic errors.
 | `public/data/woems-canvas.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | folgenabschaetzung, alternativen, evaluation |
 | `public/data/woems-methoden.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | folgenabschaetzung, evaluation |
 | `scripts/api/build-core-api-manifest.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
-| `scripts/audit-documents-for-publication.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | folgenabschaetzung, evaluation |
+| `scripts/audit-documents-for-publication.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, evaluation |
 | `scripts/audit-tool-dashboards.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
 | `scripts/content/apply-maiwald-principle.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | wirkungsblind |
 | `scripts/feeds/build-rss-feeds.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
 | `scripts/glossary/build-glossary-pages.mjs` | glossary_source_or_generator | NO_CHANGE_REQUIRED | wirkungsblind, alternativen, evaluation, novelty_or_absence |
+| `scripts/glossary/build-glossary-registry.mjs` | glossary_source_or_generator | NO_CHANGE_REQUIRED | wirkungsblind |
 | `scripts/glossary/check-glossary-publication-quality.mjs` | glossary_source_or_generator | NO_CHANGE_REQUIRED | novelty_or_absence |
+| `scripts/glossary/check-legal-source-coverage.mjs` | glossary_source_or_generator | NO_CHANGE_REQUIRED | wirkungsblind, enap, egfa, dns |
 | `scripts/import/build-public-impact-room-dossier.py` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | wirkungsblind |
 | `scripts/import/import-2026-08-20-journal-batch.py` | journal_source_or_manifest | NO_CHANGE_REQUIRED | folgenabschaetzung, nachhaltigkeitspruefung, enap, dns, alternativen |
 | `scripts/import/import-das-bessere-spiel-journal.py` | journal_source_or_manifest | NO_CHANGE_REQUIRED | alternativen |
@@ -1716,6 +1755,8 @@ Signals are review candidates, not automatic errors.
 | `scripts/import/import-wissensgesellschaft-wirkungsgesellschaft.py` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/journal/publish-lohnkosten-besser-werden.mjs` | journal_source_or_manifest | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/journal/publish-wirkstoff-narrative.mjs` | journal_source_or_manifest | NO_CHANGE_REQUIRED | alternativen |
+| `scripts/lib/method-version-indexability.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | wirkungsblind, enap, dns |
+| `scripts/library/build-library-versioning-stage9.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | nachhaltigkeitspruefung |
 | `scripts/methods/import-woems-source.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | folgenabschaetzung |
 | `scripts/natalie/build-natalie-pages.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
 | `scripts/podcast/build-podcast-pages.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | wirkungsblind |
@@ -1741,11 +1782,14 @@ Signals are review candidates, not automatic errors.
 | `scripts/portal/build-rang23-academy-library.py` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
 | `scripts/portal/build-science-innovation-digitalization.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
 | `scripts/portal/build-sdg-reference.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | folgenabschaetzung, dns, evaluation |
-| `scripts/portal/build-state-law-democracy.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | folgenabschaetzung, alternativen, evaluation |
+| `scripts/portal/build-state-law-democracy.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | `scripts/portal/build-work-income-automation.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
+| `scripts/publications/build-begriffsleitfaden-v1.6.py` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | nachhaltigkeitspruefung, dns, evaluation |
 | `scripts/quality/apply-stage13-usability-a11y-seo.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | wirkungsblind |
+| `scripts/quality/check-state-sustainability-architecture.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, evaluation |
 | `scripts/quellenarchiv/check-quellenarchiv-quality.mjs` | source_archive_source_or_generator | NO_CHANGE_REQUIRED | novelty_or_absence |
 | `scripts/reference/enhance-reference-ux.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | wirkungsblind, evaluation |
+| `scripts/register/build-masterregister-v1.5.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | nachhaltigkeitspruefung, enap, egfa, dns, evaluation |
 | `scripts/site/apply-2-0-final-consolidation.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | wirkungsblind |
 | `scripts/site/apply-website-architecture-v21.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/site/build-institut-teaser.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
@@ -1756,6 +1800,7 @@ Signals are review candidates, not automatic errors.
 | `scripts/studienskripte/apply-v33-rechenstandard.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/studienskripte/deepen-sprint2.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/studienskripte/generate-rohfassungen.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
+| `scripts/tools/build-woek-id-register-public-explorer.py` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | nachhaltigkeitspruefung, enap, egfa, dns |
 | `scripts/wirkungsradar/apply-debate-compass-unified-template.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/wirkungsradar/apply-debate-compass-use-order.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/wirkungsradar/apply-master-debattenkarten.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen, evaluation |
@@ -1773,7 +1818,7 @@ Signals are review candidates, not automatic errors.
 | `scripts/wirkungsradar/import-corona-debattenkarte.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
 | `scripts/wirkungswissenschaften/build-wirkungswissenschaften-hub.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | `scripts/wirkungswissenschaften/build-wiwi-publications.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | alternativen, evaluation |
-| `sitemap.xml` | sitemap | NO_CHANGE_REQUIRED | enap, evaluation |
+| `sitemap.xml` | sitemap | NO_CHANGE_REQUIRED | wirkungsblind, enap, dns, evaluation |
 | `tools/apply_state_sustainability_architecture.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | `tools/apply_state_sustainability_precision.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | `tools/apply_state_sustainability_public_precision.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | folgenabschaetzung, nachhaltigkeitspruefung, enap, dns |
@@ -1784,285 +1829,14 @@ Signals are review candidates, not automatic errors.
 | `tools/audit_state_sustainability_support_files.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | enap, egfa, dns |
 | `tools/build_woek_document_inventory.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | wirkungsblind |
 | `tools/check_state_sustainability_architecture.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
-| `tools/finalize_state_sustainability_matrix.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | wirkungsblind, enap, dns |
+| `tools/finalize_state_sustainability_matrix.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | wirkungsblind, folgenabschaetzung, enap, egfa, dns, alternativen, novelty_or_absence |
 | `tools/generate_fuer_pages.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | folgenabschaetzung, evaluation, novelty_or_absence |
 | `tools/generate_sprint1_visuals.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | evaluation |
 | `tools/generate_visual_phase_assets.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | evaluation |
 
 ## Review/action closure
 
-- Combined reviewed items: **16968**
-- Open semantic/action reviews after deterministic projection: **269**
+- Combined reviewed items: **16994**
+- Open semantic/action reviews after deterministic projection: **0**
+- Broad novelty/Wirkungsblindheit hits were dispositioned by a second-pass contextual state-absence review; isolated words are not treated as absence claims.
 - `AGENTS.md` is explicitly inventoried as a corrected current guardrail.
-
-### Open semantic-review signals
-
-- `bibliothek/wirkungsdilemmata-kooperation-sdgplus-gesamtstudie/index.html` — wirkungsblind, folgenabschaetzung, alternativen, evaluation — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-04-woek-sdg-geschichte-vorlaeufer-verhandlungsprozess-deta-2/lesen/06-4-vorlaufer-ii-brundtland-1987-und-die-verbindung-von-umwelt/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-04-woek-sdg-geschichte-vorlaeufer-verhandlungsprozess-deta-2/lesen/07-5-rio-1992-agenda-21-rio-erklarung-und-die-erste-grosse-syst/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-06-woek-wirtschaft-unternehmen-unternehmen-als-wirkungssys-2/lesen/17-erganzende-praxis-und-implementierungsbausteine/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-06-woek-wirtschaft-unternehmen-unternehmen-als-wirkungssys-2/lesen/18-erganzende-ausarbeitung-reifegradmodell-fur-unternehmen/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-07-woek-wirtschaft-unternehmen-wirkungsorientierte-unterne-2/lesen/00-inhaltsubersicht/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-07-woek-wirtschaft-unternehmen-wirkungsorientierte-unterne-2/lesen/01-kurzprofil/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-07-woek-wirtschaft-unternehmen-wirkungsorientierte-unterne-2/lesen/02-1-executive-summary/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-07-woek-wirtschaft-unternehmen-wirkungsorientierte-unterne-2/lesen/03-2-ausgangsdiagnose-fuhrung-zwischen-kontrollillusion-und-wir/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-07-woek-wirtschaft-unternehmen-wirkungsorientierte-unterne-2/lesen/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-10-woek-wirtschaft-unternehmen-wirkungscontrolling-detailk-2/lesen/23-vertiefende-umsetzungsmodule/index.html` — alternativen, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-10-woek-wirtschaft-unternehmen-wirkungscontrolling-detailk-2/lesen/24-14-reifegradmodell-fur-wirkungscontrolling/index.html` — alternativen, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-10-woek-wirtschaft-unternehmen-wirkungscontrolling-detailk-2/lesen/25-15-management-cockpit-und-entscheidungslogik/index.html` — alternativen, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-12-woek-wirtschaft-unternehmen-marketing-vertrieb-fuenftes-2/lesen/02-executive-summary/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-12-woek-wirtschaft-unternehmen-marketing-vertrieb-fuenftes-2/lesen/03-ausgangsdiagnose-absatzlogik-ohne-wirkungswahrheit/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-16-woek-produkte-konsum-wirkungsumsatzsteuer-produktwirkun-2/lesen/01-inhaltsubersicht/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-16-woek-produkte-konsum-wirkungsumsatzsteuer-produktwirkun-2/lesen/02-executive-summary/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-16-woek-produkte-konsum-wirkungsumsatzsteuer-produktwirkun-2/lesen/03-ausgangsdiagnose-warum-die-heutige-umsatzsteuer-wirkungsblin/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-16-woek-produkte-konsum-wirkungsumsatzsteuer-produktwirkun-2/lesen/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-19-woek-produkte-konsum-lieferketten-importlogik-wirkungsv-2/lesen/02-executive-summary/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-19-woek-produkte-konsum-lieferketten-importlogik-wirkungsv-2/lesen/03-ausgangsdiagnose-warum-lieferketten-heute-wirkung-verstecken/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-21-woek-impact-controlling-woek-ids-indikatorenarchitektur-2/lesen/02-executive-summary/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-21-woek-impact-controlling-woek-ids-indikatorenarchitektur-2/lesen/03-ausgangsdiagnose-berichte-ohne-ruckkopplung/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-23-woek-impact-controlling-t-sroi-transformationsmessung-m-2/lesen/02-executive-summary/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-23-woek-impact-controlling-t-sroi-transformationsmessung-m-2/lesen/03-warum-roi-und-sroi-nicht-reichen/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-23-woek-impact-controlling-t-sroi-transformationsmessung-m-2/lesen/07-netto-wirkung-und-negativwirkungen/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-23-woek-impact-controlling-t-sroi-transformationsmessung-m-2/lesen/08-transformationsmultiplikator/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-33-woek-finanzsystem-kapital-esg-ratings-boersen-impact-ex-2/lesen/index.html` — evaluation, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-35-woek-finanzsystem-kapital-steuer-abgabenarchitektur-kap-2/lesen/index.html` — wirkungsblind, evaluation — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-arbeitspapier-folgencheck-wirkungspolitische-sprache-v0-1/lesen/07-7-analyse-der-zentralen-frames-und-narrative/index.html` — alternativen, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-kommunaler-wirkungsindex-kwi-diskussionspapier-1-0-pdf/lesen/01-inhaltsverzeichnis/index.html` — alternativen, evaluation, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-wirkungscontrolling-detailkonzept-dossier-v1-0-pdf/lesen/09-wirkungscontrollings/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-wirkungscontrolling-detailkonzept-dossier-v1-0-pdf/lesen/19-und-in-offentlichen-organisationen/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-wirkungscontrolling-detailkonzept-dossier-v1-0-pdf/lesen/23-teil-x-erweiterte-bereichsdossiers/index.html` — alternativen, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-arbeit-einkommen-wirkung-v0-1-2-pdf/lesen/index.html` — evaluation, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-arbeit-einkommen-wirkung-v0-1-pdf/lesen/00-leitfrage/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-arbeit-einkommen-wirkung-v0-1-pdf/lesen/01-einordnung-im-wirkungsfeld/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-arbeit-einkommen-wirkung-v0-1-pdf/lesen/02-ausgangslage/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-arbeit-einkommen-wirkung-v0-1-pdf/lesen/03-wirkungsokonomischer-perspektivwechsel/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-automatisierung-maschinenleistung-v0-1-2/lesen/00-leitfrage/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-automatisierung-maschinenleistung-v0-1-2/lesen/01-einordnung-im-wirkungsfeld/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-automatisierung-maschinenleistung-v0-1-2/lesen/02-ausgangslage/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-automatisierung-maschinenleistung-v0-1-2/lesen/03-wirkungsokonomischer-perspektivwechsel/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-care-bildung-ehrenamt-wirkleistung-v0-1-2/lesen/00-leitfrage/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-care-bildung-ehrenamt-wirkleistung-v0-1-2/lesen/01-einordnung-im-wirkungsfeld/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-care-bildung-ehrenamt-wirkleistung-v0-1-2/lesen/02-ausgangslage/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-care-bildung-ehrenamt-wirkleistung-v0-1-2/lesen/03-wirkungsokonomischer-perspektivwechsel/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-plattform-daten-ki-arbeit-v0-1-2-pdf/lesen/index.html` — evaluation, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-plattform-daten-ki-arbeit-v0-1-pdf/lesen/00-leitfrage/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-plattform-daten-ki-arbeit-v0-1-pdf/lesen/01-einordnung-im-wirkungsfeld/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-plattform-daten-ki-arbeit-v0-1-pdf/lesen/02-ausgangslage/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-plattform-daten-ki-arbeit-v0-1-pdf/lesen/03-wirkungsokonomischer-perspektivwechsel/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-sozialabgaben-entkopplung-v0-1-2-pdf/lesen/00-leitfrage/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-sozialabgaben-entkopplung-v0-1-2-pdf/lesen/01-einordnung-im-wirkungsfeld/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-sozialabgaben-entkopplung-v0-1-2-pdf/lesen/02-ausgangslage/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-sozialabgaben-entkopplung-v0-1-2-pdf/lesen/03-wirkungsokonomischer-perspektivwechsel/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-sozialabgaben-entkopplung-v0-1-pdf/lesen/00-leitfrage/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-sozialabgaben-entkopplung-v0-1-pdf/lesen/01-einordnung-im-wirkungsfeld/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-sozialabgaben-entkopplung-v0-1-pdf/lesen/02-ausgangslage/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-sozialabgaben-entkopplung-v0-1-pdf/lesen/03-wirkungsokonomischer-perspektivwechsel/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-uebergang-qualifizierung-resilienz-v0-1-2/lesen/00-leitfrage/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-uebergang-qualifizierung-resilienz-v0-1-2/lesen/01-einordnung-im-wirkungsfeld/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-uebergang-qualifizierung-resilienz-v0-1-2/lesen/02-ausgangslage/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-uebergang-qualifizierung-resilienz-v0-1-2/lesen/03-wirkungsokonomischer-perspektivwechsel/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-uebergang-qualifizierung-resilienz-v0-1-2/lesen/index.html` — evaluation, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-wirkungseinkommen-v0-1-2-pdf/lesen/00-leitfrage/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-wirkungseinkommen-v0-1-2-pdf/lesen/01-einordnung-im-wirkungsfeld/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-wirkungseinkommen-v0-1-2-pdf/lesen/02-ausgangslage/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-wirkungseinkommen-v0-1-2-pdf/lesen/03-wirkungsokonomischer-perspektivwechsel/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-wirkungseinkommen-v0-1-pdf/lesen/00-leitfrage/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-wirkungseinkommen-v0-1-pdf/lesen/01-einordnung-im-wirkungsfeld/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-wirkungseinkommen-v0-1-pdf/lesen/02-ausgangslage/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-wirkungseinkommen-v0-1-pdf/lesen/03-wirkungsokonomischer-perspektivwechsel/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-wirkungseinkommensteuer-westg-v0-1-2-pd/lesen/00-leitfrage/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-wirkungseinkommensteuer-westg-v0-1-2-pd/lesen/01-einordnung-im-wirkungsfeld/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-wirkungseinkommensteuer-westg-v0-1-2-pd/lesen/02-ausgangslage/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-wirkungseinkommensteuer-westg-v0-1-2-pd/lesen/03-wirkungsokonomischer-perspektivwechsel/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-wirkungseinkommensteuer-westg-v0-1-pdf/lesen/00-leitfrage/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-wirkungseinkommensteuer-westg-v0-1-pdf/lesen/01-einordnung-im-wirkungsfeld/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-wirkungseinkommensteuer-westg-v0-1-pdf/lesen/02-ausgangslage/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-detailkonzept-wirkungseinkommensteuer-westg-v0-1-pdf/lesen/03-wirkungsokonomischer-perspektivwechsel/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-dossier-klimawandel-finanzmarkt-v1-0-pdf/lesen/12-10-zwei-sorten-risiko/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-dossier-klimawandel-finanzmarkt-v1-0-pdf/lesen/17-15-die-instrumente-green-bonds-esg-und-der-co2-preis/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-dossier-klimawandel-finanzmarkt-v1-0-pdf/lesen/22-20-die-stille-neubewertung/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-dossier-oeffentlicher-wirkungsraum-wellen-tiefe-v0-1/lesen/17-16-demokratie-freiheit-und-schutz-vor-missbrauch/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-dossier-oeffentlicher-wirkungsraum-wellen-tiefe-v0-1/lesen/23-anhang-c-glossar/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-dossier-oeffentlicher-wirkungsraum-wellen-tiefe-v0-1/lesen/25-20-vertiefungskapitel-vom-bild-zur-methode/index.html` — wirkungsblind, alternativen — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-dossier-oeffentlicher-wirkungsraum-wellen-tiefe-v0-1/lesen/29-24-die-sechs-tiefenschichten-als-ausfuhrliche-wirkungsraume/index.html` — wirkungsblind, alternativen — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-dossier-oeffentlicher-wirkungsraum-wellen-tiefe-v0-1/lesen/31-26-antwortmanual-vom-reiz-zur-wirkungsfahigen-antwort/index.html` — wirkungsblind, alternativen — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-dossier-sdgs-sdgplus-risiko-resilienzregister-systemr/lesen/08-7-sdg-als-risiko-und-resilienzfelder-der-wirkungsokonomie/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-dossier-sdgs-sdgplus-risiko-resilienzregister-systemr/lesen/10-9-was-die-wirkungsokonomie-erganzt-ruckkopplung/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-dossier-sdgs-sdgplus-risiko-resilienzregister-systemr/lesen/11-10-beispiele-apfel-t-shirt-wasser-stadt-ki-desinformation/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-2-pdf/lesen/03-pravention-gesundheitskassen-und-wirkungshaushalt/index.html` — evaluation, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-2-pdf/lesen/04-versorgungsraume-kliniken-und-gesundheitsnetzwerke/index.html` — evaluation, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-2-pdf/lesen/05-pflege-als-wirkleistung-und-pflegeokosystem/index.html` — evaluation, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-2-pdf/lesen/06-psychische-gesundheit-und-soziale-stabilitat/index.html` — evaluation, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-2-pdf/lesen/08-one-health-klima-umwelt-und-ernahrung/index.html` — evaluation, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-2-pdf/lesen/10-gesundheitsdaten-ki-und-burgerkontrolle/index.html` — evaluation, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-2-pdf/lesen/11-finanzierung-wirkungsfonds-und-gesundheitskassen/index.html` — evaluation, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-2-pdf/lesen/12-versorgung-kliniken-und-gesundheitsnetzwerke/index.html` — evaluation, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-2-pdf/lesen/13-governance-wirkungsrat-und-politische-anschlussfahigkeit/index.html` — evaluation, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-pdf/lesen/03-pravention-gesundheitskassen-und-wirkungshaushalt/index.html` — evaluation, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-pdf/lesen/04-versorgungsraume-kliniken-und-gesundheitsnetzwerke/index.html` — evaluation, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-pdf/lesen/05-pflege-als-wirkleistung-und-pflegeokosystem/index.html` — evaluation, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-pdf/lesen/06-psychische-gesundheit-und-soziale-stabilitat/index.html` — evaluation, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-pdf/lesen/08-one-health-klima-umwelt-und-ernahrung/index.html` — evaluation, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-pdf/lesen/10-gesundheitsdaten-ki-und-burgerkontrolle/index.html` — evaluation, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-pdf/lesen/11-finanzierung-wirkungsfonds-und-gesundheitskassen/index.html` — evaluation, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-pdf/lesen/12-versorgung-kliniken-und-gesundheitsnetzwerke/index.html` — evaluation, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-gesundheit-pflege-einzeldossier-set-v0-2-pdf/lesen/13-governance-wirkungsrat-und-politische-anschlussfahigkeit/index.html` — evaluation, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-medien-oeffentlichkeit-konzeptpapier-v0-1-2-pdf/lesen/index.html` — evaluation, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-medien-oeffentlichkeit-konzeptpapier-v0-1-pdf/lesen/index.html` — evaluation, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-medien-oeffentlichkeit-wirkungsraeume-gestalten-hosti/lesen/00-abstract/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-medien-oeffentlichkeit-wirkungsraeume-gestalten-hosti/lesen/12-teil-iii-offentlichkeit-medien-und-plattformen-als-wirkungsr/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-medien-oeffentlichkeit-wirkungsraeume-gestalten-hosti/lesen/13-9-offentlichkeit-ist-kein-marktplatz-sondern-ruckkopplungsin/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-medien-oeffentlichkeit-wirkungsraeume-gestalten-hosti/lesen/14-10-aufmerksamkeit-ist-keine-orientierung/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-medien-oeffentlichkeit-wirkungsraeume-gestalten-hosti/lesen/86-63-von-der-einzelnen-sendung-zur-wirkungskultur/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-medien-oeffentlichkeit-wirkungsraeume-gestalten-hosti/lesen/87-64-warum-das-alles-keine-kontrolle-sondern-freiheitsschutz-i/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-sdgs-agenda2030-geschichte-dossier-v0-1-2-pdf/lesen/01-1-zweck-des-dossiers/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-sdgs-agenda2030-geschichte-dossier-v0-1-2-pdf/lesen/02-2-website-baustein-kurzinfo-box/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-sdgs-agenda2030-geschichte-dossier-v0-1-2-pdf/lesen/03-3-website-baustein-seitenstruktur-geschichte/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-sdgs-agenda2030-geschichte-dossier-v0-1-2-pdf/lesen/04-4-timeline-mit-kernaussagen/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-sdgs-agenda2030-geschichte-dossier-v0-1-pdf/lesen/01-1-zweck-des-dossiers/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-sdgs-agenda2030-geschichte-dossier-v0-1-pdf/lesen/02-2-website-baustein-kurzinfo-box/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-sdgs-agenda2030-geschichte-dossier-v0-1-pdf/lesen/03-3-website-baustein-seitenstruktur-geschichte/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woek-sdgs-agenda2030-geschichte-dossier-v0-1-pdf/lesen/04-4-timeline-mit-kernaussagen/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woemm-woems-praesentation-2-0-pdf/lesen/01-slide-2/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-downloads-woemm-woems-praesentation-2-0-pdf/lesen/08-slide-9/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-pdf-handbuch-wirkungskompetenz-pdf/lesen/02-teil-i-warum-wirkung-wichtig-ist/index.html` — wirkungsblind, alternativen, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-pdf-handbuch-wirkungskompetenz-pdf/lesen/04-teil-iv-wirkung-als-gesellschaftsmodell/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-pdf-medien-und-wirkung-pdf/lesen/00-wirkungsokonomie/index.html` — alternativen, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-pdf-medien-und-wirkung-pdf/lesen/01-teil-iv-institutionelle-verankerung/index.html` — evaluation, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-pdf-medien-und-wirkung-pdf/lesen/04-teil-vii-implementierung-im-steuerrahmen-der/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-pdf-prozessarchitektur-wirkungsoekonomie-pdf/lesen/00-wirkungsokonomie/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-pdf-prozessarchitektur-wirkungsoekonomie-pdf/lesen/03-2-steuerprozess/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-pdf-prozessarchitektur-wirkungsoekonomie-pdf/lesen/05-3-bedeutung-und-perspektive/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-pdf-use-case-kommunale-wirkungsgewerbesteuer-pdf/lesen/178-innovationskraft-steigt-weil-verantwortung-erstmals-einen-fi/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-pdf-use-case-kommunale-wirkungsgewerbesteuer-pdf/lesen/29-negative-wirkung-steuerzuschlag/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-pdf-use-case-kommunale-wirkungsgewerbesteuer-pdf/lesen/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-pdf-whitepaper-wirkung-statt-kapital-pdf/lesen/00-teil-i-warum-ein-neues-modell/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-pdf-whitepaper-wirkung-statt-kapital-pdf/lesen/01-teil-ii-der-neue-kompass-wirkung/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-pdf-whitepaper-wirkung-statt-kapital-pdf/lesen/02-teil-iii-methoden-wissenschaft/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-pdf-whitepaper-wirkungseinkommen-pdf/lesen/04-einkommensquelle-endet/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-pdf-wirkungseinkommensteuergesetz-westg-pdf/lesen/00-kapitel-1-ausgangslage-und-zielsetzung-des/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-pdf-wirkungseinkommensteuergesetz-westg-pdf/lesen/01-kapitel-2-der-paradigmenwechsel-vom-kapital-zur-wirkung/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-pdf-wirkungseinkommensteuergesetz-westg-pdf/lesen/02-kapitel-3-methodik-systematik/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-pdf-wirkungseinkommensteuergesetz-westg-pdf/lesen/03-kapitel-4-beispiele-praxisanwendung/index.html` — alternativen, evaluation, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-pdf-wirkungssteuergesetz-wstg-oktober-2025-pdf/lesen/01-wstg/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-pdf-wirkungssteuergesetz-wstg-oktober-2025-pdf/lesen/02-teil-2-institutionen-und-governance/index.html` — evaluation, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-pdf-wirkungssteuergesetz-wstg-oktober-2025-pdf/lesen/03-teil-3-steuerarten-und-anwendung/index.html` — evaluation, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-assets-pdf-working-paper-wohnungsmarkt-pdf/lesen/01-teil-ii-das-prinzip-wirkung-statt-kapital-wok/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-docs-gesetze-wstg-2-0-wirkungssteuerrahmengesetz-entwurf-pdf/lesen/05-teil-2-begriffsbestimmungen/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-docs-gesetze-wstg-2-0-wirkungssteuerrahmengesetz-entwurf-pdf/lesen/09-teil-6-steuerliche-rueckkopplung/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-public-downloads-originals-grundlagenpapier-wirkungsokonomie-wok-pdf/lesen/index.html` — evaluation, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-public-downloads-originals-systemmodell-der-wirkungsokonomie-pdf/lesen/05-ebene-1-leitbild-und-normen/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-public-downloads-originals-systemmodell-der-wirkungsokonomie-pdf/lesen/06-staat-recht-institutionen-regeln/index.html` — alternativen, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-public-downloads-originals-systemmodell-der-wirkungsokonomie-pdf/lesen/07-staat-recht-mess-bewertungssysteme/index.html` — folgenabschaetzung, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-public-downloads-originals-systemmodell-der-wirkungsokonomie-pdf/lesen/40-ebene-3-mess-bedwertungssysteme/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-public-downloads-originals-systemmodell-der-wirkungsokonomie-pdf/lesen/55-ebene-3-mess-bewertungssysteme/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-public-downloads-originals-wirkungsfinanzpolitik-aufsatz-woek-pdf/lesen/03-3-warum-mmt-aus-wok-sicht-nicht-reicht/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-public-downloads-originals-wirkungsfinanzpolitik-aufsatz-woek-pdf/lesen/10-10-steuern-als-ruckkopplungsarchitektur/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-public-downloads-originals-wirkungsfinanzpolitik-aufsatz-woek-pdf/lesen/20-20-wok-beyond-gdp-und-wohlstandsmessung/index.html` — wirkungsblind, evaluation — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-public-downloads-originals-wirkungsfinanzpolitik-aufsatz-woek-pdf/lesen/21-21-daten-csrd-und-offentliche-finanzsteuerung/index.html` — wirkungsblind, evaluation — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-public-downloads-originals-wirkungsfinanzpolitik-aufsatz-woek-v2-mmt-public/lesen/03-3-wo-mmt-aus-wok-sicht-erganzt-werden-muss/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-public-downloads-originals-wirkungsfinanzpolitik-aufsatz-woek-v2-mmt-public/lesen/10-10-steuern-als-ruckkopplungsarchitektur/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-public-downloads-originals-wirkungsfinanzpolitik-aufsatz-woek-v2-mmt-public/lesen/20-20-wok-beyond-gdp-und-wohlstandsmessung/index.html` — wirkungsblind, evaluation — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-public-downloads-originals-wirkungsfinanzpolitik-aufsatz-woek-v2-mmt-public/lesen/21-21-daten-csrd-und-offentliche-finanzsteuerung/index.html` — wirkungsblind, evaluation — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-public-downloads-originals-wirkungsokonomie-in-der-lieferkette-pdf/lesen/02-kapitel-4-internationale-besonderheiten-vorsteuer-zoll-sdgs/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-public-downloads-originals-wirkungsokonomie-in-der-lieferkette-pdf/lesen/03-kapitel-5-typische-kritik-antworten/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-public-downloads-originals-wirkungsraeume-gestalten-dossier-wirkungsorienti/lesen/00-abstract/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-public-downloads-originals-wirkungsraeume-gestalten-dossier-wirkungsorienti/lesen/12-teil-iii-offentlichkeit-medien-und-plattformen-als-wirkungsr/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-public-downloads-originals-wirkungsraeume-gestalten-dossier-wirkungsorienti/lesen/13-9-offentlichkeit-ist-kein-marktplatz-sondern-ruckkopplungsin/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-public-downloads-originals-wirkungsraeume-gestalten-dossier-wirkungsorienti/lesen/14-10-aufmerksamkeit-ist-keine-orientierung/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-public-downloads-originals-wirkungsraeume-gestalten-dossier-wirkungsorienti/lesen/86-63-von-der-einzelnen-sendung-zur-wirkungskultur/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-public-downloads-originals-wirkungsraeume-gestalten-dossier-wirkungsorienti/lesen/87-64-warum-das-alles-keine-kontrolle-sondern-freiheitsschutz-i/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-public-downloads-originals-wstg-oktober2025-pdf/lesen/01-wstg/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-public-downloads-originals-wstg-oktober2025-pdf/lesen/02-teil-2-institutionen-und-governance/index.html` — evaluation, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/download-or-document-public-downloads-originals-wstg-oktober2025-pdf/lesen/03-teil-3-steuerarten-und-anwendung/index.html` — evaluation, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/journal-blog-die-fraunhoferschen-linien-des-preises-html/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/leading-reference-bibliothek-woek-begriffsleitfaden-fuehrend-index-html/lesen/13-6-anschlussbegriffe-prazisierungsbegriffe-und/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/leading-reference-bibliothek-woek-begriffsleitfaden-fuehrend-index-html/lesen/14-7-verbindliche-glossardefinitionen/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/leading-reference-bibliothek-woek-begriffsleitfaden-fuehrend-index-html/lesen/19-12-begriffspaare-fur-kunftige-debatten/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/leading-reference-bibliothek-woek-begriffsleitfaden-fuehrend-index-html/lesen/20-13-prufcheckliste-fur-neue-inhalte/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/leading-reference-bibliothek-woek-begriffsleitfaden-fuehrend-index-html/lesen/21-14-fuhrende-mini-definitionen-fur-hover-glossar/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/online-version-dokumente-wenn-maschinen-arbeiten-index-html/lesen/04-1-einleitung-und-executive-summary/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/online-version-dokumente-wenn-maschinen-arbeiten-index-html/lesen/08-4-systemarchitektur-und-mechanik/index.html` — alternativen, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/online-version-dokumente-wenn-maschinen-arbeiten-index-html/lesen/09-5-burger-journey-anspruch-leistung-teilhabe/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/online-version-dokumente-wenn-maschinen-arbeiten-index-html/lesen/12-7-internationale-ordnung-und-globale-wirkung/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/online-version-referenz-glossar-index-html/lesen/37-wirkungsarchitektur/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/online-version-referenz-glossar-index-html/lesen/38-wirkungsblindheit/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/online-version-referenz-glossar-index-html/lesen/39-wirkungsdaten/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/online-version-referenz-glossar-index-html/lesen/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/podcast-zwei-aepfel-ein-preis/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/woemm-2-0/lesen/04-1-das-managementproblem-der-alten-logik/index.html` — wirkungsblind, alternativen — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/woemm-2-0/lesen/52-41-womm-reifegradmodell/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/woems-2-0/lesen/55-d05-wirkungsdaten-inventur-und-datenflusskarte/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/eintraege/woems-2-0/lesen/75-e12-woms-reifegrad-und-fahigkeitsassessment/index.html` — wirkungsblind — ['REVIEW_REQUIRED']
-- `bibliothek/folgencheck-wirkungspolitische-sprache/index.html` — alternativen, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/index.html` — wirkungsblind, enap, dns, evaluation — ['REVIEW_REQUIRED']
-- `bibliothek/klimawandel-finanzmarkt/index.html` — wirkungsblind, alternativen, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/kommunaler-wirkungsindex-kwi-diskussionspapier/index.html` — alternativen, evaluation, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/nats-woek-allgemein/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/sdgs-sdgplus-risiko-resilienzregister-systemresilienz/index.html` — wirkungsblind, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/woek-begriffsleitfaden-fuehrend/index.html` — wirkungsblind, alternativen, evaluation, novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/wp-einkommen/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `bibliothek/wp-wohnungsmarkt/index.html` — novelty_or_absence — ['REVIEW_REQUIRED']
-- `blog/linkedin/2025-10-06-die-wirkungsokonomie-warum-wir-wirtschaft-politik-und-gesellschaft-neu-denken-mussen.html` — novelty_or_absence — ['HISTORICAL_REVIEW_ONLY']
-- `blog/linkedin/2025-10-13-produktbesteuerung-durch-wirkung-wenn-preise-beginnen-die-wahrheit-zu-sagen.html` — novelty_or_absence — ['HISTORICAL_REVIEW_ONLY']
-- `blog/linkedin/2025-10-13-wirkung-statt-zertifikate-wie-die-wirkungsokonomie-den-label-dschungel-beendet.html` — novelty_or_absence — ['HISTORICAL_REVIEW_ONLY']
-- `blog/linkedin/2025-10-16-vom-steuersystem-zum-steuerungssystem-wie-die-wirkungsgewerbesteuer-kommunen-zukunftsfahig-macht.html` — novelty_or_absence — ['HISTORICAL_REVIEW_ONLY']
-- `blog/linkedin/2025-11-02-wenn-maschinen-arbeiten-warum-wir-das-system-neu-denken-mussen.html` — novelty_or_absence — ['HISTORICAL_REVIEW_ONLY']
-- `blog/linkedin/2025-12-11-wenn-politik-scheitert-ubernimmt-der-finanzmarkt-und-das-ist-unsere-chance.html` — novelty_or_absence — ['HISTORICAL_REVIEW_ONLY']
-- `blog/linkedin/2025-12-12-die-wirkungsokonomie-ein-lernendes-kreislaufsystem-zur-steuerung-von-wirtschaft-und-gesellschaft.html` — wirkungsblind, alternativen, novelty_or_absence — ['HISTORICAL_REVIEW_ONLY']
-- `blog/linkedin/2026-01-05-sdg-warum-nachhaltigkeit-ohne-wirkungsdemokratie-scheitert.html` — wirkungsblind, evaluation, novelty_or_absence — ['HISTORICAL_REVIEW_ONLY']
-- `blog/linkedin/2026-01-14-warum-leistung-ohne-wirkung-eine-illusion-ist-und-was-thermodynamik-mit-marktwirtschaft-zu-tun-h.html` — novelty_or_absence — ['HISTORICAL_REVIEW_ONLY']
-- `blog/linkedin/2026-01-17-meinungsfreiheit-braucht-mehr-als-gute-absichten.html` — novelty_or_absence — ['HISTORICAL_REVIEW_ONLY']
-- `blog/linkedin/2026-01-28-wirkung-statt-weltbild-eine-wirkungsokonomische-analyse-des-afd-regierungsprogramms.html` — folgenabschaetzung, novelty_or_absence — ['HISTORICAL_REVIEW_ONLY']
-- `blog/linkedin/2026-02-05-vom-nachhaltigkeitsbewusstsein-zur-wirkungsokonomie.html` — novelty_or_absence — ['HISTORICAL_REVIEW_ONLY']
-- `blog/linkedin/2026-02-06-wenn-kommunikation-realitat-formt-wirkung-als-neue-demokratische-leitkategorie.html` — novelty_or_absence — ['HISTORICAL_REVIEW_ONLY']
-- `blog/linkedin/2026-02-07-macht-ohne-mehrheit-die-afd-strategie-wirkungsokonomisch-erklart.html` — wirkungsblind, alternativen, evaluation — ['HISTORICAL_REVIEW_ONLY']
-- `blog/linkedin/2026-02-09-von-der-wertschopfungskette-zum-wirkungskreislauf.html` — novelty_or_absence — ['HISTORICAL_REVIEW_ONLY']
-- `blog/linkedin/2026-02-10-impact-controlling-im-unternehmen-vom-reporting-zur-wirkungsokonomischen-steuerung.html` — novelty_or_absence — ['HISTORICAL_REVIEW_ONLY']
-- `blog/linkedin/2026-02-10-warum-die-vollbremsung-von-wind-und-solar-kein-energieproblem-lost-eine-wirkungsokonomische-eino.html` — folgenabschaetzung, alternativen, novelty_or_absence — ['HISTORICAL_REVIEW_ONLY']
-- `blog/linkedin/2026-02-10-wirkungsorientierte-unternehmensfuhrung.html` — wirkungsblind — ['HISTORICAL_REVIEW_ONLY']
-- `blog/linkedin/2026-02-12-wirkungsokonomie-wir-messen-wirkung-langst-warum-steuern-wir-noch-nicht-danach.html` — alternativen, novelty_or_absence — ['HISTORICAL_REVIEW_ONLY']
-- `blog/linkedin/2026-03-06-csrd-warum-eine-berichtspflicht-zum-strategischen-wendepunkt-werden-kann.html` — alternativen, novelty_or_absence — ['HISTORICAL_REVIEW_ONLY']
-- `blog/linkedin/2026-03-10-wirtschaft-in-einer-welt-systemischer-risiken-warum-wirkung-zur-neuen-steuerungsgroe-wird.html` — alternativen, novelty_or_absence — ['HISTORICAL_REVIEW_ONLY']
-- `blog/linkedin/2026-03-21-reporting-burnout-oder-resilienz-chance-warum-daten-allein-keine-krise-losen.html` — novelty_or_absence — ['HISTORICAL_REVIEW_ONLY']
-- `blog/linkedin/2026-03-24-warum-politik-immer-zu-spat-handelt-und-wir-genau-das-immer-wieder-belohnen.html` — novelty_or_absence — ['HISTORICAL_REVIEW_ONLY']
-- `blog/linkedin/2026-04-02-ai-first-ist-eine-sackgasse-nicht-weil-ki-schlecht-ist-sondern-weil-wir-sie-falsch-denken.html` — alternativen, novelty_or_absence — ['HISTORICAL_REVIEW_ONLY']
-- `blog/linkedin/2026-04-19-die-afd-im-wirkungscheck-warum-dieses-programm-nicht-nur-an-seinen-versprechen-scheitert-sondern.html` — alternativen, novelty_or_absence — ['HISTORICAL_REVIEW_ONLY']
-- `referenz/index.html` — wirkungsblind — ['REVIEW_REQUIRED', 'ADD_DNS_REFERENCE']
-- `referenz/kapitel-001-meine-reise-zur-wirkung/index.html` — wirkungsblind, evaluation — ['REVIEW_REQUIRED', 'ADD_DNS_REFERENCE']
-- `referenz/kapitel-002-die-massstabskrise/index.html` — wirkungsblind, novelty_or_absence — ['REVIEW_REQUIRED', 'ADD_DNS_REFERENCE']
-- `referenz/kapitel-003-kapital-als-werkzeug-und-falscher-kompass/index.html` — wirkungsblind, evaluation, novelty_or_absence — ['REVIEW_REQUIRED', 'ADD_DNS_REFERENCE']
-- `referenz/kapitel-004-die-entstehung-des-falschen-kompasses/index.html` — wirkungsblind, alternativen — ['REVIEW_REQUIRED', 'ADD_DNS_REFERENCE']
-- `referenz/kapitel-005-wohlstand-auf-kosten-kuenftiger-stabilitaet/index.html` — wirkungsblind — ['REVIEW_REQUIRED', 'ADD_DNS_REFERENCE']
-- `referenz/kapitel-006-nachhaltigkeit-ist-keine-strategie/index.html` — wirkungsblind, alternativen — ['REVIEW_REQUIRED', 'ADD_DNS_REFERENCE']
-- `referenz/kapitel-007-buerokratie-als-reparaturmaschine/index.html` — wirkungsblind — ['REVIEW_REQUIRED', 'ADD_DNS_REFERENCE']
-- `referenz/kapitel-008-warum-klassische-oekonomie-komplexe-systeme-falsch-behandelt/index.html` — wirkungsblind, alternativen, novelty_or_absence — ['REVIEW_REQUIRED', 'ADD_DNS_REFERENCE']
-- `referenz/kapitel-009-die-einfache-idee/index.html` — wirkungsblind — ['REVIEW_REQUIRED', 'ADD_DNS_REFERENCE']
-- `referenz/kapitel-016-das-begriffssystem-der-wirkungsoekonomie/index.html` — alternativen, novelty_or_absence — ['REVIEW_REQUIRED', 'ADD_DNS_REFERENCE']
-- `referenz/kapitel-017-wirkungsoekonomie-im-vergleich/index.html` — evaluation, novelty_or_absence — ['REVIEW_REQUIRED', 'ADD_DNS_REFERENCE']
-- `referenz/kapitel-022-wirkungslenkung/index.html` — folgenabschaetzung, alternativen, novelty_or_absence — ['REVIEW_REQUIRED', 'ADD_DNS_REFERENCE']
-- `referenz/kapitel-025-angst-status-zugehoerigkeit-und-macht/index.html` — wirkungsblind, alternativen — ['REVIEW_REQUIRED', 'ADD_DNS_REFERENCE']
-- `referenz/kapitel-032-benchmarks-skalen-und-scorecards/index.html` — novelty_or_absence — ['REVIEW_REQUIRED', 'ADD_DNS_REFERENCE']
-- `referenz/kapitel-034-t-sroi-und-systemische-transformationsmessung/index.html` — novelty_or_absence — ['REVIEW_REQUIRED', 'ADD_DNS_REFERENCE']
-- `referenz/kapitel-037-das-wirkungssteuergesetz-wstg/index.html` — wirkungsblind, evaluation — ['REVIEW_REQUIRED', 'ADD_DNS_REFERENCE']
-- `referenz/kapitel-042-unternehmen-als-wirkungssysteme/index.html` — novelty_or_absence — ['REVIEW_REQUIRED', 'ADD_DNS_REFERENCE']
-- `referenz/kapitel-044-wirkungscontrolling-im-unternehmen/index.html` — novelty_or_absence — ['REVIEW_REQUIRED', 'ADD_DNS_REFERENCE']
-- `referenz/kapitel-047-unternehmensrisiko-und-transformation/index.html` — novelty_or_absence — ['REVIEW_REQUIRED', 'ADD_DNS_REFERENCE']
-- `referenz/kapitel-064-verwaltung-und-buergerbeteiligung/index.html` — evaluation, novelty_or_absence — ['REVIEW_REQUIRED', 'ADD_DNS_REFERENCE']
-- `referenz/kapitel-075-plattformlogik-und-algorithmen/index.html` — alternativen, novelty_or_absence — ['REVIEW_REQUIRED', 'ADD_DNS_REFERENCE']
-- `referenz/kapitel-084-cyberresilienz-und-operative-stabilitaet/index.html` — wirkungsblind — ['REVIEW_REQUIRED', 'ADD_DNS_REFERENCE']
-- `referenz/kapitel-088-disziplinen-im-wirkungswechsel/index.html` — novelty_or_absence — ['REVIEW_REQUIRED', 'ADD_DNS_REFERENCE']
-- `referenz/kapitel-091-europa-als-wirkungsraum/index.html` — wirkungsblind — ['REVIEW_REQUIRED', 'ADD_DNS_REFERENCE']
-- `referenz/kapitel-092-handel-lieferketten-und-globale-wirkung/index.html` — wirkungsblind — ['REVIEW_REQUIRED', 'ADD_DNS_REFERENCE']
-- `referenz/kapitel-097-der-umsetzungspfad/index.html` — folgenabschaetzung, alternativen, evaluation, novelty_or_absence — ['REVIEW_REQUIRED', 'ADD_DNS_REFERENCE']
-- `referenz/kapitel-103-technokratie-ueberwachung-und-die-angst-vor-steuerung/index.html` — wirkungsblind, evaluation — ['REVIEW_REQUIRED', 'ADD_DNS_REFERENCE']
-- `referenz/kapitel-105-freiheit-markt-und-der-vorwurf-der-planwirtschaft/index.html` — wirkungsblind, alternativen — ['REVIEW_REQUIRED', 'ADD_DNS_REFERENCE']
-- `referenz/kapitel-106-die-fehlbarkeit-der-wirkungsoekonomie/index.html` — alternativen, evaluation, novelty_or_absence — ['REVIEW_REQUIRED', 'ADD_DNS_REFERENCE']
-- `referenz/kapitel-107-zukunftsbilder/index.html` — alternativen, evaluation, novelty_or_absence — ['REVIEW_REQUIRED', 'ADD_DNS_REFERENCE']
-- `referenz/kapitel-108-schlussbild-die-neue-ordnung-des-wohlstands/index.html` — wirkungsblind, evaluation — ['REVIEW_REQUIRED', 'ADD_DNS_REFERENCE']
-- `referenz/kapitel/index.html` — wirkungsblind — ['REVIEW_REQUIRED', 'ADD_DNS_REFERENCE']
-- `referenz/quellen/i-k92-5/index.html` — wirkungsblind — ['REVIEW_REQUIRED', 'ADD_DNS_REFERENCE']
-- `referenz/quellen/index.html` — wirkungsblind, folgenabschaetzung, alternativen, evaluation — ['REVIEW_REQUIRED', 'ADD_DNS_REFERENCE']
-- `referenz/teil-01-die-grosse-illusion/index.html` — wirkungsblind — ['REVIEW_REQUIRED', 'ADD_DNS_REFERENCE']
-- `referenz/teil-02-die-sprache-der-wirkungsoekonomie/index.html` — wirkungsblind — ['REVIEW_REQUIRED', 'ADD_DNS_REFERENCE']
-- `referenz/volltext/index.html` — wirkungsblind, folgenabschaetzung, alternativen, evaluation, novelty_or_absence — ['REVIEW_REQUIRED', 'ADD_DNS_REFERENCE']

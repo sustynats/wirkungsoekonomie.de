@@ -25,11 +25,46 @@ from audit_state_sustainability_architecture import (
     classify,
     content_type,
     historical_status,
-    load_search_haystack,
     load_sitemap,
     scan_claims,
     url_to_relpath,
 )
+
+
+def load_search_routes(root: Path) -> set[str]:
+    """Load indexed routes once instead of rescanning multi-megabyte JSON per URL."""
+    routes: set[str] = set()
+    search_index = root / "assets/search/search-index.json"
+    if search_index.exists():
+        payload = json.loads(search_index.read_text(encoding="utf-8", errors="replace"))
+        rows = payload if isinstance(payload, list) else payload.get("entries", [])
+        for row in rows:
+            if isinstance(row, dict) and row.get("url"):
+                routes.add(str(row["url"]).split("#", 1)[0])
+
+    search_meta = root / "public/data/woek-search-meta.json"
+    if search_meta.exists():
+        payload = json.loads(search_meta.read_text(encoding="utf-8", errors="replace"))
+        entries = payload.get("entries", {}) if isinstance(payload, dict) else {}
+        if isinstance(entries, dict):
+            routes.update(str(route).split("#", 1)[0] for route in entries)
+    return routes
+
+
+def search_index_contains(value: str | None, routes: set[str]) -> bool | None:
+    if not routes:
+        return None
+    raw = str(value or "").strip()
+    if not raw:
+        return False
+    path = urlparse(raw).path if "://" in raw else "/" + raw.lstrip("/")
+    path = path.split("#", 1)[0]
+    candidates = {raw.split("#", 1)[0], path}
+    if path.endswith("/index.html"):
+        candidates.add(path[:-10] or "/")
+    elif path.endswith("/"):
+        candidates.add(path + "index.html")
+    return any(candidate in routes for candidate in candidates)
 
 
 def tracked_html(root: Path) -> list[str]:
@@ -85,7 +120,7 @@ def contract_fields(
     }
 
 
-def make_row(root: Path, url: str, search_haystack: str) -> tuple[dict, dict | None]:
+def make_row(root: Path, url: str, search_routes: set[str]) -> tuple[dict, dict | None]:
     rel = url_to_relpath(url)
     src = root / rel
     text = src.read_text(encoding="utf-8", errors="replace") if src.exists() else ""
@@ -101,7 +136,7 @@ def make_row(root: Path, url: str, search_haystack: str) -> tuple[dict, dict | N
         "canonical_url": canonical,
         "sitemap_url": url,
         "sitemap_status": True,
-        "search_index_status": (url in search_haystack or urlparse(url).path in search_haystack) if search_haystack else None,
+        "search_index_status": search_index_contains(url, search_routes),
         "content_type": content_type(rel),
         "historical_or_current": historical,
         "matched_claims": signals,
@@ -132,12 +167,12 @@ def main() -> int:
 
     root = Path(args.root).resolve()
     urls = load_sitemap(root)
-    search_haystack = load_search_haystack(root)
+    search_routes = load_search_routes(root)
 
     rows = []
     missing_sources = []
     for url in urls:
-        row, missing = make_row(root, url, search_haystack)
+        row, missing = make_row(root, url, search_routes)
         rows.append(row)
         if missing:
             missing_sources.append(missing)
@@ -159,7 +194,7 @@ def main() -> int:
             "file_path": rel,
             "canonical_url": canonical,
             "sitemap_status": False,
-            "search_index_status": (rel in search_haystack) if search_haystack else None,
+            "search_index_status": search_index_contains(rel, search_routes),
             "content_type": content_type(rel),
             "historical_or_current": historical,
             "matched_claims": signals,

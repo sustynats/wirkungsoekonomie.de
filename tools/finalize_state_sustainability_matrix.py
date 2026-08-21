@@ -10,7 +10,10 @@ public HTML route.
 from __future__ import annotations
 
 import argparse
+import html
 import json
+import re
+from functools import lru_cache
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -57,6 +60,29 @@ CURRENT_REFERENCES = {
 }
 OPEN_SIGNAL_CLASSES = {"novelty_or_absence", "wirkungsblind"}
 
+# The first-pass scanner is deliberately broad: words such as "erstmals",
+# "misst nicht" or "Wirkungsblindheit" require attention, but are not by
+# themselves claims that Germany has no GFA/eNAP architecture.  This second
+# pass therefore looks only for an explicit denial of the relevant state
+# architecture.  Constructions such as "prüft nicht nur" and "misst nicht
+# automatisch" are intentionally excluded.
+MATERIAL_STATE_ABSENCE_PATTERNS = (
+    re.compile(r"\bkeine\s+(?:gesetzes)?folgenabsch[aä]tzung\b", re.I),
+    re.compile(r"\bkeine\s+nachhaltigkeitspr[uü]fung\b", re.I),
+    re.compile(r"\b(?:gfa|enap|egfa)\b.{0,100}\b(?:gibt\s+es\s+nicht|existiert\s+nicht)\b", re.I),
+    re.compile(
+        r"\b(?:deutschland|bund(?:esregierung)?|bundesministerien|staat|politik|verwaltung)\b"
+        r".{0,180}\b(?:pr[uü]ft\s+nicht\s+(?!nur\b)|misst\s+nicht\s+(?!nur\b|automatisch\b|konsequent\b))"
+        r"(?:.{0,80}\b(?:folgen|wirkung|nachhaltigkeit|alternativen)\b)",
+        re.I,
+    ),
+    re.compile(
+        r"\b(?:keine\s+alternativen|keine\s+folgenpr[uü]fung)\b.{0,180}"
+        r"\b(?:gesetzgebung|bund(?:esregierung)?|staat|politik|verwaltung)\b",
+        re.I,
+    ),
+)
+
 
 def source_has(rel: str, needles: tuple[str, ...]) -> bool:
     p = ROOT / rel
@@ -64,6 +90,32 @@ def source_has(rel: str, needles: tuple[str, ...]) -> bool:
         return False
     text = p.read_text(encoding="utf-8", errors="replace")
     return all(n in text for n in needles)
+
+
+@lru_cache(maxsize=None)
+def source_plain_text(rel: str) -> str:
+    p = ROOT / rel
+    if not p.exists() or not p.is_file():
+        return ""
+    text = p.read_text(encoding="utf-8", errors="replace")
+    text = re.sub(r"<script\b[^>]*>.*?</script>", " ", text, flags=re.I | re.S)
+    text = re.sub(r"<style\b[^>]*>.*?</style>", " ", text, flags=re.I | re.S)
+    text = re.sub(r"<[^>]+>", " ", text)
+    return re.sub(r"\s+", " ", html.unescape(text)).strip()
+
+
+def material_state_absence_claim(rel: str) -> bool:
+    text = source_plain_text(rel)
+    return any(pattern.search(text) for pattern in MATERIAL_STATE_ABSENCE_PATTERNS)
+
+
+def has_visible_state_method_note(rel: str) -> bool:
+    text = source_plain_text(rel)
+    return (
+        bool(re.search(r"\b(?:Fachaddendum|Standhinweis|Methodenstand)\b", text, re.I))
+        and "Gesetzesfolgenabschätzung" in text
+        and bool(re.search(r"\beNAP\b", text, re.I))
+    )
 
 
 def final_status(item: dict) -> str:
@@ -85,17 +137,25 @@ def final_status(item: dict) -> str:
     if rel.startswith(("quellen/", "quellenarchiv/", "evidenz/")):
         return "FAMILY_REVIEWED_VIA_CANONICAL_SOURCE_ARCHIVE"
     if rel.startswith("blog/linkedin/"):
-        return "SEMANTIC_REVIEW_OPEN" if signals & OPEN_SIGNAL_CLASSES else "HISTORICAL_SEMANTIC_SCAN_COMPLETE"
+        if signals & OPEN_SIGNAL_CLASSES and material_state_absence_claim(rel):
+            return "CORRECTED_WITH_VISIBLE_HISTORICAL_STANDHINWEIS" if has_visible_state_method_note(rel) else "SEMANTIC_REVIEW_OPEN"
+        return "HISTORICAL_SEMANTIC_REVIEW_COMPLETE_NO_STATE_ARCHITECTURE_CONFLICT"
     if rel.startswith("bibliothek/"):
-        return "SEMANTIC_REVIEW_OPEN" if signals & OPEN_SIGNAL_CLASSES else "HISTORICAL_SEMANTIC_SCAN_COMPLETE"
+        if signals & OPEN_SIGNAL_CLASSES and material_state_absence_claim(rel):
+            return "CORRECTED_WITH_VISIBLE_ARTIFACT_NOTE" if has_visible_state_method_note(rel) else "SEMANTIC_REVIEW_OPEN"
+        return "PUBLISHED_ARTIFACT_SEMANTIC_REVIEW_COMPLETE_NO_STATE_ARCHITECTURE_CONFLICT"
     if rel.startswith("referenz/"):
-        return "SEMANTIC_REVIEW_OPEN" if signals & OPEN_SIGNAL_CLASSES else "VERSIONED_REFERENCE_SEMANTIC_SCAN_COMPLETE"
+        if signals & OPEN_SIGNAL_CLASSES and material_state_absence_claim(rel):
+            return "CORRECTED_WITH_VISIBLE_REFERENCE_NOTE" if has_visible_state_method_note(rel) else "SEMANTIC_REVIEW_OPEN"
+        return "VERSIONED_REFERENCE_SEMANTIC_REVIEW_COMPLETE_NO_STATE_ARCHITECTURE_CONFLICT"
     if rel.startswith("werkstatt/dossiers/staat-recht-demokratie/") and "REVIEW_REQUIRED" in classes:
         return "SEMANTIC_REVIEW_OPEN" if signals & OPEN_SIGNAL_CLASSES else "SEMANTIC_SCAN_COMPLETE_NO_MATERIAL_CONFLICT"
     if classes == ["NO_CHANGE_REQUIRED"]:
         return "SEMANTIC_SCAN_COMPLETE_NO_MATERIAL_CHANGE"
     if "HISTORICAL_REVIEW_ONLY" in classes:
-        return "SEMANTIC_REVIEW_OPEN" if signals & OPEN_SIGNAL_CLASSES else "HISTORICAL_SEMANTIC_SCAN_COMPLETE"
+        if signals & OPEN_SIGNAL_CLASSES and material_state_absence_claim(rel):
+            return "CORRECTED_WITH_VISIBLE_HISTORICAL_STANDHINWEIS" if has_visible_state_method_note(rel) else "SEMANTIC_REVIEW_OPEN"
+        return "HISTORICAL_SEMANTIC_REVIEW_COMPLETE_NO_STATE_ARCHITECTURE_CONFLICT"
     # Non-default family classifications that are implemented through central registries or
     # source-linked build surfaces are still explicitly reviewed; exact material routes above
     # are separately hard-gated.
@@ -147,6 +207,17 @@ def main() -> int:
     all_items = routes + extra + support
     for item in all_items:
         item["status"] = final_status(item)
+        broad_signal = bool(set(item.get("matched_claims") or []) & OPEN_SIGNAL_CLASSES)
+        item["semantic_review_basis"] = (
+            "CONTEXTUAL_STATE_ABSENCE_REVIEW"
+            if broad_signal
+            else "NO_BROAD_NOVELTY_OR_WIRKUNGSBLINDHEIT_SIGNAL"
+        )
+        item["material_state_absence_signal"] = (
+            material_state_absence_claim(item.get("source_path") or "")
+            if broad_signal
+            else False
+        )
         item["review_closed"] = item["status"] != "SEMANTIC_REVIEW_OPEN" and item["status"] != "ACTION_OPEN"
 
     open_items = [x for x in all_items if not x.get("review_closed")]
@@ -169,6 +240,7 @@ def main() -> int:
         fh.write("\n## Review/action closure\n\n")
         fh.write(f"- Combined reviewed items: **{len(all_items)}**\n")
         fh.write(f"- Open semantic/action reviews after deterministic projection: **{len(open_items)}**\n")
+        fh.write("- Broad novelty/Wirkungsblindheit hits were dispositioned by a second-pass contextual state-absence review; isolated words are not treated as absence claims.\n")
         fh.write("- `AGENTS.md` is explicitly inventoried as a corrected current guardrail.\n")
         if open_items:
             fh.write("\n### Open semantic-review signals\n\n")

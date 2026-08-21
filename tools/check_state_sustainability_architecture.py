@@ -114,7 +114,10 @@ def glossary_and_sources() -> None:
     source_text = read("content/quellenarchiv/legal-source-records.json")
     # #253 sources intentionally use a collision-free 9000 range because the
     # publication supplement corpus already owns WÖK-Q-1029..1037 historically.
-    for code in ("WÖK-Q-9029", "WÖK-Q-9030", "WÖK-Q-9031", "WÖK-Q-9032", "WÖK-Q-9033", "WÖK-Q-9034", "WÖK-Q-9035"):
+    for code in (
+        "WÖK-Q-9029", "WÖK-Q-9030", "WÖK-Q-9031", "WÖK-Q-9032", "WÖK-Q-9033",
+        "WÖK-Q-9034", "WÖK-Q-9035", "WÖK-Q-9036", "WÖK-Q-9037",
+    ):
         if code not in source_text:
             raise AssertionError(f"missing canonical federal architecture source {code}")
     if "bundesregierung.de" not in source_text or "deutsche-nachhaltigkeitsstrategie-2025-2332540" not in source_text:
@@ -122,7 +125,8 @@ def glossary_and_sources() -> None:
     glossary_source = json.loads(read("content/glossary/imports/staatliche-nachhaltigkeitsarchitektur.json"))
     ids = {t.get("termId") for t in glossary_source.get("terms", [])}
     required = {
-        "deutsche-nachhaltigkeitsstrategie", "gesetzesfolgenabschaetzung", "nachhaltigkeitspruefung-bund",
+        "deutsche-nachhaltigkeitsstrategie", "gemeinsame-geschaeftsordnung-bundesministerien",
+        "gesetzesfolgenabschaetzung", "nachhaltigkeitspruefung-bund",
         "enap", "egesetzgebung-egfa", "dns-indikator", "zielbezug-vs-wirkung",
         "ex-ante-folgenpruefung-reality-check", "staatliche-nachhaltigkeitsarchitektur",
         "parlamentarischer-beirat-nachhaltige-entwicklung", "state-gfa-enap-benchmark", "wirkungsblindheit",
@@ -136,6 +140,10 @@ def glossary_and_sources() -> None:
         for tid in required:
             if tid not in text:
                 raise AssertionError(f"generated glossary registry missing {tid}")
+        terms = {term.get("termId"): term for term in data.get("terms", [])}
+        blind = terms.get("wirkungsblindheit") or {}
+        if blind.get("version") != "2.0" or "keinerlei Folgen prüft oder misst" not in blind.get("shortDefinition", ""):
+            raise AssertionError("approved #253 Wirkungsblindheit v2.0 precision did not win the canonical glossary merge")
 
 
 def state_architecture_scope_guard() -> None:
@@ -184,6 +192,10 @@ def audit_matrix_contract() -> None:
         raise AssertionError("canonical five-case benchmark missing from complete #253 matrix")
     if "llms.txt" not in route_paths or "sitemap.xml" not in route_paths:
         raise AssertionError("matrix omits required machine-readable support surfaces")
+    if int(data.get("review_open_count", -1)) != 0 or data.get("review_open_items"):
+        raise AssertionError(
+            f"matrix still has open semantic/action reviews: {data.get('review_open_count')}"
+        )
 
 
 def living_route_precision() -> None:

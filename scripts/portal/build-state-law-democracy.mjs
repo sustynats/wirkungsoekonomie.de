@@ -482,6 +482,20 @@ function politicalBlock(base) {
   </div></section>`;
 }
 
+function stateSustainabilityArchitectureBlock(base) {
+  return `<!-- state-sustainability-architecture-20260821 -->
+<section class="section section-muted" id="staatliche-nachhaltigkeitsarchitektur" aria-labelledby="staatliche-nachhaltigkeitsarchitektur-title">
+  <div class="section-header">
+    <p class="hero-kicker">Bestehende Staatsarchitektur und WÖk-Ergänzung</p>
+    <h2 id="staatliche-nachhaltigkeitsarchitektur-title">Deutschland prüft Folgen bereits. Die WÖk führt die Ebenen systematisch zusammen.</h2>
+    <p>Für Bundesregelungsvorhaben existiert bereits eine institutionalisierte Prüfarchitektur: Die Deutsche Nachhaltigkeitsstrategie (DNS) verbindet Ziele, Indikatoren und Monitoring. Die Gemeinsame Geschäftsordnung der Bundesministerien verlangt Ziel und Notwendigkeit, Sachverhalt und Erkenntnisquellen, andere Lösungsmöglichkeiten sowie wesentliche beabsichtigte und unbeabsichtigte Gesetzesfolgen. Die Nachhaltigkeitsprüfung wird dabei unter anderem durch eNAP/eGFA unterstützt. Auch eine spätere Überprüfung beabsichtigter Wirkungen, der Kosten-Ergebnis-Relation und eingetretener Nebenwirkungen ist in § 44 Abs. 7 GGO angelegt.</p>
+    <p><strong>Die Wirkungsökonomie ersetzt diese Architektur nicht.</strong> Sie ergänzt sie um eine durchgängig objektspezifische Verbindung von Problemprüfung, Zielprüfung, expliziten Wirkpfaden (A→M→ΔZ→R), Wirkungen erster bis dritter Ordnung und Kaskaden, Verteilung und Resilienz, Gegenfaktum und Zurechnung, Omissions-/Delivery-/Kohärenzprüfung, strukturiertem Optionsvergleich unter denselben Ziel- und Schutzräumen, Nichtkompensation harter Schutzgrenzen sowie wiederholbarem Reality Check und versionierter Lernschleife.</p>
+    <p>Ein Bezug zu DNS, SDGs oder Indikatoren ist dabei eine Ziel- und Referenzinformation - kein automatischer Kausalitätsnachweis. Indikator ist nicht Wirkung, Output ist nicht Outcome und Beobachtung ist nicht Zurechnung.</p>
+    <p><a class="text-link" href="${href(base, "methodik/")}">Zur WÖk-Methodik</a> · <a class="text-link" href="${href(base, "methodik/datenbasis.html")}">Zu Daten- und Quellenfunktionen</a> · <a class="text-link" href="${href(base, "blog/enap-woek-benchmark-fuenf-bundesvorhaben.html")}">Zum Fünf-Fälle-Benchmark</a></p>
+  </div>
+</section>`;
+}
+
 function lawRef(base, label, hrefTarget, text) {
   const id = `lawref-${slugify(label)}`;
   return `<span class="law-reference"><a class="law-reference-link" href="${href(base, hrefTarget)}" aria-describedby="${id}">${escapeHtml(label)}</a><button class="law-reference-info" type="button" aria-label="Kurzbeschreibung zu ${escapeHtml(label)} anzeigen" aria-describedby="${id}">i</button><span class="reference-popover" id="${id}" role="tooltip">${escapeHtml(text)}</span></span>`;
@@ -557,6 +571,7 @@ function portalPage() {
     })}
     <section class="section narrow">${citationNotice(`${SITE}${route}`)}</section>
     <section class="section narrow">${statusMeta("Portal")}</section>
+    ${stateSustainabilityArchitectureBlock(base)}
     <section class="section" aria-labelledby="go11-detailkonzepte"><div class="section-header"><p class="hero-kicker">Vertiefung</p>${sectionTitle("go11-detailkonzepte", "Neue Detailkonzepte")}<p>Der Staats-/Rechtscluster verbindet die Grundlagen zu WStG, Wirkungshaushalt und Wirkungsrat mit den Vertiefungen zu Resilienzstaat, Grundrechten, Verhältnismäßigkeit, Technokratieschutz, Demokratie und SDG+.</p></div>${detailConceptCardGrid(base)}</section>
     <section class="section" aria-labelledby="concepts"><div class="section-header"><p class="hero-kicker">Unterbereiche</p>${sectionTitle("concepts", "Zentrale Unterbereiche")}<p>Wirkungsdaten bereiten Entscheidungen vor, ersetzen sie aber nicht. Bewertet werden Maßnahmen, Strukturen und Wirkungsräume, nicht Menschen.</p></div>${cardGrid(base, dossiers.map((d) => ({ title: d.title, text: d.subtitle, href: `werkstatt/dossiers/staat-recht-demokratie/${d.slug}/`, label: "Dossier lesen" })))}</section>
     <section class="section narrow"><div class="scanner-notice"><strong>LawReference:</strong> Beispiele: ${lawRef(base, "§ 1 WStG", "werkstatt/gesetze/wirkungssteuergesetz/#paragraf-1", "Zweck des Gesetzes: Steuerung nach Wirkung auf Mensch, Planet und Demokratie.")} ${lawRef(base, "§ 5 WUStG", "werkstatt/leitlinien/wustg/#teil-8-finalscore", "FinalScore bestimmt die Wirkungssteuerklasse im Leitlinienmodell.")} ${lawRef(base, "§ 8 WUStG", "werkstatt/leitlinien/wustg/#teil-13-governance-wirkungsrat-und-evaluation", "Evaluation und Wirkungsrat-Governance im Leitlinienmodell.")}</div></section>

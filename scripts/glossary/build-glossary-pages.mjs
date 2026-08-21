@@ -1,6 +1,12 @@
 import fs from "node:fs";
 import path from "node:path";
 
+const generatedAt = (() => {
+  const epoch = Number(process.env.SOURCE_DATE_EPOCH || "");
+  return Number.isFinite(epoch) && epoch > 0
+    ? new Date(epoch * 1000).toISOString()
+    : new Date().toISOString();
+})();
 const data = JSON.parse(fs.readFileSync("public/data/glossary.terms.json", "utf8"));
 const navigation = JSON.parse(fs.readFileSync("assets/data/navigation.json", "utf8"));
 const documentRegistryPath = "assets/data/document-registry.json";
@@ -504,7 +510,11 @@ for (const document of documentRegistry) {
   };
   if (document.id) contentBySlug.set(filterToken(document.id), entry);
   for (const url of urls) {
-    if (url && !contentByUrl.has(url)) contentByUrl.set(url, entry);
+    // The curated document registry owns the document-level route. Search
+    // entries may only describe individual headings and can otherwise claim
+    // the hashless URL through their first section, which turns a document
+    // card into an arbitrary chapter card.
+    if (url) contentByUrl.set(url, entry);
   }
   const titleKey = normalizedHubConcept(document.title);
   if (titleKey && !contentByTitle.has(titleKey)) contentByTitle.set(titleKey, entry);
@@ -591,8 +601,8 @@ const relatedContentTargets = new Map([
   ["technische-leitlinien-wustg", ["Technische Leitlinien WUStG", "../../dokumente/technische-leitlinien-wustg-v2/"]],
   ["technische-leitlinien-wustg-v2", ["Technische Leitlinien WUStG", "../../dokumente/technische-leitlinien-wustg-v2/"]],
   ["beispiel-apfel-wirkungssteuer-bonusregel", ["Apfelbeispiel Wirkungssteuer", "../../dokumente/beispiel-apfel-wirkungssteuer-bonusregel/"]],
-  ["woek-master-items", ["WÖk-Masterregister v1.4", "../../bibliothek/woek-master-items-register/"]],
-  ["woek-master-items-register", ["WÖk-Masterregister v1.4", "../../bibliothek/woek-master-items-register/"]],
+  ["woek-master-items", ["WÖk-Masterregister v1.5", "../../bibliothek/woek-master-items-register/"]],
+  ["woek-master-items-register", ["WÖk-Masterregister v1.5", "../../bibliothek/woek-master-items-register/"]],
   ["nachhaltiges-marketing-mix", ["Nachhaltiges Marketing-Mix", "../../bibliothek/nachhaltiges-marketing-mix/"]],
   ["nachhaltiger-einzelhandel", ["Nachhaltiger Einzelhandel", "../../bibliothek/nachhaltiger-einzelhandel/"]],
   ["nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen", ["Nachhaltigkeitsstrategie für mittelständische Beratungsunternehmen", "../../bibliothek/nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen/"]],
@@ -3196,7 +3206,7 @@ writeStaleGlossaryRedirects();
 const reportLines = [
   "# Content-Reference-Report",
   "",
-  `Erzeugt: ${new Date().toISOString()}`,
+  `Erzeugt: ${generatedAt}`,
   `Resolved references: ${contentReferenceRecords.length}`,
   `Warnings: ${contentReferenceWarnings.length}`,
   "",

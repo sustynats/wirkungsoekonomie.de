@@ -116,12 +116,12 @@ const chapterTermOverrides = {
 };
 
 const relatedDocsByCluster = {
-  methodik: ["WOeK_Masterregister_v1.4_FINAL_2026-08-16", "T-SROI-Rechenstandard v1.1", "Technische Leitlinien WUStG"],
+  methodik: ["WOeK_Masterregister_v1.5_2026-08-21", "T-SROI-Rechenstandard v1.1", "Technische Leitlinien WUStG"],
   "recht-staat": ["WStG_Oktober2025", "Wirkungsrat_Konzept", "Technische Leitlinien WUStG"],
   produkte: ["Beispiel_Apfel_Wirkungssteuer_Bonusregel", "WP_Produkte", "Wirkungsökonomie in der Lieferkette"],
   "arbeit-einkommen-rente": ["WP_Einkommen", "WP_Rente", "Wenn Maschinen arbeiten"],
-  "digitalisierung-ki": ["WOeK_Masterregister_v1.4_FINAL_2026-08-16", "Systemmodell der Wirkungsökonomie"],
-  begriffe: ["WOeK_Begriffsleitfaden_fuehrend_v1.0", "Systemmodell der Wirkungsökonomie"],
+  "digitalisierung-ki": ["WOeK_Masterregister_v1.5_2026-08-21", "Systemmodell der Wirkungsökonomie"],
+  begriffe: ["WOeK_Begriffsleitfaden_fuehrend_v1.6", "Systemmodell der Wirkungsökonomie"],
 };
 
 function esc(value = "") {
@@ -991,7 +991,7 @@ function releaseV11Html() {
     <section class="reference-section reference-split">
       <div>
         <h2>Führende Dokumente</h2>
-        ${pillList(["Führender Begriffsleitfaden v1.5", "Die neue Ordnung des Wohlstands / Onlinefassung", "WÖk-Masterregister v1.4", "WStG 2.0", "WUStG v2.1", "T-SROI v2.0", "Schutzrahmen Social Credit"])}
+        ${pillList(["Führender Begriffsleitfaden v1.6", "Die neue Ordnung des Wohlstands / Onlinefassung", "WÖk-Masterregister v1.5", "WStG 2.0", "WUStG v2.1", "T-SROI v2.0", "Schutzrahmen Social Credit"])}
       </div>
       <aside class="reference-emphasis">
         <h2>Was Version 1.1 nicht ist</h2>

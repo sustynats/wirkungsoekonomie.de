@@ -1,0 +1,39 @@
+{
+  "manifest_version": "1.1.0",
+  "register_version": "1.5",
+  "published_at": "2026-08-21",
+  "publisher": "Institut für Wirkungsökonomie",
+  "canonical_source": "WOeK_Masterregister_v1.5_2026-08-21.xlsx",
+  "canonical_document_page": "/bibliothek/woek-master-items-register/",
+  "historical_predecessor": "/assets/downloads/woek-register/v1.4/manifest.json",
+  "files": [
+    {
+      "filename": "WOeK_Masterregister_v1.5_2026-08-21.xlsx",
+      "sha256": "be71c4eedb6646b0167483575fb484930d34e7c563af3086c495615ae95d6988",
+      "bytes": 386355
+    },
+    {
+      "filename": "register-v1.5.csv",
+      "sha256": "81f85f43bed610ce827cbb2259360eddea25f0c708dfe47a41d1f342188b1685",
+      "bytes": 1005693
+    },
+    {
+      "filename": "register-v1.5.json",
+      "sha256": "c5ce751f34d19a3f7f0d448e89cda4e25a4a0756ea6f971c56ed25d457c745e8",
+      "bytes": 1687584
+    }
+  ],
+  "statistics": {
+    "woek_ids": 621,
+    "indicator_families": 204,
+    "scoring_rules": 28,
+    "sdg_plus_assignments": 162
+  },
+  "id_delta": {
+    "retained": 621,
+    "added": 0,
+    "removed": 0,
+    "renamed": 0
+  },
+  "changelog": "v1.5 trennt MasterItems und Wirkindikatorenregister, ergänzt die staatliche Nachhaltigkeitsarchitektur und erhält alle 621 IDs unverändert. Offene Zuordnungen und Kalibrierungen bleiben offen."
+}

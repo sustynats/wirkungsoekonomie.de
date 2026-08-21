@@ -22,12 +22,12 @@
       "sourceSection": "DNS, Ziele und Monitoring",
       "sourceProvenance": "Amtliche Bundesregierung- und Destatis-Quellen; WÖk-Einordnung trennt Referenz von Kausalität.",
       "officialSources": [
-        "Bundesregierung: Deutsche Nachhaltigkeitsstrategie 2025|https://www.bundesregierung.de/breg-de/aktuelles/deutsche-nachhaltigkeitsstrategie-2025-2332540",
-        "Bundesregierung: Steuerung der Deutschen Nachhaltigkeitsstrategie|https://www.bundesregierung.de/breg-de/schwerpunkte/wirksam-regieren/steuerung-nachhaltigkeitsstrategie-419776",
-        "Destatis: Nachhaltigkeitsindikatoren|https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Nachhaltigkeitsindikatoren/_inhalt.html"
+        "Bundesregierung: Deutsche Nachhaltigkeitsstrategie 2025|/quellenarchiv/wok-q-9032/",
+        "Bundesregierung: Steuerung der Deutschen Nachhaltigkeitsstrategie|/quellenarchiv/wok-q-9031/",
+        "Destatis: Nachhaltigkeitsindikatoren|/quellenarchiv/wok-q-9033/"
       ],
       "relatedTerms": [
-        "sdg",
+        "sdg-sdgplus-referenzrahmen",
         "sdg-plus",
         "dns-indikator",
         "referenzrahmen",
@@ -43,6 +43,48 @@
       "classicGlossary": true,
       "autoLinkAllowed": true,
       "pageUrl": "/begriffe/deutsche-nachhaltigkeitsstrategie/"
+    },
+    {
+      "termId": "gemeinsame-geschaeftsordnung-bundesministerien",
+      "canonicalLabel": "Gemeinsame Geschäftsordnung der Bundesministerien (GGO)",
+      "aliases": [
+        "GGO",
+        "Gemeinsame Geschäftsordnung der Bundesministerien",
+        "§ 43 GGO",
+        "§ 44 GGO"
+      ],
+      "shortDefinition": "Die GGO ist die gemeinsame Verwaltungsvorschrift für die Arbeit der Bundesministerien; §§ 43 und 44 regeln zentrale Anforderungen an Gesetzesbegründung und Gesetzesfolgenabschätzung.",
+      "hoverDefinition": "§ 43 GGO verlangt unter anderem Ziel, Notwendigkeit, Sachverhalt, Erkenntnisquellen und Alternativen; § 44 GGO regelt Folgen, Nebenwirkungen, Nachhaltigkeit und spätere Überprüfung.",
+      "longDefinition": "Die Gemeinsame Geschäftsordnung der Bundesministerien strukturiert die Vorbereitung und Zusammenarbeit der Bundesministerien. Für die Folgen- und Nachhaltigkeitsprüfung sind besonders §§ 43 und 44 wichtig. § 43 nennt Anforderungen an die Begründung von Gesetzentwürfen, darunter Zielsetzung und Notwendigkeit, Sachverhalt und Erkenntnisquellen sowie andere Lösungsmöglichkeiten. § 44 definiert Gesetzesfolgen als wesentliche Auswirkungen einschließlich beabsichtigter Wirkungen und unbeabsichtigter Nebenwirkungen, verlangt die Darstellung des Nachhaltigkeitsbezugs und enthält Vorgaben zur späteren Überprüfung.\n\nDie GGO ist eine amtliche Verwaltungsvorschrift und nicht mit der Deutschen Nachhaltigkeitsstrategie, eNAP oder der unabhängigen WÖk-Methodik gleichzusetzen.",
+      "woekRelation": "WÖk erkennt die GGO als bestehende Verfahrens- und Prüfarchitektur an. Sie ergänzt die GGO-Fragen objektspezifisch um Problem Review, Goal Review, explizite Kausalpfade, Verteilung und Systemeffekte, Gegenfaktum und Attribution, Omissions/Delivery/Policy Coherence, Optionsvergleich, Reality Check und Nichtkompensation.",
+      "usageNote": "GGO, GFA, Nachhaltigkeitsprüfung und eNAP als unterschiedliche Ebenen bezeichnen: GGO = Verwaltungsvorschrift; GFA = Prüfverfahren; Nachhaltigkeitsprüfung = Bestandteil der GFA; eNAP = digitales Werkzeug.",
+      "status": "anschlussbegriff",
+      "type": "Amtliche Verwaltungsvorschrift",
+      "category": "Rechtsbegriff",
+      "version": "1.0",
+      "reviewStatus": "fachlich konsolidiert",
+      "source": "Gemeinsame Geschäftsordnung der Bundesministerien",
+      "sourceSection": "§§ 43 und 44 GGO",
+      "sourceProvenance": "Amtliche Verwaltungsvorschrift; aktuelle Fassung über die offizielle Bundesquelle.",
+      "officialSources": [
+        "Gemeinsame Geschäftsordnung der Bundesministerien (GGO)|/quellenarchiv/wok-q-9029/"
+      ],
+      "relatedTerms": [
+        "gesetzesfolgenabschaetzung",
+        "nachhaltigkeitspruefung-bund",
+        "enap",
+        "egesetzgebung-egfa",
+        "deutsche-nachhaltigkeitsstrategie",
+        "ex-ante-folgenpruefung-reality-check"
+      ],
+      "doNotConfuseWith": [
+        "Deutsche Nachhaltigkeitsstrategie: nationaler Ziel-, Governance- und Monitoringrahmen.",
+        "eNAP: digitales Prüfwerkzeug, nicht die Rechts- oder Verfahrensgrundlage.",
+        "WÖk: unabhängige Ergänzungsarchitektur, keine Bundesverwaltungsvorschrift."
+      ],
+      "classicGlossary": true,
+      "autoLinkAllowed": true,
+      "pageUrl": "/begriffe/gemeinsame-geschaeftsordnung-der-bundesministerien/"
     },
     {
       "termId": "gesetzesfolgenabschaetzung",
@@ -66,7 +108,7 @@
       "sourceSection": "Gesetzesbegründung und Gesetzesfolgen",
       "sourceProvenance": "Amtliche Verwaltungsvorschrift; WÖk-Abgrenzung auf Basis des aktuellen Methodenstandes.",
       "officialSources": [
-        "Gemeinsame Geschäftsordnung der Bundesministerien (GGO)|https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm"
+        "Gemeinsame Geschäftsordnung der Bundesministerien (GGO)|/quellenarchiv/wok-q-9029/"
       ],
       "relatedTerms": [
         "nachhaltigkeitspruefung-bund",
@@ -104,8 +146,8 @@
       "reviewStatus": "fachlich konsolidiert",
       "source": "BMJV Nachhaltige Gesetzgebung / GGO § 44",
       "officialSources": [
-        "BMJV: Nachhaltige Gesetzgebung|https://www.bmj.de/DE/ministerium/nachhaltigkeit/gesetzgebung/gesetzgebung_artikel.html",
-        "GGO §§ 43 und 44|https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm"
+        "BMJV: Nachhaltige Gesetzgebung|/quellenarchiv/wok-q-9030/",
+        "GGO §§ 43 und 44|/quellenarchiv/wok-q-9029/"
       ],
       "relatedTerms": [
         "gesetzesfolgenabschaetzung",
@@ -116,7 +158,7 @@
       ],
       "classicGlossary": true,
       "autoLinkAllowed": true,
-      "pageUrl": "/begriffe/nachhaltigkeitspruefung-bund/"
+      "pageUrl": "/begriffe/nachhaltigkeitspruefung-des-bundes/"
     },
     {
       "termId": "enap",
@@ -137,8 +179,9 @@
       "reviewStatus": "fachlich konsolidiert",
       "source": "E-Gesetzgebung / BMJV",
       "officialSources": [
-        "E-Gesetzgebung: eGFA/eNAP|https://plattform.egesetzgebung.bund.de/cockpit/#/egfa",
-        "BMJV: Nachhaltige Gesetzgebung|https://www.bmj.de/DE/ministerium/nachhaltigkeit/gesetzgebung/gesetzgebung_artikel.html"
+        "E-Gesetzgebung: eGFA/eNAP|/quellenarchiv/wok-q-9034/",
+        "Arbeitshilfe zur frühen Einbeziehung von Nachhaltigkeitszielen und eNAP|/quellenarchiv/wok-q-9037/",
+        "BMJV: Nachhaltige Gesetzgebung|/quellenarchiv/wok-q-9030/"
       ],
       "relatedTerms": [
         "egesetzgebung-egfa",
@@ -149,7 +192,7 @@
       ],
       "classicGlossary": true,
       "autoLinkAllowed": true,
-      "pageUrl": "/begriffe/enap/"
+      "pageUrl": "/begriffe/elektronische-nachhaltigkeitspruefung/"
     },
     {
       "termId": "egesetzgebung-egfa",
@@ -170,7 +213,7 @@
       "reviewStatus": "fachlich konsolidiert",
       "source": "E-Gesetzgebung",
       "officialSources": [
-        "E-Gesetzgebung: eGFA/eNAP|https://plattform.egesetzgebung.bund.de/cockpit/#/egfa"
+        "E-Gesetzgebung: eGFA/eNAP|/quellenarchiv/wok-q-9034/"
       ],
       "relatedTerms": [
         "enap",
@@ -179,7 +222,7 @@
       ],
       "classicGlossary": true,
       "autoLinkAllowed": true,
-      "pageUrl": "/begriffe/egesetzgebung-egfa/"
+      "pageUrl": "/begriffe/e-gesetzgebung/"
     },
     {
       "termId": "dns-indikator",
@@ -200,8 +243,8 @@
       "reviewStatus": "fachlich konsolidiert",
       "source": "Destatis / Deutsche Nachhaltigkeitsstrategie",
       "officialSources": [
-        "Destatis: Nachhaltigkeitsindikatoren|https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Nachhaltigkeitsindikatoren/_inhalt.html",
-        "Bundesregierung: Steuerung der DNS|https://www.bundesregierung.de/breg-de/schwerpunkte/wirksam-regieren/steuerung-nachhaltigkeitsstrategie-419776"
+        "Destatis: Nachhaltigkeitsindikatoren|/quellenarchiv/wok-q-9033/",
+        "Bundesregierung: Steuerung der DNS|/quellenarchiv/wok-q-9031/"
       ],
       "relatedTerms": [
         "deutsche-nachhaltigkeitsstrategie",
@@ -233,19 +276,19 @@
       "reviewStatus": "fachlich konsolidiert",
       "source": "WÖk-Methodenpräzisierung 2026-08-21",
       "officialSources": [
-        "Bundesregierung: Steuerung der DNS|https://www.bundesregierung.de/breg-de/schwerpunkte/wirksam-regieren/steuerung-nachhaltigkeitsstrategie-419776"
+        "Bundesregierung: Steuerung der DNS|/quellenarchiv/wok-q-9031/"
       ],
       "relatedTerms": [
         "deutsche-nachhaltigkeitsstrategie",
         "dns-indikator",
         "wirkung",
-        "evidenz",
+        "evidenz-und-annahmenregister",
         "attribution",
         "referenzrahmen"
       ],
       "classicGlossary": true,
       "autoLinkAllowed": true,
-      "pageUrl": "/begriffe/zielbezug-vs-wirkung/"
+      "pageUrl": "/begriffe/zielbezug-und-wirkung/"
     },
     {
       "termId": "ex-ante-folgenpruefung-reality-check",
@@ -267,19 +310,19 @@
       "reviewStatus": "fachlich konsolidiert",
       "source": "GGO § 44 Abs. 7 / WÖk-Reality-Check",
       "officialSources": [
-        "GGO §§ 43 und 44|https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm"
+        "GGO §§ 43 und 44|/quellenarchiv/wok-q-9029/"
       ],
       "relatedTerms": [
         "gesetzesfolgenabschaetzung",
         "wirkungsmonitoring",
         "wirkungsrueckkopplung",
-        "evidenz",
+        "evidenz-und-annahmenregister",
         "attribution",
-        "wirkungslernen"
+        "lern-und-rueckkopplungsarchitektur"
       ],
       "classicGlossary": true,
       "autoLinkAllowed": true,
-      "pageUrl": "/begriffe/ex-ante-folgenpruefung-reality-check/"
+      "pageUrl": "/begriffe/ex-ante-folgenpruefung-und-reality-check/"
     },
     {
       "termId": "staatliche-nachhaltigkeitsarchitektur",
@@ -300,10 +343,10 @@
       "reviewStatus": "fachlich konsolidiert",
       "source": "WÖk-Methodenpräzisierung auf Basis amtlicher Bundesarchitektur",
       "officialSources": [
-        "Bundesregierung: Steuerung der DNS|https://www.bundesregierung.de/breg-de/schwerpunkte/wirksam-regieren/steuerung-nachhaltigkeitsstrategie-419776",
-        "GGO §§ 43 und 44|https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm",
-        "BMJV: Nachhaltige Gesetzgebung|https://www.bmj.de/DE/ministerium/nachhaltigkeit/gesetzgebung/gesetzgebung_artikel.html",
-        "E-Gesetzgebung: eGFA/eNAP|https://plattform.egesetzgebung.bund.de/cockpit/#/egfa"
+        "Bundesregierung: Steuerung der DNS|/quellenarchiv/wok-q-9031/",
+        "GGO §§ 43 und 44|/quellenarchiv/wok-q-9029/",
+        "BMJV: Nachhaltige Gesetzgebung|/quellenarchiv/wok-q-9030/",
+        "E-Gesetzgebung: eGFA/eNAP|/quellenarchiv/wok-q-9034/"
       ],
       "relatedTerms": [
         "deutsche-nachhaltigkeitsstrategie",
@@ -338,7 +381,8 @@
       "source": "Deutscher Bundestag / BMJV",
       "officialSources": [
         "Deutscher Bundestag: Parlamentarischer Beirat für nachhaltige Entwicklung und Zukunftsfragen (PBnEZ)|https://www.bundestag.de/ausschuesse/weitere_gremien/pbnez",
-        "BMJV: Nachhaltige Gesetzgebung|https://www.bmj.de/DE/ministerium/nachhaltigkeit/gesetzgebung/gesetzgebung_artikel.html"
+        "Deutscher Bundestag: Parlamentarischer Beirat für nachhaltige Entwicklung und Zukunftsfragen (PBnEZ)|/quellenarchiv/wok-q-9036/",
+        "BMJV: Nachhaltige Gesetzgebung|/quellenarchiv/wok-q-9030/"
       ],
       "relatedTerms": [
         "staatliche-nachhaltigkeitsarchitektur",
@@ -348,11 +392,12 @@
       ],
       "classicGlossary": true,
       "autoLinkAllowed": true,
-      "pageUrl": "/begriffe/parlamentarischer-beirat-nachhaltige-entwicklung/",
+      "pageUrl": "/begriffe/parlamentarischer-beirat-fuer-nachhaltige-entwicklung-und-zukunftsfragen/",
       "sourceProvenance": "Aktuelle institutionelle Bezeichnung und Funktion aus dem Deutschen Bundestag; ergänzende Verfahrenseinordnung aus BMJV/GGO."
     },
     {
       "termId": "state-gfa-enap-benchmark",
+      "slug": "state-gfa-enap-benchmark",
       "canonicalLabel": "Staatlicher GFA-/eNAP-Benchmark",
       "aliases": [
         "GFA-eNAP-Benchmark",
@@ -370,8 +415,8 @@
       "reviewStatus": "fachlich konsolidiert",
       "source": "WÖk-Methodenpräzisierung 2026-08-21 / #241/#253",
       "officialSources": [
-        "GGO §§ 43 und 44|https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm",
-        "BMJV: Nachhaltige Gesetzgebung|https://www.bmj.de/DE/ministerium/nachhaltigkeit/gesetzgebung/gesetzgebung_artikel.html"
+        "GGO §§ 43 und 44|/quellenarchiv/wok-q-9029/",
+        "BMJV: Nachhaltige Gesetzgebung|/quellenarchiv/wok-q-9030/"
       ],
       "relatedTerms": [
         "gesetzesfolgenabschaetzung",
@@ -403,15 +448,15 @@
       "reviewStatus": "fachlich konsolidiert 2026-08-21",
       "source": "Führende WÖk-Präzisierung #253",
       "officialSources": [
-        "GGO §§ 43 und 44|https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm",
-        "Bundesregierung: Steuerung der DNS|https://www.bundesregierung.de/breg-de/schwerpunkte/wirksam-regieren/steuerung-nachhaltigkeitsstrategie-419776"
+        "GGO §§ 43 und 44|/quellenarchiv/wok-q-9029/",
+        "Bundesregierung: Steuerung der DNS|/quellenarchiv/wok-q-9031/"
       ],
       "relatedTerms": [
         "wirkung",
         "wirkungsrueckkopplung",
         "gesetzesfolgenabschaetzung",
         "staatliche-nachhaltigkeitsarchitektur",
-        "evidenz",
+        "evidenz-und-annahmenregister",
         "attribution"
       ],
       "doNotConfuseWith": [

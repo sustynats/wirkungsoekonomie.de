@@ -3,6 +3,12 @@ import path from "node:path";
 import crypto from "node:crypto";
 
 const root = process.cwd();
+const generatedAt = (() => {
+  const epoch = Number(process.env.SOURCE_DATE_EPOCH || "");
+  return Number.isFinite(epoch) && epoch > 0
+    ? new Date(epoch * 1000).toISOString()
+    : new Date().toISOString();
+})();
 const source = path.join(root, "assets/data/term-registry.json");
 const supplementSources = [
   path.join(root, "content/glossary/imports/wirkungsfinanzpolitik-term-definitions.json"),
@@ -25,13 +31,18 @@ const supplementSources = [
   path.join(root, "content/glossary/imports/curated-crosslinks.json"),
   path.join(root, "content/glossary/imports/gesamtstudie-wirkungsdilemmata-kooperation-sdgplus-crosslinks.json"),
   path.join(root, "content/glossary/imports/begriffsleitfaden-v1.5.json"),
+  path.join(root, "content/glossary/imports/staatliche-nachhaltigkeitsarchitektur.json"),
 ];
 const out = path.join(root, "public/data/glossary.terms.json");
 const modelOut = path.join(root, "assets/data/glossary-model.json");
 const historyOut = path.join(root, "public/data/glossary-version-history.json");
 const hoverOut = path.join(root, "assets/js/glossaryTerms.js");
 const relationReportOut = path.join(root, "reports/glossary-relation-curation.json");
-const sourceArchivePath = path.join(root, "content/quellenarchiv/sources.json");
+const sourceArchivePaths = [
+  path.join(root, "content/quellenarchiv/sources.json"),
+  path.join(root, "content/quellenarchiv/legal-source-records.json"),
+  path.join(root, "content/quellenarchiv/evidence-source-records.json"),
+];
 const glossarySourceArchiveOut = path.join(root, "content/quellenarchiv/glossary-source-records.json");
 
 const collator = new Intl.Collator("de", { sensitivity: "base", numeric: true });
@@ -111,12 +122,11 @@ function sourceArchiveSlug(code) {
     .replace(/^-+|-+$/g, "");
 }
 
-const sourceArchiveEntries = fs.existsSync(sourceArchivePath)
-  ? (() => {
-    const rawArchive = JSON.parse(fs.readFileSync(sourceArchivePath, "utf8"));
-    return Array.isArray(rawArchive) ? rawArchive : rawArchive.sources || [];
-  })()
-  : [];
+const sourceArchiveEntries = sourceArchivePaths.flatMap((sourceArchivePath) => {
+  if (!fs.existsSync(sourceArchivePath)) return [];
+  const rawArchive = JSON.parse(fs.readFileSync(sourceArchivePath, "utf8"));
+  return Array.isArray(rawArchive) ? rawArchive : rawArchive.sources || [];
+});
 const sourceArchiveByUrl = new Map(
   sourceArchiveEntries
     .filter((source) => source.code && normalizeSourceUrl(source.url))
@@ -602,6 +612,11 @@ function termCompletenessScore(term) {
   ].filter(Boolean).length
     + (term.version === "2.0" ? 5 : 0)
     + (term.version === "3.0" ? 12 : 0)
+    // #253 is the approved source for the state-architecture precision layer.
+    // Older, longer glossary records must not win merely because they carry
+    // more legacy enrichment fields (the Wirkungsblindheit collision exposed
+    // exactly that failure mode).
+    + (term.source === "Führende WÖk-Präzisierung #253" ? 50 : 0)
     + (term.status === "approved" ? 3 : 0)
     + (Array.isArray(term.deepGlossarySections) ? Math.min(term.deepGlossarySections.length, 6) : 0)
     + (Array.isArray(term.officialSources) ? Math.min(term.officialSources.length, 6) : 0)
@@ -834,7 +849,7 @@ function sourceUrlForArchive(label, originalUrl = "") {
   if (normalized === "die wirkungsoekonomie als kooperative lernende und wehrhafte wirkungsordnung") {
     return "https://wirkungsoekonomie.de/bibliothek/wirkungsdilemmata-kooperation-sdgplus-gesamtstudie/";
   }
-  if (/begriffsleitfaden/.test(normalized)) return "https://wirkungsoekonomie.de/public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.4.pdf";
+  if (/begriffsleitfaden/.test(normalized)) return "https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/";
   if (/woems|woemm|methodensystem|managementmodell/.test(normalized)) return "https://wirkungsoekonomie.de/methodenraum/gesamtbild/";
   if (/impact controlling|doppelte wesent/.test(normalized)) return "https://wirkungsoekonomie.de/werkzeuge/impact-controlling/";
   if (/wirkungsfinanzpolitik|schuldenfrage/.test(normalized)) return "https://wirkungsoekonomie.de/wirkungsfelder/finanzsystem-kapital/";
@@ -959,7 +974,7 @@ const terms = dedupeCanonicalLabels(rawTerms.map(normalizeTerm))
 
 const glossarySourceRecords = attachGlossarySourceArchive(terms);
 fs.writeFileSync(glossarySourceArchiveOut, `${JSON.stringify({
-  generatedAt: new Date().toISOString(),
+  generatedAt,
   clusters: [{ key: "M", label: "Glossar-Quellen und Primärmaterial", count: glossarySourceRecords.length }],
   sources: glossarySourceRecords,
 }, null, 2)}\n`);
@@ -967,13 +982,13 @@ fs.writeFileSync(glossarySourceArchiveOut, `${JSON.stringify({
 const relationCuration = preparePublicTerms(terms);
 fs.mkdirSync(path.dirname(relationReportOut), { recursive: true });
 fs.writeFileSync(relationReportOut, `${JSON.stringify({
-  generatedAt: new Date().toISOString(),
+  generatedAt,
   unresolvedRelations: relationCuration.unresolvedRelations,
   ambiguousAliasKeys: relationCuration.ambiguousAliases,
 }, null, 2)}\n`);
 
 fs.mkdirSync(path.dirname(out), { recursive: true });
-fs.writeFileSync(out, `${JSON.stringify({ generatedAt: new Date().toISOString(), terms }, null, 2)}\n`);
+fs.writeFileSync(out, `${JSON.stringify({ generatedAt, terms }, null, 2)}\n`);
 
 // The structured model feeds the search and cross-link layer. Keep the
 // established association metadata while the term registry remains the single
@@ -990,7 +1005,7 @@ const associationKeys = [
   "relatedObjections",
 ];
 const glossaryModel = {
-  generatedAt: new Date().toISOString(),
+  generatedAt,
   schema: {
     term: "canonicalLabel",
     shortDefinition: "shortDefinition",
@@ -1042,7 +1057,7 @@ fs.mkdirSync(path.dirname(hoverOut), { recursive: true });
 fs.writeFileSync(hoverOut, `window.WIRKUNG_GLOSSARY_TERMS = ${JSON.stringify(hoverTerms, null, 2)};\n`);
 
 const history = {
-  generatedAt: new Date().toISOString(),
+  generatedAt,
   entries: [
     {
       date: "2026-05-27",

@@ -10,6 +10,38 @@ export const CURRENT_METHOD_ROUTES = [
   "/wirkungsfelder/gesundheit-pflege/dossiers/",
 ];
 
+// Die aktuelle staatliche Nachhaltigkeitsarchitektur ist kein Methodenpaket.
+// Ihre Glossar-, Register- und Quellenrouten bleiben deshalb separat typisiert,
+// werden aber ebenso verpflichtend in der Sitemap gehalten.
+export const CURRENT_STATE_ARCHITECTURE_ROUTES = [
+  "/bibliothek/woek-begriffsleitfaden-fuehrend/",
+  "/bibliothek/woek-master-items-register/",
+  "/woek-id-register/",
+  "/woek-id-register/methodik/",
+  "/begriffe/deutsche-nachhaltigkeitsstrategie/",
+  "/begriffe/gemeinsame-geschaeftsordnung-der-bundesministerien/",
+  "/begriffe/gesetzesfolgenabschaetzung/",
+  "/begriffe/nachhaltigkeitspruefung-des-bundes/",
+  "/begriffe/elektronische-nachhaltigkeitspruefung/",
+  "/begriffe/e-gesetzgebung/",
+  "/begriffe/dns-indikator/",
+  "/begriffe/zielbezug-und-wirkung/",
+  "/begriffe/ex-ante-folgenpruefung-und-reality-check/",
+  "/begriffe/staatliche-nachhaltigkeitsarchitektur/",
+  "/begriffe/parlamentarischer-beirat-fuer-nachhaltige-entwicklung-und-zukunftsfragen/",
+  "/begriffe/state-gfa-enap-benchmark/",
+  "/begriffe/wirkungsblindheit/",
+  "/quellenarchiv/wok-q-9029/",
+  "/quellenarchiv/wok-q-9030/",
+  "/quellenarchiv/wok-q-9031/",
+  "/quellenarchiv/wok-q-9032/",
+  "/quellenarchiv/wok-q-9033/",
+  "/quellenarchiv/wok-q-9034/",
+  "/quellenarchiv/wok-q-9035/",
+  "/quellenarchiv/wok-q-9036/",
+  "/quellenarchiv/wok-q-9037/",
+];
+
 // Diese vier bereits ersetzten PDF-Fassungen dokumentieren den früheren
 // multiplikativen T-SROI-Ansatz. Sie bleiben wegen vorhandener Fundstellen
 // erreichbar, dürfen aber weder als aktuelle Methode noch als Suchtreffer
@@ -75,7 +107,7 @@ export const HISTORICAL_METHOD_ROUTE_PREFIXES = [
 
 const ROBOTS_META = /<meta\b(?=[^>]*\bname=["']robots["'])[^>]*>/iu;
 const URL_BLOCK = /<url\b[^>]*>[\s\S]*?<\/url>/giu;
-const LASTMOD = "2026-08-02";
+const LASTMOD = "2026-08-21";
 
 export function normalizeRoute(value = "") {
   let route = String(value || "").trim().replace(/[?#].*$/u, "");
@@ -208,7 +240,7 @@ function sitemapEntry(route) {
 export function synchronizeSitemapIndexability({
   siteRoot,
   sitemapPath = path.join(siteRoot, "sitemap.xml"),
-  requiredRoutes = CURRENT_METHOD_ROUTES,
+  requiredRoutes = [...CURRENT_METHOD_ROUTES, ...CURRENT_STATE_ARCHITECTURE_ROUTES],
   excludedRoutes = [],
   write = true,
 } = {}) {

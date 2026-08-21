@@ -175,9 +175,9 @@ const LEADING_REFERENCE_PATHS = new Set([
   "glossar.html",
   "verstehen/sdgs-sdgplus/index.html",
   "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-  "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.5.pdf",
+  "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.6.pdf",
   "public/downloads/originals/Wirkungssteuer_WStG_3.0_Gesamtneufassung_2026.pdf",
-  "assets/downloads/woek-register/v1.4/WOeK_Masterregister_v1.4_FINAL_2026-08-16.xlsx"
+  "assets/downloads/woek-register/v1.5/WOeK_Masterregister_v1.5_2026-08-21.xlsx"
 ]);
 
 // Neu erzeugte, öffentliche Rechenstandards werden vor dem Commit bewusst in
@@ -276,52 +276,67 @@ const LEADING_OVERRIDES = new Map([
     shortDescription: "Öffentliche Begriffskarte für zentrale WÖk-Begriffe und Abkürzungen."
   }],
   ["bibliothek/woek-begriffsleitfaden-fuehrend/index.html", {
-    title: "WÖk-Begriffsleitfaden führend v1.5",
+    title: "WÖk-Begriffsleitfaden führend v1.6",
     type: "Glossar",
     status: "führend",
-    shortDescription: "Maßgebliche Sprach- und Methodenreferenz: IOOI ist eine externe, optionale Results Chain; die WÖk-Wirkungsarchitektur verbindet Vorwirkung, Evidenz, Bewertung, Schutz, Rückkopplung und Lernen."
+    shortDescription: "Maßgebliche Sprach- und Methodenreferenz: staatliche Folgen- und Nachhaltigkeitsprüfung fair einordnen, Problem und Ziel vor Empfehlungen prüfen und MasterItems von Indikatoren trennen."
+  }],
+  ["public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.6.pdf", {
+    title: "WÖk-Begriffsleitfaden führend v1.6",
+    type: "Glossar",
+    status: "führend",
+    shortDescription: "PDF-Fassung der maßgeblichen Sprach- und Methodenreferenz der Wirkungsökonomie, Version 1.6."
   }],
   ["public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.5.pdf", {
     title: "WÖk-Begriffsleitfaden führend v1.5",
     type: "Glossar",
-    status: "führend",
-    shortDescription: "PDF-Fassung der maßgeblichen Sprach- und Methodenreferenz der Wirkungsökonomie, Version 1.5."
+    status: "archiviert",
+    shortDescription: "Zitierfähige historische PDF-Fassung; für den aktuellen Begriffsstand gilt Version 1.6."
   }],
   ["public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.4.pdf", {
     title: "WÖk-Begriffsleitfaden führend v1.4",
     type: "Glossar",
     status: "archiviert",
-    shortDescription: "Zitierfähige historische PDF-Fassung; für den aktuellen Begriffsstand gilt Version 1.5."
+    shortDescription: "Zitierfähige historische PDF-Fassung; für den aktuellen Begriffsstand gilt Version 1.6."
   }],
   ["public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.0.pdf", {
     title: "WÖk-Begriffsleitfaden führend v1.0",
     type: "Glossar",
     status: "archiviert",
-    shortDescription: "Zitierfähige historische PDF-Fassung; für den aktuellen Begriffsstand gilt Version 1.5."
+    shortDescription: "Zitierfähige historische PDF-Fassung; für den aktuellen Begriffsstand gilt Version 1.6."
   }],
-  ["assets/downloads/woek-register/v1.4/WOeK_Masterregister_v1.4_FINAL_2026-08-16.xlsx", {
-    title: "WÖk-Masterregister v1.4",
+  ["assets/downloads/woek-register/v1.5/WOeK_Masterregister_v1.5_2026-08-21.xlsx", {
+    title: "WÖk-Masterregister v1.5",
     type: "Methodik",
     status: "führend",
-    shortDescription: "Führendes technisches Register mit 621 WÖk-IDs, 28 Regeln, getrennten Schwellen- und Benchmarkstatus sowie sichtbaren offenen Prüfbedarfen."
+    shortDescription: "Führendes MasterItems-Register mit 621 stabilen WÖk-IDs, expliziter Zwei-Ebenen-Architektur, amtlichen Bundesreferenzen und sichtbaren offenen Mappingstatus."
+  }],
+  ["assets/downloads/woek-register/v1.4/WOeK_Masterregister_v1.4_FINAL_2026-08-16.xlsx", {
+    title: "WÖk-Masterregister v1.4 (historische Fassung)",
+    type: "Methodik",
+    status: "ersetzt",
+    shortDescription: "Historische Registerfassung. Für den aktuellen MasterItems- und Architekturstand gilt v1.5.",
+    historicalNotice: "Unveränderte historische Quellenfassung. Die führende MasterItems-Fassung ist v1.5.",
+    successorUrl: "bibliothek/woek-master-items-register/",
+    successorLabel: "WÖk-Masterregister v1.5 öffnen"
   }],
   ["assets/downloads/woek-register/WOeK_Master_Items_v1.3_geprueft.xlsx", {
     title: "WÖk Master Items v1.3 (historische Fassung)",
     type: "Methodik",
     status: "ersetzt",
-    shortDescription: "Historische Registerfassung. Für den aktuellen technischen Stand gilt das WÖk-Masterregister v1.4.",
-    historicalNotice: "Historische Quellenfassung. Die führende technische Registerquelle ist v1.4.",
+    shortDescription: "Historische Registerfassung. Für den aktuellen technischen Stand gilt das WÖk-Masterregister v1.5.",
+    historicalNotice: "Historische Quellenfassung. Die führende technische Registerquelle ist v1.5.",
     successorUrl: "bibliothek/woek-master-items-register/",
-    successorLabel: "WÖk-Masterregister v1.4 öffnen"
+    successorLabel: "WÖk-Masterregister v1.5 öffnen"
   }],
   ["assets/pdf/woek-master-items-v1-2.pdf", {
     title: "WÖk Master Items v1.2 (historische Fassung)",
     type: "Methodik",
     status: "ersetzt",
-    shortDescription: "Historische Quellenfassung des WÖk-Master-Items-Registers. Für den aktuellen Stand gilt das WÖk-Masterregister v1.4.",
-    historicalNotice: "Historische Quellenfassung. Schwellenstatus, Quellenfunktion und Prüfprotokoll werden in v1.4 getrennt ausgewiesen.",
+    shortDescription: "Historische Quellenfassung des WÖk-Master-Items-Registers. Für den aktuellen Stand gilt das WÖk-Masterregister v1.5.",
+    historicalNotice: "Historische Quellenfassung. MasterItems, Indikatoren, Quellenfunktion und Prüfstatus werden in v1.5 getrennt ausgewiesen.",
     successorUrl: "bibliothek/woek-master-items-register/",
-    successorLabel: "WÖk-Masterregister v1.4 öffnen"
+    successorLabel: "WÖk-Masterregister v1.5 öffnen"
   }],
   ["assets/downloads/23_woek_impact_controlling_t_sroi_transformationsmessung_methodenpapier_v1_1.pdf", {
     title: "T-SROI-Rechenstandard v1.1",

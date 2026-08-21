@@ -116,6 +116,8 @@
       "origin": "extern",
       "reviewStatus": "fuehrend",
       "dataQuality": "amtlich",
+      "sourceFunction": "Verfahrens- und Rechtsgrundlage der Gesetzesbegründung und Gesetzesfolgenabschätzung",
+      "dataFunction": "REFERENCE | PROCEDURE | EX_ANTE_ASSESSMENT | REVIEW_DESIGN",
       "summary": "§ 43 GGO verlangt für Gesetzesbegründungen unter anderem Zielsetzung und Notwendigkeit, Sachverhalt und Erkenntnisquellen sowie andere Lösungsmöglichkeiten. § 44 definiert Gesetzesfolgen als wesentliche Auswirkungen einschließlich beabsichtigter Wirkungen und unbeabsichtigter Nebenwirkungen, verlangt den Nachhaltigkeitsbezug und enthält Vorgaben zur späteren Überprüfung.",
       "einordnung": "Kanonische Verfahrensquelle für die staatliche Gesetzesfolgenabschätzung des Bundes. Sie belegt, dass Folgen-, Alternativen- und spätere Überprüfungslogik bereits institutionell angelegt sind. Die WÖk ergänzt diese Architektur objektspezifisch und systemisch; sie ersetzt die GFA nicht.",
       "impactFields": [
@@ -140,6 +142,8 @@
       "origin": "extern",
       "reviewStatus": "fuehrend",
       "dataQuality": "amtlich",
+      "sourceFunction": "Amtliche Verfahrensinformation zur Nachhaltigkeitsprüfung und zu eNAP",
+      "dataFunction": "REFERENCE | PROCEDURE | EX_ANTE_ASSESSMENT",
       "summary": "Das BMJV erläutert die seit 2009 in der GGO verankerte Nachhaltigkeitsprüfung, die Prüfung betroffener SDGs und Zielvorgaben sowie von Zielen und Indikatoren der Deutschen Nachhaltigkeitsstrategie und das webbasierte Werkzeug eNAP.",
       "einordnung": "Amtliche Primärquelle für die praktische Einordnung von Nachhaltigkeitsprüfung und eNAP in der Rechtsetzung. Zielbezug oder eNAP-Nutzung ist kein Kausalitätsnachweis für die tatsächliche Wirkung eines Vorhabens.",
       "impactFields": [
@@ -164,6 +168,8 @@
       "origin": "extern",
       "reviewStatus": "fuehrend",
       "dataQuality": "amtlich",
+      "sourceFunction": "Governance-, Ziel- und Monitoringreferenz der Deutschen Nachhaltigkeitsstrategie",
+      "dataFunction": "REFERENCE | TARGET | GOVERNANCE | MONITORING | CONTEXT",
       "summary": "Die Bundesregierung beschreibt die DNS als Managementsystem mit Institutionen, Prinzipien, Zielen und Indikatoren sowie Monitoring. Die Seite nennt die Nachhaltigkeitsprüfung bei Gesetzes- und Verordnungsentwürfen seit 2009 und eNAP seit 2018.",
       "einordnung": "Referenz für Governance, Zielsystem und Monitoring der DNS. Die DNS-Indikatoren liefern Ziel-, Baseline- und Monitoringinformation, aber nicht automatisch Attribution für einzelne Maßnahmen.",
       "impactFields": [
@@ -188,6 +194,8 @@
       "origin": "extern",
       "reviewStatus": "fuehrend",
       "dataQuality": "amtlich",
+      "sourceFunction": "Nationale Ziel-, Governance- und Referenzarchitektur zur Agenda 2030",
+      "dataFunction": "REFERENCE | TARGET | GOVERNANCE | CONTEXT",
       "summary": "Die Weiterentwicklung 2025 operationalisiert die Agenda 2030 für Deutschland, fokussiert sechs Transformationsbereiche und beschreibt Governance- und Instrumentenfelder der deutschen Nachhaltigkeitspolitik.",
       "einordnung": "Kanonische nationale Ziel- und Referenzebene für WÖk-Analysen mit Deutschlandbezug. DNS-Zielzuordnung ist Referenz- und Monitoringinformation, kein Kausalitätsbeweis.",
       "impactFields": [
@@ -212,6 +220,8 @@
       "origin": "extern",
       "reviewStatus": "fuehrend",
       "dataQuality": "amtlich",
+      "sourceFunction": "Amtliche Zustands-, Zeitreihen- und Zielerreichungsbeobachtung",
+      "dataFunction": "BASELINE | TARGET | OUTCOME | DISTRIBUTION | CONTEXT | REALITY_CHECK",
       "summary": "Destatis dokumentiert und bewertet die Entwicklung der Indikatoren der Deutschen Nachhaltigkeitsstrategie und veröffentlicht regelmäßig Indikatorenberichte.",
       "einordnung": "Primärquelle für DNS-Baselines, Zielstände und Monitoring. Ein Indikator beschreibt einen Zustand oder Trend; er ist nicht mit der Wirkung oder der Zurechnung einer einzelnen politischen Maßnahme gleichzusetzen.",
       "impactFields": [
@@ -236,6 +246,8 @@
       "origin": "extern",
       "reviewStatus": "fuehrend",
       "dataQuality": "amtlich",
+      "sourceFunction": "Digitale Verfahrens- und Werkzeugreferenz für eGFA und eNAP",
+      "dataFunction": "PROCEDURE | EX_ANTE_ASSESSMENT | DOCUMENTATION",
       "summary": "Die E-Gesetzgebungsplattform stellt die elektronische Gesetzesfolgenabschätzung bereit; die elektronische Nachhaltigkeitsprüfung eNAP ist in diese digitale Arbeitsumgebung eingebettet.",
       "einordnung": "Tool- und Verfahrensreferenz. Eine öffentlich sichtbare Nachhaltigkeitsdarstellung oder GFA ist nicht automatisch ein öffentlich nachgewiesener, wort- oder byteidentischer eNAP-Export.",
       "impactFields": [
@@ -260,6 +272,8 @@
       "origin": "extern",
       "reviewStatus": "aktuell",
       "dataQuality": "amtlich",
+      "sourceFunction": "Versionierter politischer Beteiligungs- und Missionsrahmen",
+      "dataFunction": "REFERENCE | TARGET | GOVERNANCE | IMPLEMENTATION_CONTEXT",
       "summary": "Die Beteiligungsfassung vom 16. Juli 2026 entwickelt die deutsche Nachhaltigkeitspolitik in Richtung eines handlungs- und wirkungsorientierteren Aktionsplans mit ressortübergreifenden Missionen weiter.",
       "einordnung": "Aktueller Weiterentwicklungs- und Governance-Kontext. Die Beteiligungsfassung ist als Beteiligungsstand zu kennzeichnen und nicht als bereits endgültig beschlossener Gesamtplan auszugeben.",
       "impactFields": [
@@ -269,6 +283,58 @@
       ],
       "sdg": "Agenda 2030 / DNS",
       "domain": "www.bundesregierung.de"
+    },
+    {
+      "code": "WÖK-Q-9036",
+      "title": "Deutscher Bundestag – Parlamentarischer Beirat für nachhaltige Entwicklung und Zukunftsfragen",
+      "url": "https://www.bundestag.de/ausschuesse/weitere_gremien/pbnez",
+      "doi": null,
+      "author": "Deutscher Bundestag",
+      "year": 2026,
+      "type": "parlamentarisches-gremium",
+      "typeLabel": "Amtliche Parlamentsinformation",
+      "cluster": "I",
+      "clusterLabel": "Staat / Recht / Steuern / Verwaltung",
+      "origin": "extern",
+      "reviewStatus": "fuehrend",
+      "dataQuality": "amtlich",
+      "sourceFunction": "Amtliche Institutions- und Aufgabenreferenz der parlamentarischen Nachhaltigkeitsgovernance",
+      "dataFunction": "REFERENCE | GOVERNANCE | PARLIAMENTARY_SCRUTINY",
+      "summary": "Der Parlamentarische Beirat für nachhaltige Entwicklung und Zukunftsfragen begleitet die Deutsche Nachhaltigkeitsstrategie parlamentarisch, befasst sich mit Zielen, Indikatoren, Maßnahmen und Instrumenten und berichtet dem Bundestag.",
+      "einordnung": "Primärquelle für Bezeichnung, Aufgaben und parlamentarische Funktion des PBnEZ. Die parlamentarische Begleitung ist von der exekutiven GFA und Nachhaltigkeitsprüfung sowie von unabhängigen WÖk-Analysen zu trennen.",
+      "impactFields": [
+        "Demokratie",
+        "Mensch",
+        "Planet"
+      ],
+      "sdg": "Agenda 2030 / DNS / SDG 16",
+      "domain": "www.bundestag.de"
+    },
+    {
+      "code": "WÖK-Q-9037",
+      "title": "E-Gesetzgebung – Arbeitshilfe zur frühen Einbeziehung von Nachhaltigkeitszielen und eNAP",
+      "url": "https://plattform.egesetzgebung.bund.de/egesetzgebung-platform-backend/arbeitshilfen/download/37",
+      "doi": null,
+      "author": "Bundeskanzleramt / Bundesministerium der Justiz / E-Gesetzgebung",
+      "year": 2026,
+      "type": "arbeitshilfe",
+      "typeLabel": "Amtliche Arbeitshilfe",
+      "cluster": "I",
+      "clusterLabel": "Staat / Recht / Steuern / Verwaltung",
+      "origin": "extern",
+      "reviewStatus": "fuehrend",
+      "dataQuality": "amtlich",
+      "sourceFunction": "Verfahrens- und Anwendungshinweis für die frühe Nachhaltigkeitsprüfung mit eNAP",
+      "dataFunction": "PROCEDURE | EX_ANTE_ASSESSMENT | DOCUMENTATION | IMPLEMENTATION",
+      "summary": "Die Arbeitshilfe ordnet eNAP in die E-Gesetzgebung und die frühe Einbeziehung von Nachhaltigkeitszielen ein und beschreibt die verfahrensbezogene Dokumentation der mit eNAP erstellten Zusammenfassung.",
+      "einordnung": "Primärquelle für die praktische Nutzung und Dokumentationslogik von eNAP. Sie erlaubt nicht den Schluss, jede öffentliche Nachhaltigkeitsdarstellung sei ein wort- oder byteidentischer öffentlicher eNAP-Export.",
+      "impactFields": [
+        "Demokratie",
+        "Mensch",
+        "Planet"
+      ],
+      "sdg": "Agenda 2030 / DNS",
+      "domain": "plattform.egesetzgebung.bund.de"
     }
   ]
 }
