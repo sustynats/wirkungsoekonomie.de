@@ -27,8 +27,11 @@ def main() -> int:
     changed = []
     rel = "scripts/glossary/build-glossary-registry.mjs"
     old = '  path.join(root, "content/glossary/imports/iooi-wirkungsarchitektur.json"),\n'
-    new = old + '  path.join(root, "content/glossary/imports/staatliche-nachhaltigkeitsarchitektur.json"),\n'
-    if patch(rel, old, new):
+    state_line = '  path.join(root, "content/glossary/imports/staatliche-nachhaltigkeitsarchitektur.json"),\n'
+    if patch(rel, old, old + state_line):
+        changed.append(rel)
+    nwi_line = '  path.join(root, "content/glossary/imports/nwi-disambiguation.json"),\n'
+    if patch(rel, state_line, state_line + nwi_line):
         changed.append(rel)
 
     portal_generator = ROOT / "scripts/portal/build-state-law-democracy.mjs"

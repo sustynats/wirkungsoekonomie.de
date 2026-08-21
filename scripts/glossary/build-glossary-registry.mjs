@@ -23,6 +23,7 @@ const supplementSources = [
   path.join(root, "content/glossary/imports/value-pricing-und-wirkungsbasiertes-value-pricing.json"),
   path.join(root, "content/glossary/imports/iooi-wirkungsarchitektur.json"),
   path.join(root, "content/glossary/imports/staatliche-nachhaltigkeitsarchitektur.json"),
+  path.join(root, "content/glossary/imports/nwi-disambiguation.json"),
   path.join(root, "content/glossary/imports/phineo-wirkungslogik.json"),
   path.join(root, "content/glossary/imports/wirkungssteuer-wstg-v3.json"),
   path.join(root, "content/glossary/imports/gesamtstudie-wirkungsdilemmata-kooperation-sdgplus-term-definitions.json"),
@@ -31,7 +32,6 @@ const supplementSources = [
   path.join(root, "content/glossary/imports/curated-crosslinks.json"),
   path.join(root, "content/glossary/imports/gesamtstudie-wirkungsdilemmata-kooperation-sdgplus-crosslinks.json"),
   path.join(root, "content/glossary/imports/begriffsleitfaden-v1.5.json"),
-  path.join(root, "content/glossary/imports/staatliche-nachhaltigkeitsarchitektur.json"),
 ];
 const out = path.join(root, "public/data/glossary.terms.json");
 const modelOut = path.join(root, "assets/data/glossary-model.json");
@@ -349,6 +349,27 @@ function isDataStandardsTerm(term) {
 // Querverweis gegeneinander verschoben werden. Die Übersteuerungen machen die
 // begrifflichen Schutzlinien unabhängig von älteren Importständen verbindlich.
 const canonicalTermOverrides = new Map([
+  ["nwi", {
+    label: "WÖk-Netto-Wirkungsindex",
+    canonicalLabel: "WÖk-Netto-Wirkungsindex",
+    aliases: ["WÖk-Netto-Wirkungsindex", "Netto-Wirkungs-Index"],
+    synonyms: ["WÖk-Netto-Wirkungsindex", "Netto-Wirkungs-Index"],
+    shortDefinition: "Der WÖk-Netto-Wirkungsindex verdichtet geprüfte operative Wirkungen innerhalb einer offengelegten Bewertungs- und Schutzlogik.",
+    hoverDefinition: "Der WÖk-Netto-Wirkungsindex ist eine WÖk-eigene operative Kennzahl. Er ist nicht der Nationale Wohlfahrtsindex (NWI).",
+    definition: "Der WÖk-Netto-Wirkungsindex ist eine WÖk-eigene Kennzahl für die operative Gesamtwirkung eines klar abgegrenzten Objekts oder Vorhabens. Er stellt geprüfte positive und negative Wirkungen gegenüber und bleibt an Systemgrenze, Zeitraum, Zurechnung, Datenqualität, Unsicherheit, Wirkungsgrenzen und Nichtkompensation gebunden.",
+    longDefinition: "Der WÖk-Netto-Wirkungsindex ist eine WÖk-eigene Kennzahl für die operative Gesamtwirkung eines klar abgegrenzten Objekts oder Vorhabens. Er stellt geprüfte positive und negative Wirkungen gegenüber und bleibt an Systemgrenze, Zeitraum, Zurechnung, Datenqualität, Unsicherheit, Wirkungsgrenzen und Nichtkompensation gebunden. Die frühere Kurzbezeichnung NWI wird öffentlich nicht mehr verwendet, weil NWI in Deutschland etabliert für den Nationalen Wohlfahrtsindex steht.",
+    woekRelation: "Das WÖk-Modell macht ein Wirkungsprofil auf einer dokumentierten Skala steuerungsfähig, ersetzt aber weder Schutzentscheidungen noch Evidenz. Es ist vom Nationalen Wohlfahrtsindex (NWI) und vom monetären T-SROI zu unterscheiden.",
+    statusNote: "Seit 21.08.2026 eindeutig als WÖk-Netto-Wirkungsindex bezeichnet; die frühere Kurzbezeichnung NWI bleibt nur als historischer Alias nachvollziehbar.",
+    usageNote: "Öffentlich WÖk-Netto-Wirkungsindex ausschreiben. NWI ohne Qualifikation ausschließlich für den Nationalen Wohlfahrtsindex verwenden.",
+    doNotConfuseWith: ["Nationaler Wohlfahrtsindex (NWI)", "T-SROI", "FinalScore", "SROI"],
+    relatedTerms: ["nationaler-wohlfahrtsindex", "netto-wirkung", "finalscore", "t-sroi", "reverse-merit-order", "wirkungsdaten", "impact-controlling"],
+    preferredUsage: "WÖk-Netto-Wirkungsindex als ausgeschriebene Bezeichnung der WÖk-eigenen operativen Netto-Wirkungskennzahl.",
+    deprecatedUsage: ["NWI als Kurzbezeichnung des WÖk-Netto-Wirkungsindex", "T-SROI als Netto-Wirkungskennzahl"],
+    glossaryOrderKey: "WÖk Netto Wirkungsindex",
+    version: "2.1",
+    lastUpdated: "2026-08-21",
+    reviewStatus: "fachlich begrifflich disambiguiert",
+  }],
   ["wirkungslenkung", {
     aliases: ["Wirkungslenkung", "wirkungsorientierte Steuerung", "Impact Steering", "Steuerung nach Wirkung"],
     synonyms: ["Wirkungslenkung", "wirkungsorientierte Steuerung", "Impact Steering"],

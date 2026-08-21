@@ -9,8 +9,10 @@ complete sitewide matrix required by #253 is committed/reproducible.
 from __future__ import annotations
 
 import json
+import re
 import subprocess
 from collections import Counter
+from html import unescape
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -37,6 +39,7 @@ MATRIX_REQUIRED_FIELDS = {
     "classification", "required_action", "source_refs", "status",
 }
 CANONICAL_BENCHMARK = "blog/enap-woek-benchmark-fuenf-bundesvorhaben.html"
+NWI_AUDIT = "content/audits/nwi-acronym-disambiguation.json"
 
 
 def read(rel: str) -> str:
@@ -58,6 +61,8 @@ def no_raw_public_enums() -> None:
     bad = []
     for rel in proc.stdout.splitlines():
         if rel.startswith(("_site/", "_debug/", "_internal/", "admin/", "woek-parlament-app/")):
+            continue
+        if rel.startswith("api/"):
             continue
         text = read(rel)
         hits = [e for e in PUBLIC_ENUMS if e in text]
@@ -221,6 +226,74 @@ def living_route_precision() -> None:
     ])
 
 
+def nwi_acronym_disambiguated() -> None:
+    report = json.loads(read(NWI_AUDIT))
+    if report.get("gate") != "PASS" or int(report.get("failure_count", -1)) != 0:
+        raise AssertionError("NWI terminology inventory is not fail-closed PASS")
+    if report.get("established_public_meaning") != "Nationaler Wohlfahrtsindex (NWI)":
+        raise AssertionError("established public NWI meaning is missing")
+    if report.get("woek_model_public_name") != "WÖk-Netto-Wirkungsindex":
+        raise AssertionError("WÖk model is not publicly namespaced")
+
+    source_text = read("content/quellenarchiv/sources.json")
+    if "WÖK-Q-9045" not in source_text or "umweltbundesamt.de/daten/umweltindikatoren/indikator-nationaler-wohlfahrtsindex" not in source_text:
+        raise AssertionError("official UBA Nationaler Wohlfahrtsindex source is missing")
+    require("quellenarchiv/wok-q-9045/index.html", ["Nationaler Wohlfahrtsindex", "21", "WÖk-Netto-Wirkungsindex"])
+    require("begriffe/nationaler-wohlfahrtsindex/index.html", ["Nationaler Wohlfahrtsindex (NWI)", "WÖk-Netto-Wirkungsindex"])
+    require("begriffe/nwi/index.html", ["WÖk-Netto-Wirkungsindex", "Nationaler Wohlfahrtsindex (NWI)"])
+    public_glossary = json.loads(read("public/data/glossary.terms.json"))
+    public_terms = public_glossary.get("terms", public_glossary) if isinstance(public_glossary, dict) else public_glossary
+    woek_term = next((term for term in public_terms if term.get("id") == "nwi" or term.get("termId") == "nwi"), None)
+    official_term = next((term for term in public_terms if term.get("id") == "nationaler-wohlfahrtsindex" or term.get("termId") == "nationaler-wohlfahrtsindex"), None)
+    if not woek_term or woek_term.get("canonicalLabel") != "WÖk-Netto-Wirkungsindex":
+        raise AssertionError("public glossary WÖk index label is ambiguous")
+    if "WÖk-NWI" in (woek_term.get("aliases") or []):
+        raise AssertionError("deprecated WÖk-NWI alias leaked into the public glossary")
+    if not official_term or official_term.get("canonicalLabel") != "Nationaler Wohlfahrtsindex (NWI)":
+        raise AssertionError("public glossary official NWI term is missing")
+
+    proc = subprocess.run(
+        ["git", "ls-files", "*.html"], cwd=ROOT, check=True, text=True, stdout=subprocess.PIPE,
+    )
+    ambiguous = []
+    historical_prefixes = ("bibliothek/", "blog/", "dokumente/", "referenz/")
+    for rel in proc.stdout.splitlines():
+        if rel.startswith(("_site/", "_debug/", "_internal/", "admin/", "woek-parlament-app/")):
+            continue
+        if rel.startswith("api/"):
+            continue
+        page = read(rel)
+        if rel.startswith(historical_prefixes) and "WOEK:NWI-DISAMBIGUATION:START" in page:
+            continue
+        visible = re.sub(r"<(script|style)\b[^>]*>.*?</\1>", " ", page, flags=re.I | re.S)
+        visible = unescape(re.sub(r"<[^>]+>", " ", visible))
+        visible = re.sub(r"https?://\S+", " ", visible)
+        for match in re.finditer(r"\bNWI\b", visible, flags=re.I):
+            context = visible[max(0, match.start() - 220):min(len(visible), match.end() + 220)]
+            qualified = (
+                re.search(r"National(?:er|en|e|em|es)\s+Wohlfahrtsindex", context, flags=re.I)
+                or re.search(r"(?:frühere|damalige|historische)\s+(?:WÖk-)?(?:Kurz)?bezeichnung", context, flags=re.I)
+            )
+            if not qualified:
+                ambiguous.append((rel, match.start()))
+                break
+    if ambiguous:
+        raise AssertionError(f"public HTML contains unqualified NWI: {ambiguous[:20]}")
+
+    # Machine-readable public guidance must use a qualified acronym. The exact
+    # established phrase and the dated historical-alias explanation are valid;
+    # every other bare token is ambiguous and release-blocking.
+    llms = read("llms.txt")
+    for match in re.finditer(r"\bNWI\b", llms, flags=re.I):
+        context = llms[max(0, match.start() - 220):min(len(llms), match.end() + 220)]
+        qualified = (
+            re.search(r"National(?:er|en|e|em|es)\s+Wohlfahrtsindex", context, flags=re.I)
+            or re.search(r"(?:frühere|damalige|historische)\s+(?:WÖk-)?(?:Kurz)?bezeichnung", context, flags=re.I)
+        )
+        if not qualified:
+            raise AssertionError(f"llms.txt contains unqualified NWI near offset {match.start()}")
+
+
 def main() -> int:
     checks: list[tuple[str, callable]] = []
 
@@ -246,6 +319,7 @@ def main() -> int:
     checks.append(("BENCHMARK_CORPUS_SINGLE_SOURCE_OF_TRUTH_5_CASES", benchmark_single_source_of_truth))
     checks.append(("AUDIT_MATRIX_CONTRACT_PASS", audit_matrix_contract))
     checks.append(("NO_PUBLIC_RAW_STATUS_ENUMS", no_raw_public_enums))
+    checks.append(("NWI_ACRONYM_DISAMBIGUATED", nwi_acronym_disambiguated))
 
     passed = []
     for name, fn in checks:

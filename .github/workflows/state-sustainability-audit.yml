@@ -16,6 +16,7 @@ on:
       - 'tools/apply_state_sustainability_wiwi_generator.py'
       - 'tools/apply_state_sustainability_wiwi_scope.py'
       - 'tools/apply_state_sustainability_build_integration.py'
+      - 'tools/apply_nwi_disambiguation.py'
       - 'tools/audit_state_sustainability_architecture.py'
       - 'tools/audit_state_sustainability_architecture_fast.py'
       - 'tools/audit_state_sustainability_support_files.py'
@@ -65,9 +66,13 @@ jobs:
           python tools/apply_state_sustainability_precision.py
           python tools/apply_state_sustainability_public_precision.py
           python tools/apply_state_sustainability_build_integration.py
+          python tools/apply_nwi_disambiguation.py
           node scripts/glossary/build-glossary-registry.mjs
           node scripts/glossary/build-glossary-pages.mjs
           node scripts/glossary/build-glossary-lookup.mjs
+          node scripts/quellenarchiv/build-quellenarchiv-pages.mjs
+          node scripts/quellenarchiv/check-quellenarchiv-quality.mjs
+          python tools/apply_nwi_disambiguation.py
           node scripts/quality/sync-sitemap-indexability.mjs
           npm run build:search
           npm run taxonomy:build
@@ -109,9 +114,13 @@ jobs:
           python tools/apply_state_sustainability_precision.py
           python tools/apply_state_sustainability_public_precision.py
           python tools/apply_state_sustainability_build_integration.py
+          python tools/apply_nwi_disambiguation.py
           node scripts/glossary/build-glossary-registry.mjs
           node scripts/glossary/build-glossary-pages.mjs
           node scripts/glossary/build-glossary-lookup.mjs
+          node scripts/quellenarchiv/build-quellenarchiv-pages.mjs
+          node scripts/quellenarchiv/check-quellenarchiv-quality.mjs
+          python tools/apply_nwi_disambiguation.py
           node scripts/quality/sync-sitemap-indexability.mjs
           npm run build:search
           npm run taxonomy:build

@@ -38,6 +38,10 @@ jobs:
         run: |
           python tools/apply_state_sustainability_wiwi_generator.py
           git diff --exit-code -- scripts/wirkungswissenschaften/build-wirkungswissenschaften-hub.mjs
+      - name: Verify committed NWI disambiguation source
+        run: |
+          python tools/apply_state_sustainability_build_integration.py
+          git diff --exit-code -- scripts/glossary/build-glossary-registry.mjs
       - name: Build static reference data and search
         run: WOEK_PDF_BUILD_MODE=verify npm run build
       - name: Verify #253 state sustainability architecture
