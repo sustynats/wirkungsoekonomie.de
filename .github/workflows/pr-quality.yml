@@ -35,6 +35,9 @@ jobs:
       - name: Install Python build dependencies
         run: python -m pip install --upgrade pip openpyxl pymupdf pypdf reportlab python-docx
 
+      - name: Check Sachsen-Anhalt public count semantics
+        run: node scripts/quality/check-sachsen-anhalt-public-count-semantics.mjs
+
       - name: Build search index
         run: npm run build:search
 
