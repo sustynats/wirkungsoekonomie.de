@@ -1,4 +1,4 @@
-name: Deploy static site
+name: Deploy static site.
 
 env:
   SOURCE_DATE_EPOCH: '1787270400'
@@ -16,7 +16,7 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -38,8 +38,6 @@ jobs:
         run: |
           python tools/apply_state_sustainability_wiwi_generator.py
           git diff --exit-code -- scripts/wirkungswissenschaften/build-wirkungswissenschaften-hub.mjs
-      - name: Build static reference data and search
-        run: WOEK_PDF_BUILD_MODE=verify npm run build
       - name: Verify #253 state sustainability architecture
         run: |
           python tools/audit_state_sustainability_architecture_fast.py --root . --output content/audits/state-sustainability-architecture-url-matrix.json --markdown content/audits/state-sustainability-architecture-url-matrix.md
@@ -48,6 +46,8 @@ jobs:
           python tools/check_state_sustainability_architecture.py
           python tools/check_state_sustainability_wiwi_scope.py
           git diff --exit-code -- content/audits/state-sustainability-architecture-url-matrix.json content/audits/state-sustainability-architecture-url-matrix.md
+      - name: Build static reference data and search
+        run: WOEK_PDF_BUILD_MODE=verify npm run build
       - name: Build Parliament and Institute information pages
         run: npm run build:parlament-info
       - name: Build public deploy artifact
