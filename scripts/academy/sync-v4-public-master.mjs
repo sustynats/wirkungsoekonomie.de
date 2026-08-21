@@ -55,6 +55,11 @@ function reviewStatusAccepted(actual, required) {
   return actual === required || actual.startsWith(`${required}_`);
 }
 
+function offeringStatusAccepted(status) {
+  const value = String(status ?? '');
+  return value.startsWith('FACH_ENDCONTENT_AND_ASSESSMENT_REVIEWED') || value.startsWith('FACH_ENDCONTENT_REVIEWED');
+}
+
 const protectedHeading = /(?:\bquiz\b|prüfungsfragen?|lösungen?(?:\s+mit\s+begründung)?|lösungsschlüssel|musterlösung|answer\s*key|instructor[^\n]*(?:solution|answer|rubric)|dozierenden[^\n]*(?:lösung|korrektur))/i;
 const forbiddenPublicPatterns = [
   /\*\*Lösung(?:en)?:\*\*/i,
@@ -211,8 +216,11 @@ for (const [slug, expectedCount] of Object.entries(lock.offering_projection.expe
   if (!statusEntry || statusEntry.type !== 'blob') throw new Error(`Offering-Status fehlt: ${statusPath}`);
   const statusUrl = `https://raw.githubusercontent.com/${owner}/${repo}/${lock.source_sha}/${statusPath}`;
   const offeringStatus = JSON.parse(await fetchText(statusUrl));
-  if (!offeringStatus.v4_endcontent_ready && !String(offeringStatus.status ?? '').includes('READY')) {
-    throw new Error(`Offering ${slug} ist nicht als v4-Endcontent-ready freigegeben.`);
+  if (offeringStatus.lecture_count !== expectedCount) {
+    throw new Error(`Offering-Status count mismatch ${slug}: ${offeringStatus.lecture_count} statt ${expectedCount}.`);
+  }
+  if (offeringStatus.v4_endcontent_ready !== true && !offeringStatusAccepted(offeringStatus.status)) {
+    throw new Error(`Offering ${slug} ist nicht als fachgeprüfter v4-Endcontent freigegeben: ${offeringStatus.status}.`);
   }
   const offeringId = offeringStatus.offering_id;
   if (!offeringId) throw new Error(`Offering-ID fehlt in ${statusPath}.`);
