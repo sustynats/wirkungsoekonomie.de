@@ -5,6 +5,7 @@ on:
     paths:
       - '**/*.html'
       - 'content/**'
+      - 'tools/apply_state_sustainability_architecture.py'
       - 'tools/audit_state_sustainability_architecture.py'
       - 'sitemap.xml'
       - 'assets/search/**'
@@ -14,18 +15,43 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   audit:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout PR head
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref || github.ref }}
+          fetch-depth: 0
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Apply approved #253 architecture copy
+        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+        run: python tools/apply_state_sustainability_architecture.py
+      - name: Refresh deterministic search artifacts
+        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+        run: npm run build:search
+      - name: Commit deterministic projection outputs to PR head
+        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository
+        run: |
+          if git diff --quiet; then
+            echo 'No projection/search changes to commit.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m 'fix: project approved state sustainability architecture sitewide'
+          git push origin HEAD:${{ github.event.pull_request.head.ref }}
       - name: Generate exhaustive #253 URL/file matrix
         run: python tools/audit_state_sustainability_architecture.py --root . --output artifacts/state-sustainability-architecture-url-matrix.json --markdown artifacts/state-sustainability-architecture-url-matrix.md
       - name: Upload #253 audit matrix
