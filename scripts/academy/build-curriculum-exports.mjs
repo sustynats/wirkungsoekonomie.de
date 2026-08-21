@@ -3,11 +3,12 @@ import path from "node:path";
 
 const ROOT = process.cwd();
 const sourcePath = path.join(ROOT, "content/academy/woek-g-curriculum.json");
-const targetPath = path.join(ROOT, "public/data/woek-g-curriculum.json");
+const activeTargetPath = path.join(ROOT, "public/data/woek-g-curriculum.json");
+const historicalTargetPath = path.join(ROOT, "public/data/woek-g-curriculum-v3.2.json");
 
 const curriculum = JSON.parse(fs.readFileSync(sourcePath, "utf8"));
 
-const publicExport = {
+const legacyExport = {
   schemaVersion: curriculum.schemaVersion,
   curriculumId: curriculum.curriculumId,
   title: curriculum.title,
@@ -29,7 +30,15 @@ const publicExport = {
   })),
 };
 
-fs.mkdirSync(path.dirname(targetPath), { recursive: true });
-fs.writeFileSync(targetPath, `${JSON.stringify(publicExport, null, 2)}\n`);
+fs.mkdirSync(path.dirname(activeTargetPath), { recursive: true });
+fs.writeFileSync(historicalTargetPath, `${JSON.stringify(legacyExport, null, 2)}\n`);
+fs.writeFileSync(activeTargetPath, `${JSON.stringify(legacyExport, null, 2)}\n`);
 
-console.log(`Curriculum-Export geschrieben: ${publicExport.lectures.length} Vorlesungen.`);
+console.log(`Historischer Curriculum-Export v${legacyExport.version} geschrieben: ${legacyExport.lectures.length} Vorlesungen.`);
+
+// Curriculum v4.0 is the active projection. The v4 builder validates the
+// exact sanitized Public-Master manifest and then overwrites only the active
+// public export plus the Academy/Lernen public pages. The historical v3.2
+// export above remains immutable and addressable.
+await import("./build-v4-main-domain.mjs");
+await import("./postprocess-v4-main-domain.mjs");
