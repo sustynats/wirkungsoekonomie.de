@@ -72,6 +72,17 @@ export const statePublicContent: Record<string, StatePublicContent> = {
       repoPath: "data/states/rheinland-pfalz/approved-review-2026-08-18.md",
       caseCount: 4,
     },
+    mandate: {
+      title: "Gemeinsame Verantwortung für ein starkes Rheinland-Pfalz",
+      period: "2026-2031",
+      partners: "CDU + SPD",
+      presentedAt: "nicht separat nachgewiesen",
+      approvedAt: "nicht separat nachgewiesen",
+      signedAt: "nicht byte-stabil nachgewiesen",
+      governmentStart: "18.05.2026",
+      sourceUrl: "https://www.spd-bad-hoenningen.de/dl/Koalitionsvertrag_CDU-SPD_Rheinland-Pfalz_2026-2031.pdf",
+      status: "Alle neun Kapitel sind hochmaterial geprüft. 302 explizit fachlich übergebene Zusagen aus Kapitel 1 und 2 sind fundstellengebunden erfasst; neun deklarierte Einzelrecords sowie die atomare Source-Zerlegung der Kapitel 3 bis 9 bleiben offen.",
+    },
   },
   berlin: {
     review: {

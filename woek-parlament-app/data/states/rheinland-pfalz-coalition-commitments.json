@@ -1,0 +1,2841 @@
+{
+  "schema_version": "woek-state-coalition-commitment-register-2.3",
+  "fach_status": "APPROVED_EXPLICIT_RECORDS_ONLY",
+  "publication_status": "PARTIAL_ATOMIC_SOURCE_TRANSFER_FAIL_CLOSED",
+  "jurisdiction_id": "DE-RP",
+  "document_id": "RLP-KV26-2026-2031",
+  "document_title": "Gemeinsame Verantwortung für ein starkes Rheinland-Pfalz",
+  "source_url": "https://www.spd-bad-hoenningen.de/dl/Koalitionsvertrag_CDU-SPD_Rheinland-Pfalz_2026-2031.pdf",
+  "provenance_status": "PARTY_OFFICIAL_REPUBLISHED_CONTRACT_TEXT",
+  "lifecycle_status": "GOVERNING_MANDATE_DOCUMENT",
+  "signed_final_byte_identity": "NOT_PROVEN",
+  "coverage_scope": "ALL_9_CHAPTERS_HIGH_MATERIALITY_REVIEWED_CHAPTERS_1_2_SOURCE_BOUND_ATOMIC_TRANSFER",
+  "declared_source_record_count": 311,
+  "source_record_count": 302,
+  "atomic_commitment_count": 302,
+  "explicit_deep_split_flags_remaining": 0,
+  "handoff_record_gap_count": 9,
+  "missing_declared_record_ids": [
+    "RLP-KV26-C02-152",
+    "RLP-KV26-C02-153",
+    "RLP-KV26-C02-154",
+    "RLP-KV26-C02-155",
+    "RLP-KV26-C02-156",
+    "RLP-KV26-C02-157",
+    "RLP-KV26-C02-158",
+    "RLP-KV26-C02-159",
+    "RLP-KV26-C02-160"
+  ],
+  "source_record_semantics": "CoalitionCommitment is a mandate/source object, not a GovernmentAction, ImpactCase, implementation, outcome, or recommendation.",
+  "competence_projection": "No impact direction, competence outcome, DNS mapping, or recommendation is inherited from source wording.",
+  "lifecycle_chain": [
+    "ElectionCommitment",
+    "CoalitionCommitment",
+    "GovernmentAction",
+    "LegalAct/Programme/Budget",
+    "Implementation",
+    "Observation/Outcome",
+    "RealityCheck",
+    "Revision"
+  ],
+  "chapter_counts": [
+    {
+      "chapter": 1,
+      "source_records": 151,
+      "atomic_commitments": 151,
+      "declared_atomic_commitments": 151,
+      "transfer_gap": 0
+    },
+    {
+      "chapter": 2,
+      "source_records": 151,
+      "atomic_commitments": 151,
+      "declared_atomic_commitments": 160,
+      "transfer_gap": 9
+    },
+    {
+      "chapter": 3,
+      "source_records": 0,
+      "atomic_commitments": 0,
+      "declared_atomic_commitments": null,
+      "transfer_gap": 0
+    },
+    {
+      "chapter": 4,
+      "source_records": 0,
+      "atomic_commitments": 0,
+      "declared_atomic_commitments": null,
+      "transfer_gap": 0
+    },
+    {
+      "chapter": 5,
+      "source_records": 0,
+      "atomic_commitments": 0,
+      "declared_atomic_commitments": null,
+      "transfer_gap": 0
+    },
+    {
+      "chapter": 6,
+      "source_records": 0,
+      "atomic_commitments": 0,
+      "declared_atomic_commitments": null,
+      "transfer_gap": 0
+    },
+    {
+      "chapter": 7,
+      "source_records": 0,
+      "atomic_commitments": 0,
+      "declared_atomic_commitments": null,
+      "transfer_gap": 0
+    },
+    {
+      "chapter": 8,
+      "source_records": 0,
+      "atomic_commitments": 0,
+      "declared_atomic_commitments": null,
+      "transfer_gap": 0
+    },
+    {
+      "chapter": 9,
+      "source_records": 0,
+      "atomic_commitments": 0,
+      "declared_atomic_commitments": null,
+      "transfer_gap": 0
+    }
+  ],
+  "fach_comment_ids": [
+    5365559792,
+    5366036600,
+    5366049805
+  ],
+  "high_materiality_review_comment_ids": [
+    5360684688,
+    5364063960,
+    5365183054,
+    5365190582,
+    5364857527,
+    5364867192,
+    5364876060,
+    5364884902
+  ],
+  "records": [
+    {
+      "commitment_id": "RLP-KV26-C01-001",
+      "chapter": 1,
+      "commitment_text": "Kita-Beitragsfreiheit beibehalten",
+      "source_locator": "P7 L178-179",
+      "source_classification": "CONTINUATION_POLICY",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-002",
+      "chapter": 1,
+      "commitment_text": "Trägervielfalt in der Kindertagesbetreuung beibehalten",
+      "source_locator": "P7 L178-179",
+      "source_classification": "CONTINUATION_POLICY",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-003",
+      "chapter": 1,
+      "commitment_text": "Finanzierung der Kindertagesbetreuung für Regel- und inklusiven Bereich sichern",
+      "source_locator": "P7 L180-182",
+      "source_classification": "FUNDING_COMMITMENT",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-004",
+      "chapter": 1,
+      "commitment_text": "Kindertagespflege weiterentwickeln",
+      "source_locator": "P7 L182-183",
+      "source_classification": "POLICY_DEVELOPMENT",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-005",
+      "chapter": 1,
+      "commitment_text": "Förderung für Kita-Ausbau und -Sanierung bürokratiearm ausgestalten",
+      "source_locator": "P7 L183-184",
+      "source_classification": "ADMIN_SIMPLIFICATION",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-006",
+      "chapter": 1,
+      "commitment_text": "KiTa-Gesetz auf Erfahrungsbasis 2028 novellieren",
+      "source_locator": "P7 L185-188",
+      "source_classification": "LEGAL_REVIEW_AND_AMENDMENT",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-007",
+      "chapter": 1,
+      "commitment_text": "Leitungsdeputate in KiTa-Novelle überprüfen",
+      "source_locator": "P7 L187-188",
+      "source_classification": "REVIEW_SCOPE",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-008",
+      "chapter": 1,
+      "commitment_text": "Sozialraumbudget in KiTa-Novelle überprüfen",
+      "source_locator": "P7 L187-188",
+      "source_classification": "REVIEW_SCOPE",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-009",
+      "chapter": 1,
+      "commitment_text": "Kita-Sozialarbeit in KiTa-Novelle überprüfen",
+      "source_locator": "P7 L187-188",
+      "source_classification": "REVIEW_SCOPE",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-010",
+      "chapter": 1,
+      "commitment_text": "Übergänge entlang der Bildungsbiografie stärken",
+      "source_locator": "P7 L189",
+      "source_classification": "TRANSITION_POLICY",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-011",
+      "chapter": 1,
+      "commitment_text": "Bildungs- und Erziehungsempfehlungen mit der Kita-Praxis überarbeiten",
+      "source_locator": "P7 L189-191",
+      "source_classification": "POLICY_DEVELOPMENT",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-012",
+      "chapter": 1,
+      "commitment_text": "Letztes Kita-Jahr auf Vorläuferkompetenzen mit verbindlichen Standards fokussieren",
+      "source_locator": "P7 L192-194",
+      "source_classification": "STANDARD_SETTING",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-013",
+      "chapter": 1,
+      "commitment_text": "Verbindliche Teilnahme am inhaltlichen Angebot des letzten Kita-Jahres unter Verfassungsgrundsätzen sicherstellen",
+      "source_locator": "P7-8 L194-196",
+      "source_classification": "PARTICIPATION_REQUIREMENT",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-014",
+      "chapter": 1,
+      "commitment_text": "Alltagsintegrierte Sprachförderung mit zusätzlichen qualifizierten Fachkräften ausbauen",
+      "source_locator": "P8 L199-202",
+      "source_classification": "CAPACITY_AND_SERVICE",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-015",
+      "chapter": 1,
+      "commitment_text": "Netzwerk der Kitas mit Sprachbeauftragten zunächst auf 1.000 Kitas ausweiten",
+      "source_locator": "P8 L202-204",
+      "source_classification": "CAPACITY_SCALE",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-016",
+      "chapter": 1,
+      "commitment_text": "Analysewerkzeug SiAb flächendeckend bereitstellen",
+      "source_locator": "P8 L203-204",
+      "source_classification": "DIGITAL_DIAGNOSTIC_TOOL",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-017",
+      "chapter": 1,
+      "commitment_text": "Verpflichtende Sprachstandserhebung für alle Kinder mit 4,5 Jahren gesetzlich verankern",
+      "source_locator": "P8 L205-206",
+      "source_classification": "DIAGNOSTIC_REQUIREMENT",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-018",
+      "chapter": 1,
+      "commitment_text": "Kinder mit festgestelltem Sprachförderbedarf verbindlich und individuell fördern",
+      "source_locator": "P8 L207-209",
+      "source_classification": "TARGETED_SERVICE",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-019",
+      "chapter": 1,
+      "commitment_text": "Eltern in verbindliche Sprachförderung einbinden",
+      "source_locator": "P8 L208-209",
+      "source_classification": "PARTICIPATION_AND_SUPPORT",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-020",
+      "chapter": 1,
+      "commitment_text": "Bezahlte duale Erzieherausbildung zur Regel weiterentwickeln",
+      "source_locator": "P8 L210-211",
+      "source_classification": "WORKFORCE_PIPELINE",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-021",
+      "chapter": 1,
+      "commitment_text": "Modellprojekt für rhythmisierte Unterrichtsgestaltung an Grundschulen durchführen",
+      "source_locator": "P8 L214-215",
+      "source_classification": "PILOT",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-022",
+      "chapter": 1,
+      "commitment_text": "Grundschulen von Aufgaben entlasten, um Zeit für Pädagogik/Grundkompetenzen zu erhöhen",
+      "source_locator": "P8 L216-218",
+      "source_classification": "ADMIN_RELIEF",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-023",
+      "chapter": 1,
+      "commitment_text": "Grundschulen bedarfsabhängig die Streichung des Fremdsprachenunterrichts ermöglichen",
+      "source_locator": "P8 L218-220",
+      "source_classification": "CURRICULUM_FLEXIBILITY",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-024",
+      "chapter": 1,
+      "commitment_text": "Grundschullehrkräfte stufenweise nach A13 besolden",
+      "source_locator": "P8 L221-223",
+      "source_classification": "PAY_REFORM",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-025",
+      "chapter": 1,
+      "commitment_text": "Gegliedertes Schulsystem auf Leistungsfähigkeit, Durchlässigkeit, Aufstieg und Verlässlichkeit ausrichten",
+      "source_locator": "P8-9 L225-231",
+      "source_classification": "SYSTEM_DESIGN_CONTINUATION",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-026",
+      "chapter": 1,
+      "commitment_text": "Allgemeine und berufliche Bildung als gleichwertig behandeln",
+      "source_locator": "P8 L229-231",
+      "source_classification": "EQUIVALENCE_GOAL",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-027",
+      "chapter": 1,
+      "commitment_text": "Realschulen Plus mit mehr Pädagogik und modernen Unterrichtsmöglichkeiten stärken",
+      "source_locator": "P9 L236-239",
+      "source_classification": "SCHOOL_CAPACITY",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-028",
+      "chapter": 1,
+      "commitment_text": "In Berufsreifeklassen aufwachsend zusätzliche pädagogische Fachkraft bereitstellen",
+      "source_locator": "P9 L237-239",
+      "source_classification": "STAFFING_CAPACITY",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-029",
+      "chapter": 1,
+      "commitment_text": "MINT-Förderung verstärken",
+      "source_locator": "P9 L246-247",
+      "source_classification": "EDUCATION_PRIORITY",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-030",
+      "chapter": 1,
+      "commitment_text": "Recht auf Inklusion bekennen und Förderschulen erhalten",
+      "source_locator": "P9 L248-249",
+      "source_classification": "INCLUSION_AND_SCHOOL_TYPE",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-031",
+      "chapter": 1,
+      "commitment_text": "Dreiklang aus Schwerpunktschulen, Förder-/Beratungszentren und Förderschulen weiterentwickeln",
+      "source_locator": "P9 L249-252",
+      "source_classification": "INCLUSION_SYSTEM_DESIGN",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-032",
+      "chapter": 1,
+      "commitment_text": "Berufsbildende Schulen technisch modernisieren",
+      "source_locator": "P9 L253-260",
+      "source_classification": "TECHNICAL_INFRASTRUCTURE",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-033",
+      "chapter": 1,
+      "commitment_text": "Baulichen Zustand berufsbildender Schulen verbessern",
+      "source_locator": "P9 L258-259",
+      "source_classification": "CAPITAL_INFRASTRUCTURE",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-034",
+      "chapter": 1,
+      "commitment_text": "Digitalen Reifegrad berufsbildender Schulen erhöhen",
+      "source_locator": "P9 L258-259",
+      "source_classification": "DIGITAL_INFRASTRUCTURE",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-035",
+      "chapter": 1,
+      "commitment_text": "Einsatz von Fachpraxislehrkräften an berufsbildenden Schulen verstärken",
+      "source_locator": "P9 L259-260",
+      "source_classification": "STAFFING_MODEL",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-036",
+      "chapter": 1,
+      "commitment_text": "Schule auf selbstbestimmte, demokratische und resiliente Bürgerinnen/Bürger ausrichten",
+      "source_locator": "P9 L263-266",
+      "source_classification": "OUTCOME_GOAL",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-037",
+      "chapter": 1,
+      "commitment_text": "Ausbildungs- und Studierfähigkeit sicherstellen",
+      "source_locator": "P9 L265-266",
+      "source_classification": "OUTCOME_GOAL",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-038",
+      "chapter": 1,
+      "commitment_text": "Leistungsstandards mit Förderung und moderner Lern-/Prüfungskultur verbinden",
+      "source_locator": "P9 L267-270",
+      "source_classification": "STANDARD_AND_PEDAGOGY",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-039",
+      "chapter": 1,
+      "commitment_text": "Einheitliche Lernstandserhebungen nutzen",
+      "source_locator": "P9 L270-271",
+      "source_classification": "ASSESSMENT_TOOL",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-040",
+      "chapter": 1,
+      "commitment_text": "Maßnahme 'Keiner ohne Abschluss' fortführen",
+      "source_locator": "P9 L271-272",
+      "source_classification": "DROPOUT_PREVENTION_CONTINUATION",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-041",
+      "chapter": 1,
+      "commitment_text": "Frühe Berufsorientierung ab Klasse 7 stärken",
+      "source_locator": "P9 L272-273",
+      "source_classification": "TRANSITION_POLICY",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-042",
+      "chapter": 1,
+      "commitment_text": "Verbindliche schulische Sprachförderung für neu zugewanderte Schülerinnen und Schüler fortführen",
+      "source_locator": "P10 L274-278",
+      "source_classification": "INTEGRATION_SERVICE",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-043",
+      "chapter": 1,
+      "commitment_text": "Bedarfsabhängige altersgemischte Kompassklassen einrichten",
+      "source_locator": "P10 L278-282",
+      "source_classification": "TARGETED_CLASS_MODEL",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-044",
+      "chapter": 1,
+      "commitment_text": "Moderne Diagnoseinstrumente zur Sprachförderung einsetzen",
+      "source_locator": "P10 L280-281",
+      "source_classification": "DIAGNOSTIC_TOOL",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-045",
+      "chapter": 1,
+      "commitment_text": "KI-Sprachassistenten als Unterstützungswerkzeuge einsetzen",
+      "source_locator": "P10 L280-282",
+      "source_classification": "AI_ASSISTIVE_TOOL",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-046",
+      "chapter": 1,
+      "commitment_text": "Lehrpläne modernisieren und verschlanken",
+      "source_locator": "P10 L283-284",
+      "source_classification": "CURRICULUM_REFORM",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-047",
+      "chapter": 1,
+      "commitment_text": "Berufsorientierung mit verpflichtenden Praktika/Projekt-/Trainingstagen stärken",
+      "source_locator": "P10 L284-288",
+      "source_classification": "TRANSITION_POLICY",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-048",
+      "chapter": 1,
+      "commitment_text": "Schulbuchausleihe reformieren und entbürokratisieren",
+      "source_locator": "P10 L289",
+      "source_classification": "ADMIN_REFORM",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-049",
+      "chapter": 1,
+      "commitment_text": "Schulbücher und Arbeitshefte kostenlos analog bereitstellen",
+      "source_locator": "P10 L290-293",
+      "source_classification": "MATERIAL_BENEFIT",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-050",
+      "chapter": 1,
+      "commitment_text": "Ab Klasse 5 Schulbücher/Arbeitshefte zusätzlich digital kostenlos schrittweise bereitstellen",
+      "source_locator": "P10 L291-293",
+      "source_classification": "DIGITAL_MATERIAL_BENEFIT",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-051",
+      "chapter": 1,
+      "commitment_text": "Lehrkräftefortbildung bedarfsgerecht auch digital ausbauen",
+      "source_locator": "P10 L294-297",
+      "source_classification": "WORKFORCE_DEVELOPMENT",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-052",
+      "chapter": 1,
+      "commitment_text": "Höheren Praxisanteil im Lehramtsstudium über curriculare Standards prüfen",
+      "source_locator": "P10 L297-300",
+      "source_classification": "REVIEW_COMMITMENT",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-053",
+      "chapter": 1,
+      "commitment_text": "Datengestützte Schul- und Unterrichtsentwicklung ausbauen",
+      "source_locator": "P10 L301-303",
+      "source_classification": "DATA_GOVERNANCE",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-054",
+      "chapter": 1,
+      "commitment_text": "Daten für Gesamtsteuerung zielgerichtet erheben und nutzen",
+      "source_locator": "P10 L303-305",
+      "source_classification": "DATA_USE",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-055",
+      "chapter": 1,
+      "commitment_text": "Daten für individuelle Förderung zielgerichtet nutzen",
+      "source_locator": "P10 L304-305",
+      "source_classification": "DATA_USE",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-056",
+      "chapter": 1,
+      "commitment_text": "Digitale Endgeräte 1:1 ab Klasse 5 bereitstellen",
+      "source_locator": "P10 L306-307",
+      "source_classification": "DIGITAL_INFRASTRUCTURE",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-057",
+      "chapter": 1,
+      "commitment_text": "Digitale Endgeräte 1:4 in Grundschule bereitstellen",
+      "source_locator": "P10 L306-307",
+      "source_classification": "DIGITAL_INFRASTRUCTURE",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-058",
+      "chapter": 1,
+      "commitment_text": "Lehrkräfte mit digitalen Endgeräten ausstatten",
+      "source_locator": "P10 L307",
+      "source_classification": "DIGITAL_INFRASTRUCTURE",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-059",
+      "chapter": 1,
+      "commitment_text": "Praktikables und finanzierbares Leih- oder Kaufmodell für Endgeräte prüfen",
+      "source_locator": "P10 L308-309",
+      "source_classification": "FINANCING_MODEL_REVIEW",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-060",
+      "chapter": 1,
+      "commitment_text": "Schulinnovation über Ermöglichungskultur und Erfahrungen 'Schule der Zukunft' unterstützen",
+      "source_locator": "P10 L310-313",
+      "source_classification": "INNOVATION_GOVERNANCE",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-061",
+      "chapter": 1,
+      "commitment_text": "Medienkompetenz von Kindern und Jugendlichen stärken",
+      "source_locator": "P10 L314-315",
+      "source_classification": "MEDIA_EDUCATION",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-062",
+      "chapter": 1,
+      "commitment_text": "Verbindliche altersgerechte Regel für private Handynutzung im Unterricht setzen",
+      "source_locator": "P10-11 L315-319",
+      "source_classification": "DEVICE_USE_RULE",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-063",
+      "chapter": 1,
+      "commitment_text": "Schulschwimmzentren nach Ludwigshafen/Trier landesweit mit Kommunen ausbauen",
+      "source_locator": "P11 L320-326",
+      "source_classification": "SERVICE_INFRASTRUCTURE",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-064",
+      "chapter": 1,
+      "commitment_text": "Bei fehlenden Wasserflächen innovative Schwimmlösungen wie Container prüfen",
+      "source_locator": "P11 L327-328",
+      "source_classification": "ALTERNATIVE_INFRASTRUCTURE_REVIEW",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-065",
+      "chapter": 1,
+      "commitment_text": "Begonnene Novellierung des Privatschulgesetzes fortsetzen",
+      "source_locator": "P11 L329-331",
+      "source_classification": "LEGAL_CONTINUATION",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-066",
+      "chapter": 1,
+      "commitment_text": "ADD reformieren zugunsten Schulentwicklung und -beratung",
+      "source_locator": "P11 L332-334",
+      "source_classification": "ADMIN_REFORM",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-067",
+      "chapter": 1,
+      "commitment_text": "ADD für schulbezogene Dienstleistungen reformieren",
+      "source_locator": "P11 L332-334",
+      "source_classification": "ADMIN_SERVICE_REFORM",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-068",
+      "chapter": 1,
+      "commitment_text": "Verbindliche kreisübergreifende Schulentwicklungsplanung mit Sozialraumbezug einführen",
+      "source_locator": "P11 L335-336",
+      "source_classification": "PLANNING_GOVERNANCE",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-069",
+      "chapter": 1,
+      "commitment_text": "Sechszügigkeit von IGS bedarfsgerecht ermöglichen",
+      "source_locator": "P11 L337-338",
+      "source_classification": "SCHOOL_STRUCTURE_FLEXIBILITY",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-070",
+      "chapter": 1,
+      "commitment_text": "Bedarfsgerecht jährlich zusätzliche Lehrkräftestellen schaffen",
+      "source_locator": "P11 L344-345",
+      "source_classification": "STAFFING_CONTINUATION",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-071",
+      "chapter": 1,
+      "commitment_text": "Null-Toleranz-Linie bei Gewalt und Bedrohungen an Schulen fortführen",
+      "source_locator": "P11 L346-349",
+      "source_classification": "SAFETY_ENFORCEMENT",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-072",
+      "chapter": 1,
+      "commitment_text": "Antidiskriminierungs-/Schulklimaarbeit über 'Schule ohne Rassismus – Schule mit Courage' unterstützen",
+      "source_locator": "P11 L349-354",
+      "source_classification": "CIVIC_EDUCATION_RELATIONSHIP",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-073",
+      "chapter": 1,
+      "commitment_text": "Wirksame Ordnungsmaßnahmen an Schulen einsetzen",
+      "source_locator": "P11 L354-355",
+      "source_classification": "DISCIPLINARY_POLICY",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-074",
+      "chapter": 1,
+      "commitment_text": "Klare Notfallkonzepte an Schulen vorhalten",
+      "source_locator": "P11 L354-355",
+      "source_classification": "EMERGENCY_PREPAREDNESS",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-075",
+      "chapter": 1,
+      "commitment_text": "Landes-Task-Force für akute Problemlagen an Schulen nutzen",
+      "source_locator": "P11-12 L355-357",
+      "source_classification": "CRISIS_RESPONSE_CAPABILITY",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-076",
+      "chapter": 1,
+      "commitment_text": "Vertrauensstelle am Pädagogischen Landesinstitut als unabhängige/vertrauliche Anlaufstelle erhalten",
+      "source_locator": "P12 L358-359",
+      "source_classification": "INDEPENDENT_SUPPORT_SERVICE",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-077",
+      "chapter": 1,
+      "commitment_text": "Hochschulen/Forschungseinrichtungen mit verlässlichen Förder-, Finanzierungs- und Planungsbedingungen unterstützen",
+      "source_locator": "P12 L362-368",
+      "source_classification": "RESEARCH_FRAMEWORK",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-078",
+      "chapter": 1,
+      "commitment_text": "Wissenschaftsfreiheit ausdrücklich sichern",
+      "source_locator": "P12 L368-369",
+      "source_classification": "RIGHTS_SAFEGUARD",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-079",
+      "chapter": 1,
+      "commitment_text": "Grundlagenforschung über breites Fächerspektrum sichern",
+      "source_locator": "P12 L369-372",
+      "source_classification": "RESEARCH_PRIORITY",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-080",
+      "chapter": 1,
+      "commitment_text": "Antisemitismus, Gewalt und Diskriminierung an Hochschulen bekämpfen",
+      "source_locator": "P12 L372-373",
+      "source_classification": "RIGHTS_AND_SAFETY_GOAL",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-081",
+      "chapter": 1,
+      "commitment_text": "Moderne und transparente Hochschulfinanzierung zur Stärkung von Hochschulautonomie einführen",
+      "source_locator": "P12 L376-380",
+      "source_classification": "FUNDING_GOVERNANCE",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-082",
+      "chapter": 1,
+      "commitment_text": "Hochschulprofile und regionale Leuchttürme gezielt stärken",
+      "source_locator": "P12 L379-380",
+      "source_classification": "PROFILE_POLICY",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-083",
+      "chapter": 1,
+      "commitment_text": "Nachhaltigkeit in Hochschulentwicklung besonders fokussieren",
+      "source_locator": "P12 L380-381",
+      "source_classification": "SUSTAINABILITY_GOVERNANCE",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-084",
+      "chapter": 1,
+      "commitment_text": "Leitlinien 'Gute Arbeit' und moderne Personalstrukturen weiterentwickeln",
+      "source_locator": "P12 L381-384",
+      "source_classification": "EMPLOYMENT_GOVERNANCE",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-085",
+      "chapter": 1,
+      "commitment_text": "Gleichstellungsmaßnahmen an Hochschulen weiterentwickeln",
+      "source_locator": "P12 L384-386",
+      "source_classification": "EQUALITY_POLICY",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-086",
+      "chapter": 1,
+      "commitment_text": "Auf Antrag bis Legislaturende Globalhaushalte an Hochschulen einführen",
+      "source_locator": "P12 L387-389",
+      "source_classification": "BUDGET_AUTONOMY",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-087",
+      "chapter": 1,
+      "commitment_text": "Mehrjährige Zielvereinbarungen mit Hochschulen einführen",
+      "source_locator": "P12 L388-390",
+      "source_classification": "PERFORMANCE_AGREEMENT",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-088",
+      "chapter": 1,
+      "commitment_text": "Bürokratische Berichts- und Antragspflichten für Hochschulen abbauen",
+      "source_locator": "P12 L390-391",
+      "source_classification": "ADMIN_RELIEF",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-089",
+      "chapter": 1,
+      "commitment_text": "Mehrjähriges Hochschulbauprogramm mit transparenter Maßnahmenübersicht aufstellen",
+      "source_locator": "P12 L392-396",
+      "source_classification": "CAPITAL_PLANNING",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-090",
+      "chapter": 1,
+      "commitment_text": "Wissens- und Technologietransfer in innovative/nachhaltige Produkte, Verfahren und Dienstleistungen stärken",
+      "source_locator": "P13 L399-403",
+      "source_classification": "TRANSFER_POLICY",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-091",
+      "chapter": 1,
+      "commitment_text": "Anteil des Landes an DFG-, EU-, Exzellenz- und sonstigen Drittmitteln erhöhen",
+      "source_locator": "P13 L404-408",
+      "source_classification": "RESEARCH_FUNDING_GOAL",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-092",
+      "chapter": 1,
+      "commitment_text": "Landesforschungsinitiative wettbewerblich an mögliche Teilnahme an Förderverfahren koppeln",
+      "source_locator": "P13 L408-411",
+      "source_classification": "RESEARCH_FUNDING_STRATEGY",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-093",
+      "chapter": 1,
+      "commitment_text": "Seed-Mittel für Vorarbeiten zu größeren Drittmittelanträgen bereitstellen",
+      "source_locator": "P13 L411-413",
+      "source_classification": "SEED_FUNDING",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-094",
+      "chapter": 1,
+      "commitment_text": "Erfolgreiche Drittmitteleinwerbung belohnen",
+      "source_locator": "P13 L413-414",
+      "source_classification": "INCENTIVE_DESIGN",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-095",
+      "chapter": 1,
+      "commitment_text": "Hightech-Agenda Rheinland-Pfalz zu Biotech/Life Sciences/KI/Nachhaltigkeit entwickeln",
+      "source_locator": "P13 L415-419",
+      "source_classification": "STRATEGY_DEVELOPMENT",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-096",
+      "chapter": 1,
+      "commitment_text": "Forschungskooperationen mit nationalen und internationalen Unternehmen ausbauen",
+      "source_locator": "P13 L419-421",
+      "source_classification": "RESEARCH_COOPERATION",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-097",
+      "chapter": 1,
+      "commitment_text": "Internationalisierungsstrategien in Forschung, Lehre und Studierendenaustausch unterstützen",
+      "source_locator": "P13 L421-422",
+      "source_classification": "RESEARCH_INTERNATIONALIZATION",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-098",
+      "chapter": 1,
+      "commitment_text": "Biotechnologie-/Life-Science-Profil und Standort Mainz/RLP international stärken",
+      "source_locator": "P13 L423-426",
+      "source_classification": "CLUSTER_POLICY",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-099",
+      "chapter": 1,
+      "commitment_text": "Gründungskultur über Hochschul-Gründungsbüros stärken",
+      "source_locator": "P13 L427-429",
+      "source_classification": "ENTREPRENEURSHIP_SUPPORT",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-100",
+      "chapter": 1,
+      "commitment_text": "Wissens-/Technologietransfer entlang Wertschöpfungskette über Scouting-Hubs verbessern",
+      "source_locator": "P13 L428-430",
+      "source_classification": "TRANSFER_INFRASTRUCTURE",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-101",
+      "chapter": 1,
+      "commitment_text": "Gründungskompetenz im Studium stärken",
+      "source_locator": "P13 L430-431",
+      "source_classification": "ENTREPRENEURSHIP_EDUCATION",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-102",
+      "chapter": 1,
+      "commitment_text": "Gezielte Förderangebote insbesondere für Gründerinnen weiterentwickeln",
+      "source_locator": "P13 L430-431",
+      "source_classification": "ENTREPRENEURSHIP_FUNDING",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-103",
+      "chapter": 1,
+      "commitment_text": "Studierendenwerke und Leistungsportfolio Wohnen/Mensen/Psychologie/Soziales sichern",
+      "source_locator": "P13-14 L434-439",
+      "source_classification": "STUDENT_SUPPORT",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-104",
+      "chapter": 1,
+      "commitment_text": "BAföG-Beantragung und -Vergabe durch angepasste Aufgaben/Verwaltungsstrukturen vereinfachen und beschleunigen",
+      "source_locator": "P14 L439-441",
+      "source_classification": "ADMIN_REFORM",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-105",
+      "chapter": 1,
+      "commitment_text": "Studienabbruchberatung durch Kammern, Arbeitsagentur und lokale Unternehmen vernetzen",
+      "source_locator": "P14 L441-444",
+      "source_classification": "COUNSELING_NETWORK",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-106",
+      "chapter": 1,
+      "commitment_text": "Studentische Vizepräsidentschaft bei überzeugenden Konzepten über Experimentierklausel ermöglichen",
+      "source_locator": "P14 L445-447",
+      "source_classification": "PARTICIPATION_GOVERNANCE",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-107",
+      "chapter": 1,
+      "commitment_text": "Moderne Lern- und Lehrumgebungen schaffen",
+      "source_locator": "P14 L447-448",
+      "source_classification": "LEARNING_INFRASTRUCTURE",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-108",
+      "chapter": 1,
+      "commitment_text": "Barrierefreiheit und Unterstützung für Studierende mit Behinderung/chronischer Krankheit stärken",
+      "source_locator": "P14 L449-450",
+      "source_classification": "ACCESSIBILITY_SUPPORT",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-109",
+      "chapter": 1,
+      "commitment_text": "Repräsentation von Frauen im Wissenschaftsbetrieb erhöhen",
+      "source_locator": "P14 L453-457",
+      "source_classification": "EQUALITY_GOAL",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-110",
+      "chapter": 1,
+      "commitment_text": "Karriereförderprogramme für Frauen an Hochschulen fortsetzen",
+      "source_locator": "P14 L458-459",
+      "source_classification": "EQUALITY_PROGRAM",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-111",
+      "chapter": 1,
+      "commitment_text": "Duale Studiengänge nachfrageorientiert ausbauen und sichtbarer machen",
+      "source_locator": "P14 L462-464",
+      "source_classification": "DUAL_STUDY_EXPANSION",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-112",
+      "chapter": 1,
+      "commitment_text": "Digitale Prüfungsmöglichkeiten ausbauen",
+      "source_locator": "P14 L464",
+      "source_classification": "DIGITAL_EXAMS",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-113",
+      "chapter": 1,
+      "commitment_text": "Schwerpunktprofessuren an Hochschulen für angewandte Wissenschaften ausbauen",
+      "source_locator": "P14 L465-466",
+      "source_classification": "RESEARCH_CAPACITY",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-114",
+      "chapter": 1,
+      "commitment_text": "Lebenslanges Lernen und einzelne hochschulische Qualifizierungsangebote weiterentwickeln",
+      "source_locator": "P14 L467-469",
+      "source_classification": "LIFELONG_LEARNING",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-115",
+      "chapter": 1,
+      "commitment_text": "Lebenswissenschaften und Gesundheitsforschung stärken",
+      "source_locator": "P14 L472-476",
+      "source_classification": "HEALTH_RESEARCH",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-116",
+      "chapter": 1,
+      "commitment_text": "Translation von Grundlagen- zu klinischer Forschung sowie Innovation in Prävention/Therapie stärken",
+      "source_locator": "P14 L474-477",
+      "source_classification": "TRANSLATIONAL_RESEARCH",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-117",
+      "chapter": 1,
+      "commitment_text": "Zweistandort-Lösung für bauliche/infrastrukturelle Erneuerung und Krisenresilienz der Universitätsmedizin unterstützen",
+      "source_locator": "P14-15 L477-479",
+      "source_classification": "HEALTH_INFRASTRUCTURE",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-118",
+      "chapter": 1,
+      "commitment_text": "Konsolidierungsprozess 'Neustart@UM' zur wirtschaftlichen Nachhaltigkeit fortführen",
+      "source_locator": "P15 L479-481",
+      "source_classification": "FINANCIAL_CONSOLIDATION",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-119",
+      "chapter": 1,
+      "commitment_text": "Staatstheater Mainz sowie Theater Trier/Koblenz/Pfalztheater weiter stärken",
+      "source_locator": "P15 L492-493",
+      "source_classification": "CULTURAL_INSTITUTIONS_SUPPORT",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-120",
+      "chapter": 1,
+      "commitment_text": "Landesweite Vielfalt kultureller Angebote bewahren und stärken",
+      "source_locator": "P15 L498-499",
+      "source_classification": "CULTURAL_ACCESS_GOAL",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-121",
+      "chapter": 1,
+      "commitment_text": "Kulturfördergesetz mit grundsätzlichem Unterstützungsanspruch schaffen",
+      "source_locator": "P15 L502-504",
+      "source_classification": "LEGAL_FUNDING_FRAMEWORK",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-122",
+      "chapter": 1,
+      "commitment_text": "Über- und mehrjährige Kulturförderungen prüfen",
+      "source_locator": "P15 L505-506",
+      "source_classification": "MULTIYEAR_FUNDING_REVIEW",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-123",
+      "chapter": 1,
+      "commitment_text": "Beantragung und Mittelvergabe in Kulturförderung vereinfachen und beschleunigen",
+      "source_locator": "P15 L507",
+      "source_classification": "ADMIN_SIMPLIFICATION",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-124",
+      "chapter": 1,
+      "commitment_text": "Vereinfachte Verwendungsnachweise für Kleinstförderungen einführen",
+      "source_locator": "P15 L508-509",
+      "source_classification": "ADMIN_SIMPLIFICATION",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-125",
+      "chapter": 1,
+      "commitment_text": "Reform der Künstlersozialkasse auf Bundesebene unterstützen",
+      "source_locator": "P15 L510-512",
+      "source_classification": "FEDERAL_ADVOCACY",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-126",
+      "chapter": 1,
+      "commitment_text": "Honoraruntergrenzen landesseitig schrittweise anheben",
+      "source_locator": "P15 L512-513",
+      "source_classification": "LABOR_STANDARD",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-127",
+      "chapter": 1,
+      "commitment_text": "Neuberechnung GEMA-relevanter Flächenwerte auf Bundesebene unterstützen",
+      "source_locator": "P15 L514-516",
+      "source_classification": "FEDERAL_ADVOCACY",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-128",
+      "chapter": 1,
+      "commitment_text": "Ressortübergreifenden Pauschalvertrag zur Finanzierung ehrenamtlicher Veranstaltungsaktivitäten schaffen",
+      "source_locator": "P15-16 L516-519",
+      "source_classification": "CROSS_MINISTRY_FUNDING",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-129",
+      "chapter": 1,
+      "commitment_text": "Kommunale kulturelle Bildungslandschaft mit Kitas/Schulen vernetzen und unterstützen",
+      "source_locator": "P16 L522-524",
+      "source_classification": "CULTURAL_EDUCATION_NETWORK",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-130",
+      "chapter": 1,
+      "commitment_text": "Zugang zu kultureller Bildung für Kinder/Jugendliche aller sozialen Gruppen ausbauen",
+      "source_locator": "P16 L524-527",
+      "source_classification": "CULTURAL_ACCESS_POLICY",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-131",
+      "chapter": 1,
+      "commitment_text": "Kostenlosen U18-Eintritt in Landesmuseen ermöglichen",
+      "source_locator": "P16 L526-527",
+      "source_classification": "ACCESS_BENEFIT",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-132",
+      "chapter": 1,
+      "commitment_text": "Musikschulen stärker unterstützen",
+      "source_locator": "P16 L526-527",
+      "source_classification": "CULTURAL_EDUCATION_FUNDING",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-133",
+      "chapter": 1,
+      "commitment_text": "Landeszentrale für politische Bildung durch vertiefte Aufgabenbeschreibung stärken",
+      "source_locator": "P16 L528-532",
+      "source_classification": "DEMOCRACY_INFRASTRUCTURE",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-134",
+      "chapter": 1,
+      "commitment_text": "Landeszentrale für politische Bildung durch parlamentarisch mandatierte Rechtsgrundlage absichern",
+      "source_locator": "P16 L530-532",
+      "source_classification": "LEGAL_GOVERNANCE",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-135",
+      "chapter": 1,
+      "commitment_text": "Jüdisches Leben in Rheinland-Pfalz fördern",
+      "source_locator": "P16 L533-535",
+      "source_classification": "ANTI_ANTISEMITISM_AND_CULTURAL_SUPPORT",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-136",
+      "chapter": 1,
+      "commitment_text": "Erinnerungskultur ausbauen",
+      "source_locator": "P16 L534-537",
+      "source_classification": "MEMORY_POLICY",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-137",
+      "chapter": 1,
+      "commitment_text": "Gedenkstättenbesuche zum Bestandteil des Unterrichtsangebots machen",
+      "source_locator": "P16 L536-537",
+      "source_classification": "EDUCATION_REQUIREMENT",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-138",
+      "chapter": 1,
+      "commitment_text": "SchUM-Stätten erhalten und wertschätzen",
+      "source_locator": "P16 L538-544",
+      "source_classification": "HERITAGE_PROTECTION",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-139",
+      "chapter": 1,
+      "commitment_text": "UNESCO- und immaterielles Kulturerbe erhalten und stärken",
+      "source_locator": "P16 L545-547",
+      "source_classification": "HERITAGE_PROTECTION",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-140",
+      "chapter": 1,
+      "commitment_text": "Kulturerbe sichtbarer und digital zugänglich machen",
+      "source_locator": "P16 L546-547",
+      "source_classification": "DIGITAL_HERITAGE_ACCESS",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-141",
+      "chapter": 1,
+      "commitment_text": "Dritte Orte der Begegnung und des kulturellen Austauschs fördern",
+      "source_locator": "P16 L548-550",
+      "source_classification": "CULTURAL_INFRASTRUCTURE",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-142",
+      "chapter": 1,
+      "commitment_text": "Mit Rheinland-Pfalz-Plan landesweites Netz von Probemöglichkeiten für freie Theatergruppen aufbauen",
+      "source_locator": "P16 L550-551",
+      "source_classification": "CAPITAL_PROGRAM_CHILD",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-143",
+      "chapter": 1,
+      "commitment_text": "Freie Szene stärker fördern",
+      "source_locator": "P16 L552-553",
+      "source_classification": "CULTURAL_FUNDING",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-144",
+      "chapter": 1,
+      "commitment_text": "Kinoprogrammpreis weiter stärken",
+      "source_locator": "P16 L552-553",
+      "source_classification": "CULTURAL_PROGRAM",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-145",
+      "chapter": 1,
+      "commitment_text": "Programm 'Zukunft durch Kultur' weiter stärken",
+      "source_locator": "P16 L552-553",
+      "source_classification": "CULTURAL_PROGRAM",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-146",
+      "chapter": 1,
+      "commitment_text": "Historische Landesausstellungen in Landesmuseen weiterentwickeln",
+      "source_locator": "P16 L554-555",
+      "source_classification": "CULTURAL_PROGRAM",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-147",
+      "chapter": 1,
+      "commitment_text": "Kulturdenkmäler im Landesbesitz dauerhaft erhalten",
+      "source_locator": "P16-17 L556-558",
+      "source_classification": "HERITAGE_MAINTENANCE",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-148",
+      "chapter": 1,
+      "commitment_text": "Notwendige Bau- und Sanierungsmaßnahmen an Kulturdenkmälern fortsetzen",
+      "source_locator": "P16-17 L556-558",
+      "source_classification": "CAPITAL_MAINTENANCE",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-149",
+      "chapter": 1,
+      "commitment_text": "Denkmalschutzgesetz modernisieren und entbürokratisieren",
+      "source_locator": "P17 L557-558",
+      "source_classification": "LEGAL_REFORM",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-150",
+      "chapter": 1,
+      "commitment_text": "Konsequente Restitution von Kulturgütern fortführen",
+      "source_locator": "P17 L559-560",
+      "source_classification": "RESTITUTION_POLICY",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C01-151",
+      "chapter": 1,
+      "commitment_text": "Dialogformat für funktionelle Umwidmung kirchlicher Bauten mit allen betroffenen Perspektiven entwickeln",
+      "source_locator": "P17 L561-564",
+      "source_classification": "PARTICIPATORY_REUSE_GOVERNANCE",
+      "fach_comment_id": 5365559792,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-001",
+      "chapter": 2,
+      "commitment_text": "Förderangebote bündeln und bestehende Programme straffen.",
+      "source_locator": "P18 L588-590",
+      "source_classification": "FUNDING_REFORM",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-002",
+      "chapter": 2,
+      "commitment_text": "Zentrales Ansiedlungsmanagement/Standortgesellschaft mit landesweiter Begleitung aus einer Hand schaffen.",
+      "source_locator": "P18 L590-595",
+      "source_classification": "INVESTMENT_ONE_STOP_GOVERNANCE",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-003",
+      "chapter": 2,
+      "commitment_text": "Geeignete Gewerbe-/Industrieflächen für Ansiedlung, Erhalt und Modernisierung bevorraten.",
+      "source_locator": "P18 L596-599",
+      "source_classification": "INDUSTRIAL_LAND_BANKING",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-004",
+      "chapter": 2,
+      "commitment_text": "Gewerbe-Turboflächen und weitere Potenzialflächen landesweit bereitstellen.",
+      "source_locator": "P18 L599-601",
+      "source_classification": "ACCELERATED_SITE_PLANNING",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-005",
+      "chapter": 2,
+      "commitment_text": "Landesplanung zur schnelleren Flächenplanung/-nutzung weiterentwickeln unter Kommunalinteressen.",
+      "source_locator": "P18 L601-602",
+      "source_classification": "STATE_SPATIAL_PLANNING_REFORM",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-006",
+      "chapter": 2,
+      "commitment_text": "Interkommunale Zusammenarbeit durch geeignete Anreize stärken.",
+      "source_locator": "P18-19 L603",
+      "source_classification": "INTERMUNICIPAL_INCENTIVE",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-007",
+      "chapter": 2,
+      "commitment_text": "Neue Leitmärkte/Leittechnologien unter Nutzung von Biotech-, IT- und KI-Kompetenzen erschließen.",
+      "source_locator": "P19 L609-610",
+      "source_classification": "LEAD_MARKET_POLICY",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-008",
+      "chapter": 2,
+      "commitment_text": "Industrie- und Innovationspolitik enger verzahnen, Wissenschaft/Wirtschaft vernetzen.",
+      "source_locator": "P19 L611-615",
+      "source_classification": "INDUSTRY_RESEARCH_TRANSFER",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-009",
+      "chapter": 2,
+      "commitment_text": "Auf Bundes-/EU-Ebene für niedrigere Energiekosten energieintensiver Unternehmen eintreten.",
+      "source_locator": "P19 L616-617",
+      "source_classification": "FEDERAL_EU_ADVOCACY_ENERGY_COSTS",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-010",
+      "chapter": 2,
+      "commitment_text": "Sicherheits-/Verteidigungsindustrie und Dual-Use über Förderung, Vernetzung, Kooperation in bestehenden Programmen erschließen.",
+      "source_locator": "P19 L618-621",
+      "source_classification": "DUAL_USE_INDUSTRY_SUPPORT",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-011",
+      "chapter": 2,
+      "commitment_text": "Technische/wirtschaftliche Machbarkeit von Kohlenstoffmanagement/CCS/CCU für unvermeidbare Restemissionen prüfen.",
+      "source_locator": "P19 L622-625",
+      "source_classification": "CCS_CCU_FEASIBILITY_STUDY",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-012",
+      "chapter": 2,
+      "commitment_text": "Wasserstoffstrategie des Landes weiterentwickeln mit Ziel verlässlicher klimafreundlicher Versorgung energieintensiver Industrie.",
+      "source_locator": "P19 L625-629",
+      "source_classification": "HYDROGEN_STRATEGY",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-013",
+      "chapter": 2,
+      "commitment_text": "Wasserstoffkoordinierungsstelle stärken und in strategische Steuerung einbinden.",
+      "source_locator": "P19 L629-630",
+      "source_classification": "HYDROGEN_GOVERNANCE",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-014",
+      "chapter": 2,
+      "commitment_text": "Gesetzliche Überprüfung des 2040-Klimaneutralitätsziels von 2031 auf 2028 vorziehen.",
+      "source_locator": "P19 L631-633",
+      "source_classification": "CLIMATE_LAW_REVIEW_TIMING",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-015",
+      "chapter": 2,
+      "commitment_text": "Gesetzlich vorgesehene Anpassung vornehmen, falls Review 2040 als nicht erreichbar bewertet.",
+      "source_locator": "P19 L634-635",
+      "source_classification": "CONDITIONAL_CLIMATE_LAW_ADJUSTMENT",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-016",
+      "chapter": 2,
+      "commitment_text": "Entlastungsmechanismus des Bildungszeitgesetzes auf alle Branchen/Unternehmensgrößen ausweiten und erhöhen.",
+      "source_locator": "P19 L636-639",
+      "source_classification": "EDUCATION_LEAVE_RELIEF_REFORM",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-017",
+      "chapter": 2,
+      "commitment_text": "Bestehendes Förder-/Unterstützungsangebot für KMU wirkungsorientiert überprüfen und auf Modernisierung/Fachkräfte/Vertrieb/Management ausrichten.",
+      "source_locator": "P19-20 L642-651",
+      "source_classification": "SME_SUPPORT_REVIEW",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-018",
+      "chapter": 2,
+      "commitment_text": "Gang in die Selbstständigkeit durch Vernetzung und gezielte Förderinstrumente unterstützen.",
+      "source_locator": "P20 L652-655",
+      "source_classification": "ENTREPRENEURSHIP_SUPPORT",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-019",
+      "chapter": 2,
+      "commitment_text": "Betriebsnachfolgen durch Vernetzung/Förderinstrumente unterstützen.",
+      "source_locator": "P20 L652-655",
+      "source_classification": "BUSINESS_SUCCESSION_SUPPORT",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-020",
+      "chapter": 2,
+      "commitment_text": "Praktikable Übergangslösungen für betriebsgebundene Konzessionen/Lizenzen/Genehmigungen bei Betriebsübergängen schaffen.",
+      "source_locator": "P20 L655-658",
+      "source_classification": "LICENSE_TRANSFER_REFORM",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-021",
+      "chapter": 2,
+      "commitment_text": "Kommunen die Gestaltung multifunktionaler, attraktiver Innenstadt-/Ortsräume ermöglichen.",
+      "source_locator": "P20 L659-663",
+      "source_classification": "INNER_CITY_MUNICIPAL_ENABLEMENT",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-022",
+      "chapter": 2,
+      "commitment_text": "Zwei der vier verkaufsoffenen Sonntage künftig ohne besonderen Anlass ermöglichen.",
+      "source_locator": "P20 L664-667",
+      "source_classification": "SUNDAY_OPENING_REFORM",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-023",
+      "chapter": 2,
+      "commitment_text": "Verkaufsoffenen Sonntag am ersten Dezemberwochenende ermöglichen.",
+      "source_locator": "P20 L667-668",
+      "source_classification": "SUNDAY_OPENING_DECEMBER",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-024",
+      "chapter": 2,
+      "commitment_text": "Ausnahmen im Ladenöffnungsgesetz für automatisierte Verkaufsformen schaffen.",
+      "source_locator": "P20 L668-669",
+      "source_classification": "AUTOMATED_RETAIL_EXCEPTION",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-025",
+      "chapter": 2,
+      "commitment_text": "Pilotprojekte für neue Wohnraumkapazitäten für Auszubildende prüfen.",
+      "source_locator": "P20 L670-672",
+      "source_classification": "TRAINEE_HOUSING_PILOT",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-026",
+      "chapter": 2,
+      "commitment_text": "Kreislaufwirtschaft stärken und Stoffkreisläufe konsequent schließen.",
+      "source_locator": "P20 L673-675",
+      "source_classification": "CIRCULAR_ECONOMY_POLICY",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-027",
+      "chapter": 2,
+      "commitment_text": "Überarbeitung der Ersatzbaustoffverordnung auf Bundesebene unterstützen.",
+      "source_locator": "P20 L675-676",
+      "source_classification": "FEDERAL_ADVOCACY_REPLACEMENT_BUILDING_MATERIALS",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-028",
+      "chapter": 2,
+      "commitment_text": "Innovative Recyclingverfahren entlang der Wertschöpfungskette einschließlich chemischem Recycling anerkennen/fördern.",
+      "source_locator": "P20 L676-678",
+      "source_classification": "RECYCLING_INNOVATION_SUPPORT",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-029",
+      "chapter": 2,
+      "commitment_text": "Aufgabengerechte Anpassung der Zuständigkeiten nach BImSchG prüfen.",
+      "source_locator": "P20 L678-680",
+      "source_classification": "COMPETENCE_REVIEW_BIMSCHG",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-030",
+      "chapter": 2,
+      "commitment_text": "Auslaufende Fachkräftesicherungsstrategie evaluieren und weiterentwickeln.",
+      "source_locator": "P20 L683-685",
+      "source_classification": "SKILLED_WORKFORCE_STRATEGY_REVIEW",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-031",
+      "chapter": 2,
+      "commitment_text": "Modernes Kampagnen-/Handlungskonzept mit Arbeitgeber-/Arbeitnehmervertretungen entwickeln.",
+      "source_locator": "P20 L685-688",
+      "source_classification": "SOCIAL_PARTNER_CAMPAIGN",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-032",
+      "chapter": 2,
+      "commitment_text": "Inländische Fachkräftepotenziale besser ausschöpfen.",
+      "source_locator": "P20-21 L689-691",
+      "source_classification": "DOMESTIC_WORKFORCE_POTENTIAL",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-033",
+      "chapter": 2,
+      "commitment_text": "Berufliche Integration internationaler Fachkräfte als eigener Strategiepfad stärken.",
+      "source_locator": "P20-21 L689-691",
+      "source_classification": "INTERNATIONAL_WORKFORCE_INTEGRATION",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-034",
+      "chapter": 2,
+      "commitment_text": "Frühzeitige individuelle Berufsorientierung an allen weiterführenden Schulen stärken.",
+      "source_locator": "P21 L692-696",
+      "source_classification": "SCHOOL_CAREER_ORIENTATION",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-035",
+      "chapter": 2,
+      "commitment_text": "Förderung überbetrieblicher Bildungsstätten/Lehrlingsunterweisung auf hohem Niveau fortführen.",
+      "source_locator": "P21 L697-698",
+      "source_classification": "VOCATIONAL_TRAINING_FUNDING_CONTINUATION",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-036",
+      "chapter": 2,
+      "commitment_text": "Kostenfreien Meisterabschluss unter Berücksichtigung Bundesförderung anstreben.",
+      "source_locator": "P21 L698-700",
+      "source_classification": "MASTER_CRAFTSMAN_COST_RELIEF",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-037",
+      "chapter": 2,
+      "commitment_text": "Anerkennungsverfahren für internationale Fachkräfte beschleunigen/vereinfachen.",
+      "source_locator": "P21 L701-703",
+      "source_classification": "QUALIFICATION_RECOGNITION_REFORM",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-038",
+      "chapter": 2,
+      "commitment_text": "Welcome-Center mit Kammern weiterentwickeln.",
+      "source_locator": "P21 L702-703",
+      "source_classification": "WELCOME_CENTER_DEVELOPMENT",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-039",
+      "chapter": 2,
+      "commitment_text": "Sprachförderung eng mit Arbeitsmarktzugang verzahnen.",
+      "source_locator": "P21 L703-706",
+      "source_classification": "LANGUAGE_TO_LABOR_MARKET_LINK",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-040",
+      "chapter": 2,
+      "commitment_text": "Wirtschaftsstandortmarke „Rheinland-Pfalz Gold“ fortführen.",
+      "source_locator": "P21 L719-720",
+      "source_classification": "LOCATION_BRAND_CONTINUATION",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-041",
+      "chapter": 2,
+      "commitment_text": "Aktuelle Tourismusstrategie evaluieren, weiterentwickeln und umsetzen.",
+      "source_locator": "P21 L721-726",
+      "source_classification": "TOURISM_STRATEGY_REVIEW",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-042",
+      "chapter": 2,
+      "commitment_text": "Weitere Tourismusstärkung, u.a. Förderquoten, prüfen.",
+      "source_locator": "P21 L724-726",
+      "source_classification": "TOURISM_FUNDING_REVIEW",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-043",
+      "chapter": 2,
+      "commitment_text": "Digitale Tourismusplattformen gezielt ausbauen.",
+      "source_locator": "P21-22 L727-728",
+      "source_classification": "DIGITAL_TOURISM_PLATFORM",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-044",
+      "chapter": 2,
+      "commitment_text": "Landesgaststättengesetz mit Erleichterungen für kleine Betriebe/Dorfkneipen/Straußwirtschaft/Reisegewerbe schaffen.",
+      "source_locator": "P22 L729-731",
+      "source_classification": "STATE_HOSPITALITY_LAW",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-045",
+      "chapter": 2,
+      "commitment_text": "Verkehrliche BUGA-Erschließung, insbesondere welterbekonforme Mittelrheinbrücke, vorantreiben.",
+      "source_locator": "P22 L732-738",
+      "source_classification": "MIDDLE_RHINE_BRIDGE_INFRASTRUCTURE",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-046",
+      "chapter": 2,
+      "commitment_text": "Landesgartenschau-Format an Kommunalbedarfe anpassen und neues Konzept für 2032 erarbeiten.",
+      "source_locator": "P22 L739-744",
+      "source_classification": "STATE_GARDEN_SHOW_REDESIGN",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-047",
+      "chapter": 2,
+      "commitment_text": "Bundes-/Landesgartenschauen marketingseitig vernetzen.",
+      "source_locator": "P22 L744-746",
+      "source_classification": "GARDEN_SHOW_MARKETING_INTEGRATION",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-048",
+      "chapter": 2,
+      "commitment_text": "Innovationsagentur zur zentralen Vernetzungs-/Beratungsplattform weiterentwickeln.",
+      "source_locator": "P22 L750-754",
+      "source_classification": "INNOVATION_AGENCY_PLATFORM",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-049",
+      "chapter": 2,
+      "commitment_text": "Gründer mit privaten/institutionellen Kapitalgebern vernetzen.",
+      "source_locator": "P22 L755-757",
+      "source_classification": "STARTUP_INVESTOR_NETWORK",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-050",
+      "chapter": 2,
+      "commitment_text": "Bundesweite steuerliche Anreize für Wagniskapital unterstützen.",
+      "source_locator": "P22 L758-759",
+      "source_classification": "FEDERAL_ADVOCACY_VC_TAX",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-051",
+      "chapter": 2,
+      "commitment_text": "Zugang zu privatem Beteiligungskapital in Wachstums-/Skalierungsphasen verbessern.",
+      "source_locator": "P22 L759-761",
+      "source_classification": "PRIVATE_GROWTH_CAPITAL_ACCESS",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-052",
+      "chapter": 2,
+      "commitment_text": "Zukunftscluster in Biotech/Bioökonomie/KI/Robotik/Cybersicherheit/Resilienz systematisch ausbauen.",
+      "source_locator": "P22 L761-763",
+      "source_classification": "FUTURE_CLUSTER_POLICY",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-053",
+      "chapter": 2,
+      "commitment_text": "Landes-Rohstoffstrategie unter ökonomischen, ökologischen und sozialen Kriterien entwickeln.",
+      "source_locator": "P22 L764-766",
+      "source_classification": "RAW_MATERIALS_STRATEGY",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-054",
+      "chapter": 2,
+      "commitment_text": "Energieagentur als zentrale Kompetenzstelle für Kommunen/Unternehmen/Bürger stärken/nutzen.",
+      "source_locator": "P23 L778-780",
+      "source_classification": "ENERGY_AGENCY_CONTINUATION",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-055",
+      "chapter": 2,
+      "commitment_text": "Photovoltaik konsequent ausbauen.",
+      "source_locator": "P23 L781-785",
+      "source_classification": "PV_EXPANSION",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-056",
+      "chapter": 2,
+      "commitment_text": "Landesliegenschaften mit PV ausstatten.",
+      "source_locator": "P23 L784-785",
+      "source_classification": "STATE_PROPERTY_PV",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-057",
+      "chapter": 2,
+      "commitment_text": "Biomassenutzung mit Restholz/organischen Reststoffen stärken.",
+      "source_locator": "P23 L786-787",
+      "source_classification": "BIOMASS_RESIDUALS",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-058",
+      "chapter": 2,
+      "commitment_text": "Wasserkraft unter WRRL sowie ökologischer/wirtschaftlicher Tragfähigkeit nutzen/ausbauen.",
+      "source_locator": "P23 L788-790",
+      "source_classification": "HYDROPOWER_WITH_ENVIRONMENTAL_GUARD",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-059",
+      "chapter": 2,
+      "commitment_text": "Geothermie dort erschließen, wo sinnvoll/tragfähig.",
+      "source_locator": "P23 L790-792",
+      "source_classification": "GEOTHERMAL_DEVELOPMENT",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-060",
+      "chapter": 2,
+      "commitment_text": "Absicherung möglicher Geothermie-Schadensfälle klar regeln.",
+      "source_locator": "P23 L791-792",
+      "source_classification": "GEOTHERMAL_LIABILITY_FRAMEWORK",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-061",
+      "chapter": 2,
+      "commitment_text": "Windenergie regional ausgewogen/verträglich ausbauen.",
+      "source_locator": "P23 L792-794",
+      "source_classification": "WIND_REGIONAL_BALANCE",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-062",
+      "chapter": 2,
+      "commitment_text": "Flusswärme-Potenziale insbesondere Rhein/Mosel erschließen.",
+      "source_locator": "P23 L794-796",
+      "source_classification": "RIVER_HEAT",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-063",
+      "chapter": 2,
+      "commitment_text": "Auf Bundesebene Stromsteuer für alle senken lassen.",
+      "source_locator": "P23 L801-805",
+      "source_classification": "FEDERAL_ADVOCACY_ELECTRICITY_TAX",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-064",
+      "chapter": 2,
+      "commitment_text": "Kommunen bei Wärmeplanung weiter wirksam unterstützen.",
+      "source_locator": "P23 L806-808",
+      "source_classification": "MUNICIPAL_HEAT_PLANNING_SUPPORT",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-065",
+      "chapter": 2,
+      "commitment_text": "Bundes-Netzausbau aktiv unterstützen und Dialog mit Netzbetreibern intensivieren.",
+      "source_locator": "P24 L809-814",
+      "source_classification": "FEDERAL_GRID_EXPANSION_SUPPORT",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-066",
+      "chapter": 2,
+      "commitment_text": "Speichertechnologien im Netzausbau stärker berücksichtigen.",
+      "source_locator": "P24 L813-814",
+      "source_classification": "ENERGY_STORAGE_INTEGRATION",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-067",
+      "chapter": 2,
+      "commitment_text": "Bürgerenergiegesetz zur Beteiligung von Bürgern/Kommunen und regionaler Wertschöpfung schaffen.",
+      "source_locator": "P24 L815-817",
+      "source_classification": "CITIZEN_ENERGY_LAW",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-068",
+      "chapter": 2,
+      "commitment_text": "Ausbau erneuerbarer Energien konsequent fortsetzen.",
+      "source_locator": "P24 L818-819",
+      "source_classification": "RENEWABLE_EXPANSION_CONTINUATION",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-069",
+      "chapter": 2,
+      "commitment_text": "Jährliches EE-Zubauziel von 1.500 MW verfolgen.",
+      "source_locator": "P24 L818-819",
+      "source_classification": "RENEWABLE_CAPACITY_TARGET",
+      "fach_comment_id": 5366036600,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-070",
+      "chapter": 2,
+      "commitment_text": "Informationelle Selbstbestimmung stärken und Datenschutz-/Transparenzrecht innovationsfreundlich novellieren/vereinfachen.",
+      "source_locator": "P24 L827-829",
+      "source_classification": "DATA_RIGHTS_LEGAL_REFORM",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-071",
+      "chapter": 2,
+      "commitment_text": "Digitalstrategie/Digitalprogramm mit Etappenzielen kontinuierlich fortschreiben/anpassen.",
+      "source_locator": "P24 L837-841",
+      "source_classification": "DIGITAL_STRATEGY_CONTINUATION",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-072",
+      "chapter": 2,
+      "commitment_text": "Digitalisierung als Querschnittsaufgabe in allen Politikfeldern verankern.",
+      "source_locator": "P24 L841-843",
+      "source_classification": "CROSS_POLICY_DIGITAL_GOVERNANCE",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-073",
+      "chapter": 2,
+      "commitment_text": "Neue Gesetze, Verordnungen und Verwaltungsvorschriften einem Digitalcheck unterziehen.",
+      "source_locator": "P24-25 L844-846",
+      "source_classification": "DIGITAL_CHECK",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-074",
+      "chapter": 2,
+      "commitment_text": "Prävention/Detektion/Reaktion in Landes-Cybersicherheitsstrategie bündeln.",
+      "source_locator": "P25 L850-855",
+      "source_classification": "CYBER_STRATEGY_THREE_PILLARS",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-075",
+      "chapter": 2,
+      "commitment_text": "BSI-Standards/Regelungen konsequent umsetzen.",
+      "source_locator": "P25 L856-857",
+      "source_classification": "BSI_STANDARD_IMPLEMENTATION",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-076",
+      "chapter": 2,
+      "commitment_text": "Landesbehörden bei Cybersicherheitsumsetzung beraten/unterstützen.",
+      "source_locator": "P25 L857-859",
+      "source_classification": "CYBER_SUPPORT_STATE_AUTHORITIES",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-077",
+      "chapter": 2,
+      "commitment_text": "Kommunen bei Cybersicherheitsumsetzung beraten/unterstützen.",
+      "source_locator": "P25 L857-859",
+      "source_classification": "CYBER_SUPPORT_MUNICIPALITIES",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-078",
+      "chapter": 2,
+      "commitment_text": "Unternehmen, besonders Mittelstand, bei Cybersicherheit beraten/unterstützen.",
+      "source_locator": "P25 L857-859",
+      "source_classification": "CYBER_SUPPORT_SMES",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-079",
+      "chapter": 2,
+      "commitment_text": "Notwendigkeit eines eigenen Landes-Cybersicherheitsgesetzes prüfen.",
+      "source_locator": "P25 L860-862",
+      "source_classification": "CYBER_LAW_REVIEW",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-080",
+      "chapter": 2,
+      "commitment_text": "Digitalbudget für zentrale/ressortübergreifende bedeutsame Digitalprojekte fortentwickeln.",
+      "source_locator": "P25 L869-871",
+      "source_classification": "DIGITAL_BUDGET",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-081",
+      "chapter": 2,
+      "commitment_text": "Einheitliche digitale Infrastruktur/Deutschland-Architektur/Digital Infrastructure Stack unterstützen.",
+      "source_locator": "P25 L874-879",
+      "source_classification": "FEDERATED_DIGITAL_ARCHITECTURE",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-082",
+      "chapter": 2,
+      "commitment_text": "EU-, Bundes- und IT-Planungsratsvorgaben systematisch in Umsetzungen einbinden.",
+      "source_locator": "P25 L877-879",
+      "source_classification": "INTEROPERABILITY_STANDARD_BINDING",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-083",
+      "chapter": 2,
+      "commitment_text": "Geeignete EUDI-Wallet-Einsatzfelder identifizieren und bei konkretem Mehrwert umsetzen.",
+      "source_locator": "P25 L880-882",
+      "source_classification": "EUDI_WALLET_USE_CASES",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-084",
+      "chapter": 2,
+      "commitment_text": "Vielzahl kleinerer Fachanwendungen überprüfen.",
+      "source_locator": "P25-26 L883-885",
+      "source_classification": "SPECIALIST_APP_PORTFOLIO_REVIEW",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-085",
+      "chapter": 2,
+      "commitment_text": "Einheitliche Low-Code-Plattform bewerten und bei positiver Bewertung bereitstellen/vorantreiben.",
+      "source_locator": "P26 L886-889",
+      "source_classification": "LOW_CODE_PLATFORM_STAGE_GATE",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-086",
+      "chapter": 2,
+      "commitment_text": "EfA-Onlinedienste flächendeckend nachnutzen und medienbruchfrei an Behörden anbinden.",
+      "source_locator": "P26 L890-893",
+      "source_classification": "EFA_ROLLOUT",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-087",
+      "chapter": 2,
+      "commitment_text": "Kommunen bei Anbindung/Einführung/Nutzung von Onlinediensten unterstützen.",
+      "source_locator": "P26 L894-896",
+      "source_classification": "MUNICIPAL_DIGITAL_ROLLOUT_SUPPORT",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-088",
+      "chapter": 2,
+      "commitment_text": "Anteil flächendeckend ausgerollter EfA-Onlinedienste deutlich erhöhen.",
+      "source_locator": "P26 L896-898",
+      "source_classification": "EFA_COVERAGE_SCALE",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-089",
+      "chapter": 2,
+      "commitment_text": "Durchgängige digitale Verfahren vom Antrag bis Bescheid/Ende-zu-Ende sicherstellen.",
+      "source_locator": "P26 L899-901",
+      "source_classification": "END_TO_END_DIGITAL_PROCEDURES",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-090",
+      "chapter": 2,
+      "commitment_text": "Landes-EGov-Gesetz beteiligungsbasiert evaluieren und an KI/OZG/Register/Souveränität/Cyber anpassen.",
+      "source_locator": "P26 L902-908",
+      "source_classification": "EGOV_LAW_EVALUATION_REFORM",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-091",
+      "chapter": 2,
+      "commitment_text": "Registermodernisierung/Once-Only schrittweise unter Datenschutz-/EU-Recht vorantreiben.",
+      "source_locator": "P26 L911-918",
+      "source_classification": "REGISTER_MODERNIZATION_ONCE_ONLY",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-092",
+      "chapter": 2,
+      "commitment_text": "Maßvolle risikobasierte KI-Regulierung/-Kontrolle im europäischen Rahmen unterstützen.",
+      "source_locator": "P26-27 L924-930",
+      "source_classification": "EU_AI_REGULATION_ADVOCACY",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-093",
+      "chapter": 2,
+      "commitment_text": "Mit Bund/EU attraktive Bedingungen für KI-Innovation schaffen.",
+      "source_locator": "P27 L927-928",
+      "source_classification": "FEDERAL_EU_AI_INNOVATION_CONDITIONS",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-094",
+      "chapter": 2,
+      "commitment_text": "KI-Sprunginnovationen/branchenspezifische Sprachmodelle und Anwendung aus Forschung in die Breite fördern.",
+      "source_locator": "P27 L930-940",
+      "source_classification": "AI_JUMP_INNOVATION_SUPPORT",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-095",
+      "chapter": 2,
+      "commitment_text": "GovLab RLP einrichten und neue Technologien/IT-Lösungen vor Rollout testen.",
+      "source_locator": "P27 L943-947",
+      "source_classification": "GOVLAB_INNOVATION_PILOT",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-096",
+      "chapter": 2,
+      "commitment_text": "GovLab als interne Organisationsberatung/Kompetenzmultiplikator etablieren.",
+      "source_locator": "P27 L948-953",
+      "source_classification": "GOVLAB_ORG_CONSULTING",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-097",
+      "chapter": 2,
+      "commitment_text": "KI/Automatisierung an Bedürfnissen/Fähigkeiten der Beschäftigten ausrichten, menschliche Komponente stärken.",
+      "source_locator": "P27 L954-956",
+      "source_classification": "HUMAN_CENTERED_AI_SAFEGUARD",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-098",
+      "chapter": 2,
+      "commitment_text": "Fort-/Weiterbildung für digitale Verwaltung verstärken.",
+      "source_locator": "P27 L959-967",
+      "source_classification": "DIGITAL_SKILLS_WORKFORCE",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-099",
+      "chapter": 2,
+      "commitment_text": "Verpflichtende Module/eigenen Studiengang für digitale Verwaltung prüfen/implementieren.",
+      "source_locator": "P27 L962-966",
+      "source_classification": "PUBLIC_ADMIN_DIGITAL_CURRICULUM",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-100",
+      "chapter": 2,
+      "commitment_text": "Digitale Weiterbildungsplattform der Landesverwaltung stärken.",
+      "source_locator": "P28 L968-971",
+      "source_classification": "DIGITAL_LEARNING_PLATFORM",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-101",
+      "chapter": 2,
+      "commitment_text": "Klare/effiziente Planungs- und Genehmigungsverfahren für Rechenzentren schaffen.",
+      "source_locator": "P28 L977-980",
+      "source_classification": "DATA_CENTER_PLANNING_PERMITS",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-102",
+      "chapter": 2,
+      "commitment_text": "Verlässliche Strom-/Glasfaseranbindung von Rechenzentren sicherstellen.",
+      "source_locator": "P28 L979-980",
+      "source_classification": "DATA_CENTER_GRID_FIBER_CONNECTION",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-103",
+      "chapter": 2,
+      "commitment_text": "Hohe Effizienzstandards inkl. Abwärme/EE/intelligenter Laststeuerung verfolgen.",
+      "source_locator": "P28 L980-982",
+      "source_classification": "DATA_CENTER_EFFICIENCY_STANDARD",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-104",
+      "chapter": 2,
+      "commitment_text": "Rechenzentren systematisch in kommunale Wärme-/Energiekonzepte integrieren.",
+      "source_locator": "P28 L982-984",
+      "source_classification": "DATA_CENTER_HEAT_INTEGRATION",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-105",
+      "chapter": 2,
+      "commitment_text": "Ressortübergreifende Strategie zur digitalen Souveränität der Landesverwaltung schaffen.",
+      "source_locator": "P28 L987-991",
+      "source_classification": "DIGITAL_SOVEREIGNTY_STRATEGY",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-106",
+      "chapter": 2,
+      "commitment_text": "Ebenenübergreifend offene Schnittstellen/Standards ausbauen.",
+      "source_locator": "P28 L992-997",
+      "source_classification": "OPEN_STANDARDS_INTERFACES",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-107",
+      "chapter": 2,
+      "commitment_text": "Open Source bei Auswahl/Entwicklung von IT-Systemen grundsätzlich bevorzugt berücksichtigen.",
+      "source_locator": "P28 L993-997",
+      "source_classification": "OPEN_SOURCE_PREFERENCE",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-108",
+      "chapter": 2,
+      "commitment_text": "Landes-Cloud nach länderübergreifenden souveränen Standards fortentwickeln.",
+      "source_locator": "P28 L998-1003",
+      "source_classification": "SOVEREIGN_CLOUD_CONTINUATION",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-109",
+      "chapter": 2,
+      "commitment_text": "Wo wirtschaftlich geboten/zulässig europäische Cloud-Dienstleister nutzen.",
+      "source_locator": "P28 L999-1001",
+      "source_classification": "EUROPEAN_CLOUD_PROCUREMENT",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-110",
+      "chapter": 2,
+      "commitment_text": "Geeignete Fachverfahren in Cloud-Infrastruktur überführen.",
+      "source_locator": "P28 L1001-1003",
+      "source_classification": "CLOUD_MIGRATION",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-111",
+      "chapter": 2,
+      "commitment_text": "Cloud-Kompetenzen bündeln und zentrale Anlaufstelle anbieten.",
+      "source_locator": "P28 L1002-1003",
+      "source_classification": "CLOUD_COMPETENCE_BUNDLING",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-112",
+      "chapter": 2,
+      "commitment_text": "Bestehende proprietäre IT-Arbeitsplatzlösungen ablösen/Open-Source-Einsatz vorantreiben.",
+      "source_locator": "P28 L1004-1006",
+      "source_classification": "PROPRIETARY_DESKTOP_EXIT",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-113",
+      "chapter": 2,
+      "commitment_text": "ZenDiS beitreten.",
+      "source_locator": "P28-29 L1006-1007",
+      "source_classification": "ZENDIS_MEMBERSHIP",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-114",
+      "chapter": 2,
+      "commitment_text": "LDI organisatorisch/technisch an wachsende Digitalaufgaben anpassen.",
+      "source_locator": "P29 L1009-1014",
+      "source_classification": "LDI_ORG_ADAPTATION",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-115",
+      "chapter": 2,
+      "commitment_text": "IT-Entwicklungsressourcen im LDI bündeln.",
+      "source_locator": "P29 L1014",
+      "source_classification": "LDI_DEV_RESOURCE_BUNDLING",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-116",
+      "chapter": 2,
+      "commitment_text": "Qualitativ/quantitativ adäquate Personalausstattung des LDI sichern.",
+      "source_locator": "P29 L1015-1016",
+      "source_classification": "LDI_STAFFING",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-117",
+      "chapter": 2,
+      "commitment_text": "Kooperation/Synergien mit Partnern innerhalb/außerhalb Verwaltung vorantreiben.",
+      "source_locator": "P29 L1016-1018",
+      "source_classification": "LDI_PARTNERSHIP",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-118",
+      "chapter": 2,
+      "commitment_text": "Glasfaserausbau flächendeckend, besonders ländlich, vorantreiben.",
+      "source_locator": "P29 L1021-1023",
+      "source_classification": "FIBER_EXPANSION",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-119",
+      "chapter": 2,
+      "commitment_text": "Mobilfunkausbau flächendeckend, besonders ländlich, vorantreiben.",
+      "source_locator": "P29 L1021-1023",
+      "source_classification": "MOBILE_EXPANSION",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-120",
+      "chapter": 2,
+      "commitment_text": "Bundesvorgaben für Dig-Once/Open-Access statt Mehrfachausbau unterstützen.",
+      "source_locator": "P29 L1024-1027",
+      "source_classification": "FEDERAL_DIG_ONCE_OPEN_ACCESS_ADVOCACY",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-121",
+      "chapter": 2,
+      "commitment_text": "Glasfaserausbau mit passgenauen Förderangeboten/Bundesunterstützung fördern.",
+      "source_locator": "P29 L1027-1028",
+      "source_classification": "FIBER_FUNDING",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-122",
+      "chapter": 2,
+      "commitment_text": "Glasfaserausbau als überragendes öffentliches Interesse vorantreiben.",
+      "source_locator": "P29 L1029",
+      "source_classification": "LEGAL_PUBLIC_INTEREST_PRIORITY",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-123",
+      "chapter": 2,
+      "commitment_text": "Versorgungslücken ressourcenschonend mit innovativer Verlegung/ggf. Satellit schließen.",
+      "source_locator": "P29 L1030-1032",
+      "source_classification": "LAST_MILE_TECH_MIX",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-124",
+      "chapter": 2,
+      "commitment_text": "Digitale Genehmigungsprozesse nutzen und Genehmigungen vereinfachen.",
+      "source_locator": "P29 L1033-1034",
+      "source_classification": "DIGITAL_PERMIT_SIMPLIFICATION",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-125",
+      "chapter": 2,
+      "commitment_text": "Gigabit-Kompetenzzentrum zur Projektbegleitung/Kommunalentlastung fortführen.",
+      "source_locator": "P29 L1035-1036",
+      "source_classification": "GIGABIT_COMPETENCE_CENTER_CONTINUATION",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-126",
+      "chapter": 2,
+      "commitment_text": "Mobilfunk-Monitoring stärker an tatsächlicher lokaler Erreichbarkeit/Qualität ausrichten.",
+      "source_locator": "P29 L1037-1041",
+      "source_classification": "MOBILE_MONITORING_REFORM",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-127",
+      "chapter": 2,
+      "commitment_text": "Eigene Landesmessungen zur Mobilfunkversorgung ausbauen.",
+      "source_locator": "P29 L1039-1041",
+      "source_classification": "STATE_MOBILE_MEASUREMENT_EXPANSION",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-128",
+      "chapter": 2,
+      "commitment_text": "Neue Koordinationsformate für schwer erschließbare Gebiete mit Netz-/Mobilfunk-/Umweltakteuren schaffen.",
+      "source_locator": "P29-30 L1042-1047",
+      "source_classification": "RURAL_MOBILE_STAKEHOLDER_FORMATS",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-129",
+      "chapter": 2,
+      "commitment_text": "Mit Bund/BNetzA Pilotrolle bei diskriminierungsfreien regionalen Kupfer-DSL-Abschaltungen anstreben.",
+      "source_locator": "P30 L1048-1051",
+      "source_classification": "FEDERAL_COPPER_SHUTDOWN_PILOT",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-130",
+      "chapter": 2,
+      "commitment_text": "Forschung/Anwendung rund um 6G gezielt unterstützen.",
+      "source_locator": "P30 L1052-1055",
+      "source_classification": "SIX_G_RESEARCH_APPLICATION_SUPPORT",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-131",
+      "chapter": 2,
+      "commitment_text": "Digitalen Medien-Staatsvertrag zur Medienvielfalt/Wettbewerb/Sichtbarkeit/Refinanzierung vorantreiben.",
+      "source_locator": "P30 L1069-1076",
+      "source_classification": "DIGITAL_MEDIA_STATE_TREATY",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-132",
+      "chapter": 2,
+      "commitment_text": "Europäische Regeln/Werte gegenüber Plattformen auf EU-Ebene durchsetzen helfen.",
+      "source_locator": "P30 L1076-1078",
+      "source_classification": "EU_PLATFORM_ENFORCEMENT_ADVOCACY",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-133",
+      "chapter": 2,
+      "commitment_text": "Duales Mediensystem erhalten/weiterentwickeln mit Balance öffentlich-rechtlich/privat/regional.",
+      "source_locator": "P30-31 L1084-1091",
+      "source_classification": "DUAL_MEDIA_SYSTEM_CONTINUATION",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-134",
+      "chapter": 2,
+      "commitment_text": "Förderung digitaler Transformation von Presseverlagen fortführen.",
+      "source_locator": "P31 L1092-1095",
+      "source_classification": "PRESS_DIGITAL_TRANSFORMATION_FUNDING",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-135",
+      "chapter": 2,
+      "commitment_text": "Beitragsfinanzierung stützen und bei Verfahren Wirtschaftlichkeit/Sparsamkeit/Transparenz einfordern/mitgestalten.",
+      "source_locator": "P31 L1096-1102",
+      "source_classification": "PUBLIC_BROADCAST_FINANCING_GOVERNANCE",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-136",
+      "chapter": 2,
+      "commitment_text": "Zusammenarbeit öffentlich-rechtlicher und privater Medien verstärken.",
+      "source_locator": "P31 L1103-1104",
+      "source_classification": "PUBLIC_PRIVATE_MEDIA_COOPERATION",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-137",
+      "chapter": 2,
+      "commitment_text": "Bundesrechtliche Anpassungen für vertiefte Medienkooperation unterstützen.",
+      "source_locator": "P31 L1104-1106",
+      "source_classification": "FEDERAL_MEDIA_COOPERATION_LAW_ADVOCACY",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-138",
+      "chapter": 2,
+      "commitment_text": "Gemeinsame Medienkompetenzstrategie fortsetzen, Maßnahmen bündeln/vernetzen/standardisieren.",
+      "source_locator": "P31 L1107-1115",
+      "source_classification": "MEDIA_LITERACY_STRATEGY_CONTINUATION",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-139",
+      "chapter": 2,
+      "commitment_text": "Orte medialer Teilhabe landesweit ausbauen und in Netzwerk mit Multiplikatoren/Open Channels einbinden.",
+      "source_locator": "P31 L1116-1121",
+      "source_classification": "MEDIA_PARTICIPATION_PLACES_EXPANSION",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-140",
+      "chapter": 2,
+      "commitment_text": "Gestuftes Modell: Social-Media-Nutzung unter 14 untersagen.",
+      "source_locator": "P32 L1128-1131",
+      "source_classification": "SOCIAL_MEDIA_UNDER14_BAN_PROPOSAL",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-141",
+      "chapter": 2,
+      "commitment_text": "Für Jugendliche bis 16 spezielle Versionen ohne Suchtmechanismen/algorithmische Empfehlungen vorsehen.",
+      "source_locator": "P32 L1131-1133",
+      "source_classification": "YOUTH_SAFE_PLATFORM_VERSION_PROPOSAL",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-142",
+      "chapter": 2,
+      "commitment_text": "Verpflichtende Alterskontrollen für soziale Medien vorsehen.",
+      "source_locator": "P32 L1133-1134",
+      "source_classification": "AGE_ASSURANCE_PROPOSAL",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-143",
+      "chapter": 2,
+      "commitment_text": "Verantwortlichkeit/Haftung von Plattformen für schädliche Inhalte schärfen.",
+      "source_locator": "P32 L1134-1135",
+      "source_classification": "PLATFORM_LIABILITY_PROPOSAL",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-144",
+      "chapter": 2,
+      "commitment_text": "Jugendmedienschutz-Staatsvertrag im Zusammenspiel mit EU-Regeln fortschreiben.",
+      "source_locator": "P32 L1137-1138",
+      "source_classification": "JMSTV_REFORM",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-145",
+      "chapter": 2,
+      "commitment_text": "jugendschutz.net strukturell stärken.",
+      "source_locator": "P32 L1138-1141",
+      "source_classification": "JUGENDSCHUTZ_NET_CAPACITY",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-146",
+      "chapter": 2,
+      "commitment_text": "Bereits beauftragte Medienstandortstudie fortführen.",
+      "source_locator": "P32 L1145-1147",
+      "source_classification": "MEDIA_LOCATION_STUDY_CONTINUATION",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-147",
+      "chapter": 2,
+      "commitment_text": "Auf Studienbasis Koordination der Förderinstrumente für Kreativ-/Medienbranche prüfen.",
+      "source_locator": "P32 L1147-1150",
+      "source_classification": "MEDIA_FUNDING_COORDINATION_REVIEW",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-148",
+      "chapter": 2,
+      "commitment_text": "Standort-Rahmenbedingungen sowie Innovation/Ausbildung/Nachwuchs inkl. bestehender Leuchtturmformate stärken.",
+      "source_locator": "P32 L1151-1156",
+      "source_classification": "MEDIA_LOCATION_ECOSYSTEM_SUPPORT",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-149",
+      "chapter": 2,
+      "commitment_text": "Medienförderung RLP inhalts-/gattungsübergreifend gezielt weiterentwickeln.",
+      "source_locator": "P32 L1156-1160",
+      "source_classification": "MEDIA_FUNDING_REFORM",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-150",
+      "chapter": 2,
+      "commitment_text": "Zukunftsbereiche Games/Film in Medienförderung besonders fokussieren.",
+      "source_locator": "P32 L1160-1162",
+      "source_classification": "GAMES_FILM_PRIORITY",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    },
+    {
+      "commitment_id": "RLP-KV26-C02-151",
+      "chapter": 2,
+      "commitment_text": "Gamesförderung innerhalb Medienförderung weiter ausbauen.",
+      "source_locator": "P32-33 L1163-1165",
+      "source_classification": "GAMES_FUNDING_EXPANSION",
+      "fach_comment_id": 5366049805,
+      "atomic_count": true
+    }
+  ]
+}
