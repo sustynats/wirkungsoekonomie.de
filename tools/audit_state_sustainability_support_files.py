@@ -91,7 +91,7 @@ def role(rel: str) -> str:
     if rel.startswith("bibliothek/"): return "library_source"
     if rel.startswith("tools/"): return "quality_or_projection_tool"
     if rel.startswith("scripts/"): return "site_generator_or_quality_tool"
-    if rel.startswith("public/data/") or rel.startswith("assets/data/"): return "structured_data_or_manifest"
+    if rel.startswith("public/data/") or rel.startswith("assets/data/")): return "structured_data_or_manifest"
     return "support_text"
 
 
@@ -151,6 +151,8 @@ def main() -> int:
     html_paths |= {r.get("file_path") for r in matrix.get("extra_tracked_html_not_in_sitemap", [])}
     support = []
     for rel in git_files(root):
+        if rel in {args.matrix, args.markdown}:
+            continue
         if rel in html_paths or rel.startswith(SKIP_PREFIXES):
             continue
         p = root / rel
