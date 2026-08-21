@@ -3,11 +3,16 @@
 
 The source-of-truth route audit is still sitemap.xml. The Git index is used only to find
 additional tracked HTML that is not in the sitemap, which avoids traversing build/cache trees.
+
+The matrix deliberately exposes both the repository-native fields and the #253 release-contract
+fields (`source_path`, `public_url`, `historical_publication`, `relevance`, `source_refs`, `status`)
+so the committed audit is directly reviewable without schema interpretation.
 """
 from __future__ import annotations
 
 import argparse
 import json
+import re
 import subprocess
 from pathlib import Path
 from urllib.parse import urlparse
@@ -44,34 +49,85 @@ def tracked_html(root: Path) -> list[str]:
     return out
 
 
+def official_source_refs(text: str) -> list[str]:
+    refs = set()
+    for raw in re.findall(r'https?://[^"\'< >\s)]+'.replace(" ", ""), text or ""):
+        url = raw.rstrip(".,;:")
+        host = urlparse(url).netloc.lower()
+        if any(host == domain or host.endswith("." + domain) for domain in OFFICIAL_DOMAINS):
+            refs.add(url)
+    return sorted(refs)
+
+
+def contract_fields(
+    *,
+    rel: str,
+    public_url: str | None,
+    historical: str,
+    classes: list[str],
+    signals: list[str],
+    refs: list[str],
+    status: str,
+) -> dict:
+    if classes != ["NO_CHANGE_REQUIRED"]:
+        relevance = "MATERIAL_253_ACTION"
+    elif signals:
+        relevance = "SEMANTIC_253_REVIEW"
+    else:
+        relevance = "NO_MATERIAL_253_CHANGE"
+    return {
+        "source_path": rel,
+        "public_url": public_url,
+        "historical_publication": historical != "CURRENT_OR_LIVING_PAGE",
+        "relevance": relevance,
+        "source_refs": refs,
+        "status": status,
+    }
+
+
 def make_row(root: Path, url: str, search_haystack: str) -> tuple[dict, dict | None]:
     rel = url_to_relpath(url)
     src = root / rel
     text = src.read_text(encoding="utf-8", errors="replace") if src.exists() else ""
     missing = None if src.exists() else {"url": url, "expected_file": rel}
     classes, action = classify(rel, text)
-    return ({
+    canonical = canonical_from_html(text) if text else url
+    historical = historical_status(rel)
+    signals = scan_claims(text) if text else []
+    refs = official_source_refs(text)
+    status = "SOURCE_SCANNED" if src.exists() else "SOURCE_NOT_RESOLVED"
+    row = {
         "file_path": rel,
-        "canonical_url": canonical_from_html(text) if text else url,
+        "canonical_url": canonical,
         "sitemap_url": url,
         "sitemap_status": True,
         "search_index_status": (url in search_haystack or urlparse(url).path in search_haystack) if search_haystack else None,
         "content_type": content_type(rel),
-        "historical_or_current": historical_status(rel),
-        "matched_claims": scan_claims(text) if text else [],
+        "historical_or_current": historical,
+        "matched_claims": signals,
         "source_links_present": sorted({d for d in OFFICIAL_DOMAINS if d in text}),
         "classification": classes,
         "required_action": action,
         "owner_source": "source_html" if src.exists() else "unresolved_or_generated",
-        "verification_status": "SOURCE_SCANNED" if src.exists() else "SOURCE_NOT_RESOLVED",
-    }, missing)
+        "verification_status": status,
+    }
+    row.update(contract_fields(
+        rel=rel,
+        public_url=canonical or url,
+        historical=historical,
+        classes=classes,
+        signals=signals,
+        refs=refs,
+        status=status,
+    ))
+    return row, missing
 
 
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--root", default=".")
-    parser.add_argument("--output", default="artifacts/state-sustainability-architecture-url-matrix.json")
-    parser.add_argument("--markdown", default="artifacts/state-sustainability-architecture-url-matrix.md")
+    parser.add_argument("--output", default="content/audits/state-sustainability-architecture-url-matrix.json")
+    parser.add_argument("--markdown", default="content/audits/state-sustainability-architecture-url-matrix.md")
     args = parser.parse_args()
 
     root = Path(args.root).resolve()
@@ -94,27 +150,46 @@ def main() -> int:
         src = root / rel
         text = src.read_text(encoding="utf-8", errors="replace")
         classes, action = classify(rel, text)
-        extra.append({
+        canonical = canonical_from_html(text)
+        historical = historical_status(rel)
+        signals = scan_claims(text)
+        refs = official_source_refs(text)
+        status = "TRACKED_HTML_NOT_IN_SITEMAP_REVIEW_VISIBILITY"
+        row = {
             "file_path": rel,
-            "canonical_url": canonical_from_html(text),
+            "canonical_url": canonical,
             "sitemap_status": False,
             "search_index_status": (rel in search_haystack) if search_haystack else None,
             "content_type": content_type(rel),
-            "historical_or_current": historical_status(rel),
-            "matched_claims": scan_claims(text),
+            "historical_or_current": historical,
+            "matched_claims": signals,
             "source_links_present": sorted({d for d in OFFICIAL_DOMAINS if d in text}),
             "classification": classes,
             "required_action": action,
             "owner_source": "source_html",
-            "verification_status": "TRACKED_HTML_NOT_IN_SITEMAP_REVIEW_VISIBILITY",
-        })
+            "verification_status": status,
+        }
+        row.update(contract_fields(
+            rel=rel,
+            public_url=canonical,
+            historical=historical,
+            classes=classes,
+            signals=signals,
+            refs=refs,
+            status=status,
+        ))
+        extra.append(row)
 
     matrix = {
         "audit": "WOEK_STATE_SUSTAINABILITY_ARCHITECTURE_SITEWIDE",
         "issue": 253,
-        "schema_version": "1.1",
+        "schema_version": "2.1",
         "site": SITE,
         "method": "sitemap enumeration + tracked source HTML semantic scan + approved #253 family rules",
+        "required_contract_fields": [
+            "source_path", "public_url", "historical_publication", "relevance",
+            "classification", "required_action", "source_refs", "status",
+        ],
         "invariants": [
             "GGO_43_44_FULL_SCOPE_ACKNOWLEDGED",
             "NO_FALSE_GFA_ABSENCE_CLAIM",
@@ -151,6 +226,8 @@ def main() -> int:
         f"- Extra tracked source HTML not in sitemap: **{len(extra)}**",
         f"- Routes with non-default #253 action: **{len(explicit)}**",
         f"- Routes with Wirkungsblindheit/novelty/absence claim signals: **{len(risk)}**",
+        "",
+        "Contract fields on every matrix item: `source_path`, `public_url`, `historical_publication`, `relevance`, `classification`, `required_action`, `source_refs`, `status`.",
         "",
         "## Routes requiring explicit #253 action",
         "",
