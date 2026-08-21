@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Release gate for the Wirkungswissenschaften living routes explicitly named in #253 Batch A."""
+"""Release gate for the additional living routes explicitly named in #253 Batch A."""
 from __future__ import annotations
 
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 PAGES = [
+    "verstehen/woek-auf-einer-seite/index.html",
     "wirkungswissenschaften/definition/index.html",
     "wirkungswissenschaften/wirkungsforschung/index.html",
     "wirkungswissenschaften/wirkungsoekonomie/index.html",
@@ -24,13 +25,13 @@ def main() -> int:
     for rel in PAGES:
         path = ROOT / rel
         if not path.exists():
-            raise AssertionError(f"missing required #253 Wirkungswissenschaften route: {rel}")
+            raise AssertionError(f"missing required #253 Batch-A living route: {rel}")
         text = path.read_text(encoding="utf-8", errors="replace")
         missing = [needle for needle in REQUIRED if needle not in text]
         if missing:
             raise AssertionError(f"{rel}: missing #253 state-architecture continuity: {missing}")
         print(f"PASS {rel}")
-    print(f"WIRKUNGSWISSENSCHAFTEN_253_SCOPE_PASS {len(PAGES)}/{len(PAGES)}")
+    print(f"BATCH_A_LIVING_SCOPE_253_PASS {len(PAGES)}/{len(PAGES)}")
     return 0
 
 
