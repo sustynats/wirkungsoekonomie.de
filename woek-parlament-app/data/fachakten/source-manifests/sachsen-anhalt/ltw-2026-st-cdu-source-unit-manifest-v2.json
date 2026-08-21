@@ -1,6 +1,8 @@
 {
   "schema_version": "1.0",
   "manifest_version": "2026-08-21-p89-restore-1",
+  "manifest_status": "CANDIDATE_PENDING_CANONICAL_MERGE",
+  "composition_mode": "IMMUTABLE_RELEASE1_BASE_PLUS_ADDITIVE_VERSIONED_SOURCE_UNITS",
   "programme_key": "ltw-2026-st-cdu",
   "party": "CDU",
   "election": "Landtagswahl Sachsen-Anhalt 2026",
@@ -52,6 +54,6 @@
     "source_restore_gaps": 0,
     "primary_source_parity_status": "PASS_AFTER_VERSIONED_RESTORE",
     "public_projection_count_status": "SEPARATE_TECHNICAL_GATE_PENDING",
-    "note": "The historical Release-1 register remains unchanged. The additive source-unit manifest closes the confirmed page-89 omission without renumbering legacy IDs. Public projection/count changes require the separate technical Golden-State gates."
+    "note": "Canonical composition is the immutable 344-row Release-1 base plus this additive source unit. The historical Release-1 register remains unchanged. Public projection/count changes require the separate technical Golden-State gates."
   }
 }
