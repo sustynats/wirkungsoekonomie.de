@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "manifest_version": "2026-08-21-p89-restore-1",
+  "programme_key": "ltw-2026-st-cdu",
+  "party": "CDU",
+  "election": "Landtagswahl Sachsen-Anhalt 2026",
+  "primary_source": {
+    "document_title": "Regierungsprogramm der CDU Sachsen-Anhalt zur Landtagswahl 2026",
+    "adopted_date": "2026-06-13",
+    "url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf",
+    "page_count": 91
+  },
+  "legacy_release1": {
+    "register_path": "woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-cdu-zusagen.md",
+    "blob_sha": "6e8c53392d76e9847ee3028d241a988c12b3d2fb",
+    "source_hash": "15272934630ab67d50bea0da18964d83fb06b9b9aa32686e56e824913acb8fce",
+    "source_unit_count": 344,
+    "immutable_historical_baseline": true
+  },
+  "canonical_source_unit_count": 345,
+  "historical_release1_ids_renumbered": false,
+  "additive_source_units": [
+    {
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001",
+      "source_locator": {
+        "pdf_page": 89,
+        "section": "Sachsen-Anhalt in Bund und Europa",
+        "after_legacy_source_unit": "ltw-2026-st-cdu-0341-eine-effektive-sichere-und-buergernahe-eu-foerdern-wir-bek",
+        "before_legacy_source_unit": "ltw-2026-st-cdu-0342-sachsen-anhalt-im-bund-gehoer-verschaffen-wir-setzen-uns-f"
+      },
+      "source_title": "Deindustrialisierung verhindern – ideologische Klima- und Umweltvorgaben zurücknehmen",
+      "source_summary": "Die Passage fordert, mehrere Klima-, Umwelt- und Sorgfaltsregeln auf EU- und Bundesebene zurückzunehmen oder wirtschaftsfreundlicher auszugestalten und begründet dies mit Standort-, Investitions-, Innovations- und Beschäftigungszielen.",
+      "source_gap_status": "PRIMARY_SOURCE_MATERIAL_OMISSION_RESTORED_VERSIONED",
+      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "impact_direction": "OPEN",
+      "evidence_level": "NOT_ASSESSABLE",
+      "assessment_maturity": "MULTI_MECHANISM_PARENT_REQUIRES_CHILD_SPLIT",
+      "fach_review": {
+        "issue_number": 234,
+        "comment_id": 5371280862,
+        "status": "SOURCE_BOUND_EDITORIAL_REVIEW_COMPLETE"
+      },
+      "recommendation_status": "NOT_FACH_AVAILABLE_DO_NOT_SYNTHESIZE",
+      "dns_reference": "REVIEWED_PENDING_EXACT_REGISTRY_MAPPING",
+      "state_gfa_enap_benchmark": "NOT_APPLICABLE"
+    }
+  ],
+  "parity": {
+    "release1_rows_terminal": 344,
+    "additive_source_units_terminal": 1,
+    "total_primary_source_units_terminal": 345,
+    "source_restore_gaps": 0,
+    "primary_source_parity_status": "PASS_AFTER_VERSIONED_RESTORE",
+    "public_projection_count_status": "SEPARATE_TECHNICAL_GATE_PENDING",
+    "note": "The historical Release-1 register remains unchanged. The additive source-unit manifest closes the confirmed page-89 omission without renumbering legacy IDs. Public projection/count changes require the separate technical Golden-State gates."
+  }
+}
