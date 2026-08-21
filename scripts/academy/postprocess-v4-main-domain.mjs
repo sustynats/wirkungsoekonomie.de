@@ -104,7 +104,11 @@ if (active.counts?.lectures !== 120 || active.counts?.modules !== 40 || active.c
 }
 
 const manifest = JSON.parse(load("content/studienskripte/v4/PUBLIC_MASTER_MANIFEST.json"));
-const protectedPatterns = [/CorrectAnswer/i, /correct_answer/i, /answer_key/i, /Musterlösung/i, /Lösungsschlüssel/i, /instructor[_ -]?(?:answer|solution)/i];
+// Protect machine/authoring-only assessment payload markers. Public pages may
+// legitimately explain that answer keys are withheld, so the human-facing word
+// "Lösungsschlüssel" itself is not treated as leakage. The Public-Master
+// contract below remains the authoritative fail-closed secret boundary.
+const protectedPatterns = [/CorrectAnswer/i, /correct_answer/i, /answer_key/i, /Musterlösung/i, /instructor[_ -]?(?:answer|solution)/i];
 for (const rel of GENERATED_ROUTES) {
   const html = load(rel);
   for (const p of protectedPatterns) {
