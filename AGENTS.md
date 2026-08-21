@@ -18,7 +18,7 @@ Diese Datei ist die dauerhafte Arbeitsanweisung fuer Codex-Aufgaben in diesem Re
 - Wirkung ist neutral und relational.
 - Wirkung bedeutet tatsächliche Veränderung von Zuständen.
 - Wirkung, Wirkungspotenzial und Wirkungsrisiko werden klar unterschieden.
-- Positive Wirkung wird am Referenzrahmen SDGs, Agenda 2030 und SDG+ bewertet.
+- Positive oder negative Wirkung wird aus der begründeten Zustandsveränderung, Wirkmechanismus, Evidenz/Unsicherheit und den jeweils relevanten Referenz- und Schutzräumen hergeleitet. Global gehören dazu Agenda 2030/SDGs; bei deutschen öffentlichen und regulatorischen Fällen zusätzlich die Deutsche Nachhaltigkeitsstrategie (DNS). SDG+ ist eine WÖk-eigene Erweiterung. Ziel- oder Indikatorbezug allein ist weder Wirkung noch Kausalitätsnachweis.
 - Wenn eine Zielgroesse gemeint ist, verwende positive Netto-Wirkung.
 - Wirkung, Wirkungspotenzial, Wirkungsrisiko, Netto-Wirkung, Transformationswirkung, Wirkungslenkung und Wirkungsarchitektur duerfen nicht vermischt werden.
 - Wirkstoff darf nur als Analogie verwendet werden.
