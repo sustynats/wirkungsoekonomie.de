@@ -105,6 +105,45 @@ def main() -> int:
     ):
         changed.append(rel)
 
+    # Remaining living #253 routes explicitly classified for correction in the sitewide matrix.
+    rel = "wirkungsoekonomie.html"
+    if replace_once(
+        rel,
+        '<p class="card-text">Die Wirkungsökonomie entscheidet nicht aus dem Bauch heraus, was gut oder schlecht ist. Ihr Maßstab ist das, worauf sich die Weltgemeinschaft mit der Agenda 2030 verständigt hat: die SDGs. Ergänzt werden sie durch SDG+, weil Demokratie, Medienqualität, Rechtsstaatlichkeit, Diskursfähigkeit und gesellschaftlicher Zusammenhalt Voraussetzungen dafür sind, dass nachhaltige Entwicklung gelingt. Positive Wirkung liegt in der WÖk vor, wenn eine Zustandsveränderung auf SDGs, Agenda 2030 und SDG+ einzahlt. Negative Wirkung liegt vor, wenn sie diesen Rahmen schwächt.</p>',
+        '<p class="card-text">Die Wirkungsökonomie entscheidet nicht aus dem Bauch heraus, was gut oder schlecht ist. Die 17 SDGs und die Agenda 2030 bilden einen internationalen Zielrahmen; für Deutschland konkretisiert die Deutsche Nachhaltigkeitsstrategie (DNS) Ziele, Indikatoren, Governance und Monitoring. SDG+ ist eine WÖk-eigene Erweiterung für zusätzliche demokratische, mediale, rechtliche und digitale Wirkungsräume. Diese Referenzen helfen, relevante Ziel- und Schutzräume zu bestimmen - sie beweisen aber nicht automatisch Wirkung oder Kausalität. Eine WÖk-Wirkungsbewertung fragt deshalb zusätzlich, welche Zustände sich tatsächlich verändern, über welchen Mechanismus, gegenüber welchem Gegenfaktum und mit welchen Neben-, Verteilungs- und Systemfolgen.</p>',
+    ):
+        changed.append(rel)
+
+    rel = "verstehen.html"
+    if replace_once(
+        rel,
+        '<p class="card-text">Bewertet wird am gemeinsamen Referenzrahmen der SDGs, der Agenda 2030 und SDG+. Drei Felder entscheiden über Zukunftsfähigkeit: Mensch, Planet und Demokratie.</p>',
+        '<p class="card-text">Die SDGs und die Agenda 2030 liefern einen internationalen Zielrahmen; in Deutschland kommt die Deutsche Nachhaltigkeitsstrategie mit Zielen, Indikatoren und Monitoring hinzu. SDG+ ist eine WÖk-eigene Erweiterung. Zielbezug ist dabei noch kein Wirkungs- oder Kausalitätsnachweis: Entscheidend bleibt, welche Zustände sich für Mensch, Planet und Demokratie tatsächlich verändern.</p>',
+    ):
+        changed.append(rel)
+
+    rel = "workflow.html"
+    if replace_once(
+        rel,
+        '<p>Die SDGs liefern einen weltweit anerkannten Zielrahmen. CSRD, ESRS, GRI und andere Standards liefern strukturierte Nachhaltigkeitsdaten. Digitale Produktpässe schaffen produktbezogene Daten. Finanzmärkte und Versicherungen arbeiten bereits mit Risiko- und ESG-Daten. Die Wirkungsökonomie ergänzt die Rückkopplung in wirtschaftliche Entscheidungen.</p>',
+        '<p>Die SDGs liefern einen weltweit anerkannten Zielrahmen. CSRD, ESRS, GRI und andere Standards liefern strukturierte Nachhaltigkeitsdaten. Digitale Produktpässe schaffen produktbezogene Daten. Finanzmärkte und Versicherungen arbeiten bereits mit Risiko- und ESG-Daten. Für deutsche öffentliche und regulatorische Fälle kommen die DNS mit ihren Indikatoren sowie GGO/GFA, Nachhaltigkeitsprüfung und eNAP/eGFA als bestehende Ziel-, Prüf- und Monitoringquellen hinzu. Diese Quellen sind nicht automatisch Kausalitätsnachweise. Die Wirkungsökonomie ergänzt die Rückkopplung in wirtschaftliche und - wo einschlägig - öffentliche Entscheidungen.</p>',
+    ):
+        changed.append(rel)
+
+    rel = "kompass.html"
+    if replace_once(
+        rel,
+        '<p>Vom Reparaturstaat zur frühen Wirkungsprüfung und Rückkopplung.</p>',
+        '<p>Frühe Folgen- und Nachhaltigkeitsprüfung existiert im Bund bereits. Die WÖk verbindet diese Basis zusätzlich mit expliziten Wirkpfaden, Gegenfaktum, Verteilung, Optionsvergleich und wiederholbarer Rückkopplung.</p>',
+    ):
+        changed.append(rel)
+    if replace_once(
+        rel,
+        '<li><a class="text-link" href="fuer/politik.html">Politik</a></li>',
+        '<li><a class="text-link" href="fuer/politik.html">Politik</a> · <a class="text-link" href="methodik/datenbasis.html">staatliche Prüf- und Quellenarchitektur</a></li>',
+    ):
+        changed.append(rel)
+
     for rel, title in [
         ("werkstatt/dossiers/staat-recht-demokratie/politische-wirkungspruefung/index.html", "Politische Wirkungsprüfung"),
         ("werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/politische-wirkungspruefung/index.html", "Detailkonzept Politische Wirkungsprüfung"),
