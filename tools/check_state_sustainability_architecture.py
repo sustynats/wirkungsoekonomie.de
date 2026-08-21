@@ -40,7 +40,7 @@ MATRIX_REQUIRED_FIELDS = {
 }
 CANONICAL_BENCHMARK = "blog/enap-woek-benchmark-fuenf-bundesvorhaben.html"
 NWI_AUDIT = "content/audits/nwi-acronym-disambiguation.json"
-CURRENT_GUIDE_LABEL = "WÖk-Begriffsleitfaden führend v1.6"
+CURRENT_GUIDE_LABEL = "WÖk-Begriffsleitfaden führend v1.7"
 CURRENT_GUIDE_URL = "/bibliothek/woek-begriffsleitfaden-fuehrend/"
 CURRENT_GUIDE_SURFACES = [
     "fuer/akademie.html",
@@ -146,6 +146,7 @@ def glossary_and_sources() -> None:
     for code in (
         "WÖK-Q-9029", "WÖK-Q-9030", "WÖK-Q-9031", "WÖK-Q-9032", "WÖK-Q-9033",
         "WÖK-Q-9034", "WÖK-Q-9035", "WÖK-Q-9036", "WÖK-Q-9037",
+        "WÖK-Q-9046", "WÖK-Q-9047", "WÖK-Q-9048", "WÖK-Q-9049",
     ):
         if code not in source_text:
             raise AssertionError(f"missing canonical federal architecture source {code}")
@@ -159,6 +160,8 @@ def glossary_and_sources() -> None:
         "enap", "egesetzgebung-egfa", "dns-indikator", "zielbezug-vs-wirkung",
         "ex-ante-folgenpruefung-reality-check", "staatliche-nachhaltigkeitsarchitektur",
         "parlamentarischer-beirat-nachhaltige-entwicklung", "state-gfa-enap-benchmark", "wirkungsblindheit",
+        "bundeshaushaltsordnung-paragraf-7", "vv-bho-wirtschaftlichkeitsuntersuchung-erfolgskontrolle",
+        "objektspezifische-staatliche-pruefarchitektur", "wirkungsrelevanz-statt-rechtsform",
     }
     if missing := sorted(required - ids):
         raise AssertionError(f"missing #253 glossary terms: {missing}")
@@ -179,17 +182,22 @@ def terminology_guide_provenance() -> None:
     for rel in CURRENT_GUIDE_SURFACES:
         text = read(rel)
         if CURRENT_GUIDE_LABEL not in text or "woek-begriffsleitfaden-fuehrend/" not in text:
-            raise AssertionError(f"{rel}: living source surface does not point to the leading terminology guide v1.6")
+            raise AssertionError(f"{rel}: living source surface does not point to the leading terminology guide v1.7")
         if "Führender Begriffsleitfaden der Wirkungsökonomie v1.0" in text or "Führender Begriffsleitfaden der Wirkungsökonomie v1.2" in text:
             raise AssertionError(f"{rel}: obsolete guide is still presented as a current source")
 
     require(CANONICAL_BENCHMARK, ["WÖk-Masterregister v1.5", CURRENT_GUIDE_LABEL])
+    # The v1.5 register source catalogue records its release-time terminology
+    # baseline v1.6. It is provenance, not a competing current-guide surface.
     require("woek-id-register/quellen/index.html", ["Quellenkatalog v1.5", "Begriffsleitfaden der Wirkungsökonomie v1.6", "WÖk Master Items v1.5"])
 
     records = json.loads(read("content/quellenarchiv/glossary-source-records.json")).get("sources", [])
     current = next((source for source in records if source.get("title") == CURRENT_GUIDE_LABEL), None)
     if not current or current.get("reviewStatus") != "fuehrend" or not str(current.get("url", "")).endswith(CURRENT_GUIDE_URL):
-        raise AssertionError("leading terminology guide v1.6 has no correct source-archive record")
+        raise AssertionError("leading terminology guide v1.7 has no correct source-archive record")
+    historical_v16 = next((source for source in records if "Begriffsleitfaden" in source.get("title", "") and "v1.6" in source.get("title", "")), None)
+    if not historical_v16 or historical_v16.get("reviewStatus") != "historisch" or not str(historical_v16.get("url", "")).endswith("/woek-begriffsleitfaden-fuehrend-v1-6/"):
+        raise AssertionError("historical terminology guide v1.6 was silently redirected to the current publication")
     historical_v10 = next((source for source in records if "Begriffsleitfaden" in source.get("title", "") and "v1.0" in source.get("title", "")), None)
     if not historical_v10 or historical_v10.get("reviewStatus") != "historisch" or not str(historical_v10.get("url", "")).endswith("/woek-begriffsleitfaden-fuehrend-v1-0/"):
         raise AssertionError("historical terminology guide v1.0 was silently redirected to the current publication")
@@ -276,6 +284,8 @@ def materiality_scope_precision() -> None:
         "Weil Wirkung nicht an der Rechtsform hängt.",
         "kein einheitliches eNAP-ähnliches Pflichtverfahren",
         "Staatliches Eigentum allein",
+        "§ 7 Absatz 2 BHO",
+        "Wirkungs- und Wirtschaftlichkeitskontrolle",
     ]
     for rel in (
         "index.html",
@@ -301,6 +311,10 @@ def materiality_scope_precision() -> None:
         "https://www.gesetze-im-internet.de/ksg/__13.html",
         "WÖK-Q-9047",
         "https://www.gesetze-im-internet.de/kang/__8.html",
+        "WÖK-Q-9048",
+        "https://www.gesetze-im-internet.de/bho/__7.html",
+        "WÖK-Q-9049",
+        "https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_14032001_DokNr20110981762.htm",
     ):
         if token not in sources:
             raise AssertionError(f"object-specific governance source missing: {token}")
@@ -392,7 +406,7 @@ def main() -> int:
     checks.append(("WOEK_USP_IS_ADDITIVE_AND_SPECIFIC", lambda: require("fuer/politik.html", ["Problemprüfung", "Zielprüfung", "Gegenfaktum", "Optionsvergleich", "Reality Check"])))
     checks.append(("LIVING_ROUTE_PRECISION_COMPLETE", living_route_precision))
     checks.append(("GLOSSARY_AND_SOURCE_CROSSLINKS_PASS", glossary_and_sources))
-    checks.append(("TERMINOLOGY_GUIDE_V16_PROVENANCE_PASS", terminology_guide_provenance))
+    checks.append(("TERMINOLOGY_GUIDE_V17_PROVENANCE_PASS", terminology_guide_provenance))
     checks.append(("HISTORICAL_PUBLICATIONS_NOT_SILENTLY_REWRITTEN", historical_additions_only))
     checks.append(("NO_FALSE_ABSENCE_OF_ALTERNATIVES_CLAIM", lambda: require("index.html", ["andere Lösungsmöglichkeiten"])))
     checks.append(("NO_FALSE_ABSENCE_OF_EXPOST_REVIEW_CLAIM", lambda: require("index.html", ["spätere Überprüfung"])))

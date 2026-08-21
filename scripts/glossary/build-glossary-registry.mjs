@@ -859,11 +859,11 @@ function sourceLabelForArchive(value) {
 }
 
 const CURRENT_TERMINOLOGY_GUIDE = {
-  version: "1.6",
-  title: "WÖk-Begriffsleitfaden führend v1.6",
+  version: "1.7",
+  title: "WÖk-Begriffsleitfaden führend v1.7",
   url: "https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/",
 };
-const HISTORICAL_TERMINOLOGY_GUIDE_VERSIONS = new Set(["1.0", "1.2", "1.3", "1.4", "1.5"]);
+const HISTORICAL_TERMINOLOGY_GUIDE_VERSIONS = new Set(["1.0", "1.2", "1.3", "1.4", "1.5", "1.6"]);
 
 function terminologyGuideVersion(label) {
   if (!/begriffsleitfaden/i.test(String(label || ""))) return "";
@@ -994,6 +994,11 @@ function attachGlossarySourceArchive(terms) {
   // So bleibt die bisherige URL-ID für die kanonische Publikation stabil,
   // während historische Zitate auf ihre jeweilige Versionsseite zeigen.
   recordFor({ label: CURRENT_TERMINOLOGY_GUIDE.title, url: CURRENT_TERMINOLOGY_GUIDE.url, term: {} });
+  recordFor({
+    label: "WÖk-Begriffsleitfaden führend v1.6",
+    url: "https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend-v1-6/",
+    term: {},
+  });
 
   for (const term of terms) {
     const sourceCollections = ["curatedSources", "sourceLinks", "officialSources"];

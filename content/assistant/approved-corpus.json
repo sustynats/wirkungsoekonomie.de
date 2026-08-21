@@ -1,20 +1,20 @@
 {
   "metadata": {
     "status": "published",
-    "last_updated": "2026-08-15",
+    "last_updated": "2026-08-21",
     "purpose": "Vorbereitung eines späteren RAG-gestützten WÖk-Assistenten. Der Assistent darf nur geprüfte, veröffentlichte oder ausdrücklich freigegebene Quellen nutzen.",
     "rule": "Drafts, alte PDFs, unkontrollierte Arbeitsstände und nicht geprüfte Uploads sind nicht automatisch für den Assistenten zugelassen."
   },
   "sources": [
     {
-      "source_id": "woek-begriffsleitfaden-fuehrend-v1-5",
-      "title": "WÖk-Begriffsleitfaden führend v1.5",
+      "source_id": "woek-begriffsleitfaden-fuehrend-v1-7",
+      "title": "WÖk-Begriffsleitfaden führend v1.7",
       "path": "bibliothek/woek-begriffsleitfaden-fuehrend/",
       "status": "published",
       "allowed_for_assistant": true,
       "source_type": "published_document",
       "document_url": "https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/",
-      "pdf_url": "https://wirkungsoekonomie.de/public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.5.pdf",
+      "pdf_url": "https://wirkungsoekonomie.de/public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.7.pdf",
       "terms": [
         "Wirkung",
         "Wirkungspotenzial",
@@ -24,10 +24,15 @@
         "IOOI",
         "Wirkungspfad",
         "Wirkungsradar",
-        "Wirkungsprofil im Radardiagramm"
+        "Wirkungsprofil im Radardiagramm",
+        "Wirkungsrelevanz statt Rechtsform",
+        "objektspezifische staatliche Prüfarchitektur",
+        "§ 7 BHO",
+        "VV-BHO",
+        "Wirkungskontrolle"
       ],
-      "last_checked": "2026-08-15",
-      "limitations": "Führende Sprach- und Methodenreferenz. IOOI ist eine externe, optionale Results-Chain-Methode; Wirkungspfad und Wirkungsradar sind eigenständige WÖk-Begriffe. Ältere Projektdateien können frühere Begriffsverwendungen enthalten; im Zweifel gilt diese Web-/PDF-Fassung."
+      "last_checked": "2026-08-21",
+      "limitations": "Führende Sprach- und Methodenreferenz. Staatliche Prüfrahmen gelten objektspezifisch; eNAP ist kein Universalverfahren. IOOI ist eine externe, optionale Results-Chain-Methode; Wirkungspfad und Wirkungsradar sind eigenständige WÖk-Begriffe. Ältere Projektdateien können frühere Begriffsverwendungen enthalten; im Zweifel gilt diese Web-/PDF-Fassung."
     },
     {
       "source_id": "nachhaltigkeit-systemarchitektur-v1",

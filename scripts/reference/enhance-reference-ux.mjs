@@ -121,7 +121,7 @@ const relatedDocsByCluster = {
   produkte: ["Beispiel_Apfel_Wirkungssteuer_Bonusregel", "WP_Produkte", "Wirkungsökonomie in der Lieferkette"],
   "arbeit-einkommen-rente": ["WP_Einkommen", "WP_Rente", "Wenn Maschinen arbeiten"],
   "digitalisierung-ki": ["WOeK_Masterregister_v1.5_2026-08-21", "Systemmodell der Wirkungsökonomie"],
-  begriffe: ["WOeK_Begriffsleitfaden_fuehrend_v1.6", "Systemmodell der Wirkungsökonomie"],
+  begriffe: ["WOeK_Begriffsleitfaden_fuehrend_v1.7", "Systemmodell der Wirkungsökonomie"],
 };
 
 function esc(value = "") {

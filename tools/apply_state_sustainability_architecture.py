@@ -7,11 +7,36 @@ intact (historical pages receive a dated addendum instead of silent reinterpreta
 """
 from __future__ import annotations
 
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 MARKER = "state-sustainability-architecture-20260821"
 MATERIALITY_MARKER = "state-sustainability-materiality-scope-20260821"
+CURRENT_GUIDE_LABEL = "WÖk-Begriffsleitfaden führend v1.7"
+CURRENT_GUIDE_SURFACES = [
+    "fuer/akademie.html",
+    "fuer/buergerinnen.html",
+    "fuer/gesundheit.html",
+    "fuer/investoren.html",
+    "fuer/journalismus.html",
+    "fuer/kommunen.html",
+    "fuer/kommunen/kommunaler-wirkungsindex.html",
+    "fuer/mieter.html",
+    "fuer/politik.html",
+    "fuer/rente.html",
+    "fuer/unternehmen.html",
+    "fuer/wirkungseinkommen.html",
+    "fuer/wissenschaft-forschung.html",
+    "sdg-plus/medien-demokratie/wirkung-politischer-sprache.html",
+    "blog/enap-woek-benchmark-fuenf-bundesvorhaben.html",
+]
+REQUIRED_GLOSSARY_ROUTES = [
+    "/begriffe/7-bundeshaushaltsordnung/",
+    "/begriffe/vv-bho-wirtschaftlichkeitsuntersuchung-und-erfolgskontrolle/",
+    "/begriffe/objektspezifische-staatliche-pruefarchitektur/",
+    "/begriffe/wirkungsrelevanz-statt-rechtsform/",
+]
 
 STATE_BLOCK = f'''\n<!-- {MARKER} -->
 <section class="section section-muted" id="staatliche-nachhaltigkeitsarchitektur" aria-labelledby="staatliche-nachhaltigkeitsarchitektur-title">
@@ -51,10 +76,10 @@ MATERIALITY_BLOCK = f'''\n<!-- {MATERIALITY_MARKER} -->
     <p class="hero-kicker">Materialität statt Rechtsform</p>
     <h2 id="materialitaet-statt-rechtsform-title">Warum prüft die WÖk nicht nur Gesetze?</h2>
     <p><strong>Weil Wirkung nicht an der Rechtsform hängt.</strong> Ein Förderprogramm, eine Garantie, eine Infrastrukturinvestition, eine Beschaffungsentscheidung, eine Strategie, eine Verwaltungsentscheidung oder ein langfristiger Vertrag kann größere und längerfristigere Zustandsveränderungen auslösen als manches Gesetz. Deshalb fragt die WÖk zuerst, ob eine staatliche Entscheidung materiell genug für eine systematische Wirkungsprüfung ist. Erst danach wird geklärt, welcher staatliche Prüfrahmen für genau diesen Objekttyp und diese Zuständigkeit gilt.</p>
-    <p>Deutschland besitzt dafür mehrere Governance-Schichten: Für Bundesgesetze und -verordnungen sind GGO §§ 43/44, Gesetzesfolgenabschätzung, Nachhaltigkeitsprüfung und eNAP/eGFA besonders formalisiert. Die DNS 2025 bezieht auch Strategien, Programme, Ressortaktivitäten und Verwaltungspraxis ein. Für Bundesinvestitionen und Beschaffung enthält § 13 KSG Klima-, CO₂-Preis-, Alternativen- und Lebenszyklusbezüge; § 8 KAnG enthält ein fachübergreifendes Berücksichtigungsgebot für Klimaanpassung. Je Gegenstand können weitere Haushalts-, Vergabe-, Beteiligungs- oder Fachrechtsregeln gelten.</p>
+    <p>Deutschland besitzt dafür mehrere Governance-Schichten: Für Bundesgesetze und -verordnungen sind GGO §§ 43/44, Gesetzesfolgenabschätzung, Nachhaltigkeitsprüfung und eNAP/eGFA besonders formalisiert. Die DNS 2025 bezieht auch Strategien, Programme, Ressortaktivitäten und Verwaltungspraxis ein. Für alle finanzwirksamen Maßnahmen verlangt § 7 Absatz 2 BHO angemessene Wirtschaftlichkeitsuntersuchungen; die VV-BHO konkretisiert Planung und spätere Erfolgskontrolle mit Zielerreichungs-, Wirkungs- und Wirtschaftlichkeitskontrolle. Für Bundesinvestitionen und Beschaffung enthält § 13 KSG Klima-, CO₂-Preis-, Alternativen- und Lebenszyklusbezüge; § 8 KAnG enthält ein fachübergreifendes Berücksichtigungsgebot für Klimaanpassung. Je Gegenstand können weitere Vergabe-, Beteiligungs- oder Fachrechtsregeln gelten.</p>
     <p>Außerhalb der Bundesrechtsetzung wird deshalb keine allgemeine eNAP-Pflicht behauptet. Nach aktuellem amtlichem Quellenstand gibt es kein einheitliches eNAP-ähnliches Pflichtverfahren, das jede materiell bedeutende Regierungsentscheidung unabhängig von ihrer Handlungsform standardisiert und öffentlich nachvollziehbar prüft. Das bedeutet nicht, dass andere Maßnahmen gar nicht geprüft werden. Die WÖk weist stattdessen objektspezifisch aus, welcher Rahmen gilt, was öffentlich dokumentiert ist und welche Wirkungskette unabhängig analysiert wird.</p>
     <p>Entscheidungen staatseigener oder staatlich dominierter Unternehmen bleiben als <strong>Unternehmensentscheidung</strong> von Eigentümerrolle, politischer Begleitung und belegbarer staatlicher Zurechnung getrennt. Staatliches Eigentum allein macht eine Unternehmensentscheidung weder zur Ministeriumsentscheidung noch zu einem GGO-/eNAP-pflichtigen Regelungsvorhaben.</p>
-    <p><a class="text-link" href="https://www.gesetze-im-internet.de/ksg/__13.html" rel="noopener noreferrer">KSG § 13</a> · <a class="text-link" href="https://www.gesetze-im-internet.de/kang/__8.html" rel="noopener noreferrer">KAnG § 8</a> · <a class="text-link" href="/methodik/externe-quellen.html">Amtliche Quellen und ihre Funktion</a></p>
+    <p><a class="text-link" href="/quellenarchiv/wok-q-9029/">GGO §§ 43/44/62</a> · <a class="text-link" href="/quellenarchiv/wok-q-9048/">BHO § 7</a> · <a class="text-link" href="/quellenarchiv/wok-q-9049/">VV-BHO</a> · <a class="text-link" href="/quellenarchiv/wok-q-9046/">KSG § 13</a> · <a class="text-link" href="/quellenarchiv/wok-q-9047/">KAnG § 8</a> · <a class="text-link" href="/methodik/externe-quellen.html">Amtliche Quellen und ihre Funktion</a></p>
   </div>
 </section>\n'''
 
@@ -91,6 +116,25 @@ def add_before_main(rel: str, block: str, marker: str = MARKER) -> bool:
     return True
 
 
+def upsert_materiality_block(rel: str) -> bool:
+    """Insert the canonical scope block or replace its earlier projection in place."""
+    path = ROOT / rel
+    if not path.exists():
+        return False
+    text = path.read_text(encoding="utf-8")
+    pattern = re.compile(
+        rf"\n?<!-- {re.escape(MATERIALITY_MARKER)} -->\s*<section\b.*?</section>\n?",
+        re.DOTALL,
+    )
+    if pattern.search(text):
+        updated = pattern.sub(MATERIALITY_BLOCK, text, count=1)
+        if updated == text:
+            return False
+        path.write_text(updated, encoding="utf-8")
+        return True
+    return add_before_main(rel, MATERIALITY_BLOCK, MATERIALITY_MARKER)
+
+
 def replace_once(rel: str, old: str, new: str) -> bool:
     text = read(rel)
     if new in text:
@@ -102,8 +146,50 @@ def replace_once(rel: str, old: str, new: str) -> bool:
     return True
 
 
+def sync_current_guide_label(rel: str) -> bool:
+    """Update only explicit living surfaces; historical publications remain untouched."""
+    path = ROOT / rel
+    if not path.exists():
+        return False
+    text = path.read_text(encoding="utf-8")
+    updated = text.replace("WÖk-Begriffsleitfaden führend v1.6", CURRENT_GUIDE_LABEL)
+    updated = updated.replace(
+        "Führender Begriffsleitfaden der Wirkungsökonomie v1.6",
+        "Führender Begriffsleitfaden der Wirkungsökonomie v1.7",
+    )
+    if updated == text:
+        return False
+    path.write_text(updated, encoding="utf-8")
+    return True
+
+
+def ensure_glossary_sitemap_routes() -> bool:
+    sitemap = ROOT / "sitemap.xml"
+    if not sitemap.exists():
+        return False
+    xml = sitemap.read_text(encoding="utf-8")
+    additions: list[str] = []
+    for route in REQUIRED_GLOSSARY_ROUTES:
+        public_file = ROOT / route.lstrip("/") / "index.html"
+        location = f"https://wirkungsoekonomie.de{route}"
+        if public_file.exists() and f"<loc>{location}</loc>" not in xml:
+            additions.append(f"  <url><loc>{location}</loc><lastmod>2026-08-21</lastmod></url>")
+    if not additions:
+        return False
+    xml = xml.replace("</urlset>", f"{'\n'.join(additions)}\n</urlset>")
+    sitemap.write_text(xml, encoding="utf-8")
+    return True
+
+
 def main() -> int:
     changed: list[str] = []
+
+    for guide_surface in CURRENT_GUIDE_SURFACES:
+        if sync_current_guide_label(guide_surface):
+            changed.append(guide_surface)
+
+    if ensure_glossary_sitemap_routes():
+        changed.append("sitemap.xml")
 
     # Start page: preserve the critique but explicitly delimit 'Wirkungsblindheit'.
     rel = "index.html"
@@ -113,7 +199,7 @@ def main() -> int:
         changed.append(rel)
     if add_before_main(rel, STATE_BLOCK):
         changed.append(rel)
-    if add_before_main(rel, MATERIALITY_BLOCK, MATERIALITY_MARKER):
+    if upsert_materiality_block(rel):
         changed.append(rel)
 
     # Politics: correct the total-absence framing, make Problem Review precede Goal Review,
@@ -133,7 +219,7 @@ def main() -> int:
         changed.append(rel)
     if add_before_main(rel, POLITIK_STATE_BLOCK, f"{MARKER}-politik"):
         changed.append(rel)
-    if add_before_main(rel, MATERIALITY_BLOCK, MATERIALITY_MARKER):
+    if upsert_materiality_block(rel):
         changed.append(rel)
 
     # Core living pages: add the same fair Anschluss architecture. The block is deliberately
@@ -161,7 +247,7 @@ def main() -> int:
         "wirkungsfelder/staat-recht-demokratie/index.html",
     ]
     for rel in materiality_pages:
-        if add_before_main(rel, MATERIALITY_BLOCK, MATERIALITY_MARKER):
+        if upsert_materiality_block(rel):
             changed.append(rel)
 
     # DNS-reference pages: keep the international SDG and WÖk-SDG+ layers distinct.

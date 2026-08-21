@@ -14,7 +14,7 @@ FUER = ROOT / "fuer"
 VERSION = "20260522-zielgruppen-master-v1"
 
 COMMON_SOURCES = [
-    "WÖk-Begriffsleitfaden führend v1.6",
+    "WÖk-Begriffsleitfaden führend v1.7",
     "Natalie Weber: Die neue Ordnung des Wohlstands, aktueller Buchstand 2026",
     "Systemmodell der Wirkungsökonomie",
     "Nachhaltigkeit ist keine Strategie. Sie ist eine Systemarchitektur",
@@ -132,8 +132,8 @@ def source_anchor(label: str, href: str) -> str:
 
 
 SOURCE_LINKS: dict[str, str] = {
-    "WÖk-Begriffsleitfaden führend v1.6": source_anchor("WÖk-Begriffsleitfaden führend v1.6", "../bibliothek/woek-begriffsleitfaden-fuehrend/"),
-    "Führender Begriffsleitfaden": source_anchor("WÖk-Begriffsleitfaden führend v1.6", "../bibliothek/woek-begriffsleitfaden-fuehrend/"),
+    "WÖk-Begriffsleitfaden führend v1.7": source_anchor("WÖk-Begriffsleitfaden führend v1.7", "../bibliothek/woek-begriffsleitfaden-fuehrend/"),
+    "Führender Begriffsleitfaden": source_anchor("WÖk-Begriffsleitfaden führend v1.7", "../bibliothek/woek-begriffsleitfaden-fuehrend/"),
     "Natalie Weber: Die neue Ordnung des Wohlstands, aktueller Buchstand 2026": source_anchor("Natalie Weber: Die neue Ordnung des Wohlstands, aktueller Buchstand 2026", "../referenz/"),
     "Systemmodell der Wirkungsökonomie": source_anchor("Systemmodell der Wirkungsökonomie", "../dokumente/systemmodell-der-wirkungsoekonomie/"),
     "Nachhaltigkeit ist keine Strategie. Sie ist eine Systemarchitektur": source_anchor("Nachhaltigkeit ist keine Strategie. Sie ist eine Systemarchitektur", "../referenz/kapitel-006-nachhaltigkeit-ist-keine-strategie/"),

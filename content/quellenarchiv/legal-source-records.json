@@ -108,7 +108,7 @@
       "url": "https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm",
       "doi": null,
       "author": "Bundesregierung / Bundesministerien",
-      "year": 2026,
+      "year": 2024,
       "type": "verwaltungsvorschrift",
       "typeLabel": "Amtliche Verwaltungsvorschrift",
       "cluster": "I",
@@ -387,6 +387,58 @@
       ],
       "sdg": "SDG 13 / DNS",
       "domain": "www.gesetze-im-internet.de"
+    },
+    {
+      "code": "WÖK-Q-9048",
+      "title": "Bundeshaushaltsordnung – § 7 Wirtschaftlichkeit und Sparsamkeit",
+      "url": "https://www.gesetze-im-internet.de/bho/__7.html",
+      "doi": null,
+      "author": "Bundesrepublik Deutschland",
+      "year": 1969,
+      "type": "gesetz",
+      "typeLabel": "Amtliche Rechtsquelle",
+      "cluster": "I",
+      "clusterLabel": "Staat / Recht / Steuern / Verwaltung",
+      "origin": "extern",
+      "reviewStatus": "fuehrend",
+      "dataQuality": "amtlich",
+      "sourceFunction": "Objektspezifischer staatlicher Prüfrahmen für alle finanzwirksamen Maßnahmen des Bundes",
+      "dataFunction": "LEGAL_FRAMEWORK | EX_ANTE_ASSESSMENT | RESOURCE | IMPLEMENTATION_CONTEXT",
+      "summary": "§ 7 Absatz 2 BHO verlangt für alle finanzwirksamen Maßnahmen angemessene Wirtschaftlichkeitsuntersuchungen und die Berücksichtigung der Risikoverteilung.",
+      "einordnung": "Primärquelle gegen die falsche Behauptung einer allgemeinen Prüfleere bei nichtlegislativen finanzwirksamen Maßnahmen. Reichweite, Methode und spätere Kontrolle werden objektspezifisch zusammen mit den VV-BHO bestimmt; daraus folgt keine universelle eNAP-Pflicht.",
+      "impactFields": [
+        "Demokratie",
+        "Mensch",
+        "Planet"
+      ],
+      "sdg": "SDG 16 / öffentliche Ressourcen",
+      "domain": "www.gesetze-im-internet.de"
+    },
+    {
+      "code": "WÖK-Q-9049",
+      "title": "Allgemeine Verwaltungsvorschriften zur BHO – VV zu § 7",
+      "url": "https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_14032001_DokNr20110981762.htm",
+      "doi": null,
+      "author": "Bundesministerium der Finanzen",
+      "year": null,
+      "type": "verwaltungsvorschrift",
+      "typeLabel": "Amtliche Verwaltungsvorschrift",
+      "cluster": "I",
+      "clusterLabel": "Staat / Recht / Steuern / Verwaltung",
+      "origin": "extern",
+      "reviewStatus": "fuehrend",
+      "dataQuality": "amtlich",
+      "sourceFunction": "Verfahrensrahmen für Wirtschaftlichkeitsuntersuchung und Erfolgskontrolle finanzwirksamer Maßnahmen",
+      "dataFunction": "PROCEDURE | EX_ANTE_ASSESSMENT | OUTCOME | ATTRIBUTION | REALITY_CHECK",
+      "summary": "Die VV zu § 7 BHO konkretisieren die Wirtschaftlichkeitsuntersuchung in der Planungsphase sowie begleitende und abschließende Erfolgskontrollen mit Zielerreichungs-, Wirkungs- und Wirtschaftlichkeitskontrolle.",
+      "einordnung": "Die Wirkungskontrolle fragt amtlich danach, ob die finanzwirksame Maßnahme für die Zielerreichung ursächlich war, und erfasst beabsichtigte sowie unbeabsichtigte Wirkungen. WÖk erkennt diese bestehende Architektur an und beschreibt den eigenen Zusatznutzen additiv und objektspezifisch.",
+      "impactFields": [
+        "Demokratie",
+        "Mensch",
+        "Planet"
+      ],
+      "sdg": "SDG 16 / öffentliche Ressourcen",
+      "domain": "www.verwaltungsvorschriften-im-internet.de"
     }
   ]
 }
