@@ -3,7 +3,8 @@ name: Academy v4 locked public-master sync
 on:
   push:
     branches:
-      - codex/academy-v4-public-master-20260821
+      - codex/academy-v4-public-master-clean-20260821
+      - main
     paths:
       - .github/workflows/academy-v4-public-master-sync.yml
       - scripts/academy/sync-v4-public-master.mjs
@@ -14,17 +15,17 @@ permissions:
   contents: write
 
 concurrency:
-  group: academy-v4-public-master-sync
+  group: academy-v4-public-master-sync-${{ github.ref_name }}
   cancel-in-progress: false
 
 jobs:
   sync-and-verify:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout exact public-master branch
+      - name: Checkout exact triggering ref
         uses: actions/checkout@v4
         with:
-          ref: codex/academy-v4-public-master-20260821
+          ref: ${{ github.ref_name }}
           fetch-depth: 0
 
       - name: Setup Node
@@ -82,5 +83,5 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add content/studienskripte/v4
           git commit -m "feat(academy-v4): materialize locked sanitized public masters"
-          git pull --rebase origin codex/academy-v4-public-master-20260821
-          git push origin HEAD:codex/academy-v4-public-master-20260821
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
