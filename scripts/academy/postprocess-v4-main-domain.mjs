@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 
+// CI retrigger anchor after deterministic audit-matrix projection; no fach change.
 const ROOT = process.cwd();
 const GENERATED_ROUTES = [
   "akademie.html",
