@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Wire the approved #253 terms and semantic gate into existing site generators/deploy.
+"""Wire the approved #253 terms and semantic/matrix gates into existing site generators/deploy.
 
 Idempotent source integration only: no fach content is generated here.
 """
@@ -30,7 +30,15 @@ def main() -> int:
 
     rel = ".github/workflows/deploy.yml"
     old = '      - name: Build Parliament and Institute information pages\n        run: npm run build:parlament-info\n'
-    new = '''      - name: Verify #253 state sustainability architecture\n        run: |\n          python tools/check_state_sustainability_architecture.py\n          python tools/audit_state_sustainability_architecture_fast.py --root . --output artifacts/state-sustainability-architecture-url-matrix.json --markdown artifacts/state-sustainability-architecture-url-matrix.md\n          python tools/audit_state_sustainability_support_files.py --root . --matrix artifacts/state-sustainability-architecture-url-matrix.json --markdown artifacts/state-sustainability-architecture-url-matrix.md\n      - name: Build Parliament and Institute information pages\n        run: npm run build:parlament-info\n'''
+    new = '''      - name: Verify #253 state sustainability architecture
+        run: |
+          python tools/check_state_sustainability_architecture.py
+          python tools/audit_state_sustainability_architecture_fast.py --root . --output content/audits/state-sustainability-architecture-url-matrix.json --markdown content/audits/state-sustainability-architecture-url-matrix.md
+          python tools/audit_state_sustainability_support_files.py --root . --matrix content/audits/state-sustainability-architecture-url-matrix.json --markdown content/audits/state-sustainability-architecture-url-matrix.md
+          git diff --exit-code -- content/audits/state-sustainability-architecture-url-matrix.json content/audits/state-sustainability-architecture-url-matrix.md
+      - name: Build Parliament and Institute information pages
+        run: npm run build:parlament-info
+'''
     if patch(rel, old, new):
         changed.append(rel)
 
