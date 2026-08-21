@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.1",
+  "status": "PRE_CUTOVER_SOURCE_LOCK",
+  "curriculum_version": "4.0",
+  "source_repo": "sustynats/woek-akademie-app",
+  "source_sha": "d164a6ceb95b9f90e473fec0dc06d8e1d0ba7516",
+  "source_root": "content/lehrgaenge/akademie/curriculum-v4",
+  "source_manifest": "content/lehrgaenge/akademie/curriculum-v4/CURRICULUM_V4_MANIFEST.json",
+  "source_endcontent_status": "content/lehrgaenge/akademie/curriculum-v4/ENDCONTENT_STATUS.json",
+  "source_manifest_git_blob_sha": "cb9c2d1c1053d2998919d881c660c17575fe011a",
+  "state_sustainability_manifest_git_blob_sha": "7c418bfa4e94d911b956bfc6f483cd67680f12ec",
+  "terminology_baseline": {
+    "name": "Führender Begriffsleitfaden der Wirkungsökonomie",
+    "version": "1.6",
+    "main_repo": "sustynats/wirkungsoekonomie.de",
+    "main_sha_at_lock": "b79be1437b205954c942a90a11ee2b48ba22f641"
+  },
+  "study_projection": {
+    "source_path": "content/lehrgaenge/akademie/curriculum-v4/lectures",
+    "expected_base_lectures": 108,
+    "expected_state_architecture_lectures": 12,
+    "expected_total_lectures": 120,
+    "review_status_required": "FACH_ENDCONTENT_REVIEWED"
+  },
+  "offering_projection": {
+    "source_root": "content/lehrgaenge/akademie/curriculum-v4/offerings",
+    "target_root": "content/studienskripte/v4/angebote",
+    "review_status_required": "FACH_ENDCONTENT_REVIEWED",
+    "expected_lecture_counts": {
+      "grundlagen": 7,
+      "wirkungsmanagement": 10,
+      "wirkungscontrolling": 10,
+      "multiplikatoren": 8,
+      "demokratie-buerger": 11,
+      "demokratie-medien": 12
+    }
+  },
+  "public_projection": {
+    "target_root": "content/studienskripte/v4/grundstudium",
+    "manifest_path": "content/studienskripte/v4/PUBLIC_MASTER_MANIFEST.json",
+    "activation": "FAIL_CLOSED_UNTIL_CROSS_REPO_PARITY_AND_RUNTIME_GATES_PASS",
+    "include_assessment_secrets": false
+  },
+  "required_gates": [
+    "ACADEMY_SCRIPT_MASTER_MIRROR_PARITY",
+    "NO_APP_ONLY_PUBLIC_SCRIPT_PARALLEL_TRUTH",
+    "PUBLIC_MASTER_SOURCE_PROVENANCE_PRESENT",
+    "NO_ASSESSMENT_SECRET_LEAK",
+    "ACADEMY_WEB_APP_CONTENT_PARITY",
+    "ACADEMY_OFFERING_CATALOG_WEB_APP_PARITY"
+  ],
+  "notes": [
+    "Der Lock ist absichtlich auf eine exakte App-SHA gepinnt; bewegliche Branches sind keine Veröffentlichungsquelle.",
+    "Der Curriculum-Manifest- und State-Sustainability-Manifest-Git-Blob sind zusätzlich festgeschrieben; ein Import gegen eine andere Fachbaseline muss den Lock explizit aktualisieren.",
+    "Die 120 Studienlektionen und 58 Lektionen der sechs aktiven Weiterbildungsfamilien werden ausschließlich aus fachgeprüften v4-Artefakten projiziert.",
+    "Geschützte Assessment-/Lösungsabschnitte sind kein Bestandteil des öffentlichen Public-Masters.",
+    "v3.2 bleibt historische Version und wird durch diesen Lock nicht überschrieben."
+  ]
+}
