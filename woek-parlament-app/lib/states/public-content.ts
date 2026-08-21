@@ -59,7 +59,7 @@ export const statePublicContent: Record<string, StatePublicContent> = {
       signedAt: "11.05.2026",
       governmentStart: "13.05.2026",
       sourceUrl: "https://www.baden-wuerttemberg.de/de/regierung/koalitionsvertrag-fuer-baden-wuerttemberg",
-      status: "Mandatsbasis verifiziert; vollständige Commitment-Zerlegung wird fortlaufend ergänzt.",
+      status: "Alle 15 Kapitel sind hochmaterial geprüft; 1.577 atomare Zusagen sind vollständig fundstellengebunden erfasst. Kapitel 1 bis 3 liegen vertieft vor.",
     },
   },
   "rheinland-pfalz": {

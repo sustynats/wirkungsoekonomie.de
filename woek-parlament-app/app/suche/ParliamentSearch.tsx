@@ -95,7 +95,7 @@ export function ParliamentSearch({ cases, analyses, governmentImpacts }: { cases
 }
 
 function GovernmentImpactSearchResult({ item }: { item: SearchableGovernmentImpact }) {
-  const path = `/regierung/wirkungsanalysen/${encodeURIComponent(item.impactCaseId)}`;
+  const path = item.href ?? `/regierung/wirkungsanalysen/${encodeURIComponent(item.impactCaseId)}`;
   return (
     <article data-woek-preview-card="published">
       <div>

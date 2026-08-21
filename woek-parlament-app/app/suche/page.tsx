@@ -11,6 +11,14 @@ import type { SearchableCase, SearchableFachanalyse, SearchableGovernmentImpact 
 import { publicParliamentSummary } from "@/lib/public-api";
 import { approvedCommonTargetLayerIdsForImpactCase, decisionReviewForImpactCase } from "@/lib/decision-method";
 import { ACTION_PLAN_META_ID, actionPlanMetaAssessment, actionPlanPublicMaturity, getActionPlanMissions, actionPlanAssessmentForMission } from "@/lib/government/strategy-impact";
+import {
+  BW_COALITION_ROUTE,
+  badenWuerttembergCoalitionAssessment,
+  badenWuerttembergCoalitionAtomicCommitments,
+  badenWuerttembergCoalitionChapters,
+  badenWuerttembergCoalitionPublicMaturity,
+  badenWuerttembergCoalitionQualityLayers,
+} from "@/lib/states/baden-wuerttemberg-coalition";
 
 export const metadata: Metadata = {
   title: "Suche",
@@ -74,6 +82,21 @@ export default function SearchPage() {
   });
   const actionPlanMissions = getActionPlanMissions();
   const governmentImpacts: SearchableGovernmentImpact[] = [
+    {
+      impactCaseId: "BW-COALITION-2026-2031",
+      href: BW_COALITION_ROUTE,
+      title: "Koalitionsvertrag Baden-Württemberg 2026–2031",
+      summary: badenWuerttembergCoalitionAssessment.editorialSummary,
+      analysisMode: "IMPACT_POTENTIAL_EX_ANTE",
+      materiality: "hoch",
+      assessment: badenWuerttembergCoalitionAssessment,
+      maturity: badenWuerttembergCoalitionPublicMaturity,
+      terms: [
+        ...badenWuerttembergCoalitionChapters.flatMap((chapter) => [chapter.title, chapter.assessment.assessmentLabel, chapter.assessment.keyFinding, chapter.problemReview, chapter.goalReview]),
+        ...badenWuerttembergCoalitionQualityLayers.flatMap((layer) => [layer.title, layer.text]),
+        ...badenWuerttembergCoalitionAtomicCommitments.flatMap((record) => [record.commitment_text, record.source_locator]),
+      ],
+    },
     {
       impactCaseId: ACTION_PLAN_META_ID,
       title: "Aktionsplan Nachhaltigkeit 2026",

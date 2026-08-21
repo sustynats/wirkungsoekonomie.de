@@ -17,6 +17,7 @@ import { publicDecisionReviews, publicReviewSystemLabel, reviewSourceRefs, revie
 import dnsRegistry from "@/data/indicators/dns-official-registry.json";
 import { isSafePublicSourceUrl, sourceDetailHrefForUrl, sourceSlugForCanonicalUrl } from "@/lib/sources/url";
 import { ACTION_PLAN_META_ID, actionPlanAssessmentForMission, actionPlanMetaAssessment, actionPlanRouteFor, actionPlanSources, getActionPlanMissions } from "@/lib/government/strategy-impact";
+import { BW_COALITION_ROUTE, badenWuerttembergCoalitionAssessment, badenWuerttembergCoalitionChapters, badenWuerttembergCoalitionSources } from "@/lib/states/baden-wuerttemberg-coalition";
 
 export { isSafePublicSourceUrl, sourceDetailHrefForUrl, sourceSlugForCanonicalUrl } from "@/lib/sources/url";
 
@@ -313,6 +314,51 @@ function stateTargetCatalogSources(): StaticPublicSource[] {
       temporalClass: "CURRENT_REFERENCE",
       abstract: "Landeseigener, versionierter Zielrahmen. Er ergänzt die SDGs für Sachsen-Anhalt und wird je Fall mit Zuständigkeit, Wirkungsraum und Schutzgrenzen verbunden.",
       usages: []
+    } satisfies StaticPublicSource];
+  });
+}
+
+function stateCoalitionReviewSources(): StaticPublicSource[] {
+  const chapterThree = badenWuerttembergCoalitionChapters.find((chapter) => chapter.chapter === 3);
+  return badenWuerttembergCoalitionSources.flatMap((source) => {
+    const canonicalUrl = isSafePublicSourceUrl(source.url);
+    const slug = canonicalUrl ? sourceSlugForCanonicalUrl(canonicalUrl) : null;
+    if (!canonicalUrl || !slug) return [];
+    const chapterBaseline = source.usage === "CHAPTER_3_BASELINE" && chapterThree;
+    const assessment = chapterBaseline ? chapterThree.assessment : badenWuerttembergCoalitionAssessment;
+    return [{
+      id: `state-coalition-bw-${slug}`,
+      slug,
+      title: source.title,
+      institution: source.institution,
+      category: "GOVERNMENT_RECORD",
+      role: source.usage === "CHAPTER_3_BASELINE" ? "EX_ANTE_EVIDENCE" : "DECISION_FACT",
+      documentType: source.documentType,
+      canonicalUrl,
+      documentDate: source.documentDate,
+      retrievedAt: "2026-08-21",
+      versionLabel: source.usage === "DOCUMENT"
+        ? "Amtlich aktuell verlinkter Vertragstext; interner Entwurfsvermerk bleibt sichtbar"
+        : "Geerbte Baseline 2026–2030; nicht der neuen Regierung zugerechnet",
+      sourceHash: null,
+      temporalClass: "CURRENT_REFERENCE",
+      abstract: source.abstract,
+      usages: [{
+        caseSlug: chapterBaseline ? "bw-coalition-2026-2031-chapter-3" : "bw-coalition-2026-2031",
+        caseTitle: chapterBaseline ? "Kapitel 3: Wissenschaft, Forschung, Kunst und Medien" : "Koalitionsvertrag Baden-Württemberg 2026–2031",
+        caseKind: "STATE_COALITION_MANDATE_REVIEW",
+        decisionDate: "2026-05-11",
+        sourceRole: source.usage === "CHAPTER_3_BASELINE" ? "EX_ANTE_EVIDENCE" : "DECISION_FACT",
+        locations: source.locations,
+        note: source.usage === "CHAPTER_3_BASELINE"
+          ? "Die HoFV III ist ein geerbter Ausgangszustand. Der angekündigte HoFV-IV-Pfad ab 2031 bleibt ein eigener Mandats- und Lifecycle-Gegenstand."
+          : "Die politische Originalquelle belegt Wortlaut und Lifecycle, nicht Umsetzung oder eingetretene Wirkung.",
+        caseHref: chapterBaseline ? `${BW_COALITION_ROUTE}#kapitel-3` : BW_COALITION_ROUTE,
+        analysisSummary: assessment.editorialSummary,
+        analysisDirection: assessment.directionLabel,
+        evidenceLevel: assessment.evidenceSummary,
+        assessment,
+      }],
     } satisfies StaticPublicSource];
   });
 }
@@ -1150,6 +1196,7 @@ function staticPublicSources() {
     ...politicalCatalogSources(),
     ...fachanalyseCatalogSources(),
     ...stateTargetCatalogSources(),
+    ...stateCoalitionReviewSources(),
     ...saxonyAnhaltProgrammeCatalogSources(),
     ...communicationMediaImpactSources(),
     ...strategyActionPlanSources(),

@@ -1,0 +1,1226 @@
+{
+  "schema_version": "woek-bw-coalition-responsive-1.0",
+  "status": "PASS",
+  "base_url": "http://127.0.0.1:3018",
+  "routes": [
+    "/laender/baden-wuerttemberg/mandat-und-praxis",
+    "/laender/baden-wuerttemberg",
+    "/laender/baden-wuerttemberg/regierung",
+    "/suche",
+    "/quellen/quelle-d82b7679ec0f9d98",
+    "/quellen/quelle-e7464f97069f2958",
+    "/quellen/quelle-453b1bfc2e4a6276"
+  ],
+  "breakpoints": [
+    320,
+    360,
+    375,
+    390,
+    428,
+    768,
+    1024,
+    1280,
+    1440
+  ],
+  "checks": 63,
+  "results": [
+    {
+      "route": "/laender/baden-wuerttemberg/mandat-und-praxis",
+      "width": 320,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 320,
+        "viewportWidth": 320,
+        "h1Count": 1,
+        "assessmentCount": 17,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/baden-wuerttemberg/mandat-und-praxis",
+      "width": 360,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 360,
+        "viewportWidth": 360,
+        "h1Count": 1,
+        "assessmentCount": 17,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/baden-wuerttemberg/mandat-und-praxis",
+      "width": 375,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 375,
+        "viewportWidth": 375,
+        "h1Count": 1,
+        "assessmentCount": 17,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/baden-wuerttemberg/mandat-und-praxis",
+      "width": 390,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "h1Count": 1,
+        "assessmentCount": 17,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/baden-wuerttemberg/mandat-und-praxis",
+      "width": 428,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 428,
+        "viewportWidth": 428,
+        "h1Count": 1,
+        "assessmentCount": 17,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/baden-wuerttemberg/mandat-und-praxis",
+      "width": 768,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 768,
+        "viewportWidth": 768,
+        "h1Count": 1,
+        "assessmentCount": 17,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/baden-wuerttemberg/mandat-und-praxis",
+      "width": 1024,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1024,
+        "viewportWidth": 1024,
+        "h1Count": 1,
+        "assessmentCount": 17,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/baden-wuerttemberg/mandat-und-praxis",
+      "width": 1280,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1280,
+        "viewportWidth": 1280,
+        "h1Count": 1,
+        "assessmentCount": 17,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/baden-wuerttemberg/mandat-und-praxis",
+      "width": 1440,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1440,
+        "viewportWidth": 1440,
+        "h1Count": 1,
+        "assessmentCount": 17,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/baden-wuerttemberg",
+      "width": 320,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 320,
+        "viewportWidth": 320,
+        "h1Count": 1,
+        "assessmentCount": 0,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/baden-wuerttemberg",
+      "width": 360,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 360,
+        "viewportWidth": 360,
+        "h1Count": 1,
+        "assessmentCount": 0,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/baden-wuerttemberg",
+      "width": 375,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 375,
+        "viewportWidth": 375,
+        "h1Count": 1,
+        "assessmentCount": 0,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/baden-wuerttemberg",
+      "width": 390,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "h1Count": 1,
+        "assessmentCount": 0,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/baden-wuerttemberg",
+      "width": 428,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 428,
+        "viewportWidth": 428,
+        "h1Count": 1,
+        "assessmentCount": 0,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/baden-wuerttemberg",
+      "width": 768,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 768,
+        "viewportWidth": 768,
+        "h1Count": 1,
+        "assessmentCount": 0,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/baden-wuerttemberg",
+      "width": 1024,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1024,
+        "viewportWidth": 1024,
+        "h1Count": 1,
+        "assessmentCount": 0,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/baden-wuerttemberg",
+      "width": 1280,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1280,
+        "viewportWidth": 1280,
+        "h1Count": 1,
+        "assessmentCount": 0,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/baden-wuerttemberg",
+      "width": 1440,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1440,
+        "viewportWidth": 1440,
+        "h1Count": 1,
+        "assessmentCount": 0,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/baden-wuerttemberg/regierung",
+      "width": 320,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 320,
+        "viewportWidth": 320,
+        "h1Count": 1,
+        "assessmentCount": 0,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/baden-wuerttemberg/regierung",
+      "width": 360,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 360,
+        "viewportWidth": 360,
+        "h1Count": 1,
+        "assessmentCount": 0,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/baden-wuerttemberg/regierung",
+      "width": 375,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 375,
+        "viewportWidth": 375,
+        "h1Count": 1,
+        "assessmentCount": 0,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/baden-wuerttemberg/regierung",
+      "width": 390,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "h1Count": 1,
+        "assessmentCount": 0,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/baden-wuerttemberg/regierung",
+      "width": 428,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 428,
+        "viewportWidth": 428,
+        "h1Count": 1,
+        "assessmentCount": 0,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/baden-wuerttemberg/regierung",
+      "width": 768,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 768,
+        "viewportWidth": 768,
+        "h1Count": 1,
+        "assessmentCount": 0,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/baden-wuerttemberg/regierung",
+      "width": 1024,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1024,
+        "viewportWidth": 1024,
+        "h1Count": 1,
+        "assessmentCount": 0,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/baden-wuerttemberg/regierung",
+      "width": 1280,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1280,
+        "viewportWidth": 1280,
+        "h1Count": 1,
+        "assessmentCount": 0,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/laender/baden-wuerttemberg/regierung",
+      "width": 1440,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1440,
+        "viewportWidth": 1440,
+        "h1Count": 1,
+        "assessmentCount": 0,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/suche",
+      "width": 320,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 320,
+        "viewportWidth": 320,
+        "h1Count": 1,
+        "assessmentCount": 99,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/suche",
+      "width": 360,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 360,
+        "viewportWidth": 360,
+        "h1Count": 1,
+        "assessmentCount": 99,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/suche",
+      "width": 375,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 375,
+        "viewportWidth": 375,
+        "h1Count": 1,
+        "assessmentCount": 99,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/suche",
+      "width": 390,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "h1Count": 1,
+        "assessmentCount": 99,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/suche",
+      "width": 428,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 428,
+        "viewportWidth": 428,
+        "h1Count": 1,
+        "assessmentCount": 99,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/suche",
+      "width": 768,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 768,
+        "viewportWidth": 768,
+        "h1Count": 1,
+        "assessmentCount": 99,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/suche",
+      "width": 1024,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1024,
+        "viewportWidth": 1024,
+        "h1Count": 1,
+        "assessmentCount": 99,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/suche",
+      "width": 1280,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1280,
+        "viewportWidth": 1280,
+        "h1Count": 1,
+        "assessmentCount": 99,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/suche",
+      "width": 1440,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1440,
+        "viewportWidth": 1440,
+        "h1Count": 1,
+        "assessmentCount": 99,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/quellen/quelle-d82b7679ec0f9d98",
+      "width": 320,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 320,
+        "viewportWidth": 320,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/quellen/quelle-d82b7679ec0f9d98",
+      "width": 360,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 360,
+        "viewportWidth": 360,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/quellen/quelle-d82b7679ec0f9d98",
+      "width": 375,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 375,
+        "viewportWidth": 375,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/quellen/quelle-d82b7679ec0f9d98",
+      "width": 390,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/quellen/quelle-d82b7679ec0f9d98",
+      "width": 428,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 428,
+        "viewportWidth": 428,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/quellen/quelle-d82b7679ec0f9d98",
+      "width": 768,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 768,
+        "viewportWidth": 768,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/quellen/quelle-d82b7679ec0f9d98",
+      "width": 1024,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1024,
+        "viewportWidth": 1024,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/quellen/quelle-d82b7679ec0f9d98",
+      "width": 1280,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1280,
+        "viewportWidth": 1280,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/quellen/quelle-d82b7679ec0f9d98",
+      "width": 1440,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1440,
+        "viewportWidth": 1440,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/quellen/quelle-e7464f97069f2958",
+      "width": 320,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 320,
+        "viewportWidth": 320,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/quellen/quelle-e7464f97069f2958",
+      "width": 360,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 360,
+        "viewportWidth": 360,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/quellen/quelle-e7464f97069f2958",
+      "width": 375,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 375,
+        "viewportWidth": 375,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/quellen/quelle-e7464f97069f2958",
+      "width": 390,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/quellen/quelle-e7464f97069f2958",
+      "width": 428,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 428,
+        "viewportWidth": 428,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/quellen/quelle-e7464f97069f2958",
+      "width": 768,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 768,
+        "viewportWidth": 768,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/quellen/quelle-e7464f97069f2958",
+      "width": 1024,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1024,
+        "viewportWidth": 1024,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/quellen/quelle-e7464f97069f2958",
+      "width": 1280,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1280,
+        "viewportWidth": 1280,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/quellen/quelle-e7464f97069f2958",
+      "width": 1440,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1440,
+        "viewportWidth": 1440,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/quellen/quelle-453b1bfc2e4a6276",
+      "width": 320,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 320,
+        "viewportWidth": 320,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/quellen/quelle-453b1bfc2e4a6276",
+      "width": 360,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 360,
+        "viewportWidth": 360,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/quellen/quelle-453b1bfc2e4a6276",
+      "width": 375,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 375,
+        "viewportWidth": 375,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/quellen/quelle-453b1bfc2e4a6276",
+      "width": 390,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 390,
+        "viewportWidth": 390,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/quellen/quelle-453b1bfc2e4a6276",
+      "width": 428,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 428,
+        "viewportWidth": 428,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/quellen/quelle-453b1bfc2e4a6276",
+      "width": 768,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 768,
+        "viewportWidth": 768,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/quellen/quelle-453b1bfc2e4a6276",
+      "width": 1024,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1024,
+        "viewportWidth": 1024,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/quellen/quelle-453b1bfc2e4a6276",
+      "width": 1280,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1280,
+        "viewportWidth": 1280,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    },
+    {
+      "route": "/quellen/quelle-453b1bfc2e4a6276",
+      "width": 1440,
+      "httpStatus": 200,
+      "navigationError": null,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "metrics": {
+        "documentWidth": 1440,
+        "viewportWidth": 1440,
+        "h1Count": 1,
+        "assessmentCount": 1,
+        "coalitionHeading": true,
+        "objectLeak": false,
+        "internalIdLeak": false,
+        "rawTokens": []
+      },
+      "axeViolations": []
+    }
+  ],
+  "failures": []
+}

@@ -60,6 +60,10 @@ try {
     WOEK_STRATEGY_BASE_URL: baseUrl,
     WOEK_STRATEGY_SOURCE_VS_VIEW_REPORT: path.join(auditRoot, "SOURCE-VS-VIEW-STRATEGY-ACTION-PLAN.json"),
   });
+  await run(process.execPath, ["node_modules/tsx/dist/cli.mjs", "scripts/quality/check-bw-coalition-source-vs-view.ts"], {
+    WOEK_BW_COALITION_BASE_URL: baseUrl,
+    WOEK_BW_COALITION_SOURCE_VS_VIEW_REPORT: path.join(auditRoot, "SOURCE-VS-VIEW-BW-COALITION-2026-2031.json"),
+  });
   await run(process.execPath, ["scripts/quality/check-b07-golden-state.mjs"], {
     WOEK_GOLDEN_STATE_BASE_URL: baseUrl,
     WOEK_GOLDEN_STATE_REPORT: path.join(auditRoot, "GOLDEN-STATE-B07.json"),

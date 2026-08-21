@@ -31,6 +31,7 @@ export type SearchableCase = SearchableCaseBase & { assessment?: OverviewAssessm
 export type SearchableFachanalyse = Pick<Fachanalyse, "slug" | "title" | "subtitle" | "type" | "status" | "scope" | "summary" | "focusAreas">;
 export type SearchableGovernmentImpact = {
   impactCaseId: string;
+  href?: string;
   title: string;
   summary: string;
   analysisMode: "IMPACT_POTENTIAL_EX_ANTE" | "IMPACT_REALITY_CHECK";

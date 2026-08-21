@@ -35,6 +35,8 @@
     "check:communication-media-responsive": "node scripts/quality/check-communication-media-responsive.cjs",
     "check:strategy-action-plan-source-vs-view": "node scripts/quality/check-strategy-action-plan-source-vs-view.mjs",
     "check:strategy-action-plan-responsive": "node scripts/quality/check-strategy-action-plan-responsive.cjs",
+    "check:bw-coalition-source-vs-view": "tsx scripts/quality/check-bw-coalition-source-vs-view.ts",
+    "check:bw-coalition-responsive": "node scripts/quality/check-bw-coalition-responsive.cjs",
     "recommendations:import-approved-batch": "tsx scripts/import-approved-recommendation-batch.ts",
     "recommendations:sync-approved-handoff": "tsx scripts/sync-approved-recommendation-handoff.ts",
     "recommendations:migrate-approved-am": "tsx scripts/migrate-approved-recommendation-am-2-3.ts",

@@ -11,6 +11,42 @@ type Block =
 
 type Section = { heading: Extract<Block, { type: "heading" }> | null; blocks: Block[] };
 
+const publicReviewTermLabels: Record<string, string> = {
+  AMBIVALENT_POSITIVE_POTENTIAL: "Gegenläufige Wirkungsrichtungen mit positivem Potenzial",
+  BOUNDARY_REVIEW: "Schutzgrenzen werden geprüft",
+  BOUNDARY_WATCH: "Schutzgrenzen besonders beobachten",
+  EU_DEPENDENCY: "Abhängigkeit von europäischem Handeln",
+  FACT_ONLY_OR_RELATIONSHIP_LAYER: "Fakten- oder Verknüpfungsebene",
+  HIGHER_LAW: "Höherrangiges Recht ist zu prüfen",
+  IMPACT_POTENTIAL_EX_ANTE: "Wirkungspotenzial vor der Umsetzung",
+  INITIAL_FACHREVIEW: "Initialer Fachreview",
+  INITIAL_MATERIALITY_REVIEW: "Initiale Materialitätsprüfung",
+  LAND_FULL: "Vollständige Landeszuständigkeit",
+  LAND_FULL_OR_HIGH: "Vollständige oder weitreichende Landeszuständigkeit",
+  LAND_PARTIAL_SHARED: "Geteilte oder teilweise Landeszuständigkeit",
+  LAND_ROUTE_WITH_CONSTRAINTS: "Landesweg mit rechtlichen oder praktischen Grenzen",
+  LIKELY_NOT_IMPLEMENTABLE_AS_STATED: "In der vorliegenden Form voraussichtlich nicht umsetzbar",
+  MUNICIPAL_DEPENDENCY: "Kommunale Mitwirkung erforderlich",
+  NO_PROGRAMME_FOUND: "Noch kein Programm aus offizieller Quelle gefunden",
+  OBSERVATION_ONLY: "Beobachtungsstand ohne Wirkungszurechnung",
+  PORTFOLIO_CASE: "Heterogener Sammelgegenstand",
+  POSITIVE_POTENTIAL_WITH_CONDITIONS: "Positives Potenzial unter Bedingungen",
+  POSITIVE_POTENTIAL_WITH_MATERIAL_EXECUTION_RISK: "Positives Potenzial mit materiellem Umsetzungsrisiko",
+  PROGRAMME_ANALYSIS: "Wahlprogrammanalyse",
+  PROGRAMME_ANALYSIS_IN_PROGRESS: "Wahlprogrammanalyse in Arbeit",
+  REALITY_CHECK_NOT_MATURE: "Reality Check noch nicht reif",
+  REALITY_CHECK_NOT_YET_MATURE: "Reality Check noch nicht reif",
+  REQUIRES_FEDERAL_FRAMEWORK: "Bundesrechtlicher Rahmen erforderlich",
+  REQUIRES_FEDERAL_OR_EU_ACTION_FOR_GENERAL_BAN: "Für ein allgemeines Verbot ist Bundes- oder EU-Handeln erforderlich",
+  SOURCE_NOT_YET_AVAILABLE: "Offizielle Quelle noch nicht verfügbar",
+};
+
+function publicReviewText(value: string) {
+  return value
+    .replace(/\b(?:BW|BE|MV|RP|ST)-IMPACT-\d{4}-\d{2}\b\s*[-–:]?\s*/g, "")
+    .replace(/\b[A-Z][A-Z0-9]+(?:_[A-Z0-9]+)+\b/g, (token) => publicReviewTermLabels[token] ?? "");
+}
+
 function isBlockStart(line: string) {
   return /^#{1,6}\s/.test(line) || /^---+$/.test(line) || /^-\s+/.test(line) || /^\d+\.\s+/.test(line);
 }
@@ -65,7 +101,7 @@ function stripTrailingUrlPunctuation(value: string) {
 }
 
 function renderInline(text: string): ReactNode[] {
-  const tokens = text.split(/(`[^`]+`|\*\*[^*]+\*\*|https?:\/\/[^\s]+)/g).filter(Boolean);
+  const tokens = publicReviewText(text).split(/(`[^`]+`|\*\*[^*]+\*\*|https?:\/\/[^\s]+)/g).filter(Boolean);
   return tokens.map((token, index) => {
     if (token.startsWith("`") && token.endsWith("`")) return <code className={styles.code} key={`${index}-${token}`}>{token.slice(1, -1)}</code>;
     if (token.startsWith("**") && token.endsWith("**")) return <strong key={`${index}-${token}`}>{token.slice(2, -2)}</strong>;
@@ -123,7 +159,7 @@ export default function ApprovedStateReview({ markdown, meta }: { markdown: stri
     </div>
 
     {cases.length > 0 && <nav className={styles.jumpNav} aria-label="Sprungnavigation der Länderanalyse">
-      {cases.slice(0, 14).map((section, index) => <a key={`${index}-${section.heading?.text}`} href={`#${headingId(section.heading?.text ?? `Fall ${index + 1}`, index + 100)}`}>{section.heading?.text ?? `Fall ${index + 1}`}</a>)}
+      {cases.slice(0, 14).map((section, index) => <a key={`${index}-${section.heading?.text}`} href={`#${headingId(section.heading?.text ?? `Fall ${index + 1}`, index + 100)}`}>{renderInline(section.heading?.text ?? `Fall ${index + 1}`)}</a>)}
     </nav>}
 
     <article className={styles.document}>
