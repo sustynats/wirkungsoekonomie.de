@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "status": "PRE_CUTOVER_SOURCE_LOCK",
   "curriculum_version": "4.0",
   "source_repo": "sustynats/woek-akademie-app",
@@ -22,6 +22,19 @@
     "expected_total_lectures": 120,
     "review_status_required": "FACH_ENDCONTENT_REVIEWED"
   },
+  "offering_projection": {
+    "source_root": "content/lehrgaenge/akademie/curriculum-v4/offerings",
+    "target_root": "content/studienskripte/v4/angebote",
+    "review_status_required": "FACH_ENDCONTENT_REVIEWED",
+    "expected_lecture_counts": {
+      "grundlagen": 7,
+      "wirkungsmanagement": 10,
+      "wirkungscontrolling": 10,
+      "multiplikatoren": 8,
+      "demokratie-buerger": 11,
+      "demokratie-medien": 12
+    }
+  },
   "public_projection": {
     "target_root": "content/studienskripte/v4/grundstudium",
     "manifest_path": "content/studienskripte/v4/PUBLIC_MASTER_MANIFEST.json",
@@ -33,12 +46,14 @@
     "NO_APP_ONLY_PUBLIC_SCRIPT_PARALLEL_TRUTH",
     "PUBLIC_MASTER_SOURCE_PROVENANCE_PRESENT",
     "NO_ASSESSMENT_SECRET_LEAK",
-    "ACADEMY_WEB_APP_CONTENT_PARITY"
+    "ACADEMY_WEB_APP_CONTENT_PARITY",
+    "ACADEMY_OFFERING_CATALOG_WEB_APP_PARITY"
   ],
   "notes": [
     "Der Lock ist absichtlich auf eine exakte App-SHA gepinnt; bewegliche Branches sind keine Veröffentlichungsquelle.",
     "Der Curriculum-Manifest- und State-Sustainability-Manifest-Git-Blob sind zusätzlich festgeschrieben; ein Import gegen eine andere Fachbaseline muss den Lock explizit aktualisieren.",
-    "Die 120er-Zahl ist aus dem fachgeprüften v4-Quellstatus abgeleitet und darf nicht als unabhängige Parallelwahrheit gepflegt werden.",
+    "Die 120 Studienlektionen und 58 Lektionen der sechs aktiven Weiterbildungsfamilien werden ausschließlich aus fachgeprüften v4-Artefakten projiziert.",
+    "Geschützte Assessment-/Lösungsabschnitte sind kein Bestandteil des öffentlichen Public-Masters.",
     "v3.2 bleibt historische Version und wird durch diesen Lock nicht überschrieben."
   ]
 }
