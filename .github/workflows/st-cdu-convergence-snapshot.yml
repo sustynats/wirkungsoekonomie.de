@@ -1,4 +1,4 @@
-name: ST CDU convergence review snapshots
+name: ST CDU global convergence materialization
 
 on:
   push:
@@ -6,6 +6,7 @@ on:
       - woek/st-cdu-source-manifest-p89-20260821
     paths:
       - tools/materialize_st_cdu_review_snapshots.py
+      - tools/build_st_cdu_global_convergence.py
       - .github/workflows/st-cdu-convergence-snapshot.yml
   workflow_dispatch:
 
@@ -14,7 +15,7 @@ permissions:
   issues: read
 
 concurrency:
-  group: st-cdu-convergence-snapshot-${{ github.ref }}
+  group: st-cdu-global-convergence-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -28,18 +29,31 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Snapshot canonical source-bound #234 reviews
+      - name: Snapshot exact canonical source-bound #234 reviews
         env:
           GH_TOKEN: ${{ github.token }}
         run: python tools/materialize_st_cdu_review_snapshots.py
-      - name: Commit snapshots when changed
+      - name: Materialize missing canonical shards and global explicit-role union
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python tools/build_st_cdu_global_convergence.py
+      - name: Validate generated JSON
+        run: |
+          python - <<'PY'
+          import json, pathlib
+          root = pathlib.Path('woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt')
+          for p in root.glob('ltw-2026-st-cdu-*.json'):
+              json.loads(p.read_text(encoding='utf-8'))
+          print('JSON validation PASS')
+          PY
+      - name: Commit deterministic convergence outputs when changed
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -- woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots
+          git add -- woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt
           if git diff --cached --quiet; then
-            echo 'No snapshot changes.'
+            echo 'No convergence output changes.'
           else
-            git commit -m 'chore(cdu): materialize canonical #234 review snapshots [skip ci]'
+            git commit -m 'data(cdu): materialize canonical convergence state [skip ci]'
             git push origin HEAD:woek/st-cdu-source-manifest-p89-20260821
           fi
