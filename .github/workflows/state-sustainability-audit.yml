@@ -23,7 +23,7 @@ jobs:
           fetch-depth: 0
       - name: Verify and apply release payload
         env:
-          EXPECTED_REMOTE_HEAD: 9295be420124185deace0e582b0aef0f9840f677
+          EXPECTED_REMOTE_HEAD: de7bdc5b250adcb53204e5af54b02b72bc21f42f
           EXPECTED_PAYLOAD_BASE: cdd29f99dc32199caa9762b32508364099ea0b0b
           PAYLOAD_REF: refs/codex/state-release-payload
           PAYLOAD_SHA256: 67431a6f15e972b06b94807f4ac7f7e7785aed02c5fc5fca85b376720225c9d0
@@ -38,7 +38,14 @@ jobs:
           test "$(git rev-parse refs/remotes/codex/state-release-payload^)" = "$EXPECTED_PAYLOAD_BASE"
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git cherry-pick refs/remotes/codex/state-release-payload
+          if ! git cherry-pick refs/remotes/codex/state-release-payload; then
+            mapfile -t conflicts < <(git diff --name-only --diff-filter=U | sort)
+            mapfile -t expected < <(printf '%s\n'               assets/data/glossary-lookup.json               assets/data/glossary-model.json               content/quellenarchiv/glossary-source-records.json               public/data/glossary-version-history.json               public/data/glossary.terms.json               reports/content-reference-report.md               reports/glossary-relation-curation.json | sort)
+            test "${conflicts[*]}" = "${expected[*]}"
+            git checkout --theirs -- "${conflicts[@]}"
+            git add -- "${conflicts[@]}"
+            GIT_EDITOR=true git cherry-pick --continue
+          fi
           git rm -r .codex-transfer .github/workflows/codex-release-transfer.yml
           git commit --amend --no-edit
           git fetch origin "$TARGET_BRANCH"
