@@ -1,0 +1,113 @@
+{
+  "manifest_id": "ST-BSW-SOURCE-UNIT-MANIFEST-RECONCILIATION-R08",
+  "manifest_status": "IN_PROGRESS_NOT_AUTHORITATIVE",
+  "scope": "Sachsen-Anhalt 2026 BSW Wahlprogramm only",
+  "source_key": "ltw-2026-st-bsw",
+  "supersedes_working_manifest": "ST-BSW-SOURCE-UNIT-MANIFEST-RECONCILIATION-R07",
+  "primary_source": {
+    "title": "BSW Sachsen-Anhalt – Wahlprogramm zur Landtagswahl 2026",
+    "decision_date": "2026-03-07",
+    "url": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf",
+    "physical_pages": 90
+  },
+  "historical_register": {
+    "path": "woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-bsw-zusagen.md",
+    "git_blob": "43536bd8b59408b989681841ca334c8206b7d5dd",
+    "source_hash": "ee2f8bb5ab2f123db74c53190e207627d504ae69382c653db71945161d833e8c",
+    "rows": 311,
+    "fach_review_status": "311_OF_311_TERMINAL_WORKING_BASELINE_ONLY",
+    "authoritative_denominator": false
+  },
+  "inherited_closed_gates": {
+    "full_physical_page_coverage": "PASS_PAGE_WIDE_CLASSIFICATION",
+    "frontmatter_p0_p6": "PASS_FRONTMATTER_RECONCILED",
+    "p7_p89": "PASS_SEGMENT_COVERAGE",
+    "p87_p89_prior_gap": "CLOSED_FOR_THIS_SOURCE_SPAN",
+    "known_parent_edge_queue_unresolved": 0,
+    "a07_record_set": "PASS_42_UNIQUE",
+    "a04_a05_p37_boundary": "PASS_DISTINCT_EFFECT_OBJECTS"
+  },
+  "final_page_context_reconciliation": {
+    "status": "PASS_FINAL_PAGE_CONTEXT_CLASSIFIED",
+    "printed_page_87": {
+      "lines_2443_2448": {
+        "role": "CONTEXT_ONLY_TRANSFORMATION_NARRATIVE",
+        "active_effect_leaf": false
+      },
+      "lines_2449_2461": {
+        "role": "PROBLEM_HISTORY_CONTEXT_PLUS_CURRENT_SAME_0306_WHERE_EFFECT_BEARING",
+        "active_effect_leaf_rule": "Only canonical current 0306 Treuhand-Aufarbeitung is active; explanatory history and bridge-to-eastern-Europe prose are context unless separately represented by an already terminal effect object."
+      },
+      "lines_2462_2475": {
+        "role": "DEMOCRACY_PROBLEM_CONTEXT_PLUS_PARTICIPATION_EFFECT_OBJECTS",
+        "active_effect_leaf_rule": "Concrete participation mechanisms are represented by the terminal A09/current leaf set; narrative trust/protest framing is not an additional leaf."
+      }
+    },
+    "printed_page_88": {
+      "lines_2476_2506": {
+        "role": "EFFECT_OBJECTS_ALREADY_RECONCILED_BY_A09_OR_CURRENT_SAME",
+        "note": "Includes current 0308 participation/remuneration and A09 restore leaves for young-leader training, rural doctor/teacher settlement incentives, board-accountability, local modernisation tax relief, live-work/cooperative projects, trial-living stipends, bridge years and sustainable regional agriculture. No new post-A09 source gap is introduced here."
+      }
+    },
+    "printed_page_89": {
+      "lines_2507": {
+        "role": "OUTCOME_VALUE_CHAIN_CONTINUATION_OF_PRECEDING_AGRICULTURE_EFFECT_OBJECT",
+        "active_effect_leaf": false,
+        "note": "Regional spending/community-strength sentence is rationale/outcome continuation, not a separate intervention."
+      },
+      "lines_2508_2513": {
+        "role": "CONTEXT_ONLY_COMMUNITY_HISTORY_AND_PROBLEM_FRAME",
+        "active_effect_leaf": false
+      },
+      "lines_2514_2515": {
+        "role": "GOAL_PARENT_PLUS_CURRENT_SAME_0311_EFFECT_OBJECT",
+        "canonical_active_leaf": "ltw-2026-st-bsw-0311",
+        "active_effect_leaf": true,
+        "note": "The generic goal 'Gemeinschaft wieder stärken' is context/goal; the concrete policy mechanism is the already terminal current 0311 support for community initiatives."
+      },
+      "lines_2515_2517": {
+        "role": "CLOSING_RATIONALE_AND_CAMPAIGN_NARRATIVE_CONTEXT_ONLY",
+        "active_effect_leaf": false
+      }
+    },
+    "new_effect_objects_after_a09": 0,
+    "new_restore_gaps_after_a09": 0,
+    "new_duplicate_relations_after_a09": 0,
+    "closing_context_unresolved": 0
+  },
+  "cross_batch_dedup": {
+    "frontmatter_body_duplicate_co2": "RESOLVED_TO_A03_0020",
+    "known_current_parent_edge_queue": "RESOLVED_ZERO",
+    "a07_38_vs_42": "RESOLVED_ENUMERATED_SET_42",
+    "a04_a05_p37_boundary": "PASS_DISTINCT_EFFECT_OBJECTS",
+    "final_page_context": "PASS_CLASSIFIED_NO_NEW_EFFECT_OBJECTS",
+    "semantic_cross_batch_dedup": "IN_PROGRESS",
+    "required_before_freeze": [
+      "enumerate every psr-a01-a06/a08-a09 and psr-front record as a concrete stable ID in one union manifest",
+      "resolve every remaining DUPLICATE_RELATION to exactly one canonical active leaf",
+      "materialize final role row for all 311 historical current IDs, including the 220 fach-terminal default rows",
+      "validate parent/child/SAME/supersedes graph is acyclic",
+      "prove 0 unresolved ABSENT/PARTIAL_PARENT/OVERMERGED/TRUNCATED/RESTORE_GAP records corpus-wide",
+      "prove every active final leaf has terminal fach status and required object-specific #241 layers"
+    ]
+  },
+  "completion_state": {
+    "ST_BSW_PRIMARY_SOURCE_PARITY_FULL_PROGRAM": "READY_FOR_CROSS_BATCH_DEDUP_AND_FINAL_MANIFEST",
+    "ST_BSW_AUTHORITATIVE_DENOMINATOR": null,
+    "BSW_FULL_PROGRAM_FACH_COMPLETE": false,
+    "source_restore_overmerge_truncation_gaps": "NOT_YET_PROVEN_ZERO_CORPUS_WIDE",
+    "do_not_arithmetically_add_311_and_batch_counts": true
+  },
+  "provenance": {
+    "github_issue": "sustynats/wirkungsoekonomie.de#234",
+    "umbrella_issue": "sustynats/wirkungsoekonomie.de#241",
+    "official_source_lines_checked": "P87 2443-2475; P88 2476-2506; P89 2507-2517",
+    "rules": [
+      "historical IDs and source text immutable",
+      "no fach judgement from templates, keywords, scores or party identity",
+      "no Recommendation synthesis",
+      "no DNS keyword mapping",
+      "source-bound restore before judgement"
+    ]
+  }
+}
