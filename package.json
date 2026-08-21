@@ -20,6 +20,8 @@
     "normalize:reference-readers": "node scripts/reference/normalize-reference-reader-seo.mjs",
     "check:reference-source-archive-links": "node scripts/quality/check-reference-source-archive-links.mjs",
     "preview": "python3 -m http.server 8765",
+    "check:hosting-cost": "node scripts/ops/check-hosting-cost-guard.mjs",
+    "check:hosting-cost:vercel": "node scripts/ops/check-vercel-account-cost-guard.mjs",
     "normalize:footer": "node scripts/site/normalize-site-footer.mjs",
     "import:all": "node scripts/import/all.mjs",
     "import:mainwork": "python3 scripts/import/build-mainwork-reference.py",
