@@ -17,11 +17,11 @@ STATE_BLOCK = f'''\n<!-- {MARKER} -->
 <section class="section section-muted" id="staatliche-nachhaltigkeitsarchitektur" aria-labelledby="staatliche-nachhaltigkeitsarchitektur-title">
   <div class="section-header">
     <p class="hero-kicker">Bestehende Staatsarchitektur und WÖk-Ergänzung</p>
-    <h2 id="staatliche-nachhaltigkeitsarchitektur-title">Deutschland prüft Folgen bereits. Die WÖk führt die Ebenen systematisch zusammen.</h2>
-    <p>Für Bundesregelungsvorhaben existiert bereits eine institutionalisierte Prüfarchitektur: Die Deutsche Nachhaltigkeitsstrategie (DNS) verbindet Ziele, Indikatoren und Monitoring. Die Gemeinsame Geschäftsordnung der Bundesministerien verlangt Ziel und Notwendigkeit, Sachverhalt und Erkenntnisquellen, andere Lösungsmöglichkeiten sowie wesentliche beabsichtigte und unbeabsichtigte Gesetzesfolgen. Die Nachhaltigkeitsprüfung wird dabei unter anderem durch eNAP/eGFA unterstützt. Auch eine spätere Überprüfung beabsichtigter Wirkungen, der Kosten-Ergebnis-Relation und eingetretener Nebenwirkungen ist in § 44 Abs. 7 GGO angelegt.</p>
+    <h2 id="staatliche-nachhaltigkeitsarchitektur-title">Deutschland prüft Folgen bereits - aber mit unterschiedlichen Verfahren je nach Entscheidungstyp.</h2>
+    <p>Für Bundesregelungsvorhaben bilden GGO, Gesetzesfolgenabschätzung, Nachhaltigkeitsprüfung und eNAP/eGFA eine institutionalisierte Prüfarchitektur. § 43 GGO umfasst unter anderem Ziel und Notwendigkeit, Sachverhalt und Erkenntnisquellen sowie andere Lösungsmöglichkeiten; § 44 GGO beabsichtigte Wirkungen, unbeabsichtigte Nebenwirkungen und Angaben zur späteren Überprüfung. Für finanzwirksame Maßnahmen verlangt § 7 BHO angemessene Wirtschaftlichkeitsuntersuchungen. Die VV-BHO zu § 7 konkretisiert für Planung und Erfolgskontrolle unter anderem Ausgangslage und Bedarf, hinreichend konkrete Ziele und Zielkonflikte, Lösungsvergleich sowie Zielerreichungs-, Wirkungs- und Wirtschaftlichkeitskontrolle. Die Wirkungskontrolle fragt nach dem ursächlichen Beitrag und bezieht beabsichtigte und unbeabsichtigte Wirkungen sowie Risiken ein. Die Deutsche Nachhaltigkeitsstrategie (DNS), KSG § 13, KAnG § 8 und sektorale Evaluationsregime bilden weitere, nur bei sachlicher Anwendbarkeit heranzuziehende Schichten.</p>
     <p><strong>Die Wirkungsökonomie ersetzt diese Architektur nicht.</strong> Sie ergänzt sie um eine durchgängig objektspezifische Verbindung von Problemprüfung, Zielprüfung, expliziten Wirkpfaden (A→M→ΔZ→R), Wirkungen erster bis dritter Ordnung und Kaskaden, Verteilung und Resilienz, Gegenfaktum und Zurechnung, Omissions-/Delivery-/Kohärenzprüfung, strukturiertem Optionsvergleich unter denselben Ziel- und Schutzräumen, Nichtkompensation harter Schutzgrenzen sowie wiederholbarem Reality Check und versionierter Lernschleife.</p>
     <p>Ein Bezug zu DNS, SDGs oder Indikatoren ist dabei eine Ziel- und Referenzinformation - kein automatischer Kausalitätsnachweis. Indikator ist nicht Wirkung, Output ist nicht Outcome und Beobachtung ist nicht Zurechnung.</p>
-    <p><a class="text-link" href="/methodik/">Zur WÖk-Methodik</a> · <a class="text-link" href="/methodik/datenbasis.html">Zu Daten- und Quellenfunktionen</a> · <a class="text-link" href="/blog/enap-woek-benchmark-fuenf-bundesvorhaben.html">Zum Fünf-Fälle-Benchmark</a></p>
+    <p><a class="text-link" href="/methodik/">Zur WÖk-Methodik</a> · <a class="text-link" href="/methodik/datenbasis.html">Zu Daten- und Quellenfunktionen</a> · <a class="text-link" href="/quellenarchiv/wok-q-9048/">BHO § 7</a> · <a class="text-link" href="/quellenarchiv/wok-q-9049/">VV-BHO zu § 7</a> · <a class="text-link" href="/quellenarchiv/wok-q-9050/">BMF-Rahmen zwoH</a></p>
   </div>
 </section>\n'''
 
@@ -39,9 +39,10 @@ POLITIK_STATE_BLOCK = f'''\n<!-- {MARKER}-politik -->
 <section class="section section-muted" aria-labelledby="politik-bestehende-pruefung-title">
   <div class="section-header">
     <p class="hero-kicker">Anschluss statt Neuerfindung</p>
-    <h2 id="politik-bestehende-pruefung-title">Was der Bund bereits prüft - und was die WÖk zusätzlich verbindet</h2>
-    <p>Gesetzesfolgenabschätzung und Nachhaltigkeitsprüfung sind im Bund bereits verankert. § 43 GGO verlangt unter anderem Ziel und Notwendigkeit, Sachverhalt und Erkenntnisquellen sowie andere Lösungsmöglichkeiten. § 44 GGO umfasst beabsichtigte Wirkungen, unbeabsichtigte Nebenwirkungen, langfristige Nachhaltigkeitswirkungen und Angaben zu einer späteren Überprüfung. eNAP/eGFA unterstützt die Nachhaltigkeitsprüfung; die DNS liefert Ziele, Indikatoren und Monitoring.</p>
+    <h2 id="politik-bestehende-pruefung-title">Was der Bund bereits prüft - und was die WÖk entscheidungstypübergreifend verbindet</h2>
+    <p>Gesetzesfolgenabschätzung und Nachhaltigkeitsprüfung sind für Bundesregelungsvorhaben verankert. Für finanzwirksame Maßnahmen verlangen § 7 BHO und die VV-BHO Wirtschaftlichkeitsuntersuchungen sowie begleitende oder abschließende Erfolgskontrollen mit Zielerreichungs-, Wirkungs- und Wirtschaftlichkeitskontrolle. KSG § 13, KAnG § 8, DNS-Governance und sektorale Evaluationsregime kommen nur dort hinzu, wo sie für das konkrete Objekt gelten.</p>
     <p>Die WÖk setzt deshalb nicht bei der Behauptung an, Folgen würden bislang gar nicht geprüft. Ihr Zusatznutzen liegt in der systematischen Vollkette: <strong>Problemprüfung → Zielprüfung → Wirkmechanismus → Zustandsveränderung → System- und Verteilungsfolgen → Gegenfaktum/Zurechnung → Optionsvergleich → Reality Check → Lernen und Nachsteuern</strong>.</p>
+    <p><a class="text-link" href="/quellenarchiv/wok-q-9048/">BHO § 7</a> · <a class="text-link" href="/quellenarchiv/wok-q-9049/">VV-BHO zu § 7</a> · <a class="text-link" href="/quellenarchiv/wok-q-9050/">Ziel- und wirkungsorientierte Haushaltsführung</a></p>
   </div>
 </section>\n'''
 
@@ -51,10 +52,11 @@ MATERIALITY_BLOCK = f'''\n<!-- {MATERIALITY_MARKER} -->
     <p class="hero-kicker">Materialität statt Rechtsform</p>
     <h2 id="materialitaet-statt-rechtsform-title">Warum prüft die WÖk nicht nur Gesetze?</h2>
     <p><strong>Weil Wirkung nicht an der Rechtsform hängt.</strong> Ein Förderprogramm, eine Garantie, eine Infrastrukturinvestition, eine Beschaffungsentscheidung, eine Strategie, eine Verwaltungsentscheidung oder ein langfristiger Vertrag kann größere und längerfristigere Zustandsveränderungen auslösen als manches Gesetz. Deshalb fragt die WÖk zuerst, ob eine staatliche Entscheidung materiell genug für eine systematische Wirkungsprüfung ist. Erst danach wird geklärt, welcher staatliche Prüfrahmen für genau diesen Objekttyp und diese Zuständigkeit gilt.</p>
-    <p>Deutschland besitzt dafür mehrere Governance-Schichten: Für Bundesgesetze und -verordnungen sind GGO §§ 43/44, Gesetzesfolgenabschätzung, Nachhaltigkeitsprüfung und eNAP/eGFA besonders formalisiert. Die DNS 2025 bezieht auch Strategien, Programme, Ressortaktivitäten und Verwaltungspraxis ein. Für Bundesinvestitionen und Beschaffung enthält § 13 KSG Klima-, CO₂-Preis-, Alternativen- und Lebenszyklusbezüge; § 8 KAnG enthält ein fachübergreifendes Berücksichtigungsgebot für Klimaanpassung. Je Gegenstand können weitere Haushalts-, Vergabe-, Beteiligungs- oder Fachrechtsregeln gelten.</p>
-    <p>Außerhalb der Bundesrechtsetzung wird deshalb keine allgemeine eNAP-Pflicht behauptet. Nach aktuellem amtlichem Quellenstand gibt es kein einheitliches eNAP-ähnliches Pflichtverfahren, das jede materiell bedeutende Regierungsentscheidung unabhängig von ihrer Handlungsform standardisiert und öffentlich nachvollziehbar prüft. Das bedeutet nicht, dass andere Maßnahmen gar nicht geprüft werden. Die WÖk weist stattdessen objektspezifisch aus, welcher Rahmen gilt, was öffentlich dokumentiert ist und welche Wirkungskette unabhängig analysiert wird.</p>
+    <p><strong>Deutschland prüft Folgen bereits - aber mit unterschiedlichen Verfahren je nach Entscheidungstyp.</strong> Für Bundesgesetze und -verordnungen sind GGO §§ 43/44, Gesetzesfolgenabschätzung, Nachhaltigkeitsprüfung und eNAP/eGFA besonders formalisiert. Für alle finanzwirksamen Maßnahmen verlangt § 7 BHO angemessene Wirtschaftlichkeitsuntersuchungen; die VV-BHO konkretisiert Planung, Lösungsvergleich und Erfolgskontrolle einschließlich Zielerreichungs-, Wirkungs- und Wirtschaftlichkeitskontrolle. Die Ziel- und Wirkungsorientierung des Bundeshaushalts (zwoH) entwickelt diese Haushaltsarchitektur weiter.</p>
+    <p>Die DNS 2025 bezieht auch Strategien, Programme, Ressortaktivitäten und Verwaltungspraxis ein. KSG § 13, KAnG § 8 sowie Vergabe-, Beteiligungs- und Fachrechtsregeln gelten nur, wenn der jeweilige Gegenstand ihren Anwendungsbereich erfüllt. Eine fehlende öffentliche Dokumentation beweist weder fehlende Prüfung noch fehlende Alternativen oder Ex-post-Kontrolle.</p>
+    <p>Die WÖk legt darüber einen einheitlichen materialitätsbasierten Wirkungsmaßstab. Sie weist für jedes Objekt zuerst den anwendbaren staatlichen Prüfrahmen und dessen öffentlichen Dokumentationsstand aus. Danach zeigt sie unabhängig Konvergenz, zusätzliche Befunde oder begründete Abweichungen entlang derselben Problem-, Ziel-, Wirkpfad-, Options- und Reality-Check-Kette.</p>
     <p>Entscheidungen staatseigener oder staatlich dominierter Unternehmen bleiben als <strong>Unternehmensentscheidung</strong> von Eigentümerrolle, politischer Begleitung und belegbarer staatlicher Zurechnung getrennt. Staatliches Eigentum allein macht eine Unternehmensentscheidung weder zur Ministeriumsentscheidung noch zu einem GGO-/eNAP-pflichtigen Regelungsvorhaben.</p>
-    <p><a class="text-link" href="https://www.gesetze-im-internet.de/ksg/__13.html" rel="noopener noreferrer">KSG § 13</a> · <a class="text-link" href="https://www.gesetze-im-internet.de/kang/__8.html" rel="noopener noreferrer">KAnG § 8</a> · <a class="text-link" href="/methodik/externe-quellen.html">Amtliche Quellen und ihre Funktion</a></p>
+    <p><a class="text-link" href="/quellenarchiv/wok-q-9048/">BHO § 7</a> · <a class="text-link" href="/quellenarchiv/wok-q-9049/">VV-BHO zu § 7</a> · <a class="text-link" href="/quellenarchiv/wok-q-9050/">BMF-Rahmen zwoH</a> · <a class="text-link" href="/quellenarchiv/wok-q-9046/">KSG § 13</a> · <a class="text-link" href="/quellenarchiv/wok-q-9047/">KAnG § 8</a></p>
   </div>
 </section>\n'''
 
@@ -67,6 +69,18 @@ HISTORICAL_ADDENDUM = f'''\n<!-- {MARKER}-addendum -->
     <p>Der aktuelle WÖk-Ansatz verbindet Problem- und Zielprüfung, A→M→ΔZ→R, System-/Verteilungswirkungen, Gegenfaktum/Zurechnung, Omissions-/Delivery-/Kohärenzprüfung, Optionsvergleich, Nichtkompensation und wiederholbaren Reality Check.</p>
   </div>
 </section>\n'''
+
+HISTORICAL_SOURCE_ADDENDUM = '''
+<!-- state-assessment-bho-addendum-20260821 -->
+<section class="section section-muted" aria-labelledby="staatlicher-pruefrahmen-addendum-20260821-title">
+  <div class="section-header">
+    <p class="hero-kicker">Quellenpräzisierung · 21.08.2026</p>
+    <h2 id="staatlicher-pruefrahmen-addendum-20260821-title">Prüfregime unterscheiden sich nach Entscheidungstyp</h2>
+    <p>Ergänzend zum damaligen Text gilt: § 7 BHO und die VV-BHO verlangen für finanzwirksame Maßnahmen Wirtschaftlichkeitsuntersuchungen und Erfolgskontrollen. GGO/GFA/eNAP bleibt der Regelungsvorhaben-Untertyp; weitere objekt- und fachrechtliche Rahmen gelten nur in ihrem jeweiligen Anwendungsbereich. WÖk legt darüber einen einheitlichen materialitätsbasierten Wirkungsmaßstab, ohne vorhandene staatliche Prüfung zu negieren.</p>
+    <p><a class="text-link" href="/quellenarchiv/wok-q-9048/">BHO § 7</a> · <a class="text-link" href="/quellenarchiv/wok-q-9049/">VV-BHO zu § 7</a> · <a class="text-link" href="/quellenarchiv/wok-q-9050/">BMF-Rahmen zwoH</a></p>
+  </div>
+</section>
+'''
 
 
 def read(rel: str) -> str:
@@ -91,6 +105,39 @@ def add_before_main(rel: str, block: str, marker: str = MARKER) -> bool:
     return True
 
 
+def upsert_before_main(rel: str, block: str, marker: str = MARKER) -> bool:
+    """Keep one generator-owned public block current without touching other copy."""
+    path = ROOT / rel
+    if not path.exists():
+        return False
+    text = path.read_text(encoding="utf-8")
+    token = f"<!-- {marker} -->"
+    normalized = block.strip("\n")
+    start = text.find(token)
+    if start < 0:
+        return add_before_main(rel, block, marker)
+    end = text.find("</section>", start)
+    if end < 0:
+        raise RuntimeError(f"No closing section for {marker} in {rel}")
+    end += len("</section>")
+    updated = text[:start] + normalized + text[end:]
+    if updated == text:
+        return False
+    path.write_text(updated, encoding="utf-8")
+    return True
+
+
+def upsert_markdown_section(text: str, heading: str, body: str) -> str:
+    block = f"{heading}\n{body.strip()}\n"
+    start = text.find(heading)
+    if start < 0:
+        return text.rstrip() + "\n\n" + block
+    end = text.find("\n# ", start + len(heading))
+    if end < 0:
+        end = len(text)
+    return text[:start] + block.rstrip() + text[end:]
+
+
 def replace_once(rel: str, old: str, new: str) -> bool:
     text = read(rel)
     if new in text:
@@ -111,9 +158,9 @@ def main() -> int:
     new = "Unsere Steuerung bleibt in einem wichtigen Sinn wirkungsblind: Nicht weil Folgen grundsätzlich ungeprüft wären - für Bundesregelungsvorhaben bestehen bereits Gesetzesfolgenabschätzung, Nachhaltigkeitsprüfung, DNS-Monitoring und eNAP/eGFA. Die Lücke liegt in der durchgängigen Rückkopplung: Welche Zustände Entscheidungen bei Menschen, Ökosystemen und Institutionen tatsächlich verändern, wie sich Alternativen unter denselben Ziel- und Schutzräumen unterscheiden und was spätere Beobachtungen für die nächste Entscheidung bedeuten."
     if replace_once(rel, old, new):
         changed.append(rel)
-    if add_before_main(rel, STATE_BLOCK):
+    if upsert_before_main(rel, STATE_BLOCK):
         changed.append(rel)
-    if add_before_main(rel, MATERIALITY_BLOCK, MATERIALITY_MARKER):
+    if upsert_before_main(rel, MATERIALITY_BLOCK, MATERIALITY_MARKER):
         changed.append(rel)
 
     # Politics: correct the total-absence framing, make Problem Review precede Goal Review,
@@ -131,9 +178,9 @@ def main() -> int:
     new = "<ol class=\"scanner-path master-path\"><li>Problemprüfung: Gibt es das Problem - und was ist Ursache, Symptom oder Risiko?</li><li>Zielprüfung: Ist der Zielzustand problemadäquat und tragfähig?</li><li>Maßnahme / Gesetz / Haushalt</li><li>Wirkmechanismus und erwartete Zustandsveränderung</li><li>Daten, Indikatoren und Gegenfaktum</li><li>Wirkungen 1.-3. Ordnung, Verteilung, Resilienz und Schutzgrenzen</li><li>reale Alternativen und Optionsvergleich</li><li>Umsetzung in Haushalt / Recht / Steuer / Beschaffung</li><li>Beobachtung, Zurechnung und Reality Check</li><li>Lernen und Nachsteuern</li></ol>"
     if replace_once(rel, old, new):
         changed.append(rel)
-    if add_before_main(rel, POLITIK_STATE_BLOCK, f"{MARKER}-politik"):
+    if upsert_before_main(rel, POLITIK_STATE_BLOCK, f"{MARKER}-politik"):
         changed.append(rel)
-    if add_before_main(rel, MATERIALITY_BLOCK, MATERIALITY_MARKER):
+    if upsert_before_main(rel, MATERIALITY_BLOCK, MATERIALITY_MARKER):
         changed.append(rel)
 
     # Core living pages: add the same fair Anschluss architecture. The block is deliberately
@@ -152,7 +199,7 @@ def main() -> int:
         "wirkungswissenschaften/index.html",
     ]
     for rel in state_pages:
-        if add_before_main(rel, STATE_BLOCK):
+        if upsert_before_main(rel, STATE_BLOCK):
             changed.append(rel)
 
     materiality_pages = [
@@ -161,7 +208,7 @@ def main() -> int:
         "wirkungsfelder/staat-recht-demokratie/index.html",
     ]
     for rel in materiality_pages:
-        if add_before_main(rel, MATERIALITY_BLOCK, MATERIALITY_MARKER):
+        if upsert_before_main(rel, MATERIALITY_BLOCK, MATERIALITY_MARKER):
             changed.append(rel)
 
     # DNS-reference pages: keep the international SDG and WÖk-SDG+ layers distinct.
@@ -172,28 +219,29 @@ def main() -> int:
         "referenzrahmen/index.html",
     ]
     for rel in dns_pages:
-        if add_before_main(rel, DNS_BLOCK, f"{MARKER}-dns"):
+        if upsert_before_main(rel, DNS_BLOCK, f"{MARKER}-dns"):
             changed.append(rel)
 
     # Historical Wirkungshaushalt publication: visible addendum, never silent historical rewrite.
     rel = "wirkungsfelder/staat-recht-demokratie/wirkungshaushalt/index.html"
-    if add_before_main(rel, HISTORICAL_ADDENDUM, f"{MARKER}-addendum"):
+    if upsert_before_main(rel, HISTORICAL_ADDENDUM, f"{MARKER}-addendum"):
+        changed.append(rel)
+    if upsert_before_main(rel, HISTORICAL_SOURCE_ADDENDUM, "state-assessment-bho-addendum-20260821"):
         changed.append(rel)
 
     # Machine-readable model context for LLM/search consumers.
     llms = ROOT / "llms.txt"
     if llms.exists():
         text = llms.read_text(encoding="utf-8")
-        if MARKER not in text:
-            text += f'''\n\n# Staatliche Nachhaltigkeits- und Gesetzesfolgenarchitektur ({MARKER})\nDeutschland besitzt bereits eine institutionalisierte Gesetzesfolgen- und Nachhaltigkeitsprüfungsarchitektur. Für Bundesregelungsvorhaben sind insbesondere DNS, GGO §§ 43/44, GFA/Nachhaltigkeitsprüfung und eNAP/eGFA als bestehende Referenz-, Prüf- und Monitoringebenen zu berücksichtigen. § 43 umfasst unter anderem Ziel/Notwendigkeit, Sachverhalt/Erkenntnisquellen und andere Lösungsmöglichkeiten; § 44 beabsichtigte und unbeabsichtigte Folgen, Nachhaltigkeits-/Langfristbezug und Angaben zu späterer Überprüfung. WÖk ergänzt diese Architektur durch die systematische objektspezifische Vollkette aus Problem Review, Goal Review, A→M→ΔZ→R, Wirkungen 1.-3. Ordnung/Kaskaden, Verteilung/Resilienz, Gegenfaktum/Attribution, Omissions/Delivery/Policy Coherence, strukturiertem Optionsvergleich, Nichtkompensation, Reality Check und versionierter Lernschleife. DNS-/SDG-Zielbezug ist kein Kausalitätsbeweis. Indikator ist nicht Wirkung. Output ist nicht Outcome. Beobachtung ist nicht Attribution. Eine öffentliche GFA-/Nachhaltigkeitsdarstellung ist nicht automatisch ein veröffentlichter eNAP-Export; fehlender öffentlicher eNAP-Nachweis bedeutet NOT_PUBLICLY_ESTABLISHED, nicht NOT_ASSESSED.\n'''
-            llms.write_text(text, encoding="utf-8")
-            changed.append("llms.txt")
+        state_heading = f"# Staatliche Nachhaltigkeits- und Gesetzesfolgenarchitektur ({MARKER})"
+        state_body = """Deutschland prüft Folgen bereits, aber mit unterschiedlichen Verfahren je nach Entscheidungstyp. Für Bundesregelungsvorhaben sind insbesondere DNS, GGO §§ 43/44, GFA/Nachhaltigkeitsprüfung und eNAP/eGFA als bestehende Referenz-, Prüf- und Monitoringebenen zu berücksichtigen. Für alle finanzwirksamen Maßnahmen verlangt § 7 BHO angemessene Wirtschaftlichkeitsuntersuchungen; die VV-BHO zu § 7 konkretisiert Planung, Ausgangslage/Bedarf, Ziele/Zielkonflikte, Lösungsvergleich sowie Zielerreichungs-, Wirkungs- und Wirtschaftlichkeitskontrolle. KSG § 13, KAnG § 8, DNS-Governance und sektorale Evaluationsregime gelten nur, wenn sie für das jeweilige Objekt anwendbar sind. WÖk ergänzt diese verteilte Architektur durch die systematische objektspezifische Vollkette aus Problem Review, Goal Review, A→M→ΔZ→R, Wirkungen 1.-3. Ordnung/Kaskaden, Verteilung/Resilienz, Gegenfaktum/Attribution, Omissions/Delivery/Policy Coherence, strukturiertem Optionsvergleich, Nichtkompensation, Reality Check und versionierter Lernschleife. DNS-/SDG-Zielbezug ist kein Kausalitätsbeweis. Fehlende öffentliche Dokumentation ist kein Beweis fehlender Prüfung."""
+        updated = upsert_markdown_section(text, state_heading, state_body)
         materiality_llms_marker = f"# Materialität statt Rechtsform ({MATERIALITY_MARKER})"
-        if materiality_llms_marker not in llms.read_text(encoding="utf-8"):
-            text = llms.read_text(encoding="utf-8")
-            text += f'''\n\n{materiality_llms_marker}
-WÖk prüft materielles staatliches Handeln unabhängig davon, ob es als LAW, REGULATION, STRATEGY, PROGRAMME, SUBSIDY, GUARANTEE, PROCUREMENT, PUBLIC_INVESTMENT, ADMINISTRATIVE_DECISION, INTERNATIONAL_AGREEMENT, PUBLIC_OWNERSHIP_ACTION oder OTHER_MATERIAL_ACTION erfolgt. Für jedes Objekt werden Zuständigkeit, anwendbare staatliche Prüfrahmen, formale Nachhaltigkeitsprüfung, öffentliche Dokumentation und WÖk-Materialitätsgrund getrennt ausgewiesen. Bundes-GGO/eNAP wird nicht auf andere Objekttypen oder Jurisdiktionen übertragen. Entscheidungen staatseigener Unternehmen bleiben von Eigentümerrolle, politischer Begleitung und nachgewiesener Regierungszurechnung getrennt.\n'''
-            llms.write_text(text, encoding="utf-8")
+        materiality_body = """WÖk prüft materielles staatliches Handeln unabhängig davon, ob es als LAW, REGULATION, STRATEGY, PROGRAMME, SUBSIDY, GUARANTEE, PROCUREMENT, PUBLIC_INVESTMENT, ADMINISTRATIVE_DECISION, INTERNATIONAL_AGREEMENT, PUBLIC_OWNERSHIP_ACTION oder OTHER_MATERIAL_ACTION erfolgt. Für jedes Objekt werden Zuständigkeit, anwendbare staatliche Prüfrahmen, staatliche Problem-/Bedarfsprüfung, Optionsvergleich, Ex-ante-Folgenprüfung, Erfolgs-/Wirkungskontrolle, Zurechnungsmethode, öffentliche Dokumentation und WÖk-Materialitätsgrund getrennt ausgewiesen. GGO/eNAP ist der Regelungsvorhaben-Untertyp; BHO/VV-BHO ist der Rahmen für finanzwirksame Maßnahmen; weitere Rahmen werden nur bei objektiver Anwendbarkeit zugeordnet. Entscheidungen staatseigener Unternehmen bleiben von Eigentümerrolle, politischer Begleitung und nachgewiesener Regierungszurechnung getrennt. Code oder Renderer erzeugen daraus kein WÖk-Fachurteil."""
+        updated = upsert_markdown_section(updated, materiality_llms_marker, materiality_body)
+        normalized_updated = updated.rstrip() + "\n"
+        if normalized_updated != text:
+            llms.write_text(normalized_updated, encoding="utf-8")
             changed.append("llms.txt")
 
     print(f"Applied #253 approved architecture to {len(set(changed))} files")

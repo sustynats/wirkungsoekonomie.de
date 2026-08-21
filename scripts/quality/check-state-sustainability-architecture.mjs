@@ -17,11 +17,17 @@ const requiredTerms = [
   "ex-ante-folgenpruefung-reality-check",
   "staatliche-nachhaltigkeitsarchitektur",
   "parlamentarischer-beirat-nachhaltige-entwicklung",
+  "state-assessment-benchmark",
   "state-gfa-enap-benchmark",
   "wirkungsblindheit",
 ];
 
-const requiredSources = Array.from({ length: 9 }, (_, index) => `WÖK-Q-${9029 + index}`);
+const requiredSources = [
+  ...Array.from({ length: 9 }, (_, index) => `WÖK-Q-${9029 + index}`),
+  "WÖK-Q-9048",
+  "WÖK-Q-9049",
+  "WÖK-Q-9050",
+];
 
 const architecturePages = new Map([
   ["index.html", ["ADD_STATE_SUSTAINABILITY_ARCHITECTURE", "CORRECT_OVERCLAIM", "ADD_GLOSSARY_CROSSLINKS"]],
@@ -188,7 +194,20 @@ for (const needle of ["DNS", "Wirkindikatorenregister", "Reality Check"]) {
 }
 
 const sitemap = fs.existsSync(path.join(root, "sitemap.xml")) ? fs.readFileSync(path.join(root, "sitemap.xml"), "utf8") : "";
+const uniqueDiscoveryRoutes = [
+  "/wirkungswissenschaften/",
+  "/begriffe/nwi/",
+  "/begriffe/nationaler-wohlfahrtsindex/",
+];
+const requiredDiscoveryRoutes = [
+  ...uniqueDiscoveryRoutes,
+  "/begriffe/state-assessment-benchmark/",
+  "/quellenarchiv/wok-q-9048/",
+  "/quellenarchiv/wok-q-9049/",
+  "/quellenarchiv/wok-q-9050/",
+];
 const requiredSitemapRoutes = [
+  ...requiredDiscoveryRoutes,
   "/begriffe/gemeinsame-geschaeftsordnung-der-bundesministerien/",
   "/quellenarchiv/wok-q-9029/",
   "/bibliothek/woek-master-items-register/",
@@ -203,8 +222,16 @@ if (!fs.existsSync(searchIndexPath)) {
   errors.push("Suchindex fehlt: assets/search/search-index.json");
 } else {
   const searchIndex = fs.readFileSync(searchIndexPath, "utf8");
+  const searchEntries = JSON.parse(searchIndex);
   for (const needle of ["Gemeinsame Geschäftsordnung der Bundesministerien", "WÖk-Masterregister v1.5", "Elektronische Nachhaltigkeitsprüfung"] ) {
     if (!searchIndex.includes(needle)) errors.push(`Suchindex enthält Pflichtbegriff nicht: ${needle}`);
+  }
+  for (const route of requiredDiscoveryRoutes) {
+    const directHits = searchEntries.filter((entry) => String(entry.url || "").replace(/[?#].*$/u, "") === route);
+    if (!directHits.length) errors.push(`Suchindex enthält Pflicht-Route nicht: ${route}`);
+    if (uniqueDiscoveryRoutes.includes(route) && directHits.length !== 1) {
+      errors.push(`Suchindex muss kanonischen Einstieg genau einmal enthalten (${directHits.length}): ${route}`);
+    }
   }
 }
 
