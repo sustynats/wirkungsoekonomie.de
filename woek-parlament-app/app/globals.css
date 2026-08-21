@@ -386,6 +386,19 @@ h1, h2, h3, h4 { text-wrap: balance; }
 .strategy-quality-layers details { border: 1px solid var(--farbe-linie); border-radius: var(--radius-klein); background: var(--farbe-flaeche-karte); }
 .strategy-quality-layers summary { min-height: 44px; padding: var(--abstand-m); cursor: pointer; font-weight: var(--schriftstaerke-fett); }
 .strategy-quality-layers details p { margin: 0; padding: 0 var(--abstand-m) var(--abstand-m); }
+.coalition-review { gap: clamp(2rem, 5vw, 4rem); }
+.coalition-review > header { max-width: 72rem; }
+.coalition-review > section { display: grid; gap: var(--abstand-m); scroll-margin-top: 6rem; }
+.coalition-chapter-nav { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--abstand-xs); }
+.coalition-chapter-nav a { display: flex; min-height: 44px; align-items: center; padding: var(--abstand-xs) var(--abstand-s); border: 1px solid var(--farbe-linie); border-radius: var(--radius-klein); color: var(--farbe-text-link); background: var(--farbe-flaeche-karte); font-size: var(--groesse-klein); font-weight: var(--schriftstaerke-fett); text-decoration: none; }
+.coalition-chapter-nav a:hover, .coalition-chapter-nav a:focus-visible { border-color: var(--farbe-text-link); background: var(--farbe-flaeche-warm); }
+.coalition-chapter-list { display: grid; gap: var(--abstand-s); }
+.coalition-chapter-list > .government-full-record > summary { min-height: 58px; }
+.coalition-chapter-list > .government-full-record > summary span { color: var(--farbe-text-link); }
+.coalition-chapter-list > .government-full-record > summary small { display: block; margin-top: var(--abstand-2xs); color: var(--farbe-text-sekundaer); font-weight: var(--schriftstaerke-normal); }
+.coalition-chapter-review { display: grid; gap: var(--abstand-xl); padding: var(--abstand-l); }
+.coalition-chapter-review > section { display: grid; gap: var(--abstand-m); }
+.coalition-chapter-review .notice { margin: 0; }
 .technical-transparency { border: 1px dashed var(--farbe-linie); border-radius: var(--radius-klein); background: var(--farbe-flaeche-warm); }
 .technical-transparency > summary { min-height: 44px; padding: var(--abstand-m); cursor: pointer; font-weight: var(--schriftstaerke-fett); }
 .technical-transparency > .full-analysis-text { margin: 0 var(--abstand-m) var(--abstand-m); }
@@ -1588,6 +1601,9 @@ h1, h2, h3, h4 { text-wrap: balance; }
   .government-impact-path-detail dl > div { grid-template-columns: 1fr; gap: var(--abstand-2xs); }
   .strategy-path-grid { grid-template-columns: 1fr; }
   .strategy-impact-path dl > div { grid-template-columns: 1fr; gap: var(--abstand-2xs); }
+  .coalition-chapter-nav { grid-template-columns: 1fr; }
+  .jurisdiction-facts { grid-template-columns: minmax(0, 1fr); }
+  .coalition-chapter-review { padding: var(--abstand-m); }
 }
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

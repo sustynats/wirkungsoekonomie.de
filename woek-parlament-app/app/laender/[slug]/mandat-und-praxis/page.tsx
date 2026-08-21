@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import { BadenWuerttembergCoalitionReview } from "@/app/components/states/StateCoalitionReview";
 import { stateJurisdictionBySlug } from "@/lib/autopilot/registry";
 import { statePublicContentBySlug } from "@/lib/states/public-content";
 
@@ -7,6 +8,7 @@ export default async function StateMandatePage({ params }: { params: Promise<{ s
   const { slug } = await params;
   const state = stateJurisdictionBySlug(slug);
   if (!state) notFound();
+  if (slug === "baden-wuerttemberg") return <main className="shell content-page"><BadenWuerttembergCoalitionReview /></main>;
   const content = statePublicContentBySlug(slug);
 
   return <main className="shell content-page"><header className="page-intro"><p className="eyebrow">{state.name} · Zusatzperspektive</p><h1>Vom Wahlprogramm zur politischen Praxis.</h1><p className="lead">Diese Seite verbindet Wahlprogramm, Regierungs- oder Koalitionsvereinbarung, Regierungshandlung, Umsetzung und Reality Check. Umsetzungstreue ist dabei keine Wirkung und wird nicht als Erfolgsquote ausgegeben.</p></header>

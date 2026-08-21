@@ -93,6 +93,7 @@ const files = {
   communication_source_vs_view: "data/autopilot/audit/2.3-remediated/SOURCE-VS-VIEW-COMMUNICATION-MEDIA-IMPACT.json",
   communication_restore_audit: "data/state-programmes/communication-media-impact/restore-first-audit-20260820.json",
   strategy_action_plan_source_vs_view: "data/autopilot/audit/2.3-remediated/SOURCE-VS-VIEW-STRATEGY-ACTION-PLAN.json",
+  state_coalition_bw_source_vs_view: "data/autopilot/audit/2.3-remediated/SOURCE-VS-VIEW-BW-COALITION-2026-2031.json",
 };
 const publicationSources = json(files.publication_sources).documents;
 const integrityCases = json(files.content_integrity).cases;
@@ -105,6 +106,7 @@ const parliament = json(files.parliament);
 const jurisdictions = json(files.jurisdictions).jurisdictions.filter((entry) => entry.jurisdiction_type === "STATE");
 const communicationSourceVsView = json(files.communication_source_vs_view);
 const strategySourceVsView = json(files.strategy_action_plan_source_vs_view);
+const stateCoalitionBwSourceVsView = json(files.state_coalition_bw_source_vs_view);
 const communicationRecords = ["afd", "bsw", "cdu", "spd", "gruene", "linke"].map((party) => json(`data/state-programmes/communication-media-impact/ltw-2026-st-${party}.json`));
 const stateSlug = new Map([
   ["DE-BW", "baden-wuerttemberg"], ["DE-BY", "bayern"], ["DE-BE", "berlin"], ["DE-BB", "brandenburg"],
@@ -121,6 +123,7 @@ const requiredRoutes = unique([
   ...jurisdictions.map((entry) => `/laender/${stateSlug.get(entry.jurisdiction_id)}`),
   ...communicationSourceVsView.required_routes,
   ...strategySourceVsView.required_routes,
+  ...stateCoalitionBwSourceVsView.required_routes,
 ]);
 const auditRoutes = ["/", "/suche", "/sitemap.xml"];
 const routeResults = await mapLimit(auditRoutes, 1, fetchRoute);
@@ -133,6 +136,7 @@ const searchTargets = [
   ...government.map((record) => ({ object_id: record.impact_case_id, route: `/regierung/wirkungsanalysen/${encodeURIComponent(record.impact_case_id)}`, title_present_in_search_payload: search.includes(`href=\"/regierung/wirkungsanalysen/${encodeURIComponent(record.impact_case_id)}\"`) })),
   ...parliament.map((record) => ({ object_id: record.publicWorkingAct?.fullReview?.result?.case_id ?? record.slug, route: `/entscheidungen/${record.slug}`, title_present_in_search_payload: search.includes(`href=\"/entscheidungen/${record.slug}\"`) })),
   ...strategySourceVsView.search_targets.map((route) => ({ object_id: route.split("/").at(-1), route, title_present_in_search_payload: search.includes(`href=\"${route}\"`) })),
+  ...stateCoalitionBwSourceVsView.search_targets.map((route) => ({ object_id: "BW-COALITION-2026-2031", route, title_present_in_search_payload: search.includes(`href=\"${route}\"`) })),
 ];
 const sitemapBody = routeResults.find((entry) => entry.route === "/sitemap.xml")?.body ?? "";
 const sitemapUrls = new Set([...sitemapBody.matchAll(/<loc>(.*?)<\/loc>/g)].map((match) => new URL(match[1]).pathname));
@@ -153,12 +157,14 @@ const requiredContentPaths = unique([
   ...integrityCases.flatMap((record) => record.required_content_paths.map((pointer) => `${record.case_id}:${pointer}`)),
   ...communicationSourceVsView.required_content_paths,
   ...strategySourceVsView.required_content_paths,
+  ...stateCoalitionBwSourceVsView.required_content_paths,
 ]);
 const renderedContentPaths = unique([
   ...publicationSources.flatMap((source) => source.rendered_content_paths.map((pointer) => `${source.id}:${pointer}`)),
   ...integrityCases.flatMap((record) => record.rendered_content_paths.map((pointer) => `${record.case_id}:${pointer}`)),
   ...communicationSourceVsView.rendered_content_paths,
   ...strategySourceVsView.rendered_content_paths,
+  ...stateCoalitionBwSourceVsView.rendered_content_paths,
 ]);
 const unrenderedContentPaths = unique(requiredContentPaths.filter((pointer) => !renderedContentPaths.includes(pointer)));
 const recommendationIds = new Set(recommendations.map((record) => record.impact_case_id));
@@ -181,6 +187,13 @@ const analysisLayersByObject = [
     BETTER_WOEK_OPTION: "CONTENT_GAP_REQUIRES_FACH_REVIEW",
     ...Object.fromEntries(expectedLayers.map((layer) => [layer, Array.isArray(layers) && layers.includes(layer) ? "PRESENT_IN_APPROVED_FACH_RECORD" : "CONTENT_GAP_REQUIRES_FACH_REVIEW"])),
   })),
+  ...Object.entries(stateCoalitionBwSourceVsView.analysis_layers_by_object).map(([object_id, layers]) => ({
+    subsystem: "STATE_COALITION_MANDATE",
+    object_id,
+    DNS_COMMON_TARGETS: "CONTENT_GAP_REQUIRES_FACH_REVIEW",
+    BETTER_WOEK_OPTION: "CONTENT_GAP_REQUIRES_FACH_REVIEW",
+    ...Object.fromEntries(expectedLayers.map((layer) => [layer, Array.isArray(layers) && layers.includes(layer) ? "PRESENT_IN_APPROVED_FACH_RECORD" : "CONTENT_GAP_REQUIRES_FACH_REVIEW"])),
+  })),
 ];
 const semanticDiff = b07Manifest.semantic_diff_against_accepted_production;
 const failures = [
@@ -188,6 +201,7 @@ const failures = [
   ...(missingRequiredRoutes.length ? [`missing_required_routes:${missingRequiredRoutes.length}`] : []),
   ...(communicationSourceVsView.status === "PASS" ? [] : ["communication_media_source_vs_view"]),
   ...(strategySourceVsView.status === "PASS" ? [] : ["strategy_action_plan_source_vs_view"]),
+  ...(stateCoalitionBwSourceVsView.status === "PASS" ? [] : ["state_coalition_bw_source_vs_view"]),
   ...navigationTargets.filter((entry) => !entry.present).map((entry) => `navigation:${entry.route}`),
   ...searchTargets.filter((entry) => !entry.title_present_in_search_payload).map((entry) => `search:${entry.object_id}`),
   ...sitemapTargets.filter((entry) => !entry.present).map((entry) => `sitemap:${entry.route}`),
@@ -213,7 +227,7 @@ const report = {
   fach_version: b07Manifest.merge_id,
   renderer_version: "B07_RECONCILED_RENDERER_20260820",
   semantic_diff_against_last_accepted_production: semanticDiff,
-  coverage: { government: government.length, government_strategy_meta: strategySourceVsView.records.meta, government_strategy_missions: strategySourceVsView.records.missions, eu: eu.length, parliament: parliament.length, recommendations: recommendations.length, common_targets: commonTargets.length, states: jurisdictions.length, communication_media_impact: communicationRecords.length },
+  coverage: { government: government.length, government_strategy_meta: strategySourceVsView.records.meta, government_strategy_missions: strategySourceVsView.records.missions, eu: eu.length, parliament: parliament.length, recommendations: recommendations.length, common_targets: commonTargets.length, states: jurisdictions.length, state_coalition_documents: stateCoalitionBwSourceVsView.records.documents, state_coalition_chapters: stateCoalitionBwSourceVsView.records.chapters, communication_media_impact: communicationRecords.length },
   failures,
 };
 const publicPayload = JSON.stringify(report);
