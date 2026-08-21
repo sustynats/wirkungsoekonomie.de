@@ -1,0 +1,49 @@
+name: BSW final union audit
+
+on:
+  pull_request:
+    paths:
+      - 'content/audits/sachsen-anhalt/bsw-source-unit-*.json'
+      - 'woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-bsw-zusagen.md'
+      - 'tools/audit_bsw_final_union.py'
+      - '.github/workflows/bsw-final-union-audit.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  source-role-collision-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Audit exact BSW union and pending historical-role collisions
+        run: python tools/audit_bsw_final_union.py --output tmp/bsw-final-union-collision-report.json
+      - name: Print review candidates
+        if: always()
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path('tmp/bsw-final-union-collision-report.json')
+          if not p.exists():
+              raise SystemExit('report missing')
+          d=json.loads(p.read_text())
+          scan=d['pending_collision_scan']
+          print('pending_total=', scan['pending_total'])
+          print('lexically_clear_no_candidate=', scan['lexically_clear_no_candidate'])
+          print('review_candidate_count=', scan['review_candidate_count'])
+          print('review_candidate_ordinals=', ','.join(scan['review_candidate_ordinals']))
+          for row in scan['rows']:
+              if row['candidate_status'].startswith('REVIEW'):
+                  best=row['top_candidates'][0] if row['top_candidates'] else None
+                  print(json.dumps({'ordinal':row['historical_ordinal'],'page':row['page'],'title':row['title'],'best':best}, ensure_ascii=False))
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: bsw-final-union-collision-report
+          path: tmp/bsw-final-union-collision-report.json
