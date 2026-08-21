@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "npm run fachvollstaendigkeit:materialize-b07 && npm run government:sync-approved && npm run parliament:sync-approved && npm run observatory:sync-approved && npm run check:accessibility",
+    "prebuild": "node scripts/preview-cdu-convergence.mjs && npm run fachvollstaendigkeit:materialize-b07 && npm run government:sync-approved && npm run parliament:sync-approved && npm run observatory:sync-approved && npm run check:accessibility",
     "build": "node scripts/quality/check-design-tokens.mjs && node scripts/quality/check-positioning-pass.mjs && node scripts/quality/check-privacy-governance.mjs && node scripts/quality/check-release-safety.mjs --scope=repository && node scripts/quality/verify-public-documents.mjs && node scripts/quality/check-public-content-completeness.mjs && npm run check:public-labels && npm run check:sachsen-anhalt-publication && npm run check:state-publication && npm run check:government-identifiers && next build && node scripts/quality/check-release-safety.mjs --scope=release && node scripts/quality/verify-public-documents.mjs && node scripts/quality/check-public-content-completeness.mjs && node scripts/quality/run-b07-local-audits.mjs",
     "start": "next start",
     "lint": "eslint .",
