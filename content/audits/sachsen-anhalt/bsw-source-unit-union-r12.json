@@ -1,0 +1,86 @@
+{
+  "manifest_id": "ST-BSW-SOURCE-UNIT-UNION-R12",
+  "status": "PARTIAL_UNION_EXACT_FRONT_A01_A02_A03",
+  "scope": "Sachsen-Anhalt 2026 BSW primary-source parity stable-ID union",
+  "supersedes_union": "ST-BSW-SOURCE-UNIT-UNION-R11",
+  "base_role_matrix": "content/audits/sachsen-anhalt/bsw-source-unit-manifest-reconciliation-r10.json",
+  "primary_source": "https://st.bsw-vg.de/wp-content/uploads/2026/04/BSW_Landtagswahlprogramm_SachsenAnhalt.pdf",
+  "rules": {"set_semantics":true,"historical_311_not_arithmetically_added":true,"listed_psr_records_terminal_fach":true,"no_recommendation_synthesis":true,"no_dns_keyword_mapping":true},
+  "inherited_sets": {
+    "A01": {"count":31,"status":"PASS_EXACT_STABLE_ID_SET","source":"bsw-source-unit-union-r11.json"},
+    "A02": {"count":37,"status":"PASS_EXACT_STABLE_ID_SET","source":"bsw-source-unit-union-r11.json"},
+    "A07": {"count":42,"status":"PASS_42_UNIQUE_EXACT_IDS","source":"bsw-source-unit-manifest-reconciliation-r06.json"}
+  },
+  "new_exact_sets": {
+    "front_P0_P6": {
+      "declared_effect_records":2,
+      "materialized_count":2,
+      "set_status":"PASS_EXACT_STABLE_ID_SET",
+      "source_comment":5373809282,
+      "ids":[
+        "ltw-2026-st-bsw-psr-front-0001-energiesteuern-senken",
+        "ltw-2026-st-bsw-psr-front-0002-kraftstoffpreis-max-150-bundesratsinitiative"
+      ],
+      "context_relations":["P0-P3 CONTEXT_ONLY/NAVIGATION","P4-P5 CONTEXT_PARENT/DUPLICATE_RELATION","P6 CO2-Abgabe DUPLICATE_RELATION -> ltw-2026-st-bsw-psr-a03-0020"]
+    },
+    "A03_P23_P28": {
+      "declared_count":40,
+      "materialized_count":40,
+      "set_status":"PASS_EXACT_STABLE_ID_SET",
+      "source_comment":5373791027,
+      "ids":[
+        "ltw-2026-st-bsw-psr-a03-0001-erneuerbare-ausbau-versorgungssicherheit-komplement",
+        "ltw-2026-st-bsw-psr-a03-0002-pv-daecher-parkplaetze-versiegelt-devastiert-statt-acker-wald",
+        "ltw-2026-st-bsw-psr-a03-0003-wind-repowering-leistungssteigerung",
+        "ltw-2026-st-bsw-psr-a03-0004-wind-leistungsmanagement-speicher",
+        "ltw-2026-st-bsw-psr-a03-0005-wind-kommunen-buerger-finanziell-beteiligen",
+        "ltw-2026-st-bsw-psr-a03-0006-genossenschaften-finanziell-an-wind-solarparks-beteiligen",
+        "ltw-2026-st-bsw-psr-a03-0007-biogas-direkte-gaseinspeisung-foerdern",
+        "ltw-2026-st-bsw-psr-a03-0008-eeg-abschaffen-investitionszuschuesse-ersetzen",
+        "ltw-2026-st-bsw-psr-a03-0009-kleinwasserkraft-elbe-saale-mulde-source-split",
+        "ltw-2026-st-bsw-psr-a03-0010-erneuerbare-netz-speicher-synchronisieren",
+        "ltw-2026-st-bsw-psr-a03-0011-speicher-netzdienlichkeit-anreize-steuerung",
+        "ltw-2026-st-bsw-psr-a03-0012-netzausbau-digitalisierung-beschleunigen",
+        "ltw-2026-st-bsw-psr-a03-0013-staatliche-eigenkapitalbeteiligung-netzinfrastruktur",
+        "ltw-2026-st-bsw-psr-a03-0014-freileitungen-gegenueber-erdkabeln-bevorzugen",
+        "ltw-2026-st-bsw-psr-a03-0015-optimierter-netzbetrieb-netzentgelte-stabilisieren",
+        "ltw-2026-st-bsw-psr-a03-0016-dynamische-netzentgelte-digitales-netzmanagement",
+        "ltw-2026-st-bsw-psr-a03-0017-netzentgelte-verursachergerecht-regional-sozial-verteilen",
+        "ltw-2026-st-bsw-psr-a03-0018-grosswaermepumpen-kommunale-netze-regionale-alternativen",
+        "ltw-2026-st-bsw-psr-a03-0019-fernwaerme-vs-dezentrale-waermepumpen-monopolrisiko",
+        "ltw-2026-st-bsw-psr-a03-0020-co2-bepreisung-aussetzen-oder-abschaffen",
+        "ltw-2026-st-bsw-psr-a03-0021-co2-einnahmen-klimapraemie-direkt",
+        "ltw-2026-st-bsw-psr-a03-0022-ets2-soziale-abfederung-bund-laender",
+        "ltw-2026-st-bsw-psr-a03-0023-landes-entlastungsprogramm-wenn-bund-nicht-handelt",
+        "ltw-2026-st-bsw-psr-a03-0024-chemieparks-recyclingunternehmen-transformation",
+        "ltw-2026-st-bsw-psr-a03-0025-chemie-transformation-beschleunigte-genehmigungen",
+        "ltw-2026-st-bsw-psr-a03-0026-chemie-oel-gas-versorgung-reorganisieren-sichern",
+        "ltw-2026-st-bsw-psr-a03-0027-strukturwandel-foerderprogramme-umschulung-bergbau-sued",
+        "ltw-2026-st-bsw-psr-a03-0028-wissenschaft-wirtschaft-cluster-transfer",
+        "ltw-2026-st-bsw-psr-a03-0029-aus-weiterbildung-digitalisierung-nachhaltigkeit-modernisieren",
+        "ltw-2026-st-bsw-psr-a03-0030-lithium-ausschreibungen-oekologisch-sozial-regional",
+        "ltw-2026-st-bsw-psr-a03-0031-lithium-dle-wasserkreislaeufe-monitoring",
+        "ltw-2026-st-bsw-psr-a03-0032-lithium-regionale-wertschoepfung-batteriefertigung",
+        "ltw-2026-st-bsw-psr-a03-0033-lithium-oeffentliche-beteiligung-reinvestitionsvereinbarungen",
+        "ltw-2026-st-bsw-psr-a03-0034-lithium-mitspracherechte-bevoelkerung",
+        "ltw-2026-st-bsw-psr-a03-0035-langfristiges-infrastruktur-investitionsprogramm",
+        "ltw-2026-st-bsw-psr-a03-0036-steuergeld-effizienz-transparenz-rechnungshof-fehler-aufarbeiten",
+        "ltw-2026-st-bsw-psr-a03-0037-verbindliche-staedte-regionen-kooperationen-stadt-land",
+        "ltw-2026-st-bsw-psr-a03-0038-denkmalschutz-modernisierung-aussenbereich",
+        "ltw-2026-st-bsw-psr-a03-0039-raum-regionalplanung-foerderkulissen-landesentwicklung",
+        "ltw-2026-st-bsw-psr-a03-0040-klimaanpassung-entsiegelung-schwammstadt-gruen-schatten-rueckhalt"
+      ],
+      "cross_span_relations":["P28->P29 Schwarzerde = DUPLICATE/CROSS_SPAN_RELATION to A04, no A03 double count"]
+    }
+  },
+  "union_checkpoint": {
+    "exact_materialized_front_a01_a02_a03":110,
+    "distinct_front_a01_a02_a03":110,
+    "known_cross_batch_duplicate_links":["front P6 CO2 -> A03-0020"],
+    "A07_exact_distinct_separate":42,
+    "remaining_exact_id_materialization":["A04","A05_1","A05_2","A06","A08","A09"],
+    "authoritative_denominator":null,
+    "full_program_complete":false
+  },
+  "provenance":{"issue":"sustynats/wirkungsoekonomie.de#234","umbrella":"sustynats/wirkungsoekonomie.de#241","branch":"fach/st-bsw-source-manifest-r05-20260821","parent_commit":"8a5da1259554dd95484e201a59bfbdf3312615c9"}
+}
