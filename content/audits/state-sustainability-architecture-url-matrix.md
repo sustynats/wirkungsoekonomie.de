@@ -1,9 +1,9 @@
 # #253 State sustainability architecture URL/file audit
 
-- Sitemap routes: **2049**
+- Sitemap routes: **2052**
 - Sitemap routes without directly resolved source HTML: **0**
-- Extra tracked source HTML not in sitemap: **14201**
-- Routes with non-default #253 action: **1425**
+- Extra tracked source HTML not in sitemap: **14202**
+- Routes with non-default #253 action: **1428**
 - Routes with Wirkungsblindheit/novelty/absence claim signals: **75**
 
 Contract fields on every matrix item: `source_path`, `public_url`, `historical_publication`, `relevance`, `classification`, `required_action`, `source_refs`, `status`.
@@ -219,6 +219,7 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-58f617ae8ee4/ | `quellenarchiv/wok-g-58f617ae8ee4/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-59a5f127fca8/ | `quellenarchiv/wok-g-59a5f127fca8/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-5a91bfdcebb4/ | `quellenarchiv/wok-g-5a91bfdcebb4/index.html` | ADD_SOURCE_LINKS | — |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-g-5ae09458064a/ | `quellenarchiv/wok-g-5ae09458064a/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-5cdb1d463d15/ | `quellenarchiv/wok-g-5cdb1d463d15/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-5dad38014a73/ | `quellenarchiv/wok-g-5dad38014a73/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-5f3db7ef4c8a/ | `quellenarchiv/wok-g-5f3db7ef4c8a/index.html` | ADD_SOURCE_LINKS | — |
@@ -1437,6 +1438,8 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/quellenarchiv/wok-q-9045/ | `quellenarchiv/wok-q-9045/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-q-9046/ | `quellenarchiv/wok-q-9046/index.html` | ADD_SOURCE_LINKS | enap, dns, alternativen |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-q-9047/ | `quellenarchiv/wok-q-9047/index.html` | ADD_SOURCE_LINKS | enap, dns |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-q-9048/ | `quellenarchiv/wok-q-9048/index.html` | ADD_SOURCE_LINKS | enap |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-q-9049/ | `quellenarchiv/wok-q-9049/index.html` | ADD_SOURCE_LINKS | — |
 
 ## Claim-signal review
 
@@ -1520,8 +1523,8 @@ Signals are review candidates, not automatic errors.
 
 ## Recursive non-HTML publication/support surfaces
 
-- Tracked support text files inventoried: **753**
-- Combined matrix items (routes + extra HTML + support): **17003**
+- Tracked support text files inventoried: **757**
+- Combined matrix items (routes + extra HTML + support): **17011**
 - Every matrix item exposes the #253 contract fields: source_path, public_url, historical_publication, relevance, classification, required_action, source_refs and status.
 - Includes llms.txt, sitemap/search metadata, structured-data registries, glossary/source archive, library/journal/reference inputs and generators/workflows.
 
@@ -1558,6 +1561,7 @@ Signals are review candidates, not automatic errors.
 | `assets/search/search-curated-entrypoints.json` | search_index_or_generator | NO_CHANGE_REQUIRED | wirkungsblind |
 | `assets/search/search-dictionary.json` | search_index_or_generator | NO_CHANGE_REQUIRED | wirkungsblind, alternativen |
 | `assets/search/search-index.json` | search_index_or_generator | NO_CHANGE_REQUIRED | — |
+| `content/assistant/approved-corpus.json` | support_text | ADD_SOURCE_LINKS | enap |
 | `content/audits/nwi-acronym-disambiguation.json` | support_text | ADD_SOURCE_LINKS | folgenabschaetzung |
 | `content/audits/state-sustainability-architecture-audit-contract.md` | support_text | ADD_SOURCE_LINKS | enap, egfa, dns, alternativen, evaluation |
 | `content/dashboards/dashboardModels.json` | support_text | NO_CHANGE_REQUIRED | evaluation |
@@ -1738,7 +1742,7 @@ Signals are review candidates, not automatic errors.
 | `public/data/woems-canvas.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | folgenabschaetzung, alternativen, evaluation |
 | `public/data/woems-methoden.json` | structured_data_or_manifest | NO_CHANGE_REQUIRED | folgenabschaetzung, evaluation |
 | `scripts/api/build-core-api-manifest.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
-| `scripts/audit-documents-for-publication.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, evaluation |
+| `scripts/audit-documents-for-publication.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | folgenabschaetzung, enap, dns, evaluation |
 | `scripts/audit-tool-dashboards.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
 | `scripts/content/apply-maiwald-principle.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | wirkungsblind |
 | `scripts/feeds/build-rss-feeds.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
@@ -1762,7 +1766,6 @@ Signals are review candidates, not automatic errors.
 | `scripts/journal/publish-lohnkosten-besser-werden.mjs` | journal_source_or_manifest | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/journal/publish-wirkstoff-narrative.mjs` | journal_source_or_manifest | NO_CHANGE_REQUIRED | alternativen |
 | `scripts/lib/method-version-indexability.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | wirkungsblind, enap, dns |
-| `scripts/library/build-library-versioning-stage9.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | nachhaltigkeitspruefung |
 | `scripts/methods/import-woems-source.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | folgenabschaetzung |
 | `scripts/natalie/build-natalie-pages.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
 | `scripts/podcast/build-podcast-pages.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | wirkungsblind |
@@ -1791,6 +1794,7 @@ Signals are review candidates, not automatic errors.
 | `scripts/portal/build-state-law-democracy.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | `scripts/portal/build-work-income-automation.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | evaluation |
 | `scripts/publications/build-begriffsleitfaden-v1.6.py` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | nachhaltigkeitspruefung, dns, evaluation |
+| `scripts/publications/build-begriffsleitfaden-v1.7.py` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | nachhaltigkeitspruefung, enap, dns, evaluation |
 | `scripts/quality/apply-stage13-usability-a11y-seo.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | wirkungsblind |
 | `scripts/quality/check-state-sustainability-architecture.mjs` | site_generator_or_quality_tool | NO_CHANGE_REQUIRED | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, evaluation |
 | `scripts/quellenarchiv/check-quellenarchiv-quality.mjs` | source_archive_source_or_generator | NO_CHANGE_REQUIRED | novelty_or_absence |
@@ -1842,7 +1846,7 @@ Signals are review candidates, not automatic errors.
 
 ## Review/action closure
 
-- Combined reviewed items: **17004**
+- Combined reviewed items: **17012**
 - Open semantic/action reviews after deterministic projection: **0**
 - Broad novelty/Wirkungsblindheit hits were dispositioned by a second-pass contextual state-absence review; isolated words are not treated as absence claims.
 - `AGENTS.md` is explicitly inventoried as a corrected current guardrail.
