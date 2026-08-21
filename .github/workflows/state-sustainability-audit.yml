@@ -11,7 +11,6 @@ on:
       - 'tools/apply_state_sustainability_precision.py'
       - 'tools/apply_state_sustainability_public_precision.py'
       - 'tools/apply_state_sustainability_build_integration.py'
-      - 'tools/repair_state_sustainability_source_ids.py'
       - 'tools/audit_state_sustainability_architecture.py'
       - 'tools/audit_state_sustainability_architecture_fast.py'
       - 'tools/audit_state_sustainability_support_files.py'
@@ -51,7 +50,6 @@ jobs:
           python tools/apply_state_sustainability_precision.py
           python tools/apply_state_sustainability_public_precision.py
           python tools/apply_state_sustainability_build_integration.py
-          python tools/repair_state_sustainability_source_ids.py
           npm run build:search
           npm run taxonomy:build
       - name: Generate committed exhaustive #253 URL/file matrix
@@ -90,7 +88,6 @@ jobs:
           python tools/apply_state_sustainability_precision.py
           python tools/apply_state_sustainability_public_precision.py
           python tools/apply_state_sustainability_build_integration.py
-          python tools/repair_state_sustainability_source_ids.py
           npm run build:search
           npm run taxonomy:build
           python tools/audit_state_sustainability_architecture_fast.py --root . --output content/audits/state-sustainability-architecture-url-matrix.json --markdown content/audits/state-sustainability-architecture-url-matrix.md
