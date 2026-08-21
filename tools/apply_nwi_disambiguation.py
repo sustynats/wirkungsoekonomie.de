@@ -31,6 +31,13 @@ HISTORICAL_PREFIXES = (
     "public/downloads/",
     "assets/downloads/",
 )
+HISTORICAL_EXACT_PATHS = {
+    # #253 preserves these published detail concepts and adds current-method
+    # notes instead of silently rewriting their original prose.
+    "wirkungsfelder/staat-recht-demokratie/wirkungshaushalt/index.html",
+    "werkstatt/dossiers/staat-recht-demokratie/politische-wirkungspruefung/index.html",
+    "werkstatt/dossiers/staat-recht-demokratie/detailkonzepte/politische-wirkungspruefung/index.html",
+}
 SKIP_DIRS = {".git", "node_modules", "_site"}
 LIVING_MACHINE_SURFACES = ("llms.txt",)
 
@@ -232,7 +239,11 @@ def apply_html() -> tuple[int, int]:
         original = path.read_text(encoding="utf-8", errors="ignore")
         if not re.search(r"\bNWI\b|Netto[- ]Wirkungs[- ]Index|Nationaler Wohlfahrtsindex", original, flags=re.I):
             continue
-        historical = relative.startswith(HISTORICAL_PREFIXES) or relative in historical_matrix_paths
+        historical = (
+            relative.startswith(HISTORICAL_PREFIXES)
+            or relative in HISTORICAL_EXACT_PATHS
+            or relative in historical_matrix_paths
+        )
         if historical and woek_signal(original):
             if MARKER_START in original:
                 continue
@@ -287,7 +298,7 @@ def inventory() -> tuple[int, int]:
         text = path.read_text(encoding="utf-8", errors="ignore")
         if not re.search(r"\bNWI\b|WÖk-Netto-Wirkungsindex|Nationaler Wohlfahrtsindex", text, flags=re.I):
             continue
-        historical = relative.startswith(HISTORICAL_PREFIXES)
+        historical = relative.startswith(HISTORICAL_PREFIXES) or relative in HISTORICAL_EXACT_PATHS
         visible = visible_semantic_text(text)
         official_occurrences = len(OFFICIAL_PHRASE_RE.findall(visible))
         technical_transparency = relative.startswith("api/")

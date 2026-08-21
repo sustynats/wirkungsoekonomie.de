@@ -64,6 +64,8 @@ def no_raw_public_enums() -> None:
             continue
         if rel.startswith("api/"):
             continue
+        if not (ROOT / rel).is_file():
+            continue
         text = read(rel)
         hits = [e for e in PUBLIC_ENUMS if e in text]
         if hits:
@@ -82,10 +84,14 @@ def historical_additions_only() -> None:
     removed non-empty line. This permits wrapper relocation but still rejects any historical
     prose deletion or rewrite.
     """
+    merge_base = subprocess.run(
+        ["git", "merge-base", "origin/main", "HEAD"],
+        cwd=ROOT, check=True, text=True, stdout=subprocess.PIPE,
+    ).stdout.strip()
     for rel in HISTORICAL_ADDENDA:
         require(rel, ["Fachaddendum", "21.08.2026"])
         proc = subprocess.run(
-            ["git", "diff", "--unified=0", "origin/main...HEAD", "--", rel],
+            ["git", "diff", "--unified=0", merge_base, "--", rel],
             cwd=ROOT, text=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
         )
         if proc.returncode not in (0, 1):
@@ -262,8 +268,10 @@ def nwi_acronym_disambiguated() -> None:
             continue
         if rel.startswith("api/"):
             continue
+        if not (ROOT / rel).is_file():
+            continue
         page = read(rel)
-        if rel.startswith(historical_prefixes) and "WOEK:NWI-DISAMBIGUATION:START" in page:
+        if (rel.startswith(historical_prefixes) or rel in HISTORICAL_ADDENDA) and "WOEK:NWI-DISAMBIGUATION:START" in page:
             continue
         visible = re.sub(r"<(script|style)\b[^>]*>.*?</\1>", " ", page, flags=re.I | re.S)
         visible = unescape(re.sub(r"<[^>]+>", " ", visible))

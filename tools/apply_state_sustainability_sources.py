@@ -57,7 +57,7 @@ def update_datenbasis() -> None:
     text = replace_once(
         text,
         'content="Datenbasis, Methodik, CSRD, ESRS, GRI, SDG, SDG+, WÖk-ID, Scorecard, NWI, Wirkungssteuer, Benchmark, Archetypen"',
-        'content="Datenbasis, Methodik, DNS, Deutsche Nachhaltigkeitsstrategie, DNS-Indikator, GGO, GFA, Gesetzesfolgenabschätzung, Nachhaltigkeitsprüfung, eNAP, eGFA, CSRD, ESRS, GRI, SDG, SDG+, WÖk-ID, Scorecard, NWI, Wirkungssteuer, Benchmark"',
+        'content="Datenbasis, Methodik, DNS, Deutsche Nachhaltigkeitsstrategie, DNS-Indikator, GGO, GFA, Gesetzesfolgenabschätzung, Nachhaltigkeitsprüfung, eNAP, eGFA, CSRD, ESRS, GRI, SDG, SDG+, WÖk-ID, Scorecard, WÖk-Netto-Wirkungsindex, Wirkungssteuer, Benchmark"',
         rel,
     )
     text = replace_once(
