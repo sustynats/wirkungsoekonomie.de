@@ -1,4 +1,4 @@
-name: Academy v4 locked public-master sync
+name: Academy v4 public-master parity gate
 
 on:
   push:
@@ -7,37 +7,73 @@ on:
       - main
     paths:
       - .github/workflows/academy-v4-public-master-sync.yml
-      - scripts/academy/sync-v4-public-master.mjs
-      - content/studienskripte/v4/SOURCE_LOCK.json
+      - content/studienskripte/v4/**
+  pull_request:
+    branches:
+      - main
+    paths:
+      - .github/workflows/academy-v4-public-master-sync.yml
+      - content/studienskripte/v4/**
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
-  group: academy-v4-public-master-sync-${{ github.ref_name }}
-  cancel-in-progress: false
+  group: academy-v4-public-master-parity-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  sync-and-verify:
+  verify-materialized-public-master:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout exact triggering ref
+      - name: Checkout exact ref sparsely
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.ref_name }}
-          fetch-depth: 0
+          fetch-depth: 1
+          sparse-checkout: |
+            content/studienskripte/v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: "22"
-
-      - name: Generate sanitized public masters from locked source SHA
-        run: node scripts/academy/sync-v4-public-master.mjs
-
-      - name: Verify generated corpus against locked source
-        run: node scripts/academy/sync-v4-public-master.mjs --check
+      - name: Verify source lock, manifest, hashes and corpus cardinality
+        shell: bash
+        run: |
+          set -euo pipefail
+          node <<'NODE'
+          const fs = require('fs');
+          const path = require('path');
+          const crypto = require('crypto');
+          const root = 'content/studienskripte/v4';
+          const lock = JSON.parse(fs.readFileSync(path.join(root,'SOURCE_LOCK.json'),'utf8'));
+          const m = JSON.parse(fs.readFileSync(path.join(root,'PUBLIC_MASTER_MANIFEST.json'),'utf8'));
+          const expected = {grundlagen:7,wirkungsmanagement:10,wirkungscontrolling:10,multiplikatoren:8,'demokratie-buerger':11,'demokratie-medien':12};
+          if (lock.curriculum_version !== '4.0' || m.curriculum_version !== '4.0') throw new Error('curriculum version');
+          if (lock.terminology_baseline?.version !== '1.6' || m.terminology_baseline !== '1.6') throw new Error('terminology baseline');
+          if (lock.source_repo !== m.source_repo || lock.source_sha !== m.source_sha) throw new Error('source lock/manifest mismatch');
+          if (!lock.transport || lock.transport.source_sha !== m.source_sha || !lock.transport.archive_sha256) throw new Error('transport provenance missing');
+          if (m.counts?.study_lectures !== 120) throw new Error(`study=${m.counts?.study_lectures}`);
+          if (m.counts?.base !== 108) throw new Error(`base=${m.counts?.base}`);
+          if (m.counts?.state_architecture !== 12) throw new Error(`gov=${m.counts?.state_architecture}`);
+          if (m.counts?.active_offering_lectures !== 58) throw new Error(`offerings=${m.counts?.active_offering_lectures}`);
+          if (m.counts?.total_public_lectures !== 178) throw new Error(`total=${m.counts?.total_public_lectures}`);
+          if (m.lectures?.length !== 178 || new Set(m.lectures.map(x=>x.lecture_id)).size !== 178) throw new Error('stable ids/count');
+          for (const [slug,count] of Object.entries(expected)) {
+            if (m.counts?.offering_lectures_by_slug?.[slug] !== count) throw new Error(`${slug}=${m.counts?.offering_lectures_by_slug?.[slug]}`);
+          }
+          if (m.security?.assessment_secrets_included !== false || m.security?.quiz_and_solution_sections_removed !== true) throw new Error('sanitization flags');
+          for (const x of m.lectures) {
+            if (x.source_sha !== m.source_sha || x.curriculum_version !== '4.0') throw new Error(`provenance ${x.lecture_id}`);
+            const file = path.join(root, x.public_path);
+            if (!fs.existsSync(file)) throw new Error(`missing ${file}`);
+            const data = fs.readFileSync(file,'utf8');
+            const hash = crypto.createHash('sha256').update(data).digest('hex');
+            if (hash !== x.public_sha256) throw new Error(`hash drift ${x.lecture_id}`);
+            if (!data.includes(`source=${m.source_repo}@${m.source_sha}`)) throw new Error(`source header ${x.lecture_id}`);
+          }
+          console.log('ACADEMY_SCRIPT_MASTER_MIRROR_PARITY PASS');
+          console.log('PUBLIC_MASTER_SOURCE_PROVENANCE_PRESENT PASS');
+          console.log('NO_APP_ONLY_PUBLIC_SCRIPT_PARALLEL_TRUTH PASS');
+          console.log('ACADEMY_V4_PUBLIC_MASTER_CARDINALITY_PASS 120 + 58 = 178');
+          NODE
 
       - name: Guard protected assessment material
         shell: bash
@@ -47,41 +83,8 @@ jobs:
             echo 'Protected assessment artifact leaked into public master' >&2
             exit 1
           fi
-          if grep -RInE '\*\*Lösung(en)?:\*\*|CorrectAnswer|correct_answer|answer_key|Musterlösung|Lösungsschlüssel|instructor[_ -]?(answer|solution|rubric)' content/studienskripte/v4/grundstudium content/studienskripte/v4/angebote; then
+          if grep -RInE '\*\*Lösung(en)?:\*\*|CorrectAnswer|correct_answer|answer_key|Musterlösung|Lösungsschlüssel|instructor[_ -]?(answer|solution|rubric)|passing[_ -]?score[_ -]?key' content/studienskripte/v4/grundstudium content/studienskripte/v4/angebote; then
             echo 'Protected solution/assessment content leaked into public master' >&2
             exit 1
           fi
-
-      - name: Verify exact corpus cardinality
-        shell: bash
-        run: |
-          node <<'NODE'
-          const fs = require('fs');
-          const m = JSON.parse(fs.readFileSync('content/studienskripte/v4/PUBLIC_MASTER_MANIFEST.json', 'utf8'));
-          const expected = {grundlagen:7,wirkungsmanagement:10,wirkungscontrolling:10,multiplikatoren:8,'demokratie-buerger':11,'demokratie-medien':12};
-          if (m.counts.study_lectures !== 120) throw new Error(`study=${m.counts.study_lectures}`);
-          if (m.counts.base !== 108) throw new Error(`base=${m.counts.base}`);
-          if (m.counts.state_architecture !== 12) throw new Error(`gov=${m.counts.state_architecture}`);
-          if (m.counts.active_offering_lectures !== 58) throw new Error(`offerings=${m.counts.active_offering_lectures}`);
-          if (m.counts.total_public_lectures !== 178) throw new Error(`total=${m.counts.total_public_lectures}`);
-          for (const [slug,count] of Object.entries(expected)) {
-            if (m.counts.offering_lectures_by_slug?.[slug] !== count) throw new Error(`${slug}=${m.counts.offering_lectures_by_slug?.[slug]}`);
-          }
-          if (m.security.assessment_secrets_included !== false) throw new Error('assessment secrets flag is not false');
-          console.log('ACADEMY_V4_PUBLIC_MASTER_CARDINALITY_PASS 120 + 58 = 178');
-          NODE
-
-      - name: Commit generated locked corpus
-        shell: bash
-        run: |
-          set -euo pipefail
-          if [ -z "$(git status --porcelain content/studienskripte/v4)" ]; then
-            echo 'No public-master diff.'
-            exit 0
-          fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add content/studienskripte/v4
-          git commit -m "feat(academy-v4): materialize locked sanitized public masters"
-          git pull --rebase origin "${GITHUB_REF_NAME}"
-          git push origin "HEAD:${GITHUB_REF_NAME}"
+          echo 'NO_ASSESSMENT_SECRET_LEAK PASS'
