@@ -30,7 +30,7 @@ const checks = [
     required: [
       "Gibt es das behauptete Problem wirklich - und was genau ist es?",
       "Wirkungsanalyse: A → M → ΔZ → R",
-      "RecommendationRecord 2.3",
+      "fachlich freigegebenen WÖk-Handlungsoption",
       "MasterItem",
       "StateVariable",
       "Analysis / RealityCheck",

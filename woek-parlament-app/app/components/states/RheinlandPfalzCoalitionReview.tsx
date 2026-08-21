@@ -50,21 +50,21 @@ export function RheinlandPfalzCoalitionReview() {
       <div className="open-state" role="note">
         <span aria-hidden="true">i</span>
         <div>
-          <strong>Alle Kapitel fachlich geprüft – atomare Quellenebene noch nicht vollständig</strong>
-          <p>Alle neun Kapitel besitzen eine hochmateriale WÖk-Prüfung. Aus den fachlichen Handoffs sind 302 explizite Zusagen aus Kapitel 1 und 2 fundstellengebunden übernommen. Neun dort deklarierte Einzel-IDs fehlen als ausformulierter Datensatz; Kapitel 3 bis 9 sind noch nicht atomar übergeben. Beides bleibt sichtbar offen und wird nicht technisch ergänzt.</p>
+          <strong>Fachprüfung und atomare Quellenebene vollständig</strong>
+          <p>Alle neun Kapitel besitzen eine hochmateriale WÖk-Prüfung. Aus den fachlichen Handoffs sind 1.254 explizite Zusagen aus allen neun Kapiteln fundstellengebunden und kollisionsfrei übernommen. Diese Quellenobjekte sind keine 1.254 automatisch fertigen Wirkungsanalysen.</p>
         </div>
       </div>
     </header>
 
     <section aria-labelledby="rlp-source-version">
       <p className="eyebrow">Quelle und Fassung</p>
-      <h2 id="rlp-source-version">Parteioffiziell wiederveröffentlichter Vertragstext mit offenem Signaturstatus</h2>
-      <p>Der öffentlich zugängliche 101-seitige Text trägt die gemeinsame Mandatsgrundlage. Die Begleitseite bezeichnet die Fassung zugleich als Entwurf; eine byte-identische signierte Endfassung ist nicht nachgewiesen. Der GovernmentTerm seit 18. Mai 2026 ist amtlich belegt, ersetzt aber keinen belastbaren Versionsnachweis des Dokuments.</p>
+      <h2 id="rlp-source-version">Direkte Parteiorganisations-PDF mit offenem Signaturstatus</h2>
+      <p>Die direkte PDF der SPD-Landesorganisation trägt den vollständigen 101-seitigen Vertragstext. Eine kryptographisch nachgewiesene Byte-Identität mit einer signierten Endfassung liegt nicht vor. Der Regierungszeitraum seit 18. Mai 2026 ist amtlich belegt, ersetzt aber keinen solchen Versionsnachweis.</p>
       <div className="jurisdiction-facts">
         <div><span>Regierungsbeginn</span><strong>18. Mai 2026</strong></div>
         <div><span>Kapitelreview</span><strong>9 von 9</strong></div>
-        <div><span>Explizite Source-Commitments</span><strong>{rheinlandPfalzCoalitionCommitmentRegister.source_record_count.toLocaleString("de-DE")}</strong></div>
-        <div><span>Offene deklarierte Records</span><strong>{rheinlandPfalzCoalitionCommitmentRegister.handoff_record_gap_count}</strong></div>
+        <div><span>Explizite Quellenzusagen</span><strong>{rheinlandPfalzCoalitionCommitmentRegister.source_record_count.toLocaleString("de-DE")}</strong></div>
+        <div><span>Strukturelle Übergabelücken</span><strong>{rheinlandPfalzCoalitionCommitmentRegister.handoff_record_gap_count}</strong></div>
       </div>
     </section>
 
@@ -86,12 +86,12 @@ export function RheinlandPfalzCoalitionReview() {
 
     <section aria-labelledby="rlp-coverage">
       <p className="eyebrow">Coverage und Reife</p>
-      <h2 id="rlp-coverage">Was fachlich geprüft ist – und was fail-closed offen bleibt</h2>
+      <h2 id="rlp-coverage">Was fachlich und auf Quellenebene vollständig ist – und was offen bleibt</h2>
       <dl className="government-impact-summary">
         <div><dt>Kapitelreviews</dt><dd>9 von 9 auf hochmaterialer Kapitel- und Clusterebene</dd></div>
-        <div><dt>Explizit übergebene atomare Zusagen</dt><dd>{rheinlandPfalzCoalitionCommitmentRegister.atomic_commitment_count.toLocaleString("de-DE")} aus Kapitel 1 und 2</dd></div>
-        <div><dt>Strukturelle Handoff-Lücke</dt><dd>Die neun deklarierten IDs 152 bis 160 aus Kapitel 2 fehlen als ausformulierte Fachrecords und werden nicht rekonstruiert</dd></div>
-        <div><dt>Kapitel 3 bis 9</dt><dd>Hochmaterial geprüft; atomare Source-Zerlegung noch nicht fachlich übergeben</dd></div>
+        <div><dt>Explizit übergebene atomare Zusagen</dt><dd>{rheinlandPfalzCoalitionCommitmentRegister.atomic_commitment_count.toLocaleString("de-DE")} aus allen neun Kapiteln</dd></div>
+        <div><dt>Kapitel 1 bis 9</dt><dd>Fundstellengebunden atomar vollständig übergeben; Kapitel 2 mit korrigiertem belastbaren Umfang von 151 Zusagen</dd></div>
+        <div><dt>Einzelanalysen</dt><dd>Die vollständige Quellenabdeckung ist keine Behauptung, dass jede Zusage bereits eine eigene WÖk-Wirkungsanalyse besitzt</dd></div>
         <div><dt>WÖk-Handlungsoption</dt><dd>Keine Kapitel- oder Dokumentempfehlung fachlich freigegeben</dd></div>
         <div><dt>Reality Check</dt><dd>Noch nicht reif; Ex-ante-Mandat bleibt historisch erhalten</dd></div>
       </dl>
@@ -142,7 +142,7 @@ export function RheinlandPfalzCoalitionReview() {
     <section aria-labelledby="rlp-existing-cases">
       <p className="eyebrow">Bereits vorhandene Wirkungsfälle</p>
       <h2 id="rlp-existing-cases">Vorhandenen Fachbestand verknüpfen statt duplizieren</h2>
-      <p>Die vier freigegebenen Regierungswirkungsfälle bleiben eigenständige Fachfälle. Gemeinsame Themen oder Formulierungen sind kein Identitätsbeweis.</p>
+      <p>Die fünf freigegebenen Regierungswirkungsfälle bleiben eigenständige Fachfälle. Gemeinsame Themen oder Formulierungen sind kein Identitätsbeweis. Beim Hitzeschutz bleibt der seit 2023 bestehende Politikpfad von der aktuellen Verstetigung und Koordination getrennt.</p>
       <div className="government-impact-grid">
         {rheinlandPfalzCoalitionExistingImpactCases.map((impactCase) => <article key={impactCase.id}><p className="eyebrow">Bestehende Wirkungsanalyse</p><h3>{impactCase.title}</h3><Link className="text-link" href="/laender/rheinland-pfalz/regierung">Freigegebenen Regierungs-Fachstand öffnen</Link></article>)}
       </div>
@@ -164,8 +164,8 @@ export function RheinlandPfalzCoalitionReview() {
         atomicCommitments: rheinlandPfalzCoalitionCommitmentRegister.chapter_counts.find((count) => count.chapter === chapter.chapter)?.atomic_commitments ?? 0,
       }))}
       copy={{
-        title: "302 explizit übergebene Zusagen aus Kapitel 1 und 2",
-        intro: "Jeder Eintrag übernimmt genau den fachlich ausformulierten Quellenanker mit stabiler Kennung und Fundstelle. Neun nur deklarierte, aber nicht ausformulierte IDs sowie die noch nicht atomar übergebenen Kapitel 3 bis 9 werden nicht rekonstruiert. Eine Koalitionszusage ist noch keine Regierungshandlung, Umsetzung oder Wirkung.",
+        title: "1.254 explizit übergebene Zusagen aus allen neun Kapiteln",
+        intro: "Jeder Eintrag übernimmt genau den fachlich ausformulierten Quellenanker mit stabiler Kennung und Fundstelle. Eine Koalitionszusage ist noch keine Regierungshandlung, Umsetzung oder Wirkung; Wirkungsrichtung, DNS-Bezug und Empfehlung werden nicht aus dem Quellentext abgeleitet.",
         allChaptersLabel: "Alle Kapitel mit expliziten Einzelrecords",
       }}
     />
@@ -193,7 +193,7 @@ export function RheinlandPfalzCoalitionReview() {
     <section className="government-process-meta" data-woek-process-metadata aria-label="Technische Transparenz">
       <h2>Technische Transparenz</h2>
       <p><strong>Fachstand:</strong> Kapitelreviews und atomare Handoffs aus Issue 240, 20.–21. August 2026 · <strong>Analyseart:</strong> Ex-ante-Mandatsportfolio mit getrennten Wirkungs- und Lifecycle-Objekten</p>
-      <p><strong>Fassungsregel:</strong> Parteioffiziell wiederveröffentlichter Vertragstext; keine stille Gleichsetzung mit einer nicht nachgewiesenen byte-identischen signierten Endfassung.</p>
+      <p><strong>Fassungsregel:</strong> Direkte PDF der SPD-Landesorganisation plus erhaltene Referenzfassung; keine stille Gleichsetzung mit einer kryptographisch nicht nachgewiesenen signierten Endfassung.</p>
     </section>
   </article>;
 }

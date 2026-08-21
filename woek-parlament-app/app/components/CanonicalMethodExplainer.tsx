@@ -33,7 +33,7 @@ const stages = [
     id: "recommendation",
     number: "05",
     title: "Fachlich freigegebene WÖk-Handlungsoption",
-    text: "Eine bessere Entscheidung oder Ausgestaltung wird nur aus einem fachlich freigegebenen RecommendationRecord 2.3 gezeigt. CodeX leitet keine Empfehlung aus Scores, Richtung, Zielbegriffen oder Parteipositionen ab. Fehlt die Freigabe, bleibt die Handlungsoption ausdrücklich offen.",
+    text: "Eine bessere Entscheidung oder Ausgestaltung wird nur aus einer fachlich freigegebenen WÖk-Handlungsoption gezeigt. CodeX leitet keine Empfehlung aus Scores, Richtung, Zielbegriffen oder Parteipositionen ab. Fehlt die Freigabe, bleibt die Handlungsoption ausdrücklich offen.",
   },
   {
     id: "common-targets",

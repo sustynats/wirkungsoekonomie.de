@@ -66,11 +66,11 @@ export const statePublicContent: Record<string, StatePublicContent> = {
     review: {
       area: "regierung",
       statusLabel: "FACHANALYSE VORHANDEN",
-      shortLabel: "4 initial freigegebene Wirkungsfälle der neuen Landesregierung",
-      approvedAt: "18.08.2026",
-      sourcePath: "/WOEK/WOEK-LAENDER-DAILY/FACHREVIEW/rheinland-pfalz/INITIAL-IMPACT-CASES-2026-08-18.md",
+      shortLabel: "5 freigegebene Wirkungsfälle der neuen Landesregierung",
+      approvedAt: "20.08.2026",
+      sourcePath: "/WOEK/WOEK-LAENDER-DAILY/FACHREVIEW/rheinland-pfalz/INITIAL-IMPACT-CASES-2026-08-18.md + Issue #240 Fachreview 5362806111",
       repoPath: "data/states/rheinland-pfalz/approved-review-2026-08-18.md",
-      caseCount: 4,
+      caseCount: 5,
     },
     mandate: {
       title: "Gemeinsame Verantwortung für ein starkes Rheinland-Pfalz",
@@ -80,8 +80,8 @@ export const statePublicContent: Record<string, StatePublicContent> = {
       approvedAt: "nicht separat nachgewiesen",
       signedAt: "nicht byte-stabil nachgewiesen",
       governmentStart: "18.05.2026",
-      sourceUrl: "https://www.spd-bad-hoenningen.de/dl/Koalitionsvertrag_CDU-SPD_Rheinland-Pfalz_2026-2031.pdf",
-      status: "Alle neun Kapitel sind hochmaterial geprüft. 302 explizit fachlich übergebene Zusagen aus Kapitel 1 und 2 sind fundstellengebunden erfasst; neun deklarierte Einzelrecords sowie die atomare Source-Zerlegung der Kapitel 3 bis 9 bleiben offen.",
+      sourceUrl: "https://www.spd-rlp.de/wp-content/uploads/sites/1649/2026/04/KoaV_2026-2031.pdf",
+      status: "Alle neun Kapitel sind hochmaterial geprüft. 1.254 explizit fachlich übergebene Zusagen aus allen neun Kapiteln sind fundstellengebunden erfasst; die Quellenabdeckung ist vollständig, Einzelwirkungsanalysen bleiben davon getrennt.",
     },
   },
   berlin: {
@@ -124,7 +124,10 @@ export const statePublicContent: Record<string, StatePublicContent> = {
 
 const approvedReviewMarkdownBySlug: Record<string, string> = {
   "baden-wuerttemberg": readFileSync(resolve(process.cwd(), "data/states/baden-wuerttemberg/approved-review-2026-08-18.md"), "utf8"),
-  "rheinland-pfalz": readFileSync(resolve(process.cwd(), "data/states/rheinland-pfalz/approved-review-2026-08-18.md"), "utf8"),
+  "rheinland-pfalz": [
+    readFileSync(resolve(process.cwd(), "data/states/rheinland-pfalz/approved-review-2026-08-18.md"), "utf8"),
+    readFileSync(resolve(process.cwd(), "data/states/rheinland-pfalz/approved-review-hitzeschutz-2026-08-20.md"), "utf8"),
+  ].join("\n\n"),
   berlin: readFileSync(resolve(process.cwd(), "data/states/berlin/approved-review-2026-08-18.md"), "utf8"),
   "mecklenburg-vorpommern": readFileSync(resolve(process.cwd(), "data/states/mecklenburg-vorpommern/approved-review-2026-08-18.md"), "utf8"),
 };

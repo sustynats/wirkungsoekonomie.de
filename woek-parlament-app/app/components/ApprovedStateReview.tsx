@@ -1,5 +1,7 @@
 import { Fragment, type ReactNode } from "react";
+import Link from "next/link";
 import type { StateReviewMeta } from "@/lib/states/public-content";
+import { sourceDetailHrefForUrl } from "@/lib/sources/public-registry";
 import styles from "./ApprovedStateReview.module.css";
 
 type Block =
@@ -36,15 +38,44 @@ const publicReviewTermLabels: Record<string, string> = {
   PROGRAMME_ANALYSIS_IN_PROGRESS: "Wahlprogrammanalyse in Arbeit",
   REALITY_CHECK_NOT_MATURE: "Reality Check noch nicht reif",
   REALITY_CHECK_NOT_YET_MATURE: "Reality Check noch nicht reif",
+  REALITY_CHECK_PENDING: "Reality Check steht noch aus",
   REQUIRES_FEDERAL_FRAMEWORK: "Bundesrechtlicher Rahmen erforderlich",
   REQUIRES_FEDERAL_OR_EU_ACTION_FOR_GENERAL_BAN: "Für ein allgemeines Verbot ist Bundes- oder EU-Handeln erforderlich",
   SOURCE_NOT_YET_AVAILABLE: "Offizielle Quelle noch nicht verfügbar",
+  CURRENT_GOVERNMENT_CONTRIBUTION_TO_INHERITED_POLICY_PATH: "Beitrag der aktuellen Regierung zu einem übernommenen Politikpfad",
+  PROBLEM_WELL_SUPPORTED: "Problem durch belastbare Quellen gestützt",
+  GOAL_SUPPORTED_WITH_OUTCOME_REFINEMENT: "Ziel plausibel; messbare Ergebnisziele müssen präzisiert werden",
+  NOT_ASSESSABLE: "noch nicht bewertbar",
+  DISAGGREGATION_REQUIRED: "Einzelmaßnahmen müssen getrennt geprüft werden",
+  ASSESSMENT_AVAILABLE_WITH_OPEN_POINTS: "Bewertung mit offenen Prüfpunkten vorhanden",
+  DO_NOT_SYNTHESIZE: "nicht technisch ableiten",
+  BASELINE: "Ausgangslage",
+  OUTCOME: "beobachtetes Ergebnis",
+  DISTRIBUTION: "Verteilung",
+  CONTEXT: "Kontext",
+  REALITY_CHECK: "Reality Check",
+  HIGH: "hoch",
+  MEDIUM: "mittel",
+  OPEN: "offen",
+  attribution_status: "Zurechnungsstatus",
+  problem_adequacy_status: "Status der Problemprüfung",
+  goal_adequacy_status: "Status der Zielprüfung",
+  RECOMMENDATION: "WÖk-Handlungsoption",
+  RecommendationRecord: "WÖk-Handlungsvorschlag",
+  GovernmentTerm: "Regierungszeitraum",
+  AnalysisVersion: "Analysefassung",
+  EvidenceEvents: "Evidenzereignisse",
+  "DNS-Indicator-IDs": "DNS-Indikatoren",
 };
 
 function publicReviewText(value: string) {
-  return value
-    .replace(/\b(?:BW|BE|MV|RP|ST)-IMPACT-\d{4}-\d{2}\b\s*[-–:]?\s*/g, "")
-    .replace(/\b[A-Z][A-Z0-9]+(?:_[A-Z0-9]+)+\b/g, (token) => publicReviewTermLabels[token] ?? "");
+  let publicValue = value;
+  for (const [token, label] of Object.entries(publicReviewTermLabels).sort(([left], [right]) => right.length - left.length)) {
+    publicValue = publicValue.replace(new RegExp(`\\b${token}\\b`, "g"), label);
+  }
+  return publicValue
+    .replace(/\b(?:BW|BE|MV|RP|ST)-IMPACT-\d{4}-\d{2}(?:-[A-Z0-9-]+)?\b\s*[-–:]?\s*/g, "")
+    .replace(/\b[A-Z][A-Z0-9]+(?:_[A-Z0-9]+)+\b/g, "");
 }
 
 function isBlockStart(line: string) {
@@ -107,7 +138,7 @@ function renderInline(text: string): ReactNode[] {
     if (token.startsWith("**") && token.endsWith("**")) return <strong key={`${index}-${token}`}>{token.slice(2, -2)}</strong>;
     if (/^https?:\/\//.test(token)) {
       const { url, suffix } = stripTrailingUrlPunctuation(token);
-      return <Fragment key={`${index}-${token}`}><a className={styles.link} href={url}>{url}</a>{suffix}</Fragment>;
+      return <Fragment key={`${index}-${token}`}><Link className={styles.link} href={sourceDetailHrefForUrl(url)}>Quellenakte öffnen</Link>{suffix}</Fragment>;
     }
     return <Fragment key={`${index}-${token}`}>{token}</Fragment>;
   });
@@ -135,20 +166,26 @@ function renderBlock(block: Block, index: number) {
 }
 
 function teaser(section: Section) {
+  const sanitize = (value: string) => publicReviewText(value)
+    .replace(/\*\*|`/g, "")
+    .replace(/https?:\/\/\S+/g, "Quellenakte")
+    .replace(/\s+/g, " ")
+    .trim();
   const impactIndex = section.blocks.findIndex((block) => block.type === "heading" && /Wirkungskern|Vorläufige WÖk-Einordnung|Vorläufige Einordnung/i.test(block.text));
   if (impactIndex >= 0) {
     const paragraph = section.blocks.slice(impactIndex + 1).find((block): block is Extract<Block, { type: "paragraph" }> => block.type === "paragraph");
-    if (paragraph) return paragraph.text.replace(/\s+/g, " ").slice(0, 260);
+    if (paragraph) return sanitize(paragraph.text).slice(0, 260);
   }
   const firstParagraph = section.blocks.find((block): block is Extract<Block, { type: "paragraph" }> => block.type === "paragraph");
-  return firstParagraph?.text.replace(/\s+/g, " ").slice(0, 260) ?? "Fachlich freigegebener Wirkungsgegenstand";
+  return firstParagraph ? sanitize(firstParagraph.text).slice(0, 260) : "Fachlich freigegebener Wirkungsgegenstand";
 }
 
 export default function ApprovedStateReview({ markdown, meta }: { markdown: string; meta: StateReviewMeta }) {
   const blocks = parseMarkdown(markdown);
   const sections = sectionsFrom(blocks);
   const intro = sections[0] ?? { heading: null, blocks: [] };
-  const cases = sections.slice(1);
+  const cases = sections.slice(1).filter((section) => /\b(?:BW|BE|MV|RP|ST)-IMPACT-\d{4}-\d{2}\b/.test(section.heading?.text ?? ""));
+  const publicationNotes = sections.slice(1).filter((section) => !cases.includes(section));
   return <section aria-labelledby="vollstaendige-fachanalyse">
     <div className={styles.sourceBox}>
       <p className={styles.eyebrow}>Freigegebener Länder-Fachstand</p>
@@ -176,5 +213,10 @@ export default function ApprovedStateReview({ markdown, meta }: { markdown: stri
         </details>;
       })}
     </div> : null}
+
+    {publicationNotes.map((section, index) => <article className={styles.document} key={`${index}-${section.heading?.text}`}>
+      {section.heading ? renderBlock(section.heading, index + 5000) : null}
+      {section.blocks.map((block, blockIndex) => renderBlock(block, blockIndex + 5100 + index * 100))}
+    </article>)}
   </section>;
 }

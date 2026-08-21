@@ -1,7 +1,7 @@
 {
   "schema_version": "2.3-preview-ui-contract-p0",
-  "generated_at": "2026-08-21T06:20:26.021Z",
-  "base_url": "http://127.0.0.1:3018",
+  "generated_at": "2026-08-21T09:53:19.673Z",
+  "base_url": "http://127.0.0.1:3020",
   "status": "PASS",
   "counts": {
     "government_fach_total": 63,
@@ -329,11 +329,11 @@
     {
       "route": "/suche",
       "http_status": 200,
-      "preview_cards": 114,
-      "preview_assessments": 99,
+      "preview_cards": 115,
+      "preview_assessments": 100,
       "fact_only_preview_cards": 13,
       "fact_only_statuses": 13,
-      "assessment_icons": 99,
+      "assessment_icons": 100,
       "full_record_details": 0,
       "public_open_states": 0,
       "explicit_technical_proofs_excluded_from_language_scan": 0,

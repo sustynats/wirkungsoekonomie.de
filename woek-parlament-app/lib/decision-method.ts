@@ -80,6 +80,7 @@ export function reviewText(value: unknown): string | null {
 
 export function publicReviewProse(value: string): string {
   return value
+    .replace(/\bRecommendationRecord 2\.3\b/g, "fachlich freigegebene WÖk-Handlungsoption")
     .replace(/\bNO_ROBUST_RECOMMENDATION\b/g, "keine robuste WÖk-Handlungsoption")
     .replace(/\bwoek_preferred_option=null\b/g, "keine fachlich freigegebene WÖk-Präferenz")
     .replace(/\bReality Check oder neue RecommendationVersion\b/g, "den Reality Check oder eine neue Fassung der WÖk-Handlungsoption")

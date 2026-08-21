@@ -15,6 +15,7 @@ import {
   rheinlandPfalzCoalitionQualityLayers,
   rheinlandPfalzCoalitionRelationshipModel,
   rheinlandPfalzCoalitionSources,
+  rheinlandPfalzHitzeschutzSources,
 } from "../../lib/states/rheinland-pfalz-coalition";
 
 const baseUrl = (process.env.WOEK_RLP_COALITION_BASE_URL ?? "http://127.0.0.1:3018").replace(/\/$/, "");
@@ -26,6 +27,9 @@ const sourceFiles = [
   "app/components/states/RheinlandPfalzCoalitionReview.tsx",
   "app/components/states/StateCoalitionCommitmentInventory.tsx",
   "app/laender/[slug]/mandat-und-praxis/page.tsx",
+  "data/states/rheinland-pfalz/approved-review-hitzeschutz-2026-08-20.md",
+  "app/components/ApprovedStateReview.tsx",
+  "app/laender/[slug]/regierung/page.tsx",
 ];
 
 function sourceSlug(url: string) {
@@ -46,6 +50,59 @@ function visible(html: string) {
     .replace(/&lt;/g, "<")
     .replace(/&gt;/g, ">")
     .replace(/\s+/g, " ")
+    .replace(/\s+([,.;:])/g, "$1")
+    .replace(/\(\s+/g, "(")
+    .replace(/\s+\)/g, ")")
+    .trim()
+    .normalize("NFKC");
+}
+
+const reviewTokenLabels: Record<string, string> = {
+  CURRENT_GOVERNMENT_CONTRIBUTION_TO_INHERITED_POLICY_PATH: "Beitrag der aktuellen Regierung zu einem übernommenen Politikpfad",
+  PROBLEM_WELL_SUPPORTED: "Problem durch belastbare Quellen gestützt",
+  GOAL_SUPPORTED_WITH_OUTCOME_REFINEMENT: "Ziel plausibel; messbare Ergebnisziele müssen präzisiert werden",
+  NOT_ASSESSABLE: "noch nicht bewertbar",
+  REALITY_CHECK_PENDING: "Reality Check steht noch aus",
+  DISAGGREGATION_REQUIRED: "Einzelmaßnahmen müssen getrennt geprüft werden",
+  ASSESSMENT_AVAILABLE_WITH_OPEN_POINTS: "Bewertung mit offenen Prüfpunkten vorhanden",
+  DO_NOT_SYNTHESIZE: "nicht technisch ableiten",
+  "DNS-Indicator-IDs": "DNS-Indikatoren",
+  attribution_status: "Zurechnungsstatus",
+  problem_adequacy_status: "Status der Problemprüfung",
+  goal_adequacy_status: "Status der Zielprüfung",
+  RecommendationRecord: "WÖk-Handlungsvorschlag",
+  RECOMMENDATION: "WÖk-Handlungsoption",
+  GovernmentTerm: "Regierungszeitraum",
+  AnalysisVersion: "Analysefassung",
+  EvidenceEvents: "Evidenzereignisse",
+  REALITY_CHECK: "Reality Check",
+  DISTRIBUTION: "Verteilung",
+  BASELINE: "Ausgangslage",
+  OUTCOME: "beobachtetes Ergebnis",
+  CONTEXT: "Kontext",
+  MEDIUM: "mittel",
+  HIGH: "hoch",
+  OPEN: "offen",
+};
+
+function expectedReviewLine(line: string) {
+  let value = line
+    .replace(/^#{1,6}\s+/, "")
+    .replace(/^[-*]\s+/, "")
+    .replace(/^\d+\.\s+/, "")
+    .replace(/\*\*/g, "")
+    .replace(/`/g, "")
+    .replace(/https?:\/\/\S+/g, "Quellenakte öffnen");
+  for (const [token, label] of Object.entries(reviewTokenLabels).sort(([left], [right]) => right.length - left.length)) {
+    value = value.replace(new RegExp(`\\b${token}\\b`, "g"), label);
+  }
+  return value
+    .replace(/\b(?:BW|BE|MV|RP|ST)-IMPACT-\d{4}-\d{2}(?:-[A-Z0-9-]+)?\b\s*[-–:]?\s*/g, "")
+    .replace(/\b[A-Z][A-Z0-9]+(?:_[A-Z0-9]+)+\b/g, "")
+    .replace(/\s+/g, " ")
+    .replace(/\s+([,.;:])/g, "$1")
+    .replace(/\(\s+/g, "(")
+    .replace(/\s+\)/g, ")")
     .trim()
     .normalize("NFKC");
 }
@@ -56,8 +113,11 @@ async function fetchRoute(route: string) {
 }
 
 async function main() {
-  const sourceRoutes = rheinlandPfalzCoalitionSources.map((source) => `/quellen/${sourceSlug(source.url)}`);
-  const requiredRoutes = [RLP_COALITION_ROUTE, ...sourceRoutes];
+  const coalitionSourceRoutes = rheinlandPfalzCoalitionSources.map((source) => `/quellen/${sourceSlug(source.url)}`);
+  const hitzeschutzSourceRoutes = rheinlandPfalzHitzeschutzSources.map((source) => `/quellen/${sourceSlug(source.url)}`);
+  const sourceRoutes = [...coalitionSourceRoutes, ...hitzeschutzSourceRoutes];
+  const governmentRoute = "/laender/rheinland-pfalz/regierung";
+  const requiredRoutes = [RLP_COALITION_ROUTE, governmentRoute, ...sourceRoutes];
   const pages = new Map<string, Awaited<ReturnType<typeof fetchRoute>>>();
   for (const route of requiredRoutes) pages.set(route, await fetchRoute(route));
 
@@ -66,6 +126,8 @@ async function main() {
   const renderedContentPaths: string[] = [];
   const mainPage = pages.get(RLP_COALITION_ROUTE)!;
   const mainText = visible(mainPage.html);
+  const governmentPage = pages.get(governmentRoute)!;
+  const governmentText = visible(governmentPage.html);
   if (mainPage.status !== 200) failures.push(`${RLP_COALITION_ROUTE}:HTTP_${mainPage.status}`);
 
   function verify(pointer: string, value: string | null | undefined) {
@@ -105,7 +167,19 @@ async function main() {
   rheinlandPfalzCoalitionLifecycle.forEach((step, index) => verify(`/lifecycle/${index}`, step));
   for (const impactCase of rheinlandPfalzCoalitionExistingImpactCases) verify(`/existing_impact_cases/${impactCase.id}/title`, impactCase.title);
 
-  for (const route of sourceRoutes) {
+  const hitzeschutzReviewFile = "data/states/rheinland-pfalz/approved-review-hitzeschutz-2026-08-20.md";
+  const hitzeschutzLines = readFileSync(path.resolve(hitzeschutzReviewFile), "utf8")
+    .split(/\r?\n/)
+    .map(expectedReviewLine)
+    .filter((line) => line.length >= 8 && line !== "---");
+  hitzeschutzLines.forEach((line, index) => {
+    const contentPath = `RP-IMPACT-2026-05-HITZESCHUTZ:/review-lines/${index}`;
+    requiredContentPaths.push(contentPath);
+    if (governmentText.includes(line)) renderedContentPaths.push(contentPath);
+    else failures.push(`${contentPath}:NOT_RENDERED:${line.slice(0, 120)}`);
+  });
+
+  for (const route of coalitionSourceRoutes) {
     const page = pages.get(route)!;
     if (page.status !== 200) failures.push(`${route}:HTTP_${page.status}`);
     const text = visible(page.html);
@@ -113,25 +187,46 @@ async function main() {
     if (!text.includes("Originalquelle öffnen")) failures.push(`${route}:ORIGINAL_LINK_MISSING`);
     if (!text.includes("Koalitionsvertrag Rheinland-Pfalz 2026–2031")) failures.push(`${route}:ANALYSIS_USAGE_MISSING`);
   }
+  for (const route of hitzeschutzSourceRoutes) {
+    const page = pages.get(route)!;
+    if (page.status !== 200) failures.push(`${route}:HTTP_${page.status}`);
+    const text = visible(page.html);
+    if (!text.includes("Für diese Analysen verwendet")) failures.push(`${route}:REVERSE_USAGE_MISSING`);
+    if (!text.includes("Originalquelle öffnen")) failures.push(`${route}:ORIGINAL_LINK_MISSING`);
+    if (!text.includes("Hitzeaktionsplan: geerbter Politikpfad und aktuelle Verstetigung")) failures.push(`${route}:ANALYSIS_USAGE_MISSING`);
+    if (!text.includes("Klares positives Gesundheits- und Resilienzpotenzial")) failures.push(`${route}:ASSESSMENT_MISSING`);
+  }
 
   const missingRecordIdsRendered = rheinlandPfalzCoalitionCommitmentRegister.missing_declared_record_ids.filter((id) => mainText.includes(id));
   if (missingRecordIdsRendered.length) failures.push(`MISSING_RECORDS_SYNTHESIZED:${missingRecordIdsRendered.join(",")}`);
   const invariants = {
     ALL_NINE_CHAPTERS_HIGH_MATERIALITY_REVIEWED: rheinlandPfalzCoalitionChapters.length === 9
       && rheinlandPfalzCoalitionChapters.every((chapter) => chapter.maturity === "HIGH_MATERIALITY_REVIEW"),
-    EXACT_EXPLICIT_SOURCE_RECORD_TRANSFER: rheinlandPfalzCoalitionCommitments.length === 302
-      && rheinlandPfalzCoalitionAtomicCommitments.length === 302
-      && rheinlandPfalzCoalitionCommitmentRegister.source_record_count === 302,
-    DECLARED_HANDOFF_GAP_FAILS_CLOSED: rheinlandPfalzCoalitionCommitmentRegister.handoff_record_gap_count === 9
-      && rheinlandPfalzCoalitionCommitmentRegister.missing_declared_record_ids.length === 9
+    EXACT_EXPLICIT_SOURCE_RECORD_TRANSFER: rheinlandPfalzCoalitionCommitments.length === 1254
+      && rheinlandPfalzCoalitionAtomicCommitments.length === 1254
+      && rheinlandPfalzCoalitionCommitmentRegister.source_record_count === 1254,
+    DECLARED_HANDOFF_GAP_FAILS_CLOSED: rheinlandPfalzCoalitionCommitmentRegister.handoff_record_gap_count === 0
+      && rheinlandPfalzCoalitionCommitmentRegister.missing_declared_record_ids.length === 0
       && missingRecordIdsRendered.length === 0,
-    CHAPTERS_THREE_TO_NINE_REVIEWED_WITHOUT_SYNTHETIC_ATOMICS: rheinlandPfalzCoalitionCommitmentRegister.chapter_counts
-      .filter((entry) => entry.chapter >= 3).every((entry) => entry.atomic_commitments === 0),
+    CURRENT_FACH_ATOMIC_SCOPE_EXACT: rheinlandPfalzCoalitionCommitmentRegister.chapter_counts
+      .map((entry) => entry.atomic_commitments).join(",") === "151,151,263,135,246,88,86,103,31",
     NO_ARTIFICIAL_OVERALL_DIRECTION: mainText.includes("keine belastbare einheitliche Wirkungsrichtung")
       && mainText.includes("weder zu einer Koalitionsnote noch zu einer Ampel oder einem Durchschnitt verrechnet"),
-    PROVENANCE_GUARD_VISIBLE: mainText.includes("byte-identische signierte Endfassung ist nicht nachgewiesen"),
-    FOUR_EXISTING_IMPACT_CASES_REUSED: rheinlandPfalzCoalitionExistingImpactCases.length === 4
+    PROVENANCE_GUARD_VISIBLE: mainText.includes("kryptographisch nachgewiesene Byte-Identität mit einer signierten Endfassung liegt nicht vor"),
+    FIVE_EXISTING_IMPACT_CASES_REUSED: rheinlandPfalzCoalitionExistingImpactCases.length === 5
       && rheinlandPfalzCoalitionExistingImpactCases.every((record) => mainText.includes(record.title)),
+    HITZESCHUTZ_REVIEW_FULLY_PROJECTED: governmentPage.status === 200
+      && governmentText.includes("Hitzeaktionsplan: geerbter Politikpfad und aktuelle Verstetigung")
+      && governmentText.includes("nicht 2026 neu geschaffen")
+      && governmentText.includes("klares positives Gesundheits- und Resilienzpotenzial")
+      && governmentText.includes("Landesrahmen ist nicht lokale Umsetzung")
+      && governmentText.includes("keine technisch ableitbare WÖk-Präferenz"),
+    HITZESCHUTZ_ATTRIBUTION_GUARD: governmentText.includes("Planbestand geerbt")
+      && governmentText.includes("nur aktuelle Verstetigung, Koordination und Umsetzung werden dem neuen Term zugerechnet"),
+    HITZESCHUTZ_NO_AUTOMATIC_DNS_OR_RECOMMENDATION: governmentText.includes("Exakte DNS-Indikatoren werden nicht aus Schlagworten abgeleitet")
+      && governmentText.includes("kein freigegebener WÖk-Handlungsvorschlag speziell für diesen neuen rheinland-pfälzischen Hitzeschutz-Fall"),
+    HITZESCHUTZ_SOURCE_INTERMEDIARIES: rheinlandPfalzHitzeschutzSources.every((source) => governmentPage.html.includes(`/quellen/${sourceSlug(source.url)}`))
+      && !rheinlandPfalzHitzeschutzSources.some((source) => governmentPage.html.includes(`href=\"${source.url}`)),
     NO_CODEX_RECOMMENDATION: mainText.includes("keine fachlich freigegebene Recommendation")
       && mainText.includes("nicht automatisch zu einer Recommendation zusammengesetzt"),
     SOURCE_INTERMEDIARY_REQUIRED: rheinlandPfalzCoalitionSources.every((source) => mainPage.html.includes(`/quellen/${sourceSlug(source.url)}`))
@@ -143,7 +238,7 @@ async function main() {
   };
   for (const [name, passed] of Object.entries(invariants)) if (!passed) failures.push(`invariant:${name}`);
 
-  const rawPublicTokens = ["HIGH_MATERIALITY_REVIEW", "PARTIAL_ANALYSIS_NEEDS_COMPLETION", "PARTY_OFFICIAL_REPUBLISHED_CONTRACT_TEXT", "RecommendationRecord", "funding_status"];
+  const rawPublicTokens = ["HIGH_MATERIALITY_REVIEW", "PARTIAL_ANALYSIS_NEEDS_COMPLETION", "PARTY_OFFICIAL_REPUBLISHED_CONTRACT_TEXT", "RecommendationRecord", "GovernmentTerm", "AnalysisVersion", "EvidenceEvents", "DNS-Indicator-IDs", "attribution_status", "problem_adequacy_status", "goal_adequacy_status", "funding_status", "RP-IMPACT-2026-05-HITZESCHUTZ"];
   for (const token of rawPublicTokens) if (mainText.includes(token)) failures.push(`RAW_PUBLIC_TOKEN:${token}`);
 
   const fullLayers = [
@@ -158,7 +253,7 @@ async function main() {
     status: failures.length ? "FAIL" : "PASS",
     source_files: sourceFiles,
     source_hashes: Object.fromEntries(sourceFiles.map((file) => [file, createHash("sha256").update(readFileSync(path.resolve(file))).digest("hex")])),
-    fach_version: "RLP_COALITION_2026_2031_ISSUE_240_REVIEWED_SCOPE_WITH_EXACT_302_RECORD_HANDOFF",
+    fach_version: "RLP_COALITION_2026_2031_ISSUE_240_FULL_GOLDEN_STATE_WITH_EXACT_1254_RECORD_HANDOFF",
     renderer_version: "STATE_COALITION_REVIEWED_SCOPE_RENDERER_20260821",
     records: {
       documents: 1,

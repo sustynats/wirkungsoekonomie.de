@@ -16,6 +16,11 @@ const reviews = [
     path: "data/states/rheinland-pfalz/approved-review-2026-08-18.md",
     bytes: 7199,
     ids: ["RP-IMPACT-2026-01", "RP-IMPACT-2026-02", "RP-IMPACT-2026-03", "RP-IMPACT-2026-04"],
+    supplemental: {
+      path: "data/states/rheinland-pfalz/approved-review-hitzeschutz-2026-08-20.md",
+      bytes: 11226,
+      ids: ["RP-IMPACT-2026-05-HITZESCHUTZ"],
+    },
   },
   {
     slug: "berlin",
@@ -37,7 +42,14 @@ test("approved Länder reviews retain the canonical source byte lengths and impa
     assert.equal(statSync(absolutePath).size, review.bytes, `${review.slug}: canonical byte length changed`);
     const markdown = readFileSync(absolutePath, "utf8");
     for (const id of review.ids) assert.ok(markdown.includes(id), `${review.slug}: missing ${id}`);
-    assert.equal(statePublicContent[review.slug]?.review?.caseCount, review.ids.length);
+    const supplemental = "supplemental" in review ? review.supplemental : null;
+    if (supplemental) {
+      const supplementalPath = resolve(process.cwd(), supplemental.path);
+      assert.equal(statSync(supplementalPath).size, supplemental.bytes, `${review.slug}: supplemental canonical byte length changed`);
+      const supplementalMarkdown = readFileSync(supplementalPath, "utf8");
+      for (const id of supplemental.ids) assert.ok(supplementalMarkdown.includes(id), `${review.slug}: missing ${id}`);
+    }
+    assert.equal(statePublicContent[review.slug]?.review?.caseCount, review.ids.length + (supplemental?.ids.length ?? 0));
   }
 });
 

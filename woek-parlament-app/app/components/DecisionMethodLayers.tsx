@@ -245,7 +245,7 @@ export function CommonTargetsComparison({ impactCaseId }: { impactCaseId: string
     <h2 id={`common-targets-${impactCaseId}`}>Wirkung auf gemeinsame Ziele</h2>
     <p>Hier wird getrennt gezeigt, wie die beschlossene Entscheidung und – sofern fachlich freigegeben – die WÖk-Handlungsoption auf dieselben Ziel- und Schutzräume wirken. Eine Zielzuordnung ist noch kein Kausalitätsnachweis. Es gibt weder eine arithmetische Gesamtnote noch einen automatisch erzeugten Zielbezug.</p>
     {!review && <div className="open-state"><strong>Vergleich mit gemeinsamen Zielen fachlich noch offen.</strong><p>Aus Schlagworten, Wirkungspfaden oder vorhandenen Scores wird keine Zielrichtung abgeleitet. Offen bedeutet weder neutral noch wirkungslos.</p></div>}
-    {review && !recommendation && <div className="open-state"><strong>WÖk-Handlungsoption im öffentlichen Bestand nicht verfügbar.</strong><p>Der Vergleich bleibt geschlossen, bis die zugehörige kanonisch freigegebene RecommendationRecord-Fassung öffentlich verknüpft ist.</p></div>}
+    {review && !recommendation && <div className="open-state"><strong>WÖk-Handlungsoption im öffentlichen Bestand nicht verfügbar.</strong><p>Der Vergleich bleibt geschlossen, bis die zugehörige fachlich freigegebene WÖk-Handlungsoption öffentlich verknüpft ist.</p></div>}
     {review && recommendation && <>
       <div className="common-target-options"><p><strong>Beschlossene Entscheidung:</strong> {review.actual_option.label}</p>{review.woek_option
         ? <p><strong>WÖk-Handlungsoption:</strong> {review.woek_option.label}</p>

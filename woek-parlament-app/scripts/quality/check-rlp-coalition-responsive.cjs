@@ -18,6 +18,7 @@ const routes = [
   "/laender/rheinland-pfalz",
   "/laender/rheinland-pfalz/regierung",
   "/suche",
+  "/quellen/quelle-6ade1cff08c61280",
   "/quellen/quelle-8b3c481a8be218ab",
   "/quellen/quelle-c075cfc4217ea037",
   "/quellen/quelle-4b0125137a475c7c",
@@ -28,6 +29,10 @@ const routes = [
   "/quellen/quelle-b31d73f742fa7655",
   "/quellen/quelle-2b41c262190e77d5",
   "/quellen/quelle-123a206e5bce74d2",
+  "/quellen/quelle-f255d91d79106560",
+  "/quellen/quelle-5fbffb8156d9536b",
+  "/quellen/quelle-4a29e540381929ca",
+  "/quellen/quelle-6972a69a97de51a6",
 ];
 
 (async () => {

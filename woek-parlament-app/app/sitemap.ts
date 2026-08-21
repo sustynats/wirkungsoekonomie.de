@@ -11,7 +11,11 @@ import { getAllCommunicationMediaImpactRecords } from "@/lib/state-programmes/co
 import { sourceSlugForCanonicalUrl } from "@/lib/sources/url";
 import { actionPlanRequiredRoutes, actionPlanSources } from "@/lib/government/strategy-impact";
 import { BW_COALITION_ROUTE, badenWuerttembergCoalitionSources } from "@/lib/states/baden-wuerttemberg-coalition";
-import { RLP_COALITION_ROUTE, rheinlandPfalzCoalitionSources } from "@/lib/states/rheinland-pfalz-coalition";
+import {
+  RLP_COALITION_ROUTE,
+  rheinlandPfalzCoalitionSources,
+  rheinlandPfalzHitzeschutzSources,
+} from "@/lib/states/rheinland-pfalz-coalition";
 
 const siteUrl = "https://parlament.wirkungsoekonomie.de";
 
@@ -62,8 +66,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const strategyEntries = actionPlanRequiredRoutes().map((path) => entry(path, "2026-08-18", .8));
   const strategySourceRoutes = [...new Set(actionPlanSources.map((source) => sourceSlugForCanonicalUrl(source.url)).filter((slug): slug is string => Boolean(slug)))]
     .map((slug) => entry(`/quellen/${slug}`, "2026-08-18", .6));
-  const coalitionEntries = [entry(BW_COALITION_ROUTE, "2026-08-21", .8), entry(RLP_COALITION_ROUTE, "2026-08-21", .8)];
-  const coalitionSourceRoutes = [...new Set([...badenWuerttembergCoalitionSources, ...rheinlandPfalzCoalitionSources].map((source) => sourceSlugForCanonicalUrl(source.url)).filter((slug): slug is string => Boolean(slug)))]
+  const coalitionEntries = [
+    entry(BW_COALITION_ROUTE, "2026-08-21", .8),
+    entry(RLP_COALITION_ROUTE, "2026-08-21", .8),
+    entry("/laender/rheinland-pfalz/regierung", "2026-08-21", .8),
+  ];
+  const coalitionSourceRoutes = [...new Set([
+    ...badenWuerttembergCoalitionSources,
+    ...rheinlandPfalzCoalitionSources,
+    ...rheinlandPfalzHitzeschutzSources,
+  ].map((source) => sourceSlugForCanonicalUrl(source.url)).filter((slug): slug is string => Boolean(slug)))]
     .map((slug) => entry(`/quellen/${slug}`, "2026-08-21", .6));
   const governmentImpacts = getPublicImpactCases();
   const euImpacts = getEuImpactCases();

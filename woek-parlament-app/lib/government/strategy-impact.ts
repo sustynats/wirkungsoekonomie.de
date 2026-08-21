@@ -292,7 +292,7 @@ const m02: MissionDeepDive = {
     { id: "version", title: "Versionsdelta", text: "Kennzahlenversprechen des Entwurfs, finale Mission und später tatsächlich implementierte Monitoringmethodik werden getrennt versioniert." },
     { id: "coverage", title: "Abdeckung", text: "Vollständige Ex-ante-Prüfung der Entwurfsmission mit noch offener operationaler Methode; keine Outcome- oder Attributionsreife." },
   ],
-  recommendationStatus: "Es wird keine neue WÖk-Handlungsoption aus diesem Review erzeugt. Ein bestehender fachlicher RecommendationRecord zum Sondervermögen oder Haushalt müsste separat per ID verknüpft werden; andernfalls bleibt die Handlungsoption offen.",
+  recommendationStatus: "Es wird keine neue WÖk-Handlungsoption aus diesem Review erzeugt. Eine bestehende fachlich freigegebene WÖk-Handlungsoption zum Sondervermögen oder Haushalt müsste separat verknüpft werden; andernfalls bleibt die Handlungsoption offen.",
 };
 
 const m04: MissionDeepDive = {
@@ -326,7 +326,7 @@ const m04: MissionDeepDive = {
     { id: "version", title: "Versionsdelta", text: "Beteiligungsfassung → finale Mission → tatsächliche GGO-Änderung und Arbeitshilfen → reale Anwendung. Plan und eingeführtes Verfahren werden nicht gleichgesetzt." },
     { id: "coverage", title: "Abdeckung", text: "Vollständige Ex-ante-Prüfung der Entwurfsmission bei noch offener Umsetzung; keine Aussage über die spätere Prüfpraxis." },
   ],
-  recommendationStatus: "Es wird keine WÖk-Handlungsoption aus diesem Review erzeugt. Die beschriebenen Mindeststandards sind Analyse- und Prüfkriterien, kein automatisch freigegebener RecommendationRecord.",
+  recommendationStatus: "Es wird keine WÖk-Handlungsoption aus diesem Review erzeugt. Die beschriebenen Mindeststandards sind Analyse- und Prüfkriterien, keine automatisch freigegebene WÖk-Handlungsoption.",
 };
 
 const reviewedDeepDiveOverlays = JSON.parse(readFileSync(path.join(root, "reviewed-deep-dives-20260820.json"), "utf8")) as { records: MissionDeepDive[] };
@@ -375,7 +375,7 @@ export function actionPlanPublicMaturity(title: string, full: boolean): PublicMa
       { id: "goal", label: "Zielprüfung", status: full ? "AVAILABLE" : "PENDING", detail: full ? "fachlich veröffentlicht" : "fachliche Vertiefung ausstehend" },
       { id: "impact", label: "Wirkungspotenzial und Risiken", status: "AVAILABLE", detail: "Ex-ante-Wirkpfad veröffentlicht" },
       { id: "reality", label: "Reality Check", status: "OPEN", detail: "noch nicht beobachtbar" },
-      { id: "recommendation", label: "WÖk-Handlungsoption", status: "PENDING", detail: "kein fachlich freigegebener RecommendationRecord" },
+      { id: "recommendation", label: "WÖk-Handlungsoption", status: "PENDING", detail: "keine fachlich freigegebene WÖk-Handlungsoption" },
       { id: "operationalization", label: "Operationalisierung", status: "OPEN", detail: "mit finaler Fassung und Umsetzung fortzuschreiben" },
     ],
   };

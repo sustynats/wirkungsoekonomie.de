@@ -54,7 +54,7 @@ const knownFallbacks = [
   /\b(?:\x6c\x6f\x72\x65\x6d \x69\x70\x73\x75\x6d|\x74\x62\x64|\x74\x6f\x64\x6f|\x63\x6f\x6d\x69\x6e\x67 \x73\x6f\x6f\x6e)\b/i,
 ];
 const rawEnum = /\b(?:POSITIVE_POTENTIAL|NEGATIVE_RISK|POSITIVE|NEGATIVE|NEUTRAL|AMBIVALENT|OPEN|HIGH|MEDIUM|LOW|PASS|BLOCK|APPROVED|ACTIVE|EXTERNAL_CONTEXT|PROVISIONAL_UNTIL_OFFICIAL_VALIDATION|NOT_ESTABLISHED|PORTFOLIO_DISAGGREGATION_REQUIRED|NO_ROBUST_OVERALL_DIRECTION|NOT_YET_OBSERVABLE|OBSERVATION_ONLY|PLAUSIBLE_CONTRIBUTION|PARTIAL_ATTRIBUTION|CAUSAL_EVIDENCE|CONFLICTING_EVIDENCE|NOT_ASSESSABLE|IMPACT_POTENTIAL_EX_ANTE|PORTFOLIO_EX_ANTE|GOVERNMENT_DRAFT|NO_SINGLE_DIRECTION_ALLOWED|VERY_HIGH|STANDARD_WOEK_ANALYSIS|NOT_APPLICABLE|BACKFILL_REQUIRED|LIMITED_FACH_RECORD|NOT_STRUCTURED|WATCH)\b/;
-const rawPublicTerm = /\b(?:RecommendationVersions?|EvidenceEvents?|ExternalShock|StateObservation|State Variables|RealityCheckCandidate|AnalysisVersion|WÖkImpactCase|ImpactCase|GovernmentActions?|ParliamentaryCases?|LegalActs?|SourceEvents?|VoteEvents?|IndividualVotes?|Climate resource)\b/;
+const rawPublicTerm = /\b(?:RecommendationRecords?|RecommendationVersions?|CoalitionCommitments?|EvidenceEvents?|ExternalShock|StateObservation|State Variables|RealityCheckCandidate|AnalysisVersion|WÖkImpactCase|ImpactCase|GovernmentActions?|ParliamentaryCases?|LegalActs?|SourceEvents?|VoteEvents?|IndividualVotes?|Climate resource)\b/;
 const machineResidue = [
   /realitycheckstatus\s*=/i,
   /\b[\p{L}0-9]+(?:_[\p{L}0-9]+)+\b/u,
