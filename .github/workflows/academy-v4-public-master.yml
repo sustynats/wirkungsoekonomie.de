@@ -1,0 +1,65 @@
+name: Academy v4 public-master parity
+
+on:
+  push:
+    branches:
+      - codex/academy-v4-public-master-20260821
+    paths:
+      - 'content/studienskripte/v4/**'
+      - 'scripts/academy/sync-v4-public-master.mjs'
+      - '.github/workflows/academy-v4-public-master.yml'
+  pull_request:
+    paths:
+      - 'content/studienskripte/v4/**'
+      - 'scripts/academy/sync-v4-public-master.mjs'
+      - '.github/workflows/academy-v4-public-master.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  public-master:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout pinned branch state
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event_name == 'pull_request' && github.head_ref || github.ref_name }}
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Materialize sanitized public master from pinned App SHA
+        if: github.event_name != 'pull_request'
+        run: node scripts/academy/sync-v4-public-master.mjs
+
+      - name: Commit deterministic mirror when source lock changed
+        if: github.event_name != 'pull_request'
+        shell: bash
+        run: |
+          if git diff --quiet -- content/studienskripte/v4; then
+            echo 'Public master already deterministic; no commit required.'
+            exit 0
+          fi
+          git config user.name 'woek-academy-autopilot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add content/studienskripte/v4
+          git commit -m 'academy v4: materialize pinned public master'
+          git push origin HEAD:${GITHUB_REF_NAME}
+
+      - name: Verify source/hash/security parity
+        run: node scripts/academy/sync-v4-public-master.mjs --check
+
+      - name: Assert no assessment content entered public master
+        shell: bash
+        run: |
+          if find content/studienskripte/v4 -type f -print0 | xargs -0 grep -nEi '(CorrectAnswer|correct_answer|answer_key|Musterlösung|Lösungsschlüssel|instructor[_ -]?(answer|solution|rubric)|\*\*Lösung(en)?:\*\*)'; then
+            echo 'NO_ASSESSMENT_SECRET_LEAK: FAIL'
+            exit 1
+          fi
+          echo 'NO_ASSESSMENT_SECRET_LEAK: PASS'
