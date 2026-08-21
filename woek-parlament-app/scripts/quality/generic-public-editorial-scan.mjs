@@ -54,7 +54,7 @@ const knownFallbacks = [
   /\b(?:\x6c\x6f\x72\x65\x6d \x69\x70\x73\x75\x6d|\x74\x62\x64|\x74\x6f\x64\x6f|\x63\x6f\x6d\x69\x6e\x67 \x73\x6f\x6f\x6e)\b/i,
 ];
 const rawEnum = /\b(?:POSITIVE_POTENTIAL|NEGATIVE_RISK|POSITIVE|NEGATIVE|NEUTRAL|AMBIVALENT|OPEN|HIGH|MEDIUM|LOW|PASS|BLOCK|APPROVED|ACTIVE|EXTERNAL_CONTEXT|PROVISIONAL_UNTIL_OFFICIAL_VALIDATION|NOT_ESTABLISHED|PORTFOLIO_DISAGGREGATION_REQUIRED|NO_ROBUST_OVERALL_DIRECTION|NOT_YET_OBSERVABLE|OBSERVATION_ONLY|PLAUSIBLE_CONTRIBUTION|PARTIAL_ATTRIBUTION|CAUSAL_EVIDENCE|CONFLICTING_EVIDENCE|NOT_ASSESSABLE|IMPACT_POTENTIAL_EX_ANTE|PORTFOLIO_EX_ANTE|GOVERNMENT_DRAFT|NO_SINGLE_DIRECTION_ALLOWED|VERY_HIGH|STANDARD_WOEK_ANALYSIS|NOT_APPLICABLE|BACKFILL_REQUIRED|LIMITED_FACH_RECORD|NOT_STRUCTURED|WATCH)\b/;
-const rawPublicTerm = /\b(?:RecommendationRecords?|RecommendationVersions?|CoalitionCommitments?|EvidenceEvents?|ExternalShock|StateObservation|State Variables|RealityCheckCandidate|AnalysisVersion|WÖkImpactCase|ImpactCase|GovernmentActions?|ParliamentaryCases?|LegalActs?|SourceEvents?|VoteEvents?|IndividualVotes?|Climate resource)\b/;
+const rawPublicTerm = /\b(?:RecommendationRecords?|RecommendationVersions?|CoalitionCommitments?|EvidenceEvents?|ExternalShock|StateObservation|State Variables|RealityCheckCandidate|AnalysisVersion|WÖkImpactCase|ImpactCase|GovernmentActions?|GovernmentTerm|ParliamentaryCases?|LegalActs?|SourceEvents?|VoteEvents?|IndividualVotes?|Climate resource)\b/;
 const machineResidue = [
   /realitycheckstatus\s*=/i,
   /\b[\p{L}0-9]+(?:_[\p{L}0-9]+)+\b/u,
@@ -114,7 +114,9 @@ function visibleText(html) {
 }
 
 function normalEditorialHtml(html) {
-  return html.replace(/<([a-z][\w:-]*)\b[^>]*data-woek-technical-proof="[^"]+"[^>]*>[\s\S]*?<\/\1>/gi, " ");
+  return html
+    .replace(/<([a-z][\w:-]*)\b[^>]*data-woek-technical-proof="[^"]+"[^>]*>[\s\S]*?<\/\1>/gi, " ")
+    .replace(/<([a-z][\w:-]*)\b[^>]*data-woek-source-extract="verbatim"[^>]*>[\s\S]*?<\/\1>/gi, " ");
 }
 
 function publicHeadDescriptions(html) {
@@ -145,7 +147,7 @@ if (baseUrl) {
   ].filter((url, index, all) => /^https:\/\//.test(url) && all.indexOf(url) === index).slice(0, 12);
   const routes = [...new Set([
     "/", "/bevorstehend", "/entscheidungen", "/wirkungsfaelle", "/regierung", "/regierung/wirkungsanalysen",
-    "/eu", "/eu/wirkungsfaelle", "/laender", "/laender/sachsen-anhalt", "/wirkungsobservatorium", "/methodik", "/regierung/methodik", "/quellen", "/transparenz", "/fachanalysen", "/mandat-und-praxis", "/suche", ...projections.map((entry) => entry.route),
+    "/eu", "/eu/wirkungsfaelle", "/laender", "/laender/sachsen-anhalt", "/laender/baden-wuerttemberg/mandat-und-praxis", "/wirkungsobservatorium", "/methodik", "/regierung/methodik", "/quellen", "/transparenz", "/fachanalysen", "/mandat-und-praxis", "/suche", ...projections.map((entry) => entry.route),
     ...sampleSources.map((url) => `/quellen/${sourceSlug(url)}`),
     `/regierung/akte/${encodeURIComponent("govaction:dip:325252")}`,
     `/regierung/akte/${encodeURIComponent("govaction:breg-cabinet:2435812:top:5")}`,

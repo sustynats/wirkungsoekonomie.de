@@ -636,7 +636,7 @@ export const badenWuerttembergCoalitionLifecycle = [
   "6. Mai 2026: Vertrag vorgestellt und amtlich verlinkter Text veröffentlicht",
   "9. Mai 2026: Zustimmung der Koalitionsparteien",
   "11. Mai 2026: Unterzeichnung amtlich bestätigt",
-  "13. Mai 2026: Beginn des neuen GovernmentTerm",
+  "13. Mai 2026: Beginn des neuen Regierungszeitraums",
   "Danach je Zusage: Regierungshandlung, Rechtsakt, Programm oder Haushalt, Umsetzung, Zustandsbeobachtung und fachlich freigegebener Reality Check",
 ];
 
