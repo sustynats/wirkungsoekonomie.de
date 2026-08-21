@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
 """Deterministic source-role audit for the Sachsen-Anhalt 2026 BSW final union.
 
-This tool is deliberately *not* a fach-judgement generator.  It only:
+This tool is deliberately *not* a fach-judgement generator. It only:
 - verifies the exact 311 historical rows and 380 versioned union IDs,
 - carries forward explicit final roles already source-bound in R10,
 - performs a page/batch constrained lexical collision scan for the 220 R10 PEND rows,
 - validates known relation targets and relation-graph acyclicity where explicit edges exist,
-- emits a review report.  It never freezes the authoritative denominator.
+- emits a review report. It never freezes the authoritative denominator.
 
 A PEND row may only become KEEP_ATOMIC in the final manifest after the report proves that
 no competing source-bound versioned leaf is a plausible SAME/DUPLICATE representation,
-or after an explicit source-role decision is supplied from #234.  Similarity scores are
+or after an explicit source-role decision is supplied from #234. Similarity scores are
 triage evidence, never fach semantics.
 """
 from __future__ import annotations
@@ -93,7 +93,6 @@ def psr_batch(uid: str) -> str:
 
 
 def psr_label(uid: str) -> str:
-    # Strip namespace and structural page/numeric tokens, preserving semantic slug only.
     s = re.sub(r"^ltw-2026-st-bsw-psr-(?:front|a\d\d)-", "", uid)
     s = re.sub(r"^p\d+(?:-p\d+)?-\d+-", "", s)
     s = re.sub(r"^\d+-", "", s)
@@ -121,7 +120,6 @@ def score_pair(hist: dict, uid: str) -> dict:
     containment = len(inter) / min(len(ht), len(pt)) if ht and pt else 0.0
     hn, pn = ascii_norm(h), ascii_norm(p)
     seq = SequenceMatcher(None, hn, pn).ratio() if hn and pn else 0.0
-    # Slightly weight containment because PSR slugs are intentionally concise.
     composite = 0.45 * containment + 0.35 * jaccard + 0.20 * seq
     return {
         "versioned_id": uid,
@@ -176,7 +174,6 @@ def main() -> int:
     for uid in ids:
         ids_by_batch[psr_batch(uid)].append(uid)
 
-    # Candidate scan is strictly source-role triage. It does not mutate roles.
     pending_reports = []
     review_candidate_ordinals = []
     for ord_ in pend:
@@ -196,7 +193,6 @@ def main() -> int:
             "top_candidates": top,
         })
 
-    # Calibrate against already explicit R10 roles; this helps detect an over/under-sensitive scanner.
     calibration = defaultdict(list)
     for ord_, role in roles.items():
         if role == "PEND":
