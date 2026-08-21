@@ -51,7 +51,7 @@ def tracked_html(root: Path) -> list[str]:
 
 def official_source_refs(text: str) -> list[str]:
     refs = set()
-    for raw in re.findall(r'https?://[^"\'< >\s)]+'.replace(" ", ""), text or ""):
+    for raw in re.findall(r"https?://[^\"'<>\s)]+", text or ""):
         url = raw.rstrip(".,;:")
         host = urlparse(url).netloc.lower()
         if any(host == domain or host.endswith("." + domain) for domain in OFFICIAL_DOMAINS):
