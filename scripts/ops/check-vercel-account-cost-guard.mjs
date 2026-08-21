@@ -37,12 +37,10 @@ for (const project of baseline.projects) {
     [current.resourceConfig?.buildQueue?.configuration === expected.build_queue, "build queue is not serial"],
   ];
 
-  if (project.git_linked) {
-    checks.push([
-      current.gitProviderOptions?.createDeployments === expected.git_deployments,
-      "Git deployments are enabled",
-    ]);
-  }
+  checks.push([
+    current.gitProviderOptions?.createDeployments === expected.git_deployments,
+    "Git deployments are enabled",
+  ]);
 
   for (const [passed, message] of checks) {
     if (!passed) failures.push(`${project.name}: ${message}`);
