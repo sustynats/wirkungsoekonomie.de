@@ -232,6 +232,42 @@ def living_route_precision() -> None:
     ])
 
 
+def materiality_scope_precision() -> None:
+    required_copy = [
+        "Materialität statt Rechtsform",
+        "Weil Wirkung nicht an der Rechtsform hängt.",
+        "kein einheitliches eNAP-ähnliches Pflichtverfahren",
+        "Staatliches Eigentum allein",
+    ]
+    for rel in (
+        "index.html",
+        "modell.html",
+        "methodik/index.html",
+        "fuer/politik.html",
+        "wirkungsfelder/staat-recht-demokratie/index.html",
+    ):
+        require(rel, required_copy)
+
+    llms = read("llms.txt")
+    for token in (
+        "LAW, REGULATION, STRATEGY, PROGRAMME, SUBSIDY, GUARANTEE, PROCUREMENT",
+        "PUBLIC_OWNERSHIP_ACTION",
+        "Bundes-GGO/eNAP wird nicht auf andere Objekttypen oder Jurisdiktionen übertragen",
+    ):
+        if token not in llms:
+            raise AssertionError(f"llms materiality/object contract missing: {token}")
+
+    sources = read("content/quellenarchiv/legal-source-records.json")
+    for token in (
+        "WÖK-Q-9046",
+        "https://www.gesetze-im-internet.de/ksg/__13.html",
+        "WÖK-Q-9047",
+        "https://www.gesetze-im-internet.de/kang/__8.html",
+    ):
+        if token not in sources:
+            raise AssertionError(f"object-specific governance source missing: {token}")
+
+
 def nwi_acronym_disambiguated() -> None:
     report = json.loads(read(NWI_AUDIT))
     if report.get("gate") != "PASS" or int(report.get("failure_count", -1)) != 0:
@@ -328,6 +364,12 @@ def main() -> int:
     checks.append(("AUDIT_MATRIX_CONTRACT_PASS", audit_matrix_contract))
     checks.append(("NO_PUBLIC_RAW_STATUS_ENUMS", no_raw_public_enums))
     checks.append(("NWI_ACRONYM_DISAMBIGUATED", nwi_acronym_disambiguated))
+    checks.append(("WOEK_SCOPE_MATERIALITY_NOT_LEGAL_FORM", materiality_scope_precision))
+    checks.append(("NON_LEGISLATIVE_GOVERNMENT_ACTIONS_SUPPORTED", materiality_scope_precision))
+    checks.append(("STATE_ASSESSMENT_FRAMEWORK_OBJECT_SPECIFIC", materiality_scope_precision))
+    checks.append(("NO_ENAP_REQUIREMENT_INVENTED_OUTSIDE_SCOPE", materiality_scope_precision))
+    checks.append(("PUBLIC_OWNERSHIP_ACTION_SEPARATE_FROM_GOVERNMENT_ATTRIBUTION", materiality_scope_precision))
+    checks.append(("GOVERNANCE_COVERAGE_GAP_PRECISE_NOT_ABSOLUTE", materiality_scope_precision))
 
     passed = []
     for name, fn in checks:

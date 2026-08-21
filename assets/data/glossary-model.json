@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T00:00:00.000Z",
+  "generatedAt": "2026-08-21T15:58:13.049Z",
   "schema": {
     "term": "canonicalLabel",
     "shortDefinition": "shortDefinition",
@@ -31131,6 +31131,32 @@
       "version": "1.0"
     },
     {
+      "id": "nationaler-wohlfahrtsindex",
+      "term": "Nationaler Wohlfahrtsindex (NWI)",
+      "slug": "nationaler-wohlfahrtsindex",
+      "shortDefinition": "Der Nationale Wohlfahrtsindex (NWI) ist ein deutscher Wohlfahrtsindikator aus 21 monetär bewerteten wohlfahrtsstiftenden und wohlfahrtsmindernden Komponenten.",
+      "longDefinition": "Der Nationale Wohlfahrtsindex (NWI) ist ein in Deutschland etablierter Wohlfahrtsindikator. Nach der Indikatorbeschreibung des Umweltbundesamtes umfasst er 21 monetär bewertete Komponenten. Dazu gehören unter anderem mit der Einkommensverteilung gewichteter privater Konsum, Hausarbeit, ehrenamtliche Tätigkeiten, Bildung und Gesundheit sowie Kosten von Umweltschäden und weitere wohlfahrtsmindernde Kategorien. Er ist vom WÖk-Netto-Wirkungsindex zu unterscheiden.",
+      "synonyms": [
+        "Nationaler Wohlfahrtsindex (NWI)",
+        "Nationaler Wohlfahrtsindex",
+        "NWI"
+      ],
+      "relatedTerms": [
+        "nwi",
+        "bip",
+        "wohlstand",
+        "wohlfahrtsstaat"
+      ],
+      "relatedMethods": [],
+      "relatedImpactFields": [],
+      "relatedDemos": [],
+      "relatedDocuments": [],
+      "relatedObjections": [],
+      "category": "Volkswirtschaft & neue Wohlstandsmessung",
+      "status": "approved",
+      "version": "1.0"
+    },
+    {
       "id": "nationalismus",
       "term": "Nationalismus",
       "slug": "nationalismus",
@@ -31694,89 +31720,6 @@
       "category": "Grundbegriffe der Wirkungsökonomie",
       "status": "führender-begriff",
       "version": "1.1"
-    },
-    {
-      "id": "nwi",
-      "term": "Netto-Wirkungs-Index (NWI)",
-      "slug": "nwi",
-      "shortDefinition": "Der Netto-Wirkungs-Index (NWI) verdichtet geprüfte positive und negative operative Wirkungen unter Berücksichtigung von Mindestbedingungen, Verteilung, Zeit, Datenqualität und Nichtkompensation zu einer steuerungsfähigen Kennzahl.",
-      "longDefinition": "Der Netto-Wirkungs-Index (NWI) ist eine Kennzahl für die operative Gesamtwirkung eines klar abgegrenzten Objekts oder Vorhabens. Seine Grundformel stellt gewichtete positive und negative Wirkungen gegenüber. Damit der Wert aussagekräftig ist, müssen Zielzustand, Referenz, Systemgrenze, Zeitraum, Zurechnung, Skala, Gewichte, Datenqualität, Unsicherheit und relevante Nebenwirkungen dokumentiert sein.",
-      "synonyms": [
-        "Netto-Wirkungs-Index (NWI)",
-        "NWI",
-        "Netto-Wirkungs-Index",
-        "Netto-Wirkungs-Index / NWI",
-        "Netto Wirkungs Index",
-        "Net Impact Index",
-        "operative Netto-Wirkungskennzahl",
-        "Wirkungsindex",
-        "WÖk-NWI",
-        "Netto-Wirkungskennzahl"
-      ],
-      "relatedTerms": [
-        "netto-wirkung",
-        "positive-netto-wirkung",
-        "t-sroi",
-        "scorecard",
-        "finalscore",
-        "wirkungscontrolling",
-        "reverse-merit-order",
-        "nichtkompensationsprinzip",
-        "datenqualitaet",
-        "wirkungsdaten",
-        "impact-controlling",
-        "key-impact-indicator",
-        "wirkungsscorecard-und-finalscore",
-        "externalitaeten-und-kostenverlagerungskarte",
-        "wirkungsportfolio",
-        "wirkungskapital-und-investitionsgate",
-        "wirkungsdashboard-und-managementcockpit",
-        "wirkungsoekonomisches-methodensystem",
-        "wirkungsoekonomisches-managementmodell"
-      ],
-      "relatedMethods": [
-        [
-          "Netto-Wirkungs-Index",
-          "/werkzeuge/netto-wirkungs-index/"
-        ],
-        [
-          "Scorecards",
-          "/werkzeuge/scorecards/"
-        ],
-        [
-          "Methoden & Werkzeuge",
-          "/werkzeuge/"
-        ]
-      ],
-      "relatedImpactFields": [
-        [
-          "Wirtschaft & Unternehmen",
-          "/wirkungsfelder/wirtschaft-unternehmen/"
-        ],
-        [
-          "Kapital & Finanzierung",
-          "/wirkungsfelder/finanzsystem-kapital/"
-        ]
-      ],
-      "relatedDemos": [
-        [
-          "Impact-Controlling-Rechner",
-          "/erleben/impact-controlling-rechner/"
-        ]
-      ],
-      "relatedDocuments": [
-        "technische-leitlinien-wustg",
-        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
-      ],
-      "relatedObjections": [
-        [
-          "Was passiert bei Zielkonflikten?",
-          "/einwaende/#zielkonflikte"
-        ]
-      ],
-      "category": "Messbegriff",
-      "status": "approved",
-      "version": "2.0"
     },
     {
       "id": "nettokreditaufnahme",
@@ -66203,6 +66146,69 @@
       "category": "Messung, Daten & Standards",
       "status": "führender-begriff",
       "version": "1.1"
+    },
+    {
+      "id": "nwi",
+      "term": "WÖk-Netto-Wirkungsindex",
+      "slug": "nwi",
+      "shortDefinition": "Der WÖk-Netto-Wirkungsindex verdichtet geprüfte operative Wirkungen innerhalb einer offengelegten Bewertungs- und Schutzlogik.",
+      "longDefinition": "Der WÖk-Netto-Wirkungsindex ist eine WÖk-eigene Kennzahl für die operative Gesamtwirkung eines klar abgegrenzten Objekts oder Vorhabens. Er stellt geprüfte positive und negative Wirkungen gegenüber und bleibt an Systemgrenze, Zeitraum, Zurechnung, Datenqualität, Unsicherheit, Wirkungsgrenzen und Nichtkompensation gebunden. Die frühere Kurzbezeichnung NWI wird öffentlich nicht mehr verwendet, weil NWI in Deutschland etabliert für den Nationalen Wohlfahrtsindex steht.",
+      "synonyms": [
+        "WÖk-Netto-Wirkungsindex",
+        "Netto-Wirkungs-Index"
+      ],
+      "relatedTerms": [
+        "nationaler-wohlfahrtsindex",
+        "netto-wirkung",
+        "finalscore",
+        "t-sroi",
+        "reverse-merit-order",
+        "wirkungsdaten",
+        "impact-controlling"
+      ],
+      "relatedMethods": [
+        [
+          "Netto-Wirkungs-Index",
+          "/werkzeuge/netto-wirkungs-index/"
+        ],
+        [
+          "Scorecards",
+          "/werkzeuge/scorecards/"
+        ],
+        [
+          "Methoden & Werkzeuge",
+          "/werkzeuge/"
+        ]
+      ],
+      "relatedImpactFields": [
+        [
+          "Wirtschaft & Unternehmen",
+          "/wirkungsfelder/wirtschaft-unternehmen/"
+        ],
+        [
+          "Kapital & Finanzierung",
+          "/wirkungsfelder/finanzsystem-kapital/"
+        ]
+      ],
+      "relatedDemos": [
+        [
+          "Impact-Controlling-Rechner",
+          "/erleben/impact-controlling-rechner/"
+        ]
+      ],
+      "relatedDocuments": [
+        "technische-leitlinien-wustg",
+        "arbeitspapier-doppelte-wesentlichkeit-impact-controlling"
+      ],
+      "relatedObjections": [
+        [
+          "Was passiert bei Zielkonflikten?",
+          "/einwaende/#zielkonflikte"
+        ]
+      ],
+      "category": "Messbegriff",
+      "status": "approved",
+      "version": "2.1"
     },
     {
       "id": "woek-ids",

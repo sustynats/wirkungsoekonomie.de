@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-21T00:00:00.000Z",
-  "count": 2152,
+  "generatedAt": "2026-08-21T15:58:13.049Z",
+  "count": 2153,
   "terms": [
     {
       "id": "fuenftes-p-planet",
@@ -13900,6 +13900,20 @@
       "definition": "Natalität bezeichnet bei Arendt die Fähigkeit, etwas Neues zu beginnen."
     },
     {
+      "id": "nationaler-wohlfahrtsindex",
+      "label": "Nationaler Wohlfahrtsindex (NWI)",
+      "canonicalLabel": "Nationaler Wohlfahrtsindex (NWI)",
+      "slug": "nationaler-wohlfahrtsindex",
+      "url": "/begriffe/nationaler-wohlfahrtsindex/",
+      "aliases": [
+        "Nationaler Wohlfahrtsindex (NWI)",
+        "Nationaler Wohlfahrtsindex",
+        "NWI"
+      ],
+      "shortDefinition": "Der Nationale Wohlfahrtsindex (NWI) ist ein deutscher Wohlfahrtsindikator aus 21 monetär bewerteten wohlfahrtsstiftenden und wohlfahrtsmindernden Komponenten.",
+      "definition": "Der Nationale Wohlfahrtsindex (NWI) ist ein in Deutschland etablierter Wohlfahrtsindikator. Er geht von gewichteten privaten Konsumausgaben aus und berücksichtigt weitere wohlfahrtssteigernde sowie wohlfahrtsmindernde Komponenten."
+    },
+    {
       "id": "nationalismus",
       "label": "Nationalismus",
       "canonicalLabel": "Nationalismus",
@@ -14144,27 +14158,6 @@
       ],
       "shortDefinition": "Netto-Wirkung bezeichnet die zusammengeführte Bewertung positiver und negativer Wirkungen unter Berücksichtigung von Wirkungsgrenzen, Datenqualität und Nichtkompensation.",
       "definition": "Netto-Wirkung bezeichnet die zusammengeführte Bewertung der positiven, negativen, neutralen und unsicheren Wirkungen eines Auslösers. In der WÖk ist sie keine einfache Rechenoperation und nicht positive Punkte minus negative Punkte. Systemgrenzen, Wirkungsräume, Datenqualität, zeitliche Wirkung, Nebenwirkungen, Rückkopplungen und nicht kompensierbare rote Linien müssen berücksichtigt werden."
-    },
-    {
-      "id": "nwi",
-      "label": "Netto-Wirkungs-Index (NWI)",
-      "canonicalLabel": "Netto-Wirkungs-Index (NWI)",
-      "slug": "nwi",
-      "url": "/begriffe/nwi/",
-      "aliases": [
-        "Netto-Wirkungs-Index (NWI)",
-        "NWI",
-        "Netto-Wirkungs-Index",
-        "Netto-Wirkungs-Index / NWI",
-        "Netto Wirkungs Index",
-        "Net Impact Index",
-        "operative Netto-Wirkungskennzahl",
-        "Wirkungsindex",
-        "WÖk-NWI",
-        "Netto-Wirkungskennzahl"
-      ],
-      "shortDefinition": "Der Netto-Wirkungs-Index (NWI) verdichtet geprüfte positive und negative operative Wirkungen unter Berücksichtigung von Mindestbedingungen, Verteilung, Zeit, Datenqualität und Nichtkompensation zu einer steuerungsfähigen Kennzahl.",
-      "definition": "Der Netto-Wirkungs-Index (NWI) ist eine Kennzahl für die operative Gesamtwirkung eines klar abgegrenzten Objekts oder Vorhabens. Seine Grundformel stellt gewichtete positive und negative Wirkungen gegenüber. Damit der Wert aussagekräftig ist, müssen Zielzustand, Referenz, Systemgrenze, Zeitraum, Zurechnung, Skala, Gewichte, Datenqualität, Unsicherheit und relevante Nebenwirkungen dokumentiert sein."
     },
     {
       "id": "nettokreditaufnahme",
@@ -28259,6 +28252,19 @@
       ],
       "shortDefinition": "Eine WÖk-ID ist eine eindeutige Kennung für einen Wirkungsindikator, mit der Wirkung systematisch, maschinenlesbar und standardübergreifend messbar gemacht wird.",
       "definition": "Die WÖk-ID ist die eindeutige Identifikationsnummer eines Wirkungsindikators innerhalb der Wirkungsökonomie. Sie dient dazu, relevante Wirkungsdaten strukturiert zu erfassen, zuzuordnen, zu prüfen, zu vergleichen und in Scorecards zu verwenden."
+    },
+    {
+      "id": "nwi",
+      "label": "WÖk-Netto-Wirkungsindex",
+      "canonicalLabel": "WÖk-Netto-Wirkungsindex",
+      "slug": "nwi",
+      "url": "/begriffe/nwi/",
+      "aliases": [
+        "WÖk-Netto-Wirkungsindex",
+        "Netto-Wirkungs-Index"
+      ],
+      "shortDefinition": "Der WÖk-Netto-Wirkungsindex verdichtet geprüfte operative Wirkungen innerhalb einer offengelegten Bewertungs- und Schutzlogik.",
+      "definition": "Der WÖk-Netto-Wirkungsindex ist eine WÖk-eigene Kennzahl für die operative Gesamtwirkung eines klar abgegrenzten Objekts oder Vorhabens. Er stellt geprüfte positive und negative Wirkungen gegenüber und bleibt an Systemgrenze, Zeitraum, Zurechnung, Datenqualität, Unsicherheit, Wirkungsgrenzen und Nichtkompensation gebunden."
     },
     {
       "id": "woek-ids",
