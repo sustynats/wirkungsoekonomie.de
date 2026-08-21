@@ -103,6 +103,8 @@ const files = {
   strategy_action_plan_source_vs_view: "data/autopilot/audit/2.3-remediated/SOURCE-VS-VIEW-STRATEGY-ACTION-PLAN.json",
   state_coalition_bw_source_vs_view: "data/autopilot/audit/2.3-remediated/SOURCE-VS-VIEW-BW-COALITION-2026-2031.json",
   state_coalition_bw_commitments: "data/states/baden-wuerttemberg-coalition-commitments.json",
+  state_coalition_rlp_source_vs_view: "data/autopilot/audit/2.3-remediated/SOURCE-VS-VIEW-RLP-COALITION-2026-2031.json",
+  state_coalition_rlp_commitments: "data/states/rheinland-pfalz-coalition-commitments.json",
 };
 const publicationSources = json(files.publication_sources).documents;
 const integrityCases = json(files.content_integrity).cases;
@@ -117,6 +119,8 @@ const communicationSourceVsView = json(files.communication_source_vs_view);
 const strategySourceVsView = json(files.strategy_action_plan_source_vs_view);
 const stateCoalitionBwSourceVsView = json(files.state_coalition_bw_source_vs_view);
 const stateCoalitionBwCommitments = json(files.state_coalition_bw_commitments);
+const stateCoalitionRlpSourceVsView = json(files.state_coalition_rlp_source_vs_view);
+const stateCoalitionRlpCommitments = json(files.state_coalition_rlp_commitments);
 const communicationRecords = ["afd", "bsw", "cdu", "spd", "gruene", "linke"].map((party) => json(`data/state-programmes/communication-media-impact/ltw-2026-st-${party}.json`));
 const stateSlug = new Map([
   ["DE-BW", "baden-wuerttemberg"], ["DE-BY", "bayern"], ["DE-BE", "berlin"], ["DE-BB", "brandenburg"],
@@ -134,6 +138,7 @@ const requiredRoutes = unique([
   ...communicationSourceVsView.required_routes,
   ...strategySourceVsView.required_routes,
   ...stateCoalitionBwSourceVsView.required_routes,
+  ...stateCoalitionRlpSourceVsView.required_routes,
 ]);
 const auditRoutes = ["/", "/suche", "/sitemap.xml"];
 const routeResults = await mapLimit(auditRoutes, 1, fetchRoute);
@@ -147,6 +152,7 @@ const searchTargets = [
   ...parliament.map((record) => ({ object_id: record.publicWorkingAct?.fullReview?.result?.case_id ?? record.slug, route: `/entscheidungen/${record.slug}`, title_present_in_search_payload: search.includes(`href=\"/entscheidungen/${record.slug}\"`) })),
   ...strategySourceVsView.search_targets.map((route) => ({ object_id: route.split("/").at(-1), route, title_present_in_search_payload: search.includes(`href=\"${route}\"`) })),
   ...stateCoalitionBwSourceVsView.search_targets.map((route) => ({ object_id: "BW-COALITION-2026-2031", route, title_present_in_search_payload: search.includes(`href=\"${route}\"`) })),
+  ...stateCoalitionRlpSourceVsView.search_targets.map((route) => ({ object_id: "RLP-COALITION-2026-2031", route, title_present_in_search_payload: search.includes(`href=\"${route}\"`) })),
 ];
 const sitemapBody = routeResults.find((entry) => entry.route === "/sitemap.xml")?.body ?? "";
 const sitemapUrls = new Set([...sitemapBody.matchAll(/<loc>(.*?)<\/loc>/g)].map((match) => new URL(match[1]).pathname));
@@ -168,6 +174,7 @@ const requiredContentPaths = unique([
   ...communicationSourceVsView.required_content_paths,
   ...strategySourceVsView.required_content_paths,
   ...stateCoalitionBwSourceVsView.required_content_paths,
+  ...stateCoalitionRlpSourceVsView.required_content_paths,
 ]);
 const renderedContentPaths = unique([
   ...publicationSources.flatMap((source) => source.rendered_content_paths.map((pointer) => `${source.id}:${pointer}`)),
@@ -175,6 +182,7 @@ const renderedContentPaths = unique([
   ...communicationSourceVsView.rendered_content_paths,
   ...strategySourceVsView.rendered_content_paths,
   ...stateCoalitionBwSourceVsView.rendered_content_paths,
+  ...stateCoalitionRlpSourceVsView.rendered_content_paths,
 ]);
 const unrenderedContentPaths = unique(requiredContentPaths.filter((pointer) => !renderedContentPaths.includes(pointer)));
 const recommendationIds = new Set(recommendations.map((record) => record.impact_case_id));
@@ -204,6 +212,13 @@ const analysisLayersByObject = [
     BETTER_WOEK_OPTION: "CONTENT_GAP_REQUIRES_FACH_REVIEW",
     ...Object.fromEntries(expectedLayers.map((layer) => [layer, Array.isArray(layers) && layers.includes(layer) ? "PRESENT_IN_APPROVED_FACH_RECORD" : "CONTENT_GAP_REQUIRES_FACH_REVIEW"])),
   })),
+  ...Object.entries(stateCoalitionRlpSourceVsView.analysis_layers_by_object).map(([object_id, layers]) => ({
+    subsystem: "STATE_COALITION_MANDATE",
+    object_id,
+    DNS_COMMON_TARGETS: "CONTENT_GAP_REQUIRES_FACH_REVIEW",
+    BETTER_WOEK_OPTION: "CONTENT_GAP_REQUIRES_FACH_REVIEW",
+    ...Object.fromEntries(expectedLayers.map((layer) => [layer, Array.isArray(layers) && layers.includes(layer) ? "PRESENT_IN_APPROVED_FACH_RECORD" : "CONTENT_GAP_REQUIRES_FACH_REVIEW"])),
+  })),
 ];
 const semanticDiff = b07Manifest.semantic_diff_against_accepted_production;
 const failures = [
@@ -212,10 +227,14 @@ const failures = [
   ...(communicationSourceVsView.status === "PASS" ? [] : ["communication_media_source_vs_view"]),
   ...(strategySourceVsView.status === "PASS" ? [] : ["strategy_action_plan_source_vs_view"]),
   ...(stateCoalitionBwSourceVsView.status === "PASS" ? [] : ["state_coalition_bw_source_vs_view"]),
+  ...(stateCoalitionRlpSourceVsView.status === "PASS" ? [] : ["state_coalition_rlp_source_vs_view"]),
   ...(stateCoalitionBwCommitments.source_record_count === 1583 ? [] : [`state_coalition_bw_source_records:${stateCoalitionBwCommitments.source_record_count}`]),
   ...(stateCoalitionBwCommitments.atomic_commitment_count === 1577 ? [] : [`state_coalition_bw_atomic_commitments:${stateCoalitionBwCommitments.atomic_commitment_count}`]),
   ...(stateCoalitionBwCommitments.non_counting_parent_containers?.length === 6 ? [] : [`state_coalition_bw_parent_containers:${stateCoalitionBwCommitments.non_counting_parent_containers?.length ?? 0}`]),
   ...(stateCoalitionBwCommitments.explicit_deep_split_flags_remaining === 0 ? [] : [`state_coalition_bw_deep_split_flags:${stateCoalitionBwCommitments.explicit_deep_split_flags_remaining}`]),
+  ...(stateCoalitionRlpCommitments.source_record_count === 302 ? [] : [`state_coalition_rlp_source_records:${stateCoalitionRlpCommitments.source_record_count}`]),
+  ...(stateCoalitionRlpCommitments.atomic_commitment_count === 302 ? [] : [`state_coalition_rlp_atomic_commitments:${stateCoalitionRlpCommitments.atomic_commitment_count}`]),
+  ...(stateCoalitionRlpCommitments.handoff_record_gap_count === 9 ? [] : [`state_coalition_rlp_handoff_gap:${stateCoalitionRlpCommitments.handoff_record_gap_count}`]),
   ...navigationTargets.filter((entry) => !entry.present).map((entry) => `navigation:${entry.route}`),
   ...searchTargets.filter((entry) => !entry.title_present_in_search_payload).map((entry) => `search:${entry.object_id}`),
   ...sitemapTargets.filter((entry) => !entry.present).map((entry) => `sitemap:${entry.route}`),
@@ -239,9 +258,9 @@ const report = {
   analysis_layers_by_object: analysisLayersByObject,
   source_hashes: Object.fromEntries(Object.entries(files).map(([name, file]) => [name, sha256(file)])),
   fach_version: b07Manifest.merge_id,
-  renderer_version: "B07_RECONCILED_BW_FULL_GOLDEN_STATE_RENDERER_20260821",
+  renderer_version: "B07_RECONCILED_BW_FULL_RLP_REVIEWED_SCOPE_GOLDEN_STATE_RENDERER_20260821",
   semantic_diff_against_last_accepted_production: semanticDiff,
-  coverage: { government: government.length, government_strategy_meta: strategySourceVsView.records.meta, government_strategy_missions: strategySourceVsView.records.missions, eu: eu.length, parliament: parliament.length, recommendations: recommendations.length, common_targets: commonTargets.length, states: jurisdictions.length, state_coalition_documents: stateCoalitionBwSourceVsView.records.documents, state_coalition_chapters: stateCoalitionBwSourceVsView.records.chapters, state_coalition_source_records: stateCoalitionBwCommitments.source_record_count, state_coalition_atomic_commitments: stateCoalitionBwCommitments.atomic_commitment_count, state_coalition_parent_containers: stateCoalitionBwCommitments.non_counting_parent_containers.length, communication_media_impact: communicationRecords.length },
+  coverage: { government: government.length, government_strategy_meta: strategySourceVsView.records.meta, government_strategy_missions: strategySourceVsView.records.missions, eu: eu.length, parliament: parliament.length, recommendations: recommendations.length, common_targets: commonTargets.length, states: jurisdictions.length, state_coalition_documents: stateCoalitionBwSourceVsView.records.documents + stateCoalitionRlpSourceVsView.records.documents, state_coalition_chapters: stateCoalitionBwSourceVsView.records.chapters + stateCoalitionRlpSourceVsView.records.chapters, state_coalition_source_records: stateCoalitionBwCommitments.source_record_count + stateCoalitionRlpCommitments.source_record_count, state_coalition_atomic_commitments: stateCoalitionBwCommitments.atomic_commitment_count + stateCoalitionRlpCommitments.atomic_commitment_count, state_coalition_parent_containers: stateCoalitionBwCommitments.non_counting_parent_containers.length, state_coalition_rlp_declared_records: stateCoalitionRlpCommitments.declared_source_record_count, state_coalition_rlp_handoff_gap: stateCoalitionRlpCommitments.handoff_record_gap_count, communication_media_impact: communicationRecords.length },
   failures,
 };
 const publicPayload = JSON.stringify(report);

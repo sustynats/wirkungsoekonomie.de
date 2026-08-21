@@ -6,7 +6,19 @@ import type { CoalitionCommitmentRecord } from "@/lib/states/baden-wuerttemberg-
 type ChapterOption = { chapter: number; title: string; atomicCommitments: number };
 type PublicCommitmentRecord = Pick<CoalitionCommitmentRecord, "commitment_id" | "chapter" | "commitment_text" | "source_locator" | "atomic_count" | "container_children" | "parent_container_id">;
 
-export function StateCoalitionCommitmentInventory({ records, chapters }: { records: PublicCommitmentRecord[]; chapters: ChapterOption[] }) {
+type InventoryCopy = {
+  title: string;
+  intro: string;
+  allChaptersLabel: string;
+};
+
+const defaultCopy: InventoryCopy = {
+  title: "1.577 atomare Zusagen aus allen 15 Kapiteln",
+  intro: "Jeder Eintrag dokumentiert genau einen geprüften Quellenanker. Eine Koalitionszusage ist noch keine Regierungshandlung, keine Umsetzung und kein Wirkungsnachweis. Sechs übergeordnete Quellen-Container bleiben nachvollziehbar erhalten, werden aber nicht als atomare Zusage mitgezählt.",
+  allChaptersLabel: "Alle 15 Kapitel",
+};
+
+export function StateCoalitionCommitmentInventory({ records, chapters, copy = defaultCopy }: { records: PublicCommitmentRecord[]; chapters: ChapterOption[]; copy?: InventoryCopy }) {
   const [query, setQuery] = useState("");
   const [chapter, setChapter] = useState("ALL");
   const normalizedQuery = query.trim().toLocaleLowerCase("de-DE");
@@ -19,8 +31,8 @@ export function StateCoalitionCommitmentInventory({ records, chapters }: { recor
 
   return <section className="coalition-commitment-inventory" id="commitment-register" aria-labelledby="commitment-register-title">
     <p className="eyebrow">Vollakte · fundstellengebundenes Zusagenregister</p>
-    <h2 id="commitment-register-title">1.577 atomare Zusagen aus allen 15 Kapiteln</h2>
-    <p>Jeder Eintrag dokumentiert genau einen geprüften Quellenanker. Eine Koalitionszusage ist noch keine Regierungshandlung, keine Umsetzung und kein Wirkungsnachweis. Sechs übergeordnete Quellen-Container bleiben nachvollziehbar erhalten, werden aber nicht als atomare Zusage mitgezählt.</p>
+    <h2 id="commitment-register-title">{copy.title}</h2>
+    <p>{copy.intro}</p>
     <div className="coalition-inventory-controls" role="search" aria-label="Zusagenregister filtern">
       <label>
         <span>Zusage oder Fundstelle suchen</span>
@@ -29,7 +41,7 @@ export function StateCoalitionCommitmentInventory({ records, chapters }: { recor
       <label>
         <span>Kapitel</span>
         <select value={chapter} onChange={(event) => setChapter(event.target.value)}>
-          <option value="ALL">Alle 15 Kapitel</option>
+          <option value="ALL">{copy.allChaptersLabel}</option>
           {chapters.map((item) => <option key={item.chapter} value={item.chapter}>Kapitel {item.chapter}: {item.title}</option>)}
         </select>
       </label>

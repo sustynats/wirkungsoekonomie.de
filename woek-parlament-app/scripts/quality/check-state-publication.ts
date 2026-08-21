@@ -44,6 +44,11 @@ assert.ok(mandate, "Baden-Württemberg mandate missing");
 assert.equal(mandate.period, "2026-2031");
 assert.equal(mandate.governmentStart, "13.05.2026");
 assert.match(mandate.title, /Aus Verantwortung fürs Land/);
+const rlpMandate = statePublicContent["rheinland-pfalz"]?.mandate;
+assert.ok(rlpMandate, "Rheinland-Pfalz mandate missing");
+assert.equal(rlpMandate.period, "2026-2031");
+assert.equal(rlpMandate.governmentStart, "18.05.2026");
+assert.match(rlpMandate.title, /Gemeinsame Verantwortung/);
 assert.match(statePublicContent.berlin.electionField?.officialFieldLabel ?? "", /17 Parteien/);
 assert.match(statePublicContent["mecklenburg-vorpommern"].electionField?.officialFieldLabel ?? "", /19 Landeslisten/);
 
@@ -52,5 +57,5 @@ console.log(JSON.stringify({
   sourceFidelity: "byte_length_and_canonical_impact_ids",
   reviews: reviews.length,
   impactCases: reviews.reduce((sum, review) => sum + review.ids.length, 0),
-  coalitionMandate: "baden-wuerttemberg-2026-2031",
+  coalitionMandates: ["baden-wuerttemberg-2026-2031", "rheinland-pfalz-2026-2031"],
 }));

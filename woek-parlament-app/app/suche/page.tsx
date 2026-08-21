@@ -19,6 +19,14 @@ import {
   badenWuerttembergCoalitionPublicMaturity,
   badenWuerttembergCoalitionQualityLayers,
 } from "@/lib/states/baden-wuerttemberg-coalition";
+import {
+  RLP_COALITION_ROUTE,
+  rheinlandPfalzCoalitionAssessment,
+  rheinlandPfalzCoalitionAtomicCommitments,
+  rheinlandPfalzCoalitionChapters,
+  rheinlandPfalzCoalitionPublicMaturity,
+  rheinlandPfalzCoalitionQualityLayers,
+} from "@/lib/states/rheinland-pfalz-coalition";
 
 export const metadata: Metadata = {
   title: "Suche",
@@ -95,6 +103,21 @@ export default function SearchPage() {
         ...badenWuerttembergCoalitionChapters.flatMap((chapter) => [chapter.title, chapter.assessment.assessmentLabel, chapter.assessment.keyFinding, chapter.problemReview, chapter.goalReview]),
         ...badenWuerttembergCoalitionQualityLayers.flatMap((layer) => [layer.title, layer.text]),
         ...badenWuerttembergCoalitionAtomicCommitments.flatMap((record) => [record.commitment_text, record.source_locator]),
+      ],
+    },
+    {
+      impactCaseId: "RLP-COALITION-2026-2031",
+      href: RLP_COALITION_ROUTE,
+      title: "Koalitionsvertrag Rheinland-Pfalz 2026–2031",
+      summary: rheinlandPfalzCoalitionAssessment.editorialSummary,
+      analysisMode: "IMPACT_POTENTIAL_EX_ANTE",
+      materiality: "hoch",
+      assessment: rheinlandPfalzCoalitionAssessment,
+      maturity: rheinlandPfalzCoalitionPublicMaturity,
+      terms: [
+        ...rheinlandPfalzCoalitionChapters.flatMap((chapter) => [chapter.title, chapter.assessment.assessmentLabel, chapter.assessment.keyFinding, chapter.problemReview, chapter.goalReview]),
+        ...rheinlandPfalzCoalitionQualityLayers.flatMap((layer) => [layer.title, layer.text]),
+        ...rheinlandPfalzCoalitionAtomicCommitments.flatMap((record) => [record.commitment_text, record.source_locator]),
       ],
     },
     {

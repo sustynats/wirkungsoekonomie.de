@@ -18,6 +18,7 @@ import dnsRegistry from "@/data/indicators/dns-official-registry.json";
 import { isSafePublicSourceUrl, sourceDetailHrefForUrl, sourceSlugForCanonicalUrl } from "@/lib/sources/url";
 import { ACTION_PLAN_META_ID, actionPlanAssessmentForMission, actionPlanMetaAssessment, actionPlanRouteFor, actionPlanSources, getActionPlanMissions } from "@/lib/government/strategy-impact";
 import { BW_COALITION_ROUTE, badenWuerttembergCoalitionAssessment, badenWuerttembergCoalitionChapters, badenWuerttembergCoalitionSources } from "@/lib/states/baden-wuerttemberg-coalition";
+import { RLP_COALITION_ROUTE, rheinlandPfalzCoalitionAssessment, rheinlandPfalzCoalitionSources } from "@/lib/states/rheinland-pfalz-coalition";
 
 export { isSafePublicSourceUrl, sourceDetailHrefForUrl, sourceSlugForCanonicalUrl } from "@/lib/sources/url";
 
@@ -320,7 +321,7 @@ function stateTargetCatalogSources(): StaticPublicSource[] {
 
 function stateCoalitionReviewSources(): StaticPublicSource[] {
   const chapterThree = badenWuerttembergCoalitionChapters.find((chapter) => chapter.chapter === 3);
-  return badenWuerttembergCoalitionSources.flatMap((source) => {
+  const badenWuerttembergSources = badenWuerttembergCoalitionSources.flatMap((source) => {
     const canonicalUrl = isSafePublicSourceUrl(source.url);
     const slug = canonicalUrl ? sourceSlugForCanonicalUrl(canonicalUrl) : null;
     if (!canonicalUrl || !slug) return [];
@@ -361,6 +362,44 @@ function stateCoalitionReviewSources(): StaticPublicSource[] {
       }],
     } satisfies StaticPublicSource];
   });
+  const rheinlandPfalzSources = rheinlandPfalzCoalitionSources.flatMap((source) => {
+    const canonicalUrl = isSafePublicSourceUrl(source.url);
+    const slug = canonicalUrl ? sourceSlugForCanonicalUrl(canonicalUrl) : null;
+    if (!canonicalUrl || !slug) return [];
+    return [{
+      id: `state-coalition-rlp-${slug}`,
+      slug,
+      title: source.title,
+      institution: source.institution,
+      category: "GOVERNMENT_RECORD",
+      role: "DECISION_FACT",
+      documentType: source.documentType,
+      canonicalUrl,
+      documentDate: source.documentDate,
+      retrievedAt: "2026-08-21",
+      versionLabel: source.url.endsWith(".pdf")
+        ? "Parteioffiziell wiederveröffentlichter Vertragstext; signierte Byte-Identität nicht nachgewiesen"
+        : "Amtliche oder parteioffizielle Lifecycle-, Baseline- oder Prüfquelle",
+      sourceHash: null,
+      temporalClass: "CURRENT_REFERENCE",
+      abstract: source.abstract,
+      usages: [{
+        caseSlug: "rlp-coalition-2026-2031",
+        caseTitle: "Koalitionsvertrag Rheinland-Pfalz 2026–2031",
+        caseKind: "STATE_COALITION_MANDATE_REVIEW",
+        decisionDate: "2026-05-18",
+        sourceRole: "DECISION_FACT",
+        locations: source.locations,
+        note: "Die Quelle belegt Mandat, Lifecycle, Baseline oder einen konkreten politischen Schritt. Sie beweist weder Umsetzung noch eingetretene Wirkung des Vertragsportfolios.",
+        caseHref: RLP_COALITION_ROUTE,
+        analysisSummary: rheinlandPfalzCoalitionAssessment.editorialSummary,
+        analysisDirection: rheinlandPfalzCoalitionAssessment.directionLabel,
+        evidenceLevel: rheinlandPfalzCoalitionAssessment.evidenceSummary,
+        assessment: rheinlandPfalzCoalitionAssessment,
+      }],
+    } satisfies StaticPublicSource];
+  });
+  return [...badenWuerttembergSources, ...rheinlandPfalzSources];
 }
 
 function saxonyAnhaltProgrammeCatalogSources(): StaticPublicSource[] {
