@@ -21,7 +21,7 @@
     "denominator_status": "NOT_FROZEN_PENDING_GLOBAL_LEAF_RECONCILIATION",
     "terminal_complete": false
   },
-  "canonical_non_overlapping_segment_partition": [
+  "canonical_non_overlapping_segments": [
     {"pages": [5, 9], "expected_shard": "ltw-2026-st-cdu-primary-parity-p5-p9-v1.json", "materialized_on_pr257": true},
     {"pages": [10, 14], "expected_shard": "ltw-2026-st-cdu-primary-parity-p10-p14-v1.json", "materialized_on_pr257": true},
     {"pages": [15, 17], "expected_shard": "ltw-2026-st-cdu-primary-parity-p15-p17-v1.json", "materialized_on_pr257": true},
