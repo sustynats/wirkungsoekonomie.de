@@ -80,6 +80,12 @@ def tracked_html(root: Path) -> list[str]:
         rel = line.strip()
         if not rel or rel.startswith(EXCLUDED_SOURCE_PREFIXES):
             continue
+        # The build can deliberately remove obsolete, non-sitemap aliases that are
+        # still present in the checked-out Git index until the generated deletion is
+        # committed. The exhaustive public-route audit must scan the current build
+        # artifact, while missing sitemap routes remain fail-closed in ``make_row``.
+        if not (root / rel).is_file():
+            continue
         out.append(rel)
     return out
 

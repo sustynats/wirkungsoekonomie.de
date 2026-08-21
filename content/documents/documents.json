@@ -1115,7 +1115,7 @@
       ],
       "relatedDocuments": [
         "grundlagenpapier-wirkungsoekonomie",
-        "wstg-oktober-2025"
+        "wirkungssteuer-wstg-3-0"
       ],
       "version": "v1.0",
       "date": "2026-05",
@@ -1379,20 +1379,20 @@
       "id": "wstg-oktober-2025",
       "slug": "wstg-oktober-2025",
       "title": "WStG Oktober 2025",
-      "subtitle": "Diskussionsfassung eines Wirkungssteuergesetzes",
+      "subtitle": "Zitierfähiger historischer Entwicklungsstand vor der Gesamtneufassung 3.0",
       "fileName": "WStG_Oktober2025.pdf",
       "filePath": "public/downloads/originals/WStG_Oktober2025.pdf",
       "documentType": "gesetzesentwurf",
-      "status": "diskussionsfassung",
-      "visibility": "expert_public",
+      "status": "ersetzt",
+      "visibility": "archive",
       "audience": [
         "Politik",
         "Verwaltung",
         "Jurist:innen"
       ],
       "level": "juristisch",
-      "summaryShort": "Working Paper zum Wirkungssteuergesetz mit Kommentaren und Begründungen.",
-      "whatToExpect": "Ein juristisch geprägtes Diskussionspapier, kein amtlicher Gesetzestext.",
+      "summaryShort": "Historische Diskussionsfassung des Wirkungssteuergesetzes vom Oktober 2025; ersetzt durch die Gesamtneufassung WStG 3.0.",
+      "whatToExpect": "Die unveränderte, zitierfähige historische Quellenfassung. Für den aktuellen fachlichen Stand gilt die Gesamtneufassung 3.0 vom 17. August 2026.",
       "keyQuestions": [
         "Wie könnte Wirkung steuerlich geregelt werden?",
         "Welche Schutzlinien braucht ein Gesetz?"
@@ -1410,12 +1410,18 @@
         "Staat & Demokratie"
       ],
       "relatedDocuments": [
+        "wirkungssteuer-wstg-3-0",
         "wirkungsrat-konzept",
         "technische-leitlinien-wustg"
       ],
       "version": "Oktober 2025",
       "date": "2025-10",
-      "legalNotice": "Diskussionsfassung. Nicht amtlich. Keine Rechts-, Steuer- oder Anlageberatung.",
+      "replacedBy": "wirkungssteuer-wstg-3-0",
+      "successorUrl": "bibliothek/wirkungssteuer-wstg-3-0/",
+      "successorLabel": "WStG 3.0 öffnen",
+      "historicalNotice": "Diese Fassung dokumentiert den Entwicklungsstand von 2025. Sie ist durch die modulare Gesamtneufassung 3.0 ersetzt.",
+      "editorialNote": "Historische Originalfassung; nicht still überschrieben.",
+      "legalNotice": "Historische Diskussionsfassung. Nicht amtlich. Keine Rechts-, Steuer- oder Anlageberatung.",
       "downloadAllowed": true,
       "previewAllowed": true,
       "section": "Recht & Steuerung",
@@ -1425,12 +1431,90 @@
       "pageCount": 146,
       "estimatedReadingTime": "248 Min.",
       "replaces": [],
-      "replacedBy": "",
-      "editorialNote": "",
       "internalNote": "",
       "author": "",
       "publicationLabel": "",
       "includeInFullKnowledgeLibrary": ""
+    },
+    {
+      "id": "wirkungssteuer-wstg-3-0",
+      "slug": "wirkungssteuer-wstg-3-0",
+      "title": "Wirkungssteuer 3.0 und Wirkungssteuergesetz (WStG) 3.0",
+      "subtitle": "Gesamtneufassung 2026: Systemarchitektur, Gesetzesentwurf, Kommentierung, Steuerartenatlas und Umsetzungspfad",
+      "author": "Natalie Weber",
+      "publicationLabel": "Führender Referenz- und Gesetzesentwurf",
+      "fileName": "Wirkungssteuer_WStG_3.0_Gesamtneufassung_2026.pdf",
+      "filePath": "public/downloads/originals/Wirkungssteuer_WStG_3.0_Gesamtneufassung_2026.pdf",
+      "contentHtmlPath": "content/documents/online/wirkungssteuer-wstg-3-0.inc",
+      "documentType": "gesetzesentwurf",
+      "status": "führend",
+      "visibility": "public",
+      "audience": [
+        "Politik",
+        "Verwaltung",
+        "Steuerrecht",
+        "Wissenschaft",
+        "Fachöffentlichkeit"
+      ],
+      "level": "juristisch",
+      "summaryShort": "Die Gesamtneufassung 3.0 ordnet Wirkungssteuer als modulare Rückkopplungsarchitektur über bestehende Steuerarten: Scorecards liefern Evidenz, der Gesetzgeber bleibt Tarifgeber.",
+      "whatToExpect": "47 Seiten mit 125 vollständig kommentierten Paragrafen, Steuerartenatlas, Daten- und Registerarchitektur, Wirkungsnachweiskonto, Governance, Rechtsschutz, KI, EU-Pfad, Digitalem Produktpass und Umsetzungshorizont bis 2040.",
+      "keyQuestions": [
+        "Wie kann Wirkung rechtsstaatlich und modular an bestehende Steuerarten rückgekoppelt werden, ohne eine universelle Supersteuer zu schaffen?",
+        "Welche Rollen haben Gesetzgeber, Scorecards, Wirkungsrat, WÖk-IDs, Produkt-IDs und Wirkungsnachweiskonto?",
+        "Welche nationalen und europäischen Entwicklungspfade sind insbesondere für Umsatzsteuer, Produktdaten und Digitalen Produktpass realistisch?"
+      ],
+      "topics": [
+        "Wirkungssteuer",
+        "WStG 3.0",
+        "Steuerartenatlas",
+        "Wirkungsnachweiskonto",
+        "EU-Steuerrecht",
+        "Digitaler Produktpass",
+        "Governance",
+        "Rechtsschutz"
+      ],
+      "methods": [
+        "Wirkungsrückkopplung",
+        "Scorecards",
+        "Nichtkompensation",
+        "Reverse Merit Order",
+        "WÖk-IDs",
+        "Evaluation"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie",
+        "Staat & Recht",
+        "Wirtschaft & Kapital"
+      ],
+      "relatedDocuments": [
+        "wstg-oktober-2025",
+        "wirkungsrat-konzept",
+        "technische-leitlinien-wustg",
+        "woek-begriffsleitfaden-fuehrend",
+        "woek-master-items-register"
+      ],
+      "version": "3.0 · Gesamtneufassung 2026",
+      "date": "2026-08-17",
+      "isLeadingReference": true,
+      "replaces": [
+        "wstg-oktober-2025"
+      ],
+      "legalNotice": "Referenz- und Diskussionsentwurf. Kein geltendes Recht und keine Rechts-, Steuer-, Finanz- oder Anlageberatung. Tarife, Schwellen und Module sind, soweit nicht ausdrücklich anders bezeichnet, WÖk-Entwurfs- oder Simulationsparameter.",
+      "editorialNote": "Echte Gesamtneufassung. Die Fassung 2.0 und das Working Paper vom Oktober 2025 bleiben unverändert und zitierfähig archiviert.",
+      "downloadAllowed": true,
+      "previewAllowed": true,
+      "includeInFullKnowledgeLibrary": true,
+      "section": "Recht & Steuerung",
+      "order": 108,
+      "fileType": "pdf",
+      "fileSize": "742 KB",
+      "pageCount": 47,
+      "estimatedReadingTime": "80 Min.",
+      "replacedBy": "",
+      "internalNote": ""
     },
     {
       "id": "wp-produkte",

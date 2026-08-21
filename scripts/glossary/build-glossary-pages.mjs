@@ -1633,7 +1633,7 @@ function formulaExpressionHtml(formula, expression) {
   const mathml = String(formula.mathml || "").trim();
   const validMathml = /^<math\b[^>]*>[\s\S]*<\/math>$/.test(mathml) && !/<(?:script|style|iframe|object|embed)\b/i.test(mathml);
   return validMathml
-    ? `<div class="term-formula" aria-label="${esc(expression)}">${mathml}</div><p class="sr-only">${esc(expression)}</p>`
+    ? `<div class="term-formula" role="img" aria-label="${esc(expression)}">${mathml}</div><p class="sr-only">${esc(expression)}</p>`
     : `<p><strong>${esc(expression)}</strong></p>`;
 }
 

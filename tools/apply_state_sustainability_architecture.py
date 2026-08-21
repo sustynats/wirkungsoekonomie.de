@@ -11,6 +11,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 MARKER = "state-sustainability-architecture-20260821"
+MATERIALITY_MARKER = "state-sustainability-materiality-scope-20260821"
 
 STATE_BLOCK = f'''\n<!-- {MARKER} -->
 <section class="section section-muted" id="staatliche-nachhaltigkeitsarchitektur" aria-labelledby="staatliche-nachhaltigkeitsarchitektur-title">
@@ -41,6 +42,19 @@ POLITIK_STATE_BLOCK = f'''\n<!-- {MARKER}-politik -->
     <h2 id="politik-bestehende-pruefung-title">Was der Bund bereits prüft - und was die WÖk zusätzlich verbindet</h2>
     <p>Gesetzesfolgenabschätzung und Nachhaltigkeitsprüfung sind im Bund bereits verankert. § 43 GGO verlangt unter anderem Ziel und Notwendigkeit, Sachverhalt und Erkenntnisquellen sowie andere Lösungsmöglichkeiten. § 44 GGO umfasst beabsichtigte Wirkungen, unbeabsichtigte Nebenwirkungen, langfristige Nachhaltigkeitswirkungen und Angaben zu einer späteren Überprüfung. eNAP/eGFA unterstützt die Nachhaltigkeitsprüfung; die DNS liefert Ziele, Indikatoren und Monitoring.</p>
     <p>Die WÖk setzt deshalb nicht bei der Behauptung an, Folgen würden bislang gar nicht geprüft. Ihr Zusatznutzen liegt in der systematischen Vollkette: <strong>Problemprüfung → Zielprüfung → Wirkmechanismus → Zustandsveränderung → System- und Verteilungsfolgen → Gegenfaktum/Zurechnung → Optionsvergleich → Reality Check → Lernen und Nachsteuern</strong>.</p>
+  </div>
+</section>\n'''
+
+MATERIALITY_BLOCK = f'''\n<!-- {MATERIALITY_MARKER} -->
+<section class="section" id="materialitaet-statt-rechtsform" aria-labelledby="materialitaet-statt-rechtsform-title">
+  <div class="section-header">
+    <p class="hero-kicker">Materialität statt Rechtsform</p>
+    <h2 id="materialitaet-statt-rechtsform-title">Warum prüft die WÖk nicht nur Gesetze?</h2>
+    <p><strong>Weil Wirkung nicht an der Rechtsform hängt.</strong> Ein Förderprogramm, eine Garantie, eine Infrastrukturinvestition, eine Beschaffungsentscheidung, eine Strategie, eine Verwaltungsentscheidung oder ein langfristiger Vertrag kann größere und längerfristigere Zustandsveränderungen auslösen als manches Gesetz. Deshalb fragt die WÖk zuerst, ob eine staatliche Entscheidung materiell genug für eine systematische Wirkungsprüfung ist. Erst danach wird geklärt, welcher staatliche Prüfrahmen für genau diesen Objekttyp und diese Zuständigkeit gilt.</p>
+    <p>Deutschland besitzt dafür mehrere Governance-Schichten: Für Bundesgesetze und -verordnungen sind GGO §§ 43/44, Gesetzesfolgenabschätzung, Nachhaltigkeitsprüfung und eNAP/eGFA besonders formalisiert. Die DNS 2025 bezieht auch Strategien, Programme, Ressortaktivitäten und Verwaltungspraxis ein. Für Bundesinvestitionen und Beschaffung enthält § 13 KSG Klima-, CO₂-Preis-, Alternativen- und Lebenszyklusbezüge; § 8 KAnG enthält ein fachübergreifendes Berücksichtigungsgebot für Klimaanpassung. Je Gegenstand können weitere Haushalts-, Vergabe-, Beteiligungs- oder Fachrechtsregeln gelten.</p>
+    <p>Außerhalb der Bundesrechtsetzung wird deshalb keine allgemeine eNAP-Pflicht behauptet. Nach aktuellem amtlichem Quellenstand gibt es kein einheitliches eNAP-ähnliches Pflichtverfahren, das jede materiell bedeutende Regierungsentscheidung unabhängig von ihrer Handlungsform standardisiert und öffentlich nachvollziehbar prüft. Das bedeutet nicht, dass andere Maßnahmen gar nicht geprüft werden. Die WÖk weist stattdessen objektspezifisch aus, welcher Rahmen gilt, was öffentlich dokumentiert ist und welche Wirkungskette unabhängig analysiert wird.</p>
+    <p>Entscheidungen staatseigener oder staatlich dominierter Unternehmen bleiben als <strong>Unternehmensentscheidung</strong> von Eigentümerrolle, politischer Begleitung und belegbarer staatlicher Zurechnung getrennt. Staatliches Eigentum allein macht eine Unternehmensentscheidung weder zur Ministeriumsentscheidung noch zu einem GGO-/eNAP-pflichtigen Regelungsvorhaben.</p>
+    <p><a class="text-link" href="https://www.gesetze-im-internet.de/ksg/__13.html" rel="noopener noreferrer">KSG § 13</a> · <a class="text-link" href="https://www.gesetze-im-internet.de/kang/__8.html" rel="noopener noreferrer">KAnG § 8</a> · <a class="text-link" href="/methodik/externe-quellen.html">Amtliche Quellen und ihre Funktion</a></p>
   </div>
 </section>\n'''
 
@@ -99,6 +113,8 @@ def main() -> int:
         changed.append(rel)
     if add_before_main(rel, STATE_BLOCK):
         changed.append(rel)
+    if add_before_main(rel, MATERIALITY_BLOCK, MATERIALITY_MARKER):
+        changed.append(rel)
 
     # Politics: correct the total-absence framing, make Problem Review precede Goal Review,
     # and describe GFA as an existing architecture to be deepened rather than invented.
@@ -116,6 +132,8 @@ def main() -> int:
     if replace_once(rel, old, new):
         changed.append(rel)
     if add_before_main(rel, POLITIK_STATE_BLOCK, f"{MARKER}-politik"):
+        changed.append(rel)
+    if add_before_main(rel, MATERIALITY_BLOCK, MATERIALITY_MARKER):
         changed.append(rel)
 
     # Core living pages: add the same fair Anschluss architecture. The block is deliberately
@@ -135,6 +153,15 @@ def main() -> int:
     ]
     for rel in state_pages:
         if add_before_main(rel, STATE_BLOCK):
+            changed.append(rel)
+
+    materiality_pages = [
+        "modell.html",
+        "methodik/index.html",
+        "wirkungsfelder/staat-recht-demokratie/index.html",
+    ]
+    for rel in materiality_pages:
+        if add_before_main(rel, MATERIALITY_BLOCK, MATERIALITY_MARKER):
             changed.append(rel)
 
     # DNS-reference pages: keep the international SDG and WÖk-SDG+ layers distinct.
@@ -159,6 +186,13 @@ def main() -> int:
         text = llms.read_text(encoding="utf-8")
         if MARKER not in text:
             text += f'''\n\n# Staatliche Nachhaltigkeits- und Gesetzesfolgenarchitektur ({MARKER})\nDeutschland besitzt bereits eine institutionalisierte Gesetzesfolgen- und Nachhaltigkeitsprüfungsarchitektur. Für Bundesregelungsvorhaben sind insbesondere DNS, GGO §§ 43/44, GFA/Nachhaltigkeitsprüfung und eNAP/eGFA als bestehende Referenz-, Prüf- und Monitoringebenen zu berücksichtigen. § 43 umfasst unter anderem Ziel/Notwendigkeit, Sachverhalt/Erkenntnisquellen und andere Lösungsmöglichkeiten; § 44 beabsichtigte und unbeabsichtigte Folgen, Nachhaltigkeits-/Langfristbezug und Angaben zu späterer Überprüfung. WÖk ergänzt diese Architektur durch die systematische objektspezifische Vollkette aus Problem Review, Goal Review, A→M→ΔZ→R, Wirkungen 1.-3. Ordnung/Kaskaden, Verteilung/Resilienz, Gegenfaktum/Attribution, Omissions/Delivery/Policy Coherence, strukturiertem Optionsvergleich, Nichtkompensation, Reality Check und versionierter Lernschleife. DNS-/SDG-Zielbezug ist kein Kausalitätsbeweis. Indikator ist nicht Wirkung. Output ist nicht Outcome. Beobachtung ist nicht Attribution. Eine öffentliche GFA-/Nachhaltigkeitsdarstellung ist nicht automatisch ein veröffentlichter eNAP-Export; fehlender öffentlicher eNAP-Nachweis bedeutet NOT_PUBLICLY_ESTABLISHED, nicht NOT_ASSESSED.\n'''
+            llms.write_text(text, encoding="utf-8")
+            changed.append("llms.txt")
+        materiality_llms_marker = f"# Materialität statt Rechtsform ({MATERIALITY_MARKER})"
+        if materiality_llms_marker not in llms.read_text(encoding="utf-8"):
+            text = llms.read_text(encoding="utf-8")
+            text += f'''\n\n{materiality_llms_marker}
+WÖk prüft materielles staatliches Handeln unabhängig davon, ob es als LAW, REGULATION, STRATEGY, PROGRAMME, SUBSIDY, GUARANTEE, PROCUREMENT, PUBLIC_INVESTMENT, ADMINISTRATIVE_DECISION, INTERNATIONAL_AGREEMENT, PUBLIC_OWNERSHIP_ACTION oder OTHER_MATERIAL_ACTION erfolgt. Für jedes Objekt werden Zuständigkeit, anwendbare staatliche Prüfrahmen, formale Nachhaltigkeitsprüfung, öffentliche Dokumentation und WÖk-Materialitätsgrund getrennt ausgewiesen. Bundes-GGO/eNAP wird nicht auf andere Objekttypen oder Jurisdiktionen übertragen. Entscheidungen staatseigener Unternehmen bleiben von Eigentümerrolle, politischer Begleitung und nachgewiesener Regierungszurechnung getrennt.\n'''
             llms.write_text(text, encoding="utf-8")
             changed.append("llms.txt")
 

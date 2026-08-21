@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T10:35:30.660Z",
+  "generatedAt": "2026-08-21T14:52:29.473Z",
   "documents": [
     {
       "id": "nachhaltigkeit-als-systemresilienz-definition-und-klimamodell-v1-0",
@@ -327,8 +327,8 @@
         "Planet",
         "Demokratie"
       ],
-      "pageCount": 1252,
-      "estimatedReadingTime": "2128 Min.",
+      "pageCount": 1250,
+      "estimatedReadingTime": "2125 Min.",
       "version": "2026",
       "date": "2026",
       "downloadAllowed": true,
@@ -885,19 +885,19 @@
       "id": "wstg-oktober-2025",
       "slug": "wstg-oktober-2025",
       "title": "WStG Oktober 2025",
-      "subtitle": "Diskussionsfassung eines Wirkungssteuergesetzes",
+      "subtitle": "Zitierfähiger historischer Entwicklungsstand vor der Gesamtneufassung 3.0",
       "author": "",
       "publicationLabel": "",
       "documentType": "gesetzesentwurf",
-      "status": "diskussionsfassung",
-      "visibility": "expert_public",
+      "status": "ersetzt",
+      "visibility": "archive",
       "audience": [
         "Politik",
         "Verwaltung",
         "Jurist:innen"
       ],
       "level": "juristisch",
-      "summaryShort": "Working Paper zum Wirkungssteuergesetz mit Kommentaren und Begründungen.",
+      "summaryShort": "Historische Diskussionsfassung des Wirkungssteuergesetzes vom Oktober 2025; ersetzt durch die Gesamtneufassung WStG 3.0.",
       "topics": [
         "WStG",
         "Recht",
@@ -917,6 +917,58 @@
       "downloadAllowed": true,
       "includeInFullKnowledgeLibrary": false,
       "url": "/bibliothek/wstg-oktober-2025/"
+    },
+    {
+      "id": "wirkungssteuer-wstg-3-0",
+      "slug": "wirkungssteuer-wstg-3-0",
+      "title": "Wirkungssteuer 3.0 und Wirkungssteuergesetz (WStG) 3.0",
+      "subtitle": "Gesamtneufassung 2026: Systemarchitektur, Gesetzesentwurf, Kommentierung, Steuerartenatlas und Umsetzungspfad",
+      "author": "Natalie Weber",
+      "publicationLabel": "Führender Referenz- und Gesetzesentwurf",
+      "documentType": "gesetzesentwurf",
+      "status": "führend",
+      "visibility": "public",
+      "audience": [
+        "Politik",
+        "Verwaltung",
+        "Steuerrecht",
+        "Wissenschaft",
+        "Fachöffentlichkeit"
+      ],
+      "level": "juristisch",
+      "summaryShort": "Die Gesamtneufassung 3.0 ordnet Wirkungssteuer als modulare Rückkopplungsarchitektur über bestehende Steuerarten: Scorecards liefern Evidenz, der Gesetzgeber bleibt Tarifgeber.",
+      "topics": [
+        "Wirkungssteuer",
+        "WStG 3.0",
+        "Steuerartenatlas",
+        "Wirkungsnachweiskonto",
+        "EU-Steuerrecht",
+        "Digitaler Produktpass",
+        "Governance",
+        "Rechtsschutz"
+      ],
+      "methods": [
+        "Wirkungsrückkopplung",
+        "Scorecards",
+        "Nichtkompensation",
+        "Reverse Merit Order",
+        "WÖk-IDs",
+        "Evaluation"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie",
+        "Staat & Recht",
+        "Wirtschaft & Kapital"
+      ],
+      "pageCount": 47,
+      "estimatedReadingTime": "80 Min.",
+      "version": "3.0 · Gesamtneufassung 2026",
+      "date": "2026-08-17",
+      "downloadAllowed": true,
+      "includeInFullKnowledgeLibrary": true,
+      "url": "/bibliothek/wirkungssteuer-wstg-3-0/"
     },
     {
       "id": "wp-produkte",
@@ -1119,8 +1171,8 @@
     {
       "id": "woek-master-items-register",
       "slug": "woek-master-items-register",
-      "title": "WÖk Master Items v1.3",
-      "subtitle": "Geprüftes Arbeits- und Governance-Register für WÖk-IDs, Scorecards und Benchmarks",
+      "title": "WÖk-Masterregister v1.4",
+      "subtitle": "Führendes technisches Register für WÖk-IDs, Bewertungsregeln, Quellen und Prüfstatus",
       "author": "",
       "publicationLabel": "",
       "documentType": "datenregister",
@@ -1132,7 +1184,7 @@
         "Wissenschaft"
       ],
       "level": "expert",
-      "summaryShort": "Geprüftes Register mit 621 WÖk-IDs, 28 Regeln, getrennten aktiven und historischen Benchmarkwerten sowie Prüfstatus.",
+      "summaryShort": "Führendes Register mit 621 WÖk-IDs, 28 Regeln, getrennten Schwellen- und Benchmarkstatus sowie sichtbaren offenen Prüfbedarfen.",
       "topics": [
         "WÖk-ID",
         "Datenregister",
@@ -1151,8 +1203,8 @@
       ],
       "pageCount": 221,
       "estimatedReadingTime": "376 Min.",
-      "version": "v1.3",
-      "date": "2026-08-13",
+      "version": "v1.4",
+      "date": "2026-08-16",
       "downloadAllowed": true,
       "includeInFullKnowledgeLibrary": false,
       "url": "/bibliothek/woek-master-items-register/"
@@ -1160,7 +1212,7 @@
     {
       "id": "woek-begriffsleitfaden-fuehrend",
       "slug": "woek-begriffsleitfaden-fuehrend",
-      "title": "WÖk-Begriffsleitfaden führend v1.3",
+      "title": "WÖk-Begriffsleitfaden führend v1.5",
       "subtitle": "Maßgebliche Sprachreferenz der Wirkungsökonomie",
       "author": "",
       "publicationLabel": "",
@@ -1173,13 +1225,96 @@
         "Akademie"
       ],
       "level": "fortgeschritten",
-      "summaryShort": "Führende Sprachreferenz v1.3 mit Nachhaltigkeit als langfristig gesicherter Wirkungsresilienz und acht Analysebausteinen von Resilienz und Systementwicklung.",
+      "summaryShort": "Führende Sprach- und Methodenreferenz v1.5: IOOI ist eine externe, optionale Results Chain; die WÖk-Wirkungsarchitektur verbindet Vorwirkung, Evidenz, Bewertung, Schutz, Rückkopplung und Lernen.",
       "topics": [
         "Begriffe",
         "Glossar",
         "Sprachregelwerk",
         "Wirkungsresilienz",
-        "Systemresilienz"
+        "Systemresilienz",
+        "IOOI",
+        "Wirkungspfad",
+        "Wirkungsradar",
+        "Wirkungsarchitektur"
+      ],
+      "methods": [
+        "Begriffliche Orientierung"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "pageCount": 34,
+      "estimatedReadingTime": "58 Min.",
+      "version": "v1.5",
+      "date": "2026-08-15",
+      "downloadAllowed": true,
+      "includeInFullKnowledgeLibrary": false,
+      "url": "/bibliothek/woek-begriffsleitfaden-fuehrend/"
+    },
+    {
+      "id": "woek-begriffsleitfaden-fuehrend-v1-4",
+      "slug": "woek-begriffsleitfaden-fuehrend-v1-4",
+      "title": "WÖk-Begriffsleitfaden führend v1.4",
+      "subtitle": "Zitierfähige Archivfassung der maßgeblichen Sprachreferenz",
+      "author": "",
+      "publicationLabel": "",
+      "documentType": "redaktionsgrundlage",
+      "status": "archiviert",
+      "visibility": "archive",
+      "audience": [
+        "Redaktion",
+        "Fachöffentlichkeit",
+        "Akademie"
+      ],
+      "level": "fortgeschritten",
+      "summaryShort": "Archivierte Fassung v1.4 des Begriffsleitfadens; sie dokumentiert den vorherigen IOOI-Stand und bleibt für frühere Zitate unverändert erhalten.",
+      "topics": [
+        "Begriffe",
+        "Glossar",
+        "Archiv",
+        "IOOI",
+        "Wirkungsarchitektur"
+      ],
+      "methods": [
+        "Begriffliche Orientierung"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie"
+      ],
+      "pageCount": 28,
+      "estimatedReadingTime": "48 Min.",
+      "version": "v1.4",
+      "date": "2026-08-14",
+      "downloadAllowed": true,
+      "includeInFullKnowledgeLibrary": false,
+      "url": "/bibliothek/woek-begriffsleitfaden-fuehrend-v1-4/"
+    },
+    {
+      "id": "woek-begriffsleitfaden-fuehrend-v1-3",
+      "slug": "woek-begriffsleitfaden-fuehrend-v1-3",
+      "title": "WÖk-Begriffsleitfaden führend v1.3",
+      "subtitle": "Zitierfähige Archivfassung der maßgeblichen Sprachreferenz",
+      "author": "",
+      "publicationLabel": "",
+      "documentType": "redaktionsgrundlage",
+      "status": "archiviert",
+      "visibility": "archive",
+      "audience": [
+        "Redaktion",
+        "Fachöffentlichkeit",
+        "Akademie"
+      ],
+      "level": "fortgeschritten",
+      "summaryShort": "Archivierte Fassung v1.3 des Begriffsleitfadens mit der damals führenden Resilienzsystematik.",
+      "topics": [
+        "Begriffe",
+        "Glossar",
+        "Archiv",
+        "Wirkungsresilienz"
       ],
       "methods": [
         "Begriffliche Orientierung"
@@ -1195,7 +1330,7 @@
       "date": "2026-07-30",
       "downloadAllowed": true,
       "includeInFullKnowledgeLibrary": false,
-      "url": "/bibliothek/woek-begriffsleitfaden-fuehrend/"
+      "url": "/bibliothek/woek-begriffsleitfaden-fuehrend-v1-3/"
     },
     {
       "id": "woek-begriffsleitfaden-fuehrend-v1-2",
@@ -1520,6 +1655,54 @@
       "downloadAllowed": true,
       "includeInFullKnowledgeLibrary": false,
       "url": "/bibliothek/nachhaltigkeit-als-systemresilienz-definition-und-klimamodell/"
+    },
+    {
+      "id": "wirkungsbasiertes-value-pricing",
+      "slug": "wirkungsbasiertes-value-pricing",
+      "title": "Wirkungsbasiertes Value Pricing",
+      "subtitle": "Vom Stundenhonorar zur Vergütung nach erzeugtem Kundenwert und positiver Netto-Wirkung",
+      "author": "Natalie Weber",
+      "publicationLabel": "Dossier und fachliches Detailkonzept",
+      "documentType": "dossier",
+      "status": "aktuell",
+      "visibility": "public",
+      "audience": [
+        "Unternehmen",
+        "Beratung",
+        "Einkauf",
+        "Controlling",
+        "Fachöffentlichkeit"
+      ],
+      "level": "expert",
+      "summaryShort": "Dossier v1.2 zur Vergütung nach zurechenbarem Kundenwert: Es verbindet Value-based Pricing mit einer getrennten Prüfung positiver Netto-Wirkung für Mensch, Planet und Demokratie.",
+      "topics": [
+        "Value-based Pricing",
+        "Kundenwert",
+        "Wirkungscontrolling",
+        "Scorecards",
+        "Nichtkompensation",
+        "Preis-Korridor"
+      ],
+      "methods": [
+        "Wirkungscontrolling",
+        "Wirkpfad",
+        "Wirkungszurechnung",
+        "Scorecards",
+        "T-SROI"
+      ],
+      "impactFields": [
+        "Mensch",
+        "Planet",
+        "Demokratie",
+        "Ökonomie"
+      ],
+      "pageCount": 69,
+      "estimatedReadingTime": "117 Min.",
+      "version": "v1.2 · Erstveröffentlichung 4. Mai 2026 · aktualisierte Fassung August 2026",
+      "date": "2026-05-04",
+      "downloadAllowed": true,
+      "includeInFullKnowledgeLibrary": true,
+      "url": "/bibliothek/wirkungsbasiertes-value-pricing/"
     },
     {
       "id": "folgencheck-wirkungspolitische-sprache",

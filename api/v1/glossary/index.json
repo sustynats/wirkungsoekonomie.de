@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-02T19:49:46.648Z",
+  "generatedAt": "2026-08-21T14:46:36.244Z",
   "version": "v1",
   "source": "assets/data/glossary-lookup.json",
-  "count": 2092,
+  "count": 2152,
   "referenceIndex": {
     "source": "assets/data/glossary-reference-index.json",
     "letters": [
@@ -37,7 +37,7 @@
       "Y",
       "Z"
     ],
-    "count": 2092
+    "count": 2151
   },
   "terms": [
     {
@@ -307,6 +307,22 @@
       "definition": "Ein Akkumulator ist eine wiederaufladbare Batterie."
     },
     {
+      "id": "aktivitaet",
+      "label": "Aktivität",
+      "canonicalLabel": "Aktivität",
+      "slug": "aktivitaet",
+      "url": "/begriffe/aktivitaet/",
+      "aliases": [
+        "Aktivität",
+        "Handlung",
+        "Intervention",
+        "Maßnahme",
+        "Durchführung"
+      ],
+      "shortDefinition": "Aktivität bezeichnet das konkrete Handeln, durch das Inputs mobilisiert werden, um Leistungen oder Veränderungen zu ermöglichen.",
+      "definition": "Aktivitäten sind die ausgeführten Handlungen einer Intervention: etwa eine Beratung, ein Kurs, eine Produktion, eine Gesetzesänderung, eine Beschaffung, eine Investition oder eine Kommunikationsmaßnahme. Im IOOI-Modell liegt die Aktivität logisch zwischen Input und Output.\n\nEine Aktivität ist weder mit ihrer Absicht noch mit ihrem Ergebnis gleichzusetzen. Sie kann stattfinden, ohne dass der erwartete Output erreicht wird oder eine Veränderung bei Betroffenen eintritt."
+    },
+    {
       "id": "alan-watts-daoismus",
       "label": "Alan Watts / Daoismus",
       "canonicalLabel": "Alan Watts / Daoismus",
@@ -378,6 +394,35 @@
       ],
       "shortDefinition": "Allgemeines Gleichgewicht beschreibt ein theoretisches Modell, in dem alle Märkte gleichzeitig im Gleichgewicht sind.",
       "definition": "Allgemeines Gleichgewicht beschreibt ein theoretisches Modell, in dem alle Märkte gleichzeitig im Gleichgewicht sind."
+    },
+    {
+      "id": "allmende",
+      "label": "Allmende",
+      "canonicalLabel": "Allmende",
+      "slug": "allmende",
+      "url": "/begriffe/allmende/",
+      "aliases": [
+        "Allmende",
+        "Allmenden",
+        "Commons",
+        "Gemeingut"
+      ],
+      "shortDefinition": "Eine Allmende ist eine gemeinsame Ressource oder Systemleistung, deren Nutzung mehreren Akteuren offensteht und deren Erhalt gemeinsame Regeln, Verantwortung oder Governance benötigt.",
+      "definition": "Allmenden können natürliche Ressourcen wie Grundwasser, Fischbestände oder Böden sein. In einer erweiterten systemischen Perspektive können auch gemeinsame Infrastrukturen, Informationsräume oder regenerative Systemleistungen als Allmende betrachtet werden.\n\nNicht jede Allmende ist tragisch. Zum Problem wird sie, wenn Zugriff, Nutzung und Wirkungstragung nicht wirksam geregelt sind und der gemeinsame Bestand dadurch geschwächt wird."
+    },
+    {
+      "id": "allmendedilemma",
+      "label": "Allmendedilemma",
+      "canonicalLabel": "Allmendedilemma",
+      "slug": "allmendedilemma",
+      "url": "/begriffe/allmendedilemma/",
+      "aliases": [
+        "Allmendedilemma",
+        "Allmende-Dilemma",
+        "Commons-Dilemma"
+      ],
+      "shortDefinition": "Ein Allmendedilemma entsteht, wenn individuell vorteilhafte Nutzung einen gemeinsamen Bestand oder eine gemeinsame Systemleistung schwächt und die Kosten der Schädigung auf viele verteilt werden.",
+      "definition": "Das Dilemma beschreibt eine Konfliktlage zwischen kurzfristigem Einzelvorteil und dem Erhalt eines gemeinsamen Bestands. Es ist keine Aussage darüber, dass Menschen oder Kooperation zwangsläufig scheitern.\n\nEntscheidend sind Regeln, Beteiligung, nachvollziehbare Zuständigkeiten, Monitoring und die Frage, ob die Folgen der Nutzung dorthin zurückwirken, wo Entscheidungen getroffen werden."
     },
     {
       "id": "allmendeproblem",
@@ -656,6 +701,20 @@
       "definition": "Die Anti-SLAPP-Richtlinie schützt Personen, die sich öffentlich beteiligen, vor offensichtlich unbegründeten oder missbräuchlichen Gerichtsverfahren mit grenzüberschreitendem Bezug."
     },
     {
+      "id": "anticommons",
+      "label": "Anticommons",
+      "canonicalLabel": "Anticommons",
+      "slug": "anticommons",
+      "url": "/begriffe/anticommons/",
+      "aliases": [
+        "Anticommons",
+        "Anti-Commons",
+        "Anticommons-Situation"
+      ],
+      "shortDefinition": "Eine Anticommons-Situation entsteht, wenn zu viele voneinander unabhängige Ausschluss-, Veto- oder Kontrollrechte sinnvolle Nutzung, Kooperation oder Innovation blockieren.",
+      "definition": "Anticommons beschreibt die Kehrseite eines ungeregelten Zugriffs auf gemeinsame Güter. Zu viele fragmentierte Rechte, Nachweise oder Schnittstellen können verhindern, dass eine sinnvolle Handlung zustande kommt, obwohl sie im Ergebnis positive Wirkung hätte.\n\nDer Begriff richtet sich nicht gegen Rechte, Sicherheit oder demokratische Kontrolle. Er fragt, ob deren Zusammenspiel unverhältnismäßige Blockaden erzeugt und ob es transparente, rechtsstaatliche Koordinationswege gibt."
+    },
+    {
       "id": "antidiskriminierung",
       "label": "Antidiskriminierung",
       "canonicalLabel": "Antidiskriminierung",
@@ -916,6 +975,21 @@
       "definition": "Für die WÖk ist Assurance wichtig, weil geprüfte Daten belastbarer sind. Geprüfte Berichtsdaten bleiben aber Berichtsdaten, bis sie in Wirkungsbewertung und Rückkopplung übersetzt werden."
     },
     {
+      "id": "assurance-game",
+      "label": "Assurance Game",
+      "canonicalLabel": "Assurance Game",
+      "slug": "assurance-game",
+      "url": "/begriffe/assurance-game/",
+      "aliases": [
+        "Assurance Game",
+        "Hirschjagd",
+        "Stag Hunt",
+        "Stag-Hunt"
+      ],
+      "shortDefinition": "Ein Assurance Game beschreibt eine Lage, in der Kooperation für alle vorteilhaft wäre, aber einzelne Akteure wegen unsicherer Mitwirkung anderer beim kleineren sicheren Vorteil bleiben.",
+      "definition": "Das Problem ist nicht zwingend Defektion oder schlechte Absicht, sondern fehlende Verlässlichkeit über die Beteiligung anderer. Glaubwürdige Pfade, Garantien, gemeinsame Standards, Vorfinanzierung und Koordination können hier geeigneter sein als Strafe."
+    },
+    {
       "id": "astroturfing",
       "label": "Astroturfing",
       "canonicalLabel": "Astroturfing",
@@ -1069,6 +1143,21 @@
       ],
       "shortDefinition": "Das Ausland-statt-Inland-Narrativ rahmt öffentliche Ausgaben für internationale Verantwortung als Gegensatz zu nationaler Daseinsvorsorge. Wirkungsökonomisch ist diese Gegenüberstellung oft verkürzt, weil Sicherheit, Klima, Lieferketten, Migration und Demokratie grenzüberschreitend wirken.",
       "definition": "Das Ausland-statt-Inland-Narrativ rahmt öffentliche Ausgaben für internationale Verantwortung als Gegensatz zu nationaler Daseinsvorsorge. Wirkungsökonomisch ist diese Gegenüberstellung oft verkürzt, weil Sicherheit, Klima, Lieferketten, Migration und Demokratie grenzüberschreitend wirken."
+    },
+    {
+      "id": "ausloeser",
+      "label": "Auslöser",
+      "canonicalLabel": "Auslöser",
+      "slug": "ausloeser",
+      "url": "/begriffe/ausloeser/",
+      "aliases": [
+        "Auslöser",
+        "Wirkungsauslöser",
+        "Trigger",
+        "Ausgangshandlung"
+      ],
+      "shortDefinition": "Ein Auslöser ist eine Handlung, ein Unterlassen, ein Produkt, ein Gesetz, ein Preis, ein Narrativ, eine Technologie, ein Kapitalfluss oder ein anderes Ereignis, das Wirkung hervorrufen kann.",
+      "definition": "Auslöser markieren den Anfang eines möglichen Wirkpfads. Sie können beabsichtigt oder unbeabsichtigt, individuell oder institutionell sein. Ein Auslöser kann erwünschte oder unerwünschte Wirkung, Nebenwirkungen, Wechselwirkungen, Rebound oder auch keine relevante Veränderung auslösen.\n\nZwischen Auslöser und tatsächlicher Wirkung liegen Bedingungen, Wirkmechanismen, Kontext und Unsicherheit. Der Auslöser ist deshalb keine Kurzform für Kausalität oder Verantwortungszuweisung."
     },
     {
       "id": "aeussere-loops",
@@ -1326,6 +1415,21 @@
       "definition": "Gefahren, Ursachen, präventive und reaktive Barrieren sowie Konsequenzen systematisch verbinden."
     },
     {
+      "id": "baseline",
+      "label": "Baseline",
+      "canonicalLabel": "Baseline",
+      "slug": "baseline",
+      "url": "/begriffe/baseline/",
+      "aliases": [
+        "Baseline",
+        "Ausgangswert",
+        "Ausgangszustand",
+        "Referenzwert vor Intervention"
+      ],
+      "shortDefinition": "Eine Baseline beschreibt die Ausgangsbedingungen vor einer Intervention oder zu Beginn eines Beobachtungszeitraums, gegen die spätere Veränderungen verglichen werden.",
+      "definition": "Eine Baseline kann aus Messwerten, qualitativen Beobachtungen, Vergleichsdaten oder einer klar dokumentierten Ausgangslage bestehen. Sie ist eine wichtige Grundlage, um Veränderungen über Zeit zu erkennen und nicht eine Momentaufnahme mit einem Ergebnis zu verwechseln.\n\nEine Baseline ersetzt kein Counterfactual. Sie zeigt, wo ein System oder eine Gruppe startete; die Frage, was ohne die Maßnahme passiert wäre, erfordert zusätzliche Vergleichs- oder Modellannahmen."
+    },
+    {
       "id": "baseline-verschiebung",
       "label": "Baseline-Verschiebung",
       "canonicalLabel": "Baseline-Verschiebung",
@@ -1505,6 +1609,20 @@
       ],
       "shortDefinition": "Bedeutung entsteht nicht nur durch Definition, sondern durch Gebrauch in sozialen Praktiken.",
       "definition": "Ein Wort wirkt anders, je nachdem, wo, von wem, mit welchem Ziel und in welchem Sprachspiel es verwendet wird."
+    },
+    {
+      "id": "bedingte-kooperation",
+      "label": "Bedingte Kooperation",
+      "canonicalLabel": "Bedingte Kooperation",
+      "slug": "bedingte-kooperation",
+      "url": "/begriffe/bedingte-kooperation/",
+      "aliases": [
+        "Bedingte Kooperation",
+        "conditional cooperation",
+        "konditionale Kooperation"
+      ],
+      "shortDefinition": "Bedingte Kooperation bezeichnet die Bereitschaft, zum gemeinsamen Nutzen beizutragen, wenn andere ebenfalls nachvollziehbar und fair beitragen oder wenn hierfür glaubwürdige institutionelle Sicherungen bestehen.",
+      "definition": "Bedingte Kooperation liegt zwischen bedingungslosem Vertrauen und pauschaler Verweigerung. Sie kann wachsen, wenn Beiträge sichtbar, Regeln verständlich, Missbrauch begrenzt und Fehler korrigierbar sind. Sie kann schwinden, wenn Ausbeutung folgenlos bleibt oder Verfahren willkürlich erscheinen.\n\nDer Begriff beschreibt ein Beziehungsmuster und keine persönliche Eigenschaft, die bewertet, gespeichert oder zu einem Menschen-Score verdichtet werden dürfte."
     },
     {
       "id": "bedingungsloses-grundeinkommen",
@@ -2491,6 +2609,20 @@
       "definition": "Ein CapEx-Plan beschreibt geplante Investitionsausgaben für Anlagen, Infrastruktur, Gebäude, Technik oder andere langfristige Vermögenswerte."
     },
     {
+      "id": "capture",
+      "label": "Capture",
+      "canonicalLabel": "Capture",
+      "slug": "capture",
+      "url": "/begriffe/capture/",
+      "aliases": [
+        "Capture",
+        "institutionelles Capture",
+        "Vereinnahmung von Bewertungsregeln"
+      ],
+      "shortDefinition": "Capture bezeichnet die Vereinnahmung von Regeln, Standards, Datenzugängen oder Bewertungsinstitutionen, sodass private Interessen als öffentliche Wirkung erscheinen können.",
+      "definition": "Capture kann etwa über einseitigen Zugang zu Daten, Interessenkonzentration, Personalwechsel, Einfluss auf Benchmarks oder abhängige Prüfstellen entstehen. Es ist besonders riskant, wenn dieselbe Institution Methoden festlegt und zugleich Einzelfälle sanktioniert oder wirtschaftliche Vorteile verteilt."
+    },
+    {
       "id": "capture-price",
       "label": "Capture Price / Marktwert von Strom",
       "canonicalLabel": "Capture Price / Marktwert von Strom",
@@ -2713,6 +2845,20 @@
       "definition": "Die Chicago School steht für marktorientierte ökonomische Ansätze, Monetarismus, Deregulierung und starke Betonung von Preisen und Anreizen."
     },
     {
+      "id": "chicken-game",
+      "label": "Chicken Game",
+      "canonicalLabel": "Chicken Game",
+      "slug": "chicken-game",
+      "url": "/begriffe/chicken-game/",
+      "aliases": [
+        "Chicken Game",
+        "Chicken-Spiel",
+        "Eskalationsdilemma"
+      ],
+      "shortDefinition": "Ein Chicken Game beschreibt eine Eskalationslage, in der jede Seite möchte, dass die andere nachgibt, während gegenseitiges Festhalten für alle besonders schädlich ist.",
+      "definition": "Die Lage unterscheidet sich vom Gefangenendilemma: Das einseitige Nachgeben ist hier häufig der ungünstigste individuelle Ausgang, während gegenseitige Eskalation den größten gemeinsamen Schaden auslöst. Dadurch können Drohungen, Gesichtsverlust und unklare Grenzen die Deeskalation erschweren.\n\nMögliche Auswege sind überprüfbare Informationen, glaubwürdige und verhältnismäßige Grenzen, Verfahren zur Deeskalation sowie gesicherte Rückkehr- und Korrekturpfade."
+    },
+    {
       "id": "circular-economy",
       "label": "Circular Economy / Regenerative Economy",
       "canonicalLabel": "Circular Economy / Regenerative Economy",
@@ -2920,6 +3066,21 @@
       ],
       "shortDefinition": "Corporate Capture beschreibt die Vereinnahmung politischer, regulatorischer oder öffentlicher Prozesse durch Unternehmensinteressen.",
       "definition": "Corporate Capture beschreibt die Vereinnahmung politischer, regulatorischer oder öffentlicher Prozesse durch Unternehmensinteressen."
+    },
+    {
+      "id": "counterfactual",
+      "label": "Counterfactual",
+      "canonicalLabel": "Counterfactual",
+      "slug": "counterfactual",
+      "url": "/begriffe/counterfactual/",
+      "aliases": [
+        "Counterfactual",
+        "Kontrafaktisches Szenario",
+        "Was wäre ohne die Maßnahme passiert?",
+        "Gegenhypothese"
+      ],
+      "shortDefinition": "Ein Counterfactual beschreibt den plausiblen Vergleichsfall, was ohne eine betrachtete Maßnahme, Intervention oder Entscheidung wahrscheinlich passiert wäre.",
+      "definition": "Counterfactuals sind nötig, weil beobachtete Veränderungen auch durch andere Ursachen, Trends, externe Schocks oder parallele Maßnahmen entstehen können. Je nach Fall werden sie mit Kontrollgruppen, Vorher-Nachher-Vergleichen, Zeitreihen, Vergleichsregionen, Simulationen oder transparenten Gegenhypothesen angenähert.\n\nEin Counterfactual ist häufig keine unmittelbar beobachtbare Tatsache, sondern eine methodisch begründete Vergleichsannahme. Seine Qualität und Unsicherheit müssen offenliegen."
     },
     {
       "id": "cradle-to-cradle",
@@ -3748,6 +3909,21 @@
       "definition": "Destruktive Narrative können kurzfristig Kohärenz simulieren, indem sie klare Schuldige und einfache Lösungen anbieten. Langfristig erhöhen sie häufig Misstrauen, Polarisierung und institutionelle Destabilisierung."
     },
     {
+      "id": "deutsche-nachhaltigkeitsstrategie",
+      "label": "Deutsche Nachhaltigkeitsstrategie (DNS)",
+      "canonicalLabel": "Deutsche Nachhaltigkeitsstrategie (DNS)",
+      "slug": "deutsche-nachhaltigkeitsstrategie",
+      "url": "/begriffe/deutsche-nachhaltigkeitsstrategie/",
+      "aliases": [
+        "Deutsche Nachhaltigkeitsstrategie (DNS)",
+        "DNS",
+        "Deutsche Nachhaltigkeitsstrategie",
+        "Nachhaltigkeitsstrategie des Bundes"
+      ],
+      "shortDefinition": "Die Deutsche Nachhaltigkeitsstrategie (DNS) ist der nationale Ziel-, Management- und Monitoringrahmen, mit dem Deutschland die Agenda 2030 und ihre 17 SDGs in eigene Ziele, Indikatoren und Governance übersetzt.",
+      "definition": "Die Deutsche Nachhaltigkeitsstrategie ist die nationale Umsetzungs- und Steuerungsarchitektur für nachhaltige Entwicklung. Sie verbindet politische Ziele und Indikatoren mit einem Managementsystem, ressortübergreifender Governance und regelmäßigem Monitoring. Die Weiterentwicklung 2025 ordnet die deutsche Nachhaltigkeitspolitik weiterhin an der Agenda 2030 aus.\n\nFür die Wirkungsökonomie ist die DNS eine amtliche Referenz-, Ziel-, Baseline- und Monitoringquelle. Eine Zuordnung zu einem DNS-Ziel oder Indikator belegt jedoch noch nicht, dass eine konkrete Maßnahme die beobachtete Veränderung verursacht hat."
+    },
+    {
       "id": "dezentralisierung",
       "label": "Dezentralisierung",
       "canonicalLabel": "Dezentralisierung",
@@ -4030,6 +4206,21 @@
       "definition": "Dissonanzreduktion kann konstruktiv oder destruktiv erfolgen. Konstruktiv ist sie, wenn neue Informationen integriert und das eigene Weltbild erweitert wird. Destruktiv ist sie, wenn Komplexität durch Sündenböcke, Feindbilder, Verschwörungsnarrative oder monokausale Erklärungen reduziert wird."
     },
     {
+      "id": "dns-indikator",
+      "label": "DNS-Indikator",
+      "canonicalLabel": "DNS-Indikator",
+      "slug": "dns-indikator",
+      "url": "/begriffe/dns-indikator/",
+      "aliases": [
+        "DNS-Indikator",
+        "DNS-Indikatoren",
+        "Indikator der Deutschen Nachhaltigkeitsstrategie",
+        "Nachhaltigkeitsindikator der DNS"
+      ],
+      "shortDefinition": "Ein DNS-Indikator ist eine amtlich definierte Beobachtungsgröße, mit der der Stand und die Zielerreichung der Deutschen Nachhaltigkeitsstrategie verfolgt werden.",
+      "definition": "Die Bundesregierung ordnet der Deutschen Nachhaltigkeitsstrategie Ziele und Indikatoren zu; Destatis unterstützt deren Messung und veröffentlicht regelmäßig Daten und Indikatorenberichte. Indikatoren zeigen Zustände, Trends und Zielabstände. Sie können für politische Wirkungsanalysen eine wichtige Baseline oder Monitoringreferenz sein.\n\nAus der Bewegung eines Indikators folgt aber nicht automatisch, dass ein bestimmtes Gesetz, Programm oder Budget diese Veränderung verursacht hat. Dafür braucht es eine eigenständige Kausal- und Zurechnungsprüfung."
+    },
+    {
       "id": "dnsh-do-no-significant-harm",
       "label": "DNSH – Do No Significant Harm",
       "canonicalLabel": "DNSH – Do No Significant Harm",
@@ -4288,6 +4479,21 @@
       ],
       "shortDefinition": "E-Fuels sind synthetische Kraftstoffe, die mit Strom, Wasserstoff und Kohlenstoffquellen hergestellt werden. Wirkungsökonomisch zählt nicht das Label, sondern die Netto-Wirkung: Stromherkunft, Effizienz, Einsatzfeld, Klimabilanz und Alternativen müssen geprüft werden.",
       "definition": "E-Fuels sind synthetische Kraftstoffe, die mit Strom, Wasserstoff und Kohlenstoffquellen hergestellt werden. Wirkungsökonomisch zählt nicht das Label, sondern die Netto-Wirkung: Stromherkunft, Effizienz, Einsatzfeld, Klimabilanz und Alternativen müssen geprüft werden."
+    },
+    {
+      "id": "egesetzgebung-egfa",
+      "label": "E-Gesetzgebung / eGFA",
+      "canonicalLabel": "E-Gesetzgebung / eGFA",
+      "slug": "egesetzgebung-egfa",
+      "url": "/begriffe/egesetzgebung-egfa/",
+      "aliases": [
+        "E-Gesetzgebung / eGFA",
+        "E-Gesetzgebung",
+        "eGFA",
+        "elektronische Gesetzesfolgenabschätzung"
+      ],
+      "shortDefinition": "Die E-Gesetzgebung ist die digitale Arbeitsumgebung des Bundes für Rechtsetzung; die eGFA bildet dort Schritte der elektronischen Gesetzesfolgenabschätzung ab und bindet eNAP ein.",
+      "definition": "Die E-Gesetzgebungsplattform unterstützt die ressortübergreifende Erstellung und Abstimmung von Regelungsvorhaben. Im Cockpit steht die elektronische Gesetzesfolgenabschätzung zur Verfügung; eNAP ist dort als Nachhaltigkeitsprüfung integriert. Die digitale Plattform verändert den Verfahrenszugang, ersetzt aber weder die rechtlichen Anforderungen der GGO noch die fachliche Bewertung des jeweiligen Vorhabens."
     },
     {
       "id": "eba",
@@ -4642,6 +4848,20 @@
       ],
       "shortDefinition": "Ein Elektromobilitätsdienstleister bietet Zugang, Verträge oder Abrechnung für Ladeinfrastruktur an.",
       "definition": "Ein Elektromobilitätsdienstleister bietet Zugang, Verträge oder Abrechnung für Ladeinfrastruktur an."
+    },
+    {
+      "id": "enap",
+      "label": "Elektronische Nachhaltigkeitsprüfung (eNAP)",
+      "canonicalLabel": "Elektronische Nachhaltigkeitsprüfung (eNAP)",
+      "slug": "enap",
+      "url": "/begriffe/enap/",
+      "aliases": [
+        "Elektronische Nachhaltigkeitsprüfung (eNAP)",
+        "eNAP",
+        "elektronische Nachhaltigkeitsprüfung"
+      ],
+      "shortDefinition": "eNAP ist das elektronische Prüfwerkzeug des Bundes für die Nachhaltigkeitsprüfung von Regelungsvorhaben und ist in die E-Gesetzgebung beziehungsweise eGFA eingebettet.",
+      "definition": "Die elektronische Nachhaltigkeitsprüfung eNAP unterstützt Bundesressorts dabei, Nachhaltigkeitsbezüge eines Regelungsvorhabens systematisch zu prüfen. Sie führt durch relevante SDGs, Zielvorgaben sowie Ziele und Indikatoren der Deutschen Nachhaltigkeitsstrategie und ist Teil der digitalen E-Gesetzgebungsumgebung.\n\nDie mit eNAP erstellte Zusammenfassung wird im Verfahren dokumentiert. Öffentliche Gesetzesbegründungen können Nachhaltigkeitsaspekte wiedergeben; ohne konkreten Nachweis darf diese öffentliche Darstellung jedoch nicht als wort- oder byteidentischer eNAP-Rohexport bezeichnet werden."
     },
     {
       "id": "elinor-ostrom",
@@ -5857,6 +6077,22 @@
       "definition": "Der evolutorische Unternehmer entwickelt nicht nur Produkte oder Märkte, sondern auch die eigene Kompetenz, Wahrnehmung, Organisation und Entscheidungslogik weiter. Bei Jochen Röpke steht damit unternehmerisches Lernen, Selbstveränderung und Kompetenzentwicklung im Zentrum."
     },
     {
+      "id": "ex-ante-folgenpruefung-reality-check",
+      "label": "Ex-ante-Folgenprüfung und Reality Check",
+      "canonicalLabel": "Ex-ante-Folgenprüfung und Reality Check",
+      "slug": "ex-ante-folgenpruefung-reality-check",
+      "url": "/begriffe/ex-ante-folgenpruefung-reality-check/",
+      "aliases": [
+        "Ex-ante-Folgenprüfung und Reality Check",
+        "Ex-ante-Folgenprüfung",
+        "Ex-post-Überprüfung",
+        "Reality Check",
+        "Evaluation und Reality Check"
+      ],
+      "shortDefinition": "Ex-ante-Folgenprüfung schätzt mögliche Folgen vor einer Entscheidung; der Reality Check prüft später beobachtete Zustände und Evidenz gegen die ursprünglichen Annahmen und führt die Erkenntnisse in die nächste Analyseversion zurück.",
+      "definition": "Die staatliche Gesetzesfolgenabschätzung ist primär ex ante ausgerichtet, enthält nach § 44 Absatz 7 GGO aber auch Vorgaben dazu, ob und nach welchem Zeitraum die beabsichtigten Wirkungen, Angemessenheit von Kosten und Ergebnissen sowie eingetretene Nebenwirkungen überprüft werden sollen.\n\nDer WÖk-Reality-Check behauptet deshalb nicht, Ex-post-Überprüfung neu erfunden zu haben. Er bezeichnet die systematische Rückführung von StateObservations, EvidenceEvents, Unsicherheit und Zurechnung in eine versionierte Wirkungsanalyse, Recommendation und nächste Entscheidung."
+    },
+    {
       "id": "exergie",
       "label": "Exergie",
       "canonicalLabel": "Exergie",
@@ -5906,6 +6142,19 @@
       ],
       "shortDefinition": "Externalisierung beschreibt die Verlagerung von Kosten, Risiken oder Schäden auf andere Menschen, Natur, Institutionen oder zukünftige Generationen.",
       "definition": "Externalisierung macht Schäden für Verursacher:innen unsichtbar oder billiger, während andere die Folgen tragen."
+    },
+    {
+      "id": "externalisierungsluecke",
+      "label": "Externalisierungslücke",
+      "canonicalLabel": "Externalisierungslücke",
+      "slug": "externalisierungsluecke",
+      "url": "/begriffe/externalisierungsluecke/",
+      "aliases": [
+        "Externalisierungslücke",
+        "Externalisierungs-Lücke"
+      ],
+      "shortDefinition": "Die Externalisierungslücke ist die Differenz zwischen den zurechenbaren negativen Wirkungen einer Aktivität und dem Anteil, der im Entscheidungs-, Preis-, Haftungs-, Rückstellungs- oder Steuerkonto zurückwirkt.",
+      "definition": "Die Lücke macht sichtbar, wo Folgen zwar zurechenbar oder zumindest beschreibbar sind, aber noch nicht in der Entscheidungssituation ankommen. Sie kann monetär, physisch oder als Wirkungs- und Risikovektor dargestellt werden.\n\nEine große Lücke ist kein Beweis für eine einfache monetäre Lösung. Sie kann auf fehlende Daten, unklare Zuständigkeiten, nicht kompensierbare Grenzen oder institutionelle Fehlanreize hinweisen."
     },
     {
       "id": "externalitaet",
@@ -6738,6 +6987,20 @@
       "definition": "Freiheit / Markt / Planwirtschaftsvorwurf bezeichnet die ordnungspolitische Frage, ob die Wirkungsökonomie eine Form zentraler Planung sei oder ob sie eine marktwirtschaftliche Rückkopplungsarchitektur darstellt. Der Begriff bündelt die wichtigsten Einwände gegen die WÖk: Sie könne Freiheit beschränken, Märkte ersetzen, Eigentum entwerten, Konsum steuern, Unternehmen zentral lenken oder Planwirtschaft durch Daten einführen."
     },
     {
+      "id": "freiwilligendilemma",
+      "label": "Freiwilligendilemma",
+      "canonicalLabel": "Freiwilligendilemma",
+      "slug": "freiwilligendilemma",
+      "url": "/begriffe/freiwilligendilemma/",
+      "aliases": [
+        "Freiwilligendilemma",
+        "Volunteer’s Dilemma",
+        "Freiwilligen-Dilemma"
+      ],
+      "shortDefinition": "Ein Freiwilligendilemma liegt vor, wenn eine gemeinsame Leistung nur zustande kommt, wenn mindestens eine Seite handelt, während für jede einzelne Seite Abwarten zunächst günstiger erscheinen kann.",
+      "definition": "Das Dilemma betrifft etwa Erstinvestitionen, Pflege gemeinsamer Infrastruktur oder das Übernehmen einer notwendigen, aber nicht exklusiv vergüteten Aufgabe. Wenn alle auf andere warten, bleibt die Leistung aus. Wer handelt, kann jedoch unverhältnismäßig belastet werden.\n\nDie Diagnose ersetzt keine Prüfung von Fähigkeit, Zumutbarkeit oder gerechter Lastenteilung. Sie beschreibt eine institutionelle Unterversorgungsgefahr, keine moralische Pflicht einzelner Personen."
+    },
+    {
       "id": "fremdenfeindlichkeit",
       "label": "Fremdenfeindlichkeit / Xenophobie",
       "canonicalLabel": "Fremdenfeindlichkeit / Xenophobie",
@@ -6984,6 +7247,20 @@
       ],
       "shortDefinition": "Gedankenlosigkeit beschreibt bei Arendt fehlendes prüfendes Denken und fehlende Verantwortungsübernahme im Handeln.",
       "definition": "Gedankenlosigkeit beschreibt bei Arendt fehlendes prüfendes Denken und fehlende Verantwortungsübernahme im Handeln."
+    },
+    {
+      "id": "gefangenendilemma",
+      "label": "Gefangenendilemma",
+      "canonicalLabel": "Gefangenendilemma",
+      "slug": "gefangenendilemma",
+      "url": "/begriffe/gefangenendilemma/",
+      "aliases": [
+        "Gefangenendilemma",
+        "Gefangenen-Dilemma",
+        "wiederholtes Gefangenendilemma"
+      ],
+      "shortDefinition": "Das Gefangenendilemma beschreibt eine Lage, in der Defektion für jeden einzelnen kurzfristig attraktiv sein kann, obwohl gegenseitige Kooperation für alle besser wäre.",
+      "definition": "Im klassischen Gefangenendilemma bleibt Defektion individuell vorteilhaft, unabhängig vom Verhalten der anderen Seite. Wiederholte Beziehungen, nachvollziehbares Verhalten und glaubwürdige Korrektur können die Auszahlungslage verändern; sie rechtfertigen jedoch weder dauerhafte Stigmatisierung noch automatisierte Sanktionen."
     },
     {
       "id": "gegenframe",
@@ -7292,6 +7569,21 @@
       ],
       "shortDefinition": "Ein Gesetz ist eine allgemein verbindliche Regel, die in einem verfassungsmäßigen Verfahren beschlossen wird.",
       "definition": "Ein Gesetz ist eine allgemein verbindliche Regel, die in einem verfassungsmäßigen Verfahren beschlossen wird."
+    },
+    {
+      "id": "gesetzesfolgenabschaetzung",
+      "label": "Gesetzesfolgenabschätzung (GFA)",
+      "canonicalLabel": "Gesetzesfolgenabschätzung (GFA)",
+      "slug": "gesetzesfolgenabschaetzung",
+      "url": "/begriffe/gesetzesfolgenabschaetzung/",
+      "aliases": [
+        "Gesetzesfolgenabschätzung (GFA)",
+        "GFA",
+        "Gesetzesfolgenabschätzung",
+        "Folgenabschätzung von Gesetzen"
+      ],
+      "shortDefinition": "Die Gesetzesfolgenabschätzung des Bundes prüft die wesentlichen voraussichtlichen Auswirkungen eines Regelungsvorhabens, einschließlich beabsichtigter Wirkungen und unbeabsichtigter Nebenwirkungen.",
+      "definition": "Die Gemeinsame Geschäftsordnung der Bundesministerien verankert eine institutionalisierte Folgenprüfung. § 43 GGO verlangt in der Gesetzesbegründung unter anderem Zielsetzung und Notwendigkeit, den zugrunde liegenden Sachverhalt und Erkenntnisquellen sowie andere Lösungsmöglichkeiten und die Gründe für ihre Ablehnung. § 44 GGO versteht unter Gesetzesfolgen die wesentlichen Auswirkungen einschließlich beabsichtigter Wirkungen und unbeabsichtigter Nebenwirkungen und verlangt die Darstellung des Nachhaltigkeitsbezugs und langfristiger Wirkungen. § 44 Absatz 7 enthält Vorgaben zur späteren Überprüfung.\n\nDie GFA ist deshalb keine bloße Kostenrechnung und keine Leerstelle, die die WÖk erst erfindet. Zugleich ist sie nicht identisch mit der vollständigen WÖk-Wirkungsarchitektur."
     },
     {
       "id": "gesicherte-leistung",
@@ -9125,6 +9417,22 @@
       "definition": "Immobilien sind Grundstücke und Gebäude; ihre Wirkung umfasst unter anderem Wohnen, Flächenverbrauch, Energie, Infrastruktur, soziale Teilhabe und Vermögensverteilung."
     },
     {
+      "id": "impact",
+      "label": "Impact",
+      "canonicalLabel": "Impact",
+      "slug": "impact",
+      "url": "/begriffe/impact/",
+      "aliases": [
+        "Impact",
+        "höherstufige Wirkung",
+        "langfristige Wirkung",
+        "breitere Wirkung",
+        "gesellschaftlicher Impact"
+      ],
+      "shortDefinition": "Impact ist ein etablierter, je nach Fachfeld unterschiedlich verwendeter Begriff für höherstufige, längerfristige oder breitere Wirkungen.",
+      "definition": "In Evaluation, Wirkungsorientierung und Impact Management bezeichnet Impact häufig übergeordnete, breitere oder längerfristige Wirkungen: etwa veränderte Lebenslagen, gesellschaftliche Strukturen, Ökosysteme, Märkte oder Institutionen. Die genaue Abgrenzung zu Outcome variiert nach Methode und Anwendungsfeld; deshalb muss sie in jeder Anwendung offengelegt werden.\n\nImpact kann positiv oder negativ, beabsichtigt oder unbeabsichtigt, direkt oder indirekt sein. Der Begriff ist weder methodisch minderwertig noch automatisch ein positiver Qualitätsnachweis."
+    },
+    {
       "id": "impact-benefits-realization",
       "label": "Impact & Benefits Realization",
       "canonicalLabel": "Impact & Benefits Realization",
@@ -9518,6 +9826,21 @@
       "definition": "Der innovative Unternehmer setzt neue Kombinationen durch: neue Produkte, neue Produktionsweisen, neue Märkte, neue Bezugsquellen oder neue Organisationsformen. Er verschiebt bestehende Gleichgewichte und eröffnet neue Entwicklungspfade."
     },
     {
+      "id": "input",
+      "label": "Input",
+      "canonicalLabel": "Input",
+      "slug": "input",
+      "url": "/begriffe/input/",
+      "aliases": [
+        "Input",
+        "Ressourceneinsatz",
+        "eingesetzte Ressourcen",
+        "Mittelinput"
+      ],
+      "shortDefinition": "Input bezeichnet die Ressourcen, die für eine Aktivität, ein Projekt, ein Produkt, eine Organisation oder eine Intervention eingesetzt werden.",
+      "definition": "Inputs können finanzielle, personelle, materielle, natürliche, digitale oder organisatorische Ressourcen sein: zum Beispiel Budget, Arbeitszeit, Wissen, Daten, Energie, Fläche, Infrastruktur oder Kapital. Ihre Erfassung zeigt, was eingesetzt wurde und welche Voraussetzungen eine Aktivität hatte.\n\nEin hoher Input belegt weder die Qualität einer Leistung noch eine Veränderung bei Betroffenen. Er ist Aufwand beziehungsweise Voraussetzung, nicht Outcome, Impact oder positive Netto-Wirkung."
+    },
+    {
       "id": "insetting",
       "label": "Insetting",
       "canonicalLabel": "Insetting",
@@ -9544,6 +9867,21 @@
       ],
       "shortDefinition": "Inside-out beschreibt Wirkungen eines Unternehmens auf Umwelt und Menschen; Outside-in beschreibt Nachhaltigkeitsrisiken für das Unternehmen.",
       "definition": "Die WÖk braucht beide Blickrichtungen, übersetzt sie aber in Wirkungsbewertung, Steuerung und Rückkopplung."
+    },
+    {
+      "id": "institutionelle-vertrauenswuerdigkeit",
+      "label": "Institutionelle Vertrauenswürdigkeit",
+      "canonicalLabel": "Institutionelle Vertrauenswürdigkeit",
+      "slug": "institutionelle-vertrauenswuerdigkeit",
+      "url": "/begriffe/institutionelle-vertrauenswuerdigkeit/",
+      "aliases": [
+        "Institutionelle Vertrauenswürdigkeit",
+        "Vertrauenswürdigkeit",
+        "institutionelle Vertrauenswürdigkeit",
+        "Institutional Trustworthiness"
+      ],
+      "shortDefinition": "Institutionelle Vertrauenswürdigkeit bezeichnet die überprüfbare Qualität von Institutionen, berechenbar, fair, rechtsgebunden, korrigierbar und gegen Vereinnahmung geschützt zu handeln.",
+      "definition": "Vertrauenswürdigkeit ist nicht bloß hohe Zustimmung oder persönliche Reputation. Sie zeigt sich in fairen Verfahren, begründbaren Entscheidungen, Korrekturmöglichkeiten, Rechtsschutz und einem Schutz gegen Capture. Auch autoritäre oder korrupte Systeme können gruppenintern Vertrauen erzeugen, ohne institutionell vertrauenswürdig zu sein."
     },
     {
       "id": "institutioneller-rassismus",
@@ -9694,6 +10032,20 @@
       "definition": "Interessenvertretung bedeutet, Anliegen, Perspektiven oder Betroffenheiten gegenüber Politik, Öffentlichkeit oder Institutionen sichtbar zu machen."
     },
     {
+      "id": "intergenerationelles-dilemma",
+      "label": "Intergenerationelles Dilemma",
+      "canonicalLabel": "Intergenerationelles Dilemma",
+      "slug": "intergenerationelles-dilemma",
+      "url": "/begriffe/intergenerationelles-dilemma/",
+      "aliases": [
+        "Intergenerationelles Dilemma",
+        "intergenerationale Dilemmata",
+        "Generationen-Dilemma"
+      ],
+      "shortDefinition": "Ein intergenerationelles Dilemma entsteht, wenn heutige Vorteile oder vermiedene Kosten zu Lasten von Menschen in späteren Zeiträumen gehen, die an der gegenwärtigen Entscheidung nicht gleichberechtigt beteiligt sind.",
+      "definition": "Solche Dilemmata können sich über lange Zeiträume, große Entfernungen und komplexe Wirkpfade entfalten. Betroffen sind etwa ökologische Regenerationsfähigkeit, öffentliche Infrastruktur, Staatsfinanzen oder institutionelle Vertrauensgrundlagen. Kurzfristige Gewinne können deshalb mit langfristigen Risiken verbunden sein, die im aktuellen Preis oder Mandat nicht sichtbar sind.\n\nDer Begriff setzt nicht voraus, alle Zukunft präzise berechnen zu können. Er verlangt, bekannte Unsicherheiten, irreversible Schäden und Schutzgrenzen in Entscheidungen angemessen zu berücksichtigen."
+    },
+    {
       "id": "intermittent-reinforcement",
       "label": "Intermittent Reinforcement",
       "canonicalLabel": "Intermittent Reinforcement",
@@ -9809,6 +10161,24 @@
       ],
       "shortDefinition": "Rückstand an notwendigen Investitionen in Infrastruktur, Bildung, Klima, Digitalisierung, Gesundheit oder Sicherheit.",
       "definition": "Investitionsschuld bezeichnet den Rückstand an notwendigen Investitionen, der entsteht, wenn Infrastruktur, Bildung, Klimaresilienz, Digitalisierung, Gesundheit, Sicherheit oder Verwaltung nicht ausreichend erhalten und modernisiert werden."
+    },
+    {
+      "id": "iooi",
+      "label": "IOOI",
+      "canonicalLabel": "IOOI",
+      "slug": "iooi",
+      "url": "/begriffe/iooi/",
+      "aliases": [
+        "IOOI",
+        "I-O-O-I",
+        "Input Output Outcome Impact",
+        "Results Chain",
+        "Logic Model",
+        "Wirkungslogik",
+        "Wirkungskette"
+      ],
+      "shortDefinition": "IOOI steht für Input, Output, Outcome und Impact. Es ist eine externe, optionale Results-Chain-Methode zur Strukturierung eines Abschnitts eines Wirkungspfads.",
+      "definition": "IOOI ist ein verbreitetes Modell aus Evaluation, Wirkungsorientierung und Results-Based Management. Es ordnet eingesetzte Ressourcen, erbrachte Leistungen, eingetretene Veränderungen und weiterreichende Wirkungen. Aktivität kann zwischen Input und Output als zusätzliche Prozessstufe dargestellt werden, gehört aber nicht zum Akronym.\n\nIOOI kann einen Abschnitt eines Wirkungspfads strukturieren. Die Methode beweist weder, dass ein Outcome oder Impact tatsächlich eingetreten ist, noch dass er kausal zurechenbar oder normativ positiv ist. Dafür braucht es passende Evidenz, eine transparente Zurechnung und einen offengelegten Referenzrahmen."
     },
     {
       "id": "ipbes",
@@ -10972,6 +11342,21 @@
       "definition": "Eine Kontraindikation ist ein Umstand, der gegen die Anwendung einer Maßnahme spricht, weil Risiken, Schäden oder ungeeignete Bedingungen überwiegen."
     },
     {
+      "id": "kontribution",
+      "label": "Kontribution",
+      "canonicalLabel": "Kontribution",
+      "slug": "kontribution",
+      "url": "/begriffe/kontribution/",
+      "aliases": [
+        "Kontribution",
+        "Beitrag zur Wirkung",
+        "Contribution",
+        "Wirkungsbeitrag"
+      ],
+      "shortDefinition": "Kontribution beschreibt den plausiblen Beitrag einer Maßnahme zu einer beobachteten Veränderung, ohne zu behaupten, sie sei deren alleinige Ursache.",
+      "definition": "In komplexen Systemen entstehen Wirkungen meist durch das Zusammenwirken mehrerer Akteure, Bedingungen und Ereignisse. Kontribution prüft, welchen nachvollziehbaren Beitrag eine Maßnahme zu einer Veränderung leistet, auch wenn eine vollständige kausale Zurechnung nicht möglich oder nicht angemessen ist.\n\nSie ist besonders wichtig bei langfristigen, systemischen oder gesellschaftlichen Wirkungen. Eine plausible Kontribution muss Daten, Mechanismen, andere Ursachen und Unsicherheit sichtbar machen."
+    },
+    {
       "id": "kontrollbeduerfnis",
       "label": "Kontrollbedürfnis",
       "canonicalLabel": "Kontrollbedürfnis",
@@ -10996,6 +11381,19 @@
       "definition": "Die Konzessionsabgabe ist ein Entgelt für die Nutzung öffentlicher Wege durch Energieversorgungsnetze."
     },
     {
+      "id": "kooperationsfaehigkeit",
+      "label": "Kooperationsfähigkeit",
+      "canonicalLabel": "Kooperationsfähigkeit",
+      "slug": "kooperationsfaehigkeit",
+      "url": "/begriffe/kooperationsfaehigkeit/",
+      "aliases": [
+        "Kooperationsfähigkeit",
+        "kooperationsfähige Integrität"
+      ],
+      "shortDefinition": "Kooperationsfähigkeit bezeichnet die Fähigkeit einer Ordnung, faire Lastenteilung, Reziprozität, Beteiligung, Konfliktlösung, Partnerwahl und Wiedergutmachung praktisch zu ermöglichen.",
+      "definition": "Kooperationsfähigkeit ist kein Zustimmungswert und keine Pflicht zur Harmonie. Sie hängt von realen Alternativen, Verfahrensfairness, Schutz vor Ausbeutung und der Möglichkeit ab, Fehlverhalten zu korrigieren, ohne Menschen dauerhaft aus gemeinsamer Handlung auszuschließen."
+    },
+    {
       "id": "kooperationslogik",
       "label": "Kooperationslogik",
       "canonicalLabel": "Kooperationslogik",
@@ -11006,6 +11404,33 @@
       ],
       "shortDefinition": "Kooperationslogik beschreibt eine Handlungslogik, in der Zusammenarbeit, Beziehung, gegenseitige Stärkung und geteilte Verantwortung im Mittelpunkt stehen.",
       "definition": "Kooperationslogik sucht Wirkung über Abstimmung, Vertrauen, Sorge, Rückkopplung und gemeinsame Lernfähigkeit."
+    },
+    {
+      "id": "kooperative-wehrhaftigkeit",
+      "label": "Kooperative Wehrhaftigkeit",
+      "canonicalLabel": "Kooperative Wehrhaftigkeit",
+      "slug": "kooperative-wehrhaftigkeit",
+      "url": "/begriffe/kooperative-wehrhaftigkeit/",
+      "aliases": [
+        "Kooperative Wehrhaftigkeit",
+        "kooperative Wehrhaftigkeit"
+      ],
+      "shortDefinition": "Kooperative Wehrhaftigkeit verbindet Kooperation als Ausgangspunkt mit risikobasierter Verifikation, proportionaler Reaktion, Wiedergutmachung, Lernfähigkeit und konsequenter Eskalation bei wiederholtem oder vorsätzlichem Missbrauch.",
+      "definition": "Die Leitlinie lautet: Vertrauen als Ausgangspunkt, Verifikation nach Risiko, Sanktion nach Evidenz, Rückkehr nach Wiedergutmachung. Sie ordnet Fehler, Lücken, Überforderung, Fahrlässigkeit und Betrug nicht gleich ein.\n\nKooperative Wehrhaftigkeit soll Kooperation nicht durch naives Vertrauen gefährden, aber auch nicht durch Generalverdacht und drakonische Kontrolle zerstören. Sie braucht Rechtsstaatlichkeit, Verhältnismäßigkeit und überprüfbare Verfahren."
+    },
+    {
+      "id": "koordinationsdilemma",
+      "label": "Koordinationsdilemma",
+      "canonicalLabel": "Koordinationsdilemma",
+      "slug": "koordinationsdilemma",
+      "url": "/begriffe/koordinationsdilemma/",
+      "aliases": [
+        "Koordinationsdilemma",
+        "Koordinierungsdilemma",
+        "Koordinationsproblem"
+      ],
+      "shortDefinition": "Ein Koordinationsdilemma entsteht, wenn mehrere Beteiligte von einem abgestimmten Vorgehen profitieren könnten, aber wegen unklarer Erwartungen, inkompatibler Standards oder fehlender Verbindlichkeit bei getrennten Lösungen bleiben.",
+      "definition": "Anders als beim Gefangenendilemma ist Kooperation hier nicht zwingend individuell nachteilig. Das Hindernis ist häufig die Unsicherheit darüber, welcher gemeinsame Pfad gilt, wer zuerst handelt oder ob andere anschlussfähig bleiben. Mehrere Lösungen können grundsätzlich sinnvoll sein, solange sie zuverlässig koordiniert werden.\n\nVerlässliche Standards, offene Schnittstellen, abgestimmte Zeitpläne, Vorleistungen und klare Ausstiegs- oder Korrekturwege können ein Koordinationsdilemma entschärfen."
     },
     {
       "id": "koerperliche-selbstbestimmung",
@@ -13433,6 +13858,21 @@
       "definition": "Nachhaltigkeitsmanagement ist das Management von Beiträgen zur langfristig gesicherten Wirkungsresilienz von Mensch, Planet und Demokratie."
     },
     {
+      "id": "nachhaltigkeitspruefung-bund",
+      "label": "Nachhaltigkeitsprüfung des Bundes",
+      "canonicalLabel": "Nachhaltigkeitsprüfung des Bundes",
+      "slug": "nachhaltigkeitspruefung-bund",
+      "url": "/begriffe/nachhaltigkeitspruefung-bund/",
+      "aliases": [
+        "Nachhaltigkeitsprüfung des Bundes",
+        "Nachhaltigkeitsprüfung",
+        "Nachhaltigkeitsprüfung in der Gesetzgebung",
+        "Nachhaltigkeitsprüfung nach GGO"
+      ],
+      "shortDefinition": "Die Nachhaltigkeitsprüfung ist der Teil der Gesetzesfolgenabschätzung, in dem geprüft und dargestellt wird, ob die Wirkungen eines Regelungsvorhabens einer nachhaltigen Entwicklung entsprechen.",
+      "definition": "Bei Bundesregelungsvorhaben ist im Rahmen der Gesetzesfolgenabschätzung darzustellen, ob die Wirkungen einer nachhaltigen Entwicklung entsprechen. Das BMJV beschreibt dafür die Prüfung betroffener SDGs und Zielvorgaben sowie von Zielen und Indikatoren der Deutschen Nachhaltigkeitsstrategie. Seit 2018 unterstützt eNAP diese Prüfung elektronisch.\n\nEine veröffentlichte Darstellung von Nachhaltigkeitsaspekten in einer Gesetzesbegründung ist öffentliche GFA-/Nachhaltigkeitsprüfungsdokumentation. Sie ist aber nicht automatisch als wort- oder byteidentischer öffentlicher eNAP-Export zu bezeichnen."
+    },
+    {
       "id": "nachtwaechterstaat",
       "label": "Nachtwächterstaat",
       "canonicalLabel": "Nachtwächterstaat",
@@ -13480,6 +13920,20 @@
       ],
       "shortDefinition": "Natalität bezeichnet bei Arendt die Fähigkeit, etwas Neues zu beginnen.",
       "definition": "Natalität bezeichnet bei Arendt die Fähigkeit, etwas Neues zu beginnen."
+    },
+    {
+      "id": "nationaler-wohlfahrtsindex",
+      "label": "Nationaler Wohlfahrtsindex (NWI)",
+      "canonicalLabel": "Nationaler Wohlfahrtsindex (NWI)",
+      "slug": "nationaler-wohlfahrtsindex",
+      "url": "/begriffe/nationaler-wohlfahrtsindex/",
+      "aliases": [
+        "Nationaler Wohlfahrtsindex (NWI)",
+        "Nationaler Wohlfahrtsindex",
+        "NWI"
+      ],
+      "shortDefinition": "Der Nationale Wohlfahrtsindex (NWI) ist ein deutscher Wohlfahrtsindikator aus 21 monetär bewerteten wohlfahrtsstiftenden und wohlfahrtsmindernden Komponenten.",
+      "definition": "Der Nationale Wohlfahrtsindex (NWI) ist ein in Deutschland etablierter Wohlfahrtsindikator. Er geht von gewichteten privaten Konsumausgaben aus und berücksichtigt weitere wohlfahrtssteigernde sowie wohlfahrtsmindernde Komponenten."
     },
     {
       "id": "nationalismus",
@@ -13598,7 +14052,7 @@
         "Nebenwirkung"
       ],
       "shortDefinition": "Eine Nebenwirkung ist eine zusätzliche, oft unbeabsichtigte direkte oder indirekte Folge einer Maßnahme, Entscheidung oder Kommunikation.",
-      "definition": "Eine Nebenwirkung ist eine zusätzliche, oft unbeabsichtigte direkte oder indirekte Folge einer Maßnahme, Entscheidung oder Kommunikation."
+      "definition": "Nebenwirkungen entstehen neben der primär erwarteten Veränderung. Sie können direkt oder indirekt, kurzfristig oder zeitverzögert, bei anderen Gruppen oder in anderen Räumen auftreten. Der Begriff beschreibt zunächst die zusätzliche Folge, nicht automatisch ihre moralische Bewertung.\n\nWirkungsanalysen müssen Nebenwirkungen sichtbar machen, damit positive Teilwirkungen keine erheblichen Schäden in Lieferketten, Ökosystemen, Gesellschaft oder Zukunft verdecken."
     },
     {
       "id": "nebenwirkungs-wechselwirkungs-und-rebound-analyse",
@@ -13726,27 +14180,6 @@
       ],
       "shortDefinition": "Netto-Wirkung bezeichnet die zusammengeführte Bewertung positiver und negativer Wirkungen unter Berücksichtigung von Wirkungsgrenzen, Datenqualität und Nichtkompensation.",
       "definition": "Netto-Wirkung bezeichnet die zusammengeführte Bewertung der positiven, negativen, neutralen und unsicheren Wirkungen eines Auslösers. In der WÖk ist sie keine einfache Rechenoperation und nicht positive Punkte minus negative Punkte. Systemgrenzen, Wirkungsräume, Datenqualität, zeitliche Wirkung, Nebenwirkungen, Rückkopplungen und nicht kompensierbare rote Linien müssen berücksichtigt werden."
-    },
-    {
-      "id": "nwi",
-      "label": "Netto-Wirkungs-Index (NWI)",
-      "canonicalLabel": "Netto-Wirkungs-Index (NWI)",
-      "slug": "nwi",
-      "url": "/begriffe/nwi/",
-      "aliases": [
-        "Netto-Wirkungs-Index (NWI)",
-        "NWI",
-        "Netto-Wirkungs-Index",
-        "Netto-Wirkungs-Index / NWI",
-        "Netto Wirkungs Index",
-        "Net Impact Index",
-        "operative Netto-Wirkungskennzahl",
-        "Wirkungsindex",
-        "WÖk-NWI",
-        "Netto-Wirkungskennzahl"
-      ],
-      "shortDefinition": "Der Netto-Wirkungs-Index (NWI) verdichtet geprüfte positive und negative operative Wirkungen unter Berücksichtigung von Mindestbedingungen, Verteilung, Zeit, Datenqualität und Nichtkompensation zu einer steuerungsfähigen Kennzahl.",
-      "definition": "Der Netto-Wirkungs-Index (NWI) ist eine Kennzahl für die operative Gesamtwirkung eines klar abgegrenzten Objekts oder Vorhabens. Seine Grundformel stellt gewichtete positive und negative Wirkungen gegenüber. Damit der Wert aussagekräftig ist, müssen Zielzustand, Referenz, Systemgrenze, Zeitraum, Zurechnung, Skala, Gewichte, Datenqualität, Unsicherheit und relevante Nebenwirkungen dokumentiert sein."
     },
     {
       "id": "nettokreditaufnahme",
@@ -14603,7 +15036,9 @@
       "slug": "oeffentliche-gueter",
       "url": "/begriffe/oeffentliche-gueter/",
       "aliases": [
-        "Öffentliche Güter"
+        "Öffentliche Güter",
+        "Öffentliches Gut",
+        "Public Good"
       ],
       "shortDefinition": "Öffentliche Güter sind Güter, von deren Nutzung niemand leicht ausgeschlossen werden kann und deren Nutzung andere kaum verringert.",
       "definition": "Öffentliche Güter sind Güter, von deren Nutzung niemand leicht ausgeschlossen werden kann und deren Nutzung andere kaum verringert."
@@ -15097,10 +15532,13 @@
       "slug": "outcome",
       "url": "/begriffe/outcome/",
       "aliases": [
-        "Outcome"
+        "Outcome",
+        "eingetretene Veränderung",
+        "Ergebnis bei Zielgruppen",
+        "Wirkungsebene"
       ],
       "shortDefinition": "Outcome bezeichnet die bei Zielgruppen oder Systemen eingetretene Veränderung und ist von Leistungserbringung und bloßem Output zu unterscheiden.",
-      "definition": "Outcome bezeichnet die bei Zielgruppen oder Systemen eingetretene Veränderung und ist von Leistungserbringung und bloßem Output zu unterscheiden."
+      "definition": "Outcomes sind Veränderungen, die nach oder durch eine Aktivität bei Betroffenen oder in einem relevanten System eintreten: etwa neues Wissen, verändertes Verhalten, bessere Gesundheit, mehr Teilhabe, höhere Sicherheit, ein veränderter Ressourcenverbrauch oder ein verändertes Vertrauen. Sie können kurzfristig oder mittelfristig sichtbar werden.\n\nOb eine beobachtete Veränderung tatsächlich der betrachteten Aktivität zuzurechnen ist, bleibt eine eigene Evidenzfrage. Baseline, Counterfactual, Kontribution, Attribution, Datenqualität und Nebenfolgen müssen je nach Anspruch geprüft werden."
     },
     {
       "id": "outcome-und-empfaengerlandkarte",
@@ -15145,10 +15583,13 @@
       "slug": "output",
       "url": "/begriffe/output/",
       "aliases": [
-        "Output"
+        "Output",
+        "Leistungsergebnis",
+        "direktes Ergebnis",
+        "unmittelbare Leistung"
       ],
       "shortDefinition": "Output ist die unmittelbar erbrachte Leistung oder Menge einer Maßnahme, etwa Teilnehmende, Beratungen oder gebaute Einheiten; er belegt noch keine Wirkung.",
-      "definition": "Output ist die unmittelbar erbrachte Leistung oder Menge einer Maßnahme, etwa Teilnehmende, Beratungen oder gebaute Einheiten; er belegt noch keine Wirkung."
+      "definition": "Output beschreibt, was unmittelbar produziert, bereitgestellt oder durchgeführt wurde. Dazu zählen beispielsweise gefertigte Güter, ausgeführte Beratungen, Kurse, Teilnehmende, erreichte Haushalte, Infrastruktur oder veröffentlichte Inhalte. Outputs lassen sich oft relativ leicht zählen oder dokumentieren.\n\nOutput kann eine notwendige Voraussetzung für Wirkung sein, ist aber im engeren WÖk-Sinn noch keine Wirkung. Erst wenn sich ein relevanter Zustand bei Menschen, Organisationen, Ökosystemen oder Systemen verändert, liegt mindestens ein Outcome vor."
     },
     {
       "id": "overton-fenster",
@@ -15238,6 +15679,21 @@
       ],
       "shortDefinition": "In einer parlamentarischen Demokratie ist das Parlament zentraler Ort demokratischer Gesetzgebung und Kontrolle der Regierung.",
       "definition": "In einer parlamentarischen Demokratie ist das Parlament zentraler Ort demokratischer Gesetzgebung und Kontrolle der Regierung."
+    },
+    {
+      "id": "parlamentarischer-beirat-nachhaltige-entwicklung",
+      "label": "Parlamentarischer Beirat für nachhaltige Entwicklung und Zukunftsfragen (PBnEZ)",
+      "canonicalLabel": "Parlamentarischer Beirat für nachhaltige Entwicklung und Zukunftsfragen (PBnEZ)",
+      "slug": "parlamentarischer-beirat-nachhaltige-entwicklung",
+      "url": "/begriffe/parlamentarischer-beirat-nachhaltige-entwicklung/",
+      "aliases": [
+        "Parlamentarischer Beirat für nachhaltige Entwicklung und Zukunftsfragen (PBnEZ)",
+        "PBnEZ",
+        "Parlamentarischer Beirat für nachhaltige Entwicklung",
+        "Parlamentarischer Beirat für nachhaltige Entwicklung und Zukunftsfragen"
+      ],
+      "shortDefinition": "Der PBnEZ ist ein Gremium des Deutschen Bundestages, das Nachhaltigkeit parlamentarisch begleitet und die Nachhaltigkeitsprüfung von Regelungsvorhaben kontrolliert.",
+      "definition": "Der Parlamentarische Beirat für nachhaltige Entwicklung und Zukunftsfragen begleitet die Nachhaltigkeitspolitik des Bundes im Deutschen Bundestag und befasst sich unter anderem mit der Nachhaltigkeitsprüfung von Regelungsvorhaben. Er steht neben der Regierungsgovernance der DNS und bildet eine parlamentarische Kontrollperspektive.\n\nDer Beirat darf nicht mit dem von der Wirkungsökonomie vorgeschlagenen Wirkungsrat gleichgesetzt werden. Aufgaben, Rechtsstellung und institutionelle Legitimation sind unterschiedlich."
     },
     {
       "id": "parteistaat",
@@ -15500,6 +15956,23 @@
       ],
       "shortDefinition": "Pflege als Wirkleistung beschreibt Pflege als Beitrag zu Würde, Autonomie, Beziehung, Sicherheit, Angehörigenentlastung und gesellschaftlicher Stabilität.",
       "definition": "Pflege als Wirkleistung bedeutet, Pflege nicht nur als Kostenstelle oder private Last zu betrachten. Pflege erzeugt Zustandsveränderungen: Schutz, Würde, Autonomie, Beziehung, Entlastung, Teilhabe, Gesundheitsstabilität und Vertrauen in gesellschaftliche Solidarität."
+    },
+    {
+      "id": "phineo-wirkungslogik",
+      "label": "PHINEO / PHINEO-Wirkungslogik",
+      "canonicalLabel": "PHINEO / PHINEO-Wirkungslogik",
+      "slug": "phineo-wirkungslogik",
+      "url": "/begriffe/phineo-wirkungslogik/",
+      "aliases": [
+        "PHINEO / PHINEO-Wirkungslogik",
+        "PHINEO",
+        "PHINEO Wirkung",
+        "PHINEO Wirkungslogik",
+        "PHINEO IOOI",
+        "Wirkungsökonomie PHINEO"
+      ],
+      "shortDefinition": "PHINEO ist ein etablierter Akteur für Wirkungsorientierung, Wirkungsmanagement und Wirkungsanalyse. Seine Wirkungslogik arbeitet unter anderem mit Wirkungszielen und der IOOI-Abfolge aus Input, Output, Outcome und Impact, um Wirkpfade von Projekten, Organisationen und Investitionen zu strukturieren und zu überprüfen. Die Wirkungsökonomie verwendet solche Ansätze als wichtige methodische Bausteine und ordnet sie in eine systemische Bewertungs- und Steuerungsarchitektur ein.",
+      "definition": "PHINEO arbeitet daran, gesellschaftliche Wirkung planbar, nachvollziehbar und verbesserbar zu machen. Dazu gehören Wirkungsziele, Wirkungslogiken, Indikatoren, Wirkungsanalyse und lernorientierte Steuerung. Die IOOI-Logik unterscheidet Ressourcen und Leistungen von Veränderungen bei Zielgruppen und breiteren gesellschaftlichen Wirkungen. Sie hilft, Annahmen sichtbar zu machen und nicht schon die Durchführung oder Reichweite mit Wirkung zu verwechseln.\n\nPHINEO und die Wirkungsökonomie verwenden dabei teilweise dieselben Begriffe, jedoch nicht immer in identischer Bedeutung. PHINEO betrachtet Wirkung überwiegend aus der Perspektive einer Intervention und ihrer angestrebten Veränderungen bei Zielgruppen oder auf gesellschaftlicher Ebene. Die WÖk definiert Wirkung allgemeiner als tatsächliche Zustandsveränderung: Sie kann beabsichtigt oder unbeabsichtigt, positiv, negativ oder neutral sein und auch außerhalb eines Projekts auftreten.\n\nDie Arbeit von PHINEO umfasst neben der klassischen Wirkungsorientierung auch Organisationen, öffentliche Hand, Unternehmen, Impact Investing und gesellschaftliche Transformation. PHINEO ist für die Wirkungsökonomie deshalb ein Anschlussbegriff, kein Gegenbegriff: Beide Ansätze teilen das Interesse, Wirkung nicht dem Zufall zu überlassen. Die WÖk ergänzt diese Management- und Entscheidungslogik um eine gemeinsame Systemarchitektur für Referenzrahmen, Bewertung, Schutzgrenzen, Netto-Wirkung und institutionalisierte Rückkopplung."
     },
     {
       "id": "photoelektrischer-effekt",
@@ -16198,6 +16671,19 @@
       "definition": "Preise, Gebühren, Boni, Steuern, Vergütung, Defaults und nicht monetäre Signale so gestalten, dass sie Wirkung sichtbar machen und keine schädlichen Nebenanreize erzeugen."
     },
     {
+      "id": "preisvollstaendigkeit",
+      "label": "Preisvollständigkeit",
+      "canonicalLabel": "Preisvollständigkeit",
+      "slug": "preisvollstaendigkeit",
+      "url": "/begriffe/preisvollstaendigkeit/",
+      "aliases": [
+        "Preisvollständigkeit",
+        "Preis-Vollständigkeit"
+      ],
+      "shortDefinition": "Preisvollständigkeit bezeichnet die materielle Vollständigkeit der Wirkungsrückkopplung in Preis, Steuer, Haftung, Rückstellung, Versicherung, Marktzugang oder Wirkungsgrenze.",
+      "definition": "Preisvollständigkeit verlangt nicht, jede Wirkung zu monetarisieren. Je nach Wirkungsart können Preise, Steuern, Haftung, Rückstellungen, Versicherung, Marktzugang oder verbindliche Grenzen die angemessene Form der Rückkopplung sein.\n\nSie ist damit kein technischer Anspruch auf eine perfekte Zahl, sondern ein Prüfbegriff für die Frage, ob relevante Folgen in der Entscheidung und ihre Verantwortung zurückwirken."
+    },
+    {
       "id": "pressefreiheit",
       "label": "Pressefreiheit",
       "canonicalLabel": "Pressefreiheit",
@@ -16253,7 +16739,8 @@
       "slug": "principal-agent-problem",
       "url": "/begriffe/principal-agent-problem/",
       "aliases": [
-        "Principal-Agent-Problem"
+        "Principal-Agent-Problem",
+        "Principal-Agent"
       ],
       "shortDefinition": "Das Principal-Agent-Problem beschreibt Zielkonflikte und Informationsasymmetrien zwischen Auftraggeber:innen und Beauftragten.",
       "definition": "Das Principal-Agent-Problem beschreibt Zielkonflikte und Informationsasymmetrien zwischen Auftraggeber:innen und Beauftragten."
@@ -16406,6 +16893,21 @@
       ],
       "shortDefinition": "Produkt-, Umwelt- und Kreislauflabels informieren über bestimmte Eigenschaften, Standards oder Lebenszyklusaspekte von Produkten, ersetzen aber keine Gesamtbewertung.",
       "definition": "Produkt-, Umwelt- und Kreislauflabels informieren über bestimmte Eigenschaften, Standards oder Lebenszyklusaspekte von Produkten, ersetzen aber keine Gesamtbewertung."
+    },
+    {
+      "id": "produkt-id",
+      "label": "Produkt-ID",
+      "canonicalLabel": "Produkt-ID",
+      "slug": "produkt-id",
+      "url": "/begriffe/produkt-id/",
+      "aliases": [
+        "Produkt-ID",
+        "Produktidentität",
+        "Objekt-ID",
+        "Produkt-/Objekt-ID"
+      ],
+      "shortDefinition": "Eine Produkt-ID identifiziert das konkrete Produkt, Modell oder andere Steuerobjekt, auf das Wirkungsdaten und Rechtsfolgen bezogen werden.",
+      "definition": "Produkt-ID ist im WStG 3.0 der Sammelbegriff für eine eindeutige Produkt- oder Objektkennung, etwa eine DPP-, Register-, Steuer-, EAN-/GTIN- oder sonstige Objektkennung. Sie verbindet einen konkreten Gegenstand mit Datenpunkten und Nachweisen. Die Produkt-ID sagt nicht, welche Wirkung gemessen wird, und ist weder eine Personen-ID noch selbst eine Bewertung."
     },
     {
       "id": "produkt-markt-wirkungs-fit",
@@ -17532,6 +18034,21 @@
       "definition": "Redox-Flow-Batterien speichern Energie in flüssigen Elektrolyten, die durch eine elektrochemische Zelle gepumpt werden."
     },
     {
+      "id": "referenzrahmen",
+      "label": "Referenzrahmen",
+      "canonicalLabel": "Referenzrahmen",
+      "slug": "referenzrahmen",
+      "url": "/begriffe/referenzrahmen/",
+      "aliases": [
+        "Referenzrahmen",
+        "Bewertungsrahmen",
+        "normativer Referenzrahmen",
+        "Wirkungsmaßstab"
+      ],
+      "shortDefinition": "Ein Referenzrahmen legt offen, anhand welcher Ziele, Grenzen, Benchmarks oder gesellschaftlichen Normen eine Wirkung bewertet wird.",
+      "definition": "Ein Referenzrahmen unterscheidet die empirische Frage, was sich verändert hat, von der normativen Frage, wie diese Veränderung einzuordnen ist. Er kann Ziele, Rechte, Grenzen, Benchmarks, Indikatoren oder fachliche Schwellen enthalten. Ohne Referenzrahmen lässt sich feststellen, dass etwas wirkt, aber nicht transparent begründen, warum diese Wirkung als positiv oder negativ gelten soll.\n\nIn der Wirkungsökonomie bilden Agenda 2030, die SDGs und SDG+ den primären Orientierungsrahmen. Je nach Gegenstand können Grund- und Menschenrechte, Staatsziele, gesetzliche Grenzwerte, wissenschaftliche Schwellen und fachliche Benchmarks die Anwendung konkretisieren. Diese ergänzenden Referenzen ersetzen nicht die Offenlegung des übergeordneten Maßstabs."
+    },
+    {
       "id": "referenzrahmen-und-standardmapping",
       "label": "Referenzrahmen- und Standardmapping",
       "canonicalLabel": "Referenzrahmen- und Standardmapping",
@@ -17906,6 +18423,20 @@
       ],
       "shortDefinition": "Reparatur stellt die Nutzungsfähigkeit eines beschädigten oder defekten Produkts wieder her.",
       "definition": "Reparatur stellt die Nutzungsfähigkeit eines beschädigten oder defekten Produkts wieder her."
+    },
+    {
+      "id": "reparaturfaehigkeit",
+      "label": "Reparaturfähigkeit",
+      "canonicalLabel": "Reparaturfähigkeit",
+      "slug": "reparaturfaehigkeit",
+      "url": "/begriffe/reparaturfaehigkeit/",
+      "aliases": [
+        "Reparaturfähigkeit",
+        "institutionelle Reparaturfähigkeit",
+        "soziale Reparaturfähigkeit"
+      ],
+      "shortDefinition": "Reparaturfähigkeit bezeichnet die Fähigkeit eines Systems, Fehler, Schäden und Konflikte nachvollziehbar zu korrigieren, wiedergutzumachen und eine begründete Rückkehr zu ermöglichen.",
+      "definition": "Reparaturfähigkeit umfasst Korrektur, Wiedergutmachung, Beschwerdewege, Rehabilitationspfade und Lernen aus Fehlern. Sie verlangt weder automatische Vergebung noch eine Verharmlosung von Vorsatz; Maßstab bleiben Evidenz, Verhältnismäßigkeit, Rechtsschutz und der Schutz Betroffener."
     },
     {
       "id": "reparaturschulden",
@@ -18343,6 +18874,20 @@
       ],
       "shortDefinition": "Die Reverse Merit Order ist das Bewertungsprinzip der Wirkungsökonomie, nach dem das schwächste relevante Wirkungsfeld die Gesamtbewertung begrenzt und schwere negative Wirkungen nicht durch positive Wirkungen überdeckt werden dürfen.",
       "definition": "Reverse Merit Order bezeichnet in der Wirkungsökonomie ein Bewertungsprinzip, bei dem die Gesamtbewertung eines Produkts, einer Tätigkeit, eines Unternehmens oder einer Maßnahme durch das schwächste relevante Wirkungsfeld begrenzt wird. Ein schwerer negativer Effekt darf nicht durch positive Effekte in anderen Bereichen neutralisiert oder überdeckt werden."
+    },
+    {
+      "id": "reziprozitaet",
+      "label": "Reziprozität",
+      "canonicalLabel": "Reziprozität",
+      "slug": "reziprozitaet",
+      "url": "/begriffe/reziprozitaet/",
+      "aliases": [
+        "Reziprozität",
+        "Gegenseitigkeit",
+        "reciprocity"
+      ],
+      "shortDefinition": "Reziprozität bezeichnet die Erwartung und Praxis, auf Beiträge, Kooperation oder Schädigung anderer in einer nachvollziehbaren Weise zu reagieren.",
+      "definition": "Positive Reziprozität kann verlässliche Kooperation durch Anerkennung und Erwiderung stärken. Negative Reziprozität kann Regelverletzungen begrenzen, wenn sie evidenzbasiert, verhältnismäßig und rechtsgebunden bleibt. Ohne solche Grenzen kann Gegenseitigkeit in Vergeltung, Ausschluss oder Eskalation kippen.\n\nReziprozität ist daher weder eine Pflicht zur Gleichbehandlung jeder Situation noch eine Rechtfertigung privater Selbstjustiz."
     },
     {
       "id": "rezyklatanteil",
@@ -19241,10 +19786,16 @@
       "slug": "scorecard",
       "url": "/begriffe/scorecard/",
       "aliases": [
-        "Scorecard"
+        "Scorecard",
+        "Scorecards",
+        "Wirkungsscorecard",
+        "Wirkungs-Scorecard",
+        "Wirkungsscorecards",
+        "Wirkungs-Scorecards",
+        "Impact Scorecard"
       ],
-      "shortDefinition": "Eine Scorecard strukturiert Wirkungsfelder, Indikatoren, Datenqualität und Bewertung.",
-      "definition": "Eine Scorecard ist die nachvollziehbare Bewertungsstruktur für ein Objekt, etwa ein Produkt, eine Investition, ein Programm oder eine Organisation. Sie ordnet Wirkungsfelder, WÖk-IDs, Indikatoren, Systemgrenzen, Benchmarks, Datenqualität und Regeln für die Bewertung. Eine Scorecard ist keine bloße Checkliste und keine Durchschnittsformel."
+      "shortDefinition": "Eine Scorecard oder Wirkungsscorecard ist ein transparentes Bewertungsraster, das relevante Wirkungsfelder, Indikatoren, Datenquellen, Datenqualität, Grenzen und Einzelergebnisse so verbindet, dass Entscheidungen prüfbar werden.",
+      "definition": "Scorecards strukturieren die Bewertung eines Gegenstands – etwa eines Produkts, einer Organisation, Investition, Maßnahme oder eines öffentlichen Programms. Sie legen offen, was betrachtet wird, welche Systemgrenze und welcher Zeitraum gelten, welche Indikatoren und Vergleichsmaßstäbe verwendet werden, wie Datenqualität und Unsicherheit einfließen und welche Schutzgrenzen eine Gesamtbewertung begrenzen. Eine Wirkungsscorecard bewertet Eigenschaften, Entscheidungen oder Systeme; sie bewertet keine Menschen."
     },
     {
       "id": "sdg-plus",
@@ -19482,6 +20033,19 @@
       ],
       "shortDefinition": "Erfolg wird eher sich selbst zugeschrieben, Misserfolg eher Umständen oder anderen.",
       "definition": "Der Self-Serving Bias beeinflusst Rechenschaft, Organisationslernen und politische Verantwortung. Er erschwert Wirkungsrückkopplung, wenn Akteure positive Wirkung vereinnahmen und negative Wirkung externalisieren."
+    },
+    {
+      "id": "senkenallmende",
+      "label": "Senkenallmende",
+      "canonicalLabel": "Senkenallmende",
+      "slug": "senkenallmende",
+      "url": "/begriffe/senkenallmende/",
+      "aliases": [
+        "Senkenallmende",
+        "Senken-Allmende"
+      ],
+      "shortDefinition": "Eine Senkenallmende ist eine gemeinsame, begrenzte Aufnahme-, Puffer- oder Regenerationsleistung eines natürlichen oder gesellschaftlichen Systems.",
+      "definition": "Beispiele sind die atmosphärische Aufnahme zusätzlicher Treibhausgase, die Aufnahme von Nähr- oder Schadstoffen in Gewässern und die Regenerationsfähigkeit von Böden. Der Begriff benennt nicht eine beliebige Umweltleistung, sondern eine reale begrenzte Aufnahme- oder Regenerationskapazität.\n\nWird diese Kapazität überbeansprucht, können die Folgen räumlich, zeitlich und sozial weit über die unmittelbar Handelnden hinausreichen."
     },
     {
       "id": "sensemaking",
@@ -19983,6 +20547,19 @@
       "definition": "Soziale Staatsschuld entsteht, wenn Bildung, Pflege, Wohnen, Gesundheit, Teilhabe oder soziale Stabilität so vernachlässigt werden, dass spätere Gesellschaften höhere Lasten tragen."
     },
     {
+      "id": "soziales-dilemma",
+      "label": "Soziales Dilemma",
+      "canonicalLabel": "Soziales Dilemma",
+      "slug": "soziales-dilemma",
+      "url": "/begriffe/soziales-dilemma/",
+      "aliases": [
+        "Soziales Dilemma",
+        "soziale Dilemmata"
+      ],
+      "shortDefinition": "Ein soziales Dilemma liegt vor, wenn individuell nachvollziehbare Handlungsanreize zu einem Ergebnis führen können, das für die Beteiligten gemeinsam schlechter ist.",
+      "definition": "Soziale Dilemmata sind keine Aussage darüber, dass Menschen egoistisch oder unkooperativ sein müssten. Auch vorsichtige, faire oder kooperationsbereite Menschen können scheitern, wenn Verhalten anderer unsicher bleibt, Ausbeutung droht oder verlässliche Regeln fehlen. Dilemmata können Übernutzung, Unterversorgung, Verteilungs-, Macht- oder Informationsprobleme betreffen."
+    },
+    {
       "id": "sozialfinanzierung",
       "label": "Sozialfinanzierung",
       "canonicalLabel": "Sozialfinanzierung",
@@ -20277,6 +20854,35 @@
       ],
       "shortDefinition": "Staat 2035 beschreibt ein Zukunftsbild, in dem der Staat nicht zentral plant, sondern Wirkung rechtsstaatlich, transparent und demokratisch rückkoppelt: in Haushalten, Steuern, Beschaffung, Daten, Rechtsschutz und öffentlicher Infrastruktur.",
       "definition": "Staat 2035 bezeichnet das wirkungsökonomische Zukunftsbild eines demokratischen, rechtsstaatlichen und lernfähigen Staates, der nicht länger primär Aktivität, Ausgaben, Ressortlogiken und Reparaturprogramme verwaltet, sondern Wirkung systematisch in Entscheidungen zurückführt."
+    },
+    {
+      "id": "staatliche-nachhaltigkeitsarchitektur",
+      "label": "Staatliche Nachhaltigkeitsarchitektur",
+      "canonicalLabel": "Staatliche Nachhaltigkeitsarchitektur",
+      "slug": "staatliche-nachhaltigkeitsarchitektur",
+      "url": "/begriffe/staatliche-nachhaltigkeitsarchitektur/",
+      "aliases": [
+        "Staatliche Nachhaltigkeitsarchitektur",
+        "staatliche Nachhaltigkeits- und Folgenprüfungsarchitektur",
+        "staatliche Nachhaltigkeitsarchitektur des Bundes",
+        "Nachhaltigkeitsgovernance des Bundes"
+      ],
+      "shortDefinition": "Die staatliche Nachhaltigkeitsarchitektur des Bundes verbindet DNS, Ziele und Indikatoren, ressortübergreifende Governance, Gesetzesfolgen- und Nachhaltigkeitsprüfung, eNAP/eGFA und Monitoring.",
+      "definition": "Deutschland verfügt über eine mehrschichtige Nachhaltigkeits- und Folgenprüfungsarchitektur. Dazu gehören die Deutsche Nachhaltigkeitsstrategie als nationaler Ziel- und Managementrahmen, der Staatssekretärsausschuss und weitere Governance-Akteure, DNS-Indikatoren und Destatis-Monitoring sowie die Gesetzesfolgen- und Nachhaltigkeitsprüfung nach GGO mit eNAP/eGFA als digitaler Unterstützung.\n\nDiese Architektur ist weder bloß Kommunikation noch identisch mit einer vollständigen Kausal- oder Wirkungsanalyse jedes Einzelvorhabens. Sie muss bei jeder fairen Abgrenzung der Wirkungsökonomie als bestehendes institutionelles System anerkannt werden."
+    },
+    {
+      "id": "state-gfa-enap-benchmark",
+      "label": "Staatlicher GFA-/eNAP-Benchmark",
+      "canonicalLabel": "Staatlicher GFA-/eNAP-Benchmark",
+      "slug": "state-gfa-enap-benchmark",
+      "url": "/begriffe/state-gfa-enap-benchmark/",
+      "aliases": [
+        "Staatlicher GFA-/eNAP-Benchmark",
+        "GFA-eNAP-Benchmark",
+        "staatlicher GFA/eNAP-Benchmark"
+      ],
+      "shortDefinition": "staatlicher GFA-/eNAP-Benchmark ist der WÖk-Datenlayer, der bei geeigneten Bundesregelungsvorhaben die öffentlich belegbare staatliche GFA-/Nachhaltigkeitseinschätzung getrennt von der unabhängigen WÖk-Analyse dokumentiert.",
+      "definition": "Der Layer erfasst nur, was aus amtlichen Quellen für ein konkretes Bundesregelungsvorhaben öffentlich festgestellt werden kann: Umfang der GFA/Nachhaltigkeitsprüfung, DNS-/SDG-Bezüge, positive und negative Aspekte, Zielkonflikte, Langfrist- und Drittstaatenbezüge sowie den Dokumentationsstatus. Anschließend werden Konvergenz, zusätzliche WÖk-Befunde und echte Widersprüche getrennt ausgewiesen.\n\nEine öffentliche Nachhaltigkeitsdarstellung ist nicht automatisch ein öffentlicher eNAP-Rohexport. Fehlt ein solcher Nachweis, bleibt der eNAP-Dokumentationsstatus offen beziehungsweise öffentlich nicht belegt; er wird niemals automatisch zu nicht geprüft."
     },
     {
       "id": "staatsdelegitimierung",
@@ -21252,6 +21858,20 @@
       "definition": "Interventionspunkte nach Tiefe, Reichweite, Umsetzbarkeit, Risiken und Lernpotenzial identifizieren und nicht mit bloß zentralen Variablen verwechseln."
     },
     {
+      "id": "systemisch-positives-summenspiel",
+      "label": "Systemisch positives Summenspiel",
+      "canonicalLabel": "Systemisch positives Summenspiel",
+      "slug": "systemisch-positives-summenspiel",
+      "url": "/begriffe/systemisch-positives-summenspiel/",
+      "aliases": [
+        "Systemisch positives Summenspiel",
+        "systemisch positives Plus-Summen-Spiel",
+        "positives Summenspiel"
+      ],
+      "shortDefinition": "Ein systemisch positives Summenspiel liegt vor, wenn Kooperation die positive Netto-Wirkung für die Beteiligten und das relevante Gesamtsystem erhöht, ohne nicht getragene Schäden auf Dritte, Ökosysteme oder zukünftige Generationen zu verlagern und ohne Wirkungsgrenzen zu verletzen.",
+      "definition": "Kooperation ist nicht automatisch positiv. Eine Gruppe kann intern gewinnen und zugleich Kosten auf andere verlagern oder demokratische, soziale oder ökologische Grenzen verletzen.\n\nDer systemische Zusatz verlangt deshalb, den relevanten Wirkungsraum und die ausgelagerten Folgen mitzudenken. Positive Netto-Wirkung bleibt die Zielgröße, nicht bloße Gruppensynergie oder Reichweite."
+    },
+    {
       "id": "systemische-kohaerenz",
       "label": "Systemische Kohärenz",
       "canonicalLabel": "Systemische Kohärenz",
@@ -21262,6 +21882,20 @@
       ],
       "shortDefinition": "Systemische Kohärenz beschreibt den Zustand, in dem Regeln, Erfahrungen, Informationen, Institutionen und Handlungsoptionen so zusammenpassen, dass Orientierung und Vertrauen möglich werden.",
       "definition": "Systemische Kohärenz entsteht, wenn Menschen nicht nur einzelne Fakten erhalten, sondern den Zusammenhang zwischen Ziel, Verfahren, Entscheidung, Wirkung und Korrekturmöglichkeit nachvollziehen können."
+    },
+    {
+      "id": "systemische-kooperation",
+      "label": "Systemische Kooperation",
+      "canonicalLabel": "Systemische Kooperation",
+      "slug": "systemische-kooperation",
+      "url": "/begriffe/systemische-kooperation/",
+      "aliases": [
+        "Systemische Kooperation",
+        "systemische Kooperation",
+        "kooperative Wirkungsordnung"
+      ],
+      "shortDefinition": "Systemische Kooperation bezeichnet Zusammenarbeit, die im relevanten Wirkungsraum positive Netto-Wirkung ermöglicht und dabei Rechte Betroffener, faire Lastenteilung und Schutzgrenzen wahrt.",
+      "definition": "Kooperation ist nicht automatisch positiv: Gruppen können interne Vorteile erzeugen und zugleich Dritte ausbeuten, Kosten verlagern oder Macht abschotten. Systemische Kooperation verlangt deshalb transparente Regeln, Beteiligung, Konfliktlösung, Korrektur und einen prüfbaren Bezug auf Mensch, Planet und Demokratie."
     },
     {
       "id": "systemische-risikointelligenz",
@@ -21776,6 +22410,21 @@
       ],
       "shortDefinition": "Theokratie beschreibt eine Herrschaftsform, in der religiöse Autorität und staatliche Macht eng verbunden oder religiös legitimiert sind.",
       "definition": "Theokratie beschreibt eine Herrschaftsform, in der religiöse Autorität und staatliche Macht eng verbunden oder religiös legitimiert sind."
+    },
+    {
+      "id": "theory-of-change",
+      "label": "Theory of Change",
+      "canonicalLabel": "Theory of Change",
+      "slug": "theory-of-change",
+      "url": "/begriffe/theory-of-change/",
+      "aliases": [
+        "Theory of Change",
+        "ToC",
+        "Theorie des Wandels",
+        "Veränderungstheorie"
+      ],
+      "shortDefinition": "Eine Theory of Change beschreibt, warum und unter welchen Bedingungen eine Intervention zu einer angestrebten Veränderung führen soll.",
+      "definition": "Eine Theory of Change macht die Annahmen eines Wirkpfads explizit: Welche Aktivität soll über welchen Mechanismus bei welchen Gruppen welche Veränderung auslösen? Welche Voraussetzungen müssen gelten, welche Faktoren im Umfeld beeinflussen den Pfad und welche Risiken oder Wechselwirkungen sind zu beachten?\n\nSie ist umfassender als eine bloße Abfolge von Input, Output, Outcome und Impact. Zugleich bleibt sie zunächst ein plausibles Erklärungs- und Planungsmodell, bis ihre Annahmen mit Daten geprüft sind."
     },
     {
       "id": "thermal-runaway",
@@ -22350,6 +22999,20 @@
       "definition": "Tritium ist ein radioaktives Wasserstoffisotop. In Energie- und Fusionsdebatten ist wirkungsökonomisch zu prüfen, welche Risiken, Verfügbarkeiten, Entsorgungsfragen, Kosten und Alternativen bestehen."
     },
     {
+      "id": "trittbrettfahren",
+      "label": "Trittbrettfahren",
+      "canonicalLabel": "Trittbrettfahren",
+      "slug": "trittbrettfahren",
+      "url": "/begriffe/trittbrettfahren/",
+      "aliases": [
+        "Trittbrettfahren",
+        "Trittbrettfahrer",
+        "Free Riding"
+      ],
+      "shortDefinition": "Trittbrettfahren bedeutet, von einer gemeinsamen Leistung zu profitieren, ohne einen angemessenen Beitrag zu ihrer Bereitstellung oder ihrem Erhalt zu leisten.",
+      "definition": "Das Muster entsteht besonders bei öffentlichen Gütern, deren Nutzen sich nicht zuverlässig auf Beitragsleistende begrenzen lässt. Es ist keine pauschale Schuldzuweisung: Ob ein Beitrag angemessen ist, hängt von Fähigkeiten, Zugang, Belastungen und institutionellen Regeln ab."
+    },
+    {
       "id": "trittbrettfahrerproblem",
       "label": "Trittbrettfahrerproblem",
       "canonicalLabel": "Trittbrettfahrerproblem",
@@ -22813,6 +23476,20 @@
       "definition": "Die Unternehmertypen nach Jochen Röpke sind eine funktionale Typologie von Unternehmertum. Sie beschreibt, ob ein Akteur bestehende Ressourcen effizient verwaltet, Markt- und Bewertungsunterschiede nutzt, neue Kombinationen durchsetzt oder die eigene Kompetenz- und Lernfähigkeit evolutorisch weiterentwickelt."
     },
     {
+      "id": "unvollstaendiger-preis",
+      "label": "Unvollständiger Preis",
+      "canonicalLabel": "Unvollständiger Preis",
+      "slug": "unvollstaendiger-preis",
+      "url": "/begriffe/unvollstaendiger-preis/",
+      "aliases": [
+        "Unvollständiger Preis",
+        "unvollständige Preise",
+        "Preisunvollständigkeit"
+      ],
+      "shortDefinition": "Ein unvollständiger Preis ist ein Marktpreis, der materiell relevante ökologische, soziale, gesundheitliche, demokratische oder zukünftige Wirkungen nicht ausreichend als Entscheidungssignal enthält.",
+      "definition": "Ein Preis kann private Kosten korrekt abbilden und gesellschaftlich dennoch irreführend sein. Unvollständigkeit bedeutet deshalb nicht zwingend mathematisch falsch, sondern unzureichend als Signal für die relevante Wirkungs- und Risikolage.\n\nDer Begriff macht keine Aussage darüber, dass jede Wirkung in Geld ausgedrückt werden muss. Manche Wirkungen brauchen andere Formen der Rückkopplung oder klare Grenzen."
+    },
+    {
       "id": "upcycling",
       "label": "Upcycling",
       "canonicalLabel": "Upcycling",
@@ -22896,6 +23573,23 @@
       ],
       "shortDefinition": "Das Value Proposition Canvas ist ein strategisches Werkzeug, das Kundensegmente mit Nutzenversprechen verbindet. Es unterscheidet typischerweise Jobs, Pains und Gains auf Kundenseite sowie Produkte, Pain Relievers und Gain Creators auf Angebotsseite.",
       "definition": "Das Value Proposition Canvas ist ein strategisches Werkzeug, das Kundensegmente mit Nutzenversprechen verbindet. Es unterscheidet typischerweise Jobs, Pains und Gains auf Kundenseite sowie Produkte, Pain Relievers und Gain Creators auf Angebotsseite."
+    },
+    {
+      "id": "value-based-pricing",
+      "label": "Value-based Pricing",
+      "canonicalLabel": "Value-based Pricing",
+      "slug": "value-based-pricing",
+      "url": "/begriffe/value-based-pricing/",
+      "aliases": [
+        "Value-based Pricing",
+        "Value-Based Pricing",
+        "Value Based Pricing",
+        "Value Pricing",
+        "wertbasiertes Pricing",
+        "kundennutzenbasiertes Pricing"
+      ],
+      "shortDefinition": "Value-based Pricing ist eine Preisstrategie, bei der sich der Preis vor allem am nachvollziehbaren wirtschaftlichen Nutzen einer Leistung für den jeweiligen Kunden orientiert, nicht allein an Aufwand, Kosten, Marge oder Wettbewerb.",
+      "definition": "Value-based Pricing fragt zuerst, welche ökonomisch relevante Zustandsveränderung ein Produkt oder eine Dienstleistung beim Kunden ermöglicht: etwa vermiedene Kosten, ein zusätzlicher Deckungsbeitrag, ein reduziertes Risiko, höhere Qualität oder eine kürzere Durchlaufzeit. Der Preis wird anschließend innerhalb eines transparenten, verhandelten Korridors an diesem Kundenwert ausgerichtet. Deshalb kann dieselbe Leistung für verschiedene Kunden unterschiedlich viel wert sein.\n\nDer errechnete Kundenwert ist kein Selbstbeweis. Er braucht einen Ausgangszustand, einen Ziel- oder Vergleichszustand, einen Zeitraum, eine plausible Gegenhypothese und eine nachvollziehbare Zurechnung. Erwartungen oder Vertriebsannahmen sind zunächst Wertpotenzial, nicht bereits realisierter Kundenwert."
     },
     {
       "id": "varietaet",
@@ -23029,6 +23723,20 @@
       ],
       "shortDefinition": "Verbrenneraus bezeichnet die politische Debatte um neue Pkw mit Verbrennungsmotor nach 2035; wirkungsökonomisch zählt der Lebenszyklus- und Infrastrukturvergleich.",
       "definition": "Das sogenannte Verbrenneraus ist in der WÖk keine moralische Bewertung eines Motors, sondern eine Wirkungsfrage: Welche Antriebstechnologie erzeugt unter realen Bedingungen die bessere Netto-Wirkung?"
+    },
+    {
+      "id": "verfahrensgerechtigkeit",
+      "label": "Verfahrensgerechtigkeit",
+      "canonicalLabel": "Verfahrensgerechtigkeit",
+      "slug": "verfahrensgerechtigkeit",
+      "url": "/begriffe/verfahrensgerechtigkeit/",
+      "aliases": [
+        "Verfahrensgerechtigkeit",
+        "prozedurale Gerechtigkeit",
+        "procedural justice"
+      ],
+      "shortDefinition": "Verfahrensgerechtigkeit bezeichnet die Qualität eines Entscheidungs- oder Prüfverfahrens, in dem Regeln nachvollziehbar sind, Betroffene gehört werden, Gründe offengelegt und Fehler wirksam korrigiert werden können.",
+      "definition": "Ein Ergebnis kann als ungünstig erlebt werden und dennoch verfahrensgerecht zustande kommen, wenn Zuständigkeiten, Maßstäbe, Evidenz, Beteiligung und Beschwerdewege transparent sind. Umgekehrt ersetzt ein beliebtes Ergebnis kein faires Verfahren.\n\nVerfahrensgerechtigkeit umfasst insbesondere angemessene Beteiligung, unabhängige Prüfung, Verhältnismäßigkeit, Begründung, Datenschutz und Rechtsschutz. Sie ergänzt Verteilungs- und Ergebnisfragen, ersetzt sie aber nicht."
     },
     {
       "id": "verfassung",
@@ -23357,6 +24065,19 @@
       ],
       "shortDefinition": "Vertrauen ist ein sozialer, institutioneller und demokratischer Zustand, in dem Menschen, Gruppen oder Organisationen erwarten können, dass Regeln gelten, Verfahren fair sind, Macht kontrolliert wird, Fehler korrigierbar bleiben und Institutionen nicht nur einzelnen Interessen dienen.",
       "definition": "Vertrauen ist ein sozialer, institutioneller und demokratischer Systemzustand. Es entsteht durch Wahrhaftigkeit, Rechtsstaatlichkeit, Transparenz, Teilhabe, Berechenbarkeit, Korrekturfähigkeit und erlebte Wirkung. Vertrauen ist relational und nicht automatisch positiv."
+    },
+    {
+      "id": "vertrauensallmende",
+      "label": "Vertrauensallmende",
+      "canonicalLabel": "Vertrauensallmende",
+      "slug": "vertrauensallmende",
+      "url": "/begriffe/vertrauensallmende/",
+      "aliases": [
+        "Vertrauensallmende",
+        "Vertrauens-Allmende"
+      ],
+      "shortDefinition": "Die Vertrauensallmende ist der gemeinsam erzeugte, regenerative Bestand an Verlässlichkeit, Berechenbarkeit und institutioneller Glaubwürdigkeit, der Kooperation und gesellschaftliche Handlungsfähigkeit ermöglicht.",
+      "definition": "Vertrauen ist keine klassische rivalisierende Common-Pool-Ressource. Der Begriff verwendet Allmende als WÖk-Analogie für eine gemeinsame relationale Infrastruktur, die Kooperation erleichtert und durch Missbrauch, Intransparenz oder pauschalen Verdacht geschwächt werden kann.\n\nVertrauen kann wachsen, wenn Regeln verständlich, Verfahren fair, Korrekturen möglich und Daten nachvollziehbar sind. Es ersetzt weder Prüfung noch Rechtsschutz."
     },
     {
       "id": "vertrauensverschiebung",
@@ -23866,7 +24587,10 @@
       "slug": "wechselwirkung",
       "url": "/begriffe/wechselwirkung/",
       "aliases": [
-        "Wechselwirkung"
+        "Wechselwirkung",
+        "Interaktionseffekt",
+        "gegenseitige Beeinflussung",
+        "Systemwechselwirkung"
       ],
       "shortDefinition": "Wechselwirkung bezeichnet allgemein, dass Systeme, Akteure oder Zustände nicht isoliert bleiben, sondern aufeinander einwirken und sich gegenseitig verändern.",
       "definition": "Wechselwirkung bezeichnet allgemein, dass Systeme, Akteure oder Zustände nicht isoliert bleiben, sondern aufeinander einwirken und sich gegenseitig verändern."
@@ -24267,10 +24991,13 @@
       "url": "/begriffe/wirkmechanismus/",
       "aliases": [
         "Wirkmechanismus",
+        "Wirkungsmechanik",
+        "kausaler Mechanismus",
+        "Mechanismus des Wirkpfads",
         "Wirkungsmechanismus"
       ],
-      "shortDefinition": "Ein Wirkmechanismus beschreibt, wie ein Auslöser über Bedingungen, Akteure und Rückkopplungen Wirkung erzeugen kann.",
-      "definition": "Wirkmechanismen verbinden Wirkstoff-Analogie, Wirkungspotenzial, Wirkpfade, Resonanzräume und tatsächliche Zustandsveränderungen."
+      "shortDefinition": "Ein Wirkmechanismus beschreibt, wie eine Wirkung entstehen soll oder entstehen kann.",
+      "definition": "Wirkmechanismen beschreiben die vermuteten oder empirisch untersuchten Prozesse zwischen Auslöser und Zustandsveränderung. Eine Preisänderung kann Kaufverhalten verändern, ein Algorithmus bestimmte Inhalte verstärken, eine Steuerdifferenz Lieferantenauswahl beeinflussen oder Desinformation Vertrauen schwächen.\n\nEin plausibler Mechanismus beweist nicht, dass die Wirkung in der erwarteten Stärke, Richtung oder bei den erwarteten Gruppen eintritt. Für starke Kausalaussagen braucht es passende Evidenz, eine klare Systemgrenze und die Prüfung alternativer Erklärungen."
     },
     {
       "id": "wirkmechanismus-canvas",
@@ -24342,10 +25069,11 @@
       "url": "/begriffe/wirkstoff/",
       "aliases": [
         "Wirkstoff",
-        "gesellschaftlicher Wirkstoff"
+        "gesellschaftlicher Wirkstoff",
+        "Wirkstoff als Analogie"
       ],
-      "shortDefinition": "Wirkstoff ist in der WÖk eine didaktische Analogie für einen Auslöser mit Wirkungspotenzial.",
-      "definition": "Der Begriff darf nur als gesellschaftlicher Wirkstoff im Sinne einer Analogie verwendet werden. Er beschreibt Auslöser, die unter bestimmten Bedingungen Wirkungspotenzial entfalten können. Ein Wirkstoff ist nicht selbst Wirkung."
+      "shortDefinition": "Wirkstoff ist in der Wirkungsökonomie eine didaktische Analogie für einen Auslöser mit Wirkungspotenzial.",
+      "definition": "Der Ausdruck Wirkstoff dient als anschauliche Analogie für einen Auslöser, der in einem bestimmten Kontext Wirkung hervorrufen kann: etwa eine Steuerregel, ein Produktdesign, ein Preis, ein Algorithmus, ein Frame oder ein Medienbeitrag. Die Analogie darf nicht so verstanden werden, als seien gesellschaftliche Wirkungen mechanisch oder zwangsläufig.\n\nEin gesellschaftlicher Wirkstoff kann erwünschte oder unerwünschte Wirkung, Nebenwirkungen, Wechselwirkungen, Rebound oder keine relevante Veränderung auslösen. Entscheidend bleiben Wirkmechanismus, Kontext, Datenlage und die Trennung zwischen Potenzial und eingetretener Wirkung."
     },
     {
       "id": "wirkung",
@@ -24594,6 +25322,21 @@
       "definition": "Wirkungsabwehr beschreibt die psychologische, kommunikative oder institutionelle Abwehr gegen Informationen, Daten oder Erfahrungen, die negative Wirkung sichtbar machen."
     },
     {
+      "id": "wirkungsanalyse",
+      "label": "Wirkungsanalyse",
+      "canonicalLabel": "Wirkungsanalyse",
+      "slug": "wirkungsanalyse",
+      "url": "/begriffe/wirkungsanalyse/",
+      "aliases": [
+        "Wirkungsanalyse",
+        "Impact Analysis",
+        "Wirkungsuntersuchung",
+        "Analyse von Wirkpfaden"
+      ],
+      "shortDefinition": "Wirkungsanalyse untersucht, welche Zustandsveränderungen entstehen oder entstehen können, wen sie betreffen, wodurch sie zustande kommen und wie belastbar die Evidenz ist.",
+      "definition": "Eine Wirkungsanalyse strukturiert Auslöser, Wirkmechanismen, Wirkungsempfänger, Wirkungsraum, Zeitverlauf, Daten und mögliche Folgen. Sie kann eingetretene Wirkungen untersuchen oder ex ante Wirkungspotenziale und -risiken transparent machen. Je nach Fragestellung prüft sie Baseline, Counterfactual, Attribution, Kontribution, Nebenwirkung, Wechselwirkung, Rebound, Displacement und Datenqualität.\n\nDie Analyse ersetzt nicht die Bewertung. Sie liefert die Grundlage, auf der eine Wirkung am Referenzrahmen eingeordnet und anschließend rückgekoppelt werden kann."
+    },
+    {
       "id": "wirkungsanalyse-von-sprache",
       "label": "Wirkungsanalyse von Sprache",
       "canonicalLabel": "Wirkungsanalyse von Sprache",
@@ -24708,6 +25451,22 @@
       "definition": "Wirkungsbasierter Handel bewertet Waren, Dienstleistungen, Vorprodukte, Daten, Kapital und Lieferketten nicht nur nach Preis, Zolltarif oder Herkunft, sondern nach ihrer Wirkung auf Mensch, Planet und Demokratie."
     },
     {
+      "id": "wirkungsbasiertes-value-pricing",
+      "label": "Wirkungsbasiertes Value Pricing",
+      "canonicalLabel": "Wirkungsbasiertes Value Pricing",
+      "slug": "wirkungsbasiertes-value-pricing",
+      "url": "/begriffe/wirkungsbasiertes-value-pricing/",
+      "aliases": [
+        "Wirkungsbasiertes Value Pricing",
+        "wirkungsorientiertes Value Pricing",
+        "impact-basiertes Value Pricing",
+        "impact-informed Value Pricing",
+        "wirkungsbasiertes Pricing"
+      ],
+      "shortDefinition": "Wirkungsbasiertes Value Pricing ist ein WÖk-Arbeitsmodell, das den zurechenbaren ökonomischen Kundenwert einer Leistung und ihre getrennt geprüfte Netto-Wirkung für Mensch, Planet und Demokratie gemeinsam in die Preisentscheidung einordnet.",
+      "definition": "Wirkungsbasiertes Value Pricing erweitert Value-based Pricing um eine zweite, nicht kompensierbare Bewertungsebene. Auf der ersten Ebene wird der wirtschaftliche Kundenwert einer Leistung aus einer nachvollziehbaren Zustandsveränderung und ihrer Zurechnung bestimmt. Auf der zweiten Ebene wird geprüft, welche Wirkungen und Wirkungsrisiken die Leistung im Referenzrahmen Mensch, Planet und Demokratie auslöst.\n\nDie beiden Ebenen werden bewusst nicht zu einer einzigen Geldsumme verrechnet: Ein hoher Kundenwert kann schwere negative Wirkungen nicht ausgleichen. Die Netto-Wirkung ist daher kein automatischer Preisaufschlag, sondern eine eigenständige Qualitäts-, Schutz- und Lernbedingung. Das Modell ist eine WÖk-Arbeitslogik in Entwicklung, kein allgemeiner Marktstandard und keine automatische Preisformel."
+    },
+    {
       "id": "wirkungsbedingte-stranded-assets",
       "label": "Wirkungsbedingte Stranded Assets",
       "canonicalLabel": "Wirkungsbedingte Stranded Assets",
@@ -24757,7 +25516,8 @@
         "Wirkungsprüfung",
         "Wirkungsanalyse",
         "Bewertung von Wirkung",
-        "Wirkungs-Scoring"
+        "Wirkungs-Scoring",
+        "normative Wirkungseinordnung"
       ],
       "shortDefinition": "Wirkungsbewertung ordnet tatsächliche oder plausibel erwartbare Zustandsveränderungen nach Relevanz, Richtung, Stärke, Risiko und Netto-Beitrag für Mensch, Planet und Demokratie ein.",
       "definition": "Wirkungsbewertung ordnet tatsächliche oder plausibel erwartbare Zustandsveränderungen nach Relevanz, Richtung, Stärke, Risiko und Netto-Beitrag für Mensch, Planet und Demokratie ein."
@@ -24988,6 +25748,20 @@
       ],
       "shortDefinition": "Design Thinking und Double Diamond um Systemdiagnose, Wirkungsgrenzen, Netto-Wirkung, Umsetzung und Lernrückkopplung erweitern.",
       "definition": "Design Thinking und Double Diamond um Systemdiagnose, Wirkungsgrenzen, Netto-Wirkung, Umsetzung und Lernrückkopplung erweitern."
+    },
+    {
+      "id": "wirkungsdilemma",
+      "label": "Wirkungsdilemma",
+      "canonicalLabel": "Wirkungsdilemma",
+      "slug": "wirkungsdilemma",
+      "url": "/begriffe/wirkungsdilemma/",
+      "aliases": [
+        "Wirkungsdilemma",
+        "Wirkungs-Dilemma",
+        "Wirkungsdilemmata"
+      ],
+      "shortDefinition": "Ein Wirkungsdilemma liegt vor, wenn eine im engen oder kurzfristigen Rahmen vorteilhafte Entscheidung im relevanten Wirkungsraum negative Folgen auslöst, verstärkt oder auf andere verlagert.",
+      "definition": "Wirkungsdilemmata entstehen etwa, wenn ein lokaler Kennwert verbessert wird, während Belastungen für andere Menschen, Ökosysteme oder spätere Zeiträume wachsen. Sie sind keine Behauptung, dass Beteiligte schlecht handeln. Sie beschreiben eine Lage, in der Informationen, Anreize, Zuständigkeiten oder Grenzen nicht ausreichend zusammenwirken.\n\nOb die Gesamtwirkung positiv oder negativ ist, muss am konkreten Referenzrahmen und an den tatsächlich veränderten Zuständen geprüft werden. Reichweite, Absicht oder ein einzelner Erfolgswert reichen dafür nicht aus."
     },
     {
       "id": "wirkungsdisziplin",
@@ -25534,6 +26308,19 @@
       "definition": "Wirkungsintegration nimmt Komplexität auf, statt sie wegzuschieben. Sie verbindet neue Informationen mit nachvollziehbaren Zielen, Wirkpfaden, Rückkopplung, Korrektur und Handlungsmöglichkeiten."
     },
     {
+      "id": "wirkungsintegritaet",
+      "label": "Wirkungsintegrität",
+      "canonicalLabel": "Wirkungsintegrität",
+      "slug": "wirkungsintegritaet",
+      "url": "/begriffe/wirkungsintegritaet/",
+      "aliases": [
+        "Wirkungsintegrität",
+        "Wirkungs-Integrität"
+      ],
+      "shortDefinition": "Wirkungsintegrität bezeichnet, ob eine behauptete oder gemessene Wirkung einer tatsächlichen, zurechenbaren und hinreichend abgegrenzten Zustandsveränderung entspricht und gegen Manipulation, Auslassung, unzulässige Kompensation und Interessenkonflikte geschützt ist.",
+      "definition": "Wirkungsintegrität prüft die Gültigkeit einer Wirkungsbehauptung, bevor sie für Steuerung, Förderung, Beschaffung, Berichterstattung oder Kommunikation genutzt wird. Dazu gehören Datenqualität, Abgrenzung, Zurechnung, Umgang mit Unsicherheit, Unabhängigkeit und Schutz vor Wirkungssimulation.\n\nSie ist kein zusätzlicher Wirkungsbereich und kein Bonuspunkt. Fehlt die Integrität, kann ein hoher Score keine positive Wirkung belegen."
+    },
+    {
       "id": "wirkungsinvestition-des-staates",
       "label": "Wirkungsinvestition des Staates",
       "canonicalLabel": "Wirkungsinvestition des Staates",
@@ -25595,7 +26382,10 @@
       "slug": "wirkungskette",
       "url": "/begriffe/wirkungskette/",
       "aliases": [
-        "Wirkungskette"
+        "Wirkungskette",
+        "Results Chain",
+        "Impact Chain",
+        "IOOI-Kette"
       ],
       "shortDefinition": "Eine Wirkungskette beschreibt den Zusammenhang von Auslöser, Input, Aktivität, Output, Outcome, Impact, Nebenwirkungen und Rückkopplung. Sie macht sichtbar, wie aus Handlung tatsächliche Zustandsveränderung entstehen soll.",
       "definition": "Eine Wirkungskette beschreibt den Zusammenhang von Auslöser, Input, Aktivität, Output, Outcome, Impact, Nebenwirkungen und Rückkopplung. Sie macht sichtbar, wie aus Handlung tatsächliche Zustandsveränderung entstehen soll."
@@ -25814,10 +26604,26 @@
       "slug": "wirkungsnachweis",
       "url": "/begriffe/wirkungsnachweis/",
       "aliases": [
-        "Wirkungsnachweis"
+        "Wirkungsnachweis",
+        "Impact Evidence",
+        "Wirksamkeitsnachweis",
+        "Nachweis eingetretener Wirkung"
       ],
       "shortDefinition": "Ein Wirkungsnachweis ist die nachvollziehbare Begründung oder Messung, dass eine Handlung, Ausgabe, Investition oder Regel eine bestimmte Zustandsveränderung erzeugt oder plausibel ermöglicht hat.",
       "definition": "Ein Wirkungsnachweis ist die nachvollziehbare Begründung oder Messung, dass eine Handlung, Ausgabe, Investition oder Regel eine bestimmte Zustandsveränderung erzeugt oder plausibel ermöglicht hat."
+    },
+    {
+      "id": "wirkungsnachweiskonto",
+      "label": "Wirkungsnachweiskonto",
+      "canonicalLabel": "Wirkungsnachweiskonto",
+      "slug": "wirkungsnachweiskonto",
+      "url": "/begriffe/wirkungsnachweiskonto/",
+      "aliases": [
+        "Wirkungsnachweiskonto",
+        "Wirkungsnachweis-Konto"
+      ],
+      "shortDefinition": "Das Wirkungsnachweiskonto ist eine digitale, revisionssichere Nachweis- und Versionsschicht für steuerrelevante Wirkungsdaten je Tatbestand.",
+      "definition": "Das Wirkungsnachweiskonto speichert für einen steuerlich bestimmten Gegenstand nachvollziehbar, welche Wirkungsdaten, Quellen, Benchmarks, Versionen, Prüfungen und Rechtsfolgen verwendet wurden. Es dient Nachweis, Korrektur, Rechtsschutz und Evaluation. Es bildet weder einen steuerartenübergreifenden Saldo guter und schlechter Wirkung noch ein Personenrating und ermöglicht keine freie Verrechnung zwischen unterschiedlichen Steuerzwecken oder Wirkungsfeldern."
     },
     {
       "id": "wirkungsnetz",
@@ -26183,10 +26989,14 @@
       "aliases": [
         "Wirkungspfad",
         "Wirkpfad",
-        "Wirkmechanismus-Pfad"
+        "Wirkpfade",
+        "Wirkungspfade",
+        "Wirkmechanismus-Pfad",
+        "Wirkungskette mit Annahmen",
+        "kausaler Wirkungspfad"
       ],
-      "shortDefinition": "Ein Wirkungspfad ordnet Auslöser, Aktivitäten und erbrachte Leistungen den erwarteten Veränderungen bei Wirkungsempfängern, möglichen Zustandsveränderungen und Rückkopplungen in einer prüfbaren Reihenfolge zu.",
-      "definition": "Ein Wirkungspfad ordnet Auslöser, Aktivitäten und erbrachte Leistungen den erwarteten Veränderungen bei Wirkungsempfängern, möglichen Zustandsveränderungen und Rückkopplungen in einer prüfbaren Reihenfolge zu."
+      "shortDefinition": "Wirkpfade oder Wirkungspfade beschreiben nachvollziehbare Hypothesen darüber, wie eine Handlung, Entscheidung, ein Produkt oder eine Kommunikation unter bestimmten Bedingungen Zustände verändert – einschließlich Wirkmechanismen, Betroffener, Nebenwirkungen und Rückkopplungen.",
+      "definition": "Ein Wirkpfad verbindet einen Auslöser mit den angenommenen Wirkmechanismen, Zwischenwirkungen und möglichen Zustandsveränderungen. Er benennt Wirkungsträger, Wirkungsempfänger, System- und Zeitgrenzen, Kontextbedingungen, Nebenwirkungen sowie Rückkopplungen. Damit macht er eine Kausalannahme prüfbar; er ist weder der Nachweis eingetretener Wirkung noch eine lineare Erfolgsgeschichte."
     },
     {
       "id": "wirkungspflicht-eigentum",
@@ -26317,6 +27127,23 @@
       "definition": "Ein Wirkungsprofil beschreibt die Verteilung positiver, neutraler, negativer und unklarer Wirkungen eines Produkts, einer Organisation, Maßnahme oder Investition über mehrere Wirkungsfelder hinweg."
     },
     {
+      "id": "wirkungsprofil-im-radardiagramm",
+      "label": "Wirkungsprofil im Radardiagramm",
+      "canonicalLabel": "Wirkungsprofil im Radardiagramm",
+      "slug": "wirkungsprofil-im-radardiagramm",
+      "url": "/begriffe/wirkungsprofil-im-radardiagramm/",
+      "aliases": [
+        "Wirkungsprofil im Radardiagramm",
+        "Spinnennetzdiagramm",
+        "Spinnennetzgrafik",
+        "Radarprofil",
+        "Wirkungsprofil",
+        "Radardiagramm"
+      ],
+      "shortDefinition": "Ein Wirkungsprofil im Radardiagramm ist eine grafische Spinnennetzdarstellung mehrerer Wirkungsfelder oder Potenziale.",
+      "definition": "Ein Wirkungsprofil im Radardiagramm verdichtet mehrere Wirkungsfelder, Potenziale, Risiken oder Messstände in einer Spinnennetzgrafik. Es macht Muster sichtbar, ersetzt aber keine Erklärung der Skala, Datengrundlage, Gewichtung, Unsicherheit oder Wirkungsbewertung.\n\nDie Darstellung heißt nicht Wirkungsradar: Das Wirkungsradar bezeichnet in der WÖk das Orientierungs- und Analyseinstrument beziehungsweise das Website-Portal."
+    },
+    {
       "id": "wirkungsprototyp-canvas",
       "label": "Wirkungsprototyp-Canvas",
       "canonicalLabel": "Wirkungsprototyp-Canvas",
@@ -26402,10 +27229,12 @@
       "slug": "wirkungsradar",
       "url": "/begriffe/wirkungsradar/",
       "aliases": [
-        "Wirkungsradar"
+        "Wirkungsradar",
+        "WÖk-Wirkungsradar",
+        "Wirkungsradar-Portal"
       ],
-      "shortDefinition": "Ein Wirkungsradar ist ein Orientierungsinstrument, das Wirkungsfelder, Risiken und blinde Flecken sichtbar macht.",
-      "definition": "Das Wirkungsradar unterstützt Analyse, Kommunikation und Priorisierung, ersetzt aber keine vollständige Wirkungsbewertung."
+      "shortDefinition": "Das Wirkungsradar ist ein WÖk-Orientierungs- und Analyseinstrument, das Wirkungsfelder, Potenziale, Risiken, blinde Flecken, Wirkungspfade und Wissensstände sichtbar macht.",
+      "definition": "Das Wirkungsradar dient der Orientierung, Analyse und Kommunikation. Es kann Wirkungsfelder, Wirkungspotenziale, Wirkungsrisiken, blinde Flecken, Wirkungspfade und den jeweiligen Wissensstand sichtbar machen. Auf der Website bezeichnet es insbesondere das Portal für Fakten, Narrative und öffentliche Wirkungspfade.\n\nDas Wirkungsradar ersetzt keine vollständige Wirkungsbewertung, keine Evidenzprüfung und keine demokratische Entscheidung. Für eine grafische Spinnennetzdarstellung mehrerer Felder gilt der Begriff Wirkungsprofil im Radardiagramm."
     },
     {
       "id": "wirkungsrat",
@@ -26782,6 +27611,7 @@
       "aliases": [
         "Wirkungssteuer",
         "Steuer nach Wirkung",
+        "Impact Tax",
         "Harmful Subsidies",
         "umweltschädliche Subventionen",
         "umweltschaedliche Subventionen",
@@ -26793,12 +27623,11 @@
         "Wirkungsabgabe",
         "Produktwirkungssteuer",
         "Wirkungsumsatzsteuer",
-        "Impact Tax",
         "Steuerung nach Wirkung",
         "Bonus-Malus-Steuerlogik"
       ],
-      "shortDefinition": "Die Wirkungssteuer ist eine Steuerlogik, bei der die Steuerlast nicht nur vom Preis oder Einkommen abhängt, sondern von der gemessenen Wirkung auf Mensch, Planet und Demokratie.",
-      "definition": "Die Wirkungssteuer ist eine Steuerlogik, bei der die Steuerlast nicht nur vom Preis oder Einkommen abhängt, sondern von der gemessenen Wirkung auf Mensch, Planet und Demokratie."
+      "shortDefinition": "Wirkungssteuer bezeichnet eine modulare fiskalische Rückkopplungsarchitektur, die nachgewiesene oder gesetzlich modellierte Wirkung über klar bestimmte Module an bestehende Steuerarten anbindet.",
+      "definition": "Wirkungssteuer 3.0 ist keine universelle Supersteuer. Ausgangspunkt bleibt jede bestehende Steuer mit eigenem Steuergegenstand, eigener Bemessungsgrundlage und Kompetenzordnung. Ein Wirkungsmodul kann nur durch Gesetz aktiviert werden und muss Datengrundlage, Schutzgrenzen, Tariffolge, Übergang, Rechtsschutz und Evaluation bestimmen. Nichtkompensation und Reverse Merit Order schützen vor dem Wegmitteln schwerer Schäden; Personen werden nicht bewertet."
     },
     {
       "id": "wirkungssteuergesetz",
@@ -26810,15 +27639,15 @@
         "Wirkungssteuergesetz",
         "WStG",
         "Wirkungssteuer-Rahmengesetz",
+        "Impact Tax Act",
         "Wirkungssteuer-Gesetz",
         "Rahmengesetz der Wirkungssteuer",
         "Steuerrahmen nach Wirkung",
         "Gesetz zur Steuerung nach Wirkung",
-        "Impact Tax Act",
         "Wirkungssteuerrahmen"
       ],
-      "shortDefinition": "Das Wirkungssteuergesetz ist der WÖk-Entwurf für ein steuerliches Rahmengesetz, das Wirkung als Bemessungs- und Steuerungsgröße in bestehende Steuerarten einführt.",
-      "definition": "Das Wirkungssteuergesetz ist der WÖk-Entwurf für ein steuerliches Rahmengesetz, das Wirkung als Bemessungs- und Steuerungsgröße in bestehende Steuerarten einführt."
+      "shortDefinition": "Das Wirkungssteuergesetz (WStG) 3.0 ist der vollständige Rahmengesetzentwurf für eine modulare, rechtsgebundene Wirkungsrückkopplung über bestehende Steuerarten.",
+      "definition": "Das WStG 3.0 enthält 125 kommentierte Paragrafen. Es ordnet Wirkung, Evidenz und Zurechnung, Nichtkompensation und Reverse Merit Order, Daten- und Registerarchitektur, getrennte WÖk- und Produkt-IDs, das Wirkungsnachweiskonto, Wirkungsrat, Datenschutz, Rechtsschutz, KI, Haushaltsneutralität, Pilotierung und EU-Pfad. Das WStG ist ein Referenz- und Diskussionsentwurf, kein geltendes Recht."
     },
     {
       "id": "wirkungssteuerkonto",
@@ -26883,6 +27712,19 @@
       "definition": "Ein Wirkungsträger ist ein Produkt, eine Handlung, Entscheidung, Institution oder Struktur, über die Wirkung vermittelt wird."
     },
     {
+      "id": "wirkungstragung",
+      "label": "Wirkungstragung",
+      "canonicalLabel": "Wirkungstragung",
+      "slug": "wirkungstragung",
+      "url": "/begriffe/wirkungstragung/",
+      "aliases": [
+        "Wirkungstragung",
+        "Wirkungs-Tragung"
+      ],
+      "shortDefinition": "Wirkungstragung bezeichnet die institutionelle Zuordnung positiver und negativer Folgen zu den Akteuren, die sie verursachen, von ihnen profitieren, sie kontrollieren oder sie mit vertretbarem Aufwand verändern können.",
+      "definition": "Die Leitfrage lautet: Wer entscheidet, wer profitiert, wer kontrolliert und wer trägt die Folgen? Wirkungstragung macht diese Fragen nicht zu einer moralischen Rangliste von Menschen, sondern zu einer prüfbaren institutionellen Frage.\n\nSie kann sich auf Unternehmen, öffentliche Stellen, Eigentums- und Vertragsbeziehungen, Lieferketten oder andere Handlungskontexte beziehen. Ihre konkrete Ausgestaltung braucht Rechtsschutz, Verhältnismäßigkeit und nachvollziehbare Zuständigkeiten."
+    },
+    {
       "id": "wirkungstransformations-bereitschaft",
       "label": "Wirkungstransformations-Bereitschaft",
       "canonicalLabel": "Wirkungstransformations-Bereitschaft",
@@ -26937,6 +27779,21 @@
       ],
       "shortDefinition": "Ein Wirkungstransparenzbericht macht öffentlich nachvollziehbar, welche Wirkung öffentliche Mittel, Programme, Beschaffung und Gesetze tatsächlich erzeugt haben.",
       "definition": "Ein Wirkungstransparenzbericht macht öffentlich nachvollziehbar, welche Wirkung öffentliche Mittel, Programme, Beschaffung und Gesetze tatsächlich erzeugt haben."
+    },
+    {
+      "id": "wirkungstreppe",
+      "label": "Wirkungstreppe",
+      "canonicalLabel": "Wirkungstreppe",
+      "slug": "wirkungstreppe",
+      "url": "/begriffe/wirkungstreppe/",
+      "aliases": [
+        "Wirkungstreppe",
+        "PHINEO-Wirkungstreppe",
+        "Wirkungsstufen",
+        "Wirkungslogik als Stufenmodell"
+      ],
+      "shortDefinition": "Die Wirkungstreppe ist eine didaktische Darstellung von Wirkungsstufen. Sie ordnet Aktivitäten, Outputs, Outcomes und gesellschaftliche Wirkung in aufeinander aufbauende Ebenen.",
+      "definition": "Wirkungstreppen machen anschaulich, dass durchgeführte Aktivitäten und erreichte Zielgruppen noch keine Veränderung belegen. In der verbreiteten PHINEO-Einordnung liegen Aktivitäten, erreichte Zielgruppen und angenommene Angebote auf Output-Ebenen; Veränderungen von Wissen, Verhalten und Lebenslage werden als Wirkungsebenen bis hin zu gesellschaftlicher Veränderung erklärt.\n\nEine Wirkungstreppe kann bei Planung, Monitoring und Kommunikation helfen. Sie beantwortet aber nicht allein Fragen der Attribution, der Nebenwirkungen, des Referenzrahmens, der Nichtkompensation oder der ökonomischen Rückkopplung."
     },
     {
       "id": "wirkungsumsatzsteuer",
@@ -27418,6 +28275,19 @@
       "definition": "Die WÖk-ID ist die eindeutige Identifikationsnummer eines Wirkungsindikators innerhalb der Wirkungsökonomie. Sie dient dazu, relevante Wirkungsdaten strukturiert zu erfassen, zuzuordnen, zu prüfen, zu vergleichen und in Scorecards zu verwenden."
     },
     {
+      "id": "nwi",
+      "label": "WÖk-Netto-Wirkungsindex",
+      "canonicalLabel": "WÖk-Netto-Wirkungsindex",
+      "slug": "nwi",
+      "url": "/begriffe/nwi/",
+      "aliases": [
+        "WÖk-Netto-Wirkungsindex",
+        "Netto-Wirkungs-Index"
+      ],
+      "shortDefinition": "Der WÖk-Netto-Wirkungsindex verdichtet geprüfte operative Wirkungen innerhalb einer offengelegten Bewertungs- und Schutzlogik.",
+      "definition": "Der WÖk-Netto-Wirkungsindex ist eine WÖk-eigene Kennzahl für die operative Gesamtwirkung eines klar abgegrenzten Objekts oder Vorhabens. Er stellt geprüfte positive und negative Wirkungen gegenüber und bleibt an Systemgrenze, Zeitraum, Zurechnung, Datenqualität, Unsicherheit, Wirkungsgrenzen und Nichtkompensation gebunden."
+    },
+    {
       "id": "woek-ids",
       "label": "WÖk-IDs",
       "canonicalLabel": "WÖk-IDs",
@@ -27440,6 +28310,21 @@
       ],
       "shortDefinition": "Aus Wirkungsmodell und Referenzrahmen ein hierarchisches Set aus Zustands-, Prozess-, Früh-, Risiko- und Transformationsindikatoren entwickeln.",
       "definition": "Aus Wirkungsmodell und Referenzrahmen ein hierarchisches Set aus Zustands-, Prozess-, Früh-, Risiko- und Transformationsindikatoren entwickeln."
+    },
+    {
+      "id": "wirkungsrad",
+      "label": "WÖk-Wirkungsrad",
+      "canonicalLabel": "WÖk-Wirkungsrad",
+      "slug": "wirkungsrad",
+      "url": "/begriffe/wirkungsrad/",
+      "aliases": [
+        "WÖk-Wirkungsrad",
+        "Wirkungsrad",
+        "Wirkungsrad der Wirkungsökonomie",
+        "lernendes Wirkungsrad"
+      ],
+      "shortDefinition": "Das WÖk-Wirkungsrad ist ein Lernmodell, das Vorwirkung, Wirkungsermittlung, Bewertung, Schutz, Rückkopplung und neue Systemzustände als rekursiven Kreislauf verbindet.",
+      "definition": "Das Wirkungsrad zeigt, dass reale Systeme nicht am Ende einer linearen Wirkungskette stehen bleiben. Auslöser, Wirkpotenziale, Interventionen und der IOOI-Wirkpfad erzeugen Zustandsveränderungen, Nebenwirkungen und Rückkopplungen. Diese werden an einem Referenzrahmen bewertet, unter Schutzregeln zur Netto-Wirkung zusammengeführt und in die nächste Entscheidung zurückgeführt.\n\nDer neue Systemzustand wird wiederum zur Ausgangslage für die nächste Analyse. Das Modell ist ein Orientierungsbild, keine additive Rechenformel oder automatisierte Entscheidungsmaschine."
     },
     {
       "id": "woemm-betriebssystem",
@@ -27584,8 +28469,8 @@
         "WStG",
         "Wirkungssteuergesetz"
       ],
-      "shortDefinition": "WStG steht für Wirkungssteuergesetz, den Rahmengesetz-Entwurf für steuerliche Wirkungsrückkopplung.",
-      "definition": "Das WStG strukturiert die rechtliche Rahmung von Wirkungssteuerung und Wirkungsrückkopplung."
+      "shortDefinition": "WStG steht für Wirkungssteuergesetz 3.0, den modularen Rahmengesetzentwurf für steuerliche Wirkungsrückkopplung über bestehende Steuerarten.",
+      "definition": "Das WStG 3.0 ordnet die gemeinsame Architektur der Wirkungssteuer. Es setzt selbst keinen Universaltarif und überträgt Scorecards keine Gesetzgebungsmacht. Steuersätze und Rechtsfolgen bleiben beim Gesetzgeber. Der Entwurf schließt Personenbewertung aus und behandelt fehlende Daten als zu bearbeitende Unsicherheit statt als Neutralwert."
     },
     {
       "id": "wu-wei",
@@ -27782,6 +28667,21 @@
       ],
       "shortDefinition": "Ein wirkungsfähiges Zielbild und realistische Zwischenzustände für Organisation, Prozesse, Daten, Technologie und Governance gestalten.",
       "definition": "Ein wirkungsfähiges Zielbild und realistische Zwischenzustände für Organisation, Prozesse, Daten, Technologie und Governance gestalten."
+    },
+    {
+      "id": "zielbezug-vs-wirkung",
+      "label": "Zielbezug und Wirkung",
+      "canonicalLabel": "Zielbezug und Wirkung",
+      "slug": "zielbezug-vs-wirkung",
+      "url": "/begriffe/zielbezug-vs-wirkung/",
+      "aliases": [
+        "Zielbezug und Wirkung",
+        "Zielbezug vs. Wirkung",
+        "Target Alignment",
+        "Zielausrichtung"
+      ],
+      "shortDefinition": "Zielbezug zeigt, zu welchem Ziel oder Schutzgut ein Vorhaben fachlich gehört; Wirkung beschreibt dagegen eine tatsächliche Zustandsveränderung. Beides ist nicht dasselbe.",
+      "definition": "Ein Regelungsvorhaben kann plausibel einem SDG, DNS-Ziel, Grundrecht oder anderen Referenzrahmen zugeordnet werden. Diese Zuordnung sagt, welche Zielrichtung oder welches Schutzgut berührt ist. Ob sich ein Zustand tatsächlich verändert und ob diese Veränderung dem Vorhaben zugerechnet werden kann, sind getrennte empirische Fragen.\n\nDiese Trennung verhindert, dass Zielkongruenz, politische Absicht, Indikatorbewegung und Kausalität ineinandergeschoben werden."
     },
     {
       "id": "zielkonflikt",

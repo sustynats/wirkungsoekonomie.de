@@ -5463,8 +5463,7 @@ const WirkungsraumLayer = (() => {
       return;
     }
     const main = document.querySelector("main");
-    const firstSection = main?.querySelector(".section, .content-band, article");
-    if (main) main.insertBefore(panel, firstSection || main.firstChild);
+    if (main) main.prepend(panel);
   }
 
   function progressPercent() {

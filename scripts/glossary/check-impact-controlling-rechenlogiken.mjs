@@ -2,7 +2,7 @@ import fs from "node:fs";
 
 const glossary = JSON.parse(fs.readFileSync("public/data/glossary.terms.json", "utf8"));
 const formulaTerms = [
-  ["nwi", "NWI = Summe gewichteter positiver Wirkungen − Summe gewichteter negativer Wirkungen; positive Ausweisung nur bei G = 1"],
+  ["nwi", "WÖk-Netto-Wirkungsindex = Summe gewichteter positiver Wirkungen − Summe gewichteter negativer Wirkungen; positive Ausweisung nur bei G = 1"],
   ["t-sroi", "T-SROI = Σ(t=1…T)[((Bdirekt,t + Btransformativ,t) · aₜ · (1 − dₜ) · (1 − vₜ) − Sₜ) / (1 + r)ᵗ] ÷ Σ(t=0…T)[(Iₜ + Kₜ) / (1 + rₖ)ᵗ]; PV_N^L = Σ(t=1…T)[((Bdirekt,t + Btransformativ,t) · aₜ · (1 − dₜ) · (1 − vₜ) · (1 − uₜ) − Sₜ) / (1 + r)ᵗ]"],
   ["oeffentlicher-t-sroi", "Öffentlicher T-SROI = diskontierter, kausal zugerechneter Netto-Nutzen / diskontierter klar abgegrenzter öffentlicher Mitteleinsatz"],
   ["wirkungseffizienz", "Wirkungsintensität_U = dokumentierte Netto-Wirkungsgröße ΔZ_U / klar benannter Ressourceneinsatz R"],

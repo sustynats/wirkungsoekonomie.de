@@ -12,6 +12,12 @@ const reportPath = path.join(root, "reports/quellenarchiv-quality.json");
 const siteHosts = new Set(["wirkungsoekonomie.de", "www.wirkungsoekonomie.de"]);
 const errors = [];
 const warnings = [];
+const generatedAt = (() => {
+  const epoch = Number.parseInt(process.env.SOURCE_DATE_EPOCH || "", 10);
+  return Number.isFinite(epoch)
+    ? new Date(epoch * 1000).toISOString()
+    : new Date().toISOString();
+})();
 
 function readJson(file) {
   return JSON.parse(fs.readFileSync(file, "utf8"));
@@ -311,7 +317,7 @@ function sourceUrls(term) {
 function writeReport(sources, glossaryTerms) {
   fs.mkdirSync(path.dirname(reportPath), { recursive: true });
   fs.writeFileSync(reportPath, `${JSON.stringify({
-    generatedAt: new Date().toISOString(),
+    generatedAt,
     sources: sources.length,
     glossaryTerms: glossaryTerms.length,
     errors,

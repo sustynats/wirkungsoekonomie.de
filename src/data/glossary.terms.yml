@@ -368,28 +368,28 @@ terms:
     firstApprovedIn: "2026.1"
     lastUpdated: "2026-05-23"
   - termId: nwi
-    canonicalLabel: "NWI"
+    canonicalLabel: "WÖk-Netto-Wirkungsindex"
     slug: "nwi"
     status: "führender-begriff"
-    version: "1.1"
+    version: "2.1"
     source: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
     sourceDocument: "WOeK_Begriffsleitfaden_fuehrend_v1.0.md"
     sourceSection: "Instrumente"
-    shortDefinition: "Der Netto-Wirkungs-Index bewertet operative Netto-Wirkung."
-    hoverDefinition: "Der Netto-Wirkungs-Index bewertet operative Netto-Wirkung auf Basis von Daten, Scorecards, Mindestbedingungen und Nichtkompensation."
-    longDefinition: "Der NWI ist die operative Kennzahl für Netto-Wirkung. Er ist vom T-SROI zu unterscheiden, der Transformationswirkung bewertet."
-    usageNote: "NWI für operative Netto-Wirkung verwenden; T-SROI für Transformationswirkung."
-    doNotConfuseWith: ["T-SROI", "FinalScore", "SROI"]
-    synonyms: ["Netto-Wirkungs-Index", "Netto-Wirkungs-Index / NWI"]
-    relatedTerms: ["netto-wirkung", "finalscore", "t-sroi", "reverse-merit-order"]
+    shortDefinition: "Der WÖk-Netto-Wirkungsindex bewertet operative Netto-Wirkung innerhalb einer offengelegten Bewertungs- und Schutzlogik."
+    hoverDefinition: "Der WÖk-Netto-Wirkungsindex ist eine WÖk-eigene operative Kennzahl. Er ist nicht der Nationale Wohlfahrtsindex (NWI)."
+    longDefinition: "Der WÖk-Netto-Wirkungsindex ist die operative Kennzahl für Netto-Wirkung. Die frühere Kurzbezeichnung NWI wird öffentlich nicht mehr verwendet, weil NWI in Deutschland etabliert für den Nationalen Wohlfahrtsindex steht. Das WÖk-Modell ist außerdem vom T-SROI zu unterscheiden, der Transformationswirkung bewertet."
+    usageNote: "Öffentlich WÖk-Netto-Wirkungsindex ausschreiben; NWI ohne Qualifikation ausschließlich für den Nationalen Wohlfahrtsindex verwenden."
+    doNotConfuseWith: ["Nationaler Wohlfahrtsindex (NWI)", "T-SROI", "FinalScore", "SROI"]
+    synonyms: ["WÖk-Netto-Wirkungsindex", "Netto-Wirkungs-Index"]
+    relatedTerms: ["nationaler-wohlfahrtsindex", "netto-wirkung", "finalscore", "t-sroi", "reverse-merit-order"]
     relatedDocuments: ["technische-leitlinien-wustg", "wirkungscontrolling-detailkonzept-dossier-v1-0"]
     examples: []
-    preferredUsage: "NWI als operative Netto-Wirkungskennzahl."
-    deprecatedUsage: ["T-SROI als Netto-Wirkungskennzahl"]
-    reviewStatus: "approved"
-    glossaryOrderKey: "netto wirkungs index"
+    preferredUsage: "WÖk-Netto-Wirkungsindex als ausgeschriebene operative Netto-Wirkungskennzahl."
+    deprecatedUsage: ["NWI als Kurzbezeichnung des WÖk-Netto-Wirkungsindex", "T-SROI als Netto-Wirkungskennzahl"]
+    reviewStatus: "fachlich begrifflich disambiguiert"
+    glossaryOrderKey: "wök netto wirkungsindex"
     firstApprovedIn: "2026.1"
-    lastUpdated: "2026-05-23"
+    lastUpdated: "2026-08-21"
   - termId: nichtkompensationsprinzip
     canonicalLabel: "Nichtkompensationsprinzip"
     slug: "nichtkompensationsprinzip"

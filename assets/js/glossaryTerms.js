@@ -22437,6 +22437,29 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ]
   },
   {
+    "key": "nationaler-wohlfahrtsindex",
+    "label": "Nationaler Wohlfahrtsindex (NWI)",
+    "aliases": [
+      "Nationaler Wohlfahrtsindex (NWI)",
+      "Nationaler Wohlfahrtsindex",
+      "NWI"
+    ],
+    "definition": "Der Nationale Wohlfahrtsindex (NWI) ergänzt die BIP-Perspektive um 21 monetär bewertete Wohlfahrtskomponenten.",
+    "url": "/begriffe/nationaler-wohlfahrtsindex/",
+    "priority": 1042,
+    "autoLinkAllowed": true,
+    "maxAutoLinksPerPage": 1,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
     "key": "nationalismus",
     "label": "Nationalismus",
     "aliases": [
@@ -22446,7 +22469,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Nationalismus überhöht die eigene Nation und grenzt andere Gruppen, Staaten oder Menschen ab. Er kann demokratische, soziale und internationale Kooperationsräume beschädigen.",
     "url": "/begriffe/nationalismus/",
-    "priority": 1042,
+    "priority": 1043,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -22467,7 +22490,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Natrium-Ionen-Batterien sind wiederaufladbare Batterien, bei denen Natrium-Ionen als Ladungsträger genutzt werden.",
     "url": "/begriffe/natrium-ionen-batterie/",
-    "priority": 1043,
+    "priority": 1044,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -22487,7 +22510,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Natur-, Landwirtschafts- und Biodiversitätsstandards definieren Anforderungen an Anbau, Flächennutzung, Artenvielfalt, Tierwohl oder ökologische Qualität.",
     "url": "/begriffe/natur-labels/",
-    "priority": 1044,
+    "priority": 1045,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -22512,7 +22535,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Naturbasierte Lösungen nutzen und stärken Ökosysteme, um Klima-, Wasser-, Gesundheits- oder Resilienzprobleme zu lösen.",
     "url": "/begriffe/naturbasierte-loesungen/",
-    "priority": 1045,
+    "priority": 1046,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -22535,7 +22558,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Nature Positive beschreibt das Ziel, Naturverluste zu stoppen und Natur messbar wieder aufzubauen.",
     "url": "/begriffe/nature-positive/",
-    "priority": 1046,
+    "priority": 1047,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -22555,7 +22578,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Nature-related Risks sind Risiken aus Abhängigkeiten, Wirkungen und Veränderungen natürlicher Systeme.",
     "url": "/begriffe/nature-related-risks/",
-    "priority": 1047,
+    "priority": 1048,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -22575,7 +22598,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein natürliches Monopol liegt vor, wenn eine Infrastruktur aus Kostengründen effizienter von einem Anbieter betrieben wird, etwa Strom- oder Wassernetze.",
     "url": "/begriffe/natuerliches-monopol/",
-    "priority": 1048,
+    "priority": 1049,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -22596,7 +22619,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "NCA-Batterien sind Lithium-Ionen-Batterien mit Nickel, Cobalt und Aluminium in der Kathode.",
     "url": "/begriffe/nca-batterie/",
-    "priority": 1049,
+    "priority": 1050,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -22616,7 +22639,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Nebenwirkungen sind zusätzliche Folgen eines Wirkpfads und können erwünscht, unerwünscht, positiv oder negativ sein; ihre Bewertung muss offengelegt werden.",
     "url": "/begriffe/nebenwirkung/",
-    "priority": 1050,
+    "priority": 1051,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -22637,7 +22660,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Unerwünschte, indirekte, kompensierende oder zurückschlagende Wirkungen systematisch vor und während der Umsetzung prüfen.",
     "url": "/begriffe/nebenwirkungs-wechselwirkungs-und-rebound-analyse/",
-    "priority": 1051,
+    "priority": 1052,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -22658,7 +22681,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Eine negative Externalität ist ein Schaden oder Risiko für Dritte, das nicht im Preis enthalten ist.",
     "url": "/begriffe/negative-externalitaet/",
-    "priority": 1052,
+    "priority": 1053,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -22678,7 +22701,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Negative Freiheit beschreibt Freiheit von äußerem Zwang oder Eingriffen.",
     "url": "/begriffe/negative-freiheit/",
-    "priority": 1053,
+    "priority": 1054,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -22698,7 +22721,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Negative Wirkung liegt vor, wenn eine Veränderung SDGs, Agenda 2030 oder SDG+ schwächt, blockiert oder zerstört.",
     "url": "/begriffe/negative-wirkung/",
-    "priority": 1054,
+    "priority": 1055,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -22719,7 +22742,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Negativitätsbias beschreibt die Tendenz, negative Informationen stärker zu beachten und zu gewichten als positive.",
     "url": "/begriffe/negativitaetsbias/",
-    "priority": 1055,
+    "priority": 1056,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -22739,7 +22762,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Neoklassik bezeichnet ökonomische Ansätze, die Märkte häufig über rational handelnde Akteure, Knappheit, Nutzenmaximierung, Grenzgrößen, Gleichgewicht und Preisbildung modellieren.",
     "url": "/begriffe/neoklassik/",
-    "priority": 1056,
+    "priority": 1057,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -22760,7 +22783,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Neoklassische Förderlogik beurteilt Förderung vor allem über Preise, Anreize und Marktversagen und kann weiterreichende Wirkungen und Rückkopplungen ausblenden.",
     "url": "/begriffe/neoklassische-foerderlogik/",
-    "priority": 1057,
+    "priority": 1058,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -22780,7 +22803,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Neoliberalismus wird unterschiedlich verwendet. Im heutigen politischen Sprachgebrauch bezeichnet er meist eine Ordnung, die Markt, Wettbewerb, Privatisierung, Deregulierung und Kapitalrendite stark priorisiert.",
     "url": "/begriffe/neoliberalismus/",
-    "priority": 1058,
+    "priority": 1059,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -22801,7 +22824,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Net Zero bezeichnet einen Zustand, in dem verbleibende Treibhausgasemissionen durch dauerhafte Entnahmen ausgeglichen werden.",
     "url": "/begriffe/net-zero/",
-    "priority": 1059,
+    "priority": 1060,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -22827,38 +22850,8 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Netto-Wirkung führt positive, negative, neutrale und unsichere Wirkungen zusammen, ohne schwere Schäden beliebig zu kompensieren.",
     "url": "/begriffe/netto-wirkung/",
-    "priority": 1060,
-    "autoLinkAllowed": true,
-    "allowedContexts": [
-      "home",
-      "page",
-      "reference",
-      "blog",
-      "academy",
-      "method",
-      "glossary"
-    ]
-  },
-  {
-    "key": "nwi",
-    "label": "Netto-Wirkungs-Index (NWI)",
-    "aliases": [
-      "Netto-Wirkungs-Index (NWI)",
-      "NWI",
-      "Netto-Wirkungs-Index",
-      "Netto-Wirkungs-Index / NWI",
-      "Netto Wirkungs Index",
-      "Net Impact Index",
-      "operative Netto-Wirkungskennzahl",
-      "Wirkungsindex",
-      "WÖk-NWI",
-      "Netto-Wirkungskennzahl"
-    ],
-    "definition": "Der Netto-Wirkungs-Index (NWI) verdichtet geprüfte positive und negative operative Wirkungen unter Berücksichtigung von Mindestbedingungen, Verteilung, Zeit, Datenqualität und Nichtkompensation zu einer steuerungsfähigen Kennzahl.",
-    "url": "/begriffe/nwi/",
     "priority": 1061,
     "autoLinkAllowed": true,
-    "maxAutoLinksPerPage": 1,
     "allowedContexts": [
       "home",
       "page",
@@ -45578,6 +45571,28 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ]
   },
   {
+    "key": "nwi",
+    "label": "WÖk-Netto-Wirkungsindex",
+    "aliases": [
+      "WÖk-Netto-Wirkungsindex",
+      "Netto-Wirkungs-Index"
+    ],
+    "definition": "Der WÖk-Netto-Wirkungsindex ist eine WÖk-eigene operative Kennzahl. Er ist nicht der Nationale Wohlfahrtsindex (NWI).",
+    "url": "/begriffe/nwi/",
+    "priority": 2103,
+    "autoLinkAllowed": true,
+    "maxAutoLinksPerPage": 1,
+    "allowedContexts": [
+      "home",
+      "page",
+      "reference",
+      "blog",
+      "academy",
+      "method",
+      "glossary"
+    ]
+  },
+  {
     "key": "woek-ids",
     "label": "WÖk-IDs",
     "aliases": [
@@ -45585,7 +45600,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "WÖk-IDs sind eindeutige Kennungen für Wirkungsindikatoren. Sie machen Wirkung maschinenlesbar, standardübergreifend zuordenbar und in Scorecards, Registern und Datenräumen nutzbar.",
     "url": "/begriffe/woek-ids/",
-    "priority": 2103,
+    "priority": 2104,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -45605,7 +45620,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Aus Wirkungsmodell und Referenzrahmen ein hierarchisches Set aus Zustands-, Prozess-, Früh-, Risiko- und Transformationsindikatoren entwickeln.",
     "url": "/begriffe/woek-indikatorenarchitektur/",
-    "priority": 2104,
+    "priority": 2105,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -45629,7 +45644,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Das WÖk-Wirkungsrad erweitert lineare Wirkungsketten um Bewertung, Schutzregeln, Rückkopplung und Lernen.",
     "url": "/begriffe/wirkungsrad/",
-    "priority": 2105,
+    "priority": 2106,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -45650,7 +45665,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Das WÖMM-Betriebssystem verankert Rollen, Daten, Entscheidungstore, Gremien, Assurance, Managementrhythmen, Kompetenzen und Beteiligung im Organisationsalltag.",
     "url": "/begriffe/woemm-betriebssystem/",
-    "priority": 2106,
+    "priority": 2107,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -45671,7 +45686,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Eine WÖMM-Managementfunktion bezeichnet eine notwendige Fähigkeit des Managementsystems von Ausrichtung und Strategie bis Betrieb, Kontrolle, Lernen und Erneuerung.",
     "url": "/begriffe/woemm-managementfunktion/",
-    "priority": 2107,
+    "priority": 2108,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -45692,7 +45707,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Klären, welche Entscheidung, Zustandsveränderung und Verantwortung der Methodenprozess tatsächlich unterstützen soll.",
     "url": "/begriffe/woems-auftragsklaerung/",
-    "priority": 2108,
+    "priority": 2109,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -45713,7 +45728,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Eine WÖMS-Methodenkarte beschreibt Zweck, Einsatzrahmen, benötigte Informationen, Arbeitsschritte, erwartete Arbeitsergebnisse, Schnittstellen, Formularfelder sowie Qualitäts- und Schutzregeln einer Methode.",
     "url": "/begriffe/woems-methodenkarte/",
-    "priority": 2109,
+    "priority": 2110,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -45734,7 +45749,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Der WÖMS-Methodenkreislauf strukturiert Wahrnehmen, Abgrenzen, Verstehen, Modellieren, Bewerten, Gestalten, Entscheiden, Umsetzen, Beobachten und Lernen.",
     "url": "/begriffe/woems-methodenkreislauf/",
-    "priority": 2110,
+    "priority": 2111,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -45755,7 +45770,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Das WÖMS-Methodenregister führt stabile Methoden-IDs, Version, Herkunft, Evidenzstatus, Änderungsanträge, Konsultation, Freigabe und Release Notes.",
     "url": "/begriffe/woems-methodenregister/",
-    "priority": 2111,
+    "priority": 2112,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -45776,7 +45791,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "WÖMS-Moderation sichert Mandat, Begriffe, Betroffenenperspektiven, Grenzen, Evidenztrennung, Widerspruch, Entscheidungsfähigkeit und Dokumentation.",
     "url": "/begriffe/woems-moderation/",
-    "priority": 2112,
+    "priority": 2113,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -45797,7 +45812,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Die 68 WÖMS-Realisierungs- und Betriebsmethoden der Kategorien I bis P operationalisieren Foresight, Capabilities, Prozesse, Produktbetrieb, Change, Delivery, Daten, KI, Resilienz, Kontrollen und Assurance.",
     "url": "/begriffe/woems-realisierungs-und-betriebsmethoden/",
-    "priority": 2113,
+    "priority": 2114,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -45818,7 +45833,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Bewerten, wie weit Wirkung von Berichterstattung zu integrierter, rückgekoppelter und transformativer Steuerung entwickelt ist.",
     "url": "/begriffe/woems-reifegrad-und-faehigkeitsassessment/",
-    "priority": 2114,
+    "priority": 2115,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -45839,7 +45854,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Eine WÖMS-Workshop-Journey verbindet ausgewählte Kernmethoden zu einem vollständigen Arbeitsprozess mit Vorbereitung, Vertiefung, Entscheidung und Review.",
     "url": "/begriffe/woems-workshop-journey/",
-    "priority": 2115,
+    "priority": 2116,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -45861,7 +45876,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "WR ist die Kurzform für Wirkungsrat. Der Wirkungsrat ist die unabhängige Institution zur Sicherung, Prüfung und Weiterentwicklung der Wirkungslogik.",
     "url": "/begriffe/wr/",
-    "priority": 2116,
+    "priority": 2117,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -45882,7 +45897,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "WStG 3.0 ist der Entwurfsrahmen für Begriffe, Schutzregeln, Governance, Daten, Rechtsschutz, Evaluation und gesetzlich aktivierte Steuermodule.",
     "url": "/begriffe/wstg/",
-    "priority": 2117,
+    "priority": 2118,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -45904,7 +45919,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wu Wei wird häufig als Nicht-Erzwingen oder Handeln im Einklang mit der Situation verstanden. Es meint nicht Nichtstun, sondern eine Form von Handeln, das die Eigenlogik von Prozessen achtet.",
     "url": "/begriffe/wu-wei/",
-    "priority": 2118,
+    "priority": 2119,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -45925,7 +45940,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wu wei wird häufig als Nicht-Erzwingen oder nicht-verkrampftes Handeln übersetzt. Es bezeichnet nicht bloße Passivität, sondern ein Handeln, das mit dem System arbeitet statt gegen seine Eigenlogik.",
     "url": "/begriffe/wu-wei-wirksames-nicht-erzwingen/",
-    "priority": 2119,
+    "priority": 2120,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -45947,7 +45962,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "WUStG ist das Modul für produkt- und leistungsbezogene Wirkungsumsatzsteuer als Pilot- und Zielarchitektur.",
     "url": "/begriffe/wustg/",
-    "priority": 2120,
+    "priority": 2121,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -45968,7 +45983,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "XBRL macht Reportingdaten maschinenlesbar; WÖk nutzt solche Daten erst nach fachlicher Einordnung als Wirkungs- oder Steuerungsdaten.",
     "url": "/begriffe/xbrl/",
-    "priority": 2121,
+    "priority": 2122,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -45988,7 +46003,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Xenophobie bezeichnet Fremdenfeindlichkeit oder Abwertung von Menschen, die als fremd markiert werden.",
     "url": "/begriffe/xenophobie/",
-    "priority": 2122,
+    "priority": 2123,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -46013,7 +46028,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Jugendbeteiligung sichert, dass junge Menschen in Entscheidungen mit langfristiger Wirkung einbezogen werden.",
     "url": "/begriffe/youth-jugendbeteiligung/",
-    "priority": 2123,
+    "priority": 2124,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -46033,7 +46048,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Wirkungszeit, Regenerationszeit, Entscheidungszeit, Nutzungszeit und Generationenfolgen explizit machen.",
     "url": "/begriffe/zeit-verzoegerungs-und-generationenkarte/",
-    "priority": 2124,
+    "priority": 2125,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -46054,7 +46069,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zeitfensterblindheit beschreibt die Tendenz, Wirkungen außerhalb des betrachteten Zeitfensters zu übersehen. Dadurch erscheinen Maßnahmen kurzfristig billig oder wirksam, obwohl langfristige Schäden oder Nutzen ausgeblendet werden.",
     "url": "/begriffe/zeitfensterblindheit/",
-    "priority": 2125,
+    "priority": 2126,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -46079,7 +46094,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zeitwirkung beschreibt, wann Wirkung entsteht, wie lange sie anhält und wen sie später trifft.",
     "url": "/begriffe/zeitwirkung/",
-    "priority": 2126,
+    "priority": 2127,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -46099,7 +46114,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zementverwertung nutzt zerkleinerte Rotorblattmaterialien als Ersatzbrennstoff oder Rohstoffersatz in der Zementindustrie.",
     "url": "/begriffe/zementverwertung-rotorblaetter/",
-    "priority": 2127,
+    "priority": 2128,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -46121,7 +46136,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zen ist eine buddhistische Praxis- und Denktradition, die unmittelbare Erfahrung, Aufmerksamkeit, Übung, Nicht-Anhaftung und Gegenwärtigkeit betont. Achtsamkeit bezeichnet wache, nicht-automatische Aufmerksamkeit für das eigene Handeln und seine Folgen.",
     "url": "/begriffe/zen/",
-    "priority": 2128,
+    "priority": 2129,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -46142,7 +46157,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zentralverwaltungswirtschaft ist eine Form der Planwirtschaft, in der zentrale Behörden wirtschaftliche Entscheidungen administrativ vorgeben.",
     "url": "/begriffe/zentralverwaltungswirtschaft/",
-    "priority": 2129,
+    "priority": 2130,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -46162,7 +46177,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zero-Sum-Bias bezeichnet die Tendenz, gesellschaftliche Fragen als Nullsummenspiel zu lesen: Was eine Gruppe gewinnt, müsse eine andere verlieren. Wirkungsökonomisch blockiert dieser Bias Kooperation und positive Systemwirkung.",
     "url": "/begriffe/zero-sum-bias/",
-    "priority": 2130,
+    "priority": 2131,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -46182,7 +46197,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zertifizierung ist die formale Bestätigung, dass bestimmte Anforderungen, Standards oder Kriterien erfüllt sind. In der WÖk kann sie Vertrauen unterstützen, ersetzt aber keine echte Wirkungsprüfung und keine Rückkopplung realer Zustandsveränderung.",
     "url": "/begriffe/zertifizierung/",
-    "priority": 2131,
+    "priority": 2132,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -46202,7 +46217,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein wirkungsfähiges Zielbild und realistische Zwischenzustände für Organisation, Prozesse, Daten, Technologie und Governance gestalten.",
     "url": "/begriffe/zielarchitektur-und-uebergangszustaende/",
-    "priority": 2132,
+    "priority": 2133,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -46226,7 +46241,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "TARGET_ALIGNMENT_NOT_CAUSALITY: Die Zuordnung zu SDG- oder DNS-Zielen ist eine Referenz, kein Nachweis, dass ein Vorhaben die gewünschte Wirkung verursacht.",
     "url": "/begriffe/zielbezug-und-wirkung/",
-    "priority": 2133,
+    "priority": 2134,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -46251,7 +46266,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Zielkonflikt entsteht, wenn mehrere legitime Ziele nicht gleichzeitig vollständig erreicht werden können.",
     "url": "/begriffe/zielkonflikt/",
-    "priority": 2134,
+    "priority": 2135,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -46279,7 +46294,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zielkonflikte sind Spannungen zwischen legitimen Wirkungszielen, etwa wenn Klima, soziale Gerechtigkeit, Gesundheit, Freiheit, Wirtschaft, Datenschutz oder Demokratie nicht gleichzeitig ohne Nebenwirkungen verbessert werden können.",
     "url": "/begriffe/zielkonflikte/",
-    "priority": 2135,
+    "priority": 2136,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -46300,7 +46315,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Zielzustand ist der angestrebte Zustand, an dem Wirkung bewertet wird. Er beschreibt, was sich für Mensch, Planet oder Demokratie konkret verbessern, stabilisieren oder regenerieren soll.",
     "url": "/begriffe/zielzustand/",
-    "priority": 2136,
+    "priority": 2137,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -46320,7 +46335,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zinslast bezeichnet die laufenden Zinszahlungen auf öffentliche Schulden. Wirkungsökonomisch zählt nicht nur ihre Höhe, sondern ob der zugrunde liegenden Schuld ein wirksamer gesellschaftlicher Gegenwert gegenübersteht.",
     "url": "/begriffe/zinslast/",
-    "priority": 2137,
+    "priority": 2138,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -46340,7 +46355,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zinslast ohne Gegenwert bezeichnet Zinszahlungen auf öffentliche Schulden, deren zugrunde liegende Ausgaben keine ausreichende positive Wirkung erzeugt haben.",
     "url": "/begriffe/zinslast-ohne-gegenwert/",
-    "priority": 2138,
+    "priority": 2139,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -46360,7 +46375,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein zirkuläres Geschäftsmodell schafft Wert, indem Produkte, Materialien oder Funktionen möglichst lange im Kreislauf bleiben.",
     "url": "/begriffe/zirkulaeres-geschaeftsmodell/",
-    "priority": 2139,
+    "priority": 2140,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -46390,7 +46405,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zirkularität beschreibt, wie gut Materialien, Produkte und Werte im Kreislauf gehalten werden.",
     "url": "/begriffe/zirkularitaet/",
-    "priority": 2140,
+    "priority": 2141,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -46410,7 +46425,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zivilgesellschaft umfasst freiwillige, nichtstaatliche Formen gesellschaftlicher Organisation und Beteiligung, etwa Vereine, Initiativen, NGOs, Bewegungen, Stiftungen und Bürgergruppen.",
     "url": "/begriffe/zivilgesellschaft/",
-    "priority": 2141,
+    "priority": 2142,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -46430,7 +46445,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zivilgesellschaftsrepression beschreibt Druck, Verbote oder Einschüchterung gegenüber NGOs, Initiativen, Medien oder Bewegungen.",
     "url": "/begriffe/zivilgesellschaftsrepression/",
-    "priority": 2142,
+    "priority": 2143,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -46454,7 +46469,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zugangsgerechtigkeit fragt, ob Menschen Leistungen, Räume, Informationen und Chancen tatsächlich erreichen können.",
     "url": "/begriffe/zugangsgerechtigkeit/",
-    "priority": 2143,
+    "priority": 2144,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -46476,7 +46491,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zugehörigkeit bedeutet, dass Menschen sich sicher, anerkannt, beteiligt und verantwortlich eingebunden fühlen.",
     "url": "/begriffe/zugehoerigkeit/",
-    "priority": 2144,
+    "priority": 2145,
     "autoLinkAllowed": true,
     "maxAutoLinksPerPage": 1,
     "allowedContexts": [
@@ -46497,7 +46512,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Zukunftsbild ist eine orientierende Vorstellung davon, wohin sich ein System, eine Gesellschaft oder ein Handlungsfeld entwickeln kann.",
     "url": "/begriffe/zukunftsbild/",
-    "priority": 2145,
+    "priority": 2146,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -46517,7 +46532,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zukunftsdisziplin ersetzt bloße Schuldenangst durch die Pflicht, finanzielle und nicht-finanzielle Zukunftslasten gemeinsam sichtbar zu machen.",
     "url": "/begriffe/zukunftsdisziplin/",
-    "priority": 2146,
+    "priority": 2147,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -46541,7 +46556,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zukunftsfähigkeit beschreibt, ob ein System unter künftigen Bedingungen tragfähig, lernfähig und gerecht bleiben kann.",
     "url": "/begriffe/zukunftsfaehigkeit/",
-    "priority": 2147,
+    "priority": 2148,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -46561,7 +46576,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zukunftskosten sind spätere Belastungen, die durch heutige Fehlentscheidungen, Unterlassungen oder negative Wirkungen entstehen. Sie können finanziell, ökologisch, sozial, demokratisch oder sicherheitspolitisch sein.",
     "url": "/begriffe/zukunftskosten/",
-    "priority": 2148,
+    "priority": 2149,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -46581,7 +46596,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zukunftsschulden sind nicht nur finanzielle Staatsschulden, sondern alle heute erzeugten oder nicht verhinderten Lasten, die künftige Generationen ökologisch, sozial, infrastrukturell, demokratisch oder sicherheitspolitisch tragen müssen.",
     "url": "/begriffe/zukunftsschulden/",
-    "priority": 2149,
+    "priority": 2150,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -46603,7 +46618,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zurechnung ohne Scheingenauigkeit macht Unsicherheit sichtbar und unterscheidet direkte Zurechnung, plausible Mitwirkung, systemische Mitverantwortung und unklare Datenlage.",
     "url": "/begriffe/zurechnung-ohne-scheingenauigkeit/",
-    "priority": 2150,
+    "priority": 2151,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -46623,7 +46638,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Ein Zuschuss ist eine meist nicht rückzahlbare finanzielle Unterstützung für einen bestimmten Zweck, eine Investition oder eine Leistung.",
     "url": "/begriffe/zuschuss/",
-    "priority": 2151,
+    "priority": 2152,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",
@@ -46643,7 +46658,7 @@ window.WIRKUNG_GLOSSARY_TERMS = [
     ],
     "definition": "Zyklenfestigkeit beschreibt, wie viele Lade- und Entladezyklen eine Batterie übersteht, bevor ihre Leistungsfähigkeit deutlich sinkt.",
     "url": "/begriffe/zyklenfestigkeit/",
-    "priority": 2152,
+    "priority": 2153,
     "autoLinkAllowed": true,
     "allowedContexts": [
       "home",

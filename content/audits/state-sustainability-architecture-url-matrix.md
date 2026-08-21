@@ -1,9 +1,9 @@
 # #253 State sustainability architecture URL/file audit
 
-- Sitemap routes: **2045**
+- Sitemap routes: **2048**
 - Sitemap routes without directly resolved source HTML: **0**
-- Extra tracked source HTML not in sitemap: **14199**
-- Routes with non-default #253 action: **1421**
+- Extra tracked source HTML not in sitemap: **14200**
+- Routes with non-default #253 action: **1424**
 - Routes with Wirkungsblindheit/novelty/absence claim signals: **75**
 
 Contract fields on every matrix item: `source_path`, `public_url`, `historical_publication`, `relevance`, `classification`, `required_action`, `source_refs`, `status`.
@@ -15,11 +15,11 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/ | `index.html` | CORRECT_OVERCLAIM, ADD_STATE_SUSTAINABILITY_ARCHITECTURE, ADD_SOURCE_LINKS | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | https://wirkungsoekonomie.de/verstehen.html | `verstehen.html` | ADD_STATE_SUSTAINABILITY_ARCHITECTURE | dns, alternativen |
 | https://wirkungsoekonomie.de/wirkungsoekonomie.html | `wirkungsoekonomie.html` | ADD_STATE_SUSTAINABILITY_ARCHITECTURE | dns |
-| https://wirkungsoekonomie.de/modell.html | `modell.html` | CORRECT_OVERCLAIM, ADD_DNS_REFERENCE, ADD_GGO_GFA_REFERENCE | wirkungsblind, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| https://wirkungsoekonomie.de/modell.html | `modell.html` | CORRECT_OVERCLAIM, ADD_DNS_REFERENCE, ADD_GGO_GFA_REFERENCE | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | https://wirkungsoekonomie.de/kompass.html | `kompass.html` | ADD_STATE_SUSTAINABILITY_ARCHITECTURE | nachhaltigkeitspruefung |
 | https://wirkungsoekonomie.de/fuer/politik.html | `fuer/politik.html` | REWRITE_REQUIRED, ADD_GGO_GFA_REFERENCE, ADD_ENAP_REFERENCE, ADD_DNS_REFERENCE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | https://wirkungsoekonomie.de/evidenz/ | `evidenz/index.html` | ADD_SOURCE_LINKS | — |
-| https://wirkungsoekonomie.de/methodik/ | `methodik/index.html` | ADD_STATE_SUSTAINABILITY_ARCHITECTURE | nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| https://wirkungsoekonomie.de/methodik/ | `methodik/index.html` | ADD_STATE_SUSTAINABILITY_ARCHITECTURE | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | https://wirkungsoekonomie.de/methodik/datenbasis.html | `methodik/datenbasis.html` | ADD_DNS_REFERENCE, ADD_GGO_GFA_REFERENCE, ADD_ENAP_REFERENCE, ADD_SOURCE_LINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | https://wirkungsoekonomie.de/methodik/daten-standards-regularien.html | `methodik/daten-standards-regularien.html` | ADD_STATE_SUSTAINABILITY_ARCHITECTURE | nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | https://wirkungsoekonomie.de/methodik/externe-quellen.html | `methodik/externe-quellen.html` | ADD_DNS_REFERENCE, ADD_GGO_GFA_REFERENCE, ADD_ENAP_REFERENCE, ADD_SOURCE_LINKS | nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
@@ -114,6 +114,21 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/werkstatt/dossiers/staat-recht-demokratie/buergerbeteiligung-wirkungsdemokratie/ | `werkstatt/dossiers/staat-recht-demokratie/buergerbeteiligung-wirkungsdemokratie/index.html` | REVIEW_REQUIRED | folgenabschaetzung, evaluation |
 | https://wirkungsoekonomie.de/blog/nachhaltigkeit-ist-keine-parteifarbe.html | `blog/nachhaltigkeit-ist-keine-parteifarbe.html` | NO_CHANGE_REQUIRED, CURRENT_REFERENCE | folgenabschaetzung, nachhaltigkeitspruefung, enap, dns, alternativen, evaluation, novelty_or_absence |
 | https://wirkungsoekonomie.de/blog/enap-woek-benchmark-fuenf-bundesvorhaben.html | `blog/enap-woek-benchmark-fuenf-bundesvorhaben.html` | BENCHMARK_REFERENCE, ADD_BENCHMARK_COMPARISON | folgenabschaetzung, nachhaltigkeitspruefung, enap, dns, alternativen, evaluation, novelty_or_absence |
+| https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/ | `bibliothek/woek-begriffsleitfaden-fuehrend/index.html` | REVIEW_REQUIRED | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation, novelty_or_absence |
+| https://wirkungsoekonomie.de/bibliothek/woek-master-items-register/ | `bibliothek/woek-master-items-register/index.html` | REVIEW_REQUIRED | nachhaltigkeitspruefung, enap, egfa, dns |
+| https://wirkungsoekonomie.de/begriffe/deutsche-nachhaltigkeitsstrategie/ | `begriffe/deutsche-nachhaltigkeitsstrategie/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, dns |
+| https://wirkungsoekonomie.de/begriffe/gemeinsame-geschaeftsordnung-der-bundesministerien/ | `begriffe/gemeinsame-geschaeftsordnung-der-bundesministerien/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| https://wirkungsoekonomie.de/begriffe/gesetzesfolgenabschaetzung/ | `begriffe/gesetzesfolgenabschaetzung/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
+| https://wirkungsoekonomie.de/begriffe/nachhaltigkeitspruefung-des-bundes/ | `begriffe/nachhaltigkeitspruefung-des-bundes/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, dns, evaluation |
+| https://wirkungsoekonomie.de/begriffe/elektronische-nachhaltigkeitspruefung/ | `begriffe/elektronische-nachhaltigkeitspruefung/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns |
+| https://wirkungsoekonomie.de/begriffe/e-gesetzgebung/ | `begriffe/e-gesetzgebung/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa |
+| https://wirkungsoekonomie.de/begriffe/dns-indikator/ | `begriffe/dns-indikator/index.html` | ADD_GLOSSARY_CROSSLINKS | dns |
+| https://wirkungsoekonomie.de/begriffe/zielbezug-und-wirkung/ | `begriffe/zielbezug-und-wirkung/index.html` | ADD_GLOSSARY_CROSSLINKS | dns |
+| https://wirkungsoekonomie.de/begriffe/ex-ante-folgenpruefung-und-reality-check/ | `begriffe/ex-ante-folgenpruefung-und-reality-check/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, evaluation |
+| https://wirkungsoekonomie.de/begriffe/staatliche-nachhaltigkeitsarchitektur/ | `begriffe/staatliche-nachhaltigkeitsarchitektur/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, evaluation |
+| https://wirkungsoekonomie.de/begriffe/parlamentarischer-beirat-fuer-nachhaltige-entwicklung-und-zukunftsfragen/ | `begriffe/parlamentarischer-beirat-fuer-nachhaltige-entwicklung-und-zukunftsfragen/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, dns |
+| https://wirkungsoekonomie.de/begriffe/state-gfa-enap-benchmark/ | `begriffe/state-gfa-enap-benchmark/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, dns |
+| https://wirkungsoekonomie.de/begriffe/wirkungsblindheit/ | `begriffe/wirkungsblindheit/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, dns, evaluation |
 | https://wirkungsoekonomie.de/quellenarchiv/ | `quellenarchiv/index.html` | ADD_SOURCE_LINKS | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-e-0001/ | `quellenarchiv/wok-e-0001/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-e-0002/ | `quellenarchiv/wok-e-0002/index.html` | ADD_SOURCE_LINKS | — |
@@ -1418,28 +1433,16 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/quellenarchiv/wok-q-9035/ | `quellenarchiv/wok-q-9035/index.html` | ADD_SOURCE_LINKS | dns |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-q-9036/ | `quellenarchiv/wok-q-9036/index.html` | ADD_SOURCE_LINKS | nachhaltigkeitspruefung, dns |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-q-9037/ | `quellenarchiv/wok-q-9037/index.html` | ADD_SOURCE_LINKS | nachhaltigkeitspruefung, enap, dns |
-| https://wirkungsoekonomie.de/bibliothek/woek-begriffsleitfaden-fuehrend/ | `bibliothek/woek-begriffsleitfaden-fuehrend/index.html` | REVIEW_REQUIRED | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation, novelty_or_absence |
-| https://wirkungsoekonomie.de/bibliothek/woek-master-items-register/ | `bibliothek/woek-master-items-register/index.html` | REVIEW_REQUIRED | nachhaltigkeitspruefung, enap, egfa, dns |
-| https://wirkungsoekonomie.de/begriffe/deutsche-nachhaltigkeitsstrategie/ | `begriffe/deutsche-nachhaltigkeitsstrategie/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, dns |
-| https://wirkungsoekonomie.de/begriffe/gemeinsame-geschaeftsordnung-der-bundesministerien/ | `begriffe/gemeinsame-geschaeftsordnung-der-bundesministerien/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
-| https://wirkungsoekonomie.de/begriffe/gesetzesfolgenabschaetzung/ | `begriffe/gesetzesfolgenabschaetzung/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation |
-| https://wirkungsoekonomie.de/begriffe/nachhaltigkeitspruefung-des-bundes/ | `begriffe/nachhaltigkeitspruefung-des-bundes/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, dns, evaluation |
-| https://wirkungsoekonomie.de/begriffe/elektronische-nachhaltigkeitspruefung/ | `begriffe/elektronische-nachhaltigkeitspruefung/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns |
-| https://wirkungsoekonomie.de/begriffe/e-gesetzgebung/ | `begriffe/e-gesetzgebung/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa |
-| https://wirkungsoekonomie.de/begriffe/dns-indikator/ | `begriffe/dns-indikator/index.html` | ADD_GLOSSARY_CROSSLINKS | dns |
-| https://wirkungsoekonomie.de/begriffe/zielbezug-und-wirkung/ | `begriffe/zielbezug-und-wirkung/index.html` | ADD_GLOSSARY_CROSSLINKS | dns |
-| https://wirkungsoekonomie.de/begriffe/ex-ante-folgenpruefung-und-reality-check/ | `begriffe/ex-ante-folgenpruefung-und-reality-check/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, evaluation |
-| https://wirkungsoekonomie.de/begriffe/staatliche-nachhaltigkeitsarchitektur/ | `begriffe/staatliche-nachhaltigkeitsarchitektur/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, evaluation |
-| https://wirkungsoekonomie.de/begriffe/parlamentarischer-beirat-fuer-nachhaltige-entwicklung-und-zukunftsfragen/ | `begriffe/parlamentarischer-beirat-fuer-nachhaltige-entwicklung-und-zukunftsfragen/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, dns |
-| https://wirkungsoekonomie.de/begriffe/state-gfa-enap-benchmark/ | `begriffe/state-gfa-enap-benchmark/index.html` | ADD_GLOSSARY_CROSSLINKS | folgenabschaetzung, nachhaltigkeitspruefung, enap, dns |
-| https://wirkungsoekonomie.de/begriffe/wirkungsblindheit/ | `begriffe/wirkungsblindheit/index.html` | ADD_GLOSSARY_CROSSLINKS | wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, dns, evaluation |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-q-9045/ | `quellenarchiv/wok-q-9045/index.html` | ADD_SOURCE_LINKS | — |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-q-9046/ | `quellenarchiv/wok-q-9046/index.html` | ADD_SOURCE_LINKS | enap, dns, alternativen |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-q-9047/ | `quellenarchiv/wok-q-9047/index.html` | ADD_SOURCE_LINKS | enap, dns |
 
 ## Claim-signal review
 
 Signals are review candidates, not automatic errors.
 
 - `index.html` — wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation — Qualify Wirkungsblindheit; add 'Deutschland hat bereits / WÖk ergänzt' architecture block and primary-source links.
-- `modell.html` — wirkungsblind, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation — Add German DNS operationalisation and existing GGO/GFA/eNAP architecture; define Wirkungsblindheit as incomplete causal/decision feedback.
+- `modell.html` — wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation — Add German DNS operationalisation and existing GGO/GFA/eNAP architecture; define Wirkungsblindheit as incomplete causal/decision feedback.
 - `fuer/akademie.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
 - `fuer/gesundheit.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
 - `fuer/rente.html` — novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
@@ -1508,16 +1511,16 @@ Signals are review candidates, not automatic errors.
 - `blog/wie-wirksam-ist-das-sondervermoegen-wirklich.html` — wirkungsblind, alternativen, evaluation, novelty_or_absence — No material #253 change identified by path rule; semantic scan still applies.
 - `blog/nachhaltigkeit-ist-keine-parteifarbe.html` — folgenabschaetzung, nachhaltigkeitspruefung, enap, dns, alternativen, evaluation, novelty_or_absence — Preserve as current source-bound reference; crosslink from relevant current pages.
 - `blog/enap-woek-benchmark-fuenf-bundesvorhaben.html` — folgenabschaetzung, nachhaltigkeitspruefung, enap, dns, alternativen, evaluation, novelty_or_absence — Use as canonical five-case calibration corpus; recheck GGO §§43/44 claims and keep public-GFA vs public-eNAP provenance explicit.
+- `bibliothek/woek-begriffsleitfaden-fuehrend/index.html` — wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation, novelty_or_absence — Review published artefacts; add visible current-method note/erratum when materially required; never silently rewrite historical files.
+- `begriffe/wirkungsblindheit/index.html` — wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, dns, evaluation — Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 - `quellenarchiv/index.html` — wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation — Add official primary sources with function/version/status; separate public GFA documentation from public eNAP-export provenance.
 - `quellenarchiv/wok-q-0465/index.html` — novelty_or_absence — Add official primary sources with function/version/status; separate public GFA documentation from public eNAP-export provenance.
 - `quellenarchiv/wok-q-0843/index.html` — wirkungsblind — Add official primary sources with function/version/status; separate public GFA documentation from public eNAP-export provenance.
-- `bibliothek/woek-begriffsleitfaden-fuehrend/index.html` — wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, egfa, dns, alternativen, evaluation, novelty_or_absence — Review published artefacts; add visible current-method note/erratum when materially required; never silently rewrite historical files.
-- `begriffe/wirkungsblindheit/index.html` — wirkungsblind, folgenabschaetzung, nachhaltigkeitspruefung, enap, dns, evaluation — Crosslink canonical DNS/GFA/sustainability assessment/eNAP/eGFA/DNS-indicator and target-vs-impact terms; do not relabel established terms as WÖk inventions.
 
 ## Recursive non-HTML publication/support surfaces
 
-- Tracked support text files inventoried: **749**
-- Combined matrix items (routes + extra HTML + support): **16993**
+- Tracked support text files inventoried: **753**
+- Combined matrix items (routes + extra HTML + support): **17001**
 - Every matrix item exposes the #253 contract fields: source_path, public_url, historical_publication, relevance, classification, required_action, source_refs and status.
 - Includes llms.txt, sitemap/search metadata, structured-data registries, glossary/source archive, library/journal/reference inputs and generators/workflows.
 
@@ -1554,6 +1557,7 @@ Signals are review candidates, not automatic errors.
 | `assets/search/search-curated-entrypoints.json` | search_index_or_generator | NO_CHANGE_REQUIRED | wirkungsblind |
 | `assets/search/search-dictionary.json` | search_index_or_generator | NO_CHANGE_REQUIRED | wirkungsblind, alternativen |
 | `assets/search/search-index.json` | search_index_or_generator | NO_CHANGE_REQUIRED | — |
+| `content/audits/nwi-acronym-disambiguation.json` | support_text | ADD_SOURCE_LINKS | folgenabschaetzung |
 | `content/audits/state-sustainability-architecture-audit-contract.md` | support_text | ADD_SOURCE_LINKS | enap, egfa, dns, alternativen, evaluation |
 | `content/dashboards/dashboardModels.json` | support_text | NO_CHANGE_REQUIRED | evaluation |
 | `content/documents/documents.json` | support_text | ADD_SOURCE_LINKS | folgenabschaetzung, evaluation |
@@ -1567,6 +1571,7 @@ Signals are review candidates, not automatic errors.
 | `content/glossary/imports/iooi-wirkungsarchitektur.json` | glossary_source_or_generator | ADD_GLOSSARY_CROSSLINKS, ADD_SOURCE_LINKS | alternativen, evaluation |
 | `content/glossary/imports/legacy-detail-definitions.json` | glossary_source_or_generator | ADD_GLOSSARY_CROSSLINKS, ADD_SOURCE_LINKS | alternativen |
 | `content/glossary/imports/maga-diskursformeln.json` | glossary_source_or_generator | ADD_GLOSSARY_CROSSLINKS, ADD_SOURCE_LINKS | — |
+| `content/glossary/imports/nwi-disambiguation.json` | glossary_source_or_generator | ADD_GLOSSARY_CROSSLINKS, ADD_SOURCE_LINKS | — |
 | `content/glossary/imports/phineo-wirkungslogik.json` | glossary_source_or_generator | ADD_GLOSSARY_CROSSLINKS, ADD_SOURCE_LINKS | — |
 | `content/glossary/imports/psychologie-und-kommunikation-definitionen.json` | glossary_source_or_generator | ADD_GLOSSARY_CROSSLINKS, ADD_SOURCE_LINKS | alternativen |
 | `content/glossary/imports/recht-wirtschaft-innovation-klima.json` | glossary_source_or_generator | ADD_GLOSSARY_CROSSLINKS, ADD_SOURCE_LINKS | wirkungsblind |
@@ -1836,7 +1841,7 @@ Signals are review candidates, not automatic errors.
 
 ## Review/action closure
 
-- Combined reviewed items: **16994**
+- Combined reviewed items: **17002**
 - Open semantic/action reviews after deterministic projection: **0**
 - Broad novelty/Wirkungsblindheit hits were dispositioned by a second-pass contextual state-absence review; isolated words are not treated as absence claims.
 - `AGENTS.md` is explicitly inventoried as a corrected current guardrail.

@@ -222,7 +222,7 @@ const html = `<!doctype html>
           </div>
           <p id="search-help" class="search-help">Without input, you see curated starting points. From 2 characters onward, the search shows suggestions, related topics and grouped results instead of one long raw list.</p>
           <p id="search-status" class="search-status" data-search-status aria-live="polite">Enter a search term.</p>
-          <div class="search-live-suggestions" data-search-suggestions hidden aria-label="Search suggestions"></div>
+          <div class="search-live-suggestions" data-search-suggestions hidden role="region" aria-label="Search suggestions"></div>
         </form>
 
         <div class="search-quick-filter-panel" aria-label="Quick filters">

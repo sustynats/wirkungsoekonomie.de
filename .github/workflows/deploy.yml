@@ -38,6 +38,10 @@ jobs:
         run: |
           python tools/apply_state_sustainability_wiwi_generator.py
           git diff --exit-code -- scripts/wirkungswissenschaften/build-wirkungswissenschaften-hub.mjs
+      - name: Verify committed NWI disambiguation source
+        run: |
+          python tools/apply_state_sustainability_build_integration.py
+          git diff --exit-code -- scripts/glossary/build-glossary-registry.mjs
       - name: Verify #253 state sustainability architecture
         run: |
           python tools/audit_state_sustainability_architecture_fast.py --root . --output content/audits/state-sustainability-architecture-url-matrix.json --markdown content/audits/state-sustainability-architecture-url-matrix.md

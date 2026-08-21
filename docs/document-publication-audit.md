@@ -4,11 +4,11 @@ Stand: automatisch erzeugt durch `scripts/audit-documents-for-publication.mjs`
 
 ## Ergebnis
 
-- Kuratierte Metadatenkarten: 45
-- Öffentliche / fachöffentliche Dokumente in normaler Bibliothek: 31
-- Archivdokumente nur im Archiv: 11
+- Kuratierte Metadatenkarten: 50
+- Öffentliche / fachöffentliche Dokumente in normaler Bibliothek: 33
+- Archivdokumente nur im Archiv: 14
 - Review/interne/hidden Dokumente nicht als Kachel und nicht als Download: 3
-- Red-Flag-Treffer: 41
+- Red-Flag-Treffer: 44
 - Sanitized HTML-Dateien mit entfernten direkten Non-Public-Downloadlinks: 0
 
 ## Red-Flag-Treffer
@@ -21,6 +21,7 @@ Stand: automatisch erzeugt durch `scripts/audit-documents-for-publication.mjs`
 | Leitbild für Mensch, Planet und Demokratie | public/downloads/originals/Leitbild für Mensch Planet und Demokratie.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | WÖk-Manifest | public/downloads/originals/WÖk-Manifest.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Grundlagenpapier Wirkungsökonomie | public/downloads/originals/Grundlagenpapier-Wirkungsökonomie WÖk.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
+| Die Wirkungsökonomie als kooperative, lernende und wehrhafte Wirkungsordnung | assets/downloads/woek_gesamtstudie_wirkungsdilemmata_kooperation_sdgplus_v2_0.pdf | Arbeitsfassung | bleiben als Arbeits- und Diskussionsfassung gekennzeichnet. arbeitsfassung v2.0 2026-08-05 Die öffentliche Fassung trennt Theorie, Modelle, Forschungsfragen und Quellen von redaktioneller Arbeitsplanu | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Nachhaltiges Marketing-Mix | assets/pdf/imported/nachhaltiges-marketing-mix.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Nachhaltiger Einzelhandel | assets/pdf/imported/nachhaltiger-einzelhandel.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Nachhaltigkeitsstrategie für mittelständische Beratungsunternehmen | assets/pdf/imported/nachhaltigkeitsstrategie-mittelstaendische-beratungsunternehmen.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
@@ -35,12 +36,14 @@ Stand: automatisch erzeugt durch `scripts/audit-documents-for-publication.mjs`
 | Fallbeispiel: Von der CSRD zur Produktscorecard | public/downloads/originals/Beispiel-Konzern.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Systemmodell der Wirkungsökonomie | public/downloads/originals/Systemmodell-der-Wirkungsökonomie.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | WStG Oktober 2025 | public/downloads/originals/WStG_Oktober2025.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
+| Wirkungssteuer 3.0 und Wirkungssteuergesetz (WStG) 3.0 | public/downloads/originals/Wirkungssteuer_WStG_3.0_Gesamtneufassung_2026.pdf | Entwurf | WStG) 3.0 Gesamtneufassung 2026: Systemarchitektur, Gesetzesentwurf, Kommentierung, Steuerartenatlas und Umsetzungspfad Die Gesamtneufassung 3.0 ordnet Wirkungssteuer als modulare Rückkopplungsarchite | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Produktbesteuerung durch Wirkung | public/downloads/originals/WP_Produkte.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Wirkungseinkommen | public/downloads/originals/WP_Einkommen.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Working-Paper Wohnungsmarkt | public/downloads/originals/WP_Wohnungsmarkt.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Wenn Maschinen arbeiten | public/downloads/originals/Wenn-Maschinen-arbeiten.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | Von Kapital zu Wirkung | public/downloads/originals/NATS_WOeK_allgemein.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
-| WÖk Master Items Register | public/downloads/originals/WOeK_Master_Items_final_v1.2.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
+| WÖk-Masterregister v1.4 | assets/downloads/woek-register/v1.4/WOeK_Masterregister_v1.4_FINAL_2026-08-16.xlsx | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
+| WÖk-Begriffsleitfaden führend v1.4 | public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.4.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | WÖk-Begriffsleitfaden führend v1.3 | public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.3.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | WÖk-Begriffsleitfaden führend v1.2 | public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.2.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
 | IllusionMaschine Bürokratieabbau | public/downloads/originals/IllusionMaschine-Buerokratieabbau.pdf | fehlende Autorin | Keine Autorin-Angabe im extrahierten Text/Metadaten gefunden. | Metadaten/Datei bei nächster redaktioneller Prüfung ergänzen |
