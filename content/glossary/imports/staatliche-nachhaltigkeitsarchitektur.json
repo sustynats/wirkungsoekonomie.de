@@ -3,7 +3,11 @@
     {
       "termId": "deutsche-nachhaltigkeitsstrategie",
       "canonicalLabel": "Deutsche Nachhaltigkeitsstrategie (DNS)",
-      "aliases": ["DNS", "Deutsche Nachhaltigkeitsstrategie", "Nachhaltigkeitsstrategie des Bundes"],
+      "aliases": [
+        "DNS",
+        "Deutsche Nachhaltigkeitsstrategie",
+        "Nachhaltigkeitsstrategie des Bundes"
+      ],
       "shortDefinition": "Die Deutsche Nachhaltigkeitsstrategie (DNS) ist der nationale Ziel-, Management- und Monitoringrahmen, mit dem Deutschland die Agenda 2030 und ihre 17 SDGs in eigene Ziele, Indikatoren und Governance übersetzt.",
       "hoverDefinition": "Die DNS übersetzt die Agenda 2030 für Deutschland in Ziele, Indikatoren, Governance und Monitoring. Sie ist Referenzrahmen, nicht automatisch Kausalnachweis für einzelne Maßnahmen.",
       "longDefinition": "Die Deutsche Nachhaltigkeitsstrategie ist die nationale Umsetzungs- und Steuerungsarchitektur für nachhaltige Entwicklung. Sie verbindet politische Ziele und Indikatoren mit einem Managementsystem, ressortübergreifender Governance und regelmäßigem Monitoring. Die Weiterentwicklung 2025 ordnet die deutsche Nachhaltigkeitspolitik weiterhin an der Agenda 2030 aus.\n\nFür die Wirkungsökonomie ist die DNS eine amtliche Referenz-, Ziel-, Baseline- und Monitoringquelle. Eine Zuordnung zu einem DNS-Ziel oder Indikator belegt jedoch noch nicht, dass eine konkrete Maßnahme die beobachtete Veränderung verursacht hat.",
@@ -22,8 +26,20 @@
         "Bundesregierung: Steuerung der Deutschen Nachhaltigkeitsstrategie|https://www.bundesregierung.de/breg-de/schwerpunkte/wirksam-regieren/steuerung-nachhaltigkeitsstrategie-419776",
         "Destatis: Nachhaltigkeitsindikatoren|https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Nachhaltigkeitsindikatoren/_inhalt.html"
       ],
-      "relatedTerms": ["sdg", "sdg-plus", "dns-indikator", "referenzrahmen", "gesetzesfolgenabschaetzung", "nachhaltigkeitspruefung-bund", "staatliche-nachhaltigkeitsarchitektur"],
-      "doNotConfuseWith": ["SDGs: globaler Zielrahmen der Vereinten Nationen.", "SDG+: WÖk-eigene Erweiterung, keine offizielle UN- oder DNS-Kategorie.", "Wirkungsnachweis: Ziel- oder Indikatorbezug allein beweist keine Kausalität."],
+      "relatedTerms": [
+        "sdg",
+        "sdg-plus",
+        "dns-indikator",
+        "referenzrahmen",
+        "gesetzesfolgenabschaetzung",
+        "nachhaltigkeitspruefung-bund",
+        "staatliche-nachhaltigkeitsarchitektur"
+      ],
+      "doNotConfuseWith": [
+        "SDGs: globaler Zielrahmen der Vereinten Nationen.",
+        "SDG+: WÖk-eigene Erweiterung, keine offizielle UN- oder DNS-Kategorie.",
+        "Wirkungsnachweis: Ziel- oder Indikatorbezug allein beweist keine Kausalität."
+      ],
       "classicGlossary": true,
       "autoLinkAllowed": true,
       "pageUrl": "/begriffe/deutsche-nachhaltigkeitsstrategie/"
@@ -31,7 +47,11 @@
     {
       "termId": "gesetzesfolgenabschaetzung",
       "canonicalLabel": "Gesetzesfolgenabschätzung (GFA)",
-      "aliases": ["GFA", "Gesetzesfolgenabschätzung", "Folgenabschätzung von Gesetzen"],
+      "aliases": [
+        "GFA",
+        "Gesetzesfolgenabschätzung",
+        "Folgenabschätzung von Gesetzen"
+      ],
       "shortDefinition": "Die Gesetzesfolgenabschätzung des Bundes prüft die wesentlichen voraussichtlichen Auswirkungen eines Regelungsvorhabens, einschließlich beabsichtigter Wirkungen und unbeabsichtigter Nebenwirkungen.",
       "hoverDefinition": "Die GFA ist eine bestehende staatliche Prüfarchitektur. Nach GGO gehören dazu Folgen, Nebenwirkungen, Nachhaltigkeit sowie - in der Begründung - Ziel, Sachverhalt und Alternativen.",
       "longDefinition": "Die Gemeinsame Geschäftsordnung der Bundesministerien verankert eine institutionalisierte Folgenprüfung. § 43 GGO verlangt in der Gesetzesbegründung unter anderem Zielsetzung und Notwendigkeit, den zugrunde liegenden Sachverhalt und Erkenntnisquellen sowie andere Lösungsmöglichkeiten und die Gründe für ihre Ablehnung. § 44 GGO versteht unter Gesetzesfolgen die wesentlichen Auswirkungen einschließlich beabsichtigter Wirkungen und unbeabsichtigter Nebenwirkungen und verlangt die Darstellung des Nachhaltigkeitsbezugs und langfristiger Wirkungen. § 44 Absatz 7 enthält Vorgaben zur späteren Überprüfung.\n\nDie GFA ist deshalb keine bloße Kostenrechnung und keine Leerstelle, die die WÖk erst erfindet. Zugleich ist sie nicht identisch mit der vollständigen WÖk-Wirkungsarchitektur.",
@@ -45,9 +65,21 @@
       "source": "GGO §§ 43 und 44",
       "sourceSection": "Gesetzesbegründung und Gesetzesfolgen",
       "sourceProvenance": "Amtliche Verwaltungsvorschrift; WÖk-Abgrenzung auf Basis des aktuellen Methodenstandes.",
-      "officialSources": ["Gemeinsame Geschäftsordnung der Bundesministerien (GGO)|https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm"],
-      "relatedTerms": ["nachhaltigkeitspruefung-bund", "enap", "egesetzgebung-egfa", "deutsche-nachhaltigkeitsstrategie", "ex-ante-folgenpruefung-reality-check", "staatliche-nachhaltigkeitsarchitektur"],
-      "doNotConfuseWith": ["eNAP: digitales Werkzeug für die Nachhaltigkeitsprüfung, nicht die gesamte GFA.", "WÖk-Wirkungsanalyse: unabhängige Ergänzungsarchitektur, nicht die amtliche GFA selbst."],
+      "officialSources": [
+        "Gemeinsame Geschäftsordnung der Bundesministerien (GGO)|https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm"
+      ],
+      "relatedTerms": [
+        "nachhaltigkeitspruefung-bund",
+        "enap",
+        "egesetzgebung-egfa",
+        "deutsche-nachhaltigkeitsstrategie",
+        "ex-ante-folgenpruefung-reality-check",
+        "staatliche-nachhaltigkeitsarchitektur"
+      ],
+      "doNotConfuseWith": [
+        "eNAP: digitales Werkzeug für die Nachhaltigkeitsprüfung, nicht die gesamte GFA.",
+        "WÖk-Wirkungsanalyse: unabhängige Ergänzungsarchitektur, nicht die amtliche GFA selbst."
+      ],
       "classicGlossary": true,
       "autoLinkAllowed": true,
       "pageUrl": "/begriffe/gesetzesfolgenabschaetzung/"
@@ -55,7 +87,11 @@
     {
       "termId": "nachhaltigkeitspruefung-bund",
       "canonicalLabel": "Nachhaltigkeitsprüfung des Bundes",
-      "aliases": ["Nachhaltigkeitsprüfung", "Nachhaltigkeitsprüfung in der Gesetzgebung", "Nachhaltigkeitsprüfung nach GGO"],
+      "aliases": [
+        "Nachhaltigkeitsprüfung",
+        "Nachhaltigkeitsprüfung in der Gesetzgebung",
+        "Nachhaltigkeitsprüfung nach GGO"
+      ],
       "shortDefinition": "Die Nachhaltigkeitsprüfung ist der Teil der Gesetzesfolgenabschätzung, in dem geprüft und dargestellt wird, ob die Wirkungen eines Regelungsvorhabens einer nachhaltigen Entwicklung entsprechen.",
       "hoverDefinition": "Seit 2009 ist die Nachhaltigkeitsprüfung in der Bundesgesetzgebung institutionell verankert; geprüft werden unter anderem betroffene SDGs sowie Ziele und Indikatoren der DNS.",
       "longDefinition": "Bei Bundesregelungsvorhaben ist im Rahmen der Gesetzesfolgenabschätzung darzustellen, ob die Wirkungen einer nachhaltigen Entwicklung entsprechen. Das BMJV beschreibt dafür die Prüfung betroffener SDGs und Zielvorgaben sowie von Zielen und Indikatoren der Deutschen Nachhaltigkeitsstrategie. Seit 2018 unterstützt eNAP diese Prüfung elektronisch.\n\nEine veröffentlichte Darstellung von Nachhaltigkeitsaspekten in einer Gesetzesbegründung ist öffentliche GFA-/Nachhaltigkeitsprüfungsdokumentation. Sie ist aber nicht automatisch als wort- oder byteidentischer öffentlicher eNAP-Export zu bezeichnen.",
@@ -71,7 +107,13 @@
         "BMJV: Nachhaltige Gesetzgebung|https://www.bmj.de/DE/ministerium/nachhaltigkeit/gesetzgebung/gesetzgebung_artikel.html",
         "GGO §§ 43 und 44|https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm"
       ],
-      "relatedTerms": ["gesetzesfolgenabschaetzung", "enap", "deutsche-nachhaltigkeitsstrategie", "dns-indikator", "zielbezug-vs-wirkung"],
+      "relatedTerms": [
+        "gesetzesfolgenabschaetzung",
+        "enap",
+        "deutsche-nachhaltigkeitsstrategie",
+        "dns-indikator",
+        "zielbezug-vs-wirkung"
+      ],
       "classicGlossary": true,
       "autoLinkAllowed": true,
       "pageUrl": "/begriffe/nachhaltigkeitspruefung-bund/"
@@ -79,7 +121,10 @@
     {
       "termId": "enap",
       "canonicalLabel": "Elektronische Nachhaltigkeitsprüfung (eNAP)",
-      "aliases": ["eNAP", "elektronische Nachhaltigkeitsprüfung"],
+      "aliases": [
+        "eNAP",
+        "elektronische Nachhaltigkeitsprüfung"
+      ],
       "shortDefinition": "eNAP ist das elektronische Prüfwerkzeug des Bundes für die Nachhaltigkeitsprüfung von Regelungsvorhaben und ist in die E-Gesetzgebung beziehungsweise eGFA eingebettet.",
       "hoverDefinition": "eNAP unterstützt die staatliche Nachhaltigkeitsprüfung. Ein eNAP-Zielbezug ist keine eigenständige Kausalitäts- oder Wirkungsvalidierung.",
       "longDefinition": "Die elektronische Nachhaltigkeitsprüfung eNAP unterstützt Bundesressorts dabei, Nachhaltigkeitsbezüge eines Regelungsvorhabens systematisch zu prüfen. Sie führt durch relevante SDGs, Zielvorgaben sowie Ziele und Indikatoren der Deutschen Nachhaltigkeitsstrategie und ist Teil der digitalen E-Gesetzgebungsumgebung.\n\nDie mit eNAP erstellte Zusammenfassung wird im Verfahren dokumentiert. Öffentliche Gesetzesbegründungen können Nachhaltigkeitsaspekte wiedergeben; ohne konkreten Nachweis darf diese öffentliche Darstellung jedoch nicht als wort- oder byteidentischer eNAP-Rohexport bezeichnet werden.",
@@ -95,7 +140,13 @@
         "E-Gesetzgebung: eGFA/eNAP|https://plattform.egesetzgebung.bund.de/cockpit/#/egfa",
         "BMJV: Nachhaltige Gesetzgebung|https://www.bmj.de/DE/ministerium/nachhaltigkeit/gesetzgebung/gesetzgebung_artikel.html"
       ],
-      "relatedTerms": ["egesetzgebung-egfa", "nachhaltigkeitspruefung-bund", "gesetzesfolgenabschaetzung", "deutsche-nachhaltigkeitsstrategie", "state-gfa-enap-benchmark"],
+      "relatedTerms": [
+        "egesetzgebung-egfa",
+        "nachhaltigkeitspruefung-bund",
+        "gesetzesfolgenabschaetzung",
+        "deutsche-nachhaltigkeitsstrategie",
+        "state-gfa-enap-benchmark"
+      ],
       "classicGlossary": true,
       "autoLinkAllowed": true,
       "pageUrl": "/begriffe/enap/"
@@ -103,7 +154,11 @@
     {
       "termId": "egesetzgebung-egfa",
       "canonicalLabel": "E-Gesetzgebung / eGFA",
-      "aliases": ["E-Gesetzgebung", "eGFA", "elektronische Gesetzesfolgenabschätzung"],
+      "aliases": [
+        "E-Gesetzgebung",
+        "eGFA",
+        "elektronische Gesetzesfolgenabschätzung"
+      ],
       "shortDefinition": "Die E-Gesetzgebung ist die digitale Arbeitsumgebung des Bundes für Rechtsetzung; die eGFA bildet dort Schritte der elektronischen Gesetzesfolgenabschätzung ab und bindet eNAP ein.",
       "hoverDefinition": "E-Gesetzgebung und eGFA digitalisieren bestehende Rechtsetzungs- und Folgenprüfungsprozesse; eNAP ist darin ein Nachhaltigkeitsprüfwerkzeug.",
       "longDefinition": "Die E-Gesetzgebungsplattform unterstützt die ressortübergreifende Erstellung und Abstimmung von Regelungsvorhaben. Im Cockpit steht die elektronische Gesetzesfolgenabschätzung zur Verfügung; eNAP ist dort als Nachhaltigkeitsprüfung integriert. Die digitale Plattform verändert den Verfahrenszugang, ersetzt aber weder die rechtlichen Anforderungen der GGO noch die fachliche Bewertung des jeweiligen Vorhabens.",
@@ -114,8 +169,14 @@
       "version": "1.0",
       "reviewStatus": "fachlich konsolidiert",
       "source": "E-Gesetzgebung",
-      "officialSources": ["E-Gesetzgebung: eGFA/eNAP|https://plattform.egesetzgebung.bund.de/cockpit/#/egfa"],
-      "relatedTerms": ["enap", "gesetzesfolgenabschaetzung", "nachhaltigkeitspruefung-bund"],
+      "officialSources": [
+        "E-Gesetzgebung: eGFA/eNAP|https://plattform.egesetzgebung.bund.de/cockpit/#/egfa"
+      ],
+      "relatedTerms": [
+        "enap",
+        "gesetzesfolgenabschaetzung",
+        "nachhaltigkeitspruefung-bund"
+      ],
       "classicGlossary": true,
       "autoLinkAllowed": true,
       "pageUrl": "/begriffe/egesetzgebung-egfa/"
@@ -123,7 +184,11 @@
     {
       "termId": "dns-indikator",
       "canonicalLabel": "DNS-Indikator",
-      "aliases": ["DNS-Indikatoren", "Indikator der Deutschen Nachhaltigkeitsstrategie", "Nachhaltigkeitsindikator der DNS"],
+      "aliases": [
+        "DNS-Indikatoren",
+        "Indikator der Deutschen Nachhaltigkeitsstrategie",
+        "Nachhaltigkeitsindikator der DNS"
+      ],
       "shortDefinition": "Ein DNS-Indikator ist eine amtlich definierte Beobachtungsgröße, mit der der Stand und die Zielerreichung der Deutschen Nachhaltigkeitsstrategie verfolgt werden.",
       "hoverDefinition": "DNS-Indikatoren liefern Baseline-, Ziel- und Monitoringinformation. Ein Indikator ist nicht die Wirkung und beweist keine Attribution einer einzelnen Maßnahme.",
       "longDefinition": "Die Bundesregierung ordnet der Deutschen Nachhaltigkeitsstrategie Ziele und Indikatoren zu; Destatis unterstützt deren Messung und veröffentlicht regelmäßig Daten und Indikatorenberichte. Indikatoren zeigen Zustände, Trends und Zielabstände. Sie können für politische Wirkungsanalysen eine wichtige Baseline oder Monitoringreferenz sein.\n\nAus der Bewegung eines Indikators folgt aber nicht automatisch, dass ein bestimmtes Gesetz, Programm oder Budget diese Veränderung verursacht hat. Dafür braucht es eine eigenständige Kausal- und Zurechnungsprüfung.",
@@ -138,7 +203,13 @@
         "Destatis: Nachhaltigkeitsindikatoren|https://www.destatis.de/DE/Themen/Gesellschaft-Umwelt/Nachhaltigkeitsindikatoren/_inhalt.html",
         "Bundesregierung: Steuerung der DNS|https://www.bundesregierung.de/breg-de/schwerpunkte/wirksam-regieren/steuerung-nachhaltigkeitsstrategie-419776"
       ],
-      "relatedTerms": ["deutsche-nachhaltigkeitsstrategie", "wirkungsindikator", "zielbezug-vs-wirkung", "baseline", "wirkungsmonitoring"],
+      "relatedTerms": [
+        "deutsche-nachhaltigkeitsstrategie",
+        "wirkungsindikator",
+        "zielbezug-vs-wirkung",
+        "baseline",
+        "wirkungsmonitoring"
+      ],
       "classicGlossary": true,
       "autoLinkAllowed": true,
       "pageUrl": "/begriffe/dns-indikator/"
@@ -146,7 +217,11 @@
     {
       "termId": "zielbezug-vs-wirkung",
       "canonicalLabel": "Zielbezug und Wirkung",
-      "aliases": ["Zielbezug vs. Wirkung", "Target Alignment", "Zielausrichtung"],
+      "aliases": [
+        "Zielbezug vs. Wirkung",
+        "Target Alignment",
+        "Zielausrichtung"
+      ],
       "shortDefinition": "Zielbezug zeigt, zu welchem Ziel oder Schutzgut ein Vorhaben fachlich gehört; Wirkung beschreibt dagegen eine tatsächliche Zustandsveränderung. Beides ist nicht dasselbe.",
       "hoverDefinition": "TARGET_ALIGNMENT_NOT_CAUSALITY: Die Zuordnung zu SDG- oder DNS-Zielen ist eine Referenz, kein Nachweis, dass ein Vorhaben die gewünschte Wirkung verursacht.",
       "longDefinition": "Ein Regelungsvorhaben kann plausibel einem SDG, DNS-Ziel, Grundrecht oder anderen Referenzrahmen zugeordnet werden. Diese Zuordnung sagt, welche Zielrichtung oder welches Schutzgut berührt ist. Ob sich ein Zustand tatsächlich verändert und ob diese Veränderung dem Vorhaben zugerechnet werden kann, sind getrennte empirische Fragen.\n\nDiese Trennung verhindert, dass Zielkongruenz, politische Absicht, Indikatorbewegung und Kausalität ineinandergeschoben werden.",
@@ -157,8 +232,17 @@
       "version": "1.0",
       "reviewStatus": "fachlich konsolidiert",
       "source": "WÖk-Methodenpräzisierung 2026-08-21",
-      "officialSources": ["Bundesregierung: Steuerung der DNS|https://www.bundesregierung.de/breg-de/schwerpunkte/wirksam-regieren/steuerung-nachhaltigkeitsstrategie-419776"],
-      "relatedTerms": ["deutsche-nachhaltigkeitsstrategie", "dns-indikator", "wirkung", "evidenz", "attribution", "referenzrahmen"],
+      "officialSources": [
+        "Bundesregierung: Steuerung der DNS|https://www.bundesregierung.de/breg-de/schwerpunkte/wirksam-regieren/steuerung-nachhaltigkeitsstrategie-419776"
+      ],
+      "relatedTerms": [
+        "deutsche-nachhaltigkeitsstrategie",
+        "dns-indikator",
+        "wirkung",
+        "evidenz",
+        "attribution",
+        "referenzrahmen"
+      ],
       "classicGlossary": true,
       "autoLinkAllowed": true,
       "pageUrl": "/begriffe/zielbezug-vs-wirkung/"
@@ -166,7 +250,12 @@
     {
       "termId": "ex-ante-folgenpruefung-reality-check",
       "canonicalLabel": "Ex-ante-Folgenprüfung und Reality Check",
-      "aliases": ["Ex-ante-Folgenprüfung", "Ex-post-Überprüfung", "Reality Check", "Evaluation und Reality Check"],
+      "aliases": [
+        "Ex-ante-Folgenprüfung",
+        "Ex-post-Überprüfung",
+        "Reality Check",
+        "Evaluation und Reality Check"
+      ],
       "shortDefinition": "Ex-ante-Folgenprüfung schätzt mögliche Folgen vor einer Entscheidung; der Reality Check prüft später beobachtete Zustände und Evidenz gegen die ursprünglichen Annahmen und führt die Erkenntnisse in die nächste Analyseversion zurück.",
       "hoverDefinition": "Vorher prüfen und später nachsehen sind verschiedene Schritte. Die GGO enthält bereits spätere Überprüfung; WÖk macht daraus eine wiederholbare, versionierte Lernschleife.",
       "longDefinition": "Die staatliche Gesetzesfolgenabschätzung ist primär ex ante ausgerichtet, enthält nach § 44 Absatz 7 GGO aber auch Vorgaben dazu, ob und nach welchem Zeitraum die beabsichtigten Wirkungen, Angemessenheit von Kosten und Ergebnissen sowie eingetretene Nebenwirkungen überprüft werden sollen.\n\nDer WÖk-Reality-Check behauptet deshalb nicht, Ex-post-Überprüfung neu erfunden zu haben. Er bezeichnet die systematische Rückführung von StateObservations, EvidenceEvents, Unsicherheit und Zurechnung in eine versionierte Wirkungsanalyse, Recommendation und nächste Entscheidung.",
@@ -177,8 +266,17 @@
       "version": "1.0",
       "reviewStatus": "fachlich konsolidiert",
       "source": "GGO § 44 Abs. 7 / WÖk-Reality-Check",
-      "officialSources": ["GGO §§ 43 und 44|https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm"],
-      "relatedTerms": ["gesetzesfolgenabschaetzung", "wirkungsmonitoring", "wirkungsrueckkopplung", "evidenz", "attribution", "wirkungslernen"],
+      "officialSources": [
+        "GGO §§ 43 und 44|https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm"
+      ],
+      "relatedTerms": [
+        "gesetzesfolgenabschaetzung",
+        "wirkungsmonitoring",
+        "wirkungsrueckkopplung",
+        "evidenz",
+        "attribution",
+        "wirkungslernen"
+      ],
       "classicGlossary": true,
       "autoLinkAllowed": true,
       "pageUrl": "/begriffe/ex-ante-folgenpruefung-reality-check/"
@@ -186,7 +284,11 @@
     {
       "termId": "staatliche-nachhaltigkeitsarchitektur",
       "canonicalLabel": "Staatliche Nachhaltigkeitsarchitektur",
-      "aliases": ["staatliche Nachhaltigkeits- und Folgenprüfungsarchitektur", "staatliche Nachhaltigkeitsarchitektur des Bundes", "Nachhaltigkeitsgovernance des Bundes"],
+      "aliases": [
+        "staatliche Nachhaltigkeits- und Folgenprüfungsarchitektur",
+        "staatliche Nachhaltigkeitsarchitektur des Bundes",
+        "Nachhaltigkeitsgovernance des Bundes"
+      ],
       "shortDefinition": "Die staatliche Nachhaltigkeitsarchitektur des Bundes verbindet DNS, Ziele und Indikatoren, ressortübergreifende Governance, Gesetzesfolgen- und Nachhaltigkeitsprüfung, eNAP/eGFA und Monitoring.",
       "hoverDefinition": "Deutschland besitzt bereits eine institutionalisierte Nachhaltigkeits- und Folgenprüfungsarchitektur. Die WÖk ersetzt sie nicht, sondern ergänzt die durchgängige Wirkungs- und Lernkette.",
       "longDefinition": "Deutschland verfügt über eine mehrschichtige Nachhaltigkeits- und Folgenprüfungsarchitektur. Dazu gehören die Deutsche Nachhaltigkeitsstrategie als nationaler Ziel- und Managementrahmen, der Staatssekretärsausschuss und weitere Governance-Akteure, DNS-Indikatoren und Destatis-Monitoring sowie die Gesetzesfolgen- und Nachhaltigkeitsprüfung nach GGO mit eNAP/eGFA als digitaler Unterstützung.\n\nDiese Architektur ist weder bloß Kommunikation noch identisch mit einer vollständigen Kausal- oder Wirkungsanalyse jedes Einzelvorhabens. Sie muss bei jeder fairen Abgrenzung der Wirkungsökonomie als bestehendes institutionelles System anerkannt werden.",
@@ -203,7 +305,15 @@
         "BMJV: Nachhaltige Gesetzgebung|https://www.bmj.de/DE/ministerium/nachhaltigkeit/gesetzgebung/gesetzgebung_artikel.html",
         "E-Gesetzgebung: eGFA/eNAP|https://plattform.egesetzgebung.bund.de/cockpit/#/egfa"
       ],
-      "relatedTerms": ["deutsche-nachhaltigkeitsstrategie", "gesetzesfolgenabschaetzung", "nachhaltigkeitspruefung-bund", "enap", "egesetzgebung-egfa", "dns-indikator", "parlamentarischer-beirat-nachhaltige-entwicklung"],
+      "relatedTerms": [
+        "deutsche-nachhaltigkeitsstrategie",
+        "gesetzesfolgenabschaetzung",
+        "nachhaltigkeitspruefung-bund",
+        "enap",
+        "egesetzgebung-egfa",
+        "dns-indikator",
+        "parlamentarischer-beirat-nachhaltige-entwicklung"
+      ],
       "classicGlossary": true,
       "autoLinkAllowed": true,
       "pageUrl": "/begriffe/staatliche-nachhaltigkeitsarchitektur/"
@@ -211,7 +321,11 @@
     {
       "termId": "parlamentarischer-beirat-nachhaltige-entwicklung",
       "canonicalLabel": "Parlamentarischer Beirat für nachhaltige Entwicklung und Zukunftsfragen (PBnEZ)",
-      "aliases": ["PBnEZ", "Parlamentarischer Beirat für nachhaltige Entwicklung", "Parlamentarischer Beirat für nachhaltige Entwicklung und Zukunftsfragen"],
+      "aliases": [
+        "PBnEZ",
+        "Parlamentarischer Beirat für nachhaltige Entwicklung",
+        "Parlamentarischer Beirat für nachhaltige Entwicklung und Zukunftsfragen"
+      ],
       "shortDefinition": "Der PBnEZ ist ein Gremium des Deutschen Bundestages, das Nachhaltigkeit parlamentarisch begleitet und die Nachhaltigkeitsprüfung von Regelungsvorhaben kontrolliert.",
       "hoverDefinition": "Der PBnEZ ist eine parlamentarische Kontroll- und Governance-Schicht der deutschen Nachhaltigkeitsarchitektur; er ist nicht der vorgeschlagene WÖk-Wirkungsrat.",
       "longDefinition": "Der Parlamentarische Beirat für nachhaltige Entwicklung und Zukunftsfragen begleitet die Nachhaltigkeitspolitik des Bundes im Deutschen Bundestag und befasst sich unter anderem mit der Nachhaltigkeitsprüfung von Regelungsvorhaben. Er steht neben der Regierungsgovernance der DNS und bildet eine parlamentarische Kontrollperspektive.\n\nDer Beirat darf nicht mit dem von der Wirkungsökonomie vorgeschlagenen Wirkungsrat gleichgesetzt werden. Aufgaben, Rechtsstellung und institutionelle Legitimation sind unterschiedlich.",
@@ -222,16 +336,28 @@
       "version": "1.0",
       "reviewStatus": "fachlich konsolidiert",
       "source": "Deutscher Bundestag / BMJV",
-      "officialSources": ["BMJV: Nachhaltige Gesetzgebung|https://www.bmj.de/DE/ministerium/nachhaltigkeit/gesetzgebung/gesetzgebung_artikel.html"],
-      "relatedTerms": ["staatliche-nachhaltigkeitsarchitektur", "wirkungsrat", "deutsche-nachhaltigkeitsstrategie", "gesetzesfolgenabschaetzung"],
+      "officialSources": [
+        "Deutscher Bundestag: Parlamentarischer Beirat für nachhaltige Entwicklung und Zukunftsfragen (PBnEZ)|https://www.bundestag.de/ausschuesse/weitere_gremien/pbnez",
+        "BMJV: Nachhaltige Gesetzgebung|https://www.bmj.de/DE/ministerium/nachhaltigkeit/gesetzgebung/gesetzgebung_artikel.html"
+      ],
+      "relatedTerms": [
+        "staatliche-nachhaltigkeitsarchitektur",
+        "wirkungsrat",
+        "deutsche-nachhaltigkeitsstrategie",
+        "gesetzesfolgenabschaetzung"
+      ],
       "classicGlossary": true,
       "autoLinkAllowed": true,
-      "pageUrl": "/begriffe/parlamentarischer-beirat-nachhaltige-entwicklung/"
+      "pageUrl": "/begriffe/parlamentarischer-beirat-nachhaltige-entwicklung/",
+      "sourceProvenance": "Aktuelle institutionelle Bezeichnung und Funktion aus dem Deutschen Bundestag; ergänzende Verfahrenseinordnung aus BMJV/GGO."
     },
     {
       "termId": "state-gfa-enap-benchmark",
       "canonicalLabel": "STATE_GFA_ENAP_BENCHMARK",
-      "aliases": ["GFA-eNAP-Benchmark", "staatlicher GFA/eNAP-Benchmark"],
+      "aliases": [
+        "GFA-eNAP-Benchmark",
+        "staatlicher GFA/eNAP-Benchmark"
+      ],
       "shortDefinition": "STATE_GFA_ENAP_BENCHMARK ist der WÖk-Datenlayer, der bei geeigneten Bundesregelungsvorhaben die öffentlich belegbare staatliche GFA-/Nachhaltigkeitseinschätzung getrennt von der unabhängigen WÖk-Analyse dokumentiert.",
       "hoverDefinition": "Der Benchmark trennt staatliche GFA/Nachhaltigkeitsprüfung und WÖk-Urteil. Übereinstimmung ist erlaubt; fehlende öffentliche eNAP-Dokumentation bedeutet nicht, dass keine Prüfung stattfand.",
       "longDefinition": "Der Layer erfasst nur, was aus amtlichen Quellen für ein konkretes Bundesregelungsvorhaben öffentlich festgestellt werden kann: Umfang der GFA/Nachhaltigkeitsprüfung, DNS-/SDG-Bezüge, positive und negative Aspekte, Zielkonflikte, Langfrist- und Drittstaatenbezüge sowie den Dokumentationsstatus. Anschließend werden Konvergenz, zusätzliche WÖk-Befunde und echte Widersprüche getrennt ausgewiesen.\n\nEine öffentliche Nachhaltigkeitsdarstellung ist nicht automatisch ein öffentlicher eNAP-Rohexport. Fehlt ein solcher Nachweis, bleibt der eNAP-Dokumentationsstatus offen beziehungsweise NOT_PUBLICLY_ESTABLISHED; er wird niemals automatisch zu NOT_ASSESSED.",
@@ -246,7 +372,13 @@
         "GGO §§ 43 und 44|https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm",
         "BMJV: Nachhaltige Gesetzgebung|https://www.bmj.de/DE/ministerium/nachhaltigkeit/gesetzgebung/gesetzgebung_artikel.html"
       ],
-      "relatedTerms": ["gesetzesfolgenabschaetzung", "nachhaltigkeitspruefung-bund", "enap", "zielbezug-vs-wirkung", "wirkungsanalyse"],
+      "relatedTerms": [
+        "gesetzesfolgenabschaetzung",
+        "nachhaltigkeitspruefung-bund",
+        "enap",
+        "zielbezug-vs-wirkung",
+        "wirkungsanalyse"
+      ],
       "classicGlossary": true,
       "autoLinkAllowed": false,
       "pageUrl": "/begriffe/state-gfa-enap-benchmark/"
@@ -254,7 +386,10 @@
     {
       "termId": "wirkungsblindheit",
       "canonicalLabel": "Wirkungsblindheit",
-      "aliases": ["wirkungsblind", "Wirkungsblindheit"],
+      "aliases": [
+        "wirkungsblind",
+        "Wirkungsblindheit"
+      ],
       "shortDefinition": "Wirkungsblindheit bedeutet in der WÖk nicht, dass ein System keinerlei Folgen prüft oder misst. Gemeint ist eine strukturelle Lücke, wenn relevante Zustandsveränderungen, Wirkpfade oder Unsicherheiten nicht vollständig erkannt, nicht kausal zugeordnet oder nicht wirksam in Entscheidungen, Anreize und spätere Korrektur zurückgeführt werden.",
       "hoverDefinition": "Wirkungsblindheit heißt nicht 'keine Prüfung'. Sie bezeichnet lückenhafte Wirkungs-, Zurechnungs- oder Rückkopplungsketten.",
       "longDefinition": "Ein System kann viele Daten erheben, Folgen abschätzen, Ziele prüfen und trotzdem wirkungsblind bleiben, wenn entscheidungsrelevante Zustandsveränderungen, Nebenfolgen, Zurechnung oder Lernschleifen nicht ausreichend verbunden sind. Wirkungsblindheit ist deshalb ein gradueller Diagnosebegriff und keine Behauptung vollständiger Abwesenheit von Folgenprüfung.\n\nDeutschland ist ein wichtiges Gegenbeispiel zur Totalblindheit: DNS und Destatis-Monitoring sowie GGO/GFA/Nachhaltigkeitsprüfung und eNAP zeigen, dass institutionalisierte Prüf- und Messstrukturen existieren. Die WÖk-Kritik richtet sich auf die noch nicht vollständig geschlossene, objektspezifische Rückkopplungskette und darf diese vorhandene Architektur nicht ausblenden.",
@@ -270,8 +405,18 @@
         "GGO §§ 43 und 44|https://www.verwaltungsvorschriften-im-internet.de/bsvwvbund_21072009_O11313012.htm",
         "Bundesregierung: Steuerung der DNS|https://www.bundesregierung.de/breg-de/schwerpunkte/wirksam-regieren/steuerung-nachhaltigkeitsstrategie-419776"
       ],
-      "relatedTerms": ["wirkung", "wirkungsrueckkopplung", "gesetzesfolgenabschaetzung", "staatliche-nachhaltigkeitsarchitektur", "evidenz", "attribution"],
-      "doNotConfuseWith": ["Keine Daten: fehlende Evidenz ist offen, nicht automatisch wirkungsblind oder neutral.", "Keine Folgenprüfung: Wirkungsblindheit behauptet nicht, dass ein System keinerlei Folgenabschätzung besitzt."],
+      "relatedTerms": [
+        "wirkung",
+        "wirkungsrueckkopplung",
+        "gesetzesfolgenabschaetzung",
+        "staatliche-nachhaltigkeitsarchitektur",
+        "evidenz",
+        "attribution"
+      ],
+      "doNotConfuseWith": [
+        "Keine Daten: fehlende Evidenz ist offen, nicht automatisch wirkungsblind oder neutral.",
+        "Keine Folgenprüfung: Wirkungsblindheit behauptet nicht, dass ein System keinerlei Folgenabschätzung besitzt."
+      ],
       "classicGlossary": true,
       "autoLinkAllowed": true,
       "pageUrl": "/begriffe/wirkungsblindheit/"
