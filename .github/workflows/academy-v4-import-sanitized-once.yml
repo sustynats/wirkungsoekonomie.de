@@ -6,6 +6,11 @@ on:
       - codex/academy-v4-public-master-transport-20260821
     paths:
       - .github/workflows/academy-v4-import-sanitized-once.yml
+  pull_request:
+    branches:
+      - main
+    paths:
+      - .github/workflows/academy-v4-import-sanitized-once.yml
   workflow_dispatch:
 
 permissions:
@@ -22,7 +27,7 @@ jobs:
       SOURCE_REPO: sustynats/woek-akademie-app
       SOURCE_SHA: ecee82cce60612332b4dc909b2fecfcb380b1a24
       EXPECTED_ARCHIVE_SHA256: 418137a171a07c50a8dbd2019f7bdcd19be127915f1fb9edabd1bbc763f95976
-      ARTIFACT_URL: 'https://sdmntprwestus.oaiusercontent.com/files/00000000-a2d0-8230-a613-250922f4d39a/raw?se=2026-08-21T19%3A02%3A43Z&sp=r&sv=2026-02-06&sr=b&scid=2b301a6a-340c-5157-9663-e50f6db4eb83&skoid=ea1de0bc-0467-43d6-873a-9a5cf0a9f835&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-08-20T22%3A02%3A32Z&ske=2026-08-21T22%3A02%3A32Z&sks=b&skv=2026-02-06&sig=s/LsVVcOhYm4QLPgdG/5hGkMU1tI3rQ6q6tA%2Bf9ha/o%3D'
+      ARTIFACT_URL: 'https://sdmntprwestus.oaiusercontent.com/files/00000000-12c4-8230-ae4b-0e17a704c2f8/raw?se=2026-08-21T19%3A03%3A45Z&sp=r&sv=2026-02-06&sr=b&scid=3582a92d-90d0-57f3-a1df-8ca37fdb4f4f&skoid=ea1de0bc-0467-43d6-873a-9a5cf0a9f835&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-08-20T22%3A06%3A04Z&ske=2026-08-21T22%3A06%3A04Z&sks=b&skv=2026-02-06&sig=RiVAjsT7W7vAab3pRFpRqmjZoJl33/bVYOO1UPkS%2BRk%3D'
     steps:
       - name: Checkout exact transport branch
         uses: actions/checkout@v4
@@ -130,7 +135,7 @@ jobs:
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.email "4189828+github-actions[bot]@users.noreply.github.com"
           git add content/studienskripte/v4
           if git diff --cached --quiet; then
             echo 'No materialized diff.'
