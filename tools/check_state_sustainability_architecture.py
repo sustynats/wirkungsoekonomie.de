@@ -82,7 +82,9 @@ def historical_additions_only() -> None:
 
 def glossary_and_sources() -> None:
     source_text = read("content/quellenarchiv/legal-source-records.json")
-    for code in ("WÖK-Q-1029", "WÖK-Q-1030", "WÖK-Q-1031", "WÖK-Q-1032", "WÖK-Q-1033", "WÖK-Q-1034", "WÖK-Q-1035"):
+    # #253 sources intentionally use a collision-free 9000 range because the
+    # publication supplement corpus already owns WÖK-Q-1029..1037 historically.
+    for code in ("WÖK-Q-9029", "WÖK-Q-9030", "WÖK-Q-9031", "WÖK-Q-9032", "WÖK-Q-9033", "WÖK-Q-9034", "WÖK-Q-9035"):
         if code not in source_text:
             raise AssertionError(f"missing canonical federal architecture source {code}")
     if "bundesregierung.de" not in source_text or "deutsche-nachhaltigkeitsstrategie-2025-2332540" not in source_text:
