@@ -73,6 +73,21 @@
       "contentHash": "92fcbe93091cb2cc",
       "sectionId": "tool-orientierung-title"
     },
+    "/begriffe/7-bundeshaushaltsordnung/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-7-bundeshaushaltsordnung",
+      "documentId": "bundeshaushaltsordnung-paragraf-7",
+      "relatedTerms": [
+        "vv-bho-wirtschaftlichkeitsuntersuchung-erfolgskontrolle",
+        "objektspezifische-staatliche-pruefarchitektur",
+        "wirkungsrelevanz-statt-rechtsform",
+        "staatliche-nachhaltigkeitsarchitektur"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 110
+    },
     "/begriffe/abfallhierarchie/": {
       "documentType": "begriff",
       "status": "anschlussbegriff",
@@ -22297,6 +22312,22 @@
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
       "searchBoost": 110
     },
+    "/begriffe/objektspezifische-staatliche-pruefarchitektur/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-objektspezifische-staatliche-pruefarchitektur",
+      "documentId": "objektspezifische-staatliche-pruefarchitektur",
+      "relatedTerms": [
+        "staatliche-nachhaltigkeitsarchitektur",
+        "gesetzesfolgenabschaetzung",
+        "bundeshaushaltsordnung-paragraf-7",
+        "vv-bho-wirtschaftlichkeitsuntersuchung-erfolgskontrolle",
+        "wirkungsrelevanz-statt-rechtsform"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 110
+    },
     "/begriffe/ocpp/": {
       "documentType": "begriff",
       "status": "methodenbegriff",
@@ -36687,6 +36718,22 @@
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
       "searchBoost": 110
     },
+    "/begriffe/vv-bho-wirtschaftlichkeitsuntersuchung-und-erfolgskontrolle/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-vv-bho-wirtschaftlichkeitsuntersuchung-und-erfolgskontrolle",
+      "documentId": "vv-bho-wirtschaftlichkeitsuntersuchung-erfolgskontrolle",
+      "relatedTerms": [
+        "bundeshaushaltsordnung-paragraf-7",
+        "ex-ante-folgenpruefung-reality-check",
+        "attributionsforschung",
+        "wirkungsmonitoring",
+        "objektspezifische-staatliche-pruefarchitektur"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 110
+    },
     "/begriffe/w-bip/": {
       "documentType": "begriff",
       "status": "approved",
@@ -42750,6 +42797,22 @@
       "sourceFile": "Glossar-Pack 005: Institutionelle Sicherung & Prüfarchitektur",
       "searchBoost": 110
     },
+    "/begriffe/wirkungsrelevanz-statt-rechtsform/": {
+      "documentType": "begriff",
+      "status": "woek-prinzip",
+      "version": "1.0",
+      "sectionId": "begriff-wirkungsrelevanz-statt-rechtsform",
+      "documentId": "wirkungsrelevanz-statt-rechtsform",
+      "relatedTerms": [
+        "objektspezifische-staatliche-pruefarchitektur",
+        "wirkungsrelevanz-und-materialitaetsanalyse",
+        "wirkungsanalyse",
+        "attributionsforschung",
+        "staatliche-nachhaltigkeitsarchitektur"
+      ],
+      "relatedDocuments": [],
+      "searchBoost": 110
+    },
     "/begriffe/wirkungsrelevanz-und-materialitaetsanalyse/": {
       "documentType": "begriff",
       "status": "approved",
@@ -45725,7 +45788,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/index.html",
-      "contentHash": "a64253532c930ea7",
+      "contentHash": "ce4e243bc928308e",
       "sectionId": "woek-page-e6bdb60cf0627b03"
     },
     "/bibliothek/arbeitspapier-doppelte-wesentlichkeit-impact-controlling/": {
@@ -152709,7 +152772,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "woek-page-023712678d9e514f"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#1-1-geltungsbereich": {
@@ -152717,7 +152780,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "1-1-geltungsbereich"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#1-2-quellenhierarchie": {
@@ -152725,7 +152788,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "1-2-quellenhierarchie"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#1-3-konfliktregel": {
@@ -152733,7 +152796,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "1-3-konfliktregel"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#1-zweck-geltung-und-quellenhierarchie": {
@@ -152741,7 +152804,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "1-zweck-geltung-und-quellenhierarchie"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#10-1-grundbegriffe-und-wirkungszustaende": {
@@ -152749,7 +152812,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "10-1-grundbegriffe-und-wirkungszustaende"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#10-10-kennzahlen-register-und-instrumente": {
@@ -152757,7 +152820,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "10-10-kennzahlen-register-und-instrumente"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#10-11-externe-anschlussbegriffe": {
@@ -152765,7 +152828,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "10-11-externe-anschlussbegriffe"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#10-2-vor-der-wirkung": {
@@ -152773,7 +152836,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "10-2-vor-der-wirkung"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#10-3-pfade-netze-und-oeffentliche-resonanz": {
@@ -152781,7 +152844,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "10-3-pfade-netze-und-oeffentliche-resonanz"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#10-4-ermittlung-evidenz-und-zurechnung": {
@@ -152789,7 +152852,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "10-4-ermittlung-evidenz-und-zurechnung"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#10-5-bewertung-netto-wirkung-und-schutz": {
@@ -152797,7 +152860,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "10-5-bewertung-netto-wirkung-und-schutz"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#10-6-transformation-resilienz-und-system": {
@@ -152805,7 +152868,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "10-6-transformation-resilienz-und-system"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#10-7-rueckkopplung-steuerung-und-governance": {
@@ -152813,7 +152876,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "10-7-rueckkopplung-steuerung-und-governance"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#10-8-diagnose-und-leitbegriffe": {
@@ -152821,7 +152884,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "10-8-diagnose-und-leitbegriffe"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#10-9-wissenschaft-management-und-methodensystem": {
@@ -152829,7 +152892,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "10-9-wissenschaft-management-und-methodensystem"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#10-verbindliche-definitionen": {
@@ -152837,7 +152900,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "10-verbindliche-definitionen"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#11-begriffe-die-nicht-verwechselt-werden-duerfen": {
@@ -152845,7 +152908,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "11-begriffe-die-nicht-verwechselt-werden-duerfen"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#12-1-allgemeine-website-und-einstieg": {
@@ -152853,7 +152916,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "12-1-allgemeine-website-und-einstieg"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#12-2-wissenschaft-und-methodik": {
@@ -152861,7 +152924,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "12-2-wissenschaft-und-methodik"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#12-3-politik-parlament-medien-und-narrative": {
@@ -152869,7 +152932,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "12-3-politik-parlament-medien-und-narrative"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#12-4-produkte-steuern-und-daten": {
@@ -152877,7 +152940,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "12-4-produkte-steuern-und-daten"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#12-5-management-kapital-und-organisation": {
@@ -152885,7 +152948,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "12-5-management-kapital-und-organisation"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#12-6-ki-demos-und-automatisierte-antworten": {
@@ -152893,7 +152956,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "12-6-ki-demos-und-automatisierte-antworten"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#12-7-bessere-formulierungen": {
@@ -152901,7 +152964,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "12-7-bessere-formulierungen"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#12-sprachregeln-nach-anwendungsfeld": {
@@ -152909,7 +152972,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "12-sprachregeln-nach-anwendungsfeld"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#13-fuehrende-mini-definitionen-fuer-hover-suche-und-karten": {
@@ -152917,7 +152980,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "13-fuehrende-mini-definitionen-fuer-hover-suche-und-karten"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#14-pruefcheckliste-fuer-neue-inhalte": {
@@ -152925,7 +152988,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "14-pruefcheckliste-fuer-neue-inhalte"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#15-1-gesamtbefund": {
@@ -152933,23 +152996,23 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "15-1-gesamtbefund"
     },
-    "/bibliothek/woek-begriffsleitfaden-fuehrend/#15-2-verbindliche-migrationsmatrix": {
+    "/bibliothek/woek-begriffsleitfaden-fuehrend/#15-2-historische-migrationsmatrix-aus-version-1-5-und-v1-6": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
-      "sectionId": "15-2-verbindliche-migrationsmatrix"
+      "contentHash": "c0459a4c3a00073a",
+      "sectionId": "15-2-historische-migrationsmatrix-aus-version-1-5-und-v1-6"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#15-3-technische-synchronisationsregel": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "15-3-technische-synchronisationsregel"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#15-4-qualitaets-gate-nach-umsetzung": {
@@ -152957,7 +153020,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "15-4-qualitaets-gate-nach-umsetzung"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#15-website-audit-und-migrationsmatrix": {
@@ -152965,7 +153028,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "15-website-audit-und-migrationsmatrix"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#16-1-interne-wirkungsoekonomie-quellen": {
@@ -152973,7 +153036,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "16-1-interne-wirkungsoekonomie-quellen"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#16-2-wissenschaftliche-und-methodische-anschlussquellen": {
@@ -152981,7 +153044,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "16-2-wissenschaftliche-und-methodische-anschlussquellen"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#16-3-wissenschaftliche-selbstbegrenzung": {
@@ -152989,7 +153052,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "16-3-wissenschaftliche-selbstbegrenzung"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#16-quellen-und-pruefgrundlage": {
@@ -152997,7 +153060,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "16-quellen-und-pruefgrundlage"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#2-1-wichtigste-kurzformel": {
@@ -153005,7 +153068,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "2-1-wichtigste-kurzformel"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#2-2-kurzformel-fuer-erstkontakte": {
@@ -153013,7 +153076,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "2-2-kurzformel-fuer-erstkontakte"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#2-3-zielgroesse": {
@@ -153021,7 +153084,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "2-3-zielgroesse"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#2-4-verbindliche-grundregeln": {
@@ -153029,7 +153092,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "2-4-verbindliche-grundregeln"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#2-kurzformeln-und-grundregeln": {
@@ -153037,7 +153100,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "2-kurzformeln-und-grundregeln"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#20-sekunden-erklaerung": {
@@ -153045,15 +153108,23 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "20-sekunden-erklaerung"
+    },
+    "/bibliothek/woek-begriffsleitfaden-fuehrend/#20-sekunden-erklaerung-2": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
+      "contentHash": "c0459a4c3a00073a",
+      "sectionId": "20-sekunden-erklaerung-2"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#3-system-und-begriffshierarchie": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "3-system-und-begriffshierarchie"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#4-1-vier-getrennte-ebenen": {
@@ -153061,7 +153132,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "4-1-vier-getrennte-ebenen"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#4-2-praezisierung-zu-sdg": {
@@ -153069,7 +153140,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "4-2-praezisierung-zu-sdg"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#4-3-positive-und-negative-bewertung": {
@@ -153077,7 +153148,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "4-3-positive-und-negative-bewertung"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#4-4-demokratie-als-wirkungsraum-und-schutzbedingung": {
@@ -153085,7 +153156,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "4-4-demokratie-als-wirkungsraum-und-schutzbedingung"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#4-referenzrahmen-sdgs-agenda-2030-sdg-und-mensch-planet-demokratie": {
@@ -153093,7 +153164,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "4-referenzrahmen-sdgs-agenda-2030-sdg-und-mensch-planet-demokratie"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#5-1-modul-a-vorwirkung-analysieren": {
@@ -153101,7 +153172,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "5-1-modul-a-vorwirkung-analysieren"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#5-2-modul-b-wirkung-ermitteln": {
@@ -153109,7 +153180,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "5-2-modul-b-wirkung-ermitteln"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#5-3-modul-c-evidenz-und-zurechnung-pruefen": {
@@ -153117,7 +153188,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "5-3-modul-c-evidenz-und-zurechnung-pruefen"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#5-4-modul-d-wirkung-bewerten": {
@@ -153125,7 +153196,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "5-4-modul-d-wirkung-bewerten"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#5-5-modul-e-schutz-und-systempruefung": {
@@ -153133,7 +153204,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "5-5-modul-e-schutz-und-systempruefung"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#5-6-modul-f-rueckkopplung-lenkung-und-lernen": {
@@ -153141,7 +153212,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "5-6-modul-f-rueckkopplung-lenkung-und-lernen"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#5-7-drei-darstellungsformen": {
@@ -153149,7 +153220,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "5-7-drei-darstellungsformen"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#5-die-vollstaendige-woek-wirkungsarchitektur": {
@@ -153157,7 +153228,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "5-die-vollstaendige-woek-wirkungsarchitektur"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#6-1-richtung-und-sicherheit-getrennt-ausweisen": {
@@ -153165,7 +153236,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "6-1-richtung-und-sicherheit-getrennt-ausweisen"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#6-2-neutral-ist-nicht-offen": {
@@ -153173,7 +153244,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "6-2-neutral-ist-nicht-offen"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#6-3-ex-ante-und-ex-post": {
@@ -153181,7 +153252,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "6-3-ex-ante-und-ex-post"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#6-4-zurechnung-ohne-scheingenauigkeit": {
@@ -153189,7 +153260,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "6-4-zurechnung-ohne-scheingenauigkeit"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#6-5-evidenzstatus-fuer-oeffentliche-seiten": {
@@ -153197,7 +153268,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "6-5-evidenzstatus-fuer-oeffentliche-seiten"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#6-evidenz-unsicherheit-und-zurechnung": {
@@ -153205,7 +153276,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "6-evidenz-unsicherheit-und-zurechnung"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#7-1-korrekte-definition-von-iooi": {
@@ -153213,7 +153284,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "7-1-korrekte-definition-von-iooi"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#7-2-stellung-innerhalb-der-woek": {
@@ -153221,7 +153292,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "7-2-stellung-innerhalb-der-woek"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#7-3-zulaessige-und-zu-vermeidende-formulierungen": {
@@ -153229,7 +153300,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "7-3-zulaessige-und-zu-vermeidende-formulierungen"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#7-4-andere-anschlussmethoden": {
@@ -153237,7 +153308,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "7-4-andere-anschlussmethoden"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#7-5-iooi-und-ioi-nicht-verwechseln": {
@@ -153245,15 +153316,23 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "7-5-iooi-und-ioi-nicht-verwechseln"
+    },
+    "/bibliothek/woek-begriffsleitfaden-fuehrend/#7-bundeshaushaltsordnung": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
+      "contentHash": "c0459a4c3a00073a",
+      "sectionId": "7-bundeshaushaltsordnung"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#7-iooi-und-andere-anschlussmethoden": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "7-iooi-und-andere-anschlussmethoden"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#8-1-fuehrende-definitionen": {
@@ -153261,7 +153340,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "8-1-fuehrende-definitionen"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#8-2-acht-analysebausteine-von-resilienz-und-systementwicklung": {
@@ -153269,7 +153348,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "8-2-acht-analysebausteine-von-resilienz-und-systementwicklung"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#8-3-redaktionelle-mindestfragen": {
@@ -153277,7 +153356,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "8-3-redaktionelle-mindestfragen"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#8-nachhaltigkeit-resilienz-und-wirkungsresilienz": {
@@ -153285,7 +153364,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "8-nachhaltigkeit-resilienz-und-wirkungsresilienz"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#9-1-begriffsklassen": {
@@ -153293,7 +153372,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "9-1-begriffsklassen"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#9-2-ein-begriff-eine-fuehrende-definition": {
@@ -153301,7 +153380,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "9-2-ein-begriff-eine-fuehrende-definition"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#9-3-semantische-ebenen-der-website": {
@@ -153309,7 +153388,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "9-3-semantische-ebenen-der-website"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#9-begriffsgovernance-fuer-website-glossar-und-daten": {
@@ -153317,7 +153396,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "9-begriffsgovernance-fuer-website-glossar-und-daten"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#aenderungskern": {
@@ -153325,31 +153404,55 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "aenderungskern"
+    },
+    "/bibliothek/woek-begriffsleitfaden-fuehrend/#aenderungskern-2": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
+      "contentHash": "c0459a4c3a00073a",
+      "sectionId": "aenderungskern-2"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#amtliche-primaerquellen-fuer-diese-ergaenzung": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "amtliche-primaerquellen-fuer-diese-ergaenzung"
+    },
+    "/bibliothek/woek-begriffsleitfaden-fuehrend/#amtliche-primaerquellen-fuer-diese-ergaenzung-2": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
+      "contentHash": "c0459a4c3a00073a",
+      "sectionId": "amtliche-primaerquellen-fuer-diese-ergaenzung-2"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#changelog-version-1-5": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "changelog-version-1-5"
+    },
+    "/bibliothek/woek-begriffsleitfaden-fuehrend/#changelog-version-1-7": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
+      "contentHash": "c0459a4c3a00073a",
+      "sectionId": "changelog-version-1-7"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#deutsche-nachhaltigkeitsstrategie-dns": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "deutsche-nachhaltigkeitsstrategie-dns"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#dns-indikator": {
@@ -153357,7 +153460,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "dns-indikator"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#dokumentenstatus-und-aenderungskern": {
@@ -153365,7 +153468,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "dokumentenstatus-und-aenderungskern"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#egfa-und-e-gesetzgebung": {
@@ -153373,15 +153476,23 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "egfa-und-e-gesetzgebung"
+    },
+    "/bibliothek/woek-begriffsleitfaden-fuehrend/#einheitliche-woek-kette-nach-der-anwendungspruefung": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
+      "contentHash": "c0459a4c3a00073a",
+      "sectionId": "einheitliche-woek-kette-nach-der-anwendungspruefung"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#enap": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "enap"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#entwicklungslinie-bis-version-1-4": {
@@ -153389,23 +153500,39 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "entwicklungslinie-bis-version-1-4"
+    },
+    "/bibliothek/woek-begriffsleitfaden-fuehrend/#erfolgskontrolle-nach-vv-bho": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
+      "contentHash": "c0459a4c3a00073a",
+      "sectionId": "erfolgskontrolle-nach-vv-bho"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#ergaenzung-v1-6-staatliche-nachhaltigkeits-und-folgenpruefungsarchitektur": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "ergaenzung-v1-6-staatliche-nachhaltigkeits-und-folgenpruefungsarchitektur"
+    },
+    "/bibliothek/woek-begriffsleitfaden-fuehrend/#ergaenzung-v1-7-wirkungsrelevanz-und-objektspezifische-staatliche-pruefarchitektur": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
+      "contentHash": "c0459a4c3a00073a",
+      "sectionId": "ergaenzung-v1-7-wirkungsrelevanz-und-objektspezifische-staatliche-pruefarchitektur"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#explizite-praezisierungen-gegenueber-version-1-4": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "explizite-praezisierungen-gegenueber-version-1-4"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#fuehrender-begriffsleitfaden-der-wirkungsoekonomie": {
@@ -153413,7 +153540,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "fuehrender-begriffsleitfaden-der-wirkungsoekonomie"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#gemeinsame-geschaeftsordnung-der-bundesministerien-ggo": {
@@ -153421,7 +153548,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "gemeinsame-geschaeftsordnung-der-bundesministerien-ggo"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#gesetzesfolgenabschaetzung-gfa": {
@@ -153429,15 +153556,23 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "gesetzesfolgenabschaetzung-gfa"
+    },
+    "/bibliothek/woek-begriffsleitfaden-fuehrend/#gfa-enap-benchmark-als-regelungsvorhaben-untertyp": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
+      "contentHash": "c0459a4c3a00073a",
+      "sectionId": "gfa-enap-benchmark-als-regelungsvorhaben-untertyp"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#inhalt": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "inhalt"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#nachhaltigkeitspruefung-des-bundes": {
@@ -153445,7 +153580,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "nachhaltigkeitspruefung-des-bundes"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#nwi-terminology-heading": {
@@ -153453,23 +153588,47 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "nwi-terminology-heading"
+    },
+    "/bibliothek/woek-begriffsleitfaden-fuehrend/#objektspezifische-staatliche-pruefarchitektur": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
+      "contentHash": "c0459a4c3a00073a",
+      "sectionId": "objektspezifische-staatliche-pruefarchitektur"
+    },
+    "/bibliothek/woek-begriffsleitfaden-fuehrend/#objektspezifischer-staatlicher-pruefbenchmark-state-assessment-benchmark": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
+      "contentHash": "c0459a4c3a00073a",
+      "sectionId": "objektspezifischer-staatlicher-pruefbenchmark-state-assessment-benchmark"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#redaktions-und-qualitaetsregeln-ab-v1-6": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "redaktions-und-qualitaetsregeln-ab-v1-6"
+    },
+    "/bibliothek/woek-begriffsleitfaden-fuehrend/#redaktions-und-qualitaetsregeln-ab-v1-7": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
+      "contentHash": "c0459a4c3a00073a",
+      "sectionId": "redaktions-und-qualitaetsregeln-ab-v1-7"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#schlussformel": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "schlussformel"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#staatliche-nachhaltigkeitsarchitektur": {
@@ -153477,7 +153636,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "staatliche-nachhaltigkeitsarchitektur"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#staatlicher-befund-und-unabhaengiger-woek-befund": {
@@ -153485,7 +153644,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "staatlicher-befund-und-unabhaengiger-woek-befund"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#status": {
@@ -153493,7 +153652,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "status"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#verbindliche-begriffe": {
@@ -153501,31 +153660,79 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "verbindliche-begriffe"
+    },
+    "/bibliothek/woek-begriffsleitfaden-fuehrend/#verbindliche-begriffe-2": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
+      "contentHash": "c0459a4c3a00073a",
+      "sectionId": "verbindliche-begriffe-2"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#verbindliche-woek-pruefreihenfolge": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "verbindliche-woek-pruefreihenfolge"
+    },
+    "/bibliothek/woek-begriffsleitfaden-fuehrend/#versionsdelta-v1-6-v1-7": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
+      "contentHash": "c0459a4c3a00073a",
+      "sectionId": "versionsdelta-v1-6-v1-7"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkungsblindheit": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "wirkungsblindheit"
+    },
+    "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkungskontrolle-nach-vv-bho": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
+      "contentHash": "c0459a4c3a00073a",
+      "sectionId": "wirkungskontrolle-nach-vv-bho"
+    },
+    "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirkungsrelevanz-statt-rechtsform": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
+      "contentHash": "c0459a4c3a00073a",
+      "sectionId": "wirkungsrelevanz-statt-rechtsform"
+    },
+    "/bibliothek/woek-begriffsleitfaden-fuehrend/#wirtschaftlichkeitsuntersuchung-nach-vv-bho": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
+      "contentHash": "c0459a4c3a00073a",
+      "sectionId": "wirtschaftlichkeitsuntersuchung-nach-vv-bho"
+    },
+    "/bibliothek/woek-begriffsleitfaden-fuehrend/#zuordnung-nach-gegenstand": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
+      "contentHash": "c0459a4c3a00073a",
+      "sectionId": "zuordnung-nach-gegenstand"
     },
     "/bibliothek/woek-begriffsleitfaden-fuehrend/#zwei-ebenen-registerarchitektur": {
       "documentType": "Referenz",
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-begriffsleitfaden-fuehrend/index.html",
-      "contentHash": "f31ac966fde6f49c",
+      "contentHash": "c0459a4c3a00073a",
       "sectionId": "zwei-ebenen-registerarchitektur"
     },
     "/bibliothek/woek-manifest/": {
@@ -153541,7 +153748,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "bibliothek/woek-master-items-register/index.html",
-      "contentHash": "8098e24f9dc7f58f",
+      "contentHash": "588d2daf5e32912a",
       "sectionId": "woek-page-1db854c357a9d85a"
     },
     "/bibliothek/wp-einkommen/": {
@@ -154101,7 +154308,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "blog/enap-woek-benchmark-fuenf-bundesvorhaben.html",
-      "contentHash": "f4c9014c7cda8f8a",
+      "contentHash": "4c095e2730264484",
       "sectionId": "woek-page-26bf309c6a5748a8"
     },
     "/blog/enap-woek-benchmark-fuenf-bundesvorhaben.html#footer-newsletter-title": {
@@ -154109,7 +154316,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "blog/enap-woek-benchmark-fuenf-bundesvorhaben.html",
-      "contentHash": "f4c9014c7cda8f8a",
+      "contentHash": "4c095e2730264484",
       "sectionId": "footer-newsletter-title"
     },
     "/blog/geg-wirkungscheck-ioi-t-sroi.html": {
@@ -165461,7 +165668,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "index.html",
-      "contentHash": "edcdcb4e4cdd7308",
+      "contentHash": "711a54b850f93d35",
       "sectionId": "woek-page-0eb547304658805a"
     },
     "/index.html#aktuell-journal-title": {
@@ -165469,7 +165676,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "index.html",
-      "contentHash": "edcdcb4e4cdd7308",
+      "contentHash": "711a54b850f93d35",
       "sectionId": "aktuell-journal-title"
     },
     "/index.html#ausgangslage-title": {
@@ -165477,7 +165684,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "index.html",
-      "contentHash": "edcdcb4e4cdd7308",
+      "contentHash": "711a54b850f93d35",
       "sectionId": "ausgangslage-title"
     },
     "/index.html#footer-newsletter-title": {
@@ -165485,7 +165692,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "index.html",
-      "contentHash": "edcdcb4e4cdd7308",
+      "contentHash": "711a54b850f93d35",
       "sectionId": "footer-newsletter-title"
     },
     "/index.html#in-5-minuten-title": {
@@ -165493,7 +165700,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "index.html",
-      "contentHash": "edcdcb4e4cdd7308",
+      "contentHash": "711a54b850f93d35",
       "sectionId": "in-5-minuten-title"
     },
     "/index.html#journey-title": {
@@ -165501,7 +165708,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "index.html",
-      "contentHash": "edcdcb4e4cdd7308",
+      "contentHash": "711a54b850f93d35",
       "sectionId": "journey-title"
     },
     "/index.html#materialitaet-statt-rechtsform-title": {
@@ -165509,7 +165716,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "index.html",
-      "contentHash": "edcdcb4e4cdd7308",
+      "contentHash": "711a54b850f93d35",
       "sectionId": "materialitaet-statt-rechtsform-title"
     },
     "/index.html#parlament-info-home-title": {
@@ -165517,7 +165724,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "index.html",
-      "contentHash": "edcdcb4e4cdd7308",
+      "contentHash": "711a54b850f93d35",
       "sectionId": "parlament-info-home-title"
     },
     "/index.html#related-questions-title-seite": {
@@ -165525,7 +165732,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "index.html",
-      "contentHash": "edcdcb4e4cdd7308",
+      "contentHash": "711a54b850f93d35",
       "sectionId": "related-questions-title-seite"
     },
     "/index.html#staatliche-nachhaltigkeitsarchitektur-title": {
@@ -165533,7 +165740,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "index.html",
-      "contentHash": "edcdcb4e4cdd7308",
+      "contentHash": "711a54b850f93d35",
       "sectionId": "staatliche-nachhaltigkeitsarchitektur-title"
     },
     "/index.html#startvideo-title": {
@@ -165541,7 +165748,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "index.html",
-      "contentHash": "edcdcb4e4cdd7308",
+      "contentHash": "711a54b850f93d35",
       "sectionId": "startvideo-title"
     },
     "/index.html#ueberblickvideo-title": {
@@ -165549,7 +165756,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "index.html",
-      "contentHash": "edcdcb4e4cdd7308",
+      "contentHash": "711a54b850f93d35",
       "sectionId": "ueberblickvideo-title"
     },
     "/index.html#vertrauen-title": {
@@ -165557,7 +165764,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "index.html",
-      "contentHash": "edcdcb4e4cdd7308",
+      "contentHash": "711a54b850f93d35",
       "sectionId": "vertrauen-title"
     },
     "/index.html#weitere-einstiege-title": {
@@ -165565,7 +165772,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "index.html",
-      "contentHash": "edcdcb4e4cdd7308",
+      "contentHash": "711a54b850f93d35",
       "sectionId": "weitere-einstiege-title"
     },
     "/journal/gesundheit-erzeugen-statt-krankheit-verwalten/": {
@@ -165741,7 +165948,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/index.html",
-      "contentHash": "73200db52b7cc220",
+      "contentHash": "f86ea9ae259814f5",
       "sectionId": "woek-page-06c0a37a8592ce92"
     },
     "/quellenarchiv/#footer-newsletter-title": {
@@ -165749,7 +165956,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/index.html",
-      "contentHash": "73200db52b7cc220",
+      "contentHash": "f86ea9ae259814f5",
       "sectionId": "footer-newsletter-title"
     },
     "/quellenarchiv/wok-e-0001/": {
@@ -168181,7 +168388,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-g-333439f9e599/index.html",
-      "contentHash": "421e61a26de193b8",
+      "contentHash": "3c75fe9eb5e4e2ba",
       "sectionId": "woek-page-b3667c3a3046dbbe"
     },
     "/quellenarchiv/wok-g-333439f9e599/#footer-newsletter-title": {
@@ -168189,7 +168396,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-g-333439f9e599/index.html",
-      "contentHash": "421e61a26de193b8",
+      "contentHash": "3c75fe9eb5e4e2ba",
       "sectionId": "footer-newsletter-title"
     },
     "/quellenarchiv/wok-g-333439f9e599/#glance-wok-g-333439f9e599": {
@@ -168197,7 +168404,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-g-333439f9e599/index.html",
-      "contentHash": "421e61a26de193b8",
+      "contentHash": "3c75fe9eb5e4e2ba",
       "sectionId": "glance-wok-g-333439f9e599"
     },
     "/quellenarchiv/wok-g-333439f9e599/#steckbrief-wok-g-333439f9e599": {
@@ -168205,7 +168412,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-g-333439f9e599/index.html",
-      "contentHash": "421e61a26de193b8",
+      "contentHash": "3c75fe9eb5e4e2ba",
       "sectionId": "steckbrief-wok-g-333439f9e599"
     },
     "/quellenarchiv/wok-g-3458ef28a2ae/": {
@@ -169077,7 +169284,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-g-40a9d42ab436/index.html",
-      "contentHash": "527c98f28db91ada",
+      "contentHash": "ecee2d5b19eddf57",
       "sectionId": "woek-page-2cf02abb507cc5ba"
     },
     "/quellenarchiv/wok-g-40a9d42ab436/#footer-newsletter-title": {
@@ -169085,7 +169292,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-g-40a9d42ab436/index.html",
-      "contentHash": "527c98f28db91ada",
+      "contentHash": "ecee2d5b19eddf57",
       "sectionId": "footer-newsletter-title"
     },
     "/quellenarchiv/wok-g-40a9d42ab436/#glance-wok-g-40a9d42ab436": {
@@ -169093,7 +169300,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-g-40a9d42ab436/index.html",
-      "contentHash": "527c98f28db91ada",
+      "contentHash": "ecee2d5b19eddf57",
       "sectionId": "glance-wok-g-40a9d42ab436"
     },
     "/quellenarchiv/wok-g-40a9d42ab436/#steckbrief-wok-g-40a9d42ab436": {
@@ -169101,7 +169308,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-g-40a9d42ab436/index.html",
-      "contentHash": "527c98f28db91ada",
+      "contentHash": "ecee2d5b19eddf57",
       "sectionId": "steckbrief-wok-g-40a9d42ab436"
     },
     "/quellenarchiv/wok-g-40f672fd1135/": {
@@ -170103,6 +170310,38 @@
       "sourceFile": "quellenarchiv/wok-g-5a91bfdcebb4/index.html",
       "contentHash": "0c08635cd32b948d",
       "sectionId": "steckbrief-wok-g-5a91bfdcebb4"
+    },
+    "/quellenarchiv/wok-g-5ae09458064a/": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-5ae09458064a/index.html",
+      "contentHash": "76d57cc4a1686c28",
+      "sectionId": "woek-page-b55b8d81f3495275"
+    },
+    "/quellenarchiv/wok-g-5ae09458064a/#footer-newsletter-title": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-5ae09458064a/index.html",
+      "contentHash": "76d57cc4a1686c28",
+      "sectionId": "footer-newsletter-title"
+    },
+    "/quellenarchiv/wok-g-5ae09458064a/#glance-wok-g-5ae09458064a": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-5ae09458064a/index.html",
+      "contentHash": "76d57cc4a1686c28",
+      "sectionId": "glance-wok-g-5ae09458064a"
+    },
+    "/quellenarchiv/wok-g-5ae09458064a/#steckbrief-wok-g-5ae09458064a": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-5ae09458064a/index.html",
+      "contentHash": "76d57cc4a1686c28",
+      "sectionId": "steckbrief-wok-g-5ae09458064a"
     },
     "/quellenarchiv/wok-g-5ae9f5e51f92/": {
       "documentType": "Referenz",
@@ -175133,7 +175372,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-g-e6ede1ac4941/index.html",
-      "contentHash": "cbf769377826fd92",
+      "contentHash": "aaacf3a7c803fe5a",
       "sectionId": "woek-page-40d72118e627e06f"
     },
     "/quellenarchiv/wok-g-e6ede1ac4941/#footer-newsletter-title": {
@@ -175141,7 +175380,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-g-e6ede1ac4941/index.html",
-      "contentHash": "cbf769377826fd92",
+      "contentHash": "aaacf3a7c803fe5a",
       "sectionId": "footer-newsletter-title"
     },
     "/quellenarchiv/wok-g-e6ede1ac4941/#glance-wok-g-e6ede1ac4941": {
@@ -175149,7 +175388,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-g-e6ede1ac4941/index.html",
-      "contentHash": "cbf769377826fd92",
+      "contentHash": "aaacf3a7c803fe5a",
       "sectionId": "glance-wok-g-e6ede1ac4941"
     },
     "/quellenarchiv/wok-g-e6ede1ac4941/#steckbrief-wok-g-e6ede1ac4941": {
@@ -175157,7 +175396,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-g-e6ede1ac4941/index.html",
-      "contentHash": "cbf769377826fd92",
+      "contentHash": "aaacf3a7c803fe5a",
       "sectionId": "steckbrief-wok-g-e6ede1ac4941"
     },
     "/quellenarchiv/wok-g-e8cfb8158795/": {
@@ -220237,7 +220476,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-q-9029/index.html",
-      "contentHash": "17bd62c959e645b7",
+      "contentHash": "373482861c8fa2b8",
       "sectionId": "woek-page-f6eaa2281c515348"
     },
     "/quellenarchiv/wok-q-9029/#fields-wok-q-9029": {
@@ -220245,7 +220484,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-q-9029/index.html",
-      "contentHash": "17bd62c959e645b7",
+      "contentHash": "373482861c8fa2b8",
       "sectionId": "fields-wok-q-9029"
     },
     "/quellenarchiv/wok-q-9029/#footer-newsletter-title": {
@@ -220253,7 +220492,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-q-9029/index.html",
-      "contentHash": "17bd62c959e645b7",
+      "contentHash": "373482861c8fa2b8",
       "sectionId": "footer-newsletter-title"
     },
     "/quellenarchiv/wok-q-9029/#glance-wok-q-9029": {
@@ -220261,7 +220500,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-q-9029/index.html",
-      "contentHash": "17bd62c959e645b7",
+      "contentHash": "373482861c8fa2b8",
       "sectionId": "glance-wok-q-9029"
     },
     "/quellenarchiv/wok-q-9029/#steckbrief-wok-q-9029": {
@@ -220269,7 +220508,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-q-9029/index.html",
-      "contentHash": "17bd62c959e645b7",
+      "contentHash": "373482861c8fa2b8",
       "sectionId": "steckbrief-wok-q-9029"
     },
     "/quellenarchiv/wok-q-9030/": {
@@ -220717,7 +220956,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-q-9048/index.html",
-      "contentHash": "f77a61a4ba83f1bb",
+      "contentHash": "ca7ece05cec93f9d",
       "sectionId": "woek-page-3aaf042581e2dbc0"
     },
     "/quellenarchiv/wok-q-9048/#fields-wok-q-9048": {
@@ -220725,7 +220964,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-q-9048/index.html",
-      "contentHash": "f77a61a4ba83f1bb",
+      "contentHash": "ca7ece05cec93f9d",
       "sectionId": "fields-wok-q-9048"
     },
     "/quellenarchiv/wok-q-9048/#footer-newsletter-title": {
@@ -220733,7 +220972,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-q-9048/index.html",
-      "contentHash": "f77a61a4ba83f1bb",
+      "contentHash": "ca7ece05cec93f9d",
       "sectionId": "footer-newsletter-title"
     },
     "/quellenarchiv/wok-q-9048/#glance-wok-q-9048": {
@@ -220741,7 +220980,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-q-9048/index.html",
-      "contentHash": "f77a61a4ba83f1bb",
+      "contentHash": "ca7ece05cec93f9d",
       "sectionId": "glance-wok-q-9048"
     },
     "/quellenarchiv/wok-q-9048/#steckbrief-wok-q-9048": {
@@ -220749,7 +220988,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-q-9048/index.html",
-      "contentHash": "f77a61a4ba83f1bb",
+      "contentHash": "ca7ece05cec93f9d",
       "sectionId": "steckbrief-wok-q-9048"
     },
     "/quellenarchiv/wok-q-9048/#used-in-wok-q-9048": {
@@ -220757,7 +220996,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-q-9048/index.html",
-      "contentHash": "f77a61a4ba83f1bb",
+      "contentHash": "ca7ece05cec93f9d",
       "sectionId": "used-in-wok-q-9048"
     },
     "/quellenarchiv/wok-q-9049/": {
@@ -220765,7 +221004,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-q-9049/index.html",
-      "contentHash": "0dd961f10cb129dc",
+      "contentHash": "0ab9797d0495de03",
       "sectionId": "woek-page-e148b4c1aa131b4e"
     },
     "/quellenarchiv/wok-q-9049/#fields-wok-q-9049": {
@@ -220773,7 +221012,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-q-9049/index.html",
-      "contentHash": "0dd961f10cb129dc",
+      "contentHash": "0ab9797d0495de03",
       "sectionId": "fields-wok-q-9049"
     },
     "/quellenarchiv/wok-q-9049/#footer-newsletter-title": {
@@ -220781,7 +221020,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-q-9049/index.html",
-      "contentHash": "0dd961f10cb129dc",
+      "contentHash": "0ab9797d0495de03",
       "sectionId": "footer-newsletter-title"
     },
     "/quellenarchiv/wok-q-9049/#glance-wok-q-9049": {
@@ -220789,7 +221028,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-q-9049/index.html",
-      "contentHash": "0dd961f10cb129dc",
+      "contentHash": "0ab9797d0495de03",
       "sectionId": "glance-wok-q-9049"
     },
     "/quellenarchiv/wok-q-9049/#steckbrief-wok-q-9049": {
@@ -220797,7 +221036,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-q-9049/index.html",
-      "contentHash": "0dd961f10cb129dc",
+      "contentHash": "0ab9797d0495de03",
       "sectionId": "steckbrief-wok-q-9049"
     },
     "/quellenarchiv/wok-q-9049/#used-in-wok-q-9049": {
@@ -220805,7 +221044,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/wok-q-9049/index.html",
-      "contentHash": "0dd961f10cb129dc",
+      "contentHash": "0ab9797d0495de03",
       "sectionId": "used-in-wok-q-9049"
     },
     "/quellenarchiv/wok-q-9050/": {

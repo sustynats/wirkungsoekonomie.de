@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { GovernmentActionScopeExplainer } from "@/app/components/GovernmentActionScopeExplainer";
 
 type CanonicalMethodExplainerProps = {
   context?: "portal" | "government";
@@ -62,6 +63,8 @@ export function CanonicalMethodExplainer({ context = "portal" }: CanonicalMethod
 
   return (
     <>
+      <GovernmentActionScopeExplainer compact={context === "portal"} />
+
       <section className="canonical-method" aria-labelledby={`canonical-method-title-${context}`}>
         <header className="canonical-method-intro">
           <p className="eyebrow">Verbindliche Prüfreihenfolge</p>

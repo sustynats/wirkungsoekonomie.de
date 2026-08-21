@@ -41,6 +41,10 @@ Diese Datei ist die dauerhafte Arbeitsanweisung fuer Codex-Aufgaben in diesem Re
 - Eine veroeffentlichte Nachhaltigkeitsdarstellung/GFA ist nicht automatisch ein veroeffentlichter eNAP-Rohexport. Fehlt eine oeffentlich auffindbare eNAP-Dokumentation, lautet der Status `NOT_PUBLICLY_ESTABLISHED`, niemals automatisch `NOT_ASSESSED`.
 - Bei geeigneten Bundesregelungsvorhaben ist der Layer `STATE_GFA_ENAP_BENCHMARK` getrennt vom unabhaengigen WÖk-Urteil zu fuehren. Konvergenz zwischen staatlicher Pruefung und WÖk ist ein valides Ergebnis; WÖk muss nicht kuenstlich anders urteilen.
 - Historische Publikationen werden bei spaeteren fachlichen Praezisierungen nicht still umgeschrieben. Stattdessen Addendum, Erratum oder transparenter Standhinweis verwenden.
+- Der WÖk-Pruefumfang folgt der materiellen Wirkungsrelevanz, nicht allein der Rechtsform. Gesetze, Verordnungen, Strategien, Programme, Foerderungen, Garantien, Investitionen, Beschaffung, Infrastruktur- und Verwaltungsentscheidungen koennen deshalb pruefrelevant sein.
+- Staatliche Pruefrahmen sind objektspezifisch zu bestimmen. Bundes-GGO und eNAP duerfen nicht pauschal auf andere Handlungsformen, Laender, Kommunen oder die EU uebertragen werden; fehlende Universalitaet ist keine staatliche Pruefleere.
+- Fuer finanzwirksame Massnahmen sind § 7 BHO und die VV-BHO zu Wirtschaftlichkeitsuntersuchung und Erfolgskontrolle als bestehender staatlicher Rahmen zu pruefen. Je nach Gegenstand koennen weitere Fachrahmen hinzutreten.
+- Oeffentliches Eigentum allein belegt keine Regierungsentscheidung. Eigentumsrolle, konkreter Steuerungseinfluss, oeffentliches Mandat und politische Flankierung sind getrennt nachzuweisen; Attribution bleibt ohne tragfaehige Quelle offen.
 
 ## Umsetzung neuer Erklaerseiten
 

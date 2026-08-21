@@ -7,11 +7,36 @@ intact (historical pages receive a dated addendum instead of silent reinterpreta
 """
 from __future__ import annotations
 
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 MARKER = "state-sustainability-architecture-20260821"
 MATERIALITY_MARKER = "state-sustainability-materiality-scope-20260821"
+CURRENT_GUIDE_LABEL = "WÖk-Begriffsleitfaden führend v1.7"
+CURRENT_GUIDE_SURFACES = [
+    "fuer/akademie.html",
+    "fuer/buergerinnen.html",
+    "fuer/gesundheit.html",
+    "fuer/investoren.html",
+    "fuer/journalismus.html",
+    "fuer/kommunen.html",
+    "fuer/kommunen/kommunaler-wirkungsindex.html",
+    "fuer/mieter.html",
+    "fuer/politik.html",
+    "fuer/rente.html",
+    "fuer/unternehmen.html",
+    "fuer/wirkungseinkommen.html",
+    "fuer/wissenschaft-forschung.html",
+    "sdg-plus/medien-demokratie/wirkung-politischer-sprache.html",
+    "blog/enap-woek-benchmark-fuenf-bundesvorhaben.html",
+]
+REQUIRED_GLOSSARY_ROUTES = [
+    "/begriffe/7-bundeshaushaltsordnung/",
+    "/begriffe/vv-bho-wirtschaftlichkeitsuntersuchung-und-erfolgskontrolle/",
+    "/begriffe/objektspezifische-staatliche-pruefarchitektur/",
+    "/begriffe/wirkungsrelevanz-statt-rechtsform/",
+]
 
 STATE_BLOCK = f'''\n<!-- {MARKER} -->
 <section class="section section-muted" id="staatliche-nachhaltigkeitsarchitektur" aria-labelledby="staatliche-nachhaltigkeitsarchitektur-title">
@@ -52,11 +77,11 @@ MATERIALITY_BLOCK = f'''\n<!-- {MATERIALITY_MARKER} -->
     <p class="hero-kicker">Materialität statt Rechtsform</p>
     <h2 id="materialitaet-statt-rechtsform-title">Warum prüft die WÖk nicht nur Gesetze?</h2>
     <p><strong>Weil Wirkung nicht an der Rechtsform hängt.</strong> Ein Förderprogramm, eine Garantie, eine Infrastrukturinvestition, eine Beschaffungsentscheidung, eine Strategie, eine Verwaltungsentscheidung oder ein langfristiger Vertrag kann größere und längerfristigere Zustandsveränderungen auslösen als manches Gesetz. Deshalb fragt die WÖk zuerst, ob eine staatliche Entscheidung materiell genug für eine systematische Wirkungsprüfung ist. Erst danach wird geklärt, welcher staatliche Prüfrahmen für genau diesen Objekttyp und diese Zuständigkeit gilt.</p>
-    <p><strong>Deutschland prüft Folgen bereits - aber mit unterschiedlichen Verfahren je nach Entscheidungstyp.</strong> Für Bundesgesetze und -verordnungen sind GGO §§ 43/44, Gesetzesfolgenabschätzung, Nachhaltigkeitsprüfung und eNAP/eGFA besonders formalisiert. Für alle finanzwirksamen Maßnahmen verlangt § 7 BHO angemessene Wirtschaftlichkeitsuntersuchungen; die VV-BHO konkretisiert Planung, Lösungsvergleich und Erfolgskontrolle einschließlich Zielerreichungs-, Wirkungs- und Wirtschaftlichkeitskontrolle. Die Ziel- und Wirkungsorientierung des Bundeshaushalts (zwoH) entwickelt diese Haushaltsarchitektur weiter.</p>
-    <p>Die DNS 2025 bezieht auch Strategien, Programme, Ressortaktivitäten und Verwaltungspraxis ein. KSG § 13, KAnG § 8 sowie Vergabe-, Beteiligungs- und Fachrechtsregeln gelten nur, wenn der jeweilige Gegenstand ihren Anwendungsbereich erfüllt. Eine fehlende öffentliche Dokumentation beweist weder fehlende Prüfung noch fehlende Alternativen oder Ex-post-Kontrolle.</p>
+    <p><strong>Deutschland prüft Folgen bereits - aber mit unterschiedlichen Verfahren je nach Entscheidungstyp.</strong> Für Bundesgesetze und -verordnungen sind GGO §§ 43/44, Gesetzesfolgenabschätzung, Nachhaltigkeitsprüfung und eNAP/eGFA besonders formalisiert. Für alle finanzwirksamen Maßnahmen verlangt § 7 BHO angemessene Wirtschaftlichkeitsuntersuchungen; § 7 Absatz 2 BHO verankert dabei ausdrücklich diese Pflicht und die Berücksichtigung der Risikoverteilung. Die VV-BHO konkretisiert Planung, Lösungsvergleich und Erfolgskontrolle einschließlich Zielerreichungs-, Wirkungs- und Wirtschaftlichkeitskontrolle. Die Ziel- und Wirkungsorientierung des Bundeshaushalts (zwoH) entwickelt diese Haushaltsarchitektur weiter.</p>
+    <p>Die DNS 2025 bezieht auch Strategien, Programme, Ressortaktivitäten und Verwaltungspraxis ein. KSG § 13, KAnG § 8 sowie Vergabe-, Beteiligungs- und Fachrechtsregeln gelten nur, wenn der jeweilige Gegenstand ihren Anwendungsbereich erfüllt. Außerhalb der Bundesrechtsetzung wird keine allgemeine eNAP-Pflicht behauptet. Eine fehlende öffentliche Dokumentation beweist weder fehlende Prüfung noch fehlende Alternativen oder Ex-post-Kontrolle.</p>
     <p>Die WÖk legt darüber einen einheitlichen materialitätsbasierten Wirkungsmaßstab. Sie weist für jedes Objekt zuerst den anwendbaren staatlichen Prüfrahmen und dessen öffentlichen Dokumentationsstand aus. Danach zeigt sie unabhängig Konvergenz, zusätzliche Befunde oder begründete Abweichungen entlang derselben Problem-, Ziel-, Wirkpfad-, Options- und Reality-Check-Kette.</p>
     <p>Entscheidungen staatseigener oder staatlich dominierter Unternehmen bleiben als <strong>Unternehmensentscheidung</strong> von Eigentümerrolle, politischer Begleitung und belegbarer staatlicher Zurechnung getrennt. Staatliches Eigentum allein macht eine Unternehmensentscheidung weder zur Ministeriumsentscheidung noch zu einem GGO-/eNAP-pflichtigen Regelungsvorhaben.</p>
-    <p><a class="text-link" href="/quellenarchiv/wok-q-9048/">BHO § 7</a> · <a class="text-link" href="/quellenarchiv/wok-q-9049/">VV-BHO zu § 7</a> · <a class="text-link" href="/quellenarchiv/wok-q-9050/">BMF-Rahmen zwoH</a> · <a class="text-link" href="/quellenarchiv/wok-q-9046/">KSG § 13</a> · <a class="text-link" href="/quellenarchiv/wok-q-9047/">KAnG § 8</a></p>
+    <p><a class="text-link" href="/quellenarchiv/wok-q-9029/">GGO §§ 43/44/62</a> · <a class="text-link" href="/quellenarchiv/wok-q-9048/">BHO § 7</a> · <a class="text-link" href="/quellenarchiv/wok-q-9049/">VV-BHO zu § 7</a> · <a class="text-link" href="/quellenarchiv/wok-q-9050/">BMF-Rahmen zwoH</a> · <a class="text-link" href="/quellenarchiv/wok-q-9046/">KSG § 13</a> · <a class="text-link" href="/quellenarchiv/wok-q-9047/">KAnG § 8</a> · <a class="text-link" href="/methodik/externe-quellen.html">Amtliche Quellen und ihre Funktion</a></p>
   </div>
 </section>\n'''
 
@@ -149,8 +174,50 @@ def replace_once(rel: str, old: str, new: str) -> bool:
     return True
 
 
+def sync_current_guide_label(rel: str) -> bool:
+    """Update only explicit living surfaces; historical publications remain untouched."""
+    path = ROOT / rel
+    if not path.exists():
+        return False
+    text = path.read_text(encoding="utf-8")
+    updated = text.replace("WÖk-Begriffsleitfaden führend v1.6", CURRENT_GUIDE_LABEL)
+    updated = updated.replace(
+        "Führender Begriffsleitfaden der Wirkungsökonomie v1.6",
+        "Führender Begriffsleitfaden der Wirkungsökonomie v1.7",
+    )
+    if updated == text:
+        return False
+    path.write_text(updated, encoding="utf-8")
+    return True
+
+
+def ensure_glossary_sitemap_routes() -> bool:
+    sitemap = ROOT / "sitemap.xml"
+    if not sitemap.exists():
+        return False
+    xml = sitemap.read_text(encoding="utf-8")
+    additions: list[str] = []
+    for route in REQUIRED_GLOSSARY_ROUTES:
+        public_file = ROOT / route.lstrip("/") / "index.html"
+        location = f"https://wirkungsoekonomie.de{route}"
+        if public_file.exists() and f"<loc>{location}</loc>" not in xml:
+            additions.append(f"  <url><loc>{location}</loc><lastmod>2026-08-21</lastmod></url>")
+    if not additions:
+        return False
+    xml = xml.replace("</urlset>", f"{'\n'.join(additions)}\n</urlset>")
+    sitemap.write_text(xml, encoding="utf-8")
+    return True
+
+
 def main() -> int:
     changed: list[str] = []
+
+    for guide_surface in CURRENT_GUIDE_SURFACES:
+        if sync_current_guide_label(guide_surface):
+            changed.append(guide_surface)
+
+    if ensure_glossary_sitemap_routes():
+        changed.append("sitemap.xml")
 
     # Start page: preserve the critique but explicitly delimit 'Wirkungsblindheit'.
     rel = "index.html"

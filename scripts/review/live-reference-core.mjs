@@ -5,7 +5,7 @@ import crypto from "node:crypto";
 export const SOURCE_VERSION = "2026.0";
 export const IMPORT_VERSION = "2026.1-import";
 export const LIVE_REFERENCE_VERSION = "2026.2-live-reference";
-export const TERMINOLOGY_BASE = "WOeK_Begriffsleitfaden_fuehrend_v1.6.md";
+export const TERMINOLOGY_BASE = "WOeK_Begriffsleitfaden_fuehrend_v1.7.md";
 export const TERMINOLOGY_BASE_DATE = "2026-08-21";
 
 const htmlRoots = ["referenz", "dokumente"];
@@ -33,31 +33,31 @@ const priorityChapters = new Map([
   [10, {
     cluster: "Begriffssystem",
     terms: ["Wirkung", "positive Netto-Wirkung", "Wirkungspotenzial"],
-    source: "WOeK_Begriffsleitfaden_fuehrend_v1.6.md",
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.7.md",
     text: "Wirkung ist in der Wirkungsökonomie neutral und relational: die tatsächliche Veränderung von Zuständen. Wenn eine Zielgröße gemeint ist, lautet sie positive Netto-Wirkung für Mensch, Planet und Demokratie. Eine Absicht, ein Output, ein Bericht oder ein Image ist noch keine Wirkung."
   }],
   [11, {
     cluster: "Begriffssystem",
     terms: ["Wirkungspotenzial", "Wirkstoff", "Wirkmechanismus", "Wirkungspfad"],
-    source: "WOeK_Begriffsleitfaden_fuehrend_v1.6.md",
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.7.md",
     text: "Wirkungspotenzial bezeichnet die Möglichkeit, dass Wirkung eintreten kann. Es ist noch keine eingetretene Wirkung. Der Begriff Wirkstoff wird nur als didaktische Analogie verwendet: Ein gesellschaftlicher Wirkstoff kann etwas auslösen, muss aber über Wirkmechanismus, Wirkungspfad, Kontext, Dosis, Nebenwirkung und Wechselwirkung geprüft werden."
   }],
   [12, {
     cluster: "Begriffssystem",
     terms: ["Wirkungsrückkopplung", "Wirkungslenkung", "Wirkungsrisiko"],
-    source: "WOeK_Begriffsleitfaden_fuehrend_v1.6.md",
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.7.md",
     text: "Wirkungslenkung und Wirkungsrückkopplung sind verschiedene Dinge. Wirkungslenkung legt Richtung, Ziele, Schutzgrenzen, Prioritäten und Instrumentregeln fest. Wirkungsrückkopplung führt beobachtete Zustandsveränderungen, Evidenz und Unsicherheit in spätere Entscheidungen zurück. Erst die Rückkopplung zeigt, ob die Lenkung beibehalten, verändert oder beendet werden muss."
   }],
   [13, {
     cluster: "Begriffssystem",
     terms: ["Wirkungsträger", "Wirkungsempfänger", "Wirkungsraum", "Resonanzraum"],
-    source: "WOeK_Begriffsleitfaden_fuehrend_v1.6.md",
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.7.md",
     text: "Wirkungsraum, Resonanzraum, Wirkungsträger und Wirkungsempfänger werden getrennt geführt. Ein Wirkungsraum ist der Bereich, in dem Zustände verändert werden; ein Resonanzraum ist ein sozialer oder kultureller Raum, in dem Deutungen, Zugehörigkeit und Reaktionen entstehen können."
   }],
   [16, {
     cluster: "Begriffssystem",
     terms: ["Wirkungsarchitektur", "Wirkungsgrenze", "Wirkungswahrheit", "Wirkungsnetz"],
-    source: "WOeK_Begriffsleitfaden_fuehrend_v1.6.md",
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.7.md",
     text: "Wirkungsarchitektur meint nicht eine Website oder ein Diagramm, sondern das Gesamtsystem aus Daten, Regeln, Institutionen, Anreizen, Preisen, Steuern, Governance, Kontrolle, Lernen und Rückkopplung. Wirkungswahrheit meint Wirkungsnähe und Transparenz über Folgen, kein Wahrheitsmonopol."
   }],
   [20, {
@@ -69,13 +69,13 @@ const priorityChapters = new Map([
   [22, {
     cluster: "Begriffssystem",
     terms: ["Wirkungslenkung", "Wirkungsrückkopplung"],
-    source: "WOeK_Begriffsleitfaden_fuehrend_v1.6.md",
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.7.md",
     text: "Wirkungslenkung beschreibt die bewusste Ausrichtung von Anreizen und Entscheidungen: Ziele, Schutzgrenzen, Prioritäten und Instrumente. Wirkungsrückkopplung ist der Lernmechanismus: Beobachtungen über tatsächliche Zustandsveränderungen, Datenqualität und Unsicherheit fließen in die nächste Entscheidung ein. Eine Preis-, Steuer- oder Förderregel kann ein Instrument der Lenkung sein; sie ist nicht mit der Rückkopplung selbst gleichzusetzen."
   }],
   [23, {
     cluster: "Begriffssystem",
     terms: ["Wirkungsrisiko", "Wirkungsresilienz", "Resilienz"],
-    source: "WOeK_Begriffsleitfaden_fuehrend_v1.6.md",
+    source: "WOeK_Begriffsleitfaden_fuehrend_v1.7.md",
     text: "Wirkungsresilienz wird als positive, normativ gebundene Resilienz verstanden: Ein System bleibt unter Stress handlungsfähig, lernt und stärkt tragende Lebens-, Sozial- und Demokratiefunktionen. Robustheit allein reicht nicht; auch destruktive Systeme können robust sein."
   }],
   [30, {

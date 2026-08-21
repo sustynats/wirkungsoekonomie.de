@@ -20,10 +20,16 @@ const requiredTerms = [
   "state-assessment-benchmark",
   "state-gfa-enap-benchmark",
   "wirkungsblindheit",
+  "bundeshaushaltsordnung-paragraf-7",
+  "vv-bho-wirtschaftlichkeitsuntersuchung-erfolgskontrolle",
+  "objektspezifische-staatliche-pruefarchitektur",
+  "wirkungsrelevanz-statt-rechtsform",
 ];
 
 const requiredSources = [
   ...Array.from({ length: 9 }, (_, index) => `WÖK-Q-${9029 + index}`),
+  "WÖK-Q-9046",
+  "WÖK-Q-9047",
   "WÖK-Q-9048",
   "WÖK-Q-9049",
   "WÖK-Q-9050",
@@ -46,6 +52,9 @@ const expectedArtifacts = [
   "source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.6-staatsarchitektur.md",
   "source-assets/generated/WOeK_Begriffsleitfaden_fuehrend_v1.6.md",
   "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.6.pdf",
+  "source-assets/originals/WOeK_Begriffsleitfaden_fuehrend_v1.7-objektspezifische-pruefarchitektur.md",
+  "source-assets/generated/WOeK_Begriffsleitfaden_fuehrend_v1.7.md",
+  "public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.7.pdf",
   "content/documents/online/woek-begriffsleitfaden-fuehrend.inc",
   "data/master-register/WOeK_Masterregister_v1.5_2026-08-21.xlsx",
   "assets/downloads/woek-register/v1.5/WOeK_Masterregister_v1.5_2026-08-21.xlsx",
@@ -146,7 +155,7 @@ if (problemIndex < 0 || goalIndex < 0 || problemIndex > goalIndex) {
 }
 
 const guideText = fs.readFileSync(
-  path.join(root, "source-assets/generated/WOeK_Begriffsleitfaden_fuehrend_v1.6.md"),
+  path.join(root, "source-assets/generated/WOeK_Begriffsleitfaden_fuehrend_v1.7.md"),
   "utf8",
 );
 for (const needle of [
@@ -157,8 +166,12 @@ for (const needle of [
   "eNAP",
   "eGFA und E-Gesetzgebung",
   "MasterItem → StateVariable → Indicator → Observation → Analysis / Reality Check",
+  "Wirkungsrelevanz statt Rechtsform",
+  "§ 7 BHO",
+  "VV-BHO",
+  "objektspezifische staatliche Prüfarchitektur",
 ]) {
-  if (!guideText.includes(needle)) errors.push(`Begriffsleitfaden v1.6 enthält Pflichtteil nicht: ${needle}`);
+  if (!guideText.includes(needle)) errors.push(`Begriffsleitfaden v1.7 enthält Pflichtteil nicht: ${needle}`);
 }
 
 const registerExport = readJson("assets/downloads/woek-register/v1.5/register-v1.5.json");
@@ -209,7 +222,14 @@ const requiredDiscoveryRoutes = [
 const requiredSitemapRoutes = [
   ...requiredDiscoveryRoutes,
   "/begriffe/gemeinsame-geschaeftsordnung-der-bundesministerien/",
+  "/begriffe/7-bundeshaushaltsordnung/",
+  "/begriffe/vv-bho-wirtschaftlichkeitsuntersuchung-und-erfolgskontrolle/",
+  "/begriffe/objektspezifische-staatliche-pruefarchitektur/",
+  "/begriffe/wirkungsrelevanz-statt-rechtsform/",
   "/quellenarchiv/wok-q-9029/",
+  "/quellenarchiv/wok-q-9048/",
+  "/quellenarchiv/wok-q-9049/",
+  "/bibliothek/woek-begriffsleitfaden-fuehrend/",
   "/bibliothek/woek-master-items-register/",
   "/woek-id-register/",
 ];
@@ -262,7 +282,7 @@ function classificationFor(rel) {
   if (rel === "bibliothek/woek-master-items-register/index.html") return ["REWRITE_REQUIRED", "ADD_PORTAL_CROSSLINK", "ADD_SOURCE_LINKS"];
   if (rel === "bibliothek/woek-begriffsleitfaden-fuehrend/index.html") return ["REWRITE_REQUIRED", "ADD_GLOSSARY_CROSSLINKS", "ADD_SOURCE_LINKS"];
   if (rel === "woek-id-register/index.html" || rel.startsWith("woek-id-register/") && rel.endsWith("/index.html")) return ["REWRITE_REQUIRED", "ADD_PORTAL_CROSSLINK"];
-  if (/^quellenarchiv\/wok-q-90(?:29|3[0-7])\/index\.html$/.test(rel)) return ["ADD_SOURCE_LINKS"];
+  if (/^quellenarchiv\/wok-q-90(?:29|3[0-7]|4[6-9])\/index\.html$/.test(rel)) return ["ADD_SOURCE_LINKS"];
   if (rel.startsWith("begriffe/") && requiredTerms.some((termId) => glossaryById.get(termId)?.slug && rel === `begriffe/${glossaryById.get(termId).slug}/index.html`)) return ["ADD_GLOSSARY_CROSSLINKS", "ADD_SOURCE_LINKS"];
   if (/^(blog|journal|dokumente|veroeffentlichungen)\//.test(rel)) return ["NO_CHANGE_REQUIRED"];
   return ["NO_CHANGE_REQUIRED"];
