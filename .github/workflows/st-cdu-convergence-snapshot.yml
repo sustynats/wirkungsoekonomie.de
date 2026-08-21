@@ -7,12 +7,14 @@ on:
     paths:
       - tools/materialize_st_cdu_review_snapshots.py
       - tools/build_st_cdu_global_convergence.py
+      - woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-global-leaf-reconciliation-plan-v1.json
       - .github/workflows/st-cdu-convergence-snapshot.yml
   pull_request:
     types: [opened, reopened, synchronize]
     paths:
       - tools/materialize_st_cdu_review_snapshots.py
       - tools/build_st_cdu_global_convergence.py
+      - woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-global-leaf-reconciliation-plan-v1.json
       - .github/workflows/st-cdu-convergence-snapshot.yml
   workflow_dispatch:
 
