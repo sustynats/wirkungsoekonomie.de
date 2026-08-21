@@ -1,0 +1,378 @@
+{
+  "schema_version": "1.1",
+  "manifest_version": "2026-08-21-primary-parity-4",
+  "manifest_status": "PARTIAL_PRIMARY_SOURCE_RECONCILIATION_CONTINUE_FULL_PROGRAMME_PARITY",
+  "composition_mode": "IMMUTABLE_RELEASE1_BASE_PLUS_ADDITIVE_VERSIONED_SOURCE_UNITS",
+  "programme_key": "ltw-2026-st-cdu",
+  "party": "CDU",
+  "election": "Landtagswahl Sachsen-Anhalt 2026",
+  "primary_source": {
+    "document_title": "Regierungsprogramm der CDU Sachsen-Anhalt zur Landtagswahl 2026",
+    "adopted_date": "2026-06-13",
+    "url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf",
+    "page_count": 91
+  },
+  "legacy_release1": {
+    "register_path": "woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-cdu-zusagen.md",
+    "blob_sha": "6e8c53392d76e9847ee3028d241a988c12b3d2fb",
+    "source_hash": "15272934630ab67d50bea0da18964d83fb06b9b9aa32686e56e824913acb8fce",
+    "source_unit_count": 344,
+    "immutable_historical_baseline": true
+  },
+  "working_primary_passage_count": 345,
+  "authoritative_source_unit_count": null,
+  "authoritative_effect_mechanism_count": null,
+  "denominator_status": "NOT_FROZEN_PENDING_FULL_PRIMARY_SOURCE_PARITY",
+  "historical_release1_ids_renumbered": false,
+  "additive_source_units": [
+    {
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001",
+      "source_locator": {
+        "pdf_page": 89,
+        "section": "Sachsen-Anhalt in Bund und Europa",
+        "after_legacy_source_unit": "ltw-2026-st-cdu-0341-eine-effektive-sichere-und-buergernahe-eu-foerdern-wir-bek",
+        "before_legacy_source_unit": "ltw-2026-st-cdu-0342-sachsen-anhalt-im-bund-gehoer-verschaffen-wir-setzen-uns-f"
+      },
+      "source_title": "Deindustrialisierung verhindern – ideologische Klima- und Umweltvorgaben zurücknehmen",
+      "source_summary": "Die Passage fordert, mehrere Klima-, Umwelt- und Sorgfaltsregeln auf EU- und Bundesebene zurückzunehmen oder wirtschaftsfreundlicher auszugestalten und begründet dies mit Standort-, Investitions-, Innovations- und Beschäftigungszielen.",
+      "source_gap_status": "PRIMARY_SOURCE_MATERIAL_OMISSION_RESTORED_VERSIONED",
+      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "impact_direction": "OPEN",
+      "evidence_level": "NOT_ASSESSABLE",
+      "assessment_maturity": "MULTI_MECHANISM_PARENT_REQUIRES_CHILD_SPLIT",
+      "fach_review": {
+        "issue_number": 234,
+        "comment_id": 5371280862,
+        "status": "SOURCE_BOUND_EDITORIAL_REVIEW_COMPLETE"
+      },
+      "children": [
+        {
+          "source_unit_id": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-TAXONOMY",
+          "parent_source_unit_id": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001",
+          "mechanism": "EU-Taxonomie zurücknehmen oder wirtschaftsfreundlicher ausgestalten",
+          "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED",
+          "impact_direction": "AMBIVALENT",
+          "evidence_level": "LOW",
+          "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE"
+        },
+        {
+          "source_unit_id": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-LKSG",
+          "parent_source_unit_id": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001",
+          "mechanism": "Lieferkettensorgfaltspflichtengesetz zurücknehmen oder wirtschaftsfreundlicher ausgestalten",
+          "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED",
+          "impact_direction": "AMBIVALENT",
+          "evidence_level": "LOW",
+          "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE"
+        },
+        {
+          "source_unit_id": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-CO2",
+          "parent_source_unit_id": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001",
+          "mechanism": "zusätzliche CO2-Abgaben zurücknehmen",
+          "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "impact_direction": "OPEN",
+          "evidence_level": "NOT_ASSESSABLE",
+          "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE"
+        },
+        {
+          "source_unit_id": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-CHEMICALS",
+          "parent_source_unit_id": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001",
+          "mechanism": "pauschale Chemikalienverbote zurücknehmen",
+          "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "impact_direction": "OPEN",
+          "evidence_level": "NOT_ASSESSABLE",
+          "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE"
+        }
+      ],
+      "context_only_elements": [
+        {
+          "text_function": "design_principle",
+          "label": "technologische Offenheit / realistische wirtschaftsfreundliche Umweltpolitik",
+          "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "reason": "Kein eigenständiger Wirkhebel ohne konkretes Instrument oder Entscheidungsregel."
+        }
+      ],
+      "recommendation_status": "NOT_FACH_AVAILABLE_DO_NOT_SYNTHESIZE",
+      "dns_reference": "REVIEWED_PENDING_EXACT_REGISTRY_MAPPING",
+      "state_gfa_enap_benchmark": "NOT_APPLICABLE"
+    }
+  ],
+  "versioned_splits_of_legacy_units": [
+    {
+      "legacy_source_unit": "ltw-2026-st-cdu-0341-eine-effektive-sichere-und-buergernahe-eu-foerdern-wir-bek",
+      "classification": "OVERMERGED_MULTI_MECHANISM_PARENT",
+      "parent_terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "children": [
+        {
+          "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0341-EU-CORE-TASKS",
+          "parent_legacy_source_unit": "ltw-2026-st-cdu-0341-eine-effektive-sichere-und-buergernahe-eu-foerdern-wir-bek",
+          "mechanism": "EU streng auf Kernaufgaben konzentrieren",
+          "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "impact_direction": "OPEN",
+          "evidence_level": "NOT_ASSESSABLE",
+          "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE"
+        },
+        {
+          "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0341-MIGRATION-BORDERS",
+          "parent_legacy_source_unit": "ltw-2026-st-cdu-0341-eine-effektive-sichere-und-buergernahe-eu-foerdern-wir-bek",
+          "mechanism": "irreguläre Migration unterbinden und Außengrenzen effektiv schützen",
+          "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "impact_direction": "OPEN",
+          "evidence_level": "NOT_ASSESSABLE",
+          "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE"
+        },
+        {
+          "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0341-COMMON-DEFENCE",
+          "parent_legacy_source_unit": "ltw-2026-st-cdu-0341-eine-effektive-sichere-und-buergernahe-eu-foerdern-wir-bek",
+          "mechanism": "gemeinsame Verteidigung stärken",
+          "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "impact_direction": "OPEN",
+          "evidence_level": "NOT_ASSESSABLE",
+          "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE"
+        },
+        {
+          "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0341-DEBT-TRANSFER",
+          "parent_legacy_source_unit": "ltw-2026-st-cdu-0341-eine-effektive-sichere-und-buergernahe-eu-foerdern-wir-bek",
+          "mechanism": "Einstieg in eine europäische Schulden- und Transferunion verhindern",
+          "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "impact_direction": "OPEN",
+          "evidence_level": "NOT_ASSESSABLE",
+          "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE"
+        }
+      ],
+      "context_only_elements": [
+        "Bekenntnis zu Freiheit, Demokratie, Rechtsstaatlichkeit und Subsidiarität",
+        "wirtschaftlich wettbewerbsfähig bleibt als behaupteter Ziel-/Outcome-Satz"
+      ]
+    },
+    {
+      "legacy_source_unit": "ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa",
+      "classification": "TRUNCATED_OVERMERGED_MULTI_MECHANISM_PARENT",
+      "parent_terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "children": [
+        {
+          "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0250-BIOTOPE-CONNECTIVITY",
+          "parent_legacy_source_unit": "ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa",
+          "mechanism": "Rückzugsgebiete durch bessere Biotopvernetzung sichern und Biodiversitätsstrategie überarbeiten",
+          "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED",
+          "impact_direction": "POSITIVE",
+          "evidence_level": "MEDIUM",
+          "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE"
+        },
+        {
+          "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0250-INVASIVE-SPECIES",
+          "parent_legacy_source_unit": "ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa",
+          "mechanism": "besonderes Augenmerk auf invasive Arten",
+          "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED",
+          "impact_direction": "AMBIVALENT",
+          "evidence_level": "LOW",
+          "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE"
+        },
+        {
+          "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0250-SPECIES-STATUS",
+          "parent_legacy_source_unit": "ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa",
+          "mechanism": "Schutzstatus von Arten überprüfbar machen",
+          "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED",
+          "impact_direction": "AMBIVALENT",
+          "evidence_level": "LOW",
+          "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE"
+        },
+        {
+          "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0250-WILDLIFE-DAMAGE",
+          "parent_legacy_source_unit": "ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa",
+          "mechanism": "Wildschadensausgleich zur Stärkung der Akzeptanz des Artenschutzes",
+          "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED",
+          "impact_direction": "AMBIVALENT",
+          "evidence_level": "LOW",
+          "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE"
+        },
+        {
+          "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0250-VOLUNTEER-CONSERVATION",
+          "parent_legacy_source_unit": "ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa",
+          "mechanism": "ehrenamtlichen Naturschutz stärken und in Fachgremien beteiligen",
+          "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED",
+          "impact_direction": "POSITIVE",
+          "evidence_level": "LOW",
+          "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE"
+        },
+        {
+          "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0250-BNE",
+          "parent_legacy_source_unit": "ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa",
+          "mechanism": "Bildung für nachhaltige Entwicklung ressortübergreifend stärken",
+          "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED",
+          "impact_direction": "POSITIVE",
+          "evidence_level": "LOW",
+          "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE"
+        }
+      ]
+    },
+    {
+      "legacy_source_unit": "ltw-2026-st-cdu-0319-neue-wege-fuer-einen-zukunftsfaehigen-tourismus-der-touris",
+      "classification": "OVERMERGED_MULTI_MECHANISM_PARENT",
+      "parent_terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "children": [
+        {
+          "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0319-TREND-DIGITAL",
+          "parent_legacy_source_unit": "ltw-2026-st-cdu-0319-neue-wege-fuer-einen-zukunftsfaehigen-tourismus-der-touris",
+          "mechanism": "touristische Trends erkennen und Digitalisierung als Entwicklungshebel nutzen",
+          "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "impact_direction": "OPEN",
+          "evidence_level": "NOT_ASSESSABLE",
+          "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE"
+        },
+        {
+          "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0319-NATURE-EXPERIENCE",
+          "parent_legacy_source_unit": "ltw-2026-st-cdu-0319-neue-wege-fuer-einen-zukunftsfaehigen-tourismus-der-touris",
+          "mechanism": "naturnahe Erlebniskonzepte mit Kultur, Landschaftspflege und nachhaltigen Nutzflächen verbinden",
+          "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED",
+          "impact_direction": "AMBIVALENT",
+          "evidence_level": "LOW",
+          "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE"
+        },
+        {
+          "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0319-MUNICIPAL-PRIORITY",
+          "parent_legacy_source_unit": "ltw-2026-st-cdu-0319-neue-wege-fuer-einen-zukunftsfaehigen-tourismus-der-touris",
+          "mechanism": "höhere Priorisierung in tourismusrelevanten Kommunen",
+          "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+          "impact_direction": "OPEN",
+          "evidence_level": "NOT_ASSESSABLE",
+          "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE"
+        }
+      ],
+      "context_only_elements": [
+        "Tourismus als ökonomischen Wachstumsmotor weiter befördern ist Ziel-/Outcome-Frame, kein eigener Maßnahmenmechanismus."
+      ]
+    },
+    {
+      "legacy_source_unit": "ltw-2026-st-cdu-0323-landesweit-in-die-touristische-infrastruktur-investieren-o",
+      "classification": "OVERMERGED_MULTI_MECHANISM_PARENT",
+      "parent_terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "children": [
+        {
+          "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0323-ACTIVE-PT-ACCESS",
+          "parent_legacy_source_unit": "ltw-2026-st-cdu-0323-landesweit-in-die-touristische-infrastruktur-investieren-o",
+          "mechanism": "Radwege und ÖPNV-Zugang zu touristischen Hotspots verbessern",
+          "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED",
+          "impact_direction": "POSITIVE",
+          "evidence_level": "LOW",
+          "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE"
+        },
+        {
+          "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0323-DIGITAL-VISITOR-STEERING",
+          "parent_legacy_source_unit": "ltw-2026-st-cdu-0323-landesweit-in-die-touristische-infrastruktur-investieren-o",
+          "mechanism": "digitale Infrastruktur und Besucherlenkungssysteme ausbauen",
+          "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED",
+          "impact_direction": "POSITIVE",
+          "evidence_level": "LOW",
+          "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE"
+        },
+        {
+          "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0323-ENV-EDUCATION-NATURE",
+          "parent_legacy_source_unit": "ltw-2026-st-cdu-0323-landesweit-in-die-touristische-infrastruktur-investieren-o",
+          "mechanism": "Umweltbildung sowie naturnahe Nutz- und Erlebnisflächen fördern",
+          "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED",
+          "impact_direction": "AMBIVALENT",
+          "evidence_level": "LOW",
+          "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE"
+        },
+        {
+          "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0323-RESOURCE-EFFICIENT-MODEL-PROJECTS",
+          "parent_legacy_source_unit": "ltw-2026-st-cdu-0323-landesweit-in-die-touristische-infrastruktur-investieren-o",
+          "mechanism": "ressourcenschonende touristische Infrastruktur stärker fördern und in Modellprojekten erproben",
+          "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED",
+          "impact_direction": "POSITIVE",
+          "evidence_level": "LOW",
+          "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE"
+        }
+      ],
+      "context_only_elements": [
+        "bequem, barrierearm und sicher erleben als Zielzustand; Barrierefreiheit/Sicherheit sind Schutz- und Qualitätsbedingungen."
+      ]
+    }
+  ],
+  "primary_source_diff": {
+    "reconciled_segments": [
+      {
+        "segment_id": "CDU-P87-P89-EU-BUND",
+        "pdf_pages": [87,88,89],
+        "section": "Sachsen-Anhalt in Bund und Europa",
+        "status": "SEMANTIC_RECONCILIATION_COMPLETE_FOR_SEGMENT",
+        "items": [
+          {"legacy_unit":"0334","classification":"CONTEXT_ONLY","action":"KEEP_VERSIONED_CONTEXT_NO_INDEPENDENT_EFFECT_COUNT"},
+          {"legacy_unit":"0335","classification":"SAME_WITH_BOUNDARY_ARTIFACT","action":"KEEP_ID; REMOVE_TRAILING_NEXT_BULLET_BRIDGE_ONLY_IN_VERSIONED_VIEW"},
+          {"legacy_unit":"0336","classification":"TRUNCATED","action":"SOURCE_TEXT_RESTORED_FROM_PRIMARY_PDF; KEEP_ID"},
+          {"legacy_unit":"0337","classification":"PARTIAL_PARENT","action":"CONTINUATION_CHILD_OF_0336; KEEP_ID; NO_SILENT_DELETE"},
+          {"legacy_unit":"0338","classification":"SAME","action":"KEEP_ID"},
+          {"legacy_unit":"0339","classification":"SAME","action":"KEEP_ID"},
+          {"legacy_unit":"0340","classification":"SAME","action":"KEEP_ID"},
+          {"legacy_unit":"0341","classification":"OVERMERGED","action":"VERSIONED_CHILD_SPLIT_ADDED; KEEP_PARENT_ID"},
+          {"legacy_unit":null,"classification":"ABSENT","primary_source_unit":"ST-CDU-PRIMARY-GAP-EU-CLIMATE-001","action":"ADDITIVE_PARENT_RESTORED_AND_CHILD_SPLIT_ADDED"},
+          {"legacy_unit":"0342","classification":"SAME","action":"KEEP_ID"},
+          {"legacy_unit":"0343","classification":"SAME","action":"KEEP_ID"},
+          {"legacy_unit":"0344","classification":"SAME","action":"KEEP_ID"}
+        ]
+      },
+      {
+        "segment_id": "CDU-P66-P67-NATURE-0250",
+        "pdf_pages": [66,67],
+        "section": "Die Natur – Unsere Heimat",
+        "status": "TARGETED_SEMANTIC_RECONCILIATION_COMPLETE_FOR_0250",
+        "items": [
+          {"legacy_unit":"0250","classification":"TRUNCATED_AND_OVERMERGED","action":"SOURCE_TEXT_RESTORED; VERSIONED_6_CHILD_SPLIT_ADDED; KEEP_PARENT_ID"}
+        ]
+      },
+      {
+        "segment_id": "CDU-P84-P85-TOURISM-0319-0323",
+        "pdf_pages": [84,85],
+        "section": "Sachsen-Anhalt – Immer eine Reise wert",
+        "status": "TARGETED_SEMANTIC_RECONCILIATION_COMPLETE_FOR_0319_0323",
+        "items": [
+          {"legacy_unit":"0319","classification":"OVERMERGED","action":"VERSIONED_3_CHILD_SPLIT_ADDED; KEEP_PARENT_ID"},
+          {"legacy_unit":"0320","classification":"SAME","action":"KEEP_ID"},
+          {"legacy_unit":"0321","classification":"TRUNCATED_PARTIAL_PARENT","action":"SOURCE_TEXT_RESTORED; STRATEGY_PARENT_KEEP_ID"},
+          {"legacy_unit":"0322","classification":"PARTIAL_PARENT","action":"STREET_ANHALT_CONTINUATION_CHILD_OF_0321; KEEP_ID; NO_SILENT_DELETE"},
+          {"legacy_unit":"0323","classification":"OVERMERGED","action":"VERSIONED_4_CHILD_SPLIT_ADDED; KEEP_PARENT_ID"}
+        ]
+      }
+    ],
+    "known_full_programme_findings_requiring_manifest_reconciliation": [
+      {"legacy_unit":"0002","classification":"TRUNCATED","status":"FACH_REVIEW_ALREADY_SOURCE_RESTORED"},
+      {"legacy_unit":"0003","classification":"TRUNCATED","status":"FACH_REVIEW_ALREADY_SOURCE_RESTORED"},
+      {"legacy_unit":"0008","classification":"TRUNCATED","status":"FACH_REVIEW_ALREADY_SOURCE_RESTORED"},
+      {"legacy_unit":"0049","classification":"TRUNCATED","status":"FACH_REVIEW_ALREADY_SOURCE_RESTORED"},
+      {"legacy_unit":"0054","classification":"TRUNCATED","status":"FACH_REVIEW_ALREADY_SOURCE_RESTORED"},
+      {"legacy_unit":"0062","classification":"TRUNCATED","status":"FACH_REVIEW_ALREADY_SOURCE_RESTORED"},
+      {"legacy_unit":"0068","classification":"TRUNCATED","status":"FACH_REVIEW_ALREADY_SOURCE_RESTORED"},
+      {"legacy_unit":"0090","classification":"TRUNCATED","status":"FACH_REVIEW_ALREADY_SOURCE_RESTORED"},
+      {"legacy_unit":"0095","classification":"TRUNCATED","status":"FACH_REVIEW_ALREADY_SOURCE_RESTORED"},
+      {"legacy_unit":"0108","classification":"TRUNCATED","status":"FACH_REVIEW_ALREADY_SOURCE_RESTORED"},
+      {"legacy_unit":"0124","classification":"TRUNCATED","status":"FACH_REVIEW_ALREADY_SOURCE_RESTORED"},
+      {"legacy_unit":"0142","classification":"TRUNCATED","status":"FACH_REVIEW_ALREADY_SOURCE_RESTORED"},
+      {"legacy_unit":"0222","classification":"TRUNCATED","status":"FACH_REVIEW_ALREADY_SOURCE_RESTORED"},
+      {"legacy_unit":"0228","classification":"TRUNCATED_PARENT_GOAL","status":"FACH_REVIEW_ALREADY_SOURCE_RESTORED_AND_TERMINAL"},
+      {"legacy_unit":"0250","classification":"OVERMERGED","status":"CHILD_SPLIT_RECONCILED_AND_TERMINAL"},
+      {"legacy_unit":"0263","classification":"TRUNCATED","status":"FACH_REVIEW_ALREADY_SOURCE_RESTORED"},
+      {"legacy_unit":"0278","classification":"TRUNCATED","status":"FACH_REVIEW_ALREADY_SOURCE_RESTORED"},
+      {"legacy_unit":"0283","classification":"TRUNCATED","status":"FACH_REVIEW_ALREADY_SOURCE_RESTORED"},
+      {"legacy_unit":"0291","classification":"TRUNCATED_PARENT","status":"FACH_REVIEW_ALREADY_SOURCE_RESTORED_AND_VERSIONED_PARENT"},
+      {"legacy_unit":"0319","classification":"OVERMERGED","status":"CHILD_SPLIT_RECONCILED_AND_TERMINAL"},
+      {"legacy_unit":"0321","classification":"TRUNCATED","status":"FACH_REVIEW_ALREADY_SOURCE_RESTORED"},
+      {"legacy_unit":"0323","classification":"OVERMERGED","status":"CHILD_SPLIT_RECONCILED_AND_TERMINAL"},
+      {"legacy_unit":"0336","classification":"TRUNCATED","status":"RECONCILED_IN_CDU-P87-P89-EU-BUND"},
+      {"legacy_unit":"0341","classification":"OVERMERGED","status":"RECONCILED_IN_CDU-P87-P89-EU-BUND"}
+    ],
+    "complete_pdf_vs_manifest_pass": false
+  },
+  "primary_source_parity": {
+    "required_passage_classifications": ["SAME","ABSENT","PARTIAL_PARENT","OVERMERGED","TRUNCATED","CONTEXT_ONLY"],
+    "release1_rows_terminal": 344,
+    "additive_primary_passages_terminal": 1,
+    "versioned_mechanism_children_terminal_this_manifest": 21,
+    "known_material_omissions_restored": 1,
+    "known_source_restore_gaps": 0,
+    "full_programme_semantic_reconciliation_complete": false,
+    "primary_source_parity_status": "PENDING_FULL_PROGRAMME_SEMANTIC_RECONCILIATION",
+    "authoritative_denominator_frozen": false,
+    "public_projection_count_status": "SEPARATE_TECHNICAL_GATE_PENDING",
+    "note": "The immutable 344-row Release-1 base plus the restored page-89 passage and 21 versioned mechanism children are not an authoritative final CDU denominator. Freeze only after every effect-bearing passage in the final official programme has been semantically reconciled and every ABSENT/PARTIAL_PARENT/OVERMERGED/TRUNCATED finding is versioned and terminally reviewed."
+  }
+}
