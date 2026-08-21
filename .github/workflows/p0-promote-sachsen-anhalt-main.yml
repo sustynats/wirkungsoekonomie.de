@@ -1,18 +1,15 @@
-# retrigger 2026-08-19T17:48Z
-name: P0 promote Sachsen-Anhalt production
+# P0
+name: P0 promote Sachsen-Anhalt production (archived)
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - .github/workflows/p0-promote-sachsen-anhalt-main.yml
+  workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   promote:
+    if: ${{ false }}
     runs-on: ubuntu-latest
     timeout-minutes: 12
     env:
@@ -30,16 +27,16 @@ jobs:
             DETAIL="$2"
             TS=$(date -u +%Y-%m-%dT%H:%M:%SZ)
             JSON=$(python - "$STATUS" "$DETAIL" "$TS" <<'PY'
-import json,sys
-print(json.dumps({"status":sys.argv[1],"detail":sys.argv[2],"timestamp":sys.argv[3]}, ensure_ascii=True))
-PY
-)
+          import json,sys
+          print(json.dumps({"status":sys.argv[1],"detail":sys.argv[2],"timestamp":sys.argv[3]}, ensure_ascii=True))
+          PY
+          )
             B64=$(printf '%s' "$JSON" | base64 -w0)
             PAYLOAD=$(python - "$B64" <<'PY'
-import json,sys
-print(json.dumps({"message":"ci(p0): record Sachsen-Anhalt promotion status","content":sys.argv[1],"branch":"main"}))
-PY
-)
+          import json,sys
+          print(json.dumps({"message":"ci(p0): record Sachsen-Anhalt promotion status","content":sys.argv[1],"branch":"main"}))
+          PY
+          )
             curl -fsS -X PUT \
               -H "Authorization: Bearer ${GH_TOKEN}" \
               -H "Accept: application/vnd.github+json" \
