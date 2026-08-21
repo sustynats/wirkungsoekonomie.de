@@ -1,0 +1,95 @@
+name: Academy v4 public master import
+
+on:
+  push:
+    branches:
+      - woek/academy-v4-public-master-20260821
+    paths:
+      - .github/workflows/academy-v4-public-master-import.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: academy-v4-public-master-import
+  cancel-in-progress: false
+
+jobs:
+  import-public-master:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main-site academy v4 branch
+        uses: actions/checkout@v4
+        with:
+          ref: woek/academy-v4-public-master-20260821
+          fetch-depth: 0
+
+      - name: Checkout reviewed Academy App v4 source
+        run: |
+          rm -rf /tmp/woek-akademie-app
+          git clone --depth 1 --branch woek/curriculum-v4-fachbaseline-20260821 \
+            https://github.com/sustynats/woek-akademie-app.git /tmp/woek-akademie-app
+
+      - name: Import public v4 teaching masters
+        shell: bash
+        run: |
+          set -euo pipefail
+          SRC=/tmp/woek-akademie-app/content/lehrgaenge/akademie/curriculum-v4
+          DEST=content/studienskripte/v4
+          rm -rf "$DEST"
+          mkdir -p "$DEST/grundstudium" "$DEST/angebote"
+          cp "$SRC/CURRICULUM_V4_MANIFEST.json" "$DEST/"
+          cp "$SRC/V3.2_TO_V4_LECTURE_MAPPING.csv" "$DEST/"
+          cp "$SRC/STATE_SUSTAINABILITY_SOURCE_MANIFEST.json" "$DEST/"
+          cp "$SRC/TERMINOLOGY_V4_CONTRACT.json" "$DEST/"
+          cp "$SRC/ENDCONTENT_STATUS.json" "$DEST/"
+          cp -R "$SRC/lectures/." "$DEST/grundstudium/"
+          for slug in grundlagen wirkungsmanagement wirkungscontrolling multiplikatoren demokratie-buerger demokratie-medien; do
+            mkdir -p "$DEST/angebote/$slug"
+            cp "$SRC/offerings/$slug/OFFERING_STATUS.json" "$DEST/angebote/$slug/"
+            cp -R "$SRC/offerings/$slug/lectures/." "$DEST/angebote/$slug/"
+          done
+
+      - name: Build public source manifest and verify counts
+        shell: bash
+        run: |
+          node <<'NODE'
+          const fs=require('fs');
+          const path=require('path');
+          const crypto=require('crypto');
+          const root='content/studienskripte/v4';
+          function walk(dir){return fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(path.join(dir,e.name)):[path.join(dir,e.name)]);}
+          const files=walk(root).filter(f=>f.endsWith('.md'));
+          const study=files.filter(f=>f.includes('/grundstudium/'));
+          const offerings={};
+          for(const slug of ['grundlagen','wirkungsmanagement','wirkungscontrolling','multiplikatoren','demokratie-buerger','demokratie-medien']) offerings[slug]=files.filter(f=>f.includes(`/angebote/${slug}/`)).length;
+          if(study.length!==120) throw new Error(`Expected 120 study lectures, got ${study.length}`);
+          const expected={grundlagen:7,wirkungsmanagement:10,wirkungscontrolling:10,multiplikatoren:8,'demokratie-buerger':11,'demokratie-medien':12};
+          for(const [slug,n] of Object.entries(expected)) if(offerings[slug]!==n) throw new Error(`${slug}: expected ${n}, got ${offerings[slug]}`);
+          const records=walk(root).filter(f=>fs.statSync(f).isFile()).sort().map(f=>({path:f.replace(`${root}/`,''),sha256:crypto.createHash('sha256').update(fs.readFileSync(f)).digest('hex'),bytes:fs.statSync(f).size}));
+          const manifest={schema_version:'1.0',curriculum_version:'4.0',status:'PUBLIC_MASTER_IMPORTED_NOT_ACTIVE',generated_at:'2026-08-21',source_repo:'sustynats/woek-akademie-app',source_ref:'woek/curriculum-v4-fachbaseline-20260821',canonical_public_master_root:'content/studienskripte/v4',study_lecture_count:study.length,offering_lecture_counts:offerings,protected_assessments_imported:false,records};
+          fs.writeFileSync(path.join(root,'PUBLIC_MASTER_MANIFEST.json'),JSON.stringify(manifest,null,2)+'\n');
+          console.log('ACADEMY_V4_PUBLIC_MASTER_IMPORT_PASS',study.length,offerings);
+          NODE
+
+      - name: Validate no protected assessment answer keys leaked
+        run: |
+          if find content/studienskripte/v4 -type f \( -name '*QUESTION_BANK*' -o -name '*assessment-final*' -o -name '*RUBRIC*' \) | grep -q .; then
+            echo 'Protected assessment artifact leaked into public master' >&2
+            exit 1
+          fi
+
+      - name: Commit imported public masters
+        shell: bash
+        run: |
+          if [ -z "$(git status --porcelain content/studienskripte/v4)" ]; then
+            echo 'No public-master diff.'
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/studienskripte/v4
+          git commit -m "feat(academy-v4): import reviewed public teaching masters"
+          git pull --rebase origin woek/academy-v4-public-master-20260821
+          git push origin HEAD:woek/academy-v4-public-master-20260821
