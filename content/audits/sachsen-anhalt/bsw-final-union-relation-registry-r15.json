@@ -1,0 +1,116 @@
+{
+  "registry_id": "ST-BSW-FINAL-UNION-RELATION-REGISTRY-R15",
+  "status": "IN_PROGRESS_SOURCE_ROLE_ONLY",
+  "scope": "Sachsen-Anhalt 2026 BSW Wahlprogramm only",
+  "rules": {
+    "no_new_fach_semantics": true,
+    "no_dns_synthesis": true,
+    "no_recommendation_synthesis": true,
+    "historical_source_text_immutable": true,
+    "denominator_freeze_forbidden_while_unresolved": true
+  },
+  "source_proof_chain": {
+    "historical_role_checkpoint": "content/audits/sachsen-anhalt/bsw-source-unit-manifest-reconciliation-r10.json",
+    "exact_versioned_union": "content/audits/sachsen-anhalt/bsw-source-unit-union-r14.json",
+    "full_physical_coverage": "PASS_P0_P89",
+    "segment_parity": "PASS_FRONT_A01_A09",
+    "known_parent_edge_queue": 0,
+    "known_explicit_psr_duplicate_relation_queue": 0,
+    "a07_exact_set": "PASS_42_UNIQUE",
+    "a04_a05_p37_boundary": "PASS_DISTINCT_EFFECT_OBJECTS",
+    "final_page_context": "PASS_CLASSIFIED_NO_NEW_EFFECT_OBJECTS"
+  },
+  "historical_role_overrides": {},
+  "collision_candidate_resolutions": {},
+  "versioned_role_overrides": {},
+  "historical_relation_targets": {
+    "0006": [
+      "ltw-2026-st-bsw-psr-a01-0001-bundeswehr-innern-ausnahmen-komplettrestore"
+    ],
+    "0038": [
+      "ltw-2026-st-bsw-psr-a02-0004-kommunalentschuldung",
+      "ltw-2026-st-bsw-psr-a02-0005-bestellerprinzip-konnexitaet"
+    ],
+    "0039": [
+      "ltw-2026-st-bsw-psr-a02-0006-landes-investitionsprogramme-kommunen",
+      "ltw-2026-st-bsw-psr-a02-0007-kommunalfinanzausgleich-staerken",
+      "ltw-2026-st-bsw-psr-a02-0008-landeseigene-gesellschaften-investitionshebel",
+      "ltw-2026-st-bsw-psr-a02-0009-planungs-umsetzungskapazitaet-verwaltung-kommunen"
+    ],
+    "0040": [
+      "ltw-2026-st-bsw-psr-a02-0010-landwirtschaft-abnahmegarantien-regional",
+      "ltw-2026-st-bsw-psr-a02-0011-oeffentliche-beschaffung-regionale-landwirtschaft"
+    ],
+    "0084": [
+      "ltw-2026-st-bsw-psr-a04-p29-05-bundesweiter-mietendeckel"
+    ],
+    "0184": [
+      "ltw-2026-st-bsw-psr-a06-p53-14-leopoldina-gemeinsame-infrastruktur-ressourcen"
+    ],
+    "0212": [
+      "ltw-2026-st-bsw-psr-a07-0002-hebammen-vollverguetung-parallelbetreuung",
+      "ltw-2026-st-bsw-psr-a07-0003-hebammen-1zu1-und-abrechnungstakt-reform",
+      "ltw-2026-st-bsw-psr-a07-0004-hebammen-festanstellung-und-beleggeburtshilfe-honorare",
+      "ltw-2026-st-bsw-psr-a07-0005-hebammen-landesfoerderung-und-niederlassungspraemie",
+      "ltw-2026-st-bsw-psr-a07-0006-hebammen-klinikstellen-und-hebammenkreissaele",
+      "ltw-2026-st-bsw-psr-a07-0007-hebammen-bundesrat-honorarstruktur"
+    ],
+    "0214": [
+      "ltw-2026-st-bsw-psr-a07-0002-hebammen-vollverguetung-parallelbetreuung",
+      "ltw-2026-st-bsw-psr-a07-0003-hebammen-1zu1-und-abrechnungstakt-reform",
+      "ltw-2026-st-bsw-psr-a07-0004-hebammen-festanstellung-und-beleggeburtshilfe-honorare",
+      "ltw-2026-st-bsw-psr-a07-0005-hebammen-landesfoerderung-und-niederlassungspraemie",
+      "ltw-2026-st-bsw-psr-a07-0006-hebammen-klinikstellen-und-hebammenkreissaele",
+      "ltw-2026-st-bsw-psr-a07-0007-hebammen-bundesrat-honorarstruktur"
+    ]
+  },
+  "directed_edges": [],
+  "unresolved_source_relations": [
+    "0087",
+    "0091",
+    "0097",
+    "0107",
+    "0109",
+    "0113",
+    "0115",
+    "0123",
+    "0138",
+    "0139",
+    "0149",
+    "0153",
+    "0156",
+    "0157",
+    "0158",
+    "0159",
+    "0162",
+    "0173",
+    "0174",
+    "0185",
+    "0187",
+    "0200",
+    "0201",
+    "0204",
+    "0278",
+    "0294"
+  ],
+  "resolved_gap_counts": {
+    "ABSENT": null,
+    "PARTIAL_PARENT": null,
+    "OVERMERGED": null,
+    "TRUNCATED": null,
+    "RESTORE_GAP": null
+  },
+  "active_leaf_terminal_fach_set_check": {
+    "status": "PENDING_FINAL_ACTIVE_LEAF_SET",
+    "rule": "Only existing terminal #234 fach records/batches may satisfy this check."
+  },
+  "active_leaf_241_layer_set_check": {
+    "status": "PENDING_FINAL_ACTIVE_LEAF_SET",
+    "rule": "Only existing source-bound batch/object layer findings may satisfy this check; no synthesis."
+  },
+  "completion": {
+    "authoritative_denominator_frozen": false,
+    "BSW_FULL_PROGRAM_FACH_COMPLETE": false,
+    "ST_BSW_PRIMARY_SOURCE_PARITY_FULL_PROGRAM": "READY_FOR_UNION_MANIFEST_AND_FINAL_ROLE_MATRIX"
+  }
+}
