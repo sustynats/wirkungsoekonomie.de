@@ -1,4 +1,7 @@
-name: Codex release payload transfer
+name: Sync #253 deterministic projections
+
+env:
+  SOURCE_DATE_EPOCH: '1787270400'
 
 on:
   push:
@@ -11,38 +14,44 @@ on:
 permissions:
   contents: write
 
-concurrency:
-  group: codex-release-payload-transfer
-  cancel-in-progress: false
-
 jobs:
-  transfer:
+  sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout transfer bootstrap
+      - name: Checkout branch
         uses: actions/checkout@v4
         with:
+          ref: codex/state-sustainability-architecture-sitewide-20260821
           fetch-depth: 0
-      - name: Verify and apply release payload
-        env:
-          EXPECTED_REMOTE_HEAD: 2683b14c7e68203ce4ebd627b39ca5ecf33439d2
-          EXPECTED_PAYLOAD_BASE: cdd29f99dc32199caa9762b32508364099ea0b0b
-          PAYLOAD_REF: refs/codex/state-release-payload
-          PAYLOAD_SHA256: 67431a6f15e972b06b94807f4ac7f7e7785aed02c5fc5fca85b376720225c9d0
-          TARGET_BRANCH: codex/state-sustainability-architecture-sitewide-20260821
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Apply approved deterministic projections
+        run: |
+          python tools/apply_state_sustainability_architecture.py
+          python tools/apply_state_sustainability_sources.py
+          npm run build:search
+          npm run taxonomy:build
+      - name: Commit all deterministic outputs
+        shell: bash
         run: |
           set -euo pipefail
-          test "$(git rev-parse HEAD^)" = "$EXPECTED_REMOTE_HEAD"
-          cat .codex-transfer/part-* > "$RUNNER_TEMP/woek-state-release.bundle"
-          echo "$PAYLOAD_SHA256  $RUNNER_TEMP/woek-state-release.bundle" | sha256sum -c -
-          git bundle verify "$RUNNER_TEMP/woek-state-release.bundle"
-          git fetch "$RUNNER_TEMP/woek-state-release.bundle" "$PAYLOAD_REF:refs/remotes/codex/state-release-payload"
-          test "$(git rev-parse refs/remotes/codex/state-release-payload^)" = "$EXPECTED_PAYLOAD_BASE"
+          if git diff --quiet; then
+            echo 'All #253 projections already committed.'
+            exit 0
+          fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git cherry-pick refs/remotes/codex/state-release-payload
-          git rm -r .codex-transfer .github/workflows/codex-release-transfer.yml
-          git commit --amend --no-edit
-          git fetch origin "$TARGET_BRANCH"
-          test "$(git rev-parse FETCH_HEAD)" = "$GITHUB_SHA"
-          git push origin "HEAD:$TARGET_BRANCH"
+          git add -A
+          git reset .github/workflows/state-sustainability-sync.yml || true
+          if git diff --cached --quiet; then
+            echo 'Only workflow file differs; nothing to project.'
+            exit 0
+          fi
+          git commit -m 'fix: sync approved #253 site, source, search and taxonomy projections'
+          git push origin HEAD:codex/state-sustainability-architecture-sitewide-20260821
