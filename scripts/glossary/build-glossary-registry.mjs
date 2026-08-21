@@ -16,6 +16,7 @@ const supplementSources = [
   path.join(root, "content/glossary/imports/psychologie-und-kommunikation-definitionen.json"),
   path.join(root, "content/glossary/imports/value-pricing-und-wirkungsbasiertes-value-pricing.json"),
   path.join(root, "content/glossary/imports/iooi-wirkungsarchitektur.json"),
+  path.join(root, "content/glossary/imports/staatliche-nachhaltigkeitsarchitektur.json"),
   path.join(root, "content/glossary/imports/phineo-wirkungslogik.json"),
   path.join(root, "content/glossary/imports/wirkungssteuer-wstg-v3.json"),
   path.join(root, "content/glossary/imports/gesamtstudie-wirkungsdilemmata-kooperation-sdgplus-term-definitions.json"),
