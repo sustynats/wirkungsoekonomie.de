@@ -14,6 +14,9 @@ export const CURRENT_METHOD_ROUTES = [
 // Ihre Glossar-, Register- und Quellenrouten bleiben deshalb separat typisiert,
 // werden aber ebenso verpflichtend in der Sitemap gehalten.
 export const CURRENT_STATE_ARCHITECTURE_ROUTES = [
+  "/wirkungswissenschaften/",
+  "/begriffe/nwi/",
+  "/begriffe/nationaler-wohlfahrtsindex/",
   "/bibliothek/woek-begriffsleitfaden-fuehrend/",
   "/bibliothek/woek-master-items-register/",
   "/woek-id-register/",
@@ -29,6 +32,7 @@ export const CURRENT_STATE_ARCHITECTURE_ROUTES = [
   "/begriffe/ex-ante-folgenpruefung-und-reality-check/",
   "/begriffe/staatliche-nachhaltigkeitsarchitektur/",
   "/begriffe/parlamentarischer-beirat-fuer-nachhaltige-entwicklung-und-zukunftsfragen/",
+  "/begriffe/state-assessment-benchmark/",
   "/begriffe/state-gfa-enap-benchmark/",
   "/begriffe/wirkungsblindheit/",
   "/quellenarchiv/wok-q-9029/",
@@ -40,6 +44,9 @@ export const CURRENT_STATE_ARCHITECTURE_ROUTES = [
   "/quellenarchiv/wok-q-9035/",
   "/quellenarchiv/wok-q-9036/",
   "/quellenarchiv/wok-q-9037/",
+  "/quellenarchiv/wok-q-9048/",
+  "/quellenarchiv/wok-q-9049/",
+  "/quellenarchiv/wok-q-9050/",
 ];
 
 // Diese vier bereits ersetzten PDF-Fassungen dokumentieren den früheren

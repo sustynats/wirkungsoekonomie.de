@@ -332,9 +332,9 @@
         "staatliche Nachhaltigkeitsarchitektur des Bundes",
         "Nachhaltigkeitsgovernance des Bundes"
       ],
-      "shortDefinition": "Die staatliche Nachhaltigkeitsarchitektur des Bundes verbindet DNS, Ziele und Indikatoren, ressortübergreifende Governance, Gesetzesfolgen- und Nachhaltigkeitsprüfung, eNAP/eGFA und Monitoring.",
-      "hoverDefinition": "Deutschland besitzt bereits eine institutionalisierte Nachhaltigkeits- und Folgenprüfungsarchitektur. Die WÖk ersetzt sie nicht, sondern ergänzt die durchgängige Wirkungs- und Lernkette.",
-      "longDefinition": "Deutschland verfügt über eine mehrschichtige Nachhaltigkeits- und Folgenprüfungsarchitektur. Dazu gehören die Deutsche Nachhaltigkeitsstrategie als nationaler Ziel- und Managementrahmen, der Staatssekretärsausschuss und weitere Governance-Akteure, DNS-Indikatoren und Destatis-Monitoring sowie die Gesetzesfolgen- und Nachhaltigkeitsprüfung nach GGO mit eNAP/eGFA als digitaler Unterstützung.\n\nDiese Architektur ist weder bloß Kommunikation noch identisch mit einer vollständigen Kausal- oder Wirkungsanalyse jedes Einzelvorhabens. Sie muss bei jeder fairen Abgrenzung der Wirkungsökonomie als bestehendes institutionelles System anerkannt werden.",
+      "shortDefinition": "Die staatliche Nachhaltigkeits- und Folgenprüfungsarchitektur des Bundes ist nach Entscheidungstyp verteilt: GGO/GFA/eNAP für Regelungsvorhaben, BHO/VV-BHO für finanzwirksame Maßnahmen sowie weitere objekt- und fachrechtliche Regime, soweit anwendbar.",
+      "hoverDefinition": "Deutschland prüft Folgen bereits - mit unterschiedlichen Verfahren je nach Entscheidungstyp. Die WÖk ersetzt sie nicht, sondern legt einen gemeinsamen materialitätsbasierten Wirkungsmaßstab darüber.",
+      "longDefinition": "Deutschland verfügt über eine mehrschichtige, objektspezifische Nachhaltigkeits- und Folgenprüfungsarchitektur. Dazu gehören die Deutsche Nachhaltigkeitsstrategie mit Zielen, Governance und Monitoring, die Gesetzesfolgen- und Nachhaltigkeitsprüfung nach GGO mit eNAP/eGFA für Regelungsvorhaben sowie § 7 BHO und die VV-BHO für finanzwirksame Maßnahmen. Die VV-BHO konkretisiert Planung und Erfolgskontrolle mit Zielerreichungs-, Wirkungs- und Wirtschaftlichkeitskontrolle. KSG, KAnG und sektorale Evaluationsregime kommen nur bei sachlicher Anwendbarkeit hinzu.\n\nDiese Architektur ist weder bloß Kommunikation noch identisch mit einer vollständigen Kausal- oder Wirkungsanalyse jedes Einzelvorhabens. Fehlende öffentliche Dokumentation beweist nicht, dass keine Prüfung stattgefunden hat. Die jeweils anwendbaren staatlichen Rahmen müssen bei einer fairen WÖk-Abgrenzung zuerst objektspezifisch ausgewiesen werden.",
       "woekRelation": "WÖk ergänzt das bestehende System durch die explizit verbundene Kette Problem Review → Goal Review → A→M→ΔZ→R → 1.-3. Ordnung/Kaskaden → Verteilung/Resilienz → Gegenfaktum/Attribution → Omissions/Delivery/Policy Coherence → Optionsvergleich → Reality Check/Lernen → Nichtkompensation harter Schutzgrenzen.",
       "status": "praezisierungsbegriff",
       "type": "Governancebegriff",
@@ -346,7 +346,10 @@
         "Bundesregierung: Steuerung der DNS|/quellenarchiv/wok-q-9031/",
         "GGO §§ 43 und 44|/quellenarchiv/wok-q-9029/",
         "BMJV: Nachhaltige Gesetzgebung|/quellenarchiv/wok-q-9030/",
-        "E-Gesetzgebung: eGFA/eNAP|/quellenarchiv/wok-q-9034/"
+        "E-Gesetzgebung: eGFA/eNAP|/quellenarchiv/wok-q-9034/",
+        "Bundeshaushaltsordnung § 7|/quellenarchiv/wok-q-9048/",
+        "VV-BHO zu § 7|/quellenarchiv/wok-q-9049/",
+        "BMF: Ziel- und wirkungsorientierte Haushaltsführung|/quellenarchiv/wok-q-9050/"
       ],
       "relatedTerms": [
         "deutsche-nachhaltigkeitsstrategie",
@@ -355,7 +358,8 @@
         "enap",
         "egesetzgebung-egfa",
         "dns-indikator",
-        "parlamentarischer-beirat-nachhaltige-entwicklung"
+        "parlamentarischer-beirat-nachhaltige-entwicklung",
+        "state-assessment-benchmark"
       ],
       "classicGlossary": true,
       "autoLinkAllowed": true,
@@ -396,6 +400,51 @@
       "sourceProvenance": "Aktuelle institutionelle Bezeichnung und Funktion aus dem Deutschen Bundestag; ergänzende Verfahrenseinordnung aus BMJV/GGO."
     },
     {
+      "termId": "state-assessment-benchmark",
+      "slug": "state-assessment-benchmark",
+      "canonicalLabel": "Objektspezifischer staatlicher Prüfbenchmark",
+      "aliases": [
+        "staatlicher Prüfbenchmark",
+        "State Assessment Benchmark",
+        "STATE_ASSESSMENT_BENCHMARK"
+      ],
+      "shortDefinition": "Der objektspezifische staatliche Prüfbenchmark dokumentiert für eine konkrete staatliche Entscheidung, welche amtlichen Prüf-, Bewertungs- und Kontrollrahmen gelten und was daraus öffentlich belegt ist.",
+      "hoverDefinition": "Zuerst wird der anwendbare staatliche Rahmen je Objekttyp dokumentiert; erst danach werden Konvergenz, zusätzliche WÖk-Befunde oder Abweichungen getrennt ausgewiesen.",
+      "longDefinition": "Staatliche Prüfung ist nicht auf ein einheitliches Verfahren reduziert. Der Benchmark erfasst je Objekt die anwendbaren staatlichen Rahmen: für Regelungsvorhaben insbesondere GGO, GFA, Nachhaltigkeitsprüfung und eNAP/eGFA; für finanzwirksame Maßnahmen § 7 BHO und die VV-BHO; KSG § 13, KAnG § 8, DNS-Governance und sektorale Evaluationsregime nur bei sachlicher Anwendbarkeit. Dokumentiert werden staatliche Problem- oder Bedarfsprüfung, Optionsvergleich, Ex-ante-Folgenprüfung, Erfolgs- oder Wirkungskontrolle, Zurechnungsmethode und öffentlicher Dokumentationsstand.\n\nFehlende öffentliche Unterlagen bedeuten nicht automatisch, dass keine Prüfung stattfand. Der Benchmark bleibt von der unabhängigen WÖk-Analyse getrennt und erzeugt weder Wirkungsrichtung noch DNS-Zuordnung noch Empfehlung.",
+      "woekRelation": "WÖk vergleicht die tatsächlich dokumentierte staatliche Prüfung und die unabhängige WÖk-Vollkette. Ausgewiesen werden Konvergenz, zusätzliche Befunde oder begründete Abweichungen; Übereinstimmung ist ein zulässiges Ergebnis.",
+      "status": "woek-instrument",
+      "type": "Transparenz- und Benchmarklayer",
+      "category": "Messbegriff",
+      "version": "1.0",
+      "reviewStatus": "fachlich konsolidiert",
+      "source": "WÖk-Methodenpräzisierung 2026-08-21 / #241/#253",
+      "officialSources": [
+        "GGO §§ 43 und 44|/quellenarchiv/wok-q-9029/",
+        "Bundeshaushaltsordnung § 7|/quellenarchiv/wok-q-9048/",
+        "VV-BHO zu § 7|/quellenarchiv/wok-q-9049/",
+        "BMF: Ziel- und wirkungsorientierte Haushaltsführung|/quellenarchiv/wok-q-9050/"
+      ],
+      "relatedTerms": [
+        "staatliche-nachhaltigkeitsarchitektur",
+        "state-gfa-enap-benchmark",
+        "gesetzesfolgenabschaetzung",
+        "ex-ante-folgenpruefung-reality-check",
+        "zielbezug-vs-wirkung"
+      ],
+      "schemaFields": [
+        "applicable_state_frameworks",
+        "state_problem_or_need_assessment",
+        "state_option_comparison",
+        "state_ex_ante_effect_assessment",
+        "state_success_or_effect_control",
+        "state_attribution_method",
+        "public_documentation_status"
+      ],
+      "classicGlossary": true,
+      "autoLinkAllowed": false,
+      "pageUrl": "/begriffe/state-assessment-benchmark/"
+    },
+    {
       "termId": "state-gfa-enap-benchmark",
       "slug": "state-gfa-enap-benchmark",
       "canonicalLabel": "Staatlicher GFA-/eNAP-Benchmark",
@@ -407,7 +456,7 @@
       "shortDefinition": "staatlicher GFA-/eNAP-Benchmark ist der WÖk-Datenlayer, der bei geeigneten Bundesregelungsvorhaben die öffentlich belegbare staatliche GFA-/Nachhaltigkeitseinschätzung getrennt von der unabhängigen WÖk-Analyse dokumentiert.",
       "hoverDefinition": "Der Benchmark trennt staatliche GFA/Nachhaltigkeitsprüfung und WÖk-Urteil. Übereinstimmung ist erlaubt; fehlende öffentliche eNAP-Dokumentation bedeutet nicht, dass keine Prüfung stattfand.",
       "longDefinition": "Der Layer erfasst nur, was aus amtlichen Quellen für ein konkretes Bundesregelungsvorhaben öffentlich festgestellt werden kann: Umfang der GFA/Nachhaltigkeitsprüfung, DNS-/SDG-Bezüge, positive und negative Aspekte, Zielkonflikte, Langfrist- und Drittstaatenbezüge sowie den Dokumentationsstatus. Anschließend werden Konvergenz, zusätzliche WÖk-Befunde und echte Widersprüche getrennt ausgewiesen.\n\nEine öffentliche Nachhaltigkeitsdarstellung ist nicht automatisch ein öffentlicher eNAP-Rohexport. Fehlt ein solcher Nachweis, bleibt der eNAP-Dokumentationsstatus offen beziehungsweise öffentlich nicht belegt; er wird niemals automatisch zu nicht geprüft.",
-      "woekRelation": "Der Layer ist eine Vergleichs- und Transparenzschicht, keine fachliche Bewertungsmaschine. Code oder Renderer dürfen aus staatlichen Quellen weder WÖk-Wirkungsrichtung noch DNS-Mapping noch Empfehlung generieren.",
+      "woekRelation": "Der Layer bleibt als Regelungsvorhaben-Untertyp des objektspezifischen staatlichen Prüfbenchmarks erhalten. Er ist eine Vergleichs- und Transparenzschicht, keine fachliche Bewertungsmaschine. Code oder Renderer dürfen aus staatlichen Quellen weder WÖk-Wirkungsrichtung noch DNS-Mapping noch Empfehlung generieren.",
       "status": "woek-instrument",
       "type": "Transparenz- und Benchmarklayer",
       "category": "Messbegriff",
@@ -419,6 +468,7 @@
         "BMJV: Nachhaltige Gesetzgebung|/quellenarchiv/wok-q-9030/"
       ],
       "relatedTerms": [
+        "state-assessment-benchmark",
         "gesetzesfolgenabschaetzung",
         "nachhaltigkeitspruefung-bund",
         "enap",
