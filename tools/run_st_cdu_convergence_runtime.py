@@ -70,6 +70,8 @@ def main() -> int:
     index = json.loads(SNAP_INDEX.read_text(encoding="utf-8"))
 
     exact_bodies: dict[pathlib.Path, str] = {}
+    exact_plan = residuals.PLAN.read_text(encoding="utf-8")
+    plan_temporarily_overridden = False
     try:
         for entry in index.get("entries", []):
             path = pathlib.Path(entry["snapshot_path"])
@@ -88,10 +90,30 @@ def main() -> int:
                 )
 
         normalize.main()
-        # Re-materialize only the parity-role table metadata from the exact
-        # source-bound snapshots. This prevents explanatory cross-reference IDs
-        # from being mistaken for the row's own legacy role.
+
+        # All 24 canonical non-overlapping parity shards are already present on
+        # PR #257. Re-materialize only their role table from the exact #234
+        # snapshots, then prevent the older builder's generic parser from
+        # overwriting that strict source-bound role materialization in this run.
+        plan = json.loads(exact_plan)
+        missing = []
+        for seg in plan.get("canonical_non_overlapping_segments", []):
+            expected = residuals.ROOT / seg["expected_shard"]
+            if not expected.exists():
+                missing.append(expected.as_posix())
+        if missing:
+            raise RuntimeError(f"CANONICAL_SHARD_MISSING_BEFORE_STRICT_RECONCILIATION:{missing}")
+
         residuals.refresh_canonical_shard_diffs()
+        for seg in plan.get("canonical_non_overlapping_segments", []):
+            seg["materialized_on_pr257"] = True
+        residuals.PLAN.write_text(
+            json.dumps(plan, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+            encoding="utf-8",
+            newline="\n",
+        )
+        plan_temporarily_overridden = True
+
         convergence.main()
         # The versioned source manifest already contains exact terminal child triplets
         # for a small number of restored/split nodes that were not repeated in a page
@@ -114,6 +136,8 @@ def main() -> int:
         # Preserve exact issue-comment snapshots and their indexed SHA256 provenance.
         for path, body in exact_bodies.items():
             path.write_text(body, encoding="utf-8", newline="\n")
+        if plan_temporarily_overridden:
+            residuals.PLAN.write_text(exact_plan, encoding="utf-8", newline="\n")
 
     return 0
 
