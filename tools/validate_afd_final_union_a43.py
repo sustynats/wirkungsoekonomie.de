@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -22,6 +23,14 @@ def git_blob_sha(path: Path) -> str:
     return hashlib.sha1(b"blob " + str(len(data)).encode() + b"\0" + data).hexdigest()
 
 
+def register_declared_hashes(path: Path) -> tuple[str, str]:
+    text = path.read_text(encoding="utf-8")
+    q = re.search(r"^\*\*SHA-256:\*\*\s*`?([0-9a-f]{64})`?\s*$", text, re.M)
+    s = re.search(r"^\*\*source_hash:\*\*\s*([0-9a-f]{64})\s*$", text, re.M)
+    assert q and s, "historical register hash declarations missing"
+    return q.group(1), s.group(1)
+
+
 def main() -> int:
     m = json.loads(MANIFEST.read_text(encoding="utf-8"))
     canonical = json.dumps(m, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")
@@ -31,7 +40,9 @@ def main() -> int:
     h = m["historical_register"]
     assert h["working_rows"] == 466
     assert h["status"] == "TERMINAL_HISTORICAL_ONLY"
-    assert hashlib.sha256(REGISTER.read_bytes()).hexdigest() == h["register_sha256"]
+    declared_register_sha256, declared_source_hash = register_declared_hashes(REGISTER)
+    assert declared_register_sha256 == h["register_sha256"]
+    assert declared_source_hash == h["source_hash"]
     assert git_blob_sha(REGISTER) == h["git_blob"]
 
     r = m["role_materialization"]
