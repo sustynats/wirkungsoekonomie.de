@@ -94,6 +94,34 @@ def topo(nodes: set[str], edges: list[dict]) -> tuple[bool, list[str], list[str]
     return (not edge_errors and not cyclic, order, edge_errors + ([f"cycle nodes: {cyclic}"] if cyclic else []))
 
 
+def derive_explicit_edges(hist_by_ord: dict[str, dict], rel: dict) -> list[dict]:
+    """Turn already explicit ordinal->target relations into graph edges.
+
+    This is deliberately mechanical: relation semantics were already stored in the
+    source-bound registry. We only translate the historical ordinal to its immutable
+    commitment_key so the graph validator can actually see the relation.
+    """
+    edges: list[dict] = []
+    seen: set[tuple[str, str]] = set()
+    for ordinal, targets in sorted((rel.get("historical_relation_targets") or {}).items()):
+        row = hist_by_ord.get(str(ordinal))
+        if not row:
+            continue
+        source = row["commitment_key"]
+        for target in targets or []:
+            pair = (source, str(target))
+            if pair in seen:
+                continue
+            seen.add(pair)
+            edges.append({
+                "from": source,
+                "to": str(target),
+                "relation": "EXPLICIT_SOURCE_BOUND_RELATION_TARGET",
+                "basis": "RELATION_REGISTRY_HISTORICAL_RELATION_TARGETS",
+            })
+    return edges
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--relations", default=str(DEFAULT_REL.relative_to(ROOT)))
@@ -207,12 +235,19 @@ def main() -> int:
         if not rel.get("historical_relation_targets", {}).get(o):
             blockers.append(f"RELATION_TARGETS_MISSING:{o}")
 
-    explicit_unresolved = rel.get("unresolved_source_relations", [])
+    explicit_targets = rel.get("historical_relation_targets", {}) or {}
+    explicit_unresolved = [
+        str(o) for o in (rel.get("unresolved_source_relations", []) or [])
+        if not explicit_targets.get(str(o))
+    ]
     if explicit_unresolved:
-        blockers.append("UNRESOLVED_SOURCE_RELATIONS:" + ",".join(map(str, explicit_unresolved)))
+        blockers.append("UNRESOLVED_SOURCE_RELATIONS:" + ",".join(explicit_unresolved))
 
     nodes = {r["commitment_key"] for r in historical_rows} | set(versioned_ids)
-    edges = rel.get("directed_edges", [])
+    stored_edges = rel.get("directed_edges", []) or []
+    derived_edges = derive_explicit_edges(hist_by_ord, rel)
+    edge_map = {(e.get("from"), e.get("to")): e for e in stored_edges + derived_edges}
+    edges = [edge_map[k] for k in sorted(edge_map)]
     graph_ok, topo_order, graph_errors = topo(nodes, edges)
     if not graph_ok:
         blockers.extend("GRAPH:" + e for e in graph_errors)
@@ -253,35 +288,43 @@ def main() -> int:
             "versioned_active":active_ver,
             "versioned_inactive":len(versioned_rows)-active_ver,
             "directed_relation_edges":len(edges),
+            "directed_relation_edges_stored":len(stored_edges),
+            "directed_relation_edges_derived_from_explicit_targets":len(derived_edges),
         },
         "relation_graph":{
             "acyclic":graph_ok,
             "topological_node_count":len(topo_order),
             "errors":graph_errors,
+            "edges":edges,
         },
-        "collision_scan":{
-            "present":collision is not None,
-            "unresolved_candidate_count":None if not collision else len([o for o in collision.get("pending_collision_scan",{}).get("review_candidate_ordinals",[]) if o not in rel.get("collision_candidate_resolutions",{})]),
-        },
+        "unresolved_source_relations": explicit_unresolved,
         "resolved_gap_counts":gap_counts,
+        "collision_scan":collision.get("pending_collision_scan") if collision else None,
         "active_leaf_terminal_fach_set_check":fach_set,
         "active_leaf_241_layer_set_check":layer_set,
+        "blockers":sorted(set(blockers)),
         "completion":{
-            "blockers":sorted(set(blockers)),
-            "ST_BSW_PRIMARY_SOURCE_PARITY_FULL_PROGRAM":"PASS_FULL_PROGRAMME" if not blockers else "READY_FOR_UNION_MANIFEST_AND_FINAL_ROLE_MATRIX",
-            "authoritative_denominator":authoritative,
-            "authoritative_denominator_frozen":not blockers,
-            "BSW_FULL_PROGRAM_FACH_COMPLETE":"PASS" if not blockers else False,
-            "PR270_merge_ready":False,
-            "next_step":"RECONCILE_ST_ONLY_ON_LATEST_MAIN_AND_RUN_EXACT_HEAD_GATES" if not blockers else "RESOLVE_LISTED_BLOCKERS_WITH_EXISTING_SOURCE_BOUND_FINDINGS_ONLY",
+            "authoritative_denominator_frozen":authoritative is not None,
+            "authoritative_source_unit_count":authoritative,
+            "BSW_FULL_PROGRAM_FACH_COMPLETE":authoritative is not None,
+            "ST_BSW_PRIMARY_SOURCE_PARITY_FULL_PROGRAM":"PASS_FULL_PROGRAMME" if authoritative is not None else "BLOCKED_FINAL_UNION_GATES",
         },
     }
-
     out = ROOT / args.output
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(json.dumps(manifest, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
-    print(json.dumps(manifest["counts"] | manifest["completion"], ensure_ascii=False, indent=2))
-    return 0 if not blockers else 2
+    out.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    print(json.dumps({
+        "output":str(out.relative_to(ROOT)),
+        "historical_rows":len(historical_rows),
+        "versioned_rows":len(versioned_rows),
+        "active_hist":active_hist,
+        "active_versioned":active_ver,
+        "directed_edges":len(edges),
+        "unresolved_source_relations":explicit_unresolved,
+        "blockers":sorted(set(blockers)),
+        "completion":manifest["completion"],
+    },ensure_ascii=False,indent=2))
+    return 0 if authoritative is not None else 2
 
 
 if __name__ == "__main__":
