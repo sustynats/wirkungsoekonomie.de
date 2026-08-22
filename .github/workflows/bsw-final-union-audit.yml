@@ -36,32 +36,34 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Audit exact BSW union and pending historical-role collisions
-        run: python tools/audit_bsw_final_union.py --output content/audits/sachsen-anhalt/bsw-final-union-collision-report-r19.json
-      - name: Materialize fail-closed final-union candidate
+      - name: Audit exact BSW extended union and pending historical-role collisions
+        run: python tools/audit_bsw_final_union.py --output content/audits/sachsen-anhalt/bsw-final-union-collision-report-r20.json
+      - name: Materialize fail-closed R20 final-union candidate
         if: always()
         run: |
           set +e
           python tools/materialize_bsw_final_union_manifest.py \
-            --collision-report content/audits/sachsen-anhalt/bsw-final-union-collision-report-r19.json \
+            --collision-report content/audits/sachsen-anhalt/bsw-final-union-collision-report-r20.json \
             --relations content/audits/sachsen-anhalt/bsw-final-union-relation-registry-r18.json \
-            --output content/audits/sachsen-anhalt/bsw-final-union-manifest-machine-r19.json \
+            --relation-overlay content/audits/sachsen-anhalt/bsw-final-union-relation-overlay-r20.json \
+            --output content/audits/sachsen-anhalt/bsw-final-union-manifest-machine-r20.json \
             --allow-default-pend-keep-atomic
           echo "materializer_exit=$?"
           exit 0
-      - name: Build machine audit summary
+      - name: Build R20 machine audit summary
         if: always()
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
-          c=json.loads(Path('content/audits/sachsen-anhalt/bsw-final-union-collision-report-r19.json').read_text())
-          m=json.loads(Path('content/audits/sachsen-anhalt/bsw-final-union-manifest-machine-r19.json').read_text())
+          c=json.loads(Path('content/audits/sachsen-anhalt/bsw-final-union-collision-report-r20.json').read_text())
+          m=json.loads(Path('content/audits/sachsen-anhalt/bsw-final-union-manifest-machine-r20.json').read_text())
           scan=c['pending_collision_scan']
           summary={
-            'marker':'ST_BSW_PR270_FINAL_UNION_MACHINE_AUDIT_R19',
+            'marker':'ST_BSW_PR270_FINAL_UNION_MACHINE_AUDIT_R20',
             'head':'${{ github.sha }}',
             'hard_errors':c.get('hard_errors',[]),
+            'extended_versioned_union':c.get('versioned_union'),
             'pending_total':scan.get('pending_total'),
             'lexically_clear_no_candidate':scan.get('lexically_clear_no_candidate'),
             'review_candidate_count':scan.get('review_candidate_count'),
@@ -70,36 +72,38 @@ jobs:
             'manifest_blockers':m.get('blockers'),
             'unresolved_source_relations':m.get('unresolved_source_relations'),
             'graph_acyclic':m.get('relation_graph',{}).get('acyclic'),
+            'graph_target_existence_pass':m.get('relation_graph',{}).get('target_existence_pass'),
             'graph_errors':m.get('relation_graph',{}).get('errors'),
             'resolved_gap_counts':m.get('resolved_gap_counts'),
             'terminal_fach_set_check':m.get('active_leaf_terminal_fach_set_check'),
             'layer_241_set_check':m.get('active_leaf_241_layer_set_check'),
+            'union_semantic_sha256':m.get('union_semantic_sha256'),
             'completion':m.get('completion'),
             'collision_candidates':[
               {'ordinal':r['historical_ordinal'],'page':r.get('page'),'title':r.get('title'),'top_candidates':r.get('top_candidates',[])[:3]}
               for r in scan.get('rows',[]) if r.get('candidate_status','').startswith('REVIEW')
             ],
           }
-          Path('content/audits/sachsen-anhalt/bsw-final-union-machine-summary-r19.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n')
+          Path('content/audits/sachsen-anhalt/bsw-final-union-machine-summary-r20.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n')
           Path('tmp').mkdir(exist_ok=True)
-          Path('tmp/pr270-comment.md').write_text('### ST BSW final-union machine audit R19\n\n```json\n'+json.dumps(summary,ensure_ascii=False,indent=2)+'\n```\n')
+          Path('tmp/pr270-comment.md').write_text('### ST BSW final-union machine audit R20\n\n```json\n'+json.dumps(summary,ensure_ascii=False,indent=2)+'\n```\n')
           print(json.dumps(summary,ensure_ascii=False,indent=2))
           PY
-      - name: Persist machine audit artifacts to PR270 branch
+      - name: Persist R20 machine audit artifacts to PR270 branch
         if: always() && github.event_name == 'push'
         run: |
-          if git diff --quiet -- content/audits/sachsen-anhalt/bsw-final-union-collision-report-r19.json content/audits/sachsen-anhalt/bsw-final-union-manifest-machine-r19.json content/audits/sachsen-anhalt/bsw-final-union-machine-summary-r19.json; then
+          if git diff --quiet -- content/audits/sachsen-anhalt/bsw-final-union-collision-report-r20.json content/audits/sachsen-anhalt/bsw-final-union-manifest-machine-r20.json content/audits/sachsen-anhalt/bsw-final-union-machine-summary-r20.json; then
             echo 'No machine artifact delta.'
             exit 0
           fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add content/audits/sachsen-anhalt/bsw-final-union-collision-report-r19.json \
-                  content/audits/sachsen-anhalt/bsw-final-union-manifest-machine-r19.json \
-                  content/audits/sachsen-anhalt/bsw-final-union-machine-summary-r19.json
-          git commit -m 'audit(bsw): publish final-union machine scan R19 [skip-bsw-audit]'
+          git add content/audits/sachsen-anhalt/bsw-final-union-collision-report-r20.json \
+                  content/audits/sachsen-anhalt/bsw-final-union-manifest-machine-r20.json \
+                  content/audits/sachsen-anhalt/bsw-final-union-machine-summary-r20.json
+          git commit -m 'audit(bsw): publish final-union machine scan R20 [skip-bsw-audit]'
           git push origin HEAD:${{ github.ref_name }}
-      - name: Publish machine audit summary to PR270
+      - name: Publish R20 machine audit summary to PR270
         if: always() && github.event_name == 'push'
         env:
           GH_TOKEN: ${{ github.token }}
@@ -107,10 +111,10 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: bsw-final-union-audit-artifacts
+          name: bsw-final-union-audit-r20-artifacts
           path: |
-            content/audits/sachsen-anhalt/bsw-final-union-collision-report-r19.json
-            content/audits/sachsen-anhalt/bsw-final-union-manifest-machine-r19.json
-            content/audits/sachsen-anhalt/bsw-final-union-machine-summary-r19.json
+            content/audits/sachsen-anhalt/bsw-final-union-collision-report-r20.json
+            content/audits/sachsen-anhalt/bsw-final-union-manifest-machine-r20.json
+            content/audits/sachsen-anhalt/bsw-final-union-machine-summary-r20.json
 
-# deterministic convergence persistence trigger 2026-08-22T03:02+02:00
+# deterministic convergence persistence trigger 2026-08-22T03:08+02:00
