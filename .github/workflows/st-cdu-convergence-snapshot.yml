@@ -98,4 +98,4 @@ jobs:
           gh pr comment 257 --repo "$GITHUB_REPOSITORY" --body-file /tmp/st-cdu-pr-comment.md
 
 # Deterministic convergence only; no Fach synthesis and no public-count mutation.
-# convergence trigger 2026-08-22T02:22+02:00
+# convergence trigger 2026-08-22T02:38+02:00
