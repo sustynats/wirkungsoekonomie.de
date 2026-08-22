@@ -23,6 +23,7 @@ import urllib.request
 import materialize_st_cdu_review_snapshots as snapshots
 import normalize_st_cdu_convergence_shards as normalize
 import build_st_cdu_global_convergence as convergence
+import reconcile_st_cdu_source_manifest_nodes as source_manifest_nodes
 import validate_st_cdu_global_convergence as validate
 
 SNAP_INDEX = pathlib.Path(
@@ -82,6 +83,10 @@ def main() -> int:
 
         normalize.main()
         convergence.main()
+        # The versioned source manifest already contains exact terminal child triplets
+        # for a small number of restored/split nodes that were not repeated in a page
+        # shard. Materialize those explicit nodes mechanically before graph validation.
+        source_manifest_nodes.main()
         validate.main()
         if AUDIT.exists():
             audit = json.loads(AUDIT.read_text(encoding="utf-8"))
