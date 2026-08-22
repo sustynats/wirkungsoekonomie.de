@@ -28,7 +28,7 @@ jobs:
         run: node tools/extract_st_gruene_issue234_c01.mjs
       - name: Commit extracted corpus
         run: |
-          if git diff --quiet -- content/audits/sachsen-anhalt/gruene-issue234-source-corpus-c01.json; then
+          if [ -z "$(git status --porcelain -- content/audits/sachsen-anhalt/gruene-issue234-source-corpus-c01.json)" ]; then
             echo 'NO_CHANGE'
             exit 0
           fi
