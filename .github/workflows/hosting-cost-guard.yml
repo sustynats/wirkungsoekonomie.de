@@ -6,6 +6,11 @@ on:
       - "AGENTS.md"
       - "ops/hosting-cost-policy.json"
       - "scripts/ops/check-hosting-cost-guard.mjs"
+      - "scripts/ops/check-vercel-release-budget.mjs"
+      - "scripts/ops/check-vercel-account-cost-guard.mjs"
+      - "ops/vercel-project-baseline.json"
+      - "ops/vercel-build-ledger.jsonl"
+      - "scripts/ops/reserve-vercel-build-slot.mjs"
       - "woek-parlament-app/vercel.json"
       - ".github/workflows/hosting-cost-guard.yml"
   workflow_dispatch:

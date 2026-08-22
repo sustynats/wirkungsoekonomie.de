@@ -4,7 +4,13 @@
   "monthly_budget": {
     "currency": "EUR",
     "gross_max": 25,
-    "increase_requires_project_owner_approval": true
+    "increase_requires_project_owner_approval": true,
+    "vercel_spend_management_additional_usd_preferred": 0,
+    "vercel_spend_management_additional_usd_fallback_max": 1,
+    "vercel_spend_management_action": "PAUSE_ALL_PROJECTS",
+    "metered_effective_cost_before_new_build_usd_max": 15,
+    "build_cpu_effective_cost_before_new_build_usd_max": 10,
+    "additional_billed_cost_before_new_build_usd_max": 0.5
   },
   "vercel": {
     "automatic_git_deployments": false,
@@ -36,6 +42,11 @@
     "production_requires_exact_commit": true,
     "production_requires_quality_gates": true,
     "production_requires_smoke_test": true,
-    "deploy_hooks_require_explicit_release_authorization": true
+    "deploy_hooks_require_explicit_release_authorization": true,
+    "monthly_vercel_build_limit_all_projects": 4,
+    "release_candidate_builds_per_change_set_max": 1,
+    "production_must_promote_existing_release_candidate": true,
+    "direct_vercel_deploy_commands_forbidden_without_release_budget_gate": true,
+    "emergency_override_requires_project_owner_approval": true
   }
 }
