@@ -2,7 +2,7 @@
   "authoritative_effect_mechanism_count": null,
   "authoritative_source_unit_count": null,
   "blockers": [
-    "LEGACY_PRIMARY_ROLE_UNCLASSIFIED:5"
+    "SOURCE_BOUND_SPLIT_TERMINAL_CHILDREN_MISSING:0244:5"
   ],
   "canonical_shards_expected": 24,
   "canonical_shards_loaded": 24,
@@ -10,17 +10,11 @@
   "countable_source_ids": 729,
   "effect_id_duplicates": [],
   "freeze_gate": "BLOCKED",
-  "generated_at": "2026-08-22T00:49:06.065454+00:00",
+  "generated_at": "2026-08-22T01:02:36.474842+00:00",
   "legacy_classification_conflicts": [],
   "legacy_register_rows": 344,
-  "legacy_role_unclassified": [
-    169,
-    170,
-    242,
-    243,
-    244
-  ],
-  "legacy_roles_classified": 340,
+  "legacy_role_unclassified": [],
+  "legacy_roles_classified": 345,
   "legacy_terminal_triplets_found": 344,
   "legacy_versioned_terminal_deltas_observed": [
     {
@@ -3268,6 +3262,24 @@
   "programme_key": "ltw-2026-st-cdu",
   "public_count_mutated": false,
   "schema_version": "1.0",
+  "source_bound_unresolved_split_requirements": [
+    {
+      "freeze_blocker": "SOURCE_BOUND_SPLIT_TERMINAL_CHILDREN_MISSING:0244:5",
+      "legacy_unit": "0244",
+      "required_components": [
+        "REGULATION",
+        "OWNERSHIP_SUBSIDY",
+        "SOCIAL_HOUSING",
+        "ENERGY_RETROFIT",
+        "ACCESSIBILITY"
+      ],
+      "resolution_rule": "Do not synthesize Fach. Clear only when exact source-bound #234 terminal child records are found/materialized or an explicit source-bound #234 reconciliation states that the split is not countable as separate final leaves.",
+      "source_comment_id": 5370989863,
+      "source_issue": 234,
+      "status": "BLOCKED_NO_SOURCE_BOUND_TERMINAL_CHILD_FACH_MATERIALIZED",
+      "terminal_child_records_found_in_canonical_materialization": 0
+    }
+  ],
   "source_id_duplicates": [],
   "structural_validation": {
     "blockers": [],
@@ -3279,7 +3291,7 @@
       "PARENT_CHILD": 438,
       "RESTATEMENT": 1
     },
-    "explicit_union_nodes": 970,
+    "explicit_union_nodes": 975,
     "multiple_parent_conflicts": {},
     "new_fach_semantics_created": false,
     "public_count_mutated": false,
@@ -3288,5 +3300,5 @@
     "unresolved_relation_refs": []
   },
   "terminal_id_conflicts": [],
-  "union_records": 966
+  "union_records": 971
 }

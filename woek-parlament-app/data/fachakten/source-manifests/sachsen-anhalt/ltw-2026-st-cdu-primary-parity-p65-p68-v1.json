@@ -31,21 +31,42 @@
   ],
   "primary_source_diff": [
     {
+      "action": "KEEP_ID_NO_INDEPENDENT_EFFECT_COUNT",
+      "classification": "CONTEXT_ONLY",
+      "legacy_unit": "0242",
+      "source_bound_review_line": "PARENT_GOAL_CONTEXT; not double-counted",
+      "source_bound_role_provenance": {
+        "comment_id": 5370989863,
+        "issue": 234,
+        "materialization": "EXACT_EXISTING_FACH_ROLE_NO_SYNTHESIS"
+      }
+    },
+    {
+      "action": "KEEP_ID_NO_INDEPENDENT_EFFECT_COUNT",
+      "classification": "CONTEXT_ONLY",
+      "legacy_unit": "0243",
+      "source_bound_review_line": "NO_INDEPENDENT_EFFECT_OBJECT; child units carry the effect analysis",
+      "source_bound_role_provenance": {
+        "comment_id": 5370989863,
+        "issue": 234,
+        "materialization": "EXACT_EXISTING_FACH_ROLE_NO_SYNTHESIS"
+      }
+    },
+    {
+      "action": "KEEP_PARENT_ID_SOURCE_BOUND_FIVE_WAY_SPLIT_REQUIRED",
+      "classification": "OVERMERGED",
+      "legacy_unit": "0244",
+      "source_bound_review_line": "VERSION_DELTA = SPLIT_REQUIRED_REGULATION / OWNERSHIP_SUBSIDY / SOCIAL_HOUSING / ENERGY_RETROFIT / ACCESSIBILITY; Source-ID remains Parent",
+      "source_bound_role_provenance": {
+        "comment_id": 5370989863,
+        "issue": 234,
+        "materialization": "EXACT_EXISTING_FACH_ROLE_NO_SYNTHESIS"
+      }
+    },
+    {
       "action": "KEEP_PARENT_ID; VERSIONED_3_CHILD_SPLIT",
       "classification": "OVERMERGED",
       "legacy_unit": "0245"
-    },
-    {
-      "action": "ADD_STABLE_SOURCE_UNIT",
-      "classification": "ABSENT",
-      "legacy_unit": null,
-      "source_locator": "P65_STAEDTEBAU_WOHNRAUM_KOFINANZIERUNG"
-    },
-    {
-      "action": "ADD_STABLE_SOURCE_UNIT",
-      "classification": "ABSENT",
-      "legacy_unit": null,
-      "source_locator": "P65_WOHNGEBIETE_LEBENSWERTER_GESTALTEN"
     },
     {
       "action": "KEEP_PARENT_ID; VERSIONED_2_CHILD_SPLIT",
@@ -116,6 +137,18 @@
       "action": "KEEP_ID; VERSION_AS_RESTATEMENT_DUPLICATE_OF_0251_ANIMAL_WELFARE_FUNDING",
       "classification": "SAME",
       "legacy_unit": "0259"
+    },
+    {
+      "action": "ADD_STABLE_SOURCE_UNIT",
+      "classification": "ABSENT",
+      "legacy_unit": null,
+      "source_locator": "P65_STAEDTEBAU_WOHNRAUM_KOFINANZIERUNG"
+    },
+    {
+      "action": "ADD_STABLE_SOURCE_UNIT",
+      "classification": "ABSENT",
+      "legacy_unit": null,
+      "source_locator": "P65_WOHNGEBIETE_LEBENSWERTER_GESTALTEN"
     }
   ],
   "primary_source_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf",
@@ -137,6 +170,29 @@
   },
   "segment_status": "SEMANTIC_RECONCILIATION_COMPLETE_FOR_P65_P68",
   "shard_version": "2026-08-21-p65-p68-v1",
+  "source_bound_role_supplements": [
+    {
+      "classification": "CONTEXT_ONLY",
+      "comment_id": 5370989863,
+      "issue": 234,
+      "legacy_unit": "0242",
+      "new_fach_semantics_created": false
+    },
+    {
+      "classification": "CONTEXT_ONLY",
+      "comment_id": 5370989863,
+      "issue": 234,
+      "legacy_unit": "0243",
+      "new_fach_semantics_created": false
+    },
+    {
+      "classification": "OVERMERGED",
+      "comment_id": 5370989863,
+      "issue": 234,
+      "legacy_unit": "0244",
+      "new_fach_semantics_created": false
+    }
+  ],
   "terminal_source_objects": [
     {
       "evidence_level": "MEDIUM",

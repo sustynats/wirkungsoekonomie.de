@@ -31246,6 +31246,42 @@
     },
     {
       "applicable_241_layer_markers_explicit": [],
+      "canonical_legacy_classification": "CONTEXT_ONLY",
+      "child_source_unit_ids": [],
+      "effect_role": "CONTEXT_ONLY",
+      "evidence_level": "LOW",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5371447068
+        }
+      ],
+      "impact_direction": "POSITIVE",
+      "layer_set_check": "NOT_APPLICABLE_NON_EFFECT_CONTEXT",
+      "parent_source_unit_id": null,
+      "source_role": "CONTEXT_ONLY",
+      "source_unit_id": "ltw-2026-st-cdu-0169-energie-sicher-und-bezahlbar-die-bundeseinheitliche-stromp",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "applicable_241_layer_markers_explicit": [],
+      "canonical_legacy_classification": "CONTEXT_ONLY",
+      "child_source_unit_ids": [],
+      "effect_role": "CONTEXT_ONLY",
+      "evidence_level": "MEDIUM",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5371447068
+        }
+      ],
+      "impact_direction": "POSITIVE",
+      "layer_set_check": "NOT_APPLICABLE_NON_EFFECT_CONTEXT",
+      "parent_source_unit_id": null,
+      "source_role": "CONTEXT_ONLY",
+      "source_unit_id": "ltw-2026-st-cdu-0170-so-schaffen-wir-die-basis-fuer-wirtschaftliche-entwicklung",
+      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
+    },
+    {
+      "applicable_241_layer_markers_explicit": [],
       "canonical_legacy_classification": "SAME",
       "child_source_unit_ids": [],
       "effect_role": "COUNTABLE_EFFECT_LEAF",
@@ -32911,6 +32947,60 @@
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0241-ausbau-und-die-modernisierung-von-rastplaetzen-vorantreibe",
       "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "applicable_241_layer_markers_explicit": [],
+      "canonical_legacy_classification": "CONTEXT_ONLY",
+      "child_source_unit_ids": [],
+      "effect_role": "CONTEXT_ONLY",
+      "evidence_level": "NOT_ASSESSABLE",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5370989863
+        }
+      ],
+      "impact_direction": "OPEN",
+      "layer_set_check": "NOT_APPLICABLE_NON_EFFECT_CONTEXT",
+      "parent_source_unit_id": null,
+      "source_role": "CONTEXT_ONLY",
+      "source_unit_id": "ltw-2026-st-cdu-0242-deshalb-wollen-wir-den-erwerb-von-wohneigentum-erleichtern",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "applicable_241_layer_markers_explicit": [],
+      "canonical_legacy_classification": "CONTEXT_ONLY",
+      "child_source_unit_ids": [],
+      "effect_role": "CONTEXT_ONLY",
+      "evidence_level": "NOT_ASSESSABLE",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5370989863
+        }
+      ],
+      "impact_direction": "OPEN",
+      "layer_set_check": "NOT_APPLICABLE_NON_EFFECT_CONTEXT",
+      "parent_source_unit_id": null,
+      "source_role": "CONTEXT_ONLY",
+      "source_unit_id": "ltw-2026-st-cdu-0243-die-entwicklung-unseres-bundeslandes-als-ganzes-aktiv-gest",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "applicable_241_layer_markers_explicit": [],
+      "canonical_legacy_classification": "OVERMERGED",
+      "child_source_unit_ids": [],
+      "effect_role": "NONLEAF_PARENT",
+      "evidence_level": "NOT_ASSESSABLE",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5370989863
+        }
+      ],
+      "impact_direction": "OPEN",
+      "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
+      "parent_source_unit_id": null,
+      "source_role": "PROVENANCE_PARENT_ONLY",
+      "source_unit_id": "ltw-2026-st-cdu-0244-wohnungsbau-staerken-und-eigentum-foerdern-wir-lehnen-ideo",
+      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
@@ -35513,7 +35603,7 @@
     }
   ],
   "fach_semantics_created_by_reconciler": false,
-  "generated_at": "2026-08-22T00:49:06.065454+00:00",
+  "generated_at": "2026-08-22T01:02:36.474842+00:00",
   "historical_release1": {
     "register_path": "woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-cdu-zusagen.md",
     "role": "IMMUTABLE_WORKING_BASELINE_NOT_FINAL_DENOMINATOR",

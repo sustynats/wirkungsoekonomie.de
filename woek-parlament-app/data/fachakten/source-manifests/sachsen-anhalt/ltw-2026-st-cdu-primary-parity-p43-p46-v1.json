@@ -41,6 +41,28 @@
   ],
   "primary_source_diff": [
     {
+      "action": "KEEP_ID_NO_INDEPENDENT_EFFECT_COUNT",
+      "classification": "CONTEXT_ONLY",
+      "legacy_unit": "0169",
+      "source_bound_review_line": "VERSION_DELTA: 0169/0170/0175 context-only",
+      "source_bound_role_provenance": {
+        "comment_id": 5374518979,
+        "issue": 234,
+        "materialization": "EXACT_EXISTING_FACH_ROLE_NO_SYNTHESIS"
+      }
+    },
+    {
+      "action": "KEEP_ID_NO_INDEPENDENT_EFFECT_COUNT",
+      "classification": "CONTEXT_ONLY",
+      "legacy_unit": "0170",
+      "source_bound_review_line": "VERSION_DELTA: 0169/0170/0175 context-only",
+      "source_bound_role_provenance": {
+        "comment_id": 5374518979,
+        "issue": 234,
+        "materialization": "EXACT_EXISTING_FACH_ROLE_NO_SYNTHESIS"
+      }
+    },
+    {
       "classification": "SAME",
       "legacy_unit": "0171",
       "source_bound_review_line": "| Versorgung/Resilienz | `0171` | `SAME` | source-exakt, fachlich unten revalidiert |"
@@ -132,6 +154,22 @@
     "unresolved_source_gaps": 0
   },
   "shard_version": "2026-08-22-p43-p46-v1",
+  "source_bound_role_supplements": [
+    {
+      "classification": "CONTEXT_ONLY",
+      "comment_id": 5374518979,
+      "issue": 234,
+      "legacy_unit": "0169",
+      "new_fach_semantics_created": false
+    },
+    {
+      "classification": "CONTEXT_ONLY",
+      "comment_id": 5374518979,
+      "issue": 234,
+      "legacy_unit": "0170",
+      "new_fach_semantics_created": false
+    }
+  ],
   "terminal_source_objects": [
     {
       "evidence_level": "MEDIUM",
