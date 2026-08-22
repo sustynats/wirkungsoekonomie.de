@@ -1,0 +1,355 @@
+{
+  "applicable_241_layer_set_check": {
+    "markers_explicit_in_source_review": [
+      "COMMUNICATION_MEDIA_IMPACT",
+      "COVERAGE_SCOPE",
+      "DELIVERY_FEASIBILITY",
+      "DNS_REFERENCE",
+      "FALSIFICATION_TRIGGERS",
+      "GOAL_REVIEW",
+      "INTERNATIONAL_LEAKAGE",
+      "LIFECYCLE_TRACEABILITY",
+      "MATERIAL_OMISSIONS",
+      "POLICY_COHERENCE",
+      "PROBLEM_REVIEW",
+      "RECOMMENDATION",
+      "RESOURCE_FINANCING",
+      "REVERSIBILITY_LOCKIN",
+      "ROBUSTNESS_STRESS_TEST",
+      "SPATIAL_DISTRIBUTION",
+      "STATE_GFA_ENAP_BENCHMARK",
+      "VERSION_DELTA"
+    ],
+    "set_check_status": "PASS_SOURCE_BOUND_MARKERS_CAPTURED",
+    "source_review_has_241_system_section": true
+  },
+  "authoritative_effect_mechanism_count": null,
+  "authoritative_source_unit_count": null,
+  "completion_guard": {
+    "st_cdu_final_versioned_manifest": "PENDING_GLOBAL_LEAF_RECONCILIATION",
+    "st_cdu_primary_source_parity": "PASS_FULL_PROGRAMME",
+    "st_cdu_terminal_complete": false
+  },
+  "denominator_status": "NOT_FROZEN_PENDING_GLOBAL_LEAF_RECONCILIATION",
+  "fach_review_comment_id": 5374174537,
+  "fach_review_issue": 234,
+  "historical_ids_immutable": true,
+  "materialization_mode": "MECHANICAL_FROM_SOURCE_BOUND_ISSUE_234_REVIEW_NO_NEW_FACH_SEMANTICS",
+  "party": "CDU",
+  "primary_pdf_pages": [
+    29,
+    32
+  ],
+  "primary_source_diff": [
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0102",
+      "source_bound_review_line": "| `0105` | `OVERMERGED` | Parent behalten; Kinderbetreuung und Kinderwunschförderung als getrennte Mechanismen; allgemeiner Familienframe/0102-Crosswalk nicht doppelt zählen |"
+    },
+    {
+      "classification": "SAME",
+      "legacy_unit": "0104",
+      "source_bound_review_line": "| `0104` | `SAME` | eigenständiger Bundespfad Bürgerarbeit/gemeinnützige Arbeit; bestehender terminaler A07-Fachstatus bleibt |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0105",
+      "source_bound_review_line": "| `0105` | `OVERMERGED` | Parent behalten; Kinderbetreuung und Kinderwunschförderung als getrennte Mechanismen; allgemeiner Familienframe/0102-Crosswalk nicht doppelt zählen |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0106",
+      "source_bound_review_line": "| `0106` | `OVERMERGED` | Bundes-Steuerpfad und Landes-Unterstützungs-/Zugangspfad trennen |"
+    },
+    {
+      "classification": "SAME",
+      "legacy_unit": "0107",
+      "source_bound_review_line": "| `0107` | `SAME` | Grunderwerbsteuerbefreiungsforderung bleibt eigene Unit; Kompetenz-Crosswalk korrigieren |"
+    },
+    {
+      "classification": "TRUNCATED",
+      "legacy_unit": "0108",
+      "source_bound_review_line": "| `0108` | `TRUNCATED` | Parent endet in Release-1 nach `durch`; vollständige Primärpassage versioniert auflösen |"
+    },
+    {
+      "classification": "SAME",
+      "legacy_unit": "0109",
+      "source_bound_review_line": "| `0109` | `SAME` | Kinderschutzzentren/-ambulanzen |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0110",
+      "source_bound_review_line": "| `0110` | `OVERMERGED` | Kinder-/Jugendbeauftragter und spezialisierte Fachberatung trennen |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0111",
+      "source_bound_review_line": "| `0111` | `OVERMERGED` | dauerhafte Jugendarbeitsförderung, Jugendbildungsstätten-Masterplan und Jugendpauschale trennen |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0112",
+      "source_bound_review_line": "| `0112` | `OVERMERGED` | Begegnung/Einsamkeit, alternative Wohnformen, Seniorenmitwirkung, Altersdiskriminierung, digital+analog getrennt |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0113",
+      "source_bound_review_line": "| `0113` | `OVERMERGED` | Barrierefreiheit, WfbM, Inklusionsbetriebe, Behindertenbeiräte, Gesundheitszugang, Eingliederungshilfe-Reform, kommunale Beauftragte getrennt; Sensibilisierung = Kontext |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0114",
+      "source_bound_review_line": "| `0114` | `OVERMERGED` | STEM/Führung, Entgelt/Aufstieg, Sorgearbeit, Gewaltschutz, Schutz-/Beratungsinfrastruktur getrennt; Sprachregelungsposition = `CONTEXT_ONLY/COMMUNICATION` ohne behauptete Maßnahmenwirkung |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0115",
+      "source_bound_review_line": "| `0115` | `OVERMERGED` | niedrigschwellige Hilfe, Armutsziel, Beratungslandschaft getrennt; Selbsthilfe-Partnerschaft als Delivery-Kontext |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0116",
+      "source_bound_review_line": "| `0116` | `OVERMERGED` | Ausbildungsinfrastruktur, Weiterbildung, sozialer Arbeitsmarkt getrennt; Ansiedlungs-/Dual-Ausbildungsframe zu bestehenden Pfaden crosswalken, Nicht-Konkurrenz als Designbedingung |"
+    }
+  ],
+  "primary_source_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf",
+  "programme_key": "ltw-2026-st-cdu",
+  "review_snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p29-p32-review.md",
+  "review_snapshot_sha256": "0e00d2cc7828ba7c89a77942f69a753c1f8ab259bad9217a2f67aafc8d87608c",
+  "schema_version": "1.1",
+  "segment_checks": {
+    "checkpoint_terminal_count": 36,
+    "dns_mapping_synthesized": false,
+    "historical_ids_mutated": false,
+    "primary_source_parity": "PASS_SEGMENT",
+    "public_count_mutated": false,
+    "recommendation_synthesized": false,
+    "terminal_source_objects_parsed": 36,
+    "unresolved_source_gaps": 0
+  },
+  "shard_version": "2026-08-22-p29-p32-v1",
+  "terminal_source_objects": [
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-P29-LAND-LABOUR-PROGRAM-PARTICIPATION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-P30-JOBCENTER-BINDING-WORK-OFFER",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0105-CHILDCARE-QUALITY-AFFORDABILITY",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0105-FERTILITY-TREATMENT-SUPPORT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0106-FEDERAL-SINGLE-PARENT-TAX-RELIEF",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0106-STATE-SINGLE-PARENT-SUPPORT-ACCESS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0108-YOUTH-PARTICIPATION-JUGENDHILFE",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0108-SEXUAL-VIOLENCE-PROTECTION-GOAL",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0110-CHILD-YOUTH-COMMISSIONER",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0110-SPECIALIST-CHILD-PROTECTION-COUNSELLING",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0111-YOUTH-WORK-STABLE-SUPPORT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0111-YOUTH-EDUCATION-SITES-MASTERPLAN",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0111-YOUTH-ALLOWANCE",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0112-MEETING-PLACES-ANTI-LONELINESS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0112-ALTERNATIVE-SENIOR-HOUSING",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0112-SENIOR-PARTICIPATION-INTERGENERATIONAL",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0112-AGE-DISCRIMINATION-PREVENTION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0112-DIGITAL-AND-ANALOG-ACCESS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0113-ACCESSIBILITY",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0113-WFBM-STRENGTHEN",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0113-INCLUSION-ENTERPRISES",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0113-MUNICIPAL-DISABILITY-COUNCILS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0113-DISABILITY-HEALTHCARE-REVIEW",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0113-EINGLIEDERUNGSHILFE-REFORM",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0113-MUNICIPAL-DISABILITY-OFFICERS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0114-WOMEN-STEM-LEADERSHIP-ROLE-MODELS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0114-EQUAL-PAY-ADVANCEMENT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0114-CARE-WORK-MEN",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0114-VIOLENCE-PREVENTION-ISTANBUL",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0114-WOMENS-SHELTERS-STATE-WOMENS-COUNCIL",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0115-LOW-BUREAUCRACY-BENEFIT-ACCESS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0115-CHILD-OLD-AGE-POVERTY-GOAL",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0115-COUNSELLING-LANDSCAPE",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0116-VOCATIONAL-CENTRES-SCHOOLS-FUNDING",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0116-CONTINUING-EDUCATION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0116-SOCIAL-LABOUR-MARKET",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    }
+  ],
+  "tuple_schema": [
+    "source_unit_id",
+    "terminal_fach_status",
+    "impact_direction",
+    "evidence_level"
+  ]
+}

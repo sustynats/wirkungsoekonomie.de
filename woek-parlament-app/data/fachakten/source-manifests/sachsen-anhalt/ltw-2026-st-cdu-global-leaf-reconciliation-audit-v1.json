@@ -1,0 +1,2071 @@
+{
+  "authoritative_effect_mechanism_count": null,
+  "authoritative_source_unit_count": null,
+  "blockers": [
+    "DANGLING_RELATION:PARENT_CHILD:ST-CDU-PRIMARY-GAP-EU-CLIMATE-001->ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-CHEMICALS",
+    "DANGLING_RELATION:PARENT_CHILD:ST-CDU-PRIMARY-GAP-EU-CLIMATE-001->ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-CO2",
+    "DANGLING_RELATION:PARENT_CHILD:ST-CDU-PRIMARY-GAP-EU-CLIMATE-001->ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-LKSG",
+    "DANGLING_RELATION:PARENT_CHILD:ST-CDU-PRIMARY-GAP-EU-CLIMATE-001->ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-TAXONOMY",
+    "DANGLING_RELATION:PARENT_CHILD:ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa->ST-CDU-PRIMARY-SPLIT-0250-BNE",
+    "DANGLING_RELATION:PARENT_CHILD:ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa->ST-CDU-PRIMARY-SPLIT-0250-SPECIES-STATUS",
+    "DANGLING_RELATION:PARENT_CHILD:ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa->ST-CDU-PRIMARY-SPLIT-0250-WILDLIFE-DAMAGE",
+    "LEGACY_EFFECT_LEAF_TERMINAL_TRIPLET_NOT_FOUND:0014:ltw-2026-st-cdu-0014-zugleich-setzen-wir-uns-auf-bundesebene-fuer-die-schnelle",
+    "LEGACY_EFFECT_LEAF_TERMINAL_TRIPLET_NOT_FOUND:0016:ltw-2026-st-cdu-0016-praeventionsambulanzen-fuer-psychisch-erkrankte-menschen-m",
+    "LEGACY_EFFECT_LEAF_TERMINAL_TRIPLET_NOT_FOUND:0217:ltw-2026-st-cdu-0217-gleicher-zugang-zum-recht-ueberall-recht-muss-fuer-jeden-l",
+    "LEGACY_EFFECT_LEAF_TERMINAL_TRIPLET_NOT_FOUND:0220:ltw-2026-st-cdu-0220-die-rechtsanwaltliche-versorgung-in-der-flaeche-sichern-de",
+    "LEGACY_PRIMARY_ROLE_UNCLASSIFIED:20",
+    "UNRESOLVED_RELATION:RESTATEMENT:ltw-2026-st-cdu-0259-tierheime-besser-unterstuetzen-die-tierheime-leisten-wertv:RESTATEMENT_DUPLICATE_OF_0251_ANIMAL_WELFARE_FUNDING"
+  ],
+  "canonical_shards_expected": 24,
+  "canonical_shards_loaded": 24,
+  "countable_effect_ids": 727,
+  "countable_source_ids": 728,
+  "effect_id_duplicates": [],
+  "freeze_gate": "BLOCKED",
+  "generated_at": "2026-08-22T00:14:53.341910+00:00",
+  "legacy_classification_conflicts": [],
+  "legacy_register_rows": 344,
+  "legacy_role_unclassified": [
+    81,
+    82,
+    83,
+    100,
+    101,
+    103,
+    120,
+    136,
+    138,
+    143,
+    167,
+    169,
+    170,
+    184,
+    207,
+    215,
+    216,
+    242,
+    243,
+    244
+  ],
+  "legacy_roles_classified": 328,
+  "legacy_terminal_triplets_found": 302,
+  "legacy_versioned_terminal_deltas_observed": [
+    {
+      "legacy_number": 172,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5369751791,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 179,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "new_comment_id": 5369751791,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 180,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "new_comment_id": 5369751791,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 319,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "new_comment_id": 5371263710,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 151,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "new_comment_id": 5371414887,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 152,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5371414887,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 153,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5371447068,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 154,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "new_comment_id": 5371447068,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 155,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "new_comment_id": 5371447068,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 156,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5371447068,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 157,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "new_comment_id": 5371447068,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 158,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5371447068,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 161,
+      "new": [
+        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "new_comment_id": 5371447068,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 162,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5371447068,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 163,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5371447068,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 164,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "new_comment_id": 5371447068,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 165,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5371447068,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 166,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5371447068,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 167,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5371447068,
+      "prior": [
+        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 168,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "new_comment_id": 5371447068,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 169,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "new_comment_id": 5371447068,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 170,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5371447068,
+      "prior": [
+        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 171,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5371447068,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 172,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5371447068,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 173,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5371447068,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 174,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5371447068,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 175,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5371447068,
+      "prior": [
+        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 176,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5371447068,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 177,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5371447068,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 178,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5371447068,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 179,
+      "new": [
+        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "new_comment_id": 5371447068,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 180,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5371447068,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 181,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "new_comment_id": 5371447068,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 182,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "new_comment_id": 5371447068,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 183,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "new_comment_id": 5371668789,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 184,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "new_comment_id": 5371668789,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 185,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "new_comment_id": 5371668789,
+      "prior": [
+        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 186,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "new_comment_id": 5371668789,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 187,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5371668789,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 189,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "new_comment_id": 5371668789,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 190,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "new_comment_id": 5371668789,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 191,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "new_comment_id": 5371668789,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 193,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "new_comment_id": 5371668789,
+      "prior": [
+        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 194,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "new_comment_id": 5371668789,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 195,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "new_comment_id": 5371668789,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 61,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 62,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 63,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 64,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 65,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 66,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 67,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 68,
+      "new": [
+        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 69,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 70,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 71,
+      "new": [
+        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 72,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 73,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 74,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 76,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 77,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 78,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 79,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 80,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 81,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 83,
+      "new": [
+        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 84,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 85,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 86,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 87,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 88,
+      "new": [
+        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 89,
+      "new": [
+        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 90,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 91,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 93,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 94,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 95,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 96,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 97,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 98,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "OPEN",
+        "LOW"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 99,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 100,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 101,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 102,
+      "new": [
+        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 103,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 105,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 107,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "OPEN",
+        "LOW"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 108,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 109,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 110,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "new_comment_id": 5371842424,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 88,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "new_comment_id": 5373797040,
+      "prior": [
+        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 89,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "new_comment_id": 5373797040,
+      "prior": [
+        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 91,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "new_comment_id": 5373797040,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 92,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "new_comment_id": 5373797040,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 93,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "new_comment_id": 5373797040,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 94,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "new_comment_id": 5373797040,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 95,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5373797040,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 97,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "new_comment_id": 5373797040,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 98,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5373797040,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "OPEN",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 99,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "new_comment_id": 5373797040,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 172,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374518979,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 177,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "new_comment_id": 5374518979,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 178,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374518979,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 179,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374518979,
+      "prior": [
+        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 180,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374518979,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 181,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "new_comment_id": 5374518979,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 182,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374518979,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 183,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374518979,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 188,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374585728,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 189,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374585728,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 190,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374585728,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 191,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374585728,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 192,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374585728,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 193,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374585728,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 194,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374585728,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 264,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5375487999,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 272,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "new_comment_id": 5375487999,
+      "prior": [
+        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 274,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "new_comment_id": 5375487999,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 297,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5375517174,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 320,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5375552086,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 321,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "new_comment_id": 5375552086,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 322,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "new_comment_id": 5375552086,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 330,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "new_comment_id": 5375552086,
+      "prior": [
+        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 334,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "new_comment_id": 5375565181,
+      "prior": [
+        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 335,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "new_comment_id": 5375565181,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 337,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "new_comment_id": 5375565181,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 339,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5375565181,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 343,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "new_comment_id": 5375565181,
+      "prior": [
+        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    }
+  ],
+  "missing_shard_files": [],
+  "missing_shards_materialized_this_run": [
+    "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-primary-parity-p23-p24-v1.json",
+    "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-primary-parity-p25-p28-v1.json",
+    "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-primary-parity-p29-p32-v1.json",
+    "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-primary-parity-p33-p36-v1.json",
+    "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-primary-parity-p37-p39-v1.json",
+    "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-primary-parity-p40-p42-v1.json",
+    "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-primary-parity-p43-p46-v1.json",
+    "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-primary-parity-p47-p49-v1.json",
+    "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-primary-parity-p50-p53-v1.json",
+    "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-primary-parity-p54-p56-v1.json",
+    "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-primary-parity-p57-p59-v1.json",
+    "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-primary-parity-p63-p64-v1.json"
+  ],
+  "new_fach_semantics_created": false,
+  "programme_key": "ltw-2026-st-cdu",
+  "public_count_mutated": false,
+  "schema_version": "1.0",
+  "source_id_duplicates": [],
+  "structural_validation": {
+    "blockers": [
+      "DANGLING_RELATION:PARENT_CHILD:ST-CDU-PRIMARY-GAP-EU-CLIMATE-001->ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-CHEMICALS",
+      "DANGLING_RELATION:PARENT_CHILD:ST-CDU-PRIMARY-GAP-EU-CLIMATE-001->ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-CO2",
+      "DANGLING_RELATION:PARENT_CHILD:ST-CDU-PRIMARY-GAP-EU-CLIMATE-001->ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-LKSG",
+      "DANGLING_RELATION:PARENT_CHILD:ST-CDU-PRIMARY-GAP-EU-CLIMATE-001->ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-TAXONOMY",
+      "DANGLING_RELATION:PARENT_CHILD:ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa->ST-CDU-PRIMARY-SPLIT-0250-BNE",
+      "DANGLING_RELATION:PARENT_CHILD:ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa->ST-CDU-PRIMARY-SPLIT-0250-SPECIES-STATUS",
+      "DANGLING_RELATION:PARENT_CHILD:ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa->ST-CDU-PRIMARY-SPLIT-0250-WILDLIFE-DAMAGE",
+      "UNRESOLVED_RELATION:RESTATEMENT:ltw-2026-st-cdu-0259-tierheime-besser-unterstuetzen-die-tierheime-leisten-wertv:RESTATEMENT_DUPLICATE_OF_0251_ANIMAL_WELFARE_FUNDING"
+    ],
+    "countable_effect_leaves": 727,
+    "countable_source_nodes": 728,
+    "cycles": [],
+    "dangling_edges": [
+      {
+        "from": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001",
+        "relation": "PARENT_CHILD",
+        "source": "builder",
+        "to": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-CHEMICALS"
+      },
+      {
+        "from": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001",
+        "relation": "PARENT_CHILD",
+        "source": "builder",
+        "to": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-CO2"
+      },
+      {
+        "from": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001",
+        "relation": "PARENT_CHILD",
+        "source": "builder",
+        "to": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-LKSG"
+      },
+      {
+        "from": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001",
+        "relation": "PARENT_CHILD",
+        "source": "builder",
+        "to": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-TAXONOMY"
+      },
+      {
+        "from": "ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa",
+        "relation": "PARENT_CHILD",
+        "source": "builder",
+        "to": "ST-CDU-PRIMARY-SPLIT-0250-BNE"
+      },
+      {
+        "from": "ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa",
+        "relation": "PARENT_CHILD",
+        "source": "builder",
+        "to": "ST-CDU-PRIMARY-SPLIT-0250-SPECIES-STATUS"
+      },
+      {
+        "from": "ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa",
+        "relation": "PARENT_CHILD",
+        "source": "builder",
+        "to": "ST-CDU-PRIMARY-SPLIT-0250-WILDLIFE-DAMAGE"
+      }
+    ],
+    "edge_counts": {
+      "PARENT_CHILD": 431
+    },
+    "explicit_union_nodes": 947,
+    "multiple_parent_conflicts": {},
+    "new_fach_semantics_created": false,
+    "public_count_mutated": false,
+    "relation_graph_acyclic": true,
+    "resolved_typed_edges": 431,
+    "unresolved_relation_refs": [
+      {
+        "from": "ltw-2026-st-cdu-0259-tierheime-besser-unterstuetzen-die-tierheime-leisten-wertv",
+        "raw": "RESTATEMENT_DUPLICATE_OF_0251_ANIMAL_WELFARE_FUNDING",
+        "relation": "RESTATEMENT"
+      }
+    ]
+  },
+  "terminal_id_conflicts": [],
+  "union_records": 947
+}

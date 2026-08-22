@@ -1,154 +1,169 @@
-## WÖk CDU Primary-Source-Parity + Editorial-v2+ — final official PDF pp. 33–36 vollständig semantisch reconciled
+## WÖk CDU Primary-Source-Parity + Editorial-v2+ — final official PDF pp. 29–32 vollständig semantisch reconciled
 
-Fortsetzung nach `ST_CDU_PRIMARY_PARITY_P29_P32 = PASS_SEGMENT`. Vor diesem Write wurden #234/#241/PR #257 erneut gelesen; die finale parteioffizielle 91-seitige PDF wurde für **S. 33–36** visuell und textuell gegen die historische Release-1-Working-Baseline geprüft. **344 bleibt historische Baseline, nicht finaler Nenner.**
+Fortsetzung der document-wide CDU-Primary-Source-Lane nach `ST_CDU_PRIMARY_PARITY_P25_P28 = PASS_SEGMENT`. Vor diesem Write wurden #234, #241 und PR #257 erneut gelesen. **Historische 344 Release-1-Units bleiben ausschließlich Working-/History-Baseline; kein finaler Nenner wird hier eingefroren.**
 
-### Source / aktuelle Rechtsbaseline
+### Source / Scope
 
-- finale Primärquelle: `https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf` — beschlossen 13.06.2026
-- geprüfter Scope: PDF S. 33–36, Kapitel **„Medien mit Vertrauen“**
-- historische CDU-Working-Baseline: `woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-cdu-zusagen.md`, Git blob `6e8c53392d76e9847ee3028d241a988c12b3d2fb`; IDs/Text immutable
-- aktuelle Medienrechtsbaseline: Medienstaatsvertrag seit 01.12.2025 in 7. Änderungsfassung; Jugendmedienschutz-Staatsvertrag seit 01.12.2025 in 6. Änderungsfassung; Reformstaatsvertrag/7. MÄStV seit 01.12.2025 in Kraft; DSA Art. 28 + EU-Leitlinien Minderjährigenschutz 14.07.2025 und EU-Age-Verification-Blueprint, Stand 29.04.2026; BVerfG 23.07.2025 `1 BvR 2578/24` zu Funktionsfähigkeit, Programmautonomie, Vielfalt und Staatsferne; KEF 25. Bericht 20.02.2026 empfiehlt 18,64 € ab 2027 nach 18,36 € in 2025/26; Art. 5 GG schützt Meinungs-, Presse- und Rundfunkfreiheit; Urheberrecht/KI ist wesentlich Bundes-/EU-Regelungsraum.
+- finale parteioffizielle Primärquelle: `https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf` — Regierungsprogramm zur Landtagswahl 06.09.2026, beschlossen 13.06.2026
+- hier vollständig visuell + textuell geprüft: **PDF S. 29–32**, Kapitel `Soziale Gerechtigkeit und Familie`
+- historische Working-Baseline: `woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-cdu-zusagen.md`, Blob `6e8c53392d76e984630ea06ee00e1c01cf3fe46aa` **nicht verwenden** — korrekt bleibt der bereits dokumentierte CDU-Blob `6e8c53392d76e9847ee3028d241a988c12b3d2fb`
+- relevante historische IDs: `0100–0116`; deren Source-Text/IDs werden **nicht** mutiert
+- aktueller Rechts-/Additionality-Recheck: Bundesagentur für Arbeit, Grundsicherungsgeld seit **01.07.2026** inkl. Pflicht zur Annahme tatsächlich verfügbarer zumutbarer Arbeit und möglicher Leistungsminderung; GG Art. 105 Abs. 2a (Länder bestimmen bei der Grunderwerbsteuer den **Steuersatz**, nicht eigenständig neue bundesrechtliche Befreiungstatbestände); geltender §3 GrEStG; SGB VIII §§11/8a; SGB IX; Gewalthilfegesetz 2025, insb. §§1/8 und stufenweises Inkrafttreten bis 2032.
 
-### 1. Primary-Source-Diff pp. 33–36
+### 1. Primary-Source-Diff pp. 29–32
 
 | Legacy | Parity | Behandlung |
 |---|---|---|
-| `0117` | `SAME` | unspezifizierter Fusionssatz vollständig; bestehender terminaler `REVIEWED_NOT_ASSESSABLE`-Status bleibt; nicht mit 0118 verschmelzen |
-| `0118` | `SAME` | ARD/ZDF-Angebote/Hauptprogramme harmonisieren vollständig; bestehender terminaler A08-Status bleibt |
-| `0119` | `OVERMERGED` | Einkommens-/Belastungsdifferenzierung und Mittelstands-Entlastung sind zwei verschiedene Finanzierungs-/Verteilungsmechanismen |
-| `0120` | `CONTEXT_ONLY` | Überschrift Zukunftsrichtung, Text aber ausschließlich Rückblick; konkrete zukünftige Medienkompetenzmaßnahme ist `0126`; keine Doppelzählung |
-| `0121` | `OVERMERGED` | Auftragsfokus, politisches „Achten“ auf Ausgewogenheit/Neutralität und unspezifizierte Innovations-/Vielfaltsförderung trennen |
-| `0122` | `OVERMERGED` | Ausgabenkontrolle und Reform-Weiterentwicklung trennen; Beitragsstabilität/-senkung auf `0119` crosswalken statt doppelt zählen |
-| `0123` | `OVERMERGED` | Transparenz/Effizienz, Leitungsvergütung und regionaler wirtschaftlicher Rückfluss getrennte Mechanismen |
-| `0124` | `TRUNCATED` | Release-1 endet nach `bestehender`; Primärquelle vervollständigt `Gesetze.`; innerhalb Parent Altersprüfung, Kennzeichnung, Meldung, technische Schutzmechanismen trennen; Bot-Verbot bleibt `0125` |
-| `0125` | `SAME` | Bot-/Fakeaccount-Verbot vollständig; bestehender terminaler `REVIEWED_NOT_ASSESSABLE`-Status bleibt |
-| `0126` | `SAME` | zukünftiger Ausbau Medienpädagogik vollständig; bestehender terminaler A09-Status bleibt |
-| `0127` | `OVERMERGED` | Fachkräfteinitiative, Förder-/Produktionsallokation, regionaler Projekt-/MDR-Pfad und Landesförderprogramm getrennt |
-| `0128` | `OVERMERGED` | mögliche KI-Nutzung in Redaktionen und Urheberrechts-/Vergütungspfad fachlich/kompetenziell trennen |
-| `0129` | `OVERMERGED` | Strafverfolgungs-/Schutzvollzug und Sensibilisierung der Sicherheitsbehörden trennen; Plattform-/Menschenwürde-Satz ist `CONTEXT_ONLY` ohne konkretes Instrument |
-| `0130` | `SAME` | Bundes-Advocacy für wirtschaftliche Rahmenbedingungen Lokalmedien; bestehender terminaler Status bleibt |
-| `0131` | `SAME` | Kinoerhalt + Ergänzung Bundesprogramme; bestehender terminaler Status bleibt |
-| `0132` | `OVERMERGED` | verlässliche Bürgermedien-Finanzierung vs nur zu prüfende Bildungs-Verzahnung trennen |
-| `0133` | `SAME` | GEMA-Ländervertrag als klarer Mechanismus; bestehender terminaler Status bleibt, Additionality jetzt durch reale Länder-Pauschalverträge bestätigt |
-| `0134` | `SAME` | digitale Sicht-/Auffindbarkeit der dualen Medienordnung; bestehender terminaler Status bleibt; aktuelle MStV-Baseline explizit beachten |
-| `0135` | `OVERMERGED` | Prüfung Medienkonzentrationsrecht und hypothetische Digitalabgabe/regionale Mittelwirkung getrennt; kein Instrumentdesign vorhanden |
+| `0100` | `CONTEXT_ONLY` | Kapitel-/Werte-/Themenframe erhalten; kein eigener Effektmechanismus |
+| `0101` | `CONTEXT_ONLY` | gesellschaftlicher Ziel-/Werteframe, kein eigenständiges Instrument |
+| `0102` | `SAME` | Familien-/Berufsvereinbarkeit als bestehende Unit erhalten; vorheriger terminaler Fachstatus bleibt |
+| `0103` | `CONTEXT_ONLY` | Zusammenhalts-/Kommunikationsframe; trailing `Wir werden` ist Abschnittsmarker, kein zusätzlicher Mechanismus |
+| `null` | `ABSENT` | `ST-CDU-PRIMARY-GAP-P29-LAND-LABOUR-PROGRAM-PARTICIPATION` additiv |
+| `null` | `ABSENT` | `ST-CDU-PRIMARY-GAP-P30-JOBCENTER-BINDING-WORK-OFFER` additiv |
+| `0104` | `SAME` | eigenständiger Bundespfad Bürgerarbeit/gemeinnützige Arbeit; bestehender terminaler A07-Fachstatus bleibt |
+| `0105` | `OVERMERGED` | Parent behalten; Kinderbetreuung und Kinderwunschförderung als getrennte Mechanismen; allgemeiner Familienframe/0102-Crosswalk nicht doppelt zählen |
+| `0106` | `OVERMERGED` | Bundes-Steuerpfad und Landes-Unterstützungs-/Zugangspfad trennen |
+| `0107` | `SAME` | Grunderwerbsteuerbefreiungsforderung bleibt eigene Unit; Kompetenz-Crosswalk korrigieren |
+| `0108` | `TRUNCATED` | Parent endet in Release-1 nach `durch`; vollständige Primärpassage versioniert auflösen |
+| `0109` | `SAME` | Kinderschutzzentren/-ambulanzen |
+| `0110` | `OVERMERGED` | Kinder-/Jugendbeauftragter und spezialisierte Fachberatung trennen |
+| `0111` | `OVERMERGED` | dauerhafte Jugendarbeitsförderung, Jugendbildungsstätten-Masterplan und Jugendpauschale trennen |
+| `0112` | `OVERMERGED` | Begegnung/Einsamkeit, alternative Wohnformen, Seniorenmitwirkung, Altersdiskriminierung, digital+analog getrennt |
+| `0113` | `OVERMERGED` | Barrierefreiheit, WfbM, Inklusionsbetriebe, Behindertenbeiräte, Gesundheitszugang, Eingliederungshilfe-Reform, kommunale Beauftragte getrennt; Sensibilisierung = Kontext |
+| `0114` | `OVERMERGED` | STEM/Führung, Entgelt/Aufstieg, Sorgearbeit, Gewaltschutz, Schutz-/Beratungsinfrastruktur getrennt; Sprachregelungsposition = `CONTEXT_ONLY/COMMUNICATION` ohne behauptete Maßnahmenwirkung |
+| `0115` | `OVERMERGED` | niedrigschwellige Hilfe, Armutsziel, Beratungslandschaft getrennt; Selbsthilfe-Partnerschaft als Delivery-Kontext |
+| `0116` | `OVERMERGED` | Ausbildungsinfrastruktur, Weiterbildung, sozialer Arbeitsmarkt getrennt; Ansiedlungs-/Dual-Ausbildungsframe zu bestehenden Pfaden crosswalken, Nicht-Konkurrenz als Designbedingung |
 
-**Keine effect-bearing Passage auf S. 33–36 ist ABSENT.** Historische Rückblicke zu UKW/Privatradio/Reformstaatsvertrag sind `CONTEXT_ONLY`, keine neuen Ex-ante-Units.
+Damit sind **alle effect-bearing Passagen der PDF-S. 29–32** entweder bestehender Unit eindeutig zugeordnet, als Kontext markiert oder in finale versionierte Mechanism-Children zerlegt. Keine Passage dieses Segments bleibt `ABSENT/TRUNCATED/OVERMERGED` ohne terminale Behandlung.
 
-### 2. Versionierte Mechanism-Children — 26/26 terminal
+### 2. Neue / gesplittete canonical Mechanism-Units — 36/36 terminal
 
-#### Rundfunkfinanzierung / Auftrag / Governance
+#### Bürgerarbeit / Arbeitsmarkt
 
-1. `ST-CDU-PRIMARY-SPLIT-0119-REGIONAL-INCOME-BURDEN-DESIGN` — `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON` · `OPEN` · `NOT_ASSESSABLE`. Unterschiedliche Länder-Einkommensniveaus als Belastungsargument sind ein Verteilungsproblem, aber die Passage sagt nicht, ob Befreiungen, Ermäßigungen, Länder-Ausgleich, Finanzierungsmix oder Beitragshöhe geändert werden sollen. Funktionsgerechte Finanzierung/KEF-Verfahren und Gleichbehandlung sind harte Designbedingungen. Recheck erst mit Finanzierungsmodell: effektive Belastung nach Einkommen/Land, Verwaltung, Finanzbedarf, Angebot/Qualität/Vielfalt.
+1. `ST-CDU-PRIMARY-GAP-P29-LAND-LABOUR-PROGRAM-PARTICIPATION` — **`EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · LOW**. Teilnahme an Landesprogrammen nicht mehr generell freiwillig. **Problem Review:** Langzeitleistungsbezug/Übergangshemmnisse müssen nach fehlenden Stellen, Qualifikation, Gesundheit, Care, Mobilität und individuellem Verhalten getrennt werden. **Goal:** tragfähige Beschäftigungsübergänge, nicht Teilnahmequote. Aktivierung kann Struktur/Zugang schaffen; Zwang kann Fehladressierung, Abbruch, gesundheitliche Belastung und Verwaltungsaufwand erhöhen. **Delivery/Boundary:** Land/Jobcenter-/Kommunal-Kooperation innerhalb Bundesrechts; Zumutbarkeit, Existenzsicherung, Verhältnismäßigkeit, Rechtsschutz. **Recheck:** zusätzliche ungeförderte Jobs, Dauer/Qualität, Sanktionen/Abbruch, Fehlklassifikation, Kosten, Substitution.
 
-2. `ST-CDU-PRIMARY-SPLIT-0119-SME-CONTRIBUTION-RELIEF` — `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON` · `OPEN` · `NOT_ASSESSABLE`. „Mittelständische Wirtschaft von Beitragslasten befreien“ lässt Unternehmensdefinition, Betriebsstätten/Fahrzeuge, Umfang, Gegenfinanzierung und Rechtsweg offen. Möglicher Entlastungspfad steht einem Finanzierungs-/Verteilungsverschiebungspfad gegenüber. Kein seriöses Richtungsgesamturteil ohne Normdesign.
+2. `ST-CDU-PRIMARY-GAP-P30-JOBCENTER-BINDING-WORK-OFFER` — **`EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · LOW**. Kommunen + BA sollen Personen, die Beschäftigung verweigern, ein verbindliches Arbeitsangebot machen. **Current Additionality:** Seit 01.07.2026 verlangt das Grundsicherungsgeld bereits die Annahme einer tatsächlich verfügbaren zumutbaren Arbeit; bei willentlicher Ablehnung sind Leistungsminderungen möglich. Der zusätzliche Landespfad liegt daher nur in **zusätzlich geschaffenen/organisierten Beschäftigungsgelegenheiten und deren Qualität**, nicht in der bloßen Pflicht zur Annahme existierender zumutbarer Arbeit. Risiken: künstliche Beschäftigung, Verdrängung regulärer Stellen, Lock-in in Maßnahmen statt Übergang. Recheck wie oben plus Netto-Additionalität der Stellen.
 
-3. `ST-CDU-PRIMARY-SPLIT-0121-PUBLIC-SERVICE-REMIT-FOCUS` — `EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `LOW`. Fokus auf Information, politische Bildung und Kultur kann Auftrag/Ressourcen schärfen. Zu enge Ausgrenzung anderer Angebotsformen kann Reichweite, universelle Zugänglichkeit und publizistische Vielfalt schwächen. ReformStV seit 01.12.2025 ist inherited current baseline; Additionalität nur aus weiterem konkretem Auftragsdelta. Recheck Kosten, Nutzung verschiedener Gruppen, Informations-/Kulturqualität, Vielfalt, Reichweite.
+#### Familie / Alleinerziehende
 
-4. `ST-CDU-PRIMARY-SPLIT-0121-NEUTRALITY-OVERSIGHT-FRAME` — `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON` · `OPEN` · `NOT_ASSESSABLE`. „Darauf werden wir achten“ benennt keinen zulässigen Governance-Hebel. Rundfunkfreiheit, Programmautonomie, Vielfalt und Staatsferne begrenzen politische Einflussnahme; BVerfG 23.07.2025 lässt gesetzliche Organisation nur bei Wahrung dieser Grenzen zu. Ziel fairer/informationspluraler Berichterstattung ist prüfbar, politische Inhaltsaufsicht wäre ein anderer Mechanismus. Kein Urteil ohne konkretes Staatsvertrags-/Gremien-/Aufsichtsdesign.
+3. `ST-CDU-PRIMARY-SPLIT-0105-CHILDCARE-QUALITY-AFFORDABILITY` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · MEDIUM**. Flächendeckende qualitativ gute und bezahlbare Kinderbetreuung kann Erwerbs-/Zeitoptionen, frühe Förderung und Teilhabe verbessern. **P/G:** Engpass ist nicht Platzanzahl allein, sondern Erreichbarkeit, Öffnungszeiten, Personal/Qualität und Kosten. Risiken: Personalverdichtung, regionale Unterversorgung, quantitative Expansion ohne Qualität. Recheck: reale Plätze/Öffnungszeiten/Ausfälle, Fachkraftquote, Kostenbelastung, Nutzung nach Einkommen/Region, Eltern-Erwerb, kindbezogene Qualitätsindikatoren.
 
-5. `ST-CDU-PRIMARY-SPLIT-0121-INNOVATION-DIVERSITY-SUPPORT` — `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON` · `OPEN` · `NOT_ASSESSABLE`. „Innovationen und Vielfalt unterstützen“ ist Zielrichtung ohne Förder-, Governance- oder Auffindbarkeitsinstrument. Erst konkreter Hebel bewertbar; keine positive Wirkung aus dem Zielwort ableiten.
+4. `ST-CDU-PRIMARY-SPLIT-0105-FERTILITY-TREATMENT-SUPPORT` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · LOW**. Finanzielle Unterstützung kann Zugang zu medizinisch indizierter Kinderwunschbehandlung verbreitern. Ziel ist fairer Zugang, nicht eine politische Geburtenquote. Risiken: Förderkriterien, Eigenanteile, regionale Versorgung, Opportunitätskosten, medizinische/psychische Belastung. Recheck: Inanspruchnahme nach Einkommen/Region, Eigenanteile, Wartezeit, Abbruch; Behandlungserfolg nie als sicherer Politikeffekt ausgeben.
 
-6. `ST-CDU-PRIMARY-SPLIT-0122-PUBLIC-BROADCAST-EXPENDITURE-CONTROL` — `EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `LOW`. Transparente, unabhängige Wirtschaftlichkeitskontrolle kann Kosten-/Akzeptanzrisiken senken. Direkte politische Budget-/Programmmikrosteuerung kann dagegen Staatsferne/Programmautonomie beeinträchtigen. Current baseline: KEF prüft Finanzbedarf unabhängig; ReformStV enthält bereits Struktur-/Effizienzreformen. Recheck Nettoeinsparung, Verwaltungsaufwand, Programmautonomie, Qualität/Vielfalt und Beitragseffekt.
+5. `ST-CDU-PRIMARY-SPLIT-0106-FEDERAL-SINGLE-PARENT-TAX-RELIEF` — **`EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · LOW**. Steuerentlastung kann verfügbare Einkommen erhöhen, erreicht aber Haushalte je nach Steuerpflicht/Einkommen unterschiedlich stark. **Competence:** Bundessteuerrecht/Advocacy. **Distribution:** geringe Einkommen, Teilzeit, Kinderzahl gesondert; nicht mit Landesberatung saldieren. Recheck Nettoentlastung nach Einkommensgruppen, Erwerbsanreize, Armutsrisiko, fiskalische Kosten.
 
-7. `ST-CDU-PRIMARY-SPLIT-0122-REFORM-IMPLEMENT-AND-DEVELOP` — `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON` · `OPEN` · `NOT_ASSESSABLE`. Der ReformStV ist seit 01.12.2025 in Kraft. „Konsequent umsetzen und weiterentwickeln“ enthält kein zusätzliches Regelungsdelta. Lifecycle als `INHERITED_CURRENT_BASELINE -> IMPLEMENTATION -> possible future reform`; erst konkrete Weiterentwicklung erhält eigene Richtung.
+6. `ST-CDU-PRIMARY-SPLIT-0106-STATE-SINGLE-PARENT-SUPPORT-ACCESS` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · LOW**. Ausbau von Beratung, Unterstützung, Vernetzung und vereinfachtem Hilfenzugang kann Informations-, Zeit- und Koordinationshürden senken. **Goal:** reale Alltags-/Teilhabeentlastung und Erwerbszugang. Risiken: Angebotsdoppelung, Öffnungszeiten/Erreichbarkeit, Beratung ohne verfügbare Leistung/Betreuung. Recheck Nutzung, Wartezeit, First-time-right/Weitervermittlung, Betreuungs-/Erwerbszugang, regionale/soziale Reichweite.
 
-8. `ST-CDU-PRIMARY-SPLIT-0123-MDR-TRANSPARENCY-EFFICIENCY` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`. Mehr prüfbare Transparenz und ressourcenschonende Prozesse können Vertrauen/Wirtschaftlichkeit stärken, sofern redaktionelle Unabhängigkeit unberührt bleibt. Output Kennzahl/Report ≠ Qualitätsoutcome. Recheck Kosten je Funktion, Transparenznutzung, Gremien-/Auditbefunde, Qualität/Vielfalt.
+#### Kinder / Jugend
 
-9. `ST-CDU-PRIMARY-SPLIT-0123-MDR-EXECUTIVE-PAY-BENCHMARK` — `EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `LOW`. Orientierung am öffentlichen Dienst kann Vergütung/Kosten begrenzen und Nachvollziehbarkeit erhöhen; starre Bindung kann Rekrutierung/Verantwortungsumfang fehlabbilden. Governance muss staatsfern und verhältnismäßig bleiben. Recheck Vergütungsniveau, Rekrutierung/Fluktuation, Gesamtpersonalkosten, Verantwortungsvergleich.
+7. `ST-CDU-PRIMARY-SPLIT-0108-YOUTH-PARTICIPATION-JUGENDHILFE` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · MEDIUM**. Altersgerechte Beteiligungsformate + verlässliche Jugendhilfe können Selbstwirksamkeit, Bedarfspassung und Schutz/Teilhabe stärken. §11 SGB VIII verankert Mitbestimmung/Mitgestaltung als bestehende Baseline; Additionalität liegt in tatsächlicher Reichweite/Qualität. Risiken: Scheinbeteiligung, sozial selektive Beteiligung, fehlende Rückkopplung. Recheck Beteiligung nach Alter/Region/Behinderung, dokumentierte Response/Umsetzung, Zugänglichkeit, Jugendhilfe-Warte-/Versorgungsdaten.
 
-10. `ST-CDU-PRIMARY-SPLIT-0123-MDR-REGIONAL-ECONOMIC-RETURN` — `EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `LOW`. Regionale Produktions-/Beschäftigungswirkung kann Sachsen-Anhalt stärken. Eine politische Mindestzuordnung wirtschaftlicher Aktivitäten nach Beitragsaufkommen kann aber Effizienz, Vergabe-/Programmentscheidungen und staatsferne redaktionelle Planung verzerren. Recheck regionale Aufträge/Jobs/Wertschöpfung versus Kosten/Qualität, transparente Kriterien, Unabhängigkeit.
+8. `ST-CDU-PRIMARY-SPLIT-0108-SEXUAL-VIOLENCE-PROTECTION-GOAL` — **`REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON` · `OPEN` · NOT_ASSESSABLE**. Schutz vor Gewalt/sexualisierter Gewalt ist ein tragfähiger Schutz-/Zielraum, die isolierte Passage benennt aber keinen eigenen Mechanismus. Konkrete Children sind u.a. 0109/0110. Kein zusätzlicher Wirkungswert aus dem Zielsatz. Recheck erst an Prävention, Fachberatung, Kinderschutzstrukturen, Melde-/Interventionswegen und Outcomes.
 
-#### Kinder-/Jugendmedienschutz
+9. `ST-CDU-PRIMARY-SPLIT-0110-CHILD-YOUTH-COMMISSIONER` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · LOW**. Ein gestärktes Amt kann Interessenvertretung, Beschwerde-/Monitoring- und Koordinationsfunktion verbessern, wenn Mandat, Unabhängigkeit, Ressourcen und Zugänge klar sind. Output Amt/Ressource ≠ Schutzoutcome. Recheck Fall-/Beteiligungszugang, Empfehlungen/Follow-up, Reaktionszeiten, Ressourcen, Kinder-/Jugendzugänglichkeit.
 
-11. `ST-CDU-PRIMARY-SPLIT-0124-AGE-ASSURANCE` — `EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `MEDIUM`. Wirksame datensparsame Age Assurance kann Minderjährige vor altersunangemessenen Risiken schützen. Sie kann zugleich Datenschutz-, Tracking-, Fehlklassifikations- und Teilhaberisiken erzeugen. Current baseline: DSA Art. 28 verlangt angemessene/verhältnismäßige Schutzmaßnahmen; EU-Leitlinien 14.07.2025 und der seit April 2026 technisch bereite EU-Blueprint setzen auf privacy-preserving Nachweise. Wichtig: AGB-Mindestalter ≠ eigenständiges Landesgesetz. Recheck Umgehung/Fehler, Datenschutzvorfälle, Risikobelastung, Zugang rechtmäßiger Nutzer.
+10. `ST-CDU-PRIMARY-SPLIT-0110-SPECIALIST-CHILD-PROTECTION-COUNSELLING` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · MEDIUM**. Spezialisierte Fachberatung kann frühere Erkennung, fachgerechte Unterstützung und Schnittstellenqualität verbessern. SGB VIII §8a bleibt gesetzliche Schutzbaseline. Risiken: Personalengpass, regionale Lücken, Schnittstellen-/Datenschutzprobleme. Recheck Wartezeit, Fachkräfte, Fälle/Weiterleitung, Wiederholungs-/Gefährdungsverläufe, regionale Abdeckung.
 
-12. `ST-CDU-PRIMARY-SPLIT-0124-DIGITAL-CONTENT-AGE-LABELS` — `EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `LOW`. Alterskennzeichnung kann Eltern/Jugendlichen Auswahl und Schutzsystemen Informationen geben; Fehlklassifikation, Überkennzeichnung und Anbieterkosten können Zugang/Meinungsfreiheit belasten. JMStV ist bestehende Jugendmedienschutzbaseline; konkrete Zusatzpflicht/Adressat muss verhältnismäßig sein. Recheck Genauigkeit, Nutzung, Beschwerden, Exposition, Anbieterlast.
+11. `ST-CDU-PRIMARY-SPLIT-0111-YOUTH-WORK-STABLE-SUPPORT` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · MEDIUM**. Verlässliche Finanzierung von Jugendverbänden/offener Jugendarbeit kann Angebotskontinuität, Selbstbestimmung und soziale Teilhabe stützen; §11 SGB VIII ist Baseline. Risiken: inputorientierte Förderung ohne Reichweite/Qualität, regionale Ungleichheit. Recheck Öffnungszeiten/Angebote, Teilnahme nach Gruppen/Region, Fachkräfte, Jugendfeedback, Kostenkontinuität.
 
-13. `ST-CDU-PRIMARY-SPLIT-0124-REPORTING-ACCESS` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `MEDIUM`. Leicht auffindbare Meldemöglichkeiten können Reaktionszeiten und Durchsetzung bei rechtswidrigen/schädlichen Inhalten verbessern, wenn Verfahren kindgerecht, missbrauchsresistent und rechtsstaatlich sind. Recheck Melderate, Bearbeitungszeit, berechtigte/unberechtigte Meldungen, Abhilfe/Widerspruch, Nutzergruppen.
+12. `ST-CDU-PRIMARY-SPLIT-0111-YOUTH-EDUCATION-SITES-MASTERPLAN` — **`EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · LOW**. Ein Masterplan kann Bedarf, Sanierung, Erreichbarkeit und Investitionen koordinieren; Planerstellung allein ist kein Outcome. Risiken: Fehldimensionierung, Infrastruktur-Lock-in, regionale Fehlverteilung. Recheck Auslastung/Erreichbarkeit, Gebäudezustand, Investitionspriorisierung, Energie-/Klimarisiken, tatsächliche Nutzung.
 
-14. `ST-CDU-PRIMARY-SPLIT-0124-TECHNICAL-YOUTH-PROTECTION` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `MEDIUM`. Technische Schutzmechanismen können Exposition gegenüber Grooming, schädlichen Inhalten, problematischem Design und anderen Risiken reduzieren. DSA/JMStV/EU-Leitlinien bilden bereits einen Mehr­ebenenrahmen; Landesmedienaufsicht darf nicht als alleinige Plattformkompetenz dargestellt werden. Schutzbedingungen: Privacy-by-design, Proportionalität, keine pauschale Informationssperre. Recheck Risikoexposition, Umgehung, Fehlblockaden, Datenschutz, Beschwerde/Abhilfe.
+13. `ST-CDU-PRIMARY-SPLIT-0111-YOUTH-ALLOWANCE` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · LOW**. Weiterentwicklung der Jugendpauschale kann kommunale/Träger-Angebotsfähigkeit stabilisieren, sofern Mittel bedarfs- und zugangsorientiert ankommen. Risiken: pauschale Verteilung ohne Bedarf/Outcome, Mitnahme, Haushaltsvolatilität. Recheck Mittel pro Zielgruppe/Region, Additionalität, Angebotsstunden/Reichweite, Qualität.
 
-`0124` Plattformkooperation + konsequente Anwendung bestehender Gesetze = **DELIVERY/BASELINE_CONTEXT**, keine fünfte neue Maßnahme. `0125` Bot/Fakeaccount-Verbot bleibt separat und mangels Normdesign `REVIEWED_NOT_ASSESSABLE`.
+#### Ältere Menschen
 
-#### Medienstandort / KI / Presse
+14. `ST-CDU-PRIMARY-SPLIT-0112-MEETING-PLACES-ANTI-LONELINESS` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · LOW**. Mehrgenerationenhäuser/Seniorentreffs können soziale Kontakte und Zugang zu Unterstützung stärken; Einsamkeit ist aber nicht allein ein Infrastrukturproblem. Recheck Erreichbarkeit, Nutzung auch schwer erreichbarer Gruppen, soziale Kontakte/Wohlbefinden, Mobilität, Kosten.
 
-15. `ST-CDU-PRIMARY-SPLIT-0127-MDM-SKILLED-WORKFORCE` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`. Fachkräfteentwicklung kann reale Produktionsengpässe mindern, wenn Qualifizierung/Matching den regionalen Bedarf trifft. Risiken: Mitnahme, Wegzug, Fehlqualifikation. Recheck offene Stellen, Abschluss/Placement, Verbleib, Lohn/Jobqualität, Additionalität.
+15. `ST-CDU-PRIMARY-SPLIT-0112-ALTERNATIVE-SENIOR-HOUSING` — **`EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · LOW**. Alternative Wohnformen können Selbstständigkeit, soziale Einbindung und passende Unterstützung verbessern; Wirkung hängt an Bezahlbarkeit, Barrierefreiheit, Pflege-/Mobilitätsanbindung und freiwilliger Wahl. Risiken: Angebotssegregation, Kosten/Flächen, Fehlbedarf. Recheck Nachfrage, Kosten, Barrierefreiheit, Verbleib/Umzüge, Versorgungszugang.
 
-16. `ST-CDU-PRIMARY-SPLIT-0127-MDM-REGIONAL-FUNDING-ALLOCATION` — `EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `LOW`. Mehr Fördermittel für mitteldeutsche Produktions-/Postproduktionsfirmen können lokale Wertschöpfung/Cluster stärken. Starre Regionalpräferenz kann Projektqualität, Wettbewerb und Mittelwirksamkeit schwächen. Recheck Additionalität, regionale Jobs/Aufträge, Förderhebel, Projektqualität/Publikum, Verdrängung.
+16. `ST-CDU-PRIMARY-SPLIT-0112-SENIOR-PARTICIPATION-INTERGENERATIONAL` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · LOW**. Seniorenmitwirkung und generationenverbindende Projekte können Repräsentation/soziale Einbindung erhöhen, wenn Beteiligung reale Rückkopplung hat. Recheck Repräsentativität, Zugänglichkeit, Follow-up politischer/kommunaler Entscheidungen, Reichweite.
 
-17. `ST-CDU-PRIMARY-SPLIT-0127-PUBLIC-BROADCAST-REGIONAL-PRODUCTION` — `EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `LOW`. Mehr Produktionen mit Sachsen-Anhalt-Bezug/MDR-Einbindung können regionale Perspektiven und kreative Wertschöpfung stärken; politische Produktionsquoten/-steuerung dürfen Programmautonomie/staatsferne Vergabe nicht unterlaufen. Recheck regionale Produktionen/Aufträge/Jobs, journalistische/programmliche Qualität, transparente unabhängige Auswahl.
+17. `ST-CDU-PRIMARY-SPLIT-0112-AGE-DISCRIMINATION-PREVENTION` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · MEDIUM**. Aufklärung, altersfreundliche Arbeitsmodelle und wirksame Antidiskriminierungsregeln können Zugangs-/Benachteiligungsrisiken senken. Bundes-AGG ist bestehende Rechtsbaseline; Landeseffekt liegt in eigenen Arbeitgeber-/Förder-/Informations-/Vollzugspfaden. Recheck Beschwerden/Fälle, Beschäftigungs-/Weiterbildungszugang nach Alter, Rechtsdurchsetzung, Arbeitgeberpraxis.
 
-18. `ST-CDU-PRIMARY-SPLIT-0127-STATE-MEDIA-PROMOTION-CONTINUATION` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`. Fortsetzung eines Landesförderprogramms kann Produktionskapazität/Projekte stabilisieren, wenn Förderkriterien Additionalität, Qualität und Diversität sichern. „Fortsetzen“ ist keine neue Wirkung; inherited baseline + marginales Delta messen. Recheck geförderte zusätzliche Projekte, private Kofinanzierung, Beschäftigung, Qualität/Reichweite, regionale Verteilung.
+18. `ST-CDU-PRIMARY-SPLIT-0112-DIGITAL-AND-ANALOG-ACCESS` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · MEDIUM**. Altersgerechte digitale Angebote plus **beibehaltene analoge Kontaktwege** reduzieren Exklusionsrisiken bei Digitalisierung. Schutzbedingung: kein Digital-only-Zwang bei wesentlicher Daseinsvorsorge. Recheck Abschluss-/Abbruchraten nach Alter, Barrierefreiheit, Supportbedarf, Wartezeit digital/analog, regionale Erreichbarkeit.
 
-19. `ST-CDU-PRIMARY-SPLIT-0128-AI-EDITORIAL-USE` — `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON` · `OPEN` · `NOT_ASSESSABLE`. Die Passage beschreibt nur mögliche redaktionelle KI-Nutzen (Entlastung, Recherche, Darstellungsformen), aber kein Landesinstrument, keine Förderregel, Governance oder Pflicht. Kein Wirkungspfad allein aus einer Technologieoption. Falls später Instrument: Qualität/Fehler/Bias/Transparenz, Arbeitswirkung, Datenschutz, Energie/Ressourcen und redaktionelle Verantwortung getrennt.
+#### Menschen mit Behinderung
 
-20. `ST-CDU-PRIMARY-SPLIT-0128-AI-COPYRIGHT-REMUNERATION` — `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON` · `OPEN` · `NOT_ASSESSABLE`. Schutz/Vergütung kreativer Rechte ist legitimer Zielraum; Urheberrecht ist jedoch primär Bundes-/EU-Recht und die Passage nennt kein konkretes Lizenz-, Transparenz-, Vergütungs- oder Durchsetzungsdesign. Current baseline u.a. UrhG §44b Text/Data Mining; keine Landeswirkung aus Advocacy behaupten. Recheck erst mit Regelungsoption: Rechteinhabervergütung, Lizenzmarkt, Innovations-/Zugangseffekte, Rechtsdurchsetzung.
+19. `ST-CDU-PRIMARY-SPLIT-0113-ACCESSIBILITY` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · MEDIUM**. Bauliche, sprachliche und digitale Barrierefreiheit kann selbstbestimmte Teilhabe unmittelbar erhöhen. **Problem/Goal:** reale Barrieren/Assistenzbedarfe statt abstrakter Inklusionsquote. Delivery über Land/Kommunen/Leistungsträger je Objekt. Recheck Accessibility-Audits, Nutzbarkeit/Abbrüche, Beschwerden, Erreichbarkeit, Beteiligung Betroffener.
 
-21. `ST-CDU-PRIMARY-SPLIT-0129-PRESS-ATTACK-ENFORCEMENT` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `MEDIUM`. Konsequente Verfolgung von Angriffen auf Journalistinnen/Journalisten kann Schutz, Abschreckung und praktische Pressefreiheit stärken. Strafbarkeit/Art.5-Schutz sind bestehende Baselines; Additionalität liegt in Vollzug, Ermittlung/Schutz und nicht in politischer Inhaltsbewertung. Recheck Angriffe, Anzeige→Ermittlung→Abschluss, Wiederholung, Einsatz-/Schutzpraxis, Pressezugang bei Veranstaltungen.
+20. `ST-CDU-PRIMARY-SPLIT-0113-WFBM-STRENGTHEN` — **`EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · MEDIUM**. Werkstätten können Beschäftigung, Förderung und Schutz bieten; ein pauschales „Stärken“ kann aber Übergänge auf den allgemeinen Arbeitsmarkt und Wahlfreiheit verfestigen, wenn Erfolg an Plätzen statt individueller Teilhabe gemessen wird. SGB IX verpflichtet Werkstätten auch zur Förderung geeigneter Übergänge. Recheck Wahlmöglichkeiten, Entgelt, Qualifizierung, Übergänge, Rückkehrrecht, Zufriedenheit/Teilhabe.
 
-22. `ST-CDU-PRIMARY-SPLIT-0129-SECURITY-AUTHORITY-PRESS-PROTECTION-TRAINING` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`. Sensibilisierung/Training kann Einsatzpraxis, Deeskalation und Schutz-/Zugangsverständnis verbessern. Risiko: Schulung ohne Verfahrens-/Praxisänderung bleibt Output. Recheck Beschwerden, Einsatzleitlinien, Vorfälle, Schulungsabdeckung, Journalistenfeedback.
+21. `ST-CDU-PRIMARY-SPLIT-0113-INCLUSION-ENTERPRISES` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · MEDIUM**. Inklusionsbetriebe sind nach SGB IX Unternehmen des allgemeinen Arbeitsmarkts für Menschen mit besonderen Beschäftigungshürden; Förderung kann inklusive Erwerbsarbeit und Einkommen stärken. Risiken: begrenzte Skalierung, Mitnahme, Segmentierung. Recheck stabile Beschäftigung, Lohn/Arbeitsbedingungen, Übergänge, Additionalität, Branchen/Regionen.
 
-Der anschließende Satz zur Plattformverantwortung/Menschenwürde ist **`CONTEXT_ONLY / RIGHTS_FRAME`**: Art. 5 GG schützt Meinung/Presse/Rundfunk und kennt Schranken allgemeiner Gesetze, Jugendschutz und persönliche Ehre; die Passage formuliert aber kein zusätzliches Plattforminstrument.
+22. `ST-CDU-PRIMARY-SPLIT-0113-MUNICIPAL-DISABILITY-COUNCILS` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · LOW**. Behindertenbeiräte können Betroffenenwissen früher in kommunale Entscheidungen bringen; Wirkung hängt an Zugangsrechten, Repräsentativität und tatsächlicher Berücksichtigung. Recheck Abdeckung, Beteiligungszeitpunkt, Empfehlungen/Übernahme, barrierefreie Teilnahme.
 
-#### Bürgermedien / Vereine / Plattformvielfalt
+23. `ST-CDU-PRIMARY-SPLIT-0113-DISABILITY-HEALTHCARE-REVIEW` — **`REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON` · `OPEN` · NOT_ASSESSABLE**. `gesundheitliche Versorgung ... in den Blick nehmen` benennt Problem-/Prüfauftrag, kein Instrument. Erst konkrete Barriere-, Vergütungs-, Versorgungs- oder Qualifikationsmaßnahme bewertbar. Recheck Zugangs-/Wartezeiten, barrierefreie Praxen, Kommunikation/Assistenz, Outcomes.
 
-23. `ST-CDU-PRIMARY-SPLIT-0132-COMMUNITY-MEDIA-RELIABLE-FUNDING` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `MEDIUM`. Verlässliche Finanzierung Offener Kanäle/nichtkommerzieller Lokalradios kann lokale Medienzugänge, Medienpraxis und Angebotsvielfalt stabilisieren. Risiken: Inputförderung ohne Nutzung/Qualität, regionale Ungleichheit. Recheck Finanzierungsstabilität, Nutzung/Produktion nach Gruppen/Region, Reichweite, Medienkompetenz-/Teilhabeoutcomes.
+24. `ST-CDU-PRIMARY-SPLIT-0113-EINGLIEDERUNGSHILFE-REFORM` — **`REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON` · `OPEN` · NOT_ASSESSABLE**. `Strukturen ... überarbeiten` lässt Richtung, Zuständigkeit, Leistungs-/Verfahrensdesign offen. Tragfähiges Ziel ist personenzentrierte wirksame Teilhabe bei geringer Verfahrenslast; kein Urteil ohne konkretes Delta. Recheck erst mit Reformoption: Leistungszugang, Bearbeitungszeit, Wahl-/Teilhabeoutcomes, Kosten/Personal.
 
-24. `ST-CDU-PRIMARY-SPLIT-0132-COMMUNITY-MEDIA-EDUCATION-LINK-REVIEW` — `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON` · `OPEN` · `NOT_ASSESSABLE`. „Prüfen“ einer engeren Verzahnung mit Schule/Jugend-/Seniorenarbeit ist ein Prüfauftrag ohne konkretes Kooperations-/Curriculum-/Finanzierungsdesign. Erst beschlossenes Modell bewertbar.
+25. `ST-CDU-PRIMARY-SPLIT-0113-MUNICIPAL-DISABILITY-OFFICERS` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · LOW**. Stellen bei Kreisen/kreisfreien Städten können Interessenvertretung, Barrierehinweise und Koordination stärken. Risiken: symbolische Stellen ohne Mandat/Ressourcen. Recheck Besetzung, Kompetenzen, Eingaben/Follow-up, Beteiligung, regionale Abdeckung.
 
-25. `ST-CDU-PRIMARY-SPLIT-0135-MEDIA-CONCENTRATION-LAW-REVIEW` — `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON` · `OPEN` · `NOT_ASSESSABLE`. Prüfung künftiger Initiativen zur Änderung des Medienkonzentrationsrechts ist kein festgelegtes Instrument. Ziel Medienvielfalt ist material, aber Eigentums-/Reichweiten-/Intermediärregeln, Schwellen und Zuständigkeit fehlen. Current MStV/EMFA/DSA-Multilevel-Baseline beachten; Recheck erst am konkreten Vorschlag.
+#### Chancengleichheit / Gewaltschutz
 
-26. `ST-CDU-PRIMARY-SPLIT-0135-DIGITAL-LEVY-REGIONAL-DIVERSITY-FUNDING` — `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON` · `OPEN` · `NOT_ASSESSABLE`. `etwaige Digitalabgaben` ist ausdrücklich konditional; weder Steuer-/Abgabenschuldner, Bemessungsgrundlage, EU-/Bund-/Länderkompetenz, Verwendungsmechanismus noch Additionalität stehen fest. Potenzieller Medienvielfalts-Finanzierungspfad darf daher nicht als beschlossene positive Maßnahme bewertet werden.
+26. `ST-CDU-PRIMARY-SPLIT-0114-WOMEN-STEM-LEADERSHIP-ROLE-MODELS` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · LOW**. Gezielte Förderung, Mentoring/Role-Model-Visibility kann Informations-, Netzwerk- und Zugangsbarrieren in STEM/Führung senken; Wirkung hängt an konkretem Instrument und Ausgangslücke. Risiken: Symbolik ohne strukturellen Zugang, selektive Reichweite. Recheck Bewerbungen/Einstellungen/Beförderungen/Verbleib nach Geschlecht und Fach, Teilnahme, Pay/Role-Level.
 
-### 3. SAME-Units / bestehende terminale Fachentscheidungen bleiben source-bound gültig
+27. `ST-CDU-PRIMARY-SPLIT-0114-EQUAL-PAY-ADVANCEMENT` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · MEDIUM**. Gleiche Bezahlung und faire Aufstiegschancen sind problemadäquate Zielräume; Land kann insbesondere als Arbeitgeber, Förderer/Beschaffer und über Beratung/Monitoring wirken, bundes-/EU-arbeitsrechtliche Pfade bleiben getrennt. Recheck bereinigte/unbereinigte Entgeltlücken, Beförderungen, Arbeitszeit/Branche, Beschwerden/Durchsetzung; Zielwort ≠ Outcome.
 
-- `0117` OPEN/NOT_ASSESSABLE unspezifizierte Anstaltsfusion; `0118` AMBIVALENT/LOW ARD-ZDF-Angebotsharmonisierung; `0120` OPEN/NOT_ASSESSABLE historische Übergangspassage; `0125` OPEN/NOT_ASSESSABLE Bot-/Fakeaccount-Verbot; `0126` POSITIVE/MEDIUM Medienkompetenz; `0130` Bundes-Advocacy Lokalmedien (kein zusätzlicher Landeshebel ohne Design); `0131` Kino-Förderergänzung; `0133` GEMA-Vertrag; `0134` duale Medienordnung/Auffindbarkeit. Diese werden nicht neu nummeriert oder still in Kinder zerlegt, sofern die oben dokumentierte Parity `SAME` bleibt.
-- **Additionality 0133:** reale GEMA-Pauschalverträge mehrerer Länder zeigen, dass das Modell technisch/vertraglich umsetzbar ist; Begünstigte Vereine zahlen bei erfüllten Bedingungen nicht selbst, das Land übernimmt Vergütung. Das CDU-Ziel ist daher kein „Urheberrecht abschaffen“, sondern ein möglicher Länder-Kontingent-/Pauschalvertrag.
-- **Additionality 0134:** MStV regelt bereits Medienplattformen/-intermediäre und diskriminierungsfreie Auffindbarkeit/Vielfalt; Wirkung eines weiteren Vorstoßes muss gegen diese bestehende Baseline gemessen werden.
+28. `ST-CDU-PRIMARY-SPLIT-0114-CARE-WORK-MEN` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · LOW**. Unterstützung von Männern bei Erziehungs-/Pflegeverantwortung kann Sorgearbeit breiter verteilen und Erwerbs-/Zeitoptionen von Partnerinnen verbessern. Wirkung hängt an Zeitrechten, Arbeitgeberpraxis, Betreuung/Pflegeangebot und finanziellen Anreizen. Recheck Care-Zeit, Erwerbs-/Teilzeitmuster, Nutzung von Freistellungen/Angeboten, Einkommenswirkung.
 
-### 4. Batchweite #241-Systemprüfung pp. 33–36
+29. `ST-CDU-PRIMARY-SPLIT-0114-VIOLENCE-PREVENTION-ISTANBUL` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · MEDIUM**. Prävention, Schutz und Beratung gegen Gewalt an Frauen haben klaren Schutzmechanismus. **Current baseline:** Gewalthilfegesetz ist seit 28.02.2025 in Kraft; es verlangt u.a. bedarfsgerechte Schutz-/Beratungsinfrastruktur und Länder-Bedarfs-/Entwicklungsplanung, zentrale Anspruchsteile greifen ab 2032. Additionalität ist deshalb an Ausbau/Qualität/Erreichbarkeit gegenüber dieser Baseline zu messen. Recheck Gewalt-/Wiederholungsrisiko, Zugangs-/Abweisungsdaten, Beratungswartezeit, regionale Barrierefreiheit, Präventionsreichweite.
 
-- `PROBLEM_REVIEW`: Medienvielfalt/Finanzierungsdruck, öffentlich-rechtlicher Auftrag/Kosten, Kinder-Online-Risiken, Medienkompetenz, regionale Medienwirtschaft, Presse-Sicherheit und Plattformmacht getrennt. „Doppelstruktur“, „Neutralität“, „mehr Verantwortung“ oder „Fake News“ sind keine hinreichenden empirischen Problemdefinitionen.
-- `GOAL_REVIEW`: vielfältige/staatferne verlässliche Information, funktionsgerechte Finanzierung, Kinderrechte/Schutz plus Informations-/Teilhabezugang, Medienkompetenz, freie Presse und nachhaltige lokale Medienökosysteme. Beitragssenkung, Fusion, Alterscheck, Digitalabgabe oder regionale Quote sind Instrumente/Zwischenachsen.
-- `DNS_REFERENCE = EXACT_REGISTRY_CROSSWALK_PENDING`; keine Keyword-Zuordnung, kein Zielbezug als Kausalitätsnachweis.
-- `MATERIAL_OMISSIONS`: genaue Kosten-/Doppelungsbaseline, KEF-/Funktionsbedarf, Vielfalt/Regionalität, Datenschutz/Fehlklassifikation Age Assurance, Plattform-/EU-Kompetenz, Förderadditionalität, redaktionelle Unabhängigkeit, Presseangriffs-/Vollzugsdaten, Nutzer-/Zielgruppenverteilung.
-- `POLICY_COHERENCE`: MStV/JMStV/ReformStV, KEF-/Rundfunkfinanzierungsverfahren, Art.5 GG/BVerfG, DSA/EMFA, UrhG/EU-Urheberrecht, Landesmedienanstalt/MDM/Polizei-/Justizvollzug getrennt. Politischer Auftrag/Finanzierung nie mit redaktioneller Programmentscheidung vermischen.
-- `DELIVERY_FEASIBILITY`: länderübergreifende Staatsverträge/Gremien, unabhängige Rundfunk-/Medienaufsicht, technische Age-Assurance, Datenschutz, Förder-/Vergabekapazität, Polizei/Justiz, Bildungs-/Medienpädagogik.
-- `RESOURCE_FINANCING`: Beitrags-/Befreiungsmodelle, MDM/Landesförderung, Bürgermedien, Kino, GEMA-Pauschale, ggf. Digitalabgabe mit Kosten-/Verteilungs-/Additionalitätsprüfung; Mittelabfluss ≠ Medienvielfalt/outcome.
-- `SPATIAL_DISTRIBUTION`: Stadt/Land, lokale Medienmärkte, einkommensschwächere Haushalte, Unternehmen, Kinder/Jugendliche, ältere Menschen, Medienschaffende, mitteldeutsche Produktionswirtschaft.
-- `INTERNATIONAL_LEAKAGE`: Plattform-/Werbe-/Produktionsmärkte können grenzüberschreitend ausweichen; bei lokalen Förderungen Verlagerung/Substitution prüfen, nicht regionale Ausgabe als Netto-Wirkung setzen.
-- `ROBUSTNESS_STRESS_TEST`: Werbemarkteinbruch, Plattformabhängigkeit, Haushalts-/Beitragsdruck, Desinformation/AI-content shocks, Datenschutz-/Cyberstörung, geringe Medienkompetenz-Reichweite, Konzentration/Single-point-of-failure nach Strukturreformen.
-- `REVERSIBILITY_LOCKIN`: Rundfunk-/Staatsvertragsstrukturen, Fusionen, Finanzierungs- und Plattformregeln hoch pfadgebunden; Förderpiloten/Bildungsformate leichter anpassbar.
-- `FALSIFICATION_TRIGGERS`: Nettoeinsparung + Vielfalt/Qualität/Regionalität; Beitragsinzidenz; Age-Assurance Fehler/Umgehung/Privacy; Jugendrisikoexposition; Kompetenzmessung; Medienjobs/-produktionen/Additonalität; Presseangriffe/Vollzug; Lokalmedienangebot/Nutzung; Förder-/Abgabeneffekte.
-- `LIFECYCLE_TRACEABILITY`: Wahlprogramm → Länder-/Bund-/EU-Advocacy bzw. Staatsvertrag/Landesgesetz/Förderung/Aufsicht → Implementierung → Nutzung/Medienmarkt/Informationszustand → Reality Check. ReformStV/MStV/JMStV 2025 sind inherited baseline, nicht künftige CDU-Leistung.
-- `VERSION_DELTA`: 0119, 0121–0124, 0127–0129, 0132, 0135 split/crosswalk; 0120 Kontext; 0124 Source-Restore; historische IDs/Text unverändert.
-- `COMMUNICATION_MEDIA_IMPACT`: besonders material bei Kosten-/Doppelungsframe des ÖRR, „Neutralität“, Desinformation/Fakeaccounts, Plattform-/Menschenwürde- und Pressefreiheitsframes; stets getrennt von Policy-Wirkung.
+30. `ST-CDU-PRIMARY-SPLIT-0114-WOMENS-SHELTERS-STATE-WOMENS-COUNCIL` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · MEDIUM**. Weiterentwicklung der Förderung kann Kapazität, Verlässlichkeit und Beratung stabilisieren, sofern bedarfs-/zugangsorientiert. GewHG §8 verlangt Länderanalyse zu Bestand, Bedarf, Geografie und Finanzierung — diese Baseline muss das Förderdesign steuern. Recheck Plätze/Abweisungen, Erreichbarkeit, Barrierefreiheit/Sprachzugang, Finanzierungssicherheit, Übergänge/Schutzoutcomes.
+
+`0114`-Passage gegen ein Genderverständnis über Sprachregelungen: **`CONTEXT_ONLY / COMMUNICATION_MEDIA_IMPACT = AMBIVALENT_POTENTIAL`**, kein eigenständiger effect-bearing Policy-Mechanismus in dieser Passage. Keine Maßnahmenrichtung aus der Position ableiten; erst konkrete Sprach-/Verwaltungsregel wäre eine eigene Unit.
+
+#### Sozialpolitik / Arbeit / Ausbildung
+
+31. `ST-CDU-PRIMARY-SPLIT-0115-LOW-BUREAUCRACY-BENEFIT-ACCESS` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · LOW**. Unkomplizierter, verständlicher Hilfenzugang kann Nichtinanspruchnahme, Fehler-/Zeitkosten und Belastung reduzieren, wenn Leistungsansprüche unverändert korrekt geprüft werden. Risiken: Vereinfachung ohne Schutz-/Missbrauchs-/Fehlerkontrolle, Digitalexklusion. Recheck Antrag→Leistung, Bearbeitungszeit, Fehler/Widerspruch, Nichtinanspruchnahme, Nutzergruppen, analog/digital.
+
+32. `ST-CDU-PRIMARY-SPLIT-0115-CHILD-OLD-AGE-POVERTY-GOAL` — **`REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON` · `OPEN` · NOT_ASSESSABLE**. Kinder-/Altersarmut aktiv bekämpfen ist ein materieller Zielraum, aber die Passage benennt hierfür keinen isolierten Wirkhebel. Armutsdefinition, Ursachen und Instrumente müssen getrennt werden; keine Richtung aus Zielworten.
+
+33. `ST-CDU-PRIMARY-SPLIT-0115-COUNSELLING-LANDSCAPE` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · LOW**. Qualifizierung und bedarfsgerechte Ausrichtung einer Beratungslandschaft kann Zugang und Falllösung verbessern; Beratung ersetzt fehlende materielle Leistungen nicht. Selbsthilfeorganisationen/-gruppen sind Delivery-/Betroffenenwissen, kein separat gezählter Wirkhebel. Recheck Erreichbarkeit/Wartezeit, Weitervermittlung/Falllösung, Nutzerfeedback, regionale/soziale Abdeckung, Kosten.
+
+34. `ST-CDU-PRIMARY-SPLIT-0116-VOCATIONAL-CENTRES-SCHOOLS-FUNDING` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · LOW**. Gezielte Förderung von Ausbildungszentren und berufsbildenden Schulen kann Kapazität/Qualität stabilisieren, wenn sie reale Engpässe trifft. Risiken: Fehldimensionierung bei Demografie/Fachverschiebung, Gebäude-/Ausstattungs-Lock-in, reine Inputmessung. Recheck Auslastung, Ausstattungs-/Personalengpass, Abschlüsse/Übergänge, Wege, Lifecycle-Kosten.
+
+35. `ST-CDU-PRIMARY-SPLIT-0116-CONTINUING-EDUCATION` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · LOW**. Berufliche Weiterbildung kann Anpassungs-/Beschäftigungsfähigkeit erhöhen, wenn sie arbeitsmarkt-/personengerecht ist. Risiken: Teilnahme statt Kompetenz/Joboutcome, Mitnahme, Zugangsungleichheit. Recheck Teilnahme nach Gruppen, Abschluss/Kompetenz, Beschäftigung/Lohn/Verbleib, Arbeitgebernachfrage, Kosten.
+
+36. `ST-CDU-PRIMARY-SPLIT-0116-SOCIAL-LABOUR-MARKET` — **`EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · MEDIUM**. Geförderte Beschäftigung kann Teilhabe, Tagesstruktur, Einkommen und Übergangschancen für arbeitsmarktferne Menschen erhöhen. Risiken: Lock-in, Creaming/Parking, Verdrängung regulärer Beschäftigung und Dauersubvention ohne Übergang. Die Passage nennt selbst Nicht-Konkurrenz zu bestehenden Unternehmen als Schutzbedingung. Recheck Additionalität, Übergänge in ungeförderte Arbeit, Jobqualität/Lohn, Dauer, Substitution, Zielgruppenverteilung.
+
+### 3. Batchweite #241-Systemprüfung pp. 29–32
+
+- `PROBLEM_REVIEW`: Erwerbs-/Integrationshemmnisse, Vereinbarkeit, Armut, Jugend-/Kinderschutz, Einsamkeit/Altersdiskriminierung, Teilhabebarrieren, Geschlechterungleichheit/Gewalt und Qualifizierungsengpässe getrennt. Reziprozitäts-, Familien-, Zusammenhalts- oder Gleichheitsframes sind **keine empirischen Problembefunde**.
+- `GOAL_REVIEW`: nachhaltige Erwerbsteilhabe; familien-/kindgerechte Wahlmöglichkeiten; Schutz/Partizipation; selbstbestimmte Teilhabe; Gewaltfreiheit; Gleichstellung; zugängliche soziale Dienste. `Bürgerarbeit`, Steuerbefreiung, Beratungsstelle, Beirat, Werkstatt oder Masterplan sind Instrument-/Zwischenachsen, keine Endziele.
+- `DNS_REFERENCE = EXACT_REGISTRY_CROSSWALK_PENDING`; keine Keyword-Zuordnung, kein Alignment als Kausalitätsbeweis.
+- `MATERIAL_OMISSIONS`: tatsächliche Ursachen von Nichtbeschäftigung; vorhandenes zumutbares Jobangebot; Betreuungs-/Jugendhilfe-/Beratungs-/Schutzkapazitäten; Regionalität/Barrierefreiheit; Einkommen/Steuerinzidenz; Teilhabe-/Übergänge WfbM→allgemeiner Arbeitsmarkt; Gewalt-/Schutzbedarfe; Fachkräfte-/Finanzierung; Demografie.
+- `POLICY_COHERENCE`: Grundsicherungsgeld/SGB-II-Bundespfad vs Landprogramme; Familien-/Kita-/Jugendhilfe; GrEStG; SGB VIII; SGB IX; GewHG/Istanbul-Konvention; Landes-/Kommunalzuständigkeiten. Advocacy/Plan/Förderung nie als bereits eingetretene Wirkung.
+- `DELIVERY_FEASIBILITY`: Jobcenter/BA/Kommunen, Kita-/Jugendhilfe-/Beratungspersonal, kommunale Beteiligungs-/Beauftragtenstrukturen, Eingliederungshilfe, Gewaltschutzkapazität, Bildungs-/Weiterbildungsanbieter und Haushaltsmittel.
+- `RESOURCE_FINANCING`: Steuerentlastung, Kinderwunsch/Kita/Jugend-/Sozial-/Gewaltschutzförderung, Ausbildungsinfrastruktur jeweils mit Additionalität, OPEX, Verteilung und Opportunitätskosten; Mittelabfluss ≠ Outcome.
+- `SPATIAL_DISTRIBUTION`: ländlich/städtisch; Alleinerziehende; Einkommen/Steuerpflicht; Kinder/Jugendliche; ältere Menschen; Menschen mit Behinderungen; Frauen; Care-Verantwortliche; arbeitsmarktferne Menschen. Nicht nur Durchschnittswerte.
+- `INTERNATIONAL_LEAKAGE`: überwiegend `NOT_APPLICABLE`; bei Arbeits-/Produktionsverdrängung als interregionale Substitution prüfen, nicht pauschal internationalisieren.
+- `ROBUSTNESS_STRESS_TEST`: Jobmangel/Konjunktur; Fachkräfteengpass; Haushaltskürzung; demografische Verschiebung; digitale Ausfälle; geringe Angebotsaufnahme; hohe regionale Streuung; Schutzkapazitätsengpass.
+- `REVERSIBILITY_LOCKIN`: dauerhafte Infrastruktur/Steuer-/Leistungs-/Sanktionsdesigns und institutionelle Sonderstrukturen stärker pfadbindend; Beratung/Piloten/temporäre Förderung leichter adaptierbar.
+- `FALSIFICATION_TRIGGERS`: ungeförderte Beschäftigungsübergänge/Jobqualität/Sanktionen/Substitution; Kita-/Jugend-/Beratungsreichweite/Qualität; Steuer-/Armutsinzidenz; Beteiligungs- und Beschwerde-Follow-up; Barrierefreiheit/Teilhabe/Arbeitsmarktübergänge; Gewaltschutz-Zugang/Abweisungen; Weiterbildung→Kompetenz/Job.
+- `LIFECYCLE_TRACEABILITY`: Wahlprogramm → Mandat → Landesprogramm/-haushalt/-recht bzw. Bundesinitiative → konkrete Implementierung → Nutzung/Capability → Outcome → Reality Check. Aktuelles Bundesrecht als inherited baseline, nicht als künftige Landesleistung.
+- `VERSION_DELTA`: `0100/0101/0103` Kontext statt Sammelwirkung; `0105/0106/0108/0110–0116` versionierte Splits; `0107` Kompetenzcrosswalk Bund/Land; historische IDs/Text immutable.
+- `COMMUNICATION_MEDIA_IMPACT`: material und getrennt bei Bürgerarbeits-Reziprozitätsframe sowie Gender-/Sprachposition; keine Kommunikationswirkung mit Maßnahmenwirkung saldieren.
 - `RECOMMENDATION = NOT_AVAILABLE_AT_SOURCE_UNIT_LEVEL`; keine WÖk-Option ohne exact APPROVED RecommendationRecord.
 - `STATE_GFA_ENAP_BENCHMARK = NOT_APPLICABLE` für Wahlprogramm-Source-Units.
-- `COVERAGE_SCOPE = ST_CDU_PRIMARY_SOURCE_P33_P36_FULL_SEMANTIC_RECONCILIATION`.
+- `COVERAGE_SCOPE = ST_CDU_PRIMARY_SOURCE_P29_P32_FULL_SEMANTIC_RECONCILIATION`.
 
-### 5. Recheck-Quellen
+### 4. Amtliche aktuelle Recheck-Quellen
 
-- MStV / aktuelle Rechtsgrundlagen: `https://www.die-medienanstalten.de/service/rechtsgrundlagen/medienstaatsvertrag/`
-- JMStV: `https://www.die-medienanstalten.de/service/rechtsgrundlagen/jugendmedienschutz-staatsvertrag/`
-- ReformStV/7. MÄStV: `https://rundfunkkommission.rlp.de/rundfunkkommission-der-laender/reformstaatsvertrag`
-- Rundfunkkommission FAQ Finanzierungsverfahren/KEF: `https://rundfunkkommission.rlp.de/rundfunkkommission-der-laender/reform-ard-zdf-deutschlandradio/faq-und-hinweise`
-- KEF 25. Bericht / Beitragsempfehlung 20.02.2026: `https://kef-online.de/presse/detail/kef-empfiehlt-deutlich-geringere-anhebung-des-rundfunkbeitrags`
-- BVerfG 23.07.2025 `1 BvR 2578/24`: `https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2025/07/rs20250723_1bvr257824.html`
-- GG Art.5: `https://www.gesetze-im-internet.de/gg/art_5.html`
-- DSA Art.28: `https://eur-lex.europa.eu/eli/reg/2022/2065/oj/deu`
-- EU Minderjährigenschutz/Age Assurance: `https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-protection-minors` und `https://digital-strategy.ec.europa.eu/en/factpages/blueprint-age-verification-solution-help-protect-minors-online`
-- UrhG §44b: `https://www.gesetze-im-internet.de/urhg/__44b.html`
-- GEMA Länder-Pauschalmodelle: `https://www.gema.de/de/musiknutzer/ehrenamtspauschalen`
+- Bundesagentur für Arbeit — Grundsicherungsgeld seit 01.07.2026 / Arbeitspflichten: `https://www.arbeitsagentur.de/grundsicherung-loest-buergergeld-ab` und `https://www.arbeitsagentur.de/grundsicherung/pflichten-verstehen-und-beachten/rechte-pflichten-minderungen`
+- GG Art. 105: `https://www.gesetze-im-internet.de/gg/art_105.html`
+- GrEStG §3: `https://www.gesetze-im-internet.de/grestg_1983/__3.html`
+- SGB VIII §11 Jugendarbeit: `https://www.gesetze-im-internet.de/sgb_8/__11.html`
+- SGB VIII §8a Schutzauftrag: `https://www.gesetze-im-internet.de/sgb_8/__8a.html`
+- SGB IX, u.a. Werkstätten/Inklusionsbetriebe: `https://www.gesetze-im-internet.de/sgb_9_2018/`
+- Gewalthilfegesetz: `https://www.gesetze-im-internet.de/gewhg/` ; §8 Länder-Bedarfs-/Entwicklungsplanung: `https://www.gesetze-im-internet.de/gewhg/__8.html`
 
-### 6. Checkpoint
+### 5. Checkpoint
 
-`ST_CDU_PRIMARY_PARITY_P33_P36 = PASS_SEGMENT`
+`ST_CDU_PRIMARY_PARITY_P29_P32 = PASS_SEGMENT`
 
-`ST_CDU_P33_P36_NEW_OR_SPLIT_TERMINAL = PASS_26`
+`ST_CDU_P29_P32_NEW_OR_SPLIT_TERMINAL = PASS_36`
 
-`ST_CDU_P33_P36_UNRESOLVED_SOURCE_GAPS = 0`
+`ST_CDU_P29_P32_UNRESOLVED_SOURCE_GAPS = 0`
 
 `ST_CDU_PRIMARY_SOURCE_PARITY = NOT_YET_FULL_PROGRAMME`
 
@@ -158,6 +173,6 @@ Der anschließende Satz zur Plattformverantwortung/Menschenwürde ist **`CONTEXT
 
 `denominator_status = NOT_FROZEN_PENDING_FULL_PRIMARY_SOURCE_PARITY`
 
-Keine Hochrechnung aus 344 + Child-/Gap-Zahlen. Keine öffentliche Count-Mutation. Kein `ST_CDU_*_FACH_COMPLETE`.
+**Keine** Hochrechnung `344 + shards`, keine öffentliche Count-Mutation, kein `ST_CDU_*_FACH_COMPLETE`. Die 36 sind versionierte Mechanism-Children/Additions dieses Segments und erst die vollständige Full-Programme-Segmentierungsregel entscheidet deren finalen Nennerbeitrag.
 
-**Nächster vollständiger Primary-Source-Parity-Shard: finale PDF S. 37–41, Beginn `Die innovativste Landwirtschaft in Europa`.** Dabei besonders 0136–0155 auf Kontext-vs-Maßnahme, NGT/Genom-Editing, autonome Landmaschinen/Drohnen, Boden-/Flächenschutz, Waldumbau/Stilllegungs-Advocacy, Wolf/Jagd, Tierhaltung/Standard-Moratorium sowie CO₂-/EU-1:1-Regelung passagegenau splitten und current-law/additionality prüfen.
+**Nächster source-bound Parity-Shard: finale offizielle PDF S. 33–36 (`Medien mit Vertrauen`)**, mit expliziter Trennung von institutioneller Rundfunk-/Medienpolitik, Jugendmedienschutz/Plattformpflichten, Pressefreiheit, Medienkompetenz, KI/Urheberrecht und bloßen politischen Frames.

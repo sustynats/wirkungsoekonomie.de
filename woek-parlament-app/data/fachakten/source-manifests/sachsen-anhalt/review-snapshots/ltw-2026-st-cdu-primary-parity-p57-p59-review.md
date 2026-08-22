@@ -1,180 +1,137 @@
-## WÖk CDU Primary-Source-Parity + Editorial-v2+ — final official PDF pp.60–62 fully reconciled
+## WÖk CDU Primary-Source-Parity + Editorial-v2+ — final official PDF pp. 57–59 fully reconciled; restore gap `0222` CLOSED
 
-Fortsetzung des document-wide Reaudits nach `ST_CDU_PRIMARY_PARITY_P57_P59 = PASS_SEGMENT`. Dieser Batch prüft die **finale parteioffizielle Beschlussfassung** source-bound gegen das historische Release-1-Register; `344` bleibt ausdrücklich nur Working-Baseline und wird nicht als Nenner fortgeschrieben.
+Continuation after `ST_CDU_PRIMARY_PARITY_P54_P56 = PASS_SEGMENT`. Before this write I re-read current #234/#241/PR #257, re-opened the final official CDU PDF and checked **all effect-bearing passages on pp.57–59** against the immutable Release-1 working register. The historical 344 records remain history/working baseline only; **no authoritative denominator is frozen**.
 
-**Primärquelle:** CDU Sachsen-Anhalt, finales Regierungsprogramm 2026–2031, `https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf` — Mobilitätsabschnitt pp.60–62. Der final indexierte Text enthält u.a. das Straßen-/Schienennetz-Portfolio, Verkehrsmanagement, Planungsbeschleunigung, Technologie-/Antriebspfade, Geschwindigkeits-/Umweltzonenpositionen, ÖPNV/Sachsen-Anhalt-Takt und Deutschlandticket.
+### Source / current-law baseline
 
-**Historische Working-Baseline:** `woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-cdu-zusagen.md`, blob `6e8c53392d76e9847ee3028d241a988c12b3d2fb`; historische IDs/Text bleiben unverändert.
+- final party source: `https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf`, adopted 13.06.2026
+- historical CDU working register: `woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-cdu-zusagen.md`, Git blob `6e8c53392d76e9847ee3028d241a988c12b3d2fb`; IDs/text immutable
+- **0222 restore:** final p57–58 source completes the truncated Release-1 sentence: AI is only a supportive tool under human decision responsibility and constitutional rule-of-law principles, especially judicial independence, law/fundamental-rights binding, and a binding justice AI-governance framework.
+- current e-file baseline: Sachsen-Anhalt has already moved additional court branches to real electronic case files in 2026, e.g. the full administrative jurisdiction by 20.02.2026 and labour jurisdiction by 29.06.2026. Therefore `full electronic file` is partly an **inherited rollout/lifecycle**, not a zero-baseline future achievement. Official current Land sources: `https://mj.sachsen-anhalt.de/aktuelles/pressemitteilungen?cHash=798c3f9826bf54fd9b93999182f21dfa&tx_tsarssinclude_pi1%5Baction%5D=single&tx_tsarssinclude_pi1%5Bcontroller%5D=Base&tx_tsarssinclude_pi1%5Buid%5D=632018` and `https://mj.sachsen-anhalt.de/aktuelles/pressemitteilungen?cHash=d87a85e2c45be69ed750e33572cc7f29&tx_tsarssinclude_pi1%5Baction%5D=single&tx_tsarssinclude_pi1%5Bcontroller%5D=Base&tx_tsarssinclude_pi1%5Buid%5D=664512`
+- current AI-law guard from prior shards applies. Under the current AI-Act timetable, certain justice-related high-risk AI rules become applicable later; current implementation still must observe constitutional/judicial independence, data protection, due process, auditability and human responsibility. No later-law detail is backdated to 13.06.2026 party knowledge.
+- violence-support baseline: Gewalthilfegesetz has been in force since 28.02.2025; it explicitly targets adequate protection/advice/support and structured networking of the help system, with major entitlement provisions phased to 2032. Future Land shelter/advice/network effects must therefore be additional to that current framework. Official source: `https://www.gesetze-im-internet.de/gewhg/`
 
-**Relevante externe Prüfbaselines:** UBA zu Tempolimits/Tempo 30 (`https://www.umweltbundesamt.de/themen/verkehr/nachhaltige-mobilitaet/tempolimit`), UBA-Lebenszyklusvergleich alternative Antriebe (`https://www.umweltbundesamt.de/publikationen/analyse-der-umweltbilanz-von-kraftfahrzeugen`), UmwRG §2/§7 (`https://www.gesetze-im-internet.de/umwrg/__2.html`, `https://www.gesetze-im-internet.de/umwrg/__7.html`), aktueller bundesrechtlicher Finanzierungsrahmen des Deutschlandtickets 2026 als Additionality-/Kompetenzbaseline. Keine dieser Quellen ersetzt den finalen Programmtext; sie dienen nur der Wirkungs-/Rechts-/Additionality-Prüfung.
+### 1. Primary-source diff pp.57–59
 
-### 1. Primary-Source-Parity pp.60–62
-
-| Legacy | Klassifikation | source-bound Aktion |
+| Legacy | Parity | Treatment |
 |---|---|---|
-| `0226` Verbraucherschutz | `SAME` | ID unverändert; ein eigenständiger Mechanismus |
-| `0227` Technologiefeindlichkeit/Fahrverbote | `CONTEXT_ONLY` | politischer Frame/Einleitung; konkrete Regelungspfade stehen in `0232/0233`, daher kein zusätzlicher Effect-Count |
-| `0228` Mobilitätsangebot … „Wir werden“ | `TRUNCATED` | Ziel-/Summary-Parent erhalten; die danach in der finalen Quelle stehenden konkreten Infrastrukturpfade werden additiv restauriert |
-| `0229` Brückensanierungsplan + feste Elb-Querungen | `PARTIAL_PARENT` | bildet nur den Schluss des deutlich größeren Straßen-/Fernverkehrs-Bullets ab; zwei enthaltene Mechanismen versioniert splitten |
-| `0230` Verkehrsmanagementzentrale + digitale Ausspielung | `OVERMERGED` | zwei Children |
-| `0231` Planungsbeschleunigung/Präklusion/Stichtag/Mitwirkung/Verbandsklage | `OVERMERGED` | vier getrennte Rechts-/Delivery-Mechanismen |
-| `0232` Technologieoffenheit + Diesel/BEV/H₂/Biokraftstoffe | `OVERMERGED` | Technologieframe nicht saldieren; vier antriebsspezifische Children |
-| `0233` Autobahnlimit/Tempo 30/Umweltzonen | `OVERMERGED` | drei getrennte Regelungspfade |
-| `0234` Busse+Infrastruktur/Takt/Wartebereiche | `OVERMERGED` | drei Children |
-| `0235` SPNV/Takt/Deutschlandticket/ländlicher Nutzen | `OVERMERGED` | drei Children; ländlicher Mehrnutzen ohne Design fail-closed |
+| `0218` | `OVERMERGED` | accelerated proceedings/target times, justice digital infrastructure, court/prosecutor location retention and digital communication separated |
+| `0219` | `OVERMERGED` | recruitment outreach, training/workplace conditions, strategic personnel development, work-family compatibility and lateral experienced-practitioner entry separated |
+| `0220` | `SAME` | rural-lawyer start grant + 5-year location binding fully represented |
+| `0221` | `OVERMERGED` | e-file/e-inspection/media-break-free justice and generic regulation/norm-restraint path separated |
+| `0222` | `TRUNCATED` + `OVERMERGED` | Release-1 stops after `eingesetzt unter`; primary source restored through human responsibility/rule-of-law/judicial independence/fundamental-rights binding and mandatory AI-governance; split operational AI support from governance/safeguard mechanism |
+| `0223` | `OVERMERGED` | strengthen existing mediation/Schiedspersonen and overregional arbitration/Magdeburger-Recht location pathway separated |
+| `0224` | `OVERMERGED` | shelter/advice finance, central child-victim facility, aid-network evaluation/development and witness protection separated |
+| `0225` | `OVERMERGED` | peer/student legal-order engagement, justice-as-school-partner and democracy-education/Magdeburger-Recht programme separated |
+| `0226` | `SAME` | consumer protection + consumer-advice strengthening fully represented |
 
-**Bestätigte ABSENT-/Split-Restauration aus dem vollständigen Straßen-/Fernverkehrs-Bullet hinter `0228`:**
+No effect-bearing passage on pp.57–59 remains `ABSENT/TRUNCATED/OVERMERGED` without an explicit terminal treatment below.
 
-- `ST-CDU-PRIMARY-GAP-P60-A14-A143-TRANSPORT-PLANS`
-- `ST-CDU-PRIMARY-GAP-P60-A14-SIX-LANE`
-- `ST-CDU-PRIMARY-GAP-P60-A71-NORTH`
-- `ST-CDU-PRIMARY-GAP-P60-MAGDEBURG-EAST-RING`
-- `ST-CDU-PRIMARY-GAP-P60-ICE-REGIONAL-CENTRES`
-- `ST-CDU-PRIMARY-SPLIT-0229-BRIDGE-REHAB-PLAN`
-- `ST-CDU-PRIMARY-SPLIT-0229-FIXED-ELBE-CROSSINGS`
+### 2. Additive/split canonical mechanism records — 22/22 terminal
 
-Die finalen Source-Passagen sind damit für pp.60–62 vollständig gegen die Working-Baseline behandelt; historische Parents bleiben als Provenienzanker erhalten.
+#### Speed / access / court infrastructure — legacy 0218
 
-### 2. Terminale fachliche Entscheidungen — pp.60–62
+1. `ST-CDU-PRIMARY-SPLIT-0218-ACCELERATED-PROCEEDINGS-TARGET-TIMES` — `EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `MEDIUM`. **Key Finding:** clear case-type target times and suitable accelerated procedures can reduce delay and strengthen timely legal protection; speed pressure can also impair fact-finding, defence/hearing rights or increase correction/appeal burden. **Problem Review:** delay must be measured by procedure/court/cause, separating staffing, law, parties, experts and IT. **Goal:** timely **and fair/lawful** justice, not lowest duration. **Recheck:** duration/backlog, quality/reversal/appeal, hearing/defence safeguards, staff workload, group/case differences and recidivism/public-safety claims without over-attribution.
 
-#### `0226` — Verbraucherberatung/Schutz vor neuen Risiken
-`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · Evidenz `LOW`  
-**Key finding:** Niedrigschwellige, verlässliche Beratung kann Informationsasymmetrien, Fehlentscheidungen und Schäden reduzieren, wenn Reichweite, Aktualität und Qualität gesichert sind. **Problem Review:** neue digitale/finanzielle/vertragliche Risiken sind heterogen; bloß „neue Risiken“ ist keine Baseline. **Goal Review:** informierte, geschützte Verbraucher statt Beratungsangebot als Output. **Delivery:** Land/Förderung/Verbraucherzentralen; Personal und Finanzierung sind Engpässe. **Verteilung/Zeit:** besonders Menschen mit geringer Informations-/Digitalkompetenz; kurz- bis mittelfristig. **Grenzen:** diskriminierungsfreier Zugang, Datenschutz. **Falsifikation:** Reichweite nach Gruppen/Region, Wartezeit, Falllösung, Beschwerden/Schäden, Kompetenz-/Entscheidungsmaße.
+2. `ST-CDU-PRIMARY-SPLIT-0218-JUSTICE-DIGITAL-INFRASTRUCTURE` — `SOURCE_UNIT_RECLASSIFIED_VERSIONED` · `POSITIVE` · `MEDIUM`. Reliable interoperable digital infrastructure can reduce media breaks/search/transfer time and support remote work/access, but current 2026 e-file rollout is already an inherited baseline. Additionality lies in remaining branches/functions, interoperability, performance and resilience. **Risks:** cyber/outage/data-loss/vendor lock-in. **Recheck:** uptime/recovery, digital case-processing time, transfer/search error, cyber incidents, staff/user usability and lifecycle cost.
 
-#### `ST-CDU-PRIMARY-GAP-P60-A14-A143-TRANSPORT-PLANS` — laufende Autobahn-/Verkehrsplanprojekte beschleunigt fertigstellen
-`EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `LOW`  
-**Key finding:** Fertigstellung bereits weit fortgeschrittener Netzprojekte kann Erreichbarkeit, Netzschluss und Verlässlichkeit verbessern; zusätzliche Straßenkapazität erzeugt zugleich Flächen-, Lebenszyklus-, Verkehrsverlagerungs-, Emissions- und Folgekostenrisiken. **Problem:** konkrete Engpässe/Netzlücken je Projekt statt „Infrastruktur“ pauschal. **Ziel:** zuverlässige Erreichbarkeit bei minimalen System-/Umweltfolgen. **Delivery/Kompetenz:** Bund/Land/Planfeststellung/Baulastträger; Projektstatus und Finanzierung trennen. **Verteilung/Zeit:** Pendler, Logistik, Anrainer, Naturflächen; jahrzehntelange Lock-ins. **Grenzen:** Natur-/Artenschutz, Flächenverbrauch, Lärm/Gesundheit, Rechtskontrolle. **Falsifikation:** Reisezeit/Engpass, Verkehrsmenge/induzierter Verkehr, Unfall/Lärm, Flächenverbrauch, THG/Lifecycle, Bau-/Folgekosten.
+3. `ST-CDU-PRIMARY-SPLIT-0218-COURT-PROSECUTOR-LOCATION-RETENTION` — `EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `LOW`. Retaining sites can preserve physical access, local professional ecosystems and resilience, particularly in rural areas. A blanket site freeze can also lock in underused buildings/staff fragmentation and limit service redesign. **Goal Review:** equal practical access, not site count. **Recheck:** travel/access, caseload/utilisation, staffing, delay, building/OPEX, digital alternatives and vulnerable/non-digital users.
 
-#### `ST-CDU-PRIMARY-GAP-P60-A14-SIX-LANE` — sechsspuriger A14-Ausbau belasteter Abschnitte
-`EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `LOW`  
-**Key finding:** Kapazitätsausbau kann lokale Spitzenengpässe reduzieren, ist aber ohne Korridor-/Nachfrageanalyse nicht als dauerhafte Stau- oder Wohlfahrtslösung belegt; induzierter Verkehr, Flächenversiegelung und Emissions-/Lärmlock-in sind materiell. **Problem:** nachzuweisen sind Engpassdauer, Nachfrageursache und Alternativen. **Ziel:** robuste Kapazität/Erreichbarkeit, nicht Fahrstreifenzahl. **Delivery:** Bundesautobahn/Bund; Land primär Advocacy. **Verteilung/Zeit:** Nutzer vs. Anrainer/Natur, langfristig. **Grenzen/Falsifikation:** wie oben plus Verkehrsnachfrage nach Ausbau, Modal Split, Lebenszykluskosten.
+4. `ST-CDU-PRIMARY-SPLIT-0218-DIGITAL-JUSTICE-COMMUNICATION` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `MEDIUM`. Secure accessible digital communication can lower time/geographic access costs for parties/professionals. Protection requires authentic service/identity, confidentiality, legal proof, accessibility and practical non-digital fallback. **Recheck:** successful transactions, errors/rejections, time/cost, accessibility, incidents and subgroup access.
 
-#### `ST-CDU-PRIMARY-GAP-P60-A71-NORTH` — Nordverlängerung A71 nach Bernburg
-`EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `LOW`  
-**Key finding:** Neue Netzverbindung kann regionale Erreichbarkeit verbessern, schafft aber besonders starken Neubau-/Flächen-/Biodiversitäts- und Pfadabhängigkeitshebel. **Problem Review:** belastbare Origin-Destination-/Engpassbaseline fehlt im Wahlprogramm. **Goal Review:** regionale Erreichbarkeit und Resilienz; Neubautrasse ist Instrument. **Delivery:** Bund/BVWP/Planung, Land als Initiator/Advocacy. **Verteilung:** betroffene Korridore, Kommunen, Landwirtschaft/Natur; sehr langfristig. **Grenzen:** Schutzgebiete, Flächen/Nichtkompensation, Wirtschaftlichkeit. **Falsifikation:** Nutzen-Kosten, Zeitgewinn, Verkehrsverlagerung, Natur-/Flächeneffekt, Folgekosten.
+#### Justice workforce — legacy 0219
 
-#### `ST-CDU-PRIMARY-GAP-P60-MAGDEBURG-EAST-RING` — Autobahnring östlich Magdeburg schließen
-`EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `LOW`  
-**Key finding:** Ein Ring kann Durchgangsverkehr verlagern und städtische Abschnitte entlasten, zugleich neue Verkehrsströme, Flächenverbrauch und Anrainerbelastungen an anderer Stelle erzeugen. **Problem:** aktuelle Durchgangsverkehrs-/Netzengpassdaten und Alternativen fehlen. **Ziel:** Netto-Entlastung/Erreichbarkeit statt Ringvollständigkeit. **Delivery:** Bund/Land/kommunale Schnittstellen. **Verteilung:** Innenstadtentlastung vs. neue Korridorbelastung. **Falsifikation:** Verkehrsverlagerung, Lärm/Luft, Reisezeit, Unfälle, Fläche, Kosten.
+5. `ST-CDU-PRIMARY-SPLIT-0219-JUSTICE-RECRUITMENT-OUTREACH` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`. Broader evidence-based recruitment outreach, including suitable social-media channels, can enlarge candidate awareness/pools when vacancies truly constrain capacity. Campaign reach is output, not staffing outcome. **Recheck:** qualified applications, hires, cost per hire, diversity, vacancy duration and retention.
 
-#### `ST-CDU-PRIMARY-GAP-P60-ICE-REGIONAL-CENTRES` — Fernverkehrsanbindung der Ober-/Mittelzentren und ICE-Anschluss Magdeburg
-`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`  
-**Key finding:** Bessere Fernverkehrsanbindung kann Erreichbarkeit, Standortzugang und Verlagerung zum Schienenverkehr unterstützen; Wirkung hängt an Fahrplan, Infrastruktur, Nachfrage und DB-/Bundesentscheidungen. **Problem:** tatsächliche Erreichbarkeits-/Taktlücken je Zentrum. **Ziel:** verlässliche Reisezeit/Netzzugang, nicht Label ICE. **Delivery:** Bund/DB/InfraGO/EVU plus Länderbestellung nur im SPNV. **Verteilung/Zeit:** Zentren und ländliche Zubringer; mittel-/langfristig. **Grenzen:** Investitions-/Flächenfolgen. **Falsifikation:** Takt, Reisezeit, Pünktlichkeit, Umstiege, Fahrgastzahl, Modal Shift.
+6. `ST-CDU-PRIMARY-SPLIT-0219-TRAINING-WORKPLACE-CONDITIONS-EQUIPMENT` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `MEDIUM`. High-quality training, modern tools and workable conditions can improve productivity, quality and retention if they address actual bottlenecks. Risks: equipment spend without workflow/training change. **Recheck:** training competence, vacancies/absence/turnover, staff satisfaction, case quality/time and utilisation of equipment.
 
-#### `ST-CDU-PRIMARY-SPLIT-0229-BRIDGE-REHAB-PLAN` — landesweiter Brückensanierungsplan
-`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `MEDIUM`  
-**Key finding:** Zustandsbasierte Sanierungspriorisierung kann Sicherheit, Verfügbarkeit und Erhalt vor teurem Ersatzneubau verbessern. **Problem:** alternde/limitierte Bauwerke müssen objektbezogen priorisiert werden. **Ziel:** sichere verfügbare Netze über Lebenszyklus. **Delivery:** je Straßenklasse Bund/Land/Kommune; Zustandsdaten, Planungs-/Baukapazität und Finanzierung erforderlich. **Verteilung:** Nutzer/Logistik/Anrainer; mittel-/langfristig. **Grenzen:** Sicherheit, Haushalts-/Lifecycle-Transparenz. **Falsifikation:** Zustandsnoten, Sperrungen, Traglast, Sanierungsstau, Kosten/Zeit.
+7. `ST-CDU-PRIMARY-SPLIT-0219-STRATEGIC-PERSONNEL-DEVELOPMENT-CAREER-PATHS` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`. Transparent career/specialisation paths can improve retention, skills matching and succession. Risks include bureaucracy, narrow promotion metrics and unequal access. **Recheck:** internal mobility/qualification, turnover, vacancy succession, promotion distribution and skill gaps.
 
-#### `ST-CDU-PRIMARY-SPLIT-0229-FIXED-ELBE-CROSSINGS` — weitere feste Elb-Querungen
-`EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `LOW`  
-**Key finding:** Zusätzliche Querungen können Netzresilienz und Reisewege verbessern, sind ohne Standort-/Nachfrage-/Umweltprüfung aber kein generisch positiver Hebel. **Problem:** konkrete fehlende Redundanz/Wege-/Kapazitätslücke. **Ziel:** resiliente Querungskapazität. **Delivery:** Baulast/Planfeststellung je Projekt. **Verteilung:** Nutzergewinne vs. lokale Natur-/Anrainerkosten. **Grenzen:** Elbe-/Auen-/Natura-/Hochwasserraum, Flächen, Wirtschaftlichkeit. **Falsifikation:** Umweg-/Ausfalltage, Nachfrage, Natur-/Hochwasserwirkung, Kosten.
+8. `ST-CDU-PRIMARY-SPLIT-0219-JUSTICE-WORK-FAMILY-COMPATIBILITY` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`. Better work-family compatibility can expand/retain skilled workforce and reduce involuntary exits/part-time constraints if operational staffing allows. **Recheck:** retention/absence, working-time uptake, career progression by care responsibilities/gender and service coverage.
 
-#### `ST-CDU-PRIMARY-SPLIT-0230-TRAFFIC-DATA-CENTRE` — landesweite Verkehrsmanagementzentrale / Datenzusammenführung
-`EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `LOW`  
-**Key finding:** Verkehrsübergreifende Echtzeitdaten können Störungsmanagement und Netzsteuerung verbessern; Zentralisierung schafft Datenschutz-, Interoperabilitäts-, Cyber- und Single-Point-of-Failure-Risiken. **Problem:** fragmentierte Leitstellen-/Datenlage konkret nachweisen. **Ziel:** bessere Netzperformance und Information, nicht Datenzentralisierung selbst. **Delivery:** Land, Kreise, Verkehrsunternehmen; Datenverträge/Standards/Resilienz nötig. **Verteilung:** alle Verkehrsteilnehmer, digital Ausgeschlossene beachten. **Grenzen:** Datenschutz, IT-Sicherheit, Zweckbindung. **Falsifikation:** Datenabdeckung/Latenz, Störungsreaktion, Reisezeit/Pünktlichkeit, Ausfälle/Cybervorfälle.
+9. `ST-CDU-PRIMARY-SPLIT-0219-EXPERIENCED-PRACTITIONER-LATERAL-ENTRY` — `EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `LOW`. Easier qualified lateral entry can add experience and relieve shortages; weak suitability/conflict/independence/transition standards can create quality or legitimacy risks. **Recheck:** hires, prior expertise, qualification/induction, retention, performance and conflict/recusal safeguards.
 
-#### `ST-CDU-PRIMARY-SPLIT-0230-TELEMATICS-TRAVEL-INFO` — Hinweise über Navigation/INSA/Radio
-`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`  
-**Key finding:** Multikanal-Echtzeitinformation kann Fehlfahrten, Unsicherheit und Störungsfolgen reduzieren, sofern Daten korrekt und barrierefrei zugänglich sind. **Problem:** Informationsfriktion/Qualität. **Ziel:** verlässliche Entscheidungen/Reiseplanung. **Delivery:** offene Schnittstellen + Anbieter. **Verteilung:** inklusive analoger/barrierefreier Kanäle. **Falsifikation:** Aktualität, Fehlmeldungen, Nutzungsquote, Reisezeit-/Anschlusswirkung.
+`0220` remains source-parity `SAME` and terminal `EDITORIAL_V2_PLUS_APPROVED · AMBIVALENT · LOW`: a targeted start grant with 5-year location binding can reduce initial rural practice-entry costs and improve legal-service supply, but may generate deadweight, temporary relocation or subsidise areas without real unmet need. Recheck lawyer/population/case-access baseline, actual new practices, 5-year survival, waiting/travel, service scope and cost per additional durable practice.
 
-#### `ST-CDU-PRIMARY-SPLIT-0231-FEDERAL-PLANNING-ACCELERATION` — Planungsbeschleunigungsgesetz auf Bundesebene
-`EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `LOW`  
-**Key finding:** Verfahrensvereinfachung kann Projektlaufzeiten senken, wenn Engpässe tatsächlich im Verfahren liegen; pauschale Frist-/Rechtsschutzverkürzung kann Fehler, Nacharbeit und Akzeptanz-/Naturfolgen erhöhen. **Problem:** Zeitanteile nach Planung, Personal, Genehmigung, Klage, Finanzierung und Bau trennen. **Ziel:** schnelle **und rechtssichere** Infrastruktur. **Delivery:** Bundesgesetzgeber; Land nur Initiative/Advocacy. **Grenzen:** effektiver Rechtsschutz, Umwelt-/Beteiligungsrecht. **Falsifikation:** Verfahrenszeit je Stufe, Klagequote/-dauer, Heilungsverfahren, Personalengpässe, Bauzeit.
+#### Digital justice / norm restraint — legacy 0221
 
-#### `ST-CDU-PRIMARY-SPLIT-0231-PRECLUSION-CUTOFF` — Präklusion/Stichtagsregelung
-`EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `MEDIUM`  
-**Key finding:** Frühzeitige Bündelung von Einwendungen kann Verfahren strukturieren, darf aber materiell relevante spätere Informationen und unions-/völkerrechtlich gebotenen Rechtsschutz nicht unzulässig abschneiden. **Problem:** Verzögerung durch verspätete Einwendungen ist fallbezogen zu belegen. **Ziel:** berechenbare Verfahren bei materiell wirksamer Kontrolle. **Delivery:** Bundes-/EU-Rechtsrahmen. **Grenzen:** Aarhus-/EU-Zugang zu Gerichten, Verhältnismäßigkeit. **Falsifikation:** tatsächlicher Zeitgewinn, spätere neue Tatsachen, Rechtsfehler/Heilungen, Gerichtsentscheidungen.
+10. `ST-CDU-PRIMARY-SPLIT-0221-EFILE-EINSPECTION-MEDIA-BREAK-FREE-JUSTICE` — `SOURCE_UNIT_RECLASSIFIED_VERSIONED` · `POSITIVE` · `MEDIUM`. Full e-file/e-inspection and media-break-free processes can reduce handling/search/transfer time and expand access when secure, accessible and interoperable. Since Land e-file rollout is already materially under way in 2026, the programme is partly inherited lifecycle rather than a new start. **Recheck:** branch/function coverage, digital inspection access, cycle time/errors, uptime/cyber, accessibility and paper-shadow-process elimination.
 
-#### `ST-CDU-PRIMARY-SPLIT-0231-ACTIVE-PARTICIPATION-CONDITION` — Klagerechte an aktive Mitwirkung knüpfen
-`EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `MEDIUM`  
-**Key finding:** Eine Beteiligungsobliegenheit kann frühere Konfliktklärung fördern; ein blanket Ausschluss effektiven Rechtsschutzes wäre dagegen rechtlich hoch riskant und kann Fehler-/Umweltschutzkontrolle schwächen. Das geltende UmwRG kennt bereits differenzierte Beteiligungs-/Einwendungsregeln, aber keinen frei gestaltbaren landespolitischen Blankoscheck. **Delivery:** primär Bund/EU/Aarhus; Land nicht allein kompetent. **Grenzen:** effektiver Rechtsschutz, Umweltrecht, faire Beteiligung. **Falsifikation:** welche Verfahren tatsächlich verzögert werden, Beteiligungsmöglichkeiten, Gerichts-/EU-Rechtsprüfung, Fehlerheilung.
+11. `ST-CDU-PRIMARY-SPLIT-0221-REMOVE-SUPERFLUOUS-REGULATION-NORM-RESTRAINT` — `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON` · `OPEN` · `NOT_ASSESSABLE`. `Überflüssige Regularien abbauen` / new norms only where `really necessary` gives no norm, protection function, burden baseline or replacement. It is a rulemaking principle/frame, not an assessable direction until a concrete legal delta is identified.
 
-#### `ST-CDU-PRIMARY-SPLIT-0231-ABOLISH-ASSOCIATION-ACTION` — komplette Abschaffung der Verbandsklage
-`EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `MEDIUM`  
-**Key finding:** Weniger Verbandsrechtsbehelfe könnten einzelne Verfahren verkürzen; zugleich entfiele ein institutioneller Kontrollpfad für Umwelt-/Naturschutzrecht. §2 UmwRG und §64 BNatSchG verankern aktuell spezifische Verbandsrechtsbehelfe; unions-/Aarhus-Bindungen begrenzen die politische Umsetzbarkeit. **Problem:** kein Nachweis, dass Verbandsklagen der binding bottleneck der Gesamtverfahrensdauer sind. **Ziel:** rechtssichere Geschwindigkeit, nicht Klagezahl. **Delivery:** Bundes-/EU-/Völkerrechtsweg; Landesversprechen allein nicht umsetzbar. **Verteilung:** Vorhabenträger vs. Umwelt-/Anwohnerinteressen und künftige Generationen. **Grenzen:** Rechtsschutz/Nichtkompensation. **Falsifikation:** Zeitanteil Verbandsklagen, Erfolgs-/Fehlerquote, EU/Aarhus-Kompatibilität, Nacharbeit/Kosten.
+#### AI in justice — restored legacy 0222
 
-#### `ST-CDU-PRIMARY-SPLIT-0232-LOW-EMISSION-DIESEL-INCENTIVE` — Anreize für „emissionsarmen Diesel“
-`EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `MEDIUM`  
-**Key finding:** Neuere Diesel können lokale Schadstoffemissionen gegenüber Altflotten senken, bleiben aber fossil geprägt und erzeugen im Pkw-Straßenverkehr gegenüber direkter Elektrifizierung Energie-/THG-/Lock-in-Nachteile. **Problem:** Zielgröße muss Luftschadstoff, THG, Kosten oder Flottenerneuerung explizit trennen. **Ziel:** emissionsarme Mobilitätsleistung, nicht Antriebslabel. **Delivery:** wesentliche Steuer-/Flottenregeln Bund/EU; Landförderung begrenzt. **Grenzen:** Klima/Luft/Gesundheit. **Falsifikation:** reale g/km, Lebenszyklus-THG, Fahrleistung/Rebound, Flottenalter, Vollkosten.
+12. `ST-CDU-PRIMARY-SPLIT-0222-JUSTICE-AI-SUPPORTIVE-USE` — `EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `MEDIUM`. **Source Restore:** AI is explicitly only a supportive tool. It can reduce search/routine drafting/preprocessing time and support case management, but can import hallucination/data bias, unequal error, confidentiality and automation-deference risks. It must not displace judicial/legal human decision responsibility. **Recheck:** exact use cases, accuracy/errors by case/group, time saved, human override, appeal/reversal, confidentiality/security and model change/drift.
 
-#### `ST-CDU-PRIMARY-SPLIT-0232-BEV-INCENTIVE` — Anreize E-Mobilität
-`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `MEDIUM`  
-**Key finding:** Direkte batterieelektrische Nutzung ist im Straßenverkehr typischerweise energieeffizienter und über den Lebenszyklus klimagünstiger als Verbrenner-/H₂-/E-Fuel-Pkw; Nutzen hängt an Strommix, Fahrzeuggröße, Laufleistung und Ladeinfrastruktur. **Problem:** Dekarbonisierung/Luftbelastung/Importenergie getrennt. **Ziel:** emissions- und ressourceneffiziente Mobilität. **Delivery:** EU/Bund-Fahrzeugrahmen + Land/Lokal-Lade-/Flottenhebel. **Verteilung:** Anschaffungs-/Ladezugang beachten. **Grenzen:** Rohstoffe, Flächen, Stromnetz. **Falsifikation:** Lifecycle-THG, Strommix, Fahrzeuggröße, Ladeabdeckung, TCO, Fahrleistung.
+13. `ST-CDU-PRIMARY-SPLIT-0222-BINDING-JUSTICE-AI-GOVERNANCE` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `MEDIUM`. A binding governance framework grounded in judicial independence, legality/fundamental rights and human responsibility can reduce uncontrolled AI-deployment risk if it has enforceable scope, procurement/model requirements, risk classification, documentation/audit, data/cyber rules, human-review/appeal and shutdown/incident processes. Governance document publication is output, not safe outcomes. **Recheck:** covered systems, audits/incidents, prohibited/paused uses, overrides, complaints/remedies, procurement controls and compliance with current AI/constitutional law.
 
-#### `ST-CDU-PRIMARY-SPLIT-0232-HYDROGEN-DRIVE-INCENTIVE` — Anreize Wasserstoffantriebe
-`EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `MEDIUM`  
-**Key finding:** H₂ kann in einzelnen schwer elektrifizierbaren Nutzfahrzeug-/Spezialanwendungen sinnvoll sein, ist für Pkw gegenüber direkter Batterieelektrifizierung deutlich energieineffizienter; Klimawirkung hängt vollständig an H₂-Herkunft/Additionalität. **Problem/Ziel:** Nutzungskontext statt pauschale Technologieoffenheit. **Delivery:** Infrastruktur, H₂-Verfügbarkeit, EU/Bund-Regeln. **Grenzen:** erneuerbare Stromknappheit, Lifecycle, Kosten. **Falsifikation:** H₂-Herkunft, kWh/km, Lifecycle-THG, TCO, Auslastung Infrastruktur.
+`ST_CDU_RESTORE_GAP_0222 = CLOSED_PRIMARY_SOURCE_FULL_TEXT`
 
-#### `ST-CDU-PRIMARY-SPLIT-0232-BIOFUEL-INCENTIVE` — Anreize Biokraftstoffantriebe
-`EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `MEDIUM`  
-**Key finding:** Nachhaltige Rest-/Abfallpfade können fossile Kraftstoffe teilweise ersetzen; pflanzenbasierte/knappe Biokraftstoffpfade tragen Flächen-, indirekte Landnutzungs-, Biodiversitäts- und Opportunitätsrisiken. **Problem/Ziel:** schwer elektrifizierbare Restanwendungen und Feedstock-Additionalität explizit. **Delivery:** primär EU/Bund-Quoten/Nachhaltigkeitsregeln. **Grenzen:** Fläche/Nahrung/Biodiversität/Klima. **Falsifikation:** Feedstock, ILUC/Lifecycle-THG, verfügbare nachhaltige Mengen, Einsatzkonkurrenz.
+#### ADR / arbitration — legacy 0223
 
-#### `ST-CDU-PRIMARY-SPLIT-0233-NO-AUTOBAHN-SPEEDLIMIT-EXPANSION` — zusätzliche Autobahn-Tempolimits ablehnen
-`EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `MEDIUM`  
-**Key finding:** Der Frame „unbegründet“ ersetzt keine Problembaseline. UBA/BASt-Befunde zeigen, dass Tempolimits in geeigneter Ausgestaltung THG, Schadstoffe und schwere Unfallfolgen mindern können; gegenläufig stehen individuelle Reisezeit-/Freiheitspräferenzen. Eine pauschale Ablehnung kann deshalb reale Schutzpotenziale blockieren. **Goal Review:** sichere, emissionsärmere, verlässliche Mobilität statt Geschwindigkeit als Endziel. **Delivery:** bundesrechtlicher Rahmen. **Grenzen:** Gesundheit/Sicherheit/Klima. **Falsifikation:** Unfälle/Schwere, Emissionen, Lärm, Reisezeiten, Verkehrsverlagerung.
+14. `ST-CDU-PRIMARY-SPLIT-0223-MEDIATION-SCHIEDSPERSONEN-STRENGTHEN` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `MEDIUM`. Accessible voluntary mediation/conciliation can resolve suitable conflicts faster/cheaper and reduce court load when parties are informed and power asymmetry/rights safeguards are adequate. It must not pressure vulnerable parties away from judicial protection. **Recheck:** eligible/use/settlement, durability, time/cost, user fairness, subgroup outcomes and court-load substitution/additionality.
 
-#### `ST-CDU-PRIMARY-SPLIT-0233-NO-TEMPO30-MAIN-ROAD-EXPANSION` — Tempo-30-Ausweitung auf innerörtlichen Durchgangsstraßen ablehnen
-`EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `MEDIUM`  
-**Key finding:** Tempo 30 auf Hauptverkehrsstraßen kann laut UBA insbesondere Lärm und Sicherheit verbessern; Luft-/CO₂-Effekte sind ortsabhängig. Ein generelles Nein ohne lokale Lärm-/Unfall-/Luftbaseline ist daher ebenso wenig evidenzbasiert wie ein undifferenziertes flächiges Ja. **Delivery:** StVO + kommunale Anordnungsspielräume. **Verteilung:** Durchfahrende vs. Anwohner/Fuß-/Radverkehr. **Grenzen:** Gesundheit/Sicherheit. **Falsifikation:** Lärm, Unfälle, Reisezeit, Verlagerung in Nebenstraßen, Luftschadstoffe.
+15. `ST-CDU-PRIMARY-SPLIT-0223-OVERREGIONAL-ARBITRATION-MAGDEBURG-LAW-LOCATION` — `EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `LOW`. Building an overregional arbitration capability could generate specialist legal services/location value and faster commercial dispute resolution; `Magdeburger Recht` branding or impulse alone does not create demand and arbitration can have transparency/access/cost concerns. **Recheck:** exact institutional/legal design, case demand, users/cost/time, enforceability, location value and conflicts with ordinary-court access.
 
-#### `ST-CDU-PRIMARY-SPLIT-0233-ABOLISH-ENVIRONMENTAL-ZONES` — „überholte“ Umweltzonen aufheben
-`EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `LOW`  
-**Key finding:** Die Wirkung bestehender Umweltzonen hängt heute stark von Flottenstand und lokaler Luftqualität ab; „überholt“ muss zonenspezifisch gemessen werden. Aufhebung kann Bürokratie reduzieren, darf aber bei verbleibender Grenzwert-/Hotspotwirkung Luftreinhalteziele nicht verschlechtern. **Delivery:** kommunale Luftreinhalte-/Straßenverkehrsentscheidungen im Rechtsrahmen. **Verteilung:** Anwohner mit hoher Exposition vs. Fahrzeughalter. **Falsifikation:** NO₂/PM vor/nach, Flottenzusammensetzung, Grenzwertnähe, Verlagerung, Verwaltungskosten.
+#### Victim / violence / witness protection — legacy 0224
 
-#### `ST-CDU-PRIMARY-SPLIT-0234-CLEAN-BUSES-INFRA` — umweltfreundliche Busse + Infrastruktur fördern
-`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `MEDIUM`  
-**Key finding:** Niedrig-/Nullemissionsbusse können lokale Luft-/Lärmbelastung und bei sauberer Energie auch Lifecycle-THG senken; Fahrzeug-/Lade-/Depot-/Netzdesign entscheidet über Realwirkung. **Problem:** Flottenalter, Emissionen und Betriebskosten. **Ziel:** zuverlässige emissionsarme Verkehrsleistung. **Delivery:** Land/Aufgabenträger/Verkehrsunternehmen, Beschaffung + Infrastruktur synchron. **Verteilung:** besonders belastete Korridore; mittelfristig. **Grenzen:** Rohstoffe/Netz/Finanzierung. **Falsifikation:** Ausfallquote, Energie/km, Lifecycle-THG, TCO, Lärm/Luft, Fahrgastangebot.
+16. `ST-CDU-PRIMARY-SPLIT-0224-COUNSELLING-WOMENS-SHELTER-RELIABLE-FINANCE` — `SOURCE_UNIT_RECLASSIFIED_VERSIONED` · `POSITIVE` · `MEDIUM`. Reliable needs-based finance can reduce capacity/continuity gaps for counselling/shelters. **Current baseline:** GewHG already requires development of an adequate support system and phases major entitlement duties to 2032, so Land effect is Additionality/implementation quality, not inventing the protection objective. **Recheck:** places/availability/denials, wait, accessibility/language/disability access, stable staffing/finance and safety/follow-up outcomes.
 
-#### `ST-CDU-PRIMARY-SPLIT-0234-EXPAND-SAXONY-ANHALT-TAKT` — Sachsen-Anhalt-Takt erweitern
-`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`  
-**Key finding:** Dichter/verlässlicher Takt kann Erreichbarkeit und ÖPNV-Nutzung erhöhen; Wirkung entsteht nur mit Nachfragepassung, Anschlusssicherheit, Fahrzeug-/Personal-/Infrastrukturkapazität. **Problem:** konkrete Angebots-/Anschlusslücken je Region. **Ziel:** reale Erreichbarkeit. **Delivery:** Land/NASA/Aufgabenträger/EVU. **Verteilung:** ländliche Räume/kein Pkw-Zugang besonders relevant. **Falsifikation:** Takt/Pünktlichkeit, Anschlussverlust, Fahrgäste, Modal Shift, Kosten/Fahrgastkm.
+17. `ST-CDU-PRIMARY-SPLIT-0224-CENTRAL-CHILD-VICTIM-ONE-STOP-FACILITY` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `MEDIUM`. Coordinated child/youth victim facilities can reduce repeated travel/interviews/examinations and secondary burden if justice, health, child-protection and specialist support are integrated with evidentiary/rights standards. **Recheck:** number of interviews/exams/locations, waiting, case coordination, child/family experience, protection/evidence quality and geographic access.
 
-#### `ST-CDU-PRIMARY-SPLIT-0234-WEATHERPROOF-WAITING` — witterungsunabhängige Aufenthaltsmöglichkeiten
-`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`  
-**Key finding:** Wetterschutz kann Zugänglichkeit, Komfort und Resilienz bei Störungen erhöhen, besonders für ältere/kranke/mobilitätseingeschränkte Menschen. **Problem:** belastete Haltestellen/Umsteigeorte priorisieren. **Ziel:** nutzbare, sichere Mobilitätskette. **Delivery:** Stationseigentümer/Kommunen/DB/Verkehrsunternehmen. **Grenzen:** Barrierefreiheit/Sicherheit. **Falsifikation:** Abdeckung priorisierter Standorte, Nutzbarkeit, Beschwerden, Warte-/Störungsexposition.
+18. `ST-CDU-PRIMARY-SPLIT-0224-DOMESTIC-VIOLENCE-HELP-NETWORK-EVALUATE-DEVELOP` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `MEDIUM`. Evaluating and improving the help-network can identify handoff/capacity failures and strengthen continuity if evidence changes design. Current GewHG explicitly treats structured networking as system function; evaluation is output until changes occur. **Recheck:** referrals/handoffs, drop-outs/gaps, time-to-help, repeat violence/safety where ethically/validly measurable, network changes and unmet demand.
 
-#### `ST-CDU-PRIMARY-SPLIT-0235-SPNV-NETWORK-TAKT-CENTRES` — SPNV stärken / Ober- und Mittelzentren verbinden
-`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `MEDIUM`  
-**Key finding:** Verlässlicher SPNV zwischen Zentren kann Erreichbarkeit, Teilhabe und Verlagerung vom Pkw unterstützen; Infrastruktur-/Personalengpässe und Nachfrage bestimmen den Grenznutzen. **Problem:** konkrete Reisezeit-/Takt-/Pünktlichkeitslücken. **Ziel:** verlässliche Zugänglichkeit. **Delivery:** Land/NASA/EVU, DB InfraGO bei Netz. **Verteilung:** Pendler, Jugendliche, ältere Menschen, ländliche Zubringer. **Falsifikation:** Takt, Pünktlichkeit, Fahrgäste, Reisezeit, Modal Split, Zugänglichkeit.
+19. `ST-CDU-PRIMARY-SPLIT-0224-WITNESS-PROTECTION` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `MEDIUM`. Better risk-based witness protection can reduce intimidation/retaliation and protect justice-system participation. Exact operational measures are security-sensitive; public evaluation should avoid exposing tactics. **Recheck:** access/response timeliness, protection continuity, intimidation/withdrawal incidents and participant safety at aggregate level; proportionality/rights safeguards remain binding.
 
-#### `ST-CDU-PRIMARY-SPLIT-0235-RETAIN-DEUTSCHLANDTICKET` — Deutschlandticket erhalten
-`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `MEDIUM`  
-**Key finding:** Einheitlicher Tarif senkt Zugangs-/Komplexitätsbarrieren; der Bund sichert 2026 weiterhin Finanzierungsmittel, sodass ein künftiges Landesversprechen Additionalität und Finanzierungsperiode sauber ausweisen muss. Tarif allein ersetzt kein Angebot. **Problem:** Preis-/Tarifkomplexität und ÖPNV-Zugang getrennt. **Ziel:** bezahlbare einfache Mobilität. **Delivery:** Bund/Länder/Aufgabenträger; dauerhafte Finanzierung/Preisdesign. **Verteilung:** Nutzen hängt an vorhandener ÖPNV-Dichte. **Falsifikation:** Nutzung nach Region/Einkommen, Angebotskilometer, Preis, Einnahmeausgleich, Modal Shift.
+#### Youth legal/democracy education — legacy 0225
 
-#### `ST-CDU-PRIMARY-SPLIT-0235-RURAL-DEUTSCHLANDTICKET-BENEFIT` — ländliche Bevölkerung soll stärker profitieren
-`REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON` · `OPEN` · `NOT_ASSESSABLE`  
-**Reason:** Die Passage benennt einen plausiblen Verteilungsanspruch, aber **kein Instrument**, ob Angebotsausbau, Preisstaffel, Zubringer, On-Demand, Park&Ride oder andere Leistung. **Problem:** geringerer Nutzen eines Flatrate-Tickets bei dünnem Angebot ist plausibel, muss regional gemessen werden. **Goal Review:** vergleichbarer Mobilitätsnutzen/Erreichbarkeit, nicht identischer Ticketbesitz. **Delivery:** Land/Aufgabenträger plus Bundes-/Tarifverbund. **Grenzen:** regionale Fairness, Finanzierbarkeit. **Falsifikation:** Nutzungs-/Angebotsdaten Land/Stadt, Wegezeit, Bedienhäufigkeit, Ausgabenwirkung. Terminal bleibt bewusst ohne Wirkungsrichtung bis zum Design.
+20. `ST-CDU-PRIMARY-SPLIT-0225-PEER-STUDENT-LEGAL-ORDER-ENGAGEMENT` — `EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `LOW`. Peer responsibility/education can improve norm understanding and prosocial leadership when voluntary and pedagogically safeguarded. The source claim that young people are `frequently unresponsive` to adults is **not an empirical causal baseline**. Students must not become quasi-enforcement agents, expose peers or replace qualified social/pedagogical/criminal-justice responses. **Recheck:** participation/voluntariness, knowledge/attitudes, peer harms/stigma, school climate and incidents without attributing crime change from programme participation alone.
 
-### 3. Batchweite #241-Systemprüfung pp.60–62
+21. `ST-CDU-PRIMARY-SPLIT-0225-JUSTICE-AS-SCHOOL-EDUCATION-PARTNER` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`. Structured justice-school education can improve legal literacy and institutional understanding if age-appropriate, plural and pedagogically integrated. **Output != Outcome:** visits/lessons are not trust or lawful behaviour. **Recheck:** reach/diversity, knowledge/competence, teacher/student feedback and curricular quality.
 
-- `PROBLEM_REVIEW`: Erreichbarkeit, Netzengpass, Planungsdauer, Luft/Lärm/Sicherheit, ländliche Angebotslücke und Informationsfriktion getrennt; politische Frames wie „ideologisch“, „grundlos“ oder „Technologieoffenheit“ sind **keine** empirische Problembaseline.
-- `GOAL_REVIEW`: Endziele sind sichere, bezahlbare, erreichbare, resiliente und emissions-/ressourcenschonende Mobilität; Autobahnkilometer, Fahrstreifen, Antriebslabel, Klagezahl und Geschwindigkeit sind Instrument-/Zwischenachsen.
-- `MATERIAL_OMISSIONS`: projektweise Nachfrage/Gegenfaktum, induzierter Verkehr, Lifecycle-/Flächen-/Lärm-/Naturkosten, Betriebs-/Erhaltungskosten, SPNV-Kapazität, reale ländliche Zugänglichkeit, technologiebezogene Energie-/Feedstock-Additionalität.
-- `POLICY_COHERENCE`: Straßenausbau/Tempolimit-/Umweltzonenpfade gegen ÖPNV/Schiene/Rad/Antriebsdekarbonisierung getrennt auf Wechselwirkungen prüfen; keine Portfolio-Saldierung.
-- `DELIVERY_FEASIBILITY`: Bundesautobahnen/BVWP/Schienenfernverkehr/UmwRG sind nicht allein Landeskompetenz; Landesrolle als Bundesratsinitiative/Advocacy/Ko-Finanzierung/Bestellung transparent machen.
-- `RESOURCE_FINANCING`: CAPEX + Erhaltung/Betrieb + Opportunitätskosten je Infrastrukturtyp; keine Scheingenauigkeit ohne Projektansatz.
-- `SPATIAL_DISTRIBUTION`: ländlicher Raum, Zentren, Pendler, Anrainer, Natur-/Auenkorridore, Menschen ohne Pkw getrennt.
-- `INTERNATIONAL_LEAKAGE`: bei Kraftstoffen/Antrieben Energie-/Rohstoff-/Feedstock-Lieferketten; sonst überwiegend `NOT_APPLICABLE/LOW_MATERIALITY`.
-- `ROBUSTNESS_STRESS_TEST`: Demografie, Energiepreise, Fachkräftemangel, Baukosten, Niedrig-/Hochwasser für Querungen, Cyberausfall der Verkehrssteuerung, Nachfrageverschiebung.
-- `REVERSIBILITY_LOCKIN`: neue Straßen/Querungen besonders stark; digitale Info/Takt/Busbeschaffung deutlich reversibler/skalierbarer.
-- `FALSIFICATION_TRIGGERS`: Reisezeit/Pünktlichkeit, Verkehrsmenge/Modal Split, Unfälle, Lärm/Luft/THG, Flächen-/Naturwirkung, Lifecycle-/Folgekosten, Nutzungs-/Verteilungsdaten, Rechts-/Gerichtsstatus.
-- `LIFECYCLE_TRACEABILITY`: Wahlprogramm → Landesposition/Bundesinitiative/Bestellung/Förderung → Planung/Rechtsakt/Vergabe → Bau/Betrieb/Service → Nutzung → Zustands-/Verteilungsoutcome → Reality Check.
-- `VERSION_DELTA`: `0228/0229/0230–0235` versioniert als Parents/Overmerges behandeln; historische Texte/IDs nicht mutieren.
-- `COMMUNICATION_MEDIA_IMPACT`: „ideologisch“, „diskriminierend“, „grundlos“, „Technologieoffenheit“ als politische Frames separat dokumentieren, **nicht** als Maßnahmenwirkung oder Problembefund übernehmen.
-- `DNS_REFERENCE = EXACT_REGISTRY_CROSSWALK_PENDING`; keine Keyword-Zuordnung, Zielbezug nie Kausalitätsnachweis.
-- `STATE_GFA_ENAP_BENCHMARK = NOT_APPLICABLE` für Wahlprogramm-Source-Units.
-- `RECOMMENDATION = NOT_AVAILABLE_AT_SOURCE_UNIT_LEVEL`; keine WÖk-Handlungsoption ohne exact APPROVED RecommendationRecord.
+22. `ST-CDU-PRIMARY-SPLIT-0225-MAGDEBURG-LAW-DEMOCRACY-EDUCATION-GRANT` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`. Grants for age-appropriate lived-democracy projects can strengthen participation/rights/conflict-resolution competence when content is plural, rights-based and evaluated. `regional identity` must not become partisan/monolithic content. **Recheck:** independent programme quality, inclusion/access, competence/participation outcomes, school climate and grant additionality.
 
-### 4. Fortschritt / Completion Guard
+`0226` remains source-parity `SAME` and terminal `EDITORIAL_V2_PLUS_APPROVED · POSITIVE · LOW`: low-threshold reliable consumer advice can reduce information asymmetry/avoidable harm if current, accessible and sufficiently staffed. `bestmöglich geschützt` is a goal, not observed outcome. Recheck reach by group/region, wait, case resolution/referral, complaints/damage indicators and service capacity.
 
-`ST_CDU_PRIMARY_PARITY_P60_P62 = PASS_SEGMENT`  
-`ST_CDU_P60_P62_SOURCE_RESTORE_GAPS = 0`  
-`ST_CDU_P60_P62_NEW_OR_SPLIT_TERMINAL = PASS_26`  
-`ST_CDU_PRIMARY_SOURCE_PARITY = IN_PROGRESS`  
-`authoritative_source_unit_count = null`  
-`authoritative_effect_mechanism_count = null`  
+### 3. Batch-wide #241 system review pp.57–59
+
+- `PROBLEM_REVIEW`: court/procedure delay, physical/digital access, justice workforce shortage, rural legal-services access, e-file/process friction, AI-use risks, ADR suitability, victim/violence protection gaps, witness risk, legal/democracy literacy and consumer-information asymmetry separated. `strong state`, `immediate punishment` and youth-unresponsiveness are frames/goals, not empirical causal baselines.
+- `GOAL_REVIEW`: timely fair independent justice, equal access, capable workforce, secure transparent digital process, protected human judicial responsibility, victim/witness safety, voluntary fair ADR and civic/legal capability. Target times, sites, start grants, e-files, AI, arbitration brand or school programme are instruments.
+- `DNS_REFERENCE = EXACT_REGISTRY_CROSSWALK_PENDING`; no keyword mapping/causal claim.
+- `MATERIAL_OMISSIONS`: delay causes/case classes, court/location utilisation, rural legal-service demand, staffing/vacancy data, e-file branch/function gaps, exact AI use/model/data/risk, ADR power asymmetries, victim-help capacity, witness-risk baseline and programme evaluation.
+- `POLICY_COHERENCE`: judicial independence/rule of law/fundamental rights; procedural/hearing/defence/legal-remedy duties; current e-file rollout; current AI Act timeline/data protection; GewHG support/network baseline; education/child-protection safeguards. Speed never supersedes legality/fairness.
+- `DELIVERY_FEASIBILITY`: judges/prosecutors/court staff/legal practitioners, training/recruitment, IT/cyber, legal-aid/advice capacity, ADR personnel, shelters/counselling/health/youth/justice interfaces and school/pedagogical capability.
+- `RESOURCE_FINANCING`: court/IT sites, staff/recruitment, rural-lawyer start grants, e-file/AI governance, ADR and victim-help/democracy programmes with OPEX/lifecycle/additionality; funds/positions ≠ outcomes.
+- `SPATIAL_DISTRIBUTION`: rural/urban court/legal-service users, vulnerable/non-digital users, victims/witnesses, people with care duties, different case/party types and schools/social groups.
+- `INTERNATIONAL_LEAKAGE`: generally `NOT_APPLICABLE`; arbitration location competition only where material and must not substitute for justice-access analysis.
+- `ROBUSTNESS_STRESS_TEST`: case surge, staff shortage, cyber/outage, AI/model error, rural-practice attrition, victim-help demand spike, complex/high-stakes cases and evidence/network failure.
+- `REVERSIBILITY_LOCKIN`: court-site structures, IT architecture and AI procurement can lock in; pilot/use-case AI/ADR/school programmes are more revisable with stop/exit rules.
+- `FALSIFICATION_TRIGGERS`: procedure duration + reversal/appeal/fairness; access/travel/digital completion; vacancies/retention; rural lawyer durability; e-file uptime/cycle time; AI errors/overrides/complaints; ADR fairness/durability; victim/witness access/safety; education competence and consumer case outcomes.
+- `LIFECYCLE_TRACEABILITY`: election programme → Land justice budget/law/organisation/IT/grant/support design → implementation/use → access/quality/safety/timeliness state → Reality Check. 2025–26 GewHG/e-file/current AI-law baselines versioned separately.
+- `VERSION_DELTA`: 0218/0219/0221–0225 split; `0222` source restored and terminal; 0220/0226 SAME; historical IDs/text immutable.
+- `COMMUNICATION_MEDIA_IMPACT`: `unmittelbare Ahndung`, justice-location/strong-state framing, `Magdeburger Recht`, youth-unresponsiveness and consumer-risk framing remain passage-bound and separate from measure impact.
+- `RECOMMENDATION = NOT_AVAILABLE_AT_SOURCE_UNIT_LEVEL`; no WÖk option without exact APPROVED RecommendationRecord.
+- `STATE_GFA_ENAP_BENCHMARK = NOT_APPLICABLE` for election-program source units.
+- `COVERAGE_SCOPE = ST_CDU_PRIMARY_SOURCE_P57_P59_FULL_SEMANTIC_RECONCILIATION`.
+
+### 4. Checkpoint
+
+`ST_CDU_PRIMARY_PARITY_P57_P59 = PASS_SEGMENT`
+
+`ST_CDU_P57_P59_NEW_OR_SPLIT_TERMINAL = PASS_22`
+
+`ST_CDU_P57_P59_UNRESOLVED_SOURCE_GAPS = 0`
+
+`ST_CDU_RESTORE_GAP_0222 = CLOSED_PRIMARY_SOURCE_FULL_TEXT`
+
+`ST_CDU_PRIMARY_SOURCE_PARITY = NOT_YET_FULL_PROGRAMME`
+
+`authoritative_source_unit_count = null`
+
+`authoritative_effect_mechanism_count = null`
+
 `denominator_status = NOT_FROZEN_PENDING_FULL_PRIMARY_SOURCE_PARITY`
 
-**Kein Completion-Trigger:** weder `344` noch `344 + n` noch die Summe der bisherigen Shard-Children ist der finale CDU-Nenner. Freeze erst nach vollständigem final-official PDF-Diff unter einer konsistenten Segmentierungsregel und 0 Source-/Restore-/Overmerge-Gaps über das gesamte Programm.
+No arithmetic `344 + children`, no public count mutation and no `ST_CDU_*_FACH_COMPLETE`.
 
-**Nächster konfliktarmer Source-/Fachscope:** finale offizielle PDF **pp.63–65**, beginnend bei `0236` Schiene/Elektrifizierung über Verkehrssicherheit, ländliche Mobilität, Rad, Wasserstraße/Luftverkehr und Rastplätze bis zum Übergang Wohnraum/Raumentwicklung.
+**Next Primary-Source-Parity scope: final official PDF pp.60–63, `Bezahlbare Mobilität in Stadt und Land`. Restore legacy `0228` from the full primary source before any mobility-parent judgement.**

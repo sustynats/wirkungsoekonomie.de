@@ -1,0 +1,201 @@
+{
+  "applicable_241_layer_set_check": {
+    "markers_explicit_in_source_review": [
+      "COMMUNICATION_MEDIA_IMPACT",
+      "COVERAGE_SCOPE",
+      "DELIVERY_FEASIBILITY",
+      "DNS_REFERENCE",
+      "FALSIFICATION_TRIGGERS",
+      "GOAL_REVIEW",
+      "LIFECYCLE_TRACEABILITY",
+      "MATERIAL_OMISSIONS",
+      "POLICY_COHERENCE",
+      "PROBLEM_REVIEW",
+      "RECOMMENDATION",
+      "RESOURCE_FINANCING",
+      "REVERSIBILITY_LOCKIN",
+      "ROBUSTNESS_STRESS_TEST",
+      "SPATIAL_DISTRIBUTION",
+      "STATE_GFA_ENAP_BENCHMARK",
+      "VERSION_DELTA"
+    ],
+    "set_check_status": "PASS_SOURCE_BOUND_MARKERS_CAPTURED",
+    "source_review_has_241_system_section": true
+  },
+  "authoritative_effect_mechanism_count": null,
+  "authoritative_source_unit_count": null,
+  "completion_guard": {
+    "st_cdu_final_versioned_manifest": "PENDING_GLOBAL_LEAF_RECONCILIATION",
+    "st_cdu_primary_source_parity": "PASS_FULL_PROGRAMME",
+    "st_cdu_terminal_complete": false
+  },
+  "denominator_status": "NOT_FROZEN_PENDING_GLOBAL_LEAF_RECONCILIATION",
+  "fach_review_comment_id": 5373687313,
+  "fach_review_issue": 234,
+  "historical_ids_immutable": true,
+  "materialization_mode": "MECHANICAL_FROM_SOURCE_BOUND_ISSUE_234_REVIEW_NO_NEW_FACH_SEMANTICS",
+  "party": "CDU",
+  "primary_pdf_pages": [
+    23,
+    24
+  ],
+  "primary_source_diff": [
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0076",
+      "source_bound_review_line": "| `0076` Leistungsmessung/Evaluation | `OVERMERGED` | zwei Child-Mechanismen: Standards/Leistungsüberprüfung; interne+externe Evaluation/datengestützte Schulentwicklung; Beibehalten von Noten/Versetzung/Abschluss-/Zentralprüfungen als Status quo im Parent |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0077",
+      "source_bound_review_line": "| `0077` Personalentwicklung | `OVERMERGED` | drei Child-Mechanismen: ländliche Anwärterzulage+Bindung; Weltenretter-Fortsetzung; Seiteneinstiegs-Aus/Fortbildungswege |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0078",
+      "source_bound_review_line": "| `0078` Lehramtsausbildung reformieren | `OVERMERGED` | fünf Child-Mechanismen: Bedarfssteuerungsinstrumente; Grundschullehramt Magdeburg prüfen; Zielvereinbarungen nach Absolventen/Bedarf; duales Sekundarlehramt verstetigen/standardisieren; Ausweitung auf Grund-/Förderschule prüfen |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0079",
+      "source_bound_review_line": "| `0079` Lehrkräfteausbildung Eignung/Qualität/Praxis | `OVERMERGED` | vier Child-Mechanismen: frühe verbindliche Praxisphasen; duale Sekundarschullehramtsstruktur; praxisorientiertes Referendariat; verbindliche Kompetenzanforderungen; Beibehaltung 1./2. Staatsprüfung als Status quo im Parent |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0080",
+      "source_bound_review_line": "| `0080` politische Bildung | `OVERMERGED` | vier Child-Mechanismen: unabhängige erreichbare Wissensangebote; außerschulische Partner/demokratisches Gemeinwissen; heimatkundliche Projekte; Landeszentrale weiterentwickeln/Reichweite+Mitwirkung |"
+    }
+  ],
+  "primary_source_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf",
+  "programme_key": "ltw-2026-st-cdu",
+  "review_snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p23-p24-review.md",
+  "review_snapshot_sha256": "7605f6c103bcea0e74a7522f5bf31dc052c7bc59a04c4ded11db89ab97e83a25",
+  "schema_version": "1.1",
+  "segment_checks": {
+    "checkpoint_terminal_count": 18,
+    "dns_mapping_synthesized": false,
+    "historical_ids_mutated": false,
+    "primary_source_parity": "PASS_SEGMENT",
+    "public_count_mutated": false,
+    "recommendation_synthesized": false,
+    "terminal_source_objects_parsed": 18,
+    "unresolved_source_gaps": 0
+  },
+  "shard_version": "2026-08-22-p23-p24-v1",
+  "terminal_source_objects": [
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0076-STANDARDS-ASSESSMENT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0076-EVALUATION-DATA-DEVELOPMENT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0077-RURAL-TRAINEE-ALLOWANCE",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0077-WELTENRETTER-CONTINUE",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0077-LATERAL-ENTRY-TRAINING",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0078-SHORTAGE-CONTROL-INSTRUMENTS",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0078-PRIMARY-TEACHER-MAGDEBURG-CHECK",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0078-HEI-GRADUATE-TARGET-AGREEMENTS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0078-DUAL-SECONDARY-TEACHER-CONTINUE",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0078-DUAL-PRIMARY-SPECIAL-CHECK",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0079-EARLY-MANDATORY-PRACTICE",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0079-DUAL-SECONDARY-STUDY",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0079-REFERENDARIAT-PRACTICE-REFORM",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0079-BINDING-COMPETENCY-REQUIREMENTS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0080-INDEPENDENT-ACCESSIBLE-CIVIC-ED",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0080-EXTERNAL-PARTNERS-COMMON-KNOWLEDGE",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0080-LOCAL-HISTORY-PROJECTS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0080-CIVIC-AGENCY-DEVELOPMENT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    }
+  ],
+  "tuple_schema": [
+    "source_unit_id",
+    "terminal_fach_status",
+    "impact_direction",
+    "evidence_level"
+  ]
+}

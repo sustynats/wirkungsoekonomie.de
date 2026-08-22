@@ -1,0 +1,238 @@
+{
+  "applicable_241_layer_set_check": {
+    "markers_explicit_in_source_review": [
+      "COMMUNICATION_MEDIA_IMPACT",
+      "COVERAGE_SCOPE",
+      "DELIVERY_FEASIBILITY",
+      "DNS_REFERENCE",
+      "FALSIFICATION_TRIGGERS",
+      "GOAL_REVIEW",
+      "INTERNATIONAL_LEAKAGE",
+      "LIFECYCLE_TRACEABILITY",
+      "MATERIAL_OMISSIONS",
+      "POLICY_COHERENCE",
+      "PROBLEM_REVIEW",
+      "RECOMMENDATION",
+      "RESOURCE_FINANCING",
+      "REVERSIBILITY_LOCKIN",
+      "ROBUSTNESS_STRESS_TEST",
+      "SPATIAL_DISTRIBUTION",
+      "STATE_GFA_ENAP_BENCHMARK",
+      "VERSION_DELTA"
+    ],
+    "set_check_status": "PASS_SOURCE_BOUND_MARKERS_CAPTURED",
+    "source_review_has_241_system_section": true
+  },
+  "authoritative_effect_mechanism_count": null,
+  "authoritative_source_unit_count": null,
+  "completion_guard": {
+    "st_cdu_final_versioned_manifest": "PENDING_GLOBAL_LEAF_RECONCILIATION",
+    "st_cdu_primary_source_parity": "PASS_FULL_PROGRAMME",
+    "st_cdu_terminal_complete": false
+  },
+  "denominator_status": "NOT_FROZEN_PENDING_GLOBAL_LEAF_RECONCILIATION",
+  "fach_review_comment_id": 5374639617,
+  "fach_review_issue": 234,
+  "historical_ids_immutable": true,
+  "materialization_mode": "MECHANICAL_FROM_SOURCE_BOUND_ISSUE_234_REVIEW_NO_NEW_FACH_SEMANTICS",
+  "party": "CDU",
+  "primary_pdf_pages": [
+    50,
+    53
+  ],
+  "primary_source_diff": [
+    {
+      "classification": "DUPLICATE+SAME",
+      "legacy_unit": "0196",
+      "source_bound_review_line": "| `0206` | `SAME` | paperless/once-only/accessibility/routing mechanism fully represented, with duplicate crosswalk to 0196/0198/0199 |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0197",
+      "source_bound_review_line": "| `0197` | `OVERMERGED` | provider-dependency/market diversification, sovereign cloud/operating control and Open-Source migration are separate mechanisms |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0198",
+      "source_bound_review_line": "| `0198` | `OVERMERGED` | scale/standardise model projects, citizen-controlled data sharing, AI/automation, secure public WLAN and analogue fallback are distinct mechanisms |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0199",
+      "source_bound_review_line": "| `0199` | `OVERMERGED` | cross-state administrative-data interoperability and nationwide standard portals/routing separated; crime/social/asylum-abuse wording is context/use-case frame, not prevalence evidence |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0200",
+      "source_bound_review_line": "| `0200` | `OVERMERGED` | digital-investment/funding support, university/research cooperation and tax-incentive advocacy separated |"
+    },
+    {
+      "classification": "SAME",
+      "legacy_unit": "0201",
+      "source_bound_review_line": "| `0201` | `SAME` | Reallabore/test fields fully represented |"
+    },
+    {
+      "classification": "SAME",
+      "legacy_unit": "0202",
+      "source_bound_review_line": "| `0202` | `SAME` | business-support CERT fully represented |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0203",
+      "source_bound_review_line": "| `0203` | `OVERMERGED` | shared central public digital infrastructure/cloud and regional IT-ecosystem/value-chain objective separated |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0204",
+      "source_bound_review_line": "| `0204` | `OVERMERGED` | close fixed/mobile/5G coverage gaps and free public WLAN are distinct infrastructure/access mechanisms |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0205",
+      "source_bound_review_line": "| `0205` | `OVERMERGED` | digital education/central learning platform and media/privacy/cyber literacy/resilience separated |"
+    },
+    {
+      "classification": "DUPLICATE+SAME",
+      "legacy_unit": "0206",
+      "source_bound_review_line": "| `0206` | `SAME` | paperless/once-only/accessibility/routing mechanism fully represented, with duplicate crosswalk to 0196/0198/0199 |"
+    }
+  ],
+  "primary_source_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf",
+  "programme_key": "ltw-2026-st-cdu",
+  "review_snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p50-p53-review.md",
+  "review_snapshot_sha256": "a2eb2d55e5b61ef4802dd412e7221875536485fedeeb31c1e00dd78039422fb9",
+  "schema_version": "1.1",
+  "segment_checks": {
+    "checkpoint_terminal_count": 19,
+    "dns_mapping_synthesized": false,
+    "historical_ids_mutated": false,
+    "primary_source_parity": "PASS_SEGMENT",
+    "public_count_mutated": false,
+    "recommendation_synthesized": false,
+    "terminal_source_objects_parsed": 19,
+    "unresolved_source_gaps": 0
+  },
+  "shard_version": "2026-08-22-p50-p53-v1",
+  "terminal_source_objects": [
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0197-PROVIDER-DEPENDENCY-DIVERSIFICATION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0197-SOVEREIGN-EU-GERMAN-CLOUD",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0197-CRITICAL-IT-OPEN-SOURCE-MIGRATION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0198-SCALE-STANDARDISE-SUCCESSFUL-DIGITAL-MODEL-PROJECTS",
+      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0198-CITIZEN-CONTROLLED-INTERAGENCY-DATA-SHARING",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0198-AI-AUTOMATED-ADMIN-PROCESSES",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0198-SECURE-WLAN-LAND-ADMINISTRATION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0198-ANALOGUE-PERSONAL-FALLBACK",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0199-CROSS-STATE-ADMIN-DATA-INTEROPERABILITY",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0199-NATIONWIDE-STANDARD-PORTALS-ROUTING",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0200-DIGITAL-INVESTMENT-SUPPORT-SIMPLIFIED-FUNDING",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0200-UNIVERSITY-RESEARCH-SME-COOPERATION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0200-TAX-INCENTIVE-JOINT-RD-ADVOCACY",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0203-SHARED-CENTRAL-DIGITAL-INFRA-SECURE-CLOUD",
+      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0203-REGIONAL-IT-ECOSYSTEM-VALUE-CHAIN",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0204-FIXED-MOBILE-5G-COVERAGE-GAPS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0204-FREE-PUBLIC-WLAN-CENTRAL-PLACES",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0205-DIGITAL-EDUCATION-CENTRAL-LEARNING-PLATFORM",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0205-MEDIA-PRIVACY-CYBER-LITERACY-ALL-AGES",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    }
+  ],
+  "tuple_schema": [
+    "source_unit_id",
+    "terminal_fach_status",
+    "impact_direction",
+    "evidence_level"
+  ]
+}

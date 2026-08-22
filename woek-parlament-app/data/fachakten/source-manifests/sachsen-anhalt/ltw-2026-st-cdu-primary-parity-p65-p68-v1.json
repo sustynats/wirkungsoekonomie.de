@@ -1,105 +1,487 @@
 {
-  "schema_version": "1.0",
-  "shard_version": "2026-08-21-p65-p68-v1",
-  "programme_key": "ltw-2026-st-cdu",
-  "party": "CDU",
-  "primary_source_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf",
-  "primary_pdf_pages": [65, 66, 67, 68],
-  "canonical_manifest_target": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-source-unit-manifest-v2.json",
-  "legacy_register": "woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-cdu-zusagen.md",
-  "legacy_source_hash": "15272934630ab67d50bea0da18964d83fb06b9b9aa32686e56e824913acb8fce",
-  "historical_ids_immutable": true,
-  "fach_review_issue": 234,
-  "fach_review_comment_id": 5375461590,
   "authoritative_denominator_delta": null,
-  "authoritative_source_unit_count": null,
   "authoritative_effect_mechanism_count": null,
-  "denominator_status": "NOT_FROZEN_PENDING_FULL_PRIMARY_SOURCE_PARITY",
-  "segment_status": "SEMANTIC_RECONCILIATION_COMPLETE_FOR_P65_P68",
-  "primary_source_diff": [
-    {"legacy_unit":"0245","classification":"OVERMERGED","action":"KEEP_PARENT_ID; VERSIONED_3_CHILD_SPLIT"},
-    {"legacy_unit":null,"classification":"ABSENT","source_locator":"P65_STAEDTEBAU_WOHNRAUM_KOFINANZIERUNG","action":"ADD_STABLE_SOURCE_UNIT"},
-    {"legacy_unit":null,"classification":"ABSENT","source_locator":"P65_WOHNGEBIETE_LEBENSWERTER_GESTALTEN","action":"ADD_STABLE_SOURCE_UNIT"},
-    {"legacy_unit":"0246","classification":"OVERMERGED","action":"KEEP_PARENT_ID; VERSIONED_2_CHILD_SPLIT"},
-    {"legacy_unit":"0247","classification":"CONTEXT_ONLY","action":"KEEP_ID_NO_INDEPENDENT_EFFECT_COUNT"},
-    {"legacy_unit":"0248","classification":"OVERMERGED","action":"KEEP_PARENT_ID; VERSIONED_2_CHILD_SPLIT"},
-    {"legacy_unit":"0249","classification":"OVERMERGED","action":"KEEP_PARENT_ID; VERSIONED_3_CHILD_SPLIT"},
-    {"legacy_unit":"0250","classification":"TRUNCATED","action":"KEEP_PARENT_ID; RESTORE_FINAL_PRIMARY_TEXT; VERSIONED_7_CHILD_SPLIT"},
-    {"legacy_unit":"0251","classification":"OVERMERGED","action":"KEEP_PARENT_ID; VERSIONED_3_CHILD_SPLIT"},
-    {"legacy_unit":"0252","classification":"OVERMERGED","action":"KEEP_PARENT_ID; VERSIONED_2_CHILD_SPLIT"},
-    {"legacy_unit":"0253","classification":"OVERMERGED","action":"KEEP_PARENT_ID; VERSIONED_3_CHILD_SPLIT"},
-    {"legacy_unit":"0254","classification":"OVERMERGED","action":"KEEP_PARENT_ID; VERSIONED_3_CHILD_SPLIT"},
-    {"legacy_unit":"0255","classification":"OVERMERGED","action":"KEEP_PARENT_ID; VERSIONED_3_CHILD_SPLIT"},
-    {"legacy_unit":"0256","classification":"OVERMERGED","action":"KEEP_PARENT_ID; VERSIONED_5_CHILD_SPLIT"},
-    {"legacy_unit":"0257","classification":"OVERMERGED","action":"KEEP_PARENT_ID; VERSIONED_3_CHILD_SPLIT"},
-    {"legacy_unit":"0258","classification":"SAME","action":"KEEP_ID; TERMINAL_REVIEW_NOT_ASSESSABLE_NO_SPECIFIC_INSTRUMENT"},
-    {"legacy_unit":"0259","classification":"SAME","action":"KEEP_ID; VERSION_AS_RESTATEMENT_DUPLICATE_OF_0251_ANIMAL_WELFARE_FUNDING"}
-  ],
-  "terminal_source_objects": [
-    {"source_unit_id":"ST-CDU-PRIMARY-SPLIT-0245-BROWNFIELD-REUSE","parent_legacy_unit":"0245","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"MEDIUM"},
-    {"source_unit_id":"ST-CDU-PRIMARY-SPLIT-0245-LAND-MANAGEMENT","parent_legacy_unit":"0245","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW"},
-    {"source_unit_id":"ST-CDU-PRIMARY-SPLIT-0245-CONTAMINATED-SITES-CONCEPT","parent_legacy_unit":"0245","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"MEDIUM"},
-    {"source_unit_id":"ST-CDU-PRIMARY-GAP-P65-URBAN-HOUSING-COFINANCE","parent_legacy_unit":null,"source_gap_status":"PRIMARY_SOURCE_EFFECT_MECHANISM_ABSENT_FROM_RELEASE1_RESTORED_VERSIONED","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"MEDIUM"},
-    {"source_unit_id":"ST-CDU-PRIMARY-GAP-P65-RESIDENTIAL-AREA-CALMING","parent_legacy_unit":null,"source_gap_status":"PRIMARY_SOURCE_EFFECT_MECHANISM_ABSENT_FROM_RELEASE1_RESTORED_VERSIONED","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"LOW"},
-    {"source_unit_id":"ST-CDU-PRIMARY-SPLIT-0246-RETAIL-SUPPORT","parent_legacy_unit":"0246","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW"},
-    {"source_unit_id":"ST-CDU-PRIMARY-SPLIT-0246-VACANCY-CONCEPTS","parent_legacy_unit":"0246","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"LOW"},
-    {"source_unit_id":"ST-CDU-PRIMARY-SPLIT-0248-RAW-MATERIAL-RECLAMATION","parent_legacy_unit":"0248","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW"},
-    {"source_unit_id":"ST-CDU-PRIMARY-SPLIT-0248-CIRCULAR-BUILDING-MATERIALS","parent_legacy_unit":"0248","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"MEDIUM"},
-    {"source_unit_id":"ST-CDU-PRIMARY-SPLIT-0249-ENV-LAW-ONE-TO-ONE","parent_legacy_unit":"0249","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW"},
-    {"source_unit_id":"ST-CDU-PRIMARY-SPLIT-0249-ENV-INFO-ONE-STOP","parent_legacy_unit":"0249","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"LOW"},
-    {"source_unit_id":"ST-CDU-PRIMARY-SPLIT-0249-ENV-AUTOMATION-AI","parent_legacy_unit":"0249","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW"},
-    {"source_unit_id":"ST-CDU-PRIMARY-SPLIT-0250-BIOTOPE-CONNECTIVITY","parent_legacy_unit":"0250","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"HIGH"},
-    {"source_unit_id":"ST-CDU-PRIMARY-SPLIT-0250-BIODIVERSITY-STRATEGY","parent_legacy_unit":"0250","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW"},
-    {"source_unit_id":"ST-CDU-PRIMARY-SPLIT-0250-INVASIVE-SPECIES","parent_legacy_unit":"0250","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"MEDIUM"},
-    {"source_unit_id":"ST-CDU-PRIMARY-SPLIT-0250-SPECIES-STATUS-REVIEW","parent_legacy_unit":"0250","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW"},
-    {"source_unit_id":"ST-CDU-PRIMARY-SPLIT-0250-WILDLIFE-DAMAGE-COMPENSATION","parent_legacy_unit":"0250","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW"},
-    {"source_unit_id":"ST-CDU-PRIMARY-SPLIT-0250-VOLUNTEER-CONSERVATION","parent_legacy_unit":"0250","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"LOW"},
-    {"source_unit_id":"ST-CDU-PRIMARY-SPLIT-0250-BNE-CROSS-DEPARTMENT","parent_legacy_unit":"0250","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"LOW"},
-    {"source_unit_id":"ST-CDU-PRIMARY-SPLIT-0251-ANIMAL-WELFARE-FUNDING","parent_legacy_unit":"0251","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"MEDIUM"},
-    {"source_unit_id":"ST-CDU-PRIMARY-SPLIT-0251-CAT-CASTRATION","parent_legacy_unit":"0251","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"MEDIUM"},
-    {"source_unit_id":"ST-CDU-PRIMARY-SPLIT-0251-ANIMAL-WELFARE-VOLUNTEERS","parent_legacy_unit":"0251","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"LOW"},
-    {"source_unit_id":"ST-CDU-PRIMARY-SPLIT-0252-HEAT-PROTECTION","parent_legacy_unit":"0252","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"HIGH"},
-    {"source_unit_id":"ST-CDU-PRIMARY-SPLIT-0252-WATER-STORAGE","parent_legacy_unit":"0252","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"MEDIUM"},
-    {"source_unit_id":"ST-CDU-PRIMARY-SPLIT-0253-DYKE-RELOCATION","parent_legacy_unit":"0253","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"MEDIUM"},
-    {"source_unit_id":"ST-CDU-PRIMARY-SPLIT-0253-WATER-ACTION-PLAN","parent_legacy_unit":"0253","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"MEDIUM"},
-    {"source_unit_id":"ST-CDU-PRIMARY-SPLIT-0253-WFD-EYES-MEASURE","parent_legacy_unit":"0253","terminal_fach_status":"REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON","impact_direction":"OPEN","evidence_level":"NOT_ASSESSABLE"},
-    {"source_unit_id":"ST-CDU-PRIMARY-SPLIT-0254-MULTIUSE-SEALED-LAND","parent_legacy_unit":"0254","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"MEDIUM"},
-    {"source_unit_id":"ST-CDU-PRIMARY-SPLIT-0254-BROWNFIELD-REACTIVATION","parent_legacy_unit":"0254","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"MEDIUM"},
-    {"source_unit_id":"ST-CDU-PRIMARY-SPLIT-0254-DESEALING-GRANTS","parent_legacy_unit":"0254","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"MEDIUM"},
-    {"source_unit_id":"ST-CDU-PRIMARY-SPLIT-0255-PROTECTED-AREA-SUPPORT","parent_legacy_unit":"0255","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"MEDIUM"},
-    {"source_unit_id":"ST-CDU-PRIMARY-SPLIT-0255-NO-SETASIDE-SUBSIDY","parent_legacy_unit":"0255","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW"},
-    {"source_unit_id":"ST-CDU-PRIMARY-SPLIT-0255-GREEN-BELT","parent_legacy_unit":"0255","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"MEDIUM"},
-    {"source_unit_id":"ST-CDU-PRIMARY-SPLIT-0256-REPAIR-REUSE","parent_legacy_unit":"0256","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"MEDIUM"},
-    {"source_unit_id":"ST-CDU-PRIMARY-SPLIT-0256-WIND-SOLAR-RECYCLING","parent_legacy_unit":"0256","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"MEDIUM"},
-    {"source_unit_id":"ST-CDU-PRIMARY-SPLIT-0256-RECYCLED-CONSTRUCTION-RULES","parent_legacy_unit":"0256","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"MEDIUM"},
-    {"source_unit_id":"ST-CDU-PRIMARY-SPLIT-0256-PUBLIC-CIRCULAR-PROCUREMENT","parent_legacy_unit":"0256","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"MEDIUM"},
-    {"source_unit_id":"ST-CDU-PRIMARY-SPLIT-0256-RECYCLED-MATERIALS-RESEARCH","parent_legacy_unit":"0256","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"LOW"},
-    {"source_unit_id":"ST-CDU-PRIMARY-SPLIT-0257-DOMESTIC-EXTRACTION","parent_legacy_unit":"0257","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW"},
-    {"source_unit_id":"ST-CDU-PRIMARY-SPLIT-0257-FORMER-SITES-ENERGY","parent_legacy_unit":"0257","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW"},
-    {"source_unit_id":"ST-CDU-PRIMARY-SPLIT-0257-RECLAMATION-ORDER-REVIEW","parent_legacy_unit":"0257","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW"},
-    {"source_unit_id":"ltw-2026-st-cdu-0258-innovative-umwelttechnologien-foerdern-sachsen-anhalt-verf","parent_legacy_unit":"0258","terminal_fach_status":"REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON","impact_direction":"OPEN","evidence_level":"NOT_ASSESSABLE"},
-    {"source_unit_id":"ltw-2026-st-cdu-0259-tierheime-besser-unterstuetzen-die-tierheime-leisten-wertv","parent_legacy_unit":"0259","terminal_fach_status":"SOURCE_UNIT_RECLASSIFIED_VERSIONED","impact_direction":"OPEN","evidence_level":"NOT_ASSESSABLE","semantic_role":"RESTATEMENT_DUPLICATE_OF_0251_ANIMAL_WELFARE_FUNDING"}
-  ],
-  "fach_payload_location": "https://github.com/sustynats/wirkungsoekonomie.de/issues/234#issuecomment-5375461590",
-  "segment_checks": {
-    "primary_source_parity": "PASS_SEGMENT",
-    "terminal_source_objects": 43,
-    "unresolved_source_gaps": 0,
-    "historical_ids_mutated": false,
-    "recommendation_synthesized": false,
-    "dns_mapping_synthesized": false,
-    "public_count_mutated": false
-  },
+  "authoritative_source_unit_count": null,
+  "canonical_manifest_target": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-source-unit-manifest-v2.json",
   "completion_guard": {
-    "st_cdu_primary_source_parity": "NOT_YET_FULL_PROGRAMME",
-    "st_cdu_final_versioned_manifest": "PENDING_DOCUMENT_WIDE_RECONCILIATION",
-    "st_cdu_terminal_complete": false,
-    "next_segment": "final official PDF p69 onward",
     "freeze_denominator_only_after": [
       "full final-official PDF semantic diff under one segmentation rule",
       "corpus-wide leaf/parent/restatement reconciliation",
       "all final canonical units terminal fach-reviewed",
       "zero unresolved source/restore/overmerge gaps"
-    ]
-  }
+    ],
+    "next_segment": "final official PDF p69 onward",
+    "st_cdu_final_versioned_manifest": "PENDING_DOCUMENT_WIDE_RECONCILIATION",
+    "st_cdu_primary_source_parity": "NOT_YET_FULL_PROGRAMME",
+    "st_cdu_terminal_complete": false
+  },
+  "denominator_status": "NOT_FROZEN_PENDING_FULL_PRIMARY_SOURCE_PARITY",
+  "fach_payload_location": "https://github.com/sustynats/wirkungsoekonomie.de/issues/234#issuecomment-5375461590",
+  "fach_review_comment_id": 5375461590,
+  "fach_review_issue": 234,
+  "historical_ids_immutable": true,
+  "legacy_register": "woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-cdu-zusagen.md",
+  "legacy_source_hash": "15272934630ab67d50bea0da18964d83fb06b9b9aa32686e56e824913acb8fce",
+  "party": "CDU",
+  "primary_pdf_pages": [
+    65,
+    66,
+    67,
+    68
+  ],
+  "primary_source_diff": [
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_3_CHILD_SPLIT",
+      "classification": "OVERMERGED",
+      "legacy_unit": "0245"
+    },
+    {
+      "action": "ADD_STABLE_SOURCE_UNIT",
+      "classification": "ABSENT",
+      "legacy_unit": null,
+      "source_locator": "P65_STAEDTEBAU_WOHNRAUM_KOFINANZIERUNG"
+    },
+    {
+      "action": "ADD_STABLE_SOURCE_UNIT",
+      "classification": "ABSENT",
+      "legacy_unit": null,
+      "source_locator": "P65_WOHNGEBIETE_LEBENSWERTER_GESTALTEN"
+    },
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_2_CHILD_SPLIT",
+      "classification": "OVERMERGED",
+      "legacy_unit": "0246"
+    },
+    {
+      "action": "KEEP_ID_NO_INDEPENDENT_EFFECT_COUNT",
+      "classification": "CONTEXT_ONLY",
+      "legacy_unit": "0247"
+    },
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_2_CHILD_SPLIT",
+      "classification": "OVERMERGED",
+      "legacy_unit": "0248"
+    },
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_3_CHILD_SPLIT",
+      "classification": "OVERMERGED",
+      "legacy_unit": "0249"
+    },
+    {
+      "action": "KEEP_PARENT_ID; RESTORE_FINAL_PRIMARY_TEXT; VERSIONED_7_CHILD_SPLIT",
+      "classification": "TRUNCATED",
+      "legacy_unit": "0250"
+    },
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_3_CHILD_SPLIT",
+      "classification": "OVERMERGED",
+      "legacy_unit": "0251"
+    },
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_2_CHILD_SPLIT",
+      "classification": "OVERMERGED",
+      "legacy_unit": "0252"
+    },
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_3_CHILD_SPLIT",
+      "classification": "OVERMERGED",
+      "legacy_unit": "0253"
+    },
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_3_CHILD_SPLIT",
+      "classification": "OVERMERGED",
+      "legacy_unit": "0254"
+    },
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_3_CHILD_SPLIT",
+      "classification": "OVERMERGED",
+      "legacy_unit": "0255"
+    },
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_5_CHILD_SPLIT",
+      "classification": "OVERMERGED",
+      "legacy_unit": "0256"
+    },
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_3_CHILD_SPLIT",
+      "classification": "OVERMERGED",
+      "legacy_unit": "0257"
+    },
+    {
+      "action": "KEEP_ID; TERMINAL_REVIEW_NOT_ASSESSABLE_NO_SPECIFIC_INSTRUMENT",
+      "classification": "SAME",
+      "legacy_unit": "0258"
+    },
+    {
+      "action": "KEEP_ID; VERSION_AS_RESTATEMENT_DUPLICATE_OF_0251_ANIMAL_WELFARE_FUNDING",
+      "classification": "SAME",
+      "legacy_unit": "0259"
+    }
+  ],
+  "primary_source_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf",
+  "programme_key": "ltw-2026-st-cdu",
+  "schema_normalization": {
+    "legacy_parent_reference_resolution": "IMMUTABLE_RELEASE1_COMMITMENT_ID_WHERE_NUMERIC_PARENT_PRESENT",
+    "mode": "MECHANICAL_ALIAS_ONLY_NO_NEW_FACH_SEMANTICS",
+    "terminal_alias": "terminal_source_objects"
+  },
+  "schema_version": "1.0",
+  "segment_checks": {
+    "dns_mapping_synthesized": false,
+    "historical_ids_mutated": false,
+    "primary_source_parity": "PASS_SEGMENT",
+    "public_count_mutated": false,
+    "recommendation_synthesized": false,
+    "terminal_source_objects": 43,
+    "unresolved_source_gaps": 0
+  },
+  "segment_status": "SEMANTIC_RECONCILIATION_COMPLETE_FOR_P65_P68",
+  "shard_version": "2026-08-21-p65-p68-v1",
+  "terminal_source_objects": [
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "parent_legacy_unit": "0245",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0245-ungenutzte-flaechen-aktivieren-brachflaechen-alte-industri",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0245-BROWNFIELD-REUSE",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "parent_legacy_unit": "0245",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0245-ungenutzte-flaechen-aktivieren-brachflaechen-alte-industri",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0245-LAND-MANAGEMENT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "parent_legacy_unit": "0245",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0245-ungenutzte-flaechen-aktivieren-brachflaechen-alte-industri",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0245-CONTAMINATED-SITES-CONCEPT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "parent_legacy_unit": null,
+      "source_gap_status": "PRIMARY_SOURCE_EFFECT_MECHANISM_ABSENT_FROM_RELEASE1_RESTORED_VERSIONED",
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-P65-URBAN-HOUSING-COFINANCE",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "parent_legacy_unit": null,
+      "source_gap_status": "PRIMARY_SOURCE_EFFECT_MECHANISM_ABSENT_FROM_RELEASE1_RESTORED_VERSIONED",
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-P65-RESIDENTIAL-AREA-CALMING",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "parent_legacy_unit": "0246",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0246-innenstaedte-lebendig-halten-als-zentren-des-lebens-und-wi",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0246-RETAIL-SUPPORT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "parent_legacy_unit": "0246",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0246-innenstaedte-lebendig-halten-als-zentren-des-lebens-und-wi",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0246-VACANCY-CONCEPTS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "parent_legacy_unit": "0248",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0248-dass-eine-regionale-rohstoffgewinnung-umweltschonend-mit-a",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0248-RAW-MATERIAL-RECLAMATION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "parent_legacy_unit": "0248",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0248-dass-eine-regionale-rohstoffgewinnung-umweltschonend-mit-a",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0248-CIRCULAR-BUILDING-MATERIALS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "parent_legacy_unit": "0249",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0249-umweltschutzvorschriften-nicht-unnoetig-verschaerfen-dazu",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0249-ENV-LAW-ONE-TO-ONE",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "parent_legacy_unit": "0249",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0249-umweltschutzvorschriften-nicht-unnoetig-verschaerfen-dazu",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0249-ENV-INFO-ONE-STOP",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "parent_legacy_unit": "0249",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0249-umweltschutzvorschriften-nicht-unnoetig-verschaerfen-dazu",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0249-ENV-AUTOMATION-AI",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "HIGH",
+      "impact_direction": "POSITIVE",
+      "parent_legacy_unit": "0250",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0250-BIOTOPE-CONNECTIVITY",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "parent_legacy_unit": "0250",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0250-BIODIVERSITY-STRATEGY",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "parent_legacy_unit": "0250",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0250-INVASIVE-SPECIES",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "parent_legacy_unit": "0250",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0250-SPECIES-STATUS-REVIEW",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "parent_legacy_unit": "0250",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0250-WILDLIFE-DAMAGE-COMPENSATION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "parent_legacy_unit": "0250",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0250-VOLUNTEER-CONSERVATION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "parent_legacy_unit": "0250",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0250-BNE-CROSS-DEPARTMENT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "parent_legacy_unit": "0251",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0251-tierschutz-besser-unterstuetzen-die-tierheime-und-tierschu",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0251-ANIMAL-WELFARE-FUNDING",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "parent_legacy_unit": "0251",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0251-tierschutz-besser-unterstuetzen-die-tierheime-und-tierschu",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0251-CAT-CASTRATION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "parent_legacy_unit": "0251",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0251-tierschutz-besser-unterstuetzen-die-tierheime-und-tierschu",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0251-ANIMAL-WELFARE-VOLUNTEERS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "HIGH",
+      "impact_direction": "POSITIVE",
+      "parent_legacy_unit": "0252",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0252-klimafeste-staedte-foerdern-der-klimawandel-stellt-auch-un",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0252-HEAT-PROTECTION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "parent_legacy_unit": "0252",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0252-klimafeste-staedte-foerdern-der-klimawandel-stellt-auch-un",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0252-WATER-STORAGE",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "parent_legacy_unit": "0253",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0253-modernes-wassermanagement-unterstuetzen-unsere-gewaesser-b",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0253-DYKE-RELOCATION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "parent_legacy_unit": "0253",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0253-modernes-wassermanagement-unterstuetzen-unsere-gewaesser-b",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0253-WATER-ACTION-PLAN",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "parent_legacy_unit": "0253",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0253-modernes-wassermanagement-unterstuetzen-unsere-gewaesser-b",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0253-WFD-EYES-MEASURE",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "parent_legacy_unit": "0254",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0254-flaechenverbrauch-wirksam-begrenzen-boden-ist-eine-endlich",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0254-MULTIUSE-SEALED-LAND",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "parent_legacy_unit": "0254",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0254-flaechenverbrauch-wirksam-begrenzen-boden-ist-eine-endlich",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0254-BROWNFIELD-REACTIVATION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "parent_legacy_unit": "0254",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0254-flaechenverbrauch-wirksam-begrenzen-boden-ist-eine-endlich",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0254-DESEALING-GRANTS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "parent_legacy_unit": "0255",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0255-unsere-schutzgebiete-staerken-nationalparke-biosphaerenres",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0255-PROTECTED-AREA-SUPPORT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "parent_legacy_unit": "0255",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0255-unsere-schutzgebiete-staerken-nationalparke-biosphaerenres",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0255-NO-SETASIDE-SUBSIDY",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "parent_legacy_unit": "0255",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0255-unsere-schutzgebiete-staerken-nationalparke-biosphaerenres",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0255-GREEN-BELT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "parent_legacy_unit": "0256",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0256-kreislaufwirtschaft-und-recycling-staerken-wir-sehen-in-de",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0256-REPAIR-REUSE",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "parent_legacy_unit": "0256",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0256-kreislaufwirtschaft-und-recycling-staerken-wir-sehen-in-de",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0256-WIND-SOLAR-RECYCLING",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "parent_legacy_unit": "0256",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0256-kreislaufwirtschaft-und-recycling-staerken-wir-sehen-in-de",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0256-RECYCLED-CONSTRUCTION-RULES",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "parent_legacy_unit": "0256",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0256-kreislaufwirtschaft-und-recycling-staerken-wir-sehen-in-de",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0256-PUBLIC-CIRCULAR-PROCUREMENT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "parent_legacy_unit": "0256",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0256-kreislaufwirtschaft-und-recycling-staerken-wir-sehen-in-de",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0256-RECYCLED-MATERIALS-RESEARCH",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "parent_legacy_unit": "0257",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0257-rohstoffe-umweltgerecht-gewinnen-eine-rohstoffgewinnung-ma",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0257-DOMESTIC-EXTRACTION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "parent_legacy_unit": "0257",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0257-rohstoffe-umweltgerecht-gewinnen-eine-rohstoffgewinnung-ma",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0257-FORMER-SITES-ENERGY",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "parent_legacy_unit": "0257",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0257-rohstoffe-umweltgerecht-gewinnen-eine-rohstoffgewinnung-ma",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0257-RECLAMATION-ORDER-REVIEW",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "parent_legacy_unit": "0258",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0258-innovative-umwelttechnologien-foerdern-sachsen-anhalt-verf",
+      "source_unit_id": "ltw-2026-st-cdu-0258-innovative-umwelttechnologien-foerdern-sachsen-anhalt-verf",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "parent_legacy_unit": "0259",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0259-tierheime-besser-unterstuetzen-die-tierheime-leisten-wertv",
+      "semantic_role": "RESTATEMENT_DUPLICATE_OF_0251_ANIMAL_WELFARE_FUNDING",
+      "source_unit_id": "ltw-2026-st-cdu-0259-tierheime-besser-unterstuetzen-die-tierheime-leisten-wertv",
+      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
+    }
+  ]
 }

@@ -1,117 +1,15 @@
 {
-  "schema_version": "1.0",
-  "shard_version": "2026-08-21-p15-p17-v1",
-  "programme_key": "ltw-2026-st-cdu",
-  "party": "CDU",
-  "primary_source_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf",
-  "primary_pdf_pages": [15,16,17],
-  "canonical_manifest_target": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-source-unit-manifest-v2.json",
-  "legacy_register": "woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-cdu-zusagen.md",
-  "legacy_blob_sha": "6e8c53392d76e9847ee3028d241a988c12b3d2fb",
-  "historical_ids_immutable": true,
-  "fach_review_issue": 234,
-  "fach_review_comment_id": 5373580833,
   "authoritative_denominator_delta": null,
+  "canonical_manifest_target": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-source-unit-manifest-v2.json",
+  "common_guards": {
+    "dns_reference": "EXACT_REGISTRY_CROSSWALK_PENDING",
+    "no_compensation_of_hard_boundaries": true,
+    "output_not_outcome": true,
+    "recommendation": "NOT_AVAILABLE_AT_SOURCE_UNIT_LEVEL_DO_NOT_SYNTHESIZE",
+    "state_gfa_enap_benchmark": "NOT_APPLICABLE",
+    "target_alignment_not_causality": true
+  },
   "denominator_status": "PENDING_FULL_PROGRAMME_SEGMENTATION_RULE",
-  "segment_status": "SEMANTIC_RECONCILIATION_COMPLETE_FOR_P15_P17",
-  "primary_source_diff": [
-    {"legacy_unit":"0047","classification":"TRUNCATED","action":"KEEP_PARENT_ID; VERSIONED_2_CHILD_SPLIT_FOR_ETS_AND_MSR"},
-    {"legacy_unit":"0048","classification":"SAME","action":"KEEP_ID"},
-    {"legacy_unit":"0049","classification":"TRUNCATED","action":"KEEP_PARENT_ID; VERSIONED_4_CHILD_SPLIT"},
-    {"legacy_unit":"0050","classification":"OVERMERGED","action":"KEEP_PARENT_ID; VERSIONED_3_CHILD_SPLIT"},
-    {"legacy_unit":"0051","classification":"CONTEXT_ONLY","action":"KEEP_ID_NO_INDEPENDENT_EFFECT_COUNT"},
-    {"legacy_unit":"0052","classification":"OVERMERGED","action":"KEEP_PARENT_ID; VERSIONED_7_CHILD_SPLIT"},
-    {"legacy_unit":"0053","classification":"OVERMERGED","action":"KEEP_PARENT_ID; VERSIONED_2_CHILD_SPLIT; 2025_LAW_CHANGE_INHERITED_BASELINE"},
-    {"legacy_unit":"0054","classification":"TRUNCATED","action":"KEEP_PARENT_ID; VERSIONED_4_CHILD_SPLIT; MINIMUM_WAGE_SENTENCE_CONTEXT_ONLY"},
-    {"legacy_unit":"0055","classification":"OVERMERGED","action":"KEEP_PARENT_ID; VERSIONED_3_CHILD_SPLIT"},
-    {"legacy_unit":"0056","classification":"OVERMERGED","action":"KEEP_PARENT_ID; VERSIONED_3_CHILD_SPLIT"}
-  ],
-  "new_or_split_units": [
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0047-ETS-FREE-ALLOCATION","parent_legacy_source_unit":"ltw-2026-st-cdu-0047-wir-werden-dafuer-sorge-tragen-dass-sachsen-anhalt-auch-we","source_locator":{"pdf_page":15,"section":"Top-Region für Unternehmensansiedlungen in Europa"},"mechanism":"Abschmelzen kostenloser ETS-Emissionsberechtigungen aussetzen/überarbeiten","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"MEDIUM","key_finding":"Eine verlangsamte oder ausgesetzte Reduktion kostenloser ETS-Zuteilung kann kurzfristig Carbon-Leakage- und Kostenrisiken mindern, schwächt aber ceteris paribus CO2-Preisanreiz und kann Auktionserlöse sowie Transformationsdruck verändern.","problem_review":"Hohe Energie-/CO2-Kosten und Carbon-Leakage-Risiko sind real, aber sektoral und anlagenbezogen zu messen; Chemie ist kein einheitlicher Benchmark.","goal_review":"Wettbewerbsfähige Dekarbonisierung statt kostenlose Zuteilung als Endziel.","competence_delivery":"EU; Land nur Advocacy.","distribution_time":"ETS-Anlagen, Beschäftigte, Staatseinnahmen und Klima; kurz- bis langfristig.","boundaries_noncompensation":["ETS-Cap/Klimaziel","keine Kompensation schwerer Umweltfolgen durch Standortnutzen"],"data_falsification":["effektive CO2-Kosten","Produktions-/Investitionsverlagerung","Emissionsintensität","freie Zuteilung je Anlage","Transformationsinvestitionen"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0047-MSR-INVALIDATION","parent_legacy_source_unit":"ltw-2026-st-cdu-0047-wir-werden-dafuer-sorge-tragen-dass-sachsen-anhalt-auch-we","source_locator":{"pdf_page":15,"section":"Top-Region für Unternehmensansiedlungen in Europa"},"mechanism":"Löschungs-/Invalidierungsmechanismus der ETS-Marktstabilitätsreserve aussetzen/überarbeiten","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"MEDIUM","key_finding":"Das Stoppen der MSR-Invalidierung kann einen Zertifikatspuffer gegen Knappheit und Volatilität schaffen, verändert aber Erwartung, Knappheit und Preisbildung; die Kommission hatte eine solche Änderung bereits am 01.04.2026 vorgeschlagen.","problem_review":"Marktstabilität und Preisvolatilität sind relevante Systemfragen; ein niedriger Zertifikatspreis ist nicht selbst Wirkungsziel.","goal_review":"Stabiler, liquider ETS-Markt bei erhaltenem Dekarbonisierungspfad.","competence_delivery":"EU-Gesetzgebung; Land Advocacy.","distribution_time":"ETS-Sektoren, Zertifikatmarkt, Staatseinnahmen, Klima; systemweit/mehrjährig.","boundaries_noncompensation":["ETS-Cap","Klimaziel"],"data_falsification":["MSR-Rechtsstand","TNAC","Reservebestand","ETS-Preisvolatilität","Industrieinvestition","Emissionen"],"additionality_guard":"EU_COMMISSION_PROPOSAL_PREEXISTS_ELECTION_TERM","counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0049-GRW-INVESTMENT","parent_legacy_source_unit":"ltw-2026-st-cdu-0049-verlaessliche-wirtschaftspolitische-rahmenbedingungen-fuer","source_locator":{"pdf_pages":[15,16],"section":"Top-Region für Unternehmensansiedlungen in Europa"},"mechanism":"GRW-Investitionsförderung für Betriebsstätten, Maschinen und Infrastruktur","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW","key_finding":"GRW-Förderung kann zusätzliche Investitionen und regionale Beschäftigung unterstützen; Wirkung hängt an Additionalität, Förderselektion und Lebenszyklus-/Ressourceneffekten.","problem_review":"Strukturelle Standortnachteile sind Förderlogik; projektbezogener binding bottleneck muss belegt werden.","goal_review":"Zusätzliche resiliente Wertschöpfung statt Mittelabfluss.","competence_delivery":"Bund-Land-Gemeinschaftsaufgabe; Land Bewilligung/Umsetzung.","distribution_time":"Fördergebiete, Unternehmen, Beschäftigte, Steuerzahler; mittel-/langfristig.","boundaries_noncompensation":["Beihilfe-/Haushaltsrecht","Umwelt-/Ressourcenschutz"],"data_falsification":["Förderintensität","private Additionalität","Jobs/Löhne","Produktivität","Mitnahme","Bestand","Umwelt-/Ressourcenpfade"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0049-INNOVATION-FUNDING","parent_legacy_source_unit":"ltw-2026-st-cdu-0049-verlaessliche-wirtschaftspolitische-rahmenbedingungen-fuer","source_locator":{"pdf_page":15,"section":"Top-Region für Unternehmensansiedlungen in Europa"},"mechanism":"Innovationsförderung","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"LOW","key_finding":"Innovationsförderung kann Wissens-, Finanzierungs- und Technologierisiken adressieren, wenn Projekte additional und transferfähig sind.","problem_review":"Innovationsfinanzierungs-/Kooperationslücken sind plausibel, aber projektbezogen zu belegen.","goal_review":"Zusätzliche Innovation, Produktivität und Transformation statt Projektzahl.","competence_delivery":"LAND/EU/FEDERAL je Programm.","distribution_time":"Unternehmen, Forschung und Regionen; mittel-/langfristig.","boundaries_noncompensation":["faire Förderkriterien","Forschungsintegrität"],"data_falsification":["private Kofinanzierung","F&E-Output","Patente/Transfer","Scale-up","Mitnahme","Outcome"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0049-FINANCING-AID","parent_legacy_source_unit":"ltw-2026-st-cdu-0049-verlaessliche-wirtschaftspolitische-rahmenbedingungen-fuer","source_locator":{"pdf_page":15,"section":"Top-Region für Unternehmensansiedlungen in Europa"},"mechanism":"Finanzierungshilfen","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW","key_finding":"Finanzierungshilfen können Kapitalzugang für tragfähige Investitionen verbessern; falsche Konditionen erzeugen Mitnahme, Fehlallokation oder fiskalisches Risiko.","problem_review":"Finanzierung ist nur binding bottleneck, wenn rentable Projekte tatsächlich am Kapitalzugang scheitern.","goal_review":"Additionale tragfähige Investitionen bei angemessenem Risiko.","competence_delivery":"LAND/Förderbank/BUND/EU je Instrument.","distribution_time":"Unternehmen, Kreditgeber, öffentliche Haushalte; mittel-/langfristig.","boundaries_noncompensation":["Haushalts-/Beihilferecht","Transparenz"],"data_falsification":["Finanzierungslücke","Default/Verlust","Zusatzinvestition","Verdrängung privater Finanzierung","Unternehmensbestand"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0049-SETTLEMENT-EXISTING-BUSINESS","parent_legacy_source_unit":"ltw-2026-st-cdu-0049-verlaessliche-wirtschaftspolitische-rahmenbedingungen-fuer","source_locator":{"pdf_page":15,"section":"Top-Region für Unternehmensansiedlungen in Europa"},"mechanism":"aktive Ansiedlungs- und Bestandsbetreuung","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW","key_finding":"Ansiedlungs-/Bestandsbetreuung kann Koordinationsfriktionen senken und Standorte stabilisieren; individuelle Betreuung kann Selektions-, Beihilfe- oder Lock-in-Risiken erzeugen.","problem_review":"Koordinations-/Informationsfriktionen plausibel; Additionalität muss je Fall geprüft werden.","goal_review":"Additionale resiliente Wertschöpfung, nicht Betreuungskontakte.","competence_delivery":"LAND/IMG/Förderstruktur.","distribution_time":"Unternehmen, Kommunen, Regionen; mittel-/langfristig.","boundaries_noncompensation":["Gleichbehandlung","Transparenz","Beihilferecht"],"data_falsification":["Lead-to-investment","Bestand","Förderkosten","regionale Verteilung","Mitnahme","Ressourcenabhängigkeit"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0050-SME-MODERNISATION-DIGITAL","parent_legacy_source_unit":"ltw-2026-st-cdu-0050-darueber-hinaus-foerdern-wir-modernisierung-erweiterung-un","source_locator":{"pdf_page":16,"section":"Top-Region für Unternehmensansiedlungen in Europa"},"mechanism":"KMU-Modernisierung und Digitalisierung unterstützen","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"LOW","key_finding":"Modernisierungs-/Digitalisierungsunterstützung kann Produktivität, Energie-/Materialeffizienz und Anpassungsfähigkeit erhöhen, sofern Fähigkeiten und Prozesse statt bloßer Technikkauf adressiert werden.","problem_review":"Technologie-/Kompetenzlücken sind plausibel; branchenspezifische Baseline nötig.","goal_review":"Messbare Prozess-/Produktivitäts-/Resilienzverbesserung.","competence_delivery":"LAND funding/advisory levers.","distribution_time":"KMU/Beschäftigte/Regionen; mittel-/langfristig.","boundaries_noncompensation":["Datenschutz","Cyberresilienz","faire Zugänglichkeit"],"data_falsification":["Produktivität","Prozesszeit","Energie/Material","Cybervorfälle","Kofinanzierung","Nutzung nach Förderung"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0050-STARTUP-INNOVATION","parent_legacy_source_unit":"ltw-2026-st-cdu-0050-darueber-hinaus-foerdern-wir-modernisierung-erweiterung-un","source_locator":{"pdf_page":16,"section":"Top-Region für Unternehmensansiedlungen in Europa"},"mechanism":"Gründungen und technologieoffene Innovation stärken","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"LOW","key_finding":"Gründungs-/Innovationsförderung kann Experimentier- und Finanzierungsengpässe senken; Wirkung misst sich an zusätzlichen tragfähigen Unternehmen und Innovationen, nicht Gründungszahlen allein.","problem_review":"Kapital-, Netzwerk- und Marktzugangsfriktionen plausibel; Baseline offen.","goal_review":"Tragfähige additionale Gründungen/Innovationen.","competence_delivery":"LAND programme/funding ecosystem.","distribution_time":"Gründer, Beschäftigte, Regionen; mittel-/langfristig.","boundaries_noncompensation":["faire Zugänglichkeit","Wettbewerbsneutralität"],"data_falsification":["Additionalität","Überleben","Beschäftigung","Innovation/Transfer","Mitnahme","regionale/soziale Verteilung"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0050-KNOWLEDGE-TRANSFER","parent_legacy_source_unit":"ltw-2026-st-cdu-0050-darueber-hinaus-foerdern-wir-modernisierung-erweiterung-un","source_locator":{"pdf_page":16,"section":"Top-Region für Unternehmensansiedlungen in Europa"},"mechanism":"Wissenstransfer zwischen Wirtschaft und Wissenschaft stärken","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"LOW","key_finding":"Wissenstransfer kann die Lücke zwischen Forschung und Anwendung verringern, wenn IP-, Anreiz-, Personal- und Absorptionsbarrieren adressiert werden.","problem_review":"Transferfriktionen plausibel; konkrete Branchen-/Technologiebaseline nötig.","goal_review":"Zusätzliche Anwendung und Skalierung von Wissen.","competence_delivery":"Hochschulen/Forschung/Wirtschaft; Land Förder-/Koordinationshebel.","distribution_time":"Forschung, Unternehmen, Beschäftigte; mittel-/langfristig.","boundaries_noncompensation":["Forschungsfreiheit","IP-/Kooperationsfairness"],"data_falsification":["gemeinsame Projekte","Lizenzen/Spin-offs","Unternehmensanwendung","Additionalität","Scale-up"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0052-ALT-FUELS-RESEARCH","parent_legacy_source_unit":"ltw-2026-st-cdu-0052-technologieoffene-innovation-ermoeglichen-wir-foerdern-for","source_locator":{"pdf_page":16,"section":"Top-Region für Unternehmensansiedlungen in Europa"},"mechanism":"Forschung an alternativen Kraftstoffen","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW","key_finding":"Alternative-Kraftstoff-Forschung kann Nischen für schwer elektrifizierbare Anwendungen erschließen; Klima-/Kostenwirkung hängt stark von Strom-/Rohstoffquelle, Lebenszyklus, Effizienz und Einsatzfeld ab.","problem_review":"Dekarbonisierungsbedarf real; Technologieengpass ist einsatzfeldspezifisch.","goal_review":"Emissionsarme effiziente Mobilität/Prozesse, nicht Kraftstofftechnologie an sich.","competence_delivery":"LAND research funding; EU/FEDERAL regulatory context.","distribution_time":"Forschung, Industrie, Energie-/Rohstoffsysteme; langfristig.","boundaries_noncompensation":["Lebenszyklus-Klima","Luft/Gesundheit","Ressourcen"],"data_falsification":["LCA","Energiebedarf","EE-Additionalität","Kosten","Einsatzsegment"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0052-CIRCULAR-RESEARCH","parent_legacy_source_unit":"ltw-2026-st-cdu-0052-technologieoffene-innovation-ermoeglichen-wir-foerdern-for","source_locator":{"pdf_page":16,"section":"Top-Region für Unternehmensansiedlungen in Europa"},"mechanism":"Forschung zur Kreislaufwirtschaft","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"LOW","key_finding":"Kreislaufforschung kann Primärrohstoffbedarf, Abfall und Lieferkettenrisiken senken, wenn sie in skalierbare hochwertige Kreisläufe übergeht.","problem_review":"Ressourcen-/Abfall- und Abhängigkeitsprobleme sind plausibel; Materialstrombaseline nötig.","goal_review":"Weniger Primärrohstoff-/Abfallbelastung bei erhaltener Funktion/Qualität.","competence_delivery":"LAND research/innovation support within EU waste/product law.","distribution_time":"Industrie, Verbraucher, Umwelt; mittel-/langfristig.","boundaries_noncompensation":["keine problematischen Stoffkreisläufe","Gesundheit/Umwelt"],"data_falsification":["Sekundärmaterialanteil","Lebensdauer","Recyclingqualität","Primärrohstoff-/Abfallreduktion","Skalierung"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0052-H2-NETWORKS-RESEARCH","parent_legacy_source_unit":"ltw-2026-st-cdu-0052-technologieoffene-innovation-ermoeglichen-wir-foerdern-for","source_locator":{"pdf_page":16,"section":"Top-Region für Unternehmensansiedlungen in Europa"},"mechanism":"Forschung zu Wasserstoffnetzen","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW","key_finding":"H2-Netzinnovation kann schwer elektrifizierbare Industrie unterstützen; ohne zusätzliche erneuerbare H2-Mengen, geeignete Endnutzung und Systemkostenprüfung drohen Lock-in und Fehlallokation.","problem_review":"Industrie-Dekarbonisierungs-/Infrastrukturengpass plausibel; Endnutzungs-/Mengenbaseline nötig.","goal_review":"Klimakompatible, kosteneffiziente Versorgung schwer elektrifizierbarer Anwendungen.","competence_delivery":"MULTI_LEVEL network/research architecture.","distribution_time":"Industriecluster, Energieverbraucher, Netznutzer; langfristig.","boundaries_noncompensation":["H2-Additionalität","Methan-/CO2-Lebenszyklus","Kosten/Lock-in"],"data_falsification":["H2-Herkunft","Additionalität","Endnutzung","Auslastung","Vollkosten","vermiedene Emissionen"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0052-STORAGE-RESEARCH","parent_legacy_source_unit":"ltw-2026-st-cdu-0052-technologieoffene-innovation-ermoeglichen-wir-foerdern-for","source_locator":{"pdf_page":16,"section":"Top-Region für Unternehmensansiedlungen in Europa"},"mechanism":"Forschung zu Speichertechnologien","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"LOW","key_finding":"Speicherforschung kann Flexibilität, Integration variabler Erzeugung und Resilienz verbessern; Wirkung bleibt technologie-/standortabhängig.","problem_review":"Flexibilitäts-/Speicherbedarf ist system- und zeitabhängig; konkrete Baseline nötig.","goal_review":"Kosteneffiziente Systemflexibilität statt Speicherbau als Selbstzweck.","competence_delivery":"LAND research support; energy-market context MULTI_LEVEL.","distribution_time":"Strom-/Wärmesystem, Verbraucher, Rohstoffketten; mittel-/langfristig.","boundaries_noncompensation":["Rohstoff-/Umweltlebenszyklus","Sicherheit"],"data_falsification":["round-trip efficiency","Zyklen","Systemdienstleistung","Lebenszykluskosten/-emissionen","Materialpfad"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0052-ICE-BAN-FRAME","parent_legacy_source_unit":"ltw-2026-st-cdu-0052-technologieoffene-innovation-ermoeglichen-wir-foerdern-for","source_locator":{"pdf_page":16,"section":"Top-Region für Unternehmensansiedlungen in Europa"},"mechanism":"gegen ein pauschales Verbrenner-Verbot","terminal_fach_status":"REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON","impact_direction":"OPEN","evidence_level":"NOT_ASSESSABLE","key_finding":"Der Ausdruck 'pauschales Verbrenner-Verbot' bezeichnet keine hinreichend genaue Rechtsnorm; ein Urteil würde den politischen Frame statt eines exact Regelobjekts bewerten.","not_assessable_reason":"EU-Regulierung arbeitet mit Flotten-CO2-Zielen und Flexibilitäten und wurde 2025/26 weiter revidiert; exact Rechtsakt/Regelversion/Alternativdesign fehlen in der Passage.","problem_review":"Kein exact Regulierungsproblem ohne Rechtsobjekt/version.","goal_review":"Technologie-/Industrie-/Klimaoptionen nur gegen denselben Ziel-/Schutzrahmen vergleichen.","competence_delivery":"EU/FEDERAL advocacy context.","distribution_time":"Fahrzeughersteller, Verbraucher, Energie-/Luft-/Klimasystem; langfristig.","boundaries_noncompensation":["Klima","Luft/Gesundheit","Verbraucherschutz"],"data_falsification":["geltender Rechtsstand","Fahrzeugklassen","Zieljahr","Flexibilitäten","LCA","Luftqualität","Kosten","Industriepfad"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0052-DIESEL-TAX-DIFFERENTIAL","parent_legacy_source_unit":"ltw-2026-st-cdu-0052-technologieoffene-innovation-ermoeglichen-wir-foerdern-for","source_locator":{"pdf_page":16,"section":"Top-Region für Unternehmensansiedlungen in Europa"},"mechanism":"niedrigeren Energiesteuersatz für Diesel erhalten","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"MEDIUM","key_finding":"Der aktuell niedrigere Energiesteuersatz für Diesel gegenüber Benzin senkt dieselbezogene Betriebskosten, begünstigt aber fossilen Diesel relativ und internalisiert Klima-/Luft-/Gesundheitswirkungen nicht vollständig.","problem_review":"Kostenbelastung ist real, aber eine Technologie-/Kraftstoffsteuerdifferenz ist nur ein Instrument und nicht selbst Ziel.","goal_review":"Bezahlbare Mobilität/Logistik bei verursachungsgerechteren Klima-/Gesundheitskosten.","competence_delivery":"FEDERAL tax law; LAND advocacy.","distribution_time":"Logistik/Handwerk/Dieselfahrer relativ begünstigt; fiskalische und externe Effekte bei Allgemeinheit/Betroffenen.","boundaries_noncompensation":["Klima","Luft/Gesundheit","Haushalt"],"data_falsification":["Fahrleistung/Fuhrpark","Kraftstoffverbrauch","Steueraufkommen","CO2/NOx/PM","Verteilungswirkung","Umstiegskosten"],"current_legal_baseline":"EnergieStG §2: sulphur-low petrol 654.50 EUR/1000l; gasoil/diesel 470.40 EUR/1000l after temporary May-June 2026 reduction expired","counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0052-CO2-REDUCING-FUELS","parent_legacy_source_unit":"ltw-2026-st-cdu-0052-technologieoffene-innovation-ermoeglichen-wir-foerdern-for","source_locator":{"pdf_page":16,"section":"Top-Region für Unternehmensansiedlungen in Europa"},"mechanism":"CO2-mindernde Kraftstoffe fördern","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW","key_finding":"CO2-mindernde Kraftstoffe können in geeigneten Anwendungen Emissionen reduzieren; ohne Kraftstoffdefinition, LCA, Additionalität und Einsatzpriorisierung drohen Scheinemissionsminderung und Verdrängung effizienterer Optionen.","problem_review":"Dekarbonisierungsbedarf real; Nutzen kraftstoff-/anwendungsabhängig.","goal_review":"Lebenszyklus-emissionsarme effiziente Anwendung, nicht Fuel-Label.","competence_delivery":"MULTI_LEVEL tax/fuel/transport regulation and support.","distribution_time":"Verkehr/Industrie, Energie-/Rohstoffketten; mittel-/langfristig.","boundaries_noncompensation":["Lebenszyklus-Klima","Luft/Gesundheit","Land-/Rohstoffnutzung"],"data_falsification":["Kraftstoffpfad","Well-to-Wheel/LCA","erneuerbare Inputs","Kosten","Einsatzsegment","indirekte Effekte"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0053-PROCUREMENT-SIMPLIFY-DIGITAL","parent_legacy_source_unit":"ltw-2026-st-cdu-0053-buerokratie-weiter-abbauen-und-vergaben-erleichtern-nicht","source_locator":{"pdf_page":16,"section":"Top-Region für Unternehmensansiedlungen in Europa"},"mechanism":"Vergabeverfahren vereinfachen, beschleunigen und digitalisieren","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW","key_finding":"Vereinfachte/digitalisierte Vergaben können Verfahrenszeit und Transaktionskosten senken; zu starke Lockerung kann Wettbewerb, Transparenz, Qualität oder Schutz-/Tarifkriterien schwächen.","problem_review":"Verfahrensfriktion plausibel; Baseline zu Dauer, Bietern und Nachprüfungen nötig.","goal_review":"Schnelle, rechtssichere, wettbewerbliche und qualitativ gute Beschaffung.","competence_delivery":"LAND/Kommunen within procurement/EU law.","distribution_time":"Vergabestellen, Unternehmen, öffentliche Auftragsempfänger; kurzfristig/Projektlaufzeit.","boundaries_noncompensation":["Wettbewerb","Transparenz","Korruptionsschutz","Rechtsschutz"],"data_falsification":["Dauer","Bieterzahl","Preis/Qualität","Nachprüfungen","Rechts-/Korruptionsrisiken"],"additionality_guard":"2025 Landesvergabegesetz relaxation is inherited baseline","counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0053-SME-PROCUREMENT-ACCESS","parent_legacy_source_unit":"ltw-2026-st-cdu-0053-buerokratie-weiter-abbauen-und-vergaben-erleichtern-nicht","source_locator":{"pdf_page":16,"section":"Top-Region für Unternehmensansiedlungen in Europa"},"mechanism":"KMU-Zugang zu öffentlichen Aufträgen erleichtern","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"LOW","key_finding":"Niedrigere Zugangshürden können mehr KMU-Wettbewerb ermöglichen, wenn Losbildung, digitale Bedienbarkeit und Eignungsanforderungen verhältnismäßig bleiben.","problem_review":"KMU können überproportional von fixen Vergabekosten betroffen sein; aktuelle Teilnahmedaten nötig.","goal_review":"Breiter wirksamer Wettbewerb und diskriminierungsfreier Zugang.","competence_delivery":"LAND/Kommunen within procurement law.","distribution_time":"KMU, größere Bieter, Vergabestellen; kurzfristig.","boundaries_noncompensation":["Gleichbehandlung","Wettbewerb","Qualität"],"data_falsification":["Bieter-/Zuschlagsanteil KMU","Verfahrenskosten","Wettbewerb/Preise","Qualität","regionale Verzerrung"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0054-SME-TAX-RELIEF","parent_legacy_source_unit":"ltw-2026-st-cdu-0054-vom-bund-eine-verantwortungsvolle-wirtschafts-und-sozialpo","source_locator":{"pdf_page":16,"section":"Top-Region für Unternehmensansiedlungen in Europa"},"mechanism":"Handwerk und Mittelstand steuerlich entlasten","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW","key_finding":"Steuerentlastung kann Liquidität und Investition erhöhen, reduziert aber Einnahmen und wirkt je Steuerbasis/Profitabilität unterschiedlich.","problem_review":"Steuerlast ist nicht automatisch binding bottleneck; exact Steuer und marginale Belastung offen.","goal_review":"Investition/Produktivität/Tragfähigkeit bei solider Finanzierung.","competence_delivery":"FEDERAL advocacy.","distribution_time":"Profitierende Unternehmen, öffentliche Haushalte, Gegenfinanzierungsbetroffene; kurz-/mittelfristig.","boundaries_noncompensation":["Haushalt","Verteilungsfairness"],"data_falsification":["exact Steuer","Entlastungsverteilung","Investition/Beschäftigung","Gegenfinanzierung","Mitnahme"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0054-SOCIAL-CONTRIBUTION-CAP","parent_legacy_source_unit":"ltw-2026-st-cdu-0054-vom-bund-eine-verantwortungsvolle-wirtschafts-und-sozialpo","source_locator":{"pdf_page":16,"section":"Top-Region für Unternehmensansiedlungen in Europa"},"mechanism":"Sozialabgaben deckeln","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW","key_finding":"Gedeckelte Sozialabgaben können Arbeitskosten begrenzen, erfordern aber Gegenfinanzierung oder Leistungs-/Beitragsdesignänderung; sonst entstehen Finanzierungs- und Verteilungsrisiken.","problem_review":"Arbeitskosten können Beschäftigung beeinflussen; Beitragshöhe ist zugleich Systemfinanzierung.","goal_review":"Beschäftigungsfreundliche Arbeitskosten bei tragfähiger sozialer Sicherung.","competence_delivery":"FEDERAL.","distribution_time":"Arbeitgeber, Beschäftigte, Beitragszahler, Steuerzahler/Leistungsempfänger; mittel-/langfristig.","boundaries_noncompensation":["Systemtragfähigkeit","soziale Sicherung"],"data_falsification":["Beitragssatz","Beschäftigung/Lohn","Bundeszuschuss","Leistungsniveau","Verteilung"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0054-BASIC-SECURITY-ACTIVATION","parent_legacy_source_unit":"ltw-2026-st-cdu-0054-vom-bund-eine-verantwortungsvolle-wirtschafts-und-sozialpo","source_locator":{"pdf_page":16,"section":"Top-Region für Unternehmensansiedlungen in Europa"},"mechanism":"Fördern und Fordern in der Grundsicherung stärken","terminal_fach_status":"REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON","impact_direction":"OPEN","evidence_level":"NOT_ASSESSABLE","key_finding":"Ohne konkretes Unterstützungs-, Zumutbarkeits-, Zielgruppen- und Sanktionsdesign ist keine robuste Richtung zu Beschäftigung, Armut, Gesundheit oder Verwaltung möglich.","not_assessable_reason":"Die Passage benennt kein exact Aktivierungs-/Förderinstrument und keine Schutzbedingungen.","problem_review":"Arbeitsmarkt-/Transferproblem muss nach Zielgruppe und Ursache getrennt werden.","goal_review":"Nachhaltige Erwerbsteilhabe und Existenzsicherung; Aktivierung ist Instrument.","competence_delivery":"überwiegend FEDERAL law, multi-level administration.","distribution_time":"Leistungsberechtigte, Verwaltung, Arbeitgeber; kurz-/mittelfristig.","boundaries_noncompensation":["Existenzminimum","Verhältnismäßigkeit","Rechtsschutz","Gesundheit"],"data_falsification":["exact Instrument","Zielgruppe","Jobqualität","Sanktionen","Übergänge","Armuts-/Gesundheitswirkung"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0054-SOCIAL-BENEFIT-ABUSE-SANCTIONS","parent_legacy_source_unit":"ltw-2026-st-cdu-0054-vom-bund-eine-verantwortungsvolle-wirtschafts-und-sozialpo","source_locator":{"pdf_page":16,"section":"Top-Region für Unternehmensansiedlungen in Europa"},"mechanism":"Missbrauch sozialer Sicherung konsequent sanktionieren","terminal_fach_status":"REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON","impact_direction":"OPEN","evidence_level":"NOT_ASSESSABLE","key_finding":"Ohne Missbrauchstatbestand, Evidenzbasis, Verfahren, Sanktion und Fehlentscheidungsschutz ist kein belastbares Wirkungsurteil möglich.","not_assessable_reason":"Die Primärquelle spezifiziert Tatbestand, Verfahren und Sanktionsdesign nicht.","problem_review":"Missbrauchsbehauptung benötigt validierte Baseline; Fehler-/Overclaim-Risiko separat.","goal_review":"Rechtmäßiger Leistungsbezug und Missbrauchsvermeidung bei Schutz berechtigter Ansprüche.","competence_delivery":"FEDERAL/multi-level administration.","distribution_time":"Leistungsberechtigte, Verwaltung, Beitrags-/Steuerzahler; kurzfristig.","boundaries_noncompensation":["Existenzminimum","Verhältnismäßigkeit","Rechtsschutz"],"data_falsification":["validierte Missbrauchsquote","Fehler-/Widerspruchsquote","Sanktionstyp","Rückforderung","soziale Nebenfolgen"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0055-SKILLED-IMMIGRATION","parent_legacy_source_unit":"ltw-2026-st-cdu-0055-zudem-streben-wir-gezielte-erleichterungen-fuer-eine-unbue","source_locator":{"pdf_page":17,"section":"Top-Region für Unternehmensansiedlungen in Europa"},"mechanism":"qualifizierte Fachkräftezuwanderung erleichtern","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"LOW","key_finding":"Vereinfachte regelgebundene Fachkräftezuwanderung kann belegte Engpässe senken, wenn Anerkennung, Matching, Arbeitsrechte, Wohnen/Integration und Verbleib funktionieren.","problem_review":"Fachkräfteengpässe müssen sektor-/regionalbezogen belegt werden.","goal_review":"Nachhaltige Besetzung echter Engpassstellen bei fairen Bedingungen.","competence_delivery":"Aufenthalts-/Arbeitsrecht überwiegend FEDERAL; LAND bei Anerkennung/Welcome/Verwaltung.","distribution_time":"Zugewanderte Fachkräfte, Betriebe, Kommunen, Herkunftsregionen; mittel-/langfristig.","boundaries_noncompensation":["Arbeitsrechte","Nichtdiskriminierung","faire Rekrutierung"],"data_falsification":["Bearbeitungszeit","Anerkennung","Beschäftigung","Lohn/Jobqualität","Verbleib","regionale/branchenbezogene Engpässe"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0055-EXTRA-WORK-SS-FREE","parent_legacy_source_unit":"ltw-2026-st-cdu-0055-zudem-streben-wir-gezielte-erleichterungen-fuer-eine-unbue","source_locator":{"pdf_page":17,"section":"Top-Region für Unternehmensansiedlungen in Europa"},"mechanism":"Mehrarbeit sozialversicherungsfrei machen","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW","key_finding":"Sozialversicherungsfreie Mehrarbeit kann Nettoanreiz/Arbeitsangebot erhöhen, reduziert aber Beitragsbasis und kann Belastung, Ungleichheit zwischen Beschäftigungsformen oder Umdeklaration erzeugen.","problem_review":"Arbeitsangebotsengpass plausibel; tatsächliche Elastizität/Überstundenbaseline offen.","goal_review":"Zusätzliches freiwilliges Arbeitsangebot bei Gesundheit/Systemtragfähigkeit.","competence_delivery":"FEDERAL social-insurance law.","distribution_time":"Beschäftigte, Arbeitgeber, Sozialversicherungen; kurz-/mittelfristig.","boundaries_noncompensation":["Arbeitszeit/Gesundheit","Sozialfinanzierung","Verteilungsfairness"],"data_falsification":["zusätzliche statt umdeklarierte Stunden","Beschäftigung/Produktivität","Beitragseinnahmen","Gesundheit/Arbeitszeit","Verteilung"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0055-RETIREMENT-WORK-SS-FREE","parent_legacy_source_unit":"ltw-2026-st-cdu-0055-zudem-streben-wir-gezielte-erleichterungen-fuer-eine-unbue","source_locator":{"pdf_page":17,"section":"Top-Region für Unternehmensansiedlungen in Europa"},"mechanism":"Arbeit im Rentenalter sozialversicherungsfrei stellen","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW","key_finding":"Geringere Abgaben auf freiwillige Arbeit im Rentenalter können Erwerbsverbleib erhöhen, wirken aber stark nach Gesundheit, Beruf, Einkommen und Rentenstatus und verändern Sozialfinanzierung.","problem_review":"Arbeitskräfteengpass und Erwerbswunsch älterer Personen sind heterogen.","goal_review":"Freiwillige zusätzliche Erwerbsteilhabe, nicht längere Arbeit als Pflicht.","competence_delivery":"FEDERAL social-insurance/tax law.","distribution_time":"Ältere Beschäftigte, Arbeitgeber, Sozialversicherungen; mittel-/langfristig.","boundaries_noncompensation":["Freiwilligkeit","Gesundheit/Arbeitsschutz","Sozialfinanzierung"],"data_falsification":["zusätzliche Beschäftigungsmonate/-stunden","Berufs-/Einkommensgruppen","Mitnahme","Beitragseffekt","Gesundheit/Arbeitsbedingungen"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0056-RAIL","parent_legacy_source_unit":"ltw-2026-st-cdu-0056-auch-hier-wollen-wir-zusammen-mit-dem-bund-intensiv-in-die","source_locator":{"pdf_page":17,"section":"Top-Region für Unternehmensansiedlungen in Europa"},"mechanism":"Schienenwege ausbessern und ausbauen","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"LOW","key_finding":"Schienensanierung/-ausbau kann Kapazität, Zuverlässigkeit und Modal Shift verbessern, wenn Engpässe priorisiert und Bau-/Betriebsunterbrechungen beherrscht werden.","problem_review":"Kapazitäts-/Qualitätsengpässe projektspezifisch; Netzbaseline nötig.","goal_review":"Zuverlässige zugängliche Mobilität/Logistik statt Bauoutput.","competence_delivery":"BUND/DB/LAND je Netz/Bestellung.","distribution_time":"Pendler, Güterverkehr, Regionen; mittel-/langfristig.","boundaries_noncompensation":["Sicherheit","Natur/Fläche","Haushalt"],"data_falsification":["Kapazität","Pünktlichkeit","Fahrzeit","Nachfrage/Modal Shift","Kosten","Baustellenfolgen","Emissionen"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0056-ROAD","parent_legacy_source_unit":"ltw-2026-st-cdu-0056-auch-hier-wollen-wir-zusammen-mit-dem-bund-intensiv-in-die","source_locator":{"pdf_page":17,"section":"Top-Region für Unternehmensansiedlungen in Europa"},"mechanism":"Straßen ausbessern und ausbauen","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW","key_finding":"Straßensanierung kann Sicherheit/Zuverlässigkeit verbessern; Kapazitätsausbau kann Erreichbarkeit erhöhen, aber zusätzlichen Verkehr, Flächen-, Lärm-, Klima- und Haushaltswirkungen erzeugen.","problem_review":"Straßenzustand/Kapazitätsengpass projektspezifisch zu belegen.","goal_review":"Sichere zuverlässige Erreichbarkeit bei minimalen System-/Umweltkosten.","competence_delivery":"BUND/LAND/KOMMUNAL je Straße.","distribution_time":"Verkehrsteilnehmer, Anwohner, Regionen, Umwelt; langfristig.","boundaries_noncompensation":["Sicherheit","Lärm/Gesundheit","Klima","Natur/Fläche","Haushalt"],"data_falsification":["Zustand/Sicherheit","Reisezeit","induzierter Verkehr","Emission/Lärm/Fläche","Kosten","Alternativen"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0056-WATERWAYS","parent_legacy_source_unit":"ltw-2026-st-cdu-0056-auch-hier-wollen-wir-zusammen-mit-dem-bund-intensiv-in-die","source_locator":{"pdf_page":17,"section":"Top-Region für Unternehmensansiedlungen in Europa"},"mechanism":"Wasserwege ausbessern und ausbauen","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW","key_finding":"Wasserstraßeninvestitionen können Güterverkehrskapazität und Modal Shift unterstützen, müssen aber Hydrologie, Niedrigwasserresilienz, Ökologie und hohe Infrastruktur-Lifecyclekosten einbeziehen.","problem_review":"Kapazitäts-/Zuverlässigkeitsproblem ist wasserstraßen- und hydrologiespezifisch.","goal_review":"Resiliente effiziente Güterlogistik bei erhaltenen Gewässerökosystemen.","competence_delivery":"Bundeswasserstraßen überwiegend BUND; LAND regionaler Nutzer/Advocacy.","distribution_time":"Güterwirtschaft, Anlieger, Gewässerökosysteme; langfristig.","boundaries_noncompensation":["Gewässerökologie","Niedrigwasserresilienz","Haushalt"],"data_falsification":["Gütermenge/Modal Shift","Niedrigwasser-Verfügbarkeit","Transportkosten","ökologische Zustände","Bau-/Unterhaltungskosten"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    }
-  ],
   "external_official_recheck_sources": [
     "https://climate.ec.europa.eu/eu-action/carbon-markets/eu-emissions-trading-system-eu-ets/free-allocation/about-free-allocation_en",
     "https://climate.ec.europa.eu/eu-action/carbon-markets/eu-emissions-trading-system-eu-ets/market-stability-reserve_en",
@@ -119,19 +17,1836 @@
     "https://www.gesetze-im-internet.de/energiestg/BJNR153410006.html",
     "https://verwaltung.bund.de/leistungsverzeichnis/DE/leistung/99132012027000/herausgeber/ST-392267408/region/150000000000"
   ],
-  "common_guards": {
-    "state_gfa_enap_benchmark": "NOT_APPLICABLE",
-    "dns_reference": "EXACT_REGISTRY_CROSSWALK_PENDING",
-    "recommendation": "NOT_AVAILABLE_AT_SOURCE_UNIT_LEVEL_DO_NOT_SYNTHESIZE",
-    "target_alignment_not_causality": true,
-    "output_not_outcome": true,
-    "no_compensation_of_hard_boundaries": true
+  "fach_review_comment_id": 5373580833,
+  "fach_review_issue": 234,
+  "historical_ids_immutable": true,
+  "legacy_blob_sha": "6e8c53392d76e9847ee3028d241a988c12b3d2fb",
+  "legacy_register": "woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-cdu-zusagen.md",
+  "new_or_split_units": [
+    {
+      "boundaries_noncompensation": [
+        "ETS-Cap/Klimaziel",
+        "keine Kompensation schwerer Umweltfolgen durch Standortnutzen"
+      ],
+      "competence_delivery": "EU; Land nur Advocacy.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "effektive CO2-Kosten",
+        "Produktions-/Investitionsverlagerung",
+        "Emissionsintensität",
+        "freie Zuteilung je Anlage",
+        "Transformationsinvestitionen"
+      ],
+      "distribution_time": "ETS-Anlagen, Beschäftigte, Staatseinnahmen und Klima; kurz- bis langfristig.",
+      "evidence_level": "MEDIUM",
+      "goal_review": "Wettbewerbsfähige Dekarbonisierung statt kostenlose Zuteilung als Endziel.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Eine verlangsamte oder ausgesetzte Reduktion kostenloser ETS-Zuteilung kann kurzfristig Carbon-Leakage- und Kostenrisiken mindern, schwächt aber ceteris paribus CO2-Preisanreiz und kann Auktionserlöse sowie Transformationsdruck verändern.",
+      "mechanism": "Abschmelzen kostenloser ETS-Emissionsberechtigungen aussetzen/überarbeiten",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0047-wir-werden-dafuer-sorge-tragen-dass-sachsen-anhalt-auch-we",
+      "problem_review": "Hohe Energie-/CO2-Kosten und Carbon-Leakage-Risiko sind real, aber sektoral und anlagenbezogen zu messen; Chemie ist kein einheitlicher Benchmark.",
+      "source_locator": {
+        "pdf_page": 15,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0047-ETS-FREE-ALLOCATION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "additionality_guard": "EU_COMMISSION_PROPOSAL_PREEXISTS_ELECTION_TERM",
+      "boundaries_noncompensation": [
+        "ETS-Cap",
+        "Klimaziel"
+      ],
+      "competence_delivery": "EU-Gesetzgebung; Land Advocacy.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "MSR-Rechtsstand",
+        "TNAC",
+        "Reservebestand",
+        "ETS-Preisvolatilität",
+        "Industrieinvestition",
+        "Emissionen"
+      ],
+      "distribution_time": "ETS-Sektoren, Zertifikatmarkt, Staatseinnahmen, Klima; systemweit/mehrjährig.",
+      "evidence_level": "MEDIUM",
+      "goal_review": "Stabiler, liquider ETS-Markt bei erhaltenem Dekarbonisierungspfad.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Das Stoppen der MSR-Invalidierung kann einen Zertifikatspuffer gegen Knappheit und Volatilität schaffen, verändert aber Erwartung, Knappheit und Preisbildung; die Kommission hatte eine solche Änderung bereits am 01.04.2026 vorgeschlagen.",
+      "mechanism": "Löschungs-/Invalidierungsmechanismus der ETS-Marktstabilitätsreserve aussetzen/überarbeiten",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0047-wir-werden-dafuer-sorge-tragen-dass-sachsen-anhalt-auch-we",
+      "problem_review": "Marktstabilität und Preisvolatilität sind relevante Systemfragen; ein niedriger Zertifikatspreis ist nicht selbst Wirkungsziel.",
+      "source_locator": {
+        "pdf_page": 15,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0047-MSR-INVALIDATION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Beihilfe-/Haushaltsrecht",
+        "Umwelt-/Ressourcenschutz"
+      ],
+      "competence_delivery": "Bund-Land-Gemeinschaftsaufgabe; Land Bewilligung/Umsetzung.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Förderintensität",
+        "private Additionalität",
+        "Jobs/Löhne",
+        "Produktivität",
+        "Mitnahme",
+        "Bestand",
+        "Umwelt-/Ressourcenpfade"
+      ],
+      "distribution_time": "Fördergebiete, Unternehmen, Beschäftigte, Steuerzahler; mittel-/langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Zusätzliche resiliente Wertschöpfung statt Mittelabfluss.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "GRW-Förderung kann zusätzliche Investitionen und regionale Beschäftigung unterstützen; Wirkung hängt an Additionalität, Förderselektion und Lebenszyklus-/Ressourceneffekten.",
+      "mechanism": "GRW-Investitionsförderung für Betriebsstätten, Maschinen und Infrastruktur",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0049-verlaessliche-wirtschaftspolitische-rahmenbedingungen-fuer",
+      "problem_review": "Strukturelle Standortnachteile sind Förderlogik; projektbezogener binding bottleneck muss belegt werden.",
+      "source_locator": {
+        "pdf_pages": [
+          15,
+          16
+        ],
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0049-GRW-INVESTMENT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "faire Förderkriterien",
+        "Forschungsintegrität"
+      ],
+      "competence_delivery": "LAND/EU/FEDERAL je Programm.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "private Kofinanzierung",
+        "F&E-Output",
+        "Patente/Transfer",
+        "Scale-up",
+        "Mitnahme",
+        "Outcome"
+      ],
+      "distribution_time": "Unternehmen, Forschung und Regionen; mittel-/langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Zusätzliche Innovation, Produktivität und Transformation statt Projektzahl.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Innovationsförderung kann Wissens-, Finanzierungs- und Technologierisiken adressieren, wenn Projekte additional und transferfähig sind.",
+      "mechanism": "Innovationsförderung",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0049-verlaessliche-wirtschaftspolitische-rahmenbedingungen-fuer",
+      "problem_review": "Innovationsfinanzierungs-/Kooperationslücken sind plausibel, aber projektbezogen zu belegen.",
+      "source_locator": {
+        "pdf_page": 15,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0049-INNOVATION-FUNDING",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Haushalts-/Beihilferecht",
+        "Transparenz"
+      ],
+      "competence_delivery": "LAND/Förderbank/BUND/EU je Instrument.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Finanzierungslücke",
+        "Default/Verlust",
+        "Zusatzinvestition",
+        "Verdrängung privater Finanzierung",
+        "Unternehmensbestand"
+      ],
+      "distribution_time": "Unternehmen, Kreditgeber, öffentliche Haushalte; mittel-/langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Additionale tragfähige Investitionen bei angemessenem Risiko.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Finanzierungshilfen können Kapitalzugang für tragfähige Investitionen verbessern; falsche Konditionen erzeugen Mitnahme, Fehlallokation oder fiskalisches Risiko.",
+      "mechanism": "Finanzierungshilfen",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0049-verlaessliche-wirtschaftspolitische-rahmenbedingungen-fuer",
+      "problem_review": "Finanzierung ist nur binding bottleneck, wenn rentable Projekte tatsächlich am Kapitalzugang scheitern.",
+      "source_locator": {
+        "pdf_page": 15,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0049-FINANCING-AID",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Gleichbehandlung",
+        "Transparenz",
+        "Beihilferecht"
+      ],
+      "competence_delivery": "LAND/IMG/Förderstruktur.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Lead-to-investment",
+        "Bestand",
+        "Förderkosten",
+        "regionale Verteilung",
+        "Mitnahme",
+        "Ressourcenabhängigkeit"
+      ],
+      "distribution_time": "Unternehmen, Kommunen, Regionen; mittel-/langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Additionale resiliente Wertschöpfung, nicht Betreuungskontakte.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Ansiedlungs-/Bestandsbetreuung kann Koordinationsfriktionen senken und Standorte stabilisieren; individuelle Betreuung kann Selektions-, Beihilfe- oder Lock-in-Risiken erzeugen.",
+      "mechanism": "aktive Ansiedlungs- und Bestandsbetreuung",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0049-verlaessliche-wirtschaftspolitische-rahmenbedingungen-fuer",
+      "problem_review": "Koordinations-/Informationsfriktionen plausibel; Additionalität muss je Fall geprüft werden.",
+      "source_locator": {
+        "pdf_page": 15,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0049-SETTLEMENT-EXISTING-BUSINESS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Datenschutz",
+        "Cyberresilienz",
+        "faire Zugänglichkeit"
+      ],
+      "competence_delivery": "LAND funding/advisory levers.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Produktivität",
+        "Prozesszeit",
+        "Energie/Material",
+        "Cybervorfälle",
+        "Kofinanzierung",
+        "Nutzung nach Förderung"
+      ],
+      "distribution_time": "KMU/Beschäftigte/Regionen; mittel-/langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Messbare Prozess-/Produktivitäts-/Resilienzverbesserung.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Modernisierungs-/Digitalisierungsunterstützung kann Produktivität, Energie-/Materialeffizienz und Anpassungsfähigkeit erhöhen, sofern Fähigkeiten und Prozesse statt bloßer Technikkauf adressiert werden.",
+      "mechanism": "KMU-Modernisierung und Digitalisierung unterstützen",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0050-darueber-hinaus-foerdern-wir-modernisierung-erweiterung-un",
+      "problem_review": "Technologie-/Kompetenzlücken sind plausibel; branchenspezifische Baseline nötig.",
+      "source_locator": {
+        "pdf_page": 16,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0050-SME-MODERNISATION-DIGITAL",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "faire Zugänglichkeit",
+        "Wettbewerbsneutralität"
+      ],
+      "competence_delivery": "LAND programme/funding ecosystem.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Additionalität",
+        "Überleben",
+        "Beschäftigung",
+        "Innovation/Transfer",
+        "Mitnahme",
+        "regionale/soziale Verteilung"
+      ],
+      "distribution_time": "Gründer, Beschäftigte, Regionen; mittel-/langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Tragfähige additionale Gründungen/Innovationen.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Gründungs-/Innovationsförderung kann Experimentier- und Finanzierungsengpässe senken; Wirkung misst sich an zusätzlichen tragfähigen Unternehmen und Innovationen, nicht Gründungszahlen allein.",
+      "mechanism": "Gründungen und technologieoffene Innovation stärken",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0050-darueber-hinaus-foerdern-wir-modernisierung-erweiterung-un",
+      "problem_review": "Kapital-, Netzwerk- und Marktzugangsfriktionen plausibel; Baseline offen.",
+      "source_locator": {
+        "pdf_page": 16,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0050-STARTUP-INNOVATION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Forschungsfreiheit",
+        "IP-/Kooperationsfairness"
+      ],
+      "competence_delivery": "Hochschulen/Forschung/Wirtschaft; Land Förder-/Koordinationshebel.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "gemeinsame Projekte",
+        "Lizenzen/Spin-offs",
+        "Unternehmensanwendung",
+        "Additionalität",
+        "Scale-up"
+      ],
+      "distribution_time": "Forschung, Unternehmen, Beschäftigte; mittel-/langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Zusätzliche Anwendung und Skalierung von Wissen.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Wissenstransfer kann die Lücke zwischen Forschung und Anwendung verringern, wenn IP-, Anreiz-, Personal- und Absorptionsbarrieren adressiert werden.",
+      "mechanism": "Wissenstransfer zwischen Wirtschaft und Wissenschaft stärken",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0050-darueber-hinaus-foerdern-wir-modernisierung-erweiterung-un",
+      "problem_review": "Transferfriktionen plausibel; konkrete Branchen-/Technologiebaseline nötig.",
+      "source_locator": {
+        "pdf_page": 16,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0050-KNOWLEDGE-TRANSFER",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Lebenszyklus-Klima",
+        "Luft/Gesundheit",
+        "Ressourcen"
+      ],
+      "competence_delivery": "LAND research funding; EU/FEDERAL regulatory context.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "LCA",
+        "Energiebedarf",
+        "EE-Additionalität",
+        "Kosten",
+        "Einsatzsegment"
+      ],
+      "distribution_time": "Forschung, Industrie, Energie-/Rohstoffsysteme; langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Emissionsarme effiziente Mobilität/Prozesse, nicht Kraftstofftechnologie an sich.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Alternative-Kraftstoff-Forschung kann Nischen für schwer elektrifizierbare Anwendungen erschließen; Klima-/Kostenwirkung hängt stark von Strom-/Rohstoffquelle, Lebenszyklus, Effizienz und Einsatzfeld ab.",
+      "mechanism": "Forschung an alternativen Kraftstoffen",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0052-technologieoffene-innovation-ermoeglichen-wir-foerdern-for",
+      "problem_review": "Dekarbonisierungsbedarf real; Technologieengpass ist einsatzfeldspezifisch.",
+      "source_locator": {
+        "pdf_page": 16,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0052-ALT-FUELS-RESEARCH",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "keine problematischen Stoffkreisläufe",
+        "Gesundheit/Umwelt"
+      ],
+      "competence_delivery": "LAND research/innovation support within EU waste/product law.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Sekundärmaterialanteil",
+        "Lebensdauer",
+        "Recyclingqualität",
+        "Primärrohstoff-/Abfallreduktion",
+        "Skalierung"
+      ],
+      "distribution_time": "Industrie, Verbraucher, Umwelt; mittel-/langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Weniger Primärrohstoff-/Abfallbelastung bei erhaltener Funktion/Qualität.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Kreislaufforschung kann Primärrohstoffbedarf, Abfall und Lieferkettenrisiken senken, wenn sie in skalierbare hochwertige Kreisläufe übergeht.",
+      "mechanism": "Forschung zur Kreislaufwirtschaft",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0052-technologieoffene-innovation-ermoeglichen-wir-foerdern-for",
+      "problem_review": "Ressourcen-/Abfall- und Abhängigkeitsprobleme sind plausibel; Materialstrombaseline nötig.",
+      "source_locator": {
+        "pdf_page": 16,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0052-CIRCULAR-RESEARCH",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "H2-Additionalität",
+        "Methan-/CO2-Lebenszyklus",
+        "Kosten/Lock-in"
+      ],
+      "competence_delivery": "MULTI_LEVEL network/research architecture.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "H2-Herkunft",
+        "Additionalität",
+        "Endnutzung",
+        "Auslastung",
+        "Vollkosten",
+        "vermiedene Emissionen"
+      ],
+      "distribution_time": "Industriecluster, Energieverbraucher, Netznutzer; langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Klimakompatible, kosteneffiziente Versorgung schwer elektrifizierbarer Anwendungen.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "H2-Netzinnovation kann schwer elektrifizierbare Industrie unterstützen; ohne zusätzliche erneuerbare H2-Mengen, geeignete Endnutzung und Systemkostenprüfung drohen Lock-in und Fehlallokation.",
+      "mechanism": "Forschung zu Wasserstoffnetzen",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0052-technologieoffene-innovation-ermoeglichen-wir-foerdern-for",
+      "problem_review": "Industrie-Dekarbonisierungs-/Infrastrukturengpass plausibel; Endnutzungs-/Mengenbaseline nötig.",
+      "source_locator": {
+        "pdf_page": 16,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0052-H2-NETWORKS-RESEARCH",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Rohstoff-/Umweltlebenszyklus",
+        "Sicherheit"
+      ],
+      "competence_delivery": "LAND research support; energy-market context MULTI_LEVEL.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "round-trip efficiency",
+        "Zyklen",
+        "Systemdienstleistung",
+        "Lebenszykluskosten/-emissionen",
+        "Materialpfad"
+      ],
+      "distribution_time": "Strom-/Wärmesystem, Verbraucher, Rohstoffketten; mittel-/langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Kosteneffiziente Systemflexibilität statt Speicherbau als Selbstzweck.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Speicherforschung kann Flexibilität, Integration variabler Erzeugung und Resilienz verbessern; Wirkung bleibt technologie-/standortabhängig.",
+      "mechanism": "Forschung zu Speichertechnologien",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0052-technologieoffene-innovation-ermoeglichen-wir-foerdern-for",
+      "problem_review": "Flexibilitäts-/Speicherbedarf ist system- und zeitabhängig; konkrete Baseline nötig.",
+      "source_locator": {
+        "pdf_page": 16,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0052-STORAGE-RESEARCH",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Klima",
+        "Luft/Gesundheit",
+        "Verbraucherschutz"
+      ],
+      "competence_delivery": "EU/FEDERAL advocacy context.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "geltender Rechtsstand",
+        "Fahrzeugklassen",
+        "Zieljahr",
+        "Flexibilitäten",
+        "LCA",
+        "Luftqualität",
+        "Kosten",
+        "Industriepfad"
+      ],
+      "distribution_time": "Fahrzeughersteller, Verbraucher, Energie-/Luft-/Klimasystem; langfristig.",
+      "evidence_level": "NOT_ASSESSABLE",
+      "goal_review": "Technologie-/Industrie-/Klimaoptionen nur gegen denselben Ziel-/Schutzrahmen vergleichen.",
+      "impact_direction": "OPEN",
+      "key_finding": "Der Ausdruck 'pauschales Verbrenner-Verbot' bezeichnet keine hinreichend genaue Rechtsnorm; ein Urteil würde den politischen Frame statt eines exact Regelobjekts bewerten.",
+      "mechanism": "gegen ein pauschales Verbrenner-Verbot",
+      "not_assessable_reason": "EU-Regulierung arbeitet mit Flotten-CO2-Zielen und Flexibilitäten und wurde 2025/26 weiter revidiert; exact Rechtsakt/Regelversion/Alternativdesign fehlen in der Passage.",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0052-technologieoffene-innovation-ermoeglichen-wir-foerdern-for",
+      "problem_review": "Kein exact Regulierungsproblem ohne Rechtsobjekt/version.",
+      "source_locator": {
+        "pdf_page": 16,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0052-ICE-BAN-FRAME",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Klima",
+        "Luft/Gesundheit",
+        "Haushalt"
+      ],
+      "competence_delivery": "FEDERAL tax law; LAND advocacy.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "current_legal_baseline": "EnergieStG §2: sulphur-low petrol 654.50 EUR/1000l; gasoil/diesel 470.40 EUR/1000l after temporary May-June 2026 reduction expired",
+      "data_falsification": [
+        "Fahrleistung/Fuhrpark",
+        "Kraftstoffverbrauch",
+        "Steueraufkommen",
+        "CO2/NOx/PM",
+        "Verteilungswirkung",
+        "Umstiegskosten"
+      ],
+      "distribution_time": "Logistik/Handwerk/Dieselfahrer relativ begünstigt; fiskalische und externe Effekte bei Allgemeinheit/Betroffenen.",
+      "evidence_level": "MEDIUM",
+      "goal_review": "Bezahlbare Mobilität/Logistik bei verursachungsgerechteren Klima-/Gesundheitskosten.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Der aktuell niedrigere Energiesteuersatz für Diesel gegenüber Benzin senkt dieselbezogene Betriebskosten, begünstigt aber fossilen Diesel relativ und internalisiert Klima-/Luft-/Gesundheitswirkungen nicht vollständig.",
+      "mechanism": "niedrigeren Energiesteuersatz für Diesel erhalten",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0052-technologieoffene-innovation-ermoeglichen-wir-foerdern-for",
+      "problem_review": "Kostenbelastung ist real, aber eine Technologie-/Kraftstoffsteuerdifferenz ist nur ein Instrument und nicht selbst Ziel.",
+      "source_locator": {
+        "pdf_page": 16,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0052-DIESEL-TAX-DIFFERENTIAL",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Lebenszyklus-Klima",
+        "Luft/Gesundheit",
+        "Land-/Rohstoffnutzung"
+      ],
+      "competence_delivery": "MULTI_LEVEL tax/fuel/transport regulation and support.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Kraftstoffpfad",
+        "Well-to-Wheel/LCA",
+        "erneuerbare Inputs",
+        "Kosten",
+        "Einsatzsegment",
+        "indirekte Effekte"
+      ],
+      "distribution_time": "Verkehr/Industrie, Energie-/Rohstoffketten; mittel-/langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Lebenszyklus-emissionsarme effiziente Anwendung, nicht Fuel-Label.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "CO2-mindernde Kraftstoffe können in geeigneten Anwendungen Emissionen reduzieren; ohne Kraftstoffdefinition, LCA, Additionalität und Einsatzpriorisierung drohen Scheinemissionsminderung und Verdrängung effizienterer Optionen.",
+      "mechanism": "CO2-mindernde Kraftstoffe fördern",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0052-technologieoffene-innovation-ermoeglichen-wir-foerdern-for",
+      "problem_review": "Dekarbonisierungsbedarf real; Nutzen kraftstoff-/anwendungsabhängig.",
+      "source_locator": {
+        "pdf_page": 16,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0052-CO2-REDUCING-FUELS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "additionality_guard": "2025 Landesvergabegesetz relaxation is inherited baseline",
+      "boundaries_noncompensation": [
+        "Wettbewerb",
+        "Transparenz",
+        "Korruptionsschutz",
+        "Rechtsschutz"
+      ],
+      "competence_delivery": "LAND/Kommunen within procurement/EU law.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Dauer",
+        "Bieterzahl",
+        "Preis/Qualität",
+        "Nachprüfungen",
+        "Rechts-/Korruptionsrisiken"
+      ],
+      "distribution_time": "Vergabestellen, Unternehmen, öffentliche Auftragsempfänger; kurzfristig/Projektlaufzeit.",
+      "evidence_level": "LOW",
+      "goal_review": "Schnelle, rechtssichere, wettbewerbliche und qualitativ gute Beschaffung.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Vereinfachte/digitalisierte Vergaben können Verfahrenszeit und Transaktionskosten senken; zu starke Lockerung kann Wettbewerb, Transparenz, Qualität oder Schutz-/Tarifkriterien schwächen.",
+      "mechanism": "Vergabeverfahren vereinfachen, beschleunigen und digitalisieren",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0053-buerokratie-weiter-abbauen-und-vergaben-erleichtern-nicht",
+      "problem_review": "Verfahrensfriktion plausibel; Baseline zu Dauer, Bietern und Nachprüfungen nötig.",
+      "source_locator": {
+        "pdf_page": 16,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0053-PROCUREMENT-SIMPLIFY-DIGITAL",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Gleichbehandlung",
+        "Wettbewerb",
+        "Qualität"
+      ],
+      "competence_delivery": "LAND/Kommunen within procurement law.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Bieter-/Zuschlagsanteil KMU",
+        "Verfahrenskosten",
+        "Wettbewerb/Preise",
+        "Qualität",
+        "regionale Verzerrung"
+      ],
+      "distribution_time": "KMU, größere Bieter, Vergabestellen; kurzfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Breiter wirksamer Wettbewerb und diskriminierungsfreier Zugang.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Niedrigere Zugangshürden können mehr KMU-Wettbewerb ermöglichen, wenn Losbildung, digitale Bedienbarkeit und Eignungsanforderungen verhältnismäßig bleiben.",
+      "mechanism": "KMU-Zugang zu öffentlichen Aufträgen erleichtern",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0053-buerokratie-weiter-abbauen-und-vergaben-erleichtern-nicht",
+      "problem_review": "KMU können überproportional von fixen Vergabekosten betroffen sein; aktuelle Teilnahmedaten nötig.",
+      "source_locator": {
+        "pdf_page": 16,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0053-SME-PROCUREMENT-ACCESS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Haushalt",
+        "Verteilungsfairness"
+      ],
+      "competence_delivery": "FEDERAL advocacy.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "exact Steuer",
+        "Entlastungsverteilung",
+        "Investition/Beschäftigung",
+        "Gegenfinanzierung",
+        "Mitnahme"
+      ],
+      "distribution_time": "Profitierende Unternehmen, öffentliche Haushalte, Gegenfinanzierungsbetroffene; kurz-/mittelfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Investition/Produktivität/Tragfähigkeit bei solider Finanzierung.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Steuerentlastung kann Liquidität und Investition erhöhen, reduziert aber Einnahmen und wirkt je Steuerbasis/Profitabilität unterschiedlich.",
+      "mechanism": "Handwerk und Mittelstand steuerlich entlasten",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0054-vom-bund-eine-verantwortungsvolle-wirtschafts-und-sozialpo",
+      "problem_review": "Steuerlast ist nicht automatisch binding bottleneck; exact Steuer und marginale Belastung offen.",
+      "source_locator": {
+        "pdf_page": 16,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0054-SME-TAX-RELIEF",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Systemtragfähigkeit",
+        "soziale Sicherung"
+      ],
+      "competence_delivery": "FEDERAL.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Beitragssatz",
+        "Beschäftigung/Lohn",
+        "Bundeszuschuss",
+        "Leistungsniveau",
+        "Verteilung"
+      ],
+      "distribution_time": "Arbeitgeber, Beschäftigte, Beitragszahler, Steuerzahler/Leistungsempfänger; mittel-/langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Beschäftigungsfreundliche Arbeitskosten bei tragfähiger sozialer Sicherung.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Gedeckelte Sozialabgaben können Arbeitskosten begrenzen, erfordern aber Gegenfinanzierung oder Leistungs-/Beitragsdesignänderung; sonst entstehen Finanzierungs- und Verteilungsrisiken.",
+      "mechanism": "Sozialabgaben deckeln",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0054-vom-bund-eine-verantwortungsvolle-wirtschafts-und-sozialpo",
+      "problem_review": "Arbeitskosten können Beschäftigung beeinflussen; Beitragshöhe ist zugleich Systemfinanzierung.",
+      "source_locator": {
+        "pdf_page": 16,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0054-SOCIAL-CONTRIBUTION-CAP",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Existenzminimum",
+        "Verhältnismäßigkeit",
+        "Rechtsschutz",
+        "Gesundheit"
+      ],
+      "competence_delivery": "überwiegend FEDERAL law, multi-level administration.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "exact Instrument",
+        "Zielgruppe",
+        "Jobqualität",
+        "Sanktionen",
+        "Übergänge",
+        "Armuts-/Gesundheitswirkung"
+      ],
+      "distribution_time": "Leistungsberechtigte, Verwaltung, Arbeitgeber; kurz-/mittelfristig.",
+      "evidence_level": "NOT_ASSESSABLE",
+      "goal_review": "Nachhaltige Erwerbsteilhabe und Existenzsicherung; Aktivierung ist Instrument.",
+      "impact_direction": "OPEN",
+      "key_finding": "Ohne konkretes Unterstützungs-, Zumutbarkeits-, Zielgruppen- und Sanktionsdesign ist keine robuste Richtung zu Beschäftigung, Armut, Gesundheit oder Verwaltung möglich.",
+      "mechanism": "Fördern und Fordern in der Grundsicherung stärken",
+      "not_assessable_reason": "Die Passage benennt kein exact Aktivierungs-/Förderinstrument und keine Schutzbedingungen.",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0054-vom-bund-eine-verantwortungsvolle-wirtschafts-und-sozialpo",
+      "problem_review": "Arbeitsmarkt-/Transferproblem muss nach Zielgruppe und Ursache getrennt werden.",
+      "source_locator": {
+        "pdf_page": 16,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0054-BASIC-SECURITY-ACTIVATION",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Existenzminimum",
+        "Verhältnismäßigkeit",
+        "Rechtsschutz"
+      ],
+      "competence_delivery": "FEDERAL/multi-level administration.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "validierte Missbrauchsquote",
+        "Fehler-/Widerspruchsquote",
+        "Sanktionstyp",
+        "Rückforderung",
+        "soziale Nebenfolgen"
+      ],
+      "distribution_time": "Leistungsberechtigte, Verwaltung, Beitrags-/Steuerzahler; kurzfristig.",
+      "evidence_level": "NOT_ASSESSABLE",
+      "goal_review": "Rechtmäßiger Leistungsbezug und Missbrauchsvermeidung bei Schutz berechtigter Ansprüche.",
+      "impact_direction": "OPEN",
+      "key_finding": "Ohne Missbrauchstatbestand, Evidenzbasis, Verfahren, Sanktion und Fehlentscheidungsschutz ist kein belastbares Wirkungsurteil möglich.",
+      "mechanism": "Missbrauch sozialer Sicherung konsequent sanktionieren",
+      "not_assessable_reason": "Die Primärquelle spezifiziert Tatbestand, Verfahren und Sanktionsdesign nicht.",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0054-vom-bund-eine-verantwortungsvolle-wirtschafts-und-sozialpo",
+      "problem_review": "Missbrauchsbehauptung benötigt validierte Baseline; Fehler-/Overclaim-Risiko separat.",
+      "source_locator": {
+        "pdf_page": 16,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0054-SOCIAL-BENEFIT-ABUSE-SANCTIONS",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Arbeitsrechte",
+        "Nichtdiskriminierung",
+        "faire Rekrutierung"
+      ],
+      "competence_delivery": "Aufenthalts-/Arbeitsrecht überwiegend FEDERAL; LAND bei Anerkennung/Welcome/Verwaltung.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Bearbeitungszeit",
+        "Anerkennung",
+        "Beschäftigung",
+        "Lohn/Jobqualität",
+        "Verbleib",
+        "regionale/branchenbezogene Engpässe"
+      ],
+      "distribution_time": "Zugewanderte Fachkräfte, Betriebe, Kommunen, Herkunftsregionen; mittel-/langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Nachhaltige Besetzung echter Engpassstellen bei fairen Bedingungen.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Vereinfachte regelgebundene Fachkräftezuwanderung kann belegte Engpässe senken, wenn Anerkennung, Matching, Arbeitsrechte, Wohnen/Integration und Verbleib funktionieren.",
+      "mechanism": "qualifizierte Fachkräftezuwanderung erleichtern",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0055-zudem-streben-wir-gezielte-erleichterungen-fuer-eine-unbue",
+      "problem_review": "Fachkräfteengpässe müssen sektor-/regionalbezogen belegt werden.",
+      "source_locator": {
+        "pdf_page": 17,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0055-SKILLED-IMMIGRATION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Arbeitszeit/Gesundheit",
+        "Sozialfinanzierung",
+        "Verteilungsfairness"
+      ],
+      "competence_delivery": "FEDERAL social-insurance law.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "zusätzliche statt umdeklarierte Stunden",
+        "Beschäftigung/Produktivität",
+        "Beitragseinnahmen",
+        "Gesundheit/Arbeitszeit",
+        "Verteilung"
+      ],
+      "distribution_time": "Beschäftigte, Arbeitgeber, Sozialversicherungen; kurz-/mittelfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Zusätzliches freiwilliges Arbeitsangebot bei Gesundheit/Systemtragfähigkeit.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Sozialversicherungsfreie Mehrarbeit kann Nettoanreiz/Arbeitsangebot erhöhen, reduziert aber Beitragsbasis und kann Belastung, Ungleichheit zwischen Beschäftigungsformen oder Umdeklaration erzeugen.",
+      "mechanism": "Mehrarbeit sozialversicherungsfrei machen",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0055-zudem-streben-wir-gezielte-erleichterungen-fuer-eine-unbue",
+      "problem_review": "Arbeitsangebotsengpass plausibel; tatsächliche Elastizität/Überstundenbaseline offen.",
+      "source_locator": {
+        "pdf_page": 17,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0055-EXTRA-WORK-SS-FREE",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Freiwilligkeit",
+        "Gesundheit/Arbeitsschutz",
+        "Sozialfinanzierung"
+      ],
+      "competence_delivery": "FEDERAL social-insurance/tax law.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "zusätzliche Beschäftigungsmonate/-stunden",
+        "Berufs-/Einkommensgruppen",
+        "Mitnahme",
+        "Beitragseffekt",
+        "Gesundheit/Arbeitsbedingungen"
+      ],
+      "distribution_time": "Ältere Beschäftigte, Arbeitgeber, Sozialversicherungen; mittel-/langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Freiwillige zusätzliche Erwerbsteilhabe, nicht längere Arbeit als Pflicht.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Geringere Abgaben auf freiwillige Arbeit im Rentenalter können Erwerbsverbleib erhöhen, wirken aber stark nach Gesundheit, Beruf, Einkommen und Rentenstatus und verändern Sozialfinanzierung.",
+      "mechanism": "Arbeit im Rentenalter sozialversicherungsfrei stellen",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0055-zudem-streben-wir-gezielte-erleichterungen-fuer-eine-unbue",
+      "problem_review": "Arbeitskräfteengpass und Erwerbswunsch älterer Personen sind heterogen.",
+      "source_locator": {
+        "pdf_page": 17,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0055-RETIREMENT-WORK-SS-FREE",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Sicherheit",
+        "Natur/Fläche",
+        "Haushalt"
+      ],
+      "competence_delivery": "BUND/DB/LAND je Netz/Bestellung.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Kapazität",
+        "Pünktlichkeit",
+        "Fahrzeit",
+        "Nachfrage/Modal Shift",
+        "Kosten",
+        "Baustellenfolgen",
+        "Emissionen"
+      ],
+      "distribution_time": "Pendler, Güterverkehr, Regionen; mittel-/langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Zuverlässige zugängliche Mobilität/Logistik statt Bauoutput.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Schienensanierung/-ausbau kann Kapazität, Zuverlässigkeit und Modal Shift verbessern, wenn Engpässe priorisiert und Bau-/Betriebsunterbrechungen beherrscht werden.",
+      "mechanism": "Schienenwege ausbessern und ausbauen",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0056-auch-hier-wollen-wir-zusammen-mit-dem-bund-intensiv-in-die",
+      "problem_review": "Kapazitäts-/Qualitätsengpässe projektspezifisch; Netzbaseline nötig.",
+      "source_locator": {
+        "pdf_page": 17,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0056-RAIL",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Sicherheit",
+        "Lärm/Gesundheit",
+        "Klima",
+        "Natur/Fläche",
+        "Haushalt"
+      ],
+      "competence_delivery": "BUND/LAND/KOMMUNAL je Straße.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Zustand/Sicherheit",
+        "Reisezeit",
+        "induzierter Verkehr",
+        "Emission/Lärm/Fläche",
+        "Kosten",
+        "Alternativen"
+      ],
+      "distribution_time": "Verkehrsteilnehmer, Anwohner, Regionen, Umwelt; langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Sichere zuverlässige Erreichbarkeit bei minimalen System-/Umweltkosten.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Straßensanierung kann Sicherheit/Zuverlässigkeit verbessern; Kapazitätsausbau kann Erreichbarkeit erhöhen, aber zusätzlichen Verkehr, Flächen-, Lärm-, Klima- und Haushaltswirkungen erzeugen.",
+      "mechanism": "Straßen ausbessern und ausbauen",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0056-auch-hier-wollen-wir-zusammen-mit-dem-bund-intensiv-in-die",
+      "problem_review": "Straßenzustand/Kapazitätsengpass projektspezifisch zu belegen.",
+      "source_locator": {
+        "pdf_page": 17,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0056-ROAD",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Gewässerökologie",
+        "Niedrigwasserresilienz",
+        "Haushalt"
+      ],
+      "competence_delivery": "Bundeswasserstraßen überwiegend BUND; LAND regionaler Nutzer/Advocacy.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Gütermenge/Modal Shift",
+        "Niedrigwasser-Verfügbarkeit",
+        "Transportkosten",
+        "ökologische Zustände",
+        "Bau-/Unterhaltungskosten"
+      ],
+      "distribution_time": "Güterwirtschaft, Anlieger, Gewässerökosysteme; langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Resiliente effiziente Güterlogistik bei erhaltenen Gewässerökosystemen.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Wasserstraßeninvestitionen können Güterverkehrskapazität und Modal Shift unterstützen, müssen aber Hydrologie, Niedrigwasserresilienz, Ökologie und hohe Infrastruktur-Lifecyclekosten einbeziehen.",
+      "mechanism": "Wasserwege ausbessern und ausbauen",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0056-auch-hier-wollen-wir-zusammen-mit-dem-bund-intensiv-in-die",
+      "problem_review": "Kapazitäts-/Zuverlässigkeitsproblem ist wasserstraßen- und hydrologiespezifisch.",
+      "source_locator": {
+        "pdf_page": 17,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0056-WATERWAYS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    }
+  ],
+  "party": "CDU",
+  "primary_pdf_pages": [
+    15,
+    16,
+    17
+  ],
+  "primary_source_diff": [
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_2_CHILD_SPLIT_FOR_ETS_AND_MSR",
+      "classification": "TRUNCATED",
+      "legacy_unit": "0047"
+    },
+    {
+      "action": "KEEP_ID",
+      "classification": "SAME",
+      "legacy_unit": "0048"
+    },
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_4_CHILD_SPLIT",
+      "classification": "TRUNCATED",
+      "legacy_unit": "0049"
+    },
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_3_CHILD_SPLIT",
+      "classification": "OVERMERGED",
+      "legacy_unit": "0050"
+    },
+    {
+      "action": "KEEP_ID_NO_INDEPENDENT_EFFECT_COUNT",
+      "classification": "CONTEXT_ONLY",
+      "legacy_unit": "0051"
+    },
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_7_CHILD_SPLIT",
+      "classification": "OVERMERGED",
+      "legacy_unit": "0052"
+    },
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_2_CHILD_SPLIT; 2025_LAW_CHANGE_INHERITED_BASELINE",
+      "classification": "OVERMERGED",
+      "legacy_unit": "0053"
+    },
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_4_CHILD_SPLIT; MINIMUM_WAGE_SENTENCE_CONTEXT_ONLY",
+      "classification": "TRUNCATED",
+      "legacy_unit": "0054"
+    },
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_3_CHILD_SPLIT",
+      "classification": "OVERMERGED",
+      "legacy_unit": "0055"
+    },
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_3_CHILD_SPLIT",
+      "classification": "OVERMERGED",
+      "legacy_unit": "0056"
+    }
+  ],
+  "primary_source_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf",
+  "programme_key": "ltw-2026-st-cdu",
+  "schema_normalization": {
+    "legacy_parent_reference_resolution": "IMMUTABLE_RELEASE1_COMMITMENT_ID_WHERE_NUMERIC_PARENT_PRESENT",
+    "mode": "MECHANICAL_ALIAS_ONLY_NO_NEW_FACH_SEMANTICS",
+    "terminal_alias": "terminal_source_objects"
   },
+  "schema_version": "1.0",
   "segment_completion": {
-    "new_or_split_terminal": 28,
-    "source_restore_gaps": 0,
-    "full_programme_semantic_reconciliation_complete": false,
     "authoritative_denominator_frozen": false,
-    "next_segment": "official PDF pp.18-22 / education / legacy 0057ff"
-  }
+    "full_programme_semantic_reconciliation_complete": false,
+    "new_or_split_terminal": 28,
+    "next_segment": "official PDF pp.18-22 / education / legacy 0057ff",
+    "source_restore_gaps": 0
+  },
+  "segment_status": "SEMANTIC_RECONCILIATION_COMPLETE_FOR_P15_P17",
+  "shard_version": "2026-08-21-p15-p17-v1",
+  "terminal_source_objects": [
+    {
+      "boundaries_noncompensation": [
+        "ETS-Cap/Klimaziel",
+        "keine Kompensation schwerer Umweltfolgen durch Standortnutzen"
+      ],
+      "competence_delivery": "EU; Land nur Advocacy.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "effektive CO2-Kosten",
+        "Produktions-/Investitionsverlagerung",
+        "Emissionsintensität",
+        "freie Zuteilung je Anlage",
+        "Transformationsinvestitionen"
+      ],
+      "distribution_time": "ETS-Anlagen, Beschäftigte, Staatseinnahmen und Klima; kurz- bis langfristig.",
+      "evidence_level": "MEDIUM",
+      "goal_review": "Wettbewerbsfähige Dekarbonisierung statt kostenlose Zuteilung als Endziel.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Eine verlangsamte oder ausgesetzte Reduktion kostenloser ETS-Zuteilung kann kurzfristig Carbon-Leakage- und Kostenrisiken mindern, schwächt aber ceteris paribus CO2-Preisanreiz und kann Auktionserlöse sowie Transformationsdruck verändern.",
+      "mechanism": "Abschmelzen kostenloser ETS-Emissionsberechtigungen aussetzen/überarbeiten",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0047-wir-werden-dafuer-sorge-tragen-dass-sachsen-anhalt-auch-we",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0047-wir-werden-dafuer-sorge-tragen-dass-sachsen-anhalt-auch-we",
+      "problem_review": "Hohe Energie-/CO2-Kosten und Carbon-Leakage-Risiko sind real, aber sektoral und anlagenbezogen zu messen; Chemie ist kein einheitlicher Benchmark.",
+      "source_locator": {
+        "pdf_page": 15,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0047-ETS-FREE-ALLOCATION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "additionality_guard": "EU_COMMISSION_PROPOSAL_PREEXISTS_ELECTION_TERM",
+      "boundaries_noncompensation": [
+        "ETS-Cap",
+        "Klimaziel"
+      ],
+      "competence_delivery": "EU-Gesetzgebung; Land Advocacy.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "MSR-Rechtsstand",
+        "TNAC",
+        "Reservebestand",
+        "ETS-Preisvolatilität",
+        "Industrieinvestition",
+        "Emissionen"
+      ],
+      "distribution_time": "ETS-Sektoren, Zertifikatmarkt, Staatseinnahmen, Klima; systemweit/mehrjährig.",
+      "evidence_level": "MEDIUM",
+      "goal_review": "Stabiler, liquider ETS-Markt bei erhaltenem Dekarbonisierungspfad.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Das Stoppen der MSR-Invalidierung kann einen Zertifikatspuffer gegen Knappheit und Volatilität schaffen, verändert aber Erwartung, Knappheit und Preisbildung; die Kommission hatte eine solche Änderung bereits am 01.04.2026 vorgeschlagen.",
+      "mechanism": "Löschungs-/Invalidierungsmechanismus der ETS-Marktstabilitätsreserve aussetzen/überarbeiten",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0047-wir-werden-dafuer-sorge-tragen-dass-sachsen-anhalt-auch-we",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0047-wir-werden-dafuer-sorge-tragen-dass-sachsen-anhalt-auch-we",
+      "problem_review": "Marktstabilität und Preisvolatilität sind relevante Systemfragen; ein niedriger Zertifikatspreis ist nicht selbst Wirkungsziel.",
+      "source_locator": {
+        "pdf_page": 15,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0047-MSR-INVALIDATION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Beihilfe-/Haushaltsrecht",
+        "Umwelt-/Ressourcenschutz"
+      ],
+      "competence_delivery": "Bund-Land-Gemeinschaftsaufgabe; Land Bewilligung/Umsetzung.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Förderintensität",
+        "private Additionalität",
+        "Jobs/Löhne",
+        "Produktivität",
+        "Mitnahme",
+        "Bestand",
+        "Umwelt-/Ressourcenpfade"
+      ],
+      "distribution_time": "Fördergebiete, Unternehmen, Beschäftigte, Steuerzahler; mittel-/langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Zusätzliche resiliente Wertschöpfung statt Mittelabfluss.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "GRW-Förderung kann zusätzliche Investitionen und regionale Beschäftigung unterstützen; Wirkung hängt an Additionalität, Förderselektion und Lebenszyklus-/Ressourceneffekten.",
+      "mechanism": "GRW-Investitionsförderung für Betriebsstätten, Maschinen und Infrastruktur",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0049-verlaessliche-wirtschaftspolitische-rahmenbedingungen-fuer",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0049-verlaessliche-wirtschaftspolitische-rahmenbedingungen-fuer",
+      "problem_review": "Strukturelle Standortnachteile sind Förderlogik; projektbezogener binding bottleneck muss belegt werden.",
+      "source_locator": {
+        "pdf_pages": [
+          15,
+          16
+        ],
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0049-GRW-INVESTMENT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "faire Förderkriterien",
+        "Forschungsintegrität"
+      ],
+      "competence_delivery": "LAND/EU/FEDERAL je Programm.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "private Kofinanzierung",
+        "F&E-Output",
+        "Patente/Transfer",
+        "Scale-up",
+        "Mitnahme",
+        "Outcome"
+      ],
+      "distribution_time": "Unternehmen, Forschung und Regionen; mittel-/langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Zusätzliche Innovation, Produktivität und Transformation statt Projektzahl.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Innovationsförderung kann Wissens-, Finanzierungs- und Technologierisiken adressieren, wenn Projekte additional und transferfähig sind.",
+      "mechanism": "Innovationsförderung",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0049-verlaessliche-wirtschaftspolitische-rahmenbedingungen-fuer",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0049-verlaessliche-wirtschaftspolitische-rahmenbedingungen-fuer",
+      "problem_review": "Innovationsfinanzierungs-/Kooperationslücken sind plausibel, aber projektbezogen zu belegen.",
+      "source_locator": {
+        "pdf_page": 15,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0049-INNOVATION-FUNDING",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Haushalts-/Beihilferecht",
+        "Transparenz"
+      ],
+      "competence_delivery": "LAND/Förderbank/BUND/EU je Instrument.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Finanzierungslücke",
+        "Default/Verlust",
+        "Zusatzinvestition",
+        "Verdrängung privater Finanzierung",
+        "Unternehmensbestand"
+      ],
+      "distribution_time": "Unternehmen, Kreditgeber, öffentliche Haushalte; mittel-/langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Additionale tragfähige Investitionen bei angemessenem Risiko.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Finanzierungshilfen können Kapitalzugang für tragfähige Investitionen verbessern; falsche Konditionen erzeugen Mitnahme, Fehlallokation oder fiskalisches Risiko.",
+      "mechanism": "Finanzierungshilfen",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0049-verlaessliche-wirtschaftspolitische-rahmenbedingungen-fuer",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0049-verlaessliche-wirtschaftspolitische-rahmenbedingungen-fuer",
+      "problem_review": "Finanzierung ist nur binding bottleneck, wenn rentable Projekte tatsächlich am Kapitalzugang scheitern.",
+      "source_locator": {
+        "pdf_page": 15,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0049-FINANCING-AID",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Gleichbehandlung",
+        "Transparenz",
+        "Beihilferecht"
+      ],
+      "competence_delivery": "LAND/IMG/Förderstruktur.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Lead-to-investment",
+        "Bestand",
+        "Förderkosten",
+        "regionale Verteilung",
+        "Mitnahme",
+        "Ressourcenabhängigkeit"
+      ],
+      "distribution_time": "Unternehmen, Kommunen, Regionen; mittel-/langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Additionale resiliente Wertschöpfung, nicht Betreuungskontakte.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Ansiedlungs-/Bestandsbetreuung kann Koordinationsfriktionen senken und Standorte stabilisieren; individuelle Betreuung kann Selektions-, Beihilfe- oder Lock-in-Risiken erzeugen.",
+      "mechanism": "aktive Ansiedlungs- und Bestandsbetreuung",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0049-verlaessliche-wirtschaftspolitische-rahmenbedingungen-fuer",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0049-verlaessliche-wirtschaftspolitische-rahmenbedingungen-fuer",
+      "problem_review": "Koordinations-/Informationsfriktionen plausibel; Additionalität muss je Fall geprüft werden.",
+      "source_locator": {
+        "pdf_page": 15,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0049-SETTLEMENT-EXISTING-BUSINESS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Datenschutz",
+        "Cyberresilienz",
+        "faire Zugänglichkeit"
+      ],
+      "competence_delivery": "LAND funding/advisory levers.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Produktivität",
+        "Prozesszeit",
+        "Energie/Material",
+        "Cybervorfälle",
+        "Kofinanzierung",
+        "Nutzung nach Förderung"
+      ],
+      "distribution_time": "KMU/Beschäftigte/Regionen; mittel-/langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Messbare Prozess-/Produktivitäts-/Resilienzverbesserung.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Modernisierungs-/Digitalisierungsunterstützung kann Produktivität, Energie-/Materialeffizienz und Anpassungsfähigkeit erhöhen, sofern Fähigkeiten und Prozesse statt bloßer Technikkauf adressiert werden.",
+      "mechanism": "KMU-Modernisierung und Digitalisierung unterstützen",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0050-darueber-hinaus-foerdern-wir-modernisierung-erweiterung-un",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0050-darueber-hinaus-foerdern-wir-modernisierung-erweiterung-un",
+      "problem_review": "Technologie-/Kompetenzlücken sind plausibel; branchenspezifische Baseline nötig.",
+      "source_locator": {
+        "pdf_page": 16,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0050-SME-MODERNISATION-DIGITAL",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "faire Zugänglichkeit",
+        "Wettbewerbsneutralität"
+      ],
+      "competence_delivery": "LAND programme/funding ecosystem.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Additionalität",
+        "Überleben",
+        "Beschäftigung",
+        "Innovation/Transfer",
+        "Mitnahme",
+        "regionale/soziale Verteilung"
+      ],
+      "distribution_time": "Gründer, Beschäftigte, Regionen; mittel-/langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Tragfähige additionale Gründungen/Innovationen.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Gründungs-/Innovationsförderung kann Experimentier- und Finanzierungsengpässe senken; Wirkung misst sich an zusätzlichen tragfähigen Unternehmen und Innovationen, nicht Gründungszahlen allein.",
+      "mechanism": "Gründungen und technologieoffene Innovation stärken",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0050-darueber-hinaus-foerdern-wir-modernisierung-erweiterung-un",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0050-darueber-hinaus-foerdern-wir-modernisierung-erweiterung-un",
+      "problem_review": "Kapital-, Netzwerk- und Marktzugangsfriktionen plausibel; Baseline offen.",
+      "source_locator": {
+        "pdf_page": 16,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0050-STARTUP-INNOVATION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Forschungsfreiheit",
+        "IP-/Kooperationsfairness"
+      ],
+      "competence_delivery": "Hochschulen/Forschung/Wirtschaft; Land Förder-/Koordinationshebel.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "gemeinsame Projekte",
+        "Lizenzen/Spin-offs",
+        "Unternehmensanwendung",
+        "Additionalität",
+        "Scale-up"
+      ],
+      "distribution_time": "Forschung, Unternehmen, Beschäftigte; mittel-/langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Zusätzliche Anwendung und Skalierung von Wissen.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Wissenstransfer kann die Lücke zwischen Forschung und Anwendung verringern, wenn IP-, Anreiz-, Personal- und Absorptionsbarrieren adressiert werden.",
+      "mechanism": "Wissenstransfer zwischen Wirtschaft und Wissenschaft stärken",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0050-darueber-hinaus-foerdern-wir-modernisierung-erweiterung-un",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0050-darueber-hinaus-foerdern-wir-modernisierung-erweiterung-un",
+      "problem_review": "Transferfriktionen plausibel; konkrete Branchen-/Technologiebaseline nötig.",
+      "source_locator": {
+        "pdf_page": 16,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0050-KNOWLEDGE-TRANSFER",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Lebenszyklus-Klima",
+        "Luft/Gesundheit",
+        "Ressourcen"
+      ],
+      "competence_delivery": "LAND research funding; EU/FEDERAL regulatory context.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "LCA",
+        "Energiebedarf",
+        "EE-Additionalität",
+        "Kosten",
+        "Einsatzsegment"
+      ],
+      "distribution_time": "Forschung, Industrie, Energie-/Rohstoffsysteme; langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Emissionsarme effiziente Mobilität/Prozesse, nicht Kraftstofftechnologie an sich.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Alternative-Kraftstoff-Forschung kann Nischen für schwer elektrifizierbare Anwendungen erschließen; Klima-/Kostenwirkung hängt stark von Strom-/Rohstoffquelle, Lebenszyklus, Effizienz und Einsatzfeld ab.",
+      "mechanism": "Forschung an alternativen Kraftstoffen",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0052-technologieoffene-innovation-ermoeglichen-wir-foerdern-for",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0052-technologieoffene-innovation-ermoeglichen-wir-foerdern-for",
+      "problem_review": "Dekarbonisierungsbedarf real; Technologieengpass ist einsatzfeldspezifisch.",
+      "source_locator": {
+        "pdf_page": 16,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0052-ALT-FUELS-RESEARCH",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "keine problematischen Stoffkreisläufe",
+        "Gesundheit/Umwelt"
+      ],
+      "competence_delivery": "LAND research/innovation support within EU waste/product law.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Sekundärmaterialanteil",
+        "Lebensdauer",
+        "Recyclingqualität",
+        "Primärrohstoff-/Abfallreduktion",
+        "Skalierung"
+      ],
+      "distribution_time": "Industrie, Verbraucher, Umwelt; mittel-/langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Weniger Primärrohstoff-/Abfallbelastung bei erhaltener Funktion/Qualität.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Kreislaufforschung kann Primärrohstoffbedarf, Abfall und Lieferkettenrisiken senken, wenn sie in skalierbare hochwertige Kreisläufe übergeht.",
+      "mechanism": "Forschung zur Kreislaufwirtschaft",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0052-technologieoffene-innovation-ermoeglichen-wir-foerdern-for",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0052-technologieoffene-innovation-ermoeglichen-wir-foerdern-for",
+      "problem_review": "Ressourcen-/Abfall- und Abhängigkeitsprobleme sind plausibel; Materialstrombaseline nötig.",
+      "source_locator": {
+        "pdf_page": 16,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0052-CIRCULAR-RESEARCH",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "H2-Additionalität",
+        "Methan-/CO2-Lebenszyklus",
+        "Kosten/Lock-in"
+      ],
+      "competence_delivery": "MULTI_LEVEL network/research architecture.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "H2-Herkunft",
+        "Additionalität",
+        "Endnutzung",
+        "Auslastung",
+        "Vollkosten",
+        "vermiedene Emissionen"
+      ],
+      "distribution_time": "Industriecluster, Energieverbraucher, Netznutzer; langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Klimakompatible, kosteneffiziente Versorgung schwer elektrifizierbarer Anwendungen.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "H2-Netzinnovation kann schwer elektrifizierbare Industrie unterstützen; ohne zusätzliche erneuerbare H2-Mengen, geeignete Endnutzung und Systemkostenprüfung drohen Lock-in und Fehlallokation.",
+      "mechanism": "Forschung zu Wasserstoffnetzen",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0052-technologieoffene-innovation-ermoeglichen-wir-foerdern-for",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0052-technologieoffene-innovation-ermoeglichen-wir-foerdern-for",
+      "problem_review": "Industrie-Dekarbonisierungs-/Infrastrukturengpass plausibel; Endnutzungs-/Mengenbaseline nötig.",
+      "source_locator": {
+        "pdf_page": 16,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0052-H2-NETWORKS-RESEARCH",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Rohstoff-/Umweltlebenszyklus",
+        "Sicherheit"
+      ],
+      "competence_delivery": "LAND research support; energy-market context MULTI_LEVEL.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "round-trip efficiency",
+        "Zyklen",
+        "Systemdienstleistung",
+        "Lebenszykluskosten/-emissionen",
+        "Materialpfad"
+      ],
+      "distribution_time": "Strom-/Wärmesystem, Verbraucher, Rohstoffketten; mittel-/langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Kosteneffiziente Systemflexibilität statt Speicherbau als Selbstzweck.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Speicherforschung kann Flexibilität, Integration variabler Erzeugung und Resilienz verbessern; Wirkung bleibt technologie-/standortabhängig.",
+      "mechanism": "Forschung zu Speichertechnologien",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0052-technologieoffene-innovation-ermoeglichen-wir-foerdern-for",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0052-technologieoffene-innovation-ermoeglichen-wir-foerdern-for",
+      "problem_review": "Flexibilitäts-/Speicherbedarf ist system- und zeitabhängig; konkrete Baseline nötig.",
+      "source_locator": {
+        "pdf_page": 16,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0052-STORAGE-RESEARCH",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Klima",
+        "Luft/Gesundheit",
+        "Verbraucherschutz"
+      ],
+      "competence_delivery": "EU/FEDERAL advocacy context.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "geltender Rechtsstand",
+        "Fahrzeugklassen",
+        "Zieljahr",
+        "Flexibilitäten",
+        "LCA",
+        "Luftqualität",
+        "Kosten",
+        "Industriepfad"
+      ],
+      "distribution_time": "Fahrzeughersteller, Verbraucher, Energie-/Luft-/Klimasystem; langfristig.",
+      "evidence_level": "NOT_ASSESSABLE",
+      "goal_review": "Technologie-/Industrie-/Klimaoptionen nur gegen denselben Ziel-/Schutzrahmen vergleichen.",
+      "impact_direction": "OPEN",
+      "key_finding": "Der Ausdruck 'pauschales Verbrenner-Verbot' bezeichnet keine hinreichend genaue Rechtsnorm; ein Urteil würde den politischen Frame statt eines exact Regelobjekts bewerten.",
+      "mechanism": "gegen ein pauschales Verbrenner-Verbot",
+      "not_assessable_reason": "EU-Regulierung arbeitet mit Flotten-CO2-Zielen und Flexibilitäten und wurde 2025/26 weiter revidiert; exact Rechtsakt/Regelversion/Alternativdesign fehlen in der Passage.",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0052-technologieoffene-innovation-ermoeglichen-wir-foerdern-for",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0052-technologieoffene-innovation-ermoeglichen-wir-foerdern-for",
+      "problem_review": "Kein exact Regulierungsproblem ohne Rechtsobjekt/version.",
+      "source_locator": {
+        "pdf_page": 16,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0052-ICE-BAN-FRAME",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Klima",
+        "Luft/Gesundheit",
+        "Haushalt"
+      ],
+      "competence_delivery": "FEDERAL tax law; LAND advocacy.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "current_legal_baseline": "EnergieStG §2: sulphur-low petrol 654.50 EUR/1000l; gasoil/diesel 470.40 EUR/1000l after temporary May-June 2026 reduction expired",
+      "data_falsification": [
+        "Fahrleistung/Fuhrpark",
+        "Kraftstoffverbrauch",
+        "Steueraufkommen",
+        "CO2/NOx/PM",
+        "Verteilungswirkung",
+        "Umstiegskosten"
+      ],
+      "distribution_time": "Logistik/Handwerk/Dieselfahrer relativ begünstigt; fiskalische und externe Effekte bei Allgemeinheit/Betroffenen.",
+      "evidence_level": "MEDIUM",
+      "goal_review": "Bezahlbare Mobilität/Logistik bei verursachungsgerechteren Klima-/Gesundheitskosten.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Der aktuell niedrigere Energiesteuersatz für Diesel gegenüber Benzin senkt dieselbezogene Betriebskosten, begünstigt aber fossilen Diesel relativ und internalisiert Klima-/Luft-/Gesundheitswirkungen nicht vollständig.",
+      "mechanism": "niedrigeren Energiesteuersatz für Diesel erhalten",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0052-technologieoffene-innovation-ermoeglichen-wir-foerdern-for",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0052-technologieoffene-innovation-ermoeglichen-wir-foerdern-for",
+      "problem_review": "Kostenbelastung ist real, aber eine Technologie-/Kraftstoffsteuerdifferenz ist nur ein Instrument und nicht selbst Ziel.",
+      "source_locator": {
+        "pdf_page": 16,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0052-DIESEL-TAX-DIFFERENTIAL",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Lebenszyklus-Klima",
+        "Luft/Gesundheit",
+        "Land-/Rohstoffnutzung"
+      ],
+      "competence_delivery": "MULTI_LEVEL tax/fuel/transport regulation and support.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Kraftstoffpfad",
+        "Well-to-Wheel/LCA",
+        "erneuerbare Inputs",
+        "Kosten",
+        "Einsatzsegment",
+        "indirekte Effekte"
+      ],
+      "distribution_time": "Verkehr/Industrie, Energie-/Rohstoffketten; mittel-/langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Lebenszyklus-emissionsarme effiziente Anwendung, nicht Fuel-Label.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "CO2-mindernde Kraftstoffe können in geeigneten Anwendungen Emissionen reduzieren; ohne Kraftstoffdefinition, LCA, Additionalität und Einsatzpriorisierung drohen Scheinemissionsminderung und Verdrängung effizienterer Optionen.",
+      "mechanism": "CO2-mindernde Kraftstoffe fördern",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0052-technologieoffene-innovation-ermoeglichen-wir-foerdern-for",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0052-technologieoffene-innovation-ermoeglichen-wir-foerdern-for",
+      "problem_review": "Dekarbonisierungsbedarf real; Nutzen kraftstoff-/anwendungsabhängig.",
+      "source_locator": {
+        "pdf_page": 16,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0052-CO2-REDUCING-FUELS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "additionality_guard": "2025 Landesvergabegesetz relaxation is inherited baseline",
+      "boundaries_noncompensation": [
+        "Wettbewerb",
+        "Transparenz",
+        "Korruptionsschutz",
+        "Rechtsschutz"
+      ],
+      "competence_delivery": "LAND/Kommunen within procurement/EU law.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Dauer",
+        "Bieterzahl",
+        "Preis/Qualität",
+        "Nachprüfungen",
+        "Rechts-/Korruptionsrisiken"
+      ],
+      "distribution_time": "Vergabestellen, Unternehmen, öffentliche Auftragsempfänger; kurzfristig/Projektlaufzeit.",
+      "evidence_level": "LOW",
+      "goal_review": "Schnelle, rechtssichere, wettbewerbliche und qualitativ gute Beschaffung.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Vereinfachte/digitalisierte Vergaben können Verfahrenszeit und Transaktionskosten senken; zu starke Lockerung kann Wettbewerb, Transparenz, Qualität oder Schutz-/Tarifkriterien schwächen.",
+      "mechanism": "Vergabeverfahren vereinfachen, beschleunigen und digitalisieren",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0053-buerokratie-weiter-abbauen-und-vergaben-erleichtern-nicht",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0053-buerokratie-weiter-abbauen-und-vergaben-erleichtern-nicht",
+      "problem_review": "Verfahrensfriktion plausibel; Baseline zu Dauer, Bietern und Nachprüfungen nötig.",
+      "source_locator": {
+        "pdf_page": 16,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0053-PROCUREMENT-SIMPLIFY-DIGITAL",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Gleichbehandlung",
+        "Wettbewerb",
+        "Qualität"
+      ],
+      "competence_delivery": "LAND/Kommunen within procurement law.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Bieter-/Zuschlagsanteil KMU",
+        "Verfahrenskosten",
+        "Wettbewerb/Preise",
+        "Qualität",
+        "regionale Verzerrung"
+      ],
+      "distribution_time": "KMU, größere Bieter, Vergabestellen; kurzfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Breiter wirksamer Wettbewerb und diskriminierungsfreier Zugang.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Niedrigere Zugangshürden können mehr KMU-Wettbewerb ermöglichen, wenn Losbildung, digitale Bedienbarkeit und Eignungsanforderungen verhältnismäßig bleiben.",
+      "mechanism": "KMU-Zugang zu öffentlichen Aufträgen erleichtern",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0053-buerokratie-weiter-abbauen-und-vergaben-erleichtern-nicht",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0053-buerokratie-weiter-abbauen-und-vergaben-erleichtern-nicht",
+      "problem_review": "KMU können überproportional von fixen Vergabekosten betroffen sein; aktuelle Teilnahmedaten nötig.",
+      "source_locator": {
+        "pdf_page": 16,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0053-SME-PROCUREMENT-ACCESS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Haushalt",
+        "Verteilungsfairness"
+      ],
+      "competence_delivery": "FEDERAL advocacy.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "exact Steuer",
+        "Entlastungsverteilung",
+        "Investition/Beschäftigung",
+        "Gegenfinanzierung",
+        "Mitnahme"
+      ],
+      "distribution_time": "Profitierende Unternehmen, öffentliche Haushalte, Gegenfinanzierungsbetroffene; kurz-/mittelfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Investition/Produktivität/Tragfähigkeit bei solider Finanzierung.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Steuerentlastung kann Liquidität und Investition erhöhen, reduziert aber Einnahmen und wirkt je Steuerbasis/Profitabilität unterschiedlich.",
+      "mechanism": "Handwerk und Mittelstand steuerlich entlasten",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0054-vom-bund-eine-verantwortungsvolle-wirtschafts-und-sozialpo",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0054-vom-bund-eine-verantwortungsvolle-wirtschafts-und-sozialpo",
+      "problem_review": "Steuerlast ist nicht automatisch binding bottleneck; exact Steuer und marginale Belastung offen.",
+      "source_locator": {
+        "pdf_page": 16,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0054-SME-TAX-RELIEF",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Systemtragfähigkeit",
+        "soziale Sicherung"
+      ],
+      "competence_delivery": "FEDERAL.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Beitragssatz",
+        "Beschäftigung/Lohn",
+        "Bundeszuschuss",
+        "Leistungsniveau",
+        "Verteilung"
+      ],
+      "distribution_time": "Arbeitgeber, Beschäftigte, Beitragszahler, Steuerzahler/Leistungsempfänger; mittel-/langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Beschäftigungsfreundliche Arbeitskosten bei tragfähiger sozialer Sicherung.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Gedeckelte Sozialabgaben können Arbeitskosten begrenzen, erfordern aber Gegenfinanzierung oder Leistungs-/Beitragsdesignänderung; sonst entstehen Finanzierungs- und Verteilungsrisiken.",
+      "mechanism": "Sozialabgaben deckeln",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0054-vom-bund-eine-verantwortungsvolle-wirtschafts-und-sozialpo",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0054-vom-bund-eine-verantwortungsvolle-wirtschafts-und-sozialpo",
+      "problem_review": "Arbeitskosten können Beschäftigung beeinflussen; Beitragshöhe ist zugleich Systemfinanzierung.",
+      "source_locator": {
+        "pdf_page": 16,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0054-SOCIAL-CONTRIBUTION-CAP",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Existenzminimum",
+        "Verhältnismäßigkeit",
+        "Rechtsschutz",
+        "Gesundheit"
+      ],
+      "competence_delivery": "überwiegend FEDERAL law, multi-level administration.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "exact Instrument",
+        "Zielgruppe",
+        "Jobqualität",
+        "Sanktionen",
+        "Übergänge",
+        "Armuts-/Gesundheitswirkung"
+      ],
+      "distribution_time": "Leistungsberechtigte, Verwaltung, Arbeitgeber; kurz-/mittelfristig.",
+      "evidence_level": "NOT_ASSESSABLE",
+      "goal_review": "Nachhaltige Erwerbsteilhabe und Existenzsicherung; Aktivierung ist Instrument.",
+      "impact_direction": "OPEN",
+      "key_finding": "Ohne konkretes Unterstützungs-, Zumutbarkeits-, Zielgruppen- und Sanktionsdesign ist keine robuste Richtung zu Beschäftigung, Armut, Gesundheit oder Verwaltung möglich.",
+      "mechanism": "Fördern und Fordern in der Grundsicherung stärken",
+      "not_assessable_reason": "Die Passage benennt kein exact Aktivierungs-/Förderinstrument und keine Schutzbedingungen.",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0054-vom-bund-eine-verantwortungsvolle-wirtschafts-und-sozialpo",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0054-vom-bund-eine-verantwortungsvolle-wirtschafts-und-sozialpo",
+      "problem_review": "Arbeitsmarkt-/Transferproblem muss nach Zielgruppe und Ursache getrennt werden.",
+      "source_locator": {
+        "pdf_page": 16,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0054-BASIC-SECURITY-ACTIVATION",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Existenzminimum",
+        "Verhältnismäßigkeit",
+        "Rechtsschutz"
+      ],
+      "competence_delivery": "FEDERAL/multi-level administration.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "validierte Missbrauchsquote",
+        "Fehler-/Widerspruchsquote",
+        "Sanktionstyp",
+        "Rückforderung",
+        "soziale Nebenfolgen"
+      ],
+      "distribution_time": "Leistungsberechtigte, Verwaltung, Beitrags-/Steuerzahler; kurzfristig.",
+      "evidence_level": "NOT_ASSESSABLE",
+      "goal_review": "Rechtmäßiger Leistungsbezug und Missbrauchsvermeidung bei Schutz berechtigter Ansprüche.",
+      "impact_direction": "OPEN",
+      "key_finding": "Ohne Missbrauchstatbestand, Evidenzbasis, Verfahren, Sanktion und Fehlentscheidungsschutz ist kein belastbares Wirkungsurteil möglich.",
+      "mechanism": "Missbrauch sozialer Sicherung konsequent sanktionieren",
+      "not_assessable_reason": "Die Primärquelle spezifiziert Tatbestand, Verfahren und Sanktionsdesign nicht.",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0054-vom-bund-eine-verantwortungsvolle-wirtschafts-und-sozialpo",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0054-vom-bund-eine-verantwortungsvolle-wirtschafts-und-sozialpo",
+      "problem_review": "Missbrauchsbehauptung benötigt validierte Baseline; Fehler-/Overclaim-Risiko separat.",
+      "source_locator": {
+        "pdf_page": 16,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0054-SOCIAL-BENEFIT-ABUSE-SANCTIONS",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Arbeitsrechte",
+        "Nichtdiskriminierung",
+        "faire Rekrutierung"
+      ],
+      "competence_delivery": "Aufenthalts-/Arbeitsrecht überwiegend FEDERAL; LAND bei Anerkennung/Welcome/Verwaltung.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Bearbeitungszeit",
+        "Anerkennung",
+        "Beschäftigung",
+        "Lohn/Jobqualität",
+        "Verbleib",
+        "regionale/branchenbezogene Engpässe"
+      ],
+      "distribution_time": "Zugewanderte Fachkräfte, Betriebe, Kommunen, Herkunftsregionen; mittel-/langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Nachhaltige Besetzung echter Engpassstellen bei fairen Bedingungen.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Vereinfachte regelgebundene Fachkräftezuwanderung kann belegte Engpässe senken, wenn Anerkennung, Matching, Arbeitsrechte, Wohnen/Integration und Verbleib funktionieren.",
+      "mechanism": "qualifizierte Fachkräftezuwanderung erleichtern",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0055-zudem-streben-wir-gezielte-erleichterungen-fuer-eine-unbue",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0055-zudem-streben-wir-gezielte-erleichterungen-fuer-eine-unbue",
+      "problem_review": "Fachkräfteengpässe müssen sektor-/regionalbezogen belegt werden.",
+      "source_locator": {
+        "pdf_page": 17,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0055-SKILLED-IMMIGRATION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Arbeitszeit/Gesundheit",
+        "Sozialfinanzierung",
+        "Verteilungsfairness"
+      ],
+      "competence_delivery": "FEDERAL social-insurance law.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "zusätzliche statt umdeklarierte Stunden",
+        "Beschäftigung/Produktivität",
+        "Beitragseinnahmen",
+        "Gesundheit/Arbeitszeit",
+        "Verteilung"
+      ],
+      "distribution_time": "Beschäftigte, Arbeitgeber, Sozialversicherungen; kurz-/mittelfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Zusätzliches freiwilliges Arbeitsangebot bei Gesundheit/Systemtragfähigkeit.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Sozialversicherungsfreie Mehrarbeit kann Nettoanreiz/Arbeitsangebot erhöhen, reduziert aber Beitragsbasis und kann Belastung, Ungleichheit zwischen Beschäftigungsformen oder Umdeklaration erzeugen.",
+      "mechanism": "Mehrarbeit sozialversicherungsfrei machen",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0055-zudem-streben-wir-gezielte-erleichterungen-fuer-eine-unbue",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0055-zudem-streben-wir-gezielte-erleichterungen-fuer-eine-unbue",
+      "problem_review": "Arbeitsangebotsengpass plausibel; tatsächliche Elastizität/Überstundenbaseline offen.",
+      "source_locator": {
+        "pdf_page": 17,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0055-EXTRA-WORK-SS-FREE",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Freiwilligkeit",
+        "Gesundheit/Arbeitsschutz",
+        "Sozialfinanzierung"
+      ],
+      "competence_delivery": "FEDERAL social-insurance/tax law.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "zusätzliche Beschäftigungsmonate/-stunden",
+        "Berufs-/Einkommensgruppen",
+        "Mitnahme",
+        "Beitragseffekt",
+        "Gesundheit/Arbeitsbedingungen"
+      ],
+      "distribution_time": "Ältere Beschäftigte, Arbeitgeber, Sozialversicherungen; mittel-/langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Freiwillige zusätzliche Erwerbsteilhabe, nicht längere Arbeit als Pflicht.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Geringere Abgaben auf freiwillige Arbeit im Rentenalter können Erwerbsverbleib erhöhen, wirken aber stark nach Gesundheit, Beruf, Einkommen und Rentenstatus und verändern Sozialfinanzierung.",
+      "mechanism": "Arbeit im Rentenalter sozialversicherungsfrei stellen",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0055-zudem-streben-wir-gezielte-erleichterungen-fuer-eine-unbue",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0055-zudem-streben-wir-gezielte-erleichterungen-fuer-eine-unbue",
+      "problem_review": "Arbeitskräfteengpass und Erwerbswunsch älterer Personen sind heterogen.",
+      "source_locator": {
+        "pdf_page": 17,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0055-RETIREMENT-WORK-SS-FREE",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Sicherheit",
+        "Natur/Fläche",
+        "Haushalt"
+      ],
+      "competence_delivery": "BUND/DB/LAND je Netz/Bestellung.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Kapazität",
+        "Pünktlichkeit",
+        "Fahrzeit",
+        "Nachfrage/Modal Shift",
+        "Kosten",
+        "Baustellenfolgen",
+        "Emissionen"
+      ],
+      "distribution_time": "Pendler, Güterverkehr, Regionen; mittel-/langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Zuverlässige zugängliche Mobilität/Logistik statt Bauoutput.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Schienensanierung/-ausbau kann Kapazität, Zuverlässigkeit und Modal Shift verbessern, wenn Engpässe priorisiert und Bau-/Betriebsunterbrechungen beherrscht werden.",
+      "mechanism": "Schienenwege ausbessern und ausbauen",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0056-auch-hier-wollen-wir-zusammen-mit-dem-bund-intensiv-in-die",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0056-auch-hier-wollen-wir-zusammen-mit-dem-bund-intensiv-in-die",
+      "problem_review": "Kapazitäts-/Qualitätsengpässe projektspezifisch; Netzbaseline nötig.",
+      "source_locator": {
+        "pdf_page": 17,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0056-RAIL",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Sicherheit",
+        "Lärm/Gesundheit",
+        "Klima",
+        "Natur/Fläche",
+        "Haushalt"
+      ],
+      "competence_delivery": "BUND/LAND/KOMMUNAL je Straße.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Zustand/Sicherheit",
+        "Reisezeit",
+        "induzierter Verkehr",
+        "Emission/Lärm/Fläche",
+        "Kosten",
+        "Alternativen"
+      ],
+      "distribution_time": "Verkehrsteilnehmer, Anwohner, Regionen, Umwelt; langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Sichere zuverlässige Erreichbarkeit bei minimalen System-/Umweltkosten.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Straßensanierung kann Sicherheit/Zuverlässigkeit verbessern; Kapazitätsausbau kann Erreichbarkeit erhöhen, aber zusätzlichen Verkehr, Flächen-, Lärm-, Klima- und Haushaltswirkungen erzeugen.",
+      "mechanism": "Straßen ausbessern und ausbauen",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0056-auch-hier-wollen-wir-zusammen-mit-dem-bund-intensiv-in-die",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0056-auch-hier-wollen-wir-zusammen-mit-dem-bund-intensiv-in-die",
+      "problem_review": "Straßenzustand/Kapazitätsengpass projektspezifisch zu belegen.",
+      "source_locator": {
+        "pdf_page": 17,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0056-ROAD",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Gewässerökologie",
+        "Niedrigwasserresilienz",
+        "Haushalt"
+      ],
+      "competence_delivery": "Bundeswasserstraßen überwiegend BUND; LAND regionaler Nutzer/Advocacy.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Gütermenge/Modal Shift",
+        "Niedrigwasser-Verfügbarkeit",
+        "Transportkosten",
+        "ökologische Zustände",
+        "Bau-/Unterhaltungskosten"
+      ],
+      "distribution_time": "Güterwirtschaft, Anlieger, Gewässerökosysteme; langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Resiliente effiziente Güterlogistik bei erhaltenen Gewässerökosystemen.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Wasserstraßeninvestitionen können Güterverkehrskapazität und Modal Shift unterstützen, müssen aber Hydrologie, Niedrigwasserresilienz, Ökologie und hohe Infrastruktur-Lifecyclekosten einbeziehen.",
+      "mechanism": "Wasserwege ausbessern und ausbauen",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0056-auch-hier-wollen-wir-zusammen-mit-dem-bund-intensiv-in-die",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0056-auch-hier-wollen-wir-zusammen-mit-dem-bund-intensiv-in-die",
+      "problem_review": "Kapazitäts-/Zuverlässigkeitsproblem ist wasserstraßen- und hydrologiespezifisch.",
+      "source_locator": {
+        "pdf_page": 17,
+        "section": "Top-Region für Unternehmensansiedlungen in Europa"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0056-WATERWAYS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    }
+  ]
 }

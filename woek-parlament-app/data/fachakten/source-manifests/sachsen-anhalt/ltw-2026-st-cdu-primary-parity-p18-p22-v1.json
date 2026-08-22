@@ -1,136 +1,1525 @@
 {
-  "schema_version": "1.0",
-  "shard_version": "2026-08-21-p18-p22-v1",
-  "programme_key": "ltw-2026-st-cdu",
-  "party": "CDU",
-  "primary_source_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf",
-  "primary_pdf_pages": [18,19,20,21,22],
-  "canonical_manifest_target": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-source-unit-manifest-v2.json",
-  "legacy_register": "woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-cdu-zusagen.md",
-  "legacy_blob_sha": "6e8c53392d76e9847ee3028d241a988c12b3d2fb",
-  "historical_ids_immutable": true,
-  "fach_review_issue": 234,
-  "fach_review_comment_id": 5373629384,
   "authoritative_denominator_delta": null,
+  "canonical_manifest_target": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-source-unit-manifest-v2.json",
+  "common_guards": {
+    "dns_reference": "EXACT_REGISTRY_CROSSWALK_PENDING",
+    "no_compensation_of_hard_boundaries": true,
+    "no_summary_duplicate_counting": true,
+    "output_not_outcome": true,
+    "recommendation": "NOT_AVAILABLE_AT_SOURCE_UNIT_LEVEL_DO_NOT_SYNTHESIZE",
+    "state_gfa_enap_benchmark": "NOT_APPLICABLE",
+    "target_alignment_not_causality": true
+  },
   "denominator_status": "PENDING_FULL_PROGRAMME_SEGMENTATION_RULE",
-  "segment_status": "SEMANTIC_RECONCILIATION_COMPLETE_FOR_P18_P22",
-  "primary_source_diff": [
-    {"legacy_unit":"0057","classification":"CONTEXT_ONLY","action":"KEEP_ID_AS_GOAL_FRAME_NO_INDEPENDENT_EFFECT_COUNT"},
-    {"legacy_unit":"0058","classification":"CONTEXT_ONLY","action":"KEEP_ID_AS_GOAL_PROCESS_FRAME_NO_INDEPENDENT_EFFECT_COUNT"},
-    {"legacy_unit":"0059","classification":"PARTIAL_PARENT","action":"KEEP_SUMMARY_PARENT; DETAILED_MINISTRY_CONSOLIDATION_IS_0065"},
-    {"legacy_unit":"0060","classification":"SAME","action":"KEEP_ID"},
-    {"legacy_unit":null,"classification":"ABSENT","primary_source_unit":"ST-CDU-PRIMARY-GAP-P19-SCHOOL-DUTY-ENFORCEMENT","action":"ADDITIVE_SOURCE_UNIT"},
-    {"legacy_unit":"0061","classification":"SAME","action":"KEEP_ID"},
-    {"legacy_unit":"0062","classification":"TRUNCATED","action":"KEEP_PARENT_ID; VERSIONED_2_CHILD_SPLIT"},
-    {"legacy_unit":"0063","classification":"SAME","action":"KEEP_ID"},
-    {"legacy_unit":"0064","classification":"OVERMERGED","action":"KEEP_PARENT_ID; VERSIONED_2_CHILD_SPLIT"},
-    {"legacy_unit":"0065","classification":"SAME","action":"KEEP_ID"},
-    {"legacy_unit":"0066","classification":"SAME","action":"KEEP_ID"},
-    {"legacy_unit":"0067","classification":"SAME","action":"KEEP_ID"},
-    {"legacy_unit":"0068","classification":"TRUNCATED","action":"KEEP_PARENT_ID; VERSIONED_3_CHILD_SPLIT"},
-    {"legacy_unit":null,"classification":"ABSENT","primary_source_unit":"ST-CDU-PRIMARY-GAP-P21-MEDIA-LITERACY-PROJECTS","action":"ADDITIVE_SOURCE_UNIT"},
-    {"legacy_unit":null,"classification":"ABSENT","primary_source_unit":"ST-CDU-PRIMARY-GAP-P21-DIGITAL-ASSISTANTS","action":"ADDITIVE_SOURCE_UNIT"},
-    {"legacy_unit":null,"classification":"ABSENT","primary_source_unit":"ST-CDU-PRIMARY-GAP-P21-AI-LEARNING-TOOL","action":"ADDITIVE_SOURCE_UNIT"},
-    {"legacy_unit":null,"classification":"ABSENT","primary_source_unit":"ST-CDU-PRIMARY-GAP-P21-TEACHER-MEDIA-TRAINING","action":"ADDITIVE_SOURCE_UNIT"},
-    {"legacy_unit":"0069","classification":"SAME","action":"KEEP_ID"},
-    {"legacy_unit":"0070","classification":"SAME","action":"KEEP_ID"},
-    {"legacy_unit":"0071","classification":"SAME","action":"KEEP_ID"},
-    {"legacy_unit":null,"classification":"ABSENT","primary_source_unit":"ST-CDU-PRIMARY-GAP-P21-PRODUCTIVE-LEARNING","action":"ADDITIVE_SOURCE_UNIT; PRACTICE_DAYS_CROSSWALK_TO_0068_NO_DUPLICATE"},
-    {"legacy_unit":"0072","classification":"SAME","action":"KEEP_ID"},
-    {"legacy_unit":"0073","classification":"OVERMERGED","action":"KEEP_PARENT_ID; VERSIONED_2_CHILD_SPLIT"},
-    {"legacy_unit":"0074","classification":"SAME","action":"KEEP_ID"},
-    {"legacy_unit":null,"classification":"ABSENT","primary_source_unit":"ST-CDU-PRIMARY-GAP-P22-CERTIFIED-CAREER-ORIENTATION","action":"ADDITIVE_SOURCE_UNIT"},
-    {"legacy_unit":null,"classification":"ABSENT","primary_source_unit":"ST-CDU-PRIMARY-GAP-P22-TRANSITION-MONITORING-COOP","action":"ADDITIVE_SOURCE_UNIT"},
-    {"legacy_unit":null,"classification":"ABSENT","primary_source_unit":"ST-CDU-PRIMARY-GAP-P22-ENTREPRENEURSHIP-ECONOMICS","action":"ADDITIVE_SOURCE_UNIT"},
-    {"legacy_unit":null,"classification":"ABSENT","primary_source_unit":"ST-CDU-PRIMARY-GAP-P22-VOCATIONAL-SCHOOL-SITES","action":"ADDITIVE_SOURCE_UNIT"},
-    {"legacy_unit":null,"classification":"ABSENT","primary_source_unit":"ST-CDU-PRIMARY-GAP-P22-TRAINEE-TRANSPORT-ACCOMMODATION","action":"ADDITIVE_SOURCE_UNIT"},
-    {"legacy_unit":null,"classification":"ABSENT","primary_source_unit":"ST-CDU-PRIMARY-GAP-P22-TRAINEE-RELIEF","action":"ADDITIVE_SOURCE_UNIT"},
-    {"legacy_unit":"0075","classification":"SAME","action":"KEEP_ID"}
-  ],
-  "new_or_split_units": [
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-GAP-P19-SCHOOL-DUTY-ENFORCEMENT","source_gap_status":"PRIMARY_SOURCE_EFFECT_MECHANISM_ABSENT_FROM_RELEASE1_RESTORED_VERSIONED","source_locator":{"pdf_page":19,"section":"Das klügste Bildungssystem in Deutschland"},"mechanism":"Schulpflicht konsequent durchsetzen","terminal_fach_status":"REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON","impact_direction":"OPEN","evidence_level":"NOT_ASSESSABLE","key_finding":"Schulpflicht und Bildungszugang sind bestehender Rechts-/Schutzrahmen; 'konsequent durchsetzen' benennt aber kein Ursachen-, Unterstützungs-, Verfahrens- oder Sanktionsdesign.","not_assessable_reason":"Ohne Enforcement-/Unterstützungsdesign ist keine robuste Richtung zu Teilnahme, Kindeswohl oder Nebenfolgen möglich.","problem_review":"Fehlzeiten/Schulabsentismus müssen nach Ursachen wie Gesundheit, Familie, Schulklima, Mobilität oder Verweigerung getrennt werden.","goal_review":"Verlässliche Bildungsteilnahme und Kindeswohl, nicht Sanktion als Endziel.","competence_delivery":"LAND/school authorities/municipal actors.","distribution_time":"Kinder/Jugendliche, Familien, Schulen; kurzfristig bis Bildungsbiografie.","boundaries_noncompensation":["Kindeswohl","Verhältnismäßigkeit","Rechtsschutz","Inklusion"],"data_falsification":["Fehlzeiten","Ursachenprofil","Unterstützungsangebote","Verfahren/Sanktionen","Rückkehr/Abschluss","Fehler-/Beschwerden"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0062-RURAL-SCHOOL-NETWORK","parent_legacy_source_unit":"ltw-2026-st-cdu-0062-schulentwicklung-gestalten-und-strukturen-modernisieren-wi","source_locator":{"pdf_pages":[19,20],"section":"Das klügste Bildungssystem in Deutschland"},"mechanism":"ländliches Schulnetz über Schulverbünde/Campusschulen sichern","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW","key_finding":"Schulverbünde/Campusschulen können wohnortnahe Angebote bei ungleichen Schülerzahlen stabilisieren, bergen aber Skalierungs-, Wege-, Personal- und Qualitätsrisiken.","problem_review":"Erreichbarkeit, Demografie und Unterrichtsversorgung sind regional verschieden; Standortzahl allein ist keine Problembaseline.","goal_review":"Zugängliche qualitativ tragfähige Bildung, nicht Standortzahl allein.","competence_delivery":"LAND/school planning/local school authorities.","distribution_time":"Kinder/Familien im ländlichen Raum, Lehrkräfte, Schulträger; langfristig.","boundaries_noncompensation":["Bildungszugang","Inklusion","zumutbare Wege"],"data_falsification":["Wegezeiten","Auslastung","Unterrichtsversorgung","Angebotsbreite","Kosten","Lernergebnisse","regionale Verteilung"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0062-AFTERNOON-SUPPORT","parent_legacy_source_unit":"ltw-2026-st-cdu-0062-schulentwicklung-gestalten-und-strukturen-modernisieren-wi","source_locator":{"pdf_pages":[19,20],"section":"Das klügste Bildungssystem in Deutschland"},"mechanism":"musisch-kreative, Bewegungs- und Lern-/Unterstützungsangebote am Nachmittag ausbauen","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"LOW","key_finding":"Nachmittagsangebote können Teilhabe, Entwicklung und Lernchancen erhöhen, wenn Zugang und Qualität nicht von Wohnort oder Familienressourcen abhängen.","problem_review":"Ungleicher Zugang zu Förder-/Freizeit-/Lernangeboten ist plausibel; regionale/soziale Baseline nötig.","goal_review":"Gleichberechtigte Entwicklungs- und Förderchancen.","competence_delivery":"LAND/schools/horts/providers/municipalities.","distribution_time":"Besonders Kinder mit geringeren privaten Ressourcen und ländliche Räume; kurz-/mittelfristig.","boundaries_noncompensation":["faire Zugänglichkeit","Kindeswohl","Qualität"],"data_falsification":["Teilnahme nach Soziallage/Region","Qualität","Lern-/Wohlbefinden","Erreichbarkeit","Personal"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0064-CORE-MATH-GERMAN","parent_legacy_source_unit":"ltw-2026-st-cdu-0064-die-grundschule-als-fundament-fuer-den-bildungserfolg-stae","source_locator":{"pdf_page":20,"section":"Das klügste Bildungssystem in Deutschland"},"mechanism":"Kernkompetenzen stärken und Unterricht in Mathematik/Deutsch ausbauen","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"LOW","key_finding":"Zusätzliche oder gezieltere Lernzeit für Mathematik und Deutsch kann Basiskompetenzen stärken, wenn Didaktik, Diagnose und Förderung wirksam sind; reine Stundenverlagerung ist kein Outcome.","problem_review":"Aktuelle BMK-Roadmap nach IQB-Bildungstrend bestätigt allgemeinen Handlungsbedarf bei Mindeststandards; Sachsen-Anhalt-spezifische Fachbaseline bleibt separat nötig.","goal_review":"Messbare Basiskompetenzen und faire Mindeststandards.","competence_delivery":"LAND/curriculum/schools/teachers.","distribution_time":"Grundschüler, besonders Kinder mit Unterstützungsbedarf; mittel-/langfristig.","boundaries_noncompensation":["keine unverhältnismäßige Verdrängung anderer Bildungsbereiche","Chancengleichheit"],"data_falsification":["Lernstand/Mindeststandards","Unterrichtsqualität","Stundenverteilung","soziale Verteilung"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0064-KITA-GS-HORT-COOP","parent_legacy_source_unit":"ltw-2026-st-cdu-0064-die-grundschule-als-fundament-fuer-den-bildungserfolg-stae","source_locator":{"pdf_page":20,"section":"Das klügste Bildungssystem in Deutschland"},"mechanism":"Kita, Grundschule und Hort wirksam koordinieren","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"LOW","key_finding":"Bessere Kooperation Kita–Grundschule–Hort kann Übergänge, Informationskontinuität, Förderung und Elternentlastung verbessern; Datenschutz, Zuständigkeiten und Personalzeit sind Delivery-Bedingungen.","problem_review":"Schnittstellen-/Übergabefriktionen sind plausibel; konkrete Baseline zu Doppelarbeit/Informationsverlust nötig.","goal_review":"Kontinuierliche kindzentrierte Bildung/Förderung und weniger Schnittstellenfriktion.","competence_delivery":"LAND/municipal/provider/school/hort coordination.","distribution_time":"Kinder, Eltern, pädagogisches Personal; Übergangsphase und Grundschulzeit.","boundaries_noncompensation":["Datenschutz","Kindeswohl","faire Zugänglichkeit"],"data_falsification":["Übergangs-/Förderpläne","Doppelarbeit","Eltern-/Kindzugang","Datenschutzvorfälle","Entwicklungs-/Lernindikatoren"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0068-PRACTICE-DAY","parent_legacy_source_unit":"ltw-2026-st-cdu-0068-4-1-modell-flaechendeckend-einfuehren-in-den-klassenstufen","source_locator":{"pdf_pages":[20,21],"section":"Das klügste Bildungssystem in Deutschland"},"mechanism":"verbindlicher wöchentlicher Praxislerntag","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"LOW","key_finding":"Ein regelmäßiger Praxislerntag kann Berufsorientierung, Motivation und Anwendungskompetenz verbessern, wenn Lernziele, Betriebe, Arbeitsschutz und Reflexion gesichert sind.","problem_review":"Orientierungs-/Praxislücken plausibel; Wirkung hängt an Qualität und Zugang der Plätze.","goal_review":"Orientierungs- und Anwendungskompetenz ohne frühe Pfadverengung.","competence_delivery":"LAND/schools/employers/providers.","distribution_time":"Klassen 7–9, Betriebe, Regionen; mittel-/langfristig.","boundaries_noncompensation":["Arbeitsschutz","Chancengleichheit","keine zu frühe Bildungswegverengung"],"data_falsification":["Teilnahme/Platzqualität","Lern-/Orientierungsgewinn","Übergänge","soziale/regionale Verteilung","Abbrüche"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0068-DIGITAL-DAY","parent_legacy_source_unit":"ltw-2026-st-cdu-0068-4-1-modell-flaechendeckend-einfuehren-in-den-klassenstufen","source_locator":{"pdf_pages":[20,21],"section":"Das klügste Bildungssystem in Deutschland"},"mechanism":"digital gestützter Lerntag mit landeseinheitlichem Lernsystem","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW","key_finding":"Ein digital gestützter Lerntag kann individualisiertes Lernen ermöglichen, wirkt aber nur mit didaktischer Qualität, Geräten/Netz, Unterstützung und Datenschutz; sonst können Lern- und Teilhabedifferenzen wachsen.","problem_review":"Digitaler Lernhebel hängt an Didaktik/Kompetenz und Zugang, nicht an Digitalisierung als Selbstzweck.","goal_review":"Messbarer Lernzuwachs und digitale Teilhabe.","competence_delivery":"LAND/digital platform/schools/teachers.","distribution_time":"Schüler nach Haushalts-/Schulressourcen; mittel-/langfristig.","boundaries_noncompensation":["Datenschutz","Cyberresilienz","Barrierefreiheit","Chancengleichheit"],"data_falsification":["Nutzbarkeit","Lernfortschritt","Supportbedarf","Geräte-/Netzzugang","Abbruch","Datenschutz/Cyber"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0068-SELF-LEARNING-PHASES","parent_legacy_source_unit":"ltw-2026-st-cdu-0068-4-1-modell-flaechendeckend-einfuehren-in-den-klassenstufen","source_locator":{"pdf_page":21,"section":"Das klügste Bildungssystem in Deutschland"},"mechanism":"strukturierte Eigenlernphasen in allen Schulformen etablieren","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW","key_finding":"Strukturierte Eigenlernphasen können Selbstorganisation stärken, verlangen aber Scaffolding und differenzierte Unterstützung; sonst können bestehende Lernunterschiede wachsen.","problem_review":"Selbstregulationskompetenz ist Lernziel, aber Unterstützungsbedarf heterogen.","goal_review":"Selbstständiges Lernen bei gesichertem Lernfortschritt und Teilhabe.","competence_delivery":"LAND/schools/teachers.","distribution_time":"Alle Schulformen; besonders sensitiv für Unterstützungsbedarf.","boundaries_noncompensation":["Chancengleichheit","Förderpflicht/Unterstützung"],"data_falsification":["Lernfortschritt nach Ausgangslage","Selbstregulation","Unterstützungszeit","Abbruch/Überforderung","Verteilung"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-GAP-P21-MEDIA-LITERACY-PROJECTS","source_gap_status":"PRIMARY_SOURCE_EFFECT_MECHANISM_ABSENT_FROM_RELEASE1_RESTORED_VERSIONED","source_locator":{"pdf_page":21,"section":"Das klügste Bildungssystem in Deutschland"},"mechanism":"Medienkompetenz und kritische Reflexion über Projekte/praxisnahe Unterrichtseinheiten stärken","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"MEDIUM","key_finding":"Systematische Medienkompetenz-/Reflexionsprojekte adressieren einen anerkannten Bildungsauftrag; BMK/KMK betont 2026 digitale Resilienz, kritische Einordnung und sicheren Umgang.","problem_review":"Digitale Informations-/Sicherheits-/Reflexionskompetenzen sind materialer Bildungsbedarf.","goal_review":"Informierte, sichere, selbstbestimmte Mediennutzung.","competence_delivery":"LAND/schools/teachers/curriculum.","distribution_time":"Kinder/Jugendliche, Lehrkräfte; kurz- bis langfristig.","boundaries_noncompensation":["Kindeswohl","Datenschutz","keine Indoktrination"],"data_falsification":["Kompetenzmessung","Quellen-/Manipulationserkennung","Sicherheits-/Wohlbefindensindikatoren","soziale Teilhabe","Lehrkräftekapazität"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-GAP-P21-DIGITAL-ASSISTANTS","source_gap_status":"PRIMARY_SOURCE_EFFECT_MECHANISM_ABSENT_FROM_RELEASE1_RESTORED_VERSIONED","source_locator":{"pdf_page":21,"section":"Das klügste Bildungssystem in Deutschland"},"mechanism":"Digitalassistenten an Schulen intensiver einsetzen","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW","key_finding":"Digitalassistenten können Lehrkräfte bei digitalgestütztem Unterricht entlasten und Kompetenz verbreiten; Wirkung hängt an Rollenklärung, Fachkompetenz, Skalierung und Finanzierung.","problem_review":"Unterstützungs-/Kompetenzengpass plausibel; tatsächlicher Lehrkräftebedarf und Aufgabenprofil zu belegen.","goal_review":"Bessere Unterrichtsqualität und Entlastung, nicht Assistenzstellenzahl.","competence_delivery":"LAND/schools/support structure.","distribution_time":"Schulen/Lehrkräfte/Schüler; mittel-/langfristig.","boundaries_noncompensation":["Datenschutz","pädagogische Verantwortung","nachhaltige Finanzierung"],"data_falsification":["Lehrkräftezeit","Unterrichtsnutzung","Kompetenztransfer","Kosten","Fluktuation","Lernoutcome"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-GAP-P21-AI-LEARNING-TOOL","source_gap_status":"PRIMARY_SOURCE_EFFECT_MECHANISM_ABSENT_FROM_RELEASE1_RESTORED_VERSIONED","source_locator":{"pdf_page":21,"section":"Das klügste Bildungssystem in Deutschland"},"mechanism":"KI als Werkzeug für kreatives und effektives Lernen integrieren","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW","key_finding":"KI als Lernwerkzeug kann Feedback, Differenzierung und Kreativität unterstützen, birgt aber Fehler-/Bias-, Datenschutz-, Abhängigkeits-, Täuschungs- und Kompetenzrisiken.","problem_review":"Lern-/Differenzierungsbedarf und KI-Kompetenzbedarf sind getrennt zu prüfen.","goal_review":"Lernqualität und KI-Kompetenz, nicht KI-Nutzung an sich.","competence_delivery":"LAND/schools/providers within data/AI/education law.","distribution_time":"Schüler/Lehrkräfte, unterschiedlich nach Zugang/Unterstützungsbedarf.","boundaries_noncompensation":["Datenschutz","Kindeswohl","Transparenz","menschliche pädagogische Verantwortung"],"data_falsification":["Lerngewinn","Fehler/Halluzinationen","Bias","Datenschutz/Cyber","Nutzungsmuster","Lehrkräfteaufsicht"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-GAP-P21-TEACHER-MEDIA-TRAINING","source_gap_status":"PRIMARY_SOURCE_EFFECT_MECHANISM_ABSENT_FROM_RELEASE1_RESTORED_VERSIONED","source_locator":{"pdf_page":21,"section":"Das klügste Bildungssystem in Deutschland"},"mechanism":"Medienkompetenz verpflichtend in Lehrkräfteausbildung/Fortbildung verankern","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"MEDIUM","key_finding":"Verbindliche Medienkompetenz in Aus-/Fortbildung kann Unterrichtsqualität und sicheren KI-/Medieneinsatz stärken; aktuelle KMK-Linie bestätigt die Bedeutung professioneller Medienkompetenz.","problem_review":"Digitale/mediale Kompetenzlücken im Unterricht sind plausibler Qualitätsengpass.","goal_review":"Professionell reflektierter digitaler Unterricht.","competence_delivery":"LAND/higher education/teacher training.","distribution_time":"Lehrkräfte, Schüler; mittel-/langfristig.","boundaries_noncompensation":["Datenschutz","professionelle Standards","Fortbildungszugänglichkeit"],"data_falsification":["Teilnahme/Kompetenzerwerb","Transfer in Unterricht","Qualitäts-/Sicherheitsindikatoren","Fortbildungszugang"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-GAP-P21-PRODUCTIVE-LEARNING","source_gap_status":"PRIMARY_SOURCE_EFFECT_MECHANISM_ABSENT_FROM_RELEASE1_RESTORED_VERSIONED","source_locator":{"pdf_page":21,"section":"Das klügste Bildungssystem in Deutschland"},"mechanism":"Programm Produktives Lernen flächendeckend ausbauen","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"LOW","key_finding":"Ausbau Produktiven Lernens kann für Schülerinnen/Schüler mit erhöhtem Abschlussrisiko praxisnahe alternative Lernwege eröffnen, wenn Abschlussstandards, Betreuung und Übergänge gesichert sind.","problem_review":"Abschluss-/Motivationsrisiken sind heterogen; Zielgruppen-/Programmwirkung separat messen.","goal_review":"Anerkannte Abschlüsse und tragfähige Übergänge.","competence_delivery":"LAND/schools/employers/providers.","distribution_time":"Schüler mit erhöhtem Abschlussrisiko; regional/sozial sensibel.","boundaries_noncompensation":["Abschlussstandards","keine Stigmatisierung/Segregation","Arbeitsschutz"],"data_falsification":["Abschlussquote","Übergänge","Lernkompetenzen","Zielgruppen-/Regionenverteilung","Stigmatisierung"],"duplicate_guard":"Praxislerntage in same paragraph crosswalk to source_unit 0068; not counted twice","counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0073-SCHOOL-SOCIAL-WORK","parent_legacy_source_unit":"ltw-2026-st-cdu-0073-unterstuetzung-fuer-schuelerinnen-und-schueler-gewaehrleis","source_locator":{"pdf_page":22,"section":"Das klügste Bildungssystem in Deutschland"},"mechanism":"Schulsozialarbeit erhalten, zielorientieren, evaluieren und bedarfsorientiert einsetzen","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"LOW","key_finding":"Bedarfsorientierte Schulsozialarbeit kann soziale/psychosoziale Barrieren, Konflikte und Teilhabeprobleme adressieren; kommunale Verantwortung kann bei ungleicher Finanz-/Personallage regionale Unterschiede erzeugen.","problem_review":"Unterstützungsbedarfe sind schul-/soziallagenabhängig; regionale Baseline nötig.","goal_review":"Zugängliche Unterstützung mit klaren Outcome-Zielen.","competence_delivery":"LAND/municipalities/youth welfare providers/schools.","distribution_time":"Schüler/Schulen mit besonderem Unterstützungsbedarf; kurz-/mittelfristig.","boundaries_noncompensation":["Kindeswohl","Vertraulichkeit","faire regionale Zugänglichkeit"],"data_falsification":["Reichweite nach Bedarf","Wartezeit","Fehlzeiten/Abbruch","Konflikt-/Unterstützungsverläufe","regionale Finanzierung/Personal"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0073-SCHOOL-PSYCHOLOGY","parent_legacy_source_unit":"ltw-2026-st-cdu-0073-unterstuetzung-fuer-schuelerinnen-und-schueler-gewaehrleis","source_locator":{"pdf_page":22,"section":"Das klügste Bildungssystem in Deutschland"},"mechanism":"flächendeckende schulpsychologische Beratung/Betreuung sichern","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"MEDIUM","key_finding":"Erreichbare Schulpsychologie kann Diagnostik, Beratung, Krisenunterstützung und Schul-/Lehrkräfteberatung verbessern; Wirkung hängt an Fachkräftezahl, Wartezeit und Schnittstellen.","problem_review":"Psychosoziale/diagnostische Unterstützungsbedarfe sind plausibel; Kapazitäts-/Wartezeitbaseline nötig.","goal_review":"Frühzeitige fachgerechte Unterstützung und Krisenprävention.","competence_delivery":"LAND/school psychological services/schools.","distribution_time":"Betroffene Schüler, Familien, Lehrkräfte; akut bis längerfristig.","boundaries_noncompensation":["Vertraulichkeit","Datenschutz","fachliche Standards"],"data_falsification":["Psychologenquote","Warte-/Fahrzeit","Nutzung","Fallverlauf/Weitervermittlung","Krisenreaktion","regionale Verteilung"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-GAP-P22-CERTIFIED-CAREER-ORIENTATION","source_gap_status":"PRIMARY_SOURCE_EFFECT_MECHANISM_ABSENT_FROM_RELEASE1_RESTORED_VERSIONED","source_locator":{"pdf_page":22,"section":"Das klügste Bildungssystem in Deutschland"},"mechanism":"alle Oberschulen mit zertifiziertem Berufsorientierungsprogramm","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"LOW","key_finding":"Ein verbindliches zertifiziertes Berufsorientierungsprogramm kann Mindestqualität und Kontinuität sichern, wenn Zertifizierung echte Prozess-/Outcomequalität prüft und keine Bürokratie ohne Nutzen erzeugt.","problem_review":"Qualität/Verbindlichkeit von Berufsorientierung kann heterogen sein; Baseline nötig.","goal_review":"Orientierungskompetenz und hochwertige Übergänge.","competence_delivery":"LAND/schools/certification bodies.","distribution_time":"Oberschüler, Schulen, Betriebe; mittelfristig.","boundaries_noncompensation":["faire Zugänglichkeit","keine frühe Bildungswegverengung"],"data_falsification":["Zertifizierungsstandards","Teilnahme","Orientierungskompetenz","Übergänge","Aufwand","soziale/regionale Unterschiede"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-GAP-P22-TRANSITION-MONITORING-COOP","source_gap_status":"PRIMARY_SOURCE_EFFECT_MECHANISM_ABSENT_FROM_RELEASE1_RESTORED_VERSIONED","source_locator":{"pdf_page":22,"section":"Das klügste Bildungssystem in Deutschland"},"mechanism":"Übergänge in Ausbildung monitoren und Kooperation Schule-Unternehmen-Kammern stärken","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"LOW","key_finding":"Übergangsmonitoring plus Kooperation kann Abbrüche/Fehlmatching sichtbar machen und Unterstützung zielgenauer machen; Datenfunktion ist kein Kausalitätsbeweis.","problem_review":"Informations-/Koordinationslücken an Übergängen plausibel; heutige Datenabdeckung prüfen.","goal_review":"Hochwertige nachhaltige Übergänge, nicht nur schnellere Platzierung.","competence_delivery":"LAND/schools/chambers/employers/training system.","distribution_time":"Schüler/Auszubildende/Betriebe; Übergangsphase.","boundaries_noncompensation":["Datenschutz","keine diskriminierende Profilbildung","Job-/Ausbildungsqualität"],"data_falsification":["Übergangs-/Abbruchdaten","Matchingqualität","Maßnahmenänderungen durch Monitoring","Datenqualität/Abdeckung"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-GAP-P22-ENTREPRENEURSHIP-ECONOMICS","source_gap_status":"PRIMARY_SOURCE_EFFECT_MECHANISM_ABSENT_FROM_RELEASE1_RESTORED_VERSIONED","source_locator":{"pdf_page":22,"section":"Das klügste Bildungssystem in Deutschland"},"mechanism":"unternehmerisches Denken im Pflichtfach Wirtschaft positiv darstellen/vermitteln","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW","key_finding":"Ökonomisches/unternehmerisches Denken kann Finanz-/Wirtschaftskompetenz stärken, wenn plural, evidenzbasiert und nicht als politische oder unternehmerische Werbung vermittelt.","problem_review":"Ökonomische Kompetenz ist legitimer Bildungsbereich; einseitige Positivdarstellung ist kein Kompetenzmaß.","goal_review":"Plural reflektierte Wirtschafts-/Finanzkompetenz.","competence_delivery":"LAND/curriculum/schools/teachers.","distribution_time":"Schüler; langfristige ökonomische/demokratische Kompetenz.","boundaries_noncompensation":["schulische Neutralität","pluraler Unterricht","keine Indoktrination"],"data_falsification":["Kompetenzgewinn","Curriculumbalance","Lehrmaterialqualität","Schülerperspektiven"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-GAP-P22-VOCATIONAL-SCHOOL-SITES","source_gap_status":"PRIMARY_SOURCE_EFFECT_MECHANISM_ABSENT_FROM_RELEASE1_RESTORED_VERSIONED","source_locator":{"pdf_page":22,"section":"Das klügste Bildungssystem in Deutschland"},"mechanism":"gut erreichbare/gut ausgestattete Berufsbildende Schulstandorte strukturell erhalten","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW","key_finding":"Erhalt gut erreichbarer BBS kann Zugang und regionale Ausbildungskapazität stabilisieren; starres Standorthalten trotz Demografie/Fachrichtungen kann Ressourcen fragmentieren.","problem_review":"Erreichbarkeit und Fachangebot sind regional; Standortzahl allein ist keine Qualitätsmetrik.","goal_review":"Erreichbare hochwertige berufliche Bildung.","competence_delivery":"LAND/school planning/local providers.","distribution_time":"Auszubildende, Betriebe, ländliche Regionen; langfristig.","boundaries_noncompensation":["Bildungszugang","Qualität","zumutbare Wege"],"data_falsification":["Wegezeit","Auslastung","Fachangebot","Unterrichtsversorgung","Abschluss-/Übergangsquote","Kosten"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-GAP-P22-TRAINEE-TRANSPORT-ACCOMMODATION","source_gap_status":"PRIMARY_SOURCE_EFFECT_MECHANISM_ABSENT_FROM_RELEASE1_RESTORED_VERSIONED","source_locator":{"pdf_page":22,"section":"Das klügste Bildungssystem in Deutschland"},"mechanism":"verlässliche Beförderungs- und Unterbringungsstrukturen für berufliche Bildung","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"LOW","key_finding":"Beförderungs-/Unterbringungsstrukturen können räumliche Zugangsbarrieren zu spezialisierter beruflicher Bildung senken, besonders im ländlichen Raum.","problem_review":"Wege-/Unterbringungskosten können Teilnahme/Abbruch beeinflussen; tatsächliche Bedarfslage nach Fach/Region messen.","goal_review":"Erreichbare berufliche Bildung unabhängig vom Wohnort.","competence_delivery":"LAND/municipalities/training-school ecosystem.","distribution_time":"Auszubildende in ländlichen Regionen und Spezialberufen; Ausbildungsdauer.","boundaries_noncompensation":["faire Zugänglichkeit","Sicherheit/Unterbringungsqualität"],"data_falsification":["Reisezeit/Kosten","Unterbringungsbedarf","Teilnahme/Abbruch","regionale/fachliche Verteilung"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-GAP-P22-TRAINEE-RELIEF","source_gap_status":"PRIMARY_SOURCE_EFFECT_MECHANISM_ABSENT_FROM_RELEASE1_RESTORED_VERSIONED","source_locator":{"pdf_page":22,"section":"Das klügste Bildungssystem in Deutschland"},"mechanism":"bedarfsgerechte finanzielle Entlastung von Auszubildenden","terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"LOW","key_finding":"Bedarfsgerechte Entlastung kann Ausbildungsteilnahme bei hohen Wege-/Unterbringungskosten ermöglichen; Wirkung hängt an Bedürftigkeits-/Kostenkriterien und Additionalität.","problem_review":"Finanzielle Zusatzkosten können Ausbildungszugang beeinträchtigen; Bedarf nach Einkommen/Region/Fach zu belegen.","goal_review":"Ausbildungsteilnahme unabhängig von räumlich bedingten Zusatzkosten.","competence_delivery":"LAND funding/design within existing federal support interfaces.","distribution_time":"Auszubildende mit hohen Zusatzkosten, besonders ländlich; Ausbildungsdauer.","boundaries_noncompensation":["faire Kriterien","keine Mitnahme","Verwaltungszugang"],"data_falsification":["Begünstigte nach Einkommen/Region","reale Zusatzkosten","Ausbildungsaufnahme/-abbruch","Mitnahme","Verwaltungskosten"],"counts_toward_authoritative_denominator":"PENDING_FINAL_SEGMENTATION_RULE"
-    }
-  ],
   "external_official_recheck_sources": [
     "https://www.kmk.org/aktuelles/pressearchiv/mitteilung/nach-iqb-bildungstrend-bildungsministerkonferenz-beschliesst-roadmap.html",
     "https://www.kmk.org/en/downloads-dokumente/beschluesse-und-veroeffentlichungen/bildung-in-der-digitalen-welt.html",
     "https://www.kmk.org/aktuelles/pressearchiv/mitteilung/bildungsministerkonferenz-verabschiedet-gemeinsame-erklaerung-zum-umgang-mit-social-media-im-schulischen-bereich.html"
   ],
-  "common_guards": {
-    "state_gfa_enap_benchmark": "NOT_APPLICABLE",
-    "dns_reference": "EXACT_REGISTRY_CROSSWALK_PENDING",
-    "recommendation": "NOT_AVAILABLE_AT_SOURCE_UNIT_LEVEL_DO_NOT_SYNTHESIZE",
-    "target_alignment_not_causality": true,
-    "output_not_outcome": true,
-    "no_compensation_of_hard_boundaries": true,
-    "no_summary_duplicate_counting": true
+  "fach_review_comment_id": 5373629384,
+  "fach_review_issue": 234,
+  "historical_ids_immutable": true,
+  "legacy_blob_sha": "6e8c53392d76e9847ee3028d241a988c12b3d2fb",
+  "legacy_register": "woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-cdu-zusagen.md",
+  "new_or_split_units": [
+    {
+      "boundaries_noncompensation": [
+        "Kindeswohl",
+        "Verhältnismäßigkeit",
+        "Rechtsschutz",
+        "Inklusion"
+      ],
+      "competence_delivery": "LAND/school authorities/municipal actors.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Fehlzeiten",
+        "Ursachenprofil",
+        "Unterstützungsangebote",
+        "Verfahren/Sanktionen",
+        "Rückkehr/Abschluss",
+        "Fehler-/Beschwerden"
+      ],
+      "distribution_time": "Kinder/Jugendliche, Familien, Schulen; kurzfristig bis Bildungsbiografie.",
+      "evidence_level": "NOT_ASSESSABLE",
+      "goal_review": "Verlässliche Bildungsteilnahme und Kindeswohl, nicht Sanktion als Endziel.",
+      "impact_direction": "OPEN",
+      "key_finding": "Schulpflicht und Bildungszugang sind bestehender Rechts-/Schutzrahmen; 'konsequent durchsetzen' benennt aber kein Ursachen-, Unterstützungs-, Verfahrens- oder Sanktionsdesign.",
+      "mechanism": "Schulpflicht konsequent durchsetzen",
+      "not_assessable_reason": "Ohne Enforcement-/Unterstützungsdesign ist keine robuste Richtung zu Teilnahme, Kindeswohl oder Nebenfolgen möglich.",
+      "problem_review": "Fehlzeiten/Schulabsentismus müssen nach Ursachen wie Gesundheit, Familie, Schulklima, Mobilität oder Verweigerung getrennt werden.",
+      "source_gap_status": "PRIMARY_SOURCE_EFFECT_MECHANISM_ABSENT_FROM_RELEASE1_RESTORED_VERSIONED",
+      "source_locator": {
+        "pdf_page": 19,
+        "section": "Das klügste Bildungssystem in Deutschland"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-P19-SCHOOL-DUTY-ENFORCEMENT",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Bildungszugang",
+        "Inklusion",
+        "zumutbare Wege"
+      ],
+      "competence_delivery": "LAND/school planning/local school authorities.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Wegezeiten",
+        "Auslastung",
+        "Unterrichtsversorgung",
+        "Angebotsbreite",
+        "Kosten",
+        "Lernergebnisse",
+        "regionale Verteilung"
+      ],
+      "distribution_time": "Kinder/Familien im ländlichen Raum, Lehrkräfte, Schulträger; langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Zugängliche qualitativ tragfähige Bildung, nicht Standortzahl allein.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Schulverbünde/Campusschulen können wohnortnahe Angebote bei ungleichen Schülerzahlen stabilisieren, bergen aber Skalierungs-, Wege-, Personal- und Qualitätsrisiken.",
+      "mechanism": "ländliches Schulnetz über Schulverbünde/Campusschulen sichern",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0062-schulentwicklung-gestalten-und-strukturen-modernisieren-wi",
+      "problem_review": "Erreichbarkeit, Demografie und Unterrichtsversorgung sind regional verschieden; Standortzahl allein ist keine Problembaseline.",
+      "source_locator": {
+        "pdf_pages": [
+          19,
+          20
+        ],
+        "section": "Das klügste Bildungssystem in Deutschland"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0062-RURAL-SCHOOL-NETWORK",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "faire Zugänglichkeit",
+        "Kindeswohl",
+        "Qualität"
+      ],
+      "competence_delivery": "LAND/schools/horts/providers/municipalities.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Teilnahme nach Soziallage/Region",
+        "Qualität",
+        "Lern-/Wohlbefinden",
+        "Erreichbarkeit",
+        "Personal"
+      ],
+      "distribution_time": "Besonders Kinder mit geringeren privaten Ressourcen und ländliche Räume; kurz-/mittelfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Gleichberechtigte Entwicklungs- und Förderchancen.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Nachmittagsangebote können Teilhabe, Entwicklung und Lernchancen erhöhen, wenn Zugang und Qualität nicht von Wohnort oder Familienressourcen abhängen.",
+      "mechanism": "musisch-kreative, Bewegungs- und Lern-/Unterstützungsangebote am Nachmittag ausbauen",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0062-schulentwicklung-gestalten-und-strukturen-modernisieren-wi",
+      "problem_review": "Ungleicher Zugang zu Förder-/Freizeit-/Lernangeboten ist plausibel; regionale/soziale Baseline nötig.",
+      "source_locator": {
+        "pdf_pages": [
+          19,
+          20
+        ],
+        "section": "Das klügste Bildungssystem in Deutschland"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0062-AFTERNOON-SUPPORT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "keine unverhältnismäßige Verdrängung anderer Bildungsbereiche",
+        "Chancengleichheit"
+      ],
+      "competence_delivery": "LAND/curriculum/schools/teachers.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Lernstand/Mindeststandards",
+        "Unterrichtsqualität",
+        "Stundenverteilung",
+        "soziale Verteilung"
+      ],
+      "distribution_time": "Grundschüler, besonders Kinder mit Unterstützungsbedarf; mittel-/langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Messbare Basiskompetenzen und faire Mindeststandards.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Zusätzliche oder gezieltere Lernzeit für Mathematik und Deutsch kann Basiskompetenzen stärken, wenn Didaktik, Diagnose und Förderung wirksam sind; reine Stundenverlagerung ist kein Outcome.",
+      "mechanism": "Kernkompetenzen stärken und Unterricht in Mathematik/Deutsch ausbauen",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0064-die-grundschule-als-fundament-fuer-den-bildungserfolg-stae",
+      "problem_review": "Aktuelle BMK-Roadmap nach IQB-Bildungstrend bestätigt allgemeinen Handlungsbedarf bei Mindeststandards; Sachsen-Anhalt-spezifische Fachbaseline bleibt separat nötig.",
+      "source_locator": {
+        "pdf_page": 20,
+        "section": "Das klügste Bildungssystem in Deutschland"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0064-CORE-MATH-GERMAN",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Datenschutz",
+        "Kindeswohl",
+        "faire Zugänglichkeit"
+      ],
+      "competence_delivery": "LAND/municipal/provider/school/hort coordination.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Übergangs-/Förderpläne",
+        "Doppelarbeit",
+        "Eltern-/Kindzugang",
+        "Datenschutzvorfälle",
+        "Entwicklungs-/Lernindikatoren"
+      ],
+      "distribution_time": "Kinder, Eltern, pädagogisches Personal; Übergangsphase und Grundschulzeit.",
+      "evidence_level": "LOW",
+      "goal_review": "Kontinuierliche kindzentrierte Bildung/Förderung und weniger Schnittstellenfriktion.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Bessere Kooperation Kita–Grundschule–Hort kann Übergänge, Informationskontinuität, Förderung und Elternentlastung verbessern; Datenschutz, Zuständigkeiten und Personalzeit sind Delivery-Bedingungen.",
+      "mechanism": "Kita, Grundschule und Hort wirksam koordinieren",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0064-die-grundschule-als-fundament-fuer-den-bildungserfolg-stae",
+      "problem_review": "Schnittstellen-/Übergabefriktionen sind plausibel; konkrete Baseline zu Doppelarbeit/Informationsverlust nötig.",
+      "source_locator": {
+        "pdf_page": 20,
+        "section": "Das klügste Bildungssystem in Deutschland"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0064-KITA-GS-HORT-COOP",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Arbeitsschutz",
+        "Chancengleichheit",
+        "keine zu frühe Bildungswegverengung"
+      ],
+      "competence_delivery": "LAND/schools/employers/providers.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Teilnahme/Platzqualität",
+        "Lern-/Orientierungsgewinn",
+        "Übergänge",
+        "soziale/regionale Verteilung",
+        "Abbrüche"
+      ],
+      "distribution_time": "Klassen 7–9, Betriebe, Regionen; mittel-/langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Orientierungs- und Anwendungskompetenz ohne frühe Pfadverengung.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Ein regelmäßiger Praxislerntag kann Berufsorientierung, Motivation und Anwendungskompetenz verbessern, wenn Lernziele, Betriebe, Arbeitsschutz und Reflexion gesichert sind.",
+      "mechanism": "verbindlicher wöchentlicher Praxislerntag",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0068-4-1-modell-flaechendeckend-einfuehren-in-den-klassenstufen",
+      "problem_review": "Orientierungs-/Praxislücken plausibel; Wirkung hängt an Qualität und Zugang der Plätze.",
+      "source_locator": {
+        "pdf_pages": [
+          20,
+          21
+        ],
+        "section": "Das klügste Bildungssystem in Deutschland"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0068-PRACTICE-DAY",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Datenschutz",
+        "Cyberresilienz",
+        "Barrierefreiheit",
+        "Chancengleichheit"
+      ],
+      "competence_delivery": "LAND/digital platform/schools/teachers.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Nutzbarkeit",
+        "Lernfortschritt",
+        "Supportbedarf",
+        "Geräte-/Netzzugang",
+        "Abbruch",
+        "Datenschutz/Cyber"
+      ],
+      "distribution_time": "Schüler nach Haushalts-/Schulressourcen; mittel-/langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Messbarer Lernzuwachs und digitale Teilhabe.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Ein digital gestützter Lerntag kann individualisiertes Lernen ermöglichen, wirkt aber nur mit didaktischer Qualität, Geräten/Netz, Unterstützung und Datenschutz; sonst können Lern- und Teilhabedifferenzen wachsen.",
+      "mechanism": "digital gestützter Lerntag mit landeseinheitlichem Lernsystem",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0068-4-1-modell-flaechendeckend-einfuehren-in-den-klassenstufen",
+      "problem_review": "Digitaler Lernhebel hängt an Didaktik/Kompetenz und Zugang, nicht an Digitalisierung als Selbstzweck.",
+      "source_locator": {
+        "pdf_pages": [
+          20,
+          21
+        ],
+        "section": "Das klügste Bildungssystem in Deutschland"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0068-DIGITAL-DAY",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Chancengleichheit",
+        "Förderpflicht/Unterstützung"
+      ],
+      "competence_delivery": "LAND/schools/teachers.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Lernfortschritt nach Ausgangslage",
+        "Selbstregulation",
+        "Unterstützungszeit",
+        "Abbruch/Überforderung",
+        "Verteilung"
+      ],
+      "distribution_time": "Alle Schulformen; besonders sensitiv für Unterstützungsbedarf.",
+      "evidence_level": "LOW",
+      "goal_review": "Selbstständiges Lernen bei gesichertem Lernfortschritt und Teilhabe.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Strukturierte Eigenlernphasen können Selbstorganisation stärken, verlangen aber Scaffolding und differenzierte Unterstützung; sonst können bestehende Lernunterschiede wachsen.",
+      "mechanism": "strukturierte Eigenlernphasen in allen Schulformen etablieren",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0068-4-1-modell-flaechendeckend-einfuehren-in-den-klassenstufen",
+      "problem_review": "Selbstregulationskompetenz ist Lernziel, aber Unterstützungsbedarf heterogen.",
+      "source_locator": {
+        "pdf_page": 21,
+        "section": "Das klügste Bildungssystem in Deutschland"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0068-SELF-LEARNING-PHASES",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Kindeswohl",
+        "Datenschutz",
+        "keine Indoktrination"
+      ],
+      "competence_delivery": "LAND/schools/teachers/curriculum.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Kompetenzmessung",
+        "Quellen-/Manipulationserkennung",
+        "Sicherheits-/Wohlbefindensindikatoren",
+        "soziale Teilhabe",
+        "Lehrkräftekapazität"
+      ],
+      "distribution_time": "Kinder/Jugendliche, Lehrkräfte; kurz- bis langfristig.",
+      "evidence_level": "MEDIUM",
+      "goal_review": "Informierte, sichere, selbstbestimmte Mediennutzung.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Systematische Medienkompetenz-/Reflexionsprojekte adressieren einen anerkannten Bildungsauftrag; BMK/KMK betont 2026 digitale Resilienz, kritische Einordnung und sicheren Umgang.",
+      "mechanism": "Medienkompetenz und kritische Reflexion über Projekte/praxisnahe Unterrichtseinheiten stärken",
+      "problem_review": "Digitale Informations-/Sicherheits-/Reflexionskompetenzen sind materialer Bildungsbedarf.",
+      "source_gap_status": "PRIMARY_SOURCE_EFFECT_MECHANISM_ABSENT_FROM_RELEASE1_RESTORED_VERSIONED",
+      "source_locator": {
+        "pdf_page": 21,
+        "section": "Das klügste Bildungssystem in Deutschland"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-P21-MEDIA-LITERACY-PROJECTS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Datenschutz",
+        "pädagogische Verantwortung",
+        "nachhaltige Finanzierung"
+      ],
+      "competence_delivery": "LAND/schools/support structure.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Lehrkräftezeit",
+        "Unterrichtsnutzung",
+        "Kompetenztransfer",
+        "Kosten",
+        "Fluktuation",
+        "Lernoutcome"
+      ],
+      "distribution_time": "Schulen/Lehrkräfte/Schüler; mittel-/langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Bessere Unterrichtsqualität und Entlastung, nicht Assistenzstellenzahl.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Digitalassistenten können Lehrkräfte bei digitalgestütztem Unterricht entlasten und Kompetenz verbreiten; Wirkung hängt an Rollenklärung, Fachkompetenz, Skalierung und Finanzierung.",
+      "mechanism": "Digitalassistenten an Schulen intensiver einsetzen",
+      "problem_review": "Unterstützungs-/Kompetenzengpass plausibel; tatsächlicher Lehrkräftebedarf und Aufgabenprofil zu belegen.",
+      "source_gap_status": "PRIMARY_SOURCE_EFFECT_MECHANISM_ABSENT_FROM_RELEASE1_RESTORED_VERSIONED",
+      "source_locator": {
+        "pdf_page": 21,
+        "section": "Das klügste Bildungssystem in Deutschland"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-P21-DIGITAL-ASSISTANTS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Datenschutz",
+        "Kindeswohl",
+        "Transparenz",
+        "menschliche pädagogische Verantwortung"
+      ],
+      "competence_delivery": "LAND/schools/providers within data/AI/education law.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Lerngewinn",
+        "Fehler/Halluzinationen",
+        "Bias",
+        "Datenschutz/Cyber",
+        "Nutzungsmuster",
+        "Lehrkräfteaufsicht"
+      ],
+      "distribution_time": "Schüler/Lehrkräfte, unterschiedlich nach Zugang/Unterstützungsbedarf.",
+      "evidence_level": "LOW",
+      "goal_review": "Lernqualität und KI-Kompetenz, nicht KI-Nutzung an sich.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "KI als Lernwerkzeug kann Feedback, Differenzierung und Kreativität unterstützen, birgt aber Fehler-/Bias-, Datenschutz-, Abhängigkeits-, Täuschungs- und Kompetenzrisiken.",
+      "mechanism": "KI als Werkzeug für kreatives und effektives Lernen integrieren",
+      "problem_review": "Lern-/Differenzierungsbedarf und KI-Kompetenzbedarf sind getrennt zu prüfen.",
+      "source_gap_status": "PRIMARY_SOURCE_EFFECT_MECHANISM_ABSENT_FROM_RELEASE1_RESTORED_VERSIONED",
+      "source_locator": {
+        "pdf_page": 21,
+        "section": "Das klügste Bildungssystem in Deutschland"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-P21-AI-LEARNING-TOOL",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Datenschutz",
+        "professionelle Standards",
+        "Fortbildungszugänglichkeit"
+      ],
+      "competence_delivery": "LAND/higher education/teacher training.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Teilnahme/Kompetenzerwerb",
+        "Transfer in Unterricht",
+        "Qualitäts-/Sicherheitsindikatoren",
+        "Fortbildungszugang"
+      ],
+      "distribution_time": "Lehrkräfte, Schüler; mittel-/langfristig.",
+      "evidence_level": "MEDIUM",
+      "goal_review": "Professionell reflektierter digitaler Unterricht.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Verbindliche Medienkompetenz in Aus-/Fortbildung kann Unterrichtsqualität und sicheren KI-/Medieneinsatz stärken; aktuelle KMK-Linie bestätigt die Bedeutung professioneller Medienkompetenz.",
+      "mechanism": "Medienkompetenz verpflichtend in Lehrkräfteausbildung/Fortbildung verankern",
+      "problem_review": "Digitale/mediale Kompetenzlücken im Unterricht sind plausibler Qualitätsengpass.",
+      "source_gap_status": "PRIMARY_SOURCE_EFFECT_MECHANISM_ABSENT_FROM_RELEASE1_RESTORED_VERSIONED",
+      "source_locator": {
+        "pdf_page": 21,
+        "section": "Das klügste Bildungssystem in Deutschland"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-P21-TEACHER-MEDIA-TRAINING",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Abschlussstandards",
+        "keine Stigmatisierung/Segregation",
+        "Arbeitsschutz"
+      ],
+      "competence_delivery": "LAND/schools/employers/providers.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Abschlussquote",
+        "Übergänge",
+        "Lernkompetenzen",
+        "Zielgruppen-/Regionenverteilung",
+        "Stigmatisierung"
+      ],
+      "distribution_time": "Schüler mit erhöhtem Abschlussrisiko; regional/sozial sensibel.",
+      "duplicate_guard": "Praxislerntage in same paragraph crosswalk to source_unit 0068; not counted twice",
+      "evidence_level": "LOW",
+      "goal_review": "Anerkannte Abschlüsse und tragfähige Übergänge.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Ausbau Produktiven Lernens kann für Schülerinnen/Schüler mit erhöhtem Abschlussrisiko praxisnahe alternative Lernwege eröffnen, wenn Abschlussstandards, Betreuung und Übergänge gesichert sind.",
+      "mechanism": "Programm Produktives Lernen flächendeckend ausbauen",
+      "problem_review": "Abschluss-/Motivationsrisiken sind heterogen; Zielgruppen-/Programmwirkung separat messen.",
+      "source_gap_status": "PRIMARY_SOURCE_EFFECT_MECHANISM_ABSENT_FROM_RELEASE1_RESTORED_VERSIONED",
+      "source_locator": {
+        "pdf_page": 21,
+        "section": "Das klügste Bildungssystem in Deutschland"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-P21-PRODUCTIVE-LEARNING",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Kindeswohl",
+        "Vertraulichkeit",
+        "faire regionale Zugänglichkeit"
+      ],
+      "competence_delivery": "LAND/municipalities/youth welfare providers/schools.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Reichweite nach Bedarf",
+        "Wartezeit",
+        "Fehlzeiten/Abbruch",
+        "Konflikt-/Unterstützungsverläufe",
+        "regionale Finanzierung/Personal"
+      ],
+      "distribution_time": "Schüler/Schulen mit besonderem Unterstützungsbedarf; kurz-/mittelfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Zugängliche Unterstützung mit klaren Outcome-Zielen.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Bedarfsorientierte Schulsozialarbeit kann soziale/psychosoziale Barrieren, Konflikte und Teilhabeprobleme adressieren; kommunale Verantwortung kann bei ungleicher Finanz-/Personallage regionale Unterschiede erzeugen.",
+      "mechanism": "Schulsozialarbeit erhalten, zielorientieren, evaluieren und bedarfsorientiert einsetzen",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0073-unterstuetzung-fuer-schuelerinnen-und-schueler-gewaehrleis",
+      "problem_review": "Unterstützungsbedarfe sind schul-/soziallagenabhängig; regionale Baseline nötig.",
+      "source_locator": {
+        "pdf_page": 22,
+        "section": "Das klügste Bildungssystem in Deutschland"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0073-SCHOOL-SOCIAL-WORK",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Vertraulichkeit",
+        "Datenschutz",
+        "fachliche Standards"
+      ],
+      "competence_delivery": "LAND/school psychological services/schools.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Psychologenquote",
+        "Warte-/Fahrzeit",
+        "Nutzung",
+        "Fallverlauf/Weitervermittlung",
+        "Krisenreaktion",
+        "regionale Verteilung"
+      ],
+      "distribution_time": "Betroffene Schüler, Familien, Lehrkräfte; akut bis längerfristig.",
+      "evidence_level": "MEDIUM",
+      "goal_review": "Frühzeitige fachgerechte Unterstützung und Krisenprävention.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Erreichbare Schulpsychologie kann Diagnostik, Beratung, Krisenunterstützung und Schul-/Lehrkräfteberatung verbessern; Wirkung hängt an Fachkräftezahl, Wartezeit und Schnittstellen.",
+      "mechanism": "flächendeckende schulpsychologische Beratung/Betreuung sichern",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0073-unterstuetzung-fuer-schuelerinnen-und-schueler-gewaehrleis",
+      "problem_review": "Psychosoziale/diagnostische Unterstützungsbedarfe sind plausibel; Kapazitäts-/Wartezeitbaseline nötig.",
+      "source_locator": {
+        "pdf_page": 22,
+        "section": "Das klügste Bildungssystem in Deutschland"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0073-SCHOOL-PSYCHOLOGY",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "faire Zugänglichkeit",
+        "keine frühe Bildungswegverengung"
+      ],
+      "competence_delivery": "LAND/schools/certification bodies.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Zertifizierungsstandards",
+        "Teilnahme",
+        "Orientierungskompetenz",
+        "Übergänge",
+        "Aufwand",
+        "soziale/regionale Unterschiede"
+      ],
+      "distribution_time": "Oberschüler, Schulen, Betriebe; mittelfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Orientierungskompetenz und hochwertige Übergänge.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Ein verbindliches zertifiziertes Berufsorientierungsprogramm kann Mindestqualität und Kontinuität sichern, wenn Zertifizierung echte Prozess-/Outcomequalität prüft und keine Bürokratie ohne Nutzen erzeugt.",
+      "mechanism": "alle Oberschulen mit zertifiziertem Berufsorientierungsprogramm",
+      "problem_review": "Qualität/Verbindlichkeit von Berufsorientierung kann heterogen sein; Baseline nötig.",
+      "source_gap_status": "PRIMARY_SOURCE_EFFECT_MECHANISM_ABSENT_FROM_RELEASE1_RESTORED_VERSIONED",
+      "source_locator": {
+        "pdf_page": 22,
+        "section": "Das klügste Bildungssystem in Deutschland"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-P22-CERTIFIED-CAREER-ORIENTATION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Datenschutz",
+        "keine diskriminierende Profilbildung",
+        "Job-/Ausbildungsqualität"
+      ],
+      "competence_delivery": "LAND/schools/chambers/employers/training system.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Übergangs-/Abbruchdaten",
+        "Matchingqualität",
+        "Maßnahmenänderungen durch Monitoring",
+        "Datenqualität/Abdeckung"
+      ],
+      "distribution_time": "Schüler/Auszubildende/Betriebe; Übergangsphase.",
+      "evidence_level": "LOW",
+      "goal_review": "Hochwertige nachhaltige Übergänge, nicht nur schnellere Platzierung.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Übergangsmonitoring plus Kooperation kann Abbrüche/Fehlmatching sichtbar machen und Unterstützung zielgenauer machen; Datenfunktion ist kein Kausalitätsbeweis.",
+      "mechanism": "Übergänge in Ausbildung monitoren und Kooperation Schule-Unternehmen-Kammern stärken",
+      "problem_review": "Informations-/Koordinationslücken an Übergängen plausibel; heutige Datenabdeckung prüfen.",
+      "source_gap_status": "PRIMARY_SOURCE_EFFECT_MECHANISM_ABSENT_FROM_RELEASE1_RESTORED_VERSIONED",
+      "source_locator": {
+        "pdf_page": 22,
+        "section": "Das klügste Bildungssystem in Deutschland"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-P22-TRANSITION-MONITORING-COOP",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "schulische Neutralität",
+        "pluraler Unterricht",
+        "keine Indoktrination"
+      ],
+      "competence_delivery": "LAND/curriculum/schools/teachers.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Kompetenzgewinn",
+        "Curriculumbalance",
+        "Lehrmaterialqualität",
+        "Schülerperspektiven"
+      ],
+      "distribution_time": "Schüler; langfristige ökonomische/demokratische Kompetenz.",
+      "evidence_level": "LOW",
+      "goal_review": "Plural reflektierte Wirtschafts-/Finanzkompetenz.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Ökonomisches/unternehmerisches Denken kann Finanz-/Wirtschaftskompetenz stärken, wenn plural, evidenzbasiert und nicht als politische oder unternehmerische Werbung vermittelt.",
+      "mechanism": "unternehmerisches Denken im Pflichtfach Wirtschaft positiv darstellen/vermitteln",
+      "problem_review": "Ökonomische Kompetenz ist legitimer Bildungsbereich; einseitige Positivdarstellung ist kein Kompetenzmaß.",
+      "source_gap_status": "PRIMARY_SOURCE_EFFECT_MECHANISM_ABSENT_FROM_RELEASE1_RESTORED_VERSIONED",
+      "source_locator": {
+        "pdf_page": 22,
+        "section": "Das klügste Bildungssystem in Deutschland"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-P22-ENTREPRENEURSHIP-ECONOMICS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Bildungszugang",
+        "Qualität",
+        "zumutbare Wege"
+      ],
+      "competence_delivery": "LAND/school planning/local providers.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Wegezeit",
+        "Auslastung",
+        "Fachangebot",
+        "Unterrichtsversorgung",
+        "Abschluss-/Übergangsquote",
+        "Kosten"
+      ],
+      "distribution_time": "Auszubildende, Betriebe, ländliche Regionen; langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Erreichbare hochwertige berufliche Bildung.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Erhalt gut erreichbarer BBS kann Zugang und regionale Ausbildungskapazität stabilisieren; starres Standorthalten trotz Demografie/Fachrichtungen kann Ressourcen fragmentieren.",
+      "mechanism": "gut erreichbare/gut ausgestattete Berufsbildende Schulstandorte strukturell erhalten",
+      "problem_review": "Erreichbarkeit und Fachangebot sind regional; Standortzahl allein ist keine Qualitätsmetrik.",
+      "source_gap_status": "PRIMARY_SOURCE_EFFECT_MECHANISM_ABSENT_FROM_RELEASE1_RESTORED_VERSIONED",
+      "source_locator": {
+        "pdf_page": 22,
+        "section": "Das klügste Bildungssystem in Deutschland"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-P22-VOCATIONAL-SCHOOL-SITES",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "faire Zugänglichkeit",
+        "Sicherheit/Unterbringungsqualität"
+      ],
+      "competence_delivery": "LAND/municipalities/training-school ecosystem.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Reisezeit/Kosten",
+        "Unterbringungsbedarf",
+        "Teilnahme/Abbruch",
+        "regionale/fachliche Verteilung"
+      ],
+      "distribution_time": "Auszubildende in ländlichen Regionen und Spezialberufen; Ausbildungsdauer.",
+      "evidence_level": "LOW",
+      "goal_review": "Erreichbare berufliche Bildung unabhängig vom Wohnort.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Beförderungs-/Unterbringungsstrukturen können räumliche Zugangsbarrieren zu spezialisierter beruflicher Bildung senken, besonders im ländlichen Raum.",
+      "mechanism": "verlässliche Beförderungs- und Unterbringungsstrukturen für berufliche Bildung",
+      "problem_review": "Wege-/Unterbringungskosten können Teilnahme/Abbruch beeinflussen; tatsächliche Bedarfslage nach Fach/Region messen.",
+      "source_gap_status": "PRIMARY_SOURCE_EFFECT_MECHANISM_ABSENT_FROM_RELEASE1_RESTORED_VERSIONED",
+      "source_locator": {
+        "pdf_page": 22,
+        "section": "Das klügste Bildungssystem in Deutschland"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-P22-TRAINEE-TRANSPORT-ACCOMMODATION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "faire Kriterien",
+        "keine Mitnahme",
+        "Verwaltungszugang"
+      ],
+      "competence_delivery": "LAND funding/design within existing federal support interfaces.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Begünstigte nach Einkommen/Region",
+        "reale Zusatzkosten",
+        "Ausbildungsaufnahme/-abbruch",
+        "Mitnahme",
+        "Verwaltungskosten"
+      ],
+      "distribution_time": "Auszubildende mit hohen Zusatzkosten, besonders ländlich; Ausbildungsdauer.",
+      "evidence_level": "LOW",
+      "goal_review": "Ausbildungsteilnahme unabhängig von räumlich bedingten Zusatzkosten.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Bedarfsgerechte Entlastung kann Ausbildungsteilnahme bei hohen Wege-/Unterbringungskosten ermöglichen; Wirkung hängt an Bedürftigkeits-/Kostenkriterien und Additionalität.",
+      "mechanism": "bedarfsgerechte finanzielle Entlastung von Auszubildenden",
+      "problem_review": "Finanzielle Zusatzkosten können Ausbildungszugang beeinträchtigen; Bedarf nach Einkommen/Region/Fach zu belegen.",
+      "source_gap_status": "PRIMARY_SOURCE_EFFECT_MECHANISM_ABSENT_FROM_RELEASE1_RESTORED_VERSIONED",
+      "source_locator": {
+        "pdf_page": 22,
+        "section": "Das klügste Bildungssystem in Deutschland"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-P22-TRAINEE-RELIEF",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    }
+  ],
+  "party": "CDU",
+  "primary_pdf_pages": [
+    18,
+    19,
+    20,
+    21,
+    22
+  ],
+  "primary_source_diff": [
+    {
+      "action": "KEEP_ID_AS_GOAL_FRAME_NO_INDEPENDENT_EFFECT_COUNT",
+      "classification": "CONTEXT_ONLY",
+      "legacy_unit": "0057"
+    },
+    {
+      "action": "KEEP_ID_AS_GOAL_PROCESS_FRAME_NO_INDEPENDENT_EFFECT_COUNT",
+      "classification": "CONTEXT_ONLY",
+      "legacy_unit": "0058"
+    },
+    {
+      "action": "KEEP_SUMMARY_PARENT; DETAILED_MINISTRY_CONSOLIDATION_IS_0065",
+      "classification": "PARTIAL_PARENT",
+      "legacy_unit": "0059"
+    },
+    {
+      "action": "KEEP_ID",
+      "classification": "SAME",
+      "legacy_unit": "0060"
+    },
+    {
+      "action": "ADDITIVE_SOURCE_UNIT",
+      "classification": "ABSENT",
+      "legacy_unit": null,
+      "primary_source_unit": "ST-CDU-PRIMARY-GAP-P19-SCHOOL-DUTY-ENFORCEMENT"
+    },
+    {
+      "action": "KEEP_ID",
+      "classification": "SAME",
+      "legacy_unit": "0061"
+    },
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_2_CHILD_SPLIT",
+      "classification": "TRUNCATED",
+      "legacy_unit": "0062"
+    },
+    {
+      "action": "KEEP_ID",
+      "classification": "SAME",
+      "legacy_unit": "0063"
+    },
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_2_CHILD_SPLIT",
+      "classification": "OVERMERGED",
+      "legacy_unit": "0064"
+    },
+    {
+      "action": "KEEP_ID",
+      "classification": "SAME",
+      "legacy_unit": "0065"
+    },
+    {
+      "action": "KEEP_ID",
+      "classification": "SAME",
+      "legacy_unit": "0066"
+    },
+    {
+      "action": "KEEP_ID",
+      "classification": "SAME",
+      "legacy_unit": "0067"
+    },
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_3_CHILD_SPLIT",
+      "classification": "TRUNCATED",
+      "legacy_unit": "0068"
+    },
+    {
+      "action": "ADDITIVE_SOURCE_UNIT",
+      "classification": "ABSENT",
+      "legacy_unit": null,
+      "primary_source_unit": "ST-CDU-PRIMARY-GAP-P21-MEDIA-LITERACY-PROJECTS"
+    },
+    {
+      "action": "ADDITIVE_SOURCE_UNIT",
+      "classification": "ABSENT",
+      "legacy_unit": null,
+      "primary_source_unit": "ST-CDU-PRIMARY-GAP-P21-DIGITAL-ASSISTANTS"
+    },
+    {
+      "action": "ADDITIVE_SOURCE_UNIT",
+      "classification": "ABSENT",
+      "legacy_unit": null,
+      "primary_source_unit": "ST-CDU-PRIMARY-GAP-P21-AI-LEARNING-TOOL"
+    },
+    {
+      "action": "ADDITIVE_SOURCE_UNIT",
+      "classification": "ABSENT",
+      "legacy_unit": null,
+      "primary_source_unit": "ST-CDU-PRIMARY-GAP-P21-TEACHER-MEDIA-TRAINING"
+    },
+    {
+      "action": "KEEP_ID",
+      "classification": "SAME",
+      "legacy_unit": "0069"
+    },
+    {
+      "action": "KEEP_ID",
+      "classification": "SAME",
+      "legacy_unit": "0070"
+    },
+    {
+      "action": "KEEP_ID",
+      "classification": "SAME",
+      "legacy_unit": "0071"
+    },
+    {
+      "action": "ADDITIVE_SOURCE_UNIT; PRACTICE_DAYS_CROSSWALK_TO_0068_NO_DUPLICATE",
+      "classification": "ABSENT",
+      "legacy_unit": null,
+      "primary_source_unit": "ST-CDU-PRIMARY-GAP-P21-PRODUCTIVE-LEARNING"
+    },
+    {
+      "action": "KEEP_ID",
+      "classification": "SAME",
+      "legacy_unit": "0072"
+    },
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_2_CHILD_SPLIT",
+      "classification": "OVERMERGED",
+      "legacy_unit": "0073"
+    },
+    {
+      "action": "KEEP_ID",
+      "classification": "SAME",
+      "legacy_unit": "0074"
+    },
+    {
+      "action": "ADDITIVE_SOURCE_UNIT",
+      "classification": "ABSENT",
+      "legacy_unit": null,
+      "primary_source_unit": "ST-CDU-PRIMARY-GAP-P22-CERTIFIED-CAREER-ORIENTATION"
+    },
+    {
+      "action": "ADDITIVE_SOURCE_UNIT",
+      "classification": "ABSENT",
+      "legacy_unit": null,
+      "primary_source_unit": "ST-CDU-PRIMARY-GAP-P22-TRANSITION-MONITORING-COOP"
+    },
+    {
+      "action": "ADDITIVE_SOURCE_UNIT",
+      "classification": "ABSENT",
+      "legacy_unit": null,
+      "primary_source_unit": "ST-CDU-PRIMARY-GAP-P22-ENTREPRENEURSHIP-ECONOMICS"
+    },
+    {
+      "action": "ADDITIVE_SOURCE_UNIT",
+      "classification": "ABSENT",
+      "legacy_unit": null,
+      "primary_source_unit": "ST-CDU-PRIMARY-GAP-P22-VOCATIONAL-SCHOOL-SITES"
+    },
+    {
+      "action": "ADDITIVE_SOURCE_UNIT",
+      "classification": "ABSENT",
+      "legacy_unit": null,
+      "primary_source_unit": "ST-CDU-PRIMARY-GAP-P22-TRAINEE-TRANSPORT-ACCOMMODATION"
+    },
+    {
+      "action": "ADDITIVE_SOURCE_UNIT",
+      "classification": "ABSENT",
+      "legacy_unit": null,
+      "primary_source_unit": "ST-CDU-PRIMARY-GAP-P22-TRAINEE-RELIEF"
+    },
+    {
+      "action": "KEEP_ID",
+      "classification": "SAME",
+      "legacy_unit": "0075"
+    }
+  ],
+  "primary_source_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf",
+  "programme_key": "ltw-2026-st-cdu",
+  "schema_normalization": {
+    "legacy_parent_reference_resolution": "IMMUTABLE_RELEASE1_COMMITMENT_ID_WHERE_NUMERIC_PARENT_PRESENT",
+    "mode": "MECHANICAL_ALIAS_ONLY_NO_NEW_FACH_SEMANTICS",
+    "terminal_alias": "terminal_source_objects"
   },
+  "schema_version": "1.0",
   "segment_completion": {
-    "new_or_split_terminal": 21,
-    "source_restore_gaps": 0,
-    "full_programme_semantic_reconciliation_complete": false,
     "authoritative_denominator_frozen": false,
-    "next_segment": "official PDF pp.23-25 / remaining education / legacy 0076-0080"
-  }
+    "full_programme_semantic_reconciliation_complete": false,
+    "new_or_split_terminal": 21,
+    "next_segment": "official PDF pp.23-25 / remaining education / legacy 0076-0080",
+    "source_restore_gaps": 0
+  },
+  "segment_status": "SEMANTIC_RECONCILIATION_COMPLETE_FOR_P18_P22",
+  "shard_version": "2026-08-21-p18-p22-v1",
+  "terminal_source_objects": [
+    {
+      "boundaries_noncompensation": [
+        "Kindeswohl",
+        "Verhältnismäßigkeit",
+        "Rechtsschutz",
+        "Inklusion"
+      ],
+      "competence_delivery": "LAND/school authorities/municipal actors.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Fehlzeiten",
+        "Ursachenprofil",
+        "Unterstützungsangebote",
+        "Verfahren/Sanktionen",
+        "Rückkehr/Abschluss",
+        "Fehler-/Beschwerden"
+      ],
+      "distribution_time": "Kinder/Jugendliche, Familien, Schulen; kurzfristig bis Bildungsbiografie.",
+      "evidence_level": "NOT_ASSESSABLE",
+      "goal_review": "Verlässliche Bildungsteilnahme und Kindeswohl, nicht Sanktion als Endziel.",
+      "impact_direction": "OPEN",
+      "key_finding": "Schulpflicht und Bildungszugang sind bestehender Rechts-/Schutzrahmen; 'konsequent durchsetzen' benennt aber kein Ursachen-, Unterstützungs-, Verfahrens- oder Sanktionsdesign.",
+      "mechanism": "Schulpflicht konsequent durchsetzen",
+      "not_assessable_reason": "Ohne Enforcement-/Unterstützungsdesign ist keine robuste Richtung zu Teilnahme, Kindeswohl oder Nebenfolgen möglich.",
+      "problem_review": "Fehlzeiten/Schulabsentismus müssen nach Ursachen wie Gesundheit, Familie, Schulklima, Mobilität oder Verweigerung getrennt werden.",
+      "source_gap_status": "PRIMARY_SOURCE_EFFECT_MECHANISM_ABSENT_FROM_RELEASE1_RESTORED_VERSIONED",
+      "source_locator": {
+        "pdf_page": 19,
+        "section": "Das klügste Bildungssystem in Deutschland"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-P19-SCHOOL-DUTY-ENFORCEMENT",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Bildungszugang",
+        "Inklusion",
+        "zumutbare Wege"
+      ],
+      "competence_delivery": "LAND/school planning/local school authorities.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Wegezeiten",
+        "Auslastung",
+        "Unterrichtsversorgung",
+        "Angebotsbreite",
+        "Kosten",
+        "Lernergebnisse",
+        "regionale Verteilung"
+      ],
+      "distribution_time": "Kinder/Familien im ländlichen Raum, Lehrkräfte, Schulträger; langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Zugängliche qualitativ tragfähige Bildung, nicht Standortzahl allein.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Schulverbünde/Campusschulen können wohnortnahe Angebote bei ungleichen Schülerzahlen stabilisieren, bergen aber Skalierungs-, Wege-, Personal- und Qualitätsrisiken.",
+      "mechanism": "ländliches Schulnetz über Schulverbünde/Campusschulen sichern",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0062-schulentwicklung-gestalten-und-strukturen-modernisieren-wi",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0062-schulentwicklung-gestalten-und-strukturen-modernisieren-wi",
+      "problem_review": "Erreichbarkeit, Demografie und Unterrichtsversorgung sind regional verschieden; Standortzahl allein ist keine Problembaseline.",
+      "source_locator": {
+        "pdf_pages": [
+          19,
+          20
+        ],
+        "section": "Das klügste Bildungssystem in Deutschland"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0062-RURAL-SCHOOL-NETWORK",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "faire Zugänglichkeit",
+        "Kindeswohl",
+        "Qualität"
+      ],
+      "competence_delivery": "LAND/schools/horts/providers/municipalities.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Teilnahme nach Soziallage/Region",
+        "Qualität",
+        "Lern-/Wohlbefinden",
+        "Erreichbarkeit",
+        "Personal"
+      ],
+      "distribution_time": "Besonders Kinder mit geringeren privaten Ressourcen und ländliche Räume; kurz-/mittelfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Gleichberechtigte Entwicklungs- und Förderchancen.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Nachmittagsangebote können Teilhabe, Entwicklung und Lernchancen erhöhen, wenn Zugang und Qualität nicht von Wohnort oder Familienressourcen abhängen.",
+      "mechanism": "musisch-kreative, Bewegungs- und Lern-/Unterstützungsangebote am Nachmittag ausbauen",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0062-schulentwicklung-gestalten-und-strukturen-modernisieren-wi",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0062-schulentwicklung-gestalten-und-strukturen-modernisieren-wi",
+      "problem_review": "Ungleicher Zugang zu Förder-/Freizeit-/Lernangeboten ist plausibel; regionale/soziale Baseline nötig.",
+      "source_locator": {
+        "pdf_pages": [
+          19,
+          20
+        ],
+        "section": "Das klügste Bildungssystem in Deutschland"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0062-AFTERNOON-SUPPORT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "keine unverhältnismäßige Verdrängung anderer Bildungsbereiche",
+        "Chancengleichheit"
+      ],
+      "competence_delivery": "LAND/curriculum/schools/teachers.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Lernstand/Mindeststandards",
+        "Unterrichtsqualität",
+        "Stundenverteilung",
+        "soziale Verteilung"
+      ],
+      "distribution_time": "Grundschüler, besonders Kinder mit Unterstützungsbedarf; mittel-/langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Messbare Basiskompetenzen und faire Mindeststandards.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Zusätzliche oder gezieltere Lernzeit für Mathematik und Deutsch kann Basiskompetenzen stärken, wenn Didaktik, Diagnose und Förderung wirksam sind; reine Stundenverlagerung ist kein Outcome.",
+      "mechanism": "Kernkompetenzen stärken und Unterricht in Mathematik/Deutsch ausbauen",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0064-die-grundschule-als-fundament-fuer-den-bildungserfolg-stae",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0064-die-grundschule-als-fundament-fuer-den-bildungserfolg-stae",
+      "problem_review": "Aktuelle BMK-Roadmap nach IQB-Bildungstrend bestätigt allgemeinen Handlungsbedarf bei Mindeststandards; Sachsen-Anhalt-spezifische Fachbaseline bleibt separat nötig.",
+      "source_locator": {
+        "pdf_page": 20,
+        "section": "Das klügste Bildungssystem in Deutschland"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0064-CORE-MATH-GERMAN",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Datenschutz",
+        "Kindeswohl",
+        "faire Zugänglichkeit"
+      ],
+      "competence_delivery": "LAND/municipal/provider/school/hort coordination.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Übergangs-/Förderpläne",
+        "Doppelarbeit",
+        "Eltern-/Kindzugang",
+        "Datenschutzvorfälle",
+        "Entwicklungs-/Lernindikatoren"
+      ],
+      "distribution_time": "Kinder, Eltern, pädagogisches Personal; Übergangsphase und Grundschulzeit.",
+      "evidence_level": "LOW",
+      "goal_review": "Kontinuierliche kindzentrierte Bildung/Förderung und weniger Schnittstellenfriktion.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Bessere Kooperation Kita–Grundschule–Hort kann Übergänge, Informationskontinuität, Förderung und Elternentlastung verbessern; Datenschutz, Zuständigkeiten und Personalzeit sind Delivery-Bedingungen.",
+      "mechanism": "Kita, Grundschule und Hort wirksam koordinieren",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0064-die-grundschule-als-fundament-fuer-den-bildungserfolg-stae",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0064-die-grundschule-als-fundament-fuer-den-bildungserfolg-stae",
+      "problem_review": "Schnittstellen-/Übergabefriktionen sind plausibel; konkrete Baseline zu Doppelarbeit/Informationsverlust nötig.",
+      "source_locator": {
+        "pdf_page": 20,
+        "section": "Das klügste Bildungssystem in Deutschland"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0064-KITA-GS-HORT-COOP",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Arbeitsschutz",
+        "Chancengleichheit",
+        "keine zu frühe Bildungswegverengung"
+      ],
+      "competence_delivery": "LAND/schools/employers/providers.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Teilnahme/Platzqualität",
+        "Lern-/Orientierungsgewinn",
+        "Übergänge",
+        "soziale/regionale Verteilung",
+        "Abbrüche"
+      ],
+      "distribution_time": "Klassen 7–9, Betriebe, Regionen; mittel-/langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Orientierungs- und Anwendungskompetenz ohne frühe Pfadverengung.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Ein regelmäßiger Praxislerntag kann Berufsorientierung, Motivation und Anwendungskompetenz verbessern, wenn Lernziele, Betriebe, Arbeitsschutz und Reflexion gesichert sind.",
+      "mechanism": "verbindlicher wöchentlicher Praxislerntag",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0068-4-1-modell-flaechendeckend-einfuehren-in-den-klassenstufen",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0068-4-1-modell-flaechendeckend-einfuehren-in-den-klassenstufen",
+      "problem_review": "Orientierungs-/Praxislücken plausibel; Wirkung hängt an Qualität und Zugang der Plätze.",
+      "source_locator": {
+        "pdf_pages": [
+          20,
+          21
+        ],
+        "section": "Das klügste Bildungssystem in Deutschland"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0068-PRACTICE-DAY",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Datenschutz",
+        "Cyberresilienz",
+        "Barrierefreiheit",
+        "Chancengleichheit"
+      ],
+      "competence_delivery": "LAND/digital platform/schools/teachers.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Nutzbarkeit",
+        "Lernfortschritt",
+        "Supportbedarf",
+        "Geräte-/Netzzugang",
+        "Abbruch",
+        "Datenschutz/Cyber"
+      ],
+      "distribution_time": "Schüler nach Haushalts-/Schulressourcen; mittel-/langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Messbarer Lernzuwachs und digitale Teilhabe.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Ein digital gestützter Lerntag kann individualisiertes Lernen ermöglichen, wirkt aber nur mit didaktischer Qualität, Geräten/Netz, Unterstützung und Datenschutz; sonst können Lern- und Teilhabedifferenzen wachsen.",
+      "mechanism": "digital gestützter Lerntag mit landeseinheitlichem Lernsystem",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0068-4-1-modell-flaechendeckend-einfuehren-in-den-klassenstufen",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0068-4-1-modell-flaechendeckend-einfuehren-in-den-klassenstufen",
+      "problem_review": "Digitaler Lernhebel hängt an Didaktik/Kompetenz und Zugang, nicht an Digitalisierung als Selbstzweck.",
+      "source_locator": {
+        "pdf_pages": [
+          20,
+          21
+        ],
+        "section": "Das klügste Bildungssystem in Deutschland"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0068-DIGITAL-DAY",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Chancengleichheit",
+        "Förderpflicht/Unterstützung"
+      ],
+      "competence_delivery": "LAND/schools/teachers.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Lernfortschritt nach Ausgangslage",
+        "Selbstregulation",
+        "Unterstützungszeit",
+        "Abbruch/Überforderung",
+        "Verteilung"
+      ],
+      "distribution_time": "Alle Schulformen; besonders sensitiv für Unterstützungsbedarf.",
+      "evidence_level": "LOW",
+      "goal_review": "Selbstständiges Lernen bei gesichertem Lernfortschritt und Teilhabe.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Strukturierte Eigenlernphasen können Selbstorganisation stärken, verlangen aber Scaffolding und differenzierte Unterstützung; sonst können bestehende Lernunterschiede wachsen.",
+      "mechanism": "strukturierte Eigenlernphasen in allen Schulformen etablieren",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0068-4-1-modell-flaechendeckend-einfuehren-in-den-klassenstufen",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0068-4-1-modell-flaechendeckend-einfuehren-in-den-klassenstufen",
+      "problem_review": "Selbstregulationskompetenz ist Lernziel, aber Unterstützungsbedarf heterogen.",
+      "source_locator": {
+        "pdf_page": 21,
+        "section": "Das klügste Bildungssystem in Deutschland"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0068-SELF-LEARNING-PHASES",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Kindeswohl",
+        "Datenschutz",
+        "keine Indoktrination"
+      ],
+      "competence_delivery": "LAND/schools/teachers/curriculum.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Kompetenzmessung",
+        "Quellen-/Manipulationserkennung",
+        "Sicherheits-/Wohlbefindensindikatoren",
+        "soziale Teilhabe",
+        "Lehrkräftekapazität"
+      ],
+      "distribution_time": "Kinder/Jugendliche, Lehrkräfte; kurz- bis langfristig.",
+      "evidence_level": "MEDIUM",
+      "goal_review": "Informierte, sichere, selbstbestimmte Mediennutzung.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Systematische Medienkompetenz-/Reflexionsprojekte adressieren einen anerkannten Bildungsauftrag; BMK/KMK betont 2026 digitale Resilienz, kritische Einordnung und sicheren Umgang.",
+      "mechanism": "Medienkompetenz und kritische Reflexion über Projekte/praxisnahe Unterrichtseinheiten stärken",
+      "problem_review": "Digitale Informations-/Sicherheits-/Reflexionskompetenzen sind materialer Bildungsbedarf.",
+      "source_gap_status": "PRIMARY_SOURCE_EFFECT_MECHANISM_ABSENT_FROM_RELEASE1_RESTORED_VERSIONED",
+      "source_locator": {
+        "pdf_page": 21,
+        "section": "Das klügste Bildungssystem in Deutschland"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-P21-MEDIA-LITERACY-PROJECTS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Datenschutz",
+        "pädagogische Verantwortung",
+        "nachhaltige Finanzierung"
+      ],
+      "competence_delivery": "LAND/schools/support structure.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Lehrkräftezeit",
+        "Unterrichtsnutzung",
+        "Kompetenztransfer",
+        "Kosten",
+        "Fluktuation",
+        "Lernoutcome"
+      ],
+      "distribution_time": "Schulen/Lehrkräfte/Schüler; mittel-/langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Bessere Unterrichtsqualität und Entlastung, nicht Assistenzstellenzahl.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Digitalassistenten können Lehrkräfte bei digitalgestütztem Unterricht entlasten und Kompetenz verbreiten; Wirkung hängt an Rollenklärung, Fachkompetenz, Skalierung und Finanzierung.",
+      "mechanism": "Digitalassistenten an Schulen intensiver einsetzen",
+      "problem_review": "Unterstützungs-/Kompetenzengpass plausibel; tatsächlicher Lehrkräftebedarf und Aufgabenprofil zu belegen.",
+      "source_gap_status": "PRIMARY_SOURCE_EFFECT_MECHANISM_ABSENT_FROM_RELEASE1_RESTORED_VERSIONED",
+      "source_locator": {
+        "pdf_page": 21,
+        "section": "Das klügste Bildungssystem in Deutschland"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-P21-DIGITAL-ASSISTANTS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Datenschutz",
+        "Kindeswohl",
+        "Transparenz",
+        "menschliche pädagogische Verantwortung"
+      ],
+      "competence_delivery": "LAND/schools/providers within data/AI/education law.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Lerngewinn",
+        "Fehler/Halluzinationen",
+        "Bias",
+        "Datenschutz/Cyber",
+        "Nutzungsmuster",
+        "Lehrkräfteaufsicht"
+      ],
+      "distribution_time": "Schüler/Lehrkräfte, unterschiedlich nach Zugang/Unterstützungsbedarf.",
+      "evidence_level": "LOW",
+      "goal_review": "Lernqualität und KI-Kompetenz, nicht KI-Nutzung an sich.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "KI als Lernwerkzeug kann Feedback, Differenzierung und Kreativität unterstützen, birgt aber Fehler-/Bias-, Datenschutz-, Abhängigkeits-, Täuschungs- und Kompetenzrisiken.",
+      "mechanism": "KI als Werkzeug für kreatives und effektives Lernen integrieren",
+      "problem_review": "Lern-/Differenzierungsbedarf und KI-Kompetenzbedarf sind getrennt zu prüfen.",
+      "source_gap_status": "PRIMARY_SOURCE_EFFECT_MECHANISM_ABSENT_FROM_RELEASE1_RESTORED_VERSIONED",
+      "source_locator": {
+        "pdf_page": 21,
+        "section": "Das klügste Bildungssystem in Deutschland"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-P21-AI-LEARNING-TOOL",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Datenschutz",
+        "professionelle Standards",
+        "Fortbildungszugänglichkeit"
+      ],
+      "competence_delivery": "LAND/higher education/teacher training.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Teilnahme/Kompetenzerwerb",
+        "Transfer in Unterricht",
+        "Qualitäts-/Sicherheitsindikatoren",
+        "Fortbildungszugang"
+      ],
+      "distribution_time": "Lehrkräfte, Schüler; mittel-/langfristig.",
+      "evidence_level": "MEDIUM",
+      "goal_review": "Professionell reflektierter digitaler Unterricht.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Verbindliche Medienkompetenz in Aus-/Fortbildung kann Unterrichtsqualität und sicheren KI-/Medieneinsatz stärken; aktuelle KMK-Linie bestätigt die Bedeutung professioneller Medienkompetenz.",
+      "mechanism": "Medienkompetenz verpflichtend in Lehrkräfteausbildung/Fortbildung verankern",
+      "problem_review": "Digitale/mediale Kompetenzlücken im Unterricht sind plausibler Qualitätsengpass.",
+      "source_gap_status": "PRIMARY_SOURCE_EFFECT_MECHANISM_ABSENT_FROM_RELEASE1_RESTORED_VERSIONED",
+      "source_locator": {
+        "pdf_page": 21,
+        "section": "Das klügste Bildungssystem in Deutschland"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-P21-TEACHER-MEDIA-TRAINING",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Abschlussstandards",
+        "keine Stigmatisierung/Segregation",
+        "Arbeitsschutz"
+      ],
+      "competence_delivery": "LAND/schools/employers/providers.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Abschlussquote",
+        "Übergänge",
+        "Lernkompetenzen",
+        "Zielgruppen-/Regionenverteilung",
+        "Stigmatisierung"
+      ],
+      "distribution_time": "Schüler mit erhöhtem Abschlussrisiko; regional/sozial sensibel.",
+      "duplicate_guard": "Praxislerntage in same paragraph crosswalk to source_unit 0068; not counted twice",
+      "evidence_level": "LOW",
+      "goal_review": "Anerkannte Abschlüsse und tragfähige Übergänge.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Ausbau Produktiven Lernens kann für Schülerinnen/Schüler mit erhöhtem Abschlussrisiko praxisnahe alternative Lernwege eröffnen, wenn Abschlussstandards, Betreuung und Übergänge gesichert sind.",
+      "mechanism": "Programm Produktives Lernen flächendeckend ausbauen",
+      "problem_review": "Abschluss-/Motivationsrisiken sind heterogen; Zielgruppen-/Programmwirkung separat messen.",
+      "source_gap_status": "PRIMARY_SOURCE_EFFECT_MECHANISM_ABSENT_FROM_RELEASE1_RESTORED_VERSIONED",
+      "source_locator": {
+        "pdf_page": 21,
+        "section": "Das klügste Bildungssystem in Deutschland"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-P21-PRODUCTIVE-LEARNING",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Kindeswohl",
+        "Vertraulichkeit",
+        "faire regionale Zugänglichkeit"
+      ],
+      "competence_delivery": "LAND/municipalities/youth welfare providers/schools.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Reichweite nach Bedarf",
+        "Wartezeit",
+        "Fehlzeiten/Abbruch",
+        "Konflikt-/Unterstützungsverläufe",
+        "regionale Finanzierung/Personal"
+      ],
+      "distribution_time": "Schüler/Schulen mit besonderem Unterstützungsbedarf; kurz-/mittelfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Zugängliche Unterstützung mit klaren Outcome-Zielen.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Bedarfsorientierte Schulsozialarbeit kann soziale/psychosoziale Barrieren, Konflikte und Teilhabeprobleme adressieren; kommunale Verantwortung kann bei ungleicher Finanz-/Personallage regionale Unterschiede erzeugen.",
+      "mechanism": "Schulsozialarbeit erhalten, zielorientieren, evaluieren und bedarfsorientiert einsetzen",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0073-unterstuetzung-fuer-schuelerinnen-und-schueler-gewaehrleis",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0073-unterstuetzung-fuer-schuelerinnen-und-schueler-gewaehrleis",
+      "problem_review": "Unterstützungsbedarfe sind schul-/soziallagenabhängig; regionale Baseline nötig.",
+      "source_locator": {
+        "pdf_page": 22,
+        "section": "Das klügste Bildungssystem in Deutschland"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0073-SCHOOL-SOCIAL-WORK",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Vertraulichkeit",
+        "Datenschutz",
+        "fachliche Standards"
+      ],
+      "competence_delivery": "LAND/school psychological services/schools.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Psychologenquote",
+        "Warte-/Fahrzeit",
+        "Nutzung",
+        "Fallverlauf/Weitervermittlung",
+        "Krisenreaktion",
+        "regionale Verteilung"
+      ],
+      "distribution_time": "Betroffene Schüler, Familien, Lehrkräfte; akut bis längerfristig.",
+      "evidence_level": "MEDIUM",
+      "goal_review": "Frühzeitige fachgerechte Unterstützung und Krisenprävention.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Erreichbare Schulpsychologie kann Diagnostik, Beratung, Krisenunterstützung und Schul-/Lehrkräfteberatung verbessern; Wirkung hängt an Fachkräftezahl, Wartezeit und Schnittstellen.",
+      "mechanism": "flächendeckende schulpsychologische Beratung/Betreuung sichern",
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0073-unterstuetzung-fuer-schuelerinnen-und-schueler-gewaehrleis",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0073-unterstuetzung-fuer-schuelerinnen-und-schueler-gewaehrleis",
+      "problem_review": "Psychosoziale/diagnostische Unterstützungsbedarfe sind plausibel; Kapazitäts-/Wartezeitbaseline nötig.",
+      "source_locator": {
+        "pdf_page": 22,
+        "section": "Das klügste Bildungssystem in Deutschland"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0073-SCHOOL-PSYCHOLOGY",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "faire Zugänglichkeit",
+        "keine frühe Bildungswegverengung"
+      ],
+      "competence_delivery": "LAND/schools/certification bodies.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Zertifizierungsstandards",
+        "Teilnahme",
+        "Orientierungskompetenz",
+        "Übergänge",
+        "Aufwand",
+        "soziale/regionale Unterschiede"
+      ],
+      "distribution_time": "Oberschüler, Schulen, Betriebe; mittelfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Orientierungskompetenz und hochwertige Übergänge.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Ein verbindliches zertifiziertes Berufsorientierungsprogramm kann Mindestqualität und Kontinuität sichern, wenn Zertifizierung echte Prozess-/Outcomequalität prüft und keine Bürokratie ohne Nutzen erzeugt.",
+      "mechanism": "alle Oberschulen mit zertifiziertem Berufsorientierungsprogramm",
+      "problem_review": "Qualität/Verbindlichkeit von Berufsorientierung kann heterogen sein; Baseline nötig.",
+      "source_gap_status": "PRIMARY_SOURCE_EFFECT_MECHANISM_ABSENT_FROM_RELEASE1_RESTORED_VERSIONED",
+      "source_locator": {
+        "pdf_page": 22,
+        "section": "Das klügste Bildungssystem in Deutschland"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-P22-CERTIFIED-CAREER-ORIENTATION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Datenschutz",
+        "keine diskriminierende Profilbildung",
+        "Job-/Ausbildungsqualität"
+      ],
+      "competence_delivery": "LAND/schools/chambers/employers/training system.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Übergangs-/Abbruchdaten",
+        "Matchingqualität",
+        "Maßnahmenänderungen durch Monitoring",
+        "Datenqualität/Abdeckung"
+      ],
+      "distribution_time": "Schüler/Auszubildende/Betriebe; Übergangsphase.",
+      "evidence_level": "LOW",
+      "goal_review": "Hochwertige nachhaltige Übergänge, nicht nur schnellere Platzierung.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Übergangsmonitoring plus Kooperation kann Abbrüche/Fehlmatching sichtbar machen und Unterstützung zielgenauer machen; Datenfunktion ist kein Kausalitätsbeweis.",
+      "mechanism": "Übergänge in Ausbildung monitoren und Kooperation Schule-Unternehmen-Kammern stärken",
+      "problem_review": "Informations-/Koordinationslücken an Übergängen plausibel; heutige Datenabdeckung prüfen.",
+      "source_gap_status": "PRIMARY_SOURCE_EFFECT_MECHANISM_ABSENT_FROM_RELEASE1_RESTORED_VERSIONED",
+      "source_locator": {
+        "pdf_page": 22,
+        "section": "Das klügste Bildungssystem in Deutschland"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-P22-TRANSITION-MONITORING-COOP",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "schulische Neutralität",
+        "pluraler Unterricht",
+        "keine Indoktrination"
+      ],
+      "competence_delivery": "LAND/curriculum/schools/teachers.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Kompetenzgewinn",
+        "Curriculumbalance",
+        "Lehrmaterialqualität",
+        "Schülerperspektiven"
+      ],
+      "distribution_time": "Schüler; langfristige ökonomische/demokratische Kompetenz.",
+      "evidence_level": "LOW",
+      "goal_review": "Plural reflektierte Wirtschafts-/Finanzkompetenz.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Ökonomisches/unternehmerisches Denken kann Finanz-/Wirtschaftskompetenz stärken, wenn plural, evidenzbasiert und nicht als politische oder unternehmerische Werbung vermittelt.",
+      "mechanism": "unternehmerisches Denken im Pflichtfach Wirtschaft positiv darstellen/vermitteln",
+      "problem_review": "Ökonomische Kompetenz ist legitimer Bildungsbereich; einseitige Positivdarstellung ist kein Kompetenzmaß.",
+      "source_gap_status": "PRIMARY_SOURCE_EFFECT_MECHANISM_ABSENT_FROM_RELEASE1_RESTORED_VERSIONED",
+      "source_locator": {
+        "pdf_page": 22,
+        "section": "Das klügste Bildungssystem in Deutschland"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-P22-ENTREPRENEURSHIP-ECONOMICS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Bildungszugang",
+        "Qualität",
+        "zumutbare Wege"
+      ],
+      "competence_delivery": "LAND/school planning/local providers.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Wegezeit",
+        "Auslastung",
+        "Fachangebot",
+        "Unterrichtsversorgung",
+        "Abschluss-/Übergangsquote",
+        "Kosten"
+      ],
+      "distribution_time": "Auszubildende, Betriebe, ländliche Regionen; langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Erreichbare hochwertige berufliche Bildung.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Erhalt gut erreichbarer BBS kann Zugang und regionale Ausbildungskapazität stabilisieren; starres Standorthalten trotz Demografie/Fachrichtungen kann Ressourcen fragmentieren.",
+      "mechanism": "gut erreichbare/gut ausgestattete Berufsbildende Schulstandorte strukturell erhalten",
+      "problem_review": "Erreichbarkeit und Fachangebot sind regional; Standortzahl allein ist keine Qualitätsmetrik.",
+      "source_gap_status": "PRIMARY_SOURCE_EFFECT_MECHANISM_ABSENT_FROM_RELEASE1_RESTORED_VERSIONED",
+      "source_locator": {
+        "pdf_page": 22,
+        "section": "Das klügste Bildungssystem in Deutschland"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-P22-VOCATIONAL-SCHOOL-SITES",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "faire Zugänglichkeit",
+        "Sicherheit/Unterbringungsqualität"
+      ],
+      "competence_delivery": "LAND/municipalities/training-school ecosystem.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Reisezeit/Kosten",
+        "Unterbringungsbedarf",
+        "Teilnahme/Abbruch",
+        "regionale/fachliche Verteilung"
+      ],
+      "distribution_time": "Auszubildende in ländlichen Regionen und Spezialberufen; Ausbildungsdauer.",
+      "evidence_level": "LOW",
+      "goal_review": "Erreichbare berufliche Bildung unabhängig vom Wohnort.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Beförderungs-/Unterbringungsstrukturen können räumliche Zugangsbarrieren zu spezialisierter beruflicher Bildung senken, besonders im ländlichen Raum.",
+      "mechanism": "verlässliche Beförderungs- und Unterbringungsstrukturen für berufliche Bildung",
+      "problem_review": "Wege-/Unterbringungskosten können Teilnahme/Abbruch beeinflussen; tatsächliche Bedarfslage nach Fach/Region messen.",
+      "source_gap_status": "PRIMARY_SOURCE_EFFECT_MECHANISM_ABSENT_FROM_RELEASE1_RESTORED_VERSIONED",
+      "source_locator": {
+        "pdf_page": 22,
+        "section": "Das klügste Bildungssystem in Deutschland"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-P22-TRAINEE-TRANSPORT-ACCOMMODATION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "faire Kriterien",
+        "keine Mitnahme",
+        "Verwaltungszugang"
+      ],
+      "competence_delivery": "LAND funding/design within existing federal support interfaces.",
+      "counts_toward_authoritative_denominator": "PENDING_FINAL_SEGMENTATION_RULE",
+      "data_falsification": [
+        "Begünstigte nach Einkommen/Region",
+        "reale Zusatzkosten",
+        "Ausbildungsaufnahme/-abbruch",
+        "Mitnahme",
+        "Verwaltungskosten"
+      ],
+      "distribution_time": "Auszubildende mit hohen Zusatzkosten, besonders ländlich; Ausbildungsdauer.",
+      "evidence_level": "LOW",
+      "goal_review": "Ausbildungsteilnahme unabhängig von räumlich bedingten Zusatzkosten.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Bedarfsgerechte Entlastung kann Ausbildungsteilnahme bei hohen Wege-/Unterbringungskosten ermöglichen; Wirkung hängt an Bedürftigkeits-/Kostenkriterien und Additionalität.",
+      "mechanism": "bedarfsgerechte finanzielle Entlastung von Auszubildenden",
+      "problem_review": "Finanzielle Zusatzkosten können Ausbildungszugang beeinträchtigen; Bedarf nach Einkommen/Region/Fach zu belegen.",
+      "source_gap_status": "PRIMARY_SOURCE_EFFECT_MECHANISM_ABSENT_FROM_RELEASE1_RESTORED_VERSIONED",
+      "source_locator": {
+        "pdf_page": 22,
+        "section": "Das klügste Bildungssystem in Deutschland"
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-P22-TRAINEE-RELIEF",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    }
+  ]
 }

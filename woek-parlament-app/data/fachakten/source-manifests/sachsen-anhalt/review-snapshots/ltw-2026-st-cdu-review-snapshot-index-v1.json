@@ -7,48 +7,68 @@
       "created_at": "2026-08-21T18:23:59Z",
       "issue_comment_id": 5373687313,
       "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/234#issuecomment-5373687313",
+      "matching_candidate_ids": [
+        5373687313
+      ],
       "shard": "p23-p24",
-      "snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p23-p24-review.md"
+      "snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p23-p24-review.md",
+      "zero_gap_token": "ST_CDU_P23_P24_SOURCE_RESTORE_GAPS = 0"
+    },
+    {
+      "body_sha256": "79bd5f1ced93fb950c1c1e346d5c9af0d43ba484384c5ea243980328cab2851d",
+      "canonical_token": null,
+      "checkpoint": "ST_CDU_PRIMARY_PARITY_P25_P28 = PASS_SEGMENT",
+      "created_at": "2026-08-21T18:35:12Z",
+      "issue_comment_id": 5373797040,
+      "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/234#issuecomment-5373797040",
+      "matching_candidate_ids": [
+        5373797040
+      ],
+      "shard": "p25-p28",
+      "snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p25-p28-review.md",
+      "zero_gap_token": "ST_CDU_P25_P28_SOURCE_RESTORE_GAPS = 0"
     },
     {
       "body_sha256": "0e00d2cc7828ba7c89a77942f69a753c1f8ab259bad9217a2f67aafc8d87608c",
       "canonical_token": null,
-      "checkpoint": "ST_CDU_PRIMARY_PARITY_P25_P28 = PASS_SEGMENT",
+      "checkpoint": "ST_CDU_PRIMARY_PARITY_P29_P32 = PASS_SEGMENT",
       "created_at": "2026-08-21T19:12:38Z",
       "issue_comment_id": 5374174537,
       "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/234#issuecomment-5374174537",
-      "shard": "p25-p28",
-      "snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p25-p28-review.md"
+      "matching_candidate_ids": [
+        5374174537
+      ],
+      "shard": "p29-p32",
+      "snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p29-p32-review.md",
+      "zero_gap_token": "ST_CDU_P29_P32_UNRESOLVED_SOURCE_GAPS = 0"
     },
     {
       "body_sha256": "efb3cedc1a3f87ad391ec06576537e5d31db49503b360650c1d5d51fb7e830b2",
       "canonical_token": null,
-      "checkpoint": "ST_CDU_PRIMARY_PARITY_P29_P32 = PASS_SEGMENT",
+      "checkpoint": "ST_CDU_PRIMARY_PARITY_P33_P36 = PASS_SEGMENT",
       "created_at": "2026-08-21T19:20:23Z",
       "issue_comment_id": 5374248114,
       "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/234#issuecomment-5374248114",
-      "shard": "p29-p32",
-      "snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p29-p32-review.md"
+      "matching_candidate_ids": [
+        5374248114
+      ],
+      "shard": "p33-p36",
+      "snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p33-p36-review.md",
+      "zero_gap_token": "ST_CDU_P33_P36_UNRESOLVED_SOURCE_GAPS = 0"
     },
     {
       "body_sha256": "419d603df150cde8cab379dd6f58bf19538e0fde52cf8d35783aa92e174ef2b9",
       "canonical_token": null,
-      "checkpoint": "ST_CDU_PRIMARY_PARITY_P33_P36 = PASS_SEGMENT",
+      "checkpoint": "ST_CDU_PRIMARY_PARITY_P37_P39 = PASS_SEGMENT",
       "created_at": "2026-08-21T19:30:09Z",
       "issue_comment_id": 5374339903,
       "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/234#issuecomment-5374339903",
-      "shard": "p33-p36",
-      "snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p33-p36-review.md"
-    },
-    {
-      "body_sha256": "e40f570616c4b49dbbfedbe6c592c633cba56b952c9eada9fd824039535aab24",
-      "canonical_token": null,
-      "checkpoint": "ST_CDU_PRIMARY_PARITY_P37_P39 = PASS_SEGMENT",
-      "created_at": "2026-08-21T19:32:36Z",
-      "issue_comment_id": 5374363536,
-      "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/234#issuecomment-5374363536",
+      "matching_candidate_ids": [
+        5374339903
+      ],
       "shard": "p37-p39",
-      "snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p37-p39-review.md"
+      "snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p37-p39-review.md",
+      "zero_gap_token": "ST_CDU_P37_P39_UNRESOLVED_SOURCE_GAPS = 0"
     },
     {
       "body_sha256": "e40f570616c4b49dbbfedbe6c592c633cba56b952c9eada9fd824039535aab24",
@@ -57,8 +77,12 @@
       "created_at": "2026-08-21T19:32:36Z",
       "issue_comment_id": 5374363536,
       "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/234#issuecomment-5374363536",
+      "matching_candidate_ids": [
+        5374363536
+      ],
       "shard": "p40-p42",
-      "snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p40-p42-review.md"
+      "snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p40-p42-review.md",
+      "zero_gap_token": "ST_CDU_P40_P42_UNRESOLVED_SOURCE_GAPS = 0"
     },
     {
       "body_sha256": "f927a84bfeb0b368f5668a00f85f9b99c65ce0fbdde96b07193c073fa6aed8c3",
@@ -67,8 +91,12 @@
       "created_at": "2026-08-21T19:43:29Z",
       "issue_comment_id": 5374518979,
       "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/234#issuecomment-5374518979",
+      "matching_candidate_ids": [
+        5374518979
+      ],
       "shard": "p43-p46",
-      "snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p43-p46-review.md"
+      "snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p43-p46-review.md",
+      "zero_gap_token": "ST_CDU_P43_P46_UNRESOLVED_SOURCE_GAPS = 0"
     },
     {
       "body_sha256": "c2df2f69079f78d152b66f92345405f1d91b0bd6264f838d0d83b9358895b9fb",
@@ -77,53 +105,79 @@
       "created_at": "2026-08-21T19:47:43Z",
       "issue_comment_id": 5374587495,
       "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/234#issuecomment-5374587495",
+      "matching_candidate_ids": [
+        5374587495
+      ],
       "shard": "p47-p49",
-      "snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p47-p49-review.md"
+      "snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p47-p49-review.md",
+      "zero_gap_token": "ST_CDU_P47_P49_UNRESOLVED_SOURCE_GAPS = 0"
+    },
+    {
+      "body_sha256": "a2eb2d55e5b61ef4802dd412e7221875536485fedeeb31c1e00dd78039422fb9",
+      "canonical_token": null,
+      "checkpoint": "ST_CDU_PRIMARY_PARITY_P50_P53 = PASS_SEGMENT",
+      "created_at": "2026-08-21T19:52:07Z",
+      "issue_comment_id": 5374639617,
+      "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/234#issuecomment-5374639617",
+      "matching_candidate_ids": [
+        5374639617
+      ],
+      "shard": "p50-p53",
+      "snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p50-p53-review.md",
+      "zero_gap_token": "ST_CDU_P50_P53_UNRESOLVED_SOURCE_GAPS = 0"
     },
     {
       "body_sha256": "6b0a0f45057b626e665a1b94014dc4a96986540e5cda7aa560e1c04c5ee38a4d",
       "canonical_token": null,
-      "checkpoint": "ST_CDU_PRIMARY_PARITY_P50_P53 = PASS_SEGMENT",
+      "checkpoint": "ST_CDU_PRIMARY_PARITY_P54_P56 = PASS_SEGMENT",
       "created_at": "2026-08-21T19:55:21Z",
       "issue_comment_id": 5374669067,
       "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/234#issuecomment-5374669067",
-      "shard": "p50-p53",
-      "snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p50-p53-review.md"
+      "matching_candidate_ids": [
+        5374669067
+      ],
+      "shard": "p54-p56",
+      "snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p54-p56-review.md",
+      "zero_gap_token": "ST_CDU_P54_P56_UNRESOLVED_SOURCE_GAPS = 0"
     },
     {
       "body_sha256": "777878ee4acf749636987ed05db99429a483539d760a971b6b2fe85efc5272f7",
       "canonical_token": null,
-      "checkpoint": "ST_CDU_PRIMARY_PARITY_P54_P56 = PASS_SEGMENT",
+      "checkpoint": "ST_CDU_PRIMARY_PARITY_P57_P59 = PASS_SEGMENT",
       "created_at": "2026-08-21T19:58:02Z",
       "issue_comment_id": 5374692973,
       "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/234#issuecomment-5374692973",
-      "shard": "p54-p56",
-      "snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p54-p56-review.md"
-    },
-    {
-      "body_sha256": "8d0cbc0c4ff98d0f28b4cb59547782260cadc69c8ba62b066fd4b8df71c59ce2",
-      "canonical_token": null,
-      "checkpoint": "ST_CDU_PRIMARY_PARITY_P57_P59 = PASS_SEGMENT",
-      "created_at": "2026-08-21T20:10:35Z",
-      "issue_comment_id": 5374807332,
-      "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/234#issuecomment-5374807332",
+      "matching_candidate_ids": [
+        5374692973
+      ],
       "shard": "p57-p59",
-      "snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p57-p59-review.md"
+      "snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p57-p59-review.md",
+      "zero_gap_token": "ST_CDU_P57_P59_UNRESOLVED_SOURCE_GAPS = 0"
     },
     {
-      "body_sha256": "fbb5586b3378ee79721f4ce56d2faf4f5cef9215796c32e26e6f5e61befd050f",
+      "body_sha256": "c952c0554517a1ed1c1b9972ff32c44ea1f19b10940bfe17749e87dcf7d780b3",
       "canonical_token": null,
       "checkpoint": "ST_CDU_PRIMARY_PARITY_P63_P64 = PASS_SEGMENT",
-      "created_at": "2026-08-21T21:11:25Z",
-      "issue_comment_id": 5375461590,
-      "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/234#issuecomment-5375461590",
+      "created_at": "2026-08-21T20:16:23Z",
+      "issue_comment_id": 5374860356,
+      "issue_comment_url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/234#issuecomment-5374860356",
+      "matching_candidate_ids": [
+        5374860356
+      ],
       "shard": "p63-p64",
-      "snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p63-p64-review.md"
+      "snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p63-p64-review.md",
+      "zero_gap_token": "ST_CDU_P63_P64_UNRESOLVED_SOURCE_GAPS = 0"
     }
   ],
   "fach_semantics_created": false,
   "issue": 234,
   "programme_key": "ltw-2026-st-cdu",
   "purpose": "MECHANICAL_SOURCE_BOUND_REVIEW_PROVENANCE_FOR_GLOBAL_LEAF_RECONCILIATION",
-  "schema_version": "1.0"
+  "schema_version": "1.2",
+  "selection_rule": "OWN_PASS_CHECKPOINT_AND_EXACT_SHARD_LOCAL_ZERO_GAP_MARKER_PLUS_CANONICAL_TOKEN_WHERE_REQUIRED",
+  "zero_gap_suffixes_accepted": [
+    "UNRESOLVED_SOURCE_GAPS",
+    "SOURCE_RESTORE_GAPS",
+    "SOURCE_GAPS"
+  ]
 }

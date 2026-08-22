@@ -1,0 +1,402 @@
+{
+  "applicable_241_layer_set_check": {
+    "markers_explicit_in_source_review": [
+      "COMMUNICATION_MEDIA_IMPACT",
+      "COVERAGE_SCOPE",
+      "DELIVERY_FEASIBILITY",
+      "DNS_REFERENCE",
+      "FALSIFICATION_TRIGGERS",
+      "GOAL_REVIEW",
+      "INTERNATIONAL_LEAKAGE",
+      "LIFECYCLE_TRACEABILITY",
+      "MATERIAL_OMISSIONS",
+      "POLICY_COHERENCE",
+      "PROBLEM_REVIEW",
+      "RECOMMENDATION",
+      "RESOURCE_FINANCING",
+      "REVERSIBILITY_LOCKIN",
+      "ROBUSTNESS_STRESS_TEST",
+      "SPATIAL_DISTRIBUTION",
+      "STATE_GFA_ENAP_BENCHMARK"
+    ],
+    "set_check_status": "PASS_SOURCE_BOUND_MARKERS_CAPTURED",
+    "source_review_has_241_system_section": true
+  },
+  "authoritative_effect_mechanism_count": null,
+  "authoritative_source_unit_count": null,
+  "completion_guard": {
+    "st_cdu_final_versioned_manifest": "PENDING_GLOBAL_LEAF_RECONCILIATION",
+    "st_cdu_primary_source_parity": "PASS_FULL_PROGRAMME",
+    "st_cdu_terminal_complete": false
+  },
+  "denominator_status": "NOT_FROZEN_PENDING_GLOBAL_LEAF_RECONCILIATION",
+  "fach_review_comment_id": 5374518979,
+  "fach_review_issue": 234,
+  "historical_ids_immutable": true,
+  "materialization_mode": "MECHANICAL_FROM_SOURCE_BOUND_ISSUE_234_REVIEW_NO_NEW_FACH_SEMANTICS",
+  "party": "CDU",
+  "primary_pdf_pages": [
+    43,
+    46
+  ],
+  "primary_source_diff": [
+    {
+      "classification": "SAME",
+      "legacy_unit": "0171",
+      "source_bound_review_line": "| Versorgung/Resilienz | `0171` | `SAME` | source-exakt, fachlich unten revalidiert |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0172",
+      "source_bound_review_line": "| Akzeptanz-/Beteiligungsgesetz evaluieren | `0172` | `OVERMERGED` | Source-Text ist vollständig, Legacy hängt aber die nächste Zwischenüberschrift „Wir werden“ an; clean Child versionieren |"
+    },
+    {
+      "classification": "SAME",
+      "legacy_unit": "0173",
+      "source_bound_review_line": "| regionale Strompreiszonen | `0173` | `SAME` | source-exakt |"
+    },
+    {
+      "classification": "SAME",
+      "legacy_unit": "0174",
+      "source_bound_review_line": "| Verbraucher/EE-Netzkostenverteilung | `0174` | `SAME` | source-exakt; Additionality-Baseline beachten |"
+    },
+    {
+      "classification": "SAME+PARTIAL",
+      "legacy_unit": "0175",
+      "source_bound_review_line": "| Technologieoffenheits-/Wind-Bündel P44 | nur Teilfragmente `0175/0176` | `PARTIAL_PARENT` | fünf fehlende eigenständige Mechanismen additiv restaurieren; `0176` selbst bleibt `SAME` |"
+    },
+    {
+      "classification": "SAME+PARTIAL",
+      "legacy_unit": "0176",
+      "source_bound_review_line": "| Technologieoffenheits-/Wind-Bündel P44 | nur Teilfragmente `0175/0176` | `PARTIAL_PARENT` | fünf fehlende eigenständige Mechanismen additiv restaurieren; `0176` selbst bleibt `SAME` |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0177",
+      "source_bound_review_line": "| dezentrale Erzeugung + Nachbarschaftsstrom + Speicher | `0177` | `OVERMERGED` | zwei Children |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0178",
+      "source_bound_review_line": "| Smart Grids/Bidirektional + Netzentgelt + BKZ | `0178` | `OVERMERGED` | drei Children |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0179",
+      "source_bound_review_line": "| CCS/CCU + Batterie + Wärmespeicher + synthetische Kraftstoffe | `0179` | `OVERMERGED` | vier technologiegetrennte Children; kein Parent-Score |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0180",
+      "source_bound_review_line": "| H2-Industrie + Gas/H2-Kraftwerk + Erzeugung + Forschung/Region + Kernnetzanschluss | `0180` | `OVERMERGED` | fünf Children; kein Parent-Score |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0181",
+      "source_bound_review_line": "| Wärmeplanung + Bioenergie + EU-Förderung + Geothermie + Abwärme | `0181` | `OVERMERGED` | fünf Children |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0182",
+      "source_bound_review_line": "| Biogas/Biomethan + Gasinfrastruktur + Einspeisung + Rechtsrahmen | `0182` | `OVERMERGED` | vier Children |"
+    },
+    {
+      "classification": "PARTIAL",
+      "legacy_unit": "0183",
+      "source_bound_review_line": "| PV/Solarthermie | `0183` | `PARTIAL_PARENT` | Legacy erfasst nur Betrieb/Vermarktung; Solarpflicht, Landesliegenschaften und Freiflächensteuerung fehlen als drei Children |"
+    },
+    {
+      "classification": "SAME",
+      "legacy_unit": "2027",
+      "source_bound_review_line": "| Flächenbeitragswerte nach 2027 ablehnen | `0176` | `SAME` | source-exakt, gegen geltendes WindBG prüfen |"
+    }
+  ],
+  "primary_source_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf",
+  "programme_key": "ltw-2026-st-cdu",
+  "review_snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p43-p46-review.md",
+  "review_snapshot_sha256": "f927a84bfeb0b368f5668a00f85f9b99c65ce0fbdde96b07193c073fa6aed8c3",
+  "schema_version": "1.1",
+  "segment_checks": {
+    "checkpoint_terminal_count": 36,
+    "dns_mapping_synthesized": false,
+    "historical_ids_mutated": false,
+    "primary_source_parity": "PASS_SEGMENT",
+    "public_count_mutated": false,
+    "recommendation_synthesized": false,
+    "terminal_source_objects_parsed": 44,
+    "unresolved_source_gaps": 0
+  },
+  "shard_version": "2026-08-22-p43-p46-v1",
+  "terminal_source_objects": [
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ltw-2026-st-cdu-0172-das-akzeptanz-und-beteiligungsgesetzes-auf-seine-wirksamke",
+      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0172-ACCEPTANCE-LAW-EFFECTIVENESS-REVIEW",
+      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-ADD-P43-INDUSTRIAL-POWER-PRICE-ADEQUACY",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0175-EQUAL-PROMOTION-ALL-ENERGY-FORMS",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0175-AFFORDABILITY-GUARD",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0175-EARLY-PUBLIC-PARTICIPATION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0175-WIND-IN-FOREST-RESTRAINT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0175-MUNICIPAL-CONSENT-AND-BENEFIT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-ADD-P44-COAL-EXIT-2038-CONTINUITY",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-ADD-P44-COAL-REGION-TARGETED-STRUCTURAL-FUNDS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-ADD-P44-LIGNITE-MATERIAL-USE",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ltw-2026-st-cdu-0177-dezentrale-energieerzeugung-und-speicherung-attraktiver-ma",
+      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0177-NEIGHBORHOOD-ELECTRICITY-SHARING",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0177-ELECTRICITY-STORAGE-SUPPORT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ltw-2026-st-cdu-0178-netzstabilitaet-gewaehrleisten-intelligente-netze-mit-bidi",
+      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0178-SMART-GRIDS-BIDIRECTIONAL-CHARGING",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0178-STORAGE-NETWORK-TARIFF-DESIGN",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0178-ABOLISH-BKZ-GRID-SERVING-STORAGE",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ltw-2026-st-cdu-0179-gezielt-auf-neue-technologien-setzen-dazu-zaehlen-insbeson",
+      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0179-CCS-CCU-AND-CO2-TRANSPORT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0179-BATTERY-STORAGE",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0179-HEAT-STORAGE",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0179-SYNTHETIC-FUELS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ltw-2026-st-cdu-0180-industrielle-wasserstoffwirtschaft-und-energiesicherheit-g",
+      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0180-GREEN-H2-INDUSTRIAL-USE",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0180-GAS-H2-POWER-PLANT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0180-OWN-H2-PRODUCTION-CAPACITY",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0180-H2-RESEARCH-AND-REGIONAL-ECOSYSTEM",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0180-INDUSTRY-CONNECTION-H2-CORE-NETWORK",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ltw-2026-st-cdu-0181-kommunale-waermeplanung-realistisch-und-bezahlbar-gestalte",
+      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0181-HEAT-PLANNING-FEASIBILITY-AFFORDABILITY",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0181-BIOMASS-BIOMETHANE-WOODCHIP-HEAT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0181-EU-FUNDING-CHECK",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0181-GEOTHERMAL-LOOP-HEAT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0181-WASTE-HEAT-INFRASTRUCTURE",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ltw-2026-st-cdu-0182-biogas-biomethananlagen-ausbauen-wir-stehen-fuer-den-erhal",
+      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0182-FLEXIBLE-BIOGAS-BIOMETHANE-CAPACITY",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0182-REUSE-GAS-STORAGE-TRANSPORT-INFRASTRUCTURE",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0182-BIOMETHANE-GRID-INJECTION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0182-EEG-GAS-MARKET-EU-RULE-ADAPTATION",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ltw-2026-st-cdu-0183-investitionen-in-photovoltaik-oder-solarthermie-muessen-du",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0183-REJECT-SOLAR-MANDATE",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0183-STATE-ROOFS-FACADES-PV",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0183-FREESPACE-PV-LAND-STEERING-AGRIPV",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    }
+  ],
+  "tuple_schema": [
+    "source_unit_id",
+    "terminal_fach_status",
+    "impact_direction",
+    "evidence_level"
+  ]
+}

@@ -1,169 +1,145 @@
-## WÖk CDU Primary-Source-Parity + Editorial-v2+ — final official PDF pp. 29–32 vollständig semantisch reconciled
+## WÖk CDU Primary-Source-Parity/Fachreview — final PDF pp.25–28 (Gesundheit & Pflege)
 
-Fortsetzung der document-wide CDU-Primary-Source-Lane nach `ST_CDU_PRIMARY_PARITY_P25_P28 = PASS_SEGMENT`. Vor diesem Write wurden #234, #241 und PR #257 erneut gelesen. **Historische 344 Release-1-Units bleiben ausschließlich Working-/History-Baseline; kein finaler Nenner wird hier eingefroren.**
+Fortsetzung der document-wide CDU-Primary-Source-Parity nach pp.23–24. Maßstab bleibt **die finale parteioffizielle PDF**, nicht das historische 344er Release-1-Register. Historische IDs/Text bleiben unverändert; `authoritative_source_unit_count` und `authoritative_effect_mechanism_count` bleiben bis zum vollständigen 91-Seiten-Diff `null`.
 
-### Source / Scope
+**Primärquelle:** https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf — final beschlossen 13.06.2026, hier gedruckte PDF-S. 25–28.
 
-- finale parteioffizielle Primärquelle: `https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf` — Regierungsprogramm zur Landtagswahl 06.09.2026, beschlossen 13.06.2026
-- hier vollständig visuell + textuell geprüft: **PDF S. 29–32**, Kapitel `Soziale Gerechtigkeit und Familie`
-- historische Working-Baseline: `woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-cdu-zusagen.md`, Blob `6e8c53392d76e984630ea06ee00e1c01cf3fe46aa` **nicht verwenden** — korrekt bleibt der bereits dokumentierte CDU-Blob `6e8c53392d76e9847ee3028d241a988c12b3d2fb`
-- relevante historische IDs: `0100–0116`; deren Source-Text/IDs werden **nicht** mutiert
-- aktueller Rechts-/Additionality-Recheck: Bundesagentur für Arbeit, Grundsicherungsgeld seit **01.07.2026** inkl. Pflicht zur Annahme tatsächlich verfügbarer zumutbarer Arbeit und möglicher Leistungsminderung; GG Art. 105 Abs. 2a (Länder bestimmen bei der Grunderwerbsteuer den **Steuersatz**, nicht eigenständig neue bundesrechtliche Befreiungstatbestände); geltender §3 GrEStG; SGB VIII §§11/8a; SGB IX; Gewalthilfegesetz 2025, insb. §§1/8 und stufenweises Inkrafttreten bis 2032.
+**Working baseline:** `woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-cdu-zusagen.md`, hier `0081–0099`.
 
-### 1. Primary-Source-Diff pp. 29–32
+**Aktuelle amtliche Additionality-/Delivery-Baselines (nur zur Einordnung, nicht als Partei-Quelle):**
+- Landarzt-/Amtsarzt-/Landzahnarztquoten bestehen bereits; 2026 laufen Auswahlverfahren weiter: https://ms.sachsen-anhalt.de/themen/gesundheit/gesundheitswesen/medizinische-versorgung/landarztquote-und-amtsarztquote-sachsen-anhalt
+- Der Landtag hat 2026 Telenotarzt und Gemeindenotfallsanitäter gesetzlich im Rettungsdienst verankert; die Programmforderung ist daher heute teilweise `INHERITED_CURRENT_BASELINE`, nicht automatisch neuer Output: https://www.landtag.sachsen-anhalt.de/51-sitzungsperiode
+- Das Landes-Krankenhausgesetz wurde am 24.06.2026 für leistungsgruppen-/qualitätsorientierte Krankenhausplanung fortentwickelt; dies ist spätere/current evidence, keine rückwirkende Programmevidenz: https://ms.sachsen-anhalt.de/aktuelles/news-detail/landtag-beschliesst-neues-krankenhausgesetz
 
-| Legacy | Parity | Behandlung |
+### 1. Semantic primary-source diff pp.25–28
+
+| Legacy / Primary | Parity | Versioned treatment |
 |---|---|---|
-| `0100` | `CONTEXT_ONLY` | Kapitel-/Werte-/Themenframe erhalten; kein eigener Effektmechanismus |
-| `0101` | `CONTEXT_ONLY` | gesellschaftlicher Ziel-/Werteframe, kein eigenständiges Instrument |
-| `0102` | `SAME` | Familien-/Berufsvereinbarkeit als bestehende Unit erhalten; vorheriger terminaler Fachstatus bleibt |
-| `0103` | `CONTEXT_ONLY` | Zusammenhalts-/Kommunikationsframe; trailing `Wir werden` ist Abschnittsmarker, kein zusätzlicher Mechanismus |
-| `null` | `ABSENT` | `ST-CDU-PRIMARY-GAP-P29-LAND-LABOUR-PROGRAM-PARTICIPATION` additiv |
-| `null` | `ABSENT` | `ST-CDU-PRIMARY-GAP-P30-JOBCENTER-BINDING-WORK-OFFER` additiv |
-| `0104` | `SAME` | eigenständiger Bundespfad Bürgerarbeit/gemeinnützige Arbeit; bestehender terminaler A07-Fachstatus bleibt |
-| `0105` | `OVERMERGED` | Parent behalten; Kinderbetreuung und Kinderwunschförderung als getrennte Mechanismen; allgemeiner Familienframe/0102-Crosswalk nicht doppelt zählen |
-| `0106` | `OVERMERGED` | Bundes-Steuerpfad und Landes-Unterstützungs-/Zugangspfad trennen |
-| `0107` | `SAME` | Grunderwerbsteuerbefreiungsforderung bleibt eigene Unit; Kompetenz-Crosswalk korrigieren |
-| `0108` | `TRUNCATED` | Parent endet in Release-1 nach `durch`; vollständige Primärpassage versioniert auflösen |
-| `0109` | `SAME` | Kinderschutzzentren/-ambulanzen |
-| `0110` | `OVERMERGED` | Kinder-/Jugendbeauftragter und spezialisierte Fachberatung trennen |
-| `0111` | `OVERMERGED` | dauerhafte Jugendarbeitsförderung, Jugendbildungsstätten-Masterplan und Jugendpauschale trennen |
-| `0112` | `OVERMERGED` | Begegnung/Einsamkeit, alternative Wohnformen, Seniorenmitwirkung, Altersdiskriminierung, digital+analog getrennt |
-| `0113` | `OVERMERGED` | Barrierefreiheit, WfbM, Inklusionsbetriebe, Behindertenbeiräte, Gesundheitszugang, Eingliederungshilfe-Reform, kommunale Beauftragte getrennt; Sensibilisierung = Kontext |
-| `0114` | `OVERMERGED` | STEM/Führung, Entgelt/Aufstieg, Sorgearbeit, Gewaltschutz, Schutz-/Beratungsinfrastruktur getrennt; Sprachregelungsposition = `CONTEXT_ONLY/COMMUNICATION` ohne behauptete Maßnahmenwirkung |
-| `0115` | `OVERMERGED` | niedrigschwellige Hilfe, Armutsziel, Beratungslandschaft getrennt; Selbsthilfe-Partnerschaft als Delivery-Kontext |
-| `0116` | `OVERMERGED` | Ausbildungsinfrastruktur, Weiterbildung, sozialer Arbeitsmarkt getrennt; Ansiedlungs-/Dual-Ausbildungsframe zu bestehenden Pfaden crosswalken, Nicht-Konkurrenz als Designbedingung |
+| `0081` „Gesundheit und Pflege neu denken“ | `CONTEXT_ONLY` | Ziel-/Übergangsframe, kein eigenständiger Wirkmechanismus |
+| `0082` „Darauf bauen wir auf …“ | `CONTEXT_ONLY` | Rückblick/Transition; historische Outputs nicht als neue Wirkung zählen |
+| `0083` „Vorreiter … Gesundheits- und Pflegeversorgung“ | `CONTEXT_ONLY` | Zielzustand, kein Instrument |
+| `0084` wohnortnah/digital/vernetzt + attraktive Arbeitsbedingungen | `PARTIAL_PARENT` | Summary-Ziel; konkrete Hebel folgen in `0088+`, keine Doppelzählung |
+| `0085` Krankenhausprofile/ambulante Kooperation | `PARTIAL_PARENT` | Summary-Ziel; konkrete Mechanismen in `0090/0091` |
+| `0086` bezahlbare Pflege/Angehörigenentlastung | `PARTIAL_PARENT` | Summary-Ziel; konkrete Mechanismen in `0095/0096` |
+| `0087` Prävention … „Wir werden“ | `TRUNCATED` + `PARTIAL_PARENT` | Goal-Parent erhalten; konkreter finaler Bullet „Prävention als Lebensprinzip“ fehlt als eigener Release-1-Mechanismus |
+| `0088` Versorgung/Fachkräfte/Studienplätze/Standort/Apotheke | `OVERMERGED` | in getrennte Effect-Mechanisms splitten |
+| `0089` Niederlassung | `OVERMERGED` | Förderung, Administrative Relief, Mentoring/Qualifizierung, Kooperations-/Teilzeitmodelle trennen |
+| `0090` Krankenhausknoten | `TRUNCATED` + `OVERMERGED` | finalen Trägervielfaltssatz restaurieren; Profile/Spezialisierung, Grund-/Notfallnähe, sektorale Verzahnung, Trägerpluralität trennen |
+| `0091` Sektorengrenzen | `OVERMERGED` | Zentren, Planung, Länderkooperation, Leistungsbündelung, Primärversorgung getrennt |
+| `0092` Versorgungszentren | `OVERMERGED` | MVZ/Campus, Trägermodelle, Landarztquote, regionales Zulassungskriterium getrennt |
+| `0093` Rettung/Notfall | `OVERMERGED` | Masterplan, Telenotarzt, Gemeindenotfallsanitäter, Leitstellen, digitale Systeme, Drohnen, Mobilität, Erste Hilfe getrennt |
+| Primary p.27 „Prävention als Lebensprinzip“ | `ABSENT` | additive versionierte Source-Unit(s); nicht aus `0087`-Template ableiten |
+| `0094` Pflege neu aufstellen | `OVERMERGED` | Versorgungsmix/Wohnformen und erweiterte Pflegekompetenzen getrennt |
+| `0095` Angehörige/Pflegeversicherung | `TRUNCATED` + `OVERMERGED` | Landes-/Versorgungsentlastung und Bundes-Pflegeversicherungsreform trennen |
+| `0096` §43c SGB XI | `SAME` | Federal-advocacy unit erhalten; Wirkung nur nach konkretem Rechtsdesign |
+| Primary p.28 4+1 / freiwillige Pflegeeinrichtungs-Kooperation | `ABSENT` | additive versionierte Unit; fachlicher Child-/Crosswalk zum allgemeinen 4+1-Praxislernmechanismus, keine Doppelzählung desselben Outputs |
+| `0097` Medi-Bus | `OVERMERGED` | Hausarzt-Rollpraxis und spätere fachärztliche Pilot-Ausweitung trennen |
+| `0098` Digitalisierung | `OVERMERGED` | Telemedizin, digitale Pflegeanwendungen, Dokumentation, Infrastruktur/Data-Governance trennen |
+| `0099` Forschung/Innovation/Produktion | `OVERMERGED` | Uniklinik-Netzwerk, digitale Modellregion, Arznei-/Medizinproduktproduktion trennen |
+| Primary p.28 „Versorgung vorwärts denken“ | `CONTEXT_ONLY` | Abschluss-/Zielrahmen, keine zusätzliche Effect-Unit |
 
-Damit sind **alle effect-bearing Passagen der PDF-S. 29–32** entweder bestehender Unit eindeutig zugeordnet, als Kontext markiert oder in finale versionierte Mechanism-Children zerlegt. Keine Passage dieses Segments bleibt `ABSENT/TRUNCATED/OVERMERGED` ohne terminale Behandlung.
+### 2. Neue/splittende canonical Fachunits — terminal source-bound
 
-### 2. Neue / gesplittete canonical Mechanism-Units — 36/36 terminal
+Die folgenden IDs sind additive Versionierungs-IDs für das Manifest; alle `counts_toward_authoritative_denominator = PENDING_FINAL_SEGMENTATION_RULE`.
 
-#### Bürgerarbeit / Arbeitsmarkt
+#### `0088` Versorgung/Fachkräfte
+1. `ST-CDU-PRIMARY-SPLIT-0088-STUDY-PLACES` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`. Zusätzliche Human-/Zahnmedizin-/Pharmazieplätze können den langfristigen Fachkräftepool erhöhen; Engpass sind Lehr-/Klinikkapazität, Abschluss und spätere Bindung, nicht Studienplatzzahl allein. **Problem/Goal:** regionale Fachkräftelücke plausibel / Versorgungskapazität. **Delivery:** Land/Hochschulen, langer Lead time. **Recheck:** zusätzliche Plätze, Besetzung, Abschluss, Berufseintritt/Region, Lehrkapazität, Kosten. **Boundary:** Ausbildungsqualität, fairer Zugang.
+2. `ST-CDU-PRIMARY-SPLIT-0088-RURAL-WORK-ATTRACTIVENESS` — `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON` · `OPEN` · `NOT_ASSESSABLE`. „Attraktiver Lebens- und Arbeitsort“ bündelt Wohn-/Familien-/Arbeitsbedingungen ohne konkretes Instrument. **Goal:** Fachkräftebindung. **Recheck:** exact Maßnahmen, Fluktuation/Verbleib, regionale Vakanz, Arbeitsbelastung.
+3. `ST-CDU-PRIMARY-SPLIT-0088-LOCAL-PHARMACY-FEDERAL` — `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON` · `OPEN` · `NOT_ASSESSABLE`. „Apotheke vor Ort stärken“ + „gute Rahmenbedingungen“ nennt keinen Preis-, Vergütungs-, Niederlassungs- oder Versorgungshebel; wesentliche Regelung Bundesebene. **Goal:** Arzneimittelzugang. **Recheck:** exact Bundesinitiative, Erreichbarkeit/Notdienst, Schließungen, Versorgungslücken.
 
-1. `ST-CDU-PRIMARY-GAP-P29-LAND-LABOUR-PROGRAM-PARTICIPATION` — **`EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · LOW**. Teilnahme an Landesprogrammen nicht mehr generell freiwillig. **Problem Review:** Langzeitleistungsbezug/Übergangshemmnisse müssen nach fehlenden Stellen, Qualifikation, Gesundheit, Care, Mobilität und individuellem Verhalten getrennt werden. **Goal:** tragfähige Beschäftigungsübergänge, nicht Teilnahmequote. Aktivierung kann Struktur/Zugang schaffen; Zwang kann Fehladressierung, Abbruch, gesundheitliche Belastung und Verwaltungsaufwand erhöhen. **Delivery/Boundary:** Land/Jobcenter-/Kommunal-Kooperation innerhalb Bundesrechts; Zumutbarkeit, Existenzsicherung, Verhältnismäßigkeit, Rechtsschutz. **Recheck:** zusätzliche ungeförderte Jobs, Dauer/Qualität, Sanktionen/Abbruch, Fehlklassifikation, Kosten, Substitution.
+#### `0089` Niederlassung
+4. `ST-CDU-PRIMARY-SPLIT-0089-PRACTICE-GRANTS` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`. Bedarfsgebundene Gründungs-/Übernahmeförderung kann Kapitalbarrieren senken; ohne Additionality drohen Mitnahme/Standortverlagerung. **Delivery:** Förderdesign, KV-/Regionenbezug. **Recheck:** zusätzliche Niederlassungen/Übernahmen, Verbleib, Versorgung, Mitnahme, Kosten.
+5. `ST-CDU-PRIMARY-SPLIT-0089-ADMIN-RELIEF` — `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON` · `OPEN` · `NOT_ASSESSABLE`. „Bürokratische Hürden abbauen“ ist ohne benannte Pflichten/Schutzfunktion kein bewertbares Instrument. **Goal:** weniger vermeidbare Praxisfriktion bei erhaltener Patientensicherheit/Datenqualität. **Recheck:** konkrete Pflichten, Zeitkosten, Fehler-/Schutzwirkung.
+6. `ST-CDU-PRIMARY-SPLIT-0089-NETWORK-MENTORING-BIZ` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`. Mentoring/Netzwerke/betriebswirtschaftliche Qualifizierung können Informations- und Gründungshürden reduzieren; Teilnahme ist Output. **Recheck:** Gründungs-/Übernahmequote, Verbleib, regionale Wirkung, Teilnahme-/Selektionsbias.
+7. `ST-CDU-PRIMARY-SPLIT-0089-COOP-PARTTIME` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`. Kooperative Praxis- und Teilzeitmodelle können Einstieg, Vereinbarkeit und Standortstabilität verbessern; Wirkung hängt an Vergütung, Zulassungs-/Teamdesign und realer Versorgungskapazität. **Distribution:** junge Ärzt:innen, Familien, ländliche Patienten. **Recheck:** FTE-Versorgung, Öffnungszeiten, Verbleib, Wartezeit.
 
-2. `ST-CDU-PRIMARY-GAP-P30-JOBCENTER-BINDING-WORK-OFFER` — **`EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · LOW**. Kommunen + BA sollen Personen, die Beschäftigung verweigern, ein verbindliches Arbeitsangebot machen. **Current Additionality:** Seit 01.07.2026 verlangt das Grundsicherungsgeld bereits die Annahme einer tatsächlich verfügbaren zumutbaren Arbeit; bei willentlicher Ablehnung sind Leistungsminderungen möglich. Der zusätzliche Landespfad liegt daher nur in **zusätzlich geschaffenen/organisierten Beschäftigungsgelegenheiten und deren Qualität**, nicht in der bloßen Pflicht zur Annahme existierender zumutbarer Arbeit. Risiken: künstliche Beschäftigung, Verdrängung regulärer Stellen, Lock-in in Maßnahmen statt Übergang. Recheck wie oben plus Netto-Additionalität der Stellen.
+#### `0090` Krankenhausknoten
+8. `ST-CDU-PRIMARY-SPLIT-0090-REGIONAL-PROFILES` — `EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `MEDIUM`. Spezialisierung/Profilierung kann Qualität und Ressourcennutzung erhöhen, kann aber Wege/Resilienz verschlechtern, wenn regionale Grundversorgung falsch dimensioniert wird. **Current baseline:** Leistungsgruppen-/Planungsreform 2026 separat versionieren. **Recheck:** Qualität/Fallzahlen, Wegezeiten, Auslastung, Personal, Notfallabdeckung.
+9. `ST-CDU-PRIMARY-SPLIT-0090-BASIC-EMERGENCY-NEARBY` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`. Wohnortnahe Grund-/Notfallversorgung reduziert Zugangs-/Zeitrisiken, ist aber Ziel/Planungsanforderung ohne Standort-/Leistungsdesign. **Recheck:** Hilfs-/Fahrzeiten, Abdeckung, Qualität, Personal, Ausfallresilienz.
+10. `ST-CDU-PRIMARY-SPLIT-0090-AMBULATORY-STATIONARY` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`. Verzahnung kann Doppeluntersuchungen, Übergabeverluste und vermeidbare stationäre Nutzung senken; Schnittstellen-/Vergütungs-/Datenregeln sind Delivery-Gate. **Recheck:** Übergaben, Wiederaufnahme, Doppelungen, Wartezeit, Outcomes, Datenschutz.
+11. `ST-CDU-PRIMARY-SPLIT-0090-PROVIDER-PLURALITY` — `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON` · `OPEN` · `NOT_ASSESSABLE`. Öffentlich-rechtlich/frei-gemeinnützig/privatwirtschaftlich ist Eigentums-/Trägerstruktur, keine Wirkungsrichtung. **Goal:** Qualität, Zugang, Resilienz, Wirtschaftlichkeit. **Recheck:** Qualitäts-/Personal-/Entnahme-/Investitions-/Zugangsdaten statt Eigentumslabel.
 
-#### Familie / Alleinerziehende
+#### `0091` sektorübergreifende Versorgung
+12. `ST-CDU-PRIMARY-SPLIT-0091-INTEGRATED-CENTERS` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`. Integrierte Zentren können Koordination und Zugang verbessern, wenn Leistungen wirklich zusammenarbeiten statt nur ko-lokalisiert zu sein. **Recheck:** Überleitung, Wartezeit, Doppelungen, Patientenerfahrung, Outcomes.
+13. `ST-CDU-PRIMARY-SPLIT-0091-CROSS-SECTOR-PLANNING` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`. Gemeinsame Bedarfsplanung kann Fehl-/Doppelkapazitäten reduzieren; benötigt interoperable Daten und klare Zuständigkeiten. **Recheck:** Bedarfsdeckung, Kapazitäts-/Personalallokation, regionale Verteilung.
+14. `ST-CDU-PRIMARY-SPLIT-0091-CROSS-BORDER-COOP` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`. Länderübergreifende Kooperation kann Grenzregionen besser versorgen; Verträge, Kostenträger, Daten- und Rettungsschnittstellen sind Bedingungen. **Recheck:** reale Nutzung, Zeit/Wege, Kostenteilung, Kontinuität.
+15. `ST-CDU-PRIMARY-SPLIT-0091-COMPLEX-SERVICE-BUNDLING` — `EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `MEDIUM`. Komplexe Leistungen zu bündeln kann Expertise/Qualität erhöhen; Konzentration verlängert Wege und schafft kritische Knoten. **Boundary/robustness:** Notfallzugang, Redundanz, Transportfähigkeit. **Recheck:** risikoadjustierte Qualität, Wege, Transfers, Ausfälle.
+16. `ST-CDU-PRIMARY-SPLIT-0091-PRIMARY-CARE-MODEL` — `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON` · `OPEN` · `NOT_ASSESSABLE`. „Zukunftsfähiges Primärversorgungsmodell“ ist ohne Gatekeeping-, Team-, Vergütungs-/Zugangsdesign nicht richtungsfest. **Goal:** frühzeitiger, koordinierter Erstzugang. **Recheck:** exact Modell, Zugang, Kontinuität, Überweisungen, Notaufnahme, Verteilung.
 
-3. `ST-CDU-PRIMARY-SPLIT-0105-CHILDCARE-QUALITY-AFFORDABILITY` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · MEDIUM**. Flächendeckende qualitativ gute und bezahlbare Kinderbetreuung kann Erwerbs-/Zeitoptionen, frühe Förderung und Teilhabe verbessern. **P/G:** Engpass ist nicht Platzanzahl allein, sondern Erreichbarkeit, Öffnungszeiten, Personal/Qualität und Kosten. Risiken: Personalverdichtung, regionale Unterversorgung, quantitative Expansion ohne Qualität. Recheck: reale Plätze/Öffnungszeiten/Ausfälle, Fachkraftquote, Kostenbelastung, Nutzung nach Einkommen/Region, Eltern-Erwerb, kindbezogene Qualitätsindikatoren.
+#### `0092` Versorgungszentren / Quoten
+17. `ST-CDU-PRIMARY-SPLIT-0092-MVZ-HEALTH-CAMPUS` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`. Multiprofessionelle MVZ/Campusmodelle können Wege/Koordination verbessern; Personalrekrutierung, Governance und Finanzierung entscheiden über reale zusätzliche Versorgung. **Recheck:** Fachmix, Öffnungszeiten, Wartezeit, Überleitung, Versorgungslücken.
+18. `ST-CDU-PRIMARY-SPLIT-0092-PROVIDER-MODELS` — `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON` · `OPEN` · `NOT_ASSESSABLE`. Gleichförderung kommunaler/genossenschaftlicher/privat-gemeinnütziger Träger nennt kein Förderkriterium; Rechts-/Beihilfe-/Bedarfs- und Qualitätsdesign fehlt. **Goal:** bedarfsgerechte stabile Versorgung. **Recheck:** Kriterien, Additionality, Qualität, Fiskal-/Marktwirkung.
+19. `ST-CDU-PRIMARY-SPLIT-0092-LANDARZTQUOTE-REVIEW` — `EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `MEDIUM`. Die bestehende Quote kann Bedarfsregionen Personal zuführen; Weiterentwicklung muss Bindungswirkung, Auswahlfairness, lange Zeitverzögerung und mögliche Verdrängung regulärer Studienplätze prüfen. `INHERITED_CURRENT_BASELINE = QUOTE_ALREADY_ACTIVE`. **Recheck:** Auswahl/Abschluss, 10-Jahres-Bindung, tatsächliche Bedarfsregion, Abbruch/Strafzahlungen, Nettoadditionalität.
+20. `ST-CDU-PRIMARY-SPLIT-0092-REGIONAL-ADMISSION-PREFERENCE` — `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON` · `OPEN` · `NOT_ASSESSABLE`. Stärkere Berücksichtigung eines „Bezugs zu Sachsen-Anhalt“ ist ohne Definition/Gewichtung/Rechtsgrundlage kein belastbar bewertbares Auswahlkriterium. **Boundary:** chancengleicher Hochschulzugang, Verhältnismäßigkeit. **Recheck:** Kriterium, Gewicht, Prognosevalidität für späteren Verbleib, Verteilungs-/Rechtsfolgen.
 
-4. `ST-CDU-PRIMARY-SPLIT-0105-FERTILITY-TREATMENT-SUPPORT` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · LOW**. Finanzielle Unterstützung kann Zugang zu medizinisch indizierter Kinderwunschbehandlung verbreitern. Ziel ist fairer Zugang, nicht eine politische Geburtenquote. Risiken: Förderkriterien, Eigenanteile, regionale Versorgung, Opportunitätskosten, medizinische/psychische Belastung. Recheck: Inanspruchnahme nach Einkommen/Region, Eigenanteile, Wartezeit, Abbruch; Behandlungserfolg nie als sicherer Politikeffekt ausgeben.
+#### `0093` Rettung / Notfall
+21. `ST-CDU-PRIMARY-SPLIT-0093-RESCUE-MASTERPLAN` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`. Gemeinsame Boden-/Luftrettungsplanung kann Standort-/Ressourcenallokation verbessern, wenn Hilfsfristen, Bedarf und Ausfallresilienz datenbasiert optimiert werden. **Recheck:** Hilfsfrist, Abdeckung, Übergaben, Luft-/Bodenauslastung, Kosten/Resilienz.
+22. `ST-CDU-PRIMARY-SPLIT-0093-TELENOTARZT` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `MEDIUM`. Telenotärztliche Unterstützung kann knappe Notarztressourcen schneller verfügbar machen; 2026 bereits gesetzlich verankert, daher `INHERITED_CURRENT_BASELINE`, Wirkung hängt am Rollout. **Recheck:** Verfügbarkeit, Fallmix, Therapiezeit, Eskalation, Outcomes, Systemausfall.
+23. `ST-CDU-PRIMARY-SPLIT-0093-GEMEINDENOTFALLSANITAETER` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `MEDIUM`. Geeignete Akutfälle können vor Ort versorgt/triagiert und Rettungs-/Notaufnahmewege entlastet werden; ebenfalls 2026 gesetzlich verankerte Baseline. **Recheck:** Fallselektion, vermiedene Transporte, Recontacts, Sicherheit, regionale Abdeckung.
+24. `ST-CDU-PRIMARY-SPLIT-0093-DISPATCH-TECH` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`. Moderne Leitstellentechnik kann Disposition/Information verbessern; Technik ist Output, Nutzen hängt an Interoperabilität, Datenqualität, Personal und Ausfallkonzept. **Recheck:** Dispositionszeit, Fehlsteuerung, Uptime, Übergaben, Cyber-/Fallback.
+25. `ST-CDU-PRIMARY-SPLIT-0093-DIGITAL-SYSTEMS` — `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON` · `OPEN` · `NOT_ASSESSABLE`. „Digitale Systeme“ ohne Use Case/Entscheidungsrolle ist zu unspezifisch; keine automatische Effizienz-/Sicherheitswirkung. **Recheck:** exact Funktion, Human oversight, Fehler-/Bias-/Cyberprofil.
+26. `ST-CDU-PRIMARY-SPLIT-0093-RESCUE-DRONES` — `EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `LOW`. Drohnen können Lageerkundung/Materialtransport beschleunigen; Wetter, Luftraum, Zuverlässigkeit, Datenschutz und reale Zeitersparnis sind Bedingungen. **Recheck:** Missionserfolg, Zeitgewinn, Abbruch-/Fehlerrate, Kosten, Datenschutz/Sicherheit.
+27. `ST-CDU-PRIMARY-SPLIT-0093-NEW-MOBILITY-PILOTS` — `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON` · `OPEN` · `NOT_ASSESSABLE`. „Neue Mobilitätslösungen“ bleibt ohne Fahrzeug-/Einsatz-/Versorgungsdesign offen. **Recheck:** exact Pilot, Einsatzindikator, Alternativen, Skalierungs-/Abbruchkriterien.
+28. `ST-CDU-PRIMARY-SPLIT-0093-SCHOOL-FIRST-AID-CPR` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `MEDIUM`. Wiederholte praktische Erste-Hilfe-/Reanimationsbildung kann Handlungskompetenz und Laienhilfe erhöhen; Unterrichtseinheit ist Output. **Delivery:** Curriculum, Lehrkräfte/Partner, Wiederholung. **Recheck:** Kompetenz/Retention, Trainingsabdeckung, tatsächliche Ersthelferhandlungen.
 
-5. `ST-CDU-PRIMARY-SPLIT-0106-FEDERAL-SINGLE-PARENT-TAX-RELIEF` — **`EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · LOW**. Steuerentlastung kann verfügbare Einkommen erhöhen, erreicht aber Haushalte je nach Steuerpflicht/Einkommen unterschiedlich stark. **Competence:** Bundessteuerrecht/Advocacy. **Distribution:** geringe Einkommen, Teilzeit, Kinderzahl gesondert; nicht mit Landesberatung saldieren. Recheck Nettoentlastung nach Einkommensgruppen, Erwerbsanreize, Armutsrisiko, fiskalische Kosten.
+#### Primärquelle p.27: fehlender Präventionsbullet
+29. `ST-CDU-PRIMARY-GAP-P27-PREVENTION-MULTISETTING` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`. Lebensphasenübergreifende Bewegungs-/Ernährungs-/psychische-Gesundheits-/Suchtprävention mit Kommunen, Schulen, Vereinen, Kassen kann Risikofaktoren früher adressieren; heterogenes Portfolio, keine gemeinsame Outcome-Behauptung. **Problem/Goal:** vermeidbare Gesundheitsrisiken, Gesundheitskompetenz. **Distribution:** Alter, soziale Lage, Region. **Recheck:** konkrete Programme, Reichweite, Teilnahmegerechtigkeit, verhaltens-/gesundheitsbezogene Outcomes, Verdrängung/Additionality.
+30. `ST-CDU-PRIMARY-GAP-P27-SUICIDE-MENTAL-HEALTH-PRIORITY` — `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON` · `OPEN` · `NOT_ASSESSABLE`. Höherer Stellenwert für Suizidprävention/mentale Gesundheit ist tragfähiger Schutz-/Zielraum, aber ohne Versorgungs-/Krisen-/Präventionsinstrument keine eigenständige Wirkungsrichtung. **Boundary:** Leben, psychische Gesundheit, Stigma/Datenschutz. **Recheck:** exact Maßnahmen, Krisenzugang, Wartezeit, Reichweite, qualitätsgesicherte Outcome-Indikatoren.
 
-6. `ST-CDU-PRIMARY-SPLIT-0106-STATE-SINGLE-PARENT-SUPPORT-ACCESS` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · LOW**. Ausbau von Beratung, Unterstützung, Vernetzung und vereinfachtem Hilfenzugang kann Informations-, Zeit- und Koordinationshürden senken. **Goal:** reale Alltags-/Teilhabeentlastung und Erwerbszugang. Risiken: Angebotsdoppelung, Öffnungszeiten/Erreichbarkeit, Beratung ohne verfügbare Leistung/Betreuung. Recheck Nutzung, Wartezeit, First-time-right/Weitervermittlung, Betreuungs-/Erwerbszugang, regionale/soziale Reichweite.
+#### `0094` Pflege neu aufstellen
+31. `ST-CDU-PRIMARY-SPLIT-0094-CARE-MIX` — `SOURCE_UNIT_RECLASSIFIED_VERSIONED` · `OPEN` · `NOT_ASSESSABLE`. Professionelle Pflege, Alltagsunterstützung, Tagesangebote und betreute gemeinschaftliche Wohnformen sind unterschiedliche Versorgungsklassen; kein Parent-Score. **Goal:** wohnortnahe selbstbestimmte stabile Pflege. **Recheck:** je Child Bedarf, Personal, Qualität, Kosten, Erreichbarkeit, Angehörigenlast, Institutionalisierung. **Boundary:** Selbstbestimmung, Qualität, Schutz vulnerabler Personen.
+32. `ST-CDU-PRIMARY-SPLIT-0094-NURSE-SCOPE` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `MEDIUM`. Sinnvoll erweiterte Pflegekompetenzen können Fachkräfte besser nutzen, Kontinuität beschleunigen und ärztliche Engpässe entlasten; Qualifikation, Haftung, Vergütung und Schnittstellen müssen passen. **Recheck:** Aufgabenverschiebung, Warte-/Prozesszeit, Qualität/Sicherheit, Arbeitsbelastung, Fluktuation.
 
-#### Kinder / Jugend
+#### `0095/0096` Angehörige / Pflegefinanzierung
+33. `ST-CDU-PRIMARY-SPLIT-0095-CAREGIVER-RELIEF` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `MEDIUM`. Beratung, Kurzzeit-/Verhinderungspflege und flexible Entlastung können Care-Belastung und Versorgungsausfälle reduzieren, wenn Kapazität tatsächlich verfügbar ist. **Distribution:** pflegende Angehörige, besonders hohe Care-Zeit/geringe Einkommen/ländliche Räume. **Recheck:** verfügbare Plätze/Leistungen, Wartezeit, Nutzung, Belastung, Erwerbsteilhabe, Krisen-/Heimeintritt.
+34. `ST-CDU-PRIMARY-SPLIT-0095-FEDERAL-CARE-REFORM` — `SOURCE_UNIT_RECLASSIFIED_VERSIONED` · `OPEN` · `NOT_ASSESSABLE`. Gedeckelte Eigenanteile, „faire Finanzierung“ und Schutz selbstgenutzten Wohneigentums sind ein bundesrechtliches Finanzierungsportfolio mit Verteilungs-/Beitrags-/Steuer-/Fiskalpfaden; ohne Finanzierungsdesign kein Gesamturteil. **Competence:** Bundesgesetzgebung/Bundesratsadvocacy. **Recheck:** Belastung nach Einkommen/Pflegegrad, Gegenfinanzierung, Beitrag/Steuer, Sozialhilfe, Wohneigentum, Pflegekapazität.
+35. Legacy `0096` bleibt `EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `LOW`: Vereinfachung §43c-Abrechnung kann Verwaltungsfriktion/Rechtsunsicherheit senken, darf aber Anspruchshöhe/Transparenz/Kontrolle nicht verschlechtern. **Competence:** Bund; Land = Advocacy. **Recheck:** exact Normänderung, Bearbeitungsaufwand, Fehler/Streitfälle, korrekte Zuschläge, Anspruchs-/Fiskalwirkung.
 
-7. `ST-CDU-PRIMARY-SPLIT-0108-YOUTH-PARTICIPATION-JUGENDHILFE` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · MEDIUM**. Altersgerechte Beteiligungsformate + verlässliche Jugendhilfe können Selbstwirksamkeit, Bedarfspassung und Schutz/Teilhabe stärken. §11 SGB VIII verankert Mitbestimmung/Mitgestaltung als bestehende Baseline; Additionalität liegt in tatsächlicher Reichweite/Qualität. Risiken: Scheinbeteiligung, sozial selektive Beteiligung, fehlende Rückkopplung. Recheck Beteiligung nach Alter/Region/Behinderung, dokumentierte Response/Umsetzung, Zugänglichkeit, Jugendhilfe-Warte-/Versorgungsdaten.
+#### Primary p.28: 4+1 Pflege-Kooperation fehlt im Release-1-Register
+36. `ST-CDU-PRIMARY-GAP-P28-CARE-41-COOP` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`. Freiwillige Schul-Pflegeeinrichtungs-Kooperation kann Berufsorientierung und soziale Kompetenzen stärken, wenn Plätze qualitätsgesichert sind und kein unbezahlter Arbeitsersatz entsteht. **Relation:** fachlicher Implementation-Child/Crosswalk zum bereits versionierten allgemeinen `4+1`-Praxislernmechanismus; Source-Passage dennoch eigenständig erhalten, aber Outcome nicht doppelt zählen. **Recheck:** Teilnahme/Qualität, Berufswahl-/Ausbildungsübergang, soziale Kompetenz, Pflegeeinrichtungsbelastung, Arbeitsschutz/Freiwilligkeit.
 
-8. `ST-CDU-PRIMARY-SPLIT-0108-SEXUAL-VIOLENCE-PROTECTION-GOAL` — **`REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON` · `OPEN` · NOT_ASSESSABLE**. Schutz vor Gewalt/sexualisierter Gewalt ist ein tragfähiger Schutz-/Zielraum, die isolierte Passage benennt aber keinen eigenen Mechanismus. Konkrete Children sind u.a. 0109/0110. Kein zusätzlicher Wirkungswert aus dem Zielsatz. Recheck erst an Prävention, Fachberatung, Kinderschutzstrukturen, Melde-/Interventionswegen und Outcomes.
+#### `0097` Medi-Bus
+37. `ST-CDU-PRIMARY-SPLIT-0097-MEDIBUS-GP` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`. Eine fahrplanmäßige mobile Hausarztpraxis kann reale räumliche Zugangslücken schließen, wenn sie knappes Personal netto ergänzt statt stationäre Praxen nur umzulenken. **Spatial/Delivery:** Zielregionen, Fahrplan, Personal, Labor/Überweisung/Dokumentation. **Recheck:** zusätzliche behandelte Patienten, Wege-/Wartezeit, Kontinuität, Kosten, Personaladditionalität.
+38. `ST-CDU-PRIMARY-SPLIT-0097-MEDIBUS-SPECIALIST-PILOT` — `EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `LOW`. Fachärztliche Ausweitung nach erfolgreicher Erprobung ist adaptiv/reversibel, aber nur bei passendem Fallmix und Anschlussversorgung sinnvoll. **Recheck/Scale gate:** Pilotkriterien, Nachfrage, Diagnose-/Follow-up-Qualität, Kosten, Fachkräfteverdrängung.
 
-9. `ST-CDU-PRIMARY-SPLIT-0110-CHILD-YOUTH-COMMISSIONER` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · LOW**. Ein gestärktes Amt kann Interessenvertretung, Beschwerde-/Monitoring- und Koordinationsfunktion verbessern, wenn Mandat, Unabhängigkeit, Ressourcen und Zugänge klar sind. Output Amt/Ressource ≠ Schutzoutcome. Recheck Fall-/Beteiligungszugang, Empfehlungen/Follow-up, Reaktionszeiten, Ressourcen, Kinder-/Jugendzugänglichkeit.
+#### `0098` Digitalisierung
+39. `ST-CDU-PRIMARY-SPLIT-0098-TELEMEDICINE` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `MEDIUM`. Telemedizin kann Wege und Spezialzugang verbessern, wenn Indikation, technische Qualität und Präsenz-Fallback stimmen. **Boundary:** Datenschutz, Nicht-Digital-Ausschluss, klinische Sicherheit. **Recheck:** Zugang/Wartezeit, Abbruch, Präsenzeskalation, Outcome, regionale/soziale Nutzung.
+40. `ST-CDU-PRIMARY-SPLIT-0098-DIGITAL-CARE-APPS` — `EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `LOW`. Digitale Pflegeanwendungen können Selbstmanagement/Koordination unterstützen; Nutzen ist an Evidenz, Usability, Integration und Nichtverlagerung von Care-Arbeit gebunden. **Recheck:** Nutzung/Abbruch, Pflege-/Angehörigenlast, Outcome, Datenschutz, digitale Ungleichheit.
+41. `ST-CDU-PRIMARY-SPLIT-0098-NETWORKED-DOCUMENTATION` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`. Interoperable Dokumentation kann Doppelerfassung/Informationsverlust reduzieren; schlechte Interoperabilität kann Arbeitslast sogar erhöhen. **Recheck:** doppelte Eingaben, Übergabefehler, Dokumentationszeit, Datenqualität, Zugriffs-/Datenschutzvorfälle.
+42. `ST-CDU-PRIMARY-SPLIT-0098-DIGITAL-INFRA-DATA-GOV` — `EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `LOW`. Leistungsfähige Infrastruktur ist Enabler, kein Outcome; „Daten sicher und sinnvoll nutzen“ braucht Zweckbindung, Rollen, Cyberresilienz und analoge/klinische Fallbacks. **Recheck:** Verfügbarkeit, Interoperabilität, Ausfälle/Cyber, Nutzerzugang, Prozesszeit, Datenschutz.
 
-10. `ST-CDU-PRIMARY-SPLIT-0110-SPECIALIST-CHILD-PROTECTION-COUNSELLING` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · MEDIUM**. Spezialisierte Fachberatung kann frühere Erkennung, fachgerechte Unterstützung und Schnittstellenqualität verbessern. SGB VIII §8a bleibt gesetzliche Schutzbaseline. Risiken: Personalengpass, regionale Lücken, Schnittstellen-/Datenschutzprobleme. Recheck Wartezeit, Fachkräfte, Fälle/Weiterleitung, Wiederholungs-/Gefährdungsverläufe, regionale Abdeckung.
+#### `0099` Forschung / Produktion
+43. `ST-CDU-PRIMARY-SPLIT-0099-UNIVERSITY-CLINIC-INNOVATION-NETWORK` — `EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`. Stärkere Uniklinik-Regionalversorger-Netze können Translation, Weiterbildung und Versorgungstransfer verbessern; Kooperation ist Output, nicht Patientenoutcome. **Recheck:** gemeinsame Projekte/Überleitungen, Transferzeit, regionale Nutzung, Versorgungs-/Qualitätsindikatoren.
+44. `ST-CDU-PRIMARY-SPLIT-0099-DIGITAL-MEDICINE-MODEL-REGION` — `SOURCE_UNIT_RECLASSIFIED_VERSIONED` · `OPEN` · `NOT_ASSESSABLE`. Digitale Medizin, Telemonitoring und vernetzte Notfallstrukturen sind unterschiedliche Mechanismen; „Modellregion“ ist kein Wirkungsmaß. **Recheck:** je Child Use Case, Vergleichsbaseline, klinische/Prozessoutcomes, Skalierbarkeit, Cyber/Datenschutz.
+45. `ST-CDU-PRIMARY-SPLIT-0099-MEDICAL-PRODUCTION` — `EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `LOW`. Mehr regionale Arznei-/Medizinproduktproduktion kann bei kritischen Gütern Lieferkettenresilienz erhöhen; ohne Produkt-/Engpass-/Kosten-/Beschaffungsdesign kann lokale Produktion teuer, nicht zusätzlich oder selbst abhängig sein. **Recheck:** kritische Produkte, Import-/Vorleistungsabhängigkeit, verfügbare Kapazität, Vollkosten, Lieferfähigkeit bei Schock, Qualitäts-/Umweltauflagen.
 
-11. `ST-CDU-PRIMARY-SPLIT-0111-YOUTH-WORK-STABLE-SUPPORT` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · MEDIUM**. Verlässliche Finanzierung von Jugendverbänden/offener Jugendarbeit kann Angebotskontinuität, Selbstbestimmung und soziale Teilhabe stützen; §11 SGB VIII ist Baseline. Risiken: inputorientierte Förderung ohne Reichweite/Qualität, regionale Ungleichheit. Recheck Öffnungszeiten/Angebote, Teilnahme nach Gruppen/Region, Fachkräfte, Jugendfeedback, Kostenkontinuität.
+### 3. #241-Systemprüfung für diesen Shard
 
-12. `ST-CDU-PRIMARY-SPLIT-0111-YOUTH-EDUCATION-SITES-MASTERPLAN` — **`EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · LOW**. Ein Masterplan kann Bedarf, Sanierung, Erreichbarkeit und Investitionen koordinieren; Planerstellung allein ist kein Outcome. Risiken: Fehldimensionierung, Infrastruktur-Lock-in, regionale Fehlverteilung. Recheck Auslastung/Erreichbarkeit, Gebäudezustand, Investitionspriorisierung, Energie-/Klimarisiken, tatsächliche Nutzung.
+- `PROBLEM_REVIEW`: Demografie ist kein eigenständiger Fehlerzustand; getrennt prüfen: räumlicher Zugang, Fachkräfte, Krankenhaus-/Sektorfriktion, Rettungszeiten, Präventions-/psychische Gesundheitsrisiken, Pflegekapazität/-bezahlbarkeit, Angehörigenlast, Lieferkettenresilienz.
+- `GOAL_REVIEW`: Gesundheit/Zugang/Qualität/Selbstbestimmung/Bezahlbarkeit/Resilienz sind Zielräume. Krankenhausprofil, MVZ, Quote, Medi-Bus, Digitalisierung oder „Modellregion“ sind Instrument-/Zwischenachsen.
+- `DNS_REFERENCE = REVIEWED_PENDING_EXACT_REGISTRY_MAPPING`; keine Keyword-Zuordnung, kein Zielbezug als Kausalitätsnachweis. `STATE_GFA_ENAP_BENCHMARK = NOT_APPLICABLE`.
+- `MATERIAL_OMISSIONS`: Bedarfs-/Warte-/Wege-/Personalbaselines, Finanzierungs-/Kapazitätsadditionalität, Risiko-/Qualitätsadjustierung, digitale Zugangs-/Datenschutz-/Cyberpfade, Pflegeverteilung, konkrete Präventionsprogramme, kritische Produktdefinition.
+- `POLICY_COHERENCE`: Krankenhauskonzentration ↔ wohnortnahe Versorgung; Studium/Quote/Niederlassungsförderung ↔ reale Arbeitsbedingungen; Care-Mix ↔ Personal; Digitalisierung ↔ Interoperabilität/Fallback; lokale Produktion ↔ Beschaffung/EU-Markt.
+- `DELIVERY_FEASIBILITY`: Hochschul-/Lehrkapazität, KV/KZV, Krankenhäuser, Kommunen, Kassen, Pflege-/Rettungspersonal, Leitstellen, IT/Cyber, Förder-/Planungsverwaltung.
+- `RESOURCE_FINANCING`: Investition, Betrieb, Personal, Wartung, Schulung, Folgekosten und Opportunitätskosten getrennt; Mittel/Studienplatz/Portal/Technik ≠ Outcome.
+- `SPATIAL_DISTRIBUTION`: ländliche Räume zentral; zugleich Konzentrations-, Wege- und digitale Ungleichheit prüfen.
+- `INTERNATIONAL_LEAKAGE`: bei Arznei-/Medizinproduktproduktion relevant (Vorleistungen, Rohstoffe, regulatorische Lieferkette); sonst überwiegend gering.
+- `ROBUSTNESS_STRESS_TEST`: Personalmangel, hohe Falllast, Cyber-/Netzausfall, Extremwetter/Transport, Lieferkettenstörung, Krankenhaus-/Praxis-Ausfall, Haushaltsdruck.
+- `REVERSIBILITY_LOCKIN`: Krankenhaus-/Digital-/Produktionsinfrastruktur hoch; Quoten mittel-langfristig; Pilot/Medi-Bus relativ reversibel.
+- `FALSIFICATION_TRIGGERS`: Wege-/Warte-/Hilfszeiten, Personal/FTE/Fluktuation, Qualitäts-/Sicherheitsoutcomes, Angehörigenlast, finanzielle Eigenbelastung, Notaufnahme/Transfers, Digitalausfälle/Abbruch, Lieferfähigkeit, regionale Verteilung.
+- `LIFECYCLE_TRACEABILITY`: Wahlprogramm → Land/Bund/Planung/Haushalt/Vertrag/Förderung → Umsetzung → Nutzung/Capability → Gesundheits-/Pflegeoutcome → Reality Check. Current-law-Baselines nie als zukünftige Programmeleistung zählen.
+- `VERSION_DELTA`: finale PDF ergänzt gegenüber Release-1 mindestens den eigenständigen Präventionsbullet, die vollständigen Trägervielfalt-/Pflegeversicherungsfortsetzungen und die 4+1-Pflegekooperation; Overmerges `0088–0095`, `0097–0099` nur additiv splitten.
+- `COMMUNICATION_MEDIA_IMPACT`: „Vorreiter/Modellregion“, „Eigenverantwortung“, „Pflegende Angehörige sind das Rückgrat“ sind Frames, getrennt von Maßnahmenwirkung; keine Gruppen-/Outcome-Zurechnung aus Sprache allein.
+- `RECOMMENDATION = NOT_AVAILABLE_AT_SOURCE_UNIT_LEVEL` ohne exact APPROVED RecommendationRecord.
+- `COVERAGE_SCOPE = ST_CDU_PRIMARY_PDF_P25_P28_SEMANTIC_RECONCILIATION_COMPLETE`.
 
-13. `ST-CDU-PRIMARY-SPLIT-0111-YOUTH-ALLOWANCE` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · LOW**. Weiterentwicklung der Jugendpauschale kann kommunale/Träger-Angebotsfähigkeit stabilisieren, sofern Mittel bedarfs- und zugangsorientiert ankommen. Risiken: pauschale Verteilung ohne Bedarf/Outcome, Mitnahme, Haushaltsvolatilität. Recheck Mittel pro Zielgruppe/Region, Additionalität, Angebotsstunden/Reichweite, Qualität.
+### 4. Segmentstatus / Completion Guard
 
-#### Ältere Menschen
+`ST_CDU_PRIMARY_PARITY_P25_P28 = PASS_SEGMENT`
 
-14. `ST-CDU-PRIMARY-SPLIT-0112-MEETING-PLACES-ANTI-LONELINESS` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · LOW**. Mehrgenerationenhäuser/Seniorentreffs können soziale Kontakte und Zugang zu Unterstützung stärken; Einsamkeit ist aber nicht allein ein Infrastrukturproblem. Recheck Erreichbarkeit, Nutzung auch schwer erreichbarer Gruppen, soziale Kontakte/Wohlbefinden, Mobilität, Kosten.
+`ST_CDU_P25_P28_NEW_OR_SPLIT_TERMINAL = PASS_45`
 
-15. `ST-CDU-PRIMARY-SPLIT-0112-ALTERNATIVE-SENIOR-HOUSING` — **`EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · LOW**. Alternative Wohnformen können Selbstständigkeit, soziale Einbindung und passende Unterstützung verbessern; Wirkung hängt an Bezahlbarkeit, Barrierefreiheit, Pflege-/Mobilitätsanbindung und freiwilliger Wahl. Risiken: Angebotssegregation, Kosten/Flächen, Fehlbedarf. Recheck Nachfrage, Kosten, Barrierefreiheit, Verbleib/Umzüge, Versorgungszugang.
-
-16. `ST-CDU-PRIMARY-SPLIT-0112-SENIOR-PARTICIPATION-INTERGENERATIONAL` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · LOW**. Seniorenmitwirkung und generationenverbindende Projekte können Repräsentation/soziale Einbindung erhöhen, wenn Beteiligung reale Rückkopplung hat. Recheck Repräsentativität, Zugänglichkeit, Follow-up politischer/kommunaler Entscheidungen, Reichweite.
-
-17. `ST-CDU-PRIMARY-SPLIT-0112-AGE-DISCRIMINATION-PREVENTION` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · MEDIUM**. Aufklärung, altersfreundliche Arbeitsmodelle und wirksame Antidiskriminierungsregeln können Zugangs-/Benachteiligungsrisiken senken. Bundes-AGG ist bestehende Rechtsbaseline; Landeseffekt liegt in eigenen Arbeitgeber-/Förder-/Informations-/Vollzugspfaden. Recheck Beschwerden/Fälle, Beschäftigungs-/Weiterbildungszugang nach Alter, Rechtsdurchsetzung, Arbeitgeberpraxis.
-
-18. `ST-CDU-PRIMARY-SPLIT-0112-DIGITAL-AND-ANALOG-ACCESS` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · MEDIUM**. Altersgerechte digitale Angebote plus **beibehaltene analoge Kontaktwege** reduzieren Exklusionsrisiken bei Digitalisierung. Schutzbedingung: kein Digital-only-Zwang bei wesentlicher Daseinsvorsorge. Recheck Abschluss-/Abbruchraten nach Alter, Barrierefreiheit, Supportbedarf, Wartezeit digital/analog, regionale Erreichbarkeit.
-
-#### Menschen mit Behinderung
-
-19. `ST-CDU-PRIMARY-SPLIT-0113-ACCESSIBILITY` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · MEDIUM**. Bauliche, sprachliche und digitale Barrierefreiheit kann selbstbestimmte Teilhabe unmittelbar erhöhen. **Problem/Goal:** reale Barrieren/Assistenzbedarfe statt abstrakter Inklusionsquote. Delivery über Land/Kommunen/Leistungsträger je Objekt. Recheck Accessibility-Audits, Nutzbarkeit/Abbrüche, Beschwerden, Erreichbarkeit, Beteiligung Betroffener.
-
-20. `ST-CDU-PRIMARY-SPLIT-0113-WFBM-STRENGTHEN` — **`EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · MEDIUM**. Werkstätten können Beschäftigung, Förderung und Schutz bieten; ein pauschales „Stärken“ kann aber Übergänge auf den allgemeinen Arbeitsmarkt und Wahlfreiheit verfestigen, wenn Erfolg an Plätzen statt individueller Teilhabe gemessen wird. SGB IX verpflichtet Werkstätten auch zur Förderung geeigneter Übergänge. Recheck Wahlmöglichkeiten, Entgelt, Qualifizierung, Übergänge, Rückkehrrecht, Zufriedenheit/Teilhabe.
-
-21. `ST-CDU-PRIMARY-SPLIT-0113-INCLUSION-ENTERPRISES` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · MEDIUM**. Inklusionsbetriebe sind nach SGB IX Unternehmen des allgemeinen Arbeitsmarkts für Menschen mit besonderen Beschäftigungshürden; Förderung kann inklusive Erwerbsarbeit und Einkommen stärken. Risiken: begrenzte Skalierung, Mitnahme, Segmentierung. Recheck stabile Beschäftigung, Lohn/Arbeitsbedingungen, Übergänge, Additionalität, Branchen/Regionen.
-
-22. `ST-CDU-PRIMARY-SPLIT-0113-MUNICIPAL-DISABILITY-COUNCILS` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · LOW**. Behindertenbeiräte können Betroffenenwissen früher in kommunale Entscheidungen bringen; Wirkung hängt an Zugangsrechten, Repräsentativität und tatsächlicher Berücksichtigung. Recheck Abdeckung, Beteiligungszeitpunkt, Empfehlungen/Übernahme, barrierefreie Teilnahme.
-
-23. `ST-CDU-PRIMARY-SPLIT-0113-DISABILITY-HEALTHCARE-REVIEW` — **`REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON` · `OPEN` · NOT_ASSESSABLE**. `gesundheitliche Versorgung ... in den Blick nehmen` benennt Problem-/Prüfauftrag, kein Instrument. Erst konkrete Barriere-, Vergütungs-, Versorgungs- oder Qualifikationsmaßnahme bewertbar. Recheck Zugangs-/Wartezeiten, barrierefreie Praxen, Kommunikation/Assistenz, Outcomes.
-
-24. `ST-CDU-PRIMARY-SPLIT-0113-EINGLIEDERUNGSHILFE-REFORM` — **`REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON` · `OPEN` · NOT_ASSESSABLE**. `Strukturen ... überarbeiten` lässt Richtung, Zuständigkeit, Leistungs-/Verfahrensdesign offen. Tragfähiges Ziel ist personenzentrierte wirksame Teilhabe bei geringer Verfahrenslast; kein Urteil ohne konkretes Delta. Recheck erst mit Reformoption: Leistungszugang, Bearbeitungszeit, Wahl-/Teilhabeoutcomes, Kosten/Personal.
-
-25. `ST-CDU-PRIMARY-SPLIT-0113-MUNICIPAL-DISABILITY-OFFICERS` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · LOW**. Stellen bei Kreisen/kreisfreien Städten können Interessenvertretung, Barrierehinweise und Koordination stärken. Risiken: symbolische Stellen ohne Mandat/Ressourcen. Recheck Besetzung, Kompetenzen, Eingaben/Follow-up, Beteiligung, regionale Abdeckung.
-
-#### Chancengleichheit / Gewaltschutz
-
-26. `ST-CDU-PRIMARY-SPLIT-0114-WOMEN-STEM-LEADERSHIP-ROLE-MODELS` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · LOW**. Gezielte Förderung, Mentoring/Role-Model-Visibility kann Informations-, Netzwerk- und Zugangsbarrieren in STEM/Führung senken; Wirkung hängt an konkretem Instrument und Ausgangslücke. Risiken: Symbolik ohne strukturellen Zugang, selektive Reichweite. Recheck Bewerbungen/Einstellungen/Beförderungen/Verbleib nach Geschlecht und Fach, Teilnahme, Pay/Role-Level.
-
-27. `ST-CDU-PRIMARY-SPLIT-0114-EQUAL-PAY-ADVANCEMENT` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · MEDIUM**. Gleiche Bezahlung und faire Aufstiegschancen sind problemadäquate Zielräume; Land kann insbesondere als Arbeitgeber, Förderer/Beschaffer und über Beratung/Monitoring wirken, bundes-/EU-arbeitsrechtliche Pfade bleiben getrennt. Recheck bereinigte/unbereinigte Entgeltlücken, Beförderungen, Arbeitszeit/Branche, Beschwerden/Durchsetzung; Zielwort ≠ Outcome.
-
-28. `ST-CDU-PRIMARY-SPLIT-0114-CARE-WORK-MEN` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · LOW**. Unterstützung von Männern bei Erziehungs-/Pflegeverantwortung kann Sorgearbeit breiter verteilen und Erwerbs-/Zeitoptionen von Partnerinnen verbessern. Wirkung hängt an Zeitrechten, Arbeitgeberpraxis, Betreuung/Pflegeangebot und finanziellen Anreizen. Recheck Care-Zeit, Erwerbs-/Teilzeitmuster, Nutzung von Freistellungen/Angeboten, Einkommenswirkung.
-
-29. `ST-CDU-PRIMARY-SPLIT-0114-VIOLENCE-PREVENTION-ISTANBUL` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · MEDIUM**. Prävention, Schutz und Beratung gegen Gewalt an Frauen haben klaren Schutzmechanismus. **Current baseline:** Gewalthilfegesetz ist seit 28.02.2025 in Kraft; es verlangt u.a. bedarfsgerechte Schutz-/Beratungsinfrastruktur und Länder-Bedarfs-/Entwicklungsplanung, zentrale Anspruchsteile greifen ab 2032. Additionalität ist deshalb an Ausbau/Qualität/Erreichbarkeit gegenüber dieser Baseline zu messen. Recheck Gewalt-/Wiederholungsrisiko, Zugangs-/Abweisungsdaten, Beratungswartezeit, regionale Barrierefreiheit, Präventionsreichweite.
-
-30. `ST-CDU-PRIMARY-SPLIT-0114-WOMENS-SHELTERS-STATE-WOMENS-COUNCIL` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · MEDIUM**. Weiterentwicklung der Förderung kann Kapazität, Verlässlichkeit und Beratung stabilisieren, sofern bedarfs-/zugangsorientiert. GewHG §8 verlangt Länderanalyse zu Bestand, Bedarf, Geografie und Finanzierung — diese Baseline muss das Förderdesign steuern. Recheck Plätze/Abweisungen, Erreichbarkeit, Barrierefreiheit/Sprachzugang, Finanzierungssicherheit, Übergänge/Schutzoutcomes.
-
-`0114`-Passage gegen ein Genderverständnis über Sprachregelungen: **`CONTEXT_ONLY / COMMUNICATION_MEDIA_IMPACT = AMBIVALENT_POTENTIAL`**, kein eigenständiger effect-bearing Policy-Mechanismus in dieser Passage. Keine Maßnahmenrichtung aus der Position ableiten; erst konkrete Sprach-/Verwaltungsregel wäre eine eigene Unit.
-
-#### Sozialpolitik / Arbeit / Ausbildung
-
-31. `ST-CDU-PRIMARY-SPLIT-0115-LOW-BUREAUCRACY-BENEFIT-ACCESS` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · LOW**. Unkomplizierter, verständlicher Hilfenzugang kann Nichtinanspruchnahme, Fehler-/Zeitkosten und Belastung reduzieren, wenn Leistungsansprüche unverändert korrekt geprüft werden. Risiken: Vereinfachung ohne Schutz-/Missbrauchs-/Fehlerkontrolle, Digitalexklusion. Recheck Antrag→Leistung, Bearbeitungszeit, Fehler/Widerspruch, Nichtinanspruchnahme, Nutzergruppen, analog/digital.
-
-32. `ST-CDU-PRIMARY-SPLIT-0115-CHILD-OLD-AGE-POVERTY-GOAL` — **`REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON` · `OPEN` · NOT_ASSESSABLE**. Kinder-/Altersarmut aktiv bekämpfen ist ein materieller Zielraum, aber die Passage benennt hierfür keinen isolierten Wirkhebel. Armutsdefinition, Ursachen und Instrumente müssen getrennt werden; keine Richtung aus Zielworten.
-
-33. `ST-CDU-PRIMARY-SPLIT-0115-COUNSELLING-LANDSCAPE` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · LOW**. Qualifizierung und bedarfsgerechte Ausrichtung einer Beratungslandschaft kann Zugang und Falllösung verbessern; Beratung ersetzt fehlende materielle Leistungen nicht. Selbsthilfeorganisationen/-gruppen sind Delivery-/Betroffenenwissen, kein separat gezählter Wirkhebel. Recheck Erreichbarkeit/Wartezeit, Weitervermittlung/Falllösung, Nutzerfeedback, regionale/soziale Abdeckung, Kosten.
-
-34. `ST-CDU-PRIMARY-SPLIT-0116-VOCATIONAL-CENTRES-SCHOOLS-FUNDING` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · LOW**. Gezielte Förderung von Ausbildungszentren und berufsbildenden Schulen kann Kapazität/Qualität stabilisieren, wenn sie reale Engpässe trifft. Risiken: Fehldimensionierung bei Demografie/Fachverschiebung, Gebäude-/Ausstattungs-Lock-in, reine Inputmessung. Recheck Auslastung, Ausstattungs-/Personalengpass, Abschlüsse/Übergänge, Wege, Lifecycle-Kosten.
-
-35. `ST-CDU-PRIMARY-SPLIT-0116-CONTINUING-EDUCATION` — **`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · LOW**. Berufliche Weiterbildung kann Anpassungs-/Beschäftigungsfähigkeit erhöhen, wenn sie arbeitsmarkt-/personengerecht ist. Risiken: Teilnahme statt Kompetenz/Joboutcome, Mitnahme, Zugangsungleichheit. Recheck Teilnahme nach Gruppen, Abschluss/Kompetenz, Beschäftigung/Lohn/Verbleib, Arbeitgebernachfrage, Kosten.
-
-36. `ST-CDU-PRIMARY-SPLIT-0116-SOCIAL-LABOUR-MARKET` — **`EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · MEDIUM**. Geförderte Beschäftigung kann Teilhabe, Tagesstruktur, Einkommen und Übergangschancen für arbeitsmarktferne Menschen erhöhen. Risiken: Lock-in, Creaming/Parking, Verdrängung regulärer Beschäftigung und Dauersubvention ohne Übergang. Die Passage nennt selbst Nicht-Konkurrenz zu bestehenden Unternehmen als Schutzbedingung. Recheck Additionalität, Übergänge in ungeförderte Arbeit, Jobqualität/Lohn, Dauer, Substitution, Zielgruppenverteilung.
-
-### 3. Batchweite #241-Systemprüfung pp. 29–32
-
-- `PROBLEM_REVIEW`: Erwerbs-/Integrationshemmnisse, Vereinbarkeit, Armut, Jugend-/Kinderschutz, Einsamkeit/Altersdiskriminierung, Teilhabebarrieren, Geschlechterungleichheit/Gewalt und Qualifizierungsengpässe getrennt. Reziprozitäts-, Familien-, Zusammenhalts- oder Gleichheitsframes sind **keine empirischen Problembefunde**.
-- `GOAL_REVIEW`: nachhaltige Erwerbsteilhabe; familien-/kindgerechte Wahlmöglichkeiten; Schutz/Partizipation; selbstbestimmte Teilhabe; Gewaltfreiheit; Gleichstellung; zugängliche soziale Dienste. `Bürgerarbeit`, Steuerbefreiung, Beratungsstelle, Beirat, Werkstatt oder Masterplan sind Instrument-/Zwischenachsen, keine Endziele.
-- `DNS_REFERENCE = EXACT_REGISTRY_CROSSWALK_PENDING`; keine Keyword-Zuordnung, kein Alignment als Kausalitätsbeweis.
-- `MATERIAL_OMISSIONS`: tatsächliche Ursachen von Nichtbeschäftigung; vorhandenes zumutbares Jobangebot; Betreuungs-/Jugendhilfe-/Beratungs-/Schutzkapazitäten; Regionalität/Barrierefreiheit; Einkommen/Steuerinzidenz; Teilhabe-/Übergänge WfbM→allgemeiner Arbeitsmarkt; Gewalt-/Schutzbedarfe; Fachkräfte-/Finanzierung; Demografie.
-- `POLICY_COHERENCE`: Grundsicherungsgeld/SGB-II-Bundespfad vs Landprogramme; Familien-/Kita-/Jugendhilfe; GrEStG; SGB VIII; SGB IX; GewHG/Istanbul-Konvention; Landes-/Kommunalzuständigkeiten. Advocacy/Plan/Förderung nie als bereits eingetretene Wirkung.
-- `DELIVERY_FEASIBILITY`: Jobcenter/BA/Kommunen, Kita-/Jugendhilfe-/Beratungspersonal, kommunale Beteiligungs-/Beauftragtenstrukturen, Eingliederungshilfe, Gewaltschutzkapazität, Bildungs-/Weiterbildungsanbieter und Haushaltsmittel.
-- `RESOURCE_FINANCING`: Steuerentlastung, Kinderwunsch/Kita/Jugend-/Sozial-/Gewaltschutzförderung, Ausbildungsinfrastruktur jeweils mit Additionalität, OPEX, Verteilung und Opportunitätskosten; Mittelabfluss ≠ Outcome.
-- `SPATIAL_DISTRIBUTION`: ländlich/städtisch; Alleinerziehende; Einkommen/Steuerpflicht; Kinder/Jugendliche; ältere Menschen; Menschen mit Behinderungen; Frauen; Care-Verantwortliche; arbeitsmarktferne Menschen. Nicht nur Durchschnittswerte.
-- `INTERNATIONAL_LEAKAGE`: überwiegend `NOT_APPLICABLE`; bei Arbeits-/Produktionsverdrängung als interregionale Substitution prüfen, nicht pauschal internationalisieren.
-- `ROBUSTNESS_STRESS_TEST`: Jobmangel/Konjunktur; Fachkräfteengpass; Haushaltskürzung; demografische Verschiebung; digitale Ausfälle; geringe Angebotsaufnahme; hohe regionale Streuung; Schutzkapazitätsengpass.
-- `REVERSIBILITY_LOCKIN`: dauerhafte Infrastruktur/Steuer-/Leistungs-/Sanktionsdesigns und institutionelle Sonderstrukturen stärker pfadbindend; Beratung/Piloten/temporäre Förderung leichter adaptierbar.
-- `FALSIFICATION_TRIGGERS`: ungeförderte Beschäftigungsübergänge/Jobqualität/Sanktionen/Substitution; Kita-/Jugend-/Beratungsreichweite/Qualität; Steuer-/Armutsinzidenz; Beteiligungs- und Beschwerde-Follow-up; Barrierefreiheit/Teilhabe/Arbeitsmarktübergänge; Gewaltschutz-Zugang/Abweisungen; Weiterbildung→Kompetenz/Job.
-- `LIFECYCLE_TRACEABILITY`: Wahlprogramm → Mandat → Landesprogramm/-haushalt/-recht bzw. Bundesinitiative → konkrete Implementierung → Nutzung/Capability → Outcome → Reality Check. Aktuelles Bundesrecht als inherited baseline, nicht als künftige Landesleistung.
-- `VERSION_DELTA`: `0100/0101/0103` Kontext statt Sammelwirkung; `0105/0106/0108/0110–0116` versionierte Splits; `0107` Kompetenzcrosswalk Bund/Land; historische IDs/Text immutable.
-- `COMMUNICATION_MEDIA_IMPACT`: material und getrennt bei Bürgerarbeits-Reziprozitätsframe sowie Gender-/Sprachposition; keine Kommunikationswirkung mit Maßnahmenwirkung saldieren.
-- `RECOMMENDATION = NOT_AVAILABLE_AT_SOURCE_UNIT_LEVEL`; keine WÖk-Option ohne exact APPROVED RecommendationRecord.
-- `STATE_GFA_ENAP_BENCHMARK = NOT_APPLICABLE` für Wahlprogramm-Source-Units.
-- `COVERAGE_SCOPE = ST_CDU_PRIMARY_SOURCE_P29_P32_FULL_SEMANTIC_RECONCILIATION`.
-
-### 4. Amtliche aktuelle Recheck-Quellen
-
-- Bundesagentur für Arbeit — Grundsicherungsgeld seit 01.07.2026 / Arbeitspflichten: `https://www.arbeitsagentur.de/grundsicherung-loest-buergergeld-ab` und `https://www.arbeitsagentur.de/grundsicherung/pflichten-verstehen-und-beachten/rechte-pflichten-minderungen`
-- GG Art. 105: `https://www.gesetze-im-internet.de/gg/art_105.html`
-- GrEStG §3: `https://www.gesetze-im-internet.de/grestg_1983/__3.html`
-- SGB VIII §11 Jugendarbeit: `https://www.gesetze-im-internet.de/sgb_8/__11.html`
-- SGB VIII §8a Schutzauftrag: `https://www.gesetze-im-internet.de/sgb_8/__8a.html`
-- SGB IX, u.a. Werkstätten/Inklusionsbetriebe: `https://www.gesetze-im-internet.de/sgb_9_2018/`
-- Gewalthilfegesetz: `https://www.gesetze-im-internet.de/gewhg/` ; §8 Länder-Bedarfs-/Entwicklungsplanung: `https://www.gesetze-im-internet.de/gewhg/__8.html`
-
-### 5. Checkpoint
-
-`ST_CDU_PRIMARY_PARITY_P29_P32 = PASS_SEGMENT`
-
-`ST_CDU_P29_P32_NEW_OR_SPLIT_TERMINAL = PASS_36`
-
-`ST_CDU_P29_P32_UNRESOLVED_SOURCE_GAPS = 0`
+`ST_CDU_P25_P28_SOURCE_RESTORE_GAPS = 0`
 
 `ST_CDU_PRIMARY_SOURCE_PARITY = NOT_YET_FULL_PROGRAMME`
 
@@ -171,8 +147,6 @@ Damit sind **alle effect-bearing Passagen der PDF-S. 29–32** entweder bestehen
 
 `authoritative_effect_mechanism_count = null`
 
-`denominator_status = NOT_FROZEN_PENDING_FULL_PRIMARY_SOURCE_PARITY`
+`ST_CDU_344_FACH_COMPLETE` bleibt ausdrücklich **kein** Completion-Trigger.
 
-**Keine** Hochrechnung `344 + shards`, keine öffentliche Count-Mutation, kein `ST_CDU_*_FACH_COMPLETE`. Die 36 sind versionierte Mechanism-Children/Additions dieses Segments und erst die vollständige Full-Programme-Segmentierungsregel entscheidet deren finalen Nennerbeitrag.
-
-**Nächster source-bound Parity-Shard: finale offizielle PDF S. 33–36 (`Medien mit Vertrauen`)**, mit expliziter Trennung von institutioneller Rundfunk-/Medienpolitik, Jugendmedienschutz/Plattformpflichten, Pressefreiheit, Medienkompetenz, KI/Urheberrecht und bloßen politischen Frames.
+**Nächster CDU-Parity-Shard:** finale offizielle PDF ab p.29 (`Soziale Gerechtigkeit und Familie`, Legacy `0100+`), idempotent gegen bereits fachlich terminale Release-1-Parents und alle versionierten Manifest-Shards. PR #257 darf dieses Ergebnis erst nach source-bound Dokumentation (dieser Kommentar) additiv materialisieren; Denominator bleibt ungefroren.

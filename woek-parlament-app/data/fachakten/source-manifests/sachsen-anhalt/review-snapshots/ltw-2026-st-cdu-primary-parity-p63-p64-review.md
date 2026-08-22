@@ -1,115 +1,186 @@
-## CDU Primary-Source-Parity + Fachreview — finale offizielle PDF P65–P68
+## WÖk CDU Primary-Source-Parity + Editorial-v2+ — final official PDF pp.63–64 fully reconciled
 
-Fortsetzung exakt nach `ST_CDU_PRIMARY_PARITY_P63_P64 = PASS_SEGMENT`. Quelle bleibt das am 13.06.2026 beschlossene finale Regierungsprogramm der CDU Sachsen-Anhalt: `https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf`, hier **PDF P65–P68**. Historisches Register bleibt unveränderliche Working-Baseline: `woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-cdu-zusagen.md`, `source_hash=15272934630ab67d50bea0da18964d83fb06b9b9aa32686e56e824913acb8fce`.
+Fortsetzung direkt nach `ST_CDU_PRIMARY_PARITY_P60_P62 = PASS_SEGMENT` (`#234` comment `5374807332`). Vor diesem Batch wurden #234/#241/PR257 erneut gelesen. Geprüft wurden die effect-bearing Passagen der finalen parteioffiziellen CDU-Fassung auf **PDF pp.63–64** gegen das immutable Release-1-Register. `344` bleibt Working-/History-Baseline; kein finaler Nenner wird aus Legacy-Zeilen oder Child-Summen abgeleitet.
 
-Wichtig: **344 ist kein finaler Nenner.** Auch die unten genannten 43 terminal behandelten finalen/gesplitteten Source-Objekte dieses Segments dürfen nicht auf `344+n` hochgerechnet werden. `authoritative_source_unit_count` und `authoritative_effect_mechanism_count` bleiben bis zum vollständigen P1–P91-Diff und corpusweiten Leaf/Parent/Restatement-Dedupe `null`.
+**Primärquelle:** `https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf`  
+**Historische Working-Baseline:** `woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-cdu-zusagen.md`, blob `6e8c53392d76e9847ee3028d241a988c12b3d2fb`; IDs/Text immutable.
 
-### 1. Primary-Source-Diff P65–P68
+**Prüfbaselines, nur für Wirkung/Additionality/Delivery:**
+- UBA Radverkehr, aktualisiert 13.08.2026: `https://www.umweltbundesamt.de/themen/verkehr/nachhaltige-mobilitaet/radverkehr`
+- UBA Binnenschiffe, aktualisiert 09.06.2026: `https://www.umweltbundesamt.de/themen/verkehr/emissionsstandards/binnenschiffe`
+- UBA Schifffahrt/Klimaanpassung: `https://www.umweltbundesamt.de/themen/wasser/fluesse/nutzung-belastungen/schifffahrt`
+- UBA Luftverkehr/Klimawirkung: `https://www.umweltbundesamt.de/themen/verkehr/emissionsstandards/luftverkehr`
+- Bundestag, GKE/Staustufen: `https://dserver.bundestag.de/btd/20/107/2010791.pdf`; die Bundesregierung hält fest, dass das Gesamtkonzept Elbe auf dem Eckpunktepapier beruht, das stabile Schifffahrtsbedingungen **unter Ausschluss des Baus von Staustufen in der Elbe** vorsieht.
 
-- `0245` — `OVERMERGED`: vollständiger P65-Parent, aber drei getrennte Mechanismen: Brachflächen-/Altstandort-Reuse; Flächenmanagement; Bund-Land-Altlastensanierung/Nachnutzung.
-- **ABSENT** — P65 `Städtebau- und Wohnraumförderung konsequent fortsetzen`: Kofinanzierung der Bundesprogramme, insbesondere altersgerecht/barrierefrei/energieeffizient; additiver Stable Leaf erforderlich.
-- **ABSENT** — P65 `Wohngebiete lebenswerter gestalten`: kommunaler Gestaltungsspielraum außerhalb gewidmeter Ortsdurchfahrten; additiver Stable Leaf erforderlich.
-- `0246` — `OVERMERGED`: Einzelhandelsunterstützung und Anti-Leerstand-/Umnutzungskonzepte getrennte Mechanismen.
-- `0247` — `CONTEXT_ONLY`: behaupteter Ergebnis-/Verlässlichkeits-Satz aus vorheriger Wasserrechtsdarstellung, kein neuer unabhängiger Wirkungsmechanismus.
-- `0248` — `OVERMERGED`: regionale Rohstoffgewinnung/Rekultivierung vs. ressourceneffiziente/wiederverwendbare Baustoffe.
-- `0249` — `OVERMERGED`: 1:1-Regelung, Informationsbündelung und Automation/KI sind drei verschiedene Mechanismen.
-- `0250` — `TRUNCATED`: Release-1 bricht nach „Rückzugsgebiete für Tiere und Pflanzen“ ab; finaler Primärtext enthält zusätzlich Biotopverbund, Strategierevision, invasive Arten, Schutzstatus-Review, Wildschadenausgleich, ehrenamtlichen Naturschutz/Fachgremien und BNE. Restore-first geschlossen durch die unten versionierten Leaves.
-- `0251` — `OVERMERGED`: institutionelle Tierschutzförderung, Katzenkastrationsregelung, Ehrenamtsunterstützung.
-- `0252` — `OVERMERGED`: Hitzeschutz-Förderkriterium vs. urbane Wasserspeicherung.
-- `0253` — `OVERMERGED`: Deichrückverlegung/CBA, integrierter Wassermanagement-Aktionsplan, unspezifischer WRRL-Umsetzungsframe.
-- `0254` — `OVERMERGED`: Mehrfachnutzung versiegelter Fläche, Brachflächenreaktivierung, Entsiegelungsförderung.
-- `0255` — `OVERMERGED`: Schutzgebietsunterstützung, Ausschluss von Stilllegungsförderung, Grünes Band.
-- `0256` — `OVERMERGED`: Repair/Reuse, Wind-/Solar-Recycling, Recyclingbaustoff-Regeln, öffentliche Beschaffung, Forschung.
-- `0257` — `OVERMERGED`: inländische Rohstoffgewinnung, Energie auf Altstandorten, Überprüfung bestehender Rekultivierungsanordnungen.
-- `0258` — `SAME`: Primärtext vollständig; aber nur unspezifische Fortsetzung von Unterstützung, kein hinreichend bestimmtes Förder-/Regelungsdesign.
-- `0259` — `SAME`, `semantic_role=RESTATEMENT_DUPLICATE_OF_0251_ANIMAL_WELFARE_FUNDING`: Source-ID bleibt erhalten, aber kein zusätzlicher unabhängiger Mechanismus vor globalem Dedupe.
+### 1. Primary-Source-Parity pp.63–64
 
-Amtliche Rechts-/Baseline-Guards für dieses Segment: BauGB §1a Abs. 2 verlangt bereits sparsamen Umgang mit Grund und Boden und priorisiert u.a. Wiedernutzbarmachung/Nachverdichtung (`https://www.gesetze-im-internet.de/bbaug/__1a.html`); §13b TierSchG bindet Maßnahmen gegenüber freilebenden Katzen an gesetzliche Voraussetzungen und eine gebiets-/evidenzbezogene Gefahrenlage (`https://www.gesetze-im-internet.de/tierschg/__13b.html`); Artenschutzstatus und invasive-Arten-Vollzug liegen im Bundes-/EU-Naturschutzrahmen, u.a. BNatSchG §§40a ff. und §44 (`https://www.gesetze-im-internet.de/bnatschg_2009/`). Diese Baselines werden als Additionality-/Competence-Guard verwendet, nicht als automatische Wirkungsrichtung.
+| Legacy | Klassifikation | source-bound Behandlung |
+|---|---|---|
+| `0236` Schiene/Netz/Elektrifizierung | `OVERMERGED` | fünf Mechanismen getrennt; kein Parent-Score |
+| `0237` Verkehrssicherheitsarbeit | `OVERMERGED` | vier Zielgruppen/Angebotspfade getrennt |
+| `0238` ländliche Mobilität | `OVERMERGED` | integrierter Pilot + sieben eigenständige Instrument-/Angebotspfade; Zusammenarbeit/Übertragbarkeit bleibt Delivery-Rahmen |
+| `0239` Radverkehr | `OVERMERGED` | Radwegenetz/Suburbanzugang und sichere Abstell-/Ladeinfrastruktur getrennt |
+| `0240` Wasserstraße/Luftverkehr | `OVERMERGED` | Ganzjahres-Schiffbarkeit als Goal-Parent; sieben konkrete Instrument-/Standortpfade getrennt |
+| `0241` Rastplätze | `OVERMERGED` | Ausbau/Investition, Sicherheits-/Bewachungspfad, Bund-Länder-Konzept und lärmschutzfreundliche Anordnung getrennt |
 
-### 2. Terminale canonical Leaves / Source-Objekte
+In diesem Segment wurde **keine effect-bearing Finalpassage als ABSENT gegenüber dem Parentbestand gefunden**. Die Fachlücke liegt in der bisherigen Overmerge-Segmentierung, nicht in einem fehlenden gesamten Bullet. Alle historischen Parents bleiben erhalten und werden versioniert durch Children aufgelöst.
 
-1. `ST-CDU-PRIMARY-SPLIT-0245-BROWNFIELD-REUSE` — `EDITORIAL_V2_PLUS_APPROVED`, `POSITIVE/MEDIUM`. **P:** brachliegende/untergenutzte Altflächen bei Nutzungsdruck; Altlasten lokal prüfen. **G:** sichere Wiedernutzung vor Neufläche. **M:** Umnutzung/Recycling von Brachflächen, Altindustrie und Baulücken. **Delivery:** Land/Kommunen/Eigentümer, Bauleitplanung/Bodenschutz. **Dist/Zeit:** Kommunen/Anwohner/Eigentümer, mittel-/langfristig. **Grenzen:** Boden-/Gesundheitsschutz, Eigentum/Beteiligung. **Falsifikation:** reaktivierte ha, vermiedene Neuinanspruchnahme, Sanierungsstatus, Nutzungsdauer.
-2. `ST-CDU-PRIMARY-SPLIT-0245-LAND-MANAGEMENT` — `EDITORIAL_V2_PLUS_APPROVED`, `AMBIVALENT/LOW`. **P:** fragmentierte Flächen-/Eigentümerinformation plausibel, Baseline offen. **G:** bessere Allokation vorhandener Flächen. **M:** aktives Flächenmanagement. **Delivery:** Kataster-/Planungs-/Datenschnittstellen. **Dist/Zeit:** Stadt/Land, mittelfristig. **Grenzen:** Datenschutz/Eigentum/Flächenschutz. **F:** Innenentwicklungsanteil, Bearbeitungsdauer, Zusatzversiegelung.
-3. `ST-CDU-PRIMARY-SPLIT-0245-CONTAMINATED-SITES-CONCEPT` — `EDITORIAL_V2_PLUS_APPROVED`, `AMBIVALENT/MEDIUM`. **P:** schwere Altlasten blockieren Nutzung und können Umwelt-/Gesundheitsrisiken erzeugen. **G:** sichere Sanierung + tragfähige Nachnutzung. **M:** Bund-Land-Konzept. **Delivery:** Bodenschutzbehörden/Eigentümer/Verursacher, Haftung/Finanzierung. **Dist/Zeit:** Standortkommunen/Anwohner, langjährig. **Grenzen:** Gesundheit, Boden/Grundwasser, Verursacherprinzip. **F:** Restkontamination, Sanierungsfälle/-kosten, Nachnutzungsquote.
-4. `ST-CDU-PRIMARY-GAP-P65-URBAN-HOUSING-COFINANCE` — `EDITORIAL_V2_PLUS_APPROVED`, `POSITIVE/MEDIUM`. **P:** regional unterschiedlicher Modernisierungs-/Wohnraumbedarf. **G:** zugänglicher, bezahlbarer, energieeffizienter Bestand. **M:** Kofinanzierung von Bundesprogrammen, Fokus altersgerecht/barrierefrei/energieeffizient. **Delivery:** Bund/Land/Kommunen/Förderbanken, Additionalität. **Dist/Zeit:** Mieter/Eigentümer, ältere/behinderte Menschen, mittel-/langfristig. **Grenzen:** Bezahlbarkeit, keine Verdrängung, Barrierefreiheit. **F:** zusätzliche Sanierungen, Energieverbrauch, Warmmieten, Barrierefreiheitsquote.
-5. `ST-CDU-PRIMARY-GAP-P65-RESIDENTIAL-AREA-CALMING` — `EDITORIAL_V2_PLUS_APPROVED`, `POSITIVE/LOW`. **P:** lokale Sicherheits-/Lärm-/Aufenthaltsprobleme müssen quartierbezogen belegt werden. **G:** sichere, lebenswerte Wohnumgebung. **M:** kommunaler Gestaltungsspielraum außerhalb gewidmeter Ortsdurchfahrten. **Delivery:** Kommunen im Straßen-/Verkehrsrecht. **Dist/Zeit:** Anwohner, Kinder, Fuß-/Rad-/Autoverkehr; lokal. **Grenzen:** Verhältnismäßigkeit/Erreichbarkeit. **F:** Unfälle, Lärm, Geschwindigkeit, Verkehrsverlagerung.
-6. `ST-CDU-PRIMARY-SPLIT-0246-RETAIL-SUPPORT` — `EDITORIAL_V2_PLUS_APPROVED`, `AMBIVALENT/LOW`. **P:** Leerstand/Frequenzverlust mit verschiedenen Ursachen. **G:** funktionale erreichbare Zentren. **M:** gezielte Einzelhandelsförderung. **Delivery:** Land/Kommunen, Förder-/Beihilferecht. **Dist/Zeit:** Betriebe/Bewohner, lokal/mittelfristig. **Grenzen:** Wettbewerbsneutralität, keine Dauerfehlallokation. **F:** Leerstand, Frequenz, Schließungen/Gründungen, Mitnahme.
-7. `ST-CDU-PRIMARY-SPLIT-0246-VACANCY-CONCEPTS` — `EDITORIAL_V2_PLUS_APPROVED`, `POSITIVE/LOW`. **P:** Leerstand; Ursache/Dauer je Zentrum prüfen. **G:** produktive gemeinwohlverträgliche Nutzung. **M:** Zwischen-/Umnutzungskonzepte. **Delivery:** Kommunen/Eigentümer, Bau-/Vertrags-/Förderrecht. **Dist/Zeit:** Innenstadtakteure, mittelfristig. **Grenzen:** Brandschutz/Barrierefreiheit. **F:** dauerhafter Leerstand, Umnutzungsdauer, Nutzungsmix.
-8. `ST-CDU-PRIMARY-SPLIT-0248-RAW-MATERIAL-RECLAMATION` — `EDITORIAL_V2_PLUS_APPROVED`, `AMBIVALENT/LOW`. **P:** Rohstoffbedarf/Importabhängigkeit ≠ pauschaler Mehrabbau-Bedarf. **G:** Materialversorgung mit minimalen Lebenszyklusfolgen. **M:** regionale Gewinnung + Rekultivierung. **Delivery:** Landesplanung/Genehmigung/Betreiber. **Dist/Zeit:** Industrie vs. Anwohner/Natur, langjährig. **Grenzen:** Wasser/Biodiversität/Fläche/Rekultivierung. **F:** Bedarf, Importsubstitution, Flächen-/Wasserwirkung, Rekultivierungsqualität.
-9. `ST-CDU-PRIMARY-SPLIT-0248-CIRCULAR-BUILDING-MATERIALS` — `EDITORIAL_V2_PLUS_APPROVED`, `POSITIVE/MEDIUM`. **P:** große Bau-Stoffströme/Primärressourcen. **G:** gleiche Funktion mit weniger Primärmaterial/Abfall. **M:** ressourceneffiziente und wiederverwendbare Baustoffe. **Delivery:** Land/Beschaffung/Förderung/Bauordnung + Wirtschaft. **Dist/Zeit:** Bauwirtschaft/öffentliche Hand, mittel-/langfristig. **Grenzen:** Produktsicherheit/Schadstofffreiheit. **F:** Rezyklatanteil, Primärmaterial, Abfall, Lebenszyklus-THG.
-10. `ST-CDU-PRIMARY-SPLIT-0249-ENV-LAW-ONE-TO-ONE` — `EDITORIAL_V2_PLUS_APPROVED`, `AMBIVALENT/LOW`. **P:** mögliche Zusatz-Compliancekosten, konkrete Mehrbelastung belegen. **G:** verhältnismäßiger wirksamer Schutz mit möglichst geringer unnötiger Last. **M:** keine zusätzliche landesrechtliche Verschärfung. **Delivery:** Land innerhalb EU-/Bundesrecht/Schutzpflichten. **Dist/Zeit:** Unternehmen/Behörden/Umweltbetroffene. **Grenzen:** Umwelt-/Gesundheitsschutz, Verhältnismäßigkeit. **F:** Normkosten, Schutzniveau, Vollzugs-/Risikodaten.
-11. `ST-CDU-PRIMARY-SPLIT-0249-ENV-INFO-ONE-STOP` — `EDITORIAL_V2_PLUS_APPROVED`, `POSITIVE/LOW`. **P:** Informationsfragmentierung als Verwaltungsfriktion. **G:** schneller/verläßlicher Informationszugang. **M:** Informationsbündelung. **Delivery:** Landesverwaltung/Fachbehörden. **Dist/Zeit:** Bürger/Unternehmen/Verwaltung. **Grenzen:** Aktualität, Datenschutz, fachliche Verantwortlichkeit. **F:** Such-/Bearbeitungszeit, Fehlberatung, Nutzung.
-12. `ST-CDU-PRIMARY-SPLIT-0249-ENV-AUTOMATION-AI` — `EDITORIAL_V2_PLUS_APPROVED`, `AMBIVALENT/LOW`. **P:** Prozessaufwand, konkrete Automatisierbarkeit offen. **G:** bessere Bearbeitungsqualität/-zeit bei gewahrten Rechten. **M:** Automation/KI. **Delivery:** Landesverwaltung, Datenschutz/Verfahrens-/AI-Recht. **Dist/Zeit:** Antragsteller/Verwaltung. **Grenzen:** Rechtsschutz, Nichtdiskriminierung, menschliche Verantwortlichkeit. **F:** Zeit, Fehler/Widerspruch, Bias, Overrides, Ausfälle.
-13. `ST-CDU-PRIMARY-SPLIT-0250-BIOTOPE-CONNECTIVITY` — `EDITORIAL_V2_PLUS_APPROVED`, `POSITIVE/HIGH`. **P:** Habitatfragmentierung. **G:** funktionsfähige Lebensräume/Populationen. **M:** Biotopverbund/Rückzugsgebiete vernetzen. **Delivery:** Land/Kommunen/Eigentümer. **Dist/Zeit:** Arten/Ökosysteme/Landnutzer, langfristig. **Grenzen:** Schutzgebiete, Ausgleich bei Nutzungsrechten. **F:** Konnektivität, Populationen, Habitatqualität.
-14. `ST-CDU-PRIMARY-SPLIT-0250-BIODIVERSITY-STRATEGY` — `EDITORIAL_V2_PLUS_APPROVED`, `AMBIVALENT/LOW`. **P:** Arten-/Habitatdruck; Aktualisierungsbedarf plausibel. **G:** messbare Zustandsverbesserung. **M:** Landesstrategie überarbeiten. **Delivery:** Fachressorts/Kommunen, Budget/Vollzug. **Dist/Zeit:** landesweit/langfristig. **Grenzen:** Naturschutzrecht/Transparenz/Beteiligung. **F:** Zielindikatoren, Budget, Umsetzung, Arten-/Habitatstatus.
-15. `ST-CDU-PRIMARY-SPLIT-0250-INVASIVE-SPECIES` — `EDITORIAL_V2_PLUS_APPROVED`, `POSITIVE/MEDIUM`. **P:** invasive Arten sind realer, art-/ortsspezifischer Risikopfad. **G:** Schadensvermeidung mit minimaler Nebenwirkung. **M:** stärkere Fokussierung/Management. **Delivery:** Land im Bundes-/EU-Rahmen. **Dist/Zeit:** Ökosysteme/Land-/Forstwirtschaft. **Grenzen:** Tierschutz/Nichtzielarten. **F:** Vorkommen, Ausbreitung, Managementerfolg/Nebenwirkungen.
-16. `ST-CDU-PRIMARY-SPLIT-0250-SPECIES-STATUS-REVIEW` — `EDITORIAL_V2_PLUS_APPROVED`, `AMBIVALENT/LOW`. **P:** Populationsstatus kann sich ändern; Anpassung nur evidenzbasiert. **G:** aktueller rechtskonformer Artenschutz. **M:** Schutzstatus-Review anstoßen. **Delivery:** Land liefert Daten/Initiative; Bundes-/EU-Rechtsstatus bleibt bindend. **Dist/Zeit:** Arten/Landnutzer. **Grenzen:** BNatSchG/EU-Artenschutz/Vorsorge. **F:** Population/Erhaltungszustand/Rechtsstatus/Konfliktdaten.
-17. `ST-CDU-PRIMARY-SPLIT-0250-WILDLIFE-DAMAGE-COMPENSATION` — `EDITORIAL_V2_PLUS_APPROVED`, `AMBIVALENT/LOW`. **P:** regionale Wildschäden, Ausmaß nachweisen. **G:** faire Risikoteilung bei Prävention. **M:** Schadensausgleich. **Delivery:** Land/Fonds-/Haushaltsdesign. **Dist/Zeit:** Land-/Forstwirte/Steuerzahler/Arten. **Grenzen:** Präventionsanreize/Nachweis. **F:** Schadenhöhe, Anträge, Prävention, Mitnahme.
-18. `ST-CDU-PRIMARY-SPLIT-0250-VOLUNTEER-CONSERVATION` — `EDITORIAL_V2_PLUS_APPROVED`, `POSITIVE/LOW`. **P:** Engagementskapazität/Partizipation, Defizit nicht quantifiziert. **G:** wirksame plural beteiligte Naturschutzpraxis. **M:** Ehrenamt stärken + Fachgremienbeteiligung. **Delivery:** Fachbehörden/Gremiendesign. **Dist/Zeit:** Ehrenamt/Verbände/Landnutzer. **Grenzen:** Pluralität/Transparenz/fachliche Unabhängigkeit. **F:** Beteiligung, Umsetzungsbeiträge, Diversität.
-19. `ST-CDU-PRIMARY-SPLIT-0250-BNE-CROSS-DEPARTMENT` — `EDITORIAL_V2_PLUS_APPROVED`, `POSITIVE/LOW`. **P:** Kompetenz-/Koordinationslücken plausibel. **G:** anwendbare Nachhaltigkeitskompetenz. **M:** BNE ressortübergreifend stärken. **Delivery:** Land/Bildungs-/Fachressorts/Träger. **Dist/Zeit:** Lernende/Multiplikatoren. **Grenzen:** Wissenschaftlichkeit/pluraler Diskurs. **F:** Teilnahme, Kompetenz, Anwendung; Output ≠ Outcome.
-20. `ST-CDU-PRIMARY-SPLIT-0251-ANIMAL-WELFARE-FUNDING` — `EDITORIAL_V2_PLUS_APPROVED`, `POSITIVE/MEDIUM`. **P:** Kosten-/Investitions- und Kapazitätsdruck. **G:** verlässliche Tierschutzkapazität. **M:** stärkere Förderung Tierheime/Vereine/Gnadenhöfe. **Delivery:** Land/Kommunen/Förderung. **Dist/Zeit:** Tiere/Ehrenamt/Kommunen. **Grenzen:** Tierschutzstandard/Fördertransparenz. **F:** Belegung, Abweisungen, Kosten, Investitionsstau, Additionalität.
-21. `ST-CDU-PRIMARY-SPLIT-0251-CAT-CASTRATION` — `EDITORIAL_V2_PLUS_APPROVED`, `AMBIVALENT/MEDIUM`. **P:** freilebende Katzen können Tierwohl-/Biodiversitätsprobleme verursachen; gebietsbezogene Evidenz nötig. **G:** weniger Leid/kontrollierte Population, rechtssicher. **M:** landesweite Katzenkastrationsregelung. **Delivery:** Landesregierung unter §13b TierSchG; gesetzliche Gebiet-/Gefahr-/Verhältnismäßigkeitsvoraussetzungen beachten. **Dist/Zeit:** Katzenhalter/Tierheime/Vogelpopulationen. **Grenzen:** Tierwohl, Eigentum, Verhältnismäßigkeit. **F:** Population, Kastrations-/Registrierungsquote, Tiergesundheit, Tierheimaufnahmen.
-22. `ST-CDU-PRIMARY-SPLIT-0251-ANIMAL-WELFARE-VOLUNTEERS` — `EDITORIAL_V2_PLUS_APPROVED`, `POSITIVE/LOW`. **P:** Engagementskapazität. **G:** stabile Tierschutzleistung ohne Verlagerung öffentlicher Pflichtaufgaben. **M:** Ehrenamt anerkennen/unterstützen. **Delivery:** Land/Kommunen. **Dist/Zeit:** Ehrenamt/Einrichtungen/Tiere. **Grenzen:** Arbeitsschutz/Rollenklärung. **F:** Bindung, Stunden, Qualifikation, Versorgungsqualität.
-23. `ST-CDU-PRIMARY-SPLIT-0252-HEAT-PROTECTION` — `EDITORIAL_V2_PLUS_APPROVED`, `POSITIVE/HIGH`. **P:** urbane Hitze als etablierter Gesundheits-/Resilienzpfad. **G:** geringere Exposition/Vulnerabilität. **M:** Hitzeschutz als Städtebauförderkriterium. **Delivery:** Bund/Land/Kommunen. **Dist/Zeit:** vulnerable Gruppen/dichte Quartiere. **Grenzen:** Gesundheit/soziale Verteilung/Barrierefreiheit. **F:** Hitzeexposition, Temperatur, Morbidität/Mortalität, Zielgruppenreichweite.
-24. `ST-CDU-PRIMARY-SPLIT-0252-WATER-STORAGE` — `EDITORIAL_V2_PLUS_APPROVED`, `POSITIVE/MEDIUM`. **P:** Versiegelung + Starkregen/Dürre. **G:** wasser-/hitzeresiliente Quartiere. **M:** bessere Wasserspeicherung fördern. **Delivery:** Kommune/Land/Entwässerung. **Dist/Zeit:** Quartiere/Infrastruktur/Stadtökologie. **Grenzen:** Hochwassersicherheit/Wasserqualität. **F:** Speichervolumen, Abfluss, Überflutung, Bodenfeuchte.
-25. `ST-CDU-PRIMARY-SPLIT-0253-DYKE-RELOCATION` — `EDITORIAL_V2_PLUS_APPROVED`, `AMBIVALENT/MEDIUM`. **P:** standortbezogenes Hochwasserrisiko/Retentionsdefizit. **G:** robuste Risikominderung + Auenfunktion. **M:** Deichrückverlegung bei positiver CBA. **Delivery:** Wasserverbände/Land/Kommunen/Planfeststellung. **Dist/Zeit:** Anwohner/Landnutzer/Auenökologie, langfristig. **Grenzen:** Hochwasserschutz/Eigentum/Ausgleich/Artenschutz. **F:** Retention, Schadensrisiko, Kosten, Auenstatus.
-26. `ST-CDU-PRIMARY-SPLIT-0253-WATER-ACTION-PLAN` — `EDITORIAL_V2_PLUS_APPROVED`, `POSITIVE/MEDIUM`. **P:** Klima-/Wasserstress und Nutzungskonflikte. **G:** tragfähige Mengen-/Qualitätsbewirtschaftung. **M:** integrierter Aktionsplan Wassermanagement. **Delivery:** Land/Wasserbehörden/Verbände/Kommunen/Nutzer. **Dist/Zeit:** Haushalte/Landwirtschaft/Industrie/Ökosysteme, langfristig. **Grenzen:** Trinkwasser, ökologischer Mindestbedarf, faire Verteilung. **F:** Grundwasser, Abfluss, Entnahmen, Qualität, Konflikte.
-27. `ST-CDU-PRIMARY-SPLIT-0253-WFD-EYES-MEASURE` — `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`, `OPEN/NOT_ASSESSABLE`. „WRRL mit Augenmaß“ ist ein Umsetzungsframe ohne hinreichend konkretes Instrument/Abweichungsdesign. **P/G:** möglicher Vollzugskonflikt nicht spezifiziert; guter Gewässerzustand/rechtskonforme Umsetzung bleiben Referenz. **Delivery:** EU/Bund/Land. **Grenzen:** EU-/Wasserrecht. **F:** konkrete Maßnahme erforderlich vor Wirkungsurteil.
-28. `ST-CDU-PRIMARY-SPLIT-0254-MULTIUSE-SEALED-LAND` — `EDITORIAL_V2_PLUS_APPROVED`, `POSITIVE/MEDIUM`. **P:** Flächendruck bei vorhandener Versiegelung. **G:** Nutzleistung ohne Neuinanspruchnahme. **M:** Mehrfachnutzung versiegelter Flächen. **Delivery:** Kommunen/Land/Eigentümer. **Dist/Zeit:** Stadt/Land, mittel-/langfristig. **Grenzen:** Sicherheit/Nutzungsverträglichkeit. **F:** Mehrfachnutzungsfläche, vermiedene Versiegelung.
-29. `ST-CDU-PRIMARY-SPLIT-0254-BROWNFIELD-REACTIVATION` — `EDITORIAL_V2_PLUS_APPROVED`, `POSITIVE/MEDIUM`. **P:** untergenutzte Fläche + Flächendruck. **G:** sichere Innenentwicklung vor Neuversiegelung. **M:** Brachflächenförderung. **Delivery:** Land/Kommunen/Eigentümer/Bodenschutz. **Grenzen:** Altlasten/Gesundheit. **F:** reaktivierte Fläche, Neuversiegelung, Sanierungsstatus.
-30. `ST-CDU-PRIMARY-SPLIT-0254-DESEALING-GRANTS` — `EDITORIAL_V2_PLUS_APPROVED`, `POSITIVE/MEDIUM`. **P:** Versiegelung verschärft Hitze/Abfluss und mindert Bodenfunktion. **G:** Boden-/Wasser-/Kühlfunktionen wiederherstellen. **M:** Entsiegelungsförderung. **Delivery:** Land/Kommunen. **Dist/Zeit:** Quartiere/Umwelt, langfristig. **Grenzen:** Dauerhaftigkeit/Bodenqualität. **F:** entsiegelte m², Versickerung, Temperatur, Bodenfunktion.
-31. `ST-CDU-PRIMARY-SPLIT-0255-PROTECTED-AREA-SUPPORT` — `EDITORIAL_V2_PLUS_APPROVED`, `POSITIVE/MEDIUM`. **P:** Management-/Finanzierungsbedarf Schutzgebiete. **G:** guter ökologischer Zustand bei naturverträglicher Erlebbarkeit. **M:** kontinuierliche Unterstützung/Entwicklungsbegleitung. **Delivery:** Land/Fachverwaltung. **Grenzen:** Schutzzweck/Naturschutzrecht. **F:** Habitat-/Artenstatus, Managementumsetzung, Besucherdruck.
-32. `ST-CDU-PRIMARY-SPLIT-0255-NO-SETASIDE-SUBSIDY` — `EDITORIAL_V2_PLUS_APPROVED`, `AMBIVALENT/LOW`. **P:** ob Stilllegung unnötig oder ökologisch nötig ist, ist flächenbezogen. **G:** kosteneffektiver Schutz bei kompatibler Bewirtschaftung. **M:** keine Steuermittel für Stilllegung bereits „nachhaltig bewirtschafteter“ Flächen. **Delivery:** Förderpolitik im Natur-/EU-Recht. **Grenzen:** Schutzziele/Additionalität/Definition „nachhaltig“. **F:** Habitatstatus, zusätzlicher Schutzbedarf, Kosten, Landnutzung.
-33. `ST-CDU-PRIMARY-SPLIT-0255-GREEN-BELT` — `EDITORIAL_V2_PLUS_APPROVED`, `AMBIVALENT/MEDIUM`. **P:** Erhaltungsbedarf/Nutzungskonflikte. **G:** ökologische + erinnerungskulturelle Funktion. **M:** Grünes Band erhalten und nutzen. **Delivery:** Land/Bund/Kommunen. **Grenzen:** Biotopverbund/Schutzzweck. **F:** Habitatqualität, Konnektivität, Nutzungsdruck.
-34. `ST-CDU-PRIMARY-SPLIT-0256-REPAIR-REUSE` — `EDITORIAL_V2_PLUS_APPROVED`, `POSITIVE/MEDIUM`. **P:** kurze Nutzung/Abfall. **G:** höhere Lebens-/Nutzungsdauer. **M:** Repair-Cafés/Recyclinghäuser/Wiederverwendung fördern. **Delivery:** Land/Kommunen/Träger. **Grenzen:** Produktsicherheit/Abfall-/Chemikalienrecht. **F:** reparierte/reused Mengen, Lebensdauer, vermiedener Abfall.
-35. `ST-CDU-PRIMARY-SPLIT-0256-WIND-SOLAR-RECYCLING` — `EDITORIAL_V2_PLUS_APPROVED`, `POSITIVE/MEDIUM`. **P:** wachsende Rücklaufmengen/materialkritische Fraktionen. **G:** hohe sichere Rückgewinnung. **M:** Wind-/Solar-Recycling intensivieren. **Delivery:** EU/Bund setzen Produkt-/Abfallrecht; Land Vollzug/Förderung/Innovation. **Grenzen:** Schadstoffsicherheit/Lebenszyklusenergie. **F:** Rückgewinnung, Sekundärmaterial, Energieeinsatz, Restabfall.
-36. `ST-CDU-PRIMARY-SPLIT-0256-RECYCLED-CONSTRUCTION-RULES` — `EDITORIAL_V2_PLUS_APPROVED`, `POSITIVE/MEDIUM`. **P:** mögliche Regulierungs-/Akzeptanzhürden. **G:** sicherer Sekundärbaustoffeinsatz. **M:** Einsatzregeln vereinfachen. **Delivery:** Bund/Land, Bau-/Abfall-/Bodenschutzrecht/Normung. **Grenzen:** Produkt-/Boden-/Grundwassersicherheit. **F:** Rezyklateinsatz, Primärrohstoff, Schadstoffprüfung, Mängel.
-37. `ST-CDU-PRIMARY-SPLIT-0256-PUBLIC-CIRCULAR-PROCUREMENT` — `EDITORIAL_V2_PLUS_APPROVED`, `POSITIVE/MEDIUM`. **P:** Nachfrage-/Skalierungsengpass. **G:** funktionale Beschaffung mit geringerem Ressourcenverbrauch. **M:** öffentliche Hand als Vorreiter. **Delivery:** Vergabe-/Haushaltsrecht. **Dist/Zeit:** Steuerzahler/Bauwirtschaft/Umwelt. **Grenzen:** Wirtschaftlichkeit/Vergabegleichheit/Qualität. **F:** Beschaffungsanteil, Lifecycle-Kosten, Materialmenge, Performance.
-38. `ST-CDU-PRIMARY-SPLIT-0256-RECYCLED-MATERIALS-RESEARCH` — `EDITORIAL_V2_PLUS_APPROVED`, `POSITIVE/LOW`. **P:** mögliche Qualitäts-/Technologielücken. **G:** validierte sichere Sekundärmaterialtechnologie. **M:** Forschung fördern. **Delivery:** Land/Hochschulen/Wirtschaft. **Grenzen:** Forschungsintegrität/Sicherheit. **F:** Validierung, Transfer, Materialperformance; Forschungsoutput ≠ Umweltoutcome.
-39. `ST-CDU-PRIMARY-SPLIT-0257-DOMESTIC-EXTRACTION` — `EDITORIAL_V2_PLUS_APPROVED`, `AMBIVALENT/LOW`. **P:** Versorgungssicherheit kann relevant sein, genereller Mehrabbau nicht belegt. **G:** robuste Materialversorgung mit minimalen Gesamtfolgen. **M:** Gewinnung im Land ermöglichen. **Delivery:** Planung/Genehmigung im Bundes-/EU-Umwelt-/Bergrechtsrahmen. **Grenzen:** Wasser/Biodiversität/Fläche/Gesundheit. **F:** Bedarf, Importe, Flächen-/Wasserwirkung, Emissionen, Kosten.
-40. `ST-CDU-PRIMARY-SPLIT-0257-FORMER-SITES-ENERGY` — `EDITORIAL_V2_PLUS_APPROVED`, `AMBIVALENT/LOW`. **P:** Konversionsflächen können Potenzial bieten; Eignung nicht pauschal. **G:** sichere zusätzliche Energieerzeugung auf geeigneten vorbelasteten Flächen. **M:** ehemalige Abbau-/Deponieflächen für Energie nutzen. **Delivery:** Planung/Altlasten/Energierecht. **Grenzen:** Altlasten/Rekultivierung/Netz. **F:** geeignete MW/ha, Altlasten, Netzanschluss, Konfliktflächen.
-41. `ST-CDU-PRIMARY-SPLIT-0257-RECLAMATION-ORDER-REVIEW` — `EDITORIAL_V2_PLUS_APPROVED`, `AMBIVALENT/LOW`. **P:** alte Auflagen können unpassend sein, generelle Fehlsteuerung nicht belegt. **G:** rechtssichere Nachsorge mit mindestens gleichwertiger Schutzwirkung. **M:** Rekultivierungsanordnungen prüfen/anpassen. **Delivery:** Fachbehörden/Betreiber/Eigentümer. **Grenzen:** Verursacherprinzip/Altlasten/keine Schutzabsenkung ohne Evidenz. **F:** Zielerreichung, Nachsorgekosten, Haftung, Altlastenstatus.
-42. `ltw-2026-st-cdu-0258-innovative-umwelttechnologien-foerdern-sachsen-anhalt-verf` — `REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON`, `OPEN/NOT_ASSESSABLE`. Primärtext ist `SAME`, nennt aber nur „weiter unterstützen“ ohne Instrument, Budget, Kriterien oder Additionality. **P:** möglicher Innovationsengpass nicht bestimmt. **G:** Umweltverbesserung durch tatsächlich wirksame Technologie, nicht Branchenlabel. **Delivery:** erst mit konkretem Förderdesign prüfbar. **Grenzen:** keine Umweltwirkung aus Label ableiten. **F:** konkreter Entscheidungsgegenstand erforderlich.
-43. `ltw-2026-st-cdu-0259-tierheime-besser-unterstuetzen-die-tierheime-leisten-wertv` — `SOURCE_UNIT_RECLASSIFIED_VERSIONED`, `OPEN/NOT_ASSESSABLE`, `semantic_role=RESTATEMENT_DUPLICATE_OF_0251_ANIMAL_WELFARE_FUNDING`. Source-ID/Text bleiben erhalten; kein zusätzlicher unabhängiger Leaf vor globalem Restatement-Dedupe. **P/G/M/Delivery/Dist:** identisch zum bereits source-bound Mechanismus `0251-ANIMAL-WELFARE-FUNDING`, daher keine Doppelzählung. **Grenze/F:** Source-Historie erhalten; globaler Leaf-/Restatement-Dedupe vor Denominator-Freeze.
+### 2. Terminale source-bound Mechanismen
 
-### 3. Batchweite #241-Systemlayer
+#### `ST-CDU-PRIMARY-SPLIT-0236-RAIL-INFRA-ELECTRIFICATION-SPEED`
+`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `MEDIUM`  
+**Key finding:** Erneuerung, Elektrifizierung und gezielte Kapazitäts-/Geschwindigkeitsverbesserung können Zuverlässigkeit, Energieeffizienz und Attraktivität der Schiene erhöhen, wenn nachfrage- und engpassbezogen priorisiert wird. **Problem:** Netzalter, Engpässe, Elektrifizierungslücken und Pünktlichkeit getrennt messen. **Goal:** zuverlässige emissionsarme Schienenleistung, nicht Investitionsvolumen. **Delivery:** wesentliche Netzhebel Bund/DB InfraGO; Land als Besteller/Advocacy nur teilweise. **Verteilung/Zeit:** Pendler, Güterverkehr, Regionen; langjährig. **Grenzen:** Flächen/Natur, Baufolgen, Lifecycle-Kosten. **Falsifikation:** Pünktlichkeit, Kapazität, Reisezeit, elektrifizierter Betrieb, Fahrgäste/Güter, Kosten.
 
-- `PROBLEM_REVIEW`: Flächendruck/Altlasten, urbane Hitze/Wasserstress, Biodiversitätsfragmentierung, Tierschutzkapazität, Rohstoff-/Kreislaufpfade und Verwaltungsfriktionen getrennt; politische Wörter wie „unnötig“, „mit Augenmaß“ oder „nachhaltig bewirtschaftet“ nie als empirischen Problemstatus übernehmen.
-- `GOAL_REVIEW`: Boden-/Flächeneffizienz, sichere/zugängliche Quartiere, Biodiversitätszustand, Tierwohl, Wasserresilienz, Material-/Versorgungssicherheit und Verwaltungsqualität sind Zielräume; Fördermittel, 1:1-Umsetzung, KI, Stilllegungsausschluss oder Rohstoffabbau sind Instrumente.
-- `DNS_REFERENCE = EXACT_REGISTRY_CROSSWALK_PENDING`; keine Keyword-Zuordnung und Zielbezug nie Kausalitätsbeweis.
-- `MATERIAL_OMISSIONS`: regionale Flächen-/Altlastenbaseline, Wohnraum-/Sanierungsbedarf, Biodiversitäts-/Populationsdaten, Invasivarten-/Wildschadendaten, Tierheim-/Katzenpopulation, Hitzebelastung, Wasserbilanz, Rohstoffbedarf, Rezyklat-/Recyclingqualität, Förderadditionalität.
-- `POLICY_COHERENCE`: Innenentwicklung ↔ Rohstoff-/Flächenausweitung; Schutzgebiete/Biodiversität ↔ Stilllegungsausschluss/Status-Review; Kreislauf ↔ Primärabbau; Wasserschutz ↔ Landnutzung; 1:1-Regel ↔ lokaler Schutzbedarf.
-- `DELIVERY_FEASIBILITY`: kommunale Planung, Bodensanierung, Förderadministration, Naturschutz-/Wasserfachkapazität, Tierheim-/Kastrationsvollzug, Recycling-/Qualitätsnormen, öffentliche Beschaffung.
-- `RESOURCE_FINANCING`: Sanierungs-/Altlastenhaftung, Förderadditionalität, Lebenszykluskosten, Naturschutz-/Wasser-/Tierheimkapazität, Recyclinginvestitionen.
-- `SPATIAL_DISTRIBUTION`: Stadt/Land, belastete Altstandorte, Hitzequartiere, Schutz-/Auenräume, Rohstoffstandorte, Tierheime/Katzengebiete.
-- `INTERNATIONAL_LEAKAGE`: primär bei Rohstoff-/Materialversorgung und Recycling relevant; Importsubstitution nie automatisch Umweltgewinn.
-- `ROBUSTNESS_STRESS_TEST`: Hitze/Dürre/Starkregen, Wasserknappheit, Altlasten-/Sanierungsrisiken, Populationsunsicherheit, Förderausfall, Recyclingmarkt-/Qualitätsschwankung, KI-/IT-Fehler.
-- `REVERSIBILITY_LOCKIN`: Flächen-/Abbau-/Energieinfrastruktur besonders lock-in-relevant; Reuse/Entsiegelung/Repair erhöhen tendenziell Reversibilität.
-- `FALSIFICATION_TRIGGERS`: oben je Unit; Outcome-Daten statt Mittelabfluss/Strategie-/Portal-Output.
-- `LIFECYCLE_TRACEABILITY`: Wahlprogramm → Mandat → Landesrecht/Plan/Förderung/Bundes-/EU-Initiative → Genehmigung/Investition/Vollzug → Nutzung/State Change → Reality Check.
-- `VERSION_DELTA`: `0250` zwingend Restore/Versionierung; alle Overmerge-Splits Parent-ID/Text unverändert; `0259` als Restatement-Edge statt zusätzliche Wirkung.
+#### `ST-CDU-PRIMARY-SPLIT-0236-HARZ-TOURIST-LONG-DISTANCE`
+`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`  
+Touristischer Fernverkehr nördlich/südlich des Harzes kann autofreie Erreichbarkeit und Tourismuszugang verbessern. Nachfrage, Trassenkapazität und Wirtschaftlichkeit sind offen; ein Fernverkehrsangebot ist primär Betreiber-/Bundes-/Marktpfad, kein alleiniger Landes-Outcome. Recheck: Nachfrage, saisonale Auslastung, Reisezeit, Pkw-Verlagerung, Zuschuss-/Trassenbedarf.
+
+#### `ST-CDU-PRIMARY-SPLIT-0236-FREIGHT-RAIL-SHIFT`
+`REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON` · `OPEN` · `NOT_ASSESSABLE`  
+**Reason:** Die Passage beschreibt die Entlastungswirkung einer Verlagerung von Gütern auf Schiene/kombinierten Verkehr, benennt aber kein zusätzliches Landesinstrument. Das Ziel ist plausibel; Wirkung hängt an Terminalkapazität, Trassen, Preisen, Zuverlässigkeit, Umschlag und Verladerentscheidungen. Keine positive Maßnahmenrichtung ohne Instrument. Falsifikation nach späterem Design: Tonnen-/tkm-Shift, Lkw-km, Terminal-/Trassenkapazität, Kosten, Emissionen.
+
+#### `ST-CDU-PRIMARY-SPLIT-0236-NON-ELECTRIFIED-LINE-DECARBONISATION`
+`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`  
+Nicht elektrifizierte Strecken auf einen belastbaren Dekarbonisierungspfad zu bringen kann fossile Traktion reduzieren; Oberleitung, Batterie oder andere Pfade dürfen nicht pauschal als wirkungsäquivalent behandelt werden. Delivery hängt an Netz-/Fahrzeug-Lifecycle, Streckennutzung und Bundes-/Betreiberzuständigkeit. Falsifikation: Diesel-km, Energieverbrauch, Lifecycle-THG, Infrastruktur-/Fahrzeugkosten, Zuverlässigkeit.
+
+#### `ST-CDU-PRIMARY-SPLIT-0236-CROSSBORDER-LOCAL-TRANSIT`
+`REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON` · `OPEN` · `NOT_ASSESSABLE`  
+„Einfacher und günstiger“ ist ein Ziel, aber ohne Tarif-, Bestell-, Takt-, Infrastruktur- oder Ticketingdesign kein eigenständiger Wirkmechanismus. Goal Review: niedrigere grenzüberschreitende Zugangsfriktion und bessere Erreichbarkeit. Recheck: Takt, Reisezeit, Tarif, Umstiege, Fahrgastentwicklung, Finanzierung und ausländische Partnerabhängigkeit.
+
+#### `ST-CDU-PRIMARY-SPLIT-0237-PRIMARY-SCHOOL-CYCLING-EDUCATION`
+`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`  
+Radfahrausbildung im Grundschulalter kann Regel-, Wahrnehmungs- und Handlungskompetenz fördern; Polizei-/Schulkooperation ist Output, weniger Unfälle sind erst Outcome. Delivery: Schulen, Polizei, lokale Verkehrssicherheitsakteure, Übungsinfrastruktur. Verteilung: alle Kinder, Zugänglichkeit für Behinderung/fehlendes eigenes Fahrrad beachten. Falsifikation: Kompetenztest, Teilnahme, sichere Praxis, Unfall-/Beinaheunfalldaten altersbezogen.
+
+#### `ST-CDU-PRIMARY-SPLIT-0237-SECONDARY-CYCLING-EDUCATION`
+`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`  
+Fortführung in Sekundarstufe I kann altersgerechte Risikokompetenz aktualisieren, sofern Inhalte reale Jugendmobilität adressieren. Keine Wirkung aus Unterrichtsstunden allein. Recheck: Teilnahme, Kompetenztransfer, Verkehrsverhalten, Unfall-/Konfliktdaten.
+
+#### `ST-CDU-PRIMARY-SPLIT-0237-ESCOOTER-SAFETY-EDUCATION`
+`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`  
+Eine Erweiterung auf E-Scooter kann neue Konflikt-/Regelrisiken adressieren. Schutzpfade sind Fahrkompetenz, Regelwissen und Rücksicht auf Fuß-/Radverkehr; sie ersetzen sichere Infrastruktur und Vollzug nicht. Falsifikation: Kompetenz, Fehlverhalten, Unfall-/Konfliktdaten, Infrastrukturkontext.
+
+#### `ST-CDU-PRIMARY-SPLIT-0237-SENIOR-ROAD-SAFETY-OFFERS`
+`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`  
+Freiwillige altersgerechte Verkehrssicherheitsangebote können Risikowahrnehmung und sichere Mobilität unterstützen; Selbstselektion und Erreichbarkeit begrenzen den Effekt. Ziel ist sichere selbstständige Mobilität, nicht Kurszahl. Recheck: Reichweite, Kompetenz/Verhalten, Unfall-/Verletzungsschwere, regionale Zugänglichkeit.
+
+#### `ST-CDU-PRIMARY-SPLIT-0238-RURAL-INTEGRATED-MOBILITY-PILOT`
+`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`  
+Ein integriertes Modellprojekt kann reale ländliche Angebotslücken testen und Lernen vor flächiger Skalierung ermöglichen. `PILOT_AND_LEARN_AS_DESIGN != WOEK_RECOMMENDATION`. Problem Review: Erreichbarkeitslücken nach Zielgruppe/Region, nicht „ländlich“ pauschal. Delivery: Land, Kommunen, Aufgabenträger, private Anbieter; Übertragbarkeit muss nachgewiesen werden. Falsifikation: Erreichbarkeit, Kosten je Fahrt, Nutzung nach Gruppe, Anschlussqualität, Abbruch-/Skalierungskriterien.
+
+#### `ST-CDU-PRIMARY-SPLIT-0238-AUTONOMOUS-RURAL-MOBILITY`
+`EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `LOW`  
+Autonome Angebote können bei Fahrerknappheit und dünner Nachfrage neue Bedienmodelle ermöglichen; Sicherheitsnachweis, Betriebsbereich, Cyber-/Haftungsfragen, Barrierefreiheit und hohe Systemkosten sind materielle Bedingungen. Kein Technologie-Label als Mobilitätsoutcome. Recheck: Verfügbarkeit, Eingriffe/Sicherheitsereignisse, Kosten, Fahrgastnutzung, Ausfall-/Fallback-Fähigkeit.
+
+#### `ST-CDU-PRIMARY-SPLIT-0238-ON-DEMAND-RURAL-TRANSIT`
+`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `MEDIUM`  
+Ruf-/On-Demand-Verkehr kann in dünn besiedelten Gebieten Erreichbarkeit flexibler verbessern als starre Leerfahrten, wenn Bündelung, Verfügbarkeit, Tarifintegration und Anschluss funktionieren. Risiken: hohe Zuschüsse bei geringer Bündelung, digitale Exklusion. Falsifikation: Bedienzeit, Auslastung, Kosten/Fahrgast, ersetzte Pkw-Fahrten, analoge Buchbarkeit, Anschlussquote.
+
+#### `ST-CDU-PRIMARY-SPLIT-0238-CITIZEN-BUS`
+`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`  
+Bürgerbusse können lokale Versorgungslücken ergänzen und soziale Teilhabe stärken; freiwillige Kapazität, Verlässlichkeit und professionelle Grundversorgung dürfen nicht still ersetzt werden. Recheck: Fahrten, Ausfälle, Zielgruppenreichweite, Ehrenamtsstabilität, Kosten und Anschlusswirkung.
+
+#### `ST-CDU-PRIMARY-SPLIT-0238-CARSHARING-RURAL`
+`EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `LOW`  
+Carsharing kann Haushalten Zweit-/Eigenfahrzeuge ersparen, wenn Standorte, Buchbarkeit und Nachfrage passen; in dünnen Räumen kann Auslastung wirtschaftlich schwach sein und zusätzliche Fahrten statt Substitution entstehen. Falsifikation: Fahrzeuge je Nutzer, private Pkw-Bestände, Fahrleistung, Auslastung, Kosten, räumliche Abdeckung.
+
+#### `ST-CDU-PRIMARY-SPLIT-0238-BIKESHARING-RURAL`
+`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`  
+Bike-Sharing kann die letzte Meile und multimodale Anschlüsse verbessern, wenn sichere Wege, Stationierung und Wartung stimmen. Nutzen ist stark standortabhängig. Recheck: Nutzung, Verfügbarkeit, Defekte, Anschlusswege, Pkw-Substitution und regionale Verteilung.
+
+#### `ST-CDU-PRIMARY-SPLIT-0238-ESCOOTER-INTEGRATED-BOOKING`
+`EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `LOW`  
+E-Scooter mit verkehrsträgerübergreifender Buchung können kurze Anschlusswege erleichtern; Gehwegkonflikte, Abstellflächen, Unfallrisiken und zusätzliche statt substituierte Fahrten begrenzen den Nutzen. Digitale Buchung braucht barrierearme Alternativen. Recheck: Modal-Substitution, Unfälle/Konflikte, Abstellverstöße, Nutzungsgruppen, App-Zugang.
+
+#### `ST-CDU-PRIMARY-SPLIT-0238-MOBILITY-LAW`
+`REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON` · `OPEN` · `NOT_ASSESSABLE`  
+Ein Mobilitätsgesetz ist ein Governance-/Rechtscontainer, dessen Wirkung vollständig vom Regelungsinhalt abhängt. „Bündelung“ kann Kohärenz schaffen, ist aber noch kein Zustandsmechanismus. Erst Ziele, Rechte/Pflichten, Finanzierung, Standards und Zuständigkeiten erlauben eine Wirkungsrichtung.
+
+#### `ST-CDU-PRIMARY-SPLIT-0239-CYCLE-NETWORK-SUBURBAN-LINKS`
+`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `MEDIUM`  
+Mehr **durchgängige, sichere und tatsächlich relevante** Radwege und bessere suburbane Verbindungen können aktive Mobilität, Gesundheit und Pkw-Verlagerung fördern. UBA betont Netzdurchgängigkeit/Sicherheit statt bloßer Wegzahl. Goal Review: sichere attraktive Alltagsverbindung, nicht Kilometerzahl. Delivery: Land/Kommunen/Baulastträger. Falsifikation: Netzlücken, Unfälle, Radverkehrsanteil, Pendlerwege, Nutzungs-/Regionseffekt.
+
+#### `ST-CDU-PRIMARY-SPLIT-0239-SECURE-BIKE-PARKING-CHARGING`
+`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`  
+Sichere Abstellanlagen und Lademöglichkeiten können Diebstahl-/Reichweitenbarrieren reduzieren, besonders an Umstiegen und Arbeitsorten. Output ist Stellplatzzahl; Outcome sind Nutzung, geringere Diebstahlfriktion und mehr Alltagsradverkehr. Recheck: Auslastung, Diebstahl, Standortqualität, Rad-/Pedelec-Pendeln.
+
+#### `0240` Goal-Parent — ganzjährige Schiffbarkeit Elbe/Saale/Unstrut
+`SOURCE_UNIT_RECLASSIFIED_VERSIONED` · `OPEN` · `NOT_ASSESSABLE`  
+„Ganzjährige Schiffbarkeit“ ist ein Zielzustand, „geeignete Maßnahmen“ ist ohne Instrument unbestimmt. Klimabedingte Niedrigwasser sind ein reales Resilienzproblem; UBA weist zugleich darauf hin, dass Anpassung über Flotten-, Logistik-, Digital- und Gewässermaßnahmen erfolgen kann. Kein pauschaler Infrastruktur-Score. Die folgenden Children sind getrennt zu prüfen.
+
+#### `ST-CDU-PRIMARY-SPLIT-0240-ELBE-WEIRS`
+`EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `MEDIUM`  
+**Key finding:** Staustufen könnten Wasserstände für einzelne Nutzungen stabilisieren, wären aber ein massiver, langfristiger Fluss- und Auen-Eingriff mit Durchgängigkeits-, Sediment-, Habitat-, Wasserstands- und Lock-in-Risiken. Besonders material: Das geltende **Gesamtkonzept Elbe schließt den Bau von Staustufen in der deutschen Elbe ausdrücklich aus**; die Programmformulierung „im Zuge des Elbe-Gesamtkonzepts“ ist damit policy-coherence-seitig nicht die aktuelle Baseline. **Problem:** Niedrigwasser/Schiffbarkeit ≠ Nachweis, dass Staustufen der wirksamste oder rechtlich tragfähige Engpasshebel sind. **Goal:** resiliente Transport-/Flussfunktion bei ökologischem Zustand. **Delivery:** Bundeswasserstraße, Bund/Länder/EU-Wasser-/Naturschutzrecht; Land nicht allein entscheidungsbefugt. **Grenzen:** WRRL/Natura/Flussdurchgängigkeit, Biodiversität, Hochwasser-/Grundwasserwirkungen, Irreversibilität. **Falsifikation:** hydrologischer Nutzen, Schiffbarkeit, Sediment/Sohle, Habitat-/Artenzustand, Kosten, Alternativen, Rechts-/GKE-Status.
+
+#### `ST-CDU-PRIMARY-SPLIT-0240-SAALE-SIDE-CANAL`
+`EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `LOW`  
+Ein Saale-Seiten-Kanal kann Güterverkehrskapazität und Hafenanbindung erhöhen, verursacht aber hohe CAPEX/Folge-, Flächen-, Gewässer-/Natur- und Nachfrage-/Stranded-Asset-Risiken. Bundesverkehrswegeplan-/Bundeskompetenz ist Delivery-Voraussetzung. Falsifikation: Güterpotenzial, Modal Shift, Kosten-Nutzen, Natur-/Wasserwirkung, Niedrigwasserresilienz, Lebenszykluskosten.
+
+#### `ST-CDU-PRIMARY-SPLIT-0240-NO-DISMANTLING-TECHNICAL-STRUCTURES`
+`REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON` · `OPEN` · `NOT_ASSESSABLE`  
+Die pauschale Ablehnung des Rückbaus benennt weder Bauwerke noch Zustand, Funktion oder Gegenfaktum. Erhalt kann Sicherheit/Schifffahrt stützen oder ökologische Durchgängigkeit/Sanierung blockieren. Objektweise Lifecycle-, Sicherheits-, Gewässer- und Kostenprüfung nötig; kein pauschaler Richtungswert.
+
+#### `ST-CDU-PRIMARY-SPLIT-0240-PORTS-SHIPYARDS-INTERMODAL`
+`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`  
+Bessere intermodale Hafen-/Werftanbindung kann Umschlagfriktionen senken und bei tatsächlicher Verlagerung von der Straße Umwelt- und Netzentlastung unterstützen. UBA bewertet Binnenschiff pro Tonne klimagünstiger als Lkw, weist aber auf Luftschadstoffe und alte Flotten hin. Delivery: Hafen-/Schienen-/Straßen-/Wasserstraßen-Schnittstellen. Falsifikation: Umschlag, tkm-Shift, Lkw-km, Energie/THG, Luftschadstoffe, Auslastung.
+
+#### `ST-CDU-PRIMARY-SPLIT-0240-WATER-TOURISM`
+`EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `LOW`  
+Wassertourismus kann regionale Wertschöpfung und Naherholung stärken; zusätzlicher Verkehr, Uferdruck, Störungen und Infrastruktur können Natur-/Wasserziele belasten. Wirkung hängt an Besucherlenkung, Kapazität und Schutzdesign. Recheck: Nachfrage/Wertschöpfung, saisonale Belastung, Habitat-/Wasserzustand, lokale Verteilung.
+
+#### `ST-CDU-PRIMARY-SPLIT-0240-COCHSTEDT-RESEARCH-SITE`
+`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`  
+Ausbau eines bestehenden Flugplatzes als Forschungsstandort kann Test-/FuE-Kapazität und regionale Wissenscluster stärken, wenn Additionalität und offene Forschungsnutzung belegt sind. Kein automatischer Innovations-Outcome aus Infrastruktur. Recheck: Forschungsprojekte, Drittmittel, Wissenstransfer, Auslastung, öffentliche Kosten und ggf. Lärm-/Flugbetriebsfolgen.
+
+#### `ST-CDU-PRIMARY-SPLIT-0240-LEJ-INTERNATIONAL-HUB-SUPPORT`
+`EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `MEDIUM`  
+Unterstützung des Flughafens Leipzig/Halle kann internationale Konnektivität, Fracht- und Standortfunktionen stützen; Luftverkehr erzeugt zugleich erhebliche CO2- und Nicht-CO2-Klimawirkungen sowie lokale Lärm-/Luftwirkungen. Ohne konkretes Unterstützungsinstrument ist die Größenordnung offen. Delivery zudem länder-/bundes-/EU- und Betreiberabhängig. Falsifikation: zusätzliche Flüge/Fracht/Jobs versus öffentliche Kosten, Lärmexposition, CO2- und Nicht-CO2-Klimawirkung.
+
+#### `ST-CDU-PRIMARY-SPLIT-0241-REST-AREA-CAPACITY-INVESTMENT`
+`EDITORIAL_V2_PLUS_APPROVED` · `AMBIVALENT` · `LOW`  
+Zusätzliche bedarfsgerechte Lkw-/Bus-Stellplätze können Ruhezeiten, Logistik und Sicherheit verbessern; Neubau verursacht Fläche, Bau-/Betriebskosten und lokale Belastung. Problem Review: Standort-/Zeit-bezogenen Stellplatzmangel messen, nicht „Bedarf wächst“ pauschal. Delivery: Autobahn-/Bund-/private Autohofrollen trennen. Falsifikation: Fehlbelegung/Parksuchverkehr, Auslastung, Unfälle, Fläche, Kosten.
+
+#### `ST-CDU-PRIMARY-SPLIT-0241-GUARDED-REST-AREA-SAFETY`
+`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`  
+Bewachte Anlagen und risikobasierte Sicherheitsmaßnahmen können Diebstahl-/Übergriffs- und Ruhezeitrisiken reduzieren, wenn Bedarf und Wirksamkeit standortbezogen belegt sind. Grenzen: Datenschutz/Überwachung, faire Zugänglichkeit. Recheck: Vorfälle, Schadenshöhe, Nutzung, Fahrer-Sicherheitsgefühl, Kosten.
+
+#### `ST-CDU-PRIMARY-SPLIT-0241-FEDERAL-REST-AREA-CONCEPT`
+`REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON` · `OPEN` · `NOT_ASSESSABLE`  
+Ein bundeseinheitliches Konzept ist Prozess-/Governance-Output; ohne Standards, Zuständigkeit, Flächen-/Finanzierungs- und Priorisierungsdesign keine eigenständige Wirkungsrichtung. Späterer Recheck gegen tatsächlichen Regelungsinhalt.
+
+#### `ST-CDU-PRIMARY-SPLIT-0241-NOISE-SENSITIVE-TRUCK-LAYOUT`
+`EDITORIAL_V2_PLUS_APPROVED` · `POSITIVE` · `LOW`  
+Lärmschutzorientierte Anordnung der Lkw-Stellplätze kann Ruhebedingungen für Fahrer und angrenzende Bereiche verbessern, sofern Verkehrsführung/Sicherheit nicht verschlechtert werden. Recheck: Nachtpegel, Schlaf-/Beschwerdedaten, Konflikte, Unfall-/Manöverdaten.
+
+### 3. Batchweite #241-Systemprüfung pp.63–64
+
+- `PROBLEM_REVIEW`: Schienenlücken, Verkehrssicherheit, ländliche Erreichbarkeit, Radnetz, Niedrigwasser/Schiffbarkeit, Intermodalität, Luftverkehrskonnektivität und Rastplatzbedarf getrennt; technologische oder infrastrukturelle Lösung nie als Problemdefinition.
+- `GOAL_REVIEW`: sichere/zugängliche/resiliente/emissionsarme Mobilität, tragfähige Güterlogistik und ökologisch funktionsfähige Gewässer; Fernzug, Kanal, Staustufe, App, Mobility Law oder Rastplatz sind Instrumente/Outputs.
+- `DNS_REFERENCE = EXACT_REGISTRY_CROSSWALK_PENDING`; keine Keyword-Zuordnung, Zielbezug nie Kausalitätsnachweis.
+- `MATERIAL_OMISSIONS`: Nachfrage-/Engpassbaseline, Investitions-/Folgekosten, Klima-/Natur-/Wasser-Lifecycle, bestehende Angebote, tatsächliche ländliche Erreichbarkeit, Betriebs-/Personal-/Digitalzugang, Niedrigwasserszenarien, Luftverkehr-Additionalität.
+- `POLICY_COHERENCE`: besonders `0240-ELBE-WEIRS` gegen geltendes Gesamtkonzept Elbe; Schienen-/Rad-/Sharing-/ÖPNV-Pfade gegen Straßen-/Luft-/Wasserinfrastruktur nicht saldieren, sondern Interaktionen zeigen.
+- `DELIVERY_FEASIBILITY`: Bund/DB/WSV/Bundesverkehrswegeplanung bei Schiene/Wasser/Autobahn; Land/NASA/Aufgabenträger bei SPNV; Kommunen/Private bei Sharing/Rast-/Radangeboten. Advocacy nie als umgesetzter Outcome.
+- `RESOURCE_FINANCING`: CAPEX + Betrieb/Erhaltung + Folgekosten + Additionalität; Pilot-/Sharing-/Ehrenamtsmodelle mit realer Dauerfinanzierung prüfen.
+- `SPATIAL_DISTRIBUTION`: ländliche Räume, Zentren, Harz, Grenzräume, Hafen-/Flusskorridore, Flughafenanrainer, Fahrer und Menschen ohne Pkw.
+- `INTERNATIONAL_LEAKAGE`: Luftverkehr und Kraftstoff-/Fahrzeugketten material; grenzüberschreitender Verkehr als eigener Kooperationspfad.
+- `ROBUSTNESS_STRESS_TEST`: Niedrigwasser/Klimawandel, Nachfrageverschiebung, Fach-/Fahrermangel, Cyber-/App-Ausfall, Ehrenamtsausfall, Baukosten, Netz-/Trassenengpässe.
+- `REVERSIBILITY_LOCKIN`: Staustufen/Kanal/Flughafen-/Großinfrastruktur stark; Apps/Piloten/Sharing/Tarif- und Angebotsdesign leichter reversibel.
+- `FALSIFICATION_TRIGGERS`: Reisezeit/Pünktlichkeit, Modal Shift, Unfall/Verletzung, Erreichbarkeit, Nutzung/Kosten, Klima/Luft/Lärm, Wasser-/Habitat-/Sedimentzustand, Niedrigwassernutzbarkeit, Flächen- und Lifecycle-Kosten.
+- `LIFECYCLE_TRACEABILITY`: Wahlprogramm → Landesinitiative/Bestellung/Förderung bzw. Bund/DB/WSV/Kommunen → Rechts-/Planungs-/Vergabeakt → Infrastruktur/Service → Nutzung → Outcome → Reality Check.
+- `VERSION_DELTA`: `0236–0241` bleiben historische Overmerge-Parents; Children additiv/stabil, keine Mutation alter Texte/IDs.
+- `COMMUNICATION_MEDIA_IMPACT`: keine eigenständige Kommunikationswirkung ohne passagegebundenen Mechanismus; technologische/infrastrukturelle Positivframes nicht als Wirkungsbeweis übernehmen.
 - `RECOMMENDATION = NOT_AVAILABLE_AT_SOURCE_UNIT_LEVEL`; keine WÖk-Option ohne exact APPROVED RecommendationRecord.
-- `STATE_GFA_ENAP_BENCHMARK = NOT_APPLICABLE` für Wahlprogramm-Source-Units.
-- `COVERAGE_SCOPE = ST_CDU_PRIMARY_SOURCE_P65_P68_FULL_SEMANTIC_RECONCILIATION`.
+- `STATE_GFA_ENAP_BENCHMARK = NOT_APPLICABLE`.
+- `COVERAGE_SCOPE = ST_CDU_PRIMARY_SOURCE_P63_P64_FULL_SEMANTIC_RECONCILIATION`.
 
 ### 4. Checkpoint
 
-`ST_CDU_PRIMARY_PARITY_P65_P68 = PASS_SEGMENT`
-
-`ST_CDU_P65_P68_TERMINAL_SOURCE_OBJECTS = PASS_43`
-
-`ST_CDU_P65_P68_UNRESOLVED_SOURCE_GAPS = 0`
-
-`ST_CDU_PRIMARY_SOURCE_PARITY = NOT_YET_FULL_PROGRAMME`
-
-`ST_CDU_FINAL_VERSIONED_MANIFEST = PENDING_DOCUMENT_WIDE_RECONCILIATION`
-
-`authoritative_source_unit_count = null`
-
-`authoritative_effect_mechanism_count = null`
-
+`ST_CDU_PRIMARY_PARITY_P63_P64 = PASS_SEGMENT`  
+`ST_CDU_P63_P64_NEW_OR_SPLIT_TERMINAL = PASS_30`  
+`ST_CDU_P63_P64_UNRESOLVED_SOURCE_GAPS = 0`  
+`ST_CDU_PRIMARY_SOURCE_PARITY = NOT_YET_FULL_PROGRAMME`  
+`ST_CDU_FINAL_VERSIONED_MANIFEST = PENDING_DOCUMENT_WIDE_RECONCILIATION`  
+`authoritative_source_unit_count = null`  
+`authoritative_effect_mechanism_count = null`  
 `denominator_status = NOT_FROZEN_PENDING_FULL_PRIMARY_SOURCE_PARITY`
 
-`ST_CDU_TERMINAL_COMPLETE = FALSE`
-
-Nächster document-wide Primary-Source-Parity-Scope ist die **finale offizielle PDF P69 ff.** (Ehrenamt/Kultur/Religion und anschließende Kapitel). Kein Merge-/Completion-Trigger, bevor P1–P91 unter einer konsistenten Segmentierungsregel vollständig reconciled, das finale versionierte Manifest gebaut, alle finalen Leaves terminal und globale Source-/Restore-/Overmerge-/Restatement-Gaps = 0 sind.
+**Nächster document-wide Scope:** finale offizielle PDF **p.65 ff.**, Übergang zu Wohnraum/Raumentwicklung. Kein Completion-Trigger vor Vollprogramm-Parity, konsistenter Segmentierungsregel, finalem Manifest, allen finalen Units terminal und 0 globalen Source-/Restore-/Overmerge-Gaps.

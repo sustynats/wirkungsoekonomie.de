@@ -1,0 +1,223 @@
+{
+  "applicable_241_layer_set_check": {
+    "markers_explicit_in_source_review": [
+      "COMMUNICATION_MEDIA_IMPACT",
+      "COVERAGE_SCOPE",
+      "DELIVERY_FEASIBILITY",
+      "DNS_REFERENCE",
+      "FALSIFICATION_TRIGGERS",
+      "GOAL_REVIEW",
+      "INTERNATIONAL_LEAKAGE",
+      "LIFECYCLE_TRACEABILITY",
+      "MATERIAL_OMISSIONS",
+      "POLICY_COHERENCE",
+      "PROBLEM_REVIEW",
+      "RECOMMENDATION",
+      "RESOURCE_FINANCING",
+      "REVERSIBILITY_LOCKIN",
+      "ROBUSTNESS_STRESS_TEST",
+      "SPATIAL_DISTRIBUTION",
+      "STATE_GFA_ENAP_BENCHMARK",
+      "VERSION_DELTA"
+    ],
+    "set_check_status": "PASS_SOURCE_BOUND_MARKERS_CAPTURED",
+    "source_review_has_241_system_section": true
+  },
+  "authoritative_effect_mechanism_count": null,
+  "authoritative_source_unit_count": null,
+  "completion_guard": {
+    "st_cdu_final_versioned_manifest": "PENDING_GLOBAL_LEAF_RECONCILIATION",
+    "st_cdu_primary_source_parity": "PASS_FULL_PROGRAMME",
+    "st_cdu_terminal_complete": false
+  },
+  "denominator_status": "NOT_FROZEN_PENDING_GLOBAL_LEAF_RECONCILIATION",
+  "fach_review_comment_id": 5374669067,
+  "fach_review_issue": 234,
+  "historical_ids_immutable": true,
+  "materialization_mode": "MECHANICAL_FROM_SOURCE_BOUND_ISSUE_234_REVIEW_NO_NEW_FACH_SEMANTICS",
+  "party": "CDU",
+  "primary_pdf_pages": [
+    54,
+    56
+  ],
+  "primary_source_diff": [
+    {
+      "classification": "SAME",
+      "legacy_unit": "0208",
+      "source_bound_review_line": "| `0208` | `SAME` | citizen-oriented understandable/reachable service + clear responsibilities/transparency fully represented |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0209",
+      "source_bound_review_line": "| `0209` | `OVERMERGED` | central modernisation governance, full digital approval/procurement, approval fiction, sample-based controls, AI precheck and digital-procedure-law adaptation separated |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0210",
+      "source_bound_review_line": "| `0210` | `OVERMERGED` | processing-time/legal-review design, generic Bund/Länder barrier-reduction advocacy and association-litigation abolition separated; BauO/LVergabe changes in the source are inherited/current-policy context rather than new child outcomes |"
+    },
+    {
+      "classification": "OVERMERGED+DUPLICATE",
+      "legacy_unit": "0211",
+      "source_bound_review_line": "| `0211` | `OVERMERGED` | task review/reform, reduction of legal/technical oversight/reporting, and removal of duplicate responsibilities/municipal autonomy separated |"
+    },
+    {
+      "classification": "CONTINUATION+SAME",
+      "legacy_unit": "0212",
+      "source_bound_review_line": "| `0212` | `SAME` | centralisation of procedures for delegated-sphere tasks fully represented; it is a distinct continuation after basis-service passage |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0213",
+      "source_bound_review_line": "| `0213` | `OVERMERGED` | end-to-end digital accessibility, assistive technologies and digital participation are distinct mechanisms; premise `many procedures exclusively digital` is design/context and must be coherently reconciled with the p51 analogue fallback |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0214",
+      "source_bound_review_line": "| `0214` | `OVERMERGED` | digital-twin decision/simulation capability and digital-twin transparency/participation capability separated |"
+    },
+    {
+      "classification": "PARTIAL",
+      "legacy_unit": "0217",
+      "source_bound_review_line": "| `0217` | `PARTIAL_PARENT` | p56 `Gleicher Zugang zum Recht überall` summary bullet; detailed court-location/legal-services mechanisms follow on pp57–58 and will carry effect units |"
+    }
+  ],
+  "primary_source_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf",
+  "programme_key": "ltw-2026-st-cdu",
+  "review_snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p54-p56-review.md",
+  "review_snapshot_sha256": "6b0a0f45057b626e665a1b94014dc4a96986540e5cda7aa560e1c04c5ee38a4d",
+  "schema_version": "1.1",
+  "segment_checks": {
+    "checkpoint_terminal_count": 19,
+    "dns_mapping_synthesized": false,
+    "historical_ids_mutated": false,
+    "primary_source_parity": "PASS_SEGMENT",
+    "public_count_mutated": false,
+    "recommendation_synthesized": false,
+    "terminal_source_objects_parsed": 19,
+    "unresolved_source_gaps": 0
+  },
+  "shard_version": "2026-08-22-p54-p56-v1",
+  "terminal_source_objects": [
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0209-CENTRAL-ADMIN-MODERNISATION-GOVERNANCE",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0209-END-TO-END-DIGITAL-PERMIT-PROCUREMENT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0209-APPROVAL-FICTION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0209-RISK-BASED-SAMPLE-CONTROLS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0209-AI-ADMIN-PRECHECK",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0209-ADMIN-LAW-DIGITAL-COMMUNICATION-ADAPTATION",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0210-PROCESS-TIME-LIMITS-LEGAL-REVIEW",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0210-BUND-LAENDER-PERMIT-BARRIER-REDUCTION-ADVOCACY",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0210-ABOLISH-ASSOCIATION-LITIGATION-ADVOCACY",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0211-TASK-REVIEW-ADMIN-REFORM",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0211-REDUCE-LEGAL-TECHNICAL-OVERSIGHT-REPORTING",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0211-REMOVE-DUPLICATE-RESPONSIBILITIES-MUNICIPAL-AUTONOMY",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-P54-P55-MUNICIPAL-BASE-SERVICES-INTERMUNICIPAL-PLATFORMS",
+      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-P55-REPORTING-MORATORIUM-SUNSET-JUSTIFICATION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0213-END-TO-END-DIGITAL-ACCESSIBILITY",
+      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0213-ASSISTIVE-TECHNOLOGY-SUPPORT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0213-DIGITAL-PARTICIPATION-FORMATS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0214-DIGITAL-TWIN-PLANNING-SIMULATION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0214-DIGITAL-TWIN-TRANSPARENCY-PARTICIPATION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    }
+  ],
+  "tuple_schema": [
+    "source_unit_id",
+    "terminal_fach_status",
+    "impact_direction",
+    "evidence_level"
+  ]
+}

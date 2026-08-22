@@ -1,15 +1,289 @@
 {
-  "schema_version":"1.0","shard_version":"2026-08-21-p84-p86-v1","programme_key":"ltw-2026-st-cdu",
-  "primary_source_url":"https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf","primary_pdf_pages":[84,85,86],
-  "historical_ids_immutable":true,"fach_review_issue":234,"fach_review_comment_id":5375552086,
-  "authoritative_source_unit_count":null,"authoritative_effect_mechanism_count":null,"denominator_status":"NOT_FROZEN_PENDING_FULL_PRIMARY_SOURCE_PARITY",
-  "primary_source_diff":[
-    ["0319","OVERMERGED","REUSE_EXISTING_VERSIONED_3_CHILD_SPLIT"],["0320","SAME_PARTIAL_PARENT","KEEP_ID_EFFECT_NETWORK_VISIBILITY; OUTCOME_FRAME_CONTEXT"],["0321","TRUNCATED_PARTIAL_PARENT","RESTORE_FINAL_TEXT; KEEP_STRATEGY_PARENT"],["0322","PARTIAL_PARENT","KEEP_STREET_ANHALT_CONTINUATION_CHILD"],["0323","OVERMERGED","REUSE_EXISTING_VERSIONED_4_CHILD_SPLIT"],["0324","SAME","KEEP_ID"],["0325","OVERMERGED","VERSIONED_2_CHILD_SPLIT"],["0326","SAME","KEEP_ID"],["0327","SAME","KEEP_ID"],["0328","SAME","KEEP_ID"],["0329","SAME","KEEP_ID"],["0330","CONTEXT_ONLY","OUTCOME_CLAIM_OF_0327_0329"],["0331","OVERMERGED","VERSIONED_2_CHILD_SPLIT"],[null,"ABSENT","P85_ACCOMMODATION_LEISURE_INVESTMENT"],[null,"ABSENT","P86_OFFER_NETWORKING"],["0332","CONTEXT_ONLY","GENERIC_UNSPECIFIED_SUPPORT"],["0333","OVERMERGED","VERSIONED_4_CHILD_SPLIT"]
+  "authoritative_effect_mechanism_count": null,
+  "authoritative_source_unit_count": null,
+  "completion_guard": {
+    "st_cdu_primary_source_parity": "NOT_YET_FULL_PROGRAMME",
+    "st_cdu_terminal_complete": false
+  },
+  "denominator_status": "NOT_FROZEN_PENDING_FULL_PRIMARY_SOURCE_PARITY",
+  "fach_review_comment_id": 5375552086,
+  "fach_review_issue": 234,
+  "historical_ids_immutable": true,
+  "primary_pdf_pages": [
+    84,
+    85,
+    86
   ],
-  "terminal_source_objects":[
-    ["ST-CDU-PRIMARY-SPLIT-0319-TREND-DIGITAL","REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON","OPEN","NOT_ASSESSABLE"],["ST-CDU-PRIMARY-SPLIT-0319-NATURE-EXPERIENCE","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","LOW"],["ST-CDU-PRIMARY-SPLIT-0319-MUNICIPAL-PRIORITY","REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON","OPEN","NOT_ASSESSABLE"],["ltw-2026-st-cdu-0320-staerkung-der-unesco-welterbestaetten-und-ausbau-des-kultu","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","MEDIUM"],["ltw-2026-st-cdu-0321-die-tourismusstrategie-des-landes-sachsen-anhalt-fortschre","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","LOW"],["ltw-2026-st-cdu-0322-wir-werden-mit-einer-strasse-anhalt-die-landesidentitaet-s","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","LOW"],["ST-CDU-PRIMARY-SPLIT-0323-ACTIVE-PT-ACCESS","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","MEDIUM"],["ST-CDU-PRIMARY-SPLIT-0323-DIGITAL-VISITOR-STEERING","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","LOW"],["ST-CDU-PRIMARY-SPLIT-0323-ENV-EDUCATION-NATURE","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","LOW"],["ST-CDU-PRIMARY-SPLIT-0323-RESOURCE-EFFICIENT-MODEL-PROJECTS","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","LOW"],["ltw-2026-st-cdu-0324-regionen-und-destinationen-durch-gezielte-strukturfoerderu","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","LOW"],["ST-CDU-PRIMARY-SPLIT-0325-IMG-LTV-CAPACITY","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","LOW"],["ST-CDU-PRIMARY-SPLIT-0325-DESTINATION-COOPERATION","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","LOW"],["ltw-2026-st-cdu-0326-auch-im-bereich-tourismus-wollen-wir-foerderprogramme-und","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","LOW"],["ltw-2026-st-cdu-0327-wir-werden-die-marke-des-reiselandes-sachsenanhalt-im-in-u","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","LOW"],["ltw-2026-st-cdu-0328-dabei-setzen-wir-auf-eine-klare-fokussierung-statt-auf-bre","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","LOW"],["ltw-2026-st-cdu-0329-ergaenzend-werden-wir-gezielt-reiseanlaesse-wie-jubilaeen","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","LOW"],["ltw-2026-st-cdu-0330-so-schaffen-wir-ein-klares-touristisches-profil-mit-hoher","SOURCE_UNIT_RECLASSIFIED_VERSIONED","OPEN","NOT_ASSESSABLE"],["ST-CDU-PRIMARY-SPLIT-0331-BOOKING-INFORMATION","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","LOW"],["ST-CDU-PRIMARY-SPLIT-0331-DIGITAL-TOURISM-APPLICATION-SUPPORT","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","LOW"],["ST-CDU-PRIMARY-GAP-P85-ACCOMMODATION-LEISURE-INVESTMENT","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","LOW"],["ST-CDU-PRIMARY-GAP-P86-OFFER-NETWORKING","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","LOW"],["ltw-2026-st-cdu-0332-wir-werden-uns-auch-zukuenftig-fuer-weitere-angebote-engag","REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON","OPEN","NOT_ASSESSABLE"],["ST-CDU-PRIMARY-SPLIT-0333-ELBE-CYCLE-USE","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","LOW"],["ST-CDU-PRIMARY-SPLIT-0333-INTERREGIONAL-COOPERATION","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","LOW"],["ST-CDU-PRIMARY-SPLIT-0333-GASTRONOMY-SUPPORT","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","LOW"],["ST-CDU-PRIMARY-SPLIT-0333-HIGHLIGHT-MARKETING","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","LOW"]
+  "primary_source_diff": [
+    [
+      "0319",
+      "OVERMERGED",
+      "REUSE_EXISTING_VERSIONED_3_CHILD_SPLIT"
+    ],
+    [
+      "0320",
+      "SAME_PARTIAL_PARENT",
+      "KEEP_ID_EFFECT_NETWORK_VISIBILITY; OUTCOME_FRAME_CONTEXT"
+    ],
+    [
+      "0321",
+      "TRUNCATED_PARTIAL_PARENT",
+      "RESTORE_FINAL_TEXT; KEEP_STRATEGY_PARENT"
+    ],
+    [
+      "0322",
+      "PARTIAL_PARENT",
+      "KEEP_STREET_ANHALT_CONTINUATION_CHILD"
+    ],
+    [
+      "0323",
+      "OVERMERGED",
+      "REUSE_EXISTING_VERSIONED_4_CHILD_SPLIT"
+    ],
+    [
+      "0324",
+      "SAME",
+      "KEEP_ID"
+    ],
+    [
+      "0325",
+      "OVERMERGED",
+      "VERSIONED_2_CHILD_SPLIT"
+    ],
+    [
+      "0326",
+      "SAME",
+      "KEEP_ID"
+    ],
+    [
+      "0327",
+      "SAME",
+      "KEEP_ID"
+    ],
+    [
+      "0328",
+      "SAME",
+      "KEEP_ID"
+    ],
+    [
+      "0329",
+      "SAME",
+      "KEEP_ID"
+    ],
+    [
+      "0330",
+      "CONTEXT_ONLY",
+      "OUTCOME_CLAIM_OF_0327_0329"
+    ],
+    [
+      "0331",
+      "OVERMERGED",
+      "VERSIONED_2_CHILD_SPLIT"
+    ],
+    [
+      null,
+      "ABSENT",
+      "P85_ACCOMMODATION_LEISURE_INVESTMENT"
+    ],
+    [
+      null,
+      "ABSENT",
+      "P86_OFFER_NETWORKING"
+    ],
+    [
+      "0332",
+      "CONTEXT_ONLY",
+      "GENERIC_UNSPECIFIED_SUPPORT"
+    ],
+    [
+      "0333",
+      "OVERMERGED",
+      "VERSIONED_4_CHILD_SPLIT"
+    ]
   ],
-  "tuple_schema":["source_unit_id","terminal_fach_status","impact_direction","evidence_level"],
-  "segment_checks":{"primary_source_parity":"PASS_SEGMENT","terminal_source_objects":27,"unresolved_source_gaps":0,"historical_ids_mutated":false},
-  "completion_guard":{"st_cdu_primary_source_parity":"NOT_YET_FULL_PROGRAMME","st_cdu_terminal_complete":false}
+  "primary_source_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf",
+  "programme_key": "ltw-2026-st-cdu",
+  "schema_normalization": {
+    "legacy_parent_reference_resolution": "IMMUTABLE_RELEASE1_COMMITMENT_ID_WHERE_NUMERIC_PARENT_PRESENT",
+    "mode": "MECHANICAL_ALIAS_ONLY_NO_NEW_FACH_SEMANTICS",
+    "terminal_alias": "terminal_source_objects"
+  },
+  "schema_version": "1.0",
+  "segment_checks": {
+    "historical_ids_mutated": false,
+    "primary_source_parity": "PASS_SEGMENT",
+    "terminal_source_objects": 27,
+    "unresolved_source_gaps": 0
+  },
+  "shard_version": "2026-08-21-p84-p86-v1",
+  "terminal_source_objects": [
+    [
+      "ST-CDU-PRIMARY-SPLIT-0319-TREND-DIGITAL",
+      "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "OPEN",
+      "NOT_ASSESSABLE"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0319-NATURE-EXPERIENCE",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0319-MUNICIPAL-PRIORITY",
+      "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "OPEN",
+      "NOT_ASSESSABLE"
+    ],
+    [
+      "ltw-2026-st-cdu-0320-staerkung-der-unesco-welterbestaetten-und-ausbau-des-kultu",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "MEDIUM"
+    ],
+    [
+      "ltw-2026-st-cdu-0321-die-tourismusstrategie-des-landes-sachsen-anhalt-fortschre",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "LOW"
+    ],
+    [
+      "ltw-2026-st-cdu-0322-wir-werden-mit-einer-strasse-anhalt-die-landesidentitaet-s",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0323-ACTIVE-PT-ACCESS",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "MEDIUM"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0323-DIGITAL-VISITOR-STEERING",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0323-ENV-EDUCATION-NATURE",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0323-RESOURCE-EFFICIENT-MODEL-PROJECTS",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "LOW"
+    ],
+    [
+      "ltw-2026-st-cdu-0324-regionen-und-destinationen-durch-gezielte-strukturfoerderu",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0325-IMG-LTV-CAPACITY",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0325-DESTINATION-COOPERATION",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "LOW"
+    ],
+    [
+      "ltw-2026-st-cdu-0326-auch-im-bereich-tourismus-wollen-wir-foerderprogramme-und",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "LOW"
+    ],
+    [
+      "ltw-2026-st-cdu-0327-wir-werden-die-marke-des-reiselandes-sachsenanhalt-im-in-u",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "LOW"
+    ],
+    [
+      "ltw-2026-st-cdu-0328-dabei-setzen-wir-auf-eine-klare-fokussierung-statt-auf-bre",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "LOW"
+    ],
+    [
+      "ltw-2026-st-cdu-0329-ergaenzend-werden-wir-gezielt-reiseanlaesse-wie-jubilaeen",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "LOW"
+    ],
+    [
+      "ltw-2026-st-cdu-0330-so-schaffen-wir-ein-klares-touristisches-profil-mit-hoher",
+      "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "OPEN",
+      "NOT_ASSESSABLE"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0331-BOOKING-INFORMATION",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0331-DIGITAL-TOURISM-APPLICATION-SUPPORT",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-GAP-P85-ACCOMMODATION-LEISURE-INVESTMENT",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-GAP-P86-OFFER-NETWORKING",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "LOW"
+    ],
+    [
+      "ltw-2026-st-cdu-0332-wir-werden-uns-auch-zukuenftig-fuer-weitere-angebote-engag",
+      "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "OPEN",
+      "NOT_ASSESSABLE"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0333-ELBE-CYCLE-USE",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0333-INTERREGIONAL-COOPERATION",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0333-GASTRONOMY-SUPPORT",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0333-HIGHLIGHT-MARKETING",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "LOW"
+    ]
+  ],
+  "tuple_schema": [
+    "source_unit_id",
+    "terminal_fach_status",
+    "impact_direction",
+    "evidence_level"
+  ]
 }

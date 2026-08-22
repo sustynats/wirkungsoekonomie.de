@@ -1,0 +1,485 @@
+{
+  "applicable_241_layer_set_check": {
+    "markers_explicit_in_source_review": [
+      "COMMUNICATION_MEDIA_IMPACT",
+      "COVERAGE_SCOPE",
+      "DELIVERY_FEASIBILITY",
+      "DNS_REFERENCE",
+      "FALSIFICATION_TRIGGERS",
+      "GOAL_REVIEW",
+      "INTERNATIONAL_LEAKAGE",
+      "LIFECYCLE_TRACEABILITY",
+      "MATERIAL_OMISSIONS",
+      "POLICY_COHERENCE",
+      "PROBLEM_REVIEW",
+      "RECOMMENDATION",
+      "RESOURCE_FINANCING",
+      "REVERSIBILITY_LOCKIN",
+      "ROBUSTNESS_STRESS_TEST",
+      "SPATIAL_DISTRIBUTION",
+      "STATE_GFA_ENAP_BENCHMARK",
+      "VERSION_DELTA"
+    ],
+    "set_check_status": "PASS_SOURCE_BOUND_MARKERS_CAPTURED",
+    "source_review_has_241_system_section": true
+  },
+  "authoritative_effect_mechanism_count": null,
+  "authoritative_source_unit_count": null,
+  "completion_guard": {
+    "st_cdu_final_versioned_manifest": "PENDING_GLOBAL_LEAF_RECONCILIATION",
+    "st_cdu_primary_source_parity": "PASS_FULL_PROGRAMME",
+    "st_cdu_terminal_complete": false
+  },
+  "denominator_status": "NOT_FROZEN_PENDING_GLOBAL_LEAF_RECONCILIATION",
+  "fach_review_comment_id": 5373797040,
+  "fach_review_issue": 234,
+  "historical_ids_immutable": true,
+  "materialization_mode": "MECHANICAL_FROM_SOURCE_BOUND_ISSUE_234_REVIEW_NO_NEW_FACH_SEMANTICS",
+  "party": "CDU",
+  "primary_pdf_pages": [
+    25,
+    28
+  ],
+  "primary_source_diff": [
+    {
+      "classification": "PARTIAL",
+      "legacy_unit": "0084",
+      "source_bound_review_line": "| `0084` wohnortnah/digital/vernetzt + attraktive Arbeitsbedingungen | `PARTIAL_PARENT` | Summary-Ziel; konkrete Hebel folgen in `0088+`, keine Doppelzählung |"
+    },
+    {
+      "classification": "PARTIAL",
+      "legacy_unit": "0085",
+      "source_bound_review_line": "| `0085` Krankenhausprofile/ambulante Kooperation | `PARTIAL_PARENT` | Summary-Ziel; konkrete Mechanismen in `0090/0091` |"
+    },
+    {
+      "classification": "PARTIAL",
+      "legacy_unit": "0086",
+      "source_bound_review_line": "| `0086` bezahlbare Pflege/Angehörigenentlastung | `PARTIAL_PARENT` | Summary-Ziel; konkrete Mechanismen in `0095/0096` |"
+    },
+    {
+      "classification": "TRUNCATED+PARTIAL",
+      "legacy_unit": "0087",
+      "source_bound_review_line": "| `0087` Prävention … „Wir werden“ | `TRUNCATED` + `PARTIAL_PARENT` | Goal-Parent erhalten; konkreter finaler Bullet „Prävention als Lebensprinzip“ fehlt als eigener Release-1-Mechanismus |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0088",
+      "source_bound_review_line": "| `0088` Versorgung/Fachkräfte/Studienplätze/Standort/Apotheke | `OVERMERGED` | in getrennte Effect-Mechanisms splitten |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0089",
+      "source_bound_review_line": "| `0089` Niederlassung | `OVERMERGED` | Förderung, Administrative Relief, Mentoring/Qualifizierung, Kooperations-/Teilzeitmodelle trennen |"
+    },
+    {
+      "classification": "OVERMERGED+TRUNCATED",
+      "legacy_unit": "0090",
+      "source_bound_review_line": "| `0090` Krankenhausknoten | `TRUNCATED` + `OVERMERGED` | finalen Trägervielfaltssatz restaurieren; Profile/Spezialisierung, Grund-/Notfallnähe, sektorale Verzahnung, Trägerpluralität trennen |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0091",
+      "source_bound_review_line": "| `0091` Sektorengrenzen | `OVERMERGED` | Zentren, Planung, Länderkooperation, Leistungsbündelung, Primärversorgung getrennt |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0092",
+      "source_bound_review_line": "| `0092` Versorgungszentren | `OVERMERGED` | MVZ/Campus, Trägermodelle, Landarztquote, regionales Zulassungskriterium getrennt |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0093",
+      "source_bound_review_line": "| `0093` Rettung/Notfall | `OVERMERGED` | Masterplan, Telenotarzt, Gemeindenotfallsanitäter, Leitstellen, digitale Systeme, Drohnen, Mobilität, Erste Hilfe getrennt |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0094",
+      "source_bound_review_line": "| `0094` Pflege neu aufstellen | `OVERMERGED` | Versorgungsmix/Wohnformen und erweiterte Pflegekompetenzen getrennt |"
+    },
+    {
+      "classification": "OVERMERGED+TRUNCATED",
+      "legacy_unit": "0095",
+      "source_bound_review_line": "| `0095` Angehörige/Pflegeversicherung | `TRUNCATED` + `OVERMERGED` | Landes-/Versorgungsentlastung und Bundes-Pflegeversicherungsreform trennen |"
+    },
+    {
+      "classification": "PARTIAL",
+      "legacy_unit": "0096",
+      "source_bound_review_line": "| `0086` bezahlbare Pflege/Angehörigenentlastung | `PARTIAL_PARENT` | Summary-Ziel; konkrete Mechanismen in `0095/0096` |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0097",
+      "source_bound_review_line": "| `0097` Medi-Bus | `OVERMERGED` | Hausarzt-Rollpraxis und spätere fachärztliche Pilot-Ausweitung trennen |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0098",
+      "source_bound_review_line": "| `0098` Digitalisierung | `OVERMERGED` | Telemedizin, digitale Pflegeanwendungen, Dokumentation, Infrastruktur/Data-Governance trennen |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0099",
+      "source_bound_review_line": "| `0099` Forschung/Innovation/Produktion | `OVERMERGED` | Uniklinik-Netzwerk, digitale Modellregion, Arznei-/Medizinproduktproduktion trennen |"
+    }
+  ],
+  "primary_source_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf",
+  "programme_key": "ltw-2026-st-cdu",
+  "review_snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p25-p28-review.md",
+  "review_snapshot_sha256": "79bd5f1ced93fb950c1c1e346d5c9af0d43ba484384c5ea243980328cab2851d",
+  "schema_version": "1.1",
+  "segment_checks": {
+    "checkpoint_terminal_count": 45,
+    "dns_mapping_synthesized": false,
+    "historical_ids_mutated": false,
+    "primary_source_parity": "PASS_SEGMENT",
+    "public_count_mutated": false,
+    "recommendation_synthesized": false,
+    "terminal_source_objects_parsed": 56,
+    "unresolved_source_gaps": 0
+  },
+  "shard_version": "2026-08-22-p25-p28-v1",
+  "terminal_source_objects": [
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ltw-2026-st-cdu-0088-versorgung-sichern-ueberall-im-land-wir-sichern-eine-flaec",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0088-STUDY-PLACES",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0088-RURAL-WORK-ATTRACTIVENESS",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0088-LOCAL-PHARMACY-FEDERAL",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ltw-2026-st-cdu-0089-niederlassung-neu-denken-wir-machen-den-schritt-in-die-sel",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0089-PRACTICE-GRANTS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0089-ADMIN-RELIEF",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0089-NETWORK-MENTORING-BIZ",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0089-COOP-PARTTIME",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ltw-2026-st-cdu-0090-krankenhaeuser-zu-starken-knotenpunkten-entwickeln-bis-203",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0090-REGIONAL-PROFILES",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0090-BASIC-EMERGENCY-NEARBY",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0090-AMBULATORY-STATIONARY",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0090-PROVIDER-PLURALITY",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ltw-2026-st-cdu-0091-sektorengrenzen-ueberwinden-versorgung-vernetzen-wir-beend",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0091-INTEGRATED-CENTERS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0091-CROSS-SECTOR-PLANNING",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0091-CROSS-BORDER-COOP",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0091-COMPLEX-SERVICE-BUNDLING",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0091-PRIMARY-CARE-MODEL",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ltw-2026-st-cdu-0092-moderne-versorgungszentren-ermoeglichen-medizinische-verso",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0092-MVZ-HEALTH-CAMPUS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0092-PROVIDER-MODELS",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0092-LANDARZTQUOTE-REVIEW",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0092-REGIONAL-ADMISSION-PREFERENCE",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ltw-2026-st-cdu-0093-rettung-und-notfallversorgung-der-zukunft-wir-schaffen-ein",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0093-RESCUE-MASTERPLAN",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0093-TELENOTARZT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0093-GEMEINDENOTFALLSANITAETER",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0093-DISPATCH-TECH",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0093-DIGITAL-SYSTEMS",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0093-RESCUE-DRONES",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0093-NEW-MOBILITY-PILOTS",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0093-SCHOOL-FIRST-AID-CPR",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-P27-PREVENTION-MULTISETTING",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-P27-SUICIDE-MENTAL-HEALTH-PRIORITY",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ltw-2026-st-cdu-0094-pflege-neu-aufstellen-pflege-im-jahr-2030-ist-vielfaeltig",
+      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0094-CARE-MIX",
+      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0094-NURSE-SCOPE",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ltw-2026-st-cdu-0095-angehoerige-entlasten-und-pflege-bezahlbar-halten-pflegend",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0095-CAREGIVER-RELIEF",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0095-FEDERAL-CARE-REFORM",
+      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ltw-2026-st-cdu-0096-ferner-setzen-wir-uns-auf-bundesebene-fuer-eine-vereinfach",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-P28-CARE-41-COOP",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ltw-2026-st-cdu-0097-medizinische-versorgung-im-laendlichen-raum-durch-medi-bus",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0097-MEDIBUS-GP",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0097-MEDIBUS-SPECIALIST-PILOT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ltw-2026-st-cdu-0098-digitalisierung-als-ermoeglicher-nutzen-telemedizin-digita",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0098-TELEMEDICINE",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0098-DIGITAL-CARE-APPS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0098-NETWORKED-DOCUMENTATION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0098-DIGITAL-INFRA-DATA-GOV",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ltw-2026-st-cdu-0099-forschung-innovation-und-produktion-staerken-unsere-univer",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0099-UNIVERSITY-CLINIC-INNOVATION-NETWORK",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0099-DIGITAL-MEDICINE-MODEL-REGION",
+      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0099-MEDICAL-PRODUCTION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    }
+  ],
+  "tuple_schema": [
+    "source_unit_id",
+    "terminal_fach_status",
+    "impact_direction",
+    "evidence_level"
+  ]
+}

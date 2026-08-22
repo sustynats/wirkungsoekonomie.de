@@ -1,61 +1,254 @@
 {
-  "schema_version":"1.0",
-  "shard_version":"2026-08-21-p74-p76-v1",
-  "programme_key":"ltw-2026-st-cdu",
-  "party":"CDU",
-  "primary_source_url":"https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf",
-  "primary_pdf_pages":[74,75,76],
-  "canonical_manifest_target":"woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-source-unit-manifest-v2.json",
-  "legacy_register":"woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-cdu-zusagen.md",
-  "legacy_source_hash":"15272934630ab67d50bea0da18964d83fb06b9b9aa32686e56e824913acb8fce",
-  "historical_ids_immutable":true,
-  "fach_review_issue":234,
-  "fach_review_comment_id":5375504986,
-  "authoritative_source_unit_count":null,
-  "authoritative_effect_mechanism_count":null,
-  "denominator_status":"NOT_FROZEN_PENDING_FULL_PRIMARY_SOURCE_PARITY",
-  "segment_status":"SEMANTIC_RECONCILIATION_COMPLETE_FOR_P74_P76",
-  "primary_source_diff":[
-    {"legacy_unit":"0281","classification":"CONTEXT_ONLY","action":"KEEP_GOAL_PARENT_NO_INDEPENDENT_EFFECT_COUNT"},
-    {"legacy_unit":"0282","classification":"SAME","action":"KEEP_ID"},
-    {"legacy_unit":"0283","classification":"TRUNCATED","action":"KEEP_PARENT_ID; RESTORE_FINAL_TEXT; VERSIONED_2_CHILD_SPLIT"},
-    {"legacy_unit":"0284","classification":"OVERMERGED","action":"KEEP_PARENT_ID; VERSIONED_3_CHILD_SPLIT"},
-    {"legacy_unit":"0285","classification":"OVERMERGED","action":"KEEP_PARENT_ID; VERSIONED_2_CHILD_SPLIT"},
-    {"legacy_unit":null,"classification":"ABSENT","source_locator":"P75_DIGITAL_AI_INTEGRATION_HIGHER_ED","action":"ADD_STABLE_SOURCE_UNIT"},
-    {"legacy_unit":"0286","classification":"OVERMERGED","action":"KEEP_PARENT_ID; VERSIONED_3_CHILD_SPLIT"},
-    {"legacy_unit":"0287","classification":"OVERMERGED","action":"KEEP_PARENT_ID; VERSIONED_2_CHILD_SPLIT"},
-    {"legacy_unit":null,"classification":"ABSENT","source_locator":"P75_EDUCATION_PERMEABILITY","action":"ADD_STABLE_SOURCE_UNIT"},
-    {"legacy_unit":null,"classification":"ABSENT","source_locator":"P75_MINT_SCHOOL_UNIVERSITY_COOPERATION","action":"ADD_STABLE_SOURCE_UNIT"},
-    {"legacy_unit":"0288","classification":"SAME","action":"KEEP_ID; TERMINAL_REVIEW_NOT_ASSESSABLE_NO_SPECIFIC_INSTRUMENT"},
-    {"legacy_unit":"0289","classification":"OVERMERGED","action":"KEEP_PARENT_ID; VERSIONED_6_CHILD_SPLIT"}
+  "authoritative_effect_mechanism_count": null,
+  "authoritative_source_unit_count": null,
+  "canonical_manifest_target": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-source-unit-manifest-v2.json",
+  "completion_guard": {
+    "next_segment": "final official PDF p77 onward / Finanzpolitik mit Verantwortung",
+    "st_cdu_final_versioned_manifest": "PENDING_DOCUMENT_WIDE_RECONCILIATION",
+    "st_cdu_primary_source_parity": "NOT_YET_FULL_PROGRAMME",
+    "st_cdu_terminal_complete": false
+  },
+  "denominator_status": "NOT_FROZEN_PENDING_FULL_PRIMARY_SOURCE_PARITY",
+  "fach_payload_location": "https://github.com/sustynats/wirkungsoekonomie.de/issues/234#issuecomment-5375504986",
+  "fach_review_comment_id": 5375504986,
+  "fach_review_issue": 234,
+  "historical_ids_immutable": true,
+  "legacy_register": "woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-cdu-zusagen.md",
+  "legacy_source_hash": "15272934630ab67d50bea0da18964d83fb06b9b9aa32686e56e824913acb8fce",
+  "party": "CDU",
+  "primary_pdf_pages": [
+    74,
+    75,
+    76
   ],
-  "terminal_source_objects":[
-    ["ltw-2026-st-cdu-0282-forschungsfreiheit-mit-gezielter-foerderung-wissenschaftli","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","MEDIUM"],
-    ["ST-CDU-PRIMARY-SPLIT-0283-INNOVATION-CHAIN-COHERENCE","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","LOW"],
-    ["ST-CDU-PRIMARY-SPLIT-0283-LABOUR-MARKET-ORIENTED-HIGHER-ED","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","LOW"],
-    ["ST-CDU-PRIMARY-SPLIT-0284-CLUSTER-INNOVATION-CENTRES","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","MEDIUM"],
-    ["ST-CDU-PRIMARY-SPLIT-0284-COORDINATED-EXCELLENCE-FUNDING","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","LOW"],
-    ["ST-CDU-PRIMARY-SPLIT-0284-STARTUPS-MAKERSPACES","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","LOW"],
-    ["ST-CDU-PRIMARY-SPLIT-0285-INTERNATIONAL-RESEARCH-CRITERIA","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","MEDIUM"],
-    ["ST-CDU-PRIMARY-SPLIT-0285-TARGET-AGREEMENTS-EVALUATION","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","MEDIUM"],
-    ["ST-CDU-PRIMARY-GAP-P75-DIGITAL-AI-INTEGRATION-HIGHER-ED","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","MEDIUM"],
-    ["ST-CDU-PRIMARY-SPLIT-0286-INTERNATIONAL-STUDY-PROGRAMMES","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","MEDIUM"],
-    ["ST-CDU-PRIMARY-SPLIT-0286-STUDENT-RETENTION-INTEGRATION","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","MEDIUM"],
-    ["ST-CDU-PRIMARY-SPLIT-0286-GRADUATE-LABOUR-TRANSITION","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","MEDIUM"],
-    ["ST-CDU-PRIMARY-SPLIT-0287-RELIABLE-PERFORMANCE-FUNDING","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","MEDIUM"],
-    ["ST-CDU-PRIMARY-SPLIT-0287-NON-EU-TUITION-FEES","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","MEDIUM"],
-    ["ST-CDU-PRIMARY-GAP-P75-EDUCATION-PERMEABILITY","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","MEDIUM"],
-    ["ST-CDU-PRIMARY-GAP-P75-MINT-SCHOOL-UNIVERSITY-COOPERATION","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","MEDIUM"],
-    ["ltw-2026-st-cdu-0288-ein-innovationsfreundliches-politikklima-beibehalten-und-a","REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON","OPEN","NOT_ASSESSABLE"],
-    ["ST-CDU-PRIMARY-SPLIT-0289-FUNDING-BUREAUCRACY-DECISIONS","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","MEDIUM"],
-    ["ST-CDU-PRIMARY-SPLIT-0289-FLEXIBLE-PROJECT-FUNDS","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","MEDIUM"],
-    ["ST-CDU-PRIMARY-SPLIT-0289-RESEARCH-DATA-ACCESS","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","MEDIUM"],
-    ["ST-CDU-PRIMARY-SPLIT-0289-STANDARD-SPINOFF-CONTRACTS-24H","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","LOW"],
-    ["ST-CDU-PRIMARY-SPLIT-0289-NONPROFIT-RESEARCH-FLEX-RULES","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","LOW"],
-    ["ST-CDU-PRIMARY-SPLIT-0289-SCIENCE-FREEDOM-LAW-SUPPORT","REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON","OPEN","NOT_ASSESSABLE"]
+  "primary_source_diff": [
+    {
+      "action": "KEEP_GOAL_PARENT_NO_INDEPENDENT_EFFECT_COUNT",
+      "classification": "CONTEXT_ONLY",
+      "legacy_unit": "0281"
+    },
+    {
+      "action": "KEEP_ID",
+      "classification": "SAME",
+      "legacy_unit": "0282"
+    },
+    {
+      "action": "KEEP_PARENT_ID; RESTORE_FINAL_TEXT; VERSIONED_2_CHILD_SPLIT",
+      "classification": "TRUNCATED",
+      "legacy_unit": "0283"
+    },
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_3_CHILD_SPLIT",
+      "classification": "OVERMERGED",
+      "legacy_unit": "0284"
+    },
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_2_CHILD_SPLIT",
+      "classification": "OVERMERGED",
+      "legacy_unit": "0285"
+    },
+    {
+      "action": "ADD_STABLE_SOURCE_UNIT",
+      "classification": "ABSENT",
+      "legacy_unit": null,
+      "source_locator": "P75_DIGITAL_AI_INTEGRATION_HIGHER_ED"
+    },
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_3_CHILD_SPLIT",
+      "classification": "OVERMERGED",
+      "legacy_unit": "0286"
+    },
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_2_CHILD_SPLIT",
+      "classification": "OVERMERGED",
+      "legacy_unit": "0287"
+    },
+    {
+      "action": "ADD_STABLE_SOURCE_UNIT",
+      "classification": "ABSENT",
+      "legacy_unit": null,
+      "source_locator": "P75_EDUCATION_PERMEABILITY"
+    },
+    {
+      "action": "ADD_STABLE_SOURCE_UNIT",
+      "classification": "ABSENT",
+      "legacy_unit": null,
+      "source_locator": "P75_MINT_SCHOOL_UNIVERSITY_COOPERATION"
+    },
+    {
+      "action": "KEEP_ID; TERMINAL_REVIEW_NOT_ASSESSABLE_NO_SPECIFIC_INSTRUMENT",
+      "classification": "SAME",
+      "legacy_unit": "0288"
+    },
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_6_CHILD_SPLIT",
+      "classification": "OVERMERGED",
+      "legacy_unit": "0289"
+    }
   ],
-  "terminal_source_object_tuple_schema":["source_unit_id","terminal_fach_status","impact_direction","evidence_level"],
-  "fach_payload_location":"https://github.com/sustynats/wirkungsoekonomie.de/issues/234#issuecomment-5375504986",
-  "segment_checks":{"primary_source_parity":"PASS_SEGMENT","terminal_source_objects":23,"unresolved_source_gaps":0,"historical_ids_mutated":false,"recommendation_synthesized":false,"dns_mapping_synthesized":false,"public_count_mutated":false},
-  "completion_guard":{"st_cdu_primary_source_parity":"NOT_YET_FULL_PROGRAMME","st_cdu_final_versioned_manifest":"PENDING_DOCUMENT_WIDE_RECONCILIATION","st_cdu_terminal_complete":false,"next_segment":"final official PDF p77 onward / Finanzpolitik mit Verantwortung"}
+  "primary_source_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf",
+  "programme_key": "ltw-2026-st-cdu",
+  "schema_normalization": {
+    "legacy_parent_reference_resolution": "IMMUTABLE_RELEASE1_COMMITMENT_ID_WHERE_NUMERIC_PARENT_PRESENT",
+    "mode": "MECHANICAL_ALIAS_ONLY_NO_NEW_FACH_SEMANTICS",
+    "terminal_alias": "terminal_source_objects"
+  },
+  "schema_version": "1.0",
+  "segment_checks": {
+    "dns_mapping_synthesized": false,
+    "historical_ids_mutated": false,
+    "primary_source_parity": "PASS_SEGMENT",
+    "public_count_mutated": false,
+    "recommendation_synthesized": false,
+    "terminal_source_objects": 23,
+    "unresolved_source_gaps": 0
+  },
+  "segment_status": "SEMANTIC_RECONCILIATION_COMPLETE_FOR_P74_P76",
+  "shard_version": "2026-08-21-p74-p76-v1",
+  "terminal_source_object_tuple_schema": [
+    "source_unit_id",
+    "terminal_fach_status",
+    "impact_direction",
+    "evidence_level"
+  ],
+  "terminal_source_objects": [
+    [
+      "ltw-2026-st-cdu-0282-forschungsfreiheit-mit-gezielter-foerderung-wissenschaftli",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "MEDIUM"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0283-INNOVATION-CHAIN-COHERENCE",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0283-LABOUR-MARKET-ORIENTED-HIGHER-ED",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0284-CLUSTER-INNOVATION-CENTRES",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "MEDIUM"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0284-COORDINATED-EXCELLENCE-FUNDING",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0284-STARTUPS-MAKERSPACES",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0285-INTERNATIONAL-RESEARCH-CRITERIA",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "MEDIUM"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0285-TARGET-AGREEMENTS-EVALUATION",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "MEDIUM"
+    ],
+    [
+      "ST-CDU-PRIMARY-GAP-P75-DIGITAL-AI-INTEGRATION-HIGHER-ED",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "MEDIUM"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0286-INTERNATIONAL-STUDY-PROGRAMMES",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "MEDIUM"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0286-STUDENT-RETENTION-INTEGRATION",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "MEDIUM"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0286-GRADUATE-LABOUR-TRANSITION",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "MEDIUM"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0287-RELIABLE-PERFORMANCE-FUNDING",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "MEDIUM"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0287-NON-EU-TUITION-FEES",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "MEDIUM"
+    ],
+    [
+      "ST-CDU-PRIMARY-GAP-P75-EDUCATION-PERMEABILITY",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "MEDIUM"
+    ],
+    [
+      "ST-CDU-PRIMARY-GAP-P75-MINT-SCHOOL-UNIVERSITY-COOPERATION",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "MEDIUM"
+    ],
+    [
+      "ltw-2026-st-cdu-0288-ein-innovationsfreundliches-politikklima-beibehalten-und-a",
+      "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "OPEN",
+      "NOT_ASSESSABLE"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0289-FUNDING-BUREAUCRACY-DECISIONS",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "MEDIUM"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0289-FLEXIBLE-PROJECT-FUNDS",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "MEDIUM"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0289-RESEARCH-DATA-ACCESS",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "MEDIUM"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0289-STANDARD-SPINOFF-CONTRACTS-24H",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0289-NONPROFIT-RESEARCH-FLEX-RULES",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0289-SCIENCE-FREEDOM-LAW-SUPPORT",
+      "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "OPEN",
+      "NOT_ASSESSABLE"
+    ]
+  ]
 }

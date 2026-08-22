@@ -1,0 +1,315 @@
+{
+  "applicable_241_layer_set_check": {
+    "markers_explicit_in_source_review": [
+      "COMMUNICATION_MEDIA_IMPACT",
+      "COVERAGE_SCOPE",
+      "DELIVERY_FEASIBILITY",
+      "DNS_REFERENCE",
+      "FALSIFICATION_TRIGGERS",
+      "GOAL_REVIEW",
+      "INTERNATIONAL_LEAKAGE",
+      "LIFECYCLE_TRACEABILITY",
+      "MATERIAL_OMISSIONS",
+      "POLICY_COHERENCE",
+      "PROBLEM_REVIEW",
+      "RECOMMENDATION",
+      "RESOURCE_FINANCING",
+      "REVERSIBILITY_LOCKIN",
+      "ROBUSTNESS_STRESS_TEST",
+      "SPATIAL_DISTRIBUTION",
+      "STATE_GFA_ENAP_BENCHMARK",
+      "VERSION_DELTA"
+    ],
+    "set_check_status": "PASS_SOURCE_BOUND_MARKERS_CAPTURED",
+    "source_review_has_241_system_section": true
+  },
+  "authoritative_effect_mechanism_count": null,
+  "authoritative_source_unit_count": null,
+  "completion_guard": {
+    "st_cdu_final_versioned_manifest": "PENDING_GLOBAL_LEAF_RECONCILIATION",
+    "st_cdu_primary_source_parity": "PASS_FULL_PROGRAMME",
+    "st_cdu_terminal_complete": false
+  },
+  "denominator_status": "NOT_FROZEN_PENDING_GLOBAL_LEAF_RECONCILIATION",
+  "fach_review_comment_id": 5374248114,
+  "fach_review_issue": 234,
+  "historical_ids_immutable": true,
+  "materialization_mode": "MECHANICAL_FROM_SOURCE_BOUND_ISSUE_234_REVIEW_NO_NEW_FACH_SEMANTICS",
+  "party": "CDU",
+  "primary_pdf_pages": [
+    33,
+    36
+  ],
+  "primary_source_diff": [
+    {
+      "classification": "SAME",
+      "legacy_unit": "0117",
+      "source_bound_review_line": "| `0117` | `SAME` | unspezifizierter Fusionssatz vollständig; bestehender terminaler `REVIEWED_NOT_ASSESSABLE`-Status bleibt; nicht mit 0118 verschmelzen |"
+    },
+    {
+      "classification": "SAME",
+      "legacy_unit": "0118",
+      "source_bound_review_line": "| `0118` | `SAME` | ARD/ZDF-Angebote/Hauptprogramme harmonisieren vollständig; bestehender terminaler A08-Status bleibt |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0119",
+      "source_bound_review_line": "| `0122` | `OVERMERGED` | Ausgabenkontrolle und Reform-Weiterentwicklung trennen; Beitragsstabilität/-senkung auf `0119` crosswalken statt doppelt zählen |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0121",
+      "source_bound_review_line": "| `0121` | `OVERMERGED` | Auftragsfokus, politisches „Achten“ auf Ausgewogenheit/Neutralität und unspezifizierte Innovations-/Vielfaltsförderung trennen |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0122",
+      "source_bound_review_line": "| `0122` | `OVERMERGED` | Ausgabenkontrolle und Reform-Weiterentwicklung trennen; Beitragsstabilität/-senkung auf `0119` crosswalken statt doppelt zählen |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0123",
+      "source_bound_review_line": "| `0123` | `OVERMERGED` | Transparenz/Effizienz, Leitungsvergütung und regionaler wirtschaftlicher Rückfluss getrennte Mechanismen |"
+    },
+    {
+      "classification": "TRUNCATED",
+      "legacy_unit": "0124",
+      "source_bound_review_line": "| `0124` | `TRUNCATED` | Release-1 endet nach `bestehender`; Primärquelle vervollständigt `Gesetze.`; innerhalb Parent Altersprüfung, Kennzeichnung, Meldung, technische Schutzmechanismen trennen; Bot-Verbot bleibt `0125` |"
+    },
+    {
+      "classification": "TRUNCATED",
+      "legacy_unit": "0125",
+      "source_bound_review_line": "| `0124` | `TRUNCATED` | Release-1 endet nach `bestehender`; Primärquelle vervollständigt `Gesetze.`; innerhalb Parent Altersprüfung, Kennzeichnung, Meldung, technische Schutzmechanismen trennen; Bot-Verbot bleibt `0125` |"
+    },
+    {
+      "classification": "SAME",
+      "legacy_unit": "0126",
+      "source_bound_review_line": "| `0126` | `SAME` | zukünftiger Ausbau Medienpädagogik vollständig; bestehender terminaler A09-Status bleibt |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0127",
+      "source_bound_review_line": "| `0127` | `OVERMERGED` | Fachkräfteinitiative, Förder-/Produktionsallokation, regionaler Projekt-/MDR-Pfad und Landesförderprogramm getrennt |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0128",
+      "source_bound_review_line": "| `0128` | `OVERMERGED` | mögliche KI-Nutzung in Redaktionen und Urheberrechts-/Vergütungspfad fachlich/kompetenziell trennen |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0129",
+      "source_bound_review_line": "| `0129` | `OVERMERGED` | Strafverfolgungs-/Schutzvollzug und Sensibilisierung der Sicherheitsbehörden trennen; Plattform-/Menschenwürde-Satz ist `CONTEXT_ONLY` ohne konkretes Instrument |"
+    },
+    {
+      "classification": "SAME",
+      "legacy_unit": "0130",
+      "source_bound_review_line": "| `0130` | `SAME` | Bundes-Advocacy für wirtschaftliche Rahmenbedingungen Lokalmedien; bestehender terminaler Status bleibt |"
+    },
+    {
+      "classification": "SAME",
+      "legacy_unit": "0131",
+      "source_bound_review_line": "| `0131` | `SAME` | Kinoerhalt + Ergänzung Bundesprogramme; bestehender terminaler Status bleibt |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0132",
+      "source_bound_review_line": "| `0132` | `OVERMERGED` | verlässliche Bürgermedien-Finanzierung vs nur zu prüfende Bildungs-Verzahnung trennen |"
+    },
+    {
+      "classification": "SAME",
+      "legacy_unit": "0133",
+      "source_bound_review_line": "| `0133` | `SAME` | GEMA-Ländervertrag als klarer Mechanismus; bestehender terminaler Status bleibt, Additionality jetzt durch reale Länder-Pauschalverträge bestätigt |"
+    },
+    {
+      "classification": "SAME",
+      "legacy_unit": "0134",
+      "source_bound_review_line": "| `0134` | `SAME` | digitale Sicht-/Auffindbarkeit der dualen Medienordnung; bestehender terminaler Status bleibt; aktuelle MStV-Baseline explizit beachten |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0135",
+      "source_bound_review_line": "| `0135` | `OVERMERGED` | Prüfung Medienkonzentrationsrecht und hypothetische Digitalabgabe/regionale Mittelwirkung getrennt; kein Instrumentdesign vorhanden |"
+    }
+  ],
+  "primary_source_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf",
+  "programme_key": "ltw-2026-st-cdu",
+  "review_snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p33-p36-review.md",
+  "review_snapshot_sha256": "efb3cedc1a3f87ad391ec06576537e5d31db49503b360650c1d5d51fb7e830b2",
+  "schema_version": "1.1",
+  "segment_checks": {
+    "checkpoint_terminal_count": 26,
+    "dns_mapping_synthesized": false,
+    "historical_ids_mutated": false,
+    "primary_source_parity": "PASS_SEGMENT",
+    "public_count_mutated": false,
+    "recommendation_synthesized": false,
+    "terminal_source_objects_parsed": 26,
+    "unresolved_source_gaps": 0
+  },
+  "shard_version": "2026-08-22-p33-p36-v1",
+  "terminal_source_objects": [
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0119-REGIONAL-INCOME-BURDEN-DESIGN",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0119-SME-CONTRIBUTION-RELIEF",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0121-PUBLIC-SERVICE-REMIT-FOCUS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0121-NEUTRALITY-OVERSIGHT-FRAME",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0121-INNOVATION-DIVERSITY-SUPPORT",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0122-PUBLIC-BROADCAST-EXPENDITURE-CONTROL",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0122-REFORM-IMPLEMENT-AND-DEVELOP",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0123-MDR-TRANSPARENCY-EFFICIENCY",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0123-MDR-EXECUTIVE-PAY-BENCHMARK",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0123-MDR-REGIONAL-ECONOMIC-RETURN",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0124-AGE-ASSURANCE",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0124-DIGITAL-CONTENT-AGE-LABELS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0124-REPORTING-ACCESS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0124-TECHNICAL-YOUTH-PROTECTION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0127-MDM-SKILLED-WORKFORCE",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0127-MDM-REGIONAL-FUNDING-ALLOCATION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0127-PUBLIC-BROADCAST-REGIONAL-PRODUCTION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0127-STATE-MEDIA-PROMOTION-CONTINUATION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0128-AI-EDITORIAL-USE",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0128-AI-COPYRIGHT-REMUNERATION",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0129-PRESS-ATTACK-ENFORCEMENT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0129-SECURITY-AUTHORITY-PRESS-PROTECTION-TRAINING",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0132-COMMUNITY-MEDIA-RELIABLE-FUNDING",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0132-COMMUNITY-MEDIA-EDUCATION-LINK-REVIEW",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0135-MEDIA-CONCENTRATION-LAW-REVIEW",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0135-DIGITAL-LEVY-REGIONAL-DIVERSITY-FUNDING",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    }
+  ],
+  "tuple_schema": [
+    "source_unit_id",
+    "terminal_fach_status",
+    "impact_direction",
+    "evidence_level"
+  ]
+}

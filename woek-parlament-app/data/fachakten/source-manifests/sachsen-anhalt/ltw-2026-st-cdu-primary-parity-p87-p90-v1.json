@@ -1,15 +1,289 @@
 {
-  "schema_version":"1.0","shard_version":"2026-08-21-p87-p90-v1","programme_key":"ltw-2026-st-cdu",
-  "primary_source_url":"https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf","primary_pdf_pages":[87,88,89,90],
-  "historical_ids_immutable":true,"fach_review_issue":234,"fach_review_comment_id":5375565181,
-  "authoritative_source_unit_count":null,"authoritative_effect_mechanism_count":null,"denominator_status":"NOT_FROZEN_PENDING_GLOBAL_LEAF_RECONCILIATION",
-  "primary_source_diff":[
-    [null,"ABSENT_CONTEXT_ONLY","P87_STRONG_FEDERAL_LAENDER_GOAL"],["0334","CONTEXT_ONLY","KEEP_TRANSITION_CONTEXT"],["0335","SAME_WITH_BOUNDARY_ARTIFACT","KEEP_ID"],["0336","TRUNCATED_OVERMERGED","RESTORE; VERSIONED_4_CHILD_SPLIT"],["0337","PARTIAL_PARENT","KEEP_ID_CONTINUATION_CHILD_OF_0336"],["0338","OVERMERGED","VERSIONED_3_CHILD_SPLIT"],["0339","SAME","KEEP_ID"],["0340","OVERMERGED","VERSIONED_4_CHILD_SPLIT_SUPERSEDES_TARGETED_SAME"],["0341","OVERMERGED","REUSE_EXISTING_VERSIONED_4_CHILD_SPLIT"],[null,"ABSENT","REUSE_ST_CDU_PRIMARY_GAP_EU_CLIMATE_001_4_CHILD_SPLIT"],["0342","OVERMERGED","VERSIONED_2_CHILD_SPLIT"],["0343","SAME","KEEP_ID"],["0344","OVERMERGED","VERSIONED_2_CHILD_SPLIT; HISTORICAL_EXAMPLES_CONTEXT"],[null,"CONTEXT_ONLY","P90_IMPRESSUM_NO_EFFECT"]
+  "authoritative_effect_mechanism_count": null,
+  "authoritative_source_unit_count": null,
+  "completion_guard": {
+    "final_versioned_manifest": "PENDING_GLOBAL_LEAF_RECONCILIATION",
+    "st_cdu_primary_source_parity": "PASS_FULL_PROGRAMME",
+    "st_cdu_terminal_complete": false
+  },
+  "denominator_status": "NOT_FROZEN_PENDING_GLOBAL_LEAF_RECONCILIATION",
+  "fach_review_comment_id": 5375565181,
+  "fach_review_issue": 234,
+  "historical_ids_immutable": true,
+  "primary_pdf_pages": [
+    87,
+    88,
+    89,
+    90
   ],
-  "terminal_source_objects":[
-    ["ST-CDU-PRIMARY-GAP-P87-STRONG-FEDERAL-LAENDER-GOAL","REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON","OPEN","NOT_ASSESSABLE"],["ltw-2026-st-cdu-0334-diese-chancen-wollen-wir-erhalten-und-ausbauen-durch-eine","SOURCE_UNIT_RECLASSIFIED_VERSIONED","OPEN","NOT_ASSESSABLE"],["ltw-2026-st-cdu-0335-die-stimme-sachsen-anhalts-in-europa-staerken-wir-machen-u","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","LOW"],["ST-CDU-PRIMARY-SPLIT-0336-COHESION-REGIONAL-DEMOGRAPHIC-CRITERIA","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","LOW"],["ST-CDU-PRIMARY-SPLIT-0336-REGIONAL-DEVELOPMENT-ALIGNMENT","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","LOW"],["ST-CDU-PRIMARY-SPLIT-0336-FEDERAL-LAENDER-PROCEDURES","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","LOW"],["ST-CDU-PRIMARY-SPLIT-0336-TRANSITION-RULES-2028","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","LOW"],["ltw-2026-st-cdu-0337-wir-setzen-uns-daher-fuer-praxistaugliche-flexibilitaeten","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","LOW"],["ST-CDU-PRIMARY-SPLIT-0338-EU-FUNDING-PROCEDURE-SIMPLIFICATION","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","LOW"],["ST-CDU-PRIMARY-SPLIT-0338-EU-FEDERAL-BUREAUCRACY-ADVOCACY","REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON","OPEN","NOT_ASSESSABLE"],["ST-CDU-PRIMARY-SPLIT-0338-NO-GOLD-PLATING","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","LOW"],["ltw-2026-st-cdu-0339-nutzung-direkt-verwalteter-eu-programme-staerken-neben-der","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","MEDIUM"],["ST-CDU-PRIMARY-SPLIT-0340-ERASMUS-INTERREG","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","MEDIUM"],["ST-CDU-PRIMARY-SPLIT-0340-EUROPE-COMPETENCE","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","LOW"],["ST-CDU-PRIMARY-SPLIT-0340-CITY-SCHOOL-PARTNERSHIPS","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","LOW"],["ST-CDU-PRIMARY-SPLIT-0340-PARTNER-REGION-EXCHANGE","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","LOW"],["ST-CDU-PRIMARY-SPLIT-0341-EU-CORE-TASKS","REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON","OPEN","NOT_ASSESSABLE"],["ST-CDU-PRIMARY-SPLIT-0341-MIGRATION-BORDERS","REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON","OPEN","NOT_ASSESSABLE"],["ST-CDU-PRIMARY-SPLIT-0341-COMMON-DEFENCE","REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON","OPEN","NOT_ASSESSABLE"],["ST-CDU-PRIMARY-SPLIT-0341-DEBT-TRANSFER","REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON","OPEN","NOT_ASSESSABLE"],["ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-TAXONOMY","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","LOW"],["ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-LKSG","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","LOW"],["ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-CO2","REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON","OPEN","NOT_ASSESSABLE"],["ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-CHEMICALS","REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON","OPEN","NOT_ASSESSABLE"],["ST-CDU-PRIMARY-SPLIT-0342-FEDERAL-ADVOCACY-NETWORK","REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON","OPEN","NOT_ASSESSABLE"],["ST-CDU-PRIMARY-SPLIT-0342-COHESION-2028-EARLY-INPUT","REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON","OPEN","NOT_ASSESSABLE"],["ltw-2026-st-cdu-0343-die-europaeische-metropolregion-mitteldeutschland-staerken","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","LOW"],["ST-CDU-PRIMARY-SPLIT-0344-FEDERAL-BURDEN-ALLOCATION","REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON","OPEN","NOT_ASSESSABLE"],["ST-CDU-PRIMARY-SPLIT-0344-FEDERAL-AGENCY-SITING","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","LOW"]
+  "primary_source_diff": [
+    [
+      null,
+      "ABSENT_CONTEXT_ONLY",
+      "P87_STRONG_FEDERAL_LAENDER_GOAL"
+    ],
+    [
+      "0334",
+      "CONTEXT_ONLY",
+      "KEEP_TRANSITION_CONTEXT"
+    ],
+    [
+      "0335",
+      "SAME_WITH_BOUNDARY_ARTIFACT",
+      "KEEP_ID"
+    ],
+    [
+      "0336",
+      "TRUNCATED_OVERMERGED",
+      "RESTORE; VERSIONED_4_CHILD_SPLIT"
+    ],
+    [
+      "0337",
+      "PARTIAL_PARENT",
+      "KEEP_ID_CONTINUATION_CHILD_OF_0336"
+    ],
+    [
+      "0338",
+      "OVERMERGED",
+      "VERSIONED_3_CHILD_SPLIT"
+    ],
+    [
+      "0339",
+      "SAME",
+      "KEEP_ID"
+    ],
+    [
+      "0340",
+      "OVERMERGED",
+      "VERSIONED_4_CHILD_SPLIT_SUPERSEDES_TARGETED_SAME"
+    ],
+    [
+      "0341",
+      "OVERMERGED",
+      "REUSE_EXISTING_VERSIONED_4_CHILD_SPLIT"
+    ],
+    [
+      null,
+      "ABSENT",
+      "REUSE_ST_CDU_PRIMARY_GAP_EU_CLIMATE_001_4_CHILD_SPLIT"
+    ],
+    [
+      "0342",
+      "OVERMERGED",
+      "VERSIONED_2_CHILD_SPLIT"
+    ],
+    [
+      "0343",
+      "SAME",
+      "KEEP_ID"
+    ],
+    [
+      "0344",
+      "OVERMERGED",
+      "VERSIONED_2_CHILD_SPLIT; HISTORICAL_EXAMPLES_CONTEXT"
+    ],
+    [
+      null,
+      "CONTEXT_ONLY",
+      "P90_IMPRESSUM_NO_EFFECT"
+    ]
   ],
-  "tuple_schema":["source_unit_id","terminal_fach_status","impact_direction","evidence_level"],
-  "segment_checks":{"primary_source_parity":"PASS_SEGMENT","terminal_source_objects":29,"unresolved_source_gaps":0,"historical_ids_mutated":false,"document_end_reached":true},
-  "completion_guard":{"st_cdu_primary_source_parity":"PASS_FULL_PROGRAMME","final_versioned_manifest":"PENDING_GLOBAL_LEAF_RECONCILIATION","st_cdu_terminal_complete":false}
+  "primary_source_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf",
+  "programme_key": "ltw-2026-st-cdu",
+  "schema_normalization": {
+    "legacy_parent_reference_resolution": "IMMUTABLE_RELEASE1_COMMITMENT_ID_WHERE_NUMERIC_PARENT_PRESENT",
+    "mode": "MECHANICAL_ALIAS_ONLY_NO_NEW_FACH_SEMANTICS",
+    "terminal_alias": "terminal_source_objects"
+  },
+  "schema_version": "1.0",
+  "segment_checks": {
+    "document_end_reached": true,
+    "historical_ids_mutated": false,
+    "primary_source_parity": "PASS_SEGMENT",
+    "terminal_source_objects": 29,
+    "unresolved_source_gaps": 0
+  },
+  "shard_version": "2026-08-21-p87-p90-v1",
+  "terminal_source_objects": [
+    [
+      "ST-CDU-PRIMARY-GAP-P87-STRONG-FEDERAL-LAENDER-GOAL",
+      "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "OPEN",
+      "NOT_ASSESSABLE"
+    ],
+    [
+      "ltw-2026-st-cdu-0334-diese-chancen-wollen-wir-erhalten-und-ausbauen-durch-eine",
+      "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+      "OPEN",
+      "NOT_ASSESSABLE"
+    ],
+    [
+      "ltw-2026-st-cdu-0335-die-stimme-sachsen-anhalts-in-europa-staerken-wir-machen-u",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0336-COHESION-REGIONAL-DEMOGRAPHIC-CRITERIA",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0336-REGIONAL-DEVELOPMENT-ALIGNMENT",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0336-FEDERAL-LAENDER-PROCEDURES",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0336-TRANSITION-RULES-2028",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "LOW"
+    ],
+    [
+      "ltw-2026-st-cdu-0337-wir-setzen-uns-daher-fuer-praxistaugliche-flexibilitaeten",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0338-EU-FUNDING-PROCEDURE-SIMPLIFICATION",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0338-EU-FEDERAL-BUREAUCRACY-ADVOCACY",
+      "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "OPEN",
+      "NOT_ASSESSABLE"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0338-NO-GOLD-PLATING",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "LOW"
+    ],
+    [
+      "ltw-2026-st-cdu-0339-nutzung-direkt-verwalteter-eu-programme-staerken-neben-der",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "MEDIUM"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0340-ERASMUS-INTERREG",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "MEDIUM"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0340-EUROPE-COMPETENCE",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0340-CITY-SCHOOL-PARTNERSHIPS",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0340-PARTNER-REGION-EXCHANGE",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0341-EU-CORE-TASKS",
+      "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "OPEN",
+      "NOT_ASSESSABLE"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0341-MIGRATION-BORDERS",
+      "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "OPEN",
+      "NOT_ASSESSABLE"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0341-COMMON-DEFENCE",
+      "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "OPEN",
+      "NOT_ASSESSABLE"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0341-DEBT-TRANSFER",
+      "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "OPEN",
+      "NOT_ASSESSABLE"
+    ],
+    [
+      "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-TAXONOMY",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-LKSG",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-CO2",
+      "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "OPEN",
+      "NOT_ASSESSABLE"
+    ],
+    [
+      "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-CHEMICALS",
+      "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "OPEN",
+      "NOT_ASSESSABLE"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0342-FEDERAL-ADVOCACY-NETWORK",
+      "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "OPEN",
+      "NOT_ASSESSABLE"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0342-COHESION-2028-EARLY-INPUT",
+      "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "OPEN",
+      "NOT_ASSESSABLE"
+    ],
+    [
+      "ltw-2026-st-cdu-0343-die-europaeische-metropolregion-mitteldeutschland-staerken",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0344-FEDERAL-BURDEN-ALLOCATION",
+      "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "OPEN",
+      "NOT_ASSESSABLE"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0344-FEDERAL-AGENCY-SITING",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "LOW"
+    ]
+  ],
+  "tuple_schema": [
+    "source_unit_id",
+    "terminal_fach_status",
+    "impact_direction",
+    "evidence_level"
+  ]
 }

@@ -1,279 +1,2377 @@
 {
-  "schema_version": "1.0",
-  "shard_version": "2026-08-21-p5-p9-v1",
-  "programme_key": "ltw-2026-st-cdu",
-  "party": "CDU",
-  "primary_source_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf",
-  "primary_pdf_pages": [5,6,7,8,9],
-  "canonical_manifest_target": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-source-unit-manifest-v2.json",
-  "legacy_register": "woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-cdu-zusagen.md",
-  "legacy_blob_sha": "6e8c53392d76e9847ee3028d241a988c12b3d2fb",
-  "historical_ids_immutable": true,
   "authoritative_denominator_delta": null,
-  "denominator_status": "PENDING_FULL_PROGRAMME_SEGMENTATION_RULE",
-  "segment_status": "SEMANTIC_RECONCILIATION_COMPLETE_FOR_P5_P9",
-  "primary_source_diff": [
-    {"legacy_unit":"0001","classification":"SAME","action":"KEEP_ID"},
-    {"legacy_unit":"0002","classification":"TRUNCATED_CONTEXT_BRIDGE","action":"KEEP_ID; SOURCE_RESTORE_ALREADY_REVIEWED; NO_INDEPENDENT_CHILD_FOR_TRAILING_WIR_WERDEN"},
-    {"legacy_unit":"0003","classification":"TRUNCATED_OVERMERGED","action":"KEEP_PARENT_ID; VERSIONED_CHILD_SPLIT"},
-    {"legacy_unit":"0004","classification":"CONTEXT_ONLY","action":"KEEP_ID_NO_INDEPENDENT_EFFECT_COUNT"},
-    {"legacy_unit":"0005","classification":"PARTIAL_PARENT","action":"KEEP_ID_AS_EXTREMISM_CONTEXT; SPECIFIC_CAPABILITY_CHILD_UNDER_0003"},
-    {"legacy_unit":"0006","classification":"OVERMERGED","action":"KEEP_PARENT_ID; VERSIONED_CHILD_SPLIT"},
-    {"legacy_unit":"0007","classification":"OVERMERGED","action":"KEEP_PARENT_ID; VERSIONED_CHILD_SPLIT"},
-    {"legacy_unit":"0008","classification":"TRUNCATED_OVERMERGED","action":"KEEP_PARENT_ID; SOURCE_RESTORE_ALREADY_REVIEWED; VERSIONED_CHILD_SPLIT"},
-    {"legacy_unit":"0009","classification":"PARTIAL_PARENT_CONTINUATION","action":"KEEP_ID_AS_ASSEMBLY_LAW_CONTINUATION_OF_0008"},
-    {"legacy_unit":null,"classification":"ABSENT","primary_source_unit":"ST-CDU-PRIMARY-GAP-MIGRATION-P7-BORDER-PROCEDURES","action":"ADDITIVE_SOURCE_UNIT"},
-    {"legacy_unit":null,"classification":"ABSENT","primary_source_unit":"ST-CDU-PRIMARY-GAP-MIGRATION-P7-ADMISSION-PROGRAMS","action":"ADDITIVE_SOURCE_UNIT"},
-    {"legacy_unit":null,"classification":"ABSENT","primary_source_unit":"ST-CDU-PRIMARY-GAP-MIGRATION-P7-FAMILY-REUNIFICATION","action":"ADDITIVE_SOURCE_UNIT"},
-    {"legacy_unit":null,"classification":"ABSENT","primary_source_unit":"ST-CDU-PRIMARY-GAP-MIGRATION-P7-RETURNS-AFG-SYR-IRQ","action":"ADDITIVE_SOURCE_UNIT"},
-    {"legacy_unit":"0010","classification":"CONTEXT_ONLY_TARGET","action":"KEEP_ID_NO_NEW_MECHANISM"},
-    {"legacy_unit":"0011","classification":"PARTIAL_PARENT_MISSING_POLICY_OBJECT","action":"KEEP_ID; VERSIONED_CHILD_RESTORES_SAFE_ORIGIN_SYRIA_IRAQ_OBJECT"},
-    {"legacy_unit":"0012","classification":"SAME","action":"KEEP_ID"},
-    {"legacy_unit":"0013","classification":"OVERMERGED","action":"KEEP_PARENT_ID; VERSIONED_CHILD_SPLIT"},
-    {"legacy_unit":"0014","classification":"SAME","action":"KEEP_ID"},
-    {"legacy_unit":"0015","classification":"CONTEXT_AND_TARGET_FRAME","action":"KEEP_ID_NO_INDEPENDENT_EFFECT_COUNT"},
-    {"legacy_unit":"0016","classification":"SAME","action":"KEEP_ID"},
-    {"legacy_unit":"0017","classification":"OVERMERGED","action":"KEEP_PARENT_ID; VERSIONED_CHILD_SPLIT"},
-    {"legacy_unit":"0018","classification":"OVERMERGED","action":"KEEP_PARENT_ID; VERSIONED_CHILD_SPLIT"},
-    {"legacy_unit":"0019","classification":"TRUNCATED_PARENT","action":"KEEP_PARENT_ID; CONTINUATIONS_0020_0024_PRESERVED"},
-    {"legacy_unit":"0020","classification":"PARTIAL_PARENT_CONTINUATION","action":"KEEP_ID_CHILD_OF_0019"},
-    {"legacy_unit":"0021","classification":"PARTIAL_PARENT_CONTINUATION","action":"KEEP_ID_CHILD_OF_0019"},
-    {"legacy_unit":"0022","classification":"PARTIAL_PARENT_CONTINUATION","action":"KEEP_ID_CHILD_OF_0019"},
-    {"legacy_unit":"0023","classification":"PARTIAL_PARENT_CONTINUATION","action":"KEEP_ID_CHILD_OF_0019"},
-    {"legacy_unit":"0024","classification":"PARTIAL_PARENT_CONTINUATION","action":"KEEP_ID_CHILD_OF_0019"},
-    {"legacy_unit":"0025","classification":"OVERMERGED","action":"KEEP_PARENT_ID; VERSIONED_CHILD_SPLIT"}
-  ],
-  "new_or_split_units": [
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0003-POLICE-PERSONNEL-VISIBILITY",
-      "parent_legacy_source_unit":"ltw-2026-st-cdu-0003-weiter-in-die-landespolizei-investieren-fuer-eine-moderne",
-      "terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"LOW",
-      "key_finding":"Mehr Polizeivollzugs- und Verwaltungspersonal kann Präsenz, Bearbeitungskapazität und Reaktionsfähigkeit erhöhen, wenn Ausbildung, Besetzung und regionale Verteilung mitwachsen; Kopfzahl allein ist kein Sicherheitsoutcome.",
-      "problem_review":"Kapazitätsbedarf plausibel, aber regionale Aufgaben-/Vakanz-/Einsatzbaseline erforderlich.","goal_review":"Reaktionsfähigkeit, Prävention und rechtsstaatliche Sicherheit sind Zielgrößen; Personalzahl ist Input.",
-      "mechanisms":["zusätzliche besetzte Stellen -> mehr verfügbare Einsatz-/Ermittlungs-/Verwaltungskapazität -> mögliche bessere Präsenz und Bearbeitung"],
-      "risks_conditions":["Ausbildungs- und Recruitingengpass","Fehlverteilung","Opportunitätskosten","mehr Befugnisnutzung ohne passende Qualitäts-/Aufsichtssicherung"],
-      "competence_implementation":"LAND; Haushalt, Ausbildung, Stellenplan, regionale Personalsteuerung.","distribution_time":"regional und schicht-/aufgabenspezifisch; Wirkung mittel- bis langfristig.",
-      "boundaries_noncompensation":["Rechtsstaatlichkeit","Verhältnismäßigkeit","Grundrechte"],"data_falsification":["besetzte statt geplante Stellen","Ausbildungsabschluss/Verbleib","Einsatz-/Bearbeitungszeiten","regionale Präsenz","Beschwerden/Fehler","Kriminalitäts-/Sicherheitsindikatoren mit Attribution Guard"]
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0003-CONSTITUTIONAL-PROTECTION-CAPACITY",
-      "parent_legacy_source_unit":"ltw-2026-st-cdu-0003-weiter-in-die-landespolizei-investieren-fuer-eine-moderne",
-      "terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW",
-      "key_finding":"Mehr Verfassungsschutzkapazität kann extremistische Gefahren früher erkennen; Wirkung hängt aber an enger gesetzlicher Zweckbindung, Qualität, Kontrolle und daran, ob zusätzliche Ressourcen tatsächlich einen belegten Engpass treffen.",
-      "problem_review":"Extremistische Gefahren sind ein legitimer Schutzgegenstand; aus dem Programm folgt keine quantifizierte Kapazitätslücke.","goal_review":"Demokratische Sicherheit und frühzeitige Gefahrenaufklärung bei erhaltenen Freiheits- und Kontrollrechten.",
-      "mechanisms":["zusätzliche Fach-/Analyseressourcen -> bessere Informationsverarbeitung -> frühere Gefahrenhinweise"],"risks_conditions":["Fehlklassifikation","Überwachungsausweitung","politische Verzerrung","Daten-/Kooperationsfehler"],
-      "competence_implementation":"LAND within constitutional/federal information-law constraints.","distribution_time":"Betroffene Überwachungs-/Prüfpersonen und Allgemeinheit; mittel-/langfristig.","boundaries_noncompensation":["Meinungs-/Vereinigungsfreiheit","Datenschutz","parlamentarische/gerichtliche Kontrolle"],"data_falsification":["konkreter Personal-/Analyseengpass","Qualität/Timeliness Lagebilder","gerichtliche/aufsichtliche Beanstandungen","nachweisbare Präventionsbeiträge ohne Output-Outcome-Verwechslung"]
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0006-THREAT-MANAGEMENT",
-      "parent_legacy_source_unit":"ltw-2026-st-cdu-0006-ein-bedrohungs-und-gefaehrdungsmanagement-etablieren-die-b",
-      "terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW",
-      "key_finding":"Strukturiertes Bedrohungsmanagement kann Hochrisikofälle früher bündeln und Interventionen koordinieren; ohne valide Kriterien entstehen Falschpositive, Stigmatisierung und unverhältnismäßige Eingriffe.",
-      "problem_review":"Fragmentierte Risikoerkennung ist plausibler Koordinationsengpass; Häufigkeit/Fehlerkosten offen.","goal_review":"Schwere Gewaltrisiken früh und verhältnismäßig senken, nicht möglichst viele Personen markieren.","mechanisms":["multi-source case review -> priorisierte Intervention -> mögliche Risikoreduktion"],"risks_conditions":["Falschpositive/Falschnegative","Stigmatisierung","Datenqualität","unklare Verantwortlichkeit"],"competence_implementation":"LAND; Polizei/weitere Stellen, klare Rechtsgrundlagen und Governance.","distribution_time":"konzentriert auf markierte Personen/Institutionen; kurzfristige Intervention, langfristige Evaluation.","boundaries_noncompensation":["Verhältnismäßigkeit","Datenschutz","Nichtdiskriminierung","Rechtsschutz"],"data_falsification":["validierte Risikokriterien","Interventionsqualität","Fehlalarmquote","schwere Ereignisse","Beschwerden/Rechtsschutz"]
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0006-CENTRAL-THREAT-ANALYSIS",
-      "parent_legacy_source_unit":"ltw-2026-st-cdu-0006-ein-bedrohungs-und-gefaehrdungsmanagement-etablieren-die-b",
-      "terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"LOW",
-      "key_finding":"Eine zentrale Gefahrenanalyse kann verstreute Signale konsistenter bewerten, wenn sie zusätzliche Erkenntnis statt bloßer Zentralisierung erzeugt und lokale Kontextinformation nicht verliert.","problem_review":"Informationsfragmentierung plausibel; heutige Prozessbaseline fehlt.","goal_review":"höhere Analysequalität/Timeliness, nicht Zentralisierung als Selbstzweck.","mechanisms":["standardisierte Zusammenführung -> bessere Muster-/Prioritätserkennung -> zielgerichtetere Entscheidungen"],"risks_conditions":["Single point of failure","Informationsüberlastung","Kontextverlust","Governanceunklarheit"],"competence_implementation":"LAND with interagency dependencies.","distribution_time":"behördenintern, mittelbar Bevölkerung; kurzfristige Prozesswirkung, Outcome später.","boundaries_noncompensation":["Zweckbindung","Datenschutz","Auditierbarkeit"],"data_falsification":["Bearbeitungszeit","Informationsqualität","Fallübergaben","Fehlentscheidungen","Ausfallsicherheit"]
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0006-INTERAGENCY-DATA-MANAGEMENT",
-      "parent_legacy_source_unit":"ltw-2026-st-cdu-0006-ein-bedrohungs-und-gefaehrdungsmanagement-etablieren-die-b",
-      "terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW",
-      "key_finding":"Behördenübergreifendes Datenmanagement kann Informationslücken reduzieren, erhöht aber zugleich Datenschutz-, Zugriffs-, Zweckänderungs- und Cyberrisiken; Mehrdaten sind nicht automatisch bessere Gefahrenentscheidungen.","problem_review":"konkrete Datenbruch-/Doppelarbeitsbaseline fehlt.","goal_review":"rechtmäßige, relevante und rechtzeitige Information bei minimal notwendiger Datennutzung.","mechanisms":["Interoperabilität/Zugriff -> weniger fehlende relevante Informationen -> mögliche bessere Lageentscheidung"],"risks_conditions":["unbefugter Zugriff","falsche Daten","function creep","Cyberausfall"],"competence_implementation":"LAND plus federal/other-agency interfaces; role/access/data-retention rules required.","distribution_time":"Datenbetroffene und Sicherheitsbehörden; dauerhaft.","boundaries_noncompensation":["Datenschutz","informationelle Selbstbestimmung","Zweckbindung","Rechtsschutz"],"data_falsification":["qualitätsbereinigte Informationslücken","Zugriffs-/Missbrauchsvorfälle","Entscheidungsfehler","Cyberresilienz"]
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0007-TASER",
-      "parent_legacy_source_unit":"ltw-2026-st-cdu-0007-die-landespolizei-weiterhin-modern-ausstatten-unsere-poliz",
-      "terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"MEDIUM",
-      "key_finding":"Distanz-Elektroimpulsgeräte können in geeigneten Lagen eine Zwischenoption zwischen körperlichem Zwang und Schusswaffe bieten; sie tragen zugleich Verletzungs-, Fehlanwendungs- und Eskalationsrisiken und benötigen enge Einsatz-/Training-/Dokumentationsregeln.","problem_review":"Ausrüstungs-/Eigensicherungsbedarf ist plausibel, aber Lagenspektrum und Alternativenbaseline fehlen.","goal_review":"Gefahrenlagen mit möglichst geringer Verletzung und verhältnismäßigem Zwang bewältigen.","mechanisms":["zusätzliche weniger-letale Einsatzoption -> veränderte Zwangsmittelwahl -> mögliche geringere/andere Verletzungsfolgen"],"risks_conditions":["medizinische Risiken","mission creep","Fehl-/Mehrfachanwendung","Trainingseffekt"],"competence_implementation":"LAND; procurement, police-law/use-of-force rules, training and reporting.","distribution_time":"Einsatzkräfte und von Zwang betroffene Personen; sofortige Wirkung.","boundaries_noncompensation":["Leben/körperliche Unversehrtheit","Verhältnismäßigkeit","Dokumentation/Rechtsschutz"],"data_falsification":["Einsatzanzahl/Lage","Alternativeinsatzmittel","Verletzungen","Mehrfachanwendung","Beschwerden/gerichtliche Befunde","Training"]
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0007-DRONE-DEFENCE",
-      "parent_legacy_source_unit":"ltw-2026-st-cdu-0007-die-landespolizei-weiterhin-modern-ausstatten-unsere-poliz",
-      "terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"LOW",
-      "key_finding":"Detektions- und Abwehrtechnik kann kritische Lagen gegen missbräuchliche Drohnen resilienter machen, wenn konkrete Bedrohungen, Zuständigkeit und sichere Abwehrverfahren belegt sind.","problem_review":"Drohnenrisiko plausibel, Exposition/Bestandslücke nicht quantifiziert.","goal_review":"Gefahren erkennen und neutralisieren ohne neue Sicherheits-/Funk-/Datenschutzrisiken.","mechanisms":["Detektion -> schnellere Lageerkennung -> geeignete Abwehr -> geringeres Schadensrisiko"],"risks_conditions":["Fehlalarm","Interferenz","Absturz-/Kollateralschäden","Technologieveraltung"],"competence_implementation":"LAND police procurement/operations with aviation/frequency/federal constraints.","distribution_time":"kritische Orte/Veranstaltungen; kurzfristig, kontinuierliche Technikupdates.","boundaries_noncompensation":["öffentliche Sicherheit","Datenschutz","Luftverkehrssicherheit"],"data_falsification":["reale Vorfälle","Detektionsgenauigkeit","Reaktionszeit","Fehlalarme","Abwehrfolgen","Lifecycle cost"]
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0007-POLICE-DATAHOUSE-IT",
-      "parent_legacy_source_unit":"ltw-2026-st-cdu-0007-die-landespolizei-weiterhin-modern-ausstatten-unsere-poliz",
-      "terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW",
-      "key_finding":"Gemeinsame Polizei-Datenarchitektur kann Suche, Fallbezug und länderübergreifende Zusammenarbeit verbessern; universeller Zugriff ohne Need-to-know- und Qualitätsregeln vergrößert Missbrauchs-, Fehler- und Cyberfolgen.","problem_review":"Interoperabilitätsfriktion plausibel; konkrete Such-/Datenlücke offen.","goal_review":"rechtzeitiger relevanter Datenzugriff bei minimaler, rollenbasierter Exposition.","mechanisms":["interoperable IT -> schnellerer Zugriff auf relevante Informationen -> mögliche bessere Ermittlungs-/Gefahrenentscheidung"],"risks_conditions":["breite Zugriffsrechte","Datenfehler","Cyberangriff","Vendor lock-in"],"competence_implementation":"MULTI_LEVEL Bund/Länder; Land modernisiert eigene IT und wirkt am Datenhaus mit.","distribution_time":"Polizeibehörden und Datenbetroffene; langfristige Infrastruktur.","boundaries_noncompensation":["Datenschutz","Zweckbindung","IT-Sicherheit","Rechtsschutz"],"data_falsification":["Such-/Bearbeitungszeit","Datenqualität","Zugriffsverletzungen","Cybervorfälle","Systemverfügbarkeit","nachweisbare Fallbeiträge"]
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0008-BODYCAM-HOMES",
-      "parent_legacy_source_unit":"ltw-2026-st-cdu-0008-den-rechtsrahmen-der-polizei-modern-fortentwickeln-der-ein",
-      "terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"MEDIUM",
-      "key_finding":"Bodycams in Wohnungen können Einsatzdokumentation/Eigensicherung unterstützen, greifen im besonders geschützten Wohnraum aber intensiv in Privatsphäre und Rechte auch unbeteiligter Personen ein; Nutzen ist lage- und designabhängig.","problem_review":"Gewalt-/Eigensicherungsrisiko in Wohnungen ist plausibel; spezifische Incident-/Evidenzbaseline erforderlich.","goal_review":"Gewalt reduzieren und Einsätze nachvollziehbar machen bei eng begrenztem Eingriff.","mechanisms":["sichtbare Aufnahme/Dokumentation -> mögliche Verhaltensänderung + bessere Beweislage"],"risks_conditions":["Deeskalation nicht garantiert","Aufzeichnung Opfer/Unbeteiligter","selektive Aktivierung","Datenspeicherung"],"competence_implementation":"LAND police law; constitutional dwelling/privacy safeguards and judicial review constraints apply.","distribution_time":"Einsatzkräfte, Bewohner, Opfer/Unbeteiligte; unmittelbar.","boundaries_noncompensation":["Art-13-Wohnungsschutz","Privatsphäre","Opferschutz","Verhältnismäßigkeit"],"data_falsification":["Gewalt/Verletzung","Aktivierungsquote","Beschwerden","Beweisnutzung","Datenschutzvorfälle","Subgruppen-/Lagensplit"]
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0008-PUBLIC-VIDEO",
-      "parent_legacy_source_unit":"ltw-2026-st-cdu-0008-den-rechtsrahmen-der-polizei-modern-fortentwickeln-der-ein",
-      "terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW",
-      "key_finding":"Mehr Videoschutz kann an konkret belasteten Orten Aufklärung und Lageerkennung unterstützen; flächige Ausweitung kann Verlagerung, Überwachung Unbeteiligter und hohe Kosten erzeugen, ohne Kriminalität ursächlich zu senken.","problem_review":"ortsspezifische Delikt-/Gefahrenbaseline erforderlich; keine flächige Problemannahme.","goal_review":"schwere Vorfälle verhindern/aufklären bei minimal erforderlicher Überwachung.","mechanisms":["Kameraabdeckung -> beobachtbare Ereignisse/Beweisdaten -> mögliche Detektion/Aufklärung/Abschreckung"],"risks_conditions":["Verlagerung","Falschgefühl von Sicherheit","Privatsphäre","Betriebspersonal/Datenhaltung"],"competence_implementation":"LAND within police/data-protection law.","distribution_time":"Nutzende öffentlicher Räume, besonders häufig überwachte Orte/Gruppen; kurzfristig.","boundaries_noncompensation":["informationelle Selbstbestimmung","Verhältnismäßigkeit","Nichtdiskriminierung"],"data_falsification":["ortsspezifische Vorfälle","Aufklärungsbeitrag","Verlagerung","Nutzung/Retention","Beschwerden","Vollkosten"]
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0008-AI-VIDEO",
-      "parent_legacy_source_unit":"ltw-2026-st-cdu-0008-den-rechtsrahmen-der-polizei-modern-fortentwickeln-der-ein",
-      "terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW",
-      "key_finding":"Automatisierte Mustererkennung kann große Videoströme priorisieren, kann aber Fehlalarme, Bias, Intransparenz und Grundrechtseingriffe skalieren; ohne validiertes Zielereignis und Fehlerraten ist 'intelligent' kein Wirkungsnachweis.","problem_review":"menschliche Auswertungs-/Reaktionsengpässe nicht konkret belegt.","goal_review":"relevante Gefahren früher erkennen mit überprüfbarer Genauigkeit und rechtskonformen Grenzen.","mechanisms":["Algorithmus markiert Muster -> menschliche/operative Prüfung -> mögliche schnellere Intervention"],"risks_conditions":["False positives/negatives","Bias","Automation bias","Mass surveillance","unklare Modell-/Datenherkunft"],"competence_implementation":"LAND deployment subject to EU/federal data/AI/constitutional rules; exact use case determines legality.","distribution_time":"Passanten/markierte Personen und Polizei; unmittelbar, Modellrisiken dauerhaft.","boundaries_noncompensation":["Datenschutz","Nichtdiskriminierung","Transparenz/Rechtsschutz","Verhältnismäßigkeit"],"data_falsification":["präregistrierte Detektionsziele","Sensitivität/Spezifität/PPV nach Gruppen","Interventionsnutzen","Beschwerden","Human override","Cyber/model drift"]
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0008-BIOGEOGRAPHIC-DNA",
-      "parent_legacy_source_unit":"ltw-2026-st-cdu-0008-den-rechtsrahmen-der-polizei-modern-fortentwickeln-der-ein",
-      "terminal_fach_status":"REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON","impact_direction":"OPEN","evidence_level":"NOT_ASSESSABLE",
-      "key_finding":"Die Programmforderung nennt 'biogeographische Analyse', während §81e StPO bei unbekanntem Spurenverursacher aktuell Augen-, Haar- und Hautfarbe sowie Alter zulässt; ohne definierte biogeographische Merkmale, Validität und konkrete Bundesrechtsänderung ist keine belastbare Wirkungsrichtung möglich.","problem_review":"Fehlleitungsrisiko in Ermittlungen plausibel; zusätzlicher Informationswert der nicht definierten Analyse nicht belegt.","goal_review":"präzisere Ermittlungspriorisierung ohne unzulässige Abstammungs-/Gruppenzuschreibungen.","mechanisms":["zusätzliche DNA-basierte Merkmalschätzung -> geänderte Ermittlungspriorisierung"],"risks_conditions":["Unsicherheit/populationsabhängige Fehlinterpretation","Diskriminierung/Profiling","Datenschutz","falsche Ermittlungsverengung"],"competence_implementation":"FEDERAL criminal-procedure law required for the additional molecular-genetic determination; Land advocacy/implementation only after valid legal basis.","distribution_time":"Spurenbetroffene/populationsbezogen interpretierte Gruppen und Ermittlungen; unmittelbar.","boundaries_noncompensation":["Menschenwürde/Nichtdiskriminierung","Datenschutz","Unschuldsvermutung","Rechtsschutz"],"data_falsification":["exakte gesetzliche Merkmalsdefinition","validierte Fehler-/Kalibrationsraten","inkrementeller Ermittlungsnutzen","Fehlleitungen","Gruppeneffekte"]
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-GAP-MIGRATION-P7-BORDER-PROCEDURES",
-      "source_locator":{"pdf_page":7,"section":"Sicherheit. Ordnung. Migrationswende.","after":"0009","before":"0010"},
-      "terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"MEDIUM",
-      "key_finding":"Asylverfahren an EU-Außengrenzen sind seit 12.06.2026 bereits unionsrechtlich als Grenzverfahren geregelt; die Passage ist daher überwiegend Kontinuitäts-/Umsetzungspolitik, nicht ein neuer Landeshebel. Schnellere/geordnete Verfahren können Kapazität und Rückkehrentscheidungen beeinflussen, müssen aber vollständige Prüfung, Familien-/Minderjährigenschutz und Rechtsschutz sichern.","problem_review":"Verfahrens-/Sekundärmigrations- und Kapazitätsfragen werden bereits durch den EU-Pakt adressiert; zusätzliche Landesspezifik fehlt.","goal_review":"zügige, faire und rechtswirksame Schutzentscheidung; 'möglichst an der Grenze' ist Instrument-/Ortsebene.","mechanisms":["Grenzverfahren -> frühere Prüfung/Entscheidung vor regulärer Einreise -> veränderte Verfahrensdauer/Weiterbewegung"],"risks_conditions":["Kapazitätsengpass","Rechtsschutz-/Qualitätsrisiko","besondere Schutzbedarfe","lange faktische Aufenthaltsbeschränkung"],"competence_implementation":"EU/FEDERAL implementation; Sachsen-Anhalt has no autonomous external-border asylum-procedure competence.","distribution_time":"Asylsuchende, Grenzregionen/Behörden, Kommunen mittelbar; kurzfristig bis Verfahrensende.","boundaries_noncompensation":["Asyl-/Schutzprüfung","Non-refoulement","effektiver Rechtsschutz","Kinder-/Familienrechte"],"data_falsification":["Verfahrensdauer","Entscheidungsqualität/Rechtsmittelkorrekturen","Kapazität","besondere Schutzbedarfe","Rückkehr/Weiterleitung","Kosten"]
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-GAP-MIGRATION-P7-ADMISSION-PROGRAMS",
-      "source_locator":{"pdf_page":7,"section":"Sicherheit. Ordnung. Migrationswende.","after":"0009","before":"0010"},
-      "terminal_fach_status":"REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON","impact_direction":"OPEN","evidence_level":"NOT_ASSESSABLE",
-      "key_finding":"'Freiwillige Aufnahmeprogramme beenden' identifiziert kein konkretes Bundes-/Landesprogramm, Zielgruppe, Volumen oder Schutzgrund; ohne Policy-Objekt wären Kapazitäts-, Schutz-, Integrations- und Verteilungswirkungen frei erfunden.","problem_review":"behauptete Aufnahme-/Kapazitätsbelastung nicht programmbezogen quantifiziert.","goal_review":"Aufnahmekapazität und Schutzverantwortung müssen getrennt von Programmnamen bewertet werden.","mechanisms":[],"risks_conditions":["unbekannte Zielgruppe/Schutzlage","Bund/Land-Kompetenzmix","Verlagerung auf andere Zugangswege"],"competence_implementation":"OPEN/FEDERAL_OR_LAND depending on exact programme.","distribution_time":"nicht bestimmbar ohne Programm.","boundaries_noncompensation":["humanitärer Schutz","Familien-/Menschenrechte","Non-refoulement where applicable"],"data_falsification":["exact programme","legal basis","annual admissions","capacity/cost","protection outcomes","alternative pathways"]
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-GAP-MIGRATION-P7-FAMILY-REUNIFICATION",
-      "source_locator":{"pdf_page":7,"section":"Sicherheit. Ordnung. Migrationswende.","after":"0009","before":"0010"},
-      "terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"MEDIUM",
-      "key_finding":"Der Familiennachzug zu subsidiär Schutzberechtigten ist seit 24.07.2025 gesetzlich bis 23.07.2027 ausgesetzt; die Programmforderung ist damit zunächst Status-quo-Fortführung. Sie kann Zuzug und kurzfristige Aufnahmebelastung mindern, hält aber Familien getrennt und kann Integrations-, Wohlbefindens- und Härtefallkosten erhöhen; eine Verlängerungsdauer nennt das Programm nicht.","problem_review":"Aufnahme-/Integrationskapazität war Begründung des Bundesgesetzes; kausale Nettoentlastung gegenüber Familien-/Integrationsfolgen muss empirisch geprüft werden.","goal_review":"tragfähige Aufnahme-/Integrationssysteme bei verhältnismäßigem Schutz von Familienleben; Fortdauer ist Instrument, kein Endziel.","mechanisms":["Aussetzung -> weniger erteilte Familiennachzugsvisa -> geringere unmittelbare Aufnahmezahl; Gegenpfad Familienseparation -> mögliche Integrations-/psychosoziale Belastung"],"risks_conditions":["Härtefälle","Familientrennung","Verlagerung/irreguläre Wege","Integrationshemmnisse","unklarer Verlängerungshorizont"],"competence_implementation":"FEDERAL Aufenthaltsrecht; Land kann politisch initiieren, nicht autonom verlängern.","distribution_time":"subsidiär Schutzberechtigte/Familien, Kommunen/Integrationssystem; bis 23.07.2027 current baseline, spätere Wirkung abhängig von Folgeregel.","boundaries_noncompensation":["Familienleben/Art-8-EMRK-relevanter Schutz","Härtefallzugänge","Kindeswohl"],"data_falsification":["Visa/Wartelisten","Härtefälle","kommunale Aufnahme-/Integrationskapazität","Arbeits-/Spracherwerb","psychosoziale Belastung","irreguläre Folgewege"]
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-GAP-MIGRATION-P7-RETURNS-AFG-SYR-IRQ",
-      "source_locator":{"pdf_page":7,"section":"Sicherheit. Ordnung. Migrationswende.","after":"0010","before":"0011"},
-      "terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW",
-      "key_finding":"Mehr tatsächlich vollziehbare Rückführungen können die Durchsetzung bestandskräftiger Ausreisepflichten erhöhen; für Afghanistan, Syrien und Irak hängt rechtmäßiger Vollzug jedoch zwingend von individuellem Schutzstatus, aktuellen Gefahren, Identität/Reisedokumenten und Non-refoulement ab. Die Passage spezifiziert weder Fallgruppen noch Schutz-/Durchführungsbedingungen.","problem_review":"Vollzugshemmnisse können bestehen; ihre Ursachen und der Anteil für die drei Staaten sind nicht quantifiziert.","goal_review":"rechtmäßige, sichere und vollziehbare Rückkehr nach bestandskräftiger Entscheidung; Ländername allein ist kein Wirkungsziel.","mechanisms":["Bund schafft/organisiert Rückführungswege -> höherer Anteil vollziehbarer Rückkehrentscheidungen -> veränderte Aufenthalts-/Vollzugszahlen"],"risks_conditions":["Gefahrenlage ändert sich","fehlende Dokumente/Kooperation","rechtswidrige Rückführung","hohe Vollzugskosten","Rückkehrsicherheit"],"competence_implementation":"FEDERAL plus Länder-Ausländerbehörden; internationale Kooperation erforderlich.","distribution_time":"Ausreisepflichtige, Familien, Behörden/Kommunen, Herkunftsregionen; fall- und lageabhängig.","boundaries_noncompensation":["Non-refoulement","Leben/körperliche Unversehrtheit","individuelle Schutzprüfung","Rechtsschutz"],"data_falsification":["vollziehbare Fälle nach Staat/Schutzgrund","Gerichts-/BAMF-Entscheidungen","tatsächliche Rückführungen","Abbrüche/Rechtswidrigkeit","Kosten","post-return safety where verifiably available"]
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0011-SAFE-ORIGIN-SYRIA-IRAQ",
-      "parent_legacy_source_unit":"ltw-2026-st-cdu-0011-wir-werden-hierzu-eine-bundesratsinitiative-in-die-wege-le",
-      "terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW",
-      "key_finding":"Die im Primärtext fehlende Bezugsforderung ist die Einstufung Syriens und Iraks als sichere Herkunftsstaaten. Eine solche Einstufung kann Verfahren beschleunigen, verändert aber Beweis-/Verfahrenspositionen und ist nur tragfähig, wenn die gesetzlichen Sicherheitskriterien belastbar erfüllt bleiben; Syrien und Irak stehen aktuell weder in AsylG Anlage II noch in der seit 02.02.2026 geltenden Bundesverordnungsliste.","problem_review":"lange/komplexe Verfahren sind möglich, aber der Herkunftsstaatstatus ist nicht automatisch ihr bindender Engpass.","goal_review":"zügige korrekte Einzelfallentscheidungen; 'sicher' ist gesetzlich-evidenzgebundene Klassifikation, kein politischer Outcome.","mechanisms":["sichere-Herkunft-Klassifikation -> beschleunigte/anders vermutete Prüfung mit individueller Widerlegungsmöglichkeit -> veränderte Verfahrensdauer/Entscheidungsmuster"],"risks_conditions":["Lageverschlechterung","regionale/personenbezogene Verfolgung","Fehlklassifikation","Rechtsmittel-/Schutzrisiken"],"competence_implementation":"FEDERAL. Current AsylG also provides federal regulatory designation under §29b; a Land Bundesrat initiative is advocacy, not direct designation.","distribution_time":"Asylsuchende aus Syrien/Irak, BAMF/Gerichte/Länderbehörden; Wirkung ab konkreter Bundesregel.","boundaries_noncompensation":["Art-16a/Asylrecht","internationaler Schutz","Non-refoulement","individuelle Widerlegung/Rechtsschutz"],"data_falsification":["aktuelle Lage-/Schutzdaten","Anerkennungs-/Schutzquoten differenziert","Verfahrensdauer","Rechtsmittelkorrekturen","individuelle Ausnahmen","Verordnungs-/Gesetzesstatus"]
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0013-FOREIGNER-AUTHORITIES",
-      "parent_legacy_source_unit":"ltw-2026-st-cdu-0013-leistungsfaehige-auslaenderbehoerden-beschleunigte-verfahr",
-      "terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"LOW",
-      "key_finding":"Ausreichend leistungsfähige Ausländerbehörden können Bearbeitungsstaus, Fehler und Wartezeiten reduzieren; zusätzliche Wirkung setzt belegte Personal-/Prozess-/IT-Engpässe und Qualitätsmetriken voraus.","problem_review":"Verwaltungskapazität plausibler Engpass, lokal zu messen.","goal_review":"rechtzeitige, rechtmäßige, fehlerarme Entscheidungen statt bloßer Fallzahl.","mechanisms":["Personal/Prozess/IT-Kapazität -> kürzere Bearbeitung/mehr first-time-right -> geringere Warte-/Vollzugsfriktion"],"risks_conditions":["Fachkräftemangel","IT-/Schnittstellenprobleme","Qualität gegen Tempo"],"competence_implementation":"LAND/COMMUNAL administration with federal law dependencies.","distribution_time":"Antragstellende, Kommunen, Beschäftigte; kurz-/mittelfristig.","boundaries_noncompensation":["rechtliches Gehör/Rechtsschutz","Datenschutz","Nichtdiskriminierung"],"data_falsification":["Backlog","Bearbeitungszeit","Fehler/Widerspruch","Personal/Fall","Digital first-time-right","Nutzer-/Beschäftigtenbelastung"]
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0013-FASTER-PROCEDURES",
-      "parent_legacy_source_unit":"ltw-2026-st-cdu-0013-leistungsfaehige-auslaenderbehoerden-beschleunigte-verfahr",
-      "terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW",
-      "key_finding":"Kürzere Verfahren können Unsicherheit und Verwaltungskosten senken; wenn Beschleunigung Anhörung, Sachverhaltsprüfung oder Rechtsmittelzugang schwächt, steigen Fehlentscheidungs- und Folgekosten.","problem_review":"Verfahrensdauer nur material, wenn Baseline/Verzögerungsursachen belegt.","goal_review":"schnell und richtig, nicht Geschwindigkeit allein.","mechanisms":["Prozessänderung/Kapazität -> kürzere Durchlaufzeit -> frühere Klarheit/Umsetzung"],"risks_conditions":["Qualitätsverlust","Rework/Rechtsmittel","komplexe Schutzfälle"],"competence_implementation":"MULTI_LEVEL depending on process; Land administrative levers within federal/EU law.","distribution_time":"Antragstellende/Behörden/Kommunen; kurzfristig.","boundaries_noncompensation":["Verfahrensfairness","Rechtsschutz","Schutzprüfung"],"data_falsification":["Median/P90 Dauer","first-time-right","Widerspruch/Gerichtskorrektur","Kosten/Fall","Schutzfall-Komplexität"]
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0013-CENTRAL-RECEPTION",
-      "parent_legacy_source_unit":"ltw-2026-st-cdu-0013-leistungsfaehige-auslaenderbehoerden-beschleunigte-verfahr",
-      "terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW",
-      "key_finding":"Zentrale Erstaufnahme kann spezialisierte Prozesse und Skaleneffekte bündeln, kann aber Distanz, Überbelegung, Single-point-of-failure und lokale Belastung konzentrieren; optimale Zentralität hängt von Volumen, Schutzbedarf und Weiterverteilung ab.","problem_review":"Fragmentierungs-/Skalenproblem muss gegen zentrale Kapazitätsrisiken gemessen werden.","goal_review":"sichere, effiziente, bedarfsgerechte Aufnahme und zügige Weiterleitung.","mechanisms":["Bündelung -> standardisierte Registrierung/Versorgung/Weiterleitung -> mögliche Effizienz"],"risks_conditions":["Überbelegung","Distanz zu Diensten/Rechtshilfe","Ausfall/Cluster-Risiko","lokale Konzentration"],"competence_implementation":"LAND within asylum/reception law.","distribution_time":"Bewohner, Standortkommune, Dienste; kurz-/mittelfristig.","boundaries_noncompensation":["menschenwürdige Unterbringung","Kinder-/Vulnerablenschutz","Gesundheit/Sicherheit"],"data_falsification":["Belegung/Kapazität","Aufenthaltsdauer","Gesundheit/Sicherheit","Weiterleitungszeit","Kosten","Beschwerden/Schutzbedarfe"]
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0013-PAYMENT-CARD",
-      "parent_legacy_source_unit":"ltw-2026-st-cdu-0013-leistungsfaehige-auslaenderbehoerden-beschleunigte-verfahr",
-      "terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW",
-      "key_finding":"Eine Bezahlkarte kann Bargeld-/Auszahlungsprozesse standardisieren und Verwaltung vereinfachen; Wirkung auf Zuwanderungsanreize oder kommunale Entlastung ist nicht aus dem Instrument selbst ableitbar, während Nutzbarkeit, Gebühren, Teilhabe und administrative Ausnahmen relevante Gegenpfade sind.","problem_review":"konkreter Verwaltungs-/Missbrauchsengpass und behauptete Anreizwirkung getrennt belegen.","goal_review":"effiziente rechtmäßige Leistungsgewährung bei alltagstauglicher Teilhabe.","mechanisms":["Kartenzahlung/Bargeldbegrenzung -> veränderte Auszahlung/Nutzung -> mögliche Prozess-/Transaktionswirkung"],"risks_conditions":["Akzeptanzstellen","Gebühren/Technikausfall","Stigmatisierung","Ausnahmen","zusätzlicher Verwaltungsaufwand"],"competence_implementation":"LAND implementation within federal AsylbLG framework.","distribution_time":"Leistungsberechtigte, Kommunen, Händler; unmittelbar.","boundaries_noncompensation":["Existenzminimum","Nichtdiskriminierung","Datenschutz","praktische Zugänglichkeit"],"data_falsification":["Verwaltungskosten","Fehler/Ausnahmen","Akzeptanz/Nutzung","Gebühren","Beschwerden","keine Kausalbehauptung zu Migration ohne geeignetes Design"]
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0017-PUBLIC-CLEANLINESS",
-      "parent_legacy_source_unit":"ltw-2026-st-cdu-0017-die-sicherheit-derjenigen-erhoehen-die-fuer-unsere-sicherh",
-      "terminal_fach_status":"REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON","impact_direction":"OPEN","evidence_level":"NOT_ASSESSABLE",
-      "key_finding":"'konsequenter gegen Verschmutzungen vorgehen' nennt weder Instrument, Vollzugsintensität noch Baseline und ist deshalb als eigenständiger Wirkpfad noch nicht bewertbar.","problem_review":"Verschmutzung ist orts-/artenabhängig; Materialität offen.","goal_review":"sauberer, sicherer öffentlicher Raum; Sanktion/Mehrkontrolle ist Instrument.","mechanisms":[],"risks_conditions":["Fehlpriorisierung","ungleiche Kontrolldichte","Verwaltungskosten"],"competence_implementation":"COMMUNAL/LAND framework depending on instrument.","distribution_time":"öffentliche Räume/Nutzende; offen.","boundaries_noncompensation":["Verhältnismäßigkeit","Nichtdiskriminierung"],"data_falsification":["exact instrument","litter baseline","complaints/cleanliness","enforcement cost","distribution"]
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0017-PEPPER-SPRAY-PILOT",
-      "parent_legacy_source_unit":"ltw-2026-st-cdu-0017-die-sicherheit-derjenigen-erhoehen-die-fuer-unsere-sicherh",
-      "terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW",
-      "key_finding":"Ein eng begrenzter Pfefferspray-Pilot kann Eigensicherung kommunaler Vollzugsbediensteter verbessern, erzeugt aber Verletzungs-/Fehlanwendungs-/Eskalationsrisiken; Pilotwert entsteht nur mit klaren Einsatzregeln und Evaluation gegen Alternativen.","problem_review":"Bedrohungslagen plausibel, Häufigkeit/Schwere und Alternativenbedarf offen.","goal_review":"Eigensicherung mit möglichst geringem Zwang/Schaden.","mechanisms":["zusätzliches Zwangsmittel -> veränderte Reaktion in Bedrohungslage -> mögliche Verletzungs-/Sicherheitswirkung"],"risks_conditions":["Fehlanwendung","Gesundheitsrisiken","Eskalation","unzureichendes Training"],"competence_implementation":"LAND/COMMUNAL legal authorization and training required.","distribution_time":"Vollzugsbedienstete und betroffene Personen; unmittelbar.","boundaries_noncompensation":["körperliche Unversehrtheit","Verhältnismäßigkeit","Dokumentation/Rechtsschutz"],"data_falsification":["Einsatzfälle","Verletzungen","Alternativen","Training","Beschwerden","Pilot-stop/scale rule"]
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0018-TRAINING-EXPANSION",
-      "parent_legacy_source_unit":"ltw-2026-st-cdu-0018-das-institut-fuer-brand-und-katastrophenschutz-in-heyroths",
-      "terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"LOW",
-      "key_finding":"Mehr bedarfsgerechte Lehrgänge können Qualifikationsengpässe im Brand-/Katastrophenschutz reduzieren; zusätzliche Plätze wirken nur bei ausreichenden Lehrkräften, Teilnahme und Kompetenztransfer.","problem_review":"Ausbildungsbedarf plausibel; Wartelisten/Skill gaps als Baseline erforderlich.","goal_review":"einsatzrelevante Kompetenz und Verfügbarkeit, nicht Kurszahl.","mechanisms":["mehr Trainingskapazität -> mehr qualifizierte Einsatzkräfte -> mögliche bessere Einsatzfähigkeit"],"risks_conditions":["Trainerengpass","Teilnahme-/Freistellungsprobleme","Quantität vor Qualität"],"competence_implementation":"LAND IBK/Haushalt.","distribution_time":"Feuerwehren/Hilfsorganisationen/Regionen; mittel-/langfristig.","boundaries_noncompensation":["Arbeitsschutz","Ausbildungsqualität"],"data_falsification":["Wartelisten","Abschluss/Kompetenz","Teilnahme nach Region/Organisation","Einsatzperformance","Kosten"]
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0018-DIGITAL-TRAINING",
-      "parent_legacy_source_unit":"ltw-2026-st-cdu-0018-das-institut-fuer-brand-und-katastrophenschutz-in-heyroths",
-      "terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"LOW",
-      "key_finding":"Digitale Aus-/Fortbildung kann Zugang, Wiederholung und Reichweite erhöhen, ersetzt aber praktische Übungen bei einsatzkritischen Fähigkeiten nicht.","problem_review":"Reise-/Kapazitätsfriktion plausibel; Lernformatbedarf offen.","goal_review":"wirksame Kompetenzbildung mit passendem digital/praktisch-Mix.","mechanisms":["digitale Module -> flexibler Zugang/Wiederholung -> mögliche Kompetenz-/Reichweitensteigerung"],"risks_conditions":["Praxisdefizit","digitale Barrieren","geringe Interaktion"],"competence_implementation":"LAND IBK.","distribution_time":"Ehren-/Hauptamtliche mit unterschiedlicher digitaler Zugänglichkeit; kurzfristiger Zugang, längerfristige Kompetenz.","boundaries_noncompensation":["Sicherheitskritische Praxisstandards","Barrierefreiheit"],"data_falsification":["Teilnahme/Abschluss","Lernerfolg","Transfer","Praxiskompetenz","regionale Reichweite"]
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0018-IBK-CAPEX",
-      "parent_legacy_source_unit":"ltw-2026-st-cdu-0018-das-institut-fuer-brand-und-katastrophenschutz-in-heyroths",
-      "terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"LOW",
-      "key_finding":"Mehr als 70 Mio. Euro für Simulation, Lager, Unterkünfte und Übungsgelände können Ausbildungs-/Logistikkapazität und Realitätsnähe erhöhen; Bauausgabe ist jedoch Input und muss gegen Nutzung, Lebenszykluskosten und reale Fähigkeitslücken geprüft werden.","problem_review":"Asset-/Kapazitätsengpass muss je Teilinvestition belegt werden.","goal_review":"resiliente Ausbildung/Logistik und bessere Einsatzfähigkeit, nicht Mittelabfluss.","mechanisms":["modernisierte Assets -> höhere/sicherere Trainings-/Logistikkapazität -> mögliche Fähigkeitsverbesserung"],"risks_conditions":["Baukosten/-verzug","Unterauslastung","Folgekosten","falsche Kapazitätsdimensionierung"],"competence_implementation":"LAND capex/procurement.","distribution_time":"landesweite Einsatzorganisationen; mehrjährig/langlebig.","boundaries_noncompensation":["Bau-/Arbeitssicherheit","Lebenszyklus/Umwelt"],"data_falsification":["Zeit/Kosten","Auslastung","Kapazität","Trainingsqualität","Betriebs-/Instandhaltungskosten","Einsatzfähigkeit"]
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0025-GRANT-SIMPLIFICATION",
-      "parent_legacy_source_unit":"ltw-2026-st-cdu-0025-unsere-kommunen-als-herzkammern-der-demokratie-staerken-in",
-      "terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"LOW",
-      "key_finding":"Einfachere Förderverfahren können kommunale Transaktionskosten und Zugangsbarrieren senken, wenn Schutz-, Nachweis- und Kontrollfunktionen erhalten bleiben.","problem_review":"Bürokratie-/Antragsaufwand plausibel, Prozessbaseline erforderlich.","goal_review":"mehr wirksame lokale Umsetzung pro Verwaltungsaufwand, nicht weniger Regeln als Selbstzweck.","mechanisms":["weniger redundante Schritte -> geringerer Antrags-/Prüfaufwand -> höhere Nutzbarkeit/Umsetzungskapazität"],"risks_conditions":["schwächere Kontrolle","Mitnahme","ungleicher Zugang bei verbleibender Komplexität"],"competence_implementation":"LAND programme design.","distribution_time":"Kommunen, besonders kleine/ressourcenschwache; kurzfristige Prozesswirkung.","boundaries_noncompensation":["Haushalts-/Korruptionskontrolle","Rechtsgleichheit"],"data_falsification":["Bearbeitungszeit","Antragsaufwand","Erfolgs-/Abbruchquote nach Kommune","Fehler/Rückforderung","Projektoutcome"]
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0025-LUMP-SUMS",
-      "parent_legacy_source_unit":"ltw-2026-st-cdu-0025-unsere-kommunen-als-herzkammern-der-demokratie-staerken-in",
-      "terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"LOW",
-      "key_finding":"Mehr Pauschalzahlungen können lokale Flexibilität und Geschwindigkeit erhöhen und Zweckbindungsaufwand reduzieren; Wirkung hängt an fairer Verteilungsformel, Transparenz und kommunaler Steuerungskapazität.","problem_review":"starre Mittelbindung kann lokale Passung reduzieren; Materialität je Förderstrom offen.","goal_review":"lokal bedarfsgerechte, rechenschaftsfähige Mittelverwendung.","mechanisms":["flexiblere Mittel -> lokale Priorisierung -> mögliche bessere Bedarfs-/Zeitpassung"],"risks_conditions":["ungleiche Steuerungskapazität","Unterfinanzierung strukturschwacher Kommunen","geringere Zwecktransparenz"],"competence_implementation":"LAND finance/programme rules.","distribution_time":"Kommunen nach Formel/Bedarf; budgetjährlich/mittelfristig.","boundaries_noncompensation":["Transparenz","Mindest-/Schutzpflichten","faire Verteilung"],"data_falsification":["Verwaltungsaufwand","Verwendungsflexibilität","regionale Verteilung","Output/Outcome pro Euro","Auditbefunde"]
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0025-EXPERIMENT-CLAUSES",
-      "parent_legacy_source_unit":"ltw-2026-st-cdu-0025-unsere-kommunen-als-herzkammern-der-demokratie-staerken-in",
-      "terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"AMBIVALENT","evidence_level":"LOW",
-      "key_finding":"Experimentierklauseln können lokal passende Innovation und Lernen ermöglichen; ohne Schutzgrenzen, Vergleichsdesign und Rückholregel können Rechtsungleichheit, Fragmentierung oder dauerhaft schlechtere Standards entstehen.","problem_review":"starre Landesregel kann lokal unpassend sein, muss je Norm belegt werden.","goal_review":"evidenzbasiertes Lernen/Anpassung bei gewahrten Mindeststandards.","mechanisms":["befristete Abweichung -> alternative lokale Umsetzung -> Vergleich/Lernen -> ggf. Regelanpassung"],"risks_conditions":["Rechtsfragmentierung","schwache Evaluation","Pilot wird dauerhaft ohne Evidenz","ungleiche Rechte/Services"],"competence_implementation":"LAND legislation with municipal implementation.","distribution_time":"Pilotkommunen vs andere Kommunen; befristet, mit späterem Scale/Stop.","boundaries_noncompensation":["Grundrechte","gesetzliche Mindest-/Schutzstandards","Rechtsgleichheit"],"data_falsification":["prädefinierte Hypothese","Vergleich/Kontrolllogik","Kosten/Qualität","Rechts-/Beschwerdeeffekte","sunset/scale decision"]
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0025-INTERMUNICIPAL-COOP",
-      "parent_legacy_source_unit":"ltw-2026-st-cdu-0025-unsere-kommunen-als-herzkammern-der-demokratie-staerken-in",
-      "terminal_fach_status":"EDITORIAL_V2_PLUS_APPROVED","impact_direction":"POSITIVE","evidence_level":"LOW",
-      "key_finding":"Interkommunale Kooperation kann Skaleneffekte, Fachkräfte-/IT-Teilung und robustere Dienste schaffen, wenn Verantwortlichkeit, Kosten-/Nutzenverteilung und lokale Erreichbarkeit klar bleiben.","problem_review":"Kleinteilige Kapazitäts-/Fachkräfteengpässe plausibel, servicebezogene Baseline nötig.","goal_review":"bessere Servicequalität/Resilienz pro Ressource bei demokratischer Verantwortlichkeit.","mechanisms":["gemeinsame Dienste/Assets -> geteilte Fixkosten/Kompetenz -> mögliche Qualitäts-/Resilienzsteigerung"],"risks_conditions":["Koordinationskosten","Distanz","unklare Verantwortung","ungleiche Lastenteilung"],"competence_implementation":"LAND enabling framework + COMMUNAL agreements.","distribution_time":"beteiligte Kommunen/Bürger; mittel-/langfristig.","boundaries_noncompensation":["kommunale Selbstverwaltung","Zugang/Service-Mindestniveau","Transparenz"],"data_falsification":["Kosten/Servicefall","Qualität/Erreichbarkeit","Personalabdeckung","Ausfallsicherheit","Zufriedenheit/Beschwerden"]
-    },
-    {
-      "source_unit_id":"ST-CDU-PRIMARY-SPLIT-0025-LAND-MUNICIPAL-DIALOGUE",
-      "parent_legacy_source_unit":"ltw-2026-st-cdu-0025-unsere-kommunen-als-herzkammern-der-demokratie-staerken-in",
-      "terminal_fach_status":"REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON","impact_direction":"OPEN","evidence_level":"NOT_ASSESSABLE",
-      "key_finding":"'regelmäßiger Austausch' ist ohne Entscheidungs-/Feedbackmechanismus, Teilnehmerstruktur und Umsetzungsregel ein Prozessoutput, kein eigenständig bewertbarer Wirkhebel.","problem_review":"Informations-/Koordinationslücke nicht spezifiziert.","goal_review":"bessere Land-Kommunen-Entscheidungsqualität; Sitzungsfrequenz ist kein Outcome.","mechanisms":[],"risks_conditions":["symbolische Beteiligung","Selektionsbias","keine Rückkopplung"],"competence_implementation":"LAND/COMMUNAL governance.","distribution_time":"Kommunen/Verbände; offen.","boundaries_noncompensation":["transparente/faire Beteiligung"],"data_falsification":["konkreter Feedbackkanal","Response/decision changes","repräsentative Beteiligung","Umsetzungsquote"]
-    }
-  ],
-  "continuation_relations": [
-    {"parent":"0008","child":"0009","relation":"PRIMARY_BULLET_CONTINUATION"},
-    {"parent":"0019","children":["0020","0021","0022","0023","0024"],"relation":"PRIMARY_BULLET_CONTINUATIONS","note":"Historical IDs remain; no silent merge/delete."}
-  ],
-  "source_authority_notes": [
-    {"topic":"biogeographic DNA","source":"https://www.gesetze-im-internet.de/stpo/__81e.html","finding":"Current §81e StPO permits, for unknown trace origin, eye/hair/skin colour and age; the programme's additional biogeographic analysis therefore needs a concrete federal legal basis and validated definition."},
-    {"topic":"EU asylum border procedure","source":"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202401348","finding":"Regulation (EU) 2024/1348 applies from 12 June 2026 and contains asylum border procedures; programme additionality is therefore limited/implementation-dependent."},
-    {"topic":"family reunification subsidiary protection","source":"https://www.gesetze-im-internet.de/aufenthg_2004/__104.html","finding":"§104(14) suspends §36a family reunification until 23 July 2027; current baseline is already suspension."},
-    {"topic":"safe countries of origin","source":"https://www.gesetze-im-internet.de/asylvfg_1992/anlage_ii.html","finding":"Current statutory list does not include Syria or Iraq."},
-    {"topic":"safe countries federal regulation","source":"https://www.gesetze-im-internet.de/intschsiherkstbestv/BJNR0130A0026.html","finding":"Federal regulation effective 2 February 2026 lists ten countries and not Syria/Iraq; AsylG §29b provides current federal regulatory route."}
-  ],
+  "canonical_manifest_target": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-source-unit-manifest-v2.json",
   "common_241_layers": {
-    "dns_reference":"REVIEWED_PENDING_EXACT_REGISTRY_MAPPING",
-    "state_gfa_enap_benchmark":"NOT_APPLICABLE",
-    "recommendation":"NOT_AVAILABLE_AT_SOURCE_UNIT_LEVEL_DO_NOT_SYNTHESIZE",
-    "material_omissions":"Each child carries exact baseline/instrument/evidence gaps; public parent score prohibited where multi-mechanistic.",
-    "policy_coherence":"Security effectiveness must be checked with rights/data protection; migration enforcement with individual protection/non-refoulement; municipal autonomy with equality/control; resilience capacity with lifecycle cost.",
-    "delivery_feasibility":"Explicit Land/Federal/EU/multi-level competence and implementation dependencies are retained per child.",
-    "resource_financing":"Personnel, IT, training, infrastructure and administrative reforms require real capacity/lifecycle cost; budget/output is not outcome.",
-    "spatial_distribution":"Police/municipal/resilience services and migration administration vary materially by region/site; centralization may redistribute burden/access.",
-    "international_leakage":"Material mainly for migration/return and cross-border security; not inferred for local administrative children.",
-    "robustness_stress_test":"High demand, cyber/system failure, staffing shortage, legal change, geopolitical/migration shocks and extreme events where relevant.",
-    "reversibility_lockin":"IT/data architecture and infrastructure can lock in; pilots/temporary clauses require explicit stop/scale rules.",
-    "falsification_triggers":"Object-specific metrics are stored per child; no success by implementation/output count alone.",
-    "lifecycle_traceability":"Programme -> competent legal/budget/programme act -> implementation/capability -> use -> state/outcome -> reality check; advocacy is not implementation.",
-    "version_delta":"Historical source IDs/text preserved; all splits/additions are additive and parent-child versioned.",
-    "communication_media_impact":"Security/migration framing is not converted into effect direction; only passage-bound framing may be reviewed separately."
+    "communication_media_impact": "Security/migration framing is not converted into effect direction; only passage-bound framing may be reviewed separately.",
+    "delivery_feasibility": "Explicit Land/Federal/EU/multi-level competence and implementation dependencies are retained per child.",
+    "dns_reference": "REVIEWED_PENDING_EXACT_REGISTRY_MAPPING",
+    "falsification_triggers": "Object-specific metrics are stored per child; no success by implementation/output count alone.",
+    "international_leakage": "Material mainly for migration/return and cross-border security; not inferred for local administrative children.",
+    "lifecycle_traceability": "Programme -> competent legal/budget/programme act -> implementation/capability -> use -> state/outcome -> reality check; advocacy is not implementation.",
+    "material_omissions": "Each child carries exact baseline/instrument/evidence gaps; public parent score prohibited where multi-mechanistic.",
+    "policy_coherence": "Security effectiveness must be checked with rights/data protection; migration enforcement with individual protection/non-refoulement; municipal autonomy with equality/control; resilience capacity with lifecycle cost.",
+    "recommendation": "NOT_AVAILABLE_AT_SOURCE_UNIT_LEVEL_DO_NOT_SYNTHESIZE",
+    "resource_financing": "Personnel, IT, training, infrastructure and administrative reforms require real capacity/lifecycle cost; budget/output is not outcome.",
+    "reversibility_lockin": "IT/data architecture and infrastructure can lock in; pilots/temporary clauses require explicit stop/scale rules.",
+    "robustness_stress_test": "High demand, cyber/system failure, staffing shortage, legal change, geopolitical/migration shocks and extreme events where relevant.",
+    "spatial_distribution": "Police/municipal/resilience services and migration administration vary materially by region/site; centralization may redistribute burden/access.",
+    "state_gfa_enap_benchmark": "NOT_APPLICABLE",
+    "version_delta": "Historical source IDs/text preserved; all splits/additions are additive and parent-child versioned."
   },
   "completion_state": {
-    "new_or_split_units_terminal": 31,
-    "known_absent_primary_mechanisms_restored_in_this_shard": 4,
-    "open_restore_gaps_in_this_segment": 0,
-    "full_programme_primary_parity": false,
     "authoritative_denominator_frozen": false,
-    "terminal_marker":"ST_CDU_P5_P9_PRIMARY_SOURCE_DIFF = PASS_SEGMENT_ONLY"
-  }
+    "full_programme_primary_parity": false,
+    "known_absent_primary_mechanisms_restored_in_this_shard": 4,
+    "new_or_split_units_terminal": 31,
+    "open_restore_gaps_in_this_segment": 0,
+    "terminal_marker": "ST_CDU_P5_P9_PRIMARY_SOURCE_DIFF = PASS_SEGMENT_ONLY"
+  },
+  "continuation_relations": [
+    {
+      "child": "0009",
+      "parent": "0008",
+      "relation": "PRIMARY_BULLET_CONTINUATION"
+    },
+    {
+      "children": [
+        "0020",
+        "0021",
+        "0022",
+        "0023",
+        "0024"
+      ],
+      "note": "Historical IDs remain; no silent merge/delete.",
+      "parent": "0019",
+      "relation": "PRIMARY_BULLET_CONTINUATIONS"
+    }
+  ],
+  "denominator_status": "PENDING_FULL_PROGRAMME_SEGMENTATION_RULE",
+  "historical_ids_immutable": true,
+  "legacy_blob_sha": "6e8c53392d76e9847ee3028d241a988c12b3d2fb",
+  "legacy_register": "woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-cdu-zusagen.md",
+  "new_or_split_units": [
+    {
+      "boundaries_noncompensation": [
+        "Rechtsstaatlichkeit",
+        "Verhältnismäßigkeit",
+        "Grundrechte"
+      ],
+      "competence_implementation": "LAND; Haushalt, Ausbildung, Stellenplan, regionale Personalsteuerung.",
+      "data_falsification": [
+        "besetzte statt geplante Stellen",
+        "Ausbildungsabschluss/Verbleib",
+        "Einsatz-/Bearbeitungszeiten",
+        "regionale Präsenz",
+        "Beschwerden/Fehler",
+        "Kriminalitäts-/Sicherheitsindikatoren mit Attribution Guard"
+      ],
+      "distribution_time": "regional und schicht-/aufgabenspezifisch; Wirkung mittel- bis langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Reaktionsfähigkeit, Prävention und rechtsstaatliche Sicherheit sind Zielgrößen; Personalzahl ist Input.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Mehr Polizeivollzugs- und Verwaltungspersonal kann Präsenz, Bearbeitungskapazität und Reaktionsfähigkeit erhöhen, wenn Ausbildung, Besetzung und regionale Verteilung mitwachsen; Kopfzahl allein ist kein Sicherheitsoutcome.",
+      "mechanisms": [
+        "zusätzliche besetzte Stellen -> mehr verfügbare Einsatz-/Ermittlungs-/Verwaltungskapazität -> mögliche bessere Präsenz und Bearbeitung"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0003-weiter-in-die-landespolizei-investieren-fuer-eine-moderne",
+      "problem_review": "Kapazitätsbedarf plausibel, aber regionale Aufgaben-/Vakanz-/Einsatzbaseline erforderlich.",
+      "risks_conditions": [
+        "Ausbildungs- und Recruitingengpass",
+        "Fehlverteilung",
+        "Opportunitätskosten",
+        "mehr Befugnisnutzung ohne passende Qualitäts-/Aufsichtssicherung"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0003-POLICE-PERSONNEL-VISIBILITY",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Meinungs-/Vereinigungsfreiheit",
+        "Datenschutz",
+        "parlamentarische/gerichtliche Kontrolle"
+      ],
+      "competence_implementation": "LAND within constitutional/federal information-law constraints.",
+      "data_falsification": [
+        "konkreter Personal-/Analyseengpass",
+        "Qualität/Timeliness Lagebilder",
+        "gerichtliche/aufsichtliche Beanstandungen",
+        "nachweisbare Präventionsbeiträge ohne Output-Outcome-Verwechslung"
+      ],
+      "distribution_time": "Betroffene Überwachungs-/Prüfpersonen und Allgemeinheit; mittel-/langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Demokratische Sicherheit und frühzeitige Gefahrenaufklärung bei erhaltenen Freiheits- und Kontrollrechten.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Mehr Verfassungsschutzkapazität kann extremistische Gefahren früher erkennen; Wirkung hängt aber an enger gesetzlicher Zweckbindung, Qualität, Kontrolle und daran, ob zusätzliche Ressourcen tatsächlich einen belegten Engpass treffen.",
+      "mechanisms": [
+        "zusätzliche Fach-/Analyseressourcen -> bessere Informationsverarbeitung -> frühere Gefahrenhinweise"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0003-weiter-in-die-landespolizei-investieren-fuer-eine-moderne",
+      "problem_review": "Extremistische Gefahren sind ein legitimer Schutzgegenstand; aus dem Programm folgt keine quantifizierte Kapazitätslücke.",
+      "risks_conditions": [
+        "Fehlklassifikation",
+        "Überwachungsausweitung",
+        "politische Verzerrung",
+        "Daten-/Kooperationsfehler"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0003-CONSTITUTIONAL-PROTECTION-CAPACITY",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Verhältnismäßigkeit",
+        "Datenschutz",
+        "Nichtdiskriminierung",
+        "Rechtsschutz"
+      ],
+      "competence_implementation": "LAND; Polizei/weitere Stellen, klare Rechtsgrundlagen und Governance.",
+      "data_falsification": [
+        "validierte Risikokriterien",
+        "Interventionsqualität",
+        "Fehlalarmquote",
+        "schwere Ereignisse",
+        "Beschwerden/Rechtsschutz"
+      ],
+      "distribution_time": "konzentriert auf markierte Personen/Institutionen; kurzfristige Intervention, langfristige Evaluation.",
+      "evidence_level": "LOW",
+      "goal_review": "Schwere Gewaltrisiken früh und verhältnismäßig senken, nicht möglichst viele Personen markieren.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Strukturiertes Bedrohungsmanagement kann Hochrisikofälle früher bündeln und Interventionen koordinieren; ohne valide Kriterien entstehen Falschpositive, Stigmatisierung und unverhältnismäßige Eingriffe.",
+      "mechanisms": [
+        "multi-source case review -> priorisierte Intervention -> mögliche Risikoreduktion"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0006-ein-bedrohungs-und-gefaehrdungsmanagement-etablieren-die-b",
+      "problem_review": "Fragmentierte Risikoerkennung ist plausibler Koordinationsengpass; Häufigkeit/Fehlerkosten offen.",
+      "risks_conditions": [
+        "Falschpositive/Falschnegative",
+        "Stigmatisierung",
+        "Datenqualität",
+        "unklare Verantwortlichkeit"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0006-THREAT-MANAGEMENT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Zweckbindung",
+        "Datenschutz",
+        "Auditierbarkeit"
+      ],
+      "competence_implementation": "LAND with interagency dependencies.",
+      "data_falsification": [
+        "Bearbeitungszeit",
+        "Informationsqualität",
+        "Fallübergaben",
+        "Fehlentscheidungen",
+        "Ausfallsicherheit"
+      ],
+      "distribution_time": "behördenintern, mittelbar Bevölkerung; kurzfristige Prozesswirkung, Outcome später.",
+      "evidence_level": "LOW",
+      "goal_review": "höhere Analysequalität/Timeliness, nicht Zentralisierung als Selbstzweck.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Eine zentrale Gefahrenanalyse kann verstreute Signale konsistenter bewerten, wenn sie zusätzliche Erkenntnis statt bloßer Zentralisierung erzeugt und lokale Kontextinformation nicht verliert.",
+      "mechanisms": [
+        "standardisierte Zusammenführung -> bessere Muster-/Prioritätserkennung -> zielgerichtetere Entscheidungen"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0006-ein-bedrohungs-und-gefaehrdungsmanagement-etablieren-die-b",
+      "problem_review": "Informationsfragmentierung plausibel; heutige Prozessbaseline fehlt.",
+      "risks_conditions": [
+        "Single point of failure",
+        "Informationsüberlastung",
+        "Kontextverlust",
+        "Governanceunklarheit"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0006-CENTRAL-THREAT-ANALYSIS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Datenschutz",
+        "informationelle Selbstbestimmung",
+        "Zweckbindung",
+        "Rechtsschutz"
+      ],
+      "competence_implementation": "LAND plus federal/other-agency interfaces; role/access/data-retention rules required.",
+      "data_falsification": [
+        "qualitätsbereinigte Informationslücken",
+        "Zugriffs-/Missbrauchsvorfälle",
+        "Entscheidungsfehler",
+        "Cyberresilienz"
+      ],
+      "distribution_time": "Datenbetroffene und Sicherheitsbehörden; dauerhaft.",
+      "evidence_level": "LOW",
+      "goal_review": "rechtmäßige, relevante und rechtzeitige Information bei minimal notwendiger Datennutzung.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Behördenübergreifendes Datenmanagement kann Informationslücken reduzieren, erhöht aber zugleich Datenschutz-, Zugriffs-, Zweckänderungs- und Cyberrisiken; Mehrdaten sind nicht automatisch bessere Gefahrenentscheidungen.",
+      "mechanisms": [
+        "Interoperabilität/Zugriff -> weniger fehlende relevante Informationen -> mögliche bessere Lageentscheidung"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0006-ein-bedrohungs-und-gefaehrdungsmanagement-etablieren-die-b",
+      "problem_review": "konkrete Datenbruch-/Doppelarbeitsbaseline fehlt.",
+      "risks_conditions": [
+        "unbefugter Zugriff",
+        "falsche Daten",
+        "function creep",
+        "Cyberausfall"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0006-INTERAGENCY-DATA-MANAGEMENT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Leben/körperliche Unversehrtheit",
+        "Verhältnismäßigkeit",
+        "Dokumentation/Rechtsschutz"
+      ],
+      "competence_implementation": "LAND; procurement, police-law/use-of-force rules, training and reporting.",
+      "data_falsification": [
+        "Einsatzanzahl/Lage",
+        "Alternativeinsatzmittel",
+        "Verletzungen",
+        "Mehrfachanwendung",
+        "Beschwerden/gerichtliche Befunde",
+        "Training"
+      ],
+      "distribution_time": "Einsatzkräfte und von Zwang betroffene Personen; sofortige Wirkung.",
+      "evidence_level": "MEDIUM",
+      "goal_review": "Gefahrenlagen mit möglichst geringer Verletzung und verhältnismäßigem Zwang bewältigen.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Distanz-Elektroimpulsgeräte können in geeigneten Lagen eine Zwischenoption zwischen körperlichem Zwang und Schusswaffe bieten; sie tragen zugleich Verletzungs-, Fehlanwendungs- und Eskalationsrisiken und benötigen enge Einsatz-/Training-/Dokumentationsregeln.",
+      "mechanisms": [
+        "zusätzliche weniger-letale Einsatzoption -> veränderte Zwangsmittelwahl -> mögliche geringere/andere Verletzungsfolgen"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0007-die-landespolizei-weiterhin-modern-ausstatten-unsere-poliz",
+      "problem_review": "Ausrüstungs-/Eigensicherungsbedarf ist plausibel, aber Lagenspektrum und Alternativenbaseline fehlen.",
+      "risks_conditions": [
+        "medizinische Risiken",
+        "mission creep",
+        "Fehl-/Mehrfachanwendung",
+        "Trainingseffekt"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0007-TASER",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "öffentliche Sicherheit",
+        "Datenschutz",
+        "Luftverkehrssicherheit"
+      ],
+      "competence_implementation": "LAND police procurement/operations with aviation/frequency/federal constraints.",
+      "data_falsification": [
+        "reale Vorfälle",
+        "Detektionsgenauigkeit",
+        "Reaktionszeit",
+        "Fehlalarme",
+        "Abwehrfolgen",
+        "Lifecycle cost"
+      ],
+      "distribution_time": "kritische Orte/Veranstaltungen; kurzfristig, kontinuierliche Technikupdates.",
+      "evidence_level": "LOW",
+      "goal_review": "Gefahren erkennen und neutralisieren ohne neue Sicherheits-/Funk-/Datenschutzrisiken.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Detektions- und Abwehrtechnik kann kritische Lagen gegen missbräuchliche Drohnen resilienter machen, wenn konkrete Bedrohungen, Zuständigkeit und sichere Abwehrverfahren belegt sind.",
+      "mechanisms": [
+        "Detektion -> schnellere Lageerkennung -> geeignete Abwehr -> geringeres Schadensrisiko"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0007-die-landespolizei-weiterhin-modern-ausstatten-unsere-poliz",
+      "problem_review": "Drohnenrisiko plausibel, Exposition/Bestandslücke nicht quantifiziert.",
+      "risks_conditions": [
+        "Fehlalarm",
+        "Interferenz",
+        "Absturz-/Kollateralschäden",
+        "Technologieveraltung"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0007-DRONE-DEFENCE",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Datenschutz",
+        "Zweckbindung",
+        "IT-Sicherheit",
+        "Rechtsschutz"
+      ],
+      "competence_implementation": "MULTI_LEVEL Bund/Länder; Land modernisiert eigene IT und wirkt am Datenhaus mit.",
+      "data_falsification": [
+        "Such-/Bearbeitungszeit",
+        "Datenqualität",
+        "Zugriffsverletzungen",
+        "Cybervorfälle",
+        "Systemverfügbarkeit",
+        "nachweisbare Fallbeiträge"
+      ],
+      "distribution_time": "Polizeibehörden und Datenbetroffene; langfristige Infrastruktur.",
+      "evidence_level": "LOW",
+      "goal_review": "rechtzeitiger relevanter Datenzugriff bei minimaler, rollenbasierter Exposition.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Gemeinsame Polizei-Datenarchitektur kann Suche, Fallbezug und länderübergreifende Zusammenarbeit verbessern; universeller Zugriff ohne Need-to-know- und Qualitätsregeln vergrößert Missbrauchs-, Fehler- und Cyberfolgen.",
+      "mechanisms": [
+        "interoperable IT -> schnellerer Zugriff auf relevante Informationen -> mögliche bessere Ermittlungs-/Gefahrenentscheidung"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0007-die-landespolizei-weiterhin-modern-ausstatten-unsere-poliz",
+      "problem_review": "Interoperabilitätsfriktion plausibel; konkrete Such-/Datenlücke offen.",
+      "risks_conditions": [
+        "breite Zugriffsrechte",
+        "Datenfehler",
+        "Cyberangriff",
+        "Vendor lock-in"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0007-POLICE-DATAHOUSE-IT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Art-13-Wohnungsschutz",
+        "Privatsphäre",
+        "Opferschutz",
+        "Verhältnismäßigkeit"
+      ],
+      "competence_implementation": "LAND police law; constitutional dwelling/privacy safeguards and judicial review constraints apply.",
+      "data_falsification": [
+        "Gewalt/Verletzung",
+        "Aktivierungsquote",
+        "Beschwerden",
+        "Beweisnutzung",
+        "Datenschutzvorfälle",
+        "Subgruppen-/Lagensplit"
+      ],
+      "distribution_time": "Einsatzkräfte, Bewohner, Opfer/Unbeteiligte; unmittelbar.",
+      "evidence_level": "MEDIUM",
+      "goal_review": "Gewalt reduzieren und Einsätze nachvollziehbar machen bei eng begrenztem Eingriff.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Bodycams in Wohnungen können Einsatzdokumentation/Eigensicherung unterstützen, greifen im besonders geschützten Wohnraum aber intensiv in Privatsphäre und Rechte auch unbeteiligter Personen ein; Nutzen ist lage- und designabhängig.",
+      "mechanisms": [
+        "sichtbare Aufnahme/Dokumentation -> mögliche Verhaltensänderung + bessere Beweislage"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0008-den-rechtsrahmen-der-polizei-modern-fortentwickeln-der-ein",
+      "problem_review": "Gewalt-/Eigensicherungsrisiko in Wohnungen ist plausibel; spezifische Incident-/Evidenzbaseline erforderlich.",
+      "risks_conditions": [
+        "Deeskalation nicht garantiert",
+        "Aufzeichnung Opfer/Unbeteiligter",
+        "selektive Aktivierung",
+        "Datenspeicherung"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0008-BODYCAM-HOMES",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "informationelle Selbstbestimmung",
+        "Verhältnismäßigkeit",
+        "Nichtdiskriminierung"
+      ],
+      "competence_implementation": "LAND within police/data-protection law.",
+      "data_falsification": [
+        "ortsspezifische Vorfälle",
+        "Aufklärungsbeitrag",
+        "Verlagerung",
+        "Nutzung/Retention",
+        "Beschwerden",
+        "Vollkosten"
+      ],
+      "distribution_time": "Nutzende öffentlicher Räume, besonders häufig überwachte Orte/Gruppen; kurzfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "schwere Vorfälle verhindern/aufklären bei minimal erforderlicher Überwachung.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Mehr Videoschutz kann an konkret belasteten Orten Aufklärung und Lageerkennung unterstützen; flächige Ausweitung kann Verlagerung, Überwachung Unbeteiligter und hohe Kosten erzeugen, ohne Kriminalität ursächlich zu senken.",
+      "mechanisms": [
+        "Kameraabdeckung -> beobachtbare Ereignisse/Beweisdaten -> mögliche Detektion/Aufklärung/Abschreckung"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0008-den-rechtsrahmen-der-polizei-modern-fortentwickeln-der-ein",
+      "problem_review": "ortsspezifische Delikt-/Gefahrenbaseline erforderlich; keine flächige Problemannahme.",
+      "risks_conditions": [
+        "Verlagerung",
+        "Falschgefühl von Sicherheit",
+        "Privatsphäre",
+        "Betriebspersonal/Datenhaltung"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0008-PUBLIC-VIDEO",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Datenschutz",
+        "Nichtdiskriminierung",
+        "Transparenz/Rechtsschutz",
+        "Verhältnismäßigkeit"
+      ],
+      "competence_implementation": "LAND deployment subject to EU/federal data/AI/constitutional rules; exact use case determines legality.",
+      "data_falsification": [
+        "präregistrierte Detektionsziele",
+        "Sensitivität/Spezifität/PPV nach Gruppen",
+        "Interventionsnutzen",
+        "Beschwerden",
+        "Human override",
+        "Cyber/model drift"
+      ],
+      "distribution_time": "Passanten/markierte Personen und Polizei; unmittelbar, Modellrisiken dauerhaft.",
+      "evidence_level": "LOW",
+      "goal_review": "relevante Gefahren früher erkennen mit überprüfbarer Genauigkeit und rechtskonformen Grenzen.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Automatisierte Mustererkennung kann große Videoströme priorisieren, kann aber Fehlalarme, Bias, Intransparenz und Grundrechtseingriffe skalieren; ohne validiertes Zielereignis und Fehlerraten ist 'intelligent' kein Wirkungsnachweis.",
+      "mechanisms": [
+        "Algorithmus markiert Muster -> menschliche/operative Prüfung -> mögliche schnellere Intervention"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0008-den-rechtsrahmen-der-polizei-modern-fortentwickeln-der-ein",
+      "problem_review": "menschliche Auswertungs-/Reaktionsengpässe nicht konkret belegt.",
+      "risks_conditions": [
+        "False positives/negatives",
+        "Bias",
+        "Automation bias",
+        "Mass surveillance",
+        "unklare Modell-/Datenherkunft"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0008-AI-VIDEO",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Menschenwürde/Nichtdiskriminierung",
+        "Datenschutz",
+        "Unschuldsvermutung",
+        "Rechtsschutz"
+      ],
+      "competence_implementation": "FEDERAL criminal-procedure law required for the additional molecular-genetic determination; Land advocacy/implementation only after valid legal basis.",
+      "data_falsification": [
+        "exakte gesetzliche Merkmalsdefinition",
+        "validierte Fehler-/Kalibrationsraten",
+        "inkrementeller Ermittlungsnutzen",
+        "Fehlleitungen",
+        "Gruppeneffekte"
+      ],
+      "distribution_time": "Spurenbetroffene/populationsbezogen interpretierte Gruppen und Ermittlungen; unmittelbar.",
+      "evidence_level": "NOT_ASSESSABLE",
+      "goal_review": "präzisere Ermittlungspriorisierung ohne unzulässige Abstammungs-/Gruppenzuschreibungen.",
+      "impact_direction": "OPEN",
+      "key_finding": "Die Programmforderung nennt 'biogeographische Analyse', während §81e StPO bei unbekanntem Spurenverursacher aktuell Augen-, Haar- und Hautfarbe sowie Alter zulässt; ohne definierte biogeographische Merkmale, Validität und konkrete Bundesrechtsänderung ist keine belastbare Wirkungsrichtung möglich.",
+      "mechanisms": [
+        "zusätzliche DNA-basierte Merkmalschätzung -> geänderte Ermittlungspriorisierung"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0008-den-rechtsrahmen-der-polizei-modern-fortentwickeln-der-ein",
+      "problem_review": "Fehlleitungsrisiko in Ermittlungen plausibel; zusätzlicher Informationswert der nicht definierten Analyse nicht belegt.",
+      "risks_conditions": [
+        "Unsicherheit/populationsabhängige Fehlinterpretation",
+        "Diskriminierung/Profiling",
+        "Datenschutz",
+        "falsche Ermittlungsverengung"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0008-BIOGEOGRAPHIC-DNA",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Asyl-/Schutzprüfung",
+        "Non-refoulement",
+        "effektiver Rechtsschutz",
+        "Kinder-/Familienrechte"
+      ],
+      "competence_implementation": "EU/FEDERAL implementation; Sachsen-Anhalt has no autonomous external-border asylum-procedure competence.",
+      "data_falsification": [
+        "Verfahrensdauer",
+        "Entscheidungsqualität/Rechtsmittelkorrekturen",
+        "Kapazität",
+        "besondere Schutzbedarfe",
+        "Rückkehr/Weiterleitung",
+        "Kosten"
+      ],
+      "distribution_time": "Asylsuchende, Grenzregionen/Behörden, Kommunen mittelbar; kurzfristig bis Verfahrensende.",
+      "evidence_level": "MEDIUM",
+      "goal_review": "zügige, faire und rechtswirksame Schutzentscheidung; 'möglichst an der Grenze' ist Instrument-/Ortsebene.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Asylverfahren an EU-Außengrenzen sind seit 12.06.2026 bereits unionsrechtlich als Grenzverfahren geregelt; die Passage ist daher überwiegend Kontinuitäts-/Umsetzungspolitik, nicht ein neuer Landeshebel. Schnellere/geordnete Verfahren können Kapazität und Rückkehrentscheidungen beeinflussen, müssen aber vollständige Prüfung, Familien-/Minderjährigenschutz und Rechtsschutz sichern.",
+      "mechanisms": [
+        "Grenzverfahren -> frühere Prüfung/Entscheidung vor regulärer Einreise -> veränderte Verfahrensdauer/Weiterbewegung"
+      ],
+      "problem_review": "Verfahrens-/Sekundärmigrations- und Kapazitätsfragen werden bereits durch den EU-Pakt adressiert; zusätzliche Landesspezifik fehlt.",
+      "risks_conditions": [
+        "Kapazitätsengpass",
+        "Rechtsschutz-/Qualitätsrisiko",
+        "besondere Schutzbedarfe",
+        "lange faktische Aufenthaltsbeschränkung"
+      ],
+      "source_locator": {
+        "after": "0009",
+        "before": "0010",
+        "pdf_page": 7,
+        "section": "Sicherheit. Ordnung. Migrationswende."
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-MIGRATION-P7-BORDER-PROCEDURES",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "humanitärer Schutz",
+        "Familien-/Menschenrechte",
+        "Non-refoulement where applicable"
+      ],
+      "competence_implementation": "OPEN/FEDERAL_OR_LAND depending on exact programme.",
+      "data_falsification": [
+        "exact programme",
+        "legal basis",
+        "annual admissions",
+        "capacity/cost",
+        "protection outcomes",
+        "alternative pathways"
+      ],
+      "distribution_time": "nicht bestimmbar ohne Programm.",
+      "evidence_level": "NOT_ASSESSABLE",
+      "goal_review": "Aufnahmekapazität und Schutzverantwortung müssen getrennt von Programmnamen bewertet werden.",
+      "impact_direction": "OPEN",
+      "key_finding": "'Freiwillige Aufnahmeprogramme beenden' identifiziert kein konkretes Bundes-/Landesprogramm, Zielgruppe, Volumen oder Schutzgrund; ohne Policy-Objekt wären Kapazitäts-, Schutz-, Integrations- und Verteilungswirkungen frei erfunden.",
+      "mechanisms": [],
+      "problem_review": "behauptete Aufnahme-/Kapazitätsbelastung nicht programmbezogen quantifiziert.",
+      "risks_conditions": [
+        "unbekannte Zielgruppe/Schutzlage",
+        "Bund/Land-Kompetenzmix",
+        "Verlagerung auf andere Zugangswege"
+      ],
+      "source_locator": {
+        "after": "0009",
+        "before": "0010",
+        "pdf_page": 7,
+        "section": "Sicherheit. Ordnung. Migrationswende."
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-MIGRATION-P7-ADMISSION-PROGRAMS",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Familienleben/Art-8-EMRK-relevanter Schutz",
+        "Härtefallzugänge",
+        "Kindeswohl"
+      ],
+      "competence_implementation": "FEDERAL Aufenthaltsrecht; Land kann politisch initiieren, nicht autonom verlängern.",
+      "data_falsification": [
+        "Visa/Wartelisten",
+        "Härtefälle",
+        "kommunale Aufnahme-/Integrationskapazität",
+        "Arbeits-/Spracherwerb",
+        "psychosoziale Belastung",
+        "irreguläre Folgewege"
+      ],
+      "distribution_time": "subsidiär Schutzberechtigte/Familien, Kommunen/Integrationssystem; bis 23.07.2027 current baseline, spätere Wirkung abhängig von Folgeregel.",
+      "evidence_level": "MEDIUM",
+      "goal_review": "tragfähige Aufnahme-/Integrationssysteme bei verhältnismäßigem Schutz von Familienleben; Fortdauer ist Instrument, kein Endziel.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Der Familiennachzug zu subsidiär Schutzberechtigten ist seit 24.07.2025 gesetzlich bis 23.07.2027 ausgesetzt; die Programmforderung ist damit zunächst Status-quo-Fortführung. Sie kann Zuzug und kurzfristige Aufnahmebelastung mindern, hält aber Familien getrennt und kann Integrations-, Wohlbefindens- und Härtefallkosten erhöhen; eine Verlängerungsdauer nennt das Programm nicht.",
+      "mechanisms": [
+        "Aussetzung -> weniger erteilte Familiennachzugsvisa -> geringere unmittelbare Aufnahmezahl; Gegenpfad Familienseparation -> mögliche Integrations-/psychosoziale Belastung"
+      ],
+      "problem_review": "Aufnahme-/Integrationskapazität war Begründung des Bundesgesetzes; kausale Nettoentlastung gegenüber Familien-/Integrationsfolgen muss empirisch geprüft werden.",
+      "risks_conditions": [
+        "Härtefälle",
+        "Familientrennung",
+        "Verlagerung/irreguläre Wege",
+        "Integrationshemmnisse",
+        "unklarer Verlängerungshorizont"
+      ],
+      "source_locator": {
+        "after": "0009",
+        "before": "0010",
+        "pdf_page": 7,
+        "section": "Sicherheit. Ordnung. Migrationswende."
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-MIGRATION-P7-FAMILY-REUNIFICATION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Non-refoulement",
+        "Leben/körperliche Unversehrtheit",
+        "individuelle Schutzprüfung",
+        "Rechtsschutz"
+      ],
+      "competence_implementation": "FEDERAL plus Länder-Ausländerbehörden; internationale Kooperation erforderlich.",
+      "data_falsification": [
+        "vollziehbare Fälle nach Staat/Schutzgrund",
+        "Gerichts-/BAMF-Entscheidungen",
+        "tatsächliche Rückführungen",
+        "Abbrüche/Rechtswidrigkeit",
+        "Kosten",
+        "post-return safety where verifiably available"
+      ],
+      "distribution_time": "Ausreisepflichtige, Familien, Behörden/Kommunen, Herkunftsregionen; fall- und lageabhängig.",
+      "evidence_level": "LOW",
+      "goal_review": "rechtmäßige, sichere und vollziehbare Rückkehr nach bestandskräftiger Entscheidung; Ländername allein ist kein Wirkungsziel.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Mehr tatsächlich vollziehbare Rückführungen können die Durchsetzung bestandskräftiger Ausreisepflichten erhöhen; für Afghanistan, Syrien und Irak hängt rechtmäßiger Vollzug jedoch zwingend von individuellem Schutzstatus, aktuellen Gefahren, Identität/Reisedokumenten und Non-refoulement ab. Die Passage spezifiziert weder Fallgruppen noch Schutz-/Durchführungsbedingungen.",
+      "mechanisms": [
+        "Bund schafft/organisiert Rückführungswege -> höherer Anteil vollziehbarer Rückkehrentscheidungen -> veränderte Aufenthalts-/Vollzugszahlen"
+      ],
+      "problem_review": "Vollzugshemmnisse können bestehen; ihre Ursachen und der Anteil für die drei Staaten sind nicht quantifiziert.",
+      "risks_conditions": [
+        "Gefahrenlage ändert sich",
+        "fehlende Dokumente/Kooperation",
+        "rechtswidrige Rückführung",
+        "hohe Vollzugskosten",
+        "Rückkehrsicherheit"
+      ],
+      "source_locator": {
+        "after": "0010",
+        "before": "0011",
+        "pdf_page": 7,
+        "section": "Sicherheit. Ordnung. Migrationswende."
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-MIGRATION-P7-RETURNS-AFG-SYR-IRQ",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Art-16a/Asylrecht",
+        "internationaler Schutz",
+        "Non-refoulement",
+        "individuelle Widerlegung/Rechtsschutz"
+      ],
+      "competence_implementation": "FEDERAL. Current AsylG also provides federal regulatory designation under §29b; a Land Bundesrat initiative is advocacy, not direct designation.",
+      "data_falsification": [
+        "aktuelle Lage-/Schutzdaten",
+        "Anerkennungs-/Schutzquoten differenziert",
+        "Verfahrensdauer",
+        "Rechtsmittelkorrekturen",
+        "individuelle Ausnahmen",
+        "Verordnungs-/Gesetzesstatus"
+      ],
+      "distribution_time": "Asylsuchende aus Syrien/Irak, BAMF/Gerichte/Länderbehörden; Wirkung ab konkreter Bundesregel.",
+      "evidence_level": "LOW",
+      "goal_review": "zügige korrekte Einzelfallentscheidungen; 'sicher' ist gesetzlich-evidenzgebundene Klassifikation, kein politischer Outcome.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Die im Primärtext fehlende Bezugsforderung ist die Einstufung Syriens und Iraks als sichere Herkunftsstaaten. Eine solche Einstufung kann Verfahren beschleunigen, verändert aber Beweis-/Verfahrenspositionen und ist nur tragfähig, wenn die gesetzlichen Sicherheitskriterien belastbar erfüllt bleiben; Syrien und Irak stehen aktuell weder in AsylG Anlage II noch in der seit 02.02.2026 geltenden Bundesverordnungsliste.",
+      "mechanisms": [
+        "sichere-Herkunft-Klassifikation -> beschleunigte/anders vermutete Prüfung mit individueller Widerlegungsmöglichkeit -> veränderte Verfahrensdauer/Entscheidungsmuster"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0011-wir-werden-hierzu-eine-bundesratsinitiative-in-die-wege-le",
+      "problem_review": "lange/komplexe Verfahren sind möglich, aber der Herkunftsstaatstatus ist nicht automatisch ihr bindender Engpass.",
+      "risks_conditions": [
+        "Lageverschlechterung",
+        "regionale/personenbezogene Verfolgung",
+        "Fehlklassifikation",
+        "Rechtsmittel-/Schutzrisiken"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0011-SAFE-ORIGIN-SYRIA-IRAQ",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "rechtliches Gehör/Rechtsschutz",
+        "Datenschutz",
+        "Nichtdiskriminierung"
+      ],
+      "competence_implementation": "LAND/COMMUNAL administration with federal law dependencies.",
+      "data_falsification": [
+        "Backlog",
+        "Bearbeitungszeit",
+        "Fehler/Widerspruch",
+        "Personal/Fall",
+        "Digital first-time-right",
+        "Nutzer-/Beschäftigtenbelastung"
+      ],
+      "distribution_time": "Antragstellende, Kommunen, Beschäftigte; kurz-/mittelfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "rechtzeitige, rechtmäßige, fehlerarme Entscheidungen statt bloßer Fallzahl.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Ausreichend leistungsfähige Ausländerbehörden können Bearbeitungsstaus, Fehler und Wartezeiten reduzieren; zusätzliche Wirkung setzt belegte Personal-/Prozess-/IT-Engpässe und Qualitätsmetriken voraus.",
+      "mechanisms": [
+        "Personal/Prozess/IT-Kapazität -> kürzere Bearbeitung/mehr first-time-right -> geringere Warte-/Vollzugsfriktion"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0013-leistungsfaehige-auslaenderbehoerden-beschleunigte-verfahr",
+      "problem_review": "Verwaltungskapazität plausibler Engpass, lokal zu messen.",
+      "risks_conditions": [
+        "Fachkräftemangel",
+        "IT-/Schnittstellenprobleme",
+        "Qualität gegen Tempo"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0013-FOREIGNER-AUTHORITIES",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Verfahrensfairness",
+        "Rechtsschutz",
+        "Schutzprüfung"
+      ],
+      "competence_implementation": "MULTI_LEVEL depending on process; Land administrative levers within federal/EU law.",
+      "data_falsification": [
+        "Median/P90 Dauer",
+        "first-time-right",
+        "Widerspruch/Gerichtskorrektur",
+        "Kosten/Fall",
+        "Schutzfall-Komplexität"
+      ],
+      "distribution_time": "Antragstellende/Behörden/Kommunen; kurzfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "schnell und richtig, nicht Geschwindigkeit allein.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Kürzere Verfahren können Unsicherheit und Verwaltungskosten senken; wenn Beschleunigung Anhörung, Sachverhaltsprüfung oder Rechtsmittelzugang schwächt, steigen Fehlentscheidungs- und Folgekosten.",
+      "mechanisms": [
+        "Prozessänderung/Kapazität -> kürzere Durchlaufzeit -> frühere Klarheit/Umsetzung"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0013-leistungsfaehige-auslaenderbehoerden-beschleunigte-verfahr",
+      "problem_review": "Verfahrensdauer nur material, wenn Baseline/Verzögerungsursachen belegt.",
+      "risks_conditions": [
+        "Qualitätsverlust",
+        "Rework/Rechtsmittel",
+        "komplexe Schutzfälle"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0013-FASTER-PROCEDURES",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "menschenwürdige Unterbringung",
+        "Kinder-/Vulnerablenschutz",
+        "Gesundheit/Sicherheit"
+      ],
+      "competence_implementation": "LAND within asylum/reception law.",
+      "data_falsification": [
+        "Belegung/Kapazität",
+        "Aufenthaltsdauer",
+        "Gesundheit/Sicherheit",
+        "Weiterleitungszeit",
+        "Kosten",
+        "Beschwerden/Schutzbedarfe"
+      ],
+      "distribution_time": "Bewohner, Standortkommune, Dienste; kurz-/mittelfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "sichere, effiziente, bedarfsgerechte Aufnahme und zügige Weiterleitung.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Zentrale Erstaufnahme kann spezialisierte Prozesse und Skaleneffekte bündeln, kann aber Distanz, Überbelegung, Single-point-of-failure und lokale Belastung konzentrieren; optimale Zentralität hängt von Volumen, Schutzbedarf und Weiterverteilung ab.",
+      "mechanisms": [
+        "Bündelung -> standardisierte Registrierung/Versorgung/Weiterleitung -> mögliche Effizienz"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0013-leistungsfaehige-auslaenderbehoerden-beschleunigte-verfahr",
+      "problem_review": "Fragmentierungs-/Skalenproblem muss gegen zentrale Kapazitätsrisiken gemessen werden.",
+      "risks_conditions": [
+        "Überbelegung",
+        "Distanz zu Diensten/Rechtshilfe",
+        "Ausfall/Cluster-Risiko",
+        "lokale Konzentration"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0013-CENTRAL-RECEPTION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Existenzminimum",
+        "Nichtdiskriminierung",
+        "Datenschutz",
+        "praktische Zugänglichkeit"
+      ],
+      "competence_implementation": "LAND implementation within federal AsylbLG framework.",
+      "data_falsification": [
+        "Verwaltungskosten",
+        "Fehler/Ausnahmen",
+        "Akzeptanz/Nutzung",
+        "Gebühren",
+        "Beschwerden",
+        "keine Kausalbehauptung zu Migration ohne geeignetes Design"
+      ],
+      "distribution_time": "Leistungsberechtigte, Kommunen, Händler; unmittelbar.",
+      "evidence_level": "LOW",
+      "goal_review": "effiziente rechtmäßige Leistungsgewährung bei alltagstauglicher Teilhabe.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Eine Bezahlkarte kann Bargeld-/Auszahlungsprozesse standardisieren und Verwaltung vereinfachen; Wirkung auf Zuwanderungsanreize oder kommunale Entlastung ist nicht aus dem Instrument selbst ableitbar, während Nutzbarkeit, Gebühren, Teilhabe und administrative Ausnahmen relevante Gegenpfade sind.",
+      "mechanisms": [
+        "Kartenzahlung/Bargeldbegrenzung -> veränderte Auszahlung/Nutzung -> mögliche Prozess-/Transaktionswirkung"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0013-leistungsfaehige-auslaenderbehoerden-beschleunigte-verfahr",
+      "problem_review": "konkreter Verwaltungs-/Missbrauchsengpass und behauptete Anreizwirkung getrennt belegen.",
+      "risks_conditions": [
+        "Akzeptanzstellen",
+        "Gebühren/Technikausfall",
+        "Stigmatisierung",
+        "Ausnahmen",
+        "zusätzlicher Verwaltungsaufwand"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0013-PAYMENT-CARD",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Verhältnismäßigkeit",
+        "Nichtdiskriminierung"
+      ],
+      "competence_implementation": "COMMUNAL/LAND framework depending on instrument.",
+      "data_falsification": [
+        "exact instrument",
+        "litter baseline",
+        "complaints/cleanliness",
+        "enforcement cost",
+        "distribution"
+      ],
+      "distribution_time": "öffentliche Räume/Nutzende; offen.",
+      "evidence_level": "NOT_ASSESSABLE",
+      "goal_review": "sauberer, sicherer öffentlicher Raum; Sanktion/Mehrkontrolle ist Instrument.",
+      "impact_direction": "OPEN",
+      "key_finding": "'konsequenter gegen Verschmutzungen vorgehen' nennt weder Instrument, Vollzugsintensität noch Baseline und ist deshalb als eigenständiger Wirkpfad noch nicht bewertbar.",
+      "mechanisms": [],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0017-die-sicherheit-derjenigen-erhoehen-die-fuer-unsere-sicherh",
+      "problem_review": "Verschmutzung ist orts-/artenabhängig; Materialität offen.",
+      "risks_conditions": [
+        "Fehlpriorisierung",
+        "ungleiche Kontrolldichte",
+        "Verwaltungskosten"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0017-PUBLIC-CLEANLINESS",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "boundaries_noncompensation": [
+        "körperliche Unversehrtheit",
+        "Verhältnismäßigkeit",
+        "Dokumentation/Rechtsschutz"
+      ],
+      "competence_implementation": "LAND/COMMUNAL legal authorization and training required.",
+      "data_falsification": [
+        "Einsatzfälle",
+        "Verletzungen",
+        "Alternativen",
+        "Training",
+        "Beschwerden",
+        "Pilot-stop/scale rule"
+      ],
+      "distribution_time": "Vollzugsbedienstete und betroffene Personen; unmittelbar.",
+      "evidence_level": "LOW",
+      "goal_review": "Eigensicherung mit möglichst geringem Zwang/Schaden.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Ein eng begrenzter Pfefferspray-Pilot kann Eigensicherung kommunaler Vollzugsbediensteter verbessern, erzeugt aber Verletzungs-/Fehlanwendungs-/Eskalationsrisiken; Pilotwert entsteht nur mit klaren Einsatzregeln und Evaluation gegen Alternativen.",
+      "mechanisms": [
+        "zusätzliches Zwangsmittel -> veränderte Reaktion in Bedrohungslage -> mögliche Verletzungs-/Sicherheitswirkung"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0017-die-sicherheit-derjenigen-erhoehen-die-fuer-unsere-sicherh",
+      "problem_review": "Bedrohungslagen plausibel, Häufigkeit/Schwere und Alternativenbedarf offen.",
+      "risks_conditions": [
+        "Fehlanwendung",
+        "Gesundheitsrisiken",
+        "Eskalation",
+        "unzureichendes Training"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0017-PEPPER-SPRAY-PILOT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Arbeitsschutz",
+        "Ausbildungsqualität"
+      ],
+      "competence_implementation": "LAND IBK/Haushalt.",
+      "data_falsification": [
+        "Wartelisten",
+        "Abschluss/Kompetenz",
+        "Teilnahme nach Region/Organisation",
+        "Einsatzperformance",
+        "Kosten"
+      ],
+      "distribution_time": "Feuerwehren/Hilfsorganisationen/Regionen; mittel-/langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "einsatzrelevante Kompetenz und Verfügbarkeit, nicht Kurszahl.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Mehr bedarfsgerechte Lehrgänge können Qualifikationsengpässe im Brand-/Katastrophenschutz reduzieren; zusätzliche Plätze wirken nur bei ausreichenden Lehrkräften, Teilnahme und Kompetenztransfer.",
+      "mechanisms": [
+        "mehr Trainingskapazität -> mehr qualifizierte Einsatzkräfte -> mögliche bessere Einsatzfähigkeit"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0018-das-institut-fuer-brand-und-katastrophenschutz-in-heyroths",
+      "problem_review": "Ausbildungsbedarf plausibel; Wartelisten/Skill gaps als Baseline erforderlich.",
+      "risks_conditions": [
+        "Trainerengpass",
+        "Teilnahme-/Freistellungsprobleme",
+        "Quantität vor Qualität"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0018-TRAINING-EXPANSION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Sicherheitskritische Praxisstandards",
+        "Barrierefreiheit"
+      ],
+      "competence_implementation": "LAND IBK.",
+      "data_falsification": [
+        "Teilnahme/Abschluss",
+        "Lernerfolg",
+        "Transfer",
+        "Praxiskompetenz",
+        "regionale Reichweite"
+      ],
+      "distribution_time": "Ehren-/Hauptamtliche mit unterschiedlicher digitaler Zugänglichkeit; kurzfristiger Zugang, längerfristige Kompetenz.",
+      "evidence_level": "LOW",
+      "goal_review": "wirksame Kompetenzbildung mit passendem digital/praktisch-Mix.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Digitale Aus-/Fortbildung kann Zugang, Wiederholung und Reichweite erhöhen, ersetzt aber praktische Übungen bei einsatzkritischen Fähigkeiten nicht.",
+      "mechanisms": [
+        "digitale Module -> flexibler Zugang/Wiederholung -> mögliche Kompetenz-/Reichweitensteigerung"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0018-das-institut-fuer-brand-und-katastrophenschutz-in-heyroths",
+      "problem_review": "Reise-/Kapazitätsfriktion plausibel; Lernformatbedarf offen.",
+      "risks_conditions": [
+        "Praxisdefizit",
+        "digitale Barrieren",
+        "geringe Interaktion"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0018-DIGITAL-TRAINING",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Bau-/Arbeitssicherheit",
+        "Lebenszyklus/Umwelt"
+      ],
+      "competence_implementation": "LAND capex/procurement.",
+      "data_falsification": [
+        "Zeit/Kosten",
+        "Auslastung",
+        "Kapazität",
+        "Trainingsqualität",
+        "Betriebs-/Instandhaltungskosten",
+        "Einsatzfähigkeit"
+      ],
+      "distribution_time": "landesweite Einsatzorganisationen; mehrjährig/langlebig.",
+      "evidence_level": "LOW",
+      "goal_review": "resiliente Ausbildung/Logistik und bessere Einsatzfähigkeit, nicht Mittelabfluss.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Mehr als 70 Mio. Euro für Simulation, Lager, Unterkünfte und Übungsgelände können Ausbildungs-/Logistikkapazität und Realitätsnähe erhöhen; Bauausgabe ist jedoch Input und muss gegen Nutzung, Lebenszykluskosten und reale Fähigkeitslücken geprüft werden.",
+      "mechanisms": [
+        "modernisierte Assets -> höhere/sicherere Trainings-/Logistikkapazität -> mögliche Fähigkeitsverbesserung"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0018-das-institut-fuer-brand-und-katastrophenschutz-in-heyroths",
+      "problem_review": "Asset-/Kapazitätsengpass muss je Teilinvestition belegt werden.",
+      "risks_conditions": [
+        "Baukosten/-verzug",
+        "Unterauslastung",
+        "Folgekosten",
+        "falsche Kapazitätsdimensionierung"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0018-IBK-CAPEX",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Haushalts-/Korruptionskontrolle",
+        "Rechtsgleichheit"
+      ],
+      "competence_implementation": "LAND programme design.",
+      "data_falsification": [
+        "Bearbeitungszeit",
+        "Antragsaufwand",
+        "Erfolgs-/Abbruchquote nach Kommune",
+        "Fehler/Rückforderung",
+        "Projektoutcome"
+      ],
+      "distribution_time": "Kommunen, besonders kleine/ressourcenschwache; kurzfristige Prozesswirkung.",
+      "evidence_level": "LOW",
+      "goal_review": "mehr wirksame lokale Umsetzung pro Verwaltungsaufwand, nicht weniger Regeln als Selbstzweck.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Einfachere Förderverfahren können kommunale Transaktionskosten und Zugangsbarrieren senken, wenn Schutz-, Nachweis- und Kontrollfunktionen erhalten bleiben.",
+      "mechanisms": [
+        "weniger redundante Schritte -> geringerer Antrags-/Prüfaufwand -> höhere Nutzbarkeit/Umsetzungskapazität"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0025-unsere-kommunen-als-herzkammern-der-demokratie-staerken-in",
+      "problem_review": "Bürokratie-/Antragsaufwand plausibel, Prozessbaseline erforderlich.",
+      "risks_conditions": [
+        "schwächere Kontrolle",
+        "Mitnahme",
+        "ungleicher Zugang bei verbleibender Komplexität"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0025-GRANT-SIMPLIFICATION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Transparenz",
+        "Mindest-/Schutzpflichten",
+        "faire Verteilung"
+      ],
+      "competence_implementation": "LAND finance/programme rules.",
+      "data_falsification": [
+        "Verwaltungsaufwand",
+        "Verwendungsflexibilität",
+        "regionale Verteilung",
+        "Output/Outcome pro Euro",
+        "Auditbefunde"
+      ],
+      "distribution_time": "Kommunen nach Formel/Bedarf; budgetjährlich/mittelfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "lokal bedarfsgerechte, rechenschaftsfähige Mittelverwendung.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Mehr Pauschalzahlungen können lokale Flexibilität und Geschwindigkeit erhöhen und Zweckbindungsaufwand reduzieren; Wirkung hängt an fairer Verteilungsformel, Transparenz und kommunaler Steuerungskapazität.",
+      "mechanisms": [
+        "flexiblere Mittel -> lokale Priorisierung -> mögliche bessere Bedarfs-/Zeitpassung"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0025-unsere-kommunen-als-herzkammern-der-demokratie-staerken-in",
+      "problem_review": "starre Mittelbindung kann lokale Passung reduzieren; Materialität je Förderstrom offen.",
+      "risks_conditions": [
+        "ungleiche Steuerungskapazität",
+        "Unterfinanzierung strukturschwacher Kommunen",
+        "geringere Zwecktransparenz"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0025-LUMP-SUMS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Grundrechte",
+        "gesetzliche Mindest-/Schutzstandards",
+        "Rechtsgleichheit"
+      ],
+      "competence_implementation": "LAND legislation with municipal implementation.",
+      "data_falsification": [
+        "prädefinierte Hypothese",
+        "Vergleich/Kontrolllogik",
+        "Kosten/Qualität",
+        "Rechts-/Beschwerdeeffekte",
+        "sunset/scale decision"
+      ],
+      "distribution_time": "Pilotkommunen vs andere Kommunen; befristet, mit späterem Scale/Stop.",
+      "evidence_level": "LOW",
+      "goal_review": "evidenzbasiertes Lernen/Anpassung bei gewahrten Mindeststandards.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Experimentierklauseln können lokal passende Innovation und Lernen ermöglichen; ohne Schutzgrenzen, Vergleichsdesign und Rückholregel können Rechtsungleichheit, Fragmentierung oder dauerhaft schlechtere Standards entstehen.",
+      "mechanisms": [
+        "befristete Abweichung -> alternative lokale Umsetzung -> Vergleich/Lernen -> ggf. Regelanpassung"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0025-unsere-kommunen-als-herzkammern-der-demokratie-staerken-in",
+      "problem_review": "starre Landesregel kann lokal unpassend sein, muss je Norm belegt werden.",
+      "risks_conditions": [
+        "Rechtsfragmentierung",
+        "schwache Evaluation",
+        "Pilot wird dauerhaft ohne Evidenz",
+        "ungleiche Rechte/Services"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0025-EXPERIMENT-CLAUSES",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "kommunale Selbstverwaltung",
+        "Zugang/Service-Mindestniveau",
+        "Transparenz"
+      ],
+      "competence_implementation": "LAND enabling framework + COMMUNAL agreements.",
+      "data_falsification": [
+        "Kosten/Servicefall",
+        "Qualität/Erreichbarkeit",
+        "Personalabdeckung",
+        "Ausfallsicherheit",
+        "Zufriedenheit/Beschwerden"
+      ],
+      "distribution_time": "beteiligte Kommunen/Bürger; mittel-/langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "bessere Servicequalität/Resilienz pro Ressource bei demokratischer Verantwortlichkeit.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Interkommunale Kooperation kann Skaleneffekte, Fachkräfte-/IT-Teilung und robustere Dienste schaffen, wenn Verantwortlichkeit, Kosten-/Nutzenverteilung und lokale Erreichbarkeit klar bleiben.",
+      "mechanisms": [
+        "gemeinsame Dienste/Assets -> geteilte Fixkosten/Kompetenz -> mögliche Qualitäts-/Resilienzsteigerung"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0025-unsere-kommunen-als-herzkammern-der-demokratie-staerken-in",
+      "problem_review": "Kleinteilige Kapazitäts-/Fachkräfteengpässe plausibel, servicebezogene Baseline nötig.",
+      "risks_conditions": [
+        "Koordinationskosten",
+        "Distanz",
+        "unklare Verantwortung",
+        "ungleiche Lastenteilung"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0025-INTERMUNICIPAL-COOP",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "transparente/faire Beteiligung"
+      ],
+      "competence_implementation": "LAND/COMMUNAL governance.",
+      "data_falsification": [
+        "konkreter Feedbackkanal",
+        "Response/decision changes",
+        "repräsentative Beteiligung",
+        "Umsetzungsquote"
+      ],
+      "distribution_time": "Kommunen/Verbände; offen.",
+      "evidence_level": "NOT_ASSESSABLE",
+      "goal_review": "bessere Land-Kommunen-Entscheidungsqualität; Sitzungsfrequenz ist kein Outcome.",
+      "impact_direction": "OPEN",
+      "key_finding": "'regelmäßiger Austausch' ist ohne Entscheidungs-/Feedbackmechanismus, Teilnehmerstruktur und Umsetzungsregel ein Prozessoutput, kein eigenständig bewertbarer Wirkhebel.",
+      "mechanisms": [],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0025-unsere-kommunen-als-herzkammern-der-demokratie-staerken-in",
+      "problem_review": "Informations-/Koordinationslücke nicht spezifiziert.",
+      "risks_conditions": [
+        "symbolische Beteiligung",
+        "Selektionsbias",
+        "keine Rückkopplung"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0025-LAND-MUNICIPAL-DIALOGUE",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    }
+  ],
+  "party": "CDU",
+  "primary_pdf_pages": [
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "primary_source_diff": [
+    {
+      "action": "KEEP_ID",
+      "classification": "SAME",
+      "legacy_unit": "0001"
+    },
+    {
+      "action": "KEEP_ID; SOURCE_RESTORE_ALREADY_REVIEWED; NO_INDEPENDENT_CHILD_FOR_TRAILING_WIR_WERDEN",
+      "classification": "TRUNCATED_CONTEXT_BRIDGE",
+      "legacy_unit": "0002"
+    },
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_CHILD_SPLIT",
+      "classification": "TRUNCATED_OVERMERGED",
+      "legacy_unit": "0003"
+    },
+    {
+      "action": "KEEP_ID_NO_INDEPENDENT_EFFECT_COUNT",
+      "classification": "CONTEXT_ONLY",
+      "legacy_unit": "0004"
+    },
+    {
+      "action": "KEEP_ID_AS_EXTREMISM_CONTEXT; SPECIFIC_CAPABILITY_CHILD_UNDER_0003",
+      "classification": "PARTIAL_PARENT",
+      "legacy_unit": "0005"
+    },
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_CHILD_SPLIT",
+      "classification": "OVERMERGED",
+      "legacy_unit": "0006"
+    },
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_CHILD_SPLIT",
+      "classification": "OVERMERGED",
+      "legacy_unit": "0007"
+    },
+    {
+      "action": "KEEP_PARENT_ID; SOURCE_RESTORE_ALREADY_REVIEWED; VERSIONED_CHILD_SPLIT",
+      "classification": "TRUNCATED_OVERMERGED",
+      "legacy_unit": "0008"
+    },
+    {
+      "action": "KEEP_ID_AS_ASSEMBLY_LAW_CONTINUATION_OF_0008",
+      "classification": "PARTIAL_PARENT_CONTINUATION",
+      "legacy_unit": "0009"
+    },
+    {
+      "action": "ADDITIVE_SOURCE_UNIT",
+      "classification": "ABSENT",
+      "legacy_unit": null,
+      "primary_source_unit": "ST-CDU-PRIMARY-GAP-MIGRATION-P7-BORDER-PROCEDURES"
+    },
+    {
+      "action": "ADDITIVE_SOURCE_UNIT",
+      "classification": "ABSENT",
+      "legacy_unit": null,
+      "primary_source_unit": "ST-CDU-PRIMARY-GAP-MIGRATION-P7-ADMISSION-PROGRAMS"
+    },
+    {
+      "action": "ADDITIVE_SOURCE_UNIT",
+      "classification": "ABSENT",
+      "legacy_unit": null,
+      "primary_source_unit": "ST-CDU-PRIMARY-GAP-MIGRATION-P7-FAMILY-REUNIFICATION"
+    },
+    {
+      "action": "ADDITIVE_SOURCE_UNIT",
+      "classification": "ABSENT",
+      "legacy_unit": null,
+      "primary_source_unit": "ST-CDU-PRIMARY-GAP-MIGRATION-P7-RETURNS-AFG-SYR-IRQ"
+    },
+    {
+      "action": "KEEP_ID_NO_NEW_MECHANISM",
+      "classification": "CONTEXT_ONLY_TARGET",
+      "legacy_unit": "0010"
+    },
+    {
+      "action": "KEEP_ID; VERSIONED_CHILD_RESTORES_SAFE_ORIGIN_SYRIA_IRAQ_OBJECT",
+      "classification": "PARTIAL_PARENT_MISSING_POLICY_OBJECT",
+      "legacy_unit": "0011"
+    },
+    {
+      "action": "KEEP_ID",
+      "classification": "SAME",
+      "legacy_unit": "0012"
+    },
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_CHILD_SPLIT",
+      "classification": "OVERMERGED",
+      "legacy_unit": "0013"
+    },
+    {
+      "action": "KEEP_ID",
+      "classification": "SAME",
+      "legacy_unit": "0014"
+    },
+    {
+      "action": "KEEP_ID_NO_INDEPENDENT_EFFECT_COUNT",
+      "classification": "CONTEXT_AND_TARGET_FRAME",
+      "legacy_unit": "0015"
+    },
+    {
+      "action": "KEEP_ID",
+      "classification": "SAME",
+      "legacy_unit": "0016"
+    },
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_CHILD_SPLIT",
+      "classification": "OVERMERGED",
+      "legacy_unit": "0017"
+    },
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_CHILD_SPLIT",
+      "classification": "OVERMERGED",
+      "legacy_unit": "0018"
+    },
+    {
+      "action": "KEEP_PARENT_ID; CONTINUATIONS_0020_0024_PRESERVED",
+      "classification": "TRUNCATED_PARENT",
+      "legacy_unit": "0019"
+    },
+    {
+      "action": "KEEP_ID_CHILD_OF_0019",
+      "classification": "PARTIAL_PARENT_CONTINUATION",
+      "legacy_unit": "0020"
+    },
+    {
+      "action": "KEEP_ID_CHILD_OF_0019",
+      "classification": "PARTIAL_PARENT_CONTINUATION",
+      "legacy_unit": "0021"
+    },
+    {
+      "action": "KEEP_ID_CHILD_OF_0019",
+      "classification": "PARTIAL_PARENT_CONTINUATION",
+      "legacy_unit": "0022"
+    },
+    {
+      "action": "KEEP_ID_CHILD_OF_0019",
+      "classification": "PARTIAL_PARENT_CONTINUATION",
+      "legacy_unit": "0023"
+    },
+    {
+      "action": "KEEP_ID_CHILD_OF_0019",
+      "classification": "PARTIAL_PARENT_CONTINUATION",
+      "legacy_unit": "0024"
+    },
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_CHILD_SPLIT",
+      "classification": "OVERMERGED",
+      "legacy_unit": "0025"
+    }
+  ],
+  "primary_source_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf",
+  "programme_key": "ltw-2026-st-cdu",
+  "schema_normalization": {
+    "legacy_parent_reference_resolution": "IMMUTABLE_RELEASE1_COMMITMENT_ID_WHERE_NUMERIC_PARENT_PRESENT",
+    "mode": "MECHANICAL_ALIAS_ONLY_NO_NEW_FACH_SEMANTICS",
+    "terminal_alias": "terminal_source_objects"
+  },
+  "schema_version": "1.0",
+  "segment_status": "SEMANTIC_RECONCILIATION_COMPLETE_FOR_P5_P9",
+  "shard_version": "2026-08-21-p5-p9-v1",
+  "source_authority_notes": [
+    {
+      "finding": "Current §81e StPO permits, for unknown trace origin, eye/hair/skin colour and age; the programme's additional biogeographic analysis therefore needs a concrete federal legal basis and validated definition.",
+      "source": "https://www.gesetze-im-internet.de/stpo/__81e.html",
+      "topic": "biogeographic DNA"
+    },
+    {
+      "finding": "Regulation (EU) 2024/1348 applies from 12 June 2026 and contains asylum border procedures; programme additionality is therefore limited/implementation-dependent.",
+      "source": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202401348",
+      "topic": "EU asylum border procedure"
+    },
+    {
+      "finding": "§104(14) suspends §36a family reunification until 23 July 2027; current baseline is already suspension.",
+      "source": "https://www.gesetze-im-internet.de/aufenthg_2004/__104.html",
+      "topic": "family reunification subsidiary protection"
+    },
+    {
+      "finding": "Current statutory list does not include Syria or Iraq.",
+      "source": "https://www.gesetze-im-internet.de/asylvfg_1992/anlage_ii.html",
+      "topic": "safe countries of origin"
+    },
+    {
+      "finding": "Federal regulation effective 2 February 2026 lists ten countries and not Syria/Iraq; AsylG §29b provides current federal regulatory route.",
+      "source": "https://www.gesetze-im-internet.de/intschsiherkstbestv/BJNR0130A0026.html",
+      "topic": "safe countries federal regulation"
+    }
+  ],
+  "terminal_source_objects": [
+    {
+      "boundaries_noncompensation": [
+        "Rechtsstaatlichkeit",
+        "Verhältnismäßigkeit",
+        "Grundrechte"
+      ],
+      "competence_implementation": "LAND; Haushalt, Ausbildung, Stellenplan, regionale Personalsteuerung.",
+      "data_falsification": [
+        "besetzte statt geplante Stellen",
+        "Ausbildungsabschluss/Verbleib",
+        "Einsatz-/Bearbeitungszeiten",
+        "regionale Präsenz",
+        "Beschwerden/Fehler",
+        "Kriminalitäts-/Sicherheitsindikatoren mit Attribution Guard"
+      ],
+      "distribution_time": "regional und schicht-/aufgabenspezifisch; Wirkung mittel- bis langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Reaktionsfähigkeit, Prävention und rechtsstaatliche Sicherheit sind Zielgrößen; Personalzahl ist Input.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Mehr Polizeivollzugs- und Verwaltungspersonal kann Präsenz, Bearbeitungskapazität und Reaktionsfähigkeit erhöhen, wenn Ausbildung, Besetzung und regionale Verteilung mitwachsen; Kopfzahl allein ist kein Sicherheitsoutcome.",
+      "mechanisms": [
+        "zusätzliche besetzte Stellen -> mehr verfügbare Einsatz-/Ermittlungs-/Verwaltungskapazität -> mögliche bessere Präsenz und Bearbeitung"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0003-weiter-in-die-landespolizei-investieren-fuer-eine-moderne",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0003-weiter-in-die-landespolizei-investieren-fuer-eine-moderne",
+      "problem_review": "Kapazitätsbedarf plausibel, aber regionale Aufgaben-/Vakanz-/Einsatzbaseline erforderlich.",
+      "risks_conditions": [
+        "Ausbildungs- und Recruitingengpass",
+        "Fehlverteilung",
+        "Opportunitätskosten",
+        "mehr Befugnisnutzung ohne passende Qualitäts-/Aufsichtssicherung"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0003-POLICE-PERSONNEL-VISIBILITY",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Meinungs-/Vereinigungsfreiheit",
+        "Datenschutz",
+        "parlamentarische/gerichtliche Kontrolle"
+      ],
+      "competence_implementation": "LAND within constitutional/federal information-law constraints.",
+      "data_falsification": [
+        "konkreter Personal-/Analyseengpass",
+        "Qualität/Timeliness Lagebilder",
+        "gerichtliche/aufsichtliche Beanstandungen",
+        "nachweisbare Präventionsbeiträge ohne Output-Outcome-Verwechslung"
+      ],
+      "distribution_time": "Betroffene Überwachungs-/Prüfpersonen und Allgemeinheit; mittel-/langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "Demokratische Sicherheit und frühzeitige Gefahrenaufklärung bei erhaltenen Freiheits- und Kontrollrechten.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Mehr Verfassungsschutzkapazität kann extremistische Gefahren früher erkennen; Wirkung hängt aber an enger gesetzlicher Zweckbindung, Qualität, Kontrolle und daran, ob zusätzliche Ressourcen tatsächlich einen belegten Engpass treffen.",
+      "mechanisms": [
+        "zusätzliche Fach-/Analyseressourcen -> bessere Informationsverarbeitung -> frühere Gefahrenhinweise"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0003-weiter-in-die-landespolizei-investieren-fuer-eine-moderne",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0003-weiter-in-die-landespolizei-investieren-fuer-eine-moderne",
+      "problem_review": "Extremistische Gefahren sind ein legitimer Schutzgegenstand; aus dem Programm folgt keine quantifizierte Kapazitätslücke.",
+      "risks_conditions": [
+        "Fehlklassifikation",
+        "Überwachungsausweitung",
+        "politische Verzerrung",
+        "Daten-/Kooperationsfehler"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0003-CONSTITUTIONAL-PROTECTION-CAPACITY",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Verhältnismäßigkeit",
+        "Datenschutz",
+        "Nichtdiskriminierung",
+        "Rechtsschutz"
+      ],
+      "competence_implementation": "LAND; Polizei/weitere Stellen, klare Rechtsgrundlagen und Governance.",
+      "data_falsification": [
+        "validierte Risikokriterien",
+        "Interventionsqualität",
+        "Fehlalarmquote",
+        "schwere Ereignisse",
+        "Beschwerden/Rechtsschutz"
+      ],
+      "distribution_time": "konzentriert auf markierte Personen/Institutionen; kurzfristige Intervention, langfristige Evaluation.",
+      "evidence_level": "LOW",
+      "goal_review": "Schwere Gewaltrisiken früh und verhältnismäßig senken, nicht möglichst viele Personen markieren.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Strukturiertes Bedrohungsmanagement kann Hochrisikofälle früher bündeln und Interventionen koordinieren; ohne valide Kriterien entstehen Falschpositive, Stigmatisierung und unverhältnismäßige Eingriffe.",
+      "mechanisms": [
+        "multi-source case review -> priorisierte Intervention -> mögliche Risikoreduktion"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0006-ein-bedrohungs-und-gefaehrdungsmanagement-etablieren-die-b",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0006-ein-bedrohungs-und-gefaehrdungsmanagement-etablieren-die-b",
+      "problem_review": "Fragmentierte Risikoerkennung ist plausibler Koordinationsengpass; Häufigkeit/Fehlerkosten offen.",
+      "risks_conditions": [
+        "Falschpositive/Falschnegative",
+        "Stigmatisierung",
+        "Datenqualität",
+        "unklare Verantwortlichkeit"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0006-THREAT-MANAGEMENT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Zweckbindung",
+        "Datenschutz",
+        "Auditierbarkeit"
+      ],
+      "competence_implementation": "LAND with interagency dependencies.",
+      "data_falsification": [
+        "Bearbeitungszeit",
+        "Informationsqualität",
+        "Fallübergaben",
+        "Fehlentscheidungen",
+        "Ausfallsicherheit"
+      ],
+      "distribution_time": "behördenintern, mittelbar Bevölkerung; kurzfristige Prozesswirkung, Outcome später.",
+      "evidence_level": "LOW",
+      "goal_review": "höhere Analysequalität/Timeliness, nicht Zentralisierung als Selbstzweck.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Eine zentrale Gefahrenanalyse kann verstreute Signale konsistenter bewerten, wenn sie zusätzliche Erkenntnis statt bloßer Zentralisierung erzeugt und lokale Kontextinformation nicht verliert.",
+      "mechanisms": [
+        "standardisierte Zusammenführung -> bessere Muster-/Prioritätserkennung -> zielgerichtetere Entscheidungen"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0006-ein-bedrohungs-und-gefaehrdungsmanagement-etablieren-die-b",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0006-ein-bedrohungs-und-gefaehrdungsmanagement-etablieren-die-b",
+      "problem_review": "Informationsfragmentierung plausibel; heutige Prozessbaseline fehlt.",
+      "risks_conditions": [
+        "Single point of failure",
+        "Informationsüberlastung",
+        "Kontextverlust",
+        "Governanceunklarheit"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0006-CENTRAL-THREAT-ANALYSIS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Datenschutz",
+        "informationelle Selbstbestimmung",
+        "Zweckbindung",
+        "Rechtsschutz"
+      ],
+      "competence_implementation": "LAND plus federal/other-agency interfaces; role/access/data-retention rules required.",
+      "data_falsification": [
+        "qualitätsbereinigte Informationslücken",
+        "Zugriffs-/Missbrauchsvorfälle",
+        "Entscheidungsfehler",
+        "Cyberresilienz"
+      ],
+      "distribution_time": "Datenbetroffene und Sicherheitsbehörden; dauerhaft.",
+      "evidence_level": "LOW",
+      "goal_review": "rechtmäßige, relevante und rechtzeitige Information bei minimal notwendiger Datennutzung.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Behördenübergreifendes Datenmanagement kann Informationslücken reduzieren, erhöht aber zugleich Datenschutz-, Zugriffs-, Zweckänderungs- und Cyberrisiken; Mehrdaten sind nicht automatisch bessere Gefahrenentscheidungen.",
+      "mechanisms": [
+        "Interoperabilität/Zugriff -> weniger fehlende relevante Informationen -> mögliche bessere Lageentscheidung"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0006-ein-bedrohungs-und-gefaehrdungsmanagement-etablieren-die-b",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0006-ein-bedrohungs-und-gefaehrdungsmanagement-etablieren-die-b",
+      "problem_review": "konkrete Datenbruch-/Doppelarbeitsbaseline fehlt.",
+      "risks_conditions": [
+        "unbefugter Zugriff",
+        "falsche Daten",
+        "function creep",
+        "Cyberausfall"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0006-INTERAGENCY-DATA-MANAGEMENT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Leben/körperliche Unversehrtheit",
+        "Verhältnismäßigkeit",
+        "Dokumentation/Rechtsschutz"
+      ],
+      "competence_implementation": "LAND; procurement, police-law/use-of-force rules, training and reporting.",
+      "data_falsification": [
+        "Einsatzanzahl/Lage",
+        "Alternativeinsatzmittel",
+        "Verletzungen",
+        "Mehrfachanwendung",
+        "Beschwerden/gerichtliche Befunde",
+        "Training"
+      ],
+      "distribution_time": "Einsatzkräfte und von Zwang betroffene Personen; sofortige Wirkung.",
+      "evidence_level": "MEDIUM",
+      "goal_review": "Gefahrenlagen mit möglichst geringer Verletzung und verhältnismäßigem Zwang bewältigen.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Distanz-Elektroimpulsgeräte können in geeigneten Lagen eine Zwischenoption zwischen körperlichem Zwang und Schusswaffe bieten; sie tragen zugleich Verletzungs-, Fehlanwendungs- und Eskalationsrisiken und benötigen enge Einsatz-/Training-/Dokumentationsregeln.",
+      "mechanisms": [
+        "zusätzliche weniger-letale Einsatzoption -> veränderte Zwangsmittelwahl -> mögliche geringere/andere Verletzungsfolgen"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0007-die-landespolizei-weiterhin-modern-ausstatten-unsere-poliz",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0007-die-landespolizei-weiterhin-modern-ausstatten-unsere-poliz",
+      "problem_review": "Ausrüstungs-/Eigensicherungsbedarf ist plausibel, aber Lagenspektrum und Alternativenbaseline fehlen.",
+      "risks_conditions": [
+        "medizinische Risiken",
+        "mission creep",
+        "Fehl-/Mehrfachanwendung",
+        "Trainingseffekt"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0007-TASER",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "öffentliche Sicherheit",
+        "Datenschutz",
+        "Luftverkehrssicherheit"
+      ],
+      "competence_implementation": "LAND police procurement/operations with aviation/frequency/federal constraints.",
+      "data_falsification": [
+        "reale Vorfälle",
+        "Detektionsgenauigkeit",
+        "Reaktionszeit",
+        "Fehlalarme",
+        "Abwehrfolgen",
+        "Lifecycle cost"
+      ],
+      "distribution_time": "kritische Orte/Veranstaltungen; kurzfristig, kontinuierliche Technikupdates.",
+      "evidence_level": "LOW",
+      "goal_review": "Gefahren erkennen und neutralisieren ohne neue Sicherheits-/Funk-/Datenschutzrisiken.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Detektions- und Abwehrtechnik kann kritische Lagen gegen missbräuchliche Drohnen resilienter machen, wenn konkrete Bedrohungen, Zuständigkeit und sichere Abwehrverfahren belegt sind.",
+      "mechanisms": [
+        "Detektion -> schnellere Lageerkennung -> geeignete Abwehr -> geringeres Schadensrisiko"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0007-die-landespolizei-weiterhin-modern-ausstatten-unsere-poliz",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0007-die-landespolizei-weiterhin-modern-ausstatten-unsere-poliz",
+      "problem_review": "Drohnenrisiko plausibel, Exposition/Bestandslücke nicht quantifiziert.",
+      "risks_conditions": [
+        "Fehlalarm",
+        "Interferenz",
+        "Absturz-/Kollateralschäden",
+        "Technologieveraltung"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0007-DRONE-DEFENCE",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Datenschutz",
+        "Zweckbindung",
+        "IT-Sicherheit",
+        "Rechtsschutz"
+      ],
+      "competence_implementation": "MULTI_LEVEL Bund/Länder; Land modernisiert eigene IT und wirkt am Datenhaus mit.",
+      "data_falsification": [
+        "Such-/Bearbeitungszeit",
+        "Datenqualität",
+        "Zugriffsverletzungen",
+        "Cybervorfälle",
+        "Systemverfügbarkeit",
+        "nachweisbare Fallbeiträge"
+      ],
+      "distribution_time": "Polizeibehörden und Datenbetroffene; langfristige Infrastruktur.",
+      "evidence_level": "LOW",
+      "goal_review": "rechtzeitiger relevanter Datenzugriff bei minimaler, rollenbasierter Exposition.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Gemeinsame Polizei-Datenarchitektur kann Suche, Fallbezug und länderübergreifende Zusammenarbeit verbessern; universeller Zugriff ohne Need-to-know- und Qualitätsregeln vergrößert Missbrauchs-, Fehler- und Cyberfolgen.",
+      "mechanisms": [
+        "interoperable IT -> schnellerer Zugriff auf relevante Informationen -> mögliche bessere Ermittlungs-/Gefahrenentscheidung"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0007-die-landespolizei-weiterhin-modern-ausstatten-unsere-poliz",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0007-die-landespolizei-weiterhin-modern-ausstatten-unsere-poliz",
+      "problem_review": "Interoperabilitätsfriktion plausibel; konkrete Such-/Datenlücke offen.",
+      "risks_conditions": [
+        "breite Zugriffsrechte",
+        "Datenfehler",
+        "Cyberangriff",
+        "Vendor lock-in"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0007-POLICE-DATAHOUSE-IT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Art-13-Wohnungsschutz",
+        "Privatsphäre",
+        "Opferschutz",
+        "Verhältnismäßigkeit"
+      ],
+      "competence_implementation": "LAND police law; constitutional dwelling/privacy safeguards and judicial review constraints apply.",
+      "data_falsification": [
+        "Gewalt/Verletzung",
+        "Aktivierungsquote",
+        "Beschwerden",
+        "Beweisnutzung",
+        "Datenschutzvorfälle",
+        "Subgruppen-/Lagensplit"
+      ],
+      "distribution_time": "Einsatzkräfte, Bewohner, Opfer/Unbeteiligte; unmittelbar.",
+      "evidence_level": "MEDIUM",
+      "goal_review": "Gewalt reduzieren und Einsätze nachvollziehbar machen bei eng begrenztem Eingriff.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Bodycams in Wohnungen können Einsatzdokumentation/Eigensicherung unterstützen, greifen im besonders geschützten Wohnraum aber intensiv in Privatsphäre und Rechte auch unbeteiligter Personen ein; Nutzen ist lage- und designabhängig.",
+      "mechanisms": [
+        "sichtbare Aufnahme/Dokumentation -> mögliche Verhaltensänderung + bessere Beweislage"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0008-den-rechtsrahmen-der-polizei-modern-fortentwickeln-der-ein",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0008-den-rechtsrahmen-der-polizei-modern-fortentwickeln-der-ein",
+      "problem_review": "Gewalt-/Eigensicherungsrisiko in Wohnungen ist plausibel; spezifische Incident-/Evidenzbaseline erforderlich.",
+      "risks_conditions": [
+        "Deeskalation nicht garantiert",
+        "Aufzeichnung Opfer/Unbeteiligter",
+        "selektive Aktivierung",
+        "Datenspeicherung"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0008-BODYCAM-HOMES",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "informationelle Selbstbestimmung",
+        "Verhältnismäßigkeit",
+        "Nichtdiskriminierung"
+      ],
+      "competence_implementation": "LAND within police/data-protection law.",
+      "data_falsification": [
+        "ortsspezifische Vorfälle",
+        "Aufklärungsbeitrag",
+        "Verlagerung",
+        "Nutzung/Retention",
+        "Beschwerden",
+        "Vollkosten"
+      ],
+      "distribution_time": "Nutzende öffentlicher Räume, besonders häufig überwachte Orte/Gruppen; kurzfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "schwere Vorfälle verhindern/aufklären bei minimal erforderlicher Überwachung.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Mehr Videoschutz kann an konkret belasteten Orten Aufklärung und Lageerkennung unterstützen; flächige Ausweitung kann Verlagerung, Überwachung Unbeteiligter und hohe Kosten erzeugen, ohne Kriminalität ursächlich zu senken.",
+      "mechanisms": [
+        "Kameraabdeckung -> beobachtbare Ereignisse/Beweisdaten -> mögliche Detektion/Aufklärung/Abschreckung"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0008-den-rechtsrahmen-der-polizei-modern-fortentwickeln-der-ein",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0008-den-rechtsrahmen-der-polizei-modern-fortentwickeln-der-ein",
+      "problem_review": "ortsspezifische Delikt-/Gefahrenbaseline erforderlich; keine flächige Problemannahme.",
+      "risks_conditions": [
+        "Verlagerung",
+        "Falschgefühl von Sicherheit",
+        "Privatsphäre",
+        "Betriebspersonal/Datenhaltung"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0008-PUBLIC-VIDEO",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Datenschutz",
+        "Nichtdiskriminierung",
+        "Transparenz/Rechtsschutz",
+        "Verhältnismäßigkeit"
+      ],
+      "competence_implementation": "LAND deployment subject to EU/federal data/AI/constitutional rules; exact use case determines legality.",
+      "data_falsification": [
+        "präregistrierte Detektionsziele",
+        "Sensitivität/Spezifität/PPV nach Gruppen",
+        "Interventionsnutzen",
+        "Beschwerden",
+        "Human override",
+        "Cyber/model drift"
+      ],
+      "distribution_time": "Passanten/markierte Personen und Polizei; unmittelbar, Modellrisiken dauerhaft.",
+      "evidence_level": "LOW",
+      "goal_review": "relevante Gefahren früher erkennen mit überprüfbarer Genauigkeit und rechtskonformen Grenzen.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Automatisierte Mustererkennung kann große Videoströme priorisieren, kann aber Fehlalarme, Bias, Intransparenz und Grundrechtseingriffe skalieren; ohne validiertes Zielereignis und Fehlerraten ist 'intelligent' kein Wirkungsnachweis.",
+      "mechanisms": [
+        "Algorithmus markiert Muster -> menschliche/operative Prüfung -> mögliche schnellere Intervention"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0008-den-rechtsrahmen-der-polizei-modern-fortentwickeln-der-ein",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0008-den-rechtsrahmen-der-polizei-modern-fortentwickeln-der-ein",
+      "problem_review": "menschliche Auswertungs-/Reaktionsengpässe nicht konkret belegt.",
+      "risks_conditions": [
+        "False positives/negatives",
+        "Bias",
+        "Automation bias",
+        "Mass surveillance",
+        "unklare Modell-/Datenherkunft"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0008-AI-VIDEO",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Menschenwürde/Nichtdiskriminierung",
+        "Datenschutz",
+        "Unschuldsvermutung",
+        "Rechtsschutz"
+      ],
+      "competence_implementation": "FEDERAL criminal-procedure law required for the additional molecular-genetic determination; Land advocacy/implementation only after valid legal basis.",
+      "data_falsification": [
+        "exakte gesetzliche Merkmalsdefinition",
+        "validierte Fehler-/Kalibrationsraten",
+        "inkrementeller Ermittlungsnutzen",
+        "Fehlleitungen",
+        "Gruppeneffekte"
+      ],
+      "distribution_time": "Spurenbetroffene/populationsbezogen interpretierte Gruppen und Ermittlungen; unmittelbar.",
+      "evidence_level": "NOT_ASSESSABLE",
+      "goal_review": "präzisere Ermittlungspriorisierung ohne unzulässige Abstammungs-/Gruppenzuschreibungen.",
+      "impact_direction": "OPEN",
+      "key_finding": "Die Programmforderung nennt 'biogeographische Analyse', während §81e StPO bei unbekanntem Spurenverursacher aktuell Augen-, Haar- und Hautfarbe sowie Alter zulässt; ohne definierte biogeographische Merkmale, Validität und konkrete Bundesrechtsänderung ist keine belastbare Wirkungsrichtung möglich.",
+      "mechanisms": [
+        "zusätzliche DNA-basierte Merkmalschätzung -> geänderte Ermittlungspriorisierung"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0008-den-rechtsrahmen-der-polizei-modern-fortentwickeln-der-ein",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0008-den-rechtsrahmen-der-polizei-modern-fortentwickeln-der-ein",
+      "problem_review": "Fehlleitungsrisiko in Ermittlungen plausibel; zusätzlicher Informationswert der nicht definierten Analyse nicht belegt.",
+      "risks_conditions": [
+        "Unsicherheit/populationsabhängige Fehlinterpretation",
+        "Diskriminierung/Profiling",
+        "Datenschutz",
+        "falsche Ermittlungsverengung"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0008-BIOGEOGRAPHIC-DNA",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Asyl-/Schutzprüfung",
+        "Non-refoulement",
+        "effektiver Rechtsschutz",
+        "Kinder-/Familienrechte"
+      ],
+      "competence_implementation": "EU/FEDERAL implementation; Sachsen-Anhalt has no autonomous external-border asylum-procedure competence.",
+      "data_falsification": [
+        "Verfahrensdauer",
+        "Entscheidungsqualität/Rechtsmittelkorrekturen",
+        "Kapazität",
+        "besondere Schutzbedarfe",
+        "Rückkehr/Weiterleitung",
+        "Kosten"
+      ],
+      "distribution_time": "Asylsuchende, Grenzregionen/Behörden, Kommunen mittelbar; kurzfristig bis Verfahrensende.",
+      "evidence_level": "MEDIUM",
+      "goal_review": "zügige, faire und rechtswirksame Schutzentscheidung; 'möglichst an der Grenze' ist Instrument-/Ortsebene.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Asylverfahren an EU-Außengrenzen sind seit 12.06.2026 bereits unionsrechtlich als Grenzverfahren geregelt; die Passage ist daher überwiegend Kontinuitäts-/Umsetzungspolitik, nicht ein neuer Landeshebel. Schnellere/geordnete Verfahren können Kapazität und Rückkehrentscheidungen beeinflussen, müssen aber vollständige Prüfung, Familien-/Minderjährigenschutz und Rechtsschutz sichern.",
+      "mechanisms": [
+        "Grenzverfahren -> frühere Prüfung/Entscheidung vor regulärer Einreise -> veränderte Verfahrensdauer/Weiterbewegung"
+      ],
+      "problem_review": "Verfahrens-/Sekundärmigrations- und Kapazitätsfragen werden bereits durch den EU-Pakt adressiert; zusätzliche Landesspezifik fehlt.",
+      "risks_conditions": [
+        "Kapazitätsengpass",
+        "Rechtsschutz-/Qualitätsrisiko",
+        "besondere Schutzbedarfe",
+        "lange faktische Aufenthaltsbeschränkung"
+      ],
+      "source_locator": {
+        "after": "0009",
+        "before": "0010",
+        "pdf_page": 7,
+        "section": "Sicherheit. Ordnung. Migrationswende."
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-MIGRATION-P7-BORDER-PROCEDURES",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "humanitärer Schutz",
+        "Familien-/Menschenrechte",
+        "Non-refoulement where applicable"
+      ],
+      "competence_implementation": "OPEN/FEDERAL_OR_LAND depending on exact programme.",
+      "data_falsification": [
+        "exact programme",
+        "legal basis",
+        "annual admissions",
+        "capacity/cost",
+        "protection outcomes",
+        "alternative pathways"
+      ],
+      "distribution_time": "nicht bestimmbar ohne Programm.",
+      "evidence_level": "NOT_ASSESSABLE",
+      "goal_review": "Aufnahmekapazität und Schutzverantwortung müssen getrennt von Programmnamen bewertet werden.",
+      "impact_direction": "OPEN",
+      "key_finding": "'Freiwillige Aufnahmeprogramme beenden' identifiziert kein konkretes Bundes-/Landesprogramm, Zielgruppe, Volumen oder Schutzgrund; ohne Policy-Objekt wären Kapazitäts-, Schutz-, Integrations- und Verteilungswirkungen frei erfunden.",
+      "mechanisms": [],
+      "problem_review": "behauptete Aufnahme-/Kapazitätsbelastung nicht programmbezogen quantifiziert.",
+      "risks_conditions": [
+        "unbekannte Zielgruppe/Schutzlage",
+        "Bund/Land-Kompetenzmix",
+        "Verlagerung auf andere Zugangswege"
+      ],
+      "source_locator": {
+        "after": "0009",
+        "before": "0010",
+        "pdf_page": 7,
+        "section": "Sicherheit. Ordnung. Migrationswende."
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-MIGRATION-P7-ADMISSION-PROGRAMS",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Familienleben/Art-8-EMRK-relevanter Schutz",
+        "Härtefallzugänge",
+        "Kindeswohl"
+      ],
+      "competence_implementation": "FEDERAL Aufenthaltsrecht; Land kann politisch initiieren, nicht autonom verlängern.",
+      "data_falsification": [
+        "Visa/Wartelisten",
+        "Härtefälle",
+        "kommunale Aufnahme-/Integrationskapazität",
+        "Arbeits-/Spracherwerb",
+        "psychosoziale Belastung",
+        "irreguläre Folgewege"
+      ],
+      "distribution_time": "subsidiär Schutzberechtigte/Familien, Kommunen/Integrationssystem; bis 23.07.2027 current baseline, spätere Wirkung abhängig von Folgeregel.",
+      "evidence_level": "MEDIUM",
+      "goal_review": "tragfähige Aufnahme-/Integrationssysteme bei verhältnismäßigem Schutz von Familienleben; Fortdauer ist Instrument, kein Endziel.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Der Familiennachzug zu subsidiär Schutzberechtigten ist seit 24.07.2025 gesetzlich bis 23.07.2027 ausgesetzt; die Programmforderung ist damit zunächst Status-quo-Fortführung. Sie kann Zuzug und kurzfristige Aufnahmebelastung mindern, hält aber Familien getrennt und kann Integrations-, Wohlbefindens- und Härtefallkosten erhöhen; eine Verlängerungsdauer nennt das Programm nicht.",
+      "mechanisms": [
+        "Aussetzung -> weniger erteilte Familiennachzugsvisa -> geringere unmittelbare Aufnahmezahl; Gegenpfad Familienseparation -> mögliche Integrations-/psychosoziale Belastung"
+      ],
+      "problem_review": "Aufnahme-/Integrationskapazität war Begründung des Bundesgesetzes; kausale Nettoentlastung gegenüber Familien-/Integrationsfolgen muss empirisch geprüft werden.",
+      "risks_conditions": [
+        "Härtefälle",
+        "Familientrennung",
+        "Verlagerung/irreguläre Wege",
+        "Integrationshemmnisse",
+        "unklarer Verlängerungshorizont"
+      ],
+      "source_locator": {
+        "after": "0009",
+        "before": "0010",
+        "pdf_page": 7,
+        "section": "Sicherheit. Ordnung. Migrationswende."
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-MIGRATION-P7-FAMILY-REUNIFICATION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Non-refoulement",
+        "Leben/körperliche Unversehrtheit",
+        "individuelle Schutzprüfung",
+        "Rechtsschutz"
+      ],
+      "competence_implementation": "FEDERAL plus Länder-Ausländerbehörden; internationale Kooperation erforderlich.",
+      "data_falsification": [
+        "vollziehbare Fälle nach Staat/Schutzgrund",
+        "Gerichts-/BAMF-Entscheidungen",
+        "tatsächliche Rückführungen",
+        "Abbrüche/Rechtswidrigkeit",
+        "Kosten",
+        "post-return safety where verifiably available"
+      ],
+      "distribution_time": "Ausreisepflichtige, Familien, Behörden/Kommunen, Herkunftsregionen; fall- und lageabhängig.",
+      "evidence_level": "LOW",
+      "goal_review": "rechtmäßige, sichere und vollziehbare Rückkehr nach bestandskräftiger Entscheidung; Ländername allein ist kein Wirkungsziel.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Mehr tatsächlich vollziehbare Rückführungen können die Durchsetzung bestandskräftiger Ausreisepflichten erhöhen; für Afghanistan, Syrien und Irak hängt rechtmäßiger Vollzug jedoch zwingend von individuellem Schutzstatus, aktuellen Gefahren, Identität/Reisedokumenten und Non-refoulement ab. Die Passage spezifiziert weder Fallgruppen noch Schutz-/Durchführungsbedingungen.",
+      "mechanisms": [
+        "Bund schafft/organisiert Rückführungswege -> höherer Anteil vollziehbarer Rückkehrentscheidungen -> veränderte Aufenthalts-/Vollzugszahlen"
+      ],
+      "problem_review": "Vollzugshemmnisse können bestehen; ihre Ursachen und der Anteil für die drei Staaten sind nicht quantifiziert.",
+      "risks_conditions": [
+        "Gefahrenlage ändert sich",
+        "fehlende Dokumente/Kooperation",
+        "rechtswidrige Rückführung",
+        "hohe Vollzugskosten",
+        "Rückkehrsicherheit"
+      ],
+      "source_locator": {
+        "after": "0010",
+        "before": "0011",
+        "pdf_page": 7,
+        "section": "Sicherheit. Ordnung. Migrationswende."
+      },
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-MIGRATION-P7-RETURNS-AFG-SYR-IRQ",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Art-16a/Asylrecht",
+        "internationaler Schutz",
+        "Non-refoulement",
+        "individuelle Widerlegung/Rechtsschutz"
+      ],
+      "competence_implementation": "FEDERAL. Current AsylG also provides federal regulatory designation under §29b; a Land Bundesrat initiative is advocacy, not direct designation.",
+      "data_falsification": [
+        "aktuelle Lage-/Schutzdaten",
+        "Anerkennungs-/Schutzquoten differenziert",
+        "Verfahrensdauer",
+        "Rechtsmittelkorrekturen",
+        "individuelle Ausnahmen",
+        "Verordnungs-/Gesetzesstatus"
+      ],
+      "distribution_time": "Asylsuchende aus Syrien/Irak, BAMF/Gerichte/Länderbehörden; Wirkung ab konkreter Bundesregel.",
+      "evidence_level": "LOW",
+      "goal_review": "zügige korrekte Einzelfallentscheidungen; 'sicher' ist gesetzlich-evidenzgebundene Klassifikation, kein politischer Outcome.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Die im Primärtext fehlende Bezugsforderung ist die Einstufung Syriens und Iraks als sichere Herkunftsstaaten. Eine solche Einstufung kann Verfahren beschleunigen, verändert aber Beweis-/Verfahrenspositionen und ist nur tragfähig, wenn die gesetzlichen Sicherheitskriterien belastbar erfüllt bleiben; Syrien und Irak stehen aktuell weder in AsylG Anlage II noch in der seit 02.02.2026 geltenden Bundesverordnungsliste.",
+      "mechanisms": [
+        "sichere-Herkunft-Klassifikation -> beschleunigte/anders vermutete Prüfung mit individueller Widerlegungsmöglichkeit -> veränderte Verfahrensdauer/Entscheidungsmuster"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0011-wir-werden-hierzu-eine-bundesratsinitiative-in-die-wege-le",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0011-wir-werden-hierzu-eine-bundesratsinitiative-in-die-wege-le",
+      "problem_review": "lange/komplexe Verfahren sind möglich, aber der Herkunftsstaatstatus ist nicht automatisch ihr bindender Engpass.",
+      "risks_conditions": [
+        "Lageverschlechterung",
+        "regionale/personenbezogene Verfolgung",
+        "Fehlklassifikation",
+        "Rechtsmittel-/Schutzrisiken"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0011-SAFE-ORIGIN-SYRIA-IRAQ",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "rechtliches Gehör/Rechtsschutz",
+        "Datenschutz",
+        "Nichtdiskriminierung"
+      ],
+      "competence_implementation": "LAND/COMMUNAL administration with federal law dependencies.",
+      "data_falsification": [
+        "Backlog",
+        "Bearbeitungszeit",
+        "Fehler/Widerspruch",
+        "Personal/Fall",
+        "Digital first-time-right",
+        "Nutzer-/Beschäftigtenbelastung"
+      ],
+      "distribution_time": "Antragstellende, Kommunen, Beschäftigte; kurz-/mittelfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "rechtzeitige, rechtmäßige, fehlerarme Entscheidungen statt bloßer Fallzahl.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Ausreichend leistungsfähige Ausländerbehörden können Bearbeitungsstaus, Fehler und Wartezeiten reduzieren; zusätzliche Wirkung setzt belegte Personal-/Prozess-/IT-Engpässe und Qualitätsmetriken voraus.",
+      "mechanisms": [
+        "Personal/Prozess/IT-Kapazität -> kürzere Bearbeitung/mehr first-time-right -> geringere Warte-/Vollzugsfriktion"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0013-leistungsfaehige-auslaenderbehoerden-beschleunigte-verfahr",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0013-leistungsfaehige-auslaenderbehoerden-beschleunigte-verfahr",
+      "problem_review": "Verwaltungskapazität plausibler Engpass, lokal zu messen.",
+      "risks_conditions": [
+        "Fachkräftemangel",
+        "IT-/Schnittstellenprobleme",
+        "Qualität gegen Tempo"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0013-FOREIGNER-AUTHORITIES",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Verfahrensfairness",
+        "Rechtsschutz",
+        "Schutzprüfung"
+      ],
+      "competence_implementation": "MULTI_LEVEL depending on process; Land administrative levers within federal/EU law.",
+      "data_falsification": [
+        "Median/P90 Dauer",
+        "first-time-right",
+        "Widerspruch/Gerichtskorrektur",
+        "Kosten/Fall",
+        "Schutzfall-Komplexität"
+      ],
+      "distribution_time": "Antragstellende/Behörden/Kommunen; kurzfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "schnell und richtig, nicht Geschwindigkeit allein.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Kürzere Verfahren können Unsicherheit und Verwaltungskosten senken; wenn Beschleunigung Anhörung, Sachverhaltsprüfung oder Rechtsmittelzugang schwächt, steigen Fehlentscheidungs- und Folgekosten.",
+      "mechanisms": [
+        "Prozessänderung/Kapazität -> kürzere Durchlaufzeit -> frühere Klarheit/Umsetzung"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0013-leistungsfaehige-auslaenderbehoerden-beschleunigte-verfahr",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0013-leistungsfaehige-auslaenderbehoerden-beschleunigte-verfahr",
+      "problem_review": "Verfahrensdauer nur material, wenn Baseline/Verzögerungsursachen belegt.",
+      "risks_conditions": [
+        "Qualitätsverlust",
+        "Rework/Rechtsmittel",
+        "komplexe Schutzfälle"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0013-FASTER-PROCEDURES",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "menschenwürdige Unterbringung",
+        "Kinder-/Vulnerablenschutz",
+        "Gesundheit/Sicherheit"
+      ],
+      "competence_implementation": "LAND within asylum/reception law.",
+      "data_falsification": [
+        "Belegung/Kapazität",
+        "Aufenthaltsdauer",
+        "Gesundheit/Sicherheit",
+        "Weiterleitungszeit",
+        "Kosten",
+        "Beschwerden/Schutzbedarfe"
+      ],
+      "distribution_time": "Bewohner, Standortkommune, Dienste; kurz-/mittelfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "sichere, effiziente, bedarfsgerechte Aufnahme und zügige Weiterleitung.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Zentrale Erstaufnahme kann spezialisierte Prozesse und Skaleneffekte bündeln, kann aber Distanz, Überbelegung, Single-point-of-failure und lokale Belastung konzentrieren; optimale Zentralität hängt von Volumen, Schutzbedarf und Weiterverteilung ab.",
+      "mechanisms": [
+        "Bündelung -> standardisierte Registrierung/Versorgung/Weiterleitung -> mögliche Effizienz"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0013-leistungsfaehige-auslaenderbehoerden-beschleunigte-verfahr",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0013-leistungsfaehige-auslaenderbehoerden-beschleunigte-verfahr",
+      "problem_review": "Fragmentierungs-/Skalenproblem muss gegen zentrale Kapazitätsrisiken gemessen werden.",
+      "risks_conditions": [
+        "Überbelegung",
+        "Distanz zu Diensten/Rechtshilfe",
+        "Ausfall/Cluster-Risiko",
+        "lokale Konzentration"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0013-CENTRAL-RECEPTION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Existenzminimum",
+        "Nichtdiskriminierung",
+        "Datenschutz",
+        "praktische Zugänglichkeit"
+      ],
+      "competence_implementation": "LAND implementation within federal AsylbLG framework.",
+      "data_falsification": [
+        "Verwaltungskosten",
+        "Fehler/Ausnahmen",
+        "Akzeptanz/Nutzung",
+        "Gebühren",
+        "Beschwerden",
+        "keine Kausalbehauptung zu Migration ohne geeignetes Design"
+      ],
+      "distribution_time": "Leistungsberechtigte, Kommunen, Händler; unmittelbar.",
+      "evidence_level": "LOW",
+      "goal_review": "effiziente rechtmäßige Leistungsgewährung bei alltagstauglicher Teilhabe.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Eine Bezahlkarte kann Bargeld-/Auszahlungsprozesse standardisieren und Verwaltung vereinfachen; Wirkung auf Zuwanderungsanreize oder kommunale Entlastung ist nicht aus dem Instrument selbst ableitbar, während Nutzbarkeit, Gebühren, Teilhabe und administrative Ausnahmen relevante Gegenpfade sind.",
+      "mechanisms": [
+        "Kartenzahlung/Bargeldbegrenzung -> veränderte Auszahlung/Nutzung -> mögliche Prozess-/Transaktionswirkung"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0013-leistungsfaehige-auslaenderbehoerden-beschleunigte-verfahr",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0013-leistungsfaehige-auslaenderbehoerden-beschleunigte-verfahr",
+      "problem_review": "konkreter Verwaltungs-/Missbrauchsengpass und behauptete Anreizwirkung getrennt belegen.",
+      "risks_conditions": [
+        "Akzeptanzstellen",
+        "Gebühren/Technikausfall",
+        "Stigmatisierung",
+        "Ausnahmen",
+        "zusätzlicher Verwaltungsaufwand"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0013-PAYMENT-CARD",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Verhältnismäßigkeit",
+        "Nichtdiskriminierung"
+      ],
+      "competence_implementation": "COMMUNAL/LAND framework depending on instrument.",
+      "data_falsification": [
+        "exact instrument",
+        "litter baseline",
+        "complaints/cleanliness",
+        "enforcement cost",
+        "distribution"
+      ],
+      "distribution_time": "öffentliche Räume/Nutzende; offen.",
+      "evidence_level": "NOT_ASSESSABLE",
+      "goal_review": "sauberer, sicherer öffentlicher Raum; Sanktion/Mehrkontrolle ist Instrument.",
+      "impact_direction": "OPEN",
+      "key_finding": "'konsequenter gegen Verschmutzungen vorgehen' nennt weder Instrument, Vollzugsintensität noch Baseline und ist deshalb als eigenständiger Wirkpfad noch nicht bewertbar.",
+      "mechanisms": [],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0017-die-sicherheit-derjenigen-erhoehen-die-fuer-unsere-sicherh",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0017-die-sicherheit-derjenigen-erhoehen-die-fuer-unsere-sicherh",
+      "problem_review": "Verschmutzung ist orts-/artenabhängig; Materialität offen.",
+      "risks_conditions": [
+        "Fehlpriorisierung",
+        "ungleiche Kontrolldichte",
+        "Verwaltungskosten"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0017-PUBLIC-CLEANLINESS",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "boundaries_noncompensation": [
+        "körperliche Unversehrtheit",
+        "Verhältnismäßigkeit",
+        "Dokumentation/Rechtsschutz"
+      ],
+      "competence_implementation": "LAND/COMMUNAL legal authorization and training required.",
+      "data_falsification": [
+        "Einsatzfälle",
+        "Verletzungen",
+        "Alternativen",
+        "Training",
+        "Beschwerden",
+        "Pilot-stop/scale rule"
+      ],
+      "distribution_time": "Vollzugsbedienstete und betroffene Personen; unmittelbar.",
+      "evidence_level": "LOW",
+      "goal_review": "Eigensicherung mit möglichst geringem Zwang/Schaden.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Ein eng begrenzter Pfefferspray-Pilot kann Eigensicherung kommunaler Vollzugsbediensteter verbessern, erzeugt aber Verletzungs-/Fehlanwendungs-/Eskalationsrisiken; Pilotwert entsteht nur mit klaren Einsatzregeln und Evaluation gegen Alternativen.",
+      "mechanisms": [
+        "zusätzliches Zwangsmittel -> veränderte Reaktion in Bedrohungslage -> mögliche Verletzungs-/Sicherheitswirkung"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0017-die-sicherheit-derjenigen-erhoehen-die-fuer-unsere-sicherh",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0017-die-sicherheit-derjenigen-erhoehen-die-fuer-unsere-sicherh",
+      "problem_review": "Bedrohungslagen plausibel, Häufigkeit/Schwere und Alternativenbedarf offen.",
+      "risks_conditions": [
+        "Fehlanwendung",
+        "Gesundheitsrisiken",
+        "Eskalation",
+        "unzureichendes Training"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0017-PEPPER-SPRAY-PILOT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Arbeitsschutz",
+        "Ausbildungsqualität"
+      ],
+      "competence_implementation": "LAND IBK/Haushalt.",
+      "data_falsification": [
+        "Wartelisten",
+        "Abschluss/Kompetenz",
+        "Teilnahme nach Region/Organisation",
+        "Einsatzperformance",
+        "Kosten"
+      ],
+      "distribution_time": "Feuerwehren/Hilfsorganisationen/Regionen; mittel-/langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "einsatzrelevante Kompetenz und Verfügbarkeit, nicht Kurszahl.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Mehr bedarfsgerechte Lehrgänge können Qualifikationsengpässe im Brand-/Katastrophenschutz reduzieren; zusätzliche Plätze wirken nur bei ausreichenden Lehrkräften, Teilnahme und Kompetenztransfer.",
+      "mechanisms": [
+        "mehr Trainingskapazität -> mehr qualifizierte Einsatzkräfte -> mögliche bessere Einsatzfähigkeit"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0018-das-institut-fuer-brand-und-katastrophenschutz-in-heyroths",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0018-das-institut-fuer-brand-und-katastrophenschutz-in-heyroths",
+      "problem_review": "Ausbildungsbedarf plausibel; Wartelisten/Skill gaps als Baseline erforderlich.",
+      "risks_conditions": [
+        "Trainerengpass",
+        "Teilnahme-/Freistellungsprobleme",
+        "Quantität vor Qualität"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0018-TRAINING-EXPANSION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Sicherheitskritische Praxisstandards",
+        "Barrierefreiheit"
+      ],
+      "competence_implementation": "LAND IBK.",
+      "data_falsification": [
+        "Teilnahme/Abschluss",
+        "Lernerfolg",
+        "Transfer",
+        "Praxiskompetenz",
+        "regionale Reichweite"
+      ],
+      "distribution_time": "Ehren-/Hauptamtliche mit unterschiedlicher digitaler Zugänglichkeit; kurzfristiger Zugang, längerfristige Kompetenz.",
+      "evidence_level": "LOW",
+      "goal_review": "wirksame Kompetenzbildung mit passendem digital/praktisch-Mix.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Digitale Aus-/Fortbildung kann Zugang, Wiederholung und Reichweite erhöhen, ersetzt aber praktische Übungen bei einsatzkritischen Fähigkeiten nicht.",
+      "mechanisms": [
+        "digitale Module -> flexibler Zugang/Wiederholung -> mögliche Kompetenz-/Reichweitensteigerung"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0018-das-institut-fuer-brand-und-katastrophenschutz-in-heyroths",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0018-das-institut-fuer-brand-und-katastrophenschutz-in-heyroths",
+      "problem_review": "Reise-/Kapazitätsfriktion plausibel; Lernformatbedarf offen.",
+      "risks_conditions": [
+        "Praxisdefizit",
+        "digitale Barrieren",
+        "geringe Interaktion"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0018-DIGITAL-TRAINING",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Bau-/Arbeitssicherheit",
+        "Lebenszyklus/Umwelt"
+      ],
+      "competence_implementation": "LAND capex/procurement.",
+      "data_falsification": [
+        "Zeit/Kosten",
+        "Auslastung",
+        "Kapazität",
+        "Trainingsqualität",
+        "Betriebs-/Instandhaltungskosten",
+        "Einsatzfähigkeit"
+      ],
+      "distribution_time": "landesweite Einsatzorganisationen; mehrjährig/langlebig.",
+      "evidence_level": "LOW",
+      "goal_review": "resiliente Ausbildung/Logistik und bessere Einsatzfähigkeit, nicht Mittelabfluss.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Mehr als 70 Mio. Euro für Simulation, Lager, Unterkünfte und Übungsgelände können Ausbildungs-/Logistikkapazität und Realitätsnähe erhöhen; Bauausgabe ist jedoch Input und muss gegen Nutzung, Lebenszykluskosten und reale Fähigkeitslücken geprüft werden.",
+      "mechanisms": [
+        "modernisierte Assets -> höhere/sicherere Trainings-/Logistikkapazität -> mögliche Fähigkeitsverbesserung"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0018-das-institut-fuer-brand-und-katastrophenschutz-in-heyroths",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0018-das-institut-fuer-brand-und-katastrophenschutz-in-heyroths",
+      "problem_review": "Asset-/Kapazitätsengpass muss je Teilinvestition belegt werden.",
+      "risks_conditions": [
+        "Baukosten/-verzug",
+        "Unterauslastung",
+        "Folgekosten",
+        "falsche Kapazitätsdimensionierung"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0018-IBK-CAPEX",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Haushalts-/Korruptionskontrolle",
+        "Rechtsgleichheit"
+      ],
+      "competence_implementation": "LAND programme design.",
+      "data_falsification": [
+        "Bearbeitungszeit",
+        "Antragsaufwand",
+        "Erfolgs-/Abbruchquote nach Kommune",
+        "Fehler/Rückforderung",
+        "Projektoutcome"
+      ],
+      "distribution_time": "Kommunen, besonders kleine/ressourcenschwache; kurzfristige Prozesswirkung.",
+      "evidence_level": "LOW",
+      "goal_review": "mehr wirksame lokale Umsetzung pro Verwaltungsaufwand, nicht weniger Regeln als Selbstzweck.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Einfachere Förderverfahren können kommunale Transaktionskosten und Zugangsbarrieren senken, wenn Schutz-, Nachweis- und Kontrollfunktionen erhalten bleiben.",
+      "mechanisms": [
+        "weniger redundante Schritte -> geringerer Antrags-/Prüfaufwand -> höhere Nutzbarkeit/Umsetzungskapazität"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0025-unsere-kommunen-als-herzkammern-der-demokratie-staerken-in",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0025-unsere-kommunen-als-herzkammern-der-demokratie-staerken-in",
+      "problem_review": "Bürokratie-/Antragsaufwand plausibel, Prozessbaseline erforderlich.",
+      "risks_conditions": [
+        "schwächere Kontrolle",
+        "Mitnahme",
+        "ungleicher Zugang bei verbleibender Komplexität"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0025-GRANT-SIMPLIFICATION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Transparenz",
+        "Mindest-/Schutzpflichten",
+        "faire Verteilung"
+      ],
+      "competence_implementation": "LAND finance/programme rules.",
+      "data_falsification": [
+        "Verwaltungsaufwand",
+        "Verwendungsflexibilität",
+        "regionale Verteilung",
+        "Output/Outcome pro Euro",
+        "Auditbefunde"
+      ],
+      "distribution_time": "Kommunen nach Formel/Bedarf; budgetjährlich/mittelfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "lokal bedarfsgerechte, rechenschaftsfähige Mittelverwendung.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Mehr Pauschalzahlungen können lokale Flexibilität und Geschwindigkeit erhöhen und Zweckbindungsaufwand reduzieren; Wirkung hängt an fairer Verteilungsformel, Transparenz und kommunaler Steuerungskapazität.",
+      "mechanisms": [
+        "flexiblere Mittel -> lokale Priorisierung -> mögliche bessere Bedarfs-/Zeitpassung"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0025-unsere-kommunen-als-herzkammern-der-demokratie-staerken-in",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0025-unsere-kommunen-als-herzkammern-der-demokratie-staerken-in",
+      "problem_review": "starre Mittelbindung kann lokale Passung reduzieren; Materialität je Förderstrom offen.",
+      "risks_conditions": [
+        "ungleiche Steuerungskapazität",
+        "Unterfinanzierung strukturschwacher Kommunen",
+        "geringere Zwecktransparenz"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0025-LUMP-SUMS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "Grundrechte",
+        "gesetzliche Mindest-/Schutzstandards",
+        "Rechtsgleichheit"
+      ],
+      "competence_implementation": "LAND legislation with municipal implementation.",
+      "data_falsification": [
+        "prädefinierte Hypothese",
+        "Vergleich/Kontrolllogik",
+        "Kosten/Qualität",
+        "Rechts-/Beschwerdeeffekte",
+        "sunset/scale decision"
+      ],
+      "distribution_time": "Pilotkommunen vs andere Kommunen; befristet, mit späterem Scale/Stop.",
+      "evidence_level": "LOW",
+      "goal_review": "evidenzbasiertes Lernen/Anpassung bei gewahrten Mindeststandards.",
+      "impact_direction": "AMBIVALENT",
+      "key_finding": "Experimentierklauseln können lokal passende Innovation und Lernen ermöglichen; ohne Schutzgrenzen, Vergleichsdesign und Rückholregel können Rechtsungleichheit, Fragmentierung oder dauerhaft schlechtere Standards entstehen.",
+      "mechanisms": [
+        "befristete Abweichung -> alternative lokale Umsetzung -> Vergleich/Lernen -> ggf. Regelanpassung"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0025-unsere-kommunen-als-herzkammern-der-demokratie-staerken-in",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0025-unsere-kommunen-als-herzkammern-der-demokratie-staerken-in",
+      "problem_review": "starre Landesregel kann lokal unpassend sein, muss je Norm belegt werden.",
+      "risks_conditions": [
+        "Rechtsfragmentierung",
+        "schwache Evaluation",
+        "Pilot wird dauerhaft ohne Evidenz",
+        "ungleiche Rechte/Services"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0025-EXPERIMENT-CLAUSES",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "kommunale Selbstverwaltung",
+        "Zugang/Service-Mindestniveau",
+        "Transparenz"
+      ],
+      "competence_implementation": "LAND enabling framework + COMMUNAL agreements.",
+      "data_falsification": [
+        "Kosten/Servicefall",
+        "Qualität/Erreichbarkeit",
+        "Personalabdeckung",
+        "Ausfallsicherheit",
+        "Zufriedenheit/Beschwerden"
+      ],
+      "distribution_time": "beteiligte Kommunen/Bürger; mittel-/langfristig.",
+      "evidence_level": "LOW",
+      "goal_review": "bessere Servicequalität/Resilienz pro Ressource bei demokratischer Verantwortlichkeit.",
+      "impact_direction": "POSITIVE",
+      "key_finding": "Interkommunale Kooperation kann Skaleneffekte, Fachkräfte-/IT-Teilung und robustere Dienste schaffen, wenn Verantwortlichkeit, Kosten-/Nutzenverteilung und lokale Erreichbarkeit klar bleiben.",
+      "mechanisms": [
+        "gemeinsame Dienste/Assets -> geteilte Fixkosten/Kompetenz -> mögliche Qualitäts-/Resilienzsteigerung"
+      ],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0025-unsere-kommunen-als-herzkammern-der-demokratie-staerken-in",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0025-unsere-kommunen-als-herzkammern-der-demokratie-staerken-in",
+      "problem_review": "Kleinteilige Kapazitäts-/Fachkräfteengpässe plausibel, servicebezogene Baseline nötig.",
+      "risks_conditions": [
+        "Koordinationskosten",
+        "Distanz",
+        "unklare Verantwortung",
+        "ungleiche Lastenteilung"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0025-INTERMUNICIPAL-COOP",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "boundaries_noncompensation": [
+        "transparente/faire Beteiligung"
+      ],
+      "competence_implementation": "LAND/COMMUNAL governance.",
+      "data_falsification": [
+        "konkreter Feedbackkanal",
+        "Response/decision changes",
+        "repräsentative Beteiligung",
+        "Umsetzungsquote"
+      ],
+      "distribution_time": "Kommunen/Verbände; offen.",
+      "evidence_level": "NOT_ASSESSABLE",
+      "goal_review": "bessere Land-Kommunen-Entscheidungsqualität; Sitzungsfrequenz ist kein Outcome.",
+      "impact_direction": "OPEN",
+      "key_finding": "'regelmäßiger Austausch' ist ohne Entscheidungs-/Feedbackmechanismus, Teilnehmerstruktur und Umsetzungsregel ein Prozessoutput, kein eigenständig bewertbarer Wirkhebel.",
+      "mechanisms": [],
+      "parent_legacy_source_unit": "ltw-2026-st-cdu-0025-unsere-kommunen-als-herzkammern-der-demokratie-staerken-in",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0025-unsere-kommunen-als-herzkammern-der-demokratie-staerken-in",
+      "problem_review": "Informations-/Koordinationslücke nicht spezifiziert.",
+      "risks_conditions": [
+        "symbolische Beteiligung",
+        "Selektionsbias",
+        "keine Rückkopplung"
+      ],
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0025-LAND-MUNICIPAL-DIALOGUE",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    }
+  ]
 }

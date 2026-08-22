@@ -1,0 +1,235 @@
+{
+  "applicable_241_layer_set_check": {
+    "markers_explicit_in_source_review": [
+      "COMMUNICATION_MEDIA_IMPACT",
+      "COVERAGE_SCOPE",
+      "DELIVERY_FEASIBILITY",
+      "DNS_REFERENCE",
+      "FALSIFICATION_TRIGGERS",
+      "GOAL_REVIEW",
+      "INTERNATIONAL_LEAKAGE",
+      "LIFECYCLE_TRACEABILITY",
+      "MATERIAL_OMISSIONS",
+      "POLICY_COHERENCE",
+      "PROBLEM_REVIEW",
+      "RECOMMENDATION",
+      "RESOURCE_FINANCING",
+      "REVERSIBILITY_LOCKIN",
+      "ROBUSTNESS_STRESS_TEST",
+      "SPATIAL_DISTRIBUTION",
+      "STATE_GFA_ENAP_BENCHMARK",
+      "VERSION_DELTA"
+    ],
+    "set_check_status": "PASS_SOURCE_BOUND_MARKERS_CAPTURED",
+    "source_review_has_241_system_section": true
+  },
+  "authoritative_effect_mechanism_count": null,
+  "authoritative_source_unit_count": null,
+  "completion_guard": {
+    "st_cdu_final_versioned_manifest": "PENDING_GLOBAL_LEAF_RECONCILIATION",
+    "st_cdu_primary_source_parity": "PASS_FULL_PROGRAMME",
+    "st_cdu_terminal_complete": false
+  },
+  "denominator_status": "NOT_FROZEN_PENDING_GLOBAL_LEAF_RECONCILIATION",
+  "fach_review_comment_id": 5374587495,
+  "fach_review_issue": 234,
+  "historical_ids_immutable": true,
+  "materialization_mode": "MECHANICAL_FROM_SOURCE_BOUND_ISSUE_234_REVIEW_NO_NEW_FACH_SEMANTICS",
+  "party": "CDU",
+  "primary_pdf_pages": [
+    47,
+    49
+  ],
+  "primary_source_diff": [
+    {
+      "classification": "SAME",
+      "legacy_unit": "0185",
+      "source_bound_review_line": "| `0185` | `SAME` | pedagogical profile / Kita as education centre fully represented; current 2025 programme is inherited baseline |"
+    },
+    {
+      "classification": "SAME",
+      "legacy_unit": "0186",
+      "source_bound_review_line": "| `0186` | `SAME` | binding language assessment in fourth life-year fully represented; migration-background sentence remains context/frame, not causal evidence |"
+    },
+    {
+      "classification": "SAME",
+      "legacy_unit": "0187",
+      "source_bound_review_line": "| `0187` | `SAME` | targeted preschool-year design fully represented; transition already part of 2025 programme baseline |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0188",
+      "source_bound_review_line": "| `0188` | `OVERMERGED` | demand/capacity planning, stable financing/personnel ratio/retention and round-table governance are distinct mechanisms |"
+    },
+    {
+      "classification": "SAME",
+      "legacy_unit": "0189",
+      "source_bound_review_line": "| `0189` | `SAME` | one coherent structural-adaptation mechanism: local access under declining demand via flexible cooperation/merger models |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0190",
+      "source_bound_review_line": "| `0190` | `OVERMERGED` | documentation reduction, digital workflow support and leadership relief are distinct mechanisms |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0191",
+      "source_bound_review_line": "| `0191` | `OVERMERGED` | compensation/material-cost support and advisory support are distinct provider-capability mechanisms; parent choice is a protection/distribution guard |"
+    },
+    {
+      "classification": "SAME",
+      "legacy_unit": "0192",
+      "source_bound_review_line": "| `0192` | `SAME` | inclusion structures/diagnostics/support chains fully represented; 2025 inclusion programme is inherited baseline |"
+    },
+    {
+      "classification": "OVERMERGED+TRUNCATED+CONTINUATION",
+      "legacy_unit": "0193",
+      "source_bound_review_line": "| `0193` | `TRUNCATED` + `OVERMERGED` | Release-1 ends after `Medienbildung soll altersgerecht eingeführt werden, mit`; restore full p49 continuation and split food, movement, motor checks, media education |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0194",
+      "source_bound_review_line": "| `0194` | `OVERMERGED` | needs-based Kita expansion/renovation and flexible opening hours are separate mechanisms |"
+    },
+    {
+      "classification": "SAME",
+      "legacy_unit": "0195",
+      "source_bound_review_line": "| `0195` | `SAME` | provider diversity/free-provider landscape/cooperation with welfare sector fully represented |"
+    },
+    {
+      "classification": "CONTINUATION",
+      "legacy_unit": "2023",
+      "source_bound_review_line": "- current Land cooperation baseline: the 2023–2025 Schule-Hort model project was evaluated; current official reporting identifies fixed cooperation structures, common pedagogical goals and coordinated organisation as important quality factors. Therefore programme coordination must be assessed as a concrete continuation/scaling delta, not against zero cooperation."
+    },
+    {
+      "classification": "CONTINUATION",
+      "legacy_unit": "2025",
+      "source_bound_review_line": "- current Land cooperation baseline: the 2023–2025 Schule-Hort model project was evaluated; current official reporting identifies fixed cooperation structures, common pedagogical goals and coordinated organisation as important quality factors. Therefore programme coordination must be assessed as a concrete continuation/scaling delta, not against zero cooperation."
+    },
+    {
+      "classification": "ABSENT",
+      "legacy_unit": "2026",
+      "source_bound_review_line": "| `null` | `ABSENT` | `Rechtsanspruch auf Ganztagsbetreuung ... ab 2026 umsetzen` missing from Release-1; add inherited-baseline/implementation record |"
+    }
+  ],
+  "primary_source_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf",
+  "programme_key": "ltw-2026-st-cdu",
+  "review_snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p47-p49-review.md",
+  "review_snapshot_sha256": "c2df2f69079f78d152b66f92345405f1d91b0bd6264f838d0d83b9358895b9fb",
+  "schema_version": "1.1",
+  "segment_checks": {
+    "checkpoint_terminal_count": 16,
+    "dns_mapping_synthesized": false,
+    "historical_ids_mutated": false,
+    "primary_source_parity": "PASS_SEGMENT",
+    "public_count_mutated": false,
+    "recommendation_synthesized": false,
+    "terminal_source_objects_parsed": 16,
+    "unresolved_source_gaps": 0
+  },
+  "shard_version": "2026-08-22-p47-p49-v1",
+  "terminal_source_objects": [
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0188-DEMAND-CAPACITY-FORECAST-DESIGN",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0188-STABLE-FINANCING-STAFF-RATIO-RETENTION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0188-ROUND-TABLE-FINANCE-PERSONNEL-STRUCTURE",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0190-DOCUMENTATION-DUTY-REDUCTION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0190-DIGITAL-KITA-WORKFLOW-SUPPORT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0190-KITA-LEADERSHIP-RELIEF",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0191-CHILDMINDER-COMPENSATION-MATERIAL-COST",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0191-CHILDMINDER-ADVISORY-SUPPORT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-P48-ALLDAY-RIGHT-INHERITED-IMPLEMENTATION",
+      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-P48-KITA-HORT-PRIMARY-SCHOOL-ALLDAY-COORDINATION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0193-HEALTHY-AFFORDABLE-KITA-MEALS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0193-MOVEMENT-PROMOTION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0193-MOTOR-SCREENING",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0193-AGE-APPROPRIATE-MEDIA-EDUCATION",
+      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0194-NEEDS-BASED-KITA-EXPANSION-RENOVATION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0194-FLEXIBLE-OPENING-HOURS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    }
+  ],
+  "tuple_schema": [
+    "source_unit_id",
+    "terminal_fach_status",
+    "impact_direction",
+    "evidence_level"
+  ]
+}

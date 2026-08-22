@@ -1,87 +1,395 @@
 {
-  "schema_version":"1.0",
-  "shard_version":"2026-08-21-p69-p73-v1",
-  "programme_key":"ltw-2026-st-cdu",
-  "party":"CDU",
-  "primary_source_url":"https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf",
-  "primary_pdf_pages":[69,70,71,72,73],
-  "canonical_manifest_target":"woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-source-unit-manifest-v2.json",
-  "legacy_register":"woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-cdu-zusagen.md",
-  "legacy_source_hash":"15272934630ab67d50bea0da18964d83fb06b9b9aa32686e56e824913acb8fce",
-  "historical_ids_immutable":true,
-  "fach_review_issue":234,
-  "fach_review_comment_id":5375487999,
-  "authoritative_denominator_delta":null,
-  "authoritative_source_unit_count":null,
-  "authoritative_effect_mechanism_count":null,
-  "denominator_status":"NOT_FROZEN_PENDING_FULL_PRIMARY_SOURCE_PARITY",
-  "segment_status":"SEMANTIC_RECONCILIATION_COMPLETE_FOR_P69_P73",
-  "primary_source_diff":[
-    {"legacy_unit":"0260","classification":"CONTEXT_ONLY","action":"KEEP_PARENT_ID_NO_INDEPENDENT_EFFECT_COUNT"},
-    {"legacy_unit":"0261","classification":"OVERMERGED","action":"KEEP_PARENT_ID; VERSIONED_5_CHILD_SPLIT"},
-    {"legacy_unit":"0262","classification":"OVERMERGED","action":"KEEP_PARENT_ID; VERSIONED_2_CHILD_SPLIT"},
-    {"legacy_unit":"0263","classification":"TRUNCATED","action":"KEEP_PARENT_ID; RESTORE_FINAL_TEXT; VERSIONED_3_CHILD_SPLIT"},
-    {"legacy_unit":"0264","classification":"SAME","action":"KEEP_ID"},
-    {"legacy_unit":"0265","classification":"OVERMERGED","action":"KEEP_PARENT_ID; VERSIONED_4_CHILD_SPLIT"},
-    {"legacy_unit":"0266","classification":"OVERMERGED","action":"KEEP_PARENT_ID; VERSIONED_3_CHILD_SPLIT; NATIONAL_SWIM_CENTRE_CLAIM_CONTEXT_ONLY"},
-    {"legacy_unit":"0267","classification":"OVERMERGED","action":"KEEP_PARENT_ID; VERSIONED_2_CHILD_SPLIT"},
-    {"legacy_unit":"0268","classification":"OVERMERGED","action":"KEEP_PARENT_ID; VERSIONED_2_CHILD_SPLIT"},
-    {"legacy_unit":"0269","classification":"CONTEXT_ONLY","action":"KEEP_ID_NO_INDEPENDENT_EFFECT_COUNT"},
-    {"legacy_unit":null,"classification":"ABSENT","source_locator":"P71_RELIGIOUS_FREEDOM_GOAL","action":"ADD_STABLE_SOURCE_UNIT"},
-    {"legacy_unit":"0270","classification":"CONTEXT_ONLY","action":"KEEP_ID_AS_HISTORICAL_BASELINE"},
-    {"legacy_unit":null,"classification":"ABSENT","source_locator":"P71_CHURCH_STATE_FUNDING_CONTINUATION","action":"ADD_STABLE_SOURCE_UNIT"},
-    {"legacy_unit":"0271","classification":"OVERMERGED","action":"KEEP_PARENT_ID; VERSIONED_2_CHILD_SPLIT"},
-    {"legacy_unit":"0272","classification":"SAME","action":"KEEP_ID"},
-    {"legacy_unit":"0273","classification":"OVERMERGED","action":"KEEP_PARENT_ID; VERSIONED_3_CHILD_SPLIT"},
-    {"legacy_unit":"0274","classification":"SAME","action":"KEEP_ID"},
-    {"legacy_unit":"0275","classification":"SAME","action":"KEEP_ID"},
-    {"legacy_unit":"0276","classification":"SAME","action":"KEEP_ID"},
-    {"legacy_unit":"0277","classification":"SAME","action":"KEEP_ID"},
-    {"legacy_unit":"0278","classification":"TRUNCATED","action":"KEEP_ID; RESTORE_FINAL_PRIMARY_TEXT; TERMINAL_REVIEW_NOT_ASSESSABLE_NO_SPECIFIC_INSTRUMENT"},
-    {"legacy_unit":"0279","classification":"SAME","action":"KEEP_ID; TERMINAL_REVIEW_NOT_ASSESSABLE_NO_SPECIFIC_INSTRUMENT"},
-    {"legacy_unit":"0280","classification":"SAME","action":"KEEP_ID"}
+  "authoritative_denominator_delta": null,
+  "authoritative_effect_mechanism_count": null,
+  "authoritative_source_unit_count": null,
+  "canonical_manifest_target": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-source-unit-manifest-v2.json",
+  "completion_guard": {
+    "next_segment": "final official PDF pp.74-76 / Wissenschaft als Wachstumsmotor",
+    "st_cdu_final_versioned_manifest": "PENDING_DOCUMENT_WIDE_RECONCILIATION",
+    "st_cdu_primary_source_parity": "NOT_YET_FULL_PROGRAMME",
+    "st_cdu_terminal_complete": false
+  },
+  "denominator_status": "NOT_FROZEN_PENDING_FULL_PRIMARY_SOURCE_PARITY",
+  "fach_payload_location": "https://github.com/sustynats/wirkungsoekonomie.de/issues/234#issuecomment-5375487999",
+  "fach_review_comment_id": 5375487999,
+  "fach_review_issue": 234,
+  "historical_ids_immutable": true,
+  "legacy_register": "woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-cdu-zusagen.md",
+  "legacy_source_hash": "15272934630ab67d50bea0da18964d83fb06b9b9aa32686e56e824913acb8fce",
+  "party": "CDU",
+  "primary_pdf_pages": [
+    69,
+    70,
+    71,
+    72,
+    73
   ],
-  "terminal_source_objects":[
-    ["ST-CDU-PRIMARY-SPLIT-0261-VOLUNTEER-LAW-CHECK","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","LOW"],
-    ["ST-CDU-PRIMARY-SPLIT-0261-FEDERAL-ASSOCIATION-TAX-SIMPLIFICATION","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","LOW"],
-    ["ST-CDU-PRIMARY-SPLIT-0261-CERTIFICATE-STATISTICS-LABEL-DUTIES","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","LOW"],
-    ["ST-CDU-PRIMARY-SPLIT-0261-SMALL-CLUB-DATA-PROTECTION","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","LOW"],
-    ["ST-CDU-PRIMARY-SPLIT-0261-ADVICE-BEFORE-SANCTION","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","LOW"],
-    ["ST-CDU-PRIMARY-SPLIT-0262-GRANT-PROCESS-REDESIGN","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","MEDIUM"],
-    ["ST-CDU-PRIMARY-SPLIT-0262-STATE-VOLUNTEER-PROGRAMME","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","MEDIUM"],
-    ["ST-CDU-PRIMARY-SPLIT-0263-VOLUNTEER-AGENCIES-FUNDING","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","MEDIUM"],
-    ["ST-CDU-PRIMARY-SPLIT-0263-RURAL-VOLUNTEER-HUBS","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","MEDIUM"],
-    ["ST-CDU-PRIMARY-SPLIT-0263-WELFARE-SPORT-FEDERATION-SUPPORT","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","LOW"],
-    ["ltw-2026-st-cdu-0264-wir-setzen-uns-fuer-die-anhebung-der-uebungsleiter-und-ehr","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","MEDIUM"],
-    ["ST-CDU-PRIMARY-SPLIT-0265-TRAINING-LEAVE","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","LOW"],
-    ["ST-CDU-PRIMARY-SPLIT-0265-EDUCATION-RECOGNITION","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","LOW"],
-    ["ST-CDU-PRIMARY-SPLIT-0265-DIGITAL-VOLUNTEER-TRAINING","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","LOW"],
-    ["ST-CDU-PRIMARY-SPLIT-0265-SCHOOL-KITA-CLUB-COOPERATION","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","LOW"],
-    ["ST-CDU-PRIMARY-SPLIT-0266-SPORT-FACILITY-FUNDING","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","MEDIUM"],
-    ["ST-CDU-PRIMARY-SPLIT-0266-TRAINER-PROGRAMME","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","MEDIUM"],
-    ["ST-CDU-PRIMARY-SPLIT-0266-ELITE-SPORT-INSTITUTION-FUNDING","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","LOW"],
-    ["ST-CDU-PRIMARY-SPLIT-0267-SPORT-DEVELOPMENT-COOPERATION","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","LOW"],
-    ["ST-CDU-PRIMARY-SPLIT-0267-SWIM-SAFELY-SCHOOL","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","HIGH"],
-    ["ST-CDU-PRIMARY-SPLIT-0268-PUBLIC-RECOGNITION","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","LOW"],
-    ["ST-CDU-PRIMARY-SPLIT-0268-DIVERSITY-COMMUNITY-GOAL","REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON","OPEN","NOT_ASSESSABLE"],
-    ["ST-CDU-PRIMARY-GAP-P71-RELIGIOUS-FREEDOM-GOAL","REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON","OPEN","NOT_ASSESSABLE"],
-    ["ST-CDU-PRIMARY-GAP-P71-CHURCH-STATE-FUNDING-CONTINUATION","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","LOW"],
-    ["ST-CDU-PRIMARY-SPLIT-0271-RELIGIOUS-FREEDOM-BASELINE","REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON","OPEN","NOT_ASSESSABLE"],
-    ["ST-CDU-PRIMARY-SPLIT-0271-DIALOGUE-INITIATIVES","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","LOW"],
-    ["ltw-2026-st-cdu-0272-den-staatskirchenvertraegen-treu-bleiben-wir-bekennen-uns","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","LOW"],
-    ["ST-CDU-PRIMARY-SPLIT-0273-JEWISH-COMMUNITY-INFRASTRUCTURE","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","MEDIUM"],
-    ["ST-CDU-PRIMARY-SPLIT-0273-JEWISH-EDUCATION","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","LOW"],
-    ["ST-CDU-PRIMARY-SPLIT-0273-ANTISEMITISM-PROTECTION","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","MEDIUM"],
-    ["ltw-2026-st-cdu-0274-kirchliches-engagement-im-gemeinwesen-staerken-kirchen-lei","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","LOW"],
-    ["ltw-2026-st-cdu-0275-kirchliche-gebaeude-erhalten-und-kulturelles-erbe-schuetze","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","LOW"],
-    ["ltw-2026-st-cdu-0276-konfessionellen-religionsunterricht-sichern-der-religionsu","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","MEDIUM"],
-    ["ltw-2026-st-cdu-0277-religioese-bildung-auch-im-fruehkindlichen-bereich-staerke","EDITORIAL_V2_PLUS_APPROVED","AMBIVALENT","LOW"],
-    ["ltw-2026-st-cdu-0278-intoleranz-und-religioesen-extremismus-entschieden-bekaemp","REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON","OPEN","NOT_ASSESSABLE"],
-    ["ltw-2026-st-cdu-0279-wirkungsmoeglichkeiten-bieten-migration-die-seit-jahren-un","REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON","OPEN","NOT_ASSESSABLE"],
-    ["ltw-2026-st-cdu-0280-akzeptanz-foerdern-wir-erwarten-von-den-angehoerigen-aller","EDITORIAL_V2_PLUS_APPROVED","POSITIVE","LOW"]
+  "primary_source_diff": [
+    {
+      "action": "KEEP_PARENT_ID_NO_INDEPENDENT_EFFECT_COUNT",
+      "classification": "CONTEXT_ONLY",
+      "legacy_unit": "0260"
+    },
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_5_CHILD_SPLIT",
+      "classification": "OVERMERGED",
+      "legacy_unit": "0261"
+    },
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_2_CHILD_SPLIT",
+      "classification": "OVERMERGED",
+      "legacy_unit": "0262"
+    },
+    {
+      "action": "KEEP_PARENT_ID; RESTORE_FINAL_TEXT; VERSIONED_3_CHILD_SPLIT",
+      "classification": "TRUNCATED",
+      "legacy_unit": "0263"
+    },
+    {
+      "action": "KEEP_ID",
+      "classification": "SAME",
+      "legacy_unit": "0264"
+    },
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_4_CHILD_SPLIT",
+      "classification": "OVERMERGED",
+      "legacy_unit": "0265"
+    },
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_3_CHILD_SPLIT; NATIONAL_SWIM_CENTRE_CLAIM_CONTEXT_ONLY",
+      "classification": "OVERMERGED",
+      "legacy_unit": "0266"
+    },
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_2_CHILD_SPLIT",
+      "classification": "OVERMERGED",
+      "legacy_unit": "0267"
+    },
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_2_CHILD_SPLIT",
+      "classification": "OVERMERGED",
+      "legacy_unit": "0268"
+    },
+    {
+      "action": "KEEP_ID_NO_INDEPENDENT_EFFECT_COUNT",
+      "classification": "CONTEXT_ONLY",
+      "legacy_unit": "0269"
+    },
+    {
+      "action": "ADD_STABLE_SOURCE_UNIT",
+      "classification": "ABSENT",
+      "legacy_unit": null,
+      "source_locator": "P71_RELIGIOUS_FREEDOM_GOAL"
+    },
+    {
+      "action": "KEEP_ID_AS_HISTORICAL_BASELINE",
+      "classification": "CONTEXT_ONLY",
+      "legacy_unit": "0270"
+    },
+    {
+      "action": "ADD_STABLE_SOURCE_UNIT",
+      "classification": "ABSENT",
+      "legacy_unit": null,
+      "source_locator": "P71_CHURCH_STATE_FUNDING_CONTINUATION"
+    },
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_2_CHILD_SPLIT",
+      "classification": "OVERMERGED",
+      "legacy_unit": "0271"
+    },
+    {
+      "action": "KEEP_ID",
+      "classification": "SAME",
+      "legacy_unit": "0272"
+    },
+    {
+      "action": "KEEP_PARENT_ID; VERSIONED_3_CHILD_SPLIT",
+      "classification": "OVERMERGED",
+      "legacy_unit": "0273"
+    },
+    {
+      "action": "KEEP_ID",
+      "classification": "SAME",
+      "legacy_unit": "0274"
+    },
+    {
+      "action": "KEEP_ID",
+      "classification": "SAME",
+      "legacy_unit": "0275"
+    },
+    {
+      "action": "KEEP_ID",
+      "classification": "SAME",
+      "legacy_unit": "0276"
+    },
+    {
+      "action": "KEEP_ID",
+      "classification": "SAME",
+      "legacy_unit": "0277"
+    },
+    {
+      "action": "KEEP_ID; RESTORE_FINAL_PRIMARY_TEXT; TERMINAL_REVIEW_NOT_ASSESSABLE_NO_SPECIFIC_INSTRUMENT",
+      "classification": "TRUNCATED",
+      "legacy_unit": "0278"
+    },
+    {
+      "action": "KEEP_ID; TERMINAL_REVIEW_NOT_ASSESSABLE_NO_SPECIFIC_INSTRUMENT",
+      "classification": "SAME",
+      "legacy_unit": "0279"
+    },
+    {
+      "action": "KEEP_ID",
+      "classification": "SAME",
+      "legacy_unit": "0280"
+    }
   ],
-  "terminal_source_object_tuple_schema":["source_unit_id","terminal_fach_status","impact_direction","evidence_level"],
-  "fach_payload_location":"https://github.com/sustynats/wirkungsoekonomie.de/issues/234#issuecomment-5375487999",
-  "segment_checks":{"primary_source_parity":"PASS_SEGMENT","terminal_source_objects":37,"unresolved_source_gaps":0,"historical_ids_mutated":false,"recommendation_synthesized":false,"dns_mapping_synthesized":false,"public_count_mutated":false},
-  "completion_guard":{"st_cdu_primary_source_parity":"NOT_YET_FULL_PROGRAMME","st_cdu_final_versioned_manifest":"PENDING_DOCUMENT_WIDE_RECONCILIATION","st_cdu_terminal_complete":false,"next_segment":"final official PDF pp.74-76 / Wissenschaft als Wachstumsmotor"}
+  "primary_source_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf",
+  "programme_key": "ltw-2026-st-cdu",
+  "schema_normalization": {
+    "legacy_parent_reference_resolution": "IMMUTABLE_RELEASE1_COMMITMENT_ID_WHERE_NUMERIC_PARENT_PRESENT",
+    "mode": "MECHANICAL_ALIAS_ONLY_NO_NEW_FACH_SEMANTICS",
+    "terminal_alias": "terminal_source_objects"
+  },
+  "schema_version": "1.0",
+  "segment_checks": {
+    "dns_mapping_synthesized": false,
+    "historical_ids_mutated": false,
+    "primary_source_parity": "PASS_SEGMENT",
+    "public_count_mutated": false,
+    "recommendation_synthesized": false,
+    "terminal_source_objects": 37,
+    "unresolved_source_gaps": 0
+  },
+  "segment_status": "SEMANTIC_RECONCILIATION_COMPLETE_FOR_P69_P73",
+  "shard_version": "2026-08-21-p69-p73-v1",
+  "terminal_source_object_tuple_schema": [
+    "source_unit_id",
+    "terminal_fach_status",
+    "impact_direction",
+    "evidence_level"
+  ],
+  "terminal_source_objects": [
+    [
+      "ST-CDU-PRIMARY-SPLIT-0261-VOLUNTEER-LAW-CHECK",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0261-FEDERAL-ASSOCIATION-TAX-SIMPLIFICATION",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0261-CERTIFICATE-STATISTICS-LABEL-DUTIES",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0261-SMALL-CLUB-DATA-PROTECTION",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0261-ADVICE-BEFORE-SANCTION",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0262-GRANT-PROCESS-REDESIGN",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "MEDIUM"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0262-STATE-VOLUNTEER-PROGRAMME",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "MEDIUM"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0263-VOLUNTEER-AGENCIES-FUNDING",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "MEDIUM"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0263-RURAL-VOLUNTEER-HUBS",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "MEDIUM"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0263-WELFARE-SPORT-FEDERATION-SUPPORT",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "LOW"
+    ],
+    [
+      "ltw-2026-st-cdu-0264-wir-setzen-uns-fuer-die-anhebung-der-uebungsleiter-und-ehr",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "MEDIUM"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0265-TRAINING-LEAVE",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0265-EDUCATION-RECOGNITION",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0265-DIGITAL-VOLUNTEER-TRAINING",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0265-SCHOOL-KITA-CLUB-COOPERATION",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0266-SPORT-FACILITY-FUNDING",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "MEDIUM"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0266-TRAINER-PROGRAMME",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "MEDIUM"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0266-ELITE-SPORT-INSTITUTION-FUNDING",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0267-SPORT-DEVELOPMENT-COOPERATION",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0267-SWIM-SAFELY-SCHOOL",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "HIGH"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0268-PUBLIC-RECOGNITION",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0268-DIVERSITY-COMMUNITY-GOAL",
+      "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "OPEN",
+      "NOT_ASSESSABLE"
+    ],
+    [
+      "ST-CDU-PRIMARY-GAP-P71-RELIGIOUS-FREEDOM-GOAL",
+      "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "OPEN",
+      "NOT_ASSESSABLE"
+    ],
+    [
+      "ST-CDU-PRIMARY-GAP-P71-CHURCH-STATE-FUNDING-CONTINUATION",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0271-RELIGIOUS-FREEDOM-BASELINE",
+      "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "OPEN",
+      "NOT_ASSESSABLE"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0271-DIALOGUE-INITIATIVES",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "LOW"
+    ],
+    [
+      "ltw-2026-st-cdu-0272-den-staatskirchenvertraegen-treu-bleiben-wir-bekennen-uns",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0273-JEWISH-COMMUNITY-INFRASTRUCTURE",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "MEDIUM"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0273-JEWISH-EDUCATION",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "LOW"
+    ],
+    [
+      "ST-CDU-PRIMARY-SPLIT-0273-ANTISEMITISM-PROTECTION",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "MEDIUM"
+    ],
+    [
+      "ltw-2026-st-cdu-0274-kirchliches-engagement-im-gemeinwesen-staerken-kirchen-lei",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "LOW"
+    ],
+    [
+      "ltw-2026-st-cdu-0275-kirchliche-gebaeude-erhalten-und-kulturelles-erbe-schuetze",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "LOW"
+    ],
+    [
+      "ltw-2026-st-cdu-0276-konfessionellen-religionsunterricht-sichern-der-religionsu",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "MEDIUM"
+    ],
+    [
+      "ltw-2026-st-cdu-0277-religioese-bildung-auch-im-fruehkindlichen-bereich-staerke",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "AMBIVALENT",
+      "LOW"
+    ],
+    [
+      "ltw-2026-st-cdu-0278-intoleranz-und-religioesen-extremismus-entschieden-bekaemp",
+      "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "OPEN",
+      "NOT_ASSESSABLE"
+    ],
+    [
+      "ltw-2026-st-cdu-0279-wirkungsmoeglichkeiten-bieten-migration-die-seit-jahren-un",
+      "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "OPEN",
+      "NOT_ASSESSABLE"
+    ],
+    [
+      "ltw-2026-st-cdu-0280-akzeptanz-foerdern-wir-erwarten-von-den-angehoerigen-aller",
+      "EDITORIAL_V2_PLUS_APPROVED",
+      "POSITIVE",
+      "LOW"
+    ]
+  ]
 }

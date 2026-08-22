@@ -1,0 +1,246 @@
+{
+  "applicable_241_layer_set_check": {
+    "markers_explicit_in_source_review": [
+      "COMMUNICATION_MEDIA_IMPACT",
+      "COVERAGE_SCOPE",
+      "DELIVERY_FEASIBILITY",
+      "DNS_REFERENCE",
+      "FALSIFICATION_TRIGGERS",
+      "GOAL_REVIEW",
+      "INTERNATIONAL_LEAKAGE",
+      "LIFECYCLE_TRACEABILITY",
+      "MATERIAL_OMISSIONS",
+      "POLICY_COHERENCE",
+      "PROBLEM_REVIEW",
+      "RECOMMENDATION",
+      "RESOURCE_FINANCING",
+      "REVERSIBILITY_LOCKIN",
+      "ROBUSTNESS_STRESS_TEST",
+      "SPATIAL_DISTRIBUTION",
+      "STATE_GFA_ENAP_BENCHMARK",
+      "VERSION_DELTA"
+    ],
+    "set_check_status": "PASS_SOURCE_BOUND_MARKERS_CAPTURED",
+    "source_review_has_241_system_section": true
+  },
+  "authoritative_effect_mechanism_count": null,
+  "authoritative_source_unit_count": null,
+  "completion_guard": {
+    "st_cdu_final_versioned_manifest": "PENDING_GLOBAL_LEAF_RECONCILIATION",
+    "st_cdu_primary_source_parity": "PASS_FULL_PROGRAMME",
+    "st_cdu_terminal_complete": false
+  },
+  "denominator_status": "NOT_FROZEN_PENDING_GLOBAL_LEAF_RECONCILIATION",
+  "fach_review_comment_id": 5374692973,
+  "fach_review_issue": 234,
+  "historical_ids_immutable": true,
+  "materialization_mode": "MECHANICAL_FROM_SOURCE_BOUND_ISSUE_234_REVIEW_NO_NEW_FACH_SEMANTICS",
+  "party": "CDU",
+  "primary_pdf_pages": [
+    57,
+    59
+  ],
+  "primary_source_diff": [
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0218",
+      "source_bound_review_line": "| `0218` | `OVERMERGED` | accelerated proceedings/target times, justice digital infrastructure, court/prosecutor location retention and digital communication separated |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0219",
+      "source_bound_review_line": "| `0219` | `OVERMERGED` | recruitment outreach, training/workplace conditions, strategic personnel development, work-family compatibility and lateral experienced-practitioner entry separated |"
+    },
+    {
+      "classification": "SAME",
+      "legacy_unit": "0220",
+      "source_bound_review_line": "| `0220` | `SAME` | rural-lawyer start grant + 5-year location binding fully represented |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0221",
+      "source_bound_review_line": "| `0221` | `OVERMERGED` | e-file/e-inspection/media-break-free justice and generic regulation/norm-restraint path separated |"
+    },
+    {
+      "classification": "OVERMERGED+TRUNCATED",
+      "legacy_unit": "0222",
+      "source_bound_review_line": "| `0222` | `TRUNCATED` + `OVERMERGED` | Release-1 stops after `eingesetzt unter`; primary source restored through human responsibility/rule-of-law/judicial independence/fundamental-rights binding and mandatory AI-governance; split operational AI support from governance/safeguard mechanism |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0223",
+      "source_bound_review_line": "| `0223` | `OVERMERGED` | strengthen existing mediation/Schiedspersonen and overregional arbitration/Magdeburger-Recht location pathway separated |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0224",
+      "source_bound_review_line": "| `0224` | `OVERMERGED` | shelter/advice finance, central child-victim facility, aid-network evaluation/development and witness protection separated |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0225",
+      "source_bound_review_line": "| `0225` | `OVERMERGED` | peer/student legal-order engagement, justice-as-school-partner and democracy-education/Magdeburger-Recht programme separated |"
+    },
+    {
+      "classification": "SAME",
+      "legacy_unit": "0226",
+      "source_bound_review_line": "| `0226` | `SAME` | consumer protection + consumer-advice strengthening fully represented |"
+    }
+  ],
+  "primary_source_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf",
+  "programme_key": "ltw-2026-st-cdu",
+  "review_snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p57-p59-review.md",
+  "review_snapshot_sha256": "777878ee4acf749636987ed05db99429a483539d760a971b6b2fe85efc5272f7",
+  "schema_version": "1.1",
+  "segment_checks": {
+    "checkpoint_terminal_count": 22,
+    "dns_mapping_synthesized": false,
+    "historical_ids_mutated": false,
+    "primary_source_parity": "PASS_SEGMENT",
+    "public_count_mutated": false,
+    "recommendation_synthesized": false,
+    "terminal_source_objects_parsed": 22,
+    "unresolved_source_gaps": 0
+  },
+  "shard_version": "2026-08-22-p57-p59-v1",
+  "terminal_source_objects": [
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0218-ACCELERATED-PROCEEDINGS-TARGET-TIMES",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0218-JUSTICE-DIGITAL-INFRASTRUCTURE",
+      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0218-COURT-PROSECUTOR-LOCATION-RETENTION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0218-DIGITAL-JUSTICE-COMMUNICATION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0219-JUSTICE-RECRUITMENT-OUTREACH",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0219-TRAINING-WORKPLACE-CONDITIONS-EQUIPMENT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0219-STRATEGIC-PERSONNEL-DEVELOPMENT-CAREER-PATHS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0219-JUSTICE-WORK-FAMILY-COMPATIBILITY",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0219-EXPERIENCED-PRACTITIONER-LATERAL-ENTRY",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0221-EFILE-EINSPECTION-MEDIA-BREAK-FREE-JUSTICE",
+      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0221-REMOVE-SUPERFLUOUS-REGULATION-NORM-RESTRAINT",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0222-JUSTICE-AI-SUPPORTIVE-USE",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0222-BINDING-JUSTICE-AI-GOVERNANCE",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0223-MEDIATION-SCHIEDSPERSONEN-STRENGTHEN",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0223-OVERREGIONAL-ARBITRATION-MAGDEBURG-LAW-LOCATION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0224-COUNSELLING-WOMENS-SHELTER-RELIABLE-FINANCE",
+      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0224-CENTRAL-CHILD-VICTIM-ONE-STOP-FACILITY",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0224-DOMESTIC-VIOLENCE-HELP-NETWORK-EVALUATE-DEVELOP",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0224-WITNESS-PROTECTION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0225-PEER-STUDENT-LEGAL-ORDER-ENGAGEMENT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0225-JUSTICE-AS-SCHOOL-EDUCATION-PARTNER",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0225-MAGDEBURG-LAW-DEMOCRACY-EDUCATION-GRANT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    }
+  ],
+  "tuple_schema": [
+    "source_unit_id",
+    "terminal_fach_status",
+    "impact_direction",
+    "evidence_level"
+  ]
+}

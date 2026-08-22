@@ -1,0 +1,239 @@
+{
+  "applicable_241_layer_set_check": {
+    "markers_explicit_in_source_review": [
+      "COMMUNICATION_MEDIA_IMPACT",
+      "COVERAGE_SCOPE",
+      "DELIVERY_FEASIBILITY",
+      "DNS_REFERENCE",
+      "FALSIFICATION_TRIGGERS",
+      "GOAL_REVIEW",
+      "INTERNATIONAL_LEAKAGE",
+      "LIFECYCLE_TRACEABILITY",
+      "MATERIAL_OMISSIONS",
+      "POLICY_COHERENCE",
+      "PROBLEM_REVIEW",
+      "RECOMMENDATION",
+      "RESOURCE_FINANCING",
+      "REVERSIBILITY_LOCKIN",
+      "ROBUSTNESS_STRESS_TEST",
+      "SPATIAL_DISTRIBUTION",
+      "STATE_GFA_ENAP_BENCHMARK",
+      "VERSION_DELTA"
+    ],
+    "set_check_status": "PASS_SOURCE_BOUND_MARKERS_CAPTURED",
+    "source_review_has_241_system_section": true
+  },
+  "authoritative_effect_mechanism_count": null,
+  "authoritative_source_unit_count": null,
+  "completion_guard": {
+    "st_cdu_final_versioned_manifest": "PENDING_GLOBAL_LEAF_RECONCILIATION",
+    "st_cdu_primary_source_parity": "PASS_FULL_PROGRAMME",
+    "st_cdu_terminal_complete": false
+  },
+  "denominator_status": "NOT_FROZEN_PENDING_GLOBAL_LEAF_RECONCILIATION",
+  "fach_review_comment_id": 5374339903,
+  "fach_review_issue": 234,
+  "historical_ids_immutable": true,
+  "materialization_mode": "MECHANICAL_FROM_SOURCE_BOUND_ISSUE_234_REVIEW_NO_NEW_FACH_SEMANTICS",
+  "party": "CDU",
+  "primary_pdf_pages": [
+    37,
+    39
+  ],
+  "primary_source_diff": [
+    {
+      "classification": "SAME",
+      "legacy_unit": "0137",
+      "source_bound_review_line": "| `0137` | `SAME` | modern tech/KI + public data; existing terminal A10 assessment remains |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0139",
+      "source_bound_review_line": "| `0139` | `OVERMERGED` | funding uptake, ALF capability and 20,000-ha state land reserve are distinct mechanisms; general rural-living goal stays context |"
+    },
+    {
+      "classification": "SAME",
+      "legacy_unit": "0140",
+      "source_bound_review_line": "| `0140` | `SAME` | agricultural land/soil protection; existing terminal A10 assessment remains |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0141",
+      "source_bound_review_line": "| `0141` | `OVERMERGED` | demo/knowledge-transfer, LLG capability, robot/drone regulatory path and autonomous-machine infrastructure path separated |"
+    },
+    {
+      "classification": "OVERMERGED+TRUNCATED+CONTINUATION",
+      "legacy_unit": "0142",
+      "source_bound_review_line": "| `0142` | `TRUNCATED` + `OVERMERGED` | Release-1 stops before the NGT/legal/research/reporting/Geobox continuation; restore and split |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0144",
+      "source_bound_review_line": "| `0144` | `OVERMERGED` | forest conversion, wood-use policy, private-forest management/capability and federal no-set-aside-funding advocacy separated |"
+    },
+    {
+      "classification": "SAME",
+      "legacy_unit": "0145",
+      "source_bound_review_line": "| `0145` | `SAME` | small-private-forest associations/care; existing terminal A10 assessment remains |"
+    },
+    {
+      "classification": "SAME",
+      "legacy_unit": "0146",
+      "source_bound_review_line": "| `0146` | `SAME` | ecosystem-services definition/honor framework remains terminal `NOT_ASSESSABLE` pending instrument design |"
+    },
+    {
+      "classification": "OVERMERGED",
+      "legacy_unit": "0147",
+      "source_bound_review_line": "| `0147` | `OVERMERGED` | hunting-cadastre data and wolf-management advocacy separated |"
+    },
+    {
+      "classification": "SAME",
+      "legacy_unit": "0148",
+      "source_bound_review_line": "| `0148` | `SAME` | sector-study update is analytical input, not a Bioeconomy outcome instrument |"
+    }
+  ],
+  "primary_source_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf",
+  "programme_key": "ltw-2026-st-cdu",
+  "review_snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p37-p39-review.md",
+  "review_snapshot_sha256": "419d603df150cde8cab379dd6f58bf19538e0fde52cf8d35783aa92e174ef2b9",
+  "schema_version": "1.1",
+  "segment_checks": {
+    "checkpoint_terminal_count": 20,
+    "dns_mapping_synthesized": false,
+    "historical_ids_mutated": false,
+    "primary_source_parity": "PASS_SEGMENT",
+    "public_count_mutated": false,
+    "recommendation_synthesized": false,
+    "terminal_source_objects_parsed": 20,
+    "unresolved_source_gaps": 0
+  },
+  "shard_version": "2026-08-22-p37-p39-v1",
+  "terminal_source_objects": [
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0139-EU-FEDERAL-FUNDS-UPTAKE",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0139-ALF-CAPABILITY",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "NOT_ASSESSABLE",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0139-STATE-LAND-RESERVE-20000HA",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0141-DEMO-FARMS-KNOWLEDGE-TRANSFER",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0141-LLG-COMPETENCE-CENTRE",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0141-ROBOT-DRONE-REGULATORY-BARRIERS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0141-AUTONOMOUS-MACHINERY-INFRASTRUCTURE-ACCESS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0142-AGRI-TRAINING-CONTINUING-EDUCATION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0142-NEW-ENTRANT-STARTER-INVESTMENT-SUPPORT",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "OPEN",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0142-NGT-CATEGORY1-LEGAL-TREATMENT",
+      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0142-NGT-RESEARCH",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0142-REPORTING-REDUCTION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0142-GEOBOX-DATA-POOLING",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0144-CLIMATE-ADAPTED-FOREST-CONVERSION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0144-WOOD-MATERIAL-ENERGY-USE",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0144-PRIVATE-FOREST-MANAGEMENT-INFRA-CAPABILITY",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0144-NO-FEDERAL-FUNDS-FOR-TARGETED-SET-ASIDE",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-P39-HARZ-WILDFIRE-BARK-BEETLE-MONITORING",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "LOW",
+      "impact_direction": "POSITIVE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0147-HUNTING-CADASTRE-DATA",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "evidence_level": "MEDIUM",
+      "impact_direction": "AMBIVALENT",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0147-WOLF-MANAGEMENT-ADVOCACY",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    }
+  ],
+  "tuple_schema": [
+    "source_unit_id",
+    "terminal_fach_status",
+    "impact_direction",
+    "evidence_level"
+  ]
+}
