@@ -15,6 +15,76 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  bsw-final-union-audit:
+    name: BSW final-union mechanical convergence audit
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run complete-union collision audit
+        run: python tools/audit_bsw_final_union.py --output tmp/bsw-final-union-collision-report.json
+
+      - name: Materialize fail-closed candidate
+        if: always()
+        run: |
+          set +e
+          python tools/materialize_bsw_final_union_manifest.py \
+            --collision-report tmp/bsw-final-union-collision-report.json \
+            --relations content/audits/sachsen-anhalt/bsw-final-union-relation-registry-r15.json \
+            --output tmp/bsw-final-union-manifest-r15.json \
+            --allow-default-pend-keep-atomic
+          echo "materializer_exit=$?"
+          exit 0
+
+      - name: Print exact convergence state
+        if: always()
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          for name in ['bsw-final-union-collision-report.json','bsw-final-union-manifest-r15.json']:
+              p=Path('tmp')/name
+              print(f'--- {name} ---')
+              if not p.exists():
+                  print('MISSING')
+                  continue
+              d=json.loads(p.read_text())
+              if 'pending_collision_scan' in d:
+                  s=d['pending_collision_scan']
+                  print(json.dumps({
+                    'hard_errors':d.get('hard_errors'),
+                    'pending_total':s.get('pending_total'),
+                    'lexically_clear_no_candidate':s.get('lexically_clear_no_candidate'),
+                    'review_candidate_count':s.get('review_candidate_count'),
+                    'review_candidate_ordinals':s.get('review_candidate_ordinals'),
+                  },ensure_ascii=False,indent=2))
+              else:
+                  print(json.dumps({
+                    'counts':d.get('counts'),
+                    'relation_graph':d.get('relation_graph'),
+                    'collision_scan':d.get('collision_scan'),
+                    'resolved_gap_counts':d.get('resolved_gap_counts'),
+                    'active_leaf_terminal_fach_set_check':d.get('active_leaf_terminal_fach_set_check'),
+                    'active_leaf_241_layer_set_check':d.get('active_leaf_241_layer_set_check'),
+                    'completion':d.get('completion'),
+                  },ensure_ascii=False,indent=2))
+          PY
+
+      - name: Upload BSW convergence audit artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bsw-final-union-convergence
+          path: |
+            tmp/bsw-final-union-collision-report.json
+            tmp/bsw-final-union-manifest-r15.json
+
   website-gates:
     name: Website build, search, privacy and URL gates
     runs-on: ubuntu-latest
