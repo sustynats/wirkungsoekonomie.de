@@ -4485,11 +4485,18 @@
         "relation": "PARENT_CHILD",
         "source": "builder",
         "to": "ST-CDU-PRIMARY-SPLIT-0344-FEDERAL-BURDEN-ALLOCATION"
+      },
+      {
+        "from": "ltw-2026-st-cdu-0259-tierheime-besser-unterstuetzen-die-tierheime-leisten-wertv",
+        "relation": "RESTATEMENT",
+        "source": "semantic_role",
+        "to": "ltw-2026-st-cdu-0251-tierschutz-besser-unterstuetzen-die-tierheime-und-tierschu"
       }
     ],
     "supersedes_continuation_restatement_duplicate": "PRESERVED_WHERE_EXPLICIT_IN_SOURCE_MANIFEST_OR_TERMINAL_SEMANTIC_ROLE",
     "typed_edge_counts": {
-      "PARENT_CHILD": 438
+      "PARENT_CHILD": 438,
+      "RESTATEMENT": 1
     }
   },
   "effect_count_rule": "COUNT UNIQUE source_unit_id WHERE effect_role=COUNTABLE_EFFECT_LEAF",
@@ -27714,14 +27721,18 @@
       "canonical_legacy_classification": "PARTIAL_PARENT+PARTIAL",
       "child_source_unit_ids": [],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": null,
-      "fach_provenance": [],
-      "impact_direction": null,
+      "evidence_level": "NOT_ASSESSABLE",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5367814267
+        }
+      ],
+      "impact_direction": "OPEN",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0005-wir-bekennen-uns-dazu-dass-die-sicherheitsbehoerden-sich-i",
-      "terminal_fach_status": null
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
     },
     {
       "applicable_241_layer_markers_explicit": [],
@@ -27818,14 +27829,18 @@
       "canonical_legacy_classification": "PARTIAL_PARENT+PARTIAL",
       "child_source_unit_ids": [],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": null,
-      "fach_provenance": [],
-      "impact_direction": null,
+      "evidence_level": "LOW",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5367814267
+        }
+      ],
+      "impact_direction": "OPEN",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0011-wir-werden-hierzu-eine-bundesratsinitiative-in-die-wege-le",
-      "terminal_fach_status": null
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
@@ -27867,6 +27882,26 @@
     },
     {
       "applicable_241_layer_markers_explicit": [],
+      "canonical_legacy_classification": "SAME",
+      "child_source_unit_ids": [],
+      "effect_role": "COUNTABLE_EFFECT_LEAF",
+      "evidence_level": "NOT_ASSESSABLE",
+      "fach_provenance": [
+        {
+          "join_reason": "CANONICAL_SAME_OR_STANDALONE_LEAF_NOT_REPEATED_IN_PARITY_SHARD",
+          "legacy_terminal_review_comment_id": 5367814267
+        }
+      ],
+      "impact_direction": "OPEN",
+      "layer_set_check": "INHERITED_TERMINAL_BASELINE_LAYER_PROVENANCE",
+      "parent_source_unit_id": null,
+      "semantic_role_source_record": null,
+      "source_role": "COUNTABLE_CANONICAL_SOURCE",
+      "source_unit_id": "ltw-2026-st-cdu-0014-zugleich-setzen-wir-uns-auf-bundesebene-fuer-die-schnelle",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "applicable_241_layer_markers_explicit": [],
       "canonical_legacy_classification": "CONTEXT_AND_TARGET_FRAME",
       "child_source_unit_ids": [],
       "effect_role": "COUNTABLE_EFFECT_LEAF",
@@ -27884,6 +27919,26 @@
       "source_role": "COUNTABLE_CANONICAL_SOURCE",
       "source_unit_id": "ltw-2026-st-cdu-0015-migration-mit-augenmass-auslaenderinnen-und-auslaender-die",
       "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
+    },
+    {
+      "applicable_241_layer_markers_explicit": [],
+      "canonical_legacy_classification": "SAME",
+      "child_source_unit_ids": [],
+      "effect_role": "COUNTABLE_EFFECT_LEAF",
+      "evidence_level": "LOW",
+      "fach_provenance": [
+        {
+          "join_reason": "CANONICAL_SAME_OR_STANDALONE_LEAF_NOT_REPEATED_IN_PARITY_SHARD",
+          "legacy_terminal_review_comment_id": 5367826696
+        }
+      ],
+      "impact_direction": "POSITIVE",
+      "layer_set_check": "INHERITED_TERMINAL_BASELINE_LAYER_PROVENANCE",
+      "parent_source_unit_id": null,
+      "semantic_role_source_record": null,
+      "source_role": "COUNTABLE_CANONICAL_SOURCE",
+      "source_unit_id": "ltw-2026-st-cdu-0016-praeventionsambulanzen-fuer-psychisch-erkrankte-menschen-m",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
@@ -30624,14 +30679,18 @@
         "ST-CDU-PRIMARY-SPLIT-0150-LAND-FOREST-INFORMATION-PLATFORM-PUBLIC-DATA"
       ],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": null,
-      "fach_provenance": [],
-      "impact_direction": null,
+      "evidence_level": "LOW",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5369045613
+        }
+      ],
+      "impact_direction": "AMBIVALENT",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0150-auf-innovationen-in-der-land-und-forstwirtschaft-setzen-wi",
-      "terminal_fach_status": null
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
@@ -31503,10 +31562,10 @@
         "ST-CDU-PRIMARY-SPLIT-0188-STABLE-FINANCING-STAFF-RATIO-RETENTION"
       ],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": "MEDIUM",
+      "evidence_level": "LOW",
       "fach_provenance": [
         {
-          "legacy_terminal_review_comment_id": 5374585728
+          "legacy_terminal_review_comment_id": 5374587495
         }
       ],
       "impact_direction": "POSITIVE",
@@ -31514,7 +31573,7 @@
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0188-kinderbetreuung-zukunftsfest-und-qualitaetsorientiert-gest",
-      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
@@ -31548,7 +31607,7 @@
       "evidence_level": "MEDIUM",
       "fach_provenance": [
         {
-          "legacy_terminal_review_comment_id": 5374585728
+          "legacy_terminal_review_comment_id": 5374587495
         }
       ],
       "impact_direction": "AMBIVALENT",
@@ -31556,7 +31615,7 @@
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0190-die-arbeit-in-kitas-entbuerokratisieren-wir-wollen-dass-si",
-      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
@@ -31569,7 +31628,7 @@
       "evidence_level": "MEDIUM",
       "fach_provenance": [
         {
-          "legacy_terminal_review_comment_id": 5374585728
+          "legacy_terminal_review_comment_id": 5374587495
         }
       ],
       "impact_direction": "POSITIVE",
@@ -31577,7 +31636,7 @@
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0191-die-kindertagespflege-als-gleichwertiges-angebot-sichern-w",
-      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
@@ -31612,7 +31671,7 @@
       "evidence_level": "MEDIUM",
       "fach_provenance": [
         {
-          "legacy_terminal_review_comment_id": 5374585728
+          "legacy_terminal_review_comment_id": 5374587495
         }
       ],
       "impact_direction": "POSITIVE",
@@ -31620,7 +31679,7 @@
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0193-gesundheit-bewegung-und-ernaehrung-in-der-kita-verankern-w",
-      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
@@ -31633,7 +31692,7 @@
       "evidence_level": "MEDIUM",
       "fach_provenance": [
         {
-          "legacy_terminal_review_comment_id": 5374585728
+          "legacy_terminal_review_comment_id": 5374587495
         }
       ],
       "impact_direction": "POSITIVE",
@@ -31641,7 +31700,7 @@
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0194-kommunen-und-traeger-bei-investitionen-unterstuetzen-wir-f",
-      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
@@ -31692,18 +31751,18 @@
         "ST-CDU-PRIMARY-SPLIT-0197-SOVEREIGN-EU-GERMAN-CLOUD"
       ],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": "NOT_ASSESSABLE",
+      "evidence_level": "LOW",
       "fach_provenance": [
         {
-          "legacy_terminal_review_comment_id": 5371668789
+          "legacy_terminal_review_comment_id": 5374639617
         }
       ],
-      "impact_direction": "OPEN",
+      "impact_direction": "AMBIVALENT",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0197-digitale-souveraenitaet-sichern-die-entflechtung-zentraler",
-      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
@@ -31719,15 +31778,15 @@
       "evidence_level": "MEDIUM",
       "fach_provenance": [
         {
-          "legacy_terminal_review_comment_id": 5371668789
+          "legacy_terminal_review_comment_id": 5374639617
         }
       ],
-      "impact_direction": "OPEN",
+      "impact_direction": "POSITIVE",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0198-digitale-verwaltung-ausbauen-erfolgreiche-modellprojekte-f",
-      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
@@ -31737,18 +31796,18 @@
         "ST-CDU-PRIMARY-SPLIT-0199-NATIONWIDE-STANDARD-PORTALS-ROUTING"
       ],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": "NOT_ASSESSABLE",
+      "evidence_level": "MEDIUM",
       "fach_provenance": [
         {
-          "legacy_terminal_review_comment_id": 5371668789
+          "legacy_terminal_review_comment_id": 5374639617
         }
       ],
-      "impact_direction": "OPEN",
+      "impact_direction": "AMBIVALENT",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0199-digitalisierung-von-daten-vorantreiben-das-schafft-sicherh",
-      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
@@ -31762,7 +31821,7 @@
       "evidence_level": "LOW",
       "fach_provenance": [
         {
-          "legacy_terminal_review_comment_id": 5371668789
+          "legacy_terminal_review_comment_id": 5374639617
         }
       ],
       "impact_direction": "AMBIVALENT",
@@ -31820,10 +31879,10 @@
         "ST-CDU-PRIMARY-SPLIT-0203-SHARED-CENTRAL-DIGITAL-INFRA-SECURE-CLOUD"
       ],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": "LOW",
+      "evidence_level": "MEDIUM",
       "fach_provenance": [
         {
-          "legacy_terminal_review_comment_id": 5371668789
+          "legacy_terminal_review_comment_id": 5374639617
         }
       ],
       "impact_direction": "AMBIVALENT",
@@ -31831,7 +31890,7 @@
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0203-gemeinsame-digitale-infrastruktur-aufbauen-damit-schaffen",
-      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
@@ -31841,13 +31900,13 @@
         "ST-CDU-PRIMARY-SPLIT-0204-FREE-PUBLIC-WLAN-CENTRAL-PLACES"
       ],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": "LOW",
+      "evidence_level": "MEDIUM",
       "fach_provenance": [
         {
-          "legacy_terminal_review_comment_id": 5371668789
+          "legacy_terminal_review_comment_id": 5374639617
         }
       ],
-      "impact_direction": "AMBIVALENT",
+      "impact_direction": "POSITIVE",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
@@ -31865,7 +31924,7 @@
       "evidence_level": "LOW",
       "fach_provenance": [
         {
-          "legacy_terminal_review_comment_id": 5371668789
+          "legacy_terminal_review_comment_id": 5374639617
         }
       ],
       "impact_direction": "AMBIVALENT",
@@ -31880,20 +31939,20 @@
       "canonical_legacy_classification": "DUPLICATE+SAME",
       "child_source_unit_ids": [],
       "effect_role": "COUNTABLE_EFFECT_LEAF",
-      "evidence_level": "LOW",
+      "evidence_level": "MEDIUM",
       "fach_provenance": [
         {
           "join_reason": "CANONICAL_SAME_OR_STANDALONE_LEAF_NOT_REPEATED_IN_PARITY_SHARD",
-          "legacy_terminal_review_comment_id": 5371668789
+          "legacy_terminal_review_comment_id": 5374614861
         }
       ],
-      "impact_direction": "OPEN",
+      "impact_direction": "POSITIVE",
       "layer_set_check": "INHERITED_TERMINAL_BASELINE_LAYER_PROVENANCE",
       "parent_source_unit_id": null,
       "semantic_role_source_record": null,
       "source_role": "COUNTABLE_CANONICAL_SOURCE",
       "source_unit_id": "ltw-2026-st-cdu-0206-leben-durch-digitalisierung-erleichtern-digitale-prozesse",
-      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
@@ -31927,13 +31986,13 @@
         "ST-CDU-PRIMARY-SPLIT-0209-RISK-BASED-SAMPLE-CONTROLS"
       ],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": "MEDIUM",
+      "evidence_level": "LOW",
       "fach_provenance": [
         {
-          "legacy_terminal_review_comment_id": 5371668789
+          "legacy_terminal_review_comment_id": 5374669067
         }
       ],
-      "impact_direction": "POSITIVE",
+      "impact_direction": "AMBIVALENT",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
@@ -31949,18 +32008,18 @@
         "ST-CDU-PRIMARY-SPLIT-0210-PROCESS-TIME-LIMITS-LEGAL-REVIEW"
       ],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": "NOT_ASSESSABLE",
+      "evidence_level": "MEDIUM",
       "fach_provenance": [
         {
-          "legacy_terminal_review_comment_id": 5371668789
+          "legacy_terminal_review_comment_id": 5374669067
         }
       ],
-      "impact_direction": "OPEN",
+      "impact_direction": "AMBIVALENT",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0210-planungs-und-genehmigungsverfahren-beschleunigen-wir-schal",
-      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
@@ -31971,29 +32030,29 @@
         "ST-CDU-PRIMARY-SPLIT-0211-TASK-REVIEW-ADMIN-REFORM"
       ],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": "NOT_ASSESSABLE",
+      "evidence_level": "LOW",
       "fach_provenance": [
         {
-          "legacy_terminal_review_comment_id": 5371668789
+          "legacy_terminal_review_comment_id": 5374669067
         }
       ],
-      "impact_direction": "OPEN",
+      "impact_direction": "AMBIVALENT",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0211-mittelbehoerden-auf-den-pruefstand-stellen-die-cdu-wird-zu",
-      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
       "canonical_legacy_classification": "CONTINUATION+SAME",
       "child_source_unit_ids": [],
       "effect_role": "COUNTABLE_EFFECT_LEAF",
-      "evidence_level": "MEDIUM",
+      "evidence_level": "LOW",
       "fach_provenance": [
         {
           "join_reason": "CANONICAL_SAME_OR_STANDALONE_LEAF_NOT_REPEATED_IN_PARITY_SHARD",
-          "legacy_terminal_review_comment_id": 5371668789
+          "legacy_terminal_review_comment_id": 5374635398
         }
       ],
       "impact_direction": "POSITIVE",
@@ -32013,13 +32072,13 @@
         "ST-CDU-PRIMARY-SPLIT-0213-END-TO-END-DIGITAL-ACCESSIBILITY"
       ],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": "NOT_ASSESSABLE",
+      "evidence_level": "MEDIUM",
       "fach_provenance": [
         {
-          "legacy_terminal_review_comment_id": 5371668789
+          "legacy_terminal_review_comment_id": 5374669067
         }
       ],
-      "impact_direction": "OPEN",
+      "impact_direction": "POSITIVE",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
@@ -32034,18 +32093,38 @@
         "ST-CDU-PRIMARY-SPLIT-0214-DIGITAL-TWIN-TRANSPARENCY-PARTICIPATION"
       ],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": "NOT_ASSESSABLE",
+      "evidence_level": "MEDIUM",
       "fach_provenance": [
         {
-          "legacy_terminal_review_comment_id": 5371668789
+          "legacy_terminal_review_comment_id": 5374669067
         }
       ],
-      "impact_direction": "OPEN",
+      "impact_direction": "AMBIVALENT",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0214-digitale-zwillinge-in-der-raumordnung-etablieren-mit-lande",
-      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "applicable_241_layer_markers_explicit": [],
+      "canonical_legacy_classification": "PARTIAL",
+      "child_source_unit_ids": [],
+      "effect_role": "COUNTABLE_EFFECT_LEAF",
+      "evidence_level": "LOW",
+      "fach_provenance": [
+        {
+          "join_reason": "CANONICAL_SAME_OR_STANDALONE_LEAF_NOT_REPEATED_IN_PARITY_SHARD",
+          "legacy_terminal_review_comment_id": 5369970967
+        }
+      ],
+      "impact_direction": "POSITIVE",
+      "layer_set_check": "INHERITED_TERMINAL_BASELINE_LAYER_PROVENANCE",
+      "parent_source_unit_id": null,
+      "semantic_role_source_record": null,
+      "source_role": "COUNTABLE_CANONICAL_SOURCE",
+      "source_unit_id": "ltw-2026-st-cdu-0217-gleicher-zugang-zum-recht-ueberall-recht-muss-fuer-jeden-l",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
@@ -32057,14 +32136,18 @@
         "ST-CDU-PRIMARY-SPLIT-0218-JUSTICE-DIGITAL-INFRASTRUCTURE"
       ],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": null,
-      "fach_provenance": [],
-      "impact_direction": null,
+      "evidence_level": "MEDIUM",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5374692973
+        }
+      ],
+      "impact_direction": "AMBIVALENT",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0218-einen-entschlossenen-rechtsstaat-und-eine-schnelle-justiz",
-      "terminal_fach_status": null
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
@@ -32077,14 +32160,38 @@
         "ST-CDU-PRIMARY-SPLIT-0219-TRAINING-WORKPLACE-CONDITIONS-EQUIPMENT"
       ],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": null,
-      "fach_provenance": [],
-      "impact_direction": null,
+      "evidence_level": "LOW",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5374692973
+        }
+      ],
+      "impact_direction": "POSITIVE",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0219-den-juristischen-nachwuchs-gewinnen-und-die-attraktivitaet",
-      "terminal_fach_status": null
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "applicable_241_layer_markers_explicit": [],
+      "canonical_legacy_classification": "SAME",
+      "child_source_unit_ids": [],
+      "effect_role": "COUNTABLE_EFFECT_LEAF",
+      "evidence_level": "LOW",
+      "fach_provenance": [
+        {
+          "join_reason": "CANONICAL_SAME_OR_STANDALONE_LEAF_NOT_REPEATED_IN_PARITY_SHARD",
+          "legacy_terminal_review_comment_id": 5374652566
+        }
+      ],
+      "impact_direction": "AMBIVALENT",
+      "layer_set_check": "INHERITED_TERMINAL_BASELINE_LAYER_PROVENANCE",
+      "parent_source_unit_id": null,
+      "semantic_role_source_record": null,
+      "source_role": "COUNTABLE_CANONICAL_SOURCE",
+      "source_unit_id": "ltw-2026-st-cdu-0220-die-rechtsanwaltliche-versorgung-in-der-flaeche-sichern-de",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
@@ -32094,14 +32201,18 @@
         "ST-CDU-PRIMARY-SPLIT-0221-REMOVE-SUPERFLUOUS-REGULATION-NORM-RESTRAINT"
       ],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": null,
-      "fach_provenance": [],
-      "impact_direction": null,
+      "evidence_level": "MEDIUM",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5374692973
+        }
+      ],
+      "impact_direction": "POSITIVE",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0221-recht-verstaendlich-digital-und-effizient-gestalten-recht",
-      "terminal_fach_status": null
+      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
@@ -32111,14 +32222,18 @@
         "ST-CDU-PRIMARY-SPLIT-0222-JUSTICE-AI-SUPPORTIVE-USE"
       ],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": null,
-      "fach_provenance": [],
-      "impact_direction": null,
+      "evidence_level": "MEDIUM",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5374692973
+        }
+      ],
+      "impact_direction": "AMBIVALENT",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0222-verantwortungsvolle-nutzung-kuenstlicher-intelligenz-die-j",
-      "terminal_fach_status": null
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
@@ -32128,14 +32243,18 @@
         "ST-CDU-PRIMARY-SPLIT-0223-OVERREGIONAL-ARBITRATION-MAGDEBURG-LAW-LOCATION"
       ],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": null,
-      "fach_provenance": [],
-      "impact_direction": null,
+      "evidence_level": "MEDIUM",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5374692973
+        }
+      ],
+      "impact_direction": "POSITIVE",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0223-aussergerichtliche-streitbeilegung-staerken-schiedspersone",
-      "terminal_fach_status": null
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
@@ -32147,14 +32266,18 @@
         "ST-CDU-PRIMARY-SPLIT-0224-WITNESS-PROTECTION"
       ],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": null,
-      "fach_provenance": [],
-      "impact_direction": null,
+      "evidence_level": "MEDIUM",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5374692973
+        }
+      ],
+      "impact_direction": "POSITIVE",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0224-den-opferschutz-konsequent-ausbauen-der-schutz-von-opfern",
-      "terminal_fach_status": null
+      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
@@ -32165,14 +32288,18 @@
         "ST-CDU-PRIMARY-SPLIT-0225-PEER-STUDENT-LEGAL-ORDER-ENGAGEMENT"
       ],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": null,
-      "fach_provenance": [],
-      "impact_direction": null,
+      "evidence_level": "LOW",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5374692973
+        }
+      ],
+      "impact_direction": "AMBIVALENT",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0225-schuelergremien-staerken-und-weiter-ausbauen-jugendliche-r",
-      "terminal_fach_status": null
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
@@ -32199,126 +32326,162 @@
       "canonical_legacy_classification": "CONTEXT_ONLY",
       "child_source_unit_ids": [],
       "effect_role": "CONTEXT_ONLY",
-      "evidence_level": null,
-      "fach_provenance": [],
-      "impact_direction": null,
+      "evidence_level": "NOT_ASSESSABLE",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5369990691
+        }
+      ],
+      "impact_direction": "OPEN",
       "layer_set_check": "NOT_APPLICABLE_NON_EFFECT_CONTEXT",
       "parent_source_unit_id": null,
       "source_role": "CONTEXT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0227-wir-lehnen-eine-ideologisch-motivierte-technologiefeindlic",
-      "terminal_fach_status": null
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
     },
     {
       "applicable_241_layer_markers_explicit": [],
       "canonical_legacy_classification": "TRUNCATED",
       "child_source_unit_ids": [],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": null,
-      "fach_provenance": [],
-      "impact_direction": null,
+      "evidence_level": "NOT_ASSESSABLE",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5370989863
+        }
+      ],
+      "impact_direction": "OPEN",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0228-ein-modernes-verlaessliches-vernetztes-und-bezahlbares-mob",
-      "terminal_fach_status": null
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
     },
     {
       "applicable_241_layer_markers_explicit": [],
       "canonical_legacy_classification": "PARTIAL_PARENT+PARTIAL",
       "child_source_unit_ids": [],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": null,
-      "fach_provenance": [],
-      "impact_direction": null,
+      "evidence_level": "LOW",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5374807332
+        }
+      ],
+      "impact_direction": "AMBIVALENT",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0229-zudem-setzen-wir-uns-fuer-die-erstellung-eines-landesweite",
-      "terminal_fach_status": null
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
       "canonical_legacy_classification": "OVERMERGED",
       "child_source_unit_ids": [],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": null,
-      "fach_provenance": [],
-      "impact_direction": null,
+      "evidence_level": "LOW",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5374807332
+        }
+      ],
+      "impact_direction": "POSITIVE",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0230-verkehrssteuerung-in-sachsen-anhalt-verbessern-wir-werden",
-      "terminal_fach_status": null
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
       "canonical_legacy_classification": "OVERMERGED",
       "child_source_unit_ids": [],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": null,
-      "fach_provenance": [],
-      "impact_direction": null,
+      "evidence_level": "MEDIUM",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5374807332
+        }
+      ],
+      "impact_direction": "AMBIVALENT",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0231-effizienter-planen-und-dadurch-infrastruktur-schneller-ums",
-      "terminal_fach_status": null
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
       "canonical_legacy_classification": "OVERMERGED",
       "child_source_unit_ids": [],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": null,
-      "fach_provenance": [],
-      "impact_direction": null,
+      "evidence_level": "MEDIUM",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5374807332
+        }
+      ],
+      "impact_direction": "AMBIVALENT",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0232-mobilitaetsvielfalt-ermoeglichen-und-technologieoffenheit",
-      "terminal_fach_status": null
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
       "canonical_legacy_classification": "OVERMERGED",
       "child_source_unit_ids": [],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": null,
-      "fach_provenance": [],
-      "impact_direction": null,
+      "evidence_level": "LOW",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5374807332
+        }
+      ],
+      "impact_direction": "AMBIVALENT",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0233-gegen-unbegruendete-verkehrsverbote-vorgehen-wir-stehen-ei",
-      "terminal_fach_status": null
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
       "canonical_legacy_classification": "OVERMERGED",
       "child_source_unit_ids": [],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": null,
-      "fach_provenance": [],
-      "impact_direction": null,
+      "evidence_level": "LOW",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5374807332
+        }
+      ],
+      "impact_direction": "POSITIVE",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0234-oepnv-modernisieren-und-den-sachsen-anhalt-takt-weiterentw",
-      "terminal_fach_status": null
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
       "canonical_legacy_classification": "OVERMERGED",
       "child_source_unit_ids": [],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": null,
-      "fach_provenance": [],
-      "impact_direction": null,
+      "evidence_level": "NOT_ASSESSABLE",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5374807332
+        }
+      ],
+      "impact_direction": "OPEN",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0235-schienen-und-personennahverkehr-sichern-und-ausbauen-wir-w",
-      "terminal_fach_status": null
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
     },
     {
       "applicable_241_layer_markers_explicit": [],
@@ -32331,14 +32494,18 @@
         "ST-CDU-PRIMARY-SPLIT-0236-RAIL-INFRA-ELECTRIFICATION-SPEED"
       ],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": null,
-      "fach_provenance": [],
-      "impact_direction": null,
+      "evidence_level": "NOT_ASSESSABLE",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5374860356
+        }
+      ],
+      "impact_direction": "OPEN",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0236-schiene-staerken-netz-verdichten-elektrifizierung-vorantre",
-      "terminal_fach_status": null
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
     },
     {
       "applicable_241_layer_markers_explicit": [],
@@ -32350,14 +32517,18 @@
         "ST-CDU-PRIMARY-SPLIT-0237-SENIOR-ROAD-SAFETY-OFFERS"
       ],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": null,
-      "fach_provenance": [],
-      "impact_direction": null,
+      "evidence_level": "LOW",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5374860356
+        }
+      ],
+      "impact_direction": "POSITIVE",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0237-verkehrssicherheitsarbeit-auf-hohem-niveau-halten-bei-der",
-      "terminal_fach_status": null
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
@@ -32373,14 +32544,18 @@
         "ST-CDU-PRIMARY-SPLIT-0238-RURAL-INTEGRATED-MOBILITY-PILOT"
       ],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": null,
-      "fach_provenance": [],
-      "impact_direction": null,
+      "evidence_level": "NOT_ASSESSABLE",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5374860356
+        }
+      ],
+      "impact_direction": "OPEN",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0238-die-mobilitaet-im-laendlichen-raum-staerken-der-schluessel",
-      "terminal_fach_status": null
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
     },
     {
       "applicable_241_layer_markers_explicit": [],
@@ -32390,14 +32565,18 @@
         "ST-CDU-PRIMARY-SPLIT-0239-SECURE-BIKE-PARKING-CHARGING"
       ],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": null,
-      "fach_provenance": [],
-      "impact_direction": null,
+      "evidence_level": "LOW",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5374860356
+        }
+      ],
+      "impact_direction": "POSITIVE",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0239-radverkehr-staerken-und-alltagsradeln-foerdern-wir-wollen",
-      "terminal_fach_status": null
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
       "applicable_241_layer_markers_explicit": [
@@ -32456,84 +32635,108 @@
         "ST-CDU-PRIMARY-SPLIT-0241-REST-AREA-CAPACITY-INVESTMENT"
       ],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": null,
-      "fach_provenance": [],
-      "impact_direction": null,
+      "evidence_level": "LOW",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5374860356
+        }
+      ],
+      "impact_direction": "POSITIVE",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0241-ausbau-und-die-modernisierung-von-rastplaetzen-vorantreibe",
-      "terminal_fach_status": null
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
       "canonical_legacy_classification": "OVERMERGED",
       "child_source_unit_ids": [],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": null,
-      "fach_provenance": [],
-      "impact_direction": null,
+      "evidence_level": "MEDIUM",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5370989863
+        }
+      ],
+      "impact_direction": "POSITIVE",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0245-ungenutzte-flaechen-aktivieren-brachflaechen-alte-industri",
-      "terminal_fach_status": null
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
       "canonical_legacy_classification": "OVERMERGED",
       "child_source_unit_ids": [],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": null,
-      "fach_provenance": [],
-      "impact_direction": null,
+      "evidence_level": "LOW",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5370989863
+        }
+      ],
+      "impact_direction": "POSITIVE",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0246-innenstaedte-lebendig-halten-als-zentren-des-lebens-und-wi",
-      "terminal_fach_status": null
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
       "canonical_legacy_classification": "CONTEXT_ONLY",
       "child_source_unit_ids": [],
       "effect_role": "CONTEXT_ONLY",
-      "evidence_level": null,
-      "fach_provenance": [],
-      "impact_direction": null,
+      "evidence_level": "NOT_ASSESSABLE",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5370989863
+        }
+      ],
+      "impact_direction": "OPEN",
       "layer_set_check": "NOT_APPLICABLE_NON_EFFECT_CONTEXT",
       "parent_source_unit_id": null,
       "source_role": "CONTEXT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0247-damit-schaffen-wir-verlaesslichkeit-fuer-kommunen-wasserve",
-      "terminal_fach_status": null
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
     },
     {
       "applicable_241_layer_markers_explicit": [],
       "canonical_legacy_classification": "OVERMERGED",
       "child_source_unit_ids": [],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": null,
-      "fach_provenance": [],
-      "impact_direction": null,
+      "evidence_level": "LOW",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5370989863
+        }
+      ],
+      "impact_direction": "AMBIVALENT",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0248-dass-eine-regionale-rohstoffgewinnung-umweltschonend-mit-a",
-      "terminal_fach_status": null
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
       "canonical_legacy_classification": "OVERMERGED",
       "child_source_unit_ids": [],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": null,
-      "fach_provenance": [],
-      "impact_direction": null,
+      "evidence_level": "LOW",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5370989863
+        }
+      ],
+      "impact_direction": "AMBIVALENT",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0249-umweltschutzvorschriften-nicht-unnoetig-verschaerfen-dazu",
-      "terminal_fach_status": null
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
@@ -32547,84 +32750,108 @@
         "ST-CDU-PRIMARY-SPLIT-0250-WILDLIFE-DAMAGE"
       ],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": null,
-      "fach_provenance": [],
-      "impact_direction": null,
+      "evidence_level": "LOW",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5372975406
+        }
+      ],
+      "impact_direction": "POSITIVE",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa",
-      "terminal_fach_status": null
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
       "canonical_legacy_classification": "OVERMERGED",
       "child_source_unit_ids": [],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": null,
-      "fach_provenance": [],
-      "impact_direction": null,
+      "evidence_level": "MEDIUM",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5370989863
+        }
+      ],
+      "impact_direction": "POSITIVE",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0251-tierschutz-besser-unterstuetzen-die-tierheime-und-tierschu",
-      "terminal_fach_status": null
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
       "canonical_legacy_classification": "OVERMERGED",
       "child_source_unit_ids": [],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": null,
-      "fach_provenance": [],
-      "impact_direction": null,
+      "evidence_level": "MEDIUM",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5370989863
+        }
+      ],
+      "impact_direction": "POSITIVE",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0252-klimafeste-staedte-foerdern-der-klimawandel-stellt-auch-un",
-      "terminal_fach_status": null
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
       "canonical_legacy_classification": "OVERMERGED",
       "child_source_unit_ids": [],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": null,
-      "fach_provenance": [],
-      "impact_direction": null,
+      "evidence_level": "MEDIUM",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5370989863
+        }
+      ],
+      "impact_direction": "AMBIVALENT",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0253-modernes-wassermanagement-unterstuetzen-unsere-gewaesser-b",
-      "terminal_fach_status": null
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
       "canonical_legacy_classification": "OVERMERGED",
       "child_source_unit_ids": [],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": null,
-      "fach_provenance": [],
-      "impact_direction": null,
+      "evidence_level": "MEDIUM",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5370989863
+        }
+      ],
+      "impact_direction": "POSITIVE",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0254-flaechenverbrauch-wirksam-begrenzen-boden-ist-eine-endlich",
-      "terminal_fach_status": null
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
       "canonical_legacy_classification": "OVERMERGED",
       "child_source_unit_ids": [],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": null,
-      "fach_provenance": [],
-      "impact_direction": null,
+      "evidence_level": "MEDIUM",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5370989863
+        }
+      ],
+      "impact_direction": "AMBIVALENT",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0255-unsere-schutzgebiete-staerken-nationalparke-biosphaerenres",
-      "terminal_fach_status": null
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
@@ -34219,7 +34446,7 @@
       "evidence_level": "NOT_ASSESSABLE",
       "fach_provenance": [
         {
-          "legacy_terminal_review_comment_id": 5371263710
+          "legacy_terminal_review_comment_id": 5372975406
         }
       ],
       "impact_direction": "OPEN",
@@ -34227,7 +34454,7 @@
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0319-neue-wege-fuer-einen-zukunftsfaehigen-tourismus-der-touris",
-      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
     },
     {
       "applicable_241_layer_markers_explicit": [
@@ -34353,18 +34580,18 @@
         "ST-CDU-PRIMARY-SPLIT-0323-RESOURCE-EFFICIENT-MODEL-PROJECTS"
       ],
       "effect_role": "NONLEAF_PARENT",
-      "evidence_level": "NOT_ASSESSABLE",
+      "evidence_level": "LOW",
       "fach_provenance": [
         {
-          "legacy_terminal_review_comment_id": 5371212571
+          "legacy_terminal_review_comment_id": 5372975406
         }
       ],
-      "impact_direction": "OPEN",
+      "impact_direction": "POSITIVE",
       "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0323-landesweit-in-die-touristische-infrastruktur-investieren-o",
-      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
       "applicable_241_layer_markers_explicit": [
@@ -34930,7 +35157,7 @@
       "evidence_level": "NOT_ASSESSABLE",
       "fach_provenance": [
         {
-          "legacy_terminal_review_comment_id": 5371212571
+          "legacy_terminal_review_comment_id": 5372939759
         }
       ],
       "impact_direction": "OPEN",
@@ -35022,7 +35249,7 @@
     }
   ],
   "fach_semantics_created_by_reconciler": false,
-  "generated_at": "2026-08-22T00:25:10.653335+00:00",
+  "generated_at": "2026-08-22T00:32:48.873159+00:00",
   "historical_release1": {
     "register_path": "woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-cdu-zusagen.md",
     "role": "IMMUTABLE_WORKING_BASELINE_NOT_FINAL_DENOMINATOR",
@@ -35065,11 +35292,5 @@
   "st_cdu_final_versioned_manifest": "PENDING_GLOBAL_LEAF_RECONCILIATION",
   "st_cdu_primary_source_parity": "PASS_FULL_PROGRAMME",
   "st_cdu_terminal_complete": false,
-  "unresolved_relation_refs": [
-    {
-      "from": "ltw-2026-st-cdu-0259-tierheime-besser-unterstuetzen-die-tierheime-leisten-wertv",
-      "raw": "RESTATEMENT_DUPLICATE_OF_0251_ANIMAL_WELFARE_FUNDING",
-      "relation": "RESTATEMENT"
-    }
-  ]
+  "unresolved_relation_refs": []
 }

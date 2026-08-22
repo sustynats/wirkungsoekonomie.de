@@ -2,20 +2,15 @@
   "authoritative_effect_mechanism_count": null,
   "authoritative_source_unit_count": null,
   "blockers": [
-    "LEGACY_EFFECT_LEAF_TERMINAL_TRIPLET_NOT_FOUND:0014:ltw-2026-st-cdu-0014-zugleich-setzen-wir-uns-auf-bundesebene-fuer-die-schnelle",
-    "LEGACY_EFFECT_LEAF_TERMINAL_TRIPLET_NOT_FOUND:0016:ltw-2026-st-cdu-0016-praeventionsambulanzen-fuer-psychisch-erkrankte-menschen-m",
-    "LEGACY_EFFECT_LEAF_TERMINAL_TRIPLET_NOT_FOUND:0217:ltw-2026-st-cdu-0217-gleicher-zugang-zum-recht-ueberall-recht-muss-fuer-jeden-l",
-    "LEGACY_EFFECT_LEAF_TERMINAL_TRIPLET_NOT_FOUND:0220:ltw-2026-st-cdu-0220-die-rechtsanwaltliche-versorgung-in-der-flaeche-sichern-de",
-    "LEGACY_PRIMARY_ROLE_UNCLASSIFIED:20",
-    "UNRESOLVED_RELATION:RESTATEMENT:ltw-2026-st-cdu-0259-tierheime-besser-unterstuetzen-die-tierheime-leisten-wertv:RESTATEMENT_DUPLICATE_OF_0251_ANIMAL_WELFARE_FUNDING"
+    "LEGACY_PRIMARY_ROLE_UNCLASSIFIED:20"
   ],
   "canonical_shards_expected": 24,
   "canonical_shards_loaded": 24,
-  "countable_effect_ids": 727,
-  "countable_source_ids": 728,
+  "countable_effect_ids": 731,
+  "countable_source_ids": 732,
   "effect_id_duplicates": [],
   "freeze_gate": "BLOCKED",
-  "generated_at": "2026-08-22T00:25:10.653335+00:00",
+  "generated_at": "2026-08-22T00:32:48.873159+00:00",
   "legacy_classification_conflicts": [],
   "legacy_register_rows": 344,
   "legacy_role_unclassified": [
@@ -41,7 +36,7 @@
     244
   ],
   "legacy_roles_classified": 328,
-  "legacy_terminal_triplets_found": 302,
+  "legacy_terminal_triplets_found": 344,
   "legacy_versioned_terminal_deltas_observed": [
     {
       "legacy_number": 172,
@@ -1962,6 +1957,1311 @@
         "NOT_ASSESSABLE"
       ],
       "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
+    },
+    {
+      "legacy_number": 250,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5372975406,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 250,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "new_comment_id": 5372975406,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 250,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "new_comment_id": 5372975406,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 319,
+      "new": [
+        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "new_comment_id": 5372975406,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 319,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "new_comment_id": 5372975406,
+      "prior": [
+        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 319,
+      "new": [
+        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "new_comment_id": 5372975406,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 323,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "new_comment_id": 5372975406,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 323,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "new_comment_id": 5372975406,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 323,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "new_comment_id": 5372975406,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 188,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "new_comment_id": 5374587495,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 190,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374587495,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 191,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374587495,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 193,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374587495,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 194,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374587495,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 197,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374614861,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 198,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374614861,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "OPEN",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 199,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374614861,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 200,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "new_comment_id": 5374614861,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 203,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374614861,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 204,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374614861,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 205,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374614861,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 206,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374614861,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "OPEN",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 209,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "new_comment_id": 5374635398,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 210,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374635398,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 211,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "new_comment_id": 5374635398,
+      "prior": [
+        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 212,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "new_comment_id": 5374635398,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 213,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374635398,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 197,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "new_comment_id": 5374639617,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 199,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374639617,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 200,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "new_comment_id": 5374639617,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 204,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374639617,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 205,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "new_comment_id": 5374639617,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 218,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374652566,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 219,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "new_comment_id": 5374652566,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 221,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374652566,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 223,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374652566,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 224,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "HIGH"
+      ],
+      "new_comment_id": 5374652566,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 225,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "new_comment_id": 5374652566,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 209,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "new_comment_id": 5374669067,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 210,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374669067,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 211,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "new_comment_id": 5374669067,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 214,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374669067,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 218,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374692973,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 219,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "new_comment_id": 5374692973,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 222,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374692973,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 223,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374692973,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 224,
+      "new": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374692973,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "POSITIVE",
+        "HIGH"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 225,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "new_comment_id": 5374692973,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 229,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374807332,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 229,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "new_comment_id": 5374807332,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 230,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "new_comment_id": 5374807332,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 231,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374807332,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 232,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374807332,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 232,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374807332,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 232,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374807332,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 233,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374807332,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 233,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "new_comment_id": 5374807332,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 234,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374807332,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 234,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "new_comment_id": 5374807332,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 235,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374807332,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 235,
+      "new": [
+        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "new_comment_id": 5374807332,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 236,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374860356,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 236,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "new_comment_id": 5374860356,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 236,
+      "new": [
+        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "new_comment_id": 5374860356,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 236,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "new_comment_id": 5374860356,
+      "prior": [
+        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 236,
+      "new": [
+        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "new_comment_id": 5374860356,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 238,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "new_comment_id": 5374860356,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 238,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "new_comment_id": 5374860356,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 238,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374860356,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 238,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "new_comment_id": 5374860356,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 238,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "new_comment_id": 5374860356,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 238,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "new_comment_id": 5374860356,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 238,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "new_comment_id": 5374860356,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 238,
+      "new": [
+        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "new_comment_id": 5374860356,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 239,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374860356,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 239,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "new_comment_id": 5374860356,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 240,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374860356,
+      "prior": [
+        "SOURCE_UNIT_RECLASSIFIED_VERSIONED",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 240,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "new_comment_id": 5374860356,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 240,
+      "new": [
+        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "new_comment_id": 5374860356,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 240,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "new_comment_id": 5374860356,
+      "prior": [
+        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 240,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "new_comment_id": 5374860356,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 240,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "new_comment_id": 5374860356,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 240,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "MEDIUM"
+      ],
+      "new_comment_id": 5374860356,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 241,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "new_comment_id": 5374860356,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 241,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "new_comment_id": 5374860356,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "AMBIVALENT",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 241,
+      "new": [
+        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "new_comment_id": 5374860356,
+      "prior": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
+    },
+    {
+      "legacy_number": 241,
+      "new": [
+        "EDITORIAL_V2_PLUS_APPROVED",
+        "POSITIVE",
+        "LOW"
+      ],
+      "new_comment_id": 5374860356,
+      "prior": [
+        "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+        "OPEN",
+        "NOT_ASSESSABLE"
+      ],
+      "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS_ABBREVIATED_HEADING_RECONCILIATION"
     }
   ],
   "mechanical_source_manifest_node_materialization": {
@@ -1998,30 +3298,23 @@
   "schema_version": "1.0",
   "source_id_duplicates": [],
   "structural_validation": {
-    "blockers": [
-      "UNRESOLVED_RELATION:RESTATEMENT:ltw-2026-st-cdu-0259-tierheime-besser-unterstuetzen-die-tierheime-leisten-wertv:RESTATEMENT_DUPLICATE_OF_0251_ANIMAL_WELFARE_FUNDING"
-    ],
-    "countable_effect_leaves": 730,
-    "countable_source_nodes": 731,
+    "blockers": [],
+    "countable_effect_leaves": 734,
+    "countable_source_nodes": 735,
     "cycles": [],
     "dangling_edges": [],
     "edge_counts": {
-      "PARENT_CHILD": 438
+      "PARENT_CHILD": 438,
+      "RESTATEMENT": 1
     },
-    "explicit_union_nodes": 951,
+    "explicit_union_nodes": 955,
     "multiple_parent_conflicts": {},
     "new_fach_semantics_created": false,
     "public_count_mutated": false,
     "relation_graph_acyclic": true,
-    "resolved_typed_edges": 438,
-    "unresolved_relation_refs": [
-      {
-        "from": "ltw-2026-st-cdu-0259-tierheime-besser-unterstuetzen-die-tierheime-leisten-wertv",
-        "raw": "RESTATEMENT_DUPLICATE_OF_0251_ANIMAL_WELFARE_FUNDING",
-        "relation": "RESTATEMENT"
-      }
-    ]
+    "resolved_typed_edges": 439,
+    "unresolved_relation_refs": []
   },
   "terminal_id_conflicts": [],
-  "union_records": 947
+  "union_records": 951
 }
