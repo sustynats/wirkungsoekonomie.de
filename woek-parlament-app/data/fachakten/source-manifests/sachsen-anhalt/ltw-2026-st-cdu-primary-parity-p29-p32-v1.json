@@ -25,6 +25,14 @@
   },
   "authoritative_effect_mechanism_count": null,
   "authoritative_source_unit_count": null,
+  "canonical_diff_materialization": {
+    "issue_comment_id": 5374174537,
+    "legacy_rows_materialized": 14,
+    "mode": "STRICT_FIRST_CELL_LEGACY_SECOND_CELL_PARITY_FROM_EXACT_234_SNAPSHOT",
+    "new_fach_semantics_created": false,
+    "review_snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p29-p32-review.md",
+    "review_snapshot_sha256": "0e00d2cc7828ba7c89a77942f69a753c1f8ab259bad9217a2f67aafc8d87608c"
+  },
   "completion_guard": {
     "st_cdu_final_versioned_manifest": "PENDING_GLOBAL_LEAF_RECONCILIATION",
     "st_cdu_primary_source_parity": "PASS_FULL_PROGRAMME",
@@ -42,9 +50,9 @@
   ],
   "primary_source_diff": [
     {
-      "classification": "OVERMERGED",
+      "classification": "SAME",
       "legacy_unit": "0102",
-      "source_bound_review_line": "| `0105` | `OVERMERGED` | Parent behalten; Kinderbetreuung und Kinderwunschförderung als getrennte Mechanismen; allgemeiner Familienframe/0102-Crosswalk nicht doppelt zählen |"
+      "source_bound_review_line": "| `0102` | `SAME` | Familien-/Berufsvereinbarkeit als bestehende Unit erhalten; vorheriger terminaler Fachstatus bleibt |"
     },
     {
       "classification": "SAME",
@@ -116,6 +124,11 @@
   "programme_key": "ltw-2026-st-cdu",
   "review_snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p29-p32-review.md",
   "review_snapshot_sha256": "0e00d2cc7828ba7c89a77942f69a753c1f8ab259bad9217a2f67aafc8d87608c",
+  "schema_normalization": {
+    "legacy_parent_reference_resolution": "IMMUTABLE_RELEASE1_COMMITMENT_ID_WHERE_NUMERIC_PARENT_PRESENT",
+    "mode": "MECHANICAL_ALIAS_ONLY_NO_NEW_FACH_SEMANTICS",
+    "terminal_alias": "terminal_source_objects"
+  },
   "schema_version": "1.1",
   "segment_checks": {
     "checkpoint_terminal_count": 36,

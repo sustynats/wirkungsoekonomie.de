@@ -25,6 +25,14 @@
   },
   "authoritative_effect_mechanism_count": null,
   "authoritative_source_unit_count": null,
+  "canonical_diff_materialization": {
+    "issue_comment_id": 5374587495,
+    "legacy_rows_materialized": 11,
+    "mode": "STRICT_FIRST_CELL_LEGACY_SECOND_CELL_PARITY_FROM_EXACT_234_SNAPSHOT",
+    "new_fach_semantics_created": false,
+    "review_snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p47-p49-review.md",
+    "review_snapshot_sha256": "c2df2f69079f78d152b66f92345405f1d91b0bd6264f838d0d83b9358895b9fb"
+  },
   "completion_guard": {
     "st_cdu_final_versioned_manifest": "PENDING_GLOBAL_LEAF_RECONCILIATION",
     "st_cdu_primary_source_parity": "PASS_FULL_PROGRAMME",
@@ -82,7 +90,7 @@
       "source_bound_review_line": "| `0192` | `SAME` | inclusion structures/diagnostics/support chains fully represented; 2025 inclusion programme is inherited baseline |"
     },
     {
-      "classification": "OVERMERGED+TRUNCATED+CONTINUATION",
+      "classification": "OVERMERGED+TRUNCATED",
       "legacy_unit": "0193",
       "source_bound_review_line": "| `0193` | `TRUNCATED` + `OVERMERGED` | Release-1 ends after `Medienbildung soll altersgerecht eingeführt werden, mit`; restore full p49 continuation and split food, movement, motor checks, media education |"
     },
@@ -95,27 +103,17 @@
       "classification": "SAME",
       "legacy_unit": "0195",
       "source_bound_review_line": "| `0195` | `SAME` | provider diversity/free-provider landscape/cooperation with welfare sector fully represented |"
-    },
-    {
-      "classification": "CONTINUATION",
-      "legacy_unit": "2023",
-      "source_bound_review_line": "- current Land cooperation baseline: the 2023–2025 Schule-Hort model project was evaluated; current official reporting identifies fixed cooperation structures, common pedagogical goals and coordinated organisation as important quality factors. Therefore programme coordination must be assessed as a concrete continuation/scaling delta, not against zero cooperation."
-    },
-    {
-      "classification": "CONTINUATION",
-      "legacy_unit": "2025",
-      "source_bound_review_line": "- current Land cooperation baseline: the 2023–2025 Schule-Hort model project was evaluated; current official reporting identifies fixed cooperation structures, common pedagogical goals and coordinated organisation as important quality factors. Therefore programme coordination must be assessed as a concrete continuation/scaling delta, not against zero cooperation."
-    },
-    {
-      "classification": "ABSENT",
-      "legacy_unit": "2026",
-      "source_bound_review_line": "| `null` | `ABSENT` | `Rechtsanspruch auf Ganztagsbetreuung ... ab 2026 umsetzen` missing from Release-1; add inherited-baseline/implementation record |"
     }
   ],
   "primary_source_url": "https://www.cdulsa.de/sites/www.cdulsa.de/files/downloads/regierungsprogramm_ltw_web.pdf",
   "programme_key": "ltw-2026-st-cdu",
   "review_snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p47-p49-review.md",
   "review_snapshot_sha256": "c2df2f69079f78d152b66f92345405f1d91b0bd6264f838d0d83b9358895b9fb",
+  "schema_normalization": {
+    "legacy_parent_reference_resolution": "IMMUTABLE_RELEASE1_COMMITMENT_ID_WHERE_NUMERIC_PARENT_PRESENT",
+    "mode": "MECHANICAL_ALIAS_ONLY_NO_NEW_FACH_SEMANTICS",
+    "terminal_alias": "terminal_source_objects"
+  },
   "schema_version": "1.1",
   "segment_checks": {
     "checkpoint_terminal_count": 16,

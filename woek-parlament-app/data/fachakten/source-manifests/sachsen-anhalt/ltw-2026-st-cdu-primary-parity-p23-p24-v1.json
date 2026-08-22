@@ -24,6 +24,14 @@
   },
   "authoritative_effect_mechanism_count": null,
   "authoritative_source_unit_count": null,
+  "canonical_diff_materialization": {
+    "issue_comment_id": 5373687313,
+    "legacy_rows_materialized": 5,
+    "mode": "STRICT_FIRST_CELL_LEGACY_SECOND_CELL_PARITY_FROM_EXACT_234_SNAPSHOT",
+    "new_fach_semantics_created": false,
+    "review_snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p23-p24-review.md",
+    "review_snapshot_sha256": "7605f6c103bcea0e74a7522f5bf31dc052c7bc59a04c4ded11db89ab97e83a25"
+  },
   "completion_guard": {
     "st_cdu_final_versioned_manifest": "PENDING_GLOBAL_LEAF_RECONCILIATION",
     "st_cdu_primary_source_parity": "PASS_FULL_PROGRAMME",
@@ -70,6 +78,11 @@
   "programme_key": "ltw-2026-st-cdu",
   "review_snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p23-p24-review.md",
   "review_snapshot_sha256": "7605f6c103bcea0e74a7522f5bf31dc052c7bc59a04c4ded11db89ab97e83a25",
+  "schema_normalization": {
+    "legacy_parent_reference_resolution": "IMMUTABLE_RELEASE1_COMMITMENT_ID_WHERE_NUMERIC_PARENT_PRESENT",
+    "mode": "MECHANICAL_ALIAS_ONLY_NO_NEW_FACH_SEMANTICS",
+    "terminal_alias": "terminal_source_objects"
+  },
   "schema_version": "1.1",
   "segment_checks": {
     "checkpoint_terminal_count": 18,

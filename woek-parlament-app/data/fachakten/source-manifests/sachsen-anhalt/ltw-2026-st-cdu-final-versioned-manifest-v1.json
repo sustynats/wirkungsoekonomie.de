@@ -29610,7 +29610,7 @@
         "STATE_GFA_ENAP_BENCHMARK",
         "VERSION_DELTA"
       ],
-      "canonical_legacy_classification": "PARTIAL",
+      "canonical_legacy_classification": "SAME",
       "child_source_unit_ids": [],
       "effect_role": "COUNTABLE_EFFECT_LEAF",
       "evidence_level": "LOW",
@@ -29759,19 +29759,21 @@
     },
     {
       "applicable_241_layer_markers_explicit": [],
-      "canonical_legacy_classification": "OVERMERGED",
+      "canonical_legacy_classification": "SAME",
       "child_source_unit_ids": [],
-      "effect_role": "NONLEAF_PARENT",
+      "effect_role": "COUNTABLE_EFFECT_LEAF",
       "evidence_level": "NOT_ASSESSABLE",
       "fach_provenance": [
         {
+          "join_reason": "CANONICAL_SAME_OR_STANDALONE_LEAF_NOT_REPEATED_IN_PARITY_SHARD",
           "legacy_terminal_review_comment_id": 5371842424
         }
       ],
       "impact_direction": "OPEN",
-      "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
+      "layer_set_check": "INHERITED_TERMINAL_BASELINE_LAYER_PROVENANCE",
       "parent_source_unit_id": null,
-      "source_role": "PROVENANCE_PARENT_ONLY",
+      "semantic_role_source_record": null,
+      "source_role": "COUNTABLE_CANONICAL_SOURCE",
       "source_unit_id": "ltw-2026-st-cdu-0102-wir-verbessern-die-vereinbarkeit-von-familie-und-beruf-dur",
       "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
     },
@@ -30210,19 +30212,21 @@
     },
     {
       "applicable_241_layer_markers_explicit": [],
-      "canonical_legacy_classification": "TRUNCATED",
+      "canonical_legacy_classification": "SAME",
       "child_source_unit_ids": [],
-      "effect_role": "NONLEAF_PARENT",
+      "effect_role": "COUNTABLE_EFFECT_LEAF",
       "evidence_level": "LOW",
       "fach_provenance": [
         {
+          "join_reason": "CANONICAL_SAME_OR_STANDALONE_LEAF_NOT_REPEATED_IN_PARITY_SHARD",
           "legacy_terminal_review_comment_id": 5371414887
         }
       ],
       "impact_direction": "POSITIVE",
-      "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
+      "layer_set_check": "INHERITED_TERMINAL_BASELINE_LAYER_PROVENANCE",
       "parent_source_unit_id": null,
-      "source_role": "PROVENANCE_PARENT_ONLY",
+      "semantic_role_source_record": null,
+      "source_role": "COUNTABLE_CANONICAL_SOURCE",
       "source_unit_id": "ltw-2026-st-cdu-0125-den-koordinierten-einsatz-von-bots-und-fakeaccounts-zur-de",
       "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
@@ -30520,7 +30524,7 @@
     },
     {
       "applicable_241_layer_markers_explicit": [],
-      "canonical_legacy_classification": "OVERMERGED+TRUNCATED+CONTINUATION",
+      "canonical_legacy_classification": "OVERMERGED+TRUNCATED",
       "child_source_unit_ids": [
         "ST-CDU-PRIMARY-SPLIT-0142-AGRI-TRAINING-CONTINUING-EDUCATION",
         "ST-CDU-PRIMARY-SPLIT-0142-GEOBOX-DATA-POOLING",
@@ -31660,7 +31664,7 @@
     },
     {
       "applicable_241_layer_markers_explicit": [],
-      "canonical_legacy_classification": "OVERMERGED+TRUNCATED+CONTINUATION",
+      "canonical_legacy_classification": "OVERMERGED+TRUNCATED",
       "child_source_unit_ids": [
         "ST-CDU-PRIMARY-SPLIT-0193-AGE-APPROPRIATE-MEDIA-EDUCATION",
         "ST-CDU-PRIMARY-SPLIT-0193-HEALTHY-AFFORDABLE-KITA-MEALS",
@@ -31724,7 +31728,7 @@
     },
     {
       "applicable_241_layer_markers_explicit": [],
-      "canonical_legacy_classification": "DUPLICATE+SAME",
+      "canonical_legacy_classification": "PARTIAL",
       "child_source_unit_ids": [],
       "effect_role": "COUNTABLE_EFFECT_LEAF",
       "evidence_level": "NOT_ASSESSABLE",
@@ -31936,7 +31940,7 @@
     },
     {
       "applicable_241_layer_markers_explicit": [],
-      "canonical_legacy_classification": "DUPLICATE+SAME",
+      "canonical_legacy_classification": "SAME",
       "child_source_unit_ids": [],
       "effect_role": "COUNTABLE_EFFECT_LEAF",
       "evidence_level": "MEDIUM",
@@ -32023,7 +32027,7 @@
     },
     {
       "applicable_241_layer_markers_explicit": [],
-      "canonical_legacy_classification": "OVERMERGED+DUPLICATE",
+      "canonical_legacy_classification": "OVERMERGED",
       "child_source_unit_ids": [
         "ST-CDU-PRIMARY-SPLIT-0211-REDUCE-LEGAL-TECHNICAL-OVERSIGHT-REPORTING",
         "ST-CDU-PRIMARY-SPLIT-0211-REMOVE-DUPLICATE-RESPONSIBILITIES-MUNICIPAL-AUTONOMY",
@@ -32045,7 +32049,7 @@
     },
     {
       "applicable_241_layer_markers_explicit": [],
-      "canonical_legacy_classification": "CONTINUATION+SAME",
+      "canonical_legacy_classification": "SAME",
       "child_source_unit_ids": [],
       "effect_role": "COUNTABLE_EFFECT_LEAF",
       "evidence_level": "LOW",
@@ -35249,7 +35253,7 @@
     }
   ],
   "fach_semantics_created_by_reconciler": false,
-  "generated_at": "2026-08-22T00:32:48.873159+00:00",
+  "generated_at": "2026-08-22T00:39:46.691762+00:00",
   "historical_release1": {
     "register_path": "woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-cdu-zusagen.md",
     "role": "IMMUTABLE_WORKING_BASELINE_NOT_FINAL_DENOMINATOR",

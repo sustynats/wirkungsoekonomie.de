@@ -115,6 +115,11 @@
   "programme_key": "ltw-2026-st-cdu",
   "review_snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p43-p46-review.md",
   "review_snapshot_sha256": "f927a84bfeb0b368f5668a00f85f9b99c65ce0fbdde96b07193c073fa6aed8c3",
+  "schema_normalization": {
+    "legacy_parent_reference_resolution": "IMMUTABLE_RELEASE1_COMMITMENT_ID_WHERE_NUMERIC_PARENT_PRESENT",
+    "mode": "MECHANICAL_ALIAS_ONLY_NO_NEW_FACH_SEMANTICS",
+    "terminal_alias": "terminal_source_objects"
+  },
   "schema_version": "1.1",
   "segment_checks": {
     "checkpoint_terminal_count": 36,

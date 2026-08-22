@@ -25,6 +25,14 @@
   },
   "authoritative_effect_mechanism_count": null,
   "authoritative_source_unit_count": null,
+  "canonical_diff_materialization": {
+    "issue_comment_id": 5373797040,
+    "legacy_rows_materialized": 16,
+    "mode": "STRICT_FIRST_CELL_LEGACY_SECOND_CELL_PARITY_FROM_EXACT_234_SNAPSHOT",
+    "new_fach_semantics_created": false,
+    "review_snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p25-p28-review.md",
+    "review_snapshot_sha256": "79bd5f1ced93fb950c1c1e346d5c9af0d43ba484384c5ea243980328cab2851d"
+  },
   "completion_guard": {
     "st_cdu_final_versioned_manifest": "PENDING_GLOBAL_LEAF_RECONCILIATION",
     "st_cdu_primary_source_parity": "PASS_FULL_PROGRAMME",
@@ -102,9 +110,9 @@
       "source_bound_review_line": "| `0095` Angehörige/Pflegeversicherung | `TRUNCATED` + `OVERMERGED` | Landes-/Versorgungsentlastung und Bundes-Pflegeversicherungsreform trennen |"
     },
     {
-      "classification": "PARTIAL",
+      "classification": "SAME",
       "legacy_unit": "0096",
-      "source_bound_review_line": "| `0086` bezahlbare Pflege/Angehörigenentlastung | `PARTIAL_PARENT` | Summary-Ziel; konkrete Mechanismen in `0095/0096` |"
+      "source_bound_review_line": "| `0096` §43c SGB XI | `SAME` | Federal-advocacy unit erhalten; Wirkung nur nach konkretem Rechtsdesign |"
     },
     {
       "classification": "OVERMERGED",
@@ -126,6 +134,11 @@
   "programme_key": "ltw-2026-st-cdu",
   "review_snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p25-p28-review.md",
   "review_snapshot_sha256": "79bd5f1ced93fb950c1c1e346d5c9af0d43ba484384c5ea243980328cab2851d",
+  "schema_normalization": {
+    "legacy_parent_reference_resolution": "IMMUTABLE_RELEASE1_COMMITMENT_ID_WHERE_NUMERIC_PARENT_PRESENT",
+    "mode": "MECHANICAL_ALIAS_ONLY_NO_NEW_FACH_SEMANTICS",
+    "terminal_alias": "terminal_source_objects"
+  },
   "schema_version": "1.1",
   "segment_checks": {
     "checkpoint_terminal_count": 45,

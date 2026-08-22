@@ -25,6 +25,14 @@
   },
   "authoritative_effect_mechanism_count": null,
   "authoritative_source_unit_count": null,
+  "canonical_diff_materialization": {
+    "issue_comment_id": 5374248114,
+    "legacy_rows_materialized": 18,
+    "mode": "STRICT_FIRST_CELL_LEGACY_SECOND_CELL_PARITY_FROM_EXACT_234_SNAPSHOT",
+    "new_fach_semantics_created": false,
+    "review_snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p33-p36-review.md",
+    "review_snapshot_sha256": "efb3cedc1a3f87ad391ec06576537e5d31db49503b360650c1d5d51fb7e830b2"
+  },
   "completion_guard": {
     "st_cdu_final_versioned_manifest": "PENDING_GLOBAL_LEAF_RECONCILIATION",
     "st_cdu_primary_source_parity": "PASS_FULL_PROGRAMME",
@@ -54,7 +62,7 @@
     {
       "classification": "OVERMERGED",
       "legacy_unit": "0119",
-      "source_bound_review_line": "| `0122` | `OVERMERGED` | Ausgabenkontrolle und Reform-Weiterentwicklung trennen; Beitragsstabilität/-senkung auf `0119` crosswalken statt doppelt zählen |"
+      "source_bound_review_line": "| `0119` | `OVERMERGED` | Einkommens-/Belastungsdifferenzierung und Mittelstands-Entlastung sind zwei verschiedene Finanzierungs-/Verteilungsmechanismen |"
     },
     {
       "classification": "OVERMERGED",
@@ -77,9 +85,9 @@
       "source_bound_review_line": "| `0124` | `TRUNCATED` | Release-1 endet nach `bestehender`; Primärquelle vervollständigt `Gesetze.`; innerhalb Parent Altersprüfung, Kennzeichnung, Meldung, technische Schutzmechanismen trennen; Bot-Verbot bleibt `0125` |"
     },
     {
-      "classification": "TRUNCATED",
+      "classification": "SAME",
       "legacy_unit": "0125",
-      "source_bound_review_line": "| `0124` | `TRUNCATED` | Release-1 endet nach `bestehender`; Primärquelle vervollständigt `Gesetze.`; innerhalb Parent Altersprüfung, Kennzeichnung, Meldung, technische Schutzmechanismen trennen; Bot-Verbot bleibt `0125` |"
+      "source_bound_review_line": "| `0125` | `SAME` | Bot-/Fakeaccount-Verbot vollständig; bestehender terminaler `REVIEWED_NOT_ASSESSABLE`-Status bleibt |"
     },
     {
       "classification": "SAME",
@@ -136,6 +144,11 @@
   "programme_key": "ltw-2026-st-cdu",
   "review_snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p33-p36-review.md",
   "review_snapshot_sha256": "efb3cedc1a3f87ad391ec06576537e5d31db49503b360650c1d5d51fb7e830b2",
+  "schema_normalization": {
+    "legacy_parent_reference_resolution": "IMMUTABLE_RELEASE1_COMMITMENT_ID_WHERE_NUMERIC_PARENT_PRESENT",
+    "mode": "MECHANICAL_ALIAS_ONLY_NO_NEW_FACH_SEMANTICS",
+    "terminal_alias": "terminal_source_objects"
+  },
   "schema_version": "1.1",
   "segment_checks": {
     "checkpoint_terminal_count": 26,

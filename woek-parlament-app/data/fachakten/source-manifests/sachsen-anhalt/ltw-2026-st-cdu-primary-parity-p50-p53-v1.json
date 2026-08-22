@@ -25,6 +25,14 @@
   },
   "authoritative_effect_mechanism_count": null,
   "authoritative_source_unit_count": null,
+  "canonical_diff_materialization": {
+    "issue_comment_id": 5374639617,
+    "legacy_rows_materialized": 11,
+    "mode": "STRICT_FIRST_CELL_LEGACY_SECOND_CELL_PARITY_FROM_EXACT_234_SNAPSHOT",
+    "new_fach_semantics_created": false,
+    "review_snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p50-p53-review.md",
+    "review_snapshot_sha256": "a2eb2d55e5b61ef4802dd412e7221875536485fedeeb31c1e00dd78039422fb9"
+  },
   "completion_guard": {
     "st_cdu_final_versioned_manifest": "PENDING_GLOBAL_LEAF_RECONCILIATION",
     "st_cdu_primary_source_parity": "PASS_FULL_PROGRAMME",
@@ -42,9 +50,9 @@
   ],
   "primary_source_diff": [
     {
-      "classification": "DUPLICATE+SAME",
+      "classification": "PARTIAL",
       "legacy_unit": "0196",
-      "source_bound_review_line": "| `0206` | `SAME` | paperless/once-only/accessibility/routing mechanism fully represented, with duplicate crosswalk to 0196/0198/0199 |"
+      "source_bound_review_line": "| `0196` | `PARTIAL_PARENT` | p50 once-only/one-trip goal restates mechanisms later specified in 0198/0199/0206; retain parent/context but do not count a duplicate effect |"
     },
     {
       "classification": "OVERMERGED",
@@ -92,7 +100,7 @@
       "source_bound_review_line": "| `0205` | `OVERMERGED` | digital education/central learning platform and media/privacy/cyber literacy/resilience separated |"
     },
     {
-      "classification": "DUPLICATE+SAME",
+      "classification": "SAME",
       "legacy_unit": "0206",
       "source_bound_review_line": "| `0206` | `SAME` | paperless/once-only/accessibility/routing mechanism fully represented, with duplicate crosswalk to 0196/0198/0199 |"
     }
@@ -101,6 +109,11 @@
   "programme_key": "ltw-2026-st-cdu",
   "review_snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p50-p53-review.md",
   "review_snapshot_sha256": "a2eb2d55e5b61ef4802dd412e7221875536485fedeeb31c1e00dd78039422fb9",
+  "schema_normalization": {
+    "legacy_parent_reference_resolution": "IMMUTABLE_RELEASE1_COMMITMENT_ID_WHERE_NUMERIC_PARENT_PRESENT",
+    "mode": "MECHANICAL_ALIAS_ONLY_NO_NEW_FACH_SEMANTICS",
+    "terminal_alias": "terminal_source_objects"
+  },
   "schema_version": "1.1",
   "segment_checks": {
     "checkpoint_terminal_count": 19,

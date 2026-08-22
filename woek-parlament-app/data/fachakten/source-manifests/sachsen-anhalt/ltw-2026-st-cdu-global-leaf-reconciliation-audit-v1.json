@@ -6,11 +6,11 @@
   ],
   "canonical_shards_expected": 24,
   "canonical_shards_loaded": 24,
-  "countable_effect_ids": 731,
-  "countable_source_ids": 732,
+  "countable_effect_ids": 733,
+  "countable_source_ids": 734,
   "effect_id_duplicates": [],
   "freeze_gate": "BLOCKED",
-  "generated_at": "2026-08-22T00:32:48.873159+00:00",
+  "generated_at": "2026-08-22T00:39:46.691762+00:00",
   "legacy_classification_conflicts": [],
   "legacy_register_rows": 344,
   "legacy_role_unclassified": [
@@ -35,7 +35,7 @@
     243,
     244
   ],
-  "legacy_roles_classified": 328,
+  "legacy_roles_classified": 325,
   "legacy_terminal_triplets_found": 344,
   "legacy_versioned_terminal_deltas_observed": [
     {
@@ -3278,20 +3278,7 @@
     "source_manifest": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-source-unit-manifest-v2.json"
   },
   "missing_shard_files": [],
-  "missing_shards_materialized_this_run": [
-    "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-primary-parity-p23-p24-v1.json",
-    "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-primary-parity-p25-p28-v1.json",
-    "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-primary-parity-p29-p32-v1.json",
-    "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-primary-parity-p33-p36-v1.json",
-    "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-primary-parity-p37-p39-v1.json",
-    "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-primary-parity-p40-p42-v1.json",
-    "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-primary-parity-p43-p46-v1.json",
-    "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-primary-parity-p47-p49-v1.json",
-    "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-primary-parity-p50-p53-v1.json",
-    "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-primary-parity-p54-p56-v1.json",
-    "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-primary-parity-p57-p59-v1.json",
-    "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-primary-parity-p63-p64-v1.json"
-  ],
+  "missing_shards_materialized_this_run": [],
   "new_fach_semantics_created": false,
   "programme_key": "ltw-2026-st-cdu",
   "public_count_mutated": false,
@@ -3299,8 +3286,8 @@
   "source_id_duplicates": [],
   "structural_validation": {
     "blockers": [],
-    "countable_effect_leaves": 734,
-    "countable_source_nodes": 735,
+    "countable_effect_leaves": 736,
+    "countable_source_nodes": 737,
     "cycles": [],
     "dangling_edges": [],
     "edge_counts": {
