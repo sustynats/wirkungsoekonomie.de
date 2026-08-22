@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 
+// Mechanical extraction only: no Fach, DNS, Recommendation or semantic role inference.
 const repo = process.env.GITHUB_REPOSITORY || 'sustynats/wirkungsoekonomie.de';
 const [owner, name] = repo.split('/');
 const token = process.env.GITHUB_TOKEN;
