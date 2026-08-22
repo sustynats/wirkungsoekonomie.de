@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0",
+  "programme_key": "ltw-2026-st-cdu",
+  "purpose": "MECHANICAL_ROLE_MATERIALIZATION_FROM_EXISTING_SOURCE_BOUND_ISSUE_234_FINDINGS_ONLY",
+  "new_fach_semantics_created": false,
+  "dns_mapping_synthesized": false,
+  "recommendation_synthesized": false,
+  "role_supplements": [
+    {
+      "legacy_unit": "0169",
+      "classification": "CONTEXT_ONLY",
+      "canonical_shard": "ltw-2026-st-cdu-primary-parity-p43-p46-v1.json",
+      "source_issue": 234,
+      "source_comment_id": 5374518979,
+      "source_bound_finding": "VERSION_DELTA: 0169/0170/0175 context-only",
+      "action": "KEEP_ID_NO_INDEPENDENT_EFFECT_COUNT"
+    },
+    {
+      "legacy_unit": "0170",
+      "classification": "CONTEXT_ONLY",
+      "canonical_shard": "ltw-2026-st-cdu-primary-parity-p43-p46-v1.json",
+      "source_issue": 234,
+      "source_comment_id": 5374518979,
+      "source_bound_finding": "VERSION_DELTA: 0169/0170/0175 context-only",
+      "action": "KEEP_ID_NO_INDEPENDENT_EFFECT_COUNT"
+    },
+    {
+      "legacy_unit": "0242",
+      "classification": "CONTEXT_ONLY",
+      "canonical_shard": "ltw-2026-st-cdu-primary-parity-p65-p68-v1.json",
+      "source_issue": 234,
+      "source_comment_id": 5370989863,
+      "source_bound_finding": "PARENT_GOAL_CONTEXT; not double-counted",
+      "action": "KEEP_ID_NO_INDEPENDENT_EFFECT_COUNT"
+    },
+    {
+      "legacy_unit": "0243",
+      "classification": "CONTEXT_ONLY",
+      "canonical_shard": "ltw-2026-st-cdu-primary-parity-p65-p68-v1.json",
+      "source_issue": 234,
+      "source_comment_id": 5370989863,
+      "source_bound_finding": "NO_INDEPENDENT_EFFECT_OBJECT; child units carry the effect analysis",
+      "action": "KEEP_ID_NO_INDEPENDENT_EFFECT_COUNT"
+    },
+    {
+      "legacy_unit": "0244",
+      "classification": "OVERMERGED",
+      "canonical_shard": "ltw-2026-st-cdu-primary-parity-p65-p68-v1.json",
+      "source_issue": 234,
+      "source_comment_id": 5370989863,
+      "source_bound_finding": "VERSION_DELTA = SPLIT_REQUIRED_REGULATION / OWNERSHIP_SUBSIDY / SOCIAL_HOUSING / ENERGY_RETROFIT / ACCESSIBILITY; Source-ID remains Parent",
+      "action": "KEEP_PARENT_ID_SOURCE_BOUND_FIVE_WAY_SPLIT_REQUIRED"
+    }
+  ],
+  "unresolved_split_requirements": [
+    {
+      "legacy_unit": "0244",
+      "source_issue": 234,
+      "source_comment_id": 5370989863,
+      "required_components": [
+        "REGULATION",
+        "OWNERSHIP_SUBSIDY",
+        "SOCIAL_HOUSING",
+        "ENERGY_RETROFIT",
+        "ACCESSIBILITY"
+      ],
+      "terminal_child_records_found_in_canonical_materialization": 0,
+      "status": "BLOCKED_NO_SOURCE_BOUND_TERMINAL_CHILD_FACH_MATERIALIZED",
+      "freeze_blocker": "SOURCE_BOUND_SPLIT_TERMINAL_CHILDREN_MISSING:0244:5",
+      "resolution_rule": "Do not synthesize Fach. Clear only when exact source-bound #234 terminal child records are found/materialized or an explicit source-bound #234 reconciliation states that the split is not countable as separate final leaves."
+    }
+  ]
+}
