@@ -2,10 +2,12 @@
 """Deterministic source-role audit for the Sachsen-Anhalt 2026 BSW final union.
 
 This tool is deliberately *not* a fach-judgement generator. It only:
-- verifies the exact 311 historical rows and 380 versioned union IDs,
+- verifies the exact 311 historical rows, the immutable R14 380-ID base union, and the
+  explicitly source-bound R20 restore-leaf addendum,
 - carries forward explicit final roles already source-bound in R10,
-- performs a page/batch constrained lexical collision scan for the 220 R10 PEND rows,
-- validates known relation targets and relation-graph acyclicity where explicit edges exist,
+- performs a page/batch constrained lexical collision scan for the 220 R10 PEND rows
+  against the complete versioned source-leaf union,
+- validates known relation targets,
 - emits a review report. It never freezes the authoritative denominator.
 
 A PEND row may only become KEEP_ATOMIC in the final manifest after the report proves that
@@ -18,7 +20,6 @@ from __future__ import annotations
 import argparse
 import json
 import re
-import sys
 import unicodedata
 from collections import Counter, defaultdict
 from difflib import SequenceMatcher
@@ -27,6 +28,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 R10 = ROOT / "content/audits/sachsen-anhalt/bsw-source-unit-manifest-reconciliation-r10.json"
 R14 = ROOT / "content/audits/sachsen-anhalt/bsw-source-unit-union-r14.json"
+R20_ADDENDUM = ROOT / "content/audits/sachsen-anhalt/bsw-final-union-source-leaf-addendum-r20.json"
 REGISTER = ROOT / "woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-bsw-zusagen.md"
 
 STOP = {
@@ -47,6 +49,7 @@ BATCH_RANGES = {
 }
 
 EXPECTED_BATCH_COUNTS = {"front":2,"A01":31,"A02":37,"A03":40,"A04":58,"A05":61,"A06":41,"A07":42,"A08":28,"A09":40}
+EXPECTED_ADDENDUM_PARENT_COUNTS = {"0091": 3, "0115": 2, "0139": 3, "0158": 3}
 
 
 def ascii_norm(s: str) -> str:
@@ -89,11 +92,17 @@ def parse_register(md: str) -> list[dict]:
 
 def psr_batch(uid: str) -> str:
     m = re.search(r"-psr-(front|a\d\d)-", uid)
-    return m.group(1) if m else "unknown"
+    if m:
+        return m.group(1)
+    m = re.search(r"-psr-r20-src(0091|0115|0139|0158)-", uid)
+    if m:
+        return "a04" if m.group(1) in {"0091", "0115"} else "a05"
+    return "unknown"
 
 
 def psr_label(uid: str) -> str:
     s = re.sub(r"^ltw-2026-st-bsw-psr-(?:front|a\d\d)-", "", uid)
+    s = re.sub(r"^r20-src\d{4}-\d+-", "", s)
     s = re.sub(r"^p\d+(?:-p\d+)?-\d+-", "", s)
     s = re.sub(r"^\d+-", "", s)
     s = re.sub(r"^\d{4}-", "", s)
@@ -150,29 +159,42 @@ def main() -> int:
 
     r10 = json.loads(R10.read_text(encoding="utf-8"))
     r14 = json.loads(R14.read_text(encoding="utf-8"))
+    addendum = json.loads(R20_ADDENDUM.read_text(encoding="utf-8"))
     hist = parse_register(REGISTER.read_text(encoding="utf-8"))
     h_by_ord = {x["ordinal"]: x for x in hist}
     roles = r10["current_register_final_role_matrix"]["role_by_historical_ordinal"]
-    ids = r14["all_versioned_ids"]
+    base_ids = list(r14["all_versioned_ids"])
+    addendum_rows = list(addendum.get("source_leaves", []))
+    addendum_ids = [r.get("source_unit_id") for r in addendum_rows]
+    ids = base_ids + addendum_ids
 
     hard_errors: list[str] = []
     if len(hist) != 311 or len(h_by_ord) != 311:
         hard_errors.append(f"historical register cardinality mismatch: rows={len(hist)} unique={len(h_by_ord)}")
     if set(roles) != set(h_by_ord):
         hard_errors.append("R10 role keys do not exactly equal historical ordinals")
-    if len(ids) != 380 or len(set(ids)) != 380:
-        hard_errors.append(f"R14 union mismatch: ids={len(ids)} distinct={len(set(ids))}")
+    if len(base_ids) != 380 or len(set(base_ids)) != 380:
+        hard_errors.append(f"R14 base union mismatch: ids={len(base_ids)} distinct={len(set(base_ids))}")
     if r14.get("batch_counts") != EXPECTED_BATCH_COUNTS:
         hard_errors.append(f"R14 batch_counts mismatch: {r14.get('batch_counts')}")
+    if len(addendum_ids) != 11 or len(set(addendum_ids)) != 11 or any(not x for x in addendum_ids):
+        hard_errors.append(f"R20 addendum mismatch: ids={len(addendum_ids)} distinct={len(set(addendum_ids))}")
+    overlap = sorted(set(base_ids) & set(addendum_ids))
+    if overlap:
+        hard_errors.append("R20 addendum IDs overlap R14 base: " + ",".join(overlap))
+    parent_counts = Counter(str(r.get("historical_parent_ordinal")) for r in addendum_rows)
+    if dict(sorted(parent_counts.items())) != EXPECTED_ADDENDUM_PARENT_COUNTS:
+        hard_errors.append(f"R20 parent counts mismatch: {dict(parent_counts)}")
+    for r in addendum_rows:
+        if not r.get("source_locator") or not r.get("terminal_fach_locator") or not r.get("applicable_241_layer_locator"):
+            hard_errors.append(f"R20 missing provenance locator: {r.get('source_unit_id')}")
+    if len(ids) != 391 or len(set(ids)) != 391:
+        hard_errors.append(f"extended union mismatch: ids={len(ids)} distinct={len(set(ids))}")
 
     role_counts = Counter(roles.values())
     pend = [o for o, role in roles.items() if role == "PEND"]
     if len(pend) != 220:
         hard_errors.append(f"expected 220 PEND rows, got {len(pend)}")
-
-    ids_by_batch: dict[str, list[str]] = defaultdict(list)
-    for uid in ids:
-        ids_by_batch[psr_batch(uid)].append(uid)
 
     pending_reports = []
     review_candidate_ordinals = []
@@ -212,12 +234,12 @@ def main() -> int:
                     known_targets.append(rel[key])
     missing_relation_targets = sorted(set(known_targets) - set(ids))
     if missing_relation_targets:
-        hard_errors.append(f"known relation targets missing from R14 union: {missing_relation_targets}")
+        hard_errors.append(f"known relation targets missing from extended union: {missing_relation_targets}")
 
     report = {
-        "audit_id": "ST-BSW-FINAL-UNION-COLLISION-SCAN-R15",
+        "audit_id": "ST-BSW-FINAL-UNION-COLLISION-SCAN-R20",
         "mode": "MECHANICAL_SOURCE_ROLE_TRIAGE_ONLY_NO_FACH_SEMANTICS",
-        "input_head_expectation": "PR270 working branch; denominator freeze forbidden",
+        "input_head_expectation": "PR270 draft source lane; denominator freeze forbidden until all final-union gates pass",
         "historical_register": {
             "rows": len(hist),
             "unique_ordinals": len(h_by_ord),
@@ -225,10 +247,15 @@ def main() -> int:
             "pending_rows": len(pend),
         },
         "versioned_union": {
-            "rows": len(ids),
-            "distinct_ids": len(set(ids)),
-            "batch_counts": r14.get("batch_counts"),
-            "set_check": r14.get("set_check"),
+            "r14_base_rows": len(base_ids),
+            "r14_base_distinct_ids": len(set(base_ids)),
+            "r20_addendum_rows": len(addendum_ids),
+            "r20_addendum_distinct_ids": len(set(addendum_ids)),
+            "extended_rows": len(ids),
+            "extended_distinct_ids": len(set(ids)),
+            "r14_batch_counts": r14.get("batch_counts"),
+            "r14_set_check": r14.get("set_check"),
+            "r20_set_check": addendum.get("set_check"),
         },
         "known_relation_targets_present": not missing_relation_targets,
         "hard_errors": hard_errors,
@@ -259,6 +286,7 @@ def main() -> int:
         "no_candidate": len(pend) - len(review_candidate_ordinals),
         "review_candidates": len(review_candidate_ordinals),
         "review_candidate_ordinals": review_candidate_ordinals,
+        "extended_versioned_rows": len(ids),
         "output": str(out.relative_to(ROOT)),
     }, ensure_ascii=False, indent=2))
 
