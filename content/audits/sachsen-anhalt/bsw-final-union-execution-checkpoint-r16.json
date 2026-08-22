@@ -1,0 +1,91 @@
+{
+  "checkpoint_id": "ST-BSW-FINAL-UNION-EXECUTION-CHECKPOINT-R16",
+  "scope": "Sachsen-Anhalt 2026 BSW Wahlprogramm only",
+  "mode": "SOURCE_ROLE_CONVERGENCE_ONLY_NO_NEW_FACH",
+  "source_proof_inputs": {
+    "historical_role_checkpoint": "content/audits/sachsen-anhalt/bsw-source-unit-manifest-reconciliation-r10.json",
+    "exact_versioned_union": "content/audits/sachsen-anhalt/bsw-source-unit-union-r14.json",
+    "relation_registry": "content/audits/sachsen-anhalt/bsw-final-union-relation-registry-r15.json",
+    "github_issue": "sustynats/wirkungsoekonomie.de#234",
+    "umbrella_issue": "sustynats/wirkungsoekonomie.de#241",
+    "pull_request": "sustynats/wirkungsoekonomie.de#270",
+    "reconciliation_comments": {
+      "R01": 5374138103,
+      "R02": 5374163676,
+      "R03": 5374183131,
+      "R04": 5374207608
+    }
+  },
+  "closed_set_facts": {
+    "physical_programme_pages": "PASS_P0_P89",
+    "front_and_batches": "PASS_FRONT_A01_A09",
+    "versioned_ids": 380,
+    "versioned_distinct_ids": 380,
+    "batch_counts": {
+      "front": 2,
+      "A01": 31,
+      "A02": 37,
+      "A03": 40,
+      "A04": 58,
+      "A05": 61,
+      "A06": 41,
+      "A07": 42,
+      "A08": 28,
+      "A09": 40
+    },
+    "a07_set_check": "PASS_42_UNIQUE",
+    "a04_a05_p37_boundary": "PASS_DISTINCT_EFFECT_OBJECTS",
+    "known_parent_edge_queue": 0,
+    "known_explicit_psr_duplicate_relation_queue": 0,
+    "final_page_context": "PASS_CLASSIFIED_NO_NEW_EFFECT_OBJECTS"
+  },
+  "historical_role_state": {
+    "rows": 311,
+    "terminal_working_baseline_rows": 311,
+    "explicit_source_role_rows_r10": 91,
+    "pending_explicit_source_role_rows_r10": 220,
+    "authoritative_denominator": null
+  },
+  "current_relation_registry_state": {
+    "unresolved_source_relations": [
+      "0091",
+      "0115",
+      "0123",
+      "0138",
+      "0139",
+      "0158",
+      "0162",
+      "0187",
+      "0200",
+      "0278",
+      "0294"
+    ],
+    "directed_relation_edges_materialized": 0,
+    "resolved_gap_counts": {
+      "ABSENT": null,
+      "PARTIAL_PARENT": null,
+      "OVERMERGED": null,
+      "TRUNCATED": null,
+      "RESTORE_GAP": null
+    },
+    "active_leaf_terminal_fach_set_check": "PENDING_FINAL_ACTIVE_LEAF_SET",
+    "active_leaf_241_layer_set_check": "PENDING_FINAL_ACTIVE_LEAF_SET"
+  },
+  "hard_rules": {
+    "historical_source_text_immutable": true,
+    "no_new_current_register_fach_shards": true,
+    "no_dns_synthesis": true,
+    "no_recommendation_synthesis": true,
+    "no_fach_synthesis": true,
+    "semantic_similarity_is_triage_only": true,
+    "do_not_arithmetically_add_311_plus_children": true,
+    "freeze_only_from_explicit_final_roles_after_all_gates_pass": true
+  },
+  "completion": {
+    "ST_BSW_PRIMARY_SOURCE_PARITY_FULL_PROGRAM": "READY_FOR_FINAL_ROLE_MATRIX_AND_UNION_CHECKS",
+    "BSW_FULL_PROGRAM_FACH_COMPLETE": false,
+    "authoritative_denominator_frozen": false,
+    "PR270_merge_ready": false,
+    "next_gate": "RUN_UNION_WIDE_COLLISION_SCAN_AND_MATERIALIZE_EXPLICIT_SOURCE_ROLES"
+  }
+}
