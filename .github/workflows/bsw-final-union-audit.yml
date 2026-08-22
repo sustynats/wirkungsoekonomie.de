@@ -23,6 +23,7 @@ on:
 
 permissions:
   contents: read
+  issues: write
 
 jobs:
   source-role-collision-scan:
@@ -34,27 +35,7 @@ jobs:
           python-version: '3.12'
       - name: Audit exact BSW union and pending historical-role collisions
         run: python tools/audit_bsw_final_union.py --output tmp/bsw-final-union-collision-report.json
-      - name: Print review candidates
-        if: always()
-        run: |
-          python - <<'PY'
-          import json
-          from pathlib import Path
-          p=Path('tmp/bsw-final-union-collision-report.json')
-          if not p.exists():
-              raise SystemExit('report missing')
-          d=json.loads(p.read_text())
-          scan=d['pending_collision_scan']
-          print('pending_total=', scan['pending_total'])
-          print('lexically_clear_no_candidate=', scan['lexically_clear_no_candidate'])
-          print('review_candidate_count=', scan['review_candidate_count'])
-          print('review_candidate_ordinals=', ','.join(scan['review_candidate_ordinals']))
-          for row in scan['rows']:
-              if row['candidate_status'].startswith('REVIEW'):
-                  best=row['top_candidates'][0] if row['top_candidates'] else None
-                  print(json.dumps({'ordinal':row['historical_ordinal'],'page':row['page'],'title':row['title'],'best':best}, ensure_ascii=False))
-          PY
-      - name: Materialize fail-closed final-union candidate and print exact blockers
+      - name: Materialize fail-closed final-union candidate
         if: always()
         run: |
           set +e
@@ -63,26 +44,49 @@ jobs:
             --relations content/audits/sachsen-anhalt/bsw-final-union-relation-registry-r15.json \
             --output tmp/bsw-final-union-manifest-r15.json \
             --allow-default-pend-keep-atomic
-          status=$?
-          echo "materializer_exit=$status"
+          echo "materializer_exit=$?"
+          exit 0
+      - name: Build machine audit summary
+        if: always()
+        run: |
           python - <<'PY'
           import json
           from pathlib import Path
-          p=Path('tmp/bsw-final-union-manifest-r15.json')
-          if not p.exists():
-              raise SystemExit('candidate manifest missing')
-          d=json.loads(p.read_text())
-          print(json.dumps({
-            'counts': d.get('counts'),
-            'relation_graph': d.get('relation_graph'),
-            'collision_scan': d.get('collision_scan'),
-            'resolved_gap_counts': d.get('resolved_gap_counts'),
-            'active_leaf_terminal_fach_set_check': d.get('active_leaf_terminal_fach_set_check'),
-            'active_leaf_241_layer_set_check': d.get('active_leaf_241_layer_set_check'),
-            'completion': d.get('completion'),
-          }, ensure_ascii=False, indent=2))
+          c=json.loads(Path('tmp/bsw-final-union-collision-report.json').read_text())
+          m=json.loads(Path('tmp/bsw-final-union-manifest-r15.json').read_text())
+          scan=c['pending_collision_scan']
+          summary={
+            'marker':'ST_BSW_PR270_FINAL_UNION_MACHINE_AUDIT',
+            'head':'${{ github.sha }}',
+            'hard_errors':c.get('hard_errors',[]),
+            'pending_total':scan.get('pending_total'),
+            'lexically_clear_no_candidate':scan.get('lexically_clear_no_candidate'),
+            'review_candidate_count':scan.get('review_candidate_count'),
+            'review_candidate_ordinals':scan.get('review_candidate_ordinals'),
+            'manifest_counts':m.get('counts'),
+            'manifest_blockers':m.get('blockers'),
+            'unresolved_source_relations':m.get('unresolved_source_relations'),
+            'graph_acyclic':m.get('relation_graph',{}).get('acyclic'),
+            'graph_errors':m.get('relation_graph',{}).get('errors'),
+            'resolved_gap_counts':m.get('resolved_gap_counts'),
+            'terminal_fach_set_check':m.get('active_leaf_terminal_fach_set_check'),
+            'layer_241_set_check':m.get('active_leaf_241_layer_set_check'),
+            'completion':m.get('completion'),
+            'collision_candidates':[
+              {'ordinal':r['historical_ordinal'],'page':r.get('page'),'title':r.get('title'),'top_candidates':r.get('top_candidates',[])[:3]}
+              for r in scan.get('rows',[]) if r.get('candidate_status','').startswith('REVIEW')
+            ],
+          }
+          Path('tmp/pr270-machine-audit-summary.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n')
+          body='### ST BSW final-union machine audit\n\n```json\n'+json.dumps(summary,ensure_ascii=False,indent=2)+'\n```\n'
+          Path('tmp/pr270-comment.md').write_text(body)
+          print(json.dumps(summary,ensure_ascii=False,indent=2))
           PY
-          exit 0
+      - name: Publish machine audit summary to PR270
+        if: always() && github.event_name == 'push'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh pr comment 270 --body-file tmp/pr270-comment.md
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -90,5 +94,6 @@ jobs:
           path: |
             tmp/bsw-final-union-collision-report.json
             tmp/bsw-final-union-manifest-r15.json
+            tmp/pr270-machine-audit-summary.json
 
 # deterministic convergence trigger 2026-08-22T02:11+02:00
