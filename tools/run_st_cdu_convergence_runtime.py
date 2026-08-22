@@ -28,6 +28,9 @@ import validate_st_cdu_global_convergence as validate
 SNAP_INDEX = pathlib.Path(
     "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-review-snapshot-index-v1.json"
 )
+AUDIT = pathlib.Path(
+    "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-global-leaf-reconciliation-audit-v1.json"
+)
 
 
 def public_api_json(url: str):
@@ -80,6 +83,18 @@ def main() -> int:
         normalize.main()
         convergence.main()
         validate.main()
+        if AUDIT.exists():
+            audit = json.loads(AUDIT.read_text(encoding="utf-8"))
+            print(json.dumps({
+                "diagnostic": "ST_CDU_EXACT_RESIDUAL_AFTER_GLOBAL_RECONCILIATION",
+                "legacy_role_unclassified": audit.get("legacy_role_unclassified", []),
+                "builder_blockers": [
+                    x for x in audit.get("blockers", [])
+                    if str(x).startswith(("LEGACY_", "CANONICAL_", "TERMINAL_", "ZERO_", "SHARD_"))
+                ],
+                "structural_blockers": (audit.get("structural_validation") or {}).get("blockers", []),
+                "freeze_gate": audit.get("freeze_gate"),
+            }, ensure_ascii=False, indent=2))
     finally:
         # Preserve exact issue-comment snapshots and their indexed SHA256 provenance.
         for path, body in exact_bodies.items():
