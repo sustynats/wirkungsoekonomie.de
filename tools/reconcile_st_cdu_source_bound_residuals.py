@@ -67,11 +67,13 @@ def write_json(path: pathlib.Path, obj):
 def normalize_class_cell(value: str) -> str | None:
     """Normalize only the explicit parity/classification cell.
 
-    Weak tokens are removed when a stronger compound token already carries the
-    same meaning. Mixed explicit roles (for example CONTINUATION + SAME) are
-    retained because the source review stated both.
+    Markdown emphasis markers are removed, but underscores are semantic parts of
+    the canonical role tokens (for example CONTEXT_ONLY and PARTIAL_PARENT) and
+    therefore must be preserved. Weak tokens are removed when a stronger compound
+    token already carries the same meaning. Mixed explicit roles (for example
+    CONTINUATION + SAME) are retained because the source review stated both.
     """
-    up = re.sub(r"[*_`]", "", value).upper().replace("-", "_")
+    up = re.sub(r"[*`]", "", value).upper().replace("-", "_")
     found = [tok for tok in CLASS_TOKENS if tok in up]
     if "SAME_PARTIAL_PARENT" in found:
         found = [x for x in found if x not in {"SAME", "PARTIAL_PARENT", "PARTIAL"}]
@@ -81,7 +83,6 @@ def normalize_class_cell(value: str) -> str | None:
         found = [x for x in found if x not in {"TRUNCATED", "OVERMERGED"}]
     if "PARTIAL_PARENT" in found:
         found = [x for x in found if x != "PARTIAL"]
-    # Preserve deterministic token order and remove duplicates.
     out = []
     for token in found:
         if token not in out:
@@ -94,8 +95,8 @@ def strict_table_diff(text: str):
 
     The previous generic parser inspected the entire row and therefore treated
     cross-reference numbers in explanatory cells as if they were the row's own
-    legacy unit. This parser deliberately binds only IDs in the first cell to the
-    classification in the second cell.
+    legacy unit. This parser deliberately binds only immutable Release-1 IDs
+    0001..0344 in the first cell to the classification in the second cell.
     """
     by_id: dict[str, dict] = {}
     conflicts = []
@@ -106,7 +107,11 @@ def strict_table_diff(text: str):
         cells = [cell.strip() for cell in line[1:-1].split("|")]
         if len(cells) < 2:
             continue
-        ids = re.findall(r"(?<!\d)(\d{4})(?!\d)", cells[0])
+        ids = [
+            legacy
+            for legacy in re.findall(r"(?<!\d)(\d{4})(?!\d)", cells[0])
+            if 1 <= int(legacy) <= 344
+        ]
         classification = normalize_class_cell(cells[1])
         if not ids or not classification:
             continue
@@ -155,8 +160,6 @@ def refresh_canonical_shard_diffs() -> dict:
         if conflicts:
             raise RuntimeError(f"STRICT_PARITY_TABLE_CONFLICT:{slug}:{conflicts}")
         if not strict:
-            # Some older canonical shards were hand-materialized rather than
-            # snapshot-generated. Never erase a valid existing diff.
             continue
 
         data = read_json(shard_path)
@@ -177,6 +180,7 @@ def refresh_canonical_shard_diffs() -> dict:
         diagnostics.append({
             "shard": slug,
             "legacy_rows": len(strict),
+            "legacy_ids": [x["legacy_unit"] for x in strict],
             "changed": after != before,
         })
 
@@ -202,7 +206,6 @@ def _is_cdu_source_bound_comment(body: str) -> bool:
 def _heading_legacy_number(line: str) -> int | None:
     if not re.match(r"^\s*#{2,6}\s+", line):
         return None
-    # Accept source-bound headings such as `...-0014`, `0014`, or a full CDU ID.
     m = re.search(
         r"(?:\.\.\.-|ltw-2026-st-cdu-)?(?<!\d)(\d{4})(?!\d)",
         line,
@@ -254,8 +257,6 @@ def install_legacy_terminal_ledger_supplement(convergence_module) -> None:
                 status, direction, evidence = trip
                 if status not in TERMINAL or direction not in DIRECTIONS or evidence not in EVIDENCE:
                     continue
-                # Do not allow an older comment to overwrite the builder's latest
-                # already-resolved explicit terminal state.
                 if cid < int(provenance.get(n) or 0):
                     continue
                 rec = {
