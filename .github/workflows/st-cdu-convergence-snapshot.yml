@@ -74,3 +74,5 @@ jobs:
             git commit -m 'data(cdu): materialize canonical convergence state [skip ci]'
             git push origin HEAD:woek/st-cdu-source-manifest-p89-20260821
           fi
+
+# Triggered only to run the deterministic source-bound CDU convergence pipeline.
