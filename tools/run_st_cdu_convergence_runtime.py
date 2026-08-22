@@ -33,6 +33,9 @@ SNAP_INDEX = pathlib.Path(
 AUDIT = pathlib.Path(
     "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-global-leaf-reconciliation-audit-v1.json"
 )
+ROLE_SUPPLEMENTS = pathlib.Path(
+    "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-source-bound-role-supplements-v1.json"
+)
 
 
 def public_api_json(url: str):
@@ -54,6 +57,101 @@ def shard_pages(slug: str) -> tuple[int, int]:
     if not match:
         raise ValueError(f"Bad shard slug: {slug}")
     return int(match.group(1)), int(match.group(2))
+
+
+def apply_source_bound_role_supplements() -> dict:
+    """Materialize role facts already explicit in source-bound #234 prose.
+
+    The strict parity-table parser intentionally reads only table cells. A small
+    residual set of CDU role decisions was stated in the source-bound review
+    prose instead. This function copies those exact role decisions into the
+    canonical shard role tables and never creates impact/evidence/Fach content.
+    """
+    data = json.loads(ROLE_SUPPLEMENTS.read_text(encoding="utf-8"))
+    changed = []
+    applied = []
+    for rec in data.get("role_supplements", []):
+        shard_path = residuals.ROOT / rec["canonical_shard"]
+        if not shard_path.exists():
+            raise RuntimeError(f"SOURCE_BOUND_ROLE_SUPPLEMENT_SHARD_MISSING:{shard_path}")
+        shard = json.loads(shard_path.read_text(encoding="utf-8"))
+        diffs = list(shard.get("primary_source_diff") or [])
+        legacy = str(rec["legacy_unit"]).zfill(4)
+        existing = [x for x in diffs if str(x.get("legacy_unit") or "").zfill(4) == legacy]
+        if existing:
+            classes = {str(x.get("classification") or "").upper() for x in existing}
+            if rec["classification"].upper() not in classes:
+                raise RuntimeError(
+                    f"SOURCE_BOUND_ROLE_SUPPLEMENT_CONFLICT:{legacy}:"
+                    f"existing={sorted(classes)}:new={rec['classification']}"
+                )
+            applied.append({"legacy_unit": legacy, "status": "ALREADY_PRESENT"})
+            continue
+        diffs.append({
+            "legacy_unit": legacy,
+            "classification": rec["classification"],
+            "action": rec["action"],
+            "source_bound_review_line": rec["source_bound_finding"],
+            "source_bound_role_provenance": {
+                "issue": rec["source_issue"],
+                "comment_id": rec["source_comment_id"],
+                "materialization": "EXACT_EXISTING_FACH_ROLE_NO_SYNTHESIS",
+            },
+        })
+        diffs.sort(key=lambda x: int(str(x.get("legacy_unit") or "9999").zfill(4)))
+        shard["primary_source_diff"] = diffs
+        shard.setdefault("source_bound_role_supplements", []).append({
+            "legacy_unit": legacy,
+            "classification": rec["classification"],
+            "issue": rec["source_issue"],
+            "comment_id": rec["source_comment_id"],
+            "new_fach_semantics_created": False,
+        })
+        shard_path.write_text(
+            json.dumps(shard, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+            encoding="utf-8",
+            newline="\n",
+        )
+        changed.append(shard_path.as_posix())
+        applied.append({"legacy_unit": legacy, "status": "MATERIALIZED"})
+    result = {
+        "changed_shards": sorted(set(changed)),
+        "role_supplements": applied,
+        "new_fach_semantics_created": False,
+    }
+    print(json.dumps({"diagnostic": "ST_CDU_SOURCE_BOUND_ROLE_SUPPLEMENTS", **result}, ensure_ascii=False, indent=2))
+    return result
+
+
+def apply_source_bound_freeze_blockers() -> dict:
+    """Keep denominator freeze fail-closed for explicit unresolved split duties."""
+    data = json.loads(ROLE_SUPPLEMENTS.read_text(encoding="utf-8"))
+    audit = json.loads(AUDIT.read_text(encoding="utf-8"))
+    requirements = data.get("unresolved_split_requirements") or []
+    blockers = list(audit.get("blockers") or [])
+    for req in requirements:
+        blocker = req.get("freeze_blocker")
+        if blocker and blocker not in blockers:
+            blockers.append(blocker)
+    audit["blockers"] = sorted(set(blockers))
+    audit["source_bound_unresolved_split_requirements"] = requirements
+    audit["freeze_gate"] = "BLOCKED" if audit["blockers"] else audit.get("freeze_gate", "BLOCKED")
+    if audit["blockers"]:
+        audit["authoritative_source_unit_count"] = None
+        audit["authoritative_effect_mechanism_count"] = None
+    AUDIT.write_text(
+        json.dumps(audit, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+        newline="\n",
+    )
+    result = {
+        "requirements": requirements,
+        "freeze_gate": audit["freeze_gate"],
+        "blockers_added": [x.get("freeze_blocker") for x in requirements if x.get("freeze_blocker")],
+        "new_fach_semantics_created": False,
+    }
+    print(json.dumps({"diagnostic": "ST_CDU_SOURCE_BOUND_SPLIT_FREEZE_GUARD", **result}, ensure_ascii=False, indent=2))
+    return result
 
 
 def main() -> int:
@@ -93,8 +191,8 @@ def main() -> int:
 
         # All 24 canonical non-overlapping parity shards are already present on
         # PR #257. Re-materialize only their role table from the exact #234
-        # snapshots, then prevent the older builder's generic parser from
-        # overwriting that strict source-bound role materialization in this run.
+        # snapshots, then restore the few exact role decisions stated in #234
+        # review prose rather than parity-table cells. No Fach content is created.
         plan = json.loads(exact_plan)
         missing = []
         for seg in plan.get("canonical_non_overlapping_segments", []):
@@ -105,6 +203,7 @@ def main() -> int:
             raise RuntimeError(f"CANONICAL_SHARD_MISSING_BEFORE_STRICT_RECONCILIATION:{missing}")
 
         residuals.refresh_canonical_shard_diffs()
+        apply_source_bound_role_supplements()
         for seg in plan.get("canonical_non_overlapping_segments", []):
             seg["materialized_on_pr257"] = True
         residuals.PLAN.write_text(
@@ -115,6 +214,10 @@ def main() -> int:
         plan_temporarily_overridden = True
 
         convergence.main()
+        # #234 A17 explicitly classifies 0244 as a five-way split parent, but no
+        # source-bound terminal child Fach records are materialized. Keep that
+        # exact unresolved duty as a hard freeze blocker instead of synthesizing it.
+        apply_source_bound_freeze_blockers()
         # The versioned source manifest already contains exact terminal child triplets
         # for a small number of restored/split nodes that were not repeated in a page
         # shard. Materialize those explicit nodes mechanically before graph validation.
@@ -125,9 +228,10 @@ def main() -> int:
             print(json.dumps({
                 "diagnostic": "ST_CDU_EXACT_RESIDUAL_AFTER_GLOBAL_RECONCILIATION",
                 "legacy_role_unclassified": audit.get("legacy_role_unclassified", []),
+                "source_bound_unresolved_split_requirements": audit.get("source_bound_unresolved_split_requirements", []),
                 "builder_blockers": [
                     x for x in audit.get("blockers", [])
-                    if str(x).startswith(("LEGACY_", "CANONICAL_", "TERMINAL_", "ZERO_", "SHARD_"))
+                    if str(x).startswith(("LEGACY_", "CANONICAL_", "TERMINAL_", "ZERO_", "SHARD_", "SOURCE_BOUND_"))
                 ],
                 "structural_blockers": (audit.get("structural_validation") or {}).get("blockers", []),
                 "freeze_gate": audit.get("freeze_gate"),
