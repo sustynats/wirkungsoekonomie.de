@@ -1532,8 +1532,8 @@ Signals are review candidates, not automatic errors.
 
 ## Recursive non-HTML publication/support surfaces
 
-- Tracked support text files inventoried: **942**
-- Combined matrix items (routes + extra HTML + support): **17202**
+- Tracked support text files inventoried: **954**
+- Combined matrix items (routes + extra HTML + support): **17214**
 - Every matrix item exposes the #253 contract fields: source_path, public_url, historical_publication, relevance, classification, required_action, source_refs and status.
 - Includes llms.txt, sitemap/search metadata, structured-data registries, glossary/source archive, library/journal/reference inputs and generators/workflows.
 
@@ -1572,6 +1572,11 @@ Signals are review candidates, not automatic errors.
 | `assets/search/search-index.json` | search_index_or_generator | NO_CHANGE_REQUIRED | — |
 | `content/assistant/approved-corpus.json` | support_text | ADD_SOURCE_LINKS | enap |
 | `content/audits/nwi-acronym-disambiguation.json` | support_text | ADD_SOURCE_LINKS | folgenabschaetzung |
+| `content/audits/sachsen-anhalt/afd-final-union-manifest-a43.json` | support_text | ADD_SOURCE_LINKS | dns |
+| `content/audits/sachsen-anhalt/bsw-final-union-relation-overlay-r20.json` | support_text | NO_CHANGE_REQUIRED | alternativen |
+| `content/audits/sachsen-anhalt/bsw-final-union-source-leaf-addendum-r20.json` | support_text | NO_CHANGE_REQUIRED | alternativen |
+| `content/audits/sachsen-anhalt/bsw-source-unit-manifest-reconciliation-r10.json` | support_text | ADD_SOURCE_LINKS | dns |
+| `content/audits/sachsen-anhalt/bsw-source-unit-union-r14.json` | support_text | NO_CHANGE_REQUIRED | alternativen, evaluation |
 | `content/audits/state-sustainability-architecture-audit-contract.md` | support_text | ADD_SOURCE_LINKS | enap, egfa, dns, alternativen, evaluation |
 | `content/dashboards/dashboardModels.json` | support_text | NO_CHANGE_REQUIRED | evaluation |
 | `content/documents/documents.json` | support_text | ADD_SOURCE_LINKS | folgenabschaetzung, enap, dns, evaluation |
@@ -1998,10 +2003,11 @@ Signals are review candidates, not automatic errors.
 | `tools/generate_fuer_pages.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | folgenabschaetzung, evaluation, novelty_or_absence |
 | `tools/generate_sprint1_visuals.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | evaluation |
 | `tools/generate_visual_phase_assets.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | evaluation |
+| `tools/validate_afd_final_union_a43.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | dns |
 
 ## Review/action closure
 
-- Combined reviewed items: **17203**
+- Combined reviewed items: **17215**
 - Open semantic/action reviews after deterministic projection: **0**
 - Broad novelty/Wirkungsblindheit hits were dispositioned by a second-pass contextual state-absence review; isolated words are not treated as absence claims.
 - `AGENTS.md` is explicitly inventoried as a corrected current guardrail.
