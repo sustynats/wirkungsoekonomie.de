@@ -1,0 +1,67 @@
+{
+  "overlay_id": "ST-BSW-FINAL-UNION-RELATION-OVERLAY-R20",
+  "scope": "Sachsen-Anhalt 2026 BSW Wahlprogramm only",
+  "base_registry": "content/audits/sachsen-anhalt/bsw-final-union-relation-registry-r18.json",
+  "source_leaf_addendum": "content/audits/sachsen-anhalt/bsw-final-union-source-leaf-addendum-r20.json",
+  "mode": "SOURCE_ROLE_CONVERGENCE_ONLY_NO_NEW_FACH",
+  "historical_relation_targets": {
+    "0091": [
+      "ltw-2026-st-bsw-psr-a04-p31-p32-27-zentren-direkt-express-integrierter-tarif",
+      "ltw-2026-st-bsw-psr-r20-src0091-01-ladeinfrastruktur-flaechendeckend-ausbauen",
+      "ltw-2026-st-bsw-psr-r20-src0091-02-autoindustrie-effizientere-verbrenner-synthetische-kraftstoffe-alternative-antriebe-unterstuetzen",
+      "ltw-2026-st-bsw-psr-r20-src0091-03-pauschales-verbrennerverbot-ablehnen"
+    ],
+    "0115": [
+      "ltw-2026-st-bsw-psr-r20-src0115-01-paragraph-218-stgb-perspektivisch-abschaffen-bundesadvocacy",
+      "ltw-2026-st-bsw-psr-r20-src0115-02-schwangerschaftsabbruch-versorgungsauftraege-qualifizierung-wohnortnahe-angebote"
+    ],
+    "0139": [
+      "ltw-2026-st-bsw-psr-r20-src0139-01-freistellungsgesetz-privates-ehrenamt-ausweiten",
+      "ltw-2026-st-bsw-psr-r20-src0139-02-ehrenamtspauschalen-erhoehen",
+      "ltw-2026-st-bsw-psr-r20-src0139-03-ehrenamt-rentenberechnung-anerkennen"
+    ],
+    "0158": [
+      "ltw-2026-st-bsw-psr-r20-src0158-01-ehrenamtliches-engagement-foerdern",
+      "ltw-2026-st-bsw-psr-r20-src0158-02-ehrenamtliches-engagement-steuerlich-entlasten",
+      "ltw-2026-st-bsw-psr-r20-src0158-03-ehrenamtliches-engagement-professionell-begleiten"
+    ]
+  },
+  "historical_relation_types": {
+    "0091": "SUPERSEDED_BY_CANONICAL_CHILDREN",
+    "0115": "SUPERSEDED_BY_CANONICAL_CHILDREN",
+    "0139": "SUPERSEDED_BY_CANONICAL_CHILDREN",
+    "0158": "SUPERSEDED_BY_CANONICAL_CHILDREN"
+  },
+  "unresolved_source_relations": [],
+  "resolved_gap_counts": {
+    "ABSENT": 0,
+    "PARTIAL_PARENT": 0,
+    "OVERMERGED": 0,
+    "TRUNCATED": 0,
+    "RESTORE_GAP": 0
+  },
+  "active_leaf_terminal_fach_set_check": {
+    "status": "PASS",
+    "method": "SET_SUBSET_AND_BATCH_LOCATOR_REUSE_ONLY",
+    "historical_terminal_universe": "311/311 historical Working-Baseline terminal in #234; active historical rows are a final-role subset",
+    "r14_versioned_terminal_universe": "front+A01-A09 exact source-bound terminal batches already recorded in #234",
+    "r20_addendum_rows": 11,
+    "r20_addendum_terminal_locator_required": true,
+    "no_new_fach_created": true
+  },
+  "active_leaf_241_layer_set_check": {
+    "status": "PASS",
+    "method": "EXISTING_BATCH_LAYER_LOCATOR_REUSE_ONLY",
+    "r14_versioned_layer_universe": "applicable batch/object layer checks already recorded with the terminal #234 source batches",
+    "r20_addendum_rows": 11,
+    "r20_addendum_layer_locator_required": true,
+    "no_new_layer_synthesis": true
+  },
+  "completion_guard": {
+    "source_restore_relations_closed": true,
+    "remaining_gate": "FULL_UNION_COLLISION_ROLE_RESOLUTION_AND_MACHINE_GRAPH_COUNT_HASH",
+    "authoritative_denominator_frozen": false,
+    "ST_BSW_PRIMARY_SOURCE_PARITY_FULL_PROGRAM": "BLOCKED_PENDING_COLLISION_ROLE_CONVERGENCE",
+    "PR270_merge_ready": false
+  }
+}

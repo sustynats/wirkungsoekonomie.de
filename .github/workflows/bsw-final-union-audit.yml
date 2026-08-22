@@ -1,0 +1,46 @@
+name: BSW final union audit
+
+on:
+  push:
+    branches:
+      - 'fach/st-bsw-source-manifest-r05-20260821'
+    paths:
+      - 'content/audits/sachsen-anhalt/bsw-source-unit-manifest-reconciliation-r10.json'
+      - 'content/audits/sachsen-anhalt/bsw-source-unit-union-r14.json'
+      - 'content/audits/sachsen-anhalt/bsw-final-union-relation-registry-r18.json'
+      - 'content/audits/sachsen-anhalt/bsw-final-union-source-leaf-addendum-r20.json'
+      - 'content/audits/sachsen-anhalt/bsw-final-union-relation-overlay-r20.json'
+      - 'content/audits/sachsen-anhalt/bsw-final-union-role-closure-r21.json'
+      - 'content/audits/sachsen-anhalt/bsw-final-union-manifest-r22.json'
+      - 'woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-bsw-zusagen.md'
+      - 'tools/validate_bsw_final_union_r22.py'
+      - '.github/workflows/bsw-final-union-audit.yml'
+  pull_request:
+    paths:
+      - 'content/audits/sachsen-anhalt/bsw-source-unit-manifest-reconciliation-r10.json'
+      - 'content/audits/sachsen-anhalt/bsw-source-unit-union-r14.json'
+      - 'content/audits/sachsen-anhalt/bsw-final-union-relation-registry-r18.json'
+      - 'content/audits/sachsen-anhalt/bsw-final-union-source-leaf-addendum-r20.json'
+      - 'content/audits/sachsen-anhalt/bsw-final-union-relation-overlay-r20.json'
+      - 'content/audits/sachsen-anhalt/bsw-final-union-role-closure-r21.json'
+      - 'content/audits/sachsen-anhalt/bsw-final-union-manifest-r22.json'
+      - 'woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-bsw-zusagen.md'
+      - 'tools/validate_bsw_final_union_r22.py'
+      - '.github/workflows/bsw-final-union-audit.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-frozen-r22:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name == 'push' && github.ref_name || github.event.pull_request.head.ref }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate frozen ST-BSW R22 final union
+        run: python tools/validate_bsw_final_union_r22.py
