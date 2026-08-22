@@ -459,7 +459,7 @@ Jede Vorlesung enthält:
 - Button `Skript gelesen`
 - Button `Video angesehen`
 
-Vorlesungsskripte werden als hochwertige Lernseiten im GitHub-Repo gepflegt. Word- oder PDF-Vorlagen werden durch Codex in saubere MDX- oder Markdown-Lernseiten umgewandelt und nach Merge automatisch über Vercel veröffentlicht.
+Vorlesungsskripte werden als hochwertige Lernseiten im GitHub-Repo gepflegt. Word- oder PDF-Vorlagen werden durch Codex in saubere MDX- oder Markdown-Lernseiten umgewandelt. Der Merge aktualisiert den kanonischen Bestand; die Veroeffentlichung wird gebuendelt und folgt dem gemeinsamen manuellen Vercel-Kostengate.
 
 Bevorzugte Struktur:
 
@@ -615,7 +615,7 @@ Für den MVP wird eine hybride Content-Logik empfohlen:
 
 1. Vorlesungsskripte liegen als MDX oder Markdown im GitHub-Repo.
 2. Codex wandelt Word- oder PDF-Skripte in saubere Lernseiten um.
-3. Vercel veröffentlicht Skripte automatisch nach Merge.
+3. Freigegebene Skriptaenderungen werden gebuendelt und nach dem gemeinsamen Vercel-Kostengate veroeffentlicht.
 4. Supabase speichert Metadaten, Pfad, YouTube-Link, Veröffentlichung und Pflichtstatus.
 
 Supabase speichert pro Vorlesung:
@@ -1283,7 +1283,7 @@ Skripte:
 - liegen als MDX oder Markdown im GitHub-Repo
 - werden aus Word- oder PDF-Vorlagen durch Codex in Lernseiten umgewandelt
 - liegen versioniert unter `content/v1/...` oder `content/v2/...`
-- werden nach Merge automatisch über Vercel veröffentlicht
+- werden nach Merge in den naechsten gebuendelten, kostengeprueften Release Candidate aufgenommen
 
 YouTube-Links:
 
@@ -1402,9 +1402,10 @@ woek-akademie-app/
 
 1. Codex erstellt Änderungen in einem Branch.
 2. Codex öffnet Pull Request auf GitHub.
-3. Vercel erzeugt automatisch ein Preview Deployment.
-4. Natalie prüft Preview URL.
-5. Nach Merge auf `main` deployt Vercel in Produktion.
+3. Tests und Preview laufen lokal oder in GitHub; normale Pull Requests erzeugen keinen Vercel-Build.
+4. Freigegebene Aenderungen werden zu einem Release Candidate gebuendelt und nach dem Live-Kostengate einmalig gebaut.
+5. Natalie oder der externe Audit prueft diesen exakten Release Candidate.
+6. Nach Freigabe wird dasselbe Artefakt ohne Rebuild nach Production promotet.
 
 ### Umgebungen
 
