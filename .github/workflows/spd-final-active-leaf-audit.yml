@@ -1,0 +1,32 @@
+name: SPD final active-leaf audit
+
+on:
+  push:
+    branches:
+      - 'release/st-spd-c01i-clean-20260822'
+    paths:
+      - 'content/audits/sachsen-anhalt/spd-final-active-leaf-manifest-c01i.json'
+      - 'tools/validate_spd_final_active_leaf_c01i.py'
+      - '.github/workflows/spd-final-active-leaf-audit.yml'
+  pull_request:
+    paths:
+      - 'content/audits/sachsen-anhalt/spd-final-active-leaf-manifest-c01i.json'
+      - 'tools/validate_spd_final_active_leaf_c01i.py'
+      - '.github/workflows/spd-final-active-leaf-audit.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-frozen-c01i:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name == 'push' && github.ref_name || github.event.pull_request.head.ref }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate frozen ST-SPD C01I final active-leaf union
+        run: python tools/validate_spd_final_active_leaf_c01i.py
