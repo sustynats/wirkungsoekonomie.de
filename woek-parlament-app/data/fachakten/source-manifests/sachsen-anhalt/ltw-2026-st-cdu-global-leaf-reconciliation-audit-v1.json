@@ -2,40 +2,25 @@
   "authoritative_effect_mechanism_count": null,
   "authoritative_source_unit_count": null,
   "blockers": [
-    "LEGACY_PRIMARY_ROLE_UNCLASSIFIED:20"
+    "LEGACY_PRIMARY_ROLE_UNCLASSIFIED:5"
   ],
   "canonical_shards_expected": 24,
   "canonical_shards_loaded": 24,
-  "countable_effect_ids": 733,
-  "countable_source_ids": 734,
+  "countable_effect_ids": 728,
+  "countable_source_ids": 729,
   "effect_id_duplicates": [],
   "freeze_gate": "BLOCKED",
-  "generated_at": "2026-08-22T00:39:46.691762+00:00",
+  "generated_at": "2026-08-22T00:46:19.377955+00:00",
   "legacy_classification_conflicts": [],
   "legacy_register_rows": 344,
   "legacy_role_unclassified": [
-    81,
-    82,
-    83,
-    100,
-    101,
-    103,
-    120,
-    136,
-    138,
-    143,
-    167,
     169,
     170,
-    184,
-    207,
-    215,
-    216,
     242,
     243,
     244
   ],
-  "legacy_roles_classified": 325,
+  "legacy_roles_classified": 340,
   "legacy_terminal_triplets_found": 344,
   "legacy_versioned_terminal_deltas_observed": [
     {
@@ -3286,15 +3271,15 @@
   "source_id_duplicates": [],
   "structural_validation": {
     "blockers": [],
-    "countable_effect_leaves": 736,
-    "countable_source_nodes": 737,
+    "countable_effect_leaves": 731,
+    "countable_source_nodes": 732,
     "cycles": [],
     "dangling_edges": [],
     "edge_counts": {
       "PARENT_CHILD": 438,
       "RESTATEMENT": 1
     },
-    "explicit_union_nodes": 955,
+    "explicit_union_nodes": 970,
     "multiple_parent_conflicts": {},
     "new_fach_semantics_created": false,
     "public_count_mutated": false,
@@ -3303,5 +3288,5 @@
     "unresolved_relation_refs": []
   },
   "terminal_id_conflicts": [],
-  "union_records": 951
+  "union_records": 966
 }

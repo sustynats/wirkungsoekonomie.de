@@ -27,7 +27,7 @@
   "authoritative_source_unit_count": null,
   "canonical_diff_materialization": {
     "issue_comment_id": 5374339903,
-    "legacy_rows_materialized": 10,
+    "legacy_rows_materialized": 13,
     "mode": "STRICT_FIRST_CELL_LEGACY_SECOND_CELL_PARITY_FROM_EXACT_234_SNAPSHOT",
     "new_fach_semantics_created": false,
     "review_snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p37-p39-review.md",
@@ -50,9 +50,19 @@
   ],
   "primary_source_diff": [
     {
+      "classification": "CONTEXT_ONLY",
+      "legacy_unit": "0136",
+      "source_bound_review_line": "| `0136` | `CONTEXT_ONLY` | goal/problem frame: lower costs/less regulation; no identified instrument |"
+    },
+    {
       "classification": "SAME",
       "legacy_unit": "0137",
       "source_bound_review_line": "| `0137` | `SAME` | modern tech/KI + public data; existing terminal A10 assessment remains |"
+    },
+    {
+      "classification": "CONTEXT_ONLY",
+      "legacy_unit": "0138",
+      "source_bound_review_line": "| `0138` | `CONTEXT_ONLY` | transition/umbrella frame ending in `Wir werden`; no independent measure |"
     },
     {
       "classification": "OVERMERGED",
@@ -73,6 +83,11 @@
       "classification": "OVERMERGED+TRUNCATED",
       "legacy_unit": "0142",
       "source_bound_review_line": "| `0142` | `TRUNCATED` + `OVERMERGED` | Release-1 stops before the NGT/legal/research/reporting/Geobox continuation; restore and split |"
+    },
+    {
+      "classification": "CONTEXT_ONLY",
+      "legacy_unit": "0143",
+      "source_bound_review_line": "| `0143` | `CONTEXT_ONLY` | generic `unnötige Bürokratie abbauen` is not an additional mechanism beyond the specific reporting/data path restored under 0142 |"
     },
     {
       "classification": "OVERMERGED",

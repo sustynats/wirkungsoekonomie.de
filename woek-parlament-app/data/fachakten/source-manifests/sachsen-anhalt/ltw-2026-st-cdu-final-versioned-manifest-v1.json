@@ -29161,67 +29161,115 @@
     },
     {
       "applicable_241_layer_markers_explicit": [],
-      "canonical_legacy_classification": "PARTIAL",
+      "canonical_legacy_classification": "CONTEXT_ONLY",
       "child_source_unit_ids": [],
-      "effect_role": "COUNTABLE_EFFECT_LEAF",
-      "evidence_level": "LOW",
+      "effect_role": "CONTEXT_ONLY",
+      "evidence_level": "MEDIUM",
       "fach_provenance": [
         {
-          "join_reason": "CANONICAL_SAME_OR_STANDALONE_LEAF_NOT_REPEATED_IN_PARITY_SHARD",
           "legacy_terminal_review_comment_id": 5371842424
         }
       ],
       "impact_direction": "AMBIVALENT",
-      "layer_set_check": "INHERITED_TERMINAL_BASELINE_LAYER_PROVENANCE",
+      "layer_set_check": "NOT_APPLICABLE_NON_EFFECT_CONTEXT",
       "parent_source_unit_id": null,
-      "semantic_role_source_record": null,
-      "source_role": "COUNTABLE_CANONICAL_SOURCE",
+      "source_role": "CONTEXT_ONLY",
+      "source_unit_id": "ltw-2026-st-cdu-0081-mit-mut-zur-erneuerung-klaren-politischen-leitplanken-und",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "applicable_241_layer_markers_explicit": [],
+      "canonical_legacy_classification": "CONTEXT_ONLY",
+      "child_source_unit_ids": [],
+      "effect_role": "CONTEXT_ONLY",
+      "evidence_level": "MEDIUM",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5371842424
+        }
+      ],
+      "impact_direction": "AMBIVALENT",
+      "layer_set_check": "NOT_APPLICABLE_NON_EFFECT_CONTEXT",
+      "parent_source_unit_id": null,
+      "source_role": "CONTEXT_ONLY",
+      "source_unit_id": "ltw-2026-st-cdu-0082-darauf-bauen-wir-auf-und-gehen-den-naechsten-schritt",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "applicable_241_layer_markers_explicit": [],
+      "canonical_legacy_classification": "CONTEXT_ONLY",
+      "child_source_unit_ids": [],
+      "effect_role": "CONTEXT_ONLY",
+      "evidence_level": "NOT_ASSESSABLE",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5371842424
+        }
+      ],
+      "impact_direction": "OPEN",
+      "layer_set_check": "NOT_APPLICABLE_NON_EFFECT_CONTEXT",
+      "parent_source_unit_id": null,
+      "source_role": "CONTEXT_ONLY",
+      "source_unit_id": "ltw-2026-st-cdu-0083-sachsen-anhalt-wollen-wir-zu-einem-vorreiter-fuer-vernetzt",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "applicable_241_layer_markers_explicit": [],
+      "canonical_legacy_classification": "PARTIAL_PARENT+PARTIAL",
+      "child_source_unit_ids": [],
+      "effect_role": "NONLEAF_PARENT",
+      "evidence_level": "LOW",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5371842424
+        }
+      ],
+      "impact_direction": "AMBIVALENT",
+      "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
+      "parent_source_unit_id": null,
+      "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0084-eine-wohnortnahe-hochwertige-medizinische-und-pflegerische",
       "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
-      "canonical_legacy_classification": "PARTIAL",
+      "canonical_legacy_classification": "PARTIAL_PARENT+PARTIAL",
       "child_source_unit_ids": [],
-      "effect_role": "COUNTABLE_EFFECT_LEAF",
+      "effect_role": "NONLEAF_PARENT",
       "evidence_level": "NOT_ASSESSABLE",
       "fach_provenance": [
         {
-          "join_reason": "CANONICAL_SAME_OR_STANDALONE_LEAF_NOT_REPEATED_IN_PARITY_SHARD",
           "legacy_terminal_review_comment_id": 5371842424
         }
       ],
       "impact_direction": "OPEN",
-      "layer_set_check": "INHERITED_TERMINAL_BASELINE_LAYER_PROVENANCE",
+      "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
-      "semantic_role_source_record": null,
-      "source_role": "COUNTABLE_CANONICAL_SOURCE",
+      "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0085-krankenhaeuser-mit-klaren-profilen-die-eng-mit-ambulanten",
       "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
-      "canonical_legacy_classification": "PARTIAL",
+      "canonical_legacy_classification": "PARTIAL_PARENT+PARTIAL",
       "child_source_unit_ids": [],
-      "effect_role": "COUNTABLE_EFFECT_LEAF",
+      "effect_role": "NONLEAF_PARENT",
       "evidence_level": "LOW",
       "fach_provenance": [
         {
-          "join_reason": "CANONICAL_SAME_OR_STANDALONE_LEAF_NOT_REPEATED_IN_PARITY_SHARD",
           "legacy_terminal_review_comment_id": 5371842424
         }
       ],
       "impact_direction": "AMBIVALENT",
-      "layer_set_check": "INHERITED_TERMINAL_BASELINE_LAYER_PROVENANCE",
+      "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
-      "semantic_role_source_record": null,
-      "source_role": "COUNTABLE_CANONICAL_SOURCE",
+      "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0086-pflege-fuer-betroffene-bezahlbar-halten-waehrend-pflegende",
       "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
-      "canonical_legacy_classification": "TRUNCATED+PARTIAL",
+      "canonical_legacy_classification": "PARTIAL_PARENT+TRUNCATED+PARTIAL",
       "child_source_unit_ids": [],
       "effect_role": "NONLEAF_PARENT",
       "evidence_level": "MEDIUM",
@@ -29759,6 +29807,42 @@
     },
     {
       "applicable_241_layer_markers_explicit": [],
+      "canonical_legacy_classification": "CONTEXT_ONLY",
+      "child_source_unit_ids": [],
+      "effect_role": "CONTEXT_ONLY",
+      "evidence_level": "MEDIUM",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5371842424
+        }
+      ],
+      "impact_direction": "AMBIVALENT",
+      "layer_set_check": "NOT_APPLICABLE_NON_EFFECT_CONTEXT",
+      "parent_source_unit_id": null,
+      "source_role": "CONTEXT_ONLY",
+      "source_unit_id": "ltw-2026-st-cdu-0100-soziale-gerechtigkeit-und-familie-buergerarbeit-fuer-arbei",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "applicable_241_layer_markers_explicit": [],
+      "canonical_legacy_classification": "CONTEXT_ONLY",
+      "child_source_unit_ids": [],
+      "effect_role": "CONTEXT_ONLY",
+      "evidence_level": "MEDIUM",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5371842424
+        }
+      ],
+      "impact_direction": "AMBIVALENT",
+      "layer_set_check": "NOT_APPLICABLE_NON_EFFECT_CONTEXT",
+      "parent_source_unit_id": null,
+      "source_role": "CONTEXT_ONLY",
+      "source_unit_id": "ltw-2026-st-cdu-0101-wir-sorgen-dafuer-dass-unser-land-ein-ort-bleibt-an-dem-me",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "applicable_241_layer_markers_explicit": [],
       "canonical_legacy_classification": "SAME",
       "child_source_unit_ids": [],
       "effect_role": "COUNTABLE_EFFECT_LEAF",
@@ -29776,6 +29860,24 @@
       "source_role": "COUNTABLE_CANONICAL_SOURCE",
       "source_unit_id": "ltw-2026-st-cdu-0102-wir-verbessern-die-vereinbarkeit-von-familie-und-beruf-dur",
       "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "applicable_241_layer_markers_explicit": [],
+      "canonical_legacy_classification": "CONTEXT_ONLY",
+      "child_source_unit_ids": [],
+      "effect_role": "CONTEXT_ONLY",
+      "evidence_level": "NOT_ASSESSABLE",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5371842424
+        }
+      ],
+      "impact_direction": "OPEN",
+      "layer_set_check": "NOT_APPLICABLE_NON_EFFECT_CONTEXT",
+      "parent_source_unit_id": null,
+      "source_role": "CONTEXT_ONLY",
+      "source_unit_id": "ltw-2026-st-cdu-0103-eine-politik-die-nicht-spaltet-sondern-verbindet-die-zusam",
+      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
@@ -30124,6 +30226,24 @@
     },
     {
       "applicable_241_layer_markers_explicit": [],
+      "canonical_legacy_classification": "CONTEXT_ONLY",
+      "child_source_unit_ids": [],
+      "effect_role": "CONTEXT_ONLY",
+      "evidence_level": "MEDIUM",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5371375315
+        }
+      ],
+      "impact_direction": "POSITIVE",
+      "layer_set_check": "NOT_APPLICABLE_NON_EFFECT_CONTEXT",
+      "parent_source_unit_id": null,
+      "source_role": "CONTEXT_ONLY",
+      "source_unit_id": "ltw-2026-st-cdu-0120-eine-weiterentwicklung-der-medienkompetenz-fuer-alle-gener",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "applicable_241_layer_markers_explicit": [],
       "canonical_legacy_classification": "OVERMERGED",
       "child_source_unit_ids": [
         "ST-CDU-PRIMARY-SPLIT-0121-INNOVATION-DIVERSITY-SUPPORT",
@@ -30439,6 +30559,24 @@
     },
     {
       "applicable_241_layer_markers_explicit": [],
+      "canonical_legacy_classification": "CONTEXT_ONLY",
+      "child_source_unit_ids": [],
+      "effect_role": "CONTEXT_ONLY",
+      "evidence_level": "LOW",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5371414887
+        }
+      ],
+      "impact_direction": "AMBIVALENT",
+      "layer_set_check": "NOT_APPLICABLE_NON_EFFECT_CONTEXT",
+      "parent_source_unit_id": null,
+      "source_role": "CONTEXT_ONLY",
+      "source_unit_id": "ltw-2026-st-cdu-0136-landwirtschaft-mit-zukunft-verlaessliche-rahmenbedingungen",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "applicable_241_layer_markers_explicit": [],
       "canonical_legacy_classification": "SAME",
       "child_source_unit_ids": [],
       "effect_role": "COUNTABLE_EFFECT_LEAF",
@@ -30456,6 +30594,24 @@
       "source_role": "COUNTABLE_CANONICAL_SOURCE",
       "source_unit_id": "ltw-2026-st-cdu-0137-die-innovativste-landwirtschaft-deutschlands-mit-dem-einsa",
       "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
+    },
+    {
+      "applicable_241_layer_markers_explicit": [],
+      "canonical_legacy_classification": "CONTEXT_ONLY",
+      "child_source_unit_ids": [],
+      "effect_role": "CONTEXT_ONLY",
+      "evidence_level": "LOW",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5371414887
+        }
+      ],
+      "impact_direction": "POSITIVE",
+      "layer_set_check": "NOT_APPLICABLE_NON_EFFECT_CONTEXT",
+      "parent_source_unit_id": null,
+      "source_role": "CONTEXT_ONLY",
+      "source_unit_id": "ltw-2026-st-cdu-0138-eigentum-schuetzen-laendlichen-raum-staerken-vorrang-fuer",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
@@ -30546,6 +30702,24 @@
       "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0142-landwirtschaft-modernisieren-und-betriebe-entlasten-der-be",
       "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
+    },
+    {
+      "applicable_241_layer_markers_explicit": [],
+      "canonical_legacy_classification": "CONTEXT_ONLY",
+      "child_source_unit_ids": [],
+      "effect_role": "CONTEXT_ONLY",
+      "evidence_level": "MEDIUM",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5371414887
+        }
+      ],
+      "impact_direction": "AMBIVALENT",
+      "layer_set_check": "NOT_APPLICABLE_NON_EFFECT_CONTEXT",
+      "parent_source_unit_id": null,
+      "source_role": "CONTEXT_ONLY",
+      "source_unit_id": "ltw-2026-st-cdu-0143-gleichzeitig-bauen-wir-unnoetige-buerokratie-ab",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
       "applicable_241_layer_markers_explicit": [],
@@ -31033,6 +31207,24 @@
     },
     {
       "applicable_241_layer_markers_explicit": [],
+      "canonical_legacy_classification": "CONTEXT_ONLY",
+      "child_source_unit_ids": [],
+      "effect_role": "CONTEXT_ONLY",
+      "evidence_level": "MEDIUM",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5371447068
+        }
+      ],
+      "impact_direction": "POSITIVE",
+      "layer_set_check": "NOT_APPLICABLE_NON_EFFECT_CONTEXT",
+      "parent_source_unit_id": null,
+      "source_role": "CONTEXT_ONLY",
+      "source_unit_id": "ltw-2026-st-cdu-0167-den-verbraucherschutz-staerken-ein-starker-verbraucherschu",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "applicable_241_layer_markers_explicit": [],
       "canonical_legacy_classification": "OVERMERGED",
       "child_source_unit_ids": [
         "ST-CDU-PRIMARY-SPLIT-0168-FOOD-WASTE-REDUCTION",
@@ -31499,6 +31691,24 @@
     },
     {
       "applicable_241_layer_markers_explicit": [],
+      "canonical_legacy_classification": "CONTEXT_ONLY",
+      "child_source_unit_ids": [],
+      "effect_role": "CONTEXT_ONLY",
+      "evidence_level": "LOW",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5371668789
+        }
+      ],
+      "impact_direction": "AMBIVALENT",
+      "layer_set_check": "NOT_APPLICABLE_NON_EFFECT_CONTEXT",
+      "parent_source_unit_id": null,
+      "source_role": "CONTEXT_ONLY",
+      "source_unit_id": "ltw-2026-st-cdu-0184-eine-verlaessliche-hochwertige-und-kindgerechte-fruehkindl",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "applicable_241_layer_markers_explicit": [],
       "canonical_legacy_classification": "SAME",
       "child_source_unit_ids": [],
       "effect_role": "COUNTABLE_EFFECT_LEAF",
@@ -31728,21 +31938,19 @@
     },
     {
       "applicable_241_layer_markers_explicit": [],
-      "canonical_legacy_classification": "PARTIAL",
+      "canonical_legacy_classification": "PARTIAL_PARENT+PARTIAL",
       "child_source_unit_ids": [],
-      "effect_role": "COUNTABLE_EFFECT_LEAF",
+      "effect_role": "NONLEAF_PARENT",
       "evidence_level": "NOT_ASSESSABLE",
       "fach_provenance": [
         {
-          "join_reason": "CANONICAL_SAME_OR_STANDALONE_LEAF_NOT_REPEATED_IN_PARITY_SHARD",
           "legacy_terminal_review_comment_id": 5371668789
         }
       ],
       "impact_direction": "OPEN",
-      "layer_set_check": "INHERITED_TERMINAL_BASELINE_LAYER_PROVENANCE",
+      "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
-      "semantic_role_source_record": null,
-      "source_role": "COUNTABLE_CANONICAL_SOURCE",
+      "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0196-unser-ziel-ist-es-fuer-buerger-unseres-landes-die-buerokra",
       "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
     },
@@ -31960,6 +32168,24 @@
     },
     {
       "applicable_241_layer_markers_explicit": [],
+      "canonical_legacy_classification": "CONTEXT_ONLY",
+      "child_source_unit_ids": [],
+      "effect_role": "CONTEXT_ONLY",
+      "evidence_level": "MEDIUM",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5371668789
+        }
+      ],
+      "impact_direction": "AMBIVALENT",
+      "layer_set_check": "NOT_APPLICABLE_NON_EFFECT_CONTEXT",
+      "parent_source_unit_id": null,
+      "source_role": "CONTEXT_ONLY",
+      "source_unit_id": "ltw-2026-st-cdu-0207-wir-wollen-einen-staat-der-seine-aufgaben-klar-erfuellt-de",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "applicable_241_layer_markers_explicit": [],
       "canonical_legacy_classification": "SAME",
       "child_source_unit_ids": [],
       "effect_role": "COUNTABLE_EFFECT_LEAF",
@@ -32112,21 +32338,55 @@
     },
     {
       "applicable_241_layer_markers_explicit": [],
-      "canonical_legacy_classification": "PARTIAL",
+      "canonical_legacy_classification": "CONTEXT_ONLY",
       "child_source_unit_ids": [],
-      "effect_role": "COUNTABLE_EFFECT_LEAF",
+      "effect_role": "CONTEXT_ONLY",
+      "evidence_level": "NOT_ASSESSABLE",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5371668789
+        }
+      ],
+      "impact_direction": "OPEN",
+      "layer_set_check": "NOT_APPLICABLE_NON_EFFECT_CONTEXT",
+      "parent_source_unit_id": null,
+      "source_role": "CONTEXT_ONLY",
+      "source_unit_id": "ltw-2026-st-cdu-0215-in-sachsen-anhalt-setzen-wir-auf-gutes-recht-das-verstaend",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "applicable_241_layer_markers_explicit": [],
+      "canonical_legacy_classification": "CONTEXT_ONLY",
+      "child_source_unit_ids": [],
+      "effect_role": "CONTEXT_ONLY",
+      "evidence_level": "NOT_ASSESSABLE",
+      "fach_provenance": [
+        {
+          "legacy_terminal_review_comment_id": 5371668789
+        }
+      ],
+      "impact_direction": "OPEN",
+      "layer_set_check": "NOT_APPLICABLE_NON_EFFECT_CONTEXT",
+      "parent_source_unit_id": null,
+      "source_role": "CONTEXT_ONLY",
+      "source_unit_id": "ltw-2026-st-cdu-0216-unser-ziel-ist-klar-wir-sichern-den-rechtsstaat-staerken-d",
+      "terminal_fach_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON"
+    },
+    {
+      "applicable_241_layer_markers_explicit": [],
+      "canonical_legacy_classification": "PARTIAL_PARENT+PARTIAL",
+      "child_source_unit_ids": [],
+      "effect_role": "NONLEAF_PARENT",
       "evidence_level": "LOW",
       "fach_provenance": [
         {
-          "join_reason": "CANONICAL_SAME_OR_STANDALONE_LEAF_NOT_REPEATED_IN_PARITY_SHARD",
           "legacy_terminal_review_comment_id": 5369970967
         }
       ],
       "impact_direction": "POSITIVE",
-      "layer_set_check": "INHERITED_TERMINAL_BASELINE_LAYER_PROVENANCE",
+      "layer_set_check": "NOT_APPLICABLE_NONLEAF_PARENT",
       "parent_source_unit_id": null,
-      "semantic_role_source_record": null,
-      "source_role": "COUNTABLE_CANONICAL_SOURCE",
+      "source_role": "PROVENANCE_PARENT_ONLY",
       "source_unit_id": "ltw-2026-st-cdu-0217-gleicher-zugang-zum-recht-ueberall-recht-muss-fuer-jeden-l",
       "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
@@ -35253,7 +35513,7 @@
     }
   ],
   "fach_semantics_created_by_reconciler": false,
-  "generated_at": "2026-08-22T00:39:46.691762+00:00",
+  "generated_at": "2026-08-22T00:46:19.377955+00:00",
   "historical_release1": {
     "register_path": "woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-cdu-zusagen.md",
     "role": "IMMUTABLE_WORKING_BASELINE_NOT_FINAL_DENOMINATOR",

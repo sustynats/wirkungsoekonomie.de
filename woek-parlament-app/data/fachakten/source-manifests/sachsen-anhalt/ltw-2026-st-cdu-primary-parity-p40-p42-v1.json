@@ -27,7 +27,7 @@
   "authoritative_source_unit_count": null,
   "canonical_diff_materialization": {
     "issue_comment_id": 5374363536,
-    "legacy_rows_materialized": 19,
+    "legacy_rows_materialized": 20,
     "mode": "STRICT_FIRST_CELL_LEGACY_SECOND_CELL_PARITY_FROM_EXACT_234_SNAPSHOT",
     "new_fach_semantics_created": false,
     "review_snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p40-p42-review.md",
@@ -138,6 +138,11 @@
       "classification": "SAME",
       "legacy_unit": "0166",
       "source_bound_review_line": "| `0166` | `SAME` | education/youth/nature-work funding for angling/commercial fishing; existing terminal status remains |"
+    },
+    {
+      "classification": "CONTEXT_ONLY",
+      "legacy_unit": "0167",
+      "source_bound_review_line": "| `0167` | `CONTEXT_ONLY` | consumer-protection goal/risk frame without independent instrument; existing `NOT_ASSESSABLE` parent remains |"
     },
     {
       "classification": "OVERMERGED",

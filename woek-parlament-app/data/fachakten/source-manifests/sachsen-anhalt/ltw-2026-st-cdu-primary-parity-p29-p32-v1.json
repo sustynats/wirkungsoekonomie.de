@@ -27,7 +27,7 @@
   "authoritative_source_unit_count": null,
   "canonical_diff_materialization": {
     "issue_comment_id": 5374174537,
-    "legacy_rows_materialized": 14,
+    "legacy_rows_materialized": 17,
     "mode": "STRICT_FIRST_CELL_LEGACY_SECOND_CELL_PARITY_FROM_EXACT_234_SNAPSHOT",
     "new_fach_semantics_created": false,
     "review_snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p29-p32-review.md",
@@ -50,9 +50,24 @@
   ],
   "primary_source_diff": [
     {
+      "classification": "CONTEXT_ONLY",
+      "legacy_unit": "0100",
+      "source_bound_review_line": "| `0100` | `CONTEXT_ONLY` | Kapitel-/Werte-/Themenframe erhalten; kein eigener Effektmechanismus |"
+    },
+    {
+      "classification": "CONTEXT_ONLY",
+      "legacy_unit": "0101",
+      "source_bound_review_line": "| `0101` | `CONTEXT_ONLY` | gesellschaftlicher Ziel-/Werteframe, kein eigenständiges Instrument |"
+    },
+    {
       "classification": "SAME",
       "legacy_unit": "0102",
       "source_bound_review_line": "| `0102` | `SAME` | Familien-/Berufsvereinbarkeit als bestehende Unit erhalten; vorheriger terminaler Fachstatus bleibt |"
+    },
+    {
+      "classification": "CONTEXT_ONLY",
+      "legacy_unit": "0103",
+      "source_bound_review_line": "| `0103` | `CONTEXT_ONLY` | Zusammenhalts-/Kommunikationsframe; trailing `Wir werden` ist Abschnittsmarker, kein zusätzlicher Mechanismus |"
     },
     {
       "classification": "SAME",

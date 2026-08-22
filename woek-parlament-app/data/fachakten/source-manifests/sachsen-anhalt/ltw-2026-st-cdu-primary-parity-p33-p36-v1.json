@@ -27,7 +27,7 @@
   "authoritative_source_unit_count": null,
   "canonical_diff_materialization": {
     "issue_comment_id": 5374248114,
-    "legacy_rows_materialized": 18,
+    "legacy_rows_materialized": 19,
     "mode": "STRICT_FIRST_CELL_LEGACY_SECOND_CELL_PARITY_FROM_EXACT_234_SNAPSHOT",
     "new_fach_semantics_created": false,
     "review_snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p33-p36-review.md",
@@ -63,6 +63,11 @@
       "classification": "OVERMERGED",
       "legacy_unit": "0119",
       "source_bound_review_line": "| `0119` | `OVERMERGED` | Einkommens-/Belastungsdifferenzierung und Mittelstands-Entlastung sind zwei verschiedene Finanzierungs-/Verteilungsmechanismen |"
+    },
+    {
+      "classification": "CONTEXT_ONLY",
+      "legacy_unit": "0120",
+      "source_bound_review_line": "| `0120` | `CONTEXT_ONLY` | Überschrift Zukunftsrichtung, Text aber ausschließlich Rückblick; konkrete zukünftige Medienkompetenzmaßnahme ist `0126`; keine Doppelzählung |"
     },
     {
       "classification": "OVERMERGED",

@@ -27,7 +27,7 @@
   "authoritative_source_unit_count": null,
   "canonical_diff_materialization": {
     "issue_comment_id": 5373797040,
-    "legacy_rows_materialized": 16,
+    "legacy_rows_materialized": 19,
     "mode": "STRICT_FIRST_CELL_LEGACY_SECOND_CELL_PARITY_FROM_EXACT_234_SNAPSHOT",
     "new_fach_semantics_created": false,
     "review_snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p25-p28-review.md",
@@ -50,22 +50,37 @@
   ],
   "primary_source_diff": [
     {
-      "classification": "PARTIAL",
+      "classification": "CONTEXT_ONLY",
+      "legacy_unit": "0081",
+      "source_bound_review_line": "| `0081` „Gesundheit und Pflege neu denken“ | `CONTEXT_ONLY` | Ziel-/Übergangsframe, kein eigenständiger Wirkmechanismus |"
+    },
+    {
+      "classification": "CONTEXT_ONLY",
+      "legacy_unit": "0082",
+      "source_bound_review_line": "| `0082` „Darauf bauen wir auf …“ | `CONTEXT_ONLY` | Rückblick/Transition; historische Outputs nicht als neue Wirkung zählen |"
+    },
+    {
+      "classification": "CONTEXT_ONLY",
+      "legacy_unit": "0083",
+      "source_bound_review_line": "| `0083` „Vorreiter … Gesundheits- und Pflegeversorgung“ | `CONTEXT_ONLY` | Zielzustand, kein Instrument |"
+    },
+    {
+      "classification": "PARTIAL_PARENT",
       "legacy_unit": "0084",
       "source_bound_review_line": "| `0084` wohnortnah/digital/vernetzt + attraktive Arbeitsbedingungen | `PARTIAL_PARENT` | Summary-Ziel; konkrete Hebel folgen in `0088+`, keine Doppelzählung |"
     },
     {
-      "classification": "PARTIAL",
+      "classification": "PARTIAL_PARENT",
       "legacy_unit": "0085",
       "source_bound_review_line": "| `0085` Krankenhausprofile/ambulante Kooperation | `PARTIAL_PARENT` | Summary-Ziel; konkrete Mechanismen in `0090/0091` |"
     },
     {
-      "classification": "PARTIAL",
+      "classification": "PARTIAL_PARENT",
       "legacy_unit": "0086",
       "source_bound_review_line": "| `0086` bezahlbare Pflege/Angehörigenentlastung | `PARTIAL_PARENT` | Summary-Ziel; konkrete Mechanismen in `0095/0096` |"
     },
     {
-      "classification": "TRUNCATED+PARTIAL",
+      "classification": "PARTIAL_PARENT+TRUNCATED",
       "legacy_unit": "0087",
       "source_bound_review_line": "| `0087` Prävention … „Wir werden“ | `TRUNCATED` + `PARTIAL_PARENT` | Goal-Parent erhalten; konkreter finaler Bullet „Prävention als Lebensprinzip“ fehlt als eigener Release-1-Mechanismus |"
     },

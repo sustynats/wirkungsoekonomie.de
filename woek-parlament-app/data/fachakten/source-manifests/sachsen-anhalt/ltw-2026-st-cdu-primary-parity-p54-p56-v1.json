@@ -27,7 +27,7 @@
   "authoritative_source_unit_count": null,
   "canonical_diff_materialization": {
     "issue_comment_id": 5374669067,
-    "legacy_rows_materialized": 8,
+    "legacy_rows_materialized": 10,
     "mode": "STRICT_FIRST_CELL_LEGACY_SECOND_CELL_PARITY_FROM_EXACT_234_SNAPSHOT",
     "new_fach_semantics_created": false,
     "review_snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p54-p56-review.md",
@@ -85,7 +85,17 @@
       "source_bound_review_line": "| `0214` | `OVERMERGED` | digital-twin decision/simulation capability and digital-twin transparency/participation capability separated |"
     },
     {
-      "classification": "PARTIAL",
+      "classification": "CONTEXT_ONLY",
+      "legacy_unit": "0215",
+      "source_bound_review_line": "| `0215` | `CONTEXT_ONLY` | p56 justice problem/goal context: understandable/enforceable law + timely procedures, no independent instrument |"
+    },
+    {
+      "classification": "CONTEXT_ONLY",
+      "legacy_unit": "0216",
+      "source_bound_review_line": "| `0216` | `CONTEXT_ONLY` | justice end-state/attractiveness goal, no independent instrument |"
+    },
+    {
+      "classification": "PARTIAL_PARENT",
       "legacy_unit": "0217",
       "source_bound_review_line": "| `0217` | `PARTIAL_PARENT` | p56 `Gleicher Zugang zum Recht überall` summary bullet; detailed court-location/legal-services mechanisms follow on pp57–58 and will carry effect units |"
     }

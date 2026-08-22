@@ -27,7 +27,7 @@
   "authoritative_source_unit_count": null,
   "canonical_diff_materialization": {
     "issue_comment_id": 5374587495,
-    "legacy_rows_materialized": 11,
+    "legacy_rows_materialized": 12,
     "mode": "STRICT_FIRST_CELL_LEGACY_SECOND_CELL_PARITY_FROM_EXACT_234_SNAPSHOT",
     "new_fach_semantics_created": false,
     "review_snapshot_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/review-snapshots/ltw-2026-st-cdu-primary-parity-p47-p49-review.md",
@@ -49,6 +49,11 @@
     49
   ],
   "primary_source_diff": [
+    {
+      "classification": "CONTEXT_ONLY",
+      "legacy_unit": "0184",
+      "source_bound_review_line": "| `0184` | `CONTEXT_ONLY` | section-wide problem/goal parent ending `Wir werden`; no independent effect direction |"
+    },
     {
       "classification": "SAME",
       "legacy_unit": "0185",
