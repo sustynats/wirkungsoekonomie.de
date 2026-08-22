@@ -1,0 +1,166 @@
+{
+  "checkpoint_id": "ST-BSW-FINAL-UNION-SOURCE-RELATION-RECONCILIATION-R17",
+  "scope": "Sachsen-Anhalt 2026 BSW Wahlprogramm only",
+  "mode": "SOURCE_ROLE_CONVERGENCE_ONLY_NO_NEW_FACH",
+  "status": "PARTIAL_SOURCE_RELATION_CONVERGENCE_FAIL_CLOSED",
+  "inputs": {
+    "historical_register": "woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-bsw-zusagen.md",
+    "historical_role_checkpoint": "content/audits/sachsen-anhalt/bsw-source-unit-manifest-reconciliation-r10.json",
+    "exact_versioned_union": "content/audits/sachsen-anhalt/bsw-source-unit-union-r14.json",
+    "relation_registry": "content/audits/sachsen-anhalt/bsw-final-union-relation-registry-r15.json",
+    "terminal_source_reconciliation_comments": {
+      "R01": 5374138103,
+      "R02": 5374163676,
+      "R03": 5374183131,
+      "R04": 5374207608
+    }
+  },
+  "corpus_rule": [
+    "SAME plus an independent mechanism remains KEEP_ATOMIC exactly once.",
+    "OVERMERGED or TRUNCATED historical records whose mechanisms are represented by canonical children/restores remain addressable but are inactive SUPERSEDED_NONLEAF records.",
+    "PARTIAL_PARENT is active only when a source-bound atomic residual remains after child subtraction; otherwise it is inactive.",
+    "Goal, outcome, rationale, heading and chapter-context text is CONTEXT_ONLY or DUPLICATE_RELATION and is not a second effect object.",
+    "Every versioned psr/front leaf occurs exactly once; historical text is immutable.",
+    "No source/effect denominator is frozen from scalar batch arithmetic; final counts derive only from explicit final roles after graph, collision, gap and terminal-layer gates pass."
+  ],
+  "closed_relation_rows": {
+    "0138": {
+      "final_role": "SUPERSEDED_NONLEAF",
+      "active_effect_leaf": false,
+      "basis": "R03 source reconciliation plus already materialized R15 targets",
+      "targets": [
+        "ltw-2026-st-bsw-psr-a05-p41-18-sportstaetten-schulsport-baeder-erhalt-neubau",
+        "ltw-2026-st-bsw-psr-a05-p41-19-sportfoerderung-langfristig-einfach-effizient-barrierefrei-mehrfachnutzung",
+        "ltw-2026-st-bsw-psr-a05-p41-20-trainerbezahlung-trainerstellen-stuetzpunkte"
+      ]
+    },
+    "0162": {
+      "final_role": "SUPERSEDED_NONLEAF",
+      "active_effect_leaf": false,
+      "basis": "R04/A06 source reconciliation: truncated qualification sentence is represented by existing terminal historical atomic leaves",
+      "targets": [
+        "ltw-2026-st-bsw-0167-befristete-vertraege-zur-wissenschaftlichen-qualifikation",
+        "ltw-2026-st-bsw-0169-der-hohe-anteil-befristeter-beschaeftigungsverhaeltnisse-i"
+      ],
+      "relation": "RESTORED_BY_EXISTING_CANONICAL_HISTORICAL_ATOMS"
+    },
+    "0200": {
+      "final_role": "SUPERSEDED_NONLEAF",
+      "active_effect_leaf": false,
+      "basis": "R04/A06 source reconciliation",
+      "targets": [
+        "ltw-2026-st-bsw-psr-a06-p57-34-behindertenteilhabegesetz-partnerschaftlich-umsetzen",
+        "ltw-2026-st-bsw-psr-a06-p57-p58-35-betriebe-inklusion-erster-arbeitsmarkt-unterstuetzen"
+      ]
+    },
+    "0278": {
+      "final_role": "SUPERSEDED_NONLEAF",
+      "active_effect_leaf": false,
+      "basis": "R01/A09 source reconciliation",
+      "targets": [
+        "ltw-2026-st-bsw-psr-a09-0006-wald-schadflaechen-wiederaufforstung-naturverjuengung",
+        "ltw-2026-st-bsw-psr-a09-0007-private-waldbesitzer-foerderung-beratung",
+        "ltw-2026-st-bsw-psr-a09-0008-wald-wasserrueckhalt-moor-wiedervernaessung"
+      ]
+    },
+    "0294": {
+      "final_role": "SUPERSEDED_NONLEAF",
+      "active_effect_leaf": false,
+      "basis": "R01/A09 source reconciliation",
+      "targets": [
+        "ltw-2026-st-bsw-psr-a09-0022-bruechau-vollauskofferung",
+        "ltw-2026-st-bsw-psr-a09-0023-bruechau-sichere-verlagerung-entsorgung",
+        "ltw-2026-st-bsw-psr-a09-0024-bruechau-verursacherfinanzierung"
+      ]
+    }
+  },
+  "source_context_role_corrections": {
+    "0123": {
+      "from": "SUPERSEDED_NONLEAF",
+      "to": "CONTEXT_ONLY",
+      "active_effect_leaf": false,
+      "basis": "Historical record is a chapter-boundary merge of a nondiscrimination goal, the Kultur heading and introductory rationale/context; no independent atomic implementation mechanism remains in this record after source-boundary reconciliation."
+    },
+    "0187": {
+      "from": "SUPERSEDED_NONLEAF",
+      "to": "CONTEXT_ONLY",
+      "active_effect_leaf": false,
+      "basis": "Historical record is the unspecific Hochschulgovernance heading/goal plus the following Gesundheit chapter problem/context block; it is not an independent atomic implementation mechanism."
+    }
+  },
+  "still_unresolved_relation_rows": {
+    "0091": {
+      "historical_role": "SUPERSEDED_NONLEAF",
+      "source_finding": "OVERMERGED_TRUNCATED_PARENT",
+      "reason": "The historical mobility block contains effect-bearing mechanisms that the R02 terminal reconciliation requires to be split, while the exact 380-ID A01-A09/front union does not contain distinct canonical leaves for all of those mechanisms. Existing R15 target p31-p32-27 covers only the centres-connection part and is not a complete supersession set.",
+      "unrepresented_atomic_scopes_observed_in_historical_source": [
+        "flächendeckender Ausbau der Ladeinfrastruktur",
+        "Unterstützung der Autoindustrie bei effizienteren Verbrennern, synthetischen Kraftstoffen und alternativen Antrieben",
+        "Ablehnung eines pauschalen Verbrennerverbots"
+      ],
+      "gate": "RESTORE_GAP_UNRESOLVED"
+    },
+    "0115": {
+      "historical_role": "SUPERSEDED_NONLEAF",
+      "source_finding": "MULTI_COMPETENCE_SPLIT_PARENT",
+      "reason": "R02 explicitly separates federal §218 StGB abolition/advocacy from the state access mechanism (Versorgungsaufträge, Qualifizierung, wohnortnahe Angebote). No distinct canonical leaves for both components exist in the exact 380-ID union.",
+      "unrepresented_atomic_scopes_observed_in_historical_source": [
+        "perspektivische Abschaffung §218 StGB / Bundesgesetzgebung-Advocacy",
+        "Landeszugang zu Schwangerschaftsabbruch durch Versorgungsaufträge, Qualifizierung und wohnortnahe Angebote"
+      ],
+      "gate": "RESTORE_GAP_UNRESOLVED"
+    },
+    "0139": {
+      "historical_role": "SUPERSEDED_NONLEAF",
+      "source_finding": "MULTI_MECHANISM_PARENT",
+      "reason": "R03 makes the current record inactive because it bundles multiple mechanisms. The exact 380-ID union has the Ehrenamtskarte leaf but no complete canonical atom set for the bundled Freistellungsgesetz, Ehrenamtspauschalen and pension-recognition mechanisms.",
+      "unrepresented_atomic_scopes_observed_in_historical_source": [
+        "Ausweitung des Freistellungsgesetzes auf privates Ehrenamt",
+        "Erhöhung der Ehrenamtspauschalen",
+        "Anerkennung ehrenamtlicher Tätigkeit bei der Rentenberechnung"
+      ],
+      "gate": "RESTORE_GAP_UNRESOLVED"
+    },
+    "0158": {
+      "historical_role": "SUPERSEDED_NONLEAF",
+      "source_finding": "MULTI_MECHANISM_PARENT",
+      "reason": "R03 explicitly requires this record to be split into general engagement support, tax relief and professional accompaniment. The exact 380-ID union contains no complete canonical atom set for those three source mechanisms.",
+      "unrepresented_atomic_scopes_observed_in_historical_source": [
+        "ehrenamtliches Engagement fördern",
+        "ehrenamtliches Engagement steuerlich entlasten",
+        "ehrenamtliches Engagement professionell begleiten"
+      ],
+      "gate": "RESTORE_GAP_UNRESOLVED"
+    }
+  },
+  "relation_queue_after_source_reconciliation": {
+    "r15_listed_unresolved_rows": 11,
+    "closed_as_targeted_or_context_in_r17": 7,
+    "still_unresolved": 4,
+    "still_unresolved_ordinals": ["0091", "0115", "0139", "0158"]
+  },
+  "gap_gate": {
+    "zero_gap_proof": false,
+    "reason": "Four terminal source-reconciliation parents remain inactive while at least one effect-bearing atomic scope in each has no complete canonical active-leaf representation in the fixed A01-A09/front 380-ID union. Claiming zero OVERMERGED/RESTORE_GAP would therefore be false.",
+    "resolved_gap_counts": {
+      "ABSENT": null,
+      "PARTIAL_PARENT": null,
+      "OVERMERGED": null,
+      "TRUNCATED": null,
+      "RESTORE_GAP": null
+    }
+  },
+  "collision_scan_gate": {
+    "status": "MACHINE_RESULT_NOT_YET_OBSERVED",
+    "workflow": ".github/workflows/bsw-final-union-audit.yml",
+    "rule": "Lexical/semantic similarity is triage only and cannot create fach or silently change source roles."
+  },
+  "completion": {
+    "ST_BSW_PRIMARY_SOURCE_PARITY_FULL_PROGRAM": "BLOCKED_BY_4_EXPLICIT_SOURCE_RESTORE_GAPS_AND_MACHINE_COLLISION_SCAN",
+    "authoritative_denominator_frozen": false,
+    "BSW_FULL_PROGRAM_FACH_COMPLETE": false,
+    "PR270_merge_ready": false,
+    "no_new_fach_created": true,
+    "no_dns_or_recommendation_synthesis": true
+  }
+}
