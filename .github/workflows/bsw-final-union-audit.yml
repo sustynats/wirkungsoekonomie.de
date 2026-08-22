@@ -10,6 +10,7 @@ on:
       - 'woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-bsw-zusagen.md'
       - 'tools/audit_bsw_final_union.py'
       - 'tools/materialize_bsw_final_union_manifest.py'
+      - 'tools/run_bsw_final_union_r21.py'
       - '.github/workflows/bsw-final-union-audit.yml'
   pull_request:
     paths:
@@ -18,6 +19,7 @@ on:
       - 'woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-bsw-zusagen.md'
       - 'tools/audit_bsw_final_union.py'
       - 'tools/materialize_bsw_final_union_manifest.py'
+      - 'tools/run_bsw_final_union_r21.py'
       - '.github/workflows/bsw-final-union-audit.yml'
   workflow_dispatch:
 
@@ -38,16 +40,14 @@ jobs:
           python-version: '3.12'
       - name: Audit exact BSW extended union and pending historical-role collisions
         run: python tools/audit_bsw_final_union.py --output content/audits/sachsen-anhalt/bsw-final-union-collision-report-r20.json
-      - name: Materialize fail-closed R20 final-union candidate
+      - name: Materialize fail-closed R21 final-role / R20 source-union candidate
         if: always()
         run: |
           set +e
-          python tools/materialize_bsw_final_union_manifest.py \
+          python tools/run_bsw_final_union_r21.py \
             --collision-report content/audits/sachsen-anhalt/bsw-final-union-collision-report-r20.json \
             --relations content/audits/sachsen-anhalt/bsw-final-union-relation-registry-r18.json \
-            --relation-overlay content/audits/sachsen-anhalt/bsw-final-union-relation-overlay-r20.json \
-            --output content/audits/sachsen-anhalt/bsw-final-union-manifest-machine-r20.json \
-            --allow-default-pend-keep-atomic
+            --output content/audits/sachsen-anhalt/bsw-final-union-manifest-machine-r20.json
           echo "materializer_exit=$?"
           exit 0
       - name: Build R20 machine audit summary
@@ -60,7 +60,7 @@ jobs:
           m=json.loads(Path('content/audits/sachsen-anhalt/bsw-final-union-manifest-machine-r20.json').read_text())
           scan=c['pending_collision_scan']
           summary={
-            'marker':'ST_BSW_PR270_FINAL_UNION_MACHINE_AUDIT_R20',
+            'marker':'ST_BSW_PR270_FINAL_UNION_MACHINE_AUDIT_R20_R21',
             'head':'${{ github.sha }}',
             'hard_errors':c.get('hard_errors',[]),
             'extended_versioned_union':c.get('versioned_union'),
@@ -86,7 +86,7 @@ jobs:
           }
           Path('content/audits/sachsen-anhalt/bsw-final-union-machine-summary-r20.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n')
           Path('tmp').mkdir(exist_ok=True)
-          Path('tmp/pr270-comment.md').write_text('### ST BSW final-union machine audit R20\n\n```json\n'+json.dumps(summary,ensure_ascii=False,indent=2)+'\n```\n')
+          Path('tmp/pr270-comment.md').write_text('### ST BSW final-union machine audit R20/R21\n\n```json\n'+json.dumps(summary,ensure_ascii=False,indent=2)+'\n```\n')
           print(json.dumps(summary,ensure_ascii=False,indent=2))
           PY
       - name: Persist R20 machine audit artifacts to PR270 branch
@@ -101,7 +101,7 @@ jobs:
           git add content/audits/sachsen-anhalt/bsw-final-union-collision-report-r20.json \
                   content/audits/sachsen-anhalt/bsw-final-union-manifest-machine-r20.json \
                   content/audits/sachsen-anhalt/bsw-final-union-machine-summary-r20.json
-          git commit -m 'audit(bsw): publish final-union machine scan R20 [skip-bsw-audit]'
+          git commit -m 'audit(bsw): publish final-union machine scan R20/R21 [skip-bsw-audit]'
           git push origin HEAD:${{ github.ref_name }}
       - name: Publish R20 machine audit summary to PR270
         if: always() && github.event_name == 'push'
@@ -111,10 +111,10 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: bsw-final-union-audit-r20-artifacts
+          name: bsw-final-union-audit-r20-r21-artifacts
           path: |
             content/audits/sachsen-anhalt/bsw-final-union-collision-report-r20.json
             content/audits/sachsen-anhalt/bsw-final-union-manifest-machine-r20.json
             content/audits/sachsen-anhalt/bsw-final-union-machine-summary-r20.json
 
-# deterministic convergence persistence trigger 2026-08-22T03:14+02:00 — release-controller retrigger
+# deterministic convergence persistence trigger 2026-08-22T03:19+02:00 — R21 explicit-role closure
