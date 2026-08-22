@@ -1,0 +1,39 @@
+name: GRUENE convergence C01 extract
+
+on:
+  push:
+    branches:
+      - 'audit/st-gruene-convergence-c01-20260822'
+    paths:
+      - 'tools/extract_st_gruene_issue234_c01.mjs'
+      - '.github/workflows/gruene-convergence-c01-extract.yml'
+  workflow_dispatch:
+
+permissions:
+  issues: read
+  contents: write
+
+jobs:
+  extract:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Extract exact GRUENE issue 234 corpus
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node tools/extract_st_gruene_issue234_c01.mjs
+      - name: Commit extracted corpus
+        run: |
+          if git diff --quiet -- content/audits/sachsen-anhalt/gruene-issue234-source-corpus-c01.json; then
+            echo 'NO_CHANGE'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add content/audits/sachsen-anhalt/gruene-issue234-source-corpus-c01.json
+          git commit -m 'audit(st): materialize GRUENE issue234 convergence corpus'
+          git push
