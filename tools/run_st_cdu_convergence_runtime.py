@@ -22,6 +22,7 @@ import urllib.request
 
 import materialize_st_cdu_review_snapshots as snapshots
 import normalize_st_cdu_convergence_shards as normalize
+import reconcile_st_cdu_source_bound_residuals as residuals
 import build_st_cdu_global_convergence as convergence
 import reconcile_st_cdu_source_manifest_nodes as source_manifest_nodes
 import validate_st_cdu_global_convergence as validate
@@ -59,6 +60,11 @@ def main() -> int:
     snapshots.api_json = public_api_json
     convergence.api_json = public_api_json
 
+    # Mechanical parser compatibility only. These wrappers read exact #234
+    # source-bound comments and immutable legacy IDs; they create no Fach state.
+    residuals.install_legacy_terminal_ledger_supplement(convergence)
+    residuals.install_validator_reference_normalization(validate)
+
     # First rematerialize exact source-bound snapshots with strict own-shard selection.
     snapshots.main()
     index = json.loads(SNAP_INDEX.read_text(encoding="utf-8"))
@@ -82,6 +88,10 @@ def main() -> int:
                 )
 
         normalize.main()
+        # Re-materialize only the parity-role table metadata from the exact
+        # source-bound snapshots. This prevents explanatory cross-reference IDs
+        # from being mistaken for the row's own legacy role.
+        residuals.refresh_canonical_shard_diffs()
         convergence.main()
         # The versioned source manifest already contains exact terminal child triplets
         # for a small number of restored/split nodes that were not repeated in a page
