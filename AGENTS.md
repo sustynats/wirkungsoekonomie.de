@@ -21,6 +21,9 @@ Diese Datei ist die dauerhafte Arbeitsanweisung fuer Codex-Aufgaben in diesem Re
 - Private Nutzerdaten werden nicht neu in Vercel-Speicher geschrieben. Der Zielbestand liegt in Oracle/OCI; bestehende Altsysteme werden nur backup-first und ohne stillen Datenverlust migriert.
 - Vercel-Builds verwenden die Standardmaschine, feste Auswahl, keine elastische Parallelitaet und eine serielle Queue. Preview-Builds werden nicht fuer normale Fach-, Daten- oder Bot-Commits erzeugt.
 - Vor Aenderungen an `vercel.json`, Vercel-Projekteinstellungen oder Deployment-Workflows sind `npm run check:hosting-cost` und bei bestehender Vercel-Anmeldung `npm run check:hosting-cost:vercel` auszufuehren. Die ausfuehrliche Regel steht in `docs/ops/HOSTING-COST-GUARD.md`.
+- Vor jedem manuellen Vercel-Build ist zusaetzlich `npm run check:vercel-release-budget` verpflichtend und anschliessend mit `npm run reserve:vercel-build -- --project=<name> --commit=<sha> --release=<id>` genau ein Build-Slot zu reservieren. Ein rotes Kostengate verbietet den Build; es darf nicht durch einen direkten CLI-Aufruf umgangen werden.
+- Ueber alle Projekte zusammen sind hoechstens vier Vercel-Builds je Abrechnungszeitraum zulaessig. Pro Aenderungspaket wird genau ein Release Candidate gebaut; Production promotet dieses bereits gepruefte Artefakt ohne Rebuild.
+- Vercel Spend Management wird zum Beginn des naechsten Abrechnungszeitraums auf 0 USD zusaetzlichen Verbrauch gesetzt, soweit Vercel 0 USD akzeptiert, sonst maximal 1 USD, jeweils mit der harten Aktion `Pause all projects`.
 
 ## Inhaltliche Leitlinie Wirkungsökonomie
 
