@@ -1,6 +1,16 @@
 name: BSW final union audit
 
 on:
+  push:
+    branches:
+      - 'fach/st-bsw-source-manifest-r05-20260821'
+    paths:
+      - 'content/audits/sachsen-anhalt/bsw-source-unit-*.json'
+      - 'content/audits/sachsen-anhalt/bsw-final-union-*.json'
+      - 'woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-bsw-zusagen.md'
+      - 'tools/audit_bsw_final_union.py'
+      - 'tools/materialize_bsw_final_union_manifest.py'
+      - '.github/workflows/bsw-final-union-audit.yml'
   pull_request:
     paths:
       - 'content/audits/sachsen-anhalt/bsw-source-unit-*.json'
