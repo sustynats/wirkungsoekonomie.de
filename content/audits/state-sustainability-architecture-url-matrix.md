@@ -1532,8 +1532,8 @@ Signals are review candidates, not automatic errors.
 
 ## Recursive non-HTML publication/support surfaces
 
-- Tracked support text files inventoried: **961**
-- Combined matrix items (routes + extra HTML + support): **17221**
+- Tracked support text files inventoried: **965**
+- Combined matrix items (routes + extra HTML + support): **17225**
 - Every matrix item exposes the #253 contract fields: source_path, public_url, historical_publication, relevance, classification, required_action, source_refs and status.
 - Includes llms.txt, sitemap/search metadata, structured-data registries, glossary/source archive, library/journal/reference inputs and generators/workflows.
 
@@ -1577,6 +1577,7 @@ Signals are review candidates, not automatic errors.
 | `content/audits/sachsen-anhalt/bsw-final-union-source-leaf-addendum-r20.json` | support_text | NO_CHANGE_REQUIRED | alternativen |
 | `content/audits/sachsen-anhalt/bsw-source-unit-manifest-reconciliation-r10.json` | support_text | ADD_SOURCE_LINKS | dns |
 | `content/audits/sachsen-anhalt/bsw-source-unit-union-r14.json` | support_text | NO_CHANGE_REQUIRED | alternativen, evaluation |
+| `content/audits/sachsen-anhalt/gruene-issue234-source-corpus-c01.json` | support_text | CORRECT_OVERCLAIM | dns, alternativen, evaluation, novelty_or_absence |
 | `content/audits/sachsen-anhalt/linke-final-union-manifest-c26.json` | support_text | ADD_SOURCE_LINKS | dns |
 | `content/audits/state-sustainability-architecture-audit-contract.md` | support_text | ADD_SOURCE_LINKS | enap, egfa, dns, alternativen, evaluation |
 | `content/dashboards/dashboardModels.json` | support_text | NO_CHANGE_REQUIRED | evaluation |
@@ -2010,7 +2011,7 @@ Signals are review candidates, not automatic errors.
 
 ## Review/action closure
 
-- Combined reviewed items: **17222**
+- Combined reviewed items: **17226**
 - Open semantic/action reviews after deterministic projection: **0**
 - Broad novelty/Wirkungsblindheit hits were dispositioned by a second-pass contextual state-absence review; isolated words are not treated as absence claims.
 - `AGENTS.md` is explicitly inventoried as a corrected current guardrail.
