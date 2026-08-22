@@ -1,0 +1,32 @@
+name: LINKE final union audit
+
+on:
+  push:
+    branches:
+      - 'release/st-linke-c26-clean-20260822'
+    paths:
+      - 'content/audits/sachsen-anhalt/linke-final-union-manifest-c26.json'
+      - 'tools/validate_linke_final_union_c26.py'
+      - '.github/workflows/linke-final-union-audit.yml'
+  pull_request:
+    paths:
+      - 'content/audits/sachsen-anhalt/linke-final-union-manifest-c26.json'
+      - 'tools/validate_linke_final_union_c26.py'
+      - '.github/workflows/linke-final-union-audit.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-frozen-c26:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name == 'push' && github.ref_name || github.event.pull_request.head.ref }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate frozen ST-LINKE C26 final union
+        run: python tools/validate_linke_final_union_c26.py
