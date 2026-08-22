@@ -2,13 +2,6 @@
   "authoritative_effect_mechanism_count": null,
   "authoritative_source_unit_count": null,
   "blockers": [
-    "DANGLING_RELATION:PARENT_CHILD:ST-CDU-PRIMARY-GAP-EU-CLIMATE-001->ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-CHEMICALS",
-    "DANGLING_RELATION:PARENT_CHILD:ST-CDU-PRIMARY-GAP-EU-CLIMATE-001->ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-CO2",
-    "DANGLING_RELATION:PARENT_CHILD:ST-CDU-PRIMARY-GAP-EU-CLIMATE-001->ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-LKSG",
-    "DANGLING_RELATION:PARENT_CHILD:ST-CDU-PRIMARY-GAP-EU-CLIMATE-001->ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-TAXONOMY",
-    "DANGLING_RELATION:PARENT_CHILD:ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa->ST-CDU-PRIMARY-SPLIT-0250-BNE",
-    "DANGLING_RELATION:PARENT_CHILD:ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa->ST-CDU-PRIMARY-SPLIT-0250-SPECIES-STATUS",
-    "DANGLING_RELATION:PARENT_CHILD:ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa->ST-CDU-PRIMARY-SPLIT-0250-WILDLIFE-DAMAGE",
     "LEGACY_EFFECT_LEAF_TERMINAL_TRIPLET_NOT_FOUND:0014:ltw-2026-st-cdu-0014-zugleich-setzen-wir-uns-auf-bundesebene-fuer-die-schnelle",
     "LEGACY_EFFECT_LEAF_TERMINAL_TRIPLET_NOT_FOUND:0016:ltw-2026-st-cdu-0016-praeventionsambulanzen-fuer-psychisch-erkrankte-menschen-m",
     "LEGACY_EFFECT_LEAF_TERMINAL_TRIPLET_NOT_FOUND:0217:ltw-2026-st-cdu-0217-gleicher-zugang-zum-recht-ueberall-recht-muss-fuer-jeden-l",
@@ -22,7 +15,7 @@
   "countable_source_ids": 728,
   "effect_id_duplicates": [],
   "freeze_gate": "BLOCKED",
-  "generated_at": "2026-08-22T00:18:21.924376+00:00",
+  "generated_at": "2026-08-22T00:25:10.653335+00:00",
   "legacy_classification_conflicts": [],
   "legacy_register_rows": 344,
   "legacy_role_unclassified": [
@@ -1971,6 +1964,19 @@
       "type": "VERSIONED_TERMINAL_DELTA_LATEST_WINS"
     }
   ],
+  "mechanical_source_manifest_node_materialization": {
+    "explicit_terminal_nodes_seen": 22,
+    "new_fach_semantics_created": false,
+    "nodes_added": [
+      "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001",
+      "ST-CDU-PRIMARY-SPLIT-0250-BNE",
+      "ST-CDU-PRIMARY-SPLIT-0250-SPECIES-STATUS",
+      "ST-CDU-PRIMARY-SPLIT-0250-WILDLIFE-DAMAGE"
+    ],
+    "nodes_added_count": 4,
+    "public_count_mutated": false,
+    "source_manifest": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-source-unit-manifest-v2.json"
+  },
   "missing_shard_files": [],
   "missing_shards_materialized_this_run": [
     "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-primary-parity-p23-p24-v1.json",
@@ -1993,71 +1999,21 @@
   "source_id_duplicates": [],
   "structural_validation": {
     "blockers": [
-      "DANGLING_RELATION:PARENT_CHILD:ST-CDU-PRIMARY-GAP-EU-CLIMATE-001->ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-CHEMICALS",
-      "DANGLING_RELATION:PARENT_CHILD:ST-CDU-PRIMARY-GAP-EU-CLIMATE-001->ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-CO2",
-      "DANGLING_RELATION:PARENT_CHILD:ST-CDU-PRIMARY-GAP-EU-CLIMATE-001->ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-LKSG",
-      "DANGLING_RELATION:PARENT_CHILD:ST-CDU-PRIMARY-GAP-EU-CLIMATE-001->ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-TAXONOMY",
-      "DANGLING_RELATION:PARENT_CHILD:ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa->ST-CDU-PRIMARY-SPLIT-0250-BNE",
-      "DANGLING_RELATION:PARENT_CHILD:ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa->ST-CDU-PRIMARY-SPLIT-0250-SPECIES-STATUS",
-      "DANGLING_RELATION:PARENT_CHILD:ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa->ST-CDU-PRIMARY-SPLIT-0250-WILDLIFE-DAMAGE",
       "UNRESOLVED_RELATION:RESTATEMENT:ltw-2026-st-cdu-0259-tierheime-besser-unterstuetzen-die-tierheime-leisten-wertv:RESTATEMENT_DUPLICATE_OF_0251_ANIMAL_WELFARE_FUNDING"
     ],
-    "countable_effect_leaves": 727,
-    "countable_source_nodes": 728,
+    "countable_effect_leaves": 730,
+    "countable_source_nodes": 731,
     "cycles": [],
-    "dangling_edges": [
-      {
-        "from": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001",
-        "relation": "PARENT_CHILD",
-        "source": "builder",
-        "to": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-CHEMICALS"
-      },
-      {
-        "from": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001",
-        "relation": "PARENT_CHILD",
-        "source": "builder",
-        "to": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-CO2"
-      },
-      {
-        "from": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001",
-        "relation": "PARENT_CHILD",
-        "source": "builder",
-        "to": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-LKSG"
-      },
-      {
-        "from": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001",
-        "relation": "PARENT_CHILD",
-        "source": "builder",
-        "to": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-TAXONOMY"
-      },
-      {
-        "from": "ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa",
-        "relation": "PARENT_CHILD",
-        "source": "builder",
-        "to": "ST-CDU-PRIMARY-SPLIT-0250-BNE"
-      },
-      {
-        "from": "ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa",
-        "relation": "PARENT_CHILD",
-        "source": "builder",
-        "to": "ST-CDU-PRIMARY-SPLIT-0250-SPECIES-STATUS"
-      },
-      {
-        "from": "ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa",
-        "relation": "PARENT_CHILD",
-        "source": "builder",
-        "to": "ST-CDU-PRIMARY-SPLIT-0250-WILDLIFE-DAMAGE"
-      }
-    ],
+    "dangling_edges": [],
     "edge_counts": {
-      "PARENT_CHILD": 431
+      "PARENT_CHILD": 438
     },
-    "explicit_union_nodes": 947,
+    "explicit_union_nodes": 951,
     "multiple_parent_conflicts": {},
     "new_fach_semantics_created": false,
     "public_count_mutated": false,
     "relation_graph_acyclic": true,
-    "resolved_typed_edges": 431,
+    "resolved_typed_edges": 438,
     "unresolved_relation_refs": [
       {
         "from": "ltw-2026-st-cdu-0259-tierheime-besser-unterstuetzen-die-tierheime-leisten-wertv",

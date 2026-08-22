@@ -100,50 +100,7 @@
       90
     ]
   ],
-  "dangling_relation_edges": [
-    {
-      "from": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001",
-      "relation": "PARENT_CHILD",
-      "source": "builder",
-      "to": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-CHEMICALS"
-    },
-    {
-      "from": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001",
-      "relation": "PARENT_CHILD",
-      "source": "builder",
-      "to": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-CO2"
-    },
-    {
-      "from": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001",
-      "relation": "PARENT_CHILD",
-      "source": "builder",
-      "to": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-LKSG"
-    },
-    {
-      "from": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001",
-      "relation": "PARENT_CHILD",
-      "source": "builder",
-      "to": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-TAXONOMY"
-    },
-    {
-      "from": "ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa",
-      "relation": "PARENT_CHILD",
-      "source": "builder",
-      "to": "ST-CDU-PRIMARY-SPLIT-0250-BNE"
-    },
-    {
-      "from": "ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa",
-      "relation": "PARENT_CHILD",
-      "source": "builder",
-      "to": "ST-CDU-PRIMARY-SPLIT-0250-SPECIES-STATUS"
-    },
-    {
-      "from": "ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa",
-      "relation": "PARENT_CHILD",
-      "source": "builder",
-      "to": "ST-CDU-PRIMARY-SPLIT-0250-WILDLIFE-DAMAGE"
-    }
-  ],
+  "dangling_relation_edges": [],
   "denominator_status": "NOT_FROZEN_GLOBAL_RECONCILIATION_BLOCKED",
   "edges": {
     "parent_child": [
@@ -1901,6 +1858,30 @@
       }
     ],
     "resolved_typed_edges": [
+      {
+        "from": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001",
+        "relation": "PARENT_CHILD",
+        "source": "builder",
+        "to": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-CHEMICALS"
+      },
+      {
+        "from": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001",
+        "relation": "PARENT_CHILD",
+        "source": "builder",
+        "to": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-CO2"
+      },
+      {
+        "from": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001",
+        "relation": "PARENT_CHILD",
+        "source": "builder",
+        "to": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-LKSG"
+      },
+      {
+        "from": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001",
+        "relation": "PARENT_CHILD",
+        "source": "builder",
+        "to": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-TAXONOMY"
+      },
       {
         "from": "ltw-2026-st-cdu-0076-leistungsmessung-und-evaluation-weiterentwickeln-um-qualit",
         "relation": "PARENT_CHILD",
@@ -3741,13 +3722,31 @@
         "from": "ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa",
         "relation": "PARENT_CHILD",
         "source": "builder",
+        "to": "ST-CDU-PRIMARY-SPLIT-0250-BNE"
+      },
+      {
+        "from": "ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa",
+        "relation": "PARENT_CHILD",
+        "source": "builder",
         "to": "ST-CDU-PRIMARY-SPLIT-0250-INVASIVE-SPECIES"
       },
       {
         "from": "ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa",
         "relation": "PARENT_CHILD",
         "source": "builder",
+        "to": "ST-CDU-PRIMARY-SPLIT-0250-SPECIES-STATUS"
+      },
+      {
+        "from": "ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa",
+        "relation": "PARENT_CHILD",
+        "source": "builder",
         "to": "ST-CDU-PRIMARY-SPLIT-0250-VOLUNTEER-CONSERVATION"
+      },
+      {
+        "from": "ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa",
+        "relation": "PARENT_CHILD",
+        "source": "builder",
+        "to": "ST-CDU-PRIMARY-SPLIT-0250-WILDLIFE-DAMAGE"
       },
       {
         "from": "ltw-2026-st-cdu-0261-buerokratie-abbauen-ehrenamt-erleichtern-ehrenamtliches-en",
@@ -4490,7 +4489,7 @@
     ],
     "supersedes_continuation_restatement_duplicate": "PRESERVED_WHERE_EXPLICIT_IN_SOURCE_MANIFEST_OR_TERMINAL_SEMANTIC_ROLE",
     "typed_edge_counts": {
-      "PARENT_CHILD": 431
+      "PARENT_CHILD": 438
     }
   },
   "effect_count_rule": "COUNT UNIQUE source_unit_id WHERE effect_role=COUNTABLE_EFFECT_LEAF",
@@ -4646,6 +4645,32 @@
       "source_role": "COUNTABLE_CANONICAL_SOURCE",
       "source_unit_id": "ST-CDU-PRIMARY-ADD-P44-LIGNITE-MATERIAL-USE",
       "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "applicable_241_layer_markers_explicit": [],
+      "canonical_legacy_classification": null,
+      "child_source_unit_ids": [
+        "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-CHEMICALS",
+        "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-CO2",
+        "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-LKSG",
+        "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001-TAXONOMY"
+      ],
+      "effect_role": "NONLEAF_PARENT",
+      "evidence_level": "NOT_ASSESSABLE",
+      "fach_provenance": [
+        {
+          "join_reason": "EXPLICIT_SOURCE_MANIFEST_TERMINAL_NODE_NOT_REPEATED_IN_CANONICAL_PAGE_SHARD",
+          "new_fach_semantics_created": false,
+          "source_manifest": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-source-unit-manifest-v2.json"
+        }
+      ],
+      "impact_direction": "OPEN",
+      "layer_set_check": "INHERITED_TERMINAL_BASELINE_LAYER_PROVENANCE",
+      "parent_source_unit_id": null,
+      "semantic_role_source_record": null,
+      "source_role": "PROVENANCE_PARENT_ONLY",
+      "source_unit_id": "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001",
+      "terminal_fach_status": "SOURCE_UNIT_RECLASSIFIED_VERSIONED"
     },
     {
       "applicable_241_layer_markers_explicit": [
@@ -22357,6 +22382,27 @@
       "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
+      "applicable_241_layer_markers_explicit": [],
+      "canonical_legacy_classification": null,
+      "child_source_unit_ids": [],
+      "effect_role": "COUNTABLE_EFFECT_LEAF",
+      "evidence_level": "LOW",
+      "fach_provenance": [
+        {
+          "join_reason": "EXPLICIT_SOURCE_MANIFEST_TERMINAL_NODE_NOT_REPEATED_IN_CANONICAL_PAGE_SHARD",
+          "new_fach_semantics_created": false,
+          "source_manifest": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-source-unit-manifest-v2.json"
+        }
+      ],
+      "impact_direction": "POSITIVE",
+      "layer_set_check": "INHERITED_TERMINAL_BASELINE_LAYER_PROVENANCE",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa",
+      "semantic_role_source_record": null,
+      "source_role": "COUNTABLE_CANONICAL_SOURCE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0250-BNE",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
       "applicable_241_layer_markers_explicit": [
         "COVERAGE_SCOPE",
         "DELIVERY_FEASIBILITY",
@@ -22433,6 +22479,27 @@
       "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
+      "applicable_241_layer_markers_explicit": [],
+      "canonical_legacy_classification": null,
+      "child_source_unit_ids": [],
+      "effect_role": "COUNTABLE_EFFECT_LEAF",
+      "evidence_level": "LOW",
+      "fach_provenance": [
+        {
+          "join_reason": "EXPLICIT_SOURCE_MANIFEST_TERMINAL_NODE_NOT_REPEATED_IN_CANONICAL_PAGE_SHARD",
+          "new_fach_semantics_created": false,
+          "source_manifest": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-source-unit-manifest-v2.json"
+        }
+      ],
+      "impact_direction": "AMBIVALENT",
+      "layer_set_check": "INHERITED_TERMINAL_BASELINE_LAYER_PROVENANCE",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa",
+      "semantic_role_source_record": null,
+      "source_role": "COUNTABLE_CANONICAL_SOURCE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0250-SPECIES-STATUS",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
       "applicable_241_layer_markers_explicit": [
         "COVERAGE_SCOPE",
         "DELIVERY_FEASIBILITY",
@@ -22506,6 +22573,27 @@
       "semantic_role_source_record": null,
       "source_role": "COUNTABLE_CANONICAL_SOURCE",
       "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0250-VOLUNTEER-CONSERVATION",
+      "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
+    },
+    {
+      "applicable_241_layer_markers_explicit": [],
+      "canonical_legacy_classification": null,
+      "child_source_unit_ids": [],
+      "effect_role": "COUNTABLE_EFFECT_LEAF",
+      "evidence_level": "LOW",
+      "fach_provenance": [
+        {
+          "join_reason": "EXPLICIT_SOURCE_MANIFEST_TERMINAL_NODE_NOT_REPEATED_IN_CANONICAL_PAGE_SHARD",
+          "new_fach_semantics_created": false,
+          "source_manifest": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-source-unit-manifest-v2.json"
+        }
+      ],
+      "impact_direction": "AMBIVALENT",
+      "layer_set_check": "INHERITED_TERMINAL_BASELINE_LAYER_PROVENANCE",
+      "parent_source_unit_id": "ltw-2026-st-cdu-0250-artenvielfalt-schuetzen-der-erhalt-der-biologischen-vielfa",
+      "semantic_role_source_record": null,
+      "source_role": "COUNTABLE_CANONICAL_SOURCE",
+      "source_unit_id": "ST-CDU-PRIMARY-SPLIT-0250-WILDLIFE-DAMAGE",
       "terminal_fach_status": "EDITORIAL_V2_PLUS_APPROVED"
     },
     {
@@ -34934,13 +35022,26 @@
     }
   ],
   "fach_semantics_created_by_reconciler": false,
-  "generated_at": "2026-08-22T00:18:21.924376+00:00",
+  "generated_at": "2026-08-22T00:25:10.653335+00:00",
   "historical_release1": {
     "register_path": "woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-cdu-zusagen.md",
     "role": "IMMUTABLE_WORKING_BASELINE_NOT_FINAL_DENOMINATOR",
     "source_unit_count": 344
   },
   "manifest_version": "2026-08-22-global-leaf-reconciliation-v1",
+  "mechanical_source_manifest_node_materialization": {
+    "explicit_terminal_nodes_seen": 22,
+    "new_fach_semantics_created": false,
+    "nodes_added": [
+      "ST-CDU-PRIMARY-GAP-EU-CLIMATE-001",
+      "ST-CDU-PRIMARY-SPLIT-0250-BNE",
+      "ST-CDU-PRIMARY-SPLIT-0250-SPECIES-STATUS",
+      "ST-CDU-PRIMARY-SPLIT-0250-WILDLIFE-DAMAGE"
+    ],
+    "nodes_added_count": 4,
+    "public_count_mutated": false,
+    "source_manifest": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-source-unit-manifest-v2.json"
+  },
   "multiple_parent_conflicts": {},
   "one_count_per_final_effect_leaf": "PASS",
   "overlapping_alternative_shard_arithmetic": "REJECTED",
