@@ -2,16 +2,16 @@
 """Materialize exact canonical #234 CDU source-bound review comments.
 
 Mechanical provenance helper only. It does not create, alter or infer Fach semantics.
-Selection requires the shard's own PASS checkpoint *and* its own zero-gap marker,
-so a later continuation comment cannot be mistaken for the reviewed shard it cites.
+Selection requires the shard's own PASS checkpoint and an exact shard-local zero-gap
+marker, so a later continuation comment cannot be mistaken for the reviewed shard it cites.
 """
 from __future__ import annotations
 
-# Convergence-phase trigger marker: functional behavior remains unchanged.
 import hashlib
 import json
 import os
 import pathlib
+import re
 import sys
 import urllib.request
 
@@ -23,19 +23,25 @@ OUT_DIR = pathlib.Path(
 )
 
 SHARDS = [
-    ("p23-p24", "ST_CDU_PRIMARY_PARITY_P23_P24 = PASS_SEGMENT", "ST_CDU_P23_P24_UNRESOLVED_SOURCE_GAPS = 0", None),
-    ("p25-p28", "ST_CDU_PRIMARY_PARITY_P25_P28 = PASS_SEGMENT", "ST_CDU_P25_P28_UNRESOLVED_SOURCE_GAPS = 0", None),
-    ("p29-p32", "ST_CDU_PRIMARY_PARITY_P29_P32 = PASS_SEGMENT", "ST_CDU_P29_P32_UNRESOLVED_SOURCE_GAPS = 0", None),
-    ("p33-p36", "ST_CDU_PRIMARY_PARITY_P33_P36 = PASS_SEGMENT", "ST_CDU_P33_P36_UNRESOLVED_SOURCE_GAPS = 0", None),
-    ("p37-p39", "ST_CDU_PRIMARY_PARITY_P37_P39 = PASS_SEGMENT", "ST_CDU_P37_P39_UNRESOLVED_SOURCE_GAPS = 0", None),
-    ("p40-p42", "ST_CDU_PRIMARY_PARITY_P40_P42 = PASS_SEGMENT", "ST_CDU_P40_P42_UNRESOLVED_SOURCE_GAPS = 0", None),
-    ("p43-p46", "ST_CDU_PRIMARY_PARITY_P43_P46 = PASS_SEGMENT", "ST_CDU_P43_P46_UNRESOLVED_SOURCE_GAPS = 0", "ST_CDU_P43_P46_NEW_OR_SPLIT_TERMINAL = PASS_36"),
-    ("p47-p49", "ST_CDU_PRIMARY_PARITY_P47_P49 = PASS_SEGMENT", "ST_CDU_P47_P49_UNRESOLVED_SOURCE_GAPS = 0", "ST_CDU_P47_P49_NEW_OR_SPLIT_TERMINAL = PASS_16"),
-    ("p50-p53", "ST_CDU_PRIMARY_PARITY_P50_P53 = PASS_SEGMENT", "ST_CDU_P50_P53_UNRESOLVED_SOURCE_GAPS = 0", None),
-    ("p54-p56", "ST_CDU_PRIMARY_PARITY_P54_P56 = PASS_SEGMENT", "ST_CDU_P54_P56_UNRESOLVED_SOURCE_GAPS = 0", None),
-    ("p57-p59", "ST_CDU_PRIMARY_PARITY_P57_P59 = PASS_SEGMENT", "ST_CDU_P57_P59_UNRESOLVED_SOURCE_GAPS = 0", None),
-    ("p63-p64", "ST_CDU_PRIMARY_PARITY_P63_P64 = PASS_SEGMENT", "ST_CDU_P63_P64_UNRESOLVED_SOURCE_GAPS = 0", None),
+    ("p23-p24", "ST_CDU_PRIMARY_PARITY_P23_P24 = PASS_SEGMENT", None),
+    ("p25-p28", "ST_CDU_PRIMARY_PARITY_P25_P28 = PASS_SEGMENT", None),
+    ("p29-p32", "ST_CDU_PRIMARY_PARITY_P29_P32 = PASS_SEGMENT", None),
+    ("p33-p36", "ST_CDU_PRIMARY_PARITY_P33_P36 = PASS_SEGMENT", None),
+    ("p37-p39", "ST_CDU_PRIMARY_PARITY_P37_P39 = PASS_SEGMENT", None),
+    ("p40-p42", "ST_CDU_PRIMARY_PARITY_P40_P42 = PASS_SEGMENT", None),
+    ("p43-p46", "ST_CDU_PRIMARY_PARITY_P43_P46 = PASS_SEGMENT", "ST_CDU_P43_P46_NEW_OR_SPLIT_TERMINAL = PASS_36"),
+    ("p47-p49", "ST_CDU_PRIMARY_PARITY_P47_P49 = PASS_SEGMENT", "ST_CDU_P47_P49_NEW_OR_SPLIT_TERMINAL = PASS_16"),
+    ("p50-p53", "ST_CDU_PRIMARY_PARITY_P50_P53 = PASS_SEGMENT", None),
+    ("p54-p56", "ST_CDU_PRIMARY_PARITY_P54_P56 = PASS_SEGMENT", None),
+    ("p57-p59", "ST_CDU_PRIMARY_PARITY_P57_P59 = PASS_SEGMENT", None),
+    ("p63-p64", "ST_CDU_PRIMARY_PARITY_P63_P64 = PASS_SEGMENT", None),
 ]
+
+ZERO_GAP_SUFFIXES = (
+    "UNRESOLVED_SOURCE_GAPS",
+    "SOURCE_RESTORE_GAPS",
+    "SOURCE_GAPS",
+)
 
 
 def api_json(url: str):
@@ -70,38 +76,60 @@ def fetch_all_comments():
     return comments
 
 
-def choose(comments, checkpoint: str, zero_gap_token: str, canonical_token: str | None):
+def page_pair(slug: str) -> tuple[int, int]:
+    match = re.fullmatch(r"p(\d+)-p(\d+)", slug)
+    if not match:
+        raise ValueError(f"Bad shard slug: {slug}")
+    return int(match.group(1)), int(match.group(2))
+
+
+def exact_zero_gap_token(body: str, slug: str) -> str | None:
+    start, end = page_pair(slug)
+    for suffix in ZERO_GAP_SUFFIXES:
+        pattern = rf"ST_CDU_P{start}_P{end}_{suffix}\s*=\s*0\b"
+        match = re.search(pattern, body)
+        if match:
+            return match.group(0)
+    return None
+
+
+def choose(comments, slug: str, checkpoint: str, canonical_token: str | None):
     candidates = []
     for c in comments:
         body = c.get("body") or ""
-        if checkpoint not in body or zero_gap_token not in body:
+        if checkpoint not in body:
+            continue
+        zero_gap_token = exact_zero_gap_token(body, slug)
+        if not zero_gap_token:
             continue
         if canonical_token and canonical_token not in body:
             continue
-        candidates.append(c)
+        candidates.append((c, zero_gap_token))
     if not candidates:
         raise RuntimeError(
-            f"No #234 comment matches checkpoint={checkpoint!r}, zero_gap={zero_gap_token!r}, canonical_token={canonical_token!r}"
+            f"No #234 comment matches shard={slug!r}, checkpoint={checkpoint!r}, exact shard-local zero-gap marker, canonical_token={canonical_token!r}"
         )
-    candidates.sort(key=lambda c: (c.get("created_at") or "", int(c["id"])))
-    return candidates[-1], [int(c["id"]) for c in candidates]
+    candidates.sort(key=lambda pair: (pair[0].get("created_at") or "", int(pair[0]["id"])))
+    selected, zero_gap_token = candidates[-1]
+    return selected, zero_gap_token, [int(c["id"]) for c, _ in candidates]
 
 
 def main() -> int:
     comments = fetch_all_comments()
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     index = {
-        "schema_version": "1.1",
+        "schema_version": "1.2",
         "programme_key": "ltw-2026-st-cdu",
         "issue": 234,
         "purpose": "MECHANICAL_SOURCE_BOUND_REVIEW_PROVENANCE_FOR_GLOBAL_LEAF_RECONCILIATION",
-        "selection_rule": "OWN_PASS_CHECKPOINT_AND_OWN_ZERO_GAP_MARKER_PLUS_CANONICAL_TOKEN_WHERE_REQUIRED",
+        "selection_rule": "OWN_PASS_CHECKPOINT_AND_EXACT_SHARD_LOCAL_ZERO_GAP_MARKER_PLUS_CANONICAL_TOKEN_WHERE_REQUIRED",
+        "zero_gap_suffixes_accepted": list(ZERO_GAP_SUFFIXES),
         "fach_semantics_created": False,
         "entries": [],
     }
 
-    for slug, checkpoint, zero_gap_token, canonical_token in SHARDS:
-        c, candidate_ids = choose(comments, checkpoint, zero_gap_token, canonical_token)
+    for slug, checkpoint, canonical_token in SHARDS:
+        c, zero_gap_token, candidate_ids = choose(comments, slug, checkpoint, canonical_token)
         body = (c.get("body") or "").replace("\r\n", "\n").rstrip() + "\n"
         sha = hashlib.sha256(body.encode("utf-8")).hexdigest()
         out = OUT_DIR / f"ltw-2026-st-cdu-primary-parity-{slug}-review.md"
