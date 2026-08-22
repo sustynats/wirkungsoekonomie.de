@@ -26,7 +26,8 @@ on:
 
 permissions:
   contents: write
-  issues: read
+  issues: write
+  pull-requests: write
 
 concurrency:
   group: st-cdu-global-convergence-${{ github.event.pull_request.number || github.ref }}
@@ -45,9 +46,13 @@ jobs:
         with:
           python-version: '3.12'
       - name: Run deterministic source-bound CDU convergence
+        id: convergence
         env:
           GH_TOKEN: ${{ github.token }}
-        run: python tools/run_st_cdu_convergence_runtime.py
+        shell: bash
+        run: |
+          set -o pipefail
+          python tools/run_st_cdu_convergence_runtime.py 2>&1 | tee /tmp/st-cdu-convergence.log
       - name: Validate generated JSON
         run: |
           python - <<'PY'
@@ -68,5 +73,26 @@ jobs:
             git commit -m 'data(cdu): materialize canonical convergence state [skip ci]'
             git push origin HEAD:woek/st-cdu-source-manifest-p89-20260821
           fi
+      - name: Publish mechanical convergence checkpoint to PR 257
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          {
+            echo '### ST CDU deterministic convergence runtime'
+            echo
+            echo 'Purely mechanical source-bound #234 reconciliation; no new Fach semantics, DNS mapping, Recommendation, score or public-count mutation.'
+            echo
+            echo '```text'
+            if test -f /tmp/st-cdu-convergence.log; then
+              tail -n 120 /tmp/st-cdu-convergence.log
+            else
+              echo 'runtime log unavailable before convergence step'
+            fi
+            echo '```'
+            echo
+            echo "workflow_sha=${GITHUB_SHA}"
+          } > /tmp/st-cdu-pr-comment.md
+          gh pr comment 257 --repo "$GITHUB_REPOSITORY" --body-file /tmp/st-cdu-pr-comment.md
 
 # Deterministic convergence only; no Fach synthesis and no public-count mutation.
