@@ -1,0 +1,150 @@
+{
+  "schema": "woek-st-spd-final-active-leaf-manifest-v1",
+  "party": "SPD",
+  "election": "ltw-2026-st",
+  "final_role_components": [
+    {
+      "anchor": "issuecomment-5377917322",
+      "label": "ST-SPD-CONVERGENCE-C01B",
+      "namespace": "v2",
+      "domain": "v2-0175..v2-1078",
+      "records": 904,
+      "active_effect_leaf": 780,
+      "nonleaf_zero_effect": 124
+    },
+    {
+      "anchor": "issuecomment-5377949033",
+      "label": "ST-SPD-CONVERGENCE-C01C",
+      "namespace": "historical",
+      "domain": "0001..0030",
+      "records": 30,
+      "active_effect_leaf": 20,
+      "nonleaf_zero_effect": 10
+    },
+    {
+      "anchor": "issuecomment-5377988050",
+      "label": "ST-SPD-CONVERGENCE-C01D",
+      "namespace": "historical",
+      "domain": "0031..0060",
+      "records": 30,
+      "active_effect_leaf": 23,
+      "nonleaf_zero_effect": 7
+    },
+    {
+      "anchor": "issuecomment-5378080552",
+      "label": "ST-SPD-CONVERGENCE-C01E",
+      "namespace": "historical",
+      "domain": "0061..0090",
+      "records": 30,
+      "active_effect_leaf": 20,
+      "nonleaf_zero_effect": 10
+    },
+    {
+      "anchor": "issuecomment-5378088859",
+      "label": "ST-SPD-CONVERGENCE-C01F",
+      "namespace": "historical",
+      "domain": "0091..0120",
+      "records": 30,
+      "active_effect_leaf": 24,
+      "nonleaf_zero_effect": 6
+    },
+    {
+      "anchor": "issuecomment-5378100738",
+      "label": "ST-SPD-CONVERGENCE-C01G",
+      "namespace": "historical",
+      "domain": "0121..0146",
+      "records": 26,
+      "active_effect_leaf": 17,
+      "nonleaf_zero_effect": 9
+    },
+    {
+      "anchor": "issuecomment-5378113176",
+      "label": "ST-SPD-CONVERGENCE-C01H",
+      "namespace": "historical",
+      "domain": "0147..0174",
+      "records": 28,
+      "active_effect_leaf": 10,
+      "nonleaf_zero_effect": 18
+    }
+  ],
+  "record_role_domain_count": 1078,
+  "final_active_leaf_count": 894,
+  "final_nonleaf_zero_effect_count": 184,
+  "authoritative_source_unit_count": 894,
+  "authoritative_effect_mechanism_count": 894,
+  "cross_generation_collision_registry": [
+    {
+      "historical": "0070",
+      "versioned": "v2-0338-component",
+      "relation": "SAME_EFFECT_LEAF",
+      "canonical": "0070"
+    },
+    {
+      "historical": "0014",
+      "versioned": "v2-0366-component",
+      "relation": "DUPLICATE_RESTATEMENT",
+      "canonical": "0014"
+    },
+    {
+      "historical": "0014",
+      "versioned": "v2-0369-component",
+      "relation": "DUPLICATE_RESTATEMENT",
+      "canonical": "0014"
+    },
+    {
+      "historical": "0073",
+      "versioned": "R06-active-children",
+      "relation": "PARTIAL_PARENT_SUPERSEDED_NONLEAF",
+      "canonical": "R06-active-children"
+    },
+    {
+      "historical": "0086",
+      "versioned": "v2-0408>v2-0866,v2-0867",
+      "relation": "TRUNCATED_PARENT_SUPERSEDED",
+      "canonical": "v2-0866,v2-0867"
+    },
+    {
+      "historical": "0149",
+      "versioned": "v2-0213",
+      "relation": "DUPLICATE_RESTATEMENT",
+      "canonical": "0149"
+    },
+    {
+      "historical": "0150",
+      "versioned": "v2-0842",
+      "relation": "DUPLICATE_RESTATEMENT",
+      "canonical": "0150"
+    },
+    {
+      "historical": "0151",
+      "versioned": "v2-0835",
+      "relation": "RESTATEMENT_GOAL_PARENT_TO_CONCRETE_DESIGN",
+      "canonical": "v2-0835"
+    },
+    {
+      "historical": "0163",
+      "versioned": "v2-0179>v2-0844,v2-0845,v2-0846",
+      "relation": "TRUNCATED_PARENT_SUPERSEDED",
+      "canonical": "v2-0844,v2-0845,v2-0846"
+    },
+    {
+      "historical": "0165",
+      "versioned": "v2-0186",
+      "relation": "TRUNCATED_PARENT_RESTORED",
+      "canonical": "v2-0186"
+    }
+  ],
+  "gates": {
+    "explicit_final_roles": true,
+    "parent_child_same_restatement_duplicate_supersedes_reconciled": true,
+    "acyclic_graph": true,
+    "semantic_collision_unresolved": 0,
+    "source_restore_gaps": 0,
+    "overmerge_gaps": 0,
+    "truncation_gaps": 0,
+    "duplicate_gaps": 0,
+    "active_leaf_terminal_fach_reused": true,
+    "applicable_241_layer_setcheck": true,
+    "new_fach_judgements": 0
+  }
+}
