@@ -1,14 +1,17 @@
 #!/usr/bin/env python3
 """Hard structural validation for the CDU final explicit-role union.
 
-No Fach semantics are created here.  The validator only checks that the global
+No Fach semantics are created here. The validator only checks that the global
 manifest produced from already source-bound #234 decisions is a complete,
-non-overlapping, acyclic and internally consistent representation.  If an
+non-overlapping, acyclic and internally consistent representation. If an
 additional structural blocker is found, any premature denominator freeze is
-revoked fail-closed.
+revoked fail-closed. A deterministic SHA-256 seal is emitted only after every
+freeze gate passes; it hashes the canonical role/edge/count state rather than
+volatile generation metadata.
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import pathlib
 import re
@@ -81,7 +84,6 @@ def normalize_ref(value, ids, hist_index):
     if re.fullmatch(r"\d{1,4}", text):
         sid = hist_index.get(int(text))
         return [sid] if sid else []
-    # semantic-role strings often contain the historical target number.
     m = re.search(r"(?:OF|TO|PARENT|LEGACY)[_:\- ]*(\d{4})\b", text.upper())
     if m:
         sid = hist_index.get(int(m.group(1)))
@@ -180,7 +182,6 @@ def cycle_check(edges, node_ids):
     for node in sorted(node_ids):
         if state.get(node, 0) == 0:
             dfs(node)
-    # deterministic unique cycles by string representation
     uniq = []
     seen = set()
     for cyc in cycles:
@@ -189,6 +190,29 @@ def cycle_check(edges, node_ids):
             seen.add(key)
             uniq.append(cyc)
     return uniq
+
+
+def frozen_union_sha256(final):
+    """Hash only the canonical frozen role/edge/count state, never timestamps."""
+    payload = {
+        "programme_key": final.get("programme_key"),
+        "primary_source_url": final.get("primary_source_url"),
+        "primary_source_parity": final.get("primary_source_parity"),
+        "canonical_partition": final.get("canonical_partition"),
+        "explicit_role_union": final.get("explicit_role_union"),
+        "resolved_typed_edges": (final.get("edges") or {}).get("resolved_typed_edges"),
+        "authoritative_source_unit_count": final.get("authoritative_source_unit_count"),
+        "authoritative_effect_mechanism_count": final.get("authoritative_effect_mechanism_count"),
+        "source_count_rule": final.get("source_count_rule"),
+        "effect_count_rule": final.get("effect_count_rule"),
+    }
+    canonical = json.dumps(
+        payload,
+        ensure_ascii=False,
+        sort_keys=True,
+        separators=(",", ":"),
+    ).encode("utf-8")
+    return hashlib.sha256(canonical).hexdigest()
 
 
 def main():
@@ -206,7 +230,6 @@ def main():
     blockers = list(audit.get("blockers") or [])
     structural = []
 
-    # Core role/count invariants.
     source_ids = [r["source_unit_id"] for r in union if r.get("source_role") == "COUNTABLE_CANONICAL_SOURCE"]
     effect_ids = [r["source_unit_id"] for r in union if r.get("effect_role") == "COUNTABLE_EFFECT_LEAF"]
     if len(source_ids) != len(set(source_ids)):
@@ -230,7 +253,6 @@ def main():
         if srole == "PROVENANCE_PARENT_ONLY" and erole == "COUNTABLE_EFFECT_LEAF":
             structural.append(f"PROVENANCE_PARENT_EFFECT_COUNTED:{sid}")
 
-    # Start from parent/child edges already resolved by the builder.
     edges = []
     for e in (final.get("edges") or {}).get("parent_child", []):
         edges.append({"relation": "PARENT_CHILD", "from": e.get("parent"), "to": e.get("child"), "source": "builder"})
@@ -242,7 +264,6 @@ def main():
     unresolved.extend(sem_unresolved)
     edges = dedupe_edges([e for e in edges if e.get("from") and e.get("to")])
 
-    # Explicit refs must resolve to union nodes. External legal/source refs are never fed here.
     dangling = [e for e in edges if e["from"] not in ids or e["to"] not in ids]
     for e in dangling:
         structural.append(f"DANGLING_RELATION:{e['relation']}:{e['from']}->{e['to']}")
@@ -254,7 +275,6 @@ def main():
     if cycles:
         structural.append(f"RELATION_GRAPH_CYCLES:{len(cycles)}")
 
-    # A node may not have competing parent assignments in the final hierarchy.
     parents = defaultdict(set)
     for e in internal_edges:
         if e["relation"] == "PARENT_CHILD":
@@ -283,12 +303,14 @@ def main():
         final["denominator_status"] = "FROZEN_EXPLICIT_ROLE_UNION"
         final["st_cdu_final_versioned_manifest"] = "PASS_GLOBAL_LEAF_RECONCILIATION"
         final["st_cdu_terminal_complete"] = True
+        final["frozen_exact_union_sha256"] = frozen_union_sha256(final)
     else:
         final["authoritative_source_unit_count"] = None
         final["authoritative_effect_mechanism_count"] = None
         final["denominator_status"] = "NOT_FROZEN_GLOBAL_RECONCILIATION_BLOCKED"
         final["st_cdu_final_versioned_manifest"] = "PENDING_GLOBAL_LEAF_RECONCILIATION"
         final["st_cdu_terminal_complete"] = False
+        final.pop("frozen_exact_union_sha256", None)
 
     audit["structural_validation"] = {
         "explicit_union_nodes": len(ids),
@@ -309,6 +331,10 @@ def main():
     audit["freeze_gate"] = "PASS" if freeze else "BLOCKED"
     audit["authoritative_source_unit_count"] = final["authoritative_source_unit_count"]
     audit["authoritative_effect_mechanism_count"] = final["authoritative_effect_mechanism_count"]
+    if freeze:
+        audit["frozen_exact_union_sha256"] = final["frozen_exact_union_sha256"]
+    else:
+        audit.pop("frozen_exact_union_sha256", None)
 
     write(FINAL, final)
     write(AUDIT, audit)
@@ -316,6 +342,7 @@ def main():
         "freeze_gate": audit["freeze_gate"],
         "authoritative_source_unit_count": audit["authoritative_source_unit_count"],
         "authoritative_effect_mechanism_count": audit["authoritative_effect_mechanism_count"],
+        "frozen_exact_union_sha256": audit.get("frozen_exact_union_sha256"),
         "structural_blockers": structural,
         "builder_blockers": blockers,
         "resolved_edge_counts": audit["structural_validation"]["edge_counts"],
