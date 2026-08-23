@@ -24,6 +24,7 @@ const supplementSources = [
   path.join(root, "content/glossary/imports/iooi-wirkungsarchitektur.json"),
   path.join(root, "content/glossary/imports/staatliche-nachhaltigkeitsarchitektur.json"),
   path.join(root, "content/glossary/imports/nwi-disambiguation.json"),
+  path.join(root, "content/glossary/imports/klimaanpassungsmanagement.json"),
   path.join(root, "content/glossary/imports/phineo-wirkungslogik.json"),
   path.join(root, "content/glossary/imports/wirkungssteuer-wstg-v3.json"),
   path.join(root, "content/glossary/imports/gesamtstudie-wirkungsdilemmata-kooperation-sdgplus-term-definitions.json"),
