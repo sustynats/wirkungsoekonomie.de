@@ -1,0 +1,82 @@
+{
+  "schema_version": "woek-st-gruene-convergence-component-1.0",
+  "manifest_id": "ST-GRUENE-CONVERGENCE-C10",
+  "source": {
+    "issue": 234,
+    "comments": [
+      {"id": 5377529254, "marker": "ST-GRUENE-PSP-R14", "updated_at": "2026-08-22T03:06:21Z", "body_sha256": "6c7f7db6e858895f4897b8deeb38acd2fd562720a5806ae795c352d585e419e7"},
+      {"id": 5373696133, "marker": "ST-GRUENE-A05", "updated_at": "2026-08-21T18:24:54Z", "body_sha256": "bc4b87456bf71a9a5c3c4ba0491b77176c1f109c4e53915204a0540af2b457a6"}
+    ],
+    "required_facts": {
+      "ST-GRUENE-PSP-R14": [
+        "historical working window: `0258–0270`; `0271` belongs to 2.4 and is excluded",
+        "`0262` Disziplinarverfahren + Waffenverbot | `OVERMERGED`",
+        "historical overmerged parent = provenance/non-counting after the already versioned split",
+        "`DUPLICATE_ACTIVE_EFFECT = 0`"
+      ]
+    },
+    "convergence_predecessor": "ST-GRUENE-CONVERGENCE-C09"
+  },
+  "scope": {
+    "working_register": "woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-gruene-zusagen.md",
+    "working_register_source_hash": "73130003d247bad51e27bb63bc140bf1aa815ebe51bf77bcdf9c348da5f4a48d",
+    "history_only": true
+  },
+  "windows": [
+    {
+      "source_marker": "ST-GRUENE-PSP-R14",
+      "historical_first": "0258",
+      "historical_last": "0270",
+      "historical_roles": {
+        "active_effect_leaf": ["0258", "0260", "0261", "0264", "0265", "0267", "0268", "0269", "0270"],
+        "context_design_non_effect_source_leaf": ["0259", "0263", "0266"],
+        "parent_provenance_nonleaf": ["0262"],
+        "duplicate_restatement_nonleaf": []
+      },
+      "versioned_roles": {
+        "active_effect_leaf": [
+          "ltw-2026-st-gruene-v2-0258-child-afd-verbotsantrag-bundesrat",
+          "ltw-2026-st-gruene-v2-after-0258-sicherheitsbehoerden-netzwerke-zerschlagen",
+          "ltw-2026-st-gruene-v2-0262-disciplinary-vs-waffenverbot-split",
+          "ltw-2026-st-gruene-v2-0262-child-waffenbehoerden-kontrollen-erlaubnisentzug"
+        ],
+        "context_design_non_effect_source_leaf": [],
+        "parent_provenance_nonleaf": [],
+        "duplicate_restatement_nonleaf": []
+      },
+      "lineage_edges": {
+        "0258": [
+          "ltw-2026-st-gruene-v2-0258-child-afd-verbotsantrag-bundesrat",
+          "ltw-2026-st-gruene-v2-after-0258-sicherheitsbehoerden-netzwerke-zerschlagen"
+        ],
+        "0262": [
+          "ltw-2026-st-gruene-v2-0262-disciplinary-vs-waffenverbot-split",
+          "ltw-2026-st-gruene-v2-0262-child-waffenbehoerden-kontrollen-erlaubnisentzug"
+        ]
+      },
+      "restored_in_place_historical": ["0265"],
+      "semantic_relations": [],
+      "counts": {
+        "historical_active_effect_leaves": 9,
+        "versioned_active_effect_leaves": 4,
+        "non_effect_source_leaves": 3,
+        "parent_provenance_nonleaves": 1,
+        "duplicate_restatement_nonleaves": 0,
+        "authoritative_source_leaves": 16,
+        "authoritative_effect_leaves": 13
+      }
+    }
+  ],
+  "counts": {
+    "authoritative_source_leaves": 16,
+    "authoritative_effect_leaves": 13
+  },
+  "constraints": {
+    "new_stable_ids": 0,
+    "current_740_mutation": "NONE",
+    "fach_synthesis": "FORBIDDEN",
+    "dns_mapping": "NOT_MAPPED_HERE",
+    "recommendation": "NOT_AVAILABLE_AT_SOURCE_UNIT_LEVEL",
+    "global_count_freeze": "LOCKED_PENDING_R15_PLUS_AND_UNION_GATE"
+  }
+}
