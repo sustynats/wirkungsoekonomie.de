@@ -1,0 +1,353 @@
+{
+  "schema_version": "woek-st-gruene-convergence-component-1.0",
+  "manifest_id": "ST-GRUENE-CONVERGENCE-C15",
+  "source": {
+    "issue": 234,
+    "comments": [
+      {
+        "id": 5378396803,
+        "marker": "WÖk GRÜNE RETRO-PARITY — R30",
+        "updated_at": "2026-08-22T06:15:51Z",
+        "body_sha256": "b4c71c6fd3fec487298b0be6d16677411edc9bdc4bc115cd1c98523caebb1560"
+      },
+      {
+        "id": 5378400992,
+        "marker": "WÖk GRÜNE RETRO-PARITY — R31",
+        "updated_at": "2026-08-22T06:16:49Z",
+        "body_sha256": "757b8fab4e9bcb51b824af54f61667c3ab93466435b7422c68ce578459982268"
+      },
+      {
+        "id": 5378404092,
+        "marker": "WÖk GRÜNE RETRO-PARITY — R32",
+        "updated_at": "2026-08-22T06:17:38Z",
+        "body_sha256": "400277c6102aa4069a5fb3df67ee50ae4f827e8aab054ef80226b8ec3055e370"
+      },
+      {
+        "id": 5378412277,
+        "marker": "WÖk GRÜNE RETRO-PARITY — R33",
+        "updated_at": "2026-08-22T06:19:47Z",
+        "body_sha256": "1a211d9e59cf4f0835ab9b0b5340c083779487893c946c601326b96045ae64e0"
+      },
+      {
+        "id": 5374271663,
+        "marker": "ST-GRUENE-A09.2",
+        "updated_at": "2026-08-21T19:22:54Z",
+        "body_sha256": "348db8063eb71d52b1dab50c57daa422fc826f9925e91fd589f6b41314909ef6"
+      },
+      {
+        "id": 5374437247,
+        "marker": "ST-GRUENE-A10.2",
+        "updated_at": "2026-08-21T19:38:19Z",
+        "body_sha256": "f4601a4b6b894e940d1e9951df8140d39a87027fc162472519af9fbdc76ee93e"
+      }
+    ],
+    "required_facts": {
+      "WÖk GRÜNE RETRO-PARITY — R30": [
+        "Historische Working-IDs **`0538–0550` = 13/13**",
+        "**lokale aktive Leaf-Union: `12`**"
+      ],
+      "WÖk GRÜNE RETRO-PARITY — R31": [
+        "Historische Working-IDs **`0551–0560` = 10/10**",
+        "**lokale aktive Leaf-Union: `13`**"
+      ],
+      "WÖk GRÜNE RETRO-PARITY — R32": [
+        "Historische Working-IDs **`0561–0583` = 23/23**",
+        "**lokale aktive Leaf-Union: `27`**"
+      ],
+      "WÖk GRÜNE RETRO-PARITY — R33": [
+        "Historische Working-IDs **`0584–0600` = 17/17**",
+        "**lokale aktive Leaf-Union: `25`**"
+      ]
+    },
+    "convergence_predecessor": "ST-GRUENE-CONVERGENCE-C14"
+  },
+  "scope": {
+    "working_register": "woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-gruene-zusagen.md",
+    "working_register_source_hash": "73130003d247bad51e27bb63bc140bf1aa815ebe51bf77bcdf9c348da5f4a48d",
+    "history_only": true
+  },
+  "windows": [
+    {
+      "source_marker": "WÖk GRÜNE RETRO-PARITY — R30",
+      "historical_first": "0538",
+      "historical_last": "0550",
+      "historical_roles": {
+        "active_effect_leaf": [
+          "0540",
+          "0541",
+          "0542",
+          "0544",
+          "0546",
+          "0549",
+          "0550"
+        ],
+        "context_design_non_effect_source_leaf": [
+          "0538",
+          "0545",
+          "0547"
+        ],
+        "parent_provenance_nonleaf": [
+          "0539",
+          "0543",
+          "0548"
+        ],
+        "duplicate_restatement_nonleaf": []
+      },
+      "versioned_roles": {
+        "active_effect_leaf": [
+          "ltw-2026-st-gruene-ps-a09-0050-ehrenamt-anrechnungsregeln-pruefen",
+          "ltw-2026-st-gruene-ps-a09-0051-ehrenamt-buerokratieabbau",
+          "ltw-2026-st-gruene-ps-a09-0052-ehrenamt-kinderbetreuung",
+          "ltw-2026-st-gruene-src-p73-lpb-landesgesetz-landtagsanbindung",
+          "ltw-2026-st-gruene-src-p74-migrantische-selbstorganisationen-professionalisieren"
+        ],
+        "context_design_non_effect_source_leaf": [],
+        "parent_provenance_nonleaf": [],
+        "duplicate_restatement_nonleaf": []
+      },
+      "lineage_edges": {
+        "0539": [
+          "ltw-2026-st-gruene-ps-a09-0050-ehrenamt-anrechnungsregeln-pruefen",
+          "ltw-2026-st-gruene-ps-a09-0051-ehrenamt-buerokratieabbau",
+          "ltw-2026-st-gruene-ps-a09-0052-ehrenamt-kinderbetreuung"
+        ],
+        "0543": [
+          "ltw-2026-st-gruene-src-p73-lpb-landesgesetz-landtagsanbindung"
+        ],
+        "0548": [
+          "ltw-2026-st-gruene-src-p74-migrantische-selbstorganisationen-professionalisieren"
+        ]
+      },
+      "restored_in_place_historical": [],
+      "semantic_relations": [],
+      "counts": {
+        "historical_active_effect_leaves": 7,
+        "versioned_active_effect_leaves": 5,
+        "non_effect_source_leaves": 3,
+        "parent_provenance_nonleaves": 3,
+        "duplicate_restatement_nonleaves": 0,
+        "authoritative_source_leaves": 15,
+        "authoritative_effect_leaves": 12
+      }
+    },
+    {
+      "source_marker": "WÖk GRÜNE RETRO-PARITY — R31",
+      "historical_first": "0551",
+      "historical_last": "0560",
+      "historical_roles": {
+        "active_effect_leaf": [
+          "0554",
+          "0555",
+          "0556",
+          "0557",
+          "0558",
+          "0559",
+          "0560"
+        ],
+        "context_design_non_effect_source_leaf": [
+          "0551",
+          "0552",
+          "0553"
+        ],
+        "parent_provenance_nonleaf": [],
+        "duplicate_restatement_nonleaf": []
+      },
+      "versioned_roles": {
+        "active_effect_leaf": [
+          "ltw-2026-st-gruene-src-p75-tvergg-weiter-staerken",
+          "ltw-2026-st-gruene-src-p75-oeffentliche-auftraege-faire-loehne",
+          "ltw-2026-st-gruene-src-p75-flexible-arbeitszeitmodelle-vereinbarkeit",
+          "ltw-2026-st-gruene-src-p75-alleinerziehende-erwerbsunterbrechung-betreuung-beratung-wiedereinstieg",
+          "ltw-2026-st-gruene-src-p76-soziale-berufe-bessere-personalschluessel",
+          "ltw-2026-st-gruene-src-p76-soziale-berufe-tariflohn-refinanzierung"
+        ],
+        "context_design_non_effect_source_leaf": [],
+        "parent_provenance_nonleaf": [],
+        "duplicate_restatement_nonleaf": []
+      },
+      "lineage_edges": {},
+      "restored_in_place_historical": [],
+      "semantic_relations": [],
+      "counts": {
+        "historical_active_effect_leaves": 7,
+        "versioned_active_effect_leaves": 6,
+        "non_effect_source_leaves": 3,
+        "parent_provenance_nonleaves": 0,
+        "duplicate_restatement_nonleaves": 0,
+        "authoritative_source_leaves": 16,
+        "authoritative_effect_leaves": 13
+      }
+    },
+    {
+      "source_marker": "WÖk GRÜNE RETRO-PARITY — R32",
+      "historical_first": "0561",
+      "historical_last": "0583",
+      "historical_roles": {
+        "active_effect_leaf": [
+          "0564",
+          "0565",
+          "0566",
+          "0567",
+          "0568",
+          "0570",
+          "0571",
+          "0573",
+          "0574",
+          "0575",
+          "0576",
+          "0579",
+          "0580",
+          "0581",
+          "0582"
+        ],
+        "context_design_non_effect_source_leaf": [
+          "0562",
+          "0563",
+          "0572",
+          "0577"
+        ],
+        "parent_provenance_nonleaf": [
+          "0561",
+          "0569",
+          "0578",
+          "0583"
+        ],
+        "duplicate_restatement_nonleaf": []
+      },
+      "versioned_roles": {
+        "active_effect_leaf": [
+          "ltw-2026-st-gruene-src-p76-77-gemeinschaftsunterkunft-qualitaet-schutz-sozialarbeit",
+          "ltw-2026-st-gruene-src-p77-auslaenderbehoerden-integrationsorientierung",
+          "ltw-2026-st-gruene-src-p77-ausbildungsduldungen-vollzug",
+          "ltw-2026-st-gruene-src-p77-sprachunterricht-teilnahmepflicht-durchsetzung",
+          "ltw-2026-st-gruene-src-p77-spurwechsel-aktiv-nutzen-foerdern",
+          "ltw-2026-st-gruene-src-p78-gesundheitskarte-gefluechtete",
+          "ltw-2026-st-gruene-src-p78-psychologische-ersthilfe",
+          "ltw-2026-st-gruene-src-p78-kinder-jugend-trauma-spezifische-angebote",
+          "ltw-2026-st-gruene-src-p78-kita-bildung-sozialraum-zugang-beschleunigen",
+          "ltw-2026-st-gruene-src-p78-integrationslotsen-mentoren-landesprogramm",
+          "ltw-2026-st-gruene-src-p78-selbstvertretung-migrationsgeschichte-landespolitik",
+          "ltw-2026-st-gruene-src-p78-sozialleistungen-einheitlich-geldleistungen"
+        ],
+        "context_design_non_effect_source_leaf": [],
+        "parent_provenance_nonleaf": [],
+        "duplicate_restatement_nonleaf": []
+      },
+      "lineage_edges": {
+        "0569": [
+          "ltw-2026-st-gruene-src-p77-auslaenderbehoerden-integrationsorientierung",
+          "ltw-2026-st-gruene-src-p77-ausbildungsduldungen-vollzug"
+        ],
+        "0578": [
+          "ltw-2026-st-gruene-src-p78-gesundheitskarte-gefluechtete",
+          "ltw-2026-st-gruene-src-p78-psychologische-ersthilfe",
+          "ltw-2026-st-gruene-src-p78-kinder-jugend-trauma-spezifische-angebote"
+        ],
+        "0583": [
+          "ltw-2026-st-gruene-src-p78-selbstvertretung-migrationsgeschichte-landespolitik"
+        ],
+        "0581": [
+          "ltw-2026-st-gruene-src-p78-sozialleistungen-einheitlich-geldleistungen"
+        ]
+      },
+      "restored_in_place_historical": [],
+      "semantic_relations": [],
+      "counts": {
+        "historical_active_effect_leaves": 15,
+        "versioned_active_effect_leaves": 12,
+        "non_effect_source_leaves": 4,
+        "parent_provenance_nonleaves": 4,
+        "duplicate_restatement_nonleaves": 0,
+        "authoritative_source_leaves": 31,
+        "authoritative_effect_leaves": 27
+      }
+    },
+    {
+      "source_marker": "WÖk GRÜNE RETRO-PARITY — R33",
+      "historical_first": "0584",
+      "historical_last": "0600",
+      "historical_roles": {
+        "active_effect_leaf": [
+          "0585",
+          "0587",
+          "0588",
+          "0589",
+          "0590",
+          "0592",
+          "0593",
+          "0594",
+          "0595",
+          "0596",
+          "0597",
+          "0600"
+        ],
+        "context_design_non_effect_source_leaf": [
+          "0584",
+          "0598"
+        ],
+        "parent_provenance_nonleaf": [
+          "0586",
+          "0591",
+          "0599"
+        ],
+        "duplicate_restatement_nonleaf": []
+      },
+      "versioned_roles": {
+        "active_effect_leaf": [
+          "ltw-2026-st-gruene-src-p79-krankenhaus-sicherstellungszuschlaege-land",
+          "ltw-2026-st-gruene-src-p79-krankenhaus-rekommunalisierung",
+          "ltw-2026-st-gruene-src-p79-geburtshilfe-kinderheilkunde-sichern-ausbauen",
+          "ltw-2026-st-gruene-src-p79-gesundheitszentren-multiprofessionelle-zusammenarbeit",
+          "ltw-2026-st-gruene-src-p79-leitzentrale-112-116117",
+          "ltw-2026-st-gruene-src-p79-80-akademisierung-gesundheits-pflegeberufe",
+          "ltw-2026-st-gruene-src-p80-delegation-substitution-aerztlicher-leistungen",
+          "ltw-2026-st-gruene-src-p80-mutterschutz-selbststaendige-aerztinnen",
+          "ltw-2026-st-gruene-src-p80-gesundheitskiosk",
+          "ltw-2026-st-gruene-src-p80-kommunale-gesundheitskonferenzen",
+          "ltw-2026-st-gruene-src-p80-gesundheitskonferenzen-gesetzlich-normieren",
+          "ltw-2026-st-gruene-src-p81-geschlechtersensible-forschung-ausbildung-klinikalltag",
+          "ltw-2026-st-gruene-src-p81-professur-geschlechtersensible-medizin-dauerhaft-sichern"
+        ],
+        "context_design_non_effect_source_leaf": [],
+        "parent_provenance_nonleaf": [],
+        "duplicate_restatement_nonleaf": []
+      },
+      "lineage_edges": {
+        "0586": [
+          "ltw-2026-st-gruene-src-p79-krankenhaus-sicherstellungszuschlaege-land",
+          "ltw-2026-st-gruene-src-p79-krankenhaus-rekommunalisierung"
+        ],
+        "0591": [
+          "ltw-2026-st-gruene-src-p79-leitzentrale-112-116117"
+        ],
+        "0599": [
+          "ltw-2026-st-gruene-src-p80-mutterschutz-selbststaendige-aerztinnen",
+          "ltw-2026-st-gruene-src-p80-gesundheitskiosk"
+        ]
+      },
+      "restored_in_place_historical": [],
+      "semantic_relations": [],
+      "counts": {
+        "historical_active_effect_leaves": 12,
+        "versioned_active_effect_leaves": 13,
+        "non_effect_source_leaves": 2,
+        "parent_provenance_nonleaves": 3,
+        "duplicate_restatement_nonleaves": 0,
+        "authoritative_source_leaves": 27,
+        "authoritative_effect_leaves": 25
+      }
+    }
+  ],
+  "counts": {
+    "authoritative_source_leaves": 89,
+    "authoritative_effect_leaves": 77
+  },
+  "constraints": {
+    "new_stable_ids": 0,
+    "current_740_mutation": "NONE",
+    "fach_synthesis": "FORBIDDEN",
+    "dns_mapping": "NOT_MAPPED_HERE",
+    "recommendation": "NOT_AVAILABLE_AT_SOURCE_UNIT_LEVEL",
+    "global_count_freeze": "LOCKED_PENDING_R34_AND_UNION_GATE"
+  }
+}

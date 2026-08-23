@@ -1,0 +1,308 @@
+{
+  "schema_version": "woek-st-gruene-convergence-component-1.0",
+  "manifest_id": "ST-GRUENE-CONVERGENCE-C13",
+  "source": {
+    "issue": 234,
+    "comments": [
+      {
+        "id": 5378133157,
+        "marker": "WÖk GRÜNE RETRO-PARITY — R25",
+        "updated_at": "2026-08-22T05:12:58Z",
+        "body_sha256": "94548d73ded309b3ca500b97c36d51bbb21b9ab2368822751f910be64d1a62f8"
+      },
+      {
+        "id": 5374157612,
+        "marker": "ST-GRUENE-A07.2",
+        "updated_at": "2026-08-21T19:10:45Z",
+        "body_sha256": "1ef75890c34411f4e3226a565cc4e230d154ee6e904c1fcfd96521ac81c2e99c"
+      },
+      {
+        "id": 5374230266,
+        "marker": "ST-GRUENE-A08.2",
+        "updated_at": "2026-08-21T19:18:37Z",
+        "body_sha256": "6d26ba432bab5d5e4c840a78b31c6d4911ad90a97c46ec57db287f744eaccc12"
+      }
+    ],
+    "required_facts": {
+      "WÖk GRÜNE RETRO-PARITY — R25": [
+        "historische Working-IDs: **`0391–0448` = 58/58**",
+        "Damit ist die Working-ID-Partition exakt: **38 retained active historical leaves + 20 zero-count historical nonleaves = 58/58**.",
+        "**64 bereits vorhandene versionierte aktive Source-Leaves**",
+        "**Lokaler Beitrag zum finalen aktiven Manifest:** `38 historical retained + 64 versioned = 102` aktive Leaves."
+      ]
+    },
+    "convergence_predecessor": "ST-GRUENE-CONVERGENCE-C12"
+  },
+  "scope": {
+    "working_register": "woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-gruene-zusagen.md",
+    "working_register_source_hash": "73130003d247bad51e27bb63bc140bf1aa815ebe51bf77bcdf9c348da5f4a48d",
+    "history_only": true
+  },
+  "windows": [
+    {
+      "source_marker": "WÖk GRÜNE RETRO-PARITY — R25",
+      "historical_first": "0391",
+      "historical_last": "0448",
+      "historical_roles": {
+        "active_effect_leaf": [
+          "0392",
+          "0393",
+          "0394",
+          "0396",
+          "0397",
+          "0398",
+          "0399",
+          "0400",
+          "0401",
+          "0402",
+          "0403",
+          "0404",
+          "0406",
+          "0407",
+          "0409",
+          "0411",
+          "0414",
+          "0415",
+          "0418",
+          "0419",
+          "0420",
+          "0421",
+          "0422",
+          "0425",
+          "0426",
+          "0427",
+          "0431",
+          "0434",
+          "0435",
+          "0436",
+          "0437",
+          "0440",
+          "0441",
+          "0442",
+          "0443",
+          "0444",
+          "0445",
+          "0446"
+        ],
+        "context_design_non_effect_source_leaf": [
+          "0391",
+          "0412",
+          "0416",
+          "0424",
+          "0439"
+        ],
+        "parent_provenance_nonleaf": [
+          "0395",
+          "0405",
+          "0408",
+          "0410",
+          "0413",
+          "0417",
+          "0423",
+          "0428",
+          "0429",
+          "0430",
+          "0432",
+          "0433",
+          "0438",
+          "0447",
+          "0448"
+        ],
+        "duplicate_restatement_nonleaf": []
+      },
+      "versioned_roles": {
+        "active_effect_leaf": [
+          "ltw-2026-st-gruene-ps-a07-0047-dorfgrundschule-dritter-ort",
+          "ltw-2026-st-gruene-ps-a07-0048-keine-entlassung-paedagogisches-personal",
+          "ltw-2026-st-gruene-ps-a07-0049-kostenfreies-gesundes-mittagessen-schule",
+          "ltw-2026-st-gruene-ps-a07-0050-kostenfreie-menstruationsprodukte-schule",
+          "ltw-2026-st-gruene-ps-a07-0051-foerderschullehrkraefte-regelschule-inklusion",
+          "ltw-2026-st-gruene-ps-a07-0052-schulbegleitung-hort-analog",
+          "ltw-2026-st-gruene-ps-a07-0053-gemeinsame-grundschule-bis-klasse-6",
+          "ltw-2026-st-gruene-ps-a07-0054-gemeinsames-lernen-klasse-1-bis-10",
+          "ltw-2026-st-gruene-ps-a07-0055-gemeinschaftsschulen-umwandlung-neugruendung",
+          "ltw-2026-st-gruene-ps-a07-0056-gemeinschaftsschule-gymnasiale-oberstufe",
+          "ltw-2026-st-gruene-ps-a07-0057-g9-abitur-13-schuljahre",
+          "ltw-2026-st-gruene-ps-a07-0058-keine-noten-neigungs-talentfaecher",
+          "ltw-2026-st-gruene-ps-a07-0059-ergaenzende-differenzierte-leistungsrueckmeldung",
+          "ltw-2026-st-gruene-ps-a07-0060-sitzenbleiben-freiwillig-individuell",
+          "ltw-2026-st-gruene-ps-a07-0061-lehrkraefte-arbeitszeitkonto",
+          "ltw-2026-st-gruene-ps-a07-0062-multiprofessionelle-schulteams",
+          "ltw-2026-st-gruene-ps-a07-0063-seiteneinstieg-berufsbegleitende-qualifizierung",
+          "ltw-2026-st-gruene-ps-a07-0064-seiteneinstieg-ein-fach-lehrkraefte",
+          "ltw-2026-st-gruene-ps-a07-0065-seiteneinstieg-entgeltangleichung",
+          "ltw-2026-st-gruene-ps-a07-0066-flexible-unterrichtsmodelle-schulautonomie",
+          "ltw-2026-st-gruene-ps-a07-0067-eigenverwaltetes-schulbudget",
+          "ltw-2026-st-gruene-ps-a08-0001-internationale-einfach-lehramtsabschluesse",
+          "ltw-2026-st-gruene-ps-a08-0002-lehramtsangebot-mlu-ovgu-ausbauen",
+          "ltw-2026-st-gruene-ps-a08-0003-referendariat-hoehere-bezahlung",
+          "ltw-2026-st-gruene-ps-a08-0004-referendariat-intensivere-betreuung",
+          "ltw-2026-st-gruene-ps-a08-0005-schulklo-offensive",
+          "ltw-2026-st-gruene-ps-a08-0006-inklusion-mehr-finanzmittel-regelschule",
+          "ltw-2026-st-gruene-ps-a08-0007-schulsekretariate-flaechendeckend",
+          "ltw-2026-st-gruene-ps-a08-0008-mobile-jugendarbeit-staerken",
+          "ltw-2026-st-gruene-ps-a08-0009-schulsozialarbeit-massiv-staerken",
+          "ltw-2026-st-gruene-ps-a08-0010-schulsozialarbeiter-je-schule",
+          "ltw-2026-st-gruene-ps-a08-0011-schulpsychologen-pools",
+          "ltw-2026-st-gruene-ps-a08-0012-personal-kooperation-schule-jugendhilfe",
+          "ltw-2026-st-gruene-ps-a08-0013-schulsuspendierungsregeln-entschaerfen",
+          "ltw-2026-st-gruene-ps-a08-0014-nothilfefonds-kommunale-schulsozialarbeit",
+          "ltw-2026-st-gruene-ps-a08-0015-antimobbing-schulgesetz",
+          "ltw-2026-st-gruene-ps-a08-0016-antimobbing-aus-und-fortbildung-curricula",
+          "ltw-2026-st-gruene-ps-a08-0017-antimobbing-sozialkundeunterricht",
+          "ltw-2026-st-gruene-ps-a08-0018-antimobbing-aktionswochen-tage",
+          "ltw-2026-st-gruene-ps-a08-0019-antimobbing-kontinuierliche-konzeptarbeit",
+          "ltw-2026-st-gruene-ps-a08-0020-jaehrlicher-antimobbing-tag",
+          "ltw-2026-st-gruene-ps-a08-0021-schnelles-internet-wlan-schulen",
+          "ltw-2026-st-gruene-ps-a08-0022-digitale-tafeln",
+          "ltw-2026-st-gruene-ps-a08-0023-ausreichend-digitale-endgeraete",
+          "ltw-2026-st-gruene-ps-a08-0024-paedagogische-digitalmedien-konzepte",
+          "ltw-2026-st-gruene-ps-a08-0025-lehrkraefte-digitalfortbildung",
+          "ltw-2026-st-gruene-ps-a08-0026-landesinstitut-digitalassistenz-verstetigen",
+          "ltw-2026-st-gruene-ps-a08-0027-digitale-anwendungen-unterricht-ergaenzen",
+          "ltw-2026-st-gruene-ps-a08-0028-digitales-lernen-gleichwertig-anbieten",
+          "ltw-2026-st-gruene-ps-a08-0029-daz-bedarfsgesteuerte-quote",
+          "ltw-2026-st-gruene-ps-a08-0030-mehrsprachige-beratung-information-schule",
+          "ltw-2026-st-gruene-ps-a08-0031-antidiskriminierungs-beratung-schulen",
+          "ltw-2026-st-gruene-ps-a08-0032-antidiskriminierungs-praeventionsprogramme",
+          "ltw-2026-st-gruene-ps-a08-0033-schule-ohne-rassismus-netzwerk-unterstuetzen",
+          "ltw-2026-st-gruene-ps-a08-0034-landesweite-unabhaengige-ombudsstelle-schule",
+          "ltw-2026-st-gruene-ps-a08-0035-demokratiebildung-faecheruebergreifend",
+          "ltw-2026-st-gruene-ps-a08-0036-schueler-gestalten-unterrichtsinhalte-mit",
+          "ltw-2026-st-gruene-ps-a08-0037-drittelparitaet-schulkonferenz",
+          "ltw-2026-st-gruene-ps-a08-0038-bne-faecheruebergreifend",
+          "ltw-2026-st-gruene-ps-a08-0039-bne-traeger-finanziell-staerken",
+          "ltw-2026-st-gruene-ps-a08-0040-kreas-dauerhaft-absichern",
+          "ltw-2026-st-gruene-ps-a08-0041-schulgaerten-gruene-klassenzimmer",
+          "ltw-2026-st-gruene-ps-a08-0042-schulkuechen",
+          "ltw-2026-st-gruene-ps-a08-0043-gesunde-ernaehrungsbildung"
+        ],
+        "context_design_non_effect_source_leaf": [],
+        "parent_provenance_nonleaf": [],
+        "duplicate_restatement_nonleaf": []
+      },
+      "lineage_edges": {
+        "0393": [
+          "ltw-2026-st-gruene-ps-a07-0047-dorfgrundschule-dritter-ort"
+        ],
+        "0395": [
+          "ltw-2026-st-gruene-ps-a07-0048-keine-entlassung-paedagogisches-personal"
+        ],
+        "0401": [
+          "ltw-2026-st-gruene-ps-a07-0051-foerderschullehrkraefte-regelschule-inklusion"
+        ],
+        "0402": [
+          "ltw-2026-st-gruene-ps-a07-0052-schulbegleitung-hort-analog"
+        ],
+        "0405": [
+          "ltw-2026-st-gruene-ps-a07-0053-gemeinsame-grundschule-bis-klasse-6",
+          "ltw-2026-st-gruene-ps-a07-0054-gemeinsames-lernen-klasse-1-bis-10"
+        ],
+        "0408": [
+          "ltw-2026-st-gruene-ps-a07-0055-gemeinschaftsschulen-umwandlung-neugruendung",
+          "ltw-2026-st-gruene-ps-a07-0056-gemeinschaftsschule-gymnasiale-oberstufe"
+        ],
+        "0410": [
+          "ltw-2026-st-gruene-ps-a07-0057-g9-abitur-13-schuljahre"
+        ],
+        "0411": [
+          "ltw-2026-st-gruene-ps-a07-0058-keine-noten-neigungs-talentfaecher",
+          "ltw-2026-st-gruene-ps-a07-0059-ergaenzende-differenzierte-leistungsrueckmeldung"
+        ],
+        "0413": [
+          "ltw-2026-st-gruene-ps-a07-0061-lehrkraefte-arbeitszeitkonto",
+          "ltw-2026-st-gruene-ps-a07-0062-multiprofessionelle-schulteams"
+        ],
+        "0417": [
+          "ltw-2026-st-gruene-ps-a07-0066-flexible-unterrichtsmodelle-schulautonomie",
+          "ltw-2026-st-gruene-ps-a07-0067-eigenverwaltetes-schulbudget"
+        ],
+        "0421": [
+          "ltw-2026-st-gruene-ps-a08-0001-internationale-einfach-lehramtsabschluesse"
+        ],
+        "0423": [
+          "ltw-2026-st-gruene-ps-a08-0003-referendariat-hoehere-bezahlung",
+          "ltw-2026-st-gruene-ps-a08-0004-referendariat-intensivere-betreuung"
+        ],
+        "0428": [
+          "ltw-2026-st-gruene-ps-a08-0006-inklusion-mehr-finanzmittel-regelschule",
+          "ltw-2026-st-gruene-ps-a08-0007-schulsekretariate-flaechendeckend"
+        ],
+        "0429": [
+          "ltw-2026-st-gruene-ps-a08-0008-mobile-jugendarbeit-staerken",
+          "ltw-2026-st-gruene-ps-a08-0009-schulsozialarbeit-massiv-staerken"
+        ],
+        "0430": [
+          "ltw-2026-st-gruene-ps-a08-0010-schulsozialarbeiter-je-schule",
+          "ltw-2026-st-gruene-ps-a08-0011-schulpsychologen-pools"
+        ],
+        "0432": [
+          "ltw-2026-st-gruene-ps-a08-0015-antimobbing-schulgesetz",
+          "ltw-2026-st-gruene-ps-a08-0016-antimobbing-aus-und-fortbildung-curricula",
+          "ltw-2026-st-gruene-ps-a08-0017-antimobbing-sozialkundeunterricht"
+        ],
+        "0433": [
+          "ltw-2026-st-gruene-ps-a08-0018-antimobbing-aktionswochen-tage",
+          "ltw-2026-st-gruene-ps-a08-0019-antimobbing-kontinuierliche-konzeptarbeit"
+        ],
+        "0435": [
+          "ltw-2026-st-gruene-ps-a08-0026-landesinstitut-digitalassistenz-verstetigen"
+        ],
+        "0437": [
+          "ltw-2026-st-gruene-ps-a08-0029-daz-bedarfsgesteuerte-quote"
+        ],
+        "0438": [
+          "ltw-2026-st-gruene-ps-a08-0030-mehrsprachige-beratung-information-schule"
+        ],
+        "0439": [
+          "ltw-2026-st-gruene-ps-a08-0031-antidiskriminierungs-beratung-schulen",
+          "ltw-2026-st-gruene-ps-a08-0032-antidiskriminierungs-praeventionsprogramme",
+          "ltw-2026-st-gruene-ps-a08-0033-schule-ohne-rassismus-netzwerk-unterstuetzen",
+          "ltw-2026-st-gruene-ps-a08-0034-landesweite-unabhaengige-ombudsstelle-schule"
+        ],
+        "0441": [
+          "ltw-2026-st-gruene-ps-a08-0035-demokratiebildung-faecheruebergreifend",
+          "ltw-2026-st-gruene-ps-a08-0036-schueler-gestalten-unterrichtsinhalte-mit"
+        ],
+        "0442": [
+          "ltw-2026-st-gruene-ps-a08-0037-drittelparitaet-schulkonferenz"
+        ],
+        "0445": [
+          "ltw-2026-st-gruene-ps-a08-0038-bne-faecheruebergreifend",
+          "ltw-2026-st-gruene-ps-a08-0039-bne-traeger-finanziell-staerken"
+        ],
+        "0447": [
+          "ltw-2026-st-gruene-ps-a08-0040-kreas-dauerhaft-absichern"
+        ],
+        "0448": [
+          "ltw-2026-st-gruene-ps-a08-0041-schulgaerten-gruene-klassenzimmer",
+          "ltw-2026-st-gruene-ps-a08-0042-schulkuechen",
+          "ltw-2026-st-gruene-ps-a08-0043-gesunde-ernaehrungsbildung"
+        ]
+      },
+      "restored_in_place_historical": [],
+      "semantic_relations": [],
+      "counts": {
+        "historical_active_effect_leaves": 38,
+        "versioned_active_effect_leaves": 64,
+        "non_effect_source_leaves": 5,
+        "parent_provenance_nonleaves": 15,
+        "duplicate_restatement_nonleaves": 0,
+        "authoritative_source_leaves": 107,
+        "authoritative_effect_leaves": 102
+      }
+    }
+  ],
+  "counts": {
+    "authoritative_source_leaves": 107,
+    "authoritative_effect_leaves": 102
+  },
+  "constraints": {
+    "new_stable_ids": 0,
+    "current_740_mutation": "NONE",
+    "fach_synthesis": "FORBIDDEN",
+    "dns_mapping": "NOT_MAPPED_HERE",
+    "recommendation": "NOT_AVAILABLE_AT_SOURCE_UNIT_LEVEL",
+    "global_count_freeze": "LOCKED_PENDING_R26_PLUS_AND_UNION_GATE"
+  }
+}
