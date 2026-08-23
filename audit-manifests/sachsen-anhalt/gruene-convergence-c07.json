@@ -1,0 +1,50 @@
+{
+  "schema_version": "woek-st-gruene-convergence-1.0",
+  "manifest_id": "ST-GRUENE-CONVERGENCE-C07",
+  "source": {
+    "issue": 234,
+    "comment_id": 5376657508,
+    "comment_updated_at": "2026-08-22T00:07:50Z",
+    "comment_body_sha256": "a6bbee2e365c7d1d177ae38945653e5ebf67633829dafe191bcc7b96c54a619e",
+    "retro_marker": "ST-GRUENE-PSP-R11",
+    "convergence_predecessor": "ST-GRUENE-CONVERGENCE-C06B"
+  },
+  "scope": {
+    "historical_first": "0217",
+    "historical_last": "0224",
+    "working_row_count": 8,
+    "working_register": "woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-gruene-zusagen.md",
+    "working_register_source_hash": "73130003d247bad51e27bb63bc140bf1aa815ebe51bf77bcdf9c348da5f4a48d",
+    "history_only": true
+  },
+  "historical_roles": {
+    "active_effect_leaf": ["0218", "0219", "0220", "0221", "0223", "0224"],
+    "context_design_non_effect_source_leaf": ["0217"],
+    "parent_provenance_nonleaf": ["0222"]
+  },
+  "versioned_active_effect_leaves": [
+    "ST-GRUENE-PSP-R11-0001", "ST-GRUENE-PSP-R11-0002", "ST-GRUENE-PSP-R11-0003",
+    "ST-GRUENE-PSP-R11-0004", "ST-GRUENE-PSP-R11-0005", "ST-GRUENE-PSP-R11-0006"
+  ],
+  "lineage_edges": {
+    "0218": ["ST-GRUENE-PSP-R11-0001", "ST-GRUENE-PSP-R11-0002"],
+    "0222": ["ST-GRUENE-PSP-R11-0005", "ST-GRUENE-PSP-R11-0006"]
+  },
+  "standalone_versioned_leaves": ["ST-GRUENE-PSP-R11-0003", "ST-GRUENE-PSP-R11-0004"],
+  "counts": {
+    "historical_active_effect_leaves": 6,
+    "versioned_active_effect_leaves": 6,
+    "non_effect_source_leaves": 1,
+    "parent_provenance_nonleaves": 1,
+    "authoritative_source_leaves": 13,
+    "authoritative_effect_leaves": 12
+  },
+  "constraints": {
+    "new_stable_ids": 0,
+    "current_740_mutation": "NONE",
+    "fach_synthesis": "FORBIDDEN",
+    "dns_mapping": "NOT_MAPPED_HERE",
+    "recommendation": "NOT_AVAILABLE_AT_SOURCE_UNIT_LEVEL",
+    "global_count_freeze": "LOCKED_PENDING_R12_PLUS_AND_UNION_GATE"
+  }
+}

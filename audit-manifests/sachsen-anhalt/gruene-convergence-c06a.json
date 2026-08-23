@@ -1,0 +1,79 @@
+{
+  "schema_version": "woek-st-gruene-convergence-1.0",
+  "manifest_id": "ST-GRUENE-CONVERGENCE-C06A",
+  "source": {
+    "issue": 234,
+    "comment_id": 5376390649,
+    "comment_updated_at": "2026-08-21T23:20:15Z",
+    "comment_body_sha256": "193b3c898b721aae2206a0a5238f77fdd1aabd1d5e44c554e141496c40bb5c87",
+    "retro_marker": "ST-GRUENE-PSP-R10A",
+    "convergence_predecessor": "ST-GRUENE-CONVERGENCE-C05"
+  },
+  "scope": {
+    "historical_first": "0152",
+    "historical_last": "0180",
+    "working_row_count": 29,
+    "working_register": "woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-gruene-zusagen.md",
+    "working_register_source_hash": "73130003d247bad51e27bb63bc140bf1aa815ebe51bf77bcdf9c348da5f4a48d",
+    "history_only": true
+  },
+  "historical_roles": {
+    "active_effect_leaf": [
+      "0158", "0160", "0163", "0164", "0165", "0166", "0167", "0170", "0173", "0175", "0176"
+    ],
+    "context_design_non_effect_source_leaf": ["0152", "0153", "0156", "0157", "0171"],
+    "portfolio_summary_nonleaf": ["0154", "0155"],
+    "duplicate_restatement_nonleaf": ["0159"],
+    "parent_provenance_nonleaf": ["0161", "0162", "0168", "0169", "0172", "0174", "0177", "0178", "0179", "0180"]
+  },
+  "versioned_active_effect_leaves": [
+    "ST-GRUENE-PSP-R10A-0001", "ST-GRUENE-PSP-R10A-0002", "ST-GRUENE-PSP-R10A-0003",
+    "ST-GRUENE-PSP-R10A-0004", "ST-GRUENE-PSP-R10A-0005", "ST-GRUENE-PSP-R10A-0006",
+    "ST-GRUENE-PSP-R10A-0007", "ST-GRUENE-PSP-R10A-0008", "ST-GRUENE-PSP-R10A-0009",
+    "ST-GRUENE-PSP-R10A-0010", "ST-GRUENE-PSP-R10A-0011", "ST-GRUENE-PSP-R10A-0012",
+    "ST-GRUENE-PSP-R10A-0013", "ST-GRUENE-PSP-R10A-0014", "ST-GRUENE-PSP-R10A-0015",
+    "ST-GRUENE-PSP-R10A-0016", "ST-GRUENE-PSP-R10A-0017", "ST-GRUENE-PSP-R10A-0018",
+    "ST-GRUENE-PSP-R10A-0019", "ST-GRUENE-PSP-R10A-0020", "ST-GRUENE-PSP-R10A-0021",
+    "ST-GRUENE-PSP-R10A-0022", "ST-GRUENE-PSP-R10A-0023", "ST-GRUENE-PSP-R10A-0024",
+    "ST-GRUENE-PSP-R10A-0025", "ST-GRUENE-PSP-R10A-0026", "ST-GRUENE-PSP-R10A-0027",
+    "ST-GRUENE-PSP-R10A-0028", "ST-GRUENE-PSP-R10A-0029"
+  ],
+  "lineage_edges": {
+    "0161": ["ST-GRUENE-PSP-R10A-0001", "ST-GRUENE-PSP-R10A-0002", "ST-GRUENE-PSP-R10A-0003"],
+    "0162": ["ST-GRUENE-PSP-R10A-0004", "ST-GRUENE-PSP-R10A-0005", "ST-GRUENE-PSP-R10A-0006"],
+    "0168": ["ST-GRUENE-PSP-R10A-0007", "ST-GRUENE-PSP-R10A-0008", "ST-GRUENE-PSP-R10A-0009", "ST-GRUENE-PSP-R10A-0010"],
+    "0169": ["ST-GRUENE-PSP-R10A-0011", "ST-GRUENE-PSP-R10A-0012"],
+    "0172": ["ST-GRUENE-PSP-R10A-0013", "ST-GRUENE-PSP-R10A-0014"],
+    "0174": ["ST-GRUENE-PSP-R10A-0015", "ST-GRUENE-PSP-R10A-0016"],
+    "0177": ["ST-GRUENE-PSP-R10A-0017", "ST-GRUENE-PSP-R10A-0018"],
+    "0178": ["ST-GRUENE-PSP-R10A-0019", "ST-GRUENE-PSP-R10A-0020", "ST-GRUENE-PSP-R10A-0021", "ST-GRUENE-PSP-R10A-0022", "ST-GRUENE-PSP-R10A-0023"],
+    "0179": ["ST-GRUENE-PSP-R10A-0024", "ST-GRUENE-PSP-R10A-0025", "ST-GRUENE-PSP-R10A-0026"],
+    "0180": ["ST-GRUENE-PSP-R10A-0027", "ST-GRUENE-PSP-R10A-0028", "ST-GRUENE-PSP-R10A-0029"]
+  },
+  "semantic_relations": [
+    {
+      "from": "0159",
+      "relation": "SUMMARY_DUPLICATE_OF",
+      "to": "0167",
+      "count": 0
+    }
+  ],
+  "counts": {
+    "historical_active_effect_leaves": 11,
+    "versioned_active_effect_leaves": 29,
+    "non_effect_source_leaves": 5,
+    "parent_provenance_nonleaves": 10,
+    "portfolio_summary_nonleaves": 2,
+    "duplicate_restatement_nonleaves": 1,
+    "authoritative_source_leaves": 45,
+    "authoritative_effect_leaves": 40
+  },
+  "constraints": {
+    "new_stable_ids": 0,
+    "current_740_mutation": "NONE",
+    "fach_synthesis": "FORBIDDEN",
+    "dns_mapping": "NOT_MAPPED_HERE",
+    "recommendation": "NOT_AVAILABLE_AT_SOURCE_UNIT_LEVEL",
+    "global_count_freeze": "LOCKED_PENDING_C06B_PLUS_AND_UNION_GATE"
+  }
+}

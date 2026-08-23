@@ -1,0 +1,100 @@
+{
+  "schema_version": "woek-st-gruene-convergence-1.0",
+  "manifest_id": "ST-GRUENE-CONVERGENCE-C06B",
+  "source": {
+    "issue": 234,
+    "comments": [
+      {
+        "id": 5376649544,
+        "marker": "ST-GRUENE-PSP-R10B",
+        "updated_at": "2026-08-22T00:06:28Z",
+        "body_sha256": "9e3d4a613e89b1825dfaf449c97305217667736e3a1a96d2b7c68b7ef3076f40"
+      },
+      {
+        "id": 5373020584,
+        "marker": "ST-GRUENE-A04",
+        "updated_at": "2026-08-21T17:17:27Z",
+        "body_sha256": "2328b2a845a8818752d77545b4edc97cb635ffcabd27e571651d19a112e704ab"
+      }
+    ],
+    "convergence_predecessor": "ST-GRUENE-CONVERGENCE-C06A"
+  },
+  "scope": {
+    "historical_first": "0181",
+    "historical_last": "0216",
+    "working_row_count": 36,
+    "working_register": "woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-gruene-zusagen.md",
+    "working_register_source_hash": "73130003d247bad51e27bb63bc140bf1aa815ebe51bf77bcdf9c348da5f4a48d",
+    "history_only": true
+  },
+  "historical_roles": {
+    "active_effect_leaf": [
+      "0181", "0184", "0186", "0188", "0189", "0190", "0195", "0196", "0199", "0201",
+      "0202", "0203", "0207", "0209", "0210", "0212", "0213", "0214", "0215"
+    ],
+    "active_effect_leaf_with_source_v2_child": ["0185", "0194", "0204", "0208"],
+    "implementation_design_non_effect_source_leaf": ["0191", "0192"],
+    "context_design_non_effect_source_leaf": ["0197", "0206", "0211"],
+    "duplicate_restatement_nonleaf": ["0205"],
+    "parent_provenance_nonleaf": ["0182", "0183", "0187", "0193", "0198", "0200", "0216"]
+  },
+  "versioned_active_effect_leaves": [
+    "ST-GRUENE-PSP-R10B-0001", "ST-GRUENE-PSP-R10B-0002", "ST-GRUENE-PSP-R10B-0003",
+    "ST-GRUENE-PSP-R10B-0004", "ST-GRUENE-PSP-R10B-0005", "ST-GRUENE-PSP-R10B-0006",
+    "ST-GRUENE-PSP-R10B-0007", "ST-GRUENE-PSP-R10B-0008", "ST-GRUENE-PSP-R10B-0009",
+    "ST-GRUENE-PSP-R10B-0010", "ST-GRUENE-PSP-R10B-0011", "ST-GRUENE-PSP-R10B-0012",
+    "ST-GRUENE-PSP-R10B-0013", "ST-GRUENE-PSP-R10B-0014", "ST-GRUENE-PSP-R10B-0015",
+    "ST-GRUENE-PSP-R10B-0016", "ST-GRUENE-PSP-R10B-0017", "ST-GRUENE-PSP-R10B-0018",
+    "ST-GRUENE-PSP-R10B-0019", "ST-GRUENE-PSP-R10B-0020", "ST-GRUENE-PSP-R10B-0021",
+    "ST-GRUENE-PSP-R10B-0022", "ST-GRUENE-PSP-R10B-0023", "ST-GRUENE-PSP-R10B-0024"
+  ],
+  "lineage_edges": {
+    "0182": ["ST-GRUENE-PSP-R10B-0001"],
+    "0183": ["ST-GRUENE-PSP-R10B-0003"],
+    "0185": ["ST-GRUENE-PSP-R10B-0005"],
+    "0187": ["ST-GRUENE-PSP-R10B-0008"],
+    "0193": ["ST-GRUENE-PSP-R10B-0010", "ST-GRUENE-PSP-R10B-0011", "ST-GRUENE-PSP-R10B-0012"],
+    "0198": ["ST-GRUENE-PSP-R10B-0015"],
+    "0200": ["ST-GRUENE-PSP-R10B-0016", "ST-GRUENE-PSP-R10B-0017"],
+    "0204": ["ST-GRUENE-PSP-R10B-0018"],
+    "0206": ["ST-GRUENE-PSP-R10B-0020"],
+    "0216": ["ST-GRUENE-PSP-R10B-0024"]
+  },
+  "standalone_versioned_leaves": [
+    "ST-GRUENE-PSP-R10B-0002", "ST-GRUENE-PSP-R10B-0004", "ST-GRUENE-PSP-R10B-0006",
+    "ST-GRUENE-PSP-R10B-0007", "ST-GRUENE-PSP-R10B-0009", "ST-GRUENE-PSP-R10B-0013",
+    "ST-GRUENE-PSP-R10B-0014", "ST-GRUENE-PSP-R10B-0019", "ST-GRUENE-PSP-R10B-0021",
+    "ST-GRUENE-PSP-R10B-0022", "ST-GRUENE-PSP-R10B-0023"
+  ],
+  "semantic_relations": [
+    {
+      "from": "0205",
+      "relation": "DUPLICATE_RESTATEMENT_OF",
+      "to": "0169",
+      "count": 0
+    },
+    {
+      "from": "0191",
+      "relation": "IMPLEMENTATION_DESIGN",
+      "to": "LKW_MAUT_FEDERAL_COOPERATION",
+      "count": 0
+    }
+  ],
+  "counts": {
+    "historical_active_effect_leaves": 23,
+    "versioned_active_effect_leaves": 24,
+    "non_effect_source_leaves": 5,
+    "parent_provenance_nonleaves": 7,
+    "duplicate_restatement_nonleaves": 1,
+    "authoritative_source_leaves": 52,
+    "authoritative_effect_leaves": 47
+  },
+  "constraints": {
+    "new_stable_ids": 0,
+    "current_740_mutation": "NONE",
+    "fach_synthesis": "FORBIDDEN",
+    "dns_mapping": "NOT_MAPPED_HERE",
+    "recommendation": "NOT_AVAILABLE_AT_SOURCE_UNIT_LEVEL",
+    "global_count_freeze": "LOCKED_PENDING_R11_PLUS_AND_UNION_GATE"
+  }
+}
