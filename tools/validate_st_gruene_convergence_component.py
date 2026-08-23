@@ -64,6 +64,7 @@ def validate_live_sources(manifest: dict[str, object]) -> None:
         for role in ROLE_KEYS:
             for stable_id in window["versioned_roles"][role]:
                 compact_id = re.sub(r"^ltw-2026-st-gruene-ps-a\d{2}", "...", stable_id)
+                compact_id = re.sub(r"^ST-GRUENE-PSP-A\d{2}", "...", compact_id)
                 if stable_id not in source_corpus and compact_id not in source_corpus:
                     fail(f"PINNED_SOURCE_STABLE_ID_MISSING:{stable_id}")
 

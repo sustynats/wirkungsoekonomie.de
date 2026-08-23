@@ -32,7 +32,7 @@
     {"component": "C13", "scope": "0391-0448", "source_leaves": 107, "effect_leaves": 102, "manifest": "audit-manifests/sachsen-anhalt/gruene-convergence-c13.json", "manifest_sha256": "5d014161429d27e022aec774f9b9c186fae0b15956c2e2101413800a99642434"},
     {"component": "C14", "scope": "0449-0537", "source_leaves": 144, "effect_leaves": 131, "manifest": "audit-manifests/sachsen-anhalt/gruene-convergence-c14.json", "manifest_sha256": "b9b331e79d2da3234972bead480f2e646ec4f2acaf302e32adbd16b74457e17f"},
     {"component": "C15", "scope": "0538-0600", "source_leaves": 89, "effect_leaves": 77, "manifest": "audit-manifests/sachsen-anhalt/gruene-convergence-c15.json", "manifest_sha256": "36fb505c9a27dead6ef2cb3b174943e3b87970adb518811a02ad8676db3b4ae4"},
-    {"component": "C16", "scope": "0601-0740", "source_leaves": 240, "effect_leaves": 215, "manifest": "audit-manifests/sachsen-anhalt/gruene-convergence-c16.json", "manifest_sha256": "f27f68638eeea3b291e24b7084b4cad57e038c9a3a2972378177cb755287392f"}
+    {"component": "C16", "scope": "0601-0740", "source_leaves": 240, "effect_leaves": 215, "manifest": "audit-manifests/sachsen-anhalt/gruene-convergence-c16.json", "manifest_sha256": "d7de99bf52e16d2a8b49cd9c446ffc06777aa27e541ec47bf991b5f71df88ee6"}
   ],
   "cross_component_reconciliation": [
     {"from": "0205", "relation": "DUPLICATE_RESTATEMENT_OF", "to": "0169", "count": 0},
@@ -82,5 +82,5 @@
     "handoff": "clean exact-current-main Sachsen-Anhalt-only GRUENE projection/gates; frozen terminal leaves only"
   },
   "canonicalization": "UTF-8 canonical JSON; object keys sorted; separators ',', ':'; descriptor_sha256 omitted from hash input",
-  "descriptor_sha256": "PENDING_VALIDATOR_CALCULATION"
+  "descriptor_sha256": "bcb003608a6fe3777ab09736505c5bb2e9f55422bb4ba0a09abe0127cf7b0577"
 }
