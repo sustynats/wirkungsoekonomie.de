@@ -8,6 +8,15 @@ import process from 'node:process';
 const repoRoot = resolve(process.cwd());
 const lockPath = join(repoRoot, 'content/studienskripte/v4/SOURCE_LOCK.json');
 const checkOnly = process.argv.includes('--check');
+
+// Verification of the committed, sanitized Public-Master must remain fully
+// reproducible in pull requests and on GitHub Pages CI. The private source repo
+// is only needed for an explicitly authorized import/materialization run.
+if (checkOnly) {
+  await import('./verify-v4-public-master.mjs');
+  process.exit(0);
+}
+
 const lock = JSON.parse(await readFile(lockPath, 'utf8'));
 
 function sha256(value) {

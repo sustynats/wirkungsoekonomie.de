@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0",
+  "audit_id": "ACADEMY-V4-PR269-FRESH-MAIN-RECONCILIATION",
+  "repository": "sustynats/wirkungsoekonomie.de",
+  "fresh_main_base": "423cfe786c09cd63caef3b39312cd5a996a7aff2",
+  "old_pr": {
+    "number": 269,
+    "head": "b3ba637a1cba3166961a60476a941fa3a1b71ec8",
+    "merge_base": "285c0c752b3d9a028bab4e39ff822263115d3a77",
+    "decision": "DO_NOT_MERGE_WHOLESALE"
+  },
+  "classification": {
+    "already_on_main": [
+      {
+        "scope": "Sanitized Academy v4 Public-Master",
+        "evidence": "content/studienskripte/v4/PUBLIC_MASTER_MANIFEST.json",
+        "result": "120 study + 58 offering lectures, assessment_secrets_included=false"
+      },
+      {
+        "scope": "Pinned public source provenance",
+        "evidence": "content/studienskripte/v4/SOURCE_LOCK.json",
+        "result": "exact Academy App source ecee82cce60612332b4dc909b2fecfcb380b1a24"
+      },
+      {
+        "scope": "Historical v3.2 archive",
+        "evidence": "archive/curriculum-v3.2-20260821@4d93bbefc3a7249ff27fc0f2ebbcf0493354a13a",
+        "result": "preserved outside active v4 projection"
+      },
+      {
+        "scope": "Current terminology and state-architecture reference",
+        "evidence": "969a98bbe0f66023031e46470247d98324044422 and current main",
+        "result": "Begriffsleitfaden v1.7 is leading; v1.6 remains authored Public-Master provenance"
+      },
+      {
+        "scope": "Search, sitemap, navigation and GitHub Pages build architecture",
+        "evidence": "existing main build and PR-quality workflows",
+        "result": "reused without a second deployment architecture"
+      }
+    ],
+    "superseded": [
+      {
+        "old_pr_path": "content/audits/state-sustainability-architecture-url-matrix.json",
+        "reason": "large stale generated #253 projection; current main contains later audited state and must not be overwritten"
+      },
+      {
+        "old_pr_path": "content/audits/state-sustainability-architecture-url-matrix.md",
+        "reason": "stale generated summary paired with the superseded matrix"
+      },
+      {
+        "old_pr_path": "scripts/academy/build-v4-main-domain.mjs hard-coded curriculum/catalog arrays",
+        "reason": "replaced by a source-bound projection contract validated against the committed sanitized Public-Master"
+      },
+      {
+        "old_pr_path": "scripts/academy/postprocess-v4-main-domain.mjs",
+        "reason": "retry-anchor and second-pass public mutations replaced by one deterministic fail-closed builder and verifier"
+      },
+      {
+        "old_pr_path": "terminology baseline v1.6 as release baseline",
+        "reason": "v1.6 remains source provenance; current release reference is v1.7"
+      },
+      {
+        "old_pr_path": "full /akademie/ duplicate page",
+        "reason": "current canonical /akademie.html plus existing /akademie/ redirect architecture is preserved"
+      }
+    ],
+    "missing_recreated_from_fresh_main": [
+      {
+        "scope": "Deterministic main-domain projection contract",
+        "paths": ["content/academy/academy-v4-main-domain-projection.json"],
+        "source_rule": "metadata-only projection of reviewed manifests; lecture content remains in Public-Master"
+      },
+      {
+        "scope": "Offline Public-Master validation",
+        "paths": ["scripts/academy/verify-v4-public-master.mjs"],
+        "source_rule": "178 committed sanitized artifacts, hashes, provenance, counts and privacy checked without private-repo network dependency"
+      },
+      {
+        "scope": "Manifest-driven Academy/Lernen projection",
+        "paths": [
+          "scripts/academy/build-v4-main-domain.mjs",
+          "akademie.html",
+          "akademie/studienstruktur.html",
+          "akademie/lernpfad.html",
+          "akademie/grundlagen.html",
+          "akademie/pruefungen.html",
+          "akademie/weiterbildung.html",
+          "lernen/index.html"
+        ],
+        "source_rule": "titles and stable IDs come from sanitized Public-Master; structure/catalog/assessment metadata are exact reviewed projections"
+      },
+      {
+        "scope": "Versioned public exports and v3.2 history",
+        "paths": [
+          "content/academy/woek-g-curriculum-v4.json",
+          "public/data/woek-g-curriculum.json",
+          "public/data/woek-g-curriculum-v2.0.json",
+          "akademie/curriculum-v3-2.html"
+        ],
+        "source_rule": "active v4 export is distinct from the real v2.0 machine export and exact v3.2 archive commit"
+      },
+      {
+        "scope": "Local read-only GitHub Actions parity gate",
+        "paths": [".github/workflows/academy-v4-public-master.yml"],
+        "source_rule": "no private source download, no write-back, no Vercel"
+      }
+    ]
+  },
+  "hard_guards": {
+    "fach_dns_recommendation_synthesized": false,
+    "assessment_secrets_projected": false,
+    "legacy_public_master_overwritten": false,
+    "old_pr_merged_wholesale": false,
+    "vercel_preview_build_deploy_promotion": false,
+    "NO_NEW_VERCEL_BUILD": true
+  }
+}

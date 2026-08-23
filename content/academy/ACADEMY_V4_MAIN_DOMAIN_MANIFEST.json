@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "status": "GITHUB_MAIN_PROJECTION_READY",
+  "curriculum_version": "4.0",
+  "source_manifest": "content/studienskripte/v4/PUBLIC_MASTER_MANIFEST.json",
+  "source_repo": "sustynats/woek-akademie-app",
+  "source_sha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
+  "terminology_authored_baseline": "1.6",
+  "terminology_release_reference": "1.7",
+  "counts": {
+    "parts": 10,
+    "modules": 40,
+    "studyLectures": 120,
+    "activeOfferings": 6,
+    "activeOfferingLectures": 58,
+    "interimExams": 10,
+    "finalAssessments": 4
+  },
+  "historical_curriculum": {
+    "version": "3.2",
+    "archive_branch": "archive/curriculum-v3.2-20260821",
+    "archive_commit": "4d93bbefc3a7249ff27fc0f2ebbcf0493354a13a",
+    "public_route": "akademie/curriculum-v3-2.html"
+  },
+  "generated_routes": [
+    "akademie.html",
+    "akademie/studienstruktur.html",
+    "akademie/lernpfad.html",
+    "akademie/grundlagen.html",
+    "akademie/pruefungen.html",
+    "akademie/weiterbildung.html",
+    "lernen/index.html",
+    "akademie/curriculum-v3-2.html"
+  ],
+  "gates": {
+    "PUBLIC_ACADEMY_CURRICULUM_DERIVED_FROM_CANON": "PASS",
+    "NO_HANDMAINTAINED_CURRICULUM_COUNT_DRIFT": "PASS",
+    "PUBLIC_ACADEMY_ASSESSMENT_VERSION_MATCH": "PASS",
+    "ACADEMY_OFFERING_CATALOG_WEB_APP_PARITY": "PASS",
+    "NO_ASSESSMENT_SECRET_LEAK": "PASS"
+  }
+}
