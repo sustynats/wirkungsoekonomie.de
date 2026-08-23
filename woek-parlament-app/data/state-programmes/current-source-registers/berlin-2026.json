@@ -14,10 +14,10 @@
     "election_source_available_canonicalization_pending_count": 3,
     "final_election_programme_not_verified_count": 5,
     "final_election_programme_verified_count": 9,
-    "full_17_final_election_programme_corpus_available": false,
+    "full_final_election_programme_corpus_available": false,
     "source_available_for_election_corpus_count": 12
   },
-  "descriptor_sha256": "2915a2c2520d9a384625b3297d6efffe41cf2cf2cc69f5bd2a29caddc55aa573",
+  "descriptor_sha256": "99a1043163b308817e858fab0d51695ac4d4e11bc537c8aab3d4ebec7f375e13",
   "election": "agh-2026-be",
   "hash_definition": "SHA-256 of canonical JSON (UTF-8, sorted keys, compact separators) excluding descriptor_sha256",
   "jurisdiction": "berlin",
@@ -376,7 +376,7 @@
     "unrendered_content_paths": []
   },
   "register_id": "BE-AGH-2026-CURRENT-SOURCE-REGISTER-V1",
-  "schema_version": "woek-state-current-source-register-1.0",
+  "schema_version": "woek-state-current-source-register-1.1",
   "source_as_of": "2026-08-21",
   "source_pins": [
     {

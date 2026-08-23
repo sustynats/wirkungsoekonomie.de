@@ -224,7 +224,7 @@ def build_register() -> dict:
     pending_canonical = sum(party["canonicalization_pending"] for party in PARTIES)
     unavailable = sum(not party["source_available_for_election_corpus"] for party in PARTIES)
     payload = {
-        "schema_version": "woek-state-current-source-register-1.0",
+        "schema_version": "woek-state-current-source-register-1.1",
         "register_id": "BE-AGH-2026-CURRENT-SOURCE-REGISTER-V1",
         "base_main_commit": BASE_MAIN_COMMIT,
         "jurisdiction": "berlin",
@@ -245,7 +245,7 @@ def build_register() -> dict:
             "election_source_available_canonicalization_pending_count": pending_canonical,
             "final_election_programme_not_verified_count": unavailable,
             "source_available_for_election_corpus_count": sum(party["source_available_for_election_corpus"] for party in PARTIES),
-            "full_17_final_election_programme_corpus_available": False,
+            "full_final_election_programme_corpus_available": False,
             "assessment_maturity": "PARTIAL_ANALYSIS_NEEDS_COMPLETION",
         },
         "preserved_fach_review": {
@@ -347,7 +347,7 @@ def main() -> int:
         "verified_final_programmes": 9,
         "election_sources_pending_canonicalization": 3,
         "final_programmes_not_verified": 5,
-        "full_17_final_election_programme_corpus_available": False,
+        "full_final_election_programme_corpus_available": False,
         "preserved_materiality_themes": 6,
         "unrendered_content_paths": 0,
         "descriptor_sha256": actual["descriptor_sha256"],

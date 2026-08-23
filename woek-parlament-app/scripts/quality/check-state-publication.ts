@@ -65,8 +65,12 @@ assert.match(statePublicContent.berlin.electionField?.officialFieldLabel ?? "", 
 assert.equal(statePublicContent.berlin.programmeSources?.status, "CURRENT_SOURCE_CLASSIFICATION_COMPLETE_17_OF_17");
 assert.equal(statePublicContent.berlin.programmeSources?.parties.length, 17);
 assert.equal(statePublicContent.berlin.programmeSources?.coverage.final_election_programme_verified_count, 9);
-assert.equal(statePublicContent.berlin.programmeSources?.coverage.full_17_final_election_programme_corpus_available, false);
+assert.equal(statePublicContent.berlin.programmeSources?.coverage.full_final_election_programme_corpus_available, false);
 assert.match(statePublicContent["mecklenburg-vorpommern"].electionField?.officialFieldLabel ?? "", /19 Landeslisten/);
+assert.equal(statePublicContent["mecklenburg-vorpommern"].programmeSources?.status, "CURRENT_SOURCE_CLASSIFICATION_COMPLETE_19_OF_19");
+assert.equal(statePublicContent["mecklenburg-vorpommern"].programmeSources?.parties.length, 19);
+assert.equal(statePublicContent["mecklenburg-vorpommern"].programmeSources?.coverage.final_election_programme_verified_count, 10);
+assert.equal(statePublicContent["mecklenburg-vorpommern"].programmeSources?.coverage.full_final_election_programme_corpus_available, false);
 
 console.log(JSON.stringify({
   status: "pass",
@@ -75,4 +79,5 @@ console.log(JSON.stringify({
   impactCases: reviews.reduce((sum, review) => sum + review.ids.length + ("supplemental" in review ? review.supplemental.ids.length : 0), 0),
   coalitionMandates: ["baden-wuerttemberg-2026-2031", "rheinland-pfalz-2026-2031"],
   berlinCurrentSourceClassification: "17/17",
+  mvCurrentSourceClassification: "19/19",
 }));

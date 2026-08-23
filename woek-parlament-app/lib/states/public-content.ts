@@ -1,6 +1,7 @@
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import berlinCurrentSourceRegister from "../../data/state-programmes/current-source-registers/berlin-2026.json";
+import mvCurrentSourceRegister from "../../data/state-programmes/current-source-registers/mecklenburg-vorpommern-2026.json";
 
 export type StateReviewArea = "regierung" | "wahl";
 
@@ -62,7 +63,7 @@ export type StateProgrammeSourceRegister = {
     election_source_available_canonicalization_pending_count: number;
     final_election_programme_not_verified_count: number;
     source_available_for_election_corpus_count: number;
-    full_17_final_election_programme_corpus_available: boolean;
+    full_final_election_programme_corpus_available: boolean;
     assessment_maturity: string;
   };
   preserved_fach_review: {
@@ -155,11 +156,12 @@ export const statePublicContent: Record<string, StatePublicContent> = {
     },
     electionField: {
       electionDate: "20.09.2026",
-      officialFieldLabel: "19 Landeslisten zugelassen",
-      officialFieldDetail: "Das initiale Fachreview enthält bereits die materialitätsstarken Programme und Themen, erhebt aber noch keinen Vollständigkeitsanspruch für alle 19 zugelassenen Landeslisten.",
-      officialSourceUrl: "https://www.laiv-mv.de/Wahlen/Pressemitteilungen/",
-      sourceAsOf: "31.07.2026",
+      officialFieldLabel: "19 Landeslisten endgültig zugelassen",
+      officialFieldDetail: "Alle 19 zugelassenen Landeslisten sind im aktuellen Quellenstand klassifiziert: 10 finale Wahlprogramme sind verifiziert, 3 Wahlprogrammquellen warten noch auf exakte Kanonisierung und für 6 Listen ist kein finales MV-2026-Vollprogramm verifiziert. Das ist vollständige Quellenklassifikation, kein Vollreview aller Programme.",
+      officialSourceUrl: "https://www.laiv-mv.de/Wahlen/Pressemitteilungen/?id=222342&processor=processor.sa.pressemitteilung",
+      sourceAsOf: "14.08.2026",
     },
+    programmeSources: mvCurrentSourceRegister,
   },
 };
 

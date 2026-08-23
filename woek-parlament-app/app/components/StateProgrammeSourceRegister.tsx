@@ -9,7 +9,10 @@ function fieldScopeLabel(value: string) {
 }
 
 function artifactClassLabel(value: string) {
-  if (value.includes("PENDING")) return "Finales Wahlprogramm ausstehend";
+  if (value.includes("NOT_VERIFIED")) return "Finales Wahlprogramm nicht verifiziert";
+  if (value.includes("PENDING_CANONICALIZATION") || value.includes("ROUTE_PENDING") || value.includes("NAVIGATION_PENDING")) return "Wahlquelle zur Kanonisierung";
+  if (value === "FINAL_ELECTION_PROGRAMME_PENDING") return "Finales Wahlprogramm ausstehend";
+  if (value === "ELECTION_REFERENCED_CURRENT_LANDESPROGRAMME") return "Wahlbezogenes aktuelles Landesprogramm";
   if (value.includes("FINAL_ELECTION_PROGRAMME")) return "Finales Wahlprogramm";
   if (value === "PARTY_OFFICIAL_2026_ELECTION_PROGRAMME") return "Parteioffizielles Wahlprogramm 2026";
   if (value === "ELECTION_PROGRAMME_LINK") return "Wahlprogramm-Link";
@@ -34,7 +37,7 @@ export function StateProgrammeSourceRegister({ register }: { register: Programme
       <div><span>Amtliches Feld</span><strong>{register.official_field.admitted_party_count} Parteien</strong></div>
       <div><span>Final verifiziert</span><strong>{register.coverage.final_election_programme_verified_count} Wahlprogramme</strong></div>
       <div><span>Kanonisierung offen</span><strong>{register.coverage.election_source_available_canonicalization_pending_count} Wahlquellen</strong></div>
-      <div><span>Kein finales Vollprogramm verifiziert</span><strong>{register.coverage.final_election_programme_not_verified_count} Parteien</strong></div>
+      <div><span>Keine Wahlprogrammquelle für den Corpus</span><strong>{register.coverage.final_election_programme_not_verified_count} Parteien</strong></div>
       <div><span>Bestehender Fachstand</span><strong>{register.preserved_fach_review.materiality_theme_count} Themenreviews erhalten</strong></div>
     </div>
     <div className="notice notice-neutral"><strong>Keine Wirkung aus dem Quellenstatus ableiten.</strong><p>Ein veröffentlichtes Programm ist noch keine Wirkung; ein fehlendes finales Programm ist keine neutrale Bewertung. Wirkungsrichtung, Evidenz, Kompetenz und Schutzgrenzen erscheinen nur aus freigegebenem, quellengebundenem Fachreview.</p></div>

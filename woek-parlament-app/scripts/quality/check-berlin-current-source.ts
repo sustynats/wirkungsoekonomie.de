@@ -21,7 +21,7 @@ assert.equal(currentSourceRegister.coverage.final_election_programme_verified_co
 assert.equal(currentSourceRegister.coverage.election_source_available_canonicalization_pending_count, 3);
 assert.equal(currentSourceRegister.coverage.final_election_programme_not_verified_count, 5);
 assert.equal(currentSourceRegister.coverage.source_available_for_election_corpus_count, 12);
-assert.equal(currentSourceRegister.coverage.full_17_final_election_programme_corpus_available, false);
+assert.equal(currentSourceRegister.coverage.full_final_election_programme_corpus_available, false);
 assert.equal(currentSourceRegister.preserved_fach_review.materiality_theme_count, 6);
 
 const parties = currentSourceRegister.parties;
