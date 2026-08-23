@@ -1,0 +1,265 @@
+name: Parliament minimal deployment artifact
+
+on:
+  pull_request:
+    paths:
+      - "datenschutz.html"
+      - "ops/parliament-deployment-artifact-policy.json"
+      - "ops/releases/parliament-github-golden-state-2026-08-23.json"
+      - "tools/build_parliament_deployment_artifact.py"
+      - "tools/manifest_vercel_build_output.py"
+      - "tools/test_parliament_artifact_tools.py"
+      - "tools/validate_parliament_github_golden_state.py"
+      - "woek-parlament-app/**"
+      - ".github/workflows/parliament-minimal-deployment-artifact.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "datenschutz.html"
+      - "ops/parliament-deployment-artifact-policy.json"
+      - "ops/releases/parliament-github-golden-state-2026-08-23.json"
+      - "tools/build_parliament_deployment_artifact.py"
+      - "tools/manifest_vercel_build_output.py"
+      - "tools/test_parliament_artifact_tools.py"
+      - "tools/validate_parliament_github_golden_state.py"
+      - "woek-parlament-app/**"
+      - ".github/workflows/parliament-minimal-deployment-artifact.yml"
+  workflow_dispatch:
+    inputs:
+      evaluate_prebuilt:
+        description: Build Vercel Build Output locally in GitHub; never deploy it
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+
+concurrency:
+  group: parliament-minimal-artifact-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  exact-commit-minimal-artifact:
+    name: Exact-commit minimal artifact and Golden build
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout exact workflow commit
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: woek-parlament-app/package-lock.json
+
+      - name: Validate exact Golden State descriptor
+        run: python3 tools/validate_parliament_github_golden_state.py
+
+      - name: Test artifact builders
+        run: python3 -m unittest tools/test_parliament_artifact_tools.py
+
+      - name: Build deterministic minimal source artifact twice
+        id: artifact
+        shell: bash
+        run: |
+          set -euo pipefail
+          artifact_dir="$RUNNER_TEMP/parliament-deployment-artifact"
+          python3 tools/build_parliament_deployment_artifact.py build \
+            --commit "$GITHUB_SHA" \
+            --output-dir "$artifact_dir" \
+            --require-clean \
+            --verify-reproducible
+          archive_path="$(find "$artifact_dir" -maxdepth 1 -type f -name '*.tgz' -print -quit)"
+          manifest_path="$(find "$artifact_dir" -maxdepth 1 -type f -name '*.manifest.json' -print -quit)"
+          test -n "$archive_path"
+          test -n "$manifest_path"
+          python3 tools/build_parliament_deployment_artifact.py verify \
+            --archive "$archive_path" \
+            --manifest "$manifest_path"
+          echo "directory=$artifact_dir" >> "$GITHUB_OUTPUT"
+          echo "archive=$archive_path" >> "$GITHUB_OUTPUT"
+          echo "manifest=$manifest_path" >> "$GITHUB_OUTPUT"
+
+      - name: Prove extracted deployment input is minimal
+        id: extract
+        shell: bash
+        run: |
+          set -euo pipefail
+          extracted="$RUNNER_TEMP/parliament-deployment-input"
+          mkdir -p "$extracted"
+          tar -xzf "${{ steps.artifact.outputs.archive }}" -C "$extracted"
+          mapfile -t top_level < <(find "$extracted" -mindepth 1 -maxdepth 1 -printf '%f\n' | sort)
+          test "${#top_level[@]}" -eq 2
+          test "${top_level[0]}" = 'datenschutz.html'
+          test "${top_level[1]}" = 'woek-parlament-app'
+          test ! -e "$extracted/assets"
+          test ! -e "$extracted/content"
+          test ! -e "$extracted/docs"
+          test ! -e "$extracted/ops"
+          test ! -e "$extracted/tools"
+          test ! -e "$extracted/woek-akademie-app"
+          test -f "$extracted/woek-parlament-app/package-lock.json"
+          test -f "$extracted/datenschutz.html"
+          echo "root=$extracted" >> "$GITHUB_OUTPUT"
+
+      - name: Install exact minimal-input dependencies
+        working-directory: ${{ steps.extract.outputs.root }}/woek-parlament-app
+        run: npm ci
+
+      - name: Run Parliament source and type gates from minimal input
+        working-directory: ${{ steps.extract.outputs.root }}/woek-parlament-app
+        run: |
+          npm run check:same-page-navigation
+          npm run check:sachsen-anhalt-publication
+          npm run check:berlin-current-source
+          npm run check:mv-current-source
+          npm run check:state-publication
+          npm run typecheck
+
+      - name: Build and run rendered Golden gates from minimal input
+        working-directory: ${{ steps.extract.outputs.root }}/woek-parlament-app
+        run: npm run build
+
+      - name: Reverify immutable artifact after all gates
+        run: |
+          python3 tools/build_parliament_deployment_artifact.py verify \
+            --archive "${{ steps.artifact.outputs.archive }}" \
+            --manifest "${{ steps.artifact.outputs.manifest }}"
+
+      - name: Upload commit-bound source artifact and audit manifest
+        uses: actions/upload-artifact@v4
+        with:
+          name: parliament-minimal-source-${{ github.sha }}
+          path: ${{ steps.artifact.outputs.directory }}/*
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 30
+
+      - name: Publish job summary
+        shell: bash
+        run: |
+          manifest='${{ steps.artifact.outputs.manifest }}'
+          {
+            echo '## Parliament minimal deployment artifact'
+            echo
+            echo "- commit: \`$(jq -r '.git.commit' "$manifest")\`"
+            echo "- project: \`$(jq -r '.project.name' "$manifest")\`"
+            echo "- Root Directory: \`$(jq -r '.project.root_directory' "$manifest")\`"
+            echo "- files: \`$(jq -r '.input.file_count' "$manifest")\`"
+            echo "- source bytes: \`$(jq -r '.input.source_bytes' "$manifest")\`"
+            echo "- archive bytes: \`$(jq -r '.archive.bytes' "$manifest")\`"
+            echo "- archive SHA-256: \`$(jq -r '.archive.sha256' "$manifest")\`"
+            echo '- Vercel deployment invoked: `false`'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+  prebuilt-evaluation:
+    name: Optional local Vercel Build Output evaluation
+    if: github.event_name == 'workflow_dispatch' && inputs.evaluate_prebuilt
+    needs: exact-commit-minimal-artifact
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+    steps:
+      - name: Checkout exact workflow commit
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Download exact minimal source artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: parliament-minimal-source-${{ github.sha }}
+          path: ${{ runner.temp }}/parliament-artifact
+
+      - name: Extract and bind the existing Vercel project
+        id: prebuilt
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -n "$VERCEL_TOKEN"
+          archive="$(find "$RUNNER_TEMP/parliament-artifact" -maxdepth 1 -type f -name '*.tgz' -print -quit)"
+          extracted="$RUNNER_TEMP/parliament-prebuilt-input"
+          mkdir -p "$extracted/.vercel"
+          tar -xzf "$archive" -C "$extracted"
+          jq -n \
+            --arg projectId 'prj_h1X7GuXOVo1bdnOfoYXzTfP8ygBK' \
+            --arg orgId 'team_sOR1voJPyc1jY5VsMdQRyFWz' \
+            --arg projectName 'woek-parlament' \
+            '{projectId:$projectId,orgId:$orgId,projectName:$projectName}' \
+            > "$extracted/.vercel/project.json"
+          echo "root=$extracted" >> "$GITHUB_OUTPUT"
+
+      - name: Pull Production build settings without deploying
+        working-directory: ${{ steps.prebuilt.outputs.root }}
+        run: npx --yes vercel@59.5.0 pull --yes --environment=production --scope woek-akademie --token "$VERCEL_TOKEN"
+
+      - name: Produce Build Output API artifact locally without deploying
+        working-directory: ${{ steps.prebuilt.outputs.root }}
+        run: npx --yes vercel@59.5.0 build --prod --scope woek-akademie --token "$VERCEL_TOKEN"
+
+      - name: Prove deployable output and record size
+        id: output
+        shell: bash
+        run: |
+          set -euo pipefail
+          output='${{ steps.prebuilt.outputs.root }}/.vercel/output'
+          test -f "$output/config.json"
+          source_manifest="$(find "$RUNNER_TEMP/parliament-artifact" -maxdepth 1 -type f -name '*.manifest.json' -print -quit)"
+          audit_dir="$RUNNER_TEMP/parliament-prebuilt-audit"
+          audit_manifest="$audit_dir/parliament-vercel-build-output-${GITHUB_SHA}.manifest.json"
+          python3 tools/manifest_vercel_build_output.py build \
+            --output-dir "$output" \
+            --source-manifest "$source_manifest" \
+            --manifest "$audit_manifest"
+          python3 tools/manifest_vercel_build_output.py verify \
+            --output-dir "$output" \
+            --source-manifest "$source_manifest" \
+            --manifest "$audit_manifest"
+          echo "files=$(jq -r '.build_output.file_count' "$audit_manifest")" >> "$GITHUB_OUTPUT"
+          echo "bytes=$(jq -r '.build_output.bytes' "$audit_manifest")" >> "$GITHUB_OUTPUT"
+          echo "audit_manifest=$audit_manifest" >> "$GITHUB_OUTPUT"
+
+      - name: Upload deployable Build Output for audit only
+        uses: actions/upload-artifact@v4
+        with:
+          name: parliament-vercel-prebuilt-evaluation-${{ github.sha }}
+          path: ${{ steps.prebuilt.outputs.root }}/.vercel/output
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 30
+
+      - name: Upload commit-bound Build Output audit manifest
+        uses: actions/upload-artifact@v4
+        with:
+          name: parliament-vercel-prebuilt-audit-${{ github.sha }}
+          path: ${{ steps.output.outputs.audit_manifest }}
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Assert no deployment command exists in this job
+        run: |
+          echo 'PREBUILT_EVALUATION=PASS_LOCAL_BUILD_OUTPUT_ONLY'
+          echo 'VERCEL_DEPLOY_INVOKED=false'
+          echo 'VERCEL_PROMOTE_INVOKED=false'

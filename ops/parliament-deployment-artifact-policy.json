@@ -1,0 +1,60 @@
+{
+  "schema_version": "woek-parliament-deployment-artifact-policy-1.0",
+  "project": {
+    "name": "woek-parlament",
+    "id": "prj_h1X7GuXOVo1bdnOfoYXzTfP8ygBK",
+    "root_directory": "woek-parlament-app"
+  },
+  "canonical_source": "GITHUB",
+  "artifact_storage": {
+    "ci": "GITHUB_ACTIONS",
+    "public_release": "GITHUB_RELEASES"
+  },
+  "source_inputs": [
+    {
+      "path": "woek-parlament-app",
+      "role": "PARLIAMENT_BUILD_AND_RUNTIME_ROOT"
+    },
+    {
+      "path": "datenschutz.html",
+      "role": "EXACT_EXTERNAL_PRIVACY_GOVERNANCE_DEPENDENCY",
+      "consumer": "woek-parlament-app/scripts/quality/check-privacy-governance.mjs"
+    }
+  ],
+  "allowed_top_level_entries": [
+    "datenschutz.html",
+    "woek-parlament-app"
+  ],
+  "forbidden_top_level_entries": [
+    "assets",
+    "audit-manifests",
+    "components",
+    "content",
+    "docs",
+    "institute",
+    "ops",
+    "outputs",
+    "public",
+    "scripts",
+    "tools",
+    "woek-academy-app",
+    "woek-akademie-app"
+  ],
+  "archive": {
+    "format": "tgz",
+    "deterministic_gzip_mtime": 0,
+    "preserve_git_archive_commit_identity": true,
+    "manifest_hash": "SHA-256"
+  },
+  "vercel_contract": {
+    "invocation_root": "REPOSITORY_ROOT",
+    "configured_root_directory_must_remain": "woek-parlament-app",
+    "automatic_git_deployments": false,
+    "automatic_preview_deployments": false,
+    "source_archive_fallback": "vercel deploy --archive=tgz",
+    "preferred_evaluation": "vercel build --prod followed by vercel deploy --prebuilt",
+    "cloud_deploy_requires_explicit_owner_authorization": true,
+    "production_mode": "PROMOTE_SAME_TESTED_RC_WITHOUT_REBUILD",
+    "retry_without_new_owner_approval": false
+  }
+}

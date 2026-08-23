@@ -23,6 +23,8 @@
     "check:hosting-cost": "node scripts/ops/check-hosting-cost-guard.mjs",
     "check:hosting-cost:vercel": "node scripts/ops/check-vercel-account-cost-guard.mjs",
     "check:vercel-release-budget": "node scripts/ops/check-vercel-release-budget.mjs",
+    "check:parliament-deployment-artifact": "python3 tools/build_parliament_deployment_artifact.py check --commit HEAD --require-clean",
+    "build:parliament-deployment-artifact": "python3 tools/build_parliament_deployment_artifact.py build --commit HEAD --output-dir outputs/parliament-deployment --require-clean --verify-reproducible",
     "reserve:vercel-build": "node scripts/ops/reserve-vercel-build-slot.mjs",
     "normalize:footer": "node scripts/site/normalize-site-footer.mjs",
     "import:all": "node scripts/import/all.mjs",
