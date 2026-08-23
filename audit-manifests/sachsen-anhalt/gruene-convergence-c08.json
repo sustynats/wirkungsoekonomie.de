@@ -1,0 +1,98 @@
+{
+  "schema_version": "woek-st-gruene-convergence-1.0",
+  "manifest_id": "ST-GRUENE-CONVERGENCE-C08",
+  "source": {
+    "issue": 234,
+    "comments": [
+      {"id": 5376974842, "marker": "ST-GRUENE-PSP-R12", "updated_at": "2026-08-22T01:10:39Z", "body_sha256": "915a7e1e7a5f1309da5e25fad20c805bda0557a15e5f0675d5ef023e2a519a09"},
+      {"id": 5373020584, "marker": "ST-GRUENE-A04", "updated_at": "2026-08-21T17:17:27Z", "body_sha256": "2328b2a845a8818752d77545b4edc97cb635ffcabd27e571651d19a112e704ab"},
+      {"id": 5373696133, "marker": "ST-GRUENE-A05", "updated_at": "2026-08-21T18:24:54Z", "body_sha256": "bc4b87456bf71a9a5c3c4ba0491b77176c1f109c4e53915204a0540af2b457a6"}
+    ],
+    "convergence_predecessor": "ST-GRUENE-CONVERGENCE-C07"
+  },
+  "scope": {
+    "historical_first": "0225",
+    "historical_last": "0252",
+    "working_row_count": 28,
+    "working_register": "woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-gruene-zusagen.md",
+    "working_register_source_hash": "73130003d247bad51e27bb63bc140bf1aa815ebe51bf77bcdf9c348da5f4a48d",
+    "history_only": true
+  },
+  "historical_roles": {
+    "active_effect_leaf": [
+      "0229", "0231", "0232", "0233", "0235", "0238", "0240", "0241", "0242", "0243",
+      "0244", "0245", "0246", "0247", "0248", "0250", "0251", "0252"
+    ],
+    "context_design_non_effect_source_leaf": ["0225", "0226", "0227", "0230", "0234", "0237"],
+    "parent_provenance_nonleaf": ["0228", "0239", "0249"],
+    "duplicate_restatement_nonleaf": ["0236"]
+  },
+  "versioned_roles": {
+    "active_effect_leaf": [
+      "ltw-2026-st-gruene-0228-c1-buergerraete",
+      "ltw-2026-st-gruene-0228-c2-buergerhaushalte",
+      "ltw-2026-st-gruene-0228-c3-jugendparlamente",
+      "ltw-2026-st-gruene-0228-c5-lobbyregister-land",
+      "ltw-2026-st-gruene-0238-c1-digitale-beteiligungsplattformen-kommunal",
+      "ltw-2026-st-gruene-0239-c1-verbindliche-ortschaftsratsbudgets",
+      "ltw-2026-st-gruene-0239-c2-ortschaftsraete-echte-entscheidungskompetenzen",
+      "ltw-2026-st-gruene-src-p35-parlament-der-doerfer-dialogformat",
+      "ltw-2026-st-gruene-v2-after-0241-buergermeister-kreistag-unvereinbarkeit",
+      "ltw-2026-st-gruene-v2-0242-child-mehrsprachig-einfache-sprache-kinderbetreuung-hybrid",
+      "ltw-2026-st-gruene-v2-0244-child-schulmitbestimmung-drittelparitaet-sozialkunde",
+      "ltw-2026-st-gruene-v2-after-0246-kommunalrechtsportale",
+      "ltw-2026-st-gruene-v2-after-0247-barrierefreie-verwaltungskommunikation",
+      "ltw-2026-st-gruene-v2-0248-child-ki-standards-cloud-fortbildung",
+      "ltw-2026-st-gruene-v2-0249-child-buergerversicherung",
+      "ltw-2026-st-gruene-v2-after-0250-keine-fruehe-altersbezuege-ohne-abzug"
+    ],
+    "context_design_non_effect_source_leaf": ["ltw-2026-st-gruene-v2-0252-heading-2-2-kommunen"],
+    "parent_scope_nonleaf": ["ltw-2026-st-gruene-0228-c4-digitale-beteiligungsformate"],
+    "duplicate_restatement_nonleaf": ["ltw-2026-st-gruene-v2-after-0241-buergerhaushalte"]
+  },
+  "lineage_edges": {
+    "0228": [
+      "ltw-2026-st-gruene-0228-c1-buergerraete",
+      "ltw-2026-st-gruene-0228-c2-buergerhaushalte",
+      "ltw-2026-st-gruene-0228-c3-jugendparlamente",
+      "ltw-2026-st-gruene-0228-c4-digitale-beteiligungsformate",
+      "ltw-2026-st-gruene-0228-c5-lobbyregister-land"
+    ],
+    "0238": ["ltw-2026-st-gruene-0238-c1-digitale-beteiligungsplattformen-kommunal"],
+    "0239": ["ltw-2026-st-gruene-0239-c1-verbindliche-ortschaftsratsbudgets", "ltw-2026-st-gruene-0239-c2-ortschaftsraete-echte-entscheidungskompetenzen"],
+    "0242": ["ltw-2026-st-gruene-v2-0242-child-mehrsprachig-einfache-sprache-kinderbetreuung-hybrid"],
+    "0244": ["ltw-2026-st-gruene-v2-0244-child-schulmitbestimmung-drittelparitaet-sozialkunde"],
+    "0248": ["ltw-2026-st-gruene-v2-0248-child-ki-standards-cloud-fortbildung"],
+    "0249": ["ltw-2026-st-gruene-v2-0249-child-buergerversicherung"],
+    "0252": ["ltw-2026-st-gruene-v2-0252-heading-2-2-kommunen"]
+  },
+  "standalone_versioned_active_effect_leaves": [
+    "ltw-2026-st-gruene-src-p35-parlament-der-doerfer-dialogformat",
+    "ltw-2026-st-gruene-v2-after-0241-buergermeister-kreistag-unvereinbarkeit",
+    "ltw-2026-st-gruene-v2-after-0246-kommunalrechtsportale",
+    "ltw-2026-st-gruene-v2-after-0247-barrierefreie-verwaltungskommunikation",
+    "ltw-2026-st-gruene-v2-after-0250-keine-fruehe-altersbezuege-ohne-abzug"
+  ],
+  "semantic_relations": [
+    {"from": "0236", "relation": "RESTATEMENT_SAME_EFFECT_FAMILY", "to": "ltw-2026-st-gruene-0228-c1-buergerraete", "count": 0},
+    {"from": "ltw-2026-st-gruene-v2-after-0241-buergerhaushalte", "relation": "RESTATEMENT_SAME_EFFECT_FAMILY", "to": "ltw-2026-st-gruene-0228-c2-buergerhaushalte", "count": 0},
+    {"from": "ltw-2026-st-gruene-0228-c4-digitale-beteiligungsformate", "relation": "PARENT_SCOPE", "to": "ltw-2026-st-gruene-0238-c1-digitale-beteiligungsplattformen-kommunal", "count": 0}
+  ],
+  "counts": {
+    "historical_active_effect_leaves": 18,
+    "versioned_active_effect_leaves": 16,
+    "non_effect_source_leaves": 7,
+    "parent_provenance_nonleaves": 4,
+    "duplicate_restatement_nonleaves": 2,
+    "authoritative_source_leaves": 41,
+    "authoritative_effect_leaves": 34
+  },
+  "constraints": {
+    "new_stable_ids": 0,
+    "current_740_mutation": "NONE",
+    "fach_synthesis": "FORBIDDEN",
+    "dns_mapping": "NOT_MAPPED_HERE",
+    "recommendation": "NOT_AVAILABLE_AT_SOURCE_UNIT_LEVEL",
+    "global_count_freeze": "LOCKED_PENDING_R13_PLUS_AND_UNION_GATE"
+  }
+}

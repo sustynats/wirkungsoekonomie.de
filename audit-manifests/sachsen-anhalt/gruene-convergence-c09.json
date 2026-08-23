@@ -1,0 +1,54 @@
+{
+  "schema_version": "woek-st-gruene-convergence-1.0",
+  "manifest_id": "ST-GRUENE-CONVERGENCE-C09",
+  "source": {
+    "issue": 234,
+    "comments": [
+      {"id": 5377249472, "marker": "ST-GRUENE-PSP-R13", "updated_at": "2026-08-22T02:01:25Z", "body_sha256": "aaf3eab782d32ad6f002204338a7137c039658177f49fdb4adf768afbb8dcf42"},
+      {"id": 5373696133, "marker": "ST-GRUENE-A05", "updated_at": "2026-08-21T18:24:54Z", "body_sha256": "bc4b87456bf71a9a5c3c4ba0491b77176c1f109c4e53915204a0540af2b457a6"}
+    ],
+    "convergence_predecessor": "ST-GRUENE-CONVERGENCE-C08"
+  },
+  "scope": {
+    "historical_first": "0253",
+    "historical_last": "0257",
+    "working_row_count": 5,
+    "working_register": "woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-gruene-zusagen.md",
+    "working_register_source_hash": "73130003d247bad51e27bb63bc140bf1aa815ebe51bf77bcdf9c348da5f4a48d",
+    "history_only": true
+  },
+  "historical_roles": {
+    "active_effect_leaf": ["0253", "0254", "0255", "0256", "0257"]
+  },
+  "versioned_roles": {
+    "active_effect_leaf": [
+      "ltw-2026-st-gruene-v2-after-0254-resettlement-eu-kommunalfinanzierung",
+      "ltw-2026-st-gruene-v2-after-0254-beteiligungsprozesse-kommunaler-auftrag",
+      "ltw-2026-st-gruene-v2-0255-child-sozialplanung-begegnungsraeume"
+    ],
+    "context_design_non_effect_source_leaf": ["ltw-2026-st-gruene-v2-0257-heading-2-3-rechtsextremismus"]
+  },
+  "lineage_edges": {
+    "0255": ["ltw-2026-st-gruene-v2-0255-child-sozialplanung-begegnungsraeume"],
+    "0257": ["ltw-2026-st-gruene-v2-0257-heading-2-3-rechtsextremismus"]
+  },
+  "standalone_versioned_active_effect_leaves": [
+    "ltw-2026-st-gruene-v2-after-0254-resettlement-eu-kommunalfinanzierung",
+    "ltw-2026-st-gruene-v2-after-0254-beteiligungsprozesse-kommunaler-auftrag"
+  ],
+  "counts": {
+    "historical_active_effect_leaves": 5,
+    "versioned_active_effect_leaves": 3,
+    "non_effect_source_leaves": 1,
+    "authoritative_source_leaves": 9,
+    "authoritative_effect_leaves": 8
+  },
+  "constraints": {
+    "new_stable_ids": 0,
+    "current_740_mutation": "NONE",
+    "fach_synthesis": "FORBIDDEN",
+    "dns_mapping": "NOT_MAPPED_HERE",
+    "recommendation": "NOT_AVAILABLE_AT_SOURCE_UNIT_LEVEL",
+    "global_count_freeze": "LOCKED_PENDING_R14_PLUS_AND_UNION_GATE"
+  }
+}
