@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SamePageQueryForm } from "@/app/components/SamePageNavigation";
 import { GovernmentActionCard } from "@/app/components/government/GovernmentActionCard";
 import { actionTypeLabels, getGovernmentPublicData } from "@/lib/government/public-data";
 import { searchableOfficialIdentifierText } from "@/lib/government/official-identifiers";
@@ -26,12 +27,12 @@ export default async function GovernmentActionsPage({ searchParams }: { searchPa
       <p className="eyebrow">Government Data 1.2</p>
       <h1>Regierungsakte</h1>
       <p className="lead">Hier stehen ausschließlich faktisch bestätigte Regierungsakte mit amtlicher Primärquelle. Der kanonische Arbeitsbestand ist größer; ungeklärte Kandidaten erscheinen nicht in dieser Liste.</p>
-      <form className="government-filter" role="search">
+      <SamePageQueryForm className="government-filter" role="search">
         <label>Regierungsakte durchsuchen<input name="q" type="search" defaultValue={String(params.q ?? "")} placeholder="Titel, Ressort oder amtliche Kennung" /></label>
         <label>Art des Regierungsakts<select name="typ" defaultValue={type}><option value="">Alle Arten</option>{types.map((value) => <option key={value} value={value}>{actionTypeLabels[value] ?? value}</option>)}</select></label>
         <label>Themenfeld<select name="thema" defaultValue={theme}><option value="">Alle Themen</option>{Object.keys(themeTerms).map((value) => <option key={value} value={value}>{value}</option>)}</select></label>
         <button className="button button-primary" type="submit">Filtern</button>
-      </form>
+      </SamePageQueryForm>
       <p className="government-result-count" aria-live="polite">{filtered.length.toLocaleString("de-DE")} Treffer. Angezeigt werden höchstens 120 je Ansicht.</p>
       <div className="government-action-grid">{filtered.slice(0, 120).map((action) => <GovernmentActionCard key={action.government_action_id} action={action} />)}</div>
       {filtered.length > 120 && <div className="notice notice-neutral"><strong>Ergebnis begrenzt</strong><p>Bitte Suche oder Filter verfeinern. So wird der umfangreiche Faktenbestand nicht vollständig in eine einzelne Browseransicht geladen.</p></div>}

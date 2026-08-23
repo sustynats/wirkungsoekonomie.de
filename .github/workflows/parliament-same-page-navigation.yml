@@ -1,0 +1,38 @@
+name: Parliament same-page navigation
+
+on:
+  pull_request:
+    paths:
+      - "woek-parlament-app/app/**"
+      - "woek-parlament-app/scripts/quality/check-same-page-navigation.mjs"
+      - "woek-parlament-app/tests/same-page-navigation.test.ts"
+      - "woek-parlament-app/package.json"
+      - "woek-parlament-app/package-lock.json"
+      - ".github/workflows/parliament-same-page-navigation.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: parliament-same-page-navigation-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  same-page-navigation:
+    name: Shared scroll, routing and source gates
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: woek-parlament-app
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: woek-parlament-app/package-lock.json
+      - run: npm ci
+      - run: npm run check:same-page-navigation
+      - run: npm run typecheck
+      - run: npx tsx --test tests/same-page-navigation.test.ts

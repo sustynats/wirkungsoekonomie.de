@@ -27,7 +27,7 @@ export const dynamic = "force-dynamic";
 export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   await connection();
   return (
-    <html lang="de">
+    <html lang="de" data-scroll-behavior="smooth">
       <body>
         <a className="skip-link" href="#content">Zum Inhalt springen</a>
         <SiteAnalyticsTracker />

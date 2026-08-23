@@ -12,6 +12,7 @@ import { CompletePublicationSource } from "@/app/components/CompletePublicationS
 import { DecisionReadinessGate } from "@/app/components/DecisionReadinessGate";
 import { OverviewAssessment } from "@/app/components/OverviewAssessment";
 import { PublicMaturity } from "@/app/components/PublicMaturity";
+import { SamePageStateLink } from "@/app/components/SamePageNavigation";
 import { CommonTargetsComparison, ProblemGoalReview } from "@/app/components/DecisionMethodLayers";
 import { RecommendationSection } from "@/app/components/recommendations/RecommendationSection";
 import { getCase, formatDate, materialityLabel } from "@/lib/cases";
@@ -119,7 +120,7 @@ export default async function DecisionPage({ params, searchParams }: { params: P
 
       <nav className="decision-view-nav" aria-label="Ansichten dieser Wirkungsakte">
         <p><strong>Wirkungsakte</strong><span>60 Sekunden zuerst, Details gezielt öffnen.</span></p>
-        <div>{visibleDecisionViews.map((view) => <Link key={view.id} href={view.id === "ueberblick" ? `/entscheidungen/${item.slug}` : `/entscheidungen/${item.slug}?ansicht=${view.id}`} aria-current={activeView === view.id ? "page" : undefined}>{view.label}</Link>)}</div>
+        <div>{visibleDecisionViews.map((view) => <SamePageStateLink key={view.id} href={view.id === "ueberblick" ? `/entscheidungen/${item.slug}` : `/entscheidungen/${item.slug}?ansicht=${view.id}`} aria-current={activeView === view.id ? "page" : undefined}>{view.label}</SamePageStateLink>)}</div>
       </nav>
 
       {activeView === "ueberblick" && decisionReview && <ProblemGoalReview impactCaseId={reviewCaseId} />}
