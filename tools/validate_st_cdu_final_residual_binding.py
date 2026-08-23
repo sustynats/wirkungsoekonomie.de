@@ -14,7 +14,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-BINDING_PATH = ROOT / "content/audits/sachsen-anhalt/cdu-final-residual-binding-v1.json"
+BINDING_PATH = ROOT / "audit-manifests/sachsen-anhalt/cdu-final-residual-binding-v1.json"
 REPOSITORY = "sustynats/wirkungsoekonomie.de"
 
 

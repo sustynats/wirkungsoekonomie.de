@@ -3,7 +3,7 @@ name: ST CDU final residual binding
 on:
   pull_request:
     paths:
-      - "content/audits/sachsen-anhalt/cdu-final-residual-binding-v1.json"
+      - "audit-manifests/sachsen-anhalt/cdu-final-residual-binding-v1.json"
       - "tools/validate_st_cdu_final_residual_binding.py"
       - ".github/workflows/st-cdu-final-residual-binding.yml"
   workflow_dispatch:
