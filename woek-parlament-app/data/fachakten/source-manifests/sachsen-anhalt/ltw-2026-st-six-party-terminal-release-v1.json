@@ -1,0 +1,168 @@
+{
+  "authoritative_totals": {
+    "effect_mechanisms": 5308,
+    "non_effect_source_leaves": 95,
+    "source_units": 5403
+  },
+  "base_main_commit": "e7154e3540e46beb64e64880d0fcee3a53781f00",
+  "constraints": {
+    "dns_mapping_synthesized": false,
+    "new_fach_semantics_created": false,
+    "party_score_created": false,
+    "recommendation_synthesized": false,
+    "vercel_build_triggered": false
+  },
+  "counting_rule": {
+    "authoritative_effect_mechanisms": "Sum of the six frozen effect-bearing leaf sets.",
+    "authoritative_source_units": "Sum of the six collision-resolved frozen party source-unit sets.",
+    "historical_working_register": "Immutable Release-1 working dimension; never arithmetically combined with authoritative source units.",
+    "non_effect_source_leaves": "Authoritative source leaves intentionally carrying no effect mechanism; source units minus effect mechanisms."
+  },
+  "election": "ltw-2026-st",
+  "expected_party_count": 6,
+  "gates": {
+    "all_primary_source_parity": "PASS_FULL_PROGRAMME",
+    "all_relation_graphs_acyclic": "PASS",
+    "all_source_gaps_zero": "PASS",
+    "all_stable_id_collisions_zero": "PASS",
+    "all_terminal_fach_sets": "PASS_PARTY_SPECIFIC_TERMINAL_GATES",
+    "public_projection_complete": "PASS",
+    "six_of_six_terminal": "PASS"
+  },
+  "hash_definition": "SHA-256 of canonical JSON (UTF-8, sorted keys, compact separators) excluding release_descriptor_sha256",
+  "historical_working_register": {
+    "count": 2921,
+    "role": "HISTORICAL_RELEASE_1_WORKING_DIMENSION"
+  },
+  "jurisdiction": "sachsen-anhalt",
+  "manifest_id": "LTW-2026-ST-SIX-PARTY-TERMINAL-RELEASE-V1",
+  "parties": [
+    {
+      "authoritative_effect_mechanism_count": 736,
+      "authoritative_source_unit_count": 737,
+      "hash_definition": "frozen_exact_union_sha256",
+      "historical_working_register_count": 344,
+      "manifest_content_sha256": "40c63bd93fe17093d5ba69b82efabaee9c31d51b23a14bae05579805b24db5e2",
+      "manifest_path": "audit-manifests/sachsen-anhalt/cdu-final-convergence-freeze-v1.json",
+      "manifest_raw_sha256": "64994e275dbe3d139fe10f0e9f8db9ff5958f195cf31a78ecb4e0be382f3eaae",
+      "non_effect_source_leaf_count": 1,
+      "party": "CDU Sachsen-Anhalt",
+      "primary_source_parity": "PASS_FULL_PROGRAMME",
+      "relation_graph_acyclic": true,
+      "source_gap_count": 0,
+      "source_key": "ltw-2026-st-cdu",
+      "stable_id_collision_count": 0,
+      "terminal_fach_gate": "PASS"
+    },
+    {
+      "authoritative_effect_mechanism_count": 894,
+      "authoritative_source_unit_count": 894,
+      "hash_definition": "canonical full JSON object",
+      "historical_working_register_count": 174,
+      "manifest_content_sha256": "337e1be9535830b6ca6f24df79440d1946f61d82bdefb70f0450e5d7bee54874",
+      "manifest_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/spd-final-active-leaf-manifest-c01i.json",
+      "manifest_raw_sha256": "9afe25ebfad343f65a96cb2d6ef2d2b0eb9be5ed9409b6a062af75e044dd604e",
+      "non_effect_source_leaf_count": 0,
+      "party": "SPD Sachsen-Anhalt",
+      "primary_source_parity": "PASS_FULL_PROGRAMME",
+      "relation_graph_acyclic": true,
+      "source_gap_count": 0,
+      "source_key": "ltw-2026-st-spd",
+      "stable_id_collision_count": 0,
+      "terminal_fach_gate": "PASS_REUSED"
+    },
+    {
+      "authoritative_effect_mechanism_count": 1147,
+      "authoritative_source_unit_count": 1241,
+      "hash_definition": "canonical JSON excluding descriptor_sha256",
+      "historical_working_register_count": 740,
+      "manifest_content_sha256": "bcb003608a6fe3777ab09736505c5bb2e9f55422bb4ba0a09abe0127cf7b0577",
+      "manifest_path": "audit-manifests/sachsen-anhalt/gruene-final-union-c17.json",
+      "manifest_raw_sha256": "1b939e42aee5983173861a39295caf25494a2bd1a6d8cca09fd2b4ea76dd3de4",
+      "non_effect_source_leaf_count": 94,
+      "party": "BÜNDNIS 90/DIE GRÜNEN Sachsen-Anhalt",
+      "primary_source_parity": "PASS_FULL_PROGRAMME",
+      "relation_graph_acyclic": true,
+      "source_gap_count": 0,
+      "source_key": "ltw-2026-st-gruene",
+      "stable_id_collision_count": 0,
+      "terminal_fach_gate": "PASS_REUSED_TERMINAL_LEAVES"
+    },
+    {
+      "authoritative_effect_mechanism_count": 1243,
+      "authoritative_source_unit_count": 1243,
+      "hash_definition": "canonical full JSON object",
+      "historical_working_register_count": 886,
+      "manifest_content_sha256": "307919d5a528b5fd4ef8794753c068d8ba2a83a142e538c7d3f3a201b636ccd5",
+      "manifest_path": "content/audits/sachsen-anhalt/linke-final-union-manifest-c26.json",
+      "manifest_raw_sha256": "307919d5a528b5fd4ef8794753c068d8ba2a83a142e538c7d3f3a201b636ccd5",
+      "non_effect_source_leaf_count": 0,
+      "party": "Die Linke Sachsen-Anhalt",
+      "primary_source_parity": "PASS_FULL_PROGRAMME",
+      "relation_graph_acyclic": true,
+      "source_gap_count": 0,
+      "source_key": "ltw-2026-st-linke",
+      "stable_id_collision_count": 0,
+      "terminal_fach_gate": "PASS_REUSED_EXACTLY_NO_NEW_JUDGEMENT"
+    },
+    {
+      "authoritative_effect_mechanism_count": 669,
+      "authoritative_source_unit_count": 669,
+      "hash_definition": "canonical JSON excluding canonical_manifest_payload_sha256 and hash_definition",
+      "historical_working_register_count": 311,
+      "manifest_content_sha256": "df38b10505b4e560f00b5c4b771928699a5d700da933237c454ba47220f69875",
+      "manifest_path": "content/audits/sachsen-anhalt/bsw-final-union-manifest-r22.json",
+      "manifest_raw_sha256": "5e56b59ed6ff9f579f3bfecc16142d7a43fde71dc7f967cfe13c409a287a46f9",
+      "non_effect_source_leaf_count": 0,
+      "party": "BSW Sachsen-Anhalt",
+      "primary_source_parity": "PASS_FULL_PROGRAMME",
+      "relation_graph_acyclic": true,
+      "source_gap_count": 0,
+      "source_key": "ltw-2026-st-bsw",
+      "stable_id_collision_count": 0,
+      "terminal_fach_gate": "PASS"
+    },
+    {
+      "authoritative_effect_mechanism_count": 619,
+      "authoritative_source_unit_count": 619,
+      "hash_definition": "canonical full JSON object",
+      "historical_working_register_count": 466,
+      "manifest_content_sha256": "4223fde6b37165d56242df35d0278e77e16f55ea100d25e13607413c77fa6607",
+      "manifest_path": "content/audits/sachsen-anhalt/afd-final-union-manifest-a43.json",
+      "manifest_raw_sha256": "6eaf6020a3e412535c40542dde1ddab655cace5b8f1e8cd177efa90537f2cf90",
+      "non_effect_source_leaf_count": 0,
+      "party": "Alternative für Deutschland Sachsen-Anhalt",
+      "primary_source_parity": "PASS_FULL_PROGRAMME",
+      "relation_graph_acyclic": true,
+      "source_gap_count": 0,
+      "source_key": "ltw-2026-st-afd",
+      "stable_id_collision_count": 0,
+      "terminal_fach_gate": "PASS_REUSED_EXACTLY"
+    }
+  ],
+  "publication_integrity": {
+    "rendered_content_paths": [
+      "/laender/sachsen-anhalt",
+      "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-cdu",
+      "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-spd",
+      "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-gruene",
+      "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-linke",
+      "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-bsw",
+      "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-afd"
+    ],
+    "required_content_paths": [
+      "/laender/sachsen-anhalt",
+      "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-cdu",
+      "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-spd",
+      "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-gruene",
+      "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-linke",
+      "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-bsw",
+      "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-afd"
+    ],
+    "unrendered_content_paths": []
+  },
+  "release_descriptor_sha256": "6e0cf6fce5c41734bfd3f5480e562b93aff38a759c9b57b55298d8da4ee9dcee",
+  "schema_version": "woek-st-six-party-terminal-release-1.0",
+  "status": "TERMINAL_6_OF_6",
+  "terminal_party_count": 6
+}

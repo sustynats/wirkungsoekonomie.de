@@ -9,6 +9,7 @@ import {
   type ProgrammeEvidence,
   type ProgrammeFindingKind,
 } from "@/data/presentation/sachsen-anhalt-programme-editorial-v2";
+import { saxonyAnhaltTerminalPartyBySourceKey, saxonyAnhaltTerminalRelease } from "@/data/presentation/sachsen-anhalt-terminal-release";
 import type { CompletePublicationSource as PublicationSource } from "@/lib/publication/fachakten";
 import {
   buildSaxonyAnhaltProgrammeModel,
@@ -361,6 +362,8 @@ export function SaxonyAnhaltProgrammeAnalysisV3({ programme, review, commitments
   const model = buildSaxonyAnhaltProgrammeModel(review.markdown, commitments.markdown);
   const editorial = saxonyAnhaltProgrammeEditorial(programme.sourceKey);
   if (!editorial) throw new Error(`Missing Sachsen-Anhalt programme editorial v2 for ${programme.sourceKey}`);
+  const terminalParty = saxonyAnhaltTerminalPartyBySourceKey.get(programme.sourceKey);
+  if (!terminalParty) throw new Error(`Missing terminal Sachsen-Anhalt release record for ${programme.sourceKey}`);
   const communicationImpact = getCommunicationMediaImpact(programme.sourceKey);
   if (!communicationImpact) throw new Error(`Missing Sachsen-Anhalt communication-media impact for ${programme.sourceKey}`);
   const counts = summarizeStatuses(model.commitments);
@@ -394,7 +397,9 @@ export function SaxonyAnhaltProgrammeAnalysisV3({ programme, review, commitments
         <h2>Keine Wahlempfehlung. Keine Partei-Gesamtnote.</h2>
         <p>Bewertet werden konkrete Vorschläge, Wirkpfade, Risiken und Schutzgrenzen. Breite Programme haben regelmäßig mehrere Richtungen zugleich.</p>
         <dl>
-          <div><dt>Zusageeinheiten im aktuellen Quellenregister</dt><dd>{model.commitmentCount.toLocaleString("de-DE")}</dd></div>
+          <div><dt>Autoritative Source Units</dt><dd>{terminalParty.authoritative_source_unit_count.toLocaleString("de-DE")}</dd></div>
+          <div><dt>Quellengebundene Wirkungsmechanismen</dt><dd>{terminalParty.authoritative_effect_mechanism_count.toLocaleString("de-DE")}</dd></div>
+          <div><dt>Historischer Release-1-Arbeitsbestand</dt><dd>{model.commitmentCount.toLocaleString("de-DE")} · getrennte Zähldimension</dd></div>
           <div><dt>Redaktionell nachgeprüfte Schlüsselpfade</dt><dd>{reviewedCount}</dd></div>
           <div><dt>Analyseperspektive</dt><dd>Ex ante - Wirkungspotenzial, keine behauptete Ist-Wirkung</dd></div>
           {decisionDate && <div><dt>Programmbeschluss</dt><dd>{decisionDate}</dd></div>}
@@ -461,7 +466,8 @@ export function SaxonyAnhaltProgrammeAnalysisV3({ programme, review, commitments
     <section id="woek-kurzbewertung" aria-labelledby="kurzstatus-title">
       <div className={styles.sectionHeader}><p className={styles.eyebrow}>Analyseumfang</p><h2 id="kurzstatus-title">Was ist geprüft - und was bleibt offen?</h2></div>
       <div className={styles.detailGrid}>
-        <article className={styles.detailCard}><h4>Aktuelles Quellenregister</h4><p><strong>{model.commitmentCount.toLocaleString("de-DE")}</strong> Einträge im versionierten Arbeitsregister; finale Source-Unit-Parität offen</p></article>
+        <article className={styles.detailCard}><h4>Terminale Quellenbasis</h4><p><strong>{terminalParty.authoritative_source_unit_count.toLocaleString("de-DE")}</strong> autoritative Source Units · volle Primärquellen-Parität</p></article>
+        <article className={styles.detailCard}><h4>Wirkungsmechanismen</h4><p><strong>{terminalParty.authoritative_effect_mechanism_count.toLocaleString("de-DE")}</strong> effekttragende Blätter · {terminalParty.non_effect_source_leaf_count.toLocaleString("de-DE")} nicht-wirkungstragende Source Leaves</p></article>
         <article className={styles.detailCard}><h4>Entscheidungsreife</h4><p>{counts.readiness.slice(0, 2).map(([status, count]) => `${count} ${publicProgrammeStatus(status)}`).join(" · ") || "offen"}</p></article>
         <article className={styles.detailCard}><h4>Schutzgrenzen</h4><p><strong>{counts.boundaries.toLocaleString("de-DE")}</strong> Zusagen mit ausgewiesener Schutzprüfung im Altbestand</p></article>
         <article className={styles.detailCard}><h4>Editorial v2.0</h4><p><strong>{reviewedCount}</strong> Schlüsselpfade objektspezifisch nachgeprüft; übrige Richtungen fail-closed</p></article>
@@ -486,8 +492,8 @@ export function SaxonyAnhaltProgrammeAnalysisV3({ programme, review, commitments
     </section>
 
     <section id="vollstaendiges-zusageregister" aria-labelledby="register-title">
-      <div className={styles.sectionHeader}><p className={styles.eyebrow}>Originalzusagen</p><h2 id="register-title">Quelle vor Interpretation.</h2><p>Das aktuell versionierte Arbeitsregister bleibt nachvollziehbar erhalten. Primary-Source-Parity und Editorial-v2+-Re-Audit können zusätzliche oder gesplittete Source-Units ergänzen; das finale Source-Unit-Manifest und der endgültige Nenner sind noch nicht eingefroren.</p></div>
-      <details className={styles.proof}><summary>Versioniertes Arbeitsregister öffnen <span className={styles.summaryTeaser}>{model.commitments.length.toLocaleString("de-DE")} Einträge im aktuellen Register</span></summary><div className={styles.proofBody}>
+      <div className={styles.sectionHeader}><p className={styles.eyebrow}>Historisches Zusageregister</p><h2 id="register-title">Quelle vor Interpretation.</h2><p>Der versionierte Release-1-Arbeitsbestand bleibt vollständig nachvollziehbar erhalten. Er umfasst {model.commitments.length.toLocaleString("de-DE")} historische Einträge und wird nicht mit dem terminalen Nenner von {terminalParty.authoritative_source_unit_count.toLocaleString("de-DE")} autoritativen Source Units verrechnet.</p></div>
+      <details className={styles.proof}><summary>Historisches Arbeitsregister öffnen <span className={styles.summaryTeaser}>{model.commitments.length.toLocaleString("de-DE")} unveränderte Release-1-Einträge</span></summary><div className={styles.proofBody}>
         {model.commitments.map((commitment) => <p key={`register-${commitment.key}`}><strong>{commitment.index}.</strong> {commitment.sourceText}{commitment.page ? ` · Seite ${commitment.page}` : ""}</p>)}
       </div></details>
     </section>
@@ -499,7 +505,10 @@ export function SaxonyAnhaltProgrammeAnalysisV3({ programme, review, commitments
         <div><dt>Quellenformat</dt><dd>{programme.sourceFormat}</dd></div>
         <div><dt>Release-1-Fachstand</dt><dd>{formatDate(review.verifiedAt) ?? review.verifiedAt}</dd></div>
         <div><dt>Aktuelle Editorial-Schicht</dt><dd>WÖk Wahlprogramm-Blaupause v{editorial.version}</dd></div>
+        <div><dt>Terminaler Quellenstatus</dt><dd>6/6 · volle Primärquellen-Parität</dd></div>
+        <div><dt>Manifest-Nachweis</dt><dd>{terminalParty.manifest_content_sha256}</dd></div>
       </dl>
+      <p><small>Landesweiter Terminal-Release: {saxonyAnhaltTerminalRelease.release_descriptor_sha256}</small></p>
       <p><Link href="/laender/sachsen-anhalt/quellen">Originalquellen und Programmnachweise öffnen →</Link></p>
     </section>
 
