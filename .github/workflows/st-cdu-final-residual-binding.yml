@@ -1,0 +1,31 @@
+name: ST CDU final residual binding
+
+on:
+  pull_request:
+    paths:
+      - "content/audits/sachsen-anhalt/cdu-final-residual-binding-v1.json"
+      - "tools/validate_st_cdu_final_residual_binding.py"
+      - ".github/workflows/st-cdu-final-residual-binding.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: read
+
+concurrency:
+  group: st-cdu-final-residual-binding-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  final-residual:
+    name: 0259 binding and finite 0244 residual
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Validate local contract and pinned GitHub evidence
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 tools/validate_st_cdu_final_residual_binding.py --check-github
