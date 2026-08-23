@@ -1,9 +1,9 @@
 # #253 State sustainability architecture URL/file audit
 
-- Sitemap routes: **2061**
+- Sitemap routes: **2064**
 - Sitemap routes without directly resolved source HTML: **0**
-- Extra tracked source HTML not in sitemap: **14199**
-- Routes with non-default #253 action: **1437**
+- Extra tracked source HTML not in sitemap: **14200**
+- Routes with non-default #253 action: **1440**
 - Routes with Wirkungsblindheit/novelty/absence claim signals: **75**
 
 Contract fields on every matrix item: `source_path`, `public_url`, `historical_publication`, `relevance`, `classification`, `required_action`, `source_refs`, `status`.
@@ -149,6 +149,7 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-026e83ae84f6/ | `quellenarchiv/wok-g-026e83ae84f6/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-02a49572ebd6/ | `quellenarchiv/wok-g-02a49572ebd6/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-03e4284eee59/ | `quellenarchiv/wok-g-03e4284eee59/index.html` | ADD_SOURCE_LINKS | — |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-g-049374af1982/ | `quellenarchiv/wok-g-049374af1982/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-051c8932cfa5/ | `quellenarchiv/wok-g-051c8932cfa5/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-0544ef102fd3/ | `quellenarchiv/wok-g-0544ef102fd3/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-075062cf54cf/ | `quellenarchiv/wok-g-075062cf54cf/index.html` | ADD_SOURCE_LINKS | — |
@@ -300,11 +301,13 @@ Contract fields on every matrix item: `source_path`, `public_url`, `historical_p
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-b0395ff10ce2/ | `quellenarchiv/wok-g-b0395ff10ce2/index.html` | ADD_SOURCE_LINKS | evaluation |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-b2df54f90552/ | `quellenarchiv/wok-g-b2df54f90552/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-b675e208c6af/ | `quellenarchiv/wok-g-b675e208c6af/index.html` | ADD_SOURCE_LINKS | — |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-g-b78818a9ca21/ | `quellenarchiv/wok-g-b78818a9ca21/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-b9137fe575cb/ | `quellenarchiv/wok-g-b9137fe575cb/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-b967325f627b/ | `quellenarchiv/wok-g-b967325f627b/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-b9b5fa7066c0/ | `quellenarchiv/wok-g-b9b5fa7066c0/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-ba850cda3c33/ | `quellenarchiv/wok-g-ba850cda3c33/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-bc5a1a6cbc40/ | `quellenarchiv/wok-g-bc5a1a6cbc40/index.html` | ADD_SOURCE_LINKS | — |
+| https://wirkungsoekonomie.de/quellenarchiv/wok-g-bc5e5938a6c3/ | `quellenarchiv/wok-g-bc5e5938a6c3/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-c00c72cf81c3/ | `quellenarchiv/wok-g-c00c72cf81c3/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-c0c3ccf7d336/ | `quellenarchiv/wok-g-c0c3ccf7d336/index.html` | ADD_SOURCE_LINKS | — |
 | https://wirkungsoekonomie.de/quellenarchiv/wok-g-c393755f28a3/ | `quellenarchiv/wok-g-c393755f28a3/index.html` | ADD_SOURCE_LINKS | — |
@@ -1533,7 +1536,7 @@ Signals are review candidates, not automatic errors.
 ## Recursive non-HTML publication/support surfaces
 
 - Tracked support text files inventoried: **1009**
-- Combined matrix items (routes + extra HTML + support): **17269**
+- Combined matrix items (routes + extra HTML + support): **17273**
 - Every matrix item exposes the #253 contract fields: source_path, public_url, historical_publication, relevance, classification, required_action, source_refs and status.
 - Includes llms.txt, sitemap/search metadata, structured-data registries, glossary/source archive, library/journal/reference inputs and generators/workflows.
 
@@ -2020,7 +2023,7 @@ Signals are review candidates, not automatic errors.
 
 ## Review/action closure
 
-- Combined reviewed items: **17270**
+- Combined reviewed items: **17274**
 - Open semantic/action reviews after deterministic projection: **0**
 - Broad novelty/Wirkungsblindheit hits were dispositioned by a second-pass contextual state-absence review; isolated words are not treated as absence claims.
 - `AGENTS.md` is explicitly inventoried as a corrected current guardrail.
