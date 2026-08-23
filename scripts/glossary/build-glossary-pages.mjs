@@ -3203,6 +3203,30 @@ function writeStaleGlossaryRedirects() {
 
 writeStaleGlossaryRedirects();
 
+function updateGlossarySitemap(terms) {
+  const sitemapPath = "sitemap.xml";
+  if (!fs.existsSync(sitemapPath)) return;
+
+  let xml = fs.readFileSync(sitemapPath, "utf8");
+  xml = xml.replace(
+    /\s*<url><loc>https:\/\/wirkungsoekonomie\.de\/begriffe\/[^<]*<\/loc>(?:<lastmod>[^<]*<\/lastmod>)?<\/url>/gu,
+    "",
+  );
+
+  const lastModified = generatedAt.slice(0, 10);
+  const routes = unique([
+    "/begriffe/",
+    ...terms.map((term) => term.pageUrl || `/begriffe/${term.slug}/`),
+  ]).filter((route) => /^\/begriffe\/[a-z0-9][a-z0-9-/]*\/$/u.test(route) || route === "/begriffe/");
+  const entries = routes.map(
+    (route) => `  <url><loc>https://wirkungsoekonomie.de${route}</loc><lastmod>${lastModified}</lastmod></url>`,
+  );
+  xml = xml.replace("</urlset>", `${entries.join("\n")}\n</urlset>`);
+  fs.writeFileSync(sitemapPath, xml, "utf8");
+}
+
+updateGlossarySitemap(data.terms);
+
 const reportLines = [
   "# Content-Reference-Report",
   "",
