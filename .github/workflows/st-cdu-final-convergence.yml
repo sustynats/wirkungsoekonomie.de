@@ -1,0 +1,37 @@
+name: ST CDU final convergence
+
+on:
+  pull_request:
+    paths:
+      - "audit-manifests/sachsen-anhalt/cdu-final-convergence-freeze-v1.json"
+      - "audit-manifests/sachsen-anhalt/cdu-final-residual-binding-v1.json"
+      - "tools/finalize_st_cdu_convergence.py"
+      - "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-0244-final-source-bound-children-v1.json"
+      - "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-final-versioned-manifest-v1.json"
+      - "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-cdu-global-leaf-reconciliation-audit-v1.json"
+      - ".github/workflows/st-cdu-final-convergence.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: read
+
+concurrency:
+  group: st-cdu-final-convergence-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  final-convergence:
+    name: Exact 0244 children, 0259 binding, DAG and freeze
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Reproduce frozen union and validate pinned GitHub evidence
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 tools/finalize_st_cdu_convergence.py --check-github
+      - name: Assert deterministic generated artifacts
+        run: git diff --exit-code
