@@ -1,0 +1,31 @@
+name: ST GRUENE convergence C05
+
+on:
+  pull_request:
+    paths:
+      - "audit-manifests/sachsen-anhalt/gruene-convergence-c05.json"
+      - "tools/validate_st_gruene_convergence_c05.py"
+      - ".github/workflows/st-gruene-convergence-c05.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: read
+
+concurrency:
+  group: st-gruene-convergence-c05-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  convergence-c05:
+    name: Exact R09 role and edge ledger
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Validate committed ledger and pinned issue facts
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 tools/validate_st_gruene_convergence_c05.py --check-github
