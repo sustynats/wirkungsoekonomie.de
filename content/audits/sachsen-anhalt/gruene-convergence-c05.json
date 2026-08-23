@@ -1,0 +1,89 @@
+{
+  "schema_version": "woek-st-gruene-convergence-1.0",
+  "manifest_id": "ST-GRUENE-CONVERGENCE-C05",
+  "source": {
+    "issue": 234,
+    "comment_id": 5376363870,
+    "comment_updated_at": "2026-08-21T23:15:45Z",
+    "comment_body_sha256": "3d533f28cd5f0faf24acb54d3cffbdae6c2d578fca8ebda0b398a953878f3971",
+    "retro_marker": "ST-GRUENE-PSP-R09",
+    "convergence_predecessor": "ST-GRUENE-CONVERGENCE-C04"
+  },
+  "scope": {
+    "historical_first": "0109",
+    "historical_last": "0151",
+    "working_row_count": 43,
+    "working_register": "woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-gruene-zusagen.md",
+    "working_register_source_hash": "73130003d247bad51e27bb63bc140bf1aa815ebe51bf77bcdf9c348da5f4a48d",
+    "history_only": true
+  },
+  "historical_roles": {
+    "active_effect_leaf": [
+      "0109", "0112", "0113", "0114", "0115", "0116", "0118", "0119", "0120", "0123",
+      "0125", "0126", "0127", "0128", "0129", "0130", "0131", "0132", "0133", "0134",
+      "0136", "0137", "0141", "0142", "0146", "0148", "0149", "0150"
+    ],
+    "context_design_non_effect_source_leaf": ["0121", "0145"],
+    "parent_provenance_nonleaf": [
+      "0110", "0111", "0117", "0122", "0124", "0135", "0138", "0139", "0140", "0143",
+      "0144", "0147", "0151"
+    ]
+  },
+  "versioned_active_effect_leaves": [
+    "ST-GRUENE-PSP-R09-0001", "ST-GRUENE-PSP-R09-0002", "ST-GRUENE-PSP-R09-0003",
+    "ST-GRUENE-PSP-R09-0004", "ST-GRUENE-PSP-R09-0005", "ST-GRUENE-PSP-R09-0006",
+    "ST-GRUENE-PSP-R09-0007", "ST-GRUENE-PSP-R09-0008", "ST-GRUENE-PSP-R09-0009",
+    "ST-GRUENE-PSP-R09-0010", "ST-GRUENE-PSP-R09-0011", "ST-GRUENE-PSP-R09-0012",
+    "ST-GRUENE-PSP-R09-0013", "ST-GRUENE-PSP-R09-0014", "ST-GRUENE-PSP-R09-0015",
+    "ST-GRUENE-PSP-R09-0016", "ST-GRUENE-PSP-R09-0017", "ST-GRUENE-PSP-R09-0018",
+    "ST-GRUENE-PSP-R09-0019", "ST-GRUENE-PSP-R09-0020", "ST-GRUENE-PSP-R09-0021",
+    "ST-GRUENE-PSP-R09-0022", "ST-GRUENE-PSP-R09-0023", "ST-GRUENE-PSP-R09-0024",
+    "ST-GRUENE-PSP-R09-0025", "ST-GRUENE-PSP-R09-0026", "ST-GRUENE-PSP-R09-0027",
+    "ST-GRUENE-PSP-R09-0028", "ST-GRUENE-PSP-R09-0029", "ST-GRUENE-PSP-R09-0030",
+    "ST-GRUENE-PSP-R09-0031", "ST-GRUENE-PSP-R09-0032", "ST-GRUENE-PSP-R09-0033",
+    "ST-GRUENE-PSP-R09-0034", "ST-GRUENE-PSP-R09-0035", "ST-GRUENE-PSP-R09-0036",
+    "ST-GRUENE-PSP-R09-0037", "ST-GRUENE-PSP-R09-0038", "ST-GRUENE-PSP-R09-0039",
+    "ST-GRUENE-PSP-R09-0040", "ST-GRUENE-PSP-R09-0041", "ST-GRUENE-PSP-R09-0042",
+    "ST-GRUENE-PSP-R09-0043", "ST-GRUENE-PSP-R09-0044", "ST-GRUENE-PSP-R09-0045",
+    "ST-GRUENE-PSP-R09-0046", "ST-GRUENE-PSP-R09-0047", "ST-GRUENE-PSP-R09-0048",
+    "ST-GRUENE-PSP-R09-0049", "ST-GRUENE-PSP-R09-0050", "ST-GRUENE-PSP-R09-0051",
+    "ST-GRUENE-PSP-R09-0052", "ST-GRUENE-PSP-R09-0053", "ST-GRUENE-PSP-R09-0054"
+  ],
+  "lineage_edges": {
+    "0110": ["ST-GRUENE-PSP-R09-0001", "ST-GRUENE-PSP-R09-0002", "ST-GRUENE-PSP-R09-0003", "ST-GRUENE-PSP-R09-0004", "ST-GRUENE-PSP-R09-0005"],
+    "0111": ["ST-GRUENE-PSP-R09-0006", "ST-GRUENE-PSP-R09-0007", "ST-GRUENE-PSP-R09-0008", "ST-GRUENE-PSP-R09-0009"],
+    "0117": ["ST-GRUENE-PSP-R09-0012"],
+    "0122": ["ST-GRUENE-PSP-R09-0014", "ST-GRUENE-PSP-R09-0015"],
+    "0124": ["ST-GRUENE-PSP-R09-0016", "ST-GRUENE-PSP-R09-0017", "ST-GRUENE-PSP-R09-0018"],
+    "0135": ["ST-GRUENE-PSP-R09-0023"],
+    "0138": ["ST-GRUENE-PSP-R09-0024"],
+    "0139": ["ST-GRUENE-PSP-R09-0025", "ST-GRUENE-PSP-R09-0026", "ST-GRUENE-PSP-R09-0027"],
+    "0140": ["ST-GRUENE-PSP-R09-0028", "ST-GRUENE-PSP-R09-0029"],
+    "0143": ["ST-GRUENE-PSP-R09-0032", "ST-GRUENE-PSP-R09-0033", "ST-GRUENE-PSP-R09-0034", "ST-GRUENE-PSP-R09-0035"],
+    "0144": ["ST-GRUENE-PSP-R09-0036", "ST-GRUENE-PSP-R09-0037"],
+    "0147": ["ST-GRUENE-PSP-R09-0039", "ST-GRUENE-PSP-R09-0040", "ST-GRUENE-PSP-R09-0041", "ST-GRUENE-PSP-R09-0042", "ST-GRUENE-PSP-R09-0043", "ST-GRUENE-PSP-R09-0044", "ST-GRUENE-PSP-R09-0045"],
+    "0151": ["ST-GRUENE-PSP-R09-0048", "ST-GRUENE-PSP-R09-0049", "ST-GRUENE-PSP-R09-0050", "ST-GRUENE-PSP-R09-0051", "ST-GRUENE-PSP-R09-0052", "ST-GRUENE-PSP-R09-0053", "ST-GRUENE-PSP-R09-0054"]
+  },
+  "standalone_versioned_leaves": [
+    "ST-GRUENE-PSP-R09-0010", "ST-GRUENE-PSP-R09-0011", "ST-GRUENE-PSP-R09-0013",
+    "ST-GRUENE-PSP-R09-0019", "ST-GRUENE-PSP-R09-0020", "ST-GRUENE-PSP-R09-0021",
+    "ST-GRUENE-PSP-R09-0022", "ST-GRUENE-PSP-R09-0030", "ST-GRUENE-PSP-R09-0031",
+    "ST-GRUENE-PSP-R09-0038", "ST-GRUENE-PSP-R09-0046", "ST-GRUENE-PSP-R09-0047"
+  ],
+  "counts": {
+    "historical_active_effect_leaves": 28,
+    "versioned_active_effect_leaves": 54,
+    "non_effect_source_leaves": 2,
+    "parent_provenance_nonleaves": 13,
+    "authoritative_source_leaves": 84,
+    "authoritative_effect_leaves": 82
+  },
+  "constraints": {
+    "new_stable_ids": 0,
+    "current_740_mutation": "NONE",
+    "fach_synthesis": "FORBIDDEN",
+    "dns_mapping": "NOT_MAPPED_HERE",
+    "recommendation": "NOT_AVAILABLE_AT_SOURCE_UNIT_LEVEL",
+    "global_count_freeze": "LOCKED_PENDING_C06_PLUS_AND_UNION_GATE"
+  }
+}
