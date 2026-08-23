@@ -958,7 +958,8 @@
         "wirkungsresilienz",
         "vertrauen",
         "klimarisiko",
-        "exposition"
+        "exposition",
+        "klimaanpassungsmanagerin"
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
@@ -13499,7 +13500,8 @@
         "wirkungshaushalt",
         "naturbasierte-loesungen",
         "physical-climate-risk",
-        "quartierswirkung"
+        "quartierswirkung",
+        "klimaanpassungsmanagerin"
       ],
       "relatedDocuments": [],
       "sourceFile": "Wirkungsökonomie Glossar",
@@ -16243,10 +16245,37 @@
         "anpassungskapazitaet",
         "wirkungsresilienz",
         "klimawandel",
-        "klimaschutz"
+        "klimaschutz",
+        "klimaanpassungsmanagerin"
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
+      "searchBoost": 110
+    },
+    "/begriffe/klimaanpassungsmanagerin/": {
+      "documentType": "begriff",
+      "status": "anschlussbegriff",
+      "version": "1.0",
+      "sectionId": "begriff-klimaanpassungsmanagerin",
+      "documentId": "klimaanpassungsmanagerin",
+      "relatedTerms": [
+        "klimaanpassung",
+        "klimarisiko",
+        "anpassungskapazitaet",
+        "vulnerabilitaet",
+        "exposition",
+        "klimafolgeschaeden",
+        "hitzeschutz-hitzeaktionsplan",
+        "wirkungsresilienz",
+        "wirkungsmanagement",
+        "wirkungsmonitoring",
+        "wirkpfad",
+        "wirkungszurechnung",
+        "wirkungsrueckkopplung",
+        "nichtkompensationsprinzip"
+      ],
+      "relatedDocuments": [],
+      "sourceFile": "Zentrum KlimaAnpassung: Beruf Klimaanpassungsmanager*in",
       "searchBoost": 110
     },
     "/begriffe/klimabeschluss-des-bundesverfassungsgerichts/": {
@@ -16288,7 +16317,8 @@
         "praeventionsdividende",
         "kipppunkte",
         "vorsorgeprinzip",
-        "t-sroi"
+        "t-sroi",
+        "klimaanpassungsmanagerin"
       ],
       "relatedDocuments": [],
       "sourceFile": "",
@@ -16342,7 +16372,8 @@
         "stranded-assets",
         "physical-climate-risk",
         "transformationspfad",
-        "resilienz"
+        "resilienz",
+        "klimaanpassungsmanagerin"
       ],
       "relatedDocuments": [],
       "sourceFile": "",
@@ -36712,7 +36743,8 @@
         "anpassungskapazitaet",
         "klimarisiko",
         "wirkungsresilienz",
-        "klimaanpassung"
+        "klimaanpassung",
+        "klimaanpassungsmanagerin"
       ],
       "relatedDocuments": [],
       "sourceFile": "Glossar-Architektur Wirkmechanismen",
@@ -43062,7 +43094,8 @@
         "rueckstellfaehigkeit",
         "daempfungsfaehigkeit",
         "anpassungsfaehigkeit",
-        "transformationsfaehigkeit"
+        "transformationsfaehigkeit",
+        "klimaanpassungsmanagerin"
       ],
       "relatedDocuments": [
         "arbeitspapier-doppelte-wesentlichkeit-impact-controlling",
@@ -165948,7 +165981,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/index.html",
-      "contentHash": "f86ea9ae259814f5",
+      "contentHash": "4be153993ea69e2e",
       "sectionId": "woek-page-06c0a37a8592ce92"
     },
     "/quellenarchiv/#footer-newsletter-title": {
@@ -165956,7 +165989,7 @@
       "status": "online-reviewed",
       "version": "2026.1",
       "sourceFile": "quellenarchiv/index.html",
-      "contentHash": "f86ea9ae259814f5",
+      "contentHash": "4be153993ea69e2e",
       "sectionId": "footer-newsletter-title"
     },
     "/quellenarchiv/wok-e-0001/": {
@@ -166446,6 +166479,38 @@
       "sourceFile": "quellenarchiv/wok-g-045bd1687d39/index.html",
       "contentHash": "47b7595bf85b541d",
       "sectionId": "steckbrief-wok-g-045bd1687d39"
+    },
+    "/quellenarchiv/wok-g-049374af1982/": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-049374af1982/index.html",
+      "contentHash": "383c625ae3b437ab",
+      "sectionId": "woek-page-5abc58880c5eb272"
+    },
+    "/quellenarchiv/wok-g-049374af1982/#footer-newsletter-title": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-049374af1982/index.html",
+      "contentHash": "383c625ae3b437ab",
+      "sectionId": "footer-newsletter-title"
+    },
+    "/quellenarchiv/wok-g-049374af1982/#glance-wok-g-049374af1982": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-049374af1982/index.html",
+      "contentHash": "383c625ae3b437ab",
+      "sectionId": "glance-wok-g-049374af1982"
+    },
+    "/quellenarchiv/wok-g-049374af1982/#steckbrief-wok-g-049374af1982": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-049374af1982/index.html",
+      "contentHash": "383c625ae3b437ab",
+      "sectionId": "steckbrief-wok-g-049374af1982"
     },
     "/quellenarchiv/wok-g-049a4ba47611/": {
       "documentType": "Referenz",
@@ -173935,6 +174000,38 @@
       "contentHash": "3e1e6b6cec26c3b5",
       "sectionId": "steckbrief-wok-g-b675e208c6af"
     },
+    "/quellenarchiv/wok-g-b78818a9ca21/": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-b78818a9ca21/index.html",
+      "contentHash": "ae2863e499bdb66e",
+      "sectionId": "woek-page-74aec94b14ff261a"
+    },
+    "/quellenarchiv/wok-g-b78818a9ca21/#footer-newsletter-title": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-b78818a9ca21/index.html",
+      "contentHash": "ae2863e499bdb66e",
+      "sectionId": "footer-newsletter-title"
+    },
+    "/quellenarchiv/wok-g-b78818a9ca21/#glance-wok-g-b78818a9ca21": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-b78818a9ca21/index.html",
+      "contentHash": "ae2863e499bdb66e",
+      "sectionId": "glance-wok-g-b78818a9ca21"
+    },
+    "/quellenarchiv/wok-g-b78818a9ca21/#steckbrief-wok-g-b78818a9ca21": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-b78818a9ca21/index.html",
+      "contentHash": "ae2863e499bdb66e",
+      "sectionId": "steckbrief-wok-g-b78818a9ca21"
+    },
     "/quellenarchiv/wok-g-b9137fe575cb/": {
       "documentType": "Referenz",
       "status": "online-reviewed",
@@ -174118,6 +174215,38 @@
       "sourceFile": "quellenarchiv/wok-g-bc5a1a6cbc40/index.html",
       "contentHash": "6a2cc5a15c9d3e9f",
       "sectionId": "steckbrief-wok-g-bc5a1a6cbc40"
+    },
+    "/quellenarchiv/wok-g-bc5e5938a6c3/": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-bc5e5938a6c3/index.html",
+      "contentHash": "14c642553057e070",
+      "sectionId": "woek-page-711e5096077b3b73"
+    },
+    "/quellenarchiv/wok-g-bc5e5938a6c3/#footer-newsletter-title": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-bc5e5938a6c3/index.html",
+      "contentHash": "14c642553057e070",
+      "sectionId": "footer-newsletter-title"
+    },
+    "/quellenarchiv/wok-g-bc5e5938a6c3/#glance-wok-g-bc5e5938a6c3": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-bc5e5938a6c3/index.html",
+      "contentHash": "14c642553057e070",
+      "sectionId": "glance-wok-g-bc5e5938a6c3"
+    },
+    "/quellenarchiv/wok-g-bc5e5938a6c3/#steckbrief-wok-g-bc5e5938a6c3": {
+      "documentType": "Referenz",
+      "status": "online-reviewed",
+      "version": "2026.1",
+      "sourceFile": "quellenarchiv/wok-g-bc5e5938a6c3/index.html",
+      "contentHash": "14c642553057e070",
+      "sectionId": "steckbrief-wok-g-bc5e5938a6c3"
     },
     "/quellenarchiv/wok-g-be2a02651963/": {
       "documentType": "Referenz",
