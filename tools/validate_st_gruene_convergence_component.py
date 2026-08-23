@@ -119,8 +119,9 @@ def validate_window(window: dict[str, object]) -> tuple[int, int, set[str], list
         fail(f"LINEAGE_TARGET_COLLISION:{first:04d}-{last:04d}")
 
     restored = set(window["restored_in_place_historical"])
-    if not restored.issubset(historical["active_effect_leaf"]):
-        fail(f"RESTORED_IN_PLACE_NOT_ACTIVE:{first:04d}-{last:04d}")
+    restored_source_leaves = historical["active_effect_leaf"] | historical["context_design_non_effect_source_leaf"]
+    if not restored.issubset(restored_source_leaves):
+        fail(f"RESTORED_IN_PLACE_NOT_SOURCE_LEAF:{first:04d}-{last:04d}")
 
     relation_edges: list[tuple[str, str]] = []
     for relation in window["semantic_relations"]:
