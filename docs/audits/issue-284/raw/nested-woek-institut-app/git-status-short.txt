@@ -1,0 +1,130 @@
+ M .env.example
+ M app/api/ki/route.ts
+ M app/api/wirkungscheck/route.ts
+ M app/bibliothek/page.tsx
+ M app/components/DiscussionPanel.tsx
+ M app/components/MemberNav.tsx
+ M app/components/SiteHeader.tsx
+ M app/dashboard/page.tsx
+ M app/datenschutz/profile/page.tsx
+ M app/dev-login/route.ts
+ M app/dokumente/[documentId]/CollaboratorInvite.tsx
+ M app/dokumente/[documentId]/DocumentComments.tsx
+ M app/dokumente/[documentId]/page.tsx
+ M app/dokumente/page.tsx
+ M app/forum/[threadId]/page.tsx
+ M app/forum/actions.ts
+ M app/forum/page.tsx
+ M app/frag-die-ki/FragKiClient.tsx
+ M app/frag-die-ki/page.tsx
+ M app/globals.css
+ M app/glossar/[slug]/page.tsx
+ M app/glossar/page.tsx
+ M app/incidents/page.tsx
+ M app/layout.tsx
+ M app/login/page.tsx
+ M app/methodik/page.tsx
+ M app/mitglieder/page.tsx
+ M app/nachrichten/[conversationId]/page.tsx
+ M app/nachrichten/page.tsx
+ M app/page.tsx
+ M app/profil/page.tsx
+ M app/quellen/[sourceId]/page.tsx
+ M app/quellen/page.tsx
+ M app/suche/page.tsx
+ M app/verwaltung/page.tsx
+ M app/werkstatt/page.tsx
+ M app/wirkungsboard/[boardId]/BoardCanvas.tsx
+ M app/wirkungsboard/page.tsx
+ M app/wirkungscheck/WirkungscheckClient.tsx
+ M app/wirkungscheck/page.tsx
+ M app/wirkungsraum/page.tsx
+ M lib/access.ts
+ M lib/discord.ts
+ M lib/institut/applications.ts
+ M lib/institut/board-types.ts
+ M lib/institut/dashboard.ts
+ M lib/institut/forum.ts
+ M lib/institut/glossary-full.ts
+ M lib/institut/knowledge.ts
+ M lib/institut/public-pages 2.ts
+ M lib/institut/public-pages.ts
+ M lib/institut/sources.ts
+ M lib/institut/types.ts
+ M package-lock.json
+ M package.json
+ M scripts/run-institut-migrations.mjs
+ M supabase/migrations/institut_0003_boards.sql
+ M supabase/migrations/institut_0004_applications.sql
+ M supabase/migrations/institut_0005_documents.sql
+ M supabase/migrations/institut_0006_sources.sql
+ M supabase/migrations/institut_0007_document_comments.sql
+ M supabase/migrations/institut_0008_forum_structure.sql
+ M supabase/migrations/institut_0009_document_collaborators.sql
+ M supabase/seed/institut_quellenarchiv.sql
+?? .github/workflows/ci 2.yml
+?? app/aktuelles/page.tsx
+?? app/api/aktuelles/rss/route.ts
+?? app/api/audio/livekit-webhook/route.ts
+?? app/api/audio/presence/route.ts
+?? app/api/audio/rooms/[roomSlug]/route.ts
+?? app/api/audio/token/route.ts
+?? app/arbeitsweise/page 2.tsx
+?? app/components/MemberNav 2.tsx
+?? app/components/RichTextEditor.tsx
+?? app/dev-login/route 2.ts
+?? app/dev-logout/route 2.ts
+?? app/dokumente/[documentId]/CollaboratorInvite 2.tsx
+?? app/einreichen/page 2.tsx
+?? app/erfolgskriterien/page 2.tsx
+?? app/faq/page 2.tsx
+?? app/intern/aktuelles/page.tsx
+?? app/kontakt/page 2.tsx
+?? app/methodik/page 3.tsx
+?? app/methodik/page 4.tsx
+?? app/mitglieder/page 2.tsx
+?? app/mitwirken/page 3.tsx
+?? app/mitwirken/page 4.tsx
+?? app/narrativ-einreichen/actions 2.ts
+?? app/narrativ-einreichen/page 2.tsx
+?? app/nicht-ziel/page 2.tsx
+?? app/page 4.tsx
+?? app/profil/actions 2.ts
+?? app/profil/page 2.tsx
+?? app/raeume/AudioRoomClient.tsx
+?? app/raeume/page 2.tsx
+?? app/raeume/page.tsx
+?? app/redaktionelle-leitlinien/page 2.tsx
+?? app/stakeholder/page 2.tsx
+?? app/thema-einreichen/actions 2.ts
+?? app/thema-einreichen/page 2.tsx
+?? app/unabhaengigkeit/page 2.tsx
+?? app/verwaltung/aktuelles/actions.ts
+?? app/verwaltung/aktuelles/page.tsx
+?? app/verwaltung/audio/actions.ts
+?? app/verwaltung/audio/page.tsx
+?? app/wirkungsgesellschaft/page 2.tsx
+?? app/wirkungsmodell/page 2.tsx
+?? app/zielbild/page 2.tsx
+?? lib/institut/announcements.ts
+?? lib/institut/audio-meetings.ts
+?? lib/institut/audio.ts
+?? lib/institut/collaborators 2.ts
+?? lib/institut/dashboard 2.ts
+?? lib/institut/narrative-submissions 2.ts
+?? lib/institut/profiles 2.ts
+?? lib/institut/public-pages 3.ts
+?? lib/institut/public-pages 4.ts
+?? lib/institut/topic-submissions 2.ts
+?? lib/oracle.ts
+?? scripts/quality/audit-accessibility-baseline.mjs
+?? scripts/quality/check-no-em-dash.mjs
+?? scripts/upsert-sdgplus-verfassungsquellen.mjs
+?? supabase/migrations/institut_0009_document_collaborators 2.sql
+?? supabase/migrations/institut_0010_narrative_submissions 2.sql
+?? supabase/migrations/institut_0011_topic_submissions 2.sql
+?? supabase/migrations/institut_0012_application_discord_role_grants 2.sql
+?? supabase/migrations/institut_0013_linkedin_profiles_and_reapplications 2.sql
+?? supabase/migrations/institut_0017_communication_hub.sql
+?? supabase/migrations/institut_0018_audio_meetings.sql
+?? supabase/seed/institut_quellenarchiv_intern.sql

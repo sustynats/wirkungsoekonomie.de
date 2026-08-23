@@ -1,0 +1,43 @@
+{
+  "bundle": "issue-284-live-clean-local-five.bundle",
+  "bundle_sha256": "2d0dd6e6c438e4374427499e43bcaf1dd8d548d176b5984415ccb7c823cdaf8e",
+  "bundle_bytes": 39893,
+  "bundle_verify_status": "PASS",
+  "base_prerequisite": "aeecaf0e0478f362987c87ce19290278fe66761a",
+  "head": "7e38fcb248c756fa6021cfdc87b3ef1eeb58b093",
+  "commit_count": 5,
+  "secret_scan_status": "PASS",
+  "secret_findings": [],
+  "commits": [
+    {
+      "commit": "da4eeb5c561877f3cd1f3d3cc680a30680b83079",
+      "subject": "feat(parlament): add Saxony-Anhalt programme review pipeline",
+      "changed_paths_scanned": 6,
+      "introduced_blob_bytes_scanned": 26857
+    },
+    {
+      "commit": "229d1bf8f30e2390fdac7aede43ba84874f317f4",
+      "subject": "docs(parlament): add publication and release QA contracts",
+      "changed_paths_scanned": 4,
+      "introduced_blob_bytes_scanned": 28417
+    },
+    {
+      "commit": "fb9dac4451c8775081909764ccb588495aadaedf",
+      "subject": "feat(parlament): centralize design tokens and release gate",
+      "changed_paths_scanned": 7,
+      "introduced_blob_bytes_scanned": 127654
+    },
+    {
+      "commit": "3f599dd3728fd6ab1d0673e58db08734680115ed",
+      "subject": "docs: define cross-domain publication and release standards",
+      "changed_paths_scanned": 5,
+      "introduced_blob_bytes_scanned": 25569
+    },
+    {
+      "commit": "7e38fcb248c756fa6021cfdc87b3ef1eeb58b093",
+      "subject": "docs: add cross-domain review briefs",
+      "changed_paths_scanned": 4,
+      "introduced_blob_bytes_scanned": 13821
+    }
+  ]
+}
