@@ -1,0 +1,450 @@
+{
+  "base_main_commit": "8ab669258b46fb3904e4d1292423c1106dc8c778",
+  "constraints": {
+    "dns_mapping_synthesized": false,
+    "impact_direction_synthesized": false,
+    "new_fach_judgements_created": false,
+    "party_score_created": false,
+    "recommendation_synthesized": false,
+    "vercel_build_triggered": false
+  },
+  "coverage": {
+    "assessment_maturity": "PARTIAL_ANALYSIS_NEEDS_COMPLETION",
+    "classified_party_count": 19,
+    "election_source_available_canonicalization_pending_count": 3,
+    "final_election_programme_not_verified_count": 6,
+    "final_election_programme_verified_count": 10,
+    "full_final_election_programme_corpus_available": false,
+    "source_available_for_election_corpus_count": 13
+  },
+  "descriptor_sha256": "f61a5a43f07389bf94f8e548f9cbbd1a4b74005ccd170f337f13665e5cd97673",
+  "election": "ltw-2026-mv",
+  "hash_definition": "SHA-256 of canonical JSON (UTF-8, sorted keys, compact separators) excluding descriptor_sha256",
+  "jurisdiction": "mecklenburg-vorpommern",
+  "official_field": {
+    "admitted_party_count": 19,
+    "constitutional_court_closure_date": "2026-08-14",
+    "constitutional_court_closure_source_url": "https://www.regierung-mv.de/Landesregierung/im/Aktuell/?id=222602&processor=processor.sa.pressemitteilung",
+    "landesliste_count": 19,
+    "official_source_date": "2026-07-31",
+    "official_source_url": "https://www.laiv-mv.de/Wahlen/Pressemitteilungen/?id=222342&processor=processor.sa.pressemitteilung"
+  },
+  "parties": [
+    {
+      "artifact_class": "FINAL_ELECTION_PROGRAMME",
+      "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+      "canonicalization_pending": false,
+      "field_scope": "LANDESLISTE",
+      "final_election_programme_verified": true,
+      "party": "SPD",
+      "public_status_detail": "Das Regierungsprogramm 2026–2031 ist im bestehenden achtteiligen Fachreview als parteioffizielle Programmquelle verifiziert.",
+      "public_status_label": "Finales Wahlprogramm verifiziert",
+      "source_available_for_election_corpus": true,
+      "source_status": "FINAL_PROGRAMME_VERIFIED_IN_PRESERVED_2026_REVIEW",
+      "source_urls": [
+        {
+          "label": "Regierungsprogramm 2026–2031",
+          "url": "https://spd-mv.de/wahlen/landtagswahl-2026/regierungsprogramm-2026-2031"
+        }
+      ]
+    },
+    {
+      "artifact_class": "FINAL_ELECTION_PROGRAMME",
+      "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+      "canonicalization_pending": false,
+      "field_scope": "LANDESLISTE",
+      "final_election_programme_verified": true,
+      "party": "AfD",
+      "public_status_detail": "Das Regierungsprogramm ist im bestehenden achtteiligen Fachreview über die offizielle Kampagnen- und Landesverbandsquelle verifiziert.",
+      "public_status_label": "Finales Wahlprogramm verifiziert",
+      "source_available_for_election_corpus": true,
+      "source_status": "FINAL_PROGRAMME_VERIFIED_IN_PRESERVED_2026_REVIEW",
+      "source_urls": [
+        {
+          "label": "Offizielle Wahlseite",
+          "url": "https://afd-mv.de/blaue-wende-2026/"
+        },
+        {
+          "label": "Landesverband",
+          "url": "https://afd-mv.de/"
+        }
+      ]
+    },
+    {
+      "artifact_class": "FINAL_ELECTION_PROGRAMME",
+      "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+      "canonicalization_pending": false,
+      "field_scope": "LANDESLISTE",
+      "final_election_programme_verified": true,
+      "party": "CDU",
+      "public_status_detail": "Programmseite und Parteitagsbeschluss 2026 sind im bestehenden achtteiligen Fachreview als parteioffizielle Quellen verifiziert.",
+      "public_status_label": "Finales Wahlprogramm verifiziert",
+      "source_available_for_election_corpus": true,
+      "source_status": "FINAL_PROGRAMME_VERIFIED_IN_PRESERVED_2026_REVIEW",
+      "source_urls": [
+        {
+          "label": "Programmseite",
+          "url": "https://cdu-mv.de/programme/"
+        },
+        {
+          "label": "Parteitagsbeschluss",
+          "url": "https://cdu-mv.de/2026/daniel-peters-wir-zeigen-mit-diesem-programm-mecklenburg-vorpommern-kann-mehr-besser-nur-mit-uns/"
+        }
+      ]
+    },
+    {
+      "artifact_class": "FINAL_ELECTION_PROGRAMME",
+      "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+      "canonicalization_pending": false,
+      "field_scope": "LANDESLISTE",
+      "final_election_programme_verified": true,
+      "party": "Die Linke",
+      "public_status_detail": "Das Wahlprogramm „Sozial. Gerecht. Antifaschistisch.“ ist im bestehenden achtteiligen Fachreview verifiziert.",
+      "public_status_label": "Finales Wahlprogramm verifiziert",
+      "source_available_for_election_corpus": true,
+      "source_status": "FINAL_PROGRAMME_VERIFIED_IN_PRESERVED_2026_REVIEW",
+      "source_urls": [
+        {
+          "label": "Wahlprogramm 2026",
+          "url": "https://wahlprogramm26.die-linke-mv.de/"
+        }
+      ]
+    },
+    {
+      "artifact_class": "FINAL_ELECTION_PROGRAMME",
+      "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+      "canonicalization_pending": false,
+      "field_scope": "LANDESLISTE",
+      "final_election_programme_verified": true,
+      "party": "BÜNDNIS 90/DIE GRÜNEN",
+      "public_status_detail": "Das Programm „Klare Kante GRÜN – Für Mensch und Natur in MV“ ist im bestehenden achtteiligen Fachreview verifiziert.",
+      "public_status_label": "Finales Wahlprogramm verifiziert",
+      "source_available_for_election_corpus": true,
+      "source_status": "FINAL_PROGRAMME_VERIFIED_IN_PRESERVED_2026_REVIEW",
+      "source_urls": [
+        {
+          "label": "Wahlprogramm 2026",
+          "url": "https://gruene-mv.de/landtagswahl-2026/wahlprogramm-2026-1/"
+        }
+      ]
+    },
+    {
+      "artifact_class": "FINAL_ELECTION_PROGRAMME",
+      "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+      "canonicalization_pending": false,
+      "field_scope": "LANDESLISTE",
+      "final_election_programme_verified": true,
+      "party": "FDP",
+      "public_status_detail": "Das Wahlprogramm 2026 ist im bestehenden achtteiligen Fachreview über die offizielle Programmseite verifiziert.",
+      "public_status_label": "Finales Wahlprogramm verifiziert",
+      "source_available_for_election_corpus": true,
+      "source_status": "FINAL_PROGRAMME_VERIFIED_IN_PRESERVED_2026_REVIEW",
+      "source_urls": [
+        {
+          "label": "Programmseite",
+          "url": "https://www.fdp-mv.de/programm"
+        }
+      ]
+    },
+    {
+      "artifact_class": "FINAL_ELECTION_PROGRAMME_NOT_VERIFIED",
+      "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+      "canonicalization_pending": false,
+      "field_scope": "LANDESLISTE",
+      "final_election_programme_verified": false,
+      "party": "Tierschutzpartei",
+      "public_status_detail": "Die dokumentierte Quellenprüfung weist keinen belastbaren eigenständigen finalen MV-2026-Programmartifact nach. Das bedeutet nicht, dass kein Programm existiert.",
+      "public_status_label": "Finales Wahlprogramm im aktuellen Scan nicht verifiziert",
+      "source_available_for_election_corpus": false,
+      "source_status": "FINAL_2026_PROGRAMME_NOT_YET_VERIFIED_IN_CURRENT_SCAN",
+      "source_urls": [
+        {
+          "label": "Dokumentierter Quellenstatus in #240",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5367625510"
+        }
+      ]
+    },
+    {
+      "artifact_class": "FULL_ELECTION_PROGRAMME_PDF_PENDING_CANONICALIZATION",
+      "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+      "canonicalization_pending": true,
+      "field_scope": "LANDESLISTE",
+      "final_election_programme_verified": false,
+      "party": "FREIE WÄHLER",
+      "public_status_detail": "Ein Vollprogramm-PDF auf der Parteidomain ist identifiziert. Vor dem kanonischen Import fehlen noch direkter Byte-Abruf und Hash-Sicherung.",
+      "public_status_label": "Vollprogramm-PDF identifiziert · Kanonisierung offen",
+      "source_available_for_election_corpus": true,
+      "source_status": "PARTY_DOMAIN_FULL_PROGRAMME_PDF_IDENTIFIED_CANONICAL_FETCH_HASH_REQUIRED",
+      "source_urls": [
+        {
+          "label": "Programm-PDF",
+          "url": "https://freie-waehler-mv.eu/wp-content/uploads/2026/06/LTW_2026_Wahlprogramm_FW-M-V_A5_interaktiv.pdf"
+        }
+      ]
+    },
+    {
+      "artifact_class": "ELECTION_PROGRAMME_ROUTE_PENDING_CANONICALIZATION",
+      "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+      "canonicalization_pending": true,
+      "field_scope": "LANDESLISTE",
+      "final_election_programme_verified": false,
+      "party": "Die PARTEI",
+      "public_status_detail": "Der offizielle Landesauftritt führt einen Landtagswahl-2026-Bereich und eine Programmroute. Dokumentfassung und Beschlussstatus müssen vor dem atomaren Import gesichert werden.",
+      "public_status_label": "Programmroute vorhanden · Fassung und Beschlussstatus offen",
+      "source_available_for_election_corpus": true,
+      "source_status": "PARTY_OFFICIAL_PROGRAMME_ROUTE_VERSION_AND_APPROVAL_STATUS_PENDING",
+      "source_urls": [
+        {
+          "label": "Landesportal",
+          "url": "https://diepartei-mv.de/"
+        },
+        {
+          "label": "Programmroute",
+          "url": "https://www.diepartei-mv.de/Programm.html"
+        }
+      ]
+    },
+    {
+      "artifact_class": "FINAL_ELECTION_PROGRAMME_PDF",
+      "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+      "canonicalization_pending": false,
+      "field_scope": "LANDESLISTE",
+      "final_election_programme_verified": true,
+      "party": "PIRATEN",
+      "public_status_detail": "Die offizielle Programmseite führt das Programm zur Landtagswahl 2026; das spätere finalwp2026-PDF wird vom früheren Entwurf getrennt.",
+      "public_status_label": "Finales Wahlprogramm verifiziert",
+      "source_available_for_election_corpus": true,
+      "source_status": "PARTY_OFFICIAL_FINAL_PROGRAMME_ARTIFACT_READY",
+      "source_urls": [
+        {
+          "label": "Programmseite",
+          "url": "https://piratenpartei-mv.de/programme/"
+        },
+        {
+          "label": "Finales Programm-PDF",
+          "url": "https://piratenpartei-mv.de/wp-content/uploads/2026/04/finalwp2026_lek.pdf"
+        }
+      ]
+    },
+    {
+      "artifact_class": "ELECTION_REFERENCED_CURRENT_LANDESPROGRAMME",
+      "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+      "canonicalization_pending": false,
+      "field_scope": "LANDESLISTE",
+      "final_election_programme_verified": false,
+      "party": "ÖDP",
+      "public_status_detail": "Die offizielle Wahlseite verweist auf das bestehende Landesprogramm. Es wird nicht still als neu 2026 verabschiedeter Wahlprogramm-Corpus umetikettiert.",
+      "public_status_label": "Aktuelles Landesprogramm wahlbezogen referenziert · kein neues finales 2026-Vollprogramm",
+      "source_available_for_election_corpus": false,
+      "source_status": "ELECTION_REFERENCED_CURRENT_LANDESPROGRAMME_NOT_NEW_2026_FINAL_CORPUS",
+      "source_urls": [
+        {
+          "label": "Wahlseite 2026",
+          "url": "https://www.oedp-mv.de/wahlen/landtagswahl-2026"
+        },
+        {
+          "label": "Landesprogramm",
+          "url": "https://www.oedp-mv.de/programm/landesprogramm"
+        }
+      ]
+    },
+    {
+      "artifact_class": "FINAL_ELECTION_PROGRAMME_PDF",
+      "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+      "canonicalization_pending": false,
+      "field_scope": "LANDESLISTE",
+      "final_election_programme_verified": true,
+      "party": "Bündnis C",
+      "public_status_detail": "Das 22-seitige parteioffizielle Wahlprogramm zur Landtagswahl am 20. September 2026 ist als eigener finaler Programmartifact verifiziert.",
+      "public_status_label": "Finales Wahlprogramm verifiziert",
+      "source_available_for_election_corpus": true,
+      "source_status": "FINAL_PARTY_OFFICIAL_PROGRAMME_SOURCE_READY",
+      "source_urls": [
+        {
+          "label": "Wahlseite",
+          "url": "https://mecklenburg-vorpommern.buendnis-c.de/"
+        },
+        {
+          "label": "Programm-PDF",
+          "url": "https://mecklenburg-vorpommern.buendnis-c.de/wp-content/uploads/sites/3/2026/08/BC-M-V-LTW-2026-WAHLPROGRAMM.pdf"
+        }
+      ]
+    },
+    {
+      "artifact_class": "FINAL_ELECTION_PROGRAMME",
+      "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+      "canonicalization_pending": false,
+      "field_scope": "LANDESLISTE",
+      "final_election_programme_verified": true,
+      "party": "BSW",
+      "public_status_detail": "Der Landesverband dokumentiert die einstimmige Annahme am 14. März 2026 und stellt Voll- und Kurzwahlprogramm bereit.",
+      "public_status_label": "Finales Wahlprogramm verifiziert",
+      "source_available_for_election_corpus": true,
+      "source_status": "FINAL_PARTY_APPROVED_PROGRAMME_PARTY_OFFICIAL_SOURCE_READY",
+      "source_urls": [
+        {
+          "label": "Wahlhub",
+          "url": "https://mv.bsw-vg.de/landtagswahl-2026/"
+        }
+      ]
+    },
+    {
+      "artifact_class": "FINAL_ELECTION_PROGRAMME_NOT_VERIFIED",
+      "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+      "canonicalization_pending": false,
+      "field_scope": "LANDESLISTE",
+      "final_election_programme_verified": false,
+      "party": "Handwerker Partei Deutschland",
+      "public_status_detail": "Die dokumentierte Quellenprüfung weist keinen belastbaren eigenständigen finalen MV-2026-Programmartifact nach. Das bedeutet nicht, dass kein Programm existiert.",
+      "public_status_label": "Finales Wahlprogramm im aktuellen Scan nicht verifiziert",
+      "source_available_for_election_corpus": false,
+      "source_status": "FINAL_2026_PROGRAMME_NOT_YET_VERIFIED_IN_CURRENT_SCAN",
+      "source_urls": [
+        {
+          "label": "Dokumentierter Quellenstatus in #240",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5367625510"
+        }
+      ]
+    },
+    {
+      "artifact_class": "FINAL_ELECTION_PROGRAMME_NOT_VERIFIED",
+      "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+      "canonicalization_pending": false,
+      "field_scope": "LANDESLISTE",
+      "final_election_programme_verified": false,
+      "party": "KPD",
+      "public_status_detail": "Die dokumentierte Quellenprüfung weist keinen belastbaren eigenständigen finalen MV-2026-Programmartifact nach. Das bedeutet nicht, dass kein Programm existiert.",
+      "public_status_label": "Finales Wahlprogramm im aktuellen Scan nicht verifiziert",
+      "source_available_for_election_corpus": false,
+      "source_status": "FINAL_2026_PROGRAMME_NOT_YET_VERIFIED_IN_CURRENT_SCAN",
+      "source_urls": [
+        {
+          "label": "Dokumentierter Quellenstatus in #240",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5367625510"
+        }
+      ]
+    },
+    {
+      "artifact_class": "FINAL_ELECTION_PROGRAMME_PDF",
+      "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+      "canonicalization_pending": false,
+      "field_scope": "LANDESLISTE",
+      "final_election_programme_verified": true,
+      "party": "PdF",
+      "public_status_detail": "Ein vollständiges MV-2026-Wahlprogramm mit eindeutiger Titel- und Inhaltsstruktur liegt auf der Parteidomain als PDF vor.",
+      "public_status_label": "Finales Wahlprogramm verifiziert",
+      "source_available_for_election_corpus": true,
+      "source_status": "PARTY_OFFICIAL_2026_MV_ELECTION_PROGRAMME_PDF_READY",
+      "source_urls": [
+        {
+          "label": "Wahlseite",
+          "url": "https://partei-des-fortschritts.de/landtagswahl-mecklenburg-vorpommern-2026/"
+        },
+        {
+          "label": "Programm-PDF",
+          "url": "https://partei-des-fortschritts.de/wp-content/uploads/2026/06/2026-05_wahlprogramm_MV.pdf"
+        }
+      ]
+    },
+    {
+      "artifact_class": "CAMPAIGN_PROGRAMMATIC_SOURCE",
+      "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+      "canonicalization_pending": false,
+      "field_scope": "LANDESLISTE",
+      "final_election_programme_verified": false,
+      "party": "Team Freiheit",
+      "public_status_detail": "MV-spezifische Positionen sind als Kampagnen- und Kommunikationsquelle verfügbar. Daraus wird kein eigenständiges finales Wahlprogramm abgeleitet.",
+      "public_status_label": "MV-2026-Kampagnenprogrammatik vorhanden · finales Vollprogramm nicht verifiziert",
+      "source_available_for_election_corpus": false,
+      "source_status": "MV_2026_CAMPAIGN_PROGRAMMATIC_SOURCE_AVAILABLE_FINAL_STANDALONE_PROGRAMME_NOT_ESTABLISHED",
+      "source_urls": [
+        {
+          "label": "Parteiwebsite",
+          "url": "https://team-freiheit.de/"
+        },
+        {
+          "label": "MV-Seite",
+          "url": "https://www.team-freiheit.de/mv/"
+        }
+      ]
+    },
+    {
+      "artifact_class": "ELECTION_PROGRAMME_NAVIGATION_PENDING_CANONICALIZATION",
+      "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+      "canonicalization_pending": true,
+      "field_scope": "LANDESLISTE",
+      "final_election_programme_verified": false,
+      "party": "Volt",
+      "public_status_detail": "Der offizielle Wahlhub verweist auf die Programmnavigation. Vor dem kanonischen Import fehlt noch eine exakt versionierte MV-Programmfassung oder ein Snapshot.",
+      "public_status_label": "MV-2026-Programmquelle vorhanden · exakte Fassung noch zu kanonisieren",
+      "source_available_for_election_corpus": true,
+      "source_status": "PARTY_OFFICIAL_MV_2026_PROGRAMMATIC_SOURCE_EXACT_VERSIONED_FILE_OR_SNAPSHOT_PENDING",
+      "source_urls": [
+        {
+          "label": "Wahlhub",
+          "url": "https://voltdeutschland.org/mv/landtagswahl-2026"
+        },
+        {
+          "label": "Programmnavigation",
+          "url": "https://voltdeutschland.org/mv/programm/programme"
+        }
+      ]
+    },
+    {
+      "artifact_class": "FINAL_ELECTION_PROGRAMME_NOT_VERIFIED",
+      "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+      "canonicalization_pending": false,
+      "field_scope": "LANDESLISTE",
+      "final_election_programme_verified": false,
+      "party": "WIR LEBEN DEMOKRATIE",
+      "public_status_detail": "Die dokumentierte Quellenprüfung weist keinen belastbaren eigenständigen finalen MV-2026-Programmartifact nach. Das bedeutet nicht, dass kein Programm existiert.",
+      "public_status_label": "Finales Wahlprogramm im aktuellen Scan nicht verifiziert",
+      "source_available_for_election_corpus": false,
+      "source_status": "FINAL_2026_PROGRAMME_NOT_YET_VERIFIED_IN_CURRENT_SCAN",
+      "source_urls": [
+        {
+          "label": "Dokumentierter Quellenstatus in #240",
+          "url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5367625510"
+        }
+      ]
+    }
+  ],
+  "preserved_fach_review": {
+    "byte_length": 11801,
+    "materiality_theme_count": 8,
+    "path": "woek-parlament-app/data/states/mecklenburg-vorpommern/approved-review-2026-08-18.md",
+    "rule": "Preserve and cross-link the eight existing themes; source classification does not create or replace impact judgements.",
+    "sha256": "0fe5316048c5e9fef01dbdc0ccd8326e3c644bdee6ef43997ec12a60c1fd7639"
+  },
+  "publication_integrity": {
+    "rendered_content_paths": [
+      "/laender/mecklenburg-vorpommern",
+      "/laender/mecklenburg-vorpommern/wahl"
+    ],
+    "required_content_paths": [
+      "/laender/mecklenburg-vorpommern",
+      "/laender/mecklenburg-vorpommern/wahl"
+    ],
+    "unrendered_content_paths": []
+  },
+  "register_id": "MV-LTW-2026-CURRENT-SOURCE-REGISTER-V1",
+  "schema_version": "woek-state-current-source-register-1.1",
+  "source_as_of": "2026-08-21",
+  "source_pins": [
+    {
+      "body_sha256": "c9776e4a73f2d95453b7dddfb485070fbcb3be6d7181cfc5d0dd051e17bfd820",
+      "comment_id": 5367625510,
+      "role": "final 19-list field and programme-source reconciliation",
+      "updated_at": "2026-08-21T08:42:51Z",
+      "url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5367625510"
+    },
+    {
+      "body_sha256": "1079748768dfae384c55d44914779b67f4a09d69fefe71429c46025539683875",
+      "comment_id": 5374701790,
+      "role": "Buendnis C closure and Die PARTEI/OEDP source-type update",
+      "updated_at": "2026-08-21T19:59:01Z",
+      "url": "https://github.com/sustynats/wirkungsoekonomie.de/issues/240#issuecomment-5374701790"
+    }
+  ],
+  "status": "CURRENT_SOURCE_CLASSIFICATION_COMPLETE_19_OF_19"
+}
