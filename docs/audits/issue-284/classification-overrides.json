@@ -1,0 +1,556 @@
+{
+  "exact": {
+    "woek-institut-app/": {
+      "classification": "ALREADY_IN_GITHUB_PR_OR_BRANCH",
+      "reason": "Nested repository audited path by path. Its local commit is on GitHub; 54 working blobs are on GitHub, five conflict copies are temporary, four files are superseded, one file is exactly on root main, and all 65 genuinely unique source files are preserved in the private issue-284 GitHub Release asset.",
+      "evidence": "https://github.com/sustynats/woek-institut-app/releases/tag/audit-issue-284-old-dirty-worktree-a76080e",
+      "rescue": "private asset issue-284-woek-institut-unique-source-rescue-a76080e.tar.gz; sha256:c141809e310ed17a1cc3cfc72291a130e1df57cb401b2b1a8fa2ae4b92edd370"
+    },
+    "assets/video/institut 2.mp4": {
+      "classification": "ALREADY_IN_GITHUB_PR_OR_BRANCH",
+      "reason": "Exact byte-size-equivalent immutable Institut video release asset; only the local filename spacing differs.",
+      "evidence": "GitHub Release woek-institut-video"
+    },
+    "assets/video/institut 3.mp4": {
+      "classification": "ALREADY_IN_GITHUB_PR_OR_BRANCH",
+      "reason": "Exact byte-size-equivalent immutable Institut video release asset; only the local filename spacing differs.",
+      "evidence": "GitHub Release woek-institut-video"
+    },
+    ".github/workflows/deploy.yml": {
+      "classification": "SUPERSEDED",
+      "reason": "Current main contains the evolved GitHub Pages workflow and current certificate/publication gates."
+    },
+    ".gitignore": {
+      "classification": "SUPERSEDED",
+      "reason": "Current main contains the authoritative expanded ignore policy."
+    },
+    "AGENTS.md": {
+      "classification": "SUPERSEDED",
+      "reason": "Current main contains the publication-standard language from this delta plus the current repository instructions."
+    },
+    "package.json": {
+      "classification": "SUPERSEDED",
+      "reason": "Current main contains the evolved build and quality command graph."
+    },
+    "docs/DEPLOYMENT-ALL.md": {
+      "classification": "SUPERSEDED",
+      "reason": "Historical cross-project deployment handoff; current GitHub Pages and owner-gated minimal Parliament release architecture supersede it."
+    },
+    "docs/PUBLICATION_STANDARD.md": {
+      "classification": "SUPERSEDED",
+      "reason": "Current main contains the authoritative current publication standard."
+    },
+    "docs/Wahl-O-Mat-Sachsen-Anhalt-2026-Sprechertext-Video.docx": {
+      "classification": "SUPERSEDED",
+      "reason": "Draft media source is superseded by the completed Sachsen-Anhalt 6/6 Parliament Golden State and current public assets."
+    },
+    "docs/Wahl-O-Mat-Sachsen-Anhalt-2026-wirkungsoekonomische-Wahlhilfe.docx": {
+      "classification": "SUPERSEDED",
+      "reason": "Draft media source is superseded by the completed Sachsen-Anhalt 6/6 Parliament Golden State and current public assets."
+    },
+    "404.html": { "classification": "SUPERSEDED", "reason": "Old global site-shell projection superseded by current main." },
+    "akademie.html": { "classification": "SUPERSEDED", "reason": "Old Academy shell superseded by the sanitized v4 Public-Master presentation." },
+    "anwendungen.html": { "classification": "SUPERSEDED", "reason": "Old global site-shell projection superseded by current main." },
+    "blog.html": { "classification": "SUPERSEDED", "reason": "Old newsletter/English shell projection already merged and evolved on current main." },
+    "buch.html": { "classification": "SUPERSEDED", "reason": "Old global site-shell projection superseded by current main." },
+    "datenschutz.html": { "classification": "SUPERSEDED", "reason": "Old global site-shell projection superseded by current main." },
+    "downloads.html": { "classification": "SUPERSEDED", "reason": "Old download shell superseded by current main and immutable release assets." },
+    "erleben.html": { "classification": "SUPERSEDED", "reason": "Old global site-shell projection superseded by current main." },
+    "funktionsweise.html": { "classification": "SUPERSEDED", "reason": "Old redirect/shell projection superseded by current main." },
+    "impressum.html": { "classification": "SUPERSEDED", "reason": "Old global site-shell projection superseded by current main." },
+    "index.html": { "classification": "SUPERSEDED", "reason": "Old global homepage projection superseded by current main." },
+    "kompass.html": { "classification": "SUPERSEDED", "reason": "Old global shell and compass projection superseded by current main." },
+    "mehr.html": { "classification": "SUPERSEDED", "reason": "Old global site-shell projection superseded by current main." },
+    "mitmachen.html": { "classification": "SUPERSEDED", "reason": "Old global site-shell projection superseded by current main." },
+    "modell.html": { "classification": "SUPERSEDED", "reason": "Old global site-shell projection superseded by current main." },
+    "natalie-weber.html": { "classification": "SUPERSEDED", "reason": "Old global site-shell projection superseded by current main." },
+    "scanner.html": { "classification": "SUPERSEDED", "reason": "Old global tool-shell projection superseded by current main." },
+    "scorecard-dashboard.html": { "classification": "SUPERSEDED", "reason": "Old global tool-shell projection superseded by current main." },
+    "sdg-plus.html": { "classification": "SUPERSEDED", "reason": "Old global SDG+ projection superseded by current main." },
+    "styleguide.html": { "classification": "SUPERSEDED", "reason": "Old styleguide projection superseded by current main." },
+    "suche.html": { "classification": "SUPERSEDED", "reason": "Old global search-shell/index projection superseded by current main." },
+    "ueber.html": { "classification": "SUPERSEDED", "reason": "Old global site-shell projection superseded by current main." },
+    "vergleich.html": { "classification": "SUPERSEDED", "reason": "Old global comparison-shell projection superseded by current main." },
+    "verstehen.html": { "classification": "SUPERSEDED", "reason": "Old global site-shell projection superseded by current main." },
+    "wirkungsoekonomie.html": { "classification": "SUPERSEDED", "reason": "Old global site-shell projection superseded by current main." },
+    "workflow.html": { "classification": "SUPERSEDED", "reason": "Old global workflow-shell projection superseded by current main." },
+    "api.json": { "classification": "GENERATED_REPRODUCIBLE", "reason": "Generated API discovery manifest." },
+    "deliverables/CODEX-GOVERNMENT-DATA-1.2-AND-PORTAL-REPORT.md": { "classification": "SUPERSEDED", "reason": "Historical Data 1.2 completion report superseded by current Parliament Golden State." },
+    "deliverables/WOEK-GOVERNMENT-DATA-1.1-EXTERNAL-AUDIT-BRIEFING.md": { "classification": "ALREADY_IN_GITHUB_PR_OR_BRANCH", "reason": "Historical briefing is preserved with the manifest-verified Data 1.1 source rescue release.", "evidence": "https://github.com/sustynats/wirkungsoekonomie.de/releases/tag/issue-284-government-data-1.1-source-rescue" }
+    ,"docs/Wirkungsoekonomie_Kontextdossier_fuer_Drittsysteme_v1.0.md": { "classification": "ALREADY_IN_GITHUB_PR_OR_BRANCH", "reason": "Individually reviewed historical document is preserved in the exact issue-284 residual GitHub Release archive; no projection is authorized.", "evidence": "https://github.com/sustynats/wirkungsoekonomie.de/releases/tag/issue-284-old-dirty-worktree-rescue" }
+    ,"docs/canvas-spezifikationen-woek-management-framework.md": { "classification": "ALREADY_IN_GITHUB_PR_OR_BRANCH", "reason": "Individually reviewed historical document is preserved in the exact issue-284 residual GitHub Release archive; no projection is authorized.", "evidence": "https://github.com/sustynats/wirkungsoekonomie.de/releases/tag/issue-284-old-dirty-worktree-rescue" }
+    ,"docs/content-audit-iooi.md": { "classification": "ALREADY_IN_GITHUB_PR_OR_BRANCH", "reason": "Individually reviewed historical document is preserved in the exact issue-284 residual GitHub Release archive; no projection is authorized.", "evidence": "https://github.com/sustynats/wirkungsoekonomie.de/releases/tag/issue-284-old-dirty-worktree-rescue" }
+    ,"docs/glossar-pipeline-term-registry.md": { "classification": "ALREADY_IN_GITHUB_PR_OR_BRANCH", "reason": "Individually reviewed historical document is preserved in the exact issue-284 residual GitHub Release archive; no projection is authorized.", "evidence": "https://github.com/sustynats/wirkungsoekonomie.de/releases/tag/issue-284-old-dirty-worktree-rescue" }
+    ,"docs/mensch-und-wirkung-rote-linien.md": { "classification": "ALREADY_IN_GITHUB_PR_OR_BRANCH", "reason": "Individually reviewed historical document is preserved in the exact issue-284 residual GitHub Release archive; it is not promoted as current Fach guidance.", "evidence": "https://github.com/sustynats/wirkungsoekonomie.de/releases/tag/issue-284-old-dirty-worktree-rescue" }
+    ,"docs/sdgplus-staatsziele-umsetzungsstandard.md": { "classification": "ALREADY_IN_GITHUB_PR_OR_BRANCH", "reason": "Individually reviewed historical document is preserved in the exact issue-284 residual GitHub Release archive; it is not promoted as current Fach guidance.", "evidence": "https://github.com/sustynats/wirkungsoekonomie.de/releases/tag/issue-284-old-dirty-worktree-rescue" }
+    ,"docs/social-text-zwei-aepfel-ein-preis.md": { "classification": "ALREADY_IN_GITHUB_PR_OR_BRANCH", "reason": "Individually reviewed historical document is preserved in the exact issue-284 residual GitHub Release archive; publication is not authorized.", "evidence": "https://github.com/sustynats/wirkungsoekonomie.de/releases/tag/issue-284-old-dirty-worktree-rescue" }
+    ,"docs/umbau-arbeitsteilung-claude-codex.md": { "classification": "ALREADY_IN_GITHUB_PR_OR_BRANCH", "reason": "Individually reviewed historical architecture document is preserved in the exact issue-284 residual GitHub Release archive.", "evidence": "https://github.com/sustynats/wirkungsoekonomie.de/releases/tag/issue-284-old-dirty-worktree-rescue" }
+    ,"docs/woek-gesamtarchitektur.md": { "classification": "ALREADY_IN_GITHUB_PR_OR_BRANCH", "reason": "Individually reviewed historical architecture document is preserved in the exact issue-284 residual GitHub Release archive.", "evidence": "https://github.com/sustynats/wirkungsoekonomie.de/releases/tag/issue-284-old-dirty-worktree-rescue" }
+    ,"docs/woek-glossar-zentral-architektur.md": { "classification": "ALREADY_IN_GITHUB_PR_OR_BRANCH", "reason": "Individually reviewed historical architecture document is preserved in the exact issue-284 residual GitHub Release archive.", "evidence": "https://github.com/sustynats/wirkungsoekonomie.de/releases/tag/issue-284-old-dirty-worktree-rescue" }
+    ,"docs/woek-id-meine-woek-konzept.md": { "classification": "ALREADY_IN_GITHUB_PR_OR_BRANCH", "reason": "Individually reviewed historical architecture document is preserved in the exact issue-284 residual GitHub Release archive.", "evidence": "https://github.com/sustynats/wirkungsoekonomie.de/releases/tag/issue-284-old-dirty-worktree-rescue" }
+    ,"docs/woek-kern-architektur.md": { "classification": "ALREADY_IN_GITHUB_PR_OR_BRANCH", "reason": "Individually reviewed historical architecture document is preserved in the exact issue-284 residual GitHub Release archive.", "evidence": "https://github.com/sustynats/wirkungsoekonomie.de/releases/tag/issue-284-old-dirty-worktree-rescue" }
+    ,"docs/woek-umbau-programm.md": { "classification": "ALREADY_IN_GITHUB_PR_OR_BRANCH", "reason": "Individually reviewed historical architecture document is preserved in the exact issue-284 residual GitHub Release archive.", "evidence": "https://github.com/sustynats/wirkungsoekonomie.de/releases/tag/issue-284-old-dirty-worktree-rescue" }
+    ,"docs/xtts-qualitaet-qs-blindstellen-befund-2026-07-26.md": { "classification": "ALREADY_IN_GITHUB_PR_OR_BRANCH", "reason": "Individually reviewed historical QA document is preserved in the exact issue-284 residual GitHub Release archive.", "evidence": "https://github.com/sustynats/wirkungsoekonomie.de/releases/tag/issue-284-old-dirty-worktree-rescue" }
+  },
+  "prefixes": [
+    {
+      "prefix": "deliverables/WOEK-GOVERNMENT-DATA-2025-2026-INGEST-1.1",
+      "classification": "ALREADY_IN_GITHUB_PR_OR_BRANCH",
+      "reason": "Every expanded member is preserved by the manifest-verified exact ZIP in the issue-284 GitHub Release. The package is historical, superseded and non-production.",
+      "evidence": "https://github.com/sustynats/wirkungsoekonomie.de/releases/tag/issue-284-government-data-1.1-source-rescue",
+      "rescue": "WOEK-GOVERNMENT-DATA-2025-2026-INGEST-1.1.zip sha256:17936c8b61179d9d7f7f64b76099f064ae06881ee58bf551a78534450fa565"
+    },
+    {
+      "prefix": "deliverables/WOEK-GOVERNMENT-DATA-2025-2026-INGEST-1.2",
+      "classification": "SUPERSEDED",
+      "reason": "Current main contains the integrated Data 1.2 builder/contracts/public set and later Parliament remediation; this expanded local delivery and ZIP are older staging outputs."
+    },
+    {
+      "prefix": "woek-parlament-app/",
+      "classification": "SUPERSEDED",
+      "reason": "Current main contains the completed Parliament Golden State through #298. Old release-1 projections, drifted CDU manifests from #257, early UI components and generated data are superseded; no Fach/DNS/Recommendation is inferred or transferred."
+    },
+    {
+      "prefix": "content/studienskripte/",
+      "classification": "SUPERSEDED",
+      "reason": "Current main contains the sanitized Academy v4 Public-Master projection and preserved v3.2 historical archive. Local Claude corrections, handoffs, duplicate drafts and earlier study-script series are not the active source of truth and may contain non-public review material."
+    },
+    {
+      "prefix": "scripts/studienskripte/",
+      "classification": "SUPERSEDED",
+      "reason": "Current main's locked sanitized Public-Master materialization/verification machinery supersedes these old draft, handoff and correction helpers."
+    },
+    {
+      "prefix": "automations/",
+      "classification": "BUILD_CACHE_OR_TEMPORARY",
+      "reason": "Local automation memory/state, not canonical website source."
+    },
+    {
+      "prefix": "quellenarchiv/",
+      "classification": "GENERATED_REPRODUCIBLE",
+      "reason": "Static Quellenarchiv page projection generated from the versioned source registry by the current build pipeline."
+    },
+    {
+      "prefix": "wirkungsradar/",
+      "classification": "GENERATED_REPRODUCIBLE",
+      "reason": "Static Wirkungsradar detail/live/embed/studio projection generated by versioned radar build scripts and data."
+    },
+    {
+      "prefix": "woek-id-register/",
+      "classification": "GENERATED_REPRODUCIBLE",
+      "reason": "Public WÖk-ID explorer pages generated from the versioned register and build script."
+    },
+    {
+      "prefix": "portale/",
+      "classification": "GENERATED_REPRODUCIBLE",
+      "reason": "Static portal pages generated from the current portal architecture/build scripts."
+    },
+    {
+      "prefix": "api/",
+      "classification": "GENERATED_REPRODUCIBLE",
+      "reason": "Static public API capability, glossary, production, SDG+, search and radar projections generated during the site build."
+    },
+    {
+      "prefix": "feeds/",
+      "classification": "GENERATED_REPRODUCIBLE",
+      "reason": "Generated RSS/Atom discovery outputs."
+    },
+    {
+      "prefix": "assets/data/",
+      "classification": "GENERATED_REPRODUCIBLE",
+      "reason": "Generated registries, indexes, municipal projections and publication metadata rebuilt by the current site pipeline."
+    },
+    {
+      "prefix": "assets/search/",
+      "classification": "GENERATED_REPRODUCIBLE",
+      "reason": "Generated search shards/indexes rebuilt by the current site pipeline."
+    },
+    {
+      "prefix": "assets/pdf/journal/",
+      "classification": "GENERATED_REPRODUCIBLE",
+      "reason": "Journal PDFs are deterministic outputs of scripts/blog/build-journal-pdfs.mjs and are verified by the paired checker."
+    },
+    {
+      "prefix": "assets/audio/hoervergleich",
+      "classification": "BUILD_CACHE_OR_TEMPORARY",
+      "reason": "Local listening-comparison and raw audio QA material, not canonical release audio."
+    },
+    {
+      "prefix": "assets/audio/natalie-english-test",
+      "classification": "BUILD_CACHE_OR_TEMPORARY",
+      "reason": "Local voice/language test output."
+    },
+    {
+      "prefix": "assets/audio/podcast/",
+      "classification": "SUPERSEDED",
+      "reason": "Lower-size local podcast encodes are superseded by immutable final GitHub Release audio assets."
+    },
+    {
+      "prefix": "assets/pdf/",
+      "classification": "GENERATED_REPRODUCIBLE",
+      "reason": "PDF publication outputs are built from versioned online/source content or already represented by current immutable public assets; they are not authoritative edit sources."
+    },
+    {
+      "prefix": "assets/downloads/",
+      "classification": "SUPERSEDED",
+      "reason": "Historical downloadable publication packages are superseded by current main/release assets and current Public-Master/publication projections."
+    },
+    {
+      "prefix": "assets/js/",
+      "classification": "SUPERSEDED",
+      "reason": "Old working JS combined newsletter/English/bookmark work already merged in #228-#230 with other local experiments; current main contains the evolved implementation."
+    },
+    {
+      "prefix": "assets/css/",
+      "classification": "SUPERSEDED",
+      "reason": "Old combined style delta belongs to already merged newsletter/English/publication work plus superseded experiments; current main is the authoritative evolved stylesheet."
+    },
+    {
+      "prefix": "assets/img/",
+      "classification": "SUPERSEDED",
+      "reason": "Imported/derived local image variants are superseded by current optimized public assets and immutable media releases."
+    },
+    {
+      "prefix": "assets/visuals/",
+      "classification": "GENERATED_REPRODUCIBLE",
+      "reason": "Derived model visuals are generated public projection assets."
+    },
+    {
+      "prefix": "public/data/",
+      "classification": "GENERATED_REPRODUCIBLE",
+      "reason": "Generated public data projection rebuilt from current canonical inputs."
+    },
+    {
+      "prefix": "public/assets/imported/",
+      "classification": "BUILD_CACHE_OR_TEMPORARY",
+      "reason": "Intermediate imported TIFF/source extraction assets; current optimized public outputs are canonical."
+    },
+    {
+      "prefix": "public/assets/wahlomat-sa2026-wirkungsoekonomische-wahlhilfe-hero",
+      "classification": "SUPERSEDED",
+      "reason": "Local hero iterations are superseded by the current Parliament Golden-State public presentation."
+    },
+    {
+      "prefix": "blog/",
+      "classification": "SUPERSEDED",
+      "reason": "The broad dirty delta is the already merged #228-#230 newsletter/English shell projection; current main contains later normalized and accessible versions. Article bodies are not treated as newly approved Fach content."
+    },
+    {
+      "prefix": "referenz/",
+      "classification": "SUPERSEDED",
+      "reason": "Old static reference renderings contain already merged shell/projection work and are superseded by current main's reference/publication pipeline."
+    },
+    {
+      "prefix": "wirkungsfelder/",
+      "classification": "SUPERSEDED",
+      "reason": "Old local stage/shell renderings are superseded by current main; sampled deltas include a reduced staging navigation and already merged global shell changes, so they are not safe source projections."
+    },
+    {
+      "prefix": "werkzeuge/",
+      "classification": "SUPERSEDED",
+      "reason": "Static tool-page deltas are old global shell/staging projections superseded by current main."
+    },
+    {
+      "prefix": "werkstatt/",
+      "classification": "SUPERSEDED",
+      "reason": "Static workshop/library renderings are superseded by current main's evolved navigation/publication system."
+    },
+    {
+      "prefix": "verstehen/",
+      "classification": "SUPERSEDED",
+      "reason": "Static explanation renderings contain already merged shell/projection changes and are superseded by current main."
+    },
+    {
+      "prefix": "bibliothek/",
+      "classification": "SUPERSEDED",
+      "reason": "Static library/publication renderings are superseded by current main's current publication and Public-Master architecture."
+    },
+    {
+      "prefix": "dokumente/",
+      "classification": "SUPERSEDED",
+      "reason": "Old document/library public projections and derived downloads are superseded by current main's publication registry and current artifacts."
+    },
+    {
+      "prefix": "erleben/",
+      "classification": "SUPERSEDED",
+      "reason": "Static interactive-page shell/rendering deltas are superseded by current main."
+    },
+    {
+      "prefix": "wirkungssteuerung/",
+      "classification": "SUPERSEDED",
+      "reason": "Static navigation/shell projections are superseded by current main."
+    },
+    {
+      "prefix": "fuer/",
+      "classification": "SUPERSEDED",
+      "reason": "Static audience-page shell projections are superseded by current main."
+    },
+    {
+      "prefix": "ordnung/",
+      "classification": "SUPERSEDED",
+      "reason": "Static order/connection page projections are superseded by current main."
+    },
+    {
+      "prefix": "downloads/",
+      "classification": "SUPERSEDED",
+      "reason": "Static download-index renderings are superseded by current main/current release assets."
+    },
+    {
+      "prefix": "quellen/",
+      "classification": "SUPERSEDED",
+      "reason": "Static source pages are superseded by the current source registry and Quellenarchiv projection."
+    },
+    {
+      "prefix": "podcast/",
+      "classification": "SUPERSEDED",
+      "reason": "Static podcast shell pages are superseded by current main and immutable final audio releases."
+    },
+    {
+      "prefix": "wissen/",
+      "classification": "SUPERSEDED",
+      "reason": "Static knowledge-page renderings are superseded by current main."
+    },
+    {
+      "prefix": "methodik/",
+      "classification": "SUPERSEDED",
+      "reason": "Static method-page renderings are superseded by current main."
+    },
+    {
+      "prefix": "admin/",
+      "classification": "SUPERSEDED",
+      "reason": "Old static admin/radar UI renderings are superseded by current main."
+    },
+    {
+      "prefix": "akademie/",
+      "classification": "SUPERSEDED",
+      "reason": "Static Academy pages are superseded by the sanitized Academy v4 Public-Master projection on current main."
+    },
+    {
+      "prefix": "sdg-plus/",
+      "classification": "SUPERSEDED",
+      "reason": "Static SDG+ renderings are superseded by current main."
+    },
+    {
+      "prefix": "zertifikat/",
+      "classification": "SUPERSEDED",
+      "reason": "Old certificate UI/projection is superseded by current main and does not establish a new active certificate authority."
+    },
+    {
+      "prefix": "anwendungen/",
+      "classification": "SUPERSEDED",
+      "reason": "Static applications/tool renderings are superseded by current main."
+    },
+    {
+      "prefix": "oeffentlicher-wirkungsraum/",
+      "classification": "SUPERSEDED",
+      "reason": "Static public-space renderings are superseded by current main."
+    },
+    {
+      "prefix": "begriffe/",
+      "classification": "GENERATED_REPRODUCIBLE",
+      "reason": "Glossary index/detail pages are generated from the current term registry and glossary build scripts."
+    },
+    {
+      "prefix": "content/",
+      "classification": "SUPERSEDED",
+      "reason": "Remaining old content registries, imports and online fragments are superseded by current main's evolved sanitized/publication sources. Kooperative Wirkungsordnung and IOOI material are already represented by merged current publications; no local text is promoted as new Fach approval."
+    },
+    {
+      "prefix": "scripts/",
+      "classification": "SUPERSEDED",
+      "reason": "Remaining old build/import/portal/quality helpers are superseded by current main's evolved generators and already merged publication lanes; they are not replayed."
+    },
+    {
+      "prefix": "data/content_quality/",
+      "classification": "GENERATED_REPRODUCIBLE",
+      "reason": "Generated content-quality audit output."
+    },
+    {
+      "prefix": "reports/",
+      "classification": "GENERATED_REPRODUCIBLE",
+      "reason": "Generated import, normative, reference and URL-baseline audit reports."
+    },
+    {
+      "prefix": "ops/wahlkreis-wirkungscheck/analytics/dist/",
+      "classification": "GENERATED_REPRODUCIBLE",
+      "reason": "Compiled JavaScript/test output generated from the tracked TypeScript analytics sources."
+    },
+    {
+      "prefix": "ops/wahlkreis-wirkungscheck/",
+      "classification": "SUPERSEDED",
+      "reason": "The relevant source/config paths are already on GitHub or current main; the remaining README/local orchestration delta is superseded by the current Parliament analytics/release architecture."
+    },
+    {
+      "prefix": "file-drop/",
+      "classification": "SUPERSEDED",
+      "reason": "Detached old file-drop prototype and vendored browser bundle, outside the current Academy/Parliament architecture; no Vercel project or code is restored."
+    },
+    {
+      "prefix": "discord/",
+      "classification": "SUPERSEDED",
+      "reason": "Old standalone Discord legal-page projection is outside the current scoped applications and superseded by current site governance pages."
+    },
+    {
+      "prefix": "docs/claude",
+      "classification": "BUILD_CACHE_OR_TEMPORARY",
+      "reason": "Historical Claude/Codex handoff, worklog, correction or coordination artifact; not canonical public source."
+    },
+    {
+      "prefix": "docs/codex-",
+      "classification": "BUILD_CACHE_OR_TEMPORARY",
+      "reason": "Historical execution/handoff note; not canonical public source."
+    },
+    {
+      "prefix": "docs/handoff-",
+      "classification": "BUILD_CACHE_OR_TEMPORARY",
+      "reason": "Historical implementation/deployment handoff; current GitHub state is authoritative."
+    },
+    {
+      "prefix": "docs/studienskripte",
+      "classification": "SUPERSEDED",
+      "reason": "Historical Academy production/audit notes superseded by the sanitized v4 Public-Master machinery and v3.2 archive."
+    },
+    {
+      "prefix": "docs/status-uebergabe-",
+      "classification": "BUILD_CACHE_OR_TEMPORARY",
+      "reason": "Historical status handoff, not canonical current source."
+    },
+    {
+      "prefix": "docs/CODEX-HANDOFF-",
+      "classification": "BUILD_CACHE_OR_TEMPORARY",
+      "reason": "Historical task handoff, not canonical current source."
+    },
+    {
+      "prefix": "docs/CROSS_DOCUMENT_CONSISTENCY_REPORT.md",
+      "classification": "GENERATED_REPRODUCIBLE",
+      "reason": "Generated review report."
+    },
+    {
+      "prefix": "docs/DELTA_REVIEW_REPORT.md",
+      "classification": "GENERATED_REPRODUCIBLE",
+      "reason": "Generated review report."
+    },
+    {
+      "prefix": "docs/DRAFTING_ARTIFACTS_REPORT.md",
+      "classification": "GENERATED_REPRODUCIBLE",
+      "reason": "Generated drafting audit report."
+    },
+    {
+      "prefix": "docs/LIVE_REFERENCE_",
+      "classification": "SUPERSEDED",
+      "reason": "Historical publication reconciliation evidence superseded by current publication sources and changelogs."
+    },
+    {
+      "prefix": "docs/LOGIC_CONSISTENCY_REPORT.md",
+      "classification": "GENERATED_REPRODUCIBLE",
+      "reason": "Generated consistency report."
+    },
+    {
+      "prefix": "docs/PHASE_1_LIVE_REFERENCE_COMPLETION.md",
+      "classification": "SUPERSEDED",
+      "reason": "Historical completion report superseded by current publication state."
+    },
+    {
+      "prefix": "docs/SOURCE_LOGIC_REVIEW.md",
+      "classification": "GENERATED_REPRODUCIBLE",
+      "reason": "Generated source-logic review report."
+    },
+    {
+      "prefix": "docs/document-",
+      "classification": "GENERATED_REPRODUCIBLE",
+      "reason": "Generated document inventory/publication audit output."
+    },
+    {
+      "prefix": "docs/public-language-audit.md",
+      "classification": "GENERATED_REPRODUCIBLE",
+      "reason": "Generated public-language audit output."
+    },
+    {
+      "prefix": "docs/go3-sdg-detailkonzepte/",
+      "classification": "SUPERSEDED",
+      "reason": "Old portal/detail source projections superseded by current main's published SDG/SDG+ material."
+    },
+    {
+      "prefix": "docs/staat-recht-demokratie/",
+      "classification": "SUPERSEDED",
+      "reason": "Old portal/detail source projections superseded by current main's published state-law-democracy material."
+    },
+    {
+      "prefix": "docs/wirtschaft-unternehmen/",
+      "classification": "SUPERSEDED",
+      "reason": "Old portal source HTML superseded by current main's generated business/enterprise portal."
+    },
+    {
+      "prefix": "docs/gesundheit-pflege/",
+      "classification": "SUPERSEDED",
+      "reason": "Old DOCX extraction is superseded by current main's published health/care portal material."
+    },
+    {
+      "prefix": "source-assets/",
+      "classification": "SUPERSEDED",
+      "reason": "Historical imported source snapshot superseded by current publication sources and immutable artifacts."
+    },
+    {
+      "prefix": "src/data/",
+      "classification": "SUPERSEDED",
+      "reason": "Old search-synonym source is superseded by current search metadata/indexing."
+    },
+    {
+      "prefix": "tools/audio/",
+      "classification": "BUILD_CACHE_OR_TEMPORARY",
+      "reason": "Local audio comparison/QA helper for superseded test renders."
+    },
+    { "prefix": "afd-programm/", "classification": "SUPERSEDED", "reason": "Old static redirect/page projection superseded by current main." },
+    { "prefix": "app/", "classification": "SUPERSEDED", "reason": "Old static app landing projection superseded by current main." },
+    { "prefix": "ausprobieren/", "classification": "SUPERSEDED", "reason": "Old static redirect/page projection superseded by current main." },
+    { "prefix": "buch/", "classification": "SUPERSEDED", "reason": "Old static redirect/page projection superseded by current main." },
+    { "prefix": "datenschutz/", "classification": "SUPERSEDED", "reason": "Old static redirect/page projection superseded by current main." },
+    { "prefix": "einwaende/", "classification": "SUPERSEDED", "reason": "Old static page projection superseded by current main." },
+    { "prefix": "evidenz/", "classification": "SUPERSEDED", "reason": "Old static page projection superseded by current main." },
+    { "prefix": "export/", "classification": "SUPERSEDED", "reason": "Old static export page projection superseded by current main." },
+    { "prefix": "fa-qs-und-links/", "classification": "SUPERSEDED", "reason": "Old static redirect/page projection superseded by current main." },
+    { "prefix": "fachbibliothek/", "classification": "SUPERSEDED", "reason": "Old generated library page superseded by current main's current publication registry." },
+    { "prefix": "fragen/", "classification": "SUPERSEDED", "reason": "Old static page projection superseded by current main." },
+    { "prefix": "fuer-wen/", "classification": "SUPERSEDED", "reason": "Old static redirect/page projection superseded by current main." },
+    { "prefix": "funktionsweise/", "classification": "SUPERSEDED", "reason": "Old static redirect/page projection superseded by current main." },
+    { "prefix": "impressum/", "classification": "SUPERSEDED", "reason": "Old static redirect/page projection superseded by current main." },
+    { "prefix": "inhalt-und-strategie/", "classification": "SUPERSEDED", "reason": "Old static redirect/page projection superseded by current main." },
+    { "prefix": "intern/", "classification": "BUILD_CACHE_OR_TEMPORARY", "reason": "Local internal media helper page; not canonical public source." },
+    { "prefix": "journal/", "classification": "SUPERSEDED", "reason": "Old static journal page superseded by current main's blog/journal publication." },
+    { "prefix": "leitbild/", "classification": "SUPERSEDED", "reason": "Old static redirect/page projection superseded by current main." },
+    { "prefix": "lernen/", "classification": "SUPERSEDED", "reason": "Old static learning shell superseded by Academy v4 Public-Master." },
+    { "prefix": "manifest/", "classification": "SUPERSEDED", "reason": "Old static redirect/page projection superseded by current main." },
+    { "prefix": "mein-wirkungsraum/", "classification": "SUPERSEDED", "reason": "Old static page projection superseded by current main." },
+    { "prefix": "mitmachen/", "classification": "SUPERSEDED", "reason": "Old static redirect/page projection superseded by current main." },
+    { "prefix": "modell/", "classification": "SUPERSEDED", "reason": "Old static redirect/page projection superseded by current main." },
+    { "prefix": "pilot-starten/", "classification": "SUPERSEDED", "reason": "Old static page projection superseded by current main." },
+    { "prefix": "referenzrahmen/", "classification": "SUPERSEDED", "reason": "Old static SDG/SDG+ redirect/page projection superseded by current main." },
+    { "prefix": "register/", "classification": "SUPERSEDED", "reason": "Old static register projection superseded by current WÖk-ID register build." },
+    { "prefix": "scorecard-dashboard/", "classification": "SUPERSEDED", "reason": "Old static redirect/page projection superseded by current main." },
+    { "prefix": "sdg-sdgplus/", "classification": "SUPERSEDED", "reason": "Old static page projection superseded by current main." },
+    { "prefix": "sdg-und-sdg-plus/", "classification": "SUPERSEDED", "reason": "Old static redirect/page projection superseded by current main." },
+    { "prefix": "so-wirkt-wirkungsoekonomie/", "classification": "SUPERSEDED", "reason": "Old generated explanation page superseded by current main." },
+    { "prefix": "suche/", "classification": "GENERATED_REPRODUCIBLE", "reason": "Generated search landing/redirect projection." },
+    { "prefix": "sustynats/", "classification": "SUPERSEDED", "reason": "Old static page projection superseded by current main." },
+    { "prefix": "teil-", "classification": "SUPERSEDED", "reason": "Old static reference redirect projections superseded by current main." },
+    { "prefix": "tools/", "classification": "SUPERSEDED", "reason": "Old static/local tool projection superseded by current maintained build/tools." },
+    { "prefix": "ueber-die-w-oek/", "classification": "SUPERSEDED", "reason": "Old static redirect/page projection superseded by current main." },
+    { "prefix": "ueber-die-woek/", "classification": "SUPERSEDED", "reason": "Old static redirect/page projection superseded by current main." },
+    { "prefix": "ueber/", "classification": "SUPERSEDED", "reason": "Old static redirect/page projection superseded by current main." },
+    { "prefix": "updates/", "classification": "SUPERSEDED", "reason": "Old static page projection superseded by current main." },
+    { "prefix": "veroeffentlichungen/", "classification": "SUPERSEDED", "reason": "Old static redirect/page projection superseded by current publication registry." },
+    { "prefix": "w-est-g-journal/", "classification": "SUPERSEDED", "reason": "Old static redirect/page projection superseded by current main." },
+    { "prefix": "website-1-0-release/", "classification": "SUPERSEDED", "reason": "Historical release page superseded by current website state and immutable assets." },
+    { "prefix": "wirkung-werte-journal/", "classification": "SUPERSEDED", "reason": "Old static redirect/page projection superseded by current main." },
+    { "prefix": "wirkungsoekonomie/", "classification": "SUPERSEDED", "reason": "Old static redirect/page projection superseded by current main." },
+    { "prefix": "woek-ki/", "classification": "SUPERSEDED", "reason": "Old static page projection superseded by current main." },
+    { "prefix": "en/", "classification": "SUPERSEDED", "reason": "Old local English landing projection was merged via #230 and evolved on current main." },
+    { "prefix": "institut/", "classification": "SUPERSEDED", "reason": "Old marketing-site Institut projection is superseded by current main and the separately audited private Institut application." },
+    { "prefix": "parlament/", "classification": "SUPERSEDED", "reason": "Old marketing-site Parliament projection is superseded by current main and the Parliament Golden State." }
+    ,{ "prefix": "docs/institut-", "classification": "ALREADY_IN_GITHUB_PR_OR_BRANCH", "reason": "Individually reviewed historical Institut architecture document is preserved in the exact issue-284 residual GitHub Release archive; it is not current deployment authority.", "evidence": "https://github.com/sustynats/wirkungsoekonomie.de/releases/tag/issue-284-old-dirty-worktree-rescue" }
+    ,{ "prefix": "docs/accessibility/", "classification": "ALREADY_IN_GITHUB_PR_OR_BRANCH", "reason": "Individually reviewed historical accessibility standard/checklist is preserved in the exact issue-284 residual GitHub Release archive.", "evidence": "https://github.com/sustynats/wirkungsoekonomie.de/releases/tag/issue-284-old-dirty-worktree-rescue" }
+    ,{ "prefix": "docs/parlament/", "classification": "ALREADY_IN_GITHUB_PR_OR_BRANCH", "reason": "Individually reviewed historical Parliament architecture proposal is preserved in the exact issue-284 residual GitHub Release archive; it is not current implementation or Fach/DNS/Recommendation approval.", "evidence": "https://github.com/sustynats/wirkungsoekonomie.de/releases/tag/issue-284-old-dirty-worktree-rescue" }
+    ,{ "prefix": "docs/wirkungscheck/", "classification": "ALREADY_IN_GITHUB_PR_OR_BRANCH", "reason": "Individually reviewed historical Wirkungscheck technical proposal is preserved in the exact issue-284 residual GitHub Release archive; it is not current implementation authority.", "evidence": "https://github.com/sustynats/wirkungsoekonomie.de/releases/tag/issue-284-old-dirty-worktree-rescue" }
+    ,{ "prefix": "docs/woek-knowledge/", "classification": "ALREADY_IN_GITHUB_PR_OR_BRANCH", "reason": "Individually reviewed historical cross-project knowledge map is preserved in the exact issue-284 residual GitHub Release archive; it must be reconciled with current main before use.", "evidence": "https://github.com/sustynats/wirkungsoekonomie.de/releases/tag/issue-284-old-dirty-worktree-rescue" }
+  ]
+}

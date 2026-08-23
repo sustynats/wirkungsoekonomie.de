@@ -1,0 +1,278 @@
+[
+  {
+    "baseRefName": "main",
+    "headRefName": "codex/hosting-cost-guard-20260822",
+    "headRefOid": "936eb0a92791730129c09a31d8a74e95b3d9612d",
+    "isDraft": false,
+    "mergeCommit": {
+      "oid": "000eeece9c7e182efa8aec0380f45e6f8332699a"
+    },
+    "number": 22,
+    "state": "MERGED",
+    "title": "Enforce Vercel hosting cost guard",
+    "url": "https://github.com/sustynats/woek-institut-app/pull/22"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "codex/institut-wirkungsraum",
+    "headRefOid": "2d5270cd9dbd9e267086598d9fe52dc7bd1fb260",
+    "isDraft": false,
+    "mergeCommit": {
+      "oid": "045e45f1ad8243d6ed4b041e6da69abff4af5efa"
+    },
+    "number": 21,
+    "state": "MERGED",
+    "title": "WÖk-ID für Institut-Merkliste",
+    "url": "https://github.com/sustynats/woek-institut-app/pull/21"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "codex/institut-analytics-control",
+    "headRefOid": "667bea08c8b923765d6ec5479a4a1315f7666b62",
+    "isDraft": false,
+    "mergeCommit": {
+      "oid": "7a02cc789b82e887a03589e4ca3880667ad5d4cd"
+    },
+    "number": 20,
+    "state": "MERGED",
+    "title": "Add Oracle warm standby for Institut",
+    "url": "https://github.com/sustynats/woek-institut-app/pull/20"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "codex/institut-richtext-edit-delete",
+    "headRefOid": "0474bf6f07a6f88d41d343ce2d1c689787022623",
+    "isDraft": false,
+    "mergeCommit": {
+      "oid": "e43f4fa240f12f5a2568fe942059bd46422a1544"
+    },
+    "number": 19,
+    "state": "MERGED",
+    "title": "Institut: Anzeigenamen, Bearbeiten/Löschen und Rich-Text glätten",
+    "url": "https://github.com/sustynats/woek-institut-app/pull/19"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "claude/forum-reply-profile",
+    "headRefOid": "c08558a19f59c7deff0574c88d1a8c1a6698c52f",
+    "isDraft": false,
+    "mergeCommit": {
+      "oid": "4ec0398c3de489975a5a43c14d7e5a640b3e28ca"
+    },
+    "number": 18,
+    "state": "MERGED",
+    "title": "Forum: größeres Antwortfeld mit Formatierung + Autor-Profil-Link",
+    "url": "https://github.com/sustynats/woek-institut-app/pull/18"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "claude/quellen-historie-feed",
+    "headRefOid": "642b557d5fc342f4b6713ab50723e6265d58818d",
+    "isDraft": false,
+    "mergeCommit": {
+      "oid": "e1a4fa4f113f2f6f46743b81e28360161eabbe35"
+    },
+    "number": 17,
+    "state": "MERGED",
+    "title": "feat(quellen): Autor + Änderungshistorie + „Neu & geändert\"-Feed",
+    "url": "https://github.com/sustynats/woek-institut-app/pull/17"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "claude/quellen-doi-sichtbarkeit",
+    "headRefOid": "63797d2e24eb1e35cc07c9ff0fb75ab6f1a12fb5",
+    "isDraft": false,
+    "mergeCommit": {
+      "oid": "8dc1738f9a4881123f54419dbe28022bcd7fbf40"
+    },
+    "number": 16,
+    "state": "MERGED",
+    "title": "ux(quellen): DOI erklären + Sichtbarkeit vereinfachen",
+    "url": "https://github.com/sustynats/woek-institut-app/pull/16"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "claude/login-linkedin-guard",
+    "headRefOid": "36ded860438b9f3e1b3575fa6f520613c86fb85e",
+    "isDraft": false,
+    "mergeCommit": {
+      "oid": "a48fc2535efac22bda7658e2a149122d7dc237f2"
+    },
+    "number": 15,
+    "state": "MERGED",
+    "title": "fix(login): LinkedIn-Button nur bei aktivem Provider (Sofort-Mitigation)",
+    "url": "https://github.com/sustynats/woek-institut-app/pull/15"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "feature/quellen-public-api",
+    "headRefOid": "e8cb13f928aab5ae8f64b86404c255192773c0ff",
+    "isDraft": false,
+    "mergeCommit": {
+      "oid": "3ee4976a0cefb8c8ad8bf85e49901ad7a43c38c1"
+    },
+    "number": 14,
+    "state": "MERGED",
+    "title": "feat: öffentliche Quellen-API (/api/quellen) für den Website-Spiegel",
+    "url": "https://github.com/sustynats/woek-institut-app/pull/14"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "data/quellenarchiv-crawl",
+    "headRefOid": "a52c0f955bbc83b51b262d260cb7e7a261f4d66e",
+    "isDraft": false,
+    "mergeCommit": null,
+    "number": 13,
+    "state": "OPEN",
+    "title": "data: +66 Quellen aus dem Website-Crawl (Quellenarchiv → 289)",
+    "url": "https://github.com/sustynats/woek-institut-app/pull/13"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "feature/quellenarchiv",
+    "headRefOid": "28bde9751116bd99a0a7005ae109e3f45ebf6387",
+    "isDraft": false,
+    "mergeCommit": {
+      "oid": "0c4995ee6ef76d6c4b281b49441a03bef5b12635"
+    },
+    "number": 12,
+    "state": "MERGED",
+    "title": "feat: Quellenarchiv (Detailseiten, Diskussion, Merken, 223 Quellen, intern/extern)",
+    "url": "https://github.com/sustynats/woek-institut-app/pull/12"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "video/natalie-final",
+    "headRefOid": "47bab819d94232fb712af03f7f6f53fc356f874d",
+    "isDraft": false,
+    "mergeCommit": {
+      "oid": "0ae1fcc0e7708170488af2193ec0b77bd1dcdc4b"
+    },
+    "number": 11,
+    "state": "MERGED",
+    "title": "video: finale von Natalie geprüfte Institut-Video-Fassung",
+    "url": "https://github.com/sustynats/woek-institut-app/pull/11"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "revert/institut-video-good",
+    "headRefOid": "cd4505bdd4033f09bb416c6fae94236a5bab947d",
+    "isDraft": false,
+    "mergeCommit": null,
+    "number": 10,
+    "state": "CLOSED",
+    "title": "revert(video): zurück auf vorige (bessere) Institut-Video-Fassung",
+    "url": "https://github.com/sustynats/woek-institut-app/pull/10"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "fix/institut-video-artefaktfrei",
+    "headRefOid": "2ae5b55817adff28d9079d46c2eb3cdb13a7e431",
+    "isDraft": false,
+    "mergeCommit": {
+      "oid": "713832ff37e6c7d44fad4fbc94dd1161416344f3"
+    },
+    "number": 9,
+    "state": "MERGED",
+    "title": "fix(video): artefaktfreie Institut-Video-Fassung",
+    "url": "https://github.com/sustynats/woek-institut-app/pull/9"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "fix/serveraction-bodysize-413",
+    "headRefOid": "a0f7eff318d7cd7023264d616fd0e42e8ce067e2",
+    "isDraft": false,
+    "mergeCommit": null,
+    "number": 8,
+    "state": "CLOSED",
+    "title": "fix(profil): Server-Action-Bodysize auf 4 MB (Profilbild warf 413)",
+    "url": "https://github.com/sustynats/woek-institut-app/pull/8"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "codex/profil-nur-anzeigename-pflicht",
+    "headRefOid": "d1334e1d626ba83edd241a8180d833cd78681788",
+    "isDraft": false,
+    "mergeCommit": null,
+    "number": 7,
+    "state": "OPEN",
+    "title": "Profil: Pflichtfelder kennzeichnen, Bildgröße-Hinweis & 413-Fix (Foto-Upload)",
+    "url": "https://github.com/sustynats/woek-institut-app/pull/7"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "codex/institut-video-v4",
+    "headRefOid": "9ccd30084002e8bff26202ec665fe775f605674a",
+    "isDraft": false,
+    "mergeCommit": {
+      "oid": "b4a45c6c684a7bf8c82484ac00a965ae391d7426"
+    },
+    "number": 6,
+    "state": "MERGED",
+    "title": "fix(landing): Institut-Video auf perfektionierte v4 tauschen",
+    "url": "https://github.com/sustynats/woek-institut-app/pull/6"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "claude/institut-video-neu",
+    "headRefOid": "ab67d9c68c25b7a2281d2a6abe788448f79222dd",
+    "isDraft": false,
+    "mergeCommit": {
+      "oid": "cae8c6df173eda2566fdc92326177bb35fb0d0df"
+    },
+    "number": 5,
+    "state": "MERGED",
+    "title": "Neues Institut-Erklärvideo (Vom Wissen zur Wirkung)",
+    "url": "https://github.com/sustynats/woek-institut-app/pull/5"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "claude/institut-video-app",
+    "headRefOid": "ca283d99e37858a41737e7d23c00df1c3d98ebde",
+    "isDraft": false,
+    "mergeCommit": {
+      "oid": "ca283d99e37858a41737e7d23c00df1c3d98ebde"
+    },
+    "number": 4,
+    "state": "MERGED",
+    "title": "Institut-Erklärvideo in die Landing einbinden (auf main)",
+    "url": "https://github.com/sustynats/woek-institut-app/pull/4"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "codex/institut-public-link-targets",
+    "headRefOid": "848d020a1fedc5afb865db16ece356b30743c4c4",
+    "isDraft": false,
+    "mergeCommit": {
+      "oid": "94325644fda45a0069245d62f5c7b707d68feaf8"
+    },
+    "number": 3,
+    "state": "MERGED",
+    "title": "feat: add public institute link targets",
+    "url": "https://github.com/sustynats/woek-institut-app/pull/3"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "claude/institut-erklaervideo",
+    "headRefOid": "2f5fce183771cd3bf5345dd12b4d664815f08c43",
+    "isDraft": false,
+    "mergeCommit": null,
+    "number": 2,
+    "state": "CLOSED",
+    "title": "Institut-Erklärvideo in die neue Landingpage einbinden",
+    "url": "https://github.com/sustynats/woek-institut-app/pull/2"
+  },
+  {
+    "baseRefName": "main",
+    "headRefName": "codex/wirkungsinstitut-landingpage",
+    "headRefOid": "723288eb900072af0463db79ec65fe687e5c076e",
+    "isDraft": false,
+    "mergeCommit": {
+      "oid": "e084147e820f2eb6b2db741a5bfff60503dcb497"
+    },
+    "number": 1,
+    "state": "MERGED",
+    "title": "feat: rebuild Wirkungsinstitut landing page",
+    "url": "https://github.com/sustynats/woek-institut-app/pull/1"
+  }
+]

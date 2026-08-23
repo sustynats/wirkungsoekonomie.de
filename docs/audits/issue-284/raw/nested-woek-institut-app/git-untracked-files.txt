@@ -1,0 +1,66 @@
+.github/workflows/ci 2.yml
+app/aktuelles/page.tsx
+app/api/aktuelles/rss/route.ts
+app/api/audio/livekit-webhook/route.ts
+app/api/audio/presence/route.ts
+app/api/audio/rooms/[roomSlug]/route.ts
+app/api/audio/token/route.ts
+app/arbeitsweise/page 2.tsx
+app/components/MemberNav 2.tsx
+app/components/RichTextEditor.tsx
+app/dev-login/route 2.ts
+app/dev-logout/route 2.ts
+app/dokumente/[documentId]/CollaboratorInvite 2.tsx
+app/einreichen/page 2.tsx
+app/erfolgskriterien/page 2.tsx
+app/faq/page 2.tsx
+app/intern/aktuelles/page.tsx
+app/kontakt/page 2.tsx
+app/methodik/page 3.tsx
+app/methodik/page 4.tsx
+app/mitglieder/page 2.tsx
+app/mitwirken/page 3.tsx
+app/mitwirken/page 4.tsx
+app/narrativ-einreichen/actions 2.ts
+app/narrativ-einreichen/page 2.tsx
+app/nicht-ziel/page 2.tsx
+app/page 4.tsx
+app/profil/actions 2.ts
+app/profil/page 2.tsx
+app/raeume/AudioRoomClient.tsx
+app/raeume/page 2.tsx
+app/raeume/page.tsx
+app/redaktionelle-leitlinien/page 2.tsx
+app/stakeholder/page 2.tsx
+app/thema-einreichen/actions 2.ts
+app/thema-einreichen/page 2.tsx
+app/unabhaengigkeit/page 2.tsx
+app/verwaltung/aktuelles/actions.ts
+app/verwaltung/aktuelles/page.tsx
+app/verwaltung/audio/actions.ts
+app/verwaltung/audio/page.tsx
+app/wirkungsgesellschaft/page 2.tsx
+app/wirkungsmodell/page 2.tsx
+app/zielbild/page 2.tsx
+lib/institut/announcements.ts
+lib/institut/audio-meetings.ts
+lib/institut/audio.ts
+lib/institut/collaborators 2.ts
+lib/institut/dashboard 2.ts
+lib/institut/narrative-submissions 2.ts
+lib/institut/profiles 2.ts
+lib/institut/public-pages 3.ts
+lib/institut/public-pages 4.ts
+lib/institut/topic-submissions 2.ts
+lib/oracle.ts
+scripts/quality/audit-accessibility-baseline.mjs
+scripts/quality/check-no-em-dash.mjs
+scripts/upsert-sdgplus-verfassungsquellen.mjs
+supabase/migrations/institut_0009_document_collaborators 2.sql
+supabase/migrations/institut_0010_narrative_submissions 2.sql
+supabase/migrations/institut_0011_topic_submissions 2.sql
+supabase/migrations/institut_0012_application_discord_role_grants 2.sql
+supabase/migrations/institut_0013_linkedin_profiles_and_reapplications 2.sql
+supabase/migrations/institut_0017_communication_hub.sql
+supabase/migrations/institut_0018_audio_meetings.sql
+supabase/seed/institut_quellenarchiv_intern.sql

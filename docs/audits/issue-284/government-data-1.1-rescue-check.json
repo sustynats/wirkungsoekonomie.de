@@ -1,0 +1,23 @@
+{
+  "archive": "WOEK-GOVERNMENT-DATA-2025-2026-INGEST-1.1.zip",
+  "archive_bytes": 314392385,
+  "archive_checksum_match": true,
+  "archive_sha256": "17936c8b61179d9d7f7f7f64b76099f064ae06881ee58bf551a78534450fa565",
+  "duplicate_members": [],
+  "expected_sha256": "17936c8b61179d9d7f7f7f64b76099f064ae06881ee58bf551a78534450fa565",
+  "extra_files": [],
+  "integrity_status": "PASS",
+  "manifest_file_count": 8407,
+  "manifest_hash_mismatches": [],
+  "manifest_missing": [],
+  "manifest_size_mismatches": [],
+  "post_manifest_validation_files": [
+    "WOEK-GOVERNMENT-DATA-2025-2026-INGEST-1.1/audit/VALIDATION-RESULT.json"
+  ],
+  "schema_version": "woek-issue-284-rescue-archive-check-1.0",
+  "secret_scan_status": "PASS",
+  "strong_secret_pattern_hits": {},
+  "symlink_members": [],
+  "unsafe_paths": [],
+  "zip_member_count": 8744
+}
