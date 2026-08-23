@@ -22,6 +22,7 @@
     "check:generic-public-editorial": "node scripts/quality/generic-public-editorial-scan.mjs",
     "check:public-labels": "tsx scripts/quality/check-public-label-inventory.ts",
     "check:sachsen-anhalt-publication": "tsx scripts/quality/check-sachsen-anhalt-programme-publication.ts",
+    "check:berlin-current-source": "tsx scripts/quality/check-berlin-current-source.ts",
     "check:government-identifiers": "tsx scripts/quality/check-government-identifier-shapes.ts",
     "check:public-ux": "node scripts/quality/audit-public-ux.cjs",
     "check:source-detail-responsive": "node scripts/quality/check-source-detail-responsive.mjs",
