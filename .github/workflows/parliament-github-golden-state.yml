@@ -1,0 +1,89 @@
+name: Parliament combined GitHub Golden State
+
+on:
+  pull_request:
+    paths:
+      - "audit-manifests/sachsen-anhalt/cdu-final-convergence-freeze-v1.json"
+      - "audit-manifests/sachsen-anhalt/gruene-final-union-c17.json"
+      - "ops/releases/parliament-github-golden-state-2026-08-23.json"
+      - "tools/validate_parliament_github_golden_state.py"
+      - "tools/validate_st_six_party_terminal_release.py"
+      - "tools/validate_berlin_current_source_register.py"
+      - "tools/validate_mv_current_source_register.py"
+      - "woek-parlament-app/app/components/SamePageNavigation.tsx"
+      - "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/**"
+      - "woek-parlament-app/data/state-programmes/current-source-registers/berlin-2026.json"
+      - "woek-parlament-app/data/state-programmes/current-source-registers/mecklenburg-vorpommern-2026.json"
+      - "woek-parlament-app/scripts/quality/check-same-page-navigation.mjs"
+      - ".github/workflows/parliament-github-golden-state.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "ops/releases/parliament-github-golden-state-2026-08-23.json"
+      - "tools/validate_parliament_github_golden_state.py"
+      - ".github/workflows/parliament-github-golden-state.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: read
+
+concurrency:
+  group: parliament-github-golden-state-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  combined-source:
+    name: Combined immutable sources and release descriptors
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Validate CDU terminal union and 0259 to 0251 binding
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 tools/finalize_st_cdu_convergence.py --check-github
+      - name: Validate GRÜNE final union
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 tools/validate_st_gruene_final_union.py --check-github
+      - name: Validate Sachsen-Anhalt six-party terminal descriptor
+        run: python3 tools/validate_st_six_party_terminal_release.py
+      - name: Validate Berlin current-source descriptor
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 tools/validate_berlin_current_source_register.py --check-github
+      - name: Validate Mecklenburg-Vorpommern current-source descriptor
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 tools/validate_mv_current_source_register.py --check-github
+      - name: Validate combined commit-bound Golden State
+        run: python3 tools/validate_parliament_github_golden_state.py
+      - name: Assert immutable validation
+        run: git diff --exit-code
+
+  combined-public-projection:
+    name: Combined navigation and public projection
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: woek-parlament-app
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: woek-parlament-app/package-lock.json
+      - run: npm ci
+      - run: npm run check:same-page-navigation
+      - run: npm run check:sachsen-anhalt-publication
+      - run: npm run check:berlin-current-source
+      - run: npm run check:mv-current-source
+      - run: npm run check:state-publication
+      - run: npm run typecheck
