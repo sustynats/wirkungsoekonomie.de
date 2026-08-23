@@ -191,6 +191,8 @@ def validate_release(actual: dict, expected: dict) -> None:
             raise ValueError(f"PARTY_MANIFEST_RAW_HASH_DRIFT:{party['source_key']}")
         if party["authoritative_source_unit_count"] - party["authoritative_effect_mechanism_count"] != party["non_effect_source_leaf_count"]:
             raise ValueError(f"PARTY_COUNT_CONSERVATION_DRIFT:{party['source_key']}")
+        if not str(party["terminal_fach_gate"]).startswith("PASS"):
+            raise ValueError(f"PARTY_TERMINAL_FACH_GATE_NOT_PASSING:{party['source_key']}")
     if actual["historical_working_register"]["count"] != 2921:
         raise ValueError("HISTORICAL_WORKING_REGISTER_TOTAL_DRIFT")
     if actual["authoritative_totals"] != {
