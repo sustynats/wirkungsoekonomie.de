@@ -62,6 +62,10 @@ assert.equal(rlpMandate.period, "2026-2031");
 assert.equal(rlpMandate.governmentStart, "18.05.2026");
 assert.match(rlpMandate.title, /Gemeinsame Verantwortung/);
 assert.match(statePublicContent.berlin.electionField?.officialFieldLabel ?? "", /17 Parteien/);
+assert.equal(statePublicContent.berlin.programmeSources?.status, "CURRENT_SOURCE_CLASSIFICATION_COMPLETE_17_OF_17");
+assert.equal(statePublicContent.berlin.programmeSources?.parties.length, 17);
+assert.equal(statePublicContent.berlin.programmeSources?.coverage.final_election_programme_verified_count, 9);
+assert.equal(statePublicContent.berlin.programmeSources?.coverage.full_17_final_election_programme_corpus_available, false);
 assert.match(statePublicContent["mecklenburg-vorpommern"].electionField?.officialFieldLabel ?? "", /19 Landeslisten/);
 
 console.log(JSON.stringify({
@@ -70,4 +74,5 @@ console.log(JSON.stringify({
   reviews: reviews.length,
   impactCases: reviews.reduce((sum, review) => sum + review.ids.length + ("supplemental" in review ? review.supplemental.ids.length : 0), 0),
   coalitionMandates: ["baden-wuerttemberg-2026-2031", "rheinland-pfalz-2026-2031"],
+  berlinCurrentSourceClassification: "17/17",
 }));

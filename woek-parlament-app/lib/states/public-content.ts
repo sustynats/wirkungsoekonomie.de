@@ -1,5 +1,6 @@
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
+import berlinCurrentSourceRegister from "../../data/state-programmes/current-source-registers/berlin-2026.json";
 
 export type StateReviewArea = "regierung" | "wahl";
 
@@ -33,10 +34,49 @@ export type ElectionFieldMeta = {
   sourceAsOf: string;
 };
 
+export type StateProgrammeSourceEntry = {
+  party: string;
+  field_scope: string;
+  artifact_class: string;
+  source_status: string;
+  public_status_label: string;
+  public_status_detail: string;
+  source_urls: Array<{ label: string; url: string }>;
+  final_election_programme_verified: boolean;
+  source_available_for_election_corpus: boolean;
+  canonicalization_pending: boolean;
+  assessment_maturity: string;
+};
+
+export type StateProgrammeSourceRegister = {
+  source_as_of: string;
+  status: string;
+  official_field: {
+    admitted_party_count: number;
+    official_source_url: string;
+    official_source_date: string;
+  };
+  coverage: {
+    classified_party_count: number;
+    final_election_programme_verified_count: number;
+    election_source_available_canonicalization_pending_count: number;
+    final_election_programme_not_verified_count: number;
+    source_available_for_election_corpus_count: number;
+    full_17_final_election_programme_corpus_available: boolean;
+    assessment_maturity: string;
+  };
+  preserved_fach_review: {
+    materiality_theme_count: number;
+  };
+  parties: StateProgrammeSourceEntry[];
+  descriptor_sha256: string;
+};
+
 export type StatePublicContent = {
   review?: StateReviewMeta;
   mandate?: StateMandateMeta;
   electionField?: ElectionFieldMeta;
+  programmeSources?: StateProgrammeSourceRegister;
 };
 
 export const statePublicContent: Record<string, StatePublicContent> = {
@@ -97,10 +137,11 @@ export const statePublicContent: Record<string, StatePublicContent> = {
     electionField: {
       electionDate: "20.09.2026",
       officialFieldLabel: "17 Parteien mit zugelassenen Landes- oder Bezirkslisten",
-      officialFieldDetail: "Die Fachanalyse ist materialitätsorientiert und noch nicht deckungsgleich mit dem vollständigen amtlichen Kandidatenfeld. Fehlende finale Programme bleiben sichtbar offen.",
+      officialFieldDetail: "Alle 17 zugelassenen Parteien sind im aktuellen Quellenstand klassifiziert: 9 finale Wahlprogramme sind verifiziert, 3 Wahlprogramm-/Manifestquellen warten noch auf exakte Kanonisierung und für 5 Parteien ist kein finales Berlin-2026-Vollprogramm verifiziert. Das ist vollständige Quellenklassifikation, kein Vollreview aller Programme.",
       officialSourceUrl: "https://www.berlin.de/wahlen/pressemitteilungen/2026/pressemitteilung.1697177.php",
       sourceAsOf: "24.07.2026",
     },
+    programmeSources: berlinCurrentSourceRegister,
   },
   "mecklenburg-vorpommern": {
     review: {
