@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SamePageQueryForm } from "@/app/components/SamePageNavigation";
 import { listPublicSources, sourceCategoryLabel, sourceRoleLabel, temporalClassLabel } from "@/lib/sources/public-registry";
 
 export const dynamic = "force-dynamic";
@@ -33,11 +34,11 @@ export default async function SourcesPage({ searchParams }: { searchParams: Prom
         <article><strong>Interessen- und Praxisevidenz</strong><span>Beiträge von Verbänden, Gewerkschaften, Unternehmen, NGOs und Betroffenenorganisationen zeigen Perspektiven und Erfahrungen. Diese Rolle wird sichtbar gekennzeichnet.</span></article>
         <article><strong>WÖk-Referenzen</strong><span>Begriffsleitfaden, Bewertungsregeln und Indikatoren erläutern Methode und Wertmaßstab. Sie ersetzen keine Tatsachenquelle.</span></article>
       </section>
-      <form className="source-archive-search" action="/quellen" method="get" role="search">
+      <SamePageQueryForm className="source-archive-search" role="search">
         <label htmlFor="source-search">Quellen durchsuchen</label>
         <div><input id="source-search" name="q" type="search" defaultValue={params.q ?? ""} placeholder="Titel, Institution oder Quellenart" /><button className="button button-secondary" type="submit">Suchen</button></div>
         <p>{filtered.length.toLocaleString("de-DE")} von {allSources.length.toLocaleString("de-DE")} Quellenakten</p>
-      </form>
+      </SamePageQueryForm>
       {sources.length > 0 ? (
         <div className="source-archive-list">
           {sources.map((source) => <article key={source.id}>
