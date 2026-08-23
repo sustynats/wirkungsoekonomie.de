@@ -1,0 +1,111 @@
+{
+  "base_main_commit": "9c7d2de3599abdde5559e1fb7d63dc5a5cc38f7f",
+  "constraints": {
+    "dns_mapping_synthesized": false,
+    "new_fach_judgements_created": false,
+    "party_score_created": false,
+    "recommendation_synthesized": false,
+    "vercel_build_triggered": false
+  },
+  "execution_origin_commit": "9ad10243b8aa4a7d74e7475639b86d50d1be327e",
+  "github_gate_contract": {
+    "combined_public_projection_gate": "REQUIRED",
+    "combined_source_gate": "REQUIRED",
+    "exact_head_before_merge": true,
+    "tree_equivalence_after_merge": true,
+    "website_search_privacy_url_gate": "REQUIRED"
+  },
+  "golden_state_descriptor_sha256": "7dfbb43282ae7fbef8ae12718a0ba02df2a99c66034d6b4cc768f1bca4486189",
+  "hash_definition": "SHA-256 of canonical JSON (UTF-8, sorted keys, compact separators) excluding golden_state_descriptor_sha256",
+  "lanes": {
+    "berlin_current_source": {
+      "canonicalization_pending_count": 3,
+      "classified_party_count": 17,
+      "descriptor_sha256": "99a1043163b308817e858fab0d51695ac4d4e11bc537c8aab3d4ebec7f375e13",
+      "final_election_programme_verified_count": 9,
+      "merge_commit": "8ab669258b46fb3904e4d1292423c1106dc8c778",
+      "preserved_materiality_theme_count": 6,
+      "pull_request": 293,
+      "register_path": "woek-parlament-app/data/state-programmes/current-source-registers/berlin-2026.json",
+      "register_raw_sha256": "7f22fb873ebb0e3b6bb113be37ad311378e043cd4369f051d49ffab1811bff10",
+      "source_unavailable_for_election_corpus_count": 5
+    },
+    "mecklenburg_vorpommern_current_source": {
+      "canonicalization_pending_count": 3,
+      "classified_party_count": 19,
+      "descriptor_sha256": "f61a5a43f07389bf94f8e548f9cbbd1a4b74005ccd170f337f13665e5cd97673",
+      "final_election_programme_verified_count": 10,
+      "merge_commit": "9c7d2de3599abdde5559e1fb7d63dc5a5cc38f7f",
+      "preserved_materiality_theme_count": 8,
+      "pull_request": 294,
+      "register_path": "woek-parlament-app/data/state-programmes/current-source-registers/mecklenburg-vorpommern-2026.json",
+      "register_raw_sha256": "4025e66a18d89040f907b1483b7dce261f6dc3e61b545f4b15d59f045da3ec77",
+      "source_unavailable_for_election_corpus_count": 6
+    },
+    "sachsen_anhalt_six_party_terminal": {
+      "authoritative_effect_mechanism_count": 5308,
+      "authoritative_source_unit_count": 5403,
+      "cdu_0259_restatement_target": "ST-CDU-PRIMARY-SPLIT-0251-ANIMAL-WELFARE-FUNDING",
+      "cdu_final_union_sha256": "40c63bd93fe17093d5ba69b82efabaee9c31d51b23a14bae05579805b24db5e2",
+      "gruene_final_union_sha256": "bcb003608a6fe3777ab09736505c5bb2e9f55422bb4ba0a09abe0127cf7b0577",
+      "historical_working_register_count": 2921,
+      "merge_commit": "fefec75f09dc70db8de7880f93b4e8c6788e4461",
+      "non_effect_source_leaf_count": 95,
+      "party_count": 6,
+      "pull_request": 292,
+      "release_descriptor_sha256": "6e0cf6fce5c41734bfd3f5480e562b93aff38a759c9b57b55298d8da4ee9dcee",
+      "release_path": "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-six-party-terminal-release-v1.json",
+      "release_raw_sha256": "c6d7ec4c0ad1e57ee1d5f41d7b20edc4c5b43a0c70acc7e5ea86d1aef1259b50"
+    },
+    "shared_same_page_navigation": {
+      "component_path": "woek-parlament-app/app/components/SamePageNavigation.tsx",
+      "component_sha256": "c5546d66e011580651c5e90715aee8d1d7dc5883a275a07aa201022d11f1224c",
+      "cross_page_navigation_default_unchanged": true,
+      "gate_script_path": "woek-parlament-app/scripts/quality/check-same-page-navigation.mjs",
+      "gate_script_sha256": "649904fcd1208dc83663b69bc5134ce88923073755487922a1478e5e1bdac87c",
+      "issue": 282,
+      "merge_commit": "3dc36ece02fb52ba791ce4db23affc664f74f7f2",
+      "pull_request": 283,
+      "same_page_query_navigation_preserves_scroll": true
+    }
+  },
+  "publication_integrity": {
+    "rendered_content_paths": [
+      "/laender/sachsen-anhalt",
+      "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-cdu",
+      "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-spd",
+      "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-gruene",
+      "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-linke",
+      "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-bsw",
+      "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-afd",
+      "/laender/berlin",
+      "/laender/berlin/wahl",
+      "/laender/mecklenburg-vorpommern",
+      "/laender/mecklenburg-vorpommern/wahl"
+    ],
+    "required_content_paths": [
+      "/laender/sachsen-anhalt",
+      "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-cdu",
+      "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-spd",
+      "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-gruene",
+      "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-linke",
+      "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-bsw",
+      "/laender/sachsen-anhalt/wahlprogramme/ltw-2026-st-afd",
+      "/laender/berlin",
+      "/laender/berlin/wahl",
+      "/laender/mecklenburg-vorpommern",
+      "/laender/mecklenburg-vorpommern/wahl"
+    ],
+    "unrendered_content_paths": []
+  },
+  "release_id": "WOEK-PARLIAMENT-GITHUB-GOLDEN-STATE-2026-08-23",
+  "release_transition": {
+    "maximum_release_candidate_builds": 1,
+    "production_strategy": "PROMOTE_SAME_TESTED_RC_WITHOUT_REBUILD",
+    "release_candidate_builds_triggered_at_github_golden_state": 0,
+    "vercel_build_slot_reservation": "REQUIRED_BEFORE_BUILD",
+    "vercel_release_budget_gate": "REQUIRED_BEFORE_BUILD"
+  },
+  "schema_version": "woek-parliament-github-golden-state-1.0",
+  "status": "COMBINED_GITHUB_GOLDEN_STATE"
+}
