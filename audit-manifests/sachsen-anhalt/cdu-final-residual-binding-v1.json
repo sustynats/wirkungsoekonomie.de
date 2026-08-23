@@ -13,6 +13,11 @@
         "id": 5383655655,
         "updated_at": "2026-08-23T01:49:16Z",
         "body_sha256": "329a053e4ad7e2f248fde966cf00a9113ff75b34563d461d3b02aead094b94e3"
+      },
+      {
+        "id": 5385115126,
+        "updated_at": "2026-08-23T08:42:07Z",
+        "body_sha256": "0ba3856971df07800e627425dfa640e9e58ba452ee6174a110eda9fd71cc76b4"
       }
     ],
     "upstream_pr": 257,
@@ -42,28 +47,29 @@
     "independent_source_leaf_count": 0,
     "independent_effect_leaf_count": 0
   },
-  "remaining_blockers": [
-    {
-      "code": "SOURCE_BOUND_SPLIT_TERMINAL_CHILDREN_MISSING:0244:5",
-      "historical_parent": "0244",
-      "required_components": [
-        "REGULATION",
-        "OWNERSHIP_SUBSIDY",
-        "SOCIAL_HOUSING",
-        "ENERGY_RETROFIT",
-        "ACCESSIBILITY"
-      ],
-      "terminal_child_records_found": 0,
-      "status": "BLOCKED_NO_SOURCE_BOUND_TERMINAL_CHILD_FACH_MATERIALIZED"
-    }
-  ],
+  "remaining_blockers": [],
+  "resolved_residual": {
+    "historical_parent": "0244",
+    "source_comment_id": 5385115126,
+    "source_comment_body_sha256": "0ba3856971df07800e627425dfa640e9e58ba452ee6174a110eda9fd71cc76b4",
+    "parent_role": "PARENT_PROVENANCE_NONCOUNTING",
+    "terminal_child_records_found": 5,
+    "terminal_child_ids": [
+      "ST-CDU-PRIMARY-SPLIT-0244-REGULATION",
+      "ST-CDU-PRIMARY-SPLIT-0244-OWNERSHIP-SUBSIDY",
+      "ST-CDU-PRIMARY-SPLIT-0244-SOCIAL-HOUSING",
+      "ST-CDU-PRIMARY-SPLIT-0244-ENERGY-RETROFIT",
+      "ST-CDU-PRIMARY-SPLIT-0244-ACCESSIBILITY"
+    ],
+    "status": "RESOLVED_EXACT_SOURCE_BOUND_TERMINAL_CHILDREN"
+  },
   "constraints": {
     "new_fach_semantics": false,
-    "new_stable_id": false,
+    "stable_ids_source_bound_by_comment": 5385115126,
     "public_count_mutated": false,
     "dns_mapping": "NOT_MAPPED_HERE",
     "recommendation": "NOT_AVAILABLE_AT_SOURCE_UNIT_LEVEL",
     "score": "NOT_CREATED",
-    "denominator": "NOT_FROZEN"
+    "denominator": "FROZEN_IN_ST_CDU_FINAL_CONVERGENCE_V1"
   }
 }

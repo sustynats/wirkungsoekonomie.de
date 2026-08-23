@@ -1,0 +1,59 @@
+{
+  "authoritative_counts": {
+    "effect_mechanisms": 736,
+    "non_effect_source_leaves": 1,
+    "source_units": 737
+  },
+  "constraints": {
+    "dns_mapping_synthesized": false,
+    "new_fach_semantics_created": false,
+    "party_score_created": false,
+    "recommendation_synthesized": false,
+    "vercel_build_triggered": false
+  },
+  "frozen_exact_union_sha256": "40c63bd93fe17093d5ba69b82efabaee9c31d51b23a14bae05579805b24db5e2",
+  "gates": {
+    "applicable_241_layer_set_check": "PASS",
+    "cycles": 0,
+    "dangling_edges": 0,
+    "dedupe_conflicts": 0,
+    "exactly_once_effect_count": "PASS",
+    "exactly_once_source_count": "PASS",
+    "freeze_gate": "PASS",
+    "multiple_parent_conflicts": 0,
+    "primary_source_parity": "PASS_FULL_PROGRAMME",
+    "source_gap_count": 0,
+    "stable_id_collisions": 0,
+    "terminal_complete": true,
+    "terminal_effect_leaf_set_check": "PASS"
+  },
+  "manifest_id": "ST-CDU-FINAL-CONVERGENCE-FREEZE-V1",
+  "programme_key": "ltw-2026-st-cdu",
+  "relations": {
+    "0244_parent_zero_count": true,
+    "0244_terminal_children": [
+      "ST-CDU-PRIMARY-SPLIT-0244-REGULATION",
+      "ST-CDU-PRIMARY-SPLIT-0244-OWNERSHIP-SUBSIDY",
+      "ST-CDU-PRIMARY-SPLIT-0244-SOCIAL-HOUSING",
+      "ST-CDU-PRIMARY-SPLIT-0244-ENERGY-RETROFIT",
+      "ST-CDU-PRIMARY-SPLIT-0244-ACCESSIBILITY"
+    ],
+    "0259_restatement_target": "ST-CDU-PRIMARY-SPLIT-0251-ANIMAL-WELFARE-FUNDING",
+    "edge_counts": {
+      "PARENT_CHILD": 443,
+      "RESTATEMENT": 1
+    }
+  },
+  "schema_version": "woek-st-cdu-final-convergence-freeze-1.0",
+  "source_pins": {
+    "residual_binding_manifest": "audit-manifests/sachsen-anhalt/cdu-final-residual-binding-v1.json",
+    "terminal_children_comment_body_sha256": "0ba3856971df07800e627425dfa640e9e58ba452ee6174a110eda9fd71cc76b4",
+    "terminal_children_comment_id": 5385115126,
+    "terminal_children_comment_updated_at": "2026-08-23T08:42:07Z",
+    "terminal_children_issue": 234,
+    "upstream_audit_sha256": "8abcd8dc580e9a34e4e2b423066d1da3371c56c4d7ac76fe456fbd9b4cb526e8",
+    "upstream_commit": "5ba3403a561f9ba3c9d337bf58ab176d16737341",
+    "upstream_manifest_sha256": "132672058cd0d50fdb61b0044ef2550dda1c8e9cbfbca67c63fb4ef93dde8af9",
+    "upstream_pr": 257
+  }
+}

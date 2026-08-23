@@ -50,6 +50,12 @@ def validate_comment_pins(pins: dict[str, object]) -> None:
             "resolve the directed restatement relation `0259 ->`",
             "remain fail-closed pending",
         ),
+        5385115126: (
+            "five terminal children, parent zero-count",
+            "ST-CDU-PRIMARY-SPLIT-0244-REGULATION",
+            "ST-CDU-PRIMARY-SPLIT-0244-ACCESSIBILITY",
+            "VERSION_DELTA = 0244_PARENT_ZERO_COUNT -> 5_FINAL_ACTIVE_EFFECT_LEAVES",
+        ),
     }
     for pin in pins["comments"]:
         payload = github_request(f"issues/comments/{pin['id']}")
@@ -67,8 +73,8 @@ def validate_comment_pins(pins: dict[str, object]) -> None:
 def validate_upstream(binding_manifest: dict[str, object]) -> None:
     pins = binding_manifest["source_pins"]
     binding = binding_manifest["binding"]
-    residual = binding_manifest["remaining_blockers"]
-    assert isinstance(pins, dict) and isinstance(binding, dict) and isinstance(residual, list)
+    resolution = binding_manifest["resolved_residual"]
+    assert isinstance(pins, dict) and isinstance(binding, dict) and isinstance(resolution, dict)
 
     commit = pins["upstream_commit"]
     manifest_pin = pins["upstream_manifest"]
@@ -128,12 +134,17 @@ def validate_upstream(binding_manifest: dict[str, object]) -> None:
     expected_blocker = "SOURCE_BOUND_SPLIT_TERMINAL_CHILDREN_MISSING:0244:5"
     if audit["blockers"] != [expected_blocker]:
         fail(f"UPSTREAM_BLOCKER_SET_DRIFT:{audit['blockers']}")
-    if [item["code"] for item in residual] != [expected_blocker]:
-        fail("COMMITTED_RESIDUAL_SET_DRIFT")
     upstream_residual = audit["source_bound_unresolved_split_requirements"]
     if len(upstream_residual) != 1:
         fail("UPSTREAM_SOURCE_BOUND_RESIDUAL_CARDINALITY_DRIFT")
-    if upstream_residual[0]["required_components"] != residual[0]["required_components"]:
+    expected_components = [
+        "REGULATION",
+        "OWNERSHIP_SUBSIDY",
+        "SOCIAL_HOUSING",
+        "ENERGY_RETROFIT",
+        "ACCESSIBILITY",
+    ]
+    if upstream_residual[0]["required_components"] != expected_components:
         fail("UPSTREAM_0244_COMPONENT_SET_DRIFT")
 
     validate_comment_pins(pins)
@@ -146,6 +157,7 @@ def main() -> int:
     manifest = json.loads(BINDING_PATH.read_text(encoding="utf-8"))
     binding = manifest["binding"]
     blockers = manifest["remaining_blockers"]
+    resolution = manifest["resolved_residual"]
     constraints = manifest["constraints"]
 
     if binding["from_historical_ordinal"] != "0259" or binding["to_historical_ordinal"] != "0251":
@@ -157,25 +169,33 @@ def main() -> int:
     if binding["independent_source_leaf_count"] != 0 or binding["independent_effect_leaf_count"] != 0:
         fail("0259_MUST_BE_ZERO_COUNT_RESTATEMENT")
 
-    expected_components = [
-        "REGULATION",
-        "OWNERSHIP_SUBSIDY",
-        "SOCIAL_HOUSING",
-        "ENERGY_RETROFIT",
-        "ACCESSIBILITY",
+    expected_child_ids = [
+        "ST-CDU-PRIMARY-SPLIT-0244-REGULATION",
+        "ST-CDU-PRIMARY-SPLIT-0244-OWNERSHIP-SUBSIDY",
+        "ST-CDU-PRIMARY-SPLIT-0244-SOCIAL-HOUSING",
+        "ST-CDU-PRIMARY-SPLIT-0244-ENERGY-RETROFIT",
+        "ST-CDU-PRIMARY-SPLIT-0244-ACCESSIBILITY",
     ]
-    if len(blockers) != 1 or blockers[0]["required_components"] != expected_components:
-        fail("0244_FINITE_RESIDUAL_DRIFT")
-    if blockers[0]["terminal_child_records_found"] != 0:
-        fail("0244_TERMINAL_CHILD_RECORDS_CANNOT_BE_INFERRED")
+    if blockers:
+        fail(f"0244_RESIDUAL_BLOCKERS_REMAIN:{blockers}")
+    if resolution != {
+        "historical_parent": "0244",
+        "source_comment_id": 5385115126,
+        "source_comment_body_sha256": "0ba3856971df07800e627425dfa640e9e58ba452ee6174a110eda9fd71cc76b4",
+        "parent_role": "PARENT_PROVENANCE_NONCOUNTING",
+        "terminal_child_records_found": 5,
+        "terminal_child_ids": expected_child_ids,
+        "status": "RESOLVED_EXACT_SOURCE_BOUND_TERMINAL_CHILDREN",
+    }:
+        fail("0244_SOURCE_BOUND_RESOLUTION_DRIFT")
     if constraints != {
         "new_fach_semantics": False,
-        "new_stable_id": False,
+        "stable_ids_source_bound_by_comment": 5385115126,
         "public_count_mutated": False,
         "dns_mapping": "NOT_MAPPED_HERE",
         "recommendation": "NOT_AVAILABLE_AT_SOURCE_UNIT_LEVEL",
         "score": "NOT_CREATED",
-        "denominator": "NOT_FROZEN",
+        "denominator": "FROZEN_IN_ST_CDU_FINAL_CONVERGENCE_V1",
     }:
         fail("FAIL_CLOSED_CONSTRAINT_DRIFT")
 
@@ -187,10 +207,11 @@ def main() -> int:
         "status": "PASS",
         "binding": f"{binding['from_historical_ordinal']}->{binding['to_stable_source_unit_id']}",
         "technical_relation_gap": 0,
-        "fach_child_gap": 5,
-        "blockers": [item["code"] for item in blockers],
+        "fach_child_gap": 0,
+        "blockers": [],
+        "resolved_0244_terminal_children": 5,
         "github_source_pins": "PASS" if args.check_github else "NOT_REQUESTED",
-        "denominator": "NOT_FROZEN",
+        "denominator": "FROZEN_IN_ST_CDU_FINAL_CONVERGENCE_V1",
     }, ensure_ascii=False, indent=2))
     return 0
 
