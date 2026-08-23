@@ -1,6 +1,7 @@
 import { existsSync, readFileSync, statSync } from "node:fs";
 import path from "node:path";
 import publicationSources from "../../data/generated/release-1/publication-sources.json";
+import terminalRelease from "../../data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-six-party-terminal-release-v1.json";
 import { saxonyAnhaltElectionProgrammes } from "../../data/sachsen-anhalt-election-programmes";
 import { saxonyAnhaltProgrammeEditorialV2 } from "../../data/presentation/sachsen-anhalt-programme-editorial-v2";
 import { buildSaxonyAnhaltProgrammeModel } from "../../lib/presentation/sachsen-anhalt-programme-model";
@@ -34,11 +35,17 @@ for (const requiredToken of [
   "Richtungsprofil der nachgeprüften Schlüsselpfade",
   "editorial.keyFindings.map",
   "Nicht kompensierbare Schutzgüter",
+  "Terminaler Quellen- und Fachstand · 6/6",
+  "autoritative Source Units",
+  "Primärquellen-Parität: vollständig",
 ]) {
   if (!overviewSource.includes(requiredToken)) fail(`Sachsen-Anhalt overview does not contain ${requiredToken}`);
 }
 if (overviewSource.includes("editorial.keyFindings.slice(0, 2)")) {
   fail("programme overview must not hide approved material key findings behind a two-item preview");
+}
+for (const staleClaim of ["Vollreaudit laufen", "finale Source-Unit-Parität offen", "finale Nenner ist noch nicht eingefroren"]) {
+  if (overviewSource.includes(staleClaim)) fail(`Sachsen-Anhalt overview retains stale convergence claim: ${staleClaim}`);
 }
 
 const routeSource = readFileSync(routePath, "utf8");
@@ -61,6 +68,9 @@ for (const requiredToken of [
   "Historischer Release-1-Prüfpfad",
   "fail-closed",
   "Fachlicher Vollnachweis und technische Prüfinformationen",
+  "Terminale Quellenbasis",
+  "volle Primärquellen-Parität",
+  "getrennte Zähldimension",
 ]) {
   if (!componentSource.includes(requiredToken)) fail(`programme blueprint does not contain ${requiredToken}`);
 }
@@ -68,6 +78,19 @@ if (componentSource.includes("firstPotential(")) fail("programme blueprint must 
 if (!componentSource.includes("saxonyAnhaltCommitmentEditorial")) fail("programme blueprint must use reviewed editorial commitment overlays");
 if (componentSource.includes("style={{")) fail("programme blueprint must not violate the production CSP with inline styles");
 if (!componentSource.includes("<progress className={styles.barTrack}")) fail("direction profile must retain a CSP-safe proportional visual");
+for (const staleClaim of ["finale Source-Unit-Parität offen", "endgültige Nenner sind noch nicht eingefroren", "endgültige Nenner ist noch nicht eingefroren"]) {
+  if (componentSource.includes(staleClaim)) fail(`programme blueprint retains stale convergence claim: ${staleClaim}`);
+}
+
+if (terminalRelease.status !== "TERMINAL_6_OF_6") fail(`terminal release has unexpected status ${terminalRelease.status}`);
+if (terminalRelease.terminal_party_count !== 6 || terminalRelease.expected_party_count !== 6) fail("terminal release must contain six of six programmes");
+if (terminalRelease.historical_working_register.count !== 2921) fail("historical Release-1 working dimension must remain 2,921");
+if (terminalRelease.authoritative_totals.source_units !== 5403) fail("terminal source-unit total must remain 5,403");
+if (terminalRelease.authoritative_totals.effect_mechanisms !== 5308) fail("terminal effect-mechanism total must remain 5,308");
+if (terminalRelease.authoritative_totals.non_effect_source_leaves !== 95) fail("terminal non-effect source-leaf total must remain 95");
+if (terminalRelease.parties.length !== 6 || new Set(terminalRelease.parties.map((party) => party.source_key)).size !== 6) fail("terminal release party set is not exactly six unique programmes");
+if (terminalRelease.parties.some((party) => party.primary_source_parity !== "PASS_FULL_PROGRAMME" || party.source_gap_count !== 0 || party.stable_id_collision_count !== 0 || !party.relation_graph_acyclic)) fail("terminal release contains a non-terminal party gate");
+if (terminalRelease.publication_integrity.unrendered_content_paths.length !== 0) fail("terminal release contains unrendered public paths");
 
 const programmes = saxonyAnhaltElectionProgrammes;
 if (programmes.length !== 6) fail(`expected 6 programme source records, found ${programmes.length}`);
@@ -161,5 +184,9 @@ console.log(JSON.stringify({
   reviewedCentralAssessments: sourceKeys.reduce((sum, sourceKey) => sum + Object.keys(saxonyAnhaltProgrammeEditorialV2[sourceKey].centralAssessments).length, 0),
   legacyDuplicateTemplateClustersDetected: legacyDuplicateClusters,
   legacyTemplatesUsedAsCurrentShortAssessment: false,
-  publicPresentationGate: "pass"
+  publicPresentationGate: "pass",
+  terminalPartyCount: terminalRelease.terminal_party_count,
+  terminalSourceUnits: terminalRelease.authoritative_totals.source_units,
+  terminalEffectMechanisms: terminalRelease.authoritative_totals.effect_mechanisms,
+  historicalWorkingRegisterCount: terminalRelease.historical_working_register.count,
 }));

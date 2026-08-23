@@ -5,6 +5,7 @@ import { jurisdictionById } from "@/lib/parliament/jurisdictions";
 import { saxonyAnhaltElectionProgrammes } from "@/data/sachsen-anhalt-election-programmes";
 import { saxonyAnhaltProgrammeEditorial, type ProgrammeDirection } from "@/data/presentation/sachsen-anhalt-programme-editorial-v2";
 import { saxonyAnhaltReviewedCommitmentCounts } from "@/data/presentation/sachsen-anhalt-programme-counts";
+import { saxonyAnhaltTerminalPartyBySourceKey, saxonyAnhaltTerminalRelease } from "@/data/presentation/sachsen-anhalt-terminal-release";
 import { allPublicationSourceRecords } from "@/lib/publication/fachakten";
 import { assessmentOnlyPublicMaturity, factOnlyPublicMaturity } from "@/lib/presentation/public-maturity";
 
@@ -52,7 +53,10 @@ export default function SaxonyAnhaltPage() {
             <p>Jede Programmseite beginnt mit einem qualitativen Potenzialbefund, Gesamtzusammenfassung, Key Findings und einem Richtungsprofil der redaktionell nachgeprüften Schlüsselpfade. Erst danach folgen die Detailakten.</p>
             <dl>
               <div><dt>Wahltag</dt><dd>{electionDate}</dd></div>
-              <div><dt>Programme</dt><dd>6 quellengebunden erschlossen</dd></div>
+              <div><dt>Terminaler Fachstand</dt><dd>6 von 6 Programmen · volle Primärquellen-Parität</dd></div>
+              <div><dt>Autoritative Quellenbasis</dt><dd>{saxonyAnhaltTerminalRelease.authoritative_totals.source_units.toLocaleString("de-DE")} Source Units</dd></div>
+              <div><dt>Wirkungsmechanismen</dt><dd>{saxonyAnhaltTerminalRelease.authoritative_totals.effect_mechanisms.toLocaleString("de-DE")} quellengebunden</dd></div>
+              <div><dt>Historischer Release-1-Bestand</dt><dd>{saxonyAnhaltTerminalRelease.historical_working_register.count.toLocaleString("de-DE")} Arbeitsregister-Einträge · getrennte Zähldimension</dd></div>
               <div><dt>Schlüsselpfade Editorial v2.0</dt><dd>{reviewedKeyPaths} objektspezifisch nachgeprüft</dd></div>
               <div><dt>Altbestand</dt><dd>vollständig erhalten, generische Templates nicht mehr als Kurzurteil</dd></div>
             </dl>
@@ -71,7 +75,7 @@ export default function SaxonyAnhaltPage() {
       </section>
 
       <section className="shell section section-surface state-publication-status" aria-labelledby="state-status-title">
-        <div><p className="eyebrow">Qualitäts-Re-Audit</p><h2 id="state-status-title">Die alte Fachbasis bleibt erhalten - die öffentliche Bewertung wird strenger.</h2><p className="lead">Der Release-1-Bestand enthält umfangreiche versionierte Quellen- und Fachdatensätze, aber auch generische Politikfeld-Templates und einzelne Fehlzuordnungen oder Quellkollisionen. Die neue Lesefassung übernimmt solche Felder nicht mehr ungeprüft in die Kurzbewertung.</p></div>
+        <div><p className="eyebrow">Terminaler Quellen- und Fachstand · 6/6</p><h2 id="state-status-title">Alle sechs Programme sind quellengebunden eingefroren - der historische Release-1-Bestand bleibt separat erhalten.</h2><p className="lead">Die sechs finalen Manifeste schließen Primärquellen-Parität, Rollen, Kollisionen und Wirkungsmechanismen ohne offene Quellenlücken ab. Die öffentliche Kurzfassung zeigt weiterhin nur freigegebene, objektspezifische Editorial-Aussagen; generische Alt-Templates werden nicht als aktuelles Kurzurteil ausgegeben.</p></div>
         <ul>
           <li><strong>1. Potenzialbefund + Gesamtzusammenfassung</strong><span>Jedes Programm erhält einen explizit bezeichneten qualitativen WÖk-Potenzialbefund und alle freigegebenen Key Findings statt einer bloßen Zusagenstatistik.</span></li>
           <li><strong>2. Richtung + Evidenz</strong><span>Redaktionell nachgeprüfte Schlüsselpfade zeigen Richtung, Begründung und Evidenz getrennt. Nicht nachgeprüfte Details bleiben ausdrücklich offen.</span></li>
@@ -85,6 +89,8 @@ export default function SaxonyAnhaltPage() {
           {saxonyAnhaltElectionProgrammes.map((programme) => {
             const review = reviewBySource.get(programme.sourceKey);
             const workingRegisterCount = saxonyAnhaltReviewedCommitmentCounts[programme.sourceKey];
+            const terminalParty = saxonyAnhaltTerminalPartyBySourceKey.get(programme.sourceKey);
+            if (!terminalParty) throw new Error(`Missing terminal Sachsen-Anhalt release record for ${programme.sourceKey}`);
             const editorial = saxonyAnhaltProgrammeEditorial(programme.sourceKey);
             const directionCounts: Record<ProgrammeDirection, number> = { POSITIVE: 0, NEGATIVE: 0, AMBIVALENT: 0, OPEN: 0 };
             for (const assessment of Object.values(editorial?.centralAssessments ?? {})) directionCounts[assessment.direction] += 1;
@@ -115,7 +121,8 @@ export default function SaxonyAnhaltPage() {
                 evidenceSummary: editorial.readingGuide,
               }) : factOnlyPublicMaturity(programme.title)} compact />
               <div data-woek-process-metadata>
-                <p className="commitment-count"><strong>{workingRegisterCount?.toLocaleString("de-DE") ?? "-"} Zusageeinheiten im aktuellen Quellenregister</strong> · Primärquellen-Paritätsabgleich und Editorial-v2+-Vollreaudit laufen; der finale Nenner ist noch nicht eingefroren</p>
+                <p className="commitment-count"><strong>{terminalParty.authoritative_source_unit_count.toLocaleString("de-DE")} autoritative Source Units</strong> · {terminalParty.authoritative_effect_mechanism_count.toLocaleString("de-DE")} Wirkungsmechanismen · {terminalParty.non_effect_source_leaf_count.toLocaleString("de-DE")} nicht-wirkungstragende Source Leaves</p>
+                <p><small>Primärquellen-Parität: vollständig · historischer Release-1-Arbeitsbestand: {workingRegisterCount?.toLocaleString("de-DE") ?? "-"} Einträge (separate, unveränderte Zähldimension)</small></p>
               </div>
               {review ? <Link className="text-link" href={`/laender/sachsen-anhalt/wahlprogramme/${programme.sourceKey}`}>Die versionierte WÖk-Wirkungsakte öffnen <span aria-hidden="true">→</span></Link> : <p><strong>Fachakte derzeit nicht verfügbar.</strong></p>}
             </article>;

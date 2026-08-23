@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
 import publicationSources from "../../data/generated/release-1/publication-sources.json";
+import terminalRelease from "../../data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-six-party-terminal-release-v1.json";
 import { politicalSourceCatalog } from "../../lib/commitments/source-catalog";
 import { saxonyAnhaltElectionProgrammes } from "../../data/sachsen-anhalt-election-programmes";
 import { saxonyAnhaltProgrammeEditorialV2 } from "../../data/presentation/sachsen-anhalt-programme-editorial-v2";
@@ -64,6 +65,7 @@ let stateProgrammeObjects = 0;
 let stateProgrammeRegisterMetadataCommitments = 0;
 let stateProgrammeAnalysedCommitments = 0;
 let reviewMetadataVsAnalysedMismatches = 0;
+const terminalBySourceKey = new Map(terminalRelease.parties.map((party) => [party.source_key, party]));
 for (const programme of saxonyAnhaltElectionProgrammes) {
   const review = documents.filter((item) => item.source_key === programme.sourceKey && item.kind === "SAXONY_ANHALT_ELECTION_PROGRAMME_REVIEW");
   const commitments = documents.filter((item) => item.source_key === programme.sourceKey && item.kind === "SAXONY_ANHALT_COMMITMENT_REGISTER");
@@ -85,6 +87,11 @@ for (const programme of saxonyAnhaltElectionProgrammes) {
   assert.equal(model.commitments.length, expectedAnalysedCount, `${programme.sourceKey}: material review count changed; inspect source extraction before publishing`);
   stateProgrammeAnalysedCommitments += model.commitments.length;
   if (reviewCount !== model.commitments.length) reviewMetadataVsAnalysedMismatches += 1;
+  const terminalParty = terminalBySourceKey.get(programme.sourceKey);
+  assert.ok(terminalParty, `${programme.sourceKey}: terminal six-party record missing`);
+  assert.equal(terminalParty.historical_working_register_count, expectedAnalysedCount, `${programme.sourceKey}: historical working-register dimension drifted`);
+  assert.equal(terminalParty.authoritative_source_unit_count - terminalParty.authoritative_effect_mechanism_count, terminalParty.non_effect_source_leaf_count, `${programme.sourceKey}: terminal source/effect conservation failed`);
+  assert.equal(terminalParty.primary_source_parity, "PASS_FULL_PROGRAMME", `${programme.sourceKey}: primary-source parity is not terminal`);
   for (const key of Object.keys(editorial.centralAssessments)) assert.ok(reviewMarkdown.includes(key), `${programme.sourceKey}: reviewed key absent from source review: ${key}`);
 }
 
@@ -97,7 +104,15 @@ assert.match(blueprintSource, /Evidenz/, "evidence must be visible separately");
 
 const stateOverviewSource = readFileSync(path.join(root, "app/laender/sachsen-anhalt/page.tsx"), "utf8");
 assert.match(stateOverviewSource, /saxonyAnhaltReviewedCommitmentCounts/, "Sachsen-Anhalt overview must use material analysed counts, not ambiguous release metadata");
+assert.match(stateOverviewSource, /saxonyAnhaltTerminalRelease/, "Sachsen-Anhalt overview must project the terminal six-party release");
+assert.match(stateOverviewSource, /getrennte Zähldimension/, "Sachsen-Anhalt overview must distinguish historical and authoritative counts");
 assert.doesNotMatch(stateOverviewSource, /overview\.commitment_count/, "Sachsen-Anhalt overview must not expose ambiguous release metadata as analysed count");
+assert.doesNotMatch(stateOverviewSource, /Vollreaudit laufen|finale Nenner ist noch nicht eingefroren/, "Sachsen-Anhalt overview must not retain stale convergence wording");
+
+assert.equal(terminalRelease.status, "TERMINAL_6_OF_6", "Sachsen-Anhalt release must be terminal 6/6");
+assert.equal(terminalRelease.historical_working_register.count, stateProgrammeAnalysedCommitments, "historical working-register total drifted");
+assert.deepEqual(terminalRelease.authoritative_totals, { effect_mechanisms: 5308, non_effect_source_leaves: 95, source_units: 5403 }, "terminal authoritative totals drifted");
+assert.equal(terminalRelease.publication_integrity.unrendered_content_paths.length, 0, "Sachsen-Anhalt has unrendered terminal content paths");
 
 assert.equal(stateJurisdictions.length, 16, `expected 16 state jurisdictions, got ${stateJurisdictions.length}`);
 const stateSlugs = stateJurisdictions.map((item) => stateSlug(item.jurisdiction_id));
@@ -126,6 +141,9 @@ console.log(JSON.stringify({
   saxonyAnhaltAnalysedCommitments: stateProgrammeAnalysedCommitments,
   saxonyAnhaltMetadataVsAnalysedCountMismatches: reviewMetadataVsAnalysedMismatches,
   saxonyAnhaltBlueprint: "v3",
+  saxonyAnhaltTerminalStatus: terminalRelease.status,
+  saxonyAnhaltTerminalSourceUnits: terminalRelease.authoritative_totals.source_units,
+  saxonyAnhaltTerminalEffectMechanisms: terminalRelease.authoritative_totals.effect_mechanisms,
   stateJurisdictions: stateJurisdictions.length,
   statePublicReviews: Object.values(statePublicContent).filter((item) => item.review).length,
   uncoveredStatesFailClosed: stateJurisdictions.length - new Set([...Object.keys(statePublicContent), "sachsen-anhalt"]).size,
