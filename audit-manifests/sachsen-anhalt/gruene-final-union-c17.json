@@ -1,0 +1,86 @@
+{
+  "schema_version": "woek-st-gruene-final-union-1.0",
+  "manifest_id": "ST-GRUENE-FINAL-UNION-C17",
+  "source": {
+    "issue": 234,
+    "issue_only_components": [
+      {"component": "C01", "comment_id": 5378957099, "updated_at": "2026-08-22T07:13:33Z", "body_sha256": "76b186ea1c675b0666b99827d09380a326fa7222877a988c02f45a7320061f3c"},
+      {"component": "C02", "comment_id": 5378971802, "updated_at": "2026-08-22T07:17:21Z", "body_sha256": "cf209de93d311d44e08b9de15d36bf07c13d2a9e3417c1ee223302129be2539c"},
+      {"component": "C03", "comment_id": 5378976450, "updated_at": "2026-08-22T07:18:37Z", "body_sha256": "80ca8c35e61918c1d32d3940f784ace5ac45e694de3c4b4b07560ebc742e77f9"},
+      {"component": "C04", "comment_id": 5378980971, "updated_at": "2026-08-22T07:19:53Z", "body_sha256": "3ab2b492280b4882d6914b10df59e04947beab378f6b4c8a41fb63da0d1bb0f6"}
+    ]
+  },
+  "working_baseline": {
+    "historical_rows": 740,
+    "scope": "0001-0740",
+    "rule": "terminal history only; never arithmetically combined with repair records"
+  },
+  "components": [
+    {"component": "C01", "scope": "0001-0049", "source_leaves": 93, "effect_leaves": 92, "issue_comment_id": 5378957099},
+    {"component": "C02", "scope": "0050-0068", "source_leaves": 34, "effect_leaves": 32, "issue_comment_id": 5378971802},
+    {"component": "C03", "scope": "0069-0084", "source_leaves": 35, "effect_leaves": 34, "issue_comment_id": 5378976450},
+    {"component": "C04", "scope": "0085-0108", "source_leaves": 36, "effect_leaves": 36, "issue_comment_id": 5378980971},
+    {"component": "C05", "scope": "0109-0151", "source_leaves": 84, "effect_leaves": 82, "manifest": "audit-manifests/sachsen-anhalt/gruene-convergence-c05.json", "manifest_sha256": "0bbcc29d2cc034a85ca448dd7c7a495cde08eecaaee66f746b3d425294f47fa8"},
+    {"component": "C06A", "scope": "0152-0180", "source_leaves": 45, "effect_leaves": 40, "manifest": "audit-manifests/sachsen-anhalt/gruene-convergence-c06a.json", "manifest_sha256": "c15ceacebdef2946e2cf40e11f477fd381364385ac2bd501089e48c9bf8af6a1"},
+    {"component": "C06B", "scope": "0181-0216", "source_leaves": 52, "effect_leaves": 47, "manifest": "audit-manifests/sachsen-anhalt/gruene-convergence-c06b.json", "manifest_sha256": "732235adf5da6dd235c3c312b1086a37c5db71b0d7190cacab8227ac1a579cd3"},
+    {"component": "C07", "scope": "0217-0224", "source_leaves": 13, "effect_leaves": 12, "manifest": "audit-manifests/sachsen-anhalt/gruene-convergence-c07.json", "manifest_sha256": "a34a84e2f35f91f2c070cfb360d0997f9c520c545960e9b66e279d2d3ee8c9f3"},
+    {"component": "C08", "scope": "0225-0252", "source_leaves": 41, "effect_leaves": 34, "manifest": "audit-manifests/sachsen-anhalt/gruene-convergence-c08.json", "manifest_sha256": "6e180a6dd845574cb3db42b8a0ad8fe031d63c80018f6eaacc01b2709874d9e6"},
+    {"component": "C09", "scope": "0253-0257", "source_leaves": 9, "effect_leaves": 8, "manifest": "audit-manifests/sachsen-anhalt/gruene-convergence-c09.json", "manifest_sha256": "93b5974d76e1491efebcd2c50f0d2efdd94f2ce131110f400a4bb19804ae682a"},
+    {"component": "C10", "scope": "0258-0270", "source_leaves": 16, "effect_leaves": 13, "manifest": "audit-manifests/sachsen-anhalt/gruene-convergence-c10.json", "manifest_sha256": "4143762740ecc4b16c64967d3c9ff6d1b811074f7a22b143e266398098fd311e"},
+    {"component": "C11", "scope": "0271-0343", "source_leaves": 119, "effect_leaves": 115, "manifest": "audit-manifests/sachsen-anhalt/gruene-convergence-c11.json", "manifest_sha256": "670b2ba294209db58d4b309e7edcdadaf9706b703266ea851dc46ea79ada2bca"},
+    {"component": "C12", "scope": "0344-0390", "source_leaves": 84, "effect_leaves": 77, "manifest": "audit-manifests/sachsen-anhalt/gruene-convergence-c12.json", "manifest_sha256": "81194c215449c9e3a2063d81401d8007408301fe890da6c4cb94309f30dbc0a0"},
+    {"component": "C13", "scope": "0391-0448", "source_leaves": 107, "effect_leaves": 102, "manifest": "audit-manifests/sachsen-anhalt/gruene-convergence-c13.json", "manifest_sha256": "5d014161429d27e022aec774f9b9c186fae0b15956c2e2101413800a99642434"},
+    {"component": "C14", "scope": "0449-0537", "source_leaves": 144, "effect_leaves": 131, "manifest": "audit-manifests/sachsen-anhalt/gruene-convergence-c14.json", "manifest_sha256": "b9b331e79d2da3234972bead480f2e646ec4f2acaf302e32adbd16b74457e17f"},
+    {"component": "C15", "scope": "0538-0600", "source_leaves": 89, "effect_leaves": 77, "manifest": "audit-manifests/sachsen-anhalt/gruene-convergence-c15.json", "manifest_sha256": "36fb505c9a27dead6ef2cb3b174943e3b87970adb518811a02ad8676db3b4ae4"},
+    {"component": "C16", "scope": "0601-0740", "source_leaves": 240, "effect_leaves": 215, "manifest": "audit-manifests/sachsen-anhalt/gruene-convergence-c16.json", "manifest_sha256": "f27f68638eeea3b291e24b7084b4cad57e038c9a3a2972378177cb755287392f"}
+  ],
+  "cross_component_reconciliation": [
+    {"from": "0205", "relation": "DUPLICATE_RESTATEMENT_OF", "to": "0169", "count": 0},
+    {"from": "R25-P58-KOSTENFREIE-LERNMITTEL-PASSAGE", "relation": "SAME_RESTATEMENT_NO_RECORD_CREATED", "to": "ltw-2026-st-gruene-ps-a07-0002-lernmittelfreiheit", "count": 0},
+    {"from": "ltw-2026-st-gruene-v2-0281-0336-child-ladg-rechtsschutz-hearing-compensation", "relation": "LAW_OBJECT_DEDUPED_TO", "to": "0281", "count": 0},
+    {"from": "ST-GRUENE-PSP-A12-0063", "relation": "SAME_SEMANTIC_TO_CURRENT", "to": "0655", "count": 0},
+    {"from": "ST-GRUENE-PSP-A12-0064", "relation": "SAME_SEMANTIC_TO_CURRENT", "to": "0664", "count": 0}
+  ],
+  "a12_count_fidelity": {
+    "effect_bearing_stable_ids": "ST-GRUENE-PSP-A12-0001..0062",
+    "effect_bearing_stable_count": 62,
+    "zero_count_passage_records": ["ST-GRUENE-PSP-A12-0063", "ST-GRUENE-PSP-A12-0064", "ST-GRUENE-PSP-A12-0065"],
+    "reserved_not_created_records": 1,
+    "rule": "direct pinned A12.2 role materialization controls over the later R34 shorthand"
+  },
+  "global_checks": {
+    "continuous_historical_scope": "PASS_0001_0740_NO_GAPS",
+    "stable_id_collisions": 0,
+    "unresolved_parent_child_edges": 0,
+    "unresolved_restatement_duplicate_supersedes_edges": 0,
+    "unresolved_semantic_collisions": 0,
+    "graph_acyclic": "PASS",
+    "one_count_per_final_active_effect_leaf": "PASS",
+    "non_effect_zero": "PASS",
+    "terminal_fach_reuse": "PASS_NO_NEW_JUDGEMENT",
+    "applicable_241_layer_set_check": "PASS_INHERITED_NO_SYNTHESIS",
+    "source_gaps": 0,
+    "restore_gaps": 0,
+    "overmerge_gaps": 0,
+    "truncation_gaps": 0,
+    "duplicate_gaps": 0
+  },
+  "authoritative_counts": {
+    "authoritative_source_unit_count": 1241,
+    "authoritative_effect_mechanism_count": 1147,
+    "non_effect_source_leaf_count": 94,
+    "counting_method": "sum of disjoint collision-resolved component source/effect leaf set cardinalities; parent, provenance, duplicate, restatement, superseded and reserved records count zero",
+    "counts_frozen": true
+  },
+  "completion": {
+    "ST_GRUENE_PRIMARY_SOURCE_PARITY": "PASS_FULL_PROGRAMME",
+    "ST_GRUENE_FINAL_FACH_COMPLETE": "PASS_REUSED_TERMINAL_LEAVES",
+    "new_fach_judgements": 0,
+    "new_stable_ids": 0,
+    "dns_mapping": "NOT_SYNTHESIZED",
+    "recommendation": "NOT_AVAILABLE_AT_SOURCE_UNIT_LEVEL",
+    "handoff": "clean exact-current-main Sachsen-Anhalt-only GRUENE projection/gates; frozen terminal leaves only"
+  },
+  "canonicalization": "UTF-8 canonical JSON; object keys sorted; separators ',', ':'; descriptor_sha256 omitted from hash input",
+  "descriptor_sha256": "PENDING_VALIDATOR_CALCULATION"
+}
