@@ -1,0 +1,664 @@
+{
+  "schema_version": "woek-st-gruene-convergence-component-1.0",
+  "manifest_id": "ST-GRUENE-CONVERGENCE-C16",
+  "source": {
+    "issue": 234,
+    "comments": [
+      {
+        "id": 5378488088,
+        "marker": "WÖk GRÜNE RETRO-PARITY — R34",
+        "updated_at": "2026-08-22T06:33:25Z",
+        "body_sha256": "f5e18be541772388aa4a995d5555239f6d195df8331a2e89c874f991ea84762b"
+      },
+      {
+        "id": 5374833279,
+        "marker": "ST-GRUENE-A11.2",
+        "updated_at": "2026-08-21T20:13:28Z",
+        "body_sha256": "45987b4bf46cb1556bf05fcdcc2a594e4879beac28cd056d905296f633e5d64f"
+      },
+      {
+        "id": 5374960942,
+        "marker": "ST-GRUENE-A12.2",
+        "updated_at": "2026-08-21T20:23:55Z",
+        "body_sha256": "b06d34a49a9006daa8c8a672de84fe817d8d03cf145aa1844c33ade020843d77"
+      },
+      {
+        "id": 5374921780,
+        "marker": "ST-GRUENE-A13.2",
+        "updated_at": "2026-08-21T20:21:09Z",
+        "body_sha256": "4714128addd6870295fa0b151e4a8b88508e06357f01c796324712bee1fa5930"
+      }
+    ],
+    "required_facts": {
+      "WÖk GRÜNE RETRO-PARITY — R34": [
+        "historical `0601–0660`",
+        "historical `0661–0720`",
+        "historical `0721–0740`",
+        "`ST_GRUENE_RETRO_R34_TAIL_0601_0740 = PASS_REUSE_EXISTING_TERMINAL_SOURCE_ROLES`"
+      ],
+      "ST-GRUENE-A11.2": [
+        "`36 SAME + 3 PARTIAL_PARENT = 39` current rows as active source leaves",
+        "Zusammen mit `47` Stable Leaves ergibt dieses 60er Fenster **provisorisch 86 aktive Leaves**"
+      ],
+      "ST-GRUENE-A12.2": [
+        "**62 effect-bearing Stable Leaves** (`0001–0062`)",
+        "3 weitere Passage-Manifest-Records (`0063–0065`) deduplizieren/contextualisieren ohne Denominatorwirkung",
+        "`ID_RESERVED_NOT_CREATED`"
+      ],
+      "ST-GRUENE-A13.2": [
+        "### Additive Stable Leaves A13.2",
+        "P98 = Schluss/Impressum, `CONTEXT_ONLY / NO_EFFECT_BEARING_PASSAGE`"
+      ]
+    },
+    "convergence_predecessor": "ST-GRUENE-CONVERGENCE-C15"
+  },
+  "scope": {
+    "working_register": "woek-parlament-app/data/fachakten/release-1/sachsen-anhalt/ltw-2026-st-gruene-zusagen.md",
+    "working_register_source_hash": "73130003d247bad51e27bb63bc140bf1aa815ebe51bf77bcdf9c348da5f4a48d",
+    "history_only": true
+  },
+  "windows": [
+    {
+      "source_marker": "ST-GRUENE-A11.2",
+      "historical_first": "0601",
+      "historical_last": "0660",
+      "historical_roles": {
+        "active_effect_leaf": [
+          "0601",
+          "0602",
+          "0603",
+          "0604",
+          "0607",
+          "0608",
+          "0609",
+          "0610",
+          "0611",
+          "0613",
+          "0614",
+          "0616",
+          "0617",
+          "0619",
+          "0621",
+          "0625",
+          "0627",
+          "0628",
+          "0629",
+          "0630",
+          "0632",
+          "0635",
+          "0636",
+          "0637",
+          "0638",
+          "0639",
+          "0640",
+          "0642",
+          "0645",
+          "0647",
+          "0651",
+          "0653",
+          "0654",
+          "0655",
+          "0656",
+          "0657",
+          "0615",
+          "0644",
+          "0650"
+        ],
+        "context_design_non_effect_source_leaf": [
+          "0612",
+          "0631",
+          "0633",
+          "0634",
+          "0643",
+          "0646",
+          "0649",
+          "0659",
+          "0660"
+        ],
+        "parent_provenance_nonleaf": [
+          "0605",
+          "0606",
+          "0618",
+          "0620",
+          "0622",
+          "0623",
+          "0624",
+          "0626",
+          "0641",
+          "0648",
+          "0652",
+          "0658"
+        ],
+        "duplicate_restatement_nonleaf": []
+      },
+      "versioned_roles": {
+        "active_effect_leaf": [
+          "ST-GRUENE-PSP-A11-0001",
+          "ST-GRUENE-PSP-A11-0002",
+          "ST-GRUENE-PSP-A11-0003",
+          "ST-GRUENE-PSP-A11-0004",
+          "ST-GRUENE-PSP-A11-0005",
+          "ST-GRUENE-PSP-A11-0006",
+          "ST-GRUENE-PSP-A11-0007",
+          "ST-GRUENE-PSP-A11-0008",
+          "ST-GRUENE-PSP-A11-0009",
+          "ST-GRUENE-PSP-A11-0010",
+          "ST-GRUENE-PSP-A11-0011",
+          "ST-GRUENE-PSP-A11-0012",
+          "ST-GRUENE-PSP-A11-0013",
+          "ST-GRUENE-PSP-A11-0014",
+          "ST-GRUENE-PSP-A11-0015",
+          "ST-GRUENE-PSP-A11-0016",
+          "ST-GRUENE-PSP-A11-0017",
+          "ST-GRUENE-PSP-A11-0018",
+          "ST-GRUENE-PSP-A11-0019",
+          "ST-GRUENE-PSP-A11-0020",
+          "ST-GRUENE-PSP-A11-0021",
+          "ST-GRUENE-PSP-A11-0022",
+          "ST-GRUENE-PSP-A11-0023",
+          "ST-GRUENE-PSP-A11-0024",
+          "ST-GRUENE-PSP-A11-0025",
+          "ST-GRUENE-PSP-A11-0026",
+          "ST-GRUENE-PSP-A11-0027",
+          "ST-GRUENE-PSP-A11-0028",
+          "ST-GRUENE-PSP-A11-0029",
+          "ST-GRUENE-PSP-A11-0030",
+          "ST-GRUENE-PSP-A11-0031",
+          "ST-GRUENE-PSP-A11-0032",
+          "ST-GRUENE-PSP-A11-0033",
+          "ST-GRUENE-PSP-A11-0034",
+          "ST-GRUENE-PSP-A11-0035",
+          "ST-GRUENE-PSP-A11-0036",
+          "ST-GRUENE-PSP-A11-0037",
+          "ST-GRUENE-PSP-A11-0038",
+          "ST-GRUENE-PSP-A11-0039",
+          "ST-GRUENE-PSP-A11-0040",
+          "ST-GRUENE-PSP-A11-0041",
+          "ST-GRUENE-PSP-A11-0042",
+          "ST-GRUENE-PSP-A11-0043",
+          "ST-GRUENE-PSP-A11-0044",
+          "ST-GRUENE-PSP-A11-0045",
+          "ST-GRUENE-PSP-A11-0046",
+          "ST-GRUENE-PSP-A11-0047"
+        ],
+        "context_design_non_effect_source_leaf": [],
+        "parent_provenance_nonleaf": [],
+        "duplicate_restatement_nonleaf": []
+      },
+      "lineage_edges": {
+        "0605": [
+          "ST-GRUENE-PSP-A11-0004",
+          "ST-GRUENE-PSP-A11-0005"
+        ],
+        "0606": [
+          "ST-GRUENE-PSP-A11-0007"
+        ],
+        "0615": [
+          "ST-GRUENE-PSP-A11-0010"
+        ],
+        "0618": [
+          "ST-GRUENE-PSP-A11-0011"
+        ],
+        "0620": [
+          "ST-GRUENE-PSP-A11-0012"
+        ],
+        "0622": [
+          "ST-GRUENE-PSP-A11-0014"
+        ],
+        "0623": [
+          "ST-GRUENE-PSP-A11-0015",
+          "ST-GRUENE-PSP-A11-0016"
+        ],
+        "0624": [
+          "ST-GRUENE-PSP-A11-0018",
+          "ST-GRUENE-PSP-A11-0019"
+        ],
+        "0626": [
+          "ST-GRUENE-PSP-A11-0020"
+        ],
+        "0641": [
+          "ST-GRUENE-PSP-A11-0031"
+        ],
+        "0644": [
+          "ST-GRUENE-PSP-A11-0032",
+          "ST-GRUENE-PSP-A11-0033"
+        ],
+        "0650": [
+          "ST-GRUENE-PSP-A11-0035",
+          "ST-GRUENE-PSP-A11-0036",
+          "ST-GRUENE-PSP-A11-0037"
+        ],
+        "0652": [
+          "ST-GRUENE-PSP-A11-0038",
+          "ST-GRUENE-PSP-A11-0039"
+        ],
+        "0658": [
+          "ST-GRUENE-PSP-A11-0045",
+          "ST-GRUENE-PSP-A11-0046",
+          "ST-GRUENE-PSP-A11-0047"
+        ]
+      },
+      "restored_in_place_historical": [],
+      "semantic_relations": [],
+      "counts": {
+        "historical_active_effect_leaves": 39,
+        "versioned_active_effect_leaves": 47,
+        "non_effect_source_leaves": 9,
+        "parent_provenance_nonleaves": 12,
+        "duplicate_restatement_nonleaves": 0,
+        "authoritative_source_leaves": 95,
+        "authoritative_effect_leaves": 86
+      }
+    },
+    {
+      "source_marker": "ST-GRUENE-A12.2",
+      "historical_first": "0661",
+      "historical_last": "0720",
+      "historical_roles": {
+        "active_effect_leaf": [
+          "0662",
+          "0664",
+          "0665",
+          "0668",
+          "0670",
+          "0673",
+          "0674",
+          "0680",
+          "0681",
+          "0686",
+          "0689",
+          "0692",
+          "0693",
+          "0694",
+          "0695",
+          "0696",
+          "0697",
+          "0698",
+          "0702",
+          "0703",
+          "0709",
+          "0710",
+          "0711",
+          "0712",
+          "0714",
+          "0715",
+          "0718",
+          "0661",
+          "0699",
+          "0704",
+          "0705",
+          "0713"
+        ],
+        "context_design_non_effect_source_leaf": [
+          "0663",
+          "0667",
+          "0669",
+          "0671",
+          "0676",
+          "0678",
+          "0679",
+          "0687",
+          "0688",
+          "0700",
+          "0706",
+          "0708",
+          "0717"
+        ],
+        "parent_provenance_nonleaf": [
+          "0666",
+          "0672",
+          "0675",
+          "0677",
+          "0682",
+          "0683",
+          "0684",
+          "0685",
+          "0690",
+          "0691",
+          "0701",
+          "0707",
+          "0716",
+          "0719",
+          "0720"
+        ],
+        "duplicate_restatement_nonleaf": []
+      },
+      "versioned_roles": {
+        "active_effect_leaf": [
+          "ST-GRUENE-PSP-A12-0001",
+          "ST-GRUENE-PSP-A12-0002",
+          "ST-GRUENE-PSP-A12-0003",
+          "ST-GRUENE-PSP-A12-0004",
+          "ST-GRUENE-PSP-A12-0005",
+          "ST-GRUENE-PSP-A12-0006",
+          "ST-GRUENE-PSP-A12-0007",
+          "ST-GRUENE-PSP-A12-0008",
+          "ST-GRUENE-PSP-A12-0009",
+          "ST-GRUENE-PSP-A12-0010",
+          "ST-GRUENE-PSP-A12-0011",
+          "ST-GRUENE-PSP-A12-0012",
+          "ST-GRUENE-PSP-A12-0013",
+          "ST-GRUENE-PSP-A12-0014",
+          "ST-GRUENE-PSP-A12-0015",
+          "ST-GRUENE-PSP-A12-0016",
+          "ST-GRUENE-PSP-A12-0017",
+          "ST-GRUENE-PSP-A12-0018",
+          "ST-GRUENE-PSP-A12-0019",
+          "ST-GRUENE-PSP-A12-0020",
+          "ST-GRUENE-PSP-A12-0021",
+          "ST-GRUENE-PSP-A12-0022",
+          "ST-GRUENE-PSP-A12-0023",
+          "ST-GRUENE-PSP-A12-0024",
+          "ST-GRUENE-PSP-A12-0025",
+          "ST-GRUENE-PSP-A12-0026",
+          "ST-GRUENE-PSP-A12-0027",
+          "ST-GRUENE-PSP-A12-0028",
+          "ST-GRUENE-PSP-A12-0029",
+          "ST-GRUENE-PSP-A12-0030",
+          "ST-GRUENE-PSP-A12-0031",
+          "ST-GRUENE-PSP-A12-0032",
+          "ST-GRUENE-PSP-A12-0033",
+          "ST-GRUENE-PSP-A12-0034",
+          "ST-GRUENE-PSP-A12-0035",
+          "ST-GRUENE-PSP-A12-0036",
+          "ST-GRUENE-PSP-A12-0037",
+          "ST-GRUENE-PSP-A12-0038",
+          "ST-GRUENE-PSP-A12-0039",
+          "ST-GRUENE-PSP-A12-0040",
+          "ST-GRUENE-PSP-A12-0041",
+          "ST-GRUENE-PSP-A12-0042",
+          "ST-GRUENE-PSP-A12-0043",
+          "ST-GRUENE-PSP-A12-0044",
+          "ST-GRUENE-PSP-A12-0045",
+          "ST-GRUENE-PSP-A12-0046",
+          "ST-GRUENE-PSP-A12-0047",
+          "ST-GRUENE-PSP-A12-0048",
+          "ST-GRUENE-PSP-A12-0049",
+          "ST-GRUENE-PSP-A12-0050",
+          "ST-GRUENE-PSP-A12-0051",
+          "ST-GRUENE-PSP-A12-0052",
+          "ST-GRUENE-PSP-A12-0053",
+          "ST-GRUENE-PSP-A12-0054",
+          "ST-GRUENE-PSP-A12-0055",
+          "ST-GRUENE-PSP-A12-0056",
+          "ST-GRUENE-PSP-A12-0057",
+          "ST-GRUENE-PSP-A12-0058",
+          "ST-GRUENE-PSP-A12-0059",
+          "ST-GRUENE-PSP-A12-0060",
+          "ST-GRUENE-PSP-A12-0061",
+          "ST-GRUENE-PSP-A12-0062"
+        ],
+        "context_design_non_effect_source_leaf": [
+          "ST-GRUENE-PSP-A12-0065"
+        ],
+        "parent_provenance_nonleaf": [],
+        "duplicate_restatement_nonleaf": [
+          "ST-GRUENE-PSP-A12-0063",
+          "ST-GRUENE-PSP-A12-0064"
+        ]
+      },
+      "lineage_edges": {
+        "0661": [
+          "ST-GRUENE-PSP-A12-0001"
+        ],
+        "0673": [
+          "ST-GRUENE-PSP-A12-0005"
+        ],
+        "0675": [
+          "ST-GRUENE-PSP-A12-0006",
+          "ST-GRUENE-PSP-A12-0007",
+          "ST-GRUENE-PSP-A12-0008",
+          "ST-GRUENE-PSP-A12-0009"
+        ],
+        "0676": [
+          "ST-GRUENE-PSP-A12-0010"
+        ],
+        "0677": [
+          "ST-GRUENE-PSP-A12-0011"
+        ],
+        "0682": [
+          "ST-GRUENE-PSP-A12-0016",
+          "ST-GRUENE-PSP-A12-0017",
+          "ST-GRUENE-PSP-A12-0018"
+        ],
+        "0683": [
+          "ST-GRUENE-PSP-A12-0019",
+          "ST-GRUENE-PSP-A12-0020"
+        ],
+        "0684": [
+          "ST-GRUENE-PSP-A12-0021"
+        ],
+        "0685": [
+          "ST-GRUENE-PSP-A12-0022"
+        ],
+        "0690": [
+          "ST-GRUENE-PSP-A12-0026",
+          "ST-GRUENE-PSP-A12-0027"
+        ],
+        "0691": [
+          "ST-GRUENE-PSP-A12-0029",
+          "ST-GRUENE-PSP-A12-0030",
+          "ST-GRUENE-PSP-A12-0031"
+        ],
+        "0699": [
+          "ST-GRUENE-PSP-A12-0036"
+        ],
+        "0701": [
+          "ST-GRUENE-PSP-A12-0037"
+        ],
+        "0704": [
+          "ST-GRUENE-PSP-A12-0041"
+        ],
+        "0705": [
+          "ST-GRUENE-PSP-A12-0042"
+        ],
+        "0707": [
+          "ST-GRUENE-PSP-A12-0045",
+          "ST-GRUENE-PSP-A12-0046",
+          "ST-GRUENE-PSP-A12-0047"
+        ],
+        "0708": [
+          "ST-GRUENE-PSP-A12-0048"
+        ],
+        "0713": [
+          "ST-GRUENE-PSP-A12-0050"
+        ],
+        "0716": [
+          "ST-GRUENE-PSP-A12-0053"
+        ],
+        "0718": [
+          "ST-GRUENE-PSP-A12-0055"
+        ],
+        "0719": [
+          "ST-GRUENE-PSP-A12-0059",
+          "ST-GRUENE-PSP-A12-0060"
+        ],
+        "0720": [
+          "ST-GRUENE-PSP-A12-0061",
+          "ST-GRUENE-PSP-A12-0062"
+        ]
+      },
+      "restored_in_place_historical": [],
+      "semantic_relations": [
+        {
+          "from": "ST-GRUENE-PSP-A12-0005",
+          "relation": "ADDITIONAL_SOURCE_PROVENANCE",
+          "to": "0674",
+          "count": 0
+        },
+        {
+          "from": "ST-GRUENE-PSP-A12-0063",
+          "relation": "SAME_SEMANTIC_TO_CURRENT",
+          "to": "0655",
+          "count": 0
+        },
+        {
+          "from": "ST-GRUENE-PSP-A12-0064",
+          "relation": "SAME_SEMANTIC_TO_CURRENT",
+          "to": "0664",
+          "count": 0
+        },
+        {
+          "from": "ST-GRUENE-PSP-A12-0065",
+          "relation": "CONTEXT_ONLY_LINK_TO",
+          "to": "0706",
+          "count": 0
+        },
+        {
+          "from": "ST-GRUENE-PSP-A12-0065",
+          "relation": "CONTEXT_ONLY_LINK_TO",
+          "to": "0709",
+          "count": 0
+        }
+      ],
+      "counts": {
+        "historical_active_effect_leaves": 32,
+        "versioned_active_effect_leaves": 62,
+        "non_effect_source_leaves": 14,
+        "parent_provenance_nonleaves": 15,
+        "duplicate_restatement_nonleaves": 2,
+        "authoritative_source_leaves": 108,
+        "authoritative_effect_leaves": 94
+      }
+    },
+    {
+      "source_marker": "ST-GRUENE-A13.2",
+      "historical_first": "0721",
+      "historical_last": "0740",
+      "historical_roles": {
+        "active_effect_leaf": [
+          "0721",
+          "0722",
+          "0725",
+          "0730",
+          "0734",
+          "0736",
+          "0737",
+          "0738",
+          "0724",
+          "0729",
+          "0735"
+        ],
+        "context_design_non_effect_source_leaf": [
+          "0723",
+          "0728"
+        ],
+        "parent_provenance_nonleaf": [
+          "0726",
+          "0727",
+          "0731",
+          "0732",
+          "0733",
+          "0739",
+          "0740"
+        ],
+        "duplicate_restatement_nonleaf": []
+      },
+      "versioned_roles": {
+        "active_effect_leaf": [
+          "ST-GRUENE-PSP-A13-0001",
+          "ST-GRUENE-PSP-A13-0002",
+          "ST-GRUENE-PSP-A13-0003",
+          "ST-GRUENE-PSP-A13-0004",
+          "ST-GRUENE-PSP-A13-0005",
+          "ST-GRUENE-PSP-A13-0006",
+          "ST-GRUENE-PSP-A13-0007",
+          "ST-GRUENE-PSP-A13-0008",
+          "ST-GRUENE-PSP-A13-0009",
+          "ST-GRUENE-PSP-A13-0010",
+          "ST-GRUENE-PSP-A13-0011",
+          "ST-GRUENE-PSP-A13-0012",
+          "ST-GRUENE-PSP-A13-0013",
+          "ST-GRUENE-PSP-A13-0014",
+          "ST-GRUENE-PSP-A13-0015",
+          "ST-GRUENE-PSP-A13-0016",
+          "ST-GRUENE-PSP-A13-0017",
+          "ST-GRUENE-PSP-A13-0018",
+          "ST-GRUENE-PSP-A13-0019",
+          "ST-GRUENE-PSP-A13-0020",
+          "ST-GRUENE-PSP-A13-0021",
+          "ST-GRUENE-PSP-A13-0022",
+          "ST-GRUENE-PSP-A13-0023",
+          "ST-GRUENE-PSP-A13-0024"
+        ],
+        "context_design_non_effect_source_leaf": [],
+        "parent_provenance_nonleaf": [],
+        "duplicate_restatement_nonleaf": []
+      },
+      "lineage_edges": {
+        "0724": [
+          "ST-GRUENE-PSP-A13-0002"
+        ],
+        "0726": [
+          "ST-GRUENE-PSP-A13-0003"
+        ],
+        "0727": [
+          "ST-GRUENE-PSP-A13-0004"
+        ],
+        "0729": [
+          "ST-GRUENE-PSP-A13-0005",
+          "ST-GRUENE-PSP-A13-0006"
+        ],
+        "0731": [
+          "ST-GRUENE-PSP-A13-0007"
+        ],
+        "0732": [
+          "ST-GRUENE-PSP-A13-0008",
+          "ST-GRUENE-PSP-A13-0009",
+          "ST-GRUENE-PSP-A13-0010"
+        ],
+        "0733": [
+          "ST-GRUENE-PSP-A13-0011"
+        ],
+        "0735": [
+          "ST-GRUENE-PSP-A13-0012",
+          "ST-GRUENE-PSP-A13-0013",
+          "ST-GRUENE-PSP-A13-0014",
+          "ST-GRUENE-PSP-A13-0015",
+          "ST-GRUENE-PSP-A13-0016",
+          "ST-GRUENE-PSP-A13-0017"
+        ],
+        "0739": [
+          "ST-GRUENE-PSP-A13-0018",
+          "ST-GRUENE-PSP-A13-0019",
+          "ST-GRUENE-PSP-A13-0020"
+        ],
+        "0740": [
+          "ST-GRUENE-PSP-A13-0021",
+          "ST-GRUENE-PSP-A13-0022"
+        ]
+      },
+      "restored_in_place_historical": [],
+      "semantic_relations": [
+        {
+          "from": "ST-GRUENE-PSP-A13-0010",
+          "relation": "ADDITIONAL_SOURCE_PROVENANCE",
+          "to": "0733",
+          "count": 0
+        }
+      ],
+      "counts": {
+        "historical_active_effect_leaves": 11,
+        "versioned_active_effect_leaves": 24,
+        "non_effect_source_leaves": 2,
+        "parent_provenance_nonleaves": 7,
+        "duplicate_restatement_nonleaves": 0,
+        "authoritative_source_leaves": 37,
+        "authoritative_effect_leaves": 35
+      }
+    }
+  ],
+  "counts": {
+    "authoritative_source_leaves": 240,
+    "authoritative_effect_leaves": 215
+  },
+  "constraints": {
+    "new_stable_ids": 0,
+    "current_740_mutation": "NONE",
+    "fach_synthesis": "FORBIDDEN",
+    "dns_mapping": "NOT_MAPPED_HERE",
+    "recommendation": "NOT_AVAILABLE_AT_SOURCE_UNIT_LEVEL",
+    "global_count_freeze": "LOCKED_PENDING_FINAL_CORPUS_UNION_GATE",
+    "a12_direct_source_precedence": "62_ACTIVE_PLUS_3_ZERO_COUNT_PASSAGE_RECORDS; RESERVED_ID_NOT_CREATED"
+  }
+}
