@@ -15,7 +15,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-MANIFEST_PATH = ROOT / "content/audits/sachsen-anhalt/gruene-convergence-c05.json"
+MANIFEST_PATH = ROOT / "audit-manifests/sachsen-anhalt/gruene-convergence-c05.json"
 
 
 def fail(message: str) -> None:

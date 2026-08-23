@@ -3,7 +3,7 @@ name: ST GRUENE convergence C05
 on:
   pull_request:
     paths:
-      - "content/audits/sachsen-anhalt/gruene-convergence-c05.json"
+      - "audit-manifests/sachsen-anhalt/gruene-convergence-c05.json"
       - "tools/validate_st_gruene_convergence_c05.py"
       - ".github/workflows/st-gruene-convergence-c05.yml"
   workflow_dispatch:
