@@ -1,6 +1,19 @@
 # Deployment
 
-Deployment-Ziel ist ein eigenes Hosting-Projekt für `parlament.wirkungsoekonomie.de`, getrennt von GitHub Pages und der Akademie. Vor DNS-Umschaltung: Preview, TLS, Umgebungsvariablen, Healthcheck, RLS/Migration und Import-Worker prüfen.
+Deployment-Ziel ist das bestehende Hosting-Projekt `woek-parlament` fuer
+`parlament.wirkungsoekonomie.de`, getrennt von GitHub Pages und der Akademie.
+GitHub baut und prueft den Golden State aus einem exakten Commit. Vercel erhaelt
+nur das deterministische minimale Parliament-Artefakt und bleibt Laufzeitziel,
+nicht kanonischer Source- oder Artefaktspeicher. Der verbindliche Ablauf und die
+Prebuilt-/Build-Output-Evaluation stehen in
+[`RELEASE_PIPELINE.md`](./RELEASE_PIPELINE.md).
+
+Die konfigurierte Vercel Root Directory bleibt `woek-parlament-app`.
+Automatische Git- und Preview-Deployments sind deaktiviert. Production wird nur
+durch Promotion eines bereits vollstaendig getesteten RC ohne Rebuild gesetzt.
+
+Vor einer erstmaligen DNS-Umschaltung oder einer Aenderung der Laufzeitgrenzen:
+TLS, Umgebungsvariablen, Healthcheck, RLS/Migration und Import-Worker pruefen.
 
 Erforderliche Laufzeitwerte: `DIP_API_KEY`, `DIP_LOOKAHEAD_DAYS=10`, `DIP_WAHLPERIODE=21`, `DIP_IMPORT_MAX_PAGES=10`, Supabase-URL, serverseitiger Service-Role-Key sowie `IMPORT_CRON_SECRET` für den privaten Worker. Der bis Ende Mai 2027 veröffentlichte DIP-Schlüssel ist als Übergangssecret zulässig; 401-Antworten alarmieren den Betrieb. Kein Schlüssel gelangt in `NEXT_PUBLIC_*`, Git oder eine öffentliche API.
 

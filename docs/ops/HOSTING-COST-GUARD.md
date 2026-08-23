@@ -42,11 +42,20 @@ Fuer dieses Projekt werden insbesondere Function-Ausfuehrung, CDN-/Transferverbr
 ## Release-Ablauf
 
 1. Tests und Build laufen lokal oder in GitHub Actions.
-2. Oeffentliche Grossartefakte werden einmalig in GitHub Releases publiziert und ueber stabile Release-URLs referenziert.
-3. Nur ein tatsaechlicher Release Candidate wird bei Bedarf manuell zu Vercel uebergeben.
-4. Vor dem Build wird `npm run reserve:vercel-build -- --project=<name> --commit=<sha> --release=<id>` ausgefuehrt und die Ledger-Aenderung versioniert.
-5. Nach bestandenem Audit wird exakt dieses Artefakt nach Production promotet.
-6. Nach dem Smoke-Test werden Deployment-ID und Commit dokumentiert.
+2. Fuer Parliament erzeugt `tools/build_parliament_deployment_artifact.py` aus
+   dem exakten Git-Commit ein reproduzierbares Minimal-TGZ samt Manifest und
+   Pruefsummen. Der GitHub-Workflow baut und prueft aus dem entpackten Artefakt,
+   nicht aus dem vollen Monorepo-Checkout.
+3. Oeffentliche Grossartefakte werden einmalig in GitHub Releases publiziert und ueber stabile Release-URLs referenziert.
+4. Nur ein tatsaechlicher Release Candidate wird bei Bedarf manuell zu Vercel uebergeben.
+5. Vor dem Build wird `npm run reserve:vercel-build -- --project=<name> --commit=<sha> --release=<id>` ausgefuehrt und die Ledger-Aenderung versioniert.
+6. Nach bestandenem Audit wird exakt dieses Artefakt nach Production promotet.
+7. Nach dem Smoke-Test werden Deployment-ID und Commit dokumentiert.
+
+Der manuelle Prebuilt-Versuch im Parliament-Artifact-Workflow erzeugt nur
+`.vercel/output` auf dem GitHub-Runner und darf keinen Deploy ausloesen. Eine
+spaetere `vercel deploy --prebuilt`-Verwendung braucht dieselbe ausdrueckliche
+Release-Autorisierung und Kostenpruefung wie jeder andere RC.
 
 ## Kostenkontrolle
 
