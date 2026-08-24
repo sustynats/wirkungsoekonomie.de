@@ -1,0 +1,37 @@
+name: Parliament issue 241 current residual
+
+on:
+  pull_request:
+    paths:
+      - "docs/audits/parliament-241-current-residual-2026-08-24.json"
+      - "tools/validate_parliament_issue_241_residual.py"
+      - ".github/workflows/parliament-issue-241-residual.yml"
+      - "ops/releases/parliament-github-golden-state-2026-08-23.json"
+      - "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-six-party-terminal-release-v1.json"
+      - "woek-parlament-app/data/state-programmes/current-source-registers/berlin-2026.json"
+      - "woek-parlament-app/data/state-programmes/current-source-registers/mecklenburg-vorpommern-2026.json"
+  push:
+    branches: [main]
+    paths:
+      - "docs/audits/parliament-241-current-residual-2026-08-24.json"
+      - "tools/validate_parliament_issue_241_residual.py"
+      - ".github/workflows/parliament-issue-241-residual.yml"
+      - "ops/releases/parliament-github-golden-state-2026-08-23.json"
+      - "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-six-party-terminal-release-v1.json"
+      - "woek-parlament-app/data/state-programmes/current-source-registers/berlin-2026.json"
+      - "woek-parlament-app/data/state-programmes/current-source-registers/mecklenburg-vorpommern-2026.json"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: parliament-issue-241-residual-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  residual:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate finite current residual
+        run: python3 tools/validate_parliament_issue_241_residual.py
