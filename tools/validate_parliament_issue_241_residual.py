@@ -1,0 +1,110 @@
+#!/usr/bin/env python3
+"""Validate the current, finite residual matrix for issue #241.
+
+The gate verifies existing source/Fach state only. It must never manufacture
+impact directions, DNS mappings, recommendations, scores, or deployments.
+"""
+
+from __future__ import annotations
+
+import json
+from collections import Counter
+from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parents[1]
+MATRIX_PATH = ROOT / "docs/audits/parliament-241-current-residual-2026-08-24.json"
+ST_PATH = ROOT / "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-six-party-terminal-release-v1.json"
+BE_PATH = ROOT / "woek-parlament-app/data/state-programmes/current-source-registers/berlin-2026.json"
+MV_PATH = ROOT / "woek-parlament-app/data/state-programmes/current-source-registers/mecklenburg-vorpommern-2026.json"
+GOLDEN_PATH = ROOT / "ops/releases/parliament-github-golden-state-2026-08-23.json"
+
+ALLOWED_STATUSES = {
+    "DONE_ON_MAIN",
+    "DONE_AND_LIVE",
+    "PRESENT_BUT_HIDDEN",
+    "RESTORE_REQUIRED",
+    "TECHNICAL_GAP",
+    "APPROVED_FACH_NOT_PROJECTED",
+    "GENUINE_FACH_REVIEW_REQUIRED",
+    "NOT_APPLICABLE",
+}
+
+REQUIRED_PREFIXES = {
+    "241-GAP-", "241-A-", "241-B-", "241-C-", "241-D-", "241-E-",
+    "241-F-", "241-G-", "241-H-", "241-DOD-", "241-POLICY-",
+}
+
+
+def load(path: Path) -> dict:
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def require(condition: bool, message: str) -> None:
+    if not condition:
+        raise ValueError(message)
+
+
+def validate() -> dict:
+    matrix = load(MATRIX_PATH)
+    st = load(ST_PATH)
+    berlin = load(BE_PATH)
+    mv = load(MV_PATH)
+    golden = load(GOLDEN_PATH)
+
+    require(set(matrix["classification_taxonomy"]) == ALLOWED_STATUSES, "ISSUE_241_CLASSIFICATION_TAXONOMY_DRIFT")
+    requirements = matrix["requirements"]
+    ids = [item["id"] for item in requirements]
+    require(len(ids) == len(set(ids)), "ISSUE_241_DUPLICATE_REQUIREMENT_ID")
+    for prefix in REQUIRED_PREFIXES:
+        require(any(item_id.startswith(prefix) for item_id in ids), f"ISSUE_241_SECTION_MISSING:{prefix}")
+    for item in requirements:
+        require(item["status"] in ALLOWED_STATUSES, f"ISSUE_241_INVALID_STATUS:{item['id']}")
+        require(item["issue_241_refs"], f"ISSUE_241_BODY_REFERENCE_MISSING:{item['id']}")
+        require(item["evidence"], f"ISSUE_241_EVIDENCE_MISSING:{item['id']}")
+        if item["status"] in {"TECHNICAL_GAP", "GENUINE_FACH_REVIEW_REQUIRED", "RESTORE_REQUIRED", "APPROVED_FACH_NOT_PROJECTED"}:
+            require(item["residual"], f"ISSUE_241_OPEN_RESIDUAL_NOT_FINITE:{item['id']}")
+
+    require(st["status"] == "TERMINAL_6_OF_6" and st["terminal_party_count"] == 6, "ISSUE_241_ST_NOT_TERMINAL_6_OF_6")
+    require(st["authoritative_totals"] == {"effect_mechanisms": 5308, "non_effect_source_leaves": 95, "source_units": 5403}, "ISSUE_241_ST_COUNTS_DRIFT")
+    require(berlin["status"] == "CURRENT_SOURCE_CLASSIFICATION_COMPLETE_17_OF_17", "ISSUE_241_BE_SOURCE_FIELD_DRIFT")
+    require(berlin["coverage"]["assessment_maturity"] == "PARTIAL_ANALYSIS_NEEDS_COMPLETION", "ISSUE_241_BE_FALSE_TERMINAL")
+    require(berlin["coverage"]["final_election_programme_verified_count"] == 9, "ISSUE_241_BE_FINAL_COUNT_DRIFT")
+    require(berlin["coverage"]["election_source_available_canonicalization_pending_count"] == 3, "ISSUE_241_BE_CANONICALIZATION_COUNT_DRIFT")
+    require(mv["status"] == "CURRENT_SOURCE_CLASSIFICATION_COMPLETE_19_OF_19", "ISSUE_241_MV_SOURCE_FIELD_DRIFT")
+    require(mv["coverage"]["assessment_maturity"] == "PARTIAL_ANALYSIS_NEEDS_COMPLETION", "ISSUE_241_MV_FALSE_TERMINAL")
+    require(mv["coverage"]["final_election_programme_verified_count"] == 10, "ISSUE_241_MV_FINAL_COUNT_DRIFT")
+    require(mv["coverage"]["election_source_available_canonicalization_pending_count"] == 3, "ISSUE_241_MV_CANONICALIZATION_COUNT_DRIFT")
+    require(golden["status"] == "COMBINED_GITHUB_GOLDEN_STATE", "ISSUE_241_COMBINED_CHECKPOINT_DRIFT")
+
+    technical = matrix["finite_residuals"]["technical"]
+    fach = matrix["finite_residuals"]["fach_review_required"]
+    require([item["id"] for item in technical[:2]] == ["BE-SOURCE-CANONICALIZATION-RESIDUAL", "MV-SOURCE-CANONICALIZATION-RESIDUAL"], "ISSUE_241_STATE_ORDER_DRIFT")
+    require(technical[0]["items"] == ["AfD", "DKP", "SGP"], "ISSUE_241_BE_TECHNICAL_RESIDUAL_DRIFT")
+    require(technical[1]["items"] == ["FREIE WAEHLER", "Die PARTEI", "Volt"], "ISSUE_241_MV_TECHNICAL_RESIDUAL_DRIFT")
+    require(len(fach[0]["verified_final_programmes"]) == 9 and len(fach[0]["canonicalization_pending_programmes"]) == 3, "ISSUE_241_BE_FACH_RESIDUAL_DRIFT")
+    require(len(fach[1]["verified_final_programmes"]) == 10 and len(fach[1]["canonicalization_pending_programmes"]) == 3, "ISSUE_241_MV_FACH_RESIDUAL_DRIFT")
+    require(fach[2]["source_commitment_count"] == 1593 and len(fach[2]["documents"]) == 7, "ISSUE_241_BUND_FACH_RESIDUAL_DRIFT")
+    require(not any(matrix["constraints"].values()), "ISSUE_241_FORBIDDEN_SYNTHESIS_OR_DEPLOYMENT")
+    require(matrix["release_policy"]["no_new_vercel_build"] is True, "ISSUE_241_VERCEL_GATE_NOT_FAIL_CLOSED")
+
+    counts = Counter(item["status"] for item in requirements)
+    require(counts["PRESENT_BUT_HIDDEN"] == 0, "ISSUE_241_UNRESOLVED_HIDDEN_CONTENT")
+    require(counts["RESTORE_REQUIRED"] == 0, "ISSUE_241_UNRESOLVED_RESTORE")
+    require(counts["APPROVED_FACH_NOT_PROJECTED"] == 0, "ISSUE_241_APPROVED_FACH_PROJECTION_GAP")
+    return {
+        "gate": "PARLIAMENT_ISSUE_241_CURRENT_RESIDUAL",
+        "status": "PASS_CURRENT_RESIDUAL_FINITE",
+        "audited_main_commit": matrix["audited_main_commit"],
+        "requirements": len(requirements),
+        "classification_counts": dict(sorted(counts.items())),
+        "berlin_technical_items": 3,
+        "mv_technical_items": 3,
+        "berlin_verified_final_programmes_pending_explicit_full_fach": 9,
+        "mv_verified_final_programmes_pending_explicit_full_fach": 10,
+        "no_new_vercel_build": True,
+    }
+
+
+if __name__ == "__main__":
+    print(json.dumps(validate(), ensure_ascii=False, indent=2, sort_keys=True))
