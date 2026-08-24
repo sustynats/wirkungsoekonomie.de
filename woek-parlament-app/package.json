@@ -23,6 +23,7 @@
     "check:public-labels": "tsx scripts/quality/check-public-label-inventory.ts",
     "check:sachsen-anhalt-publication": "tsx scripts/quality/check-sachsen-anhalt-programme-publication.ts",
     "check:berlin-current-source": "tsx scripts/quality/check-berlin-current-source.ts",
+    "check:berlin-fach-residual": "python3 ../tools/validate_berlin_fach_content_residual.py",
     "check:mv-current-source": "tsx scripts/quality/check-mv-current-source.ts",
     "check:state-source-adapters": "node scripts/run-official-state-source-adapters.mjs",
     "monitor:state-source-adapters": "node scripts/run-official-state-source-adapters.mjs --live",

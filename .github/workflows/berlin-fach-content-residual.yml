@@ -1,0 +1,38 @@
+name: Berlin Fach content residual
+
+on:
+  pull_request:
+    paths:
+      - "tools/validate_berlin_fach_content_residual.py"
+      - "tools/validate_parliament_issue_241_residual.py"
+      - "docs/audits/parliament-241-current-residual-2026-08-24.json"
+      - "woek-parlament-app/data/state-programmes/fach-content-residuals/berlin-2026-v1.json"
+      - "woek-parlament-app/data/state-programmes/current-source-registers/berlin-2026-v2.json"
+      - "woek-parlament-app/data/states/berlin/approved-review-2026-08-18.md"
+      - "woek-parlament-app/package.json"
+      - ".github/workflows/berlin-fach-content-residual.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: read
+
+concurrency:
+  group: berlin-fach-content-residual-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  finite-residual:
+    name: Exact programme objects and immutable Fach pins
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Validate deterministic Berlin Fach residual
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 tools/validate_berlin_fach_content_residual.py --check-github
+      - name: Validate reconciled issue 241 residual
+        run: python3 tools/validate_parliament_issue_241_residual.py

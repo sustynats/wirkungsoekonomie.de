@@ -16,6 +16,7 @@ ROOT = Path(__file__).resolve().parents[1]
 MATRIX_PATH = ROOT / "docs/audits/parliament-241-current-residual-2026-08-24.json"
 ST_PATH = ROOT / "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-six-party-terminal-release-v1.json"
 BE_PATH = ROOT / "woek-parlament-app/data/state-programmes/current-source-registers/berlin-2026-v2.json"
+BE_FACH_PATH = ROOT / "woek-parlament-app/data/state-programmes/fach-content-residuals/berlin-2026-v1.json"
 MV_PATH = ROOT / "woek-parlament-app/data/state-programmes/current-source-registers/mecklenburg-vorpommern-2026-v2.json"
 GOLDEN_PATH = ROOT / "ops/releases/parliament-github-golden-state-2026-08-23.json"
 STATE_ADAPTERS_PATH = ROOT / "woek-parlament-app/data/state-sources/official-state-source-adapters-v1.json"
@@ -50,6 +51,7 @@ def validate() -> dict:
     matrix = load(MATRIX_PATH)
     st = load(ST_PATH)
     berlin = load(BE_PATH)
+    berlin_fach = load(BE_FACH_PATH)
     mv = load(MV_PATH)
     golden = load(GOLDEN_PATH)
     state_adapters = load(STATE_ADAPTERS_PATH)
@@ -74,6 +76,8 @@ def validate() -> dict:
     require(berlin["coverage"]["final_election_programme_verified_count"] == 12, "ISSUE_241_BE_FINAL_COUNT_DRIFT")
     require(berlin["coverage"]["election_source_available_canonicalization_pending_count"] == 0, "ISSUE_241_BE_CANONICALIZATION_COUNT_DRIFT")
     require(berlin["coverage"]["canonical_artifact_count"] == 12, "ISSUE_241_BE_CANONICAL_ARTIFACT_COUNT_DRIFT")
+    require(berlin_fach["coverage_summary"]["programme_analysis_complete"] == 3, "ISSUE_241_BE_FACH_TERMINAL_COUNT_DRIFT")
+    require(berlin_fach["coverage_summary"]["genuine_fach_programmes"] == 9, "ISSUE_241_BE_FACH_RESIDUAL_COUNT_DRIFT")
     require(mv["status"] == "CURRENT_SOURCE_CLASSIFICATION_COMPLETE_19_OF_19", "ISSUE_241_MV_SOURCE_FIELD_DRIFT")
     require(mv["coverage"]["assessment_maturity"] == "PARTIAL_ANALYSIS_NEEDS_COMPLETION", "ISSUE_241_MV_FALSE_TERMINAL")
     require(mv["coverage"]["final_election_programme_verified_count"] == 12, "ISSUE_241_MV_FINAL_COUNT_DRIFT")
@@ -91,7 +95,10 @@ def validate() -> dict:
     fach = matrix["finite_residuals"]["fach_review_required"]
     require([item["id"] for item in technical] == ["BLOCKED_BY_BE_AND_MV_FACH_TERMINAL"], "ISSUE_241_STATE_ORDER_DRIFT")
     require(len(fach[0]["verified_final_programmes"]) == 12 and len(fach[0]["canonicalization_pending_programmes"]) == 0, "ISSUE_241_BE_FACH_RESIDUAL_DRIFT")
+    require(fach[0]["programme_analysis_complete"] == ["DKP", "Die PARTEI", "SGP"], "ISSUE_241_BE_FACH_TERMINAL_SET_DRIFT")
+    require(fach[0]["genuine_fach_programmes"] == ["AfD", "BÜNDNIS 90/DIE GRÜNEN", "BSW", "FDP", "Tierschutzpartei", "Volt", "SPD", "CDU", "Die Linke"], "ISSUE_241_BE_FACH_OPEN_SET_DRIFT")
     require(fach[0]["canonical_artifact_register"].endswith("berlin-2026-v2.json"), "ISSUE_241_BE_FACH_ARTIFACT_REGISTER_DRIFT")
+    require(fach[0]["fach_residual_matrix"].endswith("berlin-2026-v1.json"), "ISSUE_241_BE_FACH_MATRIX_DRIFT")
     require(len(fach[1]["verified_final_programmes"]) == 12 and len(fach[1]["canonicalization_pending_programmes"]) == 0, "ISSUE_241_MV_FACH_RESIDUAL_DRIFT")
     require(fach[1]["current_source_finality_open"] == ["Die PARTEI"], "ISSUE_241_MV_OPEN_FINALITY_RESIDUAL_DRIFT")
     require(fach[1]["canonical_artifact_register"].endswith("mecklenburg-vorpommern-2026-v2.json"), "ISSUE_241_MV_ARTIFACT_REGISTER_DRIFT")
@@ -113,7 +120,7 @@ def validate() -> dict:
         "mv_technical_items": 0,
         "state_official_source_adapters": 16,
         "automatic_state_fact_projection": 0,
-        "berlin_verified_final_programmes_pending_explicit_full_fach": 12,
+        "berlin_verified_final_programmes_pending_explicit_full_fach": 9,
         "mv_verified_final_programmes_pending_explicit_full_fach": 12,
         "no_new_vercel_build": True,
     }
