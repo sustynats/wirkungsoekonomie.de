@@ -25,6 +25,13 @@ function esc(value = "") {
     .replaceAll('"', "&quot;");
 }
 
+function publicNwiLabel(value = "") {
+  return String(value).replaceAll(
+    "NWI und T-SROI",
+    "WÖk-Netto-Wirkungsindex und T-SROI",
+  );
+}
+
 function readPublicLecture(entry) {
   const file = path.resolve(MASTER_ROOT, entry.public_path);
   if (!file.startsWith(`${MASTER_ROOT}${path.sep}`)) fail(`unsafe public path ${entry.public_path}`);
@@ -32,7 +39,9 @@ function readPublicLecture(entry) {
   const heading = text.match(/^#\s+(.+)$/m)?.[1]?.trim();
   if (!heading) fail(`missing public heading for ${entry.lecture_id}`);
   const code = entry.display_code.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  const title = heading.replace(new RegExp(`^${code}\\s*[·:–-]?\\s*`), "").trim();
+  const title = publicNwiLabel(
+    heading.replace(new RegExp(`^${code}\\s*[·:–-]?\\s*`), "").trim(),
+  );
   return { ...entry, title: title || entry.display_code };
 }
 
@@ -46,7 +55,7 @@ const parts = projection.parts.map((part) => ({
   title: part.title,
   modules: part.modules.map((module) => ({
     code: module.module_code,
-    title: module.title,
+    title: publicNwiLabel(module.title),
     lectures: module.lecture_codes.map((code) => {
       const lecture = studyByCode.get(code);
       if (!lecture) fail(`projection references missing lecture ${code}`);
@@ -289,17 +298,25 @@ const sitemapUrls = [...outputs.keys()].map((route) => route.endsWith("index.htm
   ? `https://wirkungsoekonomie.de/${route.slice(0, -"index.html".length)}`
   : `https://wirkungsoekonomie.de/${route}`);
 let sitemap = fs.readFileSync(sitemapPath, "utf8");
+const missingSitemapUrls = [];
 for (const url of sitemapUrls) {
   const urlPattern = url.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const entry = `  <url><loc>${url}</loc><lastmod>2026-08-24</lastmod></url>`;
+  let found = false;
   sitemap = sitemap.replace(
     new RegExp(`\\s*<url>\\s*<loc>${urlPattern}</loc>\\s*<lastmod>[^<]+</lastmod>\\s*</url>`, "g"),
-    "",
+    () => {
+      if (found) return "";
+      found = true;
+      return `\n${entry}`;
+    },
   );
+  if (!found) missingSitemapUrls.push(url);
 }
-const sitemapEntries = sitemapUrls
+const sitemapEntries = missingSitemapUrls
   .map((url) => `  <url><loc>${url}</loc><lastmod>2026-08-24</lastmod></url>`)
   .join("\n");
-sitemap = sitemap.replace("</urlset>", `${sitemapEntries}\n</urlset>`);
+if (sitemapEntries) sitemap = sitemap.replace("</urlset>", `${sitemapEntries}\n</urlset>`);
 fs.writeFileSync(sitemapPath, sitemap, "utf8");
 
 const curriculumJson = `${JSON.stringify(curriculum, null, 2)}\n`;
