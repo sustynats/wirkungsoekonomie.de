@@ -29,6 +29,9 @@ function formatDate(value: string) {
 }
 
 export function StateProgrammeSourceRegister({ register }: { register: ProgrammeSourceRegister }) {
+  const unavailableSourceCount = register.coverage.source_unavailable_for_election_corpus_count
+    ?? register.coverage.final_election_programme_not_verified_count;
+  const versionedSourceWithOpenFinalityCount = register.coverage.canonical_current_source_finality_open_count ?? 0;
   return <section className="section section-compact" aria-labelledby="programmquellenregister">
     <p className="eyebrow">Aktuelles Programmquellenregister · Stand {formatDate(register.source_as_of)}</p>
     <h2 id="programmquellenregister">Alle {register.official_field.admitted_party_count} zugelassenen Parteien sind nach Quellentyp und Reife klassifiziert.</h2>
@@ -37,7 +40,8 @@ export function StateProgrammeSourceRegister({ register }: { register: Programme
       <div><span>Amtliches Feld</span><strong>{register.official_field.admitted_party_count} Parteien</strong></div>
       <div><span>Final verifiziert</span><strong>{register.coverage.final_election_programme_verified_count} Wahlprogramme</strong></div>
       <div><span>Kanonisierung offen</span><strong>{register.coverage.election_source_available_canonicalization_pending_count} Wahlquellen</strong></div>
-      <div><span>Keine Wahlprogrammquelle für den Corpus</span><strong>{register.coverage.final_election_programme_not_verified_count} Parteien</strong></div>
+      {versionedSourceWithOpenFinalityCount > 0 ? <div><span>Versionierte Quelle, Finalstatus offen</span><strong>{versionedSourceWithOpenFinalityCount} Partei</strong></div> : null}
+      <div><span>Keine Wahlprogrammquelle für den Corpus</span><strong>{unavailableSourceCount} Parteien</strong></div>
       <div><span>Bestehender Fachstand</span><strong>{register.preserved_fach_review.materiality_theme_count} Themenreviews erhalten</strong></div>
     </div>
     <div className="notice notice-neutral"><strong>Keine Wirkung aus dem Quellenstatus ableiten.</strong><p>Ein veröffentlichtes Programm ist noch keine Wirkung; ein fehlendes finales Programm ist keine neutrale Bewertung. Wirkungsrichtung, Evidenz, Kompetenz und Schutzgrenzen erscheinen nur aus freigegebenem, quellengebundenem Fachreview.</p></div>

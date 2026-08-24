@@ -2,7 +2,7 @@
   "schema_version": "woek-parliament-issue-241-current-residual-1.0",
   "matrix_id": "WOEK-PARLIAMENT-241-CURRENT-RESIDUAL-2026-08-24",
   "issue": 241,
-  "audited_main_commit": "76e885da27574b1c1d8cd3cbcf6cf6083bceee63",
+  "audited_main_commit": "f66af9d7ae9171bb49b7efa3188f269443d4c089",
   "last_accepted_parliament_production_commit": "3539aae4920291f45ec03b4c297af147b9a9eb89",
   "status": "OPEN_FINITE_FACH_AND_TECHNICAL_RESIDUALS",
   "classification_taxonomy": [
@@ -42,11 +42,14 @@
     "mecklenburg_vorpommern": {
       "status": "PARTIAL_ANALYSIS_NEEDS_COMPLETION",
       "classified_parties": 19,
-      "verified_final_programmes": 10,
-      "canonicalization_pending": 3,
-      "final_programme_not_verified": 6,
+      "verified_final_programmes": 12,
+      "canonicalization_pending": 0,
+      "canonical_artifacts_completed_in_v2": 3,
+      "current_source_finality_open": 1,
+      "final_programme_not_verified": 7,
+      "source_unavailable_for_election_corpus": 6,
       "existing_theme_reviews": 8,
-      "evidence": "woek-parlament-app/data/state-programmes/current-source-registers/mecklenburg-vorpommern-2026.json"
+      "evidence": "woek-parlament-app/data/state-programmes/current-source-registers/mecklenburg-vorpommern-2026-v2.json"
     }
   },
   "requirements": [
@@ -398,9 +401,9 @@
       "id": "241-F-03-MV-PRIORITY",
       "issue_241_refs": ["F/Mecklenburg-Vorpommern 20.09.2026"],
       "title": "MV nach Berlin technisch kanonisieren, dann explizite Fachresiduals",
-      "status": "TECHNICAL_GAP",
-      "evidence": ["woek-parlament-app/data/state-programmes/current-source-registers/mecklenburg-vorpommern-2026.json"],
-      "residual": "MV-SOURCE-CANONICALIZATION-RESIDUAL"
+      "status": "DONE_ON_MAIN",
+      "evidence": ["woek-parlament-app/data/state-programmes/current-source-registers/mecklenburg-vorpommern-2026-v2.json", "tools/validate_mv_current_source_register.py"],
+      "residual": null
     },
     {
       "id": "241-F-04-OTHER-STATES-TRUTHFUL",
@@ -598,22 +601,15 @@
   "finite_residuals": {
     "technical": [
       {
-        "id": "MV-SOURCE-CANONICALIZATION-RESIDUAL",
-        "order": 1,
-        "jurisdiction": "mecklenburg-vorpommern",
-        "items": ["FREIE WAEHLER", "Die PARTEI", "Volt"],
-        "required_action": "Resolve exact party-source artifact identity, finality/version, byte snapshot and SHA-256; preserve NOT_YET_VERIFIED where proof remains insufficient."
-      },
-      {
         "id": "STATE-OFFICIAL-SOURCE-ADAPTER-RESIDUAL",
-        "order": 2,
+        "order": 1,
         "jurisdiction": "all-16-states",
         "items": ["16 operational official-source adapters currently 0/16 in the explicit 2.3 audit baseline"],
         "required_action": "Implement only against enumerated official sources and retain fail-closed coverage labels."
       },
       {
         "id": "BLOCKED_BY_BE_AND_MV_FACH_TERMINAL",
-        "order": 3,
+        "order": 2,
         "jurisdiction": "combined",
         "items": ["superseding combined terminal GitHub descriptor"],
         "required_action": "Create only after Berlin and MV explicit programme-Fach residuals are closed and all GitHub gates pass."
@@ -634,8 +630,10 @@
         "id": "MV-FACH-CONTENT-RESIDUAL",
         "order": 2,
         "jurisdiction": "mecklenburg-vorpommern",
-        "verified_final_programmes": ["SPD", "AfD", "CDU", "Die Linke", "BÜNDNIS 90/DIE GRÜNEN", "FDP", "PIRATEN", "Bündnis C", "BSW", "PdF"],
-        "canonicalization_pending_programmes": ["FREIE WAEHLER", "Die PARTEI", "Volt"],
+        "verified_final_programmes": ["SPD", "AfD", "CDU", "Die Linke", "BÜNDNIS 90/DIE GRÜNEN", "FDP", "FREIE WAEHLER", "PIRATEN", "Bündnis C", "BSW", "PdF", "Volt"],
+        "canonicalization_pending_programmes": [],
+        "current_source_finality_open": ["Die PARTEI"],
+        "canonical_artifact_register": "woek-parlament-app/data/state-programmes/current-source-registers/mecklenburg-vorpommern-2026-v2.json",
         "preserved_existing_scope": "Eight cross-party materiality themes plus the explicit Bündnis-C batch; neither is a full programme-by-programme corpus review.",
         "required_fach_action": "For every final verified programme, supply explicit source-bound atom-level Fach records or explicit reviewed-not-assessable reasons."
       },

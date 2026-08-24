@@ -1,7 +1,7 @@
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import berlinCurrentSourceRegister from "../../data/state-programmes/current-source-registers/berlin-2026-v2.json";
-import mvCurrentSourceRegister from "../../data/state-programmes/current-source-registers/mecklenburg-vorpommern-2026.json";
+import mvCurrentSourceRegister from "../../data/state-programmes/current-source-registers/mecklenburg-vorpommern-2026-v2.json";
 
 export type StateReviewArea = "regierung" | "wahl";
 
@@ -75,10 +75,13 @@ export type StateProgrammeSourceRegister = {
     final_election_programme_verified_count: number;
     election_source_available_canonicalization_pending_count: number;
     final_election_programme_not_verified_count: number;
+    source_unavailable_for_election_corpus_count?: number;
     source_available_for_election_corpus_count: number;
     canonical_artifact_count?: number;
     byte_exact_current_available_final_programme_set_count?: number;
     canonicalization_completed_in_v2_count?: number;
+    canonical_final_programme_artifact_count?: number;
+    canonical_current_source_finality_open_count?: number;
     full_final_election_programme_corpus_available: boolean;
     assessment_maturity: string;
   };
@@ -173,7 +176,7 @@ export const statePublicContent: Record<string, StatePublicContent> = {
     electionField: {
       electionDate: "20.09.2026",
       officialFieldLabel: "19 Landeslisten endgültig zugelassen",
-      officialFieldDetail: "Alle 19 zugelassenen Landeslisten sind im aktuellen Quellenstand klassifiziert: 10 finale Wahlprogramme sind verifiziert, 3 Wahlprogrammquellen warten noch auf exakte Kanonisierung und für 6 Listen ist kein finales MV-2026-Vollprogramm verifiziert. Das ist vollständige Quellenklassifikation, kein Vollreview aller Programme.",
+      officialFieldDetail: "Alle 19 zugelassenen Landeslisten sind im aktuellen Quellenstand klassifiziert: 12 finale Wahlprogramme sind verifiziert, alle drei zuvor offenen Programmquellen sind bytegenau versioniert und für 6 Listen ist keine Wahlprogrammquelle für den MV-2026-Corpus verfügbar. Bei Die PARTEI ist die aktuelle Programmseite gesichert, ihr Beschluss- oder Finalstatus bleibt ausdrücklich offen. Das ist vollständige Quellenklassifikation, kein Vollreview aller Programme.",
       officialSourceUrl: "https://www.laiv-mv.de/Wahlen/Pressemitteilungen/?id=222342&processor=processor.sa.pressemitteilung",
       sourceAsOf: "14.08.2026",
     },
