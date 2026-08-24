@@ -2,7 +2,7 @@
   "schema_version": "woek-parliament-issue-241-current-residual-1.0",
   "matrix_id": "WOEK-PARLIAMENT-241-CURRENT-RESIDUAL-2026-08-24",
   "issue": 241,
-  "audited_main_commit": "376be9ed1e6f6fc2095111fd86990b3bf149ca9b",
+  "audited_main_commit": "03176878969f3af44a5169fd141c4bf98a0f7061",
   "last_accepted_parliament_production_commit": "3539aae4920291f45ec03b4c297af147b9a9eb89",
   "status": "OPEN_FINITE_FACH_AND_TECHNICAL_RESIDUALS",
   "classification_taxonomy": [
@@ -37,7 +37,10 @@
       "byte_exact_canonical_artifacts": 12,
       "final_programme_not_verified": 5,
       "existing_theme_reviews": 6,
-      "evidence": "woek-parlament-app/data/state-programmes/current-source-registers/berlin-2026-v2.json"
+      "programme_analysis_complete": 3,
+      "programme_analysis_complete_parties": ["DKP", "Die PARTEI", "SGP"],
+      "genuine_fach_programmes": 9,
+      "evidence": "woek-parlament-app/data/state-programmes/fach-content-residuals/berlin-2026-v1.json"
     },
     "mecklenburg_vorpommern": {
       "status": "PARTIAL_ANALYSIS_NEEDS_COMPLETION",
@@ -114,7 +117,7 @@
       "issue_241_refs": ["Bestaetigte Gaps/6", "F/Berlin", "DoD/prioritaere Fachluecken"],
       "title": "Berlin aktuell verfuegbare finale Programme programmspezifisch atomisieren, fachpruefen und projizieren",
       "status": "GENUINE_FACH_REVIEW_REQUIRED",
-      "evidence": ["Issue #241 comment 5386359104", "woek-parlament-app/data/states/berlin/approved-review-2026-08-18.md"],
+      "evidence": ["Issue #241 comment 5386359104", "Issue #240 comments 5396796272, 5396814341 and 5396842873", "woek-parlament-app/data/states/berlin/approved-review-2026-08-18.md", "woek-parlament-app/data/state-programmes/fach-content-residuals/berlin-2026-v1.json"],
       "residual": "BE-FACH-CONTENT-RESIDUAL"
     },
     {
@@ -622,10 +625,13 @@
         "order": 1,
         "jurisdiction": "berlin",
         "verified_final_programmes": ["AfD", "BÜNDNIS 90/DIE GRÜNEN", "BSW", "DKP", "FDP", "Die PARTEI", "Tierschutzpartei", "SGP", "Volt", "SPD", "CDU", "Die Linke"],
+        "programme_analysis_complete": ["DKP", "Die PARTEI", "SGP"],
+        "genuine_fach_programmes": ["AfD", "BÜNDNIS 90/DIE GRÜNEN", "BSW", "FDP", "Tierschutzpartei", "Volt", "SPD", "CDU", "Die Linke"],
         "canonicalization_pending_programmes": [],
         "canonical_artifact_register": "woek-parlament-app/data/state-programmes/current-source-registers/berlin-2026-v2.json",
+        "fach_residual_matrix": "woek-parlament-app/data/state-programmes/fach-content-residuals/berlin-2026-v1.json",
         "preserved_existing_scope": "Six cross-party materiality themes; BSW housing is a partial cluster, not programme-complete coverage.",
-        "required_fach_action": "For every final verified programme, supply explicit source-bound atom-level Fach records or explicit reviewed-not-assessable reasons."
+        "required_fach_action": "For the nine exact genuine_fach_programmes, supply explicit source-bound atom-level Fach records or explicit reviewed-not-assessable reasons for every residual object in the Berlin Fach residual matrix."
       },
       {
         "id": "MV-FACH-CONTENT-RESIDUAL",
