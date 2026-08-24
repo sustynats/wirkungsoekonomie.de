@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
 import { readFileSync, statSync } from "node:fs";
 import { resolve } from "node:path";
-import currentSourceRegister from "../../data/state-programmes/current-source-registers/berlin-2026.json";
+import currentSourceRegister from "../../data/state-programmes/current-source-registers/berlin-2026-v2.json";
 import { statePublicContent } from "../../lib/states/public-content";
 
 const root = process.cwd();
@@ -17,10 +17,13 @@ assert.equal(currentSourceRegister.official_field.landesliste_count, 12);
 assert.equal(currentSourceRegister.official_field.berlinwide_bezirkslisten_count, 3);
 assert.equal(currentSourceRegister.official_field.selected_district_bezirkslisten_count, 2);
 assert.equal(currentSourceRegister.coverage.classified_party_count, 17);
-assert.equal(currentSourceRegister.coverage.final_election_programme_verified_count, 9);
-assert.equal(currentSourceRegister.coverage.election_source_available_canonicalization_pending_count, 3);
+assert.equal(currentSourceRegister.coverage.final_election_programme_verified_count, 12);
+assert.equal(currentSourceRegister.coverage.election_source_available_canonicalization_pending_count, 0);
 assert.equal(currentSourceRegister.coverage.final_election_programme_not_verified_count, 5);
 assert.equal(currentSourceRegister.coverage.source_available_for_election_corpus_count, 12);
+assert.equal(currentSourceRegister.coverage.canonical_artifact_count, 12);
+assert.equal(currentSourceRegister.coverage.byte_exact_current_available_final_programme_set_count, 12);
+assert.equal(currentSourceRegister.coverage.canonicalization_completed_in_v2_count, 3);
 assert.equal(currentSourceRegister.coverage.full_final_election_programme_corpus_available, false);
 assert.equal(currentSourceRegister.preserved_fach_review.materiality_theme_count, 6);
 
@@ -28,9 +31,9 @@ const parties = currentSourceRegister.parties;
 assert.equal(parties.length, 17);
 assert.equal(new Set(parties.map((party) => party.party)).size, 17, "Berlin: party names must be unique");
 assert.deepEqual(parties.filter((party) => party.final_election_programme_verified).map((party) => party.party).sort(), [
-  "BSW", "BÜNDNIS 90/DIE GRÜNEN", "CDU", "Die Linke", "Die PARTEI", "FDP", "SPD", "Tierschutzpartei", "Volt",
+  "AfD", "BSW", "BÜNDNIS 90/DIE GRÜNEN", "CDU", "DKP", "Die Linke", "Die PARTEI", "FDP", "SGP", "SPD", "Tierschutzpartei", "Volt",
 ].sort());
-assert.deepEqual(parties.filter((party) => party.canonicalization_pending).map((party) => party.party).sort(), ["AfD", "DKP", "SGP"]);
+assert.deepEqual(parties.filter((party) => party.canonicalization_pending).map((party) => party.party).sort(), []);
 assert.deepEqual(parties.filter((party) => !party.source_available_for_election_corpus).map((party) => party.party).sort(), [
   "B* (bergpartei, die überpartei)", "Die Urbane.", "HEIMAT", "PdF", "ÖDP",
 ].sort());
@@ -39,6 +42,14 @@ for (const party of parties) {
   assert.ok(party.source_urls.length > 0, `${party.party}: no source URL recorded`);
   for (const source of party.source_urls) assert.match(source.url, /^https:\/\//, `${party.party}: source URL must use HTTPS`);
   assert.equal(party.assessment_maturity, "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED");
+  if (party.final_election_programme_verified) {
+    assert.ok(party.canonical_artifact, `${party.party}: final programme has no byte-exact artifact`);
+    assert.match(party.canonical_artifact.sha256, /^[a-f0-9]{64}$/);
+    assert.ok(party.canonical_artifact.byte_length > 0);
+    assert.equal(party.canonical_artifact.identity_status, "BYTE_EXACT_PARTY_PRIMARY_ARTIFACT");
+  } else {
+    assert.equal(party.canonical_artifact, null, `${party.party}: non-final source must not masquerade as a canonical final artifact`);
+  }
 }
 
 assert.deepEqual(currentSourceRegister.source_pins.map((pin) => pin.comment_id), [5367584560, 5374672840]);
@@ -67,8 +78,9 @@ console.log(JSON.stringify({
   jurisdiction: "berlin",
   officialPartyField: 17,
   currentSourceClassifications: 17,
-  verifiedFinalProgrammes: 9,
-  canonicalizationPending: 3,
+  verifiedFinalProgrammes: 12,
+  canonicalizationPending: 0,
+  byteExactCanonicalArtifacts: 12,
   finalProgrammeNotVerified: 5,
   fullFinalProgrammeCorpusAvailable: false,
   preservedMaterialityThemes: 6,

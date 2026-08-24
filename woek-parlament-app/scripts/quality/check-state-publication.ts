@@ -64,7 +64,7 @@ assert.match(rlpMandate.title, /Gemeinsame Verantwortung/);
 assert.match(statePublicContent.berlin.electionField?.officialFieldLabel ?? "", /17 Parteien/);
 assert.equal(statePublicContent.berlin.programmeSources?.status, "CURRENT_SOURCE_CLASSIFICATION_COMPLETE_17_OF_17");
 assert.equal(statePublicContent.berlin.programmeSources?.parties.length, 17);
-assert.equal(statePublicContent.berlin.programmeSources?.coverage.final_election_programme_verified_count, 9);
+assert.equal(statePublicContent.berlin.programmeSources?.coverage.final_election_programme_verified_count, 12);
 assert.equal(statePublicContent.berlin.programmeSources?.coverage.full_final_election_programme_corpus_available, false);
 assert.match(statePublicContent["mecklenburg-vorpommern"].electionField?.officialFieldLabel ?? "", /19 Landeslisten/);
 assert.equal(statePublicContent["mecklenburg-vorpommern"].programmeSources?.status, "CURRENT_SOURCE_CLASSIFICATION_COMPLETE_19_OF_19");

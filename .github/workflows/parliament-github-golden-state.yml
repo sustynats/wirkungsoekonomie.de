@@ -13,6 +13,7 @@ on:
       - "woek-parlament-app/app/components/SamePageNavigation.tsx"
       - "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/**"
       - "woek-parlament-app/data/state-programmes/current-source-registers/berlin-2026.json"
+      - "woek-parlament-app/data/state-programmes/current-source-registers/berlin-2026-v2.json"
       - "woek-parlament-app/data/state-programmes/current-source-registers/mecklenburg-vorpommern-2026.json"
       - "woek-parlament-app/scripts/quality/check-same-page-navigation.mjs"
       - ".github/workflows/parliament-github-golden-state.yml"
