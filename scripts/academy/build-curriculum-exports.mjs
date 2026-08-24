@@ -3,11 +3,11 @@ import path from "node:path";
 
 const ROOT = process.cwd();
 const sourcePath = path.join(ROOT, "content/academy/woek-g-curriculum.json");
-const targetPath = path.join(ROOT, "public/data/woek-g-curriculum.json");
+const activeTargetPath = path.join(ROOT, "public/data/woek-g-curriculum.json");
 
 const curriculum = JSON.parse(fs.readFileSync(sourcePath, "utf8"));
 
-const publicExport = {
+const historicalExport = {
   schemaVersion: curriculum.schemaVersion,
   curriculumId: curriculum.curriculumId,
   title: curriculum.title,
@@ -29,7 +29,13 @@ const publicExport = {
   })),
 };
 
-fs.mkdirSync(path.dirname(targetPath), { recursive: true });
-fs.writeFileSync(targetPath, `${JSON.stringify(publicExport, null, 2)}\n`);
+const historicalTargetPath = path.join(ROOT, `public/data/woek-g-curriculum-v${historicalExport.version}.json`);
+fs.mkdirSync(path.dirname(activeTargetPath), { recursive: true });
+fs.writeFileSync(historicalTargetPath, `${JSON.stringify(historicalExport, null, 2)}\n`);
 
-console.log(`Curriculum-Export geschrieben: ${publicExport.lectures.length} Vorlesungen.`);
+console.log(`Historischer Curriculum-Export v${historicalExport.version} geschrieben: ${historicalExport.lectures.length} Vorlesungen.`);
+
+// The committed sanitized v4 Public-Master is the only active source. Its
+// projector validates hashes, cardinality, source provenance and the public
+// privacy boundary before replacing the active export and Academy/Lernen views.
+await import("./build-v4-main-domain.mjs");

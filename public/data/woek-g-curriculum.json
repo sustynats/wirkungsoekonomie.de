@@ -1,1634 +1,1204 @@
 {
-  "schemaVersion": "1.0",
+  "schemaVersion": "4.0",
   "curriculumId": "woek-g",
   "title": "Grundstudium Wirkungsökonomie (WÖk-G)",
-  "version": "2.0",
-  "stand": "2026-07-10",
+  "version": "4.0",
+  "source": {
+    "publicMasterManifest": "content/studienskripte/v4/PUBLIC_MASTER_MANIFEST.json",
+    "sourceRepo": "sustynats/woek-akademie-app",
+    "sourceSha": "ecee82cce60612332b4dc909b2fecfcb380b1a24",
+    "authoredTerminologyBaseline": "1.6",
+    "currentReleaseReference": "WÖk-Begriffsleitfaden v1.7"
+  },
   "counts": {
-    "lectures": 108,
-    "active": 36,
-    "planned": 72,
-    "modules": 36,
-    "studySections": 5
+    "parts": 10,
+    "modules": 40,
+    "studyLectures": 120,
+    "activeOfferings": 6,
+    "activeOfferingLectures": 58,
+    "interimExams": 10,
+    "finalAssessments": 4
   },
-  "tracks": {
-    "primary": "Grundstudium",
-    "downstream": [
-      "Fortbildung",
-      "Coach",
-      "Multiplikator:innen"
-    ],
-    "depthNote": "Studiumstiefe: WÖMM/WÖMS als Orientierungswissen. Die 152-Methoden-Tiefe gehört in Fortbildung/Coach."
-  },
-  "modules": [
+  "parts": [
     {
-      "id": "G1.1",
-      "titel": "Orientierung und Maßstabskrise",
-      "studienabschnitt": "Teil 1 · Grundlagen"
+      "order": 1,
+      "title": "Grundverständnis",
+      "modules": [
+        {
+          "code": "G1.1",
+          "title": "Was ist Wirkungsökonomie?",
+          "lectures": [
+            {
+              "code": "V01",
+              "lectureId": "WOEK-G-BASE-001",
+              "title": "Die Maßstabskrise",
+              "publicMasterPath": "grundstudium/base/v01-die-massstabskrise.md"
+            },
+            {
+              "code": "V02",
+              "lectureId": "WOEK-G-BASE-002",
+              "title": "Wirkung statt Kapital",
+              "publicMasterPath": "grundstudium/base/v02-wirkung-statt-kapital.md"
+            },
+            {
+              "code": "V03",
+              "lectureId": "WOEK-G-BASE-003",
+              "title": "Die Wirkungsökonomie als Anschluss- und Steuerungsarchitektur",
+              "publicMasterPath": "grundstudium/base/v03-anschluss-und-steuerungsarchitektur.md"
+            }
+          ]
+        },
+        {
+          "code": "G1.2",
+          "title": "Erfolg und Zukunft",
+          "lectures": [
+            {
+              "code": "V04",
+              "lectureId": "WOEK-G-BASE-004",
+              "title": "Gewinn, Wachstum und Reichweite als unvollständige Erfolgsgrößen",
+              "publicMasterPath": "grundstudium/base/v04-erfolgsgroessen-unvollstaendig.md"
+            },
+            {
+              "code": "V05",
+              "lectureId": "WOEK-G-BASE-005",
+              "title": "Wirkleistung, Scheinleistung, Blindleistung und Verlustleistung",
+              "publicMasterPath": "grundstudium/base/v05-wirkleistung-scheinleistung-blindleistung-verlustleistung.md"
+            },
+            {
+              "code": "V06",
+              "lectureId": "WOEK-G-BASE-006",
+              "title": "Zukunftsfähigkeit, Risiko und Resilienz",
+              "publicMasterPath": "grundstudium/base/v06-zukunftsfaehigkeit-risiko-resilienz.md"
+            }
+          ]
+        },
+        {
+          "code": "G1.3",
+          "title": "Mensch, Planet und Demokratie",
+          "lectures": [
+            {
+              "code": "V07",
+              "lectureId": "WOEK-G-BASE-007",
+              "title": "Mensch als Wirkungsdimension",
+              "publicMasterPath": "grundstudium/base/v07-mensch-als-wirkungsdimension.md"
+            },
+            {
+              "code": "V08",
+              "lectureId": "WOEK-G-BASE-008",
+              "title": "Planet als Wirkungsdimension",
+              "publicMasterPath": "grundstudium/base/v08-planet-als-wirkungsdimension.md"
+            },
+            {
+              "code": "V09",
+              "lectureId": "WOEK-G-BASE-009",
+              "title": "Demokratie als Wirkungsdimension",
+              "publicMasterPath": "grundstudium/base/v09-demokratie-als-wirkungsdimension.md"
+            }
+          ]
+        },
+        {
+          "code": "G1.4",
+          "title": "Wirkung statt bloßer Absicht",
+          "lectures": [
+            {
+              "code": "V10",
+              "lectureId": "WOEK-G-BASE-010",
+              "title": "Wirkung ist nicht Absicht",
+              "publicMasterPath": "grundstudium/base/v10-wirkung-ist-nicht-absicht.md"
+            },
+            {
+              "code": "V11",
+              "lectureId": "WOEK-G-BASE-011",
+              "title": "Positive, negative und ambivalente Wirkung",
+              "publicMasterPath": "grundstudium/base/v11-positive-negative-ambivalente-wirkung.md"
+            },
+            {
+              "code": "V12",
+              "lectureId": "WOEK-G-BASE-012",
+              "title": "Wirkungsempfänger und Wirkungsräume",
+              "publicMasterPath": "grundstudium/base/v12-wirkungsempfaenger-und-wirkungsraeume.md"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "G1.2",
-      "titel": "Leistung, Kapital und Zukunftsfähigkeit",
-      "studienabschnitt": "Teil 1 · Grundlagen"
+      "order": 2,
+      "title": "Wirkungskompetenz: Problem, Ziel und Kausalität",
+      "modules": [
+        {
+          "code": "G2.1",
+          "title": "Problem, Ziel, Wirkpfad und Evidenz",
+          "lectures": [
+            {
+              "code": "V13",
+              "lectureId": "WOEK-G-BASE-013",
+              "title": "Problem Review: Vom behaupteten Problem zur belastbaren Ausgangslage",
+              "publicMasterPath": "grundstudium/base/v13-problem-review.md"
+            },
+            {
+              "code": "V14",
+              "lectureId": "WOEK-G-BASE-014",
+              "title": "Goal Review: Vom Problem zum problemadäquaten Ziel",
+              "publicMasterPath": "grundstudium/base/v14-goal-review.md"
+            },
+            {
+              "code": "V15",
+              "lectureId": "WOEK-G-BASE-015",
+              "title": "Vom Ziel zum Wirkpfad: IOOI, A→M→ΔZ→R, Evidenz und Attribution",
+              "publicMasterPath": "grundstudium/base/v15-wirkpfad-evidenz-attribution.md"
+            }
+          ]
+        },
+        {
+          "code": "G2.2",
+          "title": "Wirkungsräume lesen",
+          "lectures": [
+            {
+              "code": "V16",
+              "lectureId": "WOEK-G-BASE-016",
+              "title": "Märkte, Produkte und Lieferketten als Wirkungsräume",
+              "publicMasterPath": "grundstudium/base/v16-maerkte-produkte-lieferketten-wirkungsraeume.md"
+            },
+            {
+              "code": "V17",
+              "lectureId": "WOEK-G-BASE-017",
+              "title": "Medien, Sprache und Öffentlichkeit als Wirkungsräume",
+              "publicMasterPath": "grundstudium/base/v17-medien-sprache-oeffentlichkeit-wirkungsraeume.md"
+            },
+            {
+              "code": "V18",
+              "lectureId": "WOEK-G-BASE-018",
+              "title": "Zeit, Generationen und unsichtbare Betroffene",
+              "publicMasterPath": "grundstudium/base/v18-zeit-generationen-unsichtbare-betroffene.md"
+            }
+          ]
+        },
+        {
+          "code": "G2.3",
+          "title": "Wirkmechanismus und Resonanz",
+          "lectures": [
+            {
+              "code": "V19",
+              "lectureId": "WOEK-G-BASE-019",
+              "title": "Wirkstoff-Analogie, Wirkmechanismus und Wirkungspotenzial",
+              "publicMasterPath": "grundstudium/base/v19-wirkstoff-analogie-mechanismus-potenzial.md"
+            },
+            {
+              "code": "V20",
+              "lectureId": "WOEK-G-BASE-020",
+              "title": "Gesellschaftliche Resonanzfaktoren",
+              "publicMasterPath": "grundstudium/base/v20-gesellschaftliche-resonanzfaktoren.md"
+            },
+            {
+              "code": "V21",
+              "lectureId": "WOEK-G-BASE-021",
+              "title": "Produkte, Technologien und Institutionen als Auslöser",
+              "publicMasterPath": "grundstudium/base/v21-produkte-technologien-institutionen-als-ausloeser.md"
+            }
+          ]
+        },
+        {
+          "code": "G2.4",
+          "title": "Verantwortlich kommunizieren",
+          "lectures": [
+            {
+              "code": "V22",
+              "lectureId": "WOEK-G-BASE-022",
+              "title": "Wirkungssprache und Quellenklarheit",
+              "publicMasterPath": "grundstudium/base/v22-wirkungssprache-und-quellenklarheit.md"
+            },
+            {
+              "code": "V23",
+              "lectureId": "WOEK-G-BASE-023",
+              "title": "Unsicherheit, Ambivalenz und transparente Bewertung",
+              "publicMasterPath": "grundstudium/base/v23-unsicherheit-ambivalenz-transparente-bewertung.md"
+            },
+            {
+              "code": "V24",
+              "lectureId": "WOEK-G-BASE-024",
+              "title": "Deeskalierende und demokratiestärkende Kommunikation",
+              "publicMasterPath": "grundstudium/base/v24-deeskalierende-demokratiestaerkende-kommunikation.md"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "G1.3",
-      "titel": "Mensch, Planet und Demokratie",
-      "studienabschnitt": "Teil 1 · Grundlagen"
+      "order": 3,
+      "title": "Referenzrahmen, Daten und Bewertung",
+      "modules": [
+        {
+          "code": "G3.1",
+          "title": "Referenzrahmen: Agenda 2030, SDGs, SDG+",
+          "lectures": [
+            {
+              "code": "V25",
+              "lectureId": "WOEK-G-BASE-025",
+              "title": "Agenda 2030 und SDGs: globaler Referenzrahmen, Ziele und Grenzen",
+              "publicMasterPath": "grundstudium/base/v25-agenda2030-und-sdgs.md"
+            },
+            {
+              "code": "V26",
+              "lectureId": "WOEK-G-BASE-026",
+              "title": "SDG+: WÖk-eigener Ergänzungsrahmen für demokratische und epistemische Resilienz",
+              "publicMasterPath": "grundstudium/base/v26-sdg-plus-woek-referenzrahmen.md"
+            },
+            {
+              "code": "V27",
+              "lectureId": "WOEK-G-BASE-027",
+              "title": "Referenzebenen, Rechte, Staatsziele, Schutzgrenzen und rote Linien",
+              "publicMasterPath": "grundstudium/base/v27-referenzebenen-recht-schutzgrenzen.md"
+            }
+          ]
+        },
+        {
+          "code": "G3.2",
+          "title": "Indikatoren, Register und Daten",
+          "lectures": [
+            {
+              "code": "V28",
+              "lectureId": "WOEK-G-BASE-028",
+              "title": "Datenwelten trennen: Reportingstandards, staatliche Indikatoren und Datenfunktionen",
+              "publicMasterPath": "grundstudium/base/v28-datenwelten-reporting-staat-indikatoren.md"
+            },
+            {
+              "code": "V29",
+              "lectureId": "WOEK-G-BASE-029",
+              "title": "WÖk-Masterregister, Wirkindikatorenregister, Benchmarks und Archetypen",
+              "publicMasterPath": "grundstudium/base/v29-masterregister-wirkindikatorenregister.md"
+            },
+            {
+              "code": "V30",
+              "lectureId": "WOEK-G-BASE-030",
+              "title": "Datenqualität, Provenienz, Audit und Unsicherheit",
+              "publicMasterPath": "grundstudium/base/v30-datenqualitaet-provenienz-unsicherheit.md"
+            }
+          ]
+        },
+        {
+          "code": "G3.3",
+          "title": "Bewertungsprofile, WÖk-Netto-Wirkungsindex und T-SROI",
+          "lectures": [
+            {
+              "code": "V31",
+              "lectureId": "WOEK-G-BASE-031",
+              "title": "Von Einzelwirkung zu Bewertungsprofilen: Aggregation nur wo fachlich zulässig",
+              "publicMasterPath": "grundstudium/base/v31-aggregation-und-nettowirkung.md"
+            },
+            {
+              "code": "V32",
+              "lectureId": "WOEK-G-BASE-032",
+              "title": "Scorecards und mehrdimensionale Bewertungsprofile",
+              "publicMasterPath": "grundstudium/base/v32-scorecards-bewertungsprofile.md"
+            },
+            {
+              "code": "V33",
+              "lectureId": "WOEK-G-BASE-033",
+              "title": "WÖk-Netto-Wirkungsindex und T-SROI unterscheiden – Einsatzbereich und Grenzen",
+              "publicMasterPath": "grundstudium/base/v33-nwi-vs-t-sroi.md"
+            }
+          ]
+        },
+        {
+          "code": "G3.4",
+          "title": "Reverse Merit Order und Nichtkompensation",
+          "lectures": [
+            {
+              "code": "V34",
+              "lectureId": "WOEK-G-BASE-034",
+              "title": "Reverse Merit Order als Priorisierungslogik",
+              "publicMasterPath": "grundstudium/base/v34-reverse-merit-order.md"
+            },
+            {
+              "code": "V35",
+              "lectureId": "WOEK-G-BASE-035",
+              "title": "Nichtkompensation: Schutz vor Greenwashing, Rights-Washing und Scheinsaldierung",
+              "publicMasterPath": "grundstudium/base/v35-nichtkompensation.md"
+            },
+            {
+              "code": "V36",
+              "lectureId": "WOEK-G-BASE-036",
+              "title": "Scorecards lesen, begründen und Scheingenauigkeit vermeiden",
+              "publicMasterPath": "grundstudium/base/v36-profile-lesen-begruenden.md"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "G1.4",
-      "titel": "Grundbegriffe der Wirkung",
-      "studienabschnitt": "Teil 1 · Grundlagen"
+      "order": 4,
+      "title": "Staatliche Nachhaltigkeits- und Folgenprüfungsarchitektur",
+      "modules": [
+        {
+          "code": "G4.1",
+          "title": "Historische Entwicklung",
+          "lectures": [
+            {
+              "code": "GOV-01",
+              "lectureId": "WOEK-G-GOV-HIST-01",
+              "title": "Von Brundtland zu Rio: Nachhaltigkeit wird zum Governance-Prinzip",
+              "publicMasterPath": "grundstudium/gov-01-von-brundtland-zu-rio.md"
+            },
+            {
+              "code": "GOV-02",
+              "lectureId": "WOEK-G-GOV-HIST-02",
+              "title": "Von Agenda 21 zur deutschen Nachhaltigkeitsstrategie 2002",
+              "publicMasterPath": "grundstudium/gov-02-agenda21-zur-deutschen-nachhaltigkeitsstrategie-2002.md"
+            },
+            {
+              "code": "GOV-03",
+              "lectureId": "WOEK-G-GOV-HIST-03",
+              "title": "Von Agenda 2030 zur DNS 2025: Kontinuität und Neuaufstellung",
+              "publicMasterPath": "grundstudium/gov-03-agenda2030-zur-dns-2025.md"
+            }
+          ]
+        },
+        {
+          "code": "G4.2",
+          "title": "DNS-Governance und Monitoring",
+          "lectures": [
+            {
+              "code": "GOV-04",
+              "lectureId": "WOEK-G-GOV-DNS-01",
+              "title": "DNS als Managementsystem: Prinzipien, Transformationsbereiche und Hebel",
+              "publicMasterPath": "grundstudium/gov-04-dns-als-managementsystem.md"
+            },
+            {
+              "code": "GOV-05",
+              "lectureId": "WOEK-G-GOV-INST-01",
+              "title": "Wer steuert Nachhaltigkeit? Kanzleramt, Ressorts, StA NEZ, RNE, Destatis und Bundestag",
+              "publicMasterPath": "grundstudium/gov-05-institutionen-und-verantwortlichkeiten.md"
+            },
+            {
+              "code": "GOV-06",
+              "lectureId": "WOEK-G-GOV-IND-01",
+              "title": "DNS-Indikatoren und Monitoring: Zielwert ist nicht Wirkung",
+              "publicMasterPath": "grundstudium/gov-06-dns-indikatoren-und-monitoring.md"
+            }
+          ]
+        },
+        {
+          "code": "G4.3",
+          "title": "GFA, Nachhaltigkeitsprüfung und digitale Gesetzgebung",
+          "lectures": [
+            {
+              "code": "GOV-07",
+              "lectureId": "WOEK-G-GOV-GFA-01",
+              "title": "§§ 43–44 GGO: Gesetzesfolgen, Alternativen, Nebenwirkungen und spätere Überprüfung",
+              "publicMasterPath": "grundstudium/gov-07-ggo-gesetzesfolgen.md"
+            },
+            {
+              "code": "GOV-08",
+              "lectureId": "WOEK-G-GOV-ENAP-01",
+              "title": "Nachhaltigkeitsprüfung und eNAP: Was der Bund bereits systematisch prüft",
+              "publicMasterPath": "grundstudium/gov-08-nachhaltigkeitspruefung-und-enap.md"
+            },
+            {
+              "code": "GOV-09",
+              "lectureId": "WOEK-G-GOV-EGFA-01",
+              "title": "eGFA und E-Gesetzgebung: digitale Prozessintegration und öffentliche Dokumentationsgrenzen",
+              "publicMasterPath": "grundstudium/gov-09-egfa-und-e-gesetzgebung.md"
+            }
+          ]
+        },
+        {
+          "code": "G4.4",
+          "title": "Parlament, Aktionsplan und Vergleichslabor",
+          "lectures": [
+            {
+              "code": "GOV-10",
+              "lectureId": "WOEK-G-GOV-PARL-01",
+              "title": "Parlamentarische Nachhaltigkeitsprüfung: PBnEZ und das Verhältnis zur Exekutive",
+              "publicMasterPath": "grundstudium/gov-10-parlamentarische-nachhaltigkeitspruefung.md"
+            },
+            {
+              "code": "GOV-11",
+              "lectureId": "WOEK-G-GOV-AP26-01",
+              "title": "Aktionsplan Nachhaltigkeit 2026: Missionen, Beteiligungsstand und Wirkungsfragen",
+              "publicMasterPath": "grundstudium/gov-11-aktionsplan-nachhaltigkeit-2026.md"
+            },
+            {
+              "code": "GOV-12",
+              "lectureId": "WOEK-G-GOV-COMPARE-01",
+              "title": "Staatliche GFA/eNAP vs. WÖk: Benchmarklabor mit realen Bundesfällen",
+              "publicMasterPath": "grundstudium/gov-12-enap-woek-benchmarklabor.md"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "G2.1",
-      "titel": "Wirkpfad, IOOI und Folgen",
-      "studienabschnitt": "Teil 1 · Grundlagen"
+      "order": 5,
+      "title": "Steuerung und Rückkopplung",
+      "modules": [
+        {
+          "code": "G5.1",
+          "title": "Ehrliche Preise",
+          "lectures": [
+            {
+              "code": "V37",
+              "lectureId": "WOEK-G-BASE-037",
+              "title": "Externalitäten und versteckte Folgekosten",
+              "publicMasterPath": "grundstudium/base/v37-externalitaeten-und-versteckte-folgekosten.md"
+            },
+            {
+              "code": "V38",
+              "lectureId": "WOEK-G-BASE-038",
+              "title": "Preis als Wirkungssignal – wann Preissignale wirken und wann nicht",
+              "publicMasterPath": "grundstudium/base/v38-preis-als-wirkungssignal.md"
+            },
+            {
+              "code": "V39",
+              "lectureId": "WOEK-G-BASE-039",
+              "title": "Verbraucherinformation und soziale Abfederung: Wahlfähigkeit statt Moralappell",
+              "publicMasterPath": "grundstudium/base/v39-verbraucherinformation-soziale-abfederung.md"
+            }
+          ]
+        },
+        {
+          "code": "G5.2",
+          "title": "Wirkungssteuer",
+          "lectures": [
+            {
+              "code": "V40",
+              "lectureId": "WOEK-G-BASE-040",
+              "title": "Das Wirkungssteuergesetz als WÖk-Policy-Modell – keine bestehende Rechtslage",
+              "publicMasterPath": "grundstudium/base/v40-wirkungssteuergesetz-als-policy-modell.md"
+            },
+            {
+              "code": "V41",
+              "lectureId": "WOEK-G-BASE-041",
+              "title": "Wirkungssteuer: Tarif-, Bonus-Malus- und Boundary-Design statt FinalScore-Automatismus",
+              "publicMasterPath": "grundstudium/base/v41-wirkungssteuer-rate-design.md"
+            },
+            {
+              "code": "V42",
+              "lectureId": "WOEK-G-BASE-042",
+              "title": "Lieferketten, Vorleistungen und Importwirkung – Datenweitergabe statt Herkunftspauschale",
+              "publicMasterPath": "grundstudium/base/v42-lieferketten-importwirkung-und-grenzausgleich.md"
+            }
+          ]
+        },
+        {
+          "code": "G5.3",
+          "title": "Wirkungshaushalt und öffentliche Steuerung",
+          "lectures": [
+            {
+              "code": "V43",
+              "lectureId": "WOEK-G-BASE-043",
+              "title": "Öffentliche Haushalte nach Wirkung lesen – bestehende Haushaltslogik und WÖk-Zusatz",
+              "publicMasterPath": "grundstudium/base/v43-oeffentliche-haushalte-wirkungsorientiert-lesen.md"
+            },
+            {
+              "code": "V44",
+              "lectureId": "WOEK-G-BASE-044",
+              "title": "Öffentliche Beschaffung als Transformationshebel – Recht, Wirkung und Lebenszyklus",
+              "publicMasterPath": "grundstudium/base/v44-oeffentliche-beschaffung-transformationshebel.md"
+            },
+            {
+              "code": "V45",
+              "lectureId": "WOEK-G-BASE-045",
+              "title": "Wirkungsberichte, Evaluation und Reality Check – Rückkopplung ohne Scheinkausalität",
+              "publicMasterPath": "grundstudium/base/v45-wirkungsberichte-evaluation-reality-check.md"
+            }
+          ]
+        },
+        {
+          "code": "G5.4",
+          "title": "Kapital und Investitionen",
+          "lectures": [
+            {
+              "code": "V46",
+              "lectureId": "WOEK-G-BASE-046",
+              "title": "Kapitalwirkung und Kapitalrendite: zwei verschiedene Fragen",
+              "publicMasterPath": "grundstudium/base/v46-kapitalwirkung-und-rendite.md"
+            },
+            {
+              "code": "V47",
+              "lectureId": "WOEK-G-BASE-047",
+              "title": "T-SROI im Investitionscontrolling – WÖk-Erweiterung eines etablierten SROI-Ansatzes",
+              "publicMasterPath": "grundstudium/base/v47-t-sroi-investitionscontrolling.md"
+            },
+            {
+              "code": "V48",
+              "lectureId": "WOEK-G-BASE-048",
+              "title": "Wirkungsfonds, Versicherbarkeit und Risikobewertung",
+              "publicMasterPath": "grundstudium/base/v48-wirkungsfonds-versicherbarkeit-risikobewertung.md"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "G2.2",
-      "titel": "Wirkungsräume",
-      "studienabschnitt": "Teil 1 · Grundlagen"
+      "order": 6,
+      "title": "Wohlstand und Wirkungsökonomik",
+      "modules": [
+        {
+          "code": "G6.1",
+          "title": "Was Wohlstand wirklich ist",
+          "lectures": [
+            {
+              "code": "V49",
+              "lectureId": "WOEK-G-BASE-049",
+              "title": "Vom BIP zum Wirkungswohlstand – Wohlstand als mehrdimensionaler Zustand",
+              "publicMasterPath": "grundstudium/base/v49-wirkungswohlstand.md"
+            },
+            {
+              "code": "V50",
+              "lectureId": "WOEK-G-BASE-050",
+              "title": "Wirkungs-BIP als WÖk-Modell – Nutzen, Grenzen und Abgrenzung zum Nationalen Wohlfahrtsindex",
+              "publicMasterPath": "grundstudium/base/v50-wirkungs-bip-modell-und-grenzen.md"
+            },
+            {
+              "code": "V51",
+              "lectureId": "WOEK-G-BASE-051",
+              "title": "Krisen-BIP und Kosten der Schadensvermeidung – Aktivität, Verlust und Wiederherstellung trennen",
+              "publicMasterPath": "grundstudium/base/v51-krisen-bip-und-schadensvermeidung.md"
+            }
+          ]
+        },
+        {
+          "code": "G6.2",
+          "title": "Einkommen und Sicherung nach Wirkung",
+          "lectures": [
+            {
+              "code": "V52",
+              "lectureId": "WOEK-G-BASE-052",
+              "title": "Wirkungseinkommen – WÖk-Policy-Modell für gesellschaftlich relevante Leistung",
+              "publicMasterPath": "grundstudium/base/v52-wirkungseinkommen-policy-modell.md"
+            },
+            {
+              "code": "V53",
+              "lectureId": "WOEK-G-BASE-053",
+              "title": "Wirkungsrente und generationengerechte Sicherung – WÖk-Policy-Modell, kein bestehender Rentenanspruch",
+              "publicMasterPath": "grundstudium/base/v53-wirkungsrente-generationengerechte-sicherung.md"
+            },
+            {
+              "code": "V54",
+              "lectureId": "WOEK-G-BASE-054",
+              "title": "Arbeit, Wirkleistung und Verteilung – Wertschöpfung, Wirkung und Entlohnung auseinanderhalten",
+              "publicMasterPath": "grundstudium/base/v54-arbeit-wirkleistung-und-verteilung.md"
+            }
+          ]
+        },
+        {
+          "code": "G6.3",
+          "title": "Makro-Steuerung",
+          "lectures": [
+            {
+              "code": "V55",
+              "lectureId": "WOEK-G-BASE-055",
+              "title": "Wirkungsfinanzpolitik – Haushalt, Fiskalregeln und Outcome gemeinsam denken",
+              "publicMasterPath": "grundstudium/base/v55-wirkungsfinanzpolitik-policy-architektur.md"
+            },
+            {
+              "code": "V56",
+              "lectureId": "WOEK-G-BASE-056",
+              "title": "Geld, Kredit und Kapitallenkung – Mandate, Risiko und reale Investitionswirkung",
+              "publicMasterPath": "grundstudium/base/v56-geld-kredit-und-kapitallenkung.md"
+            },
+            {
+              "code": "V57",
+              "lectureId": "WOEK-G-BASE-057",
+              "title": "Wirkungsindikatoren für Volkswirtschaften: BIP, DNS, SDGs, Wohlfahrt und Resilienz",
+              "publicMasterPath": "grundstudium/base/v57-wirkungsindikatoren-volkswirtschaften.md"
+            }
+          ]
+        },
+        {
+          "code": "G6.4",
+          "title": "Zielkonflikte der Wohlstandsordnung",
+          "lectures": [
+            {
+              "code": "V58",
+              "lectureId": "WOEK-G-BASE-058",
+              "title": "Wachstum, Suffizienz und Wohlstand – empirische Fragen statt Lagerdenken",
+              "publicMasterPath": "grundstudium/base/v58-wachstum-suffizienz-wohlstand.md"
+            },
+            {
+              "code": "V59",
+              "lectureId": "WOEK-G-BASE-059",
+              "title": "Verteilungsgerechtigkeit und soziale Tragfähigkeit",
+              "publicMasterPath": "grundstudium/base/v59-verteilungsgerechtigkeit-soziale-tragfaehigkeit.md"
+            },
+            {
+              "code": "V60",
+              "lectureId": "WOEK-G-BASE-060",
+              "title": "Messgrenzen: Was sich nicht sinnvoll monetarisieren oder saldieren lässt",
+              "publicMasterPath": "grundstudium/base/v60-messgrenzen-und-monetarisierung.md"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "G2.3",
-      "titel": "Wirkmechanismen und Auslöser",
-      "studienabschnitt": "Teil 1 · Grundlagen"
+      "order": 7,
+      "title": "Resilienz und Systemstabilität",
+      "modules": [
+        {
+          "code": "G7.1",
+          "title": "Resilienz verstehen",
+          "lectures": [
+            {
+              "code": "V61",
+              "lectureId": "WOEK-G-BASE-061",
+              "title": "Resilienz verstehen: Robustheit, Redundanz, Diversität und Anpassungsfähigkeit",
+              "publicMasterPath": "grundstudium/base/v61-resilienz-grundbegriffe.md"
+            },
+            {
+              "code": "V62",
+              "lectureId": "WOEK-G-BASE-062",
+              "title": "Apparente, reaktive und aktive Leistung – eine Resilienz-Analogie mit klaren Grenzen",
+              "publicMasterPath": "grundstudium/base/v62-apparente-reaktive-aktive-leistung-resilienzanalogie.md"
+            },
+            {
+              "code": "V63",
+              "lectureId": "WOEK-G-BASE-063",
+              "title": "Kipppunkte, Schwellen und irreversible Schäden",
+              "publicMasterPath": "grundstudium/base/v63-kipppunkte-schwellen-irreversible-schaeden.md"
+            }
+          ]
+        },
+        {
+          "code": "G7.2",
+          "title": "Resiliente Wertschöpfung",
+          "lectures": [
+            {
+              "code": "V64",
+              "lectureId": "WOEK-G-BASE-064",
+              "title": "Kreislaufwirtschaft und regenerative Geschäftsmodelle – vom Materialkreislauf zur Systemwirkung",
+              "publicMasterPath": "grundstudium/base/v64-kreislaufwirtschaft-regenerative-geschaeftsmodelle.md"
+            },
+            {
+              "code": "V65",
+              "lectureId": "WOEK-G-BASE-065",
+              "title": "Lieferkettenresilienz und Abhängigkeitsrisiken",
+              "publicMasterPath": "grundstudium/base/v65-lieferkettenresilienz-abhaengigkeitsrisiken.md"
+            },
+            {
+              "code": "V66",
+              "lectureId": "WOEK-G-BASE-066",
+              "title": "Versorgungssicherheit als Wirkungswert – Lehren aus Krisen ohne Krisenfetisch",
+              "publicMasterPath": "grundstudium/base/v66-versorgungssicherheit-als-wirkungswert.md"
+            }
+          ]
+        },
+        {
+          "code": "G7.3",
+          "title": "Resilienz messen und steuern",
+          "lectures": [
+            {
+              "code": "V67",
+              "lectureId": "WOEK-G-BASE-067",
+              "title": "Resilienz in Scorecards integrieren – Kapazitäten, Schwellen und Erholungsfähigkeit",
+              "publicMasterPath": "grundstudium/base/v67-resilienz-in-scorecards.md"
+            },
+            {
+              "code": "V68",
+              "lectureId": "WOEK-G-BASE-068",
+              "title": "Präventionswert und Krisen-BIP: vermiedene Schäden richtig einordnen",
+              "publicMasterPath": "grundstudium/base/v68-praeventionswert-und-krisen-bip.md"
+            },
+            {
+              "code": "V69",
+              "lectureId": "WOEK-G-BASE-069",
+              "title": "Stresstests, Frühwarnung und Wirkungsradar",
+              "publicMasterPath": "grundstudium/base/v69-stresstests-fruehwarnung-wirkungsradar.md"
+            }
+          ]
+        },
+        {
+          "code": "G7.4",
+          "title": "Epistemische und demokratische Resilienz",
+          "lectures": [
+            {
+              "code": "V70",
+              "lectureId": "WOEK-G-BASE-070",
+              "title": "Öffentlichkeit als Infrastruktur: Information, Vertrauen und gesellschaftliche Korrekturfähigkeit",
+              "publicMasterPath": "grundstudium/base/v70-oeffentlichkeit-als-infrastruktur.md"
+            },
+            {
+              "code": "V71",
+              "lectureId": "WOEK-G-BASE-071",
+              "title": "Angriffe auf die Rückkopplung: Desinformation, Einschüchterung und institutionelle Erosion",
+              "publicMasterPath": "grundstudium/base/v71-angriffe-auf-rueckkopplung.md"
+            },
+            {
+              "code": "V72",
+              "lectureId": "WOEK-G-BASE-072",
+              "title": "Civic Shield: Resilienzdesign für Öffentlichkeit, Medien und digitale Räume",
+              "publicMasterPath": "grundstudium/base/v72-civic-shield-resilienzdesign.md"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "G2.4",
-      "titel": "Sprache, Unsicherheit und Kommunikation",
-      "studienabschnitt": "Teil 1 · Grundlagen"
+      "order": 8,
+      "title": "Anwendung in Feldern",
+      "modules": [
+        {
+          "code": "G8.1",
+          "title": "Produktwirkung",
+          "lectures": [
+            {
+              "code": "V73",
+              "lectureId": "WOEK-G-BASE-073",
+              "title": "Produkte als Wirkungsträger – vom Produktmerkmal zum Lebenszyklus-Outcomes",
+              "publicMasterPath": "grundstudium/base/v73-produkte-als-wirkungstraeger.md"
+            },
+            {
+              "code": "V74",
+              "lectureId": "WOEK-G-BASE-074",
+              "title": "Produktfallstudien: Apfel, T-Shirt, Strom und Haferdrink",
+              "publicMasterPath": "grundstudium/base/v74-produktfallstudien-apfel-shirt-strom-haferdrink.md"
+            },
+            {
+              "code": "V75",
+              "lectureId": "WOEK-G-BASE-075",
+              "title": "Digitale Produktpässe und Wirkung am Regal – Dateninfrastruktur statt Nachhaltigkeitssiegel",
+              "publicMasterPath": "grundstudium/base/v75-digitale-produktpaesse-wirkung-am-regal.md"
+            }
+          ]
+        },
+        {
+          "code": "G8.2",
+          "title": "Unternehmen und Lieferketten",
+          "lectures": [
+            {
+              "code": "V76",
+              "lectureId": "WOEK-G-BASE-076",
+              "title": "Unternehmen als Wirkungssysteme – Geschäftsmodell, Betrieb und Wertschöpfungskette",
+              "publicMasterPath": "grundstudium/base/v76-unternehmen-als-wirkungssysteme.md"
+            },
+            {
+              "code": "V77",
+              "lectureId": "WOEK-G-BASE-077",
+              "title": "Beschaffung und Lieferantenbewertung – Wirkung in Vergabe und Einkauf anschlussfähig machen",
+              "publicMasterPath": "grundstudium/base/v77-beschaffung-lieferantenbewertung.md"
+            },
+            {
+              "code": "V78",
+              "lectureId": "WOEK-G-BASE-078",
+              "title": "Wirkungscontrolling, ERM und Boni – Steuerung ohne KPI-Gaming",
+              "publicMasterPath": "grundstudium/base/v78-wirkungscontrolling-erm-boni.md"
+            }
+          ]
+        },
+        {
+          "code": "G8.3",
+          "title": "Daseinsfelder",
+          "lectures": [
+            {
+              "code": "V79",
+              "lectureId": "WOEK-G-BASE-079",
+              "title": "Gesundheit, Pflege und Prävention als Wirkungsräume",
+              "publicMasterPath": "grundstudium/base/v79-gesundheit-pflege-praevention-wirkungsraeume.md"
+            },
+            {
+              "code": "V80",
+              "lectureId": "WOEK-G-BASE-080",
+              "title": "Bildung und Wirkungskompetenz als Daseinsvorsorge",
+              "publicMasterPath": "grundstudium/base/v80-bildung-wirkungskompetenz-daseinsvorsorge.md"
+            },
+            {
+              "code": "V81",
+              "lectureId": "WOEK-G-BASE-081",
+              "title": "Wohnen, Landwirtschaft und regionale Wertschöpfung – ortsgebundene Wirkungsräume",
+              "publicMasterPath": "grundstudium/base/v81-wohnen-landwirtschaft-regionale-wertschoepfung.md"
+            }
+          ]
+        },
+        {
+          "code": "G8.4",
+          "title": "Politik, Medien und Alltag",
+          "lectures": [
+            {
+              "code": "V82",
+              "lectureId": "WOEK-G-BASE-082",
+              "title": "Politische Programme als Wirkungspotenziale – Mandat ist nicht Maßnahme",
+              "publicMasterPath": "grundstudium/base/v82-politische-programme-wirkungspotenziale.md"
+            },
+            {
+              "code": "V83",
+              "lectureId": "WOEK-G-BASE-083",
+              "title": "Medien- und Plattform-Scorecards: zwei Bewertungsebenen, keine Gesinnungsnote",
+              "publicMasterPath": "grundstudium/base/v83-medien-plattform-scorecards.md"
+            },
+            {
+              "code": "V84",
+              "lectureId": "WOEK-G-BASE-084",
+              "title": "Wirkung im Alltag ohne moralische Überforderung",
+              "publicMasterPath": "grundstudium/base/v84-wirkung-im-alltag-ohne-moralische-ueberforderung.md"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "G3.1",
-      "titel": "Referenzrahmen und rote Linien",
-      "studienabschnitt": "Teil 1 · Grundlagen"
+      "order": 9,
+      "title": "Transformation, Institutionen und globale Ordnung",
+      "modules": [
+        {
+          "code": "G9.1",
+          "title": "Institutionen und Regeln",
+          "lectures": [
+            {
+              "code": "V85",
+              "lectureId": "WOEK-G-BASE-085",
+              "title": "Institutionen und Regeln: Bestehende Governance vs. WÖk-Vorschläge",
+              "publicMasterPath": "grundstudium/base/v85-institutionen-und-woek-governance-vorschlaege.md"
+            },
+            {
+              "code": "V86",
+              "lectureId": "WOEK-G-BASE-086",
+              "title": "Rechtsschutz, Transparenz und demokratische Legitimation",
+              "publicMasterPath": "grundstudium/base/v86-rechtsschutz-transparenz-legitimation.md"
+            },
+            {
+              "code": "V87",
+              "lectureId": "WOEK-G-BASE-087",
+              "title": "Schutz vor Lobbyismus, Score-Gaming und Wirkungsmanipulation",
+              "publicMasterPath": "grundstudium/base/v87-lobbyismus-gaming-und-manipulationsschutz.md"
+            }
+          ]
+        },
+        {
+          "code": "G9.2",
+          "title": "Daten und Technologie",
+          "lectures": [
+            {
+              "code": "V88",
+              "lectureId": "WOEK-G-BASE-088",
+              "title": "Wirkungsdatenräume und Register: Interoperabilität statt Zentraldatenbank",
+              "publicMasterPath": "grundstudium/base/v88-wirkungsdatenraeume-register.md"
+            },
+            {
+              "code": "V89",
+              "lectureId": "WOEK-G-BASE-089",
+              "title": "Datenschutz, Cyberresilienz und digitale Souveränität",
+              "publicMasterPath": "grundstudium/base/v89-datenschutz-cyberresilienz-digitale-souveraenitaet.md"
+            },
+            {
+              "code": "V90",
+              "lectureId": "WOEK-G-BASE-090",
+              "title": "KI-gestützte Wirkungsmodelle und ihre Grenzen",
+              "publicMasterPath": "grundstudium/base/v90-ki-gestuetzte-wirkungsmodelle-grenzen.md"
+            }
+          ]
+        },
+        {
+          "code": "G9.3",
+          "title": "Globale Wirkungsordnung",
+          "lectures": [
+            {
+              "code": "V91",
+              "lectureId": "WOEK-G-BASE-091",
+              "title": "Importwirkung, Grenzausgleich und CBAM",
+              "publicMasterPath": "grundstudium/base/v91-importwirkung-grenzausgleich-cbam.md"
+            },
+            {
+              "code": "V92",
+              "lectureId": "WOEK-G-BASE-092",
+              "title": "Globale Fairness statt Wirkungsimperialismus",
+              "publicMasterPath": "grundstudium/base/v92-globale-fairness-statt-wirkungsimperialismus.md"
+            },
+            {
+              "code": "V93",
+              "lectureId": "WOEK-G-BASE-093",
+              "title": "Wirkungsklauseln in Handel, Kapital und Entwicklung",
+              "publicMasterPath": "grundstudium/base/v93-wirkungsklauseln-handel-kapital-entwicklung.md"
+            }
+          ]
+        },
+        {
+          "code": "G9.4",
+          "title": "Systeme gestalten",
+          "lectures": [
+            {
+              "code": "V94",
+              "lectureId": "WOEK-G-BASE-094",
+              "title": "Lange Wellen und „6. Kondratieff“: historische Hypothese, kein Wirkungsbeweis",
+              "publicMasterPath": "grundstudium/base/v94-lange-wellen-kondratieff-hypothese.md"
+            },
+            {
+              "code": "V95",
+              "lectureId": "WOEK-G-BASE-095",
+              "title": "Pilotprojekte, Sandboxes und Lernschleifen",
+              "publicMasterPath": "grundstudium/base/v95-piloten-sandboxes-lernregulierung.md"
+            },
+            {
+              "code": "V96",
+              "lectureId": "WOEK-G-BASE-096",
+              "title": "Wirkungsarchitektur entwerfen: Systemhebel, Rückkopplung und adaptive Governance",
+              "publicMasterPath": "grundstudium/base/v96-wirkungsarchitektur-entwerfen.md"
+            }
+          ]
+        }
+      ]
     },
     {
-      "id": "G3.2",
-      "titel": "Daten, Standards und Wirkungs-IDs",
-      "studienabschnitt": "Teil 1 · Grundlagen"
-    },
-    {
-      "id": "G3.3",
-      "titel": "Bewertungsprofile und Netto-Wirkung",
-      "studienabschnitt": "Teil 1 · Grundlagen"
-    },
-    {
-      "id": "G3.4",
-      "titel": "Nichtkompensation und Begründung",
-      "studienabschnitt": "Teil 1 · Grundlagen"
-    },
-    {
-      "id": "G4.1",
-      "titel": "Unternehmen, Produkte und Lieferketten",
-      "studienabschnitt": "Teil 2 · Wirkungsfelder"
-    },
-    {
-      "id": "G4.2",
-      "titel": "Staat, Recht und öffentliche Mittel",
-      "studienabschnitt": "Teil 2 · Wirkungsfelder"
-    },
-    {
-      "id": "G4.3",
-      "titel": "Arbeit, Soziales und Organisationen",
-      "studienabschnitt": "Teil 2 · Wirkungsfelder"
-    },
-    {
-      "id": "G4.4",
-      "titel": "Kapital, Investitionen und Finanzsystem",
-      "studienabschnitt": "Teil 2 · Wirkungsfelder"
-    },
-    {
-      "id": "G5.1",
-      "titel": "Planet, Energie und Ressourcen",
-      "studienabschnitt": "Teil 2 · Wirkungsfelder"
-    },
-    {
-      "id": "G5.2",
-      "titel": "Gesundheit, Wohnen und Alltag",
-      "studienabschnitt": "Teil 2 · Wirkungsfelder"
-    },
-    {
-      "id": "G5.3",
-      "titel": "Demokratie, Medien und Worte",
-      "studienabschnitt": "Teil 2 · Wirkungsfelder"
-    },
-    {
-      "id": "G5.4",
-      "titel": "Technologie, KI und Datenräume",
-      "studienabschnitt": "Teil 2 · Wirkungsfelder"
-    },
-    {
-      "id": "G6.1",
-      "titel": "WÖMM-Kompass und Managementlogik",
-      "studienabschnitt": "Teil 3 · WÖMM"
-    },
-    {
-      "id": "G6.2",
-      "titel": "Managementfelder Mensch, Planet und Demokratie",
-      "studienabschnitt": "Teil 3 · WÖMM"
-    },
-    {
-      "id": "G6.3",
-      "titel": "Wirkungsrad, Tore und Reifegrade",
-      "studienabschnitt": "Teil 3 · WÖMM"
-    },
-    {
-      "id": "G6.4",
-      "titel": "Steuerung, Governance und Assurance",
-      "studienabschnitt": "Teil 3 · WÖMM"
-    },
-    {
-      "id": "G7.1",
-      "titel": "Transformation und Realisierung",
-      "studienabschnitt": "Teil 3 · WÖMM"
-    },
-    {
-      "id": "G7.2",
-      "titel": "Organisation, Führung und Betriebssystem",
-      "studienabschnitt": "Teil 3 · WÖMM"
-    },
-    {
-      "id": "G7.3",
-      "titel": "Daten, Controlling und Lernen",
-      "studienabschnitt": "Teil 3 · WÖMM"
-    },
-    {
-      "id": "G7.4",
-      "titel": "Strategische Integration",
-      "studienabschnitt": "Teil 3 · WÖMM"
-    },
-    {
-      "id": "G8.1",
-      "titel": "WÖMM/WÖMS-Brücke",
-      "studienabschnitt": "Teil 4 · WÖMS-Orientierung"
-    },
-    {
-      "id": "G8.2",
-      "titel": "WÖMS-Karte und Canvas-Prinzip",
-      "studienabschnitt": "Teil 4 · WÖMS-Orientierung"
-    },
-    {
-      "id": "G8.3",
-      "titel": "Workshop-Journeys und Rollen",
-      "studienabschnitt": "Teil 4 · WÖMS-Orientierung"
-    },
-    {
-      "id": "G8.4",
-      "titel": "Qualität, Schutz und Nichtkompensation",
-      "studienabschnitt": "Teil 4 · WÖMS-Orientierung"
-    },
-    {
-      "id": "G9.1",
-      "titel": "Praxisprojekt vorbereiten",
-      "studienabschnitt": "Teil 5 · Praxisprojekt + Abschluss"
-    },
-    {
-      "id": "G9.2",
-      "titel": "Praxisprojekt durchführen",
-      "studienabschnitt": "Teil 5 · Praxisprojekt + Abschluss"
-    },
-    {
-      "id": "G9.3",
-      "titel": "Prüfung und Transfer",
-      "studienabschnitt": "Teil 5 · Praxisprojekt + Abschluss"
-    },
-    {
-      "id": "G9.4",
-      "titel": "Abschluss und Ausblick",
-      "studienabschnitt": "Teil 5 · Praxisprojekt + Abschluss"
+      "order": 10,
+      "title": "Praxisprojekt und Abschluss",
+      "modules": [
+        {
+          "code": "G10.1",
+          "title": "Projektfrage und Problem Review",
+          "lectures": [
+            {
+              "code": "V97",
+              "lectureId": "WOEK-G-BASE-097",
+              "title": "Praxisprojekt starten: Wirkungsfeld, Gegenstand, Quelle und Scope",
+              "publicMasterPath": "grundstudium/base/v97-praxisprojekt-wirkungsfeld-und-gegenstand.md"
+            },
+            {
+              "code": "V98",
+              "lectureId": "WOEK-G-BASE-098",
+              "title": "Praxisprojekt: Ausgangszustand, Problem Review und Gegenfaktum ohne Eingriff",
+              "publicMasterPath": "grundstudium/base/v98-praxisprojekt-problem-review-baseline.md"
+            },
+            {
+              "code": "V99",
+              "lectureId": "WOEK-G-BASE-099",
+              "title": "Praxisprojekt: Wirkungsfrage, Goal Review und prüfbarer Wirkpfad",
+              "publicMasterPath": "grundstudium/base/v99-praxisprojekt-wirkungsfrage-wirkpfad.md"
+            }
+          ]
+        },
+        {
+          "code": "G10.2",
+          "title": "Wirkungslogik und Daten",
+          "lectures": [
+            {
+              "code": "V100",
+              "lectureId": "WOEK-G-BASE-100",
+              "title": "Praxisprojekt: Indikatoren, Datenquellen und WÖk-IDs auswählen",
+              "publicMasterPath": "grundstudium/base/v100-praxisprojekt-indikatoren-datenquellen-ids.md"
+            },
+            {
+              "code": "V101",
+              "lectureId": "WOEK-G-BASE-101",
+              "title": "Praxisprojekt: Scorecard, Reverse Merit Order und Optionsvergleich anwenden",
+              "publicMasterPath": "grundstudium/base/v101-praxisprojekt-scorecard-und-optionsvergleich.md"
+            },
+            {
+              "code": "V102",
+              "lectureId": "WOEK-G-BASE-102",
+              "title": "Praxisprojekt: Risiko, Resilienz und Transformationshebel prüfen",
+              "publicMasterPath": "grundstudium/base/v102-praxisprojekt-risiko-resilienz-transformation.md"
+            }
+          ]
+        },
+        {
+          "code": "G10.3",
+          "title": "Bewertung, Optionen und Reflexion",
+          "lectures": [
+            {
+              "code": "V103",
+              "lectureId": "WOEK-G-BASE-103",
+              "title": "Praxisprojekt: Unsicherheit, Gegenpositionen und Kritik einarbeiten",
+              "publicMasterPath": "grundstudium/base/v103-praxisprojekt-unsicherheit-kritik.md"
+            },
+            {
+              "code": "V104",
+              "lectureId": "WOEK-G-BASE-104",
+              "title": "Praxisprojekt: soziale Tragfähigkeit und Missbrauchsschutz",
+              "publicMasterPath": "grundstudium/base/v104-praxisprojekt-soziale-tragfaehigkeit-missbrauchsschutz.md"
+            },
+            {
+              "code": "V105",
+              "lectureId": "WOEK-G-BASE-105",
+              "title": "Praxisprojekt: Iteration, Recommendation und Umsetzungsplan",
+              "publicMasterPath": "grundstudium/base/v105-praxisprojekt-iteration-umsetzungsplan.md"
+            }
+          ]
+        },
+        {
+          "code": "G10.4",
+          "title": "Abschlussarbeit, Reality Check und Transfer",
+          "lectures": [
+            {
+              "code": "V106",
+              "lectureId": "WOEK-G-BASE-106",
+              "title": "Praxisprojekt: Das Wirkungsdossier schreiben – reproduzierbar, prüfbar, versioniert",
+              "publicMasterPath": "grundstudium/base/v106-praxisprojekt-wirkungsdossier-schreiben.md"
+            },
+            {
+              "code": "V107",
+              "lectureId": "WOEK-G-BASE-107",
+              "title": "Praxisprojekt: Präsentation und Verteidigung – Quellen, Methode und Unsicherheit vertreten",
+              "publicMasterPath": "grundstudium/base/v107-praxisprojekt-praesentation-verteidigung.md"
+            },
+            {
+              "code": "V108",
+              "lectureId": "WOEK-G-BASE-108",
+              "title": "Transferplan und persönliche Wirkungskompetenz – professionell, revisionsfähig, lernend",
+              "publicMasterPath": "grundstudium/base/v108-transferplan-persoenliche-wirkungskompetenz.md"
+            }
+          ]
+        }
+      ]
     }
   ],
-  "lectures": [
-    {
-      "code": "V01",
-      "slug": "woek-g-v01",
-      "titel": "Die Maßstabskrise",
-      "lernziel": "Die Lernenden erkennen, warum Kapital-, Wachstums- und Effizienzmaßstäbe gesellschaftliche Zustandsveränderungen nur unvollständig abbilden.",
-      "modul": "G1.1",
-      "modulTitel": "Orientierung und Maßstabskrise",
-      "studienabschnitt": "Teil 1 · Grundlagen",
-      "status": "active",
-      "bautAuf": []
-    },
-    {
-      "code": "V02",
-      "slug": "woek-g-v02",
-      "titel": "Wirkung statt Kapital",
-      "lernziel": "Die Lernenden erklären Wirkung als tatsächliche Veränderung von Zuständen und unterscheiden sie von Geldwert, Absicht und Aktivität.",
-      "modul": "G1.1",
-      "modulTitel": "Orientierung und Maßstabskrise",
-      "studienabschnitt": "Teil 1 · Grundlagen",
-      "status": "active",
-      "bautAuf": [
-        "V01"
-      ]
-    },
-    {
-      "code": "V03",
-      "slug": "woek-g-v03",
-      "titel": "Die Wirkungsökonomie als neue Steuerungslogik",
-      "lernziel": "Die Lernenden beschreiben die Wirkungsökonomie als Ordnungs-, Bewertungs- und Steuerungsmodell für positive Netto-Wirkung.",
-      "modul": "G1.1",
-      "modulTitel": "Orientierung und Maßstabskrise",
-      "studienabschnitt": "Teil 1 · Grundlagen",
-      "status": "active",
-      "bautAuf": [
-        "V02"
-      ]
-    },
-    {
-      "code": "V04",
-      "slug": "woek-g-v04",
-      "titel": "Gewinn, Wachstum und Reichweite als unvollständige Erfolgsgrößen",
-      "lernziel": "Die Lernenden analysieren, warum Gewinn, Wachstum und Reichweite ohne Wirkungsprüfung fehlleiten können.",
-      "modul": "G1.2",
-      "modulTitel": "Leistung, Kapital und Zukunftsfähigkeit",
-      "studienabschnitt": "Teil 1 · Grundlagen",
-      "status": "active",
-      "bautAuf": [
-        "V03"
-      ]
-    },
-    {
-      "code": "V05",
-      "slug": "woek-g-v05",
-      "titel": "Wirkleistung, Scheinleistung, Blindleistung und Verlustleistung",
-      "lernziel": "Die Lernenden übertragen die Leistungslogik auf wirtschaftliche und gesellschaftliche Zustandsveränderungen.",
-      "modul": "G1.2",
-      "modulTitel": "Leistung, Kapital und Zukunftsfähigkeit",
-      "studienabschnitt": "Teil 1 · Grundlagen",
-      "status": "active",
-      "bautAuf": [
-        "V04"
-      ]
-    },
-    {
-      "code": "V06",
-      "slug": "woek-g-v06",
-      "titel": "Zukunftsfähigkeit, Risiko und Resilienz",
-      "lernziel": "Die Lernenden begründen Zukunftsfähigkeit als Fähigkeit, positive Wirkung unter Unsicherheit zu sichern.",
-      "modul": "G1.2",
-      "modulTitel": "Leistung, Kapital und Zukunftsfähigkeit",
-      "studienabschnitt": "Teil 1 · Grundlagen",
-      "status": "active",
-      "bautAuf": [
-        "V05"
-      ]
-    },
-    {
-      "code": "V07",
-      "slug": "woek-g-v07",
-      "titel": "Mensch als Wirkungsdimension",
-      "lernziel": "Die Lernenden erfassen Wohlbefinden, Teilhabe, Befähigung und Würde als zentrale Mensch-Dimension ohne Personenbewertung.",
-      "modul": "G1.3",
-      "modulTitel": "Mensch, Planet und Demokratie",
-      "studienabschnitt": "Teil 1 · Grundlagen",
-      "status": "active",
-      "bautAuf": [
-        "V06"
-      ]
-    },
-    {
-      "code": "V08",
-      "slug": "woek-g-v08",
-      "titel": "Planet als Wirkungsdimension",
-      "lernziel": "Die Lernenden ordnen Klima, Biodiversität, Ressourcen und Regeneration als planetare Wirkungsbedingungen ein.",
-      "modul": "G1.3",
-      "modulTitel": "Mensch, Planet und Demokratie",
-      "studienabschnitt": "Teil 1 · Grundlagen",
-      "status": "active",
-      "bautAuf": [
-        "V07"
-      ]
-    },
-    {
-      "code": "V09",
-      "slug": "woek-g-v09",
-      "titel": "Demokratie als Wirkungsdimension",
-      "lernziel": "Die Lernenden erklären Demokratie als Wirkungsraum für Teilhabe, Vertrauen, Rechtsstaat und Korrekturfähigkeit.",
-      "modul": "G1.3",
-      "modulTitel": "Mensch, Planet und Demokratie",
-      "studienabschnitt": "Teil 1 · Grundlagen",
-      "status": "active",
-      "bautAuf": [
-        "V08"
-      ]
-    },
-    {
-      "code": "V10",
-      "slug": "woek-g-v10",
-      "titel": "Wirkung ist nicht Absicht",
-      "lernziel": "Die Lernenden unterscheiden Absicht, Aktivität, Output, Outcome und tatsächliche Wirkung.",
-      "modul": "G1.4",
-      "modulTitel": "Grundbegriffe der Wirkung",
-      "studienabschnitt": "Teil 1 · Grundlagen",
-      "status": "active",
-      "bautAuf": [
-        "V09"
-      ]
-    },
-    {
-      "code": "V11",
-      "slug": "woek-g-v11",
-      "titel": "Positive, negative und neutrale Wirkung",
-      "lernziel": "Die Lernenden bewerten Wirkung relational am Referenzrahmen, ohne Wirkung moralisch zu verkürzen.",
-      "modul": "G1.4",
-      "modulTitel": "Grundbegriffe der Wirkung",
-      "studienabschnitt": "Teil 1 · Grundlagen",
-      "status": "active",
-      "bautAuf": [
-        "V10"
-      ]
-    },
-    {
-      "code": "V12",
-      "slug": "woek-g-v12",
-      "titel": "Wirkungsempfänger und Wirkungsräume",
-      "lernziel": "Die Lernenden identifizieren Betroffene, Wirkungsräume und Systemgrenzen einer Wirkungsaussage.",
-      "modul": "G1.4",
-      "modulTitel": "Grundbegriffe der Wirkung",
-      "studienabschnitt": "Teil 1 · Grundlagen",
-      "status": "active",
-      "bautAuf": [
-        "V11"
-      ]
-    },
-    {
-      "code": "V13",
-      "slug": "woek-g-v13",
-      "titel": "Vom Auslöser zum Wirkpfad",
-      "lernziel": "Die Lernenden unterscheiden Auslöser, Wirkstoff als didaktische Analogie, Wirkungspotenzial, Wirkungsrisiko, Wirkmechanismus und eingetretene Zustandsveränderung.",
-      "modul": "G2.1",
-      "modulTitel": "Wirkpfad, IOOI und Folgen",
-      "studienabschnitt": "Teil 1 · Grundlagen",
-      "status": "active",
-      "bautAuf": [
-        "V12"
-      ]
-    },
-    {
-      "code": "V14",
-      "slug": "woek-g-v14",
-      "titel": "IOOI, Theory of Change und Wirkungstreppe",
-      "lernziel": "Die Lernenden unterscheiden Input, Aktivität, Output, Outcome und Impact und ordnen IOOI, Theory of Change und Wirkungstreppe als Modelle für Wirkpfad und Annahmen ein.",
-      "modul": "G2.1",
-      "modulTitel": "Wirkpfad, IOOI und Folgen",
-      "studienabschnitt": "Teil 1 · Grundlagen",
-      "status": "active",
-      "bautAuf": [
-        "V13"
-      ]
-    },
-    {
-      "code": "V15",
-      "slug": "woek-g-v15",
-      "titel": "Evidenz, Attribution, Nebenwirkungen und Rebound",
-      "lernziel": "Die Lernenden unterscheiden Wirkungspotenzial, plausiblen Mechanismus und Wirkungsnachweis sowie Attribution, Nebenwirkungen, Wechselwirkungen, Rebound und Zielkonflikte.",
-      "modul": "G2.1",
-      "modulTitel": "Wirkpfad, IOOI und Folgen",
-      "studienabschnitt": "Teil 1 · Grundlagen",
-      "status": "active",
-      "bautAuf": [
-        "V14"
-      ]
-    },
-    {
-      "code": "V16",
-      "slug": "woek-g-v16",
-      "titel": "Märkte, Produkte und Lieferketten als Wirkungsräume",
-      "lernziel": "Die Lernenden analysieren Märkte, Produkte und Lieferketten als Orte realer Wirkung und Risikoverlagerung.",
-      "modul": "G2.2",
-      "modulTitel": "Wirkungsräume",
-      "studienabschnitt": "Teil 1 · Grundlagen",
-      "status": "active",
-      "bautAuf": [
-        "V15"
-      ]
-    },
-    {
-      "code": "V17",
-      "slug": "woek-g-v17",
-      "titel": "Medien, Sprache und Öffentlichkeit als Wirkungsräume",
-      "lernziel": "Die Lernenden erklären Öffentlichkeit als Resonanzraum, in dem Sprache Wirkungspotenzial und Wirkungsrisiko erzeugt.",
-      "modul": "G2.2",
-      "modulTitel": "Wirkungsräume",
-      "studienabschnitt": "Teil 1 · Grundlagen",
-      "status": "active",
-      "bautAuf": [
-        "V16"
-      ]
-    },
-    {
-      "code": "V18",
-      "slug": "woek-g-v18",
-      "titel": "Zeit, Generationen und unsichtbare Betroffene",
-      "lernziel": "Die Lernenden beziehen verzögerte, generationelle und unsichtbare Wirkungen in Bewertungen ein.",
-      "modul": "G2.2",
-      "modulTitel": "Wirkungsräume",
-      "studienabschnitt": "Teil 1 · Grundlagen",
-      "status": "active",
-      "bautAuf": [
-        "V17"
-      ]
-    },
-    {
-      "code": "V19",
-      "slug": "woek-g-v19",
-      "titel": "Wirkstoff, Wirkmechanismus und Wirkungspotenzial",
-      "lernziel": "Die Lernenden nutzen Wirkstoff nur als Analogie und unterscheiden Potenzial von belegter Wirkung.",
-      "modul": "G2.3",
-      "modulTitel": "Wirkmechanismen und Auslöser",
-      "studienabschnitt": "Teil 1 · Grundlagen",
-      "status": "active",
-      "bautAuf": [
-        "V18"
-      ]
-    },
-    {
-      "code": "V20",
-      "slug": "woek-g-v20",
-      "titel": "Gesellschaftliche Resonanzfaktoren",
-      "lernziel": "Die Lernenden beschreiben, wie Vertrauen, Angst, Zugehörigkeit und Macht Wirkpfade verstärken oder blockieren.",
-      "modul": "G2.3",
-      "modulTitel": "Wirkmechanismen und Auslöser",
-      "studienabschnitt": "Teil 1 · Grundlagen",
-      "status": "active",
-      "bautAuf": [
-        "V19"
-      ]
-    },
-    {
-      "code": "V21",
-      "slug": "woek-g-v21",
-      "titel": "Produkte, Technologien und Institutionen als Auslöser",
-      "lernziel": "Die Lernenden lesen Produkte, Technologien und Institutionen als Auslöser von Wirkpfaden, nicht als neutrale Objekte.",
-      "modul": "G2.3",
-      "modulTitel": "Wirkmechanismen und Auslöser",
-      "studienabschnitt": "Teil 1 · Grundlagen",
-      "status": "active",
-      "bautAuf": [
-        "V20"
-      ]
-    },
-    {
-      "code": "V22",
-      "slug": "woek-g-v22",
-      "titel": "Wirkungssprache und Quellenklarheit",
-      "lernziel": "Die Lernenden formulieren Wirkungsaussagen mit Quelle, Wirkpfad, Evidenzstatus und Unsicherheit.",
-      "modul": "G2.4",
-      "modulTitel": "Sprache, Unsicherheit und Kommunikation",
-      "studienabschnitt": "Teil 1 · Grundlagen",
-      "status": "active",
-      "bautAuf": [
-        "V21"
-      ]
-    },
-    {
-      "code": "V23",
-      "slug": "woek-g-v23",
-      "titel": "Unsicherheit, Ambivalenz und transparente Bewertung",
-      "lernziel": "Die Lernenden machen Unsicherheit und Ambivalenz entscheidungsfähig, ohne sie wegzumitteln.",
-      "modul": "G2.4",
-      "modulTitel": "Sprache, Unsicherheit und Kommunikation",
-      "studienabschnitt": "Teil 1 · Grundlagen",
-      "status": "active",
-      "bautAuf": [
-        "V22"
-      ]
-    },
-    {
-      "code": "V24",
-      "slug": "woek-g-v24",
-      "titel": "Deeskalierende und demokratiestärkende Kommunikation",
-      "lernziel": "Die Lernenden unterscheiden wirkungsorientierte Sprache von Sprachpolizei und Manipulation.",
-      "modul": "G2.4",
-      "modulTitel": "Sprache, Unsicherheit und Kommunikation",
-      "studienabschnitt": "Teil 1 · Grundlagen",
-      "status": "active",
-      "bautAuf": [
-        "V23"
-      ]
-    },
-    {
-      "code": "V25",
-      "slug": "woek-g-v25",
-      "titel": "SDGs und Agenda 2030 als globaler Konsens der 193 Staaten",
-      "lernziel": "Die Lernenden nutzen SDGs und Agenda 2030 als internationalen Mindestreferenzrahmen.",
-      "modul": "G3.1",
-      "modulTitel": "Referenzrahmen und rote Linien",
-      "studienabschnitt": "Teil 1 · Grundlagen",
-      "status": "active",
-      "bautAuf": [
-        "V24"
-      ]
-    },
-    {
-      "code": "V26",
-      "slug": "woek-g-v26",
-      "titel": "SDG+: Warum die SDGs für offene Gesellschaften nicht reichen",
-      "lernziel": "Die Lernenden erklären SDG+ als Ergänzung für Demokratie, Rechtsstaat, Medien und digitale Machtfragen.",
-      "modul": "G3.1",
-      "modulTitel": "Referenzrahmen und rote Linien",
-      "studienabschnitt": "Teil 1 · Grundlagen",
-      "status": "active",
-      "bautAuf": [
-        "V25"
-      ]
-    },
-    {
-      "code": "V27",
-      "slug": "woek-g-v27",
-      "titel": "Kernfelder, Wirkungsgrenzen und rote Linien",
-      "lernziel": "Die Lernenden unterscheiden Bewertungsfelder, harte Wirkungsgrenzen und unverhandelbare Schutzregeln.",
-      "modul": "G3.1",
-      "modulTitel": "Referenzrahmen und rote Linien",
-      "studienabschnitt": "Teil 1 · Grundlagen",
-      "status": "active",
-      "bautAuf": [
-        "V26"
-      ]
-    },
-    {
-      "code": "V28",
-      "slug": "woek-g-v28",
-      "titel": "Regulatorische Referenzrahmen im Überblick",
-      "lernziel": "Die Lernenden ordnen CSRD, ESRS, GRI, EU-Taxonomie, NACE und DPP auf Überblickstiefe ein.",
-      "modul": "G3.2",
-      "modulTitel": "Daten, Standards und Wirkungs-IDs",
-      "studienabschnitt": "Teil 1 · Grundlagen",
-      "status": "active",
-      "bautAuf": [
-        "V27"
-      ]
-    },
-    {
-      "code": "V29",
-      "slug": "woek-g-v29",
-      "titel": "WÖk-IDs, Benchmarks und Archetypen",
-      "lernziel": "Die Lernenden erklären, wie WÖk-IDs, Benchmarks und Archetypen Wirkung vergleichbar machen.",
-      "modul": "G3.2",
-      "modulTitel": "Daten, Standards und Wirkungs-IDs",
-      "studienabschnitt": "Teil 1 · Grundlagen",
-      "status": "active",
-      "bautAuf": [
-        "V28"
-      ]
-    },
-    {
-      "code": "V30",
-      "slug": "woek-g-v30",
-      "titel": "Datenqualität, Audit und Unsicherheit",
-      "lernziel": "Die Lernenden prüfen Datenqualität, Auditierbarkeit und Unsicherheit als Bedingungen belastbarer Bewertung.",
-      "modul": "G3.2",
-      "modulTitel": "Daten, Standards und Wirkungs-IDs",
-      "studienabschnitt": "Teil 1 · Grundlagen",
-      "status": "active",
-      "bautAuf": [
-        "V29"
-      ]
-    },
-    {
-      "code": "V31",
-      "slug": "woek-g-v31",
-      "titel": "Von Einzelwirkung zu Netto-Wirkung",
-      "lernziel": "Die Lernenden führen Einzelwirkungen zu einer begründeten Netto-Wirkungsbetrachtung zusammen.",
-      "modul": "G3.3",
-      "modulTitel": "Bewertungsprofile und Netto-Wirkung",
-      "studienabschnitt": "Teil 1 · Grundlagen",
-      "status": "active",
-      "bautAuf": [
-        "V30"
-      ]
-    },
-    {
-      "code": "V32",
-      "slug": "woek-g-v32",
-      "titel": "Scorecards und Bewertungsprofile",
-      "lernziel": "Die Lernenden lesen Scorecards als Wirkungsprofile mit Dimensionen, Grenzen und Evidenzstatus.",
-      "modul": "G3.3",
-      "modulTitel": "Bewertungsprofile und Netto-Wirkung",
-      "studienabschnitt": "Teil 1 · Grundlagen",
-      "status": "active",
-      "bautAuf": [
-        "V31"
-      ]
-    },
-    {
-      "code": "V33",
-      "slug": "woek-g-v33",
-      "titel": "NWI und T-SROI unterscheiden",
-      "lernziel": "Die Lernenden trennen Netto-Wirkungs-Index und Transformations-SROI nach Zweck und Aussagegrenze.",
-      "modul": "G3.3",
-      "modulTitel": "Bewertungsprofile und Netto-Wirkung",
-      "studienabschnitt": "Teil 1 · Grundlagen",
-      "status": "active",
-      "bautAuf": [
-        "V32"
-      ]
-    },
-    {
-      "code": "V34",
-      "slug": "woek-g-v34",
-      "titel": "Reverse Merit Order",
-      "lernziel": "Die Lernenden erklären Reverse Merit Order als Priorisierungslogik für Engpässe und negative Wirkung.",
-      "modul": "G3.4",
-      "modulTitel": "Nichtkompensation und Begründung",
-      "studienabschnitt": "Teil 1 · Grundlagen",
-      "status": "active",
-      "bautAuf": [
-        "V33"
-      ]
-    },
-    {
-      "code": "V35",
-      "slug": "woek-g-v35",
-      "titel": "Nichtkompensation gegen Greenwashing",
-      "lernziel": "Die Lernenden begründen, warum Grenzverletzungen nicht durch positive Einzelwerte kompensiert werden dürfen.",
-      "modul": "G3.4",
-      "modulTitel": "Nichtkompensation und Begründung",
-      "studienabschnitt": "Teil 1 · Grundlagen",
-      "status": "active",
-      "bautAuf": [
-        "V34"
-      ]
-    },
-    {
-      "code": "V36",
-      "slug": "woek-g-v36",
-      "titel": "Bewertungsprofile lesen und begründen",
-      "lernziel": "Die Lernenden begründen eine Wirkungsbewertung transparent und markieren offene Fragen.",
-      "modul": "G3.4",
-      "modulTitel": "Nichtkompensation und Begründung",
-      "studienabschnitt": "Teil 1 · Grundlagen",
-      "status": "active",
-      "bautAuf": [
-        "V35"
-      ]
-    },
-    {
-      "code": "V37",
-      "slug": "woek-g-v37",
-      "titel": "Unternehmen als Wirkungssysteme",
-      "lernziel": "Die Lernenden analysieren Unternehmen als Systeme aus Geschäftsmodell, Organisation, Kapital, Daten und Wirkung.",
-      "modul": "G4.1",
-      "modulTitel": "Unternehmen, Produkte und Lieferketten",
-      "studienabschnitt": "Teil 2 · Wirkungsfelder",
-      "status": "planned",
-      "bautAuf": [
-        "V36"
-      ]
-    },
-    {
-      "code": "V38",
-      "slug": "woek-g-v38",
-      "titel": "Produkte als Wirkungsträger",
-      "lernziel": "Die Lernenden bewerten Produkte über Lebenszyklus, Nutzung, Zugang, Reparierbarkeit und Folgekosten.",
-      "modul": "G4.1",
-      "modulTitel": "Unternehmen, Produkte und Lieferketten",
-      "studienabschnitt": "Teil 2 · Wirkungsfelder",
-      "status": "planned",
-      "bautAuf": [
-        "V37"
-      ]
-    },
-    {
-      "code": "V39",
-      "slug": "woek-g-v39",
-      "titel": "Lieferkettenwirkung und ausgelagerte Risiken",
-      "lernziel": "Die Lernenden erkennen Verlagerung von Kosten, Risiken und Verantwortung entlang von Lieferketten.",
-      "modul": "G4.1",
-      "modulTitel": "Unternehmen, Produkte und Lieferketten",
-      "studienabschnitt": "Teil 2 · Wirkungsfelder",
-      "status": "planned",
-      "bautAuf": [
-        "V38"
-      ]
-    },
-    {
-      "code": "V40",
-      "slug": "woek-g-v40",
-      "titel": "Wirkungsinnovation und Geschäftsmodelle",
-      "lernziel": "Die Lernenden unterscheiden Innovation mit Wirkung von bloßer Neuheit oder Effizienzsteigerung.",
-      "modul": "G4.1",
-      "modulTitel": "Unternehmen, Produkte und Lieferketten",
-      "studienabschnitt": "Teil 2 · Wirkungsfelder",
-      "status": "planned",
-      "bautAuf": [
-        "V39"
-      ]
-    },
-    {
-      "code": "V41",
-      "slug": "woek-g-v41",
-      "titel": "Staat als Wirkungsarchitekt",
-      "lernziel": "Die Lernenden beschreiben staatliche Regeln, Budgets und Verfahren als Architektur von Wirkungsräumen.",
-      "modul": "G4.2",
-      "modulTitel": "Staat, Recht und öffentliche Mittel",
-      "studienabschnitt": "Teil 2 · Wirkungsfelder",
-      "status": "planned",
-      "bautAuf": [
-        "V40"
-      ]
-    },
-    {
-      "code": "V42",
-      "slug": "woek-g-v42",
-      "titel": "Recht als Wirkungsrahmen",
-      "lernziel": "Die Lernenden erklären Recht als Schutz-, Begrenzungs- und Ermöglichungsstruktur für Wirkung.",
-      "modul": "G4.2",
-      "modulTitel": "Staat, Recht und öffentliche Mittel",
-      "studienabschnitt": "Teil 2 · Wirkungsfelder",
-      "status": "planned",
-      "bautAuf": [
-        "V41"
-      ]
-    },
-    {
-      "code": "V43",
-      "slug": "woek-g-v43",
-      "titel": "Öffentliche Mittel und Wirkungshaushalt",
-      "lernziel": "Die Lernenden ordnen öffentliche Mittel nach Wirkung, Prävention, Folgekosten und Rückkopplung.",
-      "modul": "G4.2",
-      "modulTitel": "Staat, Recht und öffentliche Mittel",
-      "studienabschnitt": "Teil 2 · Wirkungsfelder",
-      "status": "planned",
-      "bautAuf": [
-        "V42"
-      ]
-    },
-    {
-      "code": "V44",
-      "slug": "woek-g-v44",
-      "titel": "Beschaffung, Förderung und Governance",
-      "lernziel": "Die Lernenden prüfen Beschaffung und Förderlogik als zentrale Hebel öffentlicher Wirkung.",
-      "modul": "G4.2",
-      "modulTitel": "Staat, Recht und öffentliche Mittel",
-      "studienabschnitt": "Teil 2 · Wirkungsfelder",
-      "status": "planned",
-      "bautAuf": [
-        "V43"
-      ]
-    },
-    {
-      "code": "V45",
-      "slug": "woek-g-v45",
-      "titel": "Arbeit, Sinn und Befähigung",
-      "lernziel": "Die Lernenden analysieren Arbeit als Wirkungsfeld für Einkommen, Sinn, Gesundheit und Teilhabe.",
-      "modul": "G4.3",
-      "modulTitel": "Arbeit, Soziales und Organisationen",
-      "studienabschnitt": "Teil 2 · Wirkungsfelder",
-      "status": "planned",
-      "bautAuf": [
-        "V44"
-      ]
-    },
-    {
-      "code": "V46",
-      "slug": "woek-g-v46",
-      "titel": "Organisation, Führung und psychologische Sicherheit",
-      "lernziel": "Die Lernenden erklären, wie Führung und Organisationskultur Wirkungsfähigkeit ermöglichen oder blockieren.",
-      "modul": "G4.3",
-      "modulTitel": "Arbeit, Soziales und Organisationen",
-      "studienabschnitt": "Teil 2 · Wirkungsfelder",
-      "status": "planned",
-      "bautAuf": [
-        "V45"
-      ]
-    },
-    {
-      "code": "V47",
-      "slug": "woek-g-v47",
-      "titel": "Stranded Assets, Transitionsrisiko und Refinanzierungsresilienz",
-      "lernziel": "Die Lernenden verstehen, wie das Finanzsystem Vermögenswerte neu bewertet und Wirkungsrisiko zu Kapitalrisiko wird.",
-      "modul": "G4.4",
-      "modulTitel": "Kapital, Investitionen und Finanzsystem",
-      "studienabschnitt": "Teil 2 · Wirkungsfelder",
-      "status": "planned",
-      "bautAuf": [
-        "V46",
-        "V33",
-        "V34"
-      ]
-    },
-    {
-      "code": "V48",
-      "slug": "woek-g-v48",
-      "titel": "Finanzsystem, Kapitalwirkung und Versicherbarkeit",
-      "lernziel": "Die Lernenden analysieren Kapitalströme, Risikomodelle und Versicherbarkeit als Wirkungshebel.",
-      "modul": "G4.4",
-      "modulTitel": "Kapital, Investitionen und Finanzsystem",
-      "studienabschnitt": "Teil 2 · Wirkungsfelder",
-      "status": "planned",
-      "bautAuf": [
-        "V47"
-      ]
-    },
-    {
-      "code": "V49",
-      "slug": "woek-g-v49",
-      "titel": "BIP, Wohlstand und Wirkung zusammen denken",
-      "lernziel": "Die Lernenden straffen die BIP-Kritik zu einer positiven Wohlstands- und Wirkungslogik.",
-      "modul": "G4.4",
-      "modulTitel": "Kapital, Investitionen und Finanzsystem",
-      "studienabschnitt": "Teil 2 · Wirkungsfelder",
-      "status": "planned",
-      "bautAuf": [
-        "V48",
-        "V33",
-        "V47"
-      ]
-    },
-    {
-      "code": "V50",
-      "slug": "woek-g-v50",
-      "titel": "Produktivität, Lebensqualität und öffentliche Stabilität",
-      "lernziel": "Die Lernenden unterscheiden produktive Leistung von Kostenverlagerung und kurzfristigem Scheinwachstum.",
-      "modul": "G4.4",
-      "modulTitel": "Kapital, Investitionen und Finanzsystem",
-      "studienabschnitt": "Teil 2 · Wirkungsfelder",
-      "status": "planned",
-      "bautAuf": [
-        "V49"
-      ]
-    },
-    {
-      "code": "V51",
-      "slug": "woek-g-v51",
-      "titel": "Klima, Energie und Ressourcengrenzen",
-      "lernziel": "Die Lernenden erklären Klima, Energie und Ressourcen als gekoppelte Wirkungsbedingungen.",
-      "modul": "G5.1",
-      "modulTitel": "Planet, Energie und Ressourcen",
-      "studienabschnitt": "Teil 2 · Wirkungsfelder",
-      "status": "planned",
-      "bautAuf": [
-        "V50"
-      ]
-    },
-    {
-      "code": "V52",
-      "slug": "woek-g-v52",
-      "titel": "Biodiversität, Landnutzung und Regeneration",
-      "lernziel": "Die Lernenden ordnen Biodiversität und Regeneration als Grundlage langfristiger Wirkung ein.",
-      "modul": "G5.1",
-      "modulTitel": "Planet, Energie und Ressourcen",
-      "studienabschnitt": "Teil 2 · Wirkungsfelder",
-      "status": "planned",
-      "bautAuf": [
-        "V51"
-      ]
-    },
-    {
-      "code": "V53",
-      "slug": "woek-g-v53",
-      "titel": "Kreislaufwirtschaft und Produktverantwortung",
-      "lernziel": "Die Lernenden bewerten Kreislaufwirtschaft entlang von Materialflüssen, Nutzungsdauer und Rücknahme.",
-      "modul": "G5.1",
-      "modulTitel": "Planet, Energie und Ressourcen",
-      "studienabschnitt": "Teil 2 · Wirkungsfelder",
-      "status": "planned",
-      "bautAuf": [
-        "V52"
-      ]
-    },
-    {
-      "code": "V54",
-      "slug": "woek-g-v54",
-      "titel": "Resilienz gegen Schocks und Kipppunkte",
-      "lernziel": "Die Lernenden erkennen Kipppunkte, Abhängigkeiten und Resilienzpfade in planetaren Systemen.",
-      "modul": "G5.1",
-      "modulTitel": "Planet, Energie und Ressourcen",
-      "studienabschnitt": "Teil 2 · Wirkungsfelder",
-      "status": "planned",
-      "bautAuf": [
-        "V53"
-      ]
-    },
-    {
-      "code": "V55",
-      "slug": "woek-g-v55",
-      "titel": "Gesundheit als Wirkungsfeld",
-      "lernziel": "Die Lernenden betrachten Gesundheit als gesellschaftliche Zustandsveränderung ohne Heilversprechen.",
-      "modul": "G5.2",
-      "modulTitel": "Gesundheit, Wohnen und Alltag",
-      "studienabschnitt": "Teil 2 · Wirkungsfelder",
-      "status": "planned",
-      "bautAuf": [
-        "V54"
-      ]
-    },
-    {
-      "code": "V56",
-      "slug": "woek-g-v56",
-      "titel": "Wohnen, Stadt und Daseinsvorsorge",
-      "lernziel": "Die Lernenden analysieren Wohnen, Infrastruktur und Stadtentwicklung als Wirkungsräume des Alltags.",
-      "modul": "G5.2",
-      "modulTitel": "Gesundheit, Wohnen und Alltag",
-      "studienabschnitt": "Teil 2 · Wirkungsfelder",
-      "status": "planned",
-      "bautAuf": [
-        "V55"
-      ]
-    },
-    {
-      "code": "V57",
-      "slug": "woek-g-v57",
-      "titel": "Rente, Sozialsysteme und Generationenvertrag",
-      "lernziel": "Die Lernenden ordnen Sozialsysteme nach Wirkung, Verteilung, Finanzierung und Generationengerechtigkeit ein.",
-      "modul": "G5.2",
-      "modulTitel": "Gesundheit, Wohnen und Alltag",
-      "studienabschnitt": "Teil 2 · Wirkungsfelder",
-      "status": "planned",
-      "bautAuf": [
-        "V56"
-      ]
-    },
-    {
-      "code": "V58",
-      "slug": "woek-g-v58",
-      "titel": "Wirkung von Worten, Narrativen und Frames",
-      "lernziel": "Die Lernenden erklären, wie Worte und Narrative Wirkungspotenzial, Resonanz und demokratische Risiken erzeugen.",
-      "modul": "G5.3",
-      "modulTitel": "Demokratie, Medien und Worte",
-      "studienabschnitt": "Teil 2 · Wirkungsfelder",
-      "status": "planned",
-      "bautAuf": [
-        "V57",
-        "V17",
-        "V22",
-        "V24"
-      ]
-    },
-    {
-      "code": "V59",
-      "slug": "woek-g-v59",
-      "titel": "Desinformation, Vertrauen und demokratische Resilienz",
-      "lernziel": "Die Lernenden prüfen Desinformation als Wirkungsrisiko für Vertrauen, Öffentlichkeit und Institutionen.",
-      "modul": "G5.3",
-      "modulTitel": "Demokratie, Medien und Worte",
-      "studienabschnitt": "Teil 2 · Wirkungsfelder",
-      "status": "planned",
-      "bautAuf": [
-        "V58"
-      ]
-    },
-    {
-      "code": "V60",
-      "slug": "woek-g-v60",
-      "titel": "Medienökonomie, Plattformen und Aufmerksamkeit",
-      "lernziel": "Die Lernenden unterscheiden Reichweite, Aufmerksamkeit, Resonanz und tatsächliche demokratische Wirkung.",
-      "modul": "G5.3",
-      "modulTitel": "Demokratie, Medien und Worte",
-      "studienabschnitt": "Teil 2 · Wirkungsfelder",
-      "status": "planned",
-      "bautAuf": [
-        "V59"
-      ]
-    },
-    {
-      "code": "V61",
-      "slug": "woek-g-v61",
-      "titel": "KI, Automatisierung und Datenmacht",
-      "lernziel": "Die Lernenden analysieren KI und Automatisierung nach Nutzen, Abhängigkeit, Kontrolle und Nebenwirkungen.",
-      "modul": "G5.4",
-      "modulTitel": "Technologie, KI und Datenräume",
-      "studienabschnitt": "Teil 2 · Wirkungsfelder",
-      "status": "planned",
-      "bautAuf": [
-        "V60"
-      ]
-    },
-    {
-      "code": "V62",
-      "slug": "woek-g-v62",
-      "titel": "Digitale Produktpässe und Wirkungsdatenräume",
-      "lernziel": "Die Lernenden erklären Datenräume und Produktpässe als Infrastruktur für Wirkungsprüfung.",
-      "modul": "G5.4",
-      "modulTitel": "Technologie, KI und Datenräume",
-      "studienabschnitt": "Teil 2 · Wirkungsfelder",
-      "status": "planned",
-      "bautAuf": [
-        "V61"
-      ]
-    },
-    {
-      "code": "V63",
-      "slug": "woek-g-v63",
-      "titel": "Technologische Souveränität und Lock-in",
-      "lernziel": "Die Lernenden erkennen Lock-in, Abhängigkeit und Souveränität als Wirkungsrisiken digitaler Systeme.",
-      "modul": "G5.4",
-      "modulTitel": "Technologie, KI und Datenräume",
-      "studienabschnitt": "Teil 2 · Wirkungsfelder",
-      "status": "planned",
-      "bautAuf": [
-        "V62"
-      ]
-    },
-    {
-      "code": "V64",
-      "slug": "woek-g-v64",
-      "titel": "Wirkungsfelder verbinden: Interdependenzen statt Silos",
-      "lernziel": "Die Lernenden verbinden Wirkungsfelder über Interdependenzen, Zielkonflikte und gemeinsame Engpässe.",
-      "modul": "G5.4",
-      "modulTitel": "Technologie, KI und Datenräume",
-      "studienabschnitt": "Teil 2 · Wirkungsfelder",
-      "status": "planned",
-      "bautAuf": [
-        "V63"
-      ]
-    },
-    {
-      "code": "V65",
-      "slug": "woek-g-v65",
-      "titel": "WÖMM 2.0: Kompass und Managementverständnis",
-      "lernziel": "Die Lernenden verstehen das WÖMM als Managementmodell zur Orientierung an Mensch, Planet und Demokratie.",
-      "modul": "G6.1",
-      "modulTitel": "WÖMM-Kompass und Managementlogik",
-      "studienabschnitt": "Teil 3 · WÖMM",
-      "status": "planned",
-      "bautAuf": [
-        "V64",
-        "V36"
-      ]
-    },
-    {
-      "code": "V66",
-      "slug": "woek-g-v66",
-      "titel": "Vom alten Modell zum Wirkungskompass",
-      "lernziel": "Die Lernenden kontrastieren KPI-, Effizienz- und Wachstumslogiken mit wirkungsorientierter Steuerung.",
-      "modul": "G6.1",
-      "modulTitel": "WÖMM-Kompass und Managementlogik",
-      "studienabschnitt": "Teil 3 · WÖMM",
-      "status": "planned",
-      "bautAuf": [
-        "V65"
-      ]
-    },
-    {
-      "code": "V67",
-      "slug": "woek-g-v67",
-      "titel": "Managementfelder im Überblick",
-      "lernziel": "Die Lernenden benennen die Managementfelder des WÖMM und ihre Aufgabe im Gesamtsystem.",
-      "modul": "G6.2",
-      "modulTitel": "Managementfelder Mensch, Planet und Demokratie",
-      "studienabschnitt": "Teil 3 · WÖMM",
-      "status": "planned",
-      "bautAuf": [
-        "V66"
-      ]
-    },
-    {
-      "code": "V68",
-      "slug": "woek-g-v68",
-      "titel": "Mensch, Planet und Demokratie als Führungszentrum",
-      "lernziel": "Die Lernenden erklären, warum das WÖMM Wirkung in den Mittelpunkt der Führung stellt.",
-      "modul": "G6.2",
-      "modulTitel": "Managementfelder Mensch, Planet und Demokratie",
-      "studienabschnitt": "Teil 3 · WÖMM",
-      "status": "planned",
-      "bautAuf": [
-        "V67"
-      ]
-    },
-    {
-      "code": "V69",
-      "slug": "woek-g-v69",
-      "titel": "Das Wirkungsrad im Management",
-      "lernziel": "Die Lernenden nutzen das Wirkungsrad als Orientierungsbild für Wirkpfade, Grenzen und Rückkopplung.",
-      "modul": "G6.3",
-      "modulTitel": "Wirkungsrad, Tore und Reifegrade",
-      "studienabschnitt": "Teil 3 · WÖMM",
-      "status": "planned",
-      "bautAuf": [
-        "V68"
-      ]
-    },
-    {
-      "code": "V70",
-      "slug": "woek-g-v70",
-      "titel": "Entscheidungstore und Wirkungsgrenzen",
-      "lernziel": "Die Lernenden ordnen Managemententscheidungen nach Toren, Grenzen und Nichtkompensation.",
-      "modul": "G6.3",
-      "modulTitel": "Wirkungsrad, Tore und Reifegrade",
-      "studienabschnitt": "Teil 3 · WÖMM",
-      "status": "planned",
-      "bautAuf": [
-        "V69"
-      ]
-    },
-    {
-      "code": "V71",
-      "slug": "woek-g-v71",
-      "titel": "Reifegrade und Fähigkeit zur Wirkung",
-      "lernziel": "Die Lernenden beschreiben Reifegrade als Entwicklungslogik für Organisationen ohne Scheingenauigkeit.",
-      "modul": "G6.3",
-      "modulTitel": "Wirkungsrad, Tore und Reifegrade",
-      "studienabschnitt": "Teil 3 · WÖMM",
-      "status": "planned",
-      "bautAuf": [
-        "V70"
-      ]
-    },
-    {
-      "code": "V72",
-      "slug": "woek-g-v72",
-      "titel": "Assurance, Review und Korrekturfähigkeit",
-      "lernziel": "Die Lernenden erklären Assurance und Review als Schutz gegen Behauptung, Simulation und blinde Flecken.",
-      "modul": "G6.4",
-      "modulTitel": "Steuerung, Governance und Assurance",
-      "studienabschnitt": "Teil 3 · WÖMM",
-      "status": "planned",
-      "bautAuf": [
-        "V71"
-      ]
-    },
-    {
-      "code": "V73",
-      "slug": "woek-g-v73",
-      "titel": "Strategie als Wirkungszielbild",
-      "lernziel": "Die Lernenden übersetzen Strategie in Wirkungszielbilder, Annahmen und überprüfbare Pfade.",
-      "modul": "G7.1",
-      "modulTitel": "Transformation und Realisierung",
-      "studienabschnitt": "Teil 3 · WÖMM",
-      "status": "planned",
-      "bautAuf": [
-        "V72"
-      ]
-    },
-    {
-      "code": "V74",
-      "slug": "woek-g-v74",
-      "titel": "Transformation als Wirkungspfad",
-      "lernziel": "Die Lernenden unterscheiden Transformationsaktivität von realisierter Wirkung.",
-      "modul": "G7.1",
-      "modulTitel": "Transformation und Realisierung",
-      "studienabschnitt": "Teil 3 · WÖMM",
-      "status": "planned",
-      "bautAuf": [
-        "V73"
-      ]
-    },
-    {
-      "code": "V75",
-      "slug": "woek-g-v75",
-      "titel": "Rollen, Verantwortung und Benefit Owner",
-      "lernziel": "Die Lernenden ordnen Verantwortlichkeiten so, dass Wirkung nach Übergabe in den Regelbetrieb verfolgt wird.",
-      "modul": "G7.2",
-      "modulTitel": "Organisation, Führung und Betriebssystem",
-      "studienabschnitt": "Teil 3 · WÖMM",
-      "status": "planned",
-      "bautAuf": [
-        "V74"
-      ]
-    },
-    {
-      "code": "V76",
-      "slug": "woek-g-v76",
-      "titel": "Führung, Anreize und Organisationswirkung",
-      "lernziel": "Die Lernenden prüfen Führung und Anreizsysteme auf ihre tatsächliche Organisationswirkung.",
-      "modul": "G7.2",
-      "modulTitel": "Organisation, Führung und Betriebssystem",
-      "studienabschnitt": "Teil 3 · WÖMM",
-      "status": "planned",
-      "bautAuf": [
-        "V75"
-      ]
-    },
-    {
-      "code": "V77",
-      "slug": "woek-g-v77",
-      "titel": "Wirkungscontrolling und Managementcockpit",
-      "lernziel": "Die Lernenden verstehen Wirkungscontrolling als Rückkopplungssystem, nicht als Reporting-Sammlung.",
-      "modul": "G7.3",
-      "modulTitel": "Daten, Controlling und Lernen",
-      "studienabschnitt": "Teil 3 · WÖMM",
-      "status": "planned",
-      "bautAuf": [
-        "V76"
-      ]
-    },
-    {
-      "code": "V78",
-      "slug": "woek-g-v78",
-      "titel": "Lernende Organisation und Rückkopplungsarchitektur",
-      "lernziel": "Die Lernenden erklären, wie Daten, Review und Lernschleifen Entscheidungen verändern.",
-      "modul": "G7.3",
-      "modulTitel": "Daten, Controlling und Lernen",
-      "studienabschnitt": "Teil 3 · WÖMM",
-      "status": "planned",
-      "bautAuf": [
-        "V77"
-      ]
-    },
-    {
-      "code": "V79",
-      "slug": "woek-g-v79",
-      "titel": "Portfolios, Investitionen und Priorisierung",
-      "lernziel": "Die Lernenden priorisieren Vorhaben nach Wirkung, Risiko, Engpass und strategischer Anschlussfähigkeit.",
-      "modul": "G7.4",
-      "modulTitel": "Strategische Integration",
-      "studienabschnitt": "Teil 3 · WÖMM",
-      "status": "planned",
-      "bautAuf": [
-        "V78"
-      ]
-    },
-    {
-      "code": "V80",
-      "slug": "woek-g-v80",
-      "titel": "Stakeholder, Betroffene und Beteiligung",
-      "lernziel": "Die Lernenden gestalten Beteiligung als Erkenntnis- und Schutzinstrument, nicht als Dekoration.",
-      "modul": "G7.4",
-      "modulTitel": "Strategische Integration",
-      "studienabschnitt": "Teil 3 · WÖMM",
-      "status": "planned",
-      "bautAuf": [
-        "V79"
-      ]
-    },
-    {
-      "code": "V81",
-      "slug": "woek-g-v81",
-      "titel": "Wirkungsökonomische Governance",
-      "lernziel": "Die Lernenden verbinden Rechte, Rollen, Daten, Entscheidungstore und öffentliche Rechenschaft.",
-      "modul": "G7.4",
-      "modulTitel": "Strategische Integration",
-      "studienabschnitt": "Teil 3 · WÖMM",
-      "status": "planned",
-      "bautAuf": [
-        "V80"
-      ]
-    },
-    {
-      "code": "V82",
-      "slug": "woek-g-v82",
-      "titel": "WÖMM in Unternehmen anwenden",
-      "lernziel": "Die Lernenden übertragen das WÖMM auf ein Unternehmen auf Überblickstiefe.",
-      "modul": "G7.4",
-      "modulTitel": "Strategische Integration",
-      "studienabschnitt": "Teil 3 · WÖMM",
-      "status": "planned",
-      "bautAuf": [
-        "V81"
-      ]
-    },
-    {
-      "code": "V83",
-      "slug": "woek-g-v83",
-      "titel": "WÖMM im Staat anwenden",
-      "lernziel": "Die Lernenden übertragen das WÖMM auf öffentliche Programme, Haushalte und Verwaltung.",
-      "modul": "G7.4",
-      "modulTitel": "Strategische Integration",
-      "studienabschnitt": "Teil 3 · WÖMM",
-      "status": "planned",
-      "bautAuf": [
-        "V82"
-      ]
-    },
-    {
-      "code": "V84",
-      "slug": "woek-g-v84",
-      "titel": "WÖMM im Finanzsystem anwenden",
-      "lernziel": "Die Lernenden übertragen das WÖMM auf Kapitalallokation, Risiko und Versicherbarkeit.",
-      "modul": "G7.4",
-      "modulTitel": "Strategische Integration",
-      "studienabschnitt": "Teil 3 · WÖMM",
-      "status": "planned",
-      "bautAuf": [
-        "V83"
-      ]
-    },
-    {
-      "code": "V85",
-      "slug": "woek-g-v85",
-      "titel": "WÖMM in Öffentlichkeit und Medien anwenden",
-      "lernziel": "Die Lernenden übertragen das WÖMM auf Diskurs, Vertrauen und öffentliche Resonanzräume.",
-      "modul": "G7.4",
-      "modulTitel": "Strategische Integration",
-      "studienabschnitt": "Teil 3 · WÖMM",
-      "status": "planned",
-      "bautAuf": [
-        "V84"
-      ]
-    },
-    {
-      "code": "V86",
-      "slug": "woek-g-v86",
-      "titel": "WÖMM in Technologie- und Datenräumen anwenden",
-      "lernziel": "Die Lernenden übertragen das WÖMM auf KI, Plattformen, Datenräume und digitale Abhängigkeiten.",
-      "modul": "G7.4",
-      "modulTitel": "Strategische Integration",
-      "studienabschnitt": "Teil 3 · WÖMM",
-      "status": "planned",
-      "bautAuf": [
-        "V85"
-      ]
-    },
-    {
-      "code": "V87",
-      "slug": "woek-g-v87",
-      "titel": "WÖMM-Reifegradfall lesen",
-      "lernziel": "Die Lernenden lesen einen Reifegradfall und leiten angemessene nächste Entwicklungsschritte ab.",
-      "modul": "G7.4",
-      "modulTitel": "Strategische Integration",
-      "studienabschnitt": "Teil 3 · WÖMM",
-      "status": "planned",
-      "bautAuf": [
-        "V86"
-      ]
-    },
-    {
-      "code": "V88",
-      "slug": "woek-g-v88",
-      "titel": "Managemententscheidungen begründen",
-      "lernziel": "Die Lernenden formulieren eine Managemententscheidung mit Wirkung, Evidenz, Grenze und offener Unsicherheit.",
-      "modul": "G7.4",
-      "modulTitel": "Strategische Integration",
-      "studienabschnitt": "Teil 3 · WÖMM",
-      "status": "planned",
-      "bautAuf": [
-        "V87"
-      ]
-    },
-    {
-      "code": "V89",
-      "slug": "woek-g-v89",
-      "titel": "Wirkungsrisiko als Führungsaufgabe",
-      "lernziel": "Die Lernenden erklären Wirkungsrisiko als strategisches Führungs- und Kapitalrisiko.",
-      "modul": "G7.4",
-      "modulTitel": "Strategische Integration",
-      "studienabschnitt": "Teil 3 · WÖMM",
-      "status": "planned",
-      "bautAuf": [
-        "V88"
-      ]
-    },
-    {
-      "code": "V90",
-      "slug": "woek-g-v90",
-      "titel": "Von Strategie zu Betriebssystem",
-      "lernziel": "Die Lernenden verbinden Strategie, Operating Model, Daten und Routinen zu einem wirkungsfähigen Betriebssystem.",
-      "modul": "G7.4",
-      "modulTitel": "Strategische Integration",
-      "studienabschnitt": "Teil 3 · WÖMM",
-      "status": "planned",
-      "bautAuf": [
-        "V89"
-      ]
-    },
-    {
-      "code": "V91",
-      "slug": "woek-g-v91",
-      "titel": "Realisierungslogik im Überblick",
-      "lernziel": "Die Lernenden unterscheiden Deliverables, Adoption, Nutzung und realisierte Zustandsveränderung.",
-      "modul": "G7.4",
-      "modulTitel": "Strategische Integration",
-      "studienabschnitt": "Teil 3 · WÖMM",
-      "status": "planned",
-      "bautAuf": [
-        "V90"
-      ]
-    },
-    {
-      "code": "V92",
-      "slug": "woek-g-v92",
-      "titel": "Umsetzung, Adoption und Wirkung",
-      "lernziel": "Die Lernenden beschreiben, wie Umsetzung erst über Adoption und Nutzung Wirkung erzeugt.",
-      "modul": "G7.4",
-      "modulTitel": "Strategische Integration",
-      "studienabschnitt": "Teil 3 · WÖMM",
-      "status": "planned",
-      "bautAuf": [
-        "V91"
-      ]
-    },
-    {
-      "code": "V93",
-      "slug": "woek-g-v93",
-      "titel": "Skalierung, Diffusion und Exit",
-      "lernziel": "Die Lernenden prüfen, wann Skalierung sinnvoll, wann Begrenzung nötig und wann Exit verantwortlich ist.",
-      "modul": "G7.4",
-      "modulTitel": "Strategische Integration",
-      "studienabschnitt": "Teil 3 · WÖMM",
-      "status": "planned",
-      "bautAuf": [
-        "V92"
-      ]
-    },
-    {
-      "code": "V94",
-      "slug": "woek-g-v94",
-      "titel": "Grenzfälle, Fehlbarkeit und Korrektur",
-      "lernziel": "Die Lernenden behandeln Fehlbarkeit und Korrektur als Qualitätsmerkmal wirkungsorientierter Steuerung.",
-      "modul": "G7.4",
-      "modulTitel": "Strategische Integration",
-      "studienabschnitt": "Teil 3 · WÖMM",
-      "status": "planned",
-      "bautAuf": [
-        "V93"
-      ]
-    },
-    {
-      "code": "V95",
-      "slug": "woek-g-v95",
-      "titel": "WÖMM-Synthese: Managementmodell der Zukunft",
-      "lernziel": "Die Lernenden fassen Kompass, Felder, Tore, Reifegrade und Realisierung in einer Managementlogik zusammen.",
-      "modul": "G7.4",
-      "modulTitel": "Strategische Integration",
-      "studienabschnitt": "Teil 3 · WÖMM",
-      "status": "planned",
-      "bautAuf": [
-        "V94"
-      ]
-    },
-    {
-      "code": "V96",
-      "slug": "woek-g-v96",
-      "titel": "Studiumsfall WÖMM: Organisation neu ausrichten",
-      "lernziel": "Die Lernenden wenden das WÖMM auf einen Fall an und halten die Tiefe bewusst auf Orientierungsniveau.",
-      "modul": "G7.4",
-      "modulTitel": "Strategische Integration",
-      "studienabschnitt": "Teil 3 · WÖMM",
-      "status": "planned",
-      "bautAuf": [
-        "V95",
-        "V78",
-        "V88"
-      ]
-    },
-    {
-      "code": "V97",
-      "slug": "woek-g-v97",
-      "titel": "Das Wirkungsökonomische Managementmodell (WÖMM)",
-      "lernziel": "Die Lernenden wiederholen Kompass, Managementfelder, Wirkungsrad, Entscheidungstore und Reifegrade als Brücke zum WÖMS.",
-      "modul": "G8.1",
-      "modulTitel": "WÖMM/WÖMS-Brücke",
-      "studienabschnitt": "Teil 4 · WÖMS-Orientierung",
-      "status": "planned",
-      "bautAuf": [
-        "V96",
-        "V34",
-        "V64",
-        "V78"
-      ]
-    },
-    {
-      "code": "V98",
-      "slug": "woek-g-v98",
-      "titel": "Das Methodensystem im Überblick (WÖMS)",
-      "lernziel": "Die Lernenden verstehen 152 Methoden, 16 Kategorien und Canvas-Prinzip als Orientierung, nicht als Methodentiefe.",
-      "modul": "G8.2",
-      "modulTitel": "WÖMS-Karte und Canvas-Prinzip",
-      "studienabschnitt": "Teil 4 · WÖMS-Orientierung",
-      "status": "planned",
-      "bautAuf": [
-        "V97"
-      ]
-    },
-    {
-      "code": "V99",
-      "slug": "woek-g-v99",
-      "titel": "Wirkungsrealisierungsarchitektur: Deliverables sind nicht Wirkung",
-      "lernziel": "Die Lernenden unterscheiden Liefergegenstände, Adoption, Nutzungsverhalten und realisierte Wirkung.",
-      "modul": "G8.2",
-      "modulTitel": "WÖMS-Karte und Canvas-Prinzip",
-      "studienabschnitt": "Teil 4 · WÖMS-Orientierung",
-      "status": "planned",
-      "bautAuf": [
-        "V98",
-        "V78",
-        "V96",
-        "V97"
-      ]
-    },
-    {
-      "code": "V100",
-      "slug": "woek-g-v100",
-      "titel": "WÖMS-Workshop-Journeys im Überblick",
-      "lernziel": "Die Lernenden unterscheiden Analyse-, Design-, Entscheidungs-, Transformations- und Review-Journeys.",
-      "modul": "G8.3",
-      "modulTitel": "Workshop-Journeys und Rollen",
-      "studienabschnitt": "Teil 4 · WÖMS-Orientierung",
-      "status": "planned",
-      "bautAuf": [
-        "V99",
-        "V98"
-      ]
-    },
-    {
-      "code": "V101",
-      "slug": "woek-g-v101",
-      "titel": "Coach, Multiplikator:in und Fachrolle unterscheiden",
-      "lernziel": "Die Lernenden grenzen Anwendung, Vermittlung und fachliche Verantwortung in der WÖMS-Logik ab.",
-      "modul": "G8.3",
-      "modulTitel": "Workshop-Journeys und Rollen",
-      "studienabschnitt": "Teil 4 · WÖMS-Orientierung",
-      "status": "planned",
-      "bautAuf": [
-        "V100",
-        "V98"
-      ]
-    },
-    {
-      "code": "V102",
-      "slug": "woek-g-v102",
-      "titel": "Canvas-Mindeststandard und Schutzregeln",
-      "lernziel": "Die Lernenden benennen Pflichtfelder, Farbe-nie-allein, Evidenzstatus, Unsicherheit und Wirkungsgrenzen.",
-      "modul": "G8.4",
-      "modulTitel": "Qualität, Schutz und Nichtkompensation",
-      "studienabschnitt": "Teil 4 · WÖMS-Orientierung",
-      "status": "planned",
-      "bautAuf": [
-        "V101",
-        "V27",
-        "V35",
-        "V98"
-      ]
-    },
-    {
-      "code": "V103",
-      "slug": "woek-g-v103",
-      "titel": "Praxisprojekt wählen und Wirkungsfrage formulieren",
-      "lernziel": "Die Lernenden wählen einen Fall und formulieren eine prüfbare Wirkungsfrage mit Systemgrenze.",
-      "modul": "G9.1",
-      "modulTitel": "Praxisprojekt vorbereiten",
-      "studienabschnitt": "Teil 5 · Praxisprojekt + Abschluss",
-      "status": "planned",
-      "bautAuf": [
-        "V102"
-      ]
-    },
-    {
-      "code": "V104",
-      "slug": "woek-g-v104",
-      "titel": "Wirkungsfeld, Betroffene und Quellen klären",
-      "lernziel": "Die Lernenden ordnen Betroffene, Daten, Quellen und offene Unsicherheiten für ihr Praxisprojekt.",
-      "modul": "G9.1",
-      "modulTitel": "Praxisprojekt vorbereiten",
-      "studienabschnitt": "Teil 5 · Praxisprojekt + Abschluss",
-      "status": "planned",
-      "bautAuf": [
-        "V103"
-      ]
-    },
-    {
-      "code": "V105",
-      "slug": "woek-g-v105",
-      "titel": "Wirkungspfad und Bewertungsprofil erstellen",
-      "lernziel": "Die Lernenden erstellen einen einfachen Wirkungspfad und ein begründetes Bewertungsprofil.",
-      "modul": "G9.2",
-      "modulTitel": "Praxisprojekt durchführen",
-      "studienabschnitt": "Teil 5 · Praxisprojekt + Abschluss",
-      "status": "planned",
-      "bautAuf": [
-        "V104"
-      ]
-    },
-    {
-      "code": "V106",
-      "slug": "woek-g-v106",
-      "titel": "Rote Linien, Nichtkompensation und Risiken prüfen",
-      "lernziel": "Die Lernenden prüfen ihr Projekt auf Wirkungsgrenzen, negative Wirkung und nicht kompensierbare Risiken.",
-      "modul": "G9.2",
-      "modulTitel": "Praxisprojekt durchführen",
-      "studienabschnitt": "Teil 5 · Praxisprojekt + Abschluss",
-      "status": "planned",
-      "bautAuf": [
-        "V105"
-      ]
-    },
-    {
-      "code": "V107",
-      "slug": "woek-g-v107",
-      "titel": "Abschlussprüfung: Orientierungswissen anwenden",
-      "lernziel": "Die Lernenden wenden WÖMM- und WÖMS-Überblickswissen auf Prüfungsfälle an.",
-      "modul": "G9.3",
-      "modulTitel": "Prüfung und Transfer",
-      "studienabschnitt": "Teil 5 · Praxisprojekt + Abschluss",
-      "status": "planned",
-      "bautAuf": [
-        "V106",
-        "V97",
-        "V98",
-        "V99",
-        "V102"
-      ]
-    },
-    {
-      "code": "V108",
-      "slug": "woek-g-v108",
-      "titel": "Transfer: Vom Studium in Praxis, Fortbildung und Coach-Strang",
-      "lernziel": "Die Lernenden planen den Transfer und unterscheiden Grundstudium, Fortbildung, Coach und Multiplikation.",
-      "modul": "G9.4",
-      "modulTitel": "Abschluss und Ausblick",
-      "studienabschnitt": "Teil 5 · Praxisprojekt + Abschluss",
-      "status": "planned",
-      "bautAuf": [
-        "V107"
-      ]
+  "activeOfferings": [
+    {
+      "offeringId": "WOEK-WB-G",
+      "slug": "grundlagen",
+      "title": "Grundlagen der Wirkungsökonomie",
+      "audience": "Einsteiger:innen / Pflicht-Einstieg für Fachlehrgänge",
+      "level": "ground",
+      "lectureCount": 7,
+      "appUrl": "https://akademie.wirkungsoekonomie.de/kurse/grundlagen"
+    },
+    {
+      "offeringId": "WOEK-WB-WM",
+      "slug": "wirkungsmanagement",
+      "title": "Wirkungsmanagement",
+      "audience": "Führung, Strategie, Nachhaltigkeit, Transformation, Projekt- und Programmverantwortliche",
+      "level": "advanced",
+      "lectureCount": 10,
+      "appUrl": "https://akademie.wirkungsoekonomie.de/kurse/wirkungsmanagement"
+    },
+    {
+      "offeringId": "WOEK-WB-WC",
+      "slug": "wirkungscontrolling",
+      "title": "Wirkungscontrolling / Impact-Controlling",
+      "audience": "Controlling, Finance, ESG/Nachhaltigkeit, Einkauf, Strategie, Risiko und Projektverantwortliche",
+      "level": "advanced",
+      "lectureCount": 10,
+      "appUrl": "https://akademie.wirkungsoekonomie.de/kurse/wirkungscontrolling"
+    },
+    {
+      "offeringId": "WOEK-MP",
+      "slug": "multiplikatoren",
+      "title": "Multiplikator:innen für Wirkungsökonomie",
+      "audience": "Multiplikator:innen / Vermittlung / Moderation",
+      "level": "multiplier",
+      "lectureCount": 8,
+      "appUrl": "https://akademie.wirkungsoekonomie.de/kurse/multiplikatoren"
+    },
+    {
+      "offeringId": "WOEK-WB-DB",
+      "slug": "demokratie-buerger",
+      "title": "Demokratie schützen – Bürger:innen",
+      "audience": "Bürger:innen / Selbststudium",
+      "level": "specialization",
+      "lectureCount": 11,
+      "appUrl": "https://akademie.wirkungsoekonomie.de/kurse/demokratie-schuetzen-buerger"
+    },
+    {
+      "offeringId": "WOEK-WB-DM",
+      "slug": "demokratie-medien",
+      "title": "Demokratie schützen – Medien & Moderation",
+      "audience": "Medien / Journalismus / Moderation",
+      "level": "specialization",
+      "lectureCount": 12,
+      "appUrl": "https://akademie.wirkungsoekonomie.de/kurse/demokratie-schuetzen-medien-moderation"
     }
-  ]
+  ],
+  "assessments": {
+    "interim": [
+      {
+        "assessmentId": "WOEK-V4-ZP1",
+        "title": "Grundlagenprüfung",
+        "afterPart": 1,
+        "questionCount": 18,
+        "evaluation": "Automatisiert"
+      },
+      {
+        "assessmentId": "WOEK-V4-ZP2",
+        "title": "Problem-, Ziel- und Kausalitätsprüfung",
+        "afterPart": 2,
+        "questionCount": 24,
+        "evaluation": "Automatisiert und szenariobasiert"
+      },
+      {
+        "assessmentId": "WOEK-V4-ZP3",
+        "title": "Referenz-, Daten- und Bewertungsprüfung",
+        "afterPart": 3,
+        "questionCount": 24,
+        "evaluation": "Automatisiert und szenariobasiert"
+      },
+      {
+        "assessmentId": "WOEK-V4-ZP4",
+        "title": "Prüfung staatliche Nachhaltigkeits- und Folgenarchitektur",
+        "afterPart": 4,
+        "questionCount": 30,
+        "evaluation": "Automatisiert und szenariobasiert"
+      },
+      {
+        "assessmentId": "WOEK-V4-ZP5",
+        "title": "Steuerungs- und Rückkopplungsprüfung",
+        "afterPart": 5,
+        "questionCount": 24,
+        "evaluation": "Automatisiert und szenariobasiert"
+      },
+      {
+        "assessmentId": "WOEK-V4-ZP6",
+        "title": "Wohlstandsprüfung",
+        "afterPart": 6,
+        "questionCount": 21,
+        "evaluation": "Automatisiert und szenariobasiert"
+      },
+      {
+        "assessmentId": "WOEK-V4-ZP7",
+        "title": "Resilienzprüfung",
+        "afterPart": 7,
+        "questionCount": 21,
+        "evaluation": "Automatisiert und szenariobasiert"
+      },
+      {
+        "assessmentId": "WOEK-V4-ZP8",
+        "title": "Anwendungsprüfung",
+        "afterPart": 8,
+        "questionCount": 24,
+        "evaluation": "Automatisiert und szenariobasiert"
+      },
+      {
+        "assessmentId": "WOEK-V4-ZP9",
+        "title": "Systemdesignprüfung",
+        "afterPart": 9,
+        "questionCount": 24,
+        "evaluation": "Automatisiert und szenariobasiert"
+      },
+      {
+        "assessmentId": "WOEK-V4-ZP10",
+        "title": "Projektfreigabeprüfung",
+        "afterPart": 10,
+        "questionCount": 30,
+        "evaluation": "Automatisiert und szenariobasiert"
+      }
+    ],
+    "final": [
+      {
+        "assessmentId": "WOEK-V4-AP1",
+        "title": "Abschlussprüfung Wissen und Methoden",
+        "questionCount": 48,
+        "evaluation": "Automatisiert und szenariobasiert"
+      },
+      {
+        "assessmentId": "WOEK-V4-AP2",
+        "title": "Abschlussprüfung Fallanalyse",
+        "questionCount": 20,
+        "evaluation": "Kombiniert: automatisierte und manuell geprüfte Bestandteile"
+      },
+      {
+        "assessmentId": "WOEK-V4-AP3",
+        "title": "Praxisprojekt Wirkungsdossier",
+        "evaluation": "Manuell anhand veröffentlichter Bewertungskriterien geprüft"
+      },
+      {
+        "assessmentId": "WOEK-V4-AP4",
+        "title": "Verteidigung und Transfer",
+        "evaluation": "Manuell anhand veröffentlichter Bewertungskriterien geprüft"
+      }
+    ]
+  },
+  "history": {
+    "currentVersion": "4.0",
+    "historicalVersion": "3.2",
+    "historicalRoute": "/akademie/curriculum-v3-2.html",
+    "archiveCommit": "4d93bbefc3a7249ff27fc0f2ebbcf0493354a13a"
+  }
 }
