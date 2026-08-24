@@ -18,7 +18,9 @@ const safetyImplementationFiles = new Set([
   "scripts/sync-approved-parliament-daily.mjs"
 ]);
 const unsafePatterns = [
-  { label: "local-user-path", pattern: /\/(?:Users|home)\/[A-Za-z0-9._-]+(?:\/|$)/ },
+  // Require a local-path boundary so an official web route such as
+  // https://www.landtag.nrw.de/home/dokumente/... is not read as /home/<user>.
+  { label: "local-user-path", pattern: /(?:^|["'\s])\/(?:Users|home)\/[A-Za-z0-9._-]+(?:\/|$)/i },
   { label: "local-volume-path", pattern: /\/Volumes\/[A-Za-z0-9._-]+(?:\/|$)/ },
   { label: "windows-user-path", pattern: /(?:[A-Z]:\\|\\\\[^\\]+\\)(?:Users|Dokumente|Documents)\\/i },
   { label: "local-file-uri", pattern: /file:\/\/(?!\/ROOT(?:\/|$))(?:\/|localhost)/i },
