@@ -18,6 +18,7 @@ ST_PATH = ROOT / "woek-parlament-app/data/fachakten/source-manifests/sachsen-anh
 BE_PATH = ROOT / "woek-parlament-app/data/state-programmes/current-source-registers/berlin-2026-v2.json"
 MV_PATH = ROOT / "woek-parlament-app/data/state-programmes/current-source-registers/mecklenburg-vorpommern-2026-v2.json"
 GOLDEN_PATH = ROOT / "ops/releases/parliament-github-golden-state-2026-08-23.json"
+STATE_ADAPTERS_PATH = ROOT / "woek-parlament-app/data/state-sources/official-state-source-adapters-v1.json"
 
 ALLOWED_STATUSES = {
     "DONE_ON_MAIN",
@@ -51,6 +52,7 @@ def validate() -> dict:
     berlin = load(BE_PATH)
     mv = load(MV_PATH)
     golden = load(GOLDEN_PATH)
+    state_adapters = load(STATE_ADAPTERS_PATH)
 
     require(set(matrix["classification_taxonomy"]) == ALLOWED_STATUSES, "ISSUE_241_CLASSIFICATION_TAXONOMY_DRIFT")
     requirements = matrix["requirements"]
@@ -79,10 +81,15 @@ def validate() -> dict:
     require(mv["coverage"]["canonical_artifact_count"] == 3, "ISSUE_241_MV_CANONICAL_ARTIFACT_COUNT_DRIFT")
     require(mv["coverage"]["canonical_current_source_finality_open_count"] == 1, "ISSUE_241_MV_OPEN_FINALITY_COUNT_DRIFT")
     require(golden["status"] == "COMBINED_GITHUB_GOLDEN_STATE", "ISSUE_241_COMBINED_CHECKPOINT_DRIFT")
+    require(state_adapters["status"] == "ACTIVE_DOCUMENT_DISCOVERY_16_OF_16", "ISSUE_241_STATE_ADAPTER_STATUS_DRIFT")
+    require(state_adapters["coverage"]["registered_state_count"] == 16, "ISSUE_241_STATE_ADAPTER_REGISTRY_DRIFT")
+    require(state_adapters["coverage"]["active_document_discovery_adapter_count"] == 16, "ISSUE_241_STATE_ADAPTER_ACTIVE_COUNT_DRIFT")
+    require(state_adapters["coverage"]["automatic_public_fact_projection_count"] == 0, "ISSUE_241_STATE_ADAPTER_FACT_BOUNDARY_DRIFT")
+    require(state_adapters["coverage"]["automatic_fach_projection_count"] == 0, "ISSUE_241_STATE_ADAPTER_FACH_BOUNDARY_DRIFT")
 
     technical = matrix["finite_residuals"]["technical"]
     fach = matrix["finite_residuals"]["fach_review_required"]
-    require([item["id"] for item in technical] == ["STATE-OFFICIAL-SOURCE-ADAPTER-RESIDUAL", "BLOCKED_BY_BE_AND_MV_FACH_TERMINAL"], "ISSUE_241_STATE_ORDER_DRIFT")
+    require([item["id"] for item in technical] == ["BLOCKED_BY_BE_AND_MV_FACH_TERMINAL"], "ISSUE_241_STATE_ORDER_DRIFT")
     require(len(fach[0]["verified_final_programmes"]) == 12 and len(fach[0]["canonicalization_pending_programmes"]) == 0, "ISSUE_241_BE_FACH_RESIDUAL_DRIFT")
     require(fach[0]["canonical_artifact_register"].endswith("berlin-2026-v2.json"), "ISSUE_241_BE_FACH_ARTIFACT_REGISTER_DRIFT")
     require(len(fach[1]["verified_final_programmes"]) == 12 and len(fach[1]["canonicalization_pending_programmes"]) == 0, "ISSUE_241_MV_FACH_RESIDUAL_DRIFT")
@@ -104,6 +111,8 @@ def validate() -> dict:
         "classification_counts": dict(sorted(counts.items())),
         "berlin_technical_items": 0,
         "mv_technical_items": 0,
+        "state_official_source_adapters": 16,
+        "automatic_state_fact_projection": 0,
         "berlin_verified_final_programmes_pending_explicit_full_fach": 12,
         "mv_verified_final_programmes_pending_explicit_full_fach": 12,
         "no_new_vercel_build": True,

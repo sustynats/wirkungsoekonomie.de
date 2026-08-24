@@ -2,7 +2,7 @@
   "schema_version": "woek-parliament-issue-241-current-residual-1.0",
   "matrix_id": "WOEK-PARLIAMENT-241-CURRENT-RESIDUAL-2026-08-24",
   "issue": 241,
-  "audited_main_commit": "f66af9d7ae9171bb49b7efa3188f269443d4c089",
+  "audited_main_commit": "376be9ed1e6f6fc2095111fd86990b3bf149ca9b",
   "last_accepted_parliament_production_commit": "3539aae4920291f45ec03b4c297af147b9a9eb89",
   "status": "OPEN_FINITE_FACH_AND_TECHNICAL_RESIDUALS",
   "classification_taxonomy": [
@@ -50,6 +50,14 @@
       "source_unavailable_for_election_corpus": 6,
       "existing_theme_reviews": 8,
       "evidence": "woek-parlament-app/data/state-programmes/current-source-registers/mecklenburg-vorpommern-2026-v2.json"
+    },
+    "official_state_source_adapters": {
+      "status": "ACTIVE_DOCUMENT_DISCOVERY_16_OF_16",
+      "registered_states": 16,
+      "active_document_discovery_adapters": 16,
+      "automatic_public_fact_projection": 0,
+      "automatic_fach_projection": 0,
+      "evidence": "woek-parlament-app/data/state-sources/official-state-source-adapters-v1.json"
     }
   },
   "requirements": [
@@ -217,9 +225,9 @@
       "id": "241-B-06-ALL-16-STATES-ADAPTERS",
       "issue_241_refs": ["B/alle 16 Laender", "F/Regierungshandeln monitoren"],
       "title": "Operative amtliche Source-Adapter fuer laufendes Monitoring aller 16 Laender",
-      "status": "TECHNICAL_GAP",
-      "evidence": ["woek-parlament-app/data/autopilot/audit/2.3-remediated/CODEX-WORK-RECONCILIATION-2.3-SUMMARY.json#/reconciled_workstreams/state_adapters"],
-      "residual": "STATE-OFFICIAL-SOURCE-ADAPTER-RESIDUAL"
+      "status": "DONE_ON_MAIN",
+      "evidence": ["woek-parlament-app/data/state-sources/official-state-source-adapters-v1.json", "woek-parlament-app/scripts/run-official-state-source-adapters.mjs", ".github/workflows/state-official-source-adapters.yml"],
+      "residual": null
     },
     {
       "id": "241-B-07-LANDTAG-PROGRAMMES",
@@ -601,15 +609,8 @@
   "finite_residuals": {
     "technical": [
       {
-        "id": "STATE-OFFICIAL-SOURCE-ADAPTER-RESIDUAL",
-        "order": 1,
-        "jurisdiction": "all-16-states",
-        "items": ["16 operational official-source adapters currently 0/16 in the explicit 2.3 audit baseline"],
-        "required_action": "Implement only against enumerated official sources and retain fail-closed coverage labels."
-      },
-      {
         "id": "BLOCKED_BY_BE_AND_MV_FACH_TERMINAL",
-        "order": 2,
+        "order": 1,
         "jurisdiction": "combined",
         "items": ["superseding combined terminal GitHub descriptor"],
         "required_action": "Create only after Berlin and MV explicit programme-Fach residuals are closed and all GitHub gates pass."

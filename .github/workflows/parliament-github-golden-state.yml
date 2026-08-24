@@ -16,7 +16,9 @@ on:
       - "woek-parlament-app/data/state-programmes/current-source-registers/berlin-2026-v2.json"
       - "woek-parlament-app/data/state-programmes/current-source-registers/mecklenburg-vorpommern-2026.json"
       - "woek-parlament-app/data/state-programmes/current-source-registers/mecklenburg-vorpommern-2026-v2.json"
+      - "woek-parlament-app/data/state-sources/official-state-source-adapters-v1.json"
       - "woek-parlament-app/scripts/quality/check-same-page-navigation.mjs"
+      - "tools/validate_state_official_source_adapters.py"
       - ".github/workflows/parliament-github-golden-state.yml"
   push:
     branches:
@@ -24,6 +26,8 @@ on:
     paths:
       - "ops/releases/parliament-github-golden-state-2026-08-23.json"
       - "tools/validate_parliament_github_golden_state.py"
+      - "tools/validate_state_official_source_adapters.py"
+      - "woek-parlament-app/data/state-sources/official-state-source-adapters-v1.json"
       - ".github/workflows/parliament-github-golden-state.yml"
   workflow_dispatch:
 
@@ -66,6 +70,8 @@ jobs:
         run: python3 tools/validate_mv_current_source_register.py --check-github
       - name: Validate combined commit-bound Golden State
         run: python3 tools/validate_parliament_github_golden_state.py
+      - name: Validate 16-state official document-discovery adapters
+        run: python3 tools/validate_state_official_source_adapters.py
       - name: Assert immutable validation
         run: git diff --exit-code
 
