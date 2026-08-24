@@ -64,7 +64,6 @@ const parts = projection.parts.map((part) => ({
         lectureId: lecture.lecture_id,
         title: lecture.title,
         publicMasterPath: lecture.public_path,
-        reviewStatus: lecture.review_status,
       };
     }),
   })),
