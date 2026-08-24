@@ -18,10 +18,10 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-REGISTER_PATH = ROOT / "woek-parlament-app/data/state-programmes/current-source-registers/mecklenburg-vorpommern-2026.json"
+REGISTER_PATH = ROOT / "woek-parlament-app/data/state-programmes/current-source-registers/mecklenburg-vorpommern-2026-v2.json"
 REVIEW_PATH = ROOT / "woek-parlament-app/data/states/mecklenburg-vorpommern/approved-review-2026-08-18.md"
 REPOSITORY = "sustynats/wirkungsoekonomie.de"
-BASE_MAIN_COMMIT = "8ab669258b46fb3904e4d1292423c1106dc8c778"
+BASE_MAIN_COMMIT = "f66af9d7ae9171bb49b7efa3188f269443d4c089"
 REVIEW_SHA256 = "0fe5316048c5e9fef01dbdc0ccd8326e3c644bdee6ef43997ec12a60c1fd7639"
 SOURCE_PINS = [
     {
@@ -53,6 +53,7 @@ def entry(
     final_verified: bool,
     source_available: bool,
     canonicalization_pending: bool,
+    canonical_artifact: dict | None = None,
 ) -> dict:
     return {
         "party": party,
@@ -65,7 +66,35 @@ def entry(
         "final_election_programme_verified": final_verified,
         "source_available_for_election_corpus": source_available,
         "canonicalization_pending": canonicalization_pending,
+        "canonical_artifact": canonical_artifact,
         "assessment_maturity": "SOURCE_CLASSIFICATION_ONLY_EXISTING_FACH_REVIEW_PRESERVED",
+    }
+
+
+def artifact(
+    artifact_id: str,
+    artifact_url: str,
+    media_type: str,
+    byte_length: int,
+    sha256: str,
+    title: str,
+    version_evidence: str,
+    publication_status: str,
+    *,
+    page_count: int | None,
+) -> dict:
+    return {
+        "artifact_id": artifact_id,
+        "artifact_url": artifact_url,
+        "media_type": media_type,
+        "byte_length": byte_length,
+        "sha256": sha256,
+        "page_count": page_count,
+        "title": title,
+        "retrieved_on": "2026-08-24",
+        "version_evidence": version_evidence,
+        "publication_status": publication_status,
+        "identity_status": "BYTE_EXACT_PARTY_PRIMARY_ARTIFACT",
     }
 
 
@@ -120,18 +149,32 @@ PARTIES = [
         final_verified=False, source_available=False, canonicalization_pending=False,
     ),
     entry(
-        "FREIE WÄHLER", "FULL_ELECTION_PROGRAMME_PDF_PENDING_CANONICALIZATION", "PARTY_DOMAIN_FULL_PROGRAMME_PDF_IDENTIFIED_CANONICAL_FETCH_HASH_REQUIRED",
-        "Vollprogramm-PDF identifiziert · Kanonisierung offen",
-        "Ein Vollprogramm-PDF auf der Parteidomain ist identifiziert. Vor dem kanonischen Import fehlen noch direkter Byte-Abruf und Hash-Sicherung.",
+        "FREIE WÄHLER", "FINAL_ELECTION_PROGRAMME_PDF", "PARTY_OFFICIAL_FULL_PROGRAMME_PDF_BYTE_EXACT",
+        "Finales Wahlprogramm bytegenau verifiziert",
+        "Das 34-seitige Wahlprogramm zur Landtagswahl am 20. September 2026 liegt auf der Parteidomain vor. URL, Byteumfang, Seitenzahl und SHA-256 sind eingefroren.",
         [("Programm-PDF", "https://freie-waehler-mv.eu/wp-content/uploads/2026/06/LTW_2026_Wahlprogramm_FW-M-V_A5_interaktiv.pdf")],
-        final_verified=False, source_available=True, canonicalization_pending=True,
+        final_verified=True, source_available=True, canonicalization_pending=False,
+        canonical_artifact=artifact(
+            "MV-LTW-2026-FREIE-WAEHLER-WAHLPROGRAMM", "https://freie-waehler-mv.eu/wp-content/uploads/2026/06/LTW_2026_Wahlprogramm_FW-M-V_A5_interaktiv.pdf",
+            "application/pdf", 3451433, "9e6295ac5a691cf4b4483736e1cf87a5b95192e122f43bbb8ca5a3cb9b67554c",
+            "Wahlprogramm für die Landtagswahl am 20. September 2026",
+            "The party-domain PDF cover names the Landtagswahl date and Mecklenburg-Vorpommern; URL, response bytes and content length identify the frozen version.",
+            "PARTY_PUBLISHED_FINAL_ELECTION_PROGRAMME", page_count=34,
+        ),
     ),
     entry(
-        "Die PARTEI", "ELECTION_PROGRAMME_ROUTE_PENDING_CANONICALIZATION", "PARTY_OFFICIAL_PROGRAMME_ROUTE_VERSION_AND_APPROVAL_STATUS_PENDING",
-        "Programmroute vorhanden · Fassung und Beschlussstatus offen",
-        "Der offizielle Landesauftritt führt einen Landtagswahl-2026-Bereich und eine Programmroute. Dokumentfassung und Beschlussstatus müssen vor dem atomaren Import gesichert werden.",
+        "Die PARTEI", "CURRENT_PROGRAMME_ROUTE", "PARTY_OFFICIAL_CURRENT_PROGRAMME_ROUTE_BYTE_EXACT_FINALITY_NOT_VERIFIED",
+        "Aktuelle Programmseite versioniert · Finalstatus offen",
+        "Der offizielle Landesauftritt führt die Programmseite aus dem Landtagswahl-2026-Bereich. Die aktuelle HTML-Fassung ist bytegenau eingefroren; ein ausdrücklicher Beschluss- oder Finalstatus ist weiterhin nicht nachgewiesen und wird nicht unterstellt.",
         [("Landesportal", "https://diepartei-mv.de/"), ("Programmroute", "https://www.diepartei-mv.de/Programm.html")],
-        final_verified=False, source_available=True, canonicalization_pending=True,
+        final_verified=False, source_available=True, canonicalization_pending=False,
+        canonical_artifact=artifact(
+            "MV-LTW-2026-DIE-PARTEI-CURRENT-PROGRAMME-ROUTE", "https://www.diepartei-mv.de/Programm.html",
+            "text/html; charset=UTF-8", 21105, "2eb74e6cbeaa06109fb4e4333b4ac99742f7bf1e0008a9d87deeeb46ccf17641",
+            "Unser Wahlprogramm – Das Sofort-Programm für MV",
+            "The official state portal links this programme route from its 2026 election surface; two raw fetches were byte-identical. No adoption or finality evidence is claimed.",
+            "PARTY_PUBLISHED_CURRENT_PROGRAMME_ROUTE_FINALITY_NOT_VERIFIED", page_count=None,
+        ),
     ),
     entry(
         "PIRATEN", "FINAL_ELECTION_PROGRAMME_PDF", "PARTY_OFFICIAL_FINAL_PROGRAMME_ARTIFACT_READY",
@@ -190,11 +233,18 @@ PARTIES = [
         final_verified=False, source_available=False, canonicalization_pending=False,
     ),
     entry(
-        "Volt", "ELECTION_PROGRAMME_NAVIGATION_PENDING_CANONICALIZATION", "PARTY_OFFICIAL_MV_2026_PROGRAMMATIC_SOURCE_EXACT_VERSIONED_FILE_OR_SNAPSHOT_PENDING",
-        "MV-2026-Programmquelle vorhanden · exakte Fassung noch zu kanonisieren",
-        "Der offizielle Wahlhub verweist auf die Programmnavigation. Vor dem kanonischen Import fehlt noch eine exakt versionierte MV-Programmfassung oder ein Snapshot.",
-        [("Wahlhub", "https://voltdeutschland.org/mv/landtagswahl-2026"), ("Programmnavigation", "https://voltdeutschland.org/mv/programm/programme")],
-        final_verified=False, source_available=True, canonicalization_pending=True,
+        "Volt", "FINAL_ELECTION_PROGRAMME_PDF", "PARTY_OFFICIAL_MV_2026_PROGRAMME_PDF_BYTE_EXACT",
+        "Finales Wahlprogramm bytegenau verifiziert",
+        "Das 67-seitige MV-Wahlprogramm zur Landtagswahl am 20. September 2026 ist als parteioffizielle PDF verfügbar. URL, Byteumfang, Seitenzahl und SHA-256 sind eingefroren.",
+        [("Wahlhub", "https://voltdeutschland.org/mv/landtagswahl-2026"), ("Programmnavigation", "https://voltdeutschland.org/mv/programm/programme"), ("Wahlprogramm-PDF", "https://voltdeutschland.org/storage/assets-mv/pdf/haltungzeigen_wahlprogramm_voltmv_ltw26.pdf")],
+        final_verified=True, source_available=True, canonicalization_pending=False,
+        canonical_artifact=artifact(
+            "MV-LTW-2026-VOLT-WAHLPROGRAMM", "https://voltdeutschland.org/storage/assets-mv/pdf/haltungzeigen_wahlprogramm_voltmv_ltw26.pdf",
+            "application/pdf", 1725660, "a992f71adf0b37a633c60d9ac1e8923680e8a7e01ac428bf2e86036294e57663",
+            "Haltung zeigen! Wahlprogramm von Volt MV zur Landtagswahl am 20.09.2026",
+            "Direct full-programme PDF on the official party domain; cover identifies party, jurisdiction and election date.",
+            "PARTY_PUBLISHED_FINAL_ELECTION_PROGRAMME", page_count=67,
+        ),
     ),
     entry(
         "WIR LEBEN DEMOKRATIE", "FINAL_ELECTION_PROGRAMME_NOT_VERIFIED", "FINAL_2026_PROGRAMME_NOT_YET_VERIFIED_IN_CURRENT_SCAN",
@@ -221,13 +271,15 @@ def build_register() -> dict:
     final_count = sum(party["final_election_programme_verified"] for party in PARTIES)
     pending_canonical = sum(party["canonicalization_pending"] for party in PARTIES)
     unavailable = sum(not party["source_available_for_election_corpus"] for party in PARTIES)
+    final_not_verified = len(PARTIES) - final_count
+    canonical_artifact_count = sum(party["canonical_artifact"] is not None for party in PARTIES)
     payload = {
-        "schema_version": "woek-state-current-source-register-1.1",
-        "register_id": "MV-LTW-2026-CURRENT-SOURCE-REGISTER-V1",
+        "schema_version": "woek-state-current-source-register-1.2",
+        "register_id": "MV-LTW-2026-CURRENT-SOURCE-REGISTER-V2",
         "base_main_commit": BASE_MAIN_COMMIT,
         "jurisdiction": "mecklenburg-vorpommern",
         "election": "ltw-2026-mv",
-        "source_as_of": "2026-08-21",
+        "source_as_of": "2026-08-24",
         "status": "CURRENT_SOURCE_CLASSIFICATION_COMPLETE_19_OF_19",
         "official_field": {
             "admitted_party_count": 19,
@@ -241,8 +293,13 @@ def build_register() -> dict:
             "classified_party_count": len(PARTIES),
             "final_election_programme_verified_count": final_count,
             "election_source_available_canonicalization_pending_count": pending_canonical,
-            "final_election_programme_not_verified_count": unavailable,
+            "final_election_programme_not_verified_count": final_not_verified,
+            "source_unavailable_for_election_corpus_count": unavailable,
             "source_available_for_election_corpus_count": sum(party["source_available_for_election_corpus"] for party in PARTIES),
+            "canonical_artifact_count": canonical_artifact_count,
+            "canonical_final_programme_artifact_count": 2,
+            "canonical_current_source_finality_open_count": 1,
+            "canonicalization_completed_in_v2_count": 3,
             "full_final_election_programme_corpus_available": False,
             "assessment_maturity": "PARTIAL_ANALYSIS_NEEDS_COMPLETION",
         },
@@ -299,14 +356,32 @@ def validate(actual: dict, expected: dict, *, check_github: bool) -> None:
         raise ValueError("MV_OFFICIAL_PARTY_SET_NOT_EXACTLY_19")
     if any(party["field_scope"] != "LANDESLISTE" for party in parties):
         raise ValueError("MV_NON_LANDESLISTE_PARTY")
-    if sum(party["final_election_programme_verified"] for party in parties) != 10:
+    if sum(party["final_election_programme_verified"] for party in parties) != 12:
         raise ValueError("MV_VERIFIED_FINAL_PROGRAMME_COUNT_DRIFT")
-    if sum(party["canonicalization_pending"] for party in parties) != 3:
+    if sum(party["canonicalization_pending"] for party in parties) != 0:
         raise ValueError("MV_CANONICALIZATION_PENDING_COUNT_DRIFT")
     if sum(not party["source_available_for_election_corpus"] for party in parties) != 6:
+        raise ValueError("MV_SOURCE_UNAVAILABLE_COUNT_DRIFT")
+    if actual["coverage"]["final_election_programme_not_verified_count"] != 7:
         raise ValueError("MV_FINAL_PROGRAMME_NOT_VERIFIED_COUNT_DRIFT")
+    if actual["coverage"]["canonical_artifact_count"] != 3:
+        raise ValueError("MV_CANONICAL_ARTIFACT_COUNT_DRIFT")
     if any(not row["url"].startswith("https://") for party in parties for row in party["source_urls"]):
         raise ValueError("MV_NON_HTTPS_SOURCE_URL")
+    canonical_parties = [party for party in parties if party["canonical_artifact"] is not None]
+    if [party["party"] for party in canonical_parties] != ["FREIE WÄHLER", "Die PARTEI", "Volt"]:
+        raise ValueError("MV_V2_CANONICAL_ARTIFACT_PARTY_DRIFT")
+    for party in canonical_parties:
+        artifact_record = party["canonical_artifact"]
+        if not artifact_record["artifact_url"].startswith("https://"):
+            raise ValueError(f"MV_CANONICAL_ARTIFACT_URL_DRIFT:{party['party']}")
+        if not artifact_record["byte_length"] > 0 or any(char not in "0123456789abcdef" for char in artifact_record["sha256"]) or len(artifact_record["sha256"]) != 64:
+            raise ValueError(f"MV_CANONICAL_ARTIFACT_IDENTITY_DRIFT:{party['party']}")
+        if artifact_record["identity_status"] != "BYTE_EXACT_PARTY_PRIMARY_ARTIFACT":
+            raise ValueError(f"MV_CANONICAL_ARTIFACT_STATUS_DRIFT:{party['party']}")
+    die_partei = next(party for party in parties if party["party"] == "Die PARTEI")
+    if die_partei["final_election_programme_verified"] or "FINALITY_NOT_VERIFIED" not in die_partei["source_status"]:
+        raise ValueError("MV_DIE_PARTEI_FINALITY_MUST_REMAIN_FAIL_CLOSED")
     if any(actual["constraints"].values()):
         raise ValueError("MV_FORBIDDEN_SYNTHESIS_OR_DEPLOYMENT_RECORDED")
     integrity = actual["publication_integrity"]
@@ -342,9 +417,12 @@ def main() -> int:
         "gate": "MV_CURRENT_SOURCE_COMPLETION",
         "status": "PASS_19_OF_19_CLASSIFIED",
         "official_party_count": 19,
-        "verified_final_programmes": 10,
-        "election_sources_pending_canonicalization": 3,
-        "final_programmes_not_verified": 6,
+        "verified_final_programmes": 12,
+        "election_sources_pending_canonicalization": 0,
+        "canonical_artifacts_completed_in_v2": 3,
+        "current_source_finality_open": 1,
+        "final_programmes_not_verified": 7,
+        "source_unavailable_for_election_corpus": 6,
         "full_final_election_programme_corpus_available": False,
         "preserved_materiality_themes": 8,
         "unrendered_content_paths": 0,

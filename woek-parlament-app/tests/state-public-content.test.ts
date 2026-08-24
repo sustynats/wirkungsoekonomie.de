@@ -72,6 +72,6 @@ test("Berlin and Mecklenburg-Vorpommern keep official election field and analysi
   assert.equal(statePublicContent.berlin.programmeSources?.coverage.full_final_election_programme_corpus_available, false);
   assert.equal(statePublicContent["mecklenburg-vorpommern"].programmeSources?.status, "CURRENT_SOURCE_CLASSIFICATION_COMPLETE_19_OF_19");
   assert.equal(statePublicContent["mecklenburg-vorpommern"].programmeSources?.parties.length, 19);
-  assert.equal(statePublicContent["mecklenburg-vorpommern"].programmeSources?.coverage.final_election_programme_verified_count, 10);
+  assert.equal(statePublicContent["mecklenburg-vorpommern"].programmeSources?.coverage.final_election_programme_verified_count, 12);
   assert.equal(statePublicContent["mecklenburg-vorpommern"].programmeSources?.coverage.full_final_election_programme_corpus_available, false);
 });

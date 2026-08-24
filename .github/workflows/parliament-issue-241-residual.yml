@@ -11,6 +11,7 @@ on:
       - "woek-parlament-app/data/state-programmes/current-source-registers/berlin-2026.json"
       - "woek-parlament-app/data/state-programmes/current-source-registers/berlin-2026-v2.json"
       - "woek-parlament-app/data/state-programmes/current-source-registers/mecklenburg-vorpommern-2026.json"
+      - "woek-parlament-app/data/state-programmes/current-source-registers/mecklenburg-vorpommern-2026-v2.json"
   push:
     branches: [main]
     paths:
@@ -22,6 +23,7 @@ on:
       - "woek-parlament-app/data/state-programmes/current-source-registers/berlin-2026.json"
       - "woek-parlament-app/data/state-programmes/current-source-registers/berlin-2026-v2.json"
       - "woek-parlament-app/data/state-programmes/current-source-registers/mecklenburg-vorpommern-2026.json"
+      - "woek-parlament-app/data/state-programmes/current-source-registers/mecklenburg-vorpommern-2026-v2.json"
 
 permissions:
   contents: read
