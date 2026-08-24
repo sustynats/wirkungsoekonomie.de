@@ -1,0 +1,446 @@
+{
+  "adapters": [
+    {
+      "adapter_id": "state-document-discovery-de-bw",
+      "adapter_status": "ACTIVE_DOCUMENT_DISCOVERY",
+      "automatic_publication_allowed": false,
+      "discovery": {
+        "marker_pattern": "ps-detail-BW_[A-Za-z0-9_]+",
+        "marker_semantics": "PARLAMENTSSPIEGEL_DOCUMENT_ID",
+        "minimum_marker_count": 1
+      },
+      "discovery_scope": [
+        "PARLIAMENTARY_DOCUMENT",
+        "PARLIAMENTARY_PROCEEDING"
+      ],
+      "jurisdiction_id": "DE-BW",
+      "jurisdiction_name": "Baden-Württemberg",
+      "primary_parliamentary_portal_url": "https://www.landtag-bw.de/de/dokumente/parlamentsdokumentation",
+      "request": {
+        "allowed_host": "landtag-apps.nrw.de",
+        "url": "https://landtag-apps.nrw.de/GeheimesSpiegelein/suche?query=&qyZeitBis=heute&qyZeitAb=letzterMonat&qyHerk=BW&type=dokument&als=0&size=10"
+      },
+      "requires_fach_review_for_impact_content": true,
+      "requires_fact_validation_before_projection": true,
+      "source_authority": "Parlamentsspiegel – gemeinsames Informationssystem der Landesparlamente",
+      "transport": "HTTP_GET"
+    },
+    {
+      "adapter_id": "state-document-discovery-de-rp",
+      "adapter_status": "ACTIVE_DOCUMENT_DISCOVERY",
+      "automatic_publication_allowed": false,
+      "discovery": {
+        "marker_pattern": "ps-detail-RPF_[A-Za-z0-9_]+",
+        "marker_semantics": "PARLAMENTSSPIEGEL_DOCUMENT_ID",
+        "minimum_marker_count": 1
+      },
+      "discovery_scope": [
+        "PARLIAMENTARY_DOCUMENT",
+        "PARLIAMENTARY_PROCEEDING"
+      ],
+      "jurisdiction_id": "DE-RP",
+      "jurisdiction_name": "Rheinland-Pfalz",
+      "primary_parliamentary_portal_url": "https://dokumente.landtag.rlp.de/landtag/xml-dokumente/",
+      "request": {
+        "allowed_host": "landtag-apps.nrw.de",
+        "url": "https://landtag-apps.nrw.de/GeheimesSpiegelein/suche?query=&qyZeitBis=heute&qyZeitAb=letzterMonat&qyHerk=RPF&type=dokument&als=0&size=10"
+      },
+      "requires_fach_review_for_impact_content": true,
+      "requires_fact_validation_before_projection": true,
+      "source_authority": "Parlamentsspiegel – gemeinsames Informationssystem der Landesparlamente",
+      "transport": "HTTP_GET"
+    },
+    {
+      "adapter_id": "state-document-discovery-de-st",
+      "adapter_status": "ACTIVE_DOCUMENT_DISCOVERY",
+      "automatic_publication_allowed": false,
+      "discovery": {
+        "marker_pattern": "ps-detail-SACA_[A-Za-z0-9_]+",
+        "marker_semantics": "PARLAMENTSSPIEGEL_DOCUMENT_ID",
+        "minimum_marker_count": 1
+      },
+      "discovery_scope": [
+        "PARLIAMENTARY_DOCUMENT",
+        "PARLIAMENTARY_PROCEEDING"
+      ],
+      "jurisdiction_id": "DE-ST",
+      "jurisdiction_name": "Sachsen-Anhalt",
+      "primary_parliamentary_portal_url": "https://www.landtag.sachsen-anhalt.de/dokumente/",
+      "request": {
+        "allowed_host": "landtag-apps.nrw.de",
+        "url": "https://landtag-apps.nrw.de/GeheimesSpiegelein/suche?query=&qyZeitBis=heute&qyZeitAb=letzterMonat&qyHerk=SACA&type=dokument&als=0&size=10"
+      },
+      "requires_fach_review_for_impact_content": true,
+      "requires_fact_validation_before_projection": true,
+      "source_authority": "Parlamentsspiegel – gemeinsames Informationssystem der Landesparlamente",
+      "transport": "HTTP_GET"
+    },
+    {
+      "adapter_id": "state-document-discovery-de-be",
+      "adapter_status": "ACTIVE_DOCUMENT_DISCOVERY",
+      "automatic_publication_allowed": false,
+      "discovery": {
+        "marker_pattern": "ps-detail-BLN_[A-Za-z0-9_]+",
+        "marker_semantics": "PARLAMENTSSPIEGEL_DOCUMENT_ID",
+        "minimum_marker_count": 1
+      },
+      "discovery_scope": [
+        "PARLIAMENTARY_DOCUMENT",
+        "PARLIAMENTARY_PROCEEDING"
+      ],
+      "jurisdiction_id": "DE-BE",
+      "jurisdiction_name": "Berlin",
+      "primary_parliamentary_portal_url": "https://www.parlament-berlin.de/dokumente/open-data",
+      "request": {
+        "allowed_host": "landtag-apps.nrw.de",
+        "url": "https://landtag-apps.nrw.de/GeheimesSpiegelein/suche?query=&qyZeitBis=heute&qyZeitAb=letzterMonat&qyHerk=BLN&type=dokument&als=0&size=10"
+      },
+      "requires_fach_review_for_impact_content": true,
+      "requires_fact_validation_before_projection": true,
+      "source_authority": "Parlamentsspiegel – gemeinsames Informationssystem der Landesparlamente",
+      "transport": "HTTP_GET"
+    },
+    {
+      "adapter_id": "state-document-discovery-de-mv",
+      "adapter_status": "ACTIVE_DOCUMENT_DISCOVERY",
+      "automatic_publication_allowed": false,
+      "discovery": {
+        "marker_pattern": "ps-detail-MEVO_[A-Za-z0-9_]+",
+        "marker_semantics": "PARLAMENTSSPIEGEL_DOCUMENT_ID",
+        "minimum_marker_count": 1
+      },
+      "discovery_scope": [
+        "PARLIAMENTARY_DOCUMENT",
+        "PARLIAMENTARY_PROCEEDING"
+      ],
+      "jurisdiction_id": "DE-MV",
+      "jurisdiction_name": "Mecklenburg-Vorpommern",
+      "primary_parliamentary_portal_url": "https://www.landtag-mv.de/services/parlamentsdokumente",
+      "request": {
+        "allowed_host": "landtag-apps.nrw.de",
+        "url": "https://landtag-apps.nrw.de/GeheimesSpiegelein/suche?query=&qyZeitBis=heute&qyZeitAb=letzterMonat&qyHerk=MEVO&type=dokument&als=0&size=10"
+      },
+      "requires_fach_review_for_impact_content": true,
+      "requires_fact_validation_before_projection": true,
+      "source_authority": "Parlamentsspiegel – gemeinsames Informationssystem der Landesparlamente",
+      "transport": "HTTP_GET"
+    },
+    {
+      "adapter_id": "state-document-discovery-de-sh",
+      "adapter_status": "ACTIVE_DOCUMENT_DISCOVERY",
+      "automatic_publication_allowed": false,
+      "discovery": {
+        "marker_pattern": "ps-detail-SH_[A-Za-z0-9_]+",
+        "marker_semantics": "PARLAMENTSSPIEGEL_DOCUMENT_ID",
+        "minimum_marker_count": 1
+      },
+      "discovery_scope": [
+        "PARLIAMENTARY_DOCUMENT",
+        "PARLIAMENTARY_PROCEEDING"
+      ],
+      "jurisdiction_id": "DE-SH",
+      "jurisdiction_name": "Schleswig-Holstein",
+      "primary_parliamentary_portal_url": "https://www.landtag.ltsh.de/parlament/drucksachen-online/",
+      "request": {
+        "allowed_host": "landtag-apps.nrw.de",
+        "url": "https://landtag-apps.nrw.de/GeheimesSpiegelein/suche?query=&qyZeitBis=heute&qyZeitAb=letzterMonat&qyHerk=SH&type=dokument&als=0&size=10"
+      },
+      "requires_fach_review_for_impact_content": true,
+      "requires_fact_validation_before_projection": true,
+      "source_authority": "Parlamentsspiegel – gemeinsames Informationssystem der Landesparlamente",
+      "transport": "HTTP_GET"
+    },
+    {
+      "adapter_id": "state-document-discovery-de-sl",
+      "adapter_status": "ACTIVE_DOCUMENT_DISCOVERY",
+      "automatic_publication_allowed": false,
+      "discovery": {
+        "marker_pattern": "ps-detail-SAL_[A-Za-z0-9_]+",
+        "marker_semantics": "PARLAMENTSSPIEGEL_DOCUMENT_ID",
+        "minimum_marker_count": 1
+      },
+      "discovery_scope": [
+        "PARLIAMENTARY_DOCUMENT",
+        "PARLIAMENTARY_PROCEEDING"
+      ],
+      "jurisdiction_id": "DE-SL",
+      "jurisdiction_name": "Saarland",
+      "primary_parliamentary_portal_url": "https://www.landtag-saar.de/Dokumente",
+      "request": {
+        "allowed_host": "landtag-apps.nrw.de",
+        "url": "https://landtag-apps.nrw.de/GeheimesSpiegelein/suche?query=&qyZeitBis=heute&qyZeitAb=letzterMonat&qyHerk=SAL&type=dokument&als=0&size=10"
+      },
+      "requires_fach_review_for_impact_content": true,
+      "requires_fact_validation_before_projection": true,
+      "source_authority": "Parlamentsspiegel – gemeinsames Informationssystem der Landesparlamente",
+      "transport": "HTTP_GET"
+    },
+    {
+      "adapter_id": "state-document-discovery-de-nw",
+      "adapter_status": "ACTIVE_DOCUMENT_DISCOVERY",
+      "automatic_publication_allowed": false,
+      "discovery": {
+        "marker_pattern": "ps-detail-NW_[A-Za-z0-9_]+",
+        "marker_semantics": "PARLAMENTSSPIEGEL_DOCUMENT_ID",
+        "minimum_marker_count": 1
+      },
+      "discovery_scope": [
+        "PARLIAMENTARY_DOCUMENT",
+        "PARLIAMENTARY_PROCEEDING"
+      ],
+      "jurisdiction_id": "DE-NW",
+      "jurisdiction_name": "Nordrhein-Westfalen",
+      "primary_parliamentary_portal_url": "https://www.landtag.nrw.de/home/dokumente/dokumentensuche.html",
+      "request": {
+        "allowed_host": "landtag-apps.nrw.de",
+        "url": "https://landtag-apps.nrw.de/GeheimesSpiegelein/suche?query=&qyZeitBis=heute&qyZeitAb=letzterMonat&qyHerk=NW&type=dokument&als=0&size=10"
+      },
+      "requires_fach_review_for_impact_content": true,
+      "requires_fact_validation_before_projection": true,
+      "source_authority": "Parlamentsspiegel – gemeinsames Informationssystem der Landesparlamente",
+      "transport": "HTTP_GET"
+    },
+    {
+      "adapter_id": "state-document-discovery-de-hb",
+      "adapter_status": "ACTIVE_DOCUMENT_DISCOVERY",
+      "automatic_publication_allowed": false,
+      "discovery": {
+        "marker_pattern": "search=DID%3D[A-Z]-[0-9]+",
+        "marker_semantics": "PARIS_DOCUMENT_ID",
+        "minimum_marker_count": 1
+      },
+      "discovery_scope": [
+        "PARLIAMENTARY_DOCUMENT",
+        "PARLIAMENTARY_PROCEEDING"
+      ],
+      "jurisdiction_id": "DE-HB",
+      "jurisdiction_name": "Bremen",
+      "primary_parliamentary_portal_url": "https://paris.bremische-buergerschaft.de/index.htm",
+      "request": {
+        "allowed_host": "paris.bremische-buergerschaft.de",
+        "form": {
+          "01_LISSHFL_Themen": "",
+          "02_LISSHFL_PARL": "L",
+          "03_LISSHFL_WP": "21",
+          "format": "LISSH_BrowseVorgang_Report",
+          "path": "paris/LISSHFL.web"
+        },
+        "url": "https://paris.bremische-buergerschaft.de/starweb/paris/servlet.starweb?"
+      },
+      "requires_fach_review_for_impact_content": true,
+      "requires_fact_validation_before_projection": true,
+      "source_authority": "Bremische Bürgerschaft – PARiS",
+      "transport": "HTTP_POST_FORM"
+    },
+    {
+      "adapter_id": "state-document-discovery-de-ni",
+      "adapter_status": "ACTIVE_DOCUMENT_DISCOVERY",
+      "automatic_publication_allowed": false,
+      "discovery": {
+        "marker_pattern": "ps-detail-NDS_[A-Za-z0-9_]+",
+        "marker_semantics": "PARLAMENTSSPIEGEL_DOCUMENT_ID",
+        "minimum_marker_count": 1
+      },
+      "discovery_scope": [
+        "PARLIAMENTARY_DOCUMENT",
+        "PARLIAMENTARY_PROCEEDING"
+      ],
+      "jurisdiction_id": "DE-NI",
+      "jurisdiction_name": "Niedersachsen",
+      "primary_parliamentary_portal_url": "https://www.landtag-niedersachsen.de/dokumentensuche/",
+      "request": {
+        "allowed_host": "landtag-apps.nrw.de",
+        "url": "https://landtag-apps.nrw.de/GeheimesSpiegelein/suche?query=&qyZeitBis=heute&qyZeitAb=letzterMonat&qyHerk=NDS&type=dokument&als=0&size=10"
+      },
+      "requires_fach_review_for_impact_content": true,
+      "requires_fact_validation_before_projection": true,
+      "source_authority": "Parlamentsspiegel – gemeinsames Informationssystem der Landesparlamente",
+      "transport": "HTTP_GET"
+    },
+    {
+      "adapter_id": "state-document-discovery-de-by",
+      "adapter_status": "ACTIVE_DOCUMENT_DISCOVERY",
+      "automatic_publication_allowed": false,
+      "discovery": {
+        "marker_pattern": "ps-detail-BAY_[A-Za-z0-9_]+",
+        "marker_semantics": "PARLAMENTSSPIEGEL_DOCUMENT_ID",
+        "minimum_marker_count": 1
+      },
+      "discovery_scope": [
+        "PARLIAMENTARY_DOCUMENT",
+        "PARLIAMENTARY_PROCEEDING"
+      ],
+      "jurisdiction_id": "DE-BY",
+      "jurisdiction_name": "Bayern",
+      "primary_parliamentary_portal_url": "https://www.bayern.landtag.de/parlament/dokumente/",
+      "request": {
+        "allowed_host": "landtag-apps.nrw.de",
+        "url": "https://landtag-apps.nrw.de/GeheimesSpiegelein/suche?query=&qyZeitBis=heute&qyZeitAb=letzterMonat&qyHerk=BAY&type=dokument&als=0&size=10"
+      },
+      "requires_fach_review_for_impact_content": true,
+      "requires_fact_validation_before_projection": true,
+      "source_authority": "Parlamentsspiegel – gemeinsames Informationssystem der Landesparlamente",
+      "transport": "HTTP_GET"
+    },
+    {
+      "adapter_id": "state-document-discovery-de-he",
+      "adapter_status": "ACTIVE_DOCUMENT_DISCOVERY",
+      "automatic_publication_allowed": false,
+      "discovery": {
+        "marker_pattern": "ps-detail-HES_[A-Za-z0-9_]+",
+        "marker_semantics": "PARLAMENTSSPIEGEL_DOCUMENT_ID",
+        "minimum_marker_count": 1
+      },
+      "discovery_scope": [
+        "PARLIAMENTARY_DOCUMENT",
+        "PARLIAMENTARY_PROCEEDING"
+      ],
+      "jurisdiction_id": "DE-HE",
+      "jurisdiction_name": "Hessen",
+      "primary_parliamentary_portal_url": "https://hessischer-landtag.de/parlamentsdatenbank",
+      "request": {
+        "allowed_host": "landtag-apps.nrw.de",
+        "url": "https://landtag-apps.nrw.de/GeheimesSpiegelein/suche?query=&qyZeitBis=heute&qyZeitAb=letzterMonat&qyHerk=HES&type=dokument&als=0&size=10"
+      },
+      "requires_fach_review_for_impact_content": true,
+      "requires_fact_validation_before_projection": true,
+      "source_authority": "Parlamentsspiegel – gemeinsames Informationssystem der Landesparlamente",
+      "transport": "HTTP_GET"
+    },
+    {
+      "adapter_id": "state-document-discovery-de-bb",
+      "adapter_status": "ACTIVE_DOCUMENT_DISCOVERY",
+      "automatic_publication_allowed": false,
+      "discovery": {
+        "marker_pattern": "ps-detail-BRA_[A-Za-z0-9_]+",
+        "marker_semantics": "PARLAMENTSSPIEGEL_DOCUMENT_ID",
+        "minimum_marker_count": 1
+      },
+      "discovery_scope": [
+        "PARLIAMENTARY_DOCUMENT",
+        "PARLIAMENTARY_PROCEEDING"
+      ],
+      "jurisdiction_id": "DE-BB",
+      "jurisdiction_name": "Brandenburg",
+      "primary_parliamentary_portal_url": "https://www.parlamentsdokumentation.brandenburg.de/",
+      "request": {
+        "allowed_host": "landtag-apps.nrw.de",
+        "url": "https://landtag-apps.nrw.de/GeheimesSpiegelein/suche?query=&qyZeitBis=heute&qyZeitAb=letzterMonat&qyHerk=BRA&type=dokument&als=0&size=10"
+      },
+      "requires_fach_review_for_impact_content": true,
+      "requires_fact_validation_before_projection": true,
+      "source_authority": "Parlamentsspiegel – gemeinsames Informationssystem der Landesparlamente",
+      "transport": "HTTP_GET"
+    },
+    {
+      "adapter_id": "state-document-discovery-de-sn",
+      "adapter_status": "ACTIVE_DOCUMENT_DISCOVERY",
+      "automatic_publication_allowed": false,
+      "discovery": {
+        "marker_pattern": "ps-detail-SAC_[A-Za-z0-9_]+",
+        "marker_semantics": "PARLAMENTSSPIEGEL_DOCUMENT_ID",
+        "minimum_marker_count": 1
+      },
+      "discovery_scope": [
+        "PARLIAMENTARY_DOCUMENT",
+        "PARLIAMENTARY_PROCEEDING"
+      ],
+      "jurisdiction_id": "DE-SN",
+      "jurisdiction_name": "Sachsen",
+      "primary_parliamentary_portal_url": "https://www.landtag.sachsen.de/de/mediathek-und-publikationen/parlamentsdokumente/index",
+      "request": {
+        "allowed_host": "landtag-apps.nrw.de",
+        "url": "https://landtag-apps.nrw.de/GeheimesSpiegelein/suche?query=&qyZeitBis=heute&qyZeitAb=letzterMonat&qyHerk=SAC&type=dokument&als=0&size=10"
+      },
+      "requires_fach_review_for_impact_content": true,
+      "requires_fact_validation_before_projection": true,
+      "source_authority": "Parlamentsspiegel – gemeinsames Informationssystem der Landesparlamente",
+      "transport": "HTTP_GET"
+    },
+    {
+      "adapter_id": "state-document-discovery-de-th",
+      "adapter_status": "ACTIVE_DOCUMENT_DISCOVERY",
+      "automatic_publication_allowed": false,
+      "discovery": {
+        "marker_pattern": "ps-detail-THUE_[A-Za-z0-9_]+",
+        "marker_semantics": "PARLAMENTSSPIEGEL_DOCUMENT_ID",
+        "minimum_marker_count": 1
+      },
+      "discovery_scope": [
+        "PARLIAMENTARY_DOCUMENT",
+        "PARLIAMENTARY_PROCEEDING"
+      ],
+      "jurisdiction_id": "DE-TH",
+      "jurisdiction_name": "Thüringen",
+      "primary_parliamentary_portal_url": "https://parldok.thueringer-landtag.de/Parldok/%C3%BCber.html",
+      "request": {
+        "allowed_host": "landtag-apps.nrw.de",
+        "url": "https://landtag-apps.nrw.de/GeheimesSpiegelein/suche?query=&qyZeitBis=heute&qyZeitAb=letzterMonat&qyHerk=THUE&type=dokument&als=0&size=10"
+      },
+      "requires_fach_review_for_impact_content": true,
+      "requires_fact_validation_before_projection": true,
+      "source_authority": "Parlamentsspiegel – gemeinsames Informationssystem der Landesparlamente",
+      "transport": "HTTP_GET"
+    },
+    {
+      "adapter_id": "state-document-discovery-de-hh",
+      "adapter_status": "ACTIVE_DOCUMENT_DISCOVERY",
+      "automatic_publication_allowed": false,
+      "discovery": {
+        "marker_pattern": "ps-detail-HH_[A-Za-z0-9_]+",
+        "marker_semantics": "PARLAMENTSSPIEGEL_DOCUMENT_ID",
+        "minimum_marker_count": 1
+      },
+      "discovery_scope": [
+        "PARLIAMENTARY_DOCUMENT",
+        "PARLIAMENTARY_PROCEEDING"
+      ],
+      "jurisdiction_id": "DE-HH",
+      "jurisdiction_name": "Hamburg",
+      "primary_parliamentary_portal_url": "https://www.buergerschaft-hh.de/parldok/",
+      "request": {
+        "allowed_host": "landtag-apps.nrw.de",
+        "url": "https://landtag-apps.nrw.de/GeheimesSpiegelein/suche?query=&qyZeitBis=heute&qyZeitAb=letzterMonat&qyHerk=HH&type=dokument&als=0&size=10"
+      },
+      "requires_fach_review_for_impact_content": true,
+      "requires_fact_validation_before_projection": true,
+      "source_authority": "Parlamentsspiegel – gemeinsames Informationssystem der Landesparlamente",
+      "transport": "HTTP_GET"
+    }
+  ],
+  "base_main_commit": "376be9ed1e6f6fc2095111fd86990b3bf149ca9b",
+  "constraints": {
+    "dns_mapping_synthesized": false,
+    "fach_synthesized": false,
+    "impact_direction_synthesized": false,
+    "party_score_created": false,
+    "recommendation_synthesized": false,
+    "vercel_build_triggered": false
+  },
+  "coverage": {
+    "active_document_discovery_adapter_count": 16,
+    "automatic_fach_projection_count": 0,
+    "automatic_public_fact_projection_count": 0,
+    "registered_state_count": 16,
+    "shared_official_parliamentsspiegel_adapter_count": 15,
+    "state_specific_official_adapter_count": 1
+  },
+  "descriptor_sha256": "354d784fc27fc409b4e2158af0cfee0fdbf9d12a1f100f8d10aaa80c791a2f89",
+  "effective_date": "2026-08-24",
+  "hash_definition": "SHA-256 of canonical JSON (UTF-8, sorted keys, compact separators) excluding descriptor_sha256",
+  "publication_boundary": {
+    "automatic_publication_allowed": false,
+    "document_marker_is_impact_evidence": false,
+    "required_next_gate": "SOURCE_IDENTITY_AND_FACT_VALIDATION_THEN_EXPLICIT_FACH_REVIEW_WHERE_APPLICABLE",
+    "source_discovery_is_public_fact": false
+  },
+  "registry_id": "WOEK-STATE-OFFICIAL-DOCUMENT-DISCOVERY-16-V1",
+  "schema_version": "woek-state-official-source-adapters-1.0",
+  "shared_source_evidence": {
+    "authority": "Gemeinsames Informationssystem der Landesparlamente im Auftrag ihrer Präsidentinnen und Präsidenten",
+    "name": "Parlamentsspiegel",
+    "scope": "Server-side document search with direct access to parliamentary proceedings and documents",
+    "url": "https://landtag-apps.nrw.de/GeheimesSpiegelein/suche?type=dokument&als=0&size=10"
+  },
+  "status": "ACTIVE_DOCUMENT_DISCOVERY_16_OF_16"
+}

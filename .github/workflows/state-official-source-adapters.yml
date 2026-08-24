@@ -1,0 +1,71 @@
+name: Parliament official state source adapters
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/state-official-source-adapters.yml"
+      - "tools/validate_state_official_source_adapters.py"
+      - "woek-parlament-app/data/political-jurisdictions.json"
+      - "woek-parlament-app/data/state-sources/official-state-source-adapters-v1.json"
+      - "woek-parlament-app/package.json"
+      - "woek-parlament-app/scripts/run-official-state-source-adapters.mjs"
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/state-official-source-adapters.yml"
+      - "tools/validate_state_official_source_adapters.py"
+      - "woek-parlament-app/data/political-jurisdictions.json"
+      - "woek-parlament-app/data/state-sources/official-state-source-adapters-v1.json"
+      - "woek-parlament-app/package.json"
+      - "woek-parlament-app/scripts/run-official-state-source-adapters.mjs"
+  schedule:
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: parliament-state-source-adapters-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  contract:
+    name: Deterministic 16-state adapter contract
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Validate generated official-source registry
+        run: python3 tools/validate_state_official_source_adapters.py
+      - name: Validate runtime boundary without network
+        working-directory: woek-parlament-app
+        run: npm run check:state-source-adapters
+      - name: Assert immutable validation
+        run: git diff --exit-code
+
+  live-document-discovery:
+    name: Live official document discovery 16 of 16
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Probe official parliamentary document surfaces fail-closed
+        working-directory: woek-parlament-app
+        run: npm run monitor:state-source-adapters -- --output="$RUNNER_TEMP/state-source-adapter-snapshot.json"
+      - name: Preserve discovery-only audit snapshot
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: state-source-adapter-snapshot-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/state-source-adapter-snapshot.json
+          if-no-files-found: error
+          retention-days: 30
