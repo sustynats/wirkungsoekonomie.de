@@ -3828,8 +3828,8 @@ Signals are review candidates, not automatic errors.
 
 ## Recursive non-HTML publication/support surfaces
 
-- Tracked support text files inventoried: **1015**
-- Combined matrix items (routes + extra HTML + support): **17280**
+- Tracked support text files inventoried: **1019**
+- Combined matrix items (routes + extra HTML + support): **17284**
 - Every matrix item exposes the #253 contract fields: source_path, public_url, historical_publication, relevance, classification, required_action, source_refs and status.
 - Includes llms.txt, sitemap/search metadata, structured-data registries, glossary/source archive, library/journal/reference inputs and generators/workflows.
 
@@ -4315,12 +4315,14 @@ Signals are review candidates, not automatic errors.
 | `tools/validate_linke_final_union_c26.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | dns |
 | `tools/validate_mv_current_source_register.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | dns |
 | `tools/validate_parliament_github_golden_state.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | dns |
+| `tools/validate_parliament_issue_241_residual.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | dns |
 | `tools/validate_spd_final_active_leaf_c01i.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | dns |
 | `tools/validate_st_six_party_terminal_release.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | dns, alternativen |
+| `tools/validate_state_official_source_adapters.py` | quality_or_projection_tool | NO_CHANGE_REQUIRED | dns |
 
 ## Review/action closure
 
-- Combined reviewed items: **17281**
+- Combined reviewed items: **17285**
 - Open semantic/action reviews after deterministic projection: **0**
 - Broad novelty/Wirkungsblindheit hits were dispositioned by a second-pass contextual state-absence review; isolated words are not treated as absence claims.
 - `AGENTS.md` is explicitly inventoried as a corrected current guardrail.
