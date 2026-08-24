@@ -1,6 +1,6 @@
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
-import berlinCurrentSourceRegister from "../../data/state-programmes/current-source-registers/berlin-2026.json";
+import berlinCurrentSourceRegister from "../../data/state-programmes/current-source-registers/berlin-2026-v2.json";
 import mvCurrentSourceRegister from "../../data/state-programmes/current-source-registers/mecklenburg-vorpommern-2026.json";
 
 export type StateReviewArea = "regierung" | "wahl";
@@ -46,6 +46,19 @@ export type StateProgrammeSourceEntry = {
   final_election_programme_verified: boolean;
   source_available_for_election_corpus: boolean;
   canonicalization_pending: boolean;
+  canonical_artifact?: null | {
+    artifact_id: string;
+    artifact_url: string;
+    media_type: string;
+    byte_length: number;
+    sha256: string;
+    page_count: number | null;
+    title: string;
+    retrieved_on: string;
+    version_evidence: string;
+    publication_status: string;
+    identity_status: string;
+  };
   assessment_maturity: string;
 };
 
@@ -63,6 +76,9 @@ export type StateProgrammeSourceRegister = {
     election_source_available_canonicalization_pending_count: number;
     final_election_programme_not_verified_count: number;
     source_available_for_election_corpus_count: number;
+    canonical_artifact_count?: number;
+    byte_exact_current_available_final_programme_set_count?: number;
+    canonicalization_completed_in_v2_count?: number;
     full_final_election_programme_corpus_available: boolean;
     assessment_maturity: string;
   };
@@ -138,7 +154,7 @@ export const statePublicContent: Record<string, StatePublicContent> = {
     electionField: {
       electionDate: "20.09.2026",
       officialFieldLabel: "17 Parteien mit zugelassenen Landes- oder Bezirkslisten",
-      officialFieldDetail: "Alle 17 zugelassenen Parteien sind im aktuellen Quellenstand klassifiziert: 9 finale Wahlprogramme sind verifiziert, 3 Wahlprogramm-/Manifestquellen warten noch auf exakte Kanonisierung und für 5 Parteien ist kein finales Berlin-2026-Vollprogramm verifiziert. Das ist vollständige Quellenklassifikation, kein Vollreview aller Programme.",
+      officialFieldDetail: "Alle 17 zugelassenen Parteien sind im aktuellen Quellenstand klassifiziert: 12 aktuell verfügbare finale Wahlprogramm-/Manifestartefakte sind bytegenau verifiziert und für 5 Parteien ist kein finales Berlin-2026-Vollprogramm verifiziert. Das ist vollständige Quellenklassifikation und Artefakt-Freeze, kein Vollreview aller Programme.",
       officialSourceUrl: "https://www.berlin.de/wahlen/pressemitteilungen/2026/pressemitteilung.1697177.php",
       sourceAsOf: "24.07.2026",
     },

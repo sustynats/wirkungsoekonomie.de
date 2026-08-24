@@ -15,7 +15,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 MATRIX_PATH = ROOT / "docs/audits/parliament-241-current-residual-2026-08-24.json"
 ST_PATH = ROOT / "woek-parlament-app/data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-six-party-terminal-release-v1.json"
-BE_PATH = ROOT / "woek-parlament-app/data/state-programmes/current-source-registers/berlin-2026.json"
+BE_PATH = ROOT / "woek-parlament-app/data/state-programmes/current-source-registers/berlin-2026-v2.json"
 MV_PATH = ROOT / "woek-parlament-app/data/state-programmes/current-source-registers/mecklenburg-vorpommern-2026.json"
 GOLDEN_PATH = ROOT / "ops/releases/parliament-github-golden-state-2026-08-23.json"
 
@@ -69,8 +69,9 @@ def validate() -> dict:
     require(st["authoritative_totals"] == {"effect_mechanisms": 5308, "non_effect_source_leaves": 95, "source_units": 5403}, "ISSUE_241_ST_COUNTS_DRIFT")
     require(berlin["status"] == "CURRENT_SOURCE_CLASSIFICATION_COMPLETE_17_OF_17", "ISSUE_241_BE_SOURCE_FIELD_DRIFT")
     require(berlin["coverage"]["assessment_maturity"] == "PARTIAL_ANALYSIS_NEEDS_COMPLETION", "ISSUE_241_BE_FALSE_TERMINAL")
-    require(berlin["coverage"]["final_election_programme_verified_count"] == 9, "ISSUE_241_BE_FINAL_COUNT_DRIFT")
-    require(berlin["coverage"]["election_source_available_canonicalization_pending_count"] == 3, "ISSUE_241_BE_CANONICALIZATION_COUNT_DRIFT")
+    require(berlin["coverage"]["final_election_programme_verified_count"] == 12, "ISSUE_241_BE_FINAL_COUNT_DRIFT")
+    require(berlin["coverage"]["election_source_available_canonicalization_pending_count"] == 0, "ISSUE_241_BE_CANONICALIZATION_COUNT_DRIFT")
+    require(berlin["coverage"]["canonical_artifact_count"] == 12, "ISSUE_241_BE_CANONICAL_ARTIFACT_COUNT_DRIFT")
     require(mv["status"] == "CURRENT_SOURCE_CLASSIFICATION_COMPLETE_19_OF_19", "ISSUE_241_MV_SOURCE_FIELD_DRIFT")
     require(mv["coverage"]["assessment_maturity"] == "PARTIAL_ANALYSIS_NEEDS_COMPLETION", "ISSUE_241_MV_FALSE_TERMINAL")
     require(mv["coverage"]["final_election_programme_verified_count"] == 10, "ISSUE_241_MV_FINAL_COUNT_DRIFT")
@@ -79,10 +80,10 @@ def validate() -> dict:
 
     technical = matrix["finite_residuals"]["technical"]
     fach = matrix["finite_residuals"]["fach_review_required"]
-    require([item["id"] for item in technical[:2]] == ["BE-SOURCE-CANONICALIZATION-RESIDUAL", "MV-SOURCE-CANONICALIZATION-RESIDUAL"], "ISSUE_241_STATE_ORDER_DRIFT")
-    require(technical[0]["items"] == ["AfD", "DKP", "SGP"], "ISSUE_241_BE_TECHNICAL_RESIDUAL_DRIFT")
-    require(technical[1]["items"] == ["FREIE WAEHLER", "Die PARTEI", "Volt"], "ISSUE_241_MV_TECHNICAL_RESIDUAL_DRIFT")
-    require(len(fach[0]["verified_final_programmes"]) == 9 and len(fach[0]["canonicalization_pending_programmes"]) == 3, "ISSUE_241_BE_FACH_RESIDUAL_DRIFT")
+    require([item["id"] for item in technical[:2]] == ["MV-SOURCE-CANONICALIZATION-RESIDUAL", "STATE-OFFICIAL-SOURCE-ADAPTER-RESIDUAL"], "ISSUE_241_STATE_ORDER_DRIFT")
+    require(technical[0]["items"] == ["FREIE WAEHLER", "Die PARTEI", "Volt"], "ISSUE_241_MV_TECHNICAL_RESIDUAL_DRIFT")
+    require(len(fach[0]["verified_final_programmes"]) == 12 and len(fach[0]["canonicalization_pending_programmes"]) == 0, "ISSUE_241_BE_FACH_RESIDUAL_DRIFT")
+    require(fach[0]["canonical_artifact_register"].endswith("berlin-2026-v2.json"), "ISSUE_241_BE_FACH_ARTIFACT_REGISTER_DRIFT")
     require(len(fach[1]["verified_final_programmes"]) == 10 and len(fach[1]["canonicalization_pending_programmes"]) == 3, "ISSUE_241_MV_FACH_RESIDUAL_DRIFT")
     require(fach[2]["source_commitment_count"] == 1593 and len(fach[2]["documents"]) == 7, "ISSUE_241_BUND_FACH_RESIDUAL_DRIFT")
     require(not any(matrix["constraints"].values()), "ISSUE_241_FORBIDDEN_SYNTHESIS_OR_DEPLOYMENT")
@@ -98,9 +99,9 @@ def validate() -> dict:
         "audited_main_commit": matrix["audited_main_commit"],
         "requirements": len(requirements),
         "classification_counts": dict(sorted(counts.items())),
-        "berlin_technical_items": 3,
+        "berlin_technical_items": 0,
         "mv_technical_items": 3,
-        "berlin_verified_final_programmes_pending_explicit_full_fach": 9,
+        "berlin_verified_final_programmes_pending_explicit_full_fach": 12,
         "mv_verified_final_programmes_pending_explicit_full_fach": 10,
         "no_new_vercel_build": True,
     }

@@ -2,7 +2,7 @@
   "schema_version": "woek-parliament-issue-241-current-residual-1.0",
   "matrix_id": "WOEK-PARLIAMENT-241-CURRENT-RESIDUAL-2026-08-24",
   "issue": 241,
-  "audited_main_commit": "1a9e14aea4f5cfa4f8fd69083b0bb3ac830ca098",
+  "audited_main_commit": "76e885da27574b1c1d8cd3cbcf6cf6083bceee63",
   "last_accepted_parliament_production_commit": "3539aae4920291f45ec03b4c297af147b9a9eb89",
   "status": "OPEN_FINITE_FACH_AND_TECHNICAL_RESIDUALS",
   "classification_taxonomy": [
@@ -32,11 +32,12 @@
     "berlin": {
       "status": "PARTIAL_ANALYSIS_NEEDS_COMPLETION",
       "classified_parties": 17,
-      "verified_final_programmes": 9,
-      "canonicalization_pending": 3,
+      "verified_final_programmes": 12,
+      "canonicalization_pending": 0,
+      "byte_exact_canonical_artifacts": 12,
       "final_programme_not_verified": 5,
       "existing_theme_reviews": 6,
-      "evidence": "woek-parlament-app/data/state-programmes/current-source-registers/berlin-2026.json"
+      "evidence": "woek-parlament-app/data/state-programmes/current-source-registers/berlin-2026-v2.json"
     },
     "mecklenburg_vorpommern": {
       "status": "PARTIAL_ANALYSIS_NEEDS_COMPLETION",
@@ -389,9 +390,9 @@
       "id": "241-F-02-BERLIN-PRIORITY",
       "issue_241_refs": ["F/Berlin 20.09.2026"],
       "title": "Berlin aktuelle Quellen zuerst technisch schliessen, dann explizite Fachresiduals",
-      "status": "TECHNICAL_GAP",
-      "evidence": ["woek-parlament-app/data/state-programmes/current-source-registers/berlin-2026.json"],
-      "residual": "BE-SOURCE-CANONICALIZATION-RESIDUAL"
+      "status": "DONE_ON_MAIN",
+      "evidence": ["woek-parlament-app/data/state-programmes/current-source-registers/berlin-2026-v2.json", "tools/validate_berlin_current_source_register.py"],
+      "residual": null
     },
     {
       "id": "241-F-03-MV-PRIORITY",
@@ -566,7 +567,7 @@
       "issue_241_refs": ["DoD/alles auf main"],
       "title": "Abgeschlossener Umfang auf main",
       "status": "DONE_ON_MAIN",
-      "evidence": ["main@1a9e14aea4f5cfa4f8fd69083b0bb3ac830ca098"],
+      "evidence": ["main@76e885da27574b1c1d8cd3cbcf6cf6083bceee63"],
       "residual": null
     },
     {
@@ -597,29 +598,22 @@
   "finite_residuals": {
     "technical": [
       {
-        "id": "BE-SOURCE-CANONICALIZATION-RESIDUAL",
-        "order": 1,
-        "jurisdiction": "berlin",
-        "items": ["AfD", "DKP", "SGP"],
-        "required_action": "Resolve exact party-source artifact identity, finality/version, byte snapshot and SHA-256; do not infer finality from link text."
-      },
-      {
         "id": "MV-SOURCE-CANONICALIZATION-RESIDUAL",
-        "order": 2,
+        "order": 1,
         "jurisdiction": "mecklenburg-vorpommern",
         "items": ["FREIE WAEHLER", "Die PARTEI", "Volt"],
         "required_action": "Resolve exact party-source artifact identity, finality/version, byte snapshot and SHA-256; preserve NOT_YET_VERIFIED where proof remains insufficient."
       },
       {
         "id": "STATE-OFFICIAL-SOURCE-ADAPTER-RESIDUAL",
-        "order": 3,
+        "order": 2,
         "jurisdiction": "all-16-states",
         "items": ["16 operational official-source adapters currently 0/16 in the explicit 2.3 audit baseline"],
         "required_action": "Implement only against enumerated official sources and retain fail-closed coverage labels."
       },
       {
         "id": "BLOCKED_BY_BE_AND_MV_FACH_TERMINAL",
-        "order": 4,
+        "order": 3,
         "jurisdiction": "combined",
         "items": ["superseding combined terminal GitHub descriptor"],
         "required_action": "Create only after Berlin and MV explicit programme-Fach residuals are closed and all GitHub gates pass."
@@ -630,8 +624,9 @@
         "id": "BE-FACH-CONTENT-RESIDUAL",
         "order": 1,
         "jurisdiction": "berlin",
-        "verified_final_programmes": ["BÜNDNIS 90/DIE GRÜNEN", "BSW", "FDP", "Die PARTEI", "Tierschutzpartei", "Volt", "SPD", "CDU", "Die Linke"],
-        "canonicalization_pending_programmes": ["AfD", "DKP", "SGP"],
+        "verified_final_programmes": ["AfD", "BÜNDNIS 90/DIE GRÜNEN", "BSW", "DKP", "FDP", "Die PARTEI", "Tierschutzpartei", "SGP", "Volt", "SPD", "CDU", "Die Linke"],
+        "canonicalization_pending_programmes": [],
+        "canonical_artifact_register": "woek-parlament-app/data/state-programmes/current-source-registers/berlin-2026-v2.json",
         "preserved_existing_scope": "Six cross-party materiality themes; BSW housing is a partial cluster, not programme-complete coverage.",
         "required_fach_action": "For every final verified programme, supply explicit source-bound atom-level Fach records or explicit reviewed-not-assessable reasons."
       },
