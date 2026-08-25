@@ -18,6 +18,7 @@ export type PortalTermKey =
   | "ambivalente_wirkung"
   | "offene_wirkungseinordnung"
   | "wirkungsradar"
+  | "wirkungsbild"
   | "wirkungsprofil_radardiagramm";
 
 export type PortalTerm = {
@@ -106,6 +107,10 @@ export const portalTerminology: Record<PortalTermKey, PortalTerm> = {
   wirkungsradar: {
     label: "Wirkungsradar",
     description: "Ein Orientierungs- und Analyseinstrument, das Wirkungsfelder, Wirkungspotenziale, Risiken, blinde Flecken, Wirkungspfade und Wissensstände sichtbar macht."
+  },
+  wirkungsbild: {
+    label: "Wirkungsbild",
+    description: "Eine didaktische, versionierte Visualisierung bereits fachlich freigegebener Wirkungspfade. Ex ante ist sie ein Szenario, keine Prognose; das Bild ist kein zusätzlicher Beleg und ersetzt weder Fachakte noch Quellen."
   },
   wirkungsprofil_radardiagramm: {
     label: "Wirkungsprofil im Radardiagramm",

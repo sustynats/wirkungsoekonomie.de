@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { portalTerminology, type PortalTermKey } from "@/lib/presentation/terminology";
 
-const terms: PortalTermKey[] = ["wirkung", "wirkungspotenzial", "wirkungsrisiko", "wirkmechanismus", "wirkpfad", "wirkungsbewertung", "gegenfaktum", "evidenzgrenze", "zurechnung", "wirkungsgrenze", "nichtkompensation", "rueckkopplung", "wirkungslenkung", "zusaetzlichkeit", "wirkungsradar"];
+const terms: PortalTermKey[] = ["wirkung", "wirkungspotenzial", "wirkungsrisiko", "wirkmechanismus", "wirkpfad", "wirkungsbewertung", "gegenfaktum", "evidenzgrenze", "zurechnung", "wirkungsgrenze", "nichtkompensation", "rueckkopplung", "wirkungslenkung", "zusaetzlichkeit", "wirkungsradar", "wirkungsbild"];
 
 export const metadata = {
   title: "Begriffe verständlich erklärt",

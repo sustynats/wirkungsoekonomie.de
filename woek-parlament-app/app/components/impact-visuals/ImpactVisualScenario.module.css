@@ -1,0 +1,376 @@
+.module,
+.overview,
+.method {
+  display: grid;
+  gap: 1rem;
+  min-width: 0;
+  overflow: clip;
+  padding: clamp(1rem, 3vw, 1.75rem);
+  border: 1px solid var(--farbe-linie, #d8d2c7);
+  border-radius: var(--radius-karte, 1rem);
+  background: var(--farbe-flaeche-karte, #fff);
+}
+
+.header {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(17rem, .75fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.eyebrow {
+  margin: 0 0 .45rem;
+  color: var(--farbe-text-link, #286a55);
+  font-size: .76rem;
+  font-weight: 800;
+  letter-spacing: .085em;
+  text-transform: uppercase;
+}
+
+.header h2,
+.header h3,
+.overview h2,
+.method h2 {
+  margin-bottom: .55rem;
+}
+
+.disclaimer {
+  margin: 0;
+  font-weight: 750;
+}
+
+.statusLine {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  margin: 0;
+  border: 1px solid var(--farbe-linie, #d8d2c7);
+  background: var(--farbe-linie, #d8d2c7);
+}
+
+.statusLine div {
+  padding: .75rem;
+  background: var(--farbe-flaeche-warm, #f7f4ec);
+}
+
+.statusLine dt,
+.provenance dt,
+.legendDetail dt {
+  font-size: .7rem;
+  font-weight: 800;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+.statusLine dd,
+.provenance dd,
+.legendDetail dd {
+  margin: .2rem 0 0;
+  overflow-wrap: anywhere;
+}
+
+.causalBar {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--farbe-linie, #d8d2c7);
+  background: var(--farbe-linie, #d8d2c7);
+  list-style: none;
+}
+
+.causalBar li {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: .7rem;
+  padding: .85rem;
+  background: var(--farbe-flaeche-warm, #f7f4ec);
+}
+
+.causalBar span,
+.methodGrid span {
+  display: grid;
+  width: 2rem;
+  height: 2rem;
+  place-items: center;
+  color: var(--farbe-flaeche-karte, #fff);
+  border-radius: 50%;
+  background: var(--farbe-flaeche-buehne, #18243a);
+  font-weight: 800;
+}
+
+.causalBar strong,
+.causalBar small {
+  display: block;
+}
+
+.causalBar small {
+  margin-top: .18rem;
+  color: var(--farbe-text-sekundaer, #5c6168);
+  line-height: 1.4;
+}
+
+.failClosed {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: .85rem;
+  padding: 1rem;
+  border: 1px dashed var(--farbe-linie, #bcb5a9);
+  border-radius: .8rem;
+  background: color-mix(in srgb, var(--farbe-flaeche-warm, #f7f4ec) 72%, transparent);
+}
+
+.failClosed > span {
+  display: grid;
+  width: 2.5rem;
+  height: 2.5rem;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--farbe-flaeche-buehne, #18243a);
+  color: #fff;
+}
+
+.failClosed p {
+  max-width: 78ch;
+  margin: .35rem 0 .7rem;
+}
+
+.failClosed summary,
+.provenance summary {
+  min-height: 44px;
+  cursor: pointer;
+  font-weight: 750;
+}
+
+.failClosed li + li {
+  margin-top: .45rem;
+}
+
+.boundaryGrid,
+.overviewGrid,
+.methodGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .8rem;
+}
+
+.boundaryGrid article,
+.overviewGrid article,
+.methodGrid article {
+  min-width: 0;
+  padding: 1rem;
+  border-radius: .8rem;
+  background: var(--farbe-flaeche-warm, #f7f4ec);
+  overflow-wrap: anywhere;
+}
+
+.boundaryGrid h3,
+.overviewGrid h3,
+.methodGrid h3 {
+  margin-bottom: .45rem;
+}
+
+.provenance {
+  padding: .9rem 1rem;
+  border-top: 1px solid var(--farbe-linie, #d8d2c7);
+}
+
+.provenance dl,
+.legendDetail dl {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .7rem;
+}
+
+.provenance dl div,
+.legendDetail dl div {
+  padding: .65rem;
+  background: var(--farbe-flaeche-warm, #f7f4ec);
+}
+
+.interactive {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(18rem, .7fr);
+  gap: 1rem;
+}
+
+.imageFrame {
+  position: relative;
+  min-height: clamp(18rem, 56vw, 38rem);
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border-radius: .8rem;
+  background: var(--farbe-flaeche-warm, #f7f4ec);
+}
+
+.imageFrame img {
+  object-fit: cover;
+}
+
+.marker {
+  position: absolute;
+  z-index: 2;
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  translate: -50% -50%;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: var(--farbe-flaeche-buehne, #18243a);
+  color: #fff;
+  font: 800 1rem/1 var(--schrift-text, sans-serif);
+  cursor: pointer;
+}
+
+.marker[data-active="true"],
+.marker:focus-visible {
+  outline: 3px solid var(--farbe-aktion, #d5a62d);
+  outline-offset: 3px;
+}
+
+.legend ol {
+  display: grid;
+  gap: .6rem;
+  padding: 0;
+  list-style: none;
+}
+
+.legend li {
+  border: 1px solid var(--farbe-linie, #d8d2c7);
+  border-radius: .7rem;
+  overflow: clip;
+}
+
+.legend li > button {
+  display: grid;
+  width: 100%;
+  min-height: 44px;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: .6rem;
+  align-items: center;
+  padding: .65rem;
+  border: 0;
+  background: var(--farbe-flaeche-karte, #fff);
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.legend li > button span {
+  display: grid;
+  width: 2rem;
+  height: 2rem;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--farbe-flaeche-buehne, #18243a);
+  color: #fff;
+  font-weight: 800;
+}
+
+.legendDetail {
+  padding: .75rem;
+  border-top: 1px solid var(--farbe-linie, #d8d2c7);
+}
+
+.overviewGrid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.overviewGrid article > p {
+  margin-bottom: .3rem;
+  color: var(--farbe-text-sekundaer, #5c6168);
+  font-size: .8rem;
+  font-weight: 750;
+}
+
+.overviewGrid ul {
+  display: grid;
+  gap: .45rem;
+  padding: 0;
+  list-style: none;
+}
+
+.overviewGrid li {
+  display: grid;
+  gap: .12rem;
+}
+
+.overviewGrid li strong {
+  font-size: .82rem;
+}
+
+.overviewGrid a,
+.overviewMethod a {
+  font-weight: 750;
+}
+
+.overviewMethod {
+  margin-bottom: 0;
+}
+
+.methodGrid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.methodGrid article {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-content: start;
+  gap: .35rem .7rem;
+}
+
+.methodGrid article > span {
+  grid-row: 1 / 3;
+}
+
+.methodGrid h3,
+.methodGrid p {
+  grid-column: 2;
+}
+
+.methodBoundary {
+  padding: 1rem;
+  border-left: .3rem solid var(--farbe-flaeche-buehne, #18243a);
+  background: var(--farbe-flaeche-warm, #f7f4ec);
+  line-height: 1.6;
+}
+
+@media (max-width: 980px) {
+  .header,
+  .interactive {
+    grid-template-columns: 1fr;
+  }
+
+  .overviewGrid,
+  .methodGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 680px) {
+  .module,
+  .overview,
+  .method {
+    padding: .85rem;
+  }
+
+  .statusLine,
+  .causalBar,
+  .boundaryGrid,
+  .overviewGrid,
+  .methodGrid,
+  .provenance dl,
+  .legendDetail dl {
+    grid-template-columns: 1fr;
+  }
+
+  .failClosed {
+    grid-template-columns: 1fr;
+  }
+
+  .imageFrame {
+    min-height: 16rem;
+  }
+}
