@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "prebuild": "npm run fachvollstaendigkeit:materialize-b07 && npm run government:sync-approved && npm run parliament:sync-approved && npm run observatory:sync-approved && npm run check:accessibility",
-    "build": "node scripts/quality/check-design-tokens.mjs && node scripts/quality/check-positioning-pass.mjs && node scripts/quality/check-same-page-navigation.mjs && node scripts/quality/check-privacy-governance.mjs && node scripts/quality/check-release-safety.mjs --scope=repository && node scripts/quality/verify-public-documents.mjs && node scripts/quality/check-public-content-completeness.mjs && npm run check:public-labels && npm run check:sachsen-anhalt-publication && npm run check:state-publication && npm run check:government-identifiers && next build && node scripts/quality/check-release-safety.mjs --scope=release && node scripts/quality/verify-public-documents.mjs && node scripts/quality/check-public-content-completeness.mjs && node scripts/quality/run-b07-local-audits.mjs",
+    "build": "node scripts/quality/check-design-tokens.mjs && node scripts/quality/check-positioning-pass.mjs && node scripts/quality/check-same-page-navigation.mjs && node scripts/quality/check-privacy-governance.mjs && node scripts/quality/check-release-safety.mjs --scope=repository && node scripts/quality/verify-public-documents.mjs && node scripts/quality/check-public-content-completeness.mjs && npm run check:public-labels && npm run check:sachsen-anhalt-publication && npm run check:impact-visuals && npm run check:state-publication && npm run check:government-identifiers && next build && node scripts/quality/check-release-safety.mjs --scope=release && node scripts/quality/verify-public-documents.mjs && node scripts/quality/check-public-content-completeness.mjs && node scripts/quality/run-b07-local-audits.mjs",
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
@@ -22,6 +22,8 @@
     "check:generic-public-editorial": "node scripts/quality/generic-public-editorial-scan.mjs",
     "check:public-labels": "tsx scripts/quality/check-public-label-inventory.ts",
     "check:sachsen-anhalt-publication": "tsx scripts/quality/check-sachsen-anhalt-programme-publication.ts",
+    "impact-visuals:materialize": "tsx scripts/materialize-sachsen-anhalt-impact-visuals.ts",
+    "check:impact-visuals": "tsx scripts/quality/check-impact-visual-scenarios.ts && tsx scripts/materialize-sachsen-anhalt-impact-visuals.ts --check",
     "check:berlin-current-source": "tsx scripts/quality/check-berlin-current-source.ts",
     "check:berlin-fach-residual": "python3 ../tools/validate_berlin_fach_content_residual.py",
     "check:mv-current-source": "tsx scripts/quality/check-mv-current-source.ts",

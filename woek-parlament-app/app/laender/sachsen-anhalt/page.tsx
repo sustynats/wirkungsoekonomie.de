@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { PublicMaturity } from "@/app/components/PublicMaturity";
 import { OverviewAssessment } from "@/app/components/OverviewAssessment";
+import { ImpactVisualOverview } from "@/app/components/impact-visuals/ImpactVisualOverview";
 import { jurisdictionById } from "@/lib/parliament/jurisdictions";
 import { saxonyAnhaltElectionProgrammes } from "@/data/sachsen-anhalt-election-programmes";
 import { saxonyAnhaltProgrammeEditorial, type ProgrammeDirection } from "@/data/presentation/sachsen-anhalt-programme-editorial-v2";
@@ -82,6 +83,8 @@ export default function SaxonyAnhaltPage() {
           <li><strong>3. Source Fidelity</strong><span>Historische Fachquellen und Originaltexte werden nicht überschrieben. Korrekturen liegen als neue Editorial-Schicht darüber.</span></li>
         </ul>
       </section>
+
+      <div className="shell section"><ImpactVisualOverview /></div>
 
       <section className="shell section" id="wahlprogramme" aria-labelledby="state-programmes-title">
         <div className="section-heading"><div><p className="eyebrow">Wahlprogramme im Wirkungscheck</p><h2 id="state-programmes-title">Sechs Programme - sechs unterschiedliche Wirkungsprofile.</h2><p className="lead">Die Karten zeigen zuerst den qualitativen WÖk-Potenzialbefund, danach die vollständigen freigegebenen Key Findings und das Richtungsprofil der nachgeprüften Schlüsselpfade. Das ist keine Wahlempfehlung und kein Parteienranking.</p></div></div>

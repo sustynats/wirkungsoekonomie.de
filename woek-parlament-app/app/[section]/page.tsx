@@ -4,6 +4,7 @@ import { CaseCard } from "@/app/components/CaseCard";
 import { EditorialVisual } from "@/app/components/EditorialVisual";
 import { DecisionReadinessGate } from "@/app/components/DecisionReadinessGate";
 import { CanonicalMethodExplainer } from "@/app/components/CanonicalMethodExplainer";
+import { ImpactVisualMethod } from "@/app/components/impact-visuals/ImpactVisualMethod";
 import { listPublishedCases } from "@/lib/cases";
 
 const sectionCopy: Record<string, { eyebrow: string; title: string; lead: string; empty: string }> = {
@@ -47,6 +48,7 @@ function Methodology() {
   return <>
     <section className="notice notice-neutral" id="grundlagen"><strong>Was ist ein WÖk-Wirkungscheck?</strong><p>Die WÖk beginnt nicht dort, wo bestehende Folgenabschätzung endet, weil diese „falsch“ wäre. Sie ergänzt ministerielle Facharbeit, Gesetzesfolgenabschätzung, Rechtsprüfung, parlamentarische Beratung und Evaluation um eine gemeinsame Wirkungsarchitektur, die vor der Entscheidung beginnt und nach der Umsetzung weiterläuft.</p></section>
     <CanonicalMethodExplainer />
+    <ImpactVisualMethod />
     <div id="entscheidungsreife"><DecisionReadinessGate /></div>
     <EditorialVisual
       src="/visuals/woek/parlamentarische-wirkungspruefung.svg"

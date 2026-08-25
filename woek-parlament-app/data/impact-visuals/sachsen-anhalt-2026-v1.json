@@ -1,0 +1,969 @@
+{
+  "schema_version": "woek-impact-visual-scenarios-1.0",
+  "manifest_id": "LTW-2026-ST-IMPACT-VISUAL-SCENARIOS-V1",
+  "manifest_sha256": "a5bdab6edece1791ce2b6cba2b2e483db1d2d07bf77853451105063eebc42351",
+  "base_main_commit": "c81fbefafb33d976137955d08edebd5284cbdced",
+  "source_release": {
+    "manifest_id": "LTW-2026-ST-SIX-PARTY-TERMINAL-RELEASE-V1",
+    "manifest_path": "data/fachakten/source-manifests/sachsen-anhalt/ltw-2026-st-six-party-terminal-release-v1.json",
+    "descriptor_sha256": "6e0cf6fce5c41734bfd3f5480e562b93aff38a759c9b57b55298d8da4ee9dcee",
+    "published_commit": "fefec75f09dc70db8de7880f93b4e8c6788e4461"
+  },
+  "generation_policy": {
+    "input_mode": "APPROVED_VISUAL_BRIEF_ONLY",
+    "raw_programme_text_allowed": false,
+    "campaign_slogan_allowed": false,
+    "party_valence_style": "PORTAL_NEUTRAL",
+    "fachdata_backpropagation_allowed": false,
+    "automatic_generation_allowed": false
+  },
+  "public_contract": {
+    "label": "Wirkungsbild",
+    "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
+    "image_is_evidence": false
+  },
+  "records": [
+    {
+      "id": "woek-impact-visual-st-2026-cdu-program-v1",
+      "object_type": "PROGRAM",
+      "object_id": "ltw-2026-st-cdu",
+      "source_key": "ltw-2026-st-cdu",
+      "analysis_version": "LTW-2026-ST-SIX-PARTY-TERMINAL-RELEASE-V1+WOEK-WAHLPROGRAMM-BLAUPAUSE-V2.0",
+      "knowledge_cutoff": "2026-08-23",
+      "stage": "EX_ANTE",
+      "visual_scope": "PROGRAM_SCENARIO",
+      "title": "Programm-Szenario · CDU Sachsen-Anhalt",
+      "normalized_subject": "Landtagswahlprogramm Sachsen-Anhalt 2026 · programmweite Folgenpfade",
+      "source_statement_refs": [
+        "ltw-2026-st-cdu-0018-das-institut-fuer-brand-und-katastrophenschutz-in-heyroths",
+        "ltw-2026-st-cdu-0026-darauf-muessen-und-wollen-wir-staerker-setzen-auf-eine-pol",
+        "ltw-2026-st-cdu-0001-spuerbare-sicherheit-sicherheit-gewaehrleisten-durch-eine",
+        "ltw-2026-st-cdu-0014-zugleich-setzen-wir-uns-auf-bundesebene-fuer-die-schnelle"
+      ],
+      "selected_impact_path_ids": [
+        "ltw-2026-st-cdu-0018-das-institut-fuer-brand-und-katastrophenschutz-in-heyroths",
+        "ltw-2026-st-cdu-0026-darauf-muessen-und-wollen-wir-staerker-setzen-auf-eine-pol",
+        "ltw-2026-st-cdu-0001-spuerbare-sicherheit-sicherheit-gewaehrleisten-durch-eine",
+        "ltw-2026-st-cdu-0014-zugleich-setzen-wir-uns-auf-bundesebene-fuer-die-schnelle"
+      ],
+      "eligible_approved_analysis_refs": [
+        "ltw-2026-st-cdu-0018-das-institut-fuer-brand-und-katastrophenschutz-in-heyroths",
+        "ltw-2026-st-cdu-0026-darauf-muessen-und-wollen-wir-staerker-setzen-auf-eine-pol",
+        "ltw-2026-st-cdu-0001-spuerbare-sicherheit-sicherheit-gewaehrleisten-durch-eine",
+        "ltw-2026-st-cdu-0014-zugleich-setzen-wir-uns-auf-bundesebene-fuer-die-schnelle"
+      ],
+      "selection_rationale": "Die bereits fachlich kuratierte Editorial-v2-Menge der vier Schlüsselpfade wird unverändert als Kandidatenmenge wiederverwendet. Ohne freigegebenen Visual Brief wird daraus kein sichtbares Szenario materialisiert.",
+      "visible_elements": [],
+      "non_visual_effects": [],
+      "non_visual_effects_review_status": "PENDING_APPROVAL",
+      "omitted_material_effects": [],
+      "system_boundary": null,
+      "scenario_assumptions": [],
+      "evidence_summary": "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das noch nicht vorhandene Bild liefert keine zusätzliche Evidenz.",
+      "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
+      "asset_path": null,
+      "alt_text": null,
+      "visual_brief": null,
+      "generator_metadata": null,
+      "asset_sha256": null,
+      "editorial_review_status": "NO_APPROVED_VISUAL_SCENARIO",
+      "source_fidelity_status": "FAIL_CLOSED_NO_PUBLIC_ASSET",
+      "missing_approved_inputs": [
+        {
+          "code": "REVIEWED_VISUAL_BRIEF",
+          "description": "Ein versionierter, fachlich und redaktionell freigegebener Visual Brief auf Basis ausschließlich freigegebener Analysefelder fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "VISIBLE_ELEMENT_MAPPING",
+          "description": "Die explizite Zuordnung jedes darstellbaren Elements zu Zustandsänderung, Wirkungsordnung, Betroffenen, Zeithorizont, Richtung, Evidenz und Unsicherheit fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "NON_VISUAL_EFFECT_SELECTION",
+          "description": "Die fachlich freigegebene Auswahl materieller, im Bild nicht darstellbarer Folgen und Grenzen fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "ALT_TEXT_REVIEW",
+          "description": "Ein szenariospezifischer, fachlich präziser Alt-Text mit Unsicherheitsgrenze fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "EDITORIAL_VISUAL_SIGNOFF",
+          "description": "Die abschließende Prüfung auf Source Fidelity, Frame-Schutz, Stilneutralität und Aussagegrenzen fehlt.",
+          "required_for": "BOTH"
+        }
+      ],
+      "change_history": [
+        {
+          "version": "1.0",
+          "date": "2026-08-25",
+          "status": "FAIL_CLOSED_CREATED",
+          "note": "Architektur-Record ohne Bildasset angelegt; keine Fachwirkung, Auswahl oder Visualisierung synthetisiert."
+        }
+      ]
+    },
+    {
+      "id": "woek-impact-visual-st-2026-cdu-case-v1",
+      "object_type": "IMPACT_CASE",
+      "object_id": "ltw-2026-st-cdu:case-scenario-slot",
+      "source_key": "ltw-2026-st-cdu",
+      "analysis_version": "LTW-2026-ST-SIX-PARTY-TERMINAL-RELEASE-V1+WOEK-WAHLPROGRAMM-BLAUPAUSE-V2.0",
+      "knowledge_cutoff": "2026-08-23",
+      "stage": "EX_ANTE",
+      "visual_scope": "CASE_SCENARIO",
+      "title": "Fallvertiefung · CDU Sachsen-Anhalt",
+      "normalized_subject": "Landtagswahlprogramm Sachsen-Anhalt 2026 · einzelne freigegebene Analyse",
+      "source_statement_refs": [],
+      "selected_impact_path_ids": [],
+      "eligible_approved_analysis_refs": [
+        "ltw-2026-st-cdu-0018-das-institut-fuer-brand-und-katastrophenschutz-in-heyroths",
+        "ltw-2026-st-cdu-0026-darauf-muessen-und-wollen-wir-staerker-setzen-auf-eine-pol",
+        "ltw-2026-st-cdu-0001-spuerbare-sicherheit-sicherheit-gewaehrleisten-durch-eine",
+        "ltw-2026-st-cdu-0014-zugleich-setzen-wir-uns-auf-bundesebene-fuer-die-schnelle"
+      ],
+      "selection_rationale": "Es wird keine Einzelanalyse technisch ausgewählt. Die vorhandenen Editorial-v2-Schlüsselpfade bleiben lediglich als endliche fachlich freigegebene Kandidatenmenge dokumentiert, bis eine symmetrische Case-Auswahl freigegeben ist.",
+      "visible_elements": [],
+      "non_visual_effects": [],
+      "non_visual_effects_review_status": "PENDING_APPROVAL",
+      "omitted_material_effects": [],
+      "system_boundary": null,
+      "scenario_assumptions": [],
+      "evidence_summary": "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das noch nicht vorhandene Bild liefert keine zusätzliche Evidenz.",
+      "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
+      "asset_path": null,
+      "alt_text": null,
+      "visual_brief": null,
+      "generator_metadata": null,
+      "asset_sha256": null,
+      "editorial_review_status": "NO_APPROVED_VISUAL_SCENARIO",
+      "source_fidelity_status": "FAIL_CLOSED_NO_PUBLIC_ASSET",
+      "missing_approved_inputs": [
+        {
+          "code": "APPROVED_CASE_SELECTION",
+          "description": "Eine einzelne freigegebene Analyse wurde noch nicht ausdrücklich und symmetrisch als Case-Deep-Dive ausgewählt.",
+          "required_for": "CASE_SCENARIO"
+        },
+        {
+          "code": "REVIEWED_VISUAL_BRIEF",
+          "description": "Ein versionierter, fachlich und redaktionell freigegebener Visual Brief auf Basis ausschließlich freigegebener Analysefelder fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "VISIBLE_ELEMENT_MAPPING",
+          "description": "Die explizite Zuordnung jedes darstellbaren Elements zu Zustandsänderung, Wirkungsordnung, Betroffenen, Zeithorizont, Richtung, Evidenz und Unsicherheit fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "NON_VISUAL_EFFECT_SELECTION",
+          "description": "Die fachlich freigegebene Auswahl materieller, im Bild nicht darstellbarer Folgen und Grenzen fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "ALT_TEXT_REVIEW",
+          "description": "Ein szenariospezifischer, fachlich präziser Alt-Text mit Unsicherheitsgrenze fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "EDITORIAL_VISUAL_SIGNOFF",
+          "description": "Die abschließende Prüfung auf Source Fidelity, Frame-Schutz, Stilneutralität und Aussagegrenzen fehlt.",
+          "required_for": "BOTH"
+        }
+      ],
+      "change_history": [
+        {
+          "version": "1.0",
+          "date": "2026-08-25",
+          "status": "FAIL_CLOSED_CREATED",
+          "note": "Architektur-Record ohne Bildasset angelegt; keine Fachwirkung, Auswahl oder Visualisierung synthetisiert."
+        }
+      ]
+    },
+    {
+      "id": "woek-impact-visual-st-2026-spd-program-v1",
+      "object_type": "PROGRAM",
+      "object_id": "ltw-2026-st-spd",
+      "source_key": "ltw-2026-st-spd",
+      "analysis_version": "LTW-2026-ST-SIX-PARTY-TERMINAL-RELEASE-V1+WOEK-WAHLPROGRAMM-BLAUPAUSE-V2.0",
+      "knowledge_cutoff": "2026-08-23",
+      "stage": "EX_ANTE",
+      "visual_scope": "PROGRAM_SCENARIO",
+      "title": "Programm-Szenario · SPD Sachsen-Anhalt",
+      "normalized_subject": "Landtagswahlprogramm Sachsen-Anhalt 2026 · programmweite Folgenpfade",
+      "source_statement_refs": [
+        "ltw-2026-st-spd-0016-wir-foerdern-gezielte-massnahmen-zum-erhalt-der-beschaefti",
+        "ltw-2026-st-spd-0005-repair-caf-s-werden-wir-weiterhin-finanziell-unterstuetzen",
+        "ltw-2026-st-spd-0014-auch-jugendliche-ohne-schulabschluss-und-mit-gebrochenen-b",
+        "ltw-2026-st-spd-0011-projekte-wie-revier-pionier-wollen-wir-deswegen-in-der-kom"
+      ],
+      "selected_impact_path_ids": [
+        "ltw-2026-st-spd-0016-wir-foerdern-gezielte-massnahmen-zum-erhalt-der-beschaefti",
+        "ltw-2026-st-spd-0005-repair-caf-s-werden-wir-weiterhin-finanziell-unterstuetzen",
+        "ltw-2026-st-spd-0014-auch-jugendliche-ohne-schulabschluss-und-mit-gebrochenen-b",
+        "ltw-2026-st-spd-0011-projekte-wie-revier-pionier-wollen-wir-deswegen-in-der-kom"
+      ],
+      "eligible_approved_analysis_refs": [
+        "ltw-2026-st-spd-0016-wir-foerdern-gezielte-massnahmen-zum-erhalt-der-beschaefti",
+        "ltw-2026-st-spd-0005-repair-caf-s-werden-wir-weiterhin-finanziell-unterstuetzen",
+        "ltw-2026-st-spd-0014-auch-jugendliche-ohne-schulabschluss-und-mit-gebrochenen-b",
+        "ltw-2026-st-spd-0011-projekte-wie-revier-pionier-wollen-wir-deswegen-in-der-kom"
+      ],
+      "selection_rationale": "Die bereits fachlich kuratierte Editorial-v2-Menge der vier Schlüsselpfade wird unverändert als Kandidatenmenge wiederverwendet. Ohne freigegebenen Visual Brief wird daraus kein sichtbares Szenario materialisiert.",
+      "visible_elements": [],
+      "non_visual_effects": [],
+      "non_visual_effects_review_status": "PENDING_APPROVAL",
+      "omitted_material_effects": [],
+      "system_boundary": null,
+      "scenario_assumptions": [],
+      "evidence_summary": "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das noch nicht vorhandene Bild liefert keine zusätzliche Evidenz.",
+      "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
+      "asset_path": null,
+      "alt_text": null,
+      "visual_brief": null,
+      "generator_metadata": null,
+      "asset_sha256": null,
+      "editorial_review_status": "NO_APPROVED_VISUAL_SCENARIO",
+      "source_fidelity_status": "FAIL_CLOSED_NO_PUBLIC_ASSET",
+      "missing_approved_inputs": [
+        {
+          "code": "REVIEWED_VISUAL_BRIEF",
+          "description": "Ein versionierter, fachlich und redaktionell freigegebener Visual Brief auf Basis ausschließlich freigegebener Analysefelder fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "VISIBLE_ELEMENT_MAPPING",
+          "description": "Die explizite Zuordnung jedes darstellbaren Elements zu Zustandsänderung, Wirkungsordnung, Betroffenen, Zeithorizont, Richtung, Evidenz und Unsicherheit fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "NON_VISUAL_EFFECT_SELECTION",
+          "description": "Die fachlich freigegebene Auswahl materieller, im Bild nicht darstellbarer Folgen und Grenzen fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "ALT_TEXT_REVIEW",
+          "description": "Ein szenariospezifischer, fachlich präziser Alt-Text mit Unsicherheitsgrenze fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "EDITORIAL_VISUAL_SIGNOFF",
+          "description": "Die abschließende Prüfung auf Source Fidelity, Frame-Schutz, Stilneutralität und Aussagegrenzen fehlt.",
+          "required_for": "BOTH"
+        }
+      ],
+      "change_history": [
+        {
+          "version": "1.0",
+          "date": "2026-08-25",
+          "status": "FAIL_CLOSED_CREATED",
+          "note": "Architektur-Record ohne Bildasset angelegt; keine Fachwirkung, Auswahl oder Visualisierung synthetisiert."
+        }
+      ]
+    },
+    {
+      "id": "woek-impact-visual-st-2026-spd-case-v1",
+      "object_type": "IMPACT_CASE",
+      "object_id": "ltw-2026-st-spd:case-scenario-slot",
+      "source_key": "ltw-2026-st-spd",
+      "analysis_version": "LTW-2026-ST-SIX-PARTY-TERMINAL-RELEASE-V1+WOEK-WAHLPROGRAMM-BLAUPAUSE-V2.0",
+      "knowledge_cutoff": "2026-08-23",
+      "stage": "EX_ANTE",
+      "visual_scope": "CASE_SCENARIO",
+      "title": "Fallvertiefung · SPD Sachsen-Anhalt",
+      "normalized_subject": "Landtagswahlprogramm Sachsen-Anhalt 2026 · einzelne freigegebene Analyse",
+      "source_statement_refs": [],
+      "selected_impact_path_ids": [],
+      "eligible_approved_analysis_refs": [
+        "ltw-2026-st-spd-0016-wir-foerdern-gezielte-massnahmen-zum-erhalt-der-beschaefti",
+        "ltw-2026-st-spd-0005-repair-caf-s-werden-wir-weiterhin-finanziell-unterstuetzen",
+        "ltw-2026-st-spd-0014-auch-jugendliche-ohne-schulabschluss-und-mit-gebrochenen-b",
+        "ltw-2026-st-spd-0011-projekte-wie-revier-pionier-wollen-wir-deswegen-in-der-kom"
+      ],
+      "selection_rationale": "Es wird keine Einzelanalyse technisch ausgewählt. Die vorhandenen Editorial-v2-Schlüsselpfade bleiben lediglich als endliche fachlich freigegebene Kandidatenmenge dokumentiert, bis eine symmetrische Case-Auswahl freigegeben ist.",
+      "visible_elements": [],
+      "non_visual_effects": [],
+      "non_visual_effects_review_status": "PENDING_APPROVAL",
+      "omitted_material_effects": [],
+      "system_boundary": null,
+      "scenario_assumptions": [],
+      "evidence_summary": "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das noch nicht vorhandene Bild liefert keine zusätzliche Evidenz.",
+      "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
+      "asset_path": null,
+      "alt_text": null,
+      "visual_brief": null,
+      "generator_metadata": null,
+      "asset_sha256": null,
+      "editorial_review_status": "NO_APPROVED_VISUAL_SCENARIO",
+      "source_fidelity_status": "FAIL_CLOSED_NO_PUBLIC_ASSET",
+      "missing_approved_inputs": [
+        {
+          "code": "APPROVED_CASE_SELECTION",
+          "description": "Eine einzelne freigegebene Analyse wurde noch nicht ausdrücklich und symmetrisch als Case-Deep-Dive ausgewählt.",
+          "required_for": "CASE_SCENARIO"
+        },
+        {
+          "code": "REVIEWED_VISUAL_BRIEF",
+          "description": "Ein versionierter, fachlich und redaktionell freigegebener Visual Brief auf Basis ausschließlich freigegebener Analysefelder fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "VISIBLE_ELEMENT_MAPPING",
+          "description": "Die explizite Zuordnung jedes darstellbaren Elements zu Zustandsänderung, Wirkungsordnung, Betroffenen, Zeithorizont, Richtung, Evidenz und Unsicherheit fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "NON_VISUAL_EFFECT_SELECTION",
+          "description": "Die fachlich freigegebene Auswahl materieller, im Bild nicht darstellbarer Folgen und Grenzen fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "ALT_TEXT_REVIEW",
+          "description": "Ein szenariospezifischer, fachlich präziser Alt-Text mit Unsicherheitsgrenze fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "EDITORIAL_VISUAL_SIGNOFF",
+          "description": "Die abschließende Prüfung auf Source Fidelity, Frame-Schutz, Stilneutralität und Aussagegrenzen fehlt.",
+          "required_for": "BOTH"
+        }
+      ],
+      "change_history": [
+        {
+          "version": "1.0",
+          "date": "2026-08-25",
+          "status": "FAIL_CLOSED_CREATED",
+          "note": "Architektur-Record ohne Bildasset angelegt; keine Fachwirkung, Auswahl oder Visualisierung synthetisiert."
+        }
+      ]
+    },
+    {
+      "id": "woek-impact-visual-st-2026-gruene-program-v1",
+      "object_type": "PROGRAM",
+      "object_id": "ltw-2026-st-gruene",
+      "source_key": "ltw-2026-st-gruene",
+      "analysis_version": "LTW-2026-ST-SIX-PARTY-TERMINAL-RELEASE-V1+WOEK-WAHLPROGRAMM-BLAUPAUSE-V2.0",
+      "knowledge_cutoff": "2026-08-23",
+      "stage": "EX_ANTE",
+      "visual_scope": "PROGRAM_SCENARIO",
+      "title": "Programm-Szenario · BÜNDNIS 90/DIE GRÜNEN Sachsen-Anhalt",
+      "normalized_subject": "Landtagswahlprogramm Sachsen-Anhalt 2026 · programmweite Folgenpfade",
+      "source_statement_refs": [
+        "ltw-2026-st-gruene-0054-der-oekologische-landbau-und-die-mit-ihm-verbundenen-werts",
+        "ltw-2026-st-gruene-0042-solche-strukturen-sollen-die-ausbreitung-von-feuer-kontrol",
+        "ltw-2026-st-gruene-0001-natur-und-artenschutz-biologische-vielfalt-bewahren-wir-se",
+        "ltw-2026-st-gruene-0008-jagdrechtliche-regelungen-in-sachsen-anhalt-sollen-auf-ein"
+      ],
+      "selected_impact_path_ids": [
+        "ltw-2026-st-gruene-0054-der-oekologische-landbau-und-die-mit-ihm-verbundenen-werts",
+        "ltw-2026-st-gruene-0042-solche-strukturen-sollen-die-ausbreitung-von-feuer-kontrol",
+        "ltw-2026-st-gruene-0001-natur-und-artenschutz-biologische-vielfalt-bewahren-wir-se",
+        "ltw-2026-st-gruene-0008-jagdrechtliche-regelungen-in-sachsen-anhalt-sollen-auf-ein"
+      ],
+      "eligible_approved_analysis_refs": [
+        "ltw-2026-st-gruene-0054-der-oekologische-landbau-und-die-mit-ihm-verbundenen-werts",
+        "ltw-2026-st-gruene-0042-solche-strukturen-sollen-die-ausbreitung-von-feuer-kontrol",
+        "ltw-2026-st-gruene-0001-natur-und-artenschutz-biologische-vielfalt-bewahren-wir-se",
+        "ltw-2026-st-gruene-0008-jagdrechtliche-regelungen-in-sachsen-anhalt-sollen-auf-ein"
+      ],
+      "selection_rationale": "Die bereits fachlich kuratierte Editorial-v2-Menge der vier Schlüsselpfade wird unverändert als Kandidatenmenge wiederverwendet. Ohne freigegebenen Visual Brief wird daraus kein sichtbares Szenario materialisiert.",
+      "visible_elements": [],
+      "non_visual_effects": [],
+      "non_visual_effects_review_status": "PENDING_APPROVAL",
+      "omitted_material_effects": [],
+      "system_boundary": null,
+      "scenario_assumptions": [],
+      "evidence_summary": "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das noch nicht vorhandene Bild liefert keine zusätzliche Evidenz.",
+      "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
+      "asset_path": null,
+      "alt_text": null,
+      "visual_brief": null,
+      "generator_metadata": null,
+      "asset_sha256": null,
+      "editorial_review_status": "NO_APPROVED_VISUAL_SCENARIO",
+      "source_fidelity_status": "FAIL_CLOSED_NO_PUBLIC_ASSET",
+      "missing_approved_inputs": [
+        {
+          "code": "REVIEWED_VISUAL_BRIEF",
+          "description": "Ein versionierter, fachlich und redaktionell freigegebener Visual Brief auf Basis ausschließlich freigegebener Analysefelder fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "VISIBLE_ELEMENT_MAPPING",
+          "description": "Die explizite Zuordnung jedes darstellbaren Elements zu Zustandsänderung, Wirkungsordnung, Betroffenen, Zeithorizont, Richtung, Evidenz und Unsicherheit fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "NON_VISUAL_EFFECT_SELECTION",
+          "description": "Die fachlich freigegebene Auswahl materieller, im Bild nicht darstellbarer Folgen und Grenzen fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "ALT_TEXT_REVIEW",
+          "description": "Ein szenariospezifischer, fachlich präziser Alt-Text mit Unsicherheitsgrenze fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "EDITORIAL_VISUAL_SIGNOFF",
+          "description": "Die abschließende Prüfung auf Source Fidelity, Frame-Schutz, Stilneutralität und Aussagegrenzen fehlt.",
+          "required_for": "BOTH"
+        }
+      ],
+      "change_history": [
+        {
+          "version": "1.0",
+          "date": "2026-08-25",
+          "status": "FAIL_CLOSED_CREATED",
+          "note": "Architektur-Record ohne Bildasset angelegt; keine Fachwirkung, Auswahl oder Visualisierung synthetisiert."
+        }
+      ]
+    },
+    {
+      "id": "woek-impact-visual-st-2026-gruene-case-v1",
+      "object_type": "IMPACT_CASE",
+      "object_id": "ltw-2026-st-gruene:case-scenario-slot",
+      "source_key": "ltw-2026-st-gruene",
+      "analysis_version": "LTW-2026-ST-SIX-PARTY-TERMINAL-RELEASE-V1+WOEK-WAHLPROGRAMM-BLAUPAUSE-V2.0",
+      "knowledge_cutoff": "2026-08-23",
+      "stage": "EX_ANTE",
+      "visual_scope": "CASE_SCENARIO",
+      "title": "Fallvertiefung · BÜNDNIS 90/DIE GRÜNEN Sachsen-Anhalt",
+      "normalized_subject": "Landtagswahlprogramm Sachsen-Anhalt 2026 · einzelne freigegebene Analyse",
+      "source_statement_refs": [],
+      "selected_impact_path_ids": [],
+      "eligible_approved_analysis_refs": [
+        "ltw-2026-st-gruene-0054-der-oekologische-landbau-und-die-mit-ihm-verbundenen-werts",
+        "ltw-2026-st-gruene-0042-solche-strukturen-sollen-die-ausbreitung-von-feuer-kontrol",
+        "ltw-2026-st-gruene-0001-natur-und-artenschutz-biologische-vielfalt-bewahren-wir-se",
+        "ltw-2026-st-gruene-0008-jagdrechtliche-regelungen-in-sachsen-anhalt-sollen-auf-ein"
+      ],
+      "selection_rationale": "Es wird keine Einzelanalyse technisch ausgewählt. Die vorhandenen Editorial-v2-Schlüsselpfade bleiben lediglich als endliche fachlich freigegebene Kandidatenmenge dokumentiert, bis eine symmetrische Case-Auswahl freigegeben ist.",
+      "visible_elements": [],
+      "non_visual_effects": [],
+      "non_visual_effects_review_status": "PENDING_APPROVAL",
+      "omitted_material_effects": [],
+      "system_boundary": null,
+      "scenario_assumptions": [],
+      "evidence_summary": "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das noch nicht vorhandene Bild liefert keine zusätzliche Evidenz.",
+      "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
+      "asset_path": null,
+      "alt_text": null,
+      "visual_brief": null,
+      "generator_metadata": null,
+      "asset_sha256": null,
+      "editorial_review_status": "NO_APPROVED_VISUAL_SCENARIO",
+      "source_fidelity_status": "FAIL_CLOSED_NO_PUBLIC_ASSET",
+      "missing_approved_inputs": [
+        {
+          "code": "APPROVED_CASE_SELECTION",
+          "description": "Eine einzelne freigegebene Analyse wurde noch nicht ausdrücklich und symmetrisch als Case-Deep-Dive ausgewählt.",
+          "required_for": "CASE_SCENARIO"
+        },
+        {
+          "code": "REVIEWED_VISUAL_BRIEF",
+          "description": "Ein versionierter, fachlich und redaktionell freigegebener Visual Brief auf Basis ausschließlich freigegebener Analysefelder fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "VISIBLE_ELEMENT_MAPPING",
+          "description": "Die explizite Zuordnung jedes darstellbaren Elements zu Zustandsänderung, Wirkungsordnung, Betroffenen, Zeithorizont, Richtung, Evidenz und Unsicherheit fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "NON_VISUAL_EFFECT_SELECTION",
+          "description": "Die fachlich freigegebene Auswahl materieller, im Bild nicht darstellbarer Folgen und Grenzen fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "ALT_TEXT_REVIEW",
+          "description": "Ein szenariospezifischer, fachlich präziser Alt-Text mit Unsicherheitsgrenze fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "EDITORIAL_VISUAL_SIGNOFF",
+          "description": "Die abschließende Prüfung auf Source Fidelity, Frame-Schutz, Stilneutralität und Aussagegrenzen fehlt.",
+          "required_for": "BOTH"
+        }
+      ],
+      "change_history": [
+        {
+          "version": "1.0",
+          "date": "2026-08-25",
+          "status": "FAIL_CLOSED_CREATED",
+          "note": "Architektur-Record ohne Bildasset angelegt; keine Fachwirkung, Auswahl oder Visualisierung synthetisiert."
+        }
+      ]
+    },
+    {
+      "id": "woek-impact-visual-st-2026-linke-program-v1",
+      "object_type": "PROGRAM",
+      "object_id": "ltw-2026-st-linke",
+      "source_key": "ltw-2026-st-linke",
+      "analysis_version": "LTW-2026-ST-SIX-PARTY-TERMINAL-RELEASE-V1+WOEK-WAHLPROGRAMM-BLAUPAUSE-V2.0",
+      "knowledge_cutoff": "2026-08-23",
+      "stage": "EX_ANTE",
+      "visual_scope": "PROGRAM_SCENARIO",
+      "title": "Programm-Szenario · Die Linke Sachsen-Anhalt",
+      "normalized_subject": "Landtagswahlprogramm Sachsen-Anhalt 2026 · programmweite Folgenpfade",
+      "source_statement_refs": [
+        "ltw-2026-st-linke-0012-ihre-moeglichkeiten-und-ideen-zur-loesung-der-gesellschaft",
+        "ltw-2026-st-linke-0009-dafuer-in-einem-gesetz-zur-staerkung-des-ehrenamts-den-rec",
+        "ltw-2026-st-linke-0005-dass-bei-volksinitiativen-volksbegehren-und-volksentscheid",
+        "ltw-2026-st-linke-0010-dass-ehrenamtliche-mitglieder-der-kommunalen-vertretungen"
+      ],
+      "selected_impact_path_ids": [
+        "ltw-2026-st-linke-0012-ihre-moeglichkeiten-und-ideen-zur-loesung-der-gesellschaft",
+        "ltw-2026-st-linke-0009-dafuer-in-einem-gesetz-zur-staerkung-des-ehrenamts-den-rec",
+        "ltw-2026-st-linke-0005-dass-bei-volksinitiativen-volksbegehren-und-volksentscheid",
+        "ltw-2026-st-linke-0010-dass-ehrenamtliche-mitglieder-der-kommunalen-vertretungen"
+      ],
+      "eligible_approved_analysis_refs": [
+        "ltw-2026-st-linke-0012-ihre-moeglichkeiten-und-ideen-zur-loesung-der-gesellschaft",
+        "ltw-2026-st-linke-0009-dafuer-in-einem-gesetz-zur-staerkung-des-ehrenamts-den-rec",
+        "ltw-2026-st-linke-0005-dass-bei-volksinitiativen-volksbegehren-und-volksentscheid",
+        "ltw-2026-st-linke-0010-dass-ehrenamtliche-mitglieder-der-kommunalen-vertretungen"
+      ],
+      "selection_rationale": "Die bereits fachlich kuratierte Editorial-v2-Menge der vier Schlüsselpfade wird unverändert als Kandidatenmenge wiederverwendet. Ohne freigegebenen Visual Brief wird daraus kein sichtbares Szenario materialisiert.",
+      "visible_elements": [],
+      "non_visual_effects": [],
+      "non_visual_effects_review_status": "PENDING_APPROVAL",
+      "omitted_material_effects": [],
+      "system_boundary": null,
+      "scenario_assumptions": [],
+      "evidence_summary": "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das noch nicht vorhandene Bild liefert keine zusätzliche Evidenz.",
+      "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
+      "asset_path": null,
+      "alt_text": null,
+      "visual_brief": null,
+      "generator_metadata": null,
+      "asset_sha256": null,
+      "editorial_review_status": "NO_APPROVED_VISUAL_SCENARIO",
+      "source_fidelity_status": "FAIL_CLOSED_NO_PUBLIC_ASSET",
+      "missing_approved_inputs": [
+        {
+          "code": "REVIEWED_VISUAL_BRIEF",
+          "description": "Ein versionierter, fachlich und redaktionell freigegebener Visual Brief auf Basis ausschließlich freigegebener Analysefelder fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "VISIBLE_ELEMENT_MAPPING",
+          "description": "Die explizite Zuordnung jedes darstellbaren Elements zu Zustandsänderung, Wirkungsordnung, Betroffenen, Zeithorizont, Richtung, Evidenz und Unsicherheit fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "NON_VISUAL_EFFECT_SELECTION",
+          "description": "Die fachlich freigegebene Auswahl materieller, im Bild nicht darstellbarer Folgen und Grenzen fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "ALT_TEXT_REVIEW",
+          "description": "Ein szenariospezifischer, fachlich präziser Alt-Text mit Unsicherheitsgrenze fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "EDITORIAL_VISUAL_SIGNOFF",
+          "description": "Die abschließende Prüfung auf Source Fidelity, Frame-Schutz, Stilneutralität und Aussagegrenzen fehlt.",
+          "required_for": "BOTH"
+        }
+      ],
+      "change_history": [
+        {
+          "version": "1.0",
+          "date": "2026-08-25",
+          "status": "FAIL_CLOSED_CREATED",
+          "note": "Architektur-Record ohne Bildasset angelegt; keine Fachwirkung, Auswahl oder Visualisierung synthetisiert."
+        }
+      ]
+    },
+    {
+      "id": "woek-impact-visual-st-2026-linke-case-v1",
+      "object_type": "IMPACT_CASE",
+      "object_id": "ltw-2026-st-linke:case-scenario-slot",
+      "source_key": "ltw-2026-st-linke",
+      "analysis_version": "LTW-2026-ST-SIX-PARTY-TERMINAL-RELEASE-V1+WOEK-WAHLPROGRAMM-BLAUPAUSE-V2.0",
+      "knowledge_cutoff": "2026-08-23",
+      "stage": "EX_ANTE",
+      "visual_scope": "CASE_SCENARIO",
+      "title": "Fallvertiefung · Die Linke Sachsen-Anhalt",
+      "normalized_subject": "Landtagswahlprogramm Sachsen-Anhalt 2026 · einzelne freigegebene Analyse",
+      "source_statement_refs": [],
+      "selected_impact_path_ids": [],
+      "eligible_approved_analysis_refs": [
+        "ltw-2026-st-linke-0012-ihre-moeglichkeiten-und-ideen-zur-loesung-der-gesellschaft",
+        "ltw-2026-st-linke-0009-dafuer-in-einem-gesetz-zur-staerkung-des-ehrenamts-den-rec",
+        "ltw-2026-st-linke-0005-dass-bei-volksinitiativen-volksbegehren-und-volksentscheid",
+        "ltw-2026-st-linke-0010-dass-ehrenamtliche-mitglieder-der-kommunalen-vertretungen"
+      ],
+      "selection_rationale": "Es wird keine Einzelanalyse technisch ausgewählt. Die vorhandenen Editorial-v2-Schlüsselpfade bleiben lediglich als endliche fachlich freigegebene Kandidatenmenge dokumentiert, bis eine symmetrische Case-Auswahl freigegeben ist.",
+      "visible_elements": [],
+      "non_visual_effects": [],
+      "non_visual_effects_review_status": "PENDING_APPROVAL",
+      "omitted_material_effects": [],
+      "system_boundary": null,
+      "scenario_assumptions": [],
+      "evidence_summary": "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das noch nicht vorhandene Bild liefert keine zusätzliche Evidenz.",
+      "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
+      "asset_path": null,
+      "alt_text": null,
+      "visual_brief": null,
+      "generator_metadata": null,
+      "asset_sha256": null,
+      "editorial_review_status": "NO_APPROVED_VISUAL_SCENARIO",
+      "source_fidelity_status": "FAIL_CLOSED_NO_PUBLIC_ASSET",
+      "missing_approved_inputs": [
+        {
+          "code": "APPROVED_CASE_SELECTION",
+          "description": "Eine einzelne freigegebene Analyse wurde noch nicht ausdrücklich und symmetrisch als Case-Deep-Dive ausgewählt.",
+          "required_for": "CASE_SCENARIO"
+        },
+        {
+          "code": "REVIEWED_VISUAL_BRIEF",
+          "description": "Ein versionierter, fachlich und redaktionell freigegebener Visual Brief auf Basis ausschließlich freigegebener Analysefelder fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "VISIBLE_ELEMENT_MAPPING",
+          "description": "Die explizite Zuordnung jedes darstellbaren Elements zu Zustandsänderung, Wirkungsordnung, Betroffenen, Zeithorizont, Richtung, Evidenz und Unsicherheit fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "NON_VISUAL_EFFECT_SELECTION",
+          "description": "Die fachlich freigegebene Auswahl materieller, im Bild nicht darstellbarer Folgen und Grenzen fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "ALT_TEXT_REVIEW",
+          "description": "Ein szenariospezifischer, fachlich präziser Alt-Text mit Unsicherheitsgrenze fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "EDITORIAL_VISUAL_SIGNOFF",
+          "description": "Die abschließende Prüfung auf Source Fidelity, Frame-Schutz, Stilneutralität und Aussagegrenzen fehlt.",
+          "required_for": "BOTH"
+        }
+      ],
+      "change_history": [
+        {
+          "version": "1.0",
+          "date": "2026-08-25",
+          "status": "FAIL_CLOSED_CREATED",
+          "note": "Architektur-Record ohne Bildasset angelegt; keine Fachwirkung, Auswahl oder Visualisierung synthetisiert."
+        }
+      ]
+    },
+    {
+      "id": "woek-impact-visual-st-2026-bsw-program-v1",
+      "object_type": "PROGRAM",
+      "object_id": "ltw-2026-st-bsw",
+      "source_key": "ltw-2026-st-bsw",
+      "analysis_version": "LTW-2026-ST-SIX-PARTY-TERMINAL-RELEASE-V1+WOEK-WAHLPROGRAMM-BLAUPAUSE-V2.0",
+      "knowledge_cutoff": "2026-08-23",
+      "stage": "EX_ANTE",
+      "visual_scope": "PROGRAM_SCENARIO",
+      "title": "Programm-Szenario · BSW Sachsen-Anhalt",
+      "normalized_subject": "Landtagswahlprogramm Sachsen-Anhalt 2026 · programmweite Folgenpfade",
+      "source_statement_refs": [
+        "ltw-2026-st-bsw-0005-junge-menschen-duerfen-nicht-aus-sozialer-unsicherheit-ode",
+        "ltw-2026-st-bsw-0004-sachsenanhalt-darf-nicht-weiter-militarisiert-werden",
+        "ltw-2026-st-bsw-0011-auch-auf-kommunaler-ebene-sollen-buergerbudgets-und-buerge",
+        "ltw-2026-st-bsw-0014-in-sachsenanhalt-wollen-wir-mit-allen-menschen-ins-gesprae"
+      ],
+      "selected_impact_path_ids": [
+        "ltw-2026-st-bsw-0005-junge-menschen-duerfen-nicht-aus-sozialer-unsicherheit-ode",
+        "ltw-2026-st-bsw-0004-sachsenanhalt-darf-nicht-weiter-militarisiert-werden",
+        "ltw-2026-st-bsw-0011-auch-auf-kommunaler-ebene-sollen-buergerbudgets-und-buerge",
+        "ltw-2026-st-bsw-0014-in-sachsenanhalt-wollen-wir-mit-allen-menschen-ins-gesprae"
+      ],
+      "eligible_approved_analysis_refs": [
+        "ltw-2026-st-bsw-0005-junge-menschen-duerfen-nicht-aus-sozialer-unsicherheit-ode",
+        "ltw-2026-st-bsw-0004-sachsenanhalt-darf-nicht-weiter-militarisiert-werden",
+        "ltw-2026-st-bsw-0011-auch-auf-kommunaler-ebene-sollen-buergerbudgets-und-buerge",
+        "ltw-2026-st-bsw-0014-in-sachsenanhalt-wollen-wir-mit-allen-menschen-ins-gesprae"
+      ],
+      "selection_rationale": "Die bereits fachlich kuratierte Editorial-v2-Menge der vier Schlüsselpfade wird unverändert als Kandidatenmenge wiederverwendet. Ohne freigegebenen Visual Brief wird daraus kein sichtbares Szenario materialisiert.",
+      "visible_elements": [],
+      "non_visual_effects": [],
+      "non_visual_effects_review_status": "PENDING_APPROVAL",
+      "omitted_material_effects": [],
+      "system_boundary": null,
+      "scenario_assumptions": [],
+      "evidence_summary": "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das noch nicht vorhandene Bild liefert keine zusätzliche Evidenz.",
+      "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
+      "asset_path": null,
+      "alt_text": null,
+      "visual_brief": null,
+      "generator_metadata": null,
+      "asset_sha256": null,
+      "editorial_review_status": "NO_APPROVED_VISUAL_SCENARIO",
+      "source_fidelity_status": "FAIL_CLOSED_NO_PUBLIC_ASSET",
+      "missing_approved_inputs": [
+        {
+          "code": "REVIEWED_VISUAL_BRIEF",
+          "description": "Ein versionierter, fachlich und redaktionell freigegebener Visual Brief auf Basis ausschließlich freigegebener Analysefelder fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "VISIBLE_ELEMENT_MAPPING",
+          "description": "Die explizite Zuordnung jedes darstellbaren Elements zu Zustandsänderung, Wirkungsordnung, Betroffenen, Zeithorizont, Richtung, Evidenz und Unsicherheit fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "NON_VISUAL_EFFECT_SELECTION",
+          "description": "Die fachlich freigegebene Auswahl materieller, im Bild nicht darstellbarer Folgen und Grenzen fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "ALT_TEXT_REVIEW",
+          "description": "Ein szenariospezifischer, fachlich präziser Alt-Text mit Unsicherheitsgrenze fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "EDITORIAL_VISUAL_SIGNOFF",
+          "description": "Die abschließende Prüfung auf Source Fidelity, Frame-Schutz, Stilneutralität und Aussagegrenzen fehlt.",
+          "required_for": "BOTH"
+        }
+      ],
+      "change_history": [
+        {
+          "version": "1.0",
+          "date": "2026-08-25",
+          "status": "FAIL_CLOSED_CREATED",
+          "note": "Architektur-Record ohne Bildasset angelegt; keine Fachwirkung, Auswahl oder Visualisierung synthetisiert."
+        }
+      ]
+    },
+    {
+      "id": "woek-impact-visual-st-2026-bsw-case-v1",
+      "object_type": "IMPACT_CASE",
+      "object_id": "ltw-2026-st-bsw:case-scenario-slot",
+      "source_key": "ltw-2026-st-bsw",
+      "analysis_version": "LTW-2026-ST-SIX-PARTY-TERMINAL-RELEASE-V1+WOEK-WAHLPROGRAMM-BLAUPAUSE-V2.0",
+      "knowledge_cutoff": "2026-08-23",
+      "stage": "EX_ANTE",
+      "visual_scope": "CASE_SCENARIO",
+      "title": "Fallvertiefung · BSW Sachsen-Anhalt",
+      "normalized_subject": "Landtagswahlprogramm Sachsen-Anhalt 2026 · einzelne freigegebene Analyse",
+      "source_statement_refs": [],
+      "selected_impact_path_ids": [],
+      "eligible_approved_analysis_refs": [
+        "ltw-2026-st-bsw-0005-junge-menschen-duerfen-nicht-aus-sozialer-unsicherheit-ode",
+        "ltw-2026-st-bsw-0004-sachsenanhalt-darf-nicht-weiter-militarisiert-werden",
+        "ltw-2026-st-bsw-0011-auch-auf-kommunaler-ebene-sollen-buergerbudgets-und-buerge",
+        "ltw-2026-st-bsw-0014-in-sachsenanhalt-wollen-wir-mit-allen-menschen-ins-gesprae"
+      ],
+      "selection_rationale": "Es wird keine Einzelanalyse technisch ausgewählt. Die vorhandenen Editorial-v2-Schlüsselpfade bleiben lediglich als endliche fachlich freigegebene Kandidatenmenge dokumentiert, bis eine symmetrische Case-Auswahl freigegeben ist.",
+      "visible_elements": [],
+      "non_visual_effects": [],
+      "non_visual_effects_review_status": "PENDING_APPROVAL",
+      "omitted_material_effects": [],
+      "system_boundary": null,
+      "scenario_assumptions": [],
+      "evidence_summary": "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das noch nicht vorhandene Bild liefert keine zusätzliche Evidenz.",
+      "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
+      "asset_path": null,
+      "alt_text": null,
+      "visual_brief": null,
+      "generator_metadata": null,
+      "asset_sha256": null,
+      "editorial_review_status": "NO_APPROVED_VISUAL_SCENARIO",
+      "source_fidelity_status": "FAIL_CLOSED_NO_PUBLIC_ASSET",
+      "missing_approved_inputs": [
+        {
+          "code": "APPROVED_CASE_SELECTION",
+          "description": "Eine einzelne freigegebene Analyse wurde noch nicht ausdrücklich und symmetrisch als Case-Deep-Dive ausgewählt.",
+          "required_for": "CASE_SCENARIO"
+        },
+        {
+          "code": "REVIEWED_VISUAL_BRIEF",
+          "description": "Ein versionierter, fachlich und redaktionell freigegebener Visual Brief auf Basis ausschließlich freigegebener Analysefelder fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "VISIBLE_ELEMENT_MAPPING",
+          "description": "Die explizite Zuordnung jedes darstellbaren Elements zu Zustandsänderung, Wirkungsordnung, Betroffenen, Zeithorizont, Richtung, Evidenz und Unsicherheit fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "NON_VISUAL_EFFECT_SELECTION",
+          "description": "Die fachlich freigegebene Auswahl materieller, im Bild nicht darstellbarer Folgen und Grenzen fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "ALT_TEXT_REVIEW",
+          "description": "Ein szenariospezifischer, fachlich präziser Alt-Text mit Unsicherheitsgrenze fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "EDITORIAL_VISUAL_SIGNOFF",
+          "description": "Die abschließende Prüfung auf Source Fidelity, Frame-Schutz, Stilneutralität und Aussagegrenzen fehlt.",
+          "required_for": "BOTH"
+        }
+      ],
+      "change_history": [
+        {
+          "version": "1.0",
+          "date": "2026-08-25",
+          "status": "FAIL_CLOSED_CREATED",
+          "note": "Architektur-Record ohne Bildasset angelegt; keine Fachwirkung, Auswahl oder Visualisierung synthetisiert."
+        }
+      ]
+    },
+    {
+      "id": "woek-impact-visual-st-2026-afd-program-v1",
+      "object_type": "PROGRAM",
+      "object_id": "ltw-2026-st-afd",
+      "source_key": "ltw-2026-st-afd",
+      "analysis_version": "LTW-2026-ST-SIX-PARTY-TERMINAL-RELEASE-V1+WOEK-WAHLPROGRAMM-BLAUPAUSE-V2.0",
+      "knowledge_cutoff": "2026-08-23",
+      "stage": "EX_ANTE",
+      "visual_scope": "PROGRAM_SCENARIO",
+      "title": "Programm-Szenario · Alternative für Deutschland Sachsen-Anhalt",
+      "normalized_subject": "Landtagswahlprogramm Sachsen-Anhalt 2026 · programmweite Folgenpfade",
+      "source_statement_refs": [
+        "ltw-2026-st-afd-0007-wir-halten-an-dem-gesellschaftlichen-kompromiss-fest-wonac",
+        "ltw-2026-st-afd-0001-gesellschaftspolitische-steuerungsinstrumente-die-nicht-nu",
+        "ltw-2026-st-afd-0005-daneben-werden-wir-eine-breit-aufgestellte-unterstuetzungs",
+        "ltw-2026-st-afd-0031-zudem-muss-das-vorlesen-einen-groesseren-anteil-in-der-vor"
+      ],
+      "selected_impact_path_ids": [
+        "ltw-2026-st-afd-0007-wir-halten-an-dem-gesellschaftlichen-kompromiss-fest-wonac",
+        "ltw-2026-st-afd-0001-gesellschaftspolitische-steuerungsinstrumente-die-nicht-nu",
+        "ltw-2026-st-afd-0005-daneben-werden-wir-eine-breit-aufgestellte-unterstuetzungs",
+        "ltw-2026-st-afd-0031-zudem-muss-das-vorlesen-einen-groesseren-anteil-in-der-vor"
+      ],
+      "eligible_approved_analysis_refs": [
+        "ltw-2026-st-afd-0007-wir-halten-an-dem-gesellschaftlichen-kompromiss-fest-wonac",
+        "ltw-2026-st-afd-0001-gesellschaftspolitische-steuerungsinstrumente-die-nicht-nu",
+        "ltw-2026-st-afd-0005-daneben-werden-wir-eine-breit-aufgestellte-unterstuetzungs",
+        "ltw-2026-st-afd-0031-zudem-muss-das-vorlesen-einen-groesseren-anteil-in-der-vor"
+      ],
+      "selection_rationale": "Die bereits fachlich kuratierte Editorial-v2-Menge der vier Schlüsselpfade wird unverändert als Kandidatenmenge wiederverwendet. Ohne freigegebenen Visual Brief wird daraus kein sichtbares Szenario materialisiert.",
+      "visible_elements": [],
+      "non_visual_effects": [],
+      "non_visual_effects_review_status": "PENDING_APPROVAL",
+      "omitted_material_effects": [],
+      "system_boundary": null,
+      "scenario_assumptions": [],
+      "evidence_summary": "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das noch nicht vorhandene Bild liefert keine zusätzliche Evidenz.",
+      "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
+      "asset_path": null,
+      "alt_text": null,
+      "visual_brief": null,
+      "generator_metadata": null,
+      "asset_sha256": null,
+      "editorial_review_status": "NO_APPROVED_VISUAL_SCENARIO",
+      "source_fidelity_status": "FAIL_CLOSED_NO_PUBLIC_ASSET",
+      "missing_approved_inputs": [
+        {
+          "code": "REVIEWED_VISUAL_BRIEF",
+          "description": "Ein versionierter, fachlich und redaktionell freigegebener Visual Brief auf Basis ausschließlich freigegebener Analysefelder fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "VISIBLE_ELEMENT_MAPPING",
+          "description": "Die explizite Zuordnung jedes darstellbaren Elements zu Zustandsänderung, Wirkungsordnung, Betroffenen, Zeithorizont, Richtung, Evidenz und Unsicherheit fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "NON_VISUAL_EFFECT_SELECTION",
+          "description": "Die fachlich freigegebene Auswahl materieller, im Bild nicht darstellbarer Folgen und Grenzen fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "ALT_TEXT_REVIEW",
+          "description": "Ein szenariospezifischer, fachlich präziser Alt-Text mit Unsicherheitsgrenze fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "EDITORIAL_VISUAL_SIGNOFF",
+          "description": "Die abschließende Prüfung auf Source Fidelity, Frame-Schutz, Stilneutralität und Aussagegrenzen fehlt.",
+          "required_for": "BOTH"
+        }
+      ],
+      "change_history": [
+        {
+          "version": "1.0",
+          "date": "2026-08-25",
+          "status": "FAIL_CLOSED_CREATED",
+          "note": "Architektur-Record ohne Bildasset angelegt; keine Fachwirkung, Auswahl oder Visualisierung synthetisiert."
+        }
+      ]
+    },
+    {
+      "id": "woek-impact-visual-st-2026-afd-case-v1",
+      "object_type": "IMPACT_CASE",
+      "object_id": "ltw-2026-st-afd:case-scenario-slot",
+      "source_key": "ltw-2026-st-afd",
+      "analysis_version": "LTW-2026-ST-SIX-PARTY-TERMINAL-RELEASE-V1+WOEK-WAHLPROGRAMM-BLAUPAUSE-V2.0",
+      "knowledge_cutoff": "2026-08-23",
+      "stage": "EX_ANTE",
+      "visual_scope": "CASE_SCENARIO",
+      "title": "Fallvertiefung · Alternative für Deutschland Sachsen-Anhalt",
+      "normalized_subject": "Landtagswahlprogramm Sachsen-Anhalt 2026 · einzelne freigegebene Analyse",
+      "source_statement_refs": [],
+      "selected_impact_path_ids": [],
+      "eligible_approved_analysis_refs": [
+        "ltw-2026-st-afd-0007-wir-halten-an-dem-gesellschaftlichen-kompromiss-fest-wonac",
+        "ltw-2026-st-afd-0001-gesellschaftspolitische-steuerungsinstrumente-die-nicht-nu",
+        "ltw-2026-st-afd-0005-daneben-werden-wir-eine-breit-aufgestellte-unterstuetzungs",
+        "ltw-2026-st-afd-0031-zudem-muss-das-vorlesen-einen-groesseren-anteil-in-der-vor"
+      ],
+      "selection_rationale": "Es wird keine Einzelanalyse technisch ausgewählt. Die vorhandenen Editorial-v2-Schlüsselpfade bleiben lediglich als endliche fachlich freigegebene Kandidatenmenge dokumentiert, bis eine symmetrische Case-Auswahl freigegeben ist.",
+      "visible_elements": [],
+      "non_visual_effects": [],
+      "non_visual_effects_review_status": "PENDING_APPROVAL",
+      "omitted_material_effects": [],
+      "system_boundary": null,
+      "scenario_assumptions": [],
+      "evidence_summary": "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das noch nicht vorhandene Bild liefert keine zusätzliche Evidenz.",
+      "disclaimer": "Visualisiertes Wirkungsszenario auf Basis der WÖk-Analyse. Keine Prognose.",
+      "asset_path": null,
+      "alt_text": null,
+      "visual_brief": null,
+      "generator_metadata": null,
+      "asset_sha256": null,
+      "editorial_review_status": "NO_APPROVED_VISUAL_SCENARIO",
+      "source_fidelity_status": "FAIL_CLOSED_NO_PUBLIC_ASSET",
+      "missing_approved_inputs": [
+        {
+          "code": "APPROVED_CASE_SELECTION",
+          "description": "Eine einzelne freigegebene Analyse wurde noch nicht ausdrücklich und symmetrisch als Case-Deep-Dive ausgewählt.",
+          "required_for": "CASE_SCENARIO"
+        },
+        {
+          "code": "REVIEWED_VISUAL_BRIEF",
+          "description": "Ein versionierter, fachlich und redaktionell freigegebener Visual Brief auf Basis ausschließlich freigegebener Analysefelder fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "VISIBLE_ELEMENT_MAPPING",
+          "description": "Die explizite Zuordnung jedes darstellbaren Elements zu Zustandsänderung, Wirkungsordnung, Betroffenen, Zeithorizont, Richtung, Evidenz und Unsicherheit fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "NON_VISUAL_EFFECT_SELECTION",
+          "description": "Die fachlich freigegebene Auswahl materieller, im Bild nicht darstellbarer Folgen und Grenzen fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "ALT_TEXT_REVIEW",
+          "description": "Ein szenariospezifischer, fachlich präziser Alt-Text mit Unsicherheitsgrenze fehlt.",
+          "required_for": "BOTH"
+        },
+        {
+          "code": "EDITORIAL_VISUAL_SIGNOFF",
+          "description": "Die abschließende Prüfung auf Source Fidelity, Frame-Schutz, Stilneutralität und Aussagegrenzen fehlt.",
+          "required_for": "BOTH"
+        }
+      ],
+      "change_history": [
+        {
+          "version": "1.0",
+          "date": "2026-08-25",
+          "status": "FAIL_CLOSED_CREATED",
+          "note": "Architektur-Record ohne Bildasset angelegt; keine Fachwirkung, Auswahl oder Visualisierung synthetisiert."
+        }
+      ]
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { CompletePublicationSource } from "@/app/components/CompletePublicationSource";
+import { ImpactVisualScenario } from "@/app/components/impact-visuals/ImpactVisualScenario";
 import type { SaxonyAnhaltElectionProgramme } from "@/data/sachsen-anhalt-election-programmes";
 import {
   saxonyAnhaltCommitmentEditorial,
@@ -18,6 +19,7 @@ import {
   type ProgrammeCommitment,
 } from "@/lib/presentation/sachsen-anhalt-programme-model";
 import { getCommunicationMediaImpact, type CommunicationMediaImpactRecord, type CommunicationPattern } from "@/lib/state-programmes/communication-media-impact";
+import { saxonyAnhaltImpactVisualRecord } from "@/lib/impact-visuals/records";
 import { sourceDetailHrefForUrl } from "@/lib/sources/url";
 import styles from "./ProgrammeAnalysisBlueprint.module.css";
 
@@ -366,6 +368,9 @@ export function SaxonyAnhaltProgrammeAnalysisV3({ programme, review, commitments
   if (!terminalParty) throw new Error(`Missing terminal Sachsen-Anhalt release record for ${programme.sourceKey}`);
   const communicationImpact = getCommunicationMediaImpact(programme.sourceKey);
   if (!communicationImpact) throw new Error(`Missing Sachsen-Anhalt communication-media impact for ${programme.sourceKey}`);
+  const programmeVisual = saxonyAnhaltImpactVisualRecord(programme.sourceKey, "PROGRAM_SCENARIO");
+  const caseVisual = saxonyAnhaltImpactVisualRecord(programme.sourceKey, "CASE_SCENARIO");
+  if (!programmeVisual || !caseVisual) throw new Error(`Missing Sachsen-Anhalt impact visual contract for ${programme.sourceKey}`);
   const counts = summarizeStatuses(model.commitments);
   const decisionDate = formatDate(programme.decisionDate);
   const centralAssessments = Object.values(editorial.centralAssessments);
@@ -409,7 +414,9 @@ export function SaxonyAnhaltProgrammeAnalysisV3({ programme, review, commitments
 
     <nav className={styles.jumpNav} aria-label="Sprungnavigation der Wahlprogrammanalyse">
       <a href="#gesamtbefund">Gesamtzusammenfassung</a>
+      <a href="#wirkungsbild">Wirkungsbild</a>
       <a href="#schluesselpfade">Key Findings</a>
+      <a href="#wirkungsbild-fallvertiefung">Case-Deep-Dive</a>
       <a href="#kommunikationswirkung">Kommunikationswirkung</a>
       <a href="#vollstaendige-wirkungsakte">Alle Einzelanalysen</a>
       <a href="#vollstaendiges-zusageregister">Originalzusagen</a>
@@ -440,6 +447,8 @@ export function SaxonyAnhaltProgrammeAnalysisV3({ programme, review, commitments
       <div className={styles.auditNotice}><strong>Qualitätsstatus der Altanalyse</strong><p>Der Release-1-Bestand enthält an mehreren Stellen generische Politikfeld-Templates und einzelne erkennbare Fehlzuordnungen oder Quellkollisionen. Diese Felder werden in der neuen Blaupause nicht mehr als fertige Kurzbewertung ausgegeben. Wo noch keine objektspezifische Nachprüfung vorliegt, bleibt die Richtung ausdrücklich offen.</p></div>
     </section>
 
+    <ImpactVisualScenario record={programmeVisual} />
+
     <section id="schluesselpfade" aria-labelledby="schluesselpfade-title">
       <div className={styles.sectionHeader}>
         <p className={styles.eyebrow}>Redaktionell nachgeprüfte Schlüsselpfade</p>
@@ -460,6 +469,8 @@ export function SaxonyAnhaltProgrammeAnalysisV3({ programme, review, commitments
         })}
       </div>
     </section>
+
+    <ImpactVisualScenario record={caseVisual} />
 
     <CommunicationImpactSection record={communicationImpact} />
 
