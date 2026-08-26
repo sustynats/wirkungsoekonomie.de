@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import type { ImpactVisualVisibleElement } from "@/lib/impact-visuals/contracts";
@@ -34,7 +33,7 @@ export function ImpactVisualInteractive({
 
   return <div className={styles.interactive}>
     <div className={styles.imageFrame}>
-      <Image src={assetPath} alt={altText} fill sizes="(max-width: 760px) 100vw, 1100px" />
+      <img src={assetPath} alt={altText} width="1536" height="1024" loading="lazy" decoding="async" />
       {elements.map((element, index) => <button
         key={element.id}
         type="button"

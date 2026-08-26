@@ -1,0 +1,56 @@
+{
+  "schema_version": "woek-berlin-fach-residual-party-overlay-1.0",
+  "overlay_id": "BE-FACH-CONTENT-RESIDUAL-CDU-TERMINAL-2026-V1",
+  "jurisdiction": "DE-BE",
+  "election": "agh-2026-be",
+  "party": "CDU",
+  "target_matrix_id": "BE-FACH-CONTENT-RESIDUAL-2026-V2",
+  "application_mode": "REPLACE_PARTY_RECORD_THEN_RECOMPUTE_SUMMARY",
+  "source_pin": {
+    "path": "woek-parlament-app/data/state-programmes/fach-reviews/berlin-2026-cdu-v1.json",
+    "sha256": "80ba2a6ee4961a938439c284cd01217f8dd7026157c4b522cefb004f48abbc93",
+    "ledger_id": "BE-CDU-FULL-PROGRAMME-FACH-LEDGER-2026-V1"
+  },
+  "replace_programme_record": {
+    "party": "CDU",
+    "artifact_id": "BE-AGH-2026-CDU-REGIERUNGSPROGRAMM",
+    "artifact_sha256": "ff27b8efafc426669f76ef71576a7cbce52bdb95fbb0cc2931afa7e11bbed455",
+    "expected_pages": 128,
+    "reviewed_pages": 128,
+    "unaccounted_pages": 0,
+    "total_source_units": 2673,
+    "non_effect_context_units": 1021,
+    "effect_bearing_source_units": 1652,
+    "effect_atoms": 2041,
+    "explicit_fach_approved": 0,
+    "reviewed_not_assessable": 2041,
+    "source_conflicts": 0,
+    "open_atoms": 0,
+    "genuine_fach_review_required": 0,
+    "coverage_manifest_pass": true,
+    "analysis_state": "FULL_PROGRAMME_TERMINAL_SOURCE_BOUND",
+    "programme_analysis_complete": true
+  },
+  "recompute_rules": [
+    "summary.programme_analysis_complete = count(programmes where programme_analysis_complete=true)",
+    "summary.programme_analysis_open = verified_final_programmes - programme_analysis_complete",
+    "summary.remaining_genuine_fach_review_required = sum(programmes.genuine_fach_review_required)",
+    "execution_order_remaining = previous execution_order_remaining without CDU"
+  ],
+  "expected_delta_when_applied_once": {
+    "programme_analysis_complete": 1,
+    "programme_analysis_open": -1,
+    "remaining_genuine_fach_review_required": -128,
+    "execution_order_remove": "CDU"
+  },
+  "required_provenance": {
+    "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+    "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+    "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+    "human_individual_record_review_claimed": false
+  },
+  "release_policy": {
+    "no_new_vercel_build": true,
+    "parliament_release_approval": "NOT_GRANTED"
+  }
+}

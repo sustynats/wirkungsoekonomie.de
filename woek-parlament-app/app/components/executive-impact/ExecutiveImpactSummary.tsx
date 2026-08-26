@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { ReactNode } from "react";
 import type { ExecutiveImpactSummary, ImpactDimensionSummary, ImpactDirection, ImpactMateriality } from "@/lib/executive-impact/contracts";
 import styles from "./ExecutiveImpactSummary.module.css";
 
@@ -38,6 +39,14 @@ const severity = {
   CRITICAL: "kritisch",
 } as const;
 
+const overallCharacter = {
+  PREDOMINANTLY_POSITIVE: "überwiegend positives Profil",
+  PREDOMINANTLY_NEGATIVE: "überwiegend negatives Profil",
+  MIXED: "materiell gemischtes Profil",
+  OPEN: "Gesamtcharakter offen",
+  NO_SINGLE_DIRECTION: "keine fachlich tragfähige Einheitsrichtung",
+} as const;
+
 function Direction({ value }: { value: ImpactDirection }) {
   const item = direction[value];
   return <span className={styles.direction} data-direction={value.toLowerCase()}><span aria-hidden="true">{item.icon}</span><span>{item.label}</span></span>;
@@ -49,6 +58,8 @@ export function ImpactExecutiveHero({ summary }: { summary: ExecutiveImpactSumma
     <h2>{summary.bottom_line}</h2>
     {summary.editorial_summary ? <p>{summary.editorial_summary}</p> : null}
     <p><strong>Wirkungsrichtung:</strong> {summary.direction_label}</p>
+    <p><strong>Qualitativer Gesamtcharakter:</strong> {overallCharacter[summary.overall_character]}</p>
+    <p><strong>Materialität:</strong> {materiality[summary.overall_materiality]}</p>
     <div className={styles.heroGrid}>
       <article><h3>Wirkungspotenzial kompakt</h3><p>{summary.why_it_matters}</p></article>
       <article><h3>{summary.key_finding ? "Key Finding" : "Systemgrenze"}</h3><p>{summary.key_finding ?? summary.system_boundary}</p></article>
@@ -91,7 +102,7 @@ export function SdgImpactStrip({ summary }: { summary: ExecutiveImpactSummary })
 }
 
 export function MaterialImpactPaths({ summary }: { summary: ExecutiveImpactSummary }) {
-  return <section aria-labelledby={`${summary.id}-paths`}>
+  return <section id="schluesselpfade" aria-labelledby={`${summary.id}-paths`}>
     <div className={styles.sectionHeading}><p className={styles.eyebrow}>Materielle Wirkpfade</p><h2 id={`${summary.id}-paths`}>Was könnte sich konkret verändern?</h2><p>{summary.materiality_selection_rationale}</p></div>
     {summary.material_paths.length ? <div className={styles.paths}>{summary.material_paths.map((path) => <article key={path.id} data-direction={path.direction.toLowerCase()}>
       <div className={styles.pathSignal}><Direction value={path.direction} /><span>Materialität {materiality[path.materiality]}</span><span>Evidenz {evidence[path.evidence]}</span></div>
@@ -104,13 +115,41 @@ export function MaterialImpactPaths({ summary }: { summary: ExecutiveImpactSumma
   </section>;
 }
 
+export function ImpactCascade({ summary }: { summary: ExecutiveImpactSummary }) {
+  return <section aria-labelledby={`${summary.id}-cascade`}>
+    <div className={styles.sectionHeading}><p className={styles.eyebrow}>Wirkungskaskade</p><h2 id={`${summary.id}-cascade`}>Wie führt der Hebel zur möglichen Zustandsänderung?</h2></div>
+    {summary.material_paths.length ? <ol className={styles.cascade}>{summary.material_paths.map((path) => <li key={path.id}>
+      <p><strong>Mechanismus</strong><span>{path.mechanism}</span></p>
+      <span aria-hidden="true">→</span>
+      <p><strong>Zustandsänderung</strong><span>{path.state_change}</span></p>
+      <span aria-hidden="true">→</span>
+      <p><strong>Warum relevant?</strong><span>{path.why_relevant}</span></p>
+    </li>)}</ol> : <div className={styles.failClosed}><strong>Keine freigegebene Wirkungskaskade.</strong><p>Fehlende Schritte zweiter oder dritter Ordnung werden nicht generisch ergänzt.</p></div>}
+  </section>;
+}
+
 export function NonCompensationAlert({ summary }: { summary: ExecutiveImpactSummary }) {
-  if (!summary.noncompensable_risks.length) return null;
+  if (summary.noncompensation_status === "NOT_AVAILABLE") return <aside className={styles.failClosed} aria-labelledby={`${summary.id}-noncomp-open`}>
+    <h2 id={`${summary.id}-noncomp-open`}>Schutzgrenzen: keine freigegebene Executive-Projektion</h2>
+    <p>Eine leere Projektion wird nicht als fachlich bestätigte Abwesenheit nichtkompensierbarer Risiken ausgegeben. Maßgeblich bleibt die vollständige Fachakte.</p>
+  </aside>;
+  if (summary.noncompensation_status === "REVIEWED_NONE") return <aside className={styles.failClosed} aria-labelledby={`${summary.id}-noncomp-none`}>
+    <h2 id={`${summary.id}-noncomp-none`}>Schutzgrenzen geprüft</h2>
+    <p>In der ausdrücklich geprüften Executive-Projektion ist keine nichtkompensierbare Grenze ausgewiesen. Dies ist keine Aussage über fachlich noch nicht erfasste Pfade.</p>
+  </aside>;
   return <aside className={styles.noncompensation} aria-labelledby={`${summary.id}-noncomp`}>
     <p className={styles.eyebrow}>Nichtkompensation · Wirkungsgrenze</p>
     <h2 id={`${summary.id}-noncomp`}>Diese Schutzgüter werden nicht gegen positive Einzelpfade verrechnet.</h2>
     <ul>{summary.noncompensable_risks.map((risk) => <li key={`${risk.protected_interest}:${risk.reason}`}><strong>{risk.protected_interest} · {severity[risk.severity]}</strong><span>{risk.reason}</span></li>)}</ul>
   </aside>;
+}
+
+export function KeyTradeoffs({ summary }: { summary: ExecutiveImpactSummary }) {
+  if (!summary.key_tradeoffs.length) return null;
+  return <section aria-labelledby={`${summary.id}-tradeoffs`}>
+    <div className={styles.sectionHeading}><p className={styles.eyebrow}>Zielkonflikte</p><h2 id={`${summary.id}-tradeoffs`}>Welche materiellen Gegenläufigkeiten bleiben sichtbar?</h2></div>
+    <div className={styles.tradeoffs}>{summary.key_tradeoffs.map((tradeoff) => <article key={`${tradeoff.title}:${tradeoff.explanation}`}><h3>{tradeoff.title}</h3><p>{tradeoff.explanation}</p></article>)}</div>
+  </section>;
 }
 
 export function EvidenceBand({ summary }: { summary: ExecutiveImpactSummary }) {
@@ -142,14 +181,17 @@ export function SourceTransparencyDrawer({ summary }: { summary: ExecutiveImpact
   return <details className={styles.sources}><summary>Analyse-, Versions- und Quellenprovenienz</summary><dl><div><dt>Analyseversion</dt><dd>{summary.analysis_version}</dd></div><div><dt>Wissensstand</dt><dd>{summary.knowledge_cutoff}</dd></div><div><dt>Editorial-Status</dt><dd>{summary.editorial_status === "APPROVED" ? "freigegeben" : summary.editorial_status === "PARTIAL" ? "teilweise freigegeben; fehlende Schichten bleiben offen" : "keine freigegebene Executive-Projektion"}</dd></div></dl><ul>{summary.source_refs.map((source) => <li key={source.id}>{source.href.startsWith("/") ? <Link href={source.href}>{source.label}</Link> : <a href={source.href} rel="noreferrer">{source.label}</a>}</li>)}</ul></details>;
 }
 
-export function ExecutiveImpactSummaryView({ summary }: { summary: ExecutiveImpactSummary }) {
+export function ExecutiveImpactSummaryView({ summary, afterEvidence }: { summary: ExecutiveImpactSummary; afterEvidence?: ReactNode }) {
   return <section className={styles.summary} id="gesamtbefund" data-woek-executive-impact={summary.editorial_status} aria-label="Executive-WÖk-Wirkungszusammenfassung">
     <ImpactExecutiveHero summary={summary} />
     <MPDImpactTriad summary={summary} />
-    <MaterialImpactPaths summary={summary} />
-    <NonCompensationAlert summary={summary} />
     <SdgImpactStrip summary={summary} />
+    <MaterialImpactPaths summary={summary} />
+    <ImpactCascade summary={summary} />
+    <NonCompensationAlert summary={summary} />
+    <KeyTradeoffs summary={summary} />
     <EvidenceBand summary={summary} />
+    {afterEvidence}
     <CommunicationImpactPreview summary={summary} />
     <ImpactRealityCheck summary={summary} />
     <SourceTransparencyDrawer summary={summary} />

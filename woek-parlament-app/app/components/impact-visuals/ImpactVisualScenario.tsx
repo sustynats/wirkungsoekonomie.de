@@ -7,6 +7,20 @@ function List({ values, empty }: { values: string[]; empty: string }) {
   return values.length > 0 ? <ul>{values.map((value) => <li key={value}>{value}</li>)}</ul> : <p>{empty}</p>;
 }
 
+const directionLabels = {
+  POSITIVE: "positives Wirkungspotenzial",
+  NEGATIVE: "negatives Wirkungspotenzial",
+  AMBIVALENT: "ambivalentes Wirkungspotenzial",
+  OPEN: "Wirkungsrichtung offen",
+} as const;
+
+const evidenceLabels = {
+  HIGH: "hohe Evidenz",
+  MEDIUM: "mittlere Evidenz",
+  LOW: "geringe Evidenz",
+  NOT_ASSESSABLE: "nicht belastbar beurteilbar",
+} as const;
+
 export function ImpactVisualScenario({ record, headingLevel = "h2" }: { record: ImpactVisualScenarioRecord; headingLevel?: "h2" | "h3" }) {
   const Heading = headingLevel;
   const completeAsset = record.editorial_review_status === "APPROVED_FOR_PUBLICATION"
@@ -16,6 +30,8 @@ export function ImpactVisualScenario({ record, headingLevel = "h2" }: { record: 
     && record.asset_sha256 !== null
     && record.asset_metadata !== null
     && record.alt_text !== null;
+  const preparedAwaitingAsset = record.editorial_review_status === "PREPARED_AWAITING_ASSET"
+    && record.case_analysis_binding !== null;
   const scopeLabel = record.visual_scope === "PROGRAM_SCENARIO" ? "Programm-Szenario" : "Case-Deep-Dive";
   const knowledgeDate = new Intl.DateTimeFormat("de-DE", { dateStyle: "long", timeZone: "Europe/Berlin" }).format(new Date(`${record.knowledge_cutoff}T12:00:00+02:00`));
 
@@ -35,9 +51,20 @@ export function ImpactVisualScenario({ record, headingLevel = "h2" }: { record: 
       <dl className={styles.statusLine}>
         <div><dt>Phase</dt><dd>Ex ante</dd></div>
         <div><dt>Wissensstand</dt><dd>{knowledgeDate}</dd></div>
-        <div><dt>Bildstatus</dt><dd>{completeAsset ? "fachlich freigegeben" : "noch nicht freigegeben"}</dd></div>
+        <div><dt>Bildstatus</dt><dd>{completeAsset ? "fachlich freigegeben" : preparedAwaitingAsset ? "Brief freigegeben · Bilddatei fehlt" : "noch nicht freigegeben"}</dd></div>
       </dl>
     </header>
+
+    {preparedAwaitingAsset ? <article className={styles.caseFinding} aria-label="Freigegebener WÖk-Fallbefund">
+      <p className={styles.eyebrow}>Konkreter WÖk-Fallbefund</p>
+      <h3>{record.case_analysis_binding!.key_finding}</h3>
+      <p>{record.case_analysis_binding!.impact_core_summary}</p>
+      <dl className={styles.statusLine}>
+        <div><dt>Richtung</dt><dd>{directionLabels[record.case_analysis_binding!.impact_direction]}</dd></div>
+        <div><dt>Materialität</dt><dd>{record.case_analysis_binding!.materiality}</dd></div>
+        <div><dt>Evidenz</dt><dd>{evidenceLabels[record.case_analysis_binding!.evidence_level]}</dd></div>
+      </dl>
+    </article> : null}
 
     <ol className={styles.causalBar} aria-label="Vom Vorhaben zu Folgen erster bis dritter Ordnung">
       <li><span>1</span><div><strong>Vorhaben / Instrument</strong><small>muss im freigegebenen Brief exakt bestimmt sein</small></div></li>
@@ -48,10 +75,13 @@ export function ImpactVisualScenario({ record, headingLevel = "h2" }: { record: 
     {completeAsset ? <ImpactVisualInteractive assetPath={record.asset_path!} altText={record.alt_text!} elements={record.visible_elements} /> : <div className={styles.failClosed} role="status">
       <span aria-hidden="true">◌</span>
       <div>
-        <strong>Noch kein freigegebenes Wirkungsszenario</strong>
-        <p>Für diesen Gegenstand liegt noch kein vollständig geprüfter Visual Brief vor. Deshalb zeigt das Portal weder ein Bild noch Marker und leitet keine Folge aus Programmtext, Partei, Titel, Schlagwort oder Bildmodell ab.</p>
+        <strong>{preparedAwaitingAsset ? "Fall und Visual Brief freigegeben · Bilddatei ausstehend" : "Noch kein freigegebenes Wirkungsszenario"}</strong>
+        <p>{preparedAwaitingAsset
+          ? "Die fachliche Fallauswahl, die kanonische Analysebindung, das Visual Briefing, die Aussagegrenzen und der Alt-Text sind geprüft. Es fehlt eine separate Case-Bilddatei samt abschließendem Bild-Signoff. Bis dahin zeigt das Portal weder Bild noch Marker; das vorhandene Programm-Szenario wird nicht wiederverwendet."
+          : "Für diesen Gegenstand liegt noch kein vollständig geprüfter Visual Brief vor. Deshalb zeigt das Portal weder ein Bild noch Marker und leitet keine Folge aus Programmtext, Partei, Titel, Schlagwort oder Bildmodell ab."}</p>
+        {preparedAwaitingAsset && record.case_analysis_binding?.marker_decision === "NULL_MARKER_APPROVED" ? <p><strong>Null-Marker fachlich freigegeben:</strong> Der Wirkpfad wird später ausschließlich textlich erklärt; ein Marker würde aus dem Bild eine nicht belegte Fachinformation ableiten.</p> : null}
         <details>
-          <summary>Exakt fehlende Freigaben ({record.missing_approved_inputs.length})</summary>
+          <summary>Exakt verbleibende externe Freigaben ({record.missing_approved_inputs.length})</summary>
           <ul>{record.missing_approved_inputs.map((input) => <li key={input.code}><strong>{input.description}</strong></li>)}</ul>
         </details>
       </div>
@@ -62,7 +92,7 @@ export function ImpactVisualScenario({ record, headingLevel = "h2" }: { record: 
         <h3>Was das Bild nicht zeigen kann</h3>
         <List
           values={record.non_visual_effects}
-          empty={completeAsset
+          empty={completeAsset || preparedAwaitingAsset
             ? "Für diesen freigegebenen Datensatz sind keine zusätzlichen nichtvisuellen Effekte ausgewiesen."
             : "Szenariospezifische nichtvisuelle Folgen werden erst nach fachlicher Auswahl veröffentlicht. Bis dahin bleibt die vollständige Fachakte maßgeblich."}
         />
@@ -81,6 +111,12 @@ export function ImpactVisualScenario({ record, headingLevel = "h2" }: { record: 
         <div><dt>Analyseversion</dt><dd>{record.analysis_version}</dd></div>
         <div><dt>Auswahlgrund</dt><dd>{record.selection_rationale}</dd></div>
         <div><dt>Ausgewählte Wirkpfade</dt><dd>{record.selected_impact_path_ids.length > 0 ? `${record.selected_impact_path_ids.length} bereits kuratierte Schlüsselpfade` : "keine Auswahl freigegeben"}</dd></div>
+        {record.case_analysis_binding ? <>
+          <div><dt>Ausgewählter Case</dt><dd>{record.case_analysis_binding.selected_case_id}</dd></div>
+          <div><dt>Markerentscheidung</dt><dd>{record.case_analysis_binding.marker_decision}</dd></div>
+          <div><dt>Reality Check</dt><dd>{record.case_analysis_binding.falsification_or_reality_check.correction_trigger}</dd></div>
+          <div><dt>Nichtkompensation</dt><dd>{record.case_analysis_binding.noncompensation.length > 0 ? record.case_analysis_binding.noncompensation.map((boundary) => boundary.concern).join("; ") : "keine kanonische Grenze ausgewiesen"}</dd></div>
+        </> : null}
         <div><dt>Asset</dt><dd>{record.asset_sha256 ?? "kein Asset freigegeben"}</dd></div>
         {record.asset_metadata ? <div><dt>Bilddatei</dt><dd>{record.asset_metadata.width} × {record.asset_metadata.height} px · {record.asset_metadata.mime_type} · vollständige Komposition erhalten</dd></div> : null}
         {record.omitted_marker_candidates.length > 0 ? <div><dt>Bewusst ohne Marker</dt><dd>{record.omitted_marker_candidates.join("; ")}</dd></div> : null}

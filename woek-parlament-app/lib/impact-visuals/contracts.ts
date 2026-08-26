@@ -21,6 +21,92 @@ export const impactVisualVisibleElementSchema = z.object({
   }),
 });
 
+const sourceLocationSchema = z.object({
+  page: z.union([z.number().int().positive(), z.string().min(1)]),
+  section: z.string().nullable(),
+});
+
+const sourceReferenceSchema = z.object({
+  source_key: z.string().min(1),
+  location: sourceLocationSchema,
+  source_text: z.string().min(1),
+});
+
+const canonicalRiskSchema = z.object({
+  risk: z.string().min(1),
+  trigger_or_condition: z.string().min(1),
+  affected_groups_or_goods: z.array(z.string().min(1)),
+  evidence_status: z.string().min(1),
+});
+
+const nonCompensableBoundarySchema = z.object({
+  concern: z.string().min(1),
+  rationale: z.string().min(1),
+  status: z.string().min(1),
+});
+
+export const impactVisualCaseAnalysisBindingSchema = z.object({
+  approval_provenance: z.object({
+    approval_basis: z.literal("DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26"),
+    approval_authority: z.literal("PROJECT_OWNER_DELEGATED_PROTOCOL"),
+    review_mode: z.literal("SOURCE_BOUND_OBJECT_LEVEL"),
+    human_individual_record_review_claimed: z.literal(false),
+  }),
+  selected_case_id: z.string().min(1),
+  canonical_record_path: z.string().min(1),
+  canonical_editorial_path: z.string().min(1),
+  decision_or_measure: z.string().min(1),
+  intended_change: z.string().min(1),
+  source_statement_refs: z.array(sourceReferenceSchema).min(1),
+  affected_group_or_system: z.array(z.string().min(1)),
+  mechanism: z.array(z.string().min(1)),
+  potential_state_change: z.array(z.string().min(1)),
+  key_finding: z.string().min(1),
+  impact_core_summary: z.string().min(1),
+  editorial_summary: z.string().min(1),
+  direction_rationale: z.string().min(1),
+  impact_direction: impactVisualDirectionSchema,
+  evidence_level: impactVisualEvidenceSchema,
+  competence_and_system_boundary: z.object({
+    responsible_actors: z.array(z.string().min(1)),
+    competence_note: z.string().nullable(),
+    implementation_conditions: z.array(z.string().min(1)),
+  }),
+  material_risks: z.array(canonicalRiskSchema),
+  impact_orders: z.object({
+    first_order: z.string().min(1),
+    second_order: z.array(z.string().min(1)),
+    third_order: z.string().min(1),
+    status: z.string().min(1),
+  }),
+  time_horizon: z.object({
+    short_term: z.string().min(1),
+    medium_term: z.string().min(1),
+    long_term: z.string().min(1),
+    intergenerational_relevance: z.string().min(1),
+  }),
+  materiality: z.string().min(1),
+  uncertainty: z.array(z.string().min(1)),
+  falsification_or_reality_check: z.object({
+    baseline_required: z.string().min(1),
+    primary_indicator: z.string().min(1),
+    unit: z.string().min(1),
+    counterfactual_required: z.string().nullable(),
+    earliest_review: z.string().min(1),
+    correction_trigger: z.string().min(1),
+  }),
+  noncompensation: z.array(nonCompensableBoundarySchema),
+  marker_decision: z.enum(["ALLOWED_IF_CANONICAL_PATH_BINDING_PASSES", "NULL_MARKER_APPROVED"]),
+  editorial_input_status: z.object({
+    approved_case_selection: z.literal("APPROVED"),
+    reviewed_visual_brief: z.literal("APPROVED"),
+    alt_text_review: z.literal("APPROVED"),
+    editorial_brief_signoff: z.literal("APPROVED"),
+    image_asset: z.literal("NOT_YET_SUPPLIED"),
+    final_image_signoff: z.literal("PENDING_ASSET"),
+  }),
+});
+
 export const impactVisualScenarioRecordSchema = z.object({
   id: z.string().min(1),
   object_type: z.enum(["PROGRAM", "COMMITMENT", "IMPACT_CASE", "GOVERNMENT_ACTION"]),
@@ -37,6 +123,7 @@ export const impactVisualScenarioRecordSchema = z.object({
   eligible_approved_analysis_refs: z.array(z.string().min(1)),
   selection_rationale: z.string().min(1),
   visible_elements: z.array(impactVisualVisibleElementSchema),
+  case_analysis_binding: impactVisualCaseAnalysisBindingSchema.nullable(),
   non_visual_effects: z.array(z.string().min(1)),
   non_visual_effects_review_status: z.enum(["PENDING_APPROVAL", "REVIEWED_COMPLETE"]),
   omitted_material_effects: z.array(z.string().min(1)),
@@ -74,8 +161,8 @@ export const impactVisualScenarioRecordSchema = z.object({
     }),
     integrated_at: z.string().date(),
   }).nullable(),
-  editorial_review_status: z.enum(["NO_APPROVED_VISUAL_SCENARIO", "APPROVED_FOR_PUBLICATION"]),
-  source_fidelity_status: z.enum(["FAIL_CLOSED_NO_PUBLIC_ASSET", "PASS_APPROVED_ANALYSIS_ONLY"]),
+  editorial_review_status: z.enum(["NO_APPROVED_VISUAL_SCENARIO", "PREPARED_AWAITING_ASSET", "APPROVED_FOR_PUBLICATION"]),
+  source_fidelity_status: z.enum(["FAIL_CLOSED_NO_PUBLIC_ASSET", "PASS_APPROVED_ANALYSIS_ONLY_AWAITING_ASSET", "PASS_APPROVED_ANALYSIS_ONLY"]),
   missing_approved_inputs: z.array(z.object({
     code: z.enum([
       "APPROVED_CASE_SELECTION",
@@ -84,6 +171,8 @@ export const impactVisualScenarioRecordSchema = z.object({
       "NON_VISUAL_EFFECT_SELECTION",
       "ALT_TEXT_REVIEW",
       "EDITORIAL_VISUAL_SIGNOFF",
+      "IMAGE_ASSET",
+      "FINAL_IMAGE_SIGNOFF",
     ]),
     description: z.string().min(1),
     required_for: z.enum(["PROGRAM_SCENARIO", "CASE_SCENARIO", "BOTH"]),
@@ -126,5 +215,6 @@ export const impactVisualDescriptorSchema = z.object({
 export type ImpactVisualDirection = z.infer<typeof impactVisualDirectionSchema>;
 export type ImpactVisualEvidence = z.infer<typeof impactVisualEvidenceSchema>;
 export type ImpactVisualVisibleElement = z.infer<typeof impactVisualVisibleElementSchema>;
+export type ImpactVisualCaseAnalysisBinding = z.infer<typeof impactVisualCaseAnalysisBindingSchema>;
 export type ImpactVisualScenarioRecord = z.infer<typeof impactVisualScenarioRecordSchema>;
 export type ImpactVisualDescriptor = z.infer<typeof impactVisualDescriptorSchema>;

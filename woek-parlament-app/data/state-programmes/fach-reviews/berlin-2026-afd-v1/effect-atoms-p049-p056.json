@@ -1,0 +1,639 @@
+{
+  "schema_version": "1.0.0",
+  "ledger_id": "WOEK-BE-AFD-2026-FULL-PROGRAMME-REVIEW-V1",
+  "shard_type": "EFFECT_ATOMS",
+  "page_from": 49,
+  "page_to": 56,
+  "records": [
+    {
+      "record_id": "BE-AFD-2026-SU-0081-A01",
+      "atom_id": "BE-AFD-2026-SU-0081-A01",
+      "source_unit_id": "BE-AFD-2026-SU-0081",
+      "pdf_page": 54,
+      "pdf_pages": [
+        54,
+        55
+      ],
+      "source_locator": "p054:b003@65.15,153.19,379.76,250.12;p054:b004@65.25,261.03,380.91,334.12;p054:b005@64.90,345.19,379.77,430.12;p054:b006@64.98,441.03,379.85,562.12;p055:b001@59.45,69.19,375.87,94.12;p055:b002@59.11,105.03,373.89,214.12;p055:b003@59.11,225.03,375.88,298.12;p055:b004@59.16,309.03,375.88,406.12;p055:b005@59.28,417.19,373.93,490.12",
+      "source_excerpt": "Ursache dafür ist ein klimaideologisch betriebener Energiesozialismus, der unermessliche finanzielle Mittel verschleudert und mit Energiesteuern und CO2-Abgaben hemmungslos bei den Bürgern abkassiert.",
+      "source_sentence_normalized": "Ursache dafür ist ein klimaideologisch betriebener Energiesozialismus, der unermessliche finanzielle Mittel verschleudert und mit Energiesteuern und CO2-Abgaben hemmungslos bei den Bürgern abkassiert.",
+      "source_sentence_sha256": "9d8dab85ee1405b91e23bec107e80481941826ad76eb8acf50d65c385da45f25",
+      "policy_action": "Ursache dafür ist ein klimaideologisch betriebener Energiesozialismus, der unermessliche finanzielle Mittel verschleudert und mit Energiesteuern und CO2-Abgaben hemmungslos bei den Bürgern abkassiert.",
+      "policy_action_sha256": "9d8dab85ee1405b91e23bec107e80481941826ad76eb8acf50d65c385da45f25",
+      "source_text_sha256": "9d8dab85ee1405b91e23bec107e80481941826ad76eb8acf50d65c385da45f25",
+      "source_parent_text_sha256": "ead2612949be91f8664779df01902517252e7efe4519291704750dfa0b580c6e",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "CLIMATE_ENERGY_ENVIRONMENT",
+      "missing_review_inputs": [
+        "physical_measure_scale_location_and_timing",
+        "emissions_energy_water_or_resilience_baseline",
+        "delivery_actor_finance_and_competence",
+        "affected_system_and_distribution",
+        "counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "CLIMATE_ENERGY_ENVIRONMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0081-A01 (`Ursache dafür ist ein klimaideologisch betriebener Energiesozialismus, der unermessliche finanzielle Mittel verschleudert und mit Energiesteuern und CO2-Abgaben hemmungslos bei den Bürgern abkassiert.`) is terminally not assessable after individual object-level review: this CLIMATE_ENERGY_ENVIRONMENT object does not specify or bind physical_measure_scale_location_and_timing, emissions_energy_water_or_resilience_baseline, delivery_actor_finance_and_competence, affected_system_and_distribution, counterfactual, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p054:b003@65.15,153.19,379.76,250.12;p054:b004@65.25,261.03,380.91,334.12;p054:b005@64.90,345.19,379.77,430.12;p054:b006@64.98,441.03,379.85,562.12;p055:b001@59.45,69.19,375.87,94.12;p055:b002@59.11,105.03,373.89,214.12;p055:b003@59.11,225.03,375.88,298.12;p055:b004@59.16,309.03,375.88,406.12;p055:b005@59.28,417.19,373.93,490.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0081-A02",
+      "atom_id": "BE-AFD-2026-SU-0081-A02",
+      "source_unit_id": "BE-AFD-2026-SU-0081",
+      "pdf_page": 54,
+      "pdf_pages": [
+        54,
+        55
+      ],
+      "source_locator": "p054:b003@65.15,153.19,379.76,250.12;p054:b004@65.25,261.03,380.91,334.12;p054:b005@64.90,345.19,379.77,430.12;p054:b006@64.98,441.03,379.85,562.12;p055:b001@59.45,69.19,375.87,94.12;p055:b002@59.11,105.03,373.89,214.12;p055:b003@59.11,225.03,375.88,298.12;p055:b004@59.16,309.03,375.88,406.12;p055:b005@59.28,417.19,373.93,490.12",
+      "source_excerpt": "Damit muss endlich Schluss sein!",
+      "source_sentence_normalized": "Damit muss endlich Schluss sein!",
+      "source_sentence_sha256": "8a30745cacf4e7082f16117c4b2d974df4cfa61ede7031f055de944c9eba1620",
+      "policy_action": "Damit muss endlich Schluss sein!",
+      "policy_action_sha256": "8a30745cacf4e7082f16117c4b2d974df4cfa61ede7031f055de944c9eba1620",
+      "source_text_sha256": "8a30745cacf4e7082f16117c4b2d974df4cfa61ede7031f055de944c9eba1620",
+      "source_parent_text_sha256": "ead2612949be91f8664779df01902517252e7efe4519291704750dfa0b580c6e",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "GENERAL_POLICY_INSTRUMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0081-A02 (`Damit muss endlich Schluss sein!`) is terminally not assessable after individual object-level review: this GENERAL_POLICY_INSTRUMENT object does not specify or bind operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p054:b003@65.15,153.19,379.76,250.12;p054:b004@65.25,261.03,380.91,334.12;p054:b005@64.90,345.19,379.77,430.12;p054:b006@64.98,441.03,379.85,562.12;p055:b001@59.45,69.19,375.87,94.12;p055:b002@59.11,105.03,373.89,214.12;p055:b003@59.11,225.03,375.88,298.12;p055:b004@59.16,309.03,375.88,406.12;p055:b005@59.28,417.19,373.93,490.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0081-A03",
+      "atom_id": "BE-AFD-2026-SU-0081-A03",
+      "source_unit_id": "BE-AFD-2026-SU-0081",
+      "pdf_page": 54,
+      "pdf_pages": [
+        54,
+        55
+      ],
+      "source_locator": "p054:b003@65.15,153.19,379.76,250.12;p054:b004@65.25,261.03,380.91,334.12;p054:b005@64.90,345.19,379.77,430.12;p054:b006@64.98,441.03,379.85,562.12;p055:b001@59.45,69.19,375.87,94.12;p055:b002@59.11,105.03,373.89,214.12;p055:b003@59.11,225.03,375.88,298.12;p055:b004@59.16,309.03,375.88,406.12;p055:b005@59.28,417.19,373.93,490.12",
+      "source_excerpt": "Wir schlagen deshalb die Rückkehr zu einem vernünftigen Energiemix und eine deutliche Entlastung der Bürger bei den Energiekosten vor.",
+      "source_sentence_normalized": "Wir schlagen deshalb die Rückkehr zu einem vernünftigen Energiemix und eine deutliche Entlastung der Bürger bei den Energiekosten vor.",
+      "source_sentence_sha256": "07f9bf310cdcccd91e5caf3572dd7e0349381a5f1a1378b24a0e7d82fd20ba1f",
+      "policy_action": "Wir schlagen deshalb die Rückkehr zu einem vernünftigen Energiemix und eine deutliche Entlastung der Bürger bei den Energiekosten vor.",
+      "policy_action_sha256": "07f9bf310cdcccd91e5caf3572dd7e0349381a5f1a1378b24a0e7d82fd20ba1f",
+      "source_text_sha256": "07f9bf310cdcccd91e5caf3572dd7e0349381a5f1a1378b24a0e7d82fd20ba1f",
+      "source_parent_text_sha256": "ead2612949be91f8664779df01902517252e7efe4519291704750dfa0b580c6e",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "CLIMATE_ENERGY_ENVIRONMENT",
+      "missing_review_inputs": [
+        "physical_measure_scale_location_and_timing",
+        "emissions_energy_water_or_resilience_baseline",
+        "delivery_actor_finance_and_competence",
+        "affected_system_and_distribution",
+        "counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "CLIMATE_ENERGY_ENVIRONMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0081-A03 (`Wir schlagen deshalb die Rückkehr zu einem vernünftigen Energiemix und eine deutliche Entlastung der Bürger bei den Energiekosten vor.`) is terminally not assessable after individual object-level review: this CLIMATE_ENERGY_ENVIRONMENT object does not specify or bind physical_measure_scale_location_and_timing, emissions_energy_water_or_resilience_baseline, delivery_actor_finance_and_competence, affected_system_and_distribution, counterfactual, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p054:b003@65.15,153.19,379.76,250.12;p054:b004@65.25,261.03,380.91,334.12;p054:b005@64.90,345.19,379.77,430.12;p054:b006@64.98,441.03,379.85,562.12;p055:b001@59.45,69.19,375.87,94.12;p055:b002@59.11,105.03,373.89,214.12;p055:b003@59.11,225.03,375.88,298.12;p055:b004@59.16,309.03,375.88,406.12;p055:b005@59.28,417.19,373.93,490.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0081-A04",
+      "atom_id": "BE-AFD-2026-SU-0081-A04",
+      "source_unit_id": "BE-AFD-2026-SU-0081",
+      "pdf_page": 54,
+      "pdf_pages": [
+        54,
+        55
+      ],
+      "source_locator": "p054:b003@65.15,153.19,379.76,250.12;p054:b004@65.25,261.03,380.91,334.12;p054:b005@64.90,345.19,379.77,430.12;p054:b006@64.98,441.03,379.85,562.12;p055:b001@59.45,69.19,375.87,94.12;p055:b002@59.11,105.03,373.89,214.12;p055:b003@59.11,225.03,375.88,298.12;p055:b004@59.16,309.03,375.88,406.12;p055:b005@59.28,417.19,373.93,490.12",
+      "source_excerpt": "Es gefährdet die Versorgungssicherheit, treibt die Energiepreise in die Höhe und verschleudert finanzielle Ressourcen, die in Berlin dringend an anderer Stelle benötigt werden.",
+      "source_sentence_normalized": "Es gefährdet die Versorgungssicherheit, treibt die Energiepreise in die Höhe und verschleudert finanzielle Ressourcen, die in Berlin dringend an anderer Stelle benötigt werden.",
+      "source_sentence_sha256": "fd72b6dc75f777551f5c48f15c82df4e05b31b11ce0cf77b50b532a2194f62a6",
+      "policy_action": "Es gefährdet die Versorgungssicherheit, treibt die Energiepreise in die Höhe und verschleudert finanzielle Ressourcen, die in Berlin dringend an anderer Stelle benötigt werden.",
+      "policy_action_sha256": "fd72b6dc75f777551f5c48f15c82df4e05b31b11ce0cf77b50b532a2194f62a6",
+      "source_text_sha256": "fd72b6dc75f777551f5c48f15c82df4e05b31b11ce0cf77b50b532a2194f62a6",
+      "source_parent_text_sha256": "ead2612949be91f8664779df01902517252e7efe4519291704750dfa0b580c6e",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "SECURITY_JUSTICE",
+      "missing_review_inputs": [
+        "defined_offence_risk_or_protected_state",
+        "legal_authority_and_rights_safeguards",
+        "enforcement_staffing_and_delivery_parameters",
+        "affected_population_and_distribution",
+        "security_or_justice_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "SECURITY_JUSTICE_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0081-A04 (`Es gefährdet die Versorgungssicherheit, treibt die Energiepreise in die Höhe und verschleudert finanzielle Ressourcen, die in Berlin dringend an anderer Stelle benötigt werden.`) is terminally not assessable after individual object-level review: this SECURITY_JUSTICE object does not specify or bind defined_offence_risk_or_protected_state, legal_authority_and_rights_safeguards, enforcement_staffing_and_delivery_parameters, affected_population_and_distribution, security_or_justice_baseline_and_counterfactual, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p054:b003@65.15,153.19,379.76,250.12;p054:b004@65.25,261.03,380.91,334.12;p054:b005@64.90,345.19,379.77,430.12;p054:b006@64.98,441.03,379.85,562.12;p055:b001@59.45,69.19,375.87,94.12;p055:b002@59.11,105.03,373.89,214.12;p055:b003@59.11,225.03,375.88,298.12;p055:b004@59.16,309.03,375.88,406.12;p055:b005@59.28,417.19,373.93,490.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0081-A05",
+      "atom_id": "BE-AFD-2026-SU-0081-A05",
+      "source_unit_id": "BE-AFD-2026-SU-0081",
+      "pdf_page": 54,
+      "pdf_pages": [
+        54,
+        55
+      ],
+      "source_locator": "p054:b003@65.15,153.19,379.76,250.12;p054:b004@65.25,261.03,380.91,334.12;p054:b005@64.90,345.19,379.77,430.12;p054:b006@64.98,441.03,379.85,562.12;p055:b001@59.45,69.19,375.87,94.12;p055:b002@59.11,105.03,373.89,214.12;p055:b003@59.11,225.03,375.88,298.12;p055:b004@59.16,309.03,375.88,406.12;p055:b005@59.28,417.19,373.93,490.12",
+      "source_excerpt": "Wir wollen diesen Irrweg beenden.",
+      "source_sentence_normalized": "Wir wollen diesen Irrweg beenden.",
+      "source_sentence_sha256": "f15bd8852534e8ab3116ca3cef17bba3d3aa1778839253240c91daaced16852d",
+      "policy_action": "Wir wollen diesen Irrweg beenden.",
+      "policy_action_sha256": "f15bd8852534e8ab3116ca3cef17bba3d3aa1778839253240c91daaced16852d",
+      "source_text_sha256": "f15bd8852534e8ab3116ca3cef17bba3d3aa1778839253240c91daaced16852d",
+      "source_parent_text_sha256": "ead2612949be91f8664779df01902517252e7efe4519291704750dfa0b580c6e",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "GENERAL_POLICY_INSTRUMENT",
+      "missing_review_inputs": [
+        "operational_scope_and_affected_group_or_system",
+        "responsible_actor_competence_and_timeline",
+        "resources_and_delivery_parameters",
+        "baseline_and_counterfactual",
+        "causal_mechanism_and_material_risks",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "GENERAL_POLICY_INSTRUMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0081-A05 (`Wir wollen diesen Irrweg beenden.`) is terminally not assessable after individual object-level review: this GENERAL_POLICY_INSTRUMENT object does not specify or bind operational_scope_and_affected_group_or_system, responsible_actor_competence_and_timeline, resources_and_delivery_parameters, baseline_and_counterfactual, causal_mechanism_and_material_risks, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p054:b003@65.15,153.19,379.76,250.12;p054:b004@65.25,261.03,380.91,334.12;p054:b005@64.90,345.19,379.77,430.12;p054:b006@64.98,441.03,379.85,562.12;p055:b001@59.45,69.19,375.87,94.12;p055:b002@59.11,105.03,373.89,214.12;p055:b003@59.11,225.03,375.88,298.12;p055:b004@59.16,309.03,375.88,406.12;p055:b005@59.28,417.19,373.93,490.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0081-A06",
+      "atom_id": "BE-AFD-2026-SU-0081-A06",
+      "source_unit_id": "BE-AFD-2026-SU-0081",
+      "pdf_page": 54,
+      "pdf_pages": [
+        54,
+        55
+      ],
+      "source_locator": "p054:b003@65.15,153.19,379.76,250.12;p054:b004@65.25,261.03,380.91,334.12;p054:b005@64.90,345.19,379.77,430.12;p054:b006@64.98,441.03,379.85,562.12;p055:b001@59.45,69.19,375.87,94.12;p055:b002@59.11,105.03,373.89,214.12;p055:b003@59.11,225.03,375.88,298.12;p055:b004@59.16,309.03,375.88,406.12;p055:b005@59.28,417.19,373.93,490.12",
+      "source_excerpt": "Das Berliner Klimaschutz- und Energiewendegesetz muss deshalb abgeschafft und durch ein Sichere-Energie-Gesetz ersetzt werden, das Versorgungssicherheit, Bezahlbarkeit und Netzstabilität zum Maßstab macht.",
+      "source_sentence_normalized": "Das Berliner Klimaschutz- und Energiewendegesetz muss deshalb abgeschafft und durch ein Sichere-Energie-Gesetz ersetzt werden, das Versorgungssicherheit, Bezahlbarkeit und Netzstabilität zum Maßstab macht.",
+      "source_sentence_sha256": "b1825b3c91015ecb2c8c26f2feae3c54ced705068381520afc218f82ed25b27f",
+      "policy_action": "Das Berliner Klimaschutz- und Energiewendegesetz muss deshalb abgeschafft und durch ein Sichere-Energie-Gesetz ersetzt werden, das Versorgungssicherheit, Bezahlbarkeit und Netzstabilität zum Maßstab macht.",
+      "policy_action_sha256": "b1825b3c91015ecb2c8c26f2feae3c54ced705068381520afc218f82ed25b27f",
+      "source_text_sha256": "b1825b3c91015ecb2c8c26f2feae3c54ced705068381520afc218f82ed25b27f",
+      "source_parent_text_sha256": "ead2612949be91f8664779df01902517252e7efe4519291704750dfa0b580c6e",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "SECURITY_JUSTICE",
+      "missing_review_inputs": [
+        "defined_offence_risk_or_protected_state",
+        "legal_authority_and_rights_safeguards",
+        "enforcement_staffing_and_delivery_parameters",
+        "affected_population_and_distribution",
+        "security_or_justice_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "SECURITY_JUSTICE_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0081-A06 (`Das Berliner Klimaschutz- und Energiewendegesetz muss deshalb abgeschafft und durch ein Sichere-Energie-Gesetz ersetzt werden, das Versorgungssicherheit, Bezahlbarkeit und Netzstabilität zum Maßstab macht.`) is terminally not assessable after individual object-level review: this SECURITY_JUSTICE object does not specify or bind defined_offence_risk_or_protected_state, legal_authority_and_rights_safeguards, enforcement_staffing_and_delivery_parameters, affected_population_and_distribution, security_or_justice_baseline_and_counterfactual, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p054:b003@65.15,153.19,379.76,250.12;p054:b004@65.25,261.03,380.91,334.12;p054:b005@64.90,345.19,379.77,430.12;p054:b006@64.98,441.03,379.85,562.12;p055:b001@59.45,69.19,375.87,94.12;p055:b002@59.11,105.03,373.89,214.12;p055:b003@59.11,225.03,375.88,298.12;p055:b004@59.16,309.03,375.88,406.12;p055:b005@59.28,417.19,373.93,490.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0081-A07",
+      "atom_id": "BE-AFD-2026-SU-0081-A07",
+      "source_unit_id": "BE-AFD-2026-SU-0081",
+      "pdf_page": 54,
+      "pdf_pages": [
+        54,
+        55
+      ],
+      "source_locator": "p054:b003@65.15,153.19,379.76,250.12;p054:b004@65.25,261.03,380.91,334.12;p054:b005@64.90,345.19,379.77,430.12;p054:b006@64.98,441.03,379.85,562.12;p055:b001@59.45,69.19,375.87,94.12;p055:b002@59.11,105.03,373.89,214.12;p055:b003@59.11,225.03,375.88,298.12;p055:b004@59.16,309.03,375.88,406.12;p055:b005@59.28,417.19,373.93,490.12",
+      "source_excerpt": "Wir wollen die Grundlagen dafür schaffen, dass Strom und Wärme wieder bezahlbar werden – durch einen realistischen Energiemix, den Abbau kostentreibender Vorgaben und eine Abkehr von planwirtschaftlichen Steuerungsvorschriften.",
+      "source_sentence_normalized": "Wir wollen die Grundlagen dafür schaffen, dass Strom und Wärme wieder bezahlbar werden – durch einen realistischen Energiemix, den Abbau kostentreibender Vorgaben und eine Abkehr von planwirtschaftlichen Steuerungsvorschriften.",
+      "source_sentence_sha256": "80f9c6f3073aa82a504172a328338c7a92e1f2461ab80c6096d7d28cdbf95af2",
+      "policy_action": "Wir wollen die Grundlagen dafür schaffen, dass Strom und Wärme wieder bezahlbar werden – durch einen realistischen Energiemix, den Abbau kostentreibender Vorgaben und eine Abkehr von planwirtschaftlichen Steuerungsvorschriften.",
+      "policy_action_sha256": "80f9c6f3073aa82a504172a328338c7a92e1f2461ab80c6096d7d28cdbf95af2",
+      "source_text_sha256": "80f9c6f3073aa82a504172a328338c7a92e1f2461ab80c6096d7d28cdbf95af2",
+      "source_parent_text_sha256": "ead2612949be91f8664779df01902517252e7efe4519291704750dfa0b580c6e",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "CLIMATE_ENERGY_ENVIRONMENT",
+      "missing_review_inputs": [
+        "physical_measure_scale_location_and_timing",
+        "emissions_energy_water_or_resilience_baseline",
+        "delivery_actor_finance_and_competence",
+        "affected_system_and_distribution",
+        "counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "CLIMATE_ENERGY_ENVIRONMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0081-A07 (`Wir wollen die Grundlagen dafür schaffen, dass Strom und Wärme wieder bezahlbar werden – durch einen realistischen Energiemix, den Abbau kostentreibender Vorgaben und eine Abkehr von planwirtschaftlichen Steuerungsvorschriften.`) is terminally not assessable after individual object-level review: this CLIMATE_ENERGY_ENVIRONMENT object does not specify or bind physical_measure_scale_location_and_timing, emissions_energy_water_or_resilience_baseline, delivery_actor_finance_and_competence, affected_system_and_distribution, counterfactual, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p054:b003@65.15,153.19,379.76,250.12;p054:b004@65.25,261.03,380.91,334.12;p054:b005@64.90,345.19,379.77,430.12;p054:b006@64.98,441.03,379.85,562.12;p055:b001@59.45,69.19,375.87,94.12;p055:b002@59.11,105.03,373.89,214.12;p055:b003@59.11,225.03,375.88,298.12;p055:b004@59.16,309.03,375.88,406.12;p055:b005@59.28,417.19,373.93,490.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0081-A08",
+      "atom_id": "BE-AFD-2026-SU-0081-A08",
+      "source_unit_id": "BE-AFD-2026-SU-0081",
+      "pdf_page": 54,
+      "pdf_pages": [
+        54,
+        55
+      ],
+      "source_locator": "p054:b003@65.15,153.19,379.76,250.12;p054:b004@65.25,261.03,380.91,334.12;p054:b005@64.90,345.19,379.77,430.12;p054:b006@64.98,441.03,379.85,562.12;p055:b001@59.45,69.19,375.87,94.12;p055:b002@59.11,105.03,373.89,214.12;p055:b003@59.11,225.03,375.88,298.12;p055:b004@59.16,309.03,375.88,406.12;p055:b005@59.28,417.19,373.93,490.12",
+      "source_excerpt": "Über eine Bundesratsinitiative wollen wir eine deutliche Senkung der Energiesteuern und eine Abschaffung der CO2-Abgabe erreichen.",
+      "source_sentence_normalized": "Über eine Bundesratsinitiative wollen wir eine deutliche Senkung der Energiesteuern und eine Abschaffung der CO2-Abgabe erreichen.",
+      "source_sentence_sha256": "5c156f938e61b271bd9f291f5e4d7a6d5e6ff739589005c222ec4f692418b385",
+      "policy_action": "Über eine Bundesratsinitiative wollen wir eine deutliche Senkung der Energiesteuern und eine Abschaffung der CO2-Abgabe erreichen.",
+      "policy_action_sha256": "5c156f938e61b271bd9f291f5e4d7a6d5e6ff739589005c222ec4f692418b385",
+      "source_text_sha256": "5c156f938e61b271bd9f291f5e4d7a6d5e6ff739589005c222ec4f692418b385",
+      "source_parent_text_sha256": "ead2612949be91f8664779df01902517252e7efe4519291704750dfa0b580c6e",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "CLIMATE_ENERGY_ENVIRONMENT",
+      "missing_review_inputs": [
+        "physical_measure_scale_location_and_timing",
+        "emissions_energy_water_or_resilience_baseline",
+        "delivery_actor_finance_and_competence",
+        "affected_system_and_distribution",
+        "counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "CLIMATE_ENERGY_ENVIRONMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0081-A08 (`Über eine Bundesratsinitiative wollen wir eine deutliche Senkung der Energiesteuern und eine Abschaffung der CO2-Abgabe erreichen.`) is terminally not assessable after individual object-level review: this CLIMATE_ENERGY_ENVIRONMENT object does not specify or bind physical_measure_scale_location_and_timing, emissions_energy_water_or_resilience_baseline, delivery_actor_finance_and_competence, affected_system_and_distribution, counterfactual, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p054:b003@65.15,153.19,379.76,250.12;p054:b004@65.25,261.03,380.91,334.12;p054:b005@64.90,345.19,379.77,430.12;p054:b006@64.98,441.03,379.85,562.12;p055:b001@59.45,69.19,375.87,94.12;p055:b002@59.11,105.03,373.89,214.12;p055:b003@59.11,225.03,375.88,298.12;p055:b004@59.16,309.03,375.88,406.12;p055:b005@59.28,417.19,373.93,490.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0081-A09",
+      "atom_id": "BE-AFD-2026-SU-0081-A09",
+      "source_unit_id": "BE-AFD-2026-SU-0081",
+      "pdf_page": 54,
+      "pdf_pages": [
+        54,
+        55
+      ],
+      "source_locator": "p054:b003@65.15,153.19,379.76,250.12;p054:b004@65.25,261.03,380.91,334.12;p054:b005@64.90,345.19,379.77,430.12;p054:b006@64.98,441.03,379.85,562.12;p055:b001@59.45,69.19,375.87,94.12;p055:b002@59.11,105.03,373.89,214.12;p055:b003@59.11,225.03,375.88,298.12;p055:b004@59.16,309.03,375.88,406.12;p055:b005@59.28,417.19,373.93,490.12",
+      "source_excerpt": "Wetterabhängige Energiequellen können Versorgungssicherheit und Netzstabilität nicht garantieren.",
+      "source_sentence_normalized": "Wetterabhängige Energiequellen können Versorgungssicherheit und Netzstabilität nicht garantieren.",
+      "source_sentence_sha256": "76a72e2e5f4b8f12682a5b0d0439b5bc5979088351fcde933d7f760a7a479a1d",
+      "policy_action": "Wetterabhängige Energiequellen können Versorgungssicherheit und Netzstabilität nicht garantieren.",
+      "policy_action_sha256": "76a72e2e5f4b8f12682a5b0d0439b5bc5979088351fcde933d7f760a7a479a1d",
+      "source_text_sha256": "76a72e2e5f4b8f12682a5b0d0439b5bc5979088351fcde933d7f760a7a479a1d",
+      "source_parent_text_sha256": "ead2612949be91f8664779df01902517252e7efe4519291704750dfa0b580c6e",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "SECURITY_JUSTICE",
+      "missing_review_inputs": [
+        "defined_offence_risk_or_protected_state",
+        "legal_authority_and_rights_safeguards",
+        "enforcement_staffing_and_delivery_parameters",
+        "affected_population_and_distribution",
+        "security_or_justice_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "SECURITY_JUSTICE_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0081-A09 (`Wetterabhängige Energiequellen können Versorgungssicherheit und Netzstabilität nicht garantieren.`) is terminally not assessable after individual object-level review: this SECURITY_JUSTICE object does not specify or bind defined_offence_risk_or_protected_state, legal_authority_and_rights_safeguards, enforcement_staffing_and_delivery_parameters, affected_population_and_distribution, security_or_justice_baseline_and_counterfactual, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p054:b003@65.15,153.19,379.76,250.12;p054:b004@65.25,261.03,380.91,334.12;p054:b005@64.90,345.19,379.77,430.12;p054:b006@64.98,441.03,379.85,562.12;p055:b001@59.45,69.19,375.87,94.12;p055:b002@59.11,105.03,373.89,214.12;p055:b003@59.11,225.03,375.88,298.12;p055:b004@59.16,309.03,375.88,406.12;p055:b005@59.28,417.19,373.93,490.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0081-A10",
+      "atom_id": "BE-AFD-2026-SU-0081-A10",
+      "source_unit_id": "BE-AFD-2026-SU-0081",
+      "pdf_page": 54,
+      "pdf_pages": [
+        54,
+        55
+      ],
+      "source_locator": "p054:b003@65.15,153.19,379.76,250.12;p054:b004@65.25,261.03,380.91,334.12;p054:b005@64.90,345.19,379.77,430.12;p054:b006@64.98,441.03,379.85,562.12;p055:b001@59.45,69.19,375.87,94.12;p055:b002@59.11,105.03,373.89,214.12;p055:b003@59.11,225.03,375.88,298.12;p055:b004@59.16,309.03,375.88,406.12;p055:b005@59.28,417.19,373.93,490.12",
+      "source_excerpt": "Wir setzten auf eine technologieoffene Energiepolitik statt auf neosozialistische Marktsteuerung.",
+      "source_sentence_normalized": "Wir setzten auf eine technologieoffene Energiepolitik statt auf neosozialistische Marktsteuerung.",
+      "source_sentence_sha256": "3cc1c2c6a9094fd560f418d15a17b3f093a7f54f9d837b1c1a5e21cf1d09c912",
+      "policy_action": "Wir setzten auf eine technologieoffene Energiepolitik statt auf neosozialistische Marktsteuerung.",
+      "policy_action_sha256": "3cc1c2c6a9094fd560f418d15a17b3f093a7f54f9d837b1c1a5e21cf1d09c912",
+      "source_text_sha256": "3cc1c2c6a9094fd560f418d15a17b3f093a7f54f9d837b1c1a5e21cf1d09c912",
+      "source_parent_text_sha256": "ead2612949be91f8664779df01902517252e7efe4519291704750dfa0b580c6e",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "CLIMATE_ENERGY_ENVIRONMENT",
+      "missing_review_inputs": [
+        "physical_measure_scale_location_and_timing",
+        "emissions_energy_water_or_resilience_baseline",
+        "delivery_actor_finance_and_competence",
+        "affected_system_and_distribution",
+        "counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "CLIMATE_ENERGY_ENVIRONMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0081-A10 (`Wir setzten auf eine technologieoffene Energiepolitik statt auf neosozialistische Marktsteuerung.`) is terminally not assessable after individual object-level review: this CLIMATE_ENERGY_ENVIRONMENT object does not specify or bind physical_measure_scale_location_and_timing, emissions_energy_water_or_resilience_baseline, delivery_actor_finance_and_competence, affected_system_and_distribution, counterfactual, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p054:b003@65.15,153.19,379.76,250.12;p054:b004@65.25,261.03,380.91,334.12;p054:b005@64.90,345.19,379.77,430.12;p054:b006@64.98,441.03,379.85,562.12;p055:b001@59.45,69.19,375.87,94.12;p055:b002@59.11,105.03,373.89,214.12;p055:b003@59.11,225.03,375.88,298.12;p055:b004@59.16,309.03,375.88,406.12;p055:b005@59.28,417.19,373.93,490.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0081-A11",
+      "atom_id": "BE-AFD-2026-SU-0081-A11",
+      "source_unit_id": "BE-AFD-2026-SU-0081",
+      "pdf_page": 54,
+      "pdf_pages": [
+        54,
+        55
+      ],
+      "source_locator": "p054:b003@65.15,153.19,379.76,250.12;p054:b004@65.25,261.03,380.91,334.12;p054:b005@64.90,345.19,379.77,430.12;p054:b006@64.98,441.03,379.85,562.12;p055:b001@59.45,69.19,375.87,94.12;p055:b002@59.11,105.03,373.89,214.12;p055:b003@59.11,225.03,375.88,298.12;p055:b004@59.16,309.03,375.88,406.12;p055:b005@59.28,417.19,373.93,490.12",
+      "source_excerpt": "Keine Windräder in Berliner Wäldern Windräder in Berlin lehnen wir strikt ab!",
+      "source_sentence_normalized": "Keine Windräder in Berliner Wäldern Windräder in Berlin lehnen wir strikt ab!",
+      "source_sentence_sha256": "f3ab5e67e59882a1757afecdb318ef12c21ee33c152fbd257657dbada922d87b",
+      "policy_action": "Keine Windräder in Berliner Wäldern Windräder in Berlin lehnen wir strikt ab!",
+      "policy_action_sha256": "f3ab5e67e59882a1757afecdb318ef12c21ee33c152fbd257657dbada922d87b",
+      "source_text_sha256": "f3ab5e67e59882a1757afecdb318ef12c21ee33c152fbd257657dbada922d87b",
+      "source_parent_text_sha256": "ead2612949be91f8664779df01902517252e7efe4519291704750dfa0b580c6e",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "CLIMATE_ENERGY_ENVIRONMENT",
+      "missing_review_inputs": [
+        "physical_measure_scale_location_and_timing",
+        "emissions_energy_water_or_resilience_baseline",
+        "delivery_actor_finance_and_competence",
+        "affected_system_and_distribution",
+        "counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "CLIMATE_ENERGY_ENVIRONMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0081-A11 (`Keine Windräder in Berliner Wäldern Windräder in Berlin lehnen wir strikt ab!`) is terminally not assessable after individual object-level review: this CLIMATE_ENERGY_ENVIRONMENT object does not specify or bind physical_measure_scale_location_and_timing, emissions_energy_water_or_resilience_baseline, delivery_actor_finance_and_competence, affected_system_and_distribution, counterfactual, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p054:b003@65.15,153.19,379.76,250.12;p054:b004@65.25,261.03,380.91,334.12;p054:b005@64.90,345.19,379.77,430.12;p054:b006@64.98,441.03,379.85,562.12;p055:b001@59.45,69.19,375.87,94.12;p055:b002@59.11,105.03,373.89,214.12;p055:b003@59.11,225.03,375.88,298.12;p055:b004@59.16,309.03,375.88,406.12;p055:b005@59.28,417.19,373.93,490.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0081-A12",
+      "atom_id": "BE-AFD-2026-SU-0081-A12",
+      "source_unit_id": "BE-AFD-2026-SU-0081",
+      "pdf_page": 54,
+      "pdf_pages": [
+        54,
+        55
+      ],
+      "source_locator": "p054:b003@65.15,153.19,379.76,250.12;p054:b004@65.25,261.03,380.91,334.12;p054:b005@64.90,345.19,379.77,430.12;p054:b006@64.98,441.03,379.85,562.12;p055:b001@59.45,69.19,375.87,94.12;p055:b002@59.11,105.03,373.89,214.12;p055:b003@59.11,225.03,375.88,298.12;p055:b004@59.16,309.03,375.88,406.12;p055:b005@59.28,417.19,373.93,490.12",
+      "source_excerpt": "Denn der Wiedereinstieg in die Kernenergie ist unverzichtbar, wenn Versorgungssicherheit, Netzstabilität und bezahlbare Preise gewährleistet werden sollen.",
+      "source_sentence_normalized": "Denn der Wiedereinstieg in die Kernenergie ist unverzichtbar, wenn Versorgungssicherheit, Netzstabilität und bezahlbare Preise gewährleistet werden sollen.",
+      "source_sentence_sha256": "1e57f10d2590134949b56f951e6f45be07711491be5963733102054e87a1e167",
+      "policy_action": "Denn der Wiedereinstieg in die Kernenergie ist unverzichtbar, wenn Versorgungssicherheit, Netzstabilität und bezahlbare Preise gewährleistet werden sollen.",
+      "policy_action_sha256": "1e57f10d2590134949b56f951e6f45be07711491be5963733102054e87a1e167",
+      "source_text_sha256": "1e57f10d2590134949b56f951e6f45be07711491be5963733102054e87a1e167",
+      "source_parent_text_sha256": "ead2612949be91f8664779df01902517252e7efe4519291704750dfa0b580c6e",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "SECURITY_JUSTICE",
+      "missing_review_inputs": [
+        "defined_offence_risk_or_protected_state",
+        "legal_authority_and_rights_safeguards",
+        "enforcement_staffing_and_delivery_parameters",
+        "affected_population_and_distribution",
+        "security_or_justice_baseline_and_counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "SECURITY_JUSTICE_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0081-A12 (`Denn der Wiedereinstieg in die Kernenergie ist unverzichtbar, wenn Versorgungssicherheit, Netzstabilität und bezahlbare Preise gewährleistet werden sollen.`) is terminally not assessable after individual object-level review: this SECURITY_JUSTICE object does not specify or bind defined_offence_risk_or_protected_state, legal_authority_and_rights_safeguards, enforcement_staffing_and_delivery_parameters, affected_population_and_distribution, security_or_justice_baseline_and_counterfactual, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p054:b003@65.15,153.19,379.76,250.12;p054:b004@65.25,261.03,380.91,334.12;p054:b005@64.90,345.19,379.77,430.12;p054:b006@64.98,441.03,379.85,562.12;p055:b001@59.45,69.19,375.87,94.12;p055:b002@59.11,105.03,373.89,214.12;p055:b003@59.11,225.03,375.88,298.12;p055:b004@59.16,309.03,375.88,406.12;p055:b005@59.28,417.19,373.93,490.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0081-A13",
+      "atom_id": "BE-AFD-2026-SU-0081-A13",
+      "source_unit_id": "BE-AFD-2026-SU-0081",
+      "pdf_page": 54,
+      "pdf_pages": [
+        54,
+        55
+      ],
+      "source_locator": "p054:b003@65.15,153.19,379.76,250.12;p054:b004@65.25,261.03,380.91,334.12;p054:b005@64.90,345.19,379.77,430.12;p054:b006@64.98,441.03,379.85,562.12;p055:b001@59.45,69.19,375.87,94.12;p055:b002@59.11,105.03,373.89,214.12;p055:b003@59.11,225.03,375.88,298.12;p055:b004@59.16,309.03,375.88,406.12;p055:b005@59.28,417.19,373.93,490.12",
+      "source_excerpt": "Wir wollen zur Renaissance der Kernenergie einen Beitrag leisten und Berlin wieder zu einem Zentrum der Kernforschung machen.",
+      "source_sentence_normalized": "Wir wollen zur Renaissance der Kernenergie einen Beitrag leisten und Berlin wieder zu einem Zentrum der Kernforschung machen.",
+      "source_sentence_sha256": "0bc9b49233e24c174c3408f48f7d916b49baaf9ee95a6807761be082883dc743",
+      "policy_action": "Wir wollen zur Renaissance der Kernenergie einen Beitrag leisten und Berlin wieder zu einem Zentrum der Kernforschung machen.",
+      "policy_action_sha256": "0bc9b49233e24c174c3408f48f7d916b49baaf9ee95a6807761be082883dc743",
+      "source_text_sha256": "0bc9b49233e24c174c3408f48f7d916b49baaf9ee95a6807761be082883dc743",
+      "source_parent_text_sha256": "ead2612949be91f8664779df01902517252e7efe4519291704750dfa0b580c6e",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "CLIMATE_ENERGY_ENVIRONMENT",
+      "missing_review_inputs": [
+        "physical_measure_scale_location_and_timing",
+        "emissions_energy_water_or_resilience_baseline",
+        "delivery_actor_finance_and_competence",
+        "affected_system_and_distribution",
+        "counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "CLIMATE_ENERGY_ENVIRONMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0081-A13 (`Wir wollen zur Renaissance der Kernenergie einen Beitrag leisten und Berlin wieder zu einem Zentrum der Kernforschung machen.`) is terminally not assessable after individual object-level review: this CLIMATE_ENERGY_ENVIRONMENT object does not specify or bind physical_measure_scale_location_and_timing, emissions_energy_water_or_resilience_baseline, delivery_actor_finance_and_competence, affected_system_and_distribution, counterfactual, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p054:b003@65.15,153.19,379.76,250.12;p054:b004@65.25,261.03,380.91,334.12;p054:b005@64.90,345.19,379.77,430.12;p054:b006@64.98,441.03,379.85,562.12;p055:b001@59.45,69.19,375.87,94.12;p055:b002@59.11,105.03,373.89,214.12;p055:b003@59.11,225.03,375.88,298.12;p055:b004@59.16,309.03,375.88,406.12;p055:b005@59.28,417.19,373.93,490.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "record_id": "BE-AFD-2026-SU-0081-A14",
+      "atom_id": "BE-AFD-2026-SU-0081-A14",
+      "source_unit_id": "BE-AFD-2026-SU-0081",
+      "pdf_page": 54,
+      "pdf_pages": [
+        54,
+        55
+      ],
+      "source_locator": "p054:b003@65.15,153.19,379.76,250.12;p054:b004@65.25,261.03,380.91,334.12;p054:b005@64.90,345.19,379.77,430.12;p054:b006@64.98,441.03,379.85,562.12;p055:b001@59.45,69.19,375.87,94.12;p055:b002@59.11,105.03,373.89,214.12;p055:b003@59.11,225.03,375.88,298.12;p055:b004@59.16,309.03,375.88,406.12;p055:b005@59.28,417.19,373.93,490.12",
+      "source_excerpt": "Auf Bundesebene setzen wir uns für eine Rückkehr zur Kernenergie als Teil eines technologieoffenen Energiemixes ein.ein.",
+      "source_sentence_normalized": "Auf Bundesebene setzen wir uns für eine Rückkehr zur Kernenergie als Teil eines technologieoffenen Energiemixes ein.ein.",
+      "source_sentence_sha256": "b6599a9d74773adea8b5415c61892951599c435ed8fcb5efc3ea2b3f7c7321ab",
+      "policy_action": "Auf Bundesebene setzen wir uns für eine Rückkehr zur Kernenergie als Teil eines technologieoffenen Energiemixes ein.ein.",
+      "policy_action_sha256": "b6599a9d74773adea8b5415c61892951599c435ed8fcb5efc3ea2b3f7c7321ab",
+      "source_text_sha256": "b6599a9d74773adea8b5415c61892951599c435ed8fcb5efc3ea2b3f7c7321ab",
+      "source_parent_text_sha256": "ead2612949be91f8664779df01902517252e7efe4519291704750dfa0b580c6e",
+      "atomicity_basis": "TERMINAL_PUNCTUATION_OR_SEMICOLON_CLAUSE",
+      "grammatical_context_inherited_from_source_unit": false,
+      "source_list_item": false,
+      "terminal_status": "REVIEWED_NOT_ASSESSABLE_WITH_EXACT_REASON",
+      "review_class": "CLIMATE_ENERGY_ENVIRONMENT",
+      "missing_review_inputs": [
+        "physical_measure_scale_location_and_timing",
+        "emissions_energy_water_or_resilience_baseline",
+        "delivery_actor_finance_and_competence",
+        "affected_system_and_distribution",
+        "counterfactual",
+        "independent_effect_evidence"
+      ],
+      "exact_reason_code": "CLIMATE_ENERGY_ENVIRONMENT_MINIMUM_INPUTS_UNRESOLVED",
+      "exact_reason": "BE-AFD-2026-SU-0081-A14 (`Auf Bundesebene setzen wir uns für eine Rückkehr zur Kernenergie als Teil eines technologieoffenen Energiemixes ein.ein.`) is terminally not assessable after individual object-level review: this CLIMATE_ENERGY_ENVIRONMENT object does not specify or bind physical_measure_scale_location_and_timing, emissions_energy_water_or_resilience_baseline, delivery_actor_finance_and_competence, affected_system_and_distribution, counterfactual, independent_effect_evidence. Those are the minimum inputs required to establish competence, affected state and group, causal mechanism, counterfactual, independent evidence, materiality, uncertainty and reality check for this exact object without adding Fach not present in the pinned programme or approved stock.",
+      "source_refs": [
+        {
+          "artifact_id": "BE-AGH-2026-AFD-LANDESWAHLPROGRAMM",
+          "artifact_sha256": "949b0c7cc193801c48fa5c859cb0088fae6ed8cb304d47c91bd5eb441af6bd35",
+          "locator": "p054:b003@65.15,153.19,379.76,250.12;p054:b004@65.25,261.03,380.91,334.12;p054:b005@64.90,345.19,379.77,430.12;p054:b006@64.98,441.03,379.85,562.12;p055:b001@59.45,69.19,375.87,94.12;p055:b002@59.11,105.03,373.89,214.12;p055:b003@59.11,225.03,375.88,298.12;p055:b004@59.16,309.03,375.88,406.12;p055:b005@59.28,417.19,373.93,490.12"
+        }
+      ],
+      "approval_basis": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26",
+      "approval_authority": "PROJECT_OWNER_DELEGATED_PROTOCOL",
+      "review_mode": "SOURCE_BOUND_OBJECT_LEVEL",
+      "human_individual_record_review_claimed": false,
+      "reviewed_at": "2026-08-26"
+    }
+  ]
+}

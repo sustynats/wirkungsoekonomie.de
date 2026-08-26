@@ -103,7 +103,9 @@ assert.match(blueprintSource, /Wirkungsrichtung/, "direction must be visible");
 assert.match(blueprintSource, /Evidenz/, "evidence must be visible separately");
 
 const stateOverviewSource = readFileSync(path.join(root, "app/laender/sachsen-anhalt/page.tsx"), "utf8");
-assert.match(stateOverviewSource, /saxonyAnhaltReviewedCommitmentCounts/, "Sachsen-Anhalt overview must use material analysed counts, not ambiguous release metadata");
+assert.match(stateOverviewSource, /saxonyAnhaltExecutiveImpactSummary/, "Sachsen-Anhalt overview must use the approved full-programme impact projection");
+assert.match(stateOverviewSource, /summary\.material_paths\.slice\(0, 3\)/, "Sachsen-Anhalt overview must expose at most three approved material paths");
+assert.doesNotMatch(stateOverviewSource, /saxonyAnhaltReviewedCommitmentCounts|editorial\.keyFindings\.map/, "Sachsen-Anhalt overview must not treat the historical Editorial-v2 subset as a programme-wide materiality selection");
 assert.match(stateOverviewSource, /saxonyAnhaltTerminalRelease/, "Sachsen-Anhalt overview must project the terminal six-party release");
 assert.match(stateOverviewSource, /getrennte Zähldimension/, "Sachsen-Anhalt overview must distinguish historical and authoritative counts");
 assert.doesNotMatch(stateOverviewSource, /overview\.commitment_count/, "Sachsen-Anhalt overview must not expose ambiguous release metadata as analysed count");

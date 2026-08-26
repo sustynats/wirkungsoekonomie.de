@@ -87,6 +87,148 @@
         "review_status": { "const": "APPROVED" }
       }
     },
+    "caseAnalysisBinding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["approval_provenance", "selected_case_id", "canonical_record_path", "canonical_editorial_path", "decision_or_measure", "intended_change", "source_statement_refs", "affected_group_or_system", "mechanism", "potential_state_change", "key_finding", "impact_core_summary", "editorial_summary", "direction_rationale", "impact_direction", "evidence_level", "competence_and_system_boundary", "material_risks", "impact_orders", "time_horizon", "materiality", "uncertainty", "falsification_or_reality_check", "noncompensation", "marker_decision", "editorial_input_status"],
+      "properties": {
+        "approval_provenance": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["approval_basis", "approval_authority", "review_mode", "human_individual_record_review_claimed"],
+          "properties": {
+            "approval_basis": { "const": "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26" },
+            "approval_authority": { "const": "PROJECT_OWNER_DELEGATED_PROTOCOL" },
+            "review_mode": { "const": "SOURCE_BOUND_OBJECT_LEVEL" },
+            "human_individual_record_review_claimed": { "const": false }
+          }
+        },
+        "selected_case_id": { "type": "string", "minLength": 1 },
+        "canonical_record_path": { "type": "string", "minLength": 1 },
+        "canonical_editorial_path": { "type": "string", "minLength": 1 },
+        "decision_or_measure": { "type": "string", "minLength": 1 },
+        "intended_change": { "type": "string", "minLength": 1 },
+        "source_statement_refs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["source_key", "location", "source_text"],
+            "properties": {
+              "source_key": { "type": "string", "minLength": 1 },
+              "location": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["page", "section"],
+                "properties": {
+                  "page": { "oneOf": [{ "type": "integer", "minimum": 1 }, { "type": "string", "minLength": 1 }] },
+                  "section": { "type": ["string", "null"] }
+                }
+              },
+              "source_text": { "type": "string", "minLength": 1 }
+            }
+          }
+        },
+        "affected_group_or_system": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+        "mechanism": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+        "potential_state_change": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+        "key_finding": { "type": "string", "minLength": 1 },
+        "impact_core_summary": { "type": "string", "minLength": 1 },
+        "editorial_summary": { "type": "string", "minLength": 1 },
+        "direction_rationale": { "type": "string", "minLength": 1 },
+        "impact_direction": { "enum": ["POSITIVE", "NEGATIVE", "AMBIVALENT", "OPEN"] },
+        "evidence_level": { "enum": ["HIGH", "MEDIUM", "LOW", "NOT_ASSESSABLE"] },
+        "competence_and_system_boundary": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["responsible_actors", "competence_note", "implementation_conditions"],
+          "properties": {
+            "responsible_actors": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+            "competence_note": { "type": ["string", "null"] },
+            "implementation_conditions": { "type": "array", "items": { "type": "string", "minLength": 1 } }
+          }
+        },
+        "material_risks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["risk", "trigger_or_condition", "affected_groups_or_goods", "evidence_status"],
+            "properties": {
+              "risk": { "type": "string", "minLength": 1 },
+              "trigger_or_condition": { "type": "string", "minLength": 1 },
+              "affected_groups_or_goods": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+              "evidence_status": { "type": "string", "minLength": 1 }
+            }
+          }
+        },
+        "impact_orders": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["first_order", "second_order", "third_order", "status"],
+          "properties": {
+            "first_order": { "type": "string", "minLength": 1 },
+            "second_order": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+            "third_order": { "type": "string", "minLength": 1 },
+            "status": { "type": "string", "minLength": 1 }
+          }
+        },
+        "time_horizon": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["short_term", "medium_term", "long_term", "intergenerational_relevance"],
+          "properties": {
+            "short_term": { "type": "string", "minLength": 1 },
+            "medium_term": { "type": "string", "minLength": 1 },
+            "long_term": { "type": "string", "minLength": 1 },
+            "intergenerational_relevance": { "type": "string", "minLength": 1 }
+          }
+        },
+        "materiality": { "type": "string", "minLength": 1 },
+        "uncertainty": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+        "falsification_or_reality_check": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["baseline_required", "primary_indicator", "unit", "counterfactual_required", "earliest_review", "correction_trigger"],
+          "properties": {
+            "baseline_required": { "type": "string", "minLength": 1 },
+            "primary_indicator": { "type": "string", "minLength": 1 },
+            "unit": { "type": "string", "minLength": 1 },
+            "counterfactual_required": { "type": ["string", "null"] },
+            "earliest_review": { "type": "string", "minLength": 1 },
+            "correction_trigger": { "type": "string", "minLength": 1 }
+          }
+        },
+        "noncompensation": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["concern", "rationale", "status"],
+            "properties": {
+              "concern": { "type": "string", "minLength": 1 },
+              "rationale": { "type": "string", "minLength": 1 },
+              "status": { "type": "string", "minLength": 1 }
+            }
+          }
+        },
+        "marker_decision": { "enum": ["ALLOWED_IF_CANONICAL_PATH_BINDING_PASSES", "NULL_MARKER_APPROVED"] },
+        "editorial_input_status": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["approved_case_selection", "reviewed_visual_brief", "alt_text_review", "editorial_brief_signoff", "image_asset", "final_image_signoff"],
+          "properties": {
+            "approved_case_selection": { "const": "APPROVED" },
+            "reviewed_visual_brief": { "const": "APPROVED" },
+            "alt_text_review": { "const": "APPROVED" },
+            "editorial_brief_signoff": { "const": "APPROVED" },
+            "image_asset": { "const": "NOT_YET_SUPPLIED" },
+            "final_image_signoff": { "const": "PENDING_ASSET" }
+          }
+        }
+      }
+    },
     "generatorMetadata": {
       "type": "object",
       "additionalProperties": false,
@@ -127,7 +269,7 @@
       "additionalProperties": false,
       "required": ["code", "description", "required_for"],
       "properties": {
-        "code": { "enum": ["APPROVED_CASE_SELECTION", "REVIEWED_VISUAL_BRIEF", "VISIBLE_ELEMENT_MAPPING", "NON_VISUAL_EFFECT_SELECTION", "ALT_TEXT_REVIEW", "EDITORIAL_VISUAL_SIGNOFF"] },
+        "code": { "enum": ["APPROVED_CASE_SELECTION", "REVIEWED_VISUAL_BRIEF", "VISIBLE_ELEMENT_MAPPING", "NON_VISUAL_EFFECT_SELECTION", "ALT_TEXT_REVIEW", "EDITORIAL_VISUAL_SIGNOFF", "IMAGE_ASSET", "FINAL_IMAGE_SIGNOFF"] },
         "description": { "type": "string", "minLength": 1 },
         "required_for": { "enum": ["PROGRAM_SCENARIO", "CASE_SCENARIO", "BOTH"] }
       }
@@ -146,7 +288,7 @@
     "record": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["id", "object_type", "object_id", "source_key", "analysis_version", "knowledge_cutoff", "stage", "visual_scope", "title", "normalized_subject", "source_statement_refs", "selected_impact_path_ids", "eligible_approved_analysis_refs", "selection_rationale", "visible_elements", "non_visual_effects", "non_visual_effects_review_status", "omitted_material_effects", "omitted_marker_candidates", "system_boundary", "scenario_assumptions", "evidence_summary", "disclaimer", "asset_path", "alt_text", "visual_brief", "generator_metadata", "asset_sha256", "asset_metadata", "editorial_review_status", "source_fidelity_status", "missing_approved_inputs", "change_history"],
+      "required": ["id", "object_type", "object_id", "source_key", "analysis_version", "knowledge_cutoff", "stage", "visual_scope", "title", "normalized_subject", "source_statement_refs", "selected_impact_path_ids", "eligible_approved_analysis_refs", "selection_rationale", "visible_elements", "case_analysis_binding", "non_visual_effects", "non_visual_effects_review_status", "omitted_material_effects", "omitted_marker_candidates", "system_boundary", "scenario_assumptions", "evidence_summary", "disclaimer", "asset_path", "alt_text", "visual_brief", "generator_metadata", "asset_sha256", "asset_metadata", "editorial_review_status", "source_fidelity_status", "missing_approved_inputs", "change_history"],
       "properties": {
         "id": { "type": "string", "minLength": 1 },
         "object_type": { "enum": ["PROGRAM", "COMMITMENT", "IMPACT_CASE", "GOVERNMENT_ACTION"] },
@@ -163,6 +305,7 @@
         "eligible_approved_analysis_refs": { "type": "array", "items": { "type": "string", "minLength": 1 } },
         "selection_rationale": { "type": "string", "minLength": 1 },
         "visible_elements": { "type": "array", "items": { "$ref": "#/$defs/visibleElement" } },
+        "case_analysis_binding": { "oneOf": [{ "type": "null" }, { "$ref": "#/$defs/caseAnalysisBinding" }] },
         "non_visual_effects": { "type": "array", "items": { "type": "string", "minLength": 1 } },
         "non_visual_effects_review_status": { "enum": ["PENDING_APPROVAL", "REVIEWED_COMPLETE"] },
         "omitted_material_effects": { "type": "array", "items": { "type": "string", "minLength": 1 } },
@@ -177,8 +320,8 @@
         "generator_metadata": { "oneOf": [{ "type": "null" }, { "$ref": "#/$defs/generatorMetadata" }] },
         "asset_sha256": { "oneOf": [{ "type": "null" }, { "$ref": "#/$defs/sha256" }] },
         "asset_metadata": { "oneOf": [{ "type": "null" }, { "$ref": "#/$defs/assetMetadata" }] },
-        "editorial_review_status": { "enum": ["NO_APPROVED_VISUAL_SCENARIO", "APPROVED_FOR_PUBLICATION"] },
-        "source_fidelity_status": { "enum": ["FAIL_CLOSED_NO_PUBLIC_ASSET", "PASS_APPROVED_ANALYSIS_ONLY"] },
+        "editorial_review_status": { "enum": ["NO_APPROVED_VISUAL_SCENARIO", "PREPARED_AWAITING_ASSET", "APPROVED_FOR_PUBLICATION"] },
+        "source_fidelity_status": { "enum": ["FAIL_CLOSED_NO_PUBLIC_ASSET", "PASS_APPROVED_ANALYSIS_ONLY_AWAITING_ASSET", "PASS_APPROVED_ANALYSIS_ONLY"] },
         "missing_approved_inputs": { "type": "array", "items": { "$ref": "#/$defs/missingApprovedInput" } },
         "change_history": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/changeHistoryEntry" } }
       }

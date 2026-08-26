@@ -11,6 +11,7 @@ export const impactDimensionSummarySchema = z.object({
   headline: z.string().min(1),
   state_changes: z.array(z.string().min(1)),
   rationale: z.string().min(1),
+  source_path_ids: z.array(z.string().min(1)).min(1),
 });
 
 export const sdgImpactSchema = z.object({
@@ -21,6 +22,7 @@ export const sdgImpactSchema = z.object({
   materiality: impactMaterialitySchema,
   evidence: executiveEvidenceSchema,
   rationale: z.string().min(1),
+  source_path_ids: z.array(z.string().min(1)).min(1),
 });
 
 export const materialImpactPathSchema = z.object({
@@ -58,6 +60,7 @@ export const executiveImpactSummarySchema = z.object({
   key_finding: z.string().min(1).nullable(),
   direction_label: z.string().min(1),
   overall_character: z.enum(["PREDOMINANTLY_POSITIVE", "PREDOMINANTLY_NEGATIVE", "MIXED", "OPEN", "NO_SINGLE_DIRECTION"]),
+  overall_materiality: impactMaterialitySchema,
   why_it_matters: z.string().min(1),
   system_boundary: z.string().min(1),
   mpd: z.object({
@@ -70,6 +73,7 @@ export const executiveImpactSummarySchema = z.object({
   materiality_selection_status: z.enum(["APPROVED_MATERIALITY_SELECTION", "FAIL_CLOSED_NO_APPROVED_RANKING"]),
   materiality_selection_rationale: z.string().min(1),
   noncompensable_risks: z.array(nonCompensableRiskSchema),
+  noncompensation_status: z.enum(["APPROVED_BOUNDARIES", "REVIEWED_NONE", "NOT_AVAILABLE"]),
   key_tradeoffs: z.array(z.object({ title: z.string().min(1), explanation: z.string().min(1), source_path_ids: z.array(z.string().min(1)) })),
   evidence_summary: z.string().min(1),
   uncertainty_summary: z.string().min(1),

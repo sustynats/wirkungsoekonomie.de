@@ -30,20 +30,23 @@ for (const requiredPath of [overviewPath, routePath, componentPath, executiveCom
 
 const overviewSource = readFileSync(overviewPath, "utf8");
 for (const requiredToken of [
-  "data-woek-programme-potential=\"published\"",
-  "Wirkungspotenzial",
-  "Key Findings",
-  "Richtungsprofil der nachgeprüften Schlüsselpfade",
-  "editorial.keyFindings.map",
-  "Nicht kompensierbare Schutzgüter",
+  "data-woek-programme-impact-card",
+  "ProgrammeImpactCard",
+  "summary.mpd",
+  "summary.sdg_impacts",
+  "summary.material_paths.slice(0, 3)",
+  "summary.noncompensable_risks",
+  "Nichtkompensation:",
   "Terminaler Quellen- und Fachstand · 6/6",
-  "autoritative Source Units",
-  "Primärquellen-Parität: vollständig",
+  "Wirkungsanalyse öffnen",
 ]) {
   if (!overviewSource.includes(requiredToken)) fail(`Sachsen-Anhalt overview does not contain ${requiredToken}`);
 }
 if (overviewSource.includes("editorial.keyFindings.slice(0, 2)")) {
   fail("programme overview must not hide approved material key findings behind a two-item preview");
+}
+if (overviewSource.includes("editorial.keyFindings.map") || overviewSource.includes("const directionCounts")) {
+  fail("programme overview must use the delegated full-programme materiality projection, not the former Editorial-v2 key-finding list");
 }
 for (const staleClaim of ["Vollreaudit laufen", "finale Source-Unit-Parität offen", "finale Nenner ist noch nicht eingefroren"]) {
   if (overviewSource.includes(staleClaim)) fail(`Sachsen-Anhalt overview retains stale convergence claim: ${staleClaim}`);
@@ -185,7 +188,8 @@ console.log(JSON.stringify({
   route: "/laender/sachsen-anhalt/wahlprogramme/[sourceKey]",
   blueprint: "programme-blueprint-v3",
   programmePotentialSummaryVisibleInOverview: true,
-  allApprovedProgrammeKeyFindingsVisibleInOverview: true,
+  formerFourPathEditorialUsedAsProgrammeOverview: false,
+  delegatedProgrammeProjectionVisibleInOverview: true,
   reviewedCentralAssessments: sourceKeys.reduce((sum, sourceKey) => sum + Object.keys(saxonyAnhaltProgrammeEditorialV2[sourceKey].centralAssessments).length, 0),
   legacyDuplicateTemplateClustersDetected: legacyDuplicateClusters,
   legacyTemplatesUsedAsCurrentShortAssessment: false,

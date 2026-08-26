@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0.0",
+  "ledger_id": "WOEK-BE-AFD-2026-FULL-PROGRAMME-REVIEW-V1",
+  "shard_type": "SOURCE_UNITS",
+  "page_from": 97,
+  "page_to": 99,
+  "records": [
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0127",
+      "pdf_page": 97,
+      "pdf_pages": [
+        97,
+        98
+      ],
+      "source_locator": "p097:b014@59.35,549.19,246.82,562.12;p098:b001@64.08,69.19,315.08,83.79;p098:b002@65.33,93.19,379.76,118.12;p098:b003@65.37,129.03,379.77,202.12;p098:b004@64.08,213.03,317.97,263.79;p098:b005@64.98,273.19,378.96,298.12;p098:b006@65.14,309.03,380.86,382.12;p098:b007@64.06,393.03,324.74,419.79;p098:b008@64.06,417.19,344.22,455.79;p098:b009@65.18,453.19,178.55,466.12;p098:b010@65.17,477.19,379.82,562.12",
+      "source_excerpt": "(Betrieb, Wartung, Ersatz-Investitionen); → eine transparente Darstellung der Haushaltswirkungen. Politik muss bezahlbar bleiben. Maßstab ist nicht das Etikett eines Programms, sondern seine Finanzierbarkeit und seine Wirkung. Die junge Generation im Blick Generationengerechtigk…",
+      "source_text_normalized": "(Betrieb, Wartung, Ersatz-Investitionen); → eine transparente Darstellung der Haushaltswirkungen. Politik muss bezahlbar bleiben. Maßstab ist nicht das Etikett eines Programms, sondern seine Finanzierbarkeit und seine Wirkung. Die junge Generation im Blick Generationengerechtigkeit bedeutet, heutige Entscheidungen nicht in Form verdeckter Verpflichtungen an die Zukunft weiterzugeben. Besonders relevant sind Versorgungs- und Pensionslasten sowie dauerhafte Bindungen, die künftige Haushalte einschränken. Berlin braucht hier Regelbindung, Transparenz und einen klaren Abbaupfad. Wir fordern ein regelmäßiges, transparentes Monitoring der impliziten Schulden: → Pensionslasten regelmäßig ermitteln und aktualisieren; → angemessene Rücklagen bilden. Wer Generationengerechtigkeit ernst nimmt, muss implizite Schulden genauso behandeln wie explizite. Haushaltsausgleich in vier Jahren, danach Schuldenabbau Die Berliner Haushaltspolitik muss wieder auf Stabilität ausgerichtet werden. Ziel ist ein ausgeglichener Haushalt ohne Haushaltsdefizit innerhalb von vier Jahren und anschließend der Abbau von Verbindlichkeiten. Nur ein solcher Pfad stellt Krisenfestigkeit her und eröffnet Spielräume für Entlastung. Wir verfolgen das Ziel: → Innerhalb von vier Jahren einen Haushaltsausgleich ohne Haushaltsdefizit zu erreichen; → anschließend Verbindlichkeiten systematisch abzubauen; → Entlastungen und Steuersenkungen nur auf Grundlage solider Haushalte umzusetzen. Ein tragfähiger Haushalt ist die Voraussetzung, um Bürger und Wirtschaft dauerhaft zu entlasten, ohne neue Risiken zu schaffen. Berlin braucht eine Standortpolitik, die Haushaltsdisziplin, investive Schwerpunktsetzung und Entlastung verbindet – nicht durch Verschiebung von Lasten, sondern durch Prioritätensetzung, Effizienz und Transparenz. Berlin hat Zukunft – aber nur mit Solidität, Berechenbarkeit und einem Haushalt, der Kernaufgaben zuverlässig finanziert, Risiken offenlegt und neue Schulden vermeidet.",
+      "source_text_sha256": "ed7392379f1b5ba39b0ce9742e82f57cb893aeed22178f3cf3f163918955750b",
+      "source_visual_role": "BODY",
+      "contains_explicit_list_marker": true,
+      "classification": "EFFECT_BEARING",
+      "effect_bearing": true,
+      "terminal_status": null,
+      "atom_ids": [
+        "BE-AFD-2026-SU-0127-A01",
+        "BE-AFD-2026-SU-0127-A02",
+        "BE-AFD-2026-SU-0127-A03",
+        "BE-AFD-2026-SU-0127-A04",
+        "BE-AFD-2026-SU-0127-A05",
+        "BE-AFD-2026-SU-0127-A06",
+        "BE-AFD-2026-SU-0127-A07",
+        "BE-AFD-2026-SU-0127-A08",
+        "BE-AFD-2026-SU-0127-A09",
+        "BE-AFD-2026-SU-0127-A10",
+        "BE-AFD-2026-SU-0127-A11",
+        "BE-AFD-2026-SU-0127-A12",
+        "BE-AFD-2026-SU-0127-A13"
+      ],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    },
+    {
+      "source_unit_id": "BE-AFD-2026-SU-0128",
+      "pdf_page": 99,
+      "pdf_pages": [
+        99
+      ],
+      "source_locator": "p099:b000@38.62,530.23,299.52,571.87",
+      "source_excerpt": "Unterstützen Sie die AfD Berlin www.afd.berlin | www.kristin-brinker.de",
+      "source_text_normalized": "Unterstützen Sie die AfD Berlin www.afd.berlin | www.kristin-brinker.de",
+      "source_text_sha256": "751023246b0571e6a9b0c3e1d003e44b12f46d2fa455939f3405838be7a820a2",
+      "source_visual_role": "BACK_COVER",
+      "contains_explicit_list_marker": false,
+      "classification": "NON_EFFECT_CONTEXT",
+      "effect_bearing": false,
+      "terminal_status": "NON_EFFECT_CONTEXT_REVIEWED",
+      "atom_ids": [],
+      "provenance_ref": "WOEK-DELEGATED-EDITORIAL-2026-08-26",
+      "reviewed_at": "2026-08-26"
+    }
+  ]
+}

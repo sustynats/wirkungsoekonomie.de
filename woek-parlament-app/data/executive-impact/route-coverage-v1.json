@@ -1,6 +1,6 @@
 {
   "schema_version": "woek-impact-first-route-coverage-1.0",
-  "generated_from_main": "9e8389cb8623109a87ba6f3563d5aabac3ba6cea",
+  "generated_from_main": "186e208e9da860e1aa0391faca9c1feeae9ae3f9",
   "audited_at": "2026-08-26",
   "rows": [
     {
@@ -55,19 +55,21 @@
       "route_family": "Sachsen-Anhalt election overview",
       "route_patterns": ["app/laender/sachsen-anhalt/page.tsx"],
       "audited": true,
-      "current": "Six case-specific programme findings and six equal-size approved programme visuals are visible; no ranking.",
-      "failure": "The former visual overview only showed empty-slot status.",
-      "target": "Six programmes, six neutral ex-ante scenarios with direct access to the impact-first details.",
-      "canonical_data": "Editorial v2, terminal six-party release, approved visual handoff.",
+      "current": "Six compact cards expose a source-bound bottom line, MPD, directed SDG/SDG+, up to three material paths, materiality, evidence and noncompensation before method/process data; no score or ranking.",
+      "failure": "The former overview foregrounded process text and the first four Editorial-v2 paths instead of a programme-wide materiality projection.",
+      "target": "A five-second comparison view with concrete state change, affected systems, direction, materiality and protection boundaries; full analysis one link away.",
+      "canonical_data": "Terminal six-party release, delegated source-bound programme projections, Editorial v2 object bindings, communication Fach records and approved visual handoff.",
       "canonical_data_identified": true,
-      "gap": "Programme-wide materiality ranking is not fach-approved.",
-      "implementation": "OverviewAssessment + ImpactVisualOverview.",
+      "gap": "None for the compact programme-impact function; six Case image assets remain a separate detail-route blocker.",
+      "implementation": "ProgrammeImpactCard + saxonyAnhaltExecutiveImpactSummary + ImpactVisualOverview.",
       "impact_first_implemented": true,
-      "mpd": "NOT_APPLICABLE",
-      "sdg": "NOT_APPLICABLE",
-      "material_paths": "NOT_APPLICABLE",
-      "evidence": "PASS",
-      "noncompensation": "PASS_WHEN_EXPLICIT",
+      "bottom_line": "REQUIRED_PASS_6_OF_6",
+      "mpd": "REQUIRED_PASS_6_OF_6",
+      "sdg": "REQUIRED_WHERE_APPROVED_PASS_6_OF_6",
+      "material_paths": "REQUIRED_MAX_3_OVERVIEW_PASS_6_OF_6",
+      "materiality": "REQUIRED_PASS_6_OF_6",
+      "evidence": "REQUIRED_PASS_6_OF_6",
+      "noncompensation": "REQUIRED_WHEN_APPLICABLE_PASS_6_OF_6",
       "communication_preview_if_applicable": "DETAIL_ROUTE",
       "visual_if_available": "PASS_6_OF_6",
       "mobile": "PASS",
@@ -79,25 +81,27 @@
       "route_family": "Sachsen-Anhalt programme detail",
       "route_patterns": ["app/laender/sachsen-anhalt/wahlprogramme/[sourceKey]/page.tsx"],
       "audited": true,
-      "current": "Shared executive impact layer precedes approved visual, key paths, communication analysis and full source/audit data.",
-      "failure": "No separate approved programme-wide materiality ranking or MPD/SDG aggregate direction exists.",
-      "target": "Concrete approved bottom line and paths first; absent aggregate Fach layers visibly open; image never creates Fach.",
-      "canonical_data": "Terminal source release, Editorial v2, communication-media Fach records, visual descriptor.",
+      "current": "Bottom line, MPD, directed SDG/SDG+, three material paths, noncompensation and evidence precede the approved programme image, communication analysis and all process/source detail.",
+      "failure": "The former detail view placed process counts above impact and treated four Editorial-v2 paths as its central programme selection.",
+      "target": "Exact impact-first order with strongest approved findings first; programme image after evidence; communication and process metadata later.",
+      "canonical_data": "Terminal source release, delegated source-bound programme projections, Editorial v2 bindings, communication-media Fach records and visual descriptor.",
       "canonical_data_identified": true,
-      "gap": "Exact external Fach input: path materiality/order/time, programme-wide materiality selection and separate MPD/SDG direction projections.",
+      "gap": "External blocker only for six separate Case-Scenario IMAGE_ASSET and FINAL_IMAGE_SIGNOFF inputs; programme analysis and six Program-Scenario images are complete.",
       "implementation": "saxonyAnhaltExecutiveImpactSummary + ExecutiveImpactSummaryView + ImpactVisualScenario.",
       "impact_first_implemented": true,
-      "mpd": "FAIL_CLOSED_WHERE_AGGREGATE_NOT_APPROVED",
-      "sdg": "FAIL_CLOSED_WHERE_DIRECTION_NOT_APPROVED",
-      "material_paths": "PASS_WITH_MATERIALITY_OPEN",
-      "evidence": "PASS",
-      "noncompensation": "PASS_WHEN_EXPLICIT",
+      "bottom_line": "REQUIRED_PASS_6_OF_6",
+      "mpd": "REQUIRED_PASS_6_OF_6",
+      "sdg": "REQUIRED_WHERE_APPROVED_PASS_6_OF_6",
+      "material_paths": "REQUIRED_MAX_5_DETAIL_PASS_6_OF_6",
+      "materiality": "REQUIRED_PASS_6_OF_6",
+      "evidence": "REQUIRED_PASS_6_OF_6",
+      "noncompensation": "REQUIRED_WHEN_APPLICABLE_PASS_6_OF_6",
       "communication_preview_if_applicable": "PASS_6_OF_6",
       "visual_if_available": "PASS_6_OF_6_PROGRAM; CASE_FAIL_CLOSED_6_OF_6",
       "mobile": "PASS",
       "a11y": "PASS",
       "test": "executive-impact + impact visuals + browser 320/360/375/390/428",
-      "status": "FAIL_CLOSED"
+      "status": "EXTERNAL_BLOCKER"
     },
     {
       "route_family": "Curated state coalition agreements",
@@ -121,7 +125,7 @@
       "mobile": "PASS",
       "a11y": "PASS",
       "test": "coalition review + executive contract",
-      "status": "FAIL_CLOSED"
+      "status": "EXTERNAL_BLOCKER"
     },
     {
       "route_family": "Government impact analysis detail",
@@ -193,7 +197,7 @@
       "mobile": "PASS",
       "a11y": "PASS",
       "test": "EU source-vs-view + executive contract",
-      "status": "FAIL_CLOSED"
+      "status": "EXTERNAL_BLOCKER"
     },
     {
       "route_family": "State hubs, state facts and Sachsen-Anhalt supporting records",
@@ -204,7 +208,7 @@
       "target": "Navigate to approved object-level analyses without a synthetic state score.",
       "canonical_data": "State registry, source freezes, target registers, approved review links.",
       "canonical_data_identified": true,
-      "gap": "Berlin and Mecklenburg-Vorpommern deep-Fach terminals remain externally incomplete.",
+      "gap": "Berlin's 12 final programmes and Mecklenburg-Vorpommern's 12 verified final programmes are terminal. Seven additional MV listings remain fail-closed until an official final programme artefact is verified.",
       "implementation": "State content components and explicit review maturity states.",
       "impact_first_implemented": false,
       "mpd": "NOT_APPLICABLE",
@@ -241,7 +245,7 @@
       "mobile": "PASS",
       "a11y": "PASS",
       "test": "publication completeness + source-vs-view",
-      "status": "FAIL_CLOSED"
+      "status": "EXTERNAL_BLOCKER"
     },
     {
       "route_family": "Votes and members",
@@ -289,7 +293,7 @@
       "mobile": "PASS",
       "a11y": "PASS",
       "test": "publication deep verify + public content completeness",
-      "status": "FAIL_CLOSED"
+      "status": "EXTERNAL_BLOCKER"
     },
     {
       "route_family": "Search and source transparency",
@@ -361,7 +365,7 @@
       "mobile": "PASS",
       "a11y": "PASS",
       "test": "observatory source chain + public labels",
-      "status": "FAIL_CLOSED"
+      "status": "EXTERNAL_BLOCKER"
     },
     {
       "route_family": "Operational status and subscription pages",

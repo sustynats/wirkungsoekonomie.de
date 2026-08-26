@@ -15,7 +15,7 @@ test("executive impact contract requires explicit MPD, provenance and fail-close
 
 test("shared Executive UI exposes every required layer with non-colour direction cues", () => {
   const component = source("app/components/executive-impact/ExecutiveImpactSummary.tsx");
-  for (const name of ["ImpactExecutiveHero", "MPDImpactTriad", "SdgImpactStrip", "MaterialImpactPaths", "NonCompensationAlert", "EvidenceBand", "CommunicationImpactPreview", "ImpactRealityCheck", "SourceTransparencyDrawer"]) assert.match(component, new RegExp(`export function ${name}\\b`));
+  for (const name of ["ImpactExecutiveHero", "MPDImpactTriad", "SdgImpactStrip", "MaterialImpactPaths", "ImpactCascade", "NonCompensationAlert", "KeyTradeoffs", "EvidenceBand", "CommunicationImpactPreview", "ImpactRealityCheck", "SourceTransparencyDrawer"]) assert.match(component, new RegExp(`export function ${name}\\b`));
   assert.match(component, /icon: "↑"/);
   assert.match(component, /icon: "↓"/);
   assert.match(component, /icon: "○"/);
@@ -36,4 +36,6 @@ test("Sachsen-Anhalt reuses the approved editorial and communication projections
   assert.match(adapter, /why_it_matters: editorial\.impactCoreSummary/);
   assert.match(adapter, /assessment_label: communication\.overview_assessment_label/);
   assert.match(adapter, /summary: communication\.public_summary/);
+  assert.match(adapter, /commitment\?\.boundaryStatus !== "BLOCK"/);
+  assert.doesNotMatch(adapter, /nicht kompensier/i);
 });
