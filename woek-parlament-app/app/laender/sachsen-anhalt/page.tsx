@@ -51,10 +51,9 @@ function ProgrammeImpactCard({ party, title, href, summary }: { party: string; t
   return <article className={styles.programmeCard} data-woek-programme-impact-card={summary.object_id} data-materiality={summary.overall_materiality.toLowerCase()}>
     <header>
       <p>{party} · Ex-ante-Wirkungsanalyse</p>
-      <h3>{summary.bottom_line}</h3>
+      <h3>{compact(summary.bottom_line, 100)}</h3>
       <span className={styles.programmeTitle}>{title}</span>
     </header>
-    <p className={styles.why}>{compact(summary.why_it_matters, 120)}</p>
     <div className={styles.mpd} aria-label="Mensch, Planet, Demokratie">
       {(["human", "planet", "democracy"] as const).map((key) => {
         const item = summary.mpd[key];

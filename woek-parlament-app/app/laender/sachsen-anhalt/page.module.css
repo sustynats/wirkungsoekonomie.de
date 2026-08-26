@@ -18,15 +18,14 @@
 
 .programmes { scroll-margin-top: 8rem; }
 .cardGrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; align-items: stretch; }
-.programmeCard { --signal: #64748b; display: flex; min-width: 0; flex-direction: column; gap: .48rem; padding: .9rem; border: 1px solid var(--line); border-top: .36rem solid var(--signal); border-radius: var(--r-card); background: var(--paper); box-shadow: 0 .55rem 1.4rem rgb(16 27 45 / 5%); }
+.programmeCard { --signal: #64748b; display: flex; min-width: 0; flex-direction: column; gap: .4rem; padding: .82rem; border: 1px solid var(--line); border-top: .36rem solid var(--signal); border-radius: var(--r-card); background: var(--paper); box-shadow: 0 .55rem 1.4rem rgb(16 27 45 / 5%); }
 .programmeCard[data-materiality="critical"] { --signal: #a33a35; }
 .programmeCard[data-materiality="high"] { --signal: #9a6a13; }
-.programmeCard header > p { margin: 0 0 .35rem; color: var(--muted); font-size: .72rem; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; }
-.programmeCard h3 { margin: 0; font-size: clamp(1.08rem, 1.6vw, 1.3rem); line-height: 1.22; }
-.programmeTitle { display: block; margin-top: .35rem; color: var(--muted); font-size: .76rem; }
-.why { margin: 0; font-size: .82rem; line-height: 1.38; }
+.programmeCard header > p { margin: 0 0 .25rem; color: var(--muted); font-size: .66rem; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; }
+.programmeCard h3 { margin: 0; font-size: clamp(1rem, 1.45vw, 1.15rem); line-height: 1.17; }
+.programmeTitle { display: block; margin-top: .22rem; color: var(--muted); font-size: .7rem; line-height: 1.25; }
 .mpd { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .35rem; }
-.mpd div { display: grid; gap: .15rem; min-width: 0; padding: .48rem; border: 1px solid var(--line); border-radius: .55rem; background: var(--paper-warm); }
+.mpd div { display: grid; gap: .05rem; min-width: 0; padding: .34rem; border: 1px solid var(--line); border-radius: .55rem; background: var(--paper-warm); }
 .mpd div > span:first-child { color: var(--muted); font-size: .65rem; font-weight: 800; text-transform: uppercase; }
 .mpd small { color: var(--muted); font-size: .66rem; }
 .direction { display: inline-flex; min-width: 0; gap: .22rem; align-items: center; color: #59677a; font-size: .72rem; font-weight: 800; overflow-wrap: anywhere; }
