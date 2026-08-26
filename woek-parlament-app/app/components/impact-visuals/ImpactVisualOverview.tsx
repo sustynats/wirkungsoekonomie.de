@@ -7,6 +7,7 @@ import styles from "./ImpactVisualScenario.module.css";
 
 function publicStatus(record: ImpactVisualScenarioRecord) {
   if (record.editorial_review_status === "APPROVED_FOR_PUBLICATION") return "Freigegeben";
+  if (record.editorial_review_status === "PREPARED_AWAITING_ASSET") return "Fall + Brief freigegeben · Bild fehlt";
   if (record.missing_approved_inputs.some((input) => input.code === "APPROVED_CASE_SELECTION")) {
     return "Auswahl + Brief ausstehend";
   }
@@ -18,7 +19,7 @@ export function ImpactVisualOverview() {
     <header>
       <p className={styles.eyebrow}>Neue Erklärungsebene · fail closed</p>
       <h2 id="impact-visual-overview-title">Wirkungsbilder: Folgen erklären, politische Frames nicht illustrieren.</h2>
-      <p className="lead">Sechs fachlich und redaktionell freigegebene Programm-Szenarien visualisieren ausgewählte Wirkungspfade. Sie sind Ex-ante-Szenarien, keine Prognosen und keine zusätzliche Evidenz. Die sechs Case-Deep-Dives bleiben bis zu einer separaten Auswahl und Freigabe transparent geschlossen.</p>
+      <p className="lead">Sechs fachlich und redaktionell freigegebene Programm-Szenarien visualisieren ausgewählte Wirkungspfade. Sie sind Ex-ante-Szenarien, keine Prognosen und keine zusätzliche Evidenz. Für alle sechs Case-Deep-Dives sind Fallauswahl, kanonische Analysebindung, Visual Brief, Aussagegrenzen und Alt-Text freigegeben; veröffentlicht werden die Case-Bilder erst nach Lieferung separater Bilddateien und finalem Bild-Signoff.</p>
     </header>
     <div className={styles.overviewGrid}>
       {saxonyAnhaltElectionProgrammes.map((programme) => {
@@ -35,7 +36,7 @@ export function ImpactVisualOverview() {
             <li><span>Programm-Szenario</span><strong>{publicStatus(programmeRecord)}</strong></li>
             <li><span>Case-Deep-Dive</span><strong>{publicStatus(caseRecord)}</strong></li>
           </ul>
-          <Link href={`/laender/sachsen-anhalt/wahlprogramme/${programme.sourceKey}#wirkungsbild`}>Status und fehlende Freigaben öffnen →</Link>
+          <Link href={`/laender/sachsen-anhalt/wahlprogramme/${programme.sourceKey}#wirkungsbild-fallvertiefung`}>Fallbindung und verbleibende Asset-Gates öffnen →</Link>
         </article>;
       })}
     </div>

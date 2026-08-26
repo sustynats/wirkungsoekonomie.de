@@ -87,13 +87,28 @@ const caseVisuals = visual.records.filter((record) => record.visual_scope === "C
 assert.equal(programmeVisuals.length, 6);
 assert.equal(caseVisuals.length, 6);
 assert.equal(programmeVisuals.filter((record) => record.editorial_review_status === "APPROVED_FOR_PUBLICATION").length, 6);
-assert.equal(caseVisuals.filter((record) => record.editorial_review_status === "NO_APPROVED_VISUAL_SCENARIO").length, 6);
+assert.equal(caseVisuals.filter((record) => record.editorial_review_status === "PREPARED_AWAITING_ASSET").length, 6);
 for (const record of programmeVisuals) {
   assert.equal((record.visible_elements as unknown[]).length, 0, String(record.id));
   assert.ok((record.omitted_marker_candidates as unknown[]).length >= 1, String(record.id));
   assert.match(String(record.asset_sha256), /^[a-f0-9]{64}$/);
   assert.ok(record.asset_metadata);
 }
+for (const record of caseVisuals) {
+  assert.equal(record.source_fidelity_status, "PASS_APPROVED_ANALYSIS_ONLY_AWAITING_ASSET", String(record.id));
+  assert.equal(record.asset_path, null, String(record.id));
+  assert.equal(record.asset_sha256, null, String(record.id));
+  assert.equal(record.asset_metadata, null, String(record.id));
+  assert.ok(record.visual_brief, String(record.id));
+  assert.ok(record.alt_text, String(record.id));
+  assert.ok(record.case_analysis_binding, String(record.id));
+  assert.deepEqual((record.missing_approved_inputs as Array<{ code: string }>).map((input) => input.code).sort(), ["FINAL_IMAGE_SIGNOFF", "IMAGE_ASSET"]);
+}
+assert.deepEqual(
+  new Set(caseVisuals.map((record) => record.asset_path).filter(Boolean)),
+  new Set(),
+  "Case slots must never reuse a Program asset",
+);
 
 const scoreScan = [component, adapters, text("app/components/impact-visuals/ImpactVisualScenario.tsx")].join("\n");
 assert.doesNotMatch(scoreScan, /party[-_ ]?score|Parteienbewertung|Gesamtnote|Gesamtpunktzahl/i);
@@ -108,7 +123,8 @@ const gates = [
   ["NONCOMPENSATION_VISIBLE_WHEN_EXPLICIT", true],
   ["COMMUNICATION_ANALYSIS_SEPARATE", true],
   ["PROGRAMME_VISUALS_APPROVED_6_OF_6", true],
-  ["CASE_VISUALS_FAIL_CLOSED_6_OF_6", true],
+  ["CASE_NON_ASSET_HANDOFFS_COMPLETE_6_OF_6", true],
+  ["CASE_ASSET_GATE_FAIL_CLOSED_6_OF_6", true],
   ["NO_UNAPPROVED_MARKER_BINDING", true],
   ["RESPONSIVE_ACCESSIBILITY_CONTRACT", true],
   ["NO_FACH_SYNTHESIS_IN_ADAPTERS", true],

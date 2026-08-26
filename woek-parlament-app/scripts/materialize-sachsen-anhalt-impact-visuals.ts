@@ -19,6 +19,160 @@ const VISUAL_HANDOFF = {
   review_status: "APPROVED" as const,
 };
 
+const CASE_CANONICAL_RECORD_PATH = "data/generated/release-1/sachsen-anhalt-programme-reviews.json";
+const CASE_CANONICAL_EDITORIAL_PATH = "data/presentation/sachsen-anhalt-programme-editorial-v2.ts";
+const CASE_BRIEF_HANDOFF_PATH = "/WOEK/WOEK-PARLAMENT-FACHREVIEW-2026-08-26/04-sachsen-anhalt-case-visuals/CASE-VISUALS-6X-EDITORIAL-BRIEF.md";
+const CASE_APPROVAL_PROVENANCE = {
+  approval_basis: "DELEGATED_WOEK_EDITORIAL_REVIEW_PROTOCOL_2026-08-26" as const,
+  approval_authority: "PROJECT_OWNER_DELEGATED_PROTOCOL" as const,
+  review_mode: "SOURCE_BOUND_OBJECT_LEVEL" as const,
+  human_individual_record_review_claimed: false as const,
+};
+
+type CanonicalSourceRef = {
+  source_key: string;
+  location: { page: number | string; section: string | null };
+  source_text: string;
+};
+
+type CanonicalImpactPotential = {
+  expected_state_change: string;
+  mechanism: string;
+  implementation_conditions: string[];
+  evidence_status: string;
+};
+
+type CanonicalRisk = {
+  risk: string;
+  trigger_or_condition: string;
+  affected_groups_or_goods: string[];
+  evidence_status: string;
+};
+
+type CanonicalBoundary = { concern: string; rationale: string; status: string };
+
+type CanonicalCommitment = {
+  commitment_key: string;
+  source_refs: CanonicalSourceRef[];
+  decision_or_measure: string;
+  intended_change: string;
+  responsible_actors: string[];
+  affected_groups: string[];
+  impact_potential: CanonicalImpactPotential[];
+  impact_risks: CanonicalRisk[];
+  non_compensable_boundaries: CanonicalBoundary[];
+  data_gaps: string[];
+  impact_orders: { first_order: string; second_order: string[]; third_order: string; status: string };
+  distribution_and_time: {
+    short_term: string;
+    medium_term: string;
+    long_term: string;
+    intergenerational_relevance: string;
+  };
+  monitoring_and_feedback: {
+    baseline_required: string;
+    primary_indicator: string;
+    unit: string;
+    counterfactual_required: string | null;
+    earliest_review: string;
+    correction_trigger: string;
+  };
+};
+
+type CanonicalReviewFile = {
+  programmes: Array<{
+    source_key: string;
+    review: { material_commitments: CanonicalCommitment[] };
+  }>;
+};
+
+type ApprovedCaseBrief = {
+  caseId: string;
+  selectionRationale: string;
+  visualBrief: string;
+  visualAnchor: string;
+  notImageFact: string;
+  markerDecision: "ALLOWED_IF_CANONICAL_PATH_BINDING_PASSES" | "NULL_MARKER_APPROVED";
+  markerInstruction: string;
+  altText: string;
+};
+
+const approvedCaseBriefs: Record<string, ApprovedCaseBrief> = {
+  "ltw-2026-st-cdu": {
+    caseId: "ltw-2026-st-cdu-0018-das-institut-fuer-brand-und-katastrophenschutz-in-heyroths",
+    selectionRationale: "Der Pfad ist bereits Teil der endlichen freigegebenen Editorial-v2-Kandidatenmenge und bildet einen konkreten, landesnahen Resilienzhebel ab. Der Fall eignet sich als Deep Dive, weil Instrument, institutioneller Ort und potenzielle Zustandsänderung klarer visualisierbar sind als abstrakte Sicherheits- oder bundesrechtliche Forderungen.",
+    visualBrief: "Fotorealistisches, dokumentarisch-neutrales Ex-ante-Szenario einer Übungs-/Ausbildungssituation des Brand- und Katastrophenschutzes in Sachsen-Anhalt. Sichtbar sein dürfen: Übungsgelände, Einsatz-/Ausbildungsfahrzeug, Schutzkleidung, sachliche Trainingssituation, technische Übungsinfrastruktur. Keine Katastrophendramatik, keine Heldensymbolik, keine Parteifarben, keine Logos, kein Wahlkampftext.",
+    visualAnchor: "institutionelle Ausbildungs-/Übungskapazität.",
+    notImageFact: "tatsächliche spätere Einsatzleistung, vermiedene Todesfälle, konkrete Schadensreduktion oder einen quantifizierten Resilienzgewinn.",
+    markerDecision: "ALLOWED_IF_CANONICAL_PATH_BINDING_PASSES",
+    markerInstruction: "Ein Marker darf ausschließlich die sichtbare Trainings-/Übungsinfrastruktur an den ausgewählten Pfad binden. Text des Markers aus dem kanonischen Wirkpfad ableiten, nicht aus dem Bild.",
+    altText: "Fotorealistisches Ex-ante-Wirkungsszenario einer sachlichen Ausbildungs- und Übungssituation im Brand- und Katastrophenschutz in Sachsen-Anhalt mit Einsatzfahrzeug, Schutzkleidung und technischer Übungsinfrastruktur. Das Bild visualisiert den institutionellen Kapazitätshebel des freigegebenen WÖk-Wirkungsfalls und ist keine Prognose tatsächlicher Einsatz- oder Schadenswirkungen.",
+  },
+  "ltw-2026-st-spd": {
+    caseId: "ltw-2026-st-spd-0005-repair-caf-s-werden-wir-weiterhin-finanziell-unterstuetzen",
+    selectionRationale: "Der freigegebene Pfad ist alltagsnah, visuell eindeutig und ermöglicht eine leicht nachvollziehbare Wirkungskaskade von Förderinstrument → Reparaturmöglichkeit → mögliche längere Produktnutzung / Ressourceneffekt, ohne Outcome automatisch zu behaupten.",
+    visualBrief: "Fotorealistisches, neutrales Repair-Café in Sachsen-Anhalt. Sichtbar sein dürfen: Reparaturtisch, defektes Haushaltsgerät oder Fahrradteil, Werkzeug, freiwillig/ehrenamtlich wirkende Personen in normaler Alltagssituation, wiederverwendbare Bauteile. Keine Werbeästhetik, keine Logos, keine Partei-/Kampagnenfarben.",
+    visualAnchor: "niedrigschwellige Reparaturinfrastruktur / Reparaturhandlung.",
+    notImageFact: "automatisch vermiedenen Neukauf, exakt vermiedene Abfall-/CO2-Menge, dauerhafte Verhaltensänderung oder soziale Teilhabe als gesicherten Outcome.",
+    markerDecision: "ALLOWED_IF_CANONICAL_PATH_BINDING_PASSES",
+    markerInstruction: "Marker nur an Reparaturhandlung/-infrastruktur. Keine quantitative Umweltbehauptung im Marker.",
+    altText: "Fotorealistisches Ex-ante-Wirkungsszenario eines Repair-Cafés in Sachsen-Anhalt mit Reparaturtisch, Werkzeug und der Instandsetzung eines Alltagsgegenstands. Das Bild visualisiert den freigegebenen Wirkungsfall zur Förderung niedrigschwelliger Reparaturmöglichkeiten; tatsächliche Lebensdauer-, Abfall- oder Ressourceneffekte werden damit nicht belegt.",
+  },
+  "ltw-2026-st-gruene": {
+    caseId: "ltw-2026-st-gruene-0042-solche-strukturen-sollen-die-ausbreitung-von-feuer-kontrol",
+    selectionRationale: "Der freigegebene Pfad macht präventive Resilienz anschaulich: Strukturen zur Begrenzung von Feuerausbreitung setzen vor dem Schaden an. Der Fall eignet sich für die WÖk-Logik ‚früher Schutz statt spätere Reparaturkosten‘, ohne behauptete Schadensvermeidung als bereits eingetreten darzustellen.",
+    visualBrief: "Fotorealistisches, neutrales Wald-/Landschaftsszenario in Sachsen-Anhalt mit sachlich erkennbaren präventiven Brandschutzstrukturen, z. B. gepflegter Schutz-/Trennstruktur, Forstweg oder brandschutzgerechter Vegetationspflege. Kein aktiver Großbrand, keine apokalyptische Stimmung, keine politische Symbolik.",
+    visualAnchor: "präventive Landschafts-/Brandschutzstruktur.",
+    notImageFact: "sicher verhinderte Waldbrände, konkrete Schadenssummen, CO2-Einsparungen oder garantierte Resilienzwirkung.",
+    markerDecision: "ALLOWED_IF_CANONICAL_PATH_BINDING_PASSES",
+    markerInstruction: "Marker nur an die präventive Struktur. Outcome-Wörter wie ‚verhindert‘ nur verwenden, wenn der kanonische Record exakt diese Aussage mit entsprechender Unsicherheit trägt; bevorzugt ‚kann Ausbreitung begrenzen‘.",
+    altText: "Fotorealistisches Ex-ante-Wirkungsszenario einer Wald- oder Landschaftsfläche in Sachsen-Anhalt mit sachlich erkennbaren präventiven Brandschutzstrukturen. Das Bild visualisiert einen freigegebenen WÖk-Wirkungsfall zur möglichen Begrenzung von Feuerausbreitung und ist keine Prognose verhinderter Brände oder Schäden.",
+  },
+  "ltw-2026-st-linke": {
+    caseId: "ltw-2026-st-linke-0005-dass-bei-volksinitiativen-volksbegehren-und-volksentscheid",
+    selectionRationale: "Der freigegebene Pfad bildet einen klar abgrenzbaren institutionellen Hebel demokratischer Beteiligung ab. Er ist als Case geeignet, weil die unmittelbare Zustandsänderung in Zugangs-/Verfahrenshürden liegt; weitergehende Effekte auf Beteiligung, Legitimität oder Entscheidungsergebnisse müssen als Wirkungspotenzial und nicht als Bildfakt behandelt werden.",
+    visualBrief: "Fotorealistisches, neutrales Szenario eines kommunalen oder landesbezogenen Beteiligungsverfahrens in Sachsen-Anhalt. Sichtbar sein dürfen: Bürgerinnen und Bürger an einem sachlichen Informations-/Eintragungsstand, neutrale Formulare/Unterlagen, öffentlich zugänglicher Verwaltungsraum. Keine Wahlkampfschilder, keine Parteisymbole, keine suggerierten Abstimmungsergebnisse.",
+    visualAnchor: "Zugang zu direkter demokratischer Beteiligung / Verfahrensinfrastruktur.",
+    notImageFact: "automatisch höhere Beteiligung, bessere Entscheidungen, stärkere Demokratie oder bestimmte politische Ergebnisse.",
+    markerDecision: "ALLOWED_IF_CANONICAL_PATH_BINDING_PASSES",
+    markerInstruction: "Marker darf nur den Verfahrens-/Zugangshebel beschreiben. Keine Outcome-Behauptung.",
+    altText: "Fotorealistisches Ex-ante-Wirkungsszenario eines öffentlich zugänglichen Beteiligungsverfahrens in Sachsen-Anhalt mit neutralem Informations- und Eintragungsbereich. Das Bild visualisiert den freigegebenen institutionellen Wirkungsfall zu Volksinitiative, Volksbegehren oder Volksentscheid; tatsächliche Beteiligung oder politische Ergebnisse werden damit nicht vorausgesagt.",
+  },
+  "ltw-2026-st-bsw": {
+    caseId: "ltw-2026-st-bsw-0011-auch-auf-kommunaler-ebene-sollen-buergerbudgets-und-buerge",
+    selectionRationale: "Bürgerbudgets/-beteiligung bilden einen konkreten kommunalen Entscheidungshebel ab und sind visuell verständlich, ohne den Nutzen automatisch vorwegzunehmen. Der Case erlaubt eine klare Trennung zwischen Zugang/Verfahren und späterer tatsächlicher Mittelverteilung bzw. Outcome.",
+    visualBrief: "Fotorealistisches, neutrales kommunales Beteiligungsszenario in Sachsen-Anhalt: öffentlicher Saal oder Rathausbereich, Bürgerinnen und Bürger betrachten mehrere sachliche Projektvorschläge bzw. Budgettafeln; ggf. neutrale Abstimmungs-/Priorisierungsmöglichkeit. Keine Parteiästhetik, keine Logos, keine Siegerprojekte, kein suggerierter Wohlstandsgewinn.",
+    visualAnchor: "kommunale Beteiligungs-/Budgetierungsstruktur.",
+    notImageFact: "automatisch bessere Ausgaben, mehr Vertrauen, höhere kommunale Leistungsfähigkeit oder wirtschaftlichen Gewinn.",
+    markerDecision: "ALLOWED_IF_CANONICAL_PATH_BINDING_PASSES",
+    markerInstruction: "Marker nur auf Beteiligungs-/Budgetprozess; keine Outcome-Synthese.",
+    altText: "Fotorealistisches Ex-ante-Wirkungsszenario eines kommunalen Bürgerbudget- oder Beteiligungsprozesses in Sachsen-Anhalt mit sachlich dargestellten Projektvorschlägen und öffentlicher Priorisierung. Das Bild visualisiert den freigegebenen Verfahrenshebel; Qualität der Mittelverwendung, Vertrauen oder gesellschaftliche Wirkungen werden nicht als eingetretener Outcome dargestellt.",
+  },
+  "ltw-2026-st-afd": {
+    caseId: "ltw-2026-st-afd-0001-gesellschaftspolitische-steuerungsinstrumente-die-nicht-nu",
+    selectionRationale: "Dieser freigegebene Pfad ist materieller als die kleineren positiven Einzelbeispiele und eignet sich deshalb als Deep Dive für die Frage, was die Abschaffung/Ersetzung institutioneller Gleichstellungsfunktionen als unmittelbare Strukturänderung bedeutet. Der Case darf weder Absicht noch tatsächliche spätere Diskriminierungsoutcomes bebildern. Er zeigt nur die institutionelle Veränderungsebene; Schutzgutfolgen bleiben textlich und evidenzgebunden.",
+    visualBrief: "Fotorealistisches, bewusst nüchternes Szenario in einem öffentlichen Verwaltungsgebäude in Sachsen-Anhalt. Sichtbar sein dürfen: allgemeiner Beratungs-/Servicebereich, ein Familien-/Sozialberatungssetting ohne eingebettete Textlabels, Bürgerinnen/Bürger in neutraler Beratungssituation. Keine Protestszene, keine bedrohten Personen, keine dramatischen Farben, keine Partei-/Kampagnensymbole. Der zentrale Wirkungsfall betrifft die institutionelle Funktion/Ersetzung, die sich bildlich nicht zuverlässig ohne Zusatzbehauptung darstellen lässt.",
+    visualAnchor: "institutionelle Funktion/Ersetzung; bildlich nicht zuverlässig ohne Zusatzbehauptung darstellbar.",
+    notImageFact: "welche Gleichstellungsfunktion organisatorisch entfällt oder welche Schutz- oder Teilhabewirkung daraus folgt.",
+    markerDecision: "NULL_MARKER_APPROVED",
+    markerInstruction: "Ein Verwaltungsraum kann weder die organisatorisch entfallende Funktion noch Schutz- oder Teilhabefolgen beweisen. Der freigegebene Wirkpfad wird deshalb ohne inhaltlichen Marker direkt unter dem späteren Bild textlich erklärt.",
+    altText: "Fotorealistisches Ex-ante-Wirkungsszenario eines nüchternen öffentlichen Beratungs- und Verwaltungsraums in Sachsen-Anhalt. Das Bild dient als visueller Anker für den freigegebenen WÖk-Fall zur Veränderung gesellschaftspolitischer Verwaltungsfunktionen; welche Aufgaben tatsächlich entfallen oder welche Gleichbehandlungs- und Teilhabewirkungen folgen, wird ausschließlich in der textlichen Wirkungsanalyse bewertet und nicht durch das Bild behauptet.",
+  },
+};
+
+const canonicalReviewFile = JSON.parse(readFileSync(fileURLToPath(new URL(`../${CASE_CANONICAL_RECORD_PATH}`, import.meta.url)), "utf8")) as CanonicalReviewFile;
+
+function canonicalCase(sourceKey: string, caseId: string) {
+  const programme = canonicalReviewFile.programmes.find((candidate) => candidate.source_key === sourceKey);
+  const record = programme?.review.material_commitments.find((candidate) => candidate.commitment_key === caseId);
+  if (!record) throw new Error(`CASE_SELECTION_SOURCE_CONFLICT missing canonical record ${caseId}`);
+  return record;
+}
+
+function unique(values: string[]) {
+  return [...new Set(values.filter(Boolean))];
+}
+
 const approvedProgrammeAssets: Record<string, {
   filename: string;
   originalFilename: string;
@@ -146,6 +300,11 @@ function recordFor(sourceKey: string, party: string, scope: "PROGRAM_SCENARIO" |
 
   const approvedAnalysisRefs = Object.keys(editorial.centralAssessments);
   const isProgramme = scope === "PROGRAM_SCENARIO";
+  const approvedCase = isProgramme ? null : approvedCaseBriefs[sourceKey];
+  if (!isProgramme && !approvedCase) throw new Error(`Missing delegated case brief for ${sourceKey}`);
+  const caseEditorial = approvedCase ? editorial.centralAssessments[approvedCase.caseId] : null;
+  if (approvedCase && !caseEditorial) throw new Error(`CASE_SELECTION_SOURCE_CONFLICT ${approvedCase.caseId} is not in the approved Editorial-v2 set`);
+  const caseCanonical = approvedCase ? canonicalCase(sourceKey, approvedCase.caseId) : null;
   const scopeLabel = isProgramme ? "program" : "case";
   const approvedAsset = isProgramme ? approvedProgrammeAssets[sourceKey] : undefined;
   const publicAssetPath = approvedAsset ? `/visuals/impact-scenarios/sachsen-anhalt/2026/${approvedAsset.filename}` : null;
@@ -155,10 +314,69 @@ function recordFor(sourceKey: string, party: string, scope: "PROGRAM_SCENARIO" |
     if (actualSha !== approvedAsset.assetSha256) throw new Error(`Approved asset hash mismatch for ${sourceKey}`);
   }
 
+  const caseNonVisualEffects = caseCanonical ? unique([
+    ...caseCanonical.impact_risks.map((risk) => risk.risk),
+    ...caseCanonical.data_gaps,
+    ...caseCanonical.non_compensable_boundaries.flatMap((boundary) => [boundary.concern, boundary.rationale]),
+  ]) : [];
+  const caseImplementationConditions = caseCanonical
+    ? unique(caseCanonical.impact_potential.flatMap((path) => path.implementation_conditions))
+    : [];
+  const caseVisualBrief = approvedCase ? {
+    id: "CASE-VISUALS-6X-EDITORIAL-BRIEF-2026-08-26",
+    version: "1.0",
+    content_sha256: sha256({ handoff_path: CASE_BRIEF_HANDOFF_PATH, source_key: sourceKey, ...approvedCase }),
+    review_status: "APPROVED" as const,
+  } : null;
+  const caseAnalysisBinding = approvedCase && caseCanonical && caseEditorial ? {
+    approval_provenance: CASE_APPROVAL_PROVENANCE,
+    selected_case_id: approvedCase.caseId,
+    canonical_record_path: CASE_CANONICAL_RECORD_PATH,
+    canonical_editorial_path: CASE_CANONICAL_EDITORIAL_PATH,
+    decision_or_measure: caseCanonical.decision_or_measure,
+    intended_change: caseCanonical.intended_change,
+    source_statement_refs: caseCanonical.source_refs,
+    affected_group_or_system: caseCanonical.affected_groups,
+    mechanism: caseCanonical.impact_potential.map((path) => path.mechanism),
+    potential_state_change: caseCanonical.impact_potential.map((path) => path.expected_state_change),
+    key_finding: caseEditorial.keyFinding,
+    impact_core_summary: caseEditorial.impactCoreSummary,
+    editorial_summary: caseEditorial.editorialSummary,
+    direction_rationale: caseEditorial.directionRationale,
+    impact_direction: caseEditorial.direction,
+    evidence_level: caseEditorial.evidence,
+    competence_and_system_boundary: {
+      responsible_actors: caseCanonical.responsible_actors,
+      competence_note: caseEditorial.competenceNote ?? null,
+      implementation_conditions: caseImplementationConditions,
+    },
+    material_risks: caseCanonical.impact_risks,
+    impact_orders: caseCanonical.impact_orders,
+    time_horizon: {
+      short_term: caseCanonical.distribution_and_time.short_term,
+      medium_term: caseCanonical.distribution_and_time.medium_term,
+      long_term: caseCanonical.distribution_and_time.long_term,
+      intergenerational_relevance: caseCanonical.distribution_and_time.intergenerational_relevance,
+    },
+    materiality: caseCanonical.distribution_and_time.intergenerational_relevance,
+    uncertainty: caseCanonical.data_gaps,
+    falsification_or_reality_check: caseCanonical.monitoring_and_feedback,
+    noncompensation: caseCanonical.non_compensable_boundaries,
+    marker_decision: approvedCase.markerDecision,
+    editorial_input_status: {
+      approved_case_selection: "APPROVED" as const,
+      reviewed_visual_brief: "APPROVED" as const,
+      alt_text_review: "APPROVED" as const,
+      editorial_brief_signoff: "APPROVED" as const,
+      image_asset: "NOT_YET_SUPPLIED" as const,
+      final_image_signoff: "PENDING_ASSET" as const,
+    },
+  } : null;
+
   return {
     id: `woek-impact-visual-st-2026-${sourceKey.replace("ltw-2026-st-", "")}-${scopeLabel}-v1`,
     object_type: isProgramme ? "PROGRAM" : "IMPACT_CASE",
-    object_id: isProgramme ? sourceKey : `${sourceKey}:case-scenario-slot`,
+    object_id: isProgramme ? sourceKey : approvedCase!.caseId,
     source_key: sourceKey,
     analysis_version: `${saxonyAnhaltTerminalRelease.manifest_id}+WOEK-WAHLPROGRAMM-BLAUPAUSE-V${editorial.version}`,
     knowledge_cutoff: KNOWLEDGE_CUTOFF,
@@ -168,26 +386,27 @@ function recordFor(sourceKey: string, party: string, scope: "PROGRAM_SCENARIO" |
     normalized_subject: isProgramme
       ? "Landtagswahlprogramm Sachsen-Anhalt 2026 · programmweite Folgenpfade"
       : "Landtagswahlprogramm Sachsen-Anhalt 2026 · einzelne freigegebene Analyse",
-    source_statement_refs: isProgramme ? approvedAnalysisRefs : [],
-    selected_impact_path_ids: isProgramme ? approvedAnalysisRefs : [],
+    source_statement_refs: isProgramme ? approvedAnalysisRefs : [approvedCase!.caseId],
+    selected_impact_path_ids: isProgramme ? approvedAnalysisRefs : [approvedCase!.caseId],
     eligible_approved_analysis_refs: approvedAnalysisRefs,
     selection_rationale: isProgramme
       ? "Die bereits fachlich kuratierte Editorial-v2-Menge der vier Schlüsselpfade wird unverändert wiederverwendet. Der freigegebene Visual-Handoff legt Bild, Aussagegrenzen und Alt-Text fest; mangels eindeutiger Pfadbindung werden bewusst keine Marker gesetzt."
-      : "Es wird keine Einzelanalyse technisch ausgewählt. Die vorhandenen Editorial-v2-Schlüsselpfade bleiben lediglich als endliche fachlich freigegebene Kandidatenmenge dokumentiert, bis eine symmetrische Case-Auswahl freigegeben ist.",
+      : approvedCase!.selectionRationale,
     visible_elements: [],
-    non_visual_effects: isProgramme ? editorial.keyFindings.map((finding) => `${finding.label}: ${finding.text}`) : [],
-    non_visual_effects_review_status: isProgramme ? "REVIEWED_COMPLETE" : "PENDING_APPROVAL",
-    omitted_material_effects: [],
-    omitted_marker_candidates: approvedAsset?.omittedMarkerCandidates ?? [],
-    system_boundary: null,
-    scenario_assumptions: [],
+    case_analysis_binding: caseAnalysisBinding,
+    non_visual_effects: isProgramme ? editorial.keyFindings.map((finding) => `${finding.label}: ${finding.text}`) : caseNonVisualEffects,
+    non_visual_effects_review_status: "REVIEWED_COMPLETE",
+    omitted_material_effects: isProgramme ? [] : [approvedCase!.notImageFact],
+    omitted_marker_candidates: approvedAsset?.omittedMarkerCandidates ?? (approvedCase?.markerDecision === "NULL_MARKER_APPROVED" ? [approvedCase.markerInstruction] : []),
+    system_boundary: isProgramme ? null : (caseEditorial!.competenceNote ?? caseCanonical!.responsible_actors.join(" · ")),
+    scenario_assumptions: isProgramme ? [] : caseImplementationConditions,
     evidence_summary: isProgramme
       ? "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das freigegebene Bild liefert keine zusätzliche Evidenz."
-      : "Richtung, Evidenz und Unsicherheit bleiben in den verknüpften WÖk-Analysen getrennt. Das noch nicht vorhandene Bild liefert keine zusätzliche Evidenz.",
+      : caseEditorial!.editorialSummary,
     disclaimer: DISCLAIMER,
     asset_path: publicAssetPath,
-    alt_text: approvedAsset?.altText ?? null,
-    visual_brief: approvedAsset ? VISUAL_HANDOFF : null,
+    alt_text: approvedAsset?.altText ?? approvedCase?.altText ?? null,
+    visual_brief: approvedAsset ? VISUAL_HANDOFF : caseVisualBrief,
     generator_metadata: null,
     asset_sha256: approvedAsset?.assetSha256 ?? null,
     asset_metadata: approvedAsset && assetFile ? {
@@ -200,9 +419,20 @@ function recordFor(sourceKey: string, party: string, scope: "PROGRAM_SCENARIO" |
       optimization: { format: "WEBP_LOSSY_Q90", full_composition_preserved: true, metadata_published: false },
       integrated_at: "2026-08-26",
     } : null,
-    editorial_review_status: approvedAsset ? "APPROVED_FOR_PUBLICATION" : "NO_APPROVED_VISUAL_SCENARIO",
-    source_fidelity_status: approvedAsset ? "PASS_APPROVED_ANALYSIS_ONLY" : "FAIL_CLOSED_NO_PUBLIC_ASSET",
-    missing_approved_inputs: approvedAsset ? [] : missingInputs(scope),
+    editorial_review_status: approvedAsset ? "APPROVED_FOR_PUBLICATION" : "PREPARED_AWAITING_ASSET",
+    source_fidelity_status: approvedAsset ? "PASS_APPROVED_ANALYSIS_ONLY" : "PASS_APPROVED_ANALYSIS_ONLY_AWAITING_ASSET",
+    missing_approved_inputs: approvedAsset ? [] : [
+      {
+        code: "IMAGE_ASSET" as const,
+        description: "Eine separate CASE_SCENARIO-Bilddatei wurde noch nicht geliefert; das PROGRAM_SCENARIO-Asset darf nicht wiederverwendet werden.",
+        required_for: "CASE_SCENARIO" as const,
+      },
+      {
+        code: "FINAL_IMAGE_SIGNOFF" as const,
+        description: "Der finale Source-Fidelity-, Frame-Schutz-, Marker- und Alt-Text-Smoke ist erst gegen die tatsächlichen Bildbytes möglich.",
+        required_for: "CASE_SCENARIO" as const,
+      },
+    ],
     change_history: [
       {
         version: "1.0",
@@ -215,7 +445,12 @@ function recordFor(sourceKey: string, party: string, scope: "PROGRAM_SCENARIO" |
         date: "2026-08-26",
         status: "APPROVED" as const,
         note: "Eigentümerseitig bereitgestelltes PROGRAM_SCENARIO mit freigegebenem Visual Brief und Alt-Text integriert; nicht eindeutig bindbare Marker bewusst ausgelassen; keine Bildinformation in Fachdata zurückgeschrieben.",
-      }] : []),
+      }] : [{
+        version: "1.1",
+        date: "2026-08-26",
+        status: "APPROVED" as const,
+        note: "Delegierte Case-Auswahl, kanonische Analysebindung, Visual Brief, Nichtbild-Folgen, Markerentscheidung und Alt-Text vollständig übernommen. Separate Case-Bildbytes und finaler Bild-Signoff bleiben fail-closed ausstehend.",
+      }]),
     ],
   };
 }
@@ -265,5 +500,6 @@ if (process.argv.includes("--check")) {
   writeFileSync(OUTPUT_PATH, output);
   const descriptor = buildDescriptor();
   const approved = descriptor.records.filter((record) => record.editorial_review_status === "APPROVED_FOR_PUBLICATION").length;
-  console.log(`Materialized ${descriptor.records.length} impact visual records (${approved} approved; ${descriptor.records.length - approved} fail closed) at ${OUTPUT_PATH}`);
+  const prepared = descriptor.records.filter((record) => record.editorial_review_status === "PREPARED_AWAITING_ASSET").length;
+  console.log(`Materialized ${descriptor.records.length} impact visual records (${approved} approved; ${prepared} prepared awaiting separate assets; ${descriptor.records.length - approved - prepared} fully closed) at ${OUTPUT_PATH}`);
 }
